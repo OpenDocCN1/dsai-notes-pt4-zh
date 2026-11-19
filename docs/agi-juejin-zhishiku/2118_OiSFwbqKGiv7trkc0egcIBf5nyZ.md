@@ -1,3 +1,4 @@
+
 # 8.12 马斯克宣布 xAI 公司 Grok 2 AI 模型测试版即将发布，Grok 3 将达到或超越 OpenAI 的 GPT-5 水平
 
 > 来源：[https://agijuejin.feishu.cn/docx/UYbDd3NWboHrYzx4LB3ccCeQnMb](https://agijuejin.feishu.cn/docx/UYbDd3NWboHrYzx4LB3ccCeQnMb)
@@ -110,7 +111,7 @@ IT之家｜[阅读原文](https://sourl.co/4qXzVB)
 
 量子位｜[阅读原文](https://sourl.co/G3nvju)
 
-一款名为“毒舌 AI”的 Twitter 应用通过犀利点评用户历史发言迅速走红，实现每小时 2.8 万元的收入。该应用基于 Wordware 低代码平台构建，无需高深技术即可创建复杂 AI 应用。开发者 Kyzo 开源了所有代码和提示词，鼓励二次开发。用户增长导致成本压力，团队不得不开启付费墙并动态调整价格策略。Wordware 平台的易用性和灵活性，加上 AI 的强大功能，使得这款应用在短时间内吸引了全球用户的关注，并在日本市场尤为成功。
+一款名为“毒舌 AI”的 Twitter 应用通过犀利点评用户历史发言迅速走红，实现每小时 2.8 万元的收入。该应用基于 Wordware 低代码平台构建，无需高深技术即可创建复杂 AI 应用。开发者 Kyzo 开源了所有代码和提示词，鼓励二次开发。用户增长导致成本压力，团队不得不开启付费墙并动态调整价格策略。Wordware 平台的易用性和灵活性，加上 AI 的强大功能，使得这款应用在短时间内吸引了全球用户的关注，并在日本市场尤其为成功。
 
 ### 💡 OpenAI 发布 GPT-4o 模型卡，详细说明了安全问题和缓解措施
 

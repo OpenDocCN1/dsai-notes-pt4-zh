@@ -1,3 +1,4 @@
+
 # 6.2 受控文本生成
 
 > 来源：[https://aicarrier.feishu.cn/docx/LWz0dEIzDoDtTmxubMZcuCiCnuh](https://aicarrier.feishu.cn/docx/LWz0dEIzDoDtTmxubMZcuCiCnuh)

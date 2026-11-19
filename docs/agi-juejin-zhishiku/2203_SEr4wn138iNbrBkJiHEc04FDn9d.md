@@ -1,3 +1,4 @@
+
 # 2024 年中国 AIGC 行业应用价值研究报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/SKeHdf7P7oVD1qxWLBTcEgIVnSe](https://agijuejin.feishu.cn/docx/SKeHdf7P7oVD1qxWLBTcEgIVnSe)

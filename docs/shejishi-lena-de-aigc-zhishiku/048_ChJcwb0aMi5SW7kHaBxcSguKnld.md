@@ -1,3 +1,4 @@
+
 # 海报提示词
 
 > 来源：[https://aigclena.feishu.cn/docx/WmgydKwp0o17bFxhFEAc18hEnIp](https://aigclena.feishu.cn/docx/WmgydKwp0o17bFxhFEAc18hEnIp)
@@ -38,7 +39,7 @@
 
 ## 1、sora里的chagpt
 
-使用地址：https://sora.chatgpt.com/library
+使用地址：`https://sora.chatgpt.com/library`
 
 推荐指数：★★★★☆
 
@@ -48,7 +49,7 @@
 
 ## 2、对话框里的gpt
 
-使用地址：https://chatgpt.com/
+使用地址：`https://chatgpt.com/`
 
 推荐指数：★★★★☆
 
@@ -56,7 +57,7 @@
 
 ## 3、Gemini banana
 
-使用地址：https://gemini.google.com/
+使用地址：`https://gemini.google.com/`
 
 推荐指数：★★★★☆
 
@@ -64,7 +65,7 @@
 
 ## 4、扣子
 
-使用地址：https://www.coze.cn/
+使用地址：`https://www.coze.cn/`
 
 推荐指数：★★★★★
 
@@ -72,7 +73,7 @@
 
 ## 5、lovart
 
-使用地址：https://www.lovart.ai/
+使用地址：`https://www.lovart.ai/`
 
 推荐指数：★★★★★
 
@@ -90,7 +91,7 @@
 
 ## 6、即梦
 
-使用地址：https://jimeng.jianying.com/
+使用地址：`https://jimeng.jianying.com/`
 
 推荐指数：★★★★☆
 
@@ -100,7 +101,7 @@
 
 ## 7、豆包
 
-使用地址：https://doubao.com/
+使用地址：`https://doubao.com/`
 
 推荐指数：★★★★☆
 
@@ -122,7 +123,7 @@ By 归臧
 
 ![](img/36ad0ebfc5879942b86c8292d4c3df85.png)
 
-![](img/0fd4479da0421efaa51090185b4f6909.png)
+![](img/0fd4479da0421efaa51090185b4f65.png)
 
 ![](img/c41aeff93ddb45b3ce2b1ca85ebd5d06.png)
 
@@ -140,7 +141,7 @@ By 归臧
 
 2025.9.10
 
-https://space.coze.cn/share/7550620550855885106?share_id=7550883420903276854&secret=RWgFg2RP
+`https://space.coze.cn/share/7550620550855885106?share_id=7550883420903276854&secret=RWgFg2RP`
 
 ![](img/1e82763339963165a2969befa346930d.png)
 

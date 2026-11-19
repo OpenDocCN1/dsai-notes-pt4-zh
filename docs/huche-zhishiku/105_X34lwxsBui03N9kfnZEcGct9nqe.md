@@ -1,3 +1,4 @@
+
 # 90%人不知道的MCP神操作：用Claude透视桌面「女」文件夹
 
 > 来源：[https://huchegames.feishu.cn/docx/WpP1dXhsHoD5idx0wgSccL0an4k](https://huchegames.feishu.cn/docx/WpP1dXhsHoD5idx0wgSccL0an4k)
@@ -8,29 +9,18 @@
 
 MCP（Model Context Protocol）是 Anthropic 推出的针对 LLM（大模型）的一个开放协议标准，它为 AI 开发提供了标准化的上下文交互方式。MCP 的快速发展让竞争对手 OpenAI 也开始提供支持。曾老师最近也在工作中频繁使用 MCP，今天写一点点自己的体验。B 站和🛰️👸号有大量的文章教学如何进行 MCP 配置，曾老师在本篇就不再重复了。本篇着重说说使用体验和疑难杂症。
 
-+   支持 MCP 的软件
-
-+   Claude
-
-+   5ire
-
-+   Cherry Studio
-
-+   基于代码编辑器的工具：Cursor/Cline/Continue
-
-+   Claude MCP 查漏补缺
-
-+   Cherry Studio 大展身手
-
-+   安装工具：UV/+Bun
-
-+   配置大模型：免费+付费
-
-+   Qwen2.5-7B-Instruct：可以用
-
-+   Qwen2.5-72B-Instruct-128K：正确且飞快
-
-+   DeepSeek-V3-0324：除了速度都完美
++ 支持 MCP 的软件
++ Claude
++ 5ire
++ Cherry Studio
++ 基于代码编辑器的工具：Cursor/Cline/Continue
++ Claude MCP 查漏补缺
++ Cherry Studio 大展身手
++ 安装工具：`UV`/`Bun`
++ 配置大模型：免费+付费
++ `Qwen2.5-7B-Instruct`：可以用
++ `Qwen2.5-72B-Instruct-128K`：正确且飞快
++ `DeepSeek-V3-0324`：除了速度都完美
 
 ## 支持 MCP 的软件
 
@@ -46,13 +36,13 @@ https://claude.ai/
 
 ### 5ire
 
-小巧，免费，**需要自己提供模型。**MCP 支持市场安装和自定义方式配置。
+小巧，免费，需要自己提供模型。MCP 支持市场安装和自定义方式配置。
 
 https://5ire.app/
 
 ### Cherry Studio
 
-功能众多，免费，**需要自己提供模型。**MCP 支持市场安装和自定义方式配置。
+功能众多，免费，需要自己提供模型。MCP 支持市场安装和自定义方式配置。
 
 https://cherry-ai.com/
 
@@ -62,83 +52,81 @@ https://cherry-ai.com/
 
 ![](img/98603753b15fd173074a06b4a2753b16.png)
 
-+   Cursor 使用配置文件进行配置：https://docs.cursor.com/context/model-context-protocol
-
-+   Cline 有自己维护的MCP 市场： https://cline.bot/mcp-marketplace
-
-+   Continue 有自己维护的 MCP 服务器：https://hub.continue.dev/explore/mcp
++ Cursor 使用配置文件进行配置：https://docs.cursor.com/context/model-context-protocol
++ Cline 有自己维护的MCP 市场： https://cline.bot/mcp-marketplace
++ Continue 有自己维护的 MCP 服务器：https://hub.continue.dev/explore/mcp
 
 ## Claude MCP 查漏补缺
 
 Claude 自带强大的 Claude 3.7 Sonnet 模型，新用户有一定的免费额度，因此可以直接使用。
 
-在 Claude 的 claude_desktop_config.json 配置文件中进行配置后，必须重启 Claude 才能生效。这个操作很多教学文章和视频中都没有说，都 2025 年了还要重启，真是太不优雅了。
+在 Claude 的 `claude_desktop_config.json` 配置文件中进行配置后，必须重启 Claude 才能生效。这个操作很多教学文章和视频中都没有说，都 2025 年了还要重启，真是太不优雅了。
 
 Claude 启动后如果直接弹出一个服务不可用的网页，请将魔法通道调到美国、新加坡等国家。
 
-如果你和曾老师一样，使用 nvm 来管理 node，那么 Claude 很可能找不到你的 npx。此时使用绝对路径，或者使用 docker 版本。
+如果你和曾老师一样，使用 `nvm` 来管理 `node`，那么 Claude 很可能找不到你的 `npx`。此时使用绝对路径，或者使用 `docker` 版本。
 
 ```
 $ which npx
 /Users/zrong/.config/nvm/versions/node/v22.14.0/bin/npx
 ```
 
-曾老师的 claude_desktop_config.json 配置文件：
+曾老师的 `claude_desktop_config.json` 配置文件：
 
 ```
 {
-  &quot;mcpServers&quot;:{
-    &quot;filesystem&quot;:{
-      &quot;command&quot;:&quot;docker&quot;,
-      &quot;args&quot;:[
-        &quot;run&quot;,
-        &quot;-i&quot;,
-        &quot;--rm&quot;,
-        &quot;--mount&quot;,
-        &quot;type=bind,src=/Users/zrong/Desktop,dst=/projects/Desktop,ro&quot;,
-        &quot;mcp/filesystem&quot;,
-        &quot;/projects&quot;
+  "mcpServers":{
+    "filesystem":{
+      "command":"docker",
+      "args":[
+        "run",
+        "-i",
+        "--rm",
+        "--mount",
+        "type=bind,src=/Users/zrong/Desktop,dst=/projects/Desktop,ro",
+        "mcp/filesystem",
+        "/projects"
+      ],
+    },
+    "fetch":{
+      "command":"/Users/zrong/.local/bin/uvx",
+      "args":[
+        "mcp-server-fetch"
       ]
     },
-    &quot;fetch&quot;:{
-      &quot;command&quot;:&quot;/Users/zrong/.local/bin/uvx&quot;,
-      &quot;args&quot;:[
-        &quot;mcp-server-fetch&quot;
+    "puppeteer":{
+      "command":"docker",
+      "args":[
+        "run",
+        "-i",
+        "--rm",
+        "--init",
+        "-e",
+        "DOCKER_CONTAINER=true",
+        "mcp/puppeteer"
       ]
     },
-    &quot;puppeteer&quot;:{
-      &quot;command&quot;:&quot;docker&quot;,
-      &quot;args&quot;:[
-        &quot;run&quot;,
-        &quot;-i&quot;,
-        &quot;--rm&quot;,
-        &quot;--init&quot;,
-        &quot;-e&quot;,
-        &quot;DOCKER_CONTAINER=true&quot;,
-        &quot;mcp/puppeteer&quot;
-      ]
-    },
-    &quot;playwright&quot;:{
-      &quot;command&quot;:&quot;/Users/zrong/.config/nvm/versions/node/v22.14.0/bin/npx&quot;,
-      &quot;args&quot;:[
-        &quot;@playwright/mcp@latest&quot;
+    "playwright":{
+      "command":"/Users/zrong/.config/nvm/versions/node/v22.14.0/bin/npx",
+      "args":[
+        "@playwright/mcp@latest"
       ]
     }
-}
+  }
 }
 ```
 
-如果 MCP 配置有误，在重启 Claude 后会收到错误提示，可以去看一下错误 log 并尝试解决。
+如果 MCP 配置有误，在重启 Claude 后会收到错误提示，可以去看一下错误 `log` 并尝试解决。
 
 如果运气好，MCP 配置正确，可以在输入框看到生效的功能。
 
 ![](img/dfed52138ab5ef5a709d097bb05ac098.png)
 
-直接在 Claude 中询问「**我的桌面有什么内容？**」Claude 会自动理解我的话，调用 filesystem 这个 MCP，对桌面上的文件进行总结和分析。在使用过程中，会请求访问本地文件的权限，需要人类来批准。
+直接在 Claude 中询问「我的桌面有什么内容？」Claude 会自动理解我的话，调用 `filesystem` 这个 MCP，对桌面上的文件进行总结和分析。在使用过程中，会请求访问本地文件的权限，需要人类来批准。
 
 ![](img/6f82795ed72122ead6ec5a4f2fa5a56d.png)
 
-再问一个更进阶的问题：**桌面上的「女」这**个文件夹，是什么内容呢？你知道它是使用什么软件制作的吗？
+再问一个更进阶的问题：桌面上的「女」这个文件夹，是什么内容呢？你知道它是使用什么软件制作的吗？
 
 ![](img/00562f92b656eaf141de9fb9067b77f3.png)
 
@@ -150,15 +138,15 @@ Cherry Studio 默认没有提供模型支持，因此需要一个免费模型来
 
 可以使用下面的二维码或者邀请链接，填入曾老师的邀请码注册 DMXAPI，提供 Claude 3.7 Sonnet 模型，你和曾老师都能获得 2.5 元余额，用于测试足够了。
 
-邀请码： YbCF
+邀请码：`YbCF`
 
 https://www.dmxapi.cn/register?aff=YbCF
 
-### 安装工具：UV/+Bun
+### 安装工具：`UV`/`Bun`
 
-Cherry Studio 在配置 MCP 时非常方便。 UV 工具和 Bun 工具如果本地没有找到，可以直接点击 「MCP 服务器」配置界面右上角进行安装。
+Cherry Studio 在配置 MCP 时非常方便。`UV` 工具和 `Bun` 工具如果本地没有找到，可以直接点击「MCP 服务器」配置界面右上角进行安装。
 
-工具被安装在 ~/.cheeystudio/bin 路径中，专供 Cherry Studio 使用。
+工具被安装在 `~/.cheeystudio/bin` 路径中，专供 Cherry Studio 使用。
 
 ![](img/a2f87ae589c2d2929b8c3a1de79bc81d.png)
 
@@ -170,45 +158,42 @@ Cherry Studio 在配置 MCP 时非常方便。 UV 工具和 Bun 工具如果本�
 
 安装完毕 MCP 后需要配置大模型，我采用硅基流动的四个大模型进行比较，价格单位为 M tokens：
 
-+   (免费) Qwen2.5-7B-Instruct
-
-+   (0.7) Qwen2.5-14B-Instruct
-
-+   (4元) QwQ32B
-
-+   (8元) DeepSeek-V3-0324
++ (免费) `Qwen2.5-7B-Instruct`
++ (0.7) `Qwen2.5-14B-Instruct`
++ (4元) `QwQ32B`
++ (8元) `DeepSeek-V3-0324`
 
 ![](img/0d58eab789dd87ad090f4bab3e1f2621.png)
 
 如[果](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293466&idx=1&sn=95c60712fa4b841d9e77084b59754ae1&scene=21#wechat_redirect)想要注册硅基流动账号，可以参考这篇： DeepSeek 服务器繁忙？这里是解决方案 ，使用曾老师的邀请码注册，你我均可获得 14 元余额。
 
-### Qwen2.5-7B-Instruct：可以用
+### `Qwen2.5-7B-Instruct`：可以用
 
-开启一个新的话题，启用聊天输入框下方的 MCP 服务器中的** filesy**stem 插件，提出问题「列出桌面的文件」：
+开启一个新的话题，启用聊天输入框下方的 MCP 服务器中的 `filesystem` 插件，提出问题「列出桌面的文件」：
 
-可以看到，Qwen2.5-7B-Instruct 作为免费模型，完美完成了问题。
+可以看到，`Qwen2.5-7B-Instruct` 作为免费模型，完美完成了问题。
 
-接着继续提出高级问题：**桌面上的「女」这个文件夹，是什么**内容呢？你知道它是使用什么软件制作的吗？
+接着继续提出高级问题：桌面上的「女」这个文件夹，是什么内容呢？你知道它是使用什么软件制作的吗？
 
 ![](img/5a58f674c59f3840e6a6cb2b54d89f32.png)
 
-由于模型尺寸限制，Qwen2.5-7B-Instruct 没有答对 问题。
+由于模型尺寸限制，`Qwen2.5-7B-Instruct` 没有答对 问题。
 
-### Qwen2.5-72B-Instruct-128K：正确且飞快
+### `Qwen2.5-72B-Instruct-128K`：正确且飞快
 
-我把模型换成 Qwen2.5-72B-Instruct-128K 试试看：
+我把模型换成 `Qwen2.5-72B-Instruct-128K` 试试看：
 
-Qwen2.5-72B-Instruct-128K 回答正确！ 速度飞快！
+`Qwen2.5-72B-Instruct-128K` 回答正确！ 速度飞快！
 
-### DeepSeek-V3-0324：除了速度都完美
+### `DeepSeek-V3-0324`：除了速度都完美
 
-再来看看 DeepSeek-V3-0324 的回答：
+再来看看 `DeepSeek-V3-0324` 的回答：
 
 ![](img/92aed3b444fa64e653be21ac99f4476b.png)
 
-可以看到，**DeepSeek-V3-0324 的回答与 Claud**e 3.7 Sonnet 的回答很相似， 不仅答对了软件名称，还根据其他文件推断出了这个文件的作用。
+可以看到，`DeepSeek-V3-0324` 的回答与 Claud"e 3.7 Sonnet 的回答很相似， 不仅答对了软件名称，还根据其他文件推断出了这个文件的作用。
 
-不得不说的是，DeepSeek-V3-0324 的回答速度太慢，文字像是一个个蹦出来的，这可能是服务器资源不够所致。免费的 Qwen2.5-7B-Instruct 在使用过程中，也会经常出现无法访问的错误。
+不得不说的是，`DeepSeek-V3-0324` 的回答速度太慢，文字像是一个个蹦出来的，这可能是服务器资源不够所致。免费的 `Qwen2.5-7B-Instruct` 在使用过程中，也会经常出现无法访问的错误。
 
 ---
 

@@ -1,8 +1,9 @@
+
 # 2023-11-10讯飞星火金融大模型落地中国人保
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/VAh6d6rFAo8DswxzZWvceyZdnUe](https://xuqiwei1986.feishu.cn/docx/VAh6d6rFAo8DswxzZWvceyZdnUe)
 
-> 🔗 原文链接： h[ttps://baijiahao.b](https://baijiahao.baidu.com/s?id=1782160153149896570&wfr=spider&for=pc)aidu.com/s?id=17...
+> 🔗 原文链接：[https://baijiahao.baidu.com/s?id=1782160153149896570&wfr=spider&for=pc](https://baijiahao.baidu.com/s?id=1782160153149896570&wfr=spider&for=pc)
 
 讯飞星火金融大模型落地中国人保
 

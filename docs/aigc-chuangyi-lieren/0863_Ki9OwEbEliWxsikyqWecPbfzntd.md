@@ -1,3 +1,4 @@
+
 # 工具：Gemini CLI
 
 > 来源：[https://aigcreative.feishu.cn/docx/PW8QdQqfkoHFkmx1L0XcwPKQnXb](https://aigcreative.feishu.cn/docx/PW8QdQqfkoHFkmx1L0XcwPKQnXb)
@@ -6,7 +7,7 @@
 
 > Gemini Code Assist 个人版、Standard 版和 Enterprise 版均提供使用 Gemini CLI 的配额。请注意，这些配额在 Gemini CLI 与 Gemini Code Assist 智能体模式之间共享。
 
-> Gemini CLI 可在 [Cloud Shell](https://cloud.google.com/shell/docs/use-cloud-shell-terminal?hl=zh-cn) 中使用，无需额外设置。如需开始在其他环[境中使用 Gemini C](https://github.com/google-gemini/gemini-cli)LI，请参阅 Gemini CLI 文档。
+> Gemini CLI 可在 [Cloud Shell](https://cloud.google.com/shell/docs/use-cloud-shell-terminal?hl=zh-cn) 中使用，无需额外设置。如需开始在其他环境中使用 Gemini CLI，请参阅 [Gemini CLI 文档](https://github.com/google-gemini/gemini-cli)。
 
 ## Gemini Code Assist 智能体模式
 
@@ -14,17 +15,12 @@
 
 > 以下 Gemini CLI 功能在 Gemini Code Assist for VS Code 中提供。
 
-+   Model Context Protocol (MCP) 服务器
-
-+   Gemini CLI [命令](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md)：/memory、/stats、/tools、/mcp
-
-+   [Yolo 模式](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer?hl=zh-cn#yolo-mode)
-
-+   内置工具，例如 grep、终端、文件读取或文件写入
-
-+   网页搜索
-
-+   Web 提取
++ Model Context Protocol (MCP) 服务器
++ Gemini CLI [命令](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md)：`/memory`、`/stats`、`/tools`、`/mcp`
++ [Yolo 模式](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer?hl=zh-cn#yolo-mode)
++ 内置工具，例如 `grep`、终端、文件读取或文件写入
++ 网页搜索
++ Web 提取
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 

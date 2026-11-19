@@ -1,6 +1,7 @@
+
 # Gmail 注册！海外各类应用和平台注册法宝！
 
-> 来源：[https://my.feishu.cn/docx/MERvdyywHo6n2cx5ZWncldrxnAf](https://my.feishu.cn/docx/MERvdyywHo6n2cx5ZWncldrxnAf)
+> 来源：[`https://my.feishu.cn/docx/MERvdyywHo6n2cx5ZWncldrxnAf`](https://my.feishu.cn/docx/MERvdyywHo6n2cx5ZWncldrxnAf)
 
 [#GPTs](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NzU2MDgyNA==&action=getalbum&album_id=3196746527004721153#wechat_redirect) [（点击查看）我创建的 GP](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NzU2MDgyNA==&action=getalbum&album_id=3171759118513111043#wechat_redirect)Ts 合集，基于 ChatGPT4 才能使用的便捷工具，超高提效 和 有趣的内容。#ChatGPT 使用教程 （点击查看）ChatGPT 相关的所有内容，从注册到 GPT4 充值方法等等。
 
@@ -8,7 +9,7 @@
 
 进入 Gmail 官网，点击创建账号。
 
-https://www.google.com/intl/zh-CN_cn/gmail/about/
+`https://www.google.com/intl/zh-CN_cn/gmail/about/`
 
 ![](img/50b0f086ec0675c4ce5998dae90c7e65.png)
 
@@ -36,4 +37,4 @@ https://www.google.com/intl/zh-CN_cn/gmail/about/
 
 大功告成！
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

@@ -1,14 +1,15 @@
-# AI写小说-NineS AI仿治愈《抗痔恋爱笔记》
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/LPuFdJq90oEPPbx2Bo5cBpg3nRe](https://rq547mr4oez.feishu.cn/docx/LPuFdJq90oEPPbx2Bo5cBpg3nRe)
+# AI写小说-`NineS-AI`仿治愈《抗痔恋爱笔记》
 
-# 一、前言
+> 来源：[`https://rq547mr4oez.feishu.cn/docx/LPuFdJq90oEPPbx2Bo5cBpg3nRe`](https://rq547mr4oez.feishu.cn/docx/LPuFdJq90oEPPbx2Bo5cBpg3nRe)
 
-> 各位小伙伴好~🎉🎉🎉NineS-AI与君又见😬。
+## 一、前言
+
+> 各位小伙伴好~🎉🎉🎉`NineS-AI`与君又见😬。
 
 > 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
 
-> **经过**十月份的α测试和最近2周的内测，很多小伙伴们都拿到了好结果（如：新手短篇K30/长篇签约起点/短剧出售等等）。
+> `经过`十月份的α测试和最近2周的内测，很多小伙伴们都拿到了好结果（如：新手短篇`K30`/长篇签约起点/短剧出售等等）。
 
 > 如今，通过仿写🍅爆款的《抗痔恋爱笔记》演示产品的实力~~
 
@@ -16,35 +17,35 @@
 
 以下是题材类Prompt，无私奉献~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
+1. [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
 
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -52,70 +53,67 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+`P`S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
 **原始出处：**
 
 ![](img/6b3b173b5f90064238fc93c1d5d20c46.png)
 
-#
-
-# 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
-
+## 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
 
 ![](img/ebb44dd278e49918691020c00f0d98af.png)
 
-# 三、当前状态（以作家灵感为始，破程序想象之梏。）
+## 三、当前状态（以作家灵感为始，破程序想象之梏。）
 
-> **产品理念：**
+> `产品理念：`
 
-1.  以作家灵感为始，破程序想象之梏。奉行长期价值主义~
+1. 以作家灵感为始，破程序想象之梏。奉行长期价值主义~
 
-1.  最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
+1. 最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
 
-1.  **功能一览**
+1. `功能一览`
 
-+   **AI拆书：**
++   `AI拆书：`
 
 +   短篇的情节节奏，情绪上下文怎么快速理解？
 
-+   500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
++   500万字的文本？小意思！`NineS-AI`帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
 
-+   **AI创作**
++   `AI创作`
 
-+   短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
++   短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，`NineS-AI`为你提供全流程的创作指南。
 
-+   润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
++   润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！`NineS-AI`帮你,让你的创作灵感源源不断。
 
-+   **AI助手**
++   `AI助手`
 
 +   高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
 
-1.  **我们的优势**
+1. `我们的优势`
 
-1.  质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
+1. 质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
 
-1.  重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
+1. 重做文章G评系统：`NineS-AI`的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
 
-1.  高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
+1. 高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
 
-1.  **产品进度**
+1. `产品进度`
 
-1.  种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
+1. 种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
 
-1.  内测时间（群无条件邀请测试）**开始时间：2024-11-22晚19.3**0    结束时间：2024-12-30
+1. 内测时间（群无条件邀请测试）`开始时间：2024-11-22晚19.3`0    结束时间：2024-12-30
 
-# 四、仿写**案例**
+## 四、仿写`案例`
 
-### 仿写三个层次：《具体见[NineS AI实操-“仿写”的三个阶段（By 老杨）](https://rq547mr4oez.feishu.cn/wiki/F9gHwbDbni1386kI3ivcC0PSnRb?from=from_copylink)》
+### 仿写三个层次：《具体见[`NineS AI实操-“仿写”的三个阶段（By 老杨）`](https://rq547mr4oez.feishu.cn/wiki/F9gHwbDbni1386kI3ivcC0PSnRb?from=from_copylink)》
 
 +   初级仿写：即“翻译”：中译中不可取、英译中、中译英
 
-+   [NineS AI实操-灵感来源“情节卡”（By 老杨）](https://rq547mr4oez.feishu.cn/wiki/ApJtw9PYbil6pJkF0lhckX3fnrb?from=from_copylink)级仿写：即“改写”：换元法（背景/人物/等），变成情节卡，参考
++   [`NineS AI实操-灵感来源“情节卡”（By 老杨）`](https://rq547mr4oez.feishu.cn/wiki/ApJtw9PYbil6pJkF0lhckX3fnrb?from=from_copylink)级仿写：即“改写”：换元法（背景/人物/等），变成情节卡，参考
 
 +   高级仿写：即“取经”：是仿情绪，节奏，通用"情节卡模板”。
 
-### **NineS**拆书分析
+### `NineS`拆书分析
 
 ```
 ## 一、基本信息
@@ -275,63 +273,116 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ### 微调版（字数1127），一次性生成未润色
 
-```
-**第1章: 痔疮手术的痛苦经历**
+
+
+# 第1章: 痔疮手术的痛苦经历
 
 我感觉自己像一块任人宰割的肉，躺在冰冷的手术台上。
+
 白色的灯光晃得我眼晕，周围的一切都显得那么不真实。
+
 我忍不住开始胡思乱想，这该不会是什么新型的诈骗手段吧？
+
 把我骗到这里，然后嘎我的腰子？
+
 但转念一想，应该不会，毕竟这可是正规医院，而且我还穿着病号服呢。
+
 「别紧张，放松。」
+
 一个低沉的声音在我耳边响起，把我从神游中拉了回来。
+
 我这才想起，自己并不是一个人在这里。
+
 哦，对了，还有医生。
+
 这已经是我和这位肛肠科主治医师王天麒的第二次见面了。
+
 回想起第一次见面，我就恨不得找个地缝钻进去。
+
 那天，我因为便血来医院检查。
+
 他戴着口罩，只露出一双眼睛，眼睫毛又长又翘，皮肤也白得不像话。
+
 简直像极了那些言情小说里的男主角。
+
 要不是他让我脱裤子趴在检查床上，我差点就以为自己的爱情来了。
+
 「内痔脱垂，需要手术。」
+
 他用毫无感情的语调说道，打破了我的粉红泡泡。
+
 「我建议你尽快安排手术，越拖越严重。」
+
 今天，我终于鼓起勇气，躺在了这该死的手术台上。
+
 「医生，我能不能打全麻啊？」
+
 我用近乎哀求的语气问道，声音都在发抖。
+
 「局麻就可以了，全麻对身体不好。」
+
 他一边说着，一边拿着工具朝我走来。
+
 我甚至能听到金属碰撞发出的清脆声响。
+
 那声音，就像催命符一样，让我浑身汗毛倒竖。
+
 「可是我怕疼啊！」
+
 我试图做最后的挣扎。
+
 「放心，不疼的。」
+
 他安慰道，然后...然后我就感觉到屁股上传来一阵剧痛！
+
 「啊！」
+
 我惨叫一声，差点从手术台上跳起来。
+
 「疼疼疼！医生你不是说不疼吗？」
+
 「麻药还没起效呢，稍微忍耐一下。」
+
 他的声音依旧平静，仿佛我只是一个没有感情的手术器械。
+
 接下来，我又挨了四针。
+
 每一针都像一把刀子，狠狠地扎进我的肉里。
+
 我感觉自己像一只被开膛破肚的鱼，只能任人摆布。
+
 整个手术过程中，我一直在惨叫。
+
 我发誓，我这辈子都没这么丢脸过。
+
 什么淑女形象，什么女神包袱，统统见鬼去吧！
+
 我只想快点结束这场酷刑。
+
 不知道过了多久，这场噩梦终于结束了。我被护士推出了手术室。
+
+```
 //...由于篇幅太长，省略中间段落...
-王天麒...
-我默默地在心里念了一遍这个名字。真是冤家路窄！
-我叹了口气，看来这场孽缘，还没那么容易结束啊...
-闺蜜突然又神神秘秘地凑近了些，压低了声音。
-「而且我还打听到，他...就住在我们小区！」
-什么？！我猛地睁大眼睛，一脸的难以置信。住我们小区？这...这怎么可能！
-「真的！就在我们隔壁楼！你说巧不巧？」
-闺蜜一脸的兴奋，仿佛发现了什么惊天大秘密。
-我却感觉眼前一黑，差点晕过去。老天爷，你这是要玩死我吗？！
-「小美，小美，你怎么了？」
-耳边传来闺蜜焦急的呼喊声。我却什么都听不到了。我的脑海里只有一个念头：我以后...该怎么面对我的邻居，我的...主治医生啊？
 ```
 
-#
+王天麒...
+
+我默默地在心里念了一遍这个名字。真是冤家路窄！
+
+我叹了口气，看来这场孽缘，还没那么容易结束啊...
+
+闺蜜突然又神神秘秘地凑近了些，压低了声音。
+
+「而且我还打听到，他...就住在我们小区！」
+
+什么？！我猛地睁大眼睛，一脸的难以置信。住我们小区？这...这怎么可能！
+
+「真的！就在我们隔壁楼！你说巧不巧？」
+
+闺蜜一脸的兴奋，仿佛发现了什么惊天大秘密。
+
+我却感觉眼前一黑，差点晕过去。老天爷，你这是要玩死我吗？！
+
+「小美，小美，你怎么了？」
+
+耳边传来闺蜜焦急的呼喊声。我却什么都听不到了。我的脑海里只有一个念头：我以后...该怎么面对我的邻居，我的...主治医生啊？

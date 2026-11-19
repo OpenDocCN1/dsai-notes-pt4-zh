@@ -1,8 +1,9 @@
+
 # 如何提高我们时间的效率和单位时间回报，才是你一生获得财富的密码
 
 > 来源：[https://docs.feishu.cn/docx/WhDJdarVioHScmxo8XbczALInnb](https://docs.feishu.cn/docx/WhDJdarVioHScmxo8XbczALInnb)
 
-时间杠杆
+## 时间杠杆
 
 时间是硬通货，每个人1天只有24个小时。
 

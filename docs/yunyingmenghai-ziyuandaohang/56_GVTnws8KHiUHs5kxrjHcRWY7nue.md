@@ -1,8 +1,9 @@
+
 # AI制作思维导图
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/HTTndDlKbosI3FxHjZ3cM9Pbnce](https://yunyingmenghai.feishu.cn/docx/HTTndDlKbosI3FxHjZ3cM9Pbnce)
 
-https://notebooklm.google.com/
+`https://notebooklm.google.com/`
 
 ![](img/7735b1eae1449816eabcc19bdb83bbc9.png)
 

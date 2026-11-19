@@ -1,6 +1,7 @@
+
 # Coze-Skills，完整使用教程看这里！
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/HJFXdJCm0oEsKQxJcpFcxBNjnTh](https://qqs7y1hozd1.feishu.cn/docx/HJFXdJCm0oEsKQxJcpFcxBNjnTh)
+> 来源：`https://qqs7y1hozd1.feishu.cn/docx/HJFXdJCm0oEsKQxJcpFcxBNjnTh`
 
 字节的速度真的是太快了，Skills才火1个月的样子，就在Coze平台上线了技能商店
 
@@ -10,9 +11,7 @@
 
 ![](img/998a66a973bb9d35ec42dbd3e4e3412d.png)
 
-# 01
-
-** **直接使用技能
+## 01 直接使用技能
 
 在商店中选择一个技能进行安装
 
@@ -24,13 +23,11 @@
 
 ![](img/4fb56f2df2c90afcd778262abf7020b2.png)
 
-# 02
-
-** **通过Skills文件创建
+## 02 通过Skills文件创建
 
 进入coze编程界面自定义技能
 
-https://code.coze.cn/
+`https://code.coze.cn/`
 
 有两种方式，一种是上传skills文件包，一种是通过自然语言
 
@@ -46,7 +43,7 @@ coze第一步进行压缩包解压，并且通过阅读工程中的文件完成�
 
 ![](img/b8dce19eb1a7372e72c8597efdc9819f.png)
 
-从这个分析报告可以看出，coze完全是遵照Claude Skills的官方使用说明来的。也就是说，coze安装了官方提供的skill-creator
+从这个分析报告可以看出，coze完全是遵照Claude Skills的官方使用说明来的。也就是说，coze安装了官方提供的`skill-creator`
 
 缺少的字段，不符合结构的文件，以及归档错误的文件，都能识别出来
 
@@ -70,9 +67,7 @@ coze第一步进行压缩包解压，并且通过阅读工程中的文件完成�
 
 且字节开通了付费渠道，变现也变得非常容易。
 
-# 03
-
-#  自然语言创建
+## 03 自然语言创建
 
 最近x官方不是出了一篇文章，讲如何写出高质量且被x推流
 
@@ -88,7 +83,7 @@ coze第一步进行压缩包解压，并且通过阅读工程中的文件完成�
 
 ![](img/4a78bd479406cbecf2ed818ab61b79d9.png)
 
-Skill.md中的内容生成得还挺专业的。文件支持下载，不想写亲自写Skill的完全可以交给coze来做。
+`Skill.md`中的内容生成得还挺专业的。文件支持下载，不想写亲自写Skill的完全可以交给coze来做。
 
 来试下效果如何，用罗永浩和西贝事件来写一篇吐槽文
 

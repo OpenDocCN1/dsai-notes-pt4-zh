@@ -1,3 +1,4 @@
+
 # 成立 AI 服务团队，推出 AI 专业咨询服务
 
 > 来源：[https://docs.feishu.cn/docx/ARridtPk1oHHiXxHHhAcarn1neb](https://docs.feishu.cn/docx/ARridtPk1oHHiXxHHhAcarn1neb)
@@ -20,7 +21,7 @@
 
 ## Winston & Strawn 律师事务所成立 AI 战略小组
 
-1 月 24 日，Winston & S[trawn 律师事务所成](https://www.winston.com/en/capabilities/sectors/artificial-intelligence-ai)立了一个人工智能（AI）战略小组。秉承着 Winston 在法律和技术交叉领域思想领导力的传统，该小组将负责协调各行业在采纳和规范 AI 方面，全方位的交易、诉讼、监管和咨询服务，并特别关注生成式 AI。
+1 月 24 日，[Winston & Strawn 律师事务所](https://www.winston.com/en/capabilities/sectors/artificial-intelligence-ai)成立了一个人工智能（AI）战略小组。秉承着 Winston 在法律和技术交叉领域思想领导力的传统，该小组将负责协调各行业在采纳和规范 AI 方面，全方位的交易、诉讼、监管和咨询服务，并特别关注生成式 AI。
 
 该小组汇集了 Winston 所有核心实践领域的律师和技术专家，他们在提供法律服务时应用 AI 以及就其使用为客户提供咨询方面都有经验。该小组将利用这些经验来监测 AI 领域的法律和技术发展，以满足客户各种需求，比如管理不断变化的监管环境、起草政策和程序、处理通过使用 AI 出现的新诉讼原因。
 

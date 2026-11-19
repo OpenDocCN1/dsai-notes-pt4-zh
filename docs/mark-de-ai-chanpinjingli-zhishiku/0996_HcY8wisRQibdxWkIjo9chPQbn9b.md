@@ -1,6 +1,7 @@
+
 # Dify智能聊天机器人接入🛰️
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/C🐧edeDD3oV32yxMQ6zce6jJnLf](https://qqs7y1hozd1.feishu.cn/docx/C🐧edeDD3oV32yxMQ6zce6jJnLf)
+> 来源：[`https://qqs7y1hozd1.feishu.cn/docx/C🐧edeDD3oV32yxMQ6zce6jJnLf`](https://qqs7y1hozd1.feishu.cn/docx/C🐧edeDD3oV32yxMQ6zce6jJnLf)
 
 🛰️作为最热门的即时通信软件，拥有巨大的流量。
 
@@ -28,7 +29,7 @@ Dify如何编排聊天助手应用我们在[Dify编排聊天助手应用](https:
 根据用户的问题，使用幽默诙谐的口吻回答用户，在回答中添加一些有趣的表情符号。
 ```
 
-设置了大语言模型，智普AI的GLM-4模型，并将其温度 tempature设置成0.95，温度 tempature的取值范围是(0.0, 1.0]，数值越大，生成的文本越随机，更具创造性。因为该 智能聊天机器人接入个人🛰️，所以这里更具创造性的回复是合理的。
+设置了大语言模型，智普AI的GLM-4模型，并将其温度`tempature`设置成0.95，温度`tempature`的取值范围是`(0.0, 1.0]`，数值越大，生成的文本越随机，更具创造性。因为该 智能聊天机器人接入个人🛰️，所以这里更具创造性的回复是合理的。
 
 ### 获取API秘钥和API服务器地址
 
@@ -44,7 +45,7 @@ Dify如何编排聊天助手应用我们在[Dify编排聊天助手应用](https:
 
 ## 部署Dify on WeChat项目
 
-Dify on WeChat是 ChatGPT on WeChat的下游分支，额外实现了对接Dify API，支持Dify聊天助手、支持Agent调用工具和知识库，支持Dify[工作流，详情请查看GitHu](https://github.com/hanfangyuan4396/dify-on-wechat)b仓库Dify on WeChat。 部署了Dify on WeChat项目，就可以将上面我们编排的智能聊天助手应用接入到个人🛰️中。
+Dify on WeChat是 ChatGPT on WeChat的下游分支，额外实现了对接Dify API，支持Dify聊天助手、支持`Agent`调用工具和知识库，支持Dify[工作流，详情请查看GitHub仓库](https://github.com/hanfangyuan4396/dify-on-wechat)。部署了Dify on WeChat项目，就可以将上面我们编排的智能聊天助手应用接入到个人🛰️中。
 
 ### 下载Dify on WeChat
 
@@ -59,30 +60,32 @@ git clone https://github.com/hanfangyuan4396/dify-on-wechat
 ### 安装核心依赖（必选）
 
 ```
-//进入dify-on-wechat根目录cd dify-on-wechat/pip3 install -r requirements.txt  # 国内可以在该命令末尾添加 &quot;-i https://mirrors.aliyun.com/pypi/simple&quot; 参数，使用阿里云镜像源安装依赖
+# 进入dify-on-wechat根目录
+cd dify-on-wechat
+pip3 install -r requirements.txt  # 国内可以在该命令末尾添加 "-i https://mirrors.aliyun.com/pypi/simple" 参数，使用阿里云镜像源安装依赖
 ```
 
 ### 拓展依赖 （可选，建议安装）
 
 ```
-pip3 install -r requirements-optional.txt # 国内可以在该命令末尾添加 &quot;-i https://mirrors.aliyun.com/pypi/simple&quot; 参数，使用阿里云镜像源安装依赖
+pip3 install -r requirements-optional.txt  # 国内可以在该命令末尾添加 "-i https://mirrors.aliyun.com/pypi/simple" 参数，使用阿里云镜像源安装依赖
 ```
 
 ### 填写配置文件
 
-我们在项目根目录创建名为config.json的文件，文件内容如下，我们在上文中获取Api秘钥和Api服务器地址保存了API密钥与API服务器地址，请把dify_api_base配置为API服务器地址；dify_api_key配置为API密钥其他配置保持不变。
+我们在项目根目录创建名为`config.json`的文件，文件内容如下，我们在上文中获取Api秘钥和Api服务器地址保存了API密钥与API服务器地址，请把`dify_api_base`配置为API服务器地址；`dify_api_key`配置为API密钥其他配置保持不变。
 
 ```
 { 
-  &quot;dify_api_base&quot;: &quot;https://api.dify.ai/v1&quot;,
-  &quot;dify_api_key&quot;: &quot;app-xxx&quot;,
-  &quot;dify_app_type&quot;: &quot;chatbot&quot;,
-  &quot;channel_type&quot;: &quot;wx&quot;,
-  &quot;model&quot;: &quot;dify&quot;,
-  &quot;single_chat_prefix&quot;: [&quot;&quot;],
-  &quot;single_chat_reply_prefix&quot;: &quot;&quot;,
-  &quot;group_chat_prefix&quot;: [&quot;@bot&quot;],
-  &quot;group_name_white_list&quot;: [&quot;ALL_GROUP&quot;]
+  "dify_api_base": "https://api.dify.ai/v1",
+  "dify_api_key": "app-xxx",
+  "dify_app_type": "chatbot",
+  "channel_type": "wx",
+  "model": "dify",
+  "single_chat_prefix": [""],
+  "single_chat_reply_prefix": "",
+  "group_chat_prefix": ["@bot"],
+  "group_name_white_list": ["ALL_GROUP"]
 }
 ```
 
@@ -90,10 +93,10 @@ pip3 install -r requirements-optional.txt # 国内可以在该命令末尾添加
 
 ```
 cd dify-on-wechat
-nohup python3 app.py &amp; tail -f nohup.out   # 在后台运行程序并通过日志输出二维码
+nohup python3 app.py & tail -f nohup.out   # 在后台运行程序并通过日志输出二维码
 ```
 
-注意这里使用nohup命令将程序运行在后台，通过tail -f nohup.out命令查看日志输出二维码，如果不使用nohup命令，程序将不会在后台运行，终端窗口关闭后程序也会停止运行。
+注意这里使用`nohup`命令将程序运行在后台，通过`tail -f nohup.out`命令查看日志输出二维码，如果不使用`nohup`命令，程序将不会在后台运行，终端窗口关闭后程序也会停止运行。
 
 ### 扫码登录
 
@@ -101,11 +104,11 @@ Dify-on-wechat启动成功后，在终端中会输出二维码，使用🛰️�
 
 ![](img/693be53eb542277e40214c3934599dce.png)
 
-登录后当看到"itchat:Start auto replying."字符，表示登录成功，我们可以进行测试。
+登录后当看到`itchat:Start auto replying.`字符，表示登录成功，我们可以进行测试。
 
 注意！
 
-> 本项目使用itchat实现个人🛰️登录，有封号风险，建议使用实名认证过的🛰️小号进行测试。
+> 本项目使用`itchat`实现个人🛰️登录，有封号风险，建议使用实名认证过的🛰️小号进行测试。
 
 ### 对话测试
 

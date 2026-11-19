@@ -1,3 +1,4 @@
+
 # 把手教你安装 OpenClaw
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/FjrJdnDiWoMD3Ex2gaOcHCdznzj](https://gotoaiworld.feishu.cn/docx/FjrJdnDiWoMD3Ex2gaOcHCdznzj)
@@ -10,7 +11,7 @@
 
 **操作系统**：
 
-+   🍎 M**ac（强烈推荐）：**原生支持最完善，可操作日历、备忘附录、截图等系统功能
++   🍎 Mac（强烈推荐）：原生支持最完善，可操作日历、备忘附录、截图等系统功能
 
 +   🪟 Windows：完全可用，但部分系统集成功能受限
 
@@ -18,17 +19,17 @@
 
 **IM工具选择**：
 
-+   🌍 国**外用户：**推荐 T**elegram（**适配度最好，功能最完整）
++   🌍 国外用户：推荐 Telegram（适配度最好，功能最完整）
 
-+   🇨🇳 国内**用户：推**荐 飞书**（现**代化、开发者友好、功能丰富）
++   🇨🇳 国内用户：推荐 飞书（现代化、开发者友好、功能丰富）
 
 +   备选：企业🛰️、钉钉、🐧
 
 **部署方式**：
 
-+   💻 有**Mac电脑：**推荐本地部署（体验最好，功能最全）
++   💻 有Mac电脑：推荐本地部署（体验最好，功能最全）
 
-+   ☁️ **无Mac或想24小时运行**：推荐云端部署（成本低，稳定可靠）
++   ☁️ 无Mac或想24小时运行：推荐云端部署（成本低，稳定可靠）
 
 ### 为什么推荐Mac？
 
@@ -50,7 +51,7 @@ OpenClaw在Mac上体验最好，因为：
 
 +   ✅ 现代化设计，用户体验好
 
-+   ✅ 开发布者友好，API完善
++   ✅ 开发者友好，API完善
 
 +   ✅ 支持富文本、文档、表格
 
@@ -74,55 +75,55 @@ OpenClaw在Mac上体验最好，因为：
 
 **推荐路径**：
 
-+   🍎 有**Mac **→ M[ac本地部署 ](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#mac%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%8E%A8%E8%8D%90)+ 飞[书配置](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html#91-%E9%A3%9E%E4%B9%A6bot%E9%85%8D%E7%BD%AE)
++   🍎 有 Mac → [Mac本地部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#mac%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%8E%A8%E8%8D%90) + [飞书配置](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html#91-%E9%A3%9E%E4%B9%A6bot%E9%85%8D%E7%BD%AE)
 
-+   ☁️ **无Mac/想24小时运行** → [云端一键部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E4%BA%91%E7%AB%AF%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2) + [飞书配置](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html#91-%E9%A3%9E%E4%B9%A6bot%E9%85%8D%E7%BD%AE)
++   ☁️ 无Mac/想24小时运行 → [云端一键部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E4%BA%91%E7%AB%AF%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2) + [飞书配置](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html#91-%E9%A3%9E%E4%B9%A6bot%E9%85%8D%E7%BD%AE)
 
 **所有部署方式**：
 
-+   🍎 M[ac本地部署（推荐）](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#mac%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%8E%A8%E8%8D%90)
++   🍎 [Mac本地部署（推荐）](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#mac%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%8E%A8%E8%8D%90)
 
-+   🪟 W[indows本地部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#windows%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2)
++   🪟 [Windows本地部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#windows%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2)
 
-+   🐧 L[inux本地部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#linux%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2)
++   🐧 [Linux本地部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#linux%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2)
 
-+   🚀 云[端一键部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E4%BA%91%E7%AB%AF%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2)
++   🚀 [云端一键部署](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E4%BA%91%E7%AB%AF%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2)
 
-+   🇨🇳 国内[一键安装](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E5%9B%BD%E5%86%85%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E6%8E%A8%E8%8D%90)
++   🇨🇳 [国内一键安装](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E5%9B%BD%E5%86%85%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E6%8E%A8%E8%8D%90)
 
 +   ☁️ Cloudflare Workers 部署（进阶）
 
-+   🐳 D[ocker 部署（可选）](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#docker-%E9%83%A8%E7%BD%B2%E5%8F%AF%E9%80%89)
++   🐳 [Docker 部署（可选）](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#docker-%E9%83%A8%E7%BD%B2%E5%8F%AF%E9%80%89)
 
 **配置指南**：
 
-+   🔑 A[PI配置指南](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#api%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97)
++   🔑 [API配置指南](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#api%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97)
 
-+   🔄 版[本升级指南](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#2x-%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E6%8C%87%E5%8D%97)
++   🔄 [版本升级指南](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#2x-%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E6%8C%87%E5%8D%97)
 
-+   ❓ [常见访问题解决](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E5%B8%B8%E8%A7%81%E8%AE%BF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3)
++   ❓ [常见访问问题解决](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#%E5%B8%B8%E8%A7%81%E8%AE%BF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3)
 
 ---
 
 ## Mac本地部署（推荐）
 
-> 🍎 最**佳体验：**如果你有Mac电脑，强烈推荐本地部署，体验最好、功能最全！
+> 🍎 最佳体验：如果你有Mac电脑，强烈推荐本地部署，体验最好、功能最全！
 
 ### 为什么选择Mac本地部署？
 
 **优势**：
 
-+   ✅ **系统集成**：可操作日历、备忘附录、文件系统
++   ✅ 系统集成：可操作日历、备忘附录、文件系统
 
-+   ✅ **隐私安全**：数据完全本地，不上传云端
++   ✅ 隐私安全：数据完全本地，不上传云端
 
-+   ✅ **响应速度快**：本地运行，无网络延迟
++   ✅ 响应速度快：本地运行，无网络延迟
 
-+   ✅ **功能最全**：支持所有高级功能
++   ✅ 功能最全：支持所有高级功能
 
-+   ✅ **成本低**：无需购买云服务器
++   ✅ 成本低：无需购买云服务器
 
-+   ✅ **开发布友好**：方便调试和自定义
++   ✅ 开发者友好：方便调试和自定义
 
 **适合人群**：
 
@@ -132,7 +133,7 @@ OpenClaw在Mac上体验最好，因为：
 
 +   需要系统集成功能的用户
 
-+   开发布者和技术爱好者
++   开发者和技术爱好者
 
 ### 系统要求
 
@@ -160,12 +161,11 @@ OpenClaw在Mac上体验最好，因为：
 
 #### 第一步：打开终端
 
-1.  按 Command + 空格 打开 Spotlight
+1. 按 Command + 空格 打开 Spotlight
 
-1.  输入 Terminal 或终端
+1. 输入 Terminal 或终端
 
-1.  按回车打开终端
-
+1. 按回车打开终端
 
 #### 第二步：安装 OpenClaw
 
@@ -207,63 +207,63 @@ openclaw onboard
 
 **配置流程**：
 
-1.  **接受风险提示**：
+1. 接受风险提示：
 
-选择 Yes 继续
+   选择 Yes 继续
 
-1.  **选择启动模式**：
+1. 选择启动模式：
 
-推荐选择 QuickStart 快速启动：
+   推荐选择 `QuickStart` 快速启动：
 
-![](img/ec4b7e308790c732f67673bed96b0e99.png)
+   ![](img/ec4b7e308790c732f67673bed96b0e99.png)
 
-1.  **选择AI模型**：
+1. 选择AI模型：
 
-选择你的AI供应商（支持国内外主流模型）：
+   选择你的AI供应商（支持国内外主流模型）：
 
-国内推荐：
+   国内推荐：
 
-+   Kimi（Moonshot AI）：长文本专家，200万字上下文
+   +   Kimi（Moonshot AI）：长文本专家，200万字上下文
 
-+   **DeepSeek**：性价比之王，推理能力强
+   +   DeepSeek：性价比之王，推理能力强
 
-+   **智谱GLM**：中文理解好，多模态支持
+   +   智谱GLM：中文理解好，多模态支持
 
-1.  **输入API Key**：
+1. 输入API Key：
 
-[根据选择的模型](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#api%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97)，输入对应的API Key（参见API配置指南）
+   [根据选择的模型](https://awesome.tryopenclaw.asia/docs/01-basics/02-installation#api%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97)，输入对应的API Key（参见API配置指南）
 
-1.  **选择聊天工具**：
+1. 选择聊天工具：
 
-+   如果要接入飞书/Telegram，选择对应选项
+   +   如果要接入飞书/Telegram，选择对应选项
 
-+   如果暂时不接入，选择 None（后续可配置）
+   +   如果暂时不接入，选择 `None`（后续可配置）
 
-![](img/b033cac4111d3958d7b950832650f795.png)
+   ![](img/b033cac4111d3958d7b950832650f795.png)
 
-1.  **Gateway端口设置**：
+1. Gateway端口设置：
 
-默认 18789 即可：
+   默认 18789 即可：
 
-1.  **选择Skills**：
+1. 选择Skills：
 
-使用空格键选择你需要的技能，也可以直接跳过：
+   使用空格键选择你需要的技能，也可以直接跳过：
 
-1.  **API Key配置**：
+1. API Key配置：
 
-没有的可以选择 no 跳过：
+   没有的可以选择 `no` 跳过：
 
-![](img/bb20719c52c8fe8026b76276451eb669.png)
+   ![](img/bb20719c52c8fe8026b76276451eb669.png)
 
-1.  **启用Hooks**：
+1. 启用Hooks：
 
-推荐启用这三个钩子（用于内内容引导、日志和会话记附录）：
+   推荐启用这三个钩子（用于内容引导、日志和会话记录）：
 
-![](img/d2f86cb71140f0ac8b1667d30ad2270c.png)
+   ![](img/d2f86cb71140f0ac8b1667d30ad2270c.png)
 
-1.  **完成配置**：
+1. 完成配置：
 
-配置完成后，会自动启动Gateway服务并打开Web UI（http://127.0.0.1:18789/chat）
+   配置完成后，会自动启动Gateway服务并打开Web UI（http://127.0.0.1:18789/chat）
 
 #### 第五步：验证安装
 
@@ -300,13 +300,13 @@ openclaw gateway stop
 
 Mac本地部署后，强烈推荐接入飞书，获得最佳体验：
 
-1.  参考 [第9章节：飞书Bot配置](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html#91-%E9%A3%9E%E4%B9%A6bot%E9%85%8D%E7%BD%AE)
+1. 参考 [第9章节：飞书Bot配置](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html#91-%E9%A3%9E%E4%B9%A6bot%E9%85%8D%E7%BD%AE)
 
-1.  配置完成后，可以在飞书中随时与OpenClaw对话
+1. 配置完成后，可以在飞书中随时与OpenClaw对话
 
-1.  支持文本、图片、文件等多种消息类型
+1. 支持文本、图片、文件等多种消息类型
 
-### 常见访问题
+### 常见访问问题
 
 **Q1：安装时提示权限不足？**
 
@@ -331,7 +331,7 @@ openclaw uninstall
 
 ## Windows本地部署
 
-> 🪟 W**indows用户：**完全可用，但部分系统集成功能受限。
+> 🪟 Windows用户：完全可用，但部分系统集成功能受限。
 
 ![](img/c54c809b410409c1a042eeacc29497dc.png)
 
@@ -357,9 +357,9 @@ openclaw uninstall
 
 Windows有两种部署方式：
 
-1.  WSL2 + Ubuntu（强烈推荐）：官方推荐方式，提供完整Linux环境支持
+1. WSL2 + Ubuntu（强烈推荐）：官方推荐方式，提供完整Linux环境支持
 
-1.  **PowerShell原生部署**：纯Windows环境，适合不想使用WSL2的用户
+1. `PowerShell` 原生部署：纯Windows环境，适合不想使用WSL2的用户
 
 ---
 
@@ -369,7 +369,7 @@ Windows有两种部署方式：
 
 #### 第一步：启用WSL2
 
-以管理员身份打开PowerShell，执行：
+以管理员身份打开`PowerShell`，执行：
 
 ```
 # 启用WSL功能
@@ -386,13 +386,13 @@ wsl --set-default-version 2
 
 方法一：Microsoft Store安装（推荐）
 
-1.  打开Microsoft Store
+1. 打开Microsoft Store
 
-1.  搜索「Ubuntu 22.04 LTS」或「Ubuntu 24.04 LTS」
+1. 搜索「Ubuntu 22.04 LTS」或「Ubuntu 24.04 LTS」
 
-1.  点击「获取」并安装
+1. 点击「获取」并安装
 
-1.  首次启动设置用户名和密码
+1. 首次启动设置用户名和密码
 
 安装完成后会自动打开Ubuntu终端，按提示设置用户名和密码。
 
@@ -401,7 +401,11 @@ wsl --set-default-version 2
 在Ubuntu终端中执行：
 
 ```
-# 更新软件包列表sudo apt update **&amp;&amp;** sudo apt upgrade -y# 安装基础工具sudo apt install -y curl git wget build-essential
+# 更新软件包列表
+sudo apt update && sudo apt upgrade -y
+
+# 安装基础工具
+sudo apt install -y curl git wget build-essential
 ```
 
 #### 第四步：安装Node.js 22+
@@ -410,7 +414,8 @@ wsl --set-default-version 2
 # 添加NodeSource仓库
 curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 
-# 安装Node.jssudo apt install -y nodejs
+# 安装Node.js
+sudo apt install -y nodejs
 
 # 验证版本（必须≥22.x）
 node -v
@@ -429,20 +434,27 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ```
 # 查看版本
-openclaw --version# 查看帮助
-openclaw --help# 查看系统状态
+openclaw --version
+
+# 查看帮助
+openclaw --help
+
+# 查看系统状态
 openclaw status
 ```
 
 #### 第七步：配置Windows访问WSL2服务
 
-由于OpenClaw运行在WSL2中，需要配置端口转发布以便Windows访问。
+由于OpenClaw运行在WSL2中，需要配置端口转发以便Windows访问。
 
-**创建启动脚本** start-openclaw.bat：
+**创建启动脚本** `start-openclaw.bat`：
 
 ```
-@echo offecho **Starting** **OpenClaw** **Gateway** **in** **WSL2****...**
-wsl** -d Ubu**ntu-22.04** -u **r**oot ser**v**ice open**claw starttimeout /t 3st**art **http://localhost:18789
+@echo off
+echo Starting OpenClaw Gateway in WSL2...
+wsl -d Ubuntu-22.04 -u root service openclaw start
+timeout /t 3
+start http://localhost:18789
 ```
 
 或直接在WSL2中启动：
@@ -454,8 +466,6 @@ openclaw gateway run --port 18789
 
 然后在Windows浏览器访问 http://localhost:18789
 
----
-
 ### 方式二：PowerShell原生部署
 
 适合不想使用WSL2的纯Windows用户。
@@ -464,11 +474,11 @@ openclaw gateway run --port 18789
 
 **方法一：官网下载安装**
 
-1.  访问 https://nodejs.org/zh-cn
+1. 访问 https://nodejs.org/zh-cn
 
-1.  下载Windows安装包（LTS版本22.x）
+1. 下载Windows安装包（LTS版本22.x）
 
-1.  运行安装程序，勾选「自动安装必要的工具」
+1. 运行安装程序，勾选「自动安装必要的工具」
 
 #### 第二步：验证Node.js安装
 
@@ -480,7 +490,7 @@ npm -v
 
 #### 第三步：以管理员身份安装 OpenClaw
 
-**重要**：必须以**管理员身份**运行PowerShell。
+**重要**：必须以管理员身份运行`PowerShell`。
 
 ```
 # 安装最新稳定版
@@ -490,32 +500,45 @@ npm install -g openclaw@latest
 npm install -g @qingchencloud/openclaw-zh@latest
 ```
 
-#### 第四步：解决安装权限访问题
+#### 第四步：解决安装权限访问问题
 
 如果遇到权限错误：
 
-```
-# 方法A：启用PowerShell脚本执行
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser**
-**
-# 方法B：修改npm安装目附录
-npm config set prefix &quot;C:\npm&quot;
-npm config set cache &quot;C:\npm-cache&quot;
 
-# 将目附录添加到PATH
-[Environment]::SetEnvironmentVariable(&quot;Path&quot;, $env:Path + &quot;;C:\npm&quot;, &quot;User&quot;)
+
+# Windows 本地部署
+
+## 安装步骤
+
+### 方法A：启用PowerShell脚本执行
+
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-#### 第五步：验证安装
+### 方法B：修改npm安装目录
+
+```
+npm config set prefix "C:\npm"
+npm config set cache "C:\npm-cache"
+```
+
+### 将目录添加到PATH
+
+```
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\npm", "User")
+```
+
+## 第五步：验证安装
 
 ```
 openclaw --version
 openclaw --help
 ```
 
-#### 第六步：解决常见访问题
+## 第六步：解决常见问题
 
-**访问题：sharp模块加载失败**
+### 问题：sharp模块加载失败
 
 ```
 # 清理npm缓存
@@ -525,62 +548,59 @@ npm cache clean --force
 npm install -g openclaw@latest --force
 ```
 
-访问题：Windows Defender阻止
+### 问题：Windows Defender阻止
 
-将OpenClaw安装目附录添加到Windows Defender排除项：
+将OpenClaw安装目录添加到Windows Defender排除项：
 
 ```
 C:\Users\你的用户名\AppData\Roaming\npm
 C:\Users\你的用户名\.openclaw
 ```
 
----
-
-### 初始化配置
+# 初始化配置
 
 安装完成后，需要运行初始化向导。
 
-#### 启动初始化向导
+## 启动初始化向导
 
 ```
 openclaw onboard --install-daemon
 ```
 
-#### 配置AI模型提供商
+## 配置AI模型提供商
 
 OpenClaw需要对接AI模型才能工作。
 
 以配置Anthropic Claude（推荐）为例：
 
-> 📖 详**细说明:**[ 完整的 API Key 配](https://awesome.tryopenclaw.asia/docs/api-key-config-guide.html)置方式和优先级说明请参考 API Key 配置完整指南
+> 📖 详细说明：完整的 API Key 配置方式和优先级说明请参考 [API Key 配置完整指南](https://awesome.tryopenclaw.asia/docs/api-key-config-guide.html)
 
 ```
 # WSL2或PowerShell
 openclaw models auth add
-# 按提示选择 anthropic# 输入 API Key: sk-ant-xxx
+# 按提示选择 anthropic
+# 输入 API Key: sk-ant-xxx
 ```
 
-#### 绑定消息渠道
+## 绑定消息渠道
 
-1.  **Telegram**
+### Telegram
 
 创建Bot：
 
-1.  在Telegram搜索 @BotFather
-
-1.  发布送 /newbot 创建机器人
-
-1.  保存Bot Token
+1. 在Telegram搜索 @BotFather
+1. 发送 /newbot 创建机器人
+1. 保存Bot Token
 
 配置：
 
 ```
 openclaw channels add telegram
-openclaw config set channels.telegram.botToken &quot;your-bot-token&quot;
+openclaw config set channels.telegram.botToken "your-bot-token"
 openclaw gateway restart
 ```
 
-1.  **WhatsApp**
+### WhatsApp
 
 ```
 # 登录WhatsApp（显示二维码）
@@ -589,51 +609,47 @@ openclaw channels login whatsapp
 # 用手机WhatsApp扫码
 ```
 
-1.  **企业🛰️（国内推荐）**
+### 企业🛰️（国内推荐）
 
 ```
 # 安装企业微信插件
 openclaw plugins install @m1heng-clawd/wework
 
 # 配置
-openclaw config set channels.wework &#x27;{&quot;enabled&quot;:true,&quot;corpId&quot;:&quot;xxx&quot;,&quot;agentSecret&quot;:&quot;xxx&quot;}&#x27; --json
+openclaw config set channels.wework '{"enabled":true,"corpId":"xxx","agentSecret":"xxx"}' --json
 ```
 
-1.  **飞书（国内推荐）**
+### 飞书（国内推荐）
 
 ```
 # 安装飞书插件
 openclaw plugins install @m1heng-clawd/feishu
 
 # 配置
-openclaw config set channels.feishu &#x27;{&quot;enabled&quot;:true,&quot;appId&quot;:&quot;cli_xxx&quot;,&quot;appSecret&quot;:&quot;xxx&quot;}&#x27; --json
+openclaw config set channels.feishu '{"enabled":true,"appId":"cli_xxx","appSecret":"xxx"}' --json
 ```
 
-### Windows常用命令速查
+# Windows常用命令速查
 
-**系统管理**：
+## 系统管理
 
-**配置管理**：
+## 配置管理
 
----
+# Linux本地部署
 
-## Linux本地部署
+> 🐧 Linux用户：适合开发者，配置灵活。
 
-> 🐧 L**inux用户：**适合开发布者，配置灵活。
+## 系统要求
 
-### 系统要求
+### 推荐发行版
 
-**推荐发布行版**：
++ Ubuntu 20.04+
++ Debian 11+
++ CentOS 8+
 
-+   Ubuntu 20.04+
+## 安装步骤
 
-+   Debian 11+
-
-+   CentOS 8+
-
-### 安装步骤
-
-#### 第一步：安装Node.js
+### 第一步：安装Node.js
 
 ```
 # Ubuntu/Debian
@@ -644,41 +660,39 @@ sudo apt-get install -y nodejs
 node --version
 ```
 
-#### 第二步：安装 OpenClaw
+### 第二步：安装 OpenClaw
 
 ```
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-#### 第三步：验证安装
+### 第三步：验证安装
 
 ```
 openclaw --version
 ```
 
-#### 第四步：初始化配置
+### 第四步：初始化配置
 
 ```
 openclaw onboard
 ```
 
----
+# 云端部署
 
-## 2.1 系统要求与准备
+## 系统要求与准备
 
 ### 云端部署要求
 
-如果选择云端部署，**无需任何本地环境**，只需要：
+如果选择云端部署，无需任何本地环境，只需要：
 
-+   ✅ 一个浏览器
-
-+   ✅ 20元/月预算
-
-+   ✅ 10分钟时间
++ ✅ 一个浏览器
++ ✅ 20元/月预算
++ ✅ 10分钟时间
 
 ## 云端一键部署
 
-> 🔥 适**合场景：**无Mac电脑、需要24小时运行、多设备访问。
+> 🔥 适合场景：无Mac电脑、需要24小时运行、多设备访问。
 
 ### 为什么选择云端部署？
 
@@ -696,51 +710,39 @@ openclaw onboard
 
 #### 第一步：购买服务器
 
-1.  **访问活动页面**：
+1. 访问活动页面：
 
 ```
 https://cloud.tencent.com/act/pro/lighthouse-moltbot
 ```
 
-1.  **选择配置**：
+1. 选择配置：
 
-+   配置：2核2G
++ 配置：2核2G
++ 带宽：20M
++ 地域：建议选择硅谷（国外地域访问AI模型更稳定）
++ 价格：20元/月 或 99元/年
 
-+   带宽：20M
+1. 实名认证：
 
-+   地域：建议选择**硅谷**（国外地域访问AI模型更稳定）
++ 首次使用需要实名认证
++ 选择个人认证即可
++ 按提示完成认证
 
-+   价格：20元/月 或 99元/年
+1. 完成购买：
 
-1.  **实名认证**：
++ 点击”立即购买”
++ 支付20元（建议先买1个月试用）
++ 等待服务器创建完成
++ 可选：关闭自动续费
 
-+   首次使用需要实名认证
+1. 获取服务器信息：
 
-+   选择个人认证即可
-
-+   按提示完成认证
-
-1.  **完成购买**：
-
-+   点击”立即购买”
-
-+   支付20元（建议先买1个月试用）
-
-+   等待服务器创建完成
-
-+   **可选**：关闭自动续费
-
-1.  **获取服务器信息**：
-
-+   购买完成后，点击头像 → “站内信”
-
-+   查看并记附录：
-
-+   公网IP地址
-
-+   默认用户名（通常是 lighthouse）
-
-+   初始密码
++ 购买完成后，点击头像 → “站内信”
++ 查看并记录：
++ 公网IP地址
++ 默认用户名（通常是 lighthouse）
++ 初始密码
 
 ![](img/f5431dd81f97d25f6cb18b2aef62bb54.png)
 
@@ -750,119 +752,98 @@ https://cloud.tencent.com/act/pro/lighthouse-moltbot
 
 **步骤**：
 
-1.  **注册 CodeBuddy**：
+1. 注册 CodeBuddy：
 
-+   国际版：https://www.codebuddy.ai/promotion/?ref=lweelxalgm（谷歌/GitHub账户）
++ 国际版：https://www.codebuddy.ai/promotion/?ref=lweelxalgm（谷歌/GitHub账户）
++ 国内版：https://www.codebuddy.cn/promotion/?ref=7zucxaz7zvqi（手机号）
++ 建议使用新账号注册
 
-+   国内版：https://www.codebuddy.cn/promotion/?ref=7zucxaz7zvqi（手机号）
+1. 领取奖励：
 
-+   建议使用新账号注册
++ 登录后点击”实战礼” → “立刻领奖”
++ 获得1个月免费使用权
++ 累计活跃7日可再延长2个月（每天在CodeBuddy中访问即可）
 
-1.  **领取奖励**：
+1. 重装系统为OpenClaw：
 
-+   登录后点击”实战礼” → “立刻领奖”
++ 登录腾讯云控制台：https://console.cloud.tencent.com/
++ 进入”轻量应用服务器”
++ 点击”重装系统”
++ 选择”使用应用模板” → “OpenClaw”
++ 选择”无需备份”，点击”确定”
 
-+   获得1个月免费使用权
+1. 后续操作：
 
-+   **累计活跃7日可再延长2个月**（每天在CodeBuddy中访问候即可）
-
-1.  **重装系统为OpenClaw**：
-
-+   登录腾讯云控制台：https://console.cloud.tencent.com/
-
-+   进入”轻量应用服务器”
-
-+   点击”重装系统”
-
-+   选择”使用应用模板” → “OpenClaw”
-
-+   选择”无需备份”，点击”确定”
-
-1.  **后续操作**：
-
-+   重装完成后，按照下面的步骤继续配置
++ 重装完成后，按照下面的步骤继续配置
 
 #### 第二步：连接服务器
 
-1.  **使用SSH客户端连接**：
+1. 使用SSH客户端连接：
 
-1.  方式一：使用SSH客户端（推荐）
+1. 方式一：使用SSH客户端（推荐）
 
-+   下载SSH客户端（如 Xterminal、Termius、FinalShell）
++ 下载SSH客户端（如 Xterminal、Termius、FinalShell）
++ 新建SSH连接：
++ 名称：随便取
++ 地址：公网IP地址
++ 端口：22
++ 用户名：lighthouse（或站内信中的用户名）
++ 密码：购买时设置的密码
 
-+   新建SSH连接：
+1. 方式二：使用网页终端
 
-+   名称：随便取
++ 在腾讯云控制台，点击实例卡片
++ 点击”登录”按钮
++ 直接在浏览器中打开终端
 
-+   地址：公网IP地址
-
-+   端口：22
-
-+   用户名：lighthouse（或站内信中的用户名）
-
-+   密码：购买时设置的密码
-
-1.  **方式二：使用网页终端**
-
-+   在腾讯云控制台，点击实例卡片
-
-+   点击”登录”按钮
-
-+   直接在浏览器中打开终端
-
-1.  **验证OpenClaw安装**：
+1. 验证OpenClaw安装：
 
 ```
 openclaw --version
 ```
 
-1.  如果显示版本号（如 2026.3.2），说明OpenClaw已预装成功。
+1. 如果显示版本号（如 2026.3.2），说明OpenClaw已预装成功。
 
 #### 第三步：配置大模型
 
-1.  **进入应用管理**：
+1. 进入应用管理：
 
-+   点击服务器卡片
++ 点击服务器卡片
++ 切换到”应用管理”标签
 
-+   切换到”应用管理”标签
+1. 选择模型：
 
-1.  **选择模型**：
-
-+   推荐使用 **Kimi k2.5**（性价比最高）
-
-+   也可以选择其他国产大模型
++ 推荐使用 `Kimi k2.5`（性价比最高）
++ 也可以选择其他国产大模型
 
 ![](img/1f1bd2dd41ccc3017d847e4f45676ff8.png)
 
-1.  **获取API Key**：
+1. 获取API Key：
 
-1.  **Kimi k2.5配置**（推荐）：
+1. `Kimi k2.5`配置（推荐）：
 
 ```
 1. 访问：https://platform.moonshot.cn/
 2. 注册账号并登录
-3. 进入&quot;API管理&quot;
-4. 点击&quot;创建API Key&quot;
+3. 进入"API管理"
+4. 点击"创建API Key"
 5. 复制API Key（格式：sk-xxx）
 ```
 
-1.  **填入配置**：
+1. 填入配置：
 
-+   将API Key粘贴到配置框
-
-+   点击”保存”
-
-+   等待配置生效
++ 将API Key粘贴到配置框
++ 点击”保存”
++ 等待配置生效
 
 #### 第四步：测试连接
 
-1.  **访问WebUI**：
+1. 访问WebUI：
 
-+   使用控制台提供的访问地址
++ 使用控制台提供的访问地址
++ 格式：http://你的服务器IP:18789/?token=xxx
 
-+   格式：http://你的服务器IP:18789/?token=xxx
-
-1.  **发布送测试消息**：
+1. 发送测试消息：
 
 ```
 你好，能听到我说话吗？
@@ -870,241 +851,196 @@ openclaw --version
 
 ![](img/bd4c154baf6152b2b85c4158b33302dc.png)
 
-1.  **验证成功**：
+1. 验证成功：
 
-+   如果收到AI回复，说明配置成功
-
-+   右上角会显示使用的模型名称
++ 如果收到AI回复，说明配置成功
++ 右上角会显示使用的模型名称
 
 ### 火山引擎部署（更便宜）
 
 如果你是飞书重度用户，推荐使用火山引擎：
 
-1.  **访问活动页面**：
+1. 访问活动页面：
 
 ```
 https://www.volcengine.com/activity/clawdbot
 ```
 
-1.  **价格优势**：
+1. 价格优势：
 
-+   9.9元/月
++ 9.9元/月
++ 58元/年
++ 比腾讯云便宜10元
 
-+   58元/年
+1. 配置对比：
 
-+   比腾讯云便宜10元
++ 2核2G（相同）
++ 5M带宽（腾讯云20M）
++ 适合飞书用户
 
-1.  **配置对比**：
+1. 部署流程：
 
-+   2核2G（相同）
-
-+   5M带宽（腾讯云20M）
-
-+   适合飞书用户
-
-1.  **部署流程**：
-
-+   与腾讯云类似
-
-+   按照页面提示操作即可
++ 与腾讯云类似
++ 按照页面提示操作即可
 
 ### 百度智能云部署（0.01元试用）
 
-> 💰 超**值试用：**百度智能云提供0.01元/月的特惠活动，适合想要低成本试用的用户。
+> 💰 超值试用：百度智能云提供0.01元/月的特惠活动，适合想要低成本试用的用户。
 
 #### 活动信息
 
-1.  **访问活动页面**：
+1. 访问活动页面：
 
 ```
 https://cloud.baidu.com/product/BCC/moltbot.html
 ```
 
-1.  **活动规则**：
+1. 活动规则：
 
-+   首月仅需 **0.01元**
-
-+   需要注册并绑定个人身份证
-
-+   每个账号限购一次
++ 首月仅需 0.01元
++ 需要注册并绑定个人身份证
++ 每个账号限购一次
 
 #### 部署步骤
 
 **第一步：购买服务器**
 
-1.  注册百度智能云账号
-
-1.  完成个人实名认证（绑定身份证）
-
-1.  抢购特惠LS实例（0.01元/月）
-
-1.  如果售罄，可以原价购买轻量应用服务器
+1. 注册百度智能云账号
+1. 完成个人实名认证（绑定身份证）
+1. 抢购特惠LS实例（0.01元/月）
+1. 如果售罄，可以原价购买轻量应用服务器
 
 **第二步：创建实例**
 
-1.  进入轻量应用服务器LS控制台
+1. 进入轻量应用服务器LS控制台
+1. 点击”创建实例”：
++ 名称：随机生成或自定义
++ 密码：**务必记住**，后续登录需要
+1. 等待实例创建完成
 
-1.  点击”创建实例”：
+**第三步：一键配置 OpenClaw**
 
-+   名称：随机生成或自定义
+1. 进入实例详情页：
 
-+   密码：**务必记住**，后续登录需要
++ 点击实例卡片
++ 进入”应用管理”标签
 
-1.  等待实例创建完成
+1. 应用配置：
 
-第三步：一键配置 OpenClaw
++ 点击”一键开通”
++ 点击”一键放行”（开放防火墙端口）
++ 等待显示”已放行”
 
-1.  **进入实例详情页**：
+1. 模型配置：
 
-+   点击实例卡片
++ 下拉选择模型（如：文心一言、千帆大模型）
++ 点击”应用模型配置”
++ 系统会自动创建千帆API Key并配置
 
-+   进入”应用管理”标签
+1. 接入方式配置（可选）：
 
-1.  **应用配置**：
++ 支持接入：飞书、钉钉、企业🛰️、🐧
++ 选择你常用的通讯工具
++ 按照提示完成配置（详见后续章节）
 
-+   点击”一键开通”
+1. Skills 配置（可选）：
 
-+   点击”一键放行”（开放防火墙端口）
-
-+   等待显示”已放行”
-
-1.  **模型配置**：
-
-+   下拉选择模型（如：文心一言、千帆大模型）
-
-+   点击”应用模型配置”
-
-+   系统会自动创建千帆API Key并配置
-
-1.  **接入方式配置**（可选）：
-
-+   支持接入：飞书、钉钉、企业🛰️、🐧
-
-+   选择你常用的通讯工具
-
-+   按照提示完成配置（详见后续章节节）
-
-1.  **Skills 配置**（可选）：
-
-+   默认提供：百度搜索、百度百科
-
-+   可以按需选择并点击”应用”
-
-+   更多Skills可访问OpenClaw官网获取
++ 默认提供：百度搜索、百度百科
++ 可以按需选择并点击”应用”
++ 更多Skills可访问OpenClaw官网获取
 
 **第四步：访问WebUI**
 
-1.  点击”获取网站地址”
-
-1.  复制访问链接
-
-1.  在浏览器中打开，即可与OpenClaw对话
+1. 点击”获取网站地址”
+1. 复制访问链接
+1. 在浏览器中打开，即可与OpenClaw对话
 
 #### 优势与限制
 
 **优势**：
 
-+   ✅ 价格极低（首月0.01元）
-
-+   ✅ 一键配置，无需手动安装
-
-+   ✅ 集成百度千帆大模型
-
-+   ✅ 自动配置APIKey
++ ✅ 价格极低（首月0.01元）
++ ✅ 一键配置，无需手动安装
++ ✅ 集成百度千帆大模型
++ ✅ 自动配置APIKey
 
 **限制**：
 
-+   ⚠️ 仅限首月优惠
-
-+   ⚠️ 需要实名认证
-
-+   ⚠️ 活动可能售罄
++ ⚠️ 仅限首月优惠
++ ⚠️ 需要实名认证
++ ⚠️ 活动可能售罄
 
 ### 阿里云部署（可选）
 
 阿里云也提供了OpenClaw一键部署方案：
 
-1.  **访问活动页面**：
+1. 访问活动页面：
 
 ```
 https://www.aliyun.com/activity/ecs/clawdbot
 ```
 
-1.  **选择轻量应用服务器**：
+1. 选择轻量应用服务器：
 
-+   使用 OpenClaw镜像
-
-+   一键安装配置
++ 使用 OpenClaw镜像
++ 一键安装配置
 
 ![](img/fd3a78a89ebbf5414bd6c377f35bf2d5.png)
 
-1.  **价格参考**：
+1. 价格参考：
 
-+   与腾讯云类似
-
-+   具体以活动页面为准
++ 与腾讯云类似
++ 具体以活动页面为准
 
 ### 官方视频教程（强烈推荐）
 
 腾讯云提供了详细的视频教程，跟着视频操作更简单：
 
-1.  云上OpenClaw一键部署并接入企微和🐧
+1. 云上OpenClaw一键部署并接入企微和🐧
 
-+   视频地址：https://cloud.tencent.com/developer/video/85003
++ 视频地址：https://cloud.tencent.com/developer/video/85003
++ 时长：约10分钟
++ 内容：从购买到配置完成
 
-+   时长：约10分钟
+1. 云上OpenClaw一键部署并接入飞书和钉钉
 
-+   内内容：从购买到配置完成
-
-1.  云上OpenClaw一键部署并接入飞书和钉钉
-
-+   视频地址：https://cloud.tencent.com/developer/video/85055
-
-+   时长：约10分钟
-
-+   内内容：飞书和钉钉接入全流程
++ 视频地址：https://cloud.tencent.com/developer/video/85055
++ 时长：约10分钟
++ 内容：飞书和钉钉接入全流程
 
 ### 存量服务器部署
 
 如果你已经有轻量服务器，可以使用AI助手对话式部署：
 
-+   **官方教程**：https://cloud.tencent.com/developer/article/2625605
++ 官方教程：https://cloud.tencent.com/developer/article/2625605
++ 适用场景：已有轻量服务器
++ 部署方式：通过AI对话完成配置
++ 优势：更灵活，可自定义
 
-+   **适用场景**：已有轻量服务器
-
-+   **部署方式**：通过AI对话完成配置
-
-+   **优势**：更灵活，可自定义
-
-### 云端部署常见访问题
+## 云端部署常见问题
 
 **Q1: 云端部署安全吗？**
 
-+   ✅ 数据存储在你的服务器上
-
-+   ✅ 只有你能访问
-
-+   ✅ 可以设置访问密码
++ ✅ 数据存储在你的服务器上
++ ✅ 只有你能访问
++ ✅ 可以设置访问密码
 
 **Q2: 可以随时停止吗？**
 
-+   ✅ 可以随时删除服务器
-
-+   ✅ 按使用时长计费
-
-+   ✅ 不用了就删除，不浪费钱
++ ✅ 可以随时删除服务器
++ ✅ 按使用时长计费
++ ✅ 不用了就删除，不浪费钱
 
 **Q3: 手机怎么访问？**
 
-+   通过🐧、企微、飞书等平台
++ 通过🐧、企微、飞书等平台
++ 详见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)
 
-+   详见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)
+# 国内一键安装（推荐）
 
-## 国内一键安装（推荐）
+> 🇨🇳 国内用户推荐：使用官方中文版一键安装脚本，速度快、配置简单。
 
-> 🇨🇳 国内**用户推荐：使**用官方中文版一键安装脚本，速度快、配置简单。
-
-### 为什么选择国内版？
+## 为什么选择国内版？
 
 国内版相比国际版具有多项本地化优势，如表 2-3 所示。
 
@@ -1112,47 +1048,43 @@ https://www.aliyun.com/activity/ecs/clawdbot
 
 ![](img/3d9b2164071bf26c4d4828a421bb717f.png)
 
-### 前置要求
+## 前置要求
 
-**必需环境**：
+### 必需环境
 
-+   Node.js 22.0.0+（必需）
++ `Node.js` 22.0.0+（必需）
++ `pnpm`（可选，推荐用于源码构建）
 
-+   pnpm（可选，推荐用于源码构建）
+### 推荐配置
 
-**推荐配置**：
++ Brave Search API 密钥（用于网络搜索）
++ 可通过 `openclaw-cn configure --section web` 配置
 
-+   Brave Search API 密钥（用于网络搜索）
+### 系统要求
 
-+   可通过 openclaw-cn configure --section web 配置
++ macOS：需要 Xcode / Command Line Tools（仅 CLI + Gateway 需要 Node.js）
++ Windows：强烈推荐使用 WSL2（Ubuntu），原生 Windows 未经测试
++ Linux：Ubuntu 20.04+、Debian、CentOS
 
-**系统要求**：
+## 快速开始
 
-+   macOS：需要 Xcode / Command Line Tools（仅 CLI + Gateway 需要 Node.js）
-
-+   Windows：强烈推荐使用 WSL2（Ubuntu），原生 Windows 未经测试
-
-+   Linux：Ubuntu 20.04+、Debian、CentOS
-
-### 快速开始
-
-#### macOS/Linux 安装
+### macOS/Linux 安装
 
 ```
 # 使用国内官方安装脚本
 curl -fsSL https://clawd.org.cn/install.sh | bash
 ```
 
-#### Windows 安装
+### Windows 安装
 
 使用 PowerShell（管理员权限）：
 
 ```
 # 使用国内官方安装脚本
-iwr -use**b** https://clawd.org.cn/install.ps1 | iex
+iwr -UseBasicParsing https://clawd.org.cn/install.ps1 | iex
 ```
 
-> ⚠️ **Windows 用户注意**：强烈推荐使用 WSL2（Ubuntu），原生 Windows 支持有限。
+> ⚠️ Windows 用户注意：强烈推荐使用 WSL2（Ubuntu），原生 Windows 支持有限。
 
 **WSL2 安装步骤**：
 
@@ -1162,23 +1094,33 @@ wsl --install
 
 # 2. 重启电脑
 
-# 3. **在** WSL2 中运行 Linux 安装命令
+# 3. 在 WSL2 中运行 Linux 安装命令
 curl -fsSL https://clawd.org.cn/install.sh | bash
 ```
 
-#### 全局安装（替代方案）
+### 全局安装（替代方案）
 
 如果一键脚本失败，可以使用 npm 全局安装：
 
-```
-# 使用 npm
-npm install -g openclaw-cn@latest
 
-# 或使用 pnpm（推荐）
+
+# OpenClaw 安装与使用指南
+
+## 安装
+
+### 使用 npm
+
+```
+npm install -g openclaw-cn@latest
+```
+
+### 使用 pnpm（推荐）
+
+```
 pnpm add -g openclaw-cn@latest
 ```
 
-### 运行入门向导
+## 运行入门向导
 
 安装完成后，运行配置向导：
 
@@ -1187,79 +1129,63 @@ pnpm add -g openclaw-cn@latest
 openclaw-cn onboard --install-daemon
 ```
 
-### 配置向导流程
+## 配置向导流程
 
 向导会引导你完成以下配置：
 
-1.  **选择网关模式**：
+1. **选择网关模式**：
 
-+   本地网关（推荐）：Gateway 运行在本机
+   + 本地网关（推荐）：`Gateway` 运行在本机
+   + 远程网关：`Gateway` 运行在服务器
 
-+   远程网关：Gateway 运行在服务器
+1. **配置认证**：
 
-1.  **配置认证**：
+   + `OpenAI Code`（Codex）订阅（OAuth）
+   + API 密钥（推荐用于 Anthropic）
+   + 也支持 `claude setup-token`
 
-+   OpenAI Code（Codex）订阅（OAuth）
+1. **选择 AI 提供商**：
 
-+   API 密钥（推荐用于 Anthropic）
+   + 推荐：`Kimi`、`DeepSeek`、`GLM-4`（国产模型）
+   + 可选：`Claude`、`GPT`（需要 `API key`）
 
-+   也支持 claude setup-token
+1. **配置聊天平台**（可选）：
 
-1.  **选择 AI 提供商**：
+   + WhatsApp：QR 扫码登录
+   + Telegram：输入 `Bot Token`
+   + Discord：输入 `Bot Token`
+   + Mattermost：插件令牌
+   + 飞书/企微/钉钉：输入应用凭证
 
-+   推荐：Kimi、DeepSeek、GLM-4（国产模型）
+1. **安装后台服务**（推荐）：
 
-+   可选：Claude、GPT（需要 API key）
+   + macOS：使用 `launchd`
+   + Linux：使用 `systemd`
+   + WSL2：使用 `systemd`
+   + 运行时：`Node`（推荐，WhatsApp/Telegram 必需）
 
-1.  **配置聊天平台**（可选）：
+1. **网关令牌**：
 
-+   WhatsApp：QR 扫码登录
+   + 向导默认生成一个令牌
+   + 存储在 `gateway.auth.token` 中
+   + 即使在回环地址上也会生成
 
-+   Telegram：输入 Bot Token
-
-+   Discord：输入 Bot Token
-
-+   Mattermost：插件令牌
-
-+   飞书/企微/钉钉：输入应用凭证
-
-1.  **安装后台服务**（推荐）：
-
-+   macOS：使用 launchd
-
-+   Linux：使用 systemd
-
-+   WSL2：使用 systemd
-
-+   运行时：Node（推荐，WhatsApp/Telegram 必需）
-
-1.  **网关令牌**：
-
-+   向导默认生成一个令牌
-
-+   存储在 gateway.auth.token 中
-
-+   即使在回环地址上也会生成
-
-### 认证配置说明
+## 认证配置说明
 
 **认证存储位置**（重要）：
 
-+   推荐的 Anthropic 路径：设置 API 密钥（向导可存储）
-
-+   OAuth 凭据（旧版导入）：~/.openclaw/credentials/oauth.json
-
-+   认证配置文件：~/.openclaw/agents/<agentId>/agent/auth-profiles.json
++ 推荐的 Anthropic 路径：设置 API 密钥（向导可存储）
++ OAuth 凭据（旧版导入）：`~/.openclaw/credentials/oauth.json`
++ 认证配置文件：`~/.openclaw/agents/<agentId>/agent/auth-profiles.json`
 
 **无头/服务器提示**：
 
-+   先在普通机器上完成 OAuth
++ 先在普通机器上完成 OAuth
++ 然后将 `oauth.json` 复制到网关主机
 
-+   然后将 oauth.json 复制到网关主机
+## 启动 Gateway
 
-### 启动 Gateway
-
-如果安装了后台服务，Gateway 应该已经在运行：
+如果安装了后台服务，`Gateway` 应该已经在运行：
 
 ```
 # 检查 Gateway 状态
@@ -1275,13 +1201,13 @@ openclaw-cn gateway --port 18789 --verbose
 
 **Dashboard 访问**：
 
-本地回环地址：http://127.0.0.1:18789/
+本地回环地址：`http://127.0.0.1:18789/`
 
-如果配置了令牌，需要将其粘贴到控制界面设置中（存储为 connect.params.auth.token）。
+如果配置了令牌，需要将其粘贴到控制界面设置中（存储为 `connect.params.auth.token`）。
 
-> ⚠️ Bun 警告（WhatsApp + Telegram）：Bun 在这些渠道上有已知访问题。如果使用 WhatsApp 或 Telegram，请使用 Node 运行网关。
+> ⚠️ Bun 警告（WhatsApp + Telegram）：Bun 在这些渠道上有已知访问题。如果使用 WhatsApp 或 Telegram，请使用 `Node` 运行网关。
 
-### 快速验证（2分钟）
+## 快速验证（2分钟）
 
 ```
 # 检查状态
@@ -1291,9 +1217,9 @@ openclaw-cn status
 openclaw-cn health
 ```
 
-### 配对 + 连接聊天界面
+## 配对 + 连接聊天界面
 
-#### WhatsApp（二维码登录）
+### WhatsApp（二维码登录）
 
 ```
 # 登录 WhatsApp
@@ -1302,25 +1228,25 @@ openclaw-cn channels login
 
 通过 WhatsApp → 设置 → 已连接的设备 扫描二维码。
 
-#### Telegram / Discord / 其他
+### Telegram / Discord / 其他
 
 向导可以为你写入令牌/配置。如果手动配置：
 
 **Telegram**：
 
 ```
-openclaw-cn channels add \--channel telegram \--token &quot;YOUR_BOT_TOKEN&quot;
+openclaw-cn channels add --channel telegram --token "YOUR_BOT_TOKEN"
 ```
 
 **Discord**：
 
 ```
-openclaw-cn channels add \--channel discord \--token &quot;YOUR_BOT_TOKEN&quot;
+openclaw-cn channels add --channel discord --token "YOUR_BOT_TOKEN"
 ```
 
-> 💡 T**elegram 私信提示：**首次私信会返回配对码，需要批准后机器人才会响应。
+> 💡 `Telegram` 私信提示：首次私信会返回配对码，需要批准后机器人才会响应。
 
-### 私信安全（配对审批）
+## 私信安全（配对审批）
 
 默认策略：未知私信会收到短代码，消息在获得批准前不会被处理。
 
@@ -1331,10 +1257,10 @@ openclaw-cn channels add \--channel discord \--token &quot;YOUR_BOT_TOKEN&quot;
 openclaw-cn pairing list whatsapp
 
 # 批准配对
-openclaw-cn pairing approve whatsapp &lt;code&gt;
+openclaw-cn pairing approve whatsapp <code>
 ```
 
-### 从源码运行（开发布）
+## 从源码运行（开发布）
 
 如果需要修改 OpenClaw 本身，可以从源码运行：
 
@@ -1344,7 +1270,8 @@ git clone https://github.com/clawdbot/clawdbot.git
 cd clawdbot
 
 # 安装依赖
-pnpm install# 构建 UI（首次运行时自动安装 UI 依赖）
+pnpm install
+# 构建 UI（首次运行时自动安装 UI 依赖）
 pnpm ui:build
 
 # 构建项目
@@ -1354,90 +1281,80 @@ pnpm build
 openclaw-cn onboard --install-daemon
 ```
 
-如果还没有全局安装，可以从仓库中通过 pnpm openclaw-cn ... 运行命令。
+如果还没有全局安装，可以从仓库中通过 `pnpm openclaw-cn ...` 运行命令。
 
-**从源码运行 Gateway**：
+**从源码运行 `Gateway`**：
 
 ```
 node dist/entry.js gateway --port 18789 --verbose
 ```
 
-### 端到端验证
+## 端到端验证
 
-在新终端中，发布送测试消息：
+在新终端中，发送测试消息：
 
 ```
-# 发布送测试消息
-openclaw-cn message send --target +15555550123 --message &quot;Hello from OpenClaw&quot;
+# 发送测试消息
+openclaw-cn message send --target +15555550123 --message "Hello from OpenClaw"
 ```
 
-如果 openclaw-cn health 显示 “no auth configured”，需要返回向导设置 OAuth/密钥认证。
+如果 `openclaw-cn health` 显示 `no auth configured`，需要返回向导设置 OAuth/密钥认证。
 
 **调试提示**：
 
-+   openclaw-cn status --all：最佳的只读调试报告
++ `openclaw-cn status --all`：最佳的只读调试报告
++ `openclaw-cn health`：向运行中的网关请求健康快照
++ `openclaw-cn status --deep`：深度状态检查
 
-+   openclaw-cn health：向运行中的网关请求健康快照
+## 配置文件位置
 
-+   openclaw-cn status --deep：深度状态检查
-
-### 配置文件位置
-
-> 📖 详**细说明:**[ 完整的配置文件结构](https://awesome.tryopenclaw.asia/docs/config-file-structure.html)和使用指南请参考 配置文件结构完整指南
+> 📖 详细说明：[完整的配置文件结构](https://awesome.tryopenclaw.asia/docs/config-file-structure.html) 和使用指南请参考 配置文件结构完整指南
 
 ```
 # 主配置文件
 ~/.openclaw/openclaw.json
 
 # 认证配置
-~/.openclaw/agents/&lt;agentId&gt;/agent/auth-profiles.json
+~/.openclaw/agents/<agentId>/agent/auth-profiles.json
 
 # OAuth 凭据（旧版）
 ~/.openclaw/credentials/oauth.json
 
-# 日志文件件
+# 日志文件
 ~/.openclaw/logs/gateway.log
 ```
 
-### 国内版特色功能
+## 国内版特色功能
 
-1.  **预配置国产模型**：
+1. **预配置国产模型**：
 
-+   Kimi（月之暗面）
+   + `Kimi`（月之暗面）
+   + `DeepSeek`（深度求索）
+   + `GLM-4`（智谱 AI）
+   + 通义千访问（阿里）
+   + 文心一言（百度）
 
-+   DeepSeek（深度求索）
+1. **国内平台集成**：
 
-+   GLM-4（智谱 AI）
+   + 飞书（字节跳动）
+   + 企业🛰️（腾讯）
+   + 钉钉（阿里）
+   + 🐧（腾讯）
 
-+   通义千访问（阿里）
+1. **优化的网络配置**：
 
-+   文心一言（百度）
+   + 使用国内镜像源
+   + 优化 API 访问速度
+   + 支持代理配置
 
-1.  **国内平台集成**：
-
-+   飞书（字节跳动）
-
-+   企业🛰️（腾讯）
-
-+   钉钉（阿里）
-
-+   🐧（腾讯）
-
-1.  **优化的网络配置**：
-
-+   使用国内镜像源
-
-+   优化 API 访问速度
-
-+   支持代理配置
-
-### 常见访问题
+## 常见访问题
 
 **Q1: 安装失败怎么怎么办？**
 
 ```
 # 检查 Node.js 版本（需要 22+）
-node --version# 如果版本过低，使用 nvm 升级
+node --version
+# 如果版本过低，使用 nvm 升级
 nvm install 22
 nvm use 22
 ```
@@ -1463,16 +1380,15 @@ npm uninstall -g openclaw-cn
 
 **Q4: 支持哪些系统？**
 
-+   ✅ macOS 12+
++ ✅ macOS 12+
++ ✅ Linux（Ubuntu 20.04+、Debian、CentOS）
++ ✅ Windows 10/11（通过 WSL2）
 
-+   ✅ Linux（Ubuntu 20.04+、Debian、CentOS）
-
-+   ✅ Windows 10/11（通过 WSL2）
-
-Q5: 配置向导卡住怎么怎么办？
+**Q5: 配置向导卡住怎么怎么办？**
 
 ```
-# 按 Ctrl+C 中断# 检查网关是否运行
+# 按 `Ctrl+C` 中断
+# 检查网关是否运行
 openclaw-cn gateway status
 
 # 重新启动网关并重试
@@ -1480,7 +1396,7 @@ openclaw-cn gateway restart
 openclaw-cn onboard
 ```
 
-Q6: 健康检查显示 “no auth configured”
+**Q6: 健康检查显示 `no auth configured`**
 
 需要配置认证：
 
@@ -1492,33 +1408,25 @@ openclaw-cn onboard
 openclaw-cn configure --section auth
 ```
 
-### 下一步（可选，但很棒）
+## 下一步（可选，但很棒）
 
-+   [macOS 菜单](https://docs.openclaw.ai/platforms/macos.html)栏应用 + 语音唤醒：macOS 应用
++ [macOS 菜单](https://docs.openclaw.ai/platforms/macos.html) 栏应用 + 语音唤醒：macOS 应用
++ [iOS/Android 节点（Canvas/摄像头/语音）：节点](https://docs.openclaw.ai/nodes.html)
++ [远程访问](https://docs.openclaw.ai/gateway/remote.html)（SSH 隧道 / Tailscale 服务）：远程访问
++ 始终在线 / VPN 设置：[Tailscale](https://docs.openclaw.ai/gateway/tailscale.html)
 
-+   [iO](https://docs.openclaw.ai/nodes.html)S/Android 节点（Canvas/摄像头/语音）：节点
-
-+   [远程访问](https://docs.openclaw.ai/gateway/remote.html)（SSH 隧道 / Tailscale 服务）：远程访问
-
-+   始终在线 / VPN 设置：[Tailscale](https://docs.openclaw.ai/gateway/tailscale.html)
-
-### 下一步
+## 下一步
 
 安装完成后，可以：
 
-1.  配置 AI 模型（见下文”API配置指南”）
-
-1.  连接聊天平台（见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)）
-
-1.  安装 Skills（见[第8章节：Skills扩展](https://awesome.tryopenclaw.asia/docs/03-advanced/08-skills-extension.html)）
-
-1.  开始使用（见[第3章节：快速上手](https://awesome.tryopenclaw.asia/docs/01-basics/03-quick-start.html))
+1. 配置 AI 模型（见下文“API配置指南”）
+1. 连接聊天平台（见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)）
+1. 安装 `Skills`（见[第8章节：Skills扩展](https://awesome.tryopenclaw.asia/docs/03-advanced/08-skills-extension.html)）
+1. 开始使用（见[第3章节：快速上手](https://awesome.tryopenclaw.asia/docs/01-basics/03-quick-start.html)）
 
 ---
 
 ## Cloudflare Workers 部署（进阶）
-
-> ☁️ **全球 CDN 加速**：使用 Cloudflare Workers 部署 OpenClaw，分享受全球边缘网络加速。
 
 ### 为什么选择 Cloudflare Workers？
 
@@ -1530,153 +1438,126 @@ Cloudflare Workers 提供全球边缘网络部署能力，如表 2-4 所示。
 
 **必需条件**：
 
-+   Cloudflare 账号
-
-+   Workers Paid 计划（5美元/月）
-
-+   信用卡（用于订阅付费计划）
++ Cloudflare 账号
++ Workers Paid 计划（5美元/月）
++ 信用卡（用于订阅付费计划）
 
 **成本说明**：
 
-+   基础费用：5美元/月（起步价）
++ 基础费用：5美元/月（起步价）
++ 高频使用可能产生额外费用
++ 作为 24 小时在线的 AI 服务，月成本在可接受范围内
 
-+   高频使用可能产生额外费用
-
-+   作为 24 小时在线的 AI 服务，月成本在可接受范围内
-
-> 💡 成**本参考：**详见 G[i](https://github.com/cloudflare/moltworker/issues/76)tHub 讨论：What’s the cost running it 24/7 for a month
+> 💡 成本参考：详见 [GitHub 讨论：What’s the cost running it 24/7 for a month](https://github.com/cloudflare/moltworker/issues/76)
 
 ### 部署流程
 
 #### 第一步：一键部署 Moltworker
 
-1.  **点击部署按钮**：
+1. **点击部署按钮**：
 
 ```
 https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/moltworker
 ```
 
-1.  配置 Gateway Token：
+1. 配置 `Gateway Token`：
 
-+   务必修改并妥善保存 MOLTBOT_GATEWAY_TOKEN
-
-+   这是后续进入管理后台的唯一凭证
-
-+   建议使用强密码生成器
+   + 务必修改并妥善保存 `MOLTBOT_GATEWAY_TOKEN`
+   + 这是后续进入管理后台的唯一凭证
+   + 建议使用强密码生成器
 
 ![](img/83b28782258c612ba189ed9cf11a95c5.png)
 
 #### 第二步：等待构建
 
-+   部署过程约需 10 分钟
-
-+   可点击「继续处理项目」跳过等待页面
-
-+   构建完成后会自动跳转到项目页面
++ 部署过程约需 10 分钟
++ 可点击「继续处理项目」跳过等待页面
++ 构建完成后会自动跳转到项目页面
 
 ![](img/b63c25a68749d41562ea3ee9a677d058.png)
 
 #### 第三步：配置 Access（Zero Trust）
 
-访问网页界面需要配置 CF_ACCESS_AUD 和 CF_ACCESS_TEAM_DOMAIN 两个变量。
+访问网页界面需要配置 `CF_ACCESS_AUD` 和 `CF_ACCESS_TEAM_DOMAIN` 两个变量。
 
-1.  **创建应用**：
+1. **创建应用**：
 
-+   进入 Zero Trust → Access → Applications
+   + 进入 Zero Trust → Access → Applications
+   + 添加一个 Self-hosted 应用
 
-+   添加一个 Self-hosted 应用
+1. **设置域名**：
 
-1.  **设置域名**：
+   + 子域默认为 `moltbot-sandbox`
+   + 域名可使用 Cloudflare 分配的 Worker 域名或自定义域名
+   + `Session Duration`（会话时间）建议设置长一些，避免频繁登录
 
-+   子域默认为 moltbot-sandbox
+1. **配置策略**：
 
-+   域名可使用 Cloudflare 分配的 Worker 域名或自定义域名
+   + 系统会自动创建 `moltbot-sandbox - Production` 策略
+   + 默认通过邮箱验证码登录
 
-+   Session Duration（会话时间）建议设置长一些，避免频繁登录
+1. **获取配置变量**：
 
-1.  **配置策略**：
+**`CF_ACCESS_AUD`**：
 
-+   系统会自动创建 moltbot-sandbox - Production 策略
+   + 保存应用后，点击右侧「⋮」编辑
+   + 在应用程序受众（AUD）标签页找到 Application Audience (AUD)
 
-+   默认通过邮箱验证码登录
+**`CF_ACCESS_TEAM_DOMAIN`**：
 
-1.  **获取配置变量**：
-
-**CF_ACCESS_AUD**：
-
-+   保存应用后，点击右侧「⋮」编辑
-
-+   在应用程序受众（AUD）标签页找到 Application Audience (AUD)
-
-CF_ACCESS_TEAM_DOMAIN：
-
-+   进入 Zero Trust → Settings
-
-+   团队域名格式：xxxxxx.cloudflareaccess.com
+   + 进入 Zero Trust → Settings
+   + 团队域名格式：`xxxxxx.cloudflareaccess.com`
 
 #### 第四步：配置 R2 对象存储
 
 OpenClaw 需要 R2 来存储状态，需配置以下三个变量：
 
-+   CF_ACCOUNT_ID
-
-+   R2_ACCESS_KEY_ID
-
-+   R2_SECRET_ACCESS_KEY
++ `CF_ACCOUNT_ID`
++ `R2_ACCESS_KEY_ID`
++ `R2_SECRET_ACCESS_KEY`
 
 **操作步骤**：
 
-1.  **获取 Account ID**：
+1. **获取 Account ID**：
 
-+   在 Cloudflare 侧边栏进入 R2 → Overview
+   + 在 Cloudflare 侧边栏进入 R2 → Overview
+   + 右侧 Account Details 中的 Account ID 即为 `CF_ACCOUNT_ID`
 
-+   右侧 Account Details 中的 Account ID 即为 CF_ACCOUNT_ID
+1. **创建 API 令牌**：
 
-1.  **创建 API 令牌**：
+   + 点击 Manage R2 API Tokens
+   + 选择 Create API Token
 
-+   点击 Manage R2 API Tokens
+1. **设置权限**：
 
-+   选择 Create API Token
+   + 权限选择 Object Read & Write
+   + 建议范围通过 Specific Bucket 限制在 `moltbot-data`
 
-1.  **设置权限**：
+1. **保存密钥**：
 
-+   权限选择 Object Read & Write
+   + 创建成功后，记录 Access Key ID 和 Secret Access Key
 
-+   建议范围通过 Specific Bucket 限制在 moltbot-data
-
-![](img/c8b975ce585c5d25e33625e04dc9b386.png)
-
-1.  **保存密钥**：
-
-+   创建成功后，记附录 Access Key ID 和 Secret Access Key
-
-> ⚠️ **重要提示**：修改 Token 时请务必核对变量名称。如果不慎修改了 Build Token，会导致 Worker 构建失败。
+> ⚠️ **重要提示**：修改 Token 时请务必核对变量名称。如果不慎修改了 `Build Token`，会导致 Worker 构建失败。
 
 #### 第五步：注入变量并重启
 
-1.  **进入设置**：
+1. **进入设置**：
 
-+   Workers → Settings → Variables and Secrets
+   + Workers → Settings → Variables and Secrets
 
-1.  **填入变量**：
+1. **填入变量**：
 
-+   MOLTBOT_GATEWAY_TOKEN（第一步设置的）
+   + `MOLTBOT_GATEWAY_TOKEN`（第一步设置的）
+   + `CF_ACCESS_AUD`（第三步获取的）
+   + `CF_ACCESS_TEAM_DOMAIN`（第三步获取的）
+   + `CF_ACCOUNT_ID`（第四步获取的）
+   + `R2_ACCESS_KEY_ID`（第四步获取的）
+   + `R2_SECRET_ACCESS_KEY`（第四步获取的）
 
-+   CF_ACCESS_AUD（第三步获取的）
+1. **重新部署**：
 
-+   CF_ACCESS_TEAM_DOMAIN（第三步获取的）
-
-+   CF_ACCOUNT_ID（第四步获取的）
-
-+   R2_ACCESS_KEY_ID（第四步获取的）
-
-+   R2_SECRET_ACCESS_KEY（第四步获取的）
-
-1.  **重新部署**：
-
-+   点击 Deploy 重新部署
-
-+   等待部署完成
+   + 点击 Deploy 重新部署
+   + 等待部署完成
 
 ![](img/8069772735521b8e0b4859f67b7e84e3.png)
 
@@ -1684,7 +1565,7 @@ OpenClaw 需要 R2 来存储状态，需配置以下三个变量：
 
 部署完成后，可通过以下地址访问：
 
-**访问 Worker**（需要 token）：
+**访问 Worker**（需要 `token`）：
 
 ```
 https://moltbot-sandbox.xxxxxxxx.workers.dev?token=MOLTBOT_GATEWAY_TOKEN
@@ -1736,43 +1617,43 @@ openclaw configure --section skills
 
 **症状**：通过配置文件修改默认模型后报错
 
-**原因**：国内 AI 服务商通常区分国内与海外端点，Cloudflare Workers 环境下配置文件修改内容易出错
+
+
+## 故障排除
+
+### 原因
+
+国内 `AI` 服务商通常区分国内与海外端点，`Cloudflare Workers` 环境下配置文件修改内容易出错
+
+### 解决方案
+
+- 直接通过开机命令强制指定模型
+- 不要依赖配置文件或后台 `UI`
+- 使用 `set model` 命令设置开机自启
+
+### 问题 2：`Worker` 构建失败
+
+**症状**：部署后 `Worker` 无法启动
+
+**原因**：不慎修改了 `Build Token`
 
 **解决方案**：
 
-+   直接通过开机命令强制指定模型
+- 检查所有变量名称是否正确
+- 确保没有修改 `Build Token`
+- 重新部署
 
-+   不要依赖配置文件或后台 UI
+### 问题 3：无法访问管理后台
 
-+   使用 set model 命令设置开机自启
+**症状**：访问 `/_admin/` 时无法登录
 
-访问题 2：Worker 构建失败
-
-**症状**：部署后 Worker 无法启动
-
-**原因**：不慎修改了 Build Token
+**原因**：`Zero Trust` 配置不正确
 
 **解决方案**：
 
-+   检查所有变量名称是否正确
-
-+   确保没有修改 Build Token
-
-+   重新部署
-
-**访问题 3：无法访问管理后台**
-
-**症状**：访问 /_admin/ 时无法登录
-
-**原因**：Zero Trust 配置不正确
-
-**解决方案**：
-
-+   检查 CF_ACCESS_AUD 和 CF_ACCESS_TEAM_DOMAIN 是否正确
-
-+   确认邮箱验证码是否正确
-
-+   检查 Session Duration 设置
+- 检查 `CF_ACCESS_AUD` 和 `CF_ACCESS_TEAM_DOMAIN` 是否正确
+- 确认邮箱验证码是否正确
+- 检查 `Session Duration` 设置
 
 ### 成本估算
 
@@ -1780,96 +1661,91 @@ openclaw configure --section skills
 
 **推荐使用**：
 
-+   ✅ 想低成本尝试 OpenClaw
-
-+   ✅ 已有 Cloudflare 付费订阅
-
-+   ✅ 需要全球 CDN 加速
-
-+   ✅ 不想维护服务器
+- ✅ 想低成本尝试 `OpenClaw`
+- ✅ 已有 `Cloudflare` 付费订阅
+- ✅ 需要全球 `CDN` 加速
+- ✅ 不想维护服务器
 
 **不推荐使用**：
 
-+   ❌ 期望开箱即用
-
-+   ❌ 没有技术背景
-
-+   ❌ 需要复杂的自动化流程
-
-+   ❌ 预算非常有限
+- ❌ 期望开箱即用
+- ❌ 没有技术背景
+- ❌ 需要复杂的自动化流程
+- ❌ 预算非常有限
 
 ### 总结
 
-Cloudflare Workers + OpenClaw 是一个低成本的尝鲜方案，适合：
+`Cloudflare Workers` + `OpenClaw` 是一个低成本的尝鲜方案，适合：
 
-+   未体验过 Agent 自动化，想低成本试手
-
-+   已有 Cloudflare 付费订阅，资源闲置
-
-+   需要全球 CDN 加速的场景
+- 未体验过 `Agent` 自动化，想低成本试手
+- 已有 `Cloudflare` 付费订阅，资源闲置
+- 需要全球 `CDN` 加速的场景
 
 但需要注意：
 
-+   OpenClaw 目前还不是一个能「即刻提升效率」的工具
-
-+   更像是一个为 AI 自动化搭建的系统底座
-
-+   如果没有明确的、可标准化的长流程需求，可能只会带来维护成本
+- `OpenClaw` 目前还不是一个能「即刻提升效率」的工具
+- 更像是一个为 `AI` 自动化搭建的系统底座
+- 如果没有明确的、可标准化的长流程需求，可能只会带来维护成本
 
 **下一步**：
 
-+   配置 AI 模型（见下文”API配置指南”）
-
-+   配置通讯渠道（见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)）
-
-+   安装 Skills（见[第8章节：Skills扩展](https://awesome.tryopenclaw.asia/docs/03-advanced/08-skills-extension.html)）
+- 配置 `AI` 模型（见下文“`API`配置指南”）
+- 配置通讯渠道（见[第 9 章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)）
+- 安装 `Skills`（见[第 8 章节：`Skills` 扩展](https://awesome.tryopenclaw.asia/docs/03-advanced/08-skills-extension.html)）
 
 ---
 
 ## Docker 部署（可选）
 
-> 🐳 开**发布者选项：**Docker 部署适合需要环境隔离的场景。
+> 🐳 **发布者选项：**`Docker` 部署适合需要环境隔离的场景。
 
-### 为什么选择 Docker？
+### 为什么选择 `Docker`？
 
-Docker 部署提供环境隔离和便捷管理，如表 2-5 所示。
+`Docker` 部署提供环境隔离和便捷管理，如表 2-5 所示。
 
-表 2-5 Docker 部署优势
+表 2-5 `Docker` 部署优势
 
 ### 前置要求
 
-**安装 Docker**：
+#### 安装 `Docker`
 
-**macOS**：
+##### macOS
 
 ```
-# 下载 Docker Desktop# 访问：https://www.docker.com/products/docker-desktop# 或使用 Homebrew
+# 下载 Docker Desktop
+# 访问：https://www.docker.com/products/docker-desktop
+# 或使用 Homebrew
 brew install --cask docker
 ```
 
-**Windows**：
+##### Windows
 
 ```
-# 下载 Docker Desktop# 访问：https://www.docker.com/products/docker-desktop# 安装 WSL2（如果还没安装）
+# 下载 Docker Desktop
+# 访问：https://www.docker.com/products/docker-desktop
+# 安装 WSL2（如果还没安装）
 wsl --install
 ```
 
-**Linux (Ubuntu)**：
+##### Linux (Ubuntu)
 
 ```
 # 安装 Docker
 curl -fsSL https://get.docker.com | sh
 
-# 启动 Docker 服务sudo systemctl start docker
+# 启动 Docker 服务
+sudo systemctl start docker
 sudo systemctl enable docker
 
-# 添加当前用户到 docker 组sudo usermod -aG docker $USER
+# 添加当前用户到 docker 组
+sudo usermod -aG docker $USER
 ```
 
-**验证安装**：
+##### 验证安装
 
 ```
-docker --version# 应显示：Docker version 24.x.x
+docker --version
+# 应显示：Docker version 24.x.x
 ```
 
 ### 快速开始
@@ -1884,45 +1760,39 @@ curl -fsSL https://clawd.org.cn/install.sh | bash
 
 **这个脚本会自动：**
 
-+   ✅ 检查 Docker 环境
+- ✅ 检查 `Docker` 环境
+- ✅ 下载镜像（使用国内镜像：`jiulingyun803/openclaw-cn:latest`）
+- ✅ 配置环境变量
+- ✅ 启动容器
+- ✅ 运行配置向导
+- ✅ 生成网关令牌
 
-+   ✅ 下载镜像（使用国内镜像：jiulingyun803/openclaw-cn:latest）
-
-+   ✅ 配置环境变量
-
-+   ✅ 启动内容器
-
-+   ✅ 运行配置向导
-
-+   ✅ 生成网关令牌
-
-完成后，在浏览器打开 http://127.0.0.1:18789/ 即可使用。
+完成后，在浏览器打开 `http://127.0.0.1:18789/` 即可使用。
 
 **脚本后续操作**：
 
-+   按照提示输入渠道信息（可选）
+- 按照提示输入渠道信息（可选）
+- 将生成的令牌复制到 Web UI 登录
 
-+   将生成的令牌复制到 Web UI 登录
-
-#### 方式二：手动 Docker Compose 部署（适合进阶用户）
+#### 方式二：手动 `Docker Compose` 部署（适合进阶用户）
 
 如果一键脚本不适用，或需要自定义配置，按以下步骤操作。
 
-**步骤 1：创建工作目附录**
+##### 步骤 1：创建工作目录
 
 ```
 mkdir -p ~/openclaw-docker
 cd ~/openclaw-docker
 ```
 
-**步骤 2：创建 ****.env**** 环境文件**
+##### 步骤 2：创建 `.env` 环境文件
 
 ```
-cat **&gt;** .env **&lt;&lt;** &#x27;EOF&#x27;
+cat > .env << 'EOF'
 # 镜像配置（使用国内镜像）
 OPENCLAW_IMAGE=jiulingyun803/openclaw-cn:latest
 
-# 数据目附录
+# 数据目录
 OPENCLAW_CONFIG_DIR=./data/.openclaw
 OPENCLAW_WORKSPACE_DIR=./data/clawd
 
@@ -1939,13 +1809,58 @@ CLAUDE_WEB_COOKIE=
 EOF
 ```
 
-**步骤 3：创建 ****doc**ker-compose.yml 文件
+##### 步骤 3：创建 `docker-compose.yml` 文件
 
 ```
-services:openclaw-cn-gateway:image: ${OPENCLAW_IMAGE:-jiulingyun803/openclaw-cn:latest}user: node:nodeenvironment:HOME: /home/nodeTERM: xterm-256colorOPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}CLAUDE_AI_SESSION_KEY: ${CLAUDE_AI_SESSION_KEY}CLAUDE_WEB_SESSION_KEY: ${CLAUDE_WEB_SESSION_KEY}CLAUDE_WEB_COOKIE: ${CLAUDE_WEB_COOKIE}volumes:- ${OPENCLAW_CONFIG_DIR:-./data/.openclaw}:/home/node/.openclaw- ${OPENCLAW_WORKSPACE_DIR:-./data/clawd}:/home/node/clawdports:- &quot;${OPENCLAW_GATEWAY_PORT:-18789}:18789&quot;- &quot;${OPENCLAW_BRIDGE_PORT:-18790}:18790&quot;init: truerestart: unless-stoppedcommand:[&quot;node&quot;,&quot;dist/index.js&quot;,&quot;gateway&quot;,&quot;--bind&quot;,&quot;${OPENCLAW_GATEWAY_BIND:-lan}&quot;,&quot;--port&quot;,&quot;${OPENCLAW_GATEWAY_PORT:-18789}&quot;]openclaw-cn-cli:image: ${OPENCLAW_IMAGE:-jiulingyun803/openclaw-cn:latest}user: node:nodeenvironment:HOME: /home/nodeTERM: xterm-256colorBROWSER: echoCLAUDE_AI_SESSION_KEY: ${CLAUDE_AI_SESSION_KEY}CLAUDE_WEB_SESSION_KEY: ${CLAUDE_WEB_SESSION_KEY}CLAUDE_WEB_COOKIE: ${CLAUDE_WEB_COOKIE}volumes:- ${OPENCLAW_CONFIG_DIR:-./data/.openclaw}:/home/node/.openclaw- ${OPENCLAW_WORKSPACE_DIR:-./data/clawd}:/home/node/clawdstdin_open: truetty: trueinit: trueentrypoint: [&quot;node&quot;, &quot;dist/index.js&quot;]
+services:
+  openclaw-cn-gateway:
+    image: ${OPENCLAW_IMAGE:-jiulingyun803/openclaw-cn:latest}
+    user: node:node
+    environment:
+      HOME: /home/node
+      TERM: xterm-256color
+      OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}
+      CLAUDE_AI_SESSION_KEY: ${CLAUDE_AI_SESSION_KEY}
+      CLAUDE_WEB_SESSION_KEY: ${CLAUDE_WEB_SESSION_KEY}
+      CLAUDE_WEB_COOKIE: ${CLAUDE_WEB_COOKIE}
+    volumes:
+      - ${OPENCLAW_CONFIG_DIR:-./data/.openclaw}:/home/node/.openclaw
+      - ${OPENCLAW_WORKSPACE_DIR:-./data/clawd}:/home/node/clawd
+    ports:
+      - "${OPENCLAW_GATEWAY_PORT:-18789}:18789"
+      - "${OPENCLAW_BRIDGE_PORT:-18790}:18790"
+    init: true
+    restart: unless-stopped
+    command:
+      - "node"
+      - "dist/index.js"
+      - "gateway"
+      - "--bind"
+      - "${OPENCLAW_GATEWAY_BIND:-lan}"
+      - "--port"
+      - "${OPENCLAW_GATEWAY_PORT:-18789}"
+  openclaw-cn-cli:
+    image: ${OPENCLAW_IMAGE:-jiulingyun803/openclaw-cn:latest}
+    user: node:node
+    environment:
+      HOME: /home/node
+      TERM: xterm-256color
+      BROWSER: echo
+      CLAUDE_AI_SESSION_KEY: ${CLAUDE_AI_SESSION_KEY}
+      CLAUDE_WEB_SESSION_KEY: ${CLAUDE_WEB_SESSION_KEY}
+      CLAUDE_WEB_COOKIE: ${CLAUDE_WEB_COOKIE}
+    volumes:
+      - ${OPENCLAW_CONFIG_DIR:-./data/.openclaw}:/home/node/.openclaw
+      - ${OPENCLAW_WORKSPACE_DIR:-./data/clawd}:/home/node/clawd
+    stdin_open: true
+    tty: true
+    init: true
+    entrypoint:
+      - "node"
+      - "dist/index.js"
 ```
 
-**步骤 4：启动内容器**
+##### 步骤 4：启动容器
 
 ```
 # 拉取最新镜像
@@ -1958,7 +1873,7 @@ docker compose up -d openclaw-cn-gateway
 docker compose logs -f openclaw-cn-gateway
 ```
 
-**步骤 5：运行配置向导**
+##### 步骤 5：运行配置向导
 
 ```
 docker compose run --rm openclaw-cn-cli onboard
@@ -1966,15 +1881,13 @@ docker compose run --rm openclaw-cn-cli onboard
 
 配置向导会提示你：
 
-+   选择网关后端（Claude、Gemini 等）
+- 选择网关后端（`Claude`、`Gemini` 等）
+- 配置 `Feishu`、`Telegram` 等渠道
+- 生成和保存配置
 
-+   配置 Feishu、Telegram 等渠道
+##### 步骤 6：访问 Web UI
 
-+   生成和保存配置
-
-**步骤 6：访问 Web UI**
-
-打开浏览器访问：http://127.0.0.1:18789/
+打开浏览器访问：`http://127.0.0.1:18789/`
 
 将配置向导生成的令牌复制到登录页面即可。
 
@@ -1982,7 +1895,7 @@ docker compose run --rm openclaw-cn-cli onboard
 
 **环境变量设置方式**：
 
-**方式 A：编辑 ****.env**** 文件（推荐）**
+#### 方式 A：编辑 `.env` 文件（推荐）
 
 ```
 # 编辑 .env 文件
@@ -1992,17 +1905,17 @@ nano .env
 docker compose up -d
 ```
 
-**方式 B：命令行设置**
+#### 方式 B：命令行设置
 
 ```
-export **O**PENCLAW_GATEWAY_PORT=18789
+export OPENCLAW_GATEWAY_PORT=18789
 docker compose up -d
 ```
 
-**方式 C：命令行临时覆盖**
+#### 方式 C：命令行临时覆盖
 
 ```
-docker compose -e** **OPENCLAW_GATEWAY_PORT=8080 up -d
+docker compose -e OPENCLAW_GATEWAY_PORT=8080 up -d
 ```
 
 ### 常用操作
@@ -2010,39 +1923,43 @@ docker compose -e** **OPENCLAW_GATEWAY_PORT=8080 up -d
 #### 查看网关状态
 
 ```
-# 检查内容器是否运行
+# 检查容器是否运行
 docker compose ps
 
 # 查看网关日志
 docker compose logs openclaw-cn-gateway
 
-# 实时查看日志（支持续跟踪）
+# 实时查看日志（支持跟踪）
 docker compose logs -f openclaw-cn-gateway
 ```
 
 #### 配置渠道
 
-通过 CLI 内容器配置各类渠道：
+通过 `CLI` 容器配置各类渠道：
 
-Telegram（需要机器人令牌）：
-
-```
-docker compose run --rm openclaw-cn-cli channels add \--channel telegram \--token &quot;YOUR_BOT_TOKEN&quot;
-```
-
-Discord（需要机器人令牌）：
+`Telegram`（需要机器人令牌）：
 
 ```
-docker compose run --rm openclaw-cn-cli channels add \--channel discord \--token &quot;YOUR_BOT_TOKEN&quot;
+docker compose run --rm openclaw-cn-cli channels add \
+  --channel telegram \
+  --token "YOUR_BOT_TOKEN"
 ```
 
-**WhatsApp（QR 扫码）**：
+`Discord`（需要机器人令牌）：
+
+```
+docker compose run --rm openclaw-cn-cli channels add \
+  --channel discord \
+  --token "YOUR_BOT_TOKEN"
+```
+
+**`WhatsApp`（QR 扫码）**：
 
 ```
 docker compose run --rm openclaw-cn-cli channels login
 ```
 
-Feishu（需要 App ID 和 Secret）：
+`Feishu`（需要 `App ID` 和 `Secret`）：
 
 ```
 docker compose run --rm openclaw-cn-cli onboard
@@ -2062,7 +1979,7 @@ docker compose run --rm openclaw-cn-cli config get
 #### 重启网关
 
 ```
-# 重启网关内容器
+# 重启网关容器
 docker compose restart openclaw-cn-gateway
 
 # 停止网关
@@ -2078,31 +1995,32 @@ docker compose up -d openclaw-cn-gateway
 # 拉取最新镜像
 docker compose pull
 
-# 重启内容器（自动使用新镜像）
+# 重启容器（自动使用新镜像）
 docker compose up -d openclaw-cn-gateway
 ```
 
 #### 清理数据（谨慎操作）
 
 ```
-# 停止并删除内容器
+# 停止并删除容器
 docker compose down
 
-# 删除本地数据目附录rm -rf ./data/
+# 删除本地数据目录
+rm -rf ./data/
 
 # 删除本地镜像（可选）
 docker rmi jiulingyun803/openclaw-cn:latest
 ```
 
-### 数据支持久化
+### 数据持久化
 
-Docker 内容器的数据存储在工作目附录的 data 文件夹：
+`Docker` 容器的数据存储在工作目录的 `data` 文件夹：
 
 ```
 ~/openclaw-docker/data/
 ├── .openclaw/         # 配置文件
 │   ├── openclaw.json  # 主配置
-│   └── logs/          # 日志文件件
+│   └── logs/          # 日志文件
 └── clawd/             # 工作空间
     └── workspace/     # 代理工作文件
 ```
@@ -2110,16 +2028,18 @@ Docker 内容器的数据存储在工作目附录的 data 文件夹：
 **备份数据**：
 
 ```
-# 备份配置和数据tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz ./data
+# 备份配置和数据
+tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz ./data
 
-# 恢复数据tar -xzf openclaw-backup-20260210.tar.gz
+# 恢复数据
+tar -xzf openclaw-backup-20260210.tar.gz
 ```
 
-### Docker 部署常见访问题
+### Docker 部署常见问题
 
-#### 访问题 1：内容器无法启动
+#### 问题 1：容器无法启动
 
-**症状**：docker compose up 后内容器立即退出
+**症状**：`docker compose up` 后容器立即退出
 
 **解决方案**：
 
@@ -2127,49 +2047,62 @@ Docker 内容器的数据存储在工作目附录的 data 文件夹：
 # 查看详细错误日志
 docker compose logs openclaw-cn-gateway
 
-# 检查端口是否被占用sudo netstat -ltnp | grep 18789
-# macOS 使用：lsof -i :18789# 如果被占用，修改 OPENCLAW_GATEWAY_PORT# 编辑 .env，将端口改为其他（如 18790）
+# 检查端口是否被占用
+sudo netstat -ltnp | grep 18789
+# macOS 使用：lsof -i :18789
+# 如果被占用，修改 OPENCLAW_GATEWAY_PORT
+# 编辑 .env，将端口改为其他（如 18790）
 nano .env
 ```
 
-#### 访问题 2：权限拒绝（Permission Denied）
+#### 问题 2：权限拒绝（Permission Denied）
 
-**症状**：Error: EACCES: permission denied, mkdir ...
+**症状**：`Error: EACCES: permission denied, mkdir ...`
 
 **解决方案**：
 
 ```
-# 确保数据目附录存在且权限正确mkdir -p ./data/.openclaw ./data/clawd
+# 确保数据目录存在且权限正确
+mkdir -p ./data/.openclaw ./data/clawd
 chmod 755 ./data/.openclaw ./data/clawd
 
-# 如果使用了宿主机路径，确保目附录可写chmod 777 ./data
+# 如果使用了宿主机路径，确保目录可写
+chmod 777 ./data
 ```
 
-#### 访问题 3：无法访问 Web UI
+#### 问题 3：无法访问 Web UI
 
-**症状**：浏览器访问 http://127.0.0.1:18789 无响应
+**症状**：浏览器访问 `http://127.0.0.1:18789` 无响应
 
 **解决方案**：
 
 ```
-# 检查内容器是否运行
+# 检查容器是否运行
 docker compose ps
 
 # 检查网关日志
 docker compose logs openclaw-cn-gateway
 
-# 验证端口是否正确# 如果 OPENCLAW_GATEWAY_PORT=18789，则访问 :18789# 如果改了端口，访问对应的新端口# 检查防火墙设置# macOSsudo pfctl -d  # 临时关闭防火墙测试# Linuxsudo ufw status
+# 验证端口是否正确
+# 如果 OPENCLAW_GATEWAY_PORT=18789，则访问 :18789
+# 如果改了端口，访问对应的新端口
+# 检查防火墙设置
+# macOS
+sudo pfctl -d  # 临时关闭防火墙测试
+# Linux
+sudo ufw status
 sudo ufw allow 18789
 ```
 
-#### 访问题 4：配置向导卡住
+#### 问题 4：配置向导卡住
 
-**症状**：docker compose run --rm openclaw-cn-cli onboard 无反应
+**症状**：`docker compose run --rm openclaw-cn-cli onboard` 无反应
 
 **解决方案**：
 
 ```
-# 按 Ctrl+C 中断# 检查网关是否运行
+# 按 Ctrl+C 中断
+# 检查网关是否运行
 docker compose logs openclaw-cn-gateway
 
 # 重新启动网关并重试
@@ -2177,97 +2110,124 @@ docker compose restart openclaw-cn-gateway
 docker compose run --rm openclaw-cn-cli onboard
 ```
 
-#### 访问题 5：镜像拉取失败（403 错误）
+#### 问题 5：镜像拉取失败（403 错误）
 
-**症状**：docker pull openclaw/openclaw:latest 返回 403 错误
+**症状**：`docker pull openclaw/openclaw:latest` 返回 403 错误
 
 **解决方案**：
 
 ```
 # 使用国内镜像（推荐）
-docker pull jiulingyun803/openclaw**-c**n:latest
+docker pull jiulingyun803/openclaw-cn:latest
 
-# 或在 .env 文件中指定国内镜像echo &quot;OPENCLAW_IMAGE=jiulingyun803/openclaw-cn:latest&quot; &gt;&gt; .env
+# 或在 .env 文件中指定国内镜像
+echo "OPENCLAW_IMAGE=jiulingyun803/openclaw-cn:latest" >> .env
 
 # 重新拉取
 docker compose pull
 ```
 
-#### 访问题 6：网络超时
+#### 问题 6：网络超时
 
-**症状**：拉取镜像或访问 API 时网络超时
-
-**解决方案**：
-
-```
-# 配置 Docker 镜像加速（国内用户）# 编辑 Doc**k**er** **配置sudo nano /etc/doc**ke**r/daemon.json
-
-# 添加镜像加速器{&quot;registry-mirrors&quot;: [&quot;https://docker.mirrors.ustc.edu.cn&quot;,
-    &quot;https://hub-mirror.c.163.com&quot;]}# 重启 Dockersudo systemctl restart docker
-
-# macOS 用户在 Docker Desktop 设置中添加镜像加速器
-```
-
-#### 访问题 7：数据丢失
-
-**症状**：重启内容器后配置和数据丢失
+**症状**：拉取镜像或访问 `API` 时网络超时
 
 **解决方案**：
 
+
+
+# 配置 Docker 镜像加速（国内用户）
+
+## 编辑 Docker 配置
+
+`sudo nano /etc/docker/daemon.json`
+
+## 添加镜像加速器
+
+```json
+{
+  "registry-mirrors": [
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://hub-mirror.c.163.com"
+  ]
+}
 ```
-# 确保使用了数据卷挂载# 检查 docker-compose.yml 中的 volumes 配置# 查看数据是否存在ls -la ./data/.openclaw
+
+## 重启 Docker
+
+`sudo systemctl restart docker`
+
+## macOS 用户
+
+在 Docker Desktop 设置中添加镜像加速器。
+
+## 访问题 7：数据丢失
+
+**症状**：重启容器后配置和数据丢失
+
+**解决方案**：
+
+```bash
+# 确保使用了数据卷挂载
+# 检查 `docker-compose.yml` 中的 `volumes` 配置
+# 查看数据是否存在
+ls -la ./data/.openclaw
 ls -la ./data/clawd
 
-# 如果数据丢失，从备份恢复tar -xzf openclaw-backup-20260210.tar.gz
+# 如果数据丢失，从备份恢复
+tar -xzf openclaw-backup-20260210.tar.gz
 ```
 
-#### 访问题 8：性能访问题
+## 访问题 8：性能访问题
 
-**症状**：内容器运行缓慢或占用资源过高
+**症状**：容器运行缓慢或占用资源过高
 
 **解决方案**：
 
-```
-# 限制资源使用（编辑 docker-compose.yml）
+```yaml
+# 限制资源使用（编辑 `docker-compose.yml`）
 services:
   openclaw-cn-gateway:
     # ... 其他配置
     deploy:
       resources:
         limits:
-          cpus: &#x27;2&#x27;
+          cpus: '2'
           memory: 2G
         reservations:
-          cpus: &#x27;1&#x27;
+          cpus: '1'
           memory: 1G
+```
 
-# 重启内容器
+```bash
+# 重启容器
 docker compose up -d openclaw-cn-gateway
 ```
 
-### 从一键脚本迁移到手动配置
+## 从一键脚本迁移到手动配置
 
 如果想从一键脚本切换到手动配置（或反之）：
 
-```
-# 停止现有内容器
+```bash
+# 停止现有容器
 docker compose down
 
-# 备份现有配置cp -r ~/.openclaw ~/.openclaw.backup
+# 备份现有配置
+cp -r ~/.openclaw ~/.openclaw.backup
 
-# 更新 .env 和 docker-compose.yml# 重新启动
+# 更新 `.env` 和 `docker-compose.yml`
+# 重新启动
 docker compose up -d openclaw-cn-gateway
 ```
 
-配置会自动保留在数据目附录中，无需重新设置。
+配置会自动保留在数据目录中，无需重新设置。
 
-### Docker 部署优势总结
+## Docker 部署优势总结
 
-✅ **环境隔离**：不**影响系统**环境**
+✅ 环境隔离：不影响系统环境
 
-✅ 快**速部**署：5**分钟**完成
+✅ 快速部署：5 分钟完成
 
-**✅ **易于管理**：一条命令更新
+✅ 易于管理：一条命令更新
 
 ✅ 跨平台：统一部署方案
 
@@ -2277,43 +2237,46 @@ docker compose up -d openclaw-cn-gateway
 
 **推荐使用场景**：
 
-+   开发布者本地测试
++ 开发者本地测试
 
-+   服务器部署
++ 服务器部署
 
-+   多环境隔离
++ 多环境隔离
 
-+   快速体验 OpenClaw
++ 快速体验 OpenClaw
 
 **下一步**：
 
-+   配置 API 模型（见下文”API配置指南”）
++ 配置 API 模型（见下文“API配置指南”）
 
-+   配置通讯渠道（见[第9章节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)）
++ 配置通讯渠道（见[第 9 节：多平台集成](https://awesome.tryopenclaw.asia/docs/03-advanced/09-multi-platform-integration.html)）
 
-+   安装 Skills（见[第8章节：Skills扩展](https://awesome.tryopenclaw.asia/docs/03-advanced/08-skills-extension.html)）
++ 安装 Skills（见[第 8 节：Skills 扩展](https://awesome.tryopenclaw.asia/docs/03-advanced/08-skills-extension.html)）
 
 ---
 
 ## 更新和维护
 
-> 🔄 保**支持最新：**定期更新 OpenClaw 以获得新功能和安全修复。
+> 🔄 保持最新：定期更新 OpenClaw 以获得新功能和安全修复。
 
 ### 检查更新
 
-```
+```bash
 # 检查当前版本
-openclaw --version# 检查最新版本
+openclaw --version
+
+# 检查最新版本
 curl -s https://api.github.com/repos/openclaw/openclaw/releases/latest | grep tag_name
 ```
 
 ### 本地安装更新
 
-```
+```bash
 # 方式一：使用安装脚本
 curl -fsSL https://openclaw.ai/install.sh | bash
 
-# 方式二：手动更新cd ~/openclaw
+# 方式二：手动更新
+cd ~/openclaw
 git pull origin main
 pnpm install
 pnpm build
@@ -2321,16 +2284,20 @@ pnpm build
 
 ### Docker 更新
 
-```
+```bash
 # 拉取最新镜像
 docker pull openclaw/openclaw:latest
 
-# 停止并删除旧内容器
+# 停止并删除旧容器
 docker stop openclaw
 docker rm openclaw
 
-# 启动新内容器
-docker run -d \--name openclaw \-p 18789:18789 \-v ~/.openclaw:/root/.openclaw \--restart unless-stopped \
+# 启动新容器
+docker run -d \
+  --name openclaw \
+  -p 18789:18789 \
+  -v ~/.openclaw:/root/.openclaw \
+  --restart unless-stopped \
   openclaw/openclaw:latest
 ```
 
@@ -2338,21 +2305,27 @@ docker run -d \--name openclaw \-p 18789:18789 \-v ~/.openclaw:/root/.openclaw \
 
 **本地安装备份**：
 
-```
-# 备份配置和数据tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz ~/.openclaw
+```bash
+# 备份配置和数据
+tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz ~/.openclaw
 
-# 恢复数据tar -xzf openclaw-backup-20260210.tar.gz -C ~/
+# 恢复数据
+tar -xzf openclaw-backup-20260210.tar.gz -C ~/
 ```
 
 **Docker 备份**：
 
-```
+```bash
 # 备份数据卷
-docker run --rm \-v ~/.openclaw:/data \-v $(pwd):/backup \
+docker run --rm \
+  -v ~/.openclaw:/data \
+  -v $(pwd):/backup \
   alpine tar czf /backup/openclaw-backup-$(date +%Y%m%d).tar.gz /data
 
 # 恢复数据
-docker run --rm \-v ~/.openclaw:/data \-v $(pwd):/backup \
+docker run --rm \
+  -v ~/.openclaw:/data \
+  -v $(pwd):/backup \
   alpine tar xzf /backup/openclaw-backup-20260210.tar.gz -C /
 ```
 
@@ -2360,8 +2333,9 @@ docker run --rm \-v ~/.openclaw:/data \-v $(pwd):/backup \
 
 **查看日志**：
 
-```
-# 本地安装tail -f ~/.openclaw/logs/gateway.log
+```bash
+# 本地安装
+tail -f ~/.openclaw/logs/gateway.log
 
 # Docker
 docker logs -f openclaw
@@ -2369,7 +2343,7 @@ docker logs -f openclaw
 
 **监控指标**：
 
-```
+```bash
 # 查看系统状态
 openclaw gateway status
 
@@ -2384,35 +2358,35 @@ openclaw stats api
 
 **常见访问题**：
 
-1.  **Gateway 无法启动**
+1. **Gateway 无法启动**
 
-```
+```bash
 # 查看日志
 openclaw logs
-   
+
 # 检查端口占用
 lsof -i :18789
-   
+
 # 重启 Gateway
 openclaw gateway restart
 ```
 
-1.  **API 连接失败**
+1. **API 连接失败**
 
-```
+```bash
 # 测试 API 连接
 openclaw test api
-   
+
 # 检查 API Key
 openclaw config get models.providers
 ```
 
-1.  **性能访问题**
+1. **性能访问题**
 
-```
+```bash
 # 清理缓存
 openclaw cache clear
-   
+
 # 重启服务
 openclaw gateway restart
 ```
@@ -2421,11 +2395,12 @@ openclaw gateway restart
 
 **本地安装卸载**：
 
-```
+```bash
 # 停止服务
 openclaw gateway stop
 
-# 删除文件rm -rf ~/.openclaw
+# 删除文件
+rm -rf ~/.openclaw
 rm -rf ~/openclaw
 
 # 删除命令
@@ -2434,152 +2409,153 @@ npm uninstall -g openclaw
 
 **Docker 卸载**：
 
-```
-# 停止并删除内容器
+```bash
+# 停止并删除容器
 docker stop openclaw
 docker rm openclaw
 
 # 删除镜像
 docker rmi openclaw/openclaw
 
-# 删除数据rm -rf ~/.openclaw
+# 删除数据
+rm -rf ~/.openclaw
 ```
 
 ---
 
 ## API配置指南
 
-> **OpenC**law需要连接AI模型才能工作，推荐使用国产大模型，性价比高。
+> OpenClaw 需要连接 AI 模型才能工作，推荐使用国产大模型，性价比高。
 
-### 为什么需要API？
+### 为什么需要 API？
 
-OpenClaw本身不包含AI模型，需要连接第三方API：
+OpenClaw 本身不包含 AI 模型，需要连接第三方 API：
 
-+   官方API：价格贵、国内访问困难
++ 官方 API：价格贵、国内访问困难
 
-+   第三方API：价格便宜、国内直连
++ 第三方 API：价格便宜、国内直连
 
-### API模型分类
+### API 模型分类
 
-OpenClaw支持两种类型的API模型配置：
+OpenClaw 支持两种类型的 API 模型配置：
 
 #### 内置 API 模型（推荐新手）
 
-**什么是内置API模型？**
+**什么是内置 API 模型？**
 
-OpenClaw已经预先配置好了多个主流AI模型的连接方式，你只需要：
+OpenClaw 已经预先配置好了多个主流 AI 模型的连接方式，你只需要：
 
-+   ✅ 获取API Key
++ ✅ 获取 API Key
 
-+   ✅ 在配置向导中选择对应模型
++ ✅ 在配置向导中选择对应模型
 
-+   ✅ 粘贴API Key即可使用
++ ✅ 粘贴 API Key 即可使用
 
 **支持的内置模型**：
 
-OpenClaw内置支持非常多的API模型，包括但不限于：
+OpenClaw 内置支持非常多的 API 模型，包括但不限于：
 
 ![](img/564abed884e7403253285b6430f28c2a.png)
 
 **国内模型**（推荐）：
 
-+   🌙 Moonshot AI (Kimi)：长文本专家，200万字上下文
++ 🌙 Moonshot AI (Kimi)：长文本专家，200 万字上下文
 
-+   🧠 D**eepSeek：**性价比之王，推理能力强
++ 🧠 DeepSeek：性价比之王，推理能力强
 
-+   🎯 智**谱GLM：**中文理解好，多模态支持
++ 🎯 智谱 GLM：中文理解好，多模态支持
 
-+   🚀 通**义千访问 (Qwen)：**阿里出品，稳定可靠
++ 🚀 通义千问 (Qwen)：阿里出品，稳定可靠
 
-+   🎨 M**iniMax：**对话自然，创意能力强
++ 🎨 MiniMax：对话自然，创意能力强
 
-+   📚 百**度文心：**中文语料丰富
++ 📚 百度文心：中文语料丰富
 
-+   🔥 字**节豆包：**性价比高
++ 🔥 字节豆包：性价比高
 
 **国外模型**：
 
-+   🤖 OpenAI (GPT-4/GPT-3.5)：最强大但价格贵
++ 🤖 OpenAI (GPT-4/GPT-3.5)：最强大但价格贵
 
-+   🦙 Anthropic (Claude)：推理能力强，安全性高
++ 🦙 Anthropic (Claude)：推理能力强，安全性高
 
-+   🔷 G**oogle (Gemini)：**多模态能力强
++ 🔷 Google (Gemini)：多模态能力强
 
-+   🌐 G**roq：**推理速度快
++ 🌐 Groq：推理速度快
 
 **优势**：
 
-+   ✅ 配置简单，无需手动编写配置文件
++ ✅ 配置简单，无需手动编写配置文件
 
-+   ✅ 参数已优化，开箱即用
++ ✅ 参数已优化，开箱即用
 
-+   ✅ 自动更新，跟随OpenClaw版本
++ ✅ 自动更新，跟随 OpenClaw 版本
 
-+   ✅ 适合新手，降低使用门槛
++ ✅ 适合新手，降低使用门槛
 
 **使用场景**：
 
-+   🎯 新手用户快速上手
++ 🎯 新手用户快速上手
 
-+   🎯 使用主流大模型
++ 🎯 使用主流大模型
 
-+   🎯 不想折腾配置文件
++ 🎯 不想折腾配置文件
 
 #### 自定义 API（进阶用户）
 
-**什么是自定义API？**
+**什么是自定义 API？**
 
 如果你想使用：
 
-+   🔧 OpenClaw未内置的模型
++ 🔧 OpenClaw 未内置的模型
 
-+   🔧 自己搭建的模型服务
++ 🔧 自己搭建的模型服务
 
-+   🔧 第三方API代理服务
++ 🔧 第三方 API 代理服务
 
-+   🔧 企业内部的模型接口
++ 🔧 企业内部的模型接口
 
-就需要使用自定义API配置。
+就需要使用自定义 API 配置。
 
 **配置方式**：
 
-需要手动编辑配置文件 ~/.openclaw/openclaw.json，指定：
+需要手动编辑配置文件 `~/.openclaw/openclaw.json`，指定：
 
-+   baseUrl：API服务地址
++ `baseUrl`：API 服务地址
 
-+   apiKey：认证密钥
++ `apiKey`：认证密钥
 
-+   api：API协议类型（如 openai-chat、anthropic-messages）
++ `api`：API 协议类型（如 `openai-chat`、`anthropic-messages`）
 
-+   models：模型列表和参数
++ `models`：模型列表和参数
 
 **优势**：
 
-+   ✅ 灵活性高，支持任何兼内容的API
++ ✅ 灵活性高，支持任何兼容的 API
 
-+   ✅ 可以使用小众模型
++ ✅ 可以使用小众模型
 
-+   ✅ 可以自定义模型参数
++ ✅ 可以自定义模型参数
 
-+   ✅ 适合企业定制化需求
++ ✅ 适合企业定制化需求
 
 **劣势**：
 
-+   ⚠️ 配置复杂，需要了解JSON格式
++ ⚠️ 配置复杂，需要了解 JSON 格式
 
-+   ⚠️ 需要手动维护配置
++ ⚠️ 需要手动维护配置
 
-+   ⚠️ 参数错误可能导致无法使用
++ ⚠️ 参数错误可能导致无法使用
 
 **使用场景**：
 
-+   🎯 进阶用户
++ 🎯 进阶用户
 
-+   🎯 使用非主流模型
++ 🎯 使用非主流模型
 
-+   🎯 企业内部部署
++ 🎯 企业内部部署
 
-+   🎯 需要精细控制参数
++ 🎯 需要精细控制参数
 
 ### 配置方式对比
 
@@ -2591,61 +2567,59 @@ OpenClaw内置支持非常多的API模型，包括但不限于：
 
 **新手推荐**：
 
-```
-1. 使用内置API模型
+```text
+1. 使用内置 API 模型
 2. 选择国产模型（如 Kimi、DeepSeek）
-3. 通过 openclaw onboard 向导配置
+3. 通过 `openclaw onboard` 向导配置
 4. 先体验，熟悉后再考虑自定义
 ```
 
 **进阶用户**：
 
-```
-1. 先用内置API模型熟悉OpenClaw
+```text
+1. 先用内置 API 模型熟悉 OpenClaw
 2. 了解配置文件结构
-3. 根据需求添加自定义API
+3. 根据需求添加自定义 API
 4. 测试验证后投入使用
 ```
 
----
+### 自定义 API 配置（进阶用户）
 
-### 自定义API配置（进阶用户）
+> ⚠️ 适合人群：进阶用户、需要使用非主流模型、企业定制化需求
 
-> ⚠️ **适合人群**：进阶用户、需要使用非主流模型、企业定制化需求
+#### 什么时候需要自定义 API？
 
-#### 什么时候需要自定义API？
+如果你遇到以下情况，需要使用自定义 API 配置：
 
-如果你遇到以下情况，需要使用自定义API配置：
+1. **使用非内置模型**：
 
-1.  **使用非内置模型**：
+   + OpenClaw 未内置的小众模型
 
-+   OpenClaw未内置的小众模型
+   + 新发布的模型（OpenClaw 还未更新）
 
-+   新发布布的模型（OpenClaw还未更新）
+   + 区域限定的模型
 
-+   区域限定的模型
+1. **使用第三方代理**：
 
-1.  **使用第三方代理**：
+   + API 代理服务（如 OpenRouter、API2D）
 
-+   API代理服务（如 OpenRouter、API2D）
+   + 企业内部的 API 网关
 
-+   企业内部的API网关
+   + 自建的模型服务
 
-+   自建的模型服务
+1. **精细控制参数**：
 
-1.  **精细控制参数**：
+   + 自定义模型参数
 
-+   自定义模型参数
+   + 调整上下文窗口大小
 
-+   调整上下文窗口大小
-
-+   修改默认配置
+   + 修改默认配置
 
 #### 配置文件位置
 
-> 📖 详**细说明:**[ 完整的配置文件结构](https://awesome.tryopenclaw.asia/docs/config-file-structure.html)和使用指南请参考 配置文件结构完整指南
+> 📖 详细说明：[完整的配置文件结构](https://awesome.tryopenclaw.asia/docs/config-file-structure.html) 和使用指南请参考 配置文件结构完整指南
 
-```
+```text
 # 配置文件路径
 ~/.openclaw/openclaw.json
 
@@ -2655,182 +2629,190 @@ nano ~/.openclaw/openclaw.json
 
 #### 配置文件结构
 
-```
+```json
 {
-**  &quot;model**s&quot;: **{
-    **&quot;mode&quot;: &quot;merg**e&quot;,
-    &quot;pr**ovider**s&quot;: {
-   **   &quot;你的供应**商名称&quot;: {
- **       &quot;baseUrl&quot;: &quot;**API服务地址&quot;**,
-        &quot;apiKey&quot;: **&quot;你的API** 密钥&quot;,
-        &quot;a**uth&quot;:** &quot;认证方式&quot;,
-        &quot;a**pi&quot;: &quot;AP**I协议类型&quot;,
-    **    **&quot;models&quot;: [
-        **  {
-  **          &quot;id&quot;: &quot;模型ID&quot;**,
-            &quot;**name&quot;: &quot;模型显示名称&quot;,
-    **        &quot;co**ntextWindow&quot;: **上下文窗口大小,**
-   **         &quot;**maxTok**ens&quot;: 最**大输出token**s
-       **   }
-        ]
-      }
-    }
-  },
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;model&quot;: {
-        &quot;primary&quot;: &quot;供应商名称/模型ID&quot;
-      }
-    }
-  }
-}
-```
-
-#### 示例1：配置DeepSeek（自定义方式）
-
-```
-{
-**  &quot;model**s&quot;: **{
-    **&quot;mode&quot;: &quot;merg**e&quot;,
-    &quot;pr**ovider**s&quot;: {
-    **  &quot;deeps**eek&quot;: {
- **       &quot;ba**seUrl&quot;: **&quot;https://api.deepseek.c**om&quot;,
- **       &quot;apiKey&quot;: &quot;s**k-你的A**PI 密钥&quot;,
-        &quot;auth&quot;:** &quot;api-ke**y&quot;,
-        **&quot;api**&quot;: &quot;openai-chat&quot;,
-        &quot;mo**dels&quot;:** [
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "你的供应商名称": {
+        "baseUrl": "API服务地址",
+        "apiKey": "你的API密钥",
+        "auth": "认证方式",
+        "api": "API协议类型",
+        "models": [
           {
-            &quot;i**d&quot;: &quot;deepseek-c**hat&quot;,
-      **      &quot;name**&quot;: &quot;DeepSeek** Cha**t&quot;,
-          **  &quot;con**textWindow&quot;: 6**4000,
-         **   &quot;maxToken**s&quot;: 4096
-  **  **      },**
-   **       {
- **      **     &quot;i**d&quot;: &quot;dee**pseek-cod**er&quot;,
-            &quot;name&quot;: &quot;DeepSeek Coder&quot;,
-            &quot;contextWindow&quot;: 64000,
-            &quot;maxTokens&quot;: 4096
+            "id": "模型ID",
+            "name": "模型显示名称",
+            "contextWindow": "上下文窗口大小",
+            "maxTokens": "最大输出tokens"
           }
         ]
       }
     }
   },
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;model&quot;: {
-        &quot;primary&quot;: &quot;deepseek/deepseek-chat&quot;
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "供应商名称/模型ID"
       }
     }
   }
 }
 ```
 
-#### 示例2：配置第三方API代理
+#### 示例 1：配置 DeepSeek（自定义方式）
 
-如果你使用API代理服务（如OpenRouter），配置如下：
-
-```
+```json
 {
-**  &quot;model**s&quot;: **{
-    **&quot;mode&quot;: &quot;merg**e&quot;,
-    &quot;pr**ovider**s&quot;: {
-      **&quot;openrou**ter&quot;: {
- **       &quot;ba**seUrl&quot;: **&quot;https://openrouter.ai/ap**i/v1&quot;,**
-        &quot;apiKey&quot;: **&quot;sk-o**r-v1-你的密钥&quot;,
-        &quot;au**th&quot;: &quot;ap**i-key&quot;,
-    **    **&quot;api&quot;: &quot;openai**-chat&quot;**,
-        &quot;mod**els&quot;: [
-       **   {
-       **     &quot;id&quot;: **&quot;anthropic/c**laud**e-3.5-sonnet&quot;,
-            &quot;**name&quot;:** &quot;Claude 3.5 Sonnet&quot;,**
-            &quot;c**ontextWindow**&quot;: 200000,
-**  **        **  &quot;m**axTokens&quot;:** 8192
-**       **   },
-  **        {**
-            &quot;id&quot;: &quot;openai/gpt-4&quot;,
-            &quot;name&quot;: &quot;GPT-4&quot;,
-            &quot;contextWindow&quot;: 128000,
-            &quot;maxTokens&quot;: 4096
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com",
+        "apiKey": "sk-你的API密钥",
+        "auth": "api-key",
+        "api": "openai-chat",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat",
+            "contextWindow": 64000,
+            "maxTokens": 4096
+          },
+          {
+            "id": "deepseek-coder",
+            "name": "DeepSeek Coder",
+            "contextWindow": 64000,
+            "maxTokens": 4096
           }
         ]
       }
     }
   },
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;model&quot;: {
-        &quot;primary&quot;: &quot;openrouter/anthropic/claude-3.5-sonnet&quot;
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat"
       }
     }
   }
 }
 ```
 
-#### 示例3：配置多个模型供应商
+#### 示例 2：配置第三方 API 代理
+
+如果你使用 API 代理服务（如 OpenRouter），配置如下：
+
+
+
+# OpenClaw 模型配置指南
+
+## 配置多个模型供应商
+
+### 示例：OpenRouter 配置
+
+```json
+{
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "sk-or-v1-你的密钥",
+        "auth": "api-key",
+        "api": "openai-chat",
+        "models": [
+          {
+            "id": "anthropic/claude-3.5-sonnet",
+            "name": "Claude 3.5 Sonnet",
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "openai/gpt-4",
+            "name": "GPT-4",
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/anthropic/claude-3.5-sonnet"
+      }
+    }
+  }
+}
+```
+
+### 示例3：配置多个模型供应商
 
 你可以同时配置多个供应商，根据需要切换：
 
-```
+```json
 {
-**  &quot;model**s&quot;: **{
-    **&quot;mode&quot;: &quot;merg**e&quot;,
-    &quot;pr**ovider**s&quot;: {
-    **  &quot;deeps**eek&quot;: {
- **       &quot;ba**seUrl&quot;: **&quot;https://a**pi.dee**pseek.com&quot;,
-       ** &quot;api**Key&quot;: &quot;sk-你的DeepSeek密钥&quot;**,
-      **  &quot;auth&quot;: &quot;a**pi-k**ey&quot;,
-        &quot;api&quot;: &quot;openai-c**hat&quot;,
-**        &quot;models&quot;: [
-         ** {
-            **&quot;id&quot;: &quot;deeps**eek-chat&quot;,
-**      **      &quot;nam**e&quot;: &quot;Dee**pSeek Cha**t&quot;,
-      **      &quot;c**ontextWindow&quot;: 64000,
- **      **     &quot;maxTokens&quot;: 4**096
- **         }
-        ]
-  **    },
- **     &quot;moonsh**ot&quot;:** {
-        &quot;ba**seUrl&quot;**: &quot;https://api.moonshot.c**n/v1&quot;,
-        **&quot;apiKey&quot;: &quot;s**k-你的Kimi密钥&quot;**,
-**        **&quot;aut**h&quot;: &quot;api-k**ey&quot;,
- **       **&quot;api&quot;: &quot;**openai-ch**at&quot;,
-     **   &quot;models**&quot;: [
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com",
+        "apiKey": "sk-你的DeepSeek密钥",
+        "auth": "api-key",
+        "api": "openai-chat",
+        "models": [
           {
-            &quot;id&quot;: &quot;moonshot-v1-128k&quot;,
-            &quot;name&quot;: &quot;Kimi 128K&quot;,
-            &quot;contextWindow&quot;: 128000,
-            &quot;maxTokens&quot;: 4096
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat",
+            "contextWindow": 64000,
+            "maxTokens": 4096
+          }
+        ]
+      },
+      "moonshot": {
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "apiKey": "sk-你的Kimi密钥",
+        "auth": "api-key",
+        "api": "openai-chat",
+        "models": [
+          {
+            "id": "moonshot-v1-128k",
+            "name": "Kimi 128K",
+            "contextWindow": 128000,
+            "maxTokens": 4096
           }
         ]
       }
     }
   },
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;model&quot;: {
-        &quot;primary&quot;: &quot;deepseek/deepseek-chat&quot;,
-        &quot;fallback&quot;: &quot;moonshot/moonshot-v1-128k&quot;
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallback": "moonshot/moonshot-v1-128k"
       }
     }
   }
 }
 ```
 
-#### 配置参数说明
+## 配置参数说明
 
-#### 常见API协议类型
+### 常见API协议类型
 
-+   openai-chat：OpenAI兼内容接口（最常用）
++   `openai-chat`：OpenAI兼容接口（最常用）
 
-+   anthropic-messages：Anthropic Claude接口
++   `anthropic-messages`：Anthropic Claude接口
 
-+   google-generative-ai：Google Gemini接口
++   `google-generative-ai`：Google Gemini接口
 
-+   azure-openai：Azure OpenAI接口
++   `azure-openai`：Azure OpenAI接口
 
-#### 配置后重启服务
+## 配置后重启服务
 
-```
+```bash
 # 方式1：重启Gateway
 openclaw gateway restart
 
@@ -2842,9 +2824,9 @@ systemctl --user start openclaw-gateway.service
 systemctl --user restart openclaw-gateway.service
 ```
 
-#### 验证配置
+## 验证配置
 
-```
+```bash
 # 查看当前配置的模型
 openclaw models list
 
@@ -2852,11 +2834,11 @@ openclaw models list
 openclaw models test deepseek/deepseek-chat
 ```
 
-#### 常见访问题
+## 常见问题
 
-**Q1：配置后无法连接？**
+### Q1：配置后无法连接？
 
-```
+```text
 检查项：
 ✅ baseUrl是否正确
 ✅ apiKey是否有效
@@ -2864,51 +2846,51 @@ openclaw models test deepseek/deepseek-chat
 ✅ 配置文件JSON格式是否正确
 ```
 
-**Q2：如何切换模型？**
+### Q2：如何切换模型？
 
-```
+```bash
 # 临时切换
 openclaw agent --message --model deepseek/deepseek-chat
 
-# 永久切换：修改配置文件中的 primary 字段
+# 永久切换：修改配置文件中的 `primary` 字段
 ```
 
-**Q3：如何添加多个模型？**
+### Q3：如何添加多个模型？
 
-```
-在 models 数组中添加多个模型对象即可
-每个模型需要有唯一的 id
+```text
+在 `models` 数组中添加多个模型对象即可
+每个模型需要有唯一的 `id`
 ```
 
 ---
 
-### 内置API模型配置（推荐新手）
+## 内置API模型配置（推荐新手）
 
-> 💡 适**合人群：**新手用户、想要快速上手的用户
+> 💡 适合人群：新手用户、想要快速上手的用户
 
 以下是几个常用的内置API模型配置教程，选择一个你喜欢的即可。
 
-#### Kimi 2.5 配置（推荐）
+### Kimi 2.5 配置（推荐）
 
-**特点**：
+#### 特点
 
-+   📚 超**长上下文：**支持200万字
++   📚 超长上下文：支持200万字
 
-+   📄 长**文档处理：**论文、报告分析专家
++   📄 长文档处理：论文、报告分析专家
 
-+   🎯 中**文理解好：**适合中文场景
++   🎯 中文理解好：适合中文场景
 
-+   💰 套**餐划算：**重度使用建议购买套餐
++   💰 套餐划算：重度使用建议购买套餐
 
-**配置步骤**：
+#### 配置步骤
 
-第一步：访问Kimi Code平台
+##### 第一步：访问Kimi Code平台
 
-访问：https://www.kimi.com/code
+访问：`https://www.kimi.com/code`
 
-**第二步：购买套餐（可选）**
+##### 第二步：购买套餐（可选）
 
-> 💡 提**示：**OpenClaw消耗token较大，建议购买套餐更划算。
+> 💡 提示：OpenClaw消耗token较大，建议购买套餐更划算。
 
 推荐套餐：
 
@@ -2916,9 +2898,9 @@ openclaw agent --message --model deepseek/deepseek-chat
 
 +   按需选择其他套餐
 
-[https:](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzk3ODdjZjE0NDY3Y2NkMTU1ZDZmMzg4YTAwYTg3ZDdfV3haZXdRMEU5OENVN0RCTzBwbmp2U2M5dU1XSm9MMWdfVG9rZW46Q0dYQWJ5NzRVbzB4MWt4b09QRmNwckUybm1lXzE3NzA5NTcyMzY6MTc3MDk2MDgzNl9WNA)//my.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzk3ODdjZjE0NDY3Y2NkMTU1ZDZmMzg4YTAwYTg3ZDdfV3haZXdRMEU5OENVN0RCTzBwbmp2U2M5dU1XSm9MMWdfVG9rZW46Q0dYQWJ5NzRVbzB4MWt4b09QRmNwckUybm1lXzE3NzA5NTcyMzY6MTc3MDk2MDgzNl9WNA
+<https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=Mzk3ODdjZjE0NDY3Y2NkMTU1ZDZmMzg4YTAwYTg3ZDdfV3haZXdRMEU5OENVN0RCTzBwbmp2U2M5dU1XSm9MMWdfVG9rZW46Q0dYQWJ5NzRVbzB4MWt4b09QRmNwckUybm1lXzE3NzA5NTcyMzY6MTc3MDk2MDgzNl9WNA>
 
-**第三步：创建API Key**
+##### 第三步：创建API Key
 
 1.  打开控制台
 
@@ -2928,20 +2910,20 @@ openclaw agent --message --model deepseek/deepseek-chat
 
 ![](img/017f0b896b70b66bfeef8bd750a1fd22.png)
 
-**第四步：保存API Key**
+##### 第四步：保存API Key
 
-⚠️ **重要**：这个API Key一定要复制并保存！点击”完成”后就无法再查看了。
+⚠️ **重要**：这个`API Key`一定要复制并保存！点击”关闭“后就无法再查看了。
 
-**第五步：配置到OpenClaw**
+##### 第五步：配置到OpenClaw
 
-```
+```bash
 # 运行配置向导
 openclaw onboard
 
-# 配置流程：# 1. 选择 QuickStart# 2. 选择模型供应商：Moonshot AI# 3. 粘贴刚才复制的API Key# 4. 选择默认模型：kimi-code/kimi-for-codi# 5. 完成其他配置
+# 配置流程：# 1. 选择 `QuickStart`# 2. 选择模型供应商：`Moonshot AI`# 3. 粘贴刚才复制的`API Key`# 4. 选择默认模型：`kimi-code/kimi-for-codi`# 5. 完成其他配置
 ```
 
-**成本估算**：
+#### 成本估算
 
 +   轻度使用：10-20元/月
 
@@ -2951,60 +2933,60 @@ openclaw onboard
 
 ---
 
-#### DeepSeek 配置（性价比之王）
+### DeepSeek 配置（性价比之王）
 
-**特点**：
+#### 特点
 
-+   💰 最**便宜：**输入0.001元/千tokens
++   💰 最便宜：输入0.001元/千tokens
 
-+   🧠 推**理能力强：**适合复杂任务
++   🧠 推理能力强：适合复杂任务
 
-+   💻 编**程能力出色：**代码生成质量高
++   💻 编程能力出色：代码生成质量高
 
-**配置步骤**：
+#### 配置步骤
 
-**第一步：注册并充值**
+##### 第一步：注册并充值
 
-访问：https://platform.deepseek.com/
+访问：`https://platform.deepseek.com/`
 
 > ⚠️ **注意**：DeepSeek采用按量付费，账户余额必须大于0才能调用API。
 
 ![](img/0b1be16d2cd518c5be2fa2aaa276036f.png)
 
-**第二步：充值账户**
+##### 第二步：充值账户
 
 建议先充值10元试用：
 
-[https:](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=OWU5ZGEzMDE0Y2YyNDhhOTYwZjliNWY0OTM1YjgzMmVfa0dlYzNvMzFvUDVuY0J3cWZ6b3VDUkNLRHpKbmhHSURfVG9rZW46UmZuamJDV29vb0Q2bXl4VHUwcWNxYWFRbnZ1XzE3NzA5NTcxNjg6MTc3MDk2MDc2OF9WNA)//my.feishu.cn/space/api/box/stream/download/asynccode/?code=OWU5ZGEzMDE0Y2YyNDhhOTYwZjliNWY0OTM1YjgzMmVfa0dlYzNvMzFvUDVuY0J3cWZ6b3VDUkNLRHpKbmhHSURfVG9rZW46UmZuamJDV29vb0Q2bXl4VHUwcWNxYWFRbnZ1XzE3NzA5NTcxNjg6MTc3MDk2MDc2OF9WNA
+<https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=OWU5ZGEzMDE0Y2YyNDhhOTYwZjliNWY0OTM1YjgzMmVfa0dlYzNvMzFvUDVuY0J3cWZ6b3VDUkNLRHpKbmhHSURfVG9rZW46UmZuamJDV29vb0Q2bXl4VHUwcWNxYWFRbnZ1XzE3NzA5NTcxNjg6MTc3MDk2MDc2OF9WNA>
 
-**第三步：创建API Key**
+##### 第三步：创建API Key
 
 1.  保证账号有余额
 
-1.  点击”API keys”
+1.  点击”`API keys`“
 
-1.  点击”创建API key”
+1.  点击”创建`API key`“
 
 ![](img/5ca5fb2a052dc1533174610a35de3ab1.png)
 
-**第四步：保存API Key**
+##### 第四步：保存API Key
 
-⚠️ **重要**：API Key只显示一次，务必复制保存！
+⚠️ **重要**：`API Key`只显示一次，务必复制保存！
 
-名称随便取，复制API Key后妥善保存。
+名称随便取，复制`API Key`后妥善保存。
 
 ![](img/f0f5ee208fc9a6b8a0cd4945cf869e1d.png)
 
-**第五步：配置到OpenClaw**
+##### 第五步：配置到OpenClaw
 
-```
+```bash
 # 运行配置向导
 openclaw onboard
 
-# 配置流程：# 1. 选择 QuickStart# 2. 选择模型供应商：DeepSeek# 3. 粘贴API Key# 4. 选择默认模型：deepseek-chat# 5. 完成其他配置
+# 配置流程：# 1. 选择 `QuickStart`# 2. 选择模型供应商：`DeepSeek`# 3. 粘贴`API Key`# 4. 选择默认模型：`deepseek-chat`# 5. 完成其他配置
 ```
 
-**成本估算**：
+#### 成本估算
 
 +   日常使用：5-10元/月
 
@@ -3014,104 +2996,104 @@ openclaw onboard
 
 ---
 
-### 国产大模型配置（其他选项）
+## 国产大模型配置（其他选项）
 
-#### DeepSeek配置（性价比之王）
+### DeepSeek 配置（性价比之王）
 
-**特点**：
+#### 特点
 
-+   💰 最**便宜：**输入0.001元/千tokens
++   💰 最便宜：输入0.001元/千tokens
 
-+   🧠 推**理能力强：**适合复杂任务
++   🧠 推理能力强：适合复杂任务
 
-+   💻 编**程能力出色：**代码生成质量高
++   💻 编程能力出色：代码生成质量高
 
-**Deep**Seek 的 API 调用是按量付费的，你的账户余额必须大于 0 才能正常调用接口。
+DeepSeek 的 `API` 调用是按量付费的，你的账户余额必须大于 0 才能正常调用接口。
 
-如果账户没钱或余额不足，API 请求会直接失败，所以提前充值是保证服务可用的必要操作。
+如果账户没钱或余额不足，`API` 请求会直接失败，所以提前充值是保证服务可用的必要操作。
 
-其他大模型也是同理，你要去找到对应网址去充值，然后获取API keys
+其他大模型也是同理，你要去找到对应网址去充值，然后获取`API keys`
 
 ![](img/5cf0c7cb246f326456788632ba49f98f.png)
 
-如果你只想先尝，可以就先花个10块钱玩一下
+如果你只想先试，可以就先花个10块钱玩一下
 
 ![](img/0f050f13b16e02575de5fa10cfb95066.png)
 
-保证账号有余额之后，点击”API keys“，然后点”创建 API key“
+保证账号有余额之后，点击”`API keys`“，然后点”创建 `API key`“
 
 ![](img/d4ffdc5c4b9d99dec8f0be5d23abb837.png)
 
-API key的名称：随便取。然后这个APIkey一定！一定！要复制下来，因为一般你点完”关闭“之后，你就再也无法查看你的API key了，如果你我忘记了你的API key，那只能重新创建一个了。
+`API key`的名称：随便取。然后这个`API key`一定！一定！要复制下来，因为一般你点完”关闭“之后，你就再也无法查看你的`API key`了，如果你我忘记了你的`API key`，那只能重新创建一个了。
 
-复制完后，找地方先存起来，后续在”第四步：OpenClaw 配置“的时候会用到
+复制完后，找地方先存起来，后续在”`第四步：OpenClaw 配置`“的时候会用到
 
-好，至此”第二步：配置模型“完成，进入”第三步：配置Bot“吧
+好，至此”`第二步：配置模型`“完成，进入”`第三步：配置Bot`“吧
 
-**配置步骤**：
+#### 配置步骤
 
-1.  **注册账号**：
+1.  注册账号：
 
-```
-访问：https://platform.deepseek.com/
-注册并登录
-```
+    ```
+    访问：https://platform.deepseek.com/
+    注册并登录
+    ```
 
-1.  **获取API Key**：
+1.  获取`API Key`：
 
-```
-进入&quot;API管理&quot;
-点击&quot;创建API Key&quot;
-复制API Key（格式：sk-xxx）
-```
+    ```
+    进入“API管理”
+    点击“创建API Key”
+    复制API Key（格式：`sk-xxx`）
+    ```
 
-1.  **配置到OpenClaw**：
+1.  配置到OpenClaw：
 
-```
-# 编辑配置文件
-nano ~/.openclaw/openclaw.json
-```
+    ```
+    # 编辑配置文件
+    nano ~/.openclaw/openclaw.json
+    ```
 
 1.  添加配置：
 
-```
-{
-**  &quot;model**s&quot;: **{
-    **&quot;mode&quot;: &quot;merg**e&quot;,
-    &quot;pr**ovider**s&quot;: {
-    **  &quot;deeps**eek&quot;: {
- **       &quot;ba**seUrl&quot;: **&quot;https://api.deepseek.c**om&quot;,
- **       &quot;apiKey&quot;: &quot;s**k-你的A**PI 密钥&quot;,
-        &quot;auth&quot;:** &quot;api-ke**y&quot;,
-        **&quot;api**&quot;: &quot;openai-chat&quot;,
-        &quot;mo**dels&quot;:** [
-          {
-            &quot;i**d&quot;: &quot;deepseek-c**hat&quot;,
-      **      &quot;name**&quot;:** &quot;DeepSe**ek C**hat&quot;,
-    **      **  &quot;cont**extWindo**w&quot;: 64000**,
-            &quot;maxTokens&quot;: 4096
+    ```json
+    {
+      "models": {
+        "mode": "merge",
+        "providers": {
+          "deepseek": {
+            "baseUrl": "https://api.deepseek.com",
+            "apiKey": "sk-你的API 密钥",
+            "auth": "api-key",
+            "api": "openai-chat",
+            "models": [
+              {
+                "id": "deepseek-chat",
+                "name": "DeepSeek Chat",
+                "contextWindow": 64000,
+                "maxTokens": 4096
+              }
+            ]
           }
-        ]
+        }
+      },
+      "agents": {
+        "defaults": {
+          "model": {
+            "primary": "deepseek/deepseek-chat"
+          }
+        }
       }
     }
-  },
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;model&quot;: {
-        &quot;primary&quot;: &quot;deepseek/deepseek-chat&quot;
-      }
-    }
-  }
-}
-```
+    ```
 
-1.  **重启Gateway**：
+1.  重启`Gateway`：
 
-```
-openclaw gateway restart
-```
+    ```
+    openclaw gateway restart
+    ```
 
-**成本估算**：
+#### 成本估算
 
 +   日常使用：5-10元/月
 
@@ -3119,183 +3101,172 @@ openclaw gateway restart
 
 +   重度使用：30-50元/月
 
-#### Kimi配置（长文本专家）
+### Kimi 配置（长文本专家）
 
-**特点**：
+#### 特点
 
-+   📚 超**长上下文：**支持200万字
++   📚 超长上下文：支持200万字
 
-+   📄 长**文档处理：**论文、报告分析专家
++   📄 长文档处理：论文、报告分析专家
 
-+   🎯 中**文理解好：**适合中文场景
++   🎯 中文理解好：适合中文场景
 
-那如何使用，第一步，搜索 kimi code：https://www.kimi.com/code
+
+
+# 快速开始
+
+那如何使用，第一步，搜索 `kimi code`：https://www.kimi.com/code
 
 ![](img/5dde58d7cb0f65588d54ebb06525ce4c.png)
 
-第二步，购买优惠套餐 plan，说实话，目前 OpenClaw 消耗 token 还挺大的，最好买个套餐划算一些，我买的是 Allegretto 套餐。
+第二步，购买优惠套餐 `plan`，说实话，目前 `OpenClaw` 消耗 token 还挺大的，最好买个套餐划算一些，我买的是 Allegretto 套餐。
 
-第二步，打开控制台，创建 API key。名字随便取。
+第二步，打开控制台，创建 `API key`。名字随便取。
 
-这个APIkey一定！一定！要复制下来，因为一般你点完”完成“之后，你就再也无法查看你的API key了，如果你忘记了你的API key，那就只能重新创建一个了。复制完后，找地方先存起来，后续在”第四步：OpenClaw 配置“的时候会用到
+这个 `API key` 一定！一定！要复制下来，因为一般你点完“完成”之后，你就再也无法查看你的 `API key` 了，如果你忘记了你的 `API key`，那就只能重新创建一个了。复制完后，找地方先存起来，后续在“第四步：`OpenClaw` 配置”的时候会用到
 
 ![](img/1ba4e50ce81c2977843494a2309d5987.png)
 
-**配置步骤**：
+## 配置步骤
 
-1.  **注册账号**：
+1. **注册账号**
 
-```
-访问：https://platform.moonshot.cn/
-注册并登录
-```
+   访问：https://platform.moonshot.cn/
+   注册并登录
 
-1.  **获取API Key**：
+1. **获取 API Key**
 
-```
-进入&quot;API管理&quot;
-点击&quot;创建API Key&quot;
-复制API Key
-```
+   进入“API 管理”
+   点击“创建 API Key”
+   复制 API Key
 
-1.  **配置到OpenClaw**：
+1. **配置到 OpenClaw**
 
-```
-{
-**  &quot;model**s&quot;: **{
-    **&quot;mode&quot;: &quot;merg**e&quot;,
-    &quot;pr**ovider**s&quot;: {
-    **  &quot;moons**hot&quot;: {
- **       &quot;ba**seUrl&quot;: **&quot;https://api.moonshot.c**n/v1&quot;,**
-        &quot;apiKey&quot;: **&quot;sk-你**的API 密钥&quot;,
-        &quot;auth**&quot;: &quot;api-**key&quot;,
-      **  &quot;a**pi&quot;: &quot;openai-c**hat&quot;,
-**        &quot;models&quot;: [
-     **     {
-        **    &quot;id&quot;: &quot;m**oonshot-v1-**8k**&quot;,
-     **    **   &quot;name&quot;:** &quot;Kimi** k2.5&quot;,**
-       **     &quot;con**textWindow&quot;: 8000,
-            &quot;maxTokens&quot;: 4096
-          }
-        ]
-      }
-    }
-  },
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;model&quot;: {
-        &quot;primary&quot;: &quot;moonshot/moonshot-v1-8k&quot;
-      }
-    }
-  }
-}
-```
+   ```json
+   {
+     "models": {
+       "mode": "merge",
+       "providers": {
+         "moonshot": {
+           "baseUrl": "https://api.moonshot.cn/v1",
+           "apiKey": "sk-你的 API 密钥",
+           "auth": "api-key",
+           "api": "openai-chat",
+           "models": [
+             {
+               "id": "moonshot-v1-8k",
+               "name": "Kimi k2.5",
+               "contextWindow": 8000,
+               "maxTokens": 4096
+             }
+           ]
+         }
+       }
+     },
+     "agents": {
+       "defaults": {
+         "model": {
+           "primary": "moonshot/moonshot-v1-8k"
+         }
+       }
+     }
+   }
+   ```
 
-**成本估算**：
+## 成本估算
 
-+   日常使用：10-20元/月
++ 日常使用：10-20 元/月
++ 中度使用：20-50 元/月
++ 重度使用：50-100 元/月
 
-+   中度使用：20-50元/月
+## 其他国产大模型
 
-+   重度使用：50-100元/月
+## 国际模型配置（可选）
 
-#### 其他国产大模型
+如果需要使用 Claude、GPT 等国际模型：
 
-### 国际模型配置（可选）
+1. **直接使用官方 API**（需要魔法）
+1. **使用第三方 API 服务**（国内直连）
 
-如果需要使用Claude、GPT等国际模型：
+### 推荐第三方 API
 
-1.  **直接使用官方API**（需要魔法）
++ 价格便宜 50%-70%
++ 国内直连，无需魔法
++ 支持支付宝、🛰️ 支付
 
-1.  **使用第三方API服务**（国内直连）
+## 成本对比
 
-**推荐第三方API**：
+💡 省钱技巧：
 
-+   价格便宜50%-70%
++ 日常对话用 DeepSeek（最便宜）
++ 长文档用 Kimi（长上下文）
++ 复杂任务用 Claude（质量最高）
 
-+   国内直连，无需魔法
+## 常见问题解决
 
-+   支持支付宝、🛰️支付
+### 安装问题
 
-### 成本对比
+**Q1: Node.js 版本不对**
 
-💡 省**钱技巧：**
-
-+   日常对话用DeepSeek（最便宜）
-
-+   长文档用Kimi（长上下文）
-
-+   复杂任务用Claude（质量最高）
-
-## 常见访问题解决
-
-### 安装访问题
-
-**Q1: Node.js版本不对**
-
-```
+```bash
 # 检查版本
-node --version# 如果低于22，升级
+node --version
+# 如果低于 22，升级
 nvm install 22
 nvm use 22
 ```
 
 **Q2: 权限错误**
 
-```
-# macOS/Linuxsudo chown -R $USER ~/.openclaw
+```bash
+# macOS/Linux
+sudo chown -R $USER ~/.openclaw
 
-# Windows# 以管理员身份运行PowerShell
+# Windows
+# 以管理员身份运行 PowerShell
 ```
 
 **Q3: 网络连接失败**
 
-+   检查网络连接
++ 检查网络连接
++ 尝试使用代理
++ 或使用云端部署
 
-+   尝试使用代理
+### API 配置问题
 
-+   或使用云端部署
+**Q1: API Key 无效**
 
-### API配置访问题
-
-**Q1: API Key无效**
-
-+   检查是否完整复制（包括sk-前缀）
-
-+   检查是否有多余空格
-
-+   检查账户余额是否充足
++ 检查是否完整复制（包括 `sk-` 前缀）
++ 检查是否有多余空格
++ 检查账户余额是否充足
 
 **Q2: 模型不可用**
 
-+   检查模型ID是否正确
++ 检查模型 ID 是否正确
++ 检查 API 服务是否正常
++ 尝试切换其他模型
 
-+   检查API服务是否正常
+**Q3: Token 消耗太快**
 
-+   尝试切换其他模型
++ 使用更便宜的模型（DeepSeek）
++ 优化提示词
++ 定期清理会话历史
 
-**Q3: Token消耗太快**
+### Gateway 问题
 
-+   使用更便宜的模型（DeepSeek）
+**Q1: Gateway 无法启动**
 
-+   优化提示词
+```bash
+# 查看日志
+tail -f ~/.openclaw/logs/gateway.log
 
-+   定期清理会话历史
-
-### Gateway访问题
-
-**Q1: Gateway无法启动**
-
-```
-# 查看日志tail -f ~/.openclaw/logs/gateway.log
-
-# 重启Gateway
+# 重启 Gateway
 openclaw gateway restart
 ```
 
 **Q2: 端口被占用**
 
-```
+```bash
 # 查看端口占用
 lsof -i :18789
 
@@ -3305,37 +3276,35 @@ openclaw config set gateway.port 18790
 
 ## 2.X 版本升级指南
 
-> 🔄 保**支持最新：**定期升级OpenClaw以获得新功能、性能优化和安全修复。
+> 🔄 保持支持最新：定期升级 `OpenClaw` 以获得新功能、性能优化和安全修复。
 
-> ⚠️ **重要提示**：目前推荐使用 **2026.3.2**[ 版本。2026.2.1](https://github.com/openclaw/openclaw/issues/15141)2 版本存在已知 bug（Issue #15141），会导致 heartbeat 和消息处理功能异常。
+> ⚠️ 重要提示：目前推荐使用 `2026.3.2` 版本。`2026.2.1` 版本存在已知 bug（Issue #15141），会导致 `heartbeat` 和消息处理功能异常。
 
 ### 推荐版本
 
-**当前推荐版本**：2026.3.2
+**当前推荐版本**：`2026.3.2`
 
-**已知访问题版本**：
+**已知问题版本**：
 
-+   ❌ 2026.2.12：Session 路径验证 bug，影响 heartbeat 和 Telegram/飞书消息处理
++ ❌ `2026.2.12`：`Session` 路径验证 bug，影响 `heartbeat` 和 Telegram/飞书消息处理
 
 ### 为什么要升级？
 
-OpenClaw支持续迭代更新，升级可以获得：
+`OpenClaw` 支持续迭代更新，升级可以获得：
 
-+   ✅ 新功能和改进
-
-+   ✅ 性能优化
-
-+   ✅ 安全修复
-
-+   ✅ Bug修复
-
-+   ✅ 更好的兼内容性
++ ✅ 新功能和改进
++ ✅ 性能优化
++ ✅ 安全修复
++ ✅ Bug 修复
++ ✅ 更好的兼容性
 
 ### 检查当前版本
 
-```
+```bash
 # 查看当前版本
-openclaw --version# 查看配置文件版本cat ~/.openclaw/openclaw.json | grep version
+openclaw --version
+# 查看配置文件版本
+cat ~/.openclaw/openclaw.json | grep version
 ```
 
 如果配置文件版本比当前版本新，说明需要升级。
@@ -3344,22 +3313,25 @@ openclaw --version# 查看配置文件版本cat ~/.openclaw/openclaw.json | grep
 
 根据你的安装方式选择对应的升级方法：
 
-### 方式一：npm直接升级（推荐）
+### 方式一：npm 直接升级（推荐）
 
-这是最可靠的升级方式，适用于通过npm安装的用户。
+这是最可靠的升级方式，适用于通过 `npm` 安装的用户。
 
 #### 升级步骤
 
 **第一步：备份配置**
 
-```
-# 备份整个配置目附录cp -r ~/.openclaw ~/.openclaw.ba**c**kup-$(date +%Y%m%d)# 验证备份ls -la ~/.openclaw.backup-*
+```bash
+# 备份整个配置目录
+cp -r ~/.openclaw ~/.openclaw.backup-$(date +%Y%m%d)
+# 验证备份
+ls -la ~/.openclaw.backup-*
 ```
 
-**第二步：停止Gateway服务**
+**第二步：停止 `Gateway` 服务**
 
-```
-# 停止Gateway
+```bash
+# 停止 Gateway
 openclaw gateway stop
 
 # 验证已停止
@@ -3368,7 +3340,7 @@ openclaw gateway status
 
 **第三步：卸载旧版本**
 
-```
+```bash
 # 卸载旧版本
 npm uninstall -g openclaw
 
@@ -3378,55 +3350,52 @@ which openclaw  # 应该没有输出
 
 **第四步：安装新版本**
 
-```
-# 安装推荐版本 2026.3.2（需要使用--force参数）
+```bash
+# 安装推荐版本 2026.3.2（需要使用 --force 参数）
 npm install -g openclaw@2026.3.2 --force
 ```
 
-> ⚠️ **版本选择说明**：
+> ⚠️ 版本选择说明：
 
-+   推荐安装 2026.3.2 版本（稳定）
++ 推荐安装 `2026.3.2` 版本（稳定）
++ 避免安装 `2026.2.12` 版本（存在 `Session` 路径 bug）
++ 如果需要最新功能，等待 `2026.2.13+` 版本修复后再升级
 
-+   避免安装 2026.2.12 版本（存在 session 路径 bug）
+> ⚠️ 为什么需要 `--force`？
 
-+   如果需要最新功能，等待 2026.2.13+ 版本修复后再升级
-
-> ⚠️ **为什么需要–force？**
-
-> npm会检测到已存在的文件，使用--force强制覆盖。
+> `npm` 会检测到已存在的文件，使用 `--force` 强制覆盖。
 
 **第五步：修复配置**
 
-```
-# 运行doctor工具自动修复配置
+```bash
+# 运行 doctor 工具自动修复配置
 openclaw doctor --fix
 ```
 
-doctor工具会自动：
+`doctor` 工具会自动：
 
-+   更新Gateway服务入口点路径
++ 更新 `Gateway` 服务入口点路径
++ 检查配置兼容性
++ 修复已知问题
++ 重新安装 `LaunchAgent`（macOS）或 `systemd` 服务（Linux）
 
-+   检查配置兼内容性
+**第六步：重启 `Gateway`**
 
-+   修复已知访问题
-
-+   重新安装LaunchAgent（macOS）或systemd服务（Linux）
-
-**第六步：重启Gateway**
-
-```
-# 重启Gateway
+```bash
+# 重启 Gateway
 openclaw gateway restart
 
-# 等待几秒后检查状态sleep 5
+# 等待几秒后检查状态
+sleep 5
 openclaw gateway status
 ```
 
 **第七步：验证升级**
 
-```
+```bash
 # 检查版本
-openclaw --version# 检查Gateway状态
+openclaw --version
+# 检查 Gateway 状态
 openclaw gateway status
 
 # 测试连接
@@ -3450,55 +3419,52 @@ Dashboard: http://127.0.0.1:18789/
 
 ![](img/95288f1b027abc590b2bf01e64a1360e.png)
 
-图：升级前版本检查，配置文件版本(2026.2.6-3)比当前版本(2026.2.1-zh.3)新
+图：升级前版本检查，配置文件版本 (`2026.2.6-3`) 比当前版本 (`2026.2.1-zh.3`) 新
 
 ![](img/d2b73ddc0aa85ce222e23f15cf936eb7.png)
 
-图：使用npm install –force安装新版本
+图：使用 `npm install --force` 安装新版本
 
 ![](img/b656c5186a3a48e829fe29cca231d0a9.png)
 
-图：升级完成，版本更新到2026.3.2
+图：升级完成，版本更新到 `2026.3.2`
 
 ### 方式二：官方脚本升级
 
 使用官方提供的一键升级脚本。
 
-```
+```bash
 # 运行升级脚本
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
 **优点**：
 
-+   ✅ 一键完成
-
-+   ✅ 自动处理依赖
++ ✅ 一键完成
++ ✅ 自动处理依赖
 
 **缺点**：
 
-+   ❌ 可能遇到npm错误
-
-+   ❌ 不如方式一可靠
++ ❌ 可能遇到 `npm` 错误
++ ❌ 不如方式一可靠
 
 **如果遇到错误**：
 
-+   切换到方式一（npm直接升级）
++ 切换到方式一（npm 直接升级）
++ 或查看下文的故障排查
 
-+   或查看下文的故障排查
+### 方式三：Docker 升级
 
-### 方式三：Docker升级
+如果使用 Docker 部署，升级非常简单。
 
-如果使用Docker部署，升级非常简单。
-
-```
-# 停止并删除旧内容器
+```bash
+# 停止并删除旧容器
 docker compose down
 
 # 拉取最新镜像
 docker compose pull
 
-# 启动新内容器
+# 启动新容器
 docker compose up -d openclaw-cn-gateway
 
 # 查看日志
@@ -3507,49 +3473,38 @@ docker compose logs -f openclaw-cn-gateway
 
 ### 方式四：云端部署升级
 
-#### 腾讯云Lighthouse
+#### 腾讯云 Lighthouse
 
-1.  进入轻量应用服务器控制台
-
-1.  选择你的OpenClaw实例
-
-1.  点击”重置应用”
-
-1.  选择最新的OpenClaw镜像
-
-1.  等待重置完成
-
-1.  重新配置API（配置会保留）
+1. 进入轻量应用服务器控制台
+1. 选择你的 `OpenClaw` 实例
+1. 点击“重置应用”
+1. 选择最新的 `OpenClaw` 镜像
+1. 等待重置完成
+1. 重新配置 API（配置会保留）
 
 ### 升级后的变化
 
 #### 配置文件自动迁移
 
-升级后，doctor工具会自动：
+升级后，`doctor` 工具会自动：
 
-+   更新配置文件格式
-
-+   迁移旧版本配置
-
-+   创建备份文件：~/.openclaw/openclaw.json.bak
++ 更新配置文件格式
++ 迁移旧版本配置
++ 创建备份文件：`~/.openclaw/openclaw.json.bak`
 
 #### 服务管理改进
 
 **macOS**：
 
-+   LaunchAgent自动重新安装
-
-+   服务路径更新为新版本
-
-+   日志位置：~/.openclaw/logs/gateway.log
++ `LaunchAgent` 自动重新安装
++ 服务路径更新为新版本
++ 日志位置：`~/.openclaw/logs/gateway.log`
 
 **Linux**：
 
-+   systemd服务自动更新
-
-+   服务路径更新为新版本
-
-+   日志位置：~/.openclaw/logs/gateway.log
++ `systemd` 服务自动更新
++ 服务路径更新为新版本
++ 日志位置：`~/.openclaw/logs/gateway.log`
 
 #### 已知警告
 
@@ -3560,11 +3515,11 @@ Config warnings:
 - plugins.entries.feishu: plugin feishu: duplicate plugin id detected
 ```
 
-**说明**：这是一个已知的插件重复警告，不影响正常使用。
+说明：这是一个已知的插件重复警告，不影响正常使用。
 
 ### 升级故障排查
 
-#### 访问题1：npm install报错EEXIST
+#### 问题 1：npm install 报错 EEXIST
 
 **症状**：
 
@@ -3576,12 +3531,12 @@ npm error EEXIST: file already exists
 
 **解决方案**：
 
-```
-# 使用--force参数强制覆盖
+```bash
+# 使用 --force 参数强制覆盖
 npm install -g openclaw@2026.3.2 --force
 ```
 
-#### 访问题2：Gateway启动失败
+#### 问题 2：Gateway 启动失败
 
 **症状**：
 
@@ -3591,15 +3546,17 @@ Gateway not running
 
 **解决方案**：
 
-```
-# 运行doctor修复
-openclaw doctor --fix# 重启Gateway
+```bash
+# 运行 doctor 修复
+openclaw doctor --fix
+# 重启 Gateway
 openclaw gateway restart
 
-# 查看详细日志tail -f ~/.openclaw/logs/gateway.log
+# 查看详细日志
+tail -f ~/.openclaw/logs/gateway.log
 ```
 
-#### 访问题3：配置文件版本不匹配
+#### 问题 3：配置文件版本不匹配
 
 **症状**：
 
@@ -3610,13 +3567,13 @@ current version is 2026.2.1-zh.3
 
 **解决方案**：
 
-```
+```bash
 # 升级到推荐版本 2026.3.2
 npm install -g openclaw@2026.3.2 --force
 openclaw doctor --fix
 ```
 
-#### 访问题4：插件加载失败
+#### 问题 4：插件加载失败
 
 **症状**：
 
@@ -3626,15 +3583,15 @@ plugin not found: xxx
 
 **解决方案**：
 
-```
+```bash
 # 重新安装插件
-openclaw plugins install &lt;plugin-nam**e&gt;**
+openclaw plugins install <plugin-name>
 
-# 或禁用有访问题的插件
+# 或禁用有问题的插件
 openclaw config set plugins.allow []
 ```
 
-#### 访问题5：端口被占用
+#### 问题 5：端口被占用
 
 **症状**：
 
@@ -3644,11 +3601,12 @@ Error: listen EADDRINUSE: address already in use :::18789
 
 **解决方案**：
 
-```
+```bash
 # 查找占用端口的进程
 lsof -i :18789
 
-# 停止旧的Gateway进程kill -9 &lt;PID&gt;
+# 停止旧的 Gateway 进程
+kill -9 <PID>
 
 # 或修改端口
 openclaw config set gateway.port 18790
@@ -3657,31 +3615,38 @@ openclaw gateway restart
 
 ### 回滚到旧版本
 
-如果升级后遇到访问题，可以回滚到旧版本。
+如果升级后遇到问题，可以回滚到旧版本。
 
 #### 方式一：从备份恢复
 
-```
-# 停止Gateway
-openclaw g**a**teway stop
+```bash
+# 停止 Gateway
+openclaw gateway stop
 
-# 恢复配置cp -r ~/.openclaw.backup-20260213/* ~/.openclaw/
+# 恢复配置
+cp -r ~/.openclaw.backup-20260213/* ~/.openclaw/
 
 # 降级到旧版本（以中文版为例）
 npm uninstall -g openclaw
-npm install -g @qingchencloud/openclaw-zh@2026.2.1-zh.3 --force# 重启Gateway
+npm install -g @qingchencloud/openclaw-zh@2026.2.1-zh.3 --force
+
+# 重启 Gateway
 openclaw gateway restart
 ```
 
 #### 方式二：安装指定版本
 
-```
+```bash
 # 查看可用版本
 npm view openclaw versions
 
 # 安装指定版本
-npm install -g openclaw@2026.2.8 --force# 修复配置
-openclaw doctor --fix# 重启Gateway
+npm install -g openclaw@2026.2.8 --force
+
+# 修复配置
+openclaw doctor --fix
+
+# 重启 Gateway
 openclaw gateway restart
 ```
 
@@ -3689,359 +3654,322 @@ openclaw gateway restart
 
 #### 升级前必做
 
-1.  **备份配置**：
+1. **备份配置**：
 
-```
-cp -r ~/.openclaw ~/.openclaw.backup-$(date +%Y%m%d)
-```
+   ```bash
+   cp -r ~/.openclaw ~/.openclaw.backup-$(date +%Y%m%d)
+   ```
 
-1.  **记附录当前版本**：
+1. **记录当前版本**：
 
-```
-openclaw --version **&gt;** ~/openclaw-version-before-upgrade.txt
-```
+   ```bash
+   openclaw --version > ~/openclaw-version-before-upgrade.txt
+   ```
 
-1.  **导出重要配置**：
+1. **导出重要配置**：
 
-```
-**o**penclaw config get &gt; ~/openclaw-config-backup.json
-```
+   ```bash
+   openclaw config get > ~/openclaw-config-backup.json
+   ```
 
-1.  **检查磁盘空间**：
+1. **检查磁盘空间**：
 
-```
-df -h ~
-```
+   ```bash
+   df -h ~
+   ```
 
 #### 升级时注意
 
-1.  **使用–force参数**：
+1. **使用 `--force` 参数**：
 
-```
-npm install -g openclaw@2026.3.2 --force
-```
+   ```bash
+   npm install -g openclaw@2026.3.2 --force
+   ```
 
-1.  **运行doctor修复**：
+1. **运行 `doctor` 修复**：
 
-```
-openclaw doctor --fix
-```
+   ```bash
+   openclaw doctor --fix
+   ```
 
-1.  **检查Gateway状态**：
+1. **检查 `Gateway` 状态**：
 
-```
-openclaw gateway status
-```
+   ```bash
+   openclaw gateway status
+   ```
 
-1.  **查看日志**：
+1. **查看日志**：
 
-```
-tail -f ~/.openclaw/logs/gateway.log
-```
+   ```bash
+   tail -f ~/.openclaw/logs/gateway.log
+   ```
 
 #### 升级后验证
 
-1.  **检查版本号**：
+1. **检查版本号**：
 
-```
-openclaw --version
-```
+   ```bash
+   openclaw --version
+   ```
 
-1.  **测试Gateway连接**：
+1. **测试 `Gateway` 连接**：
 
-```
-openclaw channels status
-```
+   ```bash
+   openclaw channels status
+   ```
 
-1.  **验证插件功能**：
+1. **验证插件功能**：
 
-```
-openclaw plugins list
-```
+   ```bash
+   openclaw plugins list
+   ```
 
-1.  **测试频道连接**：
+1. **测试频道连接**：
 
-+   发布送测试消息
+   + 发送测试消息
+   + 验证 AI 回复
+   + 检查 `Skills` 功能
 
-+   验证AI回复
+1. **检查 API 消耗**：
 
-+   检查Skills功能
+   ```bash
+   openclaw stats api
+   ```
 
-1.  **检查API消耗**：
+### 已知问题版本警告
 
-```
-openclaw stats api
-```
+#### 2026.2.12 版本问题
 
-### 已知访问题版本警告
 
-#### 2026.2.12 版本访问题
 
-不推荐使用 2026.2.12 版本，该版本存在严重 bug：
+# OpenClaw 版本升级指南
 
-**访问题描述**：
+## 重要版本警告
 
-+   Session 文件路径验证逻辑错误
+不推荐使用 `2026.2.12` 版本，该版本存在严重 bug：
 
-+   导致 heartbeat 功能失败
+### 问题描述
 
-+   导致 Telegram/飞书消息处理异常
+- `Session` 文件路径验证逻辑错误
+- 导致 `heartbeat` 功能失败
+- 导致 Telegram/飞书消息处理异常
+- 错误信息：`Session file path must be within sessions directory`
 
-+   错误信息：Session file path must be within sessions directory
+### 影响范围
 
-**影响范围**：
+- ❌ `Heartbeat` 功能完全不可用
+- ❌ Telegram bot 无法响应消息
+- ❌ 飞书 bot 可能无法正常回复
+- ✅ 网页版不受影响
 
-+   ❌ Heartbeat 功能完全不可用
+### 官方 Issue
 
-+   ❌ Telegram bot 无法响应消息
+- [Issue #15141](https://github.com/openclaw/openclaw/issues/15141)
+- 状态：已确认，等待修复
 
-+   ❌ 飞书 bot 可能无法正常回复
+### 解决方案
 
-+   ✅ 网页版不受影响
+1. 不要升级到 `2026.2.12`
+1. 如果已升级，回退到 `2026.3.2`：
 
-**官方 Issue**：
+   ```
+   openclaw gateway stop
+   npm uninstall -g openclaw
+   npm install -g openclaw@2026.3.2 --force
+   openclaw doctor --fix
+   openclaw gateway restart
+   ```
 
-+   [Issue #15141](https://github.com/openclaw/openclaw/issues/15141)
+### 推荐做法
 
-+   状态：已确认，等待修复
-
-**解决方案**：
-
-1.  **不要升级到 2026.2.12**
-
-1.  如果已升级，回退到 2026.3.2：
-
-```
-openclaw gateway stop
-npm uninstall -g openclaw
-npm install -g openclaw@2026.3.2 --force
-openclaw doctor --fix
-openclaw gateway restart
-```
-
-**推荐做法**：
-
-+   使用 2026.3.2 版本（当前最稳定）
-
-+   等待 2026.2.13+ 版本修复后再升级
-
-+   关注官方 GitHub Issues 获取最新信息
+- 使用 `2026.3.2` 版本（当前最稳定）
+- 等待 `2026.2.13+` 版本修复后再升级
+- 关注官方 GitHub Issues 获取最新信息
 
 ---
 
-### 升级时间建议
+## 升级时间建议
 
-**推荐升级时机**：
+### 推荐升级时机
 
-+   🌙 晚上或周末（使用量低）
+- 🌙 晚上或周末（使用量低）
+- 📅 每月检查一次更新
+- 🐛 发布 Bug 时及时升级
+- 🔒 安全更新立即升级
 
-+   📅 每月检查一次更新
+### 不推荐升级时机
 
-+   🐛 发布现Bug时及时升级
+- ❌ 工作日高峰期
+- ❌ 重要任务进行中
+- ❌ 网络不稳定时
+- ❌ 没有备份时
 
-+   🔒 安全更新立即升级
-
-**不推荐升级时机**：
-
-+   ❌ 工作日高峰期
-
-+   ❌ 重要任务进行中
-
-+   ❌ 网络不稳定时
-
-+   ❌ 没有备份时
-
-### 自动更新（可选）
+## 自动更新（可选）
 
 如果想自动检查更新，可以设置定时任务。
 
-**macOS/Linux**：
+### macOS/Linux
 
 ```
-# 编辑crontab
-crontab -e# 添**加**每**周**检查更新（周日凌晨2点）
+# 编辑 crontab
+crontab -e
+# 添加每周检查更新（周日凌晨2点）
 0 2 * * 0 /usr/local/bin/openclaw doctor --check-updates
 ```
 
-**Windows**： 使用任务计划程序创建定时任务。
+### Windows
 
-### 版本发布布说明
+使用任务计划程序创建定时任务。
 
-查看每个版本的更新内内容：
+## 版本发布说明
+
+查看每个版本的更新内容：
 
 ```
-# 访问GitHub发布布页面
+# 访问GitHub发布页面
 https://github.com/openclaw/openclaw/releases
 
 # 或使用命令行
 curl -s https://api.github.com/repos/openclaw/openclaw/releases/latest
 ```
 
-### 升级成本估算
+## 升级成本估算
 
-### 升级检查清单
+## 升级检查清单
 
-升级前：
+### 升级前
 
-+   备份配置目附录
+- 备份配置目录
+- 记录当前版本
+- 检查磁盘空间
+- 选择合适的升级时间
 
-+   记附录当前版本
+### 升级中
 
-+   检查磁盘空间
+- 停止 `Gateway` 服务
+- 卸载旧版本
+- 安装新版本（使用 `--force`）
+- 运行 `openclaw doctor` 修复
+- 重启 `Gateway`
 
-+   选择合适的升级时间
+### 升级后
 
-升级中：
+- 验证版本号
+- 测试 `Gateway` 连接
+- 验证插件功能
+- 测试频道连接
+- 检查日志无错误
 
-+   停止Gateway服务
+## 升级支持
 
-+   卸载旧版本
+如果升级遇到问题：
 
-+   安装新版本（使用–force）
+1. 查看日志：
 
-+   运行doctor修复
+   ```
+   tail -f ~/.openclaw/logs/gateway.log
+   ```
 
-+   重启Gateway
+1. 运行诊断：
 
-升级后：
+   ```
+   openclaw doctor
+   ```
 
-+   验证版本号
+1. 查看官方文档：
 
-+   测试Gateway连接
+   ```
+   https://docs.openclaw.ai/
+   ```
 
-+   验证插件功能
+1. 加入社区：
 
-+   测试频道连接
+   - GitHub Issues
+   - Discord 社区
+   - 飞书群组
 
-+   检查日志无错误
-
-### 升级支持
-
-如果升级遇到访问题：
-
-1.  **查看日志**：
-
-```
-tail -f ~/.openclaw/logs/gateway.log
-```
-
-1.  **运行诊断**：
-
-```
-openclaw doctor
-```
-
-1.  **查看官方文档**：
-
-```
-https://docs.openclaw.ai/
-```
-
-1.  **加入社区**：
-
-+   GitHub Issues
-
-+   Discord社区
-
-+   飞书群组
-
-### 升级案例：2026.2.1-zh.3 → 2026.3.2
+## 升级案例：`2026.2.1-zh.3` → `2026.3.2`
 
 以下是一次真实的升级案例，供参考。
 
-**升级背景**：
+### 升级背景
 
-+   原版本：2026.2.1-zh.3（中文版）
+- 原版本：`2026.2.1-zh.3`（中文版）
+- 目标版本：`2026.3.2`（推荐稳定版）
+- 升级原因：获取新功能和性能优化
 
-+   目标版本：2026.3.2（推荐稳定版）
+### 升级过程
 
-+   升级原因：获取新功能和性能优化
+1. 备份配置：
 
-**升级过程**：
+   ```
+   cp -r ~/.openclaw ~/.openclaw.backup-20260213
+   ```
 
-1.  **备份配置**：
+1. 停止 `Gateway`：
 
-```
-cp -r ~/.openclaw ~/.openclaw.backup-20260213
-```
+   ```
+   openclaw gateway stop
+   ```
 
-1.  **停止Gateway**：
+1. 卸载旧版本：
 
-```
-openclaw gateway stop
-```
+   ```
+   npm uninstall -g openclaw
+   ```
 
-1.  **卸载旧版本**：
+1. 安装新版本：
 
-```
-npm uninstall -g openclaw
-```
+   ```
+   npm install -g openclaw@2026.3.2 --force
+   ```
 
-1.  **安装新版本**：
+1. 修复配置：
 
-```
-npm install -g openclaw@2026.3.2 --force
-```
+   ```
+   openclaw doctor --fix
+   ```
 
-1.  **修复配置**：
+1. 重启 `Gateway`：
 
-```
-openclaw doctor --fix
-```
+   ```
+   openclaw gateway restart
+   ```
 
-1.  **重启Gateway**：
+1. 验证升级：
 
-```
-openclaw gateway restart
-```
+   ```
+   openclaw --version  # 显示：2026.3.2
+   openclaw gateway status  # 显示：running
+   ```
 
-1.  **验证升级**：
+### 升级结果
 
-```
-openclaw --version  # 显示：2026.3.2
-openclaw gateway status  # 显示：running
-```
+- ✅ 升级成功
+- ✅ 配置自动迁移
+- ✅ `Gateway` 运行正常
+- ✅ 所有功能正常
 
-**升级结果**：
+### 遇到的问题
 
-+   ✅ 升级成功
+- `npm install` 报错 `EEXIST` → 使用 `--force` 解决
 
-+   ✅ 配置自动迁移
-
-+   ✅ Gateway运行正常
-
-+   ✅ 所有功能正常
-
-**遇到的访问题**：
-
-+   npm install报错EEXIST → 使用–force解决
-
-**总耗时**：约5分钟
-
----
+**总耗时**：约 5 分钟
 
 ## 本章节小结
 
 通过本章节，你应该已经：
 
-✅ 了解了云端部署和本地部署的区别
-
-✅ 完成了OpenClaw的安装（云端或本地）
-
-✅ 配置了API（推荐国产大模型）
-
-✅ 验证了安装是否成功
-
-✅ 学会了如何升级OpenClaw
+- ✅ 了解了云端部署和本地部署的区别
+- ✅ 完成了 `OpenClaw` 的安装（云端或本地）
+- ✅ 配置了 API（推荐国产大模型）
+- ✅ 验证了安装是否成功
+- ✅ 学会了如何升级 `OpenClaw`
 
 ## 实战练习
 
-1.  完成OpenClaw安装（云端或本地）
-
-1.  配置至少一个API（推荐DeepSeek或Kimi）
-
-1.  发布送第一条测试消息
-
-1.  验证AI是否正常回复
-
-1.  检查当前版本，如有更新可尝试升级
+1. 完成 `OpenClaw` 安装（云端或本地）
+1. 配置至少一个 API（推荐 DeepSeek 或 Kimi）
+1. 发送第一条测试消息
+1. 验证 AI 是否正常回复
+1. 检查当前版本，如有更新可尝试升级

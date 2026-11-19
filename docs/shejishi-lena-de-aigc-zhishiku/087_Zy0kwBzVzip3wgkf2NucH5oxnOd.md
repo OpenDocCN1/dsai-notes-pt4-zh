@@ -1,8 +1,9 @@
+
 # 更多音频平台
 
 > 来源：[https://aigclena.feishu.cn/docx/GpAQdqd27oFIAyxar6ocMFrQngh](https://aigclena.feishu.cn/docx/GpAQdqd27oFIAyxar6ocMFrQngh)
 
-# Qwen3-TTS
+## Qwen3-TTS
 
 2025.9.22
 
@@ -12,7 +13,7 @@ Qwen3-TTS 正式发布，这款全新文本转语音模型支持多音色、多�
 
 [twitter-video-1280x720-video1 (17).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GvG7bFty0oHRrtxuONzcgTGanJh)
 
-# 阶跃
+## 阶跃
 
 阶跃（Step Audio）近日推出了1300亿参数的语音模型
 
@@ -24,9 +25,9 @@ Qwen3-TTS 正式发布，这款全新文本转语音模型支持多音色、多�
 
 [6387548862534836701565044.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rq73bXOmOoION0xXMMucQR6lnwh)
 
-# Google V2A
+## Google V2A
 
-V2A是什么
+### V2A是什么
 
 Runway前脚刚发布Gen-3Alpha，Google后脚就跟了个王炸。
 
@@ -38,7 +39,7 @@ Runway前脚刚发布Gen-3Alpha，Google后脚就跟了个王炸。
 
 从Google Deepmind官网发布的Blog上看，V2A技术会采用视频像素和文本提示来生成与底层视频同步的音频波形。
 
-Demo视频
+### Demo视频
 
 ![](img/03de680a6f4d81f46969aa3b1300ee3e.png)
 
@@ -96,9 +97,9 @@ Demo视频
 
 汽车打滑声、发动机轰鸣声、天使般的电子音乐
 
-# Hedra
+## Hedra
 
-## AI 平台Hedra推出5 大重磅功能
+### AI 平台Hedra推出5 大重磅功能
 
 2024.11.16
 
@@ -110,6 +111,6 @@ Demo视频
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/3fce165c1917b0b56cd57be7034d1634.png)

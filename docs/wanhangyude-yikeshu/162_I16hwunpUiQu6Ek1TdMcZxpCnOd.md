@@ -1,3 +1,4 @@
+
 # 机会成本思维模型
 
 > 来源：[https://my.feishu.cn/docx/MQikdxiXXoSpGAx7sCTcenAMneh](https://my.feishu.cn/docx/MQikdxiXXoSpGAx7sCTcenAMneh)

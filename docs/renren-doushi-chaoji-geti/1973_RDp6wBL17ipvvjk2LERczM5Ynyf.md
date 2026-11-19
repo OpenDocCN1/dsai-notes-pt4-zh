@@ -1,10 +1,9 @@
+
 # 2023-10-13不一样的 AGI 黑客松！Founder Park x Zilliz x 智谱 AI 联合发起！
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/GS3ddzEwDouVBgxFJaHcMkp2nod](https://xuqiwei1986.feishu.cn/docx/GS3ddzEwDouVBgxFJaHcMkp2nod)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/d0JjTVobhHnVWehmRb-56A)q.com/s/d0JjTVob...
-
->
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/d0JjTVobhHnVWehmRb-56A)q.com/s/d0JjTVob...
 
 Founder Park 极客公园 2023-09-11 18:02 发表于 北京
 

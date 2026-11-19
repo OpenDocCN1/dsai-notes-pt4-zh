@@ -1,3 +1,4 @@
+
 # MCP 蓝图：从头开始构建自定义 MCP 客户端
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/AhTtd0fRro5x7Oxu1cbcI29Mnlg](https://v11enp9ok1h.feishu.cn/docx/AhTtd0fRro5x7Oxu1cbcI29Mnlg)
@@ -24,13 +25,13 @@
 
 到本部分结束时，我们将对以下内容有具体的了解：
 
-+   如何构建自定义 MCP 客户端，而不依赖于 Cursor 或 Claude 等预构建的解决方案。
++ 如何构建自定义 MCP 客户端，而不依赖于 Cursor 或 Claude 等预构建的解决方案。
 
-+   完整的 MCP 生命周期在实际中是什么样的。
++ 完整的 MCP 生命周期在实际中是什么样的。
 
-+   通过实际集成揭示了 MCP 作为客户端-服务器架构的真正本质。
++ 通过实际集成揭示了 MCP 作为客户端-服务器架构的真正本质。
 
-+   通过实际操作说明 MCP 与传统 API 和函数调用的区别。
++ 通过实际操作说明 MCP 与传统 API 和函数调用的区别。
 
 与往常一样，一切都将通过直观的示例和代码来辅助。
 
@@ -48,13 +49,13 @@
 
 每个 MCP 客户端管理与单个 MCP 服务器的一对一连接。如果您的主机应用连接到多个服务器，它将实例化多个客户端实例，每个服务器一个。客户端负责以下任务：
 
-+   发送适当的 MCP 请求
++ 发送适当的 MCP 请求
 
-+   监听响应或通知
++ 监听响应或通知
 
-+   处理错误或超时
++ 处理错误或超时
 
-+   确保遵守协议规则
++ 确保遵守协议规则
 
 它本质上是您应用程序内的 MCP 协议驱动程序。
 
@@ -66,13 +67,13 @@
 
 在我们的实施过程中，该客户将：
 
-+   连接到 MCP 服务器。
++ 连接到 MCP 服务器。
 
-+   将用户查询转发给 LLM。
++ 将用户查询转发给 LLM。
 
-+   处理模型发出的工具调用。
++ 处理模型发出的工具调用。
 
-+   将最终响应返回给用户。
++ 将最终响应返回给用户。
 
 我们将使用 Python 来实现，并详细介绍每个步骤。
 
@@ -86,66 +87,66 @@ uv add mcp asyncio
 
 为了保持一致，我们将使用上一部分中相同的示例服务器代码进行演示：
 
-以下是我们将要使用的服务器设置（创建server.py文件并添加此代码）：
+以下是我们将要使用的服务器设置（创建`server.py`文件并添加此代码）：
 
 ```
 from fastmcp import FastMCP
 
 # Initialize the MCP server
-mcp = FastMCP(&quot;Sample Server&quot;)
+mcp = FastMCP("Sample Server")
 
 # Define a tool to get weather information
 @mcp.tool()
-def get_weather(location: str) -&gt; str:
-    &quot;&quot;&quot;Get the current weather for a specified location.&quot;&quot;&quot;
+def get_weather(location: str) -> str:
+    """Get the current weather for a specified location."""
     # mockup tool
-    return f&quot;Weather in {location}: Sunny, 72°F&quot;
+    return f"Weather in {location}: Sunny, 72°F"
 
 # Define a calculator tool
 @mcp.tool()
-def calculate(expression: str) -&gt; float:
-    &quot;&quot;&quot;Calculate the result of a mathematical expression.&quot;&quot;&quot;
+def calculate(expression: str) -> float:
+    """Calculate the result of a mathematical expression."""
     try:
         return eval(expression)
     except Exception as e:
-        return f&quot;Error calculating expression: {str(e)}&quot;
+        return f"Error calculating expression: {str(e)}"
 
 # Define a currency converter tool
 @mcp.tool()
-def convert_currency(amount: float, from_currency: str, to_currency: str) -&gt; str:
-    &quot;&quot;&quot;Convert amount from one currency to another.&quot;&quot;&quot;
-    # This is a simplified example - in reality, you&#x27;d want to use real exchange rates
+def convert_currency(amount: float, from_currency: str, to_currency: str) -> str:
+    """Convert amount from one currency to another."""
+    # This is a simplified example - in reality, you'd want to use real exchange rates
     rates = {
-        &quot;USD&quot;: 1.0,
-        &quot;EUR&quot;: 0.85,
-        &quot;GBP&quot;: 0.73,
-        &quot;JPY&quot;: 110.0,
-        &quot;INR&quot;: 83.0
+        "USD": 1.0,
+        "EUR": 0.85,
+        "GBP": 0.73,
+        "JPY": 110.0,
+        "INR": 83.0
     }
     if from_currency not in rates or to_currency not in rates:
-        return f&quot;Unsupported currency pair: {from_currency} to {to_currency}&quot;
+        return f"Unsupported currency pair: {from_currency} to {to_currency}"
 
     converted = amount * (rates[to_currency] / rates[from_currency])
-    return f&quot;{amount} {from_currency} = {converted:.2f} {to_currency}&quot;
+    return f"{amount} {from_currency} = {converted:.2f} {to_currency}"
 
 
 # Run the server
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     mcp.run()
 ```
 
 在上面的代码中，我们用两个工具创建了一个 MCP 服务器：
 
-+   get_weather，为了简单起见，它只返回一个虚拟响应，但我们可以通过集成天气 API 使其变得实用。
++ `get_weather`，为了简单起见，它只返回一个虚拟响应，但我们可以通过集成天气 API 使其变得实用。
 
-+   calculate，计算数学表达式的结果。
++ `calculate`，计算数学表达式的结果。
 
-+   convert_currency，将给定金额从一种货币转换为另一种货币。
++ `convert_currency`，将给定金额从一种货币转换为另一种货币。
 
-要在传输下运行此服务器 sse ，只需将该 mcp.run() 行更改为：
+要在传输下运行此服务器 `sse` ，只需将该 `mcp.run()` 行更改为：
 
 ```
-mcp.run(transport=&quot;sse&quot;, host=&quot;127.0.0.1&quot;, port=8000)
+mcp.run(transport="sse", host="127.0.0.1", port=8000)
 ```
 
 此传输用于远程或长期运行的服务，通常通过网络或云。

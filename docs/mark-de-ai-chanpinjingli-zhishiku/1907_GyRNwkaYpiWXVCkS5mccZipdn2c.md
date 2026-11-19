@@ -1,30 +1,29 @@
-# 极越CEO夏一平被员工围堵，极越汽车的现状如何？
-
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/B9kSdMSruoyqQAxU15rc5oP1n5f](https://qqs7y1hozd1.feishu.cn/docx/B9kSdMSruoyqQAxU15rc5oP1n5f)
 
 # 【光年日报】2024.12.13周五
 
-# Mark的AI产品经理知识库——互联网前沿资讯推送！
+## Mark的AI产品经理知识库——互联网前沿资讯推送！
 
-######### 极越CEO夏一平被员工围堵，极越汽车的现状如何？
+> 来源：[`https://qqs7y1hozd1.feishu.cn/docx/B9kSdMSruoyqQAxU15rc5oP1n5f`](https://qqs7y1hozd1.feishu.cn/docx/B9kSdMSruoyqQAxU15rc5oP1n5f)
 
-######### AI音乐战火升级！三路国产大军全面对决Suno
+### 极越CEO夏一平被员工围堵，极越汽车的现状如何？
 
-######### [英伟达中国发布“关于近日 NVIDIA 对中国市](https://qqs7y1hozd1.feishu.cn/wiki/GyRNwkaYpiWXVCkS5mccZipdn2c#share-HOmadDLjLosOufxQFGbcL4QNnag)场断供的不实传闻”的声明：中国是重要市场
+### AI音乐战火升级！三路国产大军全面对决Suno
 
-######### [12 月 15 日起，个人养老金制度推开至全国，将对普通人带来](https://qqs7y1hozd1.feishu.cn/wiki/GyRNwkaYpiWXVCkS5mccZipdn2c#share-FzfzdTOvboFRdTxrOeAcLvFsnGg)哪些影响？与以往养老金制度相比有何变化？
+### [英伟达中国发布“关于近日 NVIDIA 对中国市场断供的不实传闻”的声明：中国是重要市场](https://qqs7y1hozd1.feishu.cn/wiki/GyRNwkaYpiWXVCkS5mccZipdn2c#share-HOmadDLjLosOufxQFGbcL4QNnag)
 
-######### 淘宝双12：90后00后消费占比超50%，创下新高
+### [12 月 15 日起，个人养老金制度推开至全国，将对普通人带来哪些影响？与以往养老金制度相比有何变化？](https://qqs7y1hozd1.feishu.cn/wiki/GyRNwkaYpiWXVCkS5mccZipdn2c#share-FzfzdTOvboFRdTxrOeAcLvFsnGg)
+
+### 淘宝双12：90后00后消费占比超50%，创下新高
 
 > 欢迎加入社群
 
 ![](img/8981dbae4e7133ae8eb345560f39e17e.png)
 
-# 今日热点 💎
+## 今日热点 💎
 
-## 💡极越CEO夏一平被员工围堵，极越汽车的现状如何？
+### 💡极越CEO夏一平被员工围堵，极越汽车的现状如何？
 
-知乎 | [www.zhihu.com](https://www.zhihu.com/question/6601821283)（⬅️原文直达）
+知乎 | [`www.zhihu.com`](https://www.zhihu.com/question/6601821283)（⬅️原文直达）
 
 ![](img/6591c1b25c6006d7831b01760038ca47.png)
 
@@ -34,17 +33,17 @@
 
 12月11日下午，极越汽车召开了一场内部会议。据《财经》报道，极越首席执行官夏一平表示，目前公司遭遇现金流挑战，正和股东充分沟通，想办法共渡难关；上个月员工社保暂时无法及时支付，对此表示抱歉。据《财新》报道，今年10月百度派财务团队去极越尽调，结果发现极越面临高达70亿元的财务窟窿。
 
-## 💡AI音乐战火升级！三路国产大军全面对决Suno
+### 💡AI音乐战火升级！三路国产大军全面对决Suno
 
-人人都是产品经理 |https://www.woshipm.com/aigc/6155488.html（⬅️原文直达）
+人人都是产品经理 | `https://www.woshipm.com/aigc/6155488.html`（⬅️原文直达）
 
 ![](img/ebd0a2d02f545b7942f2c5e5a03ac276.png)
 
 随着国际产品Suno的V4版本发布，AI音乐创作进入了一个新的阶段，能够生成更长、更丰富的音乐作品。本文将带您了解国内三路大军——字节跳动的海绵音乐、昆仑万维的天工SkyMusic和趣丸科技的天谱乐——如何凭借自身的技术积累和创新应用，与全球顶级AI音乐产品展开激烈竞争。
 
-## 💡英伟达中国发布“关于近日 NVIDIA 对中国市场断供的不实传闻”的声明：中国是重要市场
+### 💡英伟达中国发布“关于近日 NVIDIA 对中国市场断供的不实传闻”的声明：中国是重要市场
 
-IT之家 https://www.ithome.com/0/817/227.htm（⬅️原文直达）
+IT之家 `https://www.ithome.com/0/817/227.htm`（⬅️原文直达）
 
 ![](img/cdf984eadf2cb1ed2a3356540af63626.png)
 
@@ -52,9 +51,9 @@ IT之家 https://www.ithome.com/0/817/227.htm（⬅️原文直达）
 
 中国是 NVIDIA 的重要市场。NVIDIA 秉持以客为尊的初衷，将持续为中国客户提供最优质、高效的产品与服务。
 
-## 💡12 月 15 日起，个人养老金制度推开至全国，将对普通人带来哪些影响？与以往养老金制度相比有何变化？
+### 💡12 月 15 日起，个人养老金制度推开至全国，将对普通人带来哪些影响？与以往养老金制度相比有何变化？
 
-知乎| https://www.zhihu.com/question/6647159558（⬅️原文直达）
+知乎| `https://www.zhihu.com/question/6647159558`（⬅️原文直达）
 
 ![](img/41233ddd3a2c86457d640f8c177d5922.png)
 
@@ -78,9 +77,9 @@ IT之家 https://www.ithome.com/0/817/227.htm（⬅️原文直达）
 
 又多一个养老金来源、作为基本养老保险的补充
 
-## 💡淘宝双12：90后00后消费占比超50%，创下新高
+### 💡淘宝双12：90后00后消费占比超50%，创下新高
 
-电商报 |https://www.dsb.cn/news/01jex4j83jygy8qbqt2a63dgrw（⬅️原文直达）
+电商报 | `https://www.dsb.cn/news/01jex4j83jygy8qbqt2a63dgrw`（⬅️原文直达）
 
 ![](img/725f12702b070f952c84791ef43017c7.png)
 

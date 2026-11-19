@@ -1,3 +1,4 @@
+
 # 机器学习进阶
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/ObetddO4Fo6T4zx8qUVcPiCJndh](https://v11enp9ok1h.feishu.cn/docx/ObetddO4Fo6T4zx8qUVcPiCJndh)
@@ -16,9 +17,9 @@
 
 **无监督学习算法**：
 
-+   **K-means 聚类**：通过聚类中心将数据分组。
++   `K-means` 聚类：通过聚类中心将数据分组。
 
-+   **主成分分析（PCA）**：用于降维，提取数据的主成分。
++   主成分分析（`PCA`）：用于降维，提取数据的主成分。
 
 每种算法都有其适用的场景，在实际应用中，可以根据数据的特征（如是否有标签、数据的维度等）来选择最合适的机器学习算法。
 
@@ -30,41 +31,41 @@
 
 线性回归是一种用于回归问题的算法，它通过学习输入特征与目标值之间的线性关系，来预测一个连续的输出。
 
-**应用场景****：**预测房价、股票价格等。
+**应用场景：**预测房价、股票价格等。
 
 线性回归的目标是找到一个最佳的线性方程：
 
 ![](img/8e9452ba1ba3c60d334e9bfadb23b55c.png)
 
-+   y 是预测值（目标值）。
++   `y` 是预测值（目标值）。
 
-+   x(1)，x(2)，x(n) 是输入特征。
++   `x(1)`、`x(2)`、`x(n)` 是输入特征。
 
-+   w(1)，w(2)，w(n)是待学习的权重（模型参数）。
++   `w(1)`、`w(2)`、`w(n)` 是待学习的权重（模型参数）。
 
-+   b 是偏置项
++   `b` 是偏置项
 
 ![](img/30ba52660d053ca89f64263b191acb66.png)
 
-接下来我们使用 sklearn 进行简单的房价预测：
+接下来我们使用 `sklearn` 进行简单的房价预测：
 
-## 实例
+#### 实例
 
-```
+```python
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
 # 假设我们有一个简单的房价数据集
 data = {
-    &#x27;面积&#x27;: [50, 60, 80, 100, 120],
-    &#x27;房价&#x27;: [150, 180, 240, 300, 350]
+    '面积': [50, 60, 80, 100, 120],
+    '房价': [150, 180, 240, 300, 350]
 }
 df = pd.DataFrame(data)
 
 # 特征和标签
-X = df[[&#x27;面积&#x27;]]
-y = df[&#x27;房价&#x27;]
+X = df[['面积']]
+y = df['房价']
 
 # 数据分割
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -76,7 +77,7 @@ model.fit(X_train, y_train)
 # 预测
 y_pred = model.predict(X_test)
 
-print(f&quot;预测的房价: {y_pred}&quot;)
+print(f"预测的房价: {y_pred}")
 ```
 
 输出结果为：
@@ -91,17 +92,19 @@ print(f&quot;预测的房价: {y_pred}&quot;)
 
 逻辑回归通过学习输入特征与类别之间的关系，来预测一个类别标签。
 
-**应用场景****：**垃圾邮件分类、疾病诊断（是否患病）。
+**应用场景：**垃圾邮件分类、疾病诊断（是否患病）。
 
 逻辑回归的输出是一个概率值，表示样本属于某一类别的概率。
 
-通常使用 Sigmoid 函数：
+通常使用 `Sigmoid` 函数：
 
 ![](img/898589f9c95ec771bd320f2a8cab6bfb.png)
 
-使用逻辑回归进行二分类任务:
+使用逻辑回归进行二分类任务：
 
-```
+#### 实例
+
+```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -127,7 +130,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # 评估模型
-print(f&quot;分类准确率: {accuracy_score(y_test, y_pred):.2f}&quot;)
+print(f"分类准确率: {accuracy_score(y_test, y_pred):.2f}")
 ```
 
 输出结果为：
@@ -142,11 +145,11 @@ print(f&quot;分类准确率: {accuracy_score(y_test, y_pred):.2f}&quot;)
 
 **应用场景：**文本分类、人脸识别等。
 
-使用 SVM 进行鸢尾花分类任务：
+使用 `SVM` 进行鸢尾花分类任务：
 
-## 实例
+#### 实例
 
-```
+```python
 from sklearn.svm import SVC
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -161,14 +164,14 @@ y = iris.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # 训练 SVM 模型
-model = SVC(kernel=&#x27;linear&#x27;)
+model = SVC(kernel='linear')
 model.fit(X_train, y_train)
 
 # 预测
 y_pred = model.predict(X_test)
 
 # 评估模型
-print(f&quot;SVM 分类准确率: {accuracy_score(y_test, y_pred):.2f}&quot;)
+print(f"SVM 分类准确率: {accuracy_score(y_test, y_pred):.2f}")
 ```
 
 输出结果为：
@@ -185,9 +188,9 @@ SVM 分类准确率: 1.00
 
 使用决策树进行分类任务：
 
-## 实例
+#### 实例
 
-```
+```python
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -209,7 +212,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # 评估模型
-print(f&quot;决策树分类准确率: {accuracy_score(y_test, y_pred):.2f}&quot;)
+print(f"决策树分类准确率: {accuracy_score(y_test, y_pred):.2f}")
 ```
 
 输出结果为：
@@ -222,15 +225,15 @@ print(f&quot;决策树分类准确率: {accuracy_score(y_test, y_pred):.2f}&quot
 
 ### K-means 聚类（K-means Clustering）
 
-K-means 是一种基于中心点的聚类算法，通过不断调整簇的中心点，使每个簇中的数据点尽可能靠近簇中心。
+`K-means` 是一种基于中心点的聚类算法，通过不断调整簇的中心点，使每个簇中的数据点尽可能靠近簇中心。
 
 **应用场景：**客户分群、市场分析、图像压缩。
 
-使用 K-means 进行客户分群:
+使用 `K-means` 进行客户分群：
 
-## 实例
+#### 实例
 
-```
+```python
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
@@ -246,24 +249,23 @@ model.fit(X)
 y_kmeans = model.predict(X)
 
 # 可视化聚类结果
-plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap=&#x27;viridis&#x27;)
+plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='viridis')
 plt.show()
 ```
 
 输出的图如下所示：
 
-
 ### 主成分分析（PCA）
 
-PCA 是一种降维技术，它通过线性变换将数据转换到新的坐标系中，使得大部分的方差集中在前几个主成分上。
+`PCA` 是一种降维技术，它通过线性变换将数据转换到新的坐标系中，使得大部分的方差集中在前几个主成分上。
 
 **应用场景：**图像降维、特征选择、数据可视化。
 
-使用 PCA 降维并可视化高维数据:
+使用 `PCA` 降维并可视化高维数据：
 
-## 实例
+#### 实例
 
-```
+```python
 from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
@@ -278,8 +280,8 @@ pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X)
 
 # 可视化结果
-plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, cmap=&#x27;viridis&#x27;)
-plt.title(&#x27;PCA of Iris Dataset&#x27;)
+plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, cmap='viridis')
+plt.title('PCA of Iris Dataset')
 plt.show()
 ```
 

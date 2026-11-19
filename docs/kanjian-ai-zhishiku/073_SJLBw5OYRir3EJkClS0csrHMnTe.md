@@ -1,71 +1,48 @@
+
 # 小说推文工具
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/ZL5ddwANMoy7XUxRuNGcojMUnvc](https://jlqyxzzvbk.feishu.cn/docx/ZL5ddwANMoy7XUxRuNGcojMUnvc)
 
-# 一站式小说推文创作平台
+## 一站式小说推文创作平台
 
-## 白日梦
+### 白日梦
 
-https://aibrm.com/
+`https://aibrm.com/`
 
-## 极虎漫剪
+### 极虎漫剪
 
-https://tiger.easyartx.com/landing
+`https://tiger.easyartx.com/landing`
 
-# 独立工具
+## 独立工具
 
-## 文案生成
+### 文案生成
 
-chatgpt
+chatgpt：`https://chatgpt.com/`
 
-https://chatgpt.com/
+Deepseek：`https://www.deepseek.com/`
 
-Deepseek
+Gemini：`https://gemini.google.com/`
 
-https://www.deepseek.com/
+通义千问：`https://chat.qwen.ai/`
 
-Gemini
+### 图像生成
 
-https://gemini.google.com/
+Midjourney：`https://www.midjourney.com/`
 
-通义千问
+即梦：`https://jimeng.jianying.com/`
 
-https://chat.qwen.ai/
+GPT图像：`https://aiautomedia.com/zh/image`
 
-## 图像生成
+SD：本地部署或者在线：`https://www.liblib.art/`
 
-Midjourney
+### 图片转视频
 
-https://www.midjourney.com/
+即梦：`https://jimeng.jianying.com/`
 
-即梦
+通义万相：`https://tongyi.aliyun.com/wanxiang/`
 
-https://jimeng.jianying.com/
+SD：本地部署或者在线：`https://www.liblib.art/`
 
-GPT图像
+### 视频剪辑
 
-https://aiautomedia.com/zh/image
-
-SD
-
-本地部署或者在线：https://www.liblib.art/
-
-## 图片转视频
-
-即梦
-
-https://jimeng.jianying.com/
-
-通义万相
-
-https://tongyi.aliyun.com/wanxiang/
-
-SD
-
-本地部署或者在线：https://www.liblib.art/
-
-## 视频剪辑
-
-剪映
-
-https://www.capcut.cn/
+剪映：`https://www.capcut.cn/`

@@ -1,16 +1,17 @@
+
 # 人工智能视觉：基于OpenCV的人脸识别技术
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TdLkdiJAuo36RJxqDBUcz5hWnFd](https://qqs7y1hozd1.feishu.cn/docx/TdLkdiJAuo36RJxqDBUcz5hWnFd)
 
 ## 一、OpenCV简介
 
-OpenCV 的全称是 Open Source Computer Vision Library，是一个跨平台的计算机视觉库。OpenCV 是由英特尔公司发起并参与开发，以 BSD 许可证授权发行，可以在商业和研究领域中免费使用。OpenCV 可用于开发实时的图像处理、计算机视觉以及模式识别程序。该程序库也可以使用英特尔公司的 IPP 进行加速处理。
+`OpenCV` 的全称是 `Open Source Computer Vision Library`，是一个跨平台的计算机视觉库。`OpenCV` 是由英特尔公司发起并参与开发，以 `BSD` 许可证授权发行，可以在商业和研究领域中免费使用。`OpenCV` 可用于开发实时的图像处理、计算机视觉以及模式识别程序。该程序库也可以使用英特尔公司的 `IPP` 进行加速处理。
 
-OpenCV 用 C++语言编写，它的主要接口也是 C++语言，但是依然保留了大量的 C 语言接口。该库也有大量的 Python、Java and MATLAB/OCTAVE（版本 2.5）的接口。这些语言的 API 接口函数可以通过在线文档获得。如今也提供对于 C#、Ch、Ruby、GO 的支持。
+`OpenCV` 用 `C++` 语言编写，它的主要接口也是 `C++` 语言，但是依然保留了大量的 `C` 语言接口。该库也有大量的 `Python`、`Java` 和 `MATLAB/OCTAVE`（版本 `2.5`）的接口。这些语言的 `API` 接口函数可以通过在线文档获得。如今也提供对于 `C#`、`Ch`、`Ruby`、`GO` 的支持。
 
 ### 1. 安装 OpenCV 模块
 
-OpenCV 已经支持 python 模块，直接使用 pip 就可以进行安装，命令如下：
+`OpenCV` 已经支持 `python` 模块，直接使用 `pip` 就可以进行安装，命令如下：
 
 ```
 pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
@@ -18,22 +19,22 @@ pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple some-packa
 
 ### 2. OpenCV 基本使用
 
-**读取图片**
+#### 读取图片
 
-显示图像是 OpenCV 最基本的操作之一，imshow()函数可以实现该操作。如果使用过其他 GUI 框架背景，就会很自然第调用 imshow()来显示一幅图像。imshow()函数有两个参数：显示图像的帧名称以及要显示的图像本身。直接调用 imshow()函数图像确实会显示，但随即会消失。要保证图片一直在窗口上显示，要通过 waitKey()函数。waitKey()函数的参数为等待键盘触发的时间，单位为毫秒，其返回值是-1（表示没有键被按下）
+显示图像是 `OpenCV` 最基本的操作之一，`imshow()`函数可以实现该操作。如果使用过其他 GUI 框架背景，就会很自然地调用 `imshow()`来显示一幅图像。`imshow()`函数有两个参数：显示图像的帧名称以及要显示的图像本身。直接调用 `imshow()`函数图像确实会显示，但随即会消失。要保证图片一直在窗口上显示，要通过 `waitKey()`函数。`waitKey()`函数的参数为等待键盘触发的时间，单位为毫秒，其返回值是 `-1`（表示没有键被按下）
 
-**【示例】读取图片**
+#### 【示例】读取图片
 
 ```
 import cv2 as cv
 print(cv.__version__)  # 打印OpenCV版本
 
 # 加载图片
-img = cv.imread(&quot;1.png&quot;)
+img = cv.imread("1.png")
 # 打印图像类型
 print(type(img))
 print(img)
-cv.imshow(&quot;image&quot;, img)
+cv.imshow("image", img)
 # 等待时间, 毫米级, 0表示按任意键终止
 cv.waitKey(0)
 cv.destroyAllWindows()
@@ -43,74 +44,74 @@ cv.destroyAllWindows()
 
 ![](img/1d05b0f04fba115d33396cb43bbfb7dd.png)
 
-**图片灰度转换**
+#### 图片灰度转换
 
-OpenCV 中有数百种关于在不同色彩空间之间转换的方法。当前，在计算机视觉中有三种常用的色彩空间：灰度、BGR、以及 HSV（Hue，Saturation，Value）。
+`OpenCV` 中有数百种关于在不同色彩空间之间转换的方法。当前，在计算机视觉中有三种常用的色彩空间：灰度、`BGR`、以及 `HSV`（`Hue`，`Saturation`，`Value`）。
 
-+   灰度色彩空间是通过去除彩色信息来将其转换成灰阶，灰度色彩空间对中间处理特别有效，比如人脸识别。
++ 灰度色彩空间是通过去除彩色信息来将其转换成灰阶，灰度色彩空间对中间处理特别有效，比如人脸识别。
 
-+   BGR 及蓝、绿、红色彩空间，每一个像素点都由一个三元数组来表示，分别代表蓝、绿、红三种颜色。网页开发者可能熟悉另一个与之相似的颜色空间：RGB 它们只是颜色顺序上不同。
++ `BGR` 及蓝、绿、红色彩空间，每一个像素点都由一个三元数组来表示，分别代表蓝、绿、红三种颜色。网页开发者可能熟悉另一个与之相似的颜色空间：`RGB` 它们只是颜色顺序上不同。
 
-+   HSV，H（Hue）是色调，S（Saturation）是饱和度，V（Value）表示黑暗的程度（或光谱另一端的明亮程度）。
++ `HSV`，`H`（`Hue`）是色调，`S`（`Saturation`）是饱和度，`V`（`Value`）表示黑暗的程度（或光谱另一端的明亮程度）。
 
-**灰度转换的作用就是：**转换成灰度的图片的计算强度得以降低。
+灰度转换的作用就是：转换成灰度的图片的计算强度得以降低。
 
-**【示例】将图片灰度**
+#### 【示例】将图片灰度
 
 ```
 # 灰色显示
 import cv2 as cv
 
-src = cv.imread(&#x27;1.png&#x27;)
-cv.imshow(&#x27;input image&#x27;, src)
+src = cv.imread('1.png')
+cv.imshow('input image', src)
 # cv2 读取图片的通道是 BGR（蓝绿红）
 # PIL 读取图片的通道是 RGB
 gray_img = cv.cvtColor(src, code=cv.COLOR_BGR2GRAY)
-cv.imshow(&#x27;gray_image&#x27;, gray_img)
+cv.imshow('gray_image', gray_img)
 cv.waitKey(0)
 cv.destroyAllWindows()
 # 保存图片
-cv.imwrite(&#x27;gray_lena.jpg&#x27;, gray_img)
+cv.imwrite('gray_lena.jpg', gray_img)
 ```
 
 ![](img/4df4710a6fa78fa24636343cabe74195.png)
 
-**修改图片尺寸****
+#### 修改图片尺寸
 
-【示例】修改图片尺**寸
+#### 【示例】修改图片尺寸
 
 ```
 import cv2 as cv
 
-img = cv.imread(&#x27;1.png&#x27;)
-cv.imshow(&#x27;input image&#x27;, img)
+img = cv.imread('1.png')
+cv.imshow('input image', img)
 # 修改图片的尺寸
 # resize_img=cv.resize(img,dsize=(110,160))
 resize_img = cv.resize(img, dsize=(400, 360))
 print(resize_img.shape)
-cv.imshow(&#x27;resize_img&#x27;, resize_img)
+cv.imshow('resize_img', resize_img)
 # 如果键盘输入的是 q 时候 退出
 while True:
-    if ord(&#x27;q&#x27;) == cv.waitKey(0):
+    if ord('q') == cv.waitKey(0):
         break
 cv.destroyAllWindows()
 ```
 
 ![](img/52503bde16cc4059531005766cff0f06.png)
 
-**画图**
+#### 画图
 
-OpenCV 的强大之处的一个体现就是其可以对图片进行任意编辑，处理。 下面的这个函数最后一个参数指定的就是画笔的大小。
+`OpenCV` 的强大之处的一个体现就是其可以对图片进行任意编辑，处理。 下面的这个函数最后一个参数指定的就是画笔的大小。
 
 ```
 import cv2 as cv
 
-img = cv.imread(&#x27;1.png&#x27;)
+img = cv.imread('1.png')
 # 画矩形
 x, y, w, h = 50, 50, 80, 80
 cv.rectangle(img, (x, y, x + w, y + h), color=(0, 255, 0), thickness=2)  # color=BGR
 cv.circle(img, center=(x + w // 2, y + h // 2), radius=w // 2, color=(0, 0, 255), thickness=2)
-cv.imshow(&#x27;result image&#x27;, img)
+cv.imshow('result image', img)
 cv.waitKey(0)
 cv.destroyAllWindows()
 ```
@@ -125,25 +126,25 @@ cv.destroyAllWindows()
 
 因此，提取出图像的细节对产生稳定分类结果和跟踪结果很有用。这些提取的结果被称为特征，专业的表述为：从图像数据中提取特征。虽然任意像素都可以能影响多个特征，但特征应该比像素少得多。两个图像的相似程度可以通过它们对应特征的欧氏距离来度量。
 
-Haar 特征是一种用于实现实时人脸跟踪的特征。每个 Haar 特征都描述了相邻图像区域对比模式。例如，边、顶点和细线都能生成具有判别性的特征。
+`Haar` 特征是一种用于实现实时人脸跟踪的特征。每个 `Haar` 特征都描述了相邻图像区域对比模式。例如，边、顶点和细线都能生成具有判别性的特征。
 
 #### 获取 Haar 级联数据
 
-进入 OpenCV 官网，下载你需要的版本即可。
+进入 `OpenCV` 官网，下载你需要的版本即可。
 
-由于 OpenCV 支持好多平台，比如 Windows, Android, Maemo, FreeBSD, OpenBSD, iOS, Linux 和 Mac OS，一般初学者都是用 windows，点击 Windows。
+由于 `OpenCV` 支持好多平台，比如 `Windows`、`Android`、`Maemo`、`FreeBSD`、`OpenBSD`、`iOS`、`Linux` 和 `Mac OS`，一般初学者都是用 `windows`，点击 `Windows`。
 
-然后双击下载的文件，进行安装，实质就是解压一下，解压完出来一个文件夹，其他什么也没发生。安装完后的目录结构如下。其中 build 是 OpenCV 使用时要用到的一些库文件，而 sources 中则是 OpenCV 官方为我们提供的一些 demo 示例源码。
+然后双击下载的文件，进行安装，实质就是解压一下，解压完出来一个文件夹，其他什么也没发生。安装完后的目录结构如下。其中 `build` 是 `OpenCV` 使用时要用到的一些库文件，而 `sources` 中则是 `OpenCV` 官方为我们提供的一些 `demo` 示例源码。
 
-在 sources 的一个文件夹 data/haarcascades。该文件夹包含了所有 OpenCV 的人脸检测的XML 文件，这些可用于检测静止图像、视频和摄像头所得到图像中的人脸。
+在 `sources` 的一个文件夹 `data/haarcascades`。该文件夹包含了所有 `OpenCV` 的人脸检测的 `XML` 文件，这些可用于检测静止图像、视频和摄像头所得到图像中的人脸。
 
 ### 2. 使用 OpenCV 进行人脸检测
 
-#### **静态图像中人脸检测**
+#### 静态图像中人脸检测
 
 人脸检测首先是加载图像并检测人脸，这也是最基本的一步。为了使所得到的结果有意义，可在原始图像的人脸周围绘制矩形框。
 
-**【示例】识别图片中的人脸**
+#### 【示例】识别图片中的人脸
 
 ```
 import cv2 as cv
@@ -152,14 +153,14 @@ def face_detect_demo():
     # 将图片转换为灰度图片
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     # 加载特征数据
-    face_detector = cv.CascadeClassifier(r&#x27;D:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml&#x27;)
+    face_detector = cv.CascadeClassifier(r'D:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml')
     faces = face_detector.detectMultiScale(gray)
     for x, y, w, h in faces:
         cv.rectangle(img, (x, y), (x + w, y + h), color=(0, 255, 0), thickness=2)
-    cv.imshow(&#x27;result&#x27;, img)
+    cv.imshow('result', img)
 
 # 加载图片
-img = cv.imread(&#x27;lena.jpg&#x27;)
+img = cv.imread('lena.jpg')
 face_detect_demo()
 cv.waitKey(0)
 cv.destroyAllWindows()
@@ -167,7 +168,7 @@ cv.destroyAllWindows()
 
 ![](img/8957048e8091439985518bed4099ca81.png)
 
-**【示例】识别图片中多张人脸**
+#### 【示例】识别图片中多张人脸
 
 ```
 import cv2 as cv
@@ -176,16 +177,16 @@ def face_detect_demo():
     # 将图片灰度
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     # 加载特征数据
-    face_detector = cv.CascadeClassifier(&#x27;D:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml&#x27;)
+    face_detector = cv.CascadeClassifier('D:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml')
     faces = face_detector.detectMultiScale(gray, scaleFactor=1.01)
     for x, y, w, h in faces:
         print(x, y, w, h)
         cv.rectangle(img, (x, y), (x + w, y + h), color=(0, 0, 255), thickness=2)
     # 显示图片
-    cv.imshow(&#x27;result&#x27;, img)
+    cv.imshow('result', img)
 
 # 加载图片
-img = cv.imread(&#x27;face3.jpg&#x27;)
+img = cv.imread('face3.jpg')
 # 调用人脸检测方法
 face_detect_demo()
 cv.waitKey(0)
@@ -196,9 +197,9 @@ cv.destroyAllWindows()
 
 ### 3. 视频中的人脸检测
 
-**视频是一张一张图片组成**的，在视频的帧上重复这个过程就能完成视频中的人脸检测。
+视频是一张一张图片组成的，在视频的帧上重复这个过程就能完成视频中的人脸检测。
 
-【示例】识别视频中人脸
+#### 【示例】识别视频中人脸
 
 ```
 import cv2 as cv
@@ -208,22 +209,22 @@ def face_detect_demo(img):
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     # 加载特征数据
     face_detector = cv.CascadeClassifier(
-        &#x27;D:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml&#x27;)
+        'D:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml')
     faces = face_detector.detectMultiScale(gray)
     for x, y, w, h in faces:
         cv.rectangle(img, (x, y), (x + w, y + h), color=(0, 0, 255), thickness=2)
         cv.circle(img, center=(x + w // 2, y + h // 2), radius=(w // 2), color=(0, 255, 0), thickness=2)
-    cv.imshow(&#x27;result&#x27;, img)
+    cv.imshow('result', img)
 
 # 读取视频
-cap = cv.VideoCapture(&#x27;video.mp4&#x27;)
+cap = cv.VideoCapture('video.mp4')
 while True:
     flag, frame = cap.read()
-    print(&#x27;flag:&#x27;, flag, &#x27;frame.shape:&#x27;, frame.shape)
+    print('flag:', flag, 'frame.shape:', frame.shape)
     if not flag:
         break
     face_detect_demo(frame)
-    if ord(&#x27;q&#x27;) == cv.waitKey(10):
+    if ord('q') == cv.waitKey(10):
         break
 cv.destroyAllWindows()
 cap.release()
@@ -231,27 +232,27 @@ cap.release()
 
 ## 三、人脸识别
 
-人脸检测是 OpenCV 的一个很不错的功能，它是人脸识别的基础。什么是人脸识别呢？
+人脸检测是 `OpenCV` 的一个很不错的功能，它是人脸识别的基础。什么是人脸识别呢？
 
-其实就是一个程序能识别给定图像或视频中的人脸。实现这一目标的方法之一是用一系列分好类的图像来“训练”程序，并基于这些图像来进行识别。这就是 OpenCV 及其人脸识别模块进行人脸识别的过程。
+其实就是一个程序能识别给定图像或视频中的人脸。实现这一目标的方法之一是用一系列分好类的图像来“训练”程序，并基于这些图像来进行识别。这就是 `OpenCV` 及其人脸识别模块进行人脸识别的过程。
 
-人脸识别模块的另外一个重要特征是：每个识别都具有转置信（confidence）评分，因此可在实际应用中通过对其设置阈值来进行筛选。
+人脸识别模块的另外一个重要特征是：每个识别都具有转置信（`confidence`）评分，因此可在实际应用中通过对其设置阈值来进行筛选。
 
 为了对这些样本进行人脸识别，必须要在包含人脸的样本图像上进行人脸识别。这是一个学习的过程，但并不像自己提供的图像那样令人满意。
 
-**训练数据**
+### 训练数据
 
-有了数据，需要将这些样本图像加载到人脸识别算法中。所有的人脸识别算法在它们的train()函数中都有两个参数：图像数组和标签数组。这些标签表示进行识别时候某人人脸的ID，因此根据 ID 可以知道被识别的人是谁。要做到这一点，将在「trainer/」目录中保存为.yml文件。
+有了数据，需要将这些样本图像加载到人脸识别算法中。所有的人脸识别算法在它们的 `train()` 函数中都有两个参数：图像数组和标签数组。这些标签表示进行识别时候某人人脸的 `ID`，因此根据 `ID` 可以知道被识别的人是谁。要做到这一点，将在 `trainer/` 目录中保存为 `.yml` 文件。
 
-在使用 Python 3 &OpenCV 3.0.0 进行人脸识别训练时发现异常：
+在使用 `Python 3` & `OpenCV 3.0.0` 进行人脸识别训练时发现异常：
 
-AttributeError: ‘module’ object has no attribute ‘LBPHFaceRecognizer_create’OpenCV，需要安装 opencv-contrib-python 模块，直接使用 pip 就可以进行安装，命令如下：
+`AttributeError: ‘module’ object has no attribute ‘LBPHFaceRecognizer_create’` `OpenCV`，需要安装 `opencv-contrib-python` 模块，直接使用 `pip` 就可以进行安装，命令如下：
 
 ```
 pip install opencv-contrib-python
 ```
 
-**【示例】训练数据**
+#### 【示例】训练数据
 
 ```
 import os
@@ -267,42 +268,44 @@ def getImageAndLabels(path):
     imagePaths = [os.path.join(path, f) for f in os.listdir(path)]
     # 检测人脸
     face_detector = cv2.CascadeClassifier(
-        &#x27;D:/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml&#x27;)
+        'D:/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml')
 
     # 遍历列表中的图片
     for imagePath in imagePaths:
         # 打开图片
-        PIL_img = Image.open(imagePath).convert(&#x27;L&#x27;)
+        PIL_img = Image.open(imagePath).convert('L')
         # 将图像转换为数组
-        img_numpy = np.array(PIL_img, &#x27;uint8&#x27;)
+        img_numpy = np.array(PIL_img, 'uint8')
         faces = face_detector.detectMultiScale(img_numpy)
         # 获取每张图片的id
-        id = int(os.path.split(imagePath)[1].split(&#x27;.&#x27;)[0])
+        id = int(os.path.split(imagePath)[1].split('.')[0])
         for x, y, w, h in faces:
             facesSamples.append(img_numpy[y:y + h, x:x + w])
             ids.append(id)
     return facesSamples, ids
 
 
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     # 图片路径
-    path = &#x27;./data/jm/&#x27;
+    path = './data/jm/'
     # 获取图像数组和id标签数组
     faces, ids = getImageAndLabels(path)
     # 获取训练对象
     recognizer = cv2.face.LBPHFaceRecognizer_create()
     recognizer.train(faces, np.array(ids))
     # 保存文件
-    recognizer.write(&#x27;trainer/trainer.yml&#x27;)
+    recognizer.write('trainer/trainer.yml')
 ```
 
 ### 基于 LBPH 的人脸识别
 
+
+
 LBPH（Local Binary Pattern Histogram）将检测到的人脸分为小单元，并将其与模型中的对应单元进行比较，对每个区域的匹配值产生一个直方图。由于这种方法的灵活性，LBPH是唯一允许模型样本人脸和检测到的人脸在形状、大小上可以不同的人脸识别算法。
 
-调整后的区域中调用 predict()函数，该函数返回两个元素的数组：第一个元素是所识别个体的标签，第二个是置信度评分。所有的算法都有一个置信度评分阈值，置信度评分用来衡量所识别人脸与原模型的差距，0 表示完全匹配。可能有时不想保留所有的识别结果，则需要进一步处理，因此可用自己的算法来估算识别的置信度评分。LBPH 一个好的识别参考值要低于 50 ，任何高于 80 的参考值都会被认为是低的置信度评分。
+调整后的区域中调用 `predict()` 函数，该函数返回两个元素的数组：第一个元素是所识别个体的标签，第二个是置信度评分。所有的算法都有一个置信度评分阈值，置信度评分用来衡量所识别人脸与原模型的差距，0 表示完全匹配。可能有时不想保留所有的识别结果，则需要进一步处理，因此可用自己的算法来估算识别的置信度评分。LBPH 一个好的识别参考值要低于 50 ，任何高于 80 的参考值都会被认为是低的置信度评分。
 
-【示例】基于 LBPH 的人脸识别
+## 基于 LBPH 的人脸识别
 
 ```
 import cv2

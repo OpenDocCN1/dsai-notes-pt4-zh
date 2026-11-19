@@ -1,3 +1,4 @@
+
 # 澳门个人信息出境要求
 
 > 来源：[https://docs.feishu.cn/docx/KKODdvpCJobPNKxAcYtcrA4Un5d](https://docs.feishu.cn/docx/KKODdvpCJobPNKxAcYtcrA4Un5d)
@@ -8,7 +9,7 @@
 
 ![](img/1723a584b7b7c052c87bd5e08d136849.png)
 
-**-答2：**有出通知要求的 看下他们官网：**https://www.gpdp.gov.mo/zh_t**w/law_routine_3.html。不是所有的都要备案吧？
+**-答2：**有出通知要求的 看下他们官网：`https://www.gpdp.gov.mo/zh_tw/law_routine_3.html`。不是所有的都要备案吧？
 
 **-答3：**基本上服务器或云在大陆或香港，然后向澳门本地居民收集了信息，都需要。
 

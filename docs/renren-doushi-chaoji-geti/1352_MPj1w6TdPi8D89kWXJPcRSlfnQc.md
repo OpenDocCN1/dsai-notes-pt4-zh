@@ -1,10 +1,8 @@
+
 # 2023-02-16【百信银行】宣布接入百度类ChatGPT项目
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/C15JdHsL1omfUrxO38JccalFnDh](https://xuqiwei1986.feishu.cn/docx/C15JdHsL1omfUrxO38JccalFnDh)
-
-> 🔗 原文链接： h[ttps://baijiahao.b](https://baijiahao.baidu.com/s?id=1757942175313137438&wfr=spider&for=pc)aidu.com/s?id=17...
-
->
+> 🔗 原文链接：https://baijiahao.baidu.com/s?id=1757942175313137438&wfr=spider&for=pc
 
 百信银行宣布接入百度类ChatGPT项目 专家称银行业布局AI赛道前景可期
 
@@ -39,9 +37,3 @@
 “中国版ChatGPT在金融领域的应用仍处于起步阶段。”李国庆表示，目前，类ChatGPT项目仍有问题待解。例如，由于金融业的复杂性，类ChatGPT项目的成熟应用首先要解决数据隐私及数据安全等难题，此外，还存在着领域知识不完备、生成内容可解释性不够、不符合业务逻辑、存在偏见等问题，这些都是类ChatGPT项目在金融领域大规模应用前有待解决的问题。
 
 来源：证券日报
-
-举报/反馈
-
-大家都在搜
-
-[百信银行的ai发展路径 ](https://baidu.com/s?word=%E7%99%BE%E4%BF%A1%E9%93%B6%E8%A1%8C%E7%9A%84ai%E5%8F%91%E5%B1%95%E8%B7%AF%E5%BE%84&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百信银行的ai发展路径和模式 ](https://baidu.com/s?word=%E7%99%BE%E4%BF%A1%E9%93%B6%E8%A1%8C%E7%9A%84ai%E5%8F%91%E5%B1%95%E8%B7%AF%E5%BE%84%E5%92%8C%E6%A8%A1%E5%BC%8F&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百信银行AIBANK ](https://baidu.com/s?word=%E7%99%BE%E4%BF%A1%E9%93%B6%E8%A1%8CAIBANK&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百信银行数据分析 ](https://baidu.com/s?word=%E7%99%BE%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百信银行发展模式 ](https://baidu.com/s?word=%E7%99%BE%E4%BF%A1%E9%93%B6%E8%A1%8C%E5%8F%91%E5%B1%95%E6%A8%A1%E5%BC%8F&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百信银行上市了吗](https://baidu.com/s?word=%E7%99%BE%E4%BF%A1%E9%93%B6%E8%A1%8C%E4%B8%8A%E5%B8%82%E4%BA%86%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)

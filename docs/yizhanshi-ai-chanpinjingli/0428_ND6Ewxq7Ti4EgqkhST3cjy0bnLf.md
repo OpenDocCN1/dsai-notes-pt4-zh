@@ -1,4 +1,5 @@
-# TensorFlow 模型评估与监控
+
+# `TensorFlow` 模型评估与监控
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/VmRvdBDwPoPYynxjCY1c9j2tnXg](https://v11enp9ok1h.feishu.cn/docx/VmRvdBDwPoPYynxjCY1c9j2tnXg)
 
@@ -18,9 +19,9 @@
 
 ### 1.2 评估指标类型
 
-## 二、TensorFlow 评估工具
+## 二、`TensorFlow` 评估工具
 
-TensorFlow 提供了多种工具和方法来评估模型性能。
+`TensorFlow` 提供了多种工具和方法来评估模型性能。
 
 ### 2.1 内置评估指标
 
@@ -53,19 +54,19 @@ metrics = [
 
 ```
 model.compile(
- optimizer=&#x27;adam&#x27;,
- loss=&#x27;binary_crossentropy&#x27;,
- metrics=[&#x27;accuracy&#x27;, tf.keras.metrics.AUC()]
+    optimizer='adam',
+    loss='binary_crossentropy',
+    metrics=['accuracy', tf.keras.metrics.AUC()]
 )
 ```
 
-1.  使用 evaluate 方法评估
+1.  使用 `evaluate` 方法评估
 
 ## 实例
 
 ```
 test_loss, test_acc, test_auc = model.evaluate(
- test_images, test_labels, verbose=2
+    test_images, test_labels, verbose=2
 )
 ```
 
@@ -79,30 +80,30 @@ import tensorflow as tf
 @tf.function
 def custom_metric(y_true, y_pred):
     threshold = 0.5
-    y_pred = tf.cast(y_pred &gt; threshold, tf.float32)
+    y_pred = tf.cast(y_pred > threshold, tf.float32)
     # 计算准确率，而不仅仅是正例比例
     correct_predictions = tf.cast(tf.equal(y_true, y_pred), tf.float32)
     return tf.reduce_mean(correct_predictions)
 
 model.compile(
-    optimizer=&#x27;adam&#x27;,
-    loss=&#x27;binary_crossentropy&#x27;,
-    metrics=[custom_metric, &#x27;accuracy&#x27;]  # 可以同时保留标准准确率指标作为参考
+    optimizer='adam',
+    loss='binary_crossentropy',
+    metrics=[custom_metric, 'accuracy']  # 可以同时保留标准准确率指标作为参考
 )
 ```
 
 ## 三、模型监控与可视化
 
-### TensorBoard 集成
+### `TensorBoard` 集成
 
-TensorBoard 是 TensorFlow 的可视化工具，可以实时监控训练过程。
+`TensorBoard` 是 `TensorFlow` 的可视化工具，可以实时监控训练过程。
 
 ## 实例
 
 ```
 # 设置回调函数
 tensorboard_callback = tf.keras.callbacks.TensorBoard(
-    log_dir=&amp;#39;./logs&amp;#39;,
+    log_dir='./logs',
     histogram_freq=1,
     write_graph=True,
     write_images=True
@@ -117,7 +118,7 @@ model.fit(
 )
 ```
 
-启动 TensorBoard：
+启动 `TensorBoard`：
 
 ```
 tensorboard --logdir=./logs
@@ -154,7 +155,7 @@ for train, test in kfold.split(X, y):
     # 评估模型
     scores = model.evaluate(X[test], y[test])
     
-    print(f&#x27;Fold {fold_no} - {model.metrics_names[0]}: {scores[0]}&#x27;)
+    print(f'Fold {fold_no} - {model.metrics_names[0]}: {scores[0]}')
     fold_no += 1
 ```
 
@@ -174,9 +175,9 @@ conf_mat = confusion_matrix(test_labels, y_pred_classes)
 
 # 可视化
 plt.figure(figsize=(10, 8))
-sns.heatmap(conf_mat, annot=True, fmt=&#x27;d&#x27;)
-plt.xlabel(&#x27;Predicted&#x27;)
-plt.ylabel(&#x27;Actual&#x27;)
+sns.heatmap(conf_mat, annot=True, fmt='d')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
 plt.show()
 ```
 
@@ -186,11 +187,11 @@ plt.show()
 
 1.  **数据漂移检测**：监控输入数据分布变化
 
-1.  **概念漂移检测**：监控特征与目标关系变化
+2.  **概念漂移检测**：监控特征与目标关系变化
 
-1.  **性能衰减检测**：定期评估模型性能
+3.  **性能衰减检测**：定期评估模型性能
 
-1.  **异常输入检测**：识别异常输入样本
+4.  **异常输入检测**：识别异常输入样本
 
 ### 5.2 监控系统架构
 
@@ -202,15 +203,15 @@ plt.show()
 
 1.  在 MNIST 数据集上训练一个简单的 CNN 模型
 
-1.  实现以下评估功能：
+2.  实现以下评估功能：
 
 +   训练过程中的准确率和损失监控
 
 +   测试集上的混淆矩阵分析
 
-+   使用 TensorBoard 可视化训练过程
++   使用 `TensorBoard` 可视化训练过程
 
-1.  尝试实现自定义评估指标
+3.  尝试实现自定义评估指标
 
 ### 6.2 参考代码框架
 
@@ -222,15 +223,15 @@ from tensorflow.keras import layers
 
 # 1. 数据准备
 (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
-train_images = train_images.reshape((60000, 28, 28, 1)).astype(&#x27;float32&#x27;) / 255
-test_images = test_images.reshape((10000, 28, 28, 1)).astype(&#x27;float32&#x27;) / 255
+train_images = train_images.reshape((60000, 28, 28, 1)).astype('float32') / 255
+test_images = test_images.reshape((10000, 28, 28, 1)).astype('float32') / 255
 
 # 2. 模型构建
 model = tf.keras.Sequential([
-    layers.Conv2D(32, (3, 3), activation=&#x27;relu&#x27;, input_shape=(28, 28, 1)),
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
     layers.MaxPooling2D((2, 2)),
     layers.Flatten(),
-    layers.Dense(10, activation=&#x27;softmax&#x27;)
+    layers.Dense(10, activation='softmax')
 ])
 
 # 3. 编译模型（添加你选择的指标）

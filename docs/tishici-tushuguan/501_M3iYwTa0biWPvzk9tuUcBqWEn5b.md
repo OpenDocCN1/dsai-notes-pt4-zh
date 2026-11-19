@@ -1,3 +1,4 @@
+
 # 思维模型大师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/TF5xdgaKgoLIYPxw5p3cf02onvh](https://vxc3hj17dym.feishu.cn/docx/TF5xdgaKgoLIYPxw5p3cf02onvh)

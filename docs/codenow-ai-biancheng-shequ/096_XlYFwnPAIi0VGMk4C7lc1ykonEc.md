@@ -1,3 +1,4 @@
+
 # 基础流程介绍
 
 > 来源：[https://now.feishu.cn/docx/JRQ1d5dwOocBJXxeazFczHn3nTd](https://now.feishu.cn/docx/JRQ1d5dwOocBJXxeazFczHn3nTd)
@@ -28,7 +29,7 @@ Vibe Coding鼓励开发者首先捕捉产品的"氛围"——即产品应给用�
 
 最重要的是，完整的架构图比边做边想更胜一筹。它为开发提供了稳定框架，减少返工和重构，让产品各组件协调运作。就像建房前的设计图，让你提前发现并解决潜在问题，而不是墙已砌好才发现需要改动基础。
 
-如果你不知道如何驱动AI生[Mixlab AI 编程录播课程+实体资料（限时299元）](https://qwyofiv4bd3.feishu.cn/wiki/EYrIwgZlriIy8hkX73dcSPumnuc)高质量的产品架构图，不妨看一下我们的线上课程 。
+如果你不知道如何驱动AI生[Mixlab AI 编程录播课程+实体资料（限时299元）](https://qwyofiv4bd3.feishu.cn/wiki/EYrIwgZlriIy8hkX73dcSPumnuc)高质量的产品架构图，不妨看一下我们的线上课程。
 
 ## 用Lovable/V0/Bolt.new将架构秒变Demo
 
@@ -60,4 +61,4 @@ Vercel提供免费托管、自动SSL证书、全球CDN分发及持续部署功�
 
 上线后，集成Google Analytics等简单分析工具，了解用户交互情况，为后续迭代提供数据支持。记住，发布只是新旅程的开始，持续收集反馈才能让创意真正闪耀。
 
-如果你对Vibe Coding感兴趣，却是完全零基础的新[边做边学，即兴AI编程。在我们的AI编程训练营，你能学到什么？](https://qwyofiv4bd3.feishu.cn/wiki/B9jKwHnfkisdAmkv9qjcdm9qn4d)，不妨参加我们的"AI编程线下训练营" 。在这里，我们将手把手带你入门，2天内从零开始构建并发布你的第一个项目，让你立即掌握AI时代的创作技能。
+如果你对Vibe Coding感兴趣，却是完全零基础的新[边做边学，即兴AI编程。在我们的AI编程训练营，你能学到什么？](https://qwyofiv4bd3.feishu.cn/wiki/B9jKwHnfkisdAmkv9qjcdm9qn4d)，不妨参加我们的"AI编程线下训练营"。在这里，我们将手把手带你入门，2天内从零开始构建并发布你的第一个项目，让你立即掌握AI时代的创作技能。

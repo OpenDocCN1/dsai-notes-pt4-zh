@@ -1,3 +1,4 @@
+
 # 9.9 Replit 发布Replit Agent AI应用开发助手 0基础编程用户也能开发程序
 
 > 来源：[https://agijuejin.feishu.cn/docx/Q7aUdDW32oafknxceI2cG9T7nCd](https://agijuejin.feishu.cn/docx/Q7aUdDW32oafknxceI2cG9T7nCd)
@@ -12,7 +13,7 @@
 
 前沿技术瞭望官 丨阅读 [原文1](https://sourl.co/jxvveb) [原文2](https://sourl.co/wdZZfB)
 
-Replit 发布了一款实验性产品：Replit  Agent ，旨在帮助用户从零开始构建软件项目。它通过理解自然语言提示，使得任何技能水平的用户都能够更轻松地开发应用。Replit AI Agent 可以帮助你轻松开发应用程序。你只需要用普通的语言描述你想要的应用，AI 就会帮你自动处理复杂的步骤，比如设置开发环境、编写代码、甚至部署到网上。即使你不会编程，也可以快速创建应用。
+Replit 发布了一款实验性产品：Replit Agent ，旨在帮助用户从零开始构建软件项目。它通过理解自然语言提示，使得任何技能水平的用户都能够更轻松地开发应用。Replit AI Agent 可以帮助你轻松开发应用程序。你只需要用普通的语言描述你想要的应用，AI 就会帮你自动处理复杂的步骤，比如设置开发环境、编写代码、甚至部署到网上。即使你不会编程，也可以快速创建应用。
 
 ### 💡 这就翻车了？Reflection 70B遭质疑基模为Llama 3，作者：重新训练
 
@@ -97,17 +98,3 @@ Roblox在年度开发者大会上宣布推出基于AI的3D模型生成工具，�
 量子位 丨 [阅读原文](https://sourl.co/WqKnsg)
 
 中国科学院信息工程研究所、北京航空航天大学、合肥工业大学和美团等单位联合提出了一种名为AL-Ref-SAM 2的免训练多模态分割方法，结合GPT-4和SAM-2技术，实现了在无需训练的情况下达到与全监督方法相媲美的性能。该方法在多个基准数据集上进行了验证，尤其在Ref-YouTube-VOS和Ref-DAVIS17数据集上表现突出。
-
-###
-
-###
-
-###
-
-###
-
-###
-
-###
-
-###

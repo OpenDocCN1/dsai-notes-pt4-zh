@@ -1,3 +1,4 @@
+
 # 20251212-LiblibAl：一站式AI创意工坊，从生图到视频的无缝流水线
 
 > 来源：[https://aigcreative.feishu.cn/docx/UGUWdmRE7oop5rxfOZzccJ4Gnih](https://aigcreative.feishu.cn/docx/UGUWdmRE7oop5rxfOZzccJ4Gnih)
@@ -8,27 +9,27 @@
 
 甲方要个图，你得开一个工具；要个动态海报，你得换个工具跑视频；要是还得加点酷炫的粒子特效，好家伙，又得切到另一个软件里折腾。这一套下来，光是会员费就得交好几份，关键是工作流割裂，心累。
 
-**当时我就把手机掏**出来，给他们看了看我最近在LiblibAI上折腾的几个项目。他们看完都有点懵：“这都是在一个工具网站做出来的？”
+当时我就把手机掏出来，给他们看了看我最近在`LiblibAI`上折腾的几个项目。他们看完都有点懵：“这都是在一个工具网站做出来的？”
 
 ![](img/02428efbed50f76d189deb2f5994f0da.png)
 
-**没错，今天就直接**上干货，聊聊怎么用LiblibAI这个一站式的宝藏平台，把从做图、修图到生成视频、加特效这套流程，像流水线一样一次性搞定。
+没错，今天就直接上干货，聊聊怎么用`LiblibAI`这个一站式的宝藏平台，把从做图、修图到生成视频、加特效这套流程，像流水线一样一次性搞定。
 
-之前LiblibAI 2.0发布的时候，有做过简单的介绍，嗯，还是熟悉的配方。
+之前`LiblibAI` 2.0发布的时候，有做过简单的介绍，嗯，还是熟悉的配方。
 
 ![](img/b2a2bb51379e5e9da2f0f90f3726da57.png)
 
-特别是他们最近搞的那个年包会员，我算了一笔账，365天畅玩可灵全系模型，还有香蕉Pro、Seedream、F.2这些大神级模型随便用，这性价比，基本上就是要把我们的创作门槛给踩平了。
+特别是他们最近搞的那个年包会员，我算了一笔账，365天畅玩`可灵`全系模型，还有`香蕉Pro`、`Seedream`、`F.2`这些大神级模型随便用，这性价比，基本上就是要把我们的创作门槛给踩平了。
 
-LiblibAI网址入口：https://www.liblib.art
+`LiblibAI`网址入口：https://www.liblib.art
 
-我们一起来看看，最近又有哪些好玩的玩法？连Prompt（提示词）都给你们准备好了。
+我们一起来看看，最近又有哪些好玩的玩法？连`Prompt`（提示词）都给你们准备好了。
 
-# 01.尽情生图，各种模型应有尽有！
+## 01. 尽情生图，各种模型应有尽有！
 
 咱们先说最基础的——生图。
 
-来到生图界面，看到底部，它把最常用目前最火**的风格模板都给你准备好了**，这也是我最喜欢LiblibAI的一点，各个设计领域、各种创意的提示词&模板，真叫一个全。
+来到生图界面，看到底部，它把最常用目前最火的风格模板都给你准备好了，这也是我最喜欢`LiblibAI`的一点，各个设计领域、各种创意的提示词&模板，真叫一个全。
 
 ![](img/68645ec37eadabb4a6a452c4582bd62a.png)
 
@@ -42,11 +43,11 @@ LiblibAI网址入口：https://www.liblib.art
 
 以前做个产品海报，得搭棚子、调灯光，或者是到处找参考，找别人的提示词。现在？看上哪一个效果直接一键做同款，快速使用。
 
-**我在LiblibAI上选了最新**的Nano Banana Pro模型（即全能图片模型V2）和Seedream模型，只要把脑子里的画面描述出来，那个质感，真的绝了。
+我在`LiblibAI`上选了最新的`Nano Banana Pro`模型（即全能图片模型V2）和`Seedream`模型，只要把脑子里的画面描述出来，那个质感，真的绝了。
 
 产品海报：
 
-> Prompt：
+> `Prompt`：
 
 > Style Positioning: Minimalist high-end tech product poster, clean sophisticated commercial aesthetic Core Subject & Details A hand of East Asian skin tone (hyper-realistic skin texture, natural relaxed finger posture) holding an open charging case of HUNTER Open Earbuds Pro: Charging case: Soft light beige (warm light brown) matte finish, inner lining in warm brown suede texture; Earbuds: Matching light beige open-ear design, with sleek silver-white decorative details, subtle black "HUNTER" logo printed on the earbud body. Layout & Typography (Design Specification) Background: Pure clean white (maximizing negative space for product focus); Decorative text: Large translucent light gray "Pro" (modern sans-serif font, light soft visual weight) overlaid as a background layered element; Primary text (top area): Bold black sans-serif font — "HUNTER 开放式耳机 Pro" (upper line) + "舒适新声" (lower line); Brand logo: Top right corner with the HUNTER brand logo (sleek minimalist design, consistent with high-end tech brand tone); Secondary text (bottom area): Black sans-serif text — "HUNTER 开放式耳机 Pro". Aesthetic Structure Layout logic: Hierarchical typography (primary title > decorative background text > product subject > secondary text > brand logo), balanced visual weight to center the hand & earbuds case; Color palette: Soft warm neutral tones (light beige, warm brown, light gray) + black text + brand-accented logo tone, maintaining minimalist high-end tone; Textures: Matte charging case finish, soft suede inner lining, smooth metallic luster of earbuds, realistic skin texture. Lighting & Quality Soft shadowless studio lighting (even illumination, no harsh shadows), ultra-high definition, photorealistic details, sharp focus on product textures, clean crisp visual presentation.
 
@@ -56,16 +57,15 @@ LiblibAI网址入口：https://www.liblib.art
 
 下面我们来做一些好玩的，这个城市的美食：
 
-> Prompt：
+> `Prompt`：
 
-> Hyper-realistic digital food illustration of four iconic local delicacies from {这里填入城市名}, presented together on a single large, rustic artisan serving platter. The composition flows seamlessly across the platter from left to right, showcasing a culinary journey through the city's famous flavors.
+> Hyper-realistic digital food illustration of four iconic local delicacies from `{这里填入城市名}`, presented together on a single large, rustic artisan serving platter. The composition flows seamlessly across the platter from left to right, showcasing a culinary journey through the city's famous flavors.
 
-> The left side features [Signature Dish 1], with its glistening sauces and steaming ingredients gradually blending into the textures of [Signature Dish 2], then morphing into the rich, hearty elements of [Signature Dish 3], and finally transitioning into the vibrant colors and sweet details of [Signature Dish 4] on the far right. (AI should select four highly representative and diverse famous dishes from {City Name} for these slots.)
+> The left side features `[Signature Dish 1]`, with its glistening sauces and steaming ingredients gradually blending into the textures of `[Signature Dish 2]`, then morphing into the rich, hearty elements of `[Signature Dish 3]`, and finally transitioning into the vibrant colors and sweet details of `[Signature Dish 4]` on the far right. (AI should select four highly representative and diverse famous dishes from `{City Name}` for these slots.)
 
 > There are no visible dividing lines or separate bowls between the food items; garnishes, sauces, spices, and ingredients blend organically along the platter to create a unified, harmonious, and incredibly appetizing panorama. The food is mouth-watering, with visible steam, rich textures, and vibrant colors ("色香味俱全"). Cinematic food photography lighting, stunning details, 8k resolution, macro textures.
 
 长沙美食：
-
 
 北京美食：
 
@@ -73,9 +73,9 @@ LiblibAI网址入口：https://www.liblib.art
 
 很流行的九宫格分镜：
 
-> **Prompt: **
+> `Prompt:`
 
-> Analyze the input image. Generate a cohesive 3x3 grid "Cinematic Contact She**et". Row 1 (Con**text): Extreme Long Shot (Environment), Long Shot (Full body), Medi**um Long Sho**t. Row 2 (Action): Medium Shot, Medium Close-Up, Close-Up (Face). Row 3 (Details): Extreme Close-Up (Eyes/Texture), Low Angle (Heroic), High Angle (God's view). Constraint: Ensure strict consistency: Same character, same outfit, same lighting across all 9 panels. Realistic depth of field.
+> Analyze the input image. Generate a cohesive 3x3 grid "Cinematic Contact `Sheet`". Row 1 (`Context`): Extreme Long Shot (Environment), Long Shot (Full body), Medium Long Shot. Row 2 (Action): Medium Shot, Medium Close-Up, Close-Up (Face). Row 3 (Details): Extreme Close-Up (Eyes/Texture), Low Angle (Heroic), High Angle (God's view). Constraint: Ensure strict consistency: Same character, same outfit, same lighting across all 9 panels. Realistic depth of field.
 
 ![](img/ab5625055cc14f4deae84ec3694c492e.png)
 
@@ -83,14 +83,13 @@ LiblibAI网址入口：https://www.liblib.art
 
 一张图，可以延伸故事剧情，这对于分镜的学习，以及短视频的制作，都非常有帮助！
 
-
 ![](img/861c05f9c100cdfb3e357a43c6cfbdb9.png)
 
 还有，最近这种虚拟的裸眼3D的效果比较火，来看看：
 
-> 提示词来自 X @宝玉 老师：
+> 提示词来自 `X` @宝玉 老师：
 
-> An enormous L-shaped glasses-free 3D LED screen situated prominently at a bustling urban intersection, designed in an iconic architectural style reminiscent of Shinjuku in Tokyo or Taikoo Li in Chengdu. The screen displays a captivating glasses-free 3D animation featuring [scene description]. The characters and objects possess striking depth and appear to break through the screen’s boundaries, extending outward or floating vividly in mid-air. Under realistic daylight conditions, these elements cast lifelike shadows onto the screen’s surface and surrounding buildings. Rich in intricate detail and vibrant colors, the animation seamlessly integrates with the urban setting and the bright sky overhead.
+> An enormous L-shaped glasses-free 3D LED screen situated prominently at a bustling urban intersection, designed in an iconic architectural style reminiscent of Shinjuku in Tokyo or Taikoo Li in Chengdu. The screen displays a captivating glasses-free 3D animation featuring `[scene description]`. The characters and objects possess striking depth and appear to break through the screen’s boundaries, extending outward or floating vividly in mid-air. Under realistic daylight conditions, these elements cast lifelike shadows onto the screen’s surface and surrounding buildings. Rich in intricate detail and vibrant colors, the animation seamlessly integrates with the urban setting and the bright sky overhead.
 
 > scene description:
 
@@ -100,17 +99,17 @@ LiblibAI网址入口：https://www.liblib.art
 
 很有真实感，非常震撼，视觉效果很有冲击力。
 
-# 02.搞定人物一致性，这个大难题
+## 02. 搞定人物一致性，这个大难题
 
-做IP设计的同学肯定懂这种痛：画一张图容易，难的是让这个角色在不同场景里长得一模一样。
+做`IP`设计的同学肯定懂这种痛：画一张图容易，难的是让这个角色在不同场景里长得一模一样。
 
-这时候就得祭出**LiblibAI**上的神器——**香蕉Pro模型**。
+这时候就得祭出`LiblibAI`上的神器——`香蕉Pro`模型。
 
-这玩意儿简直是为IP设计而生的，请出出我的创意小猎人：
+这玩意儿简直是为`IP`设计而生的，请出出我的创意小猎人：
 
 ![](img/88694b212b35e2078edfe123cc375a31.png)
 
-简单试下表情包，IP角色保持得很不错，完全没问题！又可以上架一套表情包了~~
+简单试下表情包，`IP`角色保持得很不错，完全没问题！又可以上架一套表情包了~~
 
 ![](img/ded88c5b5eaa962568c40f69814959db.png)
 
@@ -126,11 +125,11 @@ LiblibAI网址入口：https://www.liblib.art
 
 你看，不管怎么换动作、换背景，人物的一致性都保持得非常好。
 
-# 03.让静态的图动起来
+## 03. 让静态的图动起来
 
 好了，图做完了，想要做成视频，让图片动起来，怎么办？
 
-在**LiblibAI里**，你只需要点一下**视频生成**，在资产库**里添加上面生成的图片，这里**接入了可灵（Kling）全系模型，这可是现在的视频生成顶流。
+在`LiblibAI`里，你只需要点一下`视频生成`，在资产库里添加上面生成的图片，这里接入了`可灵`（`Kling`）全系模型，这可是现在的视频生成顶流。
 
 ![](img/5e912ed3b44a7bf7cd8dfb7f551a6029.png)
 
@@ -154,7 +153,7 @@ LiblibAI网址入口：https://www.liblib.art
 
 [23877dc02b675b2b405409df2137c1d408438fb06d5dd30f3d85a37c47f192dc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tdt2b0nWMoVjVox16uRcnqIonte)
 
-# 04.给视频加点魔法特效
+## 04. 给视频加点魔法特效
 
 这还没完。
 
@@ -162,14 +161,15 @@ LiblibAI网址入口：https://www.liblib.art
 
 ![](img/eee859e14a8652c89402248d8eafa801.png)
 
-**Libl**ibAI最让我惊喜的是它不仅仅是生成，它还有视频特效功能。这不是简单的滤镜，而是真正的AI特效。比如我想我的宇航员小猎人加点“樱花消散”的粒子效果：
-
+`LiblibAI`最让我惊喜的是它不仅仅是生成，它还有视频特效功能。这不是简单的滤镜，而是真正的AI特效。比如我想我的宇航员小猎人加点“樱花消散”的粒子效果：
 
 [a817c92f7a674302e7bb280b584560a3f7bf41bb7d574a588d12f4e07510fba5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U2NQbHiI1ojXmTxNL72ctkiBnFf)
 
 还有这种漩涡运镜的效果，这运镜不要太丝滑~~
 
 ![](img/762eab92f9704f55fab06924ef5c71cb.png)
+
+
 
 [2702950759e97e0fb4438cf414dbfbf524508506a25eecfe52155afce2621c07.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4MdbGzRtoYD25x9sstcqznHnqg)
 
@@ -229,7 +229,7 @@ LiblibAI网址入口：https://www.liblib.art
 
 # 08.为什么我推荐LiblibAI？
 
-说**实话，市面上大模**型很多，但能把Nano Banana Pro、Seedream、F.2、可灵全系这些顶尖硬货全部塞进一个盒子里，并且让你在一个网页里就能完成“生图-修图-动效-视频-数字人”全流程的，LiblibAI确实是独一份。
+说实话，市面上大模型很多，但能把Nano Banana Pro、Seedream、F.2、可灵全系这些顶尖硬货全部塞进一个盒子里，并且让你在一个网页里就能完成“生图-修图-动效-视频-数字人”全流程的，LiblibAI确实是独一份。
 
 也就是两顿火锅钱，承包全年所有的AI创作需求。
 

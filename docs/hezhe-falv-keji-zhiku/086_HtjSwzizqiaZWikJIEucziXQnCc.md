@@ -1,16 +1,15 @@
+
 # 十二月｜December
 
 > 来源：[https://docs.feishu.cn/docx/CmN5d2VLKobjUZx7SUsck1fOnDe](https://docs.feishu.cn/docx/CmN5d2VLKobjUZx7SUsck1fOnDe)
 
----
+## 一、法律科技 / AI 融资动态
 
-# 一、法律科技 / AI 融资动态
-
-## 无代码法律自动化公司 Josef 完成新一轮融资
+### 无代码法律自动化公司 Josef 完成新一轮融资
 
 12 月 6 日，澳大利亚无代码法律自动化公司 Josef 宣布完成新一轮融资，融资金额没有披露，投资方为三家现有股东 OIF Ventures、Carthona Capital 和 The LegalTech Fund。Josef 在上一轮融资中筹集了约 345 万美元。
 
-## 谷歌再次出手！在线法律服务平台 Lawhive 完成 4000 万美元 A 轮融资
+### 谷歌再次出手！在线法律服务平台 Lawhive 完成 4000 万美元 A 轮融资
 
 12 月 5 日，Lawhive 宣布完成 4000 万美元 A 轮融资，Google Ventures（谷歌投资）和 TQ Ventures 共同领投，Balderton、Episode 1、Jigsaw 以及英超足球运动员 Harry Maguire 和 Reece James 跟投。
 
@@ -30,14 +29,14 @@ Lawhive 是一家英国的在线法律服务平台，由 Pierre Proner、Jaime V
 
 Google Ventures：
 
-Gradient Ventures：
-
 | 公司名称 | 所处赛道 | 融资轮次 |
 | --- | --- | --- |
 | Harvey | AI Agent | C 轮 |
 | Rocket Lawyer | 在线法律服务 | B 轮 |
 | Lawhive | 在线法律服务 | A 轮 |
 | Lawhive | 在线法律服务 | 种子轮 |
+
+Gradient Ventures：
 
 | 公司名称 | 所处赛道 | 融资轮次 |
 | --- | --- | --- |
@@ -54,35 +53,35 @@ Gradient Ventures：
 
 可以预见的是，随着新技术不断进步、客户降本需求扩大、市场竞争日趋激烈，法律科技必将发挥更大的作用。
 
-## AI 诉讼预测平台 Wexler AI 完成 140 万美元预种子轮融资
+### AI 诉讼预测平台 Wexler AI 完成 140 万美元预种子轮融资
 
 12 月 3 日，AI 诉讼预测平台 Wexler AI 宣布完成 140 万美元预种子轮融资，Myriad Venture Partners 领投，Tractable、Credit Kudos、ComplyAdvantage 和 Moonpig 跟投。Wexler AI 可以分析各种法律文件，帮助法律专业人士为诉讼制定案件策略，还可以根据提供的文件，提取信息并回答法律问题。
 
-## AI CLM 厂商 Pocketlaw 完成 500 万欧元新一轮融资
+### AI CLM 厂商 Pocketlaw 完成 500 万欧元新一轮融资
 
 12 月初，瑞典法律 AI 自动化公司 Pocketlaw 宣布完成近 500 万欧元的新一轮融资，Atomico 等现有投资者和一些新投资者参与，包括瑞典科技企业家、Kobalt Music Group 的创始人 Willard Ahdritz。
 
 Pocketlaw 利用 AI 技术，可以实现合同管理的自动化和扩展。本轮融资后，Pocketlaw 将加快其 AI 产品的开发和在欧洲的扩张。2022 年，Pocketlaw 获得了 1000 万欧元的 A 轮融资。
 
-# **二、法律科技并购动态**
+## 二、法律科技并购动态
 
-## Amicus Capital 收购客户接收服务软件服务商 Case Compass
+### Amicus Capital 收购客户接收服务软件服务商 Case Compass
 
 12 月 3 日，投资机构 Amicus Capital Group 宣布收购客户接收服务软件服务商 Case Compass。
 
-# **三、法律 AI 最新动态**
+## 三、法律 AI 最新动态
 
-## 澳大利亚的监管机构表示，律师只应将 AI 用于低端任务
+### 澳大利亚的监管机构表示，律师只应将 AI 用于低端任务
 
 12 月 6 日，澳大利亚新南威尔士州法律协会、西澳大利亚州法律实践委员会、维多利亚州法律服务委员会，联合发表一套共同原则，指导律师负责任和合乎道德地使用 AI。
 
-## 西班牙要求披露在法律服务相关数字平台中使用 AI 的情况
+### 西班牙要求披露在法律服务相关数字平台中使用 AI 的情况
 
 12 月 4 日，西班牙关于辩护权的第 5/2024 号组织法正式生效。
 
 这个法案根据《西班牙宪法》第 24 条，对作为基本法律保护措施的辩护权制定了全面规定，要求披露在法律服务相关数字平台中使用人工智能（AI）的情况，并强制公开 AI 系统如何提出建议或作出决策的信息。
 
-## [严监管态势下，企业合规经营都在关注四个问题｜免费获取法律体检报告](https://legalstudio.feishu.cn/wiki/Bi9Tw6Z4siYHEckSSegczchKnre?from=from_copylink)
+### 严监管态势下，企业合规经营都在关注四个问题｜免费获取法律体检报告
 
 当前监管日益严格，企业合规经营已成为发展的必然要求。众多企业因内部合规漏洞，在经营与声誉上遭受重创。据统计，我国民企数量庞大，但拥有法律风险防范能力的企业占比极低。高昂的传统法律服务成本，也让许多企业在合规之路上举步维艰。在此背景下，「如何有效建立企业合规体系」这一话题值得每一位企业管理者深思。
 
@@ -92,14 +91,14 @@ Pocketlaw 利用 AI 技术，可以实现合同管理的自动化和扩展。本
 
 > 了解更多：[严监管态势下，企业合规经营都在关注四个问题｜免费获取法律体检报告](https://legalstudio.feishu.cn/wiki/Bi9Tw6Z4siYHEckSSegczchKnre?from=from_copylink)
 
-# **四、法律 AI 市场教育**
+## 四、法律 AI 市场教育
 
-## 最新调查：偏见和不准确、缺乏培训教育，是人们采用 AI 技术的关键障碍
+### 最新调查：偏见和不准确、缺乏培训教育，是人们采用 AI 技术的关键障碍
 
 12 月 3 日，Linklaters、She Breaks the Law 和 Next 100 Years 公布了关于法律行业女性如何使用 AI 的调查结果。这份报告针对在法律行业工作的女性进行了一次在线调查，共收到了 90 名女性的回复。
 
 报告发现，人们在 AI 提高效率和生产力方面的潜力上达成了强烈的共识 —— 77% 的受访者表示，AI 正在对该行业产生“非常重大”的影响。然而，AI 技术在法律行业的落地上也存在着一些挑战。
 
-## 芝加哥大学新法律课程深入挖掘负责任地使用 AI
+### 芝加哥大学新法律课程深入挖掘负责任地使用 AI
 
 今年冬天，芝加哥大学法学院将提供《法律实践中的生成式 AI》课程，由法律研究公司 vLex 的首席战略官 Ed Walters 授课。此前，Ed Walters 与 Tanina Rostain 教授共同教授了乔治敦大学法律中心的《生成式 AI 和大型律师事务所》的课程，该课程让学生接触到使用生成式 AI来执行法律任务及其影响。

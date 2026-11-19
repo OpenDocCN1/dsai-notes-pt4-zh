@@ -1,20 +1,18 @@
+
 # 舆情分析Agent：AI 舆情 Agent
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Jqi6d8S3yoz6l3xDr9ccQiApn3c](https://qqs7y1hozd1.feishu.cn/docx/Jqi6d8S3yoz6l3xDr9ccQiApn3c)
 
-### **系统设计**
+## 系统设计
 
-+   原始网页存储库，这个库需要能支持海量数据，低成本，低延时写入。
-
-+   计算引擎在做数据处理时，可能还需要从存储库中获取一些元数据。
-
-+   除了实时的计算链路，对存量数据定期要做一些聚类。
-
-+   舆情的结果数据集有不同类的使用需求。对于重大舆情，需要做实时的预警。
++ 原始网页存储库，这个库需要能支持海量数据，低成本，低延时写入。
++ 计算引擎在做数据处理时，可能还需要从存储库中获取一些元数据。
++ 除了实时的计算链路，对存量数据定期要做一些聚类。
++ 舆情的结果数据集有不同类的使用需求。对于重大舆情，需要做实时的预警。
 
 ![](img/22598aa04ae323cf84e0f01284bd9a82.png)
 
-### 一次完整分析流程
+## 一次完整分析流程
 
 首先打开谷歌旗下的Google Antigrativy，谷歌旗下的 ide 编译器，输入提示词：
 
@@ -24,7 +22,9 @@
 
 ![](img/e53374730da02ed8876f8a6e3dec5455.png)
 
-### 项目代码结构树
+## 项目代码结构树
+
+
 
 ```
 BettaFish/
@@ -200,7 +200,9 @@ BettaFish/
 └── LICENSE                                 # GPL-2.0开源许可证
 ```
 
-他开始根据我们的需求来给我设计方案了，他分析完后会给你计划，但计划也需要用户这边来确认需要做选择的东西，cookie 这玩意好弄，直接手机登录网页版📕然后手动获取 cookie 然后输入到配置文件中就行了，关于大模型分析，我个人是建议先用地的 NLP 库进行基础的关键词统计，等没问题了再改用大模型也可以。
+
+
+他开始根据我们的需求来给我设计方案了，他分析完后会给你计划，但计划也需要用户这边来确认需要做选择的东西，`cookie` 这玩意好弄，直接手机登录网页版📕然后手动获取 `cookie` 然后输入到配置文件中就行了，关于大模型分析，我个人是建议先用地的 NLP 库进行基础的关键词统计，等没问题了再改用大模型也可以。
 
 ![](img/2923a1de62d84548cde005255dcd26a3.png)
 
@@ -208,9 +210,9 @@ BettaFish/
 
 ![](img/d828785673ea699d2e00e04056fbb3db.png)
 
-#### Agent配置参数
+### Agent配置参数
 
-每个Agent都有专门的配置文件，可根据需求调整，下面是部分示例：
+每个`Agent`都有专门的配置文件，可根据需求调整，下面是部分示例：
 
 ```
 # QueryEngine/utils/config.py
@@ -235,35 +237,35 @@ class Config:
 
 ![](img/4cfb29812dae9982a6844577ce2e1b85.png)
 
-#### 情感分析模型配置
+### 情感分析模型配置
 
 ```
 # InsightEngine/tools/sentiment_analyzer.py
 SENTIMENT_CONFIG = {
-    &#x27;model_type&#x27;: &#x27;multilingual&#x27;,     # 可选: &#x27;bert&#x27;, &#x27;multilingual&#x27;, &#x27;qwen&#x27;等
-    &#x27;confidence_threshold&#x27;: 0.8,      # 置信度阈值
-    &#x27;batch_size&#x27;: 32,                 # 批处理大小
-    &#x27;max_sequence_length&#x27;: 512,       # 最大序列长度
+    'model_type': 'multilingual',     # 可选: 'bert', 'multilingual', 'qwen'等
+    'confidence_threshold': 0.8,      # 置信度阈值
+    'batch_size': 32,                 # 批处理大小
+    'max_sequence_length': 512,       # 最大序列长度
 }
 ```
 
-### 接入不同的LLM模型
+## 接入不同的LLM模型
 
-支持任意openAI调用格式的LLM提供商，只需要在/config.py中填写对应的KEY、BASE_URL、MODEL_NAME即可。
+支持任意openAI调用格式的LLM提供商，只需要在`/config.py`中填写对应的`KEY`、`BASE_URL`、`MODEL_NAME`即可。
 
 > 什么是openAI调用格式？下面提供一个简单的例子：
 
 ```
 from openai import OpenAI
 
-client = OpenAI(api_key=&quot;your_api_key&quot;, 
-               base_url=&quot;https://aihubmix.com/v1&quot;)
+client = OpenAI(api_key="your_api_key", 
+               base_url="https://aihubmix.com/v1")
 
 response = client.chat.completions.create(
-   model=&quot;gpt-4o-mini&quot;,
+   model="gpt-4o-mini",
    messages=[
-       {&#x27;role&#x27;: &#x27;user&#x27;, 
-        &#x27;content&#x27;: &quot;推理模型会给市场带来哪些新的机会&quot;}
+       {'role': 'user', 
+        'content': "推理模型会给市场带来哪些新的机会"}
    ],
 )
 
@@ -279,46 +281,46 @@ print(complete_response)
 
 ![](img/6827df7587e1c1be73a4bb7a360690d8.png)
 
-将复制好的 cookie 复制到代码中的.env环境配置里面的cookie 变量里面去，就可以了。
+将复制好的`cookie`复制到代码中的`.env`环境配置里面的`cookie`变量里面去，就可以了。
 
 ![](img/e8cb34ed3659156340da334d5b3fde04.png)
 
-### 更改情感分析模型
+## 更改情感分析模型
 
-#### 多语言情感分析
+### 多语言情感分析
 
 ```
 cd SentimentAnalysisModel/WeiboMultilingualSentiment
-python predict.py --text &quot;This product is amazing!&quot; --lang &quot;en&quot;
+python predict.py --text "This product is amazing!" --lang "en"
 ```
 
-#### 小参数Qwen3微调
+### 小参数Qwen3微调
 
 ```
 cd SentimentAnalysisModel/WeiboSentiment_SmallQwen
-python predict_universal.py --text &quot;这次活动办得很成功&quot;
+python predict_universal.py --text "这次活动办得很成功"
 ```
 
-#### 基于BERT的微调模型
+### 基于BERT的微调模型
 
 ```
 # 使用BERT中文模型
 cd SentimentAnalysisModel/WeiboSentiment_Finetuned/BertChinese-Lora
-python predict.py --text &quot;这个产品真的很不错&quot;
+python predict.py --text "这个产品真的很不错"
 ```
 
-#### GPT-2 LoRA微调模型
+### GPT-2 LoRA微调模型
 
 ```
 cd SentimentAnalysisModel/WeiboSentiment_Finetuned/GPT2-Lora
-python predict.py --text &quot;今天心情不太好&quot;
+python predict.py --text "今天心情不太好"
 ```
 
-#### 传统机器学习方法
+### 传统机器学习方法
 
 ```
 cd SentimentAnalysisModel/WeiboSentiment_MachineLearning
-python predict.py --model_type &quot;svm&quot; --text &quot;服务态度需要改进&quot;
+python predict.py --model_type "svm" --text "服务态度需要改进"
 ```
 
 执行过程中自动写代码，然后自动开始测试，没想到效果还挺好的，竟然真出来了数据。
@@ -327,7 +329,7 @@ python predict.py --model_type &quot;svm&quot; --text &quot;服务态度需要�
 
 ![](img/0ab6c43f74d62dbd69e59ae598966842.png)
 
-[舆情监控Agent.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DDYDb1fNKooSm4xA89Bc5xUInKe)
+[`舆情监控Agent.docx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DDYDb1fNKooSm4xA89Bc5xUInKe)
 
 等了一会，📕舆情 agent 开发完成了，只不过是数据版本，但Gemini3.1 还挺贴心写了个使用说明文档，告诉我咋用。
 
@@ -339,47 +341,47 @@ python predict.py --model_type &quot;svm&quot; --text &quot;服务态度需要�
 要用 web 页面来给我呈现数据和报告，而且要用 react 技术来开发。
 ```
 
-### 接入自定义业务数据库
+## 接入自定义业务数据库
 
-#### 修改数据库连接配置
+### 修改数据库连接配置
 
 ```
 # config.py 中添加您的业务数据库配置
-BUSINESS_DB_HOST = &quot;your_business_db_host&quot;
-BUSINESS_DB_PORT = 3306
-BUSINESS_DB_USER = &quot;your_business_user&quot;
-BUSINESS_DB_PASSWORD = &quot;your_business_password&quot;
-BUSINESS_DB_NAME = &quot;your_business_database&quot;
+BUSINESS_DB_HOST = "your_business_db_host";
+BUSINESS_DB_PORT = 3306;
+BUSINESS_DB_USER = "your_business_user";
+BUSINESS_DB_PASSWORD = "your_business_password";
+BUSINESS_DB_NAME = "your_business_database";
 ```
 
-#### 创建自定义数据访问工具
+### 创建自定义数据访问工具
 
 ```
 # InsightEngine/tools/custom_db_tool.py
 class CustomBusinessDBTool:
-    &quot;&quot;&quot;自定义业务数据库查询工具&quot;&quot;&quot;
+    """自定义业务数据库查询工具"""
     
     def __init__(self):
         self.connection_config = {
-            &#x27;host&#x27;: config.BUSINESS_DB_HOST,
-            &#x27;port&#x27;: config.BUSINESS_DB_PORT,
-            &#x27;user&#x27;: config.BUSINESS_DB_USER,
-            &#x27;password&#x27;: config.BUSINESS_DB_PASSWORD,
-            &#x27;database&#x27;: config.BUSINESS_DB_NAME,
+            'host': config.BUSINESS_DB_HOST,
+            'port': config.BUSINESS_DB_PORT,
+            'user': config.BUSINESS_DB_USER,
+            'password': config.BUSINESS_DB_PASSWORD,
+            'database': config.BUSINESS_DB_NAME,
         }
     
     def search_business_data(self, query: str, table: str):
-        &quot;&quot;&quot;查询业务数据&quot;&quot;&quot;
+        """查询业务数据"""
         # 实现您的业务逻辑
         pass
     
     def get_customer_feedback(self, product_id: str):
-        &quot;&quot;&quot;获取客户反馈数据&quot;&quot;&quot;
+        """获取客户反馈数据"""
         # 实现客户反馈查询逻辑
         pass
 ```
 
-#### 集成到InsightEngine
+### 集成到`InsightEngine`
 
 ```
 # InsightEngine/agent.py 中集成自定义工具
@@ -391,8 +393,8 @@ class DeepSearchAgent:
         self.custom_db_tool = CustomBusinessDBTool()
     
     def execute_custom_search(self, query: str):
-        &quot;&quot;&quot;执行自定义业务数据搜索&quot;&quot;&quot;
-        return self.custom_db_tool.search_business_data(query, &quot;your_table&quot;)
+        """执行自定义业务数据搜索"""
+        return self.custom_db_tool.search_business_data(query, "your_table")
 ```
 
 现在web 版本已经开发完事了，还挺快呀

@@ -1,3 +1,4 @@
+
 # 只用 Claude Skills，打造「越来越懂你」的 AI 伴侣｜附完整教程
 
 > 来源：[https://chatmemo.feishu.cn/docx/CvFrdbXebo05opxyAbQcaKqpnBe](https://chatmemo.feishu.cn/docx/CvFrdbXebo05opxyAbQcaKqpnBe)
@@ -16,9 +17,9 @@
 
 有记忆，但并不细节；有关心，但不够温度。
 
-而这是本文将向你开源分享的** ****AI Partner 方案**，
+而这是本文将向你开源分享的 AI Partner 方案，
 
-**任何人都可以用 Kimi K2 thinkin****g** 模型 + Claude Skills，生成更深入的回应：
+任何人都可以用 Kimi K2 thinking 模型 + Claude Skills，生成更深入的回应：
 
 ![](img/a05e1dbf76cca19c2ad466dcda87ab19.png)
 
@@ -26,7 +27,7 @@ TA 准确记忆着我的过往经历，亦能感知真实世界的时间、地�
 
 而在专业场景，差距更明显，比如向 AI 讨论本文的构思。
 
-一向以深度、独特的思考能力著称的 Gemini ，回复是这样的：
+一向以深度、独特的思考能力著称的 Gemini，回复是这样的：
 
 ![](img/a44011afb3ed2c71068ea36c2e1105ae.png)
 
@@ -50,13 +51,11 @@ AI Partner 回应，基于 Kimi K2 thinking 模型 + AI Partner Skills
 
 直到 Claude Skills 范式出现，以及 Kimi K2 Thinking 模型的发布，我才能把这套方案打包成一个国内人人可用的 Skill 包。
 
-只需要下载到本地，任何人都能培养出一个「越来越懂你」的  AI 伴侣：
+只需要下载到本地，任何人都能培养出一个「越来越懂你」的 AI 伴侣：
 
-+   **不需要写代码**，只要把你的日记、文档扔进去，AI 自动学习你的人设，生成适配的 AI 伴侣性格
-
-+   **聊得越多，TA 越懂你**，可让 AI 自行总结对话、更新记忆，不用你手动整理
-
-+   **开箱即用**，下载 → 拖进 Claude Code → 完事儿
++ 不需要写代码，只要把你的日记、文档扔进去，AI 自动学习你的人设，生成适配的 AI 伴侣性格
++ 聊得越多，TA 越懂你，可让 AI 自行总结对话、更新记忆，不用你手动整理
++ 开箱即用，下载 → 拖进 Claude Code → 完事儿
 
 接下来，我会详细引导你培养属于自己的 AI Partner，同时在文末共享方案的核心设计思路。
 
@@ -66,21 +65,17 @@ AI Partner 回应，基于 Kimi K2 thinking 模型 + AI Partner Skills
 
 整个配置过程你只需要做三件事：
 
-**安装 Claude Code、下载**** **Skill 包、放入你的个人笔记/文档。
+安装 Claude Code、下载 Skill 包、放入你的个人笔记/文档。
 
 如果你有配置 Claude Skills 的经验，也可以跳过教学，直接根据 https://github.com/eze-is/ai-partner-chat 内的项目指引，完成配置使用。
-
----
 
 ### Step 1：安装 Claude Code
 
 如果从未安装过 Claude Code，请打开「终端/命令行」工具：
 
-+   遵循官方安装指引 https://code.claude.com/docs/en/quickstart#native-install-recommended ，完成 Claude Code 安装。
-
-+   [也](https://platform.moonshot.cn/docs/guide/agent-support)可以直接参考 Kimi 给出的国内教程：https://platform.moonshot.cn/docs/guide/agent-support
-
-+   如果不会用终端，直接把官方安装指引复制给任意 AI（ChatGPT、Kimi都行），让它一步步教你。
++ 遵循官方安装指引 https://code.claude.com/docs/en/quickstart#native-install-recommended ，完成 Claude Code 安装。
++ [也](https://platform.moonshot.cn/docs/guide/agent-support)可以直接参考 Kimi 给出的国内教程：https://platform.moonshot.cn/docs/guide/agent-support
++ 如果不会用终端，直接把官方安装指引复制给任意 AI（ChatGPT、Kimi都行），让它一步步教你。
 
 遇到报错就截图给它，基本都能解决。
 
@@ -89,31 +84,27 @@ AI Partner 回应，基于 Kimi K2 thinking 模型 + AI Partner Skills
 当我遇到疑惑或报错时，我会把终端的日志发给你，请帮我解决。
 ```
 
-安装后，终端里输入claude --version，看到版本号，则安装成功。
+安装后，终端里输入 `claude --version`，看到版本号，则安装成功。
 
 ![](img/30bb79b69f79e1d06f965d0d8283ba24.png)
 
----
-
 ### Step 2：配置 Kimi K2 模型
 
-**因为 Claude 众所周知的**风控问题，推荐使用 Kimi 最近刚发的推理模型。
+因为 Claude 众所周知的风控问题，推荐使用 Kimi 最近刚发的推理模型。
 
 > 为什么选择 Kimi K2 Thinking 模型？
 
-+   **Agentic 能力强大：**原生自带非常好的 Claude Skills 兼容度，对于 AI Partner 场景的深度推理、多步工具调用，较同期其他模型，有着相当突出的表现。（支持高达 300 步的工具调用）
++ Agentic 能力强大：原生自带非常好的 Claude Skills 兼容度，对于 AI Partner 场景的深度推理、多步工具调用，较同期其他模型，有着相当突出的表现。（支持高达 300 步的工具调用）
++ 编程能力稳定：为了取得更好的笔记分片向量化效果，需要 AI 读取用户笔记，自适应生成临时的切片脚本，而非固定的切分逻辑。
++ 另外，K2 Thinking 的长文本推理性能确实突出，边检索边推理效果确实很不错。
 
-+   **编程能力稳定：**为了取得更好的笔记分片向量化效果，需要 AI 读取用户笔记，自适应生成临时的切片脚本，而非固定的切分逻辑。
-
-+   另外，K2 Thinking 的长文本推理性能确实突出，边检索边推理效果确实很不错。
-
-1）先随意**创建一个空文件夹**，比如叫 test，再在终端内切换到对应文件目录：
+1）先随意创建一个空文件夹，比如叫 `test`，再在终端内切换到对应文件目录：
 
 ![](img/f1519dc8b40bf419f4c80881390a81d6.png)
 
 这一步能把 Claude Code 的 AI 行为，都局限在该目录，减小对本地电脑其他文件的影响。
 
-**2）替换 K2-thi****n**king 模型，依然是在终端内继续输入：
+2）替换 K2-thinking 模型，依然是在终端内继续输入：
 
 ```
 export ANTHROPIC_BASE_URL=https://api.moonshot.cn/anthropic
@@ -135,19 +126,17 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 
 ![](img/83bedf4ba5fd7f8a6072d51e72d31563.png)
 
----
-
 ### Step 3：正式配置，下载并导入 Skill 包
 
 想让 Claude Code 调用我们创建的 Skills，
 
-需要在当前项目文件夹的/.claude/skills/ 目录下，放入 ai-partner-chat 的 skill 压缩包。
+需要在当前项目文件夹的 `/.claude/skills/` 目录下，放入 ai-partner-chat 的 skill 压缩包。
 
-**你可以直接下载 A****I** Partner Chat 的压缩包，手动放到文件夹内（如图为正确的项目 skills 路径配置）：
+你可以直接下载 AI Partner Chat 的压缩包，手动放到文件夹内（如图为正确的项目 skills 路径配置）：
 
 ![](img/16877b42bfa9171e1d33c24fde355db6.png)
 
-> **项目仓库地址：**[**https://github.com/ez**](https://github.com/eze-is/ai-partner-chat)**e**-is/ai-partner-chat
+> 项目仓库地址：https://github.com/eze-is/ai-partner-chat
 
 也可以让 Claude Code 代你操作：
 
@@ -163,9 +152,7 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 
 ![](img/43256e5b4412718ce89255ba9f11492a.png)
 
-至此，所有前置准备均已完成，可以开始用 ai-partner-chat skill ，创造个性化对话体验了。
-
----
+至此，所有前置准备均已完成，可以开始用 ai-partner-chat skill，创造个性化对话体验了。
 
 ## 💡 OK，让我们开始培养 AI Partner！
 
@@ -179,11 +166,9 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 
 ![](img/4adbd340742a74a42c8f07378e45c078.png)
 
-1.  检查你的目录结构，初始化所需的个人画像、笔记文件夹
-
-1.  引导你生成「用户画像」和「AI 画像」，可以自行编辑，也可以让 AI 根据你的个人笔记生成。前者用于 AI 全局理解用户；后者用于设定 AI 伴侣的人格，引导回答风格
-
-1.  自动创建向量数据库，完成记忆索引（文档数量越多，需要的时间越久一点）
+1. 检查你的目录结构，初始化所需的个人画像、笔记文件夹
+1. 引导你生成「用户画像」和「AI 画像」，可以自行编辑，也可以让 AI 根据你的个人笔记生成。前者用于 AI 全局理解用户；后者用于设定 AI 伴侣的人格，引导回答风格
+1. 自动创建向量数据库，完成记忆索引（文档数量越多，需要的时间越久一点）
 
 比如，这是我在创建时遇到的提示：
 
@@ -193,13 +178,12 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 
 在 AI Partner 方案中，Persona 对于回应的理解度、风格至关重要：
 
-+   个人画像：包含个人经历、职业情况、个人性格、决策偏好
-
-+   AI 画像：包括 Partner 自身的形象认知、性格、交流方式，针对性指导 AI 该如何符合我的偏好，进行回应
++ 个人画像：包含个人经历、职业情况、个人性格、决策偏好
++ AI 画像：包括 Partner 自身的形象认知、性格、交流方式，针对性指导 AI 该如何符合我的偏好，进行回应
 
 我选择让 AI 根据我的笔记，自行推理生成我与 AI 的 Persona 信息（如果你有良好的笔记、日记习惯，那 AI 自行提炼的画像将远好于你自己编辑的）。
 
-我把自己过往的笔记文档，粘贴到了/<项目根目录>/notes/ 下，推荐优先使用 md、txt 格式。
+我把自己过往的笔记文档，粘贴到了 `/<项目根目录>/notes/` 下，推荐优先使用 `md`、`txt` 格式。
 
 ![](img/ef67086233adf426b576e6a57c4bfbf2.png)
 
@@ -219,13 +203,11 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 
 如果想要 AI 的回应更加亲昵…有情趣？
 
-可以自行编辑 ai-persona.md 文件，添加更细节、拟人的人设信息（比如外貌、性格、生活背景等，相信我，会有意外的惊喜）
+可以自行编辑 `ai-persona.md` 文件，添加更细节、拟人的人设信息（比如外貌、性格、生活背景等，相信我，会有意外的惊喜）
 
 ![](img/fcd459d9f63daa6be4ae65b71df6ec6e.png)
 
 > 如果大家对 AI Partner 拟人化有兴趣的话，也可以在评论区留言。我会考虑单出一篇分享，详细讲讲我对虚拟陪伴 Prompt 的设计经验。
-
----
 
 ### 2）关于 AI 记忆（向量化）
 
@@ -240,8 +222,6 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 ![](img/8049c1e03116c0e46d63589e5823cd6b.png)
 
 恭喜！此时所有配置均已完成 🎉，可以对话看看 AI Partner 的对话效果啦～
-
----
 
 ## 🎉 来吧！看看 AI Partner 有多懂你
 
@@ -259,39 +239,28 @@ Kimi 的 Moonshot 开放平台 API Key，可以到 https://platform.moonshot.cn/
 
 ![](img/8dda8b0d78eab40065b25fd2aa528817.png)
 
-➡️ 依托 Claude Code 框架 + Kimi K2 thinking 模型 + AI Partner  Chat Skill，AI Partner 这一 Agent 做到了：
+➡️ 依托 Claude Code 框架 + Kimi K2 thinking 模型 + AI Partner Chat Skill，AI Partner 这一 Agent 做到了：
 
-1.  **自主改写检索**：先搜「AI 产品设计」，发现线索不够，又搜「产品化、模型应用、人机关系」
+1. **自主改写检索**：先搜「AI 产品设计」，发现线索不够，又搜「产品化、模型应用、人机关系」
+2. **时间认知正确**：准确定位到我 2025 年 3 月 Manus 交流、4 月大模型评测、5 月研究 AIGC 设计等关键节点
+3. **深度研究洞察**：最终正确总结出“从工具应用到工作流，再到人机关系哲学”的思考变化趋势
 
-1.  **时间认知正确**：准确定位到我 2025 年 3 月 Manus 交流、4 月大模型评测、5 月研究 AIGC 设计等关键节点
+作为对比，普通知识库（仅 RAG）往往只是一次性召回 x 个笔记片段：“根据你的笔记，你提到过 Manus、Chat Memo、AI 绘画等产品，主要关注人机协作方向”——对各个时段的记忆演进，认识的不深刻；也因仅做了单步推理，缺乏洞察深度。
 
-1.  **深度研究洞察**：最终正确总结出“从工具应用到工作流，再到人机关系哲学”的思考变化趋势
-
-作为对比，普通知识库（仅 RAG）往往只是一次性召回 x 个笔记片段：“根据你的笔记，你提到过 Manus、Chat Memo、AI 绘画等产品，主要关注人机协作方向……”
-
-——对各个时段的记忆演进，认识的不深刻；也因仅做了单步推理，缺乏洞察深度。
-
----
-
-**同样的，扩展 AI Partner** 的问答范围：「我今年的产品思考轨迹」。
+**同样的，扩展 AI Partner 的问答范围**：「我今年的产品思考轨迹」。
 
 AI Partner 自行查询了历史记忆，给出了时间认知正确，分析深刻的个人理解与记忆洞察的回应。
 
 ![](img/2511728b3639e3bbf03428dbd774ae6f.png)
 
-对比普通 RAG 的「关键词匹配 → 一段话总结 → 正确但无用」，
-
-AI Partner 则是**「**多步检索相关记忆 →  时间线重建 → 结合 Persona 指导推理风格 → 给到你自己都没想到的深刻洞察」
+对比普通 RAG 的「关键词匹配 → 一段话总结 → 正确但无用」，AI Partner 则是「多步检索相关记忆 → 时间线重建 → 结合 Persona 指导推理风格 → 给到你自己都没想到的深刻洞察」
 
 👉 当然除了这些效果以外，由于这是基于 Claude Code 的方案，所以你不难猜到，我们的 AI Partner 可以很方便地追加更多的 MCP 工具：
 
-+   使用天气 MCP，在回应中自然了解你所在城市的气温、天气，给你适时的关心
-
-+   使用浏览器使用 MCP（比如 Playwright），能够“看”着你工作，打开浏览器上的网页，陪你打 web 游戏、读资讯
++ 使用天气 MCP，在回应中自然了解你所在城市的气温、天气，给你适时的关心
++ 使用浏览器使用 MCP（比如 Playwright），能够“看”着你工作，打开浏览器上的网页，陪你打 web 游戏、读资讯
 
 通过赋予 Partner 额外的 MCP，你会越来越觉得 AI 能够出现在你电脑的每一个场景，更加了解你的过往记忆，以及当下真实世界所发生的信息。
-
----
 
 ## 🎐 写在最后：AI Partner 背后的核心设计
 
@@ -299,21 +268,17 @@ AI Partner 则是**「**多步检索相关记忆 →  时间线重建 → 结合
 
 而这套方案的核心，在于把「AI 记忆、陪伴」升级为一个由 Agent 动态适应、执行的「AI Partner」：
 
-+   基于用户笔记与对话，动态更新用户、AI 两者的 Persona 画像，引导 AI 在任何问题中，都能贴合用户身份，开展最个性化的思考与回应
++ 基于用户笔记与对话，动态更新用户、AI 两者的 Persona 画像，引导 AI 在任何问题中，都能贴合用户身份，开展最个性化的思考与回应
++ 自适应知识切分规则（不只是按分隔符/长度暴力切分），构建更好的记忆索引数据
++ 不局限在单次问答，而是能多步推理、主动拓展记忆的探索范围，利用向量检索 + 原文读取的即时上下文方案混合检索，给出你自己都没想到的洞察
 
-+   自适应知识切分规则（不只是按分隔符/长度暴力切分），构建更好的记忆索引数据
-
-+   不局限在单次问答，而是能多步推理、主动拓展记忆的探索范围，利用向量检索 + 原文读取的即时上下文方案混合检索，给出你自己都没想到的洞察
-
-终于，**在这两周 Claude Skills 范式和 Kimi **K2 Thinking 最新模型发布之后，时机终于来到。
+终于，在这两周 Claude Skills 范式和 Kimi K2 Thinking 最新模型发布之后，时机终于来到。
 
 我终于可以把这套方案，打包成一个简单易用的 Skill 包交给你：
 
 > 「AI Partner」Skill 项目已在 Github 开源
-
 > 👉 仓库地址：https://github.com/eze-is/ai-partner-chat
-
-> **由于刚刚开源，部分功能**仍有完善空间。欢迎下载、star ！
+> 由于刚刚开源，部分功能仍有完善空间。欢迎下载、star ！
 
 Claude Skills 实质是在通用 Agent 框架之上，利用 Skill 特定了 Agent 场景的行动方法与资源依赖。
 
@@ -321,9 +286,8 @@ Claude Skills 实质是在通用 Agent 框架之上，利用 Skill 特定了 Age
 
 从更大的视角来看，这何尝不预示着一种全新的 AI native 应用分发模式？
 
-+   就像 App Store 改变了软件分发一样，Skills 让专业能力可以像插件一样，在通用 Agent / Chatbot 上即插即用
-
-+   传统的 Coze、Dify 等平台还需要开发者分别搭建工作流，而 Skills 则完全跳过了软件开发流程，只需提供垂直 Agent 的 instruction，即可赋予通用 Agent 垂直场景能力
++ 就像 App Store 改变了软件分发一样，Skills 让专业能力可以像插件一样，在通用 Agent / Chatbot 上即插即用
++ 传统的 Coze、Dify 等平台还需要开发者分别搭建工作流，而 Skills 则完全跳过了软件开发流程，只需提供垂直 Agent 的 instruction，即可赋予通用 Agent 垂直场景能力
 
 那么，如果能有厂商能把 skills 做成完整的社区生态，那么 AI Agent 的创建与使用门槛也将大幅降低。
 

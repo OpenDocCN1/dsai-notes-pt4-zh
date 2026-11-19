@@ -1,8 +1,9 @@
+
 # 20240507-在真实与虚幻中穿行！艺术家使用Sora制作首个AI音乐视频，颠覆传统！
 
 > 来源：[https://aigcreative.feishu.cn/docx/WDiddKrRsoRo7LxQS9kcaaa3nrg](https://aigcreative.feishu.cn/docx/WDiddKrRsoRo7LxQS9kcaaa3nrg)
 
-独立流行音乐艺术家Washed Out（本名Ernest Greene）与导演Paul Trillo合作，利用OpenAI()的Sora，文本生成视频，为新歌“The Hardest Part”制作了音乐视频。
+独立流行音乐艺术家Washed Out（本名Ernest Greene）与导演Paul Trillo合作，利用`OpenAI()`的Sora，文本生成视频，为新歌“The Hardest Part”制作了音乐视频。
 
 这是音乐界首次有重大艺术家与电影制作人合作，使用AI创作音乐视频。该视频由Sub Pop唱片公司发布，标志着AI在视频制作领域的潜在突破。
 
@@ -14,7 +15,7 @@
 
 ![](img/c576a729c849443bf1065124e2e55cd4.png)
 
-Sora由OpenAI在今年2月推出，目前尚未公开，但已与导演和好莱坞高管及制片人进行了测试。OpenAI正在解决技术和知识产权方面的问题。尽管AI在音乐行业的应用存在争议，特别是在“深度伪造()”技术（使用艺术家的形象或声音的虚假视频和音频）的滥用问题上，但Sora的引入在好莱坞和其他领域引发了对其可能对工作和制作产生破坏性影响的担忧。
+Sora由OpenAI在今年2月推出，目前尚未公开，但已与导演和好莱坞高管及制片人进行了测试。OpenAI正在解决技术和知识产权方面的问题。尽管AI在音乐行业的应用存在争议，特别是在`深度伪造()`技术（使用艺术家的形象或声音的虚假视频和音频）的滥用问题上，但Sora的引入在好莱坞和其他领域引发了对其可能对工作和制作产生破坏性影响的担忧。
 
 ![](img/df89f2c6f1acdff0e8b93cca4ba2ca87.png)
 

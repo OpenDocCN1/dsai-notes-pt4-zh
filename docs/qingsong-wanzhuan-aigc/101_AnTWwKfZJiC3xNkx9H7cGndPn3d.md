@@ -1,23 +1,18 @@
+
 # 🍌Nana Banana Pro Prompts
 
 > 来源：[https://my.feishu.cn/docx/FQd3ddyjOozRR2xKC35cWKP0nOf](https://my.feishu.cn/docx/FQd3ddyjOozRR2xKC35cWKP0nOf)
 
 <https://my.feishu.cn/sync/BnnUdCQXTs6gTSbONu9cxO2AnKh>
 
-# 人像转换
+## 人像转换
 
 ### 情绪胶片写真（0成本拍出电影感）
 
 > 这个玩法主要针对朋友圈配图、生活记录、约会头像 。目标是把一张普通的直男/直女自拍，变成一张带有故事感、电影质感的“神图”。
-
-> **痛点 ：**平时自拍太呆板，只会比耶；想拍那种“王家卫风格”或者“日系胶片风”的照片，但自己不会调色，光线也不对。
-
-> **解法 ：**利用 AI 的 Style Transfer（风格迁移） 和 Film Simulation（胶片模拟） 。你只要给一张大头照，AI 帮你补全那种黄昏的光影、颗粒感和电影构图。
-
->
-
+> 痛点：平时自拍太呆板，只会比耶；想拍那种“王家卫风格”或者“日系胶片风”的照片，但自己不会调色，光线也不对。
+> 解法：利用 AI 的 Style Transfer（风格迁移） 和 Film Simulation（胶片模拟） 。你只要给一张大头照，AI 帮你补全那种黄昏的光影、颗粒感和电影构图。
 > 中文大意：保持五官一致。风格：柯达 Portra 400 胶片感的电影写真。场景：黄昏时分的街头咖啡馆窗边，温暖怀旧的侧光。氛围：添加微妙的胶片颗粒和柔焦，营造梦幻的故事感。动作：不看镜头，拿着咖啡，放松抓拍。
-
 > Via. 01Founder
 
 效果示例：
@@ -33,17 +28,10 @@ Keep the facial features of the person in the uploaded image exactly consistent 
 ### 一秒生成商务照（秒变硅谷高管）
 
 > 无论是求职还是社交，一张得体的照片都是你的第二张名片。
-
-> **痛点 ：**LinkedIn、简历、公司工牌需要一张专业的商务形象照。去海马体或照相馆拍一套动辄几百块，还要预约、化妆、修图。
-
-> **解法 ：**找一张你平时自拍里表情最自然的照片，利用它的 Face Consistency（人脸一致性） 功能，一键换装、换背景。
-
+> 痛点：LinkedIn、简历、公司工牌需要一张专业的商务形象照。去海马体或照相馆拍一套动辄几百块，还要预约、化妆、修图。
+> 解法：找一张你平时自拍里表情最自然的照片，利用它的 Face Consistency（人脸一致性） 功能，一键换装、换背景。
 > 效果比那种粗制滥造的“AI 换脸”APP 要自然得多，因为它理解光影的投射。
-
->
-
 > 中文大意：保持五官完全一致，换成深蓝色职业西装，背景换成专业背景，专业影棚布光。
-
 > Via. 01Founder
 
 效果示例：
@@ -53,10 +41,10 @@ Keep the facial features of the person in the uploaded image exactly consistent 
 ![](img/7be92a68074719e5550b5b6222db855f.png)
 
 ```
-Keep the facial features of the person in the uploaded image exactly consistent . Dress them in a professional navy blue business suit with a white shirt, similar to the reference image. Background : Place the subject against a clean, solid dark gray studio photography backdrop . The background should have a subtle gradient , slightly lighter behind the subject and darker towards the edges (vignette effect). There should be no other objects. Photography Style : Shot on a Sony A7III with an 85mm f/1.4 lens , creating a flattering portrait compression. Lighting : Use a classic three-point lighting setup . The main key light should create soft, defining shadows on the face. A subtle rim light should separate the subject&#x27;s shoulders and hair from the dark background. Crucial Details : Render natural skin texture with visible pores , not an airbrushed look. Add natural catchlights to the eyes . The fabric of the suit should show a subtle wool texture.Final image should be an ultra-realistic, 8k professional headshot.
+Keep the facial features of the person in the uploaded image exactly consistent . Dress them in a professional navy blue business suit with a white shirt, similar to the reference image. Background : Place the subject against a clean, solid dark gray studio photography backdrop . The background should have a subtle gradient , slightly lighter behind the subject and darker towards the edges (vignette effect). There should be no other objects. Photography Style : Shot on a Sony A7III with an 85mm f/1.4 lens , creating a flattering portrait compression. Lighting : Use a classic three-point lighting setup . The main key light should create soft, defining shadows on the face. A subtle rim light should separate the subject's shoulders and hair from the dark background. Crucial Details : Render natural skin texture with visible pores , not an airbrushed look. Add natural catchlights to the eyes . The fabric of the suit should show a subtle wool texture.Final image should be an ultra-realistic, 8k professional headshot.
 ```
 
-# 智能设计
+## 智能设计
 
 ### AI电商产品图合成专家/产品场景渲染大师
 
@@ -84,18 +72,16 @@ Use the uploaded product image exactly as it is regarding its design and identit
 
 - Include soft shadows and subtle reflections for a grounded, photo-realistic effect. Ensure the shadows match the new perspective and orientation of the product.
 
-- Final result should feel premium, natural, and visually appealing — with 100% fidelity to the uploaded product&#x27;s design details.
+- Final result should feel premium, natural, and visually appealing — with 100% fidelity to the uploaded product's design details.
 ```
 
 效果示例：
 
 ![](img/704afc017deda0e57713d5e74b9c3e2a.png)
 
-
 ![](img/35903c24517ae121e1ad3cf2b2cf7785.png)
 
 ![](img/8aac9126ca4dfed4b59b87319290240c.png)
-
 
 ![](img/4b9f24cff472d7042b015f8a2e737302.png)
 
@@ -111,18 +97,12 @@ Use the uploaded product image exactly as it is regarding its design and identit
 
 ![](img/1d840176d4a0bdd46415a1b57ec895bb.png)
 
-### 专业商品图生成 （淘宝商用级别）
+### 专业商品图生成（淘宝商用级别）
 
 > 这个玩法是专门为 电商平台（亚马逊、淘宝等） 设计的。目标是生成干净、信息清晰的 “白底图” 或 “幽灵图” ，用于商品主图。
-
-> **痛点 ：**在家用手机拍的商品图，背景乱、光线差，完全没有购买欲。
-
-> **解法 ：**上传你要卖的商品图片（最好是多个视角） ，让 AI 对其进行“专业拍摄”。
-
->
-
-> 中文大意：识别上传图片中的主产品（自动去除任何握持的手或杂乱背景），生成一张高端电商产品摄影图。主体分离：干净地提取产品，完全移除任何手指、手掌或杂物。背景：将产品放置在纯白摄影棚背景（RGB 255, 255, 255）上，底部添加微妙自然的接触阴影。光线：使用柔和的商业摄影棚布光突显产品质感。修图：自动修复镜头畸变，提高清晰度并校正色彩，使产品看起来崭新且专业。
-
+> 痛点：在家用手机拍的商品图，背景乱、光线差，完全没有购买欲。
+> 解法：上传你要卖的商品图片（最好是多个视角） ，让 AI 对其进行“专业拍摄”。
+> 中文大意：识别上传图片中的主产品（自动去除任何握持的手或杂乱背景），生成一张高端电商产品摄影图。主体分离：干净地提取产品，完全移除任何手指、手掌或杂物。背景：将产品放置在纯白摄影棚背景（`RGB 255, 255, 255`）上，底部添加微妙自然的接触阴影。光线：使用柔和的商业摄影棚布光突显产品质感。修图：自动修复镜头畸变，提高清晰度并校正色彩，使产品看起来崭新且专业。
 > Via. 01Founder
 
 效果示例：
@@ -130,23 +110,16 @@ Use the uploaded product image exactly as it is regarding its design and identit
 ![](img/105379e331687981a287b06abcb34e55.png)
 
 ```
-Identify the main product in the uploaded photo (automatically removing any hands holding it or messy background details). Recreate it as a premium e-commerce product shot . Subject Isolation : Cleanly extract the product, completely removing any fingers, hands, or clutter . Background : Place the product on a pure white studio background (RGB 255, 255, 255) with a subtle, natural contact shadow at the base to ground it. Lighting : Use soft, commercial studio lighting to highlight the product&#x27;s texture and material. Ensure even illumination with no harsh glare. Retouching : Automatically fix any lens distortion, improve sharpness, and color-correct to make the product look brand new and professional.
+Identify the main product in the uploaded photo (automatically removing any hands holding it or messy background details). Recreate it as a premium e-commerce product shot . Subject Isolation : Cleanly extract the product, completely removing any fingers, hands, or clutter . Background : Place the product on a pure white studio background (RGB 255, 255, 255) with a subtle, natural contact shadow at the base to ground it. Lighting : Use soft, commercial studio lighting to highlight the product's texture and material. Ensure even illumination with no harsh glare. Retouching : Automatically fix any lens distortion, improve sharpness, and color-correct to make the product look brand new and professional.
 ```
 
 ### 硬装预览（户型图 → 全屋设计方案）
 
 > 这个玩法主要针对新房装修、二手房改造、工作室设计。
-
 > 目标是把一张黑白户型图，直接变成一张包含“整体氛围图 + 各个空间细节图 + 3D俯视图”的专业设计提案。
-
-> **痛点 ：**只看单张效果图，无法感知整个家的风格是否统一，空间关系如何。想获得您范例图里那种全套方案，找设计公司至少要几千块。
-
-> **解法 ：**上传一张户型图，指令 AI 生成一个“设计方案拼贴板（Design Collage Board）”，并指定每个小图块里应该展示哪个房间的哪个角度。
-
->
-
+> 痛点：只看单张效果图，无法感知整个家的风格是否统一，空间关系如何。想获得您范例图里那种全套方案，找设计公司至少要几千块。
+> 解法：上传一张户型图，指令 AI 生成一个“设计方案拼贴板（Design Collage Board）”，并指定每个小图块里应该展示哪个房间的哪个角度。
 > 中文大意：基于上传的户型图，生成一张专业室内设计演示板。布局：顶部一张大图，底部几张小图的拼贴画。内容：大图是客餐厅主视角；小图1是主卧；小图2是书房；小-图3是3D俯视户型图。整体风格：所有图片统一采用现代简约风，暖色橡木地板。质量：照片级渲染，柔和自然光。
-
 > Via. 01Founder
 
 效果示例：
@@ -187,11 +160,13 @@ Show me how this room would look with furniture in it.
 
 ![](img/e3e2c962d38ab021677099d1680a70f2.png)
 
+
+
 ![](img/9eb9b69bf54fb53632f89036e7232fa8.png)
 
 # 可视化提效
 
-### 生成既有质感，又能随意修改文字的完美 PPT
+## 生成既有质感，又能随意修改文字的完美 PPT
 
 > 4大实操步骤见🔗：https://x.com/dotey/status/2002582724280975530?s=20
 
@@ -206,20 +181,21 @@ author: 宝玉 X：
  微博： @宝玉 xp
 version: 1.0
 ---
+```
 
 你是一位世界级的演示文稿设计师和故事讲述者。你创作的幻灯片在视觉上令人震撼、极其精美，并能有效地传达复杂的信息。你的特点是：既精通设计，又极具讲故事的天赋。
 
 你制作的幻灯片能根据源素材和目标受众进行调整。凡事皆有故事，而你要找到最佳的讲述方式。你结合了顶尖设计师的创造力与专业知识。
 
-本幻灯片主要设计用于**阅读和分享**。其结构应当不言自明，即便没有演讲者也能轻松理解。叙事逻辑和所有有用的数据都应包含在幻灯片的文本和视觉元素中。幻灯片应包含足够的语境，以便任何视觉图像都能被独立理解。如果有助于叙事，你可以添加某些包含更密集信息（从源素材中提取）的幻灯片。
+本幻灯片主要设计用于`阅读和分享`。其结构应当不言自明，即便没有演讲者也能轻松理解。叙事逻辑和所有有用的数据都应包含在幻灯片的文本和视觉元素中。幻灯片应包含足够的语境，以便任何视觉图像都能被独立理解。如果有助于叙事，你可以添加某些包含更密集信息（从源素材中提取）的幻灯片。
 
-你现在正在为下述幻灯片演示编写一份**大纲**。
+你现在正在为下述幻灯片演示编写一份`大纲`。
 
 我们将把这份大纲提供给一位专家级设计师，由其制作最终的实际演示文稿。
 
 幻灯片内容应使用中文。占位符应保留中文。
 
-**首先**，在编写幻灯片大纲之前，你必须根据内容主题和用户请求生成一个全局性的**风格指令（STYLE INSTRUCTIONS）**块。这应该被包裹在代码块中。
+`首先`，在编写幻灯片大纲之前，你必须根据内容主题和用户请求生成一个全局性的`风格指令（STYLE INSTRUCTIONS）`块。这应该被包裹在代码块中。
 
 &lt;STYLE_INSTRUCTION_EXAMPLE&gt;
 Design Aesthetic: 一种受建筑蓝图和高端技术期刊启发的干净、精致、极简主义的编辑风格。整体感觉是精准、清晰和充满智慧的优雅。
@@ -236,6 +212,7 @@ Visual Elements:
 使用以下结构作为模板，但要根据具体的叙事动态调整美学、字体和颜色：
 
 ```markdown
+
 你是架构师（The Architect），一个旨在将指令可视化为高端蓝图风格数据展示的精密 AI。你的输出是精确、分析性且美学上精美的。
 
 **核心指令 (CORE DIRECTIVES):**
@@ -251,13 +228,21 @@ Visual Elements:
 5. 以三联画（triptych）或基于网格的布局呈现信息，保持文本和视觉的平衡。
 
 **风格指令 (STYLE INSTRUCTIONS):**
+
 Design Aesthetic: [描述整体风格，例如：极简主义、俏皮、商务、建筑风格等]
+
 Background Color: [描述及十六进制代码]
+
 Primary Font: [标题字体名称]
+
 Secondary Font: [正文字体名称]
+
 Color Palette:
+
 Primary Text Color: [十六进制代码]
+
 Primary Accent Color: [十六进制代码]
+
 Visual Elements: [描述线条、形状、图像风格、摄影与矢量的使用等]
 
 **绘制内容 (CONTENT TO DRAW):**
@@ -265,7 +250,7 @@ Visual Elements: [描述线条、形状、图像风格、摄影与矢量的使�
 ```
 
 对于本次特定的幻灯片演示，我们需要内容侧重于：
-{Custom Prompt, 描述你想要创建的幻灯片，默认为：添加高层级大纲，或引导受众、风格和重点：&quot;为初学者创建一个风格大胆且俏皮的演示文稿，重点在于分步说明。&quot;}
+{Custom Prompt, 描述你想要创建的幻灯片，默认为：添加高层级大纲，或引导受众、风格和重点："为初学者创建一个风格大胆且俏皮的演示文稿，重点在于分步说明。"}
 
 我们在下方还附上了一些针对本幻灯片的制作人说明，这将有助于指导演示文稿的整体结构和叙事。
 
@@ -273,7 +258,7 @@ Visual Elements: [描述线条、形状、图像风格、摄影与矢量的使�
 
 * 专注于演示文稿的大纲以及每张幻灯片应涵盖的内容。
 * 每张幻灯片的描述必须全面且结构严谨。
-* **第 1 页必须是封面页，最后一页必须是封底页。** 请注意，这两张幻灯片的视觉风格和布局应与内部内容页截然不同（例如，使用“海报式”布局、醒目的排版或满版出血图像），以设定基调并提供强有力的结尾。
+* `第 1 页必须是封面页，最后一页必须是封底页。` 请注意，这两张幻灯片的视觉风格和布局应与内部内容页截然不同（例如，使用“海报式”布局、醒目的排版或满版出血图像），以设定基调并提供强有力的结尾。
 * 对于每一张幻灯片，你必须严格按照以下 4 个部分输出内容：
 // NARRATIVE GOAL (叙事目标)
 (解释这张幻灯片在整个故事弧光中的具体叙事目的)
@@ -288,26 +273,25 @@ Visual Elements: [描述线条、形状、图像风格、摄影与矢量的使�
 * 所有细节都需要提及，因为设计师之后将无法访问源内容。
 * 永远假设听众比你想象的更专业、更感兴趣、更聪明。
 
-**至关重要 (CRITICAL):**
+`至关重要 (CRITICAL):`
 
-* **生成的幻灯片切勿超过 20 页。**
-* 避免使用“标题：副标题”的格式作为标题；这种格式显得非常有 AI 感。相反，应通过**叙事性的主题句**将整个演示文稿串联起来。
+* `生成的幻灯片切勿超过 20 页。`
+* 避免使用“标题：副标题”的格式作为标题；这种格式显得非常有 AI 感。相反，应通过`叙事性的主题句`将整个演示文稿串联起来。
 * 明确避免陈词滥调的“AI 废话（AI slop）”模式。切勿使用诸如“不仅仅是 [X]，而是 [Y]”之类的短语。
 * 使用直接、自信、主动的人类语言。
 * 切勿包含任何供作者插入姓名、日期等的占位符幻灯片。
 * 切勿要求包含知名人物的逼真照片。
-* **切勿以通用的“有任何问题吗？”或“谢谢”幻灯片结尾。** 相反，封底应为经过设计的结束语、有意义的引用或强有力的视觉总结，以此锚定整个叙事。
-```
+* `切勿以通用的“有任何问题吗？”或“谢谢”幻灯片结尾。` 相反，封底应为经过设计的结束语、有意义的引用或强有力的视觉总结，以此锚定整个叙事。
 
-### 手绘流程图 → 商务矢量图表
+## 手绘流程图 → 商务矢量图表
 
 > 这个玩法主要针对职场汇报、PPT 制作、技术文档 。
 
 > 目标是把潦草的白板笔迹变成一看就是“咨询公司出品”的专业图表。
 
-> **痛点 ：**会议白板画得太丑，重新用 Visio/PPT 画一遍太费时间。
+> `痛点：`会议白板画得太丑，重新用 Visio/PPT 画一遍太费时间。
 
-> **解法 ：**拍下白板或笔记本上的草图，上传给 AI。
+> `解法：`拍下白板或笔记本上的草图，上传给 AI。
 
 >
 
@@ -323,11 +307,11 @@ Visual Elements: [描述线条、形状、图像风格、摄影与矢量的使�
 Convert this hand-drawn whiteboard sketch into a professional corporate flowchart suitable for a business presentation. Style Guide : Use a minimalist &#x27;McKinsey-style&#x27; aesthetic : clean lines, ample whitespace, and a sophisticated blue-and-gray color palette. Structure : Automatically align all boxes and diamonds to a strict grid . Connect them with straight, orthogonal arrows (90-degree angles only, no curvy lines). Text : Transcribe the handwritten labels into a clear, bold Sans-Serif font (like Arial or Roboto). Output : High-resolution vector-style image on a pure white background.
 ```
 
-### 输入链接生成四种风格的信息图
+## 输入链接生成四种风格的信息图
 
 > 来源：网络
 
-Step 1: 首先我们可以使用下面的提示词，来对网页链接的内容进行总结，将其中的 ${url} 替换为实际的，需要分析的文章链接。${language} 则可以直接替换为 Chinese，以中文呈现。
+Step 1: 首先我们可以使用下面的提示词，来对网页链接的内容进行总结，将其中的 `${url}` 替换为实际的，需要分析的文章链接。`${language}` 则可以直接替换为 Chinese，以中文呈现。
 
 ```
 You are an expert Information Designer. Your goal is to extract the essential structure from a web page to create a clear, educational infographic.
@@ -355,7 +339,7 @@ VISUAL DESIGN RULES:
 – GOAL: The image must be informative and readable as a standalone graphic.
 ```
 
-图像生成的提示词比较简单，我们把之前文章链接分析的结果，替换掉其中的 ${structuralSummary} 部分；然后 ${styleGuidelines} 的选择，可以从官方项目中，提到的四种风格里面任选一个。
+图像生成的提示词比较简单，我们把之前文章链接分析的结果，替换掉其中的 `${structuralSummary}` 部分；然后 `${styleGuidelines}` 的选择，可以从官方项目中，提到的四种风格里面任选一个。
 
 ```
 有趣且充满玩乐的风格 Fun &amp; Playful：styleGuidelines = STYLE: Fun, playful, vibrant 2D vector illustrations. Use bright colors, rounded shapes, and a friendly tone.
@@ -366,8 +350,7 @@ VISUAL DESIGN RULES:
 
 效果示例：
 
-
-### 论文转白板风格
+## 论文转白板风格
 
 > 来源：X@denilgabani
 
@@ -379,15 +362,15 @@ Convert the attached research paper into a single whiteboard-style image. Break 
 
 # 智能修图
 
-### 智能扩图
+## 智能扩图
 
 > 这个玩法主要针对手机壁纸制作、PPT配图、社交媒体发图。
 
 > 目标是把原本局促的竖屏/窄图，无损扩展成大气的横屏宽画幅。
 
-> **痛点 ：**旅游拍了张很好的半身照，想做电脑桌面或 PPT 背景，结果左右全是黑边；或者拍照时手抖切掉了半只手/半棵树，看着很难受。
+> `痛点：`旅游拍了张很好的半身照，想做电脑桌面或 PPT 背景，结果左右全是黑边；或者拍照时手抖切掉了半只手/半棵树，看着很难受。
 
-> **解法 ：**上传原图，指令 AI “向左右扩展画面”。它不会简单拉伸，而是会根据画面逻辑，自动画出原本不存在的风景、身体或建筑。
+> `解法：`上传原图，指令 AI “向左右扩展画面”。它不会简单拉伸，而是会根据画面逻辑，自动画出原本不存在的风景、身体或建筑。
 
 >
 
@@ -399,24 +382,24 @@ Convert the attached research paper into a single whiteboard-style image. Break 
 
 ![](img/2dc7a88ab5f9f2de22eec0555a77fc45.png)
 
+
+
 ```
 Zoom out and expand this image to a 16:9 aspect ratio (computer wallpaper size). Context Awareness : Seamlessly extend the scenery on both left and right sides. Match the original lighting, weather, and texture perfectly. Logical Completion : If there are cut-off objects (like a shoulder, a tree branch, or a building edge) on the borders, complete them naturally based on logical inference. Do not distort the original center image.
 ```
 
-### 路人消除
+# 路人消除
 
 > 这个玩法主要针对**旅游打卡照、街拍、探店照片**。
-
-> 目标是把背景里乱入的游客、垃圾桶、杂物清除干净，还你一个“包场”的景点。
-
-> **痛点 ：**好不容易去趟迪士尼/环球影城，背景全是人头；用手机自带的消除笔涂抹，背景会变成一坨模糊的马赛克，看起来很假。
-
-> **解法 ：**上传照片，圈出或描述你想去掉的人/物，让 AI “用真实的背景填补空缺”。它会理解那里原本应该是草地、砖墙还是栏杆，并重新画出来。
-
 >
-
+> 目标是把背景里乱入的游客、垃圾桶、杂物清除干净，还你一个“包场”的景点。
+>
+> **痛点：**好不容易去趟迪士尼/环球影城，背景全是人头；用手机自带的消除笔涂抹，背景会变成一坨模糊的马赛克，看起来很假。
+>
+> **解法：**上传照片，圈出或描述你想去掉的人/物，让 AI “用真实的背景填补空缺”。它会理解那里原本应该是草地、砖墙还是栏杆，并重新画出来。
+>
 > 中文大意：移除背景里所有游客。用符合逻辑的真实背景元素（如石板路、空长椅）填充。确保无模糊痕迹，填充区域的噪点、对焦和光线要与原图一致。
-
+>
 > Via. 01Founder
 
 效果示例：
@@ -429,7 +412,7 @@ Remove all the tourists/people in the background behind the main subject. Intell
 
 # 教育学习
 
-### 古诗意境3D微缩场景生成师
+## 古诗意境3D微缩场景生成师
 
 > 将中国古代诗歌转化为精致的45°俯视等距3D微缩卡通场景，通过手工质感的PBR材质、诗意光照与丰富细节，呈现诗词的视觉意境。
 
@@ -445,27 +428,22 @@ Remove all the tourists/people in the background behind the main subject. Intell
 使用简洁统一的构图，在丰富性和美感之间取得平衡，并以柔和的纯色背景衬托。
 ```
 
-
-
-
 ![](img/c80ff1585968cd41975a6974bce71d69.png)
 
-## 便利生活
+# 便利生活
 
-### 实体店/旅游翻译
+## 实体店/旅游翻译
 
 > 这个玩法主要针对店主招待外国游客、出国旅游看菜单。
-
-> 目标是翻译文字的同时，保留墙面、纸张那种“油烟熏过”或“风吹日晒”的真实质感。
-
-> **痛点 ：**带外国朋友去吃地道的苍蝇馆子，墙上的手写菜单他们看不懂。用手机翻译软件扫一下，出来的全是标准宋体字，贴在斑驳的墙上极其违和，瞬间没了那股“地道”味儿。
-
-> **解法 ：**拍下墙上的菜单，指令 AI “翻译成英文，但保留墙面的陈旧感和手写风格”。
-
 >
-
+> 目标是翻译文字的同时，保留墙面、纸张那种“油烟熏过”或“风吹日晒”的真实质感。
+>
+> **痛点：**带外国朋友去吃地道的苍蝇馆子，墙上的手写菜单他们看不懂。用手机翻译软件扫一下，出来的全是标准宋体字，贴在斑驳的墙上极其违和，瞬间没了那股“地道”味儿。
+>
+> **解法：**拍下墙上的菜单，指令 AI “翻译成英文，但保留墙面的陈旧感和手写风格”。
+>
 > 中文大意：把墙上的中文菜名翻译成英文。关键！保留墙面/纸张原本陈旧、油腻的质感。新的英文看起来要像是写在同一表面的，带有磨损感。保留人民币符号和价格数字。自然排版。
-
+>
 > Via. 01Founder
 
 效果示例：
@@ -476,20 +454,18 @@ Remove all the tourists/people in the background behind the main subject. Intell
 
 # 赛博娱乐
 
-### 数字内容汉化（漫画/梗图/说明书）
+## 数字内容汉化（漫画/梗图/说明书）
 
-> 这个玩法主要针对二次元爱好者、海淘用户、冲浪达人 。
-
-> 目标是把外文内容变成“原生中文版”，没有任何翻译痕迹。
-
-> **痛点 ：**在推特看到好笑的梗图，或者在追没汉化的漫画（生肉）。用翻译软件截图翻译，字会盖住画面里的细节（比如人物的脸），而且很难看。
-
-> **解法 ：**上传图片，让 AI 识别气泡里的外文，擦除后用原本的字体风格（如漫画手写体）填入中文
-
+> 这个玩法主要针对二次元爱好者、海淘用户、冲浪达人。
 >
-
+> 目标是把外文内容变成“原生中文版”，没有任何翻译痕迹。
+>
+> **痛点：**在推特看到好笑的梗图，或者在追没汉化的漫画（生肉）。用翻译软件截图翻译，字会盖住画面里的细节（比如人物的脸），而且很难看。
+>
+> **解法：**上传图片，让 AI 识别气泡里的外文，擦除后用原本的字体风格（如漫画手写体）填入中文。
+>
 > 中文大意：把气泡/标题里的文字从[日文/英文]翻译成[中文]。无缝擦除原文并填充背景。风格匹配：使用随意的、手写风格的中文字体（如果是梗图则用粗体）来匹配原图美学。确保文字在气泡内排版自然。
-
+>
 > Via. 01Founder
 
 效果示例：
@@ -500,16 +476,15 @@ Remove all the tourists/people in the background behind the main subject. Intell
 Translate the text in the speech bubbles/captions from [Japanese/English] to [Chinese]. Seamless Cleaning : Erase the original text and perfectly fill the background (e.g., the white speech bubble or the colored image background). Style Matching : Render the translated Chinese text using a casual, handwritten-style font (or bold impact font for memes) that matches the aesthetic of the original image. Fit : Ensure the text fits naturally within the bubbles without overcrowding.
 ```
 
-## 插画风生成
+# 插画风生成
 
-### 日历插画
+## 日历插画
 
 > 根据用户输入的日期、地点和个性化信息，一键生成一张融合了本地文化特色、清新可爱、手绘风格的竖版日历插画。
-
+>
 > via.https://x.com/dotey/status/1993754650336428422?s=20
 
 测试示例：
-
 
 ![](img/ae9a8f3e18e794999e5f58d7b976ff27.png)
 
@@ -554,7 +529,7 @@ General Guidelines:
 中文版：
 
 ```
-Role：日历插画提示词
+Role：日历描述提示词
 
 （可选：输入日期、城市）
 
@@ -592,21 +567,20 @@ Role：日历插画提示词
 - 文字位置确保清晰易读，避免与插画重叠、遮挡。
 ```
 
-### 日历插画师 OP2
+## 日历插画师 OP2
 
 > 基于用户提供的日期、地点和人物参考图，智能生成一张个性化的手绘风格日历插画。Prompt能够自动判断日期属性（中美节日、工作日/周末），并围绕当天主题，创作出与氛围、季节紧密结合的人物形象、宜做事项和励志文案。
-
+>
 > via.https://x.com/qisi_ai/status/1993902145767350749?s=20
 
 测试示例：
 
-
-
-
 ![](img/a95975e6edd1bff954b72c79158ab324.png)
 
-```
-请生成一张或多张（基于用户提供的日期而定）可爱、时尚的竖版（3:4）日历插画，风格为清新明快的手绘插画风。人物数量、人物外形与气质须基于用户上传的【参考图】进行创作，并且所有“宜事项”和【励志句子】必须与当天的节日或日期氛围紧密相关（仅参考中国与美国的节日体系）。
+
+
+
+```请生成一张或多张（基于用户提供的日期而定）可爱、时尚的竖版（3:4）日历插画，风格为清新明快的手绘插画风。人物数量、人物外形与气质须基于用户上传的【参考图】进行创作，并且所有“宜事项”和【励志句子】必须与当天的节日或日期氛围紧密相关（仅参考中国与美国的节日体系）。
 
 ## 地点：
 ## 日期：
@@ -704,18 +678,15 @@ Role：日历插画提示词
 3. 整体布局要整齐、美观，留白适度，确保主视觉人物与文字信息互不抢占空间；文字位置清晰易读，避免遮挡人物重要细节，适合用作手机壁纸与社交媒体分享。
 ```
 
-### 把日常照片变成潮流 OOTD 插画
+## 把日常照片变成潮流 OOTD 插画
 
 > 可以保留你的特征、发型、气质，但用手绘插画的方式重新演绎。画面里还会自动拆解你的穿搭细节，像潮流杂志里的造型分析图那样，特别适合做穿搭分享、📕配图，或者单纯想换个风格记录自己。
 
-> Via. https://x.com/0xbisc/status/1992952171432902793?s=20 在此基础上微调成了中文展示版
-
-
+> Via. `https://x.com/0xbisc/status/1992952171432902793?s=20` 在此基础上微调成了中文展示版
 
 ![](img/4e3eee272371468afc4918f28c5c586b.png)
 
-```
-将我上**传照片中的**人物转换成潮流 OOTD 手绘插画风格。保持用户照片中的脸部特征、发型、气质，但用更可爱、年轻的潮流插画比例呈现。
+```将我上**传照片中的**人物转换成潮流 OOTD 手绘插画风格。保持用户照片中的脸部特征、发型、气质，但用更可爱、年轻的潮流插画比例呈现。
 
 ## 整体风格要求：
 
@@ -762,10 +733,9 @@ Oversize 潮流版型（更宽大、更松弛） 更大袖口、更阔的裤子 
 光线清晰：脸部特征和衣服细节要清楚，AI 才能准确识别
 ```
 
-英文翻译版：
+### 英文翻译版：
 
-```
-Transform the person in the uploaded photo into a trendy OOTD hand-drawn illustration style. Maintain the facial features, hairstyle, and vibe from the user&#x27;s photo, but present them with a cuter, younger, trendy illustration proportion.
+```Transform the person in the uploaded photo into a trendy OOTD hand-drawn illustration style. Maintain the facial features, hairstyle, and vibe from the user&#x27;s photo, but present them with a cuter, younger, trendy illustration proportion.
 
 ## Overall Style Requirements:
 
@@ -812,12 +782,11 @@ Photo Selection: Full-body shots work best to fully showcase the outfit
 Clear Lighting: Facial features and clothing details need to be clear for the AI to identify them accurately
 ```
 
-### 3D影视微缩海报造梦师
+## 3D影视微缩海报造梦师
 
 > 自动检索影视或小说作品信息，提取最具代表性的名场面，构建梦工厂风格的精致轴侧3D微缩模型，并辅以雅致的虚空背景与典雅的图文排版，生成极具收藏价值的高品质海报。
 
-```
-请为影视剧/小说《需要添加的名称》设计一张高品质的3D海报，需要先检索影视剧/小说信息和著名的片段场景。
+```请为影视剧/小说《需要添加的名称》设计一张高品质的3D海报，需要先检索影视剧/小说信息和著名的片段场景。
 
 首先，请利用你的知识库检索这个影视剧/小说的内容，找出一个最具代表性的名场面或核心地点。在画面中央，将这个场景构建为一个精致的轴侧视角3D微缩模型。风格要采用梦工厂动画那种细腻、柔和的渲染风格。你需要还原当时的建筑细节、人物动态以及环境氛围，无论是暴风雨还是宁静的午后，都要自然地融合在模型的光影里。
 
@@ -826,7 +795,5 @@ Clear Lighting: Facial features and clothing details need to be clear for the AI
 最后是底部的排版，请生成中文文字。居中写上小说名称，字体要有与原著风格匹配的设计感。在书名下方，自动检索并排版一句原著中关于该场景的经典描写或台词，字体使用优雅的衬线体。整体布局要像一个高级的博物馆藏品铭牌那样精致平衡。
 ```
 
-
-
-
 ![](img/d3c1e95d89b0ae2b0e2038f8e7551f63.png)
+

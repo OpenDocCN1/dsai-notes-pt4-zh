@@ -1,8 +1,9 @@
+
 # 敲敲手机就能一键去水印收藏"抖音"作品信息并同步到飞书表格全套教程
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/QijEdbj9MoFBf0xdZuFcXA2Kndg](https://xuqiwei1986.feishu.cn/docx/QijEdbj9MoFBf0xdZuFcXA2Kndg)
 
-# 效果展示
+## 效果展示
 
 ![](img/c69b7c63f7756191da0ba94e6537ef9f.png)
 
@@ -14,15 +15,15 @@
 
 > 最近在星球看到很多小伙伴实现各种快捷指令到飞书文档，不过没看到抖音收藏到飞书的。我来补充个
 
-# 配置流程
+## 配置流程
 
 ![](img/0955b5614c80a04cede87d6d315dd649.png)
 
-## 1.注册飞书
+### 1.注册飞书
 
 ![](img/0e4ab07a6b7b21317742da5d281c7726.png)
 
-### 创建多维表格副本
+#### 创建多维表格副本
 
 [【副本】抖音 to飞书收藏](https://vpbq24ngx4.feishu.cn/base/WItSbqaYvaJyYMsUTInc8PTsnJb?table=tblVoiCC7Yhsi9rs&view=vewnUAkX6L)册完后，打开我的副本🔗👉：
 
@@ -30,23 +31,23 @@
 
 ![](img/e7a1af2c73f291d761d18508b11158d5.png)
 
-### 记录下多维表格的访问凭证token和tableid
+#### 记录下多维表格的访问凭证`token`和`tableid`
 
 后面需要填写
 
-> **token**:在多维表格的浏览器上，在base/123?,其中123就是token
+> `token`:在多维表格的浏览器上，在`base/123?`，其中`123`就是`token`
 
 ![](img/406f25cb275ff814532f1d6cfb3fba4e.png)
 
-> **tableid**：在多维表格的浏览器上，在table=456&,其中456就是tableid
+> `tableid`:在多维表格的浏览器上，在`table=456&`，其中`456`就是`tableid`
 
 ![](img/01aaebdfb755fed7bea05386fe7eabf2.png)
 
-## 2.注册coze
+### 2.注册coze
 
-coze官网链接🔗:https://www.coze.cn/
+coze官网链接🔗:`https://www.coze.cn/`
 
-### 创建智能体
+#### 创建智能体
 
 名字按你自己意思取就行。
 
@@ -60,47 +61,47 @@ coze官网链接🔗:https://www.coze.cn/
 
 ![](img/3e58f82758ab4a4ae962767d091c899b.png)
 
-### 配置工作流
+#### 配置工作流
 
 ![](img/fedef43a6cefddc775b8f6146417e4e3.png)
 
-#### 添加插件「抖音短视频链接转换」
+##### 添加插件「抖音短视频链接转换」
 
 ![](img/10266c4c1b5735e9daad6d26b27c2e0a.png)
 
 ![](img/afecce18de1f66ac6e2f39cbd0994f15.png)
 
-#### 添加插件「douyin_link_reader」
+##### 添加插件「`douyin_link_reader`」
 
 ![](img/a5e47924749f686aa542c4bf2699cf8e.png)
 
 ![](img/b374fe5e067cf012c78482550c829336.png)
 
-#### 添加插件「抖音视频图集无水印下载」
+##### 添加插件「抖音视频图集无水印下载」
 
 ![](img/9ab222f57a67bed3d20fa13370eef97c.png)
 
 ![](img/b5ff44e06465c8e880c385e6ecf9f250.png)
 
-#### 添加节点「代码」
+##### 添加节点「代码」
 
 ![](img/07a55957f00dc446166102b18fc933fc.png)
 
 ![](img/478b9a30494fa648cb75a0ae1aee5876.png)
 
-> 点击「代码」节点，「输入参数」位置新增：data，yw_url ，content，content_type。
+> 点击「代码」节点，「输入参数」位置新增：`data`，`yw_url`，`content`，`content_type`。
 
-> 「输出变量」位置，填一个record。类型为string.看视频操作
+> 「输出变量」位置，填一个`record`。类型为`string`.看视频操作
 
 ![](img/2a15926cb90c6811d780d79ab54d8e35.png)
 
 [20250330_120747.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ISEabgxdPoK3KexNtNvcEjxfnRc)
 
-#### 复制填写代码
+##### 复制填写代码
 
 点击链接🔗复制代码👉
 
-> 先将代码的语言切换成pyhton，如下图。然后将上面复制来的代码。全部进行替换进行
+> 先将代码的语言切换成`pyhton`，如下图。然后将上面复制来的代码。全部进行替换进行
 
 > 最后直接关闭代码编辑窗口即可，会自动保存
 
@@ -108,7 +109,7 @@ coze官网链接🔗:https://www.coze.cn/
 
 ![](img/3833489b1b575695a60717fead8abf9f.png)
 
-#### 添加插件「飞书多维表格」
+##### 添加插件「飞书多维表格」
 
 ![](img/01d3501bca5ec5e76ff2484fe56f7d4b.png)
 
@@ -118,7 +119,7 @@ coze官网链接🔗:https://www.coze.cn/
 
 ![](img/07d19781df746268135b156f8d0ddedf.png)
 
-#### 配置结束，可以试运行下.没问题就点击右上角的「发布」按钮
+##### 配置结束，可以试运行下.没问题就点击右上角的「发布」按钮
 
 ![](img/c068d43a0cc6fc01e0d36406d2822046.png)
 
@@ -156,23 +157,23 @@ coze官网链接🔗:https://www.coze.cn/
 
 ![](img/f1066944434431025d05b0bbd34b40e6.png)
 
-##### coze的访问令牌token
+##### coze的访问令牌`token`
 
-这里创建的令牌就是token了。保存一下
+这里创建的令牌就是`token`了。保存一下
 
 ##### 工作流id
 
 ![](img/eff0e8eb41e7e33c44b0b217e5ea7336.png)
 
-# 3.配置iphone快捷指令
+### 3.配置iphone快捷指令
 
-快捷指令链接🔗：https://www.icloud.com/shortcuts/4ad51015dd4045d59de775f9e8c3e5c7
+快捷指令链接🔗：`https://www.icloud.com/shortcuts/4ad51015dd4045d59de775f9e8c3e5c7`
 
 点击保存为你自己的，
 
 然后打开，编辑拉到最底下
 
-注意这里口令前有个前缀Bearer 空格。不要删
+注意这里口令前有个前缀`Bearer` 空格。不要删
 
 ```
 Bearer pat_XXX
@@ -180,7 +181,7 @@ Bearer pat_XXX
 
 ![](img/95b30d176f5d78b26f6283f8d8dd5e6b.png)
 
-## 设置触发方式
+#### 设置触发方式
 
 > 可选，双击背面、三击打背面。或者辅助按钮
 

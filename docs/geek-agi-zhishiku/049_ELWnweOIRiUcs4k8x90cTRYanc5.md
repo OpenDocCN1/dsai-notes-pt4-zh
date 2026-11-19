@@ -1,3 +1,4 @@
+
 # 大模型相关面试题
 
 > 来源：[https://geekbang.feishu.cn/docx/HgX1dR0q7odLDexXvUrcHQ0UnJe](https://geekbang.feishu.cn/docx/HgX1dR0q7odLDexXvUrcHQ0UnJe)
@@ -6,12 +7,9 @@
 
 [大模型 RAG 经验面.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vo2IbC4E2oSwhDxeA8ocLVOjnXe)
 
-
 [大模型进阶面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V3tkbBbTEospvOxvjvQc6l5fnxh)
 
-
 [大模型面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MEwYbZrUJomWWuxp3QGctl8Qnvb)
-
 
 [最新大厂AI面试题.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HJxObx5xUolxmexH5eqcom9pnWc)
 

@@ -1,8 +1,9 @@
+
 # LangGraph（README）
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/UH7AdLrmLoqxwix4RwEcQhj7nWg](https://kq4b3vgg5b.feishu.cn/docx/UH7AdLrmLoqxwix4RwEcQhj7nWg)
 
-# 框架介绍
+## 框架介绍
 
 LangGraph 是一个开源框架，专为开发状态化、多代理的大型语言模型（LLM）应用程序而设计，该框架由 LangChain 生态系统支持，旨在帮助开发者构建状态化（stateful）、多代理（multi-agent）的大型语言模型（LLM）应用程序。
 
@@ -26,21 +27,21 @@ LangGraph 的多代理编排能力特别重要，支持由 LinkedIn、Uber、Kla
 
 > **关键引用：**
 
-+   LangGraph 官方网站介绍
++ LangGraph 官方网站介绍
 
-+   LangGraph GitHub 仓库
++ LangGraph GitHub 仓库
 
-+   [LangGraph 文档概述](https://langchain-ai.github.io/langgraph/)
++ [LangGraph 文档概述](https://langchain-ai.github.io/langgraph/)
 
-+   [LangGraph 记忆管理](https://langchain-ai.github.io/langgraph/concepts/memory/)
++ [LangGraph 记忆管理](https://langchain-ai.github.io/langgraph/concepts/memory/)
 
-+   LangGraph 流式处理指南
++ LangGraph 流式处理指南
 
-+   LangGraph token-by-token 流式
++ LangGraph token-by-token 流式
 
-+   [LangGraph 概念指南](https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/)
++ [LangGraph 概念指南](https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/)
 
-# 快速阅览
+## 快速阅览
 
 我们团队在文档不同的位置进行了详细的介绍，您可以点击进入并查看具体的技术文档。
 
@@ -50,23 +51,23 @@ LangGraph 的多代理编排能力特别重要，支持由 LinkedIn、Uber、Kla
 
 ⭐️ LangGraph智能体开发与部署上线流程（课件）
 
-+   [LangGraph快速入门与智能体开发实战！工业级智能体开发、部](https://www.bilibili.com/video/BV1Kx3CzyE6Q/?share_source=copy_web&vd_source=48c040395bfe575e55afe8f0b67a097f)署、运维、前端对话全流程实践，NL2SQL、Python代码解释器开发！（视频）
++ [LangGraph快速入门与智能体开发实战！工业级智能体开发、部署、运维、前端对话全流程实践，NL2SQL、Python代码解释器开发！（视频）](https://www.bilibili.com/video/BV1Kx3CzyE6Q/?share_source=copy_web&vd_source=48c040395bfe575e55afe8f0b67a097f)
 
 ### ☑️ LangGraph+MCP开发智能体
 
 ⭐️ LangGraph MCP智能体开发实战（课件）
 
-+   [LangChain&LangGraph+MCP技术实战，双](https://www.bilibili.com/video/BV1bzMdzkERM/?share_source=copy_web&vd_source=48c040395bfe575e55afe8f0b67a097f)向MCP接入与封装双向开发实践！（视频）
++ [LangChain&LangGraph+MCP技术实战，双向MCP接入与封装双向开发实践！（视频）](https://www.bilibili.com/video/BV1bzMdzkERM/?share_source=copy_web&vd_source=48c040395bfe575e55afe8f0b67a097f)
 
 ### ☑️ LangGraph DeepResearch企业级开发实战
 
 ⭐️ DeepResearch应用开发实战（课件）
 
-+   [大模型幻觉克星，DeepResearch开发实战！从零手搓DeepResearch，实操三](https://www.bilibili.com/video/BV1SZubzBEVt)类主流开发范式，谷歌开源DeepResearch国内适配开发与本地部署（视频）
++ [大模型幻觉克星，DeepResearch开发实战！从零手搓DeepResearch，实操三类主流开发范式，谷歌开源DeepResearch国内适配开发与本地部署（视频）](https://www.bilibili.com/video/BV1SZubzBEVt)
 
 ---
 
-# ❤️ 赋范社区交流群
+## ❤️ 赋范社区交流群
 
 海量硬核独家技术**干货内容**+无门槛**技术交流**~
 
@@ -75,5 +76,3 @@ LangGraph 的多代理编排能力特别重要，支持由 LinkedIn、Uber、Kla
 上图**扫码**👆即刻入群！
 
 📍 社群技术交**流氛围浓厚，**不定期开设硬**核干货&前沿技术公开课噢**~
-
----

@@ -1,3 +1,4 @@
+
 # 第二期直播课 - 3月8日启动
 
 > 来源：[https://my.feishu.cn/docx/OtXldWNX8owiCLxNbCEcBLo1nDf](https://my.feishu.cn/docx/OtXldWNX8owiCLxNbCEcBLo1nDf)
@@ -10,9 +11,9 @@
 
 2期课从3月8日开始，你可以通过老金的小破站进行查看
 
-http://aiking.dev
+`http://aiking.dev`
 
-**陪伴群 399 - 永久**
+## 陪伴群 399 - 永久
 
 1、你能进入一个学习氛围好的环境，大家都热爱学习。
 
@@ -22,17 +23,17 @@ http://aiking.dev
 
 4、老金我自己喜欢用的一些软件推荐，或者我自制的一些小工具。
 
-第2期直播课群 399 - 季度（每季度约10堂课）
+## 第2期直播课群 399 - 季度（每季度约10堂课）
 
-1、我的 aiking.dev 是怎么搭建的一步步还原：含 第三方登录 + 第三方支付 + 前后端分离 + 管理后台 + 域名 + CF转流 + Vercel & Github 托管
+1、我的 `aiking.dev` 是怎么搭建的一步步还原：含 第三方登录 + 第三方支付 + 前后端分离 + 管理后台 + 域名 + CF转流 + Vercel & Github 托管
 
 2、小龙虾基础搭建 及 使用
 
 3、本期主题汇总：从Workflow基础概念、Spec、上下文工程、多Agent编排都包含、TDD、AI Review、Auto Coding。通过实战，来讲解怎么用好CC和小龙虾
 
-二期课将增加顶级框架概念
+### 二期课将增加顶级框架概念
 
-> **“元”**
+> “元”
 
 会随着课程进度不断深入拿案例进行讲解。
 
@@ -42,9 +43,9 @@ http://aiking.dev
 
 徒弟规划已有初版，近期招募
 
-### 课程内容
+## 课程内容
 
-1、我的网站复刻：https://www.aiking.dev/
+1、我的网站复刻：`https://www.aiking.dev/`
 
 ![](img/b80f21af42b242f6b92123b7b3a5a34d.png)
 

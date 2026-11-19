@@ -1,3 +1,4 @@
+
 # 2 款 Midjourney 常用的辅助机器人
 
 > 来源：[https://aigcreative.feishu.cn/docx/Gvimd6hrios0drxAM2jcaj4qnEc](https://aigcreative.feishu.cn/docx/Gvimd6hrios0drxAM2jcaj4qnEc)
@@ -6,9 +7,9 @@
 
 今天给大家介绍 2 款 Midjourney 辅助插件。
 
-以下是这两款插件：Trace Journey /InsightFace 以及使用方法。
+以下是这两款插件：`Trace Journey` /`InsightFace` 以及使用方法。
 
-Trace Journey 是一款 Midjourney 辅助工具，可以处理 Midjourney 生成的图片，一般用来转换矢量文件。InsightFace则是一款换脸插件。
+`Trace Journey` 是一款 Midjourney 辅助工具，可以处理 Midjourney 生成的图片，一般用来转换矢量文件。`InsightFace` 则是一款换脸插件。
 
 ![](img/add88f0e722fc0c436a7036d94189449.png)
 

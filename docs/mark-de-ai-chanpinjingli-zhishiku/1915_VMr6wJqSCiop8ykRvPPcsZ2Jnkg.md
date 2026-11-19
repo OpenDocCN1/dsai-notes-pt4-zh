@@ -1,22 +1,17 @@
+
 # AI行业资讯3.17
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/MpUBdoYNNowCW2xBPNqcgd6onMb](https://qqs7y1hozd1.feishu.cn/docx/MpUBdoYNNowCW2xBPNqcgd6onMb)
 
-+   Google推出新一代开源多模态模型Gemma 3
++ Google推出新一代开源多模态模型Gemma 3
++ 智元机器人发布通用具身基座大模型GO-1
++ OpenAI发布Agent工具包
++ Google Gemini 2.0 Flash引入原生图像生成功能
++ Anuttacon推出AI驱动太空剧情互动游戏《Whispers From The Star》
++ 珠海华发集团战略投资智谱5亿元，共建城市级GLM大模型空间
++ 《人工智能生成合成内容标识办法》发布，9月1日起施行
 
-+   智元机器人发布通用具身基座大模型GO-1
-
-+   OpenAI发布Agent工具包
-
-+   Google Gemini 2.0 Flash引入原生图像生成功能
-
-+   **Anuttacon推出AI驱动太空剧情互动游戏《Whi**spers From The Star》
-
-+   珠海华发集团战略投资智谱5亿元，共建城市级GLM大模型空间
-
-+   《人工智能生成合成内容标识办法》发布，9月1日起施行
-
-# Google推出新一代开源多模态模型Gemma 3
+## Google推出新一代开源多模态模型Gemma 3
 
 3月12日，Google正式推出新一代开源多模态模型Gemma 3。该模型采用与Gemini 2.0相同的技术，是Google迄今为止最先进、最便携的开源模型。Gemma 3专为端侧设备设计，适用于手机、笔记本电脑到工作站等多种设备，助力开发者在不同场景下进行AI应用开发。
 
@@ -28,17 +23,15 @@ Google称Gemma 3为「全球最佳单加速器模型」，能在单个GPU或TPU�
 
 ![](img/135d60c349a8a08460330e590a309ddb.png)
 
-# 智元机器人发布通用具身基座大模型GO-1
+## 智元机器人发布通用具身基座大模型GO-1
 
 3月10日，智元机器人正式发布了首个通用具身基座大模型：智元启元大模型（Genie Operator-1，简称GO-1）。
 
 GO-1是一个通过观看人类操作视频，让机器人像人类一样学习和执行各种任务的AI系统。它提出了一种名为ViLLA的架构，主要由VLM（多模态大模型）和MoE（混合专家）组成：
 
-+   VLM：通过互联网上的大量图片和文字数据，让机器人能看懂场景和理解语言指令。
-
-+   Latent Planner（隐式规划器）：MoE中的Latent Planner通过分析人类操作的视频，学会了怎么规划动作。
-
-+   Action Expert（动作专家）：MoE中的Action Expert通过真实的机器人操作数据，学会了怎么精确地执行动作，比如拿起东西、倒水等。
++ VLM：通过互联网上的大量图片和文字数据，让机器人能看懂场景和理解语言指令。
++ Latent Planner（隐式规划器）：MoE中的Latent Planner通过分析人类操作的视频，学会了怎么规划动作。
++ Action Expert（动作专家）：MoE中的Action Expert通过真实的机器人操作数据，学会了怎么精确地执行动作，比如拿起东西、倒水等。
 
 这三部分配合起来，让机器人可以像人类一样学习和执行任务。测试结果显示，GO-1的表现比之前的最好模型强很多。例如在“倒水”、“清理桌面”和“补充饮料”这些任务上，成功率从46%提升到了78%，其中加入“隐式规划器”后，成功率提高了12%。
 
@@ -48,21 +41,19 @@ GO-1是一个通过观看人类操作视频，让机器人像人类一样学习�
 
 ![](img/3f90142912e74e2dc8a958281bd700cd.png)
 
-# OpenAI发布Agent工具包
+## OpenAI发布Agent工具包
 
 3月12日，OpenAI发布了一系列专为构建AI Agents设计的新工具和API，包括Responses API、三种内置工具以及开源的Agents SDK。这些工具旨在帮助开发者更容易地创建能自动完成任务的AI Agents。
 
-+   Responses API结合了Chat Completions API的简洁性和Assistants API的工具使用能力，让开发者通过一次API调用即可利用多种工具和多轮模型交互解决复杂任务。
-
-+   内置工具包括Web搜索工具、文件搜索工具和计算机使用工具，分别用于获取网络信息、检索文档信息和自动化计算机操作。
-
-+   开源的Agents SDK基于Swarm框架升级，简化了多Agent工作流程的编排。
++ Responses API结合了Chat Completions API的简洁性和Assistants API的工具使用能力，让开发者通过一次API调用即可利用多种工具和多轮模型交互解决复杂任务。
++ 内置工具包括Web搜索工具、文件搜索工具和计算机使用工具，分别用于获取网络信息、检索文档信息和自动化计算机操作。
++ 开源的Agents SDK基于Swarm框架升级，简化了多Agent工作流程的编排。
 
 这些新工具的发布，标志着OpenAI在推动AI Agents发展方面迈出了重要一步，降低了构建和部署AI Agents的技术门槛，使更多企业能够快速融入AI技术，提升生产力。未来，随着模型能力的进一步发展，AI Agents有望成为各行业的重要劳动力组成部分。
 
 ![](img/c2c0b52c65cff81935f0c4312f2bc816.png)
 
-# Google Gemini 2.0 Flash引入原生图像生成功能
+## Google Gemini 2.0 Flash引入原生图像生成功能
 
 昨日，Google宣布其Gemini 2.0 Flash正式引入原生图像生成功能，结合多模态输入、增强版推理以及自然语言理解来生成图像。该功能支持文字理解并生成图像，同时能够理解上下文保持角色和图像场景的一致性。
 
@@ -74,7 +65,7 @@ Gemini 2.0 Flash还支持自然语言对话的理解，利用现实世界的内�
 
 ![](img/2d05c533783482b551eb019db94478e8.png)
 
-# Anuttacon推出AI驱动太空剧情互动游戏《Whispers From The Star》
+## Anuttacon推出AI驱动太空剧情互动游戏《Whispers From The Star》
 
 3月15日，由米哈游创始人蔡浩宇创立的Anuttacon公司发布了新游戏《Whispers From The Star》的首支宣传片，并在海外开启测试招募。
 
@@ -84,7 +75,7 @@ Gemini 2.0 Flash还支持自然语言对话的理解，利用现实世界的内�
 
 ![](img/0b8333dbceac443b7770a7e7d1146b2a.png)
 
-# 珠海华发集团战略投资智谱5亿元，共建城市级GLM大模型空间
+## 珠海华发集团战略投资智谱5亿元，共建城市级GLM大模型空间
 
 珠海华发集团宣布战略投资北京智谱华章科技有限公司（简称“智谱”）5亿元人民币，推进智谱基座GLM大模型的技术创新与生态发展。
 
@@ -94,7 +85,7 @@ Gemini 2.0 Flash还支持自然语言对话的理解，利用现实世界的内�
 
 ![](img/c2e4712e9bb667d085b7f0cb691033d6.png)
 
-# 《人工智能生成合成内容标识办法》发布，9月1日起施行
+## 《人工智能生成合成内容标识办法》发布，9月1日起施行
 
 近日，国家互联网信息办公室、工业和信息化部、公安部、国家广播电视总局联合发布了《人工智能生成合成内容标识办法》，该办法自2025年9月1日起正式施行。
 

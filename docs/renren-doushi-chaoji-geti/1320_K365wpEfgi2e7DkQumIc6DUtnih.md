@@ -1,8 +1,9 @@
+
 # 2023-05-24百家金融机构热议GPT：用户体验、风控决策与高效运营成为金融三大需求
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/SQ1DdEhk4oXhj0x46hwc8JmHnGc](https://xuqiwei1986.feishu.cn/docx/SQ1DdEhk4oXhj0x46hwc8JmHnGc)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/SQ1DdEhk4oXhj0x46hwc8JmHnGc`
 
-https://www.cs.com.cn/yh/04/202305/t20230524_6346217.html
+`https://www.cs.com.cn/yh/04/202305/t20230524_6346217.html`
 
 中证网讯（记者 王方圆）记者5月24日从奇富科技获悉，近日，奇富科技对104家中小金融机构进行访谈，旨在分析金融机构对于GPT产品的需求。根据调研结果，92%的金融机构认为，标准化程度越高，AI可替代性就越强。目前金融机构对GPT产品的需求主要集中在改善用户体验、辅助风控决策、高效运营等三个方面。
 

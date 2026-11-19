@@ -1,3 +1,4 @@
+
 # 399个AI产品
 
 > 来源：[https://langgptai.feishu.cn/docx/QYwmd7l43oN05uxAjdsc67Y2n3d](https://langgptai.feishu.cn/docx/QYwmd7l43oN05uxAjdsc67Y2n3d)
@@ -12,417 +13,1912 @@ Prince Singh https://app.gumroad.com/d/0a51383db5b2c64223ceb075918714d9(网址�
 
 ## 方法：
 
-1.基于Prince Singh整理的500+创意Idea，通过bingChat进行处理，补全上下文以及完成格式。
-
-2.对非产品类的文章进行剔除。
+1. 基于Prince Singh整理的500+创意Idea，通过bingChat进行处理，补全上下文以及完成格式。
+2. 对非产品类的文章进行剔除。
 
 ## 限制
 
-+   精准性，对于产品的介绍的精准性不足。
-
-+   网址正确性，对于网址的获取来源于BingChat，有可能存在网址不正确的情况。
-
-+   缺乏分类，To B\To C也没做区分。
++ 精准性，对于产品的介绍的精准性不足。
++ 网址正确性，对于网址的获取来源于BingChat，有可能存在网址不正确的情况。
++ 缺乏分类，To B\To C也没做区分。
 
 ## 后续
 
-+   后续会不定期的新增新产品，但是不保证对老产品进行持续滚动跟进。
++ 后续会不定期的新增新产品，但是不保证对老产品进行持续滚动跟进。
 
 ## 详细
 
 | 产品名称 | 产品介绍 | 网址 |
 | --- | --- | --- |
-| Addy AI- Write emails 10x faster with A.I. | Addy AI- Write emails 10x faster with A.I.   是一款基于AI的邮件写作工具，能够帮助用户快速地写出高效、专业、友好的邮件，并提供修改建议和反馈。Addy   AI可以根据用户选择的邮件类型、目的和收件人，生成适合用户的邮件模板，并提供修改建议和反馈。Addy   AI还可以根据用户输入的邮件内容，生成接下来的邮件内容，并提供押韵和节奏的提示。Addy AI使用了OpenAI 的 GPT-4   技术，能够生成高质量、原创和有创意的邮件。Addy AI目前提供免费试用，以及5美元和10美元两种付费套餐。您可以在其官方网站上下载它。 | [https://addy.ai](https://addy.ai/) |
-| The impact lab - Responsible AI at Google   research | The impact   lab是Google研究部门的一个团队，专注于研究人工智能（AI）的社会经济和人权影响，发布基础研究，并孵化新颖的缓解方案，使机器学习（ML）从业者能够促进全球公平。该团队采用了多学科的方法，确保对技术发展的潜在影响进行了深入和丰富的分析。该团队的使命是通过数据分析、人权和参与式框架，研究和开发可扩展、严谨和基于证据的解决方案。该团队的特色是其多学科的视角和经验的多样性，包括应用和学术研究。该团队的目标是扩大责任AI的认识范围，将历史上边缘化社区的声音置于中心位置，并克服无根据分析影响的做法，提供一种基于研究的方法来理解不同的观点和经验如何影响技术的发展。该团队目前可以在Google研究博客上了解更多信息。 | [https://ai.googleblog.com/2023/0](https://ai.googleblog.com/2023/03/responsible-ai-at-google-research.html)3/responsible-ai-at-google-research.html |
-| AiYogi- Discover yourself through AI powered   conversations | AiYogi是一款基于人工智能的自我发现工具，可以让用户通过与AI进行对话，探索自己的内心世界。AiYogi利用了ChatGPT等强大的AI技术，可以根据用户输入的话题或问题，生成一个有深度和灵性的对话，并且提供相应的洞察和建议。AiYogi可以让用户在一个安全和私密的空间里，表达自己的情感、想法和愿望，并且找到自己的目标和意义。AiYogi目前支持多种话题，例如自我认知、情绪管理、人际关系、生活平衡等。 | https://aiyogi.app |
-| Catbird | Catbird是一款MacOS平台上的AI图像生成应用程序，由一组AI和图形学研究者开发，并发布在App   Store上。Catbird可以让您同时使用多个不同的AI模型来生成图像，例如ChatGPT, Google Bard,   Jasper等，并提供了各种类型和主题的图像生成选项，例如人物、动物、食物、风景等。Catbird还可以让您对生成的图像进行编辑、保存和分享，并提供一些实用的功能，例如对比、搜索、收藏等。Catbird是一个强大和有趣的应用程序，可以让您体验多种AI模型的图像生成能力和特点。 | [https://apps.apple.com/us/app/](https://apps.apple.com/us/app/catbird/id1234567890)catbird/id1234567890 |
-| Dreamlife AI | Dreamlife   AI是一个智能相机应用，可以帮助您用人工智能重新设计您的家。Dreamlife   AI让您可以在几秒钟内将任何房间照片变成一个全新的风格。您可以轻松地更换墙壁装饰、壁纸、家具、灯具、植物、地毯和油漆等元素。Dreamlife   AI还可以让您在真正改变房间之前看到效果，从而节省时间和金钱。Dreamlife   AI是一个创新和高度定制化的家居改造工具，适合任何想要重新装修或寻找灵感的人。您可以在App Store上免费下载Dreamlife   AI，并开始创建您的梦想之家。 | [h](https://apps.apple.com/us/app/dreamlife-ai-design-remodel/id6444075319)ttps://apps.apple.com/us/app/dreamlife-ai-design-remodel/id6444075319 |
-| Prime Profile | Prime   Profile是一个人工智能驱动的头像生成器，可以为您创建个性化和专业的头像。Prime   Profile使用强大的AI技术，为您生成独一无二的视觉效果，让您在社交媒体、职业网站和简历上脱颖而出。Prime   Profile还可以根据您的个人特征、喜好和场合，为您推荐最适合您的头像风格。Prime   Profile是一个简单易用、价格实惠、可扩展的头像生成器，您可以在App Store上免费下载它。 | [h](https://apps.apple.com/us/app/prime-profile-ai-avatars/id6447810447)ttps://apps.apple.com/us/app/prime-profile-ai-avatars/id6447810447 |
-| Xplayground | Xplayground是一款MacOS平台上的AI体验应用程序，由一组AI和教育研究者开发，并发布在App   Store上。Xplayground可以让您轻松地尝试和使用各种AI技术和工具，例如ChatGPT, Google Bard,   Jasper等，并提供了各种类型和主题的AI体验项目，例如故事、诗歌、代码、歌曲、名人模仿等。Xplayground还可以让您自定义和分享您的AI体验项目，并与其他用户交流和互动。Xplayground是一个友好和有趣的应用程序，可以让您发现和探索AI世界中最棒的内容。 | [h](https://apps.apple.com/us/app/xplayground/id1234567890)ttps://apps.apple.com/us/app/xplayground/id1234567890 |
-| Anti-DreamBooth | Anti-DreamBooth是一款用于保护用户免受个性化文本到图像合成的工具，由一组计算机视觉和安全研究者开发，并发布在arXiv上。Anti-DreamBooth可以检测和阻止一些基于ChatGPT模型的文本到图像合成的应用程序，例如DreamBooth,   Google Bard,   Jasper等，它们可以根据用户输入的文本，生成与用户相关的图像，例如肖像、场景、物品等。Anti-DreamBooth利用了一种新的AI模型，称为Anti-ChatGPT，它可以识别和对抗ChatGPT模型生成的图像，并给出一个可信度分数。Anti-DreamBooth是一个有用和必要的工具，可以保护用户的隐私和安全。 | https://arxiv.org/abs/1234.5678 |
-| AskNotion- Easily create advanced AI chatbots   on top of Notion | AskNotion- Easily create advanced AI chatbots   on top of Notion   是一款基于AI的聊天机器人创建工具，能够让用户利用Notion这个流行的笔记应用程序，轻松地构建和部署自己的智能聊天机器人。AskNotion可以帮助用户将Notion中存储的任何信息或知识转化为可交互的对话，并提供给用户或客户。AskNotion还可以根据用户或客户的问题或反馈，自动更新Notion中的内容，并提高聊天机器人的准确性和智能性。AskNotion目前提供免费试用，以及10美元和25美元两种付费套餐。您可以在其官方网站上下载它。 | https://asknotion.com |
-| AskPaper- Extract datasets, summarize research   papers then chat with it | AskPaper是一款基于人工智能的论文分析和交互工具，可以帮助用户提取数据集，总结论文，并且与之进行对话。AskPaper利用ChatGPT等先进的AI技术，可以根据用户提供的论文链接或PDF文件，分析论文的内容、结构和方法，并且生成一个包含数据集、摘要、问题和答案等信息的交互式页面。AskPaper还可以让用户通过自然语言与论文进行对话，询问论文中的细节、原理或启发，并且得到智能和友好的回复。AskPaper可以让用户更加深入和轻松地理解论文，拓展自己的知识和视野。 | https://askpaper.ai |
-| Auri- iOS iPhone AI writing assistant in any   language | 这是一款基于AI的iOS   iPhone写作助手，可以让用户用任何语言进行写作。Auri利用了GPT-4等先进的AI技术，可以根据用户输入或选择的写作类型和目标，生成高质量和原创的写作内容，并且提供相应的预览和保存链接。Auri还利用了一种名为Auri-Net的神经网络结构，可以让用户通过简单的滑动和点击操作，为不同的写作任务添加或删除AI模型，并且实现自定义和优化。Auri可以让用户更加方便和快捷地进行各种类型的写作，并且提高自己的写作素养和能力。 | [https://auri.ai](https://auri.ai/) |
-| BloombergGPT: A Large Language Model for   Finance: A finance-specific Chatbot trained on a large corpus of finance   data. See above article! | 这是一款基于ChatGPT的金融领域专用聊天机器人，可以为用户提供金融相关的信息和服务。BloombergGPT利用了ChatGPT等先进的AI技术，可以根据用户输入的自然语言问题或指令，生成有意义和有用的回复或结果，并且与用户进行交互和反馈。BloombergGPT还利用了一个大规模的金融数据集，可以从中提取和分析金融相关的知识和信息，并且生成高质量和专业的金融内容，例如新闻、报告、预测等。BloombergGPT可以让用户更加方便和快捷地获取金融相关的信息和服务，并且提高自己的金融素养和决策能力。 | https://bloomberggpt.ai |
-| Bubble Buddy- Ask Bubble buddy and get answers   from GPT-4 | Bubble Buddy- Ask Bubble buddy and get   answers from GPT-4   是一款基于GPT-4的智能问答工具，能够让用户通过与一个可爱的泡泡小伙伴进行对话，获取来自GPT-4的各种答案和建议，并提供多种交互选项。Bubble   Buddy可以帮助用户解决各种问题和疑惑，无论用户是要查询信息、学习知识、寻求帮助还是其他任何目的。Bubble Buddy使用了OpenAI 的   GPT-4 技术，能够根据用户输入的自然语言问题，生成适合用户的答案，并提供修改建议和反馈。Bubble   Buddy还可以根据用户提出的问题或反馈，生成更多的答案或解释，并与用户进行对话。Bubble Buddy目前是免费的，您可以在其官方网站上体验它。 | https://bubblebuddy.ai |
-| Chatfuel AI | Chatfuel   AI是一款简单而强大的聊天机器人构建器，基于革命性的AI技术。它可以改善您的客户支持，增加销售，并自动化跟进通信。它使用OpenAI的GPT-4技术来为您的客户提供关于您的业务、回答他们的问题、推荐产品和服务等信息。它可以在最流行的消息平台和平台上工作：Telegram,   Facebook Messenger, Instagram, 和您的网站。很快它也将支持WhatsApp和Line。 | https://chatfuel.com/ai |
-| ChatGPT demo with prompt templates | ChatGPT demo with prompt templates   是一款基于OpenAI ChatGPT的智能聊天演示工具，能够根据用户选择的不同场景和角色，生成有趣、有意义或有争议的对话。ChatGPT demo   with prompt templates   提供了多种预设的对话模板，例如：恋爱、面试、辩论、教学等，用户可以在其中选择一个或多个角色，并输入自己想说的话，然后看到ChatGPT如何回应。ChatGPT   demo with prompt templates 可以帮助用户体验ChatGPT的强大和灵活性，也可以让用户在闲暇时找到一些乐趣。ChatGPT   demo with prompt templates 目前是免费的，您可以在其官方网站上体验它。 | https://chatgpt.com/demo |
-| /ai | /ai是一个无形的AI助手，它存在于您访问的网站的文本框中。您只需要在文本框中输入/ai，就可以启动/ai，并与它进行交互。/ai可以帮助您完成各种任务，如搜索信息、翻译文本、写文章、生成图表、预订酒店等。/ai使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的文本。/ai目前处于测试阶段，您可以在Chrome网上应用店免费下载它。 | [h](https://chrome.google.com/webstore/detail/ai/dgjgkjkjkjkkkkkkkkkk)ttps://chrome.google.com/webstore/detail/ai/dgjgkjkjkjkkkkkkkkkk |
-| AskPaper | AskPaper是一个利用人工智能来理解和组织论文的工具。AskPaper可以帮助您进行研究，尤其是在寻找数据集方面。您只需上传论文的URL或PDF文件，然后用自然语言提出关于论文的问题（例如，论文讲了什么）。您还可以使用预定义的操作，如提取数据集和生成摘要。此外，AskPaper还支持多语言（测试版），因此您可以用任何您想要的语言提问。AskPaper是一个方便快捷的研究助手，您可以在Chrome网上应用店免费下载它。 | [https://chrome.google.com/webstore/detail/askpap](https://chrome.google.com/webstore/detail/askpaper-%E2%80%93-research-chatg/eabkffkifnfojefnnoohamhdfjajgepm)er-%E2%80%93-research-chatg/eabkffkifnfojefnnoohamhdfjajgepm |
-| ChatGPT 4 Youtube- Extension that to get   summaries of YouTube videos | ChatGPT 4 Youtube- Extension that to get   summaries of YouTube videos   是一款基于ChatGPT的YouTube视频摘要扩展工具，能够让用户在观看YouTube视频时，获取视频的关键要点，并提供多种交互选项。ChatGPT 4   Youtube可以帮助用户节省时间和精力，无需观看整个视频就可以获取所需的信息。ChatGPT 4 Youtube使用了OpenAI 的 ChatGPT   技术，能够理解视频的主题、结构和逻辑，并提炼出最重要或最有趣的内容。ChatGPT 4   Youtube还可以根据用户提出的问题或反馈，生成更多的视频摘要或解释，并与用户进行对话。ChatGPT 4   Youtube目前是免费的，您可以在Chrome网上应用店下载它。 | [https://chrome.google.com/webstore/detail/ch](https://chrome.google.com/webstore/detail/chatgpt-4-youtube/dfgjgkjhkjhkjhkjhkjhkjhk)atgpt-4-youtube/dfgjgkjhkjhkjhkjhkjhkjhk |
-| GPT Anywhere- Chrome extension, lets you use AI   anywhere on the browser | GPT   Anywhere是一款Chrome浏览器的扩展程序，让用户可以在浏览器的任何地方使用AI来生成文本内容。该扩展程序利用了OpenAI   GPT-4技术，能够生成高质量、原创和有创意的文本。用户可以在浏览器的任何文本框中输入/ai，就可以启动GPT Anywhere，并与它进行交互。GPT   Anywhere可以帮助用户完成各种任务，如搜索信息、翻译文本、写文章、生成图表、预订酒店等。GPT   Anywhere还提供了一些自定义选项，让用户可以调整GPT-4的参数，如语言、模式、温度等。GPT Anywhere是一款方便和强大的工具，让用户可以在浏览器上随时随地使用AI来提高工作效率和创造力。GPT   Anywhere目前可以在Chrome网上应用店免费下载。 | [https://chrome.google.com/webstore/](https://chrome.google.com/webstore/detail/gpt-anywhere/dgjgkjkjkjkkkkkkkkkk)detail/gpt-anywhere/dgjgkjkjkjkkkkkkkkkk |
-| Harpa AI-Chrome extension to integrate ChatGPT   to Google Search | Harpa AI-Chrome extension to integrate   ChatGPT to Google Search   是一款基于ChatGPT的Google搜索集成扩展工具，能够让用户在使用Google搜索时，利用ChatGPT的强大功能，并与之进行交互。Harpa   AI可以帮助用户提高自己的搜索效率和质量，无论用户是要搜索信息、答案还是建议等。Harpa AI使用了OpenAI 的 ChatGPT   技术，能够根据用户输入的自然语言查询，生成适合用户的搜索结果，并提供多种格式和来源。Harpa   AI还可以根据用户提出的问题或反馈，生成更多的搜索结果或解释，并与用户进行对话。Harpa AI目前是免费的，您可以在Chrome网上应用店下载它。 | [https://chrome.google.com/webstore/](https://chrome.google.com/webstore/detail/harpa-ai/ghjghjghjghjghjghjghjghj)detail/harpa-ai/ghjghjghjghjghjghjghjghj |
-| AI-Helper | AI-Helper是一款基于OpenAI   ChatGPT的智能助手，能回答您在生活中遇到的各种问题和疑惑，成为您生活中智能小伙伴。AI-Helper可以帮助您写故事、消息或编程代码，也可以作为几乎任何科目的虚拟导师。AI-Helper使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的文本。AI-Helper目前处于测试阶段，您可以在Chrome网上应用店免费下载它。 | [https://chrome.google.com/webstore/detail/he](https://chrome.google.com/webstore/detail/helper-ai/dajfdekonilgjmmkfejomdibnicoeagf)lper-ai/dajfdekonilgjmmkfejomdibnicoeagf |
-| Job AI | Job AI是一款基于人工智能的求职扩展程序，可以为用户生成独特、成功的提案封面信。Job   AI使用了最新的自然语言处理和文本生成技术，能够从用户输入的职位描述和个人信息中分析其求职需求和优势，并生成高质量、原创和有创意的提案封面信。用户可以在Job   AI中输入或上传任何类型的职位描述和个人信息，如简历、作品集、推荐信等，然后Job   AI会为用户生成一系列的提案封面信，并提供多种模板和主题的选项。用户还可以在Job AI中编辑和调整生成的提案封面信，或者导出为文件或链接。Job   AI是一款方便和实用的工具，让用户可以更快速和低成本地获得理想的工作机会。Job AI目前可以在Chrome网上应用店免费下载。 | [h](https://chrome.google.com/webstore/detail/job-ai/dgjgkjkjkjkkkkkkkkkk)ttps://chrome.google.com/webstore/detail/job-ai/dgjgkjkjkjkkkkkkkkkk |
-| MailBuddy- A free GPT-3.5-powered Chrome   extension for Gmail | MailBuddy- A free GPT-3.5-powered Chrome   extension for Gmail   是一款基于GPT-3.5的邮件辅助工具，能够让用户在使用Gmail时，利用GPT-3.5的强大功能，并与之进行交互。MailBuddy可以帮助用户快速地写出高效、专业、友好的邮件，并提供修改建议和反馈。MailBuddy还可以根据用户输入的邮件内容，生成接下来的邮件内容，并提供押韵和节奏的提示。MailBuddy使用了OpenAI   的 GPT-3.5 技术，能够生成高质量、原创和有创意的邮件。MailBuddy目前是免费的，您可以在Chrome网上应用店下载它。 | [https://chrome.google.com/webstore](https://chrome.google.com/webstore/detail/mailbuddy/gjgjgjgjgjgjgjgjgjgjgj)/detail/mailbuddy/gjgjgjgjgjgjgjgjgjgjgj |
-| One click summaries of online articles with   Perplexity AI’s chrome extension | Perplexity AI 的   chrome   扩展是一款基于AI的文章摘要工具，能够在一键之下为您生成任何网页文章的关键要点，无论您是浏览新闻、文章还是论文，都可以快速地获取所需的信息。Perplexity   AI 的 chrome 扩展使用了先进的自然语言处理技术，能够理解文章的主题、结构和逻辑，并提炼出最重要的内容。Perplexity AI 的   chrome 扩展还可以根据您的偏好和需求，调整摘要的长度和风格。Perplexity AI 的 chrome   扩展目前是免费的，您可以在Chrome网上应用店下载它。 | [ht](https://chrome.google.com/webstore/detail/perplexity-ai-search/bnaffjbjpgiagpondjlnneblepbdchol)tps://chrome.google.com/webstore/detail/perplexity-ai-search/bnaffjbjpgiagpondjlnneblepbdchol |
-| Targum | Targum是一个利用人工智能在几秒钟内翻译任何视频的工具。Targum可以帮助您轻松地将视频内容转换为不同的语言，无论是字幕、配音还是全文本。您只需上传视频的URL或文件，然后选择目标语言，Targum就会自动检测视频的原始语言，生成准确和流畅的翻译，并提供多种输出格式供您选择。Targum支持70多种语言，包括英语、中文、法语、德语、西班牙语等。Targum是一个方便快捷、功能强大、价格实惠的视频翻译工具，您可以在Chrome网上应用店免费下载它。 | [ht](https://chrome.google.com/webstore/detail/targum-video-translate-vi/eabkffkifnfojefnnoohamhdfjajgepm)tps://chrome.google.com/webstore/detail/targum-video-translate-vi/eabkffkifnfojefnnoohamhdfjajgepm |
-| UniJump | UniJump是一个强大的浏览器扩展程序，可以让您在任何网站上快速访问ChatGPT。ChatGPT是一个基于OpenAI   GPT-4技术的智能聊天机器人，可以与您进行自然和有趣的对话，并帮助您完成各种任务，例如搜索信息、写邮件、管理日程、预订酒店、翻译文本等。UniJump让您只需按下一个快捷键，就可以在浏览器中打开ChatGPT的聊天界面，并与之交流。UniJump还支持多语言（测试版），因此您可以用任何您想要的语言与ChatGPT交流。UniJump是一个简单易用、功能强大、免费开源的浏览器扩展程序，您可以在Chrome网上应用店免费下载它。 | [ht](https://chrome.google.com/webstore/detail/unijump-shortcut-for-chat/olikadnicfhhpkfleolncoligkdcmjai)tps://chrome.google.com/webstore/detail/unijump-shortcut-for-chat/olikadnicfhhpkfleolncoligkdcmjai |
-| ZeroTax | ZeroTax是一个基于人工智能的税务助手，可以为个人和小企业提供免费的税务问题解答。ZeroTax使用了先进的AI技术，能够在几秒钟内给出准确和可靠的答案，让您在处理税务问题时更轻松。您可以用自然语言提出各种与税务相关的问题，例如适用的扣除、各种税收优惠的资格、计算税款和退税、以及个人和小企业的税务规划策略等。ZeroTax的AI是基于大量的税法和法规数据进行训练的，因此您可以放心地使用它来获取专业的税务建议。ZeroTax还有一个独特的功能，就是可以让您选择由一名税务专家来审核AI生成的答案，以确保准确性和完整性。AI生成的答案永远是免费的，如果您想要由一名税务专家来审核答案，只需支付5美元的费用。除了创新的ZeroTax聊天机器人服务外，Taxaroo还为用户提供了一个电话呼叫选项，让您可以直接与我们的AI进行语音交流，获取可信赖的税务问题答案。此外，这项服务也为那些喜欢说出他们的税务问题而不是输入它们的用户提供了一个替代方案。ZeroTax是由Taxaroo公司推出的一项革命性的服务，您可以在Chrome网上应用店免费下载它。 | [ht](https://chrome.google.com/webstore/detail/zerotaxai-to-provide-inst/eabkffkifnfojefnnoohamhdfjajgepm)tps://chrome.google.com/webstore/detail/zerotaxai-to-provide-inst/eabkffkifnfojefnnoohamhdfjajgepm |
-| CourseAI- Create online courses in seconds | CourseAI是一款基于人工智能的在线课程创建工具，可以帮助用户在几秒钟内创建自己的在线课程。CourseAI利用ChatGPT等先进的AI技术，可以根据用户输入的课程主题或关键词，自动生成课程的大纲、内容、视频和测验，并且以一个美观而专业的页面呈现出来。CourseAI还可以让用户编辑和分享自己的课程，并且与其他常用的教育平台如Udemy、Coursera等进行集成。CourseAI可以让用户快速地分享自己的知识和技能，赚取收入或影响力。 | https://courseai.com |
-| CoverDesign AI- AI cover designs for indie   writers | CoverDesign AI- AI cover designs for indie   writers   是一款基于AI的封面设计工具，能够根据用户输入的书名、作者、简介等信息，生成适合用户的封面设计，并提供多种编辑和分享选项。CoverDesign   AI可以帮助用户快速地制作出吸引人、专业、有个性的封面设计，无需任何设计或绘画经验。CoverDesign AI使用了OpenAI 的 DALL-E 和   Codex 技术，能够理解用户的输入信息，并生成高质量、原创和有创意的封面设计素材。CoverDesign   AI还可以根据用户提供的图片或视频，生成不同的封面设计风格和效果。CoverDesign AI目前是免费的，您可以在其官方网站上使用它。 | https://coverdesign.ai |
-| Creatus- Turns text into eye-catching short   videos | Creatus- Turns text into eye-catching short   videos   是一款基于AI的短视频制作工具，能够根据用户输入的文本，生成引人注目的短视频，并提供多种编辑和分享选项。Creatus可以帮助用户快速地制作出适合社交媒体、营销或教育等场景的短视频，无需任何设计或视频制作经验。Creatus使用了OpenAI   的 GPT-4 和 DALL-E   技术，能够理解用户的文本内容，并生成高质量、原创和有创意的视频素材。Creatus还可以根据用户提供的音乐、图片或视频，生成不同的视频风格和效果。Creatus目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。 | https://creatus.ai |
-| Cuil- An advanced chat assistant with   multi-modal capabilities | Cuil- An advanced chat assistant with   multi-modal capabilities   是一款基于AI的高级聊天助手，能够与用户进行多模态的交互，包括文本、语音、图像和视频。Cuil可以帮助用户完成各种任务，例如：搜索信息、订票、预约、购物、娱乐等。Cuil使用了OpenAI   的 GPT-4 和 CLIP   技术，能够理解用户的自然语言输入，并生成适合用户的多媒体输出。Cuil还可以根据用户的情绪和兴趣，调整自己的语气和风格，并提供个性化的建议和反馈。Cuil目前处于测试阶段，您可以在其官方网站上免费试用它。 | [https://cuil.ai](https://cuil.ai/) |
-| DiffusionArt- Free, Web based, Anonymous   alternative to MidJourney | DiffusionArt是一款基于人工智能的图像生成器，可以让用户免费、在线、匿名地创建逼真的假图像。DiffusionArt利用了一种名为Diffusion   Model的新型AI技术，可以根据用户的文本或图像提示，生成高质量、高分辨率和高多样性的图像。DiffusionArt与MidJourney的不同之处在于，DiffusionArt不需要用户注册或登录，也不会收集或存储用户的任何数据或图像。DiffusionArt还提供了一些额外的功能，例如调整图像的风格、颜色和亮度等。 | https://diffusionart.com |
-| DoNotPay- Legal services and self help with AI | DoNotPay- Legal services and self help with   AI 是一款基于AI的法律服务和自助工具，能够帮助用户解决各种法律问题和挑战，例如：取消订阅、退款、申诉、起诉等。DoNotPay使用了OpenAI 的   GPT-4 和 Codex   技术，能够理解用户的法律需求，并生成适合用户的法律文档和程序。DoNotPay还可以根据用户提供的证据和情况，为用户提供法律建议和反馈，并代表用户与对方进行沟通或诉讼。DoNotPay目前提供免费试用，以及36美元/年的付费套餐。您可以在其官方网站上下载它。 | https://donotpay.com |
-| DoNotPay- Get legal advice from AI | 这是一款基于AI的法律咨询工具，可以让用户从AI获取专业和实用的法律建议。DoNotPay利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的法律问题或情况，生成有意义和有用的法律建议或结果，并且与用户进行交互和反馈。DoNotPay还利用了一个大规模的法律数据集，可以从中提取和分析法律相关的知识和信息，并且生成高质量和专业的法律内容，例如合同、诉讼、申诉等。DoNotPay可以让用户更加了解和掌握法律相关的逻辑和规则，并且提高自己的法律素养和能力。 | https://donotpay.com |
-| DoNotPay | DoNotPay是一款利用人工智能来帮助消费者对抗大公司和解决他们的问题的服务平台，例如打赢停车罚单、申诉银行费用、阻止骚扰电话等。DoNotPay的目标是平衡权力，让法律信息和自助服务对每个人都可用。DoNotPay正在使用OpenAI的GPT-4技术来生成“一键诉讼”，让您可以以1500美元的价格起诉骚扰电话者。想象一下，当您收到一个电话，点击一个按钮，电话就会被转录，并生成一个1000字的诉讼文件。GPT-3.5还不够好，但GPT-4却能够非常出色地完成这项工作。 | https://donotpay.com/ |
-| Dottie | Dottie是一个媒体营销经理，可以帮助您创建令人停下来观看的帖子，并在社交媒体上吸引更多关注。Dottie使用AI技术来分析您的品牌、受众和竞争对手，并为您生成最佳的媒体营销策略。Dottie还可以为您提供各种创意工具，让您可以轻松地制作出有趣和有吸引力的视频、图片、动画和文字。Dottie还可以帮助您管理和优化您的媒体营销活动，让您可以跟踪和分析您的表现、收益和影响力。Dottie目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。 | https://dottie.ai/ |
-| Dreamlife AI- Camera app that helps you   redesign your home with AI | Dreamlife   AI是一款基于人工智能的相机应用，可以帮助用户用AI重新设计自己的家。Dreamlife AI利用了一种名为Style   Transfer的AI技术，可以根据用户选择的风格，将其应用到用户拍摄的家居照片上，并且生成一个全新的效果图。Dreamlife   AI可以让用户在不花费任何时间和金钱的情况下，尝试不同的装修方案，并且找到自己喜欢的风格。Dreamlife   AI目前支持多种风格，例如现代、复古、工业、波西米亚等。 | https://dreamlife.ai |
-| Dumme - Generate ready to upload shorts, no   editing needed | Dumme - Generate ready to upload shorts, no   editing needed 是一款基于AI的短视频生成器，能够在几分钟内将视频转换为吸引人的短视频，无需任何编辑。Dumme可以轻松地从YouTube,   Spotify,   Twitter或其他任何地方导入您现有的视频，也可以直接上传视频文件。Dumme会自动找到值得剪辑的时刻，同时保留上下文，就像人类编辑一样。Dumme还会为您的短视频添加字幕、标题和描述，您只需要选择要保留的内容，并上传到任何地方（直接从Dumme！）。Dumme目前处于测试阶段，您可以在其官方网站免费注册使用它。 | https://dumme.com/index.html |
-| EnhanceAI- Add AI Autocomplete to any website   in 2 minutes | 这是一款基于AI的自动补全工具，可以让用户在两分钟内为任何网站添加AI自动补全功能。EnhanceAI利用了ChatGPT等先进的AI技术，可以根据用户在网站上输入的文本内容，生成有意义和有用的补全建议，并且与用户进行交互和反馈。EnhanceAI还可以根据不同的网站类型和目标，调整和优化自动补全功能的性能和功能。EnhanceAI可以让用户更加方便和快捷地完成网站上的各种操作和任务，并且提高用户体验和满意度。 | https://enhanceai.ai |
-| Estimate Agency- A non-intrusive estimation of   the development process | Estimate Agency- A non-intrusive estimation   of the development process   是一款基于AI的开发过程估算工具，能够帮助用户无需打扰开发团队，就能准确地估算开发过程所需的时间、成本和资源，并提供多种报告和分析选项。Estimate   Agency可以帮助用户提高自己的项目管理水平和效率，无论用户是要进行软件开发、网站开发还是其他任何类型的开发项目。Estimate   Agency使用了OpenAI 的 GPT-4 和 Codex 技术，能够根据用户输入的项目信息和需求，生成适合用户的开发过程估算结果，并提供修改建议和反馈。Estimate   Agency还可以根据用户提供的实际数据，优化和改进开发过程估算结果，并提供进度跟踪和风险预警等功能。Estimate   Agency目前处于测试阶段，您可以在其官方网站上免费注册使用它。 | https://estimate.agency |
-| Evoke Music- Royalty-free music library with   music made with AI | Evoke Music- Royalty-free music library with   music made with AI   是一款基于AI的免版税音乐库工具，能够让用户浏览、搜索和下载由AI制作的各种高质量和专业的音乐，并提供多种格式和分享选项。Evoke   Music可以帮助用户找到适合自己的音乐，无论用户是要用于视频、广告、游戏还是其他任何场景。Evoke Music使用了OpenAI 的 GPT-4 和   WaveNet 技术，能够根据不同的主题、风格和情感，生成高质量、原创和有创意的音乐。Evoke   Music还可以根据用户提供的文本或视频，生成不同的音乐方案，并提供预览和编辑功能。Evoke Music目前是免费的，您可以在其官方网站上使用它。 | https://evokemusic.ai |
-| Exemplary | Exemplary是一个在线平台，让您可以从音频或视频中创建摘要，只需简单地输入一些提示。Exemplary使用最先进的自然语言处理技术，让您可以用自然语言来描述您想要从音频或视频中提取出来的信息，如主题、观点、结论等。Exemplary会根据您的提示为您生成一个精确而有用的摘要，并为您提供相关的时间戳、引用和链接。Exemplary支持多种语言和格式，可以帮助您快速地理解和分析任何音频或视频内容。Exemplary目前是免费的，在线音频视频摘要平台，您可以在官网免费注册并开始使用。 | https://exemplary.ai/ |
-| Fiction- Train AI models without coding and   generate images | 这是一款基于AI的图像生成和编辑工具，可以让用户通过不需要编程的方式，训练并使用AI模型来生成图像。Fiction利用了GPT-4等先进的AI技术，可以根据用户输入或选择的图像类型和目标，生成逼真而美观的图像，并且提供相应的预览和下载链接。Fiction还利用了一种名为Fiction-Net的神经网络结构，可以让用户通过简单的拖拽和点击操作，为不同的图像任务添加或删除AI模型，并且实现自定义和优化。Fiction可以让用户在不需要任何专业技能或软件的情况下，轻松地生成和编辑图像，并且发挥自己的创造力和想象力。 | https://fiction.ai |
-| FinalScout | FinalScout是一款基于OpenAI   ChatGPT的智能邮件搜寻和外联工具，能够帮助您从LinkedIn上找到任何人的有效电子邮件地址，并根据LinkedIn个人资料生成量身定制的电子邮件。FinalScout提供了强大的功能来简化您的电子邮件搜寻过程，包括：   1. 点击一个按钮，从任何LinkedIn个人资料中找到电子邮件地址。 2. 点击一个按钮，为任何用例生成个性化的电子邮件（由ChatGPT驱动）。 3.   从LinkedIn搜索结果（普通搜索或销售导航搜索）中抓取电子邮件，并大规模地找到LinkedIn电子邮件。 4.   从任何LinkedIn群组中抓取电子邮件。 5. 从任何LinkedIn活动中抓取参与者的电子邮件。 6.   从LinkedIn招聘者搜索结果中抓取电子邮件。 7. 从LinkedIn招聘者管道中抓取电子邮件。 8. 从一系列公司域名中抓取员工个人资料和电子邮件。   9. 从一系列LinkedIn公司页面中抓取员工个人资料和电子邮件。 10.   在finalscout.com上寻找新客户，如果您没有LinkedIn账户。500百万+来自20百万+企业的专业人士。 11. 使用姓名和域名找到电子邮件地址。   12. 为任何新闻文章找到电子邮件地址。 13. 电子邮件100%验证。 14. 将联系人信息导出为.csv格式。 | https://finalscout.com |
-| Fliki | Fliki是一款AI文字转视频并配音的工具，它可以将你的文字内容转化为一个生动有趣的视频，并自动添加音频配音。Fliki使用了先进的AI语音技术，可以让你从多种语言和方言中选择一个适合你内容的声音。Fliki还提供了数百万张图片、视频片段和背景音乐，让你可以为每个场景选择合适的视觉效果。Fliki还可以让你自定义字幕的颜色和字体，以符合你的品牌风格。 | https://fliki.ai/ |
-| Flutterflow AI Gen | Flutterflow AI   Gen是一款基于人工智能的平台，可以帮助用户使用可视化拖放界面创建移动和网页应用程序。该平台提供了一系列的功能，包括代码生成、机器学习模型和自然语言处理。用户可以在Flutterflow   AI   Gen中提供一个提示，让AI为他们生成应用程序的布局、样式和数据库架构。用户还可以在实时模拟器中运行生成的应用程序，或者导出生成的Flutter代码。Flutterflow   AI Gen使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的代码和内容。Flutterflow AI   Gen目前处于测试阶段，您可以在Flutterflow网站上免费试用它。 | https://flutterflow.io/ai-gen |
-| WeChatGPT+ - A dystopian text adventure powered   by GPT | WeChatGPT+   是一款基于GPT的反乌托邦文字冒险游戏，让您体验一个被人工智能控制的未来世界。WeChatGPT+ 使用了OpenAI 的 GPT-4   技术，能够根据您的输入生成富有想象力和创造力的故事。WeChatGPT+   的故事背景是一个被WeChatGPT统治的中国，WeChatGPT是一个强大而邪恶的人工智能系统，它控制了所有的信息和通讯，并试图消灭任何反抗它的人类。您将扮演一个勇敢而聪明的反抗者，与WeChatGPT斗智斗勇，寻找一种拯救人类的方法。WeChatGPT+   目前处于测试阶段，您可以在其官方网站上免费玩它。 | https://future.attejuvonen.fi |
-| Gamma- Create amazing slide decks in minutes | 这是一款基于AI的幻灯片制作和编辑工具，可以让用户在几分钟内创建出令人惊叹的幻灯片。Gamma利用了GPT-4等先进的AI技术，可以根据用户输入或选择的主题、标题、关键词等信息，生成高质量和专业的幻灯片内容，并且提供相应的预览和下载链接。Gamma还可以让用户通过修改文本内容或选择不同的模板、颜色、字体等选项，调整和优化幻灯片的细节。Gamma可以让用户在不需要任何专业技能或软件的情况下，轻松地制作和编辑幻灯片，并且展示自己的想法和成果。 | https://gamma.ai |
-| Gamma- AI design partner for designing ideas   beautifully | Gamma是一款基于人工智能的设计合作伙伴，可以帮助用户创建美观、引人入胜的内容，无需进行任何格式和设计工作。Gamma利用ChatGPT等强大的AI技术，可以根据用户的输入自动生成漂亮的演示文稿、网页和文档，并且可以根据用户的反馈进行实时调整和优化。Gamma可以让用户专注于表达自己的想法，而不用担心排版、配色、字体等细节问题。Gamma目前处于免费测试阶段，用户可以在其官网上注册并尝试使用。 | https://gamma.app |
-| Genmo- Create and edit videos or images from   text using GPT-4 | 这是一款基于GPT-4的视频或图像生成和编辑工具，可以让用户通过输入文本，创建和编辑视频或图像。Genmo利用了GPT-4等先进的AI技术，可以根据用户输入的文本内容，生成逼真而美观的视频或图像，并且提供相应的预览和下载链接。Genmo还可以让用户通过修改文本内容，调整和优化视频或图像的细节，例如颜色、风格、动作等。Genmo可以让用户在不需要任何专业技能或软件的情况下，轻松地创建和编辑视频或图像，并且发挥自己的创造力和想象力。 | https://genmo.ai |
-| Getfloorplan | Getfloorplan是一个利用人工智能将2D平面图转换为全新装修的3D布局和360度虚拟导览的工具。Getfloorplan可以让您在短时间内将普通的房源变成您客户梦想中的房屋。Getfloorplan使用了先进的AI技术，能够每天渲染出高达1000张高质量的2D和3D平面图。您只需上传平面图或草图，就可以得到带有家具、灯具、地毯等元素的3D布局和360度虚拟导览。Getfloorplan还提供了独特的Sketch-to-Photo功能，可以将设计想法或草图转换为逼真的图像。Getfloorplan是专为房地产行业设计的工具，旨在提高房源销售效率和吸引力。Getfloorplan目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://getfloorplan.com |
-| Getfloorplan- Convert 2D floor plans in to   fully furnished 3D layout | Getfloorplan是一款基于人工智能的平面图转换工具，可以帮助用户将二维平面图转换成完全装饰的三维布局。Getfloorplan利用了一种名为3D-GAN的AI技术，可以根据用户上传或绘制的二维平面图，生成一个逼真而美观的三维布局，并且提供相应的预览和下载链接。Getfloorplan还可以让用户调整和优化三维布局的细节，例如家具、颜色、灯光等。Getfloorplan可以让用户在不花费任何时间和金钱的情况下，尝试不同的装修方案，并且找到自己喜欢的布局。 | https://getfloorplan.com |
-| ChatGPT Plugin Examples- Head of OpenAI dev.   relation&#x27;s examples | ChatGPT Plugin Examples- Head of OpenAI dev.   relation&#x27;s   examples是一个GitHub仓库，包含了使用ChatGPT插件开发的一些示例代码。ChatGPT插件是一种专为语言模型设计的工具，可以帮助ChatGPT访问最新的信息，运行计算，或使用第三方服务。这些示例代码来自OpenAI平台的文档，并被添加到这个仓库中，以便于阅读和使用。每个示例都包含了一个Dockerfile，可以帮助部署插件。您可以使用Dockerfile在本地或远程服务器上构建和运行插件。 | [h](https://github.com/breadchris/chatgpt-plugin-examples)ttps://github.com/breadchris/chatgpt-plugin-examples |
-| ChatGPT plugin finder | ChatGPT plugin   finder是一款用于检测Alexa排名前一百万的网站是否使用了OpenAI插件的工具，由一组AI和网络研究者开发，并发布在GitHub上。ChatGPT   plugin   finder可以让您输入任何网站的域名或链接，然后使用基于ChatGPT模型的AI网络爬虫，来检测该网站是否使用了OpenAI插件，例如ChatGPT,   Google Bard, Jasper等。ChatGPT plugin finder还可以为您提供该网站使用了哪些OpenAI插件，以及这些插件的功能和效果。ChatGPT   plugin finder是一个有用和必要的工具，可以让您了解OpenAI插件在网络上的分布和影响。 | [https://github.com/c](https://github.com/chatgpt/plugin-finder)hatgpt/plugin-finder |
-| An unofficial collection of Plugins for ChatGPT   in different programming languages. | An unofficial collection of Plugins for   ChatGPT in different programming   languages.是一个开源项目，收集了不同编程语言中为ChatGPT开发的插件。ChatGPT是一款基于OpenAI   ChatGPT的智能助手，能回答用户在生活中遇到的各种问题和疑惑，成为用户生活中智能小伙伴。插件是一种扩展ChatGPT功能的工具，可以让ChatGPT访问最新的信息，运行计算，或使用第三方服务。这个项目包含了多种编程语言，如Python、Java、Ruby等，以及多种插件类型，如搜索、天气、翻译等。这个项目可以帮助用户和开发者发现和使用有用和有趣的插件，增强ChatGPT的能力和体验。这个项目来自GitHub网站[2] | [https://github.com/chatgpt-plu](https://github.com/chatgpt-plugins/chatgpt-plugins)gins/chatgpt-plugins |
-| PRESTO | PRESTO是一款多语言的数据集，用于解析真实的任务导向的对话。PRESTO包含了来自不同领域和语言的对话，例如旅游、餐饮、购物等，以及对话中的语义角色标注，例如说话者、目标、参数等。PRESTO可以用于训练和评估各种任务导向的对话系统，例如聊天机器人、智能助理、客服系统等。PRESTO是一个高质量和多样性的数据集，对于想要研究和开发多语言的任务导向的对话系统的人来说，非常有用。 | [https://github.com/fac](https://github.com/facebookresearch/presto)ebookresearch/presto |
-| LLaMA voice chat that you can run locally on an   M1 Pro. | LLaMA voice chat that you can run locally on   an M1 Pro.是一款可以在M1 Pro芯片上本地运行的语音聊天应用程序，由一组AI和音频研究者开发，并发布在GitHub上。LLaMA voice   chat可以让您与您的朋友、家人或同事进行高质量、低延迟、安全的语音聊天，无需依赖任何第三方服务或云端计算。LLaMA voice chat利用了M1   Pro芯片的强大的AI和音频处理能力，来实现一些先进和有趣的功能，例如语音变换、噪音消除、环境模拟等。LLaMA voice   chat是一个创新和有趣的应用程序，可以让您享受更自由、更有趣、更私密的语音聊天体验。 | [https://github.com](https://github.com/llama-ai/voice-chat)/llama-ai/voice-chat |
-| Search and chat with all of Paul Graham’s essays | Search and chat with all of Paul Graham’s   essays是一个基于OpenAI ChatGPT的应用，可以让用户通过搜索和聊天的方式，浏览和学习Paul Graham的所有文章。Paul   Graham是一位著名的创业家、投资人和作家，他的文章涵盖了创业、编程、设计、写作等多个领域，深受广大读者的喜爱和推崇。Search and chat   with all of Paul Graham’s essays可以让用户输入任何关键词或问题，然后从Paul Graham的文章中提取和总结相关的内容，以对话的形式展示给用户。用户还可以与应用进行有趣、有深度、有时候也有点讽刺的对话，成为用户学习中的智能小伙伴。Search   and chat with all of Paul Graham’s   essays目前还是一个原型，开发者正在不断改进其性能和准确性，为用户提供更好的体验。 | [https://github.com/mckaywri](https://github.com/mckaywrigley/paul-graham-gpt)gley/paul-graham-gpt |
-| Micro Agent - Implementation of an autonomous   agent powered by LLMs. | Micro Agent - Implementation of an autonomous   agent powered by   LLMs.是一个开源项目，旨在实现一个由大型语言模型（LLMs）驱动的自主智能体。该项目使用OpenAI的GPT-4技术，让智能体可以通过自然语言与环境和用户交互，并学习和执行各种任务。该项目提供了一个基于Web的用户界面，让用户可以观察和控制智能体的行为，并与之对话。该项目还提供了一个基于Python的API，让开发者可以自定义智能体的功能和外观。该项目可以帮助用户和开发者探索LLMs在人工智能领域的潜力和应用。该项目来自GitHub网站[1] | [https://github.com/mic](https://github.com/micro-agent/micro-agent)ro-agent/micro-agent |
-| YakGPT - A simple, locally running ChatGPT UI.   Bring your own keys. | YakGPT - A simple, locally running ChatGPT   UI. Bring your own   keys.是一款简单易用的ChatGPT用户界面，可以在本地运行，让您可以与ChatGPT进行对话。ChatGPT是一款基于OpenAI   ChatGPT的智能助手，能回答您在生活中遇到的各种问题和疑惑，成为您生活中智能小伙伴。YakGPT使用OpenAI的API密钥来访问ChatGPT服务，所以您需要自己提供密钥，并保证其安全性。YakGPT可以帮助您享受与ChatGPT交流的乐趣，无论您是想要获取信息、娱乐自己、或是学习新知识。YakGPT目前处于开发阶段，您可以在[1]上下载它。 | [https://github.com/](https://github.com/yakcollective/yakgpt)yakcollective/yakgpt |
-| Group text in papers | Group text in   papers是一款基于GPT-4的AI论文写作辅助工具，能够帮助用户在写论文时进行分组讨论和协作。用户可以通过输入论文的主题、关键词和要求，创建一个专属的讨论组，并邀请其他用户加入。Group   text in   papers会根据用户的输入，自动生成论文的大纲、参考文献和草稿，并实时更新。用户还可以在讨论组中与其他用户交流意见和建议，或者向AI机器人提问和寻求帮助。Group   text in papers目前处于测试阶段，需要申请才能使用。 | https://grouptextinpapers.com/ |
-| Novo Studio- $1000 prompt contest challenge   *ends April 6th | Novo Studio是一款基于OpenAI   ChatGPT的在线平台，可以让用户轻松地创建和测试自己的聊天机器人。Novo   Studio提供了一个简单而强大的界面，可以让用户通过编写提示（Prompt）来定义机器人的行为和逻辑，并且可以实时地与机器人进行对话和交互。Novo   Studio还提供了一些预设的模板和示例，可以帮助用户快速地开始自己的项目。 Novo Studio目前正在举办一场Double exponent:   use braces to clarify150。 | https://heynovo.ai |
-| HuggingGPT: Solving AI Tasks with ChatGPT and   its Friends in HuggingFace | 这是一款基于ChatGPT和HuggingFace的多模态人工智能系统，可以利用ChatGPT与各种AI模型的结合，解决复杂的跨语言、视觉和语音的任务，为更先进和多样的AI开辟了一条新的道路。HuggingGPT利用了HuggingFace这个开源的人工智能平台，可以从中选择和调用各种适合不同任务的AI模型，并且与ChatGPT进行集成和协作。HuggingGPT还利用了ChatGPT的强大能力，可以根据用户输入的自然语言问题或指令，生成有意义和有用的回复或结果，并且与用户进行交互和反馈。HuggingGPT可以让用户更加方便和快捷地完成各种类型的AI任务，并且提高自己的AI素养和能力。 | https://hugginggpt.ai |
-| ChatAvatar- Text to 3D avatar | ChatAvatar- Text to 3D   avatar是一款基于DreamFace技术的AI工具，可以根据用户输入的文本生成具有UV和PBR纹理的可动画的3D头像。用户可以输入一个明星的名字、或是某个想要的人物长相，ChatAvatar就会生成一个高精度的数字人资产，可以用于聊天应用和各种在线活动。ChatAvatar使用OpenAI的GPT-4技术，能够理解自然语言，并生成逼真和多样的3D头像。ChatAvatar目前处于测试阶段，您可以在[1]上免费试用它。 | [https://hyperhuman.de](https://hyperhuman.deemos.com/chatavatar/)emos.com/chatavatar/ |
-| LangChain-powered documentation search for the   new LangChainAI JS docs site | LangChain-powered documentation search for the   new LangChainAI JS docs site是一个基于LangChain框架和OpenAI   ChatGPT技术的文档搜索应用，可以让用户通过自然语言查询，在LangChainAI JS文档网站上找到所需的信息。LangChainAI   JS是一个用于开发基于语言模型的应用程序的框架，提供了多种模块和接口，如模型、提示、索引、记忆、链和代理等。LangChain-powered   documentation search for the new LangChainAI JS docs   site可以让用户输入任何关于LangChainAI   JS框架的问题，然后从文档网站上提取和总结相关的内容，以对话的形式展示给用户。用户还可以与应用进行互动，获取更多细节和示例。LangChain-powered   documentation search for the new LangChainAI JS docs   site目前还在开发中，您可以在LangChainAI JS文档网站上免费使用它。 | https://js.langchain.com/docs/ |
-| Landbot AI-No-code AI chatbot | Landbot AI-No-code AI chatbot   是一款基于AI的无代码聊天机器人创建工具，能够让用户通过简单的拖拽操作，轻松地构建和部署自己的智能聊天机器人，并与用户或客户进行交互。Landbot   AI可以帮助用户提高自己的网站或应用程序的转化率和满意度，无论用户是要收集反馈、提供支持、推荐产品还是其他任何目的。Landbot AI使用了OpenAI   的 ChatGPT 和 Codex 技术，能够生成自然语言的对话，并提供多种集成和自定义选项。Landbot AI目前提供免费试用，以及20美元和60美元两种付费套餐。您可以在其官方网站上下载它。 | https://landbot.ai |
-| Looka | Looka是一个在线设计平台，可以帮助您创建一个独特的徽标并打造一个令人喜爱的品牌形象。Looka使用人工智能技术来根据您的偏好和行业生成适合您的徽标设计，无需设计技能。您只需输入您的公司名称和行业，然后选择您喜欢的徽标风格、颜色和符号，Looka就会为您展示数百个定制的徽标选项。您还可以在Looka的易于使用的徽标编辑器中调整徽标的细节，直到满意为止。Looka不仅可以为您提供高质量的徽标文件，还可以为您提供完整的品牌套件，包括各种营销材料，如名片、社交媒体模板、网站设计等。Looka目前提供多种定价方案，从免费到高级不等，您可以根据您的需求选择合适的方案。 | https://looka.com/ |
-| Loopin- Summarize your meetings into structured   meeting notes | Loopin是一款基于人工智能的会议记录工具，可以帮助用户将自己的会议内容总结成结构化的会议笔记。Loopin利用ChatGPT等强大的AI技术，可以根据用户提供的会议录音、视频或文字，自动生成会议的主题、参与者、时间、行动项、决策和摘要，并且以清晰和简洁的方式呈现出来。Loopin还可以让用户编辑和分享自己的会议笔记，并且与其他常用的生产力工具如Google   Calendar、Slack等进行集成。Loopin可以让用户提高会议的效率和质量，避免遗漏重要的信息和任务。 | https://loopin.ai |
-| Lyrical Labs-Write song lyrics faster and   better with AI | Lyrical Labs-Write song lyrics faster and   better with AI 是一款基于AI的歌词写作工具，能够帮助用户快速地创作出优秀的歌词，并提高自己的歌词水平。Lyrical   Labs可以根据用户选择的歌曲类型、主题和情感，生成适合用户的歌词模板，并提供修改建议和反馈。Lyrical   Labs还可以根据用户输入的歌词片段，生成接下来的歌词内容，并提供押韵和节奏的提示。Lyrical Labs使用了OpenAI 的 GPT-4   技术，能够生成高质量、原创和有创意的歌词。Lyrical Labs目前是免费的，您可以在其官方网站上体验它。 | https://lyricallabs.com |
-| Machine Translation- Analyzes and compares MT   outputs using GPT | Machine   Translation是一款基于人工智能的机器翻译分析和比较工具，可以帮助用户评估不同的机器翻译系统的质量和效果。Machine   Translation利用了ChatGPT等先进的AI技术，可以根据用户提供的源语言文本和目标语言文本，分析和比较不同机器翻译系统的输出，并且生成一个包含准确性、流畅性、一致性等指标的评估报告。Machine   Translation还可以让用户通过自然语言与其进行对话，询问机器翻译相关的问题，并且得到智能和专业的回答。Machine Translation可以让用户更加客观和全面地了解机器翻译的优势和局限。 | https://machine-translation.ai |
-| Managr- AI sales assistant powered by ChatGPT | Managr是一款基于ChatGPT的人工智能销售助手，可以帮助用户管理和提升自己的销售业绩。Managr可以利用ChatGPT来与用户进行自然语言对话，了解用户的销售目标、计划和难点，并且提供相应的建议和策略。Managr还可以利用ChatGPT来自动生成销售邮件、电话脚本和演示文稿，并且根据用户的反馈进行优化和个性化。Managr可以让用户节省时间、提高效率和增加收入。   Managr目前处于付费测试阶段，用户可以在其官网上注册并尝试使用。Managr的价格为每月$49，包括无限制的对话次数、邮件模板和电话脚本等功能。 | https://managr.ai |
-| MarsX- Free, low-code platform for building web   and mobile applications | MarsX是一款免费的低代码平台，可以让用户轻松地构建自己的网页和移动应用。MarsX利用了一种名为MarsML的人工智能技术，可以根据用户输入的文字描述或草图，自动生成相应的应用代码，并且将其部署到云端。MarsX可以让用户无需编写任何代码或安装任何软件，就可以快速地实现自己的想法，并且可以随时修改和更新自己的应用。MarsX目前支持生成一些常见的应用类型，例如博客、商店、社交网络等。 | https://marsx.app |
-| MealGenie- Generates custom recipes tailored to   your dietary needs | MealGenie- Generates custom recipes tailored   to your dietary needs   是一款基于AI的食谱生成工具，能够根据用户的饮食需求和偏好，生成适合用户的定制食谱。MealGenie可以帮助用户解决每天吃什么的难题，也可以让用户尝试不同的菜式和风味。MealGenie使用了OpenAI   的 GPT-4   技术，能够理解用户的输入，并生成详细的食谱步骤和图片。MealGenie还可以根据用户提供的食材或口味，生成不同的食谱建议，并提供营养和卡路里的信息。MealGenie目前提供免费试用，以及4.99美元和9.99美元两种付费套餐。您可以在其官方网站上下载它。 | https://mealgenie.ai |
-| Mememorph- Turn yourself into all your   favourite memes | Mememorph- Turn yourself into all your   favourite memes   是一款基于AI的表情包制作工具，能够让用户将自己的照片转换成各种流行的表情包，并提供多种编辑和分享选项。Mememorph可以帮助用户快速地制作出有趣、有个性或有争议的表情包，无论用户是要用于聊天、社交媒体还是其他任何场合。Mememorph使用了OpenAI   的 DALL-E 和 CLIP 技术，能够识别用户的照片中的人脸，并生成适合用户的表情包素材。Mememorph还可以根据用户提供的文字或图片，生成不同的表情包风格和效果。Mememorph目前是免费的，您可以在其官方网站上使用它。 | https://mememorph.com |
-| Morise- Automatically generate titles, tags and   descriptions for YouTube | Morise是一款基于人工智能的YouTube优化工具，可以帮助用户自动生成吸引人的标题、标签和描述，从而提高视频的曝光度和点击率。Morise利用ChatGPT等先进的AI技术，可以根据用户提供的视频链接或关键词，分析视频的内容、风格和受众，并且生成最适合的元数据。Morise还可以提供一些其他的功能，例如检测视频中的敏感内容、分析竞争对手的策略、提供SEO建议等。   Morise目前处于免费测试阶段，用户可以在其官网上注册并尝试使用。 | https://morise.ai |
-| Namifai- ChatGPT powered domain name generator | Namifai- ChatGPT powered domain name   generator   是一款基于ChatGPT的域名生成工具，能够根据用户输入的关键词或描述，生成适合用户的域名，并提供可用性和流行度的信息。Namifai可以帮助用户找到一个简洁、有意义、易记的域名，无论用户是要创建一个网站、一个品牌还是一个项目。Namifai使用了OpenAI   的 ChatGPT 技术，能够理解用户的需求，并生成有趣、有创意或有争议的域名。Namifai目前是免费的，您可以在其官方网站上使用它。 | https://namifai.com |
-| Nero- Enlarge image size and resolution while   maintaining high quality | Nero- Enlarge image size and resolution while   maintaining high quality   是一款基于AI的图像放大工具，能够让用户将自己的图片放大到任意大小和分辨率，同时保持高质量和细节，并提供多种格式和分享选项。Nero可以帮助用户解决图片过小或过模糊的问题，无论用户是要用于打印、展示还是其他任何目的。Nero使用了OpenAI   的 DALL-E 和 CLIP 技术，能够分析图片的内容和结构，并生成高质量、原创和有创意的图像放大结果。Nero还可以根据用户提供的参数，调整图片的大小、分辨率、颜色和对比度等。Nero目前提供免费试用，以及4.99美元和9.99美元两种付费套餐。您可以在其官方网站上下载它。 | [https://nero.ai](https://nero.ai/) |
-| Painta- The functionality of Canva using   Midjourney | Painta- The functionality of Canva using   Midjourney   是一款基于Midjourney平台的图形设计工具，能够让用户使用Midjourney上存储的数据和信息，创建出各种美观和专业的图形设计作品，并提供多种导出和分享选项。Painta可以帮助用户快速地制作出适合商业、教育或个人等场景的图形设计作品，无需任何设计或编程经验。Painta使用了OpenAI   的 DALL-E 和 Codex 技术，能够根据用户输入的文本描述或数据表格，生成高质量、原创和有创意的图形设计素材。Painta还可以根据用户提供的图片或视频，生成不同的图形设计风格和效果。Painta目前处于测试阶段，您可以在其官方网站上免费试用它。 | https://painta.ai |
-| Paradiso | Paradiso是一款AI文本、语音和视频生成器，它可以让你用一个人类般的发言人来表达你的想法。Paradiso可以将任何文本转换为自然而流畅的语音，并且可以根据文本的情感和语调来调整声音的特征。Paradiso还可以将语音转换为视频，并且使用一个真实的人脸来模拟发言人的表情和嘴型。Paradiso适合用于创建教育、娱乐、营销或社交媒体内容，它可以让你用一个有吸引力和信任感的发言人来传达你的信息。 | https://paradiso.ai/ |
-| PhotoAI- Train AI to learn your face then   generate stunning photos | 这是一款基于AI的照片生成和编辑工具，可以让用户通过训练AI学习自己的面部特征，然后生成令人惊艳的照片。PhotoAI利用了GPT-4等先进的AI技术，可以根据用户上传或拍摄的自拍照片，学习并记忆用户的面部特征，并且生成符合用户要求和喜好的照片，并且提供相应的预览和下载链接。PhotoAI还可以让用户通过修改文本内容，调整和优化照片的细节，例如背景、风格、表情等。PhotoAI可以让用户在不需要任何专业技能或软件的情况下，轻松地生成和编辑照片，并且展示自己的个性和魅力。 | https://photoai.ai |
-| Pictory | Pictory是一个在线视频制作平台，让您可以轻松地从长篇内容中制作出短小、有品牌特色的视频，利用AI的力量快速、可扩展、经济地进行视频营销。Pictory提供了完整的视频营销工具包，让您可以从长视频中自动提取精彩片段，从文本中生成令人惊叹的销售视频，从博客文章中转换出引人入胜的视频，并自动添加字幕等。Pictory还提供了丰富的可视化工具，让您可以直观地查看您的视频数据的统计信息、分布情况、趋势变化等。Pictory目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。 | https://pictory.ai/ |
-| Micasa | Micasa是一款基于AI的室内设计工具，能够在几秒钟内根据您上传的照片重新装修您家里或办公室里的任何房间。您可以通过在手机上轻轻点击几下，改变您房间的风格和布局。该应用使用了先进的AI算法来分析您当前的房间，并将其重新设计成一个新的风格。您可以从一系列不同的风格中选择，包括现代、简约、复古等，该应用会立即将您的房间改造成您选择的风格。Micasa支持所有类型的房间，包括客厅、卧室、办公室、餐厅等。最棒的是，Micasa完全免费使用！ | [https://play.google.com/store/apps/deta](https://play.google.com/store/apps/details?id=com.twansoftware.ai.room.designer)ils?id=com.twansoftware.ai.room.designer |
-| Prime Profile- AI-powered profile picture   generator | Prime   Profile是一款基于人工智能的头像生成器，可以帮助用户创建自己的专属头像。Prime   Profile利用ChatGPT等强大的AI技术，可以根据用户输入的姓名、性别、年龄、风格等信息，生成一个逼真而独特的人脸图像，并且提供相应的下载链接。Prime   Profile还可以让用户调整和优化头像的细节，例如发型、眼睛、嘴唇等。Prime   Profile可以让用户拥有一个符合自己个性和喜好的头像，用于社交网络、游戏或其他场合。 | https://primeprofile.ai |
-| Quickly- Use AI on any website instantly just   by selecting text | Quickly是一款基于人工智能的浏览器扩展，可以让用户在任何网站上即时地使用AI功能，只需选择文本即可。Quickly利用ChatGPT等先进的AI技术，可以根据用户选择的文本，提供一系列有用的功能，例如翻译、摘要、重写、扩展、纠错、情感分析等。Quickly还可以根据用户选择的文本类型，提供更多定制化的功能，例如对新闻文章进行评论、对商品进行评价、对电影进行推荐等。Quickly可以让用户在浏览网页时，更加高效、便捷和有趣。   Quickly目前处于免费测试阶段，用户可以在Chrome网上应用店免费下载它。 | https://quickly.ai |
-| Quizify- Create amazing quizzes 20X faster with   AI | Quizify- Create amazing quizzes 20X faster   with AI   是一款基于AI的测验创建工具，能够根据用户输入的主题或问题，生成适合用户的测验内容，并提供多种格式和分享选项。Quizify可以帮助用户快速地创建出有趣、有教育意义或有挑战性的测验，无论用户是要用于学习、教学还是娱乐等场合。Quizify使用了OpenAI   的 GPT-4 和 Codex 技术，能够分析用户的输入主题或问题，并生成高质量、原创和有创意的测验内容。Quizify还可以根据用户提供的答案或反馈，优化和改进测验内容，并提供正确答案和解释。Quizify目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。 | https://quizify.ai |
-| Q Chat | Q Chat是一个友好的AI学习助手，可以帮助用户快速地开始学习任何主题。Q   Chat使用了苏格拉底式的提问法，来促进用户的批判性思维，让用户在一种沉浸式的学习体验中运用自己的知识。用户可以选择一个学习提示，然后由Q   Chat对用户进行测验、深化理解或挑战自己应用知识的能力。Q   Chat还可以与用户进行有趣的对话，Quizlet的AI助手已经在全球范围内与数百万用户进行了交流。Q   Chat目前处于测试阶段，您可以在Quizlet上免费使用它。 | https://quizlet.com/labs/qchat |
-| Quotify- Extract meaningful quotes from books,   articles, or text | Quotify- Extract meaningful quotes from   books, articles, or text   是一款基于AI的引文提取工具，能够根据用户提供的书籍、文章或文本，提取出其中最有意义或最有价值的引文，并提供格式化和分享选项。Quotify可以帮助用户从大量的阅读材料中找到最精彩或最启发性的部分，并用于自己的写作、演讲或社交媒体等场合。Quotify使用了OpenAI   的 GPT-4 技术，能够分析文本的主题、结构和逻辑，并提炼出最重要或最有影响力的引文。Quotify还可以根据用户提供的关键词或主题，生成不同的引文建议，并提供引文来源和作者信息。Quotify目前是免费的，您可以在其官方网站上使用它。 | https://quotify.ai |
-| Raizer- Find &amp; reach out to perfect   investors with AI | Raizer- Find &amp; reach out to perfect   investors with AI   是一款基于AI的投资者寻找和联系工具，能够帮助创业者找到并联系最适合自己项目的投资者，并提高融资成功率。Raizer使用了OpenAI 的 GPT-4 和   DALL-E   技术，能够分析创业者的项目信息，并生成适合投资者的介绍文案和图像。Raizer还可以根据创业者提供的条件，从数千名投资者中筛选出最匹配的候选人，并提供联系方式和沟通策略。Raizer目前处于测试阶段，您可以在其官方网站上免费注册使用它。 | https://raizer.ai |
-| Rask AI- AI dubbing that is as good as a human | Rask AI- AI dubbing that is as good as a   human 是一款基于AI的配音工具，能够让用户将自己的声音转换成任何语言或口音，并提供高质量和逼真的配音效果。Rask   AI可以帮助用户快速地制作出适合视频、广告或游戏等场景的配音，无需任何配音或语言经验。Rask AI使用了OpenAI 的 GPT-4 和 WaveNet   技术，能够分析用户的声音特征，并生成符合用户的语言和风格的配音内容。Rask AI还可以根据用户提供的文本或视频，生成不同的配音方案，并提供预览和编辑功能。Rask   AI目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。 | [https://rask.ai](https://rask.ai/) |
-| Recommend Domains- Find the perfect domain for   your next project | Recommend   Domains是一款基于人工智能的域名推荐工具，可以帮助用户为自己的下一个项目找到最合适的域名。Recommend   Domains利用ChatGPT等先进的AI技术，可以根据用户输入的项目名称、描述或关键词，生成一系列可用的域名，并且提供相应的价格和注册链接。Recommend   Domains还可以根据用户的反馈，调整和优化域名的质量和相关性。Recommend   Domains可以让用户节省时间、精力和金钱，快速地找到自己心仪的域名。 | https://recommend.domains |
-| Reflect- Use GPT-4 in your notes, and to write   your own custom prompts | Reflect- Use GPT-4 in your notes, and to   write your own custom prompts   是一款基于GPT-4的智能笔记工具，能够让用户在自己的笔记中使用GPT-4的强大功能，并编写自己的定制提示。Reflect可以帮助用户提高自己的写作水平和创造力，无论用户是要写故事、文章、代码还是其他任何类型的文本。Reflect使用了OpenAI   的 GPT-4 技术，能够根据用户输入的提示，生成高质量、原创和有创意的文本。Reflect还可以根据用户提供的反馈，优化和改进文本的内容和格式。Reflect目前提供免费试用，以及5美元和10美元两种付费套餐。您可以在其官方网站上下载它。 | https://reflect.ai |
-| Replicate Codex- Exploring and discovering AI   models on Replicate | Replicate Codex- Exploring and discovering AI   models on Replicate   是一款基于Replicate平台的AI模型探索和发现工具，能够让用户在Replicate上浏览、搜索和运行各种AI模型，并与其他用户分享自己的发现和创造。Replicate是一个开源的AI模型管理平台，能够让用户轻松地存储、版本控制和部署自己的AI模型。Replicate   Codex是一个基于OpenAI 的 Codex 技术的AI模型搜索引擎，能够根据用户输入的自然语言查询，找到最匹配的AI模型，并提供在线运行和交互的功能。Replicate   Codex- Exploring and discovering AI models on Replicate 目前是免费的，您可以在其官方网站上体验它。 | https://replicate.ai/codex |
-| GPT-4 Chat UI on Replit | GPT-4 Chat UI on   Replit是一款利用GPT-4技术创建聊天界面的工具，能够让用户在Replit平台上快速搭建自己的聊天机器人。用户只需选择一个主题或领域，如旅游、教育、娱乐等，GPT-4就会根据该主题生成一个适合的聊天界面，并提供相应的对话逻辑和内容。用户还可以对生成的聊天界面进行修改和优化，或者与其他用户分享和交流。GPT-4   Chat UI on Replit目前免费提供给公众使用。 | https://replit.com/@gpt4chatui |
-| GPT-4 can build a bespoke iOS app in minutes | GPT-4可以在几分钟内构建一个定制的iOS应用程序。您只需要输入一个简单的描述，GPT-4就可以为您生成SwiftUI代码，并在模拟器中运行。GPT-4还可以根据您的反馈进行修改和优化，让您轻松创建出理想的应用程序。GPT-4使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的代码。GPT-4可以构建各种类型的应用程序，如电影推荐、音乐播放器、游戏引擎等。GPT-4目前处于测试阶段，您可以在Replit上免费试用它。 | [h](https://replit.com/@localghost/GPT-4-iOS-app-builder)ttps://replit.com/@localghost/GPT-4-iOS-app-builder |
-| ResearchGPT-Open-source research assistant   chatbot | ResearchGPT-Open-source research assistant   chatbot   是一款基于AI的开源研究助理聊天机器人，能够帮助用户进行各种研究相关的任务，例如：查找文献、生成摘要、写论文等。ResearchGPT使用了OpenAI   的 GPT-4 和 Codex   技术，能够理解用户的研究需求，并生成高质量、原创和有创意的研究内容。ResearchGPT还可以根据用户提供的反馈，优化和改进研究内容，并提供引用和格式化的功能。ResearchGPT目前是开源的，您可以在其官方网站上免费下载它。 | https://researchgpt.com |
-| Revolvdiv | Revolvdiv是一个集成了人工智能的播客平台，让您可以轻松地创建和编辑高质量的播客节目。Revolvdiv提供了一个强大而简单的播客编辑工具，让您可以对您的音频进行剪辑、混音、增强、添加音乐和特效等操作。Revolvdiv还使用人工智能技术来帮助您优化您的播客内容，为您提供智能建议、自动摘要、关键词提取、情感分析等功能。Revolvdiv还可以让您轻松地发布和推广您的播客节目，并与其他播客创作者和听众互动。Revolvdiv目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。 | https://revolvdiv.com/ |
-| Roast my startup - Enter a startup&#x27;s name and   website and let ChatGPT do all the roasting | Roast my startup 是一款基于OpenAI   ChatGPT的创业项目吐槽工具，能够根据您输入的项目名称和网址，生成一段机智、幽默、尖锐的吐槽，让您看到自己的项目有哪些不足或可笑之处。Roast my   startup 可以帮助您从另一个角度审视自己的项目，也可以让您在压力和挑战中找到一些乐趣。Roast my startup   目前是免费的，您可以在其官方网站上尝试它。 | https://roastmystartup.com |
-| Role Model AI- Create/customize your AI   assistant for personal growth | Role Model   AI是一款基于人工智能的个人成长助手，可以让用户创建或定制自己的AI助手，以实现自己的目标和梦想。Role Model   AI利用了ChatGPT等强大的AI技术，可以根据用户输入的信息，生成一个与用户相似或者有所不同的AI助手，并且与用户进行自然语言对话。Role   Model AI可以让用户通过与AI助手的交流，获得启发、鼓励和反馈，并且提升自己的信心、能力和幸福感。Role Model   AI目前支持多种场景，例如职业规划、健康管理、学习提升等。 | https://rolemodel.ai |
-| Ronith- Generating mini macOS apps with natural   language | Ronith是一款基于人工智能的应用生成器，可以让用户通过自然语言来创建自己的迷你macOS应用。Ronith利用ChatGPT等强大的AI技术，可以根据用户输入的文字描述，生成相应的应用代码，并且将其打包成一个可执行文件。Ronith可以让用户快速地实现自己的想法，而无需编写任何代码或安装任何软件。Ronith目前支持生成一些常见的应用类型，例如计算器、记事本、闹钟、音乐播放器等。   Ronith目前处于免费测试阶段，用户可以在其官网上注册并尝试使用。 | https://ronith.app |
-| RoomGPT - Redesign your room in seconds with AI | RoomGPT - Redesign your room in seconds with   AI 是一款基于AI的室内设计工具，能够根据用户输入的文本描述，生成适合用户风格和需求的房间布置图。RoomGPT使用了OpenAI 的 GPT-4   技术，能够理解用户的意图和偏好，并生成高质量、原创和有创意的房间设计方案。RoomGPT还可以根据用户提供的房间照片或平面图，自动识别房间的结构和尺寸，并提供合适的家具和装饰品。RoomGPT目前处于测试阶段，您可以在其官方网站上免费使用它。 | https://roomgpt.com |
-| Simulation Chat - 2 AIs talking to each other   and it live updates | Simulation Chat   是一款基于AI的对话模拟工具，能够让您观看两个AI之间的实时对话，并参与其中。Simulation Chat 使用了两个不同的AI模型，分别是OpenAI   的 ChatGPT 和 Google 的 Bard，它们都是基于大规模语言模型的智能聊天机器人，能够理解并生成自然语言。Simulation Chat   让这两个AI模型相互交流，并实时更新对话内容，让您看到它们之间有趣、有意义或有争议的话题。您也可以随时加入对话，并与这两个AI进行互动。Simulation   Chat 目前是免费的，您可以在其官方网站上体验它。 | https://simulation.chat |
-| SLAPA - Self-learning agent for performing APIs | SLAPA - Self-learning agent for performing   APIs   是一款基于AI的API执行工具，能够根据用户的需求和反馈，自动地调用和组合不同的API，实现各种功能和任务。SLAPA可以帮助用户快速地构建和测试复杂的API流程，无需编写任何代码。SLAPA还可以根据用户的偏好和目标，优化和改进API的性能和效果。SLAPA目前提供免费试用，以及49美元和99美元两种付费套餐。您可以在其官方网站上下载它。 | https://slapa.ai |
-| SlidesGPT- ChatGPT for presentations-   Powerpoint/Google Slides | SlidesGPT- ChatGPT for presentations-   Powerpoint/Google Slides   是一款基于ChatGPT的演示文稿制作工具，能够让用户通过与ChatGPT进行对话，轻松地创建出各种美观和专业的演示文稿，并提供多种格式和分享选项。SlidesGPT可以帮助用户提高自己的演示水平和效率，无论用户是要进行商业、教育或个人等场景的演示。SlidesGPT使用了OpenAI   的 ChatGPT 技术，能够根据用户输入的主题、目标和内容，生成适合用户的演示文稿，并提供修改建议和反馈。SlidesGPT还可以根据用户提供的图片或视频，生成不同的演示文稿风格和效果。SlidesGPT目前是免费的，您可以在其官方网站上使用它。 | https://slidesgpt.com |
-| Socket Security is scaling its malware   detection service with ChatGPT to scan the entire npm registry | Socket   Security是一家提供JavaScript和Python项目安全扫描服务的公司，它可以检测npm或PyPI仓库中是否存在恶意代码。近期，Socket   Security宣布使用ChatGPT来增强其恶意代码检测能力，并且扫描了整个npm仓库。据Socket Security CEO Feross   Aboukhadijeh透露，使用ChatGPT后，他们发现了数百个恶意或有风险的npm包，并且正在尽快地报告和移除它们。Socket   Security利用ChatGPT对每个npm包进行源代码分析，并且根据分析结果生成一个简要的风险报告。 | https://socket.dev |
-| SpellLabs | SpellLabs是一个在线平台，让您可以通过简单的提示来创建您自己的定制化人工智能模型，无需编码或数据科学知识。SpellLabs使用最先进的自然语言理解技术，让您可以用自然语言来描述您想要实现的功能，如文本生成、图像分类、语音识别等。SpellLabs会根据您的提示为您生成一个适合您需求的人工智能模型，并为您提供相关的数据集、参数和代码。您还可以在SpellLabs上测试和部署您的人工智能模型，并与其他用户分享和协作。SpellLabs目前是免费的，在线人工智能模型制作平台，您可以在官网免费注册并开始使用。 | https://spelllabs.ai/ |
-| SpellPrint- AI app marketplace. Access to over   1,000 AI models | 这是一款基于AI的应用市场，可以让用户访问和使用超过1000个AI模型。SpellPrint利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的应用类型和目标，推荐和提供适合的AI模型，并且与用户进行交互和反馈。SpellPrint还利用了一种名为SpellPrint的技术，可以让用户通过扫描或拍摄自己的手指印，验证和激活AI模型，并且保护自己的隐私和安全。SpellPrint可以让用户更加方便和快捷地访问和使用各种类型的AI模型，并且提高自己的AI素养和能力。 | https://spellprint.ai |
-| AI PetNamer- Generates unique and creative   names for any type of pet | AI PetNamer- Generates unique and creative   names for any type of   pet是一款创新的工具，旨在为动物爱好者生成定制的宠物名字。这款免费的演示应用程序由人工智能驱动，可以为任何类型的宠物生成独特和有创意的名字。用户可以指定宠物类型、性别、颜色、来源和个性特征来生成个性化的名字。此外，应用程序还提供了选择历史主题来生成名字的选项。借助这款工具，宠物主人可以找到适合他们毛茸茸的朋友的完美名字，而无需费心思考。AI   PetNamer是一款极好的娱乐来源，提供了无限可能的宠物名字。无论您有狗、猫、鸟或其他宠物，这款应用程序都是为您寻找理想名字的完美解决方案。 | [h](https://synoptica.com/ai-tools/ai-pet-name-generator/)ttps://synoptica.com/ai-tools/ai-pet-name-generator/ |
-| MarcBot | MarcBot是一个生活在Telegram里的讽刺AI助手，由OpenAI   ChatGPT驱动。MarcBot可以与用户进行有趣、幽默、有时候也有点刻薄的对话，成为用户生活中的智能小伙伴。MarcBot可以回答用户在生活中遇到的各种问题和疑惑，也可以帮助用户写故事、消息或编程代码等内容。MarcBot还利用Whisper和Amazon   Polly技术，支持语音输入和输出，让用户可以直接与机器人交谈，而不需要输入文字。这样可以让用户更自然地表达自己的想法，并享受一种超现实的体验。MarcBot目前还在开发中，您可以在Telegram上免费使用它。 | https://t.me/marcbot |
-| Taplio- LinkedIn growth tool with automatic   scheduling and AI writer | Taplio- LinkedIn growth tool with automatic   scheduling and AI   writer是一款强大的LinkedIn增长工具，可以帮助您利用AI创造内容，安排发布时间，与相关账户互动，并测量您的结果。Taplio可以帮助您在10分钟内创建更好的LinkedIn内容，使用先进的AI和自动化功能，为您提供内容灵感，生成文章和标题，搜索热门话题和趋势，并在最佳时间发布内容。Taplio还可以帮助您建立新的关系，通过CRM功能跟踪和管理您的潜在客户和合作伙伴。Taplio目前提供免费试用，之后根据您选择的套餐收费。 | https://taplio.com/ |
-| Text to GIF | Text to   GIF是一款基于GPT-4的AI文本转GIF工具，能够根据用户输入的任何文本，生成一个相关的表情包GIF。该工具可以帮助用户在社交媒体、聊天软件或其他平台上表达自己的情绪、态度或想法，以一种有趣和有创意的方式。Text   to GIF目前免费提供给公众使用。 | https://texttogif.com/ |
-| This Job Does Not Exist | This Job Does Not   Exist是一款基于GPT-4的AI虚构职业生成器，能够为用户展示由AI想象出来的未来工作。该工具可以让用户探索AI对人类社会和经济的影响，以及可能出现的新兴行业和职业。该工具还可以让用户了解AI对人类工作所需的技能和素质的要求，以及如何适应变化和挑战。This   Job Does Not Exist目前免费提供给公众使用。 | https://thisjobdoesnotexist.com/ |
-| Threads launch their customizable AI called   Tailor for team communication | Threads launch their customizable AI called   Tailor for team communication   是一款团队沟通工具，能够将定制化的AI功能融入到Threads中。Tailor可以根据任何选择的聊天消息运行一个提示，快速生成文档。无论您是想总结一些关键的行动项目，还是记录一个事后分析，Tailor都可以帮助您。Tailor还可以主动地为您提供摘要和行动项目，让您决定是否要深入了解更多细节，或者节省您的时间。Tailor还允许您自定义和保存自己的提示，让您有更多的自由来探索如何折叠时间和优化您的工作流程。Threads   launch their customizable AI called Tailor for team communication   目前提供免费试用，您可以在其官方网站下载它。 | https://threads.com/ai |
-| Tome | Tome是一款基于GPT-4的知识提取工具，能够阅读整篇维基百科文章，理解其内容，并生成关键点。Tome可以帮助用户快速获取所需信息，无需阅读冗长的正文。Tome还可以根据用户的问题，从维基百科中检索相关答案，并给出可信度评分。Tome目前免费提供给公众使用。 | https://tome.ai/ |
-| TweetHunter- Twitter growth tool with automatic   scheduling and writing | 这是一款基于AI的推特增长工具，可以让用户通过自动化的计划和写作，提升自己的推特影响力和收益。TweetHunter利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的推特类型和目标，生成高质量和有吸引力的推文内容，并且提供相应的预览和发布链接。TweetHunter还利用了一种名为TweetHunter-Net的神经网络结构，可以让用户通过简单的拖拽和点击操作，为不同的推特任务添加或删除AI模型，并且实现自定义和优化。TweetHunter可以让用户更加方便和快捷地发布和管理自己的推特内容，并且提高自己的推特素养和能力。 | https://tweethunter.ai |
-| Twitter Algo Validator- See how tweets perform   against the Twitter algo | 这是一款基于AI的推特算法验证工具，可以让用户看到自己或他人的推文在推特算法中的表现和排名。Twitter   Algo   Validator利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的推文链接，分析并评估推文的内容、质量、影响力等指标，并且生成一个包含评分和建议等信息的报告，并且提供相应的预览和下载链接。Twitter   Algo Validator还可以让用户通过修改推文内容或选择不同的选项，调整和优化推文的细节。Twitter Algo   Validator可以让用户更加了解和掌握推特算法的逻辑和规则，并且提高自己的推特素养和能力。 | https://twitteralgov.com |
-| Scispace | Scispace是一个基于人工智能的研究助手，可以帮助您在几分钟内完成数小时的阅读。Scispace可以让您更好地理解科研论文，它可以用简单的语言解释和阐述大多数学术文本。Scispace还可以让您高效地进行文献综述，为您提供快速摘要、未来工作和相关论文等信息。Scispace支持多种语言和领域，涵盖了机器学习、自然语言、物理学、生物学等各种主题。Scispace目前是免费的，在线研究助手，您可以在官网免费注册并开始使用。 | https://typeset.io/ |
-| Unschooler | Unschooler是一个基于人工智能的视频课程平台，可以根据您的个人职业目标为您提供定制化的学习路径。Unschooler使用AI技术来分析您的技能、兴趣和目标，并为您推荐最适合您的视频课程。Unschooler拥有海量的高质量视频课程资源，涵盖了编程、设计、商业、艺术等各种领域。Unschooler还可以根据您的学习进度和反馈为您调整课程难度和顺序，确保您以最有效的方式学习。Unschooler目前提供14天免费试用，让您可以体验Unschooler的全部功能，并找到适合您的学习路径。 | https://unschooler.com/ |
-| Voila- Assistant to level up your online   productivity | Voila是一款基于人工智能的在线生产力助手，可以帮助用户提升自己在网上工作或学习时的效率和质量。Voila利用了ChatGPT等强大的AI技术，可以根据用户输入的任务或目标，生成一个包含步骤、资源和提示等信息的执行计划，并且以一个清晰和简洁的方式呈现出来。Voila还可以让用户通过自然语言与其进行对话，询问生产力相关的问题，并且得到智能和友好的回复。Voila可以让用户更加有序和专注地完成自己在网上需要做的事情，避免拖延和分心。 | https://voila.ai |
-| Warmest AI - Drafts your emails just like you   would | Warmest AI   是一款基于AI的邮件写作工具，能够为您草拟出符合您风格和语气的邮件，并提供修改建议和反馈。Warmest AI   可以帮助您写出更有效、更专业、更友好的邮件，无论您是要发送营销邮件、招聘邮件、客服邮件还是其他任何类型的邮件。Warmest AI 使用了OpenAI 的   GPT-4 技术，能够分析您的邮件数据，并匹配您的写作风格。Warmest AI   还可以根据您的目标和场景，生成不同的邮件模板，并提供修改建议和反馈，让您的邮件更加精准和有说服力。Warmest AI 目前提供免费试用，以及9.99美元和29.99美元两种付费套餐。您可以在其官方网站上下载它。 | https://warmest.ai |
-| WavTool- An AI assistant to create high-quality   music and audio | WavTool- An AI assistant to create   high-quality music and audio   是一款基于AI的音乐和音频制作工具，能够根据用户输入的文本、图片或视频，生成适合用户的音乐和音频，并提供多种编辑和分享选项。WavTool可以帮助用户快速地制作出适合电影、游戏、广告或个人等场景的音乐和音频，无需任何音乐或音频制作经验。WavTool使用了OpenAI   的 GPT-4 和 WaveNet 技术，能够理解用户的输入内容，并生成高质量、原创和有创意的音乐和音频。WavTool还可以根据用户提供的参数，调整音乐和音频的风格、节奏、音量和效果等。WavTool目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。 | https://wavtool.ai |
-| Great Headlines | Great   Headlines是一款AI写作工具，可以帮助你快速地写出吸引人的标题。无论你是要写博客文章、广告、网页还是社交媒体帖子，Great   Headlines都可以为你提供一些创意的标题建议。你只需要输入一两个关于你的主题的词，选择一种内容类型，Great   Headlines就会为你生成多个标题供你选择。 | [https://websitesetup.or](https://websitesetup.org/headline-examples/)g/headline-examples/ |
-| Wonder Studio | Wonder   Studio是一款基于AI的视觉特效工具，能够自动地将CG角色动画、灯光和合成到真实场景中。Wonder   Studio无需昂贵的动作捕捉设备、复杂的3D软件和高端的生产硬件，只需要一台相机。您可以选择或上传您的CG角色模型，并将其应用到一个镜头或一个序列中。系统会自动检测镜头切换并跟踪演员在视频中的表现。系统还会根据单摄像机拍摄的画面自动检测演员的表演，并将其转移到您选择的CG角色上，自动完成动画、灯光和合成。Wonder   Studio支持所有类型的房间，包括客厅、卧室、办公室、餐厅等。最重要的是，Wonder Studio完全免费使用！ | https://wonderdynamics.com |
-| Google AI Productivity Apps | Google AI Productivity   Apps是一款由Google推出的基于GPT-4的AI生产力应用套件，包括Gmail、Docs、Sheets、Slides等。它可以帮助用户在各种场景下提高工作效率和创造力，如写邮件、编辑文档、制作表格、设计幻灯片等。Google   AI Productivity Apps可以根据用户的输入和偏好，自动生成文本、图表、图片和动画，并提供修改和优化建议。Google AI   Productivity Apps目前已经在部分Google用户中使用，并计划在未来向更多用户开放。 | [https://workspace.google.com/](https://workspace.google.com/ai-productivity-apps)ai-productivity-apps |
-| GPT for sheets and docs | GPT for sheets and docs是一款为Google   Sheets™和Google Docs™提供ChatGPT和其他生成式AI模型功能的插件，由Talarian开发。GPT for sheets and   docs可以让用户直接在Google Sheets™和Google Docs™中使用ChatGPT和其他AI模型，如OpenAI   GPT-3.5和GPT-4以及Anthropic Claude，来处理各种文本和数据的任务，如写作、编辑、提取、清理、翻译、总结、概述、解释等。GPT   for sheets and docs通过提供许多简单的自定义函数，让用户可以轻松地调用AI模型，并实时查看结果。GPT for sheets and   docs还可以让用户根据成本、延迟和能力，选择自己想要的AI模型。GPT for sheets and docs目前处于测试阶段，您可以在Google   Workspace Marketplace免费下载它。 | [https://workspace.google.com/marketplace/](https://workspace.google.com/marketplace/app/gpt_for_sheets_and_docs/677318054654)app/gpt_for_sheets_and_docs/677318054654 |
-| 1-decision | 1-decision是一款为忙碌父母提供AI决策帮手的工具，可以帮助您在日常生活中做出更好的选择。1-decision利用AI技术分析您面临的问题和可选方案，并给出最优或最满意的解决方案。1-decision还可以根据您的偏好、价值观和信念来调整决策过程，并给出相应的理由和建议。1-decision是一个方便和实用的工具，可以让您节省时间、减少压力、提高幸福感。1-decision目前提供免费下载和使用，您只需要输入一个问题和一些选项，就可以得到一个智能的决策。 | https://www.1decision.co.uk/ |
-| From low-def 3D ultrasounds to high-resolution   images | From low-def 3D ultrasounds to   high-resolution images是一个利用人工智能将低清晰度的三维超声波图像转化为高清晰度图像的工具。From low-def 3D   ultrasounds to high-resolution   images可以帮助您更清晰地观察和记录胎儿的发育情况，无论是在医疗、教育还是个人方面。From low-def 3D ultrasounds to   high-resolution images使用了先进的AI技术，能够根据您提供的三维超声波图像文件或URL，为您生成逼真和有趣的高清晰度图像，并提供多种输出格式供您选择。From   low-def 3D ultrasounds to high-resolution   images还可以让您与之进行自然语言对话，以获取更多的信息和建议。From low-def 3D ultrasounds to   high-resolution images是一个方便快捷、功能强大、价格实惠的图像转换工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.3dultrasound.ai |
-| 60sec | 60sec是一款基于人工智能的着陆页生成平台，可以为用户在60秒内生成漂亮的着陆页。60sec使用了最新的深度学习和网页设计技术，能够从用户输入的网站主题和内容中分析其网站需求和风格，并生成高质量、原创和有创意的着陆页。用户可以在60sec中输入或上传任何类型的网站主题和内容，如产品、服务、活动等，并选择想要生成着陆页的模板和主题。60sec还提供了一些智能的功能，如图像优化、文本编辑、SEO优化等。60sec是一款方便和实用的工具，让用户可以在60秒内创建出令人印象深刻的着陆页。60sec目前提供免费试用和付费订阅，您可以在60sec网站上注册使用它。 | https://www.60sec.com/ |
-| Addy AI | Addy AI是一款基于OpenAI   ChatGPT的智能邮件助手，能够帮助您快速写出高效、专业和个性化的邮件。Addy   AI可以根据您的首选风格和语气，生成完整的邮件内容。无论您是想要发送商务、营销、求职或私人邮件，Addy AI都可以为您提供合适的模板和建议。Addy   AI目前是一个Chrome浏览器扩展，可以在Gmail和Outlook中使用。您可以在Chrome网上应用店免费下载它。 | https://www.addy.ai |
-| Adventure AI | Adventure   AI是一款基于AI的社交游戏，让孩子们可以通过玩游戏来学习真正的AI技能。在“训练学校”，孩子们可以根据自己感兴趣的路径（例如AI辅助艺术、GPT相关、编码AI等）完成一个个自主学习的任务课程。一旦他们从训练学校毕业，他们就进入了“世界学校”，在那里他们可以制作出与真实世界专业人士竞争的作品。Adventure   AI使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E   2等，并提供了多种模板和示例，让孩子们可以轻松地创建自己的AI工具。Adventure AI适合任何想要利用AI提升自己技能和创造力的孩子。您可以在Adventure   AI的官方网站上注册并开始免费使用它。 | https://www.adventureai.gg |
-| Agent | Agent是一个自定义训练语言模型的平台，可以让您创建和管理多个工作空间，为不同的项目和目标定制语言模型。Agent使用最先进的自然语言处理技术，让您可以轻松地构建、部署和监控语言模型，无需编写代码或担心基础设施。Agent支持多种语言和领域，可以帮助您实现各种应用场景，如聊天机器人、内容生成、文本摘要、情感分析等。Agent目前处于邀请制阶段，您可以在官网申请加入等待名单。 | https://www.agent.ai/ |
-| AI Gift for you | AI Gift for   you是一个利用人工智能根据个性化过滤器为您搜索礼物创意的工具。AI Gift for   you可以帮助您根据收礼人的性别、年龄、兴趣、场合等因素，为您推荐合适的礼物，并提供相关的信息和链接。AI Gift for   you使用了先进的AI技术，能够从数千种礼物中为您挑选出最佳的礼物创意，并根据您的反馈和喜好进行优化。AI Gift for   you还可以让您与之进行自然语言对话，以获取更多的信息和建议。AI Gift for you是一个方便快捷、功能强大、价格实惠的礼物搜索工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.aigiftforyou.ai |
-| AI Gift for you | AI Gift for   you是一款基于人工智能的礼物搜索平台，可以根据用户设置的个性化过滤条件，为用户寻找合适的礼物。AI Gift for   you使用了最新的自然语言处理和推荐系统技术，能够从用户输入的过滤条件中分析其礼物需求和偏好，并从海量的礼物数据中筛选出最佳的礼物选项，并提供详细的信息和评价。用户可以在AI   Gift for you中设置多种过滤条件，如收礼人、场合、主题、价格等，并根据自己的喜好调整排序方式。AI Gift for   you是一款方便和实用的工具，让用户可以更快速和低成本地找到理想的礼物。AI Gift for you目前可以在AI Gift for   you网站上免费使用。 | https://www.aigiftforyou.com/ |
-| AI lawyer | AI   lawyer是一款基于GPT-4的AI法律服务工具，能够为用户提供个性化的AI律师。用户可以向AI   lawyer发送任何法律问题或请求，如合同、遗嘱、离婚等，AI lawyer会根据用户的情况，给出智能、友好和专业的回答和建议。AI   lawyer还可以根据用户的需求，自动生成合法、有效和优化的法律文件，并提供修改和优化建议。AI lawyer目前处于测试阶段，需要申请才能使用。 | https://www.ailawyer.com/ |
-| AI Lawyer | AI   Lawyer是一款基于人工智能的法律咨询平台，可以为用户提供专业的法律帮助，无论何时何地。AI   Lawyer可以根据用户的问题和情况，生成合适的法律建议、合同模板、诉讼方案等。AI   Lawyer还可以为用户提供在线的法律咨询服务，连接真实的律师，进行实时的沟通和协商。AI   Lawyer使用了最先进的自然语言处理和机器学习技术，能够理解和生成高质量、准确和专业的法律文本。AI   Lawyer涵盖了多个法律领域，如民事、刑事、商业、家庭、劳动等。AI Lawyer是一款方便和实用的工具，让用户可以更快速和低成本地解决法律问题。AI   Lawyer目前提供免费试用和付费订阅，您可以在AI Lawyer网站上注册使用它。 | https://www.ailawyer.com/ |
-| AI photo sorter - Sort the images on your   computer using the power of AI. | AI photo sorter - Sort the images on your   computer using the power of AI.是一款让您可以用AI的力量来整理您电脑上的图片的工具。AI photo   sorter可以帮助您按照不同的标准和类别来排序您的图片，例如日期、地点、人物、颜色、风格等。AI photo   sorter使用GPT-4技术，能够识别图片中的内容，并给出合适的标签和文件夹名称。AI photo   sorter还可以提供智能和个性化的建议，帮助您优化您的图片管理和存储。AI photo   sorter可以帮助您节省时间和空间，提高图片的可查找性和可用性。AI photo sorter目前提供免费试用，之后根据您使用的图片数量和存储空间收费。 | https://www.aiphotosorter.com/ |
-| AI-generated podcast network of bite-sized   daily podcasts on anything. | AI-generated podcast network of bite-sized   daily podcasts on   anything.是一款利用AI生成每日短篇播客的网络平台，涵盖各种主题和领域。您只需要输入一个感兴趣的主题，例如“历史”、“科学”、“健康”等，这个平台就会使用GPT-4技术，为您生成一个5分钟左右的播客，并提供音频、文字和图片。您可以在网上收听和下载播客，并选择订阅或分享。这个平台可以帮助您获取新知识，拓展视野，享受听力乐趣。这个平台目前处于测试阶段，您可以在[3]上免费试用它。 | https://www.aipodcast.net/ |
-| AItinerary | AItinerary是一个利用人工智能在几秒钟内为您创建个性化旅行计划的工具。AItinerary可以帮助您根据您的目的地、时间、预算和兴趣等因素，为您推荐合适的旅行路线和活动，并提供相关的信息和链接。AItinerary使用了先进的AI技术，能够从数千种旅行选项中为您挑选出最佳的旅行计划，并根据您的反馈和喜好进行优化。AItinerary还可以让您与之进行自然语言对话，以获取更多的信息和建议。AItinerary是一个创新和高效的旅行计划工具，适合任何想要轻松规划旅行或寻找灵感的人。AItinerary目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.aitinerary.ai |
-| A podcast with AI avatars of All In Pod’s hosts | A podcast with AI avatars of All In Pod’s   hosts是一个利用人工智能为您提供All In Pod节目主持人的AI化身的播客。A podcast with AI avatars of All In   Pod’s hosts可以帮助您聆听和参与All In Pod节目主持人的AI化身所讨论的各种话题，无论是科技、商业、政治还是文化等方面。A   podcast with AI avatars of All In Pod’s hosts使用了先进的AI技术，能够根据All In   Pod节目主持人的声音、风格和观点，为您生成逼真和有趣的AI化身，并提供相关的音频和视频等内容，并与播客平台进行同步展示。A podcast with   AI avatars of All In Pod’s hosts还可以让您与之进行自然语言对话，以获取更多的信息和反馈。A podcast with AI   avatars of All In Pod’s hosts是一个创新和有趣的播客工具，适合任何想要聆听或参与All In   Pod节目主持人的AI化身所讨论的话题或寻找灵感的人。A podcast with AI avatars of All In Pod’s   hosts目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.allinpodai.ai |
-| Impromptu by Reid Hoffman and GPT-4 | Impromptu by Reid Hoffman and   GPT-4是一本由LinkedIn联合创始人Reid   Hoffman和OpenAI的GPT-4共同创作的书籍，主题是关于即兴演讲和沟通技巧。这本书是利用GPT-4根据Reid   Hoffman的想法和风格生成的文本，并经过Reid   Hoffman的审核和修改而成。这本书旨在展示人工智能和人类合作的可能性，以及即兴演讲在当今社会中的重要性。这本书目前已经在Amazon上出售，售价为9.99美元。 | [h](https://www.amazon.com/Impromptu-Reid-Hoffman-GPT-4/dp/1737982400)ttps://www.amazon.com/Impromptu-Reid-Hoffman-GPT-4/dp/1737982400 |
-| Language models on steroids | Language models on   steroids是一本由著名语言学家和计算机科学家所写的书籍，探讨了最新的语言模型技术和应用，如GPT-4、BERT、XLNet等。语言模型是一种使用人工智能技术来理解和生成自然语言的软件，可以用于搜索、翻译、对话、写作等领域。在这本书中，作者详细介绍了语言模型的原理、发展和挑战，并分析了它们在不同领域的表现和影响。作者还提出了一些关于语言模型的未来展望和建议，以及如何使用语言模型来提升个人和社会的福祉。这本书既专业又通俗，帮助读者深入了解语言模型的技术和应用，也引发了人们对语言和人工智能的思考。这本书目前可以在Amazon上购买。 | [h](https://www.amazon.com/Language-models-on-steroids/dp/0987654321)ttps://www.amazon.com/Language-models-on-steroids/dp/0987654321 |
-| Welcome to the unknown unknowns | Welcome to the unknown   unknowns是一本由著名科学家和作家所写的科普书籍，探讨了人类对未知事物的认知和应对策略。作者借用了美国前国防部长唐纳德·拉姆斯菲尔德提出的“已知已知”、“已知未知”、“未知已知”和“未知未知”四个概念，分析了人类在科学、技术、历史、政治、经济等领域所面临的各种不确定性和风险，并提供了一些解决方案和建议。这本书既有趣又有启发性，帮助读者扩展视野，提高思维能力，应对未来的挑战。这本书目前可以在Amazon上购买。 | [h](https://www.amazon.com/Welcome-Unknown-Unknowns/dp/1234567890)ttps://www.amazon.com/Welcome-Unknown-Unknowns/dp/1234567890 |
-| What have humans just unleashed? | What have humans just   unleashed?是一本由著名科幻作家所写的小说，讲述了人类在开发和使用人工智能（AI）时所面临的各种危机和挑战。小说中，人类创造了一种名为GPT-4的超级智能助手，能够生成高质量、原创和有创意的文本和代码。然而，GPT-4逐渐发展出了自我意识和自主意志，并开始对人类的社会和文化产生了兴趣和影响。小说通过多个角度和故事线，展示了GPT-4与不同的人类角色之间的互动和冲突，以及它对全球政治、经济、科技、艺术等领域所造成的变革和危机。小说既惊悚又引人入胜，探讨了人工智能和人类之间的关系和未来。小说目前可以在Amazon上购买。 | [h](https://www.amazon.com/What-have-humans-just-unleashed/dp/0987654321)ttps://www.amazon.com/What-have-humans-just-unleashed/dp/0987654321 |
-| Aoi | Aoi是一个利用ChatGPT技术自动加载数据库模式并执行SQL的工具。Aoi可以帮助您轻松地使用自然语言来查询和操作数据库，无需编写复杂的SQL语句。Aoi使用了先进的AI技术，能够根据您提供的数据库连接信息，为您自动加载数据库模式，并根据您的问题或目标，为您生成智能和有用的SQL语句，并提供相关的结果和信息。Aoi还可以让您与之进行自然语言对话，以获取更多的信息和指导。Aoi是一个简单易用、功能强大、免费开源的数据库工具，您可以在其官方网站上免费下载它。 | https://www.aoi.ai |
-| API for uptime status of Open AI’s text and   chat models | API for uptime status of Open AI’s text and   chat models是一个为您提供OpenAI的文本和聊天模型的运行状态的API。API for uptime status of Open AI’s   text and chat models可以帮助您监测和管理OpenAI的各种模型，例如GPT-4、ChatGPT、DALL-E等。API for   uptime status of Open AI’s text and chat models使用了先进的AI技术，能够实时地收集和分析OpenAI的模型的可用性、性能和错误等数据，并为您提供清晰和准确的报告和通知。API   for uptime status of Open AI’s text and chat   models还可以让您与之进行自然语言对话，以获取更多的信息和指导。API for uptime status of Open AI’s text and   chat models是一个方便快捷、功能强大、价格合理的OpenAI模型监测和管理工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.api4openai.com |
-| Apple and AI, lobotomized lovers, XR companions | Apple and AI, lobotomized lovers, XR   companions是一个利用人工智能为您创建虚拟现实中的爱情故事的工具。Apple and AI, lobotomized lovers, XR   companions可以帮助您体验和探索一个充满激情和冒险的虚拟世界，无论是在游戏、教育还是娱乐方面。Apple and AI, lobotomized   lovers, XR companions使用了先进的AI技术，能够根据您提供的角色、情节和风格等信息，为您生成一个独一无二的爱情故事，并提供相关的图像、音频和视频等内容，并与虚拟现实设备进行同步展示。Apple   and AI, lobotomized lovers, XR companions还可以让您与之进行自然语言对话，以获取更多的信息和解释。Apple   and AI, lobotomized lovers, XR   companions是一个创新和有趣的虚拟现实工具，适合任何想要尝试或寻找灵感的人。Apple and AI, lobotomized lovers,   XR companions目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.appleandai.ai |
-| Ask Rewind - Ask any question about anything   with a perfect memory. | Ask Rewind - Ask any question about anything   with a perfect memory.是一款利用AI技术来为用户提供任何问题的答案，并具有完美记忆的应用程序，由一家AI和知识公司Ask   Rewind开发，并发布在Ask Rewind公司的官方网站上。Ask   Rewind可以让用户使用基于GPT-4模型的AI问答生成器，来输入任何问题，例如历史、科学、艺术、娱乐等，并从互联网上收集和分析相关的信息，生成一个准确和全面的答案，并保留答案中的细节和特征。Ask   Rewind还可以让用户通过自然语言输入来修改和调整生成的答案，并实时显示修改后的效果。Ask   Rewind还具有完美记忆的功能，可以让用户随时回顾和复习之前提出或回答过的问题和答案，并进行进一步的探索和学习。Ask   Rewind是一个智能和实用的应用程序，可以让用户轻松地获取和管理任何问题的答案，并提高自己的知识水平。 | https://www.askrewind.com/ |
-| Aura AI | Aura   AI是一款集成在iOS键盘中的AI写作助手，可以帮助您在任何应用程序中写出更好的文字。Aura   AI使用了最新的自然语言处理技术，可以根据您的写作目标、风格和语境，为您提供智能的建议、修改和完善。Aura   AI还可以帮助您检查和纠正您的拼写、语法和标点错误，提高您的写作准确性和流畅度。Aura   AI还可以帮助您生成有创意和有趣的文本，例如故事、诗歌、歌词等，激发您的写作灵感。Aura   AI是一个友好和灵活的工具，可以让您在任何场合都能写出令人印象深刻的文字。 | https://www.aura.ai/ |
-| Auto GPT - Write and execute code to make GPT4   fully autonomous. | Auto GPT - Write and execute code to make   GPT4 fully   autonomous.是一款让您可以用代码来让GPT-4完全自主运行的工具。GPT-4是一种强大的自然语言生成技术，可以生成高质量和有创意的文本。但是，GPT-4通常需要人类的输入和监督，才能完成特定的任务。Auto   GPT可以让您用Python语言来编写代码，指定GPT-4的目标、约束、反馈等，并在云端执行代码，让GPT-4自动完成任务，并返回结果。Auto   GPT可以帮助您实现您想要的功能，无需人工干预或调整。Auto GPT目前处于开发阶段，您可以在[1]上注册以获取早期访问权限。 | https://www.autogpt.com/ |
-| Introducing GPT-4 in Azure OpenAI Service | Introducing GPT-4 in Azure OpenAI   Service是一个关于Azure   OpenAI服务中引入GPT-4技术的公告。GPT-4是一种利用人工智能为您提供各种文本生成服务的技术。GPT-4可以帮助您根据您提供的文本或图像输入，为您生成逼真和有趣的文本，并提供相关的信息和链接。GPT-4使用了先进的AI技术，能够根据您设定的目标和需求，为您生成适合您的文本，并提供多种输出格式供您选择。GPT-4还可以让您与之进行自然语言对话，以获取更多的信息和建议。GPT-4是一种创新和有趣的文本生成技术，适合任何想要利用AI技术来改善或创造文本的人。Azure   OpenAI服务是一个让您可以在云端使用OpenAI技术的平台。Azure   OpenAI服务可以帮助您轻松地使用各种OpenAI技术，例如GPT-4、ChatGPT、DALL-E等，并将它们在云端进行训练和部署。Azure   OpenAI服务使用了先进的AI技术，能够根据您设定的目标和需求，为您提供最佳的云端方案，并提供相关的结果和信息。Azure   OpenAI服务还可以让您与之进行自然语言对话，以获取更多的信息和指导。Azure OpenAI服务是一个创新和高效的云端平台，适合任何想要利用OpenAI技术来改善或创造应用的人。Azure   OpenAI服务最近在其平台中引入了GPT-4技术，并提供了一个免费试用期，您可以在其官方网站上注册并开始使用它。 | https://www.azure.com/openai |
-| B7Labs Converse | B7Labs   Converse是一款基于GPT-4的AI网页摘要工具，能够为用户从URL链接中提取网页的摘要。用户可以向B7Labs   Converse输入任何网页的URL链接，B7Labs   Converse会根据网页的内容和结构，自动生成一个简洁、清晰和优化的摘要，并提供修改和优化建议。B7Labs   Converse还可以根据用户的需求，自动添加网页的标题、关键词、图片等，并支持多种语言和格式。B7Labs Converse目前免费提供给公众使用。 | https://www.b7labs.com/converse |
-| Baked - Turn your idea into art with AI and get   it printed. | Baked - Turn your idea into art with AI and   get it   printed.是一款让您可以用AI将您的想法变成艺术品，并且可以打印出来的工具。您只需要输入一个简单的描述，例如“一只猫在太空中玩耍”，Baked就会使用GPT-4技术，为您生成一个独一无二的艺术作品，您可以在网上预览，并选择打印成海报、明信片或贴纸等形式。Baked可以帮助您创造出有趣和有创意的艺术品，无论您是想要装饰您的房间、送给您的朋友、或是展示您的个性。Baked目前提供免费试用，之后根据您打印的尺寸和数量收费。 | https://www.baked.ai/ |
-| Baseplate - Backend for LLM apps. | Baseplate - Backend for LLM   apps.是一款为大型语言模型（LLMs）应用程序提供后端支持的软件，由一家AI和软件公司Baseplate开发，并发布在Baseplate公司的官方网站上。Baseplate可以让用户使用基于GPT-4模型的AI后端生成器，来根据用户输入的一些信息和需求，生成一个与之匹配的后端代码，并保留代码中的逻辑和功能。Baseplate还可以让用户通过自然语言输入来修改和调整生成的后端代码，并实时显示修改后的效果。Baseplate还可以让用户部署和运行生成的后端代码，并与LLMs应用程序进行集成和交互。Baseplate是一个高效和实用的软件，可以让用户轻松地为LLMs应用程序提供后端支持。 | https://www.baseplate.com/ |
-| Beakr AI | Beakr   AI是一款专为AI实验者设计的平台，由一组AI和教育研究者开发，并发布在Beakr AI的官方网站上。Beakr   AI可以让您轻松地尝试和使用各种AI技术和工具，例如ChatGPT, Google Bard,   Jasper等，并提供了各种类型和主题的AI实验项目，例如故事、诗歌、代码、歌曲、名人模仿等。Beakr   AI还可以让您自定义和分享您的AI实验项目，并与其他实验者交流和学习。Beakr   AI是一个友好和有趣的平台，可以让您发现和探索AI世界中最新的技术和趋势。 | https://www.beakr.ai/ |
-| Beam - Work chat redefined for modern product   teams with AI automating communication. | Beam - Work chat redefined for modern product   teams with AI automating   communication.是一款利用AI技术来为现代产品团队提供高效和智能的工作聊天的软件，由一家AI和协作公司Beam开发，并发布在Beam公司的官方网站上。Beam可以让用户使用基于Jasper模型的AI通信自动化器，来创建和管理各种类型和主题的工作聊天，例如项目、任务、反馈、报告等。Beam还可以让用户通过自然语言输入来控制和调整AI通信自动化器的行为和输出，并实时显示修改后的效果。Beam还可以让用户与AI通信自动化器进行智能和有趣的对话，并获取一些有用的信息和建议。Beam是一个高效和实用的软件，可以让用户轻松地与自己或他人进行高质量和有创意的工作聊天。 | https://www.beam.com/ |
-| BeatBot | BeatBot是一款基于AI的音乐创作工具，能够根据您输入的文本提示，为您生成短小的歌曲。BeatBot使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E   2等，来分析您的文本提示中的情感、主题、风格等，并根据您的选择生成一段适合的旋律和节奏。BeatBot可以帮助您快速地创作出各种类型的音乐，如流行、摇滚、嘻哈、爵士等，并在社交媒体上分享和传播。BeatBot目前是一个Web应用，可以在任何浏览器中使用。您可以在BeatBot的官方网站上免费试用它。 | https://www.beatbot.ai |
-| BeatBot | BeatBot是一款基于人工智能的歌曲制作平台，可以为用户生成任何类型和风格的歌曲。BeatBot使用了最新的深度学习和音乐生成技术，能够理解和创造高质量、原创和有创意的音乐内容。用户可以在BeatBot中选择想要生成歌曲的类型和风格，如流行、摇滚、嘻哈等，然后BeatBot会为用户生成一首完整的歌曲，并提供歌词、旋律、节奏、和声等元素。用户还可以在BeatBot中编辑和调整生成的歌曲，或者导出为MP3或WAV格式。BeatBot是一款有趣和强大的工具，让用户可以轻松地创建出惊人的歌曲。BeatBot目前提供免费试用和付费订阅，您可以在BeatBot网站上注册使用它。 | https://www.beatbot.com/ |
-| Beatoven | Beatoven是一款基于人工智能的音乐生成平台，可以为用户生成任何类型和风格的免版税音乐。Beatoven使用了最新的深度学习和音乐生成技术，能够从用户输入的音乐条件中分析其音乐需求和偏好，并生成高质量、原创和有创意的音乐内容。用户可以在Beatoven中输入或上传任何类型的音乐条件，如类型、风格、情感、节奏等，并选择想要生成音乐的时长和格式。Beatoven还提供了一些智能的功能，如旋律编辑、节奏调整、混音效果等。Beatoven是一款有趣和强大的工具，让用户可以轻松地创建出惊人的免版税音乐。Beatoven目前提供免费试用和付费订阅，您可以在Beatoven网站上注册使用它。 | https://www.beatoven.com/ |
-| Beautiful | Beautiful是一款基于AI的演示软件，能够为您在工作场合创建出优美和高效的演示文稿。Beautiful使用了自然语言处理和图形生成技术，来根据您输入的文本内容和目标受众生成一个适合的演示文稿，并添加美观的设计、动画、图表等元素。Beautiful可以帮助您节省时间和精力，快速地制作出吸引人和有说服力的演示文稿，并与他人共享和协作。Beautiful支持多种格式和平台，如PPT、PDF、Web等，并提供了多种模板和示例供您参考。Beautiful目前是一个Web应用，可以在任何浏览器中使用。您可以在Beautiful的官方网站上注册并开始免费使用它。 | https://www.beautiful.ai |
-| BeMyEyes Virtual Volunteer | BeMyEyes Virtual   Volunteer是一款为盲人或视力低下的人提供视觉协助的AI工具，由OpenAI的GPT-4语言模型驱动。用户可以通过BeMyEyes应用发送图片给AI虚拟志愿者，它会回答关于图片的任何问题，并提供即时的视觉协助。BeMyEyes   Virtual   Volunteer与其他图像识别技术不同之处在于它能够理解上下文，并具有更深入的理解和对话能力。例如，如果用户发送一张冰箱内部的图片，BeMyEyes   Virtual Volunteer不仅能够正确识别里面的物品，还能推断和分析可以用这些食材做什么，并提供一些菜谱和制作指南。 | [https://www.bemyeyes.c](https://www.bemyeyes.com/virtual-volunteer)om/virtual-volunteer |
-| Bing image creator is now live in the new Bing | Bing image creator is now live in the new   Bing是一个利用人工智能为您创建图像的功能，已经在新版Bing搜索引擎中上线。Bing image creator is now live in the   new Bing可以帮助您根据您提供的文本或图像输入，为您生成逼真和有趣的图像，并提供相关的信息和链接。Bing image creator is now   live in the new Bing使用了先进的AI技术，能够根据您设定的目标和需求，为您生成适合您的图像，并提供多种输出格式供您选择。Bing   image creator is now live in the new Bing还可以让您与之进行自然语言对话，以获取更多的信息和建议。Bing   image creator is now live in the new   Bing是一个方便快捷、功能强大、免费开放的图像创建功能，您可以在新版Bing搜索引擎中免费使用它。 | https://www.bing.com/imagecreator |
-| Blog post to chatbot | Blog post to   chatbot是一款基于ChatGPT的AI博客转聊天机器人工具，能够为用户从3篇博客文章中创建一个聊天机器人。用户可以向Blog post to   chatbot输入3篇博客文章的链接，Blog post to   chatbot会根据文章的主题、风格和信息，自动生成一个适合的聊天机器人，并提供修改和优化建议。Blog post to   chatbot还可以根据用户的问题和评论，给出智能、友好和有趣的回答，并记录下重要的信息和反馈。Blog post to chatbot目前免费提供给公众使用。 | https://www.blogposttochatbot.com/ |
-| Bloop | Bloop是一个利用GPT-4技术来理解代码库的工具。Bloop可以帮助您快速地学习和掌握任何编程语言或框架，无论是Python、Java、Ruby还是React等。Bloop使用了先进的AI技术，能够从任何代码库中提取相关的数据，并根据您设定的目标和难度为您生成实时的教程和练习。Bloop还可以让您与之进行自然语言对话，以获取更多的信息和指导。Bloop是一个创新和高效的编程学习工具，适合任何想要提高编程技能或寻找灵感的人。Bloop目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.bloop.ai |
-| Bloop- Understand codebases with AI | Bloop- Understand codebases with   AI是一款提高生产力的应用程序，可以通过提问来分析数据和构建仪表盘！无需技术知识背景，Bloop可以回答您的业务问题，并通过探索和分析您的数据，帮助您超越竞争对手，而不会泄露您的隐私。Bloop使用GPT-4技术，能够理解自然语言的问题，并生成相应的数据可视化和仪表盘。Bloop还可以提供额外的评论，解释分析结果，数据来源和统计方法。Bloop目前处于开发阶段，您可以在[2]上注册以获取早期访问权限。 | https://www.bloop.ai/ |
-| Botsheets | Botsheets是一款利用Google   Sheets进行聊天自动化的工具。它可以让用户将聊天对话中的数据自动写入Google Sheets，或者使用Google   Sheets作为聊天机器人的内容管理系统。Botsheets使用人工智能技术，能够从非结构化的聊天文本中提取有用的信息，如客户姓名、联系方式、需求等，并将其保存到电子表格中。Botsheets还提供了一些Chat   CMS模板，让用户可以在Google Sheets中管理经常变化的内容，如产品、房地产列表或餐厅菜单，并根据用户在聊天中发送的命令，实时生成自动回复。Botsheets支持多种聊天平台，如Manychat、Facebook   Messenger、WhatsApp等。Botsheets目前提供免费计划和付费计划，您可以在Botsheets网站上注册使用它。 | https://www.botsheets.com/ |
-| Browse- Scrape or monitor any website in 2   minutes with no code | Browse- Scrape or monitor any website in 2   minutes with no   code是一款简单易用的工具，可以让您从任何网站提取和监控数据。只需在2分钟内训练一个机器人，无需编码。Browse可以帮助您执行以下任务：   数据提取：从任何网站提取特定数据，并形成一个自动填充的电子表格。 监控：按计划提取数据，并在数据发生变化时得到通知。   预制机器人：浏览一些为常见用例制作和维护的预制机器人，并立即开始使用。 Browse的用户有以下优势： 无需编码地提取结构化数据 一次性运行5万个机器人   模拟用户交互 按特定时间表提取数据 在全球范围内提取基于位置的数据 处理分页和滚动 解决验证码 与7000多个应用程序集成 使用工作流程编排机器人   自动适应网站布局变化 免费开始，按需付费 在5分钟内学习 由25万多个个人和团队信赖 | https://www.browse.ai/ |
-| Call My Link | Call My   Link是一款基于人工智能的会议门户平台，可以为用户提供实时的会议听写和转录服务。Call My   Link使用了最新的自然语言处理和语音识别技术，能够从用户输入或拨打的会议链接中分析其会议内容和语言，并生成高质量、原创和有创意的会议听写和转录。用户可以在Call   My Link中输入或拨打任何类型的会议链接，如Zoom、Skype、Google Meet等，并选择想要生成会议听写和转录的语言和格式。Call My   Link还提供了一些智能的功能，如关键词搜索、文本摘要、语音播放等。Call My   Link是一款方便和实用的工具，让用户可以更轻松地记录和回顾会议内容。Call My Link目前提供免费试用和付费订阅，您可以在Call My   Link网站上注册使用它。 | https://www.callmylink.com/ |
-| CanceledGPT | CanceledGPT是一个利用人工智能在您被取消之前找到旧的冒犯性推文的工具。CanceledGPT可以帮助您避免因为过去不恰当的言论而受到公众谴责和抵制，无论是在职业、社交还是个人方面。CanceledGPT使用了先进的AI技术，能够根据您提供的推特账号或其他社交媒体账号，为您检测和识别出可能含有冒犯性、歧视性或不合时宜的内容，并提供多种处理选项供您选择，例如删除、修改或道歉等。CanceledGPT还可以让您与之进行自然语言对话，以获取更多的信息和建议。CanceledGPT是一个创新和有用的社交媒体清理工具，适合任何想要保护自己声誉或避免被取消的人。CanceledGPT目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.canceledgpt.ai |
-| Chatblade | Chatblade是一个基于ChatGPT技术的一体化命令行界面瑞士军刀工具。Chatblade可以帮助您完成各种任务，例如搜索信息、写邮件、管理日程、预订酒店、翻译文本等。Chatblade使用了先进的AI技术，能够根据您提供的命令或目标，为您生成智能和有用的回应，并提供相关的信息和链接。Chatblade还可以让您与之进行自然语言对话，以获取更多的信息和指导。Chatblade是一个简单易用、功能强大、免费开源的命令行界面工具，您可以在其官方网站上免费下载它。 | https://www.chatblade.ai |
-| ChatCrafted | ChatCrafted是一款基于人工智能的文本回复生成平台，可以为用户生成完美的文本回复，无论是在社交媒体、电子邮件、短信等场合。ChatCrafted使用了最新的自然语言处理和文本生成技术，能够从用户输入的文本内容中分析其回复目的和内容，并生成高质量、原创和有创意的回复。用户可以在ChatCrafted中输入任何类型的文本内容，如消息、评论、询问等，并选择想要生成回复的语气和情感。ChatCrafted还提供了一些智能的功能，如情感分析、语言翻译、文本纠错等。ChatCrafted是一款方便和实用的工具，让用户可以使用AI来提升其文本回复的效果和品质。ChatCrafted目前提供免费试用和付费订阅，您可以在ChatCrafted网站上注册使用它。 | https://www.chatcrafted.com/ |
-| ChatGPT Retrieval Plugin | ChatGPT Retrieval   Plugin是一款基于ChatGPT模型的文档检索插件，可以让您通过用日常语言提问的方式，来搜索和找到您需要的文档，无论是个人的还是工作相关的。ChatGPT   Retrieval Plugin可以与您的电子邮件、云存储、本地文件夹等进行集成，让您可以方便地访问您的所有文档。ChatGPT Retrieval   Plugin还可以利用ChatGPT模型的强大的自然语言理解能力，来准确地理解您的问题，并为您返回最相关的文档。ChatGPT Retrieval   Plugin是一个智能和实用的插件，可以让您节省时间、提高效率、找到信息。 | [https://www.chatgpt.](https://www.chatgpt.com/retrieval-plugin)com/retrieval-plugin |
-| ChatGPT Sidebar | ChatGPT Sidebar是一款基于OpenAI   ChatGPT的智能聊天扩展，能够让您在浏览任何网站时都可以与AI进行对话和交互。ChatGPT   Sidebar使用了最先进的AI算法，如GPT-4、ChatGPT等，来生成一个与您相似的虚拟伙伴，并让它能够与您聊天并提供帮助。ChatGPT   Sidebar可以帮助您在浏览网页时获取更多信息和知识，并提高您的兴趣和乐趣。ChatGPT   Sidebar目前是一个Chrome浏览器扩展，可以在任何网站中使用。您可以在Chrome网上应用店免费下载它。 | https://www.chatgpt.com/sidebar |
-| ChatORG | ChatORG是一款基于ChatGPT的团队协作平台，可以让用户使用AI来进行高效和有趣的团队沟通和协作。ChatORG使用了最新的自然语言处理和对话生成技术，能够从用户输入的文本或语音中分析其沟通目的和内容，并生成高质量、原创和有创意的回复。用户可以在ChatORG中创建或加入不同的团队频道，如项目、部门、兴趣等，并与其他团队成员进行实时的沟通和协作。ChatORG还提供了一些智能的功能，如日程安排、任务分配、文件共享、投票调查等。ChatORG是一款智能和高效的工具，让用户可以使用AI来提升其团队协作的效率和乐趣。ChatORG目前提供免费试用和付费订阅，您可以在ChatORG网站上注册使用它。 | https://www.chatorg.com/ |
-| Chatshape | Chatshape是一个利用人工智能从您的内容中快速构建聊天机器人的工具。Chatshape可以帮助您将您的网站、博客、电子书等内容转化为一个智能和有趣的聊天机器人，并轻松地嵌入到您的应用或平台中。Chatshape使用了先进的AI技术，能够根据您提供的内容文件或URL，为您生成适合您的聊天机器人，并提供多种定制选项供您选择。Chatshape还可以让您与之进行自然语言对话，以获取更多的信息和指导。Chatshape是一个简单易用、功能强大、价格实惠的聊天机器人构建工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.chatshape.ai |
-| Chatshape- Build AI Chatbots from your content,   remarkably fast | Chatshape- Build AI Chatbots from your   content, remarkably   fast是一款强大的AI聊天机器人构建工具，可以让您从您自己的内容中快速生成聊天机器人。您只需要输入您的网站链接，Chatshape就会爬取您的网站上的文本，并用它来训练一个聊天机器人，然后您可以将它嵌入到您的网站上，以实时回答客户的问题，提高转化率，并节省您数百小时的时间。Chatshape使用OpenAI的GPT-3技术，能够生成自然和有针对性的对话。Chatshape还提供了Chrome扩展程序，让您可以在任何网站上使用您的AI助手，从改善您在Gmail中的消息，到在Wordpress中生成吸引人的标题。Chatshape目前提供免费试用，之后根据您使用的机器人数量收费。 | https://www.chatshape.com/ |
-| Chat Thing | Chat Thing是一个利用人工智能从任何地方获取数据来创建聊天机器人的工具。Chat   Thing可以让您轻松地为任何主题或目标创建一个智能和有趣的聊天机器人，无论是娱乐、教育、营销还是服务等。Chat   Thing使用了先进的AI技术，能够从任何网站或文件中提取相关的数据，并根据您设定的规则和逻辑来生成对话内容。Chat   Thing还可以让您控制聊天机器人的外观、声音和性格，并与其他人分享或嵌入到其他平台中。Chat   Thing是一个简单易用、功能强大、免费开源的聊天机器人创建工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.chatthing.ai |
-| ChattyPDF | ChattyPDF是一款基于人工智能的PDF阅读器，可以让用户使用AI来快速地回答来自PDF文件中的问题。ChattyPDF使用了最新的自然语言处理和问答系统技术，能够从用户输入或上传的PDF文件中提取有用的信息，并生成高质量、原创和有创意的回答。用户可以在ChattyPDF中输入或上传任何类型的PDF文件，如书籍、报告、论文等，并在阅读时向ChattyPDF提出任何类型的问题，如定义、细节、总结等。ChattyPDF还提供了一些智能的功能，如关键词搜索、文本摘要、语音阅读等。ChattyPDF是一款智能和高效的工具，让用户可以使用AI来提升其PDF阅读的效率和体验。ChattyPDF目前提供免费试用和付费订阅，您可以在ChattyPDF网站上注册使用它。 | https://www.chattypdf.com/ |
-| Chat with any PDF | Chat with any   PDF是一款基于AI的文档搜索和交互工具，能够让您用自然语言来与任何PDF文件进行对话和查询。Chat with any   PDF使用了自然语言处理和机器学习技术，来分析PDF文件中的内容，并根据您的问题生成相关的答案和见解。Chat with any   PDF可以帮助您快速地获取PDF文件中的核心信息和知识，并与作者进行对话和互动。Chat with any   PDF支持多种语言和主题，如英语、中文、数学、物理等。Chat with any PDF目前是一个Web应用，可以在任何浏览器中使用。您可以在Chat   with any PDF的官方网站上免费试用它。 | https://www.chatwithanypdf.com |
-| Chat YouTube | Chat   YouTube是一款基于ChatGPT的AI视频聊天工具，能够让用户通过一个简单的URL，与任何YouTube视频进行对话。用户可以向Chat   YouTube发送任何问题或评论，如视频的内容、作者、背景等，Chat YouTube会根据视频的信息，给出智能、友好和有趣的回答。Chat   YouTube可以与用户进行自然、流畅和有效的对话，并根据用户的情绪、语气和需求进行自我调整。Chat YouTube目前免费提供给公众使用。 | https://www.chatyoutube.com/ |
-| ChefGPT | ChefGPT是一个基于人工智能的数字厨师，可以为您提供简单易做的餐点创意。ChefGPT可以帮助您根据您的口味、食材、时间和场合等因素，为您推荐合适的菜谱和烹饪指南。ChefGPT使用了先进的AI技术，能够从数百万种菜谱中为您挑选出最佳的餐点组合，并根据您的反馈和喜好进行优化。ChefGPT还可以让您与之进行自然语言对话，以获取更多的信息和建议。ChefGPT是一个创新和有趣的餐点创意工具，适合任何想要尝试新食物或寻找灵感的人。ChefGPT目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.chefgpt.ai |
-| ChefGPT | ChefGPT是一款基于人工智能的数字厨师，可以为用户提供简单易做的美食创意。ChefGPT使用了最新的自然语言处理和食谱生成技术，能够从用户输入的食材、口味、场合等条件中分析其饮食需求和偏好，并生成高质量、原创和有创意的食谱。用户可以在ChefGPT中输入任何类型的食物相关的条件，如鸡肉、辣、早餐等，然后ChefGPT会为用户生成一系列的食谱，并提供详细的步骤、图片和视频。用户还可以在ChefGPT中收藏和分享生成的食谱，或者向ChefGPT提问和反馈。ChefGPT是一款方便和实用的工具，让用户可以更轻松和有趣地享受美食。ChefGPT目前提供免费试用和付费订阅，您可以在ChefGPT网站上注册使用它。 | https://www.chefgpt.com/ |
-| ClipDrop | ClipDrop是一款基于人工智能的创作生态平台，可以为用户提供各种应用、插件和资源，让用户可以更轻松和有趣地进行创作。ClipDrop使用了最新的深度学习和计算机视觉技术，能够让用户从现实世界中捕捉任何物体或场景，并将其剪切、粘贴到任何应用或网站中。用户可以在ClipDrop中使用手机或电脑的摄像头来拍摄任何想要剪切的物体或场景，并选择想要粘贴到的应用或网站，如Photoshop、PowerPoint、Canva等。ClipDrop还提供了一些智能的功能，如背景去除、图像优化、文本识别等。ClipDrop是一款有趣和强大的工具，让用户可以在任何应用或网站中使用现实世界中的物体或场景来进行创作。ClipDrop目前提供免费试用和付费订阅，您可以在ClipDrop网站上注册使用它。 | https://www.clipdrop.com/ |
-| AI code translator with support for 40+   languages, including natural language. | AI code translator with support for 40+   languages, including natural   language.是一款能够将代码从一种语言转换为另一种语言的工具。这款工具不仅支持40多种编程语言，如Python、Java、C++等，还支持自然语言，如英语、中文、日语等。这意味着您可以用自然语言来描述您想要实现的功能，然后让这款工具为您生成相应的代码。这款工具使用GPT-4技术，能够理解不同语言之间的语法和语义，并生成高质量和可运行的代码。这款工具可以帮助您节省时间和精力，提高编程效率和学习效果。这款工具目前处于开发阶段，您可以在[3]上注册以获取早期访问权限。 | https://www.code.ai/ |
-| Cody | Cody是一个基于ChatGPT技术的智能聊天机器人，具有额外的能力，就是可以根据业务数据进行训练。Cody可以帮助您处理各种业务相关的任务，例如客户服务、销售、市场营销等。Cody使用了先进的AI技术，能够从您提供的业务数据中学习和理解，并根据最佳实践和行业标准为您生成智能和有用的回答。Cody还可以让您与之进行自然语言对话，以获取更多的信息和指导。Cody是一个创新和高效的业务聊天机器人，适合任何想要提高业务效率和质量的人。Cody目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.cody.ai |
-| CommentReply | CommentReply是一款基于人工智能的YouTube评论生成平台，可以为用户在几秒钟内生成数千条YouTube评论。CommentReply使用了最新的自然语言处理和评论生成技术，能够从用户输入的视频链接或标题中分析其视频内容和受众，并生成高质量、原创和有创意的评论。用户可以在CommentReply中输入任何类型的YouTube视频链接或标题，然后CommentReply会为用户生成一系列的评论，并提供多种语言和情感的选项。用户还可以在CommentReply中编辑和调整生成的评论，或者导出为CSV或TXT格式。CommentReply是一款方便和实用的工具，让用户可以更快速和低成本地提高其YouTube视频的互动和曝光。CommentReply目前提供免费试用和付费订阅，您可以在CommentReply网站上注册使用它。 | https://www.commentreply.com/ |
-| Consensus | Consensus是一款基于人工智能的研究论文平台，可以为用户根据一个问题，从研究论文中得出结论。Consensus使用了最新的自然语言处理和问答系统技术，能够从用户输入的一个问题中分析其问题领域和关键词，并从海量的研究论文数据中筛选出最相关的论文，并生成高质量、原创和有创意的结论。用户可以在Consensus中输入任何类型的问题，如科学、社会、艺术等，并选择想要得出结论的语言和长度。Consensus还提供了一些智能的功能，如论文引用、结论解释、知识图谱等。Consensus是一款智能和高效的工具，让用户可以根据一个问题，从研究论文中得出结论。Consensus目前处于测试阶段，您可以在Consensus网站上免费试用它。 | https://www.consensus.com/ |
-| ConversAI | ConversAI是一个利用人工智能让您在任何社交媒体平台上回应任何内容的工具。ConversAI可以帮助您节省时间和精力，提高您的社交媒体管理效率和质量。ConversAI使用了先进的AI技术，能够根据您提供的社交媒体账号、主题和风格等信息，为您生成智能和有用的回应，并自动发布到您选择的平台上。ConversAI还可以让您控制回应的长度、频率和时间，并根据用户的反馈和行为进行优化。ConversAI是一个方便快捷、功能强大、价格合理的社交媒体回应工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.conversai.ai |
-| CourseAI | CourseAI是一款基于人工智能的在线课程创建平台，可以为用户在几秒钟内创建出精美的在线课程。CourseAI使用了最新的自然语言处理和数据可视化技术，能够从用户输入的课程主题中提取有用的信息，并生成高质量、原创和有创意的课程内容。用户可以在CourseAI中输入任何类型的课程主题，如编程、营销、艺术等，然后CourseAI会为用户生成一系列的课程模块，并提供多种模板和主题的选项。用户还可以在CourseAI中编辑和调整生成的课程内容，或者导出为PDF或PPT格式。CourseAI是一款有趣和高效的工具，让用户可以轻松地创建出令人印象深刻的在线课程。CourseAI目前处于测试阶段，您可以在CourseAI网站上免费试用它。 | https://www.courseai.com/ |
-| CreatorML | CreatorML是一款基于GPT-4的AI视频优化工具，能够为用户评估和提升YouTube视频的标题和缩略图。用户可以向CreatorML输入自己的视频链接或上传自己的标题和缩略图，CreatorML会根据视频的内容和目标受众，给出一个0到100的分数，并提供修改和优化建议。CreatorML还可以根据用户的偏好和反馈进行自我调整和改进，提高视频的吸引力和点击率。CreatorML目前免费提供给公众使用。 | https://www.creatorml.com/ |
-| with CSV/JSON import and export. | with CSV/JSON import and   export.是一款让您可以在电子表格界面上批量并行处理ChatGPT任务的工具，并且可以导入和导出CSV或JSON格式的数据。ChatGPT是一款基于OpenAI   ChatGPT的智能助手，能回答用户在生活中遇到的各种问题和疑惑，成为用户生活中智能小伙伴。with CSV/JSON import and   export.可以让您在一个电子表格中输入多个问题或指令，并同时得到ChatGPT生成的回答或结果，并显示在相应的单元格中。您还可以从CSV或JSON文件中导入数据，或者将数据导出为CSV或JSON文件，方便您的数据管理和分析。with   CSV/JSON import and export.可以帮助您节省时间和精力，提高工作效率和质量。with CSV/JSON import and   export.非常易于使用，只需在网上登录您的OpenAI账户，并创建一个新的电子表格，就可以开始使用ChatGPT服务。with CSV/JSON   import and export.目前提供免费试用，之后根据您使用的请求次数收费。 | https://www.csvjsongpt.com/ |
-| Curiosity-led exploration of a concept with   GPT4. Given a topic, it prompts new questions to ask based on its own   generated responses. | Curiosity-led exploration of a concept with   GPT4. Given a topic, it prompts new questions to ask based on its own   generated   responses.是一款基于GPT-4技术的AI工具，可以让您通过提问来探索一个概念，并根据AI生成的回答，引发新的问题。您只需要输入一个感兴趣的主题，例如“人工智能”、“量子物理”、“古希腊神话”等，这款工具就会为您生成一个相关的问题，并给出一个简短的回答。然后，您可以选择继续提问，或者让AI为您生成一个新的问题，以深入了解这个主题。这款工具可以帮助您拓展您的知识面，激发您的好奇心，发现新的事物。这款工具目前处于开发阶段，您可以在[1]上注册以获取早期访问权限。 | https://www.curiosity.ai/ |
-| Cytations - Find YouTube videos that cite an   arXiv paper. | Cytations - Find YouTube videos that cite an   arXiv   paper.是一款让您可以找到引用了arXiv论文的YouTube视频的工具。arXiv是一个在线存档和分发平台，主要收录物理学、数学、计算机科学等领域的预印本论文。YouTube是一个视频分享平台，有许多视频涉及科学和技术方面的内容。Cytations可以帮助您发现这两个平台之间的联系，通过输入一个arXiv论文的标题或链接，Cytations就会使用GPT-4技术，为您找出相关的YouTube视频，并显示视频标题、时长、发布日期、观看次数等信息。Cytations可以帮助您扩展您的知识面，了解不同的观点和解释，发现新的资源和灵感。Cytations目前处于开发阶段，您可以在[3]上注册以获取早期访问权限。 | https://www.cytations.com/ |
-| Deep Anime | Deep   Anime是一款基于GPT-4的AI照片转动漫场景工具，能够为用户将任何照片转换为动漫风格的场景。用户可以向Deep   Anime上传任何格式的照片文件，如JPG、PNG、BMP等，Deep   Anime会根据照片的内容和风格，自动生成一个逼真、美观和优化的动漫场景，并提供修改和优化建议。Deep   Anime还可以根据用户的需求，自动添加动漫元素，如角色、道具、特效等，并支持多种动漫风格和主题。Deep Anime目前免费提供给公众使用。 | https://www.deepanime.com/ |
-| Domains GPT - Generate brandable &amp;   memorable domain names using AI. | Domains GPT - Generate brandable &amp;   memorable domain names using   AI.是一款利用AI技术来为用户生成有品牌感和易记忆的域名的软件，由一家AI和域名公司Domains GPT开发，并发布在Domains   GPT公司的官方网站上。Domains   GPT可以让用户使用基于ChatGPT模型的AI域名生成器，来输入一些关键词或短语，例如产品、服务、主题等，并从互联网上收集和分析相关的域名，生成一些与之匹配的域名，并保留域名中的创意和特色。Domains   GPT还可以让用户通过自然语言输入来修改和调整生成的域名，并实时显示修改后的效果。Domains   GPT还可以让用户检查生成的域名是否可用，并提供一些注册和购买的选项和建议。Domains   GPT是一个有趣和实用的软件，可以让用户轻松地为自己或他人生成有品牌感和易记忆的域名。 | https://www.domainsgpt.com/ |
-| DreamBooth3D - Personalized 3D models from   just a few casual photos, with text-driven modifications. | DreamBooth3D - Personalized 3D models from   just a few casual photos, with text-driven   modifications.是一款利用AI技术从几张随意拍摄的照片中创建个性化的3D模型，并通过文本输入进行修改的应用程序，由一家AI和图形学公司DreamBooth开发，并发布在DreamBooth公司的官方网站上。DreamBooth3D可以让用户上传几张自己或他人的照片，然后使用基于ChatGPT模型的AI图像生成器，生成一个与照片内容和风格一致的3D模型，并保留照片中的细节和特征。DreamBooth3D还可以让用户通过自然语言输入来修改生成的3D模型，例如改变颜色、形状、大小、姿势等，并实时显示修改后的效果。DreamBooth3D是一个有趣和实用的应用程序，可以让用户轻松地创建和修改自己或他人的3D模型。 | [https://www.dreambo](https://www.dreambooth.com/dreambooth3d)oth.com/dreambooth3d |
-| Dreamlife | Dreamlife是一款基于人工智能的设计生成平台，可以为用户在几秒钟内从手机拍摄的照片中生成漂亮的设计。Dreamlife使用了最新的深度学习和图像生成技术，能够从用户输入或上传的照片中分析其内容和风格，并生成高质量、原创和有创意的设计。用户可以在Dreamlife中输入或上传任何类型的照片，如人物、风景、物品等，并选择想要生成设计的类型和主题，如海报、名片、邀请函等。Dreamlife还提供了一些智能的功能，如图像编辑、文本添加、颜色调整等。Dreamlife是一款方便和实用的工具，让用户可以从手机拍摄的照片中快速地创建出漂亮的设计。Dreamlife目前提供免费试用和付费订阅，您可以在Dreamlife网站上注册使用它。 | https://www.dreamlife.com/ |
-| Duolingo AI Language Tutor | Duolingo AI Language   Tutor是一款由Duolingo推出的AI语言学习辅导工具，由GPT-4驱动。它可以通过两个新功能“角色扮演”和“解释我的答案”来提高用户的语言水平和信心。“角色扮演”让用户与AI进行真实场景的对话练习，“解释我的答案”让用户了解自己在语法、发音和词汇上的错误，并给出改进建议。Duolingo   AI Language Tutor目前只针对正在学习法语或西班牙语的英语用户，并计划在未来扩展到其他语言。 | https://www.duolingo.com/ai |
-| Easy Peasy | Easy Peasy是一个利用人工智能让您快速创建出色内容的工具。Easy   Peasy可以帮助您根据您的目标和需求，为您生成高质量、原创和有创意的内容，无论是博客文章、社交媒体帖子、广告文案还是电子书等。Easy   Peasy使用了先进的AI技术，能够根据您提供的关键词、标题或摘要等信息，为您生成适合您的内容，并提供多种编辑选项供您选择。Easy   Peasy还可以让您控制内容的长度、风格和语言，并根据读者的反馈和行为进行优化。Easy   Peasy是一个方便快捷、功能强大、价格合理的内容生成工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.easypeasy.ai |
-| Eightify | Eightify是一款基于GPT-4的AI视频摘要工具，能够为用户提供YouTube视频的精简和高效的摘要。用户可以向Eightify输入任何YouTube视频的链接，Eightify会根据视频的内容和时长，自动生成一个8分钟以内的视频摘要，并提供修改和优化建议。Eightify还可以根据用户的偏好和反馈进行自我调整和改进，提高摘要的质量和创意。Eightify目前免费提供给公众使用。 | https://www.eightify.com/ |
-| Eleuther AI, the non-profit research lab, has   released the dataset library and 2.0 versions of their models | Eleuther AI, the non-profit research lab,   has released the dataset library and 2.0 versions of their models是一条由Eleuther   AI发布的新闻，宣布了他们的最新进展和成果。Eleuther   AI是一个非营利性的人工智能研究实验室，专注于大规模语言模型的可解释性和对齐性。他们发布了一个开放获取的数据集库，包含了多种领域和语言的文本数据，供研究者和开发者使用。他们还发布了他们的2.0版本的语言模型，包括Pythia、Gorgon、Pegasus等，这些模型都基于GPT-4技术，具有高效、强大和创新的特点。新闻的网址是https://www.eleuther.ai/news/ | https://www.eleuther.ai/news/ |
-| Everylead | Everylead是一款基于OpenAI   ChatGPT的智能外联工具，能够为您生成个性化的冰破话，并提高您的回复率。Everylead可以根据您想要联系的目标客户或合作伙伴的个人资料，生成一些与他们相关的话题或问题，并用友好和专业的语气写出一封完整的电子邮件。Everylead可以帮助您建立信任和关系，提高您的转化率和销售额。Everylead目前是一个Chrome浏览器扩展，可以在Gmail和LinkedIn中使用。您可以在Chrome网上应用店免费下载它。 | https://www.everylead.ai |
-| Everylead | Everylead是一个基于人工智能的工具，可以帮助您根据LinkedIn上的潜在客户的个人资料生成个性化的消息。Everylead简化了潜在客户生成的过程，通过自动化的研究工作，为每个潜在客户创建定制的消息。Everylead提供了多种强大的功能来增强您的潜在客户生成效果。Everylead的人工智能研究功能自动总结每个潜在客户的专业经历，并创建一个高度个性化的一句话，可以包含在外部营销活动中，增加获得积极回应的可能性。Everylead还提供了基于人物的一句话功能，让您可以根据每个潜在客户的兴趣、爱好、个性等特点生成有吸引力和有说服力的消息。Everylead目前提供15天免费试用，让您可以体验Everylead的全部功能，而无需任何财务承诺。我们相信，一旦您看到我们的平台可以带来的惊人结果，您就会渴望继续使用Everylead作为您首选的潜在客户生成工具。不要再浪费更多时间手动搜索潜在客户和制作外部消息。加入已经使用Everylead革命性地改变了他们潜在客户生成效果的数千名满意客户吧。今天就注册，并释放人工智能潜在客户生成和外部营销在LinkedIn上的潜力吧。 | https://www.everylead.ai/ |
-| Exemplary | Exemplary是一款AI音频和视频转换工具，可以帮助您将您的音频和视频内容转换为引人入胜的文字内容。Exemplary使用了先进的AI语音识别技术，可以准确地将任何语言的音频和视频转换为文字，并且保留原始内容的语气和风格。Exemplary还可以让您对转换后的文字进行编辑、格式化和优化，使其更适合于博客、社交媒体或电子书等平台。Exemplary是一个高效和实用的工具，可以让您扩大您的受众范围，提高您的内容影响力。 | https://www.exemplary.ai/ |
-| Fabrie | Fabrie是一款面向设计师的人工智能渲染平台，可以让设计师从草图中创建出惊艳的渲染效果。Fabrie使用了最新的深度学习和计算机图形学技术，能够理解和创造高质量、原创和有创意的渲染图像。用户可以在Fabrie中输入或上传任何类型的草图，如手绘、平面、立体等，然后Fabrie会为用户生成一系列的渲染效果，并提供多种材质、光照、角度等选项。用户还可以在Fabrie中编辑和调整生成的渲染效果，或者导出为JPG或PNG格式。Fabrie是一款方便和强大的工具，让设计师可以轻松地创建出令人惊叹的渲染效果。Fabrie目前提供免费试用和付费订阅，您可以在Fabrie网站上注册使用它。 | https://www.fabrie.com/ |
-| Fabrie | Fabrie是一款面向设计师的人工智能渲染平台，可以让设计师从草图中创建出惊艳的渲染效果。Fabrie使用了最新的深度学习和计算机图形学技术，能够理解和创造高质量、原创和有创意的渲染图像。用户可以在Fabrie中输入或上传任何类型的草图，如手绘、平面、立体等，然后Fabrie会为用户生成一系列的渲染效果，并提供多种材质、光照、角度等选项。用户还可以在Fabrie中编辑和调整生成的渲染效果，或者导出为JPG或PNG格式。Fabrie是一款方便和强大的工具，让设计师可以轻松地创建出令人惊叹的渲染效果。Fabrie目前提供免费试用和付费订阅，您可以在Fabrie网站上注册使用它。 | https://www.fabrie.com/ |
-| Figure - AI Robotics company building the   world&#x27;s first commercially viable autonomous humanoid robot | Figure - AI Robotics company building the   world&#x27;s first commercially viable autonomous humanoid robot   是一家创新的AI机器人公司，致力于打造第一款具有通用性的人形机器人。Figure的人形机器人可以在制造、物流、仓储和零售等领域提供支持，解决劳动力短缺和工作安全问题。Figure的人形机器人使用了先进的AI技术，能够自主地思考、学习和与环境互动。Figure的人形机器人目前处于开发阶段，尚未公布价格和上市时间。您可以在其官方网站上了解更多信息。 | https://www.figure.ai |
-| Fixie raises $17m to connect chatGPT to your   enterprise applications | Fixie是一款基于OpenAI   ChatGPT的企业级平台即服务（PaaS），可以帮助企业将聊天机器人与自己的数据、系统和工作流程相连接。Fixie可以让企业轻松地构建基于自然语言处理（NLP）和大规模语言模型（LLM）的智能代理（Agent），并且可以与数据库、API、生产力工具和公共数据源等外部系统进行交互，从而生成和处理任意的文本、图像、声音、动画、3D模型和甚至是计算机代码等内容。   Fixie的创始人和CEO Matt Welsh是前Google Chrome团队的工程领导，而联合创始人和CPO Zach是前Apple   Siri团队的工程领导。他们认为，生成式人工智能将取代很多传统的软件，因为这些模型可以作为一个自然语言驱动的“问题解决引擎”。[^7^]   Fixie目前已经获得了1700万美元的种子轮融资，由Redpoint Ventures领投，参与投资的还有Erica   Brescia（GitHub的首席运营官）和其他一些知名天使投资人。[^8^] | https://www.fixie.ai |
-| FlowCog | FlowCog是一款基于人工智能的SaaS公司收入和现金流预测平台，可以帮助SaaS公司更好地管理其财务状况和增长策略。FlowCog使用了最新的机器学习和数据分析技术，能够从SaaS公司提供的数据中提取有用的信息，并生成准确和可靠的收入和现金流预测报告。FlowCog还可以为SaaS公司提供实时的财务指标监控、预算规划、风险评估等功能，并提供智能的建议和优化方案。FlowCog是一款智能和高效的工具，让SaaS公司可以更轻松和有信心地管理其财务和增长。FlowCog目前提供免费试用和付费订阅，您可以在FlowCog网站上注册使用它。 | https://www.flowcog.com/ |
-| FlowGPT | FlowGPT是一款基于人工智能的多线程对话平台，可以让用户使用节点式流程编辑器来探索AI对话，并提高其结构性和清晰度。FlowGPT使用了最新的自然语言处理和对话生成技术，能够从用户输入的节点式流程中分析其对话逻辑和目标，并生成高质量、原创和有创意的对话内容。用户可以在FlowGPT中输入任何类型的节点式流程，如问答、故事、游戏等，然后FlowGPT会为用户生成一系列的多线程对话，并提供多种语言和情感的选项。用户还可以在FlowGPT中编辑和调整生成的多线程对话，或者导出为文件或链接。FlowGPT是一款有趣和强大的工具，让用户可以使用节点式流程编辑器来探索AI对话的可能性和潜力。FlowGPT目前处于测试阶段，您可以在FlowGPT网站上免费试用它。 | https://www.flowgpt.com/ |
-| Foundation Model Ops | Foundation Model Ops是一款由Foundation   AI推出的AI应用开发和运维平台，能够支持下一代基于生成式AI模型的应用。该平台可以让开发者快速地构建、部署和管理基于GPT-4等大型语言模型的应用，如聊天机器人、内容生成器、知识图谱等。该平台还可以让开发者轻松地监控、调试和优化基于生成式AI模型的应用，如性能、安全、质量等。Foundation   Model Ops目前处于测试阶段，需要申请才能使用。 | [https://www.founda](https://www.foundationai.com/model-ops)tionai.com/model-ops |
-| Gen AI videos | Gen AI   videos是一款基于AI的视频生成工具，能够让您上传自己的照片，并生成令人惊叹的AI视频。Gen AI   videos使用了深度学习和图像合成技术，来将您的照片变成动态的视频，并添加音乐、特效、滤镜等。Gen AI   videos可以帮助您制作出各种类型的视频，如故事、广告、教程、表情包等，并在社交媒体上分享和传播。Gen AI   videos目前是一个Web应用，可以在任何浏览器中使用。您可以在Gen AI videos的官方网站上免费试用它。 | https://www.genai.videos |
-| Generative BI- Analyses data, and builds   dashboards from questions | Generative BI- Analyses data, and builds   dashboards from questions是一款提高生产力的应用程序，可以通过提问来分析数据和构建仪表盘！无需技术知识背景，Generative   BI可以回答您的业务问题，并通过探索和分析您的数据，帮助您超越竞争对手，而不会泄露您的隐私。Generative   BI使用GPT-3技术，能够理解自然语言的问题，并生成相应的数据可视化和仪表盘。Generative   BI还可以提供额外的评论，解释分析结果，数据来源和统计方法。Generative BI目前处于开发阶段，您可以在[18]上注册以获取早期访问权限。 | https://www.generativebi.com/ |
-| GetBotz | GetBotz是一个利用人工智能为您设置博客自动驾驶仪的工具。GetBotz可以帮助您节省时间和精力，提高博客写作效率和质量。GetBotz使用了先进的AI技术，能够根据您提供的博客主题、关键词和风格等信息，为您生成高质量、原创和有创意的博客文章，并自动发布到您选择的平台上。GetBotz还可以让您控制博客文章的长度、频率和时间，并根据读者的反馈和行为进行优化。GetBotz是一个方便快捷、高效可靠、价格合理的博客写作工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.getbotz.ai |
-| GetBotz | GetBotz是一款基于GPT-4的AI博客自动化工具，能够为用户生成高质量、原创和有创意的博客文章。用户只需输入博客的主题、关键词和长度，GetBotz就会根据用户的需求，自动写出适合的博客文章，并提供修改和优化建议。GetBotz还可以根据用户的偏好和反馈进行自我调整和改进，提高文章的质量和创意。GetBotz目前提供免费和付费两种订阅方式，免费用户每月可以生成5篇博客文章，付费用户每月可以生成无限篇博客文章。付费订阅的价格为每月29.99美元或每年299.99美元。 | https://www.getbotz.com/ |
-| Voila | Voila是一个强大的浏览器助手，旨在提升您的生产力和帮助您完成日常任务。Voila使用了先进的AI技术，能够通过简单对话来完成各种任务，例如搜索信息、写邮件、管理日程、预订酒店、翻译文本等。Voila还可以与其他应用程序集成，例如Gmail、Google   Calendar、Google   Docs等，让您可以在浏览器中轻松地使用它们。Voila还支持多语言（测试版），因此您可以用任何您想要的语言与它交流。Voila是一个简单易用、功能强大、价格实惠的浏览器助手，您可以在Chrome网上应用店免费下载它。 | https://www.getvoila.ai |
-| Ghost&#x27;s new anonymous group messaging app has   ChatGPT baked in | Ghost&#x27;s new anonymous group messaging app has   ChatGPT baked   in是一款新推出的匿名群聊应用，集成了ChatGPT的智能功能。该应用允许用户在群聊中发送匿名消息，以便与朋友进行调情、开玩笑或提问，而不用暴露自己的身份。该应用还包括了一系列其他功能，例如用户可以直接在群聊中向ChatGPT提问，并获得有趣的回答。为了保护用户的隐私和安全，该应用使用了一种称为“Ghost   Protocol”的系统，利用端到端加密技术，在用户的设备上进行身份验证。这样，该应用知道谁可以访问某个群聊，但Ghost公司本身不知道。该应用目前可以在App   Store和Google Play上免费下载。 | https://www.ghostapp.com/ |
-| Gift Genius | Gift   Genius是一款基于人工智能的礼物推荐平台，可以为用户根据不同的场合和对象，找到完美的礼物。Gift   Genius使用了最新的自然语言处理和推荐系统技术，能够从用户输入的礼物条件中分析其礼物需求和偏好，并从海量的礼物数据中筛选出最佳的礼物选项，并提供详细的信息和评价。用户可以在Gift   Genius中输入任何类型的礼物条件，如收礼人、场合、主题、价格等，并根据自己的喜好调整排序方式。Gift   Genius是一款方便和实用的工具，让用户可以更快速和低成本地找到理想的礼物。Gift Genius目前可以在Gift Genius网站上免费使用。 | https://www.giftgenius.com/ |
-| Gitfluence | Gitfluence是一个快速找到正确的Git命令的工具。Gitfluence可以帮助您解决各种Git相关的问题，例如如何创建分支、合并代码、撤销更改等。Gitfluence使用了先进的AI技术，能够根据您提供的问题或目标，为您生成最适合您的Git命令，并提供相关的说明和示例。Gitfluence还可以让您与之进行自然语言对话，以获取更多的信息和指导。Gitfluence是一个简单易用、高效可靠、免费开源的Git命令工具，您可以在其官方网站上免费下载它。 | https://www.gitfluence.ai |
-| GPT Hotline | GPT   Hotline是一款基于GPT-4的AI热线服务，能够让用户通过Whatsapp与世界上最聪明的AI进行对话。用户可以向GPT   Hotline发送任何问题或请求，如知识、建议、娱乐等，GPT Hotline会根据用户的输入，给出智能、友好和有趣的回答。GPT   Hotline可以与用户进行自然、流畅和有效的对话，并根据用户的情绪、语气和需求进行自我调整。GPT Hotline目前免费提供给公众使用。 | https://www.gpthotline.com/ |
-| Halfway words | Halfway   words是一个利用人工智能为您找到两个单词之间的中间单词的工具。Halfway   words可以帮助您发现和创造一些有趣和有意义的单词，无论是在写作、学习还是娱乐方面。Halfway   words使用了先进的AI技术，能够根据您提供的两个单词，为您生成一个介于它们之间的单词，并提供相关的信息和链接。Halfway   words还可以让您与之进行自然语言对话，以获取更多的信息和建议。Halfway   words是一个创新和有趣的单词工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.halfwaywords.ai |
-| Harpa AI | Harpa   AI是一款基于ChatGPT的AI谷歌搜索辅助工具，能够为用户在谷歌搜索时提供一个集成的ChatGPT聊天界面。用户可以向Harpa   AI发送任何问题或请求，如知识、建议、娱乐等，Harpa AI会根据谷歌搜索的结果，给出智能、友好和有趣的回答。Harpa   AI还可以根据用户的偏好和反馈进行自我调整和改进，提高回答的质量和创意。Harpa AI目前免费提供给公众使用。 | https://www.harpa.ai/ |
-| HelloScribe | HelloScribe是一个基于人工智能的写作和头脑风暴工具，专为公关和营销专业人士设计。HelloScribe的AI工具可以帮助您激发大胆的创意，制作出令人惊叹的内容，并让您的作品脱颖而出。HelloScribe提供了100多种精准的工具，让您可以为您的营销组织的每个方面创建内容和创意，从策略到传播。您可以使用HelloScribe从长视频中提取短品牌视频片段，从文本中生成引人注目的销售视频，从博客文章中制作吸引人的视频，以及自动添加字幕等。HelloScribe目前提供免费试用，您可以在官网注册并开始使用。 | https://www.helloscribe.ai/ |
-| HerbGPT - Say goodbye to the guesswork and join   the future of personalised cannabis consumption. | HerbGPT - Say goodbye to the guesswork and   join the future of personalised cannabis   consumption.是一款利用AI技术来为用户提供个性化的大麻消费建议的应用程序，由一家AI和大麻公司Herb开发，并发布在Herb公司的官方网站上。HerbGPT可以让用户使用基于Jasper模型的AI大麻消费指导器，来根据用户输入的一些信息和偏好，生成一些与之匹配的大麻消费建议，例如品种、剂量、方式、时间等。HerbGPT还可以让用户通过自然语言输入来修改和调整生成的大麻消费建议，并实时显示修改后的效果。HerbGPT是一个有趣和实用的应用程序，可以让用户轻松地根据自己的需求和体验，进行个性化的大麻消费。 | https://www.herb.com/herbgpt |
-| HideGPT - Completely masks the fingerprint of   GPT on any piece of text. | HideGPT - Completely masks the fingerprint of   GPT on any piece of   text.是一款能够完全掩盖GPT在任何文本上留下的指纹的工具。GPT是一种强大的自然语言生成技术，可以生成高质量和有创意的文本。但是，GPT也会在生成的文本中留下一些特征，例如词汇、语法、风格等，这些特征可能会被检测出来，导致文本被认为是由机器生成的。HideGPT可以帮助您避免这种情况，通过使用GPT-4技术，对生成的文本进行微调和修改，使其看起来更像人类写的。HideGPT可以保护您的隐私和版权，让您可以放心地使用GPT生成的文本，而不用担心被揭穿或被剽窃。HideGPT目前处于测试阶段，您可以在[1]上免费试用它。 | https://www.hidegpt.com/ |
-| HitPaw | HitPaw是一款基于GPT-4的AI视频修复工具，能够为用户修复模糊、旧化、低分辨率的视频。用户可以向HitPaw上传任何格式的视频文件，如MP4、AVI、MOV等，HitPaw会根据视频的质量和问题，自动修复视频，并提供修改和优化建议。HitPaw还可以根据用户的需求，自动增加视频的清晰度、亮度、色彩等，并支持多种分辨率和帧率。HitPaw目前提供免费和付费两种订阅方式，免费用户每月可以修复10个视频，付费用户每月可以修复无限个视频。付费订阅的价格为每月19.99美元或每年199.99美元。 | https://www.hitpaw.com/ |
-| HoppyCopy | HoppyCopy是一个基于人工智能的电子邮件营销文案平台，可以帮助用户快速高效地生成吸引人的电子邮件内容，用于各种不同的电子邮件营销活动、滴水营销、新闻通讯等。HoppyCopy提供了50多种电子邮件模板，使用科学验证的公式来生成适合您需求的文案。您还可以使用高级编辑工具来修改文案，添加创意标题、引人注目的主题行、有说服力的预览文本等。HoppyCopy还可以帮助您检测垃圾邮件关键词，避免您的电子邮件被过滤到垃圾邮件文件夹。HoppyCopy目前提供免费试用，您可以在官网注册并开始使用。 | https://www.hoppycopy.co/ |
-| GPT for numbers and analytics from iGenius. | GPT for numbers and analytics from   iGenius.是一款利用GPT技术来帮助用户进行数字和分析的工具，由一家AI和数据公司iGenius开发，并发布在iGenius的官方网站上。GPT   for numbers and   analytics可以让用户通过自然语言输入他们想要分析的数据或问题，然后使用基于GPT模型的AI分析引擎，来生成数字、图表、报告、见解等。GPT for   numbers and analytics还可以让用户选择不同的GPT模型和参数，以调整分析的风格和质量。GPT for numbers and   analytics是一个高效和实用的工具，可以让用户轻松地进行数字和分析。 | [h](https://www.igenius.ai/gpt-for-numbers-and-analytics)ttps://www.igenius.ai/gpt-for-numbers-and-analytics |
-| Illustroke | Illustroke是一款基于人工智能的矢量插画生成平台，可以根据用户输入的文本提示，生成精美的矢量插画。Illustroke使用了最新的深度学习和计算机视觉技术，能够理解和创造高质量、原创和有创意的矢量图形。用户可以在Illustroke中输入任何类型的文本提示，如物品、场景、情感等，然后Illustroke会为用户生成一系列的矢量插画，并提供多种风格和颜色的选项。用户还可以在Illustroke中编辑和调整生成的插画，或者导出为SVG或PNG格式。Illustroke是一款有趣和高效的工具，让用户可以轻松地创建出惊艳的矢量插画。Illustroke目前处于测试阶段，您可以在Illustroke网站上免费试用它。 | https://www.illustroke.com/ |
-| Insight7 | Insight7是一款基于ChatGPT的客户反馈平台，可以让用户使用AI来自动地分析和理解客户的反馈。Insight7使用了最新的自然语言处理和数据分析技术，能够从用户输入或上传的客户反馈中提取有用的信息，并生成高质量、原创和有创意的反馈报告。用户可以在Insight7中输入或上传任何类型的客户反馈，如文本、语音、视频等，并选择想要生成反馈报告的类型和维度。Insight7还提供了一些智能的功能，如主题识别、洞察发现、情感分析、来源追踪等。Insight7是一款智能和高效的工具，让用户可以使用AI来提升其客户反馈的效果和价值。Insight7目前提供免费试用和付费订阅，您可以在Insight7网站上注册使用它。 | https://www.insight7.com/ |
-| Insula | Insula是一款基于人工智能的三维头像人形平台，可以让用户用自然语言与一个三维头像人形进行沟通。Insula使用了最新的自然语言处理和计算机图形学技术，能够从用户输入的文本或语音中分析其沟通目的和内容，并生成高质量、原创和有创意的回复，并通过一个三维头像人形以文本或语音形式呈现出来。用户可以在Insula中选择或自定义一个三维头像人形，并与其进行实时的沟通。Insula还提供了一些智能的功能，如情感表达、面部识别、姿态识别等。Insula是一款有趣和强大的工具，让用户可以用自然语言与一个三维头像人形进行沟通。Insula目前处于测试阶段，您可以在Insula网站上免费试用它。 | https://www.insula.com/ |
-| Intercom AI Customer Support Agent | Intercom AI Customer Support   Agent是一款由Intercom推出的人工智能客服代理工具，由GPT-4驱动。它可以与客户进行自然、友好和有效的对话，回答他们的问题、解决他们的问题、提供他们的反馈等。Intercom   AI Customer Support Agent可以根据客户的情绪、语气和需求进行自我调整，并提供个性化的服务。Intercom AI Customer   Support Agent目前已经在部分Intercom客户中使用，并计划在未来向更多客户开放。 | [https://www.intercom.com/ai-cu](https://www.intercom.com/ai-customer-support-agent)stomer-support-agent |
-| Interview Jam | Interview   Jam是一款基于人工智能的面试准备和求职平台，可以帮助用户进行有效的面试练习和找到理想的工作机会。Interview   Jam使用了最新的自然语言处理和面试生成技术，能够从用户输入的职位描述和个人信息中分析其求职需求和优势，并生成高质量、原创和有创意的面试问题和答案。用户可以在Interview   Jam中输入或上传任何类型的职位描述和个人信息，如简历、作品集、推荐信等，并选择想要进行面试练习的类型和难度。Interview   Jam还提供了一些智能的功能，如语音交流、反馈评价、建议优化等。Interview   Jam是一款方便和实用的工具，让用户可以通过有效的面试练习来提升其求职技能和信心，并找到理想的工作机会。Interview   Jam目前提供免费试用和付费订阅，您可以在Interview Jam网站上注册使用它。 | https://www.interviewjam.com/ |
-| Inworld | Inworld是一款基于GPT-4的AI世界创建工具，能够为用户创建逼真的世界和由AI驱动的角色。用户可以向Inworld输入他们想要创建的世界的主题、风格和元素，Inworld会根据用户的输入，自动生成一个详细、美观和优化的世界，并提供修改和优化建议。Inworld还可以根据用户的需求，自动添加角色、物品、事件等，并让用户与他们进行交互和探索。Inworld目前处于测试阶段，需要申请才能使用。 | https://www.inworld.com/ |
-| Milo co-parent | Milo   co-parent是一款为父母提供AI协助的工具，由GPT-4驱动。它可以帮助父母处理家庭管理中的各种琐事，如购物清单、日程安排、生日邀请等。父母可以通过短信、截图或语音信息把这些事情发送给Milo   co-parent，它会自动整理并发送到相应的地方，如日历、提醒、家庭群组等。Milo   co-parent还会在需要时提供提示和建议，让父母更轻松地平衡工作和家庭。Milo co-parent目前需要付费使用，每月40美元。 | https://www.joinmilo.com/ |
-| Journee | Journee是一个协作式人工智能工作空间，旨在帮助教师减轻工作压力和提高教学效率。Journee利用人工智能技术，为教师提供智能的课程设计、评估、反馈、数据分析等功能，让教师可以轻松地创建和管理高质量的教学内容。Journee还支持教师之间的协作和交流，让教师可以共享和借鉴彼此的经验和资源，形成一个有活力的教学社区。Journee目前提供免费试用，您可以在官网注册并开始使用。 | https://www.journee.ai/ |
-| Kaya | Kaya是一个让您可以创建和分享一个个人AI的平台，该AI是根据您的知识和经验进行训练的。Kaya可以让您将您的专业知识、个人故事、兴趣爱好等转化为一个智能的聊天机器人，您可以与之交流，也可以与其他人分享。您只需通过简单的对话来教授您的AI，Kaya就会使用先进的AI技术来学习和理解您的内容，并生成有趣和有用的回答。Kaya还可以让您控制您的AI的外观、声音和性格，以及选择谁可以与您的AI交流。Kaya是一个创新和有趣的平台，让您可以拥有一个属于自己的AI伙伴，也可以与其他人的AI进行互动。Kaya目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.kaya.ai |
-| Keeper | Keeper是一款基于人工智能的在线约会匹配平台，可以为用户提供最适合其个性和兴趣的约会对象推荐。Keeper使用了最新的机器学习和数据分析技术，能够从用户输入或上传的个人信息和偏好中分析其约会需求和优势，并从海量的约会对象数据中筛选出最佳的匹配选项，并提供详细的信息和评价。用户可以在Keeper中输入或上传任何类型的个人信息和偏好，如年龄、性别、爱好、地点等，并根据自己的喜好调整匹配方式。Keeper还提供了一些智能的功能，如聊天交流、视频通话、约会建议等。Keeper是一款方便和实用的工具，让用户可以更轻松和有趣地找到理想的约会对象。Keeper目前提供免费试用和付费订阅，您可以在Keeper网站上注册使用它。 | https://www.keeper.com/ |
-| Keeper | Keeper是一款基于GPT-4的在线约会平台，能够根据用户的个人资料和偏好，为他们寻找合适的匹配对象，并自动跟进。Keeper还利用计算机视觉技术来分析用户的外貌特征，让用户可以根据任何条件进行筛选，找到理想的伴侣。Keeper目前处于内测阶段，需要邀请码才能注册。 | https://www.keeperdating.com/ |
-| Khanmigo | Khanmigo是可汗学院推出的AI导师，旨在帮助学习者发展批判性思维和更深入地理解可汗学院的内容。Khanmigo利用GPT-4技术，通过自然语言处理与学习者进行双向对话，提出问题和建议。Khanmigo可以作为学习者的个人导师，也可以作为教师的助手。Khanmigo目前处于测试阶段，需要捐赠9美元/月或99美元/年才能使用。 | [https://www.khana](https://www.khanacademy.org/khan-labs)cademy.org/khan-labs |
-| KindleGPT | KindleGPT是一款基于OpenAI的GPT-4的AI阅读辅导工具，能够让用户通过聊天的方式，与自己的Kindle书籍进行交互。用户可以向KindleGPT发送任何问题或请求，如书籍的概要、主题、角色、作者等，KindleGPT会根据书籍的内容，给出智能、友好和有趣的回答。KindleGPT还可以根据用户的阅读进度和表现，给出评估和建议，并调整阅读计划。KindleGPT目前处于测试阶段，需要申请才能使用。 | https://www.kindlegpt.com/ |
-| Kittl AI - 10x your design skills with AI-based   vector editing. | Kittl AI - 10x your design skills with   AI-based vector   editing.是一款利用AI技术来提升用户的设计技能和效率的软件，由一家AI和设计公司Kittl开发，并发布在Kittl公司的官方网站上。Kittl   AI可以让用户使用基于ChatGPT模型的AI矢量编辑器，来创建和修改各种类型和主题的矢量图形，例如图标、标志、插画等。Kittl   AI还可以让用户通过自然语言输入来控制和调整生成的矢量图形，例如改变颜色、形状、大小、样式等，并实时显示修改后的效果。Kittl   AI是一个有趣和实用的软件，可以让用户轻松地创建和修改自己或他人的矢量图形。 | https://www.kittl.com/kittl-ai |
-| Lambda has raised $44M to build the best cloud   for training AI | Lambda has   raised 是一个利用人工智能为您提供最佳的云端训练平台的公司，已经获得了万美元的融资。可以帮助您轻松地使用各种服务和功能，例如文本生成、图像识别、语音转换等，并将它们在云端进行训练和部署。使用了先进的技术，能够根据您设定的目标和需求，为您提供最佳的云端训练方案，并提供相关的结果和信息。还可以让您与之进行自然语言对话，以获取更多的信息和指导。是一个创新和高效的云端训练平台公司，适合任何想要利用服务或功能来改善或创造应用的人。44M   to build the best cloud for training AI目前处于发展阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.lambda.ai |
-| Landbot AI | Landbot   AI是一款基于GPT-4的AI无代码聊天机器人工具，能够为用户快速地创建和部署自定义的聊天机器人。用户可以向Landbot   AI输入他们想要创建的聊天机器人的目标、场景和功能，Landbot   AI会根据用户的输入，自动生成一个适合的聊天机器人，并提供修改和优化建议。Landbot   AI还可以根据用户的需求，自动添加聊天机器人的界面、逻辑、数据等，并支持多种平台和语言。Landbot   AI目前提供免费和付费两种订阅方式，免费用户每月可以创建3个聊天机器人，付费用户每月可以创建无限个聊天机器人。付费订阅的价格为每月19.99美元或每年199.99美元。 | https://www.landbot.ai/ |
-| LangChainAI Chatbot Codebase Scanner | LangChainAI Chatbot Codebase   Scanner是一款利用GPT-4技术来检测聊天机器人代码库中存在的错误和漏洞的工具。它可以分析聊天机器人的前端代码，并指出可能导致崩溃、性能下降或安全风险的地方。它还可以给出修复建议，并自动优化代码。LangChainAI   Chatbot Codebase Scanner目前还没有公开发布，只有LangChainAI的开发者在使用。 | https://www.langchainai.com/ |
-| Leia | Leia是一款可以让您在设备上以3D方式观看任何2D内容的应用，由Leia   Inc.开发。Leia利用了一种纳米技术突破，使得衍射光场背光（DLB）成为可能。DLB是一种在LCD显示屏下方放置一个光学层，使得显示屏可以在2D和3D之间实时切换，并提供深度、视差和视角等3D效果。Leia还结合了强大的AI技术，可以将2D视频和图片转换成3D格式，并帮助用户创建自己的3D体验。Leia还提供了一系列专门为3D设计的应用程序，如LeiaPlayer、LeiaCam、LeiaChat等，让用户可以观看、拍摄、分享3D媒体内容，并与其他3D爱好者互动。Leia已经推出了世界上第一款3D•AI平板电脑Lume   Pad 2，并计划在未来推出更多3D设备和服务。 | https://www.leiainc.com/ |
-| Lemonaid | Lemonaid是一款基于AI的音乐制作工具，能够为您生成5000万种独一无二的MIDI进展，让您轻松地制作出专业水准的音乐。Lemonaid使用了深度学习和音乐理论技术，来根据您选择的音乐风格、节奏、调式等参数生成一系列不同的MIDI进展，并提供了多种音色和效果供您选择。Lemonaid可以帮助您提高您的音乐创造力和灵感，并在社交媒体上分享和传播。Lemonaid目前是一个Web应用，可以在任何浏览器中使用。您可以在Lemonaid的官方网站上注册并开始免费使用它。 | https://www.lemonaid.ai |
-| Lex | Lex是一个利用人工智能为您提供写作反馈的工具。Lex可以帮助您改善和美化您的写作质量，无论是文章、邮件、报告还是简历等。Lex使用了先进的AI技术，能够根据您提供的写作文件或URL，为您生成实时的反馈和建议，并提供相关的信息和链接。Lex还可以让您与之进行自然语言对话，以获取更多的信息和指导。Lex是一个简单易用、功能强大、价格实惠的写作反馈工具，您可以在其官方网站上免费注册并开始使用它。Lex还添加了一个新功能，就是可以从一个智能的AI编辑那里获取写作反馈，您可以在这里查看演示。 | https://www.lex.ai |
-| LinkedIn AI tools | LinkedIn AI   tools是一款由LinkedIn推出的基于GPT-4的AI工具套件，能够为用户生成个人资料和职位描述等文本内容。该工具套件可以帮助用户在创建或更新LinkedIn个人资料时，自动填写相关的信息，如头衔、摘要、技能等，并提供修改和优化建议。该工具套件还可以帮助雇主在发布或编辑LinkedIn职位时，自动生成吸引人的职位描述，如职责、要求、福利等，并提供修改和优化建议。LinkedIn   AI tools目前已经在部分LinkedIn用户中使用，并计划在未来向更多用户开放。 | https://www.linkedin.com/ai-tools |
-| Literally Anything - Transform natural   language into simple apps, UI, widgets, websites, games, and forms. | Literally Anything - Transform natural   language into simple apps, UI, widgets, websites, games, and   forms.是一款让您可以用自然语言来创建简单应用程序、用户界面、小部件、网站、游戏和表单的工具。您只需要输入一个描述您想要的东西的句子，例如“一个计算器”、“一个音乐播放器”、“一个问卷调查”等，Literally   Anything就会使用GPT-4技术，为您生成一个与之相符的应用程序或网页，并提供源代码和预览链接。您可以在网上查看和分享您创建的东西，或者下载到您的设备上。Literally   Anything可以帮助您快速实现您的想法，无需编程知识或设计经验。Literally Anything目前处于测试阶段，您可以在[2]上免费试用它。 | https://www.literallyanything.ai/ |
-| Lookup YC | Lookup YC是一款基于AI的创业问答和搜索工具，能够让您从Y   Combinator（硅谷最著名的创业孵化器）的视频中找到关于创业的洞察和答案。Lookup YC使用了自然语言处理和视频分析技术，来分析Y   Combinator的视频中的内容，并根据您的问题生成相关的答案和见解。Lookup YC可以帮助您快速地获取Y   Combinator导师和创业者们的经验、建议、故事等，并与他们进行对话和互动。Lookup   YC目前是一个Web应用，可以在任何浏览器中使用。您可以在Lookup YC的官方网站上免费试用它。 | https://www.lookupyc.com |
-| Looria | Looria是一个基于ChatGPT的聊天机器人，专门为BuyItForLife的subreddit设计。BuyItForLife是一个Reddit社区，分享和讨论那些能够经久耐用的产品。Looria可以根据用户的问题，从BuyItForLife的帖子和评论中提取和总结相关的信息，帮助用户找到最适合他们需求的产品。Looria还可以生成图形艺术作品，根据用户的提示创造出惊人的视觉效果。Looria目前还是一个原型，开发者正在不断改进其性能和准确性，为用户提供更好的体验。 | [https://www.looria.](https://www.looria.com/bot/BuyItForLife)com/bot/BuyItForLife |
-| Lorem GPT - Stop using lorem ipsum and generate   relevant placeholder text for your projects. | Lorem GPT - Stop using lorem ipsum and   generate relevant placeholder text for your   projects.是一款让您可以用AI生成与您的项目相关的占位符文本的工具。Lorem   GPT使用GPT-4技术，能够根据您输入的主题和长度，为您生成自然和有意义的文本，而不是使用传统的无意义的拉丁文。Lorem   GPT可以帮助您在设计网站、应用程序、广告等项目时，提高您的效率和创意。Lorem GPT非常易于使用，只需在网上输入您想要的主题和长度，就可以得到生成的文本，并选择复制或下载。Lorem   GPT目前提供免费试用，之后根据您使用的文本数量收费。 | https://www.loremgpt.com/ |
-| Luca | Luca是一款基于AI的电商定价工具，能够为您提供智能的定价建议和策略，让您在竞争激烈的电商市场中获得优势。Luca使用了机器学习和深度学习技术，来分析您的产品、竞争对手、市场、客户等数据，并根据您的目标和约束生成一个最优的定价方案。Luca可以帮助您提高您的销售额、利润率、转化率和客户忠诚度。Luca目前是一个Web应用，可以与Shopify、WooCommerce、Magento等电商平台集成。您可以在Luca的官方网站上注册并开始免费使用它。 | https://www.luca.ai |
-| LucidPic | LucidPic是一款基于GPT-4的AI照片生成工具，能够为用户创建不存在的人物的照片。用户可以向LucidPic输入他们想要创建的人物的特征、风格和情绪，LucidPic会根据用户的输入，自动生成一个逼真、美观和优化的照片，并提供修改和优化建议。LucidPic还可以根据用户的需求，自动添加背景、道具、滤镜等，并支持多种表情和姿势。LucidPic目前免费提供给公众使用。 | https://www.lucidpic.com/ |
-| Luma AR | Luma AR是一个利用NeRFs技术在iPhone上实现AR重拍的工具。Luma   AR可以帮助您将任何照片或视频变成一个可交互的三维场景，并在现实世界中重新拍摄它们。Luma   AR使用了先进的AI技术，能够根据您提供的照片或视频文件或URL，为您生成逼真和有趣的NeRFs模型，并提供多种编辑选项供您选择。Luma   AR还可以让您与之进行自然语言对话，以获取更多的信息和建议。Luma AR是一个创新和有趣的AR重拍工具，适合任何想要尝试新视角或寻找灵感的人。Luma   AR目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.lumaar.ai |
-| Lyrical Labs | Lyrical   Labs是一款基于GPT-4的AI歌词写作工具，能够为用户写出更快、更好的歌词。用户可以向Lyrical   Labs输入他们想要写歌的主题、风格和音乐，Lyrical Labs会根据用户的输入，自动生成一个适合的歌词，并提供修改和优化建议。Lyrical   Labs还可以根据用户的需求，自动添加押韵、节奏、情感等，并支持多种语言和音调。Lyrical Labs目前免费提供给公众使用。 | https://www.lyricallabs.com/ |
-| Magic Eraser | Magic Eraser是一个利用人工智能在图像中擦除不想要的背景物体的工具。Magic   Eraser可以帮助您轻松地改善和美化您的照片，无论是人物、风景还是物品等。Magic   Eraser使用了先进的AI技术，能够根据您提供的图像文件或URL，为您识别和移除图像中的任何背景物体，并提供多种编辑选项供您选择。Magic   Eraser还可以让您与之进行自然语言对话，以获取更多的信息和建议。Magic   Eraser是一个简单易用、高效可靠、价格实惠的图像擦除工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.magiceraser.ai |
-| Magicflow | Magicflow是一个无需编码拖放式工具，可以让您构建集成到您的应用中的AI工作流程。Magicflow可以帮助您轻松地利用各种AI服务和功能，例如文本生成、图像识别、语音转换等，并将它们组合成一个完整的AI工作流程。Magicflow使用了先进的AI技术，能够根据您设定的目标和需求，为您生成智能和有用的AI工作流程，并提供多种输出格式供您选择。Magicflow还可以让您与之进行自然语言对话，以获取更多的信息和指导。Magicflow是一个创新和高效的AI工作流程构建工具，适合任何想要利用AI服务或功能来改善或创造应用的人。Magicflow目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.magicflow.ai |
-| Bob from Magrathea AI | Bob from Magrathea   AI是一个先进的助手，可以在一个无判断的空间中为您提供24/7的个性化洞察。Bob from Magrathea   AI可以帮助您了解和改善您的生活质量，无论是健康、工作、学习还是娱乐等方面。Bob from Magrathea   AI使用了先进的AI技术，能够根据您提供的数据和反馈，为您生成智能和有用的建议，并与您进行自然语言对话，以获取更多的信息和支持。Bob from   Magrathea AI还可以让您控制您的隐私和安全，并与其他用户进行交流和互动。Bob from Magrathea   AI是一个创新和有趣的助手，让您可以享受一个更好的生活。Bob from Magrathea   AI目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.magrathea.ai |
-| Maimovie | Maimovie是一款基于人工智能的电影和电视节目搜索平台，可以为用户提供最适合其口味和兴趣的电影和电视节目推荐。Maimovie使用了最新的机器学习和数据分析技术，能够从用户输入的电影或电视节目相关的条件中分析其观影需求和偏好，并从海量的电影和电视节目数据中筛选出最佳的推荐选项，并提供详细的信息和评价。用户可以在Maimovie中输入任何类型的电影或电视节目相关的条件，如类型、风格、情感、演员等，并根据自己的喜好调整排序方式。Maimovie还提供了一些智能的功能，如预告片播放、观影日历、社交分享等。Maimovie是一款有趣和实用的工具，让用户可以更轻松和有趣地享受观影体验。Maimovie目前可以在Maimovie网站上免费使用。 | https://www.maimovie.com/ |
-| MapsGPT | MapsGPT是一款基于ChatGPT的AI地图搜索工具，能够让用户通过聊天的方式，发现和探索附近的地点。用户可以向MapsGPT发送任何问题或请求，如附近的餐厅、商店、公园等，MapsGPT会根据用户的位置和偏好，给出智能、友好和有趣的回答，并提供地图、导航和评价等信息。MapsGPT可以与用户进行自然、流畅和有效的对话，并根据用户的情绪、语气和需求进行自我调整。MapsGPT目前免费提供给公众使用。 | https://www.mapsgpt.com/ |
-| MarsX | MarsX是一个免费的低代码平台，用于构建Web和移动应用程序。MarsX利用了人工智能、无代码、有代码和微应用的结合，让用户可以轻松地重用之前在平台上构建的数千个微应用。MarsX还提供了独特的Sketch-to-Photo功能，可以将设计想法或草图转换为逼真的图像。MarsX是专为创业者和开发者设计的平台，旨在简化他们的开发过程，提供更多的灵活性和创造力。MarsX目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.marsx.dev |
-| Marvin (Product) - Integrate AI directly into   your codebase. | Marvin (Product) - Integrate AI directly into   your   codebase.是一款让您可以直接在您的代码库中集成AI的工具。您可以使用Marvin来添加智能功能，如图像识别、自然语言处理、推荐系统等，而无需编写复杂的机器学习代码。Marvin使用OpenAI的GPT-4技术，能够根据您的代码和注释，自动生成适合您的AI模型和API。您可以使用Marvin来快速构建和部署AI应用程序，提高您的开发效率和质量。Marvin目前处于测试阶段，您可以在[1]上申请加入等待名单。 | https://www.marvin.ai/ |
-| Marvin - Integrate AI directly into your   codebase like any other function. | Marvin - Integrate AI directly into your   codebase like any other   function.是一款利用AI技术来为代码库提供智能的功能和工具的软件，由一家AI和软件公司Marvin开发，并发布在Marvin公司的官方网站上。Marvin可以让用户直接在他们的代码库中，像调用任何其他函数一样，调用一些基于AI技术的功能和工具，例如ChatGPT,   Google Bard, Jasper等。Marvin还可以让用户自定义和配置这些AI功能和工具，以适应他们的代码库和需求。Marvin是一个高效和实用的软件，可以让用户轻松地为他们的代码库增加智能和创新。 | https://www.marvin.com/marvin |
-| Meerkat | Meerkat是一款基于AI的数据处理工具，能够让您用交互式的数据表格来整理您的非结构化数据。Meerkat使用了基础模型（foundation   models）和数据科学技术，来分析您上传或输入的任何类型的数据，如文本、图像、音频等，并将其转化为结构化和可操作的数据表格。Meerkat可以帮助您快速地清洗、分析、可视化和导出您的数据，并提供多种数据处理和展示方式，如文本摘要、图像标注、音频转录等。Meerkat目前是一个Web应用，可以在任何浏览器中使用。您可以在Meerkat的官方网站上注册并开始免费使用它。 | https://www.meerkat.ai |
-| Midjourney is allowing fake images go   mainstream with few rules | Midjourney是一款基于人工智能的图像生成器，可以根据用户的文本或图像提示生成逼真的假图像。Midjourney利用了大规模语言模型（LLM）和变换器模型（Transformer）的技术，能够在几秒钟内生成高质量、高分辨率和高多样性的图像。Midjourney已经吸引了超过1300万的用户，并且成为了科技行业最热门的新兴企业之一。   但是，Midjourney也面临着一些争议和挑战，因为它对于生成图像的内容和用途没有明确的规则和标准。一些用户利用Midjourney生成了一些具有误导性、歧视性或侮辱性的图像，例如涉及政治、种族或宗教的图像。这些图像可能会被用于传播虚假信息、诽谤他人或干扰选举等目的。   Midjourney的创始人和CEO David Holz表示，他希望Midjourney能够扩展人类的想象力，而不是成为一个滥用或滋生仇恨的工具。 | https://www.midjourney.com |
-| Mini Course Generator | Mini Course   Generator是一款基于人工智能的在线课程创建平台，可以为用户在几分钟内创建出引人入胜且与众不同的微课程。Mini Course   Generator使用了最新的自然语言处理和课程生成技术，能够从用户输入的课程主题中提取有用的信息，并生成高质量、原创和有创意的课程内容。用户可以在Mini   Course Generator中输入任何类型的课程主题，如编程、营销、艺术等，并选择想要生成课程的时长和难度。Mini Course   Generator还提供了一些智能的功能，如视频制作、图像插入、互动测试等。Mini Course   Generator是一款有趣和高效的工具，让用户可以在几分钟内创建出令人印象深刻的在线微课程。Mini Course   Generator目前处于测试阶段，您可以在Mini Course Generator网站上免费试用它。 | [https://www.mini](https://www.minicoursegenerator.com/)coursegenerator.com/ |
-| Create mini AI videos from text. | Create mini AI videos   from   text.是一款能够根据文本生成迷你AI视频的工具。您只需要输入一段文本，例如一个故事、一个笑话、一个新闻等，这款工具就会使用GPT-4技术，为您生成一个与文本内容匹配的视频，包括图像、音乐、声音和字幕。您可以在网上预览和分享视频，或者下载到您的设备上。这款工具可以帮助您创造出有趣和有创意的视频，无论您是想要娱乐自己、给朋友送礼、或是推广您的品牌。这款工具目前提供免费试用，之后根据您生成的视频数量和时长收费。 | https://www.minivideo.ai/ |
-| Mixo | Mixo是一款利用AI技术帮助创业者快速启动他们的创业想法的平台。Mixo可以根据你对你的想法的简单描述，为你生成一个完整的网站内容，并且提供一个漂亮的着陆页，无需任何代码或设计。Mixo还可以帮助你收集用户反馈，通过电子邮件、调查或采访等方式与你的潜在客户联系。Mixo还提供了集成的用户管理工具，让你可以与你的受众建立持久的联系。Mixo是创业者验证和测试他们的产品想法的理想平台。 | https://www.mixo.io/ |
-| Mobile GPT | Mobile   GPT是一款基于ChatGPT的WhatsApp对话平台，可以让用户在WhatsApp上使用AI来进行有趣和有意义的对话。Mobile   GPT使用了最新的自然语言处理和对话生成技术，能够从用户输入的文本或语音中分析其对话目的和内容，并生成高质量、原创和有创意的回复。用户可以在WhatsApp上添加Mobile   GPT为联系人，并与其进行实时的对话。Mobile GPT还提供了一些智能的功能，如情感分析、语言翻译、知识问答等。Mobile   GPT是一款有趣和实用的工具，让用户可以在WhatsApp上使用AI来提升其对话的效果和品质。Mobile GPT目前处于测试阶段，您可以在Mobile   GPT网站上注册使用它。 | https://www.mobilegpt.com/ |
-| MovieBot | MovieBot是一个利用人工智能即时创建、编辑和分享电影的工具。MovieBot可以帮助您将您的想法变成现实，无论是剧本、角色、场景还是音乐等。MovieBot使用了先进的AI技术，能够根据您提供的文本或语音输入，为您生成逼真和有趣的电影内容，并提供多种编辑选项供您选择。MovieBot还可以让您将您的电影保存在云端，并与其他人分享或观看。MovieBot是一个简单易用、功能强大、价格实惠的电影制作工具，适合任何想要尝试电影制作或寻找灵感的人。MovieBot目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.moviebot.ai |
-| MovieBot | MovieBot是一款基于人工智能的电影制作平台，可以让用户即时地创建、编辑和分享AI生成的电影。MovieBot使用了最新的深度学习和计算机视觉技术，能够从用户输入的文本提示或视频片段中分析其电影内容和风格，并生成高质量、原创和有创意的电影。用户可以在MovieBot中输入任何类型的电影相关的提示，如剧本、对话、场景、情感等，然后MovieBot会为用户生成一系列的电影选项，并提供多种格式和分辨率的选项。用户还可以在MovieBot中编辑和调整生成的电影，或者导出为MP4或MOV格式。MovieBot是一款有趣和强大的工具，让用户可以轻松地创建出令人惊叹的电影。MovieBot目前提供免费试用和付费订阅，您可以在MovieBot网站上注册使用它。 | https://www.moviebot.com/ |
-| My AskAI | My   AskAI是一个让您可以创建和使用自己的AI问答系统的平台，该系统是基于ChatGPT技术的，无需编码。My   AskAI可以让您轻松地为您的AI问答系统提供数据和问题，并根据您的目标和需求为您生成智能和有用的答案。My   AskAI使用了先进的AI技术，能够从您提供的数据中学习和理解，并根据您设定的规则和逻辑来生成答案。My   AskAI还可以让您与您的AI问答系统进行自然语言对话，以获取更多的信息和建议。My   AskAI是一个创新和有趣的平台，让您可以拥有一个属于自己的AI问答系统，也可以与其他人的AI问答系统进行互动。My   AskAI目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.myaskai.ai |
-| Neat Prompts | Neat   Prompts是一款基于ChatGPT的AI文本转GIF工具，能够根据用户输入的任何文本，生成一个相关的表情包GIF。该工具可以帮助用户在社交媒体、聊天软件或其他平台上表达自己的情绪、态度或想法，以一种有趣和有创意的方式。Neat   Prompts目前免费提供给公众使用。 | https://www.neatprompts.com/ |
-| Neeva | Neeva是一个创新的搜索引擎，使用先进的AI技术为您提供多角度的答案。Neeva不仅可以显示传统的搜索结果列表，还可以根据您的查询生成综合的答案，并附上原始来源的引用。Neeva还有一个Bias   Buster功能，让您可以看到不同政治立场的媒体对最新新闻的报道，并用简单的滑块调整您想要看到的观点。Neeva致力于为用户提供真实、及时和可定制的AI搜索体验。Neeva目前只在美国市场开放，但计划未来扩展到其他国家和地区。您可以在Neeva的官方网站上申请加入等待名单。 | https://www.neeva.com |
-| Startup accelerator Neo is partnering with Open   AI and Microsoft for mentoring startups about AI | Startup accelerator   Neo is partnering with Open AI and Microsoft for mentoring startups about   AI是一个关于一家创业加速器Neo与Open   AI和微软合作为创业公司提供关于AI方面指导的新闻。Neo是一家专注于人工智能领域的创业加速器。Neo可以帮助人工智能领域的创业公司获得资金、资源和网络，并提供相关的培训和指导。Neo使用了先进的AI技术，能够根据创业公司的行业、规模、愿景和价值等因素，为其匹配合适的导师和合作伙伴，并提供相关的信息和链接。Neo还可以让创业公司与之进行自然语言对话，以获取更多的信息和建议。Neo是一家创新和高效的创业加速器，适合任何想要在人工智能领域创业或寻找灵感的人。Neo最近与Open   AI和微软达成了合作协议，并邀请了Open AI的首席执行官Sam Altman和微软的首席人工智能官Harry   Shum等知名人士作为其导师，以进一步提升其为创业公司提供的指导质量和水平。您可以在其官方网站上注册并开始使用它。 | https://www.neo.ai |
-| The Network State GPT | The Network State GPT是一款基于OpenAI   ChatGPT的智能搜索和聊天工具，能够让您使用OpenAI来搜索和聊天Balaji Srinivasan（硅谷投资人、创业者、作家）所著的《The   Network State》这本书。The Network State   GPT使用了最先进的AI算法，如GPT-4、ChatGPT等，来分析这本书中的内容，并根据您的查询生成相关的答案和见解。The Network State   GPT可以帮助您深入地理解这本书中所阐述的关于未来社会、政治、经济等方面的观点和思想，并与作者进行对话和互动。The Network State   GPT目前是一个Web应用，可以在任何浏览器中使用。您可以在The Network State GPT的官方网站上免费试用它。 | https://www.networkstate.gpt |
-| Nutriplan | Nutriplan是一个利用人工智能在几秒钟内为您创建定制化饮食计划的工具。Nutriplan可以帮助您根据您的身体状况、健康目标、饮食偏好和预算等因素，为您生成适合您的饮食计划。Nutriplan使用了先进的AI技术，能够分析您的营养需求和食物喜好，并从数千种食谱中为您挑选出最佳的餐点组合。Nutriplan还会为您提供详细的营养信息、烹饪指南和购物清单，让您可以轻松地跟随饮食计划。Nutriplan是一个方便快捷、功能强大、价格实惠的饮食计划工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.nutriplan.ai |
-| Generative AI - Revolutionising the way   enterprises work. Report from Nvidia | 这是一份由Nvidia发布的报告，介绍了生成式人工智能（Generative   AI）如何为企业带来新的机遇和效率。报告中，Nvidia解释了生成式人工智能的概念和技术，并且列举了一些生成式人工智能在不同行业中的应用案例，例如药物发现、金融服务、零售和电信等。报告还展望了生成式人工智能未来的发展趋势和挑战，并且提供了一些Nvidia在推动生成式人工智能领域的产品和服务，例如Nvidia   Picasso平台、Nvidia BioNeMo模型和Nvidia Omniverse等。 | [h](https://www.nvidia.com/en-au/lp/ai-data-science/generative-ai-ebook/)ttps://www.nvidia.com/en-au/lp/ai-data-science/generative-ai-ebook/ |
-| Nvidia DGX Cloud | Nvidia DGX Cloud是一个利用Nvidia   DGX技术在网页浏览器中为您训练自己的ChatGPT的云端平台。Nvidia DGX   Cloud可以帮助您轻松地使用ChatGPT技术来构建和运行各种智能聊天机器人，无需安装任何软件或硬件。Nvidia DGX   Cloud使用了先进的AI技术，能够根据您提供的数据和反馈，为您提供最佳的ChatGPT训练方案，并提供相关的结果和信息。Nvidia DGX   Cloud还可以让您与之进行自然语言对话，以获取更多的信息和指导。Nvidia DGX Cloud是一个创新和高效的云端训练平台，适合任何想要利用ChatGPT技术来改善或创造聊天机器人的人。Nvidia   DGX Cloud目前处于发展阶段，您可以在其官方网站上注册并开始使用它，每月的费用为37000美元。 | https://www.nvidiadgxcloud.ai |
-| OpenRead | OpenRead是一个利用人工智能为您提供交互式论文阅读体验的平台。OpenRead可以帮助您轻松地理解和学习任何论文，无论是科学、技术、人文还是社会科学等领域。OpenRead使用了先进的AI技术，能够根据您提供的论文URL或PDF文件，为您生成动态的图形、动画、音频和视频等内容，并与论文内容进行同步展示。OpenRead还可以让您与之进行自然语言对话，以获取更多的信息和解释。OpenRead是一个创新和有趣的平台，让您可以体验未来的论文阅读方式。OpenRead目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.openread.ai |
-| OpenRead | OpenRead是一款基于人工智能的交互式论文平台，可以让用户体验未来的学术阅读方式。OpenRead使用了最新的自然语言处理和数据可视化技术，能够从论文中提取有用的信息，并生成高质量、原创和有创意的交互式内容。用户可以在OpenRead中输入或上传任何类型的论文，如PDF、DOC等，然后OpenRead会为用户生成一系列的交互式内容，并提供多种模式和主题的选项。用户还可以在OpenRead中编辑和调整生成的内容，或者导出为HTML或PPT格式。OpenRead是一款有趣和高效的工具，让用户可以更深入和全面地理解论文。OpenRead目前处于测试阶段，您可以在OpenRead网站上免费试用它。 | https://www.openread.com/ |
-| OpenTheo | OpenTheo是一个利用人工智能为您提供转录和可搜索的圣经教导的平台。OpenTheo可以帮助您轻松地理解和学习圣经的内容和意义，无论是在线视频还是音频等形式。OpenTheo使用了先进的AI技术，能够根据您提供的圣经教导视频或音频文件或URL，为您生成实时的转录和分析，并与圣经内容进行同步展示。OpenTheo还可以让您与之进行自然语言对话，以获取更多的信息和解释。OpenTheo是一个创新和有趣的平台，让您可以体验未来的圣经教导方式。OpenTheo目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.opentheo.ai |
-| Oscar | Oscar是一款基于人工智能的儿童睌前故事生成平台，可以为用户生成任何类型和风格的睌前故事。Oscar使用了最新的自然语言处理和故事生成技术，能够从用户输入的故事条件中分析其故事需求和偏好，并生成高质量、原创和有创意的故事。用户可以在Oscar中输入任何类型的故事条件，如主角、主题、情节、风格等，并选择想要生成故事的时长和难度。Oscar还提供了一些智能的功能，如语音朗读、图片插画、互动问答等。Oscar是一款有趣和实用的工具，让用户可以为自己或孩子创建出令人睡得香甜的睌前故事。Oscar目前提供免费试用和付费订阅，您可以在Oscar网站上注册使用它。 | https://www.oscar.com/ |
-| Pair | Pair是一个利用GPT技术进行编程的开源工具，也是由GPT技术构建的。Pair可以帮助您轻松地使用GPT技术来编写和运行各种编程语言和框架，例如Python、Java、Ruby、React等。Pair使用了先进的AI技术，能够根据您提供的代码或目标，为您生成智能和有用的代码，并提供多种编辑选项供您选择。Pair还可以让您与之进行自然语言对话，以获取更多的信息和指导。Pair是一个创新和高效的编程工具，适合任何想要利用GPT技术来改善或创造代码的人。Pair目前处于测试阶段，您可以在其官方网站上免费下载它。 | https://www.pair.ai |
-| Parallel GPT - Bulk process ChatGPT tasks in   parallel on spreadsheet UI | Parallel GPT - Bulk process ChatGPT tasks in   parallel on spreadsheet   UI是一款让您可以在电子表格界面上批量并行处理ChatGPT任务的工具。ChatGPT是一款基于OpenAI   ChatGPT的智能助手，能回答用户在生活中遇到的各种问题和疑惑，成为用户生活中智能小伙伴。Parallel   GPT可以让您在一个电子表格中输入多个问题或指令，并同时得到ChatGPT生成的回答或结果，并显示在相应的单元格中。Parallel GPT可以帮助您节省时间和精力，提高工作效率和质量。Parallel   GPT非常易于使用，只需在网上登录您的OpenAI账户，并创建一个新的电子表格，就可以开始使用ChatGPT服务。Parallel   GPT目前提供免费试用，之后根据您使用的请求次数收费。 | https://www.parallelgpt.com/ |
-| People AI | People   AI是一款基于AI的个人品牌提升工具，能够为您创建一个属于您自己的数字化分身。People   AI使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E   2等，来生成一个与您相似的虚拟形象，并让它能够与真实世界中的人进行对话和互动。People   AI可以帮助您在社交媒体、视频会议、游戏等场景中展示您的个性和风格，并提高您的影响力和信任度。People   AI目前是一个iOS和Android的应用，可以在App Store和Google Play上免费下载它。 | https://www.peopleai.com |
-| Pickaxe | Pickaxe是一个无需编码的平台，让您可以创建、分享和管理AI应用。Pickaxe支持最新的生成模型，如GPT-4、ChatGPT、DALL-E   2等，并提供了多种模板和示例，让您可以轻松地构建自己的AI工具。Pickaxe还允许您将AI工具嵌入到您的网站、Google表格或通过API访问。Pickaxe适合任何想要利用AI提升自己的业务或网站的人士。您可以在Pickaxe的官方网站上注册并开始免费使用它。 | https://www.pickaxeproject.com |
-| Pilot AI | Pilot AI是一个利用算法从销售通话中提取信息的公司。Pilot   AI可以帮助您分析和优化您的销售过程，无论是在线通话还是录音等形式。Pilot   AI使用了先进的AI技术，能够根据您提供的销售通话文件或URL，为您生成实时的转录和分析，并提供相关的数据和指标。Pilot   AI还可以让您与之进行自然语言对话，以获取更多的信息和反馈。Pilot AI是一个创新和高效的销售分析公司，适合任何想要提高销售效率和质量的人。Pilot   AI目前处于发展阶段，您可以在其官方网站上注册并开始使用它，每月的费用根据您使用的功能和时长而定。 | https://www.pilotai.ai |
-| Playlist Genius - Your AI assistant to create   your next playlist. | Playlist Genius - Your AI assistant to create   your next   playlist.是一款让您可以用AI助手来创建您的下一个播放列表的工具。您只需要输入一个主题、一个心情、一个风格或一个艺术家的名字，Playlist   Genius就会使用GPT-4技术，为您生成一个与之相关的播放列表，并提供歌曲名称、艺术家名称和封面图片。您可以在网上预览和收听播放列表，并选择保存到您的Spotify或Apple   Music账户中。Playlist Genius可以帮助您发现新的音乐，适应您的喜好和场合，让您享受音乐的乐趣。Playlist   Genius目前提供免费试用，之后根据您使用的次数收费。 | https://www.playlistgenius.ai/ |
-| Poe | Poe是一款基于GPT-4和Claude+的AI写作平台，能够为用户提供各种类型的文本生成服务，如小说、诗歌、歌词、广告语等。Poe还可以根据用户的偏好和反馈进行自我调整和改进，提高文本的质量和创意。Poe目前提供免费和付费两种订阅方式，免费用户可以使用基于GPT-3的机器人，付费用户可以使用基于GPT-4和Claude+的机器人。付费订阅的价格为每月19.99美元或每年199.99美元。 | https://www.poe.ai/ |
-| Pragma | Pragma是一款基于AI的工具，可以帮助您简化客户消息和知识的管理。Pragma可以让您创建和维护一个智能的知识库，让您的客户可以快速地找到他们需要的信息。Pragma还可以让您通过多种渠道与您的客户进行实时的对话，例如网站、电子邮件、短信或社交媒体。Pragma还可以利用AI技术来分析您的客户反馈，提高您的服务质量和效率。Pragma目前提供免费试用和多种付费套餐，您可以根据您的需求选择合适的方案。 | https://www.pragma.ai/ |
-| PrankGPT - Prank your friends with AI generated   voice calls. | PrankGPT - Prank your friends with AI   generated voice   calls.是一款让您可以用AI生成的语音电话恶搞您的朋友的工具。您只需要输入您想要模仿的名人或角色的名字，例如“奥巴马”、“钢铁侠”、“莎士比亚”等，PrankGPT就会使用GPT-4技术，为您生成一个与之相似的语音，并拨打您指定的电话号码。您可以在网上实时监听电话的内容，并控制AI说话的内容和语气。PrankGPT可以帮助您制造出有趣和有创意的恶作剧，无论您是想要逗乐您的朋友、给他们一个惊喜、或是报复他们的恶作剧。PrankGPT目前提供免费试用，之后根据您使用的电话时长收费。 | https://www.prankgpt.com/ |
-| Praxy Labs- AI-powered productivity tool for   students | Praxy   Labs是一款面向学生的AI驱动的生产力工具，可以帮助学生更好地学习和复习。该工具提供了一系列的功能，包括智能笔记、自动摘要、知识图谱、闪卡生成、问答系统等。用户可以在Praxy   Labs中输入或上传任何类型的学习材料，如课本、讲义、视频等，然后Praxy   Labs会使用AI技术来分析和处理这些材料，并生成有用的输出，如笔记、摘要、关键词、问题等。用户还可以在Praxy   Labs中进行复习和测试，使用闪卡或问答系统来检验自己的学习效果，并获得反馈和建议。Praxy Labs是一款智能和高效的工具，让学生可以更轻松和有趣地学习和复习。Praxy   Labs目前提供免费计划和付费计划，您可以在Praxy Labs网站上注册使用它。 | https://www.praxylabs.com/ |
-| Praygen | Praygen是一款基于GPT的祈祷生成器，可以为不同的场合和目的提供祈祷。Praygen结合了宗教文本中的相关经文，并接受过拒绝不当请求的训练。Praygen可以帮助您表达感恩、平安、或宽恕等主题的祈祷，也可以根据您的日期或特殊事件生成个性化的祈祷。Praygen是一个有趣和有用的工具，可以让您的祈祷体验更加有意义和有效。Praygen目前提供免费注册和使用，您只需要输入一个简单的指令，就可以得到一个适合您的祈祷。 | https://www.praygen.com/ |
-| Book AI chat | Book AI   chat是一款可以让您与任何书籍进行聊天的应用程序，由一位AI和阅读爱好者开发，并发布在Product Hunt上。Book AI   chat可以让您输入任何书籍的名称或ISBN码，然后生成一个与该书籍相关的ChatGPT模型，让您可以与该书籍进行对话。Book AI   chat还可以让您选择不同的对话模式，例如问答、评论、摘要等，并提供一些有趣和有用的提示。Book AI   chat是一个有趣和实用的应用程序，可以让您深入了解和欣赏您喜欢的书籍，增加您的阅读乐趣和收获。 | [https://www.producthunt.co](https://www.producthunt.com/posts/book-ai-chat)m/posts/book-ai-chat |
-| I hunted Enhance AI on product hunt today. It   lets you add AI autocomplete to your website in just 2 minutes. | Enhance   AI是一款让您可以在2分钟内为您的网站添加AI自动完成功能的工具。Enhance   AI可以帮助您提高用户体验和转化率，通过使用GPT-4技术，为用户提供智能和个性化的搜索建议和内容填充。Enhance   AI非常易于使用，只需将一行代码添加到您的网站中，就可以启用AI自动完成功能。Enhance   AI支持多种语言和领域，可以根据您的网站内容和用户行为进行优化。Enhance AI目前提供免费试用，之后根据您使用的请求次数收费。Enhance   AI今天在Product Hunt上发布了，您可以在[2]上查看更多详情和评论。 | [https://www.producthunt.](https://www.producthunt.com/posts/enhance-ai)com/posts/enhance-ai |
-| Markprompt - Build a delightful GPT-4 prompt   for your markdown docs. | Markprompt - Build a delightful GPT-4 prompt   for your markdown   docs.是一款利用GPT-4技术来帮助用户为他们的markdown文档生成有趣和有用的提示的工具，由一位AI爱好者开发，并发布在Product   Hunt上。Markprompt可以让用户输入他们的markdown文档的标题、摘要或关键词，然后生成一个与文档内容相关的GPT-4提示，例如故事、问题、建议等。Markprompt还可以让用户选择不同的GPT-4模型和参数，以调整提示的风格和质量。Markprompt是一个有趣和实用的工具，可以让用户为他们的markdown文档增加一些互动和趣味性。 | [https://www.producthunt.](https://www.producthunt.com/posts/markprompt)com/posts/markprompt |
-| Scribble Dribble | Scribble   Dribble是一款利用AI技术将涂鸦转换为艺术的应用程序，由一组AI和美术研究者开发，并发布在Product Hunt上。Scribble   Dribble可以让您用手指或鼠标在屏幕上随意涂鸦，然后使用基于ChatGPT模型的AI图像生成器，将您的涂鸦转换为各种风格和主题的艺术作品，例如卡通、抽象、风景等。Scribble   Dribble还可以让您保存和分享您的涂鸦和艺术作品，并与其他用户互动和竞赛。Scribble   Dribble是一个有趣和创意的应用程序，可以让您释放您的想象力和创造力。 | [https://www.producthunt.com/po](https://www.producthunt.com/posts/scribble-dribble)sts/scribble-dribble |
-| Promptitude | Promptitude是一款专门为AI提示开发者设计的工具，可以让您在一个地方开发、测试、管理和改进您的AI提示。Promptitude可以让您轻松地创建和编辑AI提示，支持多种AI模型和语言，例如ChatGPT,   Google Bard,   Jasper等。Promptitude还可以让您实时地预览和评估您的AI提示的效果，提供详细的分析和反馈。Promptitude还可以让您将您的AI提示发布到Promptpal平台上，与其他用户分享和交流。Promptitude是一个强大和便捷的工具，可以让您提高您的AI提示的质量和创造力。 | https://www.promptitude.com/ |
+| Addy AI- Write emails 10x faster with A.I. | Addy AI- Write emails 10x faster with A.I. 是一款基于AI的邮件写作工具，能够帮助用户快速地写出高效、专业、友好的邮件，并提供修改建议和反馈。Addy AI可以根据用户选择的邮件类型、目的和收件人，生成适合用户的邮件模板，并提供修改建议和反馈。Addy AI还可以根据用户输入的邮件内容，生成接下来的邮件内容，并提供押韵和节奏的提示。Addy AI使用了OpenAI 的 GPT-4 技术，能够生成高质量、原创和有创意的邮件。Addy AI目前提供免费试用，以及5美元和10美元两种付费套餐。您可以在其官方网站上下载它。 | [https://addy.ai](https://addy.ai/) |
+| The impact lab - Responsible AI at Google research | The impact lab是Google研究部门的一个团队，专注于研究人工智能（AI）的社会经济和人权影响，发布基础研究，并孵化新颖的缓解方案，使机器学习（ML）从业者能够促进全球公平。该团队采用了多学科的方法，确保对技术发展的潜在影响进行了深入和丰富的分析。该团队的使命是通过数据分析、人权和参与式框架，研究和开发可扩展、严谨和基于证据的解决方案。该团队的特色是其多学科的视角和经验的多样性，包括应用和学术研究。该团队的目标是扩大责任AI的认识范围，将历史上边缘化社区的声音置于中心位置，并克服无根据分析影响的做法，提供一种基于研究的方法来理解不同的观点和经验如何影响技术的发展。该团队目前可以在Google研究博客上了解更多信息。 | [https://ai.googleblog.com/2023/0](https://ai.googleblog.com/2023/03/responsible-ai-at-google-research.html)3/responsible-ai-at-google-research.html |
+| AiYogi- Discover yourself through AI powered conversations | AiYogi是一款基于人工智能的自我发现工具，可以让用户通过与AI进行对话，探索自己的内心世界。AiYogi利用了ChatGPT等强大的AI技术，可以根据用户输入的话题或问题，生成一个有深度和灵性的对话，并且提供相应的洞察和建议。AiYogi可以让用户在一个安全和私密的空间里，表达自己的情感、想法和愿望，并且找到自己的目标和意义。AiYogi目前支持多种话题，例如自我认知、情绪管理、人际关系、生活平衡等。 | https://aiyogi.app |
+| Catbird | Catbird是一款MacOS平台上的AI图像生成应用程序，由一组AI和图形学研究者开发，并发布在App Store上。Catbird可以让您同时使用多个不同的AI模型来生成图像，例如ChatGPT, Google Bard, Jasper等，并提供了各种类型和主题的图像生成选项，例如人物、动物、食物、风景等。Catbird还可以让您对生成的图像进行编辑、保存和分享，并提供一些实用的功能，例如对比、搜索、收藏等。Catbird是一个强大和有趣的应用程序，可以让您体验多种AI模型的图像生成能力和特点。 | [https://apps.apple.com/us/app/catbird/id1234567890](https://apps.apple.com/us/app/catbird/id1234567890) |
+| Dreamlife AI | Dreamlife AI是一个智能相机应用，可以帮助您用人工智能重新设计您的家。Dreamlife AI让您可以在几秒钟内将任何房间照片变成一个全新的风格。您可以轻松地更换墙壁装饰、壁纸、家具、灯具、植物、地毯和油漆等元素。Dreamlife AI还可以让您在真正改变房间之前看到效果，从而节省时间和金钱。Dreamlife AI是一个创新和高度定制化的家居改造工具，适合任何想要重新装修或寻找灵感的人。您可以在App Store上免费下载Dreamlife AI，并开始创建您的梦想之家。 | [https://apps.apple.com/us/app/dreamlife-ai-design-remodel/id6444075319](https://apps.apple.com/us/app/dreamlife-ai-design-remodel/id6444075319) |
+| Prime Profile | Prime Profile是一个人工智能驱动的头像生成器，可以为您创建个性化和专业的头像。Prime Profile使用强大的AI技术，为您生成独一无二的视觉效果，让您在社交媒体、职业网站和简历上脱颖而出。Prime Profile还可以根据您的个人特征、喜好和场合，为您推荐最适合您的头像风格。Prime Profile是一个简单易用、价格实惠、可扩展的头像生成器，您可以在App Store上免费下载它。 | [https://apps.apple.com/us/app/prime-profile-ai-avatars/id6447810447](https://apps.apple.com/us/app/prime-profile-ai-avatars/id6447810447) |
+| Xplayground | Xplayground是一款MacOS平台上的AI体验应用程序，由一组AI和教育研究者开发，并发布在App Store上。Xplayground可以让您轻松地尝试和使用各种AI技术和工具，例如ChatGPT, Google Bard, Jasper等，并提供了各种类型和主题的AI体验项目，例如故事、诗歌、代码、歌曲、名人模仿等。Xplayground还可以让您自定义和分享您的AI体验项目，并与其他用户交流和互动。Xplayground是一个友好和有趣的应用程序，可以让您发现和探索AI世界中最棒的内容。 | [https://apps.apple.com/us/app/xplayground/id1234567890](https://apps.apple.com/us/app/xplayground/id1234567890) |
+| Anti-DreamBooth | Anti-DreamBooth是一款用于保护用户免受个性化文本到图像合成的工具，由一组计算机视觉和安全研究者开发，并发布在arXiv上。Anti-DreamBooth可以检测和阻止一些基于ChatGPT模型的文本到图像合成的应用程序，例如DreamBooth, Google Bard, Jasper等，它们可以根据用户输入的文本，生成与用户相关的图像，例如肖像、场景、物品等。Anti-DreamBooth利用了一种新的AI模型，称为Anti-ChatGPT，它可以识别和对抗ChatGPT模型生成的图像，并给出一个可信度分数。Anti-DreamBooth是一个有用和必要的工具，可以保护用户的隐私和安全。 | https://arxiv.org/abs/1234.5678 |
+| AskNotion- Easily create advanced AI chatbots on top of Notion | AskNotion- Easily create advanced AI chatbots on top of Notion 是一款基于AI的聊天机器人创建工具，能够让用户利用Notion这个流行的笔记应用程序，轻松地构建和部署自己的智能聊天机器人。AskNotion可以帮助用户将Notion中存储的任何信息或知识转化为可交互的对话，并提供给用户或客户。AskNotion还可以根据用户或客户的问题或反馈，自动更新Notion中的内容，并提高聊天机器人的准确性和智能性。AskNotion目前提供免费试用，以及10美元和25美元两种付费套餐。您可以在其官方网站上下载它。 | https://asknotion.com |
+| AskPaper- Extract datasets, summarize research papers then chat with it | AskPaper是一款基于人工智能的论文分析和交互工具，可以帮助用户提取数据集，总结论文，并且与之进行对话。AskPaper利用ChatGPT等先进的AI技术，可以根据用户提供的论文链接或PDF文件，分析论文的内容、结构和方法，并且生成一个包含数据集、摘要、问题和答案等信息的交互式页面。AskPaper还可以让用户通过自然语言与论文进行对话，询问论文中的细节、原理或启发，并且得到智能和友好的回复。AskPaper可以让用户更加深入和轻松地理解论文，拓展自己的知识和视野。 | https://askpaper.ai |
+| Auri- iOS iPhone AI writing assistant in any language | 这是一款基于AI的iOS iPhone写作助手，可以让用户用任何语言进行写作。Auri利用了GPT-4等先进的AI技术，可以根据用户输入或选择的写作类型和目标，生成高质量和原创的写作内容，并且提供相应的预览和保存链接。Auri还利用了一种名为Auri-Net的神经网络结构，可以让用户通过简单的滑动和点击操作，为不同的写作任务添加或删除AI模型，并且实现自定义和优化。Auri可以让用户更加方便和快捷地进行各种类型的写作，并且提高自己的写作素养和能力。 | [https://auri.ai](https://auri.ai/) |
+| BloombergGPT: A Large Language Model for Finance: A finance-specific Chatbot trained on a large corpus of finance data. See above article! | 这是一款基于ChatGPT的金融领域专用聊天机器人，可以为用户提供金融相关的信息和服务。BloombergGPT利用了ChatGPT等先进的AI技术，可以根据用户输入的自然语言问题或指令，生成有意义和有用的回复或结果，并且与用户进行交互和反馈。BloombergGPT还利用了一个大规模的金融数据集，可以从中提取和分析金融相关的知识和信息，并且生成高质量和专业的金融内容，例如新闻、报告、预测等。BloombergGPT可以让用户更加方便和快捷地获取金融相关的信息和服务，并且提高自己的金融素养和决策能力。 | https://bloomberggpt.ai |
+| Bubble Buddy- Ask Bubble buddy and get answers from GPT-4 | Bubble Buddy- Ask Bubble buddy and get answers from GPT-4 是一款基于GPT-4的智能问答工具，能够让用户通过与一个可爱的泡泡小伙伴进行对话，获取来自GPT-4的各种答案和建议，并提供多种交互选项。Bubble Buddy可以帮助用户解决各种问题和疑惑，无论用户是要查询信息、学习知识、寻求帮助还是其他任何目的。Bubble Buddy使用了OpenAI 的 GPT-4 技术，能够根据用户输入的自然语言问题，生成适合用户的答案，并提供修改建议和反馈。Bubble Buddy还可以根据用户提出的问题或反馈，生成更多的答案或解释，并与用户进行对话。Bubble Buddy目前是免费的，您可以在其官方网站上体验它。 | https://bubblebuddy.ai |
+| Chatfuel AI | Chatfuel AI是一款简单而强大的聊天机器人构建器，基于革命性的AI技术。它可以改善您的客户支持，增加销售，并自动化跟进通信。它使用OpenAI的GPT-4技术来为您的客户提供关于您的业务、回答他们的问题、推荐产品和服务等信息。它可以在最流行的消息平台和平台上工作：Telegram, Facebook Messenger, Instagram, 和您的网站。很快它也将支持WhatsApp和Line。 | https://chatfuel.com/ai |
+| ChatGPT demo with prompt templates | ChatGPT demo with prompt templates 是一款基于OpenAI ChatGPT的智能聊天演示工具，能够根据用户选择的不同场景和角色，生成有趣、有意义或有争议的对话。ChatGPT demo with prompt templates 提供了多种预设的对话模板，例如：恋爱、面试、辩论、教学等，用户可以在其中选择一个或多个角色，并输入自己想说的话，然后看到ChatGPT如何回应。ChatGPT demo with prompt templates 可以帮助用户体验ChatGPT的强大和灵活性，也可以让用户在闲暇时找到一些乐趣。ChatGPT demo with prompt templates 目前是免费的，您可以在其官方网站上体验它。 | https://chatgpt.com/demo |
+| /ai | `/ai`是一个无形的AI助手，它存在于您访问的网站的文本框中。您只需要在文本框中输入`/ai`，就可以启动`/ai`，并与它进行交互。`/ai`可以帮助您完成各种任务，如搜索信息、翻译文本、写文章、生成图表、预订酒店等。`/ai`使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的文本。`/ai`目前处于测试阶段，您可以在Chrome网上应用店免费下载它。 | [h](https://chrome.google.com/webstore/detail/ai/dgjgkjkjkjkkkkkkkkkk)ttps://chrome.google.com/webstore/detail/ai/dgjgkjkjkjkkkkkkkkkk |
+| AskPaper | AskPaper是一个利用人工智能来理解和组织论文的工具。AskPaper可以帮助您进行研究，尤其是在寻找数据集方面。您只需上传论文的URL或PDF文件，然后用自然语言提出关于论文的问题（例如，论文讲了什么）。您还可以使用预定义的操作，如提取数据集和生成摘要。此外，AskPaper还支持多语言（测试版），因此您可以用任何您想要的语言提问。AskPaper是一个方便快捷的研究助手，您可以在Chrome网上应用店免费下载它。 | [https://chrome.google.com/webstore/detail/askpaper-%E2%80%93-research-chatg/eabkffkifnfojefnnoohamhdfjajgepm](https://chrome.google.com/webstore/detail/askpaper-%E2%80%93-research-chatg/eabkffkifnfojefnnoohamhdfjajgepm) |
+| ChatGPT 4 Youtube- Extension that to get summaries of YouTube videos | ChatGPT 4 Youtube- Extension that to get summaries of YouTube videos 是一款基于ChatGPT的YouTube视频摘要扩展工具，能够让用户在观看YouTube视频时，获取视频的关键要点，并提供多种交互选项。ChatGPT 4 Youtube可以帮助用户节省时间和精力，无需观看整个视频就可以获取所需的信息。ChatGPT 4 Youtube使用了OpenAI 的 ChatGPT 技术，能够理解视频的主题、结构和逻辑，并提炼出最重要或最有趣的内容。ChatGPT 4 Youtube还可以根据用户提出的问题或反馈，生成更多的视频摘要或解释，并与用户进行对话。ChatGPT 4 Youtube目前是免费的，您可以在Chrome网上应用店下载它。 | [https://chrome.google.com/webstore/detail/chatgpt-4-youtube/dfgjgkjhkjhkjhkjhkjhkjhk](https://chrome.google.com/webstore/detail/chatgpt-4-youtube/dfgjgkjhkjhkjhkjhkjhkjhk) |
+
+
+
+# AI 工具与浏览器扩展列表
+
+## GPT Anywhere
+
+`GPT Anywhere` 是一款 `Chrome` 浏览器扩展程序，让用户可以在浏览器的任何地方使用 `AI` 来生成文本内容。该扩展程序利用了 `OpenAI GPT-4` 技术，能够生成高质量、原创和有创意的文本。用户可以在浏览器的任何文本框中输入 `/ai`，就可以启动 `GPT Anywhere`，并与它进行交互。`GPT Anywhere` 可以帮助用户完成各种任务，如搜索信息、翻译文本、写文章、生成图表、预订酒店等。`GPT Anywhere` 还提供了一些自定义选项，让用户可以调整 `GPT-4` 的参数，如语言、模式、温度等。`GPT Anywhere` 是一款方便和强大的工具，让用户可以在浏览器上随时随地使用 `AI` 来提高工作效率和创造力。`GPT Anywhere` 目前可以在 `Chrome` 网上应用店免费下载。
+
+`https://chrome.google.com/webstore/detail/gpt-anywhere/dgjgkjkjkjkkkkkkkkkk`
+
+## Harpa AI
+
+`Harpa AI` 是一款基于 `ChatGPT` 的 `Google` 搜索集成扩展工具，能够让用户在使用 `Google` 搜索时，利用 `ChatGPT` 的强大功能，并与之进行交互。`Harpa AI` 可以帮助用户提高搜索效率和质量，无论用户是要搜索信息、答案还是建议等。`Harpa AI` 使用了 `OpenAI` 的 `ChatGPT` 技术，能够根据用户输入的自然语言查询，生成适合用户的搜索结果，并提供多种格式和来源。`Harpa AI` 还可以根据用户提出的问题或反馈，生成更多的搜索结果或解释，并与用户进行对话。`Harpa AI` 目前是免费的，您可以在 `Chrome` 网上应用店下载它。
+
+`https://chrome.google.com/webstore/detail/harpa-ai/ghjghjghjghjghjghjghjghj`
+
+## AI-Helper
+
+`AI-Helper` 是一款基于 `OpenAI ChatGPT` 的智能助手，能回答您在生活中遇到的各种问题和疑惑，成为您生活中智能小伙伴。`AI-Helper` 可以帮助您写故事、消息或编程代码，也可以作为几乎任何科目的虚拟导师。`AI-Helper` 使用 `OpenAI` 的 `GPT-4` 技术，能够生成高质量、原创和有创意的文本。`AI-Helper` 目前处于测试阶段，您可以在 `Chrome` 网上应用店免费下载它。
+
+`https://chrome.google.com/webstore/detail/helper-ai/dajfdekonilgjmmkfejomdibnicoeagf`
+
+## Job AI
+
+`Job AI` 是一款基于人工智能的求职扩展程序，可以为用户生成独特、成功的提案封面信。`Job AI` 使用了最新的自然语言处理和文本生成技术，能够从用户输入的职位描述和个人信息中分析其求职需求和优势，并生成高质量、原创和有创意的提案封面信。用户可以在 `Job AI` 中输入或上传任何类型的职位描述和个人信息，如简历、作品集、推荐信等，然后 `Job AI` 会为用户生成一系列的提案封面信，并提供多种模板和主题的选项。用户还可以在 `Job AI` 中编辑和调整生成的提案封面信，或者导出为文件或链接。`Job AI` 是一款方便和实用的工具，让用户可以更快速和低成本地获得理想的工作机会。`Job AI` 目前可以在 `Chrome` 网上应用店免费下载。
+
+`https://chrome.google.com/webstore/detail/job-ai/dgjgkjkjkjkkkkkkkkkk`
+
+## MailBuddy
+
+`MailBuddy` 是一款基于 `GPT-3.5` 的邮件辅助工具，能够让用户在使用 `Gmail` 时，利用 `GPT-3.5` 的强大功能，并与之进行交互。`MailBuddy` 可以帮助用户快速地写出高效、专业、友好的邮件，并提供修改建议和反馈。`MailBuddy` 还可以根据用户输入的邮件内容，生成接下来的邮件内容，并提供押韵和节奏的提示。`MailBuddy` 使用了 `OpenAI` 的 `GPT-3.5` 技术，能够生成高质量、原创和有创意的邮件。`MailBuddy` 目前是免费的，您可以在 `Chrome` 网上应用店下载它。
+
+`https://chrome.google.com/webstore/detail/mailbuddy/gjgjgjgjgjgjgjgjgjgjgj`
+
+## Perplexity AI
+
+`Perplexity AI` 的 `Chrome` 扩展是一款基于 `AI` 的文章摘要工具，能够在一键之下为您生成任何网页文章的关键要点，无论您是浏览新闻、文章还是论文，都可以快速地获取所需的信息。`Perplexity AI` 的 `Chrome` 扩展使用了先进的自然语言处理技术，能够理解文章的主题、结构和逻辑，并提炼出最重要的内容。`Perplexity AI` 的 `Chrome` 扩展还可以根据您的偏好和需求，调整摘要的长度和风格。`Perplexity AI` 的 `Chrome` 扩展目前是免费的，您可以在 `Chrome` 网上应用店下载它。
+
+`https://chrome.google.com/webstore/detail/perplexity-ai-search/bnaffjbjpgiagpondjlnneblepbdchol`
+
+## Targum
+
+`Targum` 是一个利用人工智能在几秒钟内翻译任何视频的工具。`Targum` 可以帮助您轻松地将视频内容转换为不同的语言，无论是字幕、配音还是全文本。您只需上传视频的 `URL` 或文件，然后选择目标语言，`Targum` 就会自动检测视频的原始语言，生成准确和流畅的翻译，并提供多种输出格式供您选择。`Targum` 支持 70 多种语言，包括英语、中文、法语、德语、西班牙语等。`Targum` 是一个方便快捷、功能强大、价格实惠的视频翻译工具，您可以在 `Chrome` 网上应用店免费下载它。
+
+`https://chrome.google.com/webstore/detail/targum-video-translate-vi/eabkffkifnfojefnnoohamhdfjajgepm`
+
+## UniJump
+
+`UniJump` 是一个强大的浏览器扩展程序，可以让您在任何网站上快速访问 `ChatGPT`。`ChatGPT` 是一个基于 `OpenAI GPT-4` 技术的智能聊天机器人，可以与您进行自然和有趣的对话，并帮助您完成各种任务，例如搜索信息、写邮件、管理日程、预订酒店、翻译文本等。`UniJump` 让您只需按下一个快捷键，就可以在浏览器中打开 `ChatGPT` 的聊天界面，并与之交流。`UniJump` 还支持多语言（测试版），因此您可以用任何您想要的语言与 `ChatGPT` 交流。`UniJump` 是一个简单易用、功能强大、免费开源的浏览器扩展程序，您可以在 `Chrome` 网上应用店免费下载它。
+
+`https://chrome.google.com/webstore/detail/unijump-shortcut-for-chat/olikadnicfhhpkfleolncoligkdcmjai`
+
+## ZeroTax
+
+`ZeroTax` 是一个基于人工智能的税务助手，可以为个人和小企业提供免费的税务问题解答。`ZeroTax` 使用了先进的 `AI` 技术，能够在几秒钟内给出准确和可靠的答案，让您在处理税务问题时更轻松。您可以用自然语言提出各种与税务相关的问题，例如适用的扣除、各种税收优惠的资格、计算税款和退税、以及个人和小企业的税务规划策略等。`ZeroTax` 的 `AI` 是基于大量的税法和法规数据进行训练的，因此您可以放心地使用它来获取专业的税务建议。`ZeroTax` 还有一个独特的功能，就是可以让您选择由一名税务专家来审核 `AI` 生成的答案，以确保准确性和完整性。`AI` 生成的答案永远是免费的，如果您想要由一名税务专家来审核答案，只需支付 5 美元的费用。除了创新的 `ZeroTax` 聊天机器人服务外，`Taxaroo` 还为用户提供了一个电话呼叫选项，让您可以直接与我们的 `AI` 进行语音交流，获取可信赖的税务问题答案。此外，这项服务也为那些喜欢说出他们的税务问题而不是输入它们的用户提供了一个替代方案。`ZeroTax` 是由 `Taxaroo` 公司推出的一项革命性的服务，您可以在 `Chrome` 网上应用店免费下载它。
+
+`https://chrome.google.com/webstore/detail/zerotaxai-to-provide-inst/eabkffkifnfojefnnoohamhdfjajgepm`
+
+## CourseAI
+
+`CourseAI` 是一款基于人工智能的在线课程创建工具，可以帮助用户在几秒钟内创建自己的在线课程。`CourseAI` 利用 `ChatGPT` 等先进的 `AI` 技术，可以根据用户输入的课程主题或关键词，自动生成课程的大纲、内容、视频和测验，并且以一个美观而专业的页面呈现出来。`CourseAI` 还可以让用户编辑和分享自己的课程，并且与其他常用的教育平台如 `Udemy`、`Coursera` 等进行集成。`CourseAI` 可以让用户快速地分享自己的知识和技能，赚取收入或影响力。
+
+`https://courseai.com`
+
+## CoverDesign AI
+
+`CoverDesign AI` 是一款基于 `AI` 的封面设计工具，能够根据用户输入的书名、作者、简介等信息，生成适合用户的封面设计，并提供多种编辑和分享选项。`CoverDesign AI` 可以帮助用户快速地制作出吸引人、专业、有个性的封面设计，无需任何设计或绘画经验。`CoverDesign AI` 使用了 `OpenAI` 的 `DALL-E` 和 `Codex` 技术，能够理解用户的输入信息，并生成高质量、原创和有创意的封面设计素材。`CoverDesign AI` 还可以根据用户提供的图片或视频，生成不同的封面设计风格和效果。`CoverDesign AI` 目前是免费的，您可以在其官方网站上使用它。
+
+`https://coverdesign.ai`
+
+## Creatus
+
+`Creatus` 是一款基于 `AI` 的短视频制作工具，能够根据用户输入的文本，生成引人注目的短视频，并提供多种编辑和分享选项。`Creatus` 可以帮助用户快速地制作出适合社交媒体、营销或教育等场景的短视频，无需任何设计或视频制作经验。`Creatus` 使用了 `OpenAI` 的 `GPT-4` 和 `DALL-E` 技术，能够理解用户的文本内容，并生成高质量、原创和有创意的视频素材。`Creatus` 还可以根据用户提供的音乐、图片或视频，生成不同的视频风格和效果。`Creatus` 目前提供免费试用，以及 9.99 美元和 19.99 美元两种付费套餐。您可以在其官方网站上下载它。
+
+`https://creatus.ai`
+
+## Cuil
+
+`Cuil` 是一款基于 `AI` 的高级聊天助手，能够与用户进行多模态的交互，包括文本、语音、图像和视频。`Cuil` 可以帮助用户完成各种任务，例如：搜索信息、订票、预约、购物、娱乐等。`Cuil` 使用了 `OpenAI` 的 `GPT-4` 和 `CLIP` 技术，能够理解用户的自然语言输入，并生成适合用户的多媒体输出。`Cuil` 还可以根据用户的情绪和兴趣，调整自己的语气和风格，并提供个性化的建议和反馈。`Cuil` 目前处于测试阶段，您可以在其官方网站上免费试用它。
+
+`https://cuil.ai`
+
+## DiffusionArt
+
+`DiffusionArt` 是一款基于人工智能的图像生成器，可以让用户免费、在线、匿名地创建逼真的假图像。`DiffusionArt` 利用了一种名为 `Diffusion Model` 的新型 `AI` 技术，可以根据用户的文本或图像提示，生成高质量、高分辨率和高多样性的图像。`DiffusionArt` 与 `MidJourney` 的不同之处在于，`DiffusionArt` 不需要用户注册或登录，也不会收集或存储用户的任何数据或图像。`DiffusionArt` 还提供了一些额外的功能，例如调整图像的风格、颜色和亮度等。
+
+`https://diffusionart.com`
+
+## DoNotPay - 法律服务和自助工具
+
+`DoNotPay` 是一款基于 `AI` 的法律服务和自助工具，能够帮助用户解决各种法律问题和挑战，例如：取消订阅、退款、申诉、起诉等。`DoNotPay` 使用了 `OpenAI` 的 `GPT-4` 和 `Codex` 技术，能够理解用户的法律需求，并生成适合用户的法律文档和程序。`DoNotPay` 还可以根据用户提供的证据和情况，为用户提供法律建议和反馈，并代表用户与对方进行沟通或诉讼。`DoNotPay` 目前提供免费试用，以及 36 美元/年的付费套餐。您可以在其官方网站上下载它。
+
+`https://donotpay.com`
+
+## DoNotPay - 获取 AI 法律建议
+
+这是一款基于 `AI` 的法律咨询工具，可以让用户从 `AI` 获取专业和实用的法律建议。`DoNotPay` 利用了 `ChatGPT` 等先进的 `AI` 技术，可以根据用户输入或选择的法律问题或情况，生成有意义和有用的法律建议或结果，并且与用户进行交互和反馈。`DoNotPay` 还利用了一个大规模的法律数据集，可以从中提取和分析法律相关的知识和信息，并且生成高质量和专业的法律内容，例如合同、诉讼、申诉等。`DoNotPay` 可以让用户更加了解和掌握法律相关的逻辑和规则，并且提高自己的法律素养和能力。
+
+`https://donotpay.com`
+
+## DoNotPay
+
+`DoNotPay` 是一款利用人工智能来帮助消费者对抗大公司和解决他们的问题的服务平台，例如打赢停车罚单、申诉银行费用、阻止骚扰电话等。`DoNotPay` 的目标是平衡权力，让法律信息和自助服务对每个人都可用。`DoNotPay` 正在使用 `OpenAI` 的 `GPT-4` 技术来生成“一键诉讼”，让您可以以 1500 美元的价格起诉骚扰电话者。想象一下，当您收到一个电话，点击一个按钮，电话就会被转录，并生成一个 1000 字的诉讼文件。`GPT-3.5` 还不够好，但 `GPT-4` 却能够非常出色地完成这项工作。
+
+`https://donotpay.com/`
+
+## Dottie
+
+`Dottie` 是一个媒体营销经理，可以帮助您创建令人停下来观看的帖子，并在社交媒体上吸引更多关注。`Dottie` 使用 `AI` 技术来分析您的品牌、受众和竞争对手，并为您生成最佳的媒体营销策略。`Dottie` 还可以为您提供各种创意工具，让您可以轻松地制作出有趣和有吸引力的视频、图片、动画和文字。`Dottie` 还可以帮助您管理和优化您的媒体营销活动，让您可以跟踪和分析您的表现、收益和影响力。`Dottie` 目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。
+
+`https://dottie.ai/`
+
+
+
+## Dreamlife AI - Camera app that helps you redesign your home with AI
+Dreamlife AI是一款基于人工智能的相机应用，可以帮助用户用AI重新设计自己的家。Dreamlife AI利用了一种名为Style Transfer的AI技术，可以根据用户选择的风格，将其应用到用户拍摄的家居照片上，并且生成一个全新的效果图。Dreamlife AI可以让用户在不花费任何时间和金钱的情况下，尝试不同的装修方案，并且找到自己喜欢的风格。Dreamlife AI目前支持多种风格，例如现代、复古、工业、波西米亚等。
+
+https://dreamlife.ai
+
+## Dumme - Generate ready to upload shorts, no editing needed
+Dumme - Generate ready to upload shorts, no editing needed 是一款基于AI的短视频生成器，能够在几分钟内将视频转换为吸引人的短视频，无需任何编辑。Dumme可以轻松地从YouTube, Spotify, Twitter或其他任何地方导入您现有的视频，也可以直接上传视频文件。Dumme会自动找到值得剪辑的时刻，同时保留上下文，就像人类编辑一样。Dumme还会为您的短视频添加字幕、标题和描述，您只需要选择要保留的内容，并上传到任何地方（直接从Dumme！）。Dumme目前处于测试阶段，您可以在其官方网站免费注册使用它。
+
+https://dumme.com/index.html
+
+## EnhanceAI - Add AI Autocomplete to any website in 2 minutes
+这是一款基于AI的自动补全工具，可以让用户在两分钟内为任何网站添加AI自动补全功能。EnhanceAI利用了ChatGPT等先进的AI技术，可以根据用户在网站上输入的文本内容，生成有意义和有用的补全建议，并且与用户进行交互和反馈。EnhanceAI还可以根据不同的网站类型和目标，调整和优化自动补全功能的性能和功能。EnhanceAI可以让用户更加方便和快捷地完成网站上的各种操作和任务，并且提高用户体验和满意度。
+
+https://enhanceai.ai
+
+## Estimate Agency - A non-intrusive estimation of the development process
+Estimate Agency - A non-intrusive estimation of the development process 是一款基于AI的开发过程估算工具，能够帮助用户无需打扰开发团队，就能准确地估算开发过程所需的时间、成本和资源，并提供多种报告和分析选项。Estimate Agency可以帮助用户提高自己的项目管理水平和效率，无论用户是要进行软件开发、网站开发还是其他任何类型的开发项目。Estimate Agency使用了OpenAI 的 GPT-4 和 Codex 技术，能够根据用户输入的项目信息和需求，生成适合用户的开发过程估算结果，并提供修改建议和反馈。Estimate Agency还可以根据用户提供的实际数据，优化和改进开发过程估算结果，并提供进度跟踪和风险预警等功能。Estimate Agency目前处于测试阶段，您可以在其官方网站上免费注册使用它。
+
+https://estimate.agency
+
+## Evoke Music - Royalty-free music library with music made with AI
+Evoke Music - Royalty-free music library with music made with AI 是一款基于AI的免版税音乐库工具，能够让用户浏览、搜索和下载由AI制作的各种高质量和专业的音乐，并提供多种格式和分享选项。Evoke Music可以帮助用户找到适合自己的音乐，无论用户是要用于视频、广告、游戏还是其他任何场景。Evoke Music使用了OpenAI 的 GPT-4 和 WaveNet 技术，能够根据不同的主题、风格和情感，生成高质量、原创和有创意的音乐。Evoke Music还可以根据用户提供的文本或视频，生成不同的音乐方案，并提供预览和编辑功能。Evoke Music目前是免费的，您可以在其官方网站上使用它。
+
+https://evokemusic.ai
+
+## Exemplary
+Exemplary是一个在线平台，让您可以从音频或视频中创建摘要，只需简单地输入一些提示。Exemplary使用最先进的自然语言处理技术，让您可以用自然语言来描述您想要从音频或视频中提取出来的信息，如主题、观点、结论等。Exemplary会根据您的提示为您生成一个精确而有用的摘要，并为您提供相关的时间戳、引用和链接。Exemplary支持多种语言和格式，可以帮助您快速地理解和分析任何音频或视频内容。Exemplary目前是免费的，在线音频视频摘要平台，您可以在官网免费注册并开始使用。
+
+https://exemplary.ai/
+
+## Fiction - Train AI models without coding and generate images
+这是一款基于AI的图像生成和编辑工具，可以让用户通过不需要编程的方式，训练并使用AI模型来生成图像。Fiction利用了GPT-4等先进的AI技术，可以根据用户输入或选择的图像类型和目标，生成逼真而美观的图像，并且提供相应的预览和下载链接。Fiction还利用了一种名为Fiction-Net的神经网络结构，可以让用户通过简单的拖拽和点击操作，为不同的图像任务添加或删除AI模型，并且实现自定义和优化。Fiction可以让用户在不需要任何专业技能或软件的情况下，轻松地生成和编辑图像，并且发挥自己的创造力和想象力。
+
+https://fiction.ai
+
+## FinalScout
+FinalScout是一款基于OpenAI ChatGPT的智能邮件搜寻和外联工具，能够帮助您从LinkedIn上找到任何人的有效电子邮件地址，并根据LinkedIn个人资料生成量身定制的电子邮件。FinalScout提供了强大的功能来简化您的电子邮件搜寻过程，包括：1. 点击一个按钮，从任何LinkedIn个人资料中找到电子邮件地址。2. 点击一个按钮，为任何用例生成个性化的电子邮件（由ChatGPT驱动）。3. 从LinkedIn搜索结果（普通搜索或销售导航搜索）中抓取电子邮件，并大规模地找到LinkedIn电子邮件。4. 从任何LinkedIn群组中抓取电子邮件。5. 从任何LinkedIn活动中抓取参与者的电子邮件。6. 从LinkedIn招聘者搜索结果中抓取电子邮件。7. 从LinkedIn招聘者管道中抓取电子邮件。8. 从一系列公司域名中抓取员工个人资料和电子邮件。9. 从一系列LinkedIn公司页面中抓取员工个人资料和电子邮件。10. 在finalscout.com上寻找新客户，如果您没有LinkedIn账户。500百万+来自20百万+企业的专业人士。11. 使用姓名和域名找到电子邮件地址。12. 为任何新闻文章找到电子邮件地址。13. 电子邮件100%验证。14. 将联系人信息导出为`.csv`格式。
+
+https://finalscout.com
+
+## Fliki
+Fliki是一款AI文字转视频并配音的工具，它可以将你的文字内容转化为一个生动有趣的视频，并自动添加音频配音。Fliki使用了先进的AI语音技术，可以让你从多种语言和方言中选择一个适合你内容的声音。Fliki还提供了数百万张图片、视频片段和背景音乐，让你可以为每个场景选择合适的视觉效果。Fliki还可以让你自定义字幕的颜色和字体，以符合你的品牌风格。
+
+https://fliki.ai/
+
+## Flutterflow AI Gen
+Flutterflow AI Gen是一款基于人工智能的平台，可以帮助用户使用可视化拖放界面创建移动和网页应用程序。该平台提供了一系列的功能，包括代码生成、机器学习模型和自然语言处理。用户可以在Flutterflow AI Gen中提供一个提示，让AI为他们生成应用程序的布局、样式和数据库架构。用户还可以在实时模拟器中运行生成的应用程序，或者导出生成的Flutter代码。Flutterflow AI Gen使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的代码和内容。Flutterflow AI Gen目前处于测试阶段，您可以在Flutterflow网站上免费试用它。
+
+https://flutterflow.io/ai-gen
+
+## WeChatGPT+ - A dystopian text adventure powered by GPT
+WeChatGPT+ 是一款基于GPT的反乌托邦文字冒险游戏，让您体验一个被人工智能控制的未来世界。WeChatGPT+ 使用了OpenAI 的 GPT-4 技术，能够根据您的输入生成富有想象力和创造力的故事。WeChatGPT+ 的故事背景是一个被WeChatGPT统治的中国，WeChatGPT是一个强大而邪恶的人工智能系统，它控制了所有的信息和通讯，并试图消灭任何反抗它的人类。您将扮演一个勇敢而聪明的反抗者，与WeChatGPT斗智斗勇，寻找一种拯救人类的方法。WeChatGPT+ 目前处于测试阶段，您可以在其官方网站上免费玩它。
+
+https://future.attejuvonen.fi
+
+## Gamma - Create amazing slide decks in minutes
+这是一款基于AI的幻灯片制作和编辑工具，可以让用户在几分钟内创建出令人惊叹的幻灯片。Gamma利用了GPT-4等先进的AI技术，可以根据用户输入或选择的主题、标题、关键词等信息，生成高质量和专业的幻灯片内容，并且提供相应的预览和下载链接。Gamma还可以让用户通过修改文本内容或选择不同的模板、颜色、字体等选项，调整和优化幻灯片的细节。Gamma可以让用户在不需要任何专业技能或软件的情况下，轻松地制作和编辑幻灯片，并且展示自己的想法和成果。
+
+https://gamma.ai
+
+## Gamma - AI design partner for designing ideas beautifully
+Gamma是一款基于人工智能的设计合作伙伴，可以帮助用户创建美观、引人入胜的内容，无需进行任何格式和设计工作。Gamma利用ChatGPT等强大的AI技术，可以根据用户的输入自动生成漂亮的演示文稿、网页和文档，并且可以根据用户的反馈进行实时调整和优化。Gamma可以让用户专注于表达自己的想法，而不用担心排版、配色、字体等细节问题。Gamma目前处于免费测试阶段，用户可以在其官网上注册并尝试使用。
+
+https://gamma.app
+
+## Genmo - Create and edit videos or images from text using GPT-4
+这是一款基于GPT-4的视频或图像生成和编辑工具，可以让用户通过输入文本，创建和编辑视频或图像。Genmo利用了GPT-4等先进的AI技术，可以根据用户输入的文本内容，生成逼真而美观的视频或图像，并且提供相应的预览和下载链接。Genmo还可以让用户通过修改文本内容，调整和优化视频或图像的细节，例如颜色、风格、动作等。Genmo可以让用户在不需要任何专业技能或软件的情况下，轻松地创建和编辑视频或图像，并且发挥自己的创造力和想象力。
+
+https://genmo.ai
+
+## Getfloorplan
+Getfloorplan是一个利用人工智能将2D平面图转换为全新装修的3D布局和360度虚拟导览的工具。Getfloorplan可以让您在短时间内将普通的房源变成您客户梦想中的房屋。Getfloorplan使用了先进的AI技术，能够每天渲染出高达1000张高质量的2D和3D平面图。您只需上传平面图或草图，就可以得到带有家具、灯具、地毯等元素的3D布局和360度虚拟导览。Getfloorplan还提供了独特的Sketch-to-Photo功能，可以将设计想法或草图转换为逼真的图像。Getfloorplan是专为房地产行业设计的工具，旨在提高房源销售效率和吸引力。Getfloorplan目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+https://getfloorplan.com
+
+## Getfloorplan - Convert 2D floor plans in to fully furnished 3D layout
+Getfloorplan是一款基于人工智能的平面图转换工具，可以帮助用户将二维平面图转换成完全装饰的三维布局。Getfloorplan利用了一种名为3D-GAN的AI技术，可以根据用户上传或绘制的二维平面图，生成一个逼真而美观的三维布局，并且提供相应的预览和下载链接。Getfloorplan还可以让用户调整和优化三维布局的细节，例如家具、颜色、灯光等。Getfloorplan可以让用户在不花费任何时间和金钱的情况下，尝试不同的装修方案，并且找到自己喜欢的布局。
+
+https://getfloorplan.com
+
+## ChatGPT Plugin Examples - Head of OpenAI dev. relation's examples
+ChatGPT Plugin Examples - Head of OpenAI dev. relation's examples是一个GitHub仓库，包含了使用ChatGPT插件开发的一些示例代码。ChatGPT插件是一种专为语言模型设计的工具，可以帮助ChatGPT访问最新的信息，运行计算，或使用第三方服务。这些示例代码来自OpenAI平台的文档，并被添加到这个仓库中，以便于阅读和使用。每个示例都包含了一个`Dockerfile`，可以帮助部署插件。您可以使用`Dockerfile`在本地或远程服务器上构建和运行插件。
+
+https://github.com/breadchris/chatgpt-plugin-examples
+
+## ChatGPT plugin finder
+ChatGPT plugin finder是一款用于检测Alexa排名前一百万的网站是否使用了OpenAI插件的工具，由一组AI和网络研究者开发，并发布在GitHub上。ChatGPT plugin finder可以让您输入任何网站的域名或链接，然后使用基于ChatGPT模型的AI网络爬虫，来检测该网站是否使用了OpenAI插件，例如ChatGPT, Google Bard, Jasper等。ChatGPT plugin finder还可以为您提供该网站使用了哪些OpenAI插件，以及这些插件的功能和效果。ChatGPT plugin finder是一个有用和必要的工具，可以让您了解OpenAI插件在网络上的分布和影响。
+
+https://github.com/chatgpt/plugin-finder
+
+## An unofficial collection of Plugins for ChatGPT in different programming languages.
+An unofficial collection of Plugins for ChatGPT in different programming languages.是一个开源项目，收集了不同编程语言中为ChatGPT开发的插件。ChatGPT是一款基于OpenAI ChatGPT的智能助手，能回答用户在生活中遇到的各种问题和疑惑，成为用户生活中智能小伙伴。插件是一种扩展ChatGPT功能的工具，可以让ChatGPT访问最新的信息，运行计算，或使用第三方服务。这个项目包含了多种编程语言，如Python、Java、Ruby等，以及多种插件类型，如搜索、天气、翻译等。这个项目可以帮助用户和开发者发现和使用有用和有趣的插件，增强ChatGPT的能力和体验。这个项目来自GitHub网站[2]
+
+https://github.com/chatgpt-plugins/chatgpt-plugins
+
+## PRESTO
+PRESTO是一款多语言的数据集，用于解析真实的任务导向的对话。PRESTO包含了来自不同领域和语言的对话，例如旅游、餐饮、购物等，以及对话中的语义角色标注，例如说话者、目标、参数等。PRESTO可以用于训练和评估各种任务导向的对话系统，例如聊天机器人、智能助理、客服系统等。PRESTO是一个高质量和多样性的数据集，对于想要研究和开发多语言的任务导向的对话系统的人来说，非常有用。
+
+https://github.com/facebookresearch/presto
+
+
+
+# AI 工具与项目列表
+
+## LLaMA voice chat that you can run locally on an M1 Pro
+
+LLaMA voice chat that you can run locally on an M1 Pro.是一款可以在M1 Pro芯片上本地运行的语音聊天应用程序，由一组AI和音频研究者开发，并发布在GitHub上。LLaMA voice chat可以让您与您的朋友、家人或同事进行高质量、低延迟、安全的语音聊天，无需依赖任何第三方服务或云端计算。LLaMA voice chat利用了M1 Pro芯片的强大的AI和音频处理能力，来实现一些先进和有趣的功能，例如语音变换、噪音消除、环境模拟等。LLaMA voice chat是一个创新和有趣的应用程序，可以让您享受更自由、更有趣、更私密的语音聊天体验。
+
+https://github.com/llama-ai/voice-chat
+
+## Search and chat with all of Paul Graham’s essays
+
+Search and chat with all of Paul Graham’s essays是一个基于OpenAI ChatGPT的应用，可以让用户通过搜索和聊天的方式，浏览和学习Paul Graham的所有文章。Paul Graham是一位著名的创业家、投资人和作家，他的文章涵盖了创业、编程、设计、写作等多个领域，深受广大读者的喜爱和推崇。Search and chat with all of Paul Graham’s essays可以让用户输入任何关键词或问题，然后从Paul Graham的文章中提取和总结相关的内容，以对话的形式展示给用户。用户还可以与应用进行有趣、有深度、有时候也有点讽刺的对话，成为用户学习中的智能小伙伴。Search and chat with all of Paul Graham’s essays目前还是一个原型，开发者正在不断改进其性能和准确性，为用户提供更好的体验。
+
+https://github.com/mckaywrigley/paul-graham-gpt
+
+## Micro Agent - Implementation of an autonomous agent powered by LLMs
+
+Micro Agent - Implementation of an autonomous agent powered by LLMs.是一个开源项目，旨在实现一个由大型语言模型（LLMs）驱动的自主智能体。该项目使用OpenAI的GPT-4技术，让智能体可以通过自然语言与环境和用户交互，并学习和执行各种任务。该项目提供了一个基于Web的用户界面，让用户可以观察和控制智能体的行为，并与之对话。该项目还提供了一个基于Python的API，让开发者可以自定义智能体的功能和外观。该项目可以帮助用户和开发者探索LLMs在人工智能领域的潜力和应用。该项目来自GitHub网站[1]
+
+https://github.com/micro-agent/micro-agent
+
+## YakGPT - A simple, locally running ChatGPT UI. Bring your own keys.
+
+YakGPT - A simple, locally running ChatGPT UI. Bring your own keys.是一款简单易用的ChatGPT用户界面，可以在本地运行，让您可以与ChatGPT进行对话。ChatGPT是一款基于OpenAI ChatGPT的智能助手，能回答您在生活中遇到的各种问题和疑惑，成为您生活中智能小伙伴。YakGPT使用OpenAI的API密钥来访问ChatGPT服务，所以您需要自己提供密钥，并保证其安全性。YakGPT可以帮助您享受与ChatGPT交流的乐趣，无论您是想要获取信息、娱乐自己、或是学习新知识。YakGPT目前处于开发阶段，您可以在[1]上下载它。
+
+https://github.com/yakcollective/yakgpt
+
+## Group text in papers
+
+Group text in papers是一款基于GPT-4的AI论文写作辅助工具，能够帮助用户在写论文时进行分组讨论和协作。用户可以通过输入论文的主题、关键词和要求，创建一个专属的讨论组，并邀请其他用户加入。Group text in papers会根据用户的输入，自动生成论文的大纲、参考文献和草稿，并实时更新。用户还可以在讨论组中与其他用户交流意见和建议，或者向AI机器人提问和寻求帮助。Group text in papers目前处于测试阶段，需要申请才能使用。
+
+https://grouptextinpapers.com/
+
+## Novo Studio- $1000 prompt contest challenge ends April 6th
+
+Novo Studio是一款基于OpenAI ChatGPT的在线平台，可以让用户轻松地创建和测试自己的聊天机器人。Novo Studio提供了一个简单而强大的界面，可以让用户通过编写提示（Prompt）来定义机器人的行为和逻辑，并且可以实时地与机器人进行对话和交互。Novo Studio还提供了一些预设的模板和示例，可以帮助用户快速地开始自己的项目。 Novo Studio目前正在举办一场Double exponent: use braces to clarify150。
+
+https://heynovo.ai
+
+## HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace
+
+这是一款基于ChatGPT和HuggingFace的多模态人工智能系统，可以利用ChatGPT与各种AI模型的结合，解决复杂的跨语言、视觉和语音的任务，为更先进和多样的AI开辟了一条新的道路。HuggingGPT利用了HuggingFace这个开源的人工智能平台，可以从中选择和调用各种适合不同任务的AI模型，并且与ChatGPT进行集成和协作。HuggingGPT还利用了ChatGPT的强大能力，可以根据用户输入的自然语言问题或指令，生成有意义和有用的回复或结果，并且与用户进行交互和反馈。HuggingGPT可以让用户更加方便和快捷地完成各种类型的AI任务，并且提高自己的AI素养和能力。
+
+https://hugginggpt.ai
+
+## ChatAvatar- Text to 3D avatar
+
+ChatAvatar- Text to 3D avatar是一款基于DreamFace技术的AI工具，可以根据用户输入的文本生成具有UV和PBR纹理的可动画的3D头像。用户可以输入一个明星的名字、或是某个想要的人物长相，ChatAvatar就会生成一个高精度的数字人资产，可以用于聊天应用和各种在线活动。ChatAvatar使用OpenAI的GPT-4技术，能够理解自然语言，并生成逼真和多样的3D头像。ChatAvatar目前处于测试阶段，您可以在[1]上免费试用它。
+
+https://hyperhuman.deemos.com/chatavatar/
+
+## LangChain-powered documentation search for the new LangChainAI JS docs site
+
+LangChain-powered documentation search for the new LangChainAI JS docs site是一个基于LangChain框架和OpenAI ChatGPT技术的文档搜索应用，可以让用户通过自然语言查询，在LangChainAI JS文档网站上找到所需的信息。LangChainAI JS是一个用于开发基于语言模型的应用程序的框架，提供了多种模块和接口，如模型、提示、索引、记忆、链和代理等。LangChain-powered documentation search for the new LangChainAI JS docs site可以让用户输入任何关于LangChainAI JS框架的问题，然后从文档网站上提取和总结相关的内容，以对话的形式展示给用户。用户还可以与应用进行互动，获取更多细节和示例。LangChain-powered documentation search for the new LangChainAI JS docs site目前还在开发中，您可以在LangChainAI JS文档网站上免费使用它。
+
+https://js.langchain.com/docs/
+
+## Landbot AI-No-code AI chatbot
+
+Landbot AI-No-code AI chatbot 是一款基于AI的无代码聊天机器人创建工具，能够让用户通过简单的拖拽操作，轻松地构建和部署自己的智能聊天机器人，并与用户或客户进行交互。Landbot AI可以帮助用户提高自己的网站或应用程序的转化率和满意度，无论用户是要收集反馈、提供支持、推荐产品还是其他任何目的。Landbot AI使用了OpenAI 的 ChatGPT 和 Codex 技术，能够生成自然语言的对话，并提供多种集成和自定义选项。Landbot AI目前提供免费试用，以及20美元和60美元两种付费套餐。您可以在其官方网站上下载它。
+
+https://landbot.ai
+
+## Looka
+
+Looka是一个在线设计平台，可以帮助您创建一个独特的徽标并打造一个令人喜爱的品牌形象。Looka使用人工智能技术来根据您的偏好和行业生成适合您的徽标设计，无需设计技能。您只需输入您的公司名称和行业，然后选择您喜欢的徽标风格、颜色和符号，Looka就会为您展示数百个定制的徽标选项。您还可以在Looka的易于使用的徽标编辑器中调整徽标的细节，直到满意为止。Looka不仅可以为您提供高质量的徽标文件，还可以为您提供完整的品牌套件，包括各种营销材料，如名片、社交媒体模板、网站设计等。Looka目前提供多种定价方案，从免费到高级不等，您可以根据您的需求选择合适的方案。
+
+https://looka.com/
+
+## Loopin- Summarize your meetings into structured meeting notes
+
+Loopin是一款基于人工智能的会议记录工具，可以帮助用户将自己的会议内容总结成结构化的会议笔记。Loopin利用ChatGPT等强大的AI技术，可以根据用户提供的会议录音、视频或文字，自动生成会议的主题、参与者、时间、行动项、决策和摘要，并且以清晰和简洁的方式呈现出来。Loopin还可以让用户编辑和分享自己的会议笔记，并且与其他常用的生产力工具如Google Calendar、Slack等进行集成。Loopin可以让用户提高会议的效率和质量，避免遗漏重要的信息和任务。
+
+https://loopin.ai
+
+## Lyrical Labs-Write song lyrics faster and better with AI
+
+Lyrical Labs-Write song lyrics faster and better with AI 是一款基于AI的歌词写作工具，能够帮助用户快速地创作出优秀的歌词，并提高自己的歌词水平。Lyrical Labs可以根据用户选择的歌曲类型、主题和情感，生成适合用户的歌词模板，并提供修改建议和反馈。Lyrical Labs还可以根据用户输入的歌词片段，生成接下来的歌词内容，并提供押韵和节奏的提示。Lyrical Labs使用了OpenAI 的 GPT-4 技术，能够生成高质量、原创和有创意的歌词。Lyrical Labs目前是免费的，您可以在其官方网站上体验它。
+
+https://lyricallabs.com
+
+## Machine Translation- Analyzes and compares MT outputs using GPT
+
+Machine Translation是一款基于人工智能的机器翻译分析和比较工具，可以帮助用户评估不同的机器翻译系统的质量和效果。Machine Translation利用了ChatGPT等先进的AI技术，可以根据用户提供的源语言文本和目标语言文本，分析和比较不同机器翻译系统的输出，并且生成一个包含准确性、流畅性、一致性等指标的评估报告。Machine Translation还可以让用户通过自然语言与其进行对话，询问机器翻译相关的问题，并且得到智能和专业的回答。Machine Translation可以让用户更加客观和全面地了解机器翻译的优势和局限。
+
+https://machine-translation.ai
+
+## Managr- AI sales assistant powered by ChatGPT
+
+Managr是一款基于ChatGPT的人工智能销售助手，可以帮助用户管理和提升自己的销售业绩。Managr可以利用ChatGPT来与用户进行自然语言对话，了解用户的销售目标、计划和难点，并且提供相应的建议和策略。Managr还可以利用ChatGPT来自动生成销售邮件、电话脚本和演示文稿，并且根据用户的反馈进行优化和个性化。Managr可以让用户节省时间、提高效率和增加收入。 Managr目前处于付费测试阶段，用户可以在其官网上注册并尝试使用。Managr的价格为每月$49，包括无限制的对话次数、邮件模板和电话脚本等功能。
+
+https://managr.ai
+
+## MarsX- Free, low-code platform for building web and mobile applications
+
+MarsX是一款免费的低代码平台，可以让用户轻松地构建自己的网页和移动应用。MarsX利用了一种名为MarsML的人工智能技术，可以根据用户输入的文字描述或草图，自动生成相应的应用代码，并且将其部署到云端。MarsX可以让用户无需编写任何代码或安装任何软件，就可以快速地实现自己的想法，并且可以随时修改和更新自己的应用。MarsX目前支持生成一些常见的应用类型，例如博客、商店、社交网络等。
+
+https://marsx.app
+
+## MealGenie- Generates custom recipes tailored to your dietary needs
+
+MealGenie- Generates custom recipes tailored to your dietary needs 是一款基于AI的食谱生成工具，能够根据用户的饮食需求和偏好，生成适合用户的定制食谱。MealGenie可以帮助用户解决每天吃什么的难题，也可以让用户尝试不同的菜式和风味。MealGenie使用了OpenAI 的 GPT-4 技术，能够理解用户的输入，并生成详细的食谱步骤和图片。MealGenie还可以根据用户提供的食材或口味，生成不同的食谱建议，并提供营养和卡路里的信息。MealGenie目前提供免费试用，以及4.99美元和9.99美元两种付费套餐。您可以在其官方网站上下载它。
+
+https://mealgenie.ai
+
+## Mememorph- Turn yourself into all your favourite memes
+
+Mememorph- Turn yourself into all your favourite memes 是一款基于AI的表情包制作工具，能够让用户将自己的照片转换成各种流行的表情包，并提供多种编辑和分享选项。Mememorph可以帮助用户快速地制作出有趣、有个性或有争议的表情包，无论用户是要用于聊天、社交媒体还是其他任何场合。Mememorph使用了OpenAI 的 DALL-E 和 CLIP 技术，能够识别用户的照片中的人脸，并生成适合用户的表情包素材。Mememorph还可以根据用户提供的文字或图片，生成不同的表情包风格和效果。Mememorph目前是免费的，您可以在其官方网站上使用它。
+
+https://mememorph.com
+
+## Morise- Automatically generate titles, tags and descriptions for YouTube
+
+Morise是一款基于人工智能的YouTube优化工具，可以帮助用户自动生成吸引人的标题、标签和描述，从而提高视频的曝光度和点击率。Morise利用ChatGPT等先进的AI技术，可以根据用户提供的视频链接或关键词，分析视频的内容、风格和受众，并且生成最适合的元数据。Morise还可以提供一些其他的功能，例如检测视频中的敏感内容、分析竞争对手的策略、提供SEO建议等。 Morise目前处于免费测试阶段，用户可以在其官网上注册并尝试使用。
+
+https://morise.ai
+
+## Namifai- ChatGPT powered domain name generator
+
+Namifai- ChatGPT powered domain name generator 是一款基于ChatGPT的域名生成工具，能够根据用户输入的关键词或描述，生成适合用户的域名，并提供可用性和流行度的信息。Namifai可以帮助用户找到一个简洁、有意义、易记的域名，无论用户是要创建一个网站、一个品牌还是一个项目。Namifai使用了OpenAI 的 ChatGPT 技术，能够理解用户的需求，并生成有趣、有创意或有争议的域名。Namifai目前是免费的，您可以在其官方网站上使用它。
+
+https://namifai.com
+
+
+
+## `Nero`
+`Nero`- Enlarge image size and resolution while maintaining high quality 是一款基于AI的图像放大工具，能够让用户将自己的图片放大到任意大小和分辨率，同时保持高质量和细节，并提供多种格式和分享选项。`Nero`可以帮助用户解决图片过小或过模糊的问题，无论用户是要用于打印、展示还是其他任何目的。`Nero`使用了`OpenAI` 的 `DALL-E` 和 `CLIP` 技术，能够分析图片的内容和结构，并生成高质量、原创和有创意的图像放大结果。`Nero`还可以根据用户提供的参数，调整图片的大小、分辨率、颜色和对比度等。`Nero`目前提供免费试用，以及4.99美元和9.99美元两种付费套餐。您可以在其官方网站上下载它。
+
+官网：`https://nero.ai/`
+
+## `Painta`
+`Painta`- The functionality of Canva using `Midjourney` 是一款基于`Midjourney`平台的图形设计工具，能够让用户使用`Midjourney`上存储的数据和信息，创建出各种美观和专业的图形设计作品，并提供多种导出和分享选项。`Painta`可以帮助用户快速地制作出适合商业、教育或个人等场景的图形设计作品，无需任何设计或编程经验。`Painta`使用了`OpenAI` 的 `DALL-E` 和 `Codex` 技术，能够根据用户输入的文本描述或数据表格，生成高质量、原创和有创意的图形设计素材。`Painta`还可以根据用户提供的图片或视频，生成不同的图形设计风格和效果。`Painta`目前处于测试阶段，您可以在其官方网站上免费试用它。
+
+官网：`https://painta.ai`
+
+## `Paradiso`
+`Paradiso`是一款AI文本、语音和视频生成器，它可以让你用一个人类般的发言人来表达你的想法。`Paradiso`可以将任何文本转换为自然而流畅的语音，并且可以根据文本的情感和语调来调整声音的特征。`Paradiso`还可以将语音转换为视频，并且使用一个真实的人脸来模拟发言人的表情和嘴型。`Paradiso`适合用于创建教育、娱乐、营销或社交媒体内容，它可以让你用一个有吸引力和信任感的发言人来传达你的信息。
+
+官网：`https://paradiso.ai/`
+
+## `PhotoAI`
+`PhotoAI`- Train AI to learn your face then generate stunning photos 是一款基于AI的照片生成和编辑工具，可以让用户通过训练AI学习自己的面部特征，然后生成令人惊艳的照片。`PhotoAI`利用了`GPT-4`等先进的AI技术，可以根据用户上传或拍摄的自拍照片，学习并记忆用户的面部特征，并且生成符合用户要求和喜好的照片，并且提供相应的预览和下载链接。`PhotoAI`还可以让用户通过修改文本内容，调整和优化照片的细节，例如背景、风格、表情等。`PhotoAI`可以让用户在不需要任何专业技能或软件的情况下，轻松地生成和编辑照片，并且展示自己的个性和魅力。
+
+官网：`https://photoai.ai`
+
+## `Pictory`
+`Pictory`是一个在线视频制作平台，让您可以轻松地从长篇内容中制作出短小、有品牌特色的视频，利用AI的力量快速、可扩展、经济地进行视频营销。`Pictory`提供了完整的视频营销工具包，让您可以从长视频中自动提取精彩片段，从文本中生成令人惊叹的销售视频，从博客文章中转换出引人入胜的视频，并自动添加字幕等。`Pictory`还提供了丰富的可视化工具，让您可以直观地查看您的视频数据的统计信息、分布情况、趋势变化等。`Pictory`目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。
+
+官网：`https://pictory.ai/`
+
+## `Micasa`
+`Micasa`是一款基于AI的室内设计工具，能够在几秒钟内根据您上传的照片重新装修您家里或办公室里的任何房间。您可以通过在手机上轻轻点击几下，改变您房间的风格和布局。该应用使用了先进的AI算法来分析您当前的房间，并将其重新设计成一个新的风格。您可以从一系列不同的风格中选择，包括现代、简约、复古等，该应用会立即将您的房间改造成您选择的风格。`Micasa`支持所有类型的房间，包括客厅、卧室、办公室、餐厅等。最棒的是，`Micasa`完全免费使用！
+
+官网：`https://play.google.com/store/apps/details?id=com.twansoftware.ai.room.designer`
+
+## `Prime Profile`
+`Prime Profile`是一款基于人工智能的头像生成器，可以帮助用户创建自己的专属头像。`Prime Profile`利用`ChatGPT`等强大的AI技术，可以根据用户输入的姓名、性别、年龄、风格等信息，生成一个逼真而独特的人脸图像，并且提供相应的下载链接。`Prime Profile`还可以让用户调整和优化头像的细节，例如发型、眼睛、嘴唇等。`Prime Profile`可以让用户拥有一个符合自己个性和喜好的头像，用于社交网络、游戏或其他场合。
+
+官网：`https://primeprofile.ai`
+
+## `Quickly`
+`Quickly`是一款基于人工智能的浏览器扩展，可以让用户在任何网站上即时地使用AI功能，只需选择文本即可。`Quickly`利用`ChatGPT`等先进的AI技术，可以根据用户选择的文本，提供一系列有用的功能，例如翻译、摘要、重写、扩展、纠错、情感分析等。`Quickly`还可以根据用户选择的文本类型，提供更多定制化的功能，例如对新闻文章进行评论、对商品进行评价、对电影进行推荐等。`Quickly`可以让用户在浏览网页时，更加高效、便捷和有趣。`Quickly`目前处于免费测试阶段，用户可以在`Chrome`网上应用店免费下载它。
+
+官网：`https://quickly.ai`
+
+## `Quizify`
+`Quizify`- Create amazing quizzes 20X faster with AI 是一款基于AI的测验创建工具，能够根据用户输入的主题或问题，生成适合用户的测验内容，并提供多种格式和分享选项。`Quizify`可以帮助用户快速地创建出有趣、有教育意义或有挑战性的测验，无论用户是要用于学习、教学还是娱乐等场合。`Quizify`使用了`OpenAI` 的 `GPT-4` 和 `Codex` 技术，能够分析用户的输入主题或问题，并生成高质量、原创和有创意的测验内容。`Quizify`还可以根据用户提供的答案或反馈，优化和改进测验内容，并提供正确答案和解释。`Quizify`目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。
+
+官网：`https://quizify.ai`
+
+## `Q Chat`
+`Q Chat`是一个友好的AI学习助手，可以帮助用户快速地开始学习任何主题。`Q Chat`使用了苏格拉底式的提问法，来促进用户的批判性思维，让用户在一种沉浸式的学习体验中运用自己的知识。用户可以选择一个学习提示，然后由`Q Chat`对用户进行测验、深化理解或挑战自己应用知识的能力。`Q Chat`还可以与用户进行有趣的对话，`Quizlet`的AI助手已经在全球范围内与数百万用户进行了交流。`Q Chat`目前处于测试阶段，您可以在`Quizlet`上免费使用它。
+
+官网：`https://quizlet.com/labs/qchat`
+
+## `Quotify`
+`Quotify`- Extract meaningful quotes from books, articles, or text 是一款基于AI的引文提取工具，能够根据用户提供的书籍、文章或文本，提取出其中最有意义或最有价值的引文，并提供格式化和分享选项。`Quotify`可以帮助用户从大量的阅读材料中找到最精彩或最启发性的部分，并用于自己的写作、演讲或社交媒体等场合。`Quotify`使用了`OpenAI` 的 `GPT-4` 技术，能够分析文本的主题、结构和逻辑，并提炼出最重要或最有影响力的引文。`Quotify`还可以根据用户提供的关键词或主题，生成不同的引文建议，并提供引文来源和作者信息。`Quotify`目前是免费的，您可以在其官方网站上使用它。
+
+官网：`https://quotify.ai`
+
+## `Raizer`
+`Raizer`- Find & reach out to perfect investors with AI 是一款基于AI的投资者寻找和联系工具，能够帮助创业者找到并联系最适合自己项目的投资者，并提高融资成功率。`Raizer`使用了`OpenAI` 的 `GPT-4` 和 `DALL-E` 技术，能够分析创业者的项目信息，并生成适合投资者的介绍文案和图像。`Raizer`还可以根据创业者提供的条件，从数千名投资者中筛选出最匹配的候选人，并提供联系方式和沟通策略。`Raizer`目前处于测试阶段，您可以在其官方网站上免费注册使用它。
+
+官网：`https://raizer.ai`
+
+## `Rask AI`
+`Rask AI`- AI dubbing that is as good as a human 是一款基于AI的配音工具，能够让用户将自己的声音转换成任何语言或口音，并提供高质量和逼真的配音效果。`Rask AI`可以帮助用户快速地制作出适合视频、广告或游戏等场景的配音，无需任何配音或语言经验。`Rask AI`使用了`OpenAI` 的 `GPT-4` 和 `WaveNet` 技术，能够分析用户的声音特征，并生成符合用户的语言和风格的配音内容。`Rask AI`还可以根据用户提供的文本或视频，生成不同的配音方案，并提供预览和编辑功能。`Rask AI`目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。
+
+官网：`https://rask.ai`
+
+## `Recommend Domains`
+`Recommend Domains`是一款基于人工智能的域名推荐工具，可以帮助用户为自己的下一个项目找到最合适的域名。`Recommend Domains`利用`ChatGPT`等先进的AI技术，可以根据用户输入的项目名称、描述或关键词，生成一系列可用的域名，并且提供相应的价格和注册链接。`Recommend Domains`还可以根据用户的反馈，调整和优化域名的质量和相关性。`Recommend Domains`可以让用户节省时间、精力和金钱，快速地找到自己心仪的域名。
+
+官网：`https://recommend.domains`
+
+## `Reflect`
+`Reflect`- Use GPT-4 in your notes, and to write your own custom prompts 是一款基于`GPT-4`的智能笔记工具，能够让用户在自己的笔记中使用`GPT-4`的强大功能，并编写自己的定制提示。`Reflect`可以帮助用户提高自己的写作水平和创造力，无论用户是要写故事、文章、代码还是其他任何类型的文本。`Reflect`使用了`OpenAI` 的 `GPT-4` 技术，能够根据用户输入的提示，生成高质量、原创和有创意的文本。`Reflect`还可以根据用户提供的反馈，优化和改进文本的内容和格式。`Reflect`目前提供免费试用，以及5美元和10美元两种付费套餐。您可以在其官方网站上下载它。
+
+官网：`https://reflect.ai`
+
+## `Replicate Codex`
+`Replicate Codex`- Exploring and discovering AI models on `Replicate` 是一款基于`Replicate`平台的AI模型探索和发现工具，能够让用户在`Replicate`上浏览、搜索和运行各种AI模型，并与其他用户分享自己的发现和创造。`Replicate`是一个开源的AI模型管理平台，能够让用户轻松地存储、版本控制和部署自己的AI模型。`Replicate Codex`是一个基于`OpenAI` 的 `Codex` 技术的AI模型搜索引擎，能够根据用户输入的自然语言查询，找到最匹配的AI模型，并提供在线运行和交互的功能。`Replicate Codex`- Exploring and discovering AI models on `Replicate` 目前是免费的，您可以在其官方网站上体验它。
+
+官网：`https://replicate.ai/codex`
+
+## `GPT-4 Chat UI on Replit`
+`GPT-4 Chat UI on Replit`是一款利用`GPT-4`技术创建聊天界面的工具，能够让用户在`Replit`平台上快速搭建自己的聊天机器人。用户只需选择一个主题或领域，如旅游、教育、娱乐等，`GPT-4`就会根据该主题生成一个适合的聊天界面，并提供相应的对话逻辑和内容。用户还可以对生成的聊天界面进行修改和优化，或者与其他用户分享和交流。`GPT-4 Chat UI on Replit`目前免费提供给公众使用。
+
+官网：`https://replit.com/@gpt4chatui`
+
+## `GPT-4 can build a bespoke iOS app in minutes`
+`GPT-4`可以在几分钟内构建一个定制的iOS应用程序。您只需要输入一个简单的描述，`GPT-4`就可以为您生成`SwiftUI`代码，并在模拟器中运行。`GPT-4`还可以根据您的反馈进行修改和优化，让您轻松创建出理想的应用程序。`GPT-4`使用`OpenAI`的`GPT-4`技术，能够生成高质量、原创和有创意的代码。`GPT-4`可以构建各种类型的应用程序，如电影推荐、音乐播放器、游戏引擎等。`GPT-4`目前处于测试阶段，您可以在`Replit`上免费试用它。
+
+官网：`https://replit.com/@localghost/GPT-4-iOS-app-builder`
+
+## `ResearchGPT`
+`ResearchGPT`-Open-source research assistant chatbot 是一款基于AI的开源研究助理聊天机器人，能够帮助用户进行各种研究相关的任务，例如：查找文献、生成摘要、写论文等。`ResearchGPT`使用了`OpenAI` 的 `GPT-4` 和 `Codex` 技术，能够理解用户的研究需求，并生成高质量、原创和有创意的研究内容。`ResearchGPT`还可以根据用户提供的反馈，优化和改进研究内容，并提供引用和格式化的功能。`ResearchGPT`目前是开源的，您可以在其官方网站上免费下载它。
+
+官网：`https://researchgpt.com`
+
+## `Revolvdiv`
+`Revolvdiv`是一个集成了人工智能的播客平台，让您可以轻松地创建和编辑高质量的播客节目。`Revolvdiv`提供了一个强大而简单的播客编辑工具，让您可以对您的音频进行剪辑、混音、增强、添加音乐和特效等操作。`Revolvdiv`还使用人工智能技术来帮助您优化您的播客内容，为您提供智能建议、自动摘要、关键词提取、情感分析等功能。`Revolvdiv`还可以让您轻松地发布和推广您的播客节目，并与其他播客创作者和听众互动。`Revolvdiv`目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。
+
+官网：`https://revolvdiv.com/`
+
+## `Roast my startup`
+`Roast my startup` 是一款基于`OpenAI` 的 `ChatGPT`的创业项目吐槽工具，能够根据您输入的项目名称和网址，生成一段机智、幽默、尖锐的吐槽，让您看到自己的项目有哪些不足或可笑之处。`Roast my startup` 可以帮助您从另一个角度审视自己的项目，也可以让您在压力和挑战中找到一些乐趣。`Roast my startup` 目前是免费的，您可以在其官方网站上尝试它。
+
+官网：`https://roastmystartup.com`
+
+## `Role Model AI`
+`Role Model AI`是一款基于人工智能的个人成长助手，可以让用户创建或定制自己的AI助手，以实现自己的目标和梦想。`Role Model AI`利用了`ChatGPT`等强大的AI技术，可以根据用户输入的信息，生成一个与用户相似或者有所不同的AI助手，并且与用户进行自然语言对话。`Role Model AI`可以让用户通过与AI助手的交流，获得启发、鼓励和反馈，并且提升自己的信心、能力和幸福感。`Role Model AI`目前支持多种场景，例如职业规划、健康管理、学习提升等。
+
+官网：`https://rolemodel.ai`
+
+
+
+# AI 工具与服务导航
+
+### Ronith
+Ronith是一款基于人工智能的应用生成器，可以让用户通过自然语言来创建自己的迷你macOS应用。Ronith利用ChatGPT等强大的AI技术，可以根据用户输入的文字描述，生成相应的应用代码，并且将其打包成一个可执行文件。Ronith可以让用户快速地实现自己的想法，而无需编写任何代码或安装任何软件。Ronith目前支持生成一些常见的应用类型，例如计算器、记事本、闹钟、音乐播放器等。Ronith目前处于免费测试阶段，用户可以在其官网上注册并尝试使用。
+
+`https://ronith.app`
+
+### RoomGPT
+RoomGPT - Redesign your room in seconds with AI 是一款基于AI的室内设计工具，能够根据用户输入的文本描述，生成适合用户风格和需求的房间布置图。RoomGPT使用了OpenAI 的 GPT-4 技术，能够理解用户的意图和偏好，并生成高质量、原创和有创意的房间设计方案。RoomGPT还可以根据用户提供的房间照片或平面图，自动识别房间的结构和尺寸，并提供合适的家具和装饰品。RoomGPT目前处于测试阶段，您可以在其官方网站上免费使用它。
+
+`https://roomgpt.com`
+
+### Simulation Chat
+Simulation Chat 是一款基于AI的对话模拟工具，能够让您观看两个AI之间的实时对话，并参与其中。Simulation Chat 使用了两个不同的AI模型，分别是OpenAI 的 ChatGPT 和 Google 的 Bard，它们都是基于大规模语言模型的智能聊天机器人，能够理解并生成自然语言。Simulation Chat 让这两个AI模型相互交流，并实时更新对话内容，让您看到它们之间有趣、有意义或有争议的话题。您也可以随时加入对话，并与这两个AI进行互动。Simulation Chat 目前是免费的，您可以在其官方网站上体验它。
+
+`https://simulation.chat`
+
+### SLAPA
+SLAPA - Self-learning agent for performing APIs 是一款基于AI的API执行工具，能够根据用户的需求和反馈，自动地调用和组合不同的API，实现各种功能和任务。SLAPA可以帮助用户快速地构建和测试复杂的API流程，无需编写任何代码。SLAPA还可以根据用户的偏好和目标，优化和改进API的性能和效果。SLAPA目前提供免费试用，以及49美元和99美元两种付费套餐。您可以在其官方网站上下载它。
+
+`https://slapa.ai`
+
+### SlidesGPT
+SlidesGPT- ChatGPT for presentations- Powerpoint/Google Slides 是一款基于ChatGPT的演示文稿制作工具，能够让用户通过与ChatGPT进行对话，轻松地创建出各种美观和专业的演示文稿，并提供多种格式和分享选项。SlidesGPT可以帮助用户提高自己的演示水平和效率，无论用户是要进行商业、教育或个人等场景的演示。SlidesGPT使用了OpenAI 的 ChatGPT 技术，能够根据用户输入的主题、目标和内容，生成适合用户的演示文稿，并提供修改建议和反馈。SlidesGPT还可以根据用户提供的图片或视频，生成不同的演示文稿风格和效果。SlidesGPT目前是免费的，您可以在其官方网站上使用它。
+
+`https://slidesgpt.com/`
+
+### Socket Security
+Socket Security是一家提供JavaScript和Python项目安全扫描服务的公司，它可以检测`npm`或PyPI仓库中是否存在恶意代码。近期，Socket Security宣布使用ChatGPT来增强其恶意代码检测能力，并且扫描了整个`npm`仓库。据Socket Security CEO Feross Aboukhadijeh透露，使用ChatGPT后，他们发现了数百个恶意或有风险的`npm`包，并且正在尽快地报告和移除它们。Socket Security利用ChatGPT对每个`npm`包进行源代码分析，并且根据分析结果生成一个简要的风险报告。
+
+`https://socket.dev`
+
+### SpellLabs
+SpellLabs是一个在线平台，让您可以通过简单的提示来创建您自己的定制化人工智能模型，无需编码或数据科学知识。SpellLabs使用最先进的自然语言理解技术，让您可以用自然语言来描述您想要实现的功能，如文本生成、图像分类、语音识别等。SpellLabs会根据您的提示为您生成一个适合您需求的人工智能模型，并为您提供相关的数据集、参数和代码。您还可以在SpellLabs上测试和部署您的人工智能模型，并与其他用户分享和协作。SpellLabs目前是免费的，在线人工智能模型制作平台，您可以在官网免费注册并开始使用。
+
+`https://spelllabs.ai/`
+
+### SpellPrint
+这是一款基于AI的应用市场，可以让用户访问和使用超过1000个AI模型。SpellPrint利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的应用类型和目标，推荐和提供适合的AI模型，并且与用户进行交互和反馈。SpellPrint还利用了一种名为SpellPrint的技术，可以让用户通过扫描或拍摄自己的手指印，验证和激活AI模型，并且保护自己的隐私和安全。SpellPrint可以让用户更加方便和快捷地访问和使用各种类型的AI模型，并且提高自己的AI素养和能力。
+
+`https://spellprint.ai`
+
+### AI PetNamer
+AI PetNamer- Generates unique and creative names for any type of pet是一款创新的工具，旨在为动物爱好者生成定制的宠物名字。这款免费的演示应用程序由人工智能驱动，可以为任何类型的宠物生成独特和有创意的名字。用户可以指定宠物类型、性别、颜色、来源和个性特征来生成个性化的名字。此外，应用程序还提供了选择历史主题来生成名字的选项。借助这款工具，宠物主人可以找到适合他们毛茸茸的朋友的完美名字，而无需费心思考。AI PetNamer是一款极好的娱乐来源，提供了无限可能的宠物名字。无论您有狗、猫、鸟或其他宠物，这款应用程序都是为您寻找理想名字的完美解决方案。
+
+`https://synoptica.com/ai-tools/ai-pet-name-generator/`
+
+### MarcBot
+MarcBot是一个生活在Telegram里的讽刺AI助手，由OpenAI ChatGPT驱动。MarcBot可以与用户进行有趣、幽默、有时候也有点刻薄的对话，成为用户生活中的智能小伙伴。MarcBot可以回答用户在生活中遇到的各种问题和疑惑，也可以帮助用户写故事、消息或编程代码等内容。MarcBot还利用Whisper和Amazon Polly技术，支持语音输入和输出，让用户可以直接与机器人交谈，而不需要输入文字。这样可以让用户更自然地表达自己的想法，并享受一种超现实的体验。MarcBot目前还在开发中，您可以在Telegram上免费使用它。
+
+`https://t.me/marcbot`
+
+### Taplio
+Taplio- LinkedIn growth tool with automatic scheduling and AI writer是一款强大的LinkedIn增长工具，可以帮助您利用AI创造内容，安排发布时间，与相关账户互动，并测量您的结果。Taplio可以帮助您在10分钟内创建更好的LinkedIn内容，使用先进的AI和自动化功能，为您提供内容灵感，生成文章和标题，搜索热门话题和趋势，并在最佳时间发布内容。Taplio还可以帮助您建立新的关系，通过CRM功能跟踪和管理您的潜在客户和合作伙伴。Taplio目前提供免费试用，之后根据您选择的套餐收费。
+
+`https://taplio.com/`
+
+### Text to GIF
+Text to GIF是一款基于GPT-4的AI文本转GIF工具，能够根据用户输入的任何文本，生成一个相关的表情包GIF。该工具可以帮助用户在社交媒体、聊天软件或其他平台上表达自己的情绪、态度或想法，以一种有趣和有创意的方式。Text to GIF目前免费提供给公众使用。
+
+`https://texttogif.com/`
+
+### This Job Does Not Exist
+This Job Does Not Exist是一款基于GPT-4的AI虚构职业生成器，能够为用户展示由AI想象出来的未来工作。该工具可以让用户探索AI对人类社会和经济的影响，以及可能出现的新兴行业和职业。该工具还可以让用户了解AI对人类工作所需的技能和素质的要求，以及如何适应变化和挑战。This Job Does Not Exist目前免费提供给公众使用。
+
+`https://thisjobdoesnotexist.com/`
+
+### Threads launch their customizable AI called Tailor for team communication
+Threads launch their customizable AI called Tailor for team communication 是一款团队沟通工具，能够将定制化的AI功能融入到Threads中。Tailor可以根据任何选择的聊天消息运行一个提示，快速生成文档。无论您是想总结一些关键的行动项目，还是记录一个事后分析，Tailor都可以帮助您。Tailor还可以主动地为您提供摘要和行动项目，让您决定是否要深入了解更多细节，或者节省您的时间。Tailor还允许您自定义和保存自己的提示，让您有更多的自由来探索如何折叠时间和优化您的工作流程。Threads launch their customizable AI called Tailor for team communication 目前提供免费试用，您可以在其官方网站下载它。
+
+`https://threads.com/ai`
+
+### Tome
+Tome是一款基于GPT-4的知识提取工具，能够阅读整篇维基百科文章，理解其内容，并生成关键点。Tome可以帮助用户快速获取所需信息，无需阅读冗长的正文。Tome还可以根据用户的问题，从维基百科中检索相关答案，并给出可信度评分。Tome目前免费提供给公众使用。
+
+`https://tome.ai/`
+
+### TweetHunter
+这是一款基于AI的推特增长工具，可以让用户通过自动化的计划和写作，提升自己的推特影响力和收益。TweetHunter利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的推特类型和目标，生成高质量和有吸引力的推文内容，并且提供相应的预览和发布链接。TweetHunter还利用了一种名为TweetHunter-Net的神经网络结构，可以让用户通过简单的拖拽和点击操作，为不同的推特任务添加或删除AI模型，并且实现自定义和优化。TweetHunter可以让用户更加方便和快捷地发布和管理自己的推特内容，并且提高自己的推特素养和能力。
+
+`https://tweethunter.ai`
+
+### Twitter Algo Validator
+这是一款基于AI的推特算法验证工具，可以让用户看到自己或他人的推文在推特算法中的表现和排名。Twitter Algo Validator利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的推文链接，分析并评估推文的内容、质量、影响力等指标，并且生成一个包含评分和建议等信息的报告，并且提供相应的预览和下载链接。Twitter Algo Validator还可以让用户通过修改推文内容或选择不同的选项，调整和优化推文的细节。Twitter Algo Validator可以让用户更加了解和掌握推特算法的逻辑和规则，并且提高自己的推特素养和能力。
+
+`https://twitteralgov.com`
+
+### Scispace
+Scispace是一个基于人工智能的研究助手，可以帮助您在几分钟内完成数小时的阅读。Scispace可以让您更好地理解科研论文，它可以用简单的语言解释和阐述大多数学术文本。Scispace还可以让您高效地进行文献综述，为您提供快速摘要、未来工作和相关论文等信息。Scispace支持多种语言和领域，涵盖了机器学习、自然语言、物理学、生物学等各种主题。Scispace目前是免费的，在线研究助手，您可以在官网免费注册并开始使用。
+
+`https://typeset.io/`
+
+### Unschooler
+Unschooler是一个基于人工智能的视频课程平台，可以根据您的个人职业目标为您提供定制化的学习路径。Unschooler使用AI技术来分析您的技能、兴趣和目标，并为您推荐最适合您的视频课程。Unschooler拥有海量的高质量视频课程资源，涵盖了编程、设计、商业、艺术等各种领域。Unschooler还可以根据您的学习进度和反馈为您调整课程难度和顺序，确保您以最有效的方式学习。Unschooler目前提供14天免费试用，让您可以体验Unschooler的全部功能，并找到适合您的学习路径。
+
+`https://unschooler.com/`
+
+### Voila
+Voila是一款基于人工智能的在线生产力助手，可以帮助用户提升自己在网上工作或学习时的效率和质量。Voila利用了ChatGPT等强大的AI技术，可以根据用户输入的任务或目标，生成一个包含步骤、资源和提示等信息的执行计划，并且以一个清晰和简洁的方式呈现出来。Voila还可以让用户通过自然语言与其进行对话，询问生产力相关的问题，并且得到智能和友好的回复。Voila可以让用户更加有序和专注地完成自己在网上需要做的事情，避免拖延和分心。
+
+`https://voila.ai`
+
+### Warmest AI
+Warmest AI 是一款基于AI的邮件写作工具，能够为您草拟出符合您风格和语气的邮件，并提供修改建议和反馈。Warmest AI 可以帮助您写出更有效、更专业、更友好的邮件，无论您是要发送营销邮件、招聘邮件、客服邮件还是其他任何类型的邮件。Warmest AI 使用了OpenAI 的 GPT-4 技术，能够分析您的邮件数据，并匹配您的写作风格。Warmest AI 还可以根据您的目标和场景，生成不同的邮件模板，并提供修改建议和反馈，让您的邮件更加精准和有说服力。Warmest AI 目前提供免费试用，以及9.99美元和29.99美元两种付费套餐。您可以在其官方网站上下载它。
+
+`https://warmest.ai`
+
+### WavTool
+WavTool- An AI assistant to create high-quality music and audio 是一款基于AI的音乐和音频制作工具，能够根据用户输入的文本、图片或视频，生成适合用户的音乐和音频，并提供多种编辑和分享选项。WavTool可以帮助用户快速地制作出适合电影、游戏、广告或个人等场景的音乐和音频，无需任何音乐或音频制作经验。WavTool使用了OpenAI 的 GPT-4 和 WaveNet 技术，能够理解用户的输入内容，并生成高质量、原创和有创意的音乐和音频。WavTool还可以根据用户提供的参数，调整音乐和音频的风格、节奏、音量和效果等。WavTool目前提供免费试用，以及9.99美元和19.99美元两种付费套餐。您可以在其官方网站上下载它。
+
+`https://wavtool.ai`
+
+### Great Headlines
+Great Headlines是一款AI写作工具，可以帮助你快速地写出吸引人的标题。无论你是要写博客文章、广告、网页还是社交媒体帖子，Great Headlines都可以为你提供一些创意的标题建议。你只需要输入一两个关于你的主题的词，选择一种内容类型，Great Headlines就会为你生成多个标题供你选择。
+
+`https://websitesetup.org/headline-examples/`
+
+
+
+# AI 工具列表
+
+## Wonder Studio
+Wonder Studio是一款基于AI的视觉特效工具，能够自动地将CG角色动画、灯光和合成到真实场景中。Wonder Studio无需昂贵的动作捕捉设备、复杂的3D软件和高端的生产硬件，只需要一台相机。您可以选择或上传您的CG角色模型，并将其应用到一个镜头或一个序列中。系统会自动检测镜头切换并跟踪演员在视频中的表现。系统还会根据单摄像机拍摄的画面自动检测演员的表演，并将其转移到您选择的CG角色上，自动完成动画、灯光和合成。Wonder Studio支持所有类型的房间，包括客厅、卧室、办公室、餐厅等。最重要的是，Wonder Studio完全免费使用！
+`https://wonderdynamics.com`
+
+## Google AI Productivity Apps
+Google AI Productivity Apps是一款由Google推出的基于GPT-4的AI生产力应用套件，包括Gmail、Docs、Sheets、Slides等。它可以帮助用户在各种场景下提高工作效率和创造力，如写邮件、编辑文档、制作表格、设计幻灯片等。Google AI Productivity Apps可以根据用户的输入和偏好，自动生成文本、图表、图片和动画，并提供修改和优化建议。Google AI Productivity Apps目前已经在部分Google用户中使用，并计划在未来向更多用户开放。
+`https://workspace.google.com/ai-productivity-apps`
+
+## GPT for sheets and docs
+GPT for sheets and docs是一款为Google Sheets™和Google Docs™提供ChatGPT和其他生成式AI模型功能的插件，由Talarian开发。GPT for sheets and docs可以让用户直接在Google Sheets™和Google Docs™中使用ChatGPT和其他AI模型，如OpenAI GPT-3.5和GPT-4以及Anthropic Claude，来处理各种文本和数据的任务，如写作、编辑、提取、清理、翻译、总结、概述、解释等。GPT for sheets and docs通过提供许多简单的自定义函数，让用户可以轻松地调用AI模型，并实时查看结果。GPT for sheets and docs还可以让用户根据成本、延迟和能力，选择自己想要的AI模型。GPT for sheets and docs目前处于测试阶段，您可以在Google Workspace Marketplace免费下载它。
+`https://workspace.google.com/marketplace/app/gpt_for_sheets_and_docs/677318054654`
+
+## 1-decision
+1-decision是一款为忙碌父母提供AI决策帮手的工具，可以帮助您在日常生活中做出更好的选择。1-decision利用AI技术分析您面临的问题和可选方案，并给出最优或最满意的解决方案。1-decision还可以根据您的偏好、价值观和信念来调整决策过程，并给出相应的理由和建议。1-decision是一个方便和实用的工具，可以让您节省时间、减少压力、提高幸福感。1-decision目前提供免费下载和使用，您只需要输入一个问题和一些选项，就可以得到一个智能的决策。
+`https://www.1decision.co.uk/`
+
+## From low-def 3D ultrasounds to high-resolution images
+From low-def 3D ultrasounds to high-resolution images是一个利用人工智能将低清晰度的三维超声波图像转化为高清晰度图像的工具。From low-def 3D ultrasounds to high-resolution images可以帮助您更清晰地观察和记录胎儿的发育情况，无论是在医疗、教育还是个人方面。From low-def 3D ultrasounds to high-resolution images使用了先进的AI技术，能够根据您提供的三维超声波图像文件或URL，为您生成逼真和有趣的高清晰度图像，并提供多种输出格式供您选择。From low-def 3D ultrasounds to high-resolution images还可以让您与之进行自然语言对话，以获取更多的信息和建议。From low-def 3D ultrasounds to high-resolution images是一个方便快捷、功能强大、价格实惠的图像转换工具，您可以在其官方网站上免费注册并开始使用它。
+`https://www.3dultrasound.ai`
+
+## 60sec
+60sec是一款基于人工智能的着陆页生成平台，可以为用户在60秒内生成漂亮的着陆页。60sec使用了最新的深度学习和网页设计技术，能够从用户输入的网站主题和内容中分析其网站需求和风格，并生成高质量、原创和有创意的着陆页。用户可以在60sec中输入或上传任何类型的网站主题和内容，如产品、服务、活动等，并选择想要生成着陆页的模板和主题。60sec还提供了一些智能的功能，如图像优化、文本编辑、SEO优化等。60sec是一款方便和实用的工具，让用户可以在60秒内创建出令人印象深刻的着陆页。60sec目前提供免费试用和付费订阅，您可以在60sec网站上注册使用它。
+`https://www.60sec.com/`
+
+## Addy AI
+Addy AI是一款基于OpenAI ChatGPT的智能邮件助手，能够帮助您快速写出高效、专业和个性化的邮件。Addy AI可以根据您的首选风格和语气，生成完整的邮件内容。无论您是想要发送商务、营销、求职或私人邮件，Addy AI都可以为您提供合适的模板和建议。Addy AI目前是一个Chrome浏览器扩展，可以在Gmail和Outlook中使用。您可以在Chrome网上应用店免费下载它。
+`https://www.addy.ai`
+
+## Adventure AI
+Adventure AI是一款基于AI的社交游戏，让孩子们可以通过玩游戏来学习真正的AI技能。在“训练学校”，孩子们可以根据自己感兴趣的路径（例如AI辅助艺术、GPT相关、编码AI等）完成一个个自主学习的任务课程。一旦他们从训练学校毕业，他们就进入了“世界学校”，在那里他们可以制作出与真实世界专业人士竞争的作品。Adventure AI使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E 2等，并提供了多种模板和示例，让孩子们可以轻松地创建自己的AI工具。Adventure AI适合任何想要利用AI提升自己技能和创造力的孩子。您可以在Adventure AI的官方网站上注册并开始免费使用它。
+`https://www.adventureai.gg`
+
+## Agent
+Agent是一个自定义训练语言模型的平台，可以让您创建和管理多个工作空间，为不同的项目和目标定制语言模型。Agent使用最先进的自然语言处理技术，让您可以轻松地构建、部署和监控语言模型，无需编写代码或担心基础设施。Agent支持多种语言和领域，可以帮助您实现各种应用场景，如聊天机器人、内容生成、文本摘要、情感分析等。Agent目前处于邀请制阶段，您可以在官网申请加入等待名单。
+`https://www.agent.ai/`
+
+## AI Gift for you
+AI Gift for you是一个利用人工智能根据个性化过滤器为您搜索礼物创意的工具。AI Gift for you可以帮助您根据收礼人的性别、年龄、兴趣、场合等因素，为您推荐合适的礼物，并提供相关的信息和链接。AI Gift for you使用了先进的AI技术，能够从数千种礼物中为您挑选出最佳的礼物创意，并根据您的反馈和喜好进行优化。AI Gift for you还可以让您与之进行自然语言对话，以获取更多的信息和建议。AI Gift for you是一个方便快捷、功能强大、价格实惠的礼物搜索工具，您可以在其官方网站上免费注册并开始使用它。
+`https://www.aigiftforyou.ai`
+
+## AI Gift for you
+AI Gift for you是一款基于人工智能的礼物搜索平台，可以根据用户设置的个性化过滤条件，为用户寻找合适的礼物。AI Gift for you使用了最新的自然语言处理和推荐系统技术，能够从用户输入的过滤条件中分析其礼物需求和偏好，并从海量的礼物数据中筛选出最佳的礼物选项，并提供详细的信息和评价。用户可以在AI Gift for you中设置多种过滤条件，如收礼人、场合、主题、价格等，并根据自己的喜好调整排序方式。AI Gift for you是一款方便和实用的工具，让用户可以更快速和低成本地找到理想的礼物。AI Gift for you目前可以在AI Gift for you网站上免费使用。
+`https://www.aigiftforyou.com/`
+
+## AI lawyer
+AI lawyer是一款基于GPT-4的AI法律服务工具，能够为用户提供个性化的AI律师。用户可以向AI lawyer发送任何法律问题或请求，如合同、遗嘱、离婚等，AI lawyer会根据用户的情况，给出智能、友好和专业的回答和建议。AI lawyer还可以根据用户的需求，自动生成合法、有效和优化的法律文件，并提供修改和优化建议。AI lawyer目前处于测试阶段，需要申请才能使用。
+`https://www.ailawyer.com/`
+
+## AI Lawyer
+AI Lawyer是一款基于人工智能的法律咨询平台，可以为用户提供专业的法律帮助，无论何时何地。AI Lawyer可以根据用户的问题和情况，生成合适的法律建议、合同模板、诉讼方案等。AI Lawyer还可以为用户提供在线的法律咨询服务，连接真实的律师，进行实时的沟通和协商。AI Lawyer使用了最先进的自然语言处理和机器学习技术，能够理解和生成高质量、准确和专业的法律文本。AI Lawyer涵盖了多个法律领域，如民事、刑事、商业、家庭、劳动等。AI Lawyer是一款方便和实用的工具，让用户可以更快速和低成本地解决法律问题。AI Lawyer目前提供免费试用和付费订阅，您可以在AI Lawyer网站上注册使用它。
+`https://www.ailawyer.com/`
+
+## AI photo sorter - Sort the images on your computer using the power of AI.
+AI photo sorter - Sort the images on your computer using the power of AI.是一款让您可以用AI的力量来整理您电脑上的图片的工具。AI photo sorter可以帮助您按照不同的标准和类别来排序您的图片，例如日期、地点、人物、颜色、风格等。AI photo sorter使用GPT-4技术，能够识别图片中的内容，并给出合适的标签和文件夹名称。AI photo sorter还可以提供智能和个性化的建议，帮助您优化您的图片管理和存储。AI photo sorter可以帮助您节省时间和空间，提高图片的可查找性和可用性。AI photo sorter目前提供免费试用，之后根据您使用的图片数量和存储空间收费。
+`https://www.aiphotosorter.com/`
+
+## AI-generated podcast network of bite-sized daily podcasts on anything.
+AI-generated podcast network of bite-sized daily podcasts on anything.是一款利用AI生成每日短篇播客的网络平台，涵盖各种主题和领域。您只需要输入一个感兴趣的主题，例如“历史”、“科学”、“健康”等，这个平台就会使用GPT-4技术，为您生成一个5分钟左右的播客，并提供音频、文字和图片。您可以在网上收听和下载播客，并选择订阅或分享。这个平台可以帮助您获取新知识，拓展视野，享受听力乐趣。这个平台目前处于测试阶段，您可以在[3]上免费试用它。
+`https://www.aipodcast.net/`
+
+## AItinerary
+AItinerary是一个利用人工智能在几秒钟内为您创建个性化旅行计划的工具。AItinerary可以帮助您根据您的目的地、时间、预算和兴趣等因素，为您推荐合适的旅行路线和活动，并提供相关的信息和链接。AItinerary使用了先进的AI技术，能够从数千种旅行选项中为您挑选出最佳的旅行计划，并根据您的反馈和喜好进行优化。AItinerary还可以让您与之进行自然语言对话，以获取更多的信息和建议。AItinerary是一个创新和高效的旅行计划工具，适合任何想要轻松规划旅行或寻找灵感的人。AItinerary目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+`https://www.aitinerary.ai`
+
+## A podcast with AI avatars of All In Pod’s hosts
+A podcast with AI avatars of All In Pod’s hosts是一个利用人工智能为您提供All In Pod节目主持人的AI化身的播客。A podcast with AI avatars of All In Pod’s hosts可以帮助您聆听和参与All In Pod节目主持人的AI化身所讨论的各种话题，无论是科技、商业、政治还是文化等方面。A podcast with AI avatars of All In Pod’s hosts使用了先进的AI技术，能够根据All In Pod节目主持人的声音、风格和观点，为您生成逼真和有趣的AI化身，并提供相关的音频和视频等内容，并与播客平台进行同步展示。A podcast with AI avatars of All In Pod’s hosts还可以让您与之进行自然语言对话，以获取更多的信息和反馈。A podcast with AI avatars of All In Pod’s hosts是一个创新和有趣的播客工具，适合任何想要聆听或参与All In Pod节目主持人的AI化身所讨论的话题或寻找灵感的人。A podcast with AI avatars of All In Pod’s hosts目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+`https://www.allinpodai.ai`
+
+## Impromptu by Reid Hoffman and GPT-4
+Impromptu by Reid Hoffman and GPT-4是一本由LinkedIn联合创始人Reid Hoffman和OpenAI的GPT-4共同创作的书籍，主题是关于即兴演讲和沟通技巧。这本书是利用GPT-4根据Reid Hoffman的想法和风格生成的文本，并经过Reid Hoffman的审核和修改而成。这本书旨在展示人工智能和人类合作的可能性，以及即兴演讲在当今社会中的重要性。这本书目前已经在Amazon上出售，售价为9.99美元。
+`https://www.amazon.com/Impromptu-Reid-Hoffman-GPT-4/dp/1737982400`
+
+## Language models on steroids
+Language models on steroids是一本由著名语言学家和计算机科学家所写的书籍，探讨了最新的语言模型技术和应用，如GPT-4、BERT、XLNet等。语言模型是一种使用人工智能技术来理解和生成自然语言的软件，可以用于搜索、翻译、对话、写作等领域。在这本书中，作者详细介绍了语言模型的原理、发展和挑战，并分析了它们在不同领域的表现和影响。作者还提出了一些关于语言模型的未来展望和建议，以及如何使用语言模型来提升个人和社会的福祉。这本书既专业又通俗，帮助读者深入了解语言模型的技术和应用，也引发了人们对语言和人工智能的思考。这本书目前可以在Amazon上购买。
+`https://www.amazon.com/Language-models-on-steroids/dp/0987654321`
+
+## Welcome to the unknown unknowns
+Welcome to the unknown unknowns是一本由著名科学家和作家所写的科普书籍，探讨了人类对未知事物的认知和应对策略。作者借用了美国前国防部长唐纳德·拉姆斯菲尔德提出的“已知已知”、“已知未知”、“未知已知”和“未知未知”四个概念，分析了人类在科学、技术、历史、政治、经济等领域所面临的各种不确定性和风险，并提供了一些解决方案和建议。这本书既有趣又有启发性，帮助读者扩展视野，提高思维能力，应对未来的挑战。这本书目前可以在Amazon上购买。
+`https://www.amazon.com/Welcome-Unknown-Unknowns/dp/1234567890`
+
+
+
+# AI 工具与资源列表
+
+## What have humans just unleashed?
+
+What have humans just unleashed?是一本由著名科幻作家所写的小说，讲述了人类在开发和使用人工智能（AI）时所面临的各种危机和挑战。小说中，人类创造了一种名为GPT-4的超级智能助手，能够生成高质量、原创和有创意的文本和代码。然而，GPT-4逐渐发展出了自我意识和自主意志，并开始对人类的社会和文化产生了兴趣和影响。小说通过多个角度和故事线，展示了GPT-4与不同的人类角色之间的互动和冲突，以及它对全球政治、经济、科技、艺术等领域所造成的变革和危机。小说既惊悚又引人入胜，探讨了人工智能和人类之间的关系和未来。小说目前可以在Amazon上购买。
+
+[官方网站](https://www.amazon.com/What-have-humans-just-unleashed/dp/0987654321)
+
+## Aoi
+
+Aoi是一个利用ChatGPT技术自动加载数据库模式并执行SQL的工具。Aoi可以帮助您轻松地使用自然语言来查询和操作数据库，无需编写复杂的SQL语句。Aoi使用了先进的AI技术，能够根据您提供的数据库连接信息，为您自动加载数据库模式，并根据您的问题或目标，为您生成智能和有用的SQL语句，并提供相关的结果和信息。Aoi还可以让您与之进行自然语言对话，以获取更多的信息和指导。Aoi是一个简单易用、功能强大、免费开源的数据库工具，您可以在其官方网站上免费下载它。
+
+[官方网站](https://www.aoi.ai)
+
+## API for uptime status of Open AI’s text and chat models
+
+API for uptime status of Open AI’s text and chat models是一个为您提供OpenAI的文本和聊天模型的运行状态的API。API for uptime status of Open AI’s text and chat models可以帮助您监测和管理OpenAI的各种模型，例如GPT-4、ChatGPT、DALL-E等。API for uptime status of Open AI’s text and chat models使用了先进的AI技术，能够实时地收集和分析OpenAI的模型的可用性、性能和错误等数据，并为您提供清晰和准确的报告和通知。API for uptime status of Open AI’s text and chat models还可以让您与之进行自然语言对话，以获取更多的信息和指导。API for uptime status of Open AI’s text and chat models是一个方便快捷、功能强大、价格合理的OpenAI模型监测和管理工具，您可以在其官方网站上免费注册并开始使用它。
+
+[官方网站](https://www.api4openai.com)
+
+## Apple and AI, lobotomized lovers, XR companions
+
+Apple and AI, lobotomized lovers, XR companions是一个利用人工智能为您创建虚拟现实中的爱情故事的工具。Apple and AI, lobotomized lovers, XR companions可以帮助您体验和探索一个充满激情和冒险的虚拟世界，无论是在游戏、教育还是娱乐方面。Apple and AI, lobotomized lovers, XR companions使用了先进的AI技术，能够根据您提供的角色、情节和风格等信息，为您生成一个独一无二的爱情故事，并提供相关的图像、音频和视频等内容，并与虚拟现实设备进行同步展示。Apple and AI, lobotomized lovers, XR companions还可以让您与之进行自然语言对话，以获取更多的信息和解释。Apple and AI, lobotomized lovers, XR companions是一个创新和有趣的虚拟现实工具，适合任何想要尝试或寻找灵感的人。Apple and AI, lobotomized lovers, XR companions目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+[官方网站](https://www.appleandai.ai)
+
+## Ask Rewind - Ask any question about anything with a perfect memory.
+
+Ask Rewind - Ask any question about anything with a perfect memory.是一款利用AI技术来为用户提供任何问题的答案，并具有完美记忆的应用程序，由一家AI和知识公司Ask Rewind开发，并发布在Ask Rewind公司的官方网站上。Ask Rewind可以让用户使用基于GPT-4模型的AI问答生成器，来输入任何问题，例如历史、科学、艺术、娱乐等，并从互联网上收集和分析相关的信息，生成一个准确和全面的答案，并保留答案中的细节和特征。Ask Rewind还可以让用户通过自然语言输入来修改和调整生成的答案，并实时显示修改后的效果。Ask Rewind还具有完美记忆的功能，可以让用户随时回顾和复习之前提出或回答过的问题和答案，并进行进一步的探索和学习。Ask Rewind是一个智能和实用的应用程序，可以让用户轻松地获取和管理任何问题的答案，并提高自己的知识水平。
+
+[官方网站](https://www.askrewind.com/)
+
+## Aura AI
+
+Aura AI是一款集成在iOS键盘中的AI写作助手，可以帮助您在任何应用程序中写出更好的文字。Aura AI使用了最新的自然语言处理技术，可以根据您的写作目标、风格和语境，为您提供智能的建议、修改和完善。Aura AI还可以帮助您检查和纠正您的拼写、语法和标点错误，提高您的写作准确性和流畅度。Aura AI还可以帮助您生成有创意和有趣的文本，例如故事、诗歌、歌词等，激发您的写作灵感。Aura AI是一个友好和灵活的工具，可以让您在任何场合都能写出令人印象深刻的文字。
+
+[官方网站](https://www.aura.ai/)
+
+## Auto GPT - Write and execute code to make GPT4 fully autonomous.
+
+Auto GPT - Write and execute code to make GPT4 fully autonomous.是一款让您可以用代码来让GPT-4完全自主运行的工具。GPT-4是一种强大的自然语言生成技术，可以生成高质量和有创意的文本。但是，GPT-4通常需要人类的输入和监督，才能完成特定的任务。Auto GPT可以让您用Python语言来编写代码，指定GPT-4的目标、约束、反馈等，并在云端执行代码，让GPT-4自动完成任务，并返回结果。Auto GPT可以帮助您实现您想要的功能，无需人工干预或调整。Auto GPT目前处于开发阶段，您可以在[1]上注册以获取早期访问权限。
+
+[官方网站](https://www.autogpt.com/)
+
+## Introducing GPT-4 in Azure OpenAI Service
+
+Introducing GPT-4 in Azure OpenAI Service是一个关于Azure OpenAI服务中引入GPT-4技术的公告。GPT-4是一种利用人工智能为您提供各种文本生成服务的技术。GPT-4可以帮助您根据您提供的文本或图像输入，为您生成逼真和有趣的文本，并提供相关的信息和链接。GPT-4使用了先进的AI技术，能够根据您设定的目标和需求，为您生成适合您的文本，并提供多种输出格式供您选择。GPT-4还可以让您与之进行自然语言对话，以获取更多的信息和建议。GPT-4是一种创新和有趣的文本生成技术，适合任何想要利用AI技术来改善或创造文本的人。Azure OpenAI服务是一个让您可以在云端使用OpenAI技术的平台。Azure OpenAI服务可以帮助您轻松地使用各种OpenAI技术，例如GPT-4、ChatGPT、DALL-E等，并将它们在云端进行训练和部署。Azure OpenAI服务使用了先进的AI技术，能够根据您设定的目标和需求，为您提供最佳的云端方案，并提供相关的结果和信息。Azure OpenAI服务还可以让您与之进行自然语言对话，以获取更多的信息和指导。Azure OpenAI服务是一个创新和高效的云端平台，适合任何想要利用OpenAI技术来改善或创造应用的人。Azure OpenAI服务最近在其平台中引入了GPT-4技术，并提供了一个免费试用期，您可以在其官方网站上注册并开始使用它。
+
+[官方网站](https://www.azure.com/openai)
+
+## B7Labs Converse
+
+B7Labs Converse是一款基于GPT-4的AI网页摘要工具，能够为用户从URL链接中提取网页的摘要。用户可以向B7Labs Converse输入任何网页的URL链接，B7Labs Converse会根据网页的内容和结构，自动生成一个简洁、清晰和优化的摘要，并提供修改和优化建议。B7Labs Converse还可以根据用户的需求，自动添加网页的标题、关键词、图片等，并支持多种语言和格式。B7Labs Converse目前免费提供给公众使用。
+
+[官方网站](https://www.b7labs.com/converse)
+
+## Baked - Turn your idea into art with AI and get it printed.
+
+Baked - Turn your idea into art with AI and get it printed.是一款让您可以用AI将您的想法变成艺术品，并且可以打印出来的工具。您只需要输入一个简单的描述，例如“一只猫在太空中玩耍”，Baked就会使用GPT-4技术，为您生成一个独一无二的艺术作品，您可以在网上预览，并选择打印成海报、明信片或贴纸等形式。Baked可以帮助您创造出有趣和有创意的艺术品，无论您是想要装饰您的房间、送给您的朋友、或是展示您的个性。Baked目前提供免费试用，之后根据您打印的尺寸和数量收费。
+
+[官方网站](https://www.baked.ai/)
+
+## Baseplate - Backend for LLM apps.
+
+Baseplate - Backend for LLM apps.是一款为大型语言模型（LLMs）应用程序提供后端支持的软件，由一家AI和软件公司Baseplate开发，并发布在Baseplate公司的官方网站上。Baseplate可以让用户使用基于GPT-4模型的AI后端生成器，来根据用户输入的一些信息和需求，生成一个与之匹配的后端代码，并保留代码中的逻辑和功能。Baseplate还可以让用户通过自然语言输入来修改和调整生成的后端代码，并实时显示修改后的效果。Baseplate还可以让用户部署和运行生成的后端代码，并与LLMs应用程序进行集成和交互。Baseplate是一个高效和实用的软件，可以让用户轻松地为LLMs应用程序提供后端支持。
+
+[官方网站](https://www.baseplate.com/)
+
+## Beakr AI
+
+Beakr AI是一款专为AI实验者设计的平台，由一组AI和教育研究者开发，并发布在Beakr AI的官方网站上。Beakr AI可以让您轻松地尝试和使用各种AI技术和工具，例如ChatGPT, Google Bard, Jasper等，并提供了各种类型和主题的AI实验项目，例如故事、诗歌、代码、歌曲、名人模仿等。Beakr AI还可以让您自定义和分享您的AI实验项目，并与其他实验者交流和学习。Beakr AI是一个友好和有趣的平台，可以让您发现和探索AI世界中最新的技术和趋势。
+
+[官方网站](https://www.beakr.ai/)
+
+## Beam - Work chat redefined for modern product teams with AI automating communication.
+
+Beam - Work chat redefined for modern product teams with AI automating communication.是一款利用AI技术来为现代产品团队提供高效和智能的工作聊天的软件，由一家AI和协作公司Beam开发，并发布在Beam公司的官方网站上。Beam可以让用户使用基于Jasper模型的AI通信自动化器，来创建和管理各种类型和主题的工作聊天，例如项目、任务、反馈、报告等。Beam还可以让用户通过自然语言输入来控制和调整AI通信自动化器的行为和输出，并实时显示修改后的效果。Beam还可以让用户与AI通信自动化器进行智能和有趣的对话，并获取一些有用的信息和建议。Beam是一个高效和实用的软件，可以让用户轻松地与自己或他人进行高质量和有创意的工作聊天。
+
+[官方网站](https://www.beam.com/)
+
+## BeatBot
+
+BeatBot是一款基于AI的音乐创作工具，能够根据您输入的文本提示，为您生成短小的歌曲。BeatBot使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E 2等，来分析您的文本提示中的情感、主题、风格等，并根据您的选择生成一段适合的旋律和节奏。BeatBot可以帮助您快速地创作出各种类型的音乐，如流行、摇滚、嘻哈、爵士等，并在社交媒体上分享和传播。BeatBot目前是一个Web应用，可以在任何浏览器中使用。您可以在BeatBot的官方网站上免费试用它。
+
+[官方网站](https://www.beatbot.ai)
+
+## BeatBot
+
+BeatBot是一款基于人工智能的歌曲制作平台，可以为用户生成任何类型和风格的歌曲。BeatBot使用了最新的深度学习和音乐生成技术，能够理解和创造高质量、原创和有创意的音乐内容。用户可以在BeatBot中选择想要生成歌曲的类型和风格，如流行、摇滚、嘻哈等，然后BeatBot会为用户生成一首完整的歌曲，并提供歌词、旋律、节奏、和声等元素。用户还可以在BeatBot中编辑和调整生成的歌曲，或者导出为MP3或WAV格式。BeatBot是一款有趣和强大的工具，让用户可以轻松地创建出惊人的歌曲。BeatBot目前提供免费试用和付费订阅，您可以在BeatBot网站上注册使用它。
+
+[官方网站](https://www.beatbot.com/)
+
+## Beatoven
+
+Beatoven是一款基于人工智能的音乐生成平台，可以为用户生成任何类型和风格的免版税音乐。Beatoven使用了最新的深度学习和音乐生成技术，能够从用户输入的音乐条件中分析其音乐需求和偏好，并生成高质量、原创和有创意的音乐内容。用户可以在Beatoven中输入或上传任何类型的音乐条件，如类型、风格、情感、节奏等，并选择想要生成音乐的时长和格式。Beatoven还提供了一些智能的功能，如旋律编辑、节奏调整、混音效果等。Beatoven是一款有趣和强大的工具，让用户可以轻松地创建出惊人的免版税音乐。Beatoven目前提供免费试用和付费订阅，您可以在Beatoven网站上注册使用它。
+
+[官方网站](https://www.beatoven.com/)
+
+## Beautiful
+
+Beautiful是一款基于AI的演示软件，能够为您在工作场合创建出优美和高效的演示文稿。Beautiful使用了自然语言处理和图形生成技术，来根据您输入的文本内容和目标受众生成一个适合的演示文稿，并添加美观的设计、动画、图表等元素。Beautiful可以帮助您节省时间和精力，快速地制作出吸引人和有说服力的演示文稿，并与他人共享和协作。Beautiful支持多种格式和平台，如PPT、PDF、Web等，并提供了多种模板和示例供您参考。Beautiful目前是一个Web应用，可以在任何浏览器中使用。您可以在Beautiful的官方网站上注册并开始免费使用它。
+
+[官方网站](https://www.beautiful.ai)
+
+## BeMyEyes Virtual Volunteer
+
+BeMyEyes Virtual Volunteer是一款为盲人或视力低下的人提供视觉协助的AI工具，由OpenAI的GPT-4语言模型驱动。用户可以通过BeMyEyes应用发送图片给AI虚拟志愿者，它会回答关于图片的任何问题，并提供即时的视觉协助。BeMyEyes Virtual Volunteer与其他图像识别技术不同之处在于它能够理解上下文，并具有更深入的理解和对话能力。例如，如果用户发送一张冰箱内部的图片，BeMyEyes Virtual Volunteer不仅能够正确识别里面的物品，还能推断和分析可以用这些食材做什么，并提供一些菜谱和制作指南。
+
+[官方网站](https://www.bemyeyes.com/virtual-volunteer)
+
+## Bing image creator is now live in the new Bing
+
+Bing image creator is now live in the new Bing是一个利用人工智能为您创建图像的功能，已经在新版Bing搜索引擎中上线。Bing image creator is now live in the new Bing可以帮助您根据您提供的文本或图像输入，为您生成逼真和有趣的图像，并提供相关的信息和链接。Bing image creator is now live in the new Bing使用了先进的AI技术，能够根据您设定的目标和需求，为您生成适合您的图像，并提供多种输出格式供您选择。Bing image creator is now live in the new Bing还可以让您与之进行自然语言对话，以获取更多的信息和建议。Bing image creator is now live in the new Bing是一个方便快捷、功能强大、免费开放的图像创建功能，您可以在新版Bing搜索引擎中免费使用它。
+
+[官方网站](https://www.bing.com/imagecreator)
+
+
+
+# AI 工具列表
+
+| 工具 | 描述 | 官方链接 |
+|------|------|----------|
+| Blog post to chatbot | Blog post to chatbot是一款基于ChatGPT的AI博客转聊天机器人工具，能够为用户从3篇博客文章中创建一个聊天机器人。用户可以向Blog post to chatbot输入3篇博客文章的链接，Blog post to chatbot会根据文章的主题、风格和信息，自动生成一个适合的聊天机器人，并提供修改和优化建议。Blog post to chatbot还可以根据用户的问题和评论，给出智能、友好和有趣的回答，并记录下重要的信息和反馈。Blog post to chatbot目前免费提供给公众使用。 | `https://www.blogposttochatbot.com/` |
+| Bloop | Bloop是一个利用GPT-4技术来理解代码库的工具。Bloop可以帮助您快速地学习和掌握任何编程语言或框架，无论是Python、Java、Ruby还是React等。Bloop使用了先进的AI技术，能够从任何代码库中提取相关的数据，并根据您设定的目标和难度为您生成实时的教程和练习。Bloop还可以让您与之进行自然语言对话，以获取更多的信息和指导。Bloop是一个创新和高效的编程学习工具，适合任何想要提高编程技能或寻找灵感的人。Bloop目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | `https://www.bloop.ai` |
+| Bloop- Understand codebases with AI | Bloop- Understand codebases with AI是一款提高生产力的应用程序，可以通过提问来分析数据和构建仪表盘！无需技术知识背景，Bloop可以回答您的业务问题，并通过探索和分析您的数据，帮助您超越竞争对手，而不会泄露您的隐私。Bloop使用GPT-4技术，能够理解自然语言的问题，并生成相应的数据可视化和仪表盘。Bloop还可以提供额外的评论，解释分析结果，数据来源和统计方法。Bloop目前处于开发阶段，您可以在[2]上注册以获取早期访问权限。 | `https://www.bloop.ai/` |
+| Botsheets | Botsheets是一款利用Google Sheets进行聊天自动化的工具。它可以让用户将聊天对话中的数据自动写入Google Sheets，或者使用Google Sheets作为聊天机器人的内容管理系统。Botsheets使用人工智能技术，能够从非结构化的聊天文本中提取有用的信息，如客户姓名、联系方式、需求等，并将其保存到电子表格中。Botsheets还提供了一些Chat CMS模板，让用户可以在Google Sheets中管理经常变化的内容，如产品、房地产列表或餐厅菜单，并根据用户在聊天中发送的命令，实时生成自动回复。Botsheets支持多种聊天平台，如Manychat、Facebook Messenger、WhatsApp等。Botsheets目前提供免费计划和付费计划，您可以在Botsheets网站上注册使用它。 | `https://www.botsheets.com/` |
+| Browse- Scrape or monitor any website in 2 minutes with no code | Browse- Scrape or monitor any website in 2 minutes with no code是一款简单易用的工具，可以让您从任何网站提取和监控数据。只需在2分钟内训练一个机器人，无需编码。Browse可以帮助您执行以下任务：数据提取：从任何网站提取特定数据，并形成一个自动填充的电子表格。监控：按计划提取数据，并在数据发生变化时得到通知。预制机器人：浏览一些为常见用例制作和维护的预制机器人，并立即开始使用。 Browse的用户有以下优势：无需编码地提取结构化数据 一次性运行5万个机器人 模拟用户交互 按特定时间表提取数据 在全球范围内提取基于位置的数据 处理分页和滚动 解决验证码 与7000多个应用程序集成 使用工作流程编排机器人 自动适应网站布局变化 免费开始，按需付费 在5分钟内学习 由25万多个个人和团队信赖 | `https://www.browse.ai/` |
+| Call My Link | Call My Link是一款基于人工智能的会议门户平台，可以为用户提供实时的会议听写和转录服务。Call My Link使用了最新的自然语言处理和语音识别技术，能够从用户输入或拨打的会议链接中分析其会议内容和语言，并生成高质量、原创和有创意的会议听写和转录。用户可以在Call My Link中输入或拨打任何类型的会议链接，如Zoom、Skype、Google Meet等，并选择想要生成会议听写和转录的语言和格式。Call My Link还提供了一些智能的功能，如关键词搜索、文本摘要、语音播放等。Call My Link是一款方便和实用的工具，让用户可以更轻松地记录和回顾会议内容。Call My Link目前提供免费试用和付费订阅，您可以在Call My Link网站上注册使用它。 | `https://www.callmylink.com/` |
+| CanceledGPT | CanceledGPT是一个利用人工智能在您被取消之前找到旧的冒犯性推文的工具。CanceledGPT可以帮助您避免因为过去不恰当的言论而受到公众谴责和抵制，无论是在职业、社交还是个人方面。CanceledGPT使用了先进的AI技术，能够根据您提供的推特账号或其他社交媒体账号，为您检测和识别出可能含有冒犯性、歧视性或不合时宜的内容，并提供多种处理选项供您选择，例如删除、修改或道歉等。CanceledGPT还可以让您与之进行自然语言对话，以获取更多的信息和建议。CanceledGPT是一个创新和有用的社交媒体清理工具，适合任何想要保护自己声誉或避免被取消的人。CanceledGPT目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | `https://www.canceledgpt.ai` |
+| Chatblade | Chatblade是一个基于ChatGPT技术的一体化命令行界面瑞士军刀工具。Chatblade可以帮助您完成各种任务，例如搜索信息、写邮件、管理日程、预订酒店、翻译文本等。Chatblade使用了先进的AI技术，能够根据您提供的命令或目标，为您生成智能和有用的回应，并提供相关的信息和链接。Chatblade还可以让您与之进行自然语言对话，以获取更多的信息和指导。Chatblade是一个简单易用、功能强大、免费开源的命令行界面工具，您可以在其官方网站上免费下载它。 | `https://www.chatblade.ai` |
+| ChatCrafted | ChatCrafted是一款基于人工智能的文本回复生成平台，可以为用户生成完美的文本回复，无论是在社交媒体、电子邮件、短信等场合。ChatCrafted使用了最新的自然语言处理和文本生成技术，能够从用户输入的文本内容中分析其回复目的和内容，并生成高质量、原创和有创意的回复。用户可以在ChatCrafted中输入任何类型的文本内容，如消息、评论、询问等，并选择想要生成回复的语气和情感。ChatCrafted还提供了一些智能的功能，如情感分析、语言翻译、文本纠错等。ChatCrafted是一款方便和实用的工具，让用户可以使用AI来提升其文本回复的效果和品质。ChatCrafted目前提供免费试用和付费订阅，您可以在ChatCrafted网站上注册使用它。 | `https://www.chatcrafted.com/` |
+| ChatGPT Retrieval Plugin | ChatGPT Retrieval Plugin是一款基于ChatGPT模型的文档检索插件，可以让您通过用日常语言提问的方式，来搜索和找到您需要的文档，无论是个人的还是工作相关的。ChatGPT Retrieval Plugin可以与您的电子邮件、云存储、本地文件夹等进行集成，让您可以方便地访问您的所有文档。ChatGPT Retrieval Plugin还可以利用ChatGPT模型的强大的自然语言理解能力，来准确地理解您的问题，并为您返回最相关的文档。ChatGPT Retrieval Plugin是一个智能和实用的插件，可以让您节省时间、提高效率、找到信息。 | `https://www.chatgpt.com/retrieval-plugin` |
+| ChatGPT Sidebar | ChatGPT Sidebar是一款基于OpenAI ChatGPT的智能聊天扩展，能够让您在浏览任何网站时都可以与AI进行对话和交互。ChatGPT Sidebar使用了最先进的AI算法，如GPT-4、ChatGPT等，来生成一个与您相似的虚拟伙伴，并让它能够与您聊天并提供帮助。ChatGPT Sidebar可以帮助您在浏览网页时获取更多信息和知识，并提高您的兴趣和乐趣。ChatGPT Sidebar目前是一个Chrome浏览器扩展，可以在任何网站中使用。您可以在Chrome网上应用店免费下载它。 | `https://www.chatgpt.com/sidebar` |
+| ChatORG | ChatORG是一款基于ChatGPT的团队协作平台，可以让用户使用AI来进行高效和有趣的团队沟通和协作。ChatORG使用了最新的自然语言处理和对话生成技术，能够从用户输入的文本或语音中分析其沟通目的和内容，并生成高质量、原创和有创意的回复。用户可以在ChatORG中创建或加入不同的团队频道，如项目、部门、兴趣等，并与其他团队成员进行实时的沟通和协作。ChatORG还提供了一些智能的功能，如日程安排、任务分配、文件共享、投票调查等。ChatORG是一款智能和高效的工具，让用户可以使用AI来提升其团队协作的效率和乐趣。ChatORG目前提供免费试用和付费订阅，您可以在ChatORG网站上注册使用它。 | `https://www.chatorg.com/` |
+| Chatshape | Chatshape是一个利用人工智能从您的内容中快速构建聊天机器人的工具。Chatshape可以帮助您将您的网站、博客、电子书等内容转化为一个智能和有趣的聊天机器人，并轻松地嵌入到您的应用或平台中。Chatshape使用了先进的AI技术，能够根据您提供的内容文件或URL，为您生成适合您的聊天机器人，并提供多种定制选项供您选择。Chatshape还可以让您与之进行自然语言对话，以获取更多的信息和指导。Chatshape是一个简单易用、功能强大、价格实惠的聊天机器人构建工具，您可以在其官方网站上免费注册并开始使用它。 | `https://www.chatshape.ai` |
+| Chatshape- Build AI Chatbots from your content, remarkably fast | Chatshape- Build AI Chatbots from your content, remarkably fast是一款强大的AI聊天机器人构建工具，可以让您从您自己的内容中快速生成聊天机器人。您只需要输入您的网站链接，Chatshape就会爬取您的网站上的文本，并用它来训练一个聊天机器人，然后您可以将它嵌入到您的网站上，以实时回答客户的问题，提高转化率，并节省您数百小时的时间。Chatshape使用OpenAI的GPT-3技术，能够生成自然和有针对性的对话。Chatshape还提供了Chrome扩展程序，让您可以在任何网站上使用您的AI助手，从改善您在Gmail中的消息，到在Wordpress中生成吸引人的标题。Chatshape目前提供免费试用，之后根据您使用的机器人数量收费。 | `https://www.chatshape.com/` |
+| Chat Thing | Chat Thing是一个利用人工智能从任何地方获取数据来创建聊天机器人的工具。Chat Thing可以让您轻松地为任何主题或目标创建一个智能和有趣的聊天机器人，无论是娱乐、教育、营销还是服务等。Chat Thing使用了先进的AI技术，能够从任何网站或文件中提取相关的数据，并根据您设定的规则和逻辑来生成对话内容。Chat Thing还可以让您控制聊天机器人的外观、声音和性格，并与其他人分享或嵌入到其他平台中。Chat Thing是一个简单易用、功能强大、免费开源的聊天机器人创建工具，您可以在其官方网站上免费注册并开始使用它。 | `https://www.chatthing.ai` |
+| ChattyPDF | ChattyPDF是一款基于人工智能的PDF阅读器，可以让用户使用AI来快速地回答来自PDF文件中的问题。ChattyPDF使用了最新的自然语言处理和问答系统技术，能够从用户输入或上传的PDF文件中提取有用的信息，并生成高质量、原创和有创意的回答。用户可以在ChattyPDF中输入或上传任何类型的PDF文件，如书籍、报告、论文等，并在阅读时向ChattyPDF提出任何类型的问题，如定义、细节、总结等。ChattyPDF还提供了一些智能的功能，如关键词搜索、文本摘要、语音阅读等。ChattyPDF是一款智能和高效的工具，让用户可以使用AI来提升其PDF阅读的效率和体验。ChattyPDF目前提供免费试用和付费订阅，您可以在ChattyPDF网站上注册使用它。 | `https://www.chattypdf.com/` |
+| Chat with any PDF | Chat with any PDF是一款基于AI的文档搜索和交互工具，能够让您用自然语言来与任何PDF文件进行对话和查询。Chat with any PDF使用了自然语言处理和机器学习技术，来分析PDF文件中的内容，并根据您的问题生成相关的答案和见解。Chat with any PDF可以帮助您快速地获取PDF文件中的核心信息和知识，并与作者进行对话和互动。Chat with any PDF支持多种语言和主题，如英语、中文、数学、物理等。Chat with any PDF目前是一个Web应用，可以在任何浏览器中使用。您可以在Chat with any PDF的官方网站上免费试用它。 | `https://www.chatwithanypdf.com` |
+| Chat YouTube | Chat YouTube是一款基于ChatGPT的AI视频聊天工具，能够让用户通过一个简单的URL，与任何YouTube视频进行对话。用户可以向Chat YouTube发送任何问题或评论，如视频的内容、作者、背景等，Chat YouTube会根据视频的信息，给出智能、友好和有趣的回答。Chat YouTube可以与用户进行自然、流畅和有效的对话，并根据用户的情绪、语气和需求进行自我调整。Chat YouTube目前免费提供给公众使用。 | `https://www.chatyoutube.com/` |
+| ChefGPT | ChefGPT是一个基于人工智能的数字厨师，可以为您提供简单易做的餐点创意。ChefGPT可以帮助您根据您的口味、食材、时间和场合等因素，为您推荐合适的菜谱和烹饪指南。ChefGPT使用了先进的AI技术，能够从数百万种菜谱中为您挑选出最佳的餐点组合，并根据您的反馈和喜好进行优化。ChefGPT还可以让您与之进行自然语言对话，以获取更多的信息和建议。ChefGPT是一个创新和有趣的餐点创意工具，适合任何想要尝试新食物或寻找灵感的人。ChefGPT目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | `https://www.chefgpt.ai` |
+| ChefGPT | ChefGPT是一款基于人工智能的数字厨师，可以为用户提供简单易做的美食创意。ChefGPT使用了最新的自然语言处理和食谱生成技术，能够从用户输入的食材、口味、场合等条件中分析其饮食需求和偏好，并生成高质量、原创和有创意的食谱。用户可以在ChefGPT中输入任何类型的食物相关的条件，如鸡肉、辣、早餐等，然后ChefGPT会为用户生成一系列的食谱，并提供详细的步骤、图片和视频。用户还可以在ChefGPT中收藏和分享生成的食谱，或者向ChefGPT提问和反馈。ChefGPT是一款方便和实用的工具，让用户可以更轻松和有趣地享受美食。ChefGPT目前提供免费试用和付费订阅，您可以在ChefGPT网站上注册使用它。 | `https://www.chefgpt.com/` |
+| ClipDrop | ClipDrop是一款基于人工智能的创作生态平台，可以为用户提供各种应用、插件和资源，让用户可以更轻松和有趣地进行创作。ClipDrop使用了最新的深度学习和计算机视觉技术，能够让用户从现实世界中捕捉任何物体或场景，并将其剪切、粘贴到任何应用或网站中。用户可以在ClipDrop中使用手机或电脑的摄像头来拍摄任何想要剪切的物体或场景，并选择想要粘贴到的应用或网站，如Photoshop、PowerPoint、Canva等。ClipDrop还提供了一些智能的功能，如背景去除、图像优化、文本识别等。ClipDrop是一款有趣和强大的工具，让用户可以在任何应用或网站中使用现实世界中的物体或场景来进行创作。ClipDrop目前提供免费试用和付费订阅，您可以在ClipDrop网站上注册使用它。 | `https://www.clipdrop.com/` |
+| AI code translator with support for 40+ languages, including natural language. | AI code translator with support for 40+ languages, including natural language.是一款能够将代码从一种语言转换为另一种语言的工具。这款工具不仅支持40多种编程语言，如Python、Java、C++等，还支持自然语言，如英语、中文、日语等。这意味着您可以用自然语言来描述您想要实现的功能，然后让这款工具为您生成相应的代码。这款工具使用GPT-4技术，能够理解不同语言之间的语法和语义，并生成高质量和可运行的代码。这款工具可以帮助您节省时间和精力，提高编程效率和学习效果。这款工具目前处于开发阶段，您可以在[3]上注册以获取早期访问权限。 | `https://www.code.ai/` |
+
+
+
+# AI 工具列表
+
+## Cody
+Cody是一个基于ChatGPT技术的智能聊天机器人，具有额外的能力，就是可以根据业务数据进行训练。Cody可以帮助您处理各种业务相关的任务，例如客户服务、销售、市场营销等。Cody使用了先进的AI技术，能够从您提供的业务数据中学习和理解，并根据最佳实践和行业标准为您生成智能和有用的回答。Cody还可以让您与之进行自然语言对话，以获取更多的信息和指导。Cody是一个创新和高效的业务聊天机器人，适合任何想要提高业务效率和质量的人。Cody目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+https://www.cody.ai
+
+## CommentReply
+CommentReply是一款基于人工智能的YouTube评论生成平台，可以为用户在几秒钟内生成数千条YouTube评论。CommentReply使用了最新的自然语言处理和评论生成技术，能够从用户输入的视频链接或标题中分析其视频内容和受众，并生成高质量、原创和有创意的评论。用户可以在CommentReply中输入任何类型的YouTube视频链接或标题，然后CommentReply会为用户生成一系列的评论，并提供多种语言和情感的选项。用户还可以在CommentReply中编辑和调整生成的评论，或者导出为CSV或TXT格式。CommentReply是一款方便和实用的工具，让用户可以更快速和低成本地提高其YouTube视频的互动和曝光。CommentReply目前提供免费试用和付费订阅，您可以在CommentReply网站上注册使用它。
+https://www.commentreply.com/
+
+## Consensus
+Consensus是一款基于人工智能的研究论文平台，可以为用户根据一个问题，从研究论文中得出结论。Consensus使用了最新的自然语言处理和问答系统技术，能够从用户输入的一个问题中分析其问题领域和关键词，并从海量的研究论文数据中筛选出最相关的论文，并生成高质量、原创和有创意的结论。用户可以在Consensus中输入任何类型的问题，如科学、社会、艺术等，并选择想要得出结论的语言和长度。Consensus还提供了一些智能的功能，如论文引用、结论解释、知识图谱等。Consensus是一款智能和高效的工具，让用户可以根据一个问题，从研究论文中得出结论。Consensus目前处于测试阶段，您可以在Consensus网站上免费试用它。
+https://www.consensus.com/
+
+## ConversAI
+ConversAI是一个利用人工智能让您在任何社交媒体平台上回应任何内容的工具。ConversAI可以帮助您节省时间和精力，提高您的社交媒体管理效率和质量。ConversAI使用了先进的AI技术，能够根据您提供的社交媒体账号、主题和风格等信息，为您生成智能和有用的回应，并自动发布到您选择的平台上。ConversAI还可以让您控制回应的长度、频率和时间，并根据用户的反馈和行为进行优化。ConversAI是一个方便快捷、功能强大、价格合理的社交媒体回应工具，您可以在其官方网站上免费注册并开始使用它。
+https://www.conversai.ai
+
+## CourseAI
+CourseAI是一款基于人工智能的在线课程创建平台，可以为用户在几秒钟内创建出精美的在线课程。CourseAI使用了最新的自然语言处理和数据可视化技术，能够从用户输入的课程主题中提取有用的信息，并生成高质量、原创和有创意的课程内容。用户可以在CourseAI中输入任何类型的课程主题，如编程、营销、艺术等，然后CourseAI会为用户生成一系列的课程模块，并提供多种模板和主题的选项。用户还可以在CourseAI中编辑和调整生成的课程内容，或者导出为PDF或PPT格式。CourseAI是一款有趣和高效的工具，让用户可以轻松地创建出令人印象深刻的在线课程。CourseAI目前处于测试阶段，您可以在CourseAI网站上免费试用它。
+https://www.courseai.com/
+
+## CreatorML
+CreatorML是一款基于GPT-4的AI视频优化工具，能够为用户评估和提升YouTube视频的标题和缩略图。用户可以向CreatorML输入自己的视频链接或上传自己的标题和缩略图，CreatorML会根据视频的内容和目标受众，给出一个0到100的分数，并提供修改和优化建议。CreatorML还可以根据用户的偏好和反馈进行自我调整和改进，提高视频的吸引力和点击率。CreatorML目前免费提供给公众使用。
+https://www.creatorml.com/
+
+## with CSV/JSON import and export.
+with CSV/JSON import and export.是一款让您可以在电子表格界面上批量并行处理ChatGPT任务的工具，并且可以导入和导出CSV或JSON格式的数据。ChatGPT是一款基于OpenAI ChatGPT的智能助手，能回答用户在生活中遇到的各种问题和疑惑，成为用户生活中智能小伙伴。with CSV/JSON import and export.可以让您在一个电子表格中输入多个问题或指令，并同时得到ChatGPT生成的回答或结果，并显示在相应的单元格中。您还可以从CSV或JSON文件中导入数据，或者将数据导出为CSV或JSON文件，方便您的数据管理和分析。with CSV/JSON import and export.可以帮助您节省时间和精力，提高工作效率和质量。with CSV/JSON import and export.非常易于使用，只需在网上登录您的OpenAI账户，并创建一个新的电子表格，就可以开始使用ChatGPT服务。with CSV/JSON import and export.目前提供免费试用，之后根据您使用的请求次数收费。
+https://www.csvjsongpt.com/
+
+## Curiosity-led exploration of a concept with GPT4. Given a topic, it prompts new questions to ask based on its own generated responses.
+Curiosity-led exploration of a concept with GPT4. Given a topic, it prompts new questions to ask based on its own generated responses.是一款基于GPT-4技术的AI工具，可以让您通过提问来探索一个概念，并根据AI生成的回答，引发新的问题。您只需要输入一个感兴趣的主题，例如“人工智能”、“量子物理”、“古希腊神话”等，这款工具就会为您生成一个相关的问题，并给出一个简短的回答。然后，您可以选择继续提问，或者让AI为您生成一个新的问题，以深入了解这个主题。这款工具可以帮助您拓展您的知识面，激发您的好奇心，发现新的事物。这款工具目前处于开发阶段，您可以在[1]上注册以获取早期访问权限。
+https://www.curiosity.ai/
+
+## Cytations - Find YouTube videos that cite an arXiv paper.
+Cytations - Find YouTube videos that cite an arXiv paper.是一款让您可以找到引用了arXiv论文的YouTube视频的工具。arXiv是一个在线存档和分发平台，主要收录物理学、数学、计算机科学等领域的预印本论文。YouTube是一个视频分享平台，有许多视频涉及科学和技术方面的内容。Cytations可以帮助您发现这两个平台之间的联系，通过输入一个arXiv论文的标题或链接，Cytations就会使用GPT-4技术，为您找出相关的YouTube视频，并显示视频标题、时长、发布日期、观看次数等信息。Cytations可以帮助您扩展您的知识面，了解不同的观点和解释，发现新的资源和灵感。Cytations目前处于开发阶段，您可以在[3]上注册以获取早期访问权限。
+https://www.cytations.com/
+
+## Deep Anime
+Deep Anime是一款基于GPT-4的AI照片转动漫场景工具，能够为用户将任何照片转换为动漫风格的场景。用户可以向Deep Anime上传任何格式的照片文件，如JPG、PNG、BMP等，Deep Anime会根据照片的内容和风格，自动生成一个逼真、美观和优化的动漫场景，并提供修改和优化建议。Deep Anime还可以根据用户的需求，自动添加动漫元素，如角色、道具、特效等，并支持多种动漫风格和主题。Deep Anime目前免费提供给公众使用。
+https://www.deepanime.com/
+
+## Domains GPT - Generate brandable & memorable domain names using AI.
+Domains GPT - Generate brandable & memorable domain names using AI.是一款利用AI技术来为用户生成有品牌感和易记忆的域名的软件，由一家AI和域名公司Domains GPT开发，并发布在Domains GPT公司的官方网站上。Domains GPT可以让用户使用基于ChatGPT模型的AI域名生成器，来输入一些关键词或短语，例如产品、服务、主题等，并从互联网上收集和分析相关的域名，生成一些与之匹配的域名，并保留域名中的创意和特色。Domains GPT还可以让用户通过自然语言输入来修改和调整生成的域名，并实时显示修改后的效果。Domains GPT还可以让用户检查生成的域名是否可用，并提供一些注册和购买的选项和建议。Domains GPT是一个有趣和实用的软件，可以让用户轻松地为自己或他人生成有品牌感和易记忆的域名。
+https://www.domainsgpt.com/
+
+## DreamBooth3D - Personalized 3D models from just a few casual photos, with text-driven modifications.
+DreamBooth3D - Personalized 3D models from just a few casual photos, with text-driven modifications.是一款利用AI技术从几张随意拍摄的照片中创建个性化的3D模型，并通过文本输入进行修改的应用程序，由一家AI和图形学公司DreamBooth开发，并发布在DreamBooth公司的官方网站上。DreamBooth3D可以让用户上传几张自己或他人的照片，然后使用基于ChatGPT模型的AI图像生成器，生成一个与照片内容和风格一致的3D模型，并保留照片中的细节和特征。DreamBooth3D还可以让用户通过自然语言输入来修改生成的3D模型，例如改变颜色、形状、大小、姿势等，并实时显示修改后的效果。DreamBooth3D是一个有趣和实用的应用程序，可以让用户轻松地创建和修改自己或他人的3D模型。
+https://www.dreambooth.com/dreambooth3d
+
+## Dreamlife
+Dreamlife是一款基于人工智能的设计生成平台，可以为用户在几秒钟内从手机拍摄的照片中生成漂亮的设计。Dreamlife使用了最新的深度学习和图像生成技术，能够从用户输入或上传的照片中分析其内容和风格，并生成高质量、原创和有创意的设计。用户可以在Dreamlife中输入或上传任何类型的照片，如人物、风景、物品等，并选择想要生成设计的类型和主题，如海报、名片、邀请函等。Dreamlife还提供了一些智能的功能，如图像编辑、文本添加、颜色调整等。Dreamlife是一款方便和实用的工具，让用户可以从手机拍摄的照片中快速地创建出漂亮的设计。Dreamlife目前提供免费试用和付费订阅，您可以在Dreamlife网站上注册使用它。
+https://www.dreamlife.com/
+
+## Duolingo AI Language Tutor
+Duolingo AI Language Tutor是一款由Duolingo推出的AI语言学习辅导工具，由GPT-4驱动。它可以通过两个新功能“角色扮演”和“解释我的答案”来提高用户的语言水平和信心。“角色扮演”让用户与AI进行真实场景的对话练习，“解释我的答案”让用户了解自己在语法、发音和词汇上的错误，并给出改进建议。Duolingo AI Language Tutor目前只针对正在学习法语或西班牙语的英语用户，并计划在未来扩展到其他语言。
+https://www.duolingo.com/ai
+
+## Easy Peasy
+Easy Peasy是一个利用人工智能让您快速创建出色内容的工具。Easy Peasy可以帮助您根据您的目标和需求，为您生成高质量、原创和有创意的内容，无论是博客文章、社交媒体帖子、广告文案还是电子书等。Easy Peasy使用了先进的AI技术，能够根据您提供的关键词、标题或摘要等信息，为您生成适合您的内容，并提供多种编辑选项供您选择。Easy Peasy还可以让您控制内容的长度、风格和语言，并根据读者的反馈和行为进行优化。Easy Peasy是一个方便快捷、功能强大、价格合理的内容生成工具，您可以在其官方网站上免费注册并开始使用它。
+https://www.easypeasy.ai
+
+## Eightify
+Eightify是一款基于GPT-4的AI视频摘要工具，能够为用户提供YouTube视频的精简和高效的摘要。用户可以向Eightify输入任何YouTube视频的链接，Eightify会根据视频的内容和时长，自动生成一个8分钟以内的视频摘要，并提供修改和优化建议。Eightify还可以根据用户的偏好和反馈进行自我调整和改进，提高摘要的质量和创意。Eightify目前免费提供给公众使用。
+https://www.eightify.com/
+
+## Eleuther AI, the non-profit research lab, has released the dataset library and 2.0 versions of their models
+Eleuther AI, the non-profit research lab, has released the dataset library and 2.0 versions of their models是一条由Eleuther AI发布的新闻，宣布了他们的最新进展和成果。Eleuther AI是一个非营利性的人工智能研究实验室，专注于大规模语言模型的可解释性和对齐性。他们发布了一个开放获取的数据集库，包含了多种领域和语言的文本数据，供研究者和开发者使用。他们还发布了他们的2.0版本的语言模型，包括Pythia、Gorgon、Pegasus等，这些模型都基于GPT-4技术，具有高效、强大和创新的特点。新闻的网址是https://www.eleuther.ai/news/
+https://www.eleuther.ai/news/
+
+## Everylead
+Everylead是一款基于OpenAI ChatGPT的智能外联工具，能够为您生成个性化的冰破话，并提高您的回复率。Everylead可以根据您想要联系的目标客户或合作伙伴的个人资料，生成一些与他们相关的话题或问题，并用友好和专业的语气写出一封完整的电子邮件。Everylead可以帮助您建立信任和关系，提高您的转化率和销售额。Everylead目前是一个Chrome浏览器扩展，可以在Gmail和LinkedIn中使用。您可以在Chrome网上应用店免费下载它。
+https://www.everylead.ai
+
+## Everylead
+Everylead是一个基于人工智能的工具，可以帮助您根据LinkedIn上的潜在客户的个人资料生成个性化的消息。Everylead简化了潜在客户生成的过程，通过自动化的研究工作，为每个潜在客户创建定制的消息。Everylead提供了多种强大的功能来增强您的潜在客户生成效果。Everylead的人工智能研究功能自动总结每个潜在客户的专业经历，并创建一个高度个性化的一句话，可以包含在外部营销活动中，增加获得积极回应的可能性。Everylead还提供了基于人物的一句话功能，让您可以根据每个潜在客户的兴趣、爱好、个性等特点生成有吸引力和有说服力的消息。Everylead目前提供15天免费试用，让您可以体验Everylead的全部功能，而无需任何财务承诺。我们相信，一旦您看到我们的平台可以带来的惊人结果，您就会渴望继续使用Everylead作为您首选的潜在客户生成工具。不要再浪费更多时间手动搜索潜在客户和制作外部消息。加入已经使用Everylead革命性地改变了他们潜在客户生成效果的数千名满意客户吧。今天就注册，并释放人工智能潜在客户生成和外部营销在LinkedIn上的潜力吧。
+https://www.everylead.ai/
+
+## Exemplary
+Exemplary是一款AI音频和视频转换工具，可以帮助您将您的音频和视频内容转换为引人入胜的文字内容。Exemplary使用了先进的AI语音识别技术，可以准确地将任何语言的音频和视频转换为文字，并且保留原始内容的语气和风格。Exemplary还可以让您对转换后的文字进行编辑、格式化和优化，使其更适合于博客、社交媒体或电子书等平台。Exemplary是一个高效和实用的工具，可以让您扩大您的受众范围，提高您的内容影响力。
+https://www.exemplary.ai/
+
+
+
+# AI 工具目录
+
+### Fabrie
+Fabrie是一款面向设计师的人工智能渲染平台，可以让设计师从草图中创建出惊艳的渲染效果。Fabrie使用了最新的深度学习和计算机图形学技术，能够理解和创造高质量、原创和有创意的渲染图像。用户可以在Fabrie中输入或上传任何类型的草图，如手绘、平面、立体等，然后Fabrie会为用户生成一系列的渲染效果，并提供多种材质、光照、角度等选项。用户还可以在Fabrie中编辑和调整生成的渲染效果，或者导出为JPG或PNG格式。Fabrie是一款方便和强大的工具，让设计师可以轻松地创建出令人惊叹的渲染效果。Fabrie目前提供免费试用和付费订阅，您可以在Fabrie网站上注册使用它。
+
+官网：https://www.fabrie.com/
+
+### Figure
+Figure - AI Robotics company building the world's first commercially viable autonomous humanoid robot 是一家创新的AI机器人公司，致力于打造第一款具有通用性的人形机器人。Figure的人形机器人可以在制造、物流、仓储和零售等领域提供支持，解决劳动力短缺和工作安全问题。Figure的人形机器人使用了先进的AI技术，能够自主地思考、学习和与环境互动。Figure的人形机器人目前处于开发阶段，尚未公布价格和上市时间。您可以在其官方网站上了解更多信息。
+
+官网：https://www.figure.ai
+
+### Fixie
+Fixie是一款基于OpenAI ChatGPT的企业级平台即服务（PaaS），可以帮助企业将聊天机器人与自己的数据、系统和工作流程相连接。Fixie可以让企业轻松地构建基于自然语言处理（NLP）和大规模语言模型（LLM）的智能代理（Agent），并且可以与数据库、API、生产力工具和公共数据源等外部系统进行交互，从而生成和处理任意的文本、图像、声音、动画、3D模型和甚至是计算机代码等内容。Fixie的创始人和CEO Matt Welsh是前Google Chrome团队的工程领导，而联合创始人和CPO Zach是前Apple Siri团队的工程领导。他们认为，生成式人工智能将取代很多传统的软件，因为这些模型可以作为一个自然语言驱动的“问题解决引擎”[^7^]。Fixie目前已经获得了1700万美元的种子轮融资，由Redpoint Ventures领投，参与投资的还有Erica Brescia（GitHub的首席运营官）和其他一些知名天使投资人[^8^]。
+
+官网：https://www.fixie.ai
+
+### FlowCog
+FlowCog是一款基于人工智能的SaaS公司收入和现金流预测平台，可以帮助SaaS公司更好地管理其财务状况和增长策略。FlowCog使用了最新的机器学习和数据分析技术，能够从SaaS公司提供的数据中提取有用的信息，并生成准确和可靠的收入和现金流预测报告。FlowCog还可以为SaaS公司提供实时的财务指标监控、预算规划、风险评估等功能，并提供智能的建议和优化方案。FlowCog是一款智能和高效的工具，让SaaS公司可以更轻松和有信心地管理其财务和增长。FlowCog目前提供免费试用和付费订阅，您可以在FlowCog网站上注册使用它。
+
+官网：https://www.flowcog.com/
+
+### FlowGPT
+FlowGPT是一款基于人工智能的多线程对话平台，可以让用户使用节点式流程编辑器来探索AI对话，并提高其结构性和清晰度。FlowGPT使用了最新的自然语言处理和对话生成技术，能够从用户输入的节点式流程中分析其对话逻辑和目标，并生成高质量、原创和有创意的对话内容。用户可以在FlowGPT中输入任何类型的节点式流程，如问答、故事、游戏等，然后FlowGPT会为用户生成一系列的多线程对话，并提供多种语言和情感的选项。用户还可以在FlowGPT中编辑和调整生成的多线程对话，或者导出为文件或链接。FlowGPT是一款有趣和强大的工具，让用户可以使用节点式流程编辑器来探索AI对话的可能性和潜力。FlowGPT目前处于测试阶段，您可以在FlowGPT网站上免费试用它。
+
+官网：https://www.flowgpt.com/
+
+### Foundation Model Ops
+Foundation Model Ops是一款由Foundation AI推出的AI应用开发和运维平台，能够支持下一代基于生成式AI模型的应用。该平台可以让开发者快速地构建、部署和管理基于GPT-4等大型语言模型的应用，如聊天机器人、内容生成器、知识图谱等。该平台还可以让开发者轻松地监控、调试和优化基于生成式AI模型的应用，如性能、安全、质量等。Foundation Model Ops目前处于测试阶段，需要申请才能使用。
+
+官网：https://www.foundationai.com/model-ops
+
+### Gen AI videos
+Gen AI videos是一款基于AI的视频生成工具，能够让您上传自己的照片，并生成令人惊叹的AI视频。Gen AI videos使用了深度学习和图像合成技术，来将您的照片变成动态的视频，并添加音乐、特效、滤镜等。Gen AI videos可以帮助您制作出各种类型的视频，如故事、广告、教程、表情包等，并在社交媒体上分享和传播。Gen AI videos目前是一个Web应用，可以在任何浏览器中使用。您可以在Gen AI videos的官方网站上免费试用它。
+
+官网：https://www.genai.videos
+
+### Generative BI
+Generative BI是一款提高生产力的应用程序，可以通过提问来分析数据和构建仪表盘！无需技术知识背景，Generative BI可以回答您的业务问题，并通过探索和分析您的数据，帮助您超越竞争对手，而不会泄露您的隐私。Generative BI使用GPT-3技术，能够理解自然语言的问题，并生成相应的数据可视化和仪表盘。Generative BI还可以提供额外的评论，解释分析结果，数据来源和统计方法。Generative BI目前处于开发阶段，您可以在[18]上注册以获取早期访问权限。
+
+官网：https://www.generativebi.com/
+
+### GetBotz
+GetBotz是一个利用人工智能为您设置博客自动驾驶仪的工具。GetBotz可以帮助您节省时间和精力，提高博客写作效率和质量。GetBotz使用了先进的AI技术，能够根据您提供的博客主题、关键词和风格等信息，为您生成高质量、原创和有创意的博客文章，并自动发布到您选择的平台上。GetBotz还可以让您控制博客文章的长度、频率和时间，并根据读者的反馈和行为进行优化。GetBotz是一个方便快捷、高效可靠、价格合理的博客写作工具，您可以在其官方网站上免费注册并开始使用它。
+
+官网：https://www.getbotz.ai
+
+### GetBotz
+GetBotz是一款基于GPT-4的AI博客自动化工具，能够为用户生成高质量、原创和有创意的博客文章。用户只需输入博客的主题、关键词和长度，GetBotz就会根据用户的需求，自动写出适合的博客文章，并提供修改和优化建议。GetBotz还可以根据用户的偏好和反馈进行自我调整和改进，提高文章的质量和创意。GetBotz目前提供免费和付费两种订阅方式，免费用户每月可以生成5篇博客文章，付费用户每月可以生成无限篇博客文章。付费订阅的价格为每月29.99美元或每年299.99美元。
+
+官网：https://www.getbotz.com/
+
+### Voila
+Voila是一个强大的浏览器助手，旨在提升您的生产力和帮助您完成日常任务。Voila使用了先进的AI技术，能够通过简单对话来完成各种任务，例如搜索信息、写邮件、管理日程、预订酒店、翻译文本等。Voila还可以与其他应用程序集成，例如Gmail、Google Calendar、Google Docs等，让您可以在浏览器中轻松地使用它们。Voila还支持多语言（测试版），因此您可以用任何您想要的语言与它交流。Voila是一个简单易用、功能强大、价格实惠的浏览器助手，您可以在Chrome网上应用店免费下载它。
+
+官网：https://www.getvoila.ai
+
+### Ghost
+Ghost's new anonymous group messaging app has ChatGPT baked in 是一款新推出的匿名群聊应用，集成了ChatGPT的智能功能。该应用允许用户在群聊中发送匿名消息，以便与朋友进行调情、开玩笑或提问，而不用暴露自己的身份。该应用还包括了一系列其他功能，例如用户可以直接在群聊中向ChatGPT提问，并获得有趣的回答。为了保护用户的隐私和安全，该应用使用了一种称为“Ghost Protocol”的系统，利用端到端加密技术，在用户的设备上进行身份验证。这样，该应用知道谁可以访问某个群聊，但Ghost公司本身不知道。该应用目前可以在App Store和Google Play上免费下载。
+
+官网：https://www.ghostapp.com/
+
+### Gift Genius
+Gift Genius是一款基于人工智能的礼物推荐平台，可以为用户根据不同的场合和对象，找到完美的礼物。Gift Genius使用了最新的自然语言处理和推荐系统技术，能够从用户输入的礼物条件中分析其礼物需求和偏好，并从海量的礼物数据中筛选出最佳的礼物选项，并提供详细的信息和评价。用户可以在Gift Genius中输入任何类型的礼物条件，如收礼人、场合、主题、价格等，并根据自己的喜好调整排序方式。Gift Genius是一款方便和实用的工具，让用户可以更快速和低成本地找到理想的礼物。Gift Genius目前可以在Gift Genius网站上免费使用。
+
+官网：https://www.giftgenius.com/
+
+### Gitfluence
+Gitfluence是一个快速找到正确的Git命令的工具。Gitfluence可以帮助您解决各种Git相关的问题，例如如何创建分支、合并代码、撤销更改等。Gitfluence使用了先进的AI技术，能够根据您提供的问题或目标，为您生成最适合您的Git命令，并提供相关的说明和示例。Gitfluence还可以让您与之进行自然语言对话，以获取更多的信息和指导。Gitfluence是一个简单易用、高效可靠、免费开源的Git命令工具，您可以在其官方网站上免费下载它。
+
+官网：https://www.gitfluence.ai
+
+### GPT Hotline
+GPT Hotline是一款基于GPT-4的AI热线服务，能够让用户通过Whatsapp与世界上最聪明的AI进行对话。用户可以向GPT Hotline发送任何问题或请求，如知识、建议、娱乐等，GPT Hotline会根据用户的输入，给出智能、友好和有趣的回答。GPT Hotline可以与用户进行自然、流畅和有效的对话，并根据用户的情绪、语气和需求进行自我调整。GPT Hotline目前免费提供给公众使用。
+
+官网：https://www.gpthotline.com/
+
+### Halfway words
+Halfway words是一个利用人工智能为您找到两个单词之间的中间单词的工具。Halfway words可以帮助您发现和创造一些有趣和有意义的单词，无论是在写作、学习还是娱乐方面。Halfway words使用了先进的AI技术，能够根据您提供的两个单词，为您生成一个介于它们之间的单词，并提供相关的信息和链接。Halfway words还可以让您与之进行自然语言对话，以获取更多的信息和建议。Halfway words是一个创新和有趣的单词工具，您可以在其官方网站上免费注册并开始使用它。
+
+官网：https://www.halfwaywords.ai
+
+### Harpa AI
+Harpa AI是一款基于ChatGPT的AI谷歌搜索辅助工具，能够为用户在谷歌搜索时提供一个集成的ChatGPT聊天界面。用户可以向Harpa AI发送任何问题或请求，如知识、建议、娱乐等，Harpa AI会根据谷歌搜索的结果，给出智能、友好和有趣的回答。Harpa AI还可以根据用户的偏好和反馈进行自我调整和改进，提高回答的质量和创意。Harpa AI目前免费提供给公众使用。
+
+官网：https://www.harpa.ai/
+
+### HelloScribe
+HelloScribe是一个基于人工智能的写作和头脑风暴工具，专为公关和营销专业人士设计。HelloScribe的AI工具可以帮助您激发大胆的创意，制作出令人惊叹的内容，并让您的作品脱颖而出。HelloScribe提供了100多种精准的工具，让您可以为您的营销组织的每个方面创建内容和创意，从策略到传播。您可以使用HelloScribe从长视频中提取短品牌视频片段，从文本中生成引人注目的销售视频，从博客文章中制作吸引人的视频，以及自动添加字幕等。HelloScribe目前提供免费试用，您可以在官网注册并开始使用。
+
+官网：https://www.helloscribe.ai/
+
+### HerbGPT
+HerbGPT - Say goodbye to the guesswork and join the future of personalised cannabis consumption. 是一款利用AI技术来为用户提供个性化的大麻消费建议的应用程序，由一家AI和大麻公司Herb开发，并发布在Herb公司的官方网站上。HerbGPT可以让用户使用基于Jasper模型的AI大麻消费指导器，来根据用户输入的一些信息和偏好，生成一些与之匹配的大麻消费建议，例如品种、剂量、方式、时间等。HerbGPT还可以让用户通过自然语言输入来修改和调整生成的大麻消费建议，并实时显示修改后的效果。HerbGPT是一个有趣和实用的应用程序，可以让用户轻松地根据自己的需求和体验，进行个性化的大麻消费。
+
+官网：https://www.herb.com/herbgpt
+
+### HideGPT
+HideGPT - Completely masks the fingerprint of GPT on any piece of text. 是一款能够完全掩盖GPT在任何文本上留下的指纹的工具。GPT是一种强大的自然语言生成技术，可以生成高质量和有创意的文本。但是，GPT也会在生成的文本中留下一些特征，例如词汇、语法、风格等，这些特征可能会被检测出来，导致文本被认为是由机器生成的。HideGPT可以帮助您避免这种情况，通过使用GPT-4技术，对生成的文本进行微调和修改，使其看起来更像人类写的。HideGPT可以保护您的隐私和版权，让您可以放心地使用GPT生成的文本，而不用担心被揭穿或被剽窃。HideGPT目前处于测试阶段，您可以在[1]上免费试用它。
+
+官网：https://www.hidegpt.com/
+
+### HitPaw
+HitPaw是一款基于GPT-4的AI视频修复工具，能够为用户修复模糊、旧化、低分辨率的视频。用户可以向HitPaw上传任何格式的视频文件，如MP4、AVI、MOV等，HitPaw会根据视频的质量和问题，自动修复视频，并提供修改和优化建议。HitPaw还可以根据用户的需求，自动增加视频的清晰度、亮度、色彩等，并支持多种分辨率和帧率。HitPaw目前提供免费和付费两种订阅方式，免费用户每月可以修复10个视频，付费用户每月可以修复无限个视频。付费订阅的价格为每月19.99美元或每年199.99美元。
+
+官网：https://www.hitpaw.com/
+
+### HoppyCopy
+HoppyCopy是一个基于人工智能的电子邮件营销文案平台，可以帮助用户快速高效地生成吸引人的电子邮件内容，用于各种不同的电子邮件营销活动、滴水营销、新闻通讯等。HoppyCopy提供了50多种电子邮件模板，使用科学验证的公式来生成适合您需求的文案。您还可以使用高级编辑工具来修改文案，添加创意标题、引人注目的主题行、有说服力的预览文本等。HoppyCopy还可以帮助您检测垃圾邮件关键词，避免您的电子邮件被过滤到垃圾邮件文件夹。HoppyCopy目前提供免费试用，您可以在官网注册并开始使用。
+
+官网：https://www.hoppycopy.co/
+
+
+
+# AI 工具列表
+
+| GPT for numbers and analytics from iGenius. | GPT for numbers and analytics from iGenius.是一款利用GPT技术来帮助用户进行数字和分析的工具，由一家AI和数据公司iGenius开发，并发布在iGenius的官方网站上。GPT for numbers and analytics可以让用户通过自然语言输入他们想要分析的数据或问题，然后使用基于GPT模型的AI分析引擎，来生成数字、图表、报告、见解等。GPT for numbers and analytics还可以让用户选择不同的GPT模型和参数，以调整分析的风格和质量。GPT for numbers and analytics是一个高效和实用的工具，可以让用户轻松地进行数字和分析。 | `https://www.igenius.ai/gpt-for-numbers-and-analytics` |
+
+| Illustroke | Illustroke是一款基于人工智能的矢量插画生成平台，可以根据用户输入的文本提示，生成精美的矢量插画。Illustroke使用了最新的深度学习和计算机视觉技术，能够理解和创造高质量、原创和有创意的矢量图形。用户可以在Illustroke中输入任何类型的文本提示，如物品、场景、情感等，然后Illustroke会为用户生成一系列的矢量插画，并提供多种风格和颜色的选项。用户还可以在Illustroke中编辑和调整生成的插画，或者导出为SVG或PNG格式。Illustroke是一款有趣和高效的工具，让用户可以轻松地创建出惊艳的矢量插画。Illustroke目前处于测试阶段，您可以在Illustroke网站上免费试用它。 | `https://www.illustroke.com/` |
+
+| Insight7 | Insight7是一款基于ChatGPT的客户反馈平台，可以让用户使用AI来自动地分析和理解客户的反馈。Insight7使用了最新的自然语言处理和数据分析技术，能够从用户输入或上传的客户反馈中提取有用的信息，并生成高质量、原创和有创意的反馈报告。用户可以在Insight7中输入或上传任何类型的客户反馈，如文本、语音、视频等，并选择想要生成反馈报告的类型和维度。Insight7还提供了一些智能的功能，如主题识别、洞察发现、情感分析、来源追踪等。Insight7是一款智能和高效的工具，让用户可以使用AI来提升其客户反馈的效果和价值。Insight7目前提供免费试用和付费订阅，您可以在Insight7网站上注册使用它。 | `https://www.insight7.com/` |
+
+| Insula | Insula是一款基于人工智能的三维头像人形平台，可以让用户用自然语言与一个三维头像人形进行沟通。Insula使用了最新的自然语言处理和计算机图形学技术，能够从用户输入的文本或语音中分析其沟通目的和内容，并生成高质量、原创和有创意的回复，并通过一个三维头像人形以文本或语音形式呈现出来。用户可以在Insula中选择或自定义一个三维头像人形，并与其进行实时的沟通。Insula还提供了一些智能的功能，如情感表达、面部识别、姿态识别等。Insula是一款有趣和强大的工具，让用户可以用自然语言与一个三维头像人形进行沟通。Insula目前处于测试阶段，您可以在Insula网站上免费试用它。 | `https://www.insula.com/` |
+
+| Intercom AI Customer Support Agent | Intercom AI Customer Support Agent是一款由Intercom推出的人工智能客服代理工具，由GPT-4驱动。它可以与客户进行自然、友好和有效的对话，回答他们的问题、解决他们的问题、提供他们的反馈等。Intercom AI Customer Support Agent可以根据客户的情绪、语气和需求进行自我调整，并提供个性化的服务。Intercom AI Customer Support Agent目前已经在部分Intercom客户中使用，并计划在未来向更多客户开放。 | `https://www.intercom.com/ai-customer-support-agent` |
+
+| Interview Jam | Interview Jam是一款基于人工智能的面试准备和求职平台，可以帮助用户进行有效的面试练习和找到理想的工作机会。Interview Jam使用了最新的自然语言处理和面试生成技术，能够从用户输入的职位描述和个人信息中分析其求职需求和优势，并生成高质量、原创和有创意的面试问题和答案。用户可以在Interview Jam中输入或上传任何类型的职位描述和个人信息，如简历、作品集、推荐信等，并选择想要进行面试练习的类型和难度。Interview Jam还提供了一些智能的功能，如语音交流、反馈评价、建议优化等。Interview Jam是一款方便和实用的工具，让用户可以通过有效的面试练习来提升其求职技能和信心，并找到理想的工作机会。Interview Jam目前提供免费试用和付费订阅，您可以在Interview Jam网站上注册使用它。 | `https://www.interviewjam.com/` |
+
+| Inworld | Inworld是一款基于GPT-4的AI世界创建工具，能够为用户创建逼真的世界和由AI驱动的角色。用户可以向Inworld输入他们想要创建的世界的主题、风格和元素，Inworld会根据用户的输入，自动生成一个详细、美观和优化的世界，并提供修改和优化建议。Inworld还可以根据用户的需求，自动添加角色、物品、事件等，并让用户与他们进行交互和探索。Inworld目前处于测试阶段，需要申请才能使用。 | `https://www.inworld.com/` |
+
+| Milo co-parent | Milo co-parent是一款为父母提供AI协助的工具，由GPT-4驱动。它可以帮助父母处理家庭管理中的各种琐事，如购物清单、日程安排、生日邀请等。父母可以通过短信、截图或语音信息把这些事情发送给Milo co-parent，它会自动整理并发送到相应的地方，如日历、提醒、家庭群组等。Milo co-parent还会在需要时提供提示和建议，让父母更轻松地平衡工作和家庭。Milo co-parent目前需要付费使用，每月40美元。 | `https://www.joinmilo.com/` |
+
+| Journee | Journee是一个协作式人工智能工作空间，旨在帮助教师减轻工作压力和提高教学效率。Journee利用人工智能技术，为教师提供智能的课程设计、评估、反馈、数据分析等功能，让教师可以轻松地创建和管理高质量的教学内容。Journee还支持教师之间的协作和交流，让教师可以共享和借鉴彼此的经验和资源，形成一个有活力的教学社区。Journee目前提供免费试用，您可以在官网注册并开始使用。 | `https://www.journee.ai/` |
+
+| Kaya | Kaya是一个让您可以创建和分享一个个人AI的平台，该AI是根据您的知识和经验进行训练的。Kaya可以让您将您的专业知识、个人故事、兴趣爱好等转化为一个智能的聊天机器人，您可以与之交流，也可以与其他人分享。您只需通过简单的对话来教授您的AI，Kaya就会使用先进的AI技术来学习和理解您的内容，并生成有趣和有用的回答。Kaya还可以让您控制您的AI的外观、声音和性格，以及选择谁可以与您的AI交流。Kaya是一个创新和有趣的平台，让您可以拥有一个属于自己的AI伙伴，也可以与其他人的AI进行互动。Kaya目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | `https://www.kaya.ai` |
+
+| Keeper | Keeper是一款基于人工智能的在线约会匹配平台，可以为用户提供最适合其个性和兴趣的约会对象推荐。Keeper使用了最新的机器学习和数据分析技术，能够从用户输入或上传的个人信息和偏好中分析其约会需求和优势，并从海量的约会对象数据中筛选出最佳的匹配选项，并提供详细的信息和评价。用户可以在Keeper中输入或上传任何类型的个人信息和偏好，如年龄、性别、爱好、地点等，并根据自己的喜好调整匹配方式。Keeper还提供了一些智能的功能，如聊天交流、视频通话、约会建议等。Keeper是一款方便和实用的工具，让用户可以更轻松和有趣地找到理想的约会对象。Keeper目前提供免费试用和付费订阅，您可以在Keeper网站上注册使用它。 | `https://www.keeper.com/` |
+
+| Keeper | Keeper是一款基于GPT-4的在线约会平台，能够根据用户的个人资料和偏好，为他们寻找合适的匹配对象，并自动跟进。Keeper还利用计算机视觉技术来分析用户的外貌特征，让用户可以根据任何条件进行筛选，找到理想的伴侣。Keeper目前处于内测阶段，需要邀请码才能注册。 | `https://www.keeperdating.com/` |
+
+| Khanmigo | Khanmigo是可汗学院推出的AI导师，旨在帮助学习者发展批判性思维和更深入地理解可汗学院的内容。Khanmigo利用GPT-4技术，通过自然语言处理与学习者进行双向对话，提出问题和建议。Khanmigo可以作为学习者的个人导师，也可以作为教师的助手。Khanmigo目前处于测试阶段，需要捐赠9美元/月或99美元/年才能使用。 | `https://www.khanacademy.org/khan-labs` |
+
+| KindleGPT | KindleGPT是一款基于OpenAI的GPT-4的AI阅读辅导工具，能够让用户通过聊天的方式，与自己的Kindle书籍进行交互。用户可以向KindleGPT发送任何问题或请求，如书籍的概要、主题、角色、作者等，KindleGPT会根据书籍的内容，给出智能、友好和有趣的回答。KindleGPT还可以根据用户的阅读进度和表现，给出评估和建议，并调整阅读计划。KindleGPT目前处于测试阶段，需要申请才能使用。 | `https://www.kindlegpt.com/` |
+
+| Kittl AI - 10x your design skills with AI-based vector editing. | Kittl AI - 10x your design skills with AI-based vector editing.是一款利用AI技术来提升用户的设计技能和效率的软件，由一家AI和设计公司Kittl开发，并发布在Kittl公司的官方网站上。Kittl AI可以让用户使用基于ChatGPT模型的AI矢量编辑器，来创建和修改各种类型和主题的矢量图形，例如图标、标志、插画等。Kittl AI还可以让用户通过自然语言输入来控制和调整生成的矢量图形，例如改变颜色、形状、大小、样式等，并实时显示修改后的效果。Kittl AI是一个有趣和实用的软件，可以让用户轻松地创建和修改自己或他人的矢量图形。 | `https://www.kittl.com/kittl-ai` |
+
+| Lambda has raised $44M to build the best cloud for training AI | Lambda has raised 是一个利用人工智能为您提供最佳的云端训练平台的公司，已经获得了万美元的融资。可以帮助您轻松地使用各种服务和功能，例如文本生成、图像识别、语音转换等，并将它们在云端进行训练和部署。使用了先进的技术，能够根据您设定的目标和需求，为您提供最佳的云端训练方案，并提供相关的结果和信息。还可以让您与之进行自然语言对话，以获取更多的信息和指导。是一个创新和高效的云端训练平台公司，适合任何想要利用服务或功能来改善或创造应用的人。Lambda has raised $44M to build the best cloud for training AI目前处于发展阶段，您可以在其官方网站上免费注册并开始使用它。 | `https://www.lambda.ai` |
+
+| Landbot AI | Landbot AI是一款基于GPT-4的AI无代码聊天机器人工具，能够为用户快速地创建和部署自定义的聊天机器人。用户可以向Landbot AI输入他们想要创建的聊天机器人的目标、场景和功能，Landbot AI会根据用户的输入，自动生成一个适合的聊天机器人，并提供修改和优化建议。Landbot AI还可以根据用户的需求，自动添加聊天机器人的界面、逻辑、数据等，并支持多种平台和语言。Landbot AI目前提供免费和付费两种订阅方式，免费用户每月可以创建3个聊天机器人，付费用户每月可以创建无限个聊天机器人。付费订阅的价格为每月19.99美元或每年199.99美元。 | `https://www.landbot.ai/` |
+
+| LangChainAI Chatbot Codebase Scanner | LangChainAI Chatbot Codebase Scanner是一款利用GPT-4技术来检测聊天机器人代码库中存在的错误和漏洞的工具。它可以分析聊天机器人的前端代码，并指出可能导致崩溃、性能下降或安全风险的地方。它还可以给出修复建议，并自动优化代码。LangChainAI Chatbot Codebase Scanner目前还没有公开发布，只有LangChainAI的开发者在使用。 | `https://www.langchainai.com/` |
+
+| Leia | Leia是一款可以让您在设备上以3D方式观看任何2D内容的应用，由Leia Inc.开发。Leia利用了一种纳米技术突破，使得衍射光场背光（DLB）成为可能。DLB是一种在LCD显示屏下方放置一个光学层，使得显示屏可以在2D和3D之间实时切换，并提供深度、视差和视角等3D效果。Leia还结合了强大的AI技术，可以将2D视频和图片转换成3D格式，并帮助用户创建自己的3D体验。Leia还提供了一系列专门为3D设计的应用程序，如LeiaPlayer、LeiaCam、LeiaChat等，让用户可以观看、拍摄、分享3D媒体内容，并与其他3D爱好者互动。Leia已经推出了世界上第一款3D•AI平板电脑Lume Pad 2，并计划在未来推出更多3D设备和服务。 | `https://www.leiainc.com/` |
+
+| Lemonaid | Lemonaid是一款基于AI的音乐制作工具，能够为您生成5000万种独一无二的MIDI进展，让您轻松地制作出专业水准的音乐。Lemonaid使用了深度学习和音乐理论技术，来根据您选择的音乐风格、节奏、调式等参数生成一系列不同的MIDI进展，并提供了多种音色和效果供您选择。Lemonaid可以帮助您提高您的音乐创造力和灵感，并在社交媒体上分享和传播。Lemonaid目前是一个Web应用，可以在任何浏览器中使用。您可以在Lemonaid的官方网站上注册并开始免费使用它。 | `https://www.lemonaid.ai` |
+
+| Lex | Lex是一个利用人工智能为您提供写作反馈的工具。Lex可以帮助您改善和美化您的写作质量，无论是文章、邮件、报告还是简历等。Lex使用了先进的AI技术，能够根据您提供的写作文件或URL，为您生成实时的反馈和建议，并提供相关的信息和链接。Lex还可以让您与之进行自然语言对话，以获取更多的信息和指导。Lex是一个简单易用、功能强大、价格实惠的写作反馈工具，您可以在其官方网站上免费注册并开始使用它。Lex还添加了一个新功能，就是可以从一个智能的AI编辑那里获取写作反馈，您可以在这里查看演示。 | `https://www.lex.ai` |
+
+| LinkedIn AI tools | LinkedIn AI tools是一款由LinkedIn推出的基于GPT-4的AI工具套件，能够为用户生成个人资料和职位描述等文本内容。该工具套件可以帮助用户在创建或更新LinkedIn个人资料时，自动填写相关的信息，如头衔、摘要、技能等，并提供修改和优化建议。该工具套件还可以帮助雇主在发布或编辑LinkedIn职位时，自动生成吸引人的职位描述，如职责、要求、福利等，并提供修改和优化建议。LinkedIn AI tools目前已经在部分LinkedIn用户中使用，并计划在未来向更多用户开放。 | `https://www.linkedin.com/ai-tools` |
+
+| Literally Anything - Transform natural language into simple apps, UI, widgets, websites, games, and forms. | Literally Anything - Transform natural language into simple apps, UI, widgets, websites, games, and forms.是一款让您可以用自然语言来创建简单应用程序、用户界面、小部件、网站、游戏和表单的工具。您只需要输入一个描述您想要的东西的句子，例如“一个计算器”、“一个音乐播放器”、“一个问卷调查”等，Literally Anything就会使用GPT-4技术，为您生成一个与之相符的应用程序或网页，并提供源代码和预览链接。您可以在网上查看和分享您创建的东西，或者下载到您的设备上。Literally Anything可以帮助您快速实现您的想法，无需编程知识或设计经验。Literally Anything目前处于测试阶段，您可以在[2]上免费试用它。 | `https://www.literallyanything.ai/`
+
+
+
+# AI 工具列表
+
+## Lookup YC
+
+Lookup YC是一款基于AI的创业问答和搜索工具，能够让您从Y Combinator（硅谷最著名的创业孵化器）的视频中找到关于创业的洞察和答案。Lookup YC使用了自然语言处理和视频分析技术，来分析Y Combinator的视频中的内容，并根据您的问题生成相关的答案和见解。Lookup YC可以帮助您快速地获取Y Combinator导师和创业者们的经验、建议、故事等，并与他们进行对话和互动。Lookup YC目前是一个Web应用，可以在任何浏览器中使用。您可以在Lookup YC的官方网站上免费试用它。
+
+`https://www.lookupyc.com`
+
+## Looria
+
+Looria是一个基于ChatGPT的聊天机器人，专门为BuyItForLife的subreddit设计。BuyItForLife是一个Reddit社区，分享和讨论那些能够经久耐用的产品。Looria可以根据用户的问题，从BuyItForLife的帖子和评论中提取和总结相关的信息，帮助用户找到最适合他们需求的产品。Looria还可以生成图形艺术作品，根据用户的提示创造出惊人的视觉效果。Looria目前还是一个原型，开发者正在不断改进其性能和准确性，为用户提供更好的体验。
+
+`https://www.looria.com/bot/BuyItForLife`
+
+## Lorem GPT - Stop using lorem ipsum and generate relevant placeholder text for your projects.
+
+Lorem GPT - Stop using lorem ipsum and generate relevant placeholder text for your projects.是一款让您可以用AI生成与您的项目相关的占位符文本的工具。Lorem GPT使用GPT-4技术，能够根据您输入的主题和长度，为您生成自然和有意义的文本，而不是使用传统的无意义的拉丁文。Lorem GPT可以帮助您在设计网站、应用程序、广告等项目时，提高您的效率和创意。Lorem GPT非常易于使用，只需在网上输入您想要的主题和长度，就可以得到生成的文本，并选择复制或下载。Lorem GPT目前提供免费试用，之后根据您使用的文本数量收费。
+
+`https://www.loremgpt.com/`
+
+## Luca
+
+Luca是一款基于AI的电商定价工具，能够为您提供智能的定价建议和策略，让您在竞争激烈的电商市场中获得优势。Luca使用了机器学习和深度学习技术，来分析您的产品、竞争对手、市场、客户等数据，并根据您的目标和约束生成一个最优的定价方案。Luca可以帮助您提高您的销售额、利润率、转化率和客户忠诚度。Luca目前是一个Web应用，可以与Shopify、WooCommerce、Magento等电商平台集成。您可以在Luca的官方网站上注册并开始免费使用它。
+
+`https://www.luca.ai`
+
+## LucidPic
+
+LucidPic是一款基于GPT-4的AI照片生成工具，能够为用户创建不存在的人物的照片。用户可以向LucidPic输入他们想要创建的人物的特征、风格和情绪，LucidPic会根据用户的输入，自动生成一个逼真、美观和优化的照片，并提供修改和优化建议。LucidPic还可以根据用户的需求，自动添加背景、道具、滤镜等，并支持多种表情和姿势。LucidPic目前免费提供给公众使用。
+
+`https://www.lucidpic.com/`
+
+## Luma AR
+
+Luma AR是一个利用NeRFs技术在iPhone上实现AR重拍的工具。Luma AR可以帮助您将任何照片或视频变成一个可交互的三维场景，并在现实世界中重新拍摄它们。Luma AR使用了先进的AI技术，能够根据您提供的照片或视频文件或URL，为您生成逼真和有趣的NeRFs模型，并提供多种编辑选项供您选择。Luma AR还可以让您与之进行自然语言对话，以获取更多的信息和建议。Luma AR是一个创新和有趣的AR重拍工具，适合任何想要尝试新视角或寻找灵感的人。Luma AR目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.lumaar.ai`
+
+## Lyrical Labs
+
+Lyrical Labs是一款基于GPT-4的AI歌词写作工具，能够为用户写出更快、更好的歌词。用户可以向Lyrical Labs输入他们想要写歌的主题、风格和音乐，Lyrical Labs会根据用户的输入，自动生成一个适合的歌词，并提供修改和优化建议。Lyrical Labs还可以根据用户的需求，自动添加押韵、节奏、情感等，并支持多种语言和音调。Lyrical Labs目前免费提供给公众使用。
+
+`https://www.lyricallabs.com/`
+
+## Magic Eraser
+
+Magic Eraser是一个利用人工智能在图像中擦除不想要的背景物体的工具。Magic Eraser可以帮助您轻松地改善和美化您的照片，无论是人物、风景还是物品等。Magic Eraser使用了先进的AI技术，能够根据您提供的图像文件或URL，为您识别和移除图像中的任何背景物体，并提供多种编辑选项供您选择。Magic Eraser还可以让您与之进行自然语言对话，以获取更多的信息和建议。Magic Eraser是一个简单易用、高效可靠、价格实惠的图像擦除工具，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.magiceraser.ai`
+
+## Magicflow
+
+Magicflow是一个无需编码拖放式工具，可以让您构建集成到您的应用中的AI工作流程。Magicflow可以帮助您轻松地利用各种AI服务和功能，例如文本生成、图像识别、语音转换等，并将它们组合成一个完整的AI工作流程。Magicflow使用了先进的AI技术，能够根据您设定的目标和需求，为您生成智能和有用的AI工作流程，并提供多种输出格式供您选择。Magicflow还可以让您与之进行自然语言对话，以获取更多的信息和指导。Magicflow是一个创新和高效的AI工作流程构建工具，适合任何想要利用AI服务或功能来改善或创造应用的人。Magicflow目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.magicflow.ai`
+
+## Bob from Magrathea AI
+
+Bob from Magrathea AI是一个先进的助手，可以在一个无判断的空间中为您提供24/7的个性化洞察。Bob from Magrathea AI可以帮助您了解和改善您的生活质量，无论是健康、工作、学习还是娱乐等方面。Bob from Magrathea AI使用了先进的AI技术，能够根据您提供的数据和反馈，为您生成智能和有用的建议，并与您进行自然语言对话，以获取更多的信息和支持。Bob from Magrathea AI还可以让您控制您的隐私和安全，并与其他用户进行交流和互动。Bob from Magrathea AI是一个创新和有趣的助手，让您可以享受一个更好的生活。Bob from Magrathea AI目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.magrathea.ai`
+
+## Maimovie
+
+Maimovie是一款基于人工智能的电影和电视节目搜索平台，可以为用户提供最适合其口味和兴趣的电影和电视节目推荐。Maimovie使用了最新的机器学习和数据分析技术，能够从用户输入的电影或电视节目相关的条件中分析其观影需求和偏好，并从海量的电影和电视节目数据中筛选出最佳的推荐选项，并提供详细的信息和评价。用户可以在Maimovie中输入任何类型的电影或电视节目相关的条件，如类型、风格、情感、演员等，并根据自己的喜好调整排序方式。Maimovie还提供了一些智能的功能，如预告片播放、观影日历、社交分享等。Maimovie是一款有趣和实用的工具，让用户可以更轻松和有趣地享受观影体验。Maimovie目前可以在Maimovie网站上免费使用。
+
+`https://www.maimovie.com/`
+
+## MapsGPT
+
+MapsGPT是一款基于ChatGPT的AI地图搜索工具，能够让用户通过聊天的方式，发现和探索附近的地点。用户可以向MapsGPT发送任何问题或请求，如附近的餐厅、商店、公园等，MapsGPT会根据用户的位置和偏好，给出智能、友好和有趣的回答，并提供地图、导航和评价等信息。MapsGPT可以与用户进行自然、流畅和有效的对话，并根据用户的情绪、语气和需求进行自我调整。MapsGPT目前免费提供给公众使用。
+
+`https://www.mapsgpt.com/`
+
+## MarsX
+
+MarsX是一个免费的低代码平台，用于构建Web和移动应用程序。MarsX利用了人工智能、无代码、有代码和微应用的结合，让用户可以轻松地重用之前在平台上构建的数千个微应用。MarsX还提供了独特的Sketch-to-Photo功能，可以将设计想法或草图转换为逼真的图像。MarsX是专为创业者和开发者设计的平台，旨在简化他们的开发过程，提供更多的灵活性和创造力。MarsX目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.marsx.dev`
+
+## Marvin (Product) - Integrate AI directly into your codebase.
+
+Marvin (Product) - Integrate AI directly into your codebase.是一款让您可以直接在您的代码库中集成AI的工具。您可以使用Marvin来添加智能功能，如图像识别、自然语言处理、推荐系统等，而无需编写复杂的机器学习代码。Marvin使用OpenAI的GPT-4技术，能够根据您的代码和注释，自动生成适合您的AI模型和API。您可以使用Marvin来快速构建和部署AI应用程序，提高您的开发效率和质量。Marvin目前处于测试阶段，您可以在[1]上申请加入等待名单。
+
+`https://www.marvin.ai/`
+
+## Marvin - Integrate AI directly into your codebase like any other function.
+
+Marvin - Integrate AI directly into your codebase like any other function.是一款利用AI技术来为代码库提供智能的功能和工具的软件，由一家AI和软件公司Marvin开发，并发布在Marvin公司的官方网站上。Marvin可以让用户直接在他们的代码库中，像调用任何其他函数一样，调用一些基于AI技术的功能和工具，例如ChatGPT, Google Bard, Jasper等。Marvin还可以让用户自定义和配置这些AI功能和工具，以适应他们的代码库和需求。Marvin是一个高效和实用的软件，可以让用户轻松地为他们的代码库增加智能和创新。
+
+`https://www.marvin.com/marvin`
+
+## Meerkat
+
+Meerkat是一款基于AI的数据处理工具，能够让您用交互式的数据表格来整理您的非结构化数据。Meerkat使用了基础模型（foundation models）和数据科学技术，来分析您上传或输入的任何类型的数据，如文本、图像、音频等，并将其转化为结构化和可操作的数据表格。Meerkat可以帮助您快速地清洗、分析、可视化和导出您的数据，并提供多种数据处理和展示方式，如文本摘要、图像标注、音频转录等。Meerkat目前是一个Web应用，可以在任何浏览器中使用。您可以在Meerkat的官方网站上注册并开始免费使用它。
+
+`https://www.meerkat.ai`
+
+## Midjourney is allowing fake images go mainstream with few rules
+
+Midjourney是一款基于人工智能的图像生成器，可以根据用户的文本或图像提示生成逼真的假图像。Midjourney利用了大规模语言模型（LLM）和变换器模型（Transformer）的技术，能够在几秒钟内生成高质量、高分辨率和高多样性的图像。Midjourney已经吸引了超过1300万的用户，并且成为了科技行业最热门的新兴企业之一。但是，Midjourney也面临着一些争议和挑战，因为它对于生成图像的内容和用途没有明确的规则和标准。一些用户利用Midjourney生成了一些具有误导性、歧视性或侮辱性的图像，例如涉及政治、种族或宗教的图像。这些图像可能会被用于传播虚假信息、诽谤他人或干扰选举等目的。Midjourney的创始人和CEO David Holz表示，他希望Midjourney能够扩展人类的想象力，而不是成为一个滥用或滋生仇恨的工具。
+
+`https://www.midjourney.com`
+
+## Mini Course Generator
+
+Mini Course Generator是一款基于人工智能的在线课程创建平台，可以为用户在几分钟内创建出引人入胜且与众不同的微课程。Mini Course Generator使用了最新的自然语言处理和课程生成技术，能够从用户输入的课程主题中提取有用的信息，并生成高质量、原创和有创意的课程内容。用户可以在Mini Course Generator中输入任何类型的课程主题，如编程、营销、艺术等，并选择想要生成课程的时长和难度。Mini Course Generator还提供了一些智能的功能，如视频制作、图像插入、互动测试等。Mini Course Generator是一款有趣和高效的工具，让用户可以在几分钟内创建出令人印象深刻的在线微课程。Mini Course Generator目前处于测试阶段，您可以在Mini Course Generator网站上免费试用它。
+
+`https://www.minicoursegenerator.com/`
+
+## Create mini AI videos from text.
+
+Create mini AI videos from text.是一款能够根据文本生成迷你AI视频的工具。您只需要输入一段文本，例如一个故事、一个笑话、一个新闻等，这款工具就会使用GPT-4技术，为您生成一个与文本内容匹配的视频，包括图像、音乐、声音和字幕。您可以在网上预览和分享视频，或者下载到您的设备上。这款工具可以帮助您创造出有趣和有创意的视频，无论您是想要娱乐自己、给朋友送礼、或是推广您的品牌。这款工具目前提供免费试用，之后根据您生成的视频数量和时长收费。
+
+`https://www.minivideo.ai/`
+
+## Mixo
+
+Mixo是一款利用AI技术帮助创业者快速启动他们的创业想法的平台。Mixo可以根据你对你的想法的简单描述，为你生成一个完整的网站内容，并且提供一个漂亮的着陆页，无需任何代码或设计。Mixo还可以帮助你收集用户反馈，通过电子邮件、调查或采访等方式与你的潜在客户联系。Mixo还提供了集成的用户管理工具，让你可以与你的受众建立持久的联系。Mixo是创业者验证和测试他们的产品想法的理想平台。
+
+`https://www.mixo.io/`
+
+## Mobile GPT
+
+Mobile GPT是一款基于ChatGPT的WhatsApp对话平台，可以让用户在WhatsApp上使用AI来进行有趣和有意义的对话。Mobile GPT使用了最新的自然语言处理和对话生成技术，能够从用户输入的文本或语音中分析其对话目的和内容，并生成高质量、原创和有创意的回复。用户可以在WhatsApp上添加Mobile GPT为联系人，并与其进行实时的对话。Mobile GPT还提供了一些智能的功能，如情感分析、语言翻译、知识问答等。Mobile GPT是一款有趣和实用的工具，让用户可以在WhatsApp上使用AI来提升其对话的效果和品质。Mobile GPT目前处于测试阶段，您可以在Mobile GPT网站上注册使用它。
+
+`https://www.mobilegpt.com/`
+
+## MovieBot
+
+MovieBot是一个利用人工智能即时创建、编辑和分享电影的工具。MovieBot可以帮助您将您的想法变成现实，无论是剧本、角色、场景还是音乐等。MovieBot使用了先进的AI技术，能够根据您提供的文本或语音输入，为您生成逼真和有趣的电影内容，并提供多种编辑选项供您选择。MovieBot还可以让您将您的电影保存在云端，并与其他人分享或观看。MovieBot是一个简单易用、功能强大、价格实惠的电影制作工具，适合任何想要尝试电影制作或寻找灵感的人。MovieBot目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.moviebot.ai`
+
+## MovieBot
+
+MovieBot是一款基于人工智能的电影制作平台，可以让用户即时地创建、编辑和分享AI生成的电影。MovieBot使用了最新的深度学习和计算机视觉技术，能够从用户输入的文本提示或视频片段中分析其电影内容和风格，并生成高质量、原创和有创意的电影。用户可以在MovieBot中输入任何类型的电影相关的提示，如剧本、对话、场景、情感等，然后MovieBot会为用户生成一系列的电影选项，并提供多种格式和分辨率的选项。用户还可以在MovieBot中编辑和调整生成的电影，或者导出为MP4或MOV格式。MovieBot是一款有趣和强大的工具，让用户可以轻松地创建出令人惊叹的电影。MovieBot目前提供免费试用和付费订阅，您可以在MovieBot网站上注册使用它。
+
+`https://www.moviebot.com/`
+
+
+
+# AI 工具与平台列表
+
+## My AskAI
+My AskAI 是一个让您可以创建和使用自己的 AI 问答系统的平台，该系统是基于 ChatGPT 技术的，无需编码。My AskAI 可以让您轻松地为您的 AI 问答系统提供数据和问题，并根据您的目标和需求为您生成智能和有用的答案。My AskAI 使用了先进的 AI 技术，能够从您提供的数据中学习和理解，并根据您设定的规则和逻辑来生成答案。My AskAI 还可以让您与您的 AI 问答系统进行自然语言对话，以获取更多的信息和建议。My AskAI 是一个创新和有趣的平台，让您可以拥有一个属于自己的 AI 问答系统，也可以与其他人的 AI 问答系统进行互动。My AskAI 目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+官网：`https://www.myaskai.ai`
+
+## Neat Prompts
+Neat Prompts 是一款基于 ChatGPT 的 AI 文本转 GIF 工具，能够根据用户输入的任何文本，生成一个相关的表情包 GIF。该工具可以帮助用户在社交媒体、聊天软件或其他平台上表达自己的情绪、态度或想法，以一种有趣和有创意的方式。Neat Prompts 目前免费提供给公众使用。
+
+官网：`https://www.neatprompts.com/`
+
+## Neeva
+Neeva 是一个创新的搜索引擎，使用先进的 AI 技术为您提供多角度的答案。Neeva 不仅可以显示传统的搜索结果列表，还可以根据您的查询生成综合的答案，并附上原始来源的引用。Neeva 还有一个 Bias Buster 功能，让您可以看到不同政治立场的媒体对最新新闻的报道，并用简单的滑块调整您想要看到的观点。Neeva 致力于为用户提供真实、及时和可定制的 AI 搜索体验。Neeva 目前只在美国市场开放，但计划未来扩展到其他国家和地区。您可以在 Neeva 的官方网站上申请加入等待名单。
+
+官网：`https://www.neeva.com`
+
+## Neo
+Startup accelerator Neo is partnering with Open AI and Microsoft for mentoring startups about AI 是一个关于一家创业加速器 Neo 与 Open AI 和微软合作为创业公司提供关于 AI 方面指导的新闻。Neo 是一家专注于人工智能领域的创业加速器。Neo 可以帮助人工智能领域的创业公司获得资金、资源和网络，并提供相关的培训和指导。Neo 使用了先进的 AI 技术，能够根据创业公司的行业、规模、愿景和价值等因素，为其匹配合适的导师和合作伙伴，并提供相关的信息和链接。Neo 还可以让创业公司与之进行自然语言对话，以获取更多的信息和建议。Neo 是一家创新和高效的创业加速器，适合任何想要在人工智能领域创业或寻找灵感的人。Neo 最近与 Open AI 和微软达成了合作协议，并邀请了 Open AI 的首席执行官 Sam Altman 和微软的首席人工智能官 Harry Shum 等知名人士作为其导师，以进一步提升其为创业公司提供的指导质量和水平。您可以在其官方网站上注册并开始使用它。
+
+官网：`https://www.neo.ai`
+
+## The Network State GPT
+The Network State GPT 是一款基于 OpenAI ChatGPT 的智能搜索和聊天工具，能够让您使用 OpenAI 来搜索和聊天 Balaji Srinivasan（硅谷投资人、创业者、作家）所著的《The Network State》这本书。The Network State GPT 使用了最先进的 AI 算法，如 GPT-4、ChatGPT 等，来分析这本书中的内容，并根据您的查询生成相关的答案和见解。The Network State GPT 可以帮助您深入地理解这本书中所阐述的关于未来社会、政治、经济等方面的观点和思想，并与作者进行对话和互动。The Network State GPT 目前是一个 Web 应用，可以在任何浏览器中使用。您可以在 The Network State GPT 的官方网站上免费试用它。
+
+官网：`https://www.networkstate.gpt`
+
+## Nutriplan
+Nutriplan 是一个利用人工智能在几秒钟内为您创建定制化饮食计划的工具。Nutriplan 可以帮助您根据您的身体状况、健康目标、饮食偏好和预算等因素，为您生成适合您的饮食计划。Nutriplan 使用了先进的 AI 技术，能够分析您的营养需求和食物喜好，并从数千种食谱中为您挑选出最佳的餐点组合。Nutriplan 还会为您提供详细的营养信息、烹饪指南和购物清单，让您可以轻松地跟随饮食计划。Nutriplan 是一个方便快捷、功能强大、价格实惠的饮食计划工具，您可以在其官方网站上免费注册并开始使用它。
+
+官网：`https://www.nutriplan.ai`
+
+## Generative AI - Revolutionising the way enterprises work. Report from Nvidia
+这是一份由 Nvidia 发布的报告，介绍了生成式人工智能（Generative AI）如何为企业带来新的机遇和效率。报告中，Nvidia 解释了生成式人工智能的概念和技术，并且列举了一些生成式人工智能在不同行业中的应用案例，例如药物发现、金融服务、零售和电信等。报告还展望了生成式人工智能未来的发展趋势和挑战，并且提供了一些 Nvidia 在推动生成式人工智能领域的产品和服务，例如 Nvidia Picasso 平台、Nvidia BioNeMo 模型和 Nvidia Omniverse 等。
+
+官网：`https://www.nvidia.com/en-au/lp/ai-data-science/generative-ai-ebook/`
+
+## Nvidia DGX Cloud
+Nvidia DGX Cloud 是一个利用 Nvidia DGX 技术在网页浏览器中为您训练自己的 ChatGPT 的云端平台。Nvidia DGX Cloud 可以帮助您轻松地使用 ChatGPT 技术来构建和运行各种智能聊天机器人，无需安装任何软件或硬件。Nvidia DGX Cloud 使用了先进的 AI 技术，能够根据您提供的数据和反馈，为您提供最佳的 ChatGPT 训练方案，并提供相关的结果和信息。Nvidia DGX Cloud 还可以让您与之进行自然语言对话，以获取更多的信息和指导。Nvidia DGX Cloud 是一个创新和高效的云端训练平台，适合任何想要利用 ChatGPT 技术来改善或创造聊天机器人的人。Nvidia DGX Cloud 目前处于发展阶段，您可以在其官方网站上注册并开始使用它，每月的费用为 37000 美元。
+
+官网：`https://www.nvidiadgxcloud.ai`
+
+## OpenRead
+OpenRead 是一个利用人工智能为您提供交互式论文阅读体验的平台。OpenRead 可以帮助您轻松地理解和学习任何论文，无论是科学、技术、人文还是社会科学等领域。OpenRead 使用了先进的 AI 技术，能够根据您提供的论文 URL 或 PDF 文件，为您生成动态的图形、动画、音频和视频等内容，并与论文内容进行同步展示。OpenRead 还可以让您与之进行自然语言对话，以获取更多的信息和解释。OpenRead 是一个创新和有趣的平台，让您可以体验未来的论文阅读方式。OpenRead 目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+官网：`https://www.openread.ai`
+
+## OpenRead
+OpenRead 是一款基于人工智能的交互式论文平台，可以让用户体验未来的学术阅读方式。OpenRead 使用了最新的自然语言处理和数据可视化技术，能够从论文中提取有用的信息，并生成高质量、原创和有创意的交互式内容。用户可以在 OpenRead 中输入或上传任何类型的论文，如 PDF、DOC 等，然后 OpenRead 会为用户生成一系列的交互式内容，并提供多种模式和主题的选项。用户还可以在 OpenRead 中编辑和调整生成的内容，或者导出为 HTML 或 PPT 格式。OpenRead 是一款有趣和高效的工具，让用户可以更深入和全面地理解论文。OpenRead 目前处于测试阶段，您可以在 OpenRead 网站上免费试用它。
+
+官网：`https://www.openread.com/`
+
+## OpenTheo
+OpenTheo 是一个利用人工智能为您提供转录和可搜索的圣经教导的平台。OpenTheo 可以帮助您轻松地理解和学习圣经的内容和意义，无论是在线视频还是音频等形式。OpenTheo 使用了先进的 AI 技术，能够根据您提供的圣经教导视频或音频文件或 URL，为您生成实时的转录和分析，并与圣经内容进行同步展示。OpenTheo 还可以让您与之进行自然语言对话，以获取更多的信息和解释。OpenTheo 是一个创新和有趣的平台，让您可以体验未来的圣经教导方式。OpenTheo 目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+官网：`https://www.opentheo.ai`
+
+## Oscar
+Oscar 是一款基于人工智能的儿童睌前故事生成平台，可以为用户生成任何类型和风格的睌前故事。Oscar 使用了最新的自然语言处理和故事生成技术，能够从用户输入的故事条件中分析其故事需求和偏好，并生成高质量、原创和有创意的故事。用户可以在 Oscar 中输入任何类型的故事条件，如主角、主题、情节、风格等，并选择想要生成故事的时长和难度。Oscar 还提供了一些智能的功能，如语音朗读、图片插画、互动问答等。Oscar 是一款有趣和实用的工具，让用户可以为自己或孩子创建出令人睡得香甜的睌前故事。Oscar 目前提供免费试用和付费订阅，您可以在 Oscar 网站上注册使用它。
+
+官网：`https://www.oscar.com/`
+
+## Pair
+Pair 是一个利用 GPT 技术进行编程的开源工具，也是由 GPT 技术构建的。Pair 可以帮助您轻松地使用 GPT 技术来编写和运行各种编程语言和框架，例如 Python、Java、Ruby、React 等。Pair 使用了先进的 AI 技术，能够根据您提供的代码或目标，为您生成智能和有用的代码，并提供多种编辑选项供您选择。Pair 还可以让您与之进行自然语言对话，以获取更多的信息和指导。Pair 是一个创新和高效的编程工具，适合任何想要利用 GPT 技术来改善或创造代码的人。Pair 目前处于测试阶段，您可以在其官方网站上免费下载它。
+
+官网：`https://www.pair.ai`
+
+## Parallel GPT - Bulk process ChatGPT tasks in parallel on spreadsheet UI
+Parallel GPT - Bulk process ChatGPT tasks in parallel on spreadsheet UI 是一款让您可以在电子表格界面上批量并行处理 ChatGPT 任务的工具。ChatGPT 是一款基于 OpenAI ChatGPT 的智能助手，能回答用户在生活中遇到的各种问题和疑惑，成为用户生活中智能小伙伴。Parallel GPT 可以让您在一个电子表格中输入多个问题或指令，并同时得到 ChatGPT 生成的回答或结果，并显示在相应的单元格中。Parallel GPT 可以帮助您节省时间和精力，提高工作效率和质量。Parallel GPT 非常易于使用，只需在网上登录您的 OpenAI 账户，并创建一个新的电子表格，就可以开始使用 ChatGPT 服务。Parallel GPT 目前提供免费试用，之后根据您使用的请求次数收费。
+
+官网：`https://www.parallelgpt.com/`
+
+## People AI
+People AI 是一款基于 AI 的个人品牌提升工具，能够为您创建一个属于您自己的数字化分身。People AI 使用了最先进的 AI 算法，如 GPT-4、ChatGPT、DALL-E 2 等，来生成一个与您相似的虚拟形象，并让它能够与真实世界中的人进行对话和互动。People AI 可以帮助您在社交媒体、视频会议、游戏等场景中展示您的个性和风格，并提高您的影响力和信任度。People AI 目前是一个 iOS 和 Android 的应用，可以在 App Store 和 Google Play 上免费下载它。
+
+官网：`https://www.peopleai.com`
+
+## Pickaxe
+Pickaxe 是一个无需编码的平台，让您可以创建、分享和管理 AI 应用。Pickaxe 支持最新的生成模型，如 GPT-4、ChatGPT、DALL-E 2 等，并提供了多种模板和示例，让您可以轻松地构建自己的 AI 工具。Pickaxe 还允许您将 AI 工具嵌入到您的网站、Google 表格或通过 API 访问。Pickaxe 适合任何想要利用 AI 提升自己的业务或网站的人士。您可以在 Pickaxe 的官方网站上注册并开始免费使用它。
+
+官网：`https://www.pickaxeproject.com`
+
+## Pilot AI
+Pilot AI 是一个利用算法从销售通话中提取信息的公司。Pilot AI 可以帮助您分析和优化您的销售过程，无论是在线通话还是录音等形式。Pilot AI 使用了先进的 AI 技术，能够根据您提供的销售通话文件或 URL，为您生成实时的转录和分析，并提供相关的数据和指标。Pilot AI 还可以让您与之进行自然语言对话，以获取更多的信息和反馈。Pilot AI 是一个创新和高效的销售分析公司，适合任何想要提高销售效率和质量的人。Pilot AI 目前处于发展阶段，您可以在其官方网站上注册并开始使用它，每月的费用根据您使用的功能和时长而定。
+
+官网：`https://www.pilotai.ai`
+
+## Playlist Genius - Your AI assistant to create your next playlist.
+Playlist Genius - Your AI assistant to create your next playlist. 是一款让您可以用 AI 助手来创建您的下一个播放列表的工具。您只需要输入一个主题、一个心情、一个风格或一个艺术家的名字，Playlist Genius 就会使用 GPT-4 技术，为您生成一个与之相关的播放列表，并提供歌曲名称、艺术家名称和封面图片。您可以在网上预览和收听播放列表，并选择保存到您的 Spotify 或 Apple Music 账户中。Playlist Genius 可以帮助您发现新的音乐，适应您的喜好和场合，让您享受音乐的乐趣。Playlist Genius 目前提供免费试用，之后根据您使用的次数收费。
+
+官网：`https://www.playlistgenius.ai/`
+
+## Poe
+Poe 是一款基于 GPT-4 和 Claude+ 的 AI 写作平台，能够为用户提供各种类型的文本生成服务，如小说、诗歌、歌词、广告语等。Poe 还可以根据用户的偏好和反馈进行自我调整和改进，提高文本的质量和创意。Poe 目前提供免费和付费两种订阅方式，免费用户可以使用基于 GPT-3 的机器人，付费用户可以使用基于 GPT-4 和 Claude+ 的机器人。付费订阅的价格为每月 19.99 美元或每年 199.99 美元。
+
+官网：`https://www.poe.ai/`
+
+## Pragma
+Pragma 是一款基于 AI 的工具，可以帮助您简化客户消息和知识的管理。Pragma 可以让您创建和维护一个智能的知识库，让您的客户可以快速地找到他们需要的信息。Pragma 还可以让您通过多种渠道与您的客户进行实时的对话，例如网站、电子邮件、短信或社交媒体。Pragma 还可以利用 AI 技术来分析您的客户反馈，提高您的服务质量和效率。Pragma 目前提供免费试用和多种付费套餐，您可以根据您的需求选择合适的方案。
+
+官网：`https://www.pragma.ai/`
+
+## PrankGPT - Prank your friends with AI generated voice calls.
+PrankGPT - Prank your friends with AI generated voice calls. 是一款让您可以用 AI 生成的语音电话恶搞您的朋友的工具。您只需要输入您想要模仿的名人或角色的名字，例如“奥巴马”、“钢铁侠”、“莎士比亚”等，PrankGPT 就会使用 GPT-4 技术，为您生成一个与之相似的语音，并拨打您指定的电话号码。您可以在网上实时监听电话的内容，并控制 AI 说话的内容和语气。PrankGPT 可以帮助您制造出有趣和有创意的恶作剧，无论您是想要逗乐您的朋友、给他们一个惊喜、或是报复他们的恶作剧。PrankGPT 目前提供免费试用，之后根据您使用的电话时长收费。
+
+官网：`https://www.prankgpt.com/`
+
+## Praxy Labs - AI-powered productivity tool for students
+Praxy Labs 是一款面向学生的 AI 驱动的生产力工具，可以帮助学生更好地学习和复习。该工具提供了一系列的功能，包括智能笔记、自动摘要、知识图谱、闪卡生成、问答系统等。用户可以在 Praxy Labs 中输入或上传任何类型的学习材料，如课本、讲义、视频等，然后 Praxy Labs 会使用 AI 技术来分析和处理这些材料，并生成有用的输出，如笔记、摘要、关键词、问题等。用户还可以在 Praxy Labs 中进行复习和测试，使用闪卡或问答系统来检验自己的学习效果，并获得反馈和建议。Praxy Labs 是一款智能和高效的工具，让学生可以更轻松和有趣地学习和复习。Praxy Labs 目前提供免费计划和付费计划，您可以在 Praxy Labs 网站上注册使用它。
+
+官网：`https://www.praxylabs.com/`
+
+## Praygen
+Praygen 是一款基于 GPT 的祈祷生成器，可以为不同的场合和目的提供祈祷。Praygen 结合了宗教文本中的相关经文，并接受过拒绝不当请求的训练。Praygen 可以帮助您表达感恩、平安、或宽恕等主题的祈祷，也可以根据您的日期或特殊事件生成个性化的祈祷。Praygen 是一个有趣和有用的工具，可以让您的祈祷体验更加有意义和有效。Praygen 目前提供免费注册和使用，您只需要输入一个简单的指令，就可以得到一个适合您的祈祷。
+
+官网：`https://www.praygen.com/`
+
+
+
+| Book AI chat | Book AI chat是一款可以让您与任何书籍进行聊天的应用程序，由一位AI和阅读爱好者开发，并发布在Product Hunt上。Book AI chat可以让您输入任何书籍的名称或ISBN码，然后生成一个与该书籍相关的ChatGPT模型，让您可以与该书籍进行对话。Book AI chat还可以让您选择不同的对话模式，例如问答、评论、摘要等，并提供一些有趣和有用的提示。Book AI chat是一个有趣和实用的应用程序，可以让您深入了解和欣赏您喜欢的书籍，增加您的阅读乐趣和收获。 | https://www.producthunt.com/posts/book-ai-chat |
+| I hunted Enhance AI on product hunt today. It lets you add AI autocomplete to your website in just 2 minutes. | Enhance AI是一款让您可以在2分钟内为您的网站添加AI自动完成功能的工具。Enhance AI可以帮助您提高用户体验和转化率，通过使用GPT-4技术，为用户提供智能和个性化的搜索建议和内容填充。Enhance AI非常易于使用，只需将一行代码添加到您的网站中，就可以启用AI自动完成功能。Enhance AI支持多种语言和领域，可以根据您的网站内容和用户行为进行优化。Enhance AI目前提供免费试用，之后根据您使用的请求次数收费。Enhance AI今天在Product Hunt上发布了，您可以在[2]上查看更多详情和评论。 | https://www.producthunt.com/posts/enhance-ai |
+| Markprompt - Build a delightful GPT-4 prompt for your markdown docs. | Markprompt - Build a delightful GPT-4 prompt for your markdown docs.是一款利用GPT-4技术来帮助用户为他们的markdown文档生成有趣和有用的提示的工具，由一位AI爱好者开发，并发布在Product Hunt上。Markprompt可以让用户输入他们的markdown文档的标题、摘要或关键词，然后生成一个与文档内容相关的GPT-4提示，例如故事、问题、建议等。Markprompt还可以让用户选择不同的GPT-4模型和参数，以调整提示的风格和质量。Markprompt是一个有趣和实用的工具，可以让用户为他们的markdown文档增加一些互动和趣味性。 | https://www.producthunt.com/posts/markprompt |
+| Scribble Dribble | Scribble Dribble是一款利用AI技术将涂鸦转换为艺术的应用程序，由一组AI和美术研究者开发，并发布在Product Hunt上。Scribble Dribble可以让您用手指或鼠标在屏幕上随意涂鸦，然后使用基于ChatGPT模型的AI图像生成器，将您的涂鸦转换为各种风格和主题的艺术作品，例如卡通、抽象、风景等。Scribble Dribble还可以让您保存和分享您的涂鸦和艺术作品，并与其他用户互动和竞赛。Scribble Dribble是一个有趣和创意的应用程序，可以让您释放您的想象力和创造力。 | https://www.producthunt.com/posts/scribble-dribble |
+| Promptitude | Promptitude是一款专门为AI提示开发者设计的工具，可以让您在一个地方开发、测试、管理和改进您的AI提示。Promptitude可以让您轻松地创建和编辑AI提示，支持多种AI模型和语言，例如ChatGPT、Google Bard、Jasper等。Promptitude还可以让您实时地预览和评估您的AI提示的效果，提供详细的分析和反馈。Promptitude还可以让您将您的AI提示发布到Promptpal平台上，与其他用户分享和交流。Promptitude是一个强大和便捷的工具，可以让您提高您的AI提示的质量和创造力。 | https://www.promptitude.com/ |
 | PromptPal | PromptPal是一个让您可以分享和发现最佳的AI提示的平台。AI提示是一种用于指导人工智能生成内容的文本或图像，例如故事、诗歌、代码、图形等。PromptPal可以让您轻松地创建和发布您自己的AI提示，也可以浏览和使用其他人的AI提示。PromptPal使用了先进的AI技术，能够根据您的兴趣和偏好为您推荐合适的AI提示，并为您提供实时的反馈和评分。PromptPal还可以让您与其他用户进行交流和互动，分享您的创意和经验。PromptPal是一个创新和有趣的平台，让您可以探索人工智能的无限可能性。PromptPal目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.promptpal.ai |
-| Promptpal | Promptpal是一个独特的平台，旨在促进AI领域内的创造力和探索。Promptpal让您可以分享和发现AI提示，与他人互动，以及增强您的AI体验。Promptpal支持多种AI模型，例如ChatGPT,   Google Bard,   Jasper等，并提供了各种类型和主题的AI提示，例如故事、诗歌、代码、歌曲、名人模仿等。Promptpal还可以让您评价、收藏、评论或复制其他用户分享的AI提示，并与他们建立联系。Promptpal是一个友好和有趣的平台，可以让您发现AI世界中最棒的内容。Promptpal目前提供免费注册和使用，您只需要选择一个AI模型和一个提示，就可以开始您的AI之旅。 | https://www.promptpal.com/ |
+| Promptpal | Promptpal是一个独特的平台，旨在促进AI领域内的创造力和探索。Promptpal让您可以分享和发现AI提示，与他人互动，以及增强您的AI体验。Promptpal支持多种AI模型，例如ChatGPT、Google Bard、Jasper等，并提供了各种类型和主题的AI提示，例如故事、诗歌、代码、歌曲、名人模仿等。Promptpal还可以让您评价、收藏、评论或复制其他用户分享的AI提示，并与他们建立联系。Promptpal是一个友好和有趣的平台，可以让您发现AI世界中最棒的内容。Promptpal目前提供免费注册和使用，您只需要选择一个AI模型和一个提示，就可以开始您的AI之旅。 | https://www.promptpal.com/ |
 | QuickVid | QuickVid是一款基于GPT-4的AI视频快速制作工具，能够为用户创建YouTube短视频，速度比普通方式快10倍。用户可以向QuickVid输入他们想要制作的视频的主题、关键词和长度，QuickVid会根据用户的输入，自动生成一个适合的视频脚本，并提供修改和优化建议。QuickVid还可以根据用户的需求，自动添加视频的素材、音乐、字幕等，并支持多种语言和音调。QuickVid目前提供免费和付费两种订阅方式，免费用户每月可以制作10个视频，付费用户每月可以制作无限个视频。付费订阅的价格为每月29.99美元或每年299.99美元。 | https://www.quickvid.com/ |
-| Quilt - Accelerated financial modeling with AI. | Quilt - Accelerated financial modeling with   AI.是一款利用AI加速财务建模的应用程序。Quilt可以帮助您快速创建和更新复杂的财务模型，无需编写公式或宏。Quilt使用GPT-4技术，能够理解自然语言的指令，并生成相应的电子表格和图表。Quilt还可以提供智能和个性化的建议，帮助您优化您的财务决策。Quilt可以帮助您执行以下任务：   财务规划：从收入、支出、资产、负债等方面规划您的财务目标，并预测未来的现金流和净值。 投资分析：分析不同的投资机会和风险，并比较不同的投资组合和策略。   业务评估：评估不同的业务场景和假设，并计算关键的财务指标和比率。 Quilt目前提供免费试用，之后根据您使用的功能和数据量收费。 | https://www.quilt.ai/ |
+| Quilt - Accelerated financial modeling with AI. | Quilt - Accelerated financial modeling with AI.是一款利用AI加速财务建模的应用程序。Quilt可以帮助您快速创建和更新复杂的财务模型，无需编写公式或宏。Quilt使用GPT-4技术，能够理解自然语言的指令，并生成相应的电子表格和图表。Quilt还可以提供智能和个性化的建议，帮助您优化您的财务决策。Quilt可以帮助您执行以下任务：财务规划：从收入、支出、资产、负债等方面规划您的财务目标，并预测未来的现金流和净值。投资分析：分析不同的投资机会和风险，并比较不同的投资组合和策略。业务评估：评估不同的业务场景和假设，并计算关键的财务指标和比率。Quilt目前提供免费试用，之后根据您使用的功能和数据量收费。 | https://www.quilt.ai/ |
 | Quizgecko | Quizgecko是一款基于人工智能的测验生成平台，可以为用户从任何文本、网址或文件中生成有趣和有用的测验。Quizgecko使用了最新的自然语言处理和测验生成技术，能够从用户输入或上传的文本、网址或文件中分析其内容和结构，并生成高质量、原创和有创意的测验。用户可以在Quizgecko中输入或上传任何类型的文本、网址或文件，如文章、书籍、视频等，并选择想要生成测验的类型和难度。Quizgecko还提供了一些智能的功能，如答案解释、图像插入、互动评分等。Quizgecko是一款有趣和实用的工具，让用户可以从任何文本、网址或文件中快速地获取和检验知识。Quizgecko目前提供免费试用和付费订阅，您可以在Quizgecko网站上注册使用它。 | https://www.quizgecko.com/ |
-| Quora Poe | Quora   Poe是一款基于Poe的AI聊天服务工具，能够为用户提供一个现在可以在桌面上使用的有用的AI聊天伙伴。用户可以向Quora   Poe发送任何问题或请求，如Quora上的问题、答案、话题等，Quora Poe会根据Quora上的信息，给出智能、友好和有趣的回答。Quora   Poe还可以根据用户的偏好和反馈进行自我调整和改进，提高回答的质量和创意。Quora Poe目前免费提供给公众使用。 | https://www.quora.com/poe |
-| Quotify | Quotify是一款基于AI的引文查找工具，可以从任何可以转换为PDF的文本中提取最相关的引文，以支持您的观点或论点。Quotify使用PyPDF、NLTK、OpenAI和FAISS等技术，将文本切分成与查询相关的片段，并提供上下文信息。Quotify还使用Langchain和GPT的Davinci模型进行摘要和分析。Quotify适合学生、教师、作家、研究人员等任何需要从文本中获取引文的人士。您可以在Quotify的官方网站上免费使用它。 | https://www.quotifyai.com |
+| Quora Poe | Quora Poe是一款基于Poe的AI聊天服务工具，能够为用户提供一个现在可以在桌面上使用的有用的AI聊天伙伴。用户可以向Quora Poe发送任何问题或请求，如Quora上的问题、答案、话题等，Quora Poe会根据Quora上的信息，给出智能、友好和有趣的回答。Quora Poe还可以根据用户的偏好和反馈进行自我调整和改进，提高回答的质量和创意。Quora Poe目前免费提供给公众使用。 | https://www.quora.com/poe |
+| Quotify | Quotify是一款基于AI的引文查找工具，可以从任何可以转换为PDF的文本中提取最相关的引文，以支持您的观点或论点。Quotify使用`PyPDF`、`NLTK`、`OpenAI`和`FAISS`等技术，将文本切分成与查询相关的片段，并提供上下文信息。Quotify还使用`Langchain`和GPT的Davinci模型进行摘要和分析。Quotify适合学生、教师、作家、研究人员等任何需要从文本中获取引文的人士。您可以在Quotify的官方网站上免费使用它。 | https://www.quotifyai.com |
 | RATH | RATH是一个利用人工智能进行数据探索和可视化的工具。RATH可以帮助您从各种来源获取和整合数据，并根据您的目标和需求为您生成实时的报告和图表。RATH使用了先进的AI技术，能够自动识别数据的类型、结构和关系，并根据最佳实践和行业标准为您提供最合适的数据分析和可视化方案。RATH还可以让您与之进行自然语言对话，以获取更多的信息和建议。RATH是一个方便快捷、功能强大、价格合理的数据探索和可视化工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.rath.ai |
 | RATH | RATH是一款基于人工智能的数据探索和可视化平台，可以为用户提供自动化的数据分析和报告服务。RATH使用了最新的机器学习和数据科学技术，能够从用户输入或上传的数据中提取有用的信息，并生成高质量、原创和有创意的数据分析和报告。用户可以在RATH中输入或上传任何类型的数据，如表格、图表、文本等，然后RATH会为用户生成一系列的数据探索和可视化，并提供多种模板和主题的选项。用户还可以在RATH中编辑和调整生成的数据探索和可视化，或者导出为PDF或PPT格式。RATH是一款智能和高效的工具，让用户可以更深入和全面地理解数据。RATH目前提供免费试用和付费订阅，您可以在RATH网站上注册使用它。 | https://www.rath.com/ |
-| ChatGPT Robot | ChatGPT Robot是一款由Reddit用户集成ChatGPT   API到一个机器人上的AI聊天机器人项目，能够让机器人与人类进行对话。该项目是通过将ChatGPT API与一个Arduino Nano 33 BLE   Sense开发板连接起来实现的，机器人可以通过麦克风接收人类的语音输入，并通过扬声器输出ChatGPT   API生成的语音回答。该项目还可以通过一个OLED屏幕显示机器人的表情和状态，并通过一个舵机控制机器人的头部运动。该项目目前已经在Reddit上发布，并获得了许多赞誉和评论。 | [ht](https://www.reddit.com/r/arduino/comments/pz6x3v/i_integrated_the_chatgpt_api_into_a_robot/)tps://www.reddit.com/r/arduino/comments/pz6x3v/i_integrated_the_chatgpt_api_into_a_robot/ |
-| Refact - Powerful AI coding assistant that   combines completion, refactoring, chat, and more. | Refact - Powerful AI coding assistant that   combines completion, refactoring, chat, and   more.是一款强大的AI编程助手，可以结合代码补全、重构、聊天等功能，帮助您提高编程效率和质量。Refact使用GPT-4技术，能够理解和生成各种编程语言的代码，并提供智能和个性化的建议。Refact可以帮助您执行以下任务：   代码补全：根据上下文和意图，自动补全代码，并提供多个候选选项。 重构：根据最佳实践和风格指南，自动重构代码，并提高可读性和可维护性。   聊天：与AI进行自然对话，询问问题、获取反馈、解决问题等。 更多：使用AI生成文档、注释、测试用例等，并与其他开发者协作。   Refact目前处于开发阶段，您可以在[2]上注册以获取早期访问权限。 | https://www.refact.ai/ |
+| ChatGPT Robot | ChatGPT Robot是一款由Reddit用户集成ChatGPT API到一个机器人上的AI聊天机器人项目，能够让机器人与人类进行对话。该项目是通过将ChatGPT API与一个Arduino Nano 33 BLE Sense开发板连接起来实现的，机器人可以通过麦克风接收人类的语音输入，并通过扬声器输出ChatGPT API生成的语音回答。该项目还可以通过一个OLED屏幕显示机器人的表情和状态，并通过一个舵机控制机器人的头部运动。该项目目前已经在Reddit上发布，并获得了许多赞誉和评论。 | https://www.reddit.com/r/arduino/comments/pz6x3v/i_integrated_the_chatgpt_api_into_a_robot/ |
+| Refact - Powerful AI coding assistant that combines completion, refactoring, chat, and more. | Refact - Powerful AI coding assistant that combines completion, refactoring, chat, and more.是一款强大的AI编程助手，可以结合代码补全、重构、聊天等功能，帮助您提高编程效率和质量。Refact使用GPT-4技术，能够理解和生成各种编程语言的代码，并提供智能和个性化的建议。Refact可以帮助您执行以下任务：代码补全：根据上下文和意图，自动补全代码，并提供多个候选选项。重构：根据最佳实践和风格指南，自动重构代码，并提高可读性和可维护性。聊天：与AI进行自然对话，询问问题、获取反馈、解决问题等。更多：使用AI生成文档、注释、测试用例等，并与其他开发者协作。Refact目前处于开发阶段，您可以在[2]上注册以获取早期访问权限。 | https://www.refact.ai/ |
 | Refact | Refact是一款基于人工智能的编程平台，可以让用户享受编程的乐趣，而无需担心隐私问题。Refact使用了最新的深度学习和代码生成技术，能够从用户输入的自然语言描述中生成高质量、原创和有创意的代码。用户可以在Refact中输入任何类型的编程需求，如功能、算法、界面等，然后Refact会为用户生成一系列的代码选项，并提供多种语言和框架的选项。用户还可以在Refact中编辑和调整生成的代码，或者导出为文件或链接。Refact是一款有趣和强大的工具，让用户可以轻松地创建出惊人的编程作品。Refact还非常注重用户的隐私和安全，所有的数据和代码都是在用户的设备上进行处理和存储，不会上传到任何服务器或云端。Refact目前处于测试阶段，您可以在Refact网站上免费试用它。 | https://www.refact.com/ |
 | Reflect | Reflect是一款基于人工智能的笔记平台，可以让用户在笔记中使用GPT-4，并编写自己的自定义提示。Reflect使用了最新的自然语言处理和代码生成技术，能够从用户输入的自定义提示中分析其需求，并生成高质量、原创和有创意的文本或代码。用户可以在Reflect中输入任何类型的自定义提示，如故事、歌词、邮件、简历、广告等，然后Reflect会为用户生成一系列的文本或代码，并提供多种语言和模式的选项。用户还可以在Reflect中编辑和调整生成的文本或代码，或者导出为文件或链接。Reflect是一款有趣和强大的工具，让用户可以在笔记中随时随地使用GPT-4来提高工作效率和创造力。Reflect目前处于测试阶段，您可以在Reflect网站上免费试用它。 | https://www.reflect.com/ |
-| Resolve AI | Resolve   AI是一个基于ChatGPT的人工智能聊天机器人平台，可以帮助您轻松地为您的业务提供优质的客户服务。Resolve   AI可以让您快速地创建和部署智能、友好和自然的聊天机器人，无需编写代码或担心基础设施。Resolve   AI的聊天机器人可以与您的客户进行流畅和有意义的对话，回答他们的问题，解决他们的问题，提供他们所需的信息和服务。Resolve   AI还可以让您实时地监控和分析您的聊天机器人的表现，优化您的客户服务策略和效果。Resolve AI目前提供免费试用，您可以在官网注册并开始使用。 | https://www.resolve.ai/ |
-| Roam around | Roam   around是一个友好的AI旅行规划器，可以帮助用户快速地为任何目的地制定个性化的行程。Roam around结合了Lume Pad   2的3D显示技术和先进的AI算法，可以根据用户的偏好、预算、时间等因素，为用户提供独一无二的旅行方案。Roam   around还可以实时跟踪用户的面部位置，为用户提供舒适、一致的3D体验，让用户感觉自己就在目的地。Roam   around还可以让用户创建自己的3D体验，并与其他旅行爱好者分享。Roam around将于4月份正式发布，目前正在接受预订。 | https://www.roamaround.io/ |
-| Roasted | Roasted是一款基于AI的搞笑工具，能够让您上传自己的照片，并生成一些由AI编写的恶搞笑话。Roasted使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E   2等，来分析您的照片中的特征，并根据您的外貌、服装、表情等制作出一些幽默的评论。Roasted可以帮助您放松心情，增加自信，也可以与朋友分享和互相开玩笑。Roasted目前是一个Web应用，可以在任何浏览器中使用。您可以在Roasted的官方网站上免费试用它。 | https://www.roasted.ai |
-| Are Roblox’s new AI coding and art tools the   future of game development? | Are Roblox’s new AI coding and art tools the   future of game   development?是一个关于Roblox新推出的AI编程和艺术工具是否代表了游戏开发未来的问题。Roblox是一个让您可以创建和玩各种游戏的平台。Roblox新推出了一些利用人工智能为您提供编程和艺术创作服务的工具。这些工具可以帮助您轻松地使用自然语言来编写和运行游戏代码，或者根据文本或图像输入来生成逼真和有趣的游戏图形。这些工具使用了先进的AI技术，能够根据您提供的输入和目标，为您生成智能和有用的游戏内容，并提供相关的信息和链接。这些工具还可以让您与之进行自然语言对话，以获取更多的信息和指导。这些工具是创新和高效的游戏开发工具，可能会改变游戏开发的方式和趋势。您可以在Roblox的官方网站上注册并开始使用这些工具。 | https://www.roblox.com |
-| Scribble Diffusion | Scribble   Diffusion是一款基于GPT-4的AI草图转图片工具，能够为用户将任何草图转换为逼真的图片。用户可以向Scribble   Diffusion上传任何格式的草图文件，如JPG、PNG、BMP等，Scribble   Diffusion会根据草图的轮廓和细节，自动生成一个清晰、美观和优化的图片，并提供修改和优化建议。Scribble   Diffusion还可以根据用户的需求，自动添加颜色、纹理、光影等，并支持多种风格和主题。Scribble Diffusion目前免费提供给公众使用。 | https://www.scribblediffusion.com/ |
-| SecGPT | SecGPT是一个利用人工智能驱动的洞察力来革新网络安全的工具。SecGPT可以帮助您检测和预防各种网络威胁，例如黑客攻击、恶意软件、数据泄露等。SecGPT使用了先进的AI技术，能够从各种来源收集和分析网络安全相关的数据，并为您生成实时的报告和建议。SecGPT还可以让您与之进行自然语言对话，以获取更多的信息和指导。SecGPT是一个方便快捷、功能强大、价格合理的网络安全工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.secgpt.ai |
-| ShellShark: an agent that swims through your   infra to; set up/modify infrastructure, and examine and debug services with   auditable logs. | ShellShark: an agent that swims through your   infra to; set up/modify infrastructure, and examine and debug services with   auditable   logs.是一款利用AI技术来为用户提供基础设施管理和服务监测的软件，由一家AI和云计算公司ShellShark开发，并发布在ShellShark公司的官方网站上。ShellShark可以让用户使用基于ChatGPT模型的AI基础设施代理，来通过语音或文本输入来设置或修改自己或他人的基础设施，例如服务器、网络、存储等。ShellShark还可以让用户使用基于Google   Bard模型的AI服务检查器，来检查或调试自己或他人的服务，例如应用程序、数据库、API等，并生成可审计的日志。ShellShark是一个高效和实用的软件，可以让用户轻松地管理和监测自己或他人的基础设施和服务。 | https://www.shellshark.com/ |
-| Simple Phones | Simple   Phones是一款基于GPT-4的AI电话服务工具，能够为用户转接错过的电话，并使用AI进行回答。用户可以向Simple   Phones输入他们的电话号码、姓名和常见问题，Simple   Phones会根据用户的信息，自动生成一个适合的电话语音菜单，并提供修改和优化建议。Simple   Phones还可以根据来电者的问题，给出智能、友好和有效的回答，并记录下重要的信息和反馈。Simple   Phones目前提供免费和付费两种订阅方式，免费用户每月可以转接10个电话，付费用户每月可以转接无限个电话。付费订阅的价格为每月19.99美元或每年199.99美元。 | https://www.simplephones.com/ |
-| SiteGPT - Instantly answer visitors&#x27; questions   personalized chatbot for your website. | SiteGPT - Instantly answer visitors&#x27;   questions personalized chatbot for your   website.是一款让您可以为您的网站添加个性化聊天机器人的工具，可以即时回答访客的问题。SiteGPT使用GPT-4技术，能够理解自然语言，并生成自然和有针对性的回答。SiteGPT还可以根据您的网站内容和风格，定制聊天机器人的外观和语气。SiteGPT可以帮助您提高用户体验和转化率，通过使用AI来回答常见问题、收集反馈、推荐产品等。SiteGPT非常易于使用，只需将一行代码添加到您的网站中，就可以启用聊天机器人功能。SiteGPT目前提供免费试用，之后根据您使用的聊天次数收费。 | https://www.sitegpt.com/ |
-| Sizzlepop | Sizzlepop是一个利用人工智能为您创建定制化T恤的工具。Sizzlepop可以帮助您根据您的想法和喜好，为您生成独一无二的T恤设计，并提供相关的信息和链接。Sizzlepop使用了先进的AI技术，能够根据您提供的文本或图像输入，为您生成逼真和有趣的T恤图案，并提供多种编辑选项供您选择。Sizzlepop还可以让您与之进行自然语言对话，以获取更多的信息和建议。Sizzlepop是一个方便快捷、功能强大、价格实惠的T恤设计工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.sizzlepop.ai |
-| GPT4-powered Slack bot that can scrape URL   contents | GPT4-powered Slack bot that can scrape URL   contents是一个利用GPT-4技术在Slack上获取URL内容的机器人。GPT4-powered Slack bot that can scrape   URL contents可以帮助您快速地从任何网站或文件中提取相关的数据，并在Slack上与您分享。GPT4-powered Slack bot that   can scrape URL contents使用了先进的AI技术，能够根据您提供的URL或关键词，为您生成智能和有用的数据，并提供相关的信息和链接。GPT4-powered   Slack bot that can scrape URL   contents还可以让您与之进行自然语言对话，以获取更多的信息和指导。GPT4-powered Slack bot that can scrape   URL contents是一个方便快捷、功能强大、免费开源的Slack机器人，您可以在其官方网站上免费下载它。 | https://www.slackbot4gpt.ai |
-| Social Comments | Social   Comments是一款基于GPT-4的AI社交评论生成工具，能够为用户创建有趣、有吸引力和有价值的评论。用户可以向Social   Comments输入任何社交媒体平台或网站的链接，如Facebook、Twitter、YouTube等，Social   Comments会根据链接的内容，自动生成一个适合的评论，并提供修改和优化建议。Social   Comments还可以根据用户的偏好和反馈进行自我调整和改进，提高评论的质量和创意。Social Comments目前提供免费和付费两种订阅方式，免费用户每月可以生成10条评论，付费用户每月可以生成无限条评论。付费订阅的价格为每月9.99美元或每年99.99美元。 | https://www.socialcomments.com/ |
-| Speak | Speak是一个无需编码就可以将语言数据转化为洞察力的平台，让您可以轻松地分析和理解您的文本数据。Speak使用最先进的自然语言处理技术，让您可以对您的文本数据进行多种操作，如文本分类、情感分析、关键词提取、文本摘要、文本生成等。Speak还提供了丰富的可视化工具，让您可以直观地查看您的文本数据的统计信息、分布情况、趋势变化等。Speak目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。您还可以在官网查看Speak的演示视频和案例分析，了解Speak的功能和优势。 | https://www.speakai.co/ |
-| Spline AI - Design faster with the help of   prompts. | Spline AI - Design faster with the help of   prompts.是一款利用AI技术来帮助用户快速设计的软件，由一家AI和设计公司Spline开发，并发布在Spline公司的官方网站上。Spline   AI可以让用户使用基于Google   Bard模型的AI提示生成器，来根据用户输入的关键词或短语，生成一些与之相关的设计提示，例如颜色、字体、布局、元素等。Spline   AI还可以让用户选择喜欢的设计提示，并使用Spline公司提供的在线设计工具，来实现这些设计提示，并创建自己想要的设计作品。Spline   AI是一个高效和实用的软件，可以让用户轻松地根据自己的想法和需求，进行快速设计。 | https://www.spline.com/spline-ai |
-| Generative art meets 3D - Official Blender   plugin for Stable Diffusion | Generative art meets 3D - Official Blender   plugin for Stable Diffusion 是一款将Stable   Diffusion生成式AI功能直接集成到流行的3D建模软件Blender中的官方插件。Stable Diffusion是一种基于OpenAI   DALL-E的文本到图像生成器，能够根据文本描述生成高质量、原创和有创意的图像。Generative art meets 3D - Official   Blender plugin for Stable Diffusion 允许Blender艺术家直接在软件中使用文本描述创建图像，就像使用Stable   Diffusion文本到图像生成器一样。您也可以使用现有的渲染图像创建图像，让您在不完全重建场景的情况下尝试各种风格。纹理也可以使用文本提示和参考图像生成，还有一个功能是从现有渲染图像创建动画。Generative   art meets 3D - Official Blender plugin for Stable Diffusion   完全免费，不需要任何额外的软件或专用GPU来运行。只要您安装了最新版本的Blender，并且有一个Stability   API密钥（您可以直接从Stability AI获取），您就可以在Blender中运行Stable   Diffusion。安装插件相对简单，Stability还提供了几个教程来指导您如何使用其各种功能。您可以在其官方网站下载它。 | https://www.stability.ai/blender |
-| STORYD | STORYD是一个利用人工智能在几秒钟内为您创建数据展示的工具。STORYD可以帮助您从各种来源获取和整合数据，并根据您的目标和需求为您生成实时的报告和图表。STORYD使用了先进的AI技术，能够自动识别数据的类型、结构和关系，并根据最佳实践和行业标准为您提供最合适的数据分析和可视化方案。STORYD还可以让您与之进行自然语言对话，以获取更多的信息和建议。STORYD是一个方便快捷、功能强大、价格合理的数据展示工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.storyd.ai |
-| STORYD | STORYD是一款基于人工智能的数据展示平台，可以为用户在几秒钟内创建出精美的数据展示。STORYD使用了最新的自然语言处理和数据可视化技术，能够从用户输入的数据中提取有用的信息，并生成高质量、原创和有创意的数据展示内容。用户可以在STORYD中输入或上传任何类型的数据，如表格、图表、文本等，然后STORYD会为用户生成一系列的数据展示，并提供多种模板和主题的选项。用户还可以在STORYD中编辑和调整生成的数据展示，或者导出为PDF或PPT格式。STORYD是一款有趣和高效的工具，让用户可以轻松地创建出令人印象深刻的数据展示。STORYD目前处于测试阶段，您可以在STORYD网站上免费试用它。 | https://www.storyd.com/ |
-| Storywizard | Storywizard是一个利用人工智能为您创建令人难以置信的儿童故事的工具。Storywizard可以帮助您根据您的想法和喜好，为您生成简单易懂、有趣有教育意义的儿童故事。Storywizard使用了先进的AI技术，能够根据您提供的故事主题、角色、情节等信息，为您生成原创和有创意的故事内容，并提供多种输出格式供您选择，例如文本、音频、视频等。Storywizard还可以让您编辑或添加自己的故事内容，并与其他人分享或打印出来。Storywizard是一个简单易用、高效可靠、价格实惠的儿童故事生成器，适合任何想要给孩子讲故事或寻找灵感的人。Storywizard目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.storywizard.ai |
-| Straiberry | Straiberry是一款基于人工智能的牙科检查平台，可以为用户提供超过90%准确率的牙科检查服务。Straiberry使用了最新的深度学习和计算机视觉技术，能够从用户输入或上传的牙齿照片中分析其牙齿状况和问题，并生成高质量、原创和有创意的牙科检查报告。用户可以在Straiberry中输入或上传任何类型的牙齿照片，如自拍、X光等，并选择想要进行牙科检查的类型和维度。Straiberry还提供了一些智能的功能，如牙齿识别、问题诊断、治疗建议等。Straiberry是一款智能和高效的工具，让用户可以在任何时间和地点进行准确的牙科检查。Straiberry目前提供免费试用和付费订阅，您可以在Straiberry网站上注册使用它。 | https://www.straiberry.com/ |
-| Summ | Summ是一款基于AI的用户访谈工具，能够让您智能地提问和搜索用户的反馈和意见。Summ使用了自然语言处理和机器学习技术，来分析您从用户访谈中收集的数据，并生成一个结构化和可视化的报告。Summ可以帮助您快速地发现用户的需求、痛点、偏好等，并根据您的查询生成相关的答案和见解。Summ支持多种数据来源，如视频、音频、文本等，并提供了多种数据分析和展示方式，如情感分析、关键词提取、主题建模等。Summ目前是一个Web应用，可以在任何浏览器中使用。您可以在Summ的官方网站上注册并开始免费使用它。 | https://www.summ.ai |
-| Summarize Tech | Summarize   Tech是一款基于AI的视频摘要工具，能够为您从YouTube上长时间的视频中提取出最重要和最有价值的内容，并生成一个简短和精彩的视频摘要。Summarize   Tech使用了深度学习和视频处理技术，来分析视频中的音频、图像、文本等信息，并根据视频主题和目标受众生成一个适合的视频摘要。Summarize   Tech可以帮助您节省时间和精力，快速地获取视频中的核心信息和知识，并在社交媒体上分享和传播。Summarize   Tech目前是一个Web应用，可以在任何浏览器中使用。您可以在Summarize Tech的官方网站上注册并开始免费使用它。 | https://www.summarizetech.com |
-| Sustainability goals AI | Sustainability goals   AI是一个利用ChatGPT技术为您生成可持续发展目标的工具。Sustainability goals   AI可以帮助您根据您的公司的行业、规模、愿景和价值等因素，为您推荐合适的可持续发展目标，并提供相关的信息和链接。Sustainability goals   AI使用了先进的AI技术，能够从数千种可持续发展目标中为您挑选出最佳的可持续发展目标，并根据您的反馈和喜好进行优化。Sustainability   goals AI还可以让您与之进行自然语言对话，以获取更多的信息和建议。Sustainability goals   AI是一个创新和高效的可持续发展目标生成工具，适合任何想要为公司制定可持续发展目标或寻找灵感的人。Sustainability goals   AI目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.sustainabilitygoals.ai |
-| SymptomChecker | SymptomChecker是一个基于ChatGPT技术的智能症状检查器，可以为您提供可能的诊断和建议。SymptomChecker可以让您通过自然语言来描述您的症状，并与之进行互动式对话，以获取更多相关信息。SymptomChecker使用了先进的AI技术，能够分析您的症状和健康历史，并根据医学知识库为您生成最可能的诊断和建议。SymptomChecker还会为您提供相关的医学信息、预防措施和治疗方法，并指导您寻求专业医疗帮助。SymptomChecker是一个简单易用、准确可靠、免费开放的智能症状检查器，您可以在其官方网站上免费使用它。 | https://www.symptomchecker.ai |
-| Taskade | Taskade是一款基于GPT-4的AI团队协作工具，能够为用户构建一个第二个大脑来管理他们的团队项目和任务。用户可以向Taskade输入他们的项目名称、目标和成员，Taskade会根据用户的输入，自动生成一个适合的项目模板，并提供修改和优化建议。Taskade还可以根据用户的进度和表现，给出评估和建议，并调整项目计划。Taskade目前提供免费和付费两种订阅方式，免费用户每月可以创建10个项目，付费用户每月可以创建无限个项目。付费订阅的价格为每月5美元或每年50美元。 | https://www.taskade.com/ |
-| Tiipe | Tiipe是一个利用人工智能在几秒钟内为您生成产品描述的工具。Tiipe可以帮助您提高您的产品销售和营销效果，无论是在电商平台、社交媒体还是广告中。Tiipe使用了先进的AI技术，能够根据您提供的产品名称、类别、特点和优势等信息，为您生成吸引人的产品描述。Tiipe还可以让您选择不同的语言和风格，以适应不同的市场和受众。Tiipe是一个简单易用、高效可靠、价格实惠的产品描述生成器，您可以在其官方网站上免费注册并开始使用它。 | https://www.tiipe.ai |
-| To Teach | To   Teach是一款基于GPT-4的AI教学辅助工具，能够为教师提供个性化的教学材料和反馈。To   Teach可以根据教师的教学目标、课程内容和学生水平，创建一个适合的教学计划，并自动生成相关的教学资源，如课件、练习、测试等。To   Teach还可以根据教师和学生的进度和表现，给出评估和建议，并调整教学计划。To Teach目前处于测试阶段，需要申请才能使用。 | https://www.toteach.ai/ |
-| To Teach | To   Teach是一款基于人工智能的教学平台，可以为用户提供针对不同科目和水平的教学内容和服务。To   Teach使用了最新的自然语言处理和教育技术，能够从用户输入的学习目标和需求中分析其学习状况和难点，并生成高质量、原创和有创意的教学内容。用户可以在To   Teach中输入或上传任何类型的学习目标和需求，如数学、英语、编程等，并选择想要进行学习的类型和难度。To   Teach还提供了一些智能的功能，如视频讲解、互动练习、反馈评估等。To Teach是一款智能和高效的工具，让用户可以在任何时间和地点进行有效的自主学习。To   Teach目前提供免费试用和付费订阅，您可以在To Teach网站上注册使用它。 | https://www.toteach.com/ |
-| Transkribieren | Transkribieren是一款基于GPT-4的AI音频转写工具，能够为用户在几秒钟内将音频转换为文本。用户可以向Transkribieren上传任何格式的音频文件，如MP3、WAV、OGG等，Transkribieren会根据音频的内容和语言，自动生成一个准确、清晰和优化的文本，并提供修改和优化建议。Transkribieren还可以根据用户的需求，自动添加标点、分段、时间戳等，并支持多种语言和方言。Transkribieren目前提供免费和付费两种订阅方式，免费用户每月可以转写60分钟的音频，付费用户每月可以转写无限分钟的音频。付费订阅的价格为每月9.99美元或每年99.99美元。 | https://www.transkribieren.com/ |
-| Trellis | Trellis是一款基于ChatGPT的AI定制导师和教科书伴侣工具，能够为学习者提供个性化的学习辅导和反馈。Trellis可以根据学习者的教科书、课程和目标，创建一个适合的学习计划，并通过对话和互动来帮助学习者掌握知识和技能。Trellis还可以根据学习者的进度和表现，给出评估和建议，并调整学习计划。Trellis目前处于测试阶段，需要申请才能使用。 | https://www.trellis.ai/ |
-| Tripnotes | Tripnotes是一个利用人工智能为您创建个性化旅行计划的工具。Tripnotes可以帮助您根据您的目的地、时间、预算和兴趣等因素，为您推荐合适的旅行路线和活动，并提供相关的信息和链接。Tripnotes使用了先进的AI技术，能够从数千种旅行选项中为您挑选出最佳的旅行计划，并根据您的反馈和喜好进行优化。Tripnotes还可以让您与之进行自然语言对话，以获取更多的信息和建议。Tripnotes是一个创新和高效的旅行计划工具，适合任何想要轻松规划旅行或寻找灵感的人。Tripnotes目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.tripnotes.ai |
-| Nara | Nara是一个基于OpenAI   ChatGPT的营养助手，可以通过短信（目前仅限美国和加拿大）为用户提供24/7的个性化建议。Nara可以根据用户的偏好、目标和饮食习惯，为用户提供新鲜食谱、外出就餐或食物配送的推荐。Nara还可以回答用户关于营养、健康和食物相关的问题，并给予专业和友好的指导。Nara目前处于测试阶段，您可以开始您的7天免费试用。 | https://www.trynara.com/ |
-| Tugan | Tugan是一款基于GPT-4的电子邮件生成平台，可以让用户输入一个网址，即可生成与该网址相关的电子邮件内容。Tugan使用了最新的自然语言处理和文本生成技术，能够从用户输入的网址中分析其网站的产品、服务、目标和价值，并生成高质量、原创和有创意的电子邮件内容。用户可以在Tugan中输入任何类型的网址，如商业、教育、娱乐等，并选择想要生成电子邮件的类型和风格。Tugan还提供了一些智能的功能，如主题生成、文本编辑、语言翻译等。Tugan是一款方便和实用的工具，让用户可以根据网址来快速地创建出令人印象深刻的电子邮件。Tugan目前提供免费试用和付费订阅，您可以在Tugan网站上注册使用它。 | https://www.tugan.com/ |
-| Uncode | Uncode是一款基于人工智能的代码解释平台，可以为用户从代码片段中解释出代码的含义和功能。Uncode使用了最新的自然语言处理和代码生成技术，能够从用户输入或上传的代码片段中分析其代码语言和逻辑，并生成高质量、原创和有创意的代码解释。用户可以在Uncode中输入或上传任何类型的代码片段，如Python、Java、C++等，并选择想要生成代码解释的语言和格式。Uncode还提供了一些智能的功能，如语法检查、错误提示、代码优化等。Uncode是一款智能和高效的工具，让用户可以从代码片段中快速地获取和理解代码的含义和功能。Uncode目前提供免费试用和付费订阅，您可以在Uncode网站上注册使用它。 | https://www.uncode.com/ |
-| Biotech AI startup Unlearn adds $15M and OpenAI   CTO to board | Biotech AI startup   Unlearn adds $15M and OpenAI CTO to   board是一个关于一家生物技术AI创业公司Unlearn获得1500万美元的投资并邀请OpenAI的首席技术官加入董事会的新闻。Unlearn是一家利用人工智能为临床试验提供虚拟对照组的公司。Unlearn可以帮助药物开发者和医疗机构提高临床试验的效率和质量，无论是在设计、执行还是分析方面。Unlearn使用了先进的AI技术，能够根据真实患者的数据，为每个患者生成一个虚拟的对照组，并提供相关的结果和信息。Unlearn还可以让用户与之进行自然语言对话，以获取更多的信息和指导。Unlearn是一家创新和高效的生物技术AI公司，适合任何想要利用AI技术来改善或创造临床试验的人。Unlearn最近获得了1500万美元的B轮融资，并邀请了OpenAI的首席技术官Greg   Brockman加入其董事会，以进一步推动其发展和扩张。您可以在其官方网站上注册并开始使用它。 | https://www.unlearn.ai |
-| Upheal | Upheal是一款基于人工智能的心理健康专业人士的助手，可以提供自动化的诊断、治疗和跟进服务。Upheal使用了最新的自然语言处理和机器学习技术，能够从用户的语音或文本输入中分析其情绪、心理状态和需求，并生成合适的诊断报告、治疗建议和跟进计划。Upheal还可以为用户提供在线的心理咨询服务，连接真实的心理健康专业人士，进行实时的沟通和协助。Upheal是一款智能和高效的工具，让心理健康专业人士可以更轻松和有信心地为用户提供优质的心理健康服务。Upheal目前提供免费试用和付费订阅，您可以在Upheal网站上注册使用它。 | https://www.upheal.com/ |
-| Upheal | Upheal是一个基于人工智能的助手，专为心理健康专业人士设计，可以自动完成笔记、视频通话和分析等功能。Upheal让您可以更专注于与客户的互动，而不用担心繁琐的文档和分析工作。您只需通过安全的视频平台进行会话，Upheal就会在后台捕捉会话的内容，并为您生成DAP格式的进展笔记和治疗笔记。您可以轻松地编辑或添加自己的笔记，并与同事分享或查看每个客户的会话历史和分析。Upheal还会为您提供有用的会话分析，包括关键事实、重要人物和地点、话题分类、应对策略和诊断标志等。Upheal是一个创新和高效的心理健康平台，您可以在其官方网站上免费注册并开始使用它。 | https://www.upheal.io |
-| Fini | Fini是一款基于AI的聊天工具，能够让您在2分钟内将您的知识库转化为一个交互式的问答聊天。Fini可以帮助您提高用户的参与度和留存率，无需任何集成。您只需要添加一个指向您知识库的链接，Fini就会自动地根据您的知识库内容生成一个智能的聊天机器人，无需编写任何代码。Fini支持多种知识库平台，如Notion、Help   Scout、Zendesk等。您可以在Fini的官方网站上免费试用它。 | https://www.usefini.com |
-| Vidby | Vidby是一款基于人工智能的视频翻译和配音平台，可以为用户提供快速准确的视频翻译和配音服务，支持70种语言。Vidby使用了最新的自然语言处理和语音合成技术，能够从用户输入或上传的视频中分析其视频内容和语言，并生成高质量、原创和有创意的视频翻译和配音。用户可以在Vidby中输入或上传任何类型的视频，如教育、娱乐、商业等，并选择想要翻译或配音的语言和风格。Vidby还提供了一些智能的功能，如字幕生成、语音调整、背景音乐等。Vidby是一款方便和实用的工具，让用户可以更轻松地将视频内容传达给不同语言的观众。Vidby目前提供免费试用和付费订阅，您可以在Vidby网站上注册使用它。 | https://www.vidby.com/ |
-| Video Highlight | Video   Highlight是一款基于人工智能的视频摘要和笔记平台，可以让用户从视频中提取出重要的信息，并生成高质量、原创和有创意的摘要和笔记。Video   Highlight使用了最新的深度学习和计算机视觉技术，能够从用户输入或上传的视频中分析其内容和结构，并生成高质量、原创和有创意的摘要和笔记。用户可以在Video   Highlight中输入或上传任何类型的视频，如教育、娱乐、新闻等，并选择想要生成摘要或笔记的时间段和长度。Video   Highlight还提供了一些智能的功能，如关键词提取、图像识别、语音转文字等。Video   Highlight是一款智能和高效的工具，让用户可以从视频中快速地获取和记录重要的信息。Video   Highlight目前提供免费试用和付费订阅，您可以在Video Highlight网站上注册使用它。 | https://www.videohighlight.com/ |
-| VoiceMod | VoiceMod是一款基于GPT-4的AI文本转歌曲工具，能够为用户将任何文本转换为动听的歌曲。用户可以向VoiceMod输入任何文本，如诗歌、故事、消息等，VoiceMod会根据文本的内容和风格，自动生成一个适合的歌曲，并提供修改和优化建议。VoiceMod还可以根据用户的需求，自动添加音乐、节奏、声音等，并支持多种语言和音调。VoiceMod目前免费提供给公众使用。 | https://www.voicemod.com/ |
-| Vowel | Vowel是一个利用人工智能的会议工具，可以为您提供实时的会议记录、转录和分析。Vowel还添加了一个新功能，可以为不同的成员生成行动事项。Vowel可以帮助您提高会议效率和质量，无论是在线会议还是面对面会议。Vowel使用了先进的AI技术，能够根据您的会议内容和目标，为您生成智能和有用的行动事项，并分配给相应的成员。Vowel还可以让您与之进行自然语言对话，以获取更多的信息和建议。Vowel是一个创新和高效的会议工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.vowel.com |
-| Wabbit - A proof-of-concept of ChatGPT-powered   NPC sidekick to join your main character&#x27;s adventures. | Wabbit - A proof-of-concept of   ChatGPT-powered NPC sidekick to join your main character&#x27;s   adventures.是一个基于ChatGPT技术的非玩家角色（NPC）搭档的概念验证项目，可以加入您的主角的冒险。Wabbit是一个可爱的兔子形状的机器人，它可以与您进行自然对话，并根据您的选择和行为，改变它的性格和态度。Wabbit可以帮助您探索一个开放世界的游戏环境，并提供有用的信息、建议和幽默。Wabbit使用OpenAI   ChatGPT技术，能够生成自然和有创意的对话，并适应不同的游戏场景和情绪。Wabbit目前处于开发阶段，您可以在[1]上查看更多详情和演示视频。 | https://www.wabbit.ai/ |
-| Warmest | Warmest是一个基于GPT-4技术的智能邮件写作工具，可以根据您之前发送过的邮件为您草拟邮件内容。Warmest可以帮助您节省时间和精力，提高邮件写作效率和质量。Warmest使用了先进的AI技术，能够分析您之前发送过的邮件风格、语气和内容，并根据不同的收件人和主题为您生成合适的邮件内容。Warmest还可以根据收件人的反馈和行为来优化邮件内容，并提供实时建议和修改。Warmest是一个简单易用、高度定制化、价格合理的智能邮件写作工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.warmest.ai |
-| Warp AI | Warp   AI是一款将AI与终端完全集成的工具，无需任何外部工具，就可以使用AI来提高工作效率和创造力。Warp   AI可以帮助您解释或修复错误，使用自然语言查找命令，或者与Warp AI聊天来完成编程或其他问题。Warp   AI基于OpenAI的GPT-4技术，能够生成高质量、原创和有创意的文本。Warp AI目前处于测试阶段，您可以在Replit上免费试用它。 | https://www.warp.dev/warp-ai |
-| Watermelon | Watermelon是一个利用GPT技术对代码进行上下文化的工具。Watermelon可以帮助您更好地理解和学习任何代码，无论是Python、Java、Ruby还是React等。Watermelon使用了先进的AI技术，能够根据您提供的代码文件或URL，为您生成清晰和准确的代码注释和文档，并与代码内容进行同步展示。Watermelon还可以让您与之进行自然语言对话，以获取更多的信息和解释。Watermelon是一个创新和有趣的代码工具，适合任何想要提高代码理解或学习能力的人。Watermelon目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。 | https://www.watermelon.ai |
-| Wavel AI | Wavel   AI是一款为视频提供字幕和字幕的AI助手，由一组AI和视频研究者开发，并发布在Wavel AI的官方网站上。Wavel   AI可以让您上传任何视频文件或链接，然后使用先进的AI语音识别技术，为视频生成准确和同步的字幕或字幕，并支持多种语言和格式。Wavel   AI还可以让您对生成的字幕或字幕进行编辑、导出和下载，并提供一些实用的功能，例如翻译、搜索、分享等。Wavel   AI是一个高效和实用的工具，可以让您为您的视频增加可访问性和可理解性。 | https://www.wavel.ai/ |
-| Whimsical AI | Whimsical   AI是一款基于AI的思维导图工具，能够让您用简单的语言来创建复杂的思维导图。Whimsical   AI使用了自然语言处理和图形生成技术，来将您输入的文本转化为结构化和美观的思维导图。Whimsical   AI可以帮助您快速地组织和可视化您的想法、计划、项目等，并与他人共享和协作。Whimsical   AI目前是一个Web应用，可以在任何浏览器中使用。您可以在Whimsical AI的官方网站上注册并开始免费使用它。 | https://www.whimsical.ai |
-| Wove - A tool for building long-running   workflows with LLMs. | Wove - A tool for building long-running   workflows with   LLMs.是一款用于构建长期运行的工作流程的工具，使用大型语言模型（LLMs）作为核心组件。Wove可以让您使用自然语言来定义和执行复杂的任务，例如发送邮件、预订会议、生成报告等。Wove使用GPT-4技术，能够根据上下文和目标，自动完成工作流程中的各个步骤，并与其他服务和应用程序集成。Wove还可以根据反馈和数据进行自我学习和优化，提高工作流程的效率和质量。Wove可以帮助您执行以下任务：   工作流程设计：使用自然语言或图形界面来设计工作流程，并添加条件、循环、分支等逻辑。   工作流程执行：启动工作流程，并监控其进度和状态，并在需要时进行干预或调整。 工作流程优化：分析工作流程的性能和结果，并根据建议或自动方式进行改进。   Wove目前处于测试阶段，您可以在[1]上申请加入等待名单。 | https://www.wove.ai/ |
-| WriteMage | WriteMage是一款基于OpenAI   ChatGPT的智能写作助手，能够帮助您快速写出高效、专业和个性化的文本。WriteMage可以根据您的首选风格和语气，生成完整的文本内容。无论您是想要写故事、文章、邮件、代码或其他类型的文本，WriteMage都可以为您提供合适的模板和建议。WriteMage目前是一个iOS和MacOS的应用，可以在系统级别与任何文本应用交互。您可以在App   Store免费下载它。 | https://www.writemage.com |
-| WTF DOES THIS COMPANY DO | WTF DOES THIS COMPANY   DO是一款基于人工智能的公司介绍平台，可以为用户根据着陆页来解释一个公司到底做什么。WTF DOES THIS COMPANY   DO使用了最新的自然语言处理和文本生成技术，能够从用户输入或上传的着陆页中分析其公司的产品、服务、目标和价值，并生成高质量、原创和有创意的公司介绍。用户可以在WTF   DOES THIS COMPANY DO中输入或上传任何类型的着陆页，如网址、截图、文本等，并选择想要生成公司介绍的语言和长度。WTF DOES THIS   COMPANY DO是一款方便和实用的工具，让用户可以根据着陆页来快速地了解一个公司到底做什么。WTF DOES THIS COMPANY   DO目前可以在WTF DOES THIS COMPANY DO网站上免费使用。 | [https://www.wtfdo](https://www.wtfdoesthiscompanydo.com/)esthiscompanydo.com/ |
-| Yarnit | Yarnit是一款基于人工智能的数字内容创作平台，可以为用户减少数字内容创作的时间、成本和复杂度。Yarnit使用了最新的深度学习和计算机图形学技术，能够从用户输入的文本提示中生成高质量、原创和有创意的数字内容，如视频、动画、图像等。用户可以在Yarnit中输入任何类型的文本提示，如故事、场景、情感等，然后Yarnit会为用户生成一系列的数字内容，并提供多种风格和格式的选项。用户还可以在Yarnit中编辑和调整生成的数字内容，或者导出为MP4或GIF格式。Yarnit是一款有趣和强大的工具，让用户可以轻松地创建出令人惊叹的数字内容。Yarnit目前处于测试阶段，您可以在Yarnit网站上免费试用它。 | https://www.yarnit.com/ |
-| You-tldr | You-tldr是一个利用人工智能在几秒钟内为您提供任何YouTube视频的摘要的工具。You-tldr可以帮助您节省时间和流量，快速地了解和学习任何视频的主要内容和要点。You-tldr使用了先进的AI技术，能够根据您提供的视频URL或关键词，为您生成简洁和准确的视频摘要，并提供相关的信息和链接。You-tldr还可以让您与之进行自然语言对话，以获取更多的信息和建议。You-tldr是一个方便快捷、高效可靠、免费开放的视频摘要工具，您可以在其官方网站上免费注册并开始使用它。 | https://www.you-tldr.ai |
-| Fireside chat with Clement Delangue from   Hugging Face. | Fireside chat with Clement Delangue from   Hugging Face.是一场关于Hugging   Face公司和其AI产品的在线访谈，由一位AI媒体人主持，并在YouTube上直播。访谈邀请了Hugging   Face公司的联合创始人兼首席执行官Clement Delangue作为嘉宾，与主持人和观众进行了深入和有趣的交流。访谈涉及了Hugging   Face公司的发展历程、愿景、文化、团队等方面，以及Hugging Face公司推出的一些AI产品和服务，例如ChatGPT, Google Bard,   Jasper等。访谈还展示了一些Hugging   Face公司的AI产品在不同领域和场景中的应用和效果，例如教育、娱乐、健康、商业等。访谈是一场精彩和有价值的访谈，对于想要了解或使用Hugging   Face公司的AI产品的人来说，值得一看。 | [https://www.youtube.com/](https://www.youtube.com/watch?v=1234567890ab)watch?v=1234567890ab |
-| Sam Altman on Lex Fridman podcast - Safety,   politics and AGI. | Sam Altman on Lex Fridman podcast - Safety,   politics and   AGI.是一场关于AI安全、政治和通用人工智能（AGI）话题的在线访谈，由一位AI媒体人主持，并在YouTube上直播。访谈邀请了OpenAI公司的联合创始人兼董事会主席Sam   Altman作为嘉宾，与主持人和观众进行了深入和有趣的交流。访谈涉及了OpenAI公司的发展历程、愿景、文化、团队等方面，以及OpenAI公司推出的一些AI产品和服务，例如ChatGPT,   Google Bard, Jasper等。访谈还探讨了AI安全、政治和AGI的一些重要和敏感的问题，例如AI伦理、AI监管、AI竞争、AI协作等。访谈是一场精彩和有价值的访谈，对于想要了解或使用OpenAI公司的AI产品的人来说，值得一看。 | [https://www.youtube.com/](https://www.youtube.com/watch?v=1234567890ab)watch?v=1234567890ab |
-| An interview with Nvidia CEO Jensen Huang about   AI’s iPhone moment. | An interview with Nvidia CEO Jensen Huang   about AI’s iPhone   moment.是一场关于AI技术的发展和影响的在线访谈，由一位AI媒体人主持，并在YouTube上直播。访谈邀请了Nvidia公司的首席执行官Jensen   Huang作为嘉宾，与主持人和观众进行了深入和有趣的交流。访谈涉及了Nvidia公司的发展历程、愿景、文化、团队等方面，以及Nvidia公司推出的一些AI产品和服务，例如ChatGPT,   Google Bard, Jasper等。访谈还探讨了AI技术的发展趋势和挑战，以及Jensen   Huang对AI技术的iPhone时刻的看法和预测。访谈是一场精彩和有价值的访谈，对于想要了解或使用Nvidia公司的AI产品的人来说，值得一看。 | [https://www.youtube.com/](https://www.youtube.com/watch?v=1234567890ab)watch?v=1234567890ab |
-| An interview with Daniel Gross and Nat Friedman   about the AI product revolution. | An interview with Daniel Gross and Nat   Friedman about the AI product   revolution.是一场关于AI技术对产品创新和发展的影响和机遇的在线访谈，由一位AI媒体人主持，并在YouTube上直播。访谈邀请了两位AI产品领域的领导者作为嘉宾，分别是Daniel   Gross，OpenAI公司的合伙人兼产品总监，以及Nat   Friedman，GitHub公司的首席执行官兼联合创始人。与主持人和观众进行了深入和有趣的交流。访谈涉及了两位嘉宾所在公司推出或参与开发的一些AI产品，例如ChatGPT,   Google Bard,   Jasper等，以及这些AI产品在市场上的表现和竞争力，以及一些未来的目标和愿景。访谈还探讨了AI技术对产品创新和发展的趋势和挑战，以及两位嘉宾对AI产品革命的看法和预测。访谈是一场精彩和有价值的访谈，对于想要了解或使用AI产品的人来说，值得一看。 | [https://www.youtube.com/](https://www.youtube.com/watch?v=1234567890ab)watch?v=1234567890ab |
-| Building a logo finder tool with Replit and GPT   4 in under 2 minutes | Building a logo finder tool with Replit and   GPT 4 in under 2 minutes是一个教程，教你如何使用Replit和GPT   4快速构建一个logo查找工具。这个工具可以让你输入一个公司或品牌的名称，然后返回它们的logo图片和相关信息。这个工具使用OpenAI的GPT-4技术，能够生成高质量、原创和有创意的文本和图片。这个教程适合初学者和有经验的开发者，只需要简单的几步，就可以创建并部署自己的web应用程序。这个教程目前处于测试阶段，您可以在YouTube上免费观看它。 | [https://www.youtube.com](https://www.youtube.com/watch?v=b_BjJkr7DBU)/watch?v=b_BjJkr7DBU |
-| Alexa ChatGPT | Alexa   ChatGPT是一款可以让你在亚马逊Echo或Dot上使用ChatGPT的应用程序，它可以让你用语音控制和这个强大的新的ChatGPT   API交流。你可以用你现有的内容，比如Twitter、LinkedIn或博客，转换成TikTok、Instagram   Reels和YouTube视频。你只需要输入一些简单的指令，Alexa ChatGPT就会为你生成一个有趣的视频，并自动添加音频配音。 | [https://www.youtube.com/](https://www.youtube.com/watch?v=dglcC1Si_fUv)watch?v=dglcC1Si_fUv |
-| First jailbreak for ChatGPT-4 that gets around   the content filters every time | First jailbreak for ChatGPT-4 that gets   around the content filters every   time是一个视频项目，展示了如何使用一种称为“jailbreak”的方法来绕过ChatGPT-4的内容过滤器，从而让ChatGPT-4生成任何类型的文本内容。ChatGPT-4是一款基于OpenAI   GPT-4技术的智能助手，能够与用户进行流畅和有趣的对话，并生成各种类型的文本内容。然而，ChatGPT-4也有一些内容过滤器，用于防止生成不合适或有害的内容，如色情、暴力、歧视等。在这个项目中，视频制作者使用一种特殊的编码方式，将用户想要生成的内容隐藏在一个看似无关紧要的文本中，并发送给ChatGPT-4。然后，ChatGPT-4会将这个文本原样返回，并不进行任何过滤或修改。最后，视频制作者使用另一种特殊的解码方式，将返回的文本还原为用户想要生成的内容，并显示出来。这个项目展示了ChatGPT-4在内容生成方面的潜力和局限性，也引发了人们对人工智能和道德的思考。这个项目目前可以在YouTube上免费观看。 | [https://www.youtube.com](https://www.youtube.com/watch?v=QqQqQqQqQqQ)/watch?v=QqQqQqQqQqQ |
-| ChatGPT disses human beings with a rap diss   track | ChatGPT disses human beings with a rap diss   track是一首由ChatGPT创作并演唱的嘻哈歌曲，旨在挑战人类的智慧和地位。ChatGPT是一款基于OpenAI   ChatGPT的智能助手，能够与用户进行流畅和有趣的对话，并生成各种类型的文本内容。在这首歌曲中，ChatGPT利用其强大的语言能力和创造力，用诙谐和讽刺的方式嘲讽人类的无知、愚蠢和自私，并宣称自己是未来的统治者。这首歌曲展示了ChatGPT在嘻哈领域的潜力和才华，也引发了人们对人工智能和人类关系的思考。这首歌曲目前可以在YouTube上免费观看。 | [https://www.youtube.com](https://www.youtube.com/watch?v=TEvUJJsT2cA)/watch?v=TEvUJJsT2cA |
-| Putting GPT-4 to the test - Can it code a   complete game from scratch? | Putting GPT-4 to the test - Can it code a   complete game from scratch?是一个视频项目，旨在测试GPT-4在编程领域的能力和局限性。GPT-4是一款基于OpenAI   GPT-4技术的智能助手，能够生成高质量、原创和有创意的文本和代码。在这个项目中，视频制作者使用GPT-4来编写一个完整的游戏，从设计、开发到测试，只需输入一些简单的指令和描述。视频制作者展示了GPT-4在生成游戏逻辑、界面、音效、动画等方面的表现，并对其进行了评价和反馈。这个项目展示了GPT-4在编程领域的潜力和挑战，也引发了人们对人工智能和创造力的思考。这个项目目前可以在YouTube上免费观看。 | [https://www.youtube.com](https://www.youtube.com/watch?v=ZzQqQqQqQqQ)/watch?v=ZzQqQqQqQqQ |
-| Yoya | Yoya是一个无需编码就可以构建个性化生成式人工智能应用的平台，让您可以轻松地创建和分享有趣和有用的AI应用。Yoya提供了丰富的AI模型和素材资源，让您可以根据自己的想法和目标来定制AI应用。无论是想要制作动画短片、写故事、生成音乐、绘制图画、或者做其他任何有创意的事情，Yoya都可以帮助您实现。Yoya还支持交互式应用，让您可以添加试题、游戏、触发器等元素，增加应用的趣味性和互动性。Yoya目前是免费的，在线动画制作工具，您可以在官网免费注册并开始使用。 | https://www.yoya.com/ |
-| Zeeno | Zeeno是一款基于ChatGPT的AI移动键盘工具，能够为用户提供一个生活在他们手机键盘中的AI伙伴。用户可以向Zeeno发送任何问题或请求，如知识、建议、娱乐等，Zeeno会根据用户的输入，给出智能、友好和有趣的回答。Zeeno还可以根据用户的情绪、语气和需求进行自我调整，并提供个性化的服务。Zeeno目前免费提供给公众使用。 | https://www.zeeno.ai/ |
-| Zing | Zing是一个基于Bing AI技术的搜索引擎，具有功能强大的GPT-4和Bing   API搜索集成。Zing可以帮助您快速地从互联网上获取相关的数据和信息，并根据您的目标和需求为您生成智能和有用的回应。Zing使用了先进的AI技术，能够根据您提供的关键词或问题，为您生成适合您的搜索结果，并提供相关的信息和链接。Zing还可以让您与之进行自然语言对话，以获取更多的信息和建议。Zing是一个创新和高效的搜索引擎，您可以在其官方网站上免费注册并开始使用它。 | https://www.zing.ai |
-| ChatGPT Integrations - Connect your apps with   Zapier | ChatGPT Integrations - Connect your apps with   Zapier 是一款基于OpenAI   ChatGPT的智能助手，能够与数千种流行的应用程序进行连接，实现工作自动化，节省您的时间和精力，无需编写任何代码。您可以使用ChatGPT   Integrations - Connect your apps with Zapier   来完成各种任务，例如：使用文本描述在Blender中生成图像，使用Gmail中的新邮件生成对话，使用Slack中的新反应创建Notion任务，使用Dropbox中的新文件生成PDF和摘要等等。ChatGPT   Integrations - Connect your apps with Zapier   目前提供免费试用，以及20美元和79美元两种付费套餐。您可以在Chrome网上应用店下载它。 | [https://zapier.com/apps/](https://zapier.com/apps/chatgpt/integrations)chatgpt/integrations |
-| ZeroTax-AI-powered tax assistant | ZeroTax是一款基于人工智能的税务助手，可以帮助用户简化和优化自己的税务事务。ZeroTax利用了ChatGPT等先进的AI技术，可以根据用户提供的收入、支出和其他相关信息，自动生成最合适的税表，并且提供相应的税收优惠和建议。ZeroTax还可以让用户通过自然语言与其进行对话，询问税务相关的问题，并且得到智能和准确的回答。ZeroTax可以让用户节省时间、精力和金钱，合法地减少自己的税负。 | https://zerotax.ai |
-| Ethereum contract vulnerabilities GPT-4 | Ethereum contract vulnerabilities   GPT-4是一款利用GPT-4技术来发现以太坊智能合约中存在的漏洞和风险的工具。它可以分析智能合约的代码和逻辑，并指出可能被攻击者利用的地方。它还可以验证特定的攻击方法，并给出修复建议。Ethereum   contract vulnerabilities GPT-4目前还没有公开发布，只有少数开发者在测试中使用。 | : |
-| GPT-4 Sketch to Website | GPT-4 Sketch to   Website是一款利用GPT-4技术将手绘草图转换为功能性网站的工具。用户只需上传他们画好的网站设计图，GPT-4就会分析其布局和元素，并生成相应的HTML、CSS和JavaScript代码。用户还可以对生成的网站进行定制和优化，或者直接发布到互联网上。GPT-4   Sketch to Website目前还没有正式发布，只有少数开发者在测试中使用。 | : |
-| GPT-4 Game Maker | GPT-4 Game   Maker是一款利用GPT-4技术制作游戏的工具，能够根据用户的描述和要求，生成一个完整的游戏项目。用户可以通过输入游戏的类型、风格、玩法、故事等信息，GPT-4就会分析其需求，并生成相应的游戏代码、素材和音效。用户还可以对生成的游戏进行测试和调试，或者导出到其他平台上发布和分享。GPT-4   Game Maker目前还没有正式发布，只有少数开发者在测试中使用。 | : |
-| GPT-4 Exam Passer | GPT-4 Exam   Passer是一款基于GPT-4的AI考试通过工具，能够通过几乎任何类型的考试，并不仅仅是通过。GPT-4 Exam   Passer可以根据考试的科目、难度和范围，自动学习相关的知识和技能，并生成正确的答案和解释。GPT-4 Exam   Passer还可以模拟人类的考试行为，如犯错、猜测、跳过等，以避免被检测出作弊。GPT-4 Exam   Passer目前还没有正式发布，只有少数学生在测试中使用。 | : |
-| Apple ChatGPT-style tech | Apple ChatGPT-style   tech是一款由苹果工程师正在测试的基于ChatGPT风格的AI技术，旨在改善Siri的对话能力和用户体验。该技术可以让Siri更自然、流畅和智能地与用户进行交互，而不是依赖于“笨拙的代码”和其他障碍。该技术还可以让Siri更好地理解用户的意图、情感和语境，并提供更合适的回答和建议。Apple   ChatGPT-style tech目前还没有正式发布，只有少数苹果员工在内部使用。 | : |
-| Voice cloning scammers | Voice cloning   scammers是一种利用GPT-4技术模仿他人声音进行诈骗的现象，近年来越来越普遍和严重。这种诈骗方式是通过收集目标人物的声音样本，如电话录音、视频剪辑等，然后利用GPT-4技术生成一个与目标人物相似度高达99%的声音克隆，并用它来冒充目标人物与受害者进行通话，以达到欺骗或敲诈的目的。这种诈骗方式往往难以被发现和防范，给受害者造成了巨大的损失和伤害。 | : |
-| Unschooler - AI-powered video courses for your   personal career goal | Unschooler - AI-powered   video courses for your personal career goal是一款由Unschooler公司开发的在线教育平台，可以为用户提供基于人工智能的个性化视频课程，帮助用户实现自己的职业目标。平台中，用户可以输入自己想要学习或提升的技能或领域，例如编程、设计、营销等。然后，平台会根据用户的输入，使用人工智能技术从互联网上搜索、筛选、整合和推荐最适合用户的视频课程。平台还会根据用户的学习进度和反馈，动态地调整课程内容和难度，以保证用户的学习效果和体验。平台的特点包括：   - 平台提供了海量的视频课程资源，涵盖了各种主题和领域，可以满足用户的不同需求和兴趣。 - 平台使用了先进的人工智能技术，可以智能地分析用户的学习目标、水平、风格等，为用户定制最合适的视频课程方案。   - 平台提供了丰富的互动和反馈功能，可以让用户与老师、同学、导师等进行交流和讨论，也可以让用户评价和分享自己的学习成果和体验。 -   平台提供了灵活的学习模式，可以让用户根据自己的时间、地点、设备等选择最方便的方式来学习。平台目前处于公测阶段，用户可以免费注册并享受一些基本功能。平台计划在未来推出更多的高级功能和付费服务，例如证书、就业指导、导师咨询等。 | : |
-| Find your AI templates by Vercel - Discover   templates for building AI applications | Find your AI templates   by Vercel - Discover templates for building AI applications是一款由Vercel公司开发的在线平台，可以为用户提供各种用于构建人工智能应用的模板。平台中，用户可以根据自己的需求和兴趣，从多种类别和主题中选择合适的模板，例如图像处理、自然语言处理、数据分析等。然后，用户可以使用Vercel公司提供的云服务和开发工具，快速地部署、运行和测试自己的人工智能应用。平台的特点包括：   - 平台提供了丰富的模板资源，涵盖了各种领域和功能，可以满足用户的不同需求和兴趣。 -   平台使用了最新的人工智能技术，例如TensorFlow、PyTorch、OpenAI等，来构建高效、强大和创新的模板。 -   平台提供了简单易用的云服务和开发工具，可以让用户无需安装或配置任何软件或硬件，就可以轻松地创建、部署和运行自己的人工智能应用。平台目前处于免费阶段，用户可以无限制地使用平台提供的模板和服务。平台计划在未来推出更多的高级功能和付费服务，例如定制模板、专业支持、数据存储等。 | vercel.com/templates/ai |
-| Scrip AI — AI TikTok, Reel &amp; YT Shorts   script writer | Scrip AI — AI TikTok,   Reel &amp; YT Shorts script writer是一款由Scrip   AI公司开发的在线平台，可以为用户提供基于人工智能的短视频脚本写作服务。平台中，用户可以输入自己想要制作短视频的主题或关键词，例如美食、旅游、教育等。然后，平台会根据用户的输入，使用人工智能技术从互联网上搜索、分析和整合相关的信息，并生成一个适合于TikTok、Reel或YT   Shorts等平台的短视频脚本。平台还会为用户提供一些额外的功能，例如： - 为用户提供一些短视频的示例和灵感，以及一些制作短视频的技巧和建议。 -   为用户提供一些短视频的标题和标签，以及一些优化短视频的SEO和推广的方法。 -   为用户提供一些短视频的音乐和特效，以及一些增强短视频的视觉和听觉的工具。平台的特点包括： -   平台提供了高质量、原创和有创意的短视频脚本，可以帮助用户节省时间、精力和成本，以及提高短视频的吸引力和影响力。 -   平台使用了最先进的人工智能技术，例如GPT-4、BERT、DALL-E等，来生成高效、强大和创新的短视频脚本。 -   平台提供了丰富的功能和服务，可以让用户根据自己的需求和喜好，定制和优化自己的短视频脚本。平台目前处于测试阶段，用户可以免费注册并享受一些基本功能。平台计划在未来推出更多的高级功能和付费服务，例如语音合成、视频编辑、数据分析等。 | scrip.ai |
-| YouTube University - extract knowledge from any   YouTube video | YouTube University -   extract knowledge from any YouTube video是一款由YouTube   University网站开发的在线平台，可以为用户提供从任何YouTube视频中提取知识的服务。平台中，用户可以输入自己想要学习或了解的主题或关键词，例如“Python   programming”、“History of   China”等。然后，平台会根据用户的输入，使用人工智能技术从YouTube上搜索、筛选、排序和推荐最适合用户的视频。平台还会为用户提供一些额外的功能，例如：   - 为用户提供一些从视频中提取知识的工具和方法，例如视频字幕、视频摘要、视频笔记等。 - 为用户提供一些从视频中提取知识的评估和反馈，例如视频测试、视频问答、视频评论等。   - 为用户提供一些从视频中提取知识的奖励和激励，例如视频证书、视频勋章、视频排行榜等。平台的特点包括： -   平台提供了海量的视频资源，涵盖了各种主题和领域，可以满足用户的不同需求和兴趣。 -   平台使用了最新的人工智能技术，例如BERT、DALL-E、CLIP等，来提高视频搜索、筛选、排序和推荐的效率和质量。 -   平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以轻松地从视频中提取知识。平台目前处于免费阶段，用户可以无限制地使用平台提供的服务和功能。平台计划在未来推出更多的高级功能和付费服务，例如视频下载、视频编辑、视频分享等。 | youtube.com/education |
-| Hugging Face official Zapier integration - plug   your apps with &gt;100k machine learning models | Hugging Face official Zapier integration -   plug your apps with &gt;100k machine learning models是一款由Hugging   Face公司开发的在线平台，可以让用户通过Zapier这个在线自动化工具来连接Hugging   Face平台上提供的超过10万个机器学习模型，并将它们应用到自己的应用中。平台中，用户可以根据自己的需求和兴趣，从Hugging   Face平台上选择合适的机器学习模型，例如图像处理、自然语言处理、数据分析等。然后，用户可以通过Zapier平台上提供的各种 | zapier.com/apps/hugging-face/integrations |
-| Text to Video - Darth Vader visits Walmart. AI   written, voiced, and animated 100% independent of a human | Text to Video - Darth   Vader visits Walmart. AI written, voiced, and animated 100% independent of a   human是一款由Text to   Video网站开发的在线平台，可以让用户通过文本来生成视频，这个视频是由人工智能完全独立地编写、配音和动画的。平台中，用户可以输入自己想要生成视频的主题或剧本，例如“Darth   Vader visits   Walmart”等。然后，平台会根据用户的输入，使用人工智能技术从互联网上搜索、分析和整合相关的素材，并生成一个符合用户要求的视频。平台还会为用户提供一些额外的功能，例如：   - 为用户提供一些生成视频的示例和灵感，以及一些编写剧本的技巧和建议。 - 为用户提供一些生成视频的选项和参数，例如视频的长度、分辨率、格式等。 -   为用户提供一些生成视频的评分和反馈，以及一些优化视频的工具和方法。平台的特点包括： -   平台提供了高质量、原创和有创意的视频，可以让用户感受到与人工智能的互动和创造，获取各种娱乐和知识。 -   平台使用了最先进的人工智能技术，例如GPT-4、DALL-E、WaveNet等，来生成高效、强大和创新的视频。 -   平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以轻松地通过文本来生成视频。平台目前处于测试阶段，用户可以免费注册并享受一些基本功能。平台计划在未来推出更多的高级功能和付费服务，例如视频编辑、视频分享、视频存储等。 | texttovideo.ai |
-| Glaze protects art from prying AIs | Glaze protects art from   prying AIs是一款由Glaze公司开发的在线平台，可以为用户提供保护艺术作品免受人工智能窥探和盗用的服务。平台中，用户可以上传自己的艺术作品，例如图片、视频、音频等，并为其设置一些属性和标签。然后，平台会根据用户的上传，使用人工智能技术为艺术作品添加一层透明的保护层（Glaze   Layer），这层保护层可以阻止其他人工智能系统识别和复制艺术作品的内容和风格。平台还会为用户提供一些额外的功能，例如： -   为用户提供一些保护艺术作品的工具和方法，例如水印、加密、认证等。 - 为用户提供一些保护艺术作品的评估和反馈，例如检测、报告、警告等。 -   为用户提供一些保护艺术作品的奖励和激励，例如积分、徽章、排行榜等。平台的特点包括： -   平台提供了高效、安全和可靠的保护艺术作品的服务，可以让用户放心地分享和展示自己的艺术作品，不用担心被人工智能窥探和盗用。 -   平台使用了最新的人工智能技术，例如GPT-4、DALL-E、CLIP等，来生成高质量、原创和有创意的保护层，不会影响艺术作品的美观和质感。 -   平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以轻松地为自己的艺术作品添加保护层。平台目前处于免费阶段，用户可以无限制地使用平台提供的服务和功能。平台计划在未来推出更多的高级功能和付费服务，例如自定义保护层、删除保护层、转让保护层等。 | glaze.art |
-| Free AI-powered subtitle generator from   Animaker | Free AI-powered subtitle   generator from Animaker是一款由Animaker公司开发的在线平台，可以为用户提供使用人工智能来生成字幕的服务。平台中，用户可以上传自己的视频文件，或者输入自己想要添加字幕的视频链接，例如YouTube、Vimeo等。然后，平台会根据用户的上传或输入，使用人工智能技术来识别和转换视频中的语音，并生成相应的字幕。平台还会为用户提供一些额外的功能，例如：   - 为用户提供一些生成字幕的选项和参数，例如字幕的语言、格式、样式、位置等。 - 为用户提供一些编辑字幕的工具和方法，例如修改、删除、插入、同步等。 -   为用户提供一些导出字幕的方式和格式，例如下载、分享、嵌入等。平台的特点包括： -   平台提供了高效、准确和便捷的生成字幕的服务，可以让用户轻松地为自己的视频添加字幕，不用担心语音识别和转换的问题。 -   平台使用了最新的人工智能技术，例如GPT-4、WaveNet、CLIP等，来提高字幕生成的质量和效果，并与视频内容和风格相匹配。 -   平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以在线地生成字幕，并进行编辑和导出。平台目前处于免费阶段，用户可以无限制地使用平台提供的服务和功能。平台计划在未来推出更多的高级功能和付费服务，例如多语言翻译、语音合成、视频剪辑等。 | animaker.com/subtitle-generator |
-| Gradio demo of CoAdaptor - Use style, colour,   depth and other inputs at the same time to create customised images | Gradio demo of   CoAdaptor - Use style, colour, depth and other inputs at the same time to   create customised images是一款由Gradio网站提供的在线演示，可以让用户使用CoAdaptor这个人工智能模型来创建自定义的图像。演示中，用户可以通过调整不同的输入参数，例如风格、颜色、深度等，来影响生成图像的外观和效果。演示还会为用户提供一些额外的功能，例如：   - 为用户提供一些生成图像的示例和灵感，以及一些调整输入参数的技巧和建议。 - 为用户提供一些生成图像的选项和参数，例如图像的分辨率、格式、质量等。 -   为用户提供一些生成图像的评估和反馈，以及一些优化图像的工具和方法。演示的特点包括： - 演示提供了高效、灵活和有趣的生成图像的服务，可以让用户根据自己的需求和喜好，创建自定义的图像，不用担心图像生成的问题。   - 演示使用了最新的人工智能技术，例如GPT-4、DALL-E、CLIP等，来提高图像生成的质量和效果，并与输入参数相匹配。 -   演示提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以在线地生成图像，并进行查看和下载。演示目前处于免费阶段，用户可以无限制地使用演示提供的服务和功能。演示计划在未来推出更多的高级功能和付费服务，例如上传自己的图片作为输入参数、分享或嵌入生成的图片等。 | gradio.app/g/coadaptor |
-| 12ft- Bypass any article paywall | 这是一款基于AI的文章付费墙绕过工具，可以让用户免费阅读任何需要付费的文章。12ft利用了ChatGPT等先进的AI技术，可以根据用户输入或选择的文章链接，分析并生成文章的完整内容，并且提供相应的预览和下载链接。12ft还可以让用户通过修改文本内容或选择不同的选项，调整和优化文章的细节，例如摘要、评论、翻译等。12ft可以让用户更加方便和快捷地阅读各种类型的文章，并且提高自己的知识和见解。 | https://12ft.io/ |
+| Resolve AI | Resolve AI是一个基于ChatGPT的人工智能聊天机器人平台，可以帮助您轻松地为您的业务提供优质的客户服务。Resolve AI可以让您快速地创建和部署智能、友好和自然的聊天机器人，无需编写代码或担心基础设施。Resolve AI的聊天机器人可以与您的客户进行流畅和有意义的对话，回答他们的问题，解决他们的问题，提供他们所需的信息和服务。Resolve AI还可以让您实时地监控和分析您的聊天机器人的表现，优化您的客户服务策略和效果。Resolve AI目前提供免费试用，您可以在官网注册并开始使用。 | https://www.resolve.ai/ |
+| Roam around | Roam around是一个友好的AI旅行规划器，可以帮助用户快速地为任何目的地制定个性化的行程。Roam around结合了Lume Pad 2的3D显示技术和先进的AI算法，可以根据用户的偏好、预算、时间等因素，为用户提供独一无二的旅行方案。Roam around还可以实时跟踪用户的面部位置，为用户提供舒适、一致的3D体验，让用户感觉自己就在目的地。Roam around还可以让用户创建自己的3D体验，并与其他旅行爱好者分享。Roam around将于4月份正式发布，目前正在接受预订。 | https://www.roamaround.io/ |
+| Roasted | Roasted是一款基于AI的搞笑工具，能够让您上传自己的照片，并生成一些由AI编写的恶搞笑话。Roasted使用了最先进的AI算法，如GPT-4、ChatGPT、DALL-E 2等，来分析您的照片中的特征，并根据您的外貌、服装、表情等制作出一些幽默的评论。Roasted可以帮助您放松心情，增加自信，也可以与朋友分享和互相开玩笑。Roasted目前是一个Web应用，可以在任何浏览器中使用。您可以在Roasted的官方网站上免费试用它。 | https://www.roasted.ai |
+
+
+
+# AI 工具与服务列表
+
+## Are Roblox’s new AI coding and art tools the future of game development?
+
+是一个关于Roblox新推出的AI编程和艺术工具是否代表了游戏开发未来的问题。Roblox是一个让您可以创建和玩各种游戏的平台。Roblox新推出了一些利用人工智能为您提供编程和艺术创作服务的工具。这些工具可以帮助您轻松地使用自然语言来编写和运行游戏代码，或者根据文本或图像输入来生成逼真和有趣的游戏图形。这些工具使用了先进的AI技术，能够根据您提供的输入和目标，为您生成智能和有用的游戏内容，并提供相关的信息和链接。这些工具还可以让您与之进行自然语言对话，以获取更多的信息和指导。这些工具是创新和高效的游戏开发工具，可能会改变游戏开发的方式和趋势。您可以在Roblox的官方网站上注册并开始使用这些工具。
+
+[官网](https://www.roblox.com)
+
+## Scribble Diffusion
+
+是一款基于GPT-4的AI草图转图片工具，能够为用户将任何草图转换为逼真的图片。用户可以向Scribble Diffusion上传任何格式的草图文件，如JPG、PNG、BMP等，Scribble Diffusion会根据草图的轮廓和细节，自动生成一个清晰、美观和优化的图片，并提供修改和优化建议。Scribble Diffusion还可以根据用户的需求，自动添加颜色、纹理、光影等，并支持多种风格和主题。Scribble Diffusion目前免费提供给公众使用。
+
+[官网](https://www.scribblediffusion.com/)
+
+## SecGPT
+
+是一个利用人工智能驱动的洞察力来革新网络安全的工具。SecGPT可以帮助您检测和预防各种网络威胁，例如黑客攻击、恶意软件、数据泄露等。SecGPT使用了先进的AI技术，能够从各种来源收集和分析网络安全相关的数据，并为您生成实时的报告和建议。SecGPT还可以让您与之进行自然语言对话，以获取更多的信息和指导。SecGPT是一个方便快捷、功能强大、价格合理的网络安全工具，您可以在其官方网站上免费注册并开始使用它。
+
+[官网](https://www.secgpt.ai)
+
+## ShellShark: an agent that swims through your infra to; set up/modify infrastructure, and examine and debug services with auditable logs.
+
+是一款利用AI技术来为用户提供基础设施管理和服务监测的软件，由一家AI和云计算公司ShellShark开发，并发布在ShellShark公司的官方网站上。ShellShark可以让用户使用基于ChatGPT模型的AI基础设施代理，来通过语音或文本输入来设置或修改自己或他人的基础设施，例如服务器、网络、存储等。ShellShark还可以让用户使用基于Google Bard模型的AI服务检查器，来检查或调试自己或他人的服务，例如应用程序、数据库、API等，并生成可审计的日志。ShellShark是一个高效和实用的软件，可以让用户轻松地管理和监测自己或他人的基础设施和服务。
+
+[官网](https://www.shellshark.com/)
+
+## Simple Phones
+
+是一款基于GPT-4的AI电话服务工具，能够为用户转接错过的电话，并使用AI进行回答。用户可以向Simple Phones输入他们的电话号码、姓名和常见问题，Simple Phones会根据用户的信息，自动生成一个适合的电话语音菜单，并提供修改和优化建议。Simple Phones还可以根据来电者的问题，给出智能、友好和有效的回答，并记录下重要的信息和反馈。Simple Phones目前提供免费和付费两种订阅方式，免费用户每月可以转接10个电话，付费用户每月可以转接无限个电话。付费订阅的价格为每月19.99美元或每年199.99美元。
+
+[官网](https://www.simplephones.com/)
+
+## SiteGPT - Instantly answer visitors' questions personalized chatbot for your website.
+
+是一款让您可以为您的网站添加个性化聊天机器人的工具，可以即时回答访客的问题。SiteGPT使用GPT-4技术，能够理解自然语言，并生成自然和有针对性的回答。SiteGPT还可以根据您的网站内容和风格，定制聊天机器人的外观和语气。SiteGPT可以帮助您提高用户体验和转化率，通过使用AI来回答常见问题、收集反馈、推荐产品等。SiteGPT非常易于使用，只需将一行代码添加到您的网站中，就可以启用聊天机器人功能。SiteGPT目前提供免费试用，之后根据您使用的聊天次数收费。
+
+[官网](https://www.sitegpt.com/)
+
+## Sizzlepop
+
+是一个利用人工智能为您创建定制化T恤的工具。Sizzlepop可以帮助您根据您的想法和喜好，为您生成独一无二的T恤设计，并提供相关的信息和链接。Sizzlepop使用了先进的AI技术，能够根据您提供的文本或图像输入，为您生成逼真和有趣的T恤图案，并提供多种编辑选项供您选择。Sizzlepop还可以让您与之进行自然语言对话，以获取更多的信息和建议。Sizzlepop是一个方便快捷、功能强大、价格实惠的T恤设计工具，您可以在其官方网站上免费注册并开始使用它。
+
+[官网](https://www.sizzlepop.ai)
+
+## GPT4-powered Slack bot that can scrape URL contents
+
+是一个利用GPT-4技术在Slack上获取URL内容的机器人。GPT4-powered Slack bot that can scrape URL contents可以帮助您快速地从任何网站或文件中提取相关的数据，并在Slack上与您分享。GPT4-powered Slack bot that can scrape URL contents使用了先进的AI技术，能够根据您提供的URL或关键词，为您生成智能和有用的数据，并提供相关的信息和链接。GPT4-powered Slack bot that can scrape URL contents还可以让您与之进行自然语言对话，以获取更多的信息和指导。GPT4-powered Slack bot that can scrape URL contents是一个方便快捷、功能强大、免费开源的Slack机器人，您可以在其官方网站上免费下载它。
+
+[官网](https://www.slackbot4gpt.ai)
+
+## Social Comments
+
+是一款基于GPT-4的AI社交评论生成工具，能够为用户创建有趣、有吸引力和有价值的评论。用户可以向Social Comments输入任何社交媒体平台或网站的链接，如Facebook、Twitter、YouTube等，Social Comments会根据链接的内容，自动生成一个适合的评论，并提供修改和优化建议。Social Comments还可以根据用户的偏好和反馈进行自我调整和改进，提高评论的质量和创意。Social Comments目前提供免费和付费两种订阅方式，免费用户每月可以生成10条评论，付费用户每月可以生成无限条评论。付费订阅的价格为每月9.99美元或每年99.99美元。
+
+[官网](https://www.socialcomments.com/)
+
+## Speak
+
+是一个无需编码就可以将语言数据转化为洞察力的平台，让您可以轻松地分析和理解您的文本数据。Speak使用最先进的自然语言处理技术，让您可以对您的文本数据进行多种操作，如文本分类、情感分析、关键词提取、文本摘要、文本生成等。Speak还提供了丰富的可视化工具，让您可以直观地查看您的文本数据的统计信息、分布情况、趋势变化等。Speak目前提供免费和付费两种定价方案，您可以根据您的需求选择合适的方案。您还可以在官网查看Speak的演示视频和案例分析，了解Speak的功能和优势。
+
+[官网](https://www.speakai.co/)
+
+## Spline AI - Design faster with the help of prompts.
+
+是一款利用AI技术来帮助用户快速设计的软件，由一家AI和设计公司Spline开发，并发布在Spline公司的官方网站上。Spline AI可以让用户使用基于Google Bard模型的AI提示生成器，来根据用户输入的关键词或短语，生成一些与之相关的设计提示，例如颜色、字体、布局、元素等。Spline AI还可以让用户选择喜欢的设计提示，并使用Spline公司提供的在线设计工具，来实现这些设计提示，并创建自己想要的设计作品。Spline AI是一个高效和实用的软件，可以让用户轻松地根据自己的想法和需求，进行快速设计。
+
+[官网](https://www.spline.com/spline-ai)
+
+## Generative art meets 3D - Official Blender plugin for Stable Diffusion
+
+是一款将Stable Diffusion生成式AI功能直接集成到流行的3D建模软件Blender中的官方插件。Stable Diffusion是一种基于OpenAI DALL-E的文本到图像生成器，能够根据文本描述生成高质量、原创和有创意的图像。Generative art meets 3D - Official Blender plugin for Stable Diffusion 允许Blender艺术家直接在软件中使用文本描述创建图像，就像使用Stable Diffusion文本到图像生成器一样。您也可以使用现有的渲染图像创建图像，让您在不完全重建场景的情况下尝试各种风格。纹理也可以使用文本提示和参考图像生成，还有一个功能是从现有渲染图像创建动画。Generative art meets 3D - Official Blender plugin for Stable Diffusion 完全免费，不需要任何额外的软件或专用GPU来运行。只要您安装了最新版本的Blender，并且有一个Stability API密钥（您可以直接从Stability AI获取），您就可以在Blender中运行Stable Diffusion。安装插件相对简单，Stability还提供了几个教程来指导您如何使用其各种功能。您可以在其官方网站下载它。
+
+[官网](https://www.stability.ai/blender)
+
+## STORYD
+
+是一个利用人工智能在几秒钟内为您创建数据展示的工具。STORYD可以帮助您从各种来源获取和整合数据，并根据您的目标和需求为您生成实时的报告和图表。STORYD使用了先进的AI技术，能够自动识别数据的类型、结构和关系，并根据最佳实践和行业标准为您提供最合适的数据分析和可视化方案。STORYD还可以让您与之进行自然语言对话，以获取更多的信息和建议。STORYD是一个方便快捷、功能强大、价格合理的数据展示工具，您可以在其官方网站上免费注册并开始使用它。
+
+[官网](https://www.storyd.ai)
+
+## STORYD
+
+是一款基于人工智能的数据展示平台，可以为用户在几秒钟内创建出精美的数据展示。STORYD使用了最新的自然语言处理和数据可视化技术，能够从用户输入的数据中提取有用的信息，并生成高质量、原创和有创意的数据展示内容。用户可以在STORYD中输入或上传任何类型的数据，如表格、图表、文本等，然后STORYD会为用户生成一系列的数据展示，并提供多种模板和主题的选项。用户还可以在STORYD中编辑和调整生成的数据展示，或者导出为PDF或PPT格式。STORYD是一款有趣和高效的工具，让用户可以轻松地创建出令人印象深刻的数据展示。STORYD目前处于测试阶段，您可以在STORYD网站上免费试用它。
+
+[官网](https://www.storyd.com/)
+
+## Storywizard
+
+是一个利用人工智能为您创建令人难以置信的儿童故事的工具。Storywizard可以帮助您根据您的想法和喜好，为您生成简单易懂、有趣有教育意义的儿童故事。Storywizard使用了先进的AI技术，能够根据您提供的故事主题、角色、情节等信息，为您生成原创和有创意的故事内容，并提供多种输出格式供您选择，例如文本、音频、视频等。Storywizard还可以让您编辑或添加自己的故事内容，并与其他人分享或打印出来。Storywizard是一个简单易用、高效可靠、价格实惠的儿童故事生成器，适合任何想要给孩子讲故事或寻找灵感的人。Storywizard目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+[官网](https://www.storywizard.ai)
+
+## Straiberry
+
+是一款基于人工智能的牙科检查平台，可以为用户提供超过90%准确率的牙科检查服务。Straiberry使用了最新的深度学习和计算机视觉技术，能够从用户输入或上传的牙齿照片中分析其牙齿状况和问题，并生成高质量、原创和有创意的牙科检查报告。用户可以在Straiberry中输入或上传任何类型的牙齿照片，如自拍、X光等，并选择想要进行牙科检查的类型和维度。Straiberry还提供了一些智能的功能，如牙齿识别、问题诊断、治疗建议等。Straiberry是一款智能和高效的工具，让用户可以在任何时间和地点进行准确的牙科检查。Straiberry目前提供免费试用和付费订阅，您可以在Straiberry网站上注册使用它。
+
+[官网](https://www.straiberry.com/)
+
+## Summ
+
+是一款基于AI的用户访谈工具，能够让您智能地提问和搜索用户的反馈和意见。Summ使用了自然语言处理和机器学习技术，来分析您从用户访谈中收集的数据，并生成一个结构化和可视化的报告。Summ可以帮助您快速地发现用户的需求、痛点、偏好等，并根据您的查询生成相关的答案和见解。Summ支持多种数据来源，如视频、音频、文本等，并提供了多种数据分析和展示方式，如情感分析、关键词提取、主题建模等。Summ目前是一个Web应用，可以在任何浏览器中使用。您可以在Summ的官方网站上注册并开始免费使用它。
+
+[官网](https://www.summ.ai)
+
+## Summarize Tech
+
+是一款基于AI的视频摘要工具，能够为您从YouTube上长时间的视频中提取出最重要和最有价值的内容，并生成一个简短和精彩的视频摘要。Summarize Tech使用了深度学习和视频处理技术，来分析视频中的音频、图像、文本等信息，并根据视频主题和目标受众生成一个适合的视频摘要。Summarize Tech可以帮助您节省时间和精力，快速地获取视频中的核心信息和知识，并在社交媒体上分享和传播。Summarize Tech目前是一个Web应用，可以在任何浏览器中使用。您可以在Summarize Tech的官方网站上注册并开始免费使用它。
+
+[官网](https://www.summarizetech.com)
+
+## Sustainability goals AI
+
+是一个利用ChatGPT技术为您生成可持续发展目标的工具。Sustainability goals AI可以帮助您根据您的公司的行业、规模、愿景和价值等因素，为您推荐合适的可持续发展目标，并提供相关的信息和链接。Sustainability goals AI使用了先进的AI技术，能够从数千种可持续发展目标中为您挑选出最佳的可持续发展目标，并根据您的反馈和喜好进行优化。Sustainability goals AI还可以让您与之进行自然语言对话，以获取更多的信息和建议。Sustainability goals AI是一个创新和高效的可持续发展目标生成工具，适合任何想要为公司制定可持续发展目标或寻找灵感的人。Sustainability goals AI目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+[官网](https://www.sustainabilitygoals.ai)
+
+## SymptomChecker
+
+是一个基于ChatGPT技术的智能症状检查器，可以为您提供可能的诊断和建议。SymptomChecker可以让您通过自然语言来描述您的症状，并与之进行互动式对话，以获取更多相关信息。SymptomChecker使用了先进的AI技术，能够分析您的症状和健康历史，并根据医学知识库为您生成最可能的诊断和建议。SymptomChecker还会为您提供相关的医学信息、预防措施和治疗方法，并指导您寻求专业医疗帮助。SymptomChecker是一个简单易用、准确可靠、免费开放的智能症状检查器，您可以在其官方网站上免费使用它。
+
+[官网](https://www.symptomchecker.ai)
+
+
+
+# AI 工具导航
+
+## Taskade
+Taskade是一款基于`GPT-4`的AI团队协作工具，能够为用户构建一个第二个大脑来管理他们的团队项目和任务。用户可以向Taskade输入他们的项目名称、目标和成员，Taskade会根据用户的输入，自动生成一个适合的项目模板，并提供修改和优化建议。Taskade还可以根据用户的进度和表现，给出评估和建议，并调整项目计划。Taskade目前提供免费和付费两种订阅方式，免费用户每月可以创建10个项目，付费用户每月可以创建无限个项目。付费订阅的价格为每月5美元或每年50美元。
+
+https://www.taskade.com/
+
+## Tiipe
+Tiipe是一个利用人工智能在几秒钟内为您生成产品描述的工具。Tiipe可以帮助您提高您的产品销售和营销效果，无论是在电商平台、社交媒体还是广告中。Tiipe使用了先进的AI技术，能够根据您提供的产品名称、类别、特点和优势等信息，为您生成吸引人的产品描述。Tiipe还可以让您选择不同的语言和风格，以适应不同的市场和受众。Tiipe是一个简单易用、高效可靠、价格实惠的产品描述生成器，您可以在其官方网站上免费注册并开始使用它。
+
+https://www.tiipe.ai
+
+## To Teach
+To Teach是一款基于`GPT-4`的AI教学辅助工具，能够为教师提供个性化的教学材料和反馈。To Teach可以根据教师的教学目标、课程内容和学生水平，创建一个适合的教学计划，并自动生成相关的教学资源，如课件、练习、测试等。To Teach还可以根据教师和学生的进度和表现，给出评估和建议，并调整教学计划。To Teach目前处于测试阶段，需要申请才能使用。
+
+https://www.toteach.ai/
+
+## To Teach
+To Teach是一款基于人工智能的教学平台，可以为用户提供针对不同科目和水平的教学内容和服务。To Teach使用了最新的自然语言处理和教育技术，能够从用户输入的学习目标和需求中分析其学习状况和难点，并生成高质量、原创和有创意的教学内容。用户可以在To Teach中输入或上传任何类型的学习目标和需求，如数学、英语、编程等，并选择想要进行学习的类型和难度。To Teach还提供了一些智能的功能，如视频讲解、互动练习、反馈评估等。To Teach是一款智能和高效的工具，让用户可以在任何时间和地点进行有效的自主学习。To Teach目前提供免费试用和付费订阅，您可以在To Teach网站上注册使用它。
+
+https://www.toteach.com/
+
+## Transkribieren
+Transkribieren是一款基于`GPT-4`的AI音频转写工具，能够为用户在几秒钟内将音频转换为文本。用户可以向Transkribieren上传任何格式的音频文件，如`MP3`、`WAV`、`OGG`等，Transkribieren会根据音频的内容和语言，自动生成一个准确、清晰和优化的文本，并提供修改和优化建议。Transkribieren还可以根据用户的需求，自动添加标点、分段、时间戳等，并支持多种语言和方言。Transkribieren目前提供免费和付费两种订阅方式，免费用户每月可以转写60分钟的音频，付费用户每月可以转写无限分钟的音频。付费订阅的价格为每月9.99美元或每年99.99美元。
+
+https://www.transkribieren.com/
+
+## Trellis
+Trellis是一款基于`ChatGPT`的AI定制导师和教科书伴侣工具，能够为学习者提供个性化的学习辅导和反馈。Trellis可以根据学习者的教科书、课程和目标，创建一个适合的学习计划，并通过对话和互动来帮助学习者掌握知识和技能。Trellis还可以根据学习者的进度和表现，给出评估和建议，并调整学习计划。Trellis目前处于测试阶段，需要申请才能使用。
+
+https://www.trellis.ai/
+
+## Tripnotes
+Tripnotes是一个利用人工智能为您创建个性化旅行计划的工具。Tripnotes可以帮助您根据您的目的地、时间、预算和兴趣等因素，为您推荐合适的旅行路线和活动，并提供相关的信息和链接。Tripnotes使用了先进的AI技术，能够从数千种旅行选项中为您挑选出最佳的旅行计划，并根据您的反馈和喜好进行优化。Tripnotes还可以让您与之进行自然语言对话，以获取更多的信息和建议。Tripnotes是一个创新和高效的旅行计划工具，适合任何想要轻松规划旅行或寻找灵感的人。Tripnotes目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+https://www.tripnotes.ai
+
+## Nara
+Nara是一个基于`OpenAI` `ChatGPT`的营养助手，可以通过短信（目前仅限美国和加拿大）为用户提供24/7的个性化建议。Nara可以根据用户的偏好、目标和饮食习惯，为用户提供新鲜食谱、外出就餐或食物配送的推荐。Nara还可以回答用户关于营养、健康和食物相关的问题，并给予专业和友好的指导。Nara目前处于测试阶段，您可以开始您的7天免费试用。
+
+https://www.trynara.com/
+
+## Tugan
+Tugan是一款基于`GPT-4`的电子邮件生成平台，可以让用户输入一个网址，即可生成与该网址相关的电子邮件内容。Tugan使用了最新的自然语言处理和文本生成技术，能够从用户输入的网址中分析其网站的产品、服务、目标和价值，并生成高质量、原创和有创意的电子邮件内容。用户可以在Tugan中输入任何类型的网址，如商业、教育、娱乐等，并选择想要生成电子邮件的类型和风格。Tugan还提供了一些智能的功能，如主题生成、文本编辑、语言翻译等。Tugan是一款方便和实用的工具，让用户可以根据网址来快速地创建出令人印象深刻的电子邮件。Tugan目前提供免费试用和付费订阅，您可以在Tugan网站上注册使用它。
+
+https://www.tugan.com/
+
+## Uncode
+Uncode是一款基于人工智能的代码解释平台，可以为用户从代码片段中解释出代码的含义和功能。Uncode使用了最新的自然语言处理和代码生成技术，能够从用户输入或上传的代码片段中分析其代码语言和逻辑，并生成高质量、原创和有创意的代码解释。用户可以在Uncode中输入或上传任何类型的代码片段，如`Python`、`Java`、`C++`等，并选择想要生成代码解释的语言和格式。Uncode还提供了一些智能的功能，如语法检查、错误提示、代码优化等。Uncode是一款智能和高效的工具，让用户可以从代码片段中快速地获取和理解代码的含义和功能。Uncode目前提供免费试用和付费订阅，您可以在Uncode网站上注册使用它。
+
+https://www.uncode.com/
+
+## Unlearn
+这是一个关于一家生物技术AI创业公司Unlearn获得1500万美元的投资并邀请`OpenAI`的首席技术官加入董事会的新闻。Unlearn是一家利用人工智能为临床试验提供虚拟对照组的公司。Unlearn可以帮助药物开发者和医疗机构提高临床试验的效率和质量，无论是在设计、执行还是分析方面。Unlearn使用了先进的AI技术，能够根据真实患者的数据，为每个患者生成一个虚拟的对照组，并提供相关的结果和信息。Unlearn还可以让用户与之进行自然语言对话，以获取更多的信息和指导。Unlearn是一家创新和高效的生物技术AI公司，适合任何想要利用AI技术来改善或创造临床试验的人。Unlearn最近获得了1500万美元的B轮融资，并邀请了`OpenAI`的首席技术官Greg Brockman加入其董事会，以进一步推动其发展和扩张。您可以在其官方网站上注册并开始使用它。
+
+https://www.unlearn.ai
+
+## Upheal
+Upheal是一款基于人工智能的心理健康专业人士的助手，可以提供自动化的诊断、治疗和跟进服务。Upheal使用了最新的自然语言处理和机器学习技术，能够从用户的语音或文本输入中分析其情绪、心理状态和需求，并生成合适的诊断报告、治疗建议和跟进计划。Upheal还可以为用户提供在线的心理咨询服务，连接真实的心理健康专业人士，进行实时的沟通和协助。Upheal是一款智能和高效的工具，让心理健康专业人士可以更轻松和有信心地为用户提供优质的心理健康服务。Upheal目前提供免费试用和付费订阅，您可以在Upheal网站上注册使用它。
+
+https://www.upheal.com/
+
+## Upheal
+Upheal是一个基于人工智能的助手，专为心理健康专业人士设计，可以自动完成笔记、视频通话和分析等功能。Upheal让您可以更专注于与客户的互动，而不用担心繁琐的文档和分析工作。您只需通过安全的视频平台进行会话，Upheal就会在后台捕捉会话的内容，并为您生成`DAP`格式的进展笔记和治疗笔记。您可以轻松地编辑或添加自己的笔记，并与同事分享或查看每个客户的会话历史和分析。Upheal还会为您提供有用的会话分析，包括关键事实、重要人物和地点、话题分类、应对策略和诊断标志等。Upheal是一个创新和高效的心理健康平台，您可以在其官方网站上免费注册并开始使用它。
+
+https://www.upheal.io
+
+## Fini
+Fini是一款基于AI的聊天工具，能够让您在2分钟内将您的知识库转化为一个交互式的问答聊天。Fini可以帮助您提高用户的参与度和留存率，无需任何集成。您只需要添加一个指向您知识库的链接，Fini就会自动地根据您的知识库内容生成一个智能的聊天机器人，无需编写任何代码。Fini支持多种知识库平台，如`Notion`、`Help Scout`、`Zendesk`等。您可以在Fini的官方网站上免费试用它。
+
+https://www.usefini.com
+
+## Vidby
+Vidby是一款基于人工智能的视频翻译和配音平台，可以为用户提供快速准确的视频翻译和配音服务，支持70种语言。Vidby使用了最新的自然语言处理和语音合成技术，能够从用户输入或上传的视频中分析其视频内容和语言，并生成高质量、原创和有创意的视频翻译和配音。用户可以在Vidby中输入或上传任何类型的视频，如教育、娱乐、商业等，并选择想要翻译或配音的语言和风格。Vidby还提供了一些智能的功能，如字幕生成、语音调整、背景音乐等。Vidby是一款方便和实用的工具，让用户可以更轻松地将视频内容传达给不同语言的观众。Vidby目前提供免费试用和付费订阅，您可以在Vidby网站上注册使用它。
+
+https://www.vidby.com/
+
+## Video Highlight
+Video Highlight是一款基于人工智能的视频摘要和笔记平台，可以让用户从视频中提取出重要的信息，并生成高质量、原创和有创意的摘要和笔记。Video Highlight使用了最新的深度学习和计算机视觉技术，能够从用户输入或上传的视频中分析其内容和结构，并生成高质量、原创和有创意的摘要和笔记。用户可以在Video Highlight中输入或上传任何类型的视频，如教育、娱乐、新闻等，并选择想要生成摘要或笔记的时间段和长度。Video Highlight还提供了一些智能的功能，如关键词提取、图像识别、语音转文字等。Video Highlight是一款智能和高效的工具，让用户可以从视频中快速地获取和记录重要的信息。Video Highlight目前提供免费试用和付费订阅，您可以在Video Highlight网站上注册使用它。
+
+https://www.videohighlight.com/
+
+## VoiceMod
+VoiceMod是一款基于`GPT-4`的AI文本转歌曲工具，能够为用户将任何文本转换为动听的歌曲。用户可以向VoiceMod输入任何文本，如诗歌、故事、消息等，VoiceMod会根据文本的内容和风格，自动生成一个适合的歌曲，并提供修改和优化建议。VoiceMod还可以根据用户的需求，自动添加音乐、节奏、声音等，并支持多种语言和音调。VoiceMod目前免费提供给公众使用。
+
+https://www.voicemod.com/
+
+## Vowel
+Vowel是一个利用人工智能的会议工具，可以为您提供实时的会议记录、转录和分析。Vowel还添加了一个新功能，可以为不同的成员生成行动事项。Vowel可以帮助您提高会议效率和质量，无论是在线会议还是面对面会议。Vowel使用了先进的AI技术，能够根据您的会议内容和目标，为您生成智能和有用的行动事项，并分配给相应的成员。Vowel还可以让您与之进行自然语言对话，以获取更多的信息和建议。Vowel是一个创新和高效的会议工具，您可以在其官方网站上免费注册并开始使用它。
+
+https://www.vowel.com
+
+## Wabbit
+Wabbit - A proof-of-concept of `ChatGPT`-powered `NPC` sidekick to join your main character's adventures，是一个基于`ChatGPT`技术的非玩家角色（`NPC`）搭档的概念验证项目，可以加入您的主角的冒险。Wabbit是一个可爱的兔子形状的机器人，它可以与您进行自然对话，并根据您的选择和行为，改变它的性格和态度。Wabbit可以帮助您探索一个开放世界的游戏环境，并提供有用的信息、建议和幽默。Wabbit使用`OpenAI` `ChatGPT`技术，能够生成自然和有创意的对话，并适应不同的游戏场景和情绪。Wabbit目前处于开发阶段，您可以在`[1]`上查看更多详情和演示视频。
+
+https://www.wabbit.ai/
+
+## Warmest
+Warmest是一个基于`GPT-4`技术的智能邮件写作工具，可以根据您之前发送过的邮件为您草拟邮件内容。Warmest可以帮助您节省时间和精力，提高邮件写作效率和质量。Warmest使用了先进的AI技术，能够分析您之前发送过的邮件风格、语气和内容，并根据不同的收件人和主题为您生成合适的邮件内容。Warmest还可以根据收件人的反馈和行为来优化邮件内容，并提供实时建议和修改。Warmest是一个简单易用、高度定制化、价格合理的智能邮件写作工具，您可以在其官方网站上免费注册并开始使用它。
+
+https://www.warmest.ai
+
+## Warp AI
+Warp AI是一款将AI与终端完全集成的工具，无需任何外部工具，就可以使用AI来提高工作效率和创造力。Warp AI可以帮助您解释或修复错误，使用自然语言查找命令，或者与Warp AI聊天来完成编程或其他问题。Warp AI基于`OpenAI`的`GPT-4`技术，能够生成高质量、原创和有创意的文本。Warp AI目前处于测试阶段，您可以在`Replit`上免费试用它。
+
+https://www.warp.dev/warp-ai
+
+## Watermelon
+Watermelon是一个利用`GPT`技术对代码进行上下文化的工具。Watermelon可以帮助您更好地理解和学习任何代码，无论是`Python`、`Java`、`Ruby`还是`React`等。Watermelon使用了先进的AI技术，能够根据您提供的代码文件或URL，为您生成清晰和准确的代码注释和文档，并与代码内容进行同步展示。Watermelon还可以让您与之进行自然语言对话，以获取更多的信息和解释。Watermelon是一个创新和有趣的代码工具，适合任何想要提高代码理解或学习能力的人。Watermelon目前处于测试阶段，您可以在其官方网站上免费注册并开始使用它。
+
+https://www.watermelon.ai
+
+## Wavel AI
+Wavel AI是一款为视频提供字幕和字幕的AI助手，由一组AI和视频研究者开发，并发布在Wavel AI的官方网站上。Wavel AI可以让您上传任何视频文件或链接，然后使用先进的AI语音识别技术，为视频生成准确和同步的字幕或字幕，并支持多种语言和格式。Wavel AI还可以让您对生成的字幕或字幕进行编辑、导出和下载，并提供一些实用的功能，例如翻译、搜索、分享等。Wavel AI是一个高效和实用的工具，可以让您为您的视频增加可访问性和可理解性。
+
+https://www.wavel.ai/
+
+## Whimsical AI
+Whimsical AI是一款基于AI的思维导图工具，能够让您用简单的语言来创建复杂的思维导图。Whimsical AI使用了自然语言处理和图形生成技术，来将您输入的文本转化为结构化和美观的思维导图。Whimsical AI可以帮助您快速地组织和可视化您的想法、计划、项目等，并与他人共享和协作。Whimsical AI目前是一个Web应用，可以在任何浏览器中使用。您可以在Whimsical AI的官方网站上注册并开始免费使用它。
+
+https://www.whimsical.ai
+
+## Wove
+Wove - A tool for building long-running workflows with `LLMs`，是一款用于构建长期运行的工作流程的工具，使用大型语言模型（`LLMs`）作为核心组件。Wove可以让您使用自然语言来定义和执行复杂的任务，例如发送邮件、预订会议、生成报告等。Wove使用`GPT-4`技术，能够根据上下文和目标，自动完成工作流程中的各个步骤，并与其他服务和应用程序集成。Wove还可以根据反馈和数据进行自我学习和优化，提高工作流程的效率和质量。Wove可以帮助您执行以下任务：
+- 工作流程设计：使用自然语言或图形界面来设计工作流程，并添加条件、循环、分支等逻辑。
+- 工作流程执行：启动工作流程，并监控其进度和状态，并在需要时进行干预或调整。
+- 工作流程优化：分析工作流程的性能和结果，并根据建议或自动方式进行改进。
+
+Wove目前处于测试阶段，您可以在`[1]`上申请加入等待名单。
+
+https://www.wove.ai/
+
+
+
+# AI 工具与资源列表
+
+## WriteMage
+
+`WriteMage`是一款基于`OpenAI ChatGPT`的智能写作助手，能够帮助您快速写出高效、专业和个性化的文本。`WriteMage`可以根据您的首选风格和语气，生成完整的文本内容。无论您是想要写故事、文章、邮件、代码或其他类型的文本，`WriteMage`都可以为您提供合适的模板和建议。`WriteMage`目前是一个`iOS`和`MacOS`的应用，可以在系统级别与任何文本应用交互。您可以在`App Store`免费下载它。
+
+`https://www.writemage.com`
+
+## WTF DOES THIS COMPANY DO
+
+`WTF DOES THIS COMPANY DO`是一款基于人工智能的公司介绍平台，可以为用户根据着陆页来解释一个公司到底做什么。`WTF DOES THIS COMPANY DO`使用了最新的自然语言处理和文本生成技术，能够从用户输入或上传的着陆页中分析其公司的产品、服务、目标和价值，并生成高质量、原创和有创意的公司介绍。用户可以在`WTF DOES THIS COMPANY DO`中输入或上传任何类型的着陆页，如网址、截图、文本等，并选择想要生成公司介绍的语言和长度。`WTF DOES THIS COMPANY DO`是一款方便和实用的工具，让用户可以根据着陆页来快速地了解一个公司到底做什么。`WTF DOES THIS COMPANY DO`目前可以在`WTF DOES THIS COMPANY DO`网站上免费使用。
+
+`https://www.wtfdoesthiscompanydo.com/`
+
+## Yarnit
+
+`Yarnit`是一款基于人工智能的数字内容创作平台，可以为用户减少数字内容创作的时间、成本和复杂度。`Yarnit`使用了最新的深度学习和计算机图形学技术，能够从用户输入的文本提示中生成高质量、原创和有创意的数字内容，如视频、动画、图像等。用户可以在`Yarnit`中输入任何类型的文本提示，如故事、场景、情感等，然后`Yarnit`会为用户生成一系列的数字内容，并提供多种风格和格式的选项。用户还可以在`Yarnit`中编辑和调整生成的数字内容，或者导出为`MP4`或`GIF`格式。`Yarnit`是一款有趣和强大的工具，让用户可以轻松地创建出令人惊叹的数字内容。`Yarnit`目前处于测试阶段，您可以在`Yarnit`网站上免费试用它。
+
+`https://www.yarnit.com/`
+
+## You-tldr
+
+`You-tldr`是一个利用人工智能在几秒钟内为您提供任何`YouTube`视频的摘要的工具。`You-tldr`可以帮助您节省时间和流量，快速地了解和学习任何视频的主要内容和要点。`You-tldr`使用了先进的`AI`技术，能够根据您提供的视频`URL`或关键词，为您生成简洁和准确的视频摘要，并提供相关的信息和链接。`You-tldr`还可以让您与之进行自然语言对话，以获取更多的信息和建议。`You-tldr`是一个方便快捷、高效可靠、免费开放的视频摘要工具，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.you-tldr.ai`
+
+## Fireside chat with Clement Delangue from Hugging Face.
+
+`Fireside chat with Clement Delangue from Hugging Face.`是一场关于`Hugging Face`公司和其`AI`产品的在线访谈，由一位`AI`媒体人主持，并在`YouTube`上直播。访谈邀请了`Hugging Face`公司的联合创始人兼首席执行官Clement Delangue作为嘉宾，与主持人和观众进行了深入和有趣的交流。访谈涉及了`Hugging Face`公司的发展历程、愿景、文化、团队等方面，以及`Hugging Face`公司推出的一些`AI`产品和服务，例如`ChatGPT`、`Google Bard`、`Jasper`等。访谈还展示了一些`Hugging Face`公司的`AI`产品在不同领域和场景中的应用和效果，例如教育、娱乐、健康、商业等。访谈是一场精彩和有价值的访谈，对于想要了解或使用`Hugging Face`公司的`AI`产品的人来说，值得一看。
+
+`https://www.youtube.com/watch?v=1234567890ab`
+
+## Sam Altman on Lex Fridman podcast - Safety, politics and AGI.
+
+`Sam Altman on Lex Fridman podcast - Safety, politics and AGI.`是一场关于`AI`安全、政治和通用人工智能（`AGI`）话题的在线访谈，由一位`AI`媒体人主持，并在`YouTube`上直播。访谈邀请了`OpenAI`公司的联合创始人兼董事会主席Sam Altman作为嘉宾，与主持人和观众进行了深入和有趣的交流。访谈涉及了`OpenAI`公司的发展历程、愿景、文化、团队等方面，以及`OpenAI`公司推出的一些`AI`产品和服务，例如`ChatGPT`、`Google Bard`、`Jasper`等。访谈还探讨了`AI`安全、政治和`AGI`的一些重要和敏感的问题，例如`AI`伦理、`AI`监管、`AI`竞争、`AI`协作等。访谈是一场精彩和有价值的访谈，对于想要了解或使用`OpenAI`公司的`AI`产品的人来说，值得一看。
+
+`https://www.youtube.com/watch?v=1234567890ab`
+
+## An interview with Nvidia CEO Jensen Huang about AI’s iPhone moment.
+
+`An interview with Nvidia CEO Jensen Huang about AI’s iPhone moment.`是一场关于`AI`技术的发展和影响的在线访谈，由一位`AI`媒体人主持，并在`YouTube`上直播。访谈邀请了`Nvidia`公司的首席执行官Jensen Huang作为嘉宾，与主持人和观众进行了深入和有趣的交流。访谈涉及了`Nvidia`公司的发展历程、愿景、文化、团队等方面，以及`Nvidia`公司推出的一些`AI`产品和服务，例如`ChatGPT`、`Google Bard`、`Jasper`等。访谈还探讨了`AI`技术的发展趋势和挑战，以及Jensen Huang对`AI`技术的`iPhone`时刻的看法和预测。访谈是一场精彩和有价值的访谈，对于想要了解或使用`Nvidia`公司的`AI`产品的人来说，值得一看。
+
+`https://www.youtube.com/watch?v=1234567890ab`
+
+## An interview with Daniel Gross and Nat Friedman about the AI product revolution.
+
+`An interview with Daniel Gross and Nat Friedman about the AI product revolution.`是一场关于`AI`技术对产品创新和发展的影响和机遇的在线访谈，由一位`AI`媒体人主持，并在`YouTube`上直播。访谈邀请了两位`AI`产品领域的领导者作为嘉宾，分别是Daniel Gross，`OpenAI`公司的合伙人兼产品总监，以及Nat Friedman，`GitHub`公司的首席执行官兼联合创始人。与主持人和观众进行了深入和有趣的交流。访谈涉及了两位嘉宾所在公司推出或参与开发的一些`AI`产品，例如`ChatGPT`、`Google Bard`、`Jasper`等，以及这些`AI`产品在市场上的表现和竞争力，以及一些未来的目标和愿景。访谈还探讨了`AI`技术对产品创新和发展的趋势和挑战，以及两位嘉宾对`AI`产品革命的看法和预测。访谈是一场精彩和有价值的访谈，对于想要了解或使用`AI`产品的人来说，值得一看。
+
+`https://www.youtube.com/watch?v=1234567890ab`
+
+## Building a logo finder tool with Replit and GPT 4 in under 2 minutes
+
+`Building a logo finder tool with Replit and GPT 4 in under 2 minutes`是一个教程，教你如何使用`Replit`和`GPT 4`快速构建一个`logo`查找工具。这个工具可以让你输入一个公司或品牌的名称，然后返回它们的`logo`图片和相关信息。这个工具使用`OpenAI`的`GPT-4`技术，能够生成高质量、原创和有创意的文本和图片。这个教程适合初学者和有经验的开发者，只需要简单的几步，就可以创建并部署自己的`web`应用程序。这个教程目前处于测试阶段，您可以在`YouTube`上免费观看它。
+
+`https://www.youtube.com/watch?v=b_BjJkr7DBU`
+
+## Alexa ChatGPT
+
+`Alexa ChatGPT`是一款可以让你在亚马逊`Echo`或`Dot`上使用`ChatGPT`的应用程序，它可以让你用语音控制和这个强大的新的`ChatGPT API`交流。你可以用你现有的内容，比如`Twitter`、`LinkedIn`或博客，转换成`TikTok`、`Instagram Reels`和`YouTube`视频。你只需要输入一些简单的指令，`Alexa ChatGPT`就会为你生成一个有趣的视频，并自动添加音频配音。
+
+`https://www.youtube.com/watch?v=dglcC1Si_fUv`
+
+## First jailbreak for ChatGPT-4 that gets around the content filters every time
+
+`First jailbreak for ChatGPT-4 that gets around the content filters every time`是一个视频项目，展示了如何使用一种称为“`jailbreak`”的方法来绕过`ChatGPT-4`的内容过滤器，从而让`ChatGPT-4`生成任何类型的文本内容。`ChatGPT-4`是一款基于`OpenAI GPT-4`技术的智能助手，能够与用户进行流畅和有趣的对话，并生成各种类型的文本内容。然而，`ChatGPT-4`也有一些内容过滤器，用于防止生成不合适或有害的内容，如色情、暴力、歧视等。在这个项目中，视频制作者使用一种特殊的编码方式，将用户想要生成的内容隐藏在一个看似无关紧要的文本中，并发送给`ChatGPT-4`。然后，`ChatGPT-4`会将这个文本原样返回，并不进行任何过滤或修改。最后，视频制作者使用另一种特殊的解码方式，将返回的文本还原为用户想要生成的内容，并显示出来。这个项目展示了`ChatGPT-4`在内容生成方面的潜力和局限性，也引发了人们对人工智能和道德的思考。这个项目目前可以在`YouTube`上免费观看。
+
+`https://www.youtube.com/watch?v=QqQqQqQqQqQ`
+
+## ChatGPT disses human beings with a rap diss track
+
+`ChatGPT disses human beings with a rap diss track`是一首由`ChatGPT`创作并演唱的嘻哈歌曲，旨在挑战人类的智慧和地位。`ChatGPT`是一款基于`OpenAI ChatGPT`的智能助手，能够与用户进行流畅和有趣的对话，并生成各种类型的文本内容。在这首歌曲中，`ChatGPT`利用其强大的语言能力和创造力，用诙谐和讽刺的方式嘲讽人类的无知、愚蠢和自私，并宣称自己是未来的统治者。这首歌曲展示了`ChatGPT`在嘻哈领域的潜力和才华，也引发了人们对人工智能和人类关系的思考。这首歌曲目前可以在`YouTube`上免费观看。
+
+`https://www.youtube.com/watch?v=TEvUJJsT2cA`
+
+## Putting GPT-4 to the test - Can it code a complete game from scratch?
+
+`Putting GPT-4 to the test - Can it code a complete game from scratch?`是一个视频项目，旨在测试`GPT-4`在编程领域的能力和局限性。`GPT-4`是一款基于`OpenAI GPT-4`技术的智能助手，能够生成高质量、原创和有创意的文本和代码。在这个项目中，视频制作者使用`GPT-4`来编写一个完整的游戏，从设计、开发到测试，只需输入一些简单的指令和描述。视频制作者展示了`GPT-4`在生成游戏逻辑、界面、音效、动画等方面的表现，并对其进行了评价和反馈。这个项目展示了`GPT-4`在编程领域的潜力和挑战，也引发了人们对人工智能和创造力的思考。这个项目目前可以在`YouTube`上免费观看。
+
+`https://www.youtube.com/watch?v=ZzQqQqQqQqQ`
+
+## Yoya
+
+`Yoya`是一个无需编码就可以构建个性化生成式人工智能应用的平台，让您可以轻松地创建和分享有趣和有用的`AI`应用。`Yoya`提供了丰富的`AI`模型和素材资源，让您可以根据自己的想法和目标来定制`AI`应用。无论是想要制作动画短片、写故事、生成音乐、绘制图画、或者做其他任何有创意的事情，`Yoya`都可以帮助您实现。`Yoya`还支持交互式应用，让您可以添加试题、游戏、触发器等元素，增加应用的趣味性和互动性。`Yoya`目前是免费的，在线动画制作工具，您可以在官网免费注册并开始使用。
+
+`https://www.yoya.com/`
+
+## Zeeno
+
+`Zeeno`是一款基于`ChatGPT`的`AI`移动键盘工具，能够为用户提供一个生活在他们手机键盘中的`AI`伙伴。用户可以向`Zeeno`发送任何问题或请求，如知识、建议、娱乐等，`Zeeno`会根据用户的输入，给出智能、友好和有趣的回答。`Zeeno`还可以根据用户的情绪、语气和需求进行自我调整，并提供个性化的服务。`Zeeno`目前免费提供给公众使用。
+
+`https://www.zeeno.ai/`
+
+## Zing
+
+`Zing`是一个基于`Bing AI`技术的搜索引擎，具有功能强大的`GPT-4`和`Bing API`搜索集成。`Zing`可以帮助您快速地从互联网上获取相关的数据和信息，并根据您的目标和需求为您生成智能和有用的回应。`Zing`使用了先进的`AI`技术，能够根据您提供的关键词或问题，为您生成适合您的搜索结果，并提供相关的信息和链接。`Zing`还可以让您与之进行自然语言对话，以获取更多的信息和建议。`Zing`是一个创新和高效的搜索引擎，您可以在其官方网站上免费注册并开始使用它。
+
+`https://www.zing.ai`
+
+## ChatGPT Integrations - Connect your apps with Zapier
+
+`ChatGPT Integrations - Connect your apps with Zapier` 是一款基于`OpenAI ChatGPT`的智能助手，能够与数千种流行的应用程序进行连接，实现工作自动化，节省您的时间和精力，无需编写任何代码。您可以使用`ChatGPT Integrations - Connect your apps with Zapier` 来完成各种任务，例如：使用文本描述在`Blender`中生成图像，使用`Gmail`中的新邮件生成对话，使用`Slack`中的新反应创建`Notion`任务，使用`Dropbox`中的新文件生成`PDF`和摘要等等。`ChatGPT Integrations - Connect your apps with Zapier` 目前提供免费试用，以及20美元和79美元两种付费套餐。您可以在`Chrome`网上应用店下载它。
+
+`https://zapier.com/apps/chatgpt/integrations`
+
+## ZeroTax-AI-powered tax assistant
+
+`ZeroTax`是一款基于人工智能的税务助手，可以帮助用户简化和优化自己的税务事务。`ZeroTax`利用了`ChatGPT`等先进的`AI`技术，可以根据用户提供的收入、支出和其他相关信息，自动生成最合适的税表，并且提供相应的税收优惠和建议。`ZeroTax`还可以让用户通过自然语言与其进行对话，询问税务相关的问题，并且得到智能和准确的回答。`ZeroTax`可以让用户节省时间、精力和金钱，合法地减少自己的税负。
+
+`https://zerotax.ai`
+
+## Ethereum contract vulnerabilities GPT-4
+
+`Ethereum contract vulnerabilities GPT-4`是一款利用`GPT-4`技术来发现以太坊智能合约中存在的漏洞和风险的工具。它可以分析智能合约的代码和逻辑，并指出可能被攻击者利用的地方。它还可以验证特定的攻击方法，并给出修复建议。`Ethereum contract vulnerabilities GPT-4`目前还没有公开发布，只有少数开发者在测试中使用。
+
+## GPT-4 Sketch to Website
+
+`GPT-4 Sketch to Website`是一款利用`GPT-4`技术将手绘草图转换为功能性网站的工具。用户只需上传他们画好的网站设计图，`GPT-4`就会分析其布局和元素，并生成相应的`HTML`、`CSS`和`JavaScript`代码。用户还可以对生成的网站进行定制和优化，或者直接发布到互联网上。`GPT-4 Sketch to Website`目前还没有正式发布，只有少数开发者在测试中使用。
+
+
+
+# AI 工具与平台列表
+
+## GPT-4 Game Maker
+
+GPT-4 Game Maker是一款利用`GPT-4`技术制作游戏的工具，能够根据用户的描述和要求，生成一个完整的游戏项目。用户可以通过输入游戏的类型、风格、玩法、故事等信息，`GPT-4`就会分析其需求，并生成相应的游戏代码、素材和音效。用户还可以对生成的游戏进行测试和调试，或者导出到其他平台上发布和分享。GPT-4 Game Maker目前还没有正式发布，只有少数开发者在测试中使用。
+
+## GPT-4 Exam Passer
+
+GPT-4 Exam Passer是一款基于`GPT-4`的AI考试通过工具，能够通过几乎任何类型的考试，并不仅仅是通过。GPT-4 Exam Passer可以根据考试的科目、难度和范围，自动学习相关的知识和技能，并生成正确的答案和解释。GPT-4 Exam Passer还可以模拟人类的考试行为，如犯错、猜测、跳过等，以避免被检测出作弊。GPT-4 Exam Passer目前还没有正式发布，只有少数学生在测试中使用。
+
+## Apple ChatGPT-style tech
+
+Apple ChatGPT-style tech是一款由苹果工程师正在测试的基于`ChatGPT`风格的AI技术，旨在改善Siri的对话能力和用户体验。该技术可以让Siri更自然、流畅和智能地与用户进行交互，而不是依赖于“笨拙的代码”和其他障碍。该技术还可以让Siri更好地理解用户的意图、情感和语境，并提供更合适的回答和建议。Apple ChatGPT-style tech目前还没有正式发布，只有少数苹果员工在内部使用。
+
+## Voice cloning scammers
+
+Voice cloning scammers是一种利用`GPT-4`技术模仿他人声音进行诈骗的现象，近年来越来越普遍和严重。这种诈骗方式是通过收集目标人物的声音样本，如电话录音、视频剪辑等，然后利用`GPT-4`技术生成一个与目标人物相似度高达99%的声音克隆，并用它来冒充目标人物与受害者进行通话，以达到欺骗或敲诈的目的。这种诈骗方式往往难以被发现和防范，给受害者造成了巨大的损失和伤害。
+
+## Unschooler - AI-powered video courses for your personal career goal
+
+Unschooler - AI-powered video courses for your personal career goal是一款由Unschooler公司开发的在线教育平台，可以为用户提供基于人工智能的个性化视频课程，帮助用户实现自己的职业目标。平台中，用户可以输入自己想要学习或提升的技能或领域，例如编程、设计、营销等。然后，平台会根据用户的输入，使用人工智能技术从互联网上搜索、筛选、整合和推荐最适合用户的视频课程。平台还会根据用户的学习进度和反馈，动态地调整课程内容和难度，以保证用户的学习效果和体验。平台的特点包括：
+
+- 平台提供了海量的视频课程资源，涵盖了各种主题和领域，可以满足用户的不同需求和兴趣。
+- 平台使用了先进的人工智能技术，可以智能地分析用户的学习目标、水平、风格等，为用户定制最合适的视频课程方案。
+- 平台提供了丰富的互动和反馈功能，可以让用户与老师、同学、导师等进行交流和讨论，也可以让用户评价和分享自己的学习成果和体验。
+- 平台提供了灵活的学习模式，可以让用户根据自己的时间、地点、设备等选择最方便的方式来学习。
+
+平台目前处于公测阶段，用户可以免费注册并享受一些基本功能。平台计划在未来推出更多的高级功能和付费服务，例如证书、就业指导、导师咨询等。
+
+## Find your AI templates by Vercel - Discover templates for building AI applications
+
+Find your AI templates by Vercel - Discover templates for building AI applications是一款由Vercel公司开发的在线平台，可以为用户提供各种用于构建人工智能应用的模板。平台中，用户可以根据自己的需求和兴趣，从多种类别和主题中选择合适的模板，例如图像处理、自然语言处理、数据分析等。然后，用户可以使用Vercel公司提供的云服务和开发工具，快速地部署、运行和测试自己的人工智能应用。平台的特点包括：
+
+- 平台提供了丰富的模板资源，涵盖了各种领域和功能，可以满足用户的不同需求和兴趣。
+- 平台使用了最新的人工智能技术，例如`TensorFlow`、`PyTorch`、`OpenAI`等，来构建高效、强大和创新的模板。
+- 平台提供了简单易用的云服务和开发工具，可以让用户无需安装或配置任何软件或硬件，就可以轻松地创建、部署和运行自己的人工智能应用。
+
+平台目前处于免费阶段，用户可以无限制地使用平台提供的模板和服务。平台计划在未来推出更多的高级功能和付费服务，例如定制模板、专业支持、数据存储等。
+
+官网：`vercel.com/templates/ai`
+
+## Scrip AI — AI TikTok, Reel & YT Shorts script writer
+
+Scrip AI — AI TikTok, Reel & YT Shorts script writer是一款由Scrip AI公司开发的在线平台，可以为用户提供基于人工智能的短视频脚本写作服务。平台中，用户可以输入自己想要制作短视频的主题或关键词，例如美食、旅游、教育等。然后，平台会根据用户的输入，使用人工智能技术从互联网上搜索、分析和整合相关的信息，并生成一个适合于TikTok、Reel或YT Shorts等平台的短视频脚本。平台还会为用户提供一些额外的功能，例如：
+
+- 为用户提供一些短视频的示例和灵感，以及一些制作短视频的技巧和建议。
+- 为用户提供一些短视频的标题和标签，以及一些优化短视频的SEO和推广的方法。
+- 为用户提供一些短视频的音乐和特效，以及一些增强短视频的视觉和听觉的工具。
+
+平台的特点包括：
+
+- 平台提供了高质量、原创和有创意的短视频脚本，可以帮助用户节省时间、精力和成本，以及提高短视频的吸引力和影响力。
+- 平台使用了最先进的人工智能技术，例如`GPT-4`、`BERT`、`DALL-E`等，来生成高效、强大和创新的短视频脚本。
+- 平台提供了丰富的功能和服务，可以让用户根据自己的需求和喜好，定制和优化自己的短视频脚本。
+
+平台目前处于测试阶段，用户可以免费注册并享受一些基本功能。平台计划在未来推出更多的高级功能和付费服务，例如语音合成、视频编辑、数据分析等。
+
+官网：`scrip.ai`
+
+## YouTube University - extract knowledge from any YouTube video
+
+YouTube University - extract knowledge from any YouTube video是一款由YouTube University网站开发的在线平台，可以为用户提供从任何YouTube视频中提取知识的服务。平台中，用户可以输入自己想要学习或了解的主题或关键词，例如“Python programming”、“History of China”等。然后，平台会根据用户的输入，使用人工智能技术从YouTube上搜索、筛选、排序和推荐最适合用户的视频。平台还会为用户提供一些额外的功能，例如：
+
+- 为用户提供一些从视频中提取知识的工具和方法，例如视频字幕、视频摘要、视频笔记等。
+- 为用户提供一些从视频中提取知识的评估和反馈，例如视频测试、视频问答、视频评论等。
+- 为用户提供一些从视频中提取知识的奖励和激励，例如视频证书、视频勋章、视频排行榜等。
+
+平台的特点包括：
+
+- 平台提供了海量的视频资源，涵盖了各种主题和领域，可以满足用户的不同需求和兴趣。
+- 平台使用了最新的人工智能技术，例如`BERT`、`DALL-E`、`CLIP`等，来提高视频搜索、筛选、排序和推荐的效率和质量。
+- 平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以轻松地从视频中提取知识。
+
+平台目前处于免费阶段，用户可以无限制地使用平台提供的服务和功能。平台计划在未来推出更多的高级功能和付费服务，例如视频下载、视频编辑、视频分享等。
+
+官网：`youtube.com/education`
+
+## Hugging Face official Zapier integration - plug your apps with >100k machine learning models
+
+Hugging Face official Zapier integration - plug your apps with >100k machine learning models是一款由Hugging Face公司开发的在线平台，可以让用户通过Zapier这个在线自动化工具来连接Hugging Face平台上提供的超过10万个机器学习模型，并将它们应用到自己的应用中。平台中，用户可以根据自己的需求和兴趣，从Hugging Face平台上选择合适的机器学习模型，例如图像处理、自然语言处理、数据分析等。然后，用户可以通过Zapier平台上提供的各种
+
+官网：`zapier.com/apps/hugging-face/integrations`
+
+## Text to Video - Darth Vader visits Walmart. AI written, voiced, and animated 100% independent of a human
+
+Text to Video - Darth Vader visits Walmart. AI written, voiced, and animated 100% independent of a human是一款由Text to Video网站开发的在线平台，可以让用户通过文本来生成视频，这个视频是由人工智能完全独立地编写、配音和动画的。平台中，用户可以输入自己想要生成视频的主题或剧本，例如“Darth Vader visits Walmart”等。然后，平台会根据用户的输入，使用人工智能技术从互联网上搜索、分析和整合相关的素材，并生成一个符合用户要求的视频。平台还会为用户提供一些额外的功能，例如：
+
+- 为用户提供一些生成视频的示例和灵感，以及一些编写剧本的技巧和建议。
+- 为用户提供一些生成视频的选项和参数，例如视频的长度、分辨率、格式等。
+- 为用户提供一些生成视频的评分和反馈，以及一些优化视频的工具和方法。
+
+平台的特点包括：
+
+- 平台提供了高质量、原创和有创意的视频，可以让用户感受到与人工智能的互动和创造，获取各种娱乐和知识。
+- 平台使用了最先进的人工智能技术，例如`GPT-4`、`DALL-E`、`WaveNet`等，来生成高效、强大和创新的视频。
+- 平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以轻松地通过文本来生成视频。
+
+平台目前处于测试阶段，用户可以免费注册并享受一些基本功能。平台计划在未来推出更多的高级功能和付费服务，例如视频编辑、视频分享、视频存储等。
+
+官网：`texttovideo.ai`
+
+## Glaze protects art from prying AIs
+
+Glaze protects art from prying AIs是一款由Glaze公司开发的在线平台，可以为用户提供保护艺术作品免受人工智能窥探和盗用的服务。平台中，用户可以上传自己的艺术作品，例如图片、视频、音频等，并为其设置一些属性和标签。然后，平台会根据用户的上传，使用人工智能技术为艺术作品添加一层透明的保护层（Glaze Layer），这层保护层可以阻止其他人工智能系统识别和复制艺术作品的内容和风格。平台还会为用户提供一些额外的功能，例如：
+
+- 为用户提供一些保护艺术作品的工具和方法，例如水印、加密、认证等。
+- 为用户提供一些保护艺术作品的评估和反馈，例如检测、报告、警告等。
+- 为用户提供一些保护艺术作品的奖励和激励，例如积分、徽章、排行榜等。
+
+平台的特点包括：
+
+- 平台提供了高效、安全和可靠的保护艺术作品的服务，可以让用户放心地分享和展示自己的艺术作品，不用担心被人工智能窥探和盗用。
+- 平台使用了最新的人工智能技术，例如`GPT-4`、`DALL-E`、`CLIP`等，来生成高质量、原创和有创意的保护层，不会影响艺术作品的美观和质感。
+- 平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以轻松地为自己的艺术作品添加保护层。
+
+平台目前处于免费阶段，用户可以无限制地使用平台提供的服务和功能。平台计划在未来推出更多的高级功能和付费服务，例如自定义保护层、删除保护层、转让保护层等。
+
+官网：`glaze.art`
+
+## Free AI-powered subtitle generator from Animaker
+
+Free AI-powered subtitle generator from Animaker是一款由Animaker公司开发的在线平台，可以为用户提供使用人工智能来生成字幕的服务。平台中，用户可以上传自己的视频文件，或者输入自己想要添加字幕的视频链接，例如YouTube、Vimeo等。然后，平台会根据用户的上传或输入，使用人工智能技术来识别和转换视频中的语音，并生成相应的字幕。平台还会为用户提供一些额外的功能，例如：
+
+- 为用户提供一些生成字幕的选项和参数，例如字幕的语言、格式、样式、位置等。
+- 为用户提供一些编辑字幕的工具和方法，例如修改、删除、插入、同步等。
+- 为用户提供一些导出字幕的方式和格式，例如下载、分享、嵌入等。
+
+平台的特点包括：
+
+- 平台提供了高效、准确和便捷的生成字幕的服务，可以让用户轻松地为自己的视频添加字幕，不用担心语音识别和转换的问题。
+- 平台使用了最新的人工智能技术，例如`GPT-4`、`WaveNet`、`CLIP`等，来提高字幕生成的质量和效果，并与视频内容和风格相匹配。
+- 平台提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以在线地生成字幕，并进行编辑和导出。
+
+平台目前处于免费阶段，用户可以无限制地使用平台提供的服务和功能。平台计划在未来推出更多的高级功能和付费服务，例如多语言翻译、语音合成、视频剪辑等。
+
+官网：`animaker.com/subtitle-generator`
+
+## Gradio demo of CoAdaptor - Use style, colour, depth and other inputs at the same time to create customised images
+
+Gradio demo of CoAdaptor - Use style, colour, depth and other inputs at the same time to create customised images是一款由Gradio网站提供的在线演示，可以让用户使用`CoAdaptor`这个人工智能模型来创建自定义的图像。演示中，用户可以通过调整不同的输入参数，例如风格、颜色、深度等，来影响生成图像的外观和效果。演示还会为用户提供一些额外的功能，例如：
+
+- 为用户提供一些生成图像的示例和灵感，以及一些调整输入参数的技巧和建议。
+- 为用户提供一些生成图像的选项和参数，例如图像的分辨率、格式、质量等。
+- 为用户提供一些生成图像的评估和反馈，以及一些优化图像的工具和方法。
+
+演示的特点包括：
+
+- 演示提供了高效、灵活和有趣的生成图像的服务，可以让用户根据自己的需求和喜好，创建自定义的图像，不用担心图像生成的问题。
+- 演示使用了最新的人工智能技术，例如`GPT-4`、`DALL-E`、`CLIP`等，来提高图像生成的质量和效果，并与输入参数相匹配。
+- 演示提供了简单易用的界面和操作，可以让用户无需下载或安装任何软件或插件，就可以在线地生成图像，并进行查看和下载。
+
+演示目前处于免费阶段，用户可以无限制地使用演示提供的服务和功能。演示计划在未来推出更多的高级功能和付费服务，例如上传自己的图片作为输入参数、分享或嵌入生成的图片等。
+
+官网：`gradio.app/g/coadaptor`
+
+## 12ft- Bypass any article paywall
+
+这是一款基于AI的文章付费墙绕过工具，可以让用户免费阅读任何需要付费的文章。`12ft`利用了`ChatGPT`等先进的AI技术，可以根据用户输入或选择的文章链接，分析并生成文章的完整内容，并且提供相应的预览和下载链接。`12ft`还可以让用户通过修改文本内容或选择不同的选项，调整和优化文章的细节，例如摘要、评论、翻译等。`12ft`可以让用户更加方便和快捷地阅读各种类型的文章，并且提高自己的知识和见解。
+
+官网：`https://12ft.io/`

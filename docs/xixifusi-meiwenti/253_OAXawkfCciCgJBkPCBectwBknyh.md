@@ -1,56 +1,55 @@
+
 # 笔记
 
 > 来源：[https://docs.feishu.cn/docx/ZvQRd6oq5oBdhXxTn5Ic26NJnne](https://docs.feishu.cn/docx/ZvQRd6oq5oBdhXxTn5Ic26NJnne)
 
-# 1 Intro & Syllabus
+## 1 Intro & Syllabus
 
-+   XNU内核
+### XNU 内核
 
-+   XNU 是一个 Unix-like 操作系统内核，它是 macOS 和 iOS 等苹果操作系统的核心组件。XNU 是 "X is Not Unix" 的缩写，表示它不完全遵循传统的 Unix 系统设计。
+XNU 内核是一个 Unix-like 操作系统内核，它是 macOS 和 iOS 等苹果操作系统的核心组件。XNU 是 "X is Not Unix" 的缩写，表示它不完全遵循传统的 Unix 系统设计。
 
-+   X[NU内](https://zh.wikipedia.org/wiki/XNU)核是苹果电脑开发用于macOS操作系统的操作系统[内核，](https://www.jianshu.com/p/cab1bfab4fb7)也[是iO](https://juejin.cn/post/7028399813720801288)[S、t](https://www.oschina.net/news/89221/apple-open-source-darwin-xnu)vOS和watchOS的内核(1)。它是Darwin操作系统的一部分，跟随着Darwin一同作为自由及开放源代码软件被发布(2)。XNU内核由Mach、BSD和IOKit组成，其中Mach是微内核，只负责最基本的职责，BSD是基于Unix开发的，IOKit负责硬件信息(3)。苹果已经在GitHub上开源了XNU内核的源代码(4)。
+XNU 内核是苹果电脑开发用于 macOS 操作系统的操作系统内核，也是 iOS、tvOS 和 watchOS 的内核。它是 Darwin 操作系统的一部分，跟随着 Darwin 一同作为自由及开放源代码软件被发布。XNU 内核由 Mach、BSD 和 IOKit 组成，其中 Mach 是微内核，只负责最基本的职责，BSD 是基于 Unix 开发的，IOKit 负责硬件信息。苹果已经在 GitHub 上开源了 XNU 内核的源代码。
 
-+   [XNU](https://www.jianshu.com/p/cab1bfab4fb7)内核[是一个](https://www.jianshu.com/p/cab1bfab4fb7)分[层体系](https://www.jianshu.com/p/cab1bfab4fb7)结构，由Mach、BSD和IOKit组成[(1)](https://www.jianshu.com/p/cab1bfab4fb7)。Mach是微内核，是仅提供基础服务的[一个薄](https://alexcode2.gitbook.io/ios-development-guidelines/ios-za-tan/ios-xi-tong-nei-he-xnuapp-ru-he-jia-zai)层，如处理器管理和调度以及IPC（inter-process communication，进程间通信），IPC是mach内核的核心概念(1)。BSD层是围绕mach层的一个外环，为最终用户的应用程序提供变成接口，其职责包括进程管理，文件系统和网络(1)。XNU内核比较庞大复杂，据说是一个无限递归的缩写：XNU’s Not UNIX(1)。Darwin的内核是XNU，而XNU是在UNIX的基础上做了很多改进以及创新(2)。
+XNU 内核是一个分层体系结构，由 Mach、BSD 和 IOKit 组成。Mach 是微内核，是仅提供基础服务的一个薄层，如处理器管理和调度以及 IPC（inter-process communication，进程间通信），IPC 是 mach 内核的核心概念。BSD 层是围绕 mach 层的一个外环，为最终用户的应用程序提供编程接口，其职责包括进程管理、文件系统和网络。XNU 内核比较庞大复杂，据说是一个无限递归的缩写：XNU’s Not UNIX。Darwin 的内核是 XNU，而 XNU 是在 UNIX 的基础上做了很多改进以及创新。
 
-ios
+### iOS
 
-macos
+### macOS
 
-+   Software supply chain
+### Software Supply Chain
 
-+   Famous attacks
+### Famous Attacks
 
-+   Secure software supply chain
+### Secure Software Supply Chain
 
-+   Operating systems
+### Operating Systems
 
-+   Boot Security
+### Boot Security
 
-+   Runtime Security
+### Runtime Security
 
-+   The evolution of OS offenses and defenses
+### The Evolution of OS Offenses and Defenses
 
-+   Hardware security mechanism
+### Hardware Security Mechanism
 
-+   Virtualization, TPM, TEE, PAC
+### Virtualization, TPM, TEE, PAC
 
-+   Container systems (optional)
+### Container Systems (Optional)
 
-+   Mobile systems (optional)
+### Mobile Systems (Optional)
 
-+   Android security
+### Android Security
 
 ![](img/89419195ca24bccc154d1ef8626bb601.png)
 
 ![](img/e9602078b07ae19ff24d2883e916c230.png)
 
-读论文
+### 读论文
 
-+   看观点
-
-+   看怎么develop一篇文章
-
-+   看图片
+- 看观点
+- 看怎么 develop 一篇文章
+- 看图片
 
 Show how we advance the state-of-the-art?
 
@@ -58,119 +57,79 @@ Show how we advance the state-of-the-art?
 
 ![](img/c2e5b78193d98728f47c2f9604e4e5c2.png)
 
-+   Privilege Escalation
+### Privilege Escalation
 
-+   "权限升级"（Privilege Escalation）是指在计算机系统中，攻击者利用系统漏洞、配置错误或设计缺陷，将其原本的低权限账户升级到高权限账户的过程。权限升级可分为两类：水平权限升级（Horizontal Privilege Escalation）和垂直权限升级（Vertical Privilege Escalation）。
+"权限升级"（Privilege Escalation）是指在计算机系统中，攻击者利用系统漏洞、配置错误或设计缺陷，将其原本的低权限账户升级到高权限账户的过程。权限升级可分为两类：水平权限升级（Horizontal Privilege Escalation）和垂直权限升级（Vertical Privilege Escalation）。
 
-1.  水平权限升级：在水平权限升级中，攻击者利用漏洞或错误从一个低权限账户访问另一个具有相同权限的账户。这使得攻击者可以访问其他用户的数据和资源，但权限级别仍然相同。
+1. 水平权限升级：在水平权限升级中，攻击者利用漏洞或错误从一个低权限账户访问另一个具有相同权限的账户。这使得攻击者可以访问其他用户的数据和资源，但权限级别仍然相同。
+1. 垂直权限升级：在垂直权限升级中，攻击者从一个低权限账户成功地提升到更高权限的账户，例如从普通用户升级到管理员。这使得攻击者可以完全控制目标系统，执行任意命令并访问所有数据。
 
-1.  垂直权限升级：在垂直权限升级中，攻击者从一个低权限账户成功地提升到更高权限的账户，例如从普通用户升级到管理员。这使得攻击者可以完全控制目标系统，执行任意命令并访问所有数据。
+权限升级是网络安全领域的一个重要问题，因为它使攻击者能够突破系统的安全边界，并获得对受保护资源的访问权。为防止权限升级，需要定期更新系统补丁，确保系统配置正确，并遵循最佳安全实践。
 
-+   权限升级是网络安全领域的一个重要问题，因为它使攻击者能够突破系统的安全边界，并获得对受保护资源的访问权。为防止权限升级，需要定期更新系统补丁，确保系统配置正确，并遵循最佳安全实践。
+ROP（Return-Oriented Programming）劫持是一种高级的缓冲区溢出攻击技术。在这种攻击中，攻击者通过控制程序的执行流程并使用程序原有的代码片段（称为 `gadgets`）来执行恶意操作，而不是直接注入恶意代码。ROP 劫持的主要目标是绕过执行保护（如数据执行保护，DEP）等安全机制。
 
-+   ROP（Return-Oriented Programming）劫持是一种高级的缓冲区溢出攻击技术。在这种攻击中，攻击者通过控制程序的执行流程并使用程序原有的代码片段（称为 "gadgets"）来执行恶意操作，而不是直接注入恶意代码。ROP 劫持的主要目标是绕过执行保护（如数据执行保护，DEP）等安全机制。
+在 ROP 攻击中，攻击者通常劫持以下数据：
 
-+   在 ROP 攻击中，攻击者通常劫持以下数据：
+1. 函数返回地址：攻击者通过溢出漏洞覆盖函数的返回地址，使程序在返回时跳转到攻击者选择的 `gadgets`。这样，攻击者可以控制程序的执行流程并逐步构建恶意操作。
+1. 栈数据：攻击者可能会修改栈上的数据，以控制 `gadgets` 之间的执行顺序。在构建 ROP 链时，攻击者需要精确地布置栈数据以确保 `gadgets` 按预期执行。
+1. 寄存器数据：ROP 攻击可能会修改寄存器的值，以传递参数或控制 `gadgets` 的行为。攻击者通常会利用一些 `gadgets` 来控制寄存器的值。
 
-1.  函数返回地址：攻击者通过溢出漏洞覆盖函数的返回地址，使程序在返回时跳转到攻击者选择的 "gadgets"。这样，攻击者可以控制程序的执行流程并逐步构建恶意操作。
-
-1.  栈数据：攻击者可能会修改栈上的数据，以控制 "gadgets" 之间的执行顺序。在构建 ROP 链时，攻击者需要精确地布置栈数据以确保 "gadgets" 按预期执行。
-
-1.  寄存器数据：ROP 攻击可能会修改寄存器的值，以传递参数或控制 "gadgets" 的行为。攻击者通常会利用一些 "gadgets" 来控制寄存器的值。
-
-ROP 劫持的关键是找到足够多的 "gadgets" 并以正确的顺序执行它们以达到攻击者的目的。为了防御 ROP 攻击，研究人员和工程师开发了多种技术，如地址空间布局随机化（ASLR），控制流完整性（CFI）和 ROP-specific 保护机制。
+ROP 劫持的关键是找到足够多的 `gadgets` 并以正确的顺序执行它们以达到攻击者的目的。为了防御 ROP 攻击，研究人员和工程师开发了多种技术，如地址空间布局随机化（ASLR），控制流完整性（CFI）和 ROP-specific 保护机制。
 
 ![](img/9b824a178f518459458c8c92cbedc440.png)
 
 ![](img/fcb8d14fb5fb306e3683d2693412157e.png)
 
-+   eBPF
+### eBPF
 
-+   eBPF（扩展的Berkeley Packet Filter，即扩展的伯克利包过滤器）是一种在 Linux 内核中运行的轻量级虚拟机，它允许用户自定义内核中的数据包处理和系统调用，以实现对网络和系统事件的实时监控、分析和调试。eBPF 是原始 BPF（Berkeley Packet Filter）的扩展和增强版本，具有更高的灵活性和性能。
+eBPF（扩展的 Berkeley Packet Filter，即扩展的伯克利包过滤器）是一种在 Linux 内核中运行的轻量级虚拟机，它允许用户自定义内核中的数据包处理和系统调用，以实现对网络和系统事件的实时监控、分析和调试。eBPF 是原始 BPF（Berkeley Packet Filter）的扩展和增强版本，具有更高的灵活性和性能。
 
-+   eBPF 有以下特点：
+eBPF 有以下特点：
 
-1.  安全性：eBPF 程序在内核中运行，但它们需要通过内核的验证器进行安全检查，以确保程序不会导致内核崩溃或产生安全漏洞。
-
-1.  性能：eBPF 程序可以在内核中高效地运行，而无需在用户空间和内核空间之间进行昂贵的上下文切换。
-
-1.  可编程性：eBPF 程序可以用高级编程语言（如 C）编写，并使用 LLVM 工具链将其编译成 eBPF 字节码。这使得开发者能够编写复杂的自定义程序来处理网络和系统事件。
-
-1.  可扩展性：eBPF 支持与其他内核功能和用户空间工具集成，如 Linux 跟踪工具（如 BCC 和 bpftrace）、网络功能（如 XDP）和容器技术（如 Cilium）。
+1. 安全性：eBPF 程序在内核中运行，但它们需要通过内核的验证器进行安全检查，以确保程序不会导致内核崩溃或产生安全漏洞。
+1. 性能：eBPF 程序可以在内核中高效地运行，而无需在用户空间和内核空间之间进行昂贵的上下文切换。
+1. 可编程性：eBPF 程序可以用高级编程语言（如 C）编写，并使用 LLVM 工具链将其编译成 eBPF 字节码。这使得开发者能够编写复杂的自定义程序来处理网络和系统事件。
+1. 可扩展性：eBPF 支持与其他内核功能和用户空间工具集成，如 Linux 跟踪工具（如 `BCC` 和 `bpftrace`）、网络功能（如 XDP）和容器技术（如 Cilium）。
 
 eBPF 的应用场景包括：
 
-1.  网络监控与分析：使用 eBPF 监控网络流量，实现实时的流量统计、安全审计和异常检测。
+1. 网络监控与分析：使用 eBPF 监控网络流量，实现实时的流量统计、安全审计和异常检测。
+1. 系统调用跟踪：使用 eBPF 跟踪系统调用，以分析和调试内核和应用程序行为。
+1. 容器网络与安全：eBPF 可用于实现高性能的容器网络解决方案，如 Cilium，以及提供细粒度的安全策略和隔离。
+1. 性能分析与调优：eBPF 可以用于收集系统和应用程序的性能指标，帮助开发者识别性能瓶颈并进行优化。
 
-1.  系统调用跟踪：使用 eBPF 跟踪系统调用，以分析和调试内核和应用程序行为。
-
-1.  容器网络与安全：eBPF 可用于实现高性能的容器网络解决方案，如 Cilium，以及提供细粒度的安全策略和隔离。
-
-1.  性能分析与调优：eBPF 可以用于收集系统和应用程序的性能指标，帮助开发者识别性能瓶颈并进行优化。
-
-AI for System Security
+### AI for System Security
 
 用大模型来做这几个方向
 
-# 2 Software Supply Chain Security
+## 2 Software Supply Chain Security
 
-+   Traditional supply chain
+### Traditional Supply Chain
 
-+   What is software supply chain?
+### What Is Software Supply Chain?
 
-+   What is software supply chain security?
+在计算机科学中，Artifact 通常指的是源代码、二进制文件、编译器产生的中间文件、构建工具生成的构建输出物等计算机程序开发过程中所产生的各种文件。这些文件包含了程序的各个版本和构建状态，可以用于构建、测试、部署、维护和追踪程序的历史记录和演变。
 
-+   Famous attacks/vulnerabilities
+一些常见的 Artifact 包括：
 
-+   KTH, Heartbleed, SolarWinds, Log4j2
-
-+   Secure software supply chair
-
-+   Software composition analysis (SCA)
-
-+   Dependency detection
-
-+   Code clone detection
-
-+   Vulnerability tracing
-
-+   Vulnerability remediation
-
-## What is software supply chain?
-
-![](img/2b80b11e686de2b58825c3f888ec5309.png)
-
-![](img/eeb1db240087963e4bc2d31c0ab1bb1f.png)
-
-在计算机科学中，Artifact通常指的是源代码、二进制文件、编译器产生的中间文件、构建工具生成的构建输出物等计算机程序开发过程中所产生的各种文件。这些文件包含了程序的各个版本和构建状态，可以用于构建、测试、部署、维护和追踪程序的历史记录和演变。
-
-一些常见的Artifact包括：
-
-+   源代码：程序员编写的原始代码文件，通常以文本形式存储。
-
-+   二进制文件：编译器将源代码转换为机器可读的二进制代码，通常以可执行文件或库的形式存储。
-
-+   中间文件：编译器在转换源代码为二进制文件的过程中生成的文件，通常以特定的格式存储。
-
-+   构建输出物：构建工具生成的构建输出物，例如编译后的二进制文件、打包后的部署包等。
+- 源代码：程序员编写的原始代码文件，通常以文本形式存储。
+- 二进制文件：编译器将源代码转换为机器可读的二进制代码，通常以可执行文件或库的形式存储。
+- 中间文件：编译器在转换源代码为二进制文件的过程中生成的文件，通常以特定的格式存储。
+- 构建输出物：构建工具生成的构建输出物，例如编译后的二进制文件、打包后的部署包等。
 
 ![](img/8a8ff4ade4dd01c56d253c14f6e59ec1.png)
 
 PKM：包管理器
 
-## What is software supply chain security?
+### What Is Software Supply Chain Security?
 
 可能的安全问题
 
-+   Source code
-
-+   Build process
-
-+   Distribution channel
-
-+   Package manager
-
-+   Dependent libraries
+- Source code
+- Build process
+- Distribution channel
+- Package manager
+- Dependent libraries
 
 ![](img/203e4333ba9ae54c3d67795dd344da11.png)
 
@@ -178,53 +137,52 @@ PKM：包管理器
 
 ![](img/604bce26981b2ad4934c8dfa438034be.png)
 
-## Famous attacks/vulnerabilities
+### Famous Attacks/Vulnerabilities
 
-### KTH
+- KTH
+- Heartbleed
+- SolarWinds
+- Log4j2
+
+### Secure Software Supply Chain
+
+#### KTH
 
 Ken Thompson Hack, 1983
 
 我们究竟应该相信谁？
 
-+   操作系统
+- 操作系统
+- Binary
+- Compiler
 
-+   Binary
+他把 `compiler` 修改了，有个后门，如果你不用他的 `compiler`，但是还是需要会用他的 `compiler`，当你用这个 `compiler` 编译其他的 `compiler`，还是会有后门
 
-+   Compiler
-
-他把compiler修改了，有个后门，如果你不用他的compiler，但是还是需要会用他的compiler，当你用这个compiler编译其他的compiler，还是会有后门
-
-+   The **compiler** looks for source code that looks like login program
-
-+   If found, insert login backdoor (allow special user to log in)
+- The `compiler` looks for source code that looks like `login` program
+- If found, insert login backdoor (allow special user to log in)
 
 ![](img/64a8528d5e1cb983ca4faeff6353a663.png)
 
-我们发现除了source code，还有一些影响software？
+我们发现除了 source code，还有一些影响 software？
 
-+   Build toolchain
-
-+   Build environment
-
-+   Build scripts
-
-+   脚本：maintainer不知情的情况下，给二进制里面插入脚本
+- Build toolchain
+- Build environment
+- Build scripts
+- 脚本：maintainer 不知情的情况下，给二进制里面插入脚本
 
 防御：
 
-+   多更新，多检查
+- 多更新，多检查
+- 验证签名，`SigStore`
+- 如何验证 Src 和 Bin 的语义不多不少：太难了
 
-+   验证签名，SigStore
-
-+   如何验证Src和Bin的语义不多不少：太难了
-
-### Heartbleed
+#### Heartbleed
 
 Heartbleed vulnerability, 2014 https://heartbleed.coml
 
 ![](img/00304001027f953456b477500809071a.png)
 
-OpenSSL存在漏洞
+OpenSSL 存在漏洞
 
 越界的读，读到秘钥
 
@@ -232,93 +190,84 @@ OpenSSL存在漏洞
 
 ![](img/e7d90cd6617d9c9fa4ea6fa3ee81eb7c.png)
 
-OpenSSL被广泛使用
+OpenSSL 被广泛使用
 
 ![](img/8902cbc37aa6b911d78888474d5c1ce3.png)
 
 ![](img/0784cb88dab582dbe9752b73dac6894b.png)
 
-问题在于payload容易越界的读，发一个Request，发送回一个同样payload的Reply，不检查长度，容易溢出；溢出的部分容易泄露一些重要信息，读到账户和密码
+问题在于 payload 越界的读，发送一个 Request，发送回一个同样 payload 的 Reply，不检查长度，容易溢出；溢出的部分容易泄露一些重要信息，读到账户和密码
 
-几乎被NSA用了两年，其他国家损失惨重
+几乎被 NSA 用了两年，其他国家损失惨重
 
-RSA秘钥都会被发现
+RSA 秘钥都会被发现
 
 如何防御？
 
-payload超出的部分
+payload 超出的部分
 
-+   属于同一个process
-
-+   不属于同一个process
-
-+   Intra-process-isolation：把内存分开，不能overflow其他的
+- 属于同一个 process
+- 不属于同一个 process
+- Intra-process-isolation：把内存分开，不能 overflow 其他的
 
 ![](img/799ec9bdf540d3e70b9382b031fc9fa9.png)
 
 都可以
 
-+   Static code
+- Static code
+- Dynamic analysis
+- 禁止越界读取
 
-+   Dynamic analysis
-
-+   禁止越界读取
-
-### SolarWinds
+#### SolarWinds
 
 SolarWinds attack, 2020
 
-为B端提供软件服务
+为 B 端提供软件服务
 
 ![](img/653d930086114401fff725572f558011.png)
 
 攻击时间线
 
-攻击非常隐秘，满足SolarWinds公司的代码规范
+攻击非常隐秘，满足 SolarWinds 公司的代码规范
 
-会先隐藏2周，有一些抗分析
+会先隐藏 2 周，有一些抗分析
 
 怎么防御？
 
 ![](img/d9e38c05d99575107eca6eb847b4d7df.png)
 
-Reproducible build多次编译，每次编译都要一样，但是很难执行
+Reproducible build 多次编译，每次编译都要一样，但是很难执行
 
-1.  及时更新补丁：SolarWinds攻击利用了软件更新服务器的漏洞，因此及时更新软件更新服务器的补丁是至关重要的。此外，组织应该定期对所有软件进行更新和维护，以修复已知的漏洞和弱点，从而提高系统的安全性。
+1. 及时更新补丁：SolarWinds 攻击利用了软件更新服务器的漏洞，因此及时更新软件更新服务器的补丁是至关重要的。此外，组织应该定期对所有软件进行更新和维护，以修复已知的漏洞和弱点，从而提高系统的安全性。
+1. 加强网络安全：组织可以使用网络安全技术，例如防火墙、入侵检测和防御系统、反病毒软件和安全信息和事件管理（SIEM）系统等，以提高网络安全性。此外，组织还应该加强网络访问控制和身份验证，限制对关键系统和数据的访问权限。
+1. 加强供应链安全：组织应该加强对供应链的管理和监控，确保所有供应商和合作伙伴都遵循安全最佳实践，并定期对其进行安全审计和漏洞扫描。此外，组织还应该对所有供应商和合作伙伴进行严格的身份验证和访问控制，以确保其安全性。
+1. 加强审计和监控：组织应该定期进行安全审计和监控，以识别和防止潜在的安全威胁和攻击。此外，组织还应该使用安全信息和事件管理（SIEM）系统等工具来监控网络活动和安全事件，并及时响应和处理安全事件。
 
-1.  加强网络安全：组织可以使用网络安全技术，例如防火墙、入侵检测和防御系统、反病毒软件和安全信息和事件管理（SIEM）系统等，以提高网络安全性。此外，组织还应该加强网络访问控制和身份验证，限制对关键系统和数据的访问权限。
-
-1.  加强供应链安全：组织应该加强对供应链的管理和监控，确保所有供应商和合作伙伴都遵循安全最佳实践，并定期对其进行安全审计和漏洞扫描。此外，组织还应该对所有供应商和合作伙伴进行严格的身份验证和访问控制，以确保其安全性。
-
-1.  加强审计和监控：组织应该定期进行安全审计和监控，以识别和防止潜在的安全威胁和攻击。此外，组织还应该使用安全信息和事件管理（SIEM）系统等工具来监控网络活动和安全事件，并及时响应和处理安全事件。
-
-### Log4j2
+#### Log4j2
 
 Log4j2 vulnerability, 2021
 
 ![](img/42a2b570c5916cac981a97f9082f2079.png)
 
-攻击者使用 ＄{} 关键标识符触发 Java Naming and Directory Interface ( JNDI）注入漏洞
+攻击者使用 `${}` 关键标识符触发 Java Naming and Directory Interface ( JNDI）注入漏洞
 
 两个必要成因
 
-+   允许lookup加载远程代码
+- 允许 `lookup` 加载远程代码
+- JNDI 加载类可受用户输入影响
 
-+   JNDI加载类可受用户输入影响
+允许 `lookup` 加载远程代码
 
-允许lookup加载远程代码
-
-+   Log4j2提供lookup功能，日志中包含＄1，lookup功能就会将表达式的内容替换为表达式解析后的内容，而不是表达式本身
-
-+   Log4j2 支持 Context Map、 Date、 Event、 Java、 JNDI等多种的属性查找及替换选项，其中所支持的 JNDI 就是本次漏洞的触发点
+- Log4j2 提供 `lookup` 功能，日志中包含 `${}`，`lookup` 功能就会将表达式的内容替换为表达式解析后的内容，而不是表达式本身
+- Log4j2 支持 Context Map、 Date、 Event、 Java、 JNDI 等多种的属性查找及替换选项，其中所支持的 JNDI 就是本次漏洞的触发点
 
 ![](img/2a982485f7380b3d960fd7f8d1f99509.png)
 
-变量命名disable，双重否定，把自己绕进去了；默认是开启的
+变量命名 `disable`，双重否定，把自己绕进去了；默认是开启的
 
-允许lookup
+允许 `lookup`
 
-+   在Constants.java中配置的值默认为false，因此Lookups功能在默认情况下是开启的
+- 在 `Constants.java` 中配置的值默认为 `false`，因此 `Lookups` 功能在默认情况下是开启的
 
 ![](img/dfec8406b0dc5a7ddee06a5f8cd560e2.png)
 
@@ -328,39 +277,36 @@ Log4j2 vulnerability, 2021
 
 不要绕
 
-Java没有内存问题，但是往往有让别人远程加载的问题
+Java 没有内存问题，但是往往有让别人远程加载的问题
 
 ![](img/86ae4f96d5cd0663aa8e5dd84dca0052.png)
 
-+   防御
+- 防御
+- 前：静态分析
+- 中：monitor 这个操作，看看是否会加载远程的类
+- 后：找到一些 trace，我们会发现谁部署了，把他 disable 掉
 
-+   前：静态分析
-
-+   中：monitor 这个操作，看看是否会加载远程的类
-
-+   后：找到一些trace，我们会发现谁部署了，把他disable掉
-
-## Secure software supply chain
-
-![](img/bae7e7efd80527d3deb176740c372721.png)
+## Secure Software Supply Chain
 
 我们主要是关注远程的
 
-第三方库
+### 第三方库
 
-+   你使用了哪些库
-
-+   这些库容易受到漏洞的影响吗？理解依赖里是否有漏洞
-
-+   如何防御漏洞？ 理解软件依赖什么代码？
+- 你使用了哪些库
+- 这些库容易受到漏洞的影响吗？理解依赖里是否有漏洞
+- 如何防御漏洞？ 理解软件依赖什么代码？
 
 ![](img/8ffb209482f0c83912d345c9e2868fb1.png)
 
-NPM：node可能会有依赖问题，依赖循环
+NPM：node 可能会有依赖问题，依赖循环
+
+
 
 ![](img/d5c328cd0e0ce61f148468ed0e370fd9.png)
 
-### 你使用了哪些库
+# 2 软件组成分析（SCA）
+
+## 你使用了哪些库
 
 Software composition analysis (SCA)
 
@@ -376,7 +322,7 @@ Software composition analysis (SCA)
 
 +   Java Node Python, Go Rust,.NET, PHP
 
-+   Java就是Jar包复用，里面可以有源代码
++   Java就是`Jar`包复用，里面可以有源代码
 
 ![](img/bfbe7e9431bcb5a1d843f052015fd2dc.png)
 
@@ -388,13 +334,13 @@ Software composition analysis (SCA)
 
 +   Granularity 检测粒度（检测速度，精确度，大小）
 
-+   Library, File, Function, Line?
++   `Library`, `File`, `Function`, `Line`?
 
 +   What are the advantages and disadvantages?
 
-+   优点：Line的话很精确
++   优点：`Line`的话很精确
 
-+   缺点：Line的话，容易误报，false Positive多；检测粒度越小越精确，但误报率会提升
++   缺点：`Line`的话，容易误报，false Positive多；检测粒度越小越精确，但误报率会提升
 
 +   Technique 索引方法
 
@@ -428,13 +374,13 @@ false negatives是指安全系统或工具未能检测或识别实际上是恶�
 
 +   一般会直接看dependency file
 
-+   像如果是Maven的话就是Pom.xml
++   像如果是Maven的话就是`Pom.xml`
 
 +   递归的看
 
 +   优点：自动更新
 
-### 这些库容易受到漏洞的影响吗？
+## 这些库容易受到漏洞的影响吗？
 
 ![](img/70c856c9e86c58a50206dea7c4f97285.png)
 
@@ -448,7 +394,7 @@ CWE：一类漏洞weakness
 
 以软件包做分析：太粗粒度了，有误报率
 
-比如我用了log4j的包，但是我没有用他的类，其实我是没有被攻击的
+比如我用了`log4j`的包，但是我没有用他的类，其实我是没有被攻击的
 
 ![](img/bb2a9e242b5956f56da179b0b52be717.png)
 
@@ -462,7 +408,7 @@ CWE：一类漏洞weakness
 
 动态可触发足够精确，但是比较难，复杂
 
-### 如何防御漏洞？
+## 如何防御漏洞？
 
 ![](img/5bb5e7000fa22bdbf9283d20d1fb24d9.png)
 
@@ -554,7 +500,7 @@ WebAssembly
 
 ![](img/cf3c885901a2434884271ee167360de0.png)
 
-![](img/a718f340c21a7136ecc90f2e7e9ed738.png)
+![](img/a718f340c21a7136ecc90f2e7ed738.png)
 
 ## Common concepts
 
@@ -574,7 +520,7 @@ WebAssembly
 
 +   一个组件被其他组件攻击的所有方法的集合
 
-+   可能**来自上层、同层和底层**
++   可能来自上层、同层和底层
 
 +   可攻击面越小越好
 
@@ -586,7 +532,7 @@ WebAssembly
 
 ![](img/0ca4896427a053618d7b0eda9348560b.png)
 
-http://zerodium.com/program.html
+`http://zerodium.com/program.html`
 
 对漏洞明码标价网站
 
@@ -624,7 +570,7 @@ http://zerodium.com/program.html
 
 ![](img/14c6c9e5e1a7021f8806ab82856ee991.png)
 
-+   cred包含uid：credential
++   `cred`包含`uid`：credential
 
 ![](img/ba992ab086ac79aee611ce01c930bc6f.png)
 
@@ -646,17 +592,17 @@ http://zerodium.com/program.html
 
 ![](img/dee82e4ad59bc5119a02cb4d1b043361.png)
 
-#### **SetUID**
+#### `SetUID`
 
 ![](img/d80ee898ead99b474943f1e9296ccae2.png)
 
-我们会发现passwd是不需要root身份的，我们使用setuid去进行操作的，执行的时候是root状态；password代码逻辑保证只能修改自己的密码
+我们会发现`passwd`是不需要root身份的，我们使用`setuid`去进行操作的，执行的时候是root状态；password代码逻辑保证只能修改自己的密码
 
 ![](img/a7cae2eea43f1a98c4900a84b7545408.png)
 
 权限远超必要
 
-#### **Capabilities**
+#### `Capabilities`
 
 ![](img/09945223fe26bec636f9b9dd281057a7.png)
 
@@ -668,25 +614,25 @@ http://zerodium.com/program.html
 
 ![](img/1a62268f1bc5f82cbbe923f784e5eced.png)
 
-按bit存在cred里
+按bit存在`cred`里
 
 ![](img/40d9864fd06592778957d9c006234ea8.png)
 
 > 进行权限检查
 
-Cap_SYS_RAWIO
+`Cap_SYS_RAWIO`
 
 ![](img/5e31f0536c5fdcb3a1d0d30543059fac.png)
 
 ![](img/51ece4fcd84dc4cd70478db0014c6e34.png)
 
-拆分的不均匀，CAP_SYS_ADMIN占大多数，只需要几个capabilities就可以模仿root
+拆分的不均匀，`CAP_SYS_ADMIN`占大多数，只需要几个capabilities就可以模仿root
 
 ![](img/7b3bc12ba1eb71517c0fb884478b1d28.png)
 
 权限检查的冗余、缺失、不一致
 
-ioctl：io control；系统调用可以调用
+`ioctl`：io control；系统调用可以调用
 
 ![](img/a8b206319f26dcabd01d883dce8ce15d.png)
 
@@ -768,11 +714,11 @@ ACL和Capabilities的优缺点，大部分系统都用了
 
 AppArmor和LSM，冲突，怎么兼容
 
-一开始是各自都有func
+一开始是各自都有`func`
 
 后面就用函数指针，指向函数
 
-固定代码换成函数指针：这种称之为Hooks
+固定代码换成函数指针：这种称之为`Hooks`
 
 ![](img/33d13bef34c35e3db482d99f98b084c6.png)
 
@@ -784,6 +730,8 @@ AppArmor和LSM，冲突，怎么兼容
 
 一组的函数指针
 
+
+
 ![](img/aa35a6c5648828a8b4db015a5bf7253b.png)
 
 检查Policy Engine
@@ -792,9 +740,8 @@ AppArmor和LSM，冲突，怎么兼容
 
 Policy Overview
 
-+   TE
-
-+   RBAC
++ TE
++ RBAC
 
 ![](img/023f3cd27e9027d45af7c308761784e5.png)
 
@@ -808,7 +755,7 @@ Policy Overview
 
 rule太多，容易冲突
 
-## Our works
+# 4 Our works
 
 ![](img/9455fe9c822a86f067e61b1a3b9227c6.png)
 
@@ -816,7 +763,7 @@ rule太多，容易冲突
 
 给一个进程改名字
 
-+   可以bypass
++ 可以bypass
 
 ![](img/b01c631d0c90d0e4655bff685ce7e79e.png)
 
@@ -854,11 +801,9 @@ What can the attacker do？
 
 ![](img/a595233e2f13bbcca830cad9bc7e882d.png)
 
-+   Lab：国家实验室
-
-+   Shack：硬件
-
-+   Hack：软件
++ Lab：国家实验室
++ Shack：硬件
++ Hack：软件
 
 > 一般Lab防不住
 
@@ -876,11 +821,9 @@ What can the attacker do？
 
 三种进攻方法
 
-+   代码注入：直接执行root_access
-
-+   代码重用：改变控制流
-
-+   非控制数据攻击：修改信号
++ 代码注入：直接执行`root_access`
++ 代码重用：改变控制流
++ 非控制数据攻击：修改信号
 
 ### 内核注入攻击
 
@@ -888,7 +831,7 @@ What can the attacker do？
 
 ![](img/1b2bd1a9ab1b55033d94634722ba98b4.png)
 
-SMEP Intel 和 PXN ARM防止了jump-to-user攻击
+SMEP Intel 和 PXN ARM防止了`jump-to-user`攻击
 
 ![](img/af701edc0ef5f5708c4790cf5f7907af.png)
 
@@ -896,7 +839,7 @@ SMEP Intel 和 PXN ARM防止了jump-to-user攻击
 
 ![](img/4ba090c6011227db252f9fd1d9b884c7.png)
 
-#### 例子 ret2usr
+#### 例子 `ret2usr`
 
 ![](img/163578d7544c24e4a00f5e53929b302c.png)
 
@@ -916,29 +859,29 @@ SMEP Intel 和 PXN ARM防止了jump-to-user攻击
 
 ![](img/3a3b410b295c0f1a11c730e711a08a5e.png)
 
-拼接代码片段，这叫做gadget
+拼接代码片段，这叫做`gadget`
 
-+   改变返回地址，ROP攻击，Return-oriented programming
++ 改变返回地址，ROP攻击，Return-oriented programming
 
 ![](img/26a32e58d356cba5a4c84cf509772773.png)
 
-+   改变函数指针，JOP攻击，Jump-oriented programming
++ 改变函数指针，JOP攻击，Jump-oriented programming
 
 ![](img/be658d74e215a104c5df13c1fb5f1699.png)
 
-知道SP，知道task_struct，就可以知道jid，uid
+知道`SP`，知道`task_struct`，就可以知道`jid`，`uid`
 
 ![](img/405e0a504af27024f09e5e102d0d282f.png)
 
-Canary：检查预警
+`Canary`：检查预警
 
-+   canary值暴露了，容易被绕过
++ `canary`值暴露了，容易被绕过
 
 Shadow Stack的基本思想是在程序执行函数调用和返回时，使用一个额外的栈来保存函数调用和返回地址，以便在后续需要返回时使用。与传统的栈不同，Shadow Stack是由硬件或者软件实现的，而不是由程序自己维护的。
 
 Shadow Stack的实现方式是通过在程序堆栈的基础上增加一个额外的栈，用于保存函数调用和返回地址。每次进行函数调用或者返回时，程序会将当前的函数调用和返回地址保存到Shadow Stack中，并在后续需要返回时从Shadow Stack中获取保存的返回地址，从而保证代码执行的正确性和安全性。
 
-+   问题有可能我连你这个影子栈也改，所以如何防护保护这个影子栈很重要
++ 问题有可能我连你这个影子栈也改，所以如何防护保护这个影子栈很重要
 
 ![](img/602e9658825131f5b8bebaa630915a6c.png)
 
@@ -968,11 +911,10 @@ CFI技术的基本思想是在程序的控制流中插入特殊的指令或者�
 
 给一个签名
 
-用bootloader**验证**
+用bootloader验证
 
-+   秘钥签名
-
-+   公钥烧到rom里，公钥验证
++ 秘钥签名
++ 公钥烧到rom里，公钥验证
 
 内核量级不大
 
@@ -984,21 +926,14 @@ CFI技术的基本思想是在程序的控制流中插入特殊的指令或者�
 
 ![](img/d41395c1eea4682961869fc5e0aadcab.png)
 
-+   Boot loader 去验证
-
-+   避免BL会升级，分成PBL和SBL，PBL写死不会变
-
-+   安卓的kernel image 100M
-
-+   System image取决于厂商，会挺大，有很多垃圾app
-
-+   这么大，如何有效率的验证？
-
-+   Merkle tree用于验证
-
-+   只需要验证root，不需要验证其他的
-
-+   dm-verify：google发明的验证方法
++ Boot loader 去验证
++ 避免BL会升级，分成PBL和SBL，PBL写死不会变
++ 安卓的kernel image 100M
++ System image取决于厂商，会挺大，有很多垃圾app
++ 这么大，如何有效率的验证？
++ Merkle tree用于验证
++ 只需要验证`root`，不需要验证其他的
++ `dm-verify`：google发明的验证方法
 
 ## OS protection principles
 
@@ -1008,11 +943,11 @@ Complete mediation：所有的都需要被检查，reference monitor就是遵循
 
 ![](img/fd8e545bbed4a311fcdfbde38cb78a0e.png)
 
-+   Trusted path：唯一的获得正确的信息的路径
++ Trusted path：唯一的获得正确的信息的路径
 
 ![](img/247ea8dadb6ea72f460da86d1637a9df.png)
 
-+   分层
++ 分层
 
 ![](img/4b6d6b602766cda31f22503512d1db32.png)
 
@@ -1020,31 +955,27 @@ Complete mediation：所有的都需要被检查，reference monitor就是遵循
 
 ![](img/deb37b7fcd14af6a921b639955d15d1c.png)
 
-### TZ-RKP
+### `TZ-RKP`
 
 ![](img/446a80aab86b0aba9a114ca510f50bce.png)
 
 ![](img/932548658a4d80054a0e315c1e0cf807.png)
 
-支持trustzone，就分成了两块隔离环境
+支持`trustzone`，就分成了两块隔离环境
 
-+   Secure world
-
-+   Normal world
-
-+   linux跑在normal world，因为linux有很多问题
++ Secure world
++ Normal world
++ linux跑在normal world，因为linux有很多问题
 
 ![](img/867bafa82211fdeee3251a61fcb6761d.png)
 
 页表还是在normal，但是操作都在secure world上操作，你如果去进行操作需要去secure world上操作，会进行一些检查
 
-+   TrustZone world切换太慢，影响性能
++ TrustZone world切换太慢，影响性能
++ 增加了TrustZone的可攻击面
++ RKP放在了TrustZone里
 
-+   增加了TrustZone的可攻击面
-
-+   RKP放在了TrustZone里
-
-### SKEE
+### `SKEE`
 
 ![](img/bf5c5e61198a24a96508a0ecab0f907e.png)
 
@@ -1056,19 +987,16 @@ Complete mediation：所有的都需要被检查，reference monitor就是遵循
 
 ![](img/a314064967c3a452bb2e5f057c6430a0.png)
 
-### RegVault
+### `RegVault`
 
 ![](img/17e5d5129f7d6af43fe8ff340e41b27c.png)
 
 ![](img/347a4404cdeedbc9448c487522855aea.png)
 
-+   敏感数据和其他数据混杂存储，无法隔离保护
-
-+   物理分离
-
-+   逻辑分离：加密
-
-+   硬件加密
++ 敏感数据和其他数据混杂存储，无法隔离保护
++ 物理分离
++ 逻辑分离：加密
++ 硬件加密
 
 ![](img/2b96a670b0fc90fae931f9cc37f41b5e.png)
 

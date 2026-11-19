@@ -1,8 +1,9 @@
+
 # 01.14-Adobe 推出新款生成式 AI 工具，可一键批量编辑 1 万张图像
 
-> 来源：[https://agijuejin.feishu.cn/docx/IZyEdmihAoX6X6xV1cucrj8Qnjc](https://agijuejin.feishu.cn/docx/IZyEdmihAoX6X6xV1cucrj8Qnjc)
+## AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 14 日)
 
-# AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 14 日)
+> 来源：[https://agijuejin.feishu.cn/docx/IZyEdmihAoX6X6xV1cucrj8Qnjc](https://agijuejin.feishu.cn/docx/IZyEdmihAoX6X6xV1cucrj8Qnjc)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -17,8 +18,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/824/432.htm)
 ![](img/582f4edf1a7a60035275f0304d2e3749.png)
 
 2025 年 1 月 13 日，Adobe 推出一系列生成式 AI 工具，包括‘Firefly Bulk Create’可批量调整图像尺寸、替换背景等，最多处理 10000 张图像。该工具为测试版，有去除背景、调整尺寸等功能。未来还将推出新开发者 API，本月推出数字头像测试版。但批量操作成本较高，按使用量收费。
-
-## 🌟 技术突破
 
 ### 💡 英伟达发布 6.3 万亿 Token 大型 AI 训练数据库 Nemotron-CC
 

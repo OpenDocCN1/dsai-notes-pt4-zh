@@ -1,8 +1,9 @@
+
 # 2023-07-13【民生银行】王建宇：AIGC可提高融资效率 需防范过度依赖风险
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Kf1kdYeodoqdJoxeAZScE0HTnch](https://xuqiwei1986.feishu.cn/docx/Kf1kdYeodoqdJoxeAZScE0HTnch)
+> 来源：[`https://xuqiwei1986.feishu.cn/docx/Kf1kdYeodoqdJoxeAZScE0HTnch`](https://xuqiwei1986.feishu.cn/docx/Kf1kdYeodoqdJoxeAZScE0HTnch)
 
-引用https://baijiahao.baidu.com/s?id=1771265748280471360&wfr=spider&for=pc
+引用`https://baijiahao.baidu.com/s?id=1771265748280471360&wfr=spider&for=pc`
 
 中国民生银行数据管理部副总经理王建宇。
 

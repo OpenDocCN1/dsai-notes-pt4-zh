@@ -1,3 +1,4 @@
+
 # 全网最详细的 AI 视频品牌宣传片创作教程
 
 > 来源：[https://yunyinghui.feishu.cn/docx/BprgdJ5nIo7llHxNnWGcRZlLnMh](https://yunyinghui.feishu.cn/docx/BprgdJ5nIo7llHxNnWGcRZlLnMh)
@@ -16,7 +17,7 @@
 
 下面，就由我将这套工作流分享给大家。
 
-# 步骤一：AI 生成创意脚本
+## 步骤一：AI 生成创意脚本
 
 文本生成类的 AIGC 工具有很多选择，比如 Deepseek、ChatGPT、Claude、Kimi、Grok 等等。
 
@@ -26,7 +27,7 @@
 
 所以，理所当然的，这条视频的创意脚本使用的是 Grok 3 模型。
 
-地址在这： [https://x.ai/](https://link.uisdc.com/?redirect=https%3A%2F%2Fx.ai%2F)
+地址在这：[https://x.ai/](https://link.uisdc.com/?redirect=https%3A%2F%2Fx.ai%2F)
 
 作为地球上“最聪明的”人工智能，在与它对话时，你不需要写多么复杂的提示词，只需要描述清楚你的需求以及它的任务即可。
 
@@ -78,13 +79,13 @@ Grok 3 输出的分镜内容其实没什么特别的亮点，它所输出的脚�
 
 如果需要我推荐的话，Deepseek、ChatGPT、Claude、Grok 都是不错的选择。
 
-# 步骤二：AI 生成图像提示词
+## 步骤二：AI 生成图像提示词
 
 AI 大模型能生成创意脚本，自然也能生成 Prompt（提示词）。相比于处理复杂的创意脚本任务，AI 根据分镜描述或图片内容反推出 Prompt 的任务则会更简单些。
 
 推荐使用 Kimi 来生成提示词，没别的原因。使用顺手，回复速度快。
 
-地址： https://kimi.moonshot.cn/
+地址：https://kimi.moonshot.cn/
 
 比如，使用 Grok 的 DeepSearch 功能，给我一顿输出，但我其实只需要中英提示词。
 
@@ -158,22 +159,21 @@ low-angle close-up view focusing on the rear of the yellow Xiaomi SU7 Ultra， d
 
 效果非常不错，生成的效果图与我上传的图像内容基本一致，并且还保持了风格的一致性。
 
-所以，当你重复上面的动作，就可以将分镜脚本全部转换为图像提示词。（这部分写了 1500 字，先点个赞再往下看吧，感谢！)
+所以，当你重复上面的动作，就可以将分镜脚本全部转换为图像提示词。（这部分写了 1500 字，先点个赞再往下看吧，感谢！）
 
-# 步骤三：AI 生成分镜图像
+## 步骤三：AI 生成分镜图像
 
 生成图像的 AIGC 工具有很多，比如 Midjourney、StableDiffusion、即梦 AI 等。
 
 但如果你需要控制图像中的主体，那选择只有一个，StableDiffusion。
 
-## **1. 前期构思**
+### 1. 前期构思
 
 先来思考下，我们这条创意短片的主体是什么？
 
 小米 SU7 Ultra 和📕吉祥物（薯队长）。
 
 如果你将小米 SU7 Ultra 的分镜提示词发送给 Midjourney，它能给你生成的效果是这样。
-
 
 像吗？只有颜色像，外观细节都不是小米 SU7 Ultra。
 
@@ -201,13 +201,13 @@ LoRA（Low-Rank Adaptation）模型是一种轻量化的深度学习微调技术
 
 在哩布 AI 上，就有模型作者基于小米 SU7 Ultra 的图像数据，训练了 Lora 模型。
 
-模型地址： [https://www.liblib.art/modelinfo/2cc6ac1a404d43b1ad3798ef0](https://link.uisdc.com/?redirect=https%3A%2F%2Fwww.liblib.art%2Fmodelinfo%2F2cc6ac1a404d43b1ad3798ef0186acec%3Ffrom%3Dsd%26amp%3BversionUuid%3Dbeda18bd08974a3faf6e3e4a6abf1d8b)186acec?from=sd&versionUuid=beda18bd08974a3faf6e3e4a6abf1d8b
+模型地址：[https://www.liblib.art/modelinfo/2cc6ac1a404d43b1ad3798ef0](https://link.uisdc.com/?redirect=https%3A%2F%2Fwww.liblib.art%2Fmodelinfo%2F2cc6ac1a404d43b1ad3798ef0186acec%3Ffrom%3Dsd%26amp%3BversionUuid%3Dbeda18bd08974a3faf6e3e4a6abf1d8b)186acec?from=sd&versionUuid=beda18bd08974a3faf6e3e4a6abf1d8b
 
 ![](img/ea1eebab8b9cdbb4cd7e4d17aa33534a.png)
 
 同样，📕吉祥物（薯队长）也有 Lora 模型。
 
-模型地址： [https://www.liblib.art/modelinfo/af0ed4695ca24a5f89f5818d3](https://link.uisdc.com/?redirect=https%3A%2F%2Fwww.liblib.art%2Fmodelinfo%2Faf0ed4695ca24a5f89f5818d3c6dad48%3Ffrom%3Dsd%26amp%3BversionUuid%3D18d2229333ca44ad9a86c3344b40024a)c6dad48?from=sd&versionUuid=18d2229333ca44ad9a86c3344b40024a
+模型地址：[https://www.liblib.art/modelinfo/af0ed4695ca24a5f89f5818d3](https://link.uisdc.com/?redirect=https%3A%2F%2Fwww.liblib.art%2Fmodelinfo%2Faf0ed4695ca24a5f89f5818d3c6dad48%3Ffrom%3Dsd%26amp%3BversionUuid%3D18d2229333ca44ad9a86c3344b40024a)c6dad48?from=sd&versionUuid=18d2229333ca44ad9a86c3344b40024a
 
 ![](img/93403a40ac8249df8d6a4ebb3714f329.png)
 
@@ -217,12 +217,11 @@ LoRA（Low-Rank Adaptation）模型是一种轻量化的深度学习微调技术
 
 当理解上面的内容后，接下来的生图步骤就会非常简单，三个字“文生图”。
 
-## **2. 模型设置**
+### 2. 模型设置
 
 在这条视频中，我总共调用了 5 种不同的 Lora 模型。
 
 首先是主体 Lora：小米 SU7 Ultra 和薯队长。
-
 
 其次是场景 Lora：冬天场景和春天场景。
 
@@ -236,21 +235,20 @@ LoRA（Low-Rank Adaptation）模型是一种轻量化的深度学习微调技术
 
 ![](img/c918da6b71545d6f20b7296366311fa7.png)
 
-## **3. 实操环节**
+### 3. 实操环节
 
 生图的流程基本是固定的，只不过需要在不同的分镜中，切换合适的 Lora 模型控图，参数设置如下：
 
-1.  大模型：F.1-dev-fp8
-
-1.  LoRA 模型：阿容容_F.1 大雪、SU7 Ultra 汽车主体控制、Flux Texture 质感增强器（权重参考作者推荐的数值）
-
-1.  基础参数：采样方法（Euler）、迭代步数（30）
-
-1.  尺寸设置：1536*864
+1. 大模型：F.1-dev-fp8
+1. LoRA 模型：阿容容_F.1 大雪、SU7 Ultra 汽车主体控制、Flux Texture 质感增强器（权重参考作者推荐的数值）
+1. 基础参数：采样方法（Euler）、迭代步数（30）
+1. 尺寸设置：1536*864
 
 小技巧：测试提示词生图时，不要开启高清修复。当提示词稳定后，批量生图，然后挑选一张你所满意的图片，固定 Seed 值进行高清修复。
 
 ![](img/3ac1f0b32adb594242041b89d05cb877.png)
+
+
 
 案例提示词：a bright yellow sports car speeding along a clear winter highway with a majestic snow-capped mountain range in the distance， the road's asphalt surface is well-maintained and clearly visible， showing distinct lane markings and a smooth texture despite the cold weather， the car's modern and aerodynamic design cutting through the crisp winter air， sharp LED headlights illuminating the path ahead， the vehicle kicking up a light spray of snow from its tires as it moves， snowflakes gently falling and swirling around the car， the surrounding landscape is a mix of snow-covered fields and patches of frost on the ground， with leafless trees standing tall along the roadside， their branches dusted with fresh snow， the sky is a clear， bright blue with a few wispy clouds， creating a striking contrast with the white snow and yellow car， high quality， ultra-detailed， 8k resolution， trending on ArtStation， cinematic composition， vibrant yet cool color palette， dramatic winter lighting， capturing the essence of a winter driving adventure with freedom and excitement。
 
@@ -258,7 +256,7 @@ LoRA（Low-Rank Adaptation）模型是一种轻量化的深度学习微调技术
 
 再来展示一个春季场景的分镜。
 
-LoRA 模型：指鹿 AI_花开世界、SU7 Ultra 汽车主体控制、Flux Texture 质感增强器
+`LoRA` 模型：`指鹿 AI_花开世界`、`SU7 Ultra 汽车主体控制`、`Flux Texture 质感增强器`
 
 ![](img/43984e404983a45dc21a419286e0e0b1.png)
 
@@ -270,29 +268,29 @@ LoRA 模型：指鹿 AI_花开世界、SU7 Ultra 汽车主体控制、Flux Textu
 
 但要注意，提示词生成和图片生成最好同步进行，抽象点理解就是“左手生成提示词，右手生成图片。”
 
-在此处强调下，这些 Lora 模型仅供学习参考，大家不要随便拿去商用了。
+在此处强调下，这些 `LoRA` 模型仅供学习参考，大家不要随便拿去商用了。
 
 # 步骤四：AI 图像修复
 
 AI 直出图像，绝大部分情况下，都需要后期修复才可以使用（特别是涉及到商业场景）。
 
-而修图的工具选择，我推荐使用 Photoshop 和 Midjourney 这两款软件结合。
+而修图的工具选择，我推荐使用 `Photoshop` 和 `Midjourney` 这两款软件结合。
 
-## **修图方法一：简单场景**
+## 修图方法一：简单场景
 
 这张分镜的描述是“小米 SU7 Ultra 在城市道路上行驶，城市建筑墙上有一张巨大的海报。”
 
-AI 只能给你生成不错的场景，但海报的内容却无法精准的生成。
+`AI` 只能给你生成不错的场景，但海报的内容却无法精准的生成。
 
-ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop 是最好的选择。
+`ComfyUI` 或许可以，但工作流会比较复杂。这时，使用 `Photoshop` 是最好的选择。
 
 ![](img/bb00ee37215f92410823e9f8d7efa029.png)
 
-关于怎么使用 Photoshop 修图我就不讲了，可以参考我在 PS 中修图的图层。
+关于怎么使用 `Photoshop` 修图我就不讲了，可以参考我在 `PS` 中修图的图层。
 
 ![](img/708ca3cb667ab5624d3b7f4b74d1bc72.png)
 
-## **修图方法二：复杂场景**
+## 修图方法二：复杂场景
 
 各位花个 30s 时间，思考下，这张图如何实现。
 
@@ -300,10 +298,9 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 来拆解下我的步骤。
 
-最开始，我是想用 StableDiffusion 直接生成，然后将画面描述丢给 Kimi 写提示词，但无论如何调整提示词，生图的效果始终没有达到我的预期，如图所示：
+最开始，我是想用 `StableDiffusion` 直接生成，然后将画面描述丢给 `Kimi` 写提示词，但无论如何调整提示词，生图的效果始终没有达到我的预期，如图所示：
 
-
-出现的问题是：“飞机底下挂一张巨大的海报，并且出现在有小米 SU7 Ultra 的场景中，背景是上海东方明珠塔附近......”. 想要的画面元素太多，导致 AI 无法把握重点，就会出现上述错乱的情况。
+出现的问题是：“飞机底下挂一张巨大的海报，并且出现在有小米 SU7 Ultra 的场景中，背景是上海东方明珠塔附近......”。想要的画面元素太多，导致 `AI` 无法把握重点，就会出现上述错乱的情况。
 
 于是，我单独生成了“飞机底下挂一张巨大的海报”这一个画面。
 
@@ -311,12 +308,11 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 ![](img/364135c98395b9adb53bae19fe7dc6ae.png)
 
-然后使用 Photoshop，抠图、拼贴、海报合成，就搞定了。
-
+然后使用 `Photoshop`，抠图、拼贴、海报合成，就搞定了。
 
 下面就是小米 SU7 Ultra 和东方明珠塔场景了，选定一张角度合适的图，然后将错乱的元素清楚掉。
 
-注：如果你是正版 Photoshop，创成式填充会非常方便你修图。
+注：如果你是正版 `Photoshop`，创成式填充会非常方便你修图。
 
 ![](img/c567035a07279a7ba4e4d50ae611e806.png)
 
@@ -328,9 +324,9 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 那么，我们要做的就是，扩图。
 
-扩图的方法有很多，但本案例，我只说 Midjourney。
+扩图的方法有很多，但本案例，我只说 `Midjourney`。
 
-操作很简单，在 Midjourney 的“图像编辑器”功能中，上传图片，用 SatbleDiffusion 生图的那组提示词，调整下需要扩图的位置即可。
+操作很简单，在 `Midjourney` 的“图像编辑器”功能中，上传图片，用 `StableDiffusion` 生图的那组提示词，调整下需要扩图的位置即可。
 
 ![](img/c20cf29b5e8a3d3b4001867fa2d29a40.png)
 
@@ -340,17 +336,17 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 但还有个问题，我们的城市场景效果是：“城市建筑上铺满了花、草”。
 
-而 Midjourney 并不能还原 StableDiffusion 生成的效果，所以，扩展的图还需要在 StableDiffusion 中重新生成一下。
+而 `Midjourney` 并不能还原 `StableDiffusion` 生成的效果，所以，扩展的图还需要在 `StableDiffusion` 中重新生成一下。
 
 那么这一步的操作是：
 
-选定一张 Midjourney 扩展的图，并在 PS 中将不需要的元素清除。
+选定一张 `Midjourney` 扩展的图，并在 `PS` 中将不需要的元素清除。
 
 ![](img/583dd90807a9c5e6ae386175f176ecf9.png)
 
-然后在 StableDiffusion 中，使用 Controlnet 插件的 Canny 模型控图。
+然后在 `StableDiffusion` 中，使用 `Controlnet` 插件的 `Canny` 模型控图。
 
-注意，在 Controlnet 中，控制生图效果的参数是“控制权重、起始步数、完结步数”。
+注意，在 `Controlnet` 中，控制生图效果的参数是“`控制权重`、`起始步数`、`完结步数`”。
 
 ![](img/f210f8b70acfb41c9bb2774fb47f4eb1.png)
 
@@ -358,7 +354,7 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 ![](img/9fdffa612a893cca55ac761f9cd6d0ce.png)
 
-最后，Photoshop 合成，这张分镜就搞定了。
+最后，`Photoshop` 合成，这张分镜就搞定了。
 
 ![](img/ff45abc77a48863fe7d3797d52923378.png)
 
@@ -366,19 +362,19 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 # 步骤五：视频后期合成
 
-目前市面上比较好的 AI 视频模型有可灵 AI、即梦 AI、海螺 AI、Vidu 等。但在视频生成的稳定性上，可灵 AI 的表现会更强些。所以，本条片子的视频生成部分，交给可灵 AI 来完成。
+目前市面上比较好的 AI 视频模型有 `可灵 AI`、`即梦 AI`、`海螺 AI`、`Vidu` 等。但在视频生成的稳定性上，`可灵 AI` 的表现会更强些。所以，本条片子的视频生成部分，交给 `可灵 AI` 来完成。
 
 这个步骤，也给大家拆解两个场景，分别是单镜头生成和双镜头（首尾帧）生成。
 
-## **1. 单镜头生成**
+## 1. 单镜头生成
 
-操作步骤：图生视频——选择可灵 1.6 模型——输入提示词——点击生成。
+操作步骤：图生视频——选择 `可灵 1.6` 模型——输入提示词——点击生成。
 
 ![](img/882441515edf9a7fc082124c954f3cd0.png)
 
-视频生成的重点在提示词的描述上，在做这条视频时，我是通过 Grok 来写 AI 视频提示词的。
+视频生成的重点在提示词的描述上，在做这条视频时，我是通过 `Grok` 来写 AI 视频提示词的。
 
-而前不久，可灵上线了 DeepSeek 提示词助手，你可以在其中描述你想表现的画面，如“一架飞机拖着一张巨大的海报飞向镜头，镜头画面最终被海报填满。” 它就会为你生成相应的提示词。
+而前不久，`可灵` 上线了 `DeepSeek` 提示词助手，你可以在其中描述你想表现的画面，如“一架飞机拖着一张巨大的海报飞向镜头，镜头画面最终被海报填满。” 它就会为你生成相应的提示词。
 
 ![](img/a19c81a93a11da5264260bf413147cc1.png)
 
@@ -386,14 +382,11 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 案例提示词：“固定镜头，一架飞机飞向镜头，同时拖着一面大横幅。随着飞机靠近，相机逐渐放大聚焦于横幅，横幅在画面中变大，直到完全填满屏幕。”
 
-
 案例提示词：“固定镜头，一辆亮黄色跑车高速行驶，从近处开始逐渐远去。”
-
 
 案例提示词：“低角度跟踪拍摄一辆亮黄色小米品牌跑车，带有黑色条纹和后翼，车头标有 01 号，行驶在雪山路上。镜头跟随，捕捉跑车高速行驶，车轮扬起雪花和冰块。背景是雪覆盖的山脉和松树，蓝天清澈，阳光明亮，雪地反射光线。”
 
-
-## **2. 首尾帧生成**
+## 2. 首尾帧生成
 
 再来讲下首尾帧生成，看下最终所实现的效果。
 
@@ -405,19 +398,17 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 首帧图好解决，按照前面生成图像步骤，就可以得到这张冬季的分镜图。
 
-
 那春季场景如何解决呢？
 
 按照前面的思路，方式有两种：
 
-① Kimi 生成提示词，StableDiffusion 生成春季场景图。
+① `Kimi` 生成提示词，`StableDiffusion` 生成春季场景图。
 
 但......你在提示词中想尽一切办法将两张图的场景描述保持一致，只改变风格描述的提示词，所生成的结果很可能与这张图片类似。
 
 而在 AI 视频生成中，如果首尾帧两张图的场景区别太大，生成的效果一般不会让你满意。
 
-
-② 使用 Controlnet 固定冬季分镜图，不改变画面结构，只改变风格。
+② 使用 `Controlnet` 固定冬季分镜图，不改变画面结构，只改变风格。
 
 但首尾帧两张图的主体（车）位置、场景构图都一致的话，如何才能让车和场景切换更加自然呢？
 
@@ -425,7 +416,7 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 以上两种方法，其实都不好解决这一问题。
 
-那么换个思路，我先让冬季场景分镜中的车动起来，然后等车走一段路后，截取那帧图，放到 StableDiffusion 中重绘场景。
+那么换个思路，我先让冬季场景分镜中的车动起来，然后等车走一段路后，截取那帧图，放到 `StableDiffusion` 中重绘场景。
 
 具体操作：
 
@@ -439,8 +430,7 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 然后，再从生成的视频中，截取最后一帧图。
 
-
-再放在 StableDiffusion 的 Controlnet 中，通过 Canny 模型控制构图，设置春季 Lora 改变风格。
+再放在 `StableDiffusion` 的 `Controlnet` 中，通过 `Canny` 模型控制构图，设置春季 `LoRA` 改变风格。
 
 ![](img/5d19d340fef077ef36b162c6c74f5edc.png)
 
@@ -450,23 +440,21 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 但细心的你可能会发现，我前面所展示的案例，冬春场景切换的视频镜头，是从冬天高架桥转换到春天高架桥（出现了两个高架桥）。
 
-而并不像冬天单镜头视频那样，背景是保持不变（只有一个高架桥），其主要原因还是 AI 的随机性，如果你需要这样的效果，得多刷图。
+而并不像冬天单镜头视频那样，背景是保持不变（只有一个高架桥），其主要原因还是 `AI` 的随机性，如果你需要这样的效果，得多刷图。
 
 而我选择这段分镜视频是因为，这条随机性生成的视频结果我很喜欢，挺有创意.......
 
 好了，视频分镜生成的步骤我们也拆解完了。
 
-###
-
-到这一步，基本上完成这条短片 80%的工作了。当然，如果你准备使用 AE 等动效工具做片、转场等效果，可能还需要花点时间，本条视频轻度使用 AE，过程就不说了，放张图意思下。
+到这一步，基本上完成这条短片 80%的工作了。当然，如果你准备使用 `AE` 等动效工具做片、转场等效果，可能还需要花点时间，本条视频轻度使用 `AE`，过程就不说了，放张图意思下。
 
 ![](img/f92cade7616c6755ffe929b03f5580e9.png)
 
-这个步骤主要说下剪映的 AI 功能。
+这个步骤主要说下 `剪映` 的 AI 功能。
 
 通常，在使用 AI 视频生成工具时，生成的视频画质一般不会太高（通常是 1080P），如果你想要生成超清画质的视频，所消耗的生成点数比较多，或者说，贵！而 AI 的随机性，也会导致我们无法一次就能完成生成任务。
 
-所以，一般在生成视频时，建议大家用小分辨率的生成品质来刷视频，比如可灵的标准模式。
+所以，一般在生成视频时，建议大家用小分辨率的生成品质来刷视频，比如 `可灵` 的标准模式。
 
 ![](img/76bc685114ac768eee32cba964458811.png)
 
@@ -474,7 +462,7 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 那么，如何解决这一问题呢？市面上有不少视频修复、放大的工具。
 
-[但本文](https://www.uisdc.com/topic/%e5%89%aa%e8%be%91)只推荐剪映内置的功能，方便好用。所以，各位在 剪辑 完成后，请将“超清画质、视频降噪、AI 补帧”都用上。（不过，这些需要会员才能用）
+[但本文](https://www.uisdc.com/topic/%e5%89%aa%e8%be%91)只推荐 `剪映` 内置的功能，方便好用。所以，各位在 `剪辑` 完成后，请将“超清画质、视频降噪、AI 补帧”都用上。（不过，这些需要会员才能用）
 
 ![](img/473504186ac51fa37fb9a25ace4a3d5e.png)
 
@@ -490,9 +478,9 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 ![](img/657cf4506dec34783ff4fa1f3df43d1c.png)
 
-那么标题文字，我们可以使用即梦 AI 来做，即梦的 2.1 版本模型可以生成中文字体。
+那么标题文字，我们可以使用 `即梦 AI` 来做，`即梦` 的 2.1 版本模型可以生成中文字体。
 
-创作前，依旧是用 AI 来帮我们写提示词。即梦 AI 最近也上线了 DeepSeek 模型，可以直接在即梦中发送你的需求：“我需要设计标题文字，内容是「春日秀场 薯样年华」，白字黑底。”
+创作前，依旧是用 AI 来帮我们写提示词。`即梦 AI` 最近也上线了 `DeepSeek` 模型，可以直接在 `即梦` 中发送你的需求：“我需要设计标题文字，内容是「春日秀场 薯样年华」，白字黑底。”
 
 ![](img/91af96781071076e8e32a5e2acb5efbe.png)
 
@@ -500,7 +488,7 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 ![](img/0fc2b9153c8af1e7835eabae9ffb93b9.png)
 
-最后，挑选一张你认可的标题设计，使用 Photoshop 等设计排版工具，大功告成。
+最后，挑选一张你认可的标题设计，使用 `Photoshop` 等设计排版工具，大功告成。
 
 ![](img/6f5ce9a4cc24062d8fc53f31ed104ded.png)
 
@@ -510,9 +498,11 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 到此，这篇文章迎来了尾声，给大家分享下我的经验：
 
-创作一条高质量、有创意的 AI 视频，所投入的成本绝不会很低。在分镜（图片、视频）创作上，你可能需要花大量的时间去尝试。虽然 AI 的生产能力很强，但真正能落地使用的内容却很少，因为 AI 的随机性就会导致我们需要不断地调试参数，不断地刷内容，而我们只能尽量的去控制 AI 生成的结果。
+创作一条高质量、有创意的 AI 视频，所投入的成本绝不会很低。在分镜（图片、视频）创作上，你可能需要花大量的时间去尝试。虽然 `AI` 的生产能力很强，但真正能落地使用的内容却很少，因为 `AI` 的随机性就会导致我们需要不断地调试参数，不断地刷内容，而我们只能尽量的去控制 `AI` 生成的结果。
 
-而在 AI 工具的使用成本上，顶级的大模型，如图像模型（Flux）、视频模型（可灵、Vidu 等），基本上需要开通会员才能顺畅的使用，还有 Photoshop、剪映等设计工具，如要使用其中的 AI 功能，也需要付费。
+而在 `AI` 工具的使用成本上，顶级的大模型，如图像模型（`Flux`）、视频模型（`可灵`、`Vidu` 等），基本上需要开通会员才能顺畅的使用，还有 `Photoshop`、`剪映` 等设计工具，如要使用其中的 AI 功能，也需要付费。
+
+
 
 但是，对比传统的视频工作流，这些成本并不算高。
 
@@ -522,28 +512,34 @@ ComfyUI 或许可以，但工作流会比较复杂。这时，使用 Photoshop �
 
 # 学习交流社群
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+## 社群介绍
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+1. 持续关注并更新 AI 的相关资讯动态、研究报告、赚钱案例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-3.**关于文档负责人言川：**优设 AIGC 合伙人、站酷黑 Z 认证作者、被评为优设年度十大作者及 AIGC 领域达人。同时，也是视觉中国签约的资深设计师。目前 AI 教程在全网累计阅读量超过 600 万，现在专注于研究 AIGC 工作流，并致力于让更多的互联网人用 AI 赋能职场，提升个人竞争力。
+2. 已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ `ID：zyg90s`（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
-**关于文档负责人大国**：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
+## 文档负责人
 
-**飞书学习群**
+### 言川
+优设 AIGC 合伙人、站酷黑 Z 认证作者、被评为优设年度十大作者及 AIGC 领域达人。同时，也是视觉中国签约的资深设计师。目前 AI 教程在全网累计阅读量超过 600 万，现在专注于研究 AIGC 工作流，并致力于让更多的互联网人用 AI 赋能职场，提升个人竞争力。
+
+### 大国
+高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
+
+## 飞书学习群
 
 ![](img/5d1a5385d01ccb004aa90d7c5cbacf47.png)
 
-**飞书扫码进群学习**
+## 飞书扫码进群学习
 
-![](img/8188c0c6ac999b159cec6fccaab1791e.png)
+![](img/8188c0c6ac9999b159cec6fccaab1791e.png)
 
-好友（ID：zhangyuguo94s）
+好友（`ID：zhangyuguo94s`）
 
-**扫码加🛰️入🛰️群**
+## 扫码加🛰️入🛰️群
 
 ![](img/34545d64fb8c0aa89551e31b1f158b41.png)
 
-**🛰️扫码加好友**
+## 🛰️扫码加好友
 
-（🛰️ ID：yanchuan-ar）
+（🛰️ `ID：yanchuan-ar`）

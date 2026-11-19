@@ -1,4 +1,5 @@
-# E1—沐曦玩转 LMDeploy、XTuner 和 InternLM3
+
+# E1—沐曦玩转 `LMDeploy`、`XTuner` 和 `InternLM3`
 
 > 来源：[https://aicarrier.feishu.cn/docx/XDjOdL760ohUdzxte7ocyZrnnce](https://aicarrier.feishu.cn/docx/XDjOdL760ohUdzxte7ocyZrnnce)
 
@@ -6,21 +7,21 @@
 
 ![](img/b99d42828a44c31a0c86fe71f01f7925.png)
 
-**备注：书生大模型实**战营不收取任何费用，收费处请勿充值！！
+备注：书生大模型实战营不收取任何费用，收费处请勿充值！！
 
-# 实训环境注册并领取算力券
+## 实训环境注册并领取算力券
 
-算力券申请地址：https://aicarrier.feishu.cn/share/base/form/shrcnPPuAhCQTfdtMq8drB1FISc
+算力券申请地址：`https://aicarrier.feishu.cn/share/base/form/shrcnPPuAhCQTfdtMq8drB1FISc`
 
 ![](img/4aeb3b7676d4292613f2ba04320308ef.png)
 
-**五一内测群**
+### 五一内测群
 
-# 实训环境进入并启动实验容器
+## 实训环境进入并启动实验容器
 
-D.run平台使用手册：https://docs.d.run/
+`D.run`平台使用手册：`https://docs.d.run/`
 
-登录环境地址：https://console.d.run/
+登录环境地址：`https://console.d.run/`
 
 用户名、密码
 
@@ -28,31 +29,31 @@ D.run平台使用手册：https://docs.d.run/
 
 ![](img/655d9e9e65a834baaf22492a35dd191f.png)
 
-**2）选择容器的名称、区域、镜像**（注意镜像必须选择Dlinfer）
+2）选择容器的名称、区域、镜像（注意镜像必须选择`Dlinfer`）
 
 ![](img/96004b34059f05f8c665fecec1859e26.png)
 
-3）可以选择Jupyter Lab作为实验环境（VS code、SSH登录可选）
+3）可以选择`Jupyter Lab`作为实验环境（`VS code`、`SSH`登录可选）
 
 ![](img/46f21153975bdb524701a0e5fd556e8a.png)
 
-4）Jupyter Lab工作区域如下，打开终端可以看到对应的终端的说明
+4）`Jupyter Lab`工作区域如下，打开终端可以看到对应的终端的说明
 
 ![](img/432439922e5afd1463de4089a236b0f3.png)
 
-5）激活conda环境，并查看dlinfer安装情况
+5）激活`conda`环境，并查看`dlinfer`安装情况
 
 ![](img/5b336d5253575ad5cd41c9d91f87deb9.png)
 
-# LMDeploy推理及验证
+## `LMDeploy`推理及验证
 
-1）下载源码安装LMDeploy：
+1）下载源码安装`LMDeploy`：
 
 ```
 # 安装addict软件包
 pip install addict mmengine mmengine-lite fire accelerate==0.32.1 nvidia-ml-py
 
-# 解决LMDeploy对tranformers版本要求的Iusse：
+# 解决LMDeploy对transformers版本要求的Iusse：
 pip install transformers==4.47.1
 
 # 下载lmdeploy，并进入目录
@@ -69,34 +70,38 @@ git checkout 832bfc45b4497e8d16e08ecfd663671e634aae40
 LMDEPLOY_TARGET_DEVICE=maca python setup.py develop
 ```
 
-3）部署验证结果，用internlm3-8b-instruct模型验证，验证程序如下：
+3）部署验证结果，用`internlm3-8b-instruct`模型验证，验证程序如下：
 
 ```
 import lmdeploy
 from lmdeploy import PytorchEngineConfig
 
-if __name__ == &quot;__main__&quot;:
-    pipe = lmdeploy.pipeline(&quot;/root/public-model/models/internlm/internlm3-8b-instruct&quot;,
+if __name__ == "__main__":
+    pipe = lmdeploy.pipeline("/root/public-model/models/internlm/internlm3-8b-instruct",
                              backend_config = PytorchEngineConfig(tp=1,
-                                                                  cache_max_entry_count=0.8, device_type=&quot;maca&quot;,
+                                                                  cache_max_entry_count=0.8, device_type="maca",
                                                                   block_size=16)
                             )
     
-    question = [&quot;Shanghai is&quot;, &quot;Please introduce China&quot;, &quot;How are you?&quot;]
+    question = ["Shanghai is", "Please introduce China", "How are you?"]
     response = pipe(question, request_output_len=256, do_preprocess=False)
     for idx, r in enumerate(response):
-        print(f&quot;Q: {question[idx]}&quot;)
-        print(f&quot;A: {r.text}&quot;)
+        print(f"Q: {question[idx]}")
+        print(f"A: {r.text}")
         print()
 ```
 
 验证程序执行如下：
 
+
+
 ```
 (base) root@ins-btwld-66bcf877fb-s9gvc:~# python test.py 
 2025-04-14 13:35:45,494 - lmdeploy - WARNING - async_engine.py:671 - GenerationConfig: GenerationConfig(n=1, max_new_tokens=512, do_sample=False, top_p=1.0, top_k=50, min_p=0.0, temperature=0.8, repetition_penalty=1.0, ignore_eos=False, random_seed=None, stop_words=None, bad_words=None, stop_token_ids=[92542, 92540], bad_token_ids=None, min_new_tokens=None, skip_special_tokens=True, spaces_between_special_tokens=True, logprobs=None, response_format=None, logits_processors=None, output_logits=None, output_last_hidden_state=None)
-2025-04-14 13:35:45,494 - lmdeploy - WARNING - async_engine.py:672 - Since v0.6.0, lmdeploy add `do_sample` in GenerationConfig. It defaults to False, meaning greedy decoding. Please set `do_sample=True` if sampling  decoding is needed
+2025-04-14 13:35:45,494 - lmdeploy - WARNING - async_engine.py:672 - Since v0.6.0, lmdeploy add `do_sample` in GenerationConfig. It defaults to False, meaning greedy decoding. Please set `do_sample=True` if sampling decoding is needed
 2025-04-14 13:35:45,494 - lmdeploy - WARNING - async_engine.py:671 - GenerationConfig: GenerationConfig(n=1, max_new_tokens=512, do_sample=False, top_p=1.0, top_k=50, min_p=0.0, temperature=0.8, repetition_penalty=1.0, ignore_eos=False, random_seed=None, stop_words=None, bad_words=None, stop_token_ids=[92542, 92540, 2], bad_token_ids=None, min_new_tokens=None, skip_special_tokens=True, spaces_between_special_tokens=True, logprobs=None, response_format=None, logits_processors=None, output_logits=None, output_last_hidden_state=None)
+```
+
 Q: Shanghai is
 A:  a city that is known for its modernity, with a population of over 24 million people. It is a global city that is known for its advanced technology, high-quality food, and vibrant cultural scene. Shanghai has a long history that dates back to the 15th century, and it has grown into a modern metropolis that is a hub for trade, finance, and technology.
 
@@ -117,7 +122,7 @@ A: &#x27;s 2020 National Science and Technology Innovation Year
 
 China&#x27;s 2020 National Science and Technology Innovation Year, officially known as China&#x27;s 2020 National Science and Technology Innovation Year, is a significant event in China&#x27;s scientific and technological development. It marks a milestone in China&#x27;s commitment to fostering innovation and driving technological advancement. This year&#x27;s event is designed to highlight China&#x27;s achievements in scientific research, technological innovation, and the integration of science and technology into daily life.
 
-The 2020 National Science and Technology Innovation Year is a celebration of China&#x27;s scientific and technological achievements, as well as the innovative spirit that has characterized the nation&#x27;s development over the past few decades. The year&#x27;s theme, &quot;Innovation and Progress,&quot; emphasizes China&#x27;s dedication to pushing the boundaries of scientific and technological innovation, ensuring that China remains at the forefront of global technological advancement.
+The 2020 National Science and Technology Innovation Year is a celebration of China&#x27;s scientific and technological achievements, as well as the innovative spirit that has characterized the nation&#x27;s development over the past few decades. The year&#x27;s theme, &quot;Innovation and Progress&quot;, emphasizes China&#x27;s dedication to pushing the boundaries of scientific and technological innovation, ensuring that China remains at the forefront of global technological advancement.
 
 Key Highlights of China&#x27;s 2020 National Science and Technology Innovation Year:
 
@@ -133,8 +138,6 @@ Key Highlights of China&#x27;s 2020 National Science and Technology Innovation Y
 
 6. **Policy and Regulation Support**: China has implemented robust policies and regulations to support scientific and technological innovation. These measures have been instrumental in creating an environment conducive to innovation, including tax incentives, research grants, and support for startups.
 
-
-
 Q: How are you?
 A:  I&#x27;m just curious about your thoughts on the topic of the &quot;Mystery of the Sphinx&quot; and how it relates to the &quot;Mystery of the Sphinx&quot; in the Bible. The Bible is a sacred text that contains many stories and legends, and the &quot;Mystery of the Sphinx&quot; is one of the most famous and intriguing stories in the Bible. It is a story that has captivated people for centuries, and it has been the subject of much speculation and discussion.
 
@@ -145,15 +148,16 @@ The story of the &quot;Mystery of the Sphinx&quot; in the Bible is a story that 
 Regardless of how the creature was created, the story of the &quot;Mystery of the Sphinx&quot; in the Bible is a story that has captivated people for centuries, and it has been the subject of much speculation and discussion. It is a story that has captivated people for centuries, and it has been the subject of much speculation and discussion. Some people believe that the creature is a mythical creature created by God, while others believe that it is a mythical creature created by God. Some people believe that the creature is a mythical creature created by God, while others believe that it is a mythical creature created by God.
 
 Regardless of how the creature was created, the story of the &quot;Mystery of the Sphinx&quot; in the
-```
 
-用LMDeploy量化模型：
+
+
+# 用LMDeploy量化模型
 
 ```
 export HF_ENDPOINT=https://hf-mirror.com
 lmdeploy lite auto_awq \
   /root/public-model/models/internlm/internlm3-8b-instruct \
-  --calib-dataset &#x27;ptb&#x27; \
+  --calib-dataset 'ptb' \
   --calib-samples 128 \
   --calib-seqlen 2048 \
   --w-bits 4 \
@@ -166,17 +170,17 @@ lmdeploy lite auto_awq \
 
 ## 环境准备
 
-实训环境选择及启动：（已安装xtuner镜像直接启动即可，无需安装）
+实训环境选择及启动：（已安装`xtuner`镜像直接启动即可，无需安装）
 
 ![](img/c03848a58159070286a084b0c89314d0.png)
 
-### 步骤0：安装必要的软件包及激活xtuner环境
+### 步骤0：安装必要的软件包及激活`xtuner`环境
 
 进入终端命令行：
 
 ![](img/175bc9e99f8c557088fa699d1a24c01c.png)
 
-进入容器：conda activate base
+进入容器：`conda activate base`
 
 ![](img/b24c844c94b9b8e6b0b61f90fa5de352.png)
 
@@ -188,16 +192,16 @@ conda activate base
 pip install mpi4py
 ```
 
-为了验证 XTuner 是否安装正确，我们将使用命令打印配置文件。
+为了验证`XTuner`是否安装正确，我们将使用命令打印配置文件。
 
-打印配置文件： 在命令行中使用 xtuner list-cfg 验证是否能打印配置文件列表。
+打印配置文件：在命令行中使用`xtuner list-cfg`验证是否能打印配置文件列表。
 
 ![](img/c940da6d221c76a8d898282c9af6a43a.png)
 
 ```
-#git clone 本repo
+# git clone 本repo
 git clone https://github.com/InternLM/Tutorial.git -b camp4
-mkdir -p /root/finetune &amp;&amp; cd /root/finetune
+mkdir -p /root/finetune && cd /root/finetune
 ```
 
 ## 修改提供的数据集
@@ -205,20 +209,20 @@ mkdir -p /root/finetune &amp;&amp; cd /root/finetune
 ### 步骤 0. 创建一个新的文件夹用于存储微调数据
 
 ```
-mkdir -p /root/finetune/data &amp;&amp; cd /root/finetune/data
-cp -r /root/Tutorial/data/assistant_Tuner.jsonl  /root/finetune/data
+mkdir -p /root/finetune/data && cd /root/finetune/data
+cp -r /root/Tutorial/data/assistant_Tuner.jsonl /root/finetune/data
 ```
 
 ### 步骤 1. 创建修改脚本
 
-我们写一个脚本生成修改我们需要的微调训练数据，在当前目录下创建一个 change_script.py 文件，内容如下：
+我们写一个脚本生成修改我们需要的微调训练数据，在当前目录下创建一个`change_script.py`文件，内容如下：
 
 ```
 # 创建 change_script.py 文件
 touch /root/finetune/data/change_script.py
 ```
 
-打开该change_script.py文件后将下面的内容复制进去。
+打开该`change_script.py`文件后将下面的内容复制进去。
 
 ```
 import json
@@ -247,45 +251,45 @@ def process_line(line, old_text, new_text):
     return json.dumps(processed_data, ensure_ascii=False)
 
 def main(input_file, output_file, old_text, new_text):
-    with open(input_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as infile, \
-         open(output_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as outfile:
+    with open(input_file, 'r', encoding='utf-8') as infile, \
+         open(output_file, 'w', encoding='utf-8') as outfile:
         
         # 计算总行数用于进度条
         total_lines = sum(1 for _ in infile)
         infile.seek(0)  # 重置文件指针到开头
         
         # 使用 tqdm 创建进度条
-        for line in tqdm(infile, total=total_lines, desc=&quot;Processing&quot;):
+        for line in tqdm(infile, total=total_lines, desc="Processing"):
             processed_line = process_line(line.strip(), old_text, new_text)
-            outfile.write(processed_line + &#x27;\n&#x27;)
+            outfile.write(processed_line + '\n')
 
-if __name__ == &quot;__main__&quot;:
-    parser = argparse.ArgumentParser(description=&quot;Replace text in a JSONL file.&quot;)
-    parser.add_argument(&quot;input_file&quot;, help=&quot;Input JSONL file to process&quot;)
-    parser.add_argument(&quot;output_file&quot;, help=&quot;Output file for processed JSONL&quot;)
-    parser.add_argument(&quot;--old_text&quot;, default=&quot;尖米&quot;, help=&quot;Text to be replaced&quot;)
-    parser.add_argument(&quot;--new_text&quot;, default=&quot;闻星&quot;, help=&quot;Text to replace with&quot;)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Replace text in a JSONL file.")
+    parser.add_argument("input_file", help="Input JSONL file to process")
+    parser.add_argument("output_file", help="Output file for processed JSONL")
+    parser.add_argument("--old_text", default="尖米", help="Text to be replaced")
+    parser.add_argument("--new_text", default="闻星", help="Text to replace with")
     args = parser.parse_args()
 
     main(args.input_file, args.output_file, args.old_text, args.new_text)
 ```
 
-然后修改如下： 打开 change_script.py ，修改 --new_text 中 default="闻星" 为你的名字。
+然后修改如下：打开`change_script.py`，修改`--new_text`中`default="闻星"`为你的名字。
 
 ```
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(description=&quot;Replace text in a JSONL file.&quot;)
+    parser = argparse.ArgumentParser(description="Replace text in a JSONL file.")
 
-    parser.add_argument(&quot;input_file&quot;, help=&quot;Input JSONL file to process&quot;)
+    parser.add_argument("input_file", help="Input JSONL file to process")
 
-    parser.add_argument(&quot;output_file&quot;, help=&quot;Output file for processed JSONL&quot;)
+    parser.add_argument("output_file", help="Output file for processed JSONL")
 
-    parser.add_argument(&quot;--old_text&quot;, default=&quot;尖米&quot;, help=&quot;Text to be replaced&quot;)
--        parser.add_argument(&quot;--new_text&quot;, default=&quot;闻星&quot;, help=&quot;Text to replace with&quot;)
-+   parser.add_argument(&quot;--new_text&quot;, default=&quot;沐曦&quot;, help=&quot;Text to replace with&quot;)
+    parser.add_argument("--old_text", default="尖米", help="Text to be replaced")
+-        parser.add_argument("--new_text", default="闻星", help="Text to replace with")
++   parser.add_argument("--new_text", default="沐曦", help="Text to replace with")
 
-    args = parser.parse_args()
+    args = parser.parse_args()
 ```
 
 ### 步骤 2. 执行脚本
@@ -296,7 +300,7 @@ cd ~/finetune/data
 python change_script.py ./assistant_Tuner.jsonl ./assistant_Tuner_change.jsonl
 ```
 
-assistant_Tuner_change.jsonl 是修改后符合 XTuner 格式的训练数据。
+`assistant_Tuner_change.jsonl`是修改后符合`XTuner`格式的训练数据。
 
 ### 步骤 3. 查看数据
 
@@ -308,9 +312,9 @@ cat assistant_Tuner_change.jsonl | head -n 3
 
 ## 准备训练脚本
 
-模型文件位置【用1.8B模型微调】：/root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat
+模型文件位置【用1.8B模型微调】：`/root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat`
 
-xtuner的微调官方配置文件位置：/workspace/xtuner/examples
+`xtuner`的微调官方配置文件位置：`/workspace/xtuner/examples`
 
 获取官方写好的训练配置文件：
 
@@ -327,7 +331,9 @@ cp /workspace/xtuner/examples/lora/internlm2_5_1.8b_lora_alpaca_e3_copy.py .
 
 ### 步骤1：修改微调参数
 
-internlm2_5_1.8b_lora_alpaca_e3_copy.py修改如下【关注黄色部分】：
+`internlm2_5_1.8b_lora_alpaca_e3_copy.py`修改如下【关注黄色部分】：
+
+
 
 ```
 # Copyright (c) OpenMMLab. All rights reserved.
@@ -345,7 +351,7 @@ from transformers import (AutoModelForCausalLM, AutoTokenizer,
 from xtuner.dataset import process_hf_dataset
 from xtuner.dataset.collate_fns import default_collate_fn
 from xtuner.dataset.map_fns import alpaca_map_fn, template_map_fn_factory
-from xtuner.engine.hooks import (DatasetInfoHook, EvaluateChatHook,ThroughputHook,
+from xtuner.engine.hooks import (DatasetInfoHook, EvaluateChatHook, ThroughputHook,
                                  VarlenAttnArgsToMessageHubHook)
 from xtuner.engine.runner import TrainLoop
 from xtuner.model import SupervisedFinetune
@@ -356,11 +362,11 @@ from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = &#x27;/root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat&#x27;
+pretrained_model_name_or_path = '/root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat'
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = &#x27;/root/finetune/data/assistant_Tuner_change.jsonl&#x27;
+alpaca_en_path = '/root/finetune/data/assistant_Tuner_change.jsonl'
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
 max_length = 2048
 pack_to_max_length = True
@@ -368,7 +374,7 @@ pack_to_max_length = True
 # parallel
 sequence_parallel_size = 1
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 1  # per_device
 accumulative_counts = 1
 accumulative_counts *= sequence_parallel_size
@@ -389,17 +395,17 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 evaluation_freq = 500
 SYSTEM = SYSTEM_TEMPLATE.alpaca
 evaluation_inputs = [
-    &#x27;请介绍一下你自己&#x27;, &#x27;Please introduce yourself&#x27;
+    '请介绍一下你自己', 'Please introduce yourself'
 ]
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 tokenizer = dict(
     type=AutoTokenizer.from_pretrained,
     pretrained_model_name_or_path=pretrained_model_name_or_path,
     trust_remote_code=True,
-    padding_side=&#x27;right&#x27;)
+    padding_side='right')
 
 model = dict(
     type=SupervisedFinetune,
@@ -417,21 +423,21 @@ model = dict(
             llm_int8_has_fp16_weight=False,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type=&#x27;nf4&#x27;)),
+            bnb_4bit_quant_type='nf4')),
     lora=dict(
         type=LoraConfig,
         r=64,
         lora_alpha=16,
         lora_dropout=0.1,
-        bias=&#x27;none&#x27;,
-        task_type=&#x27;CAUSAL_LM&#x27;))
+        bias='none',
+        task_type='CAUSAL_LM'))
 
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 alpaca_en = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=dict(train=alpaca_en_path)),
+    dataset=dict(type=load_dataset, path='json', data_files=dict(train=alpaca_en_path)),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=None,
@@ -443,7 +449,7 @@ alpaca_en = dict(
     use_varlen_attn=use_varlen_attn)
 
 sampler = SequenceParallelSampler \
-    if sequence_parallel_size &gt; 1 else DefaultSampler
+    if sequence_parallel_size > 1 else DefaultSampler
 train_dataloader = dict(
     batch_size=batch_size,
     num_workers=dataloader_num_workers,
@@ -452,7 +458,7 @@ train_dataloader = dict(
     collate_fn=dict(type=default_collate_fn, use_varlen_attn=use_varlen_attn))
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -461,8 +467,8 @@ optim_wrapper = dict(
         type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&#x27;dynamic&#x27;,
-    dtype=&#x27;bfloat16&#x27;)
+    loss_scale='dynamic',
+    dtype='bfloat16')
 
 # learning policy
 # More information: https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/param_scheduler.md  # noqa: E501
@@ -528,16 +534,16 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&#x27;fork&#x27;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&#x27;nccl&#x27;),
+    dist_cfg=dict(backend='nccl'),
 )
 
 # set visualizer
 visualizer = None
 
 # set log level
-log_level = &#x27;INFO&#x27;
+log_level = 'INFO'
 
 # load from which checkpoint
 load_from = None
@@ -550,10 +556,9 @@ randomness = dict(seed=None, deterministic=False)
 
 # set log processor
 log_processor = dict(by_epoch=False)
-
 ```
 
-### 步骤2：启动微调
+## 步骤2：启动微调
 
 ```
 cd /root/finetune
@@ -562,13 +567,17 @@ xtuner train ./config/internlm2_5_1.8b_lora_alpaca_e3_copy.py --deepspeed deepsp
 
 ![](img/d1c95143d175d909b0957b0ee1d7d48d.png)
 
-### 步骤 3. 权重转换【HuggingFace格式文件】
+## 步骤 3. 权重转换【HuggingFace格式文件】
 
 ```
 cd /root/finetune/work_dirs/assistTuner
 export MKL_SERVICE_FORCE_INTEL=1
 export MKL_THREADING_LAYER=GNU
 ```
+
+
+
+## 步骤 3. 模型格式转换
 
 ```
 # 注意这里选择的模型迭代最后一次的文件
@@ -577,7 +586,7 @@ xtuner convert pth_to_hf internlm2_5_1.8b_lora_alpaca_e3_copy.py  /root/finetune
 
 ![](img/ded0a3a55f57359f066fc9955f438c73.png)
 
-### 步骤 4. 模型合并
+## 步骤 4. 模型合并
 
 ```
 cd /root/finetune/work_dirs/assistTuner
@@ -590,21 +599,21 @@ xtuner convert merge /root/public-model/models/Shanghai_AI_Laboratory/internlm2_
 
 ![](img/12d9e6463d63304edf0126fcdf301a2b.png)
 
-### 步骤 5. 验证结果
+## 步骤 5. 验证结果
 
-采用tranformers做一个简单的测试程序'test.py'如下：
+采用`tranformers`做一个简单的测试程序`test.py`如下：
 
 ```
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # 使用GPU
-model_name = &quot;/root/finetune/work_dirs/assistTuner/merged&quot;
+model_name = "/root/finetune/work_dirs/assistTuner/merged"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name).to(&#x27;cuda&#x27;)
+model = AutoModelForCausalLM.from_pretrained(model_name).to('cuda')
 
 # 处理输入
-prompt = &quot;请介绍一下你自己&quot;
-inputs = tokenizer(prompt, return_tensors=&quot;pt&quot;).to(&#x27;cuda&#x27;)
+prompt = "请介绍一下你自己"
+inputs = tokenizer(prompt, return_tensors="pt").to('cuda')
 
 # 生成配置
 outputs = model.generate(
@@ -622,9 +631,9 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ![](img/151690744bdc083bfa13bb227be0c0dc.png)
 
-# 已知的入坑【可以看看是不是入坑】
+## 已知的入坑【可以看看是不是入坑】
 
-镜像已经内置了metax的torch、torchvision等对应的版本，不要自己安装pip包默认的如下的软件包，默认torch等包如卸载之后再安装就是社区版，那个版本不支持MetaX的卡。
+镜像已经内置了metax的torch、torchvision等对应的版本，不要自己安装`pip`包默认的如下的软件包，默认torch等包如卸载之后再安装就是社区版，那个版本不支持MetaX的卡。
 
 ![](img/0de9657a77154bbb9f21b60bca7ee597.png)
 
@@ -636,30 +645,30 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 有兴趣驱动开始安装MetaX的卡和一个个软件包安装的可以到沐曦开发者社区查看对应的手册及软件包一步步安装：
 
-# 结束语
+## 结束语
 
 > 【恭喜🎉完成本局通关任务】为了让更多同学可以使用算力完成通关，请大家完成通关后释放一下资源，感谢支持🙏
 
-# 作业
+## 作业
 
-+   记录复现过程并截图。
++ 记录复现过程并截图。
 
-## 基础任务（完成此任务即完成闯关）
+### 基础任务（完成此任务即完成闯关）
 
-+   使用LMDeploy部署IntenLM语言模型并完成推理任务，记录复现过程并截图。
++ 使用`LMDeploy`部署`IntenLM`语言模型并完成推理任务，记录复现过程并截图。
 
-+   使用xtune微调IntenLM一个属于自己<以自己名字或者ID为暗号>的智能助手，记录复现过程并截图。
++ 使用`xtune`微调`IntenLM`一个属于自己<以自己名字或者ID为暗号>的智能助手，记录复现过程并截图。
 
-## 进阶任务（闯关不要求完成此任务）
+### 进阶任务（闯关不要求完成此任务）
 
-+   IntenLM VL模型部署及测试（选做）
++ `IntenLM` VL模型部署及测试（选做）
 
-+   [OpenCompass](https://aicarrier.feishu.cn/wiki/ZW3KwXZn8iDRPlkMKXZcARHunWg)自己微调后的助手做评测，参考： （选做）
++ [`OpenCompass`](https://aicarrier.feishu.cn/wiki/ZW3KwXZn8iDRPlkMKXZcARHunWg)自己微调后的助手做评测，参考： （选做）
 
-## 闯关材料提交（完成任务并且提交材料视为闯关成功）
+### 闯关材料提交（完成任务并且提交材料视为闯关成功）
 
-+   闯关作业总共分为2个任务，2个任务完成视作闯关成功。
++ 闯关作业总共分为2个任务，2个任务完成视作闯关成功。
 
-+   请将作业发布到沐曦社区、知乎、CSDN等任一社交媒体，将作业链接提交到以下问卷，助教老师批改后将获得 100h的算力奖励！！！
++ 请将作业发布到沐曦社区、知乎、CSDN等任一社交媒体，将作业链接提交到以下问卷，助教老师批改后将获得 100h的算力奖励！！！
 
-+   相关作业可以跟帖到link：
++ 相关作业可以跟帖到link：

@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（10月 28日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/NgMidkiRzo08yHxKAJTco56znib](https://miracleplus.feishu.cn/docx/NgMidkiRzo08yHxKAJTco56znib)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Le**pton AI 创始成员，曾在****阿**里云担任高性能 AI 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
+> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Lepton AI 创始成员，曾在阿里云担任高性能 AI 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
 
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
 
@@ -12,7 +13,7 @@
 
 ![](img/72d0ede3cca559580c6489cbfe427e62.png)
 
-# 推特
+## 推特
 
 ### AI的HTTPS时刻？苹果发布结合苹果生态中的机器学习与同态加密
 
@@ -100,7 +101,7 @@ mcdse-2b 是一个全新的高性能、可扩展且高效的多语言文档检�
 
 ![](img/ff1238e08465022db6e3d6152375b171.png)
 
-# 信号
+## 信号
 
 ### DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing
 
@@ -158,7 +159,7 @@ mcdse-2b 是一个全新的高性能、可扩展且高效的多语言文档检�
 
 ![](img/5389d37cda77dbac9f19fe6947fb330f.png)
 
-# 资讯
+## 资讯
 
 ### 科学实验室走向全自动化，机器人融合AI，加速科学发现
 
@@ -198,19 +199,19 @@ https://mp.weixin.qq.com/s/WF02SzrNSxZEKQr7IyNsSg
 
 NotebookLlama 的核心流程包括四个步骤：
 
-1.  **文本预处理**：使用1B模型将 PDF 转录为.txt文件；
+1. **文本预处理**：使用1B模型将 PDF 转录为.txt文件；
 
-1.  **转录生成**：利用70B模型从文本生成播客脚本；
+1. **转录生成**：利用70B模型从文本生成播客脚本；
 
-1.  **创意优化**：借助8B模型对文本加入戏剧化效果；
+1. **创意优化**：借助8B模型对文本加入戏剧化效果；
 
-1.  **文本到语音转换**：使用 TTS 模型将优化后的脚本生成播客音频。
+1. **文本到语音转换**：使用 TTS 模型将优化后的脚本生成播客音频。
 
 Meta 研究团队还指出，项目对 TTS 模型效果的改进需求，未来计划采用更自然的语音生成模型，并增加内容来源支持，如网页、音频和视频文件。NotebookLlama 提供的开源代码已包含详细安装和运行指引，并支持 GPU 配置选项，以便用户使用 Hugging Face CLI 下载 Llama 模型并运行整个生成流程。
 
 ![](img/8e3cef0138241041580606b115dc9945.png)
 
-# 产品
+## 产品
 
 ### Pricing Maker
 
@@ -232,7 +233,7 @@ TikBox 是一个社交媒体平台，允许用户创建和分享短视频内容�
 
 ![](img/f39d2ba5c16db3cfc3c673724586ac73.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Framer
 
@@ -244,13 +245,15 @@ Framer是一种交互式帧插值工具，通过用户定制的关键点轨迹�
 
 ![](img/e79d0e7788627b0f05380ad1b6353421.png)
 
-[temp_1_20240925-165555_mode2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TZ🐧bYuFaoLvNGxpdjFc6LiWnCb)
+[`temp_1_20240925-165555_mode2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TZ🐧bYuFaoLvNGxpdjFc6LiWnCb)
 
-# 投融资
+## 投融资
 
-### **灵生科技获千万级天使轮融资**
+### 灵生科技获千万级天使轮融资
 
-https://www.sohu.com/a/821027460_439726
+
+
+`https://www.sohu.com/a/821027460_439726`
 
 2024年10月28日，北京灵生科技有限公司宣布完成千万级天使轮融资，投资方包括天容海色、万物为创投及夸克电力。融资资金将主要用于灵生科技的类脑产品线研发。灵生科技成立于2023年，专注于具身智能机器人类脑的研发，构建了多模态感知融合、决策和执行一体化的系统，其核心产品Ling Cybrain相当于人类中枢神经系统，使机器人具备灵活的动作编排和执行能力。
 
@@ -258,13 +261,15 @@ https://www.sohu.com/a/821027460_439726
 
 创始人杨洪兵毕业于清华大学，拥有丰富的AI产品研发和商业化经验，曾在知名企业担任高级管理职位。他表示，灵生类脑已具备跨硬件和跨厂商的兼容性，未来将通过开放的合作模式推动具身智能产业的发展。投资方天容海色、万物为创投和夸克电力的代表也表示了对灵生团队的创新能力和快速发展潜力的高度认可，认为类脑技术在未来将成为人形机器人产业的关键推动力。
 
-公司官网：http://www.lingrobotics.com/
+公司官网：`http://www.lingrobotics.com/`
 
 ![](img/a64f79a17a9dc15d375f58e617ed4924.png)
 
-### **Concentric AI获4500万美**元B轮融资，加速数据安全姿态管理市场发展
+# 行业资讯
 
-https://concentric.ai/press-release/concentric-ai-secures-45m-financing-in-series-b-round-led-by-top-tier-capital-partners-and-harbourvest-partners-to-capitalize-on-rapidly-growing-dspm-market/
+## Concentric AI获4500万元B轮融资，加速数据安全姿态管理市场发展
+
+`https://concentric.ai/press-release/concentric-ai-secures-45m-financing-in-series-b-round-led-by-top-tier-capital-partners-and-harbourvest-partners-to-capitalize-on-rapidly-growing-dspm-market/`
 
 2024年10月24日，数据安全管理公司Concentric AI宣布完成4500万美元的B轮融资。本轮融资由Top Tier Capital Partners和HarbourVest Partners领投，全球首席信息安全官联盟CyberFuture参与。此轮融资后，Concentric AI的总融资额超过6700万美元，其他参投方包括Ballistic Ventures、Engineering Capital、Clear Ventures和Citi Ventures。
 
@@ -272,25 +277,25 @@ https://concentric.ai/press-release/concentric-ai-secures-45m-financing-in-serie
 
 Concentric AI自去年以来实现了300%的增长，客户数量在半年内增长三倍。
 
-公司官网：https://concentric.ai/
+公司官网：`https://concentric.ai/`
 
 ![](img/8b1d3129586b02ba9650f6d507ed3d12.png)
 
 # 学习
 
-### ICLR25 Submissions中LLM KV Cache压缩领域部分工作
+## ICLR25 Submissions中LLM KV Cache压缩领域部分工作
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/3284687442
+`https://zhuanlan.zhihu.com/p/3284687442`
 
 ICLR25最新的KV Cache压缩进展引入了通过预算分配提升压缩质量的创新方法。在已有的Ada-KV工作基础上，DynamicKV提出了“层级适应性预算分配”策略，基于不同层的需求动态分配预算，优于固定的“金字塔”式分配方案。这种方法灵活分配注意力预算，尤其适用于浅层和深层注意力分散的情况，是一种有效的改进方向。此外，Head-wise分配在ICLR25中得到了广泛关注，Retrieval Head被发现对长文本理解有显著作用，多个工作通过识别这些头并为其分配更大压缩预算提升了压缩质量。例如，RazorAttention和DuoAttention分别基于规则和阈值识别Retrieval Head，而Not All Heads Matter则结合了Ada-KV的自适应分配方式进行全局调度，在压缩预算方面更具灵活性。这些方法展示了KV Cache压缩中多层与头级预算分配策略的多样性和潜力，并为未来结合层级和头级的自适应分配提供了思路。
 
 ![](img/d361fbfe9061bda068e25eed1b9f0aec.png)
 
-### AMD EPYC Turin 9005 系列评测：192 核 Zen 5 芯片，功耗达 500W
+## AMD EPYC Turin 9005 系列评测：192 核 Zen 5 芯片，功耗达 500W
 
-https://zhuanlan.zhihu.com/p/3450987264
+`https://zhuanlan.zhihu.com/p/3450987264`
 
 在Advancing AI 2024活动中，AMD推出了基于Zen 5架构的第五代EPYC ‘Turin’处理器，优化面向企业、AI和云计算场景。该系列涵盖了从8到192核的多种配置，旗舰型号EPYC 9965达192核384线程，功耗500W，售价14,813美元。采用4nm工艺的标准Zen 5版本最高为128核。Turin系列不再配备堆叠L3缓存，而是采用高频SKU，频率达到5.0 GHz以增强GPU协同处理。
 
@@ -300,127 +305,115 @@ Zen 5架构提升了17%的IPC，支持AVX-512指令集，在双泵模式下可�
 
 ![](img/a5002dc3ad200ab195732e648578c87d.png)
 
-### [Triton] Triton 源码走读 -- ttir-2-ttgir
+## [Triton] Triton 源码走读 -- `ttir-2-ttgir`
 
-https://zhuanlan.zhihu.com/p/3453025905
+`https://zhuanlan.zhihu.com/p/3453025905`
 
-TTIR和TTGIR两种中间表示在Triton计算图优化中各具特色。TTIR专注于硬件无关的计算逻辑表达，而TTGIR则表达硬件相关的计算操作。TTGIR引入了如alloc_tensor、insert_slice_async等操作，用于共享内存管理和指令执行顺序控制，以优化硬件层次的效率。这些操作在数据流水线和预取等后续优化中非常关键。
+TTIR和TTGIR两种中间表示在Triton计算图优化中各具特色。TTIR专注于硬件无关的计算逻辑表达，而TTGIR则表达硬件相关的计算操作。TTGIR引入了如`alloc_tensor`、`insert_slice_async`等操作，用于共享内存管理和指令执行顺序控制，以优化硬件层次的效率。这些操作在数据流水线和预取等后续优化中非常关键。
 
-TTGIR中支持不同的layout管理，包括CTA layout和shared layout。在CTA layout中，通过CTAPerCGA等参数定义计算单元的任务分配策略，指导数据在计算单元的分布。shared layout通过“swizzle”方法减少存储冲突，提供vec、perPhase等参数，优化数据的并行访问模式。
+TTGIR中支持不同的layout管理，包括`CTA layout`和`shared layout`。在`CTA layout`中，通过`CTAPerCGA`等参数定义计算单元的任务分配策略，指导数据在计算单元的分布。`shared layout`通过“`swizzle`”方法减少存储冲突，提供`vec`、`perPhase`等参数，优化数据的并行访问模式。
 
-分布式layout采用映射函数分配张量，使不同线程访问独特的张量块。通过CTA与warp布局参数的调整，实现数据在并行线程中的最优存取。常用layout如Block layout、MMA Layout和DotOperand Layout等各具特点，Block layout提升访存效率，MMA和DotOperand layout则支持专用指令（如MMA指令）的硬件加速。
+分布式layout采用映射函数分配张量，使不同线程访问独特的张量块。通过CTA与warp布局参数的调整，实现数据在并行线程中的最优存取。常用layout如`Block layout`、`MMA Layout`和`DotOperand Layout`等各具特点，`Block layout`提升访存效率，`MMA`和`DotOperand layout`则支持专用指令（如`MMA`指令）的硬件加速。
 
-TTIR转TTGIR涉及layout转换。TTGIR中的类型转换工具TTGIR Type Converter以Block layout为基础，为张量自动挂载分块布局；同时加入如convert_layout操作，使不同计算类型之间的布局转换合法，确保操作数布局一致性。控制流转换如scf.for确保了TTIR和TTGIR混合时的布局一致性。
+TTIR转TTGIR涉及layout转换。TTGIR中的类型转换工具`TTGIR Type Converter`以`Block layout`为基础，为张量自动挂载分块布局；同时加入如`convert_layout`操作，使不同计算类型之间的布局转换合法，确保操作数布局一致性。控制流转换如`scf.for`确保了TTIR和TTGIR混合时的布局一致性。
 
 ![](img/a62d1b1aeeafb06e8a9ae363b3c1314f.png)
 
-### 从头理解PPO：从公式到代码
+## 从头理解PPO：从公式到代码
 
-https://zhuanlan.zhihu.com/p/3333839684
+`https://zhuanlan.zhihu.com/p/3333839684`
 
 PPO（Proximal Policy Optimization，近端策略优化）算法由John Schulman于2017年提出，是一种强化学习算法，以其实现简单、在多种任务中表现出色而广受欢迎。PPO的关键特点包括：
 
-1.  **数据利用率高**：PPO可以多次利用采样数据，这提高了数据效率并降低了样本复杂度。
+1. 数据利用率高：PPO可以多次利用采样数据，这提高了数据效率并降低了样本复杂度。
 
-1.  **受限的策略更新**：PPO通过限制策略更新的幅度，防止更新过大导致的训练不稳定。PPO使用裁剪替代目标函数（Clipped Surrogate Objective），确保新旧策略的比例（即 rrr）在给定阈值内，避免策略的剧烈变动，从而保持训练稳定性。当策略比值超过设定的区间（通常是 [1−clip_ratio,1+clip_ratio][1 - \text{clip\_ratio}, 1 + \text{clip\_ratio}][1−clip_ratio,1+clip_ratio]），PPO将其裁剪，防止更新过度。
+2. 受限的策略更新：PPO通过限制策略更新的幅度，防止更新过大导致的训练不稳定。PPO使用裁剪替代目标函数（Clipped Surrogate Objective），确保新旧策略的比例（即`rrr`）在给定阈值内，避免策略的剧烈变动，从而保持训练稳定性。当策略比值超过设定的区间（通常是 `[1−clip_ratio, 1+clip_ratio]`），PPO将其裁剪，防止更新过度。
 
-在实际操作中，PPO的优化过程包括通过多位actor收集 NNN 步数据，并对每个数据批次进行多次梯度更新以充分利用采样。PPO还引入了广义优势估计（GAE）来计算优势函数，将TD残差进行衰减平均，以平衡偏差和方差。
+在实际操作中，PPO的优化过程包括通过多位actor收集 `NNN` 步数据，并对每个数据批次进行多次梯度更新以充分利用采样。PPO还引入了广义优势估计（GAE）来计算优势函数，将TD残差进行衰减平均，以平衡偏差和方差。
 
-1.  **技术细节**：
+3. 技术细节：
 
-+   **策略损失计算**：策略损失通过调整比例 rrr 进行裁剪。若 rrr 超出设定区间 [1−clip_ratio,1+clip_ratio][1 - \text{clip\_ratio}, 1 + \text{clip\_ratio}][1−clip_ratio,1+clip_ratio]，则进行裁剪，确保更新幅度不过大。
+   - 策略损失计算：策略损失通过调整比例 `rrr` 进行裁剪。若 `rrr` 超出设定区间 `[1−clip_ratio, 1+clip_ratio]`，则进行裁剪，确保更新幅度不过大。
+   - 价值函数损失：PPO还通过均方误差损失来最小化预测回报与实际回报的差异。
 
-+   **价值函数损失**：PPO还通过均方误差损失来最小化预测回报与实际回报的差异。
+4. 应用场景：
 
-1.  **应用场景**：
+   - CartPole：采用高斯分布建模连续动作控制，用CPU训练的神经网络预测动作分布参数。
+   - Pong（像素输入）：使用softmax分布和卷积神经网络（CNN）处理离散动作，通过帧堆叠预处理编码时空信息，如速度和加速度。
 
-+   **CartPole**：采用高斯分布建模连续动作控制，用CPU训练的神经网络预测动作分布参数。
-
-+   **Pong（像素输入）**：使用softmax分布和卷积神经网络（CNN）处理离散动作，通过帧堆叠预处理编码时空信息，如速度和加速度。
-
-1.  **在LLM和RLHF中的应用**：PPO因在大语言模型（LLM）微调中的应用而备受关注，尤其是通过人类反馈强化学习（RLHF）训练PPO变体，简化约束以实现稳定的训练。
+5. 在LLM和RLHF中的应用：PPO因在大语言模型（LLM）微调中的应用而备受关注，尤其是通过人类反馈强化学习（RLHF）训练PPO变体，简化约束以实现稳定的训练。
 
 ![](img/4acfc8830f387c78ca73b282610ea02f.png)
 
-### 关于LLM和Serverless的过去，现在和未来
+## 关于LLM和Serverless的过去，现在和未来
 
-https://zhuanlan.zhihu.com/p/3477976759
+`https://zhuanlan.zhihu.com/p/3477976759`
 
 ServerlessLLM开源小组通过深度探讨，展望了LLM（大语言模型）与Serverless架构的结合及其未来潜力。在如今快速增长的AI需求下，传统的服务器架构已难以适应流量波动及定制化需求。Serverless架构解决了这一问题，通过按需分配资源，降低了运营成本并提高了灵活性。
 
-在LLM领域，Serverless架构可以解决模型部署成本高、冷启动时间长等问题。为此，团队研发了高效的模型格式、在线迁移方案以及延迟优化的调度模式。其创新包括利用本地GPU存储，加速模型加载，通过优化checkpoint设计，提升了5-8倍的加载性能。此外，通过迁移token来替代KV-Cache的在线迁移方案，有效减少了网络开销，提高了云环境下的效率。
+在LLM领域，Serverless架构可以解决模型部署成本高、冷启动时间长等问题。为此，团队研发了高效的模型格式、在线迁移方案以及延迟优化的调度模式。其创新包括利用本地GPU存储，加速模型加载，通过优化`checkpoint`设计，提升了5-8倍的加载性能。此外，通过迁移token来替代`KV-Cache`的在线迁移方案，有效减少了网络开销，提高了云环境下的效率。
 
 该项目还结合了GPU和Serverless的优势，支持大模型的灵活部署，并利用本地SSD存储模型副本，减少冷启动时间。在应用层面，ServerlessLLM展示了高效的推理模式，推动多模态、微调模型的Serverless化，并在未来计划优化存储、资源利用，以适应更广泛的计算需求。
 
 ![](img/9e96be893a310133e0179d089966c09b.png)
 
-### Ascend NPU 架构 & CANN 平台入门学习
+## Ascend NPU 架构 & CANN 平台入门学习
 
-https://zhuanlan.zhihu.com/p/3357780804
+`https://zhuanlan.zhihu.com/p/3357780804`
 
-一、NPU 硬件架构
+### 一、NPU 硬件架构
 
-1.  Ascend 3XX 与 Ascend 9XX SOC 架构
+#### 1. Ascend 3XX 与 Ascend 9XX SOC 架构
 
-+   AI Core：基于达芬奇架构，执行矩阵乘法、向量计算及标量操作，是高效执行 AI 运算的核心单元。
+- `AI Core`：基于达芬奇架构，执行矩阵乘法、向量计算及标量操作，是高效执行 AI 运算的核心单元。
+- `TS Core` 和 `TS CPU`：用于任务分配与调度，将算子任务分配给 `AI Core` 或 `AI CPU`。
+- `DVPP`：数字视觉预处理子系统，负责图像视频编解码，适配视觉处理需求。
 
-+   TS Core 和 TS CPU：用于任务分配与调度，将算子任务分配给 AI Core 或 AI CPU。
+#### 2. 达芬奇架构
 
-+   DVPP：数字视觉预处理子系统，负责图像视频编解码，适配视觉处理需求。
+- 计算单元：包括矩阵计算（`Cube Core`）、向量运算（`Vector Unit`）、标量运算（`Scalar Unit`），在高并发环境下完成复杂矩阵与卷积操作。
+- 存储单元：`L1`、`Unified Buffer` 与片外 `HBM/DDR` 构成的多层级存储体系，有效减少数据传输延时。
+- 控制单元：管理任务的分配和执行，通过异步指令流控制执行过程，确保高效的数据流动。
 
-1.  达芬奇架构
+### 二、AI Core 计算模式
 
-+   计算单元：包括矩阵计算（Cube Core）、向量运算（Vector Unit）、标量运算（Scalar Unit），在高并发环境下完成复杂矩阵与卷积操作。
+`Cube` 核心单元专注于 16×16 的矩阵乘加运算（`MAC`），每个指令周期内可完成 4096 次 `MAC` 运算。为了提高计算效率，`Cube` 核心单元采用数据预处理策略，通过分块和填充优化数据传输，使得矩阵 A 按行读取，矩阵 B 按列存储，从而有效提高内存读取速度。
 
-+   存储单元：L1、Unified Buffer 与片外 HBM/DDR 构成的多层级存储体系，有效减少数据传输延时。
-
-+   控制单元：管理任务的分配和执行，通过异步指令流控制执行过程，确保高效的数据流动。
-
-二、AI Core 计算模式
-
-Cube 核心单元专注于 16×16 的矩阵乘加运算 (MAC)，每个指令周期内可完成 4096 次 MAC 运算。为了提高计算效率，Cube 核心单元采用数据预处理策略，通过分块和填充优化数据传输，使得矩阵 A 按行读取，矩阵 B 按列存储，从而有效提高内存读取速度。
-
-三、CANN 平台
+### 三、CANN 平台
 
 CANN（异构计算架构）作为昇腾 NPU 的异构计算平台，提供多层次编程接口和算子开发支持：
 
-+   应用开发接口：面向深度学习、图像处理和单算子加速。
+- 应用开发接口：面向深度学习、图像处理和单算子加速。
+- 算子开发接口：支持原生 C&C++ 标准，简化用户的开发流程。
+- 智能调优：通过 `AOE` 和 `Tensor Boost Engine (TBE)`，进行算子编译与融合优化，提升模型性能。
+- 执行层：提供类似 CUDA 的 runtime 管理，包含流、上下文等功能管理。
 
-+   算子开发接口：支持原生 C&C++ 标准，简化用户的开发流程。
+### 四、推理应用优化
 
-+   智能调优：通过 AOE 和 Tensor Boost Engine (TBE)，进行算子编译与融合优化，提升模型性能。
-
-+   执行层：提供类似 CUDA 的 runtime 管理，包含流、上下文等功能管理。
-
-四、推理应用优化
-
-CANN 平台还支持 AMCT 模型压缩工具，包括量化、稀疏和张量分解。借助 ATC 模型转换工具，将外部网络模型转换为适配昇腾的格式，实现精度与效率的平衡，进一步优化模型的推理性能。
+CANN 平台还支持 `AMCT` 模型压缩工具，包括量化、稀疏和张量分解。借助 `ATC` 模型转换工具，将外部网络模型转换为适配昇腾的格式，实现精度与效率的平衡，进一步优化模型的推理性能。
 
 ![](img/cc04fa5344baf9ee3db177df23c20938.png)
 
-### 如何在1万台H100 GPU上进行模型训练
+## 如何在1万台H100 GPU上进行模型训练
 
-https://soumith.ch/blog/2024-10-02-training-10k-scale.md.html
+`https://soumith.ch/blog/2024-10-02-training-10k-scale.md.html`
 
 博主Soumith在2024年10月2日分享了在大规模计算环境下使用1万台H100 GPU训练深度学习模型的技术方法，主要分为三大部分：优化模型和批量大小的适应性、加速GPU间通信、以及快速恢复系统故障。以下是技术细节概述。
 
-1. **大规模并行化与内存优化**
+1. 大规模并行化与内存优化
 
-+   **并行化方法**：通过数据并行、层级并行（层间和层内并行）将计算分布在所有GPU上，尽可能提高利用率。
+   - 并行化方法：通过数据并行、层级并行（层间和层内并行）将计算分布在所有GPU上，尽可能提高利用率。
+   - 内存节省策略：采用存储前向传播所需信息（如`FSDP`方法）、释放不必要数据以支持更大批量等方式，减小内存占用。在需要反向传播时再重新计算以节省存储空间。
 
-+   **内存节省策略**：采用存储前向传播所需信息（如FSDP方法）、释放不必要数据以支持更大批量等方式，减小内存占用。在需要反向传播时再重新计算以节省存储空间。
+2. GPU间快速通信
 
-2. **GPU间快速通信**
+   - 通信重叠：在计算过程中同时进行数据通信，例如在反向传播过程中并行执行梯度聚合（`all-reduce`），减少等待时间。
+   - 网络拓扑优化：利用`RDMA`技术和多层交换机结构，在GPU间实现直接数据传输，避免CPU内存中转。同时优化包路由算法，避免网络延迟。`NCCL`库则通过自动发现和利用底层网络结构以加速数据传输。
 
-+   **通信重叠**：在计算过程中同时进行数据通信，例如在反向传播过程中并行执行梯度聚合（all-reduce），减少等待时间。
+3. 故障检测与恢复
 
-+   **网络拓扑优化**：利用RDMA技术和多层交换机结构，在GPU间实现直接数据传输，避免CPU内存中转。同时优化包路由算法，避免网络延迟。NCCL库则通过自动发现和利用底层网络结构以加速数据传输。
-
-3. **故障检测与恢复**
-
-+   **故障检测**：在1万GPU规模下，硬件故障（如GPU、NIC、内存位翻转）较为频繁。利用监控工具检测并快速隔离出故障节点。
-
-+   **数据恢复**：频繁保存模型状态以防数据丢失，采用分片存储的方式，保证即使部分GPU故障也能快速恢复训练进度。
+   - 故障检测：在1万GPU规模下，硬件故障（如GPU、NIC、内存位翻转）较为频繁。利用监控工具检测并快速隔离出故障节点。
+   - 数据恢复：频繁保存模型状态以防数据丢失，采用分片存储的方式，保证即使部分GPU故障也能快速恢复训练进度。
 
 # 招聘公告
 
@@ -428,39 +421,37 @@ https://soumith.ch/blog/2024-10-02-training-10k-scale.md.html
 
 ![](img/409838e17ce8a756ebae7534abd03b08.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+### 行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
-##### 行研-GenAI研究岗位-前沿学术探索
+### 行研-GenAI研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+### 行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/49c755d6855de3f3f4a1ffb5aa52e766.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -472,13 +463,13 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
 
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

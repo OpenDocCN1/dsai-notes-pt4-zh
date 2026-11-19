@@ -1,3 +1,4 @@
+
 # 大厂AI实战案例
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/ZoWLdBMyyoskQWxW3AZcE9Pwn1C](https://aiyanxishe.feishu.cn/docx/ZoWLdBMyyoskQWxW3AZcE9Pwn1C)
@@ -12,6 +13,6 @@
 
 ![](img/18888f726646a30f98201aa3d375a8dd.png)
 
-# **大厂AI实践指南**
+# 大厂AI实践指南
 
 <https://aiyanxishe.feishu.cn/sync/IaSadpoOOsopKab1ajKcz6z3nAb>

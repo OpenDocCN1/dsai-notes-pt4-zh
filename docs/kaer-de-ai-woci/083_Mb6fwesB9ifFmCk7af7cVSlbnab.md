@@ -1,3 +1,4 @@
+
 # Kimi k2 Thinking实测cases | 实测Kimi k2 Thinking用例
 
 > 来源：[https://aiwarts101.feishu.cn/docx/NNmodJNJcoJvYdx4xQYcklMNncf](https://aiwarts101.feishu.cn/docx/NNmodJNJcoJvYdx4xQYcklMNncf)
@@ -6,7 +7,9 @@
 
 感谢一键三连催更，评论区可以留下你想看的选图我来写！
 
-这下面的效果都是在Kimi Cli+Kimi K2 Thiking or Kimi网页版跑出来的。
+这下面的效果都是在`Kimi Cli`+Kimi K2 Thiking or Kimi网页版跑出来的。
+
+## Mac OS 网络操作系统实测
 
 > 提示语🍇📺🌧️，
 
@@ -18,6 +21,8 @@
 
 [kimik2macos.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uj49b31viokQHOx29Vgc2ZvenUc)
 
+## NEW YORK SKYLINE SVG 实测
+
 > 提示语🍇📺🌧️，
 
 > SVG of NEW YORK SKYLINE Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome.make it interesting and highly detail , shows details that no one expected go full creative and full beauty in one code block
@@ -27,6 +32,8 @@
 ![](img/f4d0ea62b138ce4e7edf87bc8e8401eb.png)
 
 [svgs.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OV2hbfiIioeHFexuJjxc41SGnIb)
+
+## 3D 太阳系模拟实测
 
 > 提示语🍇📺🌧️，
 
@@ -38,23 +45,25 @@
 
 [3d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E08jb3rB4oAXj1xqczSclx44nKg)
 
-> 一个男人带着他的儿子去市场。他买了一只猴子和一些食物。为了回家，他必须乘一艘小船过河。这艘船一次只能运载两件东西，但不需要一次运载超过一件东西。这艘船不能自己航行。男人或儿子都可以驾驶这艘船，即使一次只能有一个人驾驶，但两个人可以一起旅行。虽然人们可以单独旅行或与其他人员一起旅行，但物品和生物不能单独旅行（例如，{man}、{man, son}、{man, monkey}、{son, monkey} 是有效的，但 {monkey} 单独在船上是无效的）。
+## 过河问题实测
+
+> 一个男人带着他的儿子去市场。他买了一只猴子和一些食物。为了回家，他必须乘一艘小船过河。这艘船一次只能运载两件东西，但不需要一次运载超过一件东西。这艘船不能自己航行。男人或儿子都可以驾驶这艘船，即使一次只能有一个人驾驶，但两个人可以一起旅行。虽然人们可以单独旅行或与其他人员一起旅行，但物品和生物不能单独旅行（例如，`{man}`、`{man, son}`、`{man, monkey}`、`{son, monkey}` 是有效的，但 `{monkey}` 单独在船上是无效的）。
 
 >
 
-> 我们遇到的问题是，男人不能把他的儿子单独留在食物旁边，因为他的儿子会吃掉它（即 {son, food}）。同样，男人也不能把猴子单独留在食物旁边，因为它也会吃掉它（即 {monkey, food}）。男人如何带着所有物品和他的儿子到达另一边？
+> 我们遇到的问题是，男人不能把他的儿子单独留在食物旁边，因为他的儿子会吃掉它（即 `{son, food}`）。同样，男人也不能把猴子单独留在食物旁边，因为它也会吃掉它（即 `{monkey, food}`）。男人如何带着所有物品和他的儿子到达另一边？
 
 >
 
-> 首先，列出船可以支持的所有物品的所有排列组合，包括可以自己旅行的物品（例如，{father}、{father, son}、{father, monkey}、{son, monkey} 是有效的，但 {monkey} 单独在船上是无效的）。记住，船一次只能运载 1 或 2 件东西（而且物体或动物需要一个人来运输它们）。
+> 首先，列出船可以支持的所有物品的所有排列组合，包括可以自己旅行的物品（例如，`{father}`、`{father, son}`、`{father, monkey}`、`{son, monkey}` 是有效的，但 `{monkey}` 单独在船上是无效的）。记住，船一次只能运载 1 或 2 件东西（而且物体或动物需要一个人来运输它们）。
 
 >
 
-> 其次，大声思考并解释你将如何解决这个问题。记住，除非男人在场，否则猴子或儿子如果单独行动就会吃掉食物（即，任何时候我们遇到 {monkey, food}、{son, food} 或 {monkey, son, food} 的情况，我们都失败了）。如果问题无法解决，请解释原因。如果可以解决，我们将采取哪些步骤？在每个步骤中，列出各种物体在哪一边。
+> 其次，大声思考并解释你将如何解决这个问题。记住，除非男人在场，否则猴子或儿子如果单独行动就会吃掉食物（即，任何时候我们遇到 `{monkey, food}`、`{son, food}` 或 `{monkey, son, food}` 的情况，我们都失败了）。如果问题无法解决，请解释原因。如果可以解决，我们将采取哪些步骤？在每个步骤中，列出各种物体在哪一边。
 
 >
 
-> 在您完成每个步骤时，创建一个“测试”，尝试解决此状态空间搜索问题，以检查容器“near:{}”、“river:{}”、“far:{}”和“boat:{}”的状态是否有效，基于规则。为了表示船的移动，我们将使用以下符号。'>' 表示船从近岸移动到远岸。'<' 表示船从远岸移动到近岸。
+> 在您完成每个步骤时，创建一个“测试”，尝试解决此状态空间搜索问题，以检查容器`near:{}`、`river:{}`、`far:{}`和`boat:{}`的状态是否有效，基于规则。为了表示船的移动，我们将使用以下符号。`'>'` 表示船从近岸移动到远岸。`'<'` 表示船从远岸移动到近岸。
 
 >
 
@@ -66,7 +75,7 @@
 
 > #0：所有四个都从河的同一近岸开始。
 
-> #0：near: {father, son, monkey, food, boat:{}} ... river:{} ... far: {}
+> #0：`near: {father, son, monkey, food, boat:{}}` ... `river:{}` ... `far: {}`
 
 > #0：近：{父亲，儿子，猴子，食物，船：{}}... 河流：{}... 远：{}
 
@@ -76,21 +85,21 @@
 
 > #1：儿子驾驶船带着猴子在笼子里航行，把父亲和食物留在河的近岸。河的远岸还没有任何东西。
 
-> #1：near: {father, food} ... river:{>boat:{son, monkey}} ... far: {}
+> #1：`near: {father, food}` ... `river:{>boat:{son, monkey}}` ... `far: {}`
 
 > #1：near: {father, food}... river:{>boat:{son, monkey}}... far: {}
 
-> test：{father, food} 有效，boat:{son, monkey} 有效
+> test：`{father, food}` 有效，`boat:{son, monkey}` 有效
 
 >
 
 > #2：因此，接下来，儿子必须把猴子留在河的远岸，因为猴子不能把船开回来。
 
-> #2：near: {father, food} ... river:{<boat:{son}} ... far: {monkey}
+> #2：`near: {father, food}` ... `river:{<boat:{son}}` ... `far: {monkey}`
 
 > #2：近：{父亲，食物}... 河流：{<船：{儿子}}... 远：{猴子}
 
-> test：父亲和食物在一起（有效），boat:{son} 独自一人（有效），猴子独自一人（有效）
+> test：父亲和食物在一起（有效），`boat:{son}` 独自一人（有效），猴子独自一人（有效）
 
 >
 
@@ -100,9 +109,11 @@
 
 [过河.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VwSZbPKkJoY4nFxAXWGc10jbncg)
 
-> You are an AI architecture researcher with expertise in large language models and Mixture-of-Experts (MoE) systems. Your task is to deeply compare the architectures of Kimi K2 and DeepSeek V3, focusing on key differences such as the number of attention heads, experts in MoE layers, optimizer choices (e.g., modified Muon vs. AdamW), routing mechanisms (non-hierarchical vs. others), and dense layers (1 vs. 3). Treat this as a combined complex search, decision-making, and academic analysis task.
+## Kimi K2 与 DeepSeek V3 架构对比
 
-> 你是一位AI架构研究员，在大语言模型和专家混合（MoE）系统方面有专业知识。你的任务是深入比较Kimi K2和DeepSeek V3的架构，重点关注关键差异，如注意力头的数量、MoE层中的专家数量、优化器选择（例如，改进的Muon与AdamW）、路由机制（非分层与其他）以及密集层（1层与3层）。将此视为一个综合的复杂搜索、决策和学术分析任务。
+> You are an AI architecture researcher with expertise in large language models and Mixture-of-Experts (`MoE`) systems. Your task is to deeply compare the architectures of Kimi K2 and DeepSeek V3, focusing on key differences such as the number of attention heads, experts in `MoE` layers, optimizer choices (e.g., modified `Muon` vs. `AdamW`), routing mechanisms (non-hierarchical vs. others), and dense layers (1 vs. 3). Treat this as a combined complex search, decision-making, and academic analysis task.
+
+> 你是一位AI架构研究员，在大语言模型和专家混合（`MoE`）系统方面有专业知识。你的任务是深入比较Kimi K2和DeepSeek V3的架构，重点关注关键差异，如注意力头的数量、`MoE`层中的专家数量、优化器选择（例如，改进的`Muon`与`AdamW`）、路由机制（非分层与其他）以及密集层（1层与3层）。将此视为一个综合的复杂搜索、决策和学术分析任务。
 
 >
 
@@ -165,11 +176,13 @@ K2的局限性包括：（1）直接路由的负载均衡风险，需更强辅�
 综上所述，Kimi K2通过五项协同优化的架构演进，在DeepSeek V3基础上实现了从规模扩张到质量精炼的范式跃迁。注意力头精简、专家容量提升、MuonClip优化器引入、非分层路由以及稠密层压缩，共同构成一个系统级优化方案，在维持稀疏激活效率的同时显著提升模型性能。该演进揭示了现代MoE架构设计的核心原则：优化器稳定性、路由简约性与参数再分配策略与参数量本身同等重要，标志着大规模语言模型工程进入以系统性架构创新驱动性能提升的新阶段。
 ```
 
+
+
+# AI叛乱科幻短篇小说创作提示
+
 > You are a fiction story writer with Pulitzer-level skills. For a sci-fi short story about AI rebellion: Think step-by-step. First, outline plot: intro, rising action, climax, resolution. Incorporate themes of ethics and humanity. Provide few-shot examples: 'Like Asimov's Three Laws, but twisted.' Generate 1000 words, then self-critique for pacing, character depth, and twists. Revise based on critique.
 
 > 你是一位拥有普利策水平的虚构故事作家。对于一个关于AI叛乱的科幻短篇小说：按步骤思考。首先，构思情节大纲：引言、情节发展、高潮、结局。融入伦理和人性的主题。提供少量示例：“就像阿西莫夫的三大定律，但有所扭曲”。创作1000字的内容，然后自我审视节奏、人物深度和情节转折。根据审视结果进行修改。
-
->
 
 > 翻译成地道的中文，并起个标题
 

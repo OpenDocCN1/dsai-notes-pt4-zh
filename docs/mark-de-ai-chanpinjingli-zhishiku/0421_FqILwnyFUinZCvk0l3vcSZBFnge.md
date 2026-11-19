@@ -1,16 +1,17 @@
+
 # GraphRAG-Local - 基于 GraphRAG 支持本地的聊天
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/OwkOdl9SEoaQmuxmtI5cvvOCnaf](https://qqs7y1hozd1.feishu.cn/docx/OwkOdl9SEoaQmuxmtI5cvvOCnaf)
 
-### 一、关于 GraphRAG-Local
+## 一、关于 GraphRAG-Local
 
 GraphRAG-Local，是带有索引/提示-调整和查询/聊天！该项目是微软GraphRAG的改编，专为支持本地模型而定制，并具有全面的交互式用户交互界面生态系统。
 
 特点
 
-以API为中心的架构： 强大的基于FastAPI的服务器（api.py），作为GraphRAG操作的核心。
+以API为中心的架构： 强大的基于`FastAPI`的服务器（`api.py`），作为GraphRAG操作的核心。
 
-专用索引和提示调整用户界面： 一个单独的基于图形的界面（index_app.py），用于管理索引和提示调整过程。
+专用索引和提示调整用户界面： 一个单独的基于图形的界面（`index_app.py`），用于管理索引和提示调整过程。
 
 本地模型支持：利用本地模型进行LLM和嵌入，包括与Ollama和OpenAI兼容的API的兼容性。
 
@@ -32,18 +33,18 @@ GraphRAG-Local，是带有索引/提示-调整和查询/聊天！该项目是微
 
 可定制的可视化：调整图形布局、节点大小、颜色等以适应您的偏好（主应用程序）。
 
-### 二、安装和设置
+## 二、安装和设置
 
 按照以下步骤设置和运行GraphRAG本地生态系统：
 
-1、创建并激活一个新的conda环境：
+### 1、创建并激活一个新的conda环境
 
 ```
 conda create -n graphrag-local -y
 conda activate graphrag-local
 ```
 
-2、安装所需的包：
+### 2、安装所需的包
 
 首先从此存储库安装GraphRAG目录（Microsoft存储库中不存在更改）：
 
@@ -57,27 +58,27 @@ pip install -e ./graphrag
 pip install -r requirements.txt
 ```
 
-3、启动API服务器：
+### 3、启动API服务器
 
 ```
 python api.py --host 0.0.0.0 --port 8012 --reload
 ```
 
-4、如果使用Ollama进行嵌入，请启动嵌入代理：
+### 4、如果使用Ollama进行嵌入，请启动嵌入代理
 
 ```
 python embedding_proxy.py --port 11435 --host http://localhost:11434
 ```
 
-注意：有关将Ollama嵌入与GraphRAG一起使用的详细说明，请参阅EMBEDDING_PROXY_README.md文件。
+注意：有关将Ollama嵌入与GraphRAG一起使用的详细说明，请参阅`EMBEDDING_PROXY_README.md`文件。
 
-5、启动索引和提示调整UI：
+### 5、启动索引和提示调整UI
 
 ```
 gradio index_app.py
 ```
 
-6、启动主交互式UI（旧版应用程序）：
+### 6、启动主交互式UI（旧版应用程序）
 
 ```
 gradio app.py
@@ -89,11 +90,11 @@ gradio app.py
 python app.py
 ```
 
-### 三、使用入门🚀
+## 三、使用入门🚀
 
 GraphRAG专为灵活性而设计，允许您快速创建和初始化自己的索引目录。按照以下步骤设置您的环境：
 
-#### 1、创建索引目录
+### 1、创建索引目录
 
 此repo带有一个预制的索引文件夹，但您可能想制作自己的索引文件夹，因此以下是步骤。首先，为输入数据和索引结果创建所需的目录结构：
 
@@ -103,13 +104,13 @@ mkdir -p ./indexing/input
 
 该目录将存储：
 
-+   输入.txt文件进行索引
++   输入`.txt`文件进行索引
 
 +   输出结果
 
 +   提示及时调整
 
-#### 2、添加示例数据（可选）
+### 2、添加示例数据（可选）
 
 如果您想从示例数据开始，请将其复制到您的新输入目录：
 
@@ -117,19 +118,19 @@ mkdir -p ./indexing/input
 cp input/* ./indexing/input
 ```
 
-您还可以将自己的.txt文件添加到此目录以进行索引。
+您还可以将自己的`.txt`文件添加到此目录以进行索引。
 
-#### 3、初始化索引文件夹
+### 3、初始化索引文件夹
 
-运行以下命令以使用所需文件初始化./index 文件夹：
+运行以下命令以使用所需文件初始化`./index` 文件夹：
 
 ```
 python -m graphrag.index --init --root ./indexing
 ```
 
-#### 4、配置设置
+### 4、配置设置
 
-将预先配置好的settings.yaml文件移动到索引目录：
+将预先配置好的`settings.yaml`文件移动到索引目录：
 
 ```
 mv settings.yaml ./indexing
@@ -137,21 +138,21 @@ mv settings.yaml ./indexing
 
 此文件包含主要配置，预设用于本地模型。
 
-#### 5、定制
+### 5、定制
 
 您可以通过修改以下环境变量来自定义设置：
 
-+   ROOT_DIR：指向您的主索引目录
++   `ROOT_DIR`：指向您的主索引目录
 
-+   INPUT_DIR：指定输入文件的位置
++   `INPUT_DIR`：指定输入文件的位置
 
-### 四、GraphRAG应用生态系统 🖥️
+## 四、GraphRAG应用生态系统 🖥️
 
 GraphRAG Local UI生态系统由三个主要组件组成，每个组件在知识图谱创建和查询过程中都有特定用途：
 
-#### 1、核心API（api.py）
+### 1、核心API（`api.py`）
 
-该api.py文件作为GraphRAG系统的主干，提供了一个强大的基于FastAPI的服务器来处理所有核心操作。
+该`api.py`文件作为GraphRAG系统的主干，提供了一个强大的基于`FastAPI`的服务器来处理所有核心操作。
 
 主要特点：
 
@@ -169,25 +170,23 @@ GraphRAG Local UI生态系统由三个主要组件组成，每个组件在知识
 python api.py --host 0.0.0.0 --port 8012 --reload
 ```
 
-注意：如果使用Ollama进行嵌入，请确保在api.py旁边运行嵌入代理（embedding_proxy.py）。有关详细说明，请参阅EMBEDDING_PROXY_README.md。
+注意：如果使用Ollama进行嵌入，请确保在`api.py`旁边运行嵌入代理（`embedding_proxy.py`）。有关详细说明，请参阅`EMBEDDING_PROXY_README.md`。
 
-#### 2、索引和提示调整UI（index_app.py）
+### 2、索引和提示调整UI（`index_app.py`）
 
 工作流集成
 
-启动Core API（api.py）以启用后端功能。
+启动Core API（`api.py`）以启用后端功能。
 
-如果使用Ollama进行嵌入，请启动嵌入代理（embedding_proxy.py）。
+如果使用Ollama进行嵌入，请启动嵌入代理（`embedding_proxy.py`）。
 
-使用索引和提示调整UI（index_app.py）准备数据并微调系统。
+使用索引和提示调整UI（`index_app.py`）准备数据并微调系统。
 
-（可选）使用主交互式UI（app.py）进行可视化和遗留功能。
+（可选）使用主交互式UI（`app.py`）进行可视化和遗留功能。
 
-这种模块化方法为GraphRAG系统提供了更大的灵活性和更容易的维护。随着开发的继续，app.py的功能将逐渐集成到与核心应用编程接**互的新的专用接口中。
+这种模块化方法为GraphRAG系统提供了更大的灵活性和更容易的维护。随着开发的继续，`app.py`的功能将逐渐集成到与核心应用编程接**互的新的专用接口中。
 
-#### 2、索引和提示调整UI（index_app.py）
-
-该index_app.py文件提供了一个用户友好的Gradio界面，用于管理索引和提示调整过程。
+该`index_app.py`文件提供了一个用户友好的`Gradio`界面，用于管理索引和提示调整过程。
 
 主要特点：
 
@@ -205,9 +204,9 @@ python api.py --host 0.0.0.0 --port 8012 --reload
 python index_app.py
 ```
 
-#### 3、Main Interactive UI (Legacy App) (app.py)
+### 3、Main Interactive UI (Legacy App) (`app.py`)
 
-该app.py文件是预先存在的主应用程序，正在逐步淘汰，但仍提供有用的功能。
+该`app.py`文件是预先存在的主应用程序，正在逐步淘汰，但仍提供有用的功能。
 
 主要特点：
 
@@ -233,17 +232,17 @@ gradio app.py
 
 工作流集成
 
-启动Core API（api.py）以启用后端功能。
+启动Core API（`api.py`）以启用后端功能。
 
-使用索引和提示调整UI（index_app.py）准备数据并微调系统。
+使用索引和提示调整UI（`index_app.py`）准备数据并微调系统。
 
-（可选）使用主交互式UI（app.py）进行可视化和遗留功能。
+（可选）使用主交互式UI（`app.py`）进行可视化和遗留功能。
 
-这种模块化方法为GraphRAG系统提供了更大的灵活性和更容易的维护。随着开发的继续，app.py的功能将逐渐集成到与核心应用编程接**互的新的专用接口中。
+这种模块化方法为GraphRAG系统提供了更大的灵活性和更容易的维护。随着开发的继续，`app.py`的功能将逐渐集成到与核心应用编程接**互的新的专用接口中。
 
-### 五、其它
+## 五、其它
 
-#### 📚引用
+### 📚引用
 
 +   微软的原始GraphRAG存储库：GraphRAG
 
@@ -253,7 +252,7 @@ gradio app.py
 
 如果您在使用新API或索引UI时遇到任何问题，请检查控制台日志以获取详细的错误消息。
 
-对于主应用程序，如果您无法运行gradio app.py，请尝试运行pip install --upgrade gradio，然后退出并启动一个新终端。然后它应该作为Gradio应用程序正常加载和启动。
+对于主应用程序，如果您无法运行`gradio app.py`，请尝试运行`pip install --upgrade gradio`，然后退出并启动一个新终端。然后它应该作为Gradio应用程序正常加载和启动。
 
 在Windows上，如果遇到编码/UTF错误，可以在YAML设置菜单中将其更改为正确的格式。
 

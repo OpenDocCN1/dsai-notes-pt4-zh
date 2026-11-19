@@ -1,44 +1,27 @@
+
 # 奇绩大模型日报（7月 25日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/W8dtdiBXGoEOYDxZY2Qc4CTrnjd](https://miracleplus.feishu.cn/docx/W8dtdiBXGoEOYDxZY2Qc4CTrnjd)
 
-# 🔔潜空间活动预告
+## 🔔潜空间活动预告
 
 > **潜空间系列活动第三季全面升级！**
-
 >
-
 > 第三季第一期将在**7.27上午10:00**开始，嘉宾是**宋佳铭**。活动包括嘉宾分享、访谈Q&A、cofounder matching餐会。活动现场还可以体验到咱们奇绩校友 【右脑科技】的最新产品，期待大家大力支持！
-
 >
-
 > 宋佳铭-Luma AI 首席科学家，斯坦福大学计算机科学博士、博士后；曾任职英伟达（DIR）小组科学家 ，创建了最早的扩散模型加速算法，该算法广泛用于最近的生成式 AI 系统，包括 DALL-E 2、Imagen、Stable Diffusion 和 ERNIE-ViLG 2.0。
-
 >
-
->
-
 > 陈贝迪-卡内基梅隆大学助理教授，斯坦福大学人工智能博士后学者，前 Meta AI 研究科学家；致力于在现代硬件上设计和优化算法和模型，以加速大型机器学习系统。
-
 >
-
->
-
 > 童晟邦- 纽约大学博士，伯克利人工智能实验室（BAIR）研究员， OpenAI 超对齐奖学金获得者；
-
 >
-
 > 闫俊杰-MiniMax 创始人兼 CEO。是中国第一梯队的大模型创业者，目前 MiniMax 估值超 25 亿美元。
-
 >
-
->
-
 > 本季活动同时开放**北京线下、上海线下和线上**场次，欢迎校友和外部创业者扫描右方二维码报名！
 
 ![](img/2a656205c2e4fd4718ba0e46b38f39b6.png)
 
-# 推特
+## 推特
 
 ### Mistral Large 2: 在代码生成、数学和推理方面具有显著的能力提升
 
@@ -72,7 +55,7 @@ https://x.com/StabilityAI/status/1816126682816000132
 
 ![](img/396b87d8eced42298c49b0dc786b3b4e.png)
 
-[ssstwitter.com_1721915077397.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R3p5bMXzmoFZVhx53zVcWYUOn7b)
+[`ssstwitter.com_1721915077397.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R3p5bMXzmoFZVhx53zVcWYUOn7b)
 
 ### 足球AI代码开源：球员检测和追踪、团队聚类、摄像机校准
 
@@ -88,12 +71,11 @@ https://x.com/skalskip92/status/1816162584049168389
 
 README文件我还在完善中，请不要评价我。
 
-代码地址：https://github.com/roboflow/sports
+代码地址：`https://github.com/roboflow/sports`
 
 在体育运动中，每一厘米和每一秒都至关重要。这就是为什么Roboflow决定将体育作为测试平台，以极限推进我们的物体检测、图像分割、关键点检测和基础模型。这个仓库包含可在体育及其他领域应用的可重用工具。
 
-
-[ssstwitter.com_1721915156157 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YZvabD4y8odPthx3kkVcCgEgn2e)
+[`ssstwitter.com_1721915156157 (1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YZvabD4y8odPthx3kkVcCgEgn2e)
 
 ### DeepLearningAI: 学习如何使用联邦学习在分布式数据上训练大型语言模型
 
@@ -121,7 +103,7 @@ https://x.com/AndrewYNg/status/1816171538275787145
 
 ![](img/d5b37bc0f64d9a73d865c7fc3aeefb7a.png)
 
-[ssstwitter.com_1721915300315.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IwHcbX1CjoN8voxyPm8cP0GQn0g)
+[`ssstwitter.com_1721915300315.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IwHcbX1CjoN8voxyPm8cP0GQn0g)
 
 ### Anthropic宣布Build with Claude比赛获奖三项目
 
@@ -149,7 +131,7 @@ Claude 3.5 Sonnet支持的工具，阅读您的文档并在需要的地方添加
 
 ![](img/8b30a667eaabbf2d69e6f02a2d8a59c7.png)
 
-# 资讯
+## 资讯
 
 ### 字节大模型同传智能体，一出手就是媲美人类的同声传译水平
 
@@ -199,7 +181,7 @@ https://mp.weixin.qq.com/s/7wdAVMNTBCq8kR1Ete9QSA
 
 ![](img/86b810b3dad6e1ba2b7658643e52b071.png)
 
-# 产品
+## 产品
 
 ### Hey AI
 
@@ -221,7 +203,7 @@ MrScraper 是一款无代码的数据抓取工具，简化数据获取过程，�
 
 ![](img/46c54435333d888c184ab028ddd367f6.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Outfit Anyone
 
@@ -241,7 +223,7 @@ https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 
 Meta Llama 3.1 是一系列多语言的大型语言模型（LLMs），包括8B、70B和405B三个不同规模的预训练和指令调优生成模型。它们专为多语言对话场景优化，并在常见行业基准测试中表现优于许多现有的开放源代码和闭源聊天模型。Llama 3.1 采用优化的变换器架构，调优版本使用监督微调（SFT）和基于人类反馈的强化学习（RLHF），以符合人类在帮助性和安全性方面的偏好，训练数据库的知识截止日期为2023年12月。
 
-# 投融资
+## 投融资
 
 ### DAOBase完成600万美元融资以增强DAO治理
 
@@ -261,63 +243,69 @@ DAOBase专注于为DAOs提供先进的算法，构建链上和链下数据信誉
 
 贡献人：
 
-https://mp.weixin.qq.com/s/gnRDE-w5-P25gtMzk8PN6g
+
+
+# 行业动态
+
+## 百川智能完成A轮融资，估值达200亿元
+
+`https://mp.weixin.qq.com/s/gnRDE-w5-P25gtMzk8PN6g`
 
 大模型初创公司「百川智能」近期完成A轮融资，总金额达50亿元人民币。本轮融资由阿里、腾讯、小米等科技巨头和多家顶级投资机构领投，北京市人工智能产业投资基金、上海人工智能产业投资基金、深创投等国资背景产业投资基金也参与其中。融资完成后，百川智能估值已达200亿元，并计划启动B轮融资。公司由前搜狗CEO王小川创立，核心团队来自多家顶尖科技公司。
 
-公司官网：https://www.baichuan-ai.com/home
+公司官网：`https://www.baichuan-ai.com/home`
 
 ![](img/09f936420754d21c768cb0bad0a23bb3.png)
 
-### Lakera完成2000万美元A轮融资，致力于保护生成型AI应用
+## Lakera完成2000万美元A轮融资，致力于保护生成型AI应用
 
 贡献人：
 
-https://techcrunch.com/2024/07/24/lakera-which-protects-enterprises-from-llm-vulnerabilities-raises-20m/
+`https://techcrunch.com/2024/07/24/lakera-which-protects-enterprises-from-llm-vulnerabilities-raises-20m/`
 
 瑞士初创公司Lakera专注于保护生成型AI应用免受恶意提示攻击，已完成2000万美元的A轮融资。此次融资由欧洲风险投资公司Atomico领投，参与方包括Dropbox的VC部门、Citi Ventures和Redalpine。Lakera成立于2021年，总部位于苏黎世，去年10月以1000万美元资金启动，主要提供低延迟的AI应用防火墙Lakera Guard，防止数据泄漏和提示注入等安全威胁。新资金将用于扩展全球业务，尤其是美国市场。
 
-公司官网：https://www.lakera.ai/
+公司官网：`https://www.lakera.ai/`
 
 ![](img/83d44646497930f705b774b29f61a56e.png)
 
 # 学习
 
-### 大模型结构的进化（一）：LLaMA 3.1结构及影响解析
+## 大模型结构的进化（一）：LLaMA 3.1结构及影响解析
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/710780476
+`https://zhuanlan.zhihu.com/p/710780476`
 
 作者在文章中详细阐述了 LLaMA 3.1 模型的结构演进和技术细节。LLaMA 3.1 采用了标准的 Transformer 架构，通过初始预训练、长上下文预训练和退火阶段，优化了模型对长序列和多语言的处理能力。在数据配比方面，模型通过混合不同类型数据，提高了训练效率和模型泛化能力。Post-Training 阶段，LLaMA 3.1 通过强化学习和蒸馏技术，尤其是拒绝采样和蒸馏，进一步提升了性能。文章指出，LLaMA 3.1 没有采用 MOE 结构，是基于 Dense 模型训练更稳定的考虑。此外，LLaMA 3.1 的开源行为对 AI 界产生了深远影响，促进了开源模型的发展，并推动了小模型通过数据和技术手段提升效能的趋势。总结来说，LLaMA 3.1 的技术细节体现在其模型结构的选择、预训练和 Post-Training 的策略，以及对合成数据的应用，这些都是提升大模型性能的关键因素。
 
 ![](img/b25e568e98bd1bbbaebbfcc46966c47d.png)
 
-### 从0开始实现LLM：7.1、Reward/PPO/DPO/KTO/SimPO详解
+## 从0开始实现LLM：7.1、Reward/PPO/DPO/KTO/SimPO详解
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/705853749?utm_psn=1799526611231584256
+`https://zhuanlan.zhihu.com/p/705853749?utm_psn=1799526611231584256`
 
 本文深入探讨了大型语言模型（LLM）训练中的优化算法，包括 Reward、PPO、DPO、KTO 和 SimPO。Reward 函数是模型学习的基础，它定义了学习目标。PPO 算法通过限制策略更新步长，确保训练过程的稳定性。DPO 则是 PPO 的分布式优化，提高了计算效率。KTO 利用核函数近似 TD 误差，为策略优化提供了新的视角。SimPO 进一步简化了 PPO 算法，易于实现和理解。这些算法各有特点，在实际应用中需要根据具体问题选择合适的优化策略。技术细节上，PPO 和 DPO 关注策略梯度的稳定性和并行化，KTO 则侧重于通过核方法来处理 TD 误差，而 SimPO 致力于算法的简化和易用性。
 
 ![](img/6cd1b51959be09aee07596322a7c5f25.png)
 
-### 铠侠最新BiCS8 218L NAND键合技术
+## 铠侠最新BiCS8 218L NAND键合技术
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/710752331
+`https://zhuanlan.zhihu.com/p/710752331`
 
 铠侠最新推出的 BiCS8 218L NAND 技术，是一种集成了 3D Flash 存储和多级存储技术的创新性解决方案。该技术通过提升 NAND Flash 存储芯片的层数至 218 层，实现了显著提高的存储密度。BiCS8 采用了先进的键合技术，每个存储单元能够存储超两位的信息，大大增强了单元的多级存储能力。此外，该技术在读写速度上进行了优化，同时降低了能耗，使其更适合在客户端、数据中心和企业级应用中使用。
 
 ![](img/1f51dd9ffeab9393d31cf7793763d995.png)
 
-### “闭门造车”之多模态思路浅谈（二）：自回归
+## “闭门造车”之多模态思路浅谈（二）：自回归
 
 贡献人：
 
-https://kexue.fm/archives/10197
+`https://kexue.fm/archives/10197`
 
 1、自回归学习既为模型赋予了生成能力，同时也是通过生成来促进理解能力的无监督学习途径；
 
@@ -337,41 +325,41 @@ https://kexue.fm/archives/10197
 
 ![](img/d7dc1e8e36636dc11a1625c940ec7b48.png)
 
-### 漫谈大模型推理优化技术系列——（二）模型推理服务
+## 漫谈大模型推理优化技术系列——（二）模型推理服务
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/710713076?utm_psn=1799523061483040768
+`https://zhuanlan.zhihu.com/p/710713076?utm_psn=1799523061483040768`
 
 推理服务的高效能对于大模型的实际应用至关重要，它直接影响到模型的响应速度和用户体验。在技术细节方面，文章首先提到了模型结构的优化，包括选择更轻量化的网络架构和进行模型剪枝以减少计算复杂度。接着，强调了推理引擎的选择对于性能的影响，以及如何通过批量处理提高数据处理效率。此外，文章还讨论了内存管理优化、多线程和异步处理等技术，这些都是提升推理服务性能的关键。在部署推理服务时，还需考虑其可扩展性、高可用性和实时监控，以确保服务稳定性和可靠性。
 
 ![](img/88aa7b6b12b437aaf3eda1a47c638a79.png)
 
-### GPU与DSA架构分析
+## GPU与DSA架构分析
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/701886530?utm_psn=1799463508926132225
+`https://zhuanlan.zhihu.com/p/701886530?utm_psn=1799463508926132225`
 
-文章首先介绍了 GPU 的基本概念和特点，以及它在数据处理和并行计算领域的应用。随后，对 DSA（Domain Specific Architecture）进行了详细的阐述，指出 DSA 架构能够更好地适应特定领域的计算需求，提供了更高的性能和能效。文章接着分析了 GPU 与 DSA 架构在性能优化、功耗控制以及软硬件协同设计方面的优势和挑战。特别是在处理大数据和复杂算法时，GPU 和 DSA 的高效并行处理能力尤为突出。
+文章首先介绍了 GPU 的基本概念和特点，以及它在数据处理和并行计算领域的应用。随后，对 DSA（Domain Specific Architecture）进行了详细的阐述，指出 DSA 架构能够更好地适应特定领域的计算需求，提供了更高的性能和能效。文章接着分析了 GPU 与 DSA 架构在性能优化、功耗控制以及软硬件协同设计方面的优势和挑战。特别是在处理大数据和复杂算法时，GPU 和 DSA 的高效并行处理能力尤其突出。
 
 ![](img/37cc4800628757fb6d196baaeeaa4273.png)
 
-### 万字长文分享快手 Kolors 可图大模型应用实践
+## 万字长文分享快手 Kolors 可图大模型应用实践
 
 贡献人：
 
-https://mp.weixin.qq.com/s/JMh-Dictf20nVOP41SX6iA
+`https://mp.weixin.qq.com/s/JMh-Dictf20nVOP41SX6iA`
 
 快手「可图」Kolors 大模型在 AICon 北京站活动中展示了其在视觉生成领域的卓越应用。该模型采用了最新的扩散模型技术，在数据、模型和效果评估方面都做出了深入的探讨。数据侧强调数据量大、覆盖全、图像质量高和图文相关性强，同时确保数据安全。模型侧则采用了 Stable Diffusion 和 DiT 框架，预测这些技术框架将在未来一年内仍然是视觉生成的主流。效果评估方面，可图大模型通过机器和人工评估相结合，确保了生成图像的质量和相关性。此外，可图大模型还具备提示词润色、文字绘制和交互式视觉生成等衍生能力，极大地扩展了其应用范围。在实际应用中，可图大模型已经在 AI 玩评、AI 人像、IP 定制等多个场景中得到了验证和应用，显示出其在商业和娱乐领域的巨大潜力。
 
 ![](img/7f7dc6e3c9b9cb3246c20be0adea9609.png)
 
-###  合成数据：模型能力跃迁的必经之路
+## 合成数据：模型能力跃迁的必经之路
 
 贡献人：
 
-https://mp.weixin.qq.com/s/4sbbtY🐧JAaEnN9mSg61Ow
+`https://mp.weixin.qq.com/s/4sbbtY🐧JAaEnN9mSg61Ow`
 
 合成数据作为一种新型数据资源，在大模型的预训练和对齐阶段扮演了关键角色。它能够补充和强化语料库，提高数据的 “可用性”，从而提升模型在复杂推理和 Agent 能力等方面的性能。通过 Self-play 技术，合成数据使得模型能够在没有人类干预的情况下自我提升，实现从 “弱” 到 “强” 的能力跃迁。在具身智能领域，合成数据通过模拟真实世界的数据，解决了数据获取的难题，特别是在机器人等硬件应用中的数据训练和优化。此外，合成数据的治理策略需要关注人类参与度和监督，以及在不同应用场景下的质量控制，确保模型的安全性和可靠性。通过合成数据与真实数据的混合应用，大模型能力得以跃迁，为 AI 技术的进一步发展提供了有力支持
 
@@ -380,8 +368,6 @@ https://mp.weixin.qq.com/s/4sbbtY🐧JAaEnN9mSg61Ow
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -393,13 +379,13 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
 
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

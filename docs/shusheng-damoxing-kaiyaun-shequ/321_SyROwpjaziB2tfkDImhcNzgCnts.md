@@ -1,10 +1,11 @@
+
 # 3.1 注意力机制
 
 > 来源：[https://aicarrier.feishu.cn/docx/N85udfUN1oJctyx4Jy3c5wDOn5g](https://aicarrier.feishu.cn/docx/N85udfUN1oJctyx4Jy3c5wDOn5g)
 
-# 注意力机制原理介绍
+## 注意力机制原理介绍
 
-## 概念上的理解
+### 概念上的理解
 
 如果要用通俗易懂的语言介绍，Transformer 里面的 Attention 注意力机制和人的注意力类似。
 
@@ -12,51 +13,51 @@
 
 从增强字 / 词的语义表示这一角度介绍，一个字 / 词在一篇文本中表达的意思通常与它的上下文有关。光看 “ 鹄 ” 字，我们可能会觉得很陌生，而看到它的上下文 “ 鸿鹄之志 ” 后，就对它立马熟悉了起来。因此，字 / 词的上下文信息有助于增强其语义表示。同时，上下文中的不同字 / 词对增强语义表示所起的作用往往不同。比如在上面这个例子中， “ 鸿 ” 字对理解 “ 鹄 ” 字的作用最大，而 “ 之 ” 字的作用则相对较小。为了有区分地利用上下文字信息增强目标字的语义表示，就可以用到 Attention 机制。
 
-Attention 帮助模型对输入的x每部分赋予不同的权重，抽取更重要的信息，使模型做出准确判断。
+Attention 帮助模型对输入的`x`每部分赋予不同的权重，抽取更重要的信息，使模型做出准确判断。
 
-## 传统的 Attention
+### 传统的 Attention
 
 在介绍 Transformer 的 Self-Attention 之前，我们先来介绍一下传统的 Attention，其结构如下所示：
 
 ![](img/ecb19bf66fa7a95aa0ef8a4bf59bb9f3.png)
 
-其中， 表示 Source 的长度
+其中，`Source` 的长度
 
-对于给定的一个 Query，计算该 Query 和各个 Key 的相似度或相关性，得到每个 Key 对应 Value 的一个权重 Score，然后对 Score 和 Value 进行加权求和。
+对于给定的一个 `Query`，计算该 `Query` 和各个 `Key` 的相似度或相关性，得到每个 `Key` 对应 `Value` 的一个权重 `Score`，然后对 `Score` 和 `Value` 进行加权求和。
 
-**核心**：Attention 机制通过对 Source 中各个元素的 Value 进行加权求和计算得到，而 Query 和 Key 用于计算对应 Value 的权重
+核心：Attention 机制通过对 `Source` 中各个元素的 `Value` 进行加权求和计算得到，而 `Query` 和 `Key` 用于计算对应 `Value` 的权重
 
 如果整个过程需要更加完整一点，就是下图这样：
 
 ![](img/24e18fd1fb11c2c07077d7afa46ed190.png)
 
-**阶段一：计算权重**
+阶段一：计算权重
 
-采用不同的函数或计算方式（如向量点积、余弦相似度）对 Query 和 Key 进行计算，求出相似度或相关性
+采用不同的函数或计算方式（如向量点积、余弦相似度）对 `Query` 和 `Key` 进行计算，求出相似度或相关性
 
-**阶段二：Softmax 归一化**
+阶段二：`Softmax` 归一化
 
-首先是因为阶段一得到的 score 可能存在分布过于分散的问题，需要将原始计算分值变成所有元素权重之和为1的概率分布，其次也可以通过 Softmax 操作更加突出重要元素的权重
+首先是因为阶段一得到的 `score` 可能存在分布过于分散的问题，需要将原始计算分值变成所有元素权重之和为1的概率分布，其次也可以通过 `Softmax` 操作更加突出重要元素的权重
 
-**阶段三：加权求和**
+阶段三：加权求和
 
-阶段二计算结果 即为 对应的权重系数，进行加权求和即可得到 Attention 的数值，也即上面提到的公式：
+阶段二计算结果即为对应的权重系数，进行加权求和即可得到 Attention 的数值，也即上面提到的公式：
 
-其中， 表示 Source 的长度
+其中，`Source` 的长度
 
 那么传统的 Attention 有哪些问题呢？
 
-一个比较主要的问题就是，传统的 Attention 只关注了 source 和 target 之间的关系，而忽略了本身内部词与词之间的关系。
+一个比较主要的问题就是，传统的 Attention 只关注了 `source` 和 `target` 之间的关系，而忽略了本身内部词与词之间的关系。
 
-## 为什么会出现 Self-Attention
+### 为什么会出现 Self-Attention
 
 +   CNN 存在长距离依赖的问题
 
 +   RNN 存在无法并行化的问题（虽然 LSTM 能在一定程度上缓解长距离依赖的问题，但是还是存在）
 
-+   传统的 Attention 只关注了 source 和 target 之间的关系，而忽略了本身内部词与词之间的关系
++   传统的 Attention 只关注了 `source` 和 `target` 之间的关系，而忽略了本身内部词与词之间的关系
 
-## Self-Attention 的核心思想
+### Self-Attention 的核心思想
 
 Self-Attention 的结构在计算每个 Token 的时候，总是会考虑到整个序列其他 Token 的表达。
 
@@ -68,79 +69,77 @@ Self-Attention 公式：
 
 ![](img/5c70827a1a112c13eb6bf7a11c6a6603.png)
 
-每个位置的 embedding对应 Q,K,V 三个向量，这三个向量分别是 embedding 点乘   矩阵得来的。每个位置的 Q 向量去乘上所有位置的 K 向量，其结果经过 softmax 变成 attention score，以此作为权重对所有 V 向量做加权求和即可。
+每个位置的 `embedding` 对应 `Q`、`K`、`V` 三个向量，这三个向量分别是 `embedding` 点乘 矩阵得来的。每个位置的 `Q` 向量去乘上所有位置的 `K` 向量，其结果经过 `softmax` 变成 attention score，以此作为权重对所有 `V` 向量做加权求和即可。
 
 具体步骤如下：
 
-1.  embedding 层
+1. `embedding` 层
 
-将词转化成embedding向量
+将词转化成`embedding`向量
 
-1.  Q，K，V 向量计算
+2. `Q`、`K`、`V` 向量计算
 
-根据 embedding 和权重矩阵，得到 Q，K，V
+根据 `embedding` 和权重矩阵，得到 `Q`、`K`、`V`
 
-Q：查询向量，目标字作为 Query
+`Q`：查询向量，目标字作为 `Query`
 
-K：键向量，其上下文的各个字作为 Key
+`K`：键向量，其上下文的各个字作为 `Key`
 
-V：值向量，上下文各个字的 Value
+`V`：值向量，上下文各个字的 `Value`
 
-1.  权重 score 计算
+3. 权重 `score` 计算
 
-查询向量 query 点乘 key
+查询向量 `query` 点乘 `key`
 
 目的：计算其他词对这个词的重要性，也就是权值；
 
-1.  scale 操作
+4. `scale` 操作
 
 乘以
 
-目的：起到调节作用，使得内积不至于太大。实际上是Q，K，V的最后一个维度，当 dk 越大， QKT 就越大，可能会将 Softmax 函数推入梯度极小的区域；
+目的：起到调节作用，使得内积不至于太大。实际上是`Q`、`K`、`V`的最后一个维度，当 `dk` 越大，`QKT` 就越大，可能会将 `Softmax` 函数推入梯度极小的区域；
 
-1.  Softmax 归一化
+5. `Softmax` 归一化
 
-1.  Attention 的输出计算
+6. Attention 的输出计算
 
-权值 score 和各个上下文字的 V 向量 的加权求和
+权值 `score` 和各个上下文字的 `V` 向量的加权求和
 
-目的：把上下文各个字的 V 融入目标字的原始 V 中
-
-## 其他细节
+目的：把上下文各个字的 `V` 融入目标字的原始 `V` 中
 
 #### Self-Attention 如何并行化
 
 为什么 RNN 不能并行化？
 
-原因：RNN 在 计算 xi 的时候，需要考虑到 x1 xi−1 的 信息，使得 RNN 只能 从 x1 计算到 xi
+原因：RNN 在 计算 `xi` 的时候，需要考虑到 `x1` `xi−1` 的 信息，使得 RNN 只能 从 `x1` 计算到 `xi`
 
 #### 为什么 Self-Attention 可以并行化？
 
-在 self-attention 中能够并行的计算句子中不同的 query，因为每个 query 之间并不存在 先后依赖关系，使得 transformer 能够并行化
+在 self-attention 中能够并行的计算句子中不同的 `query`，因为每个 `query` 之间并不存在 先后依赖关系，使得 transformer 能够并行化
 
-#### 为什么用双线性点积模型（即Q，K两个向量）
+#### 为什么用双线性点积模型（即`Q`、`K`两个向量）
 
-双线性点积模型使用Q，K两个向量，而不是只用一个Q向量，这样引入非对称性，更具健壮性（Attention对角元素值不一定是最大的，也就是说当前位置对自身的注意力得分不一定最高）
+双线性点积模型使用`Q`、`K`两个向量，而不是只用一个`Q`向量，这样引入非对称性，更具健壮性（Attention对角元素值不一定是最大的，也就是说当前位置对自身的注意力得分不一定最高）
 
-#### self-attention 为什么Q和K使用不同的权重矩阵生成，为何不能使用同一个值进行自身的点乘？
+#### self-attention 为什么`Q`和`K`使用不同的权重矩阵生成，为何不能使用同一个值进行自身的点乘？
 
-因为Q、K、V的不同，可以保证在不同空间进行投影，增强了表达能力，提高了泛化能力。
+因为`Q`、`K`、`V`的不同，可以保证在不同空间进行投影，增强了表达能力，提高了泛化能力。
 
 #### 为什么采用点积模型而不采用加性模型？
 
-在理论上，加性模型和点积模型的复杂度差不多，但是点积模型在实现上可以更好地利用矩阵乘法，而矩阵乘法有很多加速策略，因此能加速训练。但是论文中实验表明，当维度d越来越大时，加性模型的效果会略优于点积模型，原因应该是加性模型整体上还是比点积模型更复杂（有非线性因素）。
+在理论上，加性模型和点积模型的复杂度差不多，但是点积模型在实现上可以更好地利用矩阵乘法，而矩阵乘法有很多加速策略，因此能加速训练。但是论文中实验表明，当维度`d`越来越大时，加性模型的效果会略优于点积模型，原因应该是加性模型整体上还是比点积模型更复杂（有非线性因素）。
 
-#### Transformer 中在计算 self-attention 时为什么要 scaled dot product? 即除以 d？
+#### Transformer 中在计算 self-attention 时为什么要 scaled dot product? 即除以 `d`？
 
-一句话回答：当输入信息的维度 d 比较高，会导致 softmax 函数接近饱和区，梯度会比较小。因此，缩放点积模型可以较好地解决这一问题。
+一句话回答：当输入信息的维度 `d` 比较高，会导致 `softmax` 函数接近饱和区，梯度会比较小。因此，缩放点积模型可以较好地解决这一问题。
 
-# 注意力机制的常见变式
+## 注意力机制的常见变式
 
-先简单复习下之前的self-attention。假设输入序列（query）长度是N，为了捕捉每个value或者token之间的关系，需要对应产生N个key与之对应，并将query与key之间做dot-product，就可以产生一个Attention Matrix（注意力矩阵），维度N*N。这种方式最大的问题就是当序列长度太长的时候，对应的Attention Matrix维度太大，会给计算带来麻烦。
+先简单复习下之前的self-attention。假设输入序列（`query`）长度是`N`，为了捕捉每个`value`或者`token`之间的关系，需要对应产生`N`个`key`与之对应，并将`query`与`key`之间做dot-product，就可以产生一个Attention Matrix（注意力矩阵），维度`N*N`。这种方式最大的问题就是当序列长度太长的时候，对应的Attention Matrix维度太大，会给计算带来麻烦。
 
 ![](img/54ed437b1dc3bc5635b6b152d4951ca8.png)
 
-对于transformer来说，self-attention只是大的网络架构中的一个module。由上述分析我们知道，对于self-attention的运算量是跟N的平方成正比的。当N很小的时候，单纯增加self-attention的运算效率可能并不会对整个网络的计算效率有太大的影响。因此，提高self-attention的计算效率从而大幅度提高整个网络的效率的前提是N特别大的时候，比如做图像识别（影像辨识、image processing）。
+对于transformer来说，self-attention只是大的网络架构中的一个module。由上述分析我们知道，对于self-attention的运算量是跟`N`的平方成正比的。当`N`很小的时候，单纯增加self-attention的运算效率可能并不会对整个网络的计算效率有太大的影响。因此，提高self-attention的计算效率从而大幅度提高整个网络的效率的前提是`N`特别大的时候，比如做图像识别（影像辨识、image processing）。
 
 ![](img/d6e87a6c574111a703101ef022f9f297.png)
 
@@ -148,33 +147,33 @@ V：值向量，上下文各个字的 Value
 
 ![](img/86dabdeffe11f4d50026912ba6512f2f.png)
 
-## Soft Attention
+### Soft Attention
 
-这是比较常见的Attention方式，对所有key求权重概率，每个key都有一个对应的权重，是一种全局的计算方式（也可以叫Global Attention）。这种方式比较理性，参考了所有key的内容，再进行加权。但是计算量可能会比较大一些。
+这是比较常见的Attention方式，对所有`key`求权重概率，每个`key`都有一个对应的权重，是一种全局的计算方式（也可以叫Global Attention）。这种方式比较理性，参考了所有`key`的内容，再进行加权。但是计算量可能会比较大一些。
 
-## Hard Attention
+### Hard Attention
 
-这种方式是直接精准定位到某个key，其余key就都不管了，相当于这个key的概率是1，其余key的概率全部是0。因此这种对齐方式要求很高，要求一步到位，如果没有正确对齐，会带来很大的影响。另一方面，因为不可导，一般需要用强化学习的方法进行训练（或者使用gumbel softmax之类的方法）。
+这种方式是直接精准定位到某个`key`，其余`key`就都不管了，相当于这个`key`的概率是1，其余`key`的概率全部是0。因此这种对齐方式要求很高，要求一步到位，如果没有正确对齐，会带来很大的影响。另一方面，因为不可导，一般需要用强化学习的方法进行训练（或者使用`gumbel softmax`之类的方法）。
 
-## Local Attention / Window Attention
+### Local Attention / Window Attention
 
-我们在做文本翻译的时候，有时候在翻译当前的token时不需要给出整个sequence，其实只需要知道这个token两边的邻居，就可以翻译的很准，也就是做局部的attention（local attention）。这样可以大大提升运算效率，但是缺点就是只关注周围局部的值，这样做法其实跟CNN就没有太大的区别了。
+我们在做文本翻译的时候，有时候在翻译当前的`token`时不需要给出整个`sequence`，其实只需要知道这个`token`两边的邻居，就可以翻译的很准，也就是做局部的attention（local attention）。这样可以大大提升运算效率，但是缺点就是只关注周围局部的值，这样做法其实跟CNN就没有太大的区别了。
 
 ![](img/20612bc6ecf441416c2f2bf6e6f08b74.png)
 
-## Stride Attention
+### Stride Attention
 
-如果觉得上述这种local attention不好，也可以换一种思路，就是在翻译当前token的时候，给它空一定间隔（stride）的左右邻居，从而捕获当前与过去和未来的关系。当然stride的数值可以自己确定。
+如果觉得上述这种local attention不好，也可以换一种思路，就是在翻译当前`token`的时候，给它空一定间隔（`stride`）的左右邻居，从而捕获当前与过去和未来的关系。当然`stride`的数值可以自己确定。
 
 ![](img/0b03e6b2c5056a25d02c548e0eda375c.png)
 
-## Global Attention
+### Global Attention
 
-还有一种global attention的方式，就是选择sequence中的某些token作为special token（比如标点符号），或者在原始的sequence中增加special token。让special token与序列产生全局的关系，但是其他不是special token的token之间没有attention。以在原始sequence前面增加两个special token为例：
+还有一种global attention的方式，就是选择`sequence`中的某些`token`作为`special token`（比如标点符号），或者在原始的`sequence`中增加`special token`。让`special token`与序列产生全局的关系，但是其他不是`special token`的`token`之间没有attention。以在原始`sequence`前面增加两个`special token`为例：
 
 ![](img/23c91c9ab293c25b6a409135dd4b00e6.png)
 
-## 组合各种 Attention
+### 组合各种 Attention
 
 到底哪种attention最好呢？小孩子才做选择...对于一个网络，有的head可以做local attention，有的head可以做global attention...这样就不需要做选择了。看下面几个例子：
 
@@ -184,20 +183,20 @@ V：值向量，上下文各个字的 Value
 
 ![](img/150949b1a3e423b2e8af4192d878ed1b.png)
 
-# 注意力机制的特点
+## 注意力机制的特点
 
 最后总结一下 Attention 的特点
 
-1.  参数少
+1. 参数少
 
 模型复杂度跟 [CNN](https://link.zhihu.com/?target=https%3A//easyai.tech/ai-definition/cnn/)、[RNN](https://link.zhihu.com/?target=https%3A//easyai.tech/ai-definition/rnn/) 相比，复杂度更小，参数也更少。所以对算力的要求也就更小。
 
-1.  速度快
+2. 速度快
 
 Attention 解决了 RNN 不能并行计算的问题。Attention机制每一步计算不依赖于上一步的计算结果，因此可以和CNN一样并行处理。
 
-1.  效果好
+3. 效果好
 
-1.  在 Attention 机制引入之前，有一个问题大家一直很苦恼：长距离的信息会被弱化，就好像记忆能力弱的人，记不住过去的事情是一样的。
+4. 在 Attention 机制引入之前，有一个问题大家一直很苦恼：长距离的信息会被弱化，就好像记忆能力弱的人，记不住过去的事情是一样的。
 
-1.  Attention 注意力机制是挑重点，就算文本比较长，也能从中间抓住重点，不丢失重要的信息。
+5. Attention 注意力机制是挑重点，就算文本比较长，也能从中间抓住重点，不丢失重要的信息。

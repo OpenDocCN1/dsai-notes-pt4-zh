@@ -1,6 +1,9 @@
+
 # 境内使用Chat GPT
 
 > 来源：[https://docs.feishu.cn/docx/IMDsd1I5IoP98nxC1LKcZuzQnZd](https://docs.feishu.cn/docx/IMDsd1I5IoP98nxC1LKcZuzQnZd)
+
+## 群聊讨论
 
 **-问：**我记得大家之前在群里面讨论过。ChatGPT国内监管是通知不让用的是么？
 
@@ -38,7 +41,11 @@
 
 ![](img/f3d365966b3fefc9d148e982ea169b8a.png)
 
-总结：想在境内基于商业用途使用Chat GPT阻碍很多。
+## 总结
+
+想在境内基于商业用途使用Chat GPT阻碍很多。
+
+## 相关链接
 
 [AIGC](https://cbe8t1r4a5.feishu.cn/wiki/wikcntdefWZIuNZgDEusD7jvRBf)
 

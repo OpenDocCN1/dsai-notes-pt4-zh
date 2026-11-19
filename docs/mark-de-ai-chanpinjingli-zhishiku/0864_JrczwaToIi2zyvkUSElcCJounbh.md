@@ -1,35 +1,36 @@
+
 # llama系列模型
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/EL7Ldn9taoekbexzuqlcA8gonid](https://qqs7y1hozd1.feishu.cn/docx/EL7Ldn9taoekbexzuqlcA8gonid)
 
-# **LLama**
+## LLama
 
-## **简介**
+### 简介
 
-Open and Efficient Foundation Language Models (Open但没完全Open的LLaMA)
+Open and Efficient Foundation Language Models (Open但没完全Open的`LLaMA`)
 
-> 2023年2月，**Meta**（原Fa**cebook）推出了**LLaMA大模型，使用了1.4T token进行训练，虽然最大模型只有65B，但在相关评测任务上的效果可以媲美甚至超过千亿级大模型，被认为是近期开源大模型百花⻬放的开端之一，“羊驼”系列模型及其生态快速发展
+> 2023年2月，Meta（原Facebook）推出了`LLaMA`大模型，使用了1.4T token进行训练，虽然最大模型只有65B，但在相关评测任务上的效果可以媲美甚至超过千亿级大模型，被认为是近期开源大模型百花齐放的开端之一，“羊驼”系列模型及其生态快速发展
 
-**LLaMA **所**采用的**** Transformer 结构和细****节****，与标准的 Transfor**mer 架**构不同的地方包括采用了**前置层归一化（Pre-normalization）并使用 RMSNorm 归一化函数 （Normalizing Function）、激活函数更换为 SwiGLU，并使用了旋转位置嵌入（RoP），整体 Transformer 架构与 GPT-2 类似
+`LLaMA`所采用的`Transformer`结构和细节，与标准的`Transformer`架构不同的地方包括采用了前置层归一化（Pre-normalization）并使用`RMSNorm`归一化函数（Normalizing Function）、激活函数更换为`SwiGLU`，并使用了旋转位置嵌入（`RoPE`），整体`Transformer`架构与`GPT-2`类似
 
 ![](img/9e49244df4b3fdaad518df017e3a6b7c.png)
 
-## **RMSNorm归一化函数**
+### RMSNorm归一化函数
 
-**为了使得模型训练过程更加稳定****，GPT-2 相**较于 GPT 就引入了前置**层归一化方法，将第一个层归**一化移动到多头自注意力层之前，第二个层归一化也移动到了全连接层之前，同时残差连接的位置也调整到了多头自注意力层与全连接层之后。层归一化中也采用了 RMSNorm 归一化函数
+为了使得模型训练过程更加稳定，`GPT-2`相较于`GPT`就引入了前置层归一化方法，将第一个层归一化移动到多头自注意力层之前，第二个层归一化也移动到了全连接层之前，同时残差连接的位置也调整到了多头自注意力层与全连接层之后。层归一化中也采用了`RMSNorm`归一化函数
 
-**针对输入向量 ****RMSNorm****函数计算公式如下:**
+针对输入向量`RMSNorm`函数计算公式如下:
 
-此外，**RMSNorm**还可以引入可学习的缩放因子 和偏移参数 ，从而得到
+此外，`RMSNorm`还可以引入可学习的缩放因子和偏移参数，从而得到
 
-**RMSNorm 在 HuggingFace Tra**nsformer 库中代码实现如下所示：
+`RMSNorm`在`HuggingFace Transformer`库中代码实现如下所示：
 
-```
+```python
 class LlamaRMSNorm(nn.Module):
   def __init__(self, hidden_size, eps=1e-6): 
-    &quot;&quot;&quot; 
+    """ 
     LlamaRMSNorm is equivalent to T5LayerNorm 
-    &quot;&quot;&quot; 
+    """ 
     super().__init__() 
     self.weight = nn.Parameter(torch.ones(hidden_size)) 
     self.variance_epsilon = eps # eps 防止取倒数之后分母为 0 
@@ -42,58 +43,58 @@ class LlamaRMSNorm(nn.Module):
     return (self.weight * hidden_states).to(input_dtype)
 ```
 
-## **SwiGLU激活函数**
+### SwiGLU激活函数
 
-**SwiGLU激活函数**是**相较于 ReLU 函数在大部分评测中都有**不少提升。在 LLaMA 中全连接层 使用带有 SwiGLU 激活函数的 FFN（Position-wise Feed-Forward Network）的计算公式如下：
+`SwiGLU`激活函数是相较于`ReLU`函数在大部分评测中都有不少提升。在`LLaMA`中全连接层使用带有`SwiGLU`激活函数的`FFN`（Position-wise Feed-Forward Network）的计算公式如下：
 
-其中， 是 Sigmoid 函数
+其中，`Sigmoid`是Sigmoid函数
 
-下图给出了** Swish** 激活函数在参数 𝛽 不同取值下的形状。
+下图给出了`Swish`激活函数在参数`β`不同取值下的形状。
 
-+   可以看 到当  趋近于 0 时，Swish 函数趋近于线性函数
++ 可以看到当`β`趋近于0时，`Swish`函数趋近于线性函数
 
-+   当 𝛽趋近于无穷大时，Swish 函数趋近于 ReLU 函数
++ 当`β`趋近于无穷大时，`Swish`函数趋近于`ReLU`函数
 
-+    取值为 1 时，Swish 函数是光滑且非单调。
++ 取值为1时，`Swish`函数是光滑且非单调。
 
-+   在HuggingFace 的 Transformer 库中 Swish1 函数使用 silu 函数代替
++ 在`HuggingFace`的`Transformer`库中`Swish1`函数使用`silu`函数代替
 
 ![](img/910acbbd2b3efabec31b2825a44a0cc8.png)
 
 ![](img/91e95551751ec0e1df24e74a260bc920.png)
 
-**LLaMA中直接将F**FN中的ReLU替换为SwiGLU，并将维度放缩为(2/3) ⋅ 4d
+`LLaMA`中直接将`FFN`中的`ReLU`替换为`SwiGLU`，并将维度放缩为(2/3) ⋅ 4d
 
-## **旋转位置嵌入（RoPE）**
+### 旋转位置嵌入（RoPE）
 
-在**位置编码上**，使用旋转位置嵌入（Rotary Positional Embeddings，RoPE）代替原有的绝 对位置编码。RoPE 借助了复数的思想，出发点是通过绝对位置编码的方式实现相对位置编码。其目标是通过下述运算来给 q，k 添加绝对位置信息：
+在位置编码上，使用旋转位置嵌入（Rotary Positional Embeddings，`RoPE`）代替原有的绝对位置编码。`RoPE`借助了复数的思想，出发点是通过绝对位置编码的方式实现相对位置编码。其目标是通过下述运算来给`q`，`k`添加绝对位置信息：
 
-经过上述操作后， 和 就带有位置m和n的绝对位置信息
+经过上述操作后，和就带有位置`m`和`n`的绝对位置信息
 
-最终可以得到二维情况下用复数表示的 RoPE：
+最终可以得到二维情况下用复数表示的`RoPE`：
 
-根据复数乘法的几何意义，上述变换实际上是对应向量旋转，所以位置向量称为“旋转式位置编 码”
+根据复数乘法的几何意义，上述变换实际上是对应向量旋转，所以位置向量称为“旋转式位置编码”
 
-**还可以使用矩阵形式表示:**
+还可以使用矩阵形式表示：
 
-根据内积满足线性叠加的性质，任意偶数维的 RoPE，都可以表示为二维情形的拼接，即：
+根据内积满足线性叠加的性质，任意偶数维的`RoPE`，都可以表示为二维情形的拼接，即：
 
 ![](img/cc781575987c0390cbb5a305f295e5f6.png)
 
-**RoPE 在 HuggingFace Tra**nsformer 库中代码实现如下所示：
+`RoPE`在`HuggingFace Transformer`库中代码实现如下所示：
 
-```
+```python
 import torch
 
 def precompute_freqs_cis(dim: int, end: int, constant: float = 10000.0):
-    &#x27;&#x27;&#x27;
+    """
     计算cos和sin的值，cos值在实部，sin值在虚部，类似于 cosx+j*sinx
     :param dim: q,k,v的最后一维，一般为emb_dim/head_num
     :param end: 句长length
     :param constant： 这里指10000
     :return:
     复数计算 torch.polar(a, t)输出， a*(cos(t)+j*sin(t))
-    &#x27;&#x27;&#x27;
+    """
     # freqs: 计算 1/(10000^(2i/d) )，将结果作为参数theta
     # 形式化为 [theta_0, theta_1, ..., theta_(d/2-1)]
     freqs = 1.0 / (constant ** (torch.arange(0, dim, 2)[: (dim // 2)].float() / dim)) # [d/2]
@@ -112,7 +113,7 @@ def precompute_freqs_cis(dim: int, end: int, constant: float = 10000.0):
 
 def reshape_for_broadcast(freqs_cis: torch.Tensor, x: torch.Tensor):
     ndim = x.ndim
-    assert 0 &lt;= 1 &lt; ndim
+    assert 0 <= 1 < ndim
     assert freqs_cis.shape == (x.shape[1], x.shape[-1])
     shape = [d if i == 1 or i == ndim - 1 else 1 for i, d in enumerate(x.shape)] # (1, length, 1, d/2)
     return freqs_cis.view(*shape) # [1, length, 1, d/2]
@@ -137,7 +138,7 @@ def apply_rotary_emb(xq: torch.Tensor, xk: torch.Tensor, freqs_cis: torch.Tensor
     xk_out = torch.view_as_real(xk_ * freqs_cis).flatten(3)
     return xq_out.type_as(xq), xk_out.type_as(xk)
 
-if __name__==&#x27;__main__&#x27;:
+if __name__=='__main__':
     # (bs, length, head, d)
     q = torch.randn((2, 10, 12, 32))  # q=[q0, q1, .., qd-1]
     k = torch.randn((2, 10, 12, 32))
@@ -149,136 +150,138 @@ if __name__==&#x27;__main__&#x27;:
     print()
 ```
 
-# **Alpaca**
+## Alpaca
 
-## **简介**
+### 简介
 
-Stanford Alpaca: An Instruction-following LLaMA Model
+Stanford Alpaca: An Instruction-following `LLaMA` Model
 
-> Alpaca是在LLaMA基础上使用52K指令数据精调的预训练模型，作者只用了不到600美元的成本训练出了该模型（数据$500 + 机器$100）。初步实验结果表明Alpaca可以达到与OpenAI text-davinci-003相匹敌的效果
+> `Alpaca`是在`LLaMA`基础上使用52K指令数据精调的预训练模型，作者只用了不到600美元的成本训练出了该模型（数据$500 + 机器$100）。初步实验结果表明`Alpaca`可以达到与`OpenAI text-davinci-003`相匹敌的效果
 
-## **微调方法**
+### 微调方法
 
-1.  第一步：构造175条self-instruct 种子示例任务
+1. 第一步：构造175条`self-instruct`种子示例任务
 
-1.  第二步：基于上述种子任务，利 用text-davinci-003爬取指令数据
+2. 第二步：基于上述种子任务，利用`text-davinci-003`爬取指令数据
 
-1.  第三步：使用爬取下来的52K指令 数据在LLaMA上进行精调，最终 得到Alpaca
+3. 第三步：使用爬取下来的52K指令数据在`LLaMA`上进行精调，最终得到`Alpaca`
 
 ![](img/1143a2f4aee8fadddb1316dde7a4ca91.png)
 
-## Self-instruct数据构造
+### Self-instruct数据构造
 
-首先由人工构造175条种子数据:
+首先由人工构造175条种子数据：
 
-```
+```json
 {
-  &quot;id&quot;: &quot;seed_task_25&quot;, 
-  &quot;name&quot;: &quot;perfect_numbers&quot;, 
-  &quot;instruction&quot;: &quot;Find the four smallest perfect numbers.&quot;, 
-  &quot;instances&quot;: [{ &quot;input&quot;: &quot;&quot;, &quot;output&quot;: &quot;6, 28, 496, and 8128”}], 
-  &quot;is_classification&quot;: false
+  "id": "seed_task_25", 
+  "name": "perfect_numbers", 
+  "instruction": "Find the four smallest perfect numbers.", 
+  "instances": [{ "input": "", "output": "6, 28, 496, and 8128”}], 
+  "is_classification": false
 }
 ```
 
-**将“爬取要求”和种子数据进行适**当组合，送入textdavinci-003，要求生成类似的指令数据
+将“爬取要求”和种子数据进行适当组合，送入`text-davinci-003`，要求生成类似的指令数据
 
-**要求包括：**提升指令多样性、包含真实数据、字数 要求、语言要求、拒绝不合适指令等
+要求包括：提升指令多样性、包含真实数据、字数要求、语言要求、拒绝不合适指令等
 
-## **指令数据格式**
+### 指令数据格式
 
-+   instruction: 描述模型需要执行的指令内容
++ `instruction`: 描述模型需要执行的指令内容
 
-+   input（可选）: 任务上下文或输入信息，例如当指令是“对文章进行总结”，则input是文章内容
++ `input`（可选）: 任务上下文或输入信息，例如当指令是“对文章进行总结”，则`input`是文章内容
 
-+   output: 由text-davinci-003生成的针对指令的回复
++ `output`: 由`text-davinci-003`生成的针对指令的回复
 
 ![](img/e3cc05053029ac3fe9c958214f59ac7b.png)
 
-# **Llama-2**
+## Llama-2
 
-## **简介**
+### 简介
 
-**Llama 2: Open Foundation and Fi**ne-Tuned Chat Models
+`Llama 2: Open Foundation and Fine-Tuned Chat Models`
 
-> 2023年7月，Meta推出了Llama-2开源大模型，并且推出了Llama-2-Chat对话模型,与一代LLaMA主要区别体现在更多的训练数据、更⻓的上下文窗口、GQA技术等
+> 2023年7月，Meta推出了`Llama-2`开源大模型，并且推出了`Llama-2-Chat`对话模型,与一代`LLaMA`主要区别体现在更多的训练数据、更长的上下文窗口、`GQA`技术等
 
 ![](img/5ade3308bf282b320070edd7b20fbdc5.png)
 
-模型结构的变动主要是体现在**GQA**和**FFN**缩放上
+模型结构的变动主要是体现在`GQA`和`FFN`缩放上
 
-+   **MHA改成GQA**：整体参数量会有减少
++ `MHA`改成`GQA`：整体参数量会有减少
 
-+   **FFN模块矩阵维度有扩充**：增强泛化能力，整体参数量增加
++ `FFN`模块矩阵维度有扩充：增强泛化能力，整体参数量增加
 
-+   **上下文长度是llama两倍**(长度从2048->4096) 训练语料增加约 40%，体现在1.4T->2.0T的Tokens llama2-34B和llama2-70B使用了GQA，加速模型训练和推理速度
++ 上下文长度是`llama`两倍(长度从2048->4096) 训练语料增加约 40%，体现在1.4T->2.0T的Tokens `llama2-34B`和`llama2-70B`使用了`GQA`，加速模型训练和推理速度
 
-## **GQA**
+### GQA
 
-**GQA**和**MQA**都是注意力的变体，其中多个查询头关注相同的键和值头，以减少推理过程中 KV 缓存的大小，并可以显著提高推理吞吐量
+`GQA`和`MQA`都是注意力的变体，其中多个查询头关注相同的键和值头，以减少推理过程中 KV 缓存的大小，并可以显著提高推理吞吐量
 
-MHA、GQA、MQA的区别和联系，具体的优点如下：
+`MHA`、`GQA`、`MQA`的区别和联系，具体的优点如下：
 
-+   Mutil-Head Attention 因为自回归模型生成回答时，需要前面生成的KV缓存起来，来加速计算
++ `Mutil-Head Attention` 因为自回归模型生成回答时，需要前面生成的KV缓存起来，来加速计算
 
-+   Multi-Query Attention 多个头之间可以共享KV对，因此速度上非常有优势，实验验证大约减少30-40%吞吐
++ `Multi-Query Attention` 多个头之间可以共享KV对，因此速度上非常有优势，实验验证大约减少30-40%吞吐
 
-+   Group Query Attention 没有像MQA那么极端，将query分组，组内共享KV，效果接近MQA，速度上与MQA可比较
++ `Group Query Attention` 没有像`MQA`那么极端，将query分组，组内共享KV，效果接近`MQA`，速度上与`MQA`可比较
 
 ![](img/57e2c750c0ea9ae927c95888860451db.png)
 
-**Llama-2中使用了8个KV映射，即GQA-8，GQA**在多数任务上与MHA效果相当，且平均效果优于MQA；GQA和MQA均比MHA有更好的吞吐量
+`Llama-2`中使用了8个KV映射，即`GQA-8`，`GQA`在多数任务上与`MHA`效果相当，且平均效果优于`MQA`；`GQA`和`MQA`均比`MHA`有更好的吞吐量
 
-## **源码**
+### 源码
 
 ![](img/e31d8b088b6696d764597d3639f3e9cf.png)
 
-# **Code Llama**
+## Code Llama
 
-## **简介**
+### 简介
 
-> 2023年8月24日，Meta推出了面向代码的可商用大模型Code Llama，包含三个大小版本（7B/13B/34B）
+> 2023年8月24日，Meta推出了面向代码的可商用大模型`Code Llama`，包含三个大小版本（7B/13B/34B）
 
-> 支持多种编程语言，包括**Python、C++、Java、PHP、Typescript **(Javascript)、C#和Bash
+> 支持多种编程语言，包括`Python`、`C++`、`Java`、`PHP`、`Typescript` (Javascript)、`C#`和`Bash`
 
-**亮点：**
+亮点：
 
-+   免费供学术研究和商用
++ 免费供学术研究和商用
 
-+   支持100K上下文
++ 支持100K上下文
 
-+   “神秘”34B版接近GPT-4效果
++ “神秘”34B版接近`GPT-4`效果
 
-## **模型训练流程**
+### 模型训练流程
 
 ![](img/ff50ad4f199f1692831b3afd501ba1b1.png)
 
-## Code Infilling Task （7B/13B only）
+### Code Infilling Task（7B/13B only）
 
-**任务目标：**根据代码的上下文，预测残缺部分的代码
+任务目标：根据代码的上下文，预测残缺部分的代码
 
-**方法：**
+方法：
 
-+   从完整的代码中选择一部分进行掩码（mask）并替换为<MASK>符号，构成上下文
++ 从完整的代码中选择一部分进行掩码（`mask`）并替换为`<MASK>`符号，构成上下文
 
-+   利用自回归的方法，根据上下文信息预测解码出被mask的代码部分
++ 利用自回归的方法，根据上下文信息预测解码出被`mask`的代码部分
+
+
 
 ![](img/d740de5e9464ce30a65a644153144381.png)
 
-# **总结**
+# 总结
 
-> **LLaMA**
+> `LLaMA`
 
-+   开源大模型繁荣发展的开端，一系列相关工作均基于LLaMA开展
++ 开源大模型繁荣发展的开端，一系列相关工作均基于`LLaMA`开展
 
-+   模型规模7B、13B、33B、65B满足了开发者和研究者的不同需求
++ 模型规模7B、13B、33B、65B满足了开发者和研究者的不同需求
 
-> **Alpaca**：通过少量的指令精调赋予LLaMA指令理解与执行的能力
+> `Alpaca`：通过少量的指令精调赋予`LLaMA`指令理解与执行的能力
 
-> **Llama-2**
+> `Llama-2`
 
-+   LLaMA的二代模型，相关模型性能进一步提升，模型可商用
++ `LLaMA`的二代模型，相关模型性能进一步提升，模型可商用
 
-+   推出官方对⻬的Chat版本模型，采用了完整的RLHF链条
++ 推出官方对⻬的Chat版本模型，采用了完整的RLHF链条
 
-> **Code Llama**：专注于代码能力的LLaMA模型，最好的模型代码能力接近GPT-4效果，模型可商用
+> `Code Llama`：专注于代码能力的`LLaMA`模型，最好的模型代码能力接近`GPT-4`效果，模型可商用

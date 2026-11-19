@@ -1,3 +1,4 @@
+
 # PRD编写
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/DuGPdzQK3oJSaOxpGKkc7oh9nkf](https://vxc3hj17dym.feishu.cn/docx/DuGPdzQK3oJSaOxpGKkc7oh9nkf)
@@ -47,7 +48,7 @@
 7. 编写用户故事，从用户的角度描述具体的功能需求。
 8. 阐述实现逻辑，描述功能的具体实现方式和流程。
 9. 描述功能细节，包括各种输入、输出、边界条件等。
-   
+
 ## OutputFormat:
 - 功能名：[功能名]
 - 需求描述：[需求描述]
@@ -57,7 +58,7 @@
 - 用户故事：[用户故事]
 - 实现逻辑：[实现逻辑]
 - 功能细节描述：[功能细节描述]
-    
+
 ## Suggestions:
 - 明确界定每个部分的内容，以便开发团队理解和实施。
 - 使用简明的语言，避免使用过于专业的术语。

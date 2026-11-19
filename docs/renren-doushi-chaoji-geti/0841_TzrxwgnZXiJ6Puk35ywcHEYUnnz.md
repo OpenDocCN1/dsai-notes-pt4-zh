@@ -1,4 +1,5 @@
-# 0 基础如何打造你的🛰️机器人？  【赚钱】
+
+# 0 基础如何打造你的🛰️机器人？ 【赚钱】
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AK41dHrQBo4XQxxdUtXcUo32nWc](https://xuqiwei1986.feishu.cn/docx/AK41dHrQBo4XQxxdUtXcUo32nWc)
 
@@ -50,9 +51,9 @@
 
 我们需要准备以下事项，从而更方便开始：
 
-+   一个手机和🛰️号
++ 一个手机和🛰️号
 
-+   一台云服务器（下面有教程，可以免费领取）
++ 一台云服务器（下面有教程，可以免费领取）
 
 ### 一）手机和🛰️
 
@@ -78,19 +79,15 @@
 
 1、进入[云平台](https://cloud.tencent.com/act/pro/free)。
 
-
 2、先点击 **立即试用**，再修改 **镜像**，最终点击立即试用。
 
 > 镜像选择：选择 Docker CE 19.03.9，这样减少安装 Docker 的步骤。
 
-
 3、可能需要进行人脸认证。
 
-[4、再稍](https://console.cloud.tencent.com/expense/deal)微等待一会，等待**分配**服务器资源。如果不显示，可以进入 订单管理 查看。再点击 详情 进入订单详情界面。
-
+[4、再稍](https://console.cloud.tencent.com/expense/deal)微等待一会，等待分配服务器资源。如果不显示，可以进入 订单管理 查看。再点击 详情 进入订单详情界面。
 
 5、点击 **资源 ID** 对应的链接，跳转到服务器即可。
-
 
 6、点击进入 [服务器列表](https://console.cloud.tencent.com/lighthouse/instance/index)，向下滑动后，点击 **更多 > 重置密码**，进行修改密码, 并记住密码，用于接下来配置环境使用。
 
@@ -98,7 +95,7 @@
 
 ![](img/802bca37e7ef3bed5be189f38ca1c06d.png)
 
-**7、点击服**务器详情后，向下滑动，并点击登录方式，选择 密码/密钥 登录。
+7、点击服务器详情后，向下滑动，并点击登录方式，选择 密码/密钥 登录。
 
 > 后续登录方式，都采用密码/密钥登录，不要选择一键登录，因为后续步骤可能会出现问题，如果是高手的话，请随意。
 
@@ -114,8 +111,6 @@
 
 > 可能很多读者不了解技术，我简单解释下 Docker 和 Docker-compose：
 
->
-
 > Docker 是让你的应用在任何地方都能以同样的方式运行，像是把应用装在一个可移动的箱子里。Docker-compose 帮你同时管理多个这样的箱子，通过一个简单的命令就能全部启动。
 
 1、安装 **Docker-Compose **。需要等几分钟（尽量按照上述方式登录，这样确保权限最大）。
@@ -124,9 +119,7 @@
 curl -SL https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 ```
 
-![](img/7b874c92edfa0b0277ddf1762adf88e6.png)
-
-2、逐个执行以下命令：赋予权限,  并配置任何地方都可以使用 docker-compose ， 最后校验是否安装成功。
+2、逐个执行以下命令：赋予权限，并配置任何地方都可以使用 `docker-compose`，最后校验是否安装成功。
 
 ```
 chmod +x /usr/local/bin/docker-compose
@@ -136,17 +129,15 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 ```
 
-![](img/96b6eede8f2bdbe5937073d641cdd12b.png)
-
 ### 三）文件下载
 
 为了方便大家使用，我在官方文件的基础上增加了一些参数。并且，我提前放在百度网盘上了，大家按需下载。
 
 > 链接: https://pan.baidu.com/s/1lTiTUPZC6mwrLoufSgLRBQ 提取码: jay1
 
-+   **启动文件（适合初阶与进阶玩法）**：docker-compose.yml
++ **启动文件（适合初阶与进阶玩法）**：`docker-compose.yml`
 
-+   **插件配置文件（仅适合进阶玩法）**: config.json
++ **插件配置文件（仅适合进阶玩法）**: `config.json`
 
 注意上传后，需要保持文件名不变。
 
@@ -154,33 +145,31 @@ docker-compose --version
 
 **本次初阶**玩法最终支持以下功能（为判断是否符合个人预期，可以跳转到 3、测试 直接查看效果）：
 
-+   私聊对话
++ 私聊对话
 
-+   群聊对话
++ 群聊对话
 
-+   入群欢迎
++ 入群欢迎
 
-+   拍一拍的反馈
++ 拍一拍的反馈
 
-#### 1、申请  API
+#### 1、申请 API
 
 本次演示主要是使用讯飞大模型，没啥原因，主要因为免费，而且量大，赠送 200万 Token。
 
 > 如果想要申请其他大模型 API，可以进入如下链接申请和使用：
 
->
++ Kimi: https://platform.moonshot.cn/console/api-keys
 
-+   Kimi: https://platform.moonshot.cn/console/api-keys
++ OpenAI: https://platform.openai.com/account/api-keys
 
-+   OpenAI: https://platform.openai.com/account/api-keys
-
-+   ChatGLM：https://open.bigmodel.cn/usercenter/apikeys
++ ChatGLM：https://open.bigmodel.cn/usercenter/apikeys
 
 >
 
-> 如果想要使用 GPT-3.5, 我这边给大家申请了一个Key，先到先得哈：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
+> 如果想要使用 GPT-3.5, 我这边给大家申请了一个Key，先到先得哈：`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`
 
-1**）打开地**址，https://xinghuo.xfyun.cn/sparkapi?scr=price，点击 免费试用，并进行注册账号。
+1）打开地址，https://xinghuo.xfyun.cn/sparkapi?scr=price，点击 免费试用，并进行注册账号。
 
 ![](img/0ecac86783160c080293d42bc584b1e6.png)
 
@@ -192,17 +181,15 @@ docker-compose --version
 
 等待验证，个人实名基本上几分钟就好了。
 
-
 ![](img/73682d75cf757e14633695f84141ebdc.png)
 
-4**）下单免**费礼包：再回到链接：https://xinghuo.xfyun.cn/sparkapi?scr=price，点击 立即试用。
+4）下单免费礼包：再回到链接：https://xinghuo.xfyun.cn/sparkapi?scr=price，点击 立即试用。
 
 4.1）点击 + ，先创建应用。
 
 ![](img/d292b07f9427ff7f4516467990ea7fee.png)
 
 4.2）填写应用信息。
-
 
 4.3）选择刚创建的应用，再选择对应的套餐。向下滚动后，勾选服务协议，再点击 **确认下单**。
 
@@ -222,39 +209,39 @@ docker-compose --version
 
 | 属性 | 描述 |
 | --- | --- |
-| OPEN_AI_API_KEY | Open API Key，可以在地址 https://platform.openai.com/account/api-keys 查看，注意检查是否已经过期。 |
-| MODEL | 使用的模型名称, 支持 gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4, wenxin, xunfei, claude-3-opus-20240229 |
-| OPEN_AI_API_BASE | 接口地址，国内服务器可以使用代理地址，有一个公开的地址可用：https://api.openai-proxy.com/v1，也可以自己重新搭建。 |
-| PROXY | 网络代理地址，国内服务器需要使用代理地址，可忽略。 |
-| SINGLE_CHAT_PREFIX | 一对一私聊时，需要以什么作为开头来触发机器人。比如下方我的文件中，默认以@bot，或者 bot 开头来触发。 |
-| SINGLE_CHAT_REPLY_PREFIX | 一对一私聊时，机器人以什么作为前缀来标识是机器人的回复。 |
-| GROUP_CHAT_PREFIX | 群聊触发机器人的方式，@bot 指需要手动@对应的机器人。 |
-| GROUP_NAME_WHITE_LIST | 群聊的白名单，指🛰️号在哪些群时，可以支持机器人的功能。 |
-| CHARACTER_DESC | 人设的提示词 |
-| USE_LINKAI | 是否开启 LinkAI 的功能 |
-| LINKAI_API_KEY | LinkAI Api Key ，可以在平台上创建：https://link-ai.tech/console/interface |
-| LINKAI_APP_CODE | LinkAI 应用code, 在平台可以找到。 |
-| XUNFEI_APP_ID | 讯飞应用ID，如果已经创建应用，查询地址：https://console.xfyun.cn/services/bm35 |
-| XUNFEI_API_SECRET | 讯飞 API secret，查询地址同上 |
-| XUNFEI_API_KEY | 讯飞 API key，查询地址同上。 |
+| `OPEN_AI_API_KEY` | Open API Key，可以在地址 https://platform.openai.com/account/api-keys 查看，注意检查是否已经过期。 |
+| `MODEL` | 使用的模型名称, 支持 gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4, wenxin, xunfei, claude-3-opus-20240229 |
+| `OPEN_AI_API_BASE` | 接口地址，国内服务器可以使用代理地址，有一个公开的地址可用：https://api.openai-proxy.com/v1，也可以自己重新搭建。 |
+| `PROXY` | 网络代理地址，国内服务器需要使用代理地址，可忽略。 |
+| `SINGLE_CHAT_PREFIX` | 一对一私聊时，需要以什么作为开头来触发机器人。比如下方我的文件中，默认以`@bot`，或者 `bot` 开头来触发。 |
+| `SINGLE_CHAT_REPLY_PREFIX` | 一对一私聊时，机器人以什么作为前缀来标识是机器人的回复。 |
+| `GROUP_CHAT_PREFIX` | 群聊触发机器人的方式，`@bot` 指需要手动@对应的机器人。 |
+| `GROUP_NAME_WHITE_LIST` | 群聊的白名单，指🛰️号在哪些群时，可以支持机器人的功能。 |
+| `CHARACTER_DESC` | 人设的提示词 |
+| `USE_LINKAI` | 是否开启 LinkAI 的功能 |
+| `LINKAI_API_KEY` | LinkAI Api Key ，可以在平台上创建：https://link-ai.tech/console/interface |
+| `LINKAI_APP_CODE` | LinkAI 应用code, 在平台可以找到。 |
+| `XUNFEI_APP_ID` | 讯飞应用ID，如果已经创建应用，查询地址：https://console.xfyun.cn/services/bm35 |
+| `XUNFEI_API_SECRET` | 讯飞 API secret，查询地址同上 |
+| `XUNFEI_API_KEY` | 讯飞 API key，查询地址同上。 |
 
 本次，我主要修改配置文件的以下参数:
 
-+   **MODEL**
++ `MODEL`
 
-+   **XUNFEI_APP_ID**
++ `XUNFEI_APP_ID`
 
-+   XUNFEI_API_SECRET
++ `XUNFEI_API_SECRET`
 
-+   **XUNFEI_API_KEY** 。
++ `XUNFEI_API_KEY` 。
 
-如果不使用 GPT ，那么参数 OPEN_AI_API_KEY、OPEN_AI_API_BASE 可以忽略。
+如果不使用 GPT ，那么参数 `OPEN_AI_API_KEY`、`OPEN_AI_API_BASE` 可以忽略。
 
 ![](img/56de21f71fbf74fcf4aec689d63d61e1.png)
 
 > 其他参数，可以进入官方仓库地址查看：https://github.com/zhayujie/chatgpt-on-wechat/blob/master/config.py
 
-2**）定位到等待上传文**件的位置：我放在 root 目录下（默认打开就是 root 目录），拖拽文件（或者点击 上传 > 上传文件） ，将修改后的文件上传上去。
+2）定位到等待上传文件的位置：我放在 `root` 目录下（默认打开就是 `root` 目录），拖拽文件（或者点击 上传 > 上传文件），将修改后的文件上传上去。
 
 ![](img/5e10727973df76d3df43361deeb7b990.png)
 
@@ -270,14 +257,11 @@ cd /root
 docker-compose up -d
 ```
 
-
 2、查看日志和登录的二维码，再用🛰️号来扫码 (扫码时要对准了、离近点才能成功)。
 
 ```
 docker logs -f chatgpt-on-wechat
 ```
-
-![](img/781708c5036a26e73fd89bd4b411b2c8.png)
 
 3、如果需要关闭，可以输入命令进行关闭程序。如果需要重启，先执行如下命令，再使用上述命令进行启动。
 
@@ -287,7 +271,7 @@ docker-compose down
 
 #### 4、测试
 
-1）私聊测试：正常对话（配置文件中设置了以 “bot” 开头，所以对话以 bot 开始）。
+1）私聊测试：正常对话（配置文件中设置了以 `bot` 开头，所以对话以 `bot` 开始）。
 
 ![](img/0d7199e2dcadda8cafafcad76bf1d348.png)
 
@@ -305,9 +289,9 @@ docker-compose down
 
 #### 5、总结
 
-**讯飞大模型虽然免费，但是也有**缺点 -- 无法配置人设（即使修改了 CHARACTER_DESC 也没有效果）。如果需要个性化的机器人，可以考虑使用 GPT，那么 API Key 需要进行采购。
+讯飞大模型虽然免费，但是也有缺点 -- 无法配置人设（即使修改了 `CHARACTER_DESC` 也没有效果）。如果需要个性化的机器人，可以考虑使用 GPT，那么 API Key 需要进行采购。
 
-此外，有小伙伴可能会想，**是否可以实现不同群聊可以配置不同的机器人**呢？是否可以支持自动总结文件或者网页呢？
+此外，有小伙伴可能会想，是否可以实现不同群聊可以配置不同的机器人呢？是否可以支持自动总结文件或者网页呢？
 
 接下来的进阶玩法将解决大家的疑惑～
 
@@ -315,21 +299,21 @@ docker-compose down
 
 本次进阶玩法，最终支持以下功能：
 
-+   私聊对话
++ 私聊对话
 
-+   群聊对话
++ 群聊对话
 
-+   入群欢迎
++ 入群欢迎
 
-+   拍一拍的反馈
++ 拍一拍的反馈
 
-+   自动总结文件、网页内容
++ 自动总结文件、网页内容
 
-+   支持在线搜索
++ 支持在线搜索
 
-+   不同群聊可以配置不同类型的机器人
++ 不同群聊可以配置不同类型的机器人
 
-+   知识库问答
++ 知识库问答
 
 [本次进阶玩法](https://link-ai.tech/home?share=13p5Bs)，将用到一个企业平台 -- LinkAI。那 LinkAI 是什么？
 
@@ -337,13 +321,13 @@ docker-compose down
 
 它是将主流的大模型融于一体的企业级平台，存在以下优势：
 
-+   不需要外部网络，也可以访问国外大模型。
++ 不需要外部网络，也可以访问国外大模型。
 
-+   不要申请 API Key 等信息。
++ 不要申请 API Key 等信息。
 
-+   提供知识库、大量插件功能，满足个人和企业需求。
++ 提供知识库、大量插件功能，满足个人和企业需求。
 
-+   速度更快，价格可能更低。
++ 速度更快，价格可能更低。
 
 #### 1、注册 LinkAI
 
@@ -367,29 +351,31 @@ docker-compose down
 
 ![](img/44f8616830a3ea794f356e298fd27b3b.png)
 
-4**.1）配**置模型，LinkAI-3.5 （即 GPT3.5）和 文心一言 会比较划算，其他模型更耗积分，具体参考 我的账户 中关于积分计费的规则。目前支持的模型如下：
+#### 4.1）配置模型
 
-+   LinkAI-3.5
+LinkAI-3.5 （即 GPT3.5）和 文心一言 会比较划算，其他模型更耗积分，具体参考 我的账户 中关于积分计费的规则。目前支持的模型如下：
 
-+   LinkAI-4-turbo
++ LinkAI-3.5
 
-+   LinkAI-4：
++ LinkAI-4-turbo
 
-+   文心一言：
++ LinkAI-4：
 
-+   文心一言 V4.0
++ 文心一言：
 
-+   GLM-4
++ 文心一言 V4.0
 
-+   讯飞星火 V3.5
++ GLM-4
 
-+   Kimi 8K
++ 讯飞星火 V3.5
 
-+   Claude3 Haiku
++ Kimi 8K
 
-+   Claude3 Sonnet
++ Claude3 Haiku
 
-+   Claude3 Opus
++ Claude3 Sonnet
+
++ Claude3 Opus
 
 4.2）声音，本次教程没涵盖此功能，可忽略。
 
@@ -407,21 +393,24 @@ xxx
 xxx
 
 ## 样例
-```
+
 用户：xxx
+
 你：xxx
 
 用户：xxx
+
 你：xxx
 
 ...
-```
 
 ## 注意点
 xxx
 ```
 
-**5）配置插件，我选**择了比较实用**的 网页速读、**默认搜索，除此之外，画图、图片识别的功能，大家感兴趣可以自行尝试。
+
+
+5）配置插件，我选择了比较实用的 网页速读、默认搜索，除此之外，画图、图片识别的功能，大家感兴趣可以自行尝试。
 
 ![](img/8a9c9674eb392a1f71aeb2fb8b365942.png)
 
@@ -431,23 +420,23 @@ xxx
 
 ![](img/2fdc5a3d6a312ff6c2cb496f51c3b55e.png)
 
-#### 3、配置知识库问答机器人
+### 3、配置知识库问答机器人
 
 1）创建知识库
 
 ![](img/141fa531d39ca606785947c0e98bf939.png)
 
-**2）维护知**识库的**数据，**可以选择一种或多种类型进行上传： 无结构文档 和 问答对 。
+2）维护知识库的数据，可以选择一种或多种类型进行上传：无结构文档 和 问答对 。
 
-2.1）方式一 ：无结构文档 ，直接上传知识库文件，方便，但是检索的答案质量可能不稳定。
+2.1）方式一：无结构文档，直接上传知识库文件，方便，但是检索的答案质量可能不稳定。
 
 ![](img/823c13a7a670eed408e450463e447897.png)
 
-2.2）方式二 ：问答对，需要先下载 csv 模板，再整理数据，最后进行上传。工作量大，更稳定，也更推荐。
+2.2）方式二：问答对，需要先下载 `csv` 模板，再整理数据，最后进行上传。工作量大，更稳定，也更推荐。
 
 ![](img/dd421ae55c8e932c91fab115d5b81a7c.png)
 
-如果想要基于长文本自动生成 QA 问答对，可以利用大模型来做。提示词：
+如果想要基于长文本自动生成 `QA` 问答对，可以利用大模型来做。提示词：
 
 ```
 我会给你一段文本，主题为xxxx，请你学习它们，并整理学习成果，要求为:
@@ -459,17 +448,11 @@ xxx
 我的文本:&quot;&quot;{text}&quot;&quot;
 ```
 
-在 Kimi 上的使用场景：
-
-![](img/da00499ca934890a5b9e5b0a812c4437.png)
-
-![](img/add3f402e3b663247e6e9df6e33c387f.png)
-
 3）进入[应用配置页面](https://link-ai.tech/console/factory)，点击创建应用。和普通机器人区别在于需要选择知识库。
 
 ![](img/49f0e15f17a3b68c4c09237a7e8f0f53.png)
 
-3.1）**应用设定 **即提示词。
+3.1）应用设定 即提示词。
 
 我的设定是为了在个人陪伴群里创造一个符合自己性格、技能的聊天机器人，且不回复闲聊的内容，保持知识社群的信噪比。提示词：
 
@@ -495,47 +478,40 @@ xxx
 
 5）知识库配置
 
-+   **相似度：**0.8以上搜索范围缩小，但是更精确。0.8 以下搜索范围更大，但是答案可能不准确。我设定的是 0.8 以上，因为我更追求准确性。
++   `相似度：`0.8以上搜索范围缩小，但是更精确。0.8 以下搜索范围更大，但是答案可能不准确。我设定的是 0.8 以上，因为我更追求准确性。
 
-+   **单次检索条数：**指搜索的结果涉及的内容段落数量，可以默认。
++   `单次检索条数：`指搜索的结果涉及的内容段落数量，可以默认。
 
-+   **未命中策略：**当机器人找不到内容的情况下，是可以让模型自由发挥的回复用户，还是指定固定内容。
++   `未命中策略：`当机器人找不到内容的情况下，是可以让模型自由发挥的回复用户，还是指定固定内容。
 
 ![](img/937bb1350d2d58d3b0bdeced6e08edab.png)
 
-**6）插件执行策**略：除了选择插件外，最重要的是选择 插件执行策略（指搜索内容的优先级）。
+6）插件执行策略：除了选择插件外，最重要的是选择 `插件执行策略`（指搜索内容的优先级）。
 
 ![](img/58987ffef990611c53f24da28010a403.png)
 
 7）最后进行调试。调试成功后，再准备接入🛰️中。
 
-#### 4、获取 API Key 和应用 Code
+### 4、获取 `API Key` 和应用 `Code`
 
-1）获取 LinkAI 的 API Key，再复制对应的 Key。
+1）获取 `LinkAI` 的 `API Key`，再复制对应的 `Key`。
 
 ![](img/f6c2bb71383abbc5ede41fe045d5d503.png)
 
-2）获取需要接入🛰️的应用 Code，可以在下一步配置不同群聊设定不同的应用。
+2）获取需要接入🛰️的应用 `Code`，可以在下一步配置不同群聊设定不同的应用。
 
 ![](img/f071ad69e0e53b5774814cc0a7069e06.png)
 
-#### 5、调整参数
+### 5、调整参数
 
 1）调整启动文件
 
 > 主要是修改以下参数：
-
 >
-
-+   MODEL: 'gpt-3.5-turbo'
-
-+   USE_LINKAI: 'True'
-
-+   LINKAI_API_KEY：自己的 key
-
-+   LINKAI_APP_CODE：默认应用的 code，当私聊时，或者在某个群聊没有出现在插件配置文件中时，将默认使用 LINKAI_APP_CODE 对应的应用。
-
-![](img/e99700ad9ace186a2db75d8368279e63.png)
++   `MODEL`: `gpt-3.5-turbo`
++   `USE_LINKAI`: `True`
++   `LINKAI_API_KEY`：自己的 `key`
++   `LINKAI_APP_CODE`：默认应用的 `code`，当私聊时，或者在某个群聊没有出现在插件配置文件中时，将默认使用 `LINKAI_APP_CODE` 对应的应用。
 
 2）调整插件配置文件，按照个人需求，调整插件配置文件，参数说明的截图来自官方项目：
 
@@ -546,40 +522,35 @@ xxx
 我修改后的插件配置文件：
 
 > 主要是修改：
-
 >
-
-+   group_app_map 下的两个群，以及每个群的应用 code。
-
-+   lB6RZgdx：暴躁的老王 （最初提示词来自 @刘宇龙老师）
-
-+   lQeGEw8B：熊猫分身
-
-+   summary 下的 enable 需要为 true，这样可以支持自动总结。
++   `group_app_map` 下的两个群，以及每个群的应用 `code`。
++   `lB6RZgdx`：暴躁的老王 （最初提示词来自 @刘宇龙老师）
++   `lQeGEw8B`：熊猫分身
++   `summary` 下的 `enable` 需要为 `true`，这样可以支持自动总结。
 
 ![](img/01ef12be8ffd5712cf3afa5bfbffe0bc.png)
 
-#### 6、启动/关闭
+### 6、启动/关闭
 
-同  方式一：快速搭建 > 初阶玩法 > 启动/关闭。
+同方式一：快速搭建 > 初阶玩法 > 启动/关闭。
 
-#### 7、测试
+### 7、测试
 
-**1）私聊**
+1）私聊
 
 ![](img/cdbc0133b335b237826309d147eb603a.png)
 
-**2）群聊 & 不同群支持不同机器人**，ChatGPT测试群1 - 暴躁的老王
+2）群聊 & 不同群支持不同机器人，`ChatGPT测试群1` - 暴躁的老王
 
 ![](img/c4c5e00ee62f06c01b6ca7a4e2e19ceb.png)
 
-**3）群聊 & 不同群聊支持不同机器人** ，ChatGPT测试群2 - 熊猫分身
+3）群聊 & 不同群聊支持不同机器人，`ChatGPT测试群2` - 熊猫分身
 
 ![](img/9716d533039d82db5feb48b16200a5cb.png)
 
-**4）入群欢迎和拍一拍反馈。**
+4）入群欢迎和拍一拍反馈。
 
-内容与 **初阶玩法** 相似，我就不展示啦。
+内容与 `初阶玩法` 相似，我就不展示啦。
 
 5）自动总结文件、网页内容，并支持追问。
 
@@ -587,7 +558,7 @@ xxx
 
 ![](img/e44f12720e8c3dac4c187be4570fd3a8.png)
 
-**6）在线搜索**
+6）在线搜索
 
 ![](img/d0e6b6950bc599fafab7cef4ba6e6956.png)
 
@@ -595,17 +566,17 @@ xxx
 
 ![](img/6a3c49179df5c8c0ee24e4cb150124fd.png)
 
-**8）尽量屏蔽闲聊内容。**
+8）尽量屏蔽闲聊内容。
 
 ![](img/290bcef50548bfd4dd074a5c1196a106.png)
 
-#### 8、总结
+### 8、总结
 
 测试下来，基本上满足预期。但是存在一些问题：
 
 +   AI 机器人每次发送的文本太长，如果可以分段，将更类似真人聊天的习惯。
 
-+   取消总结后的对话。因为消耗的算力过大，且如果使用者忘记退出对话，将产生 Bug，影响其他机器人的聊天过程。如下图。
++   取消总结后的对话。因为消耗的算力过大，且如果使用者忘记退出对话，将产生 `Bug`，影响其他机器人的聊天过程。如下图。
 
 ![](img/7de1fdf257215464024de3670ac04680.png)
 
@@ -615,66 +586,56 @@ xxx
 
 简单的场景，可以使用大模型来帮助我们编写或者修改代码，但是，复杂场景的确是需要一定的编程能力。
 
-接下来, 我们来看下灵活性更强的最佳实践。
+接下来，我们来看下灵活性更强的最佳实践。
 
 ## 五、方式二：最佳实践
 
-> **适用人群：**技术人员、爱折腾的非技术人员
+> `适用人群`：技术人员、爱折腾的非技术人员
 
-> **优点：**灵活性高，可以按照个人/客户的需求调整代码。
+> `优点`：灵活性高，可以按照个人/客户的需求调整代码。
 
-> **缺点：**步骤繁琐一些。
+> `缺点`：步骤繁琐一些。
 
-本次将继续使用 LinkAI，最终支持以下功能：
+本次将继续使用 `LinkAI`，最终支持以下功能：
 
 +   私聊对话（支持自动分段）
-
 +   群聊对话（支持自动分段）
-
 +   入群欢迎
-
 +   拍一拍的反馈
-
 +   自动总结文件、网页内容（取消追问的功能）
-
 +   支持大模型在线搜索
-
 +   不同群可以配置不同类型的机器人
-
 +   知识库问答
 
 ### 一）服务器准备
 
 1、进入[云平台](https://cloud.tencent.com/act/pro/free)。
 
+2、先点击 `立即试用`，再修改 `镜像`，最终点击立即试用。
 
-2、先点击 **立即试用**，再修改** 镜像**，最终点击立即试用。
-
-> 我建议不了解 linux 系统的小伙伴选择镜像： 宝塔 Linux 面板 8.0.5。
-
+> 我建议不了解 `Linux` 系统的小伙伴选择镜像： `宝塔 Linux 面板 8.0.5`。
 
 3、可能需要进行人脸认证。
 
-[4、再稍](https://console.cloud.tencent.com/expense/deal)微等待一会，等待分配服**务器**资源。如果不显示，可以进入 订单管理 查看。再点击右侧的 详情 进入订单详情界面。
+[4、再稍](https://console.cloud.tencent.com/expense/deal)微等待一会，等待分配服务器资源。如果不显示，可以进入 `订单管理` 查看。再点击右侧的 `详情` 进入订单详情界面。
 
-
-5、点击 **资源 ID** 对应的链接，跳转到服务器即可。
+5、点击 `资源 ID` 对应的链接，跳转到服务器即可。
 
 ![](img/9de8868bddcd21604447a6236330cda5.png)
 
-6、点击进入 [服务器列表](https://console.cloud.tencent.com/lighthouse/instance/index)，向下滑动后，点击 **更多 > 重置密码，**进行修改密码,  记住密码，用于接下来登录环境使用。
+6、点击进入 [服务器列表](https://console.cloud.tencent.com/lighthouse/instance/index)，向下滑动后，点击 `更多 > 重置密码`，进行修改密码，记住密码，用于接下来登录环境使用。
 
 ![](img/0e82e93a6d882336827afa9ccd27baf5.png)
 
 ![](img/9e348ea6e3aef04bb99ee32a908d20be.png)
 
-**7、点击服**务器详情后，向下滑动，并点击登录方式，选择 密码/密钥 登录。
+7、点击服务器详情后，向下滑动，并点击登录方式，选择 `密码/密钥` 登录。
 
-> 后续登录方式，建议都采用密码/密钥登录，不要选择一键登录，因为后续步骤可能会出现问题，如果是高手的话，请随意。
+> 后续登录方式，建议都采用 `密码/密钥` 登录，不要选择 `一键登录`，因为后续步骤可能会出现问题，如果是高手的话，请随意。
 
 ![](img/17c291d2ba674f245333ea027d8f61d2.png)
 
-8、选择 SSH 登录，再输入密码，再点击登录。
+8、选择 `SSH` 登录，再输入密码，再点击登录。
 
 ![](img/8680dda5959f23ecf5374b3bc7a80df9.png)
 
@@ -684,7 +645,7 @@ xxx
 
 9、可选：使用宝塔 Linux 面板操作简单一些。方便后续部署网站或者其他软件。
 
-> 步骤有点麻烦，**不是技术人员可以忽略！！！**
+> 步骤有点麻烦，不是技术人员可以忽略！！！
 
 > 宝塔 Linux 面板的使用教程：https://cloud.tencent.com/document/product/1207/54078
 
@@ -694,7 +655,7 @@ xxx
 
 #### 1、Python安装
 
-**官方推荐的 Pytho**n 版本为 3.7.1~3.9.X 版本 ，目前我安装多次都成功的版本是 3.9.6，本次将以 3.9.6 进行演示，其他版本大家需要自行尝试。
+官方推荐的 `Python` 版本为 `3.7.1~3.9.X` 版本，目前我安装多次都成功的版本是 `3.9.6`，本次将以 `3.9.6` 进行演示，其他版本大家需要自行尝试。
 
 1）登录后，移动到指定位置。
 
@@ -708,11 +669,11 @@ cd /home/lighthouse
 yum update
 ```
 
-遇到如下的确认信息时，输入 **y** 即可（适用于环境安装的所有场景）耐心等待一会， 看到 Complete 即可 。
+遇到如下的确认信息时，输入 `y` 即可（适用于环境安装的所有场景）耐心等待一会，看到 `Complete` 即可。
 
 ![](img/5fbe27aad5658101e2c4ee34c4d16088.png)
 
-**3）安装编译 P**ython 所需的依赖项, 看到 Complete 即可。
+3）安装编译 `Python` 所需的依赖项，看到 `Complete` 即可。
 
 ```
 yum install -y git gcc make openssl-devel bzip2-devel libffi-devel zlib-devel readline-devel sqlite-devel
@@ -720,9 +681,9 @@ yum install -y git gcc make openssl-devel bzip2-devel libffi-devel zlib-devel re
 
 ![](img/44075cc92e99099fa8cad4903663d46b.png)
 
-4）升级 OpenSSL
+4）升级 `OpenSSL`
 
-4.1）下载 **openssl-1.1.1t** 源代码包
+4.1）下载 `openssl-1.1.1t` 源代码包
 
 ![](img/cf4744321b15b5dccf63c68e0669713e.png)
 
@@ -732,7 +693,7 @@ yum install -y git gcc make openssl-devel bzip2-devel libffi-devel zlib-devel re
 tar -zxvf openssl-1.1.1t.tar.gz
 ```
 
-4.3）指定 openssl 安装的目标路径。
+4.3）指定 `openssl` 安装的目标路径。
 
 ```
 cd openssl-1.1.1t/
@@ -749,21 +710,17 @@ make
 make install
 ```
 
-5）下载 **Python 3.9.6** 安装包, 并上传到 home 目录下。 由于直接在现有服务器内下载速度较慢，我提前放入了百度云盘。
+5）下载 `Python 3.9.6` 安装包，并上传到 `home` 目录下。由于直接在现有服务器内下载速度较慢，我提前放入了百度云盘。
 
-> 网盘链接: https://pan.baidu.com/s/1Ur68x0XchyiK2MyDzinBNA 提取码: jay1
+> 网盘链接: https://pan.baidu.com/s/1Ur68x0XchyiK2MyDzinBNA 提取码: `jay1`
 
-5.1）点击左侧 SFTP、再鼠标点击移动到 home / lighthouse 文件夹下。用于上传文件。
+5.1）点击左侧 `SFTP`，再鼠标点击移动到 `home/lighthouse` 文件夹下。用于上传文件。
 
+5.2）上传从网盘上或者其他地方下载的 `Python` 文件。
 
-5.2）上传从网盘上或者其他地方下载的 python 文件。
+注意：第一种情况才是正确上传。若出现下方第二种情况：是因为文件目录不对，右侧文件夹没有移动到 `/home/lighthouse`
 
-
-注意：第一种情况才是正确上传。若出现下方第二种情况：是因为文件目录不对，右侧文件夹没有移动到  /home/lighthouse
-
-![](img/bf047534e77e72be21b085e7f47c4001.png)
-
-**6）向上跳转到上层文件夹**；开始解压 python 压缩包；再跳转到 Python-3.9.6 文件夹下。
+6）向上跳转到上层文件夹；开始解压 `Python` 压缩包；再跳转到 `Python-3.9.6` 文件夹下。
 
 ```
 cd ../
@@ -773,24 +730,18 @@ tar -xf Python-3.9.6.tgz
 cd Python-3.9.6/
 ```
 
-![](img/38a00e13cca9e8cb157574aae99b51b3.png)
-
 7）配置编译参数，需要稍微等一会。
 
 ```
 ./configure --enable-optimizations --with-openssl=/usr/local/my_openssl
 ```
 
-![](img/67405fc6a15f7a6d49cfbb0599cfdca9.png)
-
-8）编译并安装 Python，下面两步中的每一步，等待的时间都会较长一些。
+8）编译并安装 `Python`，下面两步中的每一步，等待的时间都会较长一些。
 
 ```
 make
 make altinstall
 ```
-
-![](img/ba737909816cb24bf55c0ec17610e2c0.png)
 
 9）校验安装是否成功。
 
@@ -798,23 +749,17 @@ make altinstall
 python3.9 --version
 ```
 
-![](img/8584a2f4a2386ac06fcbbce5e550550d.png)
-
-10）升级 pip3
+10）升级 `pip3`
 
 ```
 pip3 install --upgrade pip
 ```
 
-![](img/6aaff28172dbbaadf8564cead622b378.png)
-
-11）设置pip安装源：以设置清华大学镜像为例。
+11）设置 `pip` 安装源：以设置清华大学镜像为例。
 
 ```
 pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-
-![](img/d8b9221c0dc2008ad6391ca05f24e842.png)
 
 11）安装虚拟环境
 
@@ -822,17 +767,13 @@ pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip3 install virtualenv
 ```
 
-![](img/3c559613adf3ce04cf734a65b3f92c89.png)
-
 12）创建虚拟环境。
 
-> Python 的虚拟环境是一个独立的 Python 运行空间，用于隔离不同项目的依赖库，避免与系统的 python 版本形成冲突。
+> `Python` 的虚拟环境是一个独立的 `Python` 运行空间，用于隔离不同项目的依赖库，避免与系统的 `python` 版本形成冲突。
 
 ```
 virtualenv -p python3.9 /home/lighthouse/Python-3.9.6/wechat-env
 ```
-
-![](img/80f595ed6e03ab4c758ea8e546f7bfe2.png)
 
 13）验证是否可以正常进入虚拟环境。
 
@@ -840,35 +781,28 @@ virtualenv -p python3.9 /home/lighthouse/Python-3.9.6/wechat-env
 source /home/lighthouse/Python-3.9.6/wechat-env/bin/activate
 ```
 
-![](img/5bb09a548c1c61dff2937fc9768d888b.png)
-
 13、验证是否可以正常退出虚拟环境。
 
 ```
 deactivate
 ```
 
-![](img/b0cbcd7cc9b12a26f04beb8efce0bddb.png)
-
 #### 2、项目下载
 
-> 本次以我个人 Fork 的项目进行演示，如果需要使用官方的代码，可以将项目地址（前者是项目代码，后者是官方代码）：
-
+> 本次以我个人 `Fork` 的项目进行演示，如果需要使用官方的代码，可以将项目地址（前者是项目代码，后者是官方代码）：
 > https://github.com/jaylpp/chatgpt-on-wechat.git 更换成 https://github.com/zhayujie/chatgpt-on-wechat.git
 
-1）跳转到 **/home** 目录（可以按照自己的要求，确定项目下载的目录）。
+1）跳转到 `/home` 目录（可以按照自己的要求，确定项目下载的目录）。
 
 ```
 cd /home/lighthouse
 ```
 
-2）使用 Git 下载项目代码。
+2）使用 `Git` 下载项目代码。
 
 ```
 git clone https://github.com/jaylpp/chatgpt-on-wechat.git
 ```
-
-![](img/3f9596b5890b4484b9956634c02e05d4.png)
 
 #### 3、安装核心依赖
 
@@ -878,7 +812,9 @@ git clone https://github.com/jaylpp/chatgpt-on-wechat.git
 cd /home/lighthouse/chatgpt-on-wechat/
 ```
 
-2、激活 python 虚拟环境。
+2、激活 `Python` 虚拟环境。
+
+
 
 ```
 source /home/lighthouse/Python-3.9.6/wechat-env/bin/activate
@@ -894,70 +830,55 @@ pip3 install -r requirements.txt
 
 ![](img/189f0c76dee9b094a216e8a4b663ffc6.png)
 
-### 三）LinkAI 应用配置和调试
+## 三）LinkAI 应用配置和调试
 
-参考 **方式一：快速搭建 > 进阶玩法 > **配置普通机器人 & 配置知识库问答机器人。
+参考`方式一：快速搭建 > 进阶玩法 > 配置普通机器人 & 配置知识库问答机器人`。
 
-### 四）获取 API Key 和应用 Code
+## 四）获取 API Key 和应用 Code
 
-参考 **方式一：快速搭建 > 进阶玩法 >** 获取 API Key 和应用 Code。
+参考`方式一：快速搭建 > 进阶玩法`获取 API Key 和应用 Code。
 
-### 五）参数调整
+## 五）参数调整
 
 > 链接: https://pan.baidu.com/s/1krXcv9Mi4fnxZ1ye9aJIOg 提取码: jay6
 
->
-
 > 备注：启动文件中，基于[我 fork 的项目代码](https://github.com/jaylpp/chatgpt-on-wechat.git) 中多增加了三个参数：
 
->
++   `use_split_section`: 是否使用文本分段，这样可以将聊天的长文本拆分成多条消息。
++   `spilt_section_number`：基于多少个字进行循环分段（如果为 65，将每隔 65 个字找到最近的句号、感叹号、问号 进行分段）
++   `use_summary_chat`：自动总结文件、在线网页后是否可以追问。
 
-+   use_split_section: 是否使用文本分段，这样可以将聊天的长文本拆分成多条消息。
-
-+   spilt_section_number：基于多少个字进行循环分段（如果为 65，将每隔 65 个字找到最近的句号、感叹号、问号 进行分段）
-
-+   use_summary_chat：自动总结文件、在线网页后是否可以追问。
-
-#### 1、调整启动文件并上传
+### 1、调整启动文件并上传
 
 主要调整了以下参数：
 
-+   model：确保 model 为自己需要的模型，本次我选择使用比较实惠的 gpt-3.5-turbo。
-
-+   group_name_white_list： 确定群聊白名单。
-
-+   use_linkai：使用 linkAI的开关
-
-+   linkai_api_key：API Key
-
-+   linkai_app_code：默认的应用 Code
-
-+   use_split_section：开启文本分段
-
-+   spilt_section_number：每隔 65 个字自动分段。
-
-+   use_summary_chat：不开启总结后的追问。
++   `model`：确保 `model` 为自己需要的模型，本次我选择使用比较实惠的 `gpt-3.5-turbo`。
++   `group_name_white_list`：确定群聊白名单。
++   `use_linkai`：使用 `LinkAI` 的开关
++   `linkai_api_key`：API Key
++   `linkai_app_code`：默认的应用 Code
++   `use_split_section`：开启文本分段
++   `spilt_section_number`：每隔 65 个字自动分段。
++   `use_summary_chat`：不开启总结后的追问。
 
 ![](img/9f950162abc59e98c55e05e39d82979a.png)
 
-上传到指定目录下：/home/lighthouse/chatgpt-on-wechat
+上传到指定目录下：`/home/lighthouse/chatgpt-on-wechat`
 
 ![](img/0f869151e2e594fe58e50f8f9fd04e38.png)
 
-#### 2、调整插件配置文件
+### 2、调整插件配置文件
 
 主要调整了以下参数：
 
-+   group_app_map: 不同群聊应用不同机器人。
-
-+   summary：默认即可。
++   `group_app_map`: 不同群聊应用不同机器人。
++   `summary`：默认即可。
 
 ![](img/2ad872475d88f2d26e238ac574d31086.png)
 
-调整后，上传到目录：/home/lighthouse/chatgpt-on-wechat/plugins/linkai
+调整后，上传到目录：`/home/lighthouse/chatgpt-on-wechat/plugins/linkai`
 
-
-### 六）服务器启动
+## 六）服务器启动
 
 1、移动到程序根目录下，创建日志文件。
 
@@ -983,11 +904,11 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 ![](img/0b26d8f9577455db416967b6af3940c1.png)
 
-### 七）测试
+## 七）测试
 
-由于在 方式一：快速搭建 > 进阶玩法 > 测试 中已经测试了大部分场景，这里我主要测试有区别的功能。
+由于在 `方式一：快速搭建 > 进阶玩法 > 测试` 中已经测试了大部分场景，这里我主要测试有区别的功能。
 
-#### 1、群聊内容自动分段。
+### 1、群聊内容自动分段。
 
 暴躁老王：
 
@@ -999,7 +920,7 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 分段的字数基本上比较合适。手机上看着也不臃肿～
 
-#### 2、取消自动总结的追问功能。
+### 2、取消自动总结的追问功能。
 
 ![](img/62f485c4b611e5a293b74786cb16b6f8.png)
 
@@ -1009,17 +930,17 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 > 注意，如果需要在付费社群上线，建议在上线前组织一个测试群，邀请一些核心用户前来体验，并按照反馈做出一些迭代后，再考虑上线。
 
-### 八）上线
+## 八）上线
 
 上线时，作为社群的负责人或者助理，我们需要提前准备一些常用的案例，并给用户示范一下。
 
 此外，如果是知识付费社群，可以按照自己的要求，引导用户减少暴力测试机器人的情况，否则这样会影响到社群的其他人。并且，建议社群中的用户在使用时，向机器人提出正常的问题，不要闲聊，提高社群的信噪比。
 
-### 九）服务器关闭
+## 九）服务器关闭
 
-1、查询进程： ps -ef | grep app.py | grep -v grep
+1、查询进程：`ps -ef | grep app.py | grep -v grep`
 
-2、停止进程：kill -9 <PID>
+2、停止进程：`kill -9 <PID>`
 
 ## 六、实战思路
 
@@ -1027,7 +948,7 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 作为社群机器人时，先要做定位：确定到底是为了满足闲聊需求，还是利用大模型帮助社群成员解决通识问题，还是说充当自己的分身来辅助社群成员解决特定的一些问题。定位做好后，将决定我们如何设计机器人。
 
-一部分社群的场景利用 **方式一：快速搭建** 已经可以满足，但是如果要想实现更加完善的功能，比如：社群的内容分发、社群的精华汇总等等功能时，因为涉及到定制化的需求，所以需要调整源代码，这也是最佳实践的部署方式可以实现的。
+一部分社群的场景利用 `方式一：快速搭建` 已经可以满足，但是如果要想实现更加完善的功能，比如：社群的内容分发、社群的精华汇总等等功能时，因为涉及到定制化的需求，所以需要调整源代码，这也是最佳实践的部署方式可以实现的。
 
 关于社群的玩法，大家可以自行实践，比如小报童社群、训练营都可以配置一个问答机器人，可以更好的提高交付感。
 
@@ -1047,39 +968,36 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 > 如果遇到问题，建议先在以下两个网页中进行查看：
 
->
-
 +   官方问答机器人：https://link-ai.tech/app/Kv2fXJcH
-
 +   官方 FAQs：https://github.com/zhayujie/chatgpt-on-wechat/issues
 
 ### 一）发送任何信息，机器人都没有回应。
 
 **1、检查**
 
-服务器输出日志是否正常、群聊配置是否正确，key 的额度是否已经欠费。
+服务器输出日志是否正常、群聊配置是否正确，`key` 的额度是否已经欠费。
 
 **2、症状**
 
-机器人没有任何响应。服务器的日志为出现 Unexpected sync check result: window.synccheck={retcode:"1101",selector:"0"}
+机器人没有任何响应。服务器的日志为出现 `Unexpected sync check result: window.synccheck={retcode:"1101",selector:"0"}`
 
 **3、解决方案**
 
 保持🛰️在线。
 
-### 二）调试 LinkAI 提示词后，在🛰️中始终不生效。
+### 二）调试 `LinkAI` 提示词后，在🛰️中始终不生效。
 
 **1、检查**
 
-由于不同大模型的表现能力不同，需要花费不少时间调整提示词来满足预期，无论如何，都需要确保在 LinkAI 调试时满足要求，再去🛰️中验证。
+由于不同大模型的表现能力不同，需要花费不少时间调整提示词来满足预期，无论如何，都需要确保在 `LinkAI` 调试时满足要求，再去🛰️中验证。
 
 **2、症状**
 
-LinkAI 上调试可以满足要求，但是🛰️中不能。
+`LinkAI` 上调试可以满足要求，但是🛰️中不能。
 
 **3、解决方案**
 
-在🛰️中使用** #reset** 来重置对话，清空角色的设定。
+在🛰️中使用`#reset`来重置对话，清空角色的设定。
 
 ![](img/1a1123f3ea817efcf8002ab146f639b3.png)
 
@@ -1087,7 +1005,7 @@ LinkAI 上调试可以满足要求，但是🛰️中不能。
 
 **1、检查**
 
-确定是否已经设置插件配置文件，确定 summary / enable 是否已经开启。确定文件或者链接内容是否大于设定的文件上限制（处于插件配置文件的 summary / max_file_size）。
+确定是否已经设置插件配置文件，确定 `summary / enable` 是否已经开启。确定文件或者链接内容是否大于设定的文件上限制（处于插件配置文件的 `summary / max_file_size`）。
 
 **2、症状**
 
@@ -1099,7 +1017,7 @@ LinkAI 上调试可以满足要求，但是🛰️中不能。
 
 ### 四）最佳实践：启动日志中报错，无法显示二维码
 
-1**、症状**
+1、**症状**
 
 启动后，报如下错误。
 
@@ -1109,25 +1027,23 @@ LinkAI 上调试可以满足要求，但是🛰️中不能。
 
 如下参数，为我在官方代码的基础上调整后增加的参数。所以需要使用我的代码: https://github.com/jaylpp/chatgpt-on-wechat.git :
 
-+   use_split_section：开启文本分段
++   `use_split_section`：开启文本分段
++   `spilt_section_number`：每隔 65 个字自动分段。
++   `use_summary_chat`：不开启总结后的追问。
 
-+   spilt_section_number：每隔 65 个字自动分段。
-
-+   use_summary_chat：不开启总结后的追问。
-
-如果不想要使用我的代码，可以考虑在 chatgpt-on-wechat / config.json 中将以上三个参数去掉。
+如果不想要使用我的代码，可以考虑在 `chatgpt-on-wechat / config.json` 中将以上三个参数去掉。
 
 ### 五）启动项目，扫码后，后台日志显示异常，没有出现🛰️ ID 和🛰️昵称。机器人无法正常回复
 
-1**、症状**
+1、**症状**
 
 启动扫码后，日志如下：
 
 ![](img/96ad4f585a3fb18736ae349bbdc744e1.png)
 
-**２、解决方案**
+**2、解决方案**
 
-检查下之前是否开启了参数 hot_**reload = tru**e，且是否最近更换🛰️的昵称。如果存在类似情况，请删除 chatgpt-on-wechat 目录下的 itchat.pkl 文件，再重新启动和登录。
+检查下之前是否开启了参数 `hot_reload = true`，且是否最近更换🛰️的昵称。如果存在类似情况，请删除 `chatgpt-on-wechat` 目录下的 `itchat.pkl` 文件，再重新启动和登录。
 
 ## 八、总结
 

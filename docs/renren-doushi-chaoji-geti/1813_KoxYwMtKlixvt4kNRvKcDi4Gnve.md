@@ -1,8 +1,10 @@
+
 # 全新换脸工具ReActor，比roop更强！
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MvDxdwffQo0gAPxeeGpcAnMfntg](https://xuqiwei1986.feishu.cn/docx/MvDxdwffQo0gAPxeeGpcAnMfntg)
-
 > 之前听雨介绍过 SD 的换脸插件 roop，今天介绍一个在 roop 基础上更新换代的更强换脸插件 ReActor，嗯，这两个插件其实是一个作者哈。roop 已经停止更新了，以后小伙伴们可以直接使用 ReActor。
+
+## 前置环境与插件安装
 
 ReActor 包括 roop，安装之前都需要依赖外部的环境，所以在安装 ReActor 之前，我们先做一些前置的安装操作。
 
@@ -24,7 +26,7 @@ ReActor 包括 roop，安装之前都需要依赖外部的环境，所以在安�
 
 首先需要安装 Visual Studio 2022，以下是安装包下载链接：
 
-> [https://visualstudio.micr](https://visualstudio.microsoft.com/downloads/)osoft.com/downloads/
+> [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 
 进来以后，我们下载社区版就可以了。
 
@@ -35,6 +37,8 @@ ReActor 包括 roop，安装之前都需要依赖外部的环境，所以在安�
 然后，我们就可以去 SD 中安装 ReActor 插件啦。插件安装好以后记得重启 SD。
 
 ![](img/81f5f7b3e5f5620542d7261d88b4fb2b.png)
+
+## 模型下载与目录配置
 
 以下就是 ReActor 的界面了，用过 roop 的小伙伴应该不陌生吧！功能界面除了新增的功能，其他布局都差不多。
 
@@ -48,13 +52,13 @@ ReActor 包括 roop，安装之前都需要依赖外部的环境，所以在安�
 
 > 链接：https://pan.quark.cn/s/c7bfc7532927
 
-把下载的文件放入以下目录，如果不存在 insightface 文件夹，我们就自己新建一个就好了。记得「inswapper_128.onnx」文件大小是 528M。如果图生图使用 ReActor 插件换脸的时候报错，首先看下该文件的大小如果不是 528M，那就用听雨网盘中的文件进行替换。
+把下载的文件放入以下目录，如果不存在 `insightface` 文件夹，我们就自己新建一个就好了。记得 `inswapper_128.onnx` 文件大小是 528M。如果图生图使用 ReActor 插件换脸的时候报错，首先看下该文件的大小如果不是 528M，那就用听雨网盘中的文件进行替换。
 
-> \sd-webui-aki-v4.1\models\insightface
-
->
+> `\sd-webui-aki-v4.1\models\insightface`
 
 ![](img/099056ddf338ba890cd80dd68af1d854.png)
+
+## 换脸操作与 A B框配置
 
 接下来我们继续。
 
@@ -98,11 +102,13 @@ A 框中设置为「0,1」，B 框中设置为「1,0」，代表用指定图片�
 
 以上，我相信小伙伴们亲自操作一下就知道了。我们继续往下讲。
 
+## 其他选项与设置
+
 这里一般默认就可以，如果觉得最终出图脸部不清楚的话，可以选择第三个选项。
 
 ![](img/1d157f98ad873a122c971484eafd6862.png)
 
-**这里我们只需要关注第二个配**置就可以了，CodeFormer 强度值越大，替换的人脸相似度越高。
+这里我们只需要关注第二个配置就可以了，CodeFormer 强度值越大，替换的人脸相似度越高。
 
 ![](img/56990fd54762ad5ef822a864355a98fe.png)
 

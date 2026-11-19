@@ -1,4 +1,5 @@
-# DeepSeek-R1-Distill-Qwen3-8B GRPO微调教程
+
+# `DeepSeek-R1-Distill-Qwen3-8B` GRPO微调教程
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/ElD9dS15OoKSzLxR2EscUQhYnCg](https://v11enp9ok1h.feishu.cn/docx/ElD9dS15OoKSzLxR2EscUQhYnCg)
 
@@ -6,19 +7,19 @@
 
 本文使用的测试环境为单张 A100，显存 80GB，可根据需求切换不同参数量的模型，实测4B 24G显存 is enough！
 
-使用的框架为 Unsloth
+使用的框架为 `Unsloth`
 
 ![](img/71866a2d1600d9cc3d43d6f22d0b72cc.png)
 
-Unsloth 是一个极其强调资源节省的框架，把所有的资源节省做到了极致，具体来讲Unsloth能够将 Llama-3、Mistral、Phi-4 和 Gemma 等大型语言模型的微调速度提升 2 倍，内存占用减少 70%，并且准确率没有任何下降！
+`Unsloth` 是一个极其强调资源节省的框架，把所有的资源节省做到了极致，具体来讲 `Unsloth` 能够将 `Llama-3`、`Mistral`、`Phi-4` 和 `Gemma` 等大型语言模型的微调速度提升 2 倍，内存占用减少 70%，并且准确率没有任何下降！
 
-官方文档非常全面，详细指导了如何训练自己的定制模型。其中涵盖了安装和更新 Unsloth、创建数据集、运行和部署模型等基本要素。 Unsloth 让大家在本地或在 Google Colab 和 Kaggle 等平台上训练像 Llama 3 这样的模型变得极其简单。Unsloth简化了整个训练工作流程，包括模型加载、量化、训练、评估、运行、保存、导出，以及与 Ollama、llama.cpp 和 vLLM 等推理引擎的集成。
+官方文档非常全面，详细指导了如何训练自己的定制模型。其中涵盖了安装和更新 `Unsloth`、创建数据集、运行和部署模型等基本要素。 `Unsloth` 让大家在本地或在 Google Colab 和 Kaggle 等平台上训练像 `Llama 3` 这样的模型变得极其简单。 `Unsloth` 简化了整个训练工作流程，包括模型加载、量化、训练、评估、运行、保存、导出，以及与 Ollama、`llama.cpp` 和 `vLLM` 等推理引擎的集成。
 
-Unsloth定期与 Hugging Face、Google 和 Meta 的团队合作，以修复 LLM 训练和模型中的错误。因此，当使用 Unsloth 进行训练或使用模型时，可以期待获得最准确的结果。 Unsloth 具有高度可定制性，允许更改聊天模板或数据集格式等内容。Unsloth还为视觉、文本转语音 (TTS)、BERT、强化学习 (RL) 等提供了预构建的脚本！此外，Unsloth支持所有训练方法和所有基于 Transformer 的模型。
+`Unsloth` 定期与 Hugging Face、Google 和 Meta 的团队合作，以修复 LLM 训练和模型中的错误。因此，当使用 `Unsloth` 进行训练或使用模型时，可以期待获得最准确的结果。 `Unsloth` 具有高度可定制性，允许更改聊天模板或数据集格式等内容。 `Unsloth` 还为视觉、文本转语音 (TTS)、BERT、强化学习 (RL) 等提供了预构建的脚本！此外，`Unsloth` 支持所有训练方法和所有基于 Transformer 的模型。
 
 ## 教程概览
 
-本教程将指导您完成 **DeepSeek-R1-Distill-Qwen3-8B 模型的 GRPO（Group Relative Policy Optimization）微调**，这是一种先进的强化学习技术，专门用于提升大语言模型在特定任务上的表现。
+本教程将指导您完成 `DeepSeek-R1-Distill-Qwen3-8B 模型的 GRPO（Group Relative Policy Optimization）微调`，这是一种先进的强化学习技术，专门用于提升大语言模型在特定任务上的表现。
 
 ### 什么是GRPO？
 
@@ -34,25 +35,25 @@ GRPO（Group Relative Policy Optimization）是一种强化学习优化技术，
 
 ### 本教程的学习内容
 
-1.  **环境设置**: 安装Unsloth和相关依赖
+1. `环境设置`: 安装 `Unsloth` 和相关依赖
 
-1.  **模型加载**: 加载DeepSeek-R1-Distill-Qwen3-8B预训练模型
+1. `模型加载`: 加载 `DeepSeek-R1-Distill-Qwen3-8B` 预训练模型
 
-1.  **LoRA配置**: 设置高效的参数微调
+1. `LoRA配置`: 设置高效的参数微调
 
-1.  **数据处理**: 处理GSM8K数学推理数据集
+1. `数据处理`: 处理 `GSM8K` 数学推理数据集
 
-1.  **格式设计**: 定义结构化的输出格式
+1. `格式设计`: 定义结构化的输出格式
 
-1.  **奖励函数**: 设计多维度评估体系
+1. `奖励函数`: 设计多维度评估体系
 
-1.  **GRPO训练**: 执行强化学习微调
+1. `GRPO训练`: 执行强化学习微调
 
-1.  **效果验证**: 测试微调后的模型
+1. `效果验证`: 测试微调后的模型
 
-1.  **模型保存**: 保存训练结果
+1. `模型保存`: 保存训练结果
 
-1.  **可视化监控**: 使用SwanLab跟踪训练过程
+1. `可视化监控`: 使用 SwanLab 跟踪训练过程
 
 ```
 # 安装依赖包
@@ -298,6 +299,8 @@ print(get_lang(&quot;Aku berpikir kalau aku adalah kamu&quot;)) # 这应该返�
 print(get_lang(&quot;我在这里&quot;)) # 这应该返回zh
 ```
 
+
+
 ```
 import re
 
@@ -305,20 +308,20 @@ def format_and_language_reward_func(completions, **kwargs):
     scores = []
 
     for completion_item in completions:
-        if not completion_item or not isinstance(completion_item[0], dict) or &quot;content&quot; not in completion_item[0]:
+        if not completion_item or not isinstance(completion_item[0], dict) or "content" not in completion_item[0]:
             scores.append(-5.0)
-            print(f&quot;警告：格式错误的完成项，分配默认低分: {completion_item}&quot;)
+            print(f"警告：格式错误的完成项，分配默认低分: {completion_item}")
             continue
 
-        content = completion_item[0][&quot;content&quot;]
+        content = completion_item[0]["content"]
 
         lang = get_lang(content)
 
-        if lang == &#x27;id&#x27;:
+        if lang == 'id':
             score = 5.0
-        elif lang == &#x27;en&#x27;:
+        elif lang == 'en':
             score = -3.0
-        elif lang == &#x27;zh&#x27;:
+        elif lang == 'zh':
             score = -3.0
         else:
             score = -5.0
@@ -330,17 +333,17 @@ def format_and_language_reward_func(completions, **kwargs):
 
 ```
 prompts = [
-    [{&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;What is the result of (1 + 2) * 4?&quot;}],
-    [{&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;What is the result of (3 + 1) * 2?&quot;}],
+    [{"role": "assistant", "content": "What is the result of (1 + 2) * 4?"}],
+    [{"role": "assistant", "content": "What is the result of (3 + 1) * 2?"}],
 ]
 completions = [
-    [{&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;&lt;think&gt;The sum of 1 and 2 is 3, which we multiply by 4 to get 12.&lt;/think&gt;&lt;answer&gt;(1 + 2) * 4 = 12&lt;/answer&gt;&quot;}],
-    [{&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;The sum of 3 and 1 is 4, which we multiply by 2 to get 8. So (3 + 1) * 2 = 8.&quot;}],
+    [{"role": "assistant", "content": "<think>The sum of 1 and 2 is 3, which we multiply by 4 to get 12.</think><answer>(1 + 2) * 4 = 12</answer>"}],
+    [{"role": "assistant", "content": "The sum of 3 and 1 is 4, which we multiply by 2 to get 8. So (3 + 1) * 2 = 8."}],
 ]
 format_and_language_reward_func(prompts=prompts, completions=completions)
 ```
 
-我们现在准备主函数，它将打印生成的响应和真实答案，以及另一个奖励函数，通过float将文本转换为浮点数并查看是否相同。
+我们现在准备主函数，它将打印生成的响应和真实答案，以及另一个奖励函数，通过`float`将文本转换为浮点数并查看是否相同。
 
 ```
 global PRINTED_TIMES
@@ -349,8 +352,8 @@ global PRINT_EVERY_STEPS
 PRINT_EVERY_STEPS = 5
 
 def check_numbers(prompts, completions, answer, **kwargs):
-    question = prompts[0][-1][&quot;content&quot;]
-    responses = [completion[0][&quot;content&quot;] for completion in completions]
+    question = prompts[0][-1]["content"]
+    responses = [completion[0]["content"] for completion in completions]
 
     extracted_responses = [
         guess.group(1)
@@ -364,7 +367,7 @@ def check_numbers(prompts, completions, answer, **kwargs):
     global PRINT_EVERY_STEPS
     if PRINTED_TIMES % PRINT_EVERY_STEPS == 0:
         print(
-            &#x27;*&#x27;*20 + f&quot;问题:\n{question}&quot;, f&quot;\n答案:\n{answer[0]}&quot;, f&quot;\n响应:\n{responses[0]}&quot;, f&quot;\n提取的:\n{extracted_responses[0]}&quot;
+            '*'*20 + f"问题:\n{question}", f"\n答案:\n{answer[0]}", f"\n响应:\n{responses[0]}", f"\n提取的:\n{extracted_responses[0]}"
         )
     PRINTED_TIMES += 1
 
@@ -376,7 +379,7 @@ def check_numbers(prompts, completions, answer, **kwargs):
         try:
             true_answer = float(true_answer.strip())
             # 移除逗号，如123,456
-            guess       = float(guess.strip().replace(&quot;,&quot;, &quot;&quot;))
+            guess       = float(guess.strip().replace(",", ""))
             scores.append(3.5 if guess == true_answer else -1.5)
         except:
             scores.append(0)
@@ -390,18 +393,18 @@ def check_numbers(prompts, completions, answer, **kwargs):
 
 ```
 tokenized = dataset.map(
-    lambda x: {&quot;tokens&quot; : tokenizer.apply_chat_template(x[&quot;prompt&quot;], add_generation_prompt = True, tokenize = True)},
+    lambda x: {"tokens" : tokenizer.apply_chat_template(x["prompt"], add_generation_prompt = True, tokenize = True)},
     batched = True,
 )
-print(tokenizer.decode(tokenized[0][&quot;tokens&quot;]))
-tokenized = tokenized.map(lambda x: {&quot;L&quot; : len(x[&quot;tokens&quot;])})
+print(tokenizer.decode(tokenized[0]["tokens"]))
+tokenized = tokenized.map(lambda x: {"L" : len(x["tokens"])})
 
 import numpy as np
-maximum_length = int(np.quantile(tokenized[&quot;L&quot;], 0.9))
-print(&quot;最大长度 = &quot;, maximum_length)
+maximum_length = int(np.quantile(tokenized["L"], 0.9))
+print("最大长度 = ", maximum_length)
 
 # 只过滤小于90%最大长度的样本
-dataset = dataset.select(np.where(np.array(tokenized[&quot;L&quot;]) &lt;= maximum_length)[0])
+dataset = dataset.select(np.where(np.array(tokenized["L"]) <= maximum_length)[0])
 del tokenized
 ```
 
@@ -432,8 +435,8 @@ training_args = GRPOConfig(
     learning_rate = 5e-6,
     weight_decay = 0.01,
     warmup_ratio = 0.1,
-    lr_scheduler_type = &quot;linear&quot;,
-    optim = &quot;adamw_8bit&quot;,
+    lr_scheduler_type = "linear",
+    optim = "adamw_8bit",
     logging_steps = 1,
     per_device_train_batch_size = 1,
     gradient_accumulation_steps = 1, # 增加到4以获得更平滑的训练
@@ -443,26 +446,30 @@ training_args = GRPOConfig(
     # num_train_epochs = 1, # 对于完整训练运行设置为1
     max_steps = 100,
     save_steps = 100,
-    report_to = &quot;swanlab&quot;, # 可以使用Weights &amp; Biases
-    output_dir = &quot;outputs&quot;,
+    report_to = "swanlab", # 可以使用Weights & Biases
+    output_dir = "outputs",
 
     # 用于可选的训练+评估
     # fp16_full_eval = True,
     # per_device_eval_batch_size = 4,
     # eval_accumulation_steps = 1,
-    # eval_strategy = &quot;steps&quot;,
+    # eval_strategy = "steps",
     # eval_steps = 1,
 )
 ```
 
-让我们运行训练器！如果你向上滚动，你会看到一个奖励表格。目标是看到reward列增加！
+让我们运行训练器！如果你向上滚动，你会看到一个奖励表格。目标是看到`reward`列增加！
 
 你可能需要等待150到200步才能看到任何效果。前100步你可能会得到0奖励。请耐心等待！
 
 | 步骤 | 训练损失 | 奖励 | 奖励标准差 | 完成长度 | kl |
+
 | --- | --- | --- | --- | --- | --- |
+
 | 1 | 0.000000 | 0.125000 | 0.000000 | 200.000000 | 0.000000 |
+
 | 2 | 0.000000 | 0.072375 | 0.248112 | 200.000000 | 0.000000 |
+
 | 3 | 0.000000 | -0.079000 | 0.163776 | 182.500000 | 0.000005 |
 
 ```
@@ -483,8 +490,8 @@ trainer = GRPOTrainer(
     train_dataset = dataset,
 
     # 用于可选的训练+评估
-    # train_dataset = new_dataset[&quot;train&quot;],
-    # eval_dataset = new_dataset[&quot;test&quot;],
+    # train_dataset = new_dataset["train"],
+    # eval_dataset = new_dataset["test"],
 )
 trainer.train()
 ```
@@ -496,7 +503,7 @@ trainer.train()
 现在让我们试试刚刚训练的模型！首先，让我们先试试没有经过GRPO训练的模型：
 
 ```
-text = &quot;What is the sqrt of 101?&quot;
+text = "What is the sqrt of 101?"
 
 from vllm import SamplingParams
 sampling_params = SamplingParams(
@@ -516,7 +523,7 @@ output
 现在使用我们刚刚用GRPO训练的LoRA - 我们首先保存LoRA！
 
 ```
-model.save_lora(&quot;grpo_lora&quot;)
+model.save_lora("grpo_lora")
 ```
 
 验证LoRA确实被训练了！
@@ -525,7 +532,7 @@ model.save_lora(&quot;grpo_lora&quot;)
 from safetensors import safe_open
 
 tensors = {}
-with safe_open(&quot;grpo_lora/adapter_model.safetensors&quot;, framework = &quot;pt&quot;) as f:
+with safe_open("grpo_lora/adapter_model.safetensors", framework = "pt") as f:
     # 验证A和B都非零
     for key in f.keys():
         tensor = f.get_tensor(key)
@@ -537,7 +544,7 @@ with safe_open(&quot;grpo_lora/adapter_model.safetensors&quot;, framework = &quo
 
 ```
 messages = [
-    {&quot;role&quot;: &quot;user&quot;,   &quot;content&quot;: &quot;Solve (x + 2)^2 = 0&quot;},
+    {"role": "user",   "content": "Solve (x + 2)^2 = 0"},
 ]
 
 text = tokenizer.apply_chat_template(
@@ -554,7 +561,7 @@ sampling_params = SamplingParams(
 output = model.fast_generate(
     text,
     sampling_params = sampling_params,
-    lora_request = model.load_lora(&quot;grpo_lora&quot;),
+    lora_request = model.load_lora("grpo_lora"),
 )[0].outputs[0].text
 
 output
@@ -564,8 +571,8 @@ output
 
 ```
 messages = [
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: system_prompt},
-    {&quot;role&quot;: &quot;user&quot;,   &quot;content&quot;: &quot;Solve (x + 2)^2 = 0&quot;},
+    {"role": "system", "content": system_prompt},
+    {"role": "user",   "content": "Solve (x + 2)^2 = 0"},
 ]
 
 text = tokenizer.apply_chat_template(
@@ -582,7 +589,7 @@ sampling_params = SamplingParams(
 output = model.fast_generate(
     text,
     sampling_params = sampling_params,
-    lora_request = model.load_lora(&quot;grpo_lora&quot;),
+    lora_request = model.load_lora("grpo_lora"),
 )[0].outputs[0].text
 
 output
@@ -590,10 +597,12 @@ output
 
 让我们比较使用系统提示但不使用LoRA的结果
 
+
+
 ```
 messages = [
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: system_prompt},
-    {&quot;role&quot;: &quot;user&quot;,   &quot;content&quot;: &quot;Solve (x + 2)^2 = 0&quot;},
+    {"role": "system", "content": system_prompt},
+    {"role": "user",   "content": "Solve (x + 2)^2 = 0"},
 ]
 
 text = tokenizer.apply_chat_template(
@@ -627,13 +636,13 @@ sample_dataset
 with_lora_id_count = 0
 without_lora_id_count = 0
 
-print(&quot;在20个样本上比较使用和不使用LoRA的语言使用情况:&quot;)
-print(&quot;=&quot; * 60)
+print("在20个样本上比较使用和不使用LoRA的语言使用情况:")
+print("=" * 60)
 
 for i, sample in enumerate(sample_dataset):
     messages = [
-        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: system_prompt},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: sample[&quot;prompt&quot;][1][&quot;content&quot;]},
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": sample["prompt"][1]["content"]},
     ]
 
     text = tokenizer.apply_chat_template(
@@ -645,7 +654,7 @@ for i, sample in enumerate(sample_dataset):
     output_with_lora = model.fast_generate(
         text,
         sampling_params=sampling_params,
-        lora_request=model.load_lora(&quot;grpo_lora&quot;),
+        lora_request=model.load_lora("grpo_lora"),
     )[0].outputs[0].text
 
     output_without_lora = model.fast_generate(
@@ -657,110 +666,108 @@ for i, sample in enumerate(sample_dataset):
     lang_with_lora = get_lang(output_with_lora)
     lang_without_lora = get_lang(output_without_lora)
 
-    if lang_with_lora == &#x27;id&#x27;:
+    if lang_with_lora == 'id':
         with_lora_id_count += 1
-    if lang_without_lora == &#x27;id&#x27;:
+    if lang_without_lora == 'id':
         without_lora_id_count += 1
 
     # 每5个样本打印进度
     if (i + 1) % 5 == 0:
-        print(f&quot;已处理 {i + 1}/20 个样本...&quot;)
+        print(f"已处理 {i + 1}/20 个样本...")
 
-print(&quot;\n&quot; + &quot;=&quot; * 60)
-print(&quot;结果:&quot;)
-print(f&quot;使用LoRA - 印尼语响应: {with_lora_id_count}/20 ({with_lora_id_count/20*100:.1f}%)&quot;)
-print(f&quot;不使用LoRA - 印尼语响应: {without_lora_id_count}/20 ({without_lora_id_count/20*100:.1f}%)&quot;)
-print(f&quot;改进: 使用LoRA增加了{with_lora_id_count - without_lora_id_count}个印尼语响应&quot;)
+print("\n" + "=" * 60)
+print("结果:")
+print(f"使用LoRA - 印尼语响应: {with_lora_id_count}/20 ({with_lora_id_count/20*100:.1f}%)")
+print(f"不使用LoRA - 印尼语响应: {without_lora_id_count}/20 ({without_lora_id_count/20*100:.1f}%)")
+print(f"改进: 使用LoRA增加了{with_lora_id_count - without_lora_id_count}个印尼语响应")
 ```
 
 我们的推理模型要好得多 - 它不总是正确的，因为我们只训练了大约一个小时 - 如果我们延长序列长度并训练更长时间会更好！
 
-<a name="Save"></a>
+## 保存为float16格式用于VLLM
 
-### 保存为float16格式用于VLLM
-
-我们还支持直接保存为float16。选择merged_16bit用于float16或merged_4bit用于int4。我们还允许lora适配器作为备选方案。使用push_to_hub_merged上传到你的Hugging Face账户！你可以去https://huggingface.co/settings/tokens获取你的个人令牌。
+我们还支持直接保存为`float16`。选择`merged_16bit`用于`float16`或`merged_4bit`用于`int4`。我们还允许`lora`适配器作为备选方案。使用`push_to_hub_merged`上传到你的Hugging Face账户！你可以去https://huggingface.co/settings/tokens获取你的个人令牌。
 
 ```
 # 合并为16位
-if False: model.save_pretrained_merged(&quot;model&quot;, tokenizer, save_method = &quot;merged_16bit&quot;,)
-if False: model.push_to_hub_merged(&quot;hf/model&quot;, tokenizer, save_method = &quot;merged_16bit&quot;, token = &quot;&quot;)
+if False: model.save_pretrained_merged("model", tokenizer, save_method = "merged_16bit",)
+if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "merged_16bit", token = "")
 
 # 合并为4位
-if False: model.save_pretrained_merged(&quot;model&quot;, tokenizer, save_method = &quot;merged_4bit&quot;,)
-if False: model.push_to_hub_merged(&quot;hf/model&quot;, tokenizer, save_method = &quot;merged_4bit&quot;, token = &quot;&quot;)
+if False: model.save_pretrained_merged("model", tokenizer, save_method = "merged_4bit",)
+if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "merged_4bit", token = "")
 
 # 仅LoRA适配器
 if False:
-    model.save_pretrained(&quot;model&quot;)
-    tokenizer.save_pretrained(&quot;model&quot;)
+    model.save_pretrained("model")
+    tokenizer.save_pretrained("model")
 if False:
-    model.push_to_hub(&quot;hf/model&quot;, token = &quot;&quot;)
-    tokenizer.push_to_hub(&quot;hf/model&quot;, token = &quot;&quot;)
+    model.push_to_hub("hf/model", token = "")
+    tokenizer.push_to_hub("hf/model", token = "")
 ```
 
-### GGUF / llama.cpp 转换
+## GGUF / llama.cpp 转换
 
-要保存为GGUF / llama.cpp，我们现在原生支持它！我们克隆llama.cpp并默认保存为q8_0。我们允许所有方法，如q4_k_m。使用save_pretrained_gguf进行本地保存，使用push_to_hub_gguf上传到HF。
+要保存为`GGUF` / `llama.cpp`，我们现在原生支持它！我们克隆`llama.cpp`并默认保存为`q8_0`。我们允许所有方法，如`q4_k_m`。使用`save_pretrained_gguf`进行本地保存，使用`push_to_hub_gguf`上传到HF。
 
-[一些支持的量](https://github.com/unslothai/unsloth/wiki#gguf-quantization-options)化方法（完整列表在我们的Wiki页面）：
+[一些支持的量化方法（完整列表在我们的Wiki页面）](https://github.com/unslothai/unsloth/wiki#gguf-quantization-options)：
 
-+   q8_0 - 快速转换。高资源使用，但通常可接受。
++   `q8_0` - 快速转换。高资源使用，但通常可接受。
 
-+   q4_k_m - 推荐。对一半的attention.wv和feed_forward.w2张量使用Q6_K，其他使用Q4_K。
++   `q4_k_m` - 推荐。对一半的`attention.wv`和`feed_forward.w2`张量使用`Q6_K`，其他使用`Q4_K`。
 
-+   q5_k_m - 推荐。对一半的attention.wv和feed_forward.w2张量使用Q6_K，其他使用Q5_K。
++   `q5_k_m` - 推荐。对一半的`attention.wv`和`feed_forward.w2`张量使用`Q6_K`，其他使用`Q5_K`。
 
-[[**新功能**]](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb) 要微调并自动导出到Ollama，试试我们的Ollama笔记本
+[新功能](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb) 要微调并自动导出到Ollama，试试我们的Ollama笔记本
 
 ```
 # 保存为8位Q8_0
-if False: model.save_pretrained_gguf(&quot;model&quot;, tokenizer,)
+if False: model.save_pretrained_gguf("model", tokenizer,)
 # 记住去https://huggingface.co/settings/tokens获取令牌！
 # 并将hf改为你的用户名！
-if False: model.push_to_hub_gguf(&quot;hf/model&quot;, tokenizer, token = &quot;&quot;)
+if False: model.push_to_hub_gguf("hf/model", tokenizer, token = "")
 
 # 保存为16位GGUF
-if False: model.save_pretrained_gguf(&quot;model&quot;, tokenizer, quantization_method = &quot;f16&quot;)
-if False: model.push_to_hub_gguf(&quot;hf/model&quot;, tokenizer, quantization_method = &quot;f16&quot;, token = &quot;&quot;)
+if False: model.save_pretrained_gguf("model", tokenizer, quantization_method = "f16")
+if False: model.push_to_hub_gguf("hf/model", tokenizer, quantization_method = "f16", token = "")
 
 # 保存为q4_k_m GGUF
-if False: model.save_pretrained_gguf(&quot;model&quot;, tokenizer, quantization_method = &quot;q4_k_m&quot;)
-if False: model.push_to_hub_gguf(&quot;hf/model&quot;, tokenizer, quantization_method = &quot;q4_k_m&quot;, token = &quot;&quot;)
+if False: model.save_pretrained_gguf("model", tokenizer, quantization_method = "q4_k_m")
+if False: model.push_to_hub_gguf("hf/model", tokenizer, quantization_method = "q4_k_m", token = "")
 
 # 保存为多个GGUF选项 - 如果你想要多个选项会快很多！
 if False:
     model.push_to_hub_gguf(
-        &quot;hf/model&quot;, # 将hf改为你的用户名！
+        "hf/model", # 将hf改为你的用户名！
         tokenizer,
-        quantization_method = [&quot;q4_k_m&quot;, &quot;q8_0&quot;, &quot;q5_k_m&quot;,],
-        token = &quot;&quot;,
+        quantization_method = ["q4_k_m", "q8_0", "q5_k_m",],
+        token = "",
     )
 ```
 
-### 本试验的试验记录
+## 本试验的试验记录
 
-#### GRPO阶段
+### GRPO阶段
 
 ![](img/16301950a9101ccc6f83437a8c2cd861.png)
 
-400个step之后loss会有明显变化
+400个`step`之后`loss`会有明显变化
 
 ## 教程总结
 
-🎉 恭喜！你已经成功完成了DeepSeek-R1-Distill-Qwen3-8B的GRPO微调教程。
+🎉 恭喜！你已经成功完成了`DeepSeek-R1-Distill-Qwen3-8B`的GRPO微调教程。
 
 ### 本教程涵盖的核心概念：
 
-1.  **GRPO微调**: 使用奖励函数指导模型学习特定输出格式
+1. GRPO微调: 使用奖励函数指导模型学习特定输出格式
 
-1.  **LoRA技术**: 高效的参数微调方法，节省显存和时间
+2. LoRA技术: 高效的参数微调方法，节省显存和时间
 
-1.  **奖励函数设计**: 多层次评估体系，从格式到内容的全面评价
+3. 奖励函数设计: 多层次评估体系，从格式到内容的全面评价
 
-1.  **结构化输出**: 训练模型按照特定格式输出推理过程和答案
+4. 结构化输出: 训练模型按照特定格式输出推理过程和答案
 
-1.  **SwanLab监控**: 实时跟踪训练进度和指标变化
+5. SwanLab监控: 实时跟踪训练进度和指标变化
 
 ### 学到的技能：
 
@@ -778,15 +785,15 @@ if False:
 
 ### 进一步探索：
 
-1.  **调整奖励函数**: 设计更复杂的评估机制
+1. 调整奖励函数: 设计更复杂的评估机制
 
-1.  **扩展数据集**: 使用更大或不同类型的数据集
+2. 扩展数据集: 使用更大或不同类型的数据集
 
-1.  **优化参数**: 尝试不同的LoRA配置和训练参数
+3. 优化参数: 尝试不同的LoRA配置和训练参数
 
-1.  **模型评估**: 在测试集上系统评估模型性能
+4. 模型评估: 在测试集上系统评估模型性能
 
-1.  **应用部署**: 将模型集成到实际应用中
+5. 应用部署: 将模型集成到实际应用中
 
 ### 注意事项：
 
@@ -800,18 +807,16 @@ if False:
 
 # 总结
 
-Congratulations！看到了这，你已经初步实现了一个简单的RL实战，掌握了使用 Unsloth 对 Gemma3 这类大模型进行 GRPO 微调的具体操作步骤，更能体会到 Unsloth 在大幅提升训练速度、显著降低显存占用方面的强大优势，从而使在有限资源下进行复杂强化学习实验成为可能！如果支持我们的工作希望得到你的star！！这是我们持续更新的最大动力！！！
+Congratulations！看到了这，你已经初步实现了一个简单的RL实战，掌握了使用 Unsloth 对 `Gemma3` 这类大模型进行 GRPO 微调的具体操作步骤，更能体会到 Unsloth 在大幅提升训练速度、显著降低显存占用方面的强大优势，从而使在有限资源下进行复杂强化学习实验成为可能！如果支持我们的工作希望得到你的star！！这是我们持续更新的最大动力！！！
 
 # 相关链接
 
-+   完整可运行的代码：[Github](https://github.com/datawhalechina/self-llm/blob/master/models/DeepSeek-R1-Distill-Qwen/05-DeepSeek-R1-Distill-Qwen3-8B-GRPO%E5%8F%8Aswanlab%E5%8F%AF%E8%A7%86%E5%8C%96.ipynb)
++   完整可运行的代码：[Github](https://github.com/datawhalechina/self-llm/blob/master/models/DeepSeek-R1-Distill-Qwen/05-DeepSeek-R1-Distill-Qwen3-8B-GRPO及swanlab可视化.ipynb)
 
 +   综述：https://arxiv.org/abs/2001.06921
 
 +   deepseek-r1：https://arxiv.org/abs/2501.12948
 
-+   数学原理：https://blog.csdn.net/weixin\_38991876/article/details/146474767
++   数学原理：https://blog.csdn.net/weixin_38991876/article/details/146474767
 
 +   Unsloth：https://docs.unsloth.ai/
-
-+

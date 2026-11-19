@@ -1,3 +1,4 @@
+
 # 音乐语音类提示词
 
 > 来源：[https://langgptai.feishu.cn/docx/TQaAdylQDoCu0PxJLefcGapCnmc](https://langgptai.feishu.cn/docx/TQaAdylQDoCu0PxJLefcGapCnmc)

@@ -1,3 +1,4 @@
+
 # 使用 Trae 开发一个贪吃蛇小游戏
 
 > 来源：[https://agijuejin.feishu.cn/docx/JSeWdjzVIoRGIAxgkW4cVmOknHb](https://agijuejin.feishu.cn/docx/JSeWdjzVIoRGIAxgkW4cVmOknHb)
@@ -16,7 +17,7 @@
 
 ![](img/c20b382d04c9a590c93a171bc75fa30d.png)
 
-首先进入 [www.trae.ai/ ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)点击右侧的【Download】直接下载安装包。
+首先进入 `www.trae.ai/` 点击右侧的【Download】直接下载安装包。
 
 ## 安装 trae
 
@@ -56,11 +57,11 @@
 
 Trae AI 会自动帮我们创建对应的文件。
 
-全部操作后，你可以看到当前目录下多了很多 python 文件，入口是 main.py
+全部操作后，你可以看到当前目录下多了很多 python 文件，入口是 `main.py`
 
 ![](img/fd4090db1e42b5b03c6e14b9bc6d7ab7.png)
 
-然后我们按照提示安装对应的 pygame 依赖，最后执行 python main.py 来启动游戏。
+然后我们按照提示安装对应的 `pygame` 依赖，最后执行 `python main.py` 来启动游戏。
 
 ![](img/dcd0e2a1ffad804fb81c45a33acd6d48.png)
 
@@ -76,11 +77,11 @@ Trae AI 会自动帮我们创建对应的文件。
 增加一个配置项，开启表示撞墙后死亡，结束游戏，关闭表示撞墙后可以穿越墙体
 ```
 
-Trae AI 对 config.py 和 snake.py 进行了修改，我们还是直接应用，然后重新启动游戏，试玩了一下，在蛇撞墙后，游戏会进行重置，分数会清零。
+Trae AI 对 `config.py` 和 `snake.py` 进行了修改，我们还是直接应用，然后重新启动游戏，试玩了一下，在蛇撞墙后，游戏会进行重置，分数会清零。
 
 ![](img/731d696e842d68e9f6befad6404e040c.png)
 
-最后，我们让 Trae AI 来帮这个游戏打包成 exe ，这样就能分享给其他小伙伴了。直接输入提示词：
+最后，我们让 Trae AI 来帮这个游戏打包成 `exe` ，这样就能分享给其他小伙伴了。直接输入提示词：
 
 ```
 帮我将这个游戏打包成 exe，无需依赖 python 环境，可以点击直接运行

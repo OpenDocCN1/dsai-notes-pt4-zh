@@ -1,24 +1,25 @@
+
 # 最强Ai工具免费用💥不需要魔法（喜番AI使用教程）
 
-> 来源：[https://my.feishu.cn/docx/T3Kod21VnoPWbexV930ce2LKnlc](https://my.feishu.cn/docx/T3Kod21VnoPWbexV930ce2LKnlc)
+> 来源：[`https://my.feishu.cn/docx/T3Kod21VnoPWbexV930ce2LKnlc`](https://my.feishu.cn/docx/T3Kod21VnoPWbexV930ce2LKnlc)
 
-网址：https://ai.qixinba.com/auth?type=register&invite=NTE
+网址：`https://ai.qixinba.com/auth?type=register&invite=NTE`
 
-邀请码NTE，注册记得填写，能领免费算力
+邀请码`NTE`，注册记得填写，能领免费算力
 
 ---
 
-# 1、AI对话
+## 1、AI对话
 
-**网站是****有备案的，所以****因为某些**原因，你看不到ChatGPT这个词。
+网站是有备案的，所以因为某些原因，你看不到ChatGPT这个词。
 
-在这里，大模型选择的时候我们将**ChatGPT****替换成了喜番**。
+在这里，大模型选择的时候我们将ChatGPT替换成了喜番。
 
-**其中基础模型就是GPT3.5，高级模型**就是GPT4.0，使用的是官方正版接口。
+其中基础模型就是GPT3.5，高级模型就是GPT4.0，使用的是官方正版接口。
 
 ![](img/2889455a51d532c9935b61fef597fb52.png)
 
-喜番=GPT
+`喜番=GPT`
 
 ![](img/466958b4933dc108b955cb9f8b0ce7a8.png)
 
@@ -34,7 +35,7 @@ AI绘画工具默认的是midjourney，算AI绘画工具中的天花板了。
 
 所有参数的说明已经在网页端说明，这里就不多介绍了。
 
-如果不会写提示词，可以用AI**工****具帮你写提示词，z第一个A****I**对话界面选择 midjourney提示词 模型即可。
+如果不会写提示词，可以用AI工具帮你写提示词，在第一个AI对话界面选择 midjourney提示词 模型即可。
 
 ![](img/9a56bcc67fa5dfb4e44161c407486ca3.png)
 
@@ -48,15 +49,15 @@ AI绘画
 
 AI帮写
 
-# 3、应用
+## 3、应用
 
 应用界面是一些调教好提示词的小助手，不怎么会写提示词，可以直接在这边开箱即用。
 
 ![](img/b42c3e3fb8422e39b2674b6f13a7c762.png)
 
-### 4、其他使用技巧
+## 4、其他使用技巧
 
-其他PDF阅读、思维导图等工具，都是开箱急用的，大家直接用就好。
+其他PDF阅读、思维导图等工具，都是开箱即用的，大家直接用就好。
 
 有其他问题可以加我🛰️，记得说明一下来源。这里是飞书教程。
 

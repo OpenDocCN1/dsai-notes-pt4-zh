@@ -1,30 +1,22 @@
+
 # 教程：AI 需求文档生成
 
 > 来源：[https://datawhaler.feishu.cn/docx/E2WVdgecpoXrq2xMzpFcZwXznWh](https://datawhaler.feishu.cn/docx/E2WVdgecpoXrq2xMzpFcZwXznWh)
 
-> ✍️  作者：[纪伦的个人说明书](https://datawhaler.feishu.cn/wiki/AKxvw88QMiyg6NkxtYzc9evGnfc?from=from_copylink)
+> ✍️ 作者：[纪伦的个人说明书](https://datawhaler.feishu.cn/wiki/AKxvw88QMiyg6NkxtYzc9evGnfc?from=from_copylink)
 
 ## 学前须知
 
-+   **学习时间**：1天
++ **学习时间**：1天
++ **学习难度**：简单，使用对应工具即可。但目前主要为辅助，主要还需要自己对产品的思考理解。
++ **学习方式**：
+1. 在场景细分图中，找到自己需要的场景
+1. 找到对应的案例学习（参考小作业与参考教程）
+1. 学习优秀打卡案例，查漏补缺
+1. 选择感兴趣的小作业，跟着案例自己尝试做一遍。
+1. 尝试熟悉流程后，应用到实际工作中
 
-+   **学习难度**：简单，使用对应工具即可。但目前主要为辅助，主要还需要自己对产品的思考理解。
-
-+   **学习方式**：
-
-1.  在场景细分图中，找到自己需要的场景
-
-1.  找到对应的案例学习（参考小作业与参考教程）
-
-1.  学习优秀打卡案例，查漏补缺
-
-1.  选择感兴趣的小作业，跟着案例自己尝试做一遍。
-
-1.  尝试熟悉流程后，应用到实际工作中
-
->
-
-> 打卡核实后**「可获得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
+> 打卡核实后「可获得证书」，优秀打卡内容将被「展出」，特别优秀者会邀请来「一起完善学习文档」
 
 > 具体打卡要求详见：[【说明文档】打卡（非必须）](https://datawhaler.feishu.cn/wiki/UR4bwTSjJiAKFLkfqdCc8Dlgnld?from=from_copylink)
 
@@ -74,8 +66,6 @@ GPTS链接：https://chat.openai.com/g/g-PGCpnLe4y-chan-pin-jing-li-product-mana
 
 ![](img/395efab7f63c778974c5400c5d0e2859.png)
 
-##
-
 用智谱清言创建一个Agent来写需求文档
 
 > 你是一个高级产品经理。用户只需要描述自己的需求，你就能通过搜集相关的信息，整理归纳，并加入自己的思考以后，输出一个PRD文档。如果用户有描述不清楚的地方，你需要引导用户提问
@@ -116,9 +106,8 @@ https://www.notion.so/help/guides/category/ai
 
 > 公域上一些不错的，对大家学习用生成需求文档，可能有帮助的内容，也欢迎大家评论补充
 
-+   XX
-
-+   XX
++ XX
++ XX
 
 ## 优秀学习案例
 

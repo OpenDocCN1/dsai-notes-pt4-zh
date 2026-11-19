@@ -1,32 +1,32 @@
+
 # AI绘画新软件——DragGan初步研究
 
-> 来源：[https://agijuejin.feishu.cn/docx/C70idt8Rto3sMcxFl1Scdxp1nkh](https://agijuejin.feishu.cn/docx/C70idt8Rto3sMcxFl1Scdxp1nkh)
-
+> 来源：https://agijuejin.feishu.cn/docx/C70idt8Rto3sMcxFl1Scdxp1nkh
+>
 > 作者：德里克文
+>
+> 原文：https://zhuanlan.zhihu.com/p/640903548
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/640903548)hihu.com/p/640903...
+## DragGAN 介绍
 
-## **DragGAN 介绍**
-
-DragGAN是AI绘图领域一款备受瞩目的创新工具。该工具是由MPII、MIT、宾大、谷歌等机构的研究者[联合开发](https://zhida.zhihu.com/search?q=%E6%BA%90%E4%BB%A3%E7%A0%81&zhida_source=entity&is_preview=1)的，并在获得了SIGGRAPH2023广泛认可。就在6月底引爆 AI绘图 圈的 DragGAN ，正式发布了开 源代码 !
+DragGAN是AI绘图领域一款备受瞩目的创新工具。该工具是由MPII、MIT、宾大、谷歌等机构的研究者联合开发的，并在获得了SIGGRAPH2023广泛认可。就在6月底引爆AI绘图圈的DragGAN，正式发布了开源代码！
 
 ### 1. 项目源代码下载地址链接：https://github.com/XingangPan/DragGAN
 
 [  ](https://link.zhihu.com/?target=https%3A//github.com/XingangPan/DragGAN)
 
-### **2. 网络服务器试玩链接：****https://huggingface.co/sp**aces/radames/DragGan
+### 2. 网络服务器试玩链接：https://huggingface.co/spaces/radames/DragGan
 
 [  ](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/radames/DragGan)
 
-[DragG](https://zhida.zhihu.com/search?q=%E5%9B%BE%E5%83%8F%E7%BC%96%E8%BE%91&zhida_source=entity&is_preview=1)AN的问世使得我们能够通过轻松拖拽的方式，实现高精度的 图像编辑 。
+DragGAN的问世使得我们能够通过轻松拖拽的方式，实现高精度的图像编辑。
 
 ![](img/8c16e60b92fabb7450dabee49f15a478.png)
 
 DragGAN主要包括以下两个主要组成部分:
 
-1.基于特征的运动监控，驱动操作点向目标位置移动
-
-2.一个新的点跟踪方法，利用区分性的GAN特征持续定位操作点的位置
+1. 基于特征的运动监控，驱动操作点向目标位置移动
+2. 一个新的点跟踪方法，利用区分性的GAN特征持续定位操作点的位置
 
 通过DragGAN，任何人都可以对像素进行精确的控制，进而编辑如动物、汽车、人类、风景等多种类别的姿态、形状、表情和布局。
 
@@ -36,13 +36,13 @@ DragGAN主要包括以下两个主要组成部分:
 
 ![](img/3f7dc2c2eb24a06cda6814de94e9090b.png)
 
-**拖拽编辑**
+### 拖拽编辑
 
-在DragGAN的加持下，用户只需要设置几个操作点（红点），目标点(蓝点)，以及可选的表示可移动区域的mask(亮区)。然后，模型就会自动完成后续的图像生成，
+在DragGAN的加持下，用户只需要设置几个操作点（红点），目标点(蓝点)，以及可选的表示可移动区域的mask(亮区)。然后，模型就会自动完成后续的图像生成。
 
 其中，动态监控步骤会让操作点（红点）向目标点(蓝点)移动，点追踪步骤则通过更新操作点来追踪图像中的对象。此过程会一直持续，直到操作点达到其相应的目标点。
 
-具体来说，团队通过在 [生成器 ](https://zhida.zhihu.com/search?q=%E7%94%9F%E6%88%90%E5%99%A8&zhida_source=entity&is_preview=1)[的特征图上](https://zhida.zhihu.com/search?q=%E7%89%B9%E5%BE%81%E7%A9%BA%E9%97%B4&zhida_source=entity&is_preview=1)的位移修补损失来实现动态监控，并在相同的 特征空间 中通过最近邻搜索进行点追踪。
+具体来说，团队通过在 [生成器](https://zhida.zhihu.com/search?q=%E7%94%9F%E6%88%90%E5%99%A8&zhida_source=entity&is_preview=1) 的 [特征图上](https://zhida.zhihu.com/search?q=%E7%89%B9%E5%BE%81%E7%A9%BA%E9%97%B4&zhida_source=entity&is_preview=1) 的位移修补损失来实现动态监控，并在相同的特征空间中通过最近邻搜索进行点追踪。
 
 好了，听完了前面的介绍，是不是跃跃欲试呢？
 
@@ -52,9 +52,9 @@ DragGAN主要包括以下两个主要组成部分:
 
 ![](img/8391076121f048e75d8314d4d4f2487c.png)
 
-### 1.猫咪转脸图片尝试
+### 1. 猫咪转脸图片尝试
 
-接下来我打开了 [软件界面 ](https://zhida.zhihu.com/search?q=%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2&zhida_source=entity&is_preview=1)，兴奋打开了第一张图片，是一张可爱的猫，我来尝试下创建拖动点吧！
+接下来我打开了 [软件界面](https://zhida.zhihu.com/search?q=%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2&zhida_source=entity&is_preview=1)，兴奋打开了第一张图片，是一张可爱的猫，我来尝试下创建拖动点吧！
 
 我点击猫咪的鼻子，设立红色点，然后再次点击设置蓝色点，自动出现了箭头。接着我点击左侧菜单栏Drag里面的Start按钮开始
 
@@ -64,7 +64,7 @@ DragGAN主要包括以下两个主要组成部分:
 
 ![](img/a0eb689ab4322abb1160fed63d9b923a.png)
 
-### 2.猫咪闭眼测试
+### 2. 猫咪闭眼测试
 
 我重新打开一张猫咪图像，想要测试下是否能够做出闭眼低头的动作
 
@@ -96,7 +96,7 @@ Start开始，额，走到300多步的时候就已经发现好像有点不对劲
 
 ![](img/60af90834bea08a8b472f15212d3f0db.png)
 
-### 3.帅气男生形象
+### 3. 帅气男生形象
 
 猫不行，我试试人可不可以转头
 
@@ -110,7 +110,7 @@ Start开始，额，走到300多步的时候就已经发现好像有点不对劲
 
 Negative prompt: (painting by bad-artist-anime:0.9), (painting by bad-artist:0.9), watermark, text, error, blurry, jpeg artifacts, cropped, worst quality, low quality, normal quality, jpeg artifacts, (signature), watermark, username, artist name, (worst quality, low quality:1.4), bad anatomy
 
-### 4.正面人脸尝试
+### 4. 正面人脸尝试
 
 然后我先用软件读取，可以看到只能读取面部，不过足够我这次实验使用了
 
@@ -128,7 +128,7 @@ Negative prompt: (painting by bad-artist-anime:0.9), (painting by bad-artist:0.9
 
 ![](img/8371e7d00e1c83c368c2d6e2e0dfb0b9.png)
 
-### 5.侧面人脸尝试
+### 5. 侧面人脸尝试
 
 是不是正面有问题，我再换上另外一个侧脸试试，先上帅照
 
@@ -152,4 +152,4 @@ Negative prompt: (painting by bad-artist-anime:0.9), (painting by bad-artist:0.9
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3098715893%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3098715893%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

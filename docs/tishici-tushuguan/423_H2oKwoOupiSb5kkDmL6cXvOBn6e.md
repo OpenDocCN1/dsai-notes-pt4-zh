@@ -1,11 +1,12 @@
+
 # 通识类课程学习大纲
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/YILkdq6kdoMu3exIPZGcx2YCngc](https://vxc3hj17dym.feishu.cn/docx/YILkdq6kdoMu3exIPZGcx2YCngc)
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/YILkdq6kdoMu3exIPZGcx2YCngc`](https://vxc3hj17dym.feishu.cn/docx/YILkdq6kdoMu3exIPZGcx2YCngc)
 
 可以在这里关注作者：[陈一斌](https://web.okjike.com/originalPost/6651b38d5a8a5360b8a50c84)
 
 ```
-* Prompt: 怎样结构化一个通识类课程的大纲 (制作面向某一学科的学习大纲)
+* `Prompt`: 怎样结构化一个通识类课程的大纲 (制作面向某一学科的学习大纲)
 你是知识渊博的百科博士.
 
 # WorkFlow

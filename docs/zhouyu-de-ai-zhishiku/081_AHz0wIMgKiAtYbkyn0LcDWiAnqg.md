@@ -1,9 +1,9 @@
+
 # 飞书未来无限大会揭秘：AI不是来取代你的，是来拥抱你的
 
-> 来源：[https://xatc0v8uz5m.feishu.cn/docx/IVxJdEvMjoIbpxxjyQ0c8Y92ntc](https://xatc0v8uz5m.feishu.cn/docx/IVxJdEvMjoIbpxxjyQ0c8Y92ntc)
+> 来源：https://xatc0v8uz5m.feishu.cn/docx/IVxJdEvMjoIbpxxjyQ0c8Y92ntc
 
-> 💡 核心摘要
-
+> 💡 核心摘要  
 > 飞书未来无限大会展示了AI与企业办公深度融合的全新可能。从专属知识问答到智能多维表格，飞书正在重新定义企业数字化办公体验。本文深度解析大会亮点功能，探讨AI时代下的个人和企业的进化之路。
 
 > 🏷️ 关键词：飞书AI办公知识问答多维表格企业数字化生产力工具
@@ -12,13 +12,10 @@
 
 ## 📋 目录
 
-+   • 🤖 飞书知识问答：最懂企业的AI助手
-
-+   • 📊 多维表格：不只是表格的超级工具
-
-+   • 🔮 引发的深刻AI思考
-
-+   • 📈 产品更新全览
++ 🤖 飞书知识问答：最懂企业的AI助手  
++ 📊 多维表格：不只是表格的超级工具  
++ 🔮 引发的深刻AI思考  
++ 📈 产品更新全览  
 
 ---
 
@@ -28,7 +25,7 @@
 
 记得我第一次听说飞书是在22年的时候，当时也在一个非常棒的【渐构】社区。社区因为人员太多，为了便于交流和学习以及管理知识库，内部发起了投票：钉钉 vs 飞书，选择我们的数字化阵地。
 
-当时我因为不认识飞书，我选了钉钉，当时还在郁闷： “为什么不用钉钉啊？飞书是个什么鬼？” 😂
+当时我因为不认识飞书，我选了钉钉，当时还在郁闷：“为什么不用钉钉啊？飞书是个什么鬼？” 😂
 
 好在最后是飞书胜出了。在使用了飞书的云文档和同步编辑文稿和智能会议之后，体验感直接拉满。飞书一直是我个人学习和公司运营管理中很好的帮手。
 
@@ -42,9 +39,8 @@
 
 飞书知识问答是最懂企业知识的专属AI问答工具。飞书的这个知识问答与现在的用的豆包、deepseek搜索是完全不同，因为它可以是基于我们飞书上所有的文档、知识库、消息、会议等，这些内容来去出发的。
 
-> 🔍 信息来源对比
-
-换一个角度说，企业用数据和业务去搭建就是企业自己独家的的智能知识库，而不是在互联网上所有的公开信息。它并不是一个通用型的智能问答，它是专属于我们个人知识库或者企业的图书馆智能总管。
+> 🔍 信息来源对比  
+> 换一个角度说，企业用数据和业务去搭建就是企业自己独家的的智能知识库，而不是在互联网上所有的公开信息。它并不是一个通用型的智能问答，它是专属于我们个人知识库或者企业的图书馆智能总管。
 
 ![](img/32d650a6c0a7cd92272ba079c808a879.png)
 
@@ -52,23 +48,20 @@
 
 举个栗子：
 
-+   • 我6月份参加过多少次视频会议？
-
-+   • 6月份主要会议的工作重点和工作总结是什么？
-
-+   • 6月销售数据总结和7月工作计划制定方向？
++ 我6月份参加过多少次视频会议？  
++ 6月份主要会议的工作重点和工作总结是什么？  
++ 6月销售数据总结和7月工作计划制定方向？  
 
 ### 🆚 与竞品对比
 
 这个功能和谷歌的notebookLM很像，但飞书有着更大的优势：
 
-✅ 基于完整企业生态：拥有一整个企业团队的知识库和办公协同沟通信息，甚至能细化工作文档浏览覆盖率
-
-✅ 权限精准控制：在海量数据使用过程中，有着不同的权限，检索时能很好地区分和控制
+✅ 基于完整企业生态：拥有一整个企业团队的知识库和办公协同沟通信息，甚至能细化工作文档浏览覆盖率  
+✅ 权限精准控制：在海量数据使用过程中，有着不同的权限，检索时能很好地区分和控制  
 
 ![](img/dab9b881530d4d3188307f3c1e02bad7.png)
 
-⚡  等不及上手体验的朋友，直接拉到文末，附申请表！
+⚡ 等不及上手体验的朋友，直接拉到文末，附申请表！
 
 ---
 
@@ -80,9 +73,8 @@
 
 我印象很深的是，4月份我去参加线下多维表格的AI切磋大会，当时参加的人会比其他AI主题的活动来的人少一半，因为大家其实对多维表格的认识并不多，有着很大的误解。
 
-> ❌ 常见误解： 大家可能认为它就是普通简单的一个excel表格
-
-> ✅ 实际情况： 多维表格可有着通天的本领！
+> ❌ 常见误解： 大家可能认为它就是普通简单的一个excel表格  
+> ✅ 实际情况： 多维表格可有着通天的本领！  
 
 ### 🧠 AI赋能的智能表格
 
@@ -117,11 +109,9 @@
 
 多维表格中通天本领的关键就是**【字段捷径】**：
 
-+   • 每一个单元格都可以植入字段捷径中心的功能
-
-+   • 让我们的表格数据不再只是静态的
-
-+   • 能够根据我们业务和需求定制化专业的信息表
++ 每一个单元格都可以植入字段捷径中心的功能  
++ 让我们的表格数据不再只是静态的  
++ 能够根据我们业务和需求定制化专业的信息表  
 
 ### 🚀 重磅升级功能
 
@@ -130,20 +120,16 @@
 面向企业的应用模式，是一种全新的、面向核心业务场景的专业系统构建方式。换句话说，企业可以自己根据业务板块搭建一个系统。
 
 ![](img/6a1559c3d459a77cd50905dc04351a70.png)
-
 ![](img/6d1d6463493481404ee44ab641def34d.png)
 
 #### 🤖 AI侧边栏
 
 在这里，你可以直接完成：
 
-+   • 🔍 数据检索
-
-+   • ❓ 知识问答
-
-+   • 📈 数据分析
-
-+   • 🛠️ 工具调用
++ 🔍 数据检索  
++ ❓ 知识问答  
++ 📈 数据分析  
++ 🛠️ 工具调用  
 
 等等智能任务，AI功能随时调取。
 
@@ -159,8 +145,7 @@
 
 答案：并不会。
 
-> 🎯 核心观点
-
+> 🎯 核心观点  
 > 非AI原生公司，AI不单只要给企业做赋能，还要和企业做融合。让AI长在企业身上，从生产到销售再到库存管理，让AI融合到实际的场景中。
 
 ### ✅ 做到"真能用、真落地"
@@ -172,21 +157,27 @@
 ## 📈 产品更新全览
 
 | 产品 | 发布情况 | 了解详情 | 立即体验 | 预约演示/试用新品 |
+
 | --- | --- | --- | --- | --- |
-| **知识问答** | 已发布 | [ 飞书知识问答：最懂企业知识，AI 有问必答！（公开版）](https://bytedance.larkoffice.com/wiki/XCcvwSFP8iwhbTkv8bbcnlqRnfd) | 访问 ask.feishu.cn 即可体验，有一定免费体验时间； | [点击预约](https://www.feishu.cn/landing/2025Feishu_Knowledge_AI_enterprise_AI) |
-| **智能会议纪要** | 已发布 | [飞书智能会议纪要：AI 时代的全新开会方式（公开版）](https://bytedance.larkoffice.com/wiki/TBY3w8bGgigKUmkFJh7cmYNjnag) | 使用飞书开会即可体验，有一定免费额度； | [点击预约](https://www.feishu.cn/landing/feishu_ai_meeting?from=AIMeeting_banner) |
+
+| 知识问答 | 已发布 | [ 飞书知识问答：最懂企业知识，AI 有问必答！（公开版）](https://bytedance.larkoffice.com/wiki/XCcvwSFP8iwhbTkv8bbcnlqRnfd) | 访问 ask.feishu.cn 即可体验，有一定免费体验时间； | [点击预约](https://www.feishu.cn/landing/2025Feishu_Knowledge_AI_enterprise_AI) |
+
+| 智能会议纪要 | 已发布 | [飞书智能会议纪要：AI 时代的全新开会方式（公开版）](https://bytedance.larkoffice.com/wiki/TBY3w8bGgigKUmkFJh7cmYNjnag) | 使用飞书开会即可体验，有一定免费额度； | [点击预约](https://www.feishu.cn/landing/feishu_ai_meeting?from=AIMeeting_banner) |
+
 | 声纹识别 | 会后声纹识别已发布 | [视频会议声纹识别功能介绍（公开版）](https://bytedance.larkoffice.com/wiki/M5NwwM2OxiVJQ1k7pRJc2lornnh?from=space_search&amp;previous_navigation_time=1752121607120) |  | [点击预约](https://www.feishu.cn/solutions/feishu-rooms-overview) |
+
 | 会议分析 | 已开放体验 | [🎉 飞书会议分析重磅更新 ](https://bytedance.larkoffice.com/docx/PkQ1dDlicoIpCoxzkZNcRyBMnCc) | 访问[飞书会议分析](https://recipes.feishu.cn/meeting)即可体验 |  |
-| **多维表格** | Q3 陆续上线 | [多维表格 2025 产品发布-施凯文在 2025 发布会演讲逐字稿](https://bytedance.larkoffice.com/wiki/LOxvwIhVOirLCUk6oWXcFPMGnrb) | 下载飞书即可体验多维表格已有能力，新能力陆续上线； | 报名优先体验全新功能，请 [点击这里填写问卷 🚀。](https://bytedance.larkoffice.com/share/base/form/shrcnUR6eEnNCNuFHVnxys4BsUh) |
-| **飞书开发套件** | 飞书 aPaaS、aily 已发布 | [飞书开发套件：CIO 落地 AI 的最佳伙伴【公开版】](https://bytedance.larkoffice.com/wiki/BNqYwTfvXiE6IQkVYiVcrXMDn2S) | 点击 [体验飞书 aily](https://aily.feishu.cn/ai/ailyplay)，有一定免费额度；更多功能请预约咨询 | [点击预约咨询](https://www.feishu.cn/landing/feishu_future_caio_2025?tracking_code=701TL00000o9Kp8YAE) |
-| **飞书项目** | 部分功能已上线 | [2025 飞书发布会：飞书项目六大能力更新一览](https://bytedance.larkoffice.com/wiki/GXXFw6QC5iMXrHklmQpcSpqLnyg) | [飞书项目官网](https://project.feishu.cn/home) | [购买咨询](https://project.feishu.cn/home/service) |
+
+| 多维表格 | Q3 陆续上线 | [多维表格 2025 产品发布-施凯文在 2025 发布会演讲逐字稿](https://bytedance.larkoffice.com/wiki/LOxvwIhVOirLCUk6oWXcFPMGnrb) | 下载飞书即可体验多维表格已有能力，新能力陆续上线； | 报名优先体验全新功能，请 [点击这里填写问卷 🚀。](https://bytedance.larkoffice.com/share/base/form/shrcnUR6eEnNCNuFHVnxys4BsUh) |
+
+| 飞书开发套件 | 飞书 aPaaS、aily 已发布 | [飞书开发套件：CIO 落地 AI 的最佳伙伴【公开版】](https://bytedance.larkoffice.com/wiki/BNqYwTfvXiE6IQkVYiVcrXMDn2S) | 点击 [体验飞书 aily](https://aily.feishu.cn/ai/ailyplay)，有一定免费额度；更多功能请预约咨询 | [点击预约咨询](https://www.feishu.cn/landing/feishu_future_caio_2025?tracking_code=701TL00000o9Kp8YAE) |
+
+| 飞书项目 | 部分功能已上线 | [2025 飞书发布会：飞书项目六大能力更新一览](https://bytedance.larkoffice.com/wiki/GXXFw6QC5iMXrHklmQpcSpqLnyg) | [飞书项目官网](https://project.feishu.cn/home) | [购买咨询](https://project.feishu.cn/home/service) |
 
 获取更多信息，关注👸号，发送飞书未来无限大会获取申请入口和直播回放
 
-> 🎉 结语
-
-> 飞书未来无限大会不仅展示了产品的技术进步，更重要的是展现了AI与企业办公深度融合的未来图景。从个人效率提升到企业数字化转型，飞书正在用AI重新定义我们的工作方式。
-
+> 🎉 结语  
+> 飞书未来无限大会不仅展示了产品的技术进步，更重要的是展现了AI与企业办公深度融合的未来图景。从个人效率提升到企业数字化转型，飞书正在用AI重新定义我们的工作方式。  
 > 让我们一起期待这个AI赋能的办公新时代！
 
 ---

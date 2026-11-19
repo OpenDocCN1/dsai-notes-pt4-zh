@@ -1,8 +1,9 @@
+
 # 付费咨询
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/WXQedZGUYorFBKx8KK1c7tKhnTg](https://jlqyxzzvbk.feishu.cn/docx/WXQedZGUYorFBKx8KK1c7tKhnTg)
 
-### **咨询费用：200元/小时**
+## 咨询费用：200元/小时
 
 服务内容
 
@@ -12,7 +13,7 @@
 
 备注：1小时内支持无限制文字、语音沟通。
 
-### 1V1深度**咨询：500元/小时**
+## 1V1深度咨询：500元/小时
 
 服务内容
 
@@ -20,7 +21,7 @@
 
 2、AI技术解决方案（B端需求，商业化落地方案）
 
-### 个人简介
+## 个人简介
 
 【昵称】牛哥
 
@@ -34,8 +35,6 @@
 
 抖音号看见AI 1.7W粉丝
 
-研发产品包括：AI软件搜索平台（https://ai-sou.cn/）、AI视频生成平台、
-
-AI聚合助手（https://seeaix.com/）等。
+研发产品包括：AI软件搜索平台（`https://ai-sou.cn/`）、AI视频生成平台、AI聚合助手（`https://seeaix.com/`）等。
 
 ![](img/0798f182dc7e1bb1313f40451a630c57.png)

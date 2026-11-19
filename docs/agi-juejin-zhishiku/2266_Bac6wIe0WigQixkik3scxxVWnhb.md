@@ -1,3 +1,4 @@
+
 # 中国AIGC广告营销产业全景报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/AWJsd3ixjoGZMex53xAcbkJznGb](https://agijuejin.feishu.cn/docx/AWJsd3ixjoGZMex53xAcbkJznGb)
@@ -6,4 +7,4 @@
 
 ![](img/35376b8a0132183f07e254c301bf6369.png)
 
-[中国AIGC广告营销产业全景报告.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TsnHbAxZ4oyZFaxzGoOcjQndnOf)
+[`中国AIGC广告营销产业全景报告.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TsnHbAxZ4oyZFaxzGoOcjQndnOf)

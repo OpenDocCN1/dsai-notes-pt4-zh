@@ -1,10 +1,11 @@
+
 # DeepSeek知识库问答实战
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/ANlgdQDGVoGsxvxYbQIcGwmHnUf](https://kq4b3vgg5b.feishu.cn/docx/ANlgdQDGVoGsxvxYbQIcGwmHnUf)
+> 来源：`https://kq4b3vgg5b.feishu.cn/docx/ANlgdQDGVoGsxvxYbQIcGwmHnUf`
 
-# 课程说明：
+## 课程说明
 
-+   体验课内容节选自《2025大模型Agent智能体开发实战》完整版付费课程
+体验课内容节选自《2025大模型Agent智能体开发实战》完整版付费课程
 
 体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》：
 
@@ -14,9 +15,9 @@
 
 此外，公开课全套学习资料，已上传至网盘：
 
-https://pan.baidu.com/s/1Jt1uWNntM6GgwZPwAErYVg?pwd=izt9
+`https://pan.baidu.com/s/1Jt1uWNntM6GgwZPwAErYVg?pwd=izt9`
 
-https://pan.baidu.com/s/1ZmPsNEd32mVE4weURqt5Ew?pwd=7xjc
+`https://pan.baidu.com/s/1ZmPsNEd32mVE4weURqt5Ew?pwd=7xjc`
 
 需要更系统深入学习大模型可扫码⬆️添加助教咨询喔～
 
@@ -30,7 +31,7 @@ https://pan.baidu.com/s/1ZmPsNEd32mVE4weURqt5Ew?pwd=7xjc
 
 ### 一、DeepSeek-v3大模型介绍与微软GraphRAG项目介绍
 
-#### 1.国产开源大模型之光：DeepSeek v3
+#### 1. 国产开源大模型之光：DeepSeek v3
 
 ![](img/e342aaf8575b329074eee2178b03e14e.png)
 
@@ -42,107 +43,107 @@ DeepSeek v3采用混合专家（MoE）架构，拥有6710亿个总参数，每�
 
 **模型架构与创新：**
 
-+   **多头潜在注意力（MLA）：** 通过低秩压缩技术减少推理时的Key-Value缓存，提升推理效率。
++ **多头潜在注意力（MLA）：** 通过低秩压缩技术减少推理时的Key-Value缓存，提升推理效率。
 
-+   **DeepSeekMoE架构：** 采用细粒度的专家分配和共享专家机制，实现高效训练。
++ **DeepSeekMoE架构：** 采用细粒度的专家分配和共享专家机制，实现高效训练。
 
-+   **无辅助损失的负载均衡策略：** 通过动态调整专家偏置，确保专家负载均衡，提升模型性能。
++ **无辅助损失的负载均衡策略：** 通过动态调整专家偏置，确保专家负载均衡，提升模型性能。
 
-+   **多令牌预测（MTP）：** 支持多令牌预测，提高训练信号密度，并通过推测解码加速推理。
++ **多令牌预测（MTP）：** 支持多令牌预测，提高训练信号密度，并通过推测解码加速推理。
 
-+   **FP8混合精度训练：** 在大规模模型中验证了FP8训练的可行性，降低内存消耗和训练成本。
++ **FP8混合精度训练：** 在大规模模型中验证了FP8训练的可行性，降低内存消耗和训练成本。
 
 **训练与性能：**
 
-+   **训练数据：** 在14.8万亿高质量token上进行预训练，模型训练过程稳定。
++ **训练数据：** 在14.8万亿高质量token上进行预训练，模型训练过程稳定。
 
-+   **训练成本：** 总训练成本约为557.6万美元，显著低于同类模型。
++ **训练成本：** 总训练成本约为557.6万美元，显著低于同类模型。
 
-+   **性能表现：** 在多种基准测试中表现优异，尤其在代码和数学任务上，超越其他开源模型，与领先的闭源模型相当。
++ **性能表现：** 在多种基准测试中表现优异，尤其在代码和数学任务上，超越其他开源模型，与领先的闭源模型相当。
 
 DeepSeek-V3的发布标志着开源模型在性能和效率上的新高度，为自然语言处理技术的进步提供了新的示例。
 
-#### 2.知识库问答最强检索增强技术：GraphRAG
+#### 2. 知识库问答最强检索增强技术：GraphRAG
 
 ![](img/8cb315a3d016e173f6b6cb8bdeecf485.png)
 
-**检索增强生成（RAG）** 是一种通过结合真实世界的信息来提升大型语言模型（LLM）输出质量的技术。RAG **技术是大多**数基于 LLM 的工具中的一个重要组成部分。大多数 RAG 方法使用 向量相似性 作为检索技术，我们将其称为 基线 RAG（Baseline RAG）。
+**检索增强生成（RAG）** 是一种通过结合真实世界的信息来提升大型语言模型（LLM）输出质量的技术。RAG 技术是大多数基于 LLM 的工具中的一个重要组成部分。大多数 RAG 方法使用 向量相似性 作为检索技术，我们将其称为 基线 RAG（Baseline RAG）。
 
-**GraphRAG** 则使用 **知识图谱** **来在推理**复杂信息时显著提升问答性能。当需要对复杂数据进行推理时，GraphRAG 展示了优于基线 RAG 的性能，特别是在 知识图谱 的帮助下。
+**GraphRAG** 则使用 知识图谱 来在推理复杂信息时显著提升问答性能。当需要对复杂数据进行推理时，GraphRAG 展示了优于基线 RAG 的性能，特别是在 知识图谱 的帮助下。
 
 RAG 技术在帮助 LLM 推理私有数据集方面显示了很大的潜力——例如，LLM 没有在训练时接触过的、企业的专有研究、业务文档或通信数据。基线 RAG 技术最初是为了解决这个问题而提出的，但我们观察到，在某些情况下，基线 RAG 的表现并不理想。以下是几个典型的场景：
 
-1.  基线 RAG 很难将信息串联起来：当一个问题的答案需要通过多个不同的信息片段，并通过它们共享的属性来连接，进而提供新的综合见解时，基线 RAG 表现得很差。
+1. 基线 RAG 很难将信息串联起来：当一个问题的答案需要通过多个不同的信息片段，并通过它们共享的属性来连接，进而提供新的综合见解时，基线 RAG 表现得很差。
 
-1.  例如，在回答类似“如何通过现有的数据推断出新结论”这种问题时，基线 RAG 无法很好地处理这些散布在不同文档中的相关信息，它可能会遗漏一些关键联系点。
+2. 例如，在回答类似“如何通过现有的数据推断出新结论”这种问题时，基线 RAG 无法很好地处理这些散布在不同文档中的相关信息，它可能会遗漏一些关键联系点。
 
-1.  基线 RAG 无法有效理解大型数据集或单一大文档的整体语义概念：当被要求在大量数据或复杂文档中进行总结、提炼和理解时，基线 RAG 往往表现不佳。
+3. 基线 RAG 无法有效理解大型数据集或单一大文档的整体语义概念：当被要求在大量数据或复杂文档中进行总结、提炼和理解时，基线 RAG 往往表现不佳。
 
-1.  例如，如果问题要求对整个文档或多篇文档的主题进行总结和理解，基线 RAG 的简单向量检索方法可能无法处理文档间的复杂关系，导致对全局语义的理解不完整。
+4. 例如，如果问题要求对整个文档或多篇文档的主题进行总结和理解，基线 RAG 的简单向量检索方法可能无法处理文档间的复杂关系，导致对全局语义的理解不完整。
 
-**  为了应****对这些挑战，技术**社区正在努力开**发扩展**和增强 RAG 的方法**。微软研**究**院（Mic**rosoft** Research**）提出**的 G**raphRAG 方法，使用 LLM 基于输入语料库构建 知识图谱。这个图谱与社区总结和图谱机器学习输出结合，能够在查询时增强提示（prompt）。GraphRAG 在回答以上两类问题时，展示了 显著的改进，尤其是在 复杂信息的推理能力 和 智能性 上，超越了基线 RAG 之前应用于私有数据集的其他方法。
+为了应对这些挑战，技术社区正在努力开发扩展和增强 RAG 的方法。微软研究院（Microsoft Research）提出的 GraphRAG 方法，使用 LLM 基于输入语料库构建 知识图谱。这个图谱与社区总结和图谱机器学习输出结合，能够在查询时增强提示（prompt）。GraphRAG 在回答以上两类问题时，展示了 显著的改进，尤其是在 复杂信息的推理能力 和 智能性 上，超越了基线 RAG 之前应用于私有数据集的其他方法。
 
-#### 3.微软GraphRAG项目简介
+#### 3. 微软GraphRAG项目简介
 
 ![](img/8b7e18747b58f082b0eefaea210c8343.png)
 
-> 项目地址：https://github.com/microsoft/graphrag/
+> 项目地址：`https://github.com/microsoft/graphrag/`
 
-**GraphRAG** 是微软研究院开发的一种先进的增强检索生成（RAG）框架，旨在提升语言模型**（LLM）在处理**复杂数据**时的性能**。与传统的 RAG 方法依赖向量相似性检索不同，GraphRAG 利用 知识图谱 来显著增强语言模型的问答能力，特别是在处理私有数据集或大型、复杂数据集时表现尤为出色。
+**GraphRAG** 是微软研究院开发的一种先进的增强检索生成（RAG）框架，旨在提升语言模型（LLM）在处理复杂数据时的性能。与传统的 RAG 方法依赖向量相似性检索不同，GraphRAG 利用 知识图谱 来显著增强语言模型的问答能力，特别是在处理私有数据集或大型、复杂数据集时表现尤为出色。
 
-#### 2.GraphRAG核心特点
+#### 4. GraphRAG核心特点
 
 传统的 **Baseline RAG** 方法在某些情况下表现不佳，尤其是当查询需要在不同信息片段之间建立联系时，或是当需要对大规模数据集进行整体理解时。GraphRAG 通过以下方式克服了这些问题：
 
-+   **更好的连接信息点**：GraphRAG 能够处理那些需要从多个数据点合成新见解的任务。
++ **更好的连接信息点**：GraphRAG 能够处理那些需要从多个数据点合成新见解的任务。
 
-+   **更全面的理解能力**：GraphRAG 更擅长对大型数据集进行全面理解，能够更好地处理复杂的抽象问题。
++ **更全面的理解能力**：GraphRAG 更擅长对大型数据集进行全面理解，能够更好地处理复杂的抽象问题。
 
-而借助微软开源的GeaphRAG项目，我们可以快速做到以下事项：
+而借助微软开源的GraphRAG项目，我们可以快速做到以下事项：
 
-+   **基于图的检索**：传统的 RAG 方法使用向量相似性进行检索，而 GraphRAG 引入了知识图谱来捕捉实体、关系及其他重要元数据，从而更有效地进行推理。
++ **基于图的检索**：传统的 RAG 方法使用向量相似性进行检索，而 GraphRAG 引入了知识图谱来捕捉实体、关系及其他重要元数据，从而更有效地进行推理。
 
-+   **层次聚类**：GraphRAG 使用 **Leiden** 技术进行层次聚类，将实体及其关系进行组织，提供更丰富的上下文信息来处理复杂的查询。
++ **层次聚类**：GraphRAG 使用 `Leiden` 技术进行层次聚类，将实体及其关系进行组织，提供更丰富的上下文信息来处理复杂的查询。
 
-+   **多模式查询**：支持多种查询模式：
++ **多模式查询**：支持多种查询模式：
 
-+   **全局搜索**：通过利用社区总结来进行全局性推理。
+  + **全局搜索**：通过利用社区总结来进行全局性推理。
 
-+   **局部搜索**：通过扩展相关实体的邻居和关联概念来进行具体实体的推理。
+  + **局部搜索**：通过扩展相关实体的邻居和关联概念来进行具体实体的推理。
 
-+   **DRIFT 搜索**：结合局部搜索和社区信息，提供更准确和相关的答案。
+  + **DRIFT 搜索**：结合局部搜索和社区信息，提供更准确和相关的答案。
 
-+   **图机器学习**：集成了图机器学习技术，提升查询响应质量，并提供来自结构化和非结构化数据的深度洞察。
++ **图机器学习**：集成了图机器学习技术，提升查询响应质量，并提供来自结构化和非结构化数据的深度洞察。
 
-+   **Prompt 调优**：提供调优工具，帮助根据特定数据和需求调整查询提示，从而提高结果质量。
++ **Prompt 调优**：提供调优工具，帮助根据特定数据和需求调整查询提示，从而提高结果质量。
 
-#### 3.GraphRAG运行流程
+#### 5. GraphRAG运行流程
 
 **索引（Indexing）过程**
 
-1.  **文本单元切分**：将输入文本分割成 **TextUnits**，每个 TextUnit 是一个可分析的单元，用于提取关键信息。
+1. **文本单元切分**：将输入文本分割成 `TextUnits`，每个 `TextUnits` 是一个可分析的单元，用于提取关键信息。
 
-1.  **实体和关系提取**：使用 LLM 从 TextUnits 中提取实体、关系和关键声明。
+2. **实体和关系提取**：使用 LLM 从 `TextUnits` 中提取实体、关系和关键声明。
 
-1.  **图构建**：构建知识图谱，使用 Leiden 算法进行实体的层次聚类。每个实体用节点表示，节点的大小和颜色分别代表实体的度数和所属社区。
+3. **图构建**：构建知识图谱，使用 `Leiden` 算法进行实体的层次聚类。每个实体用节点表示，节点的大小和颜色分别代表实体的度数和所属社区。
 
-1.  **社区总结**：从下到上生成每个社区及其成员的总结，帮助全局理解数据集。
+4. **社区总结**：从下到上生成每个社区及其成员的总结，帮助全局理解数据集。
 
 **查询（Query）过程**
 
 索引完成后，用户可以通过不同的搜索模式进行查询：
 
-+   **全局搜索**：当我们想了解整个语料库或数据集的整体概况时，GraphRAG 可以利用 社区总结 来快速推理和获取信息。这种方式适用于大范围问题，如某个主题的总体理解。
++ **全局搜索**：当我们想了解整个语料库或数据集的整体概况时，GraphRAG 可以利用 社区总结 来快速推理和获取信息。这种方式适用于大范围问题，如某个主题的总体理解。
 
-+   **局部搜索**：如果问题关注于某个特定的实体，GraphRAG 会向该实体的 邻居（即相关实体）扩展搜索，以获得更详细和精准的答案。
++ **局部搜索**：如果问题关注于某个特定的实体，GraphRAG 会向该实体的 邻居（即相关实体）扩展搜索，以获得更详细和精准的答案。
 
-+   **DRIFT 搜索**：这是对局部搜索的增强，除了获取邻居和相关概念，还引入了 社区信息 的上下文，从而提供更深入的推理和连接。
++ **DRIFT 搜索**：这是对局部搜索的增强，除了获取邻居和相关概念，还引入了 社区信息 的上下文，从而提供更深入的推理和连接。
 
-**Prompt 调优****
+#### Prompt 调优
 
-为了获得最佳性能**，GraphRAG 强烈建议进行 Prompt 调优，确保模型可以根据你的特定数据和查询需求进行优化，从而提供更准确和相关的答案。
+为了获得最佳性能，GraphRAG 强烈建议进行 Prompt 调优，确保模型可以根据你的特定数据和查询需求进行优化，从而提供更准确和相关的答案。
 
-#### 4.GraphRAG核心原理回顾
+#### 6. GraphRAG核心原理回顾
 
 ![](img/e39daced2c1dc581cc55118b8c0c3be6.png)
 
@@ -156,26 +157,22 @@ RAG 技术在帮助 LLM 推理私有数据集方面显示了很大的潜力—�
 
 > 注，以下实验环境均为Ubuntu系统，以更好的模拟真实企业应用场景，其中大多数方法也可以直接迁移至Windows操作系统中。
 
-#### 【补充阅读】在线算力租赁平台AutoDL使用指南与虚拟环境创建方法
+### 【补充阅读】在线算力租赁平台AutoDL使用指南与虚拟环境创建方法
 
-```
+```python
 from IPython.display import Markdown, display
-```
 
-```
-with open(&#x27;【补充材料】在线算力租赁平台AutoDL使用指南与虚拟环境创建方法.md&#x27;, &#x27;r&#x27;) as file:
+with open('【补充材料】在线算力租赁平台AutoDL使用指南与虚拟环境创建方法.md', 'r') as file:
     md_content = file.read()
-```
 
-```
 display(Markdown(md_content))
 ```
 
-## 【补充材料】在线算力租赁平台AutoDL使用指南与虚拟环境创建方法
+### 【补充材料】在线算力租赁平台AutoDL使用指南与虚拟环境创建方法
 
-### Step 1.AutoDL算力租赁流程
+#### Step 1. AutoDL算力租赁流程
 
-+   AutoDL简介
++ **AutoDL简介**
 
 AutoDL是一个稳定高效的算力租赁平台，AutoDL支持一键部署基础Linux基础环境、镜像环境，同时支持镜像文件保存与迁移、跨实力读取文件等，且平台显卡较为充裕，并支持多种不同计费方式，对于大模型初学者来说是非常不错的算力租赁渠道。
 
@@ -183,24 +180,23 @@ AutoDL是一个稳定高效的算力租赁平台，AutoDL支持一键部署基�
 
 但与此同时，AutoDL也有一定的局限，如没有公网IP、不支持Docker镜像等。不过对于本次公开课，对于不具备本地硬件环境的同学来说，AutoDL肯定是最佳算力租赁渠道，公开课所有的演示流程也将是基于AutoDL环境的操作，便于各位同学跟着公开课内容逐步手动实现。
 
-+   AutoDL注册与充值
++ **AutoDL注册与充值**
 
-点击AutoDL官网即可注册与登录👉https://www.autodl.com/login
+点击AutoDL官网即可注册与登录👉 `https://www.autodl.com/login`
 
 ![](img/4757f9322686005e512b96d5bf9362ba.png)
 
-除了常规登录流程外，AutoDL还要求绑定🛰️和进行实名认证。实名认证其实是目前所有算力租赁平台的基本要求，大家按照AutoDL官网指引👉https://www.autodl.com/console/center/account/auth，一步步操作即可：
+除了常规登录流程外，AutoDL还要求绑定🛰️和进行实名认证。实名认证其实是目前所有算力租赁平台的基本要求，大家按照AutoDL官网指引👉 `https://www.autodl.com/console/center/account/auth`，一步步操作即可：
 
++ **账户充值**
 
-+   账户充值
-
-AutoDL采用的是预付费模式，即需要先在AutoDL平台上储值，然后再租赁相关算力。AutoDL充值地址👉https://www.autodl.com/recharge。需要注意的是，若需要全程完成公开课的模型训练流程，则需要约50元左右算力成本，而若只想简单测试最终模型效果，则算力成本在10元以内，大家可以根据自己实际需求进行充值。
+AutoDL采用的是预付费模式，即需要先在AutoDL平台上储值，然后再租赁相关算力。AutoDL充值地址👉 `https://www.autodl.com/recharge`。需要注意的是，若需要全程完成公开课的模型训练流程，则需要约50元左右算力成本，而若只想简单测试最终模型效果，则算力成本在10元以内，大家可以根据自己实际需求进行充值。
 
 ![](img/7c01a070a00c8c66ac1ccf291cfca344.png)
 
-+   算力租赁
++ **算力租赁**
 
-接下来就需要进行GPU租赁了，本次公开课实验需要28G-30G左右显存，同时为了给大家介绍单机多卡的模型训练方法，推荐租赁双卡3090服务器，相对来说会较为划算。此外，也可以考虑租赁更高配置的服务器，如双卡4090、双卡L20、双卡A100等，可根据实际需求进行租赁。AutoDL算力市场👉：https://www.autodl.com/market/list
+接下来就需要进行GPU租赁了，本次公开课实验需要28G-30G左右显存，同时为了给大家介绍单机多卡的模型训练方法，推荐租赁双卡3090服务器，相对来说会较为划算。此外，也可以考虑租赁更高配置的服务器，如双卡4090、双卡L20、双卡A100等，可根据实际需求进行租赁。AutoDL算力市场👉：`https://www.autodl.com/market/list`
 
 ![](img/5392817448d448a539399befc494d129.png)
 
@@ -210,17 +206,13 @@ AutoDL采用的是预付费模式，即需要先在AutoDL平台上储值，然�
 
 然后再次确认计费方式，以及账户剩余费用是否足够支付，在基础镜像中，选择一个镜像：
 
-![](img/a931f9174c4122144fbf70aa75f55d64.png)
+> 注，这里的镜像配置和计费方式，都可以随时修改。
 
-这里我们选择Pytorch 2.3.0（即最高版本）+Python 3.12+CUDA 12.1
-
+这里我们选择 `Pytorch 2.3.0`（即最高版本）+`Python 3.12`+`CUDA 12.1`
 
 选择完毕后，点击立即创建即可：
 
-
-> 注，这里的镜像配置和计费方式，都可以随时修改。
-
-+   查看当前服务器
++ **查看当前服务器**
 
 创建完成后，页面会自动跳转到当前账号的在线服务器管理页面，这里可以看到刚刚租赁的服务器正在开机中：
 
@@ -228,9 +220,9 @@ AutoDL采用的是预付费模式，即需要先在AutoDL平台上储值，然�
 
 稍作等待，待显示运行中时，代表远程服务器已经顺利运行，接下来则需要考虑如何连接远程服务器。
 
-### Step 2.使用FinalShell连接远程服务器
+#### Step 2. 使用FinalShell连接远程服务器
 
-连接远程服务器的方式有很多种，首先服务器已预安装了JupyterLab，我们可以直接通过JupyterLab中的Terminal来连接服务器，并通过命令行的方式操作远程服务器。但由于JupyterLab中Termianl界面较为原始，对新人用户操作并不友好。因此推荐使用专门的远程终端连接软件连接远程服务器，这里推荐使用FinalShell，下图扫码添加英英助教，回复LLM，即可领取本次公开课课件：
+连接远程服务器的方式有很多种，首先服务器已预安装了JupyterLab，我们可以直接通过JupyterLab中的Terminal来连接服务器，并通过命令行的方式操作远程服务器。但由于JupyterLab中Terminal界面较为原始，对新人用户操作并不友好。因此推荐使用专门的远程终端连接软件连接远程服务器，这里推荐使用FinalShell，下图扫码添加英英助教，回复LLM，即可领取本次公开课课件：
 
 ![](img/ce2fa95d6da0b677b44c8d7d149f3b6d.png)
 
@@ -258,7 +250,7 @@ ssh -p 24503 root@conxxx
 wxxxx
 ```
 
-记录好了之后即可打开FincalShell，使用该信息连接远程服务器。接下来打开FinalShell：
+记录好了之后即可打开FinalShell，使用该信息连接远程服务器。接下来打开FinalShell：
 
 ![](img/8860d70509443cc0adc9b3fa5f0bc5f7.png)
 
@@ -270,7 +262,7 @@ wxxxx
 
 ![](img/128cb10e263fd07e577855b0250e987b.png)
 
-此处名称可以随意填写，主机为conxxx，也就是登陆指令root@conxxx中的conxxx部分，端口为24503，也就是登录指令中ssh -p 24503 root@conxxx的24503部分，用户名为root，也就是root@conxxx中的conxxx中的root，而密码则是wxxxx，也就是此前复制的密码：
+此处名称可以随意填写，主机为 `conxxx`，也就是登陆指令`root@conxxx`中的 `conxxx` 部分，端口为 `24503`，也就是登录指令中`ssh -p 24503 root@conxxx`的 `24503` 部分，用户名为 `root`，也就是`root@conxxx`中的 `root`，而密码则是 `wxxxx`，也就是此前复制的密码：
 
 ![](img/6406517ba66e1cecd1db170ce1fc6560.png)
 
@@ -290,15 +282,17 @@ wxxxx
 
 ![](img/91ecdfe994b8f4af7080ce27035692a7.png)
 
-### Step 3.创建虚拟环境
+#### Step 3. 创建虚拟环境
 
-+   打开finalshell，创建和服务器的shell连接
++ **打开finalshell，创建和服务器的shell连接**
 
 ![](img/2466961811c8164d611fe353b2092b78.png)
 
 ![](img/c3e7ea6ea3eea36e0569fa76e9f4ac71.png)
 
-+   创建MateConv虚拟环境（虚拟环境名称可自定义）
+
+
+# 创建`MateConv`虚拟环境（虚拟环境名称可自定义）
 
 ```
 conda create --name MateConv python=3.10
@@ -309,24 +303,24 @@ conda activate MateConv
 
 ![](img/2d3e33dfbc03e3563acaf4b7e9fd4b84.png)
 
-+   创建Jupyter Kernel
+## 创建Jupyter Kernel
 
 ```
 conda install jupyterlab
 conda install ipykernel
-python -m ipykernel install --user --name MateConv --display-name &quot;Python (MateConv)&quot;
+python -m ipykernel install --user --name MateConv --display-name "Python (MateConv)"
 ```
 
-+   创建项目主目录
+## 创建项目主目录
 
 ```
- cd ~/autodl-tmp/
- mkdir MateConv
+cd ~/autodl-tmp/
+mkdir MateConv
 ```
 
 ![](img/0fdde3fef778fcdaf88c5888770564a5.png)
 
-+   打开Jupyter
+## 打开Jupyter
 
 ```
 cd ~/autodl-tmp/MateConv
@@ -335,17 +329,17 @@ juputer lab --allow-root
 
 ![](img/1f2cb15585e575ee8bec63ec4e48606a.png)
 
-+   本地连接Jupyter并查看虚拟环境kernel
+## 本地连接Jupyter并查看虚拟环境kernel
 
-当服务器开启Jupyter时，Windows环境下，本地可通过AutoDL-SSH-Tools进行访问，下图扫码添加英英助教，回复LLM，即可领取本次公开课课件：
+当服务器开启Jupyter时，Windows环境下，本地可通过`AutoDL-SSH-Tools`进行访问，下图扫码添加英英助教，回复LLM，即可领取本次公开课课件：
 
 ![](img/cf9d6669e5eb1bb56580464acc4e9f9f.png)
 
-其中AutoDL-SSH-Tools软件就在本次公开课的课件中：
+其中`AutoDL-SSH-Tools`软件就在本次公开课的课件中：
 
 ![](img/b10c2c6e7504e70aeb5d9214ce561745.png)
 
-下载完成后解压缩后双击打开AutoDL.exe
+下载完成后解压缩后双击打开`AutoDL.exe`
 
 ![](img/f349b523bb57e540280b3272ba57b741.png)
 
@@ -355,7 +349,7 @@ juputer lab --allow-root
 
 ![](img/b9c8b9fe6d1cf61d17e8017c513d8ff1.png)
 
-代理端口填写8889（也就是Juypter运行端口），点击开始代理，然后点击访问即可：
+代理端口填写`8889`（也就是`Juypter`运行端口），点击开始代理，然后点击访问即可：
 
 ![](img/cefe91d6df9a0bcf88b064d7cb2efdcd.png)
 
@@ -365,13 +359,15 @@ juputer lab --allow-root
 
 ![](img/f988dbc9c21d7d85b900914fecf8cdfb.png)
 
-> Mac登陆指令，打开终端并输入：（以下要填入自己的URL和port端口号）
+> Mac登陆指令，打开终端并输入：（以下要填入自己的`URL`和`port`端口号）
 
-> ssh -CNg -L 8889:127.0.0.1:8889 root@YOUR_URL -p port
+```
+ssh -CNg -L 8889:127.0.0.1:8889 root@YOUR_URL -p port
+```
 
 > 然后根据提示输入密码
 
-接下来再次点击finalshell中+号，再次创建一个和服务器的连接：
+接下来再次点击`finalshell`中`+`号，再次创建一个和服务器的连接：
 
 ![](img/f9f8a58d85b7462c123d0eb23350d7b3.png)
 
@@ -393,9 +389,9 @@ conda activate MateConv
 
 ---
 
-#### 1.GraphRAG安装与项目创建
+# GraphRAG 安装与项目创建
 
-+   Step 1.使用pip安装graphrag
+## Step 1. 使用`pip`安装`graphrag`
 
 ```
 pip install graphrag
@@ -405,140 +401,145 @@ pip install graphrag
 !pip install graphrag
 ```
 
+
+
 ```
 Looking in indexes: http://mirrors.aliyun.com/pypi/simple
 Requirement already satisfied: graphrag in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (0.5.0)
-Requirement already satisfied: aiofiles&lt;25.0.0,&gt;=24.1.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (24.1.0)
-Requirement already satisfied: aiolimiter&lt;2.0.0,&gt;=1.1.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.1.0)
-Requirement already satisfied: azure-identity&lt;2.0.0,&gt;=1.17.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.19.0)
-Requirement already satisfied: azure-search-documents&lt;12.0.0,&gt;=11.4.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (11.5.2)
-Requirement already satisfied: azure-storage-blob&lt;13.0.0,&gt;=12.22.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (12.24.0)
-Requirement already satisfied: datashaper&lt;0.0.50,&gt;=0.0.49 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.0.49)
-Requirement already satisfied: devtools&lt;0.13.0,&gt;=0.12.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.12.2)
-Requirement already satisfied: environs&lt;12.0.0,&gt;=11.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (11.2.1)
-Requirement already satisfied: future&lt;2.0.0,&gt;=1.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.0.0)
-Requirement already satisfied: graspologic&lt;4.0.0,&gt;=3.4.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.4.1)
-Requirement already satisfied: json-repair&lt;0.31.0,&gt;=0.30.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.30.2)
-Requirement already satisfied: lancedb&lt;0.14.0,&gt;=0.13.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.13.0)
-Requirement already satisfied: matplotlib&lt;4.0.0,&gt;=3.9.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.9.2)
-Requirement already satisfied: networkx&lt;4,&gt;=3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.4.2)
+Requirement already satisfied: aiofiles<25.0.0,>=24.1.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (24.1.0)
+Requirement already satisfied: aiolimiter<2.0.0,>=1.1.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.1.0)
+Requirement already satisfied: azure-identity<2.0.0,>=1.17.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.19.0)
+Requirement already satisfied: azure-search-documents<12.0.0,>=11.4.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (11.5.2)
+Requirement already satisfied: azure-storage-blob<13.0.0,>=12.22.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (12.24.0)
+Requirement already satisfied: datashaper<0.0.50,>=0.0.49 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.0.49)
+Requirement already satisfied: devtools<0.13.0,>=0.12.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.12.2)
+Requirement already satisfied: environs<12.0.0,>=11.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (11.2.1)
+Requirement already satisfied: future<2.0.0,>=1.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.0.0)
+Requirement already satisfied: graspologic<4.0.0,>=3.4.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.4.1)
+Requirement already satisfied: json-repair<0.31.0,>=0.30.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.30.2)
+Requirement already satisfied: lancedb<0.14.0,>=0.13.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.13.0)
+Requirement already satisfied: matplotlib<4.0.0,>=3.9.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.9.2)
+Requirement already satisfied: networkx<4,>=3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.4.2)
 Requirement already satisfied: nltk==3.9.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (3.9.1)
-Requirement already satisfied: numpy&lt;2.0.0,&gt;=1.25.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.26.4)
-Requirement already satisfied: openai&lt;2.0.0,&gt;=1.51.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.55.1)
-Requirement already satisfied: pandas&lt;3.0.0,&gt;=2.2.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (2.2.3)
-Requirement already satisfied: pyaml-env&lt;2.0.0,&gt;=1.2.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.2.1)
-Requirement already satisfied: pyarrow&lt;16.0.0,&gt;=15.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (15.0.2)
-Requirement already satisfied: pydantic&lt;3.0.0,&gt;=2.9.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (2.10.1)
-Requirement already satisfied: python-dotenv&lt;2.0.0,&gt;=1.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.0.1)
-Requirement already satisfied: pyyaml&lt;7.0.0,&gt;=6.0.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (6.0.2)
-Requirement already satisfied: rich&lt;14.0.0,&gt;=13.6.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (13.9.4)
-Requirement already satisfied: tenacity&lt;10.0.0,&gt;=9.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (9.0.0)
-Requirement already satisfied: tiktoken&lt;0.8.0,&gt;=0.7.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.7.0)
-Requirement already satisfied: typer&lt;0.13.0,&gt;=0.12.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.12.5)
-Requirement already satisfied: typing-extensions&lt;5.0.0,&gt;=4.12.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (4.12.2)
-Requirement already satisfied: umap-learn&lt;0.6.0,&gt;=0.5.6 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.5.7)
-Requirement already satisfied: click in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1-&gt;graphrag) (8.1.7)
-Requirement already satisfied: joblib in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1-&gt;graphrag) (1.4.2)
-Requirement already satisfied: regex&gt;=2021.8.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1-&gt;graphrag) (2024.11.6)
-Requirement already satisfied: tqdm in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1-&gt;graphrag) (4.67.1)
-Requirement already satisfied: azure-core&gt;=1.31.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (1.32.0)
-Requirement already satisfied: cryptography&gt;=2.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (43.0.3)
-Requirement already satisfied: msal&gt;=1.30.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (1.31.1)
-Requirement already satisfied: msal-extensions&gt;=1.2.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (1.2.0)
-Requirement already satisfied: azure-common&gt;=1.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-search-documents&lt;12.0.0,&gt;=11.4.0-&gt;graphrag) (1.1.28)
-Requirement already satisfied: isodate&gt;=0.6.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-search-documents&lt;12.0.0,&gt;=11.4.0-&gt;graphrag) (0.7.2)
-Requirement already satisfied: diskcache&lt;6.0.0,&gt;=5.6.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from datashaper&lt;0.0.50,&gt;=0.0.49-&gt;graphrag) (5.6.3)
-Requirement already satisfied: jsonschema&lt;5.0.0,&gt;=4.21.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from datashaper&lt;0.0.50,&gt;=0.0.49-&gt;graphrag) (4.23.0)
-Requirement already satisfied: asttokens&lt;3.0.0,&gt;=2.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from devtools&lt;0.13.0,&gt;=0.12.2-&gt;graphrag) (2.0.5)
-Requirement already satisfied: executing&gt;=1.1.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from devtools&lt;0.13.0,&gt;=0.12.2-&gt;graphrag) (2.1.0)
-Requirement already satisfied: pygments&gt;=2.15.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from devtools&lt;0.13.0,&gt;=0.12.2-&gt;graphrag) (2.15.1)
-Requirement already satisfied: marshmallow&gt;=3.13.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from environs&lt;12.0.0,&gt;=11.0.0-&gt;graphrag) (3.23.1)
-Requirement already satisfied: POT&lt;0.10,&gt;=0.9 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (0.9.5)
-Requirement already satisfied: anytree&lt;3.0.0,&gt;=2.12.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (2.12.1)
-Requirement already satisfied: beartype&lt;0.19.0,&gt;=0.18.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (0.18.5)
-Requirement already satisfied: gensim&lt;5.0.0,&gt;=4.3.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (4.3.3)
-Requirement already satisfied: graspologic-native&lt;2.0.0,&gt;=1.2.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.2.1)
-Requirement already satisfied: hyppo&lt;0.5.0,&gt;=0.4.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (0.4.0)
-Requirement already satisfied: scikit-learn&lt;2.0.0,&gt;=1.4.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.5.2)
-Requirement already satisfied: scipy==1.12.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.12.0)
-Requirement already satisfied: seaborn&lt;0.14.0,&gt;=0.13.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (0.13.2)
-Requirement already satisfied: statsmodels&lt;0.15.0,&gt;=0.14.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (0.14.4)
-Requirement already satisfied: deprecation in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (2.1.0)
-Requirement already satisfied: pylance==0.17.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (0.17.0)
-Requirement already satisfied: requests&gt;=2.31.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (2.32.3)
-Requirement already satisfied: retry&gt;=0.9.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (0.9.2)
-Requirement already satisfied: attrs&gt;=21.3.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (24.2.0)
-Requirement already satisfied: packaging in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (24.1)
-Requirement already satisfied: cachetools in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (5.5.0)
-Requirement already satisfied: overrides&gt;=0.7 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (7.4.0)
-Requirement already satisfied: contourpy&gt;=1.0.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (1.3.1)
-Requirement already satisfied: cycler&gt;=0.10 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (0.12.1)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (4.55.0)
-Requirement already satisfied: kiwisolver&gt;=1.3.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (1.4.7)
-Requirement already satisfied: pillow&gt;=8 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (11.0.0)
-Requirement already satisfied: pyparsing&gt;=2.3.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (3.2.0)
-Requirement already satisfied: python-dateutil&gt;=2.7 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib&lt;4.0.0,&gt;=3.9.0-&gt;graphrag) (2.9.0.post0)
-Requirement already satisfied: anyio&lt;5,&gt;=3.5.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (4.6.2)
-Requirement already satisfied: distro&lt;2,&gt;=1.7.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (1.9.0)
-Requirement already satisfied: httpx&lt;1,&gt;=0.23.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (0.27.0)
-Requirement already satisfied: jiter&lt;1,&gt;=0.4.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (0.7.1)
-Requirement already satisfied: sniffio in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (1.3.0)
-Requirement already satisfied: pytz&gt;=2020.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pandas&lt;3.0.0,&gt;=2.2.3-&gt;graphrag) (2024.1)
-Requirement already satisfied: tzdata&gt;=2022.7 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pandas&lt;3.0.0,&gt;=2.2.3-&gt;graphrag) (2024.2)
-Requirement already satisfied: annotated-types&gt;=0.6.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pydantic&lt;3.0.0,&gt;=2.9.2-&gt;graphrag) (0.7.0)
-Requirement already satisfied: pydantic-core==2.27.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pydantic&lt;3.0.0,&gt;=2.9.2-&gt;graphrag) (2.27.1)
-Requirement already satisfied: markdown-it-py&gt;=2.2.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from rich&lt;14.0.0,&gt;=13.6.0-&gt;graphrag) (3.0.0)
-Requirement already satisfied: shellingham&gt;=1.3.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from typer&lt;0.13.0,&gt;=0.12.5-&gt;graphrag) (1.5.4)
-Requirement already satisfied: numba&gt;=0.51.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from umap-learn&lt;0.6.0,&gt;=0.5.6-&gt;graphrag) (0.60.0)
-Requirement already satisfied: pynndescent&gt;=0.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from umap-learn&lt;0.6.0,&gt;=0.5.6-&gt;graphrag) (0.5.13)
-Requirement already satisfied: idna&gt;=2.8 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from anyio&lt;5,&gt;=3.5.0-&gt;openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (3.7)
-Requirement already satisfied: six in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from anytree&lt;3.0.0,&gt;=2.12.1-&gt;graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.16.0)
-Requirement already satisfied: cffi&gt;=1.12 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from cryptography&gt;=2.5-&gt;azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (1.17.1)
-Requirement already satisfied: smart-open&gt;=1.8.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from gensim&lt;5.0.0,&gt;=4.3.2-&gt;graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (7.0.5)
-Requirement already satisfied: certifi in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from httpx&lt;1,&gt;=0.23.0-&gt;openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (2024.8.30)
-Requirement already satisfied: httpcore==1.* in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from httpx&lt;1,&gt;=0.23.0-&gt;openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (1.0.2)
-Requirement already satisfied: h11&lt;0.15,&gt;=0.13 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from httpcore==1.*-&gt;httpx&lt;1,&gt;=0.23.0-&gt;openai&lt;2.0.0,&gt;=1.51.2-&gt;graphrag) (0.14.0)
-Requirement already satisfied: autograd&gt;=1.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from hyppo&lt;0.5.0,&gt;=0.4.0-&gt;graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.7.0)
-Requirement already satisfied: jsonschema-specifications&gt;=2023.03.6 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from jsonschema&lt;5.0.0,&gt;=4.21.1-&gt;datashaper&lt;0.0.50,&gt;=0.0.49-&gt;graphrag) (2023.7.1)
-Requirement already satisfied: referencing&gt;=0.28.4 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from jsonschema&lt;5.0.0,&gt;=4.21.1-&gt;datashaper&lt;0.0.50,&gt;=0.0.49-&gt;graphrag) (0.30.2)
-Requirement already satisfied: rpds-py&gt;=0.7.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from jsonschema&lt;5.0.0,&gt;=4.21.1-&gt;datashaper&lt;0.0.50,&gt;=0.0.49-&gt;graphrag) (0.10.6)
-Requirement already satisfied: mdurl~=0.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from markdown-it-py&gt;=2.2.0-&gt;rich&lt;14.0.0,&gt;=13.6.0-&gt;graphrag) (0.1.2)
-Requirement already satisfied: PyJWT&lt;3,&gt;=1.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from PyJWT[crypto]&lt;3,&gt;=1.0.0-&gt;msal&gt;=1.30.0-&gt;azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (2.10.0)
-Requirement already satisfied: portalocker&lt;3,&gt;=1.4 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from msal-extensions&gt;=1.2.0-&gt;azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (2.10.1)
-Requirement already satisfied: llvmlite&lt;0.44,&gt;=0.43.0dev0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from numba&gt;=0.51.2-&gt;umap-learn&lt;0.6.0,&gt;=0.5.6-&gt;graphrag) (0.43.0)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from requests&gt;=2.31.0-&gt;lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (3.3.2)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from requests&gt;=2.31.0-&gt;lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (2.2.3)
-Requirement already satisfied: decorator&gt;=3.4.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from retry&gt;=0.9.2-&gt;lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (5.1.1)
-Requirement already satisfied: py&lt;2.0.0,&gt;=1.4.26 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from retry&gt;=0.9.2-&gt;lancedb&lt;0.14.0,&gt;=0.13.0-&gt;graphrag) (1.11.0)
-Requirement already satisfied: threadpoolctl&gt;=3.1.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from scikit-learn&lt;2.0.0,&gt;=1.4.2-&gt;graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (3.5.0)
-Requirement already satisfied: patsy&gt;=0.5.6 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from statsmodels&lt;0.15.0,&gt;=0.14.2-&gt;graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.0.1)
-Requirement already satisfied: pycparser in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from cffi&gt;=1.12-&gt;cryptography&gt;=2.5-&gt;azure-identity&lt;2.0.0,&gt;=1.17.1-&gt;graphrag) (2.21)
-Requirement already satisfied: wrapt in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from smart-open&gt;=1.8.1-&gt;gensim&lt;5.0.0,&gt;=4.3.2-&gt;graspologic&lt;4.0.0,&gt;=3.4.1-&gt;graphrag) (1.17.0)
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0m
+Requirement already satisfied: numpy<2.0.0,>=1.25.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.26.4)
+Requirement already satisfied: openai<2.0.0,>=1.51.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.55.1)
+Requirement already satisfied: pandas<3.0.0,>=2.2.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (2.2.3)
+Requirement already satisfied: pyaml-env<2.0.0,>=1.2.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.2.1)
+Requirement already satisfied: pyarrow<16.0.0,>=15.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (15.0.2)
+Requirement already satisfied: pydantic<3.0.0,>=2.9.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (2.10.1)
+Requirement already satisfied: python-dotenv<2.0.0,>=1.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (1.0.1)
+Requirement already satisfied: pyyaml<7.0.0,>=6.0.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (6.0.2)
+Requirement already satisfied: rich<14.0.0,>=13.6.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (13.9.4)
+Requirement already satisfied: tenacity<10.0.0,>=9.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (9.0.0)
+Requirement already satisfied: tiktoken<0.8.0,>=0.7.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.7.0)
+Requirement already satisfied: typer<0.13.0,>=0.12.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.12.5)
+Requirement already satisfied: typing-extensions<5.0.0,>=4.12.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (4.12.2)
+Requirement already satisfied: umap-learn<0.6.0,>=0.5.6 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graphrag) (0.5.7)
+Requirement already satisfied: click in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1->graphrag) (8.1.7)
+Requirement already satisfied: joblib in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1->graphrag) (1.4.2)
+Requirement already satisfied: regex>=2021.8.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1->graphrag) (2024.11.6)
+Requirement already satisfied: tqdm in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from nltk==3.9.1->graphrag) (4.67.1)
+Requirement already satisfied: azure-core>=1.31.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity<2.0.0,>=1.17.1->graphrag) (1.32.0)
+Requirement already satisfied: cryptography>=2.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity<2.0.0,>=1.17.1->graphrag) (43.0.3)
+Requirement already satisfied: msal>=1.30.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity<2.0.0,>=1.17.1->graphrag) (1.31.1)
+Requirement already satisfied: msal-extensions>=1.2.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-identity<2.0.0,>=1.17.1->graphrag) (1.2.0)
+Requirement already satisfied: azure-common>=1.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-search-documents<12.0.0,>=11.4.0->graphrag) (1.1.28)
+Requirement already satisfied: isodate>=0.6.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from azure-search-documents<12.0.0,>=11.4.0->graphrag) (0.7.2)
+Requirement already satisfied: diskcache<6.0.0,>=5.6.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from datashaper<0.0.50,>=0.0.49->graphrag) (5.6.3)
+Requirement already satisfied: jsonschema<5.0.0,>=4.21.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from datashaper<0.0.50,>=0.0.49->graphrag) (4.23.0)
+Requirement already satisfied: asttokens<3.0.0,>=2.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from devtools<0.13.0,>=0.12.2->graphrag) (2.0.5)
+Requirement already satisfied: executing>=1.1.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from devtools<0.13.0,>=0.12.2->graphrag) (2.1.0)
+Requirement already satisfied: pygments>=2.15.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from devtools<0.13.0,>=0.12.2->graphrag) (2.15.1)
+Requirement already satisfied: marshmallow>=3.13.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from environs<12.0.0,>=11.0.0->graphrag) (3.23.1)
+Requirement already satisfied: POT<0.10,>=0.9 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (0.9.5)
+Requirement already satisfied: anytree<3.0.0,>=2.12.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (2.12.1)
+Requirement already satisfied: beartype<0.19.0,>=0.18.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (0.18.5)
+Requirement already satisfied: gensim<5.0.0,>=4.3.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (4.3.3)
+Requirement already satisfied: graspologic-native<2.0.0,>=1.2.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (1.2.1)
+Requirement already satisfied: hyppo<0.5.0,>=0.4.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (0.4.0)
+Requirement already satisfied: scikit-learn<2.0.0,>=1.4.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (1.5.2)
+Requirement already satisfied: scipy==1.12.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (1.12.0)
+Requirement already satisfied: seaborn<0.14.0,>=0.13.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (0.13.2)
+Requirement already satisfied: statsmodels<0.15.0,>=0.14.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from graspologic<4.0.0,>=3.4.1->graphrag) (0.14.4)
+Requirement already satisfied: deprecation in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (2.1.0)
+Requirement already satisfied: pylance==0.17.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (0.17.0)
+Requirement already satisfied: requests>=2.31.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (2.32.3)
+Requirement already satisfied: retry>=0.9.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (0.9.2)
+Requirement already satisfied: attrs>=21.3.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (24.2.0)
+Requirement already satisfied: packaging in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (24.1)
+Requirement already satisfied: cachetools in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (5.5.0)
+Requirement already satisfied: overrides>=0.7 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from lancedb<0.14.0,>=0.13.0->graphrag) (7.4.0)
+Requirement already satisfied: contourpy>=1.0.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (4.55.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (1.4.7)
+Requirement already satisfied: pillow>=8 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (11.0.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (3.2.0)
+Requirement already satisfied: python-dateutil>=2.7 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from matplotlib<4.0.0,>=3.9.0->graphrag) (2.9.0.post0)
+Requirement already satisfied: anyio<5,>=3.5.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai<2.0.0,>=1.51.2->graphrag) (4.6.2)
+Requirement already satisfied: distro<2,>=1.7.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai<2.0.0,>=1.51.2->graphrag) (1.9.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai<2.0.0,>=1.51.2->graphrag) (0.27.0)
+Requirement already satisfied: jiter<1,>=0.4.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai<2.0.0,>=1.51.2->graphrag) (0.7.1)
+Requirement already satisfied: sniffio in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from openai<2.0.0,>=1.51.2->graphrag) (1.3.0)
+Requirement already satisfied: pytz>=2020.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pandas<3.0.0,>=2.2.3->graphrag) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pandas<3.0.0,>=2.2.3->graphrag) (2024.2)
+Requirement already satisfied: annotated-types>=0.6.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.9.2->graphrag) (0.7.0)
+Requirement already satisfied: pydantic-core==2.27.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.9.2->graphrag) (2.27.1)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from rich<14.0.0,>=13.6.0->graphrag) (3.0.0)
+Requirement already satisfied: shellingham>=1.3.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from typer<0.13.0,>=0.12.5->graphrag) (1.5.4)
+Requirement already satisfied: numba>=0.51.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from umap-learn<0.6.0,>=0.5.6->graphrag) (0.60.0)
+Requirement already satisfied: pynndescent>=0.5 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from umap-learn<0.6.0,>=0.5.6->graphrag) (0.5.13)
+Requirement already satisfied: idna>=2.8 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from anyio<5,>=3.5.0->openai<2.0.0,>=1.51.2->graphrag) (3.7)
+Requirement already satisfied: six in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from anytree<3.0.0,>=2.12.1->graspologic<4.0.0,>=3.4.1->graphrag) (1.16.0)
+Requirement already satisfied: cffi>=1.12 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from cryptography>=2.5->azure-identity<2.0.0,>=1.17.1->graphrag) (1.17.1)
+Requirement already satisfied: smart-open>=1.8.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from gensim<5.0.0,>=4.3.2->graspologic<4.0.0,>=3.4.1->graphrag) (7.0.5)
+Requirement already satisfied: certifi in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from httpx<1,>=0.23.0->openai<2.0.0,>=1.51.2->graphrag) (2024.8.30)
+Requirement already satisfied: httpcore==1.* in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from httpx<1,>=0.23.0->openai<2.0.0,>=1.51.2->graphrag) (1.0.2)
+Requirement already satisfied: h11<0.15,>=0.13 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->openai<2.0.0,>=1.51.2->graphrag) (0.14.0)
+Requirement already satisfied: autograd>=1.3 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from hyppo<0.5.0,>=0.4.0->graspologic<4.0.0,>=3.4.1->graphrag) (1.7.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.21.1->datashaper<0.0.50,>=0.0.49->graphrag) (2023.7.1)
+Requirement already satisfied: referencing>=0.28.4 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.21.1->datashaper<0.0.50,>=0.0.49->graphrag) (0.30.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.21.1->datashaper<0.0.50,>=0.0.49->graphrag) (0.10.6)
+Requirement already satisfied: mdurl~=0.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from markdown-it-py>=2.2.0->rich<14.0.0,>=13.6.0->graphrag) (0.1.2)
+Requirement already satisfied: PyJWT<3,>=1.0.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from PyJWT[crypto]<3,>=1.0.0->msal>=1.30.0->azure-identity<2.0.0,>=1.17.1->graphrag) (2.10.0)
+Requirement already satisfied: portalocker<3,>=1.4 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from msal-extensions>=1.2.0->azure-identity<2.0.0,>=1.17.1->graphrag) (2.10.1)
+Requirement already satisfied: llvmlite<0.44,>=0.43.0dev0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from numba>=0.51.2->umap-learn<0.6.0,>=0.5.6->graphrag) (0.43.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from requests>=2.31.0->lancedb<0.14.0,>=0.13.0->graphrag) (3.3.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from requests>=2.31.0->lancedb<0.14.0,>=0.13.0->graphrag) (2.2.3)
+Requirement already satisfied: decorator>=3.4.2 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from retry>=0.9.2->lancedb<0.14.0,>=0.13.0->graphrag) (5.1.1)
+Requirement already satisfied: py<2.0.0,>=1.4.26 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from retry>=0.9.2->lancedb<0.14.0,>=0.13.0->graphrag) (1.11.0)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from scikit-learn<2.0.0,>=1.4.2->graspologic<4.0.0,>=3.4.1->graphrag) (3.5.0)
+Requirement already satisfied: patsy>=0.5.6 in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from statsmodels<0.15.0,>=0.14.2->graspologic<4.0.0,>=3.4.1->graphrag) (1.0.1)
+Requirement already satisfied: pycparser in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from cffi>=1.12->cryptography>=2.5->azure-identity<2.0.0,>=1.17.1->graphrag) (2.21)
+Requirement already satisfied: wrapt in /root/miniconda3/envs/graphrag/lib/python3.11/site-packages (from smart-open>=1.8.1->gensim<5.0.0,>=4.3.2->graspologic<4.0.0,>=3.4.1->graphrag) (1.17.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 ```
 
-本次公开课采用GraphRAG最新版 v1.1.0进行教学。新版特性如下：
 
-+   **简化项目设置**：引入了 init 命令，生成简化的 settings.yml 文件，预设核心配置，降低初始配置的复杂度。
 
-+   **扩展命令行界面 (CLI)**：采用 Typer 框架，提供更丰富的内联文档和功能，使 CLI 的启动时间从平均 148 秒缩短至 2 秒。
+# 本次公开课采用 GraphRAG 最新版 v1.1.0 进行教学
 
-+   **统一 API 层**：推出独立的 API 层，简化开发者集成，CLI 和加速器均基于此 API 构建，提供了与 API 交互的示例。
+## 新版特性
 
-+   **简化数据模型**：优化数据结构，移除冗余字段，减少存储空间，提高读取速度和内存使用效率，输出的 Parquet 文件大小减少了 80%，总磁盘空间减少了 43%。
++ **简化项目设置**：引入了 `init` 命令，生成简化的 `settings.yml` 文件，预设核心配置，降低初始配置的复杂度。
 
-+   **优化向量存储**：默认在索引期间创建向量存储，避免后续处理，减少读取时间和内存占用，支持 LanceDB 和 Azure AI Search，默认使用 LanceDB 并写入本地数据库。
++ **扩展命令行界面 (CLI)**：采用 `Typer` 框架，提供更丰富的内联文档和功能，使 CLI 的启动时间从平均 148 秒缩短至 2 秒。
 
-+   **扁平化代码结构**：简化代码库，减少层级深度，提升可维护性和可读性，合并工作流，减少未使用的输出，提高性能。
++ **统一 API 层**：推出独立的 API 层，简化开发者集成，CLI 和加速器均基于此 API 构建，提供了与 API 交互的示例。
 
-+   **增量摄取**：新增 update 命令，智能合并新内容与现有索引，减少重新索引的需求，利用 LLM 缓存机制，降低成本，加快处理速度。
++ **简化数据模型**：优化数据结构，移除冗余字段，减少存储空间，提高读取速度和内存使用效率，输出的 `Parquet` 文件大小减少了 80%，总磁盘空间减少了 43%。
+
++ **优化向量存储**：默认在索引期间创建向量存储，避免后续处理，减少读取时间和内存占用，支持 `LanceDB` 和 `Azure AI Search`，默认使用 `LanceDB` 并写入本地数据库。
+
++ **扁平化代码结构**：简化代码库，减少层级深度，提升可维护性和可读性，合并工作流，减少未使用的输出，提高性能。
+
++ **增量摄取**：新增 `update` 命令，智能合并新内容与现有索引，减少重新索引的需求，利用 LLM 缓存机制，降低成本，加快处理速度。
 
 这些改进旨在提升 GraphRAG 的易用性、性能和可扩展性，为开发者和用户提供更高效的工具。
 
 ![](img/5d8b51aebac8ed96103b69a686f720a0.png)
 
-+   Step 2.创建检索项目文件夹
+### Step 2. 创建检索项目文件夹
 
 ```
 mkdir -p ./openl/input
@@ -548,7 +549,7 @@ mkdir -p ./openl/input
 
 ![](img/d29b63448397a8236d39b46ed4945743.png)
 
-+   **Step 3.上传数据集**
+### Step 3. 上传数据集
 
 ![](img/5ce638b5e9838ead869da17a9668461a.png)
 
@@ -558,7 +559,7 @@ mkdir -p ./openl/input
 
 ![](img/0b5b0dd2874d1bb9905dd79ac85100a2.png)
 
-+   **Step 4.初始化项目文件**
+### Step 4. 初始化项目文件
 
 ```
 graphrag init --root ./openl
@@ -569,46 +570,46 @@ graphrag init --root ./openl
 ```
 
 ```
-[2KInitializing project at [35m/root/autodl-tmp/graphrag/[0m[95mopenl[0m
+[2KInitializing project at [35m/root/autodl-tmp/graphrag/[0m[95mopenl[0m
 ⠋ GraphRAG Indexer 
 ```
 
-+   **Step 5.修改项目配置**
+### Step 5. 修改项目配置
 
 ![](img/2c9cf684382524f9a194b992d03ae5ba.png)
 
-打开.env文件，填写DeepSeek API-KEY
+打开 `.env` 文件，填写 DeepSeek API-KEY
 
 ![](img/490c84474895f014abac93a873c17158.png)
 
-打开setting.yaml文件，填写模型名称和反向代理地址：
+打开 `setting.yaml` 文件，填写模型名称和反向代理地址：
 
 ![](img/0a8b59e33a6d584d19fafbaf47e6d073.png)
 
-其中反向代理地址为api_base: https://ai.devtool.tech/proxy/v1
+其中反向代理地址为 `api_base: https://ai.devtool.tech/proxy/v1`
 
-+   【可选】Step 6.验证API-KEY和反向代理地址是否可以正常运行
+### 【可选】Step 6. 验证 API-KEY 和反向代理地址是否可以正常运行
 
 ```
 from openai import OpenAI
 ```
 
 ```
-api_key = &#x27;your-openai-api-key&#x27;
+api_key = 'your-openai-api-key'
 ```
 
 ```
 # 实例化客户端
 client = OpenAI(api_key=api_key, 
-                base_url=&quot;https://ai.devtool.tech/proxy/v1&quot;)
+                base_url="https://ai.devtool.tech/proxy/v1")
 ```
 
 ```
 # 调用 GPT-4o-mini 模型
 response = client.chat.completions.create(
-    model=&quot;gpt-4o-mini&quot;,
+    model="gpt-4o-mini",
     messages=[
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，好久不见!&quot;}
+        {"role": "user", "content": "你好，好久不见!"}
     ]
 )
 ```
@@ -622,7 +623,7 @@ print(response.choices[0].message.content)
 你好！好久不见！你最近怎么样？有什么新鲜事分享吗？
 ```
 
-然后查看当前API-KEY可以调用的模型：
+然后查看当前 API-KEY 可以调用的模型：
 
 ```
 models_list = client.models.list()
@@ -633,848 +634,224 @@ models_list.data
 ```
 
 ```
-[Model(id=&#x27;gpt-4o-2024-08-06&#x27;, created=1722814719, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o&#x27;, created=1715367049, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;o1-mini-2024-09-12&#x27;, created=1725648979, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;dall-e-2&#x27;, created=1698798177, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4-1106-preview&#x27;, created=1698957206, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-3.5-turbo&#x27;, created=1677610602, object=&#x27;model&#x27;, owned_by=&#x27;openai&#x27;),
- Model(id=&#x27;text-embedding-3-large&#x27;, created=1705953180, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-3.5-turbo-0125&#x27;, created=1706048358, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;babbage-002&#x27;, created=1692634615, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-2024-11-20&#x27;, created=1731975040, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4-turbo-preview&#x27;, created=1706037777, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;davinci-002&#x27;, created=1692634301, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4-0125-preview&#x27;, created=1706037612, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;whisper-1&#x27;, created=1677532384, object=&#x27;model&#x27;, owned_by=&#x27;openai-internal&#x27;),
- Model(id=&#x27;gpt-4o-mini&#x27;, created=1721172741, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;dall-e-3&#x27;, created=1698785189, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-mini-2024-07-18&#x27;, created=1721172717, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;o1-preview&#x27;, created=1725648897, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-3.5-turbo-16k&#x27;, created=1683758102, object=&#x27;model&#x27;, owned_by=&#x27;openai-internal&#x27;),
- Model(id=&#x27;o1-preview-2024-09-12&#x27;, created=1725648865, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;o1-mini&#x27;, created=1725649008, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-2024-05-13&#x27;, created=1715368132, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-realtime-preview&#x27;, created=1727659998, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;tts-1-hd-1106&#x27;, created=1699053533, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-realtime-preview-2024-10-01&#x27;, created=1727131766, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4&#x27;, created=1687882411, object=&#x27;model&#x27;, owned_by=&#x27;openai&#x27;),
- Model(id=&#x27;gpt-4-0613&#x27;, created=1686588896, object=&#x27;model&#x27;, owned_by=&#x27;openai&#x27;),
- Model(id=&#x27;text-embedding-ada-002&#x27;, created=1671217299, object=&#x27;model&#x27;, owned_by=&#x27;openai-internal&#x27;),
- Model(id=&#x27;text-embedding-3-small&#x27;, created=1705948997, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;tts-1-hd&#x27;, created=1699046015, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4-turbo&#x27;, created=1712361441, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4-turbo-2024-04-09&#x27;, created=1712601677, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-3.5-turbo-1106&#x27;, created=1698959748, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-3.5-turbo-instruct&#x27;, created=1692901427, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-audio-preview&#x27;, created=1727460443, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-4o-audio-preview-2024-10-01&#x27;, created=1727389042, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;tts-1&#x27;, created=1681940951, object=&#x27;model&#x27;, owned_by=&#x27;openai-internal&#x27;),
- Model(id=&#x27;tts-1-1106&#x27;, created=1699053241, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;gpt-3.5-turbo-instruct-0914&#x27;, created=1694122472, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;),
- Model(id=&#x27;chatgpt-4o-latest&#x27;, created=1723515131, object=&#x27;model&#x27;, owned_by=&#x27;system&#x27;)]
+[Model(id='gpt-4o-2024-08-06', created=1722814719, object='model', owned_by='system'),
+ Model(id='gpt-4o', created=1715367049, object='model', owned_by='system'),
+ Model(id='o1-mini-2024-09-12', created=1725648979, object='model', owned_by='system'),
+ Model(id='dall-e-2', created=1698798177, object='model', owned_by='system'),
+ Model(id='gpt-4-1106-preview', created=1698957206, object='model', owned_by='system'),
+ Model(id='gpt-3.5-turbo', created=1677610602, object='model', owned_by='openai'),
+ Model(id='text-embedding-3-large', created=1705953180, object='model', owned_by='system'),
+ Model(id='gpt-3.5-turbo-0125', created=1706048358, object='model', owned_by='system'),
+ Model(id='babbage-002', created=1692634615, object='model', owned_by='system'),
+ Model(id='gpt-4o-2024-11-20', created=1731975040, object='model', owned_by='system'),
+ Model(id='gpt-4-turbo-preview', created=1706037777, object='model', owned_by='system'),
+ Model(id='davinci-002', created=1692634301, object='model', owned_by='system'),
+ Model(id='gpt-4-0125-preview', created=1706037612, object='model', owned_by='system'),
+ Model(id='whisper-1', created=1677532384, object='model', owned_by='openai-internal'),
+ Model(id='gpt-4o-mini', created=1721172741, object='model', owned_by='system'),
+ Model(id='dall-e-3', created=1698785189, object='model', owned_by='system'),
+ Model(id='gpt-4o-mini-2024-07-18', created=1721172717, object='model', owned_by='system'),
+ Model(id='o1-preview', created=1725648897, object='model', owned_by='system'),
+ Model(id='gpt-3.5-turbo-16k', created=1683758102, object='model', owned_by='openai-internal'),
+ Model(id='o1-preview-2024-09-12', created=1725648865, object='model', owned_by='system'),
+ Model(id='o1-mini', created=1725649008, object='model', owned_by='system'),
+ Model(id='gpt-4o-2024-05-13', created=1715368132, object='model', owned_by='system'),
+ Model(id='gpt-4o-realtime-preview', created=1727659998, object='model', owned_by='system'),
+ Model(id='tts-1-hd-1106', created=1699053533, object='model', owned_by='system'),
+ Model(id='gpt-4o-realtime-preview-2024-10-01', created=1727131766, object='model', owned_by='system'),
+ Model(id='gpt-4', created=1687882411, object='model', owned_by='openai'),
+ Model(id='gpt-4-0613', created=1686588896, object='model', owned_by='openai'),
+ Model(id='text-embedding-ada-002', created=1671217299, object='model', owned_by='openai-internal'),
+ Model(id='text-embedding-3-small', created=1705948997, object='model', owned_by='system'),
+ Model(id='tts-1-hd', created=1699046015, object='model', owned_by='system'),
+ Model(id='gpt-4-turbo', created=1712361441, object='model', owned_by='system'),
+ Model(id='gpt-4-turbo-2024-04-09', created=1712601677, object='model', owned_by='system'),
+ Model(id='gpt-3.5-turbo-1106', created=1698959748, object='model', owned_by='system'),
+ Model(id='gpt-3.5-turbo-instruct', created=1692901427, object='model', owned_by='system'),
+ Model(id='gpt-4o-audio-preview', created=1727460443, object='model', owned_by='system'),
+ Model(id='gpt-4o-audio-preview-2024-10-01', created=1727389042, object='model', owned_by='system'),
+ Model(id='tts-1', created=1681940951, object='model', owned_by='openai-internal'),
+ Model(id='tts-1-1106', created=1699053241, object='model', owned_by='system'),
+ Model(id='gpt-3.5-turbo-instruct-0914', created=1694122472, object='model', owned_by='system'),
+ Model(id='chatgpt-4o-latest', created=1723515131, object='model', owned_by='system')]
 ```
 
-#### 2.GraphRAG索引Indexing过程执行
+## 2. GraphRAG 索引 Indexing 过程执行
 
-一切准备就绪后，即可开始执行GraphRAG索引过程。
+一切准备就绪后，即可开始执行 GraphRAG 索引过程。
 
-+   Step 7.借助GraphRAG脚本自动执行indexing
+### Step 7. 借助 GraphRAG 脚本自动执行 indexing
 
 ```
 !graphrag index --root ./openl
 ```
 
+
+
 ```
-[2KLogging enabled at [35m/root/autodl-tmp/graphrag/openl/logs/[0m[95mindexing-engine.log[0m
-[2K⠙ GraphRAG Indexer 
-[2K[1A[2K⠙ GraphRAG Indexer e.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-[2K[1A[2K[1A[2K🚀 [32mcreate_base_text_units[0m
-⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-[2K[1A[2K[1A[2KEmpty DataFrame
-Columns: [1m[[0m[1m][0m
-Index: [1m[[0m[1m][0m
-⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_documents[0m
-⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-[2K[1A[2K[1A[2K[1A[2K                                 id  [33m...[0m                                      
-text_unit_ids
-[1;36m0[0m  c546fa97b72c8b72b7efb0c1ac45cb1d  [33m...[0m  [1m[[0m0653a697b64dd8c029503ffc22af9ec3, 
-b1fce21a45f[33m...[0m
+Logging enabled at /root/autodl-tmp/graphrag/openl/logs/indexing-engine.log
 
-[1m[[0m[1;36m1[0m rows x [1;36m5[0m columns[1m][0m
-⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer ━[0m [35m  0%[0m [36m-:--:--[0m [33m0:00:00[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠹ GraphRAG Indexer ━[0m [35m  0%[0m [36m-:--:--[0m [33m0:00:01[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer ━[0m [35m  0%[0m [36m-:--:--[0m [33m0:00:02[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer [90m━━━━━━━━━━━━━━━[0m [35m 25%[0m [36m-:--:--[0m [33m0:00:03[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer [0m[90m━━━━━━━━━━[0m [35m 50%[0m [36m0:00:01[0m [33m0:00:03[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer [0m[90m━━━━━━━━━━[0m [35m 50%[0m [36m0:00:01[0m [33m0:00:03[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer [0m[90m━━━━━━━━━━[0m [35m 50%[0m [36m0:00:01[0m [33m0:00:04[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer [0m[90m━━━━━━━━━━[0m [35m 50%[0m [36m0:00:01[0m [33m0:00:05[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer [0m[90m━━━━━━━━━━[0m [35m 50%[0m [36m0:00:01[0m [33m0:00:06[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer [91m╸[0m[90m━━━━━[0m [35m 75%[0m [36m0:00:03[0m [33m0:00:07[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠇ GraphRAG Indexer [91m╸[0m[90m━━━━━[0m [35m 75%[0m [36m0:00:03[0m [33m0:00:07[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer [91m╸[0m[90m━━━━━[0m [35m 75%[0m [36m0:00:03[0m [33m0:00:08[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer [91m╸[0m[90m━━━━━[0m [35m 75%[0m [36m0:00:03[0m [33m0:00:09[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-└── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠇ GraphRAG Indexer [91m╸[0m[90m━━━━━[0m [35m 75%[0m [36m0:00:03[0m [33m0:00:10[0m
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_base_entity_graph[0m
-⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2KEmpty DataFrame
-Columns: [1m[[0m[1m][0m
-Index: [1m[[0m[1m][0m
-⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_entities[0m
-⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K                                  id  [33m...[0m                                      
-text_unit_ids
-[1;36m0[0m   22113170e6c742ba940314e15c401dc1  [33m...[0m  [1m[[0m0653a697b64dd8c029503ffc22af9ec3, 
-08530861b09[33m...[0m
-[1;36m1[0m   23e8813975cc43d7921375da3c781c3c  [33m...[0m  [1m[[0m0653a697b64dd8c029503ffc22af9ec3, 
-08530861b09[33m...[0m
-[1;36m2[0m   3c4aa4fadb5c4b3f9244a7bb00598cab  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m3[0m   0ebac52d90264cef8bf563ffe894bbe5  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m4[0m   d45fe94d4f2840b48ebd2564ddc85e56  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m5[0m   8979a4d40b04416a91f084e057be0c98  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m6[0m   5a57bda8d0534c43a2591fde9519ef2e  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m7[0m   9ac71842fd5b47628a2cc43bb13b1290  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m8[0m   71c5eabc1ce9490f85f9357f6b7f309b  [33m...[0m                 
-[1m[[0m08530861b09098077a0ebcd53ab3ae62[1m][0m
-[1;36m9[0m   de19324beea8438497852259c73c452a  [33m...[0m                 
-[1m[[0m08530861b09098077a0ebcd53ab3ae62[1m][0m
-[1;36m10[0m  67f0629e10054ba49b2d1bfd08985927  [33m...[0m                 
-[1m[[0m08530861b09098077a0ebcd53ab3ae62[1m][0m
+GraphRAG Indexer
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+🚀 create_base_text_units
 
-[1m[[0m[1;36m11[0m rows x [1;36m6[0m columns[1m][0m
-⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_nodes[0m
-⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K                                  id  human_readable_id  [33m...[0m  x  y
-[1;36m0[0m   22113170e6c742ba940314e15c401dc1                  [1;36m0[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m1[0m   23e8813975cc43d7921375da3c781c3c                  [1;36m1[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m2[0m   3c4aa4fadb5c4b3f9244a7bb00598cab                  [1;36m2[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m3[0m   0ebac52d90264cef8bf563ffe894bbe5                  [1;36m3[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m4[0m   d45fe94d4f2840b48ebd2564ddc85e56                  [1;36m4[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m5[0m   8979a4d40b04416a91f084e057be0c98                  [1;36m5[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m6[0m   5a57bda8d0534c43a2591fde9519ef2e                  [1;36m6[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m7[0m   9ac71842fd5b47628a2cc43bb13b1290                  [1;36m7[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m8[0m   71c5eabc1ce9490f85f9357f6b7f309b                  [1;36m8[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m9[0m   de19324beea8438497852259c73c452a                  [1;36m9[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m10[0m  67f0629e10054ba49b2d1bfd08985927                 [1;36m10[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m11[0m  22113170e6c742ba940314e15c401dc1                  [1;36m0[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m12[0m  23e8813975cc43d7921375da3c781c3c                  [1;36m1[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m13[0m  3c4aa4fadb5c4b3f9244a7bb00598cab                  [1;36m2[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m14[0m  0ebac52d90264cef8bf563ffe894bbe5                  [1;36m3[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m15[0m  d45fe94d4f2840b48ebd2564ddc85e56                  [1;36m4[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m16[0m  8979a4d40b04416a91f084e057be0c98                  [1;36m5[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m17[0m  5a57bda8d0534c43a2591fde9519ef2e                  [1;36m6[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m18[0m  9ac71842fd5b47628a2cc43bb13b1290                  [1;36m7[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m19[0m  71c5eabc1ce9490f85f9357f6b7f309b                  [1;36m8[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m20[0m  de19324beea8438497852259c73c452a                  [1;36m9[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
-[1;36m21[0m  67f0629e10054ba49b2d1bfd08985927                 [1;36m10[0m  [33m...[0m  [1;36m0[0m  [1;36m0[0m
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+Empty DataFrame
+Columns: []
+Index: []
 
-[1m[[0m[1;36m22[0m rows x [1;36m8[0m columns[1m][0m
-⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_communities[0m
-⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K                                     id  human_readable_id  [33m...[0m      period  
-size
-[1;36m0[0m  [93m17bfead0-7ccc-438a-922b-5cd6deea39ea[0m                  [1;36m0[0m  [33m...[0m  [1;36m2024[0m-[1;36m11[0m-[1;36m28[0m    
-[1;36m11[0m
-[1;36m1[0m  [93m8eb758a5-95a9-4e42-93e2-5ac1adff8a42[0m                  [1;36m1[0m  [33m...[0m  [1;36m2024[0m-[1;36m11[0m-[1;36m28[0m     
-[1;36m7[0m
-[1;36m2[0m  [93m7b75cf95-4504-47a7-8b11-7c90fe66109b[0m                  [1;36m2[0m  [33m...[0m  [1;36m2024[0m-[1;36m11[0m-[1;36m28[0m     
-[1;36m4[0m
+🚀 create_final_documents
 
-[1m[[0m[1;36m3[0m rows x [1;36m10[0m columns[1m][0m
-⠹ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_relationships[0m
-⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K                                 id  [33m...[0m                                      
-text_unit_ids
-[1;36m0[0m  813887b9c3f54445832a00a8d1b47264  [33m...[0m  [1m[[0m0653a697b64dd8c029503ffc22af9ec3, 
-08530861b09[33m...[0m
-[1;36m1[0m  16f369775666497b8ece38456683313e  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m2[0m  6e17fd4dce3a432195f428ec5287c71d  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m3[0m  121cc7bef78848b69ec89e082cb86a54  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m4[0m  294c8d020d0b4b389070c7c1959f1cc7  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m5[0m  6110c0c995e34a3896bbc4a0274ecc6f  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m6[0m  188cab571d5c4b0197172dd2deab34a5  [33m...[0m                 
-[1m[[0m0653a697b64dd8c029503ffc22af9ec3[1m][0m
-[1;36m7[0m  4979732df79645ed88eea6e957cab2c7  [33m...[0m                 
-[1m[[0m08530861b09098077a0ebcd53ab3ae62[1m][0m
-[1;36m8[0m  8a02e132514440d99006833312db5a5c  [33m...[0m                 
-[1m[[0m08530861b09098077a0ebcd53ab3ae62[1m][0m
-[1;36m9[0m  3584cb0ca80a463c8e658b17bc7ef254  [33m...[0m                 
-[1m[[0m08530861b09098077a0ebcd53ab3ae62[1m][0m
+                                 id  ...                                       text_unit_ids
+0  c546fa97b72c8b72b7efb0c1ac45cb1d  ...  [0653a697b64dd8c029503ffc22af9ec3, b1fce21a45f...
+[1 rows x 5 columns]
 
-[1m[[0m[1;36m10[0m rows x [1;36m8[0m columns[1m][0m
-⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_text_units[0m
-⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K                                 id  [33m...[0m                                   
-relationship_ids
-[1;36m0[0m  0653a697b64dd8c029503ffc22af9ec3  [33m...[0m  [1m[[0m813887b9c3f54445832a00a8d1b47264, 
-16f36977566[33m...[0m
-[1;36m1[0m  b1fce21a45f01c5ef14bafc9fe3bab1d  [33m...[0m                                        
-[3;35mNone[0m
-[1;36m2[0m  08530861b09098077a0ebcd53ab3ae62  [33m...[0m  [1m[[0m813887b9c3f54445832a00a8d1b47264, 
-4979732df79[33m...[0m
-[1;36m3[0m  e97cc7c63047f6471b4beac2f375eae0  [33m...[0m                                        
-[3;35mNone[0m
+└── create_base_entity_graph
+🚀 create_base_entity_graph
 
-[1m[[0m[1;36m4[0m rows x [1;36m7[0m columns[1m][0m
-⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
 ├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠇ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠹ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠇ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠧ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠇ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠹ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mcreate_final_community_reports[0m
-⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K                                     id  human_readable_id  [33m...[0m      period  
-size
-[1;36m0[0m  [93m100a5af4-6579-4fdc-afba-78565d6fe062[0m                  [1;36m1[0m  [33m...[0m  [1;36m2024[0m-[1;36m11[0m-[1;36m28[0m     
-[1;36m7[0m
-[1;36m1[0m  [93m0e54e2ef-44ef-4bfa-8a8a-fd06f79ed338[0m                  [1;36m2[0m  [33m...[0m  [1;36m2024[0m-[1;36m11[0m-[1;36m28[0m     
-[1;36m4[0m
-[1;36m2[0m  [93me527793c-b726-41be-892f-979334ae5073[0m                  [1;36m0[0m  [33m...[0m  [1;36m2024[0m-[1;36m11[0m-[1;36m28[0m    
-[1;36m11[0m
+🚀 create_final_entities
 
-[1m[[0m[1;36m3[0m rows x [1;36m13[0m columns[1m][0m
-⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+                                  id  ...                                       text_unit_ids
+0   22113170e6c742ba940314e15c401dc1  ...  [0653a697b64dd8c029503ffc22af9ec3, 08530861b09...
+1   23e8813975cc43d7921375da3c781c3c  ...  [0653a697b64dd8c029503ffc22af9ec3, 08530861b09...
+2   3c4aa4fadb5c4b3f9244a7bb00598cab  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+3   0ebac52d90264cef8bf563ffe894bbe5  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+4   d45fe94d4f2840b48ebd2564ddc85e56  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+5   8979a4d40b04416a91f084e057be0c98  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+6   5a57bda8d0534c43a2591fde9519ef2e  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+7   9ac71842fd5b47628a2cc43bb13b1290  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+8   71c5eabc1ce9490f85f9357f6b7f309b  ...                  [08530861b09098077a0ebcd53ab3ae62]
+9   de19324beea8438497852259c73c452a  ...                  [08530861b09098077a0ebcd53ab3ae62]
+10  67f0629e10054ba49b2d1bfd08985927  ...                  [08530861b09098077a0ebcd53ab3ae62]
+[11 rows x 6 columns]
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+🚀 create_final_nodes
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+                                  id  human_readable_id  ...  x  y
+0   22113170e6c742ba940314e15c401dc1                  0  ...  0  0
+1   23e8813975cc43d7921375da3c781c3c                  1  ...  0  0
+2   3c4aa4fadb5c4b3f9244a7bb00598cab                  2  ...  0  0
+3   0ebac52d90264cef8bf563ffe894bbe5                  3  ...  0  0
+4   d45fe94d4f2840b48ebd2564ddc85e56                  4  ...  0  0
+5   8979a4d40b04416a91f084e057be0c98                  5  ...  0  0
+6   5a57bda8d0534c43a2591fde9519ef2e                  6  ...  0  0
+7   9ac71842fd5b47628a2cc43bb13b1290                  7  ...  0  0
+8   71c5eabc1ce9490f85f9357f6b7f309b                  8  ...  0  0
+9   de19324beea8438497852259c73c452a                  9  ...  0  0
+10  67f0629e10054ba49b2d1bfd08985927                 10  ...  0  0
+11  22113170e6c742ba940314e15c401dc1                  0  ...  0  0
+12  23e8813975cc43d7921375da3c781c3c                  1  ...  0  0
+13  3c4aa4fadb5c4b3f9244a7bb00598cab                  2  ...  0  0
+14  0ebac52d90264cef8bf563ffe894bbe5                  3  ...  0  0
+15  d45fe94d4f2840b48ebd2564ddc85e56                  4  ...  0  0
+16  8979a4d40b04416a91f084e057be0c98                  5  ...  0  0
+17  5a57bda8d0534c43a2591fde9519ef2e                  6  ...  0  0
+18  9ac71842fd5b47628a2cc43bb13b1290                  7  ...  0  0
+19  71c5eabc1ce9490f85f9357f6b7f309b                  8  ...  0  0
+20  de19324beea8438497852259c73c452a                  9  ...  0  0
+21  67f0629e10054ba49b2d1bfd08985927                 10  ...  0  0
+[22 rows x 8 columns]
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+├── create_final_nodes
+🚀 create_final_communities
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+├── create_final_nodes
+                                     id  human_readable_id  ...      period   size
+0  17bfead0-7ccc-438a-922b-5cd6deea39ea                  0  ...  2024-11-28     11
+1  8eb758a5-95a9-4e42-93e2-5ac1adff8a42                  1  ...  2024-11-28      7
+2  7b75cf95-4504-47a7-8b11-7c90fe66109b                  2  ...  2024-11-28      4
+[3 rows x 10 columns]
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+├── create_final_nodes
+├── create_final_communities
+🚀 create_final_relationships
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+├── create_final_nodes
+├── create_final_communities
+                                 id  ...                                       text_unit_ids
+0  813887b9c3f54445832a00a8d1b47264  ...  [0653a697b64dd8c029503ffc22af9ec3, 08530861b09...
+1  16f369775666497b8ece38456683313e  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+2  6e17fd4dce3a432195f428ec5287c71d  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+3  121cc7bef78848b69ec89e082cb86a54  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+4  294c8d020d0b4b389070c7c1959f1cc7  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+5  6110c0c995e34a3896bbc4a0274ecc6f  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+6  188cab571d5c4b0197172dd2deab34a5  ...                  [0653a697b64dd8c029503ffc22af9ec3]
+7  4979732df79645ed88eea6e957cab2c7  ...                  [08530861b09098077a0ebcd53ab3ae62]
+8  8a02e132514440d99006833312db5a5c  ...                  [08530861b09098077a0ebcd53ab3ae62]
+9  3584cb0ca80a463c8e658b17bc7ef254  ...                  [08530861b09098077a0ebcd53ab3ae62]
+[10 rows x 8 columns]
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+├── create_final_nodes
+├── create_final_communities
+├── create_final_relationships
+🚀 create_final_text_units
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
+├── create_base_text_units
+├── create_final_documents
+├── create_base_entity_graph
+├── create_final_entities
+├── create_final_nodes
+├── create_final_communities
+├── create_final_relationships
+                                 id  ...                                    relationship_ids
+0  0653a697b64dd8c029503ffc22af9ec3  ...  [813887b9c3f54445832a00a8d1b47264, 16f36977566...
+1  b1fce21a45f01c5ef14bafc9fe3bab1d  ...                                         None
+2  08530861b09098077a0ebcd53ab3ae62  ...  [813887b9c3f54445832a00a8d1b47264, 4979732df79...
+3  e97cc7c63047f6471b4beac2f375eae0  ...                                         None
+[4 rows x 7 columns]
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
 ├── create_base_entity_graph
@@ -1483,8 +860,9 @@ size
 ├── create_final_communities
 ├── create_final_relationships
 ├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+🚀 create_final_community_reports
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
 ├── create_base_entity_graph
@@ -1493,19 +871,13 @@ size
 ├── create_final_communities
 ├── create_final_relationships
 ├── create_final_text_units
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠴ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+                                     id  human_readable_id  ...      period   size
+0  100a5af4-6579-4fdc-afba-78565d6fe062                  1  ...  2024-11-28      7
+1  0e54e2ef-44ef-4bfa-8a8a-fd06f79ed338                  2  ...  2024-11-28      4
+2  e527793c-b726-41be-892f-979334ae5073                  0  ...  2024-11-28     11
+[3 rows x 13 columns]
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
 ├── create_base_entity_graph
@@ -1516,8 +888,12 @@ size
 ├── create_final_text_units
 ├── create_final_community_reports
 └── generate_text_embeddings
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠇ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+[2024-11-28T08:20:05Z  WARN  lance::dataset] No existing dataset at /root/autodl-tmp/graphrag/openl/output/lancedb/default-text_unit-text.lance, it will be created
+[2024-11-28T08:20:08Z  WARN  lance::dataset] No existing dataset at /root/autodl-tmp/graphrag/openl/output/lancedb/default-entity-description.lance, it will be created
+[2024-11-28T08:20:09Z  WARN  lance::dataset] No existing dataset at /root/autodl-tmp/graphrag/openl/output/lancedb/default-community-full_content.lance, it will be created
+🚀 generate_text_embeddings
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
 ├── create_base_entity_graph
@@ -1528,8 +904,11 @@ size
 ├── create_final_text_units
 ├── create_final_community_reports
 └── generate_text_embeddings
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
+Empty DataFrame
+Columns: []
+Index: []
+
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered)
 ├── create_base_text_units
 ├── create_final_documents
 ├── create_base_entity_graph
@@ -1540,235 +919,102 @@ size
 ├── create_final_text_units
 ├── create_final_community_reports
 └── generate_text_embeddings
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠙ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-└── generate_text_embeddings[0m[38;5;8m[[0m2024-11-28T08:20:05Z [0m[33mWARN [0m lance::dataset[0m[38;5;8m][0m No existing dataset at /root/autodl-tmp/graphrag/openl/output/lancedb/default-text_unit-text.lance, it will be created
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠸ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠦ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠼ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-└── generate_text_embeddings[0m[38;5;8m[[0m2024-11-28T08:20:08Z [0m[33mWARN [0m lance::dataset[0m[38;5;8m][0m No existing dataset at /root/autodl-tmp/graphrag/openl/output/lancedb/default-entity-description.lance, it will be created
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠹ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠏ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-└── generate_text_embeddings[0m[38;5;8m[[0m2024-11-28T08:20:09Z [0m[33mWARN [0m lance::dataset[0m[38;5;8m][0m No existing dataset at /root/autodl-tmp/graphrag/openl/output/lancedb/default-community-full_content.lance, it will be created
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K🚀 [32mgenerate_text_embeddings[0m
-⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KEmpty DataFrame
-Columns: [1m[[0m[1m][0m
-Index: [1m[[0m[1m][0m
-⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K⠋ GraphRAG Indexer 
-├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) [90m━[0m [35m100%[0m [36m…[0m [33m0…[0m
-├── create_base_text_units
-├── create_final_documents
-├── create_base_entity_graph
-├── create_final_entities
-├── create_final_nodes
-├── create_final_communities
-├── create_final_relationships
-├── create_final_text_units
-├── create_final_community_reports
-└── generate_text_embeddings
-[?25h🚀 [32mAll workflows completed successfully.[0m
+🚀 All workflows completed successfully.
 ```
+
+
+
+# GraphRAG 知识图谱输出结构
 
 该命令也可以在终端内运行，结果如图：
 
 ![](img/1c27ba097c132fee058bdaed4bfc2cad.png)
 
-运行结束后，各知识图谱相关数据集都保存在output文件夹中：
+运行结束后，各知识图谱相关数据集都保存在`output`文件夹中：
 
 ![](img/748b72dc25ecaffee275235476dbd34f.png)
 
 ![](img/c93d6c14d264dd0efe358bff9760b077.png)
 
-Graph**RAG在索引阶**段构建的知识图谱的确是以 Parquet 格式保存的！**索引**阶**段的**输**出文件中**，P**arqu**et 文件存储了知识图谱的各个核心组成部分，例如实体、关系、社区信息以及文本单元等。这些文件共同组成了一个完整的知识图谱。
+`GraphRAG`在索引阶段构建的知识图谱的确是以 `Parquet` 格式保存的！索引阶段的输出文件中，`Parquet` 文件存储了知识图谱的各个核心组成部分，例如实体、关系、社区信息以及文本单元等。这些文件共同组成了一个完整的知识图谱。
 
-索引阶段的主要输出内容如下：
+## 索引阶段主要输出
 
-1.  实体表（Nodes Table）
+1. 实体表（Nodes Table）
 
-+   **文件名**：create_final_nodes.parquet
++ 文件名：`create_final_nodes.parquet`
++ 内容：知识图谱中的实体节点（例如：人、地点、组织）。
++ 包含信息：
++ 实体的名称（如 `"John Doe"`）。
++ 实体的类别（如 `"PERSON"`, `"ORGANIZATION"`, `"LOCATION"`）。
++ 与社区相关的信息（如实体所属的社区）。
++ 实体的度数（`degree`），表示该实体在图谱中的连接数。
 
-+   **内容**：知识图谱中的实体节点（例如：人、地点、组织）。
+1. 关系表（Relationships Table）
 
-+   **包含信息**：
++ 文件名：`create_final_relationships.parquet`
++ 内容：知识图谱中实体之间的关系（即图谱的边）。
++ 包含信息：
++ 两个实体之间的关系描述（例如 `"works for"`, `"lives in"`）。
++ 关系的强度（数值化，用于衡量关系的显著性或重要性）。
 
-+   实体的名称（如 "John Doe"）。
+1. 嵌入向量表（Entity Embedding Table）
 
-+   实体的类别（如 "PERSON", "ORGANIZATION", "LOCATION"）。
++ 文件名：`create_final_entities.parquet`
++ 内容：实体的语义嵌入，用于表示实体的语义信息。
++ 用途：支持语义搜索（通过嵌入计算实体之间的相似性）。
 
-+   与社区相关的信息（如实体所属的社区）。
+1. 社区报告表（Community Reports Table）
 
-+   实体的度数（degree），表示该实体在图谱中的连接数。
++ 文件名：`create_final_community_reports.parquet`
++ 内容：社区的摘要信息。
++ 用途：支持全局搜索（通过社区信息回答关于数据集整体的问题）。
 
-1.  关系表（Relationships Table）
+1. 文本单元表（Text Units Table）
 
-+   **文件名**：create_final_relationships.parquet
++ 文件名：`create_final_text_units.parquet`
++ 内容：被切分的原始文本单元（`TextUnits`）。
++ 用途：将知识图谱和原始文本结合，为 `LLM` 提供上下文支持。
 
-+   **内容**：知识图谱中实体之间的关系（即图谱的边）。
+1. 社区表（Community Table）
 
-+   **包含信息**：
++ 文件名：`create_final_Communities.parquet`
++ 内容：每个社区基本情况。
 
-+   两个实体之间的关系描述（例如 "works for", "lives in"）。
+1. 文件表（Documents Table）
 
-+   关系的强度（数值化，用于衡量关系的显著性或重要性）。
-
-1.  嵌入向量表（Entity Embedding Table）
-
-+   **文件名**：create_final_entities.parquet
-
-+   **内容**：实体的语义嵌入，用于表示实体的语义信息。
-
-+   **用途**：支持语义搜索（通过嵌入计算实体之间的相似性）。
-
-1.  社区报告表（Community Reports Table）
-
-+   **文件名**：create_final_community_reports.parquet
-
-+   **内容**：社区的摘要信息。
-
-+   **用途**：支持全局搜索（通过社区信息回答关于数据集整体的问题）。
-
-1.  文本单元表（Text Units Table）
-
-+   **文件名**：create_final_text_units.parquet
-
-+   **内容**：被切分的原始文本单元（TextUnits）。
-
-+   **用途**：将知识图谱和原始文本结合，为 LLM 提供上下文支持。
-
-1.  社区表（Community Table）
-
-+   **文件名**：create_final_Communities.parquet
-
-+   **内容**：每个社区基本情况。
-
-1.  文件表（Documents Table）
-
-+   **文件名**：create_final_documents.parquet
-
-+   **内容**：用于记录所有参与知识图谱构建的文件情况。
++ 文件名：`create_final_documents.parquet`
++ 内容：用于记录所有参与知识图谱构建的文件情况。
 
 > 为什么用 Parquet 格式保存知识图谱？
 
-1.  **高效存储**：
+## 为何使用 Parquet 格式
 
-+   知识图谱中的数据通常是结构化的，包含大量的实体、关系、嵌入等。
+1. 高效存储：
 
-+   Parquet 的列式存储能够显著减少磁盘占用，同时提高读取效率。
++ 知识图谱中的数据通常是结构化的，包含大量的实体、关系、嵌入等。
++ `Parquet` 的列式存储能够显著减少磁盘占用，同时提高读取效率。
 
-1.  **快速读取**：
+1. 快速读取：
 
-+   查询阶段需要快速加载实体、关系、嵌入等数据到内存中。
++ 查询阶段需要快速加载实体、关系、嵌入等数据到内存中。
++ `Parquet` 支持按需加载所需的列，避免了不必要的数据读取。
 
-+   Parquet 支持按需加载所需的列，避免了不必要的数据读取。
+1. 兼容性好：
 
-1.  **兼容性好**：
++ `Parquet` 是一个开放的标准，广泛支持各种数据处理工具（如 `Pandas`、`Spark`、`Hadoop`）。
++ `GraphRAG` 可以在 `Python` 中使用 `Pandas` 或其他工具轻松读取这些文件。
 
-+   Parquet 是一个开放的标准，广泛支持各种数据处理工具（如 Pandas、Spark、Hadoop）。
+## 3. 查看知识图谱相关表格
 
-+   GraphRAG 可以在 Python 中使用 Pandas 或其他工具轻松读取这些文件。
-
-#### 3.查看知识图谱相关表格
-
-```
+```python
 import pandas as pd
 ```
 
-+   文件表（Documents Table）
+文件表（Documents Table）
 
-```
-documents_df = pd.read_parquet(&quot;./openl/output/create_final_documents.parquet&quot;)
+```python
+documents_df = pd.read_parquet("./openl/output/create_final_documents.parquet")
 documents_df
 ```
 
@@ -1776,10 +1022,10 @@ documents_df
 | --- | --- | --- | --- | --- | --- |
 | 0 | 2ef33abc7acb307f736e46c7f20fe87568b4e9bd6311cc... | 1 | ID3、C4.5决策树的建模流程.txt | Lesson 8.3 ID3、C4.5决策树的建模流程\nID3和C4.5作为的经典决策树算... | [4ba5acd798a419708cfe5cc86f1fcb6df907a20b1992a... |
 
-+   文本单元表（TEXT UNIT Table）
+文本单元表（TEXT UNIT Table）
 
-```
-text_unit_df = pd.read_parquet(&quot;./openl/output/create_final_text_units.parquet&quot;)
+```python
+text_unit_df = pd.read_parquet("./openl/output/create_final_text_units.parquet")
 text_unit_df
 ```
 
@@ -1790,10 +1036,10 @@ text_unit_df
 | 2 | 1141affdc56bf8f5092b950b57febdedb884673ec6b23d... | 3 | 4.5决策树的基本建模流程\n作为ID3的改进版算法，C4.5在ID3的基础上进行了三个方面... | 1200 | [2ef33abc7acb307f736e46c7f20fe87568b4e9bd6311c... | [35bbb43d-b9f4-4a4d-bd53-7059efc44056, f1535df... | [651dfca9-7a44-4d11-aed2-c00ce76f936d, 3ad66ad... |
 | 3 | b5df95b6ec7e3aaea3f67db4914e1b2e874f3ac77fc3c8... | 4 | 集划分。\n\nC4.5的连续变量处理方法\nC4.5允许带入连续变量进行建模，并且围绕连续... | 558 | [2ef33abc7acb307f736e46c7f20fe87568b4e9bd6311c... | [35bbb43d-b9f4-4a4d-bd53-7059efc44056, f1535df... | [651dfca9-7a44-4d11-aed2-c00ce76f936d, 9ddcf83... |
 
-+   实体嵌入表（ENTITIES Table）
+实体嵌入表（ENTITIES Table）
 
-```
-entity_embedding_df = pd.read_parquet(&quot;./openl/output/create_final_entities.parquet&quot;)
+```python
+entity_embedding_df = pd.read_parquet("./openl/output/create_final_entities.parquet")
 entity_embedding_df.head()
 ```
 
@@ -1805,10 +1051,10 @@ entity_embedding_df.head()
 | 3 | b3651a61-5626-4162-9f1e-432e6d0e9fe5 | 3 | SKLEARN | ORGANIZATION | SKLEARN, also known as Scikit-learn, is a wide... | [4ba5acd798a419708cfe5cc86f1fcb6df907a20b1992a... |
 | 4 | c6f4c391-4f5a-4d99-b8d5-6d4b24f43cc1 | 4 | NUMPY | ORGANIZATION | NumPy is a Python library used for numerical c... | [4ba5acd798a419708cfe5cc86f1fcb6df907a20b1992a... |
 
-+   实体表（Nodes Table）
+实体表（Nodes Table）
 
-```
-entity_df = pd.read_parquet(&quot;./openl/output/create_final_nodes.parquet&quot;)
+```python
+entity_df = pd.read_parquet("./openl/output/create_final_nodes.parquet")
 entity_df.head()
 ```
 
@@ -1820,7 +1066,7 @@ entity_df.head()
 | 3 | b3651a61-5626-4162-9f1e-432e6d0e9fe5 | 3 | SKLEARN | 0 | 0 | 3 | 0 | 0 |
 | 4 | c6f4c391-4f5a-4d99-b8d5-6d4b24f43cc1 | 4 | NUMPY | 2 | 0 | 4 | 0 | 0 |
 
-```
+```python
 entity_df
 ```
 
@@ -1842,8 +1088,8 @@ entity_df
 
 关系表（Relationships Table）
 
-```
-relationships_df = pd.read_parquet(&quot;./openl/output/create_final_relationships.parquet&quot;)
+```python
+relationships_df = pd.read_parquet("./openl/output/create_final_relationships.parquet")
 relationships_df.head()
 ```
 
@@ -1857,167 +1103,127 @@ relationships_df.head()
 
 社区表（Community Table）
 
+
+
 ```
-community_df = pd.read_parquet(&quot;./openl/output/create_final_communities.parquet&quot;)
+community_df = pd.read_parquet("./openl/output/create_final_communities.parquet")
 community_df.head()
 ```
 
 |  | id | human_readable_id | community | parent | level | title | entity_ids | relationship_ids | text_unit_ids | period | size |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | b73809f5-60cc-4a86-a52b-77c8954460ea | 0 | 0 | -1 | 0 | Community 0 | [a0684f1a-0a87-45dc-b240-55b3d04f1961, 9afdfaa... | [2858cef2-8514-4bb9-a8fc-aaf4249f2a62, 2e7eee3... | [4ba5acd798a419708cfe5cc86f1fcb6df907a20b1992a... | 2025-01-08 | 7 |
 | 1 | d3467630-82c0-48da-9ef2-9d2aa65fd77f | 1 | 1 | -1 | 0 | Community 1 | [f1535df1-c0e1-4bd4-9b18-49b05918a0aa, ed5c495... | [6304470a-dfd0-4a9e-9232-dc6446864dd4, 7640403... | [1141affdc56bf8f5092b950b57febdedb884673ec6b23... | 2025-01-08 | 4 |
 | 2 | 2750b356-bf1c-4985-bd66-240627d193fb | 2 | 2 | -1 | 0 | Community 2 | [c6f4c391-4f5a-4d99-b8d5-6d4b24f43cc1, f7e0cfe... | [6307647a-5e6d-4a12-9081-ee72b9b7e3fb] | [4ba5acd798a419708cfe5cc86f1fcb6df907a20b1992a... | 2025-01-08 | 2 |
 
 ```
-community_report_df = pd.read_parquet(&quot;./openl/output/create_final_community_reports.parquet&quot;)
+community_report_df = pd.read_parquet("./openl/output/create_final_community_reports.parquet")
 community_report_df.head()
 ```
 
 |  | id | human_readable_id | community | parent | level | title | summary | full_content | rank | rank_explanation | findings | full_content_json | period | size |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | c81a85511b7246ac8f93a15783e26855 | 0 | 0 | -1 | 0 | Decision Tree Algorithms: ID3, C4.5, and CART | This community revolves around key decision tr... | # Decision Tree Algorithms: ID3, C4.5, and CAR... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;ID3 is recognized as a class... | {\n &quot;title&quot;: &quot;Decision Tree Algorithms: ID3... | 2025-01-08 | 7 |
-| 1 | 0c4efb0094a64a3abd1a184b1baab37e | 1 | 1 | -1 | 0 | C4.5 and Decision Tree Algorithms | This community is centered around the C4.5 dec... | # C4.5 and Decision Tree Algorithms\n\nThis co... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;C4.5 represents a significan... | {\n &quot;title&quot;: &quot;C4.5 and Decision Tree Algori... | 2025-01-08 | 4 |
-| 2 | 983b4cf9540e4ee7820611ff6f6d33ba | 2 | 2 | -1 | 0 | NumPy and ML_Basic_Function Community | This community is centered around the NumPy li... | # NumPy and ML_Basic_Function Community\n\nThi... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;NumPy is identified as a Pyt... | {\n &quot;title&quot;: &quot;NumPy and ML_Basic_Function C... | 2025-01-08 | 2 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | c81a85511b7246ac8f93a15783e26855 | 0 | 0 | -1 | 0 | Decision Tree Algorithms: ID3, C4.5, and CART | This community revolves around key decision tr... | # Decision Tree Algorithms: ID3, C4.5, and CAR... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'ID3 is recognized as a class... | {\n "title": "Decision Tree Algorithms: ID3... | 2025-01-08 | 7 |
+| 1 | 0c4efb0094a64a3abd1a184b1baab37e | 1 | 1 | -1 | 0 | C4.5 and Decision Tree Algorithms | This community is centered around the C4.5 dec... | # C4.5 and Decision Tree Algorithms\n\nThis co... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'C4.5 represents a significan... | {\n "title": "C4.5 and Decision Tree Algori... | 2025-01-08 | 4 |
+| 2 | 983b4cf9540e4ee7820611ff6f6d33ba | 2 | 2 | -1 | 0 | NumPy and ML_Basic_Function Community | This community is centered around the NumPy li... | # NumPy and ML_Basic_Function Community\n\nThi... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'NumPy is identified as a Pyt... | {\n "title": "NumPy and ML_Basic_Function C... | 2025-01-08 | 2 |
 
-是社区报告（Community Reports） 每一行代表一个社区的摘要信息，包含了与该社区相关的标题、摘要、实体、关系等详细内容。这些信息是 GraphRAG 在索引阶段基于知识图谱生成的高层次语义总结，用于帮助回答关于数据集整体的问题（例如全局搜索）。
+是社区报告（Community Reports）每一行代表一个社区的摘要信息，包含了与该社区相关的标题、摘要、实体、关系等详细内容。这些信息是 GraphRAG 在索引阶段基于知识图谱生成的高层次语义总结，用于帮助回答关于数据集整体的问题（例如全局搜索）。
 
-**表格字段的含义**
+### 表格字段的含义
 
-1.  **id**
+1. `id`
+   + 每个社区的唯一标识符（UUID）。
+   + 这是系统内部生成的，通常用于追踪社区记录。
 
-+   每个社区的唯一标识符（UUID）。
+1. `human_readable_id`
+   + 更容易理解的人类可读 ID（数字化或短标识符）。
+   + 通常用于直观地区分社区。
 
-+   这是系统内部生成的，通常用于追踪社区记录。
+1. `community`
+   + 社区的编号，代表社区的分类或标识。
 
-1.  human_readable_id
+1. `level`
+   + 社区层级（`COMMUNITY_LEVEL`）。
+   + 表示社区的聚类粒度。较低的值表示更抽象的层级，较高的值表示更具体的细分社区。
 
-+   更容易理解的人类可读ID（数字化或短标识符）。
+1. `title`
+   + 社区的标题。
+   + 对该社区的简要描述，用于表示该社区的主题核心。例如：
+   + ID3 Decision Tree Algorithm Community
+   + C4.5 and Sklearn Integration
 
-+   通常用于直观地区分社区。
+1. `summary`
+   + 社区的摘要。
+   + 对该社区内容的进一步扩展描述，解释其主题或涵盖的主要内容。
 
-1.  **community**
+1. `full_content`
+   + 社区报告的完整内容。
+   + 包括更详细的信息，可能包含标题、摘要、重要发现等。
 
-+   社区的编号，代表社区的分类或标识。
+1. `rank`
+   + 社区的排名或评分。
+   + 可能用来表示社区的重要性、影响力或相关性。
 
-1.  **level**
+1. `rank_explanation`
+   + 对排名的解释。
+   + 例如，“影响严重性从中等到高”。
 
-+   社区层级（COMMUNITY_LEVEL）。
+1. `findings`
+   + 社区的主要发现（JSON 格式）。
+   + 包含详细的解释或分析。例如：
+   + ID3 算法是该社区的核心主题。
+   + C4.5 是 ID3 的改进版本，结合了 Sklearn 的功能。
 
-+   表示社区的聚类粒度。较低的值表示更抽象的层级，较高的值表示更具体的细分社区。
+1. `full_content_json`
+   + 社区完整内容的 JSON 表示。
+   + 如果需要以结构化方式处理社区内容，这个字段是关键。
 
-1.  **title**
+1. `period`
+   + 报告的时间戳或周期。
+   + 在你的示例中，是 2024-11-26，表示报告生成的日期。
 
-+   社区的标题。
+1. `size`
+   + 社区的大小。
+   + 表示该社区包含的实体或内容的数量。例如：
+   + 社区 0 包含 8 个内容。
+   + 社区 1 包含 2 个内容。
 
-+   对该社区的简要描述，用于表示该社区的主题核心。例如：
-
-+   **ID3 Decision Tree** Algorithm Community
-
-+   C4.5 and Sklearn Integration
-
-1.  **summary**
-
-+   社区的摘要。
-
-+   对该社区内容的进一步扩展描述，解释其主题或涵盖的主要内容。
-
-1.  **full_content**
-
-+   社区报告的完整内容。
-
-+   包括更详细的信息，可能包含标题、摘要、重要发现等。
-
-1.  **rank**
-
-+   社区的排名或评分。
-
-+   可能用来表示社区的重要性、影响力或相关性。
-
-1.  rank_explanation
-
-+   对排名的解释。
-
-+   例如，“影响严重性从中等到高”。
-
-1.  **findings**
-
-+   社区的主要发现（JSON 格式）。
-
-+   包含详细的解释或分析。例如：
-
-+   ID3 算法是该社区的核心主题。
-
-+   C4.5 是 ID3 的改进版本，结合了 Sklearn 的功能。
-
-1.  full_content_json
-
-+   社区完整内容的 JSON 表示。
-
-+   如果需要以结构化方式处理社区内容，这个字段是关键。
-
-1.  **period**
-
-+   报告的时间戳或周期。
-
-+   在你的示例中，是 2024-11-26，表示报告生成的日期。
-
-1.  **size**
-
-+   社区的大小。
-
-+   表示该社区包含的实体或内容的数量。例如：
-
-+   **社区 0 包含 8 个内容。**
-
-+   **社区 1 包含 2 个内容。**
-
-**结果解释**
+### 结果解释
 
 从你的结果中可以看出：
 
-1.  **社区 0**：
+1. 社区 0：
+   + 标题是“ID3 Decision Tree Algorithm Community”。
+   + 主题围绕 ID3 决策树算法。
+   + 内容提到了该算法的重要性，以及其对机器学习领域的影响。
+   + 社区大小为 8。
 
-+   标题是“ID3 Decision Tree Algorithm Community”。
+1. 社区 1：
+   + 标题是“C4.5 and Sklearn Integration”。
+   + 主题是 C4.5 算法和 Sklearn 的集成。
+   + 该社区比社区 0 更小（仅有 2 个内容）。
+   + 排名评分为 4.5，影响程度适中。
 
-+   主题围绕 ID3 决策树算法。
-
-+   内容提到了该算法的重要性，以及其对机器学习领域的影响。
-
-+   社区大小为 8。
-
-1.  **社区 1**：
-
-+   标题是“C4.5 and Sklearn Integration”。
-
-+   主题是 C4.5 算法和 Sklearn 的集成。
-
-+   该社区比社区 0 更小（仅有 2 个内容）。
-
-+   排名评分为 4.5，影响程度适中。
-
-**用途**
+### 用途
 
 社区报告在查询阶段可以用于：
 
-1.  全局搜索（Global Search）：
+1. 全局搜索（Global Search）：
+   + 回答关于数据集整体的问题，例如“这些文档的主要主题是什么？”
 
-+   回答关于数据集整体的问题，例如“这些文档的主要主题是什么？”
+1. 快速理解社区：
+   + 帮助用户快速了解数据集中不同部分的主题和相关信息。
 
-1.  **快速理解社区**：
+1. 可视化与调试：
+   + 将这些社区报告与知识图谱结合起来，可以直观地呈现社区的结构和语义关系。
 
-+   帮助用户快速了解数据集中不同部分的主题和相关信息。
+### 三、GraphRAG 问答流程
 
-1.  **可视化与调试**：
-
-+   将这些社区报告与知识图谱结合起来，可以直观地呈现社区的结构和语义关系。
-
-### 三、GraphRAG问答流程
-
-> 除了使用Python代码环境进行问答外，若希望快速测试问答性能，也可以直接在命令行中，借助graphrag提供的脚本命令进行快速问答，例如：graphrag query --root ./openl/input --method local --query "请帮我介绍下ID3算法"即可完成问答。
+> 除了使用 Python 代码环境进行问答外，若希望快速测试问答性能，也可以直接在命令行中，借助 `graphrag` 提供的脚本命令进行快速问答，例如：`graphrag query --root ./openl/input --method local --query "请帮我介绍下 ID3 算法"` 即可完成问答。
 
 ![](img/55177fd0eeb2e6393770a2764b414e0a.png)
 
-#### 1.导入核心关系组
+#### 1. 导入核心关系组
 
 ```
 import os
@@ -2044,113 +1250,124 @@ from graphrag.query.structured_search.local_search.search import LocalSearch
 from graphrag.vector_stores.lancedb import LanceDBVectorStore
 ```
 
-**与索引器相关的模块**
+##### 与索引器相关的模块
 
-+   **read_indexer_***
++ `read_indexer_*`
+
 从不同的索引文件中读取数据（例如实体、关系、摘要等）。这些模块负责加载索引器生成的数据到 Python 中，供后续搜索或分析使用：
 
-+   read_indexer_covariates: 读取与数据协变量（附加属性）相关的信息。
++ `read_indexer_covariates`: 读取与数据协变量（附加属性）相关的信息。
 
-+   read_indexer_entities: 读取从数据中提取的实体。
++ `read_indexer_entities`: 读取从数据中提取的实体。
 
-+   read_indexer_relationships: 读取实体间的关系。
++ `read_indexer_relationships`: 读取实体间的关系。
 
-+   read_indexer_reports: 读取生成的社区报告摘要。
++ `read_indexer_reports`: 读取生成的社区报告摘要。
 
-+   read_indexer_text_units: 读取切分后的文本单元（TextUnits）。
++ `read_indexer_text_units`: 读取切分后的文本单元（`TextUnits`）。
 
-+   store_entity_semantic_embeddings
++ `store_entity_semantic_embeddings`
+
 将实体的语义嵌入存储到向量数据库中。GraphRAG 用嵌入向量来表示实体间的语义关系。
 
-与 LLM（大型语言模型）相关的模块
+##### 与 LLM（大型语言模型）相关的模块
 
-+   **ChatOpenAI**
++ `ChatOpenAI`
+
 一个封装了 OpenAI 聊天模型（如 GPT 系列）的接口，允许你通过编程与 OpenAI 模型交互（如提出问题、获取回答）。
 
-+   **OpenAIEmbedding**
++ `OpenAIEmbedding`
+
 用于生成文本的嵌入向量的模块，通过调用 OpenAI 的嵌入 API，将文本转换为语义向量表示。
 
-+   **OpenaiApiType**
++ `OpenaiApiType`
+
 定义 OpenAI API 的具体类型，可能包括“聊天模型”、“嵌入模型”等。
 
-**与本地搜索相关的模块**
+##### 与本地搜索相关的模块
 
-+   **LocalSearch**
++ `LocalSearch`
+
 GraphRAG 的本地搜索引擎，专注于通过上下文和邻近信息回答关于特定实体的问题。
 
-+   LocalSearchMixedContext
++ `LocalSearchMixedContext`
+
 允许混合使用不同上下文数据（例如实体及其邻居的关系）来丰富本地搜索的结果。
 
-+   LocalQuestionGen
++ `LocalQuestionGen`
+
 用于在本地搜索中生成问题的模块，帮助生成更相关的问题。
 
-**与向量存储相关的模块**
+##### 与向量存储相关的模块
 
-+   LanceDBVectorStore
++ `LanceDBVectorStore`
+
 GraphRAG 使用的向量存储解决方案之一，支持存储和检索语义嵌入向量。可以快速高效地查找与查询向量最相似的嵌入。
 
 ```
-INPUT_DIR = &quot;./openl/output&quot;
-LANCEDB_URI = f&quot;{INPUT_DIR}/lancedb&quot;
+INPUT_DIR = "./openl/output"
+LANCEDB_URI = f"{INPUT_DIR}/lancedb"
 
-COMMUNITY_REPORT_TABLE = &quot;create_final_community_reports&quot;
-ENTITY_TABLE = &quot;create_final_nodes&quot;
-ENTITY_EMBEDDING_TABLE = &quot;create_final_entities&quot;
-RELATIONSHIP_TABLE = &quot;create_final_relationships&quot;
-TEXT_UNIT_TABLE = &quot;create_final_text_units&quot;
+COMMUNITY_REPORT_TABLE = "create_final_community_reports"
+ENTITY_TABLE = "create_final_nodes"
+ENTITY_EMBEDDING_TABLE = "create_final_entities"
+RELATIONSHIP_TABLE = "create_final_relationships"
+TEXT_UNIT_TABLE = "create_final_text_units"
 COMMUNITY_LEVEL = 2
 ```
 
-**定义输入目录与文件路径**
+#### 定义输入目录与文件路径
 
 ```
-INPUT_DIR = &quot;./openl/output&quot;
-LANCEDB_URI = f&quot;{INPUT_DIR}/lancedb&quot;
+INPUT_DIR = "./openl/output"
+LANCEDB_URI = f"{INPUT_DIR}/lancedb"
 ```
 
-+   **INPUT_DIR**：索引器输出文件的存放目录。在这里，索引器输出的路径为 ./openl/output。
++ `INPUT_DIR`: 索引器输出文件的存放目录。在这里，索引器输出的路径为 `./openl/output`。
 
-+   **LANCEDB_URI**：存放向量存储（LanceDB 数据库）的目录路径。在 GraphRAG 中，实体嵌入向量通常被存储在 LanceDB 中，以便后续搜索时高效检索。
++ `LANCEDB_URI`: 存放向量存储（LanceDB 数据库）的目录路径。在 GraphRAG 中，实体嵌入向量通常被存储在 LanceDB 中，以便后续搜索时高效检索。
 
-**定义数据表文件名**
+#### 定义数据表文件名
 
 ```
-COMMUNITY_REPORT_TABLE = &quot;create_final_community_reports&quot;
-ENTITY_TABLE = &quot;create_final_nodes&quot;
-ENTITY_EMBEDDING_TABLE = &quot;create_final_entities&quot;
-RELATIONSHIP_TABLE = &quot;create_final_relationships&quot;
-COVARIATE_TABLE = &quot;create_final_covariates&quot;
-TEXT_UNIT_TABLE = &quot;create_final_text_units&quot;
+COMMUNITY_REPORT_TABLE = "create_final_community_reports"
+ENTITY_TABLE = "create_final_nodes"
+ENTITY_EMBEDDING_TABLE = "create_final_entities"
+RELATIONSHIP_TABLE = "create_final_relationships"
+COVARIATE_TABLE = "create_final_covariates"
+TEXT_UNIT_TABLE = "create_final_text_units"
 COMMUNITY_LEVEL = 2
 ```
 
-+   COMMUNITY_REPORT_TABLE：存储社区报告的文件名。社区报告是基于知识图谱生成的每个社区的摘要。
++ `COMMUNITY_REPORT_TABLE`: 存储社区报告的文件名。社区报告是基于知识图谱生成的每个社区的摘要。
 
-+   **ENTITY_TABLE**：存储实体的文件名（知识图谱中的节点）。每个节点代表一个实体，例如人、地点或组织。
++ `ENTITY_TABLE`: 存储实体的文件名（知识图谱中的节点）。每个节点代表一个实体，例如人、地点或组织。
 
-+   ENTITY_EMBEDDING_TABLE：存储实体的嵌入向量。嵌入表示实体的语义信息，用于计算实体之间的相似性。
++ `ENTITY_EMBEDDING_TABLE`: 存储实体的嵌入向量。嵌入表示实体的语义信息，用于计算实体之间的相似性。
 
-+   RELATIONSHIP_TABLE：存储实体间关系的文件名（知识图谱中的边）。关系表示两个实体之间的交互或连接。
++ `RELATIONSHIP_TABLE`: 存储实体间关系的文件名（知识图谱中的边）。关系表示两个实体之间的交互或连接。
 
-+   **TEXT_UNIT_TABLE**：存储文本单元的文件名（原始文本数据被切分为的小块）。
++ `TEXT_UNIT_TABLE`: 存储文本单元的文件名（原始文本数据被切分为的小块）。
 
-+   **COMMUNITY_LEVEL**：指定加载的社区层级。社区层级表示知识图谱的聚类粒度（层次化结构中的第2层）。
++ `COMMUNITY_LEVEL`: 指定加载的社区层级。社区层级表示知识图谱的聚类粒度（层次化结构中的第 2 层）。
+
+
 
 ```
 # read nodes table to get community and degree data
-entity_df = pd.read_parquet(f&quot;{INPUT_DIR}/{ENTITY_TABLE}.parquet&quot;)
-entity_embedding_df = pd.read_parquet(f&quot;{INPUT_DIR}/{ENTITY_EMBEDDING_TABLE}.parquet&quot;)
+entity_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_TABLE}.parquet")
+entity_embedding_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_EMBEDDING_TABLE}.parquet")
 
 entities = read_indexer_entities(entity_df, entity_embedding_df, COMMUNITY_LEVEL)
 
 # load description embeddings to an in-memory lancedb vectorstore
 # to connect to a remote db, specify url and port values.
 description_embedding_store = LanceDBVectorStore(
-    collection_name=&quot;default-entity-description&quot;,
+    collection_name="default-entity-description",
 )
 description_embedding_store.connect(db_uri=LANCEDB_URI)
 
-print(f&quot;Entity count: {len(entity_df)}&quot;)
+print(f"Entity count: {len(entity_df)}")
 entity_df.head()
 ```
 
@@ -2167,10 +1384,10 @@ Entity count: 13
 | 4 | c6f4c391-4f5a-4d99-b8d5-6d4b24f43cc1 | 4 | NUMPY | 2 | 0 | 4 | 0 | 0 |
 
 ```
-relationship_df = pd.read_parquet(f&quot;{INPUT_DIR}/{RELATIONSHIP_TABLE}.parquet&quot;)
+relationship_df = pd.read_parquet(f"{INPUT_DIR}/{RELATIONSHIP_TABLE}.parquet")
 relationships = read_indexer_relationships(relationship_df)
 
-print(f&quot;Relationship count: {len(relationship_df)}&quot;)
+print(f"Relationship count: {len(relationship_df)}")
 relationship_df.head()
 ```
 
@@ -2187,10 +1404,10 @@ Relationship count: 29
 | 4 | 651dfca9-7a44-4d11-aed2-c00ce76f936d | 4 | C4.5 | CART | C4.5 and CART are both decision tree algorithm... | 17.0 | 19 | [4ba5acd798a419708cfe5cc86f1fcb6df907a20b1992a... |
 
 ```
-report_df = pd.read_parquet(f&quot;{INPUT_DIR}/{COMMUNITY_REPORT_TABLE}.parquet&quot;)
+report_df = pd.read_parquet(f"{INPUT_DIR}/{COMMUNITY_REPORT_TABLE}.parquet")
 reports = read_indexer_reports(report_df, entity_df, COMMUNITY_LEVEL)
 
-print(f&quot;Report records: {len(report_df)}&quot;)
+print(f"Report records: {len(report_df)}")
 report_df.head()
 ```
 
@@ -2200,15 +1417,15 @@ Report records: 3
 
 |  | id | human_readable_id | community | parent | level | title | summary | full_content | rank | rank_explanation | findings | full_content_json | period | size |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | c81a85511b7246ac8f93a15783e26855 | 0 | 0 | -1 | 0 | Decision Tree Algorithms: ID3, C4.5, and CART | This community revolves around key decision tr... | # Decision Tree Algorithms: ID3, C4.5, and CAR... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;ID3 is recognized as a class... | {\n &quot;title&quot;: &quot;Decision Tree Algorithms: ID3... | 2025-01-08 | 7 |
-| 1 | 0c4efb0094a64a3abd1a184b1baab37e | 1 | 1 | -1 | 0 | C4.5 and Decision Tree Algorithms | This community is centered around the C4.5 dec... | # C4.5 and Decision Tree Algorithms\n\nThis co... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;C4.5 represents a significan... | {\n &quot;title&quot;: &quot;C4.5 and Decision Tree Algori... | 2025-01-08 | 4 |
-| 2 | 983b4cf9540e4ee7820611ff6f6d33ba | 2 | 2 | -1 | 0 | NumPy and ML_Basic_Function Community | This community is centered around the NumPy li... | # NumPy and ML_Basic_Function Community\n\nThi... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;NumPy is identified as a Pyt... | {\n &quot;title&quot;: &quot;NumPy and ML_Basic_Function C... | 2025-01-08 | 2 |
+| 0 | c81a85511b7246ac8f93a15783e26855 | 0 | 0 | -1 | 0 | Decision Tree Algorithms: ID3, C4.5, and CART | This community revolves around key decision tr... | # Decision Tree Algorithms: ID3, C4.5, and CAR... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'ID3 is recognized as a class... | {\n "title": "Decision Tree Algorithms: ID3... | 2025-01-08 | 7 |
+| 1 | 0c4efb0094a64a3abd1a184b1baab37e | 1 | 1 | -1 | 0 | C4.5 and Decision Tree Algorithms | This community is centered around the C4.5 dec... | # C4.5 and Decision Tree Algorithms\n\nThis co... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'C4.5 represents a significan... | {\n "title": "C4.5 and Decision Tree Algori... | 2025-01-08 | 4 |
+| 2 | 983b4cf9540e4ee7820611ff6f6d33ba | 2 | 2 | -1 | 0 | NumPy and ML_Basic_Function Community | This community is centered around the NumPy li... | # NumPy and ML_Basic_Function Community\n\nThi... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'NumPy is identified as a Pyt... | {\n "title": "NumPy and ML_Basic_Function C... | 2025-01-08 | 2 |
 
 ```
-text_unit_df = pd.read_parquet(f&quot;{INPUT_DIR}/{TEXT_UNIT_TABLE}.parquet&quot;)
+text_unit_df = pd.read_parquet(f"{INPUT_DIR}/{TEXT_UNIT_TABLE}.parquet")
 text_units = read_indexer_text_units(text_unit_df)
 
-print(f&quot;Text unit records: {len(text_unit_df)}&quot;)
+print(f"Text unit records: {len(text_unit_df)}")
 text_unit_df.head()
 ```
 
@@ -2223,23 +1440,23 @@ Text unit records: 4
 | 2 | 1141affdc56bf8f5092b950b57febdedb884673ec6b23d... | 3 | 4.5决策树的基本建模流程\n作为ID3的改进版算法，C4.5在ID3的基础上进行了三个方面... | 1200 | [2ef33abc7acb307f736e46c7f20fe87568b4e9bd6311c... | [35bbb43d-b9f4-4a4d-bd53-7059efc44056, f1535df... | [651dfca9-7a44-4d11-aed2-c00ce76f936d, 3ad66ad... |
 | 3 | b5df95b6ec7e3aaea3f67db4914e1b2e874f3ac77fc3c8... | 4 | 集划分。\n\nC4.5的连续变量处理方法\nC4.5允许带入连续变量进行建模，并且围绕连续... | 558 | [2ef33abc7acb307f736e46c7f20fe87568b4e9bd6311c... | [35bbb43d-b9f4-4a4d-bd53-7059efc44056, f1535df... | [651dfca9-7a44-4d11-aed2-c00ce76f936d, 9ddcf83... |
 
-#### 2.设置模型参数
+## 2. 设置模型参数
 
-+   设置模型参数
-
-```
-sd_api_key = &quot;YOUR_DeepSeek_API_KEY&quot;
-openai_api_key = &quot;YOUR_DeepSeek_API_KEY&quot;
-```
+设置模型参数
 
 ```
-llm_model = &quot;deepseek-chat&quot;
-embedding_model = &quot;text-embedding-3-large&quot;
+sd_api_key = "YOUR_DeepSeek_API_KEY"
+openai_api_key = "YOUR_DeepSeek_API_KEY"
 ```
 
 ```
-llm_api_base = &quot;https://api.deepseek.com&quot;
-embedding_model_api_base = &quot;https://ai.devtool.tech/proxy/v1&quot;
+llm_model = "deepseek-chat"
+embedding_model = "text-embedding-3-large"
+```
+
+```
+llm_api_base = "https://api.deepseek.com"
+embedding_model_api_base = "https://ai.devtool.tech/proxy/v1"
 ```
 
 ```
@@ -2247,11 +1464,11 @@ llm = ChatOpenAI(
     api_key=sd_api_key,
     model=llm_model,
     api_base=llm_api_base,
-    api_type=OpenaiApiType.OpenAI,  
+    api_type=OpenaiApiType.OpenAI,
     max_retries=20,
 )
 
-token_encoder = tiktoken.get_encoding(&quot;cl100k_base&quot;)
+token_encoder = tiktoken.get_encoding("cl100k_base")
 
 text_embedder = OpenAIEmbedding(
     api_key=openai_api_key,
@@ -2263,63 +1480,51 @@ text_embedder = OpenAIEmbedding(
 )
 ```
 
-**初始化 Chat 模型**
+### 初始化 Chat 模型
 
-+   **ChatOpenAI**：
+`ChatOpenAI`：
 
-+   用于与 OpenAI 或 Azure OpenAI 的聊天模型（如 GPT 系列）交互。
+- 用于与 OpenAI 或 Azure OpenAI 的聊天模型（如 GPT 系列）交互。
 
-+   **参数说明**：
+**参数说明**：
 
-+   **api_key**：访问 OpenAI 或 Azure OpenAI 的密钥。
+- `api_key`：访问 OpenAI 或 Azure OpenAI 的密钥。
+- `model`：指定 LLM 模型名称（如 gpt-4）。
+- `api_base`：API 的基础路径，可以填写反向代理地址
+- `api_type`：API 类型，可以是：
+  - `OpenaiApiType.OpenAI`：OpenAI 直连服务。
+  - `OpenaiApiType.AzureOpenAI`：Azure OpenAI 服务。
+- `max_retries`：最大重试次数，以处理网络或服务中断。
 
-+   **model**：指定 LLM 模型名称（如 gpt-4）。
+### 初始化文本分词器
 
-+   **api_base**：API 的基础路径，可以填写反向代理地址
+`tiktoken`：
 
-+   **api_type**：API 类型，可以是：
+- 用于对输入文本进行分词或令牌化操作。
+- `cl100k_base`：一种令牌编码方式，适用于 GPT 系列模型（如 gpt-3.5-turbo 和 gpt-4）。
 
-+   OpenaiApiType.OpenAI：OpenAI 直连服务。
+**用途**：
 
-+   OpenaiApiType.AzureOpenAI：Azure OpenAI 服务。
+- 计算输入文本的令牌数量，确保不超过模型的上下文窗口限制。
 
-+   **max_retries**：最大重试次数，以处理网络或服务中断。
+### 初始化嵌入生成器
 
-**初始化文本分词器**
+`OpenAIEmbedding`：
 
-+   **tiktoken**：
+- 用于生成文本的嵌入向量。
 
-+   用于对输入文本进行分词或令牌化操作。
+**参数说明**：
 
-+   **cl100k_base**：一种令牌编码方式，适用于 GPT 系列模型（如 gpt-3.5-turbo 和 gpt-4）。
+- `api_key`：用于访问 OpenAI 嵌入 API 的密钥。
+- `api_base`：API 的基础路径，可以填写反向代理地址
+- `api_type`：API 类型，与 LLM 相同。
+- `model`：指定嵌入模型名称，例如 text-embedding-ada-002。
+- `deployment_name`：Azure 模型部署名称（如果使用 Azure）。
+- `max_retries`：最大重试次数。
 
-+   **用途**：
+## 3. 构建 LocalSearch（本地搜索）搜索引擎并进行问答
 
-+   计算输入文本的令牌数量，确保不超过模型的上下文窗口限制。
-
-**初始化嵌入生成器**
-
-+   **OpenAIEmbedding**：
-
-+   用于生成文本的嵌入向量。
-
-+   **参数说明**：
-
-+   **api_key**：用于访问 OpenAI 嵌入 API 的密钥。
-
-+   **api_base**：API 的基础路径，可以填写反向代理地址
-
-+   **api_type**：API 类型，与 LLM 相同。
-
-+   **model**：指定嵌入模型名称，例如 text-embedding-ada-002。
-
-+   **deployment_name**：Azure 模型部署名称（如果使用 Azure）。
-
-+   **max_retries**：最大重试次数。
-
-#### 3.构建LocalSearch（本地搜索）搜索引擎并进行问答
-
-+   创建LocalSearch上下文构建器
+创建 LocalSearch 上下文构建器
 
 ```
 context_builder = LocalSearchMixedContext(
@@ -2329,193 +1534,165 @@ context_builder = LocalSearchMixedContext(
     relationships=relationships,
     covariates=None,
     entity_text_embeddings=description_embedding_store,
-    embedding_vectorstore_key=EntityVectorStoreKey.ID,  
+    embedding_vectorstore_key=EntityVectorStoreKey.ID,
     text_embedder=text_embedder,
     token_encoder=token_encoder,
 )
 ```
 
-本段代码的主要功能是创建本地搜索的上下文构建器（Context Builder）。上下文构建器的作用是整合所有加载的数据（如社区报告、文本单元、实体、关系等），为后续的本地搜索提供语义丰富的上下文。
 
-**参数解析**
 
-1.  community_reports
+本段代码的主要功能是创建本地搜索的上下文构建器（`Context Builder`）。上下文构建器的作用是整合所有加载的数据（如社区报告、文本单元、实体、关系等），为后续的本地搜索提供语义丰富的上下文。
 
-+   传入之前加载的社区报告数据（reports）。
+## 参数解析（上下文构建器）
 
-+   用于补充社区级别的背景信息，在本地搜索中提供更多上下文。
+### `community_reports`
 
-1.  **text_units**
+- 传入之前加载的社区报告数据（`reports`）。
+- 用于补充社区级别的背景信息，在本地搜索中提供更多上下文。
 
-+   传入已加载的文本单元数据（text_units）。
+### `text_units`
 
-+   提供来自原始文档的小块文本，用于回答具体问题或补充答案的上下文。
+- 传入已加载的文本单元数据（`text_units`）。
+- 提供来自原始文档的小块文本，用于回答具体问题或补充答案的上下文。
 
-1.  **entities**
+### `entities`
 
-+   传入知识图谱中的实体（entities）。
+- 传入知识图谱中的实体（`entities`）。
+- 提供实体的详细信息和属性，帮助本地搜索定位特定实体。
 
-+   提供实体的详细信息和属性，帮助本地搜索定位特定实体。
+### `relationships`
 
-1.  **relationships**
+- 传入知识图谱中的关系（`relationships`）。
+- 用于描述实体之间的交互和连接，有助于构建更复杂的答案。
 
-+   传入知识图谱中的关系（relationships）。
+### `covariates`
 
-+   用于描述实体之间的交互和连接，有助于构建更复杂的答案。
+- 传入协变量数据（`covariates`），如果索引阶段未启用协变量，设置为 `None`。
+- **用途**：
+- 提供附加声明性元数据或上下文信息。
+- 如果协变量未启用，仍可正常运行本地搜索，但答案可能少一些附加的语义信息。
 
-1.  **covariates**
+### `entity_text_embeddings`
 
-+   传入协变量数据（covariates），如果索引阶段未启用协变量，设置为 None。
+- 传入实体嵌入的存储对象（`description_embedding_store`）。
+- **用途**：
+- 将实体的文本嵌入存储在向量数据库中。
+- 用于通过语义搜索快速找到相关实体。
 
-+   **用途**：
+### `embedding_vectorstore_key`
 
-+   提供附加声明性元数据或上下文信息。
+- 设置嵌入向量存储的键类型。
+- `EntityVectorStoreKey.ID`：
+- 如果向量存储中的实体是按 ID 存储的，使用此键。
+- `EntityVectorStoreKey.TITLE`：
+- 如果向量存储按实体标题存储，则改为设置为 `TITLE`。
 
-+   如果协变量未启用，仍可正常运行本地搜索，但答案可能少一些附加的语义信息。
+### `text_embedder`
 
-1.  entity_text_embeddings
+- 传入嵌入生成器对象（`text_embedder`）。
+- 用于生成文本或问题的语义嵌入，支持与存储的实体嵌入进行相似度比较。
 
-+   传入实体嵌入的存储对象（description_embedding_store）。
+### `token_encoder`
 
-+   **用途**：
+- 传入分词器（`token_encoder`）。
+- **用途**：
+- 确保生成的上下文不会超过 LLM 的上下文窗口限制。
+- 有助于在构建查询时分配合理的上下文。
 
-+   将实体的文本嵌入存储在向量数据库中。
-
-+   用于通过语义搜索快速找到相关实体。
-
-1.  embedding_vectorstore_key
-
-+   设置嵌入向量存储的键类型。
-
-+   EntityVectorStoreKey.ID：
-
-+   如果向量存储中的实体是按 ID 存储的，使用此键。
-
-+   EntityVectorStoreKey.TITLE：
-
-+   如果向量存储按实体标题存储，则改为设置为 TITLE。
-
-1.  **text_embedder**
-
-+   传入嵌入生成器对象（text_embedder）。
-
-+   用于生成文本或问题的语义嵌入，支持与存储的实体嵌入进行相似度比较。
-
-1.  **token_encoder**
-
-+   传入分词器（token_encoder）。
-
-+   **用途**：
-
-+   确保生成的上下文不会超过 LLM 的上下文窗口限制。
-
-+   有助于在构建查询时分配合理的上下文。
-
-**上下文构建器的作用**
+## 上下文构建器的作用
 
 上下文构建器是本地搜索的核心组件，它负责将加载的数据整合成结构化的上下文，包括：
 
-1.  结合社区级摘要（Community Reports）：
+- 结合社区级摘要（`Community Reports`）：
+- 提供更高层次的背景信息，用于回答主题性问题。
+- 整合文本单元（`Text Units`）：
+- 使用来自原始文档的文本片段，为问题构建直接的上下文。
+- 集成知识图谱的实体和关系：
+- 为本地搜索中的实体相关问题提供详细的语义信息。
+- 利用嵌入和分词：
+- 嵌入存储和分词器确保上下文生成语义准确，符合 LLM 的上下文限制。
 
-+   提供更高层次的背景信息，用于回答主题性问题。
-
-1.  整合文本单元（Text Units）：
-
-+   使用来自原始文档的文本片段，为问题构建直接的上下文。
-
-1.  **集成知识图谱的实体和关系**：
-
-+   为本地搜索中的实体相关问题提供详细的语义信息。
-
-1.  **利用嵌入和分词**：
-
-+   嵌入存储和分词器确保上下文生成语义准确，符合 LLM 的上下文限制。
-
-+   **创建本地搜索引擎参数组**
+## 创建本地搜索引擎参数组
 
 ```
 local_context_params = {
-    &quot;text_unit_prop&quot;: 0.5,
-    &quot;community_prop&quot;: 0.1,
-    &quot;conversation_history_max_turns&quot;: 5,
-    &quot;conversation_history_user_turns_only&quot;: True,
-    &quot;top_k_mapped_entities&quot;: 10,
-    &quot;top_k_relationships&quot;: 10,
-    &quot;include_entity_rank&quot;: True,
-    &quot;include_relationship_weight&quot;: True,
-    &quot;include_community_rank&quot;: True,
-    &quot;return_candidate_context&quot;: True,
-    &quot;embedding_vectorstore_key&quot;: EntityVectorStoreKey.ID,  
-    &quot;max_tokens&quot;: 12_000, 
+    "text_unit_prop": 0.5,
+    "community_prop": 0.1,
+    "conversation_history_max_turns": 5,
+    "conversation_history_user_turns_only": True,
+    "top_k_mapped_entities": 10,
+    "top_k_relationships": 10,
+    "include_entity_rank": True,
+    "include_relationship_weight": True,
+    "include_community_rank": True,
+    "return_candidate_context": True,
+    "embedding_vectorstore_key": EntityVectorStoreKey.ID,
+    "max_tokens": 12_000,
 }
 
 llm_params = {
-    &quot;max_tokens&quot;: 2_000, 
-    &quot;temperature&quot;: 0.0,
+    "max_tokens": 2_000,
+    "temperature": 0.0,
 }
 ```
 
-**参数解析**：
+## 参数解析（`local_context_params`）
 
-+   **text_unit_prop**：
+### `text_unit_prop`
 
-+   上下文窗口中分配给文本单元（Text Units）的比例（50%）。
+- 上下文窗口中分配给文本单元（`Text Units`）的比例（50%）。
+- 控制原始文档中的文本内容在上下文中的权重。
 
-+   控制原始文档中的文本内容在上下文中的权重。
+### `community_prop`
 
-+   **community_prop**：
+- 上下文窗口中分配给社区报告（`Community Reports`）的比例（10%）。
+- 用于为回答提供更高层次的社区背景。
 
-+   上下文窗口中分配给社区报告（Community Reports）的比例（10%）。
+### `conversation_history_max_turns`
 
-+   用于为回答提供更高层次的社区背景。
+- 上下文中包含的最大对话轮数（5轮）。
+- 控制是否包括之前的对话历史，以及保留的对话轮数。
 
-+   conversation_history_max_turns：
+### `conversation_history_user_turns_only`
 
-+   上下文中包含的最大对话轮数（5轮）。
+- 如果为 `True`，则只包括用户的提问，而忽略模型的回答。
 
-+   控制是否包括之前的对话历史，以及保留的对话轮数。
+### `top_k_mapped_entities`
 
-+   **conversation_his**tory_user_turns_only：
+- 从嵌入向量存储中检索的相关实体的数量（10个）。
 
-+   如果为 True，则只包括用户的提问，而忽略模型的回答。
+### `top_k_relationships`
 
-+   top_k_mapped_entities：
+- 检索到上下文窗口中的最大关系数（10个）。
 
-+   从嵌入向量存储中检索的相关实体的数量（10个）。
+### `include_entity_rank`
 
-+   top_k_relationships：
+- 是否在上下文中包含实体的排名（默认是根据实体的节点度数）。
 
-+   检索到上下文窗口中的最大关系数（10个）。
+### `include_relationship_weight`
 
-+   include_entity_rank：
+- 是否在上下文中包含关系权重（例如，表示关系的重要性）。
 
-+   是否在上下文中包含实体的排名（默认是根据实体的节点度数）。
+### `include_community_rank`
 
-+   include_relationship_weight：
+- 是否在上下文中包含社区排名。这里设置为 `False`。
 
-+   是否在上下文中包含关系权重（例如，表示关系的重要性）。
+### `return_candidate_context`
 
-+   include_community_rank：
+- 如果为 `True`，返回一个数据帧集合，包含所有可能相关的实体、关系和协变量记录。这些记录的上下文中会有一列 `in_context` 表示是否被纳入上下文窗口。
 
-+   是否在上下文中包含社区排名。这里设置为 False。
+### `embedding_vectorstore_key`
 
-+   return_candidate_context：
+- 嵌入向量存储的键类型。
+- 如果向量存储的标识符是实体标题而非 ID，则设置为 `EntityVectorStoreKey.TITLE`。
 
-+   如果为 True，返回一个数据帧集合，包含所有可能相关的实体、关系和协变量记录。这些记录的上下文中会有一列 in_context 表示是否被纳入上下文窗口。
+### `max_tokens`
 
-+   embedding_vectorstore_key：
+- 上下文窗口允许的最大令牌数（12,000个）。
+- 需要根据所用 LLM 的令牌限制调整（例如，`GPT-4` 支持 8,192 或 32,768）。
 
-+   嵌入向量存储的键类型。
-
-+   如果向量存储的标识符是实体标题而非 ID，则设置为 EntityVectorStoreKey.TITLE。
-
-+   **max_tokens**：
-
-+   上下文窗口允许的最大令牌数（12,000个）。
-
-+   需要根据所用 LLM 的令牌限制调整（例如，GPT-4 支持 8,192 或 32,768）。
-
-+   **创建本地搜索引擎**
+## 创建本地搜索引擎
 
 ```
 search_engine = LocalSearch(
@@ -2524,145 +1701,99 @@ search_engine = LocalSearch(
     token_encoder=token_encoder,
     llm_params=llm_params,
     context_builder_params=local_context_params,
-    response_type=&quot;multiple paragraphs&quot;, 
+    response_type="multiple paragraphs",
 )
 ```
 
-**参数解析**：
+## 参数解析（`LocalSearch`）
 
-+   **llm**：
+### `llm`
 
-+   已初始化的 LLM 对象（ChatOpenAI），用于生成答案。
+- 已初始化的 LLM 对象（`ChatOpenAI`），用于生成答案。
 
-+   **context_builder**：
+### `context_builder`
 
-+   上一段代码中创建的上下文构建器（LocalSearchMixedContext），负责生成语义丰富的上下文。
+- 上一段代码中创建的上下文构建器（`LocalSearchMixedContext`），负责生成语义丰富的上下文。
 
-+   **token_encoder**：
+### `token_encoder`
 
-+   分词器，用于计算上下文和生成回答的令牌数，确保不会超过 LLM 的限制。
+- 分词器，用于计算上下文和生成回答的令牌数，确保不会超过 LLM 的限制。
 
-+   **llm_params**：
+### `llm_params`
 
-+   用于 LLM 的参数，包括生成答案时的令牌数和温度。
+- 用于 LLM 的参数，包括生成答案时的令牌数和温度。
 
-+   context_builder_params：
+### `context_builder_params`
 
-+   上下文构建器的配置，控制上下文中每种数据的比例和数量限制。
+- 上下文构建器的配置，控制上下文中每种数据的比例和数量限制。
 
-+   **response_type**：
+### `response_type`
 
-+   指定回答的格式。
+- 指定回答的格式。
+- 此处为 `"multiple paragraphs"`，表示生成的回答以多段文字形式呈现。
+- 可以根据需求设置为 `"single paragraph"` 或 `"prioritized list"` 等。
 
-+   此处为 "multiple paragraphs"，表示生成的回答以多段文字形式呈现。
-
-+   可以根据需求设置为 "single paragraph" 或 "prioritized list" 等。
-
-+   基于本地搜索的问答流程
+## 基于本地搜索的问答流程
 
 ```
-result = await search_engine.asearch(&quot;请帮我介绍下ID3决策树算法&quot;)
-```
+result = await search_engine.asearch("请帮我介绍下ID3决策树算法")
 
-```
 display(Markdown(result.response))
 ```
 
-### ID3决策树算法概述
+## ID3决策树算法概述
 
-ID3（Iterative Dichotomiser 3）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（information entropy）来评估数据集划分的纯度，并选择信息增益（information gain）最大的属性进行节点分裂。ID3的核心思想是通过递归地选择最佳属性来构建决策树，从而实现对数据的分类 [Data: Entities (0); Reports (0); Relationships (0)].
+ID3（`Iterative Dichotomiser 3`）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（`Information Entropy`）来评估数据集划分的纯度，并选择信息增益（`Information Gain`）最大的属性进行节点分裂。ID3 算法是决策树算法家族中的基础算法，后续的 `C4.5` 和 `CART` 算法都在其基础上进行了改进和扩展 [Data: Entities (0); Reports (0); Relationships (0, 23)]。
 
-#### 信息熵与信息增益
+### 核心原理
 
-ID3使用信息熵来衡量数据集的混乱程度。信息熵越低，数据集的纯度越高。信息增益则是通过计算分裂前后信息熵的差值来评估某个属性对数据集划分的效果。ID3在每一步选择信息增益最大的属性进行分裂，从而逐步构建决策树 [Data: Entities (0); Reports (0); Relationships (27)].
+ID3 的核心思想是通过递归地选择信息增益最大的属性来构建决策树。具体步骤如下：
 
-#### 数据集划分与离散变量处理
+1. 信息熵计算：ID3 使用信息熵来衡量数据集的纯度。信息熵越低，数据集的纯度越高。对于一个数据集，信息熵的计算公式为：
 
-ID3只能处理离散变量，无法直接处理连续变量。如果数据集中包含连续变量，需要先对其进行离散化处理（如分箱）。ID3通过一次展开一列的方式对数据集进行划分，这与CART算法中寻找切分点的方式不同。例如，在某个数据集中，ID3会根据AGE列的不同取值将数据集划分为多个子集，然后计算每个子集的信息熵和信息增益 [Data: Sources (0, 1); Entities (6, 7, 8, 9); Relationships (10, 11, 12, 13)].
-
-#### ID3的局限性
-
-尽管ID3在决策树算法的发展中具有重要地位，但它也存在一些局限性：
-
-1.  **无法处理连续变量**：ID3只能处理离散变量，连续变量需要先进行离散化处理 [Data: Entities (0); Reports (0)].
-
-1.  **倾向于选择多分类属性**：ID3在选择分裂属性时，倾向于选择分类水平较多的属性，这可能导致模型过拟合 [Data: Sources (1); Entities (0)].
-
-1.  **缺乏剪枝机制**：ID3没有内置的剪枝机制来防止过拟合，这使得模型在训练数据上表现良好，但在测试数据上可能表现不佳 [Data: Sources (1); Entities (0)].
-
-#### ID3与C4.5、CART的关系
-
-ID3是决策树算法的基础，后续的C4.5和CART算法在ID3的基础上进行了改进。C4.5引入了连续变量处理、剪枝机制和信息值（information value）等改进，而CART则支持分类和回归任务，并采用二分法进行数据集划分 [Data: Entities (1, 2); Relationships (0, 1, 4, 14)].
-
-### 总结
-
-ID3作为决策树算法的奠基者，通过信息熵和信息增益构建分类模型，尽管存在一些局限性，但其核心思想为后续算法的发展提供了重要基础。C4.5和CART等算法在ID3的基础上进行了优化，进一步提升了决策树模型的性能和适用性 [Data: Entities (0, 1, 2); Reports (0, 1); Relationships (0, 1, 4, 14)].
-
-```
-result = await search_engine.asearch(&quot;请帮我介绍下ID3决策树算法&quot;)
-```
-
-```
-display(Markdown(result.response))
-```
-
-### ID3决策树算法概述
-
-ID3（Iterative Dichotomiser 3）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（Information Entropy）来评估数据集划分的纯度，并选择信息增益（Information Gain）最大的属性进行节点分裂。ID3算法是决策树算法家族中的基础算法，后续的C4.5和CART算法都在其基础上进行了改进和扩展 [Data: Entities (0); Reports (0); Relationships (0, 23)]。
-
----
-
-### ID3的核心原理
-
-ID3的核心思想是通过递归地选择信息增益最大的属性来构建决策树。具体步骤如下：
-
-1.  **信息熵计算**：ID3使用信息熵来衡量数据集的纯度。信息熵越低，数据集的纯度越高。对于一个数据集，信息熵的计算公式为：
-[
+$$
 \text{Entropy}(S) = -\sum_{i=1}^{n} p_i \log_2(p_i)
-]
-其中，( p_i ) 是数据集中第 ( i ) 类样本的比例 [Data: Sources (0, 1)].
+$$
 
-1.  **信息增益计算**：信息增益用于衡量某个属性对数据集划分的贡献。信息增益越大，说明该属性对分类的贡献越大。信息增益的计算公式为：
-[
+其中，$p_i$ 是数据集中第 $i$ 类样本的比例 [Data: Sources (0, 1)]。
+
+1. 信息增益计算：信息增益用于衡量某个属性对数据集划分的贡献。信息增益越大，说明该属性对分类的贡献越大。信息增益的计算公式为：
+
+$$
 \text{Gain}(S, A) = \text{Entropy}(S) - \sum_{v \in \text{Values}(A)} \frac{|S_v|}{|S|} \text{Entropy}(S_v)
-]
-其中，( S_v ) 是属性 ( A ) 取值为 ( v ) 时的子集 [Data: Sources (1); Entities (11)].
+$$
 
-1.  **节点分裂**：ID3选择信息增益最大的属性作为当前节点的分裂属性，并根据该属性的不同取值将数据集划分为多个子集。这一过程递归进行，直到所有子集的纯度达到要求或没有更多属性可用 [Data: Sources (0, 1)].
+其中，$S_v$ 是属性 $A$ 取值为 $v$ 时的子集 [Data: Sources (1); Entities (11)]。
 
----
+1. 节点分裂：ID3 选择信息增益最大的属性作为当前节点的分裂属性，并根据该属性的不同取值将数据集划分为多个子集。这一过程递归进行，直到所有子集的纯度达到要求或没有更多属性可用 [Data: Sources (0, 1)]。
 
-### ID3的局限性
+### 数据集划分与离散变量处理
 
-尽管ID3算法在决策树领域具有重要地位，但它也存在一些明显的局限性：
+ID3 只能处理离散变量，无法直接处理连续变量。如果数据集中包含连续变量，需要先对其进行离散化处理（如分箱）。ID3 通过一次展开一列的方式对数据集进行划分，这与 `CART` 算法中寻找切分点的方式不同。例如，在某个数据集中，ID3 会根据 `AGE` 列的不同取值将数据集划分为多个子集，然后计算每个子集的信息熵和信息增益 [Data: Sources (0, 1); Entities (6, 7, 8, 9); Relationships (10, 11, 12, 13)]。
 
-1.  **仅支持离散变量**：ID3只能处理离散型变量，无法直接处理连续型变量。如果数据集中包含连续型变量，需要先进行离散化处理 [Data: Entities (0); Sources (0)].
+### ID3 的局限性
 
-1.  **倾向于选择多分类属性**：ID3在选择分裂属性时，倾向于选择分类水平较多的属性，这可能导致模型过拟合 [Data: Entities (0); Sources (1)].
+尽管 ID3 在决策树算法的发展中具有重要地位，但它也存在一些局限性：
 
-1.  **缺乏剪枝机制**：ID3没有内置的剪枝机制，无法有效防止过拟合 [Data: Entities (0); Sources (1)].
+1. 无法处理连续变量：ID3 只能处理离散变量，连续变量需要先进行离散化处理 [Data: Entities (0); Reports (0)]。
+1. 倾向于选择多分类属性：ID3 在选择分裂属性时，倾向于选择分类水平较多的属性，这可能导致模型过拟合 [Data: Sources (1); Entities (0)]。
+1. 缺乏剪枝机制：ID3 没有内置的剪枝机制来防止过拟合，这使得模型在训练数据上表现良好，但在测试数据上可能表现不佳 [Data: Sources (1); Entities (0)]。
+1. 不支持回归任务：ID3 仅适用于分类任务，无法处理回归问题 [Data: Entities (0)]。
 
-1.  **不支持回归任务**：ID3仅适用于分类任务，无法处理回归问题 [Data: Entities (0)].
+### ID3 与 C4.5、CART 的关系
 
----
+ID3 是决策树算法家族中的基础算法，后续的 `C4.5` 和 `CART` 算法在其基础上进行了改进：
 
-### ID3与C4.5和CART的关系
-
-ID3是决策树算法家族中的基础算法，后续的C4.5和CART算法在其基础上进行了改进：
-
-+   **C4.5**：C4.5在ID3的基础上引入了连续变量处理、剪枝机制和信息增益比（Gain Ratio）等改进，解决了ID3的许多局限性 [Data: Entities (1); Relationships (0, 23)].
-
-+   **CART**：CART（Classification and Regression Trees）进一步扩展了决策树的能力，支持分类和回归任务，并采用二分法进行节点分裂 [Data: Entities (2); Relationships (1, 4)].
-
----
+- `C4.5`：`C4.5` 在 ID3 的基础上引入了连续变量处理、剪枝机制和信息增益比（`Gain Ratio`）等改进，解决了 ID3 的许多局限性 [Data: Entities (1); Relationships (0, 23)]。
+- `CART`：`CART`（`Classification and Regression Trees`）进一步扩展了决策树的能力，支持分类和回归任务，并采用二分法进行节点分裂 [Data: Entities (2); Relationships (1, 4)]。
 
 ### 总结
 
-ID3算法作为决策树领域的开创性算法，奠定了决策树模型的基础。尽管它存在一些局限性，但其核心思想（如信息熵和信息增益）在后续的C4.5和CART算法中得到了继承和发展。ID3算法在分类任务中仍然具有一定的应用价值，尤其是在处理离散型数据时 [Data: Entities (0); Reports (0); Relationships (0, 23)].
+ID3 作为决策树算法的奠基者，通过信息熵和信息增益构建分类模型，尽管存在一些局限性，但其核心思想为后续算法的发展提供了重要基础。`C4.5` 和 `CART` 等算法在 ID3 的基础上进行了优化，进一步提升了决策树模型的性能和适用性 [Data: Entities (0, 1, 2); Reports (0, 1); Relationships (0, 1, 4, 14)]。
 
-#### 4.构建GlobalSearch（全局搜索）搜索引擎并进行问答
+## 4.构建 GlobalSearch（全局搜索）搜索引擎并进行问答
 
-+   导入知识图谱相关内容
+### 导入知识图谱相关内容
 
 ```
 import pandas as pd
@@ -2681,217 +1812,227 @@ from graphrag.query.structured_search.global_search.community_context import (
 from graphrag.query.structured_search.global_search.search import GlobalSearch
 ```
 
-```
-COMMUNITY_TABLE = &quot;create_final_communities&quot;
-COMMUNITY_REPORT_TABLE = &quot;create_final_community_reports&quot;
-ENTITY_TABLE = &quot;create_final_nodes&quot;
-ENTITY_EMBEDDING_TABLE = &quot;create_final_entities&quot;
-```
+
+
+# 全局搜索配置与 ID3 算法解析
+
+## 定义表名常量
 
 ```
-community_df = pd.read_parquet(f&quot;{INPUT_DIR}/{COMMUNITY_TABLE}.parquet&quot;)
-entity_df = pd.read_parquet(f&quot;{INPUT_DIR}/{ENTITY_TABLE}.parquet&quot;)
-report_df = pd.read_parquet(f&quot;{INPUT_DIR}/{COMMUNITY_REPORT_TABLE}.parquet&quot;)
-entity_embedding_df = pd.read_parquet(f&quot;{INPUT_DIR}/{ENTITY_EMBEDDING_TABLE}.parquet&quot;)
+COMMUNITY_TABLE = "create_final_communities";
+COMMUNITY_REPORT_TABLE = "create_final_community_reports";
+ENTITY_TABLE = "create_final_nodes";
+ENTITY_EMBEDDING_TABLE = "create_final_entities";
+```
+
+## 读取数据并构建索引对象
+
+```
+community_df = pd.read_parquet(f"{INPUT_DIR}/{COMMUNITY_TABLE}.parquet")
+entity_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_TABLE}.parquet")
+report_df = pd.read_parquet(f"{INPUT_DIR}/{COMMUNITY_REPORT_TABLE}.parquet")
+entity_embedding_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_EMBEDDING_TABLE}.parquet")
 
 communities = read_indexer_communities(community_df, entity_df, report_df)
 reports = read_indexer_reports(report_df, entity_df, COMMUNITY_LEVEL)
 entities = read_indexer_entities(entity_df, entity_embedding_df, COMMUNITY_LEVEL)
 ```
 
-+   创建Global Search模式的上下文构建器 (context_builder)
+## 创建 Global Search 上下文构建器
 
 ```
 context_builder = GlobalCommunityContext(
     community_reports=reports,
     communities=communities,
-    entities=entities,  
+    entities=entities,
     token_encoder=token_encoder,
 )
 ```
 
 代码解释如下：
 
-1.  GlobalCommunityContext:
+### `GlobalCommunityContext`
 
-+   这是一个为 **Global Search** 模式创建的上下文构建器。它负责从不同的数据源（如社区报告、实体、社区信息等）中提取相关数据，并构建一个用于查询的大范围上下文。
+这是一个为 `Global Search` 模式创建的上下文构建器。它负责从不同的数据源（如社区报告、实体、社区信息等）中提取相关数据，并构建一个用于查询的大范围上下文。
 
-+   这个构建器帮助为整个文档集合（而不是某个特定实体）构建一个全局的知识背景，以便模型能够对广泛的问题做出响应。
+这个构建器帮助为整个文档集合（而不是某个特定实体）构建一个全局的知识背景，以便模型能够对广泛的问题做出响应。
 
-1.  community_reports=reports:
+### `community_reports=reports`
 
-+   这里传入的是之前从文件中读取的 reports 数据（也就是 COMMUNITY_REPORT_TABLE 表格的数据）。
+这里传入的是之前从文件中读取的 `reports` 数据（也就是 `COMMUNITY_REPORT_TABLE` 表格的数据）。
 
-+   这些报告包含了关于不同社区的详细信息，如主题、摘要、影响力、发现等。
+这些报告包含了关于不同社区的详细信息，如主题、摘要、影响力、发现等。
 
-+   在全局搜索中，这些社区报告有助于构建整个数据集的高层次概览。
+在全局搜索中，这些社区报告有助于构建整个数据集的高层次概览。
 
-1.  communities=communities:
+### `communities=communities`
 
-+   communities 数据包含社区的结构和信息。在图谱中，社区可能代表了不同的主题、领域或相关性较高的实体群体。
+`communities` 数据包含社区的结构和信息。在图谱中，社区可能代表了不同的主题、领域或相关性较高的实体群体。
 
-+   这部分数据通常用于在全局搜索时进行分组和排名，比如通过社群的重要性或与查询的相关性来排序。
+这部分数据通常用于在全局搜索时进行分组和排名，比如通过社群的重要性或与查询的相关性来排序。
 
-1.  entities=entities:
+### `entities=entities`
 
-+   entities 是从之前的索引步骤中提取的实体数据（来自 ENTITY_TABLE 表）。
+`entities` 是从之前的索引步骤中提取的实体数据（来自 `ENTITY_TABLE` 表）。
 
-+   这些实体（如人物、地点、事件等）可以用来扩展全局搜索的范围。它们提供了具体的名词、对象和概念，有助于为全局查询提供上下文。
+这些实体（如人物、地点、事件等）可以用来扩展全局搜索的范围。它们提供了具体的名词、对象和概念，有助于为全局查询提供上下文。
 
-+   **注意：** 如果不希望在全局搜索中使用社区权重来影响排名（例如，不考虑某个社区对某个实体的影响），可以将 entities 参数设为 None。
+注意：如果不希望在全局搜索中使用社区权重来影响排名（例如，不考虑某个社区对某个实体的影响），可以将 `entities` 参数设为 `None`。
 
-1.  token_encoder=token_encoder:
+### `token_encoder=token_encoder`
 
-+   token_encoder 是用于对文本进行编码的工具。它将文本转化为可以输入到模型中的 token 序列。
+`token_encoder` 是用于对文本进行编码的工具。它将文本转化为可以输入到模型中的 token 序列。
 
-+   在之前的代码中，我们已经看到 token_encoder 是通过 tiktoken.get_encoding("cl100k_base") 获取的，它的作用是把文本切分为一定的 token 数量，以便在模型中使用。
+在之前的代码中，我们已经看到 `token_encoder` 是通过 `tiktoken.get_encoding("cl100k_base")` 获取的，它的作用是把文本切分为一定的 token 数量，以便在模型中使用。
 
-+   配置全局搜索参数
+## 配置全局搜索参数
 
 ```
 context_builder_params = {
-    &quot;use_community_summary&quot;: False,  
-    &quot;shuffle_data&quot;: True,
-    &quot;include_community_rank&quot;: True,
-    &quot;min_community_rank&quot;: 0,
-    &quot;community_rank_name&quot;: &quot;rank&quot;,
-    &quot;include_community_weight&quot;: True,
-    &quot;community_weight_name&quot;: &quot;occurrence weight&quot;,
-    &quot;normalize_community_weight&quot;: True,
-    &quot;max_tokens&quot;: 12_000,  
-    &quot;context_name&quot;: &quot;Reports&quot;,
+    "use_community_summary": False,
+    "shuffle_data": True,
+    "include_community_rank": True,
+    "min_community_rank": 0,
+    "community_rank_name": "rank",
+    "include_community_weight": True,
+    "community_weight_name": "occurrence weight",
+    "normalize_community_weight": True,
+    "max_tokens": 12_000,
+    "context_name": "Reports",
 }
 
 map_llm_params = {
-    &quot;max_tokens&quot;: 1000,
-    &quot;temperature&quot;: 0.0,
-    &quot;response_format&quot;: {&quot;type&quot;: &quot;json_object&quot;},
+    "max_tokens": 1000,
+    "temperature": 0.0,
+    "response_format": {"type": "json_object"},
 }
 
 reduce_llm_params = {
-    &quot;max_tokens&quot;: 2000, 
-    &quot;temperature&quot;: 0.0,
+    "max_tokens": 2000,
+    "temperature": 0.0,
 }
 ```
 
-+   构建全局搜索引擎
+## 构建全局搜索引擎
 
 ```
 search_engine = GlobalSearch(
     llm=llm,
     context_builder=context_builder,
     token_encoder=token_encoder,
-    max_data_tokens=12_000,  
+    max_data_tokens=12_000,
     map_llm_params=map_llm_params,
     reduce_llm_params=reduce_llm_params,
-    allow_general_knowledge=False, 
-    json_mode=True,  
+    allow_general_knowledge=False,
+    json_mode=True,
     context_builder_params=context_builder_params,
     concurrent_coroutines=32,
-    response_type=&quot;multiple paragraphs&quot;,  
+    response_type="multiple paragraphs",
 )
 ```
 
-这里创建了一个 全局搜索（Global Search） 引擎，利用前面配置的上下文构建器 (context_builder)、语言模型 (llm)、以及其它相关的参数进行搜索。对应参数详解如下：
+这里创建了一个 全局搜索（`Global Search`）引擎，利用前面配置的上下文构建器（`context_builder`）、语言模型（`llm`）、以及其它相关的参数进行搜索。对应参数详解如下：
 
-+   **llm**:
+### `llm`
 
-+   这个参数传入的是已经配置好的语言模型（LLM），即你之前定义的 ChatOpenAI 模型。全局搜索引擎将使用这个模型来生成回答。
+这个参数传入的是已经配置好的语言模型（LLM），即你之前定义的 `ChatOpenAI` 模型。全局搜索引擎将使用这个模型来生成回答。
 
-+   **context_builder**:
+### `context_builder`
 
-+   上下文构建器，之前我们已经讨论了 GlobalCommunityContext，它负责根据社区报告、社区等信息来构建查询的上下文。
+上下文构建器，之前我们已经讨论了 `GlobalCommunityContext`，它负责根据社区报告、社区等信息来构建查询的上下文。
 
-+   **token_encoder**:
+### `token_encoder`
 
-+   token_encoder 是用来处理文本的编码工具，通常是一个模型专用的 tokenizer。在这里，我们使用了 tiktoken.get_encoding("cl100k_base")，它是 OpenAI 模型的一个编码器，用来将文本转化为 token 格式。
+`token_encoder` 是用来处理文本的编码工具，通常是一个模型专用的 tokenizer。在这里，我们使用了 `tiktoken.get_encoding("cl100k_base")`，它是 OpenAI 模型的一个编码器，用来将文本转化为 token 格式。
 
-+   **max_data_tokens**:
+### `max_data_tokens`
 
-+   最大数据 token 数量。它控制了模型可以处理的最大上下文大小。你可以根据实际使用的模型的最大 token 限制来设置（例如，如果模型最大 token 限制是 8K，则可以设置为 5000，留一些余量）。这个设置控制了全局搜索时在上下文窗口内所使用的最大 token 数。
+最大数据 token 数量。它控制了模型可以处理的最大上下文大小。你可以根据实际使用的模型的最大 token 限制来设置（例如，如果模型最大 token 限制是 8K，则可以设置为 5000，留一些余量）。这个设置控制了全局搜索时在上下文窗口内所使用的最大 token 数。
 
-+   **map_llm_params** 和 reduce_llm_params:
+### `map_llm_params` 和 `reduce_llm_params`
 
-+   这两个参数分别传入了映射和归约阶段的 LLM 配置（之前我们已经详细分析过这些参数）。这些参数会影响 LLM 在不同阶段生成内容的方式（例如，max_tokens 和 temperature 等）。
+这两个参数分别传入了映射和归约阶段的 LLM 配置（之前我们已经详细分析过这些参数）。这些参数会影响 LLM 在不同阶段生成内容的方式（例如，`max_tokens` 和 `temperature` 等）。
 
-+   allow_general_knowledge:
+### `allow_general_knowledge`
 
-+   这个参数控制是否允许模型在回**答中加入**通用知识。如果设置为 True，LLM 会尝试**将 外部**知识 加入到查询的结果中。这对于需要广泛知识背景的任务可能有帮助，但也有可能导致模型生成 虚假信息（hallucinations）。为了避免这个问题，默认值设置为 False。
+这个参数控制是否允许模型在回答中加入通用知识。如果设置为 `True`，LLM 会尝试将外部知识加入到查询的结果中。这对于需要广泛知识背景的任务可能有帮助，但也有可能导致模型生成 虚假信息（hallucinations）。为了避免这个问题，默认值设置为 `False`。
 
-+   **json_mode**:
+### `json_mode`
 
-+   这个参数控制结果的格式。如果设置为** True，L**LM 会生成结构化的 JSON 格式 输出。如果设置为 False，则返回的是更自由形式的文本回答。对于结构化数据的处理，通常使用 JSON 格式。
+这个参数控制结果的格式。如果设置为 `True`，LLM 会生成结构化的 JSON 格式输出。如果设置为 `False`，则返回的是更自由形式的文本回答。对于结构化数据的处理，通常使用 JSON 格式。
 
-+   context_builder_params:
+### `context_builder_params`
 
-+   这是传入给上下文构建器的参数，用来进一步配置如何构建查询上下文（例如是否使用社区简要摘要、是否包含社区排名等）。我们在之前的代码分析中已经详细介绍了这些参数。
+这是传入给上下文构建器的参数，用来进一步配置如何构建查询上下文（例如是否使用社区简要摘要、是否包含社区排名等）。我们在之前的代码分析中已经详细介绍了这些参数。
 
-+   concurrent_coroutines:
+### `concurrent_coroutines`
 
-+   这个参数控制并发协程的数量。全局搜索引擎支持并发处理多个查询，如果你需要同时处理多个请求，可以增加这个值。比如设置为 32，意味着最多可以同时处理 32 个查询。
+这个参数控制并发协程的数量。全局搜索引擎支持并发处理多个查询，如果你需要同时处理多个请求，可以增加这个值。比如设置为 32，意味着最多可以同时处理 32 个查询。
 
-+   **response_type**:
+### `response_type`
 
-+   这个参数定义了模型生成的响应的类型和格式。它是一个自由文本的描述，指明返回的内容应该是什么样的格式。在这里，"multiple paragraphs" 表示模型会生成多段文字的回答，适合长篇的说明或报告。
+这个参数定义了模型生成的响应的类型和格式。它是一个自由文本的描述，指明返回的内容应该是什么样的格式。在这里，`"multiple paragraphs"` 表示模型会生成多段文字的回答，适合长篇的说明或报告。
 
-+   执行全局搜索
+## 执行全局搜索
 
 ```
-result = await search_engine.asearch(&quot;请帮我介绍下ID3决策树算法&quot;)
+result = await search_engine.asearch("请帮我介绍下ID3决策树算法")
 ```
 
 ```
 display(Markdown(result.response))
 ```
 
-ID3（Iterative Dichotomiser 3）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（information entropy）来评估分裂的纯度，并专注于处理离散变量。信息熵的使用使得ID3能够有效地根据最具信息量的属性对数据集进行划分，从而构建决策树 [Data: Reports (0)]。
+## ID3 决策树算法介绍
+
+ID3（Iterative Dichotomiser 3）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（information entropy）来评估分裂的纯度，并专注于处理离散变量。信息熵的使用使得 ID3 能够有效地根据最具信息量的属性对数据集进行划分，从而构建决策树 [Data: Reports (0)]。
 
 ### 核心原理
 
-ID3的核心在于其使用信息熵来衡量数据集的混乱程度，并选择能够最大程度减少熵的属性进行分裂。这种方法确保了决策树在每一步都能选择最优的分裂点，从而提高分类的准确性。然而，ID3仅适用于离散变量，无法直接处理连续变量 [Data: Reports (0)]。
+ID3 的核心在于其使用信息熵来衡量数据集的混乱程度，并选择能够最大程度减少熵的属性进行分裂。这种方法确保了决策树在每一步都能选择最优的分裂点，从而提高分类的准确性。然而，ID3 仅适用于离散变量，无法直接处理连续变量 [Data: Reports (0)]。
 
 ### 局限性
 
-尽管ID3在决策树算法的发展中起到了奠基作用，但它也存在一些明显的局限性。首先，ID3容易过拟合，尤其是在处理复杂数据集时。其次，它无法直接处理连续变量，这限制了其在实际应用中的灵活性 [Data: Reports (0)]。
+尽管 ID3 在决策树算法的发展中起到了奠基作用，但它也存在一些明显的局限性。首先，ID3 容易过拟合，尤其是在处理复杂数据集时。其次，它无法直接处理连续变量，这限制了其在实际应用中的灵活性 [Data: Reports (0)]。
 
 ### 后续发展
 
-ID3的局限性促使了后续算法的改进。例如，C4.5算法在ID3的基础上引入了对连续变量的处理、剪枝技术以及改进的属性选择标准，使其成为一个更强大且通用的算法。CART（Classification and Regression Trees）也是ID3的重要后继者，进一步扩展了决策树的应用范围 [Data: Reports (0)]。
+ID3 的局限性促使了后续算法的改进。例如，C4.5 算法在 ID3 的基础上引入了对连续变量的处理、剪枝技术以及改进的属性选择标准，使其成为一个更强大且通用的算法。CART（Classification and Regression Trees）也是 ID3 的重要后继者，进一步扩展了决策树的应用范围 [Data: Reports (0)]。
 
 ### 总结
 
-ID3作为决策树算法的先驱，为后续算法的发展奠定了重要基础。尽管它存在一些局限性，但其核心思想——通过信息熵进行分裂——仍然是现代决策树算法的核心组成部分。通过C4.5和CART等算法的改进，ID3的局限性得到了有效解决，进一步推动了决策树技术在机器学习领域的广泛应用 [Data: Reports (0)]。
+ID3 作为决策树算法的先驱，为后续算法的发展奠定了重要基础。尽管它存在一些局限性，但其核心思想——通过信息熵进行分裂——仍然是现代决策树算法的核心组成部分。通过 C4.5 和 CART 等算法的改进，ID3 的局限性得到了有效解决，进一步推动了决策树技术在机器学习领域的广泛应用 [Data: Reports (0)]。
 
 ```
-result = await search_engine.asearch(&quot;请帮我介绍下ID3决策树算法&quot;)
+result = await search_engine.asearch("请帮我介绍下ID3决策树算法")
 ```
 
 ```
 display(Markdown(result.response))
 ```
 
-ID3（Iterative Dichotomiser 3）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（information entropy）来评估数据分割的纯度，并专注于处理离散变量。信息熵的使用是ID3算法构建决策树的核心方法，通过计算信息增益来选择最佳的分割属性，从而逐步构建决策树 [Data: Reports (0)]。
+ID3（Iterative Dichotomiser 3）是一种经典的决策树算法，主要用于分类任务。它通过信息熵（information entropy）来评估数据分割的纯度，并专注于处理离散变量。信息熵的使用是 ID3 算法构建决策树的核心方法，通过计算信息增益来选择最佳的分割属性，从而逐步构建决策树 [Data: Reports (0)]。
 
 ### 核心原理
 
-ID3算法的核心在于利用信息熵来衡量数据集的混乱程度。信息熵越低，数据集的纯度越高。算法通过计算每个属性的信息增益，选择能够最大程度减少不确定性的属性作为分割节点。这一过程递归进行，直到所有数据被正确分类或达到停止条件 [Data: Reports (0)]。
+ID3 算法的核心在于利用信息熵来衡量数据集的混乱程度。信息熵越低，数据集的纯度越高。算法通过计算每个属性的信息增益，选择能够最大程度减少不确定性的属性作为分割节点。这一过程递归进行，直到所有数据被正确分类或达到停止条件 [Data: Reports (0)]。
 
 ### 优点与局限性
 
-ID3算法在决策树的发展中具有重要的历史意义，但其也存在一些局限性。首先，ID3只能处理离散变量，无法直接处理连续变量。其次，ID3容易出现过拟合问题，尤其是在数据集较小或噪声较多的情况下。这些局限性促使了后续算法的改进 [Data: Reports (0, 1)]。
+ID3 算法在决策树的发展中具有重要的历史意义，但其也存在一些局限性。首先，ID3 只能处理离散变量，无法直接处理连续变量。其次，ID3 容易出现过拟合问题，尤其是在数据集较小或噪声较多的情况下。这些局限性促使了后续算法的改进 [Data: Reports (0, 1)]。
 
 ### 后续发展
 
-ID3的局限性催生了更先进的决策树算法，如C4.5和CART。这些算法在ID3的基础上进行了改进，例如引入了连续变量的处理能力、剪枝技术（pruning）以及更复杂的属性选择标准。C4.5和CART的改进不仅克服了ID3的不足，还进一步提升了决策树的性能和适用性 [Data: Reports (0, 1)]。
+ID3 的局限性催生了更先进的决策树算法，如 C4.5 和 CART。这些算法在 ID3 的基础上进行了改进，例如引入了连续变量的处理能力、剪枝技术（pruning）以及更复杂的属性选择标准。C4.5 和 CART 的改进不仅克服了 ID3 的不足，还进一步提升了决策树的性能和适用性 [Data: Reports (0, 1)]。
 
 ### 总结
 
-ID3算法作为决策树领域的开创性工作，奠定了后续算法发展的基础。尽管它存在一些局限性，但其核心思想——利用信息熵进行数据分割——仍然是决策树算法的重要组成部分。通过了解ID3，我们可以更好地理解现代决策树算法的演进过程及其背后的原理 [Data: Reports (0, 1)]。
+ID3 算法作为决策树领域的开创性工作，奠定了后续算法发展的基础。尽管它存在一些局限性，但其核心思想——利用信息熵进行数据分割——仍然是决策树算法的重要组成部分。通过了解 ID3，我们可以更好地理解现代决策树算法的演进过程及其背后的原理 [Data: Reports (0, 1)]。
 
-+   查看全局搜索调用的社区报告
+## 查看全局搜索调用的社区报告
 
 ```
-result.context_data[&quot;reports&quot;]
+result.context_data["reports"]
 ```
 
 |  | id | title | occurrence weight | content | rank |
@@ -2906,25 +2047,101 @@ report_df
 
 |  | id | human_readable_id | community | parent | level | title | summary | full_content | rank | rank_explanation | findings | full_content_json | period | size |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | c81a85511b7246ac8f93a15783e26855 | 0 | 0 | -1 | 0 | Decision Tree Algorithms: ID3, C4.5, and CART | This community revolves around key decision tr... | # Decision Tree Algorithms: ID3, C4.5, and CAR... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;ID3 is recognized as a class... | {\n &quot;title&quot;: &quot;Decision Tree Algorithms: ID3... | 2025-01-08 | 7 |
-| 1 | 0c4efb0094a64a3abd1a184b1baab37e | 1 | 1 | -1 | 0 | C4.5 and Decision Tree Algorithms | This community is centered around the C4.5 dec... | # C4.5 and Decision Tree Algorithms\n\nThis co... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;C4.5 represents a significan... | {\n &quot;title&quot;: &quot;C4.5 and Decision Tree Algori... | 2025-01-08 | 4 |
-| 2 | 983b4cf9540e4ee7820611ff6f6d33ba | 2 | 2 | -1 | 0 | NumPy and ML_Basic_Function Community | This community is centered around the NumPy li... | # NumPy and ML_Basic_Function Community\n\nThi... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;NumPy is identified as a Pyt... | {\n &quot;title&quot;: &quot;NumPy and ML_Basic_Function C... | 2025-01-08 | 2 |
+| 0 | c81a85511b7246ac8f93a15783e26855 | 0 | 0 | -1 | 0 | Decision Tree Algorithms: ID3, C4.5, and CART | This community revolves around key decision tr... | # Decision Tree Algorithms: ID3, C4.5, and CAR... | 7.5 | The impact severity rating is high due to the ... | [{'explanation': 'ID3 is recognized as a class... | { "title": "Decision Tree Algorithms: ID3... | 2025-01-08 | 7 |
 
-+   社区报告最终形成的参考文档
+
+
+# 社区报告最终形成的参考文档
+
+## C4.5 and Decision Tree Algorithms
+
+| 1 | 0c4efb0094a64a3abd1a184b1baab37e | 1 | 1 | -1 | 0 | C4.5 and Decision Tree Algorithms | This community is centered around the C4.5 dec... | # C4.5 and Decision Tree Algorithms\n\nThis co... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;C4.5 represents a significan... | {\n &quot;title&quot;: &quot;C4.5 and Decision Tree Algori... | 2025-01-08 | 4 |
+
+## NumPy and ML_Basic_Function Community
+
+| 2 | 983b4cf9540e4ee7820611ff6f6d33ba | 2 | 2 | -1 | 0 | NumPy and ML_Basic_Function Community | This community is centered around the NumPy li... | # NumPy and ML_Basic_Function Community\n\nThi... | 7.5 | The impact severity rating is high due to the ... | [{&#x27;explanation&#x27;: &#x27;NumPy is identified as a Pyt... | {\n &quot;title&quot;: &quot;NumPy and ML_Basic_Function C... | 2025-01-08 | 2 |
 
 ```
 result.context_text[0]
 ```
 
-```
-&#x27;id|title|occurrence weight|content|rank\n1|C4.5 and Decision Tree Algorithms|1.0|&quot;# C4.5 and Decision Tree Algorithms\n\nThis community is centered around the C4.5 decision tree algorithm, which is an advanced version of the ID3 algorithm. C4.5 introduces enhancements such as handling continuous variables and employing pruning techniques to prevent overfitting. The community includes related metrics like Information Gain, Information Value, and Gain Ratio, which are integral to the algorithm\&#x27;s functionality. Relationships within the community highlight C4.5\&#x27;s connections to other decision tree algorithms like CART and its reliance on metrics for dataset splits.\n\n## C4.5\&#x27;s advancements over ID3\n\nC4.5 represents a significant evolution from the ID3 algorithm by introducing the ability to handle continuous variables and employing pruning techniques to prevent overfitting. These enhancements make C4.5 more robust and effective for practical applications, addressing several limitations of its predecessor. [Data: Entities (1)]\n\n## Role of Information Gain in C4.5\n\nInformation Gain is a critical metric used by C4.5 to measure the reduction in entropy after a dataset split. This metric is foundational in the decision tree construction process, ensuring more accurate dataset partitioning. C4.5 builds on Information Gain by incorporating Information Value to calculate Gain Ratio, further refining the decision-making process. [Data: Entities (11), Relationships (26)]\n\n## Importance of Information Value\n\nInformation Value is used by C4.5 to correct Information Gain calculations, thereby improving decision tree splits. This metric plays a crucial role in enhancing the algorithm\&#x27;s accuracy and reliability by ensuring that the dataset splits are based on the most informative attributes. [Data: Entities (12), Relationships (24)]\n\n## Gain Ratio as a key metric\n\nGain Ratio is a pivotal metric in C4.5, calculated by dividing Information Gain by Information Value. It guides the algorithm in evaluating and selecting dataset splits, ensuring that the decision tree is constructed in a manner that maximizes predictive accuracy. [Data: Entities (10), Relationships (25)]\n\n## C4.5\&#x27;s relationship with CART\n\nC4.5 and CART are both decision tree algorithms that share similarities in handling continuous variables and utilizing Gain Ratio values for dataset splits. However, they differ in their partitioning strategies, with C4.5 relying on information entropy and CART employing cut points. This relationship highlights the diversity in approaches within decision tree algorithms. [Data: Relationships (4)]&quot;|7.5\n0|Decision Tree Algorithms: ID3, C4.5, and CART|1.0|&quot;# Decision Tree Algorithms: ID3, C4.5, and CART\n\nThis community revolves around key decision tree algorithms used in machine learning, specifically ID3, C4.5, and CART. ID3 serves as the foundational algorithm, with C4.5 and CART offering improvements and extensions, respectively. These algorithms are interconnected through their evolutionary development and their application in machine learning tasks, particularly in classification and regression. The community also includes entities like SKLEARN, a machine learning library that implements CART, and various dataset columns (AGE, INCOME, STUDENT, CREDIT_RATING) used in calculating information gain and reducing impurity in decision tree models.\n\n## ID3 as the foundational decision tree algorithm\n\nID3 is recognized as a classic decision tree algorithm primarily used for classification tasks. It employs information entropy to evaluate the purity of splits, focusing on discrete variables. Despite its limitations, such as the tendency to overfit and inability to handle continuous variables directly, ID3 has played a crucial role in the evolution of decision tree-based machine learning techniques. Its foundational principles have been built upon by successors like C4.5 and CART, highlighting its significance in the community. [Data: Entities (0), Relationships (0)]\n\n## C4.5\&#x27;s improvements over ID3\n\nC4.5 is an improved version of ID3, designed to address several limitations of its predecessor. It introduces features like continuous variable handling, pruning, and improved attribute selection criteria, making it a more robust and versatile algorithm. These enhancements have allowed C4.5 to maintain the core principles of decision tree construction while overcoming the challenges faced by ID3, thereby solidifying its position in the community. [Data: Relationships (0)]\n\n## CART\&#x27;s versatility in handling both classification and regression tasks\n\nCART (Classification and Regression Trees) extends the capabilities of decision tree algorithms by supporting both classification and regression tasks. It builds binary trees and uses cut points for dataset partitioning, effectively handling continuous variables. CART\&#x27;s methodology has been integrated into popular machine learning libraries like SKLEARN, making it a versatile and widely used algorithm in the field. [Data: Entities (2), Relationships (7)]\n\n## SKLEARN\&#x27;s implementation of CART\n\nSKLEARN, or Scikit-learn, is a widely used machine learning library that implements the CART algorithm for decision tree modeling. While it does not directly support ID3 and C4.5, SKLEARN\&#x27;s decision tree models are based on CART\&#x27;s robust framework, enabling users to leverage its capabilities for predictive modeling and data analysis. This integration underscores the importance of CART in the community and its influence on machine learning practices. [Data: Entities (3), Relationships (7)]\n\n## Role of dataset columns in decision tree modeling\n\nDataset columns such as AGE, INCOME, STUDENT, and CREDIT_RATING play a crucial role in decision tree modeling by calculating information gain and reducing impurity. These columns are used in algorithms like ID3 to partition data effectively, highlighting their significance in the decision-making process of machine learning models. [Data: Entities (6, 7, 8, 9), Relationships (10, 11, 12, 13)]&quot;|7.5\n2|NumPy and ML_Basic_Function Community|0.25|&quot;# NumPy and ML_Basic_Function Community\n\nThis community is centered around the NumPy library and the ML_Basic_Function module, which are interconnected through their use in numerical computations for machine learning tasks. NumPy, being a fundamental library for numerical computations in Python, plays a crucial role in the functionality of ML_Basic_Function, indicating a significant dependency relationship.\n\n## NumPy\&#x27;s foundational role in machine learning\n\nNumPy is identified as a Python library essential for numerical computations, including those required in machine learning algorithms such as decision trees. Its widespread use and importance in data science and machine learning projects underscore its foundational role in these fields. [Data: Entities (4)]\n\n## ML_Basic_Function\&#x27;s dependency on NumPy\n\nML_Basic_Function, a module or library for machine learning tasks, likely utilizes NumPy for numerical computations. This dependency highlights the interconnectedness of tools and libraries within the machine learning ecosystem and the pivotal role of NumPy in enabling complex computations. [Data: Relationships (9)]\n\n## The significance of numerical computations in machine learning\n\nNumerical computations are at the heart of machine learning algorithms, enabling the processing and analysis of large datasets. The reliance of ML_Basic_Function on NumPy for these computations illustrates the critical importance of efficient and reliable numerical computation libraries in advancing machine learning technologies. [Data: Entities (4, 5), Relationships (9)]\n\n## Potential for innovation and development\n\nThe relationship between NumPy and ML_Basic_Function suggests a community with a strong foundation for innovation and development in machine learning. The integration of these tools can lead to advancements in algorithm efficiency, accuracy, and the development of new machine learning models. [Data: Relationships (9)]&quot;|7.5\n&#x27;
-```
 
-+   模型调用次数和使用的token数量
+
+# C4.5 and Decision Tree Algorithms
+
+This community is centered around the `C4.5` decision tree algorithm, which is an advanced version of the `ID3` algorithm. `C4.5` introduces enhancements such as handling continuous variables and employing pruning techniques to prevent overfitting. The community includes related metrics like Information Gain, Information Value, and Gain Ratio, which are integral to the algorithm's functionality. Relationships within the community highlight `C4.5`'s connections to other decision tree algorithms like `CART` and its reliance on metrics for dataset splits. [Data: Entities (1)]
+
+### C4.5's advancements over ID3
+
+`C4.5` represents a significant evolution from the `ID3` algorithm by introducing the ability to handle continuous variables and employing pruning techniques to prevent overfitting. These enhancements make `C4.5` more robust and effective for practical applications, addressing several limitations of its predecessor. [Data: Entities (1)]
+
+### Role of Information Gain in C4.5
+
+Information Gain is a critical metric used by `C4.5` to measure the reduction in entropy after a dataset split. This metric is foundational in the decision tree construction process, ensuring more accurate dataset partitioning. `C4.5` builds on Information Gain by incorporating Information Value to calculate Gain Ratio, further refining the decision-making process. [Data: Entities (11), Relationships (26)]
+
+### Importance of Information Value
+
+Information Value is used by `C4.5` to correct Information Gain calculations, thereby improving decision tree splits. This metric plays a crucial role in enhancing the algorithm's accuracy and reliability by ensuring that the dataset splits are based on the most informative attributes. [Data: Entities (12), Relationships (24)]
+
+### Gain Ratio as a key metric
+
+Gain Ratio is a pivotal metric in `C4.5`, calculated by dividing Information Gain by Information Value. It guides the algorithm in evaluating and selecting dataset splits, ensuring that the decision tree is constructed in a manner that maximizes predictive accuracy. [Data: Entities (10), Relationships (25)]
+
+### C4.5's relationship with CART
+
+`C4.5` and `CART` are both decision tree algorithms that share similarities in handling continuous variables and utilizing Gain Ratio values for dataset splits. However, they differ in their partitioning strategies, with `C4.5` relying on information entropy and `CART` employing cut points. This relationship highlights the diversity in approaches within decision tree algorithms. [Data: Relationships (4)]
+
+# Decision Tree Algorithms: ID3, C4.5, and CART
+
+This community revolves around key decision tree algorithms used in machine learning, specifically `ID3`, `C4.5`, and `CART`. `ID3` serves as the foundational algorithm, with `C4.5` and `CART` offering improvements and extensions, respectively. These algorithms are interconnected through their evolutionary development and their application in machine learning tasks, particularly in classification and regression. The community also includes entities like `SKLEARN`, a machine learning library that implements `CART`, and various dataset columns (`AGE`, `INCOME`, `STUDENT`, `CREDIT_RATING`) used in calculating information gain and reducing impurity in decision tree models.
+
+### ID3 as the foundational decision tree algorithm
+
+`ID3` is recognized as a classic decision tree algorithm primarily used for classification tasks. It employs information entropy to evaluate the purity of splits, focusing on discrete variables. Despite its limitations, such as the tendency to overfit and inability to handle continuous variables directly, `ID3` has played a crucial role in the evolution of decision tree-based machine learning techniques. Its foundational principles have been built upon by successors like `C4.5` and `CART`, highlighting its significance in the community. [Data: Entities (0), Relationships (0)]
+
+### C4.5's improvements over ID3
+
+`C4.5` is an improved version of `ID3`, designed to address several limitations of its predecessor. It introduces features like continuous variable handling, pruning, and improved attribute selection criteria, making it a more robust and versatile algorithm. These enhancements have allowed `C4.5` to maintain the core principles of decision tree construction while overcoming the challenges faced by `ID3`, thereby solidifying its position in the community. [Data: Relationships (0)]
+
+### CART's versatility in handling both classification and regression tasks
+
+`CART` (Classification and Regression Trees) extends the capabilities of decision tree algorithms by supporting both classification and regression tasks. It builds binary trees and uses cut points for dataset partitioning, effectively handling continuous variables. `CART`'s methodology has been integrated into popular machine learning libraries like `SKLEARN`, making it a versatile and widely used algorithm in the field. [Data: Entities (2), Relationships (7)]
+
+### SKLEARN's implementation of CART
+
+`SKLEARN`, or `Scikit-learn`, is a widely used machine learning library that implements the `CART` algorithm for decision tree modeling. While it does not directly support `ID3` and `C4.5`, `SKLEARN`'s decision tree models are based on `CART`'s robust framework, enabling users to leverage its capabilities for predictive modeling and data analysis. This integration underscores the importance of `CART` in the community and its influence on machine learning practices. [Data: Entities (3), Relationships (7)]
+
+### Role of dataset columns in decision tree modeling
+
+Dataset columns such as `AGE`, `INCOME`, `STUDENT`, and `CREDIT_RATING` play a crucial role in decision tree modeling by calculating information gain and reducing impurity. These columns are used in algorithms like `ID3` to partition data effectively, highlighting their significance in the decision-making process of machine learning models. [Data: Entities (6, 7, 8, 9), Relationships (10, 11, 12, 13)]
+
+# NumPy and ML_Basic_Function Community
+
+This community is centered around the `NumPy` library and the `ML_Basic_Function` module, which are interconnected through their use in numerical computations for machine learning tasks. `NumPy`, being a fundamental library for numerical computations in Python, plays a crucial role in the functionality of `ML_Basic_Function`, indicating a significant dependency relationship.
+
+### NumPy's foundational role in machine learning
+
+`NumPy` is identified as a Python library essential for numerical computations, including those required in machine learning algorithms such as decision trees. Its widespread use and importance in data science and machine learning projects underscore its foundational role in these fields. [Data: Entities (4)]
+
+### ML_Basic_Function's dependency on NumPy
+
+`ML_Basic_Function`, a module or library for machine learning tasks, likely utilizes `NumPy` for numerical computations. This dependency highlights the interconnectedness of tools and libraries within the machine learning ecosystem and the pivotal role of `NumPy` in enabling complex computations. [Data: Relationships (9)]
+
+### The significance of numerical computations in machine learning
+
+Numerical computations are at the heart of machine learning algorithms, enabling the processing and analysis of large datasets. The reliance of `ML_Basic_Function` on `NumPy` for these computations illustrates the critical importance of efficient and reliable numerical computation libraries in advancing machine learning technologies. [Data: Entities (4, 5), Relationships (9)]
+
+### Potential for innovation and development
+
+The relationship between `NumPy` and `ML_Basic_Function` suggests a community with a strong foundation for innovation and development in machine learning. The integration of these tools can lead to advancements in algorithm efficiency, accuracy, and the development of new machine learning models. [Data: Relationships (9)]
+
+
+
+## 模型调用次数和使用的token数量
 
 ```
 print(
-    f&quot;LLM calls: {result.llm_calls}. Prompt tokens: {result.prompt_tokens}. Output tokens: {result.output_tokens}.&quot;
+    f"LLM calls: {result.llm_calls}. Prompt tokens: {result.prompt_tokens}. Output tokens: {result.output_tokens}."
 )
 ```
 

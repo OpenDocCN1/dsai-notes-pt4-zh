@@ -1,3 +1,4 @@
+
 # Claude官方开源16个技能库，老金帮你挑出5个必装神器
 
 > 来源：[https://my.feishu.cn/docx/PmJ3dLa8too1qWxWzTOcv2PXnag](https://my.feishu.cn/docx/PmJ3dLa8too1qWxWzTOcv2PXnag)
@@ -16,21 +17,21 @@
 
 ## 先说这个库是什么
 
-官方仓库地址：github.com/anthropics/skills
+官方仓库地址：`github.com/anthropics/skills`
 
 **简单说**：Anthropic把内部用的Claude插件打包开源了。
 
 分两个包：
 
-1、document-skills（4个）
+1、`document-skills`（4个）
 
 处理文档的，Word、PDF、PPT、Excel。
 
 这4个是Claude.ai处理文档的底层能力，现在开源了。
 
-2、example-skills（12个）
+2、`example-skills`（12个）
 
-创意和开发类，做GIF、设计图、测试网页、创建MCP服务器等。
+创意和开发类，做GIF、设计图、测试网页、创建`MCP`服务器等。
 
 两个包加起来16个。
 
@@ -67,7 +68,7 @@
 /plugin list
 ```
 
-看到 document-skills 和 example-skills 在列表里就是成功了。
+看到`document-skills`和`example-skills`在列表里就是成功了。
 
 ![](img/dbb7aa217cc0ad3156894b6e3cda40fe.png)
 
@@ -79,7 +80,7 @@
 
 Claude会列出所有已安装的Skills。
 
-看到 pdf、skill-creator、webapp-testing 这些名字出现，就是装好了。
+看到`pdf`、`skill-creator`、`webapp-testing`这些名字出现，就是装好了。
 
 ## 装好了怎么用？
 
@@ -89,7 +90,7 @@ Claude会列出所有已安装的Skills。
 
 Skills不是像菜单一样让你点选的。
 
-你只需要**正常和Claude对话****，描述你**想做的事，Claude会自动判断用哪个Skill。
+你只需要正常和Claude对话，描述你想做的事，Claude会自动判断用哪个Skill。
 
 **举个例子**：
 
@@ -101,7 +102,7 @@ Skills不是像菜单一样让你点选的。
 
 然后把PDF文件拖进去。
 
-Claude自动识别到你在处理PDF，就会调用pdf这个Skill。
+Claude自动识别到你在处理PDF，就会调用`pdf`这个Skill。
 
 你会看到它开始提取文字、分析内容。
 
@@ -113,9 +114,9 @@ Claude自动识别到你在处理PDF，就会调用pdf这个Skill。
 
 > "帮我创建一个自动生成周报的插件"
 
-Claude识别到你要创建Skill，自动调用skill-creator。
+Claude识别到你要创建Skill，自动调用`skill-creator`。
 
-然后一步步问你需求，帮你生成SKILL.md文件。
+然后一步步问你需求，帮你生成`SKILL.md`文件。
 
 **简单说**：别管什么Skill不Skill，正常说话就行。
 
@@ -127,15 +128,15 @@ Claude比你聪明，它知道该用哪个。
 
 **先说清楚**：这5个不能单独装，装了上面两个包就全有了。
 
-PDF在document-skills包里，其他4个都在example-skills包里。
+PDF在`document-skills`包里，其他4个都在`example-skills`包里。
 
-执行那两条 /plugin install 命令，5个就都装好了。
+执行那两条`/plugin install`命令，5个就都装好了。
 
 ---
 
 ### 第1个：PDF（必装指数：⭐⭐⭐⭐⭐）
 
-**所在包**：document-skills
+**所在包**：`document-skills`
 
 **能干什么**：
 
@@ -157,9 +158,9 @@ PDF在document-skills包里，其他4个都在example-skills包里。
 
 **适合谁**：经常处理PDF合同、报告、表单的朋友。
 
-### 第2个：skill-creator（必装指数：⭐⭐⭐⭐⭐）
+### 第2个：`skill-creator`（必装指数：⭐⭐⭐⭐⭐）
 
-**所在包**：example-skills
+**所在包**：`example-skills`
 
 **能干什么**：
 
@@ -185,17 +186,17 @@ PDF在document-skills包里，其他4个都在example-skills包里。
 
 输出格式是什么？
 
-问完自动生成SKILL.md文件，稍微改改就能用了。
+问完自动生成`SKILL.md`文件，稍微改改就能用了。
 
 **适合谁**：想自定义Claude能力的朋友。
 
-### 第3个：webapp-testing（必装指数：⭐⭐⭐⭐）
+### 第3个：`webapp-testing`（必装指数：⭐⭐⭐⭐）
 
-**所在包**：example-skills
+**所在包**：`example-skills`
 
 **能干什么**：
 
-用Playwright测试本地网页。
+用`Playwright`测试本地网页。
 
 能截图、查看日志、验证UI。
 
@@ -213,13 +214,13 @@ Claude自动打开浏览器、调整分辨率、截图。
 
 **适合谁**：写前端、做网页的朋友。
 
-### 第4个：mcp-builder（必装指数：⭐⭐⭐⭐）
+### 第4个：`mcp-builder`（必装指数：⭐⭐⭐⭐）
 
-**所在包**：example-skills
+**所在包**：`example-skills`
 
 **能干什么**：
 
-教你创建MCP服务器。
+教你创建`MCP`服务器。
 
 想让Claude连接外部API？这个很有用。
 
@@ -229,19 +230,19 @@ Claude自动打开浏览器、调整分辨率、截图。
 
 直接说：
 
-> "帮我创建一个库存查询的MCP服务器"
+> "帮我创建一个库存查询的`MCP`服务器"
 
-它会生成Python代码，复制粘贴就能跑。
+它会生成`Python`代码，复制粘贴就能跑。
 
-以前看MCP文档头大。
+以前看`MCP`文档头大。
 
 现在10分钟就能搭一个。
 
 **适合谁**：想让Claude连接自己系统的朋友。
 
-### 第5个：brand-guidelines（必装指数：⭐⭐⭐）
+### 第5个：`brand-guidelines`（必装指数：⭐⭐⭐）
 
-**所在包**：example-skills
+**所在包**：`example-skills`
 
 **能干什么**：
 
@@ -269,19 +270,19 @@ Claude自动按设计规范调整颜色。
 
 **文档类（3个）**：
 
-docx（Word处理）、pptx（PPT处理）、xlsx（Excel处理）
+`docx`（Word处理）、`pptx`（PPT处理）、`xlsx`（Excel处理）
 
 **创意类（4个）**：
 
-algorithmic-art（代码艺术图）、canvas-design（视觉设计）、slack-gif-creator（Slack动图表情）、theme-factory（主题样式）
+`algorithmic-art`（代码艺术图）、`canvas-design`（视觉设计）、`slack-gif-creator`（Slack动图表情）、`theme-factory`（主题样式）
 
 **开发类（3个）**：
 
-artifacts-builder（React复杂组件）、frontend-design（前端设计）、template-skill（技能模板）
+`artifacts-builder`（`React`复杂组件）、`frontend-design`（前端设计）、`template-skill`（技能模板）
 
 **办公类（1个）**：
 
-internal-comms（内部邮件、周报、FAQ）
+`internal-comms`（内部邮件、周报、FAQ）
 
 文档类的3个值得一起装，处理文档是刚需。
 
@@ -291,9 +292,9 @@ internal-comms（内部邮件、周报、FAQ）
 
 **1、开源协议**
 
-example-skills是Apache 2.0，完全开源。
+`example-skills`是`Apache 2.0`，完全开源。
 
-document-skills是source-available，可以看代码但不能商用。
+`document-skills`是`source-available`，可以看代码但不能商用。
 
 自己用没问题，别拿去卖。
 
@@ -305,11 +306,11 @@ Skills功能需要Pro、Max、Team或Enterprise版本。（中转站不用管，
 
 **3、有些需要额外配置**
 
-比如webapp-testing需要装Playwright MCP服务器。
+比如`webapp-testing`需要装`Playwright` `MCP`服务器。
 
-brand-guidelines需要配置品牌色。
+`brand-guidelines`需要配置品牌色。
 
-装之前看一下SKILL.md里的Requirements。
+装之前看一下`SKILL.md`里的Requirements。
 
 ## 总结
 
@@ -317,7 +318,7 @@ Anthropic这波开源挺良心的。
 
 用了一周，确实提升了不少效率。
 
-特别是PDF和skill-creator，现在天天用。
+特别是PDF和`skill-creator`，现在天天用。
 
 如果你用Claude Code，这16个建议都装上试试。
 
@@ -327,10 +328,10 @@ Anthropic这波开源挺良心的。
 
 ## 参考来源
 
-Anthropic Skills官方仓库：github.com/anthropics/skills
+Anthropic Skills官方仓库：`github.com/anthropics/skills`
 
-Claude Code Skills文档：code.claude.com/docs/en/skills
+Claude Code Skills文档：`code.claude.com/docs/en/skills`
 
-Agent Skills标准：agentskills.io
+Agent Skills标准：`agentskills.io`
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

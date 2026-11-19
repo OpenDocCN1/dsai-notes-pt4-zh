@@ -1,18 +1,21 @@
+
 # Midjourney AI智能绘画从入门到实战
 
 > 来源：[https://geekbang.feishu.cn/docx/UIGBd4edCocy57xu517cVY9tnxh](https://geekbang.feishu.cn/docx/UIGBd4edCocy57xu517cVY9tnxh)
 
-> 👨 作者： Z69861645
+> 👨 作者：Z69861645
 
 > 📃 作者介绍：设计师爱好者
 
-> 🔗 原文链接： h[ttps://www.zcool.c](https://www.zcool.com.cn/work/ZNjU2MjczNTI=.html?share_id=1595470094)om.cn/work/ZNjU2...
+> 🔗 原文链接：h[ttps://www.zcool.c](https://www.zcool.com.cn/work/ZNjU2MjczNTI=.html?share_id=1595470094)om.cn/work/ZNjU2...
 
 > ⏰ 收录时间：2024-06-21 16:51:48 (UTC+8)
 
 > 备注：如有侵权，联系删除！！🫰
 
 ![](img/24a4e56a4ccdf390bf362497ef21bedf.png)
+
+收藏
 
 ![](img/6b4aa856165f25fbd3cde0d907095572.png)
 

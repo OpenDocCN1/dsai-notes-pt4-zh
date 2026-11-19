@@ -1,6 +1,7 @@
+
 # 网页仿写
 
-> 来源：[https://deepwisdom.feishu.cn/docx/KwCjdY5wvoprHpxUQ6iczt76nbe](https://deepwisdom.feishu.cn/docx/KwCjdY5wvoprHpxUQ6iczt76nbe)
+> 来源：[`https://deepwisdom.feishu.cn/docx/KwCjdY5wvoprHpxUQ6iczt76nbe`](https://deepwisdom.feishu.cn/docx/KwCjdY5wvoprHpxUQ6iczt76nbe)
 
 ## 概述
 
@@ -10,7 +11,7 @@
 
 ### 任务
 
-给定一个网页的URL或图片，使用MetaGPT内部集成GPT-4 Vision的工具GPTvGenerator仿写出一个相似的网页
+给定一个网页的URL或图片，使用MetaGPT内部集成GPT-4 Vision的工具`GPTvGenerator`仿写出一个相似的网页
 
 ### 代码
 
@@ -30,6 +31,6 @@ python examples/di/imitate_webpage.py
 
 ## 机制解释
 
-1.  interpreter规划任务Plan时，生成了若干个任务，根据所有注册工具的docstring分配任务的工具类型。interpreter自动将生成网页的中间任务类型设置为"image2webpage"，在执行任务时将扫描是否有GPTvGenerator相关工具可用。
+1.  `interpreter`规划任务`Plan`时，生成了若干个任务，根据所有注册工具的`docstring`分配任务的工具类型。`interpreter`自动将生成网页的中间任务类型设置为`image2webpage`，在执行任务时将扫描是否有`GPTvGenerator`相关工具可用。
 
-1.  发现可用工具：['GPTvGenerator']，加载工具代码，根据当前需求使用generate_webpages方法生成相关的前端代码，并使用save_webpages方法保存。
+2.  发现可用工具：`['GPTvGenerator']`，加载工具代码，根据当前需求使用`generate_webpages`方法生成相关的前端代码，并使用`save_webpages`方法保存。

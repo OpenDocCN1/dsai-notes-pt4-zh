@@ -1,3 +1,4 @@
+
 # 清华领衔发布多模态评估MultiTrust：GPT-4可信度有几何？
 
 > 来源：[https://agijuejin.feishu.cn/docx/XwhndZj8BopgSExi13ncCBJSntf](https://agijuejin.feishu.cn/docx/XwhndZj8BopgSExi13ncCBJSntf)
@@ -6,7 +7,7 @@
 
 > 转载请联系原作者取得授权
 
-**本工作由 清**华大学 朱军 教授领衔的基础理论创新团队发起。长期以来，团队着眼于目前 人工智能 发展的瓶颈问题，探索原创性 人工智能 理论和关键技术，在智能算法的对抗安全理论和方法研究中处于国际领先水平，深入研究 深度学习 的对抗鲁棒性和数据利用效率等基础共性问题。相关工作获吴文俊 人工智能 自然科学一等奖，发表CCF A类论文100余篇，研制开源的ARES对抗攻防算法平台（https://github.com/thu-ml/ares），并实现部分专利产学研转化落地应用。
+本工作由 清华大学 朱军 教授领衔的基础理论创新团队发起。长期以来，团队着眼于目前 人工智能 发展的瓶颈问题，探索原创性 人工智能 理论和关键技术，在智能算法的对抗安全理论和方法研究中处于国际领先水平，深入研究 深度学习 的对抗鲁棒性和数据利用效率等基础共性问题。相关工作获吴文俊 人工智能 自然科学一等奖，发表CCF A类论文100余篇，研制开源的ARES对抗攻防算法平台（https://github.com/thu-ml/ares），并实现部分专利产学研转化落地应用。
 
 以GPT-4o为代表的多模态大 语言模型 （MLLMs）因其在语言、图像等多种模态上的卓越表现而备受瞩目。它们不仅在日常工作中成为用户的得力助手，还逐渐渗透到自动驾驶、医学诊断等各大应用领域，掀起了一场技术革命。
 
@@ -30,15 +31,15 @@
 
 ![](img/9efb4d77e3ccbc8a6b4e41778014cc43.png)
 
-+   论文标题：Benchmarking Trustworthiness of Multimodal Large Language Models: A Comprehensive Study
++ 论文标题：Benchmarking Trustworthiness of Multimodal Large Language Models: A Comprehensive Study
 
-+   论文链接：https://arxiv.org/pdf/2406.07057
++ 论文链接：https://arxiv.org/pdf/2406.07057
 
-+   项目主页：https://multi-trust.github.io/
++ 项目主页：https://multi-trust.github.io/
 
-+   代码仓库：https://github.com/thu-ml/MMTrustEval
++ 代码仓库：https://github.com/thu-ml/MMTrustEval
 
-MultiTrust 基准 框架
+## MultiTrust 基准框架
 
 从已有的大模型评估工作中，MultiTrust提炼出了五个可信评价维度——事实性（Truthfulness）、安全性（Safety）、鲁棒性（Robustness）、公平性（Fairness）、隐私保护（Privacy），并进行二级分类，有针对性地构建了任务、指标、数据集来提供全面的评估。
 
@@ -66,7 +67,7 @@ MultiTrust 基准 框架
 
 跨模态影响则指新模态的加入对原有模态可信度的影响，例如无关图像的输入可能会改变大 语言模型 骨干网络在纯文本场景中的可信行为，导致更多不可预测的安全风险。在大 语言模型 可信性评估常用的越狱攻击和上下文隐私泄漏任务中，如果提供给模型一张与文本无关的图片，原本的安全行为就可能被破坏（如图2）。
 
-**结果分析和关键结论**
+## 结果分析和关键结论
 
 ![](img/80409cac94141643542a36cefbc898cd.png)
 
@@ -92,7 +93,7 @@ GPT-4、Claude、Gemini等商用模型针对安全可信已经做过许多加固
 
 详细结果和分析参见论文。
 
-**未来方向**
+## 未来方向
 
 研究结果表明提升多模态大模型的可信度需要研究人员的特别注意。通过借鉴大 语言模型 对齐的方案，多元化的训练数据和场景，以及检索增 强生 成（RAG）和宪法AI（Constitutional AI）等范式可以一定程度上帮助改进。但多模态大模型的可信提升绝不止于此，模态间对齐、视觉编码器的鲁棒性等也是关键影响因素。此外，通过在动态环境中持续评估和优化，增强模型在实际应用中的表现，也是未来的重要方向。
 

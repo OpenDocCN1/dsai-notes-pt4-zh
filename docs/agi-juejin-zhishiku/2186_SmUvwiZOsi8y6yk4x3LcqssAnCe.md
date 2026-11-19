@@ -1,8 +1,7 @@
-# 12.15-MIT教授NeurIPS歧视言论炸雷，中国女学生霸气反击！AI大佬集体痛斥，道歉信来了
-
-> 来源：[https://agijuejin.feishu.cn/docx/W3ladw8KqoBfk3xD6fDc5HtxnJh](https://agijuejin.feishu.cn/docx/W3ladw8KqoBfk3xD6fDc5HtxnJh)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 15 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/W3ladw8KqoBfk3xD6fDc5HtxnJh](https://agijuejin.feishu.cn/docx/W3ladw8KqoBfk3xD6fDc5HtxnJh)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -12,7 +11,7 @@
 
 ### 💡 MIT教授NeurIPS歧视言论炸雷，中国女学生霸气反击！AI大佬集体痛斥，道歉信来了
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJEQTG520511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJEQTG520511ABV6.html?spss=dy_author)
 
 ![](img/bb815a47aa6008380621bc77236de9f3.png)
 
@@ -22,23 +21,23 @@
 
 ### 💡 Xai 发布 Grok-2 模型新版本 速度提升3倍 多语言指令遵循能力更强
 
-小互日报 | [阅读原文](https://xiaohu.ai/p/15976)
+> 小互日报 | [阅读原文](https://xiaohu.ai/p/15976)
 
 ![](img/ab479d3f493423a2d17ed0189d90a9e7.png)
 
-2024 年 12 月 15 日，Xai 发布 Grok-2 模型新版本，速度提升 3 倍，多语言指令遵循能力更强。新版本可进行网页搜索与引用，增加答案可信度；内置高级图像生成器 Aurora；支持处理实时事件并提供未过滤答案。API 添加了两个新模型，价格降低，注册使用可获 25 美元免费积分。官方介绍：https://x.ai/blog/grok-1212。
+2024 年 12 月 15 日，Xai 发布 Grok-2 模型新版本，速度提升 3 倍，多语言指令遵循能力更强。新版本可进行网页搜索与引用，增加答案可信度；内置高级图像生成器 Aurora；支持处理实时事件并提供未过滤答案。API 添加了两个新模型，价格降低，注册使用可获 25 美元免费积分。官方介绍：`https://x.ai/blog/grok-1212`。
 
 ### 💡 腾讯🛰️正式发布多模态大模型 POINTS 1.5
 
-IT之家 | [阅读原文](https://www.ithome.com/0/817/665.htm)
+> IT之家 | [阅读原文](https://www.ithome.com/0/817/665.htm)
 
 ![](img/403572497934ff7af54ad50f36da2d23.png)
 
 2024 年 12 月 14 日，腾讯🛰️发布多模态大模型 POINTS 1.5。它沿用 LLaVA 架构，由 vision encoder、projector 和大语言模型组成。POINTS 1.5-7B 位居全球 10B 以下开源模型榜首，超越 Qwen2-VL 等模型。在复杂场景的 OCR、推理等方面表现不错。
 
-### 💡 阶跃星辰推出国内首个千亿参数端到端语音大模型“ Step-1o”
+### 💡 阶跃星辰推出国内首个千亿参数端到端语音大模型“ Step - 1o”
 
-IT之家 | [阅读原文](https://www.ithome.com/0/817/647.htm)
+> IT之家 | [阅读原文](https://www.ithome.com/0/817/647.htm)
 
 ![](img/f10365b6f64ce2bf9ff96556124cbf35.png)
 
@@ -46,7 +45,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/647.htm)
 
 ### 💡 万字独家爆光，首揭o1 pro架构！惊人反转，Claude 3.5 Opus没失败？
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJCCGLGR0511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJCCGLGR0511ABV6.html?spss=dy_author)
 
 ![](img/f2f5fff186d7dc0cfa3c0f4e3c7d74f0.png)
 
@@ -56,7 +55,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/647.htm)
 
 ### 💡 OpenAI官方爆料，长文开怼马斯克：靠打官司实现不了AGI！
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJEQLABV0511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJEQLABV0511ABV6.html?spss=dy_author)
 
 ![](img/c270dd30f50ad843c1fff13c1bc6bffb.png)
 
@@ -64,7 +63,7 @@ OpenAI 与马斯克法律战持续数月。双方曾就 OpenAI 转型进行谈�
 
 ### 💡 Claude 3.5编程收入暴增10倍，抢走Cursor反杀OpenAI！估值180亿初创3年颠覆硅谷
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJEQIHNR0511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJEQIHNR0511ABV6.html?spss=dy_author)
 
 ![](img/f5a4c455685ab6e292b750401f5844a7.png)
 
@@ -72,7 +71,7 @@ OpenAI 与马斯克法律战持续数月。双方曾就 OpenAI 转型进行谈�
 
 ### 💡 「中美科技合作协定」终于续签！但AI半导体等关键技术却遭排除
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJCUVEM10511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJCUVEM10511ABV6.html?spss=dy_author)
 
 ![](img/41355235f4bd8f3d68541b3cd3aa8531.png)
 
@@ -80,7 +79,7 @@ OpenAI 与马斯克法律战持续数月。双方曾就 OpenAI 转型进行谈�
 
 ### 💡 26岁OpenAI举报人疑自杀！死前揭ChatGPT训练黑幕
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJCCGHSR0511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJCCGHSR0511ABV6.html?spss=dy_author)
 
 ![](img/65de0359820087c621ad7e11bf5bb191.png)
 
@@ -88,7 +87,7 @@ OpenAI 与马斯克法律战持续数月。双方曾就 OpenAI 转型进行谈�
 
 ### 💡 欧洲万亿美元科技巨头为0，被美国「泰坦」无情碾压！LeCun转评
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJCCFAJB0511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJCCFAJB0511ABV6.html?spss=dy_author)
 
 ![](img/17f68864f488dda359246de3f8a3202a.png)
 
@@ -96,7 +95,7 @@ OpenAI 与马斯克法律战持续数月。双方曾就 OpenAI 转型进行谈�
 
 ### 💡 共建多元化 AI 数据生态：微软携手哈佛、OpenAI 等组织，消除 AI 偏见
 
-IT之家 | [阅读原文](https://www.ithome.com/0/817/584.htm)
+> IT之家 | [阅读原文](https://www.ithome.com/0/817/584.htm)
 
 ![](img/94cc97691c378f7a8bd1cda39e09b49d.png)
 
@@ -104,7 +103,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/584.htm)
 
 ### 💡 马斯克旗下 xAI 宣布新版 Grok-2 模型向 𝕏 平台所有用户免费提供
 
-IT之家 | [阅读原文](https://www.ithome.com/0/817/580.htm)
+> IT之家 | [阅读原文](https://www.ithome.com/0/817/580.htm)
 
 ![](img/55e06b1c9c448e7a4ea9c86fd40a162c.png)
 
@@ -114,7 +113,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/580.htm)
 
 ### 💡 AMD 苏姿丰：12 个月后的 AI 将比现在更惊人，至少有 10 倍进步
 
-IT之家 | [阅读原文](https://www.ithome.com/0/817/634.htm)
+> IT之家 | [阅读原文](https://www.ithome.com/0/817/634.htm)
 
 ![](img/da926800efdcd5c773bc7cb5e684efff.png)
 
@@ -122,7 +121,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/634.htm)
 
 ### 💡 Ilya向全世界宣布：预训练结束了！全球AI数据耗尽，超级智能才是未来
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JJCNA03N0511ABV6.html?spss=dy_author)
+> 新智元 | [阅读原文](https://www.163.com/dy/article/JJCNA03N0511ABV6.html?spss=dy_author)
 
 ![](img/d42e465e5c8f8901493b883a2193bf2a.png)
 

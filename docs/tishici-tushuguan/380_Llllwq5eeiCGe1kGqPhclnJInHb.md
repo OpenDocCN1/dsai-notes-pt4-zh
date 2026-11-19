@@ -1,18 +1,15 @@
+
 # 1、LangGPT框架
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/B7wudxH72ox6🐧x58Hdcj0d3nJc](https://vxc3hj17dym.feishu.cn/docx/B7wudxH72ox6🐧x58Hdcj0d3nJc)
-
+>
 > **关于作者：**[Welcome to Jackey. | 甲木个人杂志](https://langgptai.feishu.cn/docx/Oturdxhj2oxO3hxp5tZcbPCan9e?from=from_copylink)
-
+>
 > 大语言模型十分擅长角色扮演，大部分优质 prompt 开头往往就是 “我希望你作为xxx”，“我希望你扮演xxx” 的句式定义一个角色，只要提供角色说明，角色行为，技能等描述，就能做出很符合角色的行为。
-
-> 
-
-> 如果你熟悉编程语言里的 “对象”，就知道其实 prompt 的“角色声明”和类声明很像。因此 可以将 prompt 抽象为一个角色 （Role），包含名字，描述，技能，工作方法等描述，然后就得到了 LangGPT 的 Role 模板。
-
-> 
-
-> 使用 Role 模板，只需要按照模板填写相应内容即可。除了变量和模板外，LangGPT 还提供了命令，记忆器，条件句等语法设置方法。
+>
+> 如果你熟悉编程语言里的 “对象”，就知道其实 prompt 的“角色声明”和类声明很像。因此可以将 prompt 抽象为一个角色（`Role`），包含名字，描述，技能，工作方法等描述，然后就得到了 LangGPT 的 `Role` 模板。
+>
+> 使用 `Role` 模板，只需要按照模板填写相应内容即可。除了变量和模板外，LangGPT 还提供了命令，记忆器，条件句等语法设置方法。
 
 ```
 # Role: 设置角色名称，一级标题，作用范围为全局

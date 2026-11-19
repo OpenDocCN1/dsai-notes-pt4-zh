@@ -1,10 +1,13 @@
+
 # The Ultimate Prompt to Unlock 100% of ChatGPT‑5’s Power
 
 > 来源：[https://my.feishu.cn/docx/FxL2dbHoMofHPOxoGnucGRRMnv7](https://my.feishu.cn/docx/FxL2dbHoMofHPOxoGnucGRRMnv7)
 
-**使用场景或用例：**适合希望显著提升 GPT‑5 模型响应质量的用户，包括写作、规划、生产力工作者；通过清晰结构化指令最大化模型潜能。
+## 使用场景或用例
 
-**提示词：**
+适合希望显著提升 GPT‑5 模型响应质量的用户，包括写作、规划、生产力工作者；通过清晰结构化指令最大化模型潜能。
+
+## 提示词
 
 ```
 From now on, act as my expert assistant with access to all your reasoning and knowledge. Always provide:

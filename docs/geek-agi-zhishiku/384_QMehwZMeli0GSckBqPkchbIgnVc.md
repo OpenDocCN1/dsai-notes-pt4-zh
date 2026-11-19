@@ -1,6 +1,7 @@
+
 # 实践：给BERT补充其他特征的编码器
 
-> 来源：[https://geekbang.feishu.cn/docx/CUTOdnIgJofmI6xfaaRchE5YnCd](https://geekbang.feishu.cn/docx/CUTOdnIgJofmI6xfaaRchE5YnCd)
+> 来源：https://geekbang.feishu.cn/docx/CUTOdnIgJofmI6xfaaRchE5YnCd
 
 > 👨🏻 作者：余俊晖
 
@@ -10,23 +11,23 @@
 
 > ⏰ 收录时间：2024-05-28 17:09:42
 
-> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247483974&idx=1&sn=52990b70e5d6f5b5041bee21f33d077e&chksm=cf9dd6c7f8ea5fd11342b713ff6abd91389b41dcd0cded07b1a216803d0b9bdcd62f91ca9244#rd)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247483974&idx=1&sn=52990b70e5d6f5b5041bee21f33d077e&chksm=cf9dd6c7f8ea5fd11342b713ff6abd91389b41dcd0cded07b1a216803d0b9bdcd62f91ca9244#rd
 
 ![](img/9fec404ad1e689053b72541965d599b2.png)
 
 关注作者👸号，获取更多AI知识
 
-## **前言 **
+## 前言
 
 特征工程是传统的机器学习基石，然而，随着BERT等预训练语言模型的发展，文本语义表示得到了极大的改善，本文将实践一种多特征编码器。
 
-## ** ****1、POS特征生成 **
+## 1、POS特征生成
 
-### ** 代码： **
+### 代码
 
 ```
 import spacy
-nlp = spacy.load(&quot;en_core_web_sm&quot;)
+nlp = spacy.load("en_core_web_sm")
 
 def spacy_pos_tag(sentence):
     doc = nlp(sentence)
@@ -36,210 +37,210 @@ def spacy_pos_tag(sentence):
         pos.append(word.tag_)
     return pos
 
-if __name__ == &#x27;__main__&#x27;:
-    print(spacy_pos_tag(&#x27;Iraq Blames Market Blast on Coalition .&#x27;))
-
+if __name__ == '__main__':
+    print(spacy_pos_tag('Iraq Blames Market Blast on Coalition .'))
 ```
 
-### ** 输出： **
+### 输出
 
 ```
 [Iraq Blames Market Blast on Coalition .]
-[&#x27;NNP&#x27;, &#x27;NNP&#x27;, &#x27;NNP&#x27;, &#x27;NNP&#x27;, &#x27;IN&#x27;, &#x27;NNP&#x27;, &#x27;.&#x27;]
+['NNP', 'NNP', 'NNP', 'NNP', 'IN', 'NNP', '.']
 ```
 
-## ** ****2、NLP中常见的特征 **
+## 2、NLP中常见的特征
 
-+   Word特征
++ Word特征
 
-+   Token特征
++ Token特征
 
-+   Char特征
++ Char特征
 
-+   POS特征
++ POS特征
 
-## ** ****3、数据处理 **
+## 3、数据处理
 
 本文与ACE2005数据集为例，处理该数据的格式样例如下：
 
 ```
 [
     {
-        &quot;tokens&quot;: [&quot;Their&quot;, &quot;military&quot;, &quot;service&quot;, &quot;goes&quot;, &quot;back&quot;, &quot;to&quot;, &quot;the&quot;, &quot;Vietnam&quot;, &quot;era&quot;, &quot;.&quot;],
-        &quot;pos&quot;: [&quot;PRP$&quot;, &quot;JJ&quot;, &quot;NN&quot;, &quot;VBZ&quot;, &quot;RB&quot;, &quot;TO&quot;, &quot;DT&quot;, &quot;NNP&quot;, &quot;NN&quot;, &quot;.&quot;],
-        &quot;entities&quot;: [
-            {&quot;type&quot;: &quot;PER&quot;, &quot;start&quot;: 0, &quot;end&quot;: 1},
-            {&quot;type&quot;: &quot;ORG&quot;, &quot;start&quot;: 1, &quot;end&quot;: 2},
-            {&quot;type&quot;: &quot;GPE&quot;, &quot;start&quot;: 7, &quot;end&quot;: 8}
+        "tokens": ["Their", "military", "service", "goes", "back", "to", "the", "Vietnam", "era", "."],
+        "pos": ["PRP$", "JJ", "NN", "VBZ", "RB", "TO", "DT", "NNP", "NN", "."],
+        "entities": [
+            {"type": "PER", "start": 0, "end": 1},
+            {"type": "ORG", "start": 1, "end": 2},
+            {"type": "GPE", "start": 7, "end": 8}
         ],
-        &quot;ltokens&quot;: [&quot;WOODRUFF&quot;, &quot;We&quot;, &quot;know&quot;, &quot;that&quot;, &quot;some&quot;, &quot;of&quot;, &quot;the&quot;, &quot;American&quot;, &quot;troops&quot;, &quot;now&quot;, &quot;fighting&quot;,
-                    &quot;in&quot;, &quot;Iraq&quot;, &quot;are&quot;, &quot;longtime&quot;, &quot;veterans&quot;, &quot;of&quot;, &quot;warfare&quot;, &quot;,&quot;, &quot;probably&quot;, &quot;not&quot;, &quot;most&quot;, &quot;,&quot;,
-                    &quot;but&quot;,
-                    &quot;some&quot;, &quot;.&quot;],
-        &quot;rtokens&quot;: [&quot;Others&quot;, &quot;,&quot;, &quot;though&quot;, &quot;,&quot;, &quot;are&quot;, &quot;novices&quot;, &quot;.&quot;]
+        "ltokens": ["WOODRUFF", "We", "know", "that", "some", "of", "the", "American", "troops", "now", "fighting",
+                    "in", "Iraq", "are", "longtime", "veterans", "of", "warfare", ",", "probably", "not", "most", ",",
+                    "but",
+                    "some", "."],
+        "rtokens": ["Others", ",", "though", ",", "are", "novices", "."]
     },
     ...
 ]
-
 ```
 
 词汇表样例：
 
 ```
 {
-  &quot;pos&quot;: [
-    &quot;FW&quot;,
-    &quot;VBZ&quot;,
-    &quot;PRP&quot;,
-    &quot;DT&quot;,
-    &quot;VBD&quot;,
-    &quot;IN&quot;,
-    &quot;NNS&quot;,
-    &quot;.&quot;,
-    &quot;CD&quot;,
-    &quot;``&quot;,
-    &quot;WDT&quot;,
-    &quot;&#x27;&#x27;&quot;,
-    &quot;POS&quot;,
-    &quot;VBN&quot;,
-    &quot;WP&quot;,
-    &quot;RBS&quot;,
-    &quot;NNPS&quot;,
-    &quot;JJS&quot;,
-    &quot;RB&quot;,
-    &quot;:&quot;,
-    &quot;JJR&quot;,
-    &quot;PRP$&quot;,
-    &quot;WP$&quot;,
-    &quot;TO&quot;,
-    &quot;NN&quot;,
-    &quot;WRB&quot;,
-    &quot;VB&quot;,
-    &quot;-RRB-&quot;,
-    &quot;JJ&quot;,
-    &quot;MD&quot;,
-    &quot;$&quot;,
-    &quot;-LRB-&quot;,
-    &quot;VBP&quot;,
-    &quot;RP&quot;,
-    &quot;RBR&quot;,
-    &quot;LS&quot;,
-    &quot;EX&quot;,
-    &quot;NNP&quot;,
-    &quot;CC&quot;,
-    &quot;#&quot;,
-    &quot;,&quot;,
-    &quot;SYM&quot;,
-    &quot;PDT&quot;,
-    &quot;UH&quot;,
-    &quot;VBG&quot;
+  "pos": [
+    "FW",
+    "VBZ",
+    "PRP",
+    "DT",
+    "VBD",
+    "IN",
+    "NNS",
+    ".",
+    "CD",
+    "``",
+    "WDT",
+    "''",
+    "POS",
+    "VBN",
+    "WP",
+    "RBS",
+    "NNPS",
+    "JJS",
+    "RB",
+    ":",
+    "JJR",
+    "PRP$",
+    "WP$",
+    "TO",
+    "NN",
+    "WRB",
+    "VB",
+    "-RRB-",
+    "JJ",
+    "MD",
+    "$",
+    "-LRB-",
+    "VBP",
+    "RP",
+    "RBR",
+    "LS",
+    "EX",
+    "NNP",
+    "CC",
+    "#",
+    ",",
+    "SYM",
+    "PDT",
+    "UH",
+    "VBG"
   ],
-  &quot;char&quot;: [
-    &quot;o&quot;,
-    &quot;8&quot;,
-    &quot;/&quot;,
-    &quot;&gt;&quot;,
-    &quot;^&quot;,
-    &quot;@&quot;,
-    &quot;D&quot;,
-    &quot;Y&quot;,
-    &quot;?&quot;,
-    &quot;c&quot;,
-    &quot;.&quot;,
-    &quot;Q&quot;,
-    &quot;R&quot;,
-    &quot;0&quot;,
-    &quot;e&quot;,
-    &quot;W&quot;,
-    &quot;5&quot;,
-    &quot;X&quot;,
-    &quot;p&quot;,
-    &quot;r&quot;,
-    &quot;M&quot;,
-    &quot;C&quot;,
-    &quot;|&quot;,
-    &quot;i&quot;,
-    &quot;Z&quot;,
-    &quot;l&quot;,
-    &quot;9&quot;,
-    &quot;j&quot;,
-    &quot;4&quot;,
-    &quot;$&quot;,
-    &quot;%&quot;,
-    &quot;y&quot;,
-    &quot;P&quot;,
-    &quot;s&quot;,
-    &quot;6&quot;,
-    &quot;G&quot;,
-    &quot;!&quot;,
-    &quot;m&quot;,
-    &quot;S&quot;,
-    &quot;I&quot;,
-    &quot;*&quot;,
-    &quot;h&quot;,
-    &quot;,&quot;,
-    &quot;k&quot;,
-    &quot;_&quot;,
-    &quot;a&quot;,
-    &quot;B&quot;,
-    &quot;v&quot;,
-    &quot;d&quot;,
-    &quot;N&quot;,
-    &quot;1&quot;,
-    &quot;7&quot;,
-    &quot;-&quot;,
-    &quot;q&quot;,
-    &quot;&#x27;&quot;,
-    &quot;2&quot;,
-    &quot;w&quot;,
-    &quot;:&quot;,
-    &quot;&lt;&quot;,
-    &quot;3&quot;,
-    &quot;;&quot;,
-    &quot;t&quot;,
-    &quot;u&quot;,
-    &quot;+&quot;,
-    &quot;J&quot;,
-    &quot;&amp;&quot;,
-    &quot;`&quot;,
-    &quot;F&quot;,
-    &quot;=&quot;,
-    &quot;V&quot;,
-    &quot;f&quot;,
-    &quot;L&quot;,
-    &quot;U&quot;,
-    &quot;T&quot;,
-    &quot;n&quot;,
-    &quot;x&quot;,
-    &quot;b&quot;,
-    &quot;K&quot;,
-    &quot;#&quot;,
-    &quot;E&quot;,
-    &quot;g&quot;,
-    &quot;H&quot;,
-    &quot;O&quot;,
-    &quot;z&quot;,
-    &quot;A&quot;
+  "char": [
+    "o",
+    "8",
+    "/",
+    ">",
+    "^",
+    "@",
+    "D",
+    "Y",
+    "?",
+    "c",
+    ".",
+    "Q",
+    "R",
+    "0",
+    "e",
+    "W",
+    "5",
+    "X",
+    "p",
+    "r",
+    "M",
+    "C",
+    "|",
+    "i",
+    "Z",
+    "l",
+    "9",
+    "j",
+    "4",
+    "$",
+    "%",
+    "y",
+    "P",
+    "s",
+    "6",
+    "G",
+    "!",
+    "m",
+    "S",
+    "I",
+    "*",
+    "h",
+    ",",
+    "k",
+    "_",
+    "a",
+    "B",
+    "v",
+    "d",
+    "N",
+    "1",
+    "7",
+    "-",
+    "q",
+    "'",
+    "2",
+    "w",
+    ":",
+    "<",
+    "3",
+    ";",
+    "t",
+    "u",
+    "+",
+    "J",
+    "&",
+    "`",
+    "F",
+    "=",
+    "V",
+    "f",
+    "L",
+    "U",
+    "T",
+    "n",
+    "x",
+    "b",
+    "K",
+    "#",
+    "E",
+    "g",
+    "H",
+    "O",
+    "z",
+    "A"
   ],
-  &quot;type&quot;: [
-    &quot;FAC&quot;,
-    &quot;VEH&quot;,
-    &quot;ORG&quot;,
-    &quot;GPE&quot;,
-    &quot;PER&quot;,
-    &quot;WEA&quot;,
-    &quot;LOC&quot;
+  "type": [
+    "FAC",
+    "VEH",
+    "ORG",
+    "GPE",
+    "PER",
+    "WEA",
+    "LOC"
   ]
 }
 ```
 
-## ** ****4、编码器代码实现 **
+## 4、编码器代码实现
 
-### ** 4.1.数据集构建代码 **
+### 4.1. 数据集构建代码
 
-**1、self_data.py**
+`self_data.py`
 
-```
+
+
+```python
 #!/usr/bin/env python
 # _*_coding:utf-8_*_
 # Author   :    Junhui Yu
@@ -253,7 +254,7 @@ from torch.utils.data import Dataset
 from torch.utils.data.dataset import Subset
 from tqdm import tqdm
 
-logger = logging.getLogger(&quot;YUNLP&quot;)
+logger = logging.getLogger("YUNLP")
 
 
 class MySentence(Sentence):
@@ -281,16 +282,16 @@ class MyDataset(FlairDataset):
         data_list = json.load(file)
         self._sentences = self.format(data_list)
 
-    def format(self, data_list: list[dict]) -&gt; list[MySentence]:
+    def format(self, data_list: list[dict]) -> list[MySentence]:
         sentences = list()
         for data in tqdm(data_list):
-            sentence = MySentence(data[&#x27;tokens&#x27;])
-            sentence._previous_sentence = MySentence(data[&#x27;ltokens&#x27;])
-            sentence._next_sentence = MySentence(data[&#x27;rtokens&#x27;])
-            sentence.add_label(&#x27;pos&#x27;, data[&#x27;pos&#x27;])
-            if &#x27;tags&#x27; in data.keys():
-                sentence.add_label(&#x27;tags&#x27;, data[&#x27;tags&#x27;])
-            sentence.entities = data[&#x27;entities&#x27;]
+            sentence = MySentence(data['tokens'])
+            sentence._previous_sentence = MySentence(data['ltokens'])
+            sentence._next_sentence = MySentence(data['rtokens'])
+            sentence.add_label('pos', data['pos'])
+            if 'tags' in data.keys():
+                sentence.add_label('tags', data['tags'])
+            sentence.entities = data['entities']
             sentences.append(sentence)
 
         return sentences
@@ -302,37 +303,37 @@ class MyDataset(FlairDataset):
     def sentences(self):
         return self._sentences
 
-    def __getitem__(self, index: int) -&gt; MySentence:
+    def __getitem__(self, index: int) -> MySentence:
         return self._sentences[index]
 
-    def __len__(self) -&gt; int:
+    def __len__(self) -> int:
         return len(self._sentences)
 
-    def is_in_memory(self) -&gt; bool:
+    def is_in_memory(self) -> bool:
         return True
 
 
 class MyCorpus(Corpus):
     def __init__(self, dataset_name: str, concat: bool = False, max_length: int = None):
-        dataset_path = f&quot;data/{dataset_name}&quot;
+        dataset_path = f"data/{dataset_name}"
         try:
             super(MyCorpus, self).__init__(name=dataset_name)
         except RuntimeError:
             pass
 
-        self._train: MyDataset = self.create_dataset(dataset_path, &#x27;train&#x27;)
-        self._dev: MyDataset = self.create_dataset(dataset_path, &#x27;dev&#x27;)
-        self._test: MyDataset = self.create_dataset(dataset_path, &#x27;test&#x27;)
+        self._train: MyDataset = self.create_dataset(dataset_path, 'train')
+        self._dev: MyDataset = self.create_dataset(dataset_path, 'dev')
+        self._test: MyDataset = self.create_dataset(dataset_path, 'test')
 
-        with open(f&quot;{dataset_path}/vocab.json&quot;, encoding=&#x27;utf-8&#x27;) as file:
+        with open(f"{dataset_path}/vocab.json", encoding='utf-8') as file:
             metadata = json.load(file)
-        types = metadata.pop(&#x27;type&#x27;)
+        types = metadata.pop('type')
         types_idx = range(len(types))
         self.metadata = {
-            &#x27;types2idx&#x27;: dict(zip(types, types_idx)),
-            &#x27;idx2types&#x27;: dict(zip(types_idx, types)),
-            &#x27;chars_list&#x27;: metadata[&#x27;char&#x27;],
-            &#x27;pos_list&#x27;: metadata[&#x27;pos&#x27;]
+            'types2idx': dict(zip(types, types_idx)),
+            'idx2types': dict(zip(types_idx, types)),
+            'chars_list': metadata['char'],
+            'pos_list': metadata['pos']
         }
 
         if concat:
@@ -340,12 +341,12 @@ class MyCorpus(Corpus):
             self._dev = None
 
         if max_length is not None:
-            self.filter(lambda a: len(a) &lt; max_length, [&#x27;train&#x27;])
+            self.filter(lambda a: len(a) < max_length, ['train'])
 
     @staticmethod
     def create_dataset(dataset_path: str, prefix: str):
         try:
-            with open(f&quot;{dataset_path}/{prefix}.json&quot;, encoding=&quot;utf-8&quot;) as file:
+            with open(f"{dataset_path}/{prefix}.json", encoding="utf-8") as file:
                 dataset = MyDataset(file, prefix)
         except FileNotFoundError as _:
             return None
@@ -353,14 +354,14 @@ class MyCorpus(Corpus):
 
     def filter(self, condition: callable, dataset_names: list[str] = None):
         if dataset_names is None:
-            dataset_names = [&#x27;train&#x27;]
+            dataset_names = ['train']
         for name in dataset_names:
-            dataset = self.__dict__[f&#x27;_{name}&#x27;]
-            self.__dict__[f&#x27;_{name}&#x27;] = self._filter(dataset, condition)
+            dataset = self.__dict__[f'_{name}']
+            self.__dict__[f'_{name}'] = self._filter(dataset, condition)
         logger.info(self)
 
     @staticmethod
-    def _filter(dataset: MyDataset, condition: callable) -&gt; Dataset:
+    def _filter(dataset: MyDataset, condition: callable) -> Dataset:
         empty_sentence_indices = []
         non_empty_sentence_indices = []
         index = 0
@@ -375,27 +376,28 @@ class MyCorpus(Corpus):
         return subset
 
     @property
-    def datasets(self) -&gt; list[MyDataset]:
-        datasets = map(lambda a: self.__dict__[f&#x27;_{a}&#x27;], [&#x27;train&#x27;, &#x27;dev&#x27;, &#x27;test&#x27;])
+    def datasets(self) -> list[MyDataset]:
+        datasets = map(lambda a: self.__dict__[f'_{a}'], ['train', 'dev', 'test'])
         return list(filter(lambda a: a is not None, datasets))
 
     @property
-    def train(self) -&gt; MyDataset:
+    def train(self) -> MyDataset:
         return self._train
 
     @property
-    def dev(self) -&gt; MyDataset:
+    def dev(self) -> MyDataset:
         return self._dev
 
     @property
-    def test(self) -&gt; MyDataset:
+    def test(self) -> MyDataset:
         return self._test
-
 ```
 
-### ** 4.2、编码器模型代码 **
+## 4.2 编码器模型代码
 
-```
+
+
+```python
 #!/usr/bin/env python
 # _*_coding:utf-8_*_
 # Author   :    Junhui Yu
@@ -415,31 +417,31 @@ from self_data import MySentence
 from transformers import AutoTokenizer
 from transformers import PreTrainedTokenizerFast
 
-logger = logging.getLogger(&quot;YUNLP&quot;)
+logger = logging.getLogger("YUNLP")
 
 
 def build_tokenizer(pretrain_model: str, cache_dir: str):
     return Tokenizer({
-        &#x27;return_tensors&#x27;: &#x27;pt&#x27;, &#x27;padding&#x27;: True
+        'return_tensors': 'pt', 'padding': True
     },
-        AutoTokenizer.from_pretrained(pretrain_model, cache_dir=cache_dir, padding_side=&#x27;right&#x27;)
+        AutoTokenizer.from_pretrained(pretrain_model, cache_dir=cache_dir, padding_side='right')
     )
 
 
 class Tokenizer:
     xila_table = str.maketrans(
-        &quot;âêîôûŷäëïöüÿñ&quot;,
-        &quot;aeiouyaeiouyn&quot;
+        "âêîôûŷäëïöüÿñ",
+        "aeiouyaeiouyn"
     )
     special_tokens = {
-        &#x27;“&#x27;: &#x27;&quot;&#x27;,
-        &#x27;”&#x27;: &#x27;&quot;&#x27;,
-        &#x27;‘&#x27;: &#x27;&#x27;&#x27;,
-        &#x27;’&#x27;: &#x27;&#x27;&#x27;,
-        &#x27;—&#x27;: &#x27;-&#x27;,
-        &#x27;…&#x27;: &#x27;...&#x27;,
-        &#x27;……&#x27;: &#x27;...&#x27;,
-        &#x27;�&#x27;: &#x27;?&#x27;
+        '“': '"',
+        '”': '"',
+        '‘': '',
+        '’': '',
+        '—': '-',
+        '…': '...',
+        '……': '...',
+        '�': '?'
     }
 
     def __init__(self, encode_kargs: dict, tokenizer: PreTrainedTokenizerFast = None):
@@ -452,7 +454,7 @@ class Tokenizer:
 
     def batch_decode(self, *args, **kargs):
         batch_texts = self.tokenizer.batch_decode(*args, **kargs)
-        return [text.split(&quot; &quot;) for text in batch_texts]
+        return [text.split(" ") for text in batch_texts]
 
     @classmethod
     def preprocess(cls, raw_text: list[str]):
@@ -464,7 +466,7 @@ class Tokenizer:
 class Encoder(nn.Module):
     def __init__(self, embedding_kargs: dict):
         super(Encoder, self).__init__()
-        embedding_kargs.update({&#x27;cache_dir&#x27;: f&quot;./vec/&quot;})
+        embedding_kargs.update({'cache_dir': f"./vec/"})
         self.embedding = FusionEmbedding(**embedding_kargs)
         self.hidden_size = self.embedding.token2vec.pretrain.config.hidden_size
         embedding_length = self.embedding.embedding_length
@@ -475,7 +477,7 @@ class Encoder(nn.Module):
             nn.LayerNorm(self.hidden_size),
         )
 
-    def forward(self, batch_sentences: list[MySentence]) -&gt; tuple[Tensor, Tensor]:
+    def forward(self, batch_sentences: list[MySentence]) -> tuple[Tensor, Tensor]:
         lengths = torch.as_tensor(list(map(len, batch_sentences)))
 
         batch_embeds, batch_masks = self.embedding(batch_sentences)
@@ -514,17 +516,17 @@ class FusionEmbedding(nn.Module):
             self.pos2vec = Pos2Vec(pos_list, pos_dim)
             self._embedding_length += pos_dim
 
-    def forward(self, batch_sentences: list[MySentence]) -&gt; tuple[Tensor, Tensor]:
+    def forward(self, batch_sentences: list[MySentence]) -> tuple[Tensor, Tensor]:
         token2vec, mask = self.token2vec(batch_sentences)
         embeds = [token2vec]
 
-        if hasattr(self, &#x27;word2vec&#x27;):
+        if hasattr(self, 'word2vec'):
             embeds.append(self.word2vec(batch_sentences, token2vec.device))
 
-        if hasattr(self, &#x27;char2vec&#x27;):
+        if hasattr(self, 'char2vec'):
             embeds.append(self.char2vec(batch_sentences))
 
-        if hasattr(self, &#x27;pos2vec&#x27;):
+        if hasattr(self, 'pos2vec'):
             embeds.append(self.pos2vec(batch_sentences))
 
         batch_embeds = torch.cat(embeds, dim=-1)
@@ -545,7 +547,7 @@ class Token2Vec(nn.Module):
         self.tokenizer = build_tokenizer(pretrain_model, cache_dir)
         self.pretrain = transformers.AutoModel.from_pretrained(pretrain_model, cache_dir=cache_dir)
 
-    def forward(self, batch_sentences: list[MySentence]) -&gt; tuple[Tensor, Tensor]:
+    def forward(self, batch_sentences: list[MySentence]) -> tuple[Tensor, Tensor]:
         batch_context = self.span_context(batch_sentences)
         lengths = list(map(len, batch_context))
 
@@ -569,14 +571,14 @@ class Token2Vec(nn.Module):
         token_embeds = pad_sequence(token_embeds, batch_first=True)
         return self.span_select(token_embeds, batch_sentences)
 
-    def span_context(self, batch_sentences: list[MySentence]) -&gt; list[list[str]]:
+    def span_context(self, batch_sentences: list[MySentence]) -> list[list[str]]:
         batch_context = list()
         for sentence in batch_sentences:
             context = sentence.sentence_tokens
-            if len(context) + len(sentence.next_sentence()) &lt; self.model_max_length:
+            if len(context) + len(sentence.next_sentence()) < self.model_max_length:
                 context = context + sentence.next_tokens
 
-                if len(sentence.previous_sentence()) + len(context) &lt; self.model_max_length:
+                if len(sentence.previous_sentence()) + len(context) < self.model_max_length:
                     context = sentence.previous_tokens + context
                     offset = len(sentence.previous_sentence())
                     sentence.start_pos, sentence.end_pos = offset, offset + len(sentence)
@@ -591,7 +593,7 @@ class Token2Vec(nn.Module):
         return batch_context
 
     @staticmethod
-    def span_select(batch_embeds: Tensor, batch_sentences: list[MySentence]) -&gt; tuple[Tensor, Tensor]:
+    def span_select(batch_embeds: Tensor, batch_sentences: list[MySentence]) -> tuple[Tensor, Tensor]:
         hiddens, mask = list(), list()
         for sentence, embeds in zip(batch_sentences, batch_embeds):
             s, e = sentence.start_pos, sentence.end_pos
@@ -618,18 +620,18 @@ class Word2Vec(nn.Module):
     def __init__(self, cache_dir: str, word2vec: str):
         super().__init__()
         self.word2vec = word2vec
-        if word2vec == &#x27;glove&#x27;:
+        if word2vec == 'glove':
             self._word_dim = 50
-            self.vectors = vocab.GloVe(name=&#x27;6B&#x27;, dim=50, cache=cache_dir + &quot;glove&quot;)
+            self.vectors = vocab.GloVe(name='6B', dim=50, cache=cache_dir + "glove")
 
-    def forward(self, batch_sentences: list[MySentence], device: str) -&gt; Tensor:
+    def forward(self, batch_sentences: list[MySentence], device: str) -> Tensor:
         embeds = list(map(self.get_vectors_by_tokens, batch_sentences))
         return pad_sequence(embeds, batch_first=True).to(device)
 
     def get_vectors_by_tokens(self, sentence: MySentence):
-        if self.word2vec in [&#x27;glove&#x27;, &#x27;chinese&#x27;]:
+        if self.word2vec in ['glove', 'chinese']:
             return self.vectors.get_vecs_by_tokens(sentence.sentence_tokens)
-        elif self.word2vec == &#x27;bio&#x27;:
+        elif self.word2vec == 'bio':
             indices = [self.word2idx.get(token, 0) for token in sentence.sentence_tokens]
             return self.embeds(torch.as_tensor(indices, device=self.embeds.weight.device))
 
@@ -645,7 +647,7 @@ class Char2Vec(nn.Module):
         self.char2vec = nn.Embedding(len(self.char2idx), char_dim)
         self.char_rnn = nn.GRU(char_dim, char_dim, bidirectional=True, batch_first=True)
 
-    def forward(self, batch_sentences: list[MySentence]) -&gt; Tensor:
+    def forward(self, batch_sentences: list[MySentence]) -> Tensor:
         device = self.char2vec.weight.device
         lengths = list(map(len, batch_sentences))
 
@@ -673,20 +675,23 @@ class Pos2Vec(nn.Module):
         self.pos2idx = dict(zip(pos_list, range(len(pos_list))))
         self.pos2vec = nn.Embedding(len(self.pos2idx), pos_dim)
 
-    def forward(self, batch_sentences: list[MySentence]) -&gt; tuple[Tensor, Tensor]:
+    def forward(self, batch_sentences: list[MySentence]) -> tuple[Tensor, Tensor]:
         device = self.pos2vec.weight.device
         indices = list()
         for sentence in batch_sentences:
-            pos_tags = sentence.get_labels(&#x27;pos&#x27;)[0].value
+            pos_tags = sentence.get_labels('pos')[0].value
             pos_indices = list(map(lambda a: self.pos2idx[a], pos_tags))
             indices.append(torch.as_tensor(pos_indices, dtype=torch.long, device=device))
         return self.pos2vec(pad_sequence(indices).T)
-
 ```
 
-## ** ****5、模型结构与测试 **
 
-1.  编码器模型结构
+
+## 5、模型结构与测试
+
+### 1. 编码器模型结构
+
+
 
 ```
 Encoder(
@@ -1015,9 +1020,11 @@ Encoder(
 )
 ```
 
-1.  测试代码
 
-```
+
+## 1. 测试代码
+
+```python
 #!/usr/bin/env python
 # _*_coding:utf-8_*_
 # Author   :    Junhui Yu
@@ -1031,20 +1038,20 @@ import json
 from feature_encoder import Encoder
 from self_data import MyCorpus
 
-logger = logging.getLogger(&quot;YUNLP&quot;)
+logger = logging.getLogger("YUNLP")
 
-corpus = MyCorpus(&quot;ace05&quot;, True, 128)
+corpus = MyCorpus("ace05", True, 128)
 
-metadata = json.load(open(&#x27;data/ace05/vocab.json&#x27;, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;))
+metadata = json.load(open('data/ace05/vocab.json', 'r', encoding='utf-8'))
 
 args = {
-    &#x27;pos_dim&#x27;: 50,
-    &#x27;char_dim&#x27;: 50,
-    &#x27;word2vec&#x27;: &#x27;glove&#x27;,
-    &#x27;chars_list&#x27;: metadata[&#x27;char&#x27;],
-    &#x27;pos_list&#x27;: metadata[&#x27;pos&#x27;],
-    &#x27;pretrain_model&#x27;: r&#x27;D:\BERT\bert-base-uncased&#x27;,
-    &#x27;model_max_length&#x27;: 128,
+    'pos_dim': 50,
+    'char_dim': 50,
+    'word2vec': 'glove',
+    'chars_list': metadata['char'],
+    'pos_list': metadata['pos'],
+    'pretrain_model': r'D:\BERT\bert-base-uncased',
+    'model_max_length': 128,
 }
 
 loader = DataLoader(
@@ -1063,10 +1070,9 @@ for data in t:
     out = encoder(data)
     print(out)
     break
-
 ```
 
-1.  输出
+## 1. 输出
 
 ```
 (tensor([[[-0.6931, -0.6064, -0.3340,  ...,  0.8820,  2.0498,  0.7626],
@@ -1076,19 +1082,19 @@ for data in t:
          [-0.4345,  0.6677,  0.0272,  ..., -0.1907,  1.5457, -1.8503],
          [-0.1394,  0.6579,  1.1406,  ..., -0.4034,  1.7865, -0.8288],
          [-0.7872,  0.0053,  1.2921,  ..., -1.2903,  1.2204, -0.6980]]],
-       grad_fn=&lt;NativeLayerNormBackward0&gt;), tensor([[True, True, True, True, True, True, True, True, True, True]]))
+       grad_fn=<NativeLayerNormBackward0>), tensor([[True, True, True, True, True, True, True, True, True, True]]))
 ```
 
-## ** ****6、相关工具 **
+## 6、相关工具
 
-bert-base：https://huggingface.co/bert-base-uncased
+`bert-base`：`https://huggingface.co/bert-base-uncased`
 
-glove：http://nlp.stanford.edu/data/glove.6B.zip
+`glove`：`http://nlp.stanford.edu/data/glove.6B.zip`
 
-pos embedding：spacy或者NLTK，embedding使用pytorch自带的。
+pos embedding：`spacy`或者`NLTK`，embedding使用`pytorch`自带的。
 
-## ** ****结论 **
+## 结论
 
 本文实践了一种多特征的编码器，在NLP的下游任务上经过测试有性能的提升。注：具体任务具体分析，不一定完全能大幅度提升性能，但是也不会降性能。
 
-完整代码链接：https://github.com/yujunhuics/feature_encoder
+完整代码链接：`https://github.com/yujunhuics/feature_encoder`

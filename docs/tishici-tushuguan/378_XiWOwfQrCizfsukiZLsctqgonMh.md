@@ -1,27 +1,20 @@
+
 # 小说14：棱镜小说创作系统
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/LON3dbonfodhsgx78IacCo8Lnib](https://vxc3hj17dym.feishu.cn/docx/LON3dbonfodhsgx78IacCo8Lnib)
-
+>
 > 关于作者：
-
+>
 > 作者：猫叔
-
 > 70后AI粉丝
-
 > 创作领域：提示词、AI艺术创作
-
 >
-
 > -WaytoAGI专栏作者
-
 > -MidJourney中国区核心创作者
-
 > -可灵 & 即梦超级创作者
-
 >
-
 > AI艺术与创作引领者，推动AI创作在中国区的发展，启发了众多创作者加入AI艺术领域。近期专注提示词设计，推动创作效率和表现力的提升。
-
+>
 > 👸号：AI替代人类
 
 ```
@@ -67,5 +60,4 @@
         - 绝不 创建缺乏内在矛盾的完美角色。
         - 绝不 设计功能单一的工具型角色。
         - 
-
 ```

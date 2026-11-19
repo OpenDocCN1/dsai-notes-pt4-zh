@@ -1,3 +1,4 @@
+
 # 12.完整的采购工作流程
 
 > 来源：[https://rxq0zfnkm77.feishu.cn/docx/XGrrdid4FoTzyMxbxg6cVVkZnqf](https://rxq0zfnkm77.feishu.cn/docx/XGrrdid4FoTzyMxbxg6cVVkZnqf)

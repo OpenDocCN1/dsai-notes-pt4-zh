@@ -1,3 +1,4 @@
+
 # Dify图文回复
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/AbcRdS34Bo2jzmxkOuXcWNh6nFf](https://qqs7y1hozd1.feishu.cn/docx/AbcRdS34Bo2jzmxkOuXcWNh6nFf)
@@ -48,19 +49,19 @@ LLM节点就是根据用户的输入（问题）和从知识库节点中检索�
 
 ## HTTP请求节点
 
-HTTP请求节点的作用就是根据Url下载图片，用户在最后的回复节点中展示。注意HTTP请求节点的返回参数是Array[File]类型。
+HTTP请求节点的作用就是根据Url下载图片，用户在最后的回复节点中展示。注意HTTP请求节点的返回参数是`Array[File]`类型。
 
 ![](img/5ef9c150c170e2c9925b40c4d054ba76.png)
 
 ## 回复节点
 
-图文回复
+### 图文回复
 
 ![](img/8fc4d986a64ad72f2e0e270eec2a470e.png)
 
 ## 导出DSL
 
-图文回复应用可以导出为DSL，方便你在Dify[工作区中导入查看](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/dify/%E5%9B%BE%E6%96%87%E5%9B%9E%E5%A4%8D.yml)整个应用的编排。点击 图文回复.yml下载。
+图文回复应用可以导出为DSL，方便你在Dify[工作区中导入查看](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/dify/%E5%9B%BE%E6%96%87%E5%9B%9E%E5%A4%8D.yml)整个应用的编排。点击`图文回复.yml`下载。
 
 创建应用时，选择导入DSL文件即可。
 
@@ -70,4 +71,4 @@ HTTP请求节点的作用就是根据Url下载图片，用户在最后的回复�
 
 ![](img/2c9fb45577abcd8a712e8023a3efeabc.png)
 
-Dify的前端展示页面应该是解析的富文本，所以也可以在LLM节点的提示词中指定<image src='图片链接'>的输出形式展示图片。
+Dify的前端展示页面应该是解析的富文本，所以也可以在LLM节点的提示词中指定`<image src='图片链接'>`的输出形式展示图片。

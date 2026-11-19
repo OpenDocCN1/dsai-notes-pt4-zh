@@ -1,12 +1,13 @@
+
 # 2025-10-29当我收集了上万个 Shopify App 和数十万条评论数据
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/LgwFdWD9Jo9hhbxYHFWc5i6tnPb](https://xuqiwei1986.feishu.cn/docx/LgwFdWD9Jo9hhbxYHFWc5i6tnPb)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/LgwFdWD9Jo9hhbxYHFWc5i6tnPb`
 
-> 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/82811548114224812)ticleDetail/xq_t...
+> 🔗 原文链接：`https://scys.com/articleDetail/xq_topic/82811548114224812`
 
 > ⏰ 剪存时间：2025-12-17 06:23:57 (UTC+8)
 
-> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+> ✂️ 本文档由 [飞书剪存](`https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc`) 一键生成
 
 大家好，我是吴大白。
 
@@ -18,21 +19,9 @@
 
 废话不多说，我们接下来从以下几个方面来聊一聊shopify app这个方向的一些赚钱机会。
 
-一、Shopify App数据总览
-
-二、在shopify中主要的收费模式是什么？
-
-三、基于评分与评论背后的“市场信号”
-
-四、在shopify app生态中，个人开发者有机会吗？
-
-五、数据告诉我们什么样的 App 最有赚钱潜力？
-
-六、写在最后：关于AI时代技术与电商结合的机会
-
 ## 一、Shopify App数据总览
 
-据非官方各种渠道统计，到目前为止shopify总共商家数量超过了500万家，但在此次数据收集中，我只收集了将近12000个apps（排除掉所有未上线和已下架的），目前来说应该是最全的了。
+据非官方各种渠道统计，目前为止shopify总共商家数量超过了500万家，但在此次数据收集中，我只收集了将近12000个apps（排除掉所有未上线和已下架的），目前来说应该是最全的了。
 
 因为我分不同地区不同语种做了收集，“漏网之鱼”应该不多，悬殊的商家和app数量比例证明了这块的市场仍未被饱和。
 
@@ -84,7 +73,7 @@
 
 从图表中我们可以看出将近75%的app收费还是在50美金以下的（月费居多），达到100以上的占比只有13%不到，并且收费居高的大部分都是以年费为主。
 
-我们接下来举一个实际的例子，就以Essentia[l](https://apps.shopify.com/essential-announcement-bar?locale=zh-CN%EF%BC%89%E8%BF%99%E4%B8%AAapp%E4%B8%BA%E4%BE%8B%E3%80%82) Announcement Bar（ https://apps.shopify.com/essential-announcement-bar?locale=zh-CN） 这个app为例。
+我们接下来举一个实际的例子，就以Essential Announcement Bar（`https://apps.shopify.com/essential-announcement-bar?locale=zh-CN`）这个app为例。
 
 ![](img/eff5286d523f45cdf6048b7833101b94.png)
 
@@ -104,9 +93,7 @@
 
 其中月费占70%，年费占30%（因为好评率高），那么就是2000*0.7*19*6（只算续费了6个月）+2000*0.3*199=159600+119400=279000美元，预估年收入为198万人民币。
 
-总整体收入来算是非常客观的，在shopify中， “高评分付费工具型 App”是更容易被长期使用、获得稳定收入的方向。
-
-##
+总整体收入来算是非常客观的，在shopify中，“高评分付费工具型 App”是更容易被长期使用、获得稳定收入的方向。
 
 ## 三、基于评分与评论背后的“市场需求”
 
@@ -148,7 +135,7 @@
 
 上图显示在shopify应用市场 共有7562位开发者，其中开发应用最多的有69个应用。
 
-[这](https://apps.shopify.com/partners/unreact5?locale=zh-CN%EF%BC%8C%E5%A4%A7%E5%AE%B6%E5%8F%AF%E4%BB%A5%E5%8E%BB%E7%9C%8B%E4%B8%80%E4%B8%8B%E3%80%82)个开发者来自日本，shopify主页为 https://apps.shopify.com/partners/unreact5?locale=zh-CN ，大家可以去看一下。
+这个开发者来自日本，shopify主页为 `https://apps.shopify.com/partners/unreact5?locale=zh-CN` ，大家可以去看一下。
 
 ![](img/a0b0142331728db2597c331a29f3bafe.png)
 
@@ -170,7 +157,7 @@
 
 但是我从上架时间和评论数据分析来看，发现很多团队开发者都是从独立开发者向团队开发者转变的，当app有了一定的收入之后才开始组建团队，开发自己的官网来承接客户的一些答疑。
 
-**个**人开发者依然有机会，只是门槛从‘会写代码’，变成‘能理解需求’ 。
+个人开发者依然有机会，只是门槛从‘会写代码’，变成‘能理解需求’。
 
 ## 五、数据告诉我们什么样的 App 最有赚钱潜力？
 
@@ -202,7 +189,7 @@
 
 等等还有很多类似的，都是非常牛叉的产品，盈利能力也非常强，当然这些都是公司形式在运作，但是也有很多独立开发者的产品做得非常不错。
 
-在我看来， 电商人是互联网上最舍得花钱的一群人，只要能帮他们多卖1单，他们就愿意掏钱 ，并且粘性特别高，因为电商是跟用户和数据打交道的，一旦习惯了某一个解决方案，基本不会换。
+在我看来，电商人是互联网上最舍得花钱的一群人，只要能帮他们多卖1单，他们就愿意掏钱，并且粘性特别高，因为电商是跟用户和数据打交道的，一旦习惯了某一个解决方案，基本不会换。
 
 在如今AI时代，写代码已经不是难事了，找到一个解决部分人痛点的需求，一个月收入破万个人认为是非常轻松的，当然如果实在没有什么头绪，那就从shopify app这种基于应用市场的需求开始，成本最低，反馈最快。
 

@@ -1,3 +1,4 @@
+
 # ragflow+deepseek构建本地问答知识库
 
 > 来源：[https://datawhaler.feishu.cn/docx/KsHAdic4BoERXIxdgZ2cuCLtnWh](https://datawhaler.feishu.cn/docx/KsHAdic4BoERXIxdgZ2cuCLtnWh)
@@ -12,7 +13,7 @@
 
 > 阅读时间：7分钟
 
-# ragflow简介：
+## ragflow简介
 
 > RAGFlow 是一款基于深度文档理解的开源检索增强生成（Retrieval-Augmented Generation，RAG）引擎，旨在通过结合信息检索和生成式 AI 的优势，解决现有技术在数据处理和生成答案方面的挑战。
 
@@ -34,84 +35,83 @@
 
 1.  **深度文档理解**：能够从复杂格式的非结构化数据中精准提取知识，支持多种文档格式（如 Word、PPT、Excel、PDF 等），并自动识别文档布局。
 
-1.  **降低幻觉风险**：提供清晰的关键引用来源，支持文本分块的可视化和人工干预，确保生成答案有据可依。
+2.  **降低幻觉风险**：提供清晰的关键引用来源，支持文本分块的可视化和人工干预，确保生成答案有据可依。
 
-1.  **兼容异构数据源**：无缝处理多种数据格式，整合不同来源的数据，为用户提供一站式的数据处理和问答体验。
+3.  **兼容异构数据源**：无缝处理多种数据格式，整合不同来源的数据，为用户提供一站式的数据处理和问答体验。
 
-1.  **自动化工作流**：支持从个人应用到超大型企业的各类生态系统，提供易用的 API，便于快速集成到各类业务系统。
+4.  **自动化工作流**：支持从个人应用到超大型企业的各类生态系统，提供易用的 API，便于快速集成到各类业务系统。
 
-1.  **高效性与成本优化**：通过动态优化流程，减少不必要的计算和查询次数，降低运行成本。
+5.  **高效性与成本优化**：通过动态优化流程，减少不必要的计算和查询次数，降低运行成本。
 
-1.  **精准性与可靠性**：检索和生成环节相辅相成，确保最终结果的准确性和可靠性。
+6.  **精准性与可靠性**：检索和生成环节相辅相成，确保最终结果的准确性和可靠性。
 
 > RAGFlow 的这些特性和优势使其在信息检索和内容生成领域具有广泛的应用前景和显著的竞争力。
 
 > 我的理解呢，ragflow的意义在于它把原本复杂的rag系统开发，处理成了零代码开发模式，方便非计算机背景的人也可以进行rag系统的搭建和维护，而且融入了类似dify的强大的工作流编排功能。
 
-# ragflow本地windows部署
+## ragflow本地windows部署
 
 > 配置要求：ragflow是一个相当“重”的项目，如果你的电脑不满足以下条件，请不要随意尝试
 
 ![](img/e0d2dbd3ec3e2af85d09054e9759ecfe.png)
 
-## 软件配置安装
+### 软件配置安装
 
-首先我们需要安装好docker软件
+首先我们需要安装好`docker`软件
 
 Windows Docker 安装 | 菜鸟教程
 
-安装好docker后启动即可，不用登陆不用设置任何东西，一路跳过。
+安装好`docker`后启动即可，不用登陆不用设置任何东西，一路跳过。
 
-这里我们需要配置docker镜像源
+这里我们需要配置`docker`镜像源
 
 ![](img/236ae2240c2502477d173dcb16372210.png)
 
-```
+```json
 {
-  &quot;registry-mirrors&quot;: [
-    &quot;https://registry.docker-cn.com&quot;,
-    &quot;http://hub-mirror.c.163.com&quot;,
-    &quot;https://docker.mirrors.ustc.edu.cn&quot;
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "http://hub-mirror.c.163.com",
+    "https://docker.mirrors.ustc.edu.cn"
   ],
-  &quot;insecure-registries&quot;: [],
-  &quot;debug&quot;: false,
-  &quot;experimental&quot;: false,
-  &quot;features&quot;: {
-    &quot;buildkit&quot;: true
+  "insecure-registries": [],
+  "debug": false,
+  "experimental": false,
+  "features": {
+    "buildkit": true
   },
-  &quot;builder&quot;: {
-    &quot;gc&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;defaultKeepStorage&quot;: &quot;20GB&quot;
+  "builder": {
+    "gc": {
+      "enabled": true,
+      "defaultKeepStorage": "20GB"
     }
   }
 }
-
 ```
 
 上方代码粘贴替换完毕后点击右下角
 
 ![](img/99011d21a99efd5df895b0917207e4df.png)
 
-到这里我们的docker就配置好了
+到这里我们的`docker`就配置好了
 
-然后我们需要安装git：https://cloud.tencent.com/developer/article/2099150
+然后我们需要安装`git`：https://cloud.tencent.com/developer/article/2099150
 
 最后我们需要安装vscode：https://zhuanlan.zhihu.com/p/264785441
 
-## 安装ragflow：
+### 安装ragflow
 
-### 设置安装路径
+#### 设置安装路径
 
 在c盘之外的地方打开一个文件夹用来安装ragflow，鼠标右键，点击open Git Bash here
 
 输入命令：
 
-git clone https://github.com/infiniflow/ragflow.git
+`git clone https://github.com/infiniflow/ragflow.git`
 
 点击回车就可以看到多了一个文件夹ragflow
 
-由于默认配置版本是没有embedding模型的，所以我们修改配置为完整版。使用vscode打开.env文件，修改第84行和第87行，ctrl+s保存文件。
+由于默认配置版本是没有embedding模型的，所以我们修改配置为完整版。使用vscode打开`.env`文件，修改第84行和第87行，ctrl+s保存文件。
 
 ![](img/0aa2300e7ccf3acb304967408c370625.png)
 
@@ -123,11 +123,11 @@ git clone https://github.com/infiniflow/ragflow.git
 
 ![](img/a470d66d15210ec8a06219ef0743d299.png)
 
-### 拉取docker镜像
+#### 拉取docker镜像
 
-接下来我们开始部署docker镜像，按住win+R键，输入powershell，点击回车。之后输入cd+刚刚下载的ragflow文件夹路径，我这里是cd D:\demo\ragflow\docker按回车，输入docker compose -f docker-compose.yml up -d按回车。之后可以看到正在使用docker加载镜像，稍等一会儿加载完毕即可。
+接下来我们开始部署docker镜像，按住win+R键，输入`powershell`，点击回车。之后输入`cd`+刚刚下载的ragflow文件夹路径，我这里是`cd D:\demo\ragflow\docker`按回车，输入`docker compose -f docker-compose.yml up -d`按回车。之后可以看到正在使用docker加载镜像，稍等一会儿加载完毕即可。
 
-大概15分钟后镜像加载完毕就部署完毕了。最后我们输入docker logs -f ragflow-server，出现RAGFLOW字体就代表后端服务启动成功了。
+大概15分钟后镜像加载完毕就部署完毕了。最后我们输入`docker logs -f ragflow-server`，出现RAGFLOW字体就代表后端服务启动成功了。
 
 ![](img/e2a065720f907cca4fe42ef9ed2850b3.png)
 
@@ -135,7 +135,7 @@ git clone https://github.com/infiniflow/ragflow.git
 
 ![](img/71355af56708713e5b5636f224f0c2b3.png)
 
-之后我们在浏览器地址栏输入：localhost:80即可打开ragflow登录页面。登录页面可以随便输入一个邮箱账号（随便编一个符合邮箱格式的就可以），全部是保存在你本地电脑上的，不用担心数据泄露。但是要注意第一个注册的默认是管理员，所以还是要注意保存一下你注册的邮箱信息。之后点击登录就可以使用ragflow了。
+之后我们在浏览器地址栏输入：`localhost:80`即可打开ragflow登录页面。登录页面可以随便输入一个邮箱账号（随便编一个符合邮箱格式的就可以），全部是保存在你本地电脑上的，不用担心数据泄露。但是要注意第一个注册的默认是管理员，所以还是要注意保存一下你注册的邮箱信息。之后点击登录就可以使用ragflow了。
 
 ![](img/3a76c886500252ea2249082e32007600.png)
 
@@ -143,9 +143,9 @@ git clone https://github.com/infiniflow/ragflow.git
 
 ![](img/f98ab2745da8bfb314344088a5b45af8.png)
 
-## 简易使用教程
+### 简易使用教程
 
-首先我们配置一下deepseek模型服务，api-key可以从https://platform.deepseek.com/api_key申请获取。
+首先我们配置一下deepseek模型服务，`api-key`可以从`https://platform.deepseek.com/api_key`申请获取。
 
 ![](img/f15ac1a1b75d4b29c4ffb77d2f02573d.png)
 
@@ -159,7 +159,7 @@ git clone https://github.com/infiniflow/ragflow.git
 
 ![](img/83aedf6cc6b2cc0f6e3cf1e9e67abd20.png)
 
-创建对话助理后，就可以对话啦，注意在模型设置里把模型替换为deepseek-chat
+创建对话助理后，就可以对话啦，注意在模型设置里把模型替换为`deepseek-chat`
 
 ![](img/722e206b640027bc990770657b80d899.png)
 
@@ -167,18 +167,18 @@ git clone https://github.com/infiniflow/ragflow.git
 
 ![](img/dbdc6086171e171a7db851963298a91f.png)
 
-## 启动与关闭ragflow程序：
+### 启动与关闭ragflow程序
 
-### 关闭ragflow程序：
+#### 关闭ragflow程序
 
-关掉powershell窗口，退出docker进程即可。
+关掉`powershell`窗口，退出`docker`进程即可。
 
 ![](img/98fcf75aa9d7e2599047d436970fb273.png)
 
-### 启动ragflow程序：
+#### 启动ragflow程序
 
-打开docker软件，按下win+R打开powershell，输入docker logs -f ragflow-server回车，就启动了后端服务了。！！检查一下docker软件，看一下ragflow是否全部启动，也就是下图中的几个服务全是运行状态：
+打开`docker`软件，按下win+R打开`powershell`，输入`docker logs -f ragflow-server`回车，就启动了后端服务了。！！检查一下`docker`软件，看一下ragflow是否全部启动，也就是下图中的几个服务全是运行状态：
 
 ![](img/36ce1401d2b262b1815d1bc6ac62c39a.png)
 
-如果都在运行中，此时可以在浏览器输入localhost:80即可启动前端界面，愉快的使用ragflow啦！
+如果都在运行中，此时可以在浏览器输入`localhost:80`即可启动前端界面，愉快的使用ragflow啦！

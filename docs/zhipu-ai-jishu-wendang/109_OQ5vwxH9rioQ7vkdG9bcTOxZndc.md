@@ -1,18 +1,19 @@
+
 # Lora_image
 
 > 来源：[https://ai.feishu.cn/docx/LZwsdJQgboCPRfxzcSmcqRITnlg](https://ai.feishu.cn/docx/LZwsdJQgboCPRfxzcSmcqRITnlg)
 
-### 实验信息
+## 实验信息
 
 训练数据来源B站,UID:
 
-[Lora_role_5](https://zhipu-ai.feishu.cn/wiki/AzP8wLht7i9daikuzVHcCfNwn1d)抽取数据集46条，[Lora_role_2](https://zhipu-ai.feishu.cn/wiki/Cscyw20uXiFBF6kC14zcpCWwn7d)中166个训练样本（处理脚本错误，存在索引错误的文件，删除后剩余166）
+[`Lora_role_5`](https://zhipu-ai.feishu.cn/wiki/AzP8wLht7i9daikuzVHcCfNwn1d)抽取数据集46条，[`Lora_role_2`](https://zhipu-ai.feishu.cn/wiki/Cscyw20uXiFBF6kC14zcpCWwn7d)中166个训练样本（处理脚本错误，存在索引错误的文件，删除后剩余166）
 
-训练过程调整了lora_alpha，按照顺序在lora_alpha值为1、16、32上分别训练了一些step
+训练过程调整了`lora_alpha`，按照顺序在`lora_alpha`值为1、16、32上分别训练了一些`step`
 
 https://wandb.ai/dmeck/DiffUsers_CogVideoX_IMAGE_LORA2
 
-![](img/3244277e3e9f7a21520ed61344d1e616.png)
+![](`img/3244277e3e9f7a21520ed61344d1e616.png`)
 
 ```
 #!/bin/bash
@@ -71,26 +72,25 @@ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True WANDB_API_KEY=key accelerate la
   --max_grad_norm 1.0 \
   --resume_from_checkpoint latest \
   --report_to wandb --tracker_name $WANDB_PROJECT
-
 ```
 
-#### Huggingface Diffusers  Lora权重
+## Huggingface Diffusers Lora权重
 
-/mnt/ceph/develop/jiawei/model_checkpoint/hf_cogvideox_imglora_2_r128_a1_naitang
+`/mnt/ceph/develop/jiawei/model_checkpoint/hf_cogvideox_imglora_2_r128_a1_naitang`
 
-#### 结果评价
+## 结果评价
 
-训练任务在 1e-3的学习率，rank 128,a 32上完成了150次训练，
+训练任务在 `1e-3` 的学习率，`rank` 128,`a` 32上完成了150次训练，
 
 分别在不同的检查点下测试任务
 
-+   checkpoint-10000
++ `checkpoint-10000`
 
-r:128,a: 1，原来表现不错的，相关人物的图像并没有很好的融合，出现了奇怪的动作，扭曲的形象
+`r`:128,`a`: 1，原来表现不错的，相关人物的图像并没有很好的融合，出现了奇怪的动作，扭曲的形象
 
-r:128,a:32, 原样本表现良好的，出现了过度拟合训练数据，风景类的数据集影响不大，目标训练样本相关的任务生成形象清晰，手部有轻微的变形
+`r`:128,`a`:32, 原样本表现良好的，出现了过度拟合训练数据，风景类的数据集影响不大，目标训练样本相关的任务生成形象清晰，手部有轻微的变形
 
-通过上述抽样，lora权重比值越大越接近目标样本，在目标训练采样中数据拟合成功，但是影响了原来的表现不错的样本，导致所有关于人物的样本相似目标训练样本
+通过上述抽样，`lora`权重比值越大越接近目标样本，在目标训练采样中数据拟合成功，但是影响了原来的表现不错的样本，导致所有关于人物的样本相似目标训练样本
 
 > PS: 训练后 出现亮的过亮，暗的过暗的情况，猜测是从[0,255]转换到[0,1]到[-1,1],出现了精度损失
 
@@ -105,22 +105,18 @@ r:128,a:32, 原样本表现良好的，出现了过度拟合训练数据，风�
             ]
 ```
 
-+   checkpoint-15000
++ `checkpoint-15000`
 
 [视频指令维度](https://zhipu-ai.feishu.cn/wiki/Alw9w7kaLim5F7kk3kpc2szBnoc)有的参数样本都已经趋近目标数据，在 上能很好的泛化相关的形象，例如主题一致、动态信息、背景一致、对象信息、运动平滑、颜色、场景、外观样式、时态样式都有不错的效果
 
-#### 新的任务
+## 新的任务
 
-#### 关联任务
+## 关联任务
 
-###
+### `checkpoint-10000`
 
-#### checkpoint-10000
+多维表格（`HieWbRLNla17XGs6MGvcx4gFnze_tbl1WU3zELl5n06h`）
 
-多维表格（HieWbRLNla17XGs6MGvcx4gFnze_tbl1WU3zELl5n06h）
+### `checkpoint-15000`
 
-###
-
-#### checkpoint-15000
-
-多维表格（HieWbRLNla17XGs6MGvcx4gFnze_tblldXRFRLKkcyAW）
+多维表格（`HieWbRLNla17XGs6MGvcx4gFnze_tblldXRFRLKkcyAW`）

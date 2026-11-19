@@ -1,3 +1,4 @@
+
 # 20250122-这个AI科研搭子，竟能一键生成可编辑PPT！小香蕉每天免费用~~
 
 > 来源：[https://aigcreative.feishu.cn/docx/BZZQdG4UFo8ktCxEUeCcQykonlh](https://aigcreative.feishu.cn/docx/BZZQdG4UFo8ktCxEUeCcQykonlh)
@@ -16,7 +17,7 @@
 
 前两天我也是遇到个急活儿，手忙脚乱的时候，朋友给我推荐了一个叫SpeedAI的平台。
 
-大家可以访问官网：https://kuaipaper.com/?i=CYLR
+大家可以访问官网：`https://kuaipaper.com/?i=CYLR`
 
 ![](img/7624614227287a172ac1989ca3b501fa.png)
 
@@ -36,7 +37,7 @@
 
 ![](img/3117a9deaca1feb8c1f8927350a2446b.png)
 
-**在SpeedAI平**台，生成PPT有两种模式：生图模式和代码模式。
+**在SpeedAI平台**，生成PPT有两种模式：生图模式和代码模式。
 
 ![](img/b09b5966bc36bb8932dbc70d9e02904e.png)
 
@@ -94,7 +95,7 @@ SpeedAI在读取了海量资料之后，系统会自动进行解析，它像一�
 
 能改！
 
-**Spee**dAI生成完之后，点击其中的某一页，点击修改编辑：
+**SpeedAI**生成完之后，点击其中的某一页，点击修改编辑：
 
 ![](img/4a7c0833f1a9a5306d529818df65cb7f.png)
 
@@ -170,7 +171,7 @@ SpeedAI在读取了海量资料之后，系统会自动进行解析，它像一�
 
 使用也很方便，电脑端直接搜“SpeedAI”或者访问官网，进行使用。
 
-我的邀请链接）：https://kuaipaper.com/?i=CYLR
+我的邀请链接）：`https://kuaipaper.com/?i=CYLR`
 
 手机上也有个小程序叫**飞驰星辰科研小助手**（二维码识别进入），平时在外面应急也很顺手。
 

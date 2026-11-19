@@ -1,10 +1,11 @@
+
 # 共建文档
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/UzDHdIzFdoxNLbxss03cbBRIntc](https://v11enp9ok1h.feishu.cn/docx/UzDHdIzFdoxNLbxss03cbBRIntc)
 
 ## 前言
 
-本文的内容基于coze智能体的idmo，是想法没有落地的案例，欢迎参与共建。
+本文的内容基于coze智能体的`idmo`，是想法没有落地的案例，欢迎参与共建。
 
 ## 费曼学习法（地理方向）
 

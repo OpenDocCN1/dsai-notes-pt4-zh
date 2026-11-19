@@ -1,8 +1,9 @@
-# Task3：进阶 baseline2【微调方向】 + 知识点讲解
 
-> 来源：[https://datawhaler.feishu.cn/docx/ZopidaBFRoHg6exsCqJcGVVKn9d](https://datawhaler.feishu.cn/docx/ZopidaBFRoHg6exsCqJcGVVKn9d)
+# Task3：进阶 `baseline2`【微调方向】 + 知识点讲解
 
-> **教程贡献者说**：
+> 来源：[`https://datawhaler.feishu.cn/docx/ZopidaBFRoHg6exsCqJcGVVKn9d`](https://datawhaler.feishu.cn/docx/ZopidaBFRoHg6exsCqJcGVVKn9d)
+
+> `教程贡献者说`：
 
 > 看到这里相信你已经跃跃欲试，想挑战更多更好的方案了。
 
@@ -14,21 +15,21 @@
 
 > 预计需要半天到一天的时间来完成这个任务，也许你可以准备一个慵懒的下午开始算法大神之路（大部分时间在等待模型推理与训练~）。
 
-> 更新日志：2024.06.28 更新 V2版本baseline2 对先前版本推理部分做更新，推理效果更好。
+> 更新日志：2024.06.28 更新 V2版本`baseline2` 对先前版本推理部分做更新，推理效果更好。
 
 ## 数据集制作
 
-详见baseline2的第一部分（点击即可跳转）
+详见`baseline2`的第一部分（点击即可跳转）
 
-> 链接：https://aistudio.baidu.com/projectdetail/8090135
+> 链接：`https://aistudio.baidu.com/projectdetail/8090135`
 
 ## 平台微调
 
-###  训练数据上传
+### 训练数据上传
 
-+   [登录微调平台（点击可跳转）](https://training.xfyun.cn/overview)
++   [登录微调平台（点击可跳转）](`https://training.xfyun.cn/overview`)
 
-> 链接：https://training.xfyun.cn/overview
+> 链接：`https://training.xfyun.cn/overview`
 
 +   上传第一步制作的数据集
 
@@ -44,15 +45,15 @@
 
 ![](img/28c1ab0c525f279301a4ccc5dece202b.png)
 
-### 2.2  测试数据上传
+### 测试数据上传
 
-回到：https://training.xfyun.cn/dataset/datasetIndex
+回到：`https://training.xfyun.cn/dataset/datasetIndex`
 
 这次我们选择测试集即可。
 
 ![](img/c5664c901a02ef6b8f9af03ce925b128.png)
 
-上传我们的test.csv文件即可。
+上传我们的`test.csv`文件即可。
 
 ![](img/1f4320dae17a9c68a3e95f6fdf86ee69.png)
 
@@ -60,11 +61,11 @@
 
 到这里我们数据集就传好啦~
 
-### 2.3 平台微调
+### 微调配置
 
-进入创建微调页面：https://training.xfyun.cn/model/add
+进入创建微调页面：`https://training.xfyun.cn/model/add`
 
-基本配置与版本配置如下，我们选择性能比较好的Spark Pro模型~
+基本配置与版本配置如下，我们选择性能比较好的`Spark Pro`模型~
 
 ![](img/17e626f20b80f3bf07b72fb6187c84bb.png)
 
@@ -84,19 +85,19 @@
 
 ![](img/beecf2b5dc0fd9a13543d89199c05de6.png)
 
-点击左侧导航栏的**我的模型服务**接着拿到resourceId、APPID、APIKey、APISecret
+点击左侧导航栏的`我的模型服务`接着拿到`resourceId`、`APPID`、`APIKey`、`APISecret`
 
 ![](img/55575d6b6881428e390662ce416cb2d7.png)
 
-接下来到baseline2中继续执行~
+接下来到`baseline2`中继续执行~
 
-https://aistudio.baidu.com/projectdetail/8090135
+`https://aistudio.baidu.com/projectdetail/8090135`
 
-在main.ipynb的微调推理部分填入APPID、APIKey、APISecret（注意顺序）
+在`main.ipynb`的微调推理部分填入`APPID`、`APIKey`、`APISecret`（注意顺序）
 
 ![](img/e950303dbdecec5d3149075c22bd41ec.png)
 
-在SparkApi.py文件的108行，引号中填入你的resourceId
+在`SparkApi.py`文件的108行，引号中填入你的`resourceId`
 
 ![](img/a7b18d048735f3622bd195c2aa535a9f.png)
 
@@ -104,9 +105,9 @@ https://aistudio.baidu.com/projectdetail/8090135
 
 快去提交结果吧
 
-https://challenge.xfyun.cn/h5/detail?type=role-element-extraction&ch=dw24_y0SCtd
+`https://challenge.xfyun.cn/h5/detail?type=role-element-extraction&ch=dw24_y0SCtd`
 
-大概是这样的分数，这只是一个很简单的版本。
+大概就是这样的分数，这只是一个很简单的版本。
 
 ![](img/a7d27994cfb22bb71bdb4ae8b2d7a733.png)
 

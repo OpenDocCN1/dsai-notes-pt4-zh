@@ -1,3 +1,4 @@
+
 # Claude Code配置整合包小白友好版一键下载，只有一个需要主动操作！其他全部全自动！
 
 > 来源：[https://my.feishu.cn/docx/Pes9deE5toqQJnxh1J7cDZ5LnBh](https://my.feishu.cn/docx/Pes9deE5toqQJnxh1J7cDZ5LnBh)
@@ -12,7 +13,7 @@
 
 ## 这个配置是啥？
 
-简单说，这是**社区最佳实践的合包**。
+简单说，这是社区最佳实践的合包。
 
 作者Jarrod Watts把自己用着顺手的各种配置、规则、工具，整理成一个包，让你一键安装。
 
@@ -38,21 +39,21 @@ Rules就是这个道理——你打开什么类型的代码文件，AI自动用�
 
 **这个配置有4个Rules**：
 
-TypeScript规则：写 .ts/.tsx文件时生效，自动遵循TypeScript最佳实践
+TypeScript规则：写 `.ts`/`.tsx`文件时生效，自动遵循TypeScript最佳实践
 
 测试规则：写测试文件时生效，自动用AAA模式写测试
 
 注释规则：所有文件生效，禁止写废话注释
 
-智能合约规则：写 .sol文件时生效，Foundry/ZKsync规范
+智能合约规则：写 `.sol`文件时生效，Foundry/ZKsync规范
 
-**效果：以前你要说"请遵循TypeScri**pt规范"，现在不用说了，AI自动遵循。
+**效果：以前你要说"请遵循TypeScript规范"，现在不用说了，AI自动遵循。**
 
 老金我装完之后，最大的感受就是这个。
 
 以前写TypeScript，总得提醒Claude注意类型定义、接口规范之类的。
 
-现在好了，只要是.ts或.tsx文件，Claude自动就按规范来了。
+现在好了，只要是`.ts`或`.tsx`文件，Claude自动就按规范来了。
 
 代码风格统一，质量也高了不少。
 
@@ -96,9 +97,9 @@ Hook就是"钩子"，当特定事件发生时，自动执行某个操作。
 
 **只有这个是手动的！**
 
-你在仓库里看到那个 interview 命令了吗？你可以像这样在终端调用它：
+你在仓库里看到那个 `interview` 命令了吗？你可以像这样在终端调用它：
 
-> 输入 /interview
+> 输入 `/interview`
 
 这会启动一个交互式的规划流程，Claude 会问你一系列问题来细化你的需求，而不是直接盲目写代码。
 

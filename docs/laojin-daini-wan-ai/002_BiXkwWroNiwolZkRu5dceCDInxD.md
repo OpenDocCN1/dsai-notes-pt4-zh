@@ -1,3 +1,4 @@
+
 # 元：最小可治理单元。时代的分水岭，是解决复杂问题的能力！
 
 > 来源：[https://my.feishu.cn/docx/Kx2GdChFVorNZ7xpukDcgRHdnbl](https://my.feishu.cn/docx/Kx2GdChFVorNZ7xpukDcgRHdnbl)
@@ -98,15 +99,15 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 很多人一听元，会以为元只是一层。其实不是。
 
-**第一层：执行元**
+### 第一层：执行元
 
 就是直接干活的。生成文案的、解析输入的、调用接口的、产出结果的。
 
-**第二层：编排元**
+### 第二层：编排元
 
 不直接做结果，但负责决定谁先上、谁后上、谁接谁、什么时候中断、什么时候重试。
 
-**第三层：基础设施元**
+### 第三层：基础设施元
 
 管状态、日志、记忆、权限、校验、缓存、规则这些底层能力。
 
@@ -146,7 +147,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 居然一段时间没看观看量涨了这么多。。之前还以为这玩意没人看呢。。
 
-论文地址：https://zenodo.org/records/18957649
+论文地址：`https://zenodo.org/records/18957649`
 
 ![](img/4ac6523edec0f9494a1868d672841ad1.png)
 
@@ -168,7 +169,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 但如果这件事真想稳定做成，它背后已经隐含了一整套元、组织镜像、节奏编排、发牌机制。
 
-**先说有哪些元**
+### 先说有哪些元
 
 任务理解元：把你的帮我改登录页拆清，是改UI还是改接口还是全改
 
@@ -188,7 +189,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 你看，这已经不是万能AI在做事了。是一组元，在接力。
 
-**再说牌——10张牌覆盖所有状态**
+### 再说牌——10张牌覆盖所有状态
 
 澄清牌：任务模糊时，先问清楚再动手
 
@@ -210,9 +211,9 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 留白牌：有时候最好的动作不是继续推，而是停
 
-**走一条完整流程**
+### 走一条完整流程
 
-你对Claude Code说：帮我把登录页改成新的视觉稿，顺手把登录接口字段从phone改成mobile，然后补一下登录相关文档。
+你对Claude Code说：帮我把登录页改成新的视觉稿，顺手把登录接口字段从`phone`改成`mobile`，然后补一下登录相关文档。
 
 第一步，系统不会马上写代码。因为任务太混，先触发澄清牌。
 
@@ -220,9 +221,9 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 第二步，仓库感知元和检索元上。
 
-开始找登录页文件在哪、接口定义在哪、有没有现成登录组件、mobile字段是不是别处已经用过。
+开始找登录页文件在哪、接口定义在哪、有没有现成登录组件、`mobile`字段是不是别处已经用过。
 
-第三步，一查发现仓库里有两个Login页面。
+第三步，一查发现仓库里有两个`Login`页面。
 
 一个是旧版，一个是新版壳子下的实验页面。
 
@@ -236,9 +237,9 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 第五步，方案元上。至少两条路：
 
-只改登录页映射层，对外还是phone，内部转成mobile。快，影响小。
+只改登录页映射层，对外还是`phone`，内部转成`mobile`。快，影响小。
 
-把整个公共表单和接口定义一起升级成mobile。长期干净，但影响面更大。
+把整个公共表单和接口定义一起升级成`mobile`。长期干净，但影响面更大。
 
 第六步，你拍板走影响小的方案。
 
@@ -268,7 +269,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 你们会发现，只要问题一复杂，最后都会绕回这条主线。
 
-场景一：AI写文章，第一篇像神，第三篇开始串味
+### 场景一：AI写文章，第一篇像神，第三篇开始串味
 
 因为他做的不是系统，只是一次性生成。
 
@@ -278,7 +279,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 最容易混的三件事：选题、结构、审核。一旦混在一起，文章越写越串。
 
-场景二：多智能体项目，演示时惊艳，上线后崩塌
+### 场景二：多智能体项目，演示时惊艳，上线后崩塌
 
 演示只有一条路径，变量很少。
 
@@ -290,7 +291,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 名字很好起。结构最难补。
 
-场景三：智能提醒越做越烦，最后没人点
+### 场景三：智能提醒越做越烦，最后没人点
 
 用户登录发一下，停留发一下，犹豫发一下，退出前再发一下。
 
@@ -304,7 +305,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 而是判断：这张牌现在该不该出现？发完以后，用户是更清楚还是更乱？
 
-**场景四：团队越干越乱**
+### 场景四：团队越干越乱
 
 一个需求来了，策划补一点，产品补一点，研发顺手改一点，运营又加一点。
 
@@ -320,19 +321,19 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 我今天讲的是一整条系统成长路径。
 
-**第一步：元**
+### 第一步：元
 
 找到最小可治理单元，让问题不再是一锅粥。
 
-**第二步：组织镜像**
+### 第二步：组织镜像
 
 让这些元按分工、职责、权限、协作关系组织起来。
 
-**第三步：节奏编排**
+### 第三步：节奏编排
 
 不是所有东西都同时出现，成熟系统要学会按时机出牌。
 
-**第四步：意图放大**
+### 第四步：意图放大
 
 顶层目标和意图，要被层层展开，最后落到结构、动作、触点和交付上。
 
@@ -354,7 +355,7 @@ Anthropic也在反复强调subagents、context management、orchestration这些�
 
 其实我在做队伍编排时候，就已经有了元的雏形。
 
-https://github.com/KimYx0207/agent-teams-playbook
+`https://github.com/KimYx0207/agent-teams-playbook`
 
 之后大概在1个多月前，我在自己的课程群里第一次把元提出来。
 
@@ -420,4 +421,4 @@ AI时代真正拉开差距的，不只是模型，不只是Agent，也不只是�
 
 评论区聊聊，老金我很好奇你们在复杂任务里踩过什么坑。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

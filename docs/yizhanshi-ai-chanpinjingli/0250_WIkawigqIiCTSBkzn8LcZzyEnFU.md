@@ -1,3 +1,4 @@
+
 # Python 入门机器学习
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/ExSgdOZ3MoZi0OxhnH6cQcRpnHg](https://v11enp9ok1h.feishu.cn/docx/ExSgdOZ3MoZi0OxhnH6cQcRpnHg)
@@ -6,11 +7,11 @@ Python 是机器学习中最常用的编程语言之一，因其易于学习、�
 
 接下来，我将逐步说明如何通过 Python 入门机器学习，并介绍需要的一些常用库。
 
-### 安装 Python 和必要的库
+## 安装 Python 和必要的库
 
 首先，确保你已经安装了 Python，你可以访问Python 官方网站 https://www.python.org/ 下载和安装最新版本。
 
-[如果你还不熟悉 P](https://www.runoob.com/python3/python3-tutorial.html)ython，可以先学习我们的 Python 教程。
+[如果你还不熟悉 Python](https://www.runoob.com/python3/python3-tutorial.html)，可以先学习我们的 Python 教程。
 
 常用机器学习库：
 
@@ -28,49 +29,33 @@ pip install tensorflow
 相关课程：
 
 +   [Python 教程](https://www.runoob.com/python3/python3-tutorial.html)
-
 +   [Numpy 教程](https://www.runoob.com/numpy/numpy-tutorial.html)
-
 +   [Pandas 教程](https://www.runoob.com/pandas/pandas-tutorial.html)
-
 +   [Matplotlib 教程](https://www.runoob.com/matplotlib/matplotlib-tutorial.html)
-
 +   [scikit-learn 教程](https://www.runoob.com/sklearn/sklearn-tutorial.html)
-
 +   [PyTorch 教程](https://www.runoob.com/pytorch/pytorch-tutorial.html)
-
 +   [OpenCV 教程](https://www.runoob.com/opencv/opencv-tutorial.html)
 
 在使用 Python 进行机器学习时，整个过程一般遵循以下步骤：
 
-+   **导入必要的库** 例如，NumPy、Pandas 和 Scikit-learn。
-
++   **导入必要的库** 例如，`NumPy`、`Pandas` 和 `Scikit-learn`。
 +   **加载和准备数据** 数据是机器学习的核心。你需要加载数据并进行必要的预处理（例如数据清洗、缺失值填补等）。
-
 +   **选择模型和算法** 根据任务选择适合的机器学习算法（如线性回归、决策树等）。
-
 +   **训练模型** 使用训练集数据来训练模型。
-
 +   **评估模型** 使用测试集评估模型的准确性，并根据评估结果优化模型。
-
 +   **调整模型和超参数** 根据评估结果调整模型的超参数，进一步优化模型性能。
 
-## 一个简单的机器学习例子：使用 Scikit-learn 做分类
+## 一个简单的机器学习例子：使用 `Scikit-learn` 做分类
 
-Scikit-learn（简称 Sklearn）是一个开源的机器学习库，建立在 NumPy、SciPy 和 matplotlib 这些科学计算库之上，提供了简单高效的数据挖掘和数据分析工具。
+`Scikit-learn`（简称 `Sklearn`）是一个开源的机器学习库，建立在 `NumPy`、`SciPy` 和 `matplotlib` 这些科学计算库之上，提供了简单高效的数据挖掘和数据分析工具。
 
-Scikit-learn 包含了许多常见的机器学习算法，包括：
+`Scikit-learn` 包含了许多常见的机器学习算法，包括：
 
-+   线性回归、岭回归、Lasso回归
-
-+   支持向量机（SVM）
-
++   线性回归、岭回归、`Lasso`回归
++   支持向量机（`SVM`）
 +   决策树、随机森林、梯度提升树
-
-+   聚类算法（如K-Means、层次聚类、DBSCAN）
-
-+   降维技术（如PCA、t-SNE）
-
++   聚类算法（如`K-Means`、层次聚类、`DBSCAN`）
++   降维技术（如`PCA`、`t-SNE`）
 +   神经网络
 
 接下来我们通过一个简单的分类任务——使用鸢尾花数据集（Iris Dataset）来演示机器学习的流程，鸢尾花数据集是一个经典的数据集，包含 150 个样本，描述了三种不同类型的鸢尾花的花瓣和萼片的长度和宽度。
@@ -94,7 +79,7 @@ from sklearn.metrics import accuracy_score
 
 加载鸢尾花数据集：
 
-## 实例
+实例
 
 ```
 加载鸢尾花数据集
@@ -123,7 +108,7 @@ print(X.head())
 
 将数据集划分为训练集和测试集，通常使用 70% 训练集和 30% 测试集的比例：
 
-## 实例
+实例
 
 ```
 # 划分训练集和测试集（80% 训练集，20% 测试集）
@@ -134,7 +119,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 许多机器学习算法都依赖于特征的尺度，特别是像 K 最近邻算法。为了确保每个特征的均值为 0，标准差为 1，我们使用标准化来处理数据：
 
-## 实例
+实例
 
 ```
 # 标准化特征
@@ -147,7 +132,7 @@ X_test = scaler.transform(X_test)
 
 在这个例子中，我们选择 K-Nearest Neighbors（KNN） 算法来进行分类：
 
-## 实例
+实例
 
 ```
 # 创建 KNN 分类器
@@ -161,7 +146,7 @@ knn.fit(X_train, y_train)
 
 训练完成后，我们使用测试集评估模型的准确性：
 
-## 实例
+实例
 
 ```
 # 预测测试集
@@ -169,7 +154,7 @@ y_pred = knn.predict(X_test)
 
 # 计算准确率
 accuracy = accuracy_score(y_test, y_pred)
-print(f&#x27;模型准确率: {accuracy:.2f}&#x27;)
+print(f'模型准确率: {accuracy:.2f}')
 ```
 
 完成以上代码，输出结果为：
@@ -220,10 +205,10 @@ y_pred = knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 # 可视化 - 这里只是一个简单示例，具体可根据实际情况选择绘图方式
-plt.scatter(X_test[:, 0], X_test[:, 1], c=y_pred, cmap=&#x27;viridis&#x27;, marker=&#x27;o&#x27;)
-plt.title(&quot;KNN Classification Results&quot;)
-plt.xlabel(&quot;Feature 1&quot;)
-plt.ylabel(&quot;Feature 2&quot;)
+plt.scatter(X_test[:, 0], X_test[:, 1], c=y_pred, cmap='viridis', marker='o')
+plt.title("KNN Classification Results")
+plt.xlabel("Feature 1")
+plt.ylabel("Feature 2")
 plt.show()
 ```
 

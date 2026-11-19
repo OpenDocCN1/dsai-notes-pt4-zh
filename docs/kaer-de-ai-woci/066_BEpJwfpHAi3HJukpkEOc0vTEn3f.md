@@ -1,12 +1,11 @@
+
 # 豆包Seedream 4.0测试大大大全
 
-> 来源：[https://aiwarts101.feishu.cn/docx/VfBodfTONodGzkx0wEmcDlwOnUc](https://aiwarts101.feishu.cn/docx/VfBodfTONodGzkx0wEmcDlwOnUc)
+> 来源：[`https://aiwarts101.feishu.cn/docx/VfBodfTONodGzkx0wEmcDlwOnUc`](https://aiwarts101.feishu.cn/docx/VfBodfTONodGzkx0wEmcDlwOnUc)
 
-原文：https://mp.weixin.qq.com/s/qj0ZLn1UfDaTmo58tUzfqQ
+原文：`https://mp.weixin.qq.com/s/qj0ZLn1UfDaTmo58tUzfqQ`
 
-**seedream4自拍！**
-
-帅到封神
+## seedream4自拍！
 
 > 将上传的照片转换成高分辨率的黑白色调风格肖像艺术作品，采用编辑类和艺术摄影风格。背景呈现柔和渐变效果，营造出层次感与寂静氛围。细腻的胶片颗粒质感为画面增添了一种可触摸的、模拟摄影般的柔和质地，让人联想到经典的黑白摄影。 画面中的人物，模糊却惊艳的面容从阴影中隐约浮现，并非传统的摆拍，而像是被捕捉于思索或呼吸之间的瞬间。他的脸部因为光线的轮廓，唤起神秘、亲密与优雅之感。他的五官精致而深刻，散发出忧郁与诗意之美，却不显矫饰。 一束温柔的定向光，柔和地漫射开来，轻抚他的面颊曲线，或在眼中闪现光点——这是画面的情感核心。其余部分以大量负空间占据，刻意保持简洁，使画面自由呼吸。画面中没有文字、没有标志——只有光影与情绪交织。 整体氛围抽象却深具人性，仿佛一瞥即逝的目光，或半梦半醒间的记忆：亲密、永恒、令人怅然的美。 要求没有实物的背景，每张照片换不同的动作。生成5张。
 
@@ -48,7 +47,7 @@
 
 ![](img/3e9669dd2fff4c7808da6ceb962118b8.png)
 
-施工🚧中
+### 施工🚧中
 
 ---
 

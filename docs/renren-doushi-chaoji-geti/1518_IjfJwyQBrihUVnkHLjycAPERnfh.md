@@ -1,18 +1,15 @@
-# 2023-08-29特斯拉1万个H100集群上线！超算Dojo7月已经开工，加速L4自动驾驶-今日头条
-
-> 来源：[https://xuqiwei1986.feishu.cn/docx/NAdNdkuh2oANJsx1oSnc2O6Gn7d](https://xuqiwei1986.feishu.cn/docx/NAdNdkuh2oANJsx1oSnc2O6Gn7d)
-
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7272628151946052135/?log_from=5f07483ed172_1693375241710).com/article/727...
-
->
 
 # 特斯拉1万个H100集群上线！超算Dojo7月已经开工，加速L4自动驾驶
+
+> 来源：https://xuqiwei1986.feishu.cn/docx/NAdNdkuh2oANJsx1oSnc2O6Gn7d
+
+> 🔗 原文链接：https://www.toutiao.com/article/7272628151946052135/?log_from=5f07483ed172_1693375241710
 
 2023-08-29 14:33 · 新智元
 
 编辑：润
 
-# 【新智元导读】特斯拉10000块H100 GPU集群上线，加速FSD V12落地。拥有自家超算的和H100集群的特斯拉，正式入局算力军备竞赛！
+## 【新智元导读】特斯拉10000块H100 GPU集群上线，加速FSD V12落地。拥有自家超算的和H100集群的特斯拉，正式入局算力军备竞赛！
 
 根据特斯拉爆料人士Sawyer Merritt爆料，特斯拉将于美国时间本周一上线备受期待的，由1万片H100组成的超级计算机。
 
@@ -34,7 +31,7 @@
 
 马老板上个月甚至发推称：「坦白说……如果英伟达能提供足够的GPU，我们可能就不需要 Dojo。」
 
-**特斯拉的算力储备有什么用？**
+## 特斯拉的算力储备有什么用？
 
 而且对于特斯拉来说，这个H100集群不单代表了无与伦比的算力，还使得拥有海量数据的特斯拉能将这些数据变现的能力。
 
@@ -72,7 +69,7 @@ FSD V12背后的技术原理，就是将海量的优秀司机驾驶的实时视�
 
 网友分析到，因为智能机器人的工作原理，本质上也是从视频信号中去理解周围的世界。这和自动驾驶的本质是一样的，只是形态和控制方式有区别。
 
-**特斯拉超算Dojo怎么样了？**
+## 特斯拉超算Dojo怎么样了？
 
 Tesla上线H100 GPU 集群的同时，也在激活自己研发制造的超算Dojo。下图是特斯拉内部对Dojo计算能力的预测。
 
@@ -110,8 +107,8 @@ Tesla上线H100 GPU 集群的同时，也在激活自己研发制造的超算Doj
 
 而现在，拥有Dojo和1万块H100集群的Tesla，正式加入了算力军备竞赛当中。
 
-参考资料：
+### 参考资料
 
-https://www.tomshardware.com/news/teslas-dollar300-million-ai-cluster-is-going-live-today
+`https://www.tomshardware.com/news/teslas-dollar300-million-ai-cluster-is-going-live-today`
 
-https://twitter.com/SawyerMerritt/status/1696011140508045660
+`https://twitter.com/SawyerMerritt/status/1696011140508045660`

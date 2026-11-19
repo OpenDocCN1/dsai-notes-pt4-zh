@@ -1,6 +1,9 @@
+
 # 20240405-开源版Devin，GPT-4加持：SWE-Agent智能体，让编程真正实现零Bug！
 
 > 来源：[https://aigcreative.feishu.cn/docx/HJ2hd4K1roEVILxI8HMcNSianbf](https://aigcreative.feishu.cn/docx/HJ2hd4K1roEVILxI8HMcNSianbf)
+
+## 项目概述
 
 在AI、数字化浪潮席卷全球的今天，软件工程已成为推动科技进步的重要力量。然而，即使是最顶尖的程序员也难以避免编码过程中的错误。但现在，一项名为SWE-Agent的突破性技术横空出世，声称将彻底改变我们对软件Bug处理的认知。
 
@@ -10,11 +13,15 @@
 
 ![](img/e93e90a9caad8c55d78b6934998e3974.png)
 
+## 技术表现与核心设计
+
 在最新的SWE-bench测试集中，SWE-Agent的表现令人瞩目，成功修复了12.29%的问题，创下了新的行业标杆。这一成就的背后，是研究团队对语言模型中心命令的精心设计，以及为模型量身定做的输入输出格式。这些创新使得SWE-Agent能够轻松浏览代码库，查看、编辑甚至执行代码文件。
 
 ![](img/7f97b28080e831a8d661a08718a4bae3.png)
 
 这项技术的核心在于所谓的“Agent-Computer Interface”，即：智能体-计算机接口（ACI）。ACI的设计让SWE-Agent能够更加高效地与代码库交互，从而提高问题解决的准确性和效率。普林斯顿大学的研究团队还建立了一个专门的仓库，以便开发者能够轻松迭代ACI设计，进一步优化这一工具。
+
+## 行业与教育影响
 
 SWE-Agent的成功不仅在于其技术成就，更在于它为软件工程领域带来的深远影响。随着软件开发的复杂性日益增加，自动化错误修复工具的需求也日益迫切。SWE-Agent的出现，不仅能够减轻开发者的负担，更有可能推动整个行业的创新和发展。
 
@@ -28,9 +35,9 @@ SWE-Agent的出现无疑为我们展示了软件工程自动化的无限可能�
 
 ![](img/4956c21efc491b0f9e1ceb258ed4b5f8.png)
 
-项目详情：
+## 项目详情
 
-[SWE-agent GitHub项目地址：h](https://github.com/princeton-nlp/SWE-agent)ttps://github.com/princeton-nlp/SWE-agent
+[SWE-agent GitHub项目地址](https://github.com/princeton-nlp/SWE-agent)
 
 SymPy项目互动演示：https://swe-agent.com/demo
 

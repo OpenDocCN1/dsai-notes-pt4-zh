@@ -1,3 +1,4 @@
+
 # Rokid 新品发布会有感：空间计算新伙伴
 
 > 来源：[https://leonzhang.feishu.cn/docx/MW1ad3yojoS6XAxHS9QcPD2Inhd](https://leonzhang.feishu.cn/docx/MW1ad3yojoS6XAxHS9QcPD2Inhd)
@@ -6,35 +7,25 @@ Leon Zhang, April 25, 2024
 
 > 热爱这件事，让我们乐于比别人多走一步，发现更棒的 Feature，从而设计出更棒的产品。
 
-**AI Summary**
+### AI Summary
 
 在参与 Rokid Open Day 2024 的发布会中，我们深入了解了 Rokid 如何推动生态系统的构建和开发者计划，同时探索了这一创新技术在文娱与教育领域的应用前景，以及新品 Rokid AR Lite 的发布，为我们描绘了一个充满潜力的未来计算平台的蓝图。
 
-1.  前言
+## 目录
 
-1.  空间计算生态及开发者计划
-
-1.  产品与技术
-
-1.  AR 生态应用
-
-1.  生态内容合作发布
-
-1.  开发者服务计划
-
-1.  空间计算下的文娱与教育
-
-1.  AR 文博文旅
-
-1.  AR 互动娱乐
-
-1.  AR 智慧教育
-
-1.  新品发布 Rokid AR lite
-
-1.  最后
-
-1.  相关阅读
+1. 前言
+2. 空间计算生态及开发者计划
+3. 产品与技术
+4. AR 生态应用
+5. 生态内容合作发布
+6. 开发者服务计划
+7. 空间计算下的文娱与教育
+8. AR 文博文旅
+9. AR 互动娱乐
+10. AR 智慧教育
+11. 新品发布 Rokid AR lite
+12. 最后
+13. 相关阅读
 
 ## 前言
 
@@ -56,11 +47,11 @@ Leon Zhang, April 25, 2024
 
 ## 公司介绍与产品回顾
 
-创始人兼 CEO 祝铭明 Misa 致谢并回顾 Rokid 过**去三年，有些关键数据，比如“过去三年营收**复合增长率超过 100%”、“2024 年一季度对比去年同期增长约 150%”、“4 年营收，预计 20 倍的业绩增长”、同时 Misa 还预测说，“XR 行业在未来 10-20 年会保持 50% 以上，甚至连续 100% 的增长”。
+创始人兼 CEO 祝铭明 Misa 致谢并回顾 Rokid 过去三年，有些关键数据，比如“过去三年营收复合增长率超过 100%”、“2024 年一季度对比去年同期增长约 150%”、“4 年营收，预计 20 倍的业绩增长”，同时 Misa 还预测说，“XR 行业在未来 10-20 年会保持 50% 以上，甚至连续 100% 的增长”。
 
 ![](img/e7a5e4865c4d012ccd2e04a5729ad2df.png)
 
-**接着进一步介绍说**用户的使用情况，一个数据：“周活突破 40%”。
+接着进一步介绍说用户的使用情况，一个数据：“周活突破 40%”。
 
 这个数字确实很有意思，起码在一定程度上代表了普通大众用户对 Rokid 产品在市场中的接受度和用户粘性，一定程度上还代表 XR 的接受程度，代表他们的使用频次，代表除了桌面电脑、手机、平板等设备后他们认可的新设备。虽然对比前三者，XR 类设备的数据还差很远，但起码这是一个代表持续向好的信号之一。
 
@@ -124,7 +115,7 @@ Gary 继续分享说，Rokid 自研 YodaOS-Master 空间操作系统，目前支
 
 第二家，我确实没有想到会是印象笔记。
 
-这种需要高频打字的应用和场景，又让**我想到了** XR 设备不可或缺的功能之一：语音输入。在我看来 XR 设备是最应该接入语音的设备。我第一次用 Pico 的时候，下意识的想要使用语音与它对话，可它不支持。
+这种需要高频打字的应用和场景，又让我想到了 XR 设备不可或缺的功能之一：语音输入。在我看来 XR 设备是最应该接入语音的设备。我第一次用 Pico 的时候，下意识的想要使用语音与它对话，可它不支持。
 
 ![](img/fc91677fa1be27f65a957d055a7496b6.png)
 
@@ -132,15 +123,11 @@ Gary 继续分享说，Rokid 自研 YodaOS-Master 空间操作系统，目前支
 
 刚才敲文字的时候突然想到，用 VR 设备直接扫描手机上分享的 Wi-Fi 二维码不可以吗？VR 设备是 VST 方案，那直接用捕捉现实世界的摄像头，直接去扫描二维码，然后解码不就可以实现连接嘛？
 
-1.  用手机分享 Wi-Fi 网络的 SSID（名称）和密码。
-
-1.  将 SSID、密码和其他必要的 Wi-Fi 配置信息编码成二维码格式。
-
-1.  将生成的二维码显示在手机屏幕上。
-
-1.  用 VR/AR 设备上，支持捕捉或采集现实世界的摄像头扫描二维码。
-
-1.  解码二维码中包含的 Wi-Fi 配置信息，不就完成自动连接了吗？
+1. 用手机分享 Wi-Fi 网络的 SSID（名称）和密码。
+2. 将 SSID、密码和其他必要的 Wi-Fi 配置信息编码成二维码格式。
+3. 将生成的二维码显示在手机屏幕上。
+4. 用 VR/AR 设备上，支持捕捉或采集现实世界的摄像头扫描二维码。
+5. 解码二维码中包含的 Wi-Fi 配置信息，不就完成自动连接了吗？
 
 我暂时没有想到其他的困难点，所以我很想知道厂商没有采用这种方式的原因。🤔
 
@@ -150,13 +137,13 @@ Gary 继续分享说，Rokid 自研 YodaOS-Master 空间操作系统，目前支
 
 为什么要随身带着一个 AR 眼镜 + Station（终端） + 折叠键盘？或者，即便是在家里，有把这些设备准备好的时间，想要记录的内容早就忘记了。因为整个使用的流程太长了，就会造成记录一次内容太重了，这一定会降低使用频率。试想，如果你打开印象笔记，它弹出广告或者增值服务，你会不会突然崩溃？
 
-在线下的时候我没有去体验到这款应用，也没有搜到相关的视频。
+在下线的时候我没有去体验到这款应用，也没有搜到相关的视频。
 
 第三家，XOSMO，AR 熊猫馆。可以召唤熊猫出来玩，有些手势可以与熊猫互动。如 Gary 所说，确实有可能小朋友会很喜欢它。
 
 ![](img/e72204edddd096a9cc062047fa8a13c0.png)
 
-**第四家，迪惟科技**。**空间计算结合智慧建筑**
+第四家，迪惟科技。空间计算结合智慧建筑
 
 分享人是迪惟科技创始人 & CEO 沈迪科，沈总说，公司是以数字电箱和为核心，来打造全新的数字化生活方式，打造全新的生活模式，打造智能家居领域全新的交互方式。
 
@@ -196,12 +183,11 @@ Gary 说，“培养高校学生就是在培养 XR 行业的未来”。深以�
 
 ![](img/72b6a732a4d8fab0dd244b305f228311.png)
 
-**第二，面向社会的开发者培训体系**，包括有开发者沙龙、若琪学院（视频教程+直播讲课+考试认证）、技术工作坊（DC 面对面、应用挑战赛）。
+第二，面向社会的开发者培训体系，包括有开发者沙龙、若琪学院（视频教程+直播讲课+考试认证）、技术工作坊（DC 面对面、应用挑战赛）。
 
 ![](img/aef076173f96937cf8500e7a09a72763.png)
 
 第三，持续推进与 Unity 的深入合作，包括有 UUG 开发者活动、Unite 大会、Unity GameJam 等。
-
 
 ## 空间计算下的文娱与教育
 
@@ -213,13 +199,13 @@ Gary 说，“培养高校学生就是在培养 XR 行业的未来”。深以�
 
 ![](img/640947885b81d232b93c8f24b4b6378a.png)
 
-### AR **文博文旅**
+### AR 文博文旅
 
-新时代文博文旅主要包括有，**新体验（空间导览）、新形态（智能导览精灵）、新玩法**（导览图鉴）、新叙事（大空间 AR 秀）。
+新时代文博文旅主要包括有，新体验（空间导览）、新形态（智能导览精灵）、新玩法（导览图鉴）、新叙事（大空间 AR 秀）。
 
 ![](img/cc2dfbfe6e55a22a849c93bbddbd2a11.png)
 
-### AR **互动娱乐**
+### AR 互动娱乐
 
 陈希提到，IP 的力量很强大，小朋友喜欢奥特曼的经典 AR 展，同时表示今年（2024 年）也将会引入更多有意思的 IP。
 
@@ -231,9 +217,9 @@ IP 互动的确实是个不错的切入点，比如有合作伙伴拿到奥特�
 
 ![](img/12d66f8fd9dcff9b8f8041ce0eb1859e.png)
 
-### AR **智慧教育**
+### AR 智慧教育
 
-学[初识 AR 眼镜｜热爱可抵漫长岁月](https://leonzhang.feishu.cn/wiki/GAnpwvmiBiwbupkRHSQcDWPznbd)能够通过更立体、更直观的课程内容获取知识，提升学习效率。关于智慧教育这点，我也曾在之前的内容中提到过（详细请移步至文档：  ），内容当时也是参考了 Rokid，不过这个场景确实是我之前设想过的画面。
+学[初识 AR 眼镜｜热爱可抵漫长岁月](https://leonzhang.feishu.cn/wiki/GAnpwvmiBiwbupkRHSQcDWPznbd)能够通过更立体、更直观的课程内容获取知识，提升学习效率。关于智慧教育这点，我也曾在之前的内容中提到过（详细请移步至文档： ），内容当时也是参考了 Rokid，不过这个场景确实是我之前设想过的画面。
 
 尤其这个多人协作去做一些事情，比如拼一辆汽车、拼一个巨大的拼图，建造一个“我的世界”等等。
 
@@ -265,7 +251,7 @@ Rokid 有些功能我是非常喜欢的，比如下图的前两个。
 
 第二，近视人群友好，0-600 度的近视调节。我不否认这个设计初衷的友好，但在实施过程中，可能出现了偏误。发布会结束后我去试用，我发现我自己戴了三四分钟，眼镜就开始痛了，然后一摸发现近视度数调节被调满了，也就是被调节至 600 度，也可能是因为我的近视度数高些，导致我没有留意近视度数，觉得画面差不多就带上了。
 
-其实像这个功能应该有个类似数字的提醒，比如当前矫正大概是多少度，大家在调的时候更方便。还有一个问题，如果是已经调整好度数了，或许可以通过 UI 提示一下，比如简单的 Toast 提示，当前眼镜近视度数矫正为 xx 度。
+其实像这个功能应该有个类似数字的提醒，比如当前矫正大概是多少度，大家在调的时候更方便。还有一个问题，如果是已经调整好度数了，或许可以通过 UI 提示一下，比如简单的 `Toast` 提示，当前眼镜近视度数矫正为 xx 度。
 
 ![](img/72d11c046053f13c0cfc101a7cca3c59.png)
 
@@ -276,6 +262,8 @@ Misa 总说，理论上任何应用这个传统的安卓应用都可以变成空
 Misa 分享防抖功能，他说坐飞机、坐车都可以防抖。
 
 坐飞机、坐车场景，不会晕车、晕场合，我能理解，但是跑步机，应该很难，毕竟应用是依托于眼镜的现实，即便是防抖，也是相对的，如果眼镜本体不稳定， 那又如何？
+
+
 
 ![](img/e2d30ef9ac2b531714af0048b2a8abbb.png)
 
@@ -311,32 +299,18 @@ Rokid AR Lite 功能展览图
 
 ## 相关阅读
 
-+   现场录播：https://www.youtube.com/watch?v=hgyuzY01s3w
-
-+   中国 AR 创新力量，引领空间计算新浪潮： http://www.news.cn/mrdx/2024-04/24/c_1310772433.htm
-
-+    Rokid AR Studio: https://arstudio.rokid.com/
-
-+   YodaOS: A modern OS for Node.js community: https://medium.com/@yorkienell/yodaos-a-modern-os-for-node-js-community-1d0c068218e4
-
-+   空间计算定制！YodaOS-Master 系统迎来全方位升级： https://www.nxrte.com/zixun/45372.html
-
-+   [重磅！Rokid Jungle 发](https://we.yesky.com/blog/300327)布新一代人机交互 AR 产品_天极大咖秀： https://we.yesky.com/blog/300327
-
-+   [Cocos 引擎简介](https://www.cocos.com/post/54963e5ec11d76db476ac1c915c76dbf) ：https://www.cocos.com/post/54963e5ec11d76db476ac1c915c76dbf
-
-+   Unity 实时开发平台 | 3D、2D、VR 和 AR 引擎 ：https://unity.com/cn
-
-+   [The World's Most Trusted Gam](https://www.unrealengine.com/zh-CN/free-download/game-development-engine)e Development Engine : https://www.unrealengine.com/zh-CN/free-download/game-development-engine
-
-+   XOSMO:  https://m.weibo.cn/u/7790325842
-
-+   【迪惟带你走进智能家居系统，尊享高端品质生活】 https://www.bilibili.com/video/BV12S4y1A7k3/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
-
-+   【大佬说，智能就是不用管！】 https://www.bilibili.com/video/BV1134y1a7P8/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
-
-+   【Smartisan TNT go 无线版宣传视频】 https://www.bilibili.com/video/BV1qw4m1d7xs/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
-
-+   Rokid AR Lite: https://arlite.rokid.com/
-
-+   Thin Red.Dine: https://thinredline.com.cn/
++ 现场录播：https://www.youtube.com/watch?v=hgyuzY01s3w
++ 中国 AR 创新力量，引领空间计算新浪潮：http://www.news.cn/mrdx/2024-04/24/c_1310772433.htm
++ Rokid AR Studio: https://arstudio.rokid.com/
++ `YodaOS`: A modern OS for `Node.js` community: https://medium.com/@yorkienell/yodaos-a-modern-os-for-node-js-community-1d0c068218e4
++ 空间计算定制！`YodaOS-Master` 系统迎来全方位升级：https://www.nxrte.com/zixun/45372.html
++ [重磅！Rokid Jungle 发布新一代人机交互 AR 产品_天极大咖秀](https://we.yesky.com/blog/300327)
++ [Cocos 引擎简介](https://www.cocos.com/post/54963e5ec11d76db476ac1c915c76dbf)
++ Unity 实时开发平台 | 3D、2D、VR 和 AR 引擎：https://unity.com/cn
++ [The World's Most Trusted Game Development Engine](https://www.unrealengine.com/zh-CN/free-download/game-development-engine)
++ XOSMO: https://m.weibo.cn/u/7790325842
++ 【迪惟带你走进智能家居系统，尊享高端品质生活】https://www.bilibili.com/video/BV12S4y1A7k3/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++ 【大佬说，智能就是不用管！】https://www.bilibili.com/video/BV1134y1a7P8/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++ 【Smartisan TNT go 无线版宣传视频】https://www.bilibili.com/video/BV1qw4m1d7xs/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++ Rokid AR Lite: https://arlite.rokid.com/
++ Thin Red.Dine: https://thinredline.com.cn/

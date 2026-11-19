@@ -1,20 +1,21 @@
+
 # TensorFlow 简介
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/ZM4Qd9EP8oH9ISxzCYgcYV7rnef](https://v11enp9ok1h.feishu.cn/docx/ZM4Qd9EP8oH9ISxzCYgcYV7rnef)
 
-TensorFlow 是由 Google Brain 团队开发的开源机器学习框架，广泛应用于深度学习研究和生产环境。
+`TensorFlow` 是由 Google Brain 团队开发的开源机器学习框架，广泛应用于深度学习研究和生产环境。
 
 它提供了一个灵活的平台，用于构建和训练各种机器学习模型。
 
 ![](img/e02ad0735b0f7ef64fd7680b3a81cf82.png)
 
-### 核心概念
+## 核心概念
 
-+   **张量(Tensor)**: 多维数组，是 TensorFlow 中的基本数据单位
++   `张量(Tensor)`：多维数组，是 `TensorFlow` 中的基本数据单位
 
-+   计算图(Computational Graph): 描述数据(Tensor)流动(Flow)的有向图
++   `计算图(Computational Graph)`：描述数据(`Tensor`)流动(`Flow`)的有向图
 
-+   **会话(Session)**: 执行计算图的运行时环境
++   `会话(Session)`：执行计算图的运行时环境
 
 ![](img/68832c8e7fcb06c5992ffd0140596ccf.png)
 
@@ -22,67 +23,65 @@ TensorFlow 是由 Google Brain 团队开发的开源机器学习框架，广泛�
 
 ### 发展时间线
 
-+   **2011年**：Google 内部开始使用第一代机器学习系统 DistBelief
++   **2011年**：Google 内部开始使用第一代机器学习系统 `DistBelief`
 
-+   **2015年11月**：TensorFlow 1.0 正式开源发布
++   **2015年11月**：`TensorFlow` 1.0 正式开源发布
 
-+   **2017年2月**：TensorFlow 1.0 稳定版发布
++   **2017年2月**：`TensorFlow` 1.0 稳定版发布
 
-+   **2019年10月**：TensorFlow 2.0 发布，引入 Eager Execution 和 Keras 集成
++   **2019年10月**：`TensorFlow` 2.0 发布，引入 `Eager Execution` 和 `Keras` 集成
 
 +   **至今**：持续更新，目前已发布到 2.x 系列
 
 ### 关键里程碑
 
-TensorFlow 1.x 时代：
+`TensorFlow` 1.x 时代：
 
 +   基于静态计算图
 
-+   需要显式创建 Session
++   需要显式创建 `Session`
 
 +   学习曲线较陡峭
 
-TensorFlow 2.x 时代：
+`TensorFlow` 2.x 时代：
 
-+   默认启用 Eager Execution（即时执行）
++   默认启用 `Eager Execution`（即时执行）
 
-+   深度集成 Keras 高级 API
++   深度集成 `Keras` 高级 API
 
 +   更加 Pythonic 和用户友好
 
 +   简化了模型构建和训练流程
 
----
-
 ## TensorFlow 的核心特点
 
-1.  灵活性与可扩展性
+### 灵活性与可扩展性
 
-+   **多平台支持**：可在 CPU、GPU、TPU 上运行
++   **多平台支持**：可在 `CPU`、`GPU`、`TPU` 上运行
 
-+   **多语言绑定**：支持 Python、C++、Java、Go 等多种编程语言
++   **多语言绑定**：支持 `Python`、`C++`、`Java`、`Go` 等多种编程语言
 
 +   **跨设备部署**：从服务器到移动设备，从云端到边缘计算
 
-1.  强大的生态系统
+### 强大的生态系统
 
-TensorFlow 生态系统
+`TensorFlow` 生态系统
 
-├── TensorFlow Core（核心库）
+├── `TensorFlow Core`（核心库）
 
-├── TensorFlow Lite（移动和嵌入式设备）
+├── `TensorFlow Lite`（移动和嵌入式设备）
 
-├── TensorFlow.js（JavaScript 和网页）
+├── `TensorFlow.js`（`JavaScript` 和网页）
 
-├── TensorFlow Serving（模型服务化）
+├── `TensorFlow Serving`（模型服务化）
 
-├── TensorFlow Extended (TFX)（生产级 ML 管道）
+├── `TensorFlow Extended (TFX)`（生产级 ML 管道）
 
-├── TensorFlow Hub（预训练模型库）
+├── `TensorFlow Hub`（预训练模型库）
 
-└── TensorBoard（可视化工具）
+└── `TensorBoard`（可视化工具）
 
-1.  高性能计算
+### 高性能计算
 
 +   **自动微分**：自动计算梯度，简化反向传播
 
@@ -92,19 +91,17 @@ TensorFlow 生态系统
 
 +   **图优化**：编译时和运行时的多种优化策略
 
-1.  易用性（TensorFlow 2.x）
+### 易用性（`TensorFlow` 2.x）
 
 +   **Keras 集成**：提供高级、直观的 API
 
-+   **Eager Execution**：像写普通 Python 代码一样编写机器学习代码
++   `Eager Execution`：像写普通 `Python` 代码一样编写机器学习代码
 
 +   **丰富的预构建组件**：层、优化器、损失函数等开箱即用
 
----
-
 ## TensorFlow 的主要应用场景
 
-1.  深度学习和神经网络
+### 深度学习和神经网络
 
 +   **图像识别**：物体检测、人脸识别、医学影像分析
 
@@ -114,33 +111,31 @@ TensorFlow 生态系统
 
 +   **推荐系统**：个性化推荐、内容过滤
 
-1.  传统机器学习
+### 传统机器学习
 
 +   **回归分析**：线性回归、逻辑回归
 
 +   **分类问题**：支持向量机、决策树
 
-+   **聚类分析**：K-means、层次聚类
++   **聚类分析**：`K-means`、层次聚类
 
-+   **降维技术**：主成分分析（PCA）
++   **降维技术**：主成分分析（`PCA`）
 
-1.  强化学习
+### 强化学习
 
-+   **游戏 AI**：AlphaGo、游戏智能体
++   **游戏 AI**：`AlphaGo`、游戏智能体
 
 +   **自动驾驶**：路径规划、决策制定
 
 +   **机器人控制**：动作控制、任务执行
 
-1.  科学计算
+### 科学计算
 
 +   **数值计算**：科学模拟、数学建模
 
 +   **优化问题**：非线性优化、约束优化
 
 +   **信号处理**：图像处理、音频分析
-
----
 
 ## TensorFlow 与其他框架的比较
 
@@ -152,11 +147,11 @@ TensorFlow 生态系统
 
 +   **大规模部署**：经过谷步等大公司的实战验证
 
-+   **硬件优化**：对 TPU 等专用硬件的原生支持
++   **硬件优化**：对 `TPU` 等专用硬件的原生支持
 
 ### TensorFlow 的使用场景
 
-选择 TensorFlow 当你需要：
+选择 `TensorFlow` 当你需要：
 
 +   构建生产级机器学习系统
 
@@ -166,23 +161,21 @@ TensorFlow 生态系统
 
 +   利用谷歌云生态系统
 
-+   需要完整的 MLOps 工具链
++   需要完整的 `MLOps` 工具链
 
----
-
-## 谁在使用 TensorFlow
+## 谁在使用 `TensorFlow`
 
 ### 知名企业
 
-+   **Google**：搜索、广告、Gmail、Google Photos
++   `Google`：搜索、广告、`Gmail`、`Google Photos`
 
-+   **Uber**：自动驾驶、需求预测、定价算法
++   `Uber`：自动驾驶、需求预测、定价算法
 
-+   **Airbnb**：搜索排序、价格推荐、欺诈检测
++   `Airbnb`：搜索排序、价格推荐、欺诈检测
 
-+   **Twitter**：时间线排序、广告定向、内容推荐
++   `Twitter`：时间线排序、广告定向、内容推荐
 
-+   **Intel**：硬件优化、边缘计算解决方案
++   `Intel`：硬件优化、边缘计算解决方案
 
 ### 应用领域
 
@@ -200,7 +193,7 @@ TensorFlow 生态系统
 
 1.  **第一阶段**：掌握张量操作和基本概念
 
-1.  **第二阶段**：学习使用 Keras 构建简单模型
+1.  **第二阶段**：学习使用 `Keras` 构建简单模型
 
 1.  **第三阶段**：完成实际项目（图像分类、文本分析等）
 

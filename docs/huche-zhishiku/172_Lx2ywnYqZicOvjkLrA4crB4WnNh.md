@@ -1,8 +1,9 @@
+
 # 周读：202022 作为领导的觉悟 ｜ 小公司招聘和管理 95 后员工 ｜行业的三个周期 | 《千亿个太阳》
 
 > 来源：[https://huchegames.feishu.cn/docx/R2zddDYXAorwOYxGNRjco8PHnLf](https://huchegames.feishu.cn/docx/R2zddDYXAorwOYxGNRjco8PHnLf)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288683&idx=1&sn=c49e3ee394fb9c0c48368d511c440e22&chksm=8b075d86bc70d49077405232834b945950b91f7bc8f00aefc55437aa91e7c7e43c9444e3c74d&scene=21#wechat_redirect)q.com/s?__biz=Mz...
+> 🔗 原文链接：[https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288683&idx=1&sn=c49e3ee394fb9c0c48368d511c440e22&chksm=8b075d86bc70d49077405232834b945950b91f7bc8f00aefc55437aa91e7c7e43c9444e3c74d&scene=21#wechat_redirect](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656288683&idx=1&sn=c49e3ee394fb9c0c48368d511c440e22&chksm=8b075d86bc70d49077405232834b945950b91f7bc8f00aefc55437aa91e7c7e43c9444e3c74d&scene=21#wechat_redirect)
 
 > ⏰ 原创 曾嵘 曾嵘胡扯的地方2020年06月01日 09:18
 
@@ -12,25 +13,20 @@
 
 下面是 2020 年第 18 周的周读内容。
 
-+   [读书笔记：《千亿个太阳》](https://huchegames.feishu.cn/wiki/RldQwpmBUiBtDdkini2ctlsPnbg)
-
-+   [周读202022：小公司招聘和管理 95 后的 10 个技巧](https://huchegames.feishu.cn/wiki/JawkwtM8hipZuCkoWxlcKeZfnD7)
-
-+   读书笔记：《奈飞文化手册》
-
-+   小公司招聘和管理 95 后员工
-
-+   行业的三个周期
-
-+   领导的自我牺牲精神
++ [读书笔记：《千亿个太阳》](https://huchegames.feishu.cn/wiki/RldQwpmBUiBtDdkini2ctlsPnbg)
++ [周读202022：小公司招聘和管理 95 后的 10 个技巧](https://huchegames.feishu.cn/wiki/JawkwtM8hipZuCkoWxlcKeZfnD7)
++ 读书笔记：《奈飞文化手册》
++ 小公司招聘和管理 95 后员工
++ 行业的三个周期
++ 领导的自我牺牲精神
 
 ## 读书笔记：《千亿个太阳》
 
-+   [读书笔记：《千亿个太阳》](https://huchegames.feishu.cn/wiki/RldQwpmBUiBtDdkini2ctlsPnbg)
++ [读书笔记：《千亿个太阳》](https://huchegames.feishu.cn/wiki/RldQwpmBUiBtDdkini2ctlsPnbg)
 
 ## 小公司招聘和管理 95 后员工
 
-+   [周读202022：小公司招聘和管理 95 后的 10 个技巧](https://huchegames.feishu.cn/wiki/JawkwtM8hipZuCkoWxlcKeZfnD7)
++ [周读202022：小公司招聘和管理 95 后的 10 个技巧](https://huchegames.feishu.cn/wiki/JawkwtM8hipZuCkoWxlcKeZfnD7)
 
 ## 行业的三个周期
 
@@ -42,7 +38,7 @@
 
 任何行业都会有三个周期，风口红利期，技术红利期，管理红利期。
 
-第一个赚钱的进入了风口红利期，很快蓝海变成红海，技术差异化 造就 了技术红利。 大家的技术都上来之后，就进入了管理红利期。 别人花三天干的事情，你两天就干完了，别人 花 10 块钱做的事情，你用 8 块钱就做成了，这就是管理红利期。 管理红利期的特征是： 双巨头或者三巨头垄断市场 50%以上的利润。
+第一个赚钱的进入了风口红利期，很快蓝海变成红海，技术差异化造就了技术红利。大家的技术都上来之后，就进入了管理红利期。别人花三天干的事情，你两天就干完了，别人花10块钱做的事情，你用8块钱就做成了，这就是管理红利期。管理红利期的特征是：双巨头或者三巨头垄断市场50%以上的利润。
 
 用成本和效率去竞争。第一条曲线和第二条曲线之间的断点，一定要用创新跨过去。
 

@@ -1,6 +1,7 @@
+
 # 2024 年大模型顶会年鉴
 
-> 来源：[https://aicarrier.feishu.cn/docx/MvIGdClamoOU3axALD7cKVJgnbg](https://aicarrier.feishu.cn/docx/MvIGdClamoOU3axALD7cKVJgnbg)
+> 来源：`[https://aicarrier.feishu.cn/docx/MvIGdClamoOU3axALD7cKVJgnbg](https://aicarrier.feishu.cn/docx/MvIGdClamoOU3axALD7cKVJgnbg)`
 
 |  | 论文数 | InternLM | Qwen | OpenCompass |
 | --- | --- | --- | --- | --- |

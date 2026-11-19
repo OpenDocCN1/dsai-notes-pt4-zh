@@ -1,3 +1,4 @@
+
 # 🎬 大模型部署与推理
 
 > 来源：[https://agijuejin.feishu.cn/docx/MUnddApyHoaG6uxsMpWchMjNnOg](https://agijuejin.feishu.cn/docx/MUnddApyHoaG6uxsMpWchMjNnOg)
@@ -8,12 +9,9 @@
 
 ## 嘉宾PPT
 
-
 [作业帮大模型推理实践分享_v3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JVB6bg1Fbork20x49NDckLbgnWb)
 
-
 [蒋镈_大模型部署与推理_3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JIg6bvjTbooRIvxXe27cl2ybnuc)
-
 
 [缪金成-王锡贵_大模型部署与推理_3 (1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I13ObE3ovo29q7xh2CYcLjjznQf)
 

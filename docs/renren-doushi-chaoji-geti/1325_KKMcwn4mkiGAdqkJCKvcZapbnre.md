@@ -1,10 +1,11 @@
+
 # 2023-06-27百融云创@推出金融产业大模型
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/RFlZd00KFoPOSLxaFKlc21D8ncf](https://xuqiwei1986.feishu.cn/docx/RFlZd00KFoPOSLxaFKlc21D8ncf)
 
-http://www.cb.com.cn/index/show/gd/cv/cv1361956851495
+`http://www.cb.com.cn/index/show/gd/cv/cv1361956851495`
 
-http://www.brgroup.com/
+`http://www.brgroup.com/`
 
 ChatGPT的爆火催生了“百模大战”，同时也引领了生成式人工智能（AIGC）技术发展浪潮。我们正在昂首阔步走进大模型时代，人工智能对于金融领域的影响和赋能程度将继续深化。但AI算法是否会万众归于“生成式”，答案或非如此绝对。
 
@@ -18,7 +19,7 @@ ChatGPT的爆火催生了“百模大战”，同时也引领了生成式人工�
 
 伴随着AIGC技术逐渐走向台前，百融云创也已经累积出丰富的技术研发实力。截至目前，百融云创人工智能实验室基于智能语音识别、NLP、自动化机器学习（AutoML）、深度学习、隐私计算等技术以及Transformer、模型性能调优、复杂神经网络等底层算法的研发布局，将生成式AI赋能到智能客服、智能营销、贷后管理等业务领域。
 
-# **百融云创产业****大模型**** 加速金融场景的落地 **
+## 百融云创产业大模型 加速金融场景的落地
 
 2023-06-27 15:21
 
@@ -32,6 +33,6 @@ ChatGPT的爆火催生了“百模大战”，同时也引领了生成式人工�
 
 比如在某中小银行的服务中，百融云创要从数字化转型总体规划入手，逐步深入到产品和业务等多个层面。有时要协同科技部门、业务部门等多个部门，并搭配非常深厚的产业视野，才能真正深入场景，直抵产业的核心。百融云创大模型的价值和意义，是其在满足业务的真实诉求中寻找适配的技术方案，而非是为技术寻找应用的场所。
 
-http://www.brgroup.com/product/view?key=75
+`http://www.brgroup.com/product/view?key=75`
 
 ![](img/385437d160010c2be61fb834cf0adb28.png)

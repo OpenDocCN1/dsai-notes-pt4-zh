@@ -1,3 +1,4 @@
+
 # 智能参考使用说明（商品海报/人像海报/模仿字体等）
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Yvzwd0hshorh7fxpYX2chI6En2b](https://yunyinghui.feishu.cn/docx/Yvzwd0hshorh7fxpYX2chI6En2b)
@@ -68,7 +69,7 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ## 短片分镜
 
-60 AIGC大丸家发布了一篇📕笔记，快来看吧！ 😆 ikntbAqBNcFL8Ql 😆 http://xhslink.com/a/hxCFqpRlbizeb，复制本条信息，打开【📕】App查看精彩内容！
+60 AIGC大丸家发布了一篇📕笔记，快来看吧！ 😆 `ikntbAqBNcFL8Ql` 😆 http://xhslink.com/a/hxCFqpRlbizeb，复制本条信息，打开【📕】App查看精彩内容！
 
 ![](img/ccca27d20df30910e3680f72c2128225.png)
 
@@ -148,8 +149,6 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ![](img/741faa13b3cf21884f5b6538c27b97f9.png)
 
-##
-
 ## 人像海报
 
 ![](img/206703eef01f9333df9238cbf5e7cf6f.png)
@@ -194,8 +193,6 @@ https://jimeng.jianying.com/ai-tool/generate
 
 ![](img/dddcb115ba0ba08cf6e93ae0f883169c.png)
 
-##
-
 ## 上述case来源：
 
 **🛰️👸号：**
@@ -210,10 +207,10 @@ https://jimeng.jianying.com/ai-tool/generate
 
 **📕：**
 
-1.  [制作📕爆款封面](https://www.xiaohongshu.com/explore/6842d8930000000022036c5d?app_platform=android&ignoreEngage=true&app_version=8.86.2&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBToOvTiU5suS25QMtdZCbM_yw6s_3DsecGjFgdsnP7Qw=&author_share=1&xhsshare=CopyLink&shareRedId=N0dFNjM-NkFKSTdHPzg0R0c0Szg9SDY_&apptime=1749212132&share_id=e4ddf879ff4d44d78b643adaa24df304&share_channel=copy_link)，互动4.5k+
+1. [制作📕爆款封面](https://www.xiaohongshu.com/explore/6842d8930000000022036c5d?app_platform=android&ignoreEngage=true&app_version=8.86.2&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBToOvTiU5suS25QMtdZCbM_yw6s_3DsecGjFgdsnP7Qw=&author_share=1&xhsshare=CopyLink&shareRedId=N0dFNjM-NkFKSTdHPzg0R0c0Szg9SDY_&apptime=1749212132&share_id=e4ddf879ff4d44d78b643adaa24df304&share_channel=copy_link)，互动4.5k+
 
-1.  [风格转绘/玩梗x影视二创](https://www.xiaohongshu.com/explore/684554a10000000021004d1a?app_platform=ios&app_version=8.76.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CB5yeAbtB3_4oYWiy6hqdJhMyOi0d1gB5kdijVWDPqrAA=&author_share=1&xhsshare=CopyLink&shareRedId=OD1HMElIPDo2NzUyOTgwNjY3OTpGNTc7&apptime=1749436758&share_id=a98691b871a14dd5899450f639fa3b54)，互动1k+
+2. [风格转绘/玩梗x影视二创](https://www.xiaohongshu.com/explore/684554a10000000021004d1a?app_platform=ios&app_version=8.76.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CB5yeAbtB3_4oYWiy6hqdJhMyOi0d1gB5kdijVWDPqrAA=&author_share=1&xhsshare=CopyLink&shareRedId=OD1HMElIPDo2NzUyOTgwNjY3OTpGNTc7&apptime=1749436758&share_id=a98691b871a14dd5899450f639fa3b54)，互动1k+
 
-1.  [风格转绘x影视二创](https://www.xiaohongshu.com/explore/684590d0000000002100a911?app_platform=ios&app_version=8.86&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBj9-D0kUeWsCGn_g5rzAnlAVgco5ztQFr4sZO0_15P_c=&author_share=1&xhsshare=CopyLink&shareRedId=N0dIMzQ3SUxLP0ZFO0o1Rzc0QDw2PUk7&apptime=1749449667&share_id=c8d7ace55cfd4d7ba6fe61418cbde5ba)，互动750+
+3. [风格转绘x影视二创](https://www.xiaohongshu.com/explore/684590d0000000002100a911?app_platform=ios&app_version=8.86&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBj9-D0kUeWsCGn_g5rzAnlAVgco5ztQFr4sZO0_15P_c=&author_share=1&xhsshare=CopyLink&shareRedId=N0dIMzQ3SUxLP0ZFO0o1Rzc0QDw2PUk7&apptime=1749449667&share_id=c8d7ace55cfd4d7ba6fe61418cbde5ba)，互动750+
 
-1.  [风格转绘](https://www.xiaohongshu.com/explore/6841c0cc000000001101fa81?app_platform=ios&app_version=8.85.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBLjpaE2fuLyjX5DZB49Q1gojE0EjaFzj3avej44OYmIg=&author_share=1&xhsshare=CopyLink&shareRedId=Nzo6ODNGOEpLPjw7QUExPEk4QTxJSDo-&apptime=1749169692&share_id=e15d929bddcb43398508fc1dcea8fa99)，互动700+
+4. [风格转绘](https://www.xiaohongshu.com/explore/6841c0cc000000001101fa81?app_platform=ios&app_version=8.85.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBLjpaE2fuLyjX5DZB49Q1gojE0EjaFzj3avej44OYmIg=&author_share=1&xhsshare=CopyLink&shareRedId=Nzo6ODNGOEpLPjw7QUExPEk4QTxJSDo-&apptime=1749169692&share_id=e15d929bddcb43398508fc1dcea8fa99)，互动700+

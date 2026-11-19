@@ -1,3 +1,4 @@
+
 # 让AI写脚本/复杂项目还在直接扔需求？难怪文字/代码一团乱
 
 > 来源：[https://my.feishu.cn/docx/EUHVdEysFol5HUxUvaactaoCnjd](https://my.feishu.cn/docx/EUHVdEysFol5HUxUvaactaoCnjd)
@@ -16,7 +17,7 @@
 
 就是写着"我们要做一个XX功能，要实现XXX效果"那种。
 
-**T**askmaster的核心能力就是：把需求文档自动拆解成一个个具体的开发任务，然后让AI按照任务清单逐步完成实施。
+Taskmaster的核心能力就是：把需求文档自动拆解成一个个具体的开发任务，然后让AI按照任务清单逐步完成实施。
 
 听起来是不是有点像项目经理的工作？
 
@@ -28,7 +29,7 @@
 
 问题太复杂了，AI不知道从哪里下手。
 
-比如你说"帮我做一个博客系统"，AI可能会直接开始写代码，写着写着就乱了。
+比如说"帮我做一个博客系统"，AI可能会直接开始写代码，写着写着就乱了。
 
 前后功能不连贯，该做的没做，不该做的倒是做了一堆。
 
@@ -44,7 +45,7 @@ Taskmaster就是来解决这个问题的。
 
 ## Claude Code用户看这里：5分钟零配置上手（不需要API key！）
 
-**老金我最推荐的方式****，如果你用Claude Co**de，完全不需要配置API key，直接用就行！
+老金我最推荐的方式，如果你用Claude Code，完全不需要配置API key，直接用就行！
 
 ### 为什么推荐零配置方案？
 
@@ -59,20 +60,20 @@ Taskmaster就是来解决这个问题的。
 在Claude Code终端里复制粘贴这行命令：
 
 ```
-claude mcp add taskmaster-ai --env MODEL=&quot;claude-code&quot; -- npx -y task-master-ai
+claude mcp add taskmaster-ai --env MODEL="claude-code" -- npx -y task-master-ai
 ```
 
 ![](img/53f0c0b52d2b21485503a8b821199511.png)
 
 回车，等10秒，装好了。
 
-**这个命令的关键**：
+这个命令的关键：
 
---env MODEL="claude-code" 这部分告诉Taskmaster使用你本地的Claude，而不是去调API。
+`--env MODEL="claude-code"` 这部分告诉Taskmaster使用你本地的Claude，而不是去调API。
 
 不过老金我通常不这么用，之后会给大家讲解另一个MCP管理神器。
 
-**第二步：初始化项目（1分钟）**
+第二步：初始化项目（1分钟）
 
 直接对Claude说这句话（从这里开始的中英双语都可以，老铁们都知道我英语没过4级，最近都在能用的地方尽量用英语 = = ）：
 
@@ -89,7 +90,7 @@ Claude会自动创建需要的文件夹和配置文件。
 
 [老金用AI写了半年代码才知道,原来一直少装了这个神器](https://tffyvtlai4.feishu.cn/wiki/JpMawxTdIiVN14kiqavcF1d1nTb)
 
-**第三步：验证安装（30秒）**
+第三步：验证安装（30秒）
 
 装好后，对Claude说：
 
@@ -104,13 +105,13 @@ Claude会自动检查MCP连接状态和配置。如果看到Taskmaster的工具�
 
 ### 怎么用？（老金实战版）
 
-**写个需求文档**
+写个需求文档
 
-在.taskmaster/docs/prd.txt里写你要做啥。
+在`.taskmaster/docs/prd.txt`里写你要做啥。
 
 不会写？对Claude说："帮我写一个博客系统的PRD"
 
-**让Claude拆任务**
+让Claude拆任务
 
 对Claude说：
 
@@ -125,18 +126,18 @@ Claude会自动把需求拆成一个个具体任务。
 
 哎对，被你发现了，我还有很多没发表的教程文章~
 
-**看下一步干啥**
+看下一步干啥
 
 对Claude说：
 
 ```
-What&#x27;s the next task?
+What's the next task?
 下一个任务是什么？
 ```
 
 Claude告诉你接下来该做什么，包括详细步骤。
 
-**开始干活**
+开始干活
 
 对Claude说：
 
@@ -145,11 +146,11 @@ Help me implement task 1
 帮我实现任务1
 ```
 
-Claude会帮你写代码、建文件。完成后说一句"Mark task 1 as done（标记任务1为完成）"，继续下一个。
+Claude会帮你写代码、建文件。完成后说一句`Mark task 1 as done`（标记任务1为完成），继续下一个。
 
 ### 老金的真实体验
 
-**老金我最近用Taskm**aster做了个 👸号文章自动写作系统（包含质量检测、自动配图、MCP集成等功能），整个过程真正体会到了Taskmaster的强大。
+老金我最近用Taskmaster做了个 👸号文章自动写作系统（包含质量检测、自动配图、MCP集成等功能），整个过程真正体会到了Taskmaster的强大。
 
 这是完成品，大家可以看下右侧的节点有多离谱。
 
@@ -165,27 +166,27 @@ Claude会帮你写代码、建文件。完成后说一句"Mark task 1 as done（
 
 用Taskmaster后的工作方式：
 
-**写PRD** → 在.taskmaster/docs/prd.txt里详细写需求（质量检测、配图、MCP集成等）
+写PRD → 在`.taskmaster/docs/prd.txt`里详细写需求（质量检测、配图、MCP集成等）
 
-**解析任务** → 对Claude说"Can you parse my PRD?（你能帮我解析PRD吗？）"，自动生成15个主任务、73个子任务，每个都标明依赖关系
+解析任务 → 对Claude说`Can you parse my PRD?（你能帮我解析PRD吗？）`，自动生成15个主任务、73个子任务，每个都标明依赖关系
 
-**按清单实施** → 问"What's the next task?（下一个任务是什么？）"，Taskmaster根据依赖推荐下一个任务，完成后说"Mark task X as done（标记任务X为完成）"
+按清单实施 → 问`What's the next task?（下一个任务是什么？）`，Taskmaster根据依赖推荐下一个任务，完成后说`Mark task X as done（标记任务X为完成）`
 
-**遇到问题查资料** → 不会的就"Research the latest XXX best practices（研究XXX最新最佳实践）"，Taskmaster自动搜索文档给建议
+遇到问题查资料 → 不会的就`Research the latest XXX best practices（研究XXX最新最佳实践）`，Taskmaster自动搜索文档给建议
 
-**查看进度** → 随时问"Show me the project status（显示项目状态）"，知道完成了多少、还剩多少
+查看进度 → 随时问`Show me the project status（显示项目状态）`，知道完成了多少、还剩多少
 
-**这种方式带来的好处**：
+这种方式带来的好处：
 
-**不会跑偏**：每个任务都有明确目标和验收标准
+不会跑偏：每个任务都有明确目标和验收标准
 
-**不会遗漏**：所有功能都在任务清单里，做一个勾一个
+不会遗漏：所有功能都在任务清单里，做一个勾一个
 
-**不会卡壳**：遇到不会的用Research功能查最新文档
+不会卡壳：遇到不会的用`Research`功能查最新文档
 
-**可以中断恢复**：第二天接着问"What's the next task"就能继续
+可以中断恢复：第二天接着问`What's the next task`就能继续
 
-**进度可追踪**：随时知道完成了多少、还剩多少
+进度可追踪：随时知道完成了多少、还剩多少
 
 ---
 
@@ -193,7 +194,7 @@ Claude会帮你写代码、建文件。完成后说一句"Mark task 1 as done（
 
 ### 1、PRD解析：把需求文档变成任务清单
 
-写一份需求文档，对Claude说"Can you parse my PRD?（你能帮我解析PRD吗？）"
+写一份需求文档，对Claude说`Can you parse my PRD?（你能帮我解析PRD吗？）`
 
 Taskmaster自动帮你把需求拆成任务，每个任务都有：任务ID、任务描述、子任务、依赖关系、验收标准。
 
@@ -201,7 +202,7 @@ Taskmaster自动帮你把需求拆成任务，每个任务都有：任务ID、�
 
 ### 2、智能任务推荐：下一步该干啥？
 
-不知道接下来做什么？问一句"What's the next task?（下一个任务是什么？）"
+不知道接下来做什么？问一句`What's the next task?（下一个任务是什么？）`
 
 Taskmaster根据当前进度、任务依赖，自动告诉你下一步该做哪个。
 
@@ -211,13 +212,13 @@ Taskmaster根据当前进度、任务依赖，自动告诉你下一步该做哪�
 
 Taskmaster支持超多AI提供商：
 
-**不需要API key的：**
+不需要API key的：
 
 1、Claude Code CLI（零配置，用你的Claude订阅）
 
 2、Codex CLI（ChatGPT订阅的OAuth方式）
 
-**需要API key的：**
+需要API key的：
 
 1、Anthropic（Claude系列）
 
@@ -233,11 +234,11 @@ Taskmaster支持超多AI提供商：
 
 你可以给不同工作分配不同模型：
 
-+   **主模型**：负责写代码、实现功能
++ 主模型：负责写代码、实现功能
 
-+   **研究模型**：负责查文档、调研技术方案
++ 研究模型：负责查文档、调研技术方案
 
-+   **备用模型**：主模型或研究模型挂了自动切换
++ 备用模型：主模型或研究模型挂了自动切换
 
 这个设计很聪明，比如你可以用Claude写代码，用Perplexity做技术调研（实时搜索能力强），遇到问题自动切换到GPT备用。
 
@@ -298,24 +299,24 @@ Taskmaster不只支持Claude Code，还支持：
 
 Taskmaster默认加载40+个工具（大约21,000个token），但你可以根据需要选择：
 
-**1、Core模式**：7个核心工具，约5,000 token（省76%）
+1、Core模式：7个核心工具，约5,000 token（省76%）
 
-**2、Standard模式**：15个常用工具，约10,000 token（省52%）
+2、Standard模式：15个常用工具，约10,000 token（省52%）
 
-**3、All模式**：40+个全部工具，约21,000 token（默认）
+3、All模式：40+个全部工具，约21,000 token（默认）
 
-**怎么设置**：
+怎么设置：
 
-在.mcp.json的环境变量里加一行TASK_MASTER_TOOLS，可以设置为core、standard或all：
+在`.mcp.json`的环境变量里加一行`TASK_MASTER_TOOLS`，可以设置为`core`、`standard`或`all`：
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;taskmaster-ai&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;task-master-ai&quot;],
-      &quot;env&quot;: {
-        &quot;TASK_MASTER_TOOLS&quot;: &quot;core&quot;,   ⬅️这里
+  "mcpServers": {
+    "taskmaster-ai": {
+      "command": "npx",
+      "args": ["-y", "task-master-ai"],
+      "env": {
+        "TASK_MASTER_TOOLS": "core",   ⬅️这里
       }
     }
   }
@@ -324,13 +325,13 @@ Taskmaster默认加载40+个工具（大约21,000个token），但你可以根�
 
 重启编辑器就生效了。
 
-**怎么选**：
+怎么选：
 
-1、用中转API → 选core省钱（日常够用）
+1、用中转API → 选`core`省钱（日常够用）
 
-2、用Claude Code → 选all（反正不按token计费）
+2、用Claude Code → 选`all`（反正不按token计费）
 
-3、不确定 → 选standard（平衡）
+3、不确定 → 选`standard`（平衡）
 
 ## Claude Code用户专属：为什么要用Taskmaster？
 
@@ -338,19 +339,19 @@ Taskmaster默认加载40+个工具（大约21,000个token），但你可以根�
 
 用了一周后，我发现主要有3个好处：
 
-**1、不会跑偏**
+1、不会跑偏
 
 以前直接对Claude说"帮我做个博客系统"，Claude可能写着写着就乱了，该做的没做，不该做的做了一堆。
 
 有了Taskmaster，所有任务都提前规划好了，按照清单一步步来，不会跑偏。
 
-**2、可以中断恢复**
+2、可以中断恢复
 
 以前写到一半，第二天接着写，Claude可能已经忘了上次写到哪儿了。
 
 有了Taskmaster，任务状态都记录着，随时可以问"下一个任务是什么"，接着干就行。
 
-**3、团队协作更清晰**
+3、团队协作更清晰
 
 如果是团队项目，大家都能看到任务清单，谁在做什么任务，哪些任务完成了，一目了然。
 
@@ -358,9 +359,9 @@ Taskmaster默认加载40+个工具（大约21,000个token），但你可以根�
 
 老金我现在的工作流是这样的：
 
-**复杂项目**：用Taskmaster管理任务，Claude Code负责实施
+复杂项目：用Taskmaster管理任务，Claude Code负责实施
 
-**简单改动**：直接用Claude Code，不需要Taskmaster
+简单改动：直接用Claude Code，不需要Taskmaster
 
 这个搭配，简单任务不会被Taskmaster拖累效率，复杂项目也不会因为没规划而一团乱。
 
@@ -374,31 +375,31 @@ Taskmaster拆解任务的质量，完全取决于你PRD的质量。PRD越详细�
 
 ### 2、善用Research功能
 
-遇到不确定的技术方案，不要瞎猜，直接用Research查最新文档。省时间还不容易踩坑。
+遇到不确定的技术方案，不要瞎猜，直接用`Research`查最新文档。省时间还不容易踩坑。
 
 ### 3、任务不要拆得太细
 
 每个任务应该是一个有意义的工作单元，太细了会导致任务数量爆炸，反而不好管理。
 
-比如"创建数据库表"是一个任务，"添加user_id字段"就太细了，应该作为子任务。
+比如"创建数据库表"是一个任务，"添加`user_id`字段"就太细了，应该作为子任务。
 
 ### 4、其他安装方式（用中转API更方便）
 
 如果你不用Claude Code，可以用中转API的方式：
 
-**MCP协议方式**（推荐）：在编辑器的mcp.json里添加配置，填中转站的API key
+MCP协议方式（推荐）：在编辑器的`mcp.json`里添加配置，填中转站的API key
 
-**命令行方式**：全局安装npm install -g task-master-ai，在.env里配置中转站的API key
+命令行方式：全局安装`npm install -g task-master-ai`，在`.env`里配置中转站的API key
 
-**为什么推荐用中转API**：
+为什么推荐用中转API：
 
-**1、省心省钱**：便宜灵活，按需充值
+1、省心省钱：便宜灵活，按需充值
 
-**2、国内能用**：不需要魔法，直接访问
+2、国内能用：不需要魔法，直接访问
 
-**3、避免封号**：不会被A社疯狂封号
+3、避免封号：不会被A社疯狂封号
 
-**4、多模型切换**：支持Claude、GPT、Gemini等多种模型
+4、多模型切换：支持Claude、GPT、Gemini等多种模型
 
 ## 总结
 
@@ -410,7 +411,7 @@ Taskmaster本质上是给AI配了一个项目管理大脑，让它知道：项�
 
 如果你也经常用AI写代码，强烈建议试试Taskmaster。特别是Claude Code用户，零配置直接用，不花一分钱，说不定会让你的开发效率提升一个档次。
 
-项目地址：https://github.com/eyaltoledano/claude-task-master
+项目地址：`https://github.com/eyaltoledano/claude-task-master`
 
 ---
 
@@ -420,15 +421,15 @@ Taskmaster本质上是给AI配了一个项目管理大脑，让它知道：项�
 
 推荐公益站（免费的就别要求太多，崩了就换一个，都崩了就等等）：
 
-1、CodeMirror API：https://api.codemirror.codes/register?aff=nmcV
+1、CodeMirror API：`https://api.codemirror.codes/register?aff=nmcV`
 
-**2、Agent Router**：https://agentrouter.org/register?aff=rLco
+2、Agent Router：`https://agentrouter.org/register?aff=rLco`
 
-**3、AnyRouter**：https://anyrouter.top/register?aff=0FzF
+3、AnyRouter：`https://anyrouter.top/register?aff=0FzF`
 
 4、付费的可以来找老金我问（最下面二维码扫我），我可以告你我用啥，就不在这里推荐了。
 
-**免责声明**：
+免责声明：
 
 1、珍惜资源，不要滥用
 
@@ -448,13 +449,13 @@ Taskmaster本质上是给AI配了一个项目管理大脑，让它知道：项�
 
 现在有了Taskmaster，整个过程变得可预期了。
 
-每天早上问一句"What's the next task"，知道今天要干什么。
+每天早上问一句`What's the next task`，知道今天要干什么。
 
-遇到问题就Research，写完一个就Mark as done，进度一目了然。
+遇到问题就`Research`，写完一个就`Mark as done`，进度一目了然。
 
 这种感觉就像：你终于不是一个人在战斗了。
 
-你有个靠谱的项目经理（Taskmaster）帮你规划任务，有个能干的技术专家（Claude/GPT）帮你写代码，有个不知疲倦的研究员（Research功能）帮你查文档。
+你有个靠谱的项目经理（Taskmaster）帮你规划任务，有个能干的技术专家（Claude/GPT）帮你写代码，有个不知疲倦的研究员（`Research`功能）帮你查文档。
 
 以前一个人干一周的活，现在两天就能搞定。
 
@@ -464,7 +465,7 @@ Taskmaster本质上是给AI配了一个项目管理大脑，让它知道：项�
 
 现在所有任务都在清单里，做一个勾一个，该研究的研究，该验证的验证。
 
-**心里踏实。**
+心里踏实。
 
 老金我虽然不会写代码，但我知道一个道理：好工具改变工作方式，好工作方式改变人生。
 
@@ -474,7 +475,7 @@ Taskmaster本质上是给AI配了一个项目管理大脑，让它知道：项�
 
 现在，AI普及了，但很多人还在用10年前的方式用AI——直接扔需求，祈祷它能做对。
 
-**Taskmaster代表的是新的工作方式：**人负责规划，AI负责执行，工具负责管理。
+Taskmaster代表的是新的工作方式：人负责规划，AI负责执行，工具负责管理。
 
 这不是一个"好用的工具"这么简单，这是一个信号：
 
@@ -488,13 +489,15 @@ AI时代的开发方式，不是"人写代码"变成"AI写代码"。
 
 你还在等什么？
 
-**5分钟装一个试试，不花一分钱。**
+5分钟装一个试试，不花一分钱。
 
 最坏的结果是什么？多了一个MCP服务器而已。
 
 最好的结果是什么？你的开发效率翻倍，压力减半，终于能按时下班了。
 
-**这个账，怎么算都划算。**
+这个账，怎么算都划算。
+
+
 
 项目地址：https://github.com/eyaltoledano/claude-task-master
 

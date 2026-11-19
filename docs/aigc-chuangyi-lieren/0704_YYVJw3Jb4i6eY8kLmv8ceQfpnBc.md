@@ -1,12 +1,13 @@
+
 # FLUX现有Lora模型
 
 > 来源：[https://aigcreative.feishu.cn/docx/HWEQdckZmodnz0xUkIicMnGMnGg](https://aigcreative.feishu.cn/docx/HWEQdckZmodnz0xUkIicMnGMnGg)
 
 > 目前Xlabs已发布8款Lora模型
 
-> 下载地址：https://huggingface.co/XLabs-AI/flux-lora-collection
+> 下载地址：`https://huggingface.co/XLabs-AI/flux-lora-collection`
 
-XLabs-AI 团队在 Hugging Face 平台上发布了一个名为 flux-lora-collection 的模型库，该库包含了针对 FLUX.1-dev 模型训练好的 LoRAs 检查点。
+XLabs-AI 团队在 Hugging Face 平台上发布了一个名为 `flux-lora-collection` 的模型库，该库包含了针对 `FLUX.1-dev` 模型训练好的 LoRAs 检查点。
 
 这些 LoRAs 可以用于文本到图像的生成任务，支持多种风格如英国风格、迪士尼风格、动漫风格等。其中每个图像文件对应一个包含文本提示的 JSON 文件。
 
@@ -14,7 +15,7 @@ XLabs-AI 团队在 Hugging Face 平台上发布了一个名为 flux-lora-collect
 
 ![](img/2332a7cc35211a5101e94450192da66e.png)
 
-## furry_lora  毛茸茸的
+## `furry_lora` 毛茸茸的
 
 ```
 python3 main.py \
@@ -34,8 +35,7 @@ python3 main.py \
  --timestep_to_start_cfg 1 --num_steps 25 --true_gs 3.5
 ```
 
-
-## mjv6_lora  mjv6
+## `mjv6_lora` mjv6
 
 ```
 python3 main.py \
@@ -44,7 +44,6 @@ python3 main.py \
 --device cuda:4 --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
 ```
 python3 main.py \
 --prompt &quot;A girl in a suit covered with bold tattoos and holding a vest pistol, beautiful woman, 25 years old, cool, future fantasy, turquoise &amp; light orange ping curl hair&quot; \
@@ -52,8 +51,7 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
-## anime_lora  动漫
+## `anime_lora` 动漫
 
 ```
 python3 main.py \
@@ -62,7 +60,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
 ```
 python3 main.py \
 --prompt &quot;a girl with orange hair, standing in a room with a window, looking out at a cityscape, anime&quot; \
@@ -70,8 +67,7 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
-## disney_lora  迪士尼
+## `disney_lora` 迪士尼
 
 ```
 python3 main.py \
@@ -80,7 +76,6 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
 ```
 python3 main.py \
 --prompt &quot;A blue jay standing on a large basket of rainbow macarons, disney style&quot; \
@@ -88,8 +83,7 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
-## scenery_lora  风景
+## `scenery_lora` 风景
 
 ```
 python3 main.py \
@@ -107,8 +101,7 @@ python3 main.py \
 --device cuda --offload --use_lora --model_type flux-dev-fp8 --width 1024 --height 1024
 ```
 
-
-## art_lora  艺术
+## `art_lora` 艺术
 
 ```
 python3 main.py \
@@ -128,4 +121,4 @@ python3 main.py \
 
 ![](img/2eb544212400774233d32bcdd7989103.png)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

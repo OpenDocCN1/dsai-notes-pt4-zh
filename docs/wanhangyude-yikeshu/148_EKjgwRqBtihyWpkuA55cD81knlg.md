@@ -1,3 +1,4 @@
+
 # 第一性原理
 
 > 来源：[https://my.feishu.cn/docx/GfHHduHNvoCGDwxA4DschEbAnkc](https://my.feishu.cn/docx/GfHHduHNvoCGDwxA4DschEbAnkc)

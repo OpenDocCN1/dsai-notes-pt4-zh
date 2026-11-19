@@ -1,3 +1,4 @@
+
 # AI每日资讯-202501
 
 > 来源：[https://aigcreative.feishu.cn/docx/FFiCdeCX2o5XhjxgJUycxJCyn0e](https://aigcreative.feishu.cn/docx/FFiCdeCX2o5XhjxgJUycxJCyn0e)
@@ -26,6 +27,6 @@ Stability AI与NVIDIA在CES期间联合推出Stable Point Aware 3D (SPAR3D)，�
 
 [AI50年度关键词_腾讯研究院_2025.01 V2(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S9ylbqBgVob8g9xMnFWcwTDvnch)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubqwa...>
 
 # 知识库动态

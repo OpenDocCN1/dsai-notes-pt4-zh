@@ -1,8 +1,7 @@
-# 01.22-DeepSeek开源o1击毙OpenAI，强化学习惊现「啊哈」时刻！网友：AGI来了
-
-> 来源：[https://agijuejin.feishu.cn/docx/YWSNdcDpNoVJ7XxF5gNckLWBnzT](https://agijuejin.feishu.cn/docx/YWSNdcDpNoVJ7XxF5gNckLWBnzT)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 22 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/YWSNdcDpNoVJ7XxF5gNckLWBnzT](https://agijuejin.feishu.cn/docx/YWSNdcDpNoVJ7XxF5gNckLWBnzT)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -22,7 +21,6 @@
 
 IT之家 | [阅读原文](https://www.ithome.com/0/826/333.htm)
 
-
 2025 年 1 月 21 日微软调整与 OpenAI 合作关系，允许 OpenAI 使用竞争对手计算资源。此前 OpenAI 算力依赖微软 Azure，现双方调整算力排他性，微软有优先购买权。OpenAI 可自主构建算力，用于模型研究训练。同时，OpenAI 携手软银、甲骨文启动 5000 亿美元‘星际之门’项目，微软将提供技术支持但不投入资金。关键词：OpenAI、微软、甲骨文、软银、AI。
 
 ## 🌟 技术突破
@@ -38,7 +36,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/826/197.htm)
 ### 💡 AI智能体2小时击败人类，引爆贝叶斯推理革命！仅用10%数据训练秒杀大模型
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JME8OP4O0511ABV6.html?spss=dy_author)
-
 
 2025 年，Verses 团队研发的 Genius 智能体在 Pong 等游戏中超越人类顶尖玩家和其他顶级 AI 模型。它仅用 10%数据训练 2 小时，规模为 SOTA 模型 IRIS 的 4%，可在 MacBook 上运行。Genius 智能体应用贝叶斯推理架构，结合自由能原理和主动推断框架，代表了新的 AI 架构方向，具有高效、可解释等优势，可能标志着贝叶斯革命和机器智能发展新方向。
 
@@ -63,7 +60,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/826/197.htm)
 ### 💡 消息称蔚来已组建 20 人左右团队，调研机器狗项目
 
 IT之家 | [阅读原文](https://www.ithome.com/0/826/306.htm)
-
 
 2025 年消息称蔚来已组建约 20 人团队调研机器狗项目，前 Momenta 算法专家徐抗任负责人，标志着蔚来在具身智能领域探索。四足机器狗适用于复杂地形，应用前景广，潜在市场规模达数千亿元。具身智能发展初期，难度高。特斯拉、小鹏已涉足，理想持谨慎态度。传统主机厂也积极布局，过去一年具身智能领域融资超 50 亿元。关键词：机器狗，蔚来。
 
@@ -95,13 +91,11 @@ OpenAI CFO 回应马斯克诉讼，称其是竞争手段。开发人工智能很
 
 IT之家 | [阅读原文](https://www.ithome.com/0/826/255.htm)
 
-
 2025 年 1 月 21 日，MiniMax 宣布上线海螺语音 AI 产品。依托 T2A-01 系列语音模型，可输入多达 10000 字符，支持 17 种语言生成，包括中文、英语等。能自由配置语音情绪等，有情感理解能力，预置 300+音色。关键词：MiniMax，海螺语音。
 
 ### 💡 1 句话做中文海报，美图 WHEE“AI 海报”功能即将上线
 
 IT之家 | [阅读原文](https://www.ithome.com/0/826/227.htm)
-
 
 2025 年 1 月 21 日，美图 WHEE 宣布即将上线‘AI 海报’功能，用户仅用一句话就能生成中文海报，支持自定义排版，覆盖电影、电商等 4 大核心场景。美图秀秀于 2023 年 6 月发布七款 AI 工具，其中包括 WHEE，它是面向大众及专业创作者的在线 AI 视觉创作工具，提供多种 AIGC 图像服务。
 

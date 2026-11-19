@@ -1,8 +1,7 @@
+
 # INTJ人格分析
 
 > 来源：[https://docs.feishu.cn/docx/W6UhdvrFPomEGXxnap4cCCTZnFc](https://docs.feishu.cn/docx/W6UhdvrFPomEGXxnap4cCCTZnFc)
-
-## INTJ人格分析
 
 > 一些有趣的文章：
 
@@ -28,7 +27,7 @@
 
 ## 如何找周一解决问题
 
-**Good Case：**
+### Good Case：
 
 > 如何维持良好的合作关系？价值交换。
 
@@ -38,7 +37,7 @@
 
 > btw 拒绝闲聊第一要义 & 不要pua
 
-**Bad Case：**
+### Bad Case：
 
 > 希望找我解决问题的时候，让我做选择题而不是填空题。
 
@@ -58,8 +57,6 @@
 
 > 周一内心OS：不会有不忙的时候。
 
-用户的n个疑惑大揭秘：
+### 用户的n个疑惑大揭秘：
 
 > 看你文档写的这么精美，是不是要花很多时间？
-
->

@@ -1,3 +1,4 @@
+
 # Skill菜单全是英文记不住？改一行配置就行！顺带懒人一键提示词！
 
 > 来源：[https://my.feishu.cn/docx/J2zGdk2PsokpwGxXDZRcUOXfnHe](https://my.feishu.cn/docx/J2zGdk2PsokpwGxXDZRcUOXfnHe)
@@ -10,7 +11,7 @@
 
 你装了几十个Skill，菜单里全是英文名字。
 
-remotion-best-practices是什么？vercel-react-best-practices是什么？web-design-guidelines又是什么？
+`remotion-best-practices`是什么？`vercel-react-best-practices`是什么？`web-design-guidelines`又是什么？
 
 每次想用都要翻文档，或者一个个点进去看描述。
 
@@ -28,15 +29,15 @@ remotion-best-practices是什么？vercel-react-best-practices是什么？web-de
 
 ## 先说说大家能共鸣的
 
-你打开Claude Code，输入 /想调用Skill。
+你打开Claude Code，输入 `/想调用Skill`。
 
 **菜单弹出来，你看到的全是英文。**
 
-你想用"视频剪辑工具"，但你记不住它叫remotion-best-practices。
+你想用"视频剪辑工具"，但你记不住它叫`remotion-best-practices`。
 
-你想看"React开发规范"，但你记不住它叫vercel-react-best-practices。
+你想看"React开发规范"，但你记不住它叫`vercel-react-best-practices`。
 
-你想查"Web设计指南"，但你记不住它叫web-design-guidelines。
+你想查"Web设计指南"，但你记不住它叫`web-design-guidelines`。
 
 每次都要猜，或者翻文档。
 
@@ -46,9 +47,9 @@ remotion-best-practices是什么？vercel-react-best-practices是什么？web-de
 
 打开你的Skill配置文件。
 
-路径是 ~/.claude/skills/xxx/SKILL.md，xxx是你的Skill名字。
+路径是 `~/.claude/skills/xxx/SKILL.md`，`xxx`是你的Skill名字。
 
-比如remotion-best-practices这个Skill，路径就是 ~/.claude/skills/remotion-best-practices/SKILL.md。
+比如`remotion-best-practices`这个Skill，路径就是 `~/.claude/skills/remotion-best-practices/SKILL.md`。
 
 打开文件，你会看到开头有个YAML格式的配置区，类似这样：
 
@@ -61,9 +62,9 @@ description: Best practices for Remotion video development...
 
 **关键来了**。
 
-把 name字段改成"英文名 中文说明"的格式。
+把 `name`字段改成"英文名 中文说明"的格式。
 
-description字段也可以改成中文，这样看详细信息时更清楚：
+`description`字段也可以改成中文，这样看详细信息时更清楚：
 
 ```
 ---
@@ -74,13 +75,13 @@ description: Remotion视频开发和动画工作流的最佳实践指南
 
 **两个字段的区别**：
 
-+   name：显示在菜单列表中，建议"英文名 中文说明"格式（保留英文方便搜索，甚至我用的数00这样的数字）
++   `name`：显示在菜单列表中，建议"英文名 中文说明"格式（保留英文方便搜索，甚至我用的数00这样的数字）
 
-+   description：显示在详细信息中，可以完全用中文写详细说明
++   `description`：显示在详细信息中，可以完全用中文写详细说明
 
 保存文件。
 
-再打开Claude Code，输入 /。
+再打开Claude Code，输入 `/`。
 
 菜单里显示的就是：
 
@@ -128,19 +129,19 @@ seo-audit SEO审计
 
 写的是这个Skill的核心功能，不是描述。
 
-remotion-best-practices的核心功能是"视频剪辑工具"，不是"视频开发指南"。
+`remotion-best-practices`的核心功能是"视频剪辑工具"，不是"视频开发指南"。
 
-vercel-react-best-practices的核心功能是"React开发规范"，不是"Vercel团队建议"。
+`vercel-react-best-practices`的核心功能是"React开发规范"，不是"Vercel团队建议"。
 
-第三，description可以写详细点。
+**第三，`description`可以写详细点。**
 
-name要简短（4-6字），但description可以写详细一点。
+`name`要简短（4-6字），但`description`可以写详细一点。
 
-description是给你看详细信息用的，写清楚一点更好。
+`description`是给你看详细信息用的，写清楚一点更好。
 
 **第四，定期整理。**
 
-你装了新Skill，记得改name和description。
+你装了新Skill，记得改`name`和`description`。
 
 你删了旧Skill，记得清理配置。
 
@@ -197,7 +198,7 @@ description是给你看详细信息用的，写清楚一点更好。
 
 Claude翻译的中文说明，比老金我自己想的还准确。
 
-#注意：更新会被覆盖，需要重新翻译
+#### 注意：更新会被覆盖，需要重新翻译
 
 ## 老金想说
 

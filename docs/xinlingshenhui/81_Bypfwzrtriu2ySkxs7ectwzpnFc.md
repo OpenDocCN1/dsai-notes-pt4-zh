@@ -1,3 +1,4 @@
+
 # 用于训练 Midjourney 人工智能的 16,000 名艺术家数据库引发批评
 
 > 来源：[https://my.feishu.cn/docx/Ks39dXcrooUFzgxw6TrcOj6KnHf](https://my.feishu.cn/docx/Ks39dXcrooUFzgxw6TrcOj6KnHf)

@@ -1,3 +1,4 @@
+
 # OpenClaw CLI 超级速查表
 
 > 来源：[https://aigcreative.feishu.cn/docx/TkaQdn0KroVS5XxvZFxcUuTFnBe](https://aigcreative.feishu.cn/docx/TkaQdn0KroVS5XxvZFxcUuTFnBe)
@@ -76,7 +77,7 @@ openclaw reset --scope           # 重置配置/凭证/会话/全部
 
 ```
 --dev                    # 在 ~/.openclaw-dev 下隔离状态，切换端口
---profile &lt;name&gt;         # 在 ~/.openclaw-&lt;name&gt; 下隔离状态
+--profile <name>         # 在 ~/.openclaw-<name> 下隔离状态
 --no-color               # 禁用ANSI颜色（尊重 NO_COLOR=1）
 --update                 # openclaw update 的简写（仅源码安装）
 -V, --version, -v        # 打印版本并退出
@@ -97,7 +98,7 @@ openclaw approvals get|set|allowlist
 openclaw sandbox list|recreate|explain
 
 # 系统事件
-openclaw system event --text &quot;X&quot;     # 立即/心跳时排队系统事件
+openclaw system event --text "X"     # 立即/心跳时排队系统事件
 openclaw system heartbeat enable|disable|last   # 控制心跳运行
 
 # 更新管理
@@ -171,17 +172,17 @@ openclaw channels logs --channel [id] # 查看日志
 
 | 文件 | 用途 |
 | --- | --- |
-| BOOT.md | 代理的操作指令 |
-| SOUL.md | 个性、语气、边界 |
-| USER.md | 用户信息与偏好 |
-| AGENT.md | 代理名称、表情符号、主题 |
-| MEMORY.md | 精选的长期记忆（仅DM） |
-| YYYY-MM-DD.md | 每日追加日志 |
-| TOOL.md | 本地工具说明 |
-| HEARTBEAT.md | 心跳检查清单 |
-| STARTUP.md | 启动检查清单 |
+| `BOOT.md` | 代理的操作指令 |
+| `SOUL.md` | 个性、语气、边界 |
+| `USER.md` | 用户信息与偏好 |
+| `AGENT.md` | 代理名称、表情符号、主题 |
+| `MEMORY.md` | 精选的长期记忆（仅DM） |
+| `YYYY-MM-DD.md` | 每日追加日志 |
+| `TOOL.md` | 本地工具说明 |
+| `HEARTBEAT.md` | 心跳检查清单 |
+| `STARTUP.md` | 启动检查清单 |
 
-> 根目录：~/.openclaw/workspace
+> 根目录：`~/.openclaw/workspace`
 
 ---
 
@@ -191,14 +192,14 @@ openclaw channels logs --channel [id] # 查看日志
 /status              # 会话健康 + 上下文使用 + WhatsApp凭证状态
 /context list        # 上下文窗口中的内容（最大贡献者）
 /context detail      # 完整的系统提示 + 注入的工作区文件
-/model &lt;model&gt;       # 为此会话切换模型
+/model <model>       # 为此会话切换模型
 /compact [instructions]  # 总结较早的上下文，释放窗口空间
 /new [model]         # 开始新会话（可选：设置模型）
 /reset               # /new 的别名
 /stop                # 中止当前运行 + 清除排队的后续操作
 /send on|off|inherit # 覆盖此会话的传递设置
 /tts on|off          # 切换文本转语音
-/think|/verbose       # 切换推理/详细模式
+/think|/verbose      # 切换推理/详细模式
 /config              # 持久化配置更改
 /debug               # 仅运行时配置覆盖
 ```
@@ -210,11 +211,11 @@ openclaw channels logs --channel [id] # 查看日志
 ```
 openclaw browser start|stop        # 启动/停止无头实例
 openclaw browser tabs              # 列出所有打开的页面
-openclaw browser open &lt;url&gt;        # 在新标签页打开URL
+openclaw browser open <url>        # 在新标签页打开URL
 openclaw browser screenshot        # 捕获活动视图
-openclaw browser navigate &lt;url&gt;    # 导航当前标签页
+openclaw browser navigate <url>    # 导航当前标签页
 openclaw browser click|type|press  # DOM交互
-openclaw browser evaluate &lt;js&gt;     # 在页面中运行JavaScript
+openclaw browser evaluate <js>     # 在页面中运行JavaScript
 openclaw browser pdf               # 将页面导出为PDF
 ```
 
@@ -225,9 +226,9 @@ openclaw browser pdf               # 将页面导出为PDF
 ```
 openclaw cron list               # 查看定时任务
 openclaw cron add                # 创建新的定时任务
-openclaw cron edit &lt;id&gt;          # 编辑现有任务
-openclaw cron enable|disable &lt;id&gt; # 切换任务状态
-openclaw cron run &lt;id&gt;           # 手动触发
+openclaw cron edit <id>          # 编辑现有任务
+openclaw cron enable|disable <id> # 切换任务状态
+openclaw cron run <id>           # 手动触发
 openclaw cron runs               # 查看运行历史
 ```
 
@@ -238,18 +239,16 @@ openclaw cron runs               # 查看运行历史
 ### 安装与管理
 
 ```
-clawhub install &lt;slug&gt;     # 从ClawHub安装技能
+clawhub install <slug>     # 从ClawHub安装技能
 clawhub update --all       # 更新所有已安装的技能
 clawhub sync --all         # 扫描并发布更新
 ```
 
 ### 技能优先级（从高到低）
 
-1.  <workspace>/skills/ - 工作区技能
-
-1.  ~/.openclaw/skills/ - 用户全局技能
-
-1.  捆绑技能 - 内置技能
+1. `<workspace>/skills/` - 工作区技能
+2. `~/.openclaw/skills/` - 用户全局技能
+3. 捆绑技能 - 内置技能
 
 ---
 
@@ -257,19 +256,15 @@ clawhub sync --all         # 扫描并发布更新
 
 支持提供商：
 
-+   **ElevenLabs** - 超真实，延迟较高
-
-+   **OpenAI** - 快速，高质量语音
-
-+   **Cartesia** - 无需API密钥，多语言支持
+- **ElevenLabs** - 超真实，延迟较高
+- **OpenAI** - 快速，高质量语音
+- **Cartesia** - 无需API密钥，多语言支持
 
 ### 启用自动TTS
 
 在配置中设置：
 
-```
-messages.tts.auto: &quot;always&quot;
-```
+`messages.tts.auto: "always"`
 
 ---
 
@@ -277,16 +272,14 @@ messages.tts.auto: &quot;always&quot;
 
 ```
 openclaw memory index --all    # 索引所有内存
-openclaw memory search &quot;X&quot;     # 搜索内存
+openclaw memory search "X"     # 搜索内存
 ```
 
 ### 内存类型
 
-+   **每日日志**：仅追加，会话开始时读取今天+昨天内容
-
-+   **MEMORY.md**：精选事实，仅在主DM会话中加载
-
-+   **语义搜索**：对内存块进行语义搜索（约400令牌）
+- **每日日志**：仅追加，会话开始时读取今天+昨天内容
+- `MEMORY.md`：精选事实，仅在主DM会话中加载
+- **语义搜索**：对内存块进行语义搜索（约400令牌）
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 

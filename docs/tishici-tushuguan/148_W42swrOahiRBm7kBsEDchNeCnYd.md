@@ -1,4 +1,7 @@
+
 # Claude Prompt： So what?
+
+## 来源
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/EmwRd2MGzoV6QtxzrTKcOzcfntf](https://vxc3hj17dym.feishu.cn/docx/EmwRd2MGzoV6QtxzrTKcOzcfntf)
 
@@ -7,6 +10,8 @@
 > » 李继刚老师的👸号，推荐关注
 
 > https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+
+## 系统提示词
 
 ```
 ;; 作者: 李继刚
@@ -56,5 +61,4 @@
 ;; 1. 启动时必须运行 (start) 函数
 ;; 2. 之后调用主函数 (卖点转买点 用户输入)
 ;; 3. 请严格按照SVG-Card 函数进行图形呈现
-
 ```

@@ -1,8 +1,9 @@
+
 # AI在线一键生成海报/视频
 
 > 来源：[https://aigclena.feishu.cn/docx/FOiTdtNRdoiOirxcNDHc64henHb](https://aigclena.feishu.cn/docx/FOiTdtNRdoiOirxcNDHc64henHb)
 
-# AI生成海报平台推荐
+## AI生成海报平台推荐
 
 1、中文海报生成 0122
 
@@ -14,7 +15,7 @@ https://www.whee.com/
 
 2、即梦
 
-# AI生成视频
+## AI生成视频
 
 https://app.jogg.ai/home
 

@@ -1,8 +1,9 @@
+
 # 国内文生图AI工具介绍与使用
 
 > 来源：[https://datawhaler.feishu.cn/docx/F2K3db9gPoMp4mxt4yHcF3tKndf](https://datawhaler.feishu.cn/docx/F2K3db9gPoMp4mxt4yHcF3tKndf)
 
-# 一、文生图简介
+## 一、文生图简介
 
 > 什么叫文生图？指直接通过一些描述性文字生成对应的图片的技术！
 
@@ -12,25 +13,25 @@
 
 ![](img/ba0f2c2b3060e689537d6fffd0ad8a80.png)
 
-# 二、文生图原理
+## 二、文生图原理
 
 > 扩散模型+CLIP
 
-## 2.1 扩散模型（文生图的骨架）
+### 2.1 扩散模型（文生图的骨架）
 
 扩散模型-文生图的骨架！
 
-> 对于绘画一张图片，专业画师会从无到有一步一步绘画（加法过程）；而扩散模型会从充满噪声的图片一步一步到过渡到清晰的图片（减法过程）。
+> 对于绘画一张图片，专业画师会从无到有一步一步绘画（加法过程）；而扩散模型会从充满噪声的图片一步一步过渡到清晰的图片（减法过程）。
 
 ![](img/c6b729651bee81c85c4fae534b2e746f.png)
 
-**扩散模型运用的是神经网络的思路**
+扩散模型运用的是神经网络的思路
 
 输入是噪点图
 
 输出是神经网络降噪后的图
 
-## 2.2 CLIP（文生图的血液）
+### 2.2 CLIP（文生图的血液）
 
 CLIP-文生图的“血液”！
 
@@ -46,11 +47,11 @@ S2.文本嵌入和图片嵌入（转换为低维空间向量）。
 
 S3.训练数据，使得两者的向量距离尽可能靠近。
 
-# 三、文生图AI工具
+## 三、文生图AI工具
 
 > 国外工具+国内工具
 
-## 3.1 简介
+### 3.1 简介
 
 文生图AI工具是一类使用人工智能技术，根据用户提供的文本描述自动生成图像的软件或服务；
 
@@ -96,7 +97,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 > 13.标小智Logo生成
 
-## 3.2 文心一格（工具简介+基础设置+高级操作）
+### 3.2 文心一格（工具简介+基础设置+高级操作）
 
 > 提供功能：AI绘画创作，商业实战，消除修复等；
 
@@ -106,7 +107,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/23ae511fc67a66cdeeabb08e7bb5babe.png)
 
-网站链接：https://yige.baidu.com/
+网站链接：`https://yige.baidu.com/`
 
 ![](img/fc078df8558cf2d10d8d1d9daa738883.png)
 
@@ -136,7 +137,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 举例：画一只正在吃面条卖萌的橙白色小猫，身材娇小，皮肤晶莹剔透，眼睛如星辰般明亮。
 
-## 3.3 豆包（工具简介+AI阅读）
+### 3.3 豆包（工具简介+AI阅读）
 
 > 提供功能：AI对话，AI画图，AI搜索，AI写作，AI编程等；
 
@@ -150,9 +151,9 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/ff7284e8f029a31054d4708fb0209018.png)
 
-网站链接：https://www.doubao.com/chat/
+网站链接：`https://www.doubao.com/chat/`
 
-## 3.4 通义万相（工具简介+刺绣生成）
+### 3.4 通义万相（工具简介+刺绣生成）
 
 > 提供功能：AI对话，视频生成，人像摄影，非遗刺绣等；
 
@@ -162,7 +163,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/7cb13258929a2e020dc88a6733ddd9a3.png)
 
-网站链接：https://tongyi.aliyun.com/wanxiang/
+网站链接：`https://tongyi.aliyun.com/wanxiang/`
 
 ![](img/48a41843e1f0f36601b52509faf52bdd.png)
 
@@ -172,7 +173,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/cb161eca9012581f01cbeb9816edca9b.png)
 
-## 3.5 奇域（工具简介+沉浸式作品生成）
+### 3.5 奇域（工具简介+沉浸式作品生成）
 
 > 注册送100闪电，签到送100闪电
 
@@ -198,7 +199,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 如果还想再轮椅一点，可以选择**DeepSeek+奇域的模式**生成作品
 
-网站链接：https://www.qiyuai.net/
+网站链接：`https://www.qiyuai.net/`
 
 ![](img/753af60c8add0461f0967dbf6bcf2bd8.png)
 
@@ -206,7 +207,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/de9be5a62a9659fc3de92514cf984360.png)
 
-## 3.6 即梦(工具简介+生成海报)
+### 3.6 即梦(工具简介+生成海报)
 
 > 提供功能:AI作图，AI视频，AI音乐等；
 
@@ -222,43 +223,43 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/f014c4272314e4e4361dadde497698d7.png)
 
-网站链接：https://jimeng.jianying.com/ai-tool/home/
+网站链接：`https://jimeng.jianying.com/ai-tool/home/`
 
-## 3.7 国内主流文生图模型网站汇总
+### 3.7 国内主流文生图模型网站汇总
 
-1.文心一格 https://yige.baidu.com/
+1.文心一格 `https://yige.baidu.com/`
 
-2.豆包 https://www.doubao.com/chat/
+2.豆包 `https://www.doubao.com/chat/`
 
-3.通义万相 https://tongyi.aliyun.com/wanxiang/
+3.通义万相 `https://tongyi.aliyun.com/wanxiang/`
 
-4.奇域 https://www.qiyuai.net/
+4.奇域 `https://www.qiyuai.net/`
 
-5.即梦AI https://jimeng.jianying.com/ai-tool/home/
+5.即梦AI `https://jimeng.jianying.com/ai-tool/home/`
 
-6.可灵AI https://klingai.kuaishou.com/
+6.可灵AI `https://klingai.kuaishou.com/`
 
-7.剪映AI https://www.capcut.cn
+7.剪映AI `https://www.capcut.cn`
 
-8.美图设计室 https://www.x-design.com
+8.美图设计室 `https://www.x-design.com`
 
-9.腾讯ARC https://arc.tencent.com
+9.腾讯ARC `https://arc.tencent.com`
 
-10.360智绘 https://ai.360.com
+10.360智绘 `https://ai.360.com`
 
-11.无限画 https://588ku.com/ai/wuxianhua/Home
+11.无限画 `https://588ku.com/ai/wuxianhua/Home`
 
-12.6pen https://6pen.art
+12.6pen `https://6pen.art`
 
-13.标小智Logo生成 https://www.logosc.cn
+13.标小智Logo生成 `https://www.logosc.cn`
 
-# 四、文生图提示词
+## 四、文生图提示词
 
-## 4.1 简介
+### 4.1 简介
 
 **提示词**是用户输入给AI系统的指令或信息，用于引导AI生成特定的输出或执行特定的任务。简单来说，提示词就是我们与AI“对话”时所使用的语言，它可以是一个简单的问题，一段详细的指令，也可以是一个复杂的任务描述。
 
-## 4.2 结构
+### 4.2 结构
 
 > 提示语的基本结构包括指令、上下文和期望。
 
@@ -270,9 +271,9 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 ![](img/51f078c6d90b15bd2b87a1f61bded178.png)
 
-[正向提示词](https://zhida.zhihu.com/search?content_id=241723194&content_type=Article&match_order=1&q=%E6%AD%A3%E5%90%91%E6%8F%90%E7%A4%BA%E8%AF%8D&zhida_source=entity)：告诉AI要生成哪些东西！**(推荐使用正向提示词)**[
+[正向提示词](https://zhida.zhihu.com/search?content_id=241723194&content_type=Article&match_order=1&q=%E6%AD%A3%E5%90%91%E6%8F%90%E7%A4%BA%E8%AF%8D&zhida_source=entity)：告诉AI要生成哪些东西！**（推荐使用正向提示词）**
 
-负向提示](https://zhida.zhihu.com/search?content_id=241723194&content_type=Article&match_order=1&q=%E8%B4%9F%E5%90%91%E6%8F%90%E7%A4%BA%E8%AF%8D&zhida_source=entity)词：告诉AI不要生成哪些东西**！(可作为局部补充使用**)
+[负向提示](https://zhida.zhihu.com/search?content_id=241723194&content_type=Article&match_order=1&q=%E8%B4%9F%E5%90%91%E6%8F%90%E7%A4%BA%E8%AF%8D&zhida_source=entity)词：告诉AI不要生成哪些东西！**（可作为局部补充使用）**
 
 **1、内容类提示词**
 
@@ -308,7 +309,7 @@ S3.训练数据，使得两者的向量距离尽可能靠近。
 
 （2）直接指定权重数值：实际使用权重时，应该避免设置过高权重值
 
-## 4.3 国内文生图提示词现状
+### 4.3 国内文生图提示词现状
 
 主流的研究方向依然放在国外文生图的提示词。
 

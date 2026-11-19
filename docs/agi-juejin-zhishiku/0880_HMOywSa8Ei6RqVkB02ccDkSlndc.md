@@ -1,3 +1,4 @@
+
 # GraphRAG：终极 RAG 引擎 - 语义搜索、嵌入、矢量搜索等等！
 
 > 来源：[https://agijuejin.feishu.cn/docx/MflJd7UEaoxEW3xmn3AcLhZUnVw](https://agijuejin.feishu.cn/docx/MflJd7UEaoxEW3xmn3AcLhZUnVw)
@@ -26,7 +27,7 @@ RAG（Retrieval-Augmented Generation）是一种自然语言处理方法，通�
 
 GraphRAG结合了图结构和RAG， 它将文本提取、网络分析、大型语言模型的提示和摘要整合成一个强大的系统 。
 
-**与简单的文**本搜索方法不同，GraphRAG使用 知识图谱 来提取和组织信息，从而提高响应的准确性和相关性，尤其是在处理复杂或私密的数据集时。它通过连接分散的信息片段，提供综合的见解，显著优于基准RAG技术。
+与简单的文本搜索方法不同，GraphRAG使用 知识图谱 来提取和组织信息，从而提高响应的准确性和相关性，尤其是在处理复杂或私密的数据集时。它通过连接分散的信息片段，提供综合的见解，显著优于基准RAG技术。
 
 ![](img/408da679eeb4da73fff9efa50b2cf7c7.png)
 
@@ -38,7 +39,7 @@ GraphRAG结合了图结构和RAG， 它将文本提取、网络分析、大型�
 
 https://www.youtube.com/watch?v=jCjyaQL-7mA&t=0s
 
-**如何开始使用GraphRAG **
+## 如何开始使用 GraphRAG
 
 让我们开始安装使其在你计算机上运行所需的先决条件。 首先，你需要确保已安装Python的最新版本，并确保已安装PIP。
 
@@ -48,9 +49,9 @@ https://www.youtube.com/watch?v=jCjyaQL-7mA&t=0s
 
 ![](img/1b57d3400bf568188da93c5021f40075.png)
 
-打开VS Code的新窗口，打开终端，输入PIP install graph rag安装相关包。接着输入cd graph rag进入目录，并输入export graph rag_API_key填入你的API密钥。
+打开VS Code的新窗口，打开终端，输入`PIP install graph rag`安装相关包。接着输入`cd graph rag`进入目录，并输入`export graph rag_API_key`填入你的API密钥。
 
-你需要创建一个输入文件夹以存放所有文件或文档。你可以在终端中输入mkdir input来创建文件夹，
+你需要创建一个输入文件夹以存放所有文件或文档。你可以在终端中输入`mkdir input`来创建文件夹，
 
 ![](img/f6627e439f5b541b01b1191cc9870532.png)
 
@@ -58,19 +59,19 @@ https://www.youtube.com/watch?v=jCjyaQL-7mA&t=0s
 
 ![](img/c796c9103591be267fc18dadccfa31be.png)
 
-在下一个步骤中，输入命令python -m graph rag index以对当前文档进行索引，然后将可以开始与该文档进行对话。
+在下一个步骤中，输入命令`python -m graph rag index`以对当前文档进行索引，然后将可以开始与该文档进行对话。
 
 ![](img/3215ffdc728857e77f0bf2db7fac9bcc.png)
 
-每次处理新文件时都需要进行索引。 你还可以在.env文件中粘贴你的API密钥，如果使用其他模型，可以在此处进行配置。 配置完成后，保存文件并运行代码。
+每次处理新文件时都需要进行索引。 你还可以在`.env`文件中粘贴你的API密钥，如果使用其他模型，可以在此处进行配置。 配置完成后，保存文件并运行代码。
 
 ![](img/07baaf02a36965f7df56a9448bf3a81e.png)
 
-最后，运行以下命令以启动对话： python -m graph rag query。 这将初始化查询或输入，并设置为根文件夹，接着输入查询。 这样就可以在本地访问和使用RAG系统。 我强烈推荐使用Ollama，它易于设置，只需设置端点即可。
+最后，运行以下命令以启动对话：`python -m graph rag query`。 这将初始化查询或输入，并设置为根文件夹，接着输入查询。 这样就可以在本地访问和使用RAG系统。 我强烈推荐使用Ollama，它易于设置，只需设置端点即可。
 
-下面提供官方的 **文档介绍、相关资源、部署教程 **等，进一步支撑你的行动，以提升本文的帮助力。
+下面提供官方的文档介绍、相关资源、部署教程 等，进一步支撑你的行动，以提升本文的帮助力。
 
-# **GraphRAG 项目**
+## GraphRAG 项目
 
 👉 使用 GraphRAG Accelerator 解决方案
 
@@ -80,35 +81,35 @@ https://www.youtube.com/watch?v=jCjyaQL-7mA&t=0s
 
 👉 GraphRAG 发表的论文
 
-## **简介**
+### 简介
 
 GraphRAG 是一个旨在利用大语言模型（LLMs）从非结构化文本中提取结构化数据的数据处理工具套件。
 
 要了解更多关于 GraphRAG 及其如何增强 LLM 处理私有数据能力的信息，请访问 微软研究博客文章 .
 
-## **快速入门**
+### 快速入门
 
 建议使用 Solution Accelerator 包，该包提供了与 Azure 资源的端到端用户体验。
 
-## **代码库指南**
+### 代码库指南
 
 此代码库展示了如何利用知识图谱记忆结构来增强 LLM 输出。请注意，提供的代码仅作为示范用途，不是微软官方支持的产品。
 
-## **深入探索**
+### 深入探索
 
-+   • 关于贡献指南，请参见 CONTRIBUTING.md
++   • 关于贡献指南，请参见 `CONTRIBUTING.md`
 
-+   • 关于 GraphRAG 的开发信息，请参见 DEVELOPING.md
++   • 关于 GraphRAG 的开发信息，请参见 `DEVELOPING.md`
 
 +   • 欢迎在 GitHub 讨论区 参与讨论和反馈意见！
 
-## **提示调优**
+### 提示调优
 
 为了使 GraphRAG 在使用您的数据时达到最佳效果，我们强烈建议按照文档中的 提示调优指南 进行调整。
 
-## **责任 AI 常见问题**
+### 责任 AI 常见问题
 
-请参阅 RAI_TRANSPARENCY.md 了解以下内容：
+请参阅 `RAI_TRANSPARENCY.md` 了解以下内容：
 
 +   • GraphRAG 是什么？
 
@@ -128,13 +129,13 @@ https://www.youtube.com/watch?v=kHZHMzv3Shg
 
 参考链接：
 
-Github Repo：github.com/microsoft/graphrag
+Github Repo：`github.com/microsoft/graphrag`
 
-博客文章：microsoft.github.io/graphrag
+博客文章：`microsoft.github.io/graphrag`
 
-项目页面：microsoft.com/en-us/research/project/graphrag/
+项目页面：`microsoft.com/en-us/research/project/graphrag/`
 
-研究论文：arxiv.org/pdf/2404.16130
+研究论文：`arxiv.org/pdf/2404.16130`
 
 **知音难求，自我修炼亦艰**
 

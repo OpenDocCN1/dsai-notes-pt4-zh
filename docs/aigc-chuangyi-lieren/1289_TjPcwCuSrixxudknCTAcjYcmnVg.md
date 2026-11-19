@@ -1,3 +1,4 @@
+
 # 20240416-王者归来！Adobe Premiere Pro引入生成式AI，革新视频编辑流程！
 
 > 来源：[https://aigcreative.feishu.cn/docx/E0qGdQXiFod8vRxBKMhcmLbIn5g](https://aigcreative.feishu.cn/docx/E0qGdQXiFod8vRxBKMhcmLbIn5g)
@@ -26,11 +27,11 @@ Adobe Premiere Pro、After Effects和Audition这三款软件，长期以来一�
 
 他们提出了三项核心要求：
 
-+   AI 必须融入他们的日常工作流程，并成为他们常用工具如 Premiere Pro 的一部分。
++ AI 必须融入他们的日常工作流程，并成为他们常用工具如 Premiere Pro 的一部分。
 
-+   其核心价值在于能够使用生成式AI快速编辑现有内容——无论是添加元素、去除干扰还是在时间线上无缝延长视频片段，都必须确保内容的一致性和精确控制。
++ 其核心价值在于能够使用生成式AI快速编辑现有内容——无论是添加元素、去除干扰还是在时间线上无缝延长视频片段，都必须确保内容的一致性和精确控制。
 
-+   能够选择不同的AI模型，以便根据不同的需求使用最合适的模型。
++ 能够选择不同的AI模型，以便根据不同的需求使用最合适的模型。
 
 ![](img/0cad6a42d4bcb2592c46102adb5a52db.png)
 

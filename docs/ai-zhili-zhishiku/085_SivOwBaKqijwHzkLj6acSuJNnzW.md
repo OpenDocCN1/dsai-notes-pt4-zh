@@ -1,16 +1,17 @@
+
 # 用户数据
 
 > 来源：[https://docs.feishu.cn/docx/DuledyMVjoPMvdxplZmc1nl4nOe](https://docs.feishu.cn/docx/DuledyMVjoPMvdxplZmc1nl4nOe)
 
 养兔子的好人，《如何合规地用用户输入信息进行训练》
 
-1.  已经被用于训练的数据可以撤回吗？
+1. 已经被用于训练的数据可以撤回吗？
 
 已经参与训练的数据是无法从模型里撤回来的
 
 模型可以理解为：公式（模型结构）+系数（参数）+checkpoint下的预训练的结果，最后训练好的沉淀下来的模型就是个这，每一次实时训练的时候，会基于喂进去的数据和训练方法对结构和/或参数发生变化，然后在模型达到一定标准的时候选一个“节点”把它固定下来。但如果要追溯“这一条训练数据”进去影响的到底是哪一个，是哪一层级的结构、哪几个系数、在哪个时刻发生了变化，那是非常非常难的
 
-1.  如果训练数据造成了侵权如何消除影响？技术上可以做到恢复如初吗？
+2. 如果训练数据造成了侵权如何消除影响？技术上可以做到恢复如初吗？
 
 模型遗忘（Machine unlearning）领域这两年进展比较多，主要就是针对3的诉求。实际不是删除，而是最小化相应数据对模型输出的影响，最好是几乎没有影响。有不同的实现路径，但大部分都是前沿探究，暂时不易工程落地。
 
@@ -76,7 +77,7 @@
 
 【非个人信息？】
 
-讯飞星火
+### 讯飞星火
 
 《讯飞开放平台用户服务协议》的用户使用规范章节
 
@@ -204,9 +205,7 @@ https://support.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-i
 
 ### Meta案
 
-Meta 在 5 月5 月 22 日起，
-
-底向英国的 Facebook 和 Instagram 用户发送电子邮件，通知他们将于 6 月 26 日生效的隐私政策变更。他们声称 Meta 现在将“依赖于合法利益这一法律基础”来使用个人信息进行人工智能开发。此外，虽然 Meta 告知用户他们有权提出异议，但并未承诺会自动尊重这些异议。一旦用户的数据被公司使用，可能是不可逆的，因此无法追溯地适用同意
+Meta 在 5 月 22 日起，底向英国的 Facebook 和 Instagram 用户发送电子邮件，通知他们将于 6 月 26 日生效的隐私政策变更。他们声称 Meta 现在将“依赖于合法利益这一法律基础”来使用个人信息进行人工智能开发。此外，虽然 Meta 告知用户他们有权提出异议，但并未承诺会自动尊重这些异议。一旦用户的数据被公司使用，可能是不可逆的，因此无法追溯地适用同意
 
 自5 月 22 日起，我们已向欧洲的用户发送了超过 20 亿条应用内通知和电子邮件，解释我们正在做的事情。这些通知包含一个反对表单的链接，让人们有机会反对他们的数据被用于我们的人工智能建模工作。
 
@@ -234,23 +233,16 @@ Meta 在 5 月5 月 22 日起，
 
 在使用个人数据进行AI训练时，Meta希望依据GDPR第6条(1)(f)项的合法利益作为法律依据，并简要提及开发和改进其产品的目的。欧盟数据保护机构目前正在澄清合法利益是否可以作为法律依据，以及是否需要数据主体的明确同意。总体而言，Meta的计划引发了众多法律问题，包括与透明度相关的，这些问题需要在整个欧盟统一解决。
 
-**处理基础**：与许多在使用欧洲人数据训练大型语言模型的行业同行一**样，为了**在欧盟进行这项工作，我们将依赖“合法利益”的法律基础，以遵守欧盟的通用数据保护条例（GDPR）。我们认为，这一法律基础是在处理公共数据以训练人工智能模型所需规模时，最合适的平衡，同时尊重人们的权利。
+**处理基础**：与许多在使用欧洲人数据训练大型语言模型的行业同行一样，为了在欧盟进行这项工作，我们将依赖“合法利益”的法律基础，以遵守欧盟的通用数据保护条例（GDPR）。我们认为，这一法律基础是在处理公共数据以训练人工智能模型所需规模时，最合适的平衡，同时尊重人们的权利。
 
-+   Facebook的澄清和暂停计划的官宣：https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
-
-+   meta的拒绝表单：https://www.facebook.com/help/contact/1266025207620918
-
-+   noyb的投诉：https://noyb.eu/en/noyb-urges-11-dpas-immediately-stop-metas-abuse-personal-data-ai
-
-+   德国汉堡数据保护局的提示：[A](https://datenschutz-hamburg.de/fileadmin/user_upload/HmbBfDI/Datenschutz/Informationen/240612_PM_AI_Training_with_personal_data_Insta_Facebook_EN.pdf)I training with personal data on Instagram and Facebook
-
-+    北莱茵-威斯特法伦州数据保护机构的建议：https://www.ldi.nrw.de/trainingsdaten-fuer-meta-ki
-
-+   爱尔兰DPC的合作声明：[The DPC's Engage](https://www.dataprotection.ie/en/news-media/latest-news/dpcs-engagement-meta-ai)ment with Meta on AI
-
-+   [ICO的接收Meta回复的声明：Statement in respon](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/06/statement-in-response-to-metas-plans-to-train-generative-ai-with-user-data/)se to Meta's plans to train generative AI with user data
-
-+   ORG的投诉：[O](https://www.openrightsgroup.org/press-releases/org-complaint-to-ico-about-meta-privacy-policy-changes/)RG complaint to ICO about Meta privacy policy changes
++ Facebook的澄清和暂停计划的官宣：https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
++ meta的拒绝表单：https://www.facebook.com/help/contact/1266025207620918
++ noyb的投诉：https://noyb.eu/en/noyb-urges-11-dpas-immediately-stop-metas-abuse-personal-data-ai
++ 德国汉堡数据保护局的提示：[A](https://datenschutz-hamburg.de/fileadmin/user_upload/HmbBfDI/Datenschutz/Informationen/240612_PM_AI_Training_with_personal_data_Insta_Facebook_EN.pdf)I training with personal data on Instagram and Facebook
++ 北莱茵-威斯特法伦州数据保护机构的建议：https://www.ldi.nrw.de/trainingsdaten-fuer-meta-ki
++ 爱尔兰DPC的合作声明：[The DPC's Engage](https://www.dataprotection.ie/en/news-media/latest-news/dpcs-engagement-meta-ai)ment with Meta on AI
++ [ICO的接收Meta回复的声明：Statement in respon](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/06/statement-in-response-to-metas-plans-to-train-generative-ai-with-user-data/)se to Meta's plans to train generative AI with user data
++ ORG的投诉：[O](https://www.openrightsgroup.org/press-releases/org-complaint-to-ico-about-meta-privacy-policy-changes/)RG complaint to ICO about Meta privacy policy changes
 
 6月10日：Meta宣布在6月26日前如果用户不申请退出，将使用用户在Facebook、Instagram上公开数据进行训练AI。
 
@@ -286,49 +278,42 @@ https://mp.weixin.qq.com/s/04-tlpayr5UC0rVmn6ej5A
 
 隐私政策中没有披露，大概率也是合法利益
 
+
+
 2024年8月8日，爱尔兰数据保护委员会（DPC）宣布，DPC与X（原Twitter）签订了一项协议，要求X在2024年5月7日至2024年8月1日期间暂停对X平台上EU/EEA用户发布的公开帖子中包含的个人数据进行处理。
 
 DPC强调X处理个人数据的目的是训练其人工智能系统“Grok”。DPC提及，DPC根据2018年《数据保护法》第134条向高等法院提出申请后与X协商一致达成了该协议。具体而言，《数据保护法》第134条允许DPC在迫切需要保护数据主体的权利和自由时向高等法院申请发布一项命令，要求数据控制者暂停、限制或禁止处理个人数据。
 
-跟随 Meta 的脚步，埃隆·马斯克的 X 本周悄然调整了设置，让公司的 AI 系统——Grok——可以访问所有用户**的帖**子。有一**种方法可以**防止 Gro**k 获取**[你的](https://x.com/settings/grok_settings)帖子；然而，你无法通过移动应用执行此操**作。你需要使**用桌面电脑访问 X 的 设置；选择 隐私和安全，然后选择 Grok，最后取消选中该框。或者直接点击 这里 直接进入正确的设置页面。（如果你有与 Grok 的对话记录，也可以通过点击 删除对话记录 来删除它。）
+跟随 Meta 的脚步，埃隆·马斯克的 X 本周悄然调整了设置，让公司的 AI 系统——Grok——可以访问所有用户的帖子。有一种方法可以防止 Grok 获取[你的](https://x.com/settings/grok_settings)帖子；然而，你无法通过移动应用执行此操作。你需要使用桌面电脑访问 X 的设置；选择 隐私和安全，然后选择 Grok，最后取消选中该框。或者直接点击 这里 直接进入正确的设置页面。（如果你有与 Grok 的对话记录，也可以通过点击 删除对话记录 来删除它。）
 
-据TechCrunch 2024年8月12日报道，埃隆·马斯克 (Elon Musk) 旗下的社交媒体平台X因未经个人同意擅自使用欧盟用户数据而遭到了一系列的隐私投诉。奥地利、比利时、法国、希腊、爱尔兰、意大利、荷兰、波兰和西班牙的数据保护机构均收到了针对X的隐私投诉，投诉指出X在未明确告知用户并征得用户同意的情况下，自动收集了用户数据并用于训练生成式AI聊天机器人Grok。投诉详细列出了X的多项违规行为，包括未清晰说明如何使用数据进行AI训练、所收集的数据超出必要范围、以及可能无充分理由地处理了敏感数据。爱尔兰数据保护委员会 (DPC) 已经针对X的AI模型训练处理采取了一些行动，并向爱尔兰高等法院提起法律诉讼，寻求禁令以迫使其停止使用数据。
+据TechCrunch 2024年8月12日报道，埃隆·马斯克（Elon Musk）旗下的社交媒体平台X因未经个人同意擅自使用欧盟用户数据而遭到了一系列的隐私投诉。奥地利、比利时、法国、希腊、爱尔兰、意大利、荷兰、波兰和西班牙的数据保护机构均收到了针对X的隐私投诉，投诉指出X在未明确告知用户并征得用户同意的情况下，自动收集了用户数据并用于训练生成式AI聊天机器人Grok。投诉详细列出了X的多项违规行为，包括未清晰说明如何使用数据进行AI训练、所收集的数据超出必要范围、以及可能无充分理由地处理了敏感数据。爱尔兰数据保护委员会（DPC）已经针对X的AI模型训练处理采取了一些行动，并向爱尔兰高等法院提起法律诉讼，寻求禁令以迫使其停止使用数据。
 
 此次事件再次引发了对大型科技公司数据保护问题的关注，尤其是在AI技术日益普及的背景下如何确保用户数据的合规使用和安全。
 
-https://mp.weixin.qq.com/s/Qv0IY9EPfMJ_kTM65YQ8Xg
+## 相关链接
 
-新闻全文：https://www.dataprotection.ie/en/news-media/press-releases/dpc-welcomes-xs-agreement-suspend-its-processing-personal-data-purpose-training-ai-tool-grok
+- <https://mp.weixin.qq.com/s/Qv0IY9EPfMJ_kTM65YQ8Xg>
+- [新闻全文](https://www.dataprotection.ie/en/news-media/press-releases/dpc-welcomes-xs-agreement-suspend-its-processing-personal-data-purpose-training-ai-tool-grok)
+- [Grok 训练数据的介绍](https://help.x.com/en/using-x/about-grok)
+- 那一片数据星辰，《[AI训练风波：爱尔兰DPC对X平台Grok使用公开帖子训练AI按下暂停键](https://mp.weixin.qq.com/s/RxV15Dy7zut0L43Q1-ER1w)》
+- Twitter/X 将使用用户帖子训练 AI，这一次用户无法退出
+- [X社交数据训练AI案件诉讼落幕：以X同意永久终止使用社交数据训练为结局！](https://mp.weixin.qq.com/s/mBdSK8QoJ5pTvK__UQ_onw)
 
-Grok训练数据的介绍：https://help.x.com/en/using-x/about-grok
-
-那一片数据星辰，《[AI训练风波：爱尔兰DPC对X平](https://mp.weixin.qq.com/s/RxV15Dy7zut0L43Q1-ER1w)台Grok使用公开帖子训练AI按下暂停键》
-
-Twitter/X 将使用用户帖子训练 AI，这一次用户无法退出
-
-Twitter/X 此前的服务条款已经声明它会使用用户内容训练其 AI 模型，但允许用户选择退出，新的服务条款用户无法退出。新服务条款将于 11 月 15 日生效。
-
-X社交数据训练AI案件诉讼落幕：以X同意永久终止使用社交数据训练为结局！
-
-https://mp.weixin.qq.com/s/mBdSK8QoJ5pTvK__UQ_onw
-
-### **OpenAI案**
+## OpenAI案
 
 2024年5月23日，欧盟EDPB发布一篇重磅报告——《ChatGPT工作组的工作报告》（“报告”）。
 
-在训练数据的收集环节，针对网络爬取的公开数据，《ChatGPT工作组的工作报告》特别指出并原则上同意OpenAI提出的《通用数据保护条例》第6条第（1）款第（f）项法律基础，即“合法利益”作为该类数据处理的合法性基础（也包括用户自行公开的敏感个人信息）。OPENAI曾公开发文，称其“只使用互联网上免费和公开的公开信息”。需要注意的是，虽然OpenAI在ChatGPT中提供了用户开关选项，但其仍将用户输入提示词和模型输出内容的合法性基础也纳入“合法利益”而不是用户“同意”。
+在训练数据的收集环节，针对网络爬取的公开数据，《ChatGPT工作组的工作报告》特别指出并原则上同意OpenAI提出的《通用数据保护条例》第6条第（1）款第（f）项法律基础，即“合法利益”作为该类数据处理的合法性基础（也包括用户自行公开的敏感个人信息）。OpenAI曾公开发文，称其“只使用互联网上免费和公开的公开信息”。需要注意的是，虽然OpenAI在ChatGPT中提供了用户开关选项，但其仍将用户输入提示词和模型输出内容的合法性基础也纳入“合法利益”而不是用户“同意”。
 
-### Linkedin 案
+## LinkedIn 案
 
 ICO声明LinkedIn暂停使用英国用户数据训练AI
 
-LinkedIn作为全球领先的职业社交平台,近期因使用用户数据训练人工智能(AI)模型引发争议。2024年9月，LinkedIn更新了其隐私政策,明确表示可能会使用用户数据来训练AI模型，但这一做法在未经用户明确同意的情况下实施,引发了用户、隐私倡导者和监管机构的广泛关注和批评。
+LinkedIn作为全球领先的职业社交平台，近期因使用用户数据训练人工智能（AI）模型引发争议。2024年9月，LinkedIn更新了其隐私政策，明确表示可能会使用用户数据来训练AI模型，但这一做法在未经用户明确同意的情况下实施，引发了用户、隐私倡导者和监管机构的广泛关注和批评。
 
-**更多信息：**[https://mp.weixin.qq.com/s/ez](https://mp.weixin.qq.com/s/ezJZaZ2QvUBVTG_0CSQ9vg)JZaZ2QvUBVTG_0CSQ9vg
+**更多信息：**[https://mp.weixin.qq.com/s/ezJZaZ2QvUBVTG_0CSQ9vg](https://mp.weixin.qq.com/s/ezJZaZ2QvUBVTG_0CSQ9vg)
 
-1.
-
-**大模型训练并不依赖用户个人信息**
+## 1. 大模型训练并不依赖用户个人信息
 
 （阿里研究院： ）
 

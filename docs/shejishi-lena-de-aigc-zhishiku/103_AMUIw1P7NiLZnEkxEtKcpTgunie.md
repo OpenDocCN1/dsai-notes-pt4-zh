@@ -1,18 +1,19 @@
+
 # 电商专区
 
 > 来源：[https://aigclena.feishu.cn/docx/FYyudQJrFoeJmRxgKaTcTVMlnub](https://aigclena.feishu.cn/docx/FYyudQJrFoeJmRxgKaTcTVMlnub)
 
-# 指甲油应用
+## 指甲油应用
 
 2025.4.10
 
 ![](img/54e4c80c4d6c71302b6db59ad55b1ac4.png)
 
-[52c31baa68e75be08531061f60882b3f.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXXtb4jxDoWHlxx3I74c3E1Mnad)
+[`52c31baa68e75be08531061f60882b3f.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXXtb4jxDoWHlxx3I74c3E1Mnad)
 
-# 工具
+## 工具
 
-## Hilight AI  营销智能AI
+### Hilight AI 营销智能AI
 
 2026.1.27
 
@@ -24,7 +25,7 @@ Hilight AI 创作入口主要集中在三个模块：智能成片、数字分身
 
 ![](img/abe507178124375e48f00f901908329f.png)
 
-# 电商图提示词
+## 电商图提示词
 
 ![](img/1d824dafc604dd9f704a36667bc2aa28.png)
 
@@ -38,17 +39,13 @@ Scene:
 
 Luxury product shot floating on dark water with [flower type] in [colors] arranged around it.
 
-[Lighting style - e.g., "golden hour glow" /
-
-"bright fresh light"] creates reflections and ripples across the water.
+[Lighting style - e.g., "golden hour glow" / "bright fresh light"] creates reflections and ripples across the water.
 
 Mood & Style:
 
-[Adjectives - e.g., "ethereal and luxurious" /
+[Adjectives - e.g., "ethereal and luxurious" / "fresh and clean"], high-end commercial photography, [camera angle], shallow depth of field with soft bokeh background
 
-"fresh and clean"], high-end commercial photography, [camera angle], shallow depth of field with soft bokeh background
-
-# 图
+## 图
 
 ![](img/46530385c7fef25fe510002602ef0fbd.png)
 
@@ -142,6 +139,6 @@ Logo设计流行轻量flash动态效果
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/c40bb94e628823daaa6cbf7fd7c4528e.png)

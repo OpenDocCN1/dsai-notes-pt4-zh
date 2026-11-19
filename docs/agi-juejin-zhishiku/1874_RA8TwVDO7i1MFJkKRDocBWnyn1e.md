@@ -1,9 +1,7 @@
-# 01.10-2024 胡润中国人工智能企业 50 强公布：寒武纪 2380 亿价值位居榜首，科大讯飞、商汤科技前三
-
-> 来源：[https://agijuejin.feishu.cn/docx/Vao9d3DJVoX0FExJH38cTryXnFb](https://agijuejin.feishu.cn/docx/Vao9d3DJVoX0FExJH38cTryXnFb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 10 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/Vao9d3DJVoX0FExJH38cTryXnFb](https://agijuejin.feishu.cn/docx/Vao9d3DJVoX0FExJH38cTryXnFb)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/27149aae3872dfe10f1eef9f00b45b6a.png)

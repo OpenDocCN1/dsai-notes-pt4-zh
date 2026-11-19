@@ -1,20 +1,15 @@
+
 # 企业实战完整指南：团队协作与安全合规
 
 > 来源：[https://my.feishu.cn/docx/HXtRdtThlowOpmx3eDzc96nVnSb](https://my.feishu.cn/docx/HXtRdtThlowOpmx3eDzc96nVnSb)
 
-# 企业实战完整指南：团队协作与安全合规
-
 > **课程信息**
-
-+   **作者**：老金
-
-+   **预计学时**：4-6小时
-
-+   **难度等级**：⭐⭐⭐⭐⭐ 高级
-
-+   **更新日期**：2026年3月
-
-+   **适用版本**：Claude Code v2.1+（验证于2026-03-18）
+>
+> + **作者**：老金
+> + **预计学时**：4-6小时
+> + **难度等级**：⭐⭐⭐⭐⭐ 高级
+> + **更新日期**：2026年3月
+> + **适用版本**：`Claude Code` v2.1+（验证于2026-03-18）
 
 ---
 
@@ -22,21 +17,14 @@
 
 完成本课学习后，你将能够：
 
-1.  **建立统一的团队配置仓库**：所有成员一键同步配置，告别配置混乱
-
-1.  集成Git Hooks + Claude Code：自动化代码审查和质量检查
-
-1.  **构建团队知识库系统**：让Claude记住团队的代码规范和最佳实践
-
-1.  **实现CI/CD流水线集成**：Claude Code参与自动化构建和部署
-
-1.  建立企业级API Key管理体系：防止密钥泄露和滥用
-
-1.  **实现敏感数据全链路保护**：从代码到日志到数据库
-
-1.  满足GDPR/HIPAA/SOC2合规要求：通过企业审计
-
-1.  **部署自动化安全扫描系统**：持续检测代码和配置漏洞
+1. 建立统一的团队配置仓库：所有成员一键同步配置，告别配置混乱
+2. 集成 `Git Hooks` + `Claude Code`：自动化代码审查和质量检查
+3. 构建团队知识库系统：让 `Claude Code` 记住团队的代码规范和最佳实践
+4. 实现 `CI/CD` 流水线集成：`Claude Code` 参与自动化构建和部署
+5. 建立企业级 `API Key` 管理体系：防止密钥泄露和滥用
+6. 实现敏感数据全链路保护：从代码到日志到数据库
+7. 满足 `GDPR`/`HIPAA`/`SOC2` 合规要求：通过企业审计
+8. 部署自动化安全扫描系统：持续检测代码和配置漏洞
 
 ---
 
@@ -46,75 +34,70 @@
 
 | 术语 | 英文全称 | 通俗解释 |
 | --- | --- | --- |
-| **Secrets Manager** | - | 密钥管理服务，安全存储API Key等敏感信息 |
-| **Vault** | HashiCorp Vault | 企业级密钥管理工具，支持密钥轮换 |
-| **Git Hooks** | - | Git的钩子脚本，在提交/推送前自动执行检查 |
-| **CI/CD** | Continuous Integration/Delivery | 持续集成/持续交付，自动化构建和部署 |
-| **ADR** | Architecture Decision Record | 架构决策记录，记录技术选型的原因 |
-| **GDPR** | General Data Protection Regulation | 欧盟通用数据保护条例 |
-| **SOC 2** | Service Organization Control 2 | 服务组织控制审计标准 |
-| **2FA** | Two-Factor Authentication | 双因素认证，增强账户安全 |
-| **RPM** | Requests Per Minute | 每分钟请求数，API速率限制单位 |
-| **DPO** | Data Protection Officer | 数据保护官，负责合规的角色 |
-| **Bandit** | - | Python安全代码扫描工具 |
-| **Trivy** | - | 容器镜像安全扫描工具 |
-| **settings.json** | - | Claude Code的配置文件，分用户级和项目级 |
-| **CLAUDE.md** | - | 项目级指令文件，Claude自动加载 |
+| `Secrets Manager` | - | 密钥管理服务，安全存储 `API Key` 等敏感信息 |
+| `Vault` | `HashiCorp Vault` | 企业级密钥管理工具，支持密钥轮换 |
+| `Git Hooks` | - | `Git` 的钩子脚本，在提交/推送前自动执行检查 |
+| `CI/CD` | Continuous Integration/Delivery | 持续集成/持续交付，自动化构建和部署 |
+| `ADR` | Architecture Decision Record | 架构决策记录，记录技术选型的原因 |
+| `GDPR` | General Data Protection Regulation | 欧盟通用数据保护条例 |
+| `SOC 2` | Service Organization Control 2 | 服务组织控制审计标准 |
+| `2FA` | Two-Factor Authentication | 双因素认证，增强账户安全 |
+| `RPM` | Requests Per Minute | 每分钟请求数，`API` 速率限制单位 |
+| `DPO` | Data Protection Officer | 数据保护官，负责合规的角色 |
+| `Bandit` | - | Python 安全代码扫描工具 |
+| `Trivy` | - | 容器镜像安全扫描工具 |
+| `settings.json` | - | `Claude Code` 的配置文件，分用户级和项目级 |
+| `CLAUDE.md` | - | 项目级指令文件，`Claude` 自动加载 |
 
 ---
 
-# 第一部分：企业团队协作最佳实践
+## 第一部分：企业团队协作最佳实践
 
-## 🎯 本部分学习目标
+### 🎯 本部分学习目标
 
-本部分将系统讲解企业级Claude Code团队协作的完整方案，帮助你的团队建立规范化的协作流程。
+本部分将系统讲解企业级 `Claude Code` 团队协作的完整方案，帮助你的团队建立规范化的协作流程。
 
 完成本部分后，你将能够：
 
-1.  ✅ 建立 **统一的团队配置仓库**，所有成员一键同步配置
-
-1.  ✅ 集成 Git hooks + Claude Code，自动化代码审查和质量检查
-
-1.  ✅ 构建 **团队知识库系统**，让Claude记住团队的代码规范和最佳实践
-
-1.  ✅ 实现 **CI/CD流水线集成**，Claude Code参与自动化构建和部署
-
-1.  ✅ 部署 **团队级别监控系统**，追踪Claude使用情况和代码质量指标
-
-1.  ✅ 设计 **跨团队协作流程**，让多个团队高效使用Claude Code
+1. ✅ 建立统一的团队配置仓库，所有成员一键同步配置
+2. ✅ 集成 `Git hooks` + `Claude Code`，自动化代码审查和质量检查
+3. ✅ 构建团队知识库系统，让 `Claude` 记住团队的代码规范和最佳实践
+4. ✅ 实现 `CI/CD` 流水线集成，`Claude Code` 参与自动化构建和部署
+5. ✅ 部署团队级别监控系统，追踪 `Claude` 使用情况和代码质量指标
+6. ✅ 设计跨团队协作流程，让多个团队高效使用 `Claude Code`
 
 ---
 
-## Part 1: 团队配置统一化
+### Part 1: 团队配置统一化
 
-### 1.1 为什么需要统一配置
+#### 1.1 为什么需要统一配置
 
 **常见团队配置问题**：
 
 | 问题 | 后果 | 发生概率 |
 | --- | --- | --- |
-| 每个人settings.json不同 | 代码风格混乱，PR冲突 | **95%** |
-| API Key直接写在配置文件 | 泄露到Git仓库 | **80%** |
-| 新人手动配置需要2小时 | 效率低下，容易出错 | **100%** |
+| 每个人 `settings.json` 不同 | 代码风格混乱，PR 冲突 | **95%** |
+| `API Key` 直接写在配置文件 | 泄露到 `Git` 仓库 | **80%** |
+| 新人手动配置需要 2 小时 | 效率低下，容易出错 | **100%** |
 | 配置更新无法同步 | 部分成员用旧配置 | **70%** |
 | 没有版本控制 | 回滚困难 | **60%** |
 
 **统一配置能解决以上所有问题。**
 
-### 1.2 团队配置仓库结构
+#### 1.2 团队配置仓库结构
 
-#### 1.2.1 标准仓库结构
+##### 1.2.1 标准仓库结构
 
 ```
 team-claude-config/
 ├── README.md                    # 配置说明文档
-├── .editorconfig                # EditorConfig通用规则
+├── .editorconfig                # EditorConfig 通用规则
 ├── .env.example                 # 环境变量模板
 ├── install.sh                   # 一键安装脚本（Linux/macOS）
 ├── install.ps1                  # 一键安装脚本（Windows）
 ├── update.sh                    # 配置更新脚本
 ├── validate.sh                  # 配置验证脚本
-├── vscode/                      # VS Code配置
+├── vscode/                      # VS Code 配置
 │   ├── settings.json            # 编辑器设置
 │   ├── keybindings.json         # 快捷键配置
 │   ├── extensions.json          # 推荐扩展列表
@@ -122,10 +105,10 @@ team-claude-config/
 │   └── snippets/                # 代码片段
 │       ├── python.json
 │       └── javascript.json
-├── cursor/                      # Cursor配置
+├── cursor/                      # Cursor 配置
 │   ├── settings.json
 │   └── keybindings.json
-├── jetbrains/                   # JetBrains IDEs配置
+├── jetbrains/                   # JetBrains IDEs 配置
 │   ├── pycharm/
 │   │   ├── options/
 │   │   │   ├── editor.xml
@@ -135,21 +118,21 @@ team-claude-config/
 │   │       └── Python.xml
 │   └── intellij/
 │       └── options/
-├── claude/                      # Claude Code专用配置
+├── claude/                      # Claude Code 专用配置
 │   ├── system-prompts/          # 系统提示词
 │   │   ├── code-review.md       # 代码审查提示词
 │   │   ├── refactor.md          # 重构提示词
 │   │   └── testing.md           # 测试生成提示词
 │   ├── language.json            # 语言配置（支持多语言响应）
-│   ├── skills/                  # 团队技能包（支持/调用和hot reload）
+│   ├── skills/                  # 团队技能包（支持/调用和 hot reload）
 │   │   └── team-standards/
-│   │       ├── SKILL.md       # Markdown + YAML frontmatter定义
+│   │       ├── SKILL.md       # Markdown + YAML frontmatter 定义
 │   │       └── prompts/
-│   └── hooks/                   # Git hooks模板
+│   └── hooks/                   # Git hooks 模板
 │       ├── pre-commit
 │       ├── pre-push
 │       └── commit-msg
-├── ci/                          # CI/CD配置
+├── ci/                          # CI/CD 配置
 │   ├── github-actions/
 │   │   ├── claude-review.yml
 │   │   └── quality-check.yml
@@ -170,45 +153,46 @@ team-claude-config/
     └── test_cursor_config.py
 ```
 
-#### 1.2.2 统一配置原则
+##### 1.2.2 统一配置原则
 
-**配置统一5条原则**：
+**配置统一 5 条原则**：
 
-1.  Single Source of Truth（唯一真相来源）
+1. `Single Source of Truth`（唯一真相来源）
 
-+   所有配置都在Git仓库中
+   + 所有配置都在 `Git` 仓库中
+   + 本地配置 = 仓库配置的符号链接
 
-+   本地配置 = 仓库配置的符号链接
+1. `Environment Variables First`（环境变量优先）
 
-1.  Environment Variables First（环境变量优先）
+   + 敏感信息（`API Key`）**必须**用环境变量
+   + 绝对路径用环境变量替换
 
-+   敏感信息（API Key）**必须**用环境变量
+1. `Platform Agnostic`（平台无关）
 
-+   绝对路径用环境变量替换
+   + 脚本支持 `Windows`/`Linux`/`macOS`
+   + 路径使用相对路径
 
-1.  Platform Agnostic（平台无关）
+1. `Automated Validation`（自动验证）
 
-+   脚本支持Windows/Linux/macOS
+   + 每次更新自动验证配置正确性
+   + `CI` 流水线中运行验证测试
 
-+   路径使用相对路径
+1. `Rollback Support`（支持回滚）
 
-1.  Automated Validation（自动验证）
+   + 使用 `Git tag` 标记稳定版本
+   + 提供一键回滚脚本
 
-+   每次更新自动验证配置正确性
-
-+   CI流水线中运行验证测试
-
-1.  Rollback Support（支持回滚）
-
-+   使用Git tag标记稳定版本
-
-+   提供一键回滚脚本
-
-### 1.3 一键安装脚本（install.sh）
+#### 1.3 一键安装脚本（`install.sh`）
 
 **完整安装脚本**：
 
-```
+
+
+# 团队Claude配置与开发规范指南
+
+## Part 1: 安装脚本
+
+```bash
 #!/bin/bash
 # install.sh - 团队Claude配置一键安装脚本
 # 作者: 老金
@@ -217,133 +201,131 @@ team-claude-config/
 set -e
 
 # ==================== 颜色定义 ====================
-RED=&#x27;\033[0;31m&#x27;
-GREEN=&#x27;\033[0;32m&#x27;
-YELLOW=&#x27;\033[1;33m&#x27;
-BLUE=&#x27;\033[0;34m&#x27;
-NC=&#x27;\033[0m&#x27; # No Color
+RED='\033[0;31m';
+GREEN='\033[0;32m';
+YELLOW='\033[1;33m';
+BLUE='\033[0;34m';
+NC='\033[0m'; # No Color
 
 # ==================== 日志函数 ====================
 log_info() {
-    echo -e &quot;${GREEN}[INFO]${NC} $1&quot;
+    echo -e "${GREEN}[INFO]${NC} $1";
 }
 
 log_warn() {
-    echo -e &quot;${YELLOW}[WARN]${NC} $1&quot;
+    echo -e "${YELLOW}[WARN]${NC} $1";
 }
 
 log_error() {
-    echo -e &quot;${RED}[ERROR]${NC} $1&quot;
+    echo -e "${RED}[ERROR]${NC} $1";
 }
 
 log_success() {
-    echo -e &quot;${BLUE}[SUCCESS]${NC} $1&quot;
+    echo -e "${BLUE}[SUCCESS]${NC} $1";
 }
 
 # ==================== 横幅 ====================
 show_banner() {
-    echo -e &quot;${BLUE}&quot;
-    echo &quot;================================================&quot;
-    echo &quot;  团队Claude配置一键安装脚本 v2.0&quot;
-    echo &quot;  作者: 老金&quot;
-    echo &quot;================================================&quot;
-    echo -e &quot;${NC}&quot;
+    echo -e "${BLUE}";
+    echo "==================================================";
+    echo "  团队Claude配置一键安装脚本 v2.0";
+    echo "  作者: 老金";
+    echo "==================================================";
+    echo -e "${NC}";
 }
 
 # ==================== 检测操作系统 ====================
 detect_os() {
-    if [[ &quot;$OSTYPE&quot; == &quot;linux-gnu&quot;* ]]; then
-        OS=&quot;linux&quot;
-        PLATFORM=&quot;Linux&quot;
-    elif [[ &quot;$OSTYPE&quot; == &quot;darwin&quot;* ]]; then
-        OS=&quot;macos&quot;
-        PLATFORM=&quot;macOS&quot;
-    elif [[ &quot;$OSTYPE&quot; == &quot;msys&quot; || &quot;$OSTYPE&quot; == &quot;cygwin&quot; ]]; then
-        OS=&quot;windows&quot;
-        PLATFORM=&quot;Windows (Git Bash)&quot;
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        OS="linux";
+        PLATFORM="Linux";
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        OS="macos";
+        PLATFORM="macOS";
+    elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+        OS="windows";
+        PLATFORM="Windows (Git Bash)";
     else
-        log_error &quot;不支持的操作系统: $OSTYPE&quot;
-        exit 1
+        log_error "不支持的操作系统: $OSTYPE";
+        exit 1;
     fi
-    log_info &quot;检测到操作系统: $PLATFORM&quot;
+    log_info "检测到操作系统: $PLATFORM";
 }
 
 # ==================== 检查依赖 ====================
 check_dependencies() {
-    log_info &quot;检查必要依赖...&quot;
+    log_info "检查必要依赖...";
 
     # 检查Git
-    if ! command -v git &amp;&gt; /dev/null; then
-        log_error &quot;未安装Git，请先安装Git&quot;
-        exit 1
+    if ! command -v git &> /dev/null; then
+        log_error "未安装Git，请先安装Git";
+        exit 1;
     fi
 
     # 检查Python（可选）
-    if command -v python3 &amp;&gt; /dev/null; then
-        log_info &quot;Python 3 已安装: $(python3 --version)&quot;
+    if command -v python3 &> /dev/null; then
+        log_info "Python 3 已安装: $(python3 --version)";
     else
-        log_warn &quot;未安装Python 3，部分功能可能不可用&quot;
+        log_warn "未安装Python 3，部分功能可能不可用";
     fi
 
     # 检查Node.js（可选）
-    if command -v node &amp;&gt; /dev/null; then
-        log_info &quot;Node.js 已安装: $(node --version)&quot;
+    if command -v node &> /dev/null; then
+        log_info "Node.js 已安装: $(node --version)";
     else
-        log_warn &quot;未安装Node.js，部分功能可能不可用&quot;
+        log_warn "未安装Node.js，部分功能可能不可用";
     fi
 }
 
 # ==================== 备份现有配置 ====================
 backup_existing_config() {
-    log_info &quot;备份现有配置...&quot;
+    log_info "备份现有配置...";
 
-    BACKUP_DIR=&quot;$HOME/.claude-config-backup-$(date +%Y%m%d-%H%M%S)&quot;
-    mkdir -p &quot;$BACKUP_DIR&quot;
+    BACKUP_DIR="$HOME/.claude-config-backup-$(date +%Y%m%d-%H%M%S)";
+    mkdir -p "$BACKUP_DIR";
 
-    if [[ &quot;$OS&quot; == &quot;linux&quot; ]]; then
-        VSCODE_DIR=&quot;$HOME/.config/Code/User&quot;
-        CURSOR_DIR=&quot;$HOME/.config/Cursor/User&quot;
-    elif [[ &quot;$OS&quot; == &quot;macos&quot; ]]; then
-        VSCODE_DIR=&quot;$HOME/Library/Application Support/Code/User&quot;
-        CURSOR_DIR=&quot;$HOME/Library/Application Support/Cursor/User&quot;
-    elif [[ &quot;$OS&quot; == &quot;windows&quot; ]]; then
-        VSCODE_DIR=&quot;$APPDATA/Code/User&quot;
-        CURSOR_DIR=&quot;$APPDATA/Cursor/User&quot;
+    if [[ "$OS" == "linux" ]]; then
+        VSCODE_DIR="$HOME/.config/Code/User";
+        CURSOR_DIR="$HOME/.config/Cursor/User";
+    elif [[ "$OS" == "macos" ]]; then
+        VSCODE_DIR="$HOME/Library/Application Support/Code/User";
+        CURSOR_DIR="$HOME/Library/Application Support/Cursor/User";
+    elif [[ "$OS" == "windows" ]]; then
+        VSCODE_DIR="$APPDATA/Code/User";
+        CURSOR_DIR="$APPDATA/Cursor/User";
     fi
 
     # 备份VS Code配置
-    if [[ -d &quot;$VSCODE_DIR&quot; ]]; then
-        cp -r &quot;$VSCODE_DIR&quot; &quot;$BACKUP_DIR/vscode-user&quot;
-        log_info &quot;VS Code配置已备份到: $BACKUP_DIR/vscode-user&quot;
+    if [[ -d "$VSCODE_DIR" ]]; then
+        cp -r "$VSCODE_DIR" "$BACKUP_DIR/vscode-user";
+        log_info "VS Code配置已备份到: $BACKUP_DIR/vscode-user";
     fi
 
     # 备份Cursor配置
-    if [[ -d &quot;$CURSOR_DIR&quot; ]]; then
-        cp -r &quot;$CURSOR_DIR&quot; &quot;$BACKUP_DIR/cursor-user&quot;
-        log_info &quot;Cursor配置已备份到: $BACKUP_DIR/cursor-user&quot;
+    if [[ -d "$CURSOR_DIR" ]]; then
+        cp -r "$CURSODE_DIR" "$BACKUP_DIR/cursor-user";
+        log_info "Cursor配置已备份到: $BACKUP_DIR/cursor-user";
     fi
 
-    log_success &quot;备份完成: $BACKUP_DIR&quot;
+    log_success "备份完成: $BACKUP_DIR";
 }
 
 # ==================== 主函数 ====================
 main() {
-    show_banner
-    detect_os
-    check_dependencies
-    backup_existing_config
+    show_banner;
+    detect_os;
+    check_dependencies;
+    backup_existing_config;
 
     # ... 后续安装步骤
 
-    log_success &quot;安装完成！&quot;
+    log_success "安装完成！";
 }
 
 main
 ```
 
-> 💡 提**示：**完整脚本请参考源文件，这里展示核心结构。
-
----
+> 💡 提示：完整脚本请参考源文件，这里展示核心结构。
 
 ## Part 2: Git Hooks集成
 
@@ -353,9 +335,9 @@ main
 
 | 问题 | 后果 | Git Hook解决方案 |
 | --- | --- | --- |
-| 代码未格式化就提交 | PR冲突，难以review | pre-commit hook自动格式化 |
-| 提交信息混乱 | Git历史难以追踪 | commit-msg hook规范化 |
-| 未运行测试就push | 破坏主分支 | pre-push hook强制测试 |
+| 代码未格式化就提交 | PR冲突，难以review | `pre-commit hook`自动格式化 |
+| 提交信息混乱 | Git历史难以追踪 | `commit-msg hook`规范化 |
+| 未运行测试就push | 破坏主分支 | `pre-push hook`强制测试 |
 | 代码有明显bug | 浪费reviewer时间 | Claude自动代码审查 |
 | 文档未更新 | 文档与代码不一致 | Claude自动生成文档 |
 
@@ -365,15 +347,13 @@ Git Hooks是保障团队代码质量的关键工具。
 
 **特性说明**：
 
-+   Claude Code的Hooks在 settings.json 中配置（用户级 ~/.claude/settings.json 或项目级 .claude/settings.json）
-
-+   Git hooks（pre-commit等）是独立的脚本，放在 .git/hooks/ 目录
-
++   Claude Code的Hooks在 `settings.json` 中配置（用户级 `~/.claude/settings.json` 或项目级 `.claude/settings.json`）
++   Git hooks（`pre-commit`等）是独立的脚本，放在 `.git/hooks/` 目录
 +   两者可以配合使用：Git hooks调用Claude API进行自动审查
 
-核心pre-commit脚本结构：
+核心`pre-commit`脚本结构：
 
-```
+```bash
 #!/bin/bash
 # .git/hooks/pre-commit - 提交前检查脚本
 # 集成Claude Code进行自动代码审查
@@ -381,69 +361,69 @@ Git Hooks是保障团队代码质量的关键工具。
 set -e
 
 # ==================== 配置 ====================
-CLAUDE_API_KEY=&quot;${ANTHROPIC_API_KEY}&quot;
-CLAUDE_MODEL=&quot;claude-sonnet-4-6&quot;
+CLAUDE_API_KEY="${ANTHROPIC_API_KEY}";
+CLAUDE_MODEL="claude-sonnet-4-6";
 
 # ==================== Python代码格式化 ====================
 format_python() {
-    log_info &quot;格式化Python代码...&quot;
-    PYTHON_FILES=$(get_staged_files | grep &#x27;\.py$&#x27; || true)
+    log_info "格式化Python代码...";
+    PYTHON_FILES=$(get_staged_files | grep '\.py$' || true);
 
-    if [[ -z &quot;$PYTHON_FILES&quot; ]]; then
-        log_info &quot;没有Python文件需要格式化&quot;
+    if [[ -z "$PYTHON_FILES" ]]; then
+        log_info "没有Python文件需要格式化";
         return 0
     fi
 
     # 使用Black格式化
-    if command -v black &amp;&gt; /dev/null; then
-        echo &quot;$PYTHON_FILES&quot; | xargs black --quiet
-        log_info &quot;Black格式化完成&quot;
+    if command -v black &> /dev/null; then
+        echo "$PYTHON_FILES" | xargs black --quiet;
+        log_info "Black格式化完成";
     fi
 
     # 使用Ruff检查
-    if command -v ruff &amp;&gt; /dev/null; then
-        if ! echo &quot;$PYTHON_FILES&quot; | xargs ruff check; then
-            log_error &quot;Ruff检查失败，请修复错误后再提交&quot;
+    if command -v ruff &> /dev/null; then
+        if ! echo "$PYTHON_FILES" | xargs ruff check; then
+            log_error "Ruff检查失败，请修复错误后再提交";
             exit 1
         fi
     fi
 
     # 重新添加格式化后的文件
-    echo &quot;$PYTHON_FILES&quot; | xargs git add
+    echo "$PYTHON_FILES" | xargs git add
 }
 
 # ==================== Claude Code代码审查 ====================
 claude_code_review() {
-    log_info &quot;运行Claude Code审查...&quot;
+    log_info "运行Claude Code审查...";
 
-    STAGED_FILES=$(get_staged_files)
-    if [[ -z &quot;$STAGED_FILES&quot; ]]; then
+    STAGED_FILES=$(get_staged_files);
+    if [[ -z "$STAGED_FILES" ]]; then
         return 0
     fi
 
     # 生成diff
-    DIFF=$(git diff --cached)
+    DIFF=$(git diff --cached);
 
     # 调用Claude API进行代码审查
-    REVIEW_PROMPT=&quot;你是一个严格的代码审查专家。请审查以下代码变更...&quot;
+    REVIEW_PROMPT="你是一个严格的代码审查专家。请审查以下代码变更...";
 
     # ... API调用逻辑
 
     # 检查是否有严重问题
-    if echo &quot;$REVIEW_RESULT&quot; | grep -q &quot;【严重】&quot;; then
-        log_error &quot;发现严重问题，提交被拒绝&quot;
+    if echo "$REVIEW_RESULT" | grep -q "【严重】"; then
+        log_error "发现严重问题，提交被拒绝";
         exit 1
     fi
 
-    log_info &quot;代码审查通过&quot;
+    log_info "代码审查通过";
 }
 
 # ==================== 主函数 ====================
 main() {
-    log_info &quot;开始pre-commit检查...&quot;
+    log_info "开始pre-commit检查...";
     format_python
     claude_code_review
-    log_info &quot;所有检查通过，允许提交&quot;
+    log_info "所有检查通过，允许提交";
 }
 
 main
@@ -453,18 +433,18 @@ main
 
 使用Claude自动生成规范commit message：
 
-```
+```bash
 #!/bin/bash
 # .git/hooks/commit-msg - 提交信息规范化脚本
 
 # Conventional Commits规范检查
 check_conventional_commits() {
     # 允许的类型
-    TYPES=&quot;feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert&quot;
+    TYPES="feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert";
 
     # 检查格式：type(scope): description
-    if ! echo &quot;$COMMIT_MSG&quot; | grep -qE &quot;^($TYPES)(\(.+\))?: .+&quot;; then
-        log_warn &quot;提交信息不符合Conventional Commits规范&quot;
+    if ! echo "$COMMIT_MSG" | grep -qE "^($TYPES)(\(.+\))?: .+"; then
+        log_warn "提交信息不符合Conventional Commits规范";
         return 1
     fi
     return 0
@@ -472,9 +452,9 @@ check_conventional_commits() {
 
 # 使用Claude自动生成commit message
 generate_commit_msg() {
-    DIFF=$(git diff --cached)
+    DIFF=$(git diff --cached);
 
-    PROMPT=&quot;根据以下代码diff，生成一条符合Conventional Commits规范的提交信息...&quot;
+    PROMPT="根据以下代码diff，生成一条符合Conventional Commits规范的提交信息...";
 
     # 调用Claude API生成
     # ...
@@ -522,12 +502,14 @@ team-knowledge-base/
 
 ### 3.2 团队编码标准Skill
 
-**SKILL.md配置**：
+**`SKILL.md`配置**：
 
-> Skills 使用 SKILL.md 文件定义（Markdown + YAML frontmatter），不是独立的 YAML 文件。
+> Skills 使用 `SKILL.md` 文件定义（Markdown + YAML frontmatter），不是独立的 YAML 文件。
 
-```
-&lt;!-- .claude/skills/team-standards/SKILL.md --&gt;
+
+
+```yaml
+<!-- .claude/skills/team-standards/SKILL.md -->
 ---
 name: team-standards
 description: 团队编码标准和最佳实践
@@ -538,7 +520,7 @@ description: 团队编码标准和最佳实践
 ## Python代码规范
 - 使用Black格式化，行宽88字符
 - 使用Ruff进行lint检查
-- 类型注解覆盖率 &gt; 80%
+- 类型注解覆盖率 > 80%
 - 遵循Google Python Style Guide
 
 ## JavaScript/TypeScript规范
@@ -554,11 +536,11 @@ description: 团队编码标准和最佳实践
 
 ---
 
-## Part 4: CI/CD深度集成
+# Part 4: CI/CD深度集成
 
-### 4.1 GitHub Actions集成
+## 4.1 GitHub Actions集成
 
-**完整的CI workflow**：
+完整的CI workflow：
 
 ```
 # .github/workflows/claude-ci.yml
@@ -588,26 +570,26 @@ jobs:
         uses: tj-actions/changed-files@v39
 
       - name: Claude代码审查
-        if: steps.changed-files.outputs.any_changed == &#x27;true&#x27;
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           DIFF=$(git diff origin/${{ github.base_ref }}...HEAD)
 
           # 调用Claude API进行审查
           REVIEW=$(curl -s https://api.anthropic.com/v1/messages \
-            -H &quot;x-api-key: $ANTHROPIC_API_KEY&quot; \
-            -H &quot;anthropic-version: 2023-06-01&quot; \
-            -H &quot;content-type: application/json&quot; \
-            -d &quot;{
-              \&quot;model\&quot;: \&quot;claude-sonnet-4-6\&quot;,
-              \&quot;max_tokens\&quot;: 4096,
-              \&quot;messages\&quot;: [{
-                \&quot;role\&quot;: \&quot;user\&quot;,
-                \&quot;content\&quot;: \&quot;请审查以下PR的代码变更...\&quot;
+            -H "x-api-key: $ANTHROPIC_API_KEY" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "content-type: application/json" \
+            -d "{
+              \"model\": \"claude-sonnet-4-6\",
+              \"max_tokens\": 4096,
+              \"messages\": [{
+                \"role\": \"user\",
+                \"content\": \"请审查以下PR的代码变更...\"
               }]
-            }&quot; | jq -r &#x27;.content[0].text&#x27;)
+            }" | jq -r '.content[0].text')
 
-          echo &quot;## Claude代码审查结果&quot; &gt;&gt; $GITHUB_STEP_SUMMARY
-          echo &quot;$REVIEW&quot; &gt;&gt; $GITHUB_STEP_SUMMARY
+          echo "## Claude代码审查结果" >> $GITHUB_STEP_SUMMARY
+          echo "$REVIEW" >> $GITHUB_STEP_SUMMARY
 
   quality-check:
     name: 代码质量检查
@@ -616,7 +598,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: &#x27;3.11&#x27;
+          python-version: '3.11'
       - run: pip install black ruff pytest pytest-cov
       - run: black --check .
       - run: ruff check .
@@ -625,24 +607,24 @@ jobs:
 
 ---
 
-## Part 5: 团队监控与度量
+# Part 5: 团队监控与度量
 
-### 5.1 Claude使用情况监控
+## 5.1 Claude使用情况监控
 
-**监控脚本核心逻辑**：
+监控脚本核心逻辑：
 
 ```
 #!/usr/bin/env python3
-&quot;&quot;&quot;
+"""
 Claude使用情况监控脚本
 跟踪团队成员的Claude API调用和成本
-&quot;&quot;&quot;
+"""
 
 import sqlite3
 from datetime import datetime, timedelta
 
 def log_api_call(user, model, prompt_tokens, completion_tokens, purpose=None, success=True):
-    &quot;&quot;&quot;记录一次API调用&quot;&quot;&quot;
+    """记录一次API调用"""
     total_tokens = prompt_tokens + completion_tokens
     # 计算成本（Sonnet 4.6定价）
     cost = (prompt_tokens * 0.003 + completion_tokens * 0.015) / 1000
@@ -651,24 +633,24 @@ def log_api_call(user, model, prompt_tokens, completion_tokens, purpose=None, su
     # ...
 
 def generate_usage_report(days=7):
-    &quot;&quot;&quot;生成使用情况报告&quot;&quot;&quot;
+    """生成使用情况报告"""
     # 总体统计、按用户统计、按目的统计
     # ...
     return {
-        &quot;period_days&quot;: days,
-        &quot;overall&quot;: {...},
-        &quot;by_user&quot;: [...],
-        &quot;success_rate&quot;: 98.5
+        "period_days": days,
+        "overall": {...},
+        "by_user": [...],
+        "success_rate": 98.5
     }
 ```
 
 ---
 
-## Part 6: 跨团队协作案例
+# Part 6: 跨团队协作案例
 
-### 6.1 多团队共享配置
+## 6.1 多团队共享配置
 
-**团队配置继承结构**：
+团队配置继承结构：
 
 ```
 company-claude-config/           # 公司级配置（基础，作为 Git 子模块共享）
@@ -697,84 +679,76 @@ team-b-project/                  # 团队B项目（引用公司基础配置）
         └── team-b-patterns/     # 团队B特定模式
 ```
 
-**配置共享方式**：
+配置共享方式：
 
-+   公司基础配置放在共享仓库中，作为 Git 子模块引入各团队项目
+- 公司基础配置放在共享仓库中，作为 Git 子模块引入各团队项目
+- 各团队在项目根目录的 `.claude/settings.json` 中定义团队级设置（自动生效）
+- 用户级配置在 `~/.claude/settings.json`，项目级配置自动覆盖用户级
 
-+   各团队在项目根目录的 .claude/settings.json 中定义团队级设置（自动生效）
+## 6.2 `modelOverrides`：自定义模型端点映射
 
-+   用户级配置在 ~/.claude/settings.json，项目级配置自动覆盖用户级
-
-### 6.2 modelOverrides：自定义模型端点映射
-
-企业环境中，通常需要将Claude模型请求转发到自有的云端点（如Amazon Bedrock、Azure OpenAI），而非直接调用Anthropic API。modelOverrides配置可实现模型ID到实际端点的映射：
+企业环境中，通常需要将Claude模型请求转发到自有的云端点（如Amazon Bedrock、Azure OpenAI），而非直接调用Anthropic API。`modelOverrides`配置可实现模型ID到实际端点的映射：
 
 ```
 // settings.json（用户级或项目级均可）
 {
-  &quot;modelOverrides&quot;: {
-    &quot;claude-sonnet-4-6&quot;: &quot;arn:aws:bedrock:us-east-1:123456:model/claude-sonnet&quot;,
-    &quot;claude-opus-4-6&quot;: &quot;your-azure-deployment-name&quot;
+  "modelOverrides": {
+    "claude-sonnet-4-6": "arn:aws:bedrock:us-east-1:123456:model/claude-sonnet",
+    "claude-opus-4-6": "your-azure-deployment-name"
   }
 }
 ```
 
-**工作原理**：
+工作原理：
 
-+   设置后，Claude Code内部仍使用标准模型名称（如claude-sonnet-4-6）
+- 设置后，Claude Code内部仍使用标准模型名称（如`claude-sonnet-4-6`）
+- 实际API请求会自动转发到`modelOverrides`中映射的自定义端点
+- 团队成员无需关心底层端点细节，统一使用标准模型名即可
 
-+   实际API请求会自动转发到modelOverrides中映射的自定义端点
+适用场景：
 
-+   团队成员无需关心底层端点细节，统一使用标准模型名即可
+- 企业通过Amazon Bedrock部署的Claude模型（使用ARN标识）
+- 通过Azure OpenAI Service访问的Claude部署
+- 内部API网关代理的自定义模型端点
 
-**适用场景**：
+> 提示：建议在公司级`settings.json`中统一配置`modelOverrides`，确保所有团队成员使用相同的企业端点。
 
-+   企业通过Amazon Bedrock部署的Claude模型（使用ARN标识）
+## 6.3 Worktree系统：大型Monorepo并行开发
 
-+   通过Azure OpenAI Service访问的Claude部署
+企业级大型monorepo（几十GB级别）中，每个开发者通常只需操作其中一部分代码。Claude Code的`Worktree`系统通过`Git worktree` + `sparse checkout`实现轻量化隔离环境：
 
-+   内部API网关代理的自定义模型端点
-
-> **提示**：建议在公司级settings.json中统一配置modelOverrides，确保所有团队成员使用相同的企业端点。
-
-### 6.3 Worktree系统：大型Monorepo并行开发
-
-企业级大型monorepo（几十GB级别）中，每个开发者通常只需操作其中一部分代码。Claude Code的Worktree系统通过Git worktree + sparse checkout实现轻量化隔离环境：
-
-**启动方式**：
+启动方式：
 
 ```
 # 使用 --worktree 标志启动，自动创建Git worktree隔离环境
 claude --worktree
 ```
 
-Sparse Checkout配置：
+`Sparse Checkout`配置：
 
-通过worktree.sparsePaths指定只检出monorepo中的特定路径，避免克隆整个仓库：
+通过`worktree.sparsePaths`指定只检出monorepo中的特定路径，避免克隆整个仓库：
 
 ```
 // .claude/settings.json
 {
-  &quot;worktree&quot;: {
-    &quot;sparsePaths&quot;: [
-      &quot;packages/frontend/**&quot;,
-      &quot;packages/shared/**&quot;,
-      &quot;package.json&quot;,
-      &quot;tsconfig.json&quot;
+  "worktree": {
+    "sparsePaths": [
+      "packages/frontend/**",
+      "packages/shared/**",
+      "package.json",
+      "tsconfig.json"
     ]
   }
 }
 ```
 
-**企业实践建议**：
+企业实践建议：
 
-+   **按模块划分**：每个团队只检出自己负责的packages/*子目录和共享依赖
+- 按模块划分：每个团队只检出自己负责的`packages/*`子目录和共享依赖
+- 配合Agent Teams：多个Agent分别在不同`worktree`中并行开发不同模块，互不干扰
+- CI/CD集成：在CI环境中使用`sparse checkout`加速构建，只拉取变更涉及的模块
 
-+   **配合Agent Teams**：多个Agent分别在不同worktree中并行开发不同模块，互不干扰
-
-+   **CI/CD集成**：在CI环境中使用sparse checkout加速构建，只拉取变更涉及的模块
-
-> **注意**：Worktree环境是临时的，退出Claude Code后可选择保留或清理。适合短期任务和并行开发场景。
+> 注意：`Worktree`环境是临时的，退出Claude Code后可选择保留或清理。适合短期任务和并行开发场景。
 
 ---
 
@@ -782,21 +756,16 @@ Sparse Checkout配置：
 
 ## 🎯 本部分学习目标
 
-安全问题是企业的生命线！API Key泄露到GitHub后被恶意刷量$10,000+的案例屡见不鲜。
+安全问题是企业的生命线！`API Key`泄露到GitHub后被恶意刷量$10,000+的案例屡见不鲜。
 
 完成本部分后，你将能够：
 
-1.  ✅ 建立 **企业级API Key管理体系**，防止密钥泄露和滥用
-
-1.  ✅ 实现 **敏感数据全链路保护**，从代码到日志到数据库
-
-1.  ✅ 满足 GDPR/HIPAA/SOC2等合规要求，通过企业审计
-
-1.  ✅ 部署 **自动化安全扫描系统**，持续检测代码和配置漏洞
-
-1.  ✅ 制定 **API泄露应急响应流程**，最小化安全事故影响
-
-1.  ✅ 执行 **20条企业安全最佳实践**，建立纵深防御体系
+1. ✅ 建立 `API Key`管理体系，防止密钥泄露和滥用
+2. ✅ 实现敏感数据全链路保护，从代码到日志到数据库
+3. ✅ 满足 GDPR/HIPAA/SOC2等合规要求，通过企业审计
+4. ✅ 部署自动化安全扫描系统，持续检测代码和配置漏洞
+5. ✅ 制定 `API`泄露应急响应流程，最小化安全事故影响
+6. ✅ 执行 20条企业安全最佳实践，建立纵深防御体系
 
 ---
 
@@ -804,15 +773,15 @@ Sparse Checkout配置：
 
 ### 1.1 API Key泄露的灾难后果
 
-**真实安全事故案例**：
+真实安全事故案例：
 
 | 事故 | 后果 | 损失 |
 | --- | --- | --- |
-| API Key提交到GitHub | 被扫描器发现，立刻被盗刷 | **$15,000** |
-| 硬编码在前端代码 | 暴露给所有用户 | **无限额度滥用** |
-| 明文存储在配置文件 | 服务器被入侵后泄露 | **$8,000** |
-| 共享给离职员工 | 前员工恶意使用 | **法律诉讼** |
-| 未设置使用限制 | 被DDoS攻击刷量 | **$25,000** |
+| `API Key`提交到GitHub | 被扫描器发现，立刻被盗刷 | $15,000 |
+| 硬编码在前端代码 | 暴露给所有用户 | 无限额度滥用 |
+| 明文存储在配置文件 | 服务器被入侵后泄露 | $8,000 |
+| 共享给离职员工 | 前员工恶意使用 | 法律诉讼 |
+| 未设置使用限制 | 被DDoS攻击刷量 | $25,000 |
 
 这些都是真实发生的安全事故，每一个都可能让公司蒙受重大损失！
 
@@ -844,52 +813,54 @@ Development Keys (开发环境)
 
 #### 1.2.2 密钥存储方案
 
-**❌ 绝对禁止的做法**：
+❌ 绝对禁止的做法：
 
 ```
 # ❌ 硬编码（找死）
-ANTHROPIC_API_KEY = &quot;sk-ant-api03-XXXXXXXX&quot;
+ANTHROPIC_API_KEY = "sk-ant-api03-XXXXXXXX"
 
 # ❌ 提交到Git（自杀）
 # .env文件未加入.gitignore
 
 # ❌ 明文配置文件（送死）
-api_key: &quot;sk-ant-api03-XXXXXXXX&quot;
+api_key: "sk-ant-api03-XXXXXXXX"
 
 # ❌ 前端代码（群体自杀）
-const API_KEY = &quot;sk-ant-api03-XXXXXXXX&quot;;
+const API_KEY = "sk-ant-api03-XXXXXXXX";
 ```
 
-**✅ 正确的企业级做法**：
+✅ 正确的企业级做法：
 
 ```
 # ✅ 方案1：环境变量 + Secrets Manager
 import boto3
 
-def get_api_key() -&gt; str:
-    &quot;&quot;&quot;从AWS Secrets Manager获取API Key&quot;&quot;&quot;
-    client = boto3.client(&#x27;secretsmanager&#x27;, region_name=&#x27;us-east-1&#x27;)
-    response = client.get_secret_value(SecretId=&#x27;prod/anthropic/api-key&#x27;)
-    return response[&#x27;SecretString&#x27;]
+def get_api_key() -> str:
+    """从AWS Secrets Manager获取API Key"""
+    client = boto3.client('secretsmanager', region_name='us-east-1')
+    response = client.get_secret_value(SecretId='prod/anthropic/api-key')
+    return response['SecretString']
 
 # ✅ 方案2：HashiCorp Vault
 import hvac
 
-def get_api_key_from_vault() -&gt; str:
-    &quot;&quot;&quot;从Vault获取API Key&quot;&quot;&quot;
-    client = hvac.Client(url=&#x27;https://vault.example.com:8200&#x27;)
+def get_api_key_from_vault() -> str:
+    """从Vault获取API Key"""
+    client = hvac.Client(url='https://vault.example.com:8200')
     client.auth.approle.login(
-        role_id=os.getenv(&quot;VAULT_ROLE_ID&quot;),
-        secret_id=os.getenv(&quot;VAULT_SECRET_ID&quot;)
+        role_id=os.getenv("VAULT_ROLE_ID"),
+        secret_id=os.getenv("VAULT_SECRET_ID")
     )
     secret = client.secrets.kv.v2.read_secret_version(
-        path=&#x27;anthropic/api-key&#x27;,
-        mount_point=&#x27;secret&#x27;
+        path='anthropic/api-key',
+        mount_point='secret'
     )
-    return secret[&#x27;data&#x27;][&#x27;data&#x27;][&#x27;key&#x27;]
+    return secret['data']['data']['key']
 ```
 
-**三大方案对比**：
+三大方案对比：
+
+
 
 | 方案 | 优点 | 缺点 | 适用场景 |
 | --- | --- | --- | --- |
@@ -918,8 +889,6 @@ def get_api_key_from_vault() -&gt; str:
 失败 → 回滚到旧密钥 → 告警通知
 ```
 
----
-
 ## Part 2: 敏感数据保护
 
 ### 2.1 Git Secrets扫描
@@ -928,13 +897,13 @@ def get_api_key_from_vault() -&gt; str:
 
 ```
 declare -A PATTERNS=(
-    [&quot;anthropic_api_key&quot;]=&quot;sk-ant-api[0-9]{2}-[a-zA-Z0-9_-]{95,}&quot;
-    [&quot;aws_access_key&quot;]=&quot;AKIA[0-9A-Z]{16}&quot;
-    [&quot;aws_secret_key&quot;]=&quot;[0-9a-zA-Z/+=]{40}&quot;
-    [&quot;openai_api_key&quot;]=&quot;sk-[a-zA-Z0-9]{48}&quot;
-    [&quot;github_token&quot;]=&quot;ghp_[a-zA-Z0-9]{36}&quot;
-    [&quot;private_key&quot;]=&quot;-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----&quot;
-    [&quot;password&quot;]=&quot;password\\s*[=:]\\s*[&#x27;\&quot;][^&#x27;\&quot;]{8,}[&#x27;\&quot;]&quot;
+    ["anthropic_api_key"]="sk-ant-api[0-9]{2}-[a-zA-Z0-9_-]{95,}"
+    ["aws_access_key"]="AKIA[0-9A-Z]{16}"
+    ["aws_secret_key"]="[0-9a-zA-Z/+=]{40}"
+    ["openai_api_key"]="sk-[a-zA-Z0-9]{48}"
+    ["github_token"]="ghp_[a-zA-Z0-9]{36}"
+    ["private_key"]="-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----"
+    ["password"]="password\\s*[=:]\\s*['\"][^'\"]{8,}['\"]"
 )
 ```
 
@@ -943,21 +912,18 @@ declare -A PATTERNS=(
 **自动脱敏策略**：
 
 ```
-
 class SensitiveDataFilter(logging.Filter):
-    &quot;&quot;&quot;日志脱敏过滤器&quot;&quot;&quot;
+    """日志脱敏过滤器"""
 
     @staticmethod
-    def mask_sensitive_data(text: str) -&gt; str:
-        &quot;&quot;&quot;脱敏文本中的敏感信息&quot;&quot;&quot;
+    def mask_sensitive_data(text: str) -> str:
+        """脱敏文本中的敏感信息"""
         # API Key: sk-ant-api03-*** → sk-ant-api03-*****
         # Email: j***n@example.com
         # Phone: 123-***-7890
         # Credit Card: **** **** **** 3456
         # ...
 ```
-
----
 
 ## Part 3: 企业合规要求
 
@@ -978,17 +944,11 @@ class SensitiveDataFilter(logging.Filter):
 
 **SOC 2五大信任原则**：
 
-1.  **安全性（Security）**：防止未授权访问
-
-1.  可用性（Availability）：系统正常运行
-
-1.  处理完整性（Processing Integrity）：数据处理正确
-
-1.  机密性（Confidentiality）：敏感信息保密
-
-1.  **隐私性（Privacy）**：个人信息保护
-
----
+1. 安全性（Security）：防止未授权访问
+1. 可用性（Availability）：系统正常运行
+1. 处理完整性（Processing Integrity）：数据处理正确
+1. 机密性（Confidentiality）：敏感信息保密
+1. 隐私性（Privacy）：个人信息保护
 
 ## Part 4: 安全审计工具
 
@@ -996,21 +956,13 @@ class SensitiveDataFilter(logging.Filter):
 
 **扫描内容**：
 
-1.  **Git Secrets扫描** - 检测泄露的密钥
-
-1.  **依赖漏洞扫描** - Safety/npm audit
-
-1.  **代码安全扫描** - Bandit/ESLint
-
-1.  **容器镜像扫描** - Trivy
-
-1.  **配置文件安全检查** - .env权限
-
-1.  **网络安全扫描** - nmap
-
-1.  **SSL/TLS检查** - testssl
-
----
+1. **Git Secrets扫描** - 检测泄露的密钥
+1. **依赖漏洞扫描** - Safety/`npm audit`
+1. **代码安全扫描** - Bandit/ESLint
+1. **容器镜像扫描** - Trivy
+1. **配置文件安全检查** - `.env`权限
+1. **网络安全扫描** - `nmap`
+1. **SSL/TLS检查** - `testssl`
 
 ## Part 5: 事故响应流程
 
@@ -1047,8 +999,6 @@ API Key泄露检测
 └── 15. 预防类似事故
 ```
 
----
-
 ## Part 6: 安全最佳实践清单
 
 ### 6.1 企业级安全检查清单
@@ -1057,28 +1007,26 @@ API Key泄露检测
 
 | # | 规则 | 检查方法 | 优先级 |
 | --- | --- | --- | --- |
-| 1 | API Key永远不硬编码 | Git Secrets扫描 | **P0** |
-| 2 | 使用环境变量或Secrets Manager | 代码审查 | **P0** |
-| 3 | 每90天轮换一次密钥 | 自动化脚本 | **P0** |
-| 4 | 限制API速率 | 配置检查 | **P0** |
-| 5 | 记录所有API访问 | 审计日志 | **P0** |
-| 6 | 异常访问立即告警 | 监控系统 | **P0** |
-| 7 | 敏感数据必须加密 | 数据审计 | **P1** |
-| 8 | 日志自动脱敏 | 日志检查 | **P1** |
-| 9 | 定期安全扫描 | CI/CD集成 | **P1** |
-| 10 | 依赖漏洞检查 | Safety/npm audit | **P1** |
-| 11 | 最小权限原则 | 权限审计 | **P1** |
-| 12 | 多因素认证（2FA） | 用户账户检查 | **P1** |
-| 13 | 网络隔离 | 网络配置 | **P2** |
-| 14 | SSL/TLS加密 | SSL检查 | **P2** |
-| 15 | 防火墙配置 | 网络安全 | **P2** |
-| 16 | 备份与恢复 | 备份测试 | **P2** |
-| 17 | 安全培训 | 团队培训记录 | **P2** |
-| 18 | 事故响应预案 | 演练测试 | **P2** |
-| 19 | 合规性审计 | 定期审计 | **P3** |
-| 20 | 安全文档更新 | 文档检查 | **P3** |
-
----
+| 1 | API Key永远不硬编码 | Git Secrets扫描 | P0 |
+| 2 | 使用环境变量或Secrets Manager | 代码审查 | P0 |
+| 3 | 每90天轮换一次密钥 | 自动化脚本 | P0 |
+| 4 | 限制API速率 | 配置检查 | P0 |
+| 5 | 记录所有API访问 | 审计日志 | P0 |
+| 6 | 异常访问立即告警 | 监控系统 | P0 |
+| 7 | 敏感数据必须加密 | 数据审计 | P1 |
+| 8 | 日志自动脱敏 | 日志检查 | P1 |
+| 9 | 定期安全扫描 | CI/CD集成 | P1 |
+| 10 | 依赖漏洞检查 | Safety/`npm audit` | P1 |
+| 11 | 最小权限原则 | 权限审计 | P1 |
+| 12 | 多因素认证（2FA） | 用户账户检查 | P1 |
+| 13 | 网络隔离 | 网络配置 | P2 |
+| 14 | SSL/TLS加密 | SSL检查 | P2 |
+| 15 | 防火墙配置 | 网络安全 | P2 |
+| 16 | 备份与恢复 | 备份测试 | P2 |
+| 17 | 安全培训 | 团队培训记录 | P2 |
+| 18 | 事故响应预案 | 演练测试 | P2 |
+| 19 | 合规性审计 | 定期审计 | P3 |
+| 20 | 安全文档更新 | 文档检查 | P3 |
 
 ## 📚 课程总结
 
@@ -1088,31 +1036,21 @@ API Key泄露检测
 
 **第一部分：团队协作**
 
-1.  ✅ 团队配置统一化 - 一键安装脚本、自动更新、配置验证
-
-1.  ✅ Git Hooks深度集成 - pre-commit/commit-msg/pre-push + Claude自动审查
-
-1.  ✅ 团队知识库建设 - Skills系统、ADR、Memory系统
-
-1.  ✅ CI/CD流水线集成 - GitHub Actions/GitLab CI/Jenkins完整配置
-
-1.  ✅ 监控与度量体系 - Claude使用情况、代码质量度量
-
-1.  ✅ 跨团队协作模式 - 配置继承、跨团队审查
+1. ✅ 团队配置统一化 - 一键安装脚本、自动更新、配置验证
+1. ✅ Git Hooks深度集成 - `pre-commit`/`commit-msg`/`pre-push` + Claude自动审查
+1. ✅ 团队知识库建设 - Skills系统、ADR、Memory系统
+1. ✅ CI/CD流水线集成 - GitHub Actions/GitLab CI/Jenkins完整配置
+1. ✅ 监控与度量体系 - Claude使用情况、代码质量度量
+1. ✅ 跨团队协作模式 - 配置继承、跨团队审查
 
 **第二部分：安全合规**
 
-1.  ✅ API Key安全管理 - 分级管理、Secrets Manager、自动轮换、访问审计
-
-1.  ✅ 敏感数据保护 - Git Secrets扫描、日志脱敏、数据加密
-
-1.  ✅ 企业合规要求 - GDPR、HIPAA、SOC 2审计日志
-
-1.  ✅ 安全审计工具 - 综合扫描脚本、依赖漏洞、容器安全
-
-1.  ✅ 事故响应流程 - API泄露应急预案、自动化响应
-
-1.  ✅ 20条安全最佳实践 - 自动化检查脚本、每日合规报告
+1. ✅ API Key安全管理 - 分级管理、Secrets Manager、自动轮换、访问审计
+1. ✅ 敏感数据保护 - Git Secrets扫描、日志脱敏、数据加密
+1. ✅ 企业合规要求 - GDPR、HIPAA、SOC 2审计日志
+1. ✅ 安全审计工具 - 综合扫描脚本、依赖漏洞、容器安全
+1. ✅ 事故响应流程 - API泄露应急预案、自动化响应
+1. ✅ 20条安全最佳实践 - 自动化检查脚本、每日合规报告
 
 ### 最后建议
 
@@ -1120,13 +1058,9 @@ API Key泄露检测
 
 记住这三条铁律：
 
-1.  Never trust, always verify（零信任原则）
-
-1.  Defense in depth（纵深防御）
-
-1.  **Fail securely**（安全失败）
-
----
+1. Never trust, always verify（零信任原则）
+1. Defense in depth（纵深防御）
+1. Fail securely（安全失败）
 
 ## 🔗 相关链接
 
@@ -1136,14 +1070,12 @@ API Key泄露检测
 | Module 10: 综合实战 | 综合实战完整指南 |
 | 安全工具 | [OWASP Top 10](https://owasp.org/www-project-top-ten/) |
 
----
-
 ## 📝 版本历史
 
 | 版本 | 日期 | 更新内容 |
 | --- | --- | --- |
-| V1.2.0 | 2026-03-18 | 新增modelOverrides企业端点映射、Worktree大型Monorepo并行开发、更新适用版本至v2.1+ |
-| V1.1.0 | 2026-01-19 | 更新至Claude Code 2.1.12，新增语言配置、VS Code集成、Hooks frontmatter、winget安装等说明 |
+| V1.2.0 | 2026-03-18 | 新增`modelOverrides`企业端点映射、`Worktree`大型Monorepo并行开发、更新适用版本至`v2.1+` |
+| V1.1.0 | 2026-01-19 | 更新至Claude Code 2.1.12，新增语言配置、VS Code集成、`Hooks frontmatter`、`winget`安装等说明 |
 | V1.0.0 | 2025-12-24 | 初始版本，合并企业团队协作与安全合规两大模块 |
 
 ---

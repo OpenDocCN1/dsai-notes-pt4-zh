@@ -1,8 +1,9 @@
+
 # 20260227-谷歌发布 Nano Banana 2，更快+更准+更省！
 
 > 来源：[https://aigcreative.feishu.cn/docx/E6T7d0EbKoVIFkxguKqcMM1VnPb](https://aigcreative.feishu.cn/docx/E6T7d0EbKoVIFkxguKqcMM1VnPb)
 
-<https://aigcreative.feishu.cn/sync/IlxWdUcw7sOAkwbZYfwcSMGynXc>
+`https://aigcreative.feishu.cn/sync/IlxWdUcw7sOAkwbZYfwcSMGynXc`
 
 ![](img/04809ee7696ecaf30dadda11b005026b.png)
 
@@ -10,7 +11,7 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 传说中的 2 代，还能进化到什么程度？
 
-**刚刚，终于官宣了：Google D**eepMind 发布了 Nano Banana 2（Gemini 3.1 Flash Image）。
+刚刚，终于官宣了：Google DeepMind 发布了 Nano Banana 2（Gemini 3.1 Flash Image）。
 
 ![](img/9170a2f17c95a28c1a58e03da9867cbd.png)
 
@@ -22,7 +23,7 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 但这次的 2 代更新，我实测完后，直观感受是：Google 终于把“快”和“好”这两件事给捏到一起了，而且还更便宜了！
 
-**N**ano Banana 2 的价格大约是 Nano Banana Pro 的一半。用 Batch API 还能再降 50%。
+Nano Banana 2 的价格大约是 Nano Banana Pro 的一半。用 Batch API 还能再降 50%。
 
 对于需要大规模图像生成的产品来说，可以省下一大笔。
 
@@ -38,13 +39,13 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 ![](img/2b7aa7d6e74b1a8a3af718d81ad6cc7c.png)
 
-> 图来源X@**Chetaslua**
+> 图来源X@Chetaslua
 
 最关键的是，它现在已经集成在 Gemini App 里，对大部分用户来说，这意味着白嫖到一个生产力神器。
 
 先来看看3个较大的变化：
 
-# 0.1.比例：生图的比例
+## 0.1.比例：生图的比例
 
 ![](img/204c14f82ef778cf1efaa08b1cea1c79.png)
 
@@ -52,9 +53,9 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 ![](img/d920ee29a0d2f33b0cc375af9c94c14b.png)
 
-> 图片分辨率（最长）：704*5856px
+> 图片分辨率（最长）：`704*5856px`
 
-> 5856/704=8.33
+> `5856/704=8.33`
 
 > 也就是图片比例范围可达：1:8.33~8.33:1
 
@@ -72,13 +73,13 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 > 比例1:6的Nano Banana 2推文长图介绍。（这妥妥的生产力啊！！！）
 
-> 值得好好研究研究~~
+> 值得好好研究研究
 
 ![](img/96951e0176aafb68a26d92dd3bf6df20.png)
 
 ![](img/54d7dfd8b060f49f9a8bc6859bbf5310.png)
 
-# 0.2.系列&批量出图
+## 0.2.系列&批量出图
 
 > 画一系列10张图，展现孙悟空大闹天宫的故事
 
@@ -92,11 +93,11 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 ![](img/1d1e90a8bef7eaf9ab2143933d123fc0.png)
 
-这样进行创作，可就方便快速多了啊~~
+这样进行创作，可就方便快速多了啊
 
 再结合Seedance 2.0，生产力会爆棚！
 
-# 0.3.风格
+## 0.3.风格
 
 点击“创建图片”，长按+松开：
 
@@ -108,7 +109,7 @@ X（推特上）上Nano Banana 2 发布的“谣言”传了两天，Nano Banana
 
 下面正式进入正文：
 
-# 01.速度：闪电般速度下的智能和视觉质量
+## 01.速度：闪电般速度下的智能和视觉质量
 
 Nano Banana 2 将 Gemini Flash 的高速智能技术应用于视觉生成，实现了快速编辑和迭代。
 
@@ -126,17 +127,17 @@ Nano Banana 2 走的是“Flash”路线（Gemini 3.1 Flash 架构）。
 
 而且它支持 4096×4096 的原生分辨率，不需要再折腾什么放大算法，直接导出的图就能用作壁纸或者海报。
 
-# 02.文本：**精准的文本渲染和翻译**
+## 02.文本：精准的文本渲染和翻译
 
 以前 AI 画图最让人头疼的就是：画面很美，但画面里的文字全是乱码。
 
 ![](img/dd09a39af4021a218b99f49d2c5ad778.png)
 
-这**次 Nano Bana**na 2 显著加强了文本渲染能力。它能听懂你对招牌、包装、甚至信息图表上的文字要求。更贴心的是，它支持多语言翻译和本地化渲染。
+这次 Nano Banana 2 显著加强了文本渲染能力。它能听懂你对招牌、包装、甚至信息图表上的文字要求。更贴心的是，它支持多语言翻译和本地化渲染。
 
 这对于做营销物料、UI 原型或者简单的海报 Demo 来说，实用性提升了不止一个档次。
 
-我也跑了一些案例，文字渲染效果是真的不错~~
+我也跑了一些案例，文字渲染效果是真的不错
 
 > 为我生成讽刺海报：Nano Banana 2 狂卷，都别干图像AI了 还是送外卖吧
 
@@ -154,11 +155,11 @@ Nano Banana 2 走的是“Flash”路线（Gemini 3.1 Flash 架构）。
 
 ![](img/8aa3c801426fdd04da91b397b256ca2b.png)
 
-# 03.一致性：增强创作控制
+## 03.一致性：增强创作控制
 
 做过 AI 绘本或者短视频的朋友都知道，保持角色一致有多难。
 
-Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里**控制最多 5 个角色和 14 个特定对象的一致性。
+Nano Banana 2 这次在底层做了优化，支持在同一个工作流里控制最多 5 个角色和 14 个特定对象的一致性。
 
 ![](img/f84d7e289e4fc66664ea2c5042f2f273.png)
 
@@ -172,11 +173,11 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 ![](img/cee2fecbcca3817bca0fd227aca866f9.png)
 
-# 04.实时搜索：信息更精准
+## 04.实时搜索：信息更精准
 
 很多 AI 生图模型有个毛病，就是如果你提到一个真实存在的地标或产品，它可能会画错。
 
-**因为 Nano Ban**ana 2 接入了 Google 实时搜索，它在生成之前会先查资料。
+因为 Nano Banana 2 接入了 Google 实时搜索，它在生成之前会先查资料。
 
 ![](img/7d4f8967794bb297a6187b92f01b01e2.png)
 
@@ -184,11 +185,11 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 你想画巴黎圣母院的某个特定角度，或者某个新出的科技产品，它会参考真实的图像数据。这种对现实世界的理解力，是很多纯离线模型比不了的。
 
-# 05.摄影
+## 05.摄影
 
 我平时也玩摄影，因此也很关注生图模型在各摄影领域的表现力，下面来看看：
 
-## 5.1 自然光与经典人像
+### 5.1 自然光与经典人像
 
 > 这是一张在阳光明媚的草地上黄金时段拍摄的、有着卷曲赤褐色头发的女性的特写中景肖像照。使用柯达Portra 400胶卷拍摄。在她的头发上使用了柔和、散射的逆光（轮廓光）。光圈f/1.4，产生了金色和绿色光线的平滑虚化效果。皮肤纹理可见毛孔和淡淡的雀斑。使用佳能EOS R5相机搭配85mm f/1.4镜头拍摄。
 
@@ -206,7 +207,7 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 ![](img/8f30a06e17fbda856da779566ca07551.png)
 
-## 5.2 商业时尚与美妆
+### 5.2 商业时尚与美妆
 
 > 模特眼睛和嘴唇的特写镜头，聚焦于美的细节。高度精细的金属眼影（金色和蓝色闪光），可见闪亮颗粒。光泽的红唇，有逼真的反光效果。皮肤渲染完美无瑕，但保留了皮肤纹理。采用硬光摄影棚灯光（蚌壳式布光）突出纹理。使用飞思IQ4相机、120mm微距镜头拍摄。
 
@@ -216,7 +217,7 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 ![](img/d8d5a0719fad0d5c95b7f21b73b11de9.png)
 
-## 5.3 电影感与戏剧光影
+### 5.3 电影感与戏剧光影
 
 > 头戴软呢帽的男子的新黑色电影风格肖像，在黑暗的房间里抽着烟。明暗对比的灯光，戏剧性的阴影掠过他的脸庞（百叶窗效果）。只有他的眼睛和香烟的烟头被照亮。浓重的烟雾弥漫在空气中，反射着光线。使用变形镜头拍摄（电影宽银幕）。高对比度，粗糙的胶片质感。
 
@@ -240,23 +241,23 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 > 使用以下角度，并采用不同的构图和取景方式：
 
-1.  高角度（俯视）
+1. 高角度（俯视）
 
-1.  低角度（从下方）
+1. 低角度（从下方）
 
-1.  视线水平正对
+1. 视线水平正对
 
-1.  荷兰角（略微倾斜）
+1. 荷兰角（略微倾斜）
 
-1.  近景低角度拍摄
+1. 近景低角度拍摄
 
-1.  过肩角度
+1. 过肩角度
 
-1.  侧面远景
+1. 侧面远景
 
-1.  从正面看呈45度角
+1. 从正面看呈45度角
 
-1.  略微鸟瞰角度
+1. 略微鸟瞰角度
 
 > 风格要求：
 
@@ -274,9 +275,9 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 ![](img/7b4e0b48723150a42e52103ea73cbccb.png)
 
-## 5.4 超现实摄影
+### 5.4 超现实摄影
 
-> 一幅超现实的人像，人物浸没在水下，周围是漂浮的水母。从水面透下的空灵光线（丁达尔效应）照亮了主体和水母。主体平静地漂浮着，头发向上飘动。画面呈现出梦幻、低饱和度的蓝色调。水母和皮肤的微距细节清晰可见。
+> 一幅超现实的人像，人物浸没在水下，周围是漂浮的水母。从水面透下的空伦光线（丁达尔效应）照亮了主体和水母。主体平静地漂浮着，头发向上飘动。画面呈现出梦幻、低饱和度的蓝色调。水母和皮肤的微距细节清晰可见。
 
 ![](img/22fd49357413433eb30eea99b07bbac1.png)
 
@@ -284,151 +285,125 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 ![](img/e8a0e4362de70642a8fd55720e34c93f.png)
 
-## 5.5 创意表现
+### 5.5 创意表现
 
 > 微距摄影。一个透明的水晶玻璃杯倒放在黑色大理石桌面上。杯底放着一颗红色的草莓。一束强烈的红色逆光从左侧射入，穿透玻璃杯在桌面上形成复杂的焦散光斑和拉长的阴影。背景完全黑暗。
 
 ![](img/cffd993a26228db8ae89d13fdfcb2501.png)
 
-> {
+```
+{
+  "scene": {
+    "setting": "studio_cinematic_advertising_shoot",
+    "environment": {
+      "background": "soft_gradient_cinematic_backdrop",
+      "lighting": "high_end_beauty_lighting_soft_yet_high_contrast",
+      "mood": "premium_modern_tech_advertisement"
+    }
+  },
+  "subject": {
+    "type": "female",
+    "identity": "reference_photo_model",
+    "appearance": {
+      "face": "charming_symmetric_expressive",
+      "expression": "gentle_smile_intriguing_gaze",
+      "render_style": "ultra_photorealistic_close_up"
+    },
+    "pose": "holding_blister_pack_close_to_camera",
+    "focus": "sharp_on_face_and_blister_pack"
+  },
+  "object": {
+    "type": "blister_pack",
+    "representation": "macro_photorealistic",
+    "materials": {
+      "plastic": "shiny_transparent_high_gloss",
+      "foil": "silver_reflective_with_microtexture"
+    },
+    "details": {
+      "content_replaced": true,
+      "cells": [
+        { "slot_content": "Nano Banana_logo" },
+        { "slot_content": "OpenAI_logo" },
 
-> "scene": {
 
-> "setting": "studio_cinematic_advertising_shoot",
 
-> "environment": {
+```
+{ "slot_content": "X_logo" },
 
-> "background": "soft_gradient_cinematic_backdrop",
+{ "slot_content": "Grok Logo" },
 
-> "lighting": "high_end_beauty_lighting_soft_yet_high_contrast",
+{ "slot_content": "Google_logo" },
 
-> "mood": "premium_modern_tech_advertisement"
+],
 
-> }
+"logo_style": "embossed_colorful_brand_icons_as_pills",
 
-> },
+"finish": "premium_glossy_high_detail"
 
-> "subject": {
+},
 
-> "type": "female",
+},
 
-> "identity": "reference_photo_model",
+"composition": {
 
-> "appearance": {
+"camera": {
 
-> "face": "charming_symmetric_expressive",
+"angle": "close_up_portrait_with_macro_focus",
 
-> "expression": "gentle_smile_intriguing_gaze",
+"lens": "85mm_beauty_lens",
 
-> "render_style": "ultra_photorealistic_close_up"
+"depth_of_field": "shallow_do_f_highlight_face_and_blister",
 
-> },
+"framing": "cinematic_product_beauty_split_focus"
 
-> "pose": "holding_blister_pack_close_to_camera",
+},
 
-> "focus": "sharp_on_face_and_blister_pack"
+"art_direction": {
 
-> },
+"style": "luxury_tech_advertisement",
 
-> "object": {
+"color_palette": "warm_skin_tones_with_colorful_brand_icons",
 
-> "type": "blister_pack",
+"highlight_accent": "glowing_reflections_on_plastic_and_eyes"
 
-> "representation": "macro_photorealistic",
+}
 
-> "materials": {
+},
 
-> "plastic": "shiny_transparent_high_gloss",
+"render_style": {
 
-> "foil": "silver_reflective_with_microtexture"
+"look": "hyper_photorealistic_cinematic",
 
-> },
+"textures": "extreme_skin_detail_freckles_hair_strands_plastic_gloss",
 
-> "details": {
+"lighting_effects": [
 
-> "content_replaced": true,
+"beauty_glow_on_skin",
 
-> "cells": [
+"soft_specular_highlights",
 
-> { "slot_content": "Nano Banana_logo" },
+"cinematic_reflections"
 
-> { "slot_content": "OpenAI_logo" },
+]
 
-> { "slot_content": "X_logo" },
+},
 
-> { "slot_content": "Grok Logo" },
+"post_processing": {
 
-> { "slot_content": "Google_logo" }
+"color_grade": "premium_filmic_ad_grade",
 
-> ],
+"contrast": "high_but_balanced",
 
-> "logo_style": "embossed_colorful_brand_icons_as_pills",
+"saturation": "rich_but_refined",
 
-> "finish": "premium_glossy_high_detail"
+"clarity": "maximum",
 
-> }
+"aspect_ratio": "2.39:1_cinematic"
 
-> },
+}
 
-> "composition": {
-
-> "camera": {
-
-> "angle": "close_up_portrait_with_macro_focus",
-
-> "lens": "85mm_beauty_lens",
-
-> "depth_of_field": "shallow_do_f_highlight_face_and_blister",
-
-> "framing": "cinematic_product_beauty_split_focus"
-
-> },
-
-> "art_direction": {
-
-> "style": "luxury_tech_advertisement",
-
-> "color_palette": "warm_skin_tones_with_colorful_brand_icons",
-
-> "highlight_accent": "glowing_reflections_on_plastic_and_eyes"
-
-> }
-
-> },
-
-> "render_style": {
-
-> "look": "hyper_photorealistic_cinematic",
-
-> "textures": "extreme_skin_detail_freckles_hair_strands_plastic_gloss",
-
-> "lighting_effects": [
-
-> "beauty_glow_on_skin",
-
-> "soft_specular_highlights",
-
-> "cinematic_reflections"
-
-> ]
-
-> },
-
-> "post_processing": {
-
-> "color_grade": "premium_filmic_ad_grade",
-
-> "contrast": "high_but_balanced",
-
-> "saturation": "rich_but_refined",
-
-> "clarity": "maximum",
-
-> "aspect_ratio": "2.39:1_cinematic"
-
-> }
-
-> }
+}
+```
 
 ![](img/983ac81f94dcda0c9c1b2113e00f6d12.png)
 
@@ -446,7 +421,7 @@ Nano Banana 2 这次在底层**做了优化，**支持**在同一个工作流里
 
 ![](img/7c36aa9dee5889832cf9270e1184b3fe.png)
 
-**为了帮大家快速跨过“提示**[Nano Banana绘图提示词库](https://aigcreative.feishu.cn/wiki/Wyx8wNNkViXXBCkUwSLcZFGBnqb?from=from_copylink)”这道坎，我收集了个平台 200+ 条创意提示词，整理成了飞书表格，有需要大家可以自行参考使用：
+**为了帮大家快速跨过“提示[Nano Banana绘图提示词库](https://aigcreative.feishu.cn/wiki/Wyx8wNNkViXXBCkUwSLcZFGBnqb?from=from_copylink)”这道坎，我收集了个平台 200+ 条创意提示词，整理成了飞书表格，有需要大家可以自行参考使用：**
 
 ---
 

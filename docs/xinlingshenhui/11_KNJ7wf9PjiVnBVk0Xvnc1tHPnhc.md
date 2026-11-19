@@ -1,3 +1,4 @@
+
 # AI壁纸和手机壳的制作与销售全攻略！
 
 > 来源：[https://my.feishu.cn/docx/B8BedTsz9oStFXxsL0EcgS3vnPb](https://my.feishu.cn/docx/B8BedTsz9oStFXxsL0EcgS3vnPb)
@@ -8,23 +9,13 @@
 
 我们先来看看目前📕，淘宝这些平台上销量高的手机壳和手机壁纸。
 
-
-
-
-
-
-
 ![](img/ebe786c1d4ddc6ee1356fc8097e6b03b.png)
-
-
-
-
 
 ![](img/baf598be8df018ac676ee2c73edbe774.png)
 
 对于新手来说，有困难，有个小门槛，但问题不大。这几周新类型的壁纸爆款有哪些？咒语去哪里找？用的什么绘画工具？怎么做手机壳？接下来大家就跟着步骤一个一个解决，你会发现其实很简单。
 
-首先第一步就是要制作图片
+## 第一步：制作图片
 
 壁纸爆款在哪里找，大家可以直接在📕搜索壁纸，可以看购物那一块，销量高的，把图片扒下来，看看销量高的图片的类型，风格。
 
@@ -46,9 +37,6 @@
 
 因为不想垫图，所以这里只用了关键词出图。如果你想跟爆款图差不多，那就需要垫图了。
 
-
-
-
 ![](img/81596d2d972eca6dbfb8be202da75f2c.png)
 
 当然一组图大家可以出不同的比例，以便适应手机，iPad，或者电脑壁纸。只需要点U放大一张，自定义就可以更改同一张图像的尺寸大小。
@@ -61,13 +49,13 @@
 
 这里给大家附上最近比较火的壁纸关键词：
 
-1.A few golden butterflies floating in the water, transparent water, clear to the bottom, sparkling water reflection, top-down angle, peaceful effect, mysterious and dreamy, light purple and gold style, Y2K aesthetics, visual effect. --s 400 --ar 2:3 --v 6.0
+1.`A few golden butterflies floating in the water, transparent water, clear to the bottom, sparkling water reflection, top-down angle, peaceful effect, mysterious and dreamy, light purple and gold style, Y2K aesthetics, visual effect. --s 400 --ar 2:3 --v 6.0`
 
-2.Photos of gold coins and water, with a light pink and transparent texture style, anime aesthetics, interesting complexity, berry punk, gorgeous colors, 32k uhd --s 101 --ar 2:3 --v 6.0
+2.`Photos of gold coins and water, with a light pink and transparent texture style, anime aesthetics, interesting complexity, berry punk, gorgeous colors, 32k uhd --s 101 --ar 2:3 --v 6.0`
 
-3.Two golden carp leapt out, jewelry, emitting brilliant colors, radiance, depth of field, detailed photos, mid shot shots, high-quality, realistic presentation, very detailed, cinematic, volumetric lighting --s 400 --ar 2:3 --v 6.0
+3.`Two golden carp leapt out, jewelry, emitting brilliant colors, radiance, depth of field, detailed photos, mid shot shots, high-quality, realistic presentation, very detailed, cinematic, volumetric lighting --s 400 --ar 2:3 --v 6.0`
 
-4.A happy and cute capybara floating on the water, the water is light blue and transparent, the water has sparkling ripples, details,high definition --ar 9:16 --style raw --v 6.0
+4.`A happy and cute capybara floating on the water, the water is light blue and transparent, the water has sparkling ripples, details,high definition --ar 9:16 --style raw --v 6.0`
 
 ![](img/d4a0df84f6088cb8f358e2bb771b057a.png)
 
@@ -77,18 +65,17 @@
 
 ![](img/fc6f848c9ab6e99ce3c5829abbd260ef.png)
 
-第二步**设计并生产手机壳**
+## 第二步：设计并生产手机壳
 
 1.找手机壳生产厂商，大家直接在淘宝，拼多多去找，跟他谈好价格。
-
 
 ![](img/925c13226143cd85f527b72ad78097e3.png)
 
 2.材料选择：根据产品定位选择合适的手机壳材料，如硬塑料、软硅胶或高级皮革等。
 
-第三步就是销售与推广啦
+## 第三步：销售与推广
 
-前面的都不难，这一步才是最难得，也涉及到能不能赚钱，因为需要你懂得运营。很多人在这一步觉得很难就停止脚步了，但是一定要相信一切都是有方法的。
+前面的都不难，这一步才是最难的，也涉及到能不能赚钱，因为需要你懂得运营。很多人在这一步觉得很难就停止脚步了，但是一定要相信一切都是有方法的。
 
 1.制作样品：制作几款样品，用于产品展示和营销推广。可以在美图秀秀或者醒图上搜索壁纸,手机壳模板，直接套用就行。
 
@@ -98,7 +85,7 @@
 
 对于新手来说，建议大家做📕。
 
-**📕的开店流程（个人开店）**：
+### 📕的开店流程（个人开店）
 
 个人身份证开店，很快就可以通过。步骤如下:
 
@@ -108,13 +95,13 @@
 
 建议去缴纳1000元的保证金(也可获得收益后补缴)
 
-**如何上货**
+### 如何上货
 
 ①手机上货(每次只能上一件，适用于有货源)📕点击我的→点击管理店铺→点击上架商品，把准备好的产品素材依次填写即可。
 
 ②电脑上货(一次可以搬运多件，适用于无货源)搜索📕商家版后台→点击左侧服务市场→进入服务市场在这里可以看到很多一键搬家上架的插件，选择一个即可。进入之后，一般都会有操作介绍，自行观看学习即可。
 
-**最后就是如何运营了！！**
+### 如何运营（出单）
 
 如何出单(运营店铺)
 
@@ -126,7 +113,6 @@
 
 壁纸大家可以借鉴下面这种方式，壁纸会员，壁纸这个赛道本身就很卷，再加上大多数人的想法是不会花钱买壁纸，那壁纸会员这个方式就很好，各种类型的壁纸，而且还可以不断更新，有固定的会员之后后期还可以做定制。
 
-
 手机壳这里需要看三个点:1.要看他的图是哪种类型，大众喜欢的是什么类型的图 2.要看销量情况怎么样，3.要看他的粉丝量。综合这三点，粉丝量比较低，出单情况优秀(1是出很多单，2是爆单趋势明显)，好了就选这个品
 
 2、第二件事:写笔记
@@ -135,6 +121,6 @@
 
 ![](img/4a02c296298005c36bb986cb91622f35.png)
 
-结束语：
+### 结束语
 
 希望这篇分享能激发你的创业热情，并帮助你成功开展个性化产品的在线业务！如果你有任何问题或需要进一步的指导，欢迎在评论区留言。记得点赞和关注我，获取更多创业和AI应用的实用信息！

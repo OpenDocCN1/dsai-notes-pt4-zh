@@ -1,6 +1,9 @@
+
 # 张凯寓
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/NiEUdEoxUozRKexIXbuc5TXgncf](https://vxc3hj17dym.feishu.cn/docx/NiEUdEoxUozRKexIXbuc5TXgncf)
+
+## 个人简介
 
 一念星球合伙人 / 中山大学计算机硕士
 
@@ -11,6 +14,8 @@
 工信部《人工智能内容生成师》项目认证讲师
 
 四十三咨询联合创始人
+
+## 相关链接
 
 [智者之约](https://vxc3hj17dym.feishu.cn/wiki/MF8UwuuiQi5l53kUH86cdtGQnHe)
 

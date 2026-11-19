@@ -1,6 +1,7 @@
+
 # 工程视角：对标Trickle的Prompt组合解决方案了解一下吗？Trickle-On-WeChat！
 
-> 来源：[https://langgptai.feishu.cn/docx/ELLado2RTorKicxxVUccg22OnmF](https://langgptai.feishu.cn/docx/ELLado2RTorKicxxVUccg22OnmF)
+> 来源：`https://langgptai.feishu.cn/docx/ELLado2RTorKicxxVUccg22OnmF`
 
 ## 导读
 
@@ -16,7 +17,7 @@
 
 ![](img/0643197f79e691c5ef76379d3b981a52.png)
 
-[265_1694999348(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O2MFbxteMoO49kxtCncc6cm6nCg)
+[`265_1694999348(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O2MFbxteMoO49kxtCncc6cm6nCg)
 
 ## Trickle简介
 
@@ -28,11 +29,11 @@ Trickle是由 GPT 4 驱动的截图管理工具，可以将你的截图转化为
 
 ![](img/f390f59c4f2294f95bfb5ec210f6edcc.png)
 
-[01e501bc6e0a895b010370038a8ecaed16_258.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DdWFbivHgoEssixO9WmczmMhnZd)
+[`01e501bc6e0a895b010370038a8ecaed16_258.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DdWFbivHgoEssixO9WmczmMhnZd)
 
 ## 功能说明
 
-看完视频后，感觉这款产品特别有意思。当即便到官网（https://www.trickle.so/）去看具体的介绍和相关参数信息，在主页中我也找到了这个产品的价值说明：
+看完视频后，感觉这款产品特别有意思。当即便到官网（`https://www.trickle.so/`）去看具体的介绍和相关参数信息，在主页中我也找到了这个产品的价值说明：
 
 ![](img/666c0bb3374772023b9ac3cc767e29c7.png)
 
@@ -63,11 +64,8 @@ Trickle是由 GPT 4 驱动的截图管理工具，可以将你的截图转化为
 下面我将整个方案分成4个小角度进行展开讨论：
 
 +   信息数据
-
 +   图像识别&信息总结
-
 +   图片信息检索
-
 +   图片问答
 
 ### 信息数据流
@@ -164,7 +162,7 @@ Trickle是由 GPT 4 驱动的截图管理工具，可以将你的截图转化为
 
 > 我已经将该项目的Lite版本放在Github上面，鲁棒性上有待提高😅，也欢迎大家Star ⭐️～
 
-> Github地址：https://github.com/PromptExpert/Trickle-On-WeChat/
+> Github地址：`https://github.com/PromptExpert/Trickle-On-WeChat/`
 
 ## 写在最后
 

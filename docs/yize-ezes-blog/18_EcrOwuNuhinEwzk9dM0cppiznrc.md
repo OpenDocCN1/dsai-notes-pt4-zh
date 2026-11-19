@@ -1,3 +1,4 @@
+
 # MCP 概念认知与应用趋势研究
 
 > 来源：[https://chatmemo.feishu.cn/docx/Q2fWdrXcboQpcrxr35OctQbJnJb](https://chatmemo.feishu.cn/docx/Q2fWdrXcboQpcrxr35OctQbJnJb)
@@ -6,15 +7,15 @@
 
 就像之前是AI Agent搜索外部信源；现在是AI Agent检索、调用外部工具。
 
-和 Function Calling 比较像。区别点在于：Function Calling 由大模型通过 HTTP 请求第三方的外挂 API
+和 `Function Calling` 比较像。区别点在于：`Function Calling` 由大模型通过 HTTP 请求第三方的外挂 API
 
-+   概念｜from [https://norahsakal.com/blog/mcp-](https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-explained/)vs-api-[model-context-protocol-explai](https://mp.weixin.qq.com/s/sogkALAhbITPzwyrr-u5sg)ned/ 宝玉提供翻译https://mp.weixin.qq.com/s/sogkALAhbITPzwyrr-u5sg ：
++   概念｜from https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-explained/ 宝玉提供翻译 https://mp.weixin.qq.com/s/sogkALAhbITPzwyrr-u5sg：
 
 +   MCP：Model Context Protocol，模型上下文协议，为AI模型统一连接数据与工具的标准接口。
 
 +   规范APPs向大模型提供上下文信息，帮助AI系统连接一切外部工具与信息。
 
-+   [由Anthropic发起，官方MCP规范见：ht](https://modelcontextprotocol.io/introduction)tps://modelcontextprotocol.io/introduction
++   [由Anthropic发起，官方MCP规范见：https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
 
 +   价值
 
@@ -26,35 +27,37 @@
 
 +   MCP 是连接框架，只协调 AI 模型和工具之间数据和指令的流动，不处理业务逻辑
 
-MCP 服务架构：
+### MCP 服务架构
 
 ![](img/a35e3290218bf8c1b02f25a72aa0e35a.png)
 
 ![](img/d70d9df6a87bbddfbbfb94090fbc8bd6.png)
 
-MCP 与传统 API 的区别：
+### MCP 与传统 API 的区别
 
 +   MCP 是为 AI 系统（比如 LLM）设计的，强调让 AI 能动态理解上下文、自行根据 MCP 服务的说明，处理复杂的服务交互
 
-+   **不适合高精度场景：**AI 与 MCP 的指令是自由、不受限地发出的，但 API 会通过硬性字段要求等强行规范交互信息
++   不适合高精度场景：AI 与 MCP 的指令是自由、不受限地发出的，但 API 会通过硬性字段要求等强行规范交互信息
 
-+   **权限级别低**
++   权限级别低
 
-+   **通信效率低：**MCP需要保持连接、处理上下文，还要让 AI 解析和决策。比传统 API 的“请求-响应”模式多步骤。
++   通信效率低：MCP需要保持连接、处理上下文，还要让 AI 解析和决策。比传统 API 的“请求-响应”模式多步骤。
 
-+   **资源开销更大：**需要持续跑 MCP 服务器，监听指令与外部服务的信息（一个是开关灯指令，一个是判断灯的开关情况，管理灯光关闭）
++   资源开销更大：需要持续跑 MCP 服务器，监听指令与外部服务的信息（一个是开关灯指令，一个是判断灯的开关情况，管理灯光关闭）
 
-+   **性能优化局限：**传统 API 可以针对特定任务深度优化（比如压缩数据、减少延迟），而 MCP 是通用协议，无法特定优化 MCP 环节的性能
++   性能优化局限：传统 API 可以针对特定任务深度优化（比如压缩数据、减少延迟），而 MCP 是通用协议，无法特定优化 MCP 环节的性能
 
-什么时候必须用 API 而不是 MCP：细粒度控制、功能严格限制；偏好紧耦合以提升性能；不需要通过上下文理解发挥自主性（低上下文自主性），最大化交互的稳定（可预测性）
+### 什么时候必须用 API 而不是 MCP
+
+细粒度控制、功能严格限制；偏好紧耦合以提升性能；不需要通过上下文理解发挥自主性（低上下文自主性），最大化交互的稳定（可预测性）
 
 +   MCP服务器目前只能在本地主机运行，需要本地运行服务器，来与外部应用请求。但未来肯定会支持远程主机
 
 +   MCP 连接中，分为“请求-响应”的双向连接，也有“通知”类的单向连接。在连接中，任何一方都可以关闭连接。
 
-+   通过 resources/list 告诉 MCP 服务器可提供的资源
++   通过 `resources/list` 告诉 MCP 服务器可提供的资源
 
-+   通过prompts/list端点发现可用的提示，可以通过 list 中的提示词进行 prompt 获取信息
++   通过 `prompts/list` 端点发现可用的提示，可以通过 list 中的提示词进行 prompt 获取信息
 
 ### MCP 会不会成为行业内的共识？
 
@@ -62,16 +65,15 @@ MCP 与传统 API 的区别：
 
 ## 实际测试体验
 
-目前的体验近似在个人电脑上跑了可以控制本地应用与远程API的 Coze 智能体，体验和 function calling 比较接近。
+目前的体验近似在个人电脑上跑了可以控制本地应用与远程API的 Coze 智能体，体验和 `function calling` 比较接近。
 
-想用哪个每个 MCP 服务，就得单独在可以用 MCP 的客户端（claude 客户端、cursor、cherry studio 等，普通人用 cherry 吧，其他几个配置更头疼）设置几行 服务请求的 json
+想用哪个每个 MCP 服务，就得单独在可以用 MCP 的客户端（claude 客户端、cursor、cherry studio 等，普通人用 cherry 吧，其他几个配置更头疼）设置几行 服务请求的 `json`
 
 每个 MCP 服务器里写了调用方法，LLM 通过结合调用方法与用户指令，像 MCP 服务器发送请求，本地服务/远程服务就会执行、返回。
 
 severs 配置直接看：https://github.com/modelcontextprotocol/servers 别看第三方聚合站或信源
 
-cherry 配置方法：
-
+### cherry 配置方法
 
 测试的有：
 
@@ -89,7 +91,7 @@ https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
 
 https://github.com/GLips/Figma-Context-MCP
 
-个人测试优先用 npx 模式，用 claude-3.7-sonnet（免费模型 api失败率高，token 窗口不够大，或者啥的）
+个人测试优先用 `npx` 模式，用 claude-3.7-sonnet（免费模型 api失败率高，token 窗口不够大，或者啥的）
 
 ![](img/f4ab60d7c39fbfcc4c73f0c8756d1be7.png)
 

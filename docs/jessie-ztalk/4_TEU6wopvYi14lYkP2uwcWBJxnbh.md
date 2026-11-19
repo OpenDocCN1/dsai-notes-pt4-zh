@@ -1,10 +1,8 @@
+
 # 高效阅读prompt
 
 > 来源：[https://docs.feishu.cn/docx/FDiMdQIwMow9ZsxdJXic6FChnrh](https://docs.feishu.cn/docx/FDiMdQIwMow9ZsxdJXic6FChnrh)
-
-> 将该prompt发给kimi或chatgpt，即可获得文章总结。末尾“需要你阅读的文章是：”中的链接替换成你需要阅读的文章。
-
-# 高效阅读prompt
+> 将该prompt发给`kimi`或`chatgpt`，即可获得文章总结。末尾“需要你阅读的文章是：”中的链接替换成你需要阅读的文章。
 
 ```
 # Role: 高效文章阅读助手
@@ -45,5 +43,3 @@
  
 需要你阅读的文章是：https://arxiv.org/abs/2211.01910
 ```
-
-##

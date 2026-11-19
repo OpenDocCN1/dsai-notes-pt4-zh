@@ -1,3 +1,4 @@
+
 # LCM 开启AI实时绘画时代
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/LXE6dOMFIoVRuBxXqxocqkm2nyb](https://xuqiwei1986.feishu.cn/docx/LXE6dOMFIoVRuBxXqxocqkm2nyb)
@@ -8,21 +9,25 @@
 
 我们就来看看具体如何操作。
 
+## 下载与安装 Krita
+
 首先需要下载 Krita，免安装包听雨已经放在网盘中了，后续要用到的插件听雨也会放在文末的网盘中。
 
-解压安装包以后，进入解压的目录下，点击「krita.exe」就可以打开 krita 了。
+解压安装包以后，进入解压的目录下，点击 `krita.exe` 就可以打开 Krita 了。
 
-> \krita-x64-5.2.1\bin
+> `\krita-x64-5.2.1\bin`
 
 ![](img/3f49b1f809459d59647c7f4bbeed25c0.png)
 
-正常打开 krita 以后，就可以在看到以下目录了，把网盘中的插件解压拷贝到以下文件夹下。然后我们重启 krita。
+正常打开 Krita 以后，就可以在看到以下目录了，把网盘中的插件解压拷贝到以下文件夹下。然后我们重启 Krita。
 
-> C:\Users\<user>\AppData\Roaming\krita\pykrita
+> `C:\Users\<user>\AppData\Roaming\krita\pykrita`
 
 ![](img/6695eea55701d10f7468478cb1b2be59.png)
 
-在 Krita 中启用插件 （设置 ‣ 配置 Krita ‣ Python 插件管理器），勾选「AI Image Diffusion」，点击确定并重启 Krita。
+## 启用 AI 插件
+
+在 Krita 中启用插件（设置 ‣ 配置 Krita ‣ Python 插件管理器），勾选「AI Image Diffusion」，点击确定并重启 Krita。
 
 ![](img/09657332e35f1a29c98bd352fc374923.png)
 
@@ -34,13 +39,15 @@
 
 ![](img/f87eadce9117ae4c26eab21082869ebd.png)
 
-先不管弹出来的配置界面，我们先把我们本地的 ComfyUI 跑起来。然后继续回到 Krita 中，点击「Connect」，连接 ComfyUI 会显示我们缺少的东西。
+## 连接 ComfyUI
+
+先不管弹出来的配置界面，我们先把本地的 ComfyUI 跑起来。然后继续回到 Krita 中，点击「Connect」，连接 ComfyUI 会显示我们缺少的东西。
 
 ![](img/47a8caf020a8491cc1229a0a824f75eb.png)
 
 官网提供了需要安装的插件和模型，小伙伴们按照官方的需求安装。
 
-> [https://github.com/Acly/krita-ai-diffu](https://github.com/Acly/krita-ai-diffusion/blob/main/doc/comfy-requirements.md)sion/blob/main/doc/comfy-requirements.md
+> [https://github.com/Acly/krita-ai-diffusion/blob/main/doc/comfy-requirements.md](https://github.com/Acly/krita-ai-diffusion/blob/main/doc/comfy-requirements.md)
 
 相关的插件和模型，听雨也都会放在网盘中，小伙伴们可以自取。
 
@@ -49,6 +56,8 @@
 以上的插件和模型都安装好以后，然后我们继续回来点击「Connect」。出现以下的绿色字体就说明是连接成功了。
 
 ![](img/4c4bcd769046ef828292ea3cf0f23e60.png)
+
+## 实时绘画操作
 
 然后，我们进入「Styles」中选择大模型和 Lora 模型，Lora 模型需要选择 LCM 专属的 lora 模型。
 
@@ -82,11 +91,15 @@ D 就是我们写提示词的地方了。
 
 [🐧录屏20231123220927.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HTsqbbP43oZMTHxBct1cv5M1nCg)
 
+## 结合 ControlNet
+
 实时绘画功能还可以结合 ControlNet 来绘图，不过这里只支持 SD1.5 的模型，听雨这边就选择 pose 来给小伙伴们演示了，其他的 ControlNet 功能，小伙伴们可以自行尝试哦！
 
 ![](img/82c74d1aeb74fd1d25a4800e008a6726.png)
 
 [🐧录屏20231123223701.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DhcUb5EF1oNjQzxMySicMmQanTg)
+
+## 参考资源
 
 想要了解 Krita 更多用法的小伙伴可以看官方教程哦：
 

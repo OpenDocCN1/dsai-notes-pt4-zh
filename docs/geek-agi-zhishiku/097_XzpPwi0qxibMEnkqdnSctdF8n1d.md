@@ -1,3 +1,4 @@
+
 # Q&A即时答疑
 
 > 来源：[https://geekbang.feishu.cn/docx/WYOOdMgTDoQk1hxs9Bfc3teOnRe](https://geekbang.feishu.cn/docx/WYOOdMgTDoQk1hxs9Bfc3teOnRe)
@@ -23,7 +24,9 @@ A：需要，所需帮助如下：
 以上所述任何 OpenClaw 中国行的支持，如您有意，都欢迎联系我：
 
 | **企业🛰️联系** | **飞书联系** |
+
 | --- | --- |
+
 | ![](img/13929eb0e08426f7fe6f1f3a9dd41709.png) | ![](img/b01157c534fb0a766d466b2b29731c1a.png) |
 
 ## Q2：需要什么样的场地，什么配置，对我们有什么回报吗？
@@ -41,9 +44,13 @@ A：如果是简单的礼品赞助，比如用于抽奖等，我们会在各种�
 A：必须有，可以直接关注InfoQ、AI前线、极客时间、TGO鲲鹏会、模力工场、霍太稳视频号。
 
 | InfoQ视频号 | AI前线视频号 | 极客时间视频号 |
+
 | --- | --- | --- |
+
 | ![](img/c2353e4a73a36cb057c9ce2e1da02cb3.png) | ![](img/473fd37e03c152989eb5685411c78979.png) |  |
+
 | TGO鲲鹏会视频号 | 模力工场视频号 | 霍太稳视频号 |
+
 | ![](img/ef1b6891424f74dae1ae11533612691e.png) | ![](img/42e7a39ffe939fa89673b9a936d0d048.png) | ![](img/9268d0a2bd6ca4c85bec2c1be4dc3a93.png) |
 
 ## Q5：哪儿可以看到所有城市的日程和分享嘉宾信息？

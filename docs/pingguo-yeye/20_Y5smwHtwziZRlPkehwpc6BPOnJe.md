@@ -1,12 +1,13 @@
+
 # 自媒体常用提示词
 
-> 来源：[https://e0lrm2v2v1u.feishu.cn/docx/AOdFdHiMmoQ2pTxjB7MckS9hnGg](https://e0lrm2v2v1u.feishu.cn/docx/AOdFdHiMmoQ2pTxjB7MckS9hnGg)
+> 来源：[`https://e0lrm2v2v1u.feishu.cn/docx/AOdFdHiMmoQ2pTxjB7MckS9hnGg`](https://e0lrm2v2v1u.feishu.cn/docx/AOdFdHiMmoQ2pTxjB7MckS9hnGg)
 
 ## 第一步：
 
 打开头条热点+热榜，或者是情感专区，寻找到一个情感类的爆款故事。
 
-### **提示词**
+### 提示词
 
 你现在是今日头条创作者，请你结合今日头条阅读超过100万的文章标题模式，给一篇文章起标题。文章内容:"近日，一位女孩在得知自己的高考成绩后，难掩心中委屈，流下了热泪。据报道，这位女孩的成绩是619分，虽然这是一个相当不错的成绩，但她没考上自己心仪的大学，感到非常失落。"
 
@@ -14,7 +15,7 @@
 
 ## 第二步：
 
-### **提示词**
+### 提示词
 
 很好，现在你来搜索全网相关文章，并以“619分没考上理想大学，女孩泪洒高考现场，网友：别灰心，你已经很优秀了！”为引入，来写一篇文章。必要的地方可以加入[图片]，具体图片后续我来补充上。要求:文字感人，故事真实，发人深省
 

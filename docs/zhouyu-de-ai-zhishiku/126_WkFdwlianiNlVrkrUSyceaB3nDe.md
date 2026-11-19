@@ -1,3 +1,4 @@
+
 # Claude Code + Nano Banana Pro = 懂你的设计Agent，一句话就出图
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/NECJdq8wQoCXOZxdShpcm390nhd](https://xatc0v8uz5m.feishu.cn/docx/NECJdq8wQoCXOZxdShpcm390nhd)
@@ -16,7 +17,7 @@
 
 ---
 
-# **昨晚正愁死我了**
+## 昨晚正愁死我了
 
 用 Nano Banana Pro 做了张封面，结果"爬楼"写成了"肥楼"。
 
@@ -52,7 +53,7 @@
 
 不知道 Skills 是什么？看这篇： Claude Skills 写作指南：从0到1看完就会，不会来找我
 
-# **所以我做了个Skill**
+## 所以我做了个Skill
 
 我把 Nano Banana Pro 的 API 和我的作图方法论，封装成了一个 Skill。
 
@@ -66,7 +67,7 @@
 
 为什么好用？
 
-1.方法论有地方存了，还能自己优化
+1. 方法论有地方存了，还能自己优化
 
 以前提示词存备忘录，踩过的坑下次还得踩一遍。
 
@@ -82,7 +83,7 @@ Lovart出图也强，但你的方法论没地方存啊。
 
 ![](img/8b27e5108f536d6bf5e2b4dabe8f2b39.png)
 
-2.它自己会检查
+2. 它自己会检查
 
 Claude Opus 4.5 真的很强！
 
@@ -98,9 +99,9 @@ Claude Opus 4.5 真的很强！
 
 另外我会持续更新这个Skill到GitHub，你同步一下就能拿到最新方法。
 
-# **怎么用？2步搞定**
+## 怎么用？2步搞定
 
-## 1.先搞个API Key
+### 1. 先搞个API Key
 
 Nano Banana Pro 模型，4K图才1毛8一张。
 
@@ -114,7 +115,7 @@ https://ismaque.org/register?aff=npk7
 
 ![](img/c898a2962f50bfd0fc74b71fa0fa2a79.png)
 
-## 2.让Claude帮你装
+### 2. 让Claude帮你装
 
 把这段话丢给Claude：
 
@@ -129,7 +130,7 @@ https://ismaque.org/register?aff=npk7
 
 重启Claude Code，说"画一张xxx"，就能用了。
 
-# **还能这么玩**
+## 还能这么玩
 
 一次出多张图 ：要好几张图？它会同时调API，并行生成，不用一张张等。
 

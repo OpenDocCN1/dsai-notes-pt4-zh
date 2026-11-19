@@ -1,3 +1,4 @@
+
 # 20250827-再见PS！谷歌神秘AI“小香蕉”曝光，在这个领域重回铁王座！
 
 > 来源：[https://aigcreative.feishu.cn/docx/QzgxdYahMobsGExWU2vcTyaZn1d](https://aigcreative.feishu.cn/docx/QzgxdYahMobsGExWU2vcTyaZn1d)
@@ -57,7 +58,6 @@ Nano Banana最初是匿名出现在LMArena的AI模型评测平台上的，在大
 ![](img/169b7b0839df9e558caf4d3bf55a44fc.png)
 
 这光影，这质感，没得说！
-
 
 ![](img/6e5acf9d019d7304c7a6d95b936b5c33.png)
 
@@ -133,7 +133,7 @@ Nano Banana最初是匿名出现在LMArena的AI模型评测平台上的，在大
 
 最直接的方式是在谷歌的Gemini App里，这个功能已经集成进去了。上传图片后，直接输入文字就能编辑，在手机上操作很方便。
 
-如果习惯用电脑，可以搜一下 nanobanana.ai 这个网站。它是一个第三方的体验平台，优点是不用注册登录，可以无限次使用，很适合上去快速体验一下它的效果。
+如果习惯用电脑，可以搜一下 `nanobanana.ai` 这个网站。它是一个第三方的体验平台，优点是不用注册登录，可以无限次使用，很适合上去快速体验一下它的效果。
 
 对于有开发需求的朋友，它也提供了API接口，可以把它的能力集成到自己的应用或工作流里。
 
@@ -171,4 +171,4 @@ Nano Banana最初是匿名出现在LMArena的AI模型评测平台上的，在大
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

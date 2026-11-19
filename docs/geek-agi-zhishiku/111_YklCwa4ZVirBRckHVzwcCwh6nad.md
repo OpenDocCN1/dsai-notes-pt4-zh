@@ -1,3 +1,4 @@
+
 # 搜罗全网最绝的 DeepSeek 案例
 
 > 来源：[https://geekbang.feishu.cn/docx/QfNxdVgcFoEd4xxzMGwcwXifnRf](https://geekbang.feishu.cn/docx/QfNxdVgcFoEd4xxzMGwcwXifnRf)
@@ -6,11 +7,7 @@
 
 ![](img/d604b9014132f5bb28050d9874bc4e4e.png)
 
-[**当我问de**](https://www.xiaohongshu.com/user/profile/65de04d5000000000500bc37?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB4o7rhbIF-yld_e7vRn9t09naX3z1ehNr2NyGsLJSlDo=&xsec_source=pc_note)epseek人类都问了他什么离谱问题--📕：栗栗小宇宙
-
-
-
-
+[当我问de](https://www.xiaohongshu.com/user/profile/65de04d5000000000500bc37?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB4o7rhbIF-yld_e7vRn9t09naX3z1ehNr2NyGsLJSlDo=&xsec_source=pc_note)epseek人类都问了他什么离谱问题--📕：栗栗小宇宙
 
 ![](img/5cdb54cf1eaf5c50c48e433849445a8b.png)
 
@@ -20,7 +17,7 @@ DeepSeek写诗--📕：疾风突兀
 
 ![](img/0ed68e68e8b5fd71ad2bfd78e6ca8cbf.png)
 
-**DeepSeek🙏招财令**
+DeepSeek🙏招财令
 
 ![](img/310e0f72e893857832ea8ea480015471.png)
 
@@ -31,11 +28,6 @@ DeepSeek写诗--📕：疾风突兀
 ![](img/ae4eb1e3b26b20205c32709e2502469b.png)
 
 DeepSeek 锐评 java 找工作现状
-
-
-
-
-
 
 ![](img/e8e02af49416726adbc9888cb139d6a8.png)
 
@@ -51,26 +43,11 @@ DeepSeek 锐评程序员是否要考公
 
 当deepseek回答亲子博主故意让女儿摔倒
 
-
-
-
-
-
 ![](img/0bda90175182ec154f2a6cdc9bf6db19.png)
 
 媒体接入DeepSeek深度应用案例合集
 
 ![](img/90b7dad02d3c559185dffb85c58db49e.png)
-
-
-
-
-
-
-
-
-
-
 
 ![](img/30dbf24a90ed2e948ec1260665cbbcf4.png)
 
@@ -112,13 +89,6 @@ DeepSeek 教 plog 博主，2025 如何破局
 
 ![](img/78322923478059342bc0ccf8934d743c.png)
 
-
-
-
-
-
-
-
 ![](img/56ff21bc9470561e5fb457675f5f15cc.png)
 
 让Deepseek帮我提高英语听说
@@ -126,8 +96,6 @@ DeepSeek 教 plog 博主，2025 如何破局
 ![](img/16a85c60fc183a76c0d54f3451937dce.png)
 
 ![](img/24ab9b726a9843b9dfabb9fdc6281702.png)
-
-
 
 ![](img/6eb713ed34b43c28ddff782e1941048d.png)
 
@@ -167,14 +135,9 @@ DeepSeek 教 plog 博主，2025 如何破局
 
 DeepSeek认为情侣谈到这个程度才可以结婚
 
-
-
 ![](img/d80a69a1fa1fd960377562c61b380b86.png)
 
-和**DeepSeek玩游戏**
-
-
-
+和DeepSeek玩游戏
 
 ![](img/1eb07be95dedf00b507d89742ba111f4.png)
 
@@ -242,9 +205,6 @@ deepseek给出人生回报率最高21件事基础版
 
 deepseek➕Xmind做思维导图，有多牛
 
-
-
-
 ![](img/e211d86d0b76bed255d2a71e45fdfe43.png)
 
 ![](img/72b7321b52243df0544350d226bb9681.png)
@@ -276,11 +236,6 @@ deepseek深度思考：人这一辈子，什么东西是最没用的？
 ![](img/64064470d11e4d0dc8dc6cea53a2a92e.png)
 
 deepseek认为童年时最幸福的十件事是什么
-
-
-
-
-
 
 ![](img/2bbab2e3459cd63c51c68bd8879de731.png)
 

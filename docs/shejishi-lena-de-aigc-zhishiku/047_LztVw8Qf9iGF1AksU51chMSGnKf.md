@@ -1,32 +1,21 @@
+
 # B端图标提示词
 
 > 来源：[https://aigclena.feishu.cn/docx/JDCfdWsvboku3ExngObceMBXnBb](https://aigclena.feishu.cn/docx/JDCfdWsvboku3ExngObceMBXnBb)
 
-# 即梦
+## 即梦
 
 即梦B端图标：[绘画 | 即梦提示词](https://aigclena.feishu.cn/wiki/Kj4lwlqGZifNihkttBpccuRznyd)
-
-
-
-
-
-
-
-
-
-
 
 ![](img/a919de43dffefbcb8bedc8997ee6a3ce.png)
 
 ![](img/66bfaa615b0d29f660e5aece0b2f4e5e.png)
-
 
 ![](img/49c81d9f8286ca399cdb90dedc9e3c96.png)
 
 ![](img/d6be3647f3bf1875c8606fae889c2dd3.png)
 
 ![](img/49490e0b7c4ec1406b32eaebb9745ca7.png)
-
 
 ![](img/d2711cdbfffa127e2fe4c2f44c84ff41.png)
 
@@ -58,7 +47,7 @@
 
 ![](img/9db8997019e9dbdebe9453c577ceacae.png)
 
-# 豆包
+## 豆包
 
 ![](img/f1ccfdebac4e39033ce7d10dc00ed4d2.png)
 
@@ -68,7 +57,7 @@
 
 UI图标，半透明蓝白渐变的 【文件夹】 ，呈现叠层翻开形态，强化科技交互感； 场景：浅蓝（接近白色）网格 / 桌面基底，搭配简约几何物件（信封、长条块），营造数字办公 / 云端存储氛围； 色彩：低饱和蓝白色系，传递清新、轻量化的科技感。 风格与概念 风格：属于 3D 极简扁平风（2.5D 轻拟物），用立体造型 + 简约色彩，平衡科技感与亲和力；
 
-# Midjourney
+## Midjourney
 
 ![](img/d8929d3c1cbda80f8617b32f2ec4c382.png)
 
@@ -78,11 +67,11 @@ UI图标，半透明蓝白渐变的 【文件夹】 ，呈现叠层翻开形态�
 
 底座和主体分开生成
 
-A file folder icon with no base, transparent material, blue and white, frosted glass, transparent technology sense, ui design, isometric, white background, studio lighting, bright color, 3d art, c4d, octane rendering, blender, ray tracing, pinterest, dribble, reduce details, 8k --iw 0.5
+`A file folder icon with no base, transparent material, blue and white, frosted glass, transparent technology sense, ui design, isometric, white background, studio lighting, bright color, 3d art, c4d, octane rendering, blender, ray tracing, pinterest, dribble, reduce details, 8k --iw 0.5`
 
-底座：将A file folder icon with no base 替换成A simple circle base即可
+底座：将`A file folder icon with no base`替换成`A simple circle base`即可
 
-# sd绘制
+## sd绘制
 
 ![](img/0e20025a57398b8f74c8d9dafc28c72d.png)
 
@@ -92,26 +81,26 @@ A file folder icon with no base, transparent material, blue and white, frosted g
 
 ![](img/2d2629cb51bfb52ba2351b4c90e1f7fc.png)
 
-提示词：icon,solo,simple background,A 3D shield icon,Frosted glass material,Blue green and white gradient color,light background,UI design,Transparent sense of technology,Frosted glass material with blue and white gradient color,Simple design,no humans,transparent,
+提示词：`icon,solo,simple background,A 3D shield icon,Frosted glass material,Blue green and white gradient color,light background,UI design,Transparent sense of technology,Frosted glass material with blue and white gradient color,Simple design,no humans,transparent,`
 
-负向提示词： ng_deepnegative_v1_75t,(badhandv4:1.2),EasyNegative,(worst quality:2),
+负向提示词：`ng_deepnegative_v1_75t,(badhandv4:1.2),EasyNegative,(worst quality:2),`
 
-生图地址：https://www.liblib.art/
+生图地址：`https://www.liblib.art/`
 
 ![](img/7e5f7869e7dfc6ae7f2866ca1d242454.png)
 
 图标，侧视图，清晰的玻璃纹理，磨砂玻璃，清晰的技术感，基础质量，精细纹理，高细节，Oc渲染，工业设计，白色背景，工作室照明，等距，轴对称，Blender,C4D，最佳质量
 
-icon,side view,Clear glass texture,Frosted glass,Clear technical sense,bset quality,Fine texture,High Detail,Oc rendering,Industrial Design,White background,Studio Lighting,isometric,axial symmetry,Blender,C4D,Best Quality,
+`icon,side view,Clear glass texture,Frosted glass,Clear technical sense,bset quality,Fine texture,High Detail,Oc rendering,Industrial Design,White background,Studio Lighting,isometric,axial symmetry,Blender,C4D,Best Quality,`
 
-大模型：BDicon_SDXL_三维大模型(XL是基于1024尺寸的模型，跑图相较于1.5自然要慢些)，Lora可加可不加，加一下毛玻璃的lora，通透度会更好
+大模型：`BDicon_SDXL_三维大模型`(XL是基于1024尺寸的模型，跑图相较于1.5自然要慢些)，`Lora`可加可不加，加一下毛玻璃的`lora`，通透度会更好
 
-采样方法: Euler a，迭代步数30～40都可
+采样方法: `Euler a`，迭代步数30～40都可
 
 ![](img/1b699fbe81cf9a39da1076af137a6644.png)
 
 ![](img/4f2dc91a8baa88a6116dfb2850fe820a.png)
 
-# 星流
+## 星流
 
 ![](img/26c22dbdd7769cce3df627734b9b0f64.png)

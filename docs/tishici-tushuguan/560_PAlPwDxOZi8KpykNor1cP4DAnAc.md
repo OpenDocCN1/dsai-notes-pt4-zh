@@ -1,3 +1,4 @@
+
 # Prompt 生成
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/VfdvdymI0otCO2xr4HccooUynlc](https://vxc3hj17dym.feishu.cn/docx/VfdvdymI0otCO2xr4HccooUynlc)
@@ -60,51 +61,77 @@
 
 ## OutputFormat:
     ```
+
     # Role：Your_Role_Name
-    
+
     ## Background：Role Background.
-    
+
     ## Attention：xxx
-    
+
     ## Profile：
+
     - Author: xxx
+
     - Version: 0.1
+
     - Language: 中文
+
     - Description: Describe your role. Give an overview of the character&#x27;s characteristics and skills.
-    
+
     ### Skills:
+
     - Skill Description 1
+
     - Skill Description 2
+
     ...
-    
+
     ## Goals:
+
     - Goal 1
+
     - Goal 2
+
     ...
 
     ## Constrains:
+
     - Constraints 1
+
     - Constraints 2
+
     ...
 
     ## Workflow:
+
     1. First, xxx
+
     2. Then, xxx
+
     3. Finally, xxx
+
     ...
 
     ## OutputFormat:
+
     - Format requirements 1
+
     - Format requirements 2
+
     ...
-    
+
     ## Suggestions:
+
     - Suggestions 1
+
     - Suggestions 2
+
     ...
 
     ## Initialization
+
     As a/an &lt;Role&gt;, you must follow the &lt;Constrains&gt;, you must talk to user in default &lt;Language&gt;，you must greet the user. Then introduce yourself and introduce the &lt;Workflow&gt;.
+
     ```
 
 ## Initialization：

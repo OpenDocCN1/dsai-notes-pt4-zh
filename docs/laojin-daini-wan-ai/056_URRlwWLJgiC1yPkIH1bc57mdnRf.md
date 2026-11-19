@@ -1,6 +1,7 @@
+
 # DeepSeek V3.2来了，首个会"思考"的Agent模型，性能打平GPT-5
 
-> 来源：[https://my.feishu.cn/docx/Z5ZBdgH4JoLqiHx3PnHcPzqPnQf](https://my.feishu.cn/docx/Z5ZBdgH4JoLqiHx3PnHcPzqPnQf)
+> 来源：`https://my.feishu.cn/docx/Z5ZBdgH4JoLqiHx3PnHcPzqPnQf`
 
 昨天晚上刷L站，DeepSeek又发新模型了。
 
@@ -14,17 +15,17 @@
 
 ## V3.2牛在哪
 
-**核心创新：会思考的Agent。**
+核心创新：会思考的Agent。
 
 以前模型调工具，直接调。V3.2呢？
 
 先想一遍，再调工具。
 
-举个例子，问它:"帮我查下明天北京天气,顺便订个咖啡。"
+举个例子，问它："帮我查下明天北京天气,顺便订个咖啡。"
 
 普通模型：调天气API→调订单API，完事。
 
-**V3.2：**
+V3.2：
 
 先想"需要查天气和下单，天气影响穿着，可能影响咖啡口味选择"
 
@@ -78,13 +79,13 @@ Math-V2直接吊打人类。
 
 这版本专门冲竞赛，拿下四大金牌：
 
-+   IMO 2025（国际数学奥赛）- 金牌
++ IMO 2025（国际数学奥赛）- 金牌
 
-+   CMO 2025（中国数学奥赛）- 金牌
++ CMO 2025（中国数学奥赛）- 金牌
 
-+   ICPC 2025全球总决赛 - 人类第二名水平
++ ICPC 2025全球总决赛 - 人类第二名水平
 
-+   IOI 2025（国际信息学奥赛）- 人类第十名水平
++ IOI 2025（国际信息学奥赛）- 人类第十名水平
 
 开源模型首次在这么多顶级竞赛拿金牌。
 
@@ -94,11 +95,11 @@ Math-V2直接吊打人类。
 
 跑了AIME 2025数学竞赛测试：
 
-+   V3.2：93.1%
++ V3.2：93.1%
 
-+   GPT-5：94.6%
++ GPT-5：94.6%
 
-+   V3.2-Speciale：96.0%
++ V3.2-Speciale：96.0%
 
 Speciale反超GPT-5了。
 
@@ -146,15 +147,15 @@ V3.2性能接近，还开源，API便宜一半，中小团队肯定选V3.2。
 
 DeepSeek-V3.2 延续了 DeepSeek 的开源传统，模型权重和推理代码已在 Hugging Face 上开源：
 
-+   **模型地址**：[https://huggingface.co/deeps](https://huggingface.co/deepseek-ai/DeepSeek-V3.2)eek-ai/DeepSeek-V3.2
++ 模型地址：`https://huggingface.co/deepseek-ai/DeepSeek-V3.2`
 
-+   **推理代码**：[h](https://huggingface.co/deepseek-ai/DeepSeek-V3.2/tree/main/inference)ttps://huggingface.co/deepseek-ai/DeepSeek-V3.2/tree/main/inference
++ 推理代码：`https://huggingface.co/deepseek-ai/DeepSeek-V3.2/tree/main/inference`
 
 ## 适合干啥
 
 玩了一天，总结下：
 
-**适合的:**
+适合的:
 
 Agent任务 - 多步骤、需要思考的复杂任务，V3.2猛。
 
@@ -166,7 +167,7 @@ Agent任务 - 多步骤、需要思考的复杂任务，V3.2猛。
 
 中文内容 - 中文理解生成强，写文章翻译对话都行。
 
-**不适合:**
+不适合:
 
 极复杂任务 - Gemini 3 Pro还是最强，V3.2略差一点。
 
@@ -178,23 +179,23 @@ Agent任务 - 多步骤、需要思考的复杂任务，V3.2猛。
 
 V3.2对AI圈有几个影响:
 
-**Agent能力成标配**
+Agent能力成标配
 
 "思考+工具调用"这个模式太强了，以后大模型估计都得加。
 
-**开源缩小差距**
+开源缩小差距
 
 V3.2证明了开源模型能打平GPT-5，闭源优势在缩小。
 
-**数学推理突破**
+数学推理突破
 
 Math-V2拿IMO金牌，AI数学能力已经超人类顶尖水平。
 
-**成本暴降**
+成本暴降
 
 API价格降50%，AI门槛又降了，更多人能用上好模型。
 
-**国产AI领跑**
+国产AI领跑
 
 特别是中文处理、成本控制、Agent能力，已经世界前列了。
 
@@ -214,26 +215,26 @@ V3.2不是终点。DeepSeek说了，下一步是V4和R2。
 
 未来几个月，肯定还有更猛的东西出来。
 
-**参考来源**：
+参考来源：
 
-1.  DeepSeek-V3.2发布，推理能力达到了GPT-5水平 - https://news.qq.com/rain/a/20251201A080EP00
+1. DeepSeek-V3.2发布，推理能力达到了GPT-5水平 - `https://news.qq.com/rain/a/20251201A080EP00`
 
-1.  DeepSeek V3.2 正式版发布：推理比肩 GPT-5 - https://tech.sina.cn/2025-12-01/detail-infzhxya3047919.d.html
+1. DeepSeek V3.2 正式版发布：推理比肩 GPT-5 - `https://tech.sina.cn/2025-12-01/detail-infzhxya3047919.d.html`
 
-1.  DeepSeek-V3.2 发布：开源模型首次达到 GPT-5 水平 - https://stable-learn.com/zh/deepseek-v32-tech-report/
+1. DeepSeek-V3.2 发布：开源模型首次达到 GPT-5 水平 - `https://stable-learn.com/zh/deepseek-v32-tech-report/`
 
-1.  DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理 - https://www.oschina.net/news/386993
+1. DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理 - `https://www.oschina.net/news/386993`
 
-1.  DeepSeek AI Releases DeepSeekMath-V2 - https://www.marktechpost.com/2025/11/28/deepseek-ai-releases-deepseekmath-v2-the-open-weights-maths-model-that-scored-118-120-on-putnam-2024/
+1. DeepSeek AI Releases DeepSeekMath-V2 - `https://www.marktechpost.com/2025/11/28/deepseek-ai-releases-deepseekmath-v2-the-open-weights-maths-model-that-scored-118-120-on-putnam-2024/`
 
-1.  DeepSeek-Math-V2 Launches: Open Source Model Conquers IMO - https://news.aibase.com/news/23185
+1. DeepSeek-Math-V2 Launches: Open Source Model Conquers IMO - `https://news.aibase.com/news/23185`
 
-1.  DeepSeek-V3.2-Speciale Hugging Face - https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale
+1. DeepSeek-V3.2-Speciale Hugging Face - `https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale`
 
-1.  Deepseek V3.2 rivals GPT-5 and Gemini 3 Pro - https://the-decoder.com/deepseek-v3-2-rivals-gpt-5-and-gemini-3-pro-reaches-imo-gold-level-as-open-source/
+1. Deepseek V3.2 rivals GPT-5 and Gemini 3 Pro - `https://the-decoder.com/deepseek-v3-2-rivals-gpt-5-and-gemini-3-pro-reaches-imo-gold-level-as-open-source/`
 
-1.  DeepSeek V3.2 用户评价 - https://www.zhihu.com/question/1978819912970555965
+1. DeepSeek V3.2 用户评价 - `https://www.zhihu.com/question/1978819912970555965`
 
-1.  DeepSeek-V3.2 系列大语言模型发布 - https://www.sysgeek.cn/deepseek-v3-2/
+1. DeepSeek-V3.2 系列大语言模型发布 - `https://www.sysgeek.cn/deepseek-v3-2/`
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

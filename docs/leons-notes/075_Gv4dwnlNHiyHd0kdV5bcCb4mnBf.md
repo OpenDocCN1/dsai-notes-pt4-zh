@@ -1,3 +1,4 @@
+
 # 231112｜Nvidia 最新 AI 超级计算机；阿里即将开源国内规模最大的 AI 大模型，720 亿参数；Meta 携手 HuggingFace 加速开源 AI 模型；OpenAI 首届开发者大会
 
 > 来源：[https://leonzhang.feishu.cn/docx/ImTudE4xrob1u0xe1NdcjZE9nSh](https://leonzhang.feishu.cn/docx/ImTudE4xrob1u0xe1NdcjZE9nSh)
@@ -5,7 +6,7 @@
 ![](img/1735c5dbeb14e76057631a294b7767cf.png)
 
 ```
-tree bark delicacy close-up food photography --ar 16:9 --tile 
+tree bark delicacy close-up food photography --ar 16:9 --tile
 ```
 
 ## 👣 上周动态
@@ -26,15 +27,13 @@ GH200 是英伟达最新的 AI 超级计算机，相比 H100 在训练和部署�
 
 ### Meta 携手 Hugging Face 加速开源人工智能模型
 
-Meta 与 Hugging Face 和 Scaleway 联手，共同推动巴黎 Station F 的人工智能创业项目。旨在推广更加“开放和协作”的法国科技行业发展。此举发生在人工智能领域监管审查加强的时刻，而 Meta 首席 AI 科学家 Yann LeCun 等
-
-70 多位人呼吁更加开放的 AI 开发，同时警告不要仓促进行监管，以免权力过度集中。初创公司有机会参与该计划，从即日起到 12 月 1 日接受申请，5 名获奖者将于 1 月至 6 月进入加速器计划。合作伙伴 Hugging Face 是一家拥有 10 亿美元风险投资的初创公司，专注于开源替代方案。合作伙伴 Scaleway 是 Meta 选择的较小的欧洲公司，而非主要的云基础设施公司或开源人工智能竞争对手。成功的初创公司将受到 Meta 研究人员的指导，使用 Hugging Face 平台和工具，以及 Scaleway 的计算资源。
+Meta 与 Hugging Face 和 Scaleway 联手，共同推动巴黎 Station F 的人工智能创业项目。旨在推广更加“开放和协作”的法国科技行业发展。此举发生在人工智能领域监管审查加强的时刻，而 Meta 首席 AI 科学家 Yann LeCun 等 70 多位人呼吁更加开放的 AI 开发，同时警告不要仓促进行监管，以免权力过度集中。初创公司有机会参与该计划，从即日起到 12 月 1 日接受申请，5 名获奖者将于 1 月至 6 月进入加速器计划。合作伙伴 Hugging Face 是一家拥有 10 亿美元风险投资的初创公司，专注于开源替代方案。合作伙伴 Scaleway 是 Meta 选择的较小的欧洲公司，而非主要的云基础设施公司或开源人工智能竞争对手。成功的初创公司将受到 Meta 研究人员的指导，使用 Hugging Face 平台和工具，以及 Scaleway 的计算资源。
 
 ### [把](https://mp.weixin.qq.com/s/17425kWQMxwGXmTMK2vwtw) ChatGPT 塞进副驾驶！清华、中科院、MIT 联合提出 Co-Pilot 人机交互框架：完美把控乘客意图
 
-来自清华大学、中国科学院、MIT 的科研人员对于大语言模型在人机交互领域中的应用进行了研究，设计了一种名为 Co-Pilot 的人机交互框架，使用提示引导 ChatGPT（gpt3.5）在考虑人主观意图的同时完成简单的自动驾驶任务。
+来自清华大学、中国科学院、MIT 的科研人员对于大语言模型在人机交互领域中的应用进行了研究，设计了一种名为 Co-Pilot 的人机交互框架，使用提示引导 ChatGPT（`gpt3.5`）在考虑人主观意图的同时完成简单的自动驾驶任务。
 
-+   论文链接：https://www.researchgate.net/publication/374800815_ChatGPT_as_Your_Vehicle_Co-Pilot_An_Initial_Attempt
++ 论文链接：https://www.researchgate.net/publication/374800815_ChatGPT_as_Your_Vehicle_Co-Pilot_An_Initial_Attempt
 
 ![](img/8ba03f74abc8b4cf5d6a3130c2d9aa8d.png)
 
@@ -46,7 +45,7 @@ Meta 与 Hugging Face 和 Scaleway 联手，共同推动巴黎 Station F 的人�
 
 OpenAI 引入了一系列新功能和改进，同时降低了平台各部分的价格。其中包括发布了 GPT-4 Turbo 模型，具备 128K 上下文窗口支持，提供更高性价比。还推出了新的 Assistants API，允许开发人员构建多模式 AI 应用程序，包括访问视觉、图像创建和文本转语音等功能。平台还提供了函数调用更新，允许用户为模型描述应用函数或外部 API，改进了指令遵循和对 JSON 模式的支持。另外，引入了带有种子参数的可重复输出、对数概率输出等功能。
 
-此外，还发布了 GPT-3.5 Turbo 模型，支持 16K 上下文窗口和其他改进。在多模态方面，平台支持 GPT-4 Turbo 模型中的图像，DALLE 3 集成和文本转语音 API。还计划提供 GPT-4 的微调访问程序以及为组织提供的定制模型计划。此外，还降低了输入和输出代币的价格，推出了“版权之盾"来协助客户处理版权侵权索赔，发布了更新的 Whisper large-V3 ASR 模型，以及一致性解码器，为各种图像相关任务提供显着改进。
+此外，还发布了 GPT-3.5 Turbo 模型，支持 16K 上下文窗口和其他改进。在多模态方面，平台支持 GPT-4 Turbo 模型中的图像，DALLE 3 集成和文本转语音 API。还计划提供 GPT-4 的微调访问程序以及为组织提供的定制模型计划。此外，还降低了输入和输出代币的价格，推出了“版权之盾"来协助客户处理版权侵权索赔，发布了更新的 Whisper large-V3 ASR 模型，以及一致性解码器，为各种图像相关任务提供显著改进。
 
 ### [最强开源大模型刚刚易主！李开复率队](https://mp.weixin.qq.com/s/wAJBemkk0acMPJm76cxn7w)问鼎全球多项榜单，40 万文本处理破纪录
 
@@ -80,7 +79,7 @@ OpenAI 将于周一上午 10 点按照太平洋标准时间举办其开发者日
 
 浏览来自全球创建者的每日更新的自定义 GPT 模型目录。
 
-+   地址： https://allgpts.co
++ 地址：https://allgpts.co
 
 ![](img/1169676d72fbff332032f9c4eca40b60.png)
 
@@ -88,7 +87,7 @@ OpenAI 将于周一上午 10 点按照太平洋标准时间举办其开发者日
 
 目前网站上收录了 400 个 GPTs，并且还在不断增加中
 
-+   地址：http://gptshunter.com
++ 地址：http://gptshunter.com
 
 ![](img/b07a5172222a07f95386b6722765a746.png)
 
@@ -100,7 +99,7 @@ NVIDIA 为满足中国市场不断增长的人工智能需求，开发了三款�
 
 Mootion 允许用户通过简单的文字描述生成 3D 角色的动作。只需一个词或一个简单的句子，即可让 3D 角色展示各种动作和姿态。用户可以使用指令定义所需的动作，选择角色，并选择是否在原地呈现动作。生成的动作可作为透明背景视频和 FBX 格式文件下载，并可在 Blender、3Ds Max、Maya 等多种 3D 建模软件中使用。
 
-+   Discord: https://discord.com/invite/AapmuVJqxx
++ Discord: https://discord.com/invite/AapmuVJqxx
 
 ### E4S：一个精细化的面部交换（换脸）技术
 
@@ -108,11 +107,9 @@ Mootion 允许用户通过简单的文字描述生成 3D 角色的动作。只�
 
 它能够非常精确地处理脸部的每一个小细节，包括你脸上的每一颗痣、每一条皱纹，甚至是光照和阴影。
 
-+   项目地址：https://e4s2023.github.io
-
-+   论文：https://arxiv.org/abs/2310.15081
-
-+   GitHub: https://github.com/e4s2023/E4S2023
++ 项目地址：https://e4s2023.github.io
++ 论文：https://arxiv.org/abs/2310.15081
++ GitHub: https://github.com/e4s2023/E4S2023
 
 ![](img/7cb4209a8c3a8a4f1860d7b1638ab8c0.png)
 
@@ -120,11 +117,9 @@ Mootion 允许用户通过简单的文字描述生成 3D 角色的动作。只�
 
 ### 吴恩达新课：《矢量数据库：从嵌入到应用程序》
 
-+   为不同行业构建高效、实用的应用程序，包括混合和多语言搜索。
-
-+   了解向量数据库并使用它们来开发 GenAl 应用程序，而无需自己培训或微调 LLM。
-
-+   了解何时最好将矢量数据库应用于应用程序。
++ 为不同行业构建高效、实用的应用程序，包括混合和多语言搜索。
++ 了解向量数据库并使用它们来开发 GenAl 应用程序，而无需自己培训或微调 LLM。
++ 了解何时最好将矢量数据库应用于应用程序。
 
 ### [OpenAI 开发者大会｜2023 年 11 月 7 日](https://sm84lfdag7.feishu.cn/wiki/GhBJwptEpiW6Sjk584OcA8hNn8f)
 
@@ -132,6 +127,6 @@ Mootion 允许用户通过简单的文字描述生成 3D 角色的动作。只�
 
 ### [LMMs 多模态大模型的曙光：初探 GPT-4V（ision）【宝玉】](https://sm84lfdag7.feishu.cn/wiki/BXbBwL0FrikBsCkw6djchOyQn0H)
 
-[Patterns for Building LLM-based Systems & Products](https://sm84lfdag7.feishu.cn/wiki/AefQwLJ5FibDPpkCRMrc7LW8nEh)
+### [Patterns for Building LLM-based Systems & Products](https://sm84lfdag7.feishu.cn/wiki/AefQwLJ5FibDPpkCRMrc7LW8nEh)
 
 ### [吴恩达 2023 年最新演讲：人工智能领域的新机遇](https://sm84lfdag7.feishu.cn/wiki/PJPMwn8cHie0Iwk1MPVc1f34nYc)

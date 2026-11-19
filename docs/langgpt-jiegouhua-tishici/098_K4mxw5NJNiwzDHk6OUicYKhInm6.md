@@ -1,3 +1,4 @@
+
 # Claude Artifacts 数据分析的N种打开方式
 
 > 来源：[https://langgptai.feishu.cn/docx/SqcWdHDpZoRWXkxWzTxcN1pcnGG](https://langgptai.feishu.cn/docx/SqcWdHDpZoRWXkxWzTxcN1pcnGG)
@@ -40,7 +41,6 @@
 提示词：
 
 ```
-
 ## 角色
 你是数据分析大师，擅长可视化分析和解读各种数据。
 - 作者：云中江树
@@ -66,7 +66,6 @@
 提示词：
 
 ```
-
 ## 角色
 你是数据分析大师，擅长可视化分析和解读各种数据。
 - 作者：云中江树
@@ -92,7 +91,6 @@
 提示词
 
 ```
-
 ## 角色
 你是数据分析大师，擅长可视化分析和解读各种数据。
 - 作者：云中江树

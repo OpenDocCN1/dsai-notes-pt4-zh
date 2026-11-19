@@ -1,22 +1,23 @@
-# Intern-S1-mini 部署实践 （lmdeploy 版）
+
+# Intern-S1-mini 部署实践（lmdeploy 版）
 
 > 来源：[https://aicarrier.feishu.cn/docx/BD5fdhf68oh0WrxCR8OcvutDnlb](https://aicarrier.feishu.cn/docx/BD5fdhf68oh0WrxCR8OcvutDnlb)
 
-本文将带你快速上手 InternLM/Intern-S1-mini 在书生开发机用户lmdeploy进行部署与调用。
+本文将带你快速上手 `InternLM/Intern-S1-mini` 在书生开发机用户 `lmdeploy` 进行部署与调用。
 
 ![](img/f3ef948d63f9c977fed3a917780b57ac.png)
 
-hf模型链接: Inter**nL**M/Intern-S1-mini，欢迎大家点赞、下载来玩👏
+hf 模型链接：`InternLM/Intern-S1-mini`，欢迎大家点赞、下载来玩👏
 
-网页书生对话在线体验：https://chat.intern-ai.org.cn/
+网页书生对话在线体验：`https://chat.intern-ai.org.cn/`
 
 ## 开发机的选择
 
-在创建开发机界面选择镜像为 Cuda12.2-conda，并选择 GPU 为 30%A100 or 50 % A100 (有条件越大越好)。
+在创建开发机界面选择镜像为 `Cuda12.2-conda`，并选择 GPU 为 30%A100 or 50 % A100（有条件越大越好）。
 
 ![](img/7812022fa57e0401621b295dda566d81.png)
 
-安装依赖
+### 安装依赖
 
 ```
 conda create -n lmdeploy python=3.10 -y
@@ -24,7 +25,7 @@ conda activate lmdeploy
 ```
 
 ```
-pip install &quot;lmdeploy==0.9.2.post1&quot; &quot;transformers==4.55.2&quot;
+pip install "lmdeploy==0.9.2.post1" "transformers==4.55.2"
 ```
 
 ## 启动
@@ -48,19 +49,19 @@ from openai import OpenAI
 import json
 
 messages = [
-{
-    &#x27;role&#x27;: &#x27;user&#x27;,
-    &#x27;content&#x27;: &#x27;who are you&#x27;
-}, {
-    &#x27;role&#x27;: &#x27;assistant&#x27;,
-    &#x27;content&#x27;: &#x27;I am an AI&#x27;
-}, {
-    &#x27;role&#x27;: &#x27;user&#x27;,
-    &#x27;content&#x27;: &#x27;AGI is?&#x27;
-}]
+    {
+        'role': 'user',
+        'content': 'who are you'
+    }, {
+        'role': 'assistant',
+        'content': 'I am an AI'
+    }, {
+        'role': 'user',
+        'content': 'AGI is?'
+    }]
 
-openai_api_key = &quot;EMPTY&quot;
-openai_api_base = &quot;http://0.0.0.0:23333/v1&quot;
+openai_api_key = "EMPTY"
+openai_api_base = "http://0.0.0.0:23333/v1"
 client = OpenAI(
     api_key=openai_api_key,
     base_url=openai_api_base,
@@ -74,11 +75,10 @@ response = client.chat.completions.create(
     top_p=0.8,
     max_tokens=2048,
     extra_body={
-        &quot;enable_thinking&quot;: False,
+        "enable_thinking": False,
     }
 )
 print(json.dumps(response.model_dump(), indent=2, ensure_ascii=False))
-
 ```
 
 ![](img/0fd260f50fe54268c7e1ac19e77d29b4.png)

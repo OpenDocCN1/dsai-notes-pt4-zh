@@ -1,32 +1,33 @@
+
 # GPGPU - Memory Model Design
 
 > 来源：[https://learning.feishu.cn/docx/HMGzd6tUaoR2VExY4zKcpqg5nBg](https://learning.feishu.cn/docx/HMGzd6tUaoR2VExY4zKcpqg5nBg)
 
-https://zhuanlan.zhihu.com/p/696367351
+`https://zhuanlan.zhihu.com/p/696367351`
 
 GPU内存模型优化方向
 
-https://course.ece.cmu.edu/~ece847c/S15/lib/exe/fetch.php?media=part2_2_sorin12.pdf
+`https://course.ece.cmu.edu/~ece847c/S15/lib/exe/fetch.php?media=part2_2_sorin12.pdf`
 
 A Primer on Memory Consistency and Cache Coherence
 
-https://pages.cs.wisc.edu/~markhill/papers/isca90_drf0.pdf
+`https://pages.cs.wisc.edu/~markhill/papers/isca90_drf0.pdf`
 
 Weak Ordering - A New Definition
 
-# GPU Memory
+## GPU Memory
 
 challenge:
 
-1.  chip multiprocessors，比如，GPGPU，有 shared memory on chip。
+1. chip multiprocessors，比如，GPGPU，有 shared memory on chip。
 
-## host-device memory Model
+### host-device memory Model
 
 首先，分为 Host Memory 和 Device Memory。
 
 GPU 的 driver 是跑在 host memory 上的。
 
-## Device Memory Hierarchy
+### Device Memory Hierarchy
 
 global memory，习惯上认为是 off-chip memory。当前都是 HBM 方案。
 
@@ -54,7 +55,7 @@ shared memory，SRAM，是 block 内可访问。与L1的位置、速度极其类
 
 寄存器的分配对SM的占用率（occupancy）存在影响，
 
-可以通过 https://xmartlabs.github.io/cuda-calculator/ 计算比较，
+可以通过 `https://xmartlabs.github.io/cuda-calculator/` 计算比较，
 
 举例：如图当registers从32 增加到 128时，occupancy从100%降低到了33.33%：
 
@@ -68,7 +69,7 @@ shared memory，SRAM，是 block 内可访问。与L1的位置、速度极其类
 
 ![](img/94160afbdf366d1efeb9f5aa62c03392.png)
 
-所有运算的thread都需要访问一个constant_A的常量，在存储介质上面constant_A的数据只保存了一份，而内存的物理读取方式决定了这么多thread不能在同一时刻读取到该变量，所以会出现先后访问的问题，这样使得并行计算的thread出现了运算时差。常量内存正是解决这样的问题而设置的，它有对应的cache位置产生多个副本，让thread访问时不存在冲突，从而提高并行度。
+所有运算的thread都需要访问一个`constant_A`的常量，在存储介质上面`constant_A`的数据只保存了一份，而内存的物理读取方式决定了这么多thread不能在同一时刻读取到该变量，所以会出现先后访问的问题，这样使得并行计算的thread出现了运算时差。常量内存正是解决这样的问题而设置的，它有对应的cache位置产生多个副本，让thread访问时不存在冲突，从而提高并行度。
 
 ```
 __constant__ int c1 = 10;  // 声明__constant__ 即可。
@@ -82,21 +83,21 @@ __global__ void kernel1(int *d_dst) {
 
 ![](img/7cbc529061fab5b2f0a7eb6f32ab18bd.png)
 
-## CUDA Memory API
+### CUDA Memory API
 
 | API | Type | Notes |
 | --- | --- | --- |
-| +   cudaMalloc | device memory |  |
-| +   cudaHostAlloc | Pined Memory on host |  |
-| +   cudaMallocManaged | Unified Memory | Reference: [h](https://devblogs.nvidia.com/unified-memory-cuda-beginners/)ttps://devblogs.nvidia.com/unified-memory-cuda-beginners/ |
+| `cudaMalloc` | device memory | |
+| `cudaHostAlloc` | Pined Memory on host | |
+| `cudaMallocManaged` | Unified Memory | Reference: [Unified Memory CUDA Beginners](https://devblogs.nvidia.com/unified-memory-cuda-beginners/) |
 
 CUDA Memory API 的 Async / Sync
 
-[h](https://docs.nvidia.com/cuda/cuda-driver-api/api-sync-behavior.html)ttps://docs.nvidia.com/cuda/cuda-driver-api/api-sync-behavior.html
+[API Sync Behavior](https://docs.nvidia.com/cuda/cuda-driver-api/api-sync-behavior.html)
 
 ![](img/959d354fe28af4cf1610dee9ee3a5c28.png)
 
-## Chip 内 memcpy_async
+### Chip 内 memcpy_async
 
 H100，TMA tensor core。
 
@@ -110,7 +111,7 @@ tensor core 的算力吞吐量，对搬运速度的需求变化。
 
 tensor 粒度的变化，与 warp/work-group 之间的关系。与指令的碎片化程度有关，下发的 overhead 很大。
 
-Ampere 架构之后才支持，通过 cooperative_groups::memcpy_async 操作完成
+Ampere 架构之后才支持，通过 `cooperative_groups::memcpy_async` 操作完成
 
 数据从 L2 到 SRAM 时，可以 bypass L1 和 RF。加速 2x 以上。
 
@@ -123,8 +124,8 @@ Ampere 架构之后才支持，通过 cooperative_groups::memcpy_async 操作完
 ```
 /// This example streams elementsPerThreadBlock worth of data from global memory
 /// into a limited sized shared memory (elementsInShared) block to operate on.
-#include &lt;cooperative_groups.h&gt;
-#include &lt;cooperative_groups/memcpy_async.h&gt;
+#include <cooperative_groups.h>
+#include <cooperative_groups/memcpy_async.h>
 
 namespace cg = cooperative_groups;
 
@@ -136,7 +137,7 @@ __global__ void kernel(int* global_data) {
 
     size_t copy_count;
     size_t index = 0;
-    while (index &lt; elementsPerThreadBlock) {
+    while (index < elementsPerThreadBlock) {
         cg::memcpy_async(tb, local_smem, elementsInShared, global_data + index, elementsPerThreadBlock - index);
         copy_count = min(elementsInShared, elementsPerThreadBlock - index);
         cg::wait(tb);
@@ -146,57 +147,57 @@ __global__ void kernel(int* global_data) {
 }
 ```
 
-# Memory Model
+## Memory Model
 
 分为
 
-+   hardware 负责的 硬件内存模型。
++ hardware 负责的 硬件内存模型。
 
-+   compiler 负责的 软件内存模型。
++ compiler 负责的 软件内存模型。
 
-+   更上层的
++ 更上层的
 
-## Hardware Memory Model
+### Hardware Memory Model
 
 内存一致模型
 
-+   Sequential Consistency (SC): 讨论一致模型是什么，如何实现之类的
++ Sequential Consistency (SC): 讨论一致模型是什么，如何实现之类的
 
-+   Total Store Ordering（TSO）
++ Total Store Ordering（TSO）
 
-+   更弱的模型
++ 更弱的模型
 
-### SC - Sequential Consistency 模型
+#### SC - Sequential Consistency 模型
 
 Sequential Consistency 模型：
 
-1.  program order: 对某个processor而言，execution maintains program order
+1. program order: 对某个processor而言，execution maintains program order
 
-1.  CPU 的 out-of-order execution 依旧能保证 memory order。
+1. CPU 的 out-of-order execution 依旧能保证 memory order。
 
-1.  比如，遵循各种 data dependency，多个 load/store 的先后顺序保证问题。
+1. 比如，遵循各种 data dependency，多个 load/store 的先后顺序保证问题。
 
-1.  global total order: 对于所有processor而言，所有的内存操作有一个单一的全局的order
+1. global total order: 对于所有processor而言，所有的内存操作有一个单一的全局的order
 
-1.  由内存和 cache 负责保证
+1. 由内存和 cache 负责保证
 
 cache coherence protocol 的作用在于，让cache invisible，让你在上层无法判断cache是否存在。
 
 Consistency的作用嘛，大概在于让你能够对内存顺序进行reason，让你知道什么reorder可以什么不可以。根据Hennessy和Patterson的定义，coherence是：
 
-+   对某个processor而言，在一次写之后相邻的一次读会读到写的内存。
++ 对某个processor而言，在一次写之后相邻的一次读会读到写的内存。
 
-+   对于不同的两个processor而言，A的读会读到B最近的一次写的结果，如果这个读在写之后的一定时间发生。读最终是能读到，但具体隔多久能读到，是consistency问题。
++ 对于不同的两个processor而言，A的读会读到B最近的一次写的结果，如果这个读在写之后的一定时间发生。读最终是能读到，但具体隔多久能读到，是consistency问题。
 
-+   对于同一个 memory location，对该地点所有的write是serialized的，也就是有一个单一的全局顺序。
++ 对于同一个 memory location，对该地点所有的write是serialized的，也就是有一个单一的全局顺序。
 
 对于SC而言，SC的两点coherence都没有满足，譬如coherence没有指明两次相邻读之间的顺序，coherence只对某个地点具有单一store order等（而SC是total order for all memory ops）。但是不论consistency有多松，coherence（以上条件）都是能够保证的。
 
-### TSO - Total Store Ordering
+#### TSO - Total Store Ordering
 
 放松了一些约束。
 
-### Memory Barrier (Fences)
+#### Memory Barrier (Fences)
 
 就实现而言，memory fence 相当于清空 store buffer。
 
@@ -204,25 +205,25 @@ C++的内存ordering是既约束compiler的reordering，也约束硬件在运行
 
 c++ memory model
 
-https://en.cppreference.com/w/cpp/atomic/memory_order
+`https://en.cppreference.com/w/cpp/atomic/memory_order`
 
-On **s**tr[ongly-orde](https://www.zhihu.com/search?q=non-atomic&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A510745335%7D)red systems — x86, SPARC TSO, IBM mainframe, etc. — release-acquire ordering is automatic for the majority of operations. No additional CPU instructions are issued for this synchronization mode; only certain compiler optimizations are affected (e.g., the compiler is prohibited from moving non-atomic stores past the atomic store-release or performing non-atomic loads earlier than the atomic load-acquire). On weakly-ordered systems (ARM, Itanium, PowerPC), special CPU load or memory fence instructions are used.
+On strongly-ordered systems — x86, SPARC TSO, IBM mainframe, etc. — release-acquire ordering is automatic for the majority of operations. No additional CPU instructions are issued for this synchronization mode; only certain compiler optimizations are affected (e.g., the compiler is prohibited from moving non-atomic stores past the atomic store-release or performing non-atomic loads earlier than the atomic load-acquire). On weakly-ordered systems (ARM, Itanium, PowerPC), special CPU load or memory fence instructions are used.
 
-## Weak Ordering
+### Weak Ordering
 
-# 优化概念
+## 优化概念
 
-## Pined Memory - on host
+### Pined Memory - on host
 
 分配在 host 上的 memory，区分 pined memory 和 pageable memory。
 
 过度使用 Pined Memory，会消耗系统的可用内存，有概率拖慢整个系统的运行速度。
 
-Dec 04, 2012 [h](https://devblogs.nvidia.com/how-optimize-data-transfers-cuda-cc/)ttps://devblogs.nvidia.com/how-optimize-data-transfers-cuda-cc/
+Dec 04, 2012 [Reference](https://devblogs.nvidia.com/how-optimize-data-transfers-cuda-cc/)
 
 ![](img/6996990daa1557f502a018d35827eaf5.png)
 
-## h2d - Zero copy
+### h2d - Zero copy
 
 host to device 时，直接搬到 GPU cache，不经过 global memory & shared memory？
 
@@ -232,39 +233,43 @@ host to device 时，直接搬到 GPU cache，不经过 global memory & shared m
 
 code
 
-https://github.com/CalvinXKY/BasicCUDA/blob/master/memory_opt/zeroCopy.cu
+`https://github.com/CalvinXKY/BasicCUDA/blob/master/memory_opt/zeroCopy.cu`
 
 ```
 float *a_h, *a_map; // 定义两个指针：a_h 内存原指针，a_map映射指针 
-...cudaGetDeviceProperties(&amp;prop, 0);       // 获取GPU的特性，看是否支持地址映射 
+...cudaGetDeviceProperties(&prop, 0);       // 获取GPU的特性，看是否支持地址映射 
 if (!prop.canMapHostMemory) 
     exit(0);cudaSetDeviceFlags(cudaDeviceMapHost);    // 设置设备属性，打开地址映射
-cudaHostAlloc(&amp;a_h, nBytes, cudaHostAllocMapped);  // 开辟pinned memory
-cudaHostGetDevicePointer(&amp;a_map, a_h, 0);    // 地址映射 a_h -&gt;  a_map.
-kernel&lt;&lt;&lt;gridSize, blockSize&gt;&gt;&gt;(a_map); 
+cudaHostAlloc(&a_h, nBytes, cudaHostAllocMapped);  // 开辟pinned memory
+cudaHostGetDevicePointer(&a_map, a_h, 0);    // 地址映射 a_h -> a_map.
+kernel<<<gridSize, blockSize>>>(a_map); 
 ```
 
-## UMA
+### UMA
 
 2014 年 Kepler 架构，CUDA 6，提出了 UMA (Unified Memory) 的概念。
 
-只需要调用 cudaMallocManaged 这个 API，不用管内存是在哪里分的，也不用去做拷贝，UMA 都会帮你打理好。
+只需要调用 `cudaMallocManaged` 这个 API，不用管内存是在哪里分的，也不用去做拷贝，UMA 都会帮你打理好。
 
-和传**统的 cudaMalloc**/cudaMallocHost 不同，通过 cudaMallocManaged 申请的内存（称为 managed memory）不是立即满足的，而是等真的用到时才分配物理内存，即 demand paging（此处可类比 Linux 中 kmalloc 和 malloc/vmalloc 的区别）。
+和传统的 `cudaMalloc`/`cudaMallocHost` 不同，通过 `cudaMallocManaged` 申请的内存（称为 managed memory）不是立即满足的，而是等真的用到时才分配物理内存，即 demand paging（此处可类比 Linux 中 `kmalloc` 和 `malloc`/`vmalloc` 的区别）。
 
-伴随 CUDA 6 的是 Kepler **架构，基于这种架构的** **GP**U 不能处理 page fault，对于 demand paging 的支持有限。而到了 CUDA 8 时代，硬件已升级为能够支持 page fault 的 Pascal 架构，UMA 才步入成熟。
+伴随 CUDA 6 的是 Kepler 架构，基于这种架构的 GPU 不能处理 page fault，对于 demand paging 的支持有限。而到了 CUDA 8 时代，硬件已升级为能够支持 page fault 的 Pascal 架构，UMA 才步入成熟。
 
 不能处理 page fault 主要是 GPU thread 不能暂停，因为访问 absent page 时，GPU 需要 pause 正在执行的 thread ，把页面弄回 device memory。
 
 而如果 GPU 支持 page fault，就没有这样的限制，暂时不用的 GPU 页面甚至可以 evict 到 host memory，下次用到时再换回。
 
-**对于 page fau**lt 存在的开销，也可通过 Prefetching 的方式减小（思路类似于 Linux 中对 Page Cache 的 Readahead）。
+对于 page fault 存在的开销，也可通过 Prefetching 的方式减小（思路类似于 Linux 中对 Page Cache 的 Readahead）。
 
-一个 CUDA 程序，有一部分是由 CPU 完成的（比如初始化和返回结果，下图蓝色部分所示），有一部分是由 GPU 完成的（比如计算和渲染，下图绿色部分所示），里面的变量 x, y 通过 CPU/GPU 各自的虚拟地址（VA）访问，如果这两个 VA 能保持一致，将带来编程的方便。"single-pointer-to-data"，也是 UMA 的一个重要组成部分。
+
+
+# CUDA 程序与虚拟地址一致性
+
+一个 CUDA 程序，有一部分是由 CPU 完成的（比如初始化和返回结果，下图蓝色部分所示），有一部分是由 GPU 完成的（比如计算和渲染，下图绿色部分所示），里面的变量 `x`, `y` 通过 CPU/GPU 各自的虚拟地址（`VA`）访问，如果这两个 `VA` 能保持一致，将带来编程的方便。`single-pointer-to-data`，也是 UMA 的一个重要组成部分。
 
 这就要求 GPU 的虚拟地址空间和 CPU 匹配，x86-64 的 CPU 一般是 48 位吧，Pascal 架构的 GPU 是 49 位，完全没问题。
 
-VA 相同，但 PA 可能不同。CPU 的用户态程序虽然和 GPU 使用相同的 address space，但有各自独立的 per-process 页表。
+`VA` 相同，但 `PA` 可能不同。CPU 的用户态程序虽然和 GPU 使用相同的 address space，但有各自独立的 per-process 页表。
 
 ## Weakly-Ordered Memory Model
 
@@ -274,65 +279,65 @@ TODO
 
 MMU 很重
 
-sm - work group - cluster 8M
+`sm` - work group - cluster 8M
 
 ![](img/114c94a0b3a0dab267d5b597a586f233.png)
 
 # Compiler 优化需求
 
-为什么重视内存访问
+## 为什么重视内存访问
 
-+   必须清楚desirable (getter)和undesirable (scatter)的内存访问方式。 ->gather 和scatter
++ 必须清楚 `desirable`（`getter`）和 `undesirable`（`scatter`）的内存访问方式。`gather` 和 `scatter`
 
-+   getter:memory到thread有多个输入，只有一个输出（图像模糊算法）
++ `getter`:memory 到 `thread` 有多个输入，只有一个输出（图像模糊算法）
 
-+   scatter:thread到memory有一个输入，多个输出（每个thread将结果scatter到各个memory，将附近值+1）
++ `scatter`:thread 到 memory 有一个输入，多个输出（每个 `thread` 将结果 `scatter` 到各个 memory，将附近值 +1）
 
-内存模型对GPU编程中优化方向
+## 内存模型对 GPU 编程中优化方向
 
-+   global memory
++ `global memory`
 
-+   带宽、内存合并和内存对齐
++ 带宽、内存合并和内存对齐
 
-+   shared memory
++ `shared memory`
 
-+   bank conflict、数据分布、conner-turning、async
++ bank conflict、数据分布、conner-turning、async
 
-+   const cache
++ `const cache`
 
-+   broadcast、serialization
++ broadcast、serialization
 
-+   L2 cache
++ `L2 cache`
 
-+   persisting
++ persisting
 
-+   local memory
++ `local memory`
 
-+   数据重用、数据对齐、同步原语
++ 数据重用、数据对齐、同步原语
 
-+   register
++ `register`
 
-+   数据重用、循环展开
++ 数据重用、循环展开
 
-与锁有关的优化方向
+## 与锁有关的优化方向
 
-+   global memory -> shared memory
++ `global memory` -> `shared memory`
 
-+   global memory -> texture memory
++ `global memory` -> `texture memory`
 
-+   global memory -> warp/block
++ `global memory` -> `warp`/`block`
 
-解决数据竞争与数据一致性的锁与内存屏障
+## 解决数据竞争与数据一致性的锁与内存屏障
 
-+   数据竞争 -> 锁
++ 数据竞争 -> 锁
 
-+   数据一致性 -> memory barrier / fence
++ 数据一致性 -> `memory barrier` / `fence`
 
 # CPU & Linux Memory
 
 https://mp.weixin.qq.com/s/vc9xEkG5FFKkqTJfCb7kzA
 
-Linux 里面用户态和内核态共享数据的两种方式：read/write 和 mmap。可能很多人都觉得 mmap 不用拷贝，性能应该更好，但：随着硬件的发展，内存拷贝消耗的时间已大大降低，有些情况下，mmap 的性能反倒比不过 read/write。
+Linux 里面用户态和内核态共享数据的两种方式：`read`/`write` 和 `mmap`。可能很多人都觉得 `mmap` 不用拷贝，性能应该更好，但：随着硬件的发展，内存拷贝消耗的时间已大大降低，有些情况下，`mmap` 的性能反倒比不过 `read`/`write`。
 
 Understanding the Linux® Virtual Memory Manager
 

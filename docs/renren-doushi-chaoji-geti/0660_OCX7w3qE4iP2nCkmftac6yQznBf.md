@@ -1,15 +1,16 @@
+
 # 一个好玩又能赚钱的音乐游戏赛道分享
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KKvZd5zwAoHVQlxWgTrc2tgJnWc](https://xuqiwei1986.feishu.cn/docx/KKvZd5zwAoHVQlxWgTrc2tgJnWc)
 
-| **版本** | **更新描述** | 作者 | **更新日期** |
+| 版本 | 更新描述 | 作者 | 更新日期 |
 | --- | --- | --- | --- |
 | V1.0 | 新建文档 | 科学羊 | 2024-12-25 |
 | V1.1 | 优化内容 | 科学羊 | 2025-03-02 |
 
 大家好，我是科学羊，👸号专栏日更作者，知名报社签约编辑、海外内容创业实践者、游戏视频创作者。
 
-**本期给大家**继续介绍一个非常好**玩的赛道**，简单说就是游戏+动画。有点像以前流行的音乐盒子。
+本期给大家继续介绍一个非常好玩的赛道，简单说就是游戏+动画。有点像以前流行的音乐盒子。
 
 不过今天谈的这个稍微有点门槛和创意。详细点说，就是通过自己设计游戏音乐+油管爆款视频进行组合。
 
@@ -17,9 +18,9 @@
 
 废话不多，先看对标，我给大家进行技术拆解！
 
-# 一、前言
+## 一、前言
 
-## 1.1 简介
+### 1.1 简介
 
 **赛道面向群体**：海外、国内
 
@@ -27,7 +28,7 @@
 
 **创作内容**：音乐游戏+动画视频
 
-**游戏名称**：midi-playground
+**游戏名称**：`midi-playground`
 
 **视频方式**：short TK YT
 
@@ -41,11 +42,11 @@
 
 2、热爱音乐或者对音乐感兴趣的人士
 
-3、了解音乐.mid文件
+3、了解音乐`.mid`文件
 
 4、基本的视频剪辑技术
 
-5、懂得github开源代码，修改代码（非必要）
+5、懂得`github`开源代码，修改代码（非必要）
 
 先看下这几个账号，
 
@@ -55,7 +56,7 @@
 
 ![](img/9a93ee39b4f657095e43092c2aab6e64.png)
 
-## 1.2对标链接
+### 1.2 对标链接
 
 节选，
 
@@ -63,9 +64,9 @@
 
 https://www.youtube.com/@xPoTaToMusic/videos
 
-## 1.3 技术拆解与分析
+### 1.3 技术拆解与分析
 
-这个赛道主要包含两大部分，**第一部分就是上半部分区域的动画部**分，第二部分就i是下半部分的游戏音乐部分。
+这个赛道主要包含两大部分，第一部分就是上半部分区域的动画部分，第二部分就是下半部分的游戏音乐部分。
 
 其中上半部分大家可以去搜索「油管爆款视频」来剪辑，不过一定要二创，如果直接搬运可能会过不了审核。二创的方法就是讲故事，增加一些音频或者贴图素材，或者混剪。
 
@@ -75,55 +76,55 @@ https://www.youtube.com/@xPoTaToMusic/videos
 
 好，基本的简介说完了，看下对标基本都懂，接下来我们来分享这里面的技术。
 
-## 1.4 为什么要分享这个赛道？
+### 1.4 为什么要分享这个赛道？
 
 我觉得这个赛道很有特点，比较有门槛，要是你一步步做好了肯定很不错。尤其是对做音乐的人来说真的是很好的一个赛道选择。另外对于新手做模仿二创也是一个不错的选择，虽然有难度，但是不那么卷。
 
-# 二、游戏安装与操作
+## 二、游戏安装与操作
 
-## 2.1 游戏安装
+### 2.1 游戏安装
 
-### 方法一：源码
+#### 方法一：源码
 
 游戏仓库地址🔗：https://github.com/quasar098/midi-playground/tree/master
 
-### 方法二：源码文件包
+#### 方法二：源码文件包
 
-如果不方便下载，我放了源文件，大家下载，在cmd，输入 python main.py即可运行
+如果不方便下载，我放了源文件，大家下载，在`cmd`，输入`python main.py`即可运行
 
 ![](img/9a0f643d6fcfeeee76f8c83652d3c685.png)
 
-[midi-playground-master.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EE6ibzPpioOAkfxrErycIk4nnIg)
+[`midi-playground-master.zip`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EE6ibzPpioOAkfxrErycIk4nnIg)
 
 ![](img/6c8961de77fdbafba6d6de49ff3ad88e.png)
 
-### 方法三：免安装包
+#### 方法三：免安装包
 
 ![](img/daa4e9df8fa3d5791c882873740b533f.png)
 
-[midi-playground免安装.rar](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5j0bZirookDmyxUVUZcByqLn9g)
+[`midi-playground免安装.rar`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5j0bZirookDmyxUVUZcByqLn9g)
 
 直接下载免安装的即可，
 
 ![](img/dda86e50a9e4283fd562b443b0c6cf38.png)
 
-直接双击运行mian.exe即可！
+直接双击运行`mian.exe`即可！
 
 不过大家注意，这三种方法各有优势，如果你用第一或者第二种的话可以修改源码，定制自己的产品。而第三种方法可能只能用，没法改。
 
-## 2.2 游戏玩法
+### 2.2 游戏玩法
 
 > 说明：本次我们以第三种方法下载的为例
 
-### 第一步：启动游戏
+#### 第一步：启动游戏
 
 ![](img/f4e3daad66a3e5e9980c778ceb8c4ae0.png)
 
-### 第二步：开始游戏，选择需要的音乐
+#### 第二步：开始游戏，选择需要的音乐
 
 ![](img/28aea630ddb75958863c804c043acd1d.png)
 
-### 第三步：选择好音乐，开始游戏。
+#### 第三步：选择好音乐，开始游戏。
 
 ![](img/9a3338c711bda898c10001fb61c9832a.png)
 
@@ -131,41 +132,41 @@ https://www.youtube.com/@xPoTaToMusic/videos
 
 ![](img/b08d86d33f3d6a4b8a923a2ed73b68a0.png)
 
-## 2.3 修改配置
+### 2.3 修改配置
 
 这里可以修改游戏的模式以及小球的样式等等，如果你懂源码，可以自定义修改。
 
 ![](img/e9589c484563fc8c6cd38ab9c05b401d.png)
 
-## 2.5 如何更换音乐
+### 2.5 如何更换音乐
 
-进入游戏根目录，选择songs
+进入游戏根目录，选择`songs`
 
 ![](img/1f0487428c5799fc30439ca3f47dbba7.png)
 
-打开songs目录
+打开`songs`目录
 
 以下就是歌曲文件
 
 ![](img/5fef73a4ca1f65d1a7be294c26b06d46.png)
 
-我们随便解压一个文件看看，里面包含一个音符.mid文件和json文件
+我们随便解压一个文件看看，里面包含一个音符`.mid`文件和`json`文件
 
 ![](img/4df4fe29a7dfc1c058df4abe5e0a7d34.png)
 
-Json文件就是音乐的详细信息
+`Json`文件就是音乐的详细信息
 
 ```
-{&quot;name&quot;: &quot;Tetris&quot;, &quot;author&quot;: &quot;Hirokazu Tanaka&quot;, &quot;mapper&quot;: &quot;quasar098&quot;, &quot;audio_file&quot;: &quot;tetris.mid&quot;, &quot;song_file&quot;: &quot;tetris.mid&quot;, &quot;version&quot;: 1}
+{"name": "Tetris", "author": "Hirokazu Tanaka", "mapper": "quasar098", "audio_file": "tetris.mid", "song_file": "tetris.mid", "version": 1}
 ```
 
-所以大家在更换音乐的时候就是处理好你要的音乐音符.mid，和Json文件一起打包zip放在这个文件夹即可！
+所以大家在更换音乐的时候就是处理好你要的音乐音符`.mid`，和`Json`文件一起打包zip放在这个文件夹即可！
 
-# 二、视频处理SOP
+## 三、视频处理SOP
 
 这个赛道最重要的就是处理音乐问题，因为你的音乐代表的你创作的唯一性。
 
-## 第一步：赛道音乐选择
+### 第一步：赛道音乐选择
 
 关于这个赛道一般有3种方式制作：
 
@@ -177,11 +178,11 @@ Json文件就是音乐的详细信息
 
 > 以下步骤为第二种的操作方法
 
-## 第二步：音乐提取
+### 第二步：音乐提取
 
 下载你需要的音乐或者视频，导入剪映，分离音频，然后导出mp3格式。可以用uvr5或者剪映之类的先提取自己需要的声部。
 
-## 第三步：音频删减
+### 第三步：音频删减
 
 下载RipX DAW，链接https://hitnmix.com/
 
@@ -207,7 +208,7 @@ Json文件就是音乐的详细信息
 
 ![](img/df7daa3b109e60d44a915f1afd8438d2.png)
 
-## 第四步：增加自定义音道，如”铛铛铛”
+### 第四步：增加自定义音道，如”铛铛铛”
 
 打开网站：https://signal.vercel.app/edit，并打开你刚才到出来的midi文件
 
@@ -219,7 +220,7 @@ Json文件就是音乐的详细信息
 
 处理完成之后保存导出最终的 mid文件。注意还需要导出一份mp3格式的文件。其中mid格式的文件就直接打包成游戏所识别的压缩包，供游戏使用，而mp3格式的文件后期需要与原视频合并。
 
-## 第五步：游戏后端处理
+### 第五步：游戏后端处理
 
 如下图所示，将mid文件和音乐信息脚本等一起打包为songing.zip放在游戏根目录的song文件夹。
 
@@ -227,13 +228,13 @@ Json文件就是音乐的详细信息
 
 完成之后打开游戏进行测试，如果效果可以就可以直接录制⏺️。
 
-## 第六步：合并音乐
+### 第六步：合并音乐
 
-将第四步导出的mp3格式的音乐与原视频一起导**入剪映，注意一定要匹配音符，**然后一起导出最终版本的MP3格式的文件。
+将第四步导出的mp3格式的音乐与原视频一起导入剪映，注意一定要匹配音符，然后一起导出最终版本的MP3格式的文件。
 
-## 第七步：视频合成
+### 第七步：视频合成
 
-**重新打开**剪映，新建一个页面，这里要导入三个文件：
+重新打开剪映，新建一个页面，这里要导入三个文件：
 
 1、将最终的MP3导入（合成的）；
 
@@ -243,39 +244,39 @@ Json文件就是音乐的详细信息
 
 将3个文件做好匹配，然后一起导出即可！
 
-# 三、运营与剪辑
+## 四、运营与剪辑
 
-## 3.1 素材从哪里找
+### 3.1 素材从哪里找
 
 动画直接拿他的剪就好
 
 https://www.youtube.com/@CartoonGamesYT
 
-# 四、效果分享
+## 五、效果分享
 
 以下是我自己尝试组合的作品，请大家欣赏～
 
-## 4.1 BeamNG + 音乐块
+### 4.1 BeamNG + 音乐块
 
 ![](img/99d46a4c5f9a0b8591899e4e375c4a80.png)
 
-[singma boy.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aqx1bJJpTo6E0oxbTCmcQjysnof)
+[`singma boy.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aqx1bJJpTo6E0oxbTCmcQjysnof)
 
 之前我分享过关于BeamNG游戏赛道的文章，大家如果对这个游戏不大熟，也可以二创别人的爆款+组合自己的游戏小球来实现。
 
 如果不熟BNG的人可以访问：[月入10K+既能玩又能赚钱的奇特赛道分享](https://hez86518tv.feishu.cn/docx/TnWYdJIU9obuiOx1YpbcU0ZWnLe)
 
-## 4.2 节奏盒子 + 音乐块
+### 4.2 节奏盒子 + 音乐块
 
 ![](img/0d9d066880609d416981d6e12363a3f7.png)
 
-[05 happyhare.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TCDLb0k8voAnctx7j2mcKoKlnjf)
+[`05 happyhare.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TCDLb0k8voAnctx7j2mcKoKlnjf)
 
 ![](img/72bfeb81d10de9d7fe1d72592bb28590.png)
 
-[拼接最终版.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BeexbXmHaoHRKHx1bVjcSWqpnGg)
+[`拼接最终版.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BeexbXmHaoHRKHx1bVjcSWqpnGg)
 
-## 4.3 知名动画 + 音乐块
+### 4.3 知名动画 + 音乐块
 
 ok，这个大家可以自行去查对标账号，有很多类似的场景！
 

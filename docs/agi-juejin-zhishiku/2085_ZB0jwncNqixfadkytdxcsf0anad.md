@@ -1,3 +1,4 @@
+
 # 7.15 “神农大模型 2.0”发布；亚马逊 AI 购物助手 Rufus 开放；OpenAI 开发绝密项目「草莓」…
 
 > 来源：[https://agijuejin.feishu.cn/docx/Yc2hdlAATovRHFxAshscMs0jnPz](https://agijuejin.feishu.cn/docx/Yc2hdlAATovRHFxAshscMs0jnPz)

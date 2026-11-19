@@ -1,8 +1,9 @@
+
 # 绘画 | Chatgpt 4o
 
 > 来源：[https://aigclena.feishu.cn/docx/UdCJdaOt9oKVEfxEDQtcTwc2n4d](https://aigclena.feishu.cn/docx/UdCJdaOt9oKVEfxEDQtcTwc2n4d)
 
-# 一、介绍
+## 一、介绍
 
 ChatGPT 的图像生成功能迎来升级
 
@@ -10,7 +11,7 @@ ChatGPT 的图像生成功能迎来升级
 
 周二OpenAI CEO Sam Altman 在直播中宣布，ChatGPT 现已支持使用 GPT-4o 直接生成和编辑图像，该功能已上线 Pro 订阅用户，并计划向 Plus 和免费用户推广。相比 DALL·E 3，GPT-4o 生成的图像更加精准和细节丰富，还可编辑已有图像，包括人物照片。
 
-官方介绍（需🪜）：https://openai.com/index/introducing-4o-image-generation/
+官方介绍（需🪜）：`https://openai.com/index/introducing-4o-image-generation/`
 
 ![](img/e48c4148bbe8c2b98b7cdd7ca6767b08.png)
 
@@ -18,13 +19,13 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/55fc5b5deeadfd6aa3606a918a97390d.png)
 
-# 二、网友案例
+## 二、网友案例
 
 最出圈的是吉卜力风格，ChatGPT 的全新 AI 图像生成器刚刚上线一天，社交媒体上就已被大量吉卜力风格的 AI 生成图片霸屏。过去 24 小时内，网友们已经用 AI 生成了吉卜力版的埃隆·马斯克、《指环王》和唐纳德·特朗普的形象。该功能引版权争议。
 
 (案例搜集来自互联网，仅为学习交流使用，知道来源的标注了来源，没有来源的来自群聊图和X，要署名或者侵删的可以滴滴我)
 
-## 1、风格转绘
+### 1、风格转绘
 
 ![](img/8344b7cdfc6a47b1057a61fae0e387de.png)
 
@@ -64,7 +65,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/659d50ebe91665ad960eb2ca8ab15d6a.png)
 
-
 变卡通
 
 ![](img/e7a763c455e35d05b48364f8a104cd7f.png)
@@ -89,7 +89,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/82a0a7155ecbac5b93cb52989e40650e.png)
 
-## 2、封面海报
+### 2、封面海报
 
 ![](img/0b70e82aa38d8f297d565c9c7218a966.png)
 
@@ -141,7 +141,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/e5a5728ad7ca134642dc40870a6d2661.png)
 
-## 3、融图/电商应用
+### 3、融图/电商应用
 
 ![](img/47668dd85e6b1d578b3db19fb5ad2b16.png)
 
@@ -185,12 +185,11 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/f5b2ad0396dba72792f60d6e1e1b2532.png)
 
-## 4、菜谱
-
+### 4、菜谱
 
 ![](img/f964e030cbb5a7015a3da122fb7130c3.png)
 
-## 5、文生图图片调整
+### 5、文生图图片调整
 
 ![](img/9eaa033a150f1297546bc2603a20164d.png)
 
@@ -208,7 +207,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/653ca6768deb22ef0f86a2a04ba6a1cb.png)
 
-
 ![](img/88487720bde1356316d533fd9c2c9385.png)
 
 ![](img/81af6352f6f73323c361deab22868f24.png)
@@ -225,9 +223,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/d251c43134f51969fe413622a0d24604.png)
 
-##
-
-## 6、生成网页logo图标文字3d三视图
+### 6、生成网页logo图标文字3d三视图
 
 ![](img/67a0aee5892b54e700b1c697e80ab59c.png)
 
@@ -259,7 +255,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/0d52a7d6279ec8f88584e231c06ca633.png)
 
-## 7、图标
+### 7、图标
 
 ![](img/fa2684cb8bcce5244a010826cc73b1c0.png)
 
@@ -271,7 +267,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/e9bc767f655303f80834e9f746a5db9d.png)
 
-## 8、步骤图
+### 8、步骤图
 
 ![](img/e96f095b5a95554b4145a0bef2bc44fc.png)
 
@@ -283,7 +279,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/a16b083608ed84bd311a7f611ded3e3b.png)
 
-## 9、产品包装
+### 9、产品包装
 
 ![](img/c2fa73f2c681fcfea1d7ba9e74f7a4cb.png)
 
@@ -293,7 +289,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/916fb8f50f2d9ae00a74de167f6ce695.png)
 
-## 10、黑白上色/漫画
+### 10、黑白上色/漫画
 
 ![](img/8557ecb6ae45274a8c2596f755202d1e.png)
 
@@ -315,7 +311,6 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/ac37ffd9618cfbe1efa5ee55040c8d63.png)
 
-
 ![](img/f0b46096336e552bebf8de5c222a5806.png)
 
 ![](img/bf9841bb8c253718d9d7c1265414e9f3.png)
@@ -330,7 +325,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/27cd895313e57c452b8b8f920a103643.png)
 
-## 11、建筑装修
+### 11、建筑装修
 
 ![](img/e6dea4c452d9637d96c5d66477444263.png)
 
@@ -342,12 +337,11 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/6e32d2aa9e7200ccb7641da3f670735e.png)
 
-## 12、教育单词
+### 12、教育单词
 
 ![](img/9cefd93728995b1532e5fdd18dfc1aba.png)
 
 单词卡
-
 
 ![](img/88043e05dfec39735bd6b8a81e0ed1cd.png)
 
@@ -357,7 +351,7 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/d0c48405b15ea47f6ae6153b7f62eea1.png)
 
-## 13、石化
+### 13、石化
 
 ![](img/86decd9f5dd291f7f90cfd2de1bfd277.png)
 
@@ -369,7 +363,9 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/1b0a9d097360dcdf007b1a1c63f488a5.png)
 
-## 14、其他
+
+
+# 14、其他
 
 ![](img/42cd4f2f62ed9213d5a431c1e3184d9c.png)
 
@@ -397,24 +393,23 @@ ChatGPT 的图像生成功能迎来升级
 
 ![](img/77b4e2785b5b4a0dbe204e6a975ae593.png)
 
-更多：https://github.com/jamez-bondos/awesome-gpt4o-images?tab=readme-ov-file
+更多：`https://github.com/jamez-bondos/awesome-gpt4o-images?tab=readme-ov-file`
 
 # 三、4o最新玩法
 
 ![](img/d37c7041cffac4f3901ffd658f79f881.png)
 
-Create a hyperrealistic 3D render in 1:1 aspect ratio featuring the iconic [BRAND] logo with a sophisticated dual-layer construction: the upper layer crafted from brushed aluminum with realistic reflections and subtle imperfections, while the lower layer glows with intense neon white luminescence creating a striking halo effect, both layers perfectly mirroring the logo’s shape and floating weightlessly in mid-air. Frame the composition with a dynamic cinematic perspective using a dramatic low-angle view that emphasizes depth and grandeur, set against a moody atmospheric background filled with mystical volumetric fog and subtle particle effects. Employ professional color grading with deep contrasts, elegant lens flares piercing through the haze, depth of field with bokeh elements, and a dark gradient backdrop from deep navy to charcoal black, accented by subtle ambient lighting that highlights the logo’s edges.
+Create a hyperrealistic 3D render in 1:1 aspect ratio featuring the iconic `[BRAND]` logo with a sophisticated dual-layer construction: the upper layer crafted from brushed aluminum with realistic reflections and subtle imperfections, while the lower layer glows with intense neon white luminescence creating a striking halo effect, both layers perfectly mirroring the logo’s shape and floating weightlessly in mid-air. Frame the composition with a dynamic cinematic perspective using a dramatic low-angle view that emphasizes depth and grandeur, set against a moody atmospheric background filled with mystical volumetric fog and subtle particle effects. Employ professional color grading with deep contrasts, elegant lens flares piercing through the haze, depth of field with bokeh elements, and a dark gradient backdrop from deep navy to charcoal black, accented by subtle ambient lighting that highlights the logo’s edges.
 
 ## lego
 
-
 ![](img/b9fba1dcf74e7259022436045ff227e5.png)
 
-[Celebrity Name] as a highly detailed LEGO minifigure (action/expression) standing in a minimalist studio background. Cinematic lighting, digital fan art, character design, high-detail wallpaper, dynamic pose, realistic textures.
+`[Celebrity Name]` as a highly detailed LEGO minifigure (action/expression) standing in a minimalist studio background. Cinematic lighting, digital fan art, character design, high-detail wallpaper, dynamic pose, realistic textures.
 
 ## 单色字符
 
-0509
+`0509`
 
 提示词：Convert a portrait of a woman in the attached image into ASCII art, monochrome, pixelated, using characters like @%#*+=-:. maintain facial structure and contrast as much as possible. suitable for nostalgic CRT monitor aesthetics
 
@@ -424,9 +419,9 @@ Create a hyperrealistic 3D render in 1:1 aspect ratio featuring the iconic [BRAN
 
 ## 钥匙扣
 
-0501
+`0501`
 
-提示词：gpt 4o prompt :A close-up photo of a cute, colorful keychain held by person's hand. The keychain features a chibi-style of the [attached image ]. White sweater, The keychain is made of soft rubber with bold black outlines and attached to a small silver keyring, neutral background ，Vertical image size
+提示词：gpt 4o prompt :A close-up photo of a cute, colorful keychain held by person's hand. The keychain features a chibi-style of the `[attached image ]`. White sweater, The keychain is made of soft rubber with bold black outlines and attached to a small silver keyring, neutral background ，Vertical image size
 
 ![](img/abb40adb88fda548f6eb5fe6cf6740ba.png)
 
@@ -434,17 +429,17 @@ Create a hyperrealistic 3D render in 1:1 aspect ratio featuring the iconic [BRAN
 
 ![](img/9b24d8b708a5b329deb8d292ef686a29.png)
 
-prompt: A soft blurry silhouette of [OBJECT], with a smooth gradient background from light gray to dark gray. The image should appear dreamy and out of focus, with no sharp details — only soft edges and subtle shading. The lighting is diffused and creates a gentle vignette around the subject. The overall look is minimalist, grayscale, and ethereal, like a shadow or reflection seen through frosted glass
+prompt: A soft blurry silhouette of `[OBJECT]`, with a smooth gradient background from light gray to dark gray. The image should appear dreamy and out of focus, with no sharp details — only soft edges and subtle shading. The lighting is diffused and creates a gentle vignette around the subject. The overall look is minimalist, grayscale, and ethereal, like a shadow or reflection seen through frosted glass
 
 ## 泥人
 
 ![](img/c94e31c526309db1e1cf3cba482eeba6.png)
 
-Tiny cute isometric [CHARACTER or PRODUCT], soft lighting, soft pastel colors, 3d icon clay render, substance 3d, pastel background
+Tiny cute isometric `[CHARACTER or PRODUCT]`, soft lighting, soft pastel colors, 3d icon clay render, substance 3d, pastel background
 
 黑色质感图标
 
-A highly detailed 3D render of [OBJECT] designed in the style of a metallic microphone-like material. The object is made of glossy, reflective chrome metal with smooth rounded edges, and features dark mesh grille inserts in regular horizontal slots across its surface. The chrome has realistic highlights, reflections, and soft shadows, with perfect PBR shading and physically accurate light behavior. The background is a clean, dark studio gradient with subtle spotlighting, making the object look premium, futuristic, and hyper-realistic. No wires or cables are attached. Rendered in ultra-polished photorealistic style, high resolution.
+A highly detailed 3D render of `[OBJECT]` designed in the style of a metallic microphone-like material. The object is made of glossy, reflective chrome metal with smooth rounded edges, and features dark mesh grille inserts in regular horizontal slots across its surface. The chrome has realistic highlights, reflections, and soft shadows, with perfect PBR shading and physically accurate light behavior. The background is a clean, dark studio gradient with subtle spotlighting, making the object look premium, futuristic, and hyper-realistic. No wires or cables are attached. Rendered in ultra-polished photorealistic style, high resolution.
 
 ![](img/eb7d1e712d3ea1f9ef07520b73489e90.png)
 
@@ -456,19 +451,19 @@ Transform this image into a children’s pop-up book illustration. Simulate a 3D
 
 ## 3D Render
 
-+ JSON
+`+ JSON`
 
 ![](img/ce142859103a4f8853febd9d413be28d.png)
 
 ## 粉红prada
 
-GPT-4o + JSON = The Devil Wears Prada, but make it pink and fluf
+GPT-4o + `JSON` = The Devil Wears Prada, but make it pink and fluf
 
 ![](img/bfd33d432340f869576da3f8e985f4a7.png)
 
 ## 婴儿漫画
 
-Hyperrealistic baby [subject] in a caricature style, with exaggerated facial features, finely detailed skin texture, meticulously styled hair, cinematic lighting, vibrant color grading, dynamic shadows and highlights, whimsical atmosphere, rendered with photo-real depth and rich composition
+Hyperrealistic baby `[subject]` in a caricature style, with exaggerated facial features, finely detailed skin texture, meticulously styled hair, cinematic lighting, vibrant color grading, dynamic shadows and highlights, whimsical atmosphere, rendered with photo-real depth and rich composition
 
 ![](img/0de5e31a328c22973116c8a5636420cb.png)
 
@@ -488,7 +483,7 @@ from zho
 
 内部：阳极氧化铝材质的 Apple logo 薄片漂浮在淡绿色凝胶中（类似液态金属的效果）。
 
-标注：Apple logo 旁印有科技字体的物理属性标签，如“Core Density”、“Reflectivity”、“Alloy Code: AL-7075”等。
+标注：Apple logo 旁印有科技字体的物理属性标签，如“Core Density”、“Reflectivity”、“Alloy Code: `AL-7075`”等。
 
 ![](img/4b9442622517dc680dc136fa6969901b.png)
 
@@ -500,7 +495,7 @@ Using the uploaded image as the exact visual base, transform it into a hyper-rea
 
 ## 产品广告
 
-[Product by Brand] in a surreal, minimalist paper-glass style advertisement.
+`[Product by Brand]` in a surreal, minimalist paper-glass style advertisement.
 
 The product is centered, crafted from translucent frosted glass-paper, placed against a clean white or softly tinted background.
 
@@ -532,165 +527,107 @@ Vertical or square aspect ratio, ultra-detailed, poster-quality, visually soothi
 
 ![](img/735c201662f804728e818cc41079599e.png)
 
-##  逼真碎裂
+## 逼真碎裂
 
-Prompt : close-up image capturing a fragmented portrait of a [SUBJECT]  through [4 or 5] irregularly shaped glass shards scattered on a textured off-white background. Each shard reveals intricate details with light reflections, while jagged glass edges with a slight green hue
+Prompt : close-up image capturing a fragmented portrait of a `[SUBJECT]` through `[4 or 5]` irregularly shaped glass shards scattered on a textured off-white background. Each shard reveals intricate details with light reflections, while jagged glass edges with a slight green hue
 
 ![](img/7d8a2429b65ce0080233198b5aaec742.png)
 
 ## 品牌广告
 
-Create a surreal, cinematic advertisement for [brand name], captured as a high-end DSLR photograph. Use symbolic visual metaphors that reflect the brand’s identity — through imaginative scenes, natural landscapes, or abstract environments. Center the product or logo in the scene with emotionally resonant lighting and realistic textures. Include a short slogan (max 6 words) that aligns with the brand’s voice. Do not repeat the brand name. Style: surreal realism, DSLR depth of field, ad campaign aesthetic. Aspect ratio: 1:1. High detail. HDR. Visually unforgettable.
+
+
+Create a surreal, cinematic advertisement for `[brand name]`, captured as a high-end DSLR photograph. Use symbolic visual metaphors that reflect the brand's identity — through imaginative scenes, natural landscapes, or abstract environments. Center the product or logo in the scene with emotionally resonant lighting and realistic textures. Include a short slogan (max 6 words) that aligns with the brand's voice. Do not repeat the brand name. Style: surreal realism, DSLR depth of field, ad campaign aesthetic. Aspect ratio: 1:1. High detail. HDR. Visually unforgettable.
 
 ![](img/32e4e42c9b746bd2f4377bca55c8eee1.png)
 
 ## 贴纸
 
-A sticker of [character] in the style of [visual reference], held up by hand. Cute and in a cartoon style, high detail, high resolution. The sticker has bold black outlines, vibrant colors, high contrast, a simple design, flat color illustration, white background. The background is neutral.
+A sticker of `[character]` in the style of `[visual reference]`, held up by hand. Cute and in a cartoon style, high detail, high resolution. The sticker has bold black outlines, vibrant colors, high contrast, a simple design, flat color illustration, white background. The background is neutral.
 
 ![](img/875e58ca15dfe8e7b8652a63c2b6eb10.png)
 
 ## 水晶
 
-1/ Step 1: Attach your logo/image.
+### 1/ Step 1: Attach your logo/image.
 
 Step 2: Run the JSON prompt.
 
 Prompt I used:
 
-Retexture the image of the [BRAND NAME] logo based on the JSON aesthetic below:
-
+```json
 {
-
-"style": "hyper-realistic product photography",
-
-"material": "crystal glass with prism-like facets",
-
-"surface_texture": "smooth and highly reflective",
-
-"lighting": {
-
-"type": "natural backlight with soft diffused fill",
-
-"intensity": "high",
-
-"direction": "bottom-back light for prism effect",
-
-"accent_colors": ["rainbow spectrum", "cool blue", "soft white"]
-
-},
-
-"color_scheme": {
-
-"primary": "clear glass",
-
-"secondary": "subtle rainbow highlights",
-
-"highlights": "sharp reflective surfaces"
-
-},
-
-"background": {
-
-"color": "gradient from deep midnight blue to pitch black",
-
-"vignette": true
-
-},
-
-"product_placement": {
-
-"position": "centered",
-
-"angle": "slightly tilted to maximize light refraction",
-
-"preserve_shape": true,
-
-"include_text": true
-
-},
-
-"post_processing": {
-
-"clarity": true,
-
-"sharpness": "ultra-high on edges",
-
-"bokeh": "soft background blur"
-
+  "style": "hyper-realistic product photography",
+  "material": "crystal glass with prism-like facets",
+  "surface_texture": "smooth and highly reflective",
+  "lighting": {
+    "type": "natural backlight with soft diffused fill",
+    "intensity": "high",
+    "direction": "bottom-back light for prism effect",
+    "accent_colors": ["rainbow spectrum", "cool blue", "soft white"]
+  },
+  "color_scheme": {
+    "primary": "clear glass",
+    "secondary": "subtle rainbow highlights",
+    "highlights": "sharp reflective surfaces"
+  },
+  "background": {
+    "color": "gradient from deep midnight blue to pitch black",
+    "vignette": true
+  },
+  "product_placement": {
+    "position": "centered",
+    "angle": "slightly tilted to maximize light refraction",
+    "preserve_shape": true,
+    "include_text": true
+  },
+  "post_processing": {
+    "clarity": true,
+    "sharpness": "ultra-high on edges",
+    "bokeh": "soft background blur"
+  }
 }
+```
 
-}
-
-2/ My prompt has all the colours and text pre-defined.
+### 2/ My prompt has all the colours and text pre-defined.
 
 You can use a more versatile prompt template (with variables you can fill in yourself!) below.
 
-Customizable prompt template
+Customizable prompt template:
 
-:
-
+```json
 {
-
-"style": "hyper-realistic product photography",
-
-"material": "crystal glass with prism-like facets",
-
-"surface_texture": "smooth and highly reflective",
-
-"lighting": {
-
-"type": "natural backlight with soft diffused fill",
-
-"intensity": "high",
-
-"direction": "bottom-back light for prism effect",
-
-"accent_colors": ["[accent color #1]", "[accent color #2]", "[accent color #3"]
-
-},
-
-"color_scheme": {
-
-"primary": "clear glass",
-
-"secondary": "subtle rainbow highlights",
-
-"highlights": "sharp reflective surfaces"
-
-},
-
-"background": {
-
-"color": "gradient from [color #1] to [color #2]", OR  "transparent",
-
-"vignette": [true/false]
-
-},
-
-"product_placement": {
-
-"position": "centered",
-
-"angle": "slightly tilted to maximize light refraction",
-
-"preserve_shape": true,
-
-"include_text": [true/false]
-
-},
-
-"post_processing": {
-
-"clarity": true,
-
-"sharpness": "ultra-high on edges",
-
-"bokeh": "soft background blur"
-
+  "style": "hyper-realistic product photography",
+  "material": "crystal glass with prism-like facets",
+  "surface_texture": "smooth and highly reflective",
+  "lighting": {
+    "type": "natural backlight with soft diffused fill",
+    "intensity": "high",
+    "direction": "bottom-back light for prism effect",
+    "accent_colors": ["[accent color #1]", "[accent color #2]", "[accent color #3]"]
+  },
+  "color_scheme": {
+    "primary": "clear glass",
+    "secondary": "subtle rainbow highlights",
+    "highlights": "sharp reflective surfaces"
+  },
+  "background": {
+    "color": "gradient from [color #1] to [color #2]", OR  "transparent",
+    "vignette": [true/false]
+  },
+  "product_placement": {
+    "position": "centered",
+    "angle": "slightly tilted to maximize light refraction",
+    "preserve_shape": true,
+    "include_text": [true/false]
+  },
+  "post_processing": {
+    "clarity": true,
+    "sharpness": "ultra-high on edges",
+    "bokeh": "soft background blur"
+  }
 }
-
-}
+```
 
 ![](img/03f32a475f95167299c085efda1a7fad.png)
 
@@ -720,21 +657,19 @@ Customizable prompt template
 
 A visually aesthetic image with a close-up photograph of attached image as the full background. Overlay a centered white Pantone-style frame in the middle of the image. Inside the frame, display a solid color swatch that is sampled from the most dominant color in the background image. Below the swatch, write "PANTONE" in bold black text and beneath that, include the Pantone code matching the swatch color. The swatch and text should be clean, minimal, and centered inside the white frame, mimicking official Pantone design cards. Maintain a modern, graphic, and clean aesthetic
 
-
-
 ![](img/6f8369be219c34f3efac5c386cd9eebe.png)
 
 ## 品牌糕点
 
 ![](img/6de19e5393c6217e19c46911e5486149.png)
 
-A high-resolution 3D render of the [brand] logo made of polished sterling silver, shiny metallic texture, floating on a soft light gray background. Realistic lighting with soft shadows, hyper-detailed surfaces, minimalistic studio setup
+A high-resolution 3D render of the `[brand]` logo made of polished sterling silver, shiny metallic texture, floating on a soft light gray background. Realistic lighting with soft shadows, hyper-detailed surfaces, minimalistic studio setup
 
 ## 金属效果
 
 ![](img/da1929610f68e65a1780e62bfc4a12a4.png)
 
-A high-resolution 3D render of the [brand] logo made of polished sterling silver, shiny metallic texture, floating on a soft light gray background. Realistic lighting with soft shadows, hyper-detailed surfaces, minimalistic studio setup
+A high-resolution 3D render of the `[brand]` logo made of polished sterling silver, shiny metallic texture, floating on a soft light gray background. Realistic lighting with soft shadows, hyper-detailed surfaces, minimalistic studio setup
 
 ![](img/34ce8fa054da474a5ce2fbd6265d686e.png)
 
@@ -744,9 +679,9 @@ A high-resolution 3D render of the [brand] logo made of polished sterling silver
 
 ## 真空logo
 
-0501
+### 0501
 
-提示词:Create a high-resolution, hyperrealistic image of a [attached object]sealed inside a vacuum-packed, crinkled metallic or transparent plasticpouch.The packaging should tightly conform to the shape of the objectexaggerating its curves, edges, and texture as if suctioned in place.include condensation or small creases around pressure points for addedrealism. The object inside should retain a bold, clean look - graphic oriconic in shape smiley face, The background should be white/soft grayand minimal to let the reflections and surface tension of the vacuumpackaging stand out dramatically, Optionally, include barcode labelsprinted product codes, or branded text for a dystopian, collectible orarchival look. Visual Details: Crushed, transparent or metallic vacuumplastic Object's silhouette visible in extreme detail Harsh lighting toemphasize texture and form Typographic overlays, SKU codes orbranding Moody, product display-style background Mood: Experimental,edgy, collectible, post-consumer Bright natural lighting enhances thevivid colors and gives a clean,cinematic realistic look.
+提示词:Create a high-resolution, hyperrealistic image of a `[attached object]`sealed inside a vacuum-packed, crinkled metallic or transparent plasticpouch.The packaging should tightly conform to the shape of the objectexaggerating its curves, edges, and texture as if suctioned in place.include condensation or small creases around pressure points for addedrealism. The object inside should retain a bold, clean look - graphic oriconic in shape smiley face, The background should be white/soft grayand minimal to let the reflections and surface tension of the vacuumpackaging stand out dramatically, Optionally, include barcode labelsprinted product codes, or branded text for a dystopian, collectible orarchival look. Visual Details: Crushed, transparent or metallic vacuumplastic Object's silhouette visible in extreme detail Harsh lighting toemphasize texture and form Typographic overlays, SKU codes orbranding Moody, product display-style background Mood: Experimental,edgy, collectible, post-consumer Bright natural lighting enhances thevivid colors and gives a clean,cinematic realistic look.
 
 ![](img/fe72cd63fdc1961f7e6c7d6331178db9.png)
 
@@ -754,13 +689,11 @@ A high-resolution 3D render of the [brand] logo made of polished sterling silver
 
 Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perroquet on a branch fully sculpted from twisted latex balloons. Each part of the body should clearly show the artisanal balloon modeling process: tight twists, knots, loops, pinched segments, and inflated tube geometry. Balloons should have a glossy, semi-transparent finish, with visible tension points and subtle stretching. Add small realistic imperfections like air pressure dimples, seams, or creases where balloons are bent or tied. Use vibrant, saturated colors for a playful party feel. Lighting should create sharp glossy highlights and soft shadows to enhance the rounded forms. Place the balloon animal on a clean pastel background . Focus on sculptural realism, joyful shapes, and a wow effect. The final image should feel like a pro balloon artist made it for a high-end cartoon birthday party.
 
-
 ![](img/e9fb222cfe4252aaea379728a44d863b.png)
 
 ![](img/6bacc43c19747c6ddfe8b997321bf2c8.png)
 
 ![](img/a1262d11c9eeaefed2a8f5b706ff71e6.png)
-
 
 ![](img/10f54b0825aa96578f3bed60c5468203.png)
 
@@ -786,8 +719,6 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/1538a19ff147f8cdcbfb61dac1187a8f.png)
 
-
-
 ![](img/e5b1145a5d1174987afddf43d94cb76e.png)
 
 ![](img/7134d04db5cfe7b383be531bb2dcd9c8.png)
@@ -795,9 +726,6 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 ![](img/5dd8f363a2881eaee352603900b807b4.png)
 
 ![](img/c787bf82f42a499e205c3a46596fde55.png)
-
-
-
 
 ![](img/f2aac108049366951d0788695d32dbc1.png)
 
@@ -807,9 +735,9 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/6f029a0f1e11fb0a327808fd83c5d3f3.png)
 
-
-
 ![](img/8d517df9d08cccff202c30134dd6a814.png)
+
+
 
 ![](img/a21bedefa4b3261b23c3a49f52359827.png)
 
@@ -817,17 +745,13 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/b944e37aa1d68dbc5788114c93bb04e6.png)
 
-
 ![](img/7e1d0d50330e1ea9bf67c85fcf0d8d5e.png)
-
-
 
 ![](img/fa94dd8022df1f713ebd3200d8956350.png)
 
 ![](img/87e5bf70a1857da015bf688600320bc1.png)
 
 ![](img/41cbe5f1f9e9eeeb93079c3fcd8d7971.png)
-
 
 ![](img/3c870f5d02342215216a06fd3d928bce.png)
 
@@ -841,24 +765,21 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/08cf745e6d2081255deb4a741c69a2d1.png)
 
-
-
-
 ![](img/fa03d9d30595af83aabc4cbe835af2b6.png)
 
 ![](img/0fce03f53c69693a359807d83a1a7b18.png)
 
 # gpt4o使用方法
 
-1、打开官网：https://chatgpt.com/，点击左侧chatgpt，新建一个对话。
+1. 打开官网：https://chatgpt.com/，点击左侧chatgpt，新建一个对话。
 
 ![](img/f19ff973f9ada55d56912d3e8ab50acc.png)
 
-2、在对话框输入内容(内容可以复制网页案例里的提示词)，选择“create image”即可。
+2. 在对话框输入内容(内容可以复制网页案例里的提示词)，选择“create image”即可。
 
 ![](img/85cc2c4d512bb523c68b28da1ca5a6b7.png)
 
-3、除了在对话框中使用以外，还可以通过sora生成
+3. 除了在对话框中使用以外，还可以通过sora生成
 
 ![](img/f60df056cb13d766b383766be34e4405.png)
 
@@ -888,7 +809,7 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ❤️ 4o建议用英文提示词：Create a high-resolution, hyperrealistic image of a [attached object] sealed inside a vacuum-packed, crinkled metallic or transparent plastic pouch. The packaging should tightly conform to the shape of the object, exaggerating its curves, edges, and texture as if suctioned in place. Include condensation or small creases around pressure points for added realism. The object inside should retain a bold, clean look — graphic or iconic in shape smiley face, The background should be white/soft gray and minimal to let the reflections and surface tension of the vacuum packaging stand out dramatically. Optionally, include barcode labels, printed product codes, or branded text for a dystopian, collectible or archival look. Visual Details: Crushed, transparent or metallic vacuum plastic Object’s silhouette visible in extreme detail Harsh lighting to emphasize texture and form Typographic overlays, SKU codes or branding Moody, product display-style background Mood: Experimental, edgy, collectible, post-consumer Bright natural lighting enhances the vivid colors and gives a clean, cinematic realistic look.
 
-+   豆包使用方法：
++ 豆包使用方法：
 
 打开豆包官网，点击超能创意，上传图片和提示词即可。
 
@@ -896,11 +817,11 @@ Create an ultra-detailed, hyper-realistic 3D rendering of a fun, whimsical perro
 
 ![](img/670f9eb3cf4a7e2b6930dc0e39f0ae78.png)
 
-+   Gpt4o使用方法：
++ Gpt4o使用方法：
 
 GPT生图有2个地方，对话框中使用和sora中使用。
 
-1、对话框中:上传图片，写上这段关键词即可。有粉丝问gpt图片的生成限制，这个因账户而异，我这个账号生成,10张左右图片，系统就会提示生成频繁，需等待5分钟后再生成。
+1. 对话框中:上传图片，写上这段关键词即可。有粉丝问gpt图片的生成限制，这个因账户而异，我这个账号生成,10张左右图片，系统就会提示生成频繁，需等待5分钟后再生成。
 
 ![](img/33c27c90b8a37a3b8e3f0bdef663d4b1.png)
 
@@ -908,7 +829,7 @@ GPT生图有2个地方，对话框中使用和sora中使用。
 
 ![](img/234908767f911878fe2b2d9d0e805d63.png)
 
-2、sora中：点击左侧sora
+2. sora中：点击左侧sora
 
 ![](img/fafc2f83f990422cb6ee77aed133a214.png)
 
@@ -927,9 +848,6 @@ GPT生图有2个地方，对话框中使用和sora中使用。
 ![](img/0c5fca5605bd0791ef004342cda69a31.png)
 
 ‍♀️ 快来投票！你pick谁~
-
-
-
 
 ![](img/4255d555083b2c19e6d73b11ba3c1fb9.png)
 
@@ -951,6 +869,6 @@ GPT生图有2个地方，对话框中使用和sora中使用。
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/d06d69436a81330f3864feee49237e3f.png)

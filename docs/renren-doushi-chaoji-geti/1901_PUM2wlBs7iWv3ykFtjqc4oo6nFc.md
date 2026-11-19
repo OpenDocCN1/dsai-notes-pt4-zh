@@ -1,12 +1,13 @@
-# 2023-07-20ChatGPT如何帮助产品经理工作？
+
+# 2023-07-20 ChatGPT如何帮助产品经理工作？
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/TUrJdAZKYoHNNYx780PcGMrKnSe](https://xuqiwei1986.feishu.cn/docx/TUrJdAZKYoHNNYx780PcGMrKnSe)
 
-> 🔗 原文链接： h[ttps://www.ctyun.c](https://www.ctyun.cn/developer/article/430450145386565)n/developer/arti...
+> 🔗 原文链接：https://www.ctyun.cn/developer/article/430450145386565
 
 ![](img/170be7385f6b189dacf2a0a7a77ac684.png)
 
-## 1.引言
+## 1. 引言
 
 ChatGPT是一个人工智能聊天机器人，由美国的OpenAI公司开发。它使用了GPT-3.5或GPT-4这样的先进的自然语言生成模型，可以与用户进行对话，回答问题，提供建议，生成文本或图像等。它的对话格式使得它可以根据上下文进行互动，承认错误，挑战错误的前提，拒绝不合适的请求等。它是一个有趣而强大的工具，可以用于创意、学习、工作、娱乐等多种场景。
 
@@ -16,13 +17,17 @@ GPT-4是2023年3月推出的最新一代自然语言生成模型，它是基于G
 
 ## 2. ChatGPT的访问方式
 
-**方法一: **使用VPN软件（建议切换到英国），访问ChatGPT的官方网站 https://chat.openai.com/ ，注册并登录OpenAI账号，然后使用ChatGPT的功能。目前免费的账号只能使用GPT3.5。
+### 方法一
+
+使用VPN软件（建议切换到英国），访问ChatGPT的官方网站 `https://chat.openai.com/` ，注册并登录OpenAI账号，然后使用ChatGPT的功能。目前免费的账号只能使用GPT3.5。
 
 ![](img/f03565f0a9c0ec0f997d3984de94d4cb.png)
 
-**方法二: **通过New Bing的聊天功能使用GPT-4模型
+### 方法二
 
-国内使用还需要修改Hosts文件，增加如下内容：
+通过New Bing的聊天功能使用GPT-4模型
+
+国内使用还需要修改 `Hosts` 文件，增加如下内容：
 
 ```
 # New Bing Chat 
@@ -43,13 +48,15 @@ GPT-4是2023年3月推出的最新一代自然语言生成模型，它是基于G
 
 ![](img/28fd538c8ad824226b84bfe55fc15a2e.png)
 
-**说明： **可以点击地址栏左侧的锁图标清理cookie，目前每次清理cookie后可以发起5次提问。登录地区为美国的账户后一次会话可以问30个问题。
+### 说明
+
+可以点击地址栏左侧的锁图标清理cookie，目前每次清理cookie后可以发起5次提问。登录地区为美国的账户后一次会话可以问30个问题。
 
 ## 3. 产品经理使用ChatGPT的几种姿势
 
 ### 3.1 画图
 
-**流程图**
+#### 流程图
 
 ```
 prompt：画一个用户使用AWS SageMaker的流程图，请用mermaid语言描述
@@ -73,7 +80,7 @@ H --&gt; I[优化SageMaker模型]
 
 ![](img/607e66c39930021ec87bd08397ea99be.png)
 
-**思维导图**
+#### 思维导图
 
 ```
 prompt：画一个“ChatGPT如何帮助产品经理工作”的思维导图，请用mermaid语言描述
@@ -98,7 +105,7 @@ D --&gt; M[编写或运行代码]
 
 ![](img/d5117d4c66ebb482e4d1590dd65a5257.png)
 
-**产品原型图**
+#### 产品原型图
 
 ```
 prompt：画一个用户登录注册的HTML原型图，要求包含样式。主按钮色号请使用#df0629 ，文案使用中文，字体使用微软雅黑。
@@ -178,7 +185,7 @@ prompt：画一个用户登录注册的HTML原型图，要求包含样式。主�
 &lt;/html&gt;
 ```
 
-把这段HTML保存为 任意名称.html 文件，用浏览器打开可以得到原型图，如下所示：
+把这段HTML保存为 `任意名称.html` 文件，用浏览器打开可以得到原型图，如下所示：
 
 ![](img/14286580c64602bb52660ac29268a3be.png)
 
@@ -292,6 +299,8 @@ ChatGPT可以通过生成文本内容来帮助产品经理写汇报PPT。例如�
 Prompt: 请帮我写三页关于云计算厂商的计算实例或容器镜像，高性能计算集群等算力基础设施的竞品调研PPT，其中一页写百度智能云，一页写微软Azure云，最后一页写AWS，请使用markdown代码呈现。
 ```
 
+
+
 ```
 以下是我为您生成的一份三页的PPT草稿，使用markdown代码呈现。每一页分别介绍了百度智能云、微软Azure云和AWS的相关产品和特点。您可以根据需要调整格式和内容。
 
@@ -358,11 +367,9 @@ Prompt: 请帮我写三页关于云计算厂商的计算实例或容器镜像，
 
 ![](img/1601b2d5f2a9a990b84bb9654f2fd93b.png)
 
-[复制ChatGPT](https://www.ctyun.cn/portal/link.html?target=https%3A%2F%2Fwww.mindshow.fun%2F%23%2Ffolder%2Fimport)生成**的mark**down内容，导**入到 Mi****ndS**how 的 我的文档 中[2]。点击 导入创建 ,微调内容并修改模板和布局，点击右侧顶部 下载 ，就可以获得一份高质量PPT了，如下图所示：
+[复制ChatGPT](https://www.ctyun.cn/portal/link.html?target=https%3A%2F%2Fwww.mindshow.fun%2F%23%2Ffolder%2Fimport)生成`markdown`内容，导入到`MindShow`的我的文档中[2]。点击导入创建，微调内容并修改模板和布局，点击右侧顶部下载，就可以获得一份高质量PPT了，如下图所示：
 
 ![](img/21da9dbcabf75699134100f96b7de2e8.png)
-
-###
 
 此外，ChatGPT还可以帮助产品经理优化PPT中的文本内容，使其更加清晰、简洁和易懂。例如，产品经理可以将PPT中的文本内容输入到ChatGPT中，然后ChatGPT会根据其语言模型对文本内容进行优化，并给出修改建议。
 

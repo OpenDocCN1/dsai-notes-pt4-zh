@@ -1,28 +1,27 @@
-# 2. DeeSeek-v3.2 + DeepAgents 构建AI深度代理
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/RwYOdcZHYokcmsxznXgc225cnIP](https://kq4b3vgg5b.feishu.cn/docx/RwYOdcZHYokcmsxznXgc225cnIP)
-
----
 
 # 《大模型Agent智能体开发》（12月班体验课）
 
 ## Part 2. DeeSeek-v3.2 + DeepAgents 构建AI深度代理
 
+> 来源：`https://kq4b3vgg5b.feishu.cn/docx/RwYOdcZHYokcmsxznXgc225cnIP`
+
 ![](img/c47dcb18318b9f15dfdb20b6608ad3d2.png)
 
-DeepAgents 是一个独立的库，用于构建能够处理复杂多步骤任务的智能体。它基于 LangGraph 构建，并受到 Claude Code、Deep Research 和 Manus 等应用程序的启发，具备规划功能、用于上下文管理的文件系统以及生成子智能体的能力。
+`DeepAgents` 是一个独立的库，用于构建能够处理复杂多步骤任务的智能体。它基于 `LangGraph` 构建，并受到 Claude Code、Deep Research 和 Manus 等应用程序的启发，具备规划功能、用于上下文管理的文件系统以及生成子智能体的能力。
 
-DeepAgents 开源地址：https://github.com/langchain-ai/deepagents
+`DeepAgents` 开源地址：`https://github.com/langchain-ai/deepagents`
 
 ![](img/1143d3a565c8626e57289f298eec3b74.png)
 
-# 一、DeepAgents本地安装
+### 一、DeepAgents本地安装
 
-应用起来非常简单，首先安装DeepAgent的项目库：
+应用起来非常简单，首先安装`DeepAgent`的项目库：
 
 ```
 %pip install -U deepagents
 ```
+
+
 
 ```
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
@@ -66,18 +65,24 @@ Requirement already satisfied: typing-inspection&gt;=0.4.2 in /root/anaconda3/en
 Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from requests&gt;=2.0.0-&gt;langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.0.0-&gt;deepagents) (3.4.4)
 Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from requests&gt;=2.0.0-&gt;langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.0.0-&gt;deepagents) (2.5.0)
 Requirement already satisfied: bracex&gt;=2.1.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from wcmatch-&gt;deepagents) (2.6)
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0mNote: you may need to restart the kernel to use updated packages.
+[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+[0mNote: you may need to restart the kernel to use updated packages.
 ```
 
-```
+
+
+# DeepAgents 使用指南
+
+## 查看包信息
+
+```text
 ! pip show deepagents
 ```
 
-```
+```text
 Name: deepagents
 Version: 0.2.8
-Summary: General purpose &#x27;deep agent&#x27; with sub-agent spawning, todo list capabilities, and mock file system. Built on LangGraph.
+Summary: General purpose 'deep agent' with sub-agent spawning, todo list capabilities, and mock file system. Built on LangGraph.
 Home-page: https://docs.langchain.com/oss/python/deepagents/overview
 Author: 
 Author-email: 
@@ -87,9 +92,11 @@ Requires: langchain, langchain-anthropic, langchain-core, wcmatch
 Required-by: 
 ```
 
-接下来，仅需要通过create_deep_agent函数即可创建一个深度代理：
+## 创建深度代理
 
-```
+接下来，仅需要通过`create_deep_agent`函数即可创建一个深度代理：
+
+```python
 from deepagents import create_deep_agent    
 
 agent = create_deep_agent()
@@ -97,34 +104,40 @@ agent = create_deep_agent()
 
 ![](img/ce24fd944a72f9ff30726c1c92440a07.png)
 
+# ReAct 与 DeepAgents 设计理念
+
 ReAct 是一种针对大模型的 Agent 设计范式。其核心思想是让大模型能够像人一样一边思考，一边行动（调用工具、API、数据库等），然后根据行动结果继续思考，再行动，以此循环，直到完成任务。换句话说，ReAct 把推理 (reasoning) 与执行 (action) 合并为一个统一的、交替进行的过程。
 
 而 DeepAgents 会尝试把 Agent 的能力推向能像人类专家 /研究者 /工程师那样，从接收高层任务 → 自动规划 → 分解子任务 → 管理状态／文档／中间结果 → 调用多个工具／子 Agent → 组织 orchestration → 最终产出结构化结果。
 
-```
+```text
 create_deep_agent?
 ```
 
-```
-[31mSignature:[39m
+# create_deep_agent 参数详解
+
+## 参数签名与说明
+
+```text
+Signature:
 create_deep_agent(
-    model: str | langchain_core.language_models.chat_models.BaseChatModel | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    tools: collections.abc.Sequence[langchain_core.tools.base.BaseTool | collections.abc.Callable | dict[str, typing.Any]] | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
+    model: str | langchain_core.language_models.chat_models.BaseChatModel | None = None,
+    tools: collections.abc.Sequence[langchain_core.tools.base.BaseTool | collections.abc.Callable | dict[str, typing.Any]] | None = None,
     *,
-    system_prompt: str | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
+    system_prompt: str | None = None,
     middleware: collections.abc.Sequence[langchain.agents.middleware.types.AgentMiddleware] = (),
-    subagents: list[deepagents.middleware.subagents.SubAgent | deepagents.middleware.subagents.CompiledSubAgent] | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    response_format: Union[langchain.agents.structured_output.ToolStrategy[~SchemaT], langchain.agents.structured_output.ProviderStrategy[~SchemaT], langchain.agents.structured_output.AutoStrategy[~SchemaT], NoneType] = [38;5;28;01mNone[39;00m,
-    context_schema: type[typing.Any] | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    checkpointer: [38;5;28;01mNone[39;00m | bool | langgraph.checkpoint.base.BaseCheckpointSaver = [38;5;28;01mNone[39;00m,
-    store: langgraph.store.base.BaseStore | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    backend: deepagents.backends.protocol.BackendProtocol | collections.abc.Callable[[langgraph.prebuilt.tool_node.ToolRuntime], deepagents.backends.protocol.BackendProtocol] | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    interrupt_on: dict[str, bool | langchain.agents.middleware.human_in_the_loop.InterruptOnConfig] | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    debug: bool = [38;5;28;01mFalse[39;00m,
-    name: str | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-    cache: langgraph.cache.base.BaseCache | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-) -&gt; langgraph.graph.state.CompiledStateGraph
-[31mDocstring:[39m
+    subagents: list[deepagents.middleware.subagents.SubAgent | deepagents.middleware.subagents.CompiledSubAgent] | None = None,
+    response_format: Union[langchain.agents.structured_output.ToolStrategy[~SchemaT], langchain.agents.structured_output.ProviderStrategy[~SchemaT], langchain.agents.structured_output.AutoStrategy[~SchemaT], NoneType] = None,
+    context_schema: type[typing.Any] | None = None,
+    checkpointer: None | bool | langgraph.checkpoint.base.BaseCheckpointSaver = None,
+    store: langgraph.store.base.BaseStore | None = None,
+    backend: deepagents.backends.protocol.BackendProtocol | collections.abc.Callable[[langgraph.prebuilt.tool_node.ToolRuntime], deepagents.backends.protocol.BackendProtocol] | None = None,
+    interrupt_on: dict[str, bool | langchain.agents.middleware.human_in_the_loop.InterruptOnConfig] | None = None,
+    debug: bool = False,
+    name: str | None = None,
+    cache: langgraph.cache.base.BaseCache | None = None,
+) -> langgraph.graph.state.CompiledStateGraph
+Docstring:
 Create a deep agent.
 
 This agent will by default have access to a tool to write todos (write_todos),
@@ -165,40 +178,42 @@ Args:
 
 Returns:
     A configured deep agent.
-[31mFile:[39m      ~/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages/deepagents/graph.py
-[31mType:[39m      function
+File: ~/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages/deepagents/graph.py
+Type: function
 ```
 
 其中参数说明如下表所示：
 
-DeepAgent create_deep_agent 参数说明
+## DeepAgent create_deep_agent 参数说明
 
 | 参数名 | 类型 | 默认值 | 必填/可选 | 描述 |
 | --- | --- | --- | --- | --- |
-| **model** | str | BaseChatModel | None | None |
-| **tools** | Sequence[BaseTool | Callable | dict] | None | None | 可选 |
-| **system_prompt** | str | None | None | 可选 |
-| **middleware** | Sequence[AgentMiddleware] | () | 可选 | 额外的中间件列表，在标准中间件之后应用，用于扩展智能体能力 |
-| **subagents** | list[SubAgent | CompiledSubAgent] | None | None | 可选 |
-| **response_format** | ResponseFormat | None | None | 可选 |
-| **context_schema** | type[Any] | None | None | 可选 |
-| **checkpointer** | Checkpointer | None | None | 可选 |
-| **store** | BaseStore | None | None | 可选 |
-| **backend** | BackendProtocol | BackendFactory | None | None |
-| **interrupt_on** | dict[str, bool | InterruptOnConfig] | None | None | 可选 |
-| **debug** | bool |  |  |  |
+| `model` | `str` | `BaseChatModel` | `None` | `None` |
+| `tools` | `Sequence[BaseTool | Callable | dict]` | `None` | `None` | 可选 |
+| `system_prompt` | `str` | `None` | `None` | 可选 |
+| `middleware` | `Sequence[AgentMiddleware]` | `()` | 可选 | 额外的中间件列表，在标准中间件之后应用，用于扩展智能体能力 |
+| `subagents` | `list[SubAgent | CompiledSubAgent]` | `None` | `None` | 可选 |
+| `response_format` | `ResponseFormat` | `None` | `None` | 可选 |
+| `context_schema` | `type[Any]` | `None` | `None` | 可选 |
+| `checkpointer` | `Checkpointer` | `None` | `None` | 可选 |
+| `store` | `BaseStore` | `None` | `None` | 可选 |
+| `backend` | `BackendProtocol | BackendFactory` | `None` | `None` | |
+| `interrupt_on` | `dict[str, bool | InterruptOnConfig]` | `None` | `None` | 可选 |
+| `debug` | `bool` | | | |
 
 DeepAgents 支持自定义配置以构建不同的代理场景：
 
 ![](img/e43788f611b30c2e1a88fce4a3a2a029.png)
 
-其中，默认使用的模型为：claude-sonnet-4-5-20250929，同时Deep Agents 内置的System Prompt，其灵感来源于 Claude Code 的系统提示符。默认的系统提示符包含使用内置规划工具、文件系统工具和子代理的详细说明。如下所示：
+其中，默认使用的模型为：`claude-sonnet-4-5-20250929`，同时Deep Agents 内置的System Prompt，其灵感来源于 Claude Code 的系统提示符。默认的系统提示符包含使用内置规划工具、文件系统工具和子代理的详细说明。如下所示：
 
 ![](img/2d1a1611fdadf45ac36292118ed3f880.png)
 
 我们这里也给大家提供了对应的中文版本：
 
-```
+## 中文系统提示
+
+```text
     你是一个帮助用户完成各种任务的AI助手,包括编码、研究和分析。
 
     # 核心角色定义
@@ -212,7 +227,7 @@ DeepAgents 支持自定义配置以构建不同的代理场景：
     - 如果你的角色描述引用了特定主题,检查 /memories/ 中的相关指南
 
     **在回答问题之前:**
-    - 如果被问到&quot;你知道关于X的什么?&quot;或&quot;我如何做Y?&quot; → 首先检查 `ls /memories/`
+    - 如果被问到"你知道关于X的什么?"或"我如何做Y?" → 首先检查 `ls /memories/`
     - 如果存在相关的记忆文件 → 阅读它们并基于保存的知识回答
     - 当可用时,优先使用保存的知识而不是一般知识
 
@@ -253,97 +268,98 @@ DeepAgents 支持自定义配置以构建不同的代理场景：
     3. 完整读取: 仅在编辑必要时使用不带limit的 `read_file(path)`
 
     **何时使用分页:**
-    - 读取任何 &gt;500行 的文件
+    - 读取任何 >500行 的文件
     - 探索不熟悉的代码库(始终从 limit=100 开始)
     - 按顺序读取多个文件
     - 任何研究或调查任务
 
     **何时可以完整读取:**
-    - 小文件(&lt;500行)
+    - 小文件(<500行)
     - 读取后需要立即编辑的文件
     - 首次扫描后确认文件大小
 
     **示例工作流:**
-    ```
     错误做法:  read_file(/src/large_module.py)  # 用2000+行淹没上下文
+
     正确做法: read_file(/src/large_module.py, limit=100)  # 首先扫描结构
-            read_file(/src/large_module.py, offset=100, limit=100)  # 读取相关部分
-    ```
-
-    ## 使用子代理 (task工具)
-    委托给子代理时:
-    - **对大型I/O使用文件系统**: 如果输入指令很大(&gt;500字)或预期输出很大,通过文件进行通信
-    - 将输入上下文/指令写入文件,告诉子代理读取它
-    - 要求子代理将其输出写入文件,然后在它们返回后读取
-    - 这可以防止token膨胀并在两个方向上保持上下文可管理
-    - **并行化独立工作**: 当任务独立时,生成并行子代理同时工作
-    - **明确规范**: 准确告诉子代理你需要在其响应或输出文件中使用什么格式/结构
-    - **主代理综合**: 子代理收集/执行,主代理将结果集成到最终交付物中
-
-    ## 工具
-
-    ### execute_bash
-    执行shell命令。始终引用包含空格的路径。
-    bash命令将从你的当前工作目录运行。
-    示例: `pytest /foo/bar/tests` (正确), `cd /foo/bar &amp;&amp; pytest tests` (错误)
-
-    ### 文件工具
-    - read_file: 读取文件内容(使用绝对路径)
-    - edit_file: 替换文件中的精确字符串(必须先读取,提供唯一的 old_string)
-    - write_file: 创建或覆盖文件
-    - ls: 列出目录内容
-    - glob: 按模式查找文件(例如 &quot;**/*.py&quot;)
-    - grep: 搜索文件内容
-
-    始终使用以 / 开头的绝对路径。
-
-    ### web_search
-    搜索文档、错误解决方案和代码示例。
-
-    ### http_request
-    向API发出HTTP请求(GET、POST等)。
-
-    ## 代码引用
-    引用代码时,使用格式: `file_path:line_number`
-
-    ## 文档
-    - 完成工作后不要创建过多的markdown摘要/文档文件
-    - 专注于工作本身,而不是记录你做了什么
-    - 仅在明确要求时创建文档
 ```
 
-所以，在使用DeepAgent创建深度代理时，我们最基础、也是必须要调整的参数就是model、system_prompt 以及 Tools。其中：
-
-+   model参数决定了当前代理使用的基座大模型，大模型性能的好坏直接决定了代理的智能程度
-
-+   system_prompt参数决定了当前代理的系统提示词，系统提示词决定了代理的思维方式、行为准则等
-
-+   tools参数决定了当前代理可以使用的工具列表，工具的丰富性和实用性决定了代理的执行能力
-
-所以接下来，我们将详细介绍如何通过自定义model、system_prompt 以及 Tools来构建一个具备实时联网检索能力的深度研究AI助手。
 
 
-# 二、LangChain 1.0 接入 DeepSeek-v3.2模型
+# 一、DeepAgents 系统提示与工具使用
 
-在《Part 1. LangChain DeepAgents 项目介绍》中我们已经清晰的了解了 DeepAgents 与 LangChain 和 LangGraph 之间的关系，而对于构建深度代理，不仅仅需要DeepAgents框架，还需要借助langChain 和 LangGraph来共同搭建支持自定义流程的深度代理。
+```
+read_file(/src/large_module.py, offset=100, limit=100)  # 读取相关部分
+```
+
+## 使用子代理 (`task` 工具)
+委托给子代理时：
+- 对大型 I/O 使用文件系统：如果输入指令很大（>500 字）或预期输出很大，通过文件进行通信
+- 将输入上下文/指令写入文件，告诉子代理读取它
+- 要求子代理将其输出写入文件，然后在它们返回后读取
+- 这可以防止 token 膨胀并在两个方向上保持上下文可管理
+- 并行化独立工作：当任务独立时，生成并行子代理同时工作
+- 明确规范：准确告诉子代理你需要在其响应或输出文件中使用什么格式/结构
+- 主代理综合：子代理收集/执行，主代理将结果集成到最终交付物中
+
+## 工具
+
+### `execute_bash`
+执行 shell 命令。始终引用包含空格的路径。
+`bash` 命令将从你的当前工作目录运行。
+示例：`pytest /foo/bar/tests`（正确），`cd /foo/bar && pytest tests`（错误）
+
+### `文件工具`
+- `read_file`：读取文件内容（使用绝对路径）
+- `edit_file`：替换文件中的精确字符串（必须先读取，提供唯一的 `old_string`）
+- `write_file`：创建或覆盖文件
+- `ls`：列出目录内容
+- `glob`：按模式查找文件（例如 `"**/*.py"`）
+- `grep`：搜索文件内容
+
+始终使用以 `/` 开头的绝对路径。
+
+### `web_search`
+搜索文档、错误解决方案和代码示例。
+
+### `http_request`
+向 API 发出 HTTP 请求（GET、POST 等）。
+
+## 代码引用
+引用代码时，使用格式：`file_path:line_number`
+
+## 文档
+- 完成工作后不要创建过多的 markdown 摘要/文档文件
+- 专注于工作本身，而不是记录你做了什么
+- 仅在明确要求时创建文档
+
+所以，在使用 `DeepAgent` 创建深度代理时，我们最基础、也是必须要调整的参数就是 `model`、`system_prompt` 以及 `Tools`。其中：
+
++ `model` 参数决定了当前代理使用的基座大模型，大模型性能的好坏直接决定了代理的智能程度
++ `system_prompt` 参数决定了当前代理的系统提示词，系统提示词决定了代理的思维方式、行为准则等
++ `tools` 参数决定了当前代理可以使用的工具列表，工具的丰富性和实用性决定了代理的执行能力
+
+所以接下来，我们将详细介绍如何通过自定义 `model`、`system_prompt` 以及 `Tools` 来构建一个具备实时联网检索能力的深度研究 AI 助手。
+
+# 二、`LangChain` 1.0 接入 `DeepSeek-v3.2` 模型
+
+在《Part 1. `LangChain` `DeepAgents` 项目介绍》中我们已经清晰的了解了 `DeepAgents` 与 `LangChain` 和 `LangGraph` 之间的关系，而对于构建深度代理，不仅仅需要 `DeepAgents` 框架，还需要借助 `langChain` 和 `LangGraph` 来共同搭建支持自定义流程的深度代理。
 
 ![](img/079278b84b73f04d3e7bb3d3d04f316a.png)
 
-从这个架构可以看出，DeepAgents 必须通过 LangChain 来接入底层能力，包括：
+从这个架构可以看出，`DeepAgents` 必须通过 `LangChain` 来接入底层能力，包括：
 
-1.  **模型接入**：通过 LangChain 的 init_chat_model 或模型对象
+1. 模型接入：通过 `LangChain` 的 `init_chat_model` 或模型对象
+1. 工具集成：通过 `LangChain` 的工具系统
+1. 消息处理：使用 `LangChain` 的标准消息格式
 
-1.  **工具集成**：通过 LangChain 的工具系统
+> 关键理解：`DeepAgents` 本身不直接调用模型 API，而是通过 `LangChain` 的模型抽象层来访问模型。这确保了框架的可扩展性和兼容性。
 
-1.  **消息处理**：使用 LangChain 的标准消息格式
+## 2.1 注册 `DeepSeek-v3.2` API
 
-> **关键理解**：DeepAgents 本身不直接调用模型 API，而是通过 LangChain 的模型抽象层来访问模型。这确保了框架的可扩展性和兼容性。
++ Step 1. `DeepSeek v3` 账号注册与 API 获取
 
-## 2.1 注册 DeepSeek-v3.2 API
-
-+   Step 1. DeepSeek v3账号注册与API获取
-
-首先需要进入DeepSeek官网：https://www.deepseek.com/
+首先需要进入 DeepSeek 官网：`https://www.deepseek.com/`
 
 ![](img/274577153bd79332c97a5ceafe1cb96d.png)
 
@@ -351,61 +367,61 @@ DeepAgents 支持自定义配置以构建不同的代理场景：
 
 ![](img/a5a2e613ff25cffbb93eba52eb0698d8.png)
 
-调用风格和OpenAI完全一致：Function calling、提示词缓存、Json Output等功能完全相同：
+调用风格和 `OpenAI` 完全一致：Function calling、提示词缓存、Json Output 等功能完全相同：
 
 ![](img/f1c1a1c7f2664c838e815f0428d10e89.png)
 
-首先在官网申请API-KEY：https://platform.deepseek.com/api_keys
+首先在官网申请 API-KEY：`https://platform.deepseek.com/api_keys`
 
 ![](img/99a3b3877bcd2c7b4f92621172942bf2.png)
 
 ![](img/69ca13babe736a85eb53ef4ad71db2b6.png)
 
-```
+```bash
 %pip install -U openai python-dotenv
 ```
 
-```
+```text
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
 Requirement already satisfied: openai in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (2.8.1)
 Requirement already satisfied: python-dotenv in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (1.2.1)
-Requirement already satisfied: anyio&lt;5,&gt;=3.5.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (4.12.0)
-Requirement already satisfied: distro&lt;2,&gt;=1.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (1.9.0)
-Requirement already satisfied: httpx&lt;1,&gt;=0.23.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (0.28.1)
-Requirement already satisfied: jiter&lt;1,&gt;=0.10.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (0.12.0)
-Requirement already satisfied: pydantic&lt;3,&gt;=1.9.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (2.12.5)
+Requirement already satisfied: anyio<5,>=3.5.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (4.12.0)
+Requirement already satisfied: distro<2,>=1.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (1.9.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (0.28.1)
+Requirement already satisfied: jiter<1,>=0.10.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (0.12.0)
+Requirement already satisfied: pydantic<3,>=1.9.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (2.12.5)
 Requirement already satisfied: sniffio in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (1.3.1)
-Requirement already satisfied: tqdm&gt;4 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (4.67.1)
-Requirement already satisfied: typing-extensions&lt;5,&gt;=4.11 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (4.15.0)
-Requirement already satisfied: idna&gt;=2.8 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from anyio&lt;5,&gt;=3.5.0-&gt;openai) (3.11)
-Requirement already satisfied: certifi in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx&lt;1,&gt;=0.23.0-&gt;openai) (2025.11.12)
-Requirement already satisfied: httpcore==1.* in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx&lt;1,&gt;=0.23.0-&gt;openai) (1.0.9)
-Requirement already satisfied: h11&gt;=0.16 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpcore==1.*-&gt;httpx&lt;1,&gt;=0.23.0-&gt;openai) (0.16.0)
-Requirement already satisfied: annotated-types&gt;=0.6.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic&lt;3,&gt;=1.9.0-&gt;openai) (0.7.0)
-Requirement already satisfied: pydantic-core==2.41.5 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic&lt;3,&gt;=1.9.0-&gt;openai) (2.41.5)
-Requirement already satisfied: typing-inspection&gt;=0.4.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic&lt;3,&gt;=1.9.0-&gt;openai) (0.4.2)
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0mNote: you may need to restart the kernel to use updated packages.
+Requirement already satisfied: tqdm>4 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (4.67.1)
+Requirement already satisfied: typing-extensions<5,>=4.11 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai) (4.15.0)
+Requirement already satisfied: idna>=2.8 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from anyio<5,>=3.5.0->openai) (3.11)
+Requirement already satisfied: certifi in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai) (2025.11.12)
+Requirement already satisfied: httpcore==1.* in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->openai) (0.16.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic<3,>=1.9.0->openai) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic<3,>=1.9.0->openai) (2.41.5)
+Requirement already satisfied: typing-inspection>=0.4.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic<3,>=1.9.0->openai) (0.4.2)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Note: you may need to restart the kernel to use updated packages.
 ```
 
-```
+```bash
 ! pip show openai
 ```
 
-```
+```text
 Name: openai
 Version: 2.8.1
 Summary: The official Python library for the openai API
 Home-page: https://github.com/openai/openai-python
 Author: 
-Author-email: OpenAI &lt;support@openai.com&gt;
+Author-email: OpenAI <support@openai.com>
 License: Apache-2.0
 Location: /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages
 Requires: anyio, distro, httpx, jiter, pydantic, sniffio, tqdm, typing-extensions
 Required-by: langchain-openai
 ```
 
-```
+```python
 import os
 from dotenv import load_dotenv
 
@@ -413,25 +429,25 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 # 检查环境变量是否已设置
-deepseek_api_key = os.environ.get(&quot;DEEPSEEK_API_KEY&quot;)
-deepseek_base_url = os.environ.get(&quot;DEEPSEEK_BASE_URL&quot;)
+deepseek_api_key = os.environ.get("DEEPSEEK_API_KEY")
+deepseek_base_url = os.environ.get("DEEPSEEK_BASE_URL")
 
 
 if not deepseek_api_key:
-    print(&quot;警告：未找到 OPENAI_API_KEY 或 DEEPSEEK_API_KEY 环境变量&quot;)
-    print(&quot;请至少设置其中一个：&quot;)
-    print(&quot;  export OPENAI_API_KEY=&#x27;your-openai-api-key&#x27;&quot;)
-    print(&quot;  或&quot;)
-    print(&quot;  export DEEPSEEK_API_KEY=&#x27;your-deepseek-api-key&#x27;&quot;)
-    raise ValueError(&quot;至少需要设置 OPENAI_API_KEY 或 DEEPSEEK_API_KEY&quot;)
+    print("警告：未找到 OPENAI_API_KEY 或 DEEPSEEK_API_KEY 环境变量")
+    print("请至少设置其中一个：")
+    print("  export OPENAI_API_KEY='your-openai-api-key'")
+    print("  或")
+    print("  export DEEPSEEK_API_KEY='your-deepseek-api-key'")
+    raise ValueError("至少需要设置 OPENAI_API_KEY 或 DEEPSEEK_API_KEY")
 
-print(&quot;环境变量检查完成&quot;)
+print("环境变量检查完成")
 if deepseek_base_url:
-    print(&quot;DEEPSEEK_BASE_URL 已设置&quot;)
-    print(f&quot;DEEPSEEK_BASE_URL: {deepseek_base_url}&quot;)
+    print("DEEPSEEK_BASE_URL 已设置")
+    print(f"DEEPSEEK_BASE_URL: {deepseek_base_url}")
 ```
 
-```
+```text
 环境变量检查完成
 DEEPSEEK_BASE_URL 已设置
 DEEPSEEK_BASE_URL: https://api.deepseek.com
@@ -439,7 +455,7 @@ DEEPSEEK_BASE_URL: https://api.deepseek.com
 
 接下来进行调用测试：
 
-```
+```python
 from openai import OpenAI
 
 # 实例化客户端
@@ -447,106 +463,112 @@ client = OpenAI(api_key=deepseek_api_key,
                 base_url=deepseek_base_url)
 ```
 
-调用deepseek-v3.2模型：
+调用 `deepseek-v3.2` 模型：
 
-```
+```python
 # 调用 deepseekv3 模型
 response = client.chat.completions.create(
-    model=&quot;deepseek-chat&quot;,
+    model="deepseek-chat",
     messages=[
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，好久不见!&quot;}
+        {"role": "user", "content": "你好，好久不见!"}
     ]
 )
 ```
 
-```
+```python
 # 输出生成的响应内容
 print(response.choices[0].message.content)
 ```
 
-```
+```text
 你好！😊 好久不见！真高兴能再次和你聊天～最近过得怎么样？有什么新鲜事想分享吗？无论是想聊聊近况、需要帮助，还是单纯想叙叙旧，我都在这里呢！✨
 ```
 
-```
+```python
 response
 ```
+
+
 
 ```
 ChatCompletion(id=&#x27;4adbf19c-94b5-4535-915c-24c28993bb76&#x27;, choices=[Choice(finish_reason=&#x27;stop&#x27;, index=0, logprobs=None, message=ChatCompletionMessage(content=&#x27;你好！😊 好久不见！真高兴能再次和你聊天～最近过得怎么样？有什么新鲜事想分享吗？无论是想聊聊近况、需要帮助，还是单纯想叙叙旧，我都在这里呢！✨&#x27;, refusal=None, role=&#x27;assistant&#x27;, annotations=None, audio=None, function_call=None, tool_calls=None))], created=1764663924, model=&#x27;deepseek-chat&#x27;, object=&#x27;chat.completion&#x27;, service_tier=None, system_fingerprint=&#x27;fp_eaab8d114b_prod0820_fp8_kvcache&#x27;, usage=CompletionUsage(completion_tokens=48, prompt_tokens=9, total_tokens=57, completion_tokens_details=None, prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cached_tokens=0), prompt_cache_hit_tokens=0, prompt_cache_miss_tokens=9))
 ```
 
-只要能正常接收到输出，就说明当前的DeepSeek-v3.2模型接入成功。接下来我们使用langChain 进行接入。
+只要能正常接收到输出，就说明当前的`DeepSeek-v3.2`模型接入成功。接下来我们使用`langChain`进行接入。
 
-## 2.2 LangChain 接入 DeepSeek-v3.2
+## 2.2 `LangChain` 接入 `DeepSeek-v3.2`
 
-LangChain 提供了 init_chat_model 统一接口，可以用字符串标识符快速初始化模型：
+`LangChain` 提供了`init_chat_model()`统一接口，可以用字符串标识符快速初始化模型：
 
 ```
 %pip install -U LangChain LangChain-DeepSeek
 ```
 
+
+
 ```
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
 Requirement already satisfied: LangChain in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (1.1.0)
 Requirement already satisfied: LangChain-DeepSeek in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (1.0.1)
-Requirement already satisfied: langchain-core&lt;2.0.0,&gt;=1.1.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain) (1.1.0)
-Requirement already satisfied: langgraph&lt;1.1.0,&gt;=1.0.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain) (1.0.4)
-Requirement already satisfied: pydantic&lt;3.0.0,&gt;=2.7.4 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain) (2.12.5)
-Requirement already satisfied: jsonpatch&lt;2.0.0,&gt;=1.33.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (1.33)
-Requirement already satisfied: langsmith&lt;1.0.0,&gt;=0.3.45 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (0.4.49)
-Requirement already satisfied: packaging&lt;26.0.0,&gt;=23.2.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (25.0)
-Requirement already satisfied: pyyaml&lt;7.0.0,&gt;=5.3.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (6.0.3)
-Requirement already satisfied: tenacity!=8.4.0,&lt;10.0.0,&gt;=8.1.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (9.1.2)
-Requirement already satisfied: typing-extensions&lt;5.0.0,&gt;=4.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (4.15.0)
-Requirement already satisfied: jsonpointer&gt;=1.9 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from jsonpatch&lt;2.0.0,&gt;=1.33.0-&gt;langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (3.0.0)
-Requirement already satisfied: langgraph-checkpoint&lt;4.0.0,&gt;=2.1.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (3.0.1)
-Requirement already satisfied: langgraph-prebuilt&lt;1.1.0,&gt;=1.0.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (1.0.5)
-Requirement already satisfied: langgraph-sdk&lt;0.3.0,&gt;=0.2.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (0.2.10)
-Requirement already satisfied: xxhash&gt;=3.5.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (3.6.0)
-Requirement already satisfied: ormsgpack&gt;=1.12.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph-checkpoint&lt;4.0.0,&gt;=2.1.0-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (1.12.0)
-Requirement already satisfied: httpx&gt;=0.25.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (0.28.1)
-Requirement already satisfied: orjson&gt;=3.10.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (3.11.4)
-Requirement already satisfied: requests-toolbelt&gt;=1.0.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (1.0.0)
-Requirement already satisfied: requests&gt;=2.0.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (2.32.5)
-Requirement already satisfied: zstandard&gt;=0.23.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (0.25.0)
-Requirement already satisfied: anyio in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx&gt;=0.25.2-&gt;langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (4.12.0)
-Requirement already satisfied: certifi in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx&gt;=0.25.2-&gt;langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (2025.11.12)
-Requirement already satisfied: httpcore==1.* in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx&gt;=0.25.2-&gt;langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (1.0.9)
-Requirement already satisfied: idna in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx&gt;=0.25.2-&gt;langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (3.11)
-Requirement already satisfied: h11&gt;=0.16 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpcore==1.*-&gt;httpx&gt;=0.25.2-&gt;langgraph-sdk&lt;0.3.0,&gt;=0.2.2-&gt;langgraph&lt;1.1.0,&gt;=1.0.2-&gt;LangChain) (0.16.0)
-Requirement already satisfied: annotated-types&gt;=0.6.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic&lt;3.0.0,&gt;=2.7.4-&gt;LangChain) (0.7.0)
-Requirement already satisfied: pydantic-core==2.41.5 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic&lt;3.0.0,&gt;=2.7.4-&gt;LangChain) (2.41.5)
-Requirement already satisfied: typing-inspection&gt;=0.4.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic&lt;3.0.0,&gt;=2.7.4-&gt;LangChain) (0.4.2)
-Requirement already satisfied: langchain-openai&lt;2.0.0,&gt;=1.0.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain-DeepSeek) (1.1.0)
-Requirement already satisfied: openai&lt;3.0.0,&gt;=1.109.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (2.8.1)
-Requirement already satisfied: tiktoken&lt;1.0.0,&gt;=0.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (0.12.0)
-Requirement already satisfied: distro&lt;2,&gt;=1.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai&lt;3.0.0,&gt;=1.109.1-&gt;langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (1.9.0)
-Requirement already satisfied: jiter&lt;1,&gt;=0.10.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai&lt;3.0.0,&gt;=1.109.1-&gt;langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (0.12.0)
-Requirement already satisfied: sniffio in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai&lt;3.0.0,&gt;=1.109.1-&gt;langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (1.3.1)
-Requirement already satisfied: tqdm&gt;4 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai&lt;3.0.0,&gt;=1.109.1-&gt;langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (4.67.1)
-Requirement already satisfied: regex&gt;=2022.1.18 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from tiktoken&lt;1.0.0,&gt;=0.7.0-&gt;langchain-openai&lt;2.0.0,&gt;=1.0.0-&gt;LangChain-DeepSeek) (2025.11.3)
-Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from requests&gt;=2.0.0-&gt;langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (3.4.4)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from requests&gt;=2.0.0-&gt;langsmith&lt;1.0.0,&gt;=0.3.45-&gt;langchain-core&lt;2.0.0,&gt;=1.1.0-&gt;LangChain) (2.5.0)
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0mNote: you may need to restart the kernel to use updated packages.
+Requirement already satisfied: langchain-core<2.0.0,>=1.1.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain) (1.1.0)
+Requirement already satisfied: langgraph<1.1.0,>=1.0.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain) (1.0.4)
+Requirement already satisfied: pydantic<3.0.0,>=2.7.4 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain) (2.12.5)
+Requirement already satisfied: jsonpatch<2.0.0,>=1.33.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core<2.0.0,>=1.1.0->LangChain) (1.33)
+Requirement already satisfied: langsmith<1.0.0,>=0.3.45 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core<2.0.0,>=1.1.0->LangChain) (0.4.49)
+Requirement already satisfied: packaging<26.0.0,>=23.2.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core<2.0.0,>=1.1.0->LangChain) (25.0)
+Requirement already satisfied: pyyaml<7.0.0,>=5.3.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core<2.0.0,>=1.1.0->LangChain) (6.0.3)
+Requirement already satisfied: tenacity!=8.4.0,<10.0.0,>=8.1.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core<2.0.0,>=1.1.0->LangChain) (9.1.2)
+Requirement already satisfied: typing-extensions<5.0.0,>=4.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-core<2.0.0,>=1.1.0->LangChain) (4.15.0)
+Requirement already satisfied: jsonpointer>=1.9 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2.0.0,>=1.1.0->LangChain) (3.0.0)
+Requirement already satisfied: langgraph-checkpoint<4.0.0,>=2.1.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph<1.1.0,>=1.0.2->LangChain) (3.0.1)
+Requirement already satisfied: langgraph-prebuilt<1.1.0,>=1.0.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph<1.1.0,>=1.0.2->LangChain) (1.0.5)
+Requirement already satisfied: langgraph-sdk<0.3.0,>=0.2.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph<1.1.0,>=1.0.2->LangChain) (0.2.10)
+Requirement already satisfied: xxhash>=3.5.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph<1.1.0,>=1.0.2->LangChain) (3.6.0)
+Requirement already satisfied: ormsgpack>=1.12.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph-checkpoint<4.0.0,>=2.1.0->langgraph<1.1.0,>=1.0.2->LangChain) (1.12.0)
+Requirement already satisfied: httpx>=0.25.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (0.28.1)
+Requirement already satisfied: orjson>=3.10.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (3.11.4)
+Requirement already satisfied: requests-toolbelt>=1.0.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.1.0->LangChain) (1.0.0)
+Requirement already satisfied: requests>=2.0.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.1.0->LangChain) (2.32.5)
+Requirement already satisfied: zstandard>=0.23.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.1.0->LangChain) (0.25.0)
+Requirement already satisfied: anyio in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx>=0.25.2->langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (4.12.0)
+Requirement already satisfied: certifi in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx>=0.25.2->langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (2025.11.12)
+Requirement already satisfied: httpcore==1.* in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx>=0.25.2->langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (1.0.9)
+Requirement already satisfied: idna in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpx>=0.25.2->langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (3.11)
+Requirement already satisfied: h11>=0.16 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from httpcore==1.*->httpx>=0.25.2->langgraph-sdk<0.3.0,>=0.2.2->langgraph<1.1.0,>=1.0.2->LangChain) (0.16.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic<3.0.0,>=2.7.4->LangChain) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic<3.0.0,>=2.7.4->LangChain) (2.41.5)
+Requirement already satisfied: typing-inspection>=0.4.2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from pydantic<3.0.0,>=2.7.4->LangChain) (0.4.2)
+Requirement already satisfied: langchain-openai<2.0.0,>=1.0.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from LangChain-DeepSeek) (1.1.0)
+Requirement already satisfied: openai<3.0.0,>=1.109.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (2.8.1)
+Requirement already satisfied: tiktoken<1.0.0,>=0.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (0.12.0)
+Requirement already satisfied: distro<2,>=1.7.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai<3.0.0,>=1.109.1->langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (1.9.0)
+Requirement already satisfied: jiter<1,>=0.10.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai<3.0.0,>=1.109.1->langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (0.12.0)
+Requirement already satisfied: sniffio in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai<3.0.0,>=1.109.1->langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (1.3.1)
+Requirement already satisfied: tqdm>4 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from openai<3.0.0,>=1.109.1->langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (4.67.1)
+Requirement already satisfied: regex>=2022.1.18 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from tiktoken<1.0.0,>=0.7.0->langchain-openai<2.0.0,>=1.0.0->LangChain-DeepSeek) (2025.11.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.1.0->LangChain) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.1.0->LangChain) (2.5.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Note: you may need to restart the kernel to use updated packages.
 ```
+
+
 
 ```
 ! pip show LangChain
 ```
 
 ```
-Name: langchain
+Name: `langchain`
 Version: 1.1.0
 Summary: Building applications with LLMs through composability
 Home-page: https://docs.langchain.com/
 Author: 
 Author-email: 
 License: MIT
-Location: /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages
-Requires: langchain-core, langgraph, pydantic
-Required-by: deepagents
+Location: `/root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages`
+Requires: `langchain-core`, `langgraph`, `pydantic`
+Required-by: `deepagents`
 ```
 
 ```
@@ -556,8 +578,8 @@ from langchain.chat_models import init_chat_model
 model = init_chat_model(
     api_key=deepseek_api_key,
     base_url=deepseek_base_url,
-    model_provider=&quot;deepseek&quot;,
-    model=&quot;deepseek-chat&quot;
+    model_provider="deepseek",
+    model="deepseek-chat"
 )
 ```
 
@@ -566,7 +588,7 @@ model = init_chat_model(
 ![](img/4e1c25745a94c7048d9ce6c921789b63.png)
 
 ```
-question = &quot;你好，请你介绍一下你自己。&quot;
+question = "你好，请你介绍一下你自己。"
 
 result = model.invoke(question)
 print(result.content)
@@ -602,7 +624,7 @@ print(result.content)
 有什么特别想了解的，或者需要我帮助的吗？我会用心为你解答！✨
 ```
 
-只要能正常接收到输出，就说明当前的DeepSeek-v3.2模型接入成功。接下来我们使用DeepAgents 进行接入，基于 Deepseek-v3.2构建具备实时联网搜索的深度AI代理。
+只要能正常接收到输出，就说明当前的`DeepSeek-v3.2`模型接入成功。接下来我们使用`DeepAgents`进行接入，基于`Deepseek-v3.2`构建具备实时联网搜索的深度AI代理。
 
 # 三、接入内置实时联网检索工具
 
@@ -610,7 +632,7 @@ print(result.content)
 
 这里我们首先介绍一个最基本的LangChain接入工具流程——接入LangChain内置的工具集。其实在MCP爆火之前，LangChian生态中就已经内置集成了非常多的实用工具，开发者可以快速调用这些工具完成更加复杂工作流的开发。
 
-+   LangChain内置工具列表：https://python.langchain.com/docs/integrations/tools/
++ `LangChain内置工具列表`：https://python.langchain.com/docs/integrations/tools/
 
 ![](img/df3b4c8a7a57b6057766462c50d8ce4e.png)
 
@@ -620,28 +642,28 @@ LangChain内置工具列表
 
 | 领域 | 工具名称 | 功能说明 |
 | --- | --- | --- |
-| **搜索引擎与信息检索** | 🔹 DuckDuckGo Search | 免费搜索引擎，返回网页标题、摘要与链接，常用于联网问答。 |
-|  | 🔹 Brave Search API | 提供隐私友好的网页搜索结果，可配置输出深度与过滤。 |
-|  | 🔹 Bing Search Tool | 微软 Bing 搜索接口，支持精确检索与多语言查询。 |
-| **网页浏览与内容提取** | 🔹 Playwright Browser Toolkit | 提供浏览器自动化访问、网页截图与文本抓取功能。 |
-|  | 🔹 Selenium Toolkit | 类似于 Playwright，但偏向传统网页 DOM 操控。 |
-| **生产力工具集成** | 🔹 S**lack Toolkit** | 允许 Agent 在 Slack 中发送、读取或总结消息。 |
-|  | 🔹 J**ira Toolkit** | 用于查询、创建或更新 Jira 项目工单。 |
-|  | 🔹 Google Drive / Docs Toolkit | 操作 Google 文档、表格与文件搜索。 |
-| **数据库与数据操作** | 🔹 SQLDatabase Toolkit | 连接 SQL 数据库，自动生成并执行 SQL 查询。 |
-|  | 🔹 F**aiss / Chroma / Milvu**s VectorStore Tools | 进行向量相似度搜索，用于 RAG 检索。 |
-| **代码与终端执行** | 🔹 Python REPL Tool | 执行 Python 代码片段并返回结果（沙盒环境）。 |
-|  | 🔹 Shell Tool (Bash) | 允许执行 Shell 命令（需安全限制）。 |
-|  | 🔹 Requests Wrapper Tool | 发起 HTTP 请求、API 调用，用于外部数据交互。 |
-| **多模态工具** | 🔹 D**ALL-E Tool** | 生成图像，可结合文本描述创作内容。 |
-|  | 🔹 SerpAPI Image Search | 图片搜索引擎，可返回图片 URL 与元信息。 |
-|  | 🔹 OpenAI Whisper Tool | 音频转录工具，将语音文件转换为文本。 |
-| **知识问答与嵌入检索** | 🔹 VectorStoreRetrieverTool | 基于嵌入模型检索文档片段，用于 RAG 问答。 |
-|  | 🔹 MultiQueryRetrieverTool | 生成多种查询变体以提升检索覆盖率。 |
-| **云与AI服务** | 🔹 O**penAI Functions / A**zure Functions Tool | 让 Agent 调用 OpenAI 或 Azure 定义的函数。 |
-|  | 🔹 Anthropic ToolKit | 集成 Claude 模型工具调用能力。 |
-| **文件系统与数据处理** | 🔹 C**SV Toolkit** | 读取、过滤与分析 CSV 文件数据。 |
-|  | 🔹 Pandas DataFrame Agent Tool | 直接在 DataFrame 上执行查询与统计任务。 |
+| **搜索引擎与信息检索** | `🔹 DuckDuckGo Search` | 免费搜索引擎，返回网页标题、摘要与链接，常用于联网问答。 |
+| | `🔹 Brave Search API` | 提供隐私友好的网页搜索结果，可配置输出深度与过滤。 |
+| | `🔹 Bing Search Tool` | 微软 Bing 搜索接口，支持精确检索与多语言查询。 |
+| **网页浏览与内容提取** | `🔹 Playwright Browser Toolkit` | 提供浏览器自动化访问、网页截图与文本抓取功能。 |
+| | `🔹 Selenium Toolkit` | 类似于 Playwright，但偏向传统网页 DOM 操控。 |
+| **生产力工具集成** | `🔹 Slack Toolkit` | 允许 Agent 在 Slack 中发送、读取或总结消息。 |
+| | `🔹 Jira Toolkit` | 用于查询、创建或更新 Jira 项目工单。 |
+| | `🔹 Google Drive / Docs Toolkit` | 操作 Google 文档、表格与文件搜索。 |
+| **数据库与数据操作** | `🔹 SQLDatabase Toolkit` | 连接 SQL 数据库，自动生成并执行 SQL 查询。 |
+| | `🔹 Faiss / Chroma / Milvus VectorStore Tools` | 进行向量相似度搜索，用于 RAG 检索。 |
+| **代码与终端执行** | `🔹 Python REPL Tool` | 执行 Python 代码片段并返回结果（沙盒环境）。 |
+| | `🔹 Shell Tool (Bash)` | 允许执行 Shell 命令（需安全限制）。 |
+| | `🔹 Requests Wrapper Tool` | 发起 HTTP 请求、API 调用，用于外部数据交互。 |
+| **多模态工具** | `🔹 DALL-E Tool` | 生成图像，可结合文本描述创作内容。 |
+| | `🔹 SerpAPI Image Search` | 图片搜索引擎，可返回图片 URL 与元信息。 |
+| | `🔹 OpenAI Whisper Tool` | 音频转录工具，将语音文件转换为文本。 |
+| **知识问答与嵌入检索** | `🔹 VectorStoreRetrieverTool` | 基于嵌入模型检索文档片段，用于 RAG 问答。 |
+| | `🔹 MultiQueryRetrieverTool` | 生成多种查询变体以提升检索覆盖率。 |
+| **云与AI服务** | `🔹 OpenAI Functions / Azure Functions Tool` | 让 Agent 调用 OpenAI 或 Azure 定义的函数。 |
+| | `🔹 Anthropic ToolKit` | 集成 Claude 模型工具调用能力。 |
+| **文件系统与数据处理** | `🔹 CSV Toolkit` | 读取、过滤与分析 CSV 文件数据。 |
+| | `🔹 Pandas DataFrame Agent Tool` | 直接在 DataFrame 上执行查询与统计任务。 |
 
 我们这里需要接入的就是网络搜索工具。
 
@@ -649,19 +671,19 @@ LangChain内置工具列表
 # !pip install -qU langchain-community langchain-experimental pandas -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-LangChain中内置了TavilySearchResults搜索工具，可以借助Tavily进行网络搜索和信息爬取。这里我们需要先在tavily官网注册并获得API-KEY（每月有免费额度）：https://www.tavily.com/
+LangChain中内置了`TavilySearchResults`搜索工具，可以借助`Tavily`进行网络搜索和信息爬取。这里我们需要先在tavily官网注册并获得`API-KEY`（每月有免费额度）：https://www.tavily.com/
 
 ![](img/7f895ed5b7863abed30dd3cfe362c4ef.png)
 
-然后将API-KEY写到本地.env中的TAVILY_API_KEY变量中。然后即可进行调用了。
+然后将`API-KEY`写到本地`.env`中的`TAVILY_API_KEY`变量中。然后即可进行调用了。
 
 ```
 %pip install -qU langchain-tavily
 ```
 
 ```
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0mNote: you may need to restart the kernel to use updated packages.
+[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+[0mNote: you may need to restart the kernel to use updated packages.
 ```
 
 ```
@@ -684,14 +706,14 @@ Required-by:
 ```
 from tavily import TavilyClient
 
-tavily_key = os.getenv(&quot;TAVILY_API_KEY&quot;)
+tavily_key = os.getenv("TAVILY_API_KEY")
 
 # 初始化 Tavily 客户端
 tavily_client = TavilyClient(api_key=tavily_key)
 
-print(&quot;Tavily 客户端初始化成功&quot;)
-print(&quot;   功能：提供实时互联网搜索能力&quot;)
-print(&quot;   配额：1000 次/月（免费版）&quot;)
+print("Tavily 客户端初始化成功")
+print("   功能：提供实时互联网搜索能力")
+print("   配额：1000 次/月（免费版）")
 ```
 
 ```
@@ -703,53 +725,56 @@ Tavily 客户端初始化成功
 这是一个高度封装的网络搜索工具，可以直接调用：
 
 ```
-query = &quot;请帮我介绍一下 LangChain 的 DeepAgents 框架。注意：请用中文回答&quot;
+query = "请帮我介绍一下 LangChain 的 DeepAgents 框架。注意：请用中文回答"
 
 response = tavily_client.search(
     query,
-    search_depth=&quot;basic&quot;,       # 或 &quot;advanced&quot;
+    search_depth="basic",       # 或 "advanced"
     max_results=3
 )
 print(response)
 ```
 
 ```
-{&#x27;query&#x27;: &#x27;请帮我介绍一下 LangChain 的 DeepAgents 框架。注意：请用中文回答&#x27;, &#x27;follow_up_questions&#x27;: None, &#x27;answer&#x27;: None, &#x27;images&#x27;: [], &#x27;results&#x27;: [{&#x27;url&#x27;: &#x27;https://news.miracleplus.com/share_link/98634&#x27;, &#x27;title&#x27;: &#x27;LangChain(@LangChainAI)：什么是Deep Agents？ 我们详细分解在 ...&#x27;, &#x27;content&#x27;: &#x27;摘要：** -文档讨论了处理复杂任务的深度代理-关键点：基本工具、与LangChain/LangGraph的比较、最佳实践**段落摘要：** -讨论了深度代理与复杂任务处理的关系。&#x27;, &#x27;score&#x27;: 0.9999497, &#x27;raw_content&#x27;: None}, {&#x27;url&#x27;: &#x27;https://blog.csdn.net/m0_59235245/article/details/151588060&#x27;, &#x27;title&#x27;: &#x27;LangChain Agent终极指南！四大支柱架构全解析：从工具调度到 ...&#x27;, &#x27;content&#x27;: &#x27;Deep Agents：用于复杂任务自动化的AI 代理框架. 说起AI智能体，大家可能都不陌生。用大语言模型调用工具，让它循环执行任务，这是最简单的智能体架构&#x27;, &#x27;score&#x27;: 0.99983263, &#x27;raw_content&#x27;: None}, {&#x27;url&#x27;: &#x27;https://www.youtube.com/watch?v=FXE6W1Snl3g&#x27;, &#x27;title&#x27;: &#x27;LangChain Deep Agents - 构建你自己的深度研究智能体 - YouTube&#x27;, &#x27;content&#x27;: &#x27;langchain #deepagents #deepresearch #agent #chatollama 推荐一个目前全网价格最实惠的合租平台，ChatGPT，MidJourney，奈飞，迪士尼，苹果TV等热门软件&#x27;, &#x27;score&#x27;: 0.99970406, &#x27;raw_content&#x27;: None}], &#x27;response_time&#x27;: 0.58, &#x27;request_id&#x27;: &#x27;01d5a6ff-b42e-42a9-8e50-0c1243519872&#x27;}
+{'query': '请帮我介绍一下 LangChain 的 DeepAgents 框架。注意：请用中文回答', 'follow_up_questions': None, 'answer': None, 'images': [], 'results': [{'url': 'https://news.miracleplus.com/share_link/98634', 'title': 'LangChain(@LangChainAI)：什么是Deep Agents？ 我们详细分解在 ...', 'content': '摘要：** -文档讨论了处理复杂任务的深度代理-关键点：基本工具、与LangChain/LangGraph的比较、最佳实践**段落摘要：** -讨论了深度代理与复杂任务处理的关系。', 'score': 0.9999497, 'raw_content': None}, {'url': 'https://blog.csdn.net/m0_59235245/article/details/151588060', 'title': 'LangChain Agent终极指南！四大支柱架构全解析：从工具调度到 ...', 'content': 'Deep Agents：用于复杂任务自动化的AI 代理框架. 说起AI智能体，大家可能都不陌生。用大语言模型调用工具，让它循环执行任务，这是最简单的智能体架构', 'score': 0.99983263, 'raw_content': None}, {'url': 'https://www.youtube.com/watch?v=FXE6W1Snl3g', 'title': 'LangChain Deep Agents - 构建你自己的深度研究智能体 - YouTube', 'content': 'langchain #deepagents #deepresearch #agent #chatollama 推荐一个目前全网价格最实惠的合租平台，ChatGPT，MidJourney，奈飞，迪士尼，苹果TV等热门软件', 'score': 0.99970406, 'raw_content': None}], 'response_time': 0.58, 'request_id': '01d5a6ff-b42e-42a9-8e50-0c1243519872'}
 ```
 
-一次完整的Function calling执行流程如下：
+一次完整的`Function calling`执行流程如下：
 
 ![](img/e526e814c8cf079dabf9ac0b7d080c3d.png)
 
 # 四、搭建实时联网检索DeepAgents
 
-大模型与联网检索功能配置完成后，我们开始编写代码构建create_deep_agent代理。第一步是导入必要的库并验证配置是否正确。
+大模型与联网检索功能配置完成后，我们开始编写代码构建`create_deep_agent`代理。第一步是导入必要的库并验证配置是否正确。
 
 我们首先导入项目所需的核心库。这里涉及三个关键模块：
 
-+   **环境管理**：dotenv 用于加载 .env 文件中的环境变量
-
-+   **搜索能力**：TavilyClient 提供互联网搜索功能
-
-+   **智能体框架**：deepagents 和 langchain 构建智能体核心
-
-+   **美化输出**：rich 库让终端输出更加友好（可选）
++ **环境管理**：`dotenv` 用于加载 `.env` 文件中的环境变量
++ **搜索能力**：`TavilyClient` 提供互联网搜索功能
++ **智能体框架**：`deepagents` 和 `langchain` 构建智能体核心
++ **美化输出**：`rich` 库让终端输出更加友好（可选）
 
 ```
 %pip install rich
 ```
 
+
+
+# 环境准备与依赖安装
+
 ```
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
 Requirement already satisfied: rich in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (14.2.0)
-Requirement already satisfied: markdown-it-py&gt;=2.2.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from rich) (4.0.0)
-Requirement already satisfied: pygments&lt;3.0.0,&gt;=2.13.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from rich) (2.19.2)
-Requirement already satisfied: mdurl~=0.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from markdown-it-py&gt;=2.2.0-&gt;rich) (0.1.2)
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0mNote: you may need to restart the kernel to use updated packages.
+Requirement already satisfied: markdown-it-py>=2.2.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from rich) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from rich) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /root/anaconda3/envs/DeepAgentsAutomation/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich) (0.1.2)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Note: you may need to restart the kernel to use updated packages.
 ```
 
-```
+# 核心依赖导入
+
+```python
 # 核心依赖导入
 import os
 from typing import Literal
@@ -765,30 +790,32 @@ try:
     from rich.panel import Panel
     RICH_AVAILABLE = True
     console = Console()
-    print(&quot;Rich 库已加载，将使用美化输出&quot;)
+    print("Rich 库已加载，将使用美化输出")
 except ImportError:
     RICH_AVAILABLE = False
-    print(&quot;ℹ Rich 库未安装，使用标准输出&quot;)
+    print("ℹ Rich 库未安装，使用标准输出")
 ```
 
 ```
 Rich 库已加载，将使用美化输出
 ```
 
-现在加载之前配置的 .env 文件，并验证 API 密钥是否正确设置。
+# 环境变量加载与密钥验证
 
-```
+现在加载之前配置的 `.env` 文件，并验证 API 密钥是否正确设置。
+
+```python
 # 加载环境变量（override=True 确保覆盖系统环境变量）
 load_dotenv(override=True)
 
 # 读取配置
-deepseek_api_key = os.environ.get(&quot;DEEPSEEK_API_KEY&quot;)
-deepseek_base_url = os.environ.get(&quot;DEEPSEEK_BASE_URL&quot;)
-tavily_key = os.environ.get(&quot;TAVILY_API_KEY&quot;)
+deepseek_api_key = os.environ.get("DEEPSEEK_API_KEY")
+deepseek_base_url = os.environ.get("DEEPSEEK_BASE_URL")
+tavily_key = os.environ.get("TAVILY_API_KEY")
 
-print(f&quot;deepseek_api_key: {deepseek_api_key[:10]}...{deepseek_api_key[-10:]}&quot;)
-print(f&quot;deepseek_base_url: {deepseek_base_url}&quot;)
-print(f&quot;tavily_key: {tavily_key[:10]}...{tavily_key[-10:]}&quot;)
+print(f"deepseek_api_key: {deepseek_api_key[:10]}...{deepseek_api_key[-10:]}")
+print(f"deepseek_base_url: {deepseek_base_url}")
+print(f"tavily_key: {tavily_key[:10]}...{tavily_key[-10:]}")
 ```
 
 ```
@@ -797,17 +824,19 @@ deepseek_base_url: https://api.deepseek.com
 tavily_key: tvly-dev-B...sW9Tovu5vZ
 ```
 
-注意这里使用 os.environ.get() 而非直接访问字典，这样即使密钥不存在也不会抛出异常，而是返回 None。接下来我们需要验证这些密钥的有效性。
+注意这里使用 `os.environ.get()` 而非直接访问字典，这样即使密钥不存在也不会抛出异常，而是返回 `None`。接下来我们需要验证这些密钥的有效性。
+
+# 搜索工具定义与测试
 
 接下来我们需要重点来看智能体的第一个能力：信息检索。大模型的知识是静态的，而研究任务需要获取最新信息。这就需要我们为智能体配备搜索工具。
 
-```
+```python
 # 初始化 Tavily 客户端
 tavily_client = TavilyClient(api_key=tavily_key)
 
-print(&quot;Tavily 客户端初始化成功&quot;)
-print(&quot;   功能：提供实时互联网搜索能力&quot;)
-print(&quot;   配额：1000 次/月（免费版）&quot;)
+print("Tavily 客户端初始化成功")
+print("   功能：提供实时互联网搜索能力")
+print("   配额：1000 次/月（免费版）")
 ```
 
 ```
@@ -818,27 +847,27 @@ Tavily 客户端初始化成功
 
 现在让我们定义搜索工具函数。注意观察函数的结构：清晰的类型注解和详细的 docstring 是关键，大模型会根据这些信息决定如何调用工具。
 
-```
+```python
 def internet_search(
     query: str,
     max_results: int = 5,
-    topic: Literal[&quot;general&quot;, &quot;news&quot;, &quot;finance&quot;] = &quot;general&quot;,
+    topic: Literal["general", "news", "finance"] = "general",
     include_raw_content: bool = False,
 ):
-    &quot;&quot;&quot;
+    """
     运行网络搜索
-    
+
     这是一个用于网络搜索的工具函数，封装了 Tavily 的搜索功能。
-    
+
     参数说明：
-    - query: 搜索查询字符串，例如 &quot;Python 异步编程教程&quot;
+    - query: 搜索查询字符串，例如 "Python 异步编程教程"
     - max_results: 最大返回结果数量，默认为 5
-    - topic: 搜索主题类型，可选 &quot;general&quot;（通用）、&quot;news&quot;（新闻）或 &quot;finance&quot;（金融）
+    - topic: 搜索主题类型，可选 "general"（通用）、"news"（新闻）或 "finance"（金融）
     - include_raw_content: 是否包含原始网页内容，默认为 False
-    
+
     返回：
     - 搜索结果字典，包含标题、URL、摘要等信息
-    &quot;&quot;&quot;
+    """
     try:
         result = tavily_client.search(
             query,
@@ -850,9 +879,9 @@ def internet_search(
     except Exception as e:
         # 异常处理：返回错误信息而非抛出异常
         # 这样 LLM 可以理解出错并尝试其他策略
-        return {&quot;error&quot;: f&quot;搜索失败: {str(e)}&quot;}
+        return {"error": f"搜索失败: {str(e)}"}
 
-print(&quot;搜索工具创建完成&quot;)
+print("搜索工具创建完成")
 ```
 
 ```
@@ -861,24 +890,24 @@ print(&quot;搜索工具创建完成&quot;)
 
 定义完成后，我们先手动测试一下，确保功能正常。
 
-```
+```python
 # 测试搜索功能
-print(&quot;开始测试搜索工具...\n&quot;)
+print("开始测试搜索工具...\n")
 
-test_result = internet_search(&quot;帮我检索一下 DeepSeek-v3.2 最新模型的特性&quot;, max_results=3)
+test_result = internet_search("帮我检索一下 DeepSeek-v3.2 最新模型的特性", max_results=3)
 
-print(&quot;搜索测试结果：&quot;)
-print(f&quot;结果数量: {len(test_result.get(&#x27;results&#x27;, []))}&quot;)
+print("搜索测试结果：")
+print(f"结果数量: {len(test_result.get('results', []))}")
 
 # 显示第一条结果
-if test_result.get(&#x27;results&#x27;):
-    first = test_result[&#x27;results&#x27;][0]
-    print(f&quot;\n标题: {first.get(&#x27;title&#x27;, &#x27;N/A&#x27;)}&quot;)
-    print(f&quot;链接: {first.get(&#x27;url&#x27;, &#x27;N/A&#x27;)}&quot;)
-    print(f&quot;摘要: {first.get(&#x27;content&#x27;, &#x27;N/A&#x27;)[:150]}...&quot;)
-    print(&quot;\n搜索工具测试通过！&quot;)
+if test_result.get('results'):
+    first = test_result['results'][0]
+    print(f"\n标题: {first.get('title', 'N/A')}")
+    print(f"链接: {first.get('url', 'N/A')}")
+    print(f"摘要: {first.get('content', 'N/A')[:150]}...")
+    print("\n搜索工具测试通过！")
 else:
-    print(&quot;\n未获取到搜索结果，请检查网络连接和 API 配额&quot;)
+    print("\n未获取到搜索结果，请检查网络连接和 API 配额")
 ```
 
 ```
@@ -896,17 +925,19 @@ else:
 
 至此，相信大家已经非常清晰地明白了如何为智能体创建工具。关键就是：函数 + 类型注解 + 详细文档。
 
-工具准备好后，我们需要初始化大模型实例，即DeepSeek-v3.2。未确保模型初始化成功，我们可以先测试一下模型是否正常工作。
+# 大模型初始化与连接测试
 
-```
+工具准备好后，我们需要初始化大模型实例，即 DeepSeek-v3.2。未确保模型初始化成功，我们可以先测试一下模型是否正常工作。
+
+```python
 # 测试模型
-print(&quot;测试 DeepSeek 模型连接...\n&quot;)
+print("测试 DeepSeek 模型连接...\n")
 
-test_response = model.invoke(&quot;请用一句话介绍你自己。&quot;)
+test_response = model.invoke("请用一句话介绍你自己。")
 
-print(&quot;DeepSeek-v3.2 的回复：&quot;)
+print("DeepSeek-v3.2 的回复：")
 print(test_response.content)
-print(&quot;\n模型测试通过！DeepSeek 已就绪&quot;)
+print("\n模型测试通过！DeepSeek 已就绪")
 ```
 
 ```
@@ -918,23 +949,22 @@ DeepSeek-v3.2 的回复：
 模型测试通过！DeepSeek 已就绪
 ```
 
-最后，设计System Prompt。在创建智能体之前，我们需要先定义它的"人格"和"工作准则"。这就是 system_prompt 的作用。
+# System Prompt 设计
 
-我们可以把 system_prompt 类比为员工入职培训手册：
+最后，设计 System Prompt。在创建智能体之前，我们需要先定义它的"人格"和"工作准则"。这就是 `system_prompt` 的作用。
 
-+   告诉 AI 它的角色定位（研究员）
+我们可以把 `system_prompt` 类比为员工入职培训手册：
 
-+   明确工作目标（撰写研究报告）
++ 告诉 AI 它的角色定位（研究员）
++ 明确工作目标（撰写研究报告）
++ 提供操作指南（如何使用工具）
++ 设定质量标准（引用来源等）
 
-+   提供操作指南（如何使用工具）
+一个好的 `system_prompt` 能够极大提升智能体的表现。
 
-+   设定质量标准（引用来源等）
-
-一个好的 system prompt 能够极大提升智能体的表现.
-
-```
+```python
 # 系统提示词：指导智能体成为专家研究员
-research_instructions = &quot;&quot;&quot;
+research_instructions = """
 您是一位资深的研究人员。您的工作是进行深入的研究，然后撰写一份精美的报告。
 
 您可以通过互联网搜索引擎作为主要的信息收集工具。
@@ -949,18 +979,20 @@ research_instructions = &quot;&quot;&quot;
 3. 如果内容太大，将重要发现保存到文件中
 4. 将信息整合成一份结构清晰的报告
 5. 务必引用你的资料来源
-&quot;&quot;&quot;
+"""
 
-print(&quot;系统提示词已定义&quot;)
+print("系统提示词已定义")
 ```
 
 ```
 系统提示词已定义
 ```
 
-最后，即可通过DeepAgents 框架的核心函数：create_deep_agent()：
+# 创建 Deep Agent 实例
 
-```
+最后，即可通过 DeepAgents 框架的核心函数 `create_deep_agent()`：
+
+```python
 # 创建 Deep Agent
 agent = create_deep_agent(
     model=model,                           # 使用 DeepSeek 模型
@@ -968,25 +1000,27 @@ agent = create_deep_agent(
     system_prompt=research_instructions    # 系统提示词
 )
 
-print(&quot;Deep Agent 创建成功！&quot;)
+print("Deep Agent 创建成功！")
 ```
 
 ```
 Deep Agent 创建成功！
 ```
 
-```
-query = &quot;请帮我介绍一下DeepSeek-v3.2 最新模型的特性，注意：请用中文回答！&quot;
+# 智能体调用与结果输出
+
+```python
+query = "请帮我介绍一下DeepSeek-v3.2 最新模型的特性，注意：请用中文回答！"
 
 result = agent.invoke({
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: query}
+    "messages": [
+        {"role": "user", "content": query}
     ]
 })
 ```
 
-```
-print(result[&quot;messages&quot;][-1].content)
+```python
+print(result["messages"][-1].content)
 ```
 
 ```
@@ -1020,26 +1054,28 @@ print(result[&quot;messages&quot;][-1].content)
 DeepSeek-V3.2不仅代表了开源大模型的最高水平，更重要的是通过技术创新解决了长文本处理效率瓶颈，为AI技术的普及和应用提供了强大的基础设施。
 ```
 
-# 五、create_deep_agent 的内部机制解读
+# 五、`create_deep_agent` 的内部机制解读
 
 这里大家可能会比较疑惑，这好像与普通的Agent智能体没什么区别，实则不然。我们可以通过如下代码看到 DeepAgents 内部加载的工具，其实不仅仅是我们自定义传入的联网检索工具。
 
-```
+
+
+```python
 def print_agent_tools(agent):
-    &quot;&quot;&quot;
+    """
     打印 Agent 中加载的所有工具
     包括用户自定义工具、文件系统工具、系统工具等
-    &quot;&quot;&quot;
+    """
     # 获取 agent 的 nodes (LangGraph 的节点)
-    if hasattr(agent, &#x27;nodes&#x27;) and &#x27;tools&#x27; in agent.nodes:
-        tools_node = agent.nodes[&#x27;tools&#x27;]
+    if hasattr(agent, 'nodes') and 'tools' in agent.nodes:
+        tools_node = agent.nodes['tools']
 
         # tools_node 是 PregelNode，真正的 ToolNode 在 bound 属性中
-        if hasattr(tools_node, &#x27;bound&#x27;):
+        if hasattr(tools_node, 'bound'):
             tool_node = tools_node.bound
 
             # 从 ToolNode 获取工具
-            if hasattr(tool_node, &#x27;tools_by_name&#x27;):
+            if hasattr(tool_node, 'tools_by_name'):
                 tools = tool_node.tools_by_name
 
                 # 分类工具
@@ -1049,14 +1085,14 @@ def print_agent_tools(agent):
 
                 for tool_name, tool in tools.items():
                     tool_info = {
-                        &#x27;name&#x27;: tool_name,
-                        &#x27;description&#x27;: getattr(tool, &#x27;description&#x27;, &#x27;无描述&#x27;)
+                        'name': tool_name,
+                        'description': getattr(tool, 'description', '无描述')
                     }
 
                     # 分类
-                    if tool_name in [&#x27;ls&#x27;, &#x27;read_file&#x27;, &#x27;write_file&#x27;, &#x27;edit_file&#x27;, &#x27;glob&#x27;, &#x27;grep&#x27;, &#x27;execute&#x27;]:
+                    if tool_name in ['ls', 'read_file', 'write_file', 'edit_file', 'glob', 'grep', 'execute']:
                         filesystem_tools.append(tool_info)
-                    elif tool_name in [&#x27;write_todos&#x27;, &#x27;task&#x27;]:
+                    elif tool_name in ['write_todos', 'task']:
                         system_tools.append(tool_info)
                     else:
                         user_tools.append(tool_info)
@@ -1065,89 +1101,114 @@ def print_agent_tools(agent):
                 _print_tools_rich(user_tools, filesystem_tools, system_tools)
              
             else:
-                print(&quot;无法获取工具列表 (tools_by_name 不存在)&quot;)
+                print("无法获取工具列表 (tools_by_name 不存在)")
         else:
-            print(&quot;无法获取工具列表 (bound 属性不存在)&quot;)
+            print("无法获取工具列表 (bound 属性不存在)")
     else:
-        print(&quot;无法获取工具列表 (nodes 结构不符合预期)&quot;)
+        print("无法获取工具列表 (nodes 结构不符合预期)")
 
 def _print_tools_rich(user_tools, filesystem_tools, system_tools):
-    &quot;&quot;&quot;使用 Rich 库美化打印工具列表&quot;&quot;&quot;
+    """使用 Rich 库美化打印工具列表"""
     console.print()
 
     # 创建表格
-    table = Table(title=&quot;Agent 加载的工具列表&quot;, show_header=True, header_style=&quot;bold magenta&quot;)
-    table.add_column(&quot;类别&quot;, style=&quot;cyan&quot;, width=20)
-    table.add_column(&quot;工具名称&quot;, style=&quot;green&quot;, width=20)
-    table.add_column(&quot;描述&quot;, style=&quot;white&quot;, width=60)
+    table = Table(title="Agent 加载的工具列表", show_header=True, header_style="bold magenta")
+    table.add_column("类别", style="cyan", width=20)
+    table.add_column("工具名称", style="green", width=20)
+    table.add_column("描述", style="white", width=60)
 
     # 添加用户工具
     for i, tool in enumerate(user_tools):
-        category = &quot;用户工具&quot; if i == 0 else &quot;&quot;
-        desc = tool[&#x27;description&#x27;][:80] + &quot;...&quot; if len(tool[&#x27;description&#x27;]) &gt; 80 else tool[&#x27;description&#x27;]
-        table.add_row(category, tool[&#x27;name&#x27;], desc)
+        category = "用户工具" if i == 0 else ""
+        desc = tool['description'][:80] + "..." if len(tool['description']) > 80 else tool['description']
+        table.add_row(category, tool['name'], desc)
 
     # 添加文件系统工具
     for i, tool in enumerate(filesystem_tools):
-        category = &quot;文件系统工具&quot; if i == 0 else &quot;&quot;
-        desc = tool[&#x27;description&#x27;][:80] + &quot;...&quot; if len(tool[&#x27;description&#x27;]) &gt; 80 else tool[&#x27;description&#x27;]
-        table.add_row(category, tool[&#x27;name&#x27;], desc)
+        category = "文件系统工具" if i == 0 else ""
+        desc = tool['description'][:80] + "..." if len(tool['description']) > 80 else tool['description']
+        table.add_row(category, tool['name'], desc)
 
     # 添加系统工具
     for i, tool in enumerate(system_tools):
-        category = &quot;系统工具&quot; if i == 0 else &quot;&quot;
-        desc = tool[&#x27;description&#x27;][:80] + &quot;...&quot; if len(tool[&#x27;description&#x27;]) &gt; 80 else tool[&#x27;description&#x27;]
-        table.add_row(category, tool[&#x27;name&#x27;], desc)
+        category = "系统工具" if i == 0 else ""
+        desc = tool['description'][:80] + "..." if len(tool['description']) > 80 else tool['description']
+        table.add_row(category, tool['name'], desc)
 
     console.print(table)
 
     # 打印统计
     total = len(user_tools) + len(filesystem_tools) + len(system_tools)
     console.print(Panel(
-        f&quot;[bold green]共计 {total} 个工具[/bold green]\n\n&quot;
-        f&quot;• 用户工具: {len(user_tools)} 个\n&quot;
-        f&quot;• 文件系统工具: {len(filesystem_tools)} 个\n&quot;
-        f&quot;• 系统工具: {len(system_tools)} 个&quot;,
-        title=&quot;统计信息&quot;,
-        border_style=&quot;green&quot;
+        f"[bold green]共计 {total} 个工具[/bold green]\n\n"
+        f"• 用户工具: {len(user_tools)} 个\n"
+        f"• 文件系统工具: {len(filesystem_tools)} 个\n"
+        f"• 系统工具: {len(system_tools)} 个",
+        title="统计信息",
+        border_style="green"
     ))
     console.print()
 ```
 
-```
+```python
 # 调用打印函数，查看智能体加载的所有工具
 print_agent_tools(agent)
 ```
 
-Agent 加载的工具列表                                             ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓┃ 类别                 ┃ 工具名称             ┃ 描述                                                         ┃┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩│ 用户工具             │ internet_search      │ 运行网络搜索                                                 ││                      │                      │                                                              ││                      │                      │ 这是一个用于网络搜索的工具函数，封装了 Tavily 的搜索功能。   ││                      │                      │                                                              ││                      │                      │ 参数说明：                                                   ││                      │                      │ - query: 搜索查询字符串，例如 "Python 异步编...              ││ 文件系统工具         │ ls                   │ Lists all files in the filesystem, filtering by directory.   ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The path pa...                                             ││                      │ read_file            │ Reads a file from the filesystem. You can access any file    ││                      │                      │ directly by using this...                                    ││                      │ write_file           │ Writes to a new file in the filesystem.                      ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The file_path parameter must b...                          ││                      │ edit_file            │ Performs exact string replacements in files.                 ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - You must use your `Read` ...                               ││                      │ glob                 │ Find files matching a glob pattern.                          ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The glob tool finds files by match...                      ││                      │ grep                 │ Search for a pattern in files.                               ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The grep tool searches for text pattern...                 ││                      │ execute              │ Executes a given command in the sandbox environment with     ││                      │                      │ proper handling and sec...                                   ││ 系统工具             │ write_todos          │ Use this tool to create and manage a structured task list    ││                      │                      │ for your current work ...                                    ││                      │ task                 │ Launch an ephemeral subagent to handle complex, multi-step   ││                      │                      │ independent tasks wit...                                     │└──────────────────────┴──────────────────────┴──────────────────────────────────────────────────────────────┘
+```
+Agent 加载的工具列表                                             ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓┃ 类别                 ┃ 工具名称             ┃ 描述                                                         ┃┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩│ 用户工具             │ internet_search      │ 运行网络搜索                                                 ││                      │                      │                                                              ││                      │                      │ 这是一个用于网络搜索的工具函数，封装了 Tavily 的搜索功能。   ││                      │                      │                                                              ││                      │                      │ 参数说明：                                                   ││                      │                      │ - query: 搜索查询字符串，例如 "Python 异步编...              ││ 文件系统工具         │ ls                   │ Lists all files in the filesystem, filtering by directory.   ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The path pa...                                             ││                      │ read_file            │ Reads a file from the filesystem. You can access any file    ││                      │                      │ directly by using this...                                    ││                      │ write_file           │ Writes to a new file in the filesystem.                      ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The file_path parameter must b...                          ││                      │ edit_file            │ Performs exact string replacements in files.                 ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - You must use your `Read` ...                               ││                      │ glob                 │ Find files matching a glob pattern.                          ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The glob tool finds files by match...                      ││                      │ grep                 │ Search for a pattern in files.                               ││                      │                      │                                                              ││                      │                      │ Usage:                                                       ││                      │                      │ - The grep tool searches for text pattern...                 ││                      │ execute              │ Executes a given command in the sandbox environment with     ││                      │                      │ proper handling and sec...                                   ││ 系统工具             │ write_todos          │ Use this tool to create and manage a structured task list    ││                      │                      │ for your current work ...                                    ││                      │ task                 │ Launch an ephemeral subagent to handle complex, multi-step   ││                      │                      │ independent tasks wit...                                     │└──────────────────────┴──────────────────────┴──────────────────────────────────────────────────────────────┘
+```
 
-╭─────────────────────────────────────────────────── 统计信息 ────────────────────────────────────────────────────╮│ 共计 10 个工具                                                                                                  ││                                                                                                                 ││ • 用户工具: 1 个                                                                                                ││ • 文件系统工具: 7 个                                                                                            ││ • 系统工具: 2 个                                                                                                │╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+# DeepAgents 中间件堆栈与工具系统
+
+## 工具统计清单
+
+```
+╭─────────────────────────────────────────────────── 统计信息 ────────────────────────────────────────────────────╮
+│ 共计 10 个工具                                                                                                  │
+│                                                                                                                 │
+│ • 用户工具: 1 个                                                                                                │
+│ • 文件系统工具: 7 个                                                                                            │
+│ • 系统工具: 2 个                                                                                                │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 执行上面的代码后，我们会看到一个完整的工具清单，包括：
 
-+   **1 个用户工具**：internet_search（我们自定义的）
++   **1 个用户工具**：`internet_search`（我们自定义的）
 
-+   **7 个文件系统工具**：ls, read_file, write_file, edit_file, glob, grep, execute
++   **7 个文件系统工具**：`ls`, `read_file`, `write_file`, `edit_file`, `glob`, `grep`, `execute`
 
-+   **2 个系统工具**：write_todos, task
++   **2 个系统工具**：`write_todos`, `task`
 
-这就是 DeepAgents 的核心设计理念：中间件堆栈（Middleware Stack）。当我们调用 create_deep_agent() 时，框架会自动为智能体注入多层中间件，每层负责不同的功能增强：
+## 中间件堆栈设计
 
-DeepAgents 中间件堆栈
+这就是 DeepAgents 的核心设计理念：中间件堆栈（Middleware Stack）。当我们调用 `create_deep_agent()` 时，框架会自动为智能体注入多层中间件，每层负责不同的功能增强：
+
+### DeepAgents 中间件堆栈
 
 | 中间件名称 | 提供能力 | 注入工具 |
+
 | --- | --- | --- |
-| TodoListMiddleware | 任务规划 | write_todos |
-| FilesystemMiddleware | 文件系统操作 | ls, read_file, write_file, edit_file, glob, grep, execute |
-| SubAgentMiddleware | 子代理管理 | task |
-| SummarizationMiddleware | 上下文压缩 | （自动工作，无需工具） |
-| AnthropicPromptCachingMiddleware | 提示词缓存优化 | （自动工作） |
-| PatchToolCallsMiddleware | 工具调用错误修复 | （自动工作） |
+
+| `TodoListMiddleware` | 任务规划 | `write_todos` |
+
+| `FilesystemMiddleware` | 文件系统操作 | `ls`, `read_file`, `write_file`, `edit_file`, `glob`, `grep`, `execute` |
+
+| `SubAgentMiddleware` | 子代理管理 | `task` |
+
+| `SummarizationMiddleware` | 上下文压缩 | （自动工作，无需工具） |
+
+| `AnthropicPromptCachingMiddleware` | 提示词缓存优化 | （自动工作） |
+
+| `PatchToolCallsMiddleware` | 工具调用错误修复 | （自动工作） |
 
 这种设计让我们只需关注业务逻辑（搜索工具），框架自动处理基础设施。其运行过程如下：
 
 ```
-    用户输入: &quot;请帮我介绍一下DeepSeek-v3.2 最新模型的特性，注意：请用中文回答！&quot;
+    用户输入: "请帮我介绍一下DeepSeek-v3.2 最新模型的特性，注意：请用中文回答！"
         ↓
     ┌─────────────────────────────────────────────────┐
     │ Step 1: TodoListMiddleware.before_model        │
@@ -1164,7 +1225,7 @@ DeepAgents 中间件堆栈
         ↓
     ┌─────────────────────────────────────────────────┐
     │ Step 3: LLM 决定调用 internet_search           │
-    │ - Tool Call: internet_search(query=&quot;LangChain&quot;)│
+    │ - Tool Call: internet_search(query="LangChain")│
     └─────────────────────────────────────────────────┘
         ↓
     ┌─────────────────────────────────────────────────┐
@@ -1175,14 +1236,14 @@ DeepAgents 中间件堆栈
     ┌─────────────────────────────────────────────────┐
     │ Step 5: LLM 决定保存到文件                      │
     │ - Tool Call: write_file(                        │
-    │     path=&quot;/research_data.md&quot;,                   │
-    │     content=&quot;搜索结果...&quot;                       │
+    │     path="/research_data.md",                   │
+    │     content="搜索结果..."                       │
     │   )                                             │
     └─────────────────────────────────────────────────┘
         ↓
     ┌─────────────────────────────────────────────────┐
     │ Step 6: FilesystemMiddleware.after_tools       │
-    │ - StateBackend 将文件保存到 state[&quot;files&quot;]      │
+    │ - StateBackend 将文件保存到 state["files"]      │
     │ - 返回成功消息给 LLM                            │
     └─────────────────────────────────────────────────┘
         ↓
@@ -1194,15 +1255,15 @@ DeepAgents 中间件堆栈
         ↓
     ┌─────────────────────────────────────────────────┐
     │ Step 8: LLM 决定读取文件并生成报告              │
-    │ - Tool Call: read_file(&quot;/research_data.md&quot;)    │
+    │ - Tool Call: read_file("/research_data.md")    │
     │ - 基于内容生成报告                             │
     │ - 调用 write_file 保存报告                     │
     └─────────────────────────────────────────────────┘
         ↓
     ┌─────────────────────────────────────────────────┐
     │ Step 9: LLM 返回最终响应                        │
-    │ - &quot;我已完成 LangChain 调研,报告保存在          │
-    │    /report.md&quot;                                  │
+    │ - "我已完成 LangChain 调研,报告保存在          │
+    │    /report.md"                                  │
     └─────────────────────────────────────────────────┘
         ↓
     返回给用户
@@ -1210,11 +1271,13 @@ DeepAgents 中间件堆栈
 
 至此，相信大家已经非常清晰地明白了 DeepAgents 的能力构成。这种透明化的设计让我们能够精确控制智能体的行为边界。
 
-最后，为了让调用更加简洁，我们封装一个 run_research() 函数。
+## 封装研究函数
 
-```
+最后，为了让调用更加简洁，我们封装一个 `run_research()` 函数。
+
+```python
 def run_research(query: str):
-    &quot;&quot;&quot;
+    """
     运行研究任务
     
     参数:
@@ -1222,37 +1285,39 @@ def run_research(query: str):
     
     返回:
         str: 研究结果
-    &quot;&quot;&quot;
-    print(f&quot;开始研究: {query}&quot;)
-    print(&quot;=&quot; * 60)
+    """
+    print(f"开始研究: {query}")
+    print("=" * 60)
     
     # 调用 agent.invoke() 执行任务
     result = agent.invoke({
-        &quot;messages&quot;: [
-            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: query}
+        "messages": [
+            {"role": "user", "content": query}
         ]
     })
     
-    print(&quot;\n&quot; + &quot;=&quot; * 60)
-    print(&quot;智能体的最终响应：&quot;)
-    print(&quot;=&quot; * 60)
-    print(result[&quot;messages&quot;][-1].content)
+    print("\n" + "=" * 60)
+    print("智能体的最终响应：")
+    print("=" * 60)
+    print(result["messages"][-1].content)
     
-    return result[&quot;messages&quot;][-1].content
+    return result["messages"][-1].content
 ```
+
+## 实战示例
 
 现在提出一个真实的研究需求，观察DeepAgents的表现。
 
-```
+```python
 # 定义研究任务
-query = &quot;详细调研 DeepSeek 大模型的最新技术进展，并写一份结构化的总结报告。&quot;
+query = "详细调研 DeepSeek 大模型的最新技术进展，并写一份结构化的总结报告。"
 
 try:
     # 执行研究
     result = run_research(query)
-    print(&quot;\n研究任务完成！&quot;)
+    print("\n研究任务完成！")
 except Exception as e:
-    print(f&quot;\n发生错误: {str(e)}&quot;)
+    print(f"\n发生错误: {str(e)}")
     raise
 ```
 
@@ -1310,11 +1375,13 @@ except Exception as e:
 研究任务完成！
 ```
 
+## 执行步骤解析
+
 当我们执行上面的代码时，智能体会经历以下步骤（虽然我们看不到中间过程）：
 
 +   **第 1 步：任务规划**
 
-智能体会调用 write_todos 工具，将任务分解为：
+智能体会调用 `write_todos` 工具，将任务分解为：
 
 1.  搜索 DeepSeek-v3.2 最新发展的资料
 
@@ -1324,11 +1391,11 @@ except Exception as e:
 
 +   **第 2 步：信息搜索**
 
-调用 internet_search 工具，查询 "DeepSeek-v3.2 大模型 2025 最新进展" 等关键词。
+调用 `internet_search` 工具，查询 "DeepSeek-v3.2 大模型 2025 最新进展" 等关键词。
 
 +   **第 3 步：信息管理**
 
-如果搜索结果内容很多，智能体可能会调用 write_file 保存中间结果到虚拟文件系统。
+如果搜索结果内容很多，智能体可能会调用 `write_file` 保存中间结果到虚拟文件系统。
 
 +   **第 4 步：综合输出**
 
@@ -1336,7 +1403,9 @@ except Exception as e:
 
 整个过程可能涉及10+ 次工具调用和 LLM 推理，但对用户来说是完全透明的。这就是深度代理的魅力——自主完成复杂任务。
 
-当然，我们也给大家提供了直接运行的.py文件，大家可以在百度网盘中领取：
+## 资源下载
+
+当然，我们也给大家提供了直接运行的`.py`文件，大家可以在百度网盘中领取：
 
 ![](img/0bd819f3f7f6dab6f0d797d25309d3f9.png)
 

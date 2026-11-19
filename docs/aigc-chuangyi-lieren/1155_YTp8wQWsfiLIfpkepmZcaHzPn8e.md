@@ -1,6 +1,7 @@
+
 # 20240408-解锁Kimi使用新方式！这款神级插件让Kimi交互效率提升95%！
 
-> 来源：[https://aigcreative.feishu.cn/docx/NRlJd5rNeovwKjxzzrmcNNt2ntf](https://aigcreative.feishu.cn/docx/NRlJd5rNeovwKjxzzrmcNNt2ntf)
+> 来源：`https://aigcreative.feishu.cn/docx/NRlJd5rNeovwKjxzzrmcNNt2ntf`
 
 前几天，给大家介绍了一款Kimi的Chrome浏览器插件——Kimi Copilot，很好用，基于Kimi大模型的能力，一键总结网页内容，功能很强大，也很受大家的关注。可以点击《》查看。
 
@@ -58,16 +59,16 @@
 
 而且，不需要提供任何API Key，也不需要担心额外的费用问题。只需在谷歌浏览器插件商店中搜索并安装，就可以立即享受到Kimi带来的便利。
 
-对于那些需要处理大量文本信息的工作者来说，无疑是一个强大的助手，可以说，它就是Chrome浏览器最佳的Copilot！
+对于那些需要处理大量文本信息的工作者来说，无疑是一个强大助手，可以说，它就是Chrome浏览器最佳的Copilot！
 
-下载安装方式：
+## 下载安装方式
 
 1、Chrome应用商店：直接搜索“Kimi阅读助手”安装。
 
-2、下载链接直达：https://chromewebstore.google.com/detail/kimi-%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B/iejcbdponpipehjlchccknbmnkonnmji?utm_source=ext_app_menu
+2、下载链接直达：`https://chromewebstore.google.com/detail/kimi-%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B/iejcbdponpipehjlchccknbmnkonnmji?utm_source=ext_app_menu`
 
-3、对于使用Google搜索的朋友，可通过百度云链接下载：https://pan.baidu.com/s/1tZrQWsHFARzez9C1uqxZ-Q ，提取码：u29n
+3、对于使用Google搜索的朋友，可通过百度云链接下载：`https://pan.baidu.com/s/1tZrQWsHFARzez9C1uqxZ-Q` ，提取码：`u29n`
 
 最后，使用愉快。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

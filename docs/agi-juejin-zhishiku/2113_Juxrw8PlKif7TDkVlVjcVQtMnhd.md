@@ -1,4 +1,5 @@
-# 8.5 谷歌终于赢了 OpenAI 一回，Gemini 1.5 Pro 模型超越 GPT-4o，正确处理 9.9 > 9.19
+
+# 8.5 谷歌终于赢了 OpenAI 一回，Gemini 1.5 Pro 模型超越 GPT-4o，正确处理 `9.9 > 9.19`
 
 > 来源：[https://agijuejin.feishu.cn/docx/JWNHdorUioiGGpx1hfPcrrrunig](https://agijuejin.feishu.cn/docx/JWNHdorUioiGGpx1hfPcrrrunig)
 
@@ -6,7 +7,7 @@
 
 ## 🌟 技术突破
 
-### 💡 谷歌终于赢了 OpenAI 一回，Gemini 1.5 Pro 模型超越 GPT-4o，正确处理 9.9 > 9.19
+### 💡 谷歌终于赢了 OpenAI 一回，Gemini 1.5 Pro 模型超越 GPT-4o，正确处理 `9.9 > 9.19`
 
 ![](img/44ccd78a9a146b35cca467da17878e23.png)
 

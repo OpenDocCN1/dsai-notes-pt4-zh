@@ -1,8 +1,9 @@
-# 12.02-🛰️👸号后台新增“AI 配图”功能、微软发明全新「LLM语言」，AI智能体交互效率翻倍！
-
-> 来源：[https://agijuejin.feishu.cn/docx/D9vxd1mRFob5RnxRo04cNrtCnX7](https://agijuejin.feishu.cn/docx/D9vxd1mRFob5RnxRo04cNrtCnX7)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 02 日)
+
+## 12.02-🛰️👸号后台新增“AI 配图”功能、微软发明全新「LLM语言」，AI智能体交互效率翻倍！
+
+> 来源：[https://agijuejin.feishu.cn/docx/D9vxd1mRFob5RnxRo04cNrtCnX7](https://agijuejin.feishu.cn/docx/D9vxd1mRFob5RnxRo04cNrtCnX7)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -26,7 +27,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/814/635.htm)
 
 ![](img/65d55ee567b3010094f9b65f8556bb89.png)
 
-2024 年 12 月，微软发明全新‘LLM 语言’Droidspeak，让 AI 智能体之间可用自己的语言交流。在不损失性能的情况下，使模型通信速度提高 2.78 倍。Droidspeak 含义为直接传递模型中间计算结果，减少预填充延迟。通过实验探索复用缓存方法，最终采用 KV cache 和 E cache 结合的方案，预填充延迟减少 1.69 到 2.77 倍且不影响生成质量。
+2024 年 12 月，微软发明全新‘LLM 语言’Droidspeak，让 AI 智能体之间可用自己的语言交流。在不损失性能的情况下，使模型通信速度提高 2.78 倍。Droidspeak 含义为直接传递模型中间计算结果，减少预填充延迟。通过实验探索复用缓存方法，最终采用 `KV cache` 和 `E cache` 结合的方案，预填充延迟减少 1.69 到 2.77 倍且不影响生成质量。
 
 ### 💡 AnchorCrafter：自动生成具有主播风格的产品宣传视频 解决了人-物交互控制
 
@@ -44,7 +45,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/814/553.htm)
 
 ![](img/6aa22a7ce6b8e6272b94b04b22d8bfc8.png)
 
-2024 年 12 月，ChatGPT 两岁。目前每周有 2.5 亿活跃用户，自推出以来世界六大科技公司市值增长超 8 万亿美元。OpenAI 完成 60 亿美元融资，估值达 1500 亿美元，计划推出智能体，目标 10 亿用户。马斯克起诉 OpenAI，指控其不正当竞争行为。今晚可能发布满血版 o1。
+2024 年 12 月，ChatGPT 两岁。目前每周有 2.5 亿活跃用户，自推出以来世界六大科技公司市值增长超 8 万亿美元。OpenAI 完成 60 亿美元融资，估值达 1500 亿美元，计划推出智能体，目标 10 亿用户。马斯克起诉 OpenAI，指控其不正当竞争行为。今晚可能发布满血版 `o1`。
 
 ### 💡 2024年AI投资138亿美元暴增6倍！OpenAI市场份额下降16%，Anthropic谷歌双赢
 
@@ -52,7 +53,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/814/553.htm)
 
 ![](img/39204c7a8b311dea1a8044ba825b8f46.png)
 
-2024 年 AI 投资激增至 138 亿美元，是 2023 年的六倍多。企业从实验转向执行阶段，72%决策者预计更广泛采用生成式 AI 工具。应用层升温，投资者投入 46 亿美元。各领域 AI 应用不断发展，如 Code Copilots 采用率领先，智能体架构开始发力。OpenAI 市场份额下降，Anthropic 占有率翻番。企业对 AI 工具选择多样，老牌公司受欢迎度降低，垂直 AI 应用兴起，各部门增加预算，AI 人才短缺加剧。
+2024 年 AI 投资激增至 138 亿美元，是 2023 年的六倍多。企业从实验转向执行阶段，72%决策者预计更广泛采用生成式 AI 工具。应用层升温，投资者投入 46 亿美元。各领域 AI 应用不断发展，如 `Code Copilots` 采用率领先，智能体架构开始发力。OpenAI 市场份额下降，Anthropic 占有率翻番。企业对 AI 工具选择多样，老牌公司受欢迎度降低，垂直 AI 应用兴起，各部门增加预算，AI 人才短缺加剧。
 
 ### 💡 ChatGPT两岁，OpenAI 10亿用户计划曝光！
 

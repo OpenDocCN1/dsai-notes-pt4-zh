@@ -1,3 +1,4 @@
+
 # 7.22 GPT-4o mini 团队揭秘：华人面孔占半数，清华北大同济校友在列
 
 > 来源：[https://agijuejin.feishu.cn/docx/NUeTd7zXyoDQ9lxYIYlcVr5wnFh](https://agijuejin.feishu.cn/docx/NUeTd7zXyoDQ9lxYIYlcVr5wnFh)

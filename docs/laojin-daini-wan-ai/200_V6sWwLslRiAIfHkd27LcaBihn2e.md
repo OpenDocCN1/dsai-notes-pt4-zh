@@ -1,4 +1,5 @@
-# Claude Code五件套一篇全解（Plugins/Skills/MCP/SubAgents/Commands）
+
+# Claude Code五件套一篇全解（`Plugins`/`Skills`/`MCP`/`SubAgents`/`Commands`）
 
 > 来源：[https://my.feishu.cn/docx/QPOrdSELDoLTtxxploOcGf2xnsc](https://my.feishu.cn/docx/QPOrdSELDoLTtxxploOcGf2xnsc)
 
@@ -8,11 +9,11 @@
 
 最近帮一位开发者排查问题：他的Claude装了20个插件，响应时间从2秒变成15秒。
 
-打开配置一看：三个搜索工具(DuckDuckGo、Brave、Tavily)功能重复90%，五个文档插件全是Markdown处理器...
+打开配置一看：三个搜索工具(`DuckDuckGo`、`Brave`、`Tavily`)功能重复90%，五个文档插件全是Markdown处理器...
 
 我说，老哥，你这不是在用工具，你是在开批发市场。
 
-这是典型的 工具囤积症：看网上推荐就装,从不思考是否真正需要。
+这是典型的工具囤积症：看网上推荐就装,从不思考是否真正需要。
 
 老金我刚开始用时，也干过这事。
 
@@ -40,15 +41,15 @@
 
 很多人分不清这5个东西,老金先用大白话说一遍，让你有个全景图。
 
-1、 **Plugins** (插件): 这是 **打包容器**，用来装其他四个工具的包装盒。
+1、`Plugins` (插件): 这是 打包容器，用来装其他四个工具的包装盒。
 
-2、 **MCP**** (Mod**el Context Protocol): 这是 外部连接器，让Claude能访问网络、文件、数据库等。
+2、`MCP` (`Model Context Protocol`): 这是 外部连接器，让Claude能访问网络、文件、数据库等。
 
-3、 **Skills** (技能): 这是 **自动SOP**，Claude会根据场景自动触发的标准作业流程。
+3、`Skills` (技能): 这是 自动SOP，Claude会根据场景自动触发的标准作业流程。
 
-4、 **SubAgents** (子智能体): 这是 **并行工作组**，你一次派出去10个克隆人同时干活。
+4、`SubAgents` (子智能体): 这是 并行工作组，你一次派出去10个克隆人同时干活。
 
-5、 **斜杠命令**** (Sl**ash Commands): 这是 手动按钮，你输入/release，它就老老实实执行一套固定流程。
+5、`斜杠命令` (`Slash Commands`): 这是 手动按钮，你输入`/release`，它就老老实实执行一套固定流程。
 
 ### 核心定义对比表
 
@@ -60,97 +61,105 @@
 
 问题0: 团队需要标准化工具包吗?
 
-如果是 → **Plugins** (打包Skills+Commands+MCP+SubAgents,一键安装分发)
+如果是 → `Plugins` (打包`Skills`+`Commands`+`MCP`+`SubAgents`,一键安装分发)
 
 问题1: 这事需要调用外部能力吗?(搜索、文件、浏览器、记忆、数据库)
 
-如果是 → **MCP** (选对应服务器:搜索用exa/brave、文件用filesystem、记忆用memory)
+如果是 → `MCP` (选对应服务器:搜索用`exa`/`brave`、文件用`filesystem`、记忆用`memory`)
 
 问题2: 这事我会重复做很多次吗?(审查/检查/核对)
 
-如果是 → 自动触发用 **Skills **(Claude检测场景自动执行)
+如果是 → 自动触发用 `Skills` (Claude检测场景自动执行)
 
-如果是 → 手动触发用** 斜杠命令** (你输入/xxx才执行)
+如果是 → 手动触发用 `斜杠命令` (你输入`/xxx`才执行)
 
 问题3: 这事需要并行处理吗?(多个独立任务同时进行,如性能/安全/探索)
 
-如果是 → **SubAgents** (据说最多10并行,成本N倍,节省50-80%时间)
+如果是 → `SubAgents` (据说最多10并行,成本N倍,节省50-80%时间)
 
-如果是 → 单任务深度推理用 sequential-thinking MCP (深度思考引擎)
+如果是 → 单任务深度推理用 `sequential-thinking` MCP (深度思考引擎)
 
 ### 从易到难排序
 
-1、 Plugins & Slash Commands (★☆☆☆☆)
+1、`Plugins` & `Slash Commands` (★☆☆☆☆)
 
 学习曲线：最平缓。一个一键安装，一个写Markdown即可。
 
 适合人群：所有人。
 
-2、 Skills (★★☆☆☆)
+2、`Skills` (★★☆☆☆)
 
-学习曲线：中等。需要理解YAML和SKILL.md的触发机制。
+学习曲线：中等。需要理解`YAML`和`SKILL.md`的触发机制。
 
 适合人群：有经验的用户。
 
-3、 MCP (★★★☆☆)
+3、`MCP` (★★★☆☆)
 
-学习曲线：陡峭。涉及JSON配置、服务器安装、环境变量。
+学习曲线：陡峭。涉及`JSON`配置、服务器安装、环境变量。
 
 适合人群：开发者。
 
-4、 SubAgents (★★★★☆)
+4、`SubAgents` (★★★★☆)
 
 学习曲线：最陡峭。涉及并行设计、成本优化、无状态架构。
 
 适合人群：高级开发者。
 
-| **能力** | **Plugins** | **Skills** | **MCP** | **Slash Commands** | **SubAgents** |
+| **能力** | `Plugins` | `Skills` | `MCP` | `Slash Commands` | `SubAgents` |
+
 | --- | --- | --- | --- | --- | --- |
+
 | 自动化执行 | ✓ | ✓ | ✓ | **✗** | ✓ |
+
 | 文件访问 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
 | 外部API调用 | ✓ | **✗** | ✓ | **✗** | ✓ |
+
 | 并行处理 | ✓ | **✗** | **✗** | **✗** | ✓ |
+
 | 代码执行 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
 | 团队共享 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| 状态记忆 | ✓ | **✗** | ✓(Memory) | **✗** | **✗** |
+
+| 状态记忆 | ✓ | **✗** | ✓(`Memory`) | **✗** | **✗** |
 
 ### 快速判断表 (场景速查)
 
-## Part 1: MCP (Model Context Protocol) 深度全解
+## Part 1: `MCP` (Model Context Protocol) 深度全解
 
-我们先来讲第一个重量级选手：MCP。
+我们先来讲第一个重量级选手：`MCP`。
 
 ### MCP 是什么？
 
-MCP (Model Context Protocol) 是让Claude突破本地限制、连接外部世界的桥梁。
+`MCP` (`Model Context Protocol`) 是让Claude突破本地限制、连接外部世界的桥梁。
 
 **本质:**
 
-它是一套标准化的通信协议,让Claude能调用各种外部服务,包括联网搜索(DuckDuckGo、Brave、Exa)、操作浏览器(Playwright自动化)、读写本地文件系统、查询实时文档(Context7、DeepWiki)、访问GitHub仓库、长期记忆存储(Memory)、数据库操作(Postgres)。
+它是一套标准化的通信协议,让Claude能调用各种外部服务,包括联网搜索(`DuckDuckGo`、`Brave`、`Exa`)、操作浏览器(`Playwright`自动化)、读写本地文件系统、查询实时文档(`Context7`、`DeepWiki`)、访问`GitHub`仓库、长期记忆存储(`Memory`)、数据库操作(`Postgres`)。
 
 还有一点：**本地优先** - 数据不经过第三方,隐私可控。
 
 #### 核心: 解决M×N集成问题
 
-MCP解决的核心问题是 **M×N** 噩梦。
+`MCP`解决的核心问题是 **M×N** 噩梦。
 
 传统方式: 10个AI应用 × 100个工具 = 1000个 集成(每个应用都要单独对接100个工具)
 
-MCP方式: 10个AI应用 + 100个MCP服务器 = 110个 集成(所有应用都说“MCP标准语”)
+`MCP`方式: 10个AI应用 + 100个`MCP`服务器 = 110个 集成(所有应用都说“`MCP`标准语”)
 
 这就是为什么社区能快速发展到6300+服务器，因为它是一个开放标准。
 
-#### Skills 与 MCP 的关系 (重要澄清)
+#### `Skills` 与 `MCP` 的关系 (重要澄清)
 
 很多人会混淆这两者，但它们 **不是替代关系**，而是 **正交的**、**可以组合的**。
 
-**MC**P (通信协**议)**: 解决的是Agent与 外部 工具如何 对话 的问题。它是一种标准化的通信接口。
+`MCP` (通信协议): 解决的是Agent与 外部 工具如何 对话 的问题。它是一种标准化的通信接口。
 
-**Skill**s (能力封装): 解决的是Agent如何 思考和行動 的问题。它定义了Agent自身具备的知识、工作流和内部工具（scripts/ 里的脚本就是内部工具）。
+`Skills` (能力封装): 解决的是Agent如何 思考和行動 的问题。它定义了Agent自身具备的知识、工作流和内部工具（`scripts/` 里的脚本就是内部工具）。
 
-组合: 一个Skill里的指令(SKILL.md)可以(也经常)指导Agent如何去调用一个远程的MCP服务器。
+组合: 一个`Skill`里的指令(`SKILL.md`)可以(也经常)指导Agent如何去调用一个远程的`MCP`服务器。
 
-老金一句话总结：MCP负责连接，Skills负责驱动。
+老金一句话总结：`MCP`负责连接，`Skills`负责驱动。
 
 ### 老金精选MCP推荐 (从6300+中筛选)
 
@@ -158,45 +167,45 @@ MCP方式: 10个AI应用 + 100个MCP服务器 = 110个 集成(所有应用都说
 
 #### 必装三件套(90%场景够用)
 
-1、sequential-thinking - 深度思考引擎
+1、`sequential-thinking` - 深度思考引擎
 
-npx -y mcp-sequential-thinking
+`npx -y mcp-sequential-thinking`
 
 场景: 复杂技术选型(微服务 vs 单体、数据库选型)、架构设计决策(分层、模块边界、扩展性)、疑难bug根因分析(多因素交叉、隐蔽逻辑)、性能优化策略规划。
 
-实战案例: "分析为什么我们的订单服务在高峰期会超时,考虑数据库、缓存、网络、并发锁、GC等所有可能因素"
+实战案例: "分析为什么我们的订单服务在高峰期会超时,考虑数据库、缓存、网络、并发锁、`GC`等所有可能因素"
 
 效果: 会给出完整的推理链:假设→验证→排除→聚焦→验证→结论,而不是直接猜一个答案。
 
-2、context7 - 实时技术文档
+2、`context7` - 实时技术文档
 
-npx -y @upstash/context7-mcp
+`npx -y @upstash/context7-mcp`
 
-场景: 查最新框架文档(Next.js 15、React 19)、API参数和用法确认、库的最佳实践和陷阱、版本迁移指南。
+场景: 查最新框架文档(`Next.js 15`、`React 19`)、API参数和用法确认、库的最佳实践和陷阱、版本迁移指南。
 
-实战案例: "React 19的use hook怎么用?和Suspense的配合方式?"
+实战案例: "`React 19`的`use` hook怎么用?和`Suspense`的配合方式?"
 
 效果: 直接返回官方文档相关章节+代码示例,比搜索引擎快10倍。
 
-3、memory - 长期记忆
+3、`memory` - 长期记忆
 
-npx -y @modelcontextprotocol/server-memory
+`npx -y @modelcontextprotocol/server-memory`
 
 场景: 记住项目约定(命名规范、错误码、配置路径)、记住团队踩过的坑(某个库的bug、某个配置的坑)、记住重要决策(为什么选这个方案、权衡了什么)。
 
 实战案例:
 
 ```
-你:&quot;记住:我们的错误码统一用E开头+4位数字,数据库表名用snake_case,Redis key用冒号分隔&quot;
+你:"记住:我们的错误码统一用`E`开头+4位数字,数据库表名用`snake_case`,Redis key用冒号分隔"
 
 (一周后)
-你:&quot;帮我设计一个用户登录失败的错误码&quot;
-Claude自动调用记忆:&quot;根据你们的规范,应该是E1001这样的格式...&quot;
+你:"帮我设计一个用户登录失败的错误码"
+`Claude`自动调用记忆:"根据你们的规范,应该是`E1001`这样的格式..."
 ```
 
 #### 进阶工具(特定场景神器)
 
-playwright - 浏览器自动化
+`playwright` - 浏览器自动化
 
 ```
 npx -y @executeautomation/playwright-mcp-server
@@ -204,9 +213,9 @@ npx -y @executeautomation/playwright-mcp-server
 
 场景: 竞品监控、批量截图、自动化测试、数据抓取
 
-案例: "打开这5个竞品官网,截图首页和定价页,保存到./analysis/"
+案例: "打开这5个竞品官网,截图首页和定价页,保存到`./analysis/`"
 
-filesystem - 本地文件操作
+`filesystem` - 本地文件操作
 
 ```
 npx -y @modelcontextprotocol/server-filesystem/path/to/project
@@ -216,17 +225,17 @@ npx -y @modelcontextprotocol/server-filesystem/path/to/project
 
 注意: 指定允许访问的路径,避免权限过大。
 
-github - GitHub操作（需要官网key）
+`github` - GitHub操作（需要官网key）
 
-需要设置GITHUB_TOKEN环境变量
+需要设置`GITHUB_TOKEN`环境变量
 
 ```
 npx -y @modelcontextprotocol/server-github
 ```
 
-场景: 搜索代码示例、查看issue、分析PR、管理仓库
+场景: 搜索代码示例、查看issue、分析`PR`、管理仓库
 
-exa - 智能搜索（需要官网key）
+`exa` - 智能搜索（需要官网key）
 
 ```
 npx -y exa-mcp-server
@@ -234,41 +243,41 @@ npx -y exa-mcp-server
 
 场景: 需要搜索最新信息、技术博客、开源项目时,比普通搜索引擎更精准
 
-deepwiki - 深度文档聚合
+`deepwiki` - 深度文档聚合
 
 ```
 npx -y mcp-deepwiki
 ```
 
-场景: 聚合某个库的完整文档站点,比context7更全面但速度慢一些
+场景: 聚合某个库的完整文档站点,比`context7`更全面但速度慢一些
 
 #### 官方及其他稳定版
 
 以下是官方或社区长期维护的稳定服务器：
 
-@modelcontextprotocol/server-brave-search - Brave搜索,查最新资料
+`@modelcontextprotocol/server-brave-search` - `Brave`搜索,查最新资料
 
-@modelcontextprotocol/server-fetch - 抓取网页内容
+`@modelcontextprotocol/server-fetch` - 抓取网页内容
 
-@modelcontextprotocol/server-postgres - 数据库操作
+`@modelcontextprotocol/server-postgres` - 数据库操作
 
 #### 更多服务器:
 
-官方列表: [https://github.com/modelcon](https://github.com/modelcontextprotocol/servers)textprotocol/servers
+官方列表: [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
 社区精选: https://github.com/wong2/awesome-mcp-servers
 
-(500+服务器持续更新,包括Notion、Slack、Jira、数据库等各种集成)
+(500+服务器持续更新,包括`Notion`、`Slack`、`Jira`、数据库等各种集成)
 
 #### 老金的常用组合:
 
-日常开发: filesystem + github + memory
+日常开发: `filesystem` + `github` + `memory`
 
-深度工作: sequential-thinking + context7 + memory
+深度工作: `sequential-thinking` + `context7` + `memory`
 
-自动化任务: playwright + filesystem
+自动化任务: `playwright` + `filesystem`
 
-学习新技术: context7 + deepwiki + exa (或 brave-search)
+学习新技术: `context7` + `deepwiki` + `exa` (或 `brave-search`)
 
 ### MCP配置实战
 
@@ -276,40 +285,40 @@ npx -y mcp-deepwiki
 
 配置文件位置:
 
-项目根目录.claude/mcp.json:
+项目根目录`.claude/mcp.json`:
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;sequential-thinking&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;mcp-sequential-thinking&quot;]
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "mcp-sequential-thinking"]
     },
-    &quot;context7&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@upstash/context7-mcp&quot;]
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
     },
-    &quot;memory&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-memory&quot;]
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
     },
-    &quot;brave-search&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-brave-search&quot;]
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"]
     },
-    &quot;playwright&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;/path/to/playwright-mcp-server/index.js&quot;]
+    "playwright": {
+      "command": "node",
+      "args": ["/path/to/playwright-mcp-server/index.js"]
     },
-    &quot;filesystem&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-filesystem&quot;, &quot;/path/to/allowed/files&quot;]
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/allowed/files"]
     },
-    &quot;github&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-github&quot;],
-      &quot;env&quot;: {
-        &quot;GITHUB_PERSONAL_ACCESS_TOKEN&quot;: &quot;&lt;YOUR_TOKEN&gt;&quot;
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
       }
     }
   }
@@ -320,63 +329,63 @@ npx -y mcp-deepwiki
 
 场景1: 深度思考
 
-"用sequential-thinking分析:微服务 vs 单体架构,哪个更适合我们20人团队?"
+"用`sequential-thinking`分析:微服务 vs 单体架构,哪个更适合我们20人团队?"
 
 (会给出完整推理过程,考虑团队规模、技术债、维护成本等多个维度。)
 
 场景2: 查最新文档
 
-"用context7查React 19的Server Components最新用法。"
+"用`context7`查`React 19`的`Server Components`最新用法。"
 
 (直接返回官方文档的相关章节和代码示例,比搜索引擎精准。)
 
 场景3: 长期记忆
 
-"记住:我们的数据库是PostgreSQL 15,表命名用snake_case,查询超时设置30秒。"
+"记住:我们的数据库是`PostgreSQL 15`,表命名用`snake_case`,查询超时设置30秒。"
 
 (下次问数据库相关问题,会自动调用这些记忆。)
 
 场景4: 浏览器自动化
 
-"用playwright打开5个竞品官网,截图首页,保存到./screenshots/"
+"用`playwright`打开5个竞品官网,截图首页,保存到`./screenshots/`"
 
 (自动完成浏览器操作,省去重复手动点击。)
 
-## Part 2: Skills (技能) 深度全解
+## Part 2: `Skills` (技能) 深度全解
 
-讲完了外部连接器MCP，我们来讲讲内部的自动SOP——Skills。
+讲完了外部连接器`MCP`,我们来讲讲内部的自动SOP——`Skills`。
 
-### Skills 是什么？
+### `Skills` 是什么？
 
-Skill (技能) 是自动触发的能力包,2025年10月发布。
+`Skill` (技能) 是自动触发的能力包,2025年10月发布。
 
-**一句话说清楚：****Skill**是**一个 **标准化的文件夹，用来打包Agent完成特定任务所需的 知识和工具（SOP - 标准作业程序）。
+**一句话说清楚：`Skill`是一个标准化的文件夹,用来打包Agent完成特定任务所需的 知识和工具（SOP - 标准作业程序）。
 
 它是一种代码和资源的组织方式，一种Agent能力管理的“设计模式”。
 
-一个Skill文件夹通常包含这几部分：
+一个`Skill`文件夹通常包含这几部分：
 
-1、 **SKILL.md** ：**核心文件**。用YAML写元数据（名字、描述），用Markdown写详细的指令，告诉Claude在什么情况下、以及如何使用这个Skill。
+1、`SKILL.md`：**核心文件**。用`YAML`写元数据（名字、描述），用Markdown写详细的指令，告诉`Claude`在什么情况下、以及如何使用这个`Skill`。
 
-2、 **scripts/** ：存放可执行的 **Python、Shell脚本**。
+2、`scripts/` ：存放可执行的 **`Python`、`Shell`脚本**。
 
-3、 **references/** ：存放 **参考文档**（如API文档、数据库Schema、公司政策等），作为给Claude看的知识库。
+3、`references/` ：存放 **参考文档**（如API文档、数据库`Schema`、公司政策等），作为给`Claude`看的知识库。
 
-4、 **assets/** ：存放 **资源文件**（如PPT模板、Logo、项目脚架等），供Claude在执行任务时直接使用。
+4、`assets/` ：存放 **资源文件**（如PPT模板、`Logo`、项目脚架等），供`Claude`在执行任务时直接使用。
 
 **核心机制:**
 
-用YAML frontmatter + Markdown定义,Claude检测到相关场景自动加载。
+用`YAML` frontmatter + Markdown定义,`Claude`检测到相关场景自动加载。
 
 **技术亮点 (精髓):**
 
-Skills的核心是为上下文窗口减负的 三层分层加载策略 (Progressive loading):
+`Skills`的核心是为上下文窗口减负的 三层分层加载策略 (Progressive loading):
 
-1、 **第一层：元数据** (Name + Description)。这部分信息极简（约100 tokens），会常驻在Claude脑中。当用户提问时，Claude会快速扫描所有Skill的描述，做第一道筛选，成本极低。
+1、 **第一层：元数据** (`Name` + `Description`)。这部分信息极简（约100 tokens），会常驻在`Claude`脑中。当用户提问时，`Claude`会快速扫描所有`Skill`的描述，做第一道筛选，成本极低。
 
-2、 **第二层：SKILL.md**** (详细指**令)。当Claude认为某个Skill相关时，它 才会去加载 SKILL.md 里的详细指令，告诉它任务的具体步骤和规则。这步的上下文消耗中等。
+2、 **第二层：`SKILL.md`** (详细指令)。当`Claude`认为某个`Skill`相关时，它 才会去加载 `SKILL.md` 里的详细指令，告诉它任务的具体步骤和规则。这步的上下文消耗中等。
 
-3、 **第三层：脚本和参考文档** (scripts/ references/)。只有当 SKILL.md 里的指令明确要求时，Claude才会去读取 scripts/ 里的代码或 references/ 里的文档。这步的上下文消耗是按需的。
+3、 **第三层：脚本和参考文档** (`scripts/` `references/`)。只有当 `SKILL.md` 里的指令明确要求时，`Claude`才会去读取 `scripts/` 里的代码或 `references/` 里的文档。这步的上下文消耗是按需的。
 
 这个机制的好处显而易见，**极大地节省了宝贵的上下文窗口**，避免了一次性把所有东西都塞进去。
 
@@ -392,30 +401,32 @@ Skills的核心是为上下文窗口减负的 三层分层加载策略 (Progress
 
 **关键:**
 
+
+
 Claude自动识别场景并触发,你不用手动调用。
 
 **爽点:**
 
 设置一次,永久受益,错误率能降一半。
 
-### Skills实战进阶: 从入门到治理
+## Skills实战进阶: 从入门到治理
 
 老金把Skills的玩法分三个层次,每层都是真实踩过坑后总结的。
 
-#### 第一层: 工程化单点突破 (把说明书变技能包)
+### 第一层: 工程化单点突破 (把说明书变技能包)
 
 把最烦人的重复劳动自动化。少写废话提示词,让Claude自动识别场景。
 
 案例1: 智能代码审查 (不是简单跑Lint)
 
-smart-code-review.md:
+`smart-code-review.md`:
 
 ```
 # 名称
 smart-code-review
 
 # 触发
-当用户提到&quot;review&quot;&quot;审查&quot;&quot;检查代码&quot;或准备提交PR时
+当用户提到"review""审查""检查代码"或准备提交PR时
 
 # 执行逻辑
 1、分析变更文件类型和影响范围
@@ -441,7 +452,7 @@ smart-code-review
 
 案例2: 依赖升级风险评估
 
-dependency-upgrade-check.md:
+`dependency-upgrade-check.md`:
 
 ```
 # 触发
@@ -476,17 +487,17 @@ dependency-upgrade-check.md:
 
 效果: 以前升级依赖全靠运气,升了才知道炸不炸。现在每次升级前先跑一遍评估,该注意的点全列出来,升级有底气。
 
-#### 第二层: 编排型工作流 (参数化+链式调用)
+### 第二层: 编排型工作流 (参数化+链式调用)
 
 一个技能适配多项目,多个技能串成流水线。
 
 案例: 生产事故应急响应
 
-incident-response.md:
+`incident-response.md`:
 
 ```
 # 触发
-用户说&quot;线上出问题了&quot;&quot;紧急&quot;&quot;事故&quot;等关键词
+用户说"线上出问题了""紧急""事故"等关键词
 
 # 执行流程(自动并行+串行)
 ## 阶段1:快速止血(并行执行)
@@ -531,11 +542,11 @@ incident-response.md:
 
 效果: 以前线上出问题,团队一片慌乱,排查靠经验靠猜。现在说"线上订单服务挂了",5分钟内给出完整分析+3套止损方案。平均故障恢复时间从45分钟降到12分钟。
 
-#### 第三层: 团队智能体 (知识沉淀+自进化)
+### 第三层: 团队智能体 (知识沉淀+自进化)
 
 案例: 技术债追踪助手
 
-tech-debt-tracker.md:
+`tech-debt-tracker.md`:
 
 ```
 # 名称
@@ -545,7 +556,7 @@ tech-debt-tracker
 每周帮助团队识别和追踪最重要的技术债
 
 # 触发
-用户提到&quot;技术债&quot;&quot;代码坏味道&quot;&quot;重构计划&quot;时
+用户提到"技术债""代码坏味道""重构计划"时
 
 # 执行逻辑
 1、集成SonarQube API,获取现有扫描结果
@@ -562,7 +573,7 @@ Markdown周报:
 
 效果: 不再是"想起来就还",而是每周有明确的3个小目标。结合SonarQube等专业工具,Skill负责排优先级和生成报告。
 
-#### 高级: 版本治理+回滚
+### 高级: 版本治理+回滚
 
 目标: 把Skills当团队资产,能升级、能回退、可审计。
 
@@ -608,13 +619,13 @@ team-skills/
 
 5、**AI工程化** 的体现
 
-AI Agent的未来，一半靠模型，另一半靠工程。 Skills提供了一种解耦的、模块化的设计模式来管理Agent能力，这远比维护一个几千行的巨大System Prompt或一个混乱的工具文件要健壮和可扩展。
+AI Agent的未来，一半靠模型,另一半靠工程。 Skills提供了一种解耦的、模块化的设计模式来管理Agent能力,这远比维护一个几千行的巨大System Prompt或一个混乱的工具文件要健壮和可扩展。
 
 每个Skill都可以独立版本控制、测试和迭代。
 
 #### Skills是**上下文工程**吗?
 
-老金我在上个文章就讲到，Skills是上下文工程，而且更工程化。
+老金我在上个文章就讲到，Skills是上下文工程,而且更工程化。
 
 **1、 结构化提示**
 
@@ -656,29 +667,29 @@ AI Agent的未来，一半靠模型，另一半靠工程。 Skills提供了一�
 
 ### SubAgents 是什么？
 
-SubAgent (子智能体) 是通过**Task工具创建的**独立Claude实例,唯一支持并行的工具。
+`SubAgent` (子智能体) 是通过 `Task工具` 创建的独立Claude实例,唯一支持并行的工具。
 
-**本质: **
+**本质:**
 
-每个SubAgent是完全独立的Claude副本,你需要:手动指定角色定位(如security-auditor、performance-engineer)、提供必要上下文、明确任务边界和产出。
+每个`SubAgent`是完全独立的Claude副本,你需要:手动指定角色定位(如`security-auditor`、`performance-engineer`)、提供必要上下文、明确任务边界和产出。
 
-SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配置 组合。
+`SubAgent`是用户通过Markdown文件(`.md`)自定义的 系统提示 + 工具配置 组合。
 
-你需要自己定义角色,或复用社区(如 buildwithclaude.com 或 subagents.app)提供的模板。
+你需要自己定义角色,或复用社区(如 `buildwithclaude.com` 或 `subagents.app`)提供的模板。
 
 ### 技术特性
 
-1、 无状态: 各SubAgent间不共享内存**,每次都是一次性**执行,需要完整初始指令,不适合迭代式调试 或逐步细化任务。
+1、 无状态: 各`SubAgent`间不共享内存**,每次都是一次性**执行,需要完整初始指令,不适合迭代式调试 或逐步细化任务。
 
-2、 并行上限: 最多 **10个**** 同时运行 **(第11+个任务将自动排队), 推荐3-5个。
+2、 并行上限: 最多 **10个**** 同时运行 (第11+个任务将自动排队), 推荐3-5个。
 
-3、 独立Context: 每个SubAgent在隔离的上下文中运行 (推断约100K tokens)。
+3、 独立Context: 每个`SubAgent`在隔离的上下文中运行 (推断约100K tokens)。
 
-4、 继承工具: 自动继承主Agent的所有工具 (Task Tool本身除外)。
+4、 继承工具: 自动继承主Agent的所有工具 (`Task Tool`本身除外)。
 
-**5、 **超时: 单个SubAgent最长运行 5分钟。
+**5、 **超时: 单个`SubAgent`最长运行 5分钟。
 
-6、 Token成本: 总Token成本与串行执行N个任务相同 (即 N个Task = N倍单Task成本)。
+6、 Token成本: 总Token成本与串行执行N个任务相同 (即 N个`Task` = N倍单`Task`成本)。
 
 ### 典型场景
 
@@ -704,7 +715,7 @@ SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配�
 
 3、 ROI低 (谨慎): 10倍成本, 节省时间有限。
 
-4、 编排方式: 需手动整合各SubAgent产出,不自动汇总。
+4、 编排方式: 需手动整合各`SubAgent`产出,不自动汇总。
 
 ### 适用与不适用场景
 
@@ -722,7 +733,7 @@ SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配�
 
 ### 斜杠命令 是什么？
 
-斜杠命令 (Slash Commands) 是手动触发的工作流快捷方式,存在.claude/commands/目录。
+斜杠命令 (Slash Commands) 是手动触发的工作流快捷方式,存在`.claude/commands/`目录。
 
 **本质:**
 
@@ -734,21 +745,21 @@ SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配�
 
 **命令内部可以:**
 
-调用Skills自动化检查、编排SubAgents并行工作、执行MCP工具链、串联Git操作。
+调用Skills自动化检查、编排`SubAgents`并行工作、执行MCP工具链、串联Git操作。
 
 典型场景:
 
-1、 /release - 完整发版流程(测试→构建→打tag→发布→通知)
+1、 `/release` - 完整发版流程(测试→构建→打tag→发布→通知)
 
-2、 /security-check - 安全扫描(依赖漏洞+代码审计+配置检查)
+2、 `/security-check` - 安全扫描(依赖漏洞+代码审计+配置检查)
 
-3、 /perf-audit - 性能审计(包体积+加载时间+运行时分析)
+3、 `/perf-audit` - 性能审计(包体积+加载时间+运行时分析)
 
-4、 /refactor-plan - 重构规划(架构分析+影响评估+迁移方案)
+4、 `/refactor-plan` - 重构规划(架构分析+影响评估+迁移方案)
 
-5、 /onboard - 新人入职(克隆仓库+环境配置+文档导覽)
+5、 `/onboard` - 新人入职(克隆仓库+环境配置+文档导覽)
 
-6、 /rollback - 紧急回滚
+6、 `/rollback` - 紧急回滚
 
 ### 与Skills的核心区别
 
@@ -762,7 +773,7 @@ SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配�
 
 第一步: 定义命令
 
-建文件:.claude/commands/release.md
+建文件:`.claude/commands/release.md`
 
 ```
 # 版本发布流程
@@ -778,7 +789,7 @@ SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配�
 
 第二步: 使用
 
-直接输入:/release
+直接输入:`/release`
 
 第三步: 效果
 
@@ -790,11 +801,11 @@ SubAgent是用户通过Markdown文件(.md)自定义的 系统提示 + 工具配�
 
 ### Plugins 是什么？
 
-Plugins (插件) 是应用级打包容器。
+`Plugins` (插件) 是应用级打包容器。
 
-重要: Plugins不是第五个独立工**具，而是**用来打包其他四个工具的 打包容器。
+重要: `Plugins`不是第五个独立工**具，而是**用来打包其他四个工具的 打包容器。
 
-一个Plugin可以包含:
+一个`Plugin`可以包含:
 
 1、 5个Skills
 
@@ -802,7 +813,7 @@ Plugins (插件) 是应用级打包容器。
 
 3、 3个MCP服务器配置
 
-4、 2个SubAgent定义
+4、 2个`SubAgent`定义
 
 5、 若干Hooks
 
@@ -818,7 +829,7 @@ Plugins (插件) 是应用级打包容器。
 
 **老金建议:**
 
-个人用全局配置,团队用Plugins打包分发。别超过3个，够用就行。
+个人用全局配置,团队用`Plugins`打包分发。别超过3个，够用就行。
 
 ## Part 6: 终极实战：五件套组合拳
 
@@ -835,23 +846,23 @@ Plugins (插件) 是应用级打包容器。
 组合拳:
 
 ```
-第1步: 深度思考(sequential-thinking MCP)
-&quot;分析我们这个单体应用,是否适合拆微服务? 考虑:团队规模(15人)、技术栈(Spring Boot単体)、QPS(5000)、业务复杂度、运维能力、迁移成本&quot;
--&gt; 返回: 完整推理链, 3个方案对比 (不拆/部分拆/全拆)
+第1步: 深度思考(`sequential-thinking MCP`)
+"分析我们这个单体应用,是否适合拆微服务? 考虑:团队规模(15人)、技术栈(Spring Boot単体)、QPS(5000)、业务复杂度、运维能力、迁移成本"
+-> 返回: 完整推理链, 3个方案对比 (不拆/部分拆/全拆)
 
-第2步: 查技术方案(context7 MCP)
-&quot;查Spring Cloud Alibaba的服务拆分最佳实践和Seata分布式事务方案&quot;
--&gt; 返回: 官方文档相关章节, 4种事务方案对比
+第2步: 查技术方案(`context7 MCP`)
+"查Spring Cloud Alibaba的服务拆分最佳实践和Seata分布式事务方案"
+-> 返回: 官方文档相关章节, 4种事务方案对比
 
-第3步: 记录决策(memory MCP)
-&quot;记住:我们的微服务拆分原则: 1、按业务域拆,不按技术层拆 2、优先拆读多写少的服务...&quot;
+第3步: 记录决策(`memory MCP`)
+"记住:我们的微服务拆分原则: 1、按业务域拆,不按技术层拆 2、优先拆读多写少的服务..."
 
-第4步: 制定执行计划(SubAgent: backend-architect)
-&quot;基于上述决策,制定详细的微服务拆分计划: 1、识别服务边界 2、设计迁移方案(分阶段,可回滚)...&quot;
--&gt; 返回: 6步完整迁移计划
+第4步: 制定执行计划(`SubAgent: backend-architect`)
+"基于上述决策,制定详细的微服务拆分计划: 1、识别服务边界 2、设计迁移方案(分阶段,可回滚)..."
+-> 返回: 6步完整迁移计划
 ```
 
-结果: 大幅缩短决策周期,从数周降至数天。决策有推理链,方案基于最佳实践,知识沉淀到memory。
+结果: 大幅缩短决策周期,从数周降至数天。决策有推理链,方案基于最佳实践,知识沉淀到`memory`。
 
 成本提示: 适用于重要架构决策,预计消耗1-2万tokens。
 
@@ -862,27 +873,27 @@ Plugins (插件) 是应用级打包容器。
 组合拳:
 
 ```
-说:&quot;线上支付服务挂了,订单超时率80%&quot;
+说:"线上支付服务挂了,订单超时率80%"
 
-自动触发Skill: incident-response
+自动触发Skill: `incident-response`
 
-阶段1: 并行排查(3个SubAgent同时工作)
-- devops-troubleshooter → 扫描日志,发现大量数据库慢查询
-- performance-engineer → CPU/内存正常,但数据库连接池打满
-- database-optimizer → 发现某个SQL从0.1s变成5s
+阶段1: 并行排查(3个`SubAgent`同时工作)
+- `devops-troubleshooter` → 扫描日志,发现大量数据库慢查询
+- `performance-engineer` → CPU/内存正常,但数据库连接池打满
+- `database-optimizer` → 发现某个SQL从0.1s变成5s
 
-阶段2: 根因定位(sequential-thinking MCP)
-&quot;基于上述数据,分析根因: - SQL为何突然变慢? - 为何今天才出问题?...&quot;
--&gt; 返回: 根因:订单表数据量突破1000万,某个未加索引的查询开始全表扫描
+阶段2: 根因定位(`sequential-thinking MCP`)
+"基于上述数据,分析根因: - SQL为何突然变慢? - 为何今天才出问题?..."
+-> 返回: 根因:订单表数据量突破1000万,某个未加索引的查询开始全表扫描
 
 阶段3: 生成止损方案(Skill内部逻辑)
--&gt; 返回: 3个方案对比 (快速/中期/根治)
+-> 返回: 3个方案对比 (快速/中期/根治)
 
 阶段4: 执行(一键复制命令)
--&gt; 输出可执行命令 (kubectl scale..., ALTER TABLE...)
+-> 输出可执行命令 (`kubectl scale...`, `ALTER TABLE...`)
 
-最后: 记录到memory (memory MCP)
-&quot;记住:订单表到1000万行会有性能问题,需提前分库分表&quot;
+最后: 记录到`memory` (`memory MCP`)
+"记住:订单表到1000万行会有性能问题,需提前分库分表"
 ```
 
 结果: 快速定位根因,生成多套止损方案供选择,知识沉淀。
@@ -895,93 +906,91 @@ Plugins (插件) 是应用级打包容器。
 
 组合拳:
 
-```
-第1步: 项目全貌扫描(SubAgent: Explore)
-&quot;探索这个项目: 1、识别技术栈和依赖 2、找到核心模块和入口...&quot;
--&gt; 返回(10分钟): 项目架构图, 核心模块清单, 风险清单
 
-第2步: 关键逻辑理解(并行调用3个SubAgent)
-- backend-architect → &quot;分析用户登录流程的实现&quot;
-- database-optimizer → &quot;分析数据库表设计和关系&quot;
-- security-auditor → &quot;扫描常见安全漏洞&quot;
--&gt; 返回: 登录流程时序图, ER图, 7个安全风险点
 
-第3步: 技术债评估(Skill: tech-debt-manager)
--&gt; 自动扫描代码,输出: 高优先级技术债(5个), 建议优先偿还的3个
+## 场景3: 项目梳理与技术债评估
 
-第4步: 依赖升级计划(Skill: dependency-upgrade-check)
--&gt; 检测到: 3个依赖有已知CVE漏洞, 生成分阶段升级计划
+### 第1步: 项目全貌扫描(`SubAgent: Explore`)
+"探索这个项目: 1、识别技术栈和依赖 2、找到核心模块和入口..."
+-> 返回(10分钟): 项目架构图, 核心模块清单, 风险清单
 
-第5步: 知识沉淀(memory MCP)
-&quot;把这个项目的关键信息记住: - 核心模块和职责 - 数据库表和字段含义...&quot;
-```
+### 第2步: 关键逻辑理解(并行调用3个`SubAgent`)
+- `backend-architect` → "分析用户登录流程的实现"
+- `database-optimizer` → "分析数据库表设计和关系"
+- `security-auditor` → "扫描常见安全漏洞"
+-> 返回: 登录流程时序图, ER图, 7个安全风险点
+
+### 第3步: 技术债评估(`Skill: tech-debt-manager`)
+-> 自动扫描代码,输出: 高优先级技术债(5个), 建议优先偿还的3个
+
+### 第4步: 依赖升级计划(`Skill: dependency-upgrade-check`)
+-> 检测到: 3个依赖有已知`CVE`漏洞, 生成分阶段升级计划
+
+### 第5步: 知识沉淀(`memory MCP`)
+"把这个项目的关键信息记住: - 核心模块和职责 - 数据库表和字段含义..."
 
 结果: 1-2天完成初步梳理(以前要1-2周摸索)。输出技术栈、模块、风险清单,并建立项目知识库。
 
 注意: AI生成的架构图需人工验证。
 
-#### 场景4: 新功能完整开发流程(端到端)
+## 场景4: 新功能完整开发流程(端到端)
 
-背景: 要做一个"用户积分系统"功能。
+背景: 要做一个"`用户积分系统`"功能。
 
 组合拳:
 
-```
-Phase 1: 需求分析(sequential-thinking MCP)
-&quot;分析积分系统需求: - 核心功能:赚积分、花积分... - 风险:超发、作弊、性能&quot;
--&gt; 返回: 功能拆解, 技术方案选型(Redis+MySQL双写)
+### Phase 1: 需求分析(`sequential-thinking MCP`)
+"分析积分系统需求: - 核心功能:赚积分、花积分... - 风险:超发、作弊、性能"
+-> 返回: 功能拆解, 技术方案选型(`Redis`+`MySQL`双写)
 
-Phase 2: 查技术方案(context7 MCP)
-&quot;查Redis分布式锁的最佳实践和积分系统的反作弊方案&quot;
--&gt; 返回: Redisson分布式锁示例, 防御手段
+### Phase 2: 查技术方案(`context7 MCP`)
+"查`Redis`分布式锁的最佳实践和积分系统的反作弊方案"
+-> 返回: `Redisson`分布式锁示例, 防御手段
 
-Phase 3: 数据库设计(SubAgent: database-optimizer)
-&quot;设计积分系统的数据库表结构...&quot;
--&gt; 返回: 完整DDL, 索引设计
+### Phase 3: 数据库设计(`SubAgent: database-optimizer`)
+"设计积分系统的数据库表结构..."
+-> 返回: 完整`DDL`, 索引设计
 
-Phase 4: 开发(写代码)
+### Phase 4: 开发(写代码)
 [正常开发过程]
 
-Phase 5: Code Review(Skill: smart-code-review)
--&gt; 自动触发: 检查并发安全, SQL性能, 异常处理...
+### Phase 5: Code Review(`Skill: smart-code-review`)
+-> 自动触发: 检查并发安全, `SQL`性能, 异常处理...
 
-Phase 6: 提交前检查(斜杠命令: /commit)
--&gt; 自动执行: 运行单测, 检查代码规范, 生成commit message...
+### Phase 6: 提交前检查(斜杠命令: `/commit`)
+-> 自动执行: 运行单测, 检查代码规范, 生成`commit message`...
 
-Phase 7: 记录(memory MCP)
-&quot;记住积分系统的实现: - 用Redis计数器+MySQL持久化...&quot;
-```
+### Phase 7: 记录(`memory MCP`)
+"记住积分系统的实现: - 用`Redis`计数器+`MySQL`持久化..."
 
 结果: 完整的端到端流程,技术方案基于最佳实践,代码质量有保障,知识沉淀。
 
-#### 场景5: 技术栈升级(高风险迁移)
+## 场景5: 技术栈升级(高风险迁移)
 
-背景: Vue 2升级到Vue 3,涉及200+组件。
+背景: `Vue 2`升级到`Vue 3`,涉及200+组件。
 
 组合拳:
 
-```
-第1步: 影响面评估(SubAgent: frontend-developer)
-&quot;分析这个Vue 2项目升级到Vue 3的影响: - 哪些API发生了breaking change...&quot;
--&gt; 返回: 需要改动的文件清单(185个), 不兼容的库(3个), 估算工作量:15人天
+### 第1步: 影响面评估(`SubAgent: frontend-developer`)
+"分析这个`Vue 2`项目升级到`Vue 3`的影响: - 哪些`API`发生了`breaking change`..."
+-> 返回: 需要改动的文件清单(185个), 不兼容的库(3个), 估算工作量:15人天
 
-第2步: 查迁移指南(context7 MCP)
-&quot;查Vue 3官方迁移指南和常见坑&quot;
--&gt; 返回: 官方migration guide, 社区常见问题合集
+### 第2步: 查迁移指南(`context7 MCP`)
+"查`Vue 3`官方迁移指南和常见坑"
+-> 返回: 官方`migration guide`, 社区常见问题合集
 
-第3步: 制定迁移计划(sequential-thinking MCP)
-&quot;制定分阶段、可回滚的Vue 3迁移计划...&quot;
--&gt; 返回: 5个阶段的迁移计划, 每阶段的回滚方案
+### 第3步: 制定迁移计划(`sequential-thinking MCP`)
+"制定分阶段、可回滚的`Vue 3`迁移计划..."
+-> 返回: 5个阶段的迁移计划, 每阶段的回滚方案
 
-第4步: 自动化迁移(Skill: migration-script)
--&gt; 用ast-grep批量替换: this.$xxx → composition API...
+### 第4步: 自动化迁移(`Skill: migration-script`)
+-> 用`ast-grep`批量替换: `this.$xxx` → `composition API`...
 
-第5步: 逐批验证(Skill: migration-validator)
--&gt; 每迁移一批: 运行单测, 运行E2E测试, 检查bundle size...
+### 第5步: 逐批验证(`Skill: migration-validator`)
+-> 每迁移一批: 运行单测, 运行`E2E`测试, 检查`bundle size`...
 
-第6步: 记录(memory MCP)
-&quot;记住Vue 2→3迁移的坑: - Element UI要换成Element Plus...&quot;
-```
+### 第6步: 记录(`memory MCP`)
+"记住`Vue 2`→`3`迁移的坑: - `Element UI`要换成`Element Plus`..."
 
 结果: 迁移效率提升30-50%(分阶段验证降低风险),自动化+人工审查减少遗漏,知识沉淀。
 
@@ -997,48 +1006,48 @@ Phase 7: 记录(memory MCP)
 
 #### 阶段1: 核心三件套(10分钟)
 
-第1步: 装必备MCP(3分钟)
+##### 第1步: 装必备`MCP`(3分钟)
 
-在项目根目录创建.claude/mcp.json:
+在项目根目录创建`.claude/mcp.json`:
 
-```
+```json
 {
-  &quot;mcpServers&quot;: {
-    &quot;sequential-thinking&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;mcp-sequential-thinking&quot;]
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "mcp-sequential-thinking"]
     },
-    &quot;context7&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@upstash/context7-mcp&quot;]
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
     },
-    &quot;memory&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-memory&quot;]
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
     }
   }
 }
 ```
 
-重启Claude,验证生效。
+重启`Claude`,验证生效。
 
-第2步: 写第一个Skill(5分钟)
+##### 第2步: 写第一个`Skill`(5分钟)
 
-在.claude/skills/目录下创建pre-commit-check.md:
+在`.claude/skills/`目录下创建`pre-commit-check.md`:
 
-```
+```markdown
 # 名称
 pre-commit-check
 
 # 描述
-代码提交前的标准检查:格式化、Lint、测试
+代码提交前的标准检查:格式化、`Lint`、测试
 
 # 触发
-当用户提到&quot;提交&quot;&quot;commit&quot;&quot;推送&quot;时自动触发
+当用户提到"提交""commit""推送"时自动触发
 
 # 执行逻辑
 1、运行代码格式化
-2、运行Lint检查
+2、运行`Lint`检查
 3、运行相关测试
 4、生成检查报告
 
@@ -1048,16 +1057,16 @@ pre-commit-check
 
 验证: (无需重启)输入:"我准备提交代码了",看是否自动引用并执行。
 
-第3步: 试用SubAgent(5分钟)
+##### 第3步: 试用`SubAgent`(5分钟)
 
 创建一个分析任务:
 
 ```
-请创建一个SubAgent分析当前项目:
+请创建一个`SubAgent`分析当前项目:
 
 角色:项目探索专家
 任务:
-1、扫描src/目录(排除node_modules和测试文件)
+1、扫描`src/`目录(排除`node_modules`和测试文件)
 2、识别主要技术栈(框架、语言、主要依赖)
 3、列出不超过5个核心模块
 4、标注3个明显的技术债或改进点
@@ -1069,161 +1078,161 @@ pre-commit-check
 
 #### 阶段2: 团队定制化(20分钟)
 
-第4步: 记录团队知识(5分钟)
+##### 第4步: 记录团队知识(5分钟)
 
-对Claude说:
+对`Claude`说:
 
 ```
-&quot;用memory(MCP)记住我们团队的规范:
+"用`memory`(`MCP`)记住我们团队的规范:
 
 代码规范:
-- 用ESLint + Prettier
+- 用`ESLint` + `Prettier`
 - 命名用驼峰(变量)和帕斯卡(组件)
 
 Git规范:
-- commit格式:feat/fix/docs: 描述
+- commit格式:`feat/fix/docs`: 描述
 - PR必须关联issue
 
 技术栈:
-- 前端:React 18 + TypeScript + Vite
-- 后端:Node.js + Express + PostgreSQL
-&quot;
+- 前端:`React 18` + `TypeScript` + `Vite`
+- 后端:`Node.js` + `Express` + `PostgreSQL`
+"
 ```
 
-验证: 下次问问题时,看Claude是否会自动调用这些规范。
+验证: 下次问问题时,看`Claude`是否会自动调用这些规范。
 
-第5步: 创建团队斜杠命令(10分钟)
+##### 第5步: 创建团队斜杠命令(10分钟)
 
-在.claude/commands/目录下创建release.md:
+在`.claude/commands/`目录下创建`release.md`:
 
-```
+```markdown
 # 版本发布流程
 你是发布助手,帮助用户安全发布版本。
 
 ## 执行步骤
-1、确认当前Git分支是main
-2、拉取最新代码(git pull)
-3、触发Skills:
-- pre-commit-check(代码质量)
-- test-coverage-check(测试覆盖率&gt;80%)
-4、询问版本号(major.minor.patch)
-5、生成changelog(基于Git commit)
+1、确认当前`Git`分支是`main`
+2、拉取最新代码(`git pull`)
+3、触发`Skills`:
+- `pre-commit-check`(代码质量)
+- `test-coverage-check`(测试覆盖率`>80%`)
+4、询问版本号(`major.minor.patch`)
+5、生成`changelog`(基于`Git` commit)
 ...
 ## 每步都需要用户确认
 不要自动执行,每步输出命令,等用户确认。
 ```
 
-验证: 输入/release,看是否触发完整流程。
+验证: 输入`/release`,看是否触发完整流程。
 
-第6步: 优化你的第一个工作流(5分钟)
+##### 第6步: 优化你的第一个工作流(5分钟)
 
-基于你团队最烦的事,写一个Skill或斜杠命令(代码提交流程、PR创建流程、新人环境配置等)。
+基于你团队最烦的事,写一个`Skill`或斜杠命令(代码提交流程、`PR`创建流程、新人环境配置等)。
 
 #### 验收标准(做到这5点算成功)
 
-1、 说"查React 19最新文档",能调用context7返回结果
+1、 说"查`React 19`最新文档",能调用`context7`返回结果
 
-2、 说"分析该不该用微服务",能用sequential-thinking深度推理
+2、 说"分析该不该用微服务",能用`sequential-thinking`深度推理
 
-3、 说"记住我们用PostgreSQL",下次相关问题能自动调用memory
+3、 说"记住我们用`PostgreSQL`",下次相关问题能自动调用`memory`
 
-4、 说"准备提交代码",能自动触发pre-commit-check (Skill)
+4、 说"准备提交代码",能自动触发`pre-commit-check` (`Skill`)
 
-5、 输入/release,能执行完整发布流程 (Slash Command)
+5、 输入`/release`,能执行完整发布流程 (`Slash Command`)
 
-做到这5点,你的Claude就从 聊天助手 升级成 智能工作流系统 了。
+做到这5点,你的`Claude`就从 聊天助手 升级成 智能工作流系统 了。
 
 ### 常见问题排查手册
 
-#### MCP相关
+#### `MCP`相关
 
-Q1: MCP配置后不生效?
+Q1: `MCP`配置后不生效?
 
-1、检查文件路径:.claude/mcp.json
+1、检查文件路径:`.claude/mcp.json`
 
-2、验证JSON格式是否正确
+2、验证`JSON`格式是否正确
 
-3、完全关闭Claude(不是最小化),重新打开
+3、完全关闭`Claude`(不是最小化),重新打开
 
-4、输入测试:"列出可用的MCP服务器"
+4、输入测试:"列出可用的`MCP`服务器"
 
 Q2: 提示"command not found"?
 
-检查Node.js是否安装并配置好环境变量(需 >= 18.0.0)
+检查`Node.js`是否安装并配置好环境变量(需 `>= 18.0.0`)
 
-Q3: MCP服务器启动失败?
+Q3: `MCP`服务器启动失败?
 
-手动测试: npx -y mcp-sequential-thinking
+手动测试: `npx -y mcp-sequential-thinking`
 
 检查网络代理/防火墙设置,或端口是否被占用
 
-#### Skills相关
+#### `Skills`相关
 
-Q4: Skill不触发?
+Q4: `Skill`不触发?
 
-1、检查文件在.claude/skills/目录
+1、检查文件在`.claude/skills/`目录
 
-2、检查文件名是.md后缀
+2、检查文件名是`.md`后缀
 
 3、检查包含必需字段(名称/描述/触发/执行逻辑/输出)
 
 4、检查触发关键词是否明确
 
-5、调试: "列出当前项目的所有Skills" 或 "执行pre-commit-check Skill"
+5、调试: "列出当前项目的所有`Skills`" 或 "执行`pre-commit-check` `Skill`"
 
-Q5: Skill触发但报错?
+Q5: `Skill`触发但报错?
 
-1、检查Markdown格式(如#后有空格)
+1、检查`Markdown`格式(如`#`后有空格)
 
-2、检查依赖的MCP/SubAgent是否可用
+2、检查依赖的`MCP`/`SubAgent`是否可用
 
-#### SubAgent相关
+#### `SubAgent`相关
 
-Q6: SubAgent调用失败?
+Q6: `SubAgent`调用失败?
 
-1、检查网络: ping api.anthropic.com
+1、检查网络: `ping api.anthropic.com`
 
-2、降低并发(建议≤3个)
+2、降低并发(建议`≤3`个)
 
 3、给更清晰的指令,明确角色和缩小范围
 
-Q7: SubAgent结果不符合预期?
+Q7: `SubAgent`结果不符合预期?
 
 1、明确角色定位、缩小分析范围、指定输出格式、提供必要上下文
 
-#### Memory相关
+#### `Memory`相关
 
-Q8: Memory存储后查询不到?
+Q8: `Memory`存储后查询不到?
 
-1、重启Claude
+1、重启`Claude`
 
 2、用明确的分类标签: 记住【代码规范-命名】:xxx
 
-3、验证: 查询memory中所有标签包含"代码规范"的条目
+3、验证: 查询`memory`中所有标签包含"代码规范"的条目
 
-Q9: Memory记忆混乱?
+Q9: `Memory`记忆混乱?
 
-1、清理: "列出memory中的所有条目", "从memory中删除标签为'旧规范'的条目"
+1、清理: "列出`memory`中的所有条目", "从`memory`中删除标签为'旧规范'的条目"
 
 #### 性能相关
 
-Q10: Claude响应越来越慢?
+Q10: `Claude`响应越来越慢?
 
-1、减少MCP服务器(建议≤5个)
+1、减少`MCP`服务器(建议`≤5`个)
 
-2、清理不常用的Skills
+2、清理不常用的`Skills`
 
-3、清理memory过期记忆
+3、清理`memory`过期记忆
 
-4、重启Claude
+4、重启`Claude`
 
-Q11: Token消耗过快?
+Q11: `Token`消耗过快?
 
-1、精简Skill的执行逻辑
+1、精简`Skill`的执行逻辑
 
-2、SubAgent调用时限定范围
+2、`SubAgent`调用时限定范围
 
-3、Memory存储结构化知识(非长文)
+3、`Memory`存储结构化知识(非长文)
 
 ## Part 8: 核心要点总结
 
@@ -1233,91 +1242,91 @@ Q11: Token消耗过快?
 
 花30秒理解这5个关键概念,避免99%的误解:
 
-1、 **Plugins ≠ 第五个工具**
+1、 `Plugins` ≠ 第五个工具
 
-错误理解: Plugins是和Skills、MCP平级的第五个工具
+错误理解: `Plugins`是和`Skills`、`MCP`平级的第五个工具
 
-正确理解: Plugins是 **打包容器**,用来装其他四个工具
+正确理解: `Plugins`是 `打包容器`,用来装其他四个工具
 
 实际用法: 团队标准化工具包,打包后一键分发
 
-2、 Skills vs 斜杠命令的本质区别
+2、 `Skills` vs 斜杠命令的本质区别
 
-对比: Skills vs Slash Commands
+对比: `Skills` vs `Slash Commands`
 
-触发: Skills是 **自动的****(Cl**aude识别)；Slash Commands是 手动的(输入/)
+触发: `Skills`是 `自动的`(`Claude`识别)；`Slash Commands`是 手动的(输入/)
 
-适合: Skills适合 **频繁重复任务****；Slas**h Commands适合 标准化流程
+适合: `Skills`适合 `频繁重复任务`；`Slash Commands`适合 标准化流程
 
-**举例: ****Skil**ls是检测到"commit" 自动检查；Slash Commands是输入/release 执行发布
+举例: `Skills`是检测到"commit" 自动检查；`Slash Commands`是输入`/release` 执行发布
 
-记住: Skills是 自动驾驶,斜杠命令是 定速巡航
+记住: `Skills`是 自动驾驶,斜杠命令是 定速巡航
 
-3、 **MCP解决的核心问题**
+3、 `MCP`解决的核心问题
 
 传统方式: 10个AI应用 × 100个工具 = 1000个集成(噩梦)
 
-MCP方式: 10个AI应用 + 100个MCP服务器 = 110个集成
+`MCP`方式: 10个AI应用 + 100个`MCP`服务器 = 110个集成
 
-节省: **890个** 集成工作量 (这就是为什么社区能快速发展到6300+服务器)
+节省: `890个` 集成工作量 (这就是为什么社区能快速发展到`6300+`服务器)
 
-4、 **SubAgents的成本模型**
+4、 `SubAgents`的成本模型
 
 时间: 并行节省50-80%(5小时→1小时)
 
-成本: 线性增长(5个SubAgent=5倍token)
+成本: 线性增长(5个`SubAgent`=5倍`Token`)
 
-ROI: 成本5倍,节省4小时,如果时薪$50,实际赚$200-($50x5倍token成本)
+ROI: 成本5倍,节省4小时,如果时薪$50,实际赚$200-($50x5倍`Token`成本)
 
-结论: 只要时间值钱,SubAgents就划算
+结论: 只要时间值钱,`SubAgents`就划算
 
-5、 **难度排序(从易到难)**
+5、 `难度排序(从易到难)`
 
-Plugins(5分钟) → 斜杠命令(30分钟) → Skills(2小时) → MCP(4小时) → SubAgents(1天)
+`Plugins`(5分钟) → 斜杠命令(30分钟) → `Skills`(2小时) → `MCP`(4小时) → `SubAgents`(1天)
 
 新手建议: 先用前2个,够用了再学后3个
 
 ### 速记口诀(帮助记忆):
 
-Plugins打包全家桶,Skills自动命令手。
+`Plugins`打包全家桶,`Skills`自动命令手。
 
-MCP连接外部界,SubAgents并行最省时。
+`MCP`连接外部界,`SubAgents`并行最省时。
 
 ### 按用户类型推荐 (新)
 
 ### 推荐的学习路径 (4周计划)
 
-第1周：基础三件套 (Plugins + Slash Commands)
+第1周：基础三件套 (`Plugins` + 斜杠命令)
 
-1、第1-2天：安装3-5个常用Plugins,理解作用域。
+1、第1-2天：安装3-5个常用`Plugins`,理解作用域。
 
-2、第3-4天：创建3个常用Slash Commands,学习写Markdown流程。
+2、第3-4天：创建3个常用斜杠命令,学习写`Markdown`流程。
 
-3、第5-7天：将日常任务(如Git提交)用Slash Commands固化。
+3、第5-7天：将日常任务(如`Git`提交)用斜杠命令固化。
 
-第2周：进阶Skills + MCP
+第2周：进阶`Skills` + `MCP`
 
-1、第1-3天：创建5个Skills,理解自动触发机制和SKILL.md格式。
+1、第1-3天：创建5个`Skills`,理解自动触发机制和`SKILL.md`格式。
 
-2、第4-5天：安装MCP核心三件套(sequential-thinking, context7, memory),配置mcp.json。
+2、第4-5天：安装`MCP`核心三件套(`sequential-thinking`, `context7`, `memory`),配置`mcp.json`。
 
-3、第6-7天：尝试让Skills调用MCP (如Skills检测到"查文档"时,自动调用context7)。
+3、第6-7天：尝试让`Skills`调用`MCP` (如`Skills`检测到"查文档"时,自动调用`context7`)。
 
-第3周：高级SubAgents
+第3周：高级`SubAgents`
 
-1、第1-2天：理解SubAgent的无状态限制和并行设计模式。
+1、第1-2天：理解`SubAgent`的无状态限制和并行设计模式。
 
-2、第3-4天：创建3-5个SubAgent定义(如security-auditor, performance-engineer)。
+2、第3-4天：创建3-5个`SubAgent`定义(如`security-auditor`, `performance-engineer`)。
 
-3、第5-7天：测试并行执行,并分析成本与ROI。
+3、第5-7天：测试并行执行,并分析成本与`ROI`。
 
 第4周：整合与优化
 
-1、第1-2天：将团队的Skills/MCPs/Commands打包成一个Plugin,分享给同事。
+1、第1-2天：将团队的`Skills`/`MCPs`/`Commands`打包成一个`Plugin`,分享给同事。
 
-2、第3-5天：监控Token使用,排查性能瓶颈。
+2、第3-5天：监控`Token`使用,排查性能瓶颈。
 
-3、第6-7天：建立团队的Skills库和最佳实践文档。
+3、第6-7天：建立团队的`Skills`库和最佳实践文档。
 
 ### 写在最后
 
@@ -1333,15 +1342,15 @@ MCP连接外部界,SubAgents并行最省时。
 
 这5件套就是老金踩了无数坑后,提炼出的最小必要集:
 
-1、 **Plugins** - 打包容器(整合Skills、Commands、MCP、SubAgents于一体)
+1、 `Plugins` - 打包容器(整合`Skills`、`Commands`、`MCP`、`SubAgents`于一体)
 
-2、 **MCP** - 连接外部世界(6300+服务器:搜索、文件、浏览器、记忆)
+2、 `MCP` - 连接外部世界(`6300+`服务器:搜索、文件、浏览器、记忆)
 
-3、 **Skills** - 自动化重复劳动(检测场景自动触发,progressive loading)
+3、 `Skills` - 自动化重复劳动(检测场景自动触发,`progressive loading`)
 
-4、 **SubAgents** - 并行处理任务(唯一支持并行,最多10个,成本线性增长)
+4、 `SubAgents` - 并行处理任务(唯一支持并行,最多10个,成本线性增长)
 
-5、 **斜杠命令** - 标准化团队流程(手动触发,一条命令执行完整工作流)
+5、 斜杠命令 - 标准化团队流程(手动触发,一条命令执行完整工作流)
 
 各司其职,组合威力大于单打独斗。
 
@@ -1349,11 +1358,11 @@ MCP连接外部界,SubAgents并行最省时。
 
 1、不要贪多,先用3件套起步
 
-MCP: 必装memory + context7 + sequential-thinking
+`MCP`: 必装`memory` + `context7` + `sequential-thinking`
 
-Skills: 先写3个(代码检查、文档同步、依赖评估)
+`Skills`: 先写3个(代码检查、文档同步、依赖评估)
 
-SubAgents: 遇到复杂问题再调度,不用提前学
+`SubAgents`: 遇到复杂问题再调度,不用提前学
 
 其他的,等这3个用顺了再说。
 
@@ -1361,7 +1370,7 @@ SubAgents: 遇到复杂问题再调度,不用提前学
 
 把团队最烦的3件事自动化:
 
-1、 代码提交流程(自动检查+commit)
+1、 代码提交流程(自动检查+`commit`)
 
 2、 生产事故响应(并行排查+生成方案)
 
@@ -1371,7 +1380,7 @@ SubAgents: 遇到复杂问题再调度,不用提前学
 
 3、让知识沉淀,而不只是用一次
 
-用memory MCP记录:
+用`memory MCP`记录:
 
 1、 团队踩过的坑
 
@@ -1393,7 +1402,7 @@ SubAgents: 遇到复杂问题再调度,不用提前学
 
 工具的终极形态,不是替代你,而是放大你。
 
-这5件套,就是让你从 **1"个人** 变成 **1个团队** 的杠杆。
+这5件套,就是让你从 `1 个人` 变成 `1 个团队` 的杠杆。
 
 用好了,一天顶一周。
 
@@ -1409,7 +1418,7 @@ SubAgents: 遇到复杂问题再调度,不用提前学
 
 怎么把一个复杂的问题,拆解成标准化的步骤？
 
-怎么让机器(AI)去干重复的活,让人(你)来做决策？
+怎么让机器(`AI`)去干重复的活,让人(你)来做决策？
 
 真正拉开差距的,不是你会用几个工具,
 
@@ -1419,13 +1428,13 @@ SubAgents: 遇到复杂问题再调度,不用提前学
 
 工具就能自己组合出解决方案——
 
-这才是AI时代真正的 **效率革命**。
+这才是AI时代真正的 `效率革命`。
 
-不是做得更快,
 
-而是把重复的交给机器,把创造留给人。
 
-**当一**句话就能触发一段工作,我们要重新定义什么叫 合作。
+# 不是做得更快,而是把重复的交给机器,把创造留给人。
+
+当一句话就能触发一段工作,我们要重新定义什么叫 合作。
 
 这套方法论,就是帮你搭建自己工作流的脚手架。
 
@@ -1433,4 +1442,4 @@ SubAgents: 遇到复杂问题再调度,不用提前学
 
 希望能给你点启发。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

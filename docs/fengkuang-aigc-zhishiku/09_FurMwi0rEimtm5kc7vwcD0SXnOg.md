@@ -1,42 +1,43 @@
+
 # 姥姥看了都会的 Controlnet 插件功能教程
 
 > 来源：[https://keenchase.feishu.cn/docx/QpKmd9DpDowJxPxid2lcBEzQn7b](https://keenchase.feishu.cn/docx/QpKmd9DpDowJxPxid2lcBEzQn7b)
 
-# Stable Diffusion教程丨姥姥看了都会的Controlnet插件功能教程
+## Stable Diffusion教程丨姥姥看了都会的Controlnet插件功能教程
 
 ![](img/c5af17430ce905720eddef4ca7f037ea.png)
 
 ![](img/5e2163250be4ccf55716dcd0c026caf8.png)
 
-# 前言
+## 前言
 
 Hello，大家好，jeff又来写教程啦！！这是一篇继《外婆都能看懂的Stable Diffusion入门教程！！！AIGC》教程之后的一篇文章，如果你还没有安装并了解stable diffusion这个软件，那么你一定要先去看看入门教程的文章，然后安装stable diffusion。
 
-这篇是stable diffusion进阶教程，然后这篇文章的点赞收藏数据可能不会很好（毕竟需要入门一下），大家点开这篇文章的小伙伴就不要吝啬手中的赞啦~ 看到就是缘分，3连就是爱呀，看过我往期文章的小伙伴们都知道，我真是很认真的写教程，就怕你们学不会，不然我也不会取个 奶奶都会、爷爷都能看懂......的标题，话不多说了，诸君慢赏。（提一嘴，stable diffusion的一键启动包我放在群公告的，大家加我自取哈，还有很多很多很多的AIGC资源，供各位白嫖...)
+这篇是stable diffusion进阶教程，然后这篇文章的点赞收藏数据可能不会很好（毕竟需要入门一下），大家点开这篇文章的小伙伴就不要吝啬手中的赞啦~ 看到就是缘分，3连就是爱呀，看过我往期文章的小伙伴们都知道，我真是很认真的写教程，就怕你们学不会，不然我也不会取个 奶奶都会、爷爷都能看懂......的标题，话不多说了，诸君慢赏。（提一嘴，stable diffusion的一键启动包我放在群公告的，大家加我自取哈，还有很多很多很多的AIGC资源，供各位白嫖...）
 
 ## 一、Controlnet（图像精准控制）是什么？
 
-ControlNet 是一个用于控制 AI 图像生成的插件。它使用了一种称为"Conditional Generative Adversarial Networks"（条件生成对抗网络）的技术来生成图像。与传统的生成对抗网络不同，ControlNet 允许用户对生成的图像进行精细的控制。这使得 ControlNet 在许多应用场景中非常有用，例如计算机视觉、艺术设计、虚拟现实等等。总之，ControlNet 可以帮助用户精准控制 AI 图像的生成，以获得更好的视觉效果。
+`ControlNet` 是一个用于控制 AI 图像生成的插件。它使用了一种称为"Conditional Generative Adversarial Networks"（条件生成对抗网络）的技术来生成图像。与传统的生成对抗网络不同，`ControlNet` 允许用户对生成的图像进行精细的控制。这使得 `ControlNet` 在许多应用场景中非常有用，例如计算机视觉、艺术设计、虚拟现实等等。总之，`ControlNet` 可以帮助用户精准控制 AI 图像的生成，以获得更好的视觉效果。
 
 ![](img/c3d22226020c6375f5f28524d043d851.png)
 
 看着有点复杂是不是，没关系，我给你们总结一下：
 
-在 ControlNet 出现之前，我们在生成图片之前，永远的不知道AI能给我们生成什么，就像抽卡一样难受（问个问题，Midjourney是不是跟我描述的一样，哈哈哈哈，狗头保命）。
+在 `ControlNet` 出现之前，我们在生成图片之前，永远的不知道AI能给我们生成什么，就像抽卡一样难受（问个问题，Midjourney是不是跟我描述的一样，哈哈哈哈，狗头保命）。
 
-ControlNet出现之后，我们就能通过模型精准的控制图像生成，比如：上传线稿让AI帮我们填色渲染，控制人物的姿态、图片生成线稿等等。
+`ControlNet`出现之后，我们就能通过模型精准的控制图像生成，比如：上传线稿让AI帮我们填色渲染，控制人物的姿态、图片生成线稿等等。
 
-这下看懂了吗，就很哇塞，大家可能网上看到一些线稿生成的图片，就是用到的这个ControlNet，Stable Diffusion必装的插件之一。
+这下看懂了吗，就很哇塞，大家可能网上看到一些线稿生成的图片，就是用到的这个`ControlNet`，Stable Diffusion必装的插件之一。
 
 ![](img/ec9a6a46d8eab9065364394273994e6a.png)
 
-# 二、Controlnet插件安装
+## 二、Controlnet插件安装
 
 1、首先，咱们先打开秋叶大佬的启动器，并且点击更新（切换）到最新版本，这一步的目的是为了防止出现奇奇怪怪的报错。
 
 ![](img/7b98c3ddcceb82da09930048f439f630.png)
 
-2、然后我们启动 "web-UI"，打开扩展，并在这里输入该网址：https://jihulab.com/hanamizuki/sd-webui-controlnet ，然后点击安装等待一会...(安装没反应或者错误的注意网络问题，网上还有别的办法，我测试了下，这个是成功安装的）
+2、然后我们启动 `web-UI`，打开扩展，并在这里输入该网址：`https://jihulab.com/hanamizuki/sd-webui-controlnet` ，然后点击安装等待一会...(安装没反应或者错误的注意网络问题，网上还有别的办法，我测试了下，这个是成功安装的）
 
 ![](img/5095af308f39163f233db4ca037a8ddc.png)
 
@@ -44,24 +45,23 @@ ControlNet出现之后，我们就能通过模型精准的控制图像生成，�
 
 ![](img/c3c249af9cb2c0c7e390d591a3baae4c.png)
 
-4、然后回到”已安装“这里，可以看到下面就出现了扩散控制网络（Controlnet插件）了，然后点击”应用并重启用户界面"。
+4、然后回到”已安装“这里，可以看到下面就出现了扩散控制网络（`Controlnet`插件）了，然后点击”应用并重启用户界面"。
 
 ![](img/bb84794897ebdbfd34839ba58ed87d60.png)
 
-5、回到”文生图“这里，就看到Controlnet已经成功安装了，看到这里，你还不给我点个3连一下吗？不点那我们继续往下看，我相信你一定会点的。（疯狂自恋中...)
-
+5、回到”文生图“这里，就看到`Controlnet`已经成功安装了，看到这里，你还不给我点个3连一下吗？不点那我们继续往下看，我相信你一定会点的。（疯狂自恋中...)
 
 ![](img/cb509e3741557dc45b6a03738f782945.png)
 
 ## 三、Controlnet模型安装
 
-1、插件安装完成之后，还没完，我们需要安装下模型，跟着我做，首先去这个链接下载（需要网络）：https://huggingface.co/lllyasviel/ControlNet/tree/main/models
+1、插件安装完成之后，还没完，我们需要安装下模型，跟着我做，首先去这个链接下载（需要网络）：`https://huggingface.co/lllyasviel/ControlNet/tree/main/models`
 
 网速好的朋友可以直接去上面链接下载，网速不好的朋友可以加我咨询下我们知识学院收录的模型。
 
 ![](img/d29ee128490871e307f24630692ee8f9.png)
 
-2、把下载的模型全部选中复制（ctrl+c）一下，我们需要移动到对应文件夹中。
+2、把下载的模型全部选中复制（`ctrl+c`）一下，我们需要移动到对应文件夹中。
 
 ![](img/454b5acd8a06d30dc439bff082821f67.png)
 
@@ -77,11 +77,11 @@ ControlNet出现之后，我们就能通过模型精准的控制图像生成，�
 
 ![](img/5f74ea4b6add809faf0178a9ca617b26.png)
 
-## **四、模型说明及案例演示**
+## 四、模型说明及案例演示
 
 介绍几个常用的controlnet模型教程，注意看哦。跟着我一步步的操作就没什么问题的，加油！
 
-#### 4.1  Canny边缘检测 (Canny edge detection)
+### 4.1 Canny边缘检测 (Canny edge detection)
 
 #### canny 用于识别输入图像的边缘信息。从上传的图片中生成线稿，然后根据关键词来生成与上传图片同样构图的画面。
 
@@ -101,7 +101,7 @@ ControlNet出现之后，我们就能通过模型精准的控制图像生成，�
 
 ![](img/41a85af0dede530a4c2d43239e9a89e1.png)
 
-3、打开Controlnet，选择Canny边缘检测，模型选择对应的canny模型。
+3、打开`ControlNet`，选择Canny边缘检测，模型选择对应的canny模型。
 
 ![](img/c4646cbb56ee695e3df658ef11a9a8ba.png)
 
@@ -129,11 +129,11 @@ ControlNet出现之后，我们就能通过模型精准的控制图像生成，�
 
 ![](img/2e129ccd0be97c7e45c9e29876decead.png)
 
-#### 4.2 M-LSD （建筑物绘制）
+### 4.2 M-LSD （建筑物绘制）
 
 #### 通过分析图片中的线条结构和几何形状，可以构建建筑物的外框，适合建筑、室内设计的朋友使用。
 
-#### 1、切换预处理器和相应模型。
+1、切换预处理器和相应模型。
 
 2、上传一张室内设计的图片，然后点击“预处理结果”，（第一次用这个，控制台会更新一段时间）。
 
@@ -149,11 +149,11 @@ pearl white walls, windsor gray floors, bedroom, Natural lighting, earthly tones
 
 ![](img/b1c17c12e0a2d642bc763600c813f916.png)
 
-#### 4.3 法线贴图 (Normal map)
+### 4.3 法线贴图 (Normal map)
 
 #### 从原图中提取 3D 物体的法线向量，绘制的新图与原图的光影效果完全相同。
 
-#### 1、切换预处理器和模型
+1、切换预处理器和模型
 
 2、上传一张图片，然后点击“预览预处理结果”，然后就会给你生成一张法线图（懂3维的小伙伴应该都知道这个）
 
@@ -171,11 +171,11 @@ Mercedes-Benz AMG GT, staring out of the window with regal air, Moody lighting, 
 
 可以看到，图片生成的效果还是不错的，跟原图的构图基本一致，当然还有更多的细节需要调整，大家可以调整这块的参数即可。
 
-#### 4.4 OpenPose 姿态检测
+### 4.4 OpenPose 姿态检测
 
 #### “控制你的女友”，通过姿势识别实现对人体动作的精准控制，不仅可以生成单人的姿势，还可以生成多人的姿势。
 
-此外，由于AI生成的手部有问题，OpenPose还有一个手部检测模型，大大改善了奇奇怪怪的手。
+此外，由于AI生成的手部有问题，`OpenPose`还有一个手部检测模型，大大改善了奇奇怪怪的手。
 
 ![](img/487decd2910fd191447ac8c8b947d104.png)
 
@@ -193,13 +193,13 @@ Mercedes-Benz AMG GT, staring out of the window with regal air, Moody lighting, 
 
 > 女孩，独奏，连衣裙，辫子，发带，耳环，微笑，棕色眼睛，白色连衣裙，现实主义，珠宝，长发，黑发，看着观众，裸露的肩膀，嘴唇，蓝色发带，单发带，棕色头发，简单的背景
 
-唉，这手奇奇怪怪的，没事，可以试试OpenPose手部检测模型，操作是一样的，自己去尝试哈，细节调起来操作很多，一点点尝试，肯定能成功的。
+唉，这手奇奇怪怪的，没事，可以试试`OpenPose`手部检测模型，操作是一样的，自己去尝试哈，细节调起来操作很多，一点点尝试，肯定能成功的。
 
-#### 4.5 Scribble （涂鸦）
+### 4.5 Scribble （涂鸦）
 
-#### **使用 Scribbles** 模型，可以根据草图（涂鸦）绘制出精美的图片，对于那些没有接受过美术训练或缺乏绘画天赋的人来说，这是非常棒的。
+#### 使用 Scribbles 模型，可以根据草图（涂鸦）绘制出精美的图片，对于那些没有接受过美术训练或缺乏绘画天赋的人来说，这是非常棒的。
 
-#### **1**、切换预处理器和模型。（第一次用这个，控制台会更新一段时间）
+1、切换预处理器和模型。（第一次用这个，控制台会更新一段时间）
 
 ![](img/2dcc40567d873eb9d9ebbf3f68c60dbc.png)
 
@@ -227,11 +227,11 @@ old electronic kerosene lamp in anthracite blue metal, warm orange metal reflect
 
 完事，同样细节需要你们自己去调整，点赞解锁剩余内容😏
 
-#### 4.6 fake-scribble（伪涂鸦）
+### 4.6 fake-scribble（伪涂鸦）
 
 #### 这个是不需要我们绘画的，上传一张图片，它会帮我们生成涂鸦效果。
 
-#### 1、切换预处理器，模型不用切换。
+1、切换预处理器，模型不用切换。
 
 ![](img/38842dd83b5a750281a575067f8d9e60.png)
 
@@ -249,11 +249,11 @@ Espresso, set in a cozy office space with warm lighting, surrounded by office pl
 
 效果嘎嘎棒！！！
 
-#### 4.7 Semantic Segmentation（语义分割绘制）
+### 4.7 Semantic Segmentation（语义分割绘制）
 
 #### Semantic Segmentation 语义分割是一种深度学习算法，重点关注 语义 一词，这种算法将一个标签或类别与图像联系起来，被用来识别形成不同类别的像素集合。具体还是看我的操作：
 
-#### 1、切换预处理器和模型
+1、切换预处理器和模型
 
 2、上传图片，然后点击“预览预处理器结果”。
 
@@ -267,9 +267,13 @@ Espresso, set in a cozy office space with warm lighting, surrounded by office pl
 
 ![](img/24ba94addda66e5cc356b175fdfa7406.png)
 
-**言川小知识：**可以在ps上绘制一个色块的物体（比如人，放在这个桥上，对应官方的色值），然后导入到语义分割这里来，输入相应的关键词，就可以精准控制图像的效果了。后续给大家出详细教学，注意在群里关注我的动态哦。
 
-#### **注意看注意看：**
+
+### 言川小知识
+
+可以在ps上绘制一个色块的物体（比如人，放在这个桥上，对应官方的色值），然后导入到语义分割这里来，输入相应的关键词，就可以精准控制图像的效果了。后续给大家出详细教学，注意在群里关注我的动态哦。
+
+#### 注意看注意看
 
 这里我讲下这个小功能，前面两个是打开摄像头的功能，我没试过，你们想玩可以试一下啊。主要讲一下后面的那个小箭头。
 
@@ -281,9 +285,11 @@ Espresso, set in a cozy office space with warm lighting, surrounded by office pl
 
 （本文部分图片素材来自网上）
 
-# **七、写在最后**
+# 七、写在最后
 
-## **以**上就是这篇Controlnet插件的基础教程啦，当中还有很多高级的玩法，我会在后续一步步的分享给大家。
+## 以上就是这篇Controlnet插件的基础教程啦
+
+当中还有很多高级的玩法，我会在后续一步步的分享给大家。
 
 如果觉得对你有帮助，3连（点赞、收藏、分享）一下吧，大家的支持才是我的动力，祝大家生活愉快😊
 

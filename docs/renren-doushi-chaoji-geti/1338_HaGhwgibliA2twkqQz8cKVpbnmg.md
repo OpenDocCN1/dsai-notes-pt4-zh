@@ -1,12 +1,11 @@
+
 # 2023-08-11【浦发银行】徐汇滨江的这家银行 正为人工智能产业发展注入不一样的金融活力
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/HS6HdUXqEo8UHrxzadmccX74nRd](https://xuqiwei1986.feishu.cn/docx/HS6HdUXqEo8UHrxzadmccX74nRd)
-
-> 🔗 原文链接： h[ttps://www.sohu.co](https://www.sohu.com/a/710872173_120578424)m/a/710872173_12...
-
 >
+> 🔗 原文链接：https://www.sohu.com/a/710872173_120578424
 
-# 徐汇滨江的这家银行 正为人工智能产业发展注入不一样的金融活力
+## 徐汇滨江的这家银行 正为人工智能产业发展注入不一样的金融活力
 
 [2023](http://m2.people.cn/news/default.html?s=Ml8yXzQwNTI4NjMwXzEzNDc2OF8xNjkxNzM5MTU0&from=sohu)-08-11 15:32 来源: 金台资讯
 
@@ -28,6 +27,6 @@
 
 作为上海首个人工智能发展集聚区，徐汇区也是上海唯一入选全国首批战略性新兴产业集群所在区域，聚焦打造人工智能千亿元级产业规模目标。浦发银行徐汇滨江支行在总分行党委的坚强领导下，将全力支持徐汇区加快推进“一核一极一带”空间布局，人工智能发展“T计划”的实施，推动本市人工智能产业更高质量发展。
 
-(浦发银行供稿) [ 返回搜狐，查看更多](https://www.sohu.com/?strategyid=00001&spm=smpc.content.content.2.1691980387694i69EK1M)
+(浦发银行供稿) [返回搜狐，查看更多](https://www.sohu.com/?strategyid=00001&spm=smpc.content.content.2.1691980387694i69EK1M)
 
 责任编辑：

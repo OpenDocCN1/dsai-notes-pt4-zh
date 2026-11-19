@@ -1,3 +1,4 @@
+
 # 尼纳设计工作室案例展示
 
 > 来源：[https://aigclena.feishu.cn/docx/XDHxddi7uo8Il7x5Z8icBEhKnVh](https://aigclena.feishu.cn/docx/XDHxddi7uo8Il7x5Z8icBEhKnVh)
@@ -8,33 +9,33 @@
 
 # 海外独立app
 
-**项目概述**
+## 项目概述
 
 本项目是一款面向东南亚市场做潮牌鞋子的一款应用。客户对于视觉细节具有非常高的要求，尤其是在字体使用和排版规范方面，甚至会对字号间的细微差异以及字形笔画结构进行严格评估。
 
-**设计方法**
+## 设计方法
 
 在项目启动前，我们首先对东南亚市场的同类产品进行了系统的竞品研究，重点分析了：
 
-+   主流产品的视觉风格与排版逻辑
++ 主流产品的视觉风格与排版逻辑
 
-+   不同字体在移动端界面的阅读表现
++ 不同字体在移动端界面的阅读表现
 
-+   字体与品牌气质之间的关系
++ 字体与品牌气质之间的关系
 
 在此基础上，我们与客户共同对六种候选英文字体进行了多维度评估，包括：
 
-+   字形结构与辨识度
++ 字形结构与辨识度
 
-+   屏幕阅读舒适度
++ 屏幕阅读舒适度
 
-+   UI界面适配性
++ UI界面适配性
 
-+   品牌气质匹配度
++ 品牌气质匹配度
 
 经过多轮对比与讨论，最终确定了一款最符合品牌调性的字体，并以此建立整套产品的视觉排版体系。
 
-**设计成果**
+## 设计成果
 
 通过在项目初期对字体系统进行深入打磨，我们为产品建立了一套清晰、统一且具有品牌辨识度的视觉基础。这不仅提升了产品整体的设计品质，也为后续界面设计和品牌传播提供了稳定的视觉语言。
 
@@ -66,9 +67,9 @@
 
 酒店用品：https://gz-juntu.en.alibaba.com/
 
-Case-香港珠宝客户
+## Case-香港珠宝客户
 
-该项目是在客户已有独立站的基础上，为其新开设的阿里国际**站店铺进行视**觉设计。品牌 Logo 以 紫红色与灰色为主色，因此在整体页面设计中，以 Logo 配色为核心进行视觉延展，建立统一的品牌色彩体系。在设计...
+该项目是在客户已有独立站的基础上，为其新开设的阿里国际站店铺进行视觉设计。品牌 Logo 以 紫红色与灰色为主色，因此在整体页面设计中，以 Logo 配色为核心进行视觉延展，建立统一的品牌色彩体系。在设计...
 
 ![](img/552e7337132d6decf5e03f4cc1512f1d.png)
 
@@ -76,17 +77,17 @@ Case-香港珠宝客户
 
 [10月21日lena.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XJmibx3UxoqcsxxVRG9cyykkn5c)
 
-Case-香水瓶盖
+## Case-香水瓶盖
 
 ![](img/cad198aafe79514bc6d8aaf3f56b4c83.png)
 
-Case-五星好评20年木制品老店
+## Case-五星好评20年木制品老店
 
-客户希望整体风格呈现 **高端、简洁、专业** 的视觉调性。在设计开始前，我对国内外同类型网站进行了充分的竞品调研，浏览和分析了数十个相关案例，从版式结构、视觉层级以及色彩应用等方面总结行业常见的设...
+客户希望整体风格呈现 高端、简洁、专业 的视觉调性。在设计开始前，我对国内外同类型网站进行了充分的竞品调研，浏览和分析了数十个相关案例，从版式结构、视觉层级以及色彩应用等方面总结行业常见的设...
 
 ![](img/1f4fd0b72e5cf0a183b82e0c7dce7bab.png)
 
-Case-发电机
+## Case-发电机
 
 在项目正式启动之前，我首先对行业进行了系统性的竞品调研，并结合客户提供的参考网站，对整体设计风格与视觉调性进行了深入分析与判断。通过对同类品牌官网的视觉语言、色彩使用以及信息结构...
 
@@ -94,11 +95,11 @@ Case-发电机
 
 # 政府单位
 
+figma截图
+
 ![](img/cb4bd8e7675723926eb56e31d471e0d6.png)
 
 ![](img/dd936ac45e097a32b1621f1520f8589d.png)
-
-figma截图
 
 # 电力集团H5长图
 
@@ -116,23 +117,17 @@ figma截图
 
 ![](img/d3d79791c1a37f4eaf82799f489ddf2d.png)
 
-
-
 ![](img/226fcf25850f7d9271d056d85c857b1b.png)
-
 
 ![](img/bf998e62ba8f5e48be8c94c5ad2cc058.png)
 
 ![](img/c2375084e66dd2286e5c8959e64c9ac5.png)
-
 
 ![](img/15a0ac79cfef44fcfe2975fe0d41ed3d.png)
 
 ![](img/b833e448da3a8c80482a3c7b16b572b5.png)
 
 ![](img/8a1f6fc303eaafe9fa44cda375fbf12d.png)
-
-
 
 ![](img/aa85b4b4fd812dcd32505c93078364c4.png)
 
@@ -148,7 +143,6 @@ figma截图
 
 企业后台👇 22年作品
 
-
 [动效展示1126片头36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U8YKbsQ2yoP42Ax4j2scOPLynhe)
 
 完整版👇👇
@@ -159,7 +153,7 @@ figma截图
 
 # 品牌
 
-国际学校校庆物料
+## 国际学校校庆物料
 
 ![](img/444c162cc8db7beb538d6e24b1a257f6.png)
 
@@ -167,7 +161,7 @@ figma截图
 
 ![](img/b435c297662654524680f041d78ebf69.png)
 
-## 主图形
+### 主图形
 
 ![](img/6ecd8a61e180029f696105caacc99b74.png)
 
@@ -187,7 +181,7 @@ figma截图
 
 ![](img/646ee1350d8625b09c49c0aae2c20263.png)
 
-## PPT模板
+### PPT模板
 
 封面
 
@@ -200,7 +194,6 @@ figma截图
 ![](img/9390cc9c6b62e9ff1e4fcbd0dd2ee84a.png)
 
 ![](img/8ed94c282de9d7bb7c33b49366f1dd4c.png)
-
 
 ![](img/98ef33c50f2336b522c9cd9a432b65ab.png)
 
@@ -220,6 +213,6 @@ figma截图
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  AI课程学习
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) AI课程学习
 
 ![](img/908f3d5e361c799a8992d7c5c3ee3743.png)

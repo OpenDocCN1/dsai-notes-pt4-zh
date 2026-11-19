@@ -1,14 +1,15 @@
+
 # GPT-Image-2 爆款案例 + 完整提示词（可复制）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TpI6dCPgForroyxIMtvc4QMjnac](https://qqs7y1hozd1.feishu.cn/docx/TpI6dCPgForroyxIMtvc4QMjnac)
 
-**GPT-Image-2 上线几天，推上已经被刷屏了，恰好image**2开始全量上线，我根据这几天的时间线以及个人的尝试，收集整理了一些提示词和案例。
+GPT-Image-2 上线几天，推上已经被刷屏了，恰好 image 2 开始全量上线，我根据这几天的时间线以及个人的尝试，收集整理了一些提示词和案例。
 
-图像生成的边界，如今又被 GPT-Image-2 推了一大步，banana已经可以退下王座了。
+图像生成的边界，如今又被 GPT-Image-2 推了一大步，banana 已经可以退下王座了。
 
 下面是我从 X 高赞帖里筛出来的 8 类案例，全部配完整 prompt。都可以直接复制到 ChatGPT 用 GPT-Image-2 生成。
 
-# 先来收集点整活的内容：
+## 先来收集点整活的内容
 
 ```
 绘制一张Anthropic公司在X推特上的产品宣传帖子，要求有文案和配图，以及网页端的UI，内容是
@@ -17,7 +18,7 @@
 
 ![](img/11531218b91464a1228e95c8b33e8363.png)
 
-图来源于[@Khazix0918](https://x.com/@Khazix0918)
+图来源于 [@Khazix0918](https://x.com/@Khazix0918)
 
 ```
 生成一张中文，初三年级的数学学科期中考试试卷
@@ -27,7 +28,7 @@
 
 ![](img/5b36d6d09922be158f950bff563c7e8d.png)
 
-[           ](https://x.com/@Khazix0918) [     图来源](https://x.com/@akokoi1)于@Khazix0918                                                       图来源于@akokoi1
+图来源于 [@Khazix0918](https://x.com/@Khazix0918) 和 [@akokoi1](https://x.com/@akokoi1)
 
 ```
 生成品牌视觉设计全案
@@ -35,23 +36,20 @@
 
 ![](img/0ddb83147a782e03d4628830b46508da.png)
 
-图来源于[@Jackywine](https://x.com/@Jackywine)
+图来源于 [@Jackywine](https://x.com/@Jackywine)
 
 ## 一、资源整理：一个 GitHub 仓库省你一个月 prompt 试错
 
 这周 X 上被反复转发最多的，是这个仓库：
 
-🔗 awesome-gpt-image-2-prompts
-
-[github.com/EvoLinkAI/awesome](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts)-gpt-image-2-prompts
+🔗 [awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts)
 
 500+ Star 的量级，覆盖人像摄影、海报、角色设计、UI mockup 四个大类，每类都带图和完整 prompt。X 上绝大多数刷屏帖的 prompt，都能在里面找到原始出处或同款。
 
 另外有两个中文友好库也可以收藏：
 
-+   [github.com/YouMind-OpenLab](https://github.com/YouMind-OpenLab/awesome-gpt-image-2)/awesome-gpt-image-2
-
-+   [opennana.com/awesome-prompt-g](https://opennana.com/awesome-prompt-gallery?model=ChatGPT)allery?model=ChatGPT
++ [YouMind-OpenLab/awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2)
++ [opennana.com/awesome-prompt-gallery?model=ChatGPT](https://opennana.com/awesome-prompt-gallery?model=ChatGPT)
 
 不会写 prompt 的人，直接 Star + 抄。直接省下一周的反复尝试。
 
@@ -98,14 +96,14 @@ Quality: Authentic 35mm film grain, no plastic skin, no digital over-sharpening,
 完整 prompt（青岛版，直接复制）：
 
 ```
-一张充满新春喜庆氛围但不失高雅格调的 2026 城市宣传海报。双重曝光，构图延续 S 型的流动感；在纯白的纹理背景右下角，一个身穿中国传统服饰的微缩人物正在挥舞着一条长长的红色丝绸舞带，这条红绸在空中舞动，不仅展现出丝绸的柔顺质感，更在向左上方飘动的过程中，奇幻地变形成了一条壮丽的山海长卷。在这条&quot;山海&quot;中，叠加了一个有山有海的青岛城市手绘图，国潮，景色尽在眼底，壮阔雄伟，令人震撼。青岛的地标建筑（栈桥、五四广场、奥帆中心、小青岛灯塔、八大关红瓦建筑群、崂山）。海雾环绕，仙气缥缈，色彩丰富，结构复杂，细节丰富，但因为大面积留白，画面依然显得清新脱俗。左下角排版着&quot;SPRING 2026&quot;和竖排的宣传语，整体寓意&quot;山海之城，魅力青岛&quot;。文字排版优美大方，字迹清晰完整，尺寸 9:16。
+一张充满新春喜庆氛围但不失高雅格调的 2026 城市宣传海报。双重曝光，构图延续 S 型的流动感；在纯白的纹理背景右下角，一个身穿中国传统服饰的微缩人物正在挥舞着一条长长的红色丝绸舞带，这条红绸在空中舞动，不仅展现出丝绸的柔顺质感，更在向左上方飘动的过程中，奇幻地变形成了一条壮丽的山海长卷。在这条"山海"中，叠加了一个有山有海的青岛城市手绘图，国潮，景色尽在眼底，壮阔雄伟，令人震撼。青岛的地标建筑（栈桥、五四广场、奥帆中心、小青岛灯塔、八大关红瓦建筑群、崂山）。海雾环绕，仙气缥缈，色彩丰富，结构复杂，细节丰富，但因为大面积留白，画面依然显得清新脱俗。左下角排版着"SPRING 2026"和竖排的宣传语，整体寓意"山海之城，魅力青岛"。文字排版优美大方，字迹清晰完整，尺寸 9:16。
 ```
 
 **怎么改**：把 青岛 替换为你的城市，地标部分换成本地的（北京→故宫/国贸/长城/胡同；成都→太古里/锦江/宽窄巷子/大熊猫；杭州→西湖/雷峰塔/钱塘江/灵隐寺；你家乡→你最想推的三四个点），宣传语一句也一并改。其余句式全部保留。
 
 ![](img/8228b81e09df0265bf806676291dc317.png)
 
-随手发一张车的图，让GPT-image-2去生成的官网。
+随手发一张车的图，让 GPT-image-2 去生成的官网。
 
 ![](img/6e73feba301ebcf6a0181da86f7dfee5.png)
 
@@ -113,7 +111,7 @@ Quality: Authentic 35mm film grain, no plastic skin, no digital over-sharpening,
 
 ## 四、韩国女团 3×3 写真集（一致性）
 
-这一类在 X 偶像圈/摄影圈流传最快**。9 宫格里同一个 id**ol 九种姿势，脸型、发型、服装完全一致，软光+胶片颗粒，像真·写真集。
+这一类在 X 偶像圈/摄影圈流传最快。9 宫格里同一个 idol 九种姿势，脸型、发型、服装完全一致，软光+胶片颗粒，像真·写真集。
 
 完整 prompt（直接复制）：
 
@@ -130,6 +128,8 @@ Quality: Authentic 35mm film grain, no plastic skin, no digital over-sharpening,
 **手绘风**，兼具"实用攻略"和"萌系手绘"两个标签，容易被美食号/旅游号二次传播。下面这版是广州，粤菜密度一上来，画面的信息量自动拉满。
 
 完整 prompt（广州版，直接复制）：
+
+
 
 ```
 一幅手绘风格的城市美食地图，以广州为主题。画面以鸟瞰视角的手绘简化城市地图为底，标注主要道路（如中山路、北京路、天河路）和地标（如广州塔、海心沙、陈家祠、西关大屋、珠江）但不追求精确比例，追求可爱的手绘感。地图上分布着 12 个美食地点的精致手绘小插画：上下九的萝卜牛杂（铁罐内热气腾腾的萝卜和牛杂串，旁边写着&quot;牛杂大王，三十年如一日&quot;）、北京路的广式烧鹅（红亮酥脆的烧鹅挂在档口，旁有酸梅酱，推荐语&quot;街坊口碑，晚去吃不到&quot;）、东山口的艇仔粥（水中摇曳的小船上，热粥冒气，配料丰富，推荐语&quot;早晨一口，精神百倍&quot;）、天河城的煲仔饭（揭开陶瓦煲盖，热气和腊味香气四溢，可见锅巴，推荐语&quot;饭香扑鼻，锅巴一绝&quot;）、西关的双皮奶（一碗凝固光滑的红豆双皮奶用匙羹舀起，推荐语&quot;奶味浓郁，入口即化&quot;）、陈家祠的云吞面（细面上整齐摆放几个鲜虾云吞，汤色清亮，推荐语&quot;弹牙面身，鲜美汤头&quot;）、珠江夜景下的猪脚姜（陶罐内深褐色的甜醋、猪脚和老姜，推荐语&quot;满街飘香，回味无穷&quot;）、广州酒家的早茶推车（各式蒸笼内凤爪、烧卖、虾饺热气腾腾，推荐语&quot;叹茶一盅，美味两件&quot;）、海心沙的马蹄糕（盘中切好的晶莹剔透、有马蹄粒的马蹄糕，推荐语&quot;清甜爽口，夏日必备&quot;）、白云山的肠粉（淋上酱油、皮薄料足的刚出炉肠粉，推荐语&quot;皮薄料足，广州经典&quot;）、广州塔下的白切鸡（摆放整齐皮黄肉白的白切鸡，配姜葱蓉，推荐语&quot;鲜嫩多汁，姜葱是灵魂&quot;）、沙面的干炒牛河（鑊气十足色泽金黄的牛河，牛肉大片，推荐语&quot;鑊气十足，真材实料&quot;）。每个插画约占地图的 5% 面积，旁边用手写体标注店名和推荐语。地图边缘用手绘木棉花、荔枝、龙眼和波浪纹装饰，形成边框。右下角有一个手绘指南针和图例说明。左上角标题&quot;广州 吃货暴走地图&quot;使用胖圆的手绘美术字配木棉花和镬耳墙装饰。整体画风为水彩+彩铅混合的手绘质感，颜色以暖色系（木棉红、姜黄、珠江蓝、翠绿）为主，图片比例横板 16:9。
@@ -175,11 +175,11 @@ Quality: Authentic 35mm film grain, no plastic skin, no digital over-sharpening,
 
 这个结构的关键在三件事：
 
-1.  **开**头那句 ultra-consistent character identity across all 12 frames —— 这是让 12 格里的脸、发型、服装保持一致的核心。
+1. **开**头那句 `ultra-consistent character identity across all 12 frames` —— 这是让 12 格里的脸、发型、服装保持一致的核心。
 
-1.  **主角设定单独成段** —— 把"长什么样、穿什么、有什么伤"一次写清楚，后面分镜就不用每格重复描述。
+2. **主角设定单独成段** —— 把"长什么样、穿什么、有什么伤"一次写清楚，后面分镜就不用每格重复描述。
 
-1.  **分镜按 4 组 × 3 格写** —— 每组有一个小叙事单元（寻找 / 归途 / 规划 / 启程），这样出来的 12 格像真·短剧片头，不是随机拼图。
+3. **分镜按 4 组 × 3 格写** —— 每组有一个小叙事单元（寻找 / 归途 / 规划 / 启程），这样出来的 12 格像真·短剧片头，不是随机拼图。
 
 **怎么改成你自己的短剧**：把"末日废土 + 女性生存"这层壳换掉（校园爱情 / 悬疑刑侦 / 古风武侠 / 科幻太空），主角设定段换人，12 格场景重写，其余句式全部保留。一条模板可以吃一个短剧系列的十条片头。
 
@@ -193,8 +193,7 @@ Quality: Authentic 35mm film grain, no plastic skin, no digital over-sharpening,
 a screenshot from gta 6 with Jason walking in leonida keys
 ```
 
-就这一句。出来的画面带游戏 UI、光影、天气，看起来像官方泄露图。想换场景就改地点和动作：driving at night in Port Gellhorn、near the beach with Lucia。
-
+就这一句。出来的画面带游戏 UI、光影、天气，看起来像官方泄露图。想换场景就改地点和动作：`driving at night in Port Gellhorn`、`near the beach with Lucia`。
 
 或者换成《流浪地球3》的电影剧照：
 
@@ -204,7 +203,7 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 我本行是建筑设计。在 X 普通用户里热度不算最高，但在设计圈，设计师又死了一次。
 
-8.1 公共建筑 A1 展板图（青岛海边美术馆示范）
+### 8.1 公共建筑 A1 展板图（青岛海边美术馆示范）
 
 大学建筑学一张 A1 展板图，平均做 2-3 天：效果图 + 总平 + 平立剖 + 分析图 + 爆炸轴测 + 设计说明，六到八种图类型要排在一张纸上。现在一段 prompt 直接出。
 
@@ -222,37 +221,37 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 ![](img/e658de3632ce1456c4092a65fa56e5b7.png)
 
-8.2 大师海报：柯布西耶与现代建筑
+### 8.2 大师海报：柯布西耶与现代建筑
 
 另一种是"建筑大师研究海报"——大师侧脸剪影作画布，他一生的作品沿着时间轴在脸内从下往上堆叠。
 
-完整 prompt（JSON 格式，直接复制；只用 prompt 字段也能跑，negative_prompt 和 parameters 是给支持的接口用的）：
+完整 prompt（JSON 格式，直接复制；只用 `prompt` 字段也能跑，`negative_prompt` 和 `parameters` 是给支持的接口用的）：
 
 ```
 {
-  &quot;prompt&quot;: &quot;A professional cinematic poster titled &#x27;LE CORBUSIER&#x27;. The central theme is a complex double exposure effect featuring the side profile silhouette of the architect Le Corbusier, complete with his signature round-framed glasses and a subtle tie. Inside his silhouette, a breathtaking layered composition illustrates the evolution of modern architecture through his key works. At the base, early works like the Villa Savoye are nestled, with a label &#x27;VILLA SAVOYE&#x27;. Above it, larger scale projects like the Unité d&#x27;Habitation are integrated, labeled &#x27;UNITE D&#x27;HABITATION&#x27;. Winding through the entire internal landscape is a flowing, glowing path made of architectural plans and sections, labeled &#x27;DEVELOPMENT OF MODERNISM&#x27;, which connects these early works to his later, more sculptural masterpieces. At the top of the internal landscape, the iconic Notre Dame du Haut, Ronchamp, is depicted, labeled &#x27;NOTRE DAME DU HAUT&#x27;. On a higher plateau within the profile, a simplified Chandigarh Palace of Assembly is visible, labeled &#x27;CHANDIGARH ASSEMBLY&#x27;. At the bottom center of the entire image, a lone, young observer (perhaps an architectural student with a sketchbook) stands on a rocky mountain peak, looking out over a wide, sun-drenched valley towards a distant modernist city skyline. The background shows a serene sunset over the Swiss Alps and a distant city. The lighting is warm golden hour, creating a futuristic yet historical atmosphere. High-resolution, 8k, hyper-realistic digital art style, clean typography, sharp focus, volumetric lighting. The side icons are replaced with simplified architectural symbols and labels: a cube with &#x27;FORM&#x27;, a house with &#x27;HUMAN SCALE (MODULOR)&#x27;, a compass with &#x27;MEASUREMENT&#x27;, and a world map with &#x27;GLOBAL IMPACT&#x27;. The text &#x27;1887 - 1965&#x27; replaces &#x27;2026&#x27;. The smaller map at the bottom is a schematic Modulor figure combined with a world map with &#x27;WORLDWIDE&#x27;. Bottom text reads: &#x27;SHAPING SPACE. MASTERING LIGHT.&#x27;&quot;,
-  &quot;negative_prompt&quot;: &quot;blurry, low quality, distorted face, messy text, extra fingers, deformed buildings, dull colors, dark, gloomy, low resolution, watermark, signature, grainy, Apple Park, Stanford, Google Campus, California, Silicon Valley, young Asian man, 2026.&quot;,
-  &quot;parameters&quot;: {
-    &quot;aspect_ratio&quot;: &quot;9:16&quot;,
-    &quot;style&quot;: &quot;Cinematic/Digital Art&quot;,
-    &quot;lighting&quot;: &quot;Golden Hour / Sunset&quot;,
-    &quot;composition&quot;: &quot;Double Exposure / Layered / Hierarchical&quot;
+  "prompt": "A professional cinematic poster titled 'LE CORBUSIER'. The central theme is a complex double exposure effect featuring the side profile silhouette of the architect Le Corbusier, complete with his signature round-framed glasses and a subtle tie. Inside his silhouette, a breathtaking layered composition illustrates the evolution of modern architecture through his key works. At the base, early works like the Villa Savoye are nestled, with a label 'VILLA SAVOYE'. Above it, larger scale projects like the Unité d'Habitation are integrated, labeled 'UNITE D'HABITATION'. Winding through the entire internal landscape is a flowing, glowing path made of architectural plans and sections, labeled 'DEVELOPMENT OF MODERNISM', which connects these early works to his later, more sculptural masterpieces. At the top of the internal landscape, the iconic Notre Dame du Haut, Ronchamp, is depicted, labeled 'NOTRE DAME DU HAUT'. On a higher plateau within the profile, a simplified Chandigarh Palace of Assembly is visible, labeled 'CHANDIGARH ASSEMBLY'. At the bottom center of the entire image, a lone, young observer (perhaps an architectural student with a sketchbook) stands on a rocky mountain peak, looking out over a wide, sun-drenched valley towards a distant modernist city skyline. The background shows a serene sunset over the Swiss Alps and a distant city. The lighting is warm golden hour, creating a futuristic yet historical atmosphere. High-resolution, 8k, hyper-realistic digital art style, clean typography, sharp focus, volumetric lighting. The side icons are replaced with simplified architectural symbols and labels: a cube with 'FORM', a house with 'HUMAN SCALE (MODULOR)', a compass with 'MEASUREMENT', and a world map with 'GLOBAL IMPACT'. The text '1887 - 1965' replaces '2026'. The smaller map at the bottom is a schematic Modulor figure combined with a world map with 'WORLDWIDE'. Bottom text reads: 'SHAPING SPACE. MASTERING LIGHT.'",
+  "negative_prompt": "blurry, low quality, distorted face, messy text, extra fingers, deformed buildings, dull colors, dark, gloomy, low resolution, watermark, signature, grainy, Apple Park, Stanford, Google Campus, California, Silicon Valley, young Asian man, 2026.",
+  "parameters": {
+    "aspect_ratio": "9:16",
+    "style": "Cinematic/Digital Art",
+    "lighting": "Golden Hour / Sunset",
+    "composition": "Double Exposure / Layered / Hierarchical"
   },
-  &quot;key_elements&quot;: [
-    &quot;Side profile silhouette of Le Corbusier&quot;,
-    &quot;Villa Savoye&quot;,
-    &quot;Unité d&#x27;Habitation&quot;,
-    &quot;Notre Dame du Haut, Ronchamp&quot;,
-    &quot;Chandigarh Palace of Assembly&quot;,
-    &quot;Flowing path of architectural plans&quot;,
-    &quot;Young observer on a peak&quot;,
-    &quot;Modulor figure motif&quot;,
-    &quot;Modernist architectural iconography&quot;
+  "key_elements": [
+    "Side profile silhouette of Le Corbusier",
+    "Villa Savoye",
+    "Unité d'Habitation",
+    "Notre Dame du Haut, Ronchamp",
+    "Chandigarh Palace of Assembly",
+    "Flowing path of architectural plans",
+    "Young observer on a peak",
+    "Modulor figure motif",
+    "Modernist architectural iconography"
   ]
 }
 ```
 
-**怎么改**：把 LE CORBUSIER 换成你要研究的那位——FRANK LLOYD WRIGHT（配流水别墅 / 古根海姆）/ ZAHA HADID（配 MAXXI / 广州大剧院）/ KENGO KUMA（配竹屋 / 长城脚下的公社）/ WANG SHU（配宁波美术馆 / 中国美院象山）——然后把 key_elements 里的代表作清单和年份也一起换。一晚上能给整个流派做一套海报集。
+**怎么改**：把 LE CORBUSIER 换成你要研究的那位——FRANK LLOYD WRIGHT（配流水别墅 / 古根海姆）/ ZAHA HADID（配 MAXXI / 广州大剧院）/ KENGO KUMA（配竹屋 / 长城脚下的公社）/ WANG SHU（配宁波美术馆 / 中国美院象山）——然后把 `key_elements` 里的代表作清单和年份也一起换。一晚上能给整个流派做一套海报集。
 
 ![](img/1fb7bd361adcb47f6c5ab42e9a495ac5.png)
 
@@ -262,12 +261,12 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 但第 9 类，是我写这篇文章真正想提的那一类：真实的图片
 
-九、🛰️聊天截图 / 朋友圈九宫格 / 直播间截图
+### 🛰️聊天截图 / 朋友圈九宫格 / 直播间截图
 
 这一类 prompt 短到一行：
 
 ```
-生成一张 iOS 微信聊天截图，对话对象备注为&quot;领导&quot;，时间 23:47，对方发来一句&quot;明早 8 点过来我办公室一下&quot;，气泡旁显示&quot;已读&quot;。
+生成一张 iOS 微信聊天截图，对话对象备注为"领导"，时间 23:47，对方发来一句"明早 8 点过来我办公室一下"，气泡旁显示"已读"。
 ```
 
 ![](img/691dc749e74e73767110ee95c110c631.png)
@@ -277,7 +276,7 @@ a screenshot from gta 6 with Jason walking in leonida keys
 **同类还有：**
 
 ```
-生成一张朋友圈截图，九宫格里是九张不同角度的西湖日落打卡图，配文&quot;赶在 20:00 关园前冲进来，风比想的大一倍&quot;，下面显示 13 个点赞、4 条评论（含 1 条简短回复&quot;哇这天色&quot;）。
+生成一张朋友圈截图，九宫格里是九张不同角度的西湖日落打卡图，配文"赶在 20:00 关园前冲进来，风比想的大一倍"，下面显示 13 个点赞、4 条评论（含 1 条简短回复"哇这天色"）。
 ```
 
 ![](img/c3c06a05f99b04d69058f914589bb9f2.png)
@@ -290,7 +289,7 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 ```
 9:16 的图片比例，生成一张抖音直播的截图，里面是一位女网红在直播，手里拿着牌子，牌子里写着 今晚直播，欢迎”阿哲@Formulasearch
-&quot;参与畅聊！
+"参与畅聊！
 ```
 
 ![](img/fe4578f8160ae85ccea78c4f4c6a369a.png)
@@ -309,7 +308,11 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 ## 十、一个真实的出单，30分钟收入1.2k
 
-这几天恰好接到了一个设计中国风卡牌的单子，把初步的需求输入给GPT，然后直接生成图片，并适当调整，在很短的时间内迅速生成了多个方向，多种不同风格的成品，然后简单沟通下，顺利拿下一个外快：
+
+
+# 中国风卡牌设计与 AI 工具分享
+
+这几天恰好接到了一个设计中国风卡牌的单子，把初步的需求输入给`GPT`，然后直接生成图片，并适当调整，在很短的时间内迅速生成了多个方向、多种不同风格的成品，然后简单沟通下，顺利拿下一个外快：
 
 ```
 需求：
@@ -329,16 +332,18 @@ a screenshot from gta 6 with Jason walking in leonida keys
 
 ![](img/7d741ecee8a3d8f8b12424051b14652b.png)
 
-## ！一句提醒：
+## 一句提醒
 
 一个模型能画出大片不稀奇，但能让人对自己每天刷到的“普通图片”产生怀疑，这是个新的问题。
 
-过去做假文档需要 PS 技术、字体库、纸张**扫描；做假直播截图需**要抠图和拼接。现在，几句prompt即可。
+过去做假文档需要 `PS` 技术、字体库、纸张扫描；做假直播截图需要抠图和拼接。现在，几句`prompt`即可。
 
-ai已经非常强大且大众化，没法阻止任何人用它，但**作为一个写内容**的人，我也希望给出提醒——眼见不一定为真。
+`ai` 已经非常强大且大众化，没法阻止任何人用它，但作为一个写内容的人，我也希望给出提醒——眼见不一定为真。
 
-提示词[分享在这里了哈，有兴趣的朋友可以自取
+提示词分享在这里了哈，有兴趣的朋友可以自取：
 
-链接：ht](https://t.co/8z4NBBqHRu)tps://pan.quark.cn/s/9909c3d7359e?pwd=mRiy
+[分享链接](https://t.co/8z4NBBqHRu)
+
+链接：https://pan.quark.cn/s/9909c3d7359e?pwd=mRiy
 
 提取码：mRiy

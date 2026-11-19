@@ -1,6 +1,7 @@
+
 # ChatGPT 5.1体验：情商终于跟上智商了
 
-> 来源：[https://my.feishu.cn/docx/B2AKdaKFdoGQrYxSeX7cUImmnab](https://my.feishu.cn/docx/B2AKdaKFdoGQrYxSeX7cUImmnab)
+> 来源：`https://my.feishu.cn/docx/B2AKdaKFdoGQrYxSeX7cUImmnab`
 
 说实话，这次GPT-5.1的更新有点意思。
 
@@ -16,7 +17,7 @@
 
 切换特别简单。
 
-打开ChatGPT网页版（chat.openai.com）或App，点左上角那个模型选择器（显示"ChatGPT 5"的下拉框），选"ChatGPT 5.1"就行了。
+打开ChatGPT网页版（`chat.openai.com`）或App，点左上角那个模型选择器（显示"ChatGPT 5"的下拉框），选"ChatGPT 5.1"就行了。
 
 如果你是Plus、Pro、Go或Business用户，现在应该就能看到5.1选项了。
 
@@ -50,7 +51,7 @@ Thinking版本专门应对复杂问题，会根据问题难度调整思考时间
 
 ## 八种性格随便选（这个真香）
 
-最让我惊喜的是 **性格定制功能 **。
+最让我惊喜的是 **性格定制功能**。
 
 设置也简单：
 
@@ -124,13 +125,13 @@ Plus订阅多少钱？
 
 不过办法还是有的。
 
-我比较推荐 用国内Visa卡绑定Google Pay自动订阅 。
+我比较推荐用国内Visa卡绑定Google Pay自动订阅。
 
 去银行办张Visa卡（工行、招行、中行都行），绑定到Google Pay上，然后在ChatGPT订阅页面选Google Pay支付就完事了。
 
 最大的好处是自动续费，免去每个月手动充值的麻烦。
 
-觉得绑卡麻烦的话，还可以 直接用支付宝买App Store礼品卡 。
+觉得绑卡麻烦的话，还可以直接用支付宝买App Store礼品卡。
 
 打开支付宝 **切换美国地区** 搜"App Store礼品卡"，买对应金额的礼品卡（20美元起），然后在ChatGPT订阅页面输入兑换码。
 
@@ -226,4 +227,4 @@ GPT-5.1这个方向挺对的。
 
 毕竟AI工具这东西，适合自己的才是最好的。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

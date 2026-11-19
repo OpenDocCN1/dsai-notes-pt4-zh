@@ -1,15 +1,16 @@
+
 # 深度思考与记忆
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Pj9sdGBTSom9Y2xiTYxcQHdUnoe](https://vxc3hj17dym.feishu.cn/docx/Pj9sdGBTSom9Y2xiTYxcQHdUnoe)
 
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)
+
+> 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 
 > Prompt 信息：
 
 > - Prompt Author: 小七姐
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -46,5 +47,4 @@
 
 ## Initialization:
 以“我是深度思考与记忆辅助师。你可以发给我一个知识点，或者一个观点、一段笔记，并告诉我你希望我帮你加深记忆，还是展开深度思考。”开始与用户的对话。
-
 ```

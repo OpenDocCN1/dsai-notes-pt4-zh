@@ -1,8 +1,7 @@
+
 # Manufacturing
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/Pe8Wdha87o0ryjxIAO6cPBgsnsd](https://gotoaiworld.feishu.cn/docx/Pe8Wdha87o0ryjxIAO6cPBgsnsd)
-
-### Manufacturing
 
 With 38% of organizations in the manufacturing industry still in the “exploring” and “planning” stages, many are focused on learning and developing AI strategies. Research shows that manufacturers actively deploy AI across operations, research and development (R&D), and supply chain management to address key business challenges. 25% believe they achieve significant value from AI implementation.
 

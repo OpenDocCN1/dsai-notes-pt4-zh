@@ -1,16 +1,17 @@
+
 # 20241031-Runway创始人：AI公司已经过时，新媒体成为真正追求
 
 > 来源：[https://aigcreative.feishu.cn/docx/Q3DWdzCaSoVJiYxSkPKcyMGmn1e](https://aigcreative.feishu.cn/docx/Q3DWdzCaSoVJiYxSkPKcyMGmn1e)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/Lr3cLYesGxdT9dRxojvT_w)q.com/s/Lr3cLYes...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/Lr3cLYesGxdT9dRxojvT_w)q.com/s/Lr3cLYes...
 
-Runway 的创始人兼 CEO Cristóbal Valenzuela 近日在公司官网上掀起了一场思维风暴：“AI 公司的时代已经过去，Runway 现在是一家媒体和娱乐公司！” 。
+Runway 的创始人兼 CEO Cristóbal Valenzuela 近日在公司官网上掀起了一场思维风暴：“AI 公司的时代已经过去，Runway 现在是一家媒体和娱乐公司！”。
 
 ![](img/e1d248a5ab9b0fd0a9eb0ee3bad06c78.png)
 
 这可不是一句简单的口号，而是对 AI 发展现状和未来的大胆判断。
 
-# **AI 从“黑科技”****到“基础设施”**
+## AI 从“黑科技”到“基础设施”
 
 Valenzuela 认为，AI 已经成为像电力或互联网一样的基础设施，不再是高不可攀的黑科技，而是人人可用的日常工具。
 
@@ -18,7 +19,7 @@ Valenzuela 认为，AI 已经成为像电力或互联网一样的基础设施，
 
 今天，如果一家企业还在以“AI 公司”自居，就像在 2024 年自称“互联网公司”一样，显得过时而无意义。每家公司都会使用 AI，AI 正在从概念走向普及。
 
-# **AI 只是工具， 新媒体才是****Runway 的真正追求**
+## AI 只是工具，新媒体才是 Runway 的真正追求
 
 Runway 的核心定位并非停留在 AI 技术层面，而是瞄准了艺术、媒体和娱乐领域。
 
@@ -28,7 +29,7 @@ Runway 的核心定位并非停留在 AI 技术层面，而是瞄准了艺术、
 
 这种愿景与相机的诞生相似：相机的出现不仅创造了摄影，还带来了整个行业和艺术形式的革命；而 Runway 的 AI 技术也正是如此——它不只是“工具”，而是改变内容创作方式的革命性引擎。
 
-# **AI 让“动态内容”****，成为可能**
+## AI 让“动态内容”，成为可能
 
 在 Valenzuela 看来，传统媒体的创作模式相对“单向”：有人创作，有人消费，创作和分发的角色和界限分明。
 
@@ -40,7 +41,7 @@ Runway 的核心定位并非停留在 AI 技术层面，而是瞄准了艺术、
 
 这意味着，未来的媒体将变得更加互动、生成式和个性化，创作和消费的边界将被彻底模糊。
 
-# **新媒体的机会****，就在当下**
+## 新媒体的机会，就在当下
 
 AI 公司的时代或许正在落幕，但这并不意味着科技创新的结束。
 
@@ -50,7 +51,7 @@ AI 已经成为商品化的基础设施，而真正的挑战是如何用它来�
 
 这也正是 Runway 的使命：创造一种全新的内容体验方式，而不是局限于 AI 技术的革新。
 
-# **新媒体革命：****我们才刚刚开始**
+## 新媒体革命：我们才刚刚开始
 
 Valenzuela 强调，AI 并非终点，而是通向更伟大事物的桥梁。
 

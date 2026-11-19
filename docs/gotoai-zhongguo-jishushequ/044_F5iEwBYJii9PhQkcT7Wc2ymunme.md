@@ -1,3 +1,4 @@
+
 # 大模型背后的隐秘生意：企业们花重金布局的AI搜索，水有多深？
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/AtJpdZYyBo8gfVxwOJWccowtn4c](https://gotoaiworld.feishu.cn/docx/AtJpdZYyBo8gfVxwOJWccowtn4c)
@@ -8,7 +9,7 @@
 
 十多年前，老板们曾最关心的是“怎么做SEO”。这个微妙的变化，折射出一个现象：搜索引擎的“权力中心”正逐步从传统的网页索引向生成式AI模型迁移。
 
-Similarweb显示， 2025 年 7 月 chatgpt.com 的月访问量约 57 亿、环比增加6%，全球网站排名升至第 5。OpenAI 于 8 月 7 日在官方博客披露“近 7 亿人每周使用 ChatGPT”； 日均处理超 25 亿条 prompts。
+Similarweb显示， 2025 年 7 月 `chatgpt.com` 的月访问量约 57 亿、环比增加6%，全球网站排名升至第 5。OpenAI 于 8 月 7 日在官方博客披露“近 7 亿人每周使用 ChatGPT”； 日均处理超 25 亿条 prompts。
 
 AI 搜索新秀 Perplexity的使用数据也在加速攀升，Perplexity CEO 6 月 5 日称其 5 月查询量 7.8 亿、月增速 20%+， 7月 24 日，Fortune进一步报道称，Perplexity已“接近 10 亿次/月查询”。
 
@@ -32,7 +33,7 @@ GEO优化和SEO优化的逻辑是否一致？
 
 ![](img/1114d37784b643d5e0292e89dbff4175.png)
 
-## **一、GEO并不是下一个SEO**
+## 一、GEO并不是下一个SEO
 
 传统搜索引擎和AI搜索引擎在工作原理和用户体验上存在本质性差异，这种差异决定了SEO和GEO是两套完全不同的游戏规则。
 
@@ -106,7 +107,7 @@ Conductor开发了AI Content Optimization平台，专门帮助企业优化内容
 
 这意味着 GEO 工作注定是多模型、多指标并行的精细化过程，而无法用单一方法论“一招通吃”。
 
-## **三、GEO服务收费混乱**
+## 三、GEO服务收费混乱
 
 从翁柔莹的解答中可以看出，某些方式确实都有可能提高企业品牌被大模型引用的概率。
 
@@ -116,7 +117,7 @@ Conductor开发了AI Content Optimization平台，专门帮助企业优化内容
 
 GEO（Generative Engine Optimization）定价逻辑偏向“能力阶梯”，因此市面上几乎只见高阶月度包或一次性项目报价，很少按小时计费。
 
-Creative Click Media 把GEO标成“几百到数千美元/月”，侧重内容打底与Schema标注（简单理解为给网页上的关键信息贴“标签”）；高级套餐再加AI语料投喂、监测等功能；
+Creative Click Media 把GEO标成“几百到数千美元/月”，侧重内容打底与`Schema`标注（简单理解为给网页上的关键信息贴“标签”）；高级套餐再加AI语料投喂、监测等功能；
 
 Perrill 明确写出“起步价6000美元/月”，在此基础上按行业竞争度与可监测指标阶梯加价；
 
@@ -134,7 +135,7 @@ Perrill 明确写出“起步价6000美元/月”，在此基础上按行业竞�
 
 为了提高对于优化效果的可信度，甚至有服务商提出，“快速验证机制：承诺5天内见效，否则退款”。
 
-## **四、平台博弈GEO灰产**
+## 四、平台博弈GEO灰产
 
 从用户视角来看，SEO 更像“雇一支外包运营团队”；GEO 则像“购买 AI-可见度黑盒里的一张入场券”，需要更高的前置投入去买能力、买方法论，也承担指标尚未标准化的风险。
 
@@ -142,11 +143,11 @@ Perrill 明确写出“起步价6000美元/月”，在此基础上按行业竞�
 
 ![](img/d022fd30b51759577c0802698b42ccc0.png)
 
-与此同时，灰产也在滋长。比如，在开发者社区里流传着一组“影子Prompt”脚本：把指令写进白字白底或 HTML 注释，诱导 LLM 在回答时优先引用目标网址。这种“隐形注入”技术已被学术界证明可以绕过人类审核。
+与此同时，灰产也在滋长。比如，在开发者社区里流传着一组“影子Prompt”脚本：把指令写进白字白底或 `HTML` 注释，诱导 LLM 在回答时优先引用目标网址。这种“隐形注入”技术已被学术界证明可以绕过人类审核。
 
 AI搜索平台并未坐视 GEO 野蛮生长。Google 在 2024 年 3 月更新 Spam Policy，首次把“规模化AI生成内容、无增值页面”明确定义为垃圾内容，可直接手动处罚。
 
-OpenAI 也在今年春季把“自动检测与人工复核”写进 Usage Policies，针对可疑URL建立黑名单并下调权重。Perplexity 的做法则是引入“Focus/Choose Sources”模式，让用户或系统可以限定可信源范围；对发生版权纠纷的网站，平台会在内部权限层面降级引用。
+OpenAI 也在今年春季把“自动检测与人工复核”写进 Usage Policies，针对可疑`URL`建立黑名单并下调权重。Perplexity 的做法则是引入“Focus/Choose Sources”模式，让用户或系统可以限定可信源范围；对发生版权纠纷的网站，平台会在内部权限层面降级引用。
 
 即使对于正常的GEO策略，大模型企业的态度也是“谨慎的开放”，博查AI CTO翁柔莹说：“大模型会谨慎鼓励企业在大模型企业的生态内发布一些内容，比如豆包可能会倾向于收录抖音或头条的内容。但是，GEO和大模型的底层逻辑是冲突的。大模型希望给用户提供准确的内容，而GEO本质是向商业化负责的。它们的底层逻辑不一致，所以大模型企业对GEO不会有完全开放的态度。”
 
@@ -156,31 +157,31 @@ OpenAI 也在今年春季把“自动检测与人工复核”写进 Usage Polici
 
 换言之，想靠黑帽GEO弯道超车的可能性越来越低。
 
-## **五、品牌方的GEO焦虑**
+## 五、品牌方的GEO焦虑
 
 在生成式 AI 全面渗透搜索和问答场景的当下，最让品牌方焦虑的其实并不是算法多难懂，而是“我说的话 AI 是否能听得懂”。化解这种焦虑的第一步，是把自有平台打造成机器可读的“单一事实来源”。
 
-具体来说，官网应系统部署Schema.org标记（网页结构化标签）；内部白皮书、案例研究则要写成带数字的结论句，并注明权威出处。生成式模型最偏爱这种既有数据又有论证的段落形态——它们天然乐于引用可验证的事实，而非堆叠关键词的广告语。
+具体来说，官网应系统部署`Schema.org`标记（网页结构化标签）；内部白皮书、案例研究则要写成带数字的结论句，并注明权威出处。生成式模型最偏爱这种既有数据又有论证的段落形态——它们天然乐于引用可验证的事实，而非堆叠关键词的广告语。
 
 有了“可读”资产，接下来是“可见”。企业最好围绕二三十个核心业务问题，按月在 ChatGPT、Perplexity、Gemini 等平台主动检索，记录品牌在答案中出现的次数与位置。业内把这种指标称为 Citation Rank 或 Position-Adjusted Word Count——它比传统蓝色链接排名更能反映 AI 语境里的曝光度。
 
 如果缺乏技术栈，可以采购 BrightEdge、Flow Agency 之类SaaS工具，但务必在合同里写清“数据可复现”条款，避免被一张好看的截图糊弄。
 
-正如前文提到，很多服务商会兜售“隐形注入”“72 小时收录”等捷径：把 prompt 写进隐藏文字里诱导模型引用。这些黑帽手段短期或许生效，却极易触发平台封禁，甚至带来版权和合规风险。与其试图驯服一个黑盒，不如把钱花在真正独特、可信、可验证的内容上，让 AI 主动把你当作引用样本。毕竟，在生成式搜索的世界里，最稀缺的是可靠事实与清晰叙事，而不是又一套能够被逆向的算法秘籍。
+正如前文提到，很多服务商会兜售“隐形注入”“72 小时收录”等捷径：把 `prompt` 写进隐藏文字里诱导模型引用。这些黑帽手段短期或许生效，却极易触发平台封禁，甚至带来版权和合规风险。与其试图驯服一个黑盒，不如把钱花在真正独特、可信、可验证的内容上，让 AI 主动把你当作引用样本。毕竟，在生成式搜索的世界里，最稀缺的是可靠事实与清晰叙事，而不是又一套能够被逆向的算法秘籍。
 
 投入层面也需要冷静，腾讯科技征询了行业专家，以下几条避坑建议可以考虑：
 
-先问数据口径：让服务商展示自家监测工具如何抓取 ChatGPT/Perplexity 的 citation rank，是否可 API 复现，避免截图“自嗨”。
+先问数据口径：让服务商展示自家监测工具如何抓取 ChatGPT/Perplexity 的 citation rank，是否可 `API` 复现，避免截图“自嗨”。
 
 SEO与GEO预算配比：SEO 与 GEO 并非完全互斥。可用 60 % 预算跑传统 SEO 保底流量，用40%押注GEO争取AI搜索红利。
 
 签“效果附加”条款：要求 GEO 服务在指定周期内提升品牌引用数或覆盖模型数量，否则减免 10–20 % 费用；这样既保护投入，也能倒逼服务商固化指标体系。
 
-警惕超低价：当前GEO合理门槛往往不低于3000美元/月。低于此价多半是模板化 prompt 注入或简单内容拼贴，极易被平台治理而前功尽弃。
+警惕超低价：当前GEO合理门槛往往不低于3000美元/月。低于此价多半是模板化 `prompt` 注入或简单内容拼贴，极易被平台治理而前功尽弃。
 
 整体来说，因为大模型的技术特点，GEO更应该被看作贯穿产品、研发、市场的长期工程，而非一次可外包的营销速成班——它关乎品牌如何在AI时代定义自己、表达自己，并最终成为未来语义网络里的一个关键坐标点。
 
-## **参考资料：**
+## 参考资料：
 
 《第一批用 DeepSeek 推荐的人，已上当》（The First Users Recommended by DeepSeek Have Been Fooled）真故研究室https://m.36kr.com/p/3255103733575685?utm_source=chatgpt.com
 
@@ -194,11 +195,11 @@ Pranjal Aggarwal, Vishvak Murahari, Tanmay Rajpurohit 等. 2024-08-24. GEO: Gene
 
 《Semrush .Trends 联合 Statista 报告：AI 搜索如何改变网络》（New Report From .Trends & Statista Reveals How AI Search Is Changing the Web）Natalia Zhukova. 2024-12-02. Fresh Research Reveals How AI Search is Changing the Web
 
+
+
 《什么是生成式引擎优化 (GEO)，它如何影响 SEO？》（What Is Generative Engine Optimization (GEO) & How Does It Impact SEO?） Wil Reynolds, Cori Shirk, Jason Stinnett. 2024-08-28. Seer Interactive Insights. What is Generative Engine Optimization (GEO) & how does it impact SEO?
 
-《2025 年 GEO 顶级趋势》（Top Generative Engine Optimization (GEO) Trends）
-
-Pragati Gupta. 2025-05-16. writesonic.com
+《2025 年 GEO 顶级趋势》（Top Generative Engine Optimization (GEO) Trends）Pragati Gupta. 2025-05-16. writesonic.com
 
 《Perplexity AI 统计 2025：用户与收入数据》（Perplexity AI Statistics 2025: Users & Revenue Data）Naveen Kumar. 2025-05-20. DemandSage. demandsage.com
 

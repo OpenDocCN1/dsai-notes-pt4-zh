@@ -1,8 +1,9 @@
+
 # 和张一鸣的聊天 - 张晓东分享
 
-> 来源：[https://huchegames.feishu.cn/docx/Bp4AdNyPMoJyl7xsH3rcqUGMnQU](https://huchegames.feishu.cn/docx/Bp4AdNyPMoJyl7xsH3rcqUGMnQU)
+> 来源：`https://huchegames.feishu.cn/docx/Bp4AdNyPMoJyl7xsH3rcqUGMnQU`
 
-**和一鸣的聊天 - 张晓东分享**
+## 和一鸣的聊天 - 张晓东分享
 
 2014年3月，我在字节，刚入职5个月，准备离职——我之前在360的领导创业，希望我加入，我已经答应了，提了离职。有天晚上在工位，张一鸣突然说聊聊，我有点惊讶，找了个会议室聊聊
 
@@ -54,4 +55,4 @@ The rest is history
 
 ---
 
-<https://huchegames.feishu.cn/sync/OXf1diH5tsO5fkbbj32cGaUknni>
+`https://huchegames.feishu.cn/sync/OXf1diH5tsO5fkbbj32cGaUknni`

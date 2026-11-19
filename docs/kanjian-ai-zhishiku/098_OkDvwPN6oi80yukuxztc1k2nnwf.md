@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230726）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/S9u3d2eGFoDma4xfG8hcowSjnZg](https://jlqyxzzvbk.feishu.cn/docx/S9u3d2eGFoDma4xfG8hcowSjnZg)
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## AutoX无人化RoboTaxi登陆北京
+### AutoX无人化RoboTaxi登陆北京
 
 ![](img/b459222de638921f43726f471c56702c.png)
 
@@ -20,9 +21,9 @@
 
 本次北京无人化许可下达前，AutoX已在中美多地拥有无人化测试乃至商业化落地经验，包括北京、上海、广州、深圳、硅谷五大国际超一线城市，自动驾驶运行域超过2000+平方公里，其中，完全无人运行域面积达300+平方公里。
 
-更多信息请访问：https://mp.weixin.qq.com/s/4dTg4GShjsAQg9BrCgj1lw
+更多信息请访问：`https://mp.weixin.qq.com/s/4dTg4GShjsAQg9BrCgj1lw`
 
-## ChatGPT下架官方检测工具，承认AI文字无法鉴别
+### ChatGPT下架官方检测工具，承认AI文字无法鉴别
 
 ![](img/45079f3b1685ff2fffd390d1aca3e84c.png)
 
@@ -42,11 +43,11 @@ OpenAI自己给出的数据，只能正确识别**26%**的AI生成文本，同�
 
 但还是有很多老师试图用各种检测方法来检查学生作业。
 
-**最著名的一次，得克萨**斯农工大学一位教授差点判定半个班的学生延毕。
+**最著名的一次**，得克萨斯农工大学一位教授差点判定半个班的学生延毕。
 
-更多信息请访问：https://mp.weixin.qq.com/s/KeGW6PVZ0lozWw7g-7E2tQ
+更多信息请访问：`https://mp.weixin.qq.com/s/KeGW6PVZ0lozWw7g-7E2tQ`
 
-## 香港大学经管学院人工智能研究所所长陈海亮：生成式AI应用落地的路还很长
+### 香港大学经管学院人工智能研究所所长陈海亮：生成式AI应用落地的路还很长
 
 播
 
@@ -56,35 +57,35 @@ ChatGPT的一声惊雷，让全球见识到了生成式AI的威力，生成式AI
 
 陈海亮表示，德意志银行6月份的一次调研结果显示，即使在生成式AI普及较早的欧美，也只有60%的人听说过AI助手，真正使用过AI助手的人只有10%左右。“这意味着，生成式AI要想真正被推广、应用，还有很长一个过程”，陈海亮表示，当下，生成式AI的使用大多集中在个人，企业端的应用还很有限。调查显示，美国的企业只有不到30%使用过AI助手。
 
-更多信息请访问：https://baijiahao.baidu.com/s?id=1772384969586938521&wfr=spider&for=pc
+更多信息请访问：`https://baijiahao.baidu.com/s?id=1772384969586938521&wfr=spider&for=pc`
 
-# AI软件精选
+## AI软件精选
 
-# Glasp**（****AI****文本）**
+### Glasp（AI文本）
 
 **Glasp**是一种人工智能工具，旨在帮助用户突出显示、组织和分享网络上的引述、想法和想法。主要特点和优势包括：
 
 **捕获和存储**：轻松保存来自网络的信息片段
 
-**策划 ****AI**** 模型**：从策划的亮点创建个性化的 AI 模型
+**策划 AI 模型**：从策划的亮点创建个性化的 AI 模型
 
 **与他人联系**：访问共享资源并从其他用户那里发现有趣的内容
 
-**Wall of Love** ：与朋友和社区分享亮点、笔记和资源
+**Wall of Love**：与朋友和社区分享亮点、笔记和资源
 
 Glasp 的**用例**非常适合不同的人：
 
-**寻求从文**章中组织和引用重要信息的研究人员
+**寻求从文章中组织和引用重要信息的研究人员**
 
 **希望**共享资源并从同龄人那里发现新内容的学生
 
-**旨在通过有**条理的笔记和想法来提高生产力和创造力的内容创作者
+**旨在通过有条理的笔记和想法来提高生产力和创造力的内容创作者**
 
 ![](img/5809ee4c60c6d66f726192b76438a8cc.png)
 
-链接：https://glasp.co/
+链接：`https://glasp.co/`
 
-# Grammarly**（****AI****文本）**
+### Grammarly（AI文本）
 
 **Grammarly**是一个人工智能驱动的在线[写作](https://nav.6aiq.com/favorites/text_ai)助手，旨在提高用户的写作技巧。主要特点和优势包括：
 
@@ -106,37 +107,35 @@ Grammarly 的**用例**可满足各种写作需求：
 
 ![](img/05223b509b44c19cee15022d3b91134a.png)
 
-链接：https://www.grammarly.com/
+链接：`https://www.grammarly.com/`
 
-# **T****ex****t G**enerator Plugin（AI文本）
+### Text Generator Plugin（AI文本）
 
 Text Generator 是一种开源 AI 助手工具，它将生成式人工智[能的](https://nav.6aiq.com/favorites/summarizer)力量带入了 Obsidian 中知识创造和组织的力量。例如，使用文本生成器根据您的知识数据库生成想法、有吸引力的标题、摘要、大纲和整个段落。可能性是无止境！
 
 ![](img/d9b24bda5ad52d6567fd54654fe24da3.png)
 
-链接：https://text-gen.com/text-generator
+链接：`https://text-gen.com/text-generator`
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+**更多 AI 工具请访问：**`http://ai.kcodez.com/`
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
-https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
+`https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279`
 
 GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸张的授课风格，讲述GPT的各种用法，以及如何讲自身结合
 
 ![](img/af7e83d0ccd7eeea3b76038cef06a5e3.png)
 
-## 付费课程（ai绘画）
+### 付费课程（ai绘画）
 
 AI绘画基础课Midjourney
 
-优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         https://v.douyin.com/ixcenrM/
+优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         `https://v.douyin.com/ixcenrM/`
 
 ![](img/0a33414e5a71c3625dcac956316efeac.png)
-
-#
 
 ![](img/aa2d039bfb1b9cc41d703c416200a97e.png)
 
@@ -144,9 +143,9 @@ AI绘画基础课Midjourney
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4.会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：`https://nf.video/kkF8Y` 下单时输入：kanAI 九五折优惠，或者直接二维码访问
 
 ![](img/b25620d4445fc932a221a9bb558c1322.png)
 
@@ -156,7 +155,7 @@ AI绘画基础课Midjourney
 
 ![](img/2c8287e690698701b1917eaffb241395.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT**，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/c5f10a4515d60bcee823b482d09046c0.png)
 

@@ -1,3 +1,4 @@
+
 # 如何制作一个生活化，灵魂版的AI数字人
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/X0v3dHV3gozQStxAa6ucyW3ynQd](https://xuqiwei1986.feishu.cn/docx/X0v3dHV3gozQStxAa6ucyW3ynQd)
@@ -301,6 +302,8 @@
 我们用小程序搭建了一个中台，上面有所有的画中画素材，数字人模板，文案，音乐，音效等。
 
 ![](img/c07e77bb2c977eec48e12a08248a2dfc.png)
+
+
 
 ![](img/57490898cc753f74f43158ab478d54f1.png)
 

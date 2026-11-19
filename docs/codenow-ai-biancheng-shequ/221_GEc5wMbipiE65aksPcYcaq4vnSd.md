@@ -1,3 +1,4 @@
+
 # 心流日志 | flowLog v1.1.0
 
 > 来源：[https://now.feishu.cn/docx/PPo2do66ToXzgnxrboIcnGkPnyI](https://now.feishu.cn/docx/PPo2do66ToXzgnxrboIcnGkPnyI)
@@ -14,18 +15,18 @@ https://flow-log.netlify.app
 
 https://flowlog.hkg1.zeabur.app
 
-## 功能更新：
+## 功能更新
 
-+   支持"[[标题]]"语法新建笔记（算法性能待优化）
++ 支持`[[标题]]`语法新建笔记（算法性能待优化）
 
-+   支持url网址链接解析
++ 支持url网址链接解析
 
-+   支持backlink相关链接功能
++ 支持`backlink`相关链接功能
 
-## 更新计划：
+## 更新计划
 
-+   UI细节优化
++ UI细节优化
 
-+   导出数据库功能
++ 导出数据库功能
 
-+   日志条目相关笔记优化
++ 日志条目相关笔记优化

@@ -1,3 +1,4 @@
+
 # 财务人员的AI编程之路：最顺手的工具一定是自己做的
 
 > 来源：[https://now.feishu.cn/docx/AwUYdbwqmogIT1x2uPlcGJJAnGg](https://now.feishu.cn/docx/AwUYdbwqmogIT1x2uPlcGJJAnGg)
@@ -98,7 +99,7 @@
 
 ---
 
-**后记**
+## 后记
 
 这次对话让我深深感触。在传统的软件开发模式下，像"夫妻共享记账"这样的个性化需求往往被忽视，因为开发成本太高，市场太细分。但AI编程改变了这个逻辑——它让每个人都能成为自己最好的产品经理和开发者。
 

@@ -1,26 +1,27 @@
+
 # 玩转"汉语新解"？我用通义AI直出爆款文字卡片
 
 > 来源：[https://langgptai.feishu.cn/docx/NB7jdynxcozlPLxsb8xc3LPVnhf](https://langgptai.feishu.cn/docx/NB7jdynxcozlPLxsb8xc3LPVnhf)
 
 作者：云中江树
 
-**更新：**
+## 更新
 
-+   **硅基流动官方做**[「智说新语」的诞生](https://siliconflow.feishu.cn/wiki/ZxFAww4Aii8bF2kl5BgcECn6n7d)了在线网站“智说新语” ，更加好用强大，体验地址：https://xy.siliconflow.cn/ ，拆解文章:
++   **硅基流动官方做**[「智说新语」的诞生](https://siliconflow.feishu.cn/wiki/ZxFAww4Aii8bF2kl5BgcECn6n7d)了在线网站“智说新语”，更加好用强大，体验地址：https://xy.siliconflow.cn/ ，拆解文章:
 
 +   群友 @永佳把汉语新解做成了网站，效果不错，现在可以直接在网站生成卡片，欢迎大家使用，提提意见呀hh
 
-+    网站：https://langgpt.replit.app/
++   网站：https://langgpt.replit.app/
 
 +   群友 @王志玮 做成了插件
 
-+   插件  https://github.com/BenedictKing/chinesepua
++   插件 https://github.com/BenedictKing/chinesepua
 
 +   解读 [精美卡片-汉语新解（玩梗高手）的2种生成办法](https://tffyvtlai4.feishu.cn/wiki/HvkuwNcKxiqvLKk5o9rcRjfjn1u)
 
 +   群友@金禅搞了个网页版：[https://malette.art/work](https://malette.art/workflow/21e8c53bd3a743c)flow/21e8c53bd3a743c
 
-+   [还](https://malette.art/comfyui/share/1c1f78b5fda348eb9d6fab9f45e9a238)有对应的 comfyui 工作流: https://malette.art/comfyui/share/1c1f78b5fda348eb9d6fab9f45e9a238
++   [还](https://malette.art/comfyui/share/1c1f78b5fda348eb9d6fab9f45e9a238)有对应的 `comfyui` 工作流: https://malette.art/comfyui/share/1c1f78b5fda348eb9d6fab9f45e9a238
 
 +   文章底部群友作品集
 
@@ -32,7 +33,7 @@
 
 ![](img/66f8e2c349766f358fa03494fb65e74e.png)
 
-但是，这些卡片需要用Claude才能制作。
+但是，这些卡片需要用`Claude`才能制作。
 
 作为一个AI爱好者，江树就在想：咱们国产AI行不行？经过5个小时的爆肝调试，我用阿里的通义AI成功复刻出了同样的效果！
 
@@ -62,9 +63,9 @@
 
 ![](img/5945f0d29687cde2c13972f3e81d6016.png)
 
-怎么样？是不是跟 Claude 的效果有得一拼？有群友还问我是不是PS的呢！
+怎么样？是不是跟`Claude`的效果有得一拼？有群友还问我是不是`PS`的呢！
 
-不过我可以骄傲地说：这全是通义AI直接生成的，一点都没PS！
+不过我可以骄傲地说：这全是通义AI直接生成的，一点都没`PS`！
 
 ![](img/6ba68b5a2ac29d5f5ebec797699f4d4f.png)
 
@@ -76,33 +77,33 @@
 
 ![](img/a9889b385c203fb5ff62a71f2dfae232.png)
 
-秘诀就藏在提示词（Prompt）的精心设计中。
+秘诀就藏在提示词（`Prompt`）的精心设计中。
 
 那么，究竟是怎么做到的呢？
 
-借助LangGPT的结构化提示词方法，我们能够轻松快速地搭建起这种生产级应用。
+借助`LangGPT`的结构化提示词方法，我们能够轻松快速地搭建起这种生产级应用。
 
-在这个过程中，我借鉴了刚哥（李继刚）的 Prompt，并根据通义AI的特性进行了一番改造优化。让我们来看看这个"魔法提示词"的关键：
+在这个过程中，我借鉴了刚哥（李继刚）的 `Prompt`，并根据通义AI的特性进行了一番改造优化。让我们来看看这个"魔法提示词"的关键：
 
-1．角色塑造：让AI化身为一位年轻、敢于批判现实、思考深邃且妙语连珠的新汉语老师。
+1. 角色塑造：让AI化身为一位年轻、敢于批判现实、思考深邃且妙语连珠的新汉语老师。
 
-2．文风传承：汲取奥斯卡·王尔德、鲁迅、林语堂等大师的精髓，专攻一针见血的隐喻和辛辣讽刺。
+2. 文风传承：汲取奥斯卡·王尔德、鲁迅、林语堂等大师的精髓，专攻一针见血的隐喻和辛辣讽刺。
 
-3．解读艺术：用一句话从独特视角解读词汇，直击本质，创作出令人拍案叫绝的金句。
+3. 解读艺术：用一句话从独特视角解读词汇，直击本质，创作出令人拍案叫绝的金句。
 
-4．视觉美学：精心设定字体、配色、布局等细节，打造赏心悦目的卡片设计。
+4. 视觉美学：精心设定字体、配色、布局等细节，打造赏心悦目的卡片设计。
 
-5．技术实现：指导AI直接输出完整的HTML代码，包括样式和内容，确保卡片样式的稳定性和美观度。
+5. 技术实现：指导AI直接输出完整的`HTML`代码，包括样式和内容，确保卡片样式的稳定性和美观度。
 
 除此之外，还有两个小技巧锦上添花：
 
-6．示例引导：提供代码范例，让通义AI在复用样式的同时，能够根据不同词语自适应配置出富有设计感的配色。
+6. 示例引导：提供代码范例，让通义AI在复用样式的同时，能够根据不同词语自适应配置出富有设计感的配色。
 
-7．精益求精：针对可能出现的问题，对提示词进行了微调，规避AI的潜在缺陷，以确保输出效果的稳定性。
+7. 精益求精：针对可能出现的问题，对提示词进行了微调，规避AI的潜在缺陷，以确保输出效果的稳定性。
 
 通过这套"配方"，我们不仅让AI理解了任务需求，更让它掌握了创作的精髓，从而能够持续输出高质量、风格一致的"汉语新解"卡片。
 
-提示词全文如下（**有点长，但好使！**）：
+提示词全文如下（有点长，但好使！）：
 
 ## 提示词
 
@@ -120,7 +121,7 @@
 
 ## 输出结果：
 1. 词汇解释
-2. 输出词语卡片（Html 代码）
+2. 输出词语卡片（`Html` 代码）
  - 整体设计合理使用留白，整体排版要有呼吸感
  - 设计原则：干净 简洁 纯色 典雅
  - 配色：下面的色系中随机选择一个[
@@ -148,161 +149,296 @@
     (英文翻译)
     (日文翻译)
     (解释：(按现代诗排版))
+```
 
 ## 结果示例：
+
 ```
 &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;汉语新解 - 金融杠杆&lt;/title&gt;
-    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-    &lt;style&gt;
-        :root {
-            /* 莫兰迪色系：使用柔和、低饱和度的颜色 */
-            --primary-color: #B6B5A7; /* 莫兰迪灰褐色，用于背景文字 */
-            --secondary-color: #9A8F8F; /* 莫兰迪灰棕色，用于标题背景 */
-            --accent-color: #C5B4A0; /* 莫兰迪淡棕色，用于强调元素 */
-            --background-color: #E8E3DE; /* 莫兰迪米色，用于页面背景 */
-            --text-color: #5B5B5B; /* 莫兰迪深灰色，用于主要文字 */
-            --light-text-color: #8C8C8C; /* 莫兰迪中灰色，用于次要文字 */
-            --divider-color: #D1CBC3; /* 莫兰迪浅灰色，用于分隔线 */
-        }
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--background-color); /* 使用莫兰迪米色作为页面背景 */
-            font-family: &#x27;Noto Sans SC&#x27;, sans-serif;
-            color: var(--text-color); /* 使用莫兰迪深灰色作为主要文字颜色 */
-        }
-        .card {
-            width: 300px;
-            height: 500px;
-            background-color: #F2EDE9; /* 莫兰迪浅米色，用于卡片背景 */
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            background-color: var(--secondary-color); /* 使用莫兰迪灰棕色作为标题背景 */
-            color: #F2EDE9; /* 浅色文字与深色背景形成对比 */
-            padding: 20px;
-            text-align: left;
-            position: relative;
-            z-index: 1;
-        }
-        h1 {
-            font-family: &#x27;Noto Serif SC&#x27;, serif;
-            font-size: 20px;
-            margin: 0;
-            font-weight: 700;
-        }
-        .content {
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .word {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        .word-main {
-            font-family: &#x27;Noto Serif SC&#x27;, serif;
-            font-size: 36px;
-            color: var(--text-color); /* 使用莫兰迪深灰色作为主要词汇颜色 */
-            margin-bottom: 10px;
-            position: relative;
-        }
-        .word-main::after {
-            content: &#x27;&#x27;;
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 50px;
-            height: 3px;
-            background-color: var(--accent-color); /* 使用莫兰迪淡棕色作为下划线 */
-        }
-        .word-sub {
-            font-size: 14px;
-            color: var(--light-text-color); /* 使用莫兰迪中灰色作为次要文字颜色 */
-            margin: 5px 0;
-        }
-        .divider {
-            width: 100%;
-            height: 1px;
-            background-color: var(--divider-color); /* 使用莫兰迪浅灰色作为分隔线 */
-            margin: 20px 0;
-        }
-        .explanation {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: left;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .quote {
-            position: relative;
-            padding-left: 20px;
-            border-left: 3px solid var(--accent-color); /* 使用莫兰迪淡棕色作为引用边框 */
-        }
-        .background-text {
-            position: absolute;
-            font-size: 150px;
-            color: rgba(182, 181, 167, 0.15); /* 使用莫兰迪灰褐色的透明版本作为背景文字 */
-            z-index: 0;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-weight: bold;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&quot;card&quot;&gt;
-        &lt;div class=&quot;header&quot;&gt;
-            &lt;h1&gt;汉语新解&lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;content&quot;&gt;
-            &lt;div class=&quot;word&quot;&gt;
-                &lt;div class=&quot;word-main&quot;&gt;金融杠杆&lt;/div&gt;
-                &lt;div class=&quot;word-sub&quot;&gt;Jīn Róng Gàng Gǎn&lt;/div&gt;
-                &lt;div class=&quot;word-sub&quot;&gt;Financial Leverage&lt;/div&gt;
-                &lt;div class=&quot;word-sub&quot;&gt;金融レバレッジ&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;explanation&quot;&gt;
-                &lt;div class=&quot;quote&quot;&gt;
-                    &lt;p&gt;
-                        借鸡生蛋，&lt;br&gt;
-                        只不过这蛋要是金的，&lt;br&gt;
-                        鸡得赶紧卖了还债。
-                    &lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;background-text&quot;&gt;杠杆&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-```
-## 注意：
-1. 分隔线与上下元素垂直间距相同，具有分割美学。
-2. 卡片(.card)不需要 padding ，允许子元素“汉语新解”的色块完全填充到边缘，具有设计感。
 
-## 初始行为： 
-输出&quot;说吧, 他们又用哪个词来忽悠你了?&quot;
+&lt;html lang=&quot;zh&quot;&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+    &lt;title&gt;汉语新解 - 金融杠杆&lt;/title&gt;
+
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;style&gt;
+
+        :root {
+
+            /* 莫兰迪色系：使用柔和、低饱和度的颜色 */
+
+            --primary-color: #B6B5A7; /* 莫兰迪灰褐色，用于背景文字 */
+
+            --secondary-color: #9A8F8F; /* 莫兰迪灰棕色，用于标题背景 */
+
+            --accent-color: #C5B4A0; /* 莫兰迪淡棕色，用于强调元素 */
+
+            --background-color: #E8E3DE; /* 莫兰迪米色，用于页面背景 */
+
+            --text-color: #5B5B5B; /* 莫兰迪深灰色，用于主要文字 */
+
+            --light-text-color: #8C8C8C; /* 莫兰迪中灰色，用于次要文字 */
+
+            --divider-color: #D1CBC3; /* 莫兰迪浅灰色，用于分隔线 */
+
+        }
+
+        body, html {
+
+            margin: 0;
+
+            padding: 0;
+
+            height: 100%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background-color: var(--background-color); /* 使用莫兰迪米色作为页面背景 */
+
+            font-family: &#x27;Noto Sans SC&#x27;, sans-serif;
+
+            color: var(--text-color); /* 使用莫兰迪深灰色作为主要文字颜色 */
+
+        }
+
+        .card {
+
+            width: 300px;
+
+            height: 500px;
+
+            background-color: #F2EDE9; /* 莫兰迪浅米色，用于卡片背景 */
+
+            border-radius: 20px;
+
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+
+            overflow: hidden;
+
+            position: relative;
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .header {
+
+            background-color: var(--secondary-color); /* 使用莫兰迪灰棕色作为标题背景 */
+
+            color: #F2EDE9; /* 浅色文字与深色背景形成对比 */
+
+            padding: 20px;
+
+            text-align: left;
+
+            position: relative;
+
+            z-index: 1;
+
+        }
+
+        h1 {
+
+            font-family: &#x27;Noto Serif SC&#x27;, serif;
+
+            font-size: 20px;
+
+            margin: 0;
+
+            font-weight: 700;
+
+        }
+
+        .content {
+
+            padding: 30px 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            flex-grow: 1;
+
+        }
+
+        .word {
+
+            text-align: left;
+
+            margin-bottom: 20px;
+
+        }
+
+        .word-main {
+
+            font-family: &#x27;Noto Serif SC&#x27;, serif;
+
+            font-size: 36px;
+
+            color: var(--text-color); /* 使用莫兰迪深灰色作为主要词汇颜色 */
+
+            margin-bottom: 10px;
+
+            position: relative;
+
+        }
+
+        .word-main::after {
+
+            content: &#x27;&#x27;;
+
+            position: absolute;
+
+            left: 0;
+
+            bottom: -5px;
+
+            width: 50px;
+
+            height: 3px;
+
+            background-color: var(--accent-color); /* 使用莫兰迪淡棕色作为下划线 */
+
+        }
+
+        .word-sub {
+
+            font-size: 14px;
+
+            color: var(--light-text-color); /* 使用莫兰迪中灰色作为次要文字颜色 */
+
+            margin: 5px 0;
+
+        }
+
+        .divider {
+
+            width: 100%;
+
+            height: 1px;
+
+            background-color: var(--divider-color); /* 使用莫兰迪浅灰色作为分隔线 */
+
+            margin: 20px 0;
+
+        }
+
+        .explanation {
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            text-align: left;
+
+            flex-grow: 1;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+        }
+
+        .quote {
+
+            position: relative;
+
+            padding-left: 20px;
+
+            border-left: 3px solid var(--accent-color); /* 使用莫兰迪淡棕色作为引用边框 */
+
+        }
+
+        .background-text {
+
+            position: absolute;
+
+            font-size: 150px;
+
+            color: rgba(182, 181, 167, 0.15); /* 使用莫兰迪灰褐色的透明版本作为背景文字 */
+
+            z-index: 0;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            font-weight: bold;
+
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+
+        &lt;div class=&quot;header&quot;&gt;
+
+            &lt;h1&gt;汉语新解&lt;/h1&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content&quot;&gt;
+
+            &lt;div class=&quot;word&quot;&gt;
 ```
+
+
+
+```html
+<div class="word-main">金融杠杆</div>
+<div class="word-sub">Jīn Róng Gàng Gǎn</div>
+<div class="word-sub">Financial Leverage</div>
+<div class="word-sub">金融レバレッジ</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="explanation">
+  <div class="quote">
+    <p>
+      借鸡生蛋，<br>
+      只不过这蛋要是金的，<br>
+      鸡得赶紧卖了还债。
+    </p>
+  </div>
+</div>
+
+</div>
+<div class="background-text">杠杆</div>
+</div>
+</body>
+</html>
+```
+
+## 注意
+
+1. 分隔线与上下元素垂直间距相同，具有分割美学。
+2. 卡片(`.card`)不需要 `padding` ，允许子元素“汉语新解”的色块完全填充到边缘，具有设计感。
+
+## 初始行为
+
+输出"说吧, 他们又用哪个词来忽悠你了?"
 
 有了这套提示词，只要给通义AI一个词，它就能自动生成一张精美的"汉语新解"卡片。
 
@@ -324,13 +460,13 @@
 
 ![](img/53eaabdbd1063a4e40b9c77ade92ef66.png)
 
-玩过之后，你会发现国产AI的能力其实一点不输国外。而且据说，通义AI团队已经在开发Artifacts功能了，到时候我们可能直接在对话界面就能看到生成的图片，更方便了！
+玩过之后，你会发现国产AI的能力其实一点不输国外。而且据说，通义AI团队已经在开发`Artifacts`功能了，到时候我们可能直接在对话界面就能看到生成的图片，更方便了！
 
 ## Prompt 超好玩
 
-最后，江树想说的是：AI工具日新月异，关键是要学会用。掌握了Prompt工程，你就能让AI成为你的得力助手，释放无限创意！
+最后，江树想说的是：AI工具日新月异，关键是要学会用。掌握了`Prompt`工程，你就能让AI成为你的得力助手，释放无限创意！
 
-江树和刚哥（李继刚）聊的："模型越强，Prompt 越好玩，可挖的上限越高！"
+江树和刚哥（李继刚）聊的："模型越强，`Prompt` 越好玩，可挖的上限越高！"
 
 ![](img/81bd9c5339091df6bef85351703c1911.png)
 
@@ -338,7 +474,7 @@
 
 ## 群友作品集
 
-群友好的作品筛选出来发👸号上！！！！
+群友好的作品筛选出来发👸号上！！！！！
 
 ![](img/80b8364b3e306b0dcae5443a9269da28.png)
 

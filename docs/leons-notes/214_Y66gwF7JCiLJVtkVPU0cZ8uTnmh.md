@@ -1,8 +1,9 @@
+
 # Steve Jobs: The Next Insanely Great Thing
 
 > 来源：[https://leonzhang.feishu.cn/docx/ONMydHXdeonFpaxCZDbc3kCsn5f](https://leonzhang.feishu.cn/docx/ONMydHXdeonFpaxCZDbc3kCsn5f)
 
-> 🔗 原文链接： h[ttps://www.wired.c](https://www.wired.com/1996/02/jobs-2/)om/1996/02/jobs-...
+> 🔗 原文链接：https://www.wired.com/1996/02/jobs-2/
 
 Steve Jobs has been right twice. The first time we got Apple. The second time we got NeXT. The Macintosh ruled. NeXT tanked. Still, Jobs was right both times. Although NeXT failed to sell its elegant and infamously buggy black box, Jobs's fundamental insight---that personal computers were destined to be connected to each other and live on networks---was just as accurate as his earlier prophecy that computers were destined to become personal appliances.
 
@@ -22,21 +23,25 @@ In the old days, Jobs was an evangelist for American education and worked hard t
 
 The new Steve Jobs scoffs at the naïve idealism of Web partisans who believe the new medium will turn every person into a publisher. The heart of the Web, he said, will be commerce, and the heart of commerce will be corporate America serving custom products to individual consumers. The implicit message of the Macintosh, as unforgettably expressed in the great "1984" commercial, was Power to the People. Jobs's vision of Web objects serves a different mandate: Give the People What They Want.
 
-Wired: **Th**e Macintosh computer set the tone for 10 years. Do you think the Web may be setting the tone today?
+## Interview
 
-Jobs: The desktop computer industry is dead. Innovation has virtually ceased. Microsoft dominates with very little innovation. That's over. Apple lost. The desktop market has entered the dark ages, and it's going to be in the dark ages for the next 10 years, or certainly for the rest of this decade.
+### Wired: The Macintosh and the Web
+
+**Wired:** The Macintosh computer set the tone for 10 years. Do you think the Web may be setting the tone today?
+
+**Jobs:** The desktop computer industry is dead. Innovation has virtually ceased. Microsoft dominates with very little innovation. That's over. Apple lost. The desktop market has entered the dark ages, and it's going to be in the dark ages for the next 10 years, or certainly for the rest of this decade.
 
 It's like when IBM drove a lot of innovation out of the computer industry before the microprocessor came along. Eventually, Microsoft will crumble because of complacency, and maybe some new things will grow. But until that happens, until there's some fundamental technology shift, it's just over.
 
 The most exciting things happening today are objects and the Web. The Web is exciting for two reasons. One, it's ubiquitous. There will be Web dial tone everywhere. And anything that's ubiquitous gets interesting. Two, I don't think Microsoft will figure out a way to own it. There's going to be a lot more innovation, and that will create a place where there isn't this dark cloud of dominance.
 
-**Why do you think the Web h**as sprouted so fast?
+### Why Has the Web Sprouted So Fast?
 
 One of the major reasons for the Web's proliferation so far is its simplicity. A lot of people want to make the Web more complicated. They want to put processing on the clients, they want to do this and that. I hope not too much of that happens too quickly.
 
 It's much like the old mainframe computing environment, where a Web browser is like a dumb terminal and the Web server is like the mainframe where all the processing's done. This simple model has had a profound impact by starting to become ubiquitous.
 
-**And objects?**
+### And Objects?
 
 When I went to Xerox PARC in 1979, I saw a very rudimentary graphical user interface. It wasn't complete. It wasn't quite right. But within 10 minutes, it was obvious that every computer in the world would work this way someday. And you could argue about the number of years it would take, and you could argue about who would be the winners and the losers, but I don't think you could argue that every computer in the world wouldn't eventually work this way.
 
@@ -44,15 +49,21 @@ Objects are the same way. Once you understand objects, it's clear that all softw
 
 Objects are just going to be the way all software is going to be written in five years or---pick a time. It's so compelling. It's so obvious. It's so much better that it's just going to happen.
 
-How will objects affect the Web?
+### How Will Objects Affect the Web?
 
 Think of all the people now bringing goods and services directly to customers through the Web. Every company that wants to vend its goods and services on the Web is going to have a great deal of custom-application software to write. You're not just going to be able to buy something off the shelf. You're going to have to hook the Web into your order-management systems, your collection systems. It's going to be an incredible amount of work.
 
 The number of applications that need to be written is growing exponentially. Unless we can find a way to write them in a tenth of the time, we're toast.
 
+
+
+# The Web, Business Opportunities, and Rethinking Revolution
+
+## The Web Landscape and Business Opportunities
+
 The end result of objects---this repackaging of software---is that we can develop applications with only about 10 to 20 percent of the software development required any other way.
 
-**We see how people won the battle of the desktop **by owning the operating system. How does one win on the Web?
+We see how people won the battle of the desktop by owning the operating system. How does one win on the Web?
 
 There are three parts to the Web. One is the client, the second is the pipes, and the third is the servers.
 
@@ -64,7 +75,7 @@ As for the server market, companies like Sun are doing a nice business selling s
 
 Our company decided that people are going to layer stuff above this very simple Web server to help others build Web applications, which is where the bottleneck is right now. There's some real opportunity there for making major contributions and a lot of money. That's what WebObjects is all about.
 
-**What other opportun**ities are out there?
+### What other opportunities are out there?
 
 Who do you think will be the main beneficiary of the Web? Who wins the most?
 
@@ -80,11 +91,11 @@ You mean publishing?
 
 It's more than publishing. It's commerce. People are going to stop going to a lot of stores. And they're going to buy stuff over the Web!
 
-**What about the Web as the** great democratizer?
+### What about the Web as the great democratizer?
 
 If you look at things I've done in my life, they have an element of democratizing. The Web is an incredible democratizer. A small company can look as large as a big company and be as accessible as a big company on the Web. Big companies spend hundreds of millions of dollars building their distribution channels. And the Web is going to completely neutralize that advantage.
 
-**Wh**at will the economic landscape look like after that democratic process has gone through another cycle?
+### What will the economic landscape look like after that democratic process has gone through another cycle?
 
 The Web is not going to change the world, certainly not in the next 10 years. It's going to augment the world. And once you're in this Web-augmented space, you're going to see that democratization takes place.
 
@@ -92,11 +103,11 @@ The Web's not going to capture everybody. If the Web got up to 10 percent of the
 
 ## Rethinking Revolution
 
-**W**hat's the biggest surprise this technology will deliver?
+### What's the biggest surprise this technology will deliver?
 
 The problem is I'm older now, I'm 40 years old, and this stuff doesn't change the world. It really doesn't.
 
-**That's going to br**eak people's hearts.
+**That's going to break people's hearts.**
 
 I'm sorry, it's true. Having children really changes your view on these things. We're born, we live for a brief instant, and we die. It's been happening for a long time. Technology is not changing it much---if at all.
 
@@ -106,23 +117,23 @@ The Web is going to be very important. Is it going to be a life-changing event f
 
 It's certainly not going to be like the first time somebody saw a television. It's certainly not going to be as profound as when someone in Nebraska first heard a radio broadcast. It's not going to be that profound.
 
-**Then how will the Web** impact our society?
+### Then how will the Web impact our society?
 
-We live in an information economy, but I don't believe we live in an information society . People are thinking less than they used to. It's primarily because of television. People are reading less and they're certainly thinking less. So, I don't see most people using the Web to get more information. We're already in information overload. No matter how much information the Web can dish out, most people get far more information than they can assimilate anyway.
+We live in an information economy, but I don't believe we live in an information society. People are thinking less than they used to. It's primarily because of television. People are reading less and they're certainly thinking less. So, I don't see most people using the Web to get more information. We're already in information overload. No matter how much information the Web can dish out, most people get far more information than they can assimilate anyway.
 
 The problem is television?
 
 When you're young, you look at television and think, There's a conspiracy. The networks have conspired to dumb us down. But when you get a little older, you realize that's not true. The networks are in business to give people exactly what they want. That's a far more depressing thought. Conspiracy is optimistic! You can shoot the bastards! We can have a revolution! But the networks are really in business to give people what they want. It's the truth.
 
-**S**o Steve Jobs is telling us things are going to continue to get worse.
+### So Steve Jobs is telling us things are going to continue to get worse.
 
 They are getting worse! Everybody knows that they're getting worse! Don't you think they're getting worse?
 
-**I do, **but I was hoping I could come here and find out how they were going to get better. Do you really believe that the world is getting worse? Or do you have a feeling that the things you're involved with are making the world better?
+I do, but I was hoping I could come here and find out how they were going to get better. Do you really believe that the world is getting worse? Or do you have a feeling that the things you're involved with are making the world better?
 
 No. The world's getting worse. It has gotten worse for the last 15 years or so. Definitely. For two reasons. On a global scale, the population is increasing dramatically and all our structures, from ecological to economic to political, just cannot deal with it. And in this country, we seem to have fewer smart people in government, and people don't seem to be paying as much attention to the important decisions we have to make.
 
-**B**ut you seem very optimistic about the potential for change.
+### But you seem very optimistic about the potential for change.
 
 I'm an optimist in the sense that I believe humans are noble and honorable, and some of them are really smart. I have a very optimistic view of individuals. As individuals, people are inherently good. I have a somewhat more pessimistic view of people in groups. And I remain extremely concerned when I see what's happening in our country, which is in many ways the luckiest place in the world. We don't seem to be excited about making our country a better place for our kids.
 
@@ -130,7 +141,9 @@ The people who built Silicon Valley were engineers. They learned business, they 
 
 I believe that people with an engineering point of view as a basic foundation are in a pretty good position to jump in and solve some of these problems. But in society, it's not working. Those people are not attracted to the political process. And why would somebody be?
 
-**Could technology help by **improving education?
+### Could technology help by improving education?
+
+
 
 I used to think that technology could help education. I've probably spearheaded giving away more computer equipment to schools than anybody else on the planet. But I've had to come to the inevitable conclusion that the problem is not one that technology can hope to solve. What's wrong with education cannot be fixed with technology. No amount of technology will make a dent.
 
@@ -152,11 +165,11 @@ It's not as simple as you think when you're in your 20s---that technology's goin
 
 ## What's good for business is good for the Web
 
-**If yo**u go back five years, the Web was hardly on anybody's horizon. Maybe even three years ago, it wasn't really being taken seriously by many people. Why is the sudden rise of the Web so surprising?
+If you go back five years, the Web was hardly on anybody's horizon. Maybe even three years ago, it wasn't really being taken seriously by many people. Why is the sudden rise of the Web so surprising?
 
 Isn't it great? That's exactly what's not happening in the desktop market.
 
-**W**hy was everyone, including NeXT, surprised, though?
+Why was everyone, including NeXT, surprised, though?
 
 It's a little like the telephone. When you have two telephones, it's not very interesting. And three is not very interesting. And four. And, well, a hundred telephones perhaps becomes slightly interesting. A thousand, a little more. It's probably not until you get to around ten thousand telephones that it really gets interesting.
 
@@ -166,7 +179,7 @@ The Web reminds me of the early days of the PC industry. No one really knows any
 
 There's a phrase in Buddhism,"Beginner's mind." It's wonderful to have a beginner's mind.
 
-**Earl**ier, you seemed to say there's a natural affinity between the Web and objects. That these two things are going to come together and make something very new, right?
+Earlier, you seemed to say there's a natural affinity between the Web and objects. That these two things are going to come together and make something very new, right?
 
 Let's try this another way. What might you want to do on a Web server? We can think of four things:
 
@@ -180,13 +193,15 @@ Last is internal Web sites. Rather than the Internet, it's intranet. Rather than
 
 Three of those four functions of the Web require custom applications. And that's what we do really well with objects. Our new product, WebObjects, allows you to write Web applications 10 times faster.
 
-**How does the Web** affect the economy?
+### How does the Web affect the economy?
 
 We live in an information economy. The problem is that information's usually impossible to get, at least in the right place, at the right time.
 
 The reason Federal Express won over its competitors was its package-tracking system. For the company to bring that package-tracking system onto the Web is phenomenal. I use it all the time to track my packages. It's incredibly great. Incredibly reassuring. And getting that information out of most companies is usually impossible.
 
 But it's also incredibly difficult to give information. Take auto dealerships. So much money is spent on inventory---billions and billions of dollars. Inventory is not a good thing. Inventory ties up a ton of cash, it's open to vandalism, it becomes obsolete. It takes a tremendous amount of time to manage. And, usually, the car you want, in the color you want, isn't there anyway, so they've got to horse-trade around. Wouldn't it be nice to get rid of all that inventory? Just have one white car to drive and maybe a laserdisc so you can look at the other colors. Then you order your car and you get it in a week.
+
+
 
 Today a dealer says, "We can't get your car in a week. It takes three months." And you say, "Now wait a minute, I want to order a pink Cadillac with purple leather seats. Why can't I get that in a week?" And he says, "We gotta make it." And you say, "Are you making Cadillacs today? Why can't you paint a pink one today?" And he says, "We didn't know you wanted a pink one." And you say, "OK. I'm going to tell you I want a pink one now." And he says, "We don't have any pink paint. Our paint supplier needs some lead time on that paint.' And you say, "Is your paint supplier making paint today?" And he says, "Yeah, but by the time we tell him, it takes two weeks." And you say, "What about leather seats?" And he says, "God, purple leather. It'll take three months to get that."
 
@@ -264,6 +279,10 @@ No, it was sort of an algorithm that got set in motion when everyone's self-inte
 
 **Is **the desktop metaphor going to continue to dominate how we relate to computers, or is there some other metaphor you like better?
 
+
+
+# Design and Metaphor
+
 To have a new metaphor, you really need new issues. The desktop metaphor was invented because one, you were a stand-alone device, and two, you had to manage your own storage. That's a very big thing in a desktop world. And that may go away. You may not have to manage your own storage. You may not store much before too long.
 
 I don't store anything anymore, really. I use a lot of e-mail and the Web, and with both of those I don't have to ever manage storage. As a matter of fact, my favorite way of reminding myself to do something is to send myself e-mail. That's my storage.
@@ -272,7 +291,7 @@ The minute that I don't have to manage my own storage, and the minute I live pri
 
 ## GrokKing design
 
-**You have a reputation for making well-designed products. Why ar**en't more products made with the aesthetics of great design?
+**You have a reputation for making well-designed products. Why aren't** more products made with the aesthetics of great design?
 
 Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works. The design of the Mac wasn't what it looked like, although that was part of it. Primarily, it was how it worked. To design something really well, you have to get it. You have to really grok what it's all about. It takes a passionate commitment to really thoroughly understand something, chew it up, not just quickly swallow it. Most people don't take the time to do that.
 
@@ -280,7 +299,7 @@ Creativity is just connecting things. When you ask creative people how they did 
 
 Unfortunately, that's too rare a commodity. A lot of people in our industry haven't had very diverse experiences. So they don't have enough dots to connect, and they end up with very linear solutions without a broad perspective on the problem. The broader one's understanding of the human experience, the better design we will have.
 
-**I**s there anything well designed today that inspires you?
+**Is there anything well designed today that inspires you?**
 
 Design is not limited to fancy new gadgets. Our family just bought a new washing machine and dryer. We didn't have a very good one so we spent a little time looking at them. It turns out that the Americans make washers and dryers all wrong. The Europeans make them much better---but they take twice as long to do clothes! It turns out that they wash them with about a quarter as much water and your clothes end up with a lot less detergent on them. Most important, they don't trash your clothes. They use a lot less soap, a lot less water, but they come out much cleaner, much softer, and they last a lot longer.
 

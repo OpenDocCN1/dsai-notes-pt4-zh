@@ -1,3 +1,4 @@
+
 # 场景8：人物
 
 > 来源：[https://docs.feishu.cn/docx/CSrnd47KRo7roAxArY0cOHahnkc](https://docs.feishu.cn/docx/CSrnd47KRo7roAxArY0cOHahnkc)
@@ -16,11 +17,9 @@
 
 做衣服类电商的朋友可能会比较需要这个功能：
 
-1.  用 AI 生成一个虚拟人
-
-1.  然后将货物照片（比如某件衣服）传给 AI
-
-1.  AI 将虚拟人和货物的照片融合在一起
+1. 用 AI 生成一个虚拟人
+2. 然后将货物照片（比如某件衣服）传给 AI
+3. AI 将虚拟人和货物的照片融合在一起
 
 坦率说来，我觉得 Midjourney 应该是可以的，但目前的效果还不太好，要想实现这个需求，只需要用到前面介绍的技巧九里提到的 blend 功能，详细方法就不在这赘述了，大致就是我将商品图和人物图用 blend 功能融合了下：
 
@@ -38,7 +37,7 @@
 
 这个算是名人照片的分支玩法，最近大家应该看到过很多类似的照片，其实 prompt 很简单，主体和背景大家用翻译软件搞搞就行：
 
-|  | **Prompt** | **解释** |
+| | Prompt | 解释 |
 | --- | --- | --- |
 | 类型是什么？ | photography | 照片 |
 | 主体是什么？ | a group of Chinese people gathered around Darth Vader | 一群中国人在围观达斯维达 |
@@ -83,7 +82,7 @@ Vito Corleone sitting on a chair
 
 所以我想在本章重点介绍下，如何让 Midjourney 生成更多样的人体。
 
-**方法一：Slider 方法**
+### 方法一：Slider 方法
 
 在上一章，我介绍了增加权重的方法，这个方法还可以帮助你生成不同体型的人物，以下是 Midjourney 官方社区的案例：
 
@@ -95,16 +94,13 @@ Plus-sized ginger female dressed in bohemian vest, maxi skirt, espadrilles, walk
 
 ![](img/9b084729340faf1499b275dc3059f8a3.png)
 
-**方法二：直接描述**
+### 方法二：直接描述
 
 Midjourney 是知道一些多样性的词语的，比如：
 
-+   blind：失明
-
-+   deaf：聋
-
-+   cerebral palsy：小儿麻痹
-
-+   accessibility：行动不便
++ blind：失明
++ deaf：聋
++ cerebral palsy：小儿麻痹
++ accessibility：行动不便
 
 ![](img/439f1667a6b413c2b0419f97a642f0e4.png)

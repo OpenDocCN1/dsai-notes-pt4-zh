@@ -1,8 +1,7 @@
+
 # 为什么“Vary Region”功能不起作用❓
 
 > 来源：[https://my.feishu.cn/docx/JDVzdM2JLo3qjqxy7QKcA9Ydn5c](https://my.feishu.cn/docx/JDVzdM2JLo3qjqxy7QKcA9Ydn5c)
-
-为什么“Vary Region”功能不起作用❓
 
 有几个原因：
 
@@ -14,6 +13,6 @@
 
 ![](img/4c78d6cc1533b2c6c90e2c66720d7982.png)
 
-③当你在提示中进行更改时，保留版本参数（例如，--v 6）是很重要的。删除此参数可能导致图像生成不正确或失败。
+③当你在提示中进行更改时，保留版本参数（例如，`--v 6`）是很重要的。删除此参数可能导致图像生成不正确或失败。
 
 ![](img/46e541096607aae4fd970a18519b60f0.png)

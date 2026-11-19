@@ -1,3 +1,4 @@
+
 # NO.09👉一键制作辞藻华丽的AI
 
 > 来源：[https://my.feishu.cn/docx/POU1dgIdlofkMhxUptCc6q9dnAe](https://my.feishu.cn/docx/POU1dgIdlofkMhxUptCc6q9dnAe)
@@ -20,6 +21,6 @@ GPT4效果
 
 用的好了你甚至可以做一个情感博主！
 
-💖情感指令：use temperature of 2
+💖情感指令：`use temperature of 2`
 
 放在每次对话的文末就可以生效✔

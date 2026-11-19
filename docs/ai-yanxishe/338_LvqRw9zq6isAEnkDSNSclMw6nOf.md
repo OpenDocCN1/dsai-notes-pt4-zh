@@ -1,26 +1,27 @@
+
 # 视频号暴力起号
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/AJXldokVIo2i0oxfhf7cIpaDnPd](https://aiyanxishe.feishu.cn/docx/AJXldokVIo2i0oxfhf7cIpaDnPd)
 
-# 竞品调研
+## 竞品调研
 
-## 数据分析工具
+### 数据分析工具
 
-每个视频、每场直播背后都对应着数据通过对数据的分析能够快速找到问题，找到应对方法解决问题。所以数据分析相当重要，可以借助一些专业的分析平台，提升效率。
+每个视频、每场直播背后都对应着数据，通过对数据的分析能够快速找到问题，找到应对方法解决问题。所以数据分析相当重要，可以借助一些专业的分析平台，提升效率。
 
 目标：找到30个精准竞标对手，筛选50条优质内容
 
-飞瓜数据:https://www.feigua.cn/
+飞瓜数据：https://www.feigua.cn/
 
-友望:http://www.youwant.cn/
+友望：http://www.youwant.cn/
 
-新抖:https://xd.newrank.cn/
+新抖：https://xd.newrank.cn/
 
-蝉妈妈数据:https://www.chanmama.com/
+蝉妈妈数据：https://www.chanmama.com/
 
 西瓜指数：https://data.xiguaji.com/
 
-kolrank https://www.kolrank.com/
+kolrank：https://www.kolrank.com/
 
 ![](img/e2ad3e3c72889778c6381f5c8a607600.png)
 
@@ -44,9 +45,9 @@ kolrank https://www.kolrank.com/
 
 垂类爆款短视频素材收集
 
-| **账号名字** | **视频链接** | **推荐理由** | **来自平台** |  |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| **账号名字** | **视频链接** | **推荐理由** | **来自平台** |
+| --- | --- | --- | --- |
+|  |  |  |  |
+|  |  |  |  |
 
 内容定位及素材库搭建：

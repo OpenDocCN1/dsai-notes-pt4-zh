@@ -1,3 +1,4 @@
+
 # 【第5期】ControlNet
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/N1XWdq6xnovApSxBQd4cuNgHnof](https://xuqiwei1986.feishu.cn/docx/N1XWdq6xnovApSxBQd4cuNgHnof)
@@ -16,33 +17,33 @@
 
 关键词和Lora我们已经讲过了，这节课我们就讲SD里最强大的功能——ControlNet
 
-# 一、Controlnet有什么用
+## 一、Controlnet有什么用
 
-## 1.给老照片上色
+### 1.给老照片上色
 
 ![](img/7370ac398d4255b9be653ac21e609ca4.png)
 
 ![](img/c4940b32d2fe1cbdbd27d5042b860c39.png)
 
-## 2.给线稿上色
+### 2.给线稿上色
 
 ![](img/64ea2bea8b0a6fef6dcb329fb5c71a59.png)
 
 ![](img/81ce7030a621b42c5d20e23f6917dfba.png)
 
-## 3.控制人物姿势
+### 3.控制人物姿势
 
 ![](img/54bd7779a4dba1812243ee89b7828d96.png)
 
 ![](img/32c9277c80c5318761cecef089943e82.png)
 
-## 4.让照片动起来
+### 4.让照片动起来
 
 ![](img/b269261d9ec417882f3f9021791224ea.png)
 
 ![](img/831300a43f5bd38f72b46336873ff1a2.png)
 
-## 5.有趣玩法
+### 5.有趣玩法
 
 可以生成酷炫的赛博机车照、真人漫改
 
@@ -66,7 +67,7 @@
 
 controlnet好玩的地方还有很多很多，例如恢复照片画质、制作艺术二维码等等等等
 
-# 二、controlnet是什么
+## 二、controlnet是什么
 
 AI绘画最终要实现的目标——让出的图与我们脑海里想象的画面一致
 
@@ -92,7 +93,7 @@ ControNet的作用是精细化控制整体图片的元素——主体、背景�
 
 而我们这篇文章主要讲的是ControlNet的用法，把17种模型都给你演示一遍，让你知道每一种模型有什么用，应该怎么用，从而真正掌握ControlNet
 
-**ControlNet就是你提供一张图片，**然后选择一种采集方式，去生成一张新的图片
+ControlNet就是你提供一张图片，然后选择一种采集方式，去生成一张新的图片
 
 比如这张照片
 
@@ -128,7 +129,7 @@ ControNet的作用是精细化控制整体图片的元素——主体、背景�
 
 3.controlnet的分类讲解
 
-# 三、安装controlnet
+## 三、安装controlnet
 
 一般通过整合包安装的Stable Diffusion，都已经装了有ControlNet这个插件
 
@@ -148,11 +149,11 @@ ControNet的作用是精细化控制整体图片的元素——主体、背景�
 
 大家只要下载下来，放在对应的文件夹就可以
 
-存放位置：SD文件夹>models>controlnet
+存放位置：`SD文件夹>models>controlnet`
 
 ![](img/a6069ae62212b5504877159cec7f6d2d.png)
 
-# 四、controlnet的具体使用流程
+## 四、controlnet的具体使用流程
 
 Controlnet里面总共有17个模型，理论上来说就可以有17种用法
 
@@ -172,23 +173,23 @@ Controlnet里面总共有17个模型，理论上来说就可以有17种用法
 
 这里我们可以分为两个步骤：
 
-+   1.SD基础设置
++ 1.SD基础设置
 
-+   2.controlnet的设置
++ 2.controlnet的设置
 
-## 1.SD基础设置
+### 1.SD基础设置
 
 SD的基础设置就是我们前面课程所讲的内容
 
 包括选大模型、写关键词、参数设置、如果是想生成好看的真人图片，还可以加上Lora
 
-### 01.选大模型
+#### 01.选大模型
 
 首先是选一个大模型，我这里选的是一个写实的大模型
 
 ![](img/698780db5798b859c69a5471c4fbedd1.png)
 
-### 02.写关键词
+#### 02.写关键词
 
 关键词就是按照我们第二节课的关键词模板去写，再加上Lora模型
 
@@ -196,7 +197,7 @@ SD的基础设置就是我们前面课程所讲的内容
 
 ![](img/01955b88eaa7684eb34bf10bdd57727b.png)
 
-### 03.参数设置
+#### 03.参数设置
 
 迭代步数35步
 
@@ -208,13 +209,13 @@ SD的基础设置就是我们前面课程所讲的内容
 
 这样SD的基础设置就完成了，接下来就到controlnet的设置
 
-## 2.controlnet的使用
+### 2.controlnet的使用
 
 controlnet的使用方法就只有两步
 
-+   上传图片
++ 上传图片
 
-+   选模型
++ 选模型
 
 滑到SD最下面打开controlnet的面板，在空白的地方上传参考照片
 
@@ -238,7 +239,7 @@ controlnet的使用方法就只有两步
 
 现在我们要控制的是人物的姿势
 
-那就选openpose
+那就选`openpose`
 
 下面就会自动加载预处理器和模型
 
@@ -266,11 +267,11 @@ controlnet是辅助我们生成想要的照片的一个工具
 
 我们的大模型和关键词也非常关键
 
-要换照片风格一定要记得**换大模型**
+要换照片风格一定要记得换大模型
 
 接下来我们就看一下每一种预处理器和模型都有什么用
 
-# 三、controlnet的分类讲解
+## 五、controlnet的分类讲解
 
 我把17种模型，按照对照片的不同约束类型，分成了以下几类
 
@@ -278,11 +279,11 @@ controlnet是辅助我们生成想要的照片的一个工具
 
 现在我们就按照分类顺序，看看17种模型具体能干些什么
 
-## 1.姿势约束
+### 1.姿势约束
 
-这一节讲的是openpose模型，主要控制生成照片人物的姿势
+这一节讲的是`openpose`模型，主要控制生成照片人物的姿势
 
-这里的姿势有**身体姿势、表情、手指形态**三个
+这里的姿势有身体姿势、表情、手指形态三个
 
 可以只控制某一个或者两个，也可以三个一起控制
 
@@ -298,7 +299,7 @@ controlnet是辅助我们生成想要的照片的一个工具
 
 ![](img/f1de2a07a78c1b82fb3a352865fed549.png)
 
-### 01.控制身体姿势
+#### 01.控制身体姿势
 
 一般情况下，在SD里面生成一张照片，照片人物的动作都是随机的
 
@@ -314,7 +315,7 @@ controlnet是辅助我们生成想要的照片的一个工具
 
 controlnet的模型选择：
 
-预处理器：openpose        模型：openpose
+预处理器：`openpose` 模型：`openpose`
 
 ![](img/a9ef8b3b07fa57b5ef2778bae582478e.png)
 
@@ -328,7 +329,7 @@ controlnet的模型选择：
 
 ![](img/d040ce298c3d86e59739093c2e280361.png)
 
-### 02.控制人物姿势和手指
+#### 02.控制人物姿势和手指
 
 除了识别人物整体的姿势以外，还可以识别手指的骨骼
 
@@ -344,7 +345,7 @@ controlnet的模型选择：
 
 controlnet的模型选择：
 
-**预处理器：openpose_ha**nd       模型：openpose
+预处理器：`openpose_hand` 模型：`openpose`
 
 ![](img/b570ec03b4f329f8f8ec718e7a6222bf.png)
 
@@ -352,7 +353,7 @@ controlnet的模型选择：
 
 ![](img/6267795c9fbc2041e2194d427e0ff86a.png)
 
-### 03.控制人物表情
+#### 03.控制人物表情
 
 openpose除了控制人物的姿势，还可以控制人物的表情
 
@@ -370,7 +371,7 @@ openpose除了控制人物的姿势，还可以控制人物的表情
 
 controlnet的模型选择：
 
-**预处理器：openpose_faceon**ly       模型：openpose
+预处理器：`openpose_faceonly` 模型：`openpose`
 
 ![](img/9ce9842a032ba1b083845972af8d4b7f.png)
 
@@ -388,7 +389,7 @@ controlnet的模型选择：
 
 ![](img/9722299ba94acf3f51e97ae3e1e016ff.png)
 
-### 04.全方面控制人物姿势
+#### 04.全方面控制人物姿势
 
 这里我们是把人物的整体姿势、手指、表情都复刻了
 
@@ -398,7 +399,7 @@ controlnet的模型选择：
 
 controlnet的模型选择：
 
-**预处理器：openpose_fu**ll       模型：openpose
+预处理器：`openpose_full` 模型：`openpose`
 
 ![](img/ba208b0a4e8e1afdf7df212494c8b040.png)
 
@@ -406,7 +407,7 @@ controlnet的模型选择：
 
 ![](img/c2f231695801f217ee262d8c4ef1f815.png)
 
-### 05.自由编辑火柴人
+#### 05.自由编辑火柴人
 
 有时候预处理器处理出来的火柴人可能会不太准确
 
@@ -416,15 +417,15 @@ controlnet的模型选择：
 
 ![](img/f25dfa93b9436bcba1a819fca3427be0.png)
 
-#### 安装插件的方法：
+##### 安装插件的方法：
 
 ①在“扩展”里点击“可下载”页面
 
 ②点击“加载扩展列表”
 
-③在搜索框里输入“openpose”
+③在搜索框里输入`openpose`
 
-④安装“sd-webui-openpose-editor”
+④安装`sd-webui-openpose-editor`
 
 ![](img/ffb13a482997f2b9ec552f89bcacf340.png)
 
@@ -436,7 +437,7 @@ controlnet的模型选择：
 
 这样插件就安装好啦！
 
-#### 插件的使用方法：
+##### 插件的使用方法：
 
 接着我们回到controlnet里面
 
@@ -458,7 +459,7 @@ controlnet的模型选择：
 
 ![](img/f46872f8e48d02705b0f10c77ac4e459.png)
 
-### 06.小结
+#### 06.小结
 
 识别人体姿势有五个预处理器，在这里有一些我自己选预处理器的小技巧
 
@@ -472,19 +473,19 @@ controlnet的模型选择：
 
 ![](img/1caefd09d73cea218092255ac3aeaffb.png)
 
-## 2.线条约束
+### 2.线条约束
 
-这一节会讲到lineart、canny、softedge、scribble、mlsd五种模型
+这一节会讲到`lineart`、`canny`、`softedge`、`scribble`、`mlsd`五种模型
 
 它们都是用来提取画面的线稿，再用线稿生成新的照片
 
 ![](img/2c02546fb24c5f8f145feb7e03a812a7.png)
 
-### 01.lineart
+#### 01.lineart
 
-lineart是一个专门提取线稿的模型，可以针对不同类型的图片进行不同的处理
+`lineart`是一个专门提取线稿的模型，可以针对不同类型的图片进行不同的处理
 
-点击选择“Lineart”，预处理器和模型就会自动切换
+点击选择`Lineart`，预处理器和模型就会自动切换
 
 ![](img/6501d86414d8f996b7b465ffdcf7635c.png)
 
@@ -492,17 +493,17 @@ lineart是一个专门提取线稿的模型，可以针对不同类型的图片�
 
 里面的各种模型可以识别不同图片的线稿
 
-> 动漫：lineart_anime 或 lineart_anime_denoise
+> 动漫：`lineart_anime` 或 `lineart_anime_denoise`
 
-> 素描:lineart_coarse
+> 素描:`lineart_coarse`
 
-> 写实：lineart_realistic
+> 写实：`lineart_realistic`
 
-> 黑白线稿：lineart_standard
+> 黑白线稿：`lineart_standard`
 
 ![](img/1f6f00416e5d3d1db4ba79b57aa93398.png)
 
-#### ①动漫照片
+##### ①动漫照片
 
 提取动漫的线稿，再重新上色
 
@@ -510,47 +511,53 @@ lineart是一个专门提取线稿的模型，可以针对不同类型的图片�
 
 ![](img/edb01ba6bb584db6770f69e356d3da68.png)
 
-首先处理动漫照片记得要换**二次元的大模型**
+首先处理动漫照片记得要换二次元的大模型
 
 然后关键词可以写一些质量词，然后描述一下照片里面有什么东西
 
 另外需要注意的是，图片的分辨率大小要设置的和原先的比例一样
 
+
+
+# ControlNet 各控制模型使用指南
+
 不然照片会自动裁剪放大
 
-controlnet的模型选择：
+## lineart 系列
 
-**预**处理器：lineart_anime 或 lineart_anime_denoise           模型：lineart
+`controlnet`的模型选择：
+
+预处理器：`lineart_anime` 或 `lineart_anime_denoise` 模型：`lineart`
 
 ![](img/0adbf7e29d151dfb28bd6ac8e88d86e8.png)
 
 可以看一下两个预处理器出来的效果，选一个自己比较喜欢的就可以
 
-**lineart_anime**
+### `lineart_anime`
 
 ![](img/998349bdbb4c158ddb06e0fa4e40d2bd.png)
 
 ![](img/9d66227af0517616bf6873596674669e.png)
 
-lineart_anime_denoise
+### `lineart_anime_denoise`
 
 ![](img/4d1bd4751d279e8fd1de7a616be6bd13.png)
 
 ![](img/9ced719364b4647c9a0293fc3744aa24.png)
 
-#### ②素描照片
+### ②素描照片
 
 ![](img/1bd2fbc65078106d55771dc0f2708138.png)
 
 ![](img/ea868bf1effa8ae9c05f073fd4edf68b.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：lineart_coarse **          模型：lineart
+预处理器：`lineart_coarse` 模型：`lineart`
 
 ![](img/73e23585243b982b1f0c2b97afe4571a.png)
 
-#### ③写实照片
+### ③写实照片
 
 可以上传自己的照片，提取出线稿，然后生成自己的二次元头像
 
@@ -560,13 +567,13 @@ controlnet的模型选择：
 
 要生成二次元照片，一定要先换成合适的大模型
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：lineart_realistic **          模型：lineart
+预处理器：`lineart_realistic` 模型：`lineart`
 
 因为真人照片换成二次元在五官比例上会不太匹配
 
-这时候我们就要适当把controlnet的权重降低到0.6左右
+这时候我们就要适当把`controlnet`的权重降低到0.6左右
 
 ![](img/6782df4b772fd05881c7646d3e175300.png)
 
@@ -576,7 +583,7 @@ controlnet的模型选择：
 
 ![](img/09a3d264bdac178c8e6a2796c3f298c0.png)
 
-#### ④黑白线稿
+### ④黑白线稿
 
 ![](img/17e4347d31e64976a98a0c8cda09e9dd.png)
 
@@ -584,15 +591,15 @@ controlnet的模型选择：
 
 ![](img/311abb1eb2f8daca025bf79aa52a0949.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：lineart_standar**d         模型：lineart
+预处理器：`lineart_standard` 模型：`lineart`
 
 ![](img/a4d2aefb92bea0237609ca99f4754538.png)
 
-### 02.canny
+## 02.canny
 
-canny可以识别到画面的最多的线条，这样就可以最大程度的还原照片
+`canny`可以识别到画面的最多的线条，这样就可以最大程度的还原照片
 
 但是比较适合二次元照片
 
@@ -600,9 +607,9 @@ canny可以识别到画面的最多的线条，这样就可以最大程度的还
 
 ![](img/58d90c96e72a52d41e544e51efd0ee88.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：canny       模型：canny
+预处理器：`canny` 模型：`canny`
 
 ![](img/a96dc4d145765766fa5e20aeffe6817e.png)
 
@@ -610,17 +617,17 @@ controlnet的模型选择：
 
 ![](img/135f174fbc0d523d897d905b467974b7.png)
 
-### 03.softedge
+## 03.softedge
 
-softedge只能识别图片大概的轮廓细节，线条比较柔和，这样给SD发挥的空间就比较大
+`softedge`只能识别图片大概的轮廓细节，线条比较柔和，这样给`SD`发挥的空间就比较大
 
 ![](img/4889278c669df37041634e6d181640d4.png)
 
 ![](img/c6e3d90f9e8b0c1d5479f3f184af9103.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：softedge_pidien**t        模型：softedge
+预处理器：`softedge_pidient` 模型：`softedge`
 
 ![](img/53548b1a0df65c6ece73d64dc51c97b8.png)
 
@@ -628,7 +635,7 @@ controlnet的模型选择：
 
 ![](img/d5a43bf2ac23733f831edd862e337830.png)
 
-### 04.mlsd
+## 04.mlsd
 
 这个模型只能识别直线，所以只适合拿来做房子的设计
 
@@ -636,9 +643,9 @@ controlnet的模型选择：
 
 ![](img/f80afdb76574f722b4000ba30478b25d.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：mlsd         模型：mlsd
+预处理器：`mlsd` 模型：`mlsd`
 
 ![](img/1f7fa8e827cd95ead09d29840d869db0.png)
 
@@ -648,7 +655,7 @@ controlnet的模型选择：
 
 ![](img/606e67565faf6346b8006127ea7b84e8.png)
 
-### 05.scribble
+## 05.scribble
 
 这一个功能和图生图的涂鸦功能一样
 
@@ -658,23 +665,23 @@ controlnet的模型选择：
 
 ![](img/b9ec83bfba89d4db1ea7918fdc297899.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：invert         模型：scribble
+预处理器：`invert` 模型：`scribble`
 
 ![](img/4119cff5e291372311944972e7033947.png)
 
-### 06.小结
+## 06.小结
 
 识别线稿的模型有很多，如果你不知道什么情况下用哪个好，可以参考一下我的选择
 
-1.想最大程度还原照片：canny
+1.想最大程度还原照片：`canny`
 
-2.只想控制构图，给SD更多可以变化的地方：softedge、scribble
+2.只想控制构图，给`SD`更多可以变化的地方：`softedge`、`scribble`
 
-3.真人、素描等照片：lineart
+3.真人、素描等照片：`lineart`
 
-4.建筑物装修：mlsd
+4.建筑物装修：`mlsd`
 
 ## 3.空间深度约束——depth
 
@@ -684,15 +691,15 @@ controlnet的模型选择：
 
 ![](img/e5fa0e6a9140769aa97c559146908764.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：depth_leres++         模型：depth
+预处理器：`depth_leres++` 模型：`depth`
 
 ![](img/219d3c9168a0a6b1ff08f8ec77274176.png)
 
 ## 4.物品种类约束——seg
 
-segmentation，语义分割模型
+`segmentation`，语义分割模型
 
 它可以将照片上不同种类的东西，用不同的颜色表示出来
 
@@ -702,15 +709,15 @@ segmentation，语义分割模型
 
 ![](img/acaf9d596118f9c5b1a1c4d58013cf66.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：seg_ofade20k        模型：seg
+预处理器：`seg_ofade20k` 模型：`seg`
 
 ![](img/4b61ad155707ed43dd7f2434bd6471c0.png)
 
-可以把seg色块图下载下来，自己到ps或者其他修图软件改照片物体的颜色
+可以把`seg`色块图下载下来，自己到`ps`或者其他修图软件改照片物体的颜色
 
-这样SD就会根据颜色生成出来特定的某样东西
+这样`SD`就会根据颜色生成出来特定的某样东西
 
 > 网盘链接里有一份文档，可以看到不同的颜色代表什么物品
 
@@ -718,7 +725,7 @@ controlnet的模型选择：
 
 ![](img/7521a7d9d578a75c99ac1bfc0f0cb147.png)
 
-例如我可以在ps上面用代表人的颜色画上人的形状
+例如我可以在`ps`上面用代表人的颜色画上人的形状
 
 这样生成的照片就在原来的基础上多了一个人
 
@@ -730,23 +737,23 @@ controlnet的模型选择：
 
 看到这里建筑物装修已经有三种模型可以处理了
 
-1.只还原整体的结构：mlsd
+1.只还原整体的结构：`mlsd`
 
-2.还原物品的先后关系：depth
+2.还原物品的先后关系：`depth`
 
-3.比较好的还原原图有的物品，想自己后期编辑色块，改变室内装修结构：seg
+3.比较好的还原原图有的物品，想自己后期编辑色块，改变室内装修结构：`seg`
 
-depth和seg除了用在建筑上，还可以用在人物照片
+`depth`和`seg`除了用在建筑上，还可以用在人物照片
 
 ## 5.风格约束
 
-这一节会讲到shuffle、reference、normal、t2ia、IP-Adapter五个模型
+这一节会讲到`shuffle`、`reference`、`normal`、`t2ia`、`IP-Adapter`五个模型
 
 ![](img/5d1e89560938f85ff564bde70b6c3349.png)
 
 ### 01.shuffle
 
-shuffle是将参考图的颜色融合到一起，然后用融合后的颜色生成新的图片
+`shuffle`是将参考图的颜色融合到一起，然后用融合后的颜色生成新的图片
 
 下面第一张是原图，其他三张分别是由水墨画、油画、赛博朋克风格的图片转移过来的画风
 
@@ -758,17 +765,17 @@ shuffle是将参考图的颜色融合到一起，然后用融合后的颜色生�
 
 ![](img/52aa2259fdd1d48ec06a08d246707fd0.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：shuffle         模型：shuffle
+预处理器：`shuffle` 模型：`shuffle`
 
-> 用shuffle可能会影响自己原图的形状，可以稍微调整一下“引导介入时机”的参数
+> 用`shuffle`可能会影响自己原图的形状，可以稍微调整一下“引导介入时机”的参数
 
 > 设置在0.2~0.3之间就差不多
 
 > 先生成出来大体的形状再去改变画风
 
-> 或者用两个controlnet：一个固定线稿，一个影响画风
+> 或者用两个`controlnet`：一个固定线稿，一个影响画风
 
 ![](img/e0cdb5e885316c05c0d04a01a1675fdb.png)
 
@@ -790,15 +797,15 @@ controlnet的模型选择：
 
 ![](img/317e7b80b22fd69ac0e0e75add79a3f9.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：reference         不用模型
+预处理器：`reference` 不用模型
 
 ![](img/d10254d9c53717442ee9a9dbfd4a3f36.png)
 
 #### ②还原角色
 
-给SD一张人物角色图，它会根据人物的五官、发型还原这个人物
+给`SD`一张人物角色图，它会根据人物的五官、发型还原这个人物
 
 ![](img/ce06565fed3e459b1f78dfdaf0e51c63.png)
 
@@ -820,21 +827,21 @@ controlnet的模型选择：
 
 ![](img/f3e45c7cc87dd2f238050af6036af082.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：normal_bae **        模型：normalbae
+预处理器：`normal_bae` 模型：`normalbae`
 
 ![](img/2ee590e2e7cd955caa82e7afda4478e4.png)
 
 ### 04.t2ia
 
-t2ia这个模型比较特殊，不同的预处理器要用到不同的模型
+`t2ia`这个模型比较特殊，不同的预处理器要用到不同的模型
 
 它的主要功能有3个
 
 1.将原图的颜色模糊成马赛克再重新生成图片
 
-2.提取素描的线稿，生成真人照片（这个不好用，直接用lineart就行）
+2.提取素描的线稿，生成真人照片（这个不好用，直接用`lineart`就行）
 
 3.参考原图风格，生成相似风格的照片
 
@@ -844,9 +851,9 @@ t2ia这个模型比较特殊，不同的预处理器要用到不同的模型
 
 ![](img/8d49c741a6f3497810e07dd977296cd0.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：t2ia_color_grid          ** 模型：t2iadapter_color
+预处理器：`t2ia_color_grid` 模型：`t2iadapter_color`
 
 ![](img/78553def5c464ae5cf14ac65976be09f.png)
 
@@ -860,19 +867,19 @@ controlnet的模型选择：
 
 ![](img/4fabf800abe9e12c253269b764bfa7a6.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：ip-adpter_clip        **   模型：ip-adpter_sd15
+预处理器：`ip-adpter_clip` 模型：`ip-adpter_sd15`
 
 ![](img/d86a0ff5987ad591e007138eae9a9a9b.png)
 
 ## 6.重绘
 
-重绘分为inpaint和recolor
+重绘分为`inpaint`和`recolor`
 
 ### 01.Inpaint
 
-和图生图里的局部重绘差不多，但是inpaint可以将重绘的地方跟原图融合的更好一点
+和图生图里的局部重绘差不多，但是`inpaint`可以将重绘的地方跟原图融合的更好一点
 
 #### ①消除图片信息
 
@@ -884,23 +891,23 @@ controlnet的模型选择：
 
 关键词填写照片背景的描述词
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预处理器：inpaint_global_harmoniou**s         模型：inpaint
+预处理器：`inpaint_global_harmoniou`s` 模型：`inpaint`
 
-> inpaint_global_harmonious预处理器是整张图进行重绘
+> `inpaint_global_harmoniou`s`预处理器是整张图进行重绘
 
 > 重绘之后整体融合比较好，但是重绘之后的图片色调会改变
 
 >
 
-> inpaint_only只重绘涂黑的地方
+> `inpaint_only`只重绘涂黑的地方
 
 为了重绘之后的图片更像原图，可以把控制权重拉满
 
 ![](img/e43c532d42690f3d9b93fe6e4726d4b5.png)
 
-可以看看在图生图局部重绘出来的效果，是不如inpaint的
+可以看看在图生图局部重绘出来的效果，是不如`inpaint`的
 
 > 这张图是我跑了十几张图之后选的比较好的一张
 
@@ -916,7 +923,7 @@ controlnet的模型选择：
 
 ### 02.Recolor
 
-recolor模型可以给照片重新上色
+`recolor`模型可以给照片重新上色
 
 #### ①给黑白老照片上色
 
@@ -924,9 +931,9 @@ recolor模型可以给照片重新上色
 
 ![](img/848b8f8c28cf3a6d6e0b56d246533297.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预**处理器：recolor_luminance        模型：ioclad_sd15_recolor
+预处理器：`recolor_luminance` 模型：`ioclad_sd15_recolor`
 
 ![](img/aae35e01f35efb0c5a532221ae3c1343.png)
 
@@ -938,9 +945,9 @@ controlnet的模型选择：
 
 只要在关键词里面输入对应的“绿色头发”就可以了
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-**预**处理器：recolor_luminance        模型：ioclad_sd15_recolor
+预处理器：`recolor_luminance` 模型：`ioclad_sd15_recolor`
 
 ![](img/1be93e5966879cb826710e25eb1e19c2.png)
 
@@ -964,19 +971,19 @@ controlnet的模型选择：
 
 这里需要输入的关键词比较特殊
 
-需要在关键词里面输入：make it.... （让它变成...）
+需要在关键词里面输入：`make it....` （让它变成...）
 
-比如让它变成冬天，就输入：make it winter
+比如让它变成冬天，就输入：`make it winter`
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：无         模型：ip2p
+预处理器：无 模型：`ip2p`
 
 ![](img/9ee6a4bb9f0921b0c0ddfd66ccfb1156.png)
 
 ## 8.加照片细节——tile
 
-tile模型的玩法非常多
+`tile`模型的玩法非常多
 
 ### 01.恢复画质
 
@@ -984,23 +991,25 @@ tile模型的玩法非常多
 
 ![](img/4de31334826e8496bc519f7a530db8c1.png)
 
-controlnet的模型选择：
+`controlnet`的模型选择：
 
-预处理器：tile_resample         模型：tile
+预处理器：`tile_resample` 模型：`tile`
 
 ![](img/bd48f645f4e7edd90eefc8fe82930bc8.png)
 
 但是这个恢复画质的方法可能不太适合真人
 
-因为tile模型的工作原理是先忽略掉照片的一些细节，再加上一些细节
+因为`tile`模型的工作原理是先忽略掉照片的一些细节，再加上一些细节
 
-这些SD自己加上去的细节可能会导致生成出来的照片不像原图
+这些`SD`自己加上去的细节可能会导致生成出来的照片不像原图
 
 ![](img/31ee73ee26a540a815e5f9807290037f.png)
 
 ![](img/2053f385b38681cb6a3e7d7bf6e19559.png)
 
-### 02.给图片加工
+
+
+## 02.给图片加工
 
 生成炫酷的赛博机车图
 
@@ -1008,13 +1017,13 @@ controlnet的模型选择：
 
 ![](img/bda8b51e3280b4e73156d12480189f62.png)
 
-### 03.真人变动漫
+## 03.真人变动漫
 
 ![](img/395ebfe43025119fd2c806925c64f023.png)
 
 ![](img/ece4bfc3cf744183d8d5f12b654f26b8.png)
 
-### 04.动漫变真人
+## 04.动漫变真人
 
 ![](img/f5e798f9e8c237ddc60d35fd2e7888d0.png)
 
@@ -1024,7 +1033,7 @@ controlnet的模型选择：
 
 ![](img/94893669a93f0ac8765d7fa6db9fa6c6.png)
 
-### 05.光影艺术字
+## 05.光影艺术字
 
 ![](img/d4814fc3b97e965720ee9d04c5b0d49a.png)
 
@@ -1032,7 +1041,7 @@ controlnet的模型选择：
 
 ![](img/7d4afa8276d406d744dd194284a4b4e0.png)
 
-# 四、结尾
+## 四、结尾
 
 这是整个controlnet的思维导图
 

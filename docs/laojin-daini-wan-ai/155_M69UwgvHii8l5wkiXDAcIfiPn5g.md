@@ -1,8 +1,9 @@
+
 # 一句话升级Dify1.1.1，再也不怕丢东西，老金手把手教你怎么用Cursor一键升级！
 
 > 来源：[https://my.feishu.cn/docx/R29YdcqNxouYTsxLn1jcChnBnZb](https://my.feishu.cn/docx/R29YdcqNxouYTsxLn1jcChnBnZb)
 
-### 引言
+## 引言
 
 对于老金我来说，“懒”是我学习的最大动力。
 
@@ -24,7 +25,7 @@
 
 ![](img/d6126ef92d95193de06a098ff34b047c.png)
 
-### 升级过程讲解（全程一句提示词）
+## 升级过程讲解（全程一句提示词）
 
 ![](img/cd40ca2fd325e65b5bad65a6c4af77ac.png)
 
@@ -42,7 +43,7 @@
 
 他不会的就是不符合逻辑，或者还没诞生。
 
-其实全程就输入这么一句话，这里的thinking是MCP，帮助拆分流程的。
+其实全程就输入这么一句话，这里的`thinking`是MCP，帮助拆分流程的。
 
 ```
 使用thinking进行分析，我需要从dify1.0.0升级到dify1.1.1，我是windows10版本，dify是docker启动，更新操作说明 @https://github.com/langgenius/dify/releases/tag/1.1.1  ，直接帮我升级完成，最终给我展示升级后的页面
@@ -54,7 +55,7 @@ Cursor完整自动操作全过程截图：
 
 ![](img/0f785a00b799ae195a76eb5a99bbd2a2.png)
 
-### 1.1.1更新了什么？
+## 1.1.1更新了什么？
 
 升级完了，让我们看看1.1.1干嘛了。
 
@@ -62,7 +63,7 @@ Cursor完整自动操作全过程截图：
 
 其实就是修复了元数据的大量BUG，给小伙伴们科普下什么叫元数据。
 
-**元数据的作用**
+### 元数据的作用
 
 元数据是“关于数据的数据”，它为知识库中的文档提供了额外的描述性信息。在Dify v1.1.0版本中，元数据的作用主要体现在以下几个方面：
 

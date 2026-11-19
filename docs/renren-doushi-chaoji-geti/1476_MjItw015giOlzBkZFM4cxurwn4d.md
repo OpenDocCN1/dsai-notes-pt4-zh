@@ -1,16 +1,13 @@
-# 2023-09-06ChatGPT上线“论文神器”插件！无需关键字即可搜索2亿文章-今日头条
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/SsUSdWieWoGyyqxQ19Gcd7ghnpc](https://xuqiwei1986.feishu.cn/docx/SsUSdWieWoGyyqxQ19Gcd7ghnpc)
+# 2023-09-06 ChatGPT 上线“论文神器”插件！无需关键字即可搜索 2 亿文章-今日头条
 
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7275597210132759080/?log_from=536363cf4e815_1694081639017).com/article/727...
-
+> 来源：`https://xuqiwei1986.feishu.cn/docx/SsUSdWieWoGyyqxQ19Gcd7ghnpc`
 >
-
-# ChatGPT上线“论文神器”插件！无需关键字即可搜索2亿文章
+> 🔗 原文链接：`https://www.toutiao.com/article/7275597210132759080/?log_from=536363cf4e815_1694081639017`
 
 原创 2023-09-06 14:35 · 量子位
 
-ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus”。
+ChatGPT 上新了一个“论文搜索神器”插件，名叫“`Consensus`”。
 
 划重点：
 
@@ -18,7 +15,7 @@ ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus�
 
 ![](img/e8b984e37a33553ac3f2a531f274dc15.png)
 
-它就能从 **2亿篇论文 **中搜索并整理出来答案：
+它就能从 2 亿篇论文 中搜索并整理出来答案：
 
 每一个点都附上论文链接。
 
@@ -30,15 +27,15 @@ ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus�
 
 ![](img/b524dbfd5e35b1374ebe7dad38acd43c.png)
 
-最最重要的是，不像ChatGPT有时会编造假链接，Consensus给出的论文绝对能搜到 （全部经过同行评审） 。
+最重要的是，不像ChatGPT有时会编造假链接，`Consensus`给出的论文绝对能搜到（全部经过同行评审）。
 
 有了它，找论文简直不要太方便～
 
-# 具体用法
+## 具体用法
 
 下面来看具体用法，一共四种。
 
-# 01、给定一个问题，通过总结各论文研究给出答案
+### 01、给定一个问题，通过总结各论文研究给出答案
 
 例如官方示例：“正念冥想有什么好处？”
 
@@ -46,7 +43,7 @@ ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus�
 
 ![](img/c8056ac3beed352e3f82abbcc534d32c.png)
 
-# 02、给定一个主题，用各论文观点写一篇简单综述，并给出出处
+### 02、给定一个主题，用各论文观点写一篇简单综述，并给出出处
 
 比如：“给我写一段关于气候变化对GDP影响的论述，并附上引文。”
 
@@ -54,23 +51,23 @@ ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus�
 
 ![](img/79769fb1ca79a0fc6345f488b625713b.png)
 
-# 03、无需关键字匹配即可搜索论文
+### 03、无需关键字匹配即可搜索论文
 
-不**需要具体的关**键字，你只需告诉它你想要什么主题的论文，就能扔给你一大堆，并且每篇论文包含作者、年份、期刊以及 一句话总结 。
+不需要具体的关键字，你只需告诉它你想要什么主题的论文，就能扔给你一大堆，并且每篇论文包含作者、年份、期刊以及 一句话总结。
 
 比如：“给我找5篇关于移民如何影响经济的论文”，插件给出的答案就是这样的：
 
 ![](img/82536b798158300fd29a30bbd21e497a.png)
 
-# 04、引用论文研究撰写SEO友好的博客
+### 04、引用论文研究撰写SEO友好的博客
 
-提示词如“写一篇SEO友好的博客，讨论CBT （认知行为疗法） 是否可以治疗恐惧，包含经同行评审的论文链接”。
+提示词如“写一篇SEO友好的博客，讨论CBT（认知行为疗法） 是否可以治疗恐惧，包含经同行评审的论文链接”。
 
 插件给出的回答起好了标题、开头做好了话题引入。
 
 ![](img/3df35c94e0326da1703fdbbf1430968b.png)
 
-正文 （What the Research Says） 则和前面差别不大，做了论文观点的列举总结。
+正文（`What the Research Says`）则和前面差别不大，做了论文观点的列举总结。
 
 最后是一个简单总结，以及一个提醒：请务必参考原始研究论文以获得全面的理解balabala。
 
@@ -78,11 +75,11 @@ ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus�
 
 **那么，如何获得该插件？**
 
-只要你是尊贵的Plus用户，去“Plugin store”搜索 “Consensus”安装即可。
+只要你是尊贵的Plus用户，去“`Plugin store`”搜索 “`Consensus`”安装即可。
 
-# 关于Consensus
+## 关于Consensus
 
-正如OpenAI允许开发者制作第三方插件，经过审核后就能正式上线，Consensus就来自“第三方公司”。
+正如OpenAI允许开发者制作第三方插件，经过审核后就能正式上线，`Consensus`就来自“第三方公司”。
 
 该公司和这个插件同名，大概是2021年成立。
 
@@ -90,13 +87,13 @@ ChatGPT上新了一个 **“论文搜索神器” **插件，名叫“Consensus�
 
 ![](img/984fa4c01f1f1590ba6e791dbd9cc533.png)
 
-Consensus本身产品就是做论文搜索的，经过数万篇由博士标注过的论文训练而成。
+`Consensus`本身产品就是做论文搜索的，经过数万篇由博士标注过的论文训练而成。
 
-源数据来自 Semantic Scholar ，每月更新一次。
+源数据来自 `Semantic Scholar`，每月更新一次。
 
 官方网站长这样，目前的功能都还处于Beta测试阶段。
 
-![](img/20f0d8d3154c1503e035916b6d7d6c78.png)
+![](img/20f0d8d3154c1f1503e035916b6d7d6c78.png)
 
 随便给一个问题，搜出来的结果如下所示，最新一篇论文是2019年的。
 
@@ -110,7 +107,7 @@ Consensus本身产品就是做论文搜索的，经过数万篇由博士标注�
 
 链接：
 
-https://consensus.app/home/blog/introducing-the-consensus-search-chatgpt-plugin/
+`https://consensus.app/home/blog/introducing-the-consensus-search-chatgpt-plugin/`
 
 — 完 —
 

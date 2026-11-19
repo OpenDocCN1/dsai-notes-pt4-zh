@@ -1,3 +1,4 @@
+
 # 用ABC原则设计自己的行为
 
 > 来源：[https://my.feishu.cn/docx/doxcnXt44fELASCArbkj9Doyuvb](https://my.feishu.cn/docx/doxcnXt44fELASCArbkj9Doyuvb)

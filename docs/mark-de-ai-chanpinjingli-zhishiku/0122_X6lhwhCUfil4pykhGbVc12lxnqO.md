@@ -1,18 +1,19 @@
+
 # 01-06回归算法-多项式核回归
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/CpK5dXsHVouaaTxxXq1cpoqYngb](https://qqs7y1hozd1.feishu.cn/docx/CpK5dXsHVouaaTxxXq1cpoqYngb)
 
-**一句话定义：**多项式核回归是一种可以让我们用「弯曲的线」而不是「直线」来拟合数据的回归方法，它是支持向量机（SVM）或核方法的一种应用方式。
+一句话定义：多项式核回归是一种可以让我们用「弯曲的线」而不是「直线」来拟合数据的回归方法，它是支持向量机（SVM）或核方法的一种应用方式。
 
 可以把「回归」想成是我们试图画一条线，把一堆点（数据）大致连接起来，从而预测未知的点。
 
-**普通的线性回归**：只能画直线。
+普通的线性回归：只能画直线。
 
 比如我们要根据人的年龄预测身高，可能数据点差不多排成一条斜直线。
 
 但现实中，数据可能是弯弯曲曲的：比如根据时间预测植物的高度，前期长得慢，后来飞快，然后又慢下来，这就不是直线能描述的。
 
-这时候，**多项式核回归**就派上用场了。
+这时候，多项式核回归就派上用场了。
 
 它的核心思想是：
 
@@ -20,11 +21,11 @@
 
 这个「数学魔法」就是「核函数」，而「多项式核函数」就是其中一种，专门把数据“弯”一下，便于处理。
 
-### 一个简单例子
+## 一个简单例子
 
 假设我们有这样的数据：
 
-| x（学习时间） | y（考试分数） |
+| `x`（学习时间） | `y`（考试分数） |
 | --- | --- |
 | 1 | 50 |
 | 2 | 55 |
@@ -36,7 +37,7 @@
 
 用直线画不准，用多项式（比如二次曲线）就能更好地贴合这些点。
 
-这时候用**多项式核回归**，它能自动帮你“看出来”：我们用更适合的方式拟合，就能更准确地预测你学6小时会考多少分！
+这时候用多项式核回归，它能自动帮你“看出来”：我们用更适合的方式拟合，就能更准确地预测你学6小时会考多少分！
 
 ## 原理详解
 
@@ -46,7 +47,7 @@
 
 给定一组训练数据：
 
-我们希望学到一个函数  ，使得对任意输入  ，输出  。
+我们希望学到一个函数 ，使得对任意输入 ，输出 。
 
 #### 2. 线性回归模型
 
@@ -56,7 +57,7 @@
 
 #### 3. 非线性建模的思路：特征映射
 
-**现实中，很**多问题是非线性的。我们可以使用一个非线性变换  ，将原始输入从输入空间   映射到更高维的特征空间：
+现实中，很多问题是非线性的。我们可以使用一个非线性变换 ，将原始输入从输入空间  映射到更高维的特征空间：
 
 然后在高维空间中做线性回归：
 
@@ -64,7 +65,7 @@
 
 ### 1. 为什么要用核技巧
 
-如果显式地计算  ，当特征维度  ** 很高（或无**限维）**时，计算量会**非**常大。核方法的关键就是**：**不显式计算  **，而是通过一个核函数   直接计算内积。
+如果显式地计算 ，当特征维度  很高（或无限维）时，计算量会非常大。核方法的关键就是**：不显式计算 ，而是通过一个核函数  直接计算内积。
 
 这样既避免了高维映射的开销，又保留了非线性表达能力。
 
@@ -74,11 +75,11 @@
 
 ：是输入空间的内积。
 
-+    ：是一个常数（一般  ）。
++    ：是一个常数（一般 ）。
 
-+    ：是多项式的阶数（比如   表示二次项）。
++    ：是多项式的阶数（比如  表示二次项）。
 
-这个核函数对应一个高维映射  ，它可以表示所有阶数小于等于   的多项式组合。
+这个核函数对应一个高维映射 ，它可以表示所有阶数小于等于  的多项式组合。
 
 ## 核岭回归的公式推理（以 L2 正则化）
 
@@ -98,7 +99,7 @@
 
 ### 2. 对偶形式推导（使用 Representer 定理）
 
-根据 Representer Theorem，最优解   一定存在于   的线性组合中：
+根据 Representer Theorem，最优解  一定存在于  的线性组合中：
 
 因此预测函数可以写为：
 
@@ -106,11 +107,11 @@
 
 ### 3. 求解公式推导
 
-令   为核矩阵，其中：
+令  为核矩阵，其中：
 
 目标变成最小化：
 
-对上式对   求导，并令导数为 0：
+对上式对  求导，并令导数为 0：
 
 最终解为：
 
@@ -122,25 +123,25 @@
 
 ## 算法流程
 
-#### Step 1：准备数据
+### Step 1：准备数据
 
 输入训练集
 
-#### Step 2：选择核函数
+### Step 2：选择核函数
 
 选择多项式核：
 
 设定参数  、多项式次数  ，正则化系数
 
-#### Step 3：计算核矩阵
+### Step 3：计算核矩阵
 
 计算核矩阵  ，其中
 
-#### Step 4：求解系数
+### Step 4：求解系数
 
 根据闭式解：
 
-#### Step 5：预测新样本
+### Step 5：预测新样本
 
 对于新的输入  ，计算预测值：
 
@@ -148,7 +149,7 @@
 
 多项式核回归通过核技巧（Kernel Trick）将原始数据映射到高维空间，从而能捕捉数据中的非线性关系
 
-这次案例我们以**模拟一个非线性数据集**为例，演示如何用多项式核回归建模，并对模型性能进行可视化及优化分析。
+这次案例我们以模拟一个非线性数据集为例，演示如何用多项式核回归建模，并对模型性能进行可视化及优化分析。
 
 ### 1. 数据集
 
@@ -178,7 +179,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ```
 # 使用带多项式核的支持向量回归模型
-poly_svr = SVR(kernel=&#x27;poly&#x27;, degree=3, C=100, epsilon=0.1, gamma=&#x27;scale&#x27;, coef0=1)
+poly_svr = SVR(kernel='poly', degree=3, C=100, epsilon=0.1, gamma='scale', coef0=1)
 
 # 使用标准化管道
 model = make_pipeline(StandardScaler(), poly_svr)
@@ -199,78 +200,78 @@ y_test_pred = model.predict(X_test)
 
 ```
 plt.figure(figsize=(12, 8))
-plt.scatter(X_train, y_train, color=&#x27;deeppink&#x27;, label=&#x27;Training Data&#x27;, alpha=0.7)
-plt.scatter(X_test, y_test, color=&#x27;limegreen&#x27;, label=&#x27;Testing Data&#x27;, alpha=0.7)
+plt.scatter(X_train, y_train, color='deeppink', label='Training Data', alpha=0.7)
+plt.scatter(X_test, y_test, color='limegreen', label='Testing Data', alpha=0.7)
 
 # 原始真实曲线
 X_plot = np.linspace(-3, 3, 500).reshape(-1, 1)
 y_plot_true = 0.5 * X_plot.flatten()**3 - 2 * X_plot.flatten()**2 + X_plot.flatten()
-plt.plot(X_plot, y_plot_true, color=&#x27;cyan&#x27;, linewidth=2, linestyle=&#x27;--&#x27;, label=&#x27;True Function&#x27;)
+plt.plot(X_plot, y_plot_true, color='cyan', linewidth=2, linestyle='--', label='True Function')
 
 # 预测曲线
 y_plot_pred = model.predict(X_plot)
-plt.plot(X_plot, y_plot_pred, color=&#x27;orange&#x27;, linewidth=3, label=&#x27;Polynomial Kernel Regression Prediction&#x27;)
+plt.plot(X_plot, y_plot_pred, color='orange', linewidth=3, label='Polynomial Kernel Regression Prediction')
 
 # 图像标题与标签
-plt.title(&#x27;Polynomial Kernel Regression on Nonlinear Data&#x27;, fontsize=18, fontweight=&#x27;bold&#x27;)
-plt.xlabel(&#x27;Input Feature X&#x27;, fontsize=14)
-plt.ylabel(&#x27;Target y&#x27;, fontsize=14)
+plt.title('Polynomial Kernel Regression on Nonlinear Data', fontsize=18, fontweight='bold')
+plt.xlabel('Input Feature X', fontsize=14)
+plt.ylabel('Target y', fontsize=14)
 plt.legend(fontsize=12)
-plt.grid(True, linestyle=&#x27;--&#x27;, alpha=0.6)
+plt.grid(True, linestyle='--', alpha=0.6)
 plt.show()
 ```
 
 ### 5. 模型性能评估
 
 ```
-def evaluate_performance(y_true, y_pred, dataset_name=&#x27;Dataset&#x27;):
+def evaluate_performance(y_true, y_pred, dataset_name='Dataset'):
     mse = mean_squared_error(y_true, y_pred)
     r2 = r2_score(y_true, y_pred)
-    print(f&quot;{dataset_name} Performance:&quot;)
-    print(f&quot;  Mean Squared Error (MSE): {mse:.3f}&quot;)
-    print(f&quot;  R2 Score: {r2:.3f}&quot;)
-    print(&quot;-&quot; * 30)
+    print(f"{dataset_name} Performance:")
+    print(f"  Mean Squared Error (MSE): {mse:.3f}")
+    print(f"  R2 Score: {r2:.3f}")
+    print("-" * 30)
 
-evaluate_performance(y_train, y_train_pred, &#x27;Training Set&#x27;)
-evaluate_performance(y_test, y_test_pred, &#x27;Testing Set&#x27;)
+evaluate_performance(y_train, y_train_pred, 'Training Set')
+evaluate_performance(y_test, y_test_pred, 'Testing Set')
 ```
 
 ### 6. 模型调优（交叉验证与参数选择）
 
 多项式核回归的关键参数包括：
 
-+   degree（多项式阶数）
++   `degree`（多项式阶数）
 
-+   C（正则化参数）
++   `C`（正则化参数）
 
-+   epsilon（容忍误差）
++   `epsilon`（容忍误差）
 
-+   coef0（核函数中的独立项）
++   `coef0`（核函数中的独立项）
 
-我们使用网格搜索（GridSearchCV）进行自动调优。
+我们使用网格搜索（`GridSearchCV`）进行自动调优。
 
 ```
 param_grid = {
-    &#x27;svr__degree&#x27;: [2, 3, 4, 5],
-    &#x27;svr__C&#x27;: [1, 10, 100, 1000],
-    &#x27;svr__epsilon&#x27;: [0.01, 0.1, 0.5],
-    &#x27;svr__coef0&#x27;: [0, 1, 2]
+    'svr__degree': [2, 3, 4, 5],
+    'svr__C': [1, 10, 100, 1000],
+    'svr__epsilon': [0.01, 0.1, 0.5],
+    'svr__coef0': [0, 1, 2]
 }
 
 # 重新定义管道，方便参数传递
-pipeline = make_pipeline(StandardScaler(), SVR(kernel=&#x27;poly&#x27;))
+pipeline = make_pipeline(StandardScaler(), SVR(kernel='poly'))
 
-grid_search = GridSearchCV(pipeline, param_grid, cv=5, scoring=&#x27;neg_mean_squared_error&#x27;, n_jobs=-1, verbose=1)
+grid_search = GridSearchCV(pipeline, param_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1, verbose=1)
 grid_search.fit(X_train, y_train)
 
-print(&quot;Best parameters:&quot;, grid_search.best_params_)
-print(&quot;Best CV MSE:&quot;, -grid_search.best_score_)
+print("Best parameters:", grid_search.best_params_)
+print("Best CV MSE:", -grid_search.best_score_)
 
 # 用最优参数重新预测
 best_model = grid_search.best_estimator_
 y_test_pred_best = best_model.predict(X_test)
 
-evaluate_performance(y_test, y_test_pred_best, &#x27;Test Set After Tuning&#x27;)
+evaluate_performance(y_test, y_test_pred_best, 'Test Set After Tuning')
 ```
 
 采用网格搜索调整参数后，模型泛化性能显著提升。大家在未来可以考虑：
@@ -279,11 +280,11 @@ evaluate_performance(y_test, y_test_pred_best, &#x27;Test Set After Tuning&#x27;
 
 +   使用更复杂数据集，验证模型鲁棒性。
 
-+   深入分析SVR中支持向量的分布及对拟合的贡献。
++   深入分析`SVR`中支持向量的分布及对拟合的贡献。
 
 +   ...
 
-#### 数据分析可视化
+### 数据分析可视化
 
 ![](img/3665aa5e4972319d696e11283ee92ac4.png)
 
@@ -299,7 +300,7 @@ evaluate_performance(y_test, y_test_pred_best, &#x27;Test Set After Tuning&#x27;
 
 1.  **能够捕捉复杂非线性关系**：多项式核回归通过核技巧将数据映射到高维空间，适合建模高阶非线性数据，尤其是像本案例中带有多项式结构的函数关系。
 
-1.  **灵活性强，参数可调节**：通过调整多项式阶数（degree）、正则化参数（C）、核函数独立项（coef0）等超参数，可以灵活控制拟合能力和泛化能力，兼顾欠拟合和过拟合。
+1.  **灵活性强，参数可调节**：通过调整多项式阶数（`degree`）、正则化参数（`C`）、核函数独立项（`coef0`）等超参数，可以灵活控制拟合能力和泛化能力，兼顾欠拟合和过拟合。
 
 1.  **理论基础稳固**：基于支持向量机框架，拥有良好的数学理论支持，优化问题是凸优化，结果全局最优。
 
@@ -319,7 +320,7 @@ evaluate_performance(y_test, y_test_pred_best, &#x27;Test Set After Tuning&#x27;
 
 | 算法 | 优点 | 缺点 | 适用场景 | 训练复杂度 |
 | --- | --- | --- | --- | --- |
-| 多项式核回归（SVR） | 能拟合高阶非线性，理论基础扎实，泛化能力强 | 计算成本高，参数调优复杂，对异常值敏感 | 中小规模非线性数据拟合 | 较高 |
+| 多项式核回归（`SVR`） | 能拟合高阶非线性，理论基础扎实，泛化能力强 | 计算成本高，参数调优复杂，对异常值敏感 | 中小规模非线性数据拟合 | 较高 |
 | 线性回归 | 简单直观，训练速度快，易解释 | 无法拟合非线性关系 | 线性关系明确、数据维度适中 | 很低 |
 | 多项式回归（基于线性模型） | 直接构造多项式特征，简单易用 | 维度灾难，易过拟合，缺乏正则化需手动控制 | 低阶非线性，样本量大时慎用 | 中等 |
 | 核岭回归 | 有正则化，适合非线性，泛化能力良好 | 计算资源需求大，核矩阵规模大时训练慢 | 小样本非线性回归 | 较高 |

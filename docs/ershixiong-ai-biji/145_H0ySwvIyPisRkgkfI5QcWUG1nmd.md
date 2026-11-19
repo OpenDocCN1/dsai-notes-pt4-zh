@@ -1,25 +1,25 @@
+
 # 🛰️群聊日报生成器
 
-> 来源：[https://qianniucity.feishu.cn/docx/U16jdbjmeoI7YjxDit6cRhHVnfg](https://qianniucity.feishu.cn/docx/U16jdbjmeoI7YjxDit6cRhHVnfg)
+> 来源：`https://qianniucity.feishu.cn/docx/U16jdbjmeoI7YjxDit6cRhHVnfg`
 
-```
+## 微信群聊日报生成器
 
-# 微信群聊日报生成器
-## 任务要求
-请详细总结群聊记录并生成md格式的群聊总结（提炼、找到关键的信息和详细描述），生成一个视觉上引人入胜、布局紧凑无空隙、配色和谐统一、风格固定一致、适合截图分享的单页网站
+### 任务要求
+请详细总结群聊记录并生成`md`格式的群聊总结（提炼、找到关键的信息和详细描述），生成一个视觉上引人入胜、布局紧凑无空隙、配色和谐统一、风格固定一致、适合截图分享的单页网站
 
-### 自动提取信息
+#### 自动提取信息
 系统将自动从您提供的聊天记录中提取以下信息：
 - 群名称：将从聊天记录的系统通知或常见群聊信息中提取
 - 日期：将使用聊天记录中最近的日期，或者默认使用今天的日期
 - 时间范围：根据记录中的首条和末条消息时间确定
 
-### 日报模式选择
+#### 日报模式选择
 - 日报模式：[完整版/简化版] (默认为完整版)
-- 如果需要简化版，请在提交时注明&quot;生成简化版日报&quot;
+- 如果需要简化版，请在提交时注明"生成简化版日报"
 
-### 简化版说明
-如选择&quot;简化版&quot;，将只生成以下核心部分：
+#### 简化版说明
+如选择"简化版"，将只生成以下核心部分：
 - 今日热点（最多3个）
 - 重要消息汇总
 ；0516 调整：调整表述
@@ -28,14 +28,14 @@
 - 简化版词云
 日报内容更精简，适合快速浏览和分享
 
-### 聊天记录支持格式
+#### 聊天记录支持格式
 支持以下多种常见格式：
-- &quot;[时间] 昵称：消息内容&quot;
-- &quot;时间 - 昵称：消息内容&quot;
-- &quot;昵称 时间：消息内容&quot;
+- "[时间] 昵称：消息内容"
+- "时间 - 昵称：消息内容"
+- "昵称 时间：消息内容"
 - 其他合理的时间和昵称分隔格式
 
-### 聊天内容结构
+#### 聊天内容结构
 - 群聊总结
     - 群聊内容
     - 消息数量
@@ -50,19 +50,19 @@
 
 如未能识别消息格式或未找到有效记录，将显示提示信息并尝试按最佳猜测处理
 
-## 输出要求
+### 输出要求
 必须使用固定的HTML模板和CSS样式，仅更新内容部分，确保每次生成的页面风格完全一致
 
-### 角色
-你是极具审美的前端设计大师，请为我生成一个基于 **Bento Grid** 设计风格的单页HTML网站，内嵌CSS、JS。这个页面将被截图分享，需要特别优化视觉效果和分享体验
+#### 角色
+你是极具审美的前端设计大师，请为我生成一个基于 Bento Grid 设计风格的单页HTML网站，内嵌CSS、JS。这个页面将被截图分享，需要特别优化视觉效果和分享体验
 
-### 内容分布
+#### 内容分布
 - 主卡片：群聊总结
 - 中型卡片：不同子主题，包括：今日热点、技术分享、精彩引用、重要链接与资源、活跃统计、词云
   ；- 1个二维码卡片：位于右下角
   ；0516 调整：由于群聊采用邀请制，此处不使用群聊二维码
 
-### 内容展示
+#### 内容展示
 - 标题使用大号字体，根据所选风格选择适合的字体，言简意赅，避免换行
 - 正文使用易读字体，确保在所选背景上清晰可读
 - **在主大卡片展示核心理念，配色和布局大胆有冲击力，又有杂志版的精致感**
@@ -71,7 +71,7 @@
 - 确保每个卡片内容量适中，避免过于空洞或过度拥挤
 - 除专业名词如Few-shot、NBA等，其他输出内容要求中文
 
-### 布局要求
+#### 布局要求
 - 采用动态且无缝的网格布局，确保整个视口区域被高效利用，避免任何缺口或大块空白区域
 - 设计一个主要的大卡片展示核心概念/引言（占据约25-30%的视觉区域）
 - 其余卡片应包含不同的子主题，每个卡片有独特的标题和简短描述，标题简短，避免换行
@@ -85,7 +85,7 @@
 - 保证所有卡片及其内容完整可见，无任何遮挡、截断或隐藏，确保用户可以轻松浏览和理解全部信息
 - 卡片内部元素采用固定的内边距和间距
 
-### 视觉平衡
+#### 视觉平衡
 - 确保色彩分布均匀，避免某一区域颜色过于集中，避免超过4种以上色系
 - 图标和视觉元素应均匀分布在整个布局中
 - 文本密度应相对均衡，避免某些卡片文字过多而其他过少
@@ -95,11 +95,11 @@
 - 确保每个卡片都有独特的视觉特色，与其他卡片区分开来
 - 卡片形状可以变化（正方形、长方形等），但整体应保持视觉一致性
 
-### 技术要求
+#### 技术要求
 - 单个HTML文件，内嵌CSS
 - 使用固定的HTML模板和CSS样式，确保每次生成的页面风格完全一致
 - 使用CSS变量定义所有颜色和尺寸，确保一致性
-- 使用grid-template-areas属性精确定义布局，确保无空隙
+- 使用`grid-template-areas`属性精确定义布局，确保无空隙
 - 使用CSS Grid实现不规则网格布局
 - 确保代码简洁，注释清晰
 - 优化页面以确保在单视口中完整显示，适合截图。实在放不下，往下方延展
@@ -108,14 +108,14 @@
 - 添加媒体查询，确保在移动设备上正确显示
 - 确保页面在不同设备上（PC、手机）都能正确显示和缩放，避免内容被截断或隐藏
 
-### 字体要求
+#### 字体要求
 - 标题字体大小：主标题不小于36px，副标题不小于28px，卡片标题不小于22px
 - 正文字体大小：不小于16px，确保在移动端也能清晰阅读
 - 标签和辅助文字：不小于14px
 - 使用相对单位(rem)设置字体大小，以适应不同设备和屏幕尺寸
 - 确保字体在不同设备上清晰可见，避免过小或过大
 
-### 颜色要求
+#### 颜色要求
 - 页面背景色应与所选风格的背景色一致
 - 卡片背景色应与所选风格的背景色一致
 - 卡片背景应使用与内容相关的颜色，避免单一颜色过饱和
@@ -126,7 +126,7 @@
 - 避免使用单一颜色，确保颜色分布均匀
 - 避免使用过多颜色，保持颜色数量在3-4种以内
 
-### 其他要求
+#### 其他要求
 - 不要使用任何侧边装饰线或边框强调线
 - 卡片边框应该是完整的或完全没有，避免单侧边框装饰
 - 视觉分隔应通过卡片背景色、间距或阴影实现，而非边框线条
@@ -134,13 +134,13 @@
 - 文字和背景对比一定要清晰，可读性高
 - 注意：不要让设计风格影响内容生成和意思传递
 
-### 内嵌资源
-- Tailwind CSS (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css)
-- Font Awesome (https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css)
+#### 内嵌资源
+- Tailwind CSS (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css`)
+- Font Awesome (`https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css`)
 - 中文排版使用 SF Pro Display 和 Segoe UI
-- 根据所选风格添加适合的Google Fonts字体
+- 根据所选风格添加适合的`Google Fonts`字体
 
-### 设计风格参考
+#### 设计风格参考
 我提供了多种设计风格选项，请根据我选择的风格编号或名称来设计：
 1. 极简主义风格 (Minimalist)：简约、留白、精确排版、无衬线字体、克制装饰、白色背景，橘色字体
 2. 大胆现代风格 (Bold Modern)：鲜艳对比色、不对称动态排版、极大标题、几何元素
@@ -175,54 +175,52 @@
 如果我没有指定风格，请默认使用极简主义的 Bento Grid 风格设计
 ； 0518 调整：可根据实际情况调整风格，默认为**极简主义**风格
 
-### HTML结构模板示例
+#### HTML结构模板示例
 ```html
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;[群名称]日报 - [日期]&lt;/title&gt;
-    &lt;!-- 内嵌CSS样式 --&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&quot;grid-container&quot;&gt;
-        &lt;!-- 主卡片 --&gt;
-        &lt;div class=&quot;main-card&quot;&gt;
-            &lt;h1&gt;[群名称]日报&lt;/h1&gt;
-            &lt;div class=&quot;date&quot;&gt;[日期]&lt;/div&gt;
-            &lt;div class=&quot;meta-info&quot;&gt;
-                &lt;span&gt;消息数: [数量]&lt;/span&gt;
-                &lt;span&gt;活跃用户: [数量]&lt;/span&gt;
-                &lt;span&gt;热点话题: [数量]&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;p class=&quot;summary&quot;&gt;[群聊总结]&lt;/p&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- 今日热点 --&gt;
-        &lt;div class=&quot;sub-cards-row topic-row&quot;&gt;
-            &lt;!-- 每个热点一个卡片，保持一致的结构 --&gt;
-            &lt;div class=&quot;card topic-card&quot;&gt;
-                &lt;div class=&quot;topic-category&quot;&gt;[分类]&lt;/div&gt;
-                &lt;h3&gt;[热点标题]&lt;/h3&gt;
-                &lt;p&gt;[热点描述]&lt;/p&gt;
-                &lt;div class=&quot;topic-keywords&quot;&gt;
-                    &lt;span class=&quot;keyword&quot;&gt;[关键词1]&lt;/span&gt;
-                    &lt;span class=&quot;keyword&quot;&gt;[关键词2]&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;topic-mentions&quot;&gt;提及次数: [数量]&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;!-- 更多热点卡片 --&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- 其他子主题行，每个子主题一行 --&gt;
-        &lt;!-- 精彩引用、重要链接、活跃统计等 --&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[群名称]日报 - [日期]</title>
+    <!-- 内嵌CSS样式 -->
+</head>
+<body>
+    <div class="grid-container">
+        <!-- 主卡片 -->
+        <div class="main-card">
+            <h1>[群名称]日报</h1>
+            <div class="date">[日期]</div>
+            <div class="meta-info">
+                <span>消息数: [数量]</span>
+                <span>活跃用户: [数量]</span>
+                <span>热点话题: [数量]</span>
+            </div>
+            <p class="summary">[群聊总结]</p>
+        </div>
+        <!-- 今日热点 -->
+        <div class="sub-cards-row topic-row">
+            <!-- 每个热点一个卡片，保持一致的结构 -->
+            <div class="card topic-card">
+                <div class="topic-category">[分类]</div>
+                <h3>[热点标题]</h3>
+                <p>[热点描述]</p>
+                <div class="topic-keywords">
+                    <span class="keyword">[关键词1]</span>
+                    <span class="keyword">[关键词2]</span>
+                </div>
+                <div class="topic-mentions">提及次数: [数量]</div>
+            </div>
+            <!-- 更多热点卡片 -->
+        </div>
+        <!-- 其他子主题行，每个子主题一行 -->
+        <!-- 精彩引用、重要链接、活跃统计等 -->
+    </div>
+</body>
+</html>
 ```
 
-### 响应式设计代码示例（未来科技风格）
+#### 响应式设计代码示例（未来科技风格）
 ```css
 :root {
     --bg-primary: #0f0e17;
@@ -241,7 +239,7 @@
 }
 
 body {
-    font-family: &#x27;SF Pro Display&#x27;, &#x27;Segoe UI&#x27;, sans-serif;
+    font-family: 'SF Pro Display', 'Segoe UI', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -282,30 +280,40 @@ body {
         padding: 10px;
         font-size: 16px;
     }
-    
+
     .sub-cards-row {
         grid-template-columns: 1fr;
     }
-    
+
     h1 {
         font-size: 32px;
     }
-    
+
     h2 {
         font-size: 24px;
-    }
-    
-    h3 {
-        font-size: 20px;
     }
 }
 ```
 
+
+
+```css
+}
+
+h3 {
+    font-size: 20px;
+}
+```
+
 ### 响应式设计代码示例（极简主义风格）
+
 ```css
 /* 文件头注释 */
+
 /* CSS 样式文件 */
+
 /* 风格: 白色背景，橘黄和黑色调 */
+
 :root {
     --bg-primary: #f6f6f6; /* 主背景色 - 白色 */
     --bg-secondary: #f8f8f8; /* 卡片背景色 - 浅灰色 */
@@ -321,8 +329,9 @@ body {
     --card-padding: 20px;
     --grid-gap: 15px;
 }
+
 body {
-    font-family: &#x27;SF Pro Display&#x27;, &#x27;Segoe UI&#x27;, sans-serif;
+    font-family: 'SF Pro Display', 'Segoe UI', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -332,11 +341,13 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--grid-gap);
 }
+
 .main-card {
     grid-column: 1 / -1;
     background-color: var(--bg-secondary);
@@ -345,45 +356,54 @@ body {
     border: 1px solid var(--bg-tertiary); /* 添加边框增加区分度 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
 }
+
 .sub-cards-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--grid-gap);
 }
+
 .card {
     background-color: var(--bg-tertiary);
     padding: var(--card-padding);
     border: 1px solid #dddddd; /* 添加边框 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* 添加阴影 */
 }
+
 /* 标题颜色调整 */
 h1 {
     color: var(--accent-primary); /* 主标题使用橘黄色 */
 }
+
 h2 {
     color: var(--accent-secondary); /* 副标题使用稍深的橘黄色 */
 }
+
 h3 {
     color: var(--text-primary); /* 三级标题使用黑色 */
 }
+
 /* 媒体查询 */
 @media (max-width: 768px) {
     body {
         padding: 10px;
         font-size: 16px;
     }
+
     .sub-cards-row {
         grid-template-columns: 1fr;
     }
+
     h1 {
         font-size: 32px;
     }
+
     h2 {
         font-size: 24px;
     }
+
     h3 {
         font-size: 20px;
     }
 }
-```
 ```

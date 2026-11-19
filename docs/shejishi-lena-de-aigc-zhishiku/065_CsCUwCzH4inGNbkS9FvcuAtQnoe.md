@@ -1,19 +1,19 @@
+
 # Runway更新功能&案例
 
 > 来源：[https://aigclena.feishu.cn/docx/Ldm9d00UdoAEvbxKWPuc6iFlnth](https://aigclena.feishu.cn/docx/Ldm9d00UdoAEvbxKWPuc6iFlnth)
 
-# 官方更新
+## 官方更新
 
-## Aleph视频编辑
+### Aleph视频编辑
 
 2025.7.29
 
 开创了多任务视觉生成的新纪元。Aleph能够对输入视频进行添加、删除、变换物体，生成新视角，并调整风格与光线等多种编辑操作。通过逐帧手动调整遮罩、使用克隆图章工具、色彩校正和噪点匹配等技术，Aleph实现了复杂视频内容的高效精细修改，极大提升了后期制作的灵活性与精准度。
 
-
 [twitter-video-1920x1080-video1 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzPCbegmXo1mpexQAnHcoNGcnif)
 
-## Act-Two
+### Act-Two
 
 Runway推出用于AI动作捕捉的Act-Two
 
@@ -25,7 +25,7 @@ Runway推出用于AI动作捕捉的Act-Two
 
 [SaveTwitter.Net_nE0x9mJ4jBSKWIaI_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OU4Ub29QJobSTExDeRzcONocnYc)
 
-## Gen-4 References
+### Gen-4 References
 
 2025.6.25
 
@@ -35,7 +35,7 @@ runway发布了 Gen-4 References 的更新版本，显著提升了对象一致�
 
 [SaveTwitter.Net_TaDPZuABxlRB7nRL_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OzQobQXdMoIsWexfAelc3bNJnNc)
 
-## 结合3d
+### 结合3d
 
 2025.5.6
 
@@ -45,10 +45,9 @@ runway发布了 Gen-4 References 的更新版本，显著提升了对象一致�
 
 [6388214230764573839831852.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HWscbsVC1ockXcx2TbIc7c7Rnnh)
 
-
 [X2Twitter.com_5i5TpkNLNrTeYcW__1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FmuKbtQIgonzE1xtuBIck1i1nGb)
 
-## Gen-4 References
+### Gen-4 References
 
 Runway推出Gen-4 References功能
 
@@ -56,10 +55,9 @@ Runway推出Gen-4 References功能
 
 该功能支持用户通过照片、生成图像、3D模型或自拍，实现人物、场景等元素的一致性生成，用户可轻松将自己或他人置入任意想象场景中，大幅提升创作自由度与个性化表现力。
 
-
 [X2Twitter.com_coenLHVCFVPE_oZ2_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LAvHbykYmoT7gixkSUOcKHy7nNf)
 
-## Gen-4 Turbo
+### Gen-4 Turbo
 
 Runway推出Gen-4 Turbo
 
@@ -67,13 +65,11 @@ Runway推出Gen-4 Turbo
 
 声称迄今为止最强大的视频生成模型,具备超快的生成速度，能够在30秒内生成一个10秒的视频。
 
-
 [X2Twitter.com_n-xmUUAhXe1Om4aS_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PcvHblSsOoP0ZhxuFpUcGwi7n3b)
-
 
 [00cbf080b152ac4ed94fa58ac6b542e4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XGnzbeTSCounnMxuSZ5csAconDd)
 
-## 发布Gen-4
+### 发布Gen-4
 
 2025.4.1
 
@@ -85,7 +81,7 @@ Runway推出Gen-4 Turbo
 
 原英文视频
 
-## Runway推出参考单张图片风格
+### Runway推出参考单张图片风格
 
 2025.03.06
 
@@ -93,7 +89,7 @@ Runway推出Gen-4 Turbo
 
 [X2Twitter.com_71UNY0NOYI8hSxWG_360p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DZV5bZgwUoy9z2xmVgTcF3GAnIg)
 
-## 1月18日Runway发布Frames
+### 1月18日Runway发布Frames
 
 Runway推出其最新图像生成模型——Frames。该模型不仅在生成电影级视觉效果上获得好评，还展示了Runway在图像创作领域的强大潜力，现在全面向订阅用户开放。
 
@@ -101,9 +97,9 @@ Runway推出其最新图像生成模型——Frames。该模型不仅在生成�
 
 [X2Twitter.com_cDbldsru0aAnrIBj_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Yk5Xb5ytJofYUjx1rplchEMXnEb)
 
-## ===================年份分割线
+### ===================年份分割线
 
-## 11月5日Gen-3 Alpha Turbo更新
+### 11月5日Gen-3 Alpha Turbo更新
 
 Runway为Gen-3 Alpha Turbo AI视频生成器新增精确摄像机控制功能
 
@@ -115,7 +111,7 @@ Runway在其Gen-3 Alpha Turbo AI视频生成器中引入了精确的摄像机控
 
 [Using Camera Control in Gen-3 Alpha Turbo _ Runway Academy.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hxy5btpy0oABDMxATYYcFC7Snue)
 
-## 10月23日Act-One更新
+### 10月23日Act-One更新
 
 ![](img/9d640b281679e491eae8fe8384defe16.png)
 
@@ -128,7 +124,6 @@ Runway介绍Act-One。一种在第三代 Alpha 中使用单一驱动视频和角
 ![](img/5424d9ad6f6784d2d422a08b07a9d753.png)
 
 [X2Twitter.com_2EyYj6GjSpT_loQf_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WBNIbuvT3oVqJlxjH8TczDkcn9g)
-
 
 [X2Twitter.com_TcWzpRl3kMfHM4ro_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N9b8bneUeo1xiZxeWgucyds8nne)
 
@@ -152,7 +147,7 @@ Runway介绍Act-One。一种在第三代 Alpha 中使用单一驱动视频和角
 
 通过 Act-One，眼神方向、微表情、节奏和表达方式都在最终生成的输出中得到了忠实的再现。
 
-## 2024.9.28 Gen-3 Alpha Turbo的更新
+### 2024.9.28 Gen-3 Alpha Turbo的更新
 
 今天我们很高兴地分享关于Gen-3 Alpha Turbo的更新，这些更新带来了更多的控制功能以及生成垂直视频的能力。
 
@@ -172,7 +167,7 @@ Runway介绍Act-One。一种在第三代 Alpha 中使用单一驱动视频和角
 
 [X2Twitter.com_sFvkqj4eiAOFbrXe_1200p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EgtKbgd4nojSsux74HwcLbl1neh)
 
-# 网友Runway案例
+## 网友Runway案例
 
 ![](img/a3beab73726e5f6633a0a9f8c28f90c3.png)
 
@@ -184,19 +179,15 @@ Runway介绍Act-One。一种在第三代 Alpha 中使用单一驱动视频和角
 
 runway+eleven labs voice
 
-
 [Gen-3 Alpha 1125344391, A beautiful Asian gi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W7XAbKSvDocb1Bx1vTfc262wnOc)
 
-
 [Gen-3 Alpha 2292910583, A giant humanoid mon.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T0FObPcBEon3Y9x6ZOKcuRFUneb)
-
 
 [Gen-3 Alpha 3362010646, panda fish is a crea.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OW0mbuyq0o8rvRxBcipcxVwzn80)
 
 ![](img/3031e1ecfb44ecbe312b06818f3c21df.png)
 
 [Gen-3 Alpha 2661748514, Overhead time-lapse.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UtKQb1cVOoWdFlx2xmzcOdubnch)
-
 
 [Gen-3 Alpha 1734007040, A beautiful Asian gi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YDGMbtcNMoUvXmxWinHcALEhnvb)
 
@@ -223,18 +214,19 @@ Act-one更新案例1023👇👇
 [X2Twitter.com_iIpfgBtOjxvJnpPL_1296p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CSJ3bKhu1ovL4Exh9Pyc8A8OnYg)
 
 
-[X2Twitter.com_1812953726904115200(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WZJIbegQMo4l4sxzfHEczHBPn8c)
 
-2024.7.16
+## 2024.7.16
+
+[`X2Twitter.com_1812953726904115200(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WZJIbegQMo4l4sxzfHEczHBPn8c)
 
 ![](img/ec578ce98fc060d2e9ed1e90c95e433e.png)
 
-[X2Twitter.com_1811027710786830336(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TKtrbvfS5oadzzxByZCc973Cnof)
+## 2024.7.11
 
-2024.7.11
+[`X2Twitter.com_1811027710786830336(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TKtrbvfS5oadzzxByZCc973Cnof)
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  AI课程学习
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) AI课程学习
 
 ![](img/6b58046ca5d0f2aeb5f76746cfcdd30a.png)

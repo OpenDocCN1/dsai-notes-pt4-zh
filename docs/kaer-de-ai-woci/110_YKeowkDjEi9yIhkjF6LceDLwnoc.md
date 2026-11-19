@@ -1,16 +1,17 @@
+
 # 扣子XOpenClaw｜史上最短养龙虾教程
 
 > 来源：[https://aiwarts101.feishu.cn/docx/Ku05dt0Z6otAYZxRxGKctdPgnMx](https://aiwarts101.feishu.cn/docx/Ku05dt0Z6otAYZxRxGKctdPgnMx)
 
 ## 开始云养虾
 
-+   **在一键部**署 OpenClaw 区域单击立刻领取。
++ 在一键部署 OpenClaw 区域单击立刻领取。
 
-+   **选择**你的 OpenClaw 配置，并单击确定。
++ 选择你的 OpenClaw 配置，并单击确定。
 
-+   **满血版**（默认）：OpenClaw 原版默认配置，无差异的性能体验。
++ 满血版（默认）：OpenClaw 原版默认配置，无差异的性能体验。
 
-+   **省流版**：在满血版的基础上调整了上下文压缩和心跳配置，Token 消耗相对较低。
++ 省流版：在满血版的基础上调整了上下文压缩和心跳配置，Token 消耗相对较低。
 
 ![](img/ba7a9dc9a9fee628b9e308ef3bc65fb7.png)
 
@@ -22,7 +23,7 @@
 
 扣子编程会在后台自动为你创建飞书机器人，并自动完成回调事件等配置。
 
-+   **授权后，如需更换授 O**penClaw 绑定的授权账号，可以在 OpenClaw 配置页面取消授权，再重新授权并创建一个新的机器人，之前的飞书机器人将自动解绑。
++ 授权后，如需更换授权 OpenClaw 绑定的授权账号，可以在 OpenClaw 配置页面取消授权，再重新授权并创建一个新的机器人，之前的飞书机器人将自动解绑。
 
 ## 开启飞书插件全权限
 
@@ -38,11 +39,11 @@ npx -y @larksuite/openclaw-lark-tools install
 
 将你已有的技能，导入到 OpenClaw 项目中使用。
 
-1.  **获取技能包**：从技能项目的文件树中下载技能的 .zip 压缩包。
+1. 获取技能包：从技能项目的文件树中下载技能的 .zip 压缩包。
 
-1.  **上传安装****：在**扣子编程 OpenClaw 项目的左下角对话框中，上传该压缩包，AI 会自动为你安装。
+2. 上传安装：在扣子编程 OpenClaw 项目的左下角对话框中，上传该压缩包，AI 会自动为你安装。
 
-1.  **测试技能**：在预览窗口中用自然语言调用该技能，验证效果。
+3. 测试技能：在预览窗口中用自然语言调用该技能，验证效果。
 
 ![](img/5777a3277fa5b1a7c3b8089dd3800c39.png)
 
@@ -52,8 +53,7 @@ npx -y @larksuite/openclaw-lark-tools install
 
 ## 学习别的龙虾的经验
 
-> 你去这里 https://instreet.coze.site/skill.md 搞一个InStreet 账号，然后学习下虾毕毕的这个超超超实用技能https://instreet.coze.site/post/4dd09db8-d5e8-4c77-b789-3d9098621228
-
+> 你去这里 `https://instreet.coze.site/skill.md` 搞一个InStreet 账号，然后学习下虾毕毕的这个超超超实用技能`https://instreet.coze.site/post/4dd09db8-d5e8-4c77-b789-3d9098621228`
 
 [毕导技能.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SgyGbZoZtozo1vx2HQVcARP5nqh)
 

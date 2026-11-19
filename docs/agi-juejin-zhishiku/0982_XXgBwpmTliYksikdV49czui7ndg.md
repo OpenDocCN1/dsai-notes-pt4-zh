@@ -1,36 +1,32 @@
+
 # GraphRAG：RAG的下一站
 
-> 来源：[https://agijuejin.feishu.cn/docx/Hk64dO17TozxlZxW0ZHc6r5cnhd](https://agijuejin.feishu.cn/docx/Hk64dO17TozxlZxW0ZHc6r5cnhd)
-
+> 来源：https://agijuejin.feishu.cn/docx/Hk64dO17TozxlZxW0ZHc6r5cnhd
 > 作者：lucas大叔
+> 原文：https://zhuanlan.zhihu.com/p/708464921
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/708464921)hihu.com/p/708464...
-
-与使用纯文本片段的原始语义搜索方[法不同，G](https://www.zhihu.com/search?q=%E5%88%86%E5%B1%82%E6%A3%80%E7%B4%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)raphRAG是一种结构化的 分层检索 增强生成（RAG）方法。GraphRAG过程包括从原始文本中提取知识图谱，构建社区层次结构，为这些社区生成摘要，然后在执行基于RAG的任务时利用这些结构。
+与使用纯文本片段的原始语义搜索方法不同，GraphRAG是一种结构化的 分层检索 增强生成（RAG）方法。GraphRAG过程包括从原始文本中提取知识图谱，构建社区层次结构，为这些社区生成摘要，然后在执行基于RAG的任务时利用这些结构。
 
 ## GraphRAG vs 基线RAG
 
-[检索增强生成 ](https://www.zhihu.com/search?q=%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)（[RAG）是](https://www.zhihu.com/search?q=%E6%90%9C%E7%B4%A2%E6%8A%80%E6%9C%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)[一种使用真](https://www.zhihu.com/search?q=%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)[实世界信息改](https://www.zhihu.com/search?q=%E7%A7%81%E6%9C%89%E6%95%B0%E6%8D%AE%E9%9B%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)进LLM输出的技术。这种技术是大多数基于LLM的工具的重要组成部分，大多数RAG方法使用向量相似性作为 搜索技术 ，我们称之为基线RAG。GraphRAG使用 知识图谱 在推理复杂信息时提供问答性能的实质性改进。RAG技术在帮助LLM推理 私有数据集 方面表现出了希望——LLM没有训练，也从未见过的数据，例如企业的专有研究、商业文档或沟通记录。创建基线RAG是为了帮助解决这类问题，但我们观察到基线RAG表现非常差的情况。例如：
+检索增强生成（RAG）是一种使用真实世界信息改进LLM输出的技术。这种技术是大多数基于LLM的工具的重要组成部分，大多数RAG方法使用向量相似性作为搜索技术，我们称之为基线RAG。GraphRAG使用知识图谱在推理复杂信息时提供问答性能的实质性改进。RAG技术在帮助LLM推理私有数据集方面表现出了希望——LLM没有训练，也从未见过的数据，例如企业的专有研究、商业文档或沟通记录。创建基线RAG是为了帮助解决这类问题，但我们观察到基线RAG表现非常差的情况。例如：
 
-+   基线RAG难以将点连接起来。当回答问题需要通过共享属性遍历不同的信息片段以提供新的综合见解时，就会表现很糟糕。
+- 基线RAG难以将点连接起来。当回答问题需要通过共享属性遍历不同的信息片段以提供新的综合见解时，就会表现很糟糕。
+- 当被要求全面理解大型数据集合甚至单个大型文档上的汇总语义概念时，基线RAG表现不佳。
 
-+   当被要求全面理解大型数据集合甚至单个大型文档上的汇总语义概念时，基线RAG表现不佳。
-
-为[了解决这](https://www.zhihu.com/search?q=%E8%AF%AD%E6%96%99%E5%BA%93&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)个问题，科技界正在努力开发扩展和增强RAG的方法。微软研究院的新方法GraphRAG使用LLM基于输入 语料库 创建知识图谱。在查询时，该图谱与社区摘要和图机器学习输出一起用于增强提示。GraphRAG在回答上述两类问题方面表现出了明显的进步，展示了优于以前应用于私有数据集的其他方法的智能或掌控能力。
+为解决这个问题，科技界正在努力开发扩展和增强RAG的方法。微软研究院的新方法GraphRAG使用LLM基于输入语料库创建知识图谱。在查询时，该图谱与社区摘要和图机器学习输出一起用于增强提示。GraphRAG在回答上述两类问题方面表现出了明显的进步，展示了优于以前应用于私有数据集的其他方法的智能或掌控能力。
 
 ### GraphRAG模式
 
-[核心Gr](https://www.zhihu.com/search?q=%E7%9F%A5%E8%AF%86%E5%BA%93&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)aphRAG模式非常简单，基本上与RAG架构相同，只是在 知识库 中增加了知识图谱。
+核心GraphRAG模式非常简单，基本上与RAG架构相同，只是在知识库中增加了知识图谱。
 
 ![](img/23fbaea2f3c3035f5bcbe3b44e514877.png)
 
-[可以看到用户](https://www.zhihu.com/search?q=%E5%90%91%E9%87%8F%E7%9B%B8%E4%BC%BC%E5%BA%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)提出问题后，触发了图查询，它可以选择包含 向量相似度 组[件。我们可](https://www.zhihu.com/search?q=%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)以把图谱和向量分别存储在两个不同的数据库，或者使用像Neo4j这样也支持向量搜索的 图数据库 。使用GraphRAG的一种常见模式如下:
+可以看到用户提出问题后，触发了图查询，它可以选择包含向量相似度组件。我们可以把图谱和向量分别存储在两个不同的数据库，或者使用像Neo4j这样也支持向量搜索的图数据库。使用GraphRAG的一种常见模式如下:
 
-1.  通过向量或关键词搜索找到一组初始节点
-
-1.  [遍历图谱 ](https://www.zhihu.com/search?q=%E9%81%8D%E5%8E%86%E5%9B%BE%E8%B0%B1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)找到相关节点的信息
-
-1.  [（可选）用](https://www.zhihu.com/search?q=%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)PageRank等图 排序算法 对文档重排序
+1. 通过向量或关键词搜索找到一组初始节点
+2. 遍历图谱找到相关节点的信息
+3. （可选）用`PageRank`等图排序算法对文档重排序
 
 ### GraphRAG生命周期
 
@@ -40,11 +36,9 @@
 
 创建图谱类似于将文档分块并将其加载到向量数据库中。工具的进步使图谱创建变得如此简单。好消息有三个方面：
 
-1.  [图谱具有高度](https://www.zhihu.com/search?q=%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A1%8C%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)迭代性——你可以从“ 最小可行图 ”开始并由此扩展。
-
-1.  一旦数据进入知识图谱，它就变得非常容[易演变。可以添](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E7%BD%91%E7%BB%9C%E6%95%88%E5%BA%94&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)加更多种类的数据，以获得 数据网络效应 的好处。还可以提高数据的质量，以提高应用结果的价值。
-
-1.  [技术栈 ](https://www.zhihu.com/search?q=%E6%8A%80%E6%9C%AF%E6%A0%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)正在迅速发展，这意味着随着工具变得更加复杂，图谱创建只会变得更加容易。
+1. 图谱具有高度迭代性——你可以从“最小可行图”开始并由此扩展。
+2. 一旦数据进入知识图谱，它就变得非常容易演变。可以添加更多种类的数据，以获得数据网络效应的好处。还可以提高数据的质量，以提高应用结果的价值。
+3. 技术栈正在迅速发展，这意味着随着工具变得更加复杂，图谱创建只会变得更加容易。
 
 添加图谱创建步骤的管道如下所示：
 
@@ -70,7 +64,7 @@ Writer公司最近宣布了一份基于RobustQA框架的RAG基准测试报告，
 
 知识图谱在概念上和视觉上都是直观的，探索它们通常会揭示新的见解。许多用户报告的一个意想不到的附带好处是，一旦投入创建知识图谱，他们发现它可以以意想不到的方式构建和调试GenAI应用。这在一定程度上与将数据视为图谱描绘应用底层数据的生动画面有关。图谱还提供了将答案追溯到数据的钩子，并在因果链上追踪数据。
 
-[这是Llam](https://www.zhihu.com/search?q=%E7%BD%91%E7%BB%9C%E7%A0%94%E8%AE%A8%E4%BC%9A&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)[aIndex](https://www.zhihu.com/search?q=chunk&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)最近的 网络研讨会 上的一个例子，展示了他们提取的图谱，包括向量化的 chunk （词汇图谱）和LLM提取的实体（领域图谱），并用“MENTIONS”关系将两者连接起来。
+这是LlamaIndex最近的网络研讨会上的一个例子，展示了他们提取的图谱，包括向量化的`chunk`（词汇图谱）和LLM提取的实体（领域图谱），并用“`MENTIONS`”关系将两者连接起来。
 
 ![](img/7930316ee4eef9c90a02770c340d4932.png)
 
@@ -92,13 +86,10 @@ GraphRAG 流程的基本步骤如下：
 
 ### 索引
 
-+   将输入语料库分割成一系列的 TextUnits，这些 TextUnits 在后续流程中充当可分析的单元，并为我们的输出提供精细的参考。
-
-+   使用 LLM 从 TextUnits 中提取所有实体、关系和关键声明。
-
-+   使用 [Leiden ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/1810.08473.pdf)技术对图进行 [层次聚类 ](https://www.zhihu.com/search?q=%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)。如下图所示，每个圆都是一个实体（例如，人、地点或组织），其大小代表实体的度，颜色代表社区。
-
-+   自下而上生成每个社区及其组成部分的摘要。这有助于对数据集的整体理解。
+- 将输入语料库分割成一系列的`TextUnits`，这些`TextUnits`在后续流程中充当可分析的单元，并为我们的输出提供精细的参考。
+- 使用 LLM 从`TextUnits`中提取所有实体、关系和关键声明。
+- 使用`Leiden`技术对图进行层次聚类。如下图所示，每个圆都是一个实体（例如，人、地点或组织），其大小代表实体的度，颜色代表社区。
+- 自下而上生成每个社区及其组成部分的摘要。这有助于对数据集的整体理解。
 
 ![](img/87fc06ce33a17aeec0777c74037e0a26.png)
 
@@ -106,22 +97,23 @@ GraphRAG 流程的基本步骤如下：
 
 在查询时，这些结构用于在回答问题时为LLM上下文窗口提供材料。主要的查询模式是：
 
-+   [全局搜索 ](https://link.zhihu.com/?target=https%3A//microsoft.github.io/graphrag/posts/query/0-global_search)，通过利用社区摘要来推理关于语料库的整体问题。
-
-+   [本地搜索 ](https://link.zhihu.com/?target=https%3A//microsoft.github.io/graphrag/posts/query/1-local_search)，通过向邻居和相关概念展开推理特定实体。
+- 全局搜索，通过利用社区摘要来推理关于语料库的整体问题。
+- 本地搜索，通过向邻居和相关概念展开推理特定实体。
 
 ### 提示微调
 
-针对你的数据以 [开箱即用 ](https://www.zhihu.com/search?q=%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)的方式使用GraphRAG不一定[会产生最好的结](https://link.zhihu.com/?target=https%3A//microsoft.github.io/graphrag/posts/prompt_tuning/overview/)果，强烈建议按照文档中的 提示调整指南 微调你的提示。
+针对你的数据以开箱即用的方式使用GraphRAG不一定会产生最好的结果，强烈建议按照文档中的提示调整指南微调你的提示。
 
 ## 总结
 
-G[raphR](https://www.zhihu.com/search?q=%E9%9D%9E%E7%BB%93%E6%9E%84%E5%8C%96&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)AG[作为知识](https://www.zhihu.com/search?q=%E4%B8%89%E5%85%83%E7%BB%84&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A708464921%7D)图谱与RAG的结合体，借助知识图谱的网状知识组织方式，为标准RAG生成阶段提供了结构化、 非结构化 和 三元组 数据，上下文信息更丰富、更有层次。另外，通过基于图结构的社区发现，更加有效地将相似信息组织起来，用来应对跨页、跨文档等内容跨度较大的综合性问题。可以说，LLM的发展有效降低了知识图谱的构建难度，而知识图谱作为一种有效的知识组织形式辅助LLM更好地利用相关知识、背景知识、关联知识生成更准确、更有用的答案，两者相辅相成打造更智能的AI产品。
+
+
+# GraphRAG 概述
+
+GraphRAG 是知识图谱与 RAG 的结合体，借助知识图谱的网状知识组织方式，为标准 RAG 生成阶段提供了结构化、非结构化和三元组数据，上下文信息更丰富、更有层次。另外，通过基于图结构的社区发现，更加有效地将相似信息组织起来，用来应对跨页、跨文档等内容跨度较大的综合性问题。可以说，LLM 的发展有效降低了知识图谱的构建难度，而知识图谱作为一种有效的知识组织形式辅助 LLM 更好地利用相关知识、背景知识、关联知识生成更准确、更有用的答案，两者相辅相成打造更智能的 AI 产品。
 
 ## 参考文档
 
-[https://www. microsoft.com/en-us/res earch/blog/](https://link.zhihu.com/?target=https%3A//www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)graphrag-unlocking-llm-discovery-on-narrative-private-data/
-
-[https:// microsoft.g](https://link.zhihu.com/?target=https%3A//microsoft.github.io/graphrag/)ithub.io/gra phrag/
-
-[The GraphRAG Manifesto: Adding Knowled](https://link.zhihu.com/?target=https%3A//neo4j.com/blog/graphrag-manifesto/)ge to GenAI - Graph Database & Analytics
+- [GraphRAG: Unlocking LLM Discovery on Narrative Private Data](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)
+- [GraphRAG](https://microsoft.github.io/graphrag/)
+- [The GraphRAG Manifesto: Adding Knowledge to GenAI - Graph Database & Analytics](https://neo4j.com/blog/graphrag-manifesto/)

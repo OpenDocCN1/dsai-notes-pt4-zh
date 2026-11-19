@@ -1,3 +1,4 @@
+
 # Gen-3 Alpha全面开放，官方提示指南
 
 > 来源：[https://aigcreative.feishu.cn/docx/XiDhdozSVo7QSWxRNxpcv74mn7e](https://aigcreative.feishu.cn/docx/XiDhdozSVo7QSWxRNxpcv74mn7e)
@@ -26,7 +27,7 @@ Using the following structure should help provide consistent results while you�
 
 当您熟悉 Gen-3 Alpha 时，使用以下结构应该有助于提供一致的结果：
 
-> [camera movement]: [establishing scene]. [additional details].
+>`[camera movement]`: `[establishing scene]`. `[additional details]`.
 
 Using this structure, your prompt for a woman standing in a tropical rainforest might look like this:
 
@@ -34,15 +35,13 @@ Using this structure, your prompt for a woman standing in a tropical rainforest 
 
 > Low angle static shot: The camera is angled up at a woman wearing all orange as she stands in a tropical rainforest with colorful flora. The dramatic sky is overcast and gray.
 
-Repeating or reinforcing key ideas in different sections of your pro**mpt can he**lp increase adherence in the output. For example, you might note that the camera quickly flies through the scenes in a hyperspeed shot.
+Repeating or reinforcing key ideas in different sections of your prompt can help increase adherence in the output. For example, you might note that the camera quickly flies through the scenes in a hyperspeed shot.
 
 在提示的不同部分重复或强化关键思想可以帮助提高输出的一致性。例如，您可能会注意到相机在超高速拍摄中快速飞过场景。
 
-Try to keep your prompt foc**used on w**hat should be in the scene. For example, you would prompt for a clear sky rather than a sky with no clouds.
+Try to keep your prompt focused on what should be in the scene. For example, you would prompt for a clear sky rather than a sky with no clouds.
 
 尽量让提示集中在场景中应该出现的内容上。例如，您会提示晴朗的天空，而不是没有云的天空。
-
-#
 
 ## Sample Prompts 示例提示
 

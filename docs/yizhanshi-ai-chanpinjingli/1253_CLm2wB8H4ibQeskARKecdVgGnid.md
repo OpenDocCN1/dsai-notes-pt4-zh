@@ -1,3 +1,4 @@
+
 # MCP：使用MCP和LangGraph构建功能齐全的研究助手
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/EsShdJ0w1ogQSKxvjKyctB5Onvb](https://v11enp9ok1h.feishu.cn/docx/EsShdJ0w1ogQSKxvjKyctB5Onvb)
@@ -50,13 +51,13 @@ LangGraph 被广泛认为是构建生产级代理系统的首选。我们将通�
 
 > “状态化”意味着助手能够记住之前的交互，并据此调整自身行为——这对于多轮推理或复杂的工作流程至关重要。这里的双服务器是指 MCP 客户端配置为同时与两个不同的 MCP 兼容服务器进行通信，如下所述：
 
-+   自定义研究服务器，公开向量存储工具、提示和基于 FAISS 的语义搜索。
++   自定义研究服务器，公开向量存储工具、提示和基于 `FAISS` 的语义搜索。
 
 +   Firecrawl MCP 服务器，能够实时搜索/抓取网页内容并从互联网提取数据。
 
 ![](img/7495d2c55581c7aafb3f7e671b31d053.png)
 
-其核心是 StateGraph，它定义了消息如何流动、工具如何以及何时使用，以及对话状态如何随时间演变。
+其核心是 `StateGraph`，它定义了消息如何流动、工具如何以及何时使用，以及对话状态如何随时间演变。
 
 以下是相同的流程图：
 
@@ -70,11 +71,11 @@ LangGraph 被广泛认为是构建生产级代理系统的首选。我们将通�
 
 用户不应该将上下文管理隐藏在幕后，而应该能够使用直观的命令明确地引导助手，例如：
 
-+   @prompt:<name>加载 MCP 提示。
++   `@prompt:<name>`加载 MCP 提示。
 
-+   @resource:<uri>加载 MCP 资源。
++   `@resource:<uri>`加载 MCP 资源。
 
-+   @use_resource:<uri> <query>使用 MCP 资源。
++   `@use_resource:<uri> <query>`使用 MCP 资源。
 
 ![](img/bae36c2bf268d7c586a4165a8f27427d.png)
 
@@ -118,7 +119,7 @@ LangGraph 将在赋予该系统结构化记忆和决策控制方面发挥至关�
 
 我们将实现一个自定义 MCP 服务器，并使用预先构建的 Firecrawl MCP 服务器。
 
-我们需要npm安装 Firecrawl MCP 服务器。为此，我们需要确保我们的机器上安装了 Node.js（v22 或更高版本）。
+我们需要`npm`安装 Firecrawl MCP 服务器。为此，我们需要确保我们的机器上安装了 Node.js（v22 或更高版本）。
 
 ---
 
@@ -130,12 +131,12 @@ LangGraph 将在赋予该系统结构化记忆和决策控制方面发挥至关�
 
 ![](img/965962c73120f94121da2245975b9e23.png)
 
-注意：我们将重点关注 STDIO 传输的实现。因此，我们将在计算机上安装 Firecrawl MCP 服务器。
+注意：我们将重点关注 `STDIO` 传输的实现。因此，我们将在计算机上安装 Firecrawl MCP 服务器。
 
 但是，如果您不想在自己的机器上设置服务器，您也可以使用 Firecrawl MCP 服务器的远程托管 URL：
 
 ![](img/6eb832b59fa98c8a1cb241abcde76beb.png)
 
-之后，我们将创建一个 Python 项目。我们使用的代码和项目设置以 zip 文件的形式附在下面。您只需解压并运行 uv sync 命令即可开始。建议按照 README 文件中的说明开始操作。
+之后，我们将创建一个 Python 项目。我们使用的代码和项目设置以 zip 文件的形式附在下面。您只需解压并运行 `uv sync` 命令即可开始。建议按照 `README` 文件中的说明开始操作。
 
 ![](img/63cb14a5e1224081a106b20e7a904f46.png)

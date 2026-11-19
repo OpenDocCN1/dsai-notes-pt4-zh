@@ -1,3 +1,4 @@
+
 # 图吧工具箱验机教程
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/OV2mdWsk3oSvf9xxqAEctPxsnwf](https://xodnytdcaw.feishu.cn/docx/OV2mdWsk3oSvf9xxqAEctPxsnwf)
@@ -8,7 +9,7 @@
 
 ## 二.下载地址
 
-## https://www.tbtool.cn/
+https://www.tbtool.cn/
 
 ![](img/eb03e810a67df89d8ddc0c0afc132ff6.png)
 
@@ -18,7 +19,7 @@
 
 ![](img/38f3c66a1deb8b766d7b09b88fb7ed9f.png)
 
-####  Disklnfo（判断是否二手盘）
+#### Disklnfo（判断是否二手盘）
 
 ![](img/2175cefc1b0c15a7d06ff626dce21efe.png)
 

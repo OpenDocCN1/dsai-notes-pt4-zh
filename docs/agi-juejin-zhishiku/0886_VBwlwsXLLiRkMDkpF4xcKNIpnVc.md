@@ -1,3 +1,4 @@
+
 # RAG案例：密西西比大学利用LLM提升高校信息获取体验
 
 > 来源：[https://agijuejin.feishu.cn/docx/YEPOdpyOaoh545xX7uOcdkBBnyd](https://agijuejin.feishu.cn/docx/YEPOdpyOaoh545xX7uOcdkBBnyd)
@@ -8,7 +9,7 @@
 
 随着科技的快速发展，大型语言模型(LLM)和聊天机器人技术逐渐融入人们的生活。在高校资源信息获取方面，密西西比大学开发了BARKPLUG V.2系统，通过LLM与检索增强生成(RAG)技术的结合，实现了校园资源信息的智能交互式获取，为用户提供准确、个性化的回答，大幅提升了用户使用体验。
 
-论文地址：[Fr](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2405.08120)om Questions to Insightful Answers: Building an Informed Chatbot for University Resources
+论文地址：[From Questions to Insightful Answers: Building an Informed Chatbot for University Resources](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2405.08120)
 
 ## 一、背景介绍
 
@@ -26,7 +27,7 @@ BARKPLUG V.2系统包括两个主要阶段：上下文检索和生成回答。
 
 ![](img/be88aa26de7d09252c17d707e9a4215b.png)
 
-生成回答阶段：该阶段利用LLM，结合用户查询和检索出的上下文文档，生成个性化回答。具体而言，系统使用OpenAI的GPT-3.5-turbo作为LLM，将上下文和用户查询输入模型，生成与上下文相关的回答。
+生成回答阶段：该阶段利用LLM，结合用户查询和检索出的上下文文档，生成个性化回答。具体而言，系统使用OpenAI的`GPT-3.5-turbo`作为LLM，将上下文和用户查询输入模型，生成与上下文相关的回答。
 
 ![](img/25bdff427349e5443401bf4346c01e0e.png)
 
@@ -44,31 +45,28 @@ BARKPLUG V.2系统包括两个主要阶段：上下文检索和生成回答。
 
 ## 四、实现细节与未来工作
 
-实现细节：系统采用多线程爬虫收集数据，利用LangChain框架进行开发，后端使用Django，前端使用HTML/CSS/JavaScript。系统具有用户注册、查询、历史对话等功能。
+实现细节：系统采用多线程爬虫收集数据，利用`LangChain`框架进行开发，后端使用`Django`，前端使用`HTML`/`CSS`/`JavaScript`。系统具有用户注册、查询、历史对话等功能。
 
-### 数据收集和处理：
+### 数据收集和处理
 
-使用多线程爬虫收集数据，利用Scrapy Python库从42个校园资源网页上抓取信息，包括学术部门、财务资助、住宿、餐饮等。爬虫针对每个网页提取了url、标题和内容，保存为JSON格式。将各个JSON文件合并成一个主JSON文件，作为外部数据集。
+使用多线程爬虫收集数据，利用`Scrapy` Python库从42个校园资源网页上抓取信息，包括学术部门、财务资助、住宿、餐饮等。爬虫针对每个网页提取了`url`、标题和内容，保存为`JSON`格式。将各个`JSON`文件合并成一个主`JSON`文件，作为外部数据集。
 
-对主JSON文件进行预处理，移除噪声、删除冗余信息等，并采用递归分块策略，将文本分割成小块，每块约8000个字符，重叠约1200个字符，以提高检索性能。
+对主`JSON`文件进行预处理，移除噪声、删除冗余信息等，并采用递归分块策略，将文本分割成小块，每块约8000个字符，重叠约1200个字符，以提高检索性能。
 
-### 系统开发：
+### 系统开发
 
-利用LangChain框架开发系统。对主JSON文件进行分块处理，采用OpenAI的text-embedding-3-large模型将文本向量化，并存储在Chroma DB向量数据库中。使用向量数据库进行上下文检索，采用相似度阈值检索策略。生成回答阶段，使用OpenAI的GPT-3.5-turbo模型，通过API调用进行嵌入和生成。
+利用`LangChain`框架开发系统。对主`JSON`文件进行分块处理，采用OpenAI的`text-embedding-3-large`模型将文本向量化，并存储在`Chroma DB`向量数据库中。使用向量数据库进行上下文检索，采用相似度阈值检索策略。生成回答阶段，使用OpenAI的`GPT-3.5-turbo`模型，通过`API`调用进行嵌入和生成。
 
-### 系统功能：
+### 系统功能
 
-后端采用Django框架，前端使用HTML/CSS/JavaScript。系统具有用户注册、查询、历史对话管理等功能。系统部署在第三方云服务上，便于访问。
+后端采用`Django`框架，前端使用`HTML`/`CSS`/`JavaScript`。系统具有用户注册、查询、历史对话管理等功能。系统部署在第三方云服务上，便于访问。
 
-### 未来工作：
+### 未来工作
 
-+   计划添加多语言支持，以服务更多用户。
-
-+   集成语音识别和文本转换功能，以支持多种交互方式。
-
-+   改进检索算法，提高返回信息的准确性和相关性。
-
-+   应用LangChain的映射-归约文档链方法，以应对OpenAI API的token限制。
++ 计划添加多语言支持，以服务更多用户。
++ 集成语音识别和文本转换功能，以支持多种交互方式。
++ 改进检索算法，提高返回信息的准确性和相关性。
++ 应用`LangChain`的映射-归约文档链方法，以应对OpenAI `API`的`token`限制。
 
 通过上述改进，将BARKPLUG V.2打造成更可靠、易用的教育工具。
 

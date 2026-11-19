@@ -1,3 +1,4 @@
+
 # Building Effective AI Agents: A Guide for Startups
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/TmNXdulW5onAf1xo12AcEQaLnWh](https://gotoaiworld.feishu.cn/docx/TmNXdulW5onAf1xo12AcEQaLnWh)
@@ -6,41 +7,27 @@
 
 https://www.lomitpatel.com/articles/building-effective-ai-agents/
 
-If you’re [a startup](https://www.lomitpatel.com/articles/a-startup/) fo[un](https://www.lomitpatel.com/articles/how-ai-can-make-marketing-more-effective-without-touching-creative/)der, investor, or marketing leader, you might be wondering how to leverage artificial intelligence. The key is building effective AI agents, but there can be a learning curve.
+If you’re [a startup](https://www.lomitpatel.com/articles/a-startup/) founder, investor, or marketing leader, you might be wondering how to leverage artificial intelligence. The key is building effective AI agents, but there can be a learning curve.
 
 About 10% of companies are currently using AI agents, but a significant 82% plan to implement them soon. This data comes from a Capgemini survey of 1,100 executives, highlighting the rapidly growing interest in building effective AI agents.
 
-## Table Of Contents:
+## Table Of Contents
 
-+   Defining Agentic Systems
-
-+   When Not To Use Agents
-
-+   Smart Ways to Use AI Frameworks
-
-+   [S](https://www.lomitpatel.com/articles/building-effective-ai-agents/#startingwiththebasicsforbuildingeffectiveaiagents)tarting with the Basics for Building Effective AI Agents
-
-+   Ways to Structure AI Systems
-
-+   Prompt Chaining Workflow
-
-+   Routing Workflow
-
-+   Parallelization Workflow
-
-+   Orchestrator-Workers Workflow
-
-+   Evaluator-Optimizer Workflow
-
-+   Working with Agents
-
-+   [Prompt Design](https://www.lomitpatel.com/articles/building-effective-ai-agents/#promptdesign)
-
-+   [Tips for Improving ](https://www.lomitpatel.com/articles/building-effective-ai-agents/#tipsforimprovingtoolswithaiagents)Tools with AI Agents
-
-+   Combining and Improving Patterns
-
-+   [Conclusion](https://www.lomitpatel.com/articles/building-effective-ai-agents/#conclusion)
+- Defining Agentic Systems
+- When Not To Use Agents
+- Smart Ways to Use AI Frameworks
+- [Starting with the Basics for Building Effective AI Agents](https://www.lomitpatel.com/articles/building-effective-ai-agents/#startingwiththebasicsforbuildingeffectiveaiagents)
+- Ways to Structure AI Systems
+- Prompt Chaining Workflow
+- Routing Workflow
+- Parallelization Workflow
+- Orchestrator-Workers Workflow
+- Evaluator-Optimizer Workflow
+- Working with Agents
+- [Prompt Design](https://www.lomitpatel.com/articles/building-effective-ai-agents/#promptdesign)
+- [Tips for Improving Tools with AI Agents](https://www.lomitpatel.com/articles/building-effective-ai-agents/#tipsforimprovingtoolswithaiagents)
+- Combining and Improving Patterns
+- [Conclusion](https://www.lomitpatel.com/articles/building-effective-ai-agents/#conclusion)
 
 ## Defining Agentic Systems
 
@@ -62,9 +49,9 @@ Carefully consider what approach aligns best with your objectives.
 
 ## Smart Ways to Use AI Frameworks
 
-M[any frame](https://langchain-ai.github.io/langgraph)works exist to help create these systems, like LangGraph from LangChain. You also have Amazon’s AI Agent framework.
+[Many frameworks](https://langchain-ai.github.io/langgraph) exist to help create these systems, like LangGraph from LangChain. You also have Amazon’s AI Agent framework.
 
-[Other](https://rivet.ironcladapp.com/) opti[ons in](https://www.vellum.ai/)clude Rivet and Vellum, which allows for the design and testing of intricate systems. These tools accelerate development, but the abstraction layers can obscure the underlying prompts.
+[Other](https://rivet.ironcladapp.com/) options include Rivet and [Vellum](https://www.vellum.ai/), which allows for the design and testing of intricate systems. These tools accelerate development, but the abstraction layers can obscure the underlying prompts.
 
 Directly using APIs from LLMs can be a more efficient approach, enabling rapid setup. If using a framework, thoroughly understand the underlying code, as misinterpretations are a common source of errors.
 
@@ -102,7 +89,7 @@ LLMs can collaborate on a task, with their outputs aggregated programmatically.
 
 It has two main forms: sectioning and voting. Sectioning divides tasks, while voting provides multiple attempts from various angles.
 
-This is beneficial when sections r[equire rapid](https://www.techjuice.pk/the-most-effective-ai-tools-for-academic-research) processing and you need an effective AI capable of generating diverse perspectives. For instance, consider a safety system where one AI agent handles tasks, while another monitors for potential risks.
+This is beneficial when sections [require rapid processing](https://www.techjuice.pk/the-most-effective-ai-tools-for-academic-research) and you need an effective AI capable of generating diverse perspectives. For instance, consider a safety system where one AI agent handles tasks, while another monitors for potential risks.
 
 ### Orchestrator-Workers Workflow
 
@@ -126,7 +113,7 @@ For example, an evaluator LLM could suggest improvements to an initial response,
 
 Once initiated, the model may require ongoing input. Predicting every step in advance is often impossible.
 
-While this flexibility comes at a cost, it offers robust contro[l for lar](https://www.ibm.com/think/topics/ai-agents)ge-scale operations. Below are several tasks where AI agents excel.
+While this flexibility comes at a cost, it offers robust [control for large-scale](https://www.ibm.com/think/topics/ai-agents) operations. Below are several tasks where AI agents excel.
 
 One example is code debugging. Another, the “computer tasks” use case, enables an LLM to execute steps to achieve a specified goal.
 
@@ -136,11 +123,13 @@ Prompts for tool configuration warrant the same level of attention as the rest o
 
 Opting for markdown or a format readily accessible online is recommended. Providing the LLM with ample space to “think” will boost accuracy.
 
+
+
 Adopt the perspective of a novice user and consider how to clarify prompts, providing guidance for newer team members, even in organizations specializing in building effective AI agents. Refine input details to minimize erroneous steps, reducing the likelihood of mistakes.
 
 Experiment with different prompt variations and employ input models for testing and adjusting future behavior. Reference the Anthropic guide on Github.
 
-Consider using frameworks that might help get the job done, these include: LangGraph and Amazon’s agent framework.
+Consider using frameworks that might help get the job done, these include: `LangGraph` and `Amazon’s agent framework`.
 
 ## Tips for Improving Tools with AI Agents
 

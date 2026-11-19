@@ -1,32 +1,33 @@
+
 # 英伟达爆火智能体研究：AI逼真还原人类情感！会饿会孤独，会跑步会发火
 
-> 来源：[https://agijuejin.feishu.cn/docx/OtZsdQPg4oDXl0xK6pJca8v4nKd](https://agijuejin.feishu.cn/docx/OtZsdQPg4oDXl0xK6pJca8v4nKd)
+> 来源：`https://agijuejin.feishu.cn/docx/OtZsdQPg4oDXl0xK6pJca8v4nKd`
 
 > 作者：新智元
 
-> 原文：https://mp.weixin.qq.com/s/aPjhHMVHsKV1icUalSZv_w
+> 原文：`https://mp.weixin.qq.com/s/aPjhHMVHsKV1icUalSZv_w`
 
-**【新智元导读】**英伟达、华盛顿大学等机构提出的Humanoid Agents，行为竟如此接近人类！累了要休息，孤独要找人陪，发泄怒火时会跑步或冥想。
+【新智元导读】英伟达、华盛顿大学等机构提出的`Humanoid Agents`，行为竟如此接近人类！累了要休息，孤独要找人陪，发泄怒火时会跑步或冥想。
 
 AI智能体，竟然能反映人类的真实情感，还有人际关系中微妙的距离感？
 
 ![](img/fbc4e7442ee8f84fa1854c4b0e2199d6.png)
 
-最近，来自英伟达、华盛顿大学、港大的研究人员发布了类人智能体Humanoid Agents。从名字就可以看出，这种智能体能够反映人类的基本需求。以往的智能体模拟，智能不完全地模仿人类行为，原因就在于，它们并没有真正反映出人类的基本需求、真实情感及人际间微妙的距离感。而Humanoid Agents的初衷，就是研发一个融合上述元素的、更贴近人类的智能体。
+最近，来自英伟达、华盛顿大学、港大的研究人员发布了类人智能体`Humanoid Agents`。从名字就可以看出，这种智能体能够反映人类的基本需求。以往的智能体模拟，智能不完全地模仿人类行为，原因就在于，它们并没有真正反映出人类的基本需求、真实情感及人际间微妙的距离感。而`Humanoid Agents`的初衷，就是研发一个融合上述元素的、更贴近人类的智能体。
 
 ![](img/224482665b946c4bff10f662c2d927a9.png)
 
 智能体受系统1思维和系统2思维的指导，系统1思维会响应具体条件（如基本需求），而系统2思维则涉及明确的规划
 
-目前，论文已被EMNLP System Demonstrations 2023接收。
+目前，论文已被EMNLP System Demonstrations 2023接受。
 
 ![](img/43a52aa41d6f345281c4d5b20720b6a2.png)
 
-论文地址：https://arxiv.org/abs/2310.05418从这个视频可以看出，Humanoid Agents逼真地再现了《生活大爆炸》中谢耳朵和Penny交互的有趣场景。
+论文地址：`https://arxiv.org/abs/2310.05418`从这个视频可以看出，`Humanoid Agents`逼真地再现了《生活大爆炸》中谢耳朵和Penny交互的有趣场景。
 
 【观看视频请阅读原文】
 
-# **Humanoid Agents**
+## `Humanoid Agents`
 
 正如原子、分子和细胞的计算模拟塑造了我们研究科学的方式，类人智能体的真实模拟，也成为了研究人类行为的宝贵工具。
 
@@ -34,13 +35,13 @@ AI智能体，竟然能反映人类的真实情感，还有人际关系中微妙
 
 绝大多数人类，并不会提前制定计划，然后在日常生活中精确到一丝不苟地执行这些计划。
 
-为了减轻这个缺点的影响，研究者从心理学中汲取了灵感，提出了Humanoid Agents。
+为了减轻这个缺点的影响，研究者从心理学中汲取了灵感，提出了`Humanoid Agents`。
 
 ![](img/5a22424530b664bc6892d177374630f5.png)
 
 心理学家Kahneman认为，人类有两个互补的思维过程：系统1（直觉的、轻松的、即时的）和系统2（逻辑的、有意的、缓慢的）。
 
-而这次研究者提出的Humanoid Agents，就引入了系统1所需的三个要素——基本需求（饱腹感、健康和能量）、情感和关系亲密程度，来让智能体表现得更像人类。
+而这次研究者提出的`Humanoid Agents`，就引入了系统1所需的三个要素——基本需求（饱腹感、健康和能量）、情感和关系亲密程度，来让智能体表现得更像人类。
 
 ![](img/9e4a76014a9fff71b8da170fdc816e07.png)
 
@@ -72,11 +73,11 @@ AI智能体，竟然能反映人类的真实情感，还有人际关系中微妙
 
 ![](img/461dfab1e58d849bf8b17581ea185c35.png)
 
-实验证明，对于系统1各方面的变化，Humanoid Agents都可以有效响应并推断。而且，这种系统还可以扩展到更多方面，比如个性、道德价值观、同理心、乐于助人、文化背景等等。
+实验证明，对于系统1各方面的变化，`Humanoid Agents`都可以有效响应并推断。而且，这种系统还可以扩展到更多方面，比如个性、道德价值观、同理心、乐于助人、文化背景等等。
 
-# **工作原理**
+## 工作原理
 
-Humanoid Agents中，研究人员采用了OpenAI的ChatGPT-3.5。
+`Humanoid Agents`中，研究人员采用了OpenAI的`ChatGPT-3.5`。
 
 ![](img/aedaa1a2c5779192fc796169b4170f81.png)
 
@@ -88,11 +89,11 @@ Humanoid Agents中，研究人员采用了OpenAI的ChatGPT-3.5。
 
 ![](img/2f44ab37db8c210de784b37051fb4166.png)
 
-此外，Humanoid Agents的默认情绪被设置为7种可能的情绪：愤怒、悲伤、恐惧、惊讶、高兴、中立和厌恶。
+此外，`Humanoid Agents`的默认情绪被设置为7种可能的情绪：愤怒、悲伤、恐惧、惊讶、高兴、中立和厌恶。
 
 第2步：Agent开始计划自己的一天。
 
-**第**3步：Agent根据自己的计划采取行动。如果同在一个地点，Agent可以相互交谈，进而影响他们之间的关系。
+第3步：Agent根据自己的计划采取行动。如果同在一个地点，Agent可以相互交谈，进而影响他们之间的关系。
 
 Agent日计划以1小时为间隔，能够递归地分解计划，然后，以15分钟为间隔，来改进活动随时间的逻辑一致性。
 
@@ -122,22 +123,22 @@ Agent日计划以1小时为间隔，能够递归地分解计划，然后，以15
 
 除了默认的五种需求（饱腹感、社交、健康、娱乐和能量）之外，还可以为Agent添加/删除更多的基本需求。
 
-为此，用户需要按照以下格式，创建自己的default_agent_config.json文件：
+为此，用户需要按照以下格式，创建自己的`default_agent_config.json`文件：
 
 ```
 {
-    &quot;name&quot;: &quot;fullness&quot;, 
-    &quot;start_value&quot;: 5, 
-    &quot;unsatisfied_adjective&quot;: &quot;hungry&quot;, 
-    &quot;action&quot;: &quot;eating food&quot;, 
-    &quot;decline_likelihood_per_time_step&quot;: 0.05, 
-    &quot;help&quot;: &quot;from 0 to 10, 0 is most hungry; increases or decreases by 1 at each time step based on activity&quot;
+    "name": "fullness", 
+    "start_value": 5, 
+    "unsatisfied_adjective": "hungry", 
+    "action": "eating food", 
+    "decline_likelihood_per_time_step": 0.05, 
+    "help": "from 0 to 10, 0 is most hungry; increases or decreases by 1 at each time step based on activity";
 }
 ```
 
 ### 基本需求对活动的影响
 
-Humanoid Agents是一个动态系统，由许多组成部分组成，因此将每个基本需求对Agent活动的影响分离出来是一个挑战。为了调查每个基本需求的贡献，研究人员模拟了一个Agent的世界。这些Agent最初有一个基本需求设置为0，让Agent在一天开始时，极度饥饿、孤独、疲劳、不适或无聊。
+`Humanoid Agents`是一个动态系统，由许多组成部分组成，因此将每个基本需求对Agent活动的影响分离出来是一个挑战。为了调查每个基本需求的贡献，研究人员模拟了一个Agent的世界。这些Agent最初有一个基本需求设置为0，让Agent在一天开始时，极度饥饿、孤独、疲劳、不适或无聊。
 
 ![](img/29f57e51d17266956569299a839109ea.png)
 
@@ -145,7 +146,7 @@ Humanoid Agents是一个动态系统，由许多组成部分组成，因此将�
 
 然后，研究人员将其与Agent在正常情况下（每个基本需求设置为5，能量设置为10）执行此类活动所花费的时间，进行比较，从而，计算出在测试条件下，用于满足每种基本需求所花费时间的增加百分比。
 
-如下表所示，当健康（156%）、能量（56%）和饱腹感（35%）等基本需求被初始化为0时，Humanoid Agents对其活动的适应程度最高。
+如下表所示，当健康（156%）、能量（56%）和饱腹感（35%）等基本需求被初始化为0时，`Humanoid Agents`对其活动的适应程度最高。
 
 ![](img/d2c91b63903a5ef58a0ec2cffb19b1af.png)
 
@@ -179,7 +180,7 @@ Humanoid Agents是一个动态系统，由许多组成部分组成，因此将�
 
 ![](img/c23aadf019f0f1bfb15124803c24f52b.png)
 
-如上表所示，愤怒对行为主体影响最大（+15个活动） ，其次是悲伤和恐惧（各+10） ，然后是厌恶（+4）和惊讶（+1） ，最后是快乐（-2）。
+如上表所示，愤怒对行为主体影响最大（+15个活动），其次是悲伤和恐惧（各+10），然后是厌恶（+4）和惊讶（+1），最后是快乐（-2）。
 
 ![](img/caa4399922c42deba3c0d43784088bd6.png)
 
@@ -211,9 +212,9 @@ Agent距离较远的时候说话少，距离近的时候说话多，但是在距
 
 ### 与人类标注的比较
 
-为了评价Humanoid Agents的预测能力（比如活动是否满足自己的基本需求、活动中自己会表现出什么情绪、对话是否会使两个Agent更亲近），研究者将系统的预测与人类标注进行了比较。
+为了评价`Humanoid Agents`的预测能力（比如活动是否满足自己的基本需求、活动中自己会表现出什么情绪、对话是否会使两个Agent更亲近），研究者将系统的预测与人类标注进行了比较。
 
-三位人类标记者会使用和ChatGPT相同的指令，来标记林氏家族世界中一天的模拟。
+三位人类标记者会使用和`ChatGPT`相同的指令，来标记林氏家族世界中一天的模拟。
 
 每个标注者针对情感和基本需求都独立标注了144项活动，针对用户对话对则有30项标注。
 
@@ -223,7 +224,7 @@ Agent距离较远的时候说话少，距离近的时候说话多，但是在距
 
 表1显示，在所有基本需求、情感和关系亲密程度方面，评分者之间的信度良好（Fleiss'κ>=0.556）。
 
-研究者还发现，如果一项活动增加了饱腹感和能量，Agent就能在分类方面表现良好 (F1 >= 0.84) 。
+研究者还发现，如果一项活动增加了饱腹感和能量，Agent就能在分类方面表现良好 (F1 >= 0.84)。
 
 而且Agent能在活动中表达出情绪，对话还能拉近不同Agent之间的距离。
 
@@ -237,43 +238,43 @@ Agent会认为因为John Lin在药房工作，这些活动就有助于Agent的�
 
 研究者判断，如果使用更理解常识的语言模型，可能会缓解这个问题。
 
-# 都是用LLM构建AI智能体，创新在哪
+## 都是用LLM构建AI智能体，创新在哪
 
 斯坦福西部世界小镇的里程碑式论文一出，业界被激发了许多想象力，用LLM构建可想象的人类行为智能体研究也层出不穷。
 
-Humanoid Agents跟之前大热的BabyAGI、AutoGPT等智能体，区别在哪里呢？
+`Humanoid Agents`跟之前大热的`BabyAGI`、`AutoGPT`等智能体，区别在哪里呢？
 
 ![](img/0eeffddbbe84b87130c7d92dd33e9d90.png)
 
-研究者指出，Humanoid Agents应该是目前唯一模拟类人智能体日常活动的工作，其他的工作一般都是实现外部定义的目标。
+研究者指出，`Humanoid Agents`应该是目前唯一模拟类人智能体日常活动的工作，其他的工作一般都是实现外部定义的目标。
 
-比如Langchain Agents 、BabyAGI、AutoGPT、AgentVerse、Voyager和CAMEL，都是构建以任务为导向的智能体，通过递归将用户定义的任务分解为更简单的子任务来解决。
+比如`Langchain Agents`、`BabyAGI`、`AutoGPT`、`AgentVerse`、`Voyager`和`CAMEL`，都是构建以任务为导向的智能体，通过递归将用户定义的任务分解为更简单的子任务来解决。
 
 而且根据情感、游戏角色描述和个人事实生成的多轮对话响应，并不是由智能体动态模拟出的，而是基于一组静态的、与角色无关的文本信息。
 
 这些先前的工作，并不能模拟出动态属性的影响，比如无法反映出一对智能体之间亲密度的变化。
 
-而且，Humanoid Agents在生成对话响应时，可以同时考虑到基本需求、情感、亲密度等多个方面，就像真正的人类一样。
+而且，`Humanoid Agents`在生成对话响应时，可以同时考虑到基本需求、情感、亲密度等多个方面，就像真正的人类一样。
 
 而此前的这些工作，一次只考虑了一个方面。
 
-## 定制Agent
+### 定制Agent
 
 目前，系统支持三种内置设置：
 
-1.  生活大爆炸（Big Bang Theory）
+1. 生活大爆炸（Big Bang Theory）
 
 ```
 --map_filename ../locations/big_bang_map.yaml \ --agent_filenames ../specific_agents/sheldon_cooper.json ../specific_agents/leonard_hofstadter.json ../specific_agents/penny.json
 ```
 
-1.  老友记（Friends）
+2. 老友记（Friends）
 
 ```
 --map_filename ../locations/friends_map.yaml \ --agent_filenames ../specific_agents/joey_tribbiani.json ../specific_agents/monica_gellor.json ../specific_agents/rachel_greene.json
 ```
 
-1.  Lin Family
+3. Lin Family
 
 ```
 --map_filename ../locations/lin_family_map.yaml \ --agent_filenames ../specific_agents/eddy_lin.json ../specific_agents/john_lin.json
@@ -281,31 +282,33 @@ Humanoid Agents跟之前大热的BabyAGI、AutoGPT等智能体，区别在哪里
 
 同时，用户还可以通过自定义设置，创建自己的地图和Agent。
 
-需要注意的是，Agent和地图并不是完全分离的。对于指定的每一个agent_filename，它的name字段都必须作为关键字包含在Agents下的map.yaml中。
+需要注意的是，Agent和地图并不是完全分离的。对于指定的每一个`agent_filename`，它的`name`字段都必须作为关键字包含在Agents下的`map.yaml`中。
 
-## 分析面板
+### 分析面板
 
 Agent在活动过程中所生成的数据，可通过交互式仪表盘直观显示。它包括基本需求图和社会关系图，以及相应的信息，包括情感和对话细节。
 
 ```
 cd humanoidagents
-python run_dashboard.py --folder &lt;folder/containing/generation/output/from/run_simulation.py&gt;
+python run_dashboard.py --folder <folder/containing/generation/output/from/run_simulation.py>
 ```
 
 **所需参数**
 
-+   --folder是run_simulation.py生成的输出结果存放的文件夹
++ `--folder`是`run_simulation.py`生成的输出结果存放的文件夹
 
-+   --mode是从文件夹中选择数据的方法。它有两种模式：（1）all：显示文件夹中的所有文件（2）date_range：显示所选日期范围内的文件（需要在参数中说明）
++ `--mode`是从文件夹中选择数据的方法。它有两种模式：（1）all：显示文件夹中的所有文件（2）date_range：显示所选日期范围内的文件（需要在参数中说明）
 
 **可选参数**
 
-+   当--mode = date_range时，--start_date是起始日期（包含）。格式为YYYY-MM-DD，如2023-01-03
++ 当`--mode = date_range`时，`--start_date`是起始日期（包含）。格式为YYYY-MM-DD，如2023-01-03
 
-+   当--mode = date_range时，--end_date是结束日期（包含）。格式为YYYY-MM-DD，如2023-01-04
 
-# **作者介绍**
+
++   当`--mode = date_range`时，`--end_date`是结束日期（包含）。格式为`YYYY-MM-DD`，如`2023-01-04`
+
+# 作者介绍
 
 **Zhilin Wang**Zhilin Wang是英伟达NeMo NLP团队的高级应用科学家。此前，他曾获得华盛顿大学硕士学位，学习的是自然语言处理，研究对话系统和计算社会科学。
 
-参考资料：https://github.com/HumanoidAgents/HumanoidAgents
+参考资料：`https://github.com/HumanoidAgents/HumanoidAgents`

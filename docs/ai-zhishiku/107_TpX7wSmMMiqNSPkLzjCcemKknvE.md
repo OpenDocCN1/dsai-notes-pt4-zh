@@ -1,3 +1,4 @@
+
 # PS Beta Windows 绿色版
 
 > 来源：[https://my.feishu.cn/docx/P8FmdVNEXocNM0xYZh2cbBKXnkd](https://my.feishu.cn/docx/P8FmdVNEXocNM0xYZh2cbBKXnkd)
@@ -16,9 +17,9 @@ PS beta 绿色版！无需注册登录直接用 AI 功能！暂时只有 win 20h
 
 先安装 Adobe Creative Cloud 登录，将 PS 文件夹解压到任意地方，打开 PS 就应该在登录状态，直接使用即可。
 
-## **使用过程中容易出现的问题说明**
+## 使用过程中容易出现的问题说明
 
-1.不能使用 AI 创成式填充工具
+1. 不能使用 AI 创成式填充工具
 
 解决方法：
 
@@ -26,23 +27,23 @@ PS beta 绿色版！无需注册登录直接用 AI 功能！暂时只有 win 20h
 
 （2）此版本需要安装 Adobe Creative Cloud，需要登录美国地区的账号才能使用创成式填充工具。如果登录的是大陆地区账号，打开 Adobe Creative Cloud 注销账号，在登录页面点击注册新账号，用任意邮箱注册，地区选择美国（非常重要），生日年龄要大于 18 岁，注册成功使用注册的新账号登录 Adobe Creative Cloud 即可
 
-2.不是中文版
+2. 不是中文版
 
 解决方法：
 
-查看压缩包中文设置。png
+查看压缩包`中文设置.png`。
 
-3.有些电脑加载会弹错误无法启动，或 PS 卡住
+3. 有些电脑加载会弹错误无法启动，或 PS 卡住
 
 解决方法：
 
-（1）先备份 Photoshop 24.6.0 Portable\Sandbox\roaming\modified\@PROGRAMFILES@\Adobe\Adobe Photoshop （Beta）\Locales 里的 zh_CN 文件夹；
+（1）先备份`Photoshop 24.6.0 Portable\Sandbox\roaming\modified\@PROGRAMFILES@\Adobe\Adobe Photoshop （Beta）\Locales`里的`zh_CN`文件夹；
 
-（2）删除整个 Sandbox 文件夹；
+（2）删除整个`Sandbox`文件夹；
 
-（3）启动 Photoshop.exe（初始化 OK，自动生成新的 Sandbox 文件夹）
+（3）启动`Photoshop.exe`（初始化 OK，自动生成新的`Sandbox`文件夹）
 
-（4）将备份的 zh_CN 文件夹还原回 1 的位置；
+（4）将备份的`zh_CN`文件夹还原回 1 的位置；
 
 （5）启动首选项重新选择语言，重启
 

@@ -1,49 +1,50 @@
+
 # AI绘画魔法
 
 > 来源：[https://e0lrm2v2v1u.feishu.cn/docx/TiYFdSFPAo48hjxXOb0c7w7Jnde](https://e0lrm2v2v1u.feishu.cn/docx/TiYFdSFPAo48hjxXOb0c7w7Jnde)
 
-### **NovelAI专属**
+## NovelAI专属
 
-[Novel AI 元素魔法全收录 http](https://docs.qq.com/doc/DWHl3am5Zb05QbGVs)s://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+[Novel AI 元素魔法全收录](https://docs.qq.com/doc/DWHl3am5Zb05QbGVs)
 
-http://wolfchen.top/tag/
+`http://wolfchen.top/tag/`
 
-https://aitag.top/
+`https://aitag.top/`
 
-https://tags.novelai.dev/
+`https://tags.novelai.dev/`
 
-[元素法典——Novel AI 元素魔法全收](https://docs.qq.com/doc/DWHl3am5Zb05QbGVs)录: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+[元素法典——Novel AI 元素魔法全收录](https://docs.qq.com/doc/DWHl3am5Zb05QbGVs)
 
-NovelAI 法术解析: https://spell.novelai.dev/
+NovelAI 法术解析: `https://spell.novelai.dev/`
 
-### **DD关键词**
+## DD关键词
 
 [Disco Diffusion](https://www.notion.so/Disco-Diffusion-d8a78d7a5a8b40238da820687615dee6)
 
-### **SD**** 关键词**
+## SD关键词
 
-Civitai元素法典 https://docs.google.com/document/d/1xFGVMr_ELDDW9WkKw27wjsWqSDNYlLWtsY93Ost-0QE/edit
+Civitai元素法典 `https://docs.google.com/document/d/1xFGVMr_ELDDW9WkKw27wjsWqSDNYlLWtsY93Ost-0QE/edit`
 
-https://arthub.ai/
+`https://arthub.ai/`
 
-https://lexica.art/
+`https://lexica.art/`
 
-[h](https://www.krea.ai/?continueFlag=6591d07b3186f4c7e58de1a4bcfaefb0)ttps://www.krea.ai/?continueFlag=6591d07b3186f4c7e58de1a4bcfaefb0
+[https://www.krea.ai/?continueFlag=6591d07b3186f4c7e58de1a4bcfaefb0](https://www.krea.ai/?continueFlag=6591d07b3186f4c7e58de1a4bcfaefb0)
 
-[h](https://promptomania.com/stable-diffusion-prompt-builder/)ttps://promptomania.com/stable-diffusion-prompt-builder/
+[https://promptomania.com/stable-diffusion-prompt-builder/](https://promptomania.com/stable-diffusion-prompt-builder/)
 
-### **MJ关键词**
+## MJ关键词
 
-[https://prompt.noo](https://prompt.noonshot.com/midjourney)nshot.com/midjourney
+[https://prompt.noonshot.com/midjourney](https://prompt.noonshot.com/midjourney)
 
-[h](https://huggingface.co/spaces/doevent/prompt-generator)ttps://huggingface.co/spaces/doevent/prompt-generator
+[https://huggingface.co/spaces/doevent/prompt-generator](https://huggingface.co/spaces/doevent/prompt-generator)
 
-[https://midjourney-prompt](https://midjourney-prompt-helper.netlify.app/)-helper.netlify.app/
+[https://midjourney-prompt-helper.netlify.app/](https://midjourney-prompt-helper.netlify.app/)
 
-### **法术解析**
+## 法术解析
 
-https://spell.novelai.dev/
+`https://spell.novelai.dev/`
 
-Deep Danbooru： [http://dev.kanotype.ne](http://dev.kanotype.net:8003/deepdanbooru/)t:8003/deepdanbooru/
+Deep Danbooru：[http://dev.kanotype.net:8003/deepdanbooru/](http://dev.kanotype.net:8003/deepdanbooru/)
 
-http://www.prompttool.com/
+`http://www.prompttool.com/`

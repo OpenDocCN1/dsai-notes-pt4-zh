@@ -1,3 +1,4 @@
+
 # 搞定视频号下载
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/K4l6deCxKoegFSxh7MYcQjgqnKg](https://xodnytdcaw.feishu.cn/docx/K4l6deCxKoegFSxh7MYcQjgqnKg)
@@ -6,11 +7,11 @@
 
 ## 软件下载
 
-https://github.com/ltaoo/wx_channels_download
+`https://github.com/ltaoo/wx_channels_download`
 
 > 迅雷云盘下载
 
-> https://pan.xunlei.com/s/VOXNsSH2yrt68jPfe3ry7ZDKA1?pwd=jn8b#
+> `https://pan.xunlei.com/s/VOXNsSH2yrt68jPfe3ry7ZDKA1?pwd=jn8b#`
 
 ### 运行软件
 
@@ -28,10 +29,10 @@ https://github.com/ltaoo/wx_channels_download
 
 ## 类似的软件
 
-https://github.com/putyy/res-downloader/releases
+`https://github.com/putyy/res-downloader/releases`
 
 ![](img/184786cee02d5525a59d98d76a31f36b.png)
 
-https://pan.xunlei.com/s/VOSDP729xrnfS2Zu_YSAKYOxA1?pwd=cenp
+`https://pan.xunlei.com/s/VOSDP729xrnfS2Zu_YSAKYOxA1?pwd=cenp`
 
 ![](img/3572dbea749fbee4d520865aca18717e.png)

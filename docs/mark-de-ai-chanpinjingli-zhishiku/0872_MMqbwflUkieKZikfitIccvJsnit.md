@@ -1,40 +1,41 @@
+
 # AI产品经理总结 | LLM中14种Prompt策略
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Ql70dmzFHo40zyxZviVcryion5d](https://qqs7y1hozd1.feishu.cn/docx/Ql70dmzFHo40zyxZviVcryion5d)
 
 ## Zero-Shot Prompting
 
-> **是一种最直接的 Prompt，**不给 GPT 提供任何示范、样本数据或上下文，直接让其执行对应的任务或回答对应的问题。
+> 是一种最直接的 Prompt，不给 GPT 提供任何示范、样本数据或上下文，直接让其执行对应的任务或回答对应的问题。
 
-**若该知识存在于 GP**T 对应的训练数据库时，它能够给出正确的回答。否则可能不会给出预期的回答。
+若该知识存在于 GPT 对应的训练数据库时，它能够给出正确的回答。否则可能不会给出预期的回答。
 
 此种是最基础的 Prompt，需要在此基础进行优化，引导 GPT 给出我们想要的结果。
 
 > 在吴恩达的 ChatGPT Prompt Engineering 中，有提到一个这个技巧的另一种用法，不仅仅只是让 AI 按步骤行事，还会告知 AI 每一步要做什么。
 
 ```
-Let&#x27;s work this out in a step by step way to be sure we have the right answer.
+Let's work this out in a step by step way to be sure we have the right answer.
 ```
 
 ```
-prompt_2 = f&quot;&quot;&quot;
+prompt_2 = f"""
 Your task is to perform the following actions:
 1 - Summarize the following text delimited by
-  &lt;&gt; with 1 sentence.
+  <> with 1 sentence.
 2 - Translate the summary into French.
 3 - List each name in the French summary.
 4 - Output a json object that contains the
   following keys: french_summary, num_names.
 
 Use the following format:
-Text: &lt;text to summarize&gt;
-Summary: &lt;summary&gt;
-Translation: &lt;summary translation&gt;
-Names: &lt;list of names in Italian summary&gt;
-Output JSON: &lt;json with summary and num_names&gt;
+Text: <text to summarize>
+Summary: <summary>
+Translation: <summary translation>
+Names: <list of names in Italian summary>
+Output JSON: <json with summary and num_names>
 
-Text: &lt;{text}&gt;
-&quot;&quot;&quot;
+Text: <{text}>
+"""
 ```
 
 以上代码，开头是让 AI 按照 1 ～ 4 步运行；然后再让 AI 根据特定格式输出内容。
@@ -43,9 +44,9 @@ Text: &lt;{text}&gt;
 
 ```
 Summary: Jack and Jill go on a quest to fetch water, but misfortune strikes and they tumble down the hill, returning home slightly battered but with their adventurous spirits undimmed.
-Translation: Jack et Jill partent en quête d&#x27;eau, mais la malchance frappe et ils dégringolent la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.
+Translation: Jack et Jill partent en quête d'eau, mais la malchance frappe et ils dégringolent la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.
 Names: Jack, Jill
-Output JSON: {&quot;french_summary&quot;: &quot;Jack et Jill partent en quête d&#x27;eau, mais la malchance frappe et ils dégringolent la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.&quot;, &quot;num_names&quot;: 2}
+Output JSON: {"french_summary": "Jack et Jill partent en quête d'eau, mais la malchance frappe et ils dégringolent la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.", "num_names": 2}
 ```
 
 ## Few-Shot Prompting
@@ -77,33 +78,33 @@ A:
 
 > 当向 GPT 提问一个逻辑推理题时，它在思考的过程中会漏掉一些关键步骤。
 
-**此时，为了得到预期的效果，可以在**问题的结尾加一句：让我们一步步地思考（Let's think step by step ）。
+此时，为了得到预期的效果，可以在问题的结尾加一句：让我们一步步地思考（`Let's think step by step`）。
 
 ```
 from transformers import pipeline
  
 # 初始化连续对话系统
 def initialize_cot_model(model_name):
-    cot_model = pipeline(&#x27;text-generation&#x27;, model=model_�me)
+    cot_model = pipeline('text-generation', model=model_�me)
     return cot_model
  
 # 进行连续对话，模仿CoT
 def cot_dialogue(cot_model, prompt):
-    response = cot_model(prompt, max_length=50)[0][&#x27;text&#x27;]
+    response = cot_model(prompt, max_length=50)[0]['text']
     return response
  
 # 使用指定的模型名称初始化模型
-model_name = &#x27;gpt-3&#x27;  # 例如，可以使用gpt-3或其他任何支持文本生成的模型
+model_name = 'gpt-3'  # 例如，可以使用gpt-3或其他任何支持文本生成的模型
 cot_model = initialize_cot_model(model_name)
  
 # 提供提示词并开始对话
-prompt = &quot;你是一个人工智能程序。请像人类一样思考并回答以下问题：&quot;
-question = &quot;1 + 1 等于多少？&quot;
+prompt = "你是一个人工智能程序。请像人类一样思考并回答以下问题："
+question = "1 + 1 等于多少？"
 full_prompt = prompt + question
 response = cot_dialogue(cot_model, full_prompt)
  
-print(f&quot;Question: {question}&quot;)
-print(f&quot;Answer: {response}&quot;)
+print(f"Question: {question}")
+print(f"Answer: {response}")
 ```
 
 ## Self-Consistency
@@ -119,7 +120,7 @@ Consider a multi-step reasoning problem like the following:
 
 Question: If a store has 10 apples and 8 oranges, and it sells 6 apples and 4 oranges, how many fruits are left in the store?
 
-Instead of directly answering the question, the chain-of-thought prompting would require the language model to produce a series of short sentences that mimic a human&#x27;s reasoning process:
+Instead of directly answering the question, the chain-of-thought prompting would require the language model to produce a series of short sentences that mimic a human's reasoning process:
 
 The store has 10 apples.
 The store has 8 oranges.
@@ -174,19 +175,19 @@ The store now has 4 apples + 4 oranges = 8 fruits.
 ```
 # 定义一个简单的问答系统
 QA_PAIRS = {
-    &quot;你好&quot;: &quot;你好！&quot;,
-    &quot;今天的天气如何&quot;: &quot;不好说，因为我是一个人工智能。&quot;,
-    &quot;编程语言排行&quot;: &quot;Python 是最流行的编程语言。&quot;
+    "你好": "你好！",
+    "今天的天气如何": "不好说，因为我是一个人工智能。",
+    "编程语言排行": "Python 是最流行的编程语言。"
 }
  
 def generate_answer_from_prompt(prompt):
     for question, answer in QA_PAIRS.items():
         if prompt == question:
             return answer
-    return &quot;抱歉，我不知道这个问题的答案。&quot;
+    return "抱歉，我不知道这个问题的答案。"
  
 # 使用示例
-prompt = &quot;编程语言排行&quot;
+prompt = "编程语言排行"
 answer = generate_answer_from_prompt(prompt)
 print(answer)
 ```
@@ -201,20 +202,20 @@ print(answer)
 
 ```
 # 假设你使用的是一个大型语言模型，比如GPT-4或其他的模型
-# 你需要先设置一个环境，比如使用一个Python库来访问模型，例如使用&#x27;transformers&#x27;库
+# 你需要先设置一个环境，比如使用一个Python库来访问模型，例如使用'transformers'库
 from transformers import AutoModelForCausalLM, AutoTokenizer
  
 # 加载预训练的模型和分词器
-tokenizer = AutoTokenizer.from_pretrained(&quot;gpt-4&quot;)
-model = AutoModelForCausalLM.from_pretrained(&quot;gpt-4&quot;)
+tokenizer = AutoTokenizer.from_pretrained("gpt-4")
+model = AutoModelForCausalLM.from_pretrained("gpt-4")
  
 # 你的提示词，要求模型展示自动推理的能力
-prompt = &quot;请使用自动推理的能力来解决以下问题：
+prompt = "请使用自动推理的能力来解决以下问题：
  
-假设有三个数字：1, 2, 和 3。你能否通过加减乘除和取余等基本运算，将这三个数字组合起来形成一个等式，使得等式的结果为 4?&quot;
+假设有三个数字：1, 2, 和 3。你能否通过加减乘除和取余等基本运算，将这三个数字组合起来形成一个等式，使得等式的结果为 4?"
  
 # 对输入的提示进行编码
-input_ids = tokenizer.encode(prompt, return_tensors=&#x27;pt&#x27;)
+input_ids = tokenizer.encode(prompt, return_tensors='pt')
  
 # 使用模型生成响应
 outputs = model.generate(input_ids)
@@ -225,11 +226,11 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ## Self-Ask Prompting
 
-> 是从**直接提示和****思维链****提示**中发展而来的。
+> 是从直接提示和思维链提示中发展而来的。
 
 好处在于 LLM 的推理过程被明确展示出来。
 
-> **同时 LLM 还将问题分解成**更小的后续问题。LLM 知道何时达到最终答案，并可以从跟进中间答案转移到最终答案。
+> 同时 LLM 还将问题分解成更小的后续问题。LLM 知道何时达到最终答案，并可以从跟进中间答案转移到最终答案。
 
 ```
 class LLM:
@@ -238,11 +239,11 @@ class LLM:
     
     def generate(self, prompt):
         # 假设generate方法用于生成文本
-        return &quot;这是对问题 &#x27;{}&#x27; 的回答&quot;.format(prompt.split(&#x27;:&#x27;)[-1].strip())
+        return "这是对问题 '{}' 的回答".format(prompt.split(':')[-1].strip())
 # 创建一个模型实例
 model = LLM()
 # 用户提出问题
-question = &quot;这是一个示例问题&quot;
+question = "这是一个示例问题"
 # 获取模型的回答
 answer = model.generate(prompt)
  
@@ -260,21 +261,21 @@ print(answer)
 from transformers import AutoModel, AutoTokenizer, AutoModelForCausalLM
  
 # 加载预训练的模型和分词器
-tokenizer = AutoTokenizer.from_pretrained(&quot;t5-base&quot;)
-model = AutoModelForCausalLM.from_pretrained(&quot;t5-base&quot;)
+tokenizer = AutoTokenizer.from_pretrained("t5-base")
+model = AutoModelForCausalLM.from_pretrained("t5-base")
  
 def generate_sequence(input_str, model=model, tokenizer=tokenizer, max_length=200, temperature=0.7):
-    inputs = tokenizer.encode(input_str, return_tensors=&#x27;pt&#x27;)
+    inputs = tokenizer.encode(input_str, return_tensors='pt')
     outputs = model.generate(inputs, max_length=max_length, temperature_threshold=temperature)
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
  
 # 用户连续提问或指令
-user_input = &quot;你好，今天天气怎样？&quot;
+user_input = "你好，今天天气怎样？"
 response = generate_sequence(user_input)
 print(response)
  
 # 继续提问或指令
-user_input += &quot; 能否推荐一个餐馆？&quot;
+user_input += " 能否推荐一个餐馆？"
 response = generate_sequence(user_input)
 print(response)
 ```
@@ -283,12 +284,14 @@ print(response)
 
 是一种基于符号推理和可行性逻辑的智能问答技术。
 
-> 可以使用**逻辑推理和知识表示**来解决复杂的问题。
+> 可以使用逻辑推理和知识表示来解决复杂的问题。
 
-```
+
+
+```python
 import torch
 from torch import nn
- 
+
 # 定义一个基本的符号推理模块
 class SymbolicReasoningModule(nn.Module):
     def __init__(self, num_choices, embedding_dim, hidden_dim):
@@ -312,7 +315,7 @@ class SymbolicReasoningModule(nn.Module):
         return logits
 ```
 
-```
+```python
 # 使用该模块的示例
 num_choices = 4  # 假设有4个选项
 embedding_dim = 100  # 嵌入维度
@@ -335,25 +338,25 @@ logits = model(question_embeddings, choice_embeddings)
 
 > 排序性能对检索到的排名靠前的候选项目敏感，适合考察LLM推荐能力的细微差异。
 
-```
+```python
 # 假设我们有一个大型语言模型对象 `language_model`
 def iterative_prompting(language_model, prompt, max_iterations=5):
     response = language_model.generate(prompt)
     for _ in range(max_iterations):
-        prompt = f&quot;{prompt} {response}&quot;
+        prompt = f"{prompt} {response}"
         response = language_model.generate(prompt)
     return response
 ```
 
 ## Program-Aided Language Models
 
-> **一种使用 LLM 阅读自**然语言问题并生成程序作为中间推理步骤的新方法，但将解决方案步骤卸载（offloads）到例如 Python 解释器运行。
+> 一种使用 LLM 阅读自然语言问题并生成程序作为中间推理步骤的新方法，但将解决方案步骤卸载（offloads）到例如 Python 解释器运行。
 
 > 这个方法来自于 2022 年，Luyu Gao 等人的研究，根据他们的研究，在 LLM 模型中，即使使用了前面提到的 Chain of Thought 的方法，也未必能拿到答案。
 
-其中使用的 prompt 是这样的：
+其中使用的 `prompt` 是这样的：
 
-```
+```python
 Q: Roger has 5 tennis balls. He buys 2 more cans of
 tennis balls. Each can has 3 tennis balls. How many
 tennis balls does he have now?
@@ -367,9 +370,9 @@ store returned 6 unsold loaves. How many loaves of
 bread did they have left?
 ```
 
-论文里提到，当年他们的模型的 Output 是这样的：
+论文里提到，当年他们的模型的 `Output` 是这样的：
 
-```
+```python
 A: The bakers started with 200 loaves. They sold 93 in
 the morning and 39 in the afternoon. So they sold 93 +
 39 = 132 loaves. The grocery store returned 6 loaves. So
@@ -379,24 +382,24 @@ The answer is 62.
 
 ## Least-To-Most Prompting
 
-**关键思想是把一个复杂的问题分解成**一系列更简单的子问题，然后依次解决它们。
+关键思想是把一个复杂的问题分解成一系列更简单的子问题，然后依次解决它们。
 
-> **它由两个连续的阶段组成:**
+> 它由两个连续的阶段组成:
 
-1.  **分解**。此阶段的提示包含演示分解的固定示例，然后是要分解的特定问题。
+1. 分解。此阶段的提示包含演示分解的固定示例，然后是要分解的特定问题。
 
-1.  **子问题解决**。这一阶段的提示由三部分组成:(1)演示如何解决子问题的恒定示例;(2)之前回答的子问题和生成的解决方案的潜在空列表，以及(3)接下来要回答的问题。
+2. 子问题解决。这一阶段的提示由三部分组成:(1)演示如何解决子问题的恒定示例;(2)之前回答的子问题和生成的解决方案的潜在空列表，以及(3)接下来要回答的问题。
 
-```
+```python
 # 假设我们有一个大型语言模型的接口 `LLM`
 class LLM:
     def respond(self, prompt):
         # 这里应该是与大型语言模型交互的代码
-        return &quot;模型回应: &quot; + prompt
+        return "模型回应: " + prompt
  
 # 使用LTM策略的函数
 def ltm_prompting(llm, task, max_steps=5):
-    specific_prompt = f&quot;请{task}并给出解决方案&quot;
+    specific_prompt = f"请{task}并给出解决方案"
     response = llm.respond(specific_prompt)
     print(response)
  
@@ -404,40 +407,40 @@ def ltm_prompting(llm, task, max_steps=5):
 my_llm = LLM()
  
 # 应用LTM提示策略
-task = &quot;解决这个算术问题：100个苹果 + 200个香蕉 = 多少个水果&quot;
+task = "解决这个算术问题：100个苹果 + 200个香蕉 = 多少个水果"
 ltm_prompting(my_llm, task)
 ```
 
 ## Meta-Prompting
 
-> **使用输入和来自多个不同的**专业专家模型或代码执行的输出解读其自身输出的过程。
+> 使用输入和来自多个不同的专业专家模型或代码执行的输出解读其自身输出的过程。
 
-> 让语言模型自己决定要使用哪些 prompt 或使用哪些代码段。
+> 让语言模型自己决定要使用哪些 `prompt` 或使用哪些代码段。
 
 > 能提升整体性能，而且在多个不同任务上也往往能实现新的最佳结果。
 
-```
+```python
 from transformers import pipeline
  
 # 初始化一个使用meta-prompting的问答模型
 def initialize_model_with_meta_prompt(model_name, meta_prompt):
-    model = pipeline(&#x27;text-generation&#x27;, model=model_name)
+    model = pipeline('text-generation', model=model_name)
     model.prompt = meta_prompt
     return model
  
 # 使用meta-prompting进行问答
 def answer_question_with_meta_prompt(model, question):
-    return model(f&#x27;{model.prompt} {question}&#x27;, max_length=50)[0][&#x27;text&#x27;]
+    return model(f'{model.prompt} {question}', max_length=50)[0]['text']
  
 # 示例使用
-model_name = &#x27;google/xlnet-base-cased&#x27;
-meta_prompt = &quot;以下是对查询的回应:&quot;
+model_name = 'google/xlnet-base-cased'
+meta_prompt = "以下是对查询的回应:"
  
 # 初始化模型
 model = initialize_model_with_meta_prompt(model_name, meta_prompt)
  
 # 进行问答
-question = &quot;地球上的最高山是哪座山？&quot;
+question = "地球上的最高山是哪座山？"
 answer = answer_question_with_meta_prompt(model, question)
 print(answer)
 ```
@@ -448,22 +451,22 @@ print(answer)
 
 通过推理轨迹生成和实际行动相结合，可提高语言模型的决策可解释性和可信度。
 
-```
+```python
 from transformers import LLMController, LLMOutput
  
 # 初始化LLM控制器
-controller = LLMController.from_pretrained(&quot;microsoft/LLaMA-7B-hf&quot;)
+controller = LLMController.from_pretrained("microsoft/LLaMA-7B-hf")
  
 # 定义ReAct Prompting的函数
 def react_prompt(prompt: str, temperature: float = 0.7):
     # 使用ReAct Prompting的提示模板
-    prompt = f&quot;ReAct\n&gt; {prompt}\n\n\n&quot;
+    prompt = f"ReAct\n> {prompt}\n\n\n"
     # 使用LLM控制器生成输出
     output = controller.generate(prompt, max_length=50, temperature=temperature)
     return output
  
 # 使用ReAct Prompting生成内容
-prompt = &quot;写一个关于太阳系的科学概述&quot;
+prompt = "写一个关于太阳系的科学概述"
 output = react_prompt(prompt)
  
 # 打印生成的输出

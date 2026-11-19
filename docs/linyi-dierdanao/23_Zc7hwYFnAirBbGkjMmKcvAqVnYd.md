@@ -1,347 +1,326 @@
+
 # Python编程语言-从入门到精通
 
 > 来源：[https://docs.feishu.cn/docx/WcGIdqKZzoLvFExbMLwcf5hNnVy](https://docs.feishu.cn/docx/WcGIdqKZzoLvFExbMLwcf5hNnVy)
 
-# Python编程语言-1个月学会
+## Python编程语言-1个月学会
 
-1.  Python 教程列表：
+### 教程资源
 
-https://www.bilibili.com/video/BV1Sz4y1U77N/?spm_id_from=333.337.search-card.all.click&vd_source=390875fa901ff2bc2178a9d8b58b5bf9
+#### Python 教程
 
-https://www.bilibili.com/video/BV1944y1x7SW?spm_id_from=333.788.player.switch&vd_source=61c77e316992315215eb430d8fd14b3f&p=6
+- https://www.bilibili.com/video/BV1Sz4y1U77N/?spm_id_from=333.337.search-card.all.click&vd_source=390875fa901ff2bc2178a9d8b58b5bf9
+- https://www.youtube.com/watch?v=bPrmA1SEN2k&list=PLZoTAELRMXVNUL99R4bDlVYsncUNvwUBB
 
-https://www.youtube.com/watch?v=bPrmA1SEN2k&list=PLZoTAELRMXVNUL99R4bDlVYsncUNvwUBB
+#### Flask 教程
 
-1.  Flask 教程列表：
+- https://www.youtube.com/watch?v=4L_xAWDRs7w&list=PLZoTAELRMXVPBaLN3e-uoVRR9hlRFRfUc
 
-https://www.youtube.com/watch?v=4L_xAWDRs7w&list=PLZoTAELRMXVPBaLN3e-uoVRR9hlRFRfUc
+#### FastAPI 教程
 
-1.  FastAPI 教程：
+- https://www.youtube.com/watch?v=WU65u9d-97c&list=PLZoTAELRMXVPgsojPOHF9i0u2L83-m9P7
 
-https://www.youtube.com/watch?v=WU65u9d-97c&list=PLZoTAELRMXVPgsojPOHF9i0u2L83-m9P7
+#### MOOC 中文教程（北京理工大学）
 
-1.  mooc平台的中文教程：北理工
+- https://www.icourse163.org/course/BIT-268001?tid=1471277463#/info
 
-https://www.icourse163.org/course/BIT-268001?tid=1471277463#/info
+## Python 基础
 
-# Python：
+### 0、前置事项
 
-# 0、前置事项：
+安装 `Python` 解释器，机器无法直接读懂我们的代码，需要有个解释器去翻译，翻译一行执行一行，去官网下载即可。
 
-+   安装Python解释器，机器无法直接读懂我们的代码，需要有个解释器去翻译，翻译一行执行一行，去官网下载即可。
+还有交互模式，不需要 `print`，写一行执行一行。
 
-> 还有种交互模式，不需要print，写一行执行一行
+`PyCharm`：IDE，集成开发环境。
 
-+   PyCharm：IDE，集成开发环境。
+`vene`：独立的虚拟环境，让每个项目都可以使用不同的解释器或者三方库。
 
-> vene：独立的虚拟环境，让每个项目都可以使用不同的解释器或者三方库。
+### 1、输出
 
-# 1、输出：
+`print("输出内容")`
 
-> print("输出内容")
+`print("a"+"b"+"c")`，字符串连接
 
-> print("a"+"b"+"c")，字符串连接
+`print("he is \"a\")`，转义符 `\`
 
-> print("he is \"a\")，转义符\
+`print("hello!\nHi")`，换行
 
-> print("hello!\nHi")，换行
+```
+'''
+任意内容
+'''
+```
 
-> print（'''
+三引号，不需要换行，原文打印
 
-> 任意内容
+### 2、变量
 
-> '''），三引号，不需要换行，原文打印
+变量起名：`my_love1`，最好是英文名，比如 `username`，大小写不一样
 
-# 2、变量：
+变量赋值：`my_love1=13679259362`
 
-> 变量起名：my_love1，最好是英文名，比如username，大小写不一样
+`print(my_love1)`，打印变量不需要引号，引号是打印字符串
 
-> 变量赋值：my_love1=13679259362
+### 3、数学运算
 
-> print（my_love1），打印变量不需要引号，引号是打印字符串
+字符串：`"6"`，整数：`6`，浮点数：`6.0`
 
-# 3、数学运算：
+`+`、`-`、`*`、`/`、`**`（二次方）
 
-> 字符串："6"，整数：6，浮点数：6.0
+函数和三方库（工具箱，啥时候用啥时候引入）
 
-> +、-、*、/、**（二次方）
+内置函数：`print`
 
-+   函数和三方库（工具箱，啥时候用啥时候引入）
+三方库：`math`
 
-> 内置函数：print
+引入方法：
 
-> 三方库：math
+`import math`
 
-> 引入方法：
+`math.sin(1)`，计算完需要取值、打印
 
-1.  import math
+`from math import math.sin，math.cos`
 
-> math.sin(1)，计算完需要取值、打印
+`sin(1)`
 
-1.  from math import math.sin，math.cos
+`cos(1)`
 
-> sin(1)
+`pip install xx库`，安装库到环境中，在命令提示符安装
 
-> cos(1)
+### 4、注释
 
-1.  pip install xx库 ，安装库到环境中，在命令提示符安装
+`#` 注释
 
->
+`#` 又是注释
 
-# 4、注释：
+```
+'''
+我是注释
+我是备注
+我也是注释
+'''
+```
 
-> #注释
+### 5、数据类型
 
-> #又是注释
+#### 字符串 `str`
 
-> '''
+长度：`len('abc')`
 
-> 我是注释
+索引：`"abc"[0]`，第 0 个元素
 
-> 我是备注
+#### 整数、浮点数：`int`、`float`
 
-> 我也是注释
+#### 布尔类型：`bool`
 
-> '''
+`Ture`、`False`
 
-# 5、数据类型：
+#### 空值类型：`NoneType`
 
-1.  **字符串****str**
+`None`，是个值，只不过是暂时空的。
 
-> 长度：len('abc')
+#### 列表
 
-> 索引："abc"[0]，第0个元素
+`shopping_list=['字符串1','字符串2']`
 
-1.  整数、浮点数：int、float
+列表加东西：`shopping_list.append('字符串3')`，列表是可以变的
 
-1.  **布尔类型****：bool**
+删除东西：`.remove("aaa")`
 
-> Ture、False
+索引：`shopping_list[0]`
 
-1.  **空值类型：NoneType**
+#### 字典
 
-> None，是个值，只不过是暂时空的。
+键值对：`{key:value}`，字典可变，但键的类型不能变，所以列表不能作为键
 
-1.  **列表：**
+`dict={"a":"11","b:22’","c:33"}`
 
-> shopping_list=['字符串1','字符串2']
+增加：`dict["aaa"]="1111"`
 
-> 列表加东西：shopping_list.append('字符串3')，列表是可以变的
+删除：`del dict["key"]`
 
-> 删除东西：.remove("aaa")
+检查键是否存在：`"某个key" in dict`
 
-> 索引：shopping_list[0]
+返回字典中的键、值、键值对：`dict.keys()`、`.values()`、`.items()`；键值对返回的是元组（`x`，`y`）
 
-1.  **字典：**
+#### 元组：不可变
 
-> 键值对：{key:value}，字典可变，但键的类型不能变，所以列表不能作为键
+`shopping_list("aa","bb","bb")`
 
-> dict={**"****a****":"****11****",**"b:22’","c:33"}
+### 6、用户输入
 
-> 增加：dict["aaa"]="1111"
+`input("给用户的提示")`
 
-> 删除：**del **dict["key"]
+获取输入：`user_info=input("给用户的提示")`
 
-> 检查键是否存在："某个key" **in** dict
+`input` 输入一律是字符串，可以转换，`int(user_info)`
 
-> 返回字典中的键、值、键值对：dict.keys()、.values()、.items()；键值对返回的是元组（x，y）
+### 7、条件：单条件、多条件（哪个先满足就退出）、嵌套条件
 
-1.  **元组：不可变**
+```
+if 条件一：
+    [条件为真时的执行语句]
+    [需要缩进四个空格]
+elif 条件二：
+    [条件为真时的执行语句]
+    [需要缩进四个空格]
+else：
+    [条件为假时的执行语句]
+    [需要缩进四个空格]
+```
 
-> shopping_list("aa","bb","bb")
+等于号：`==`
 
-# 6、用户输入：
+不等于号：`!=`
 
-> input("给用户的提示")
+`<`、`>`、`>=`
 
-> 获取输入：user_info=input("给用户的提示")
+### 8、逻辑运算
 
-> input输入一律是字符串，可以转换，int（user_info）
+与、或、非（`or`、`and`、`not`，`not` 优先级最高）
 
-# 7、条件：单条件、多条件（哪个先满足就退出）、嵌套条件
+多条件时可以简洁代码
 
-> if 条件一：
+### 9、循环
 
-> [条件为真时的执行语句]
+#### For
 
-> [需要缩进四个空格]
+```
+for xx in xxxx:
+    if xx>3:
+        print("哈哈")
+```
 
-> elif 条件二：
+从一个字典中判断 `key`，输出满足条件的 `value`：
 
-> [条件为真时的执行语句]
+```
+for xx,yy in dict.items():
+    if xx>3:
+        print(yy)
+```
 
-> [需要缩进四个空格]
+`for xx in range(1起始,5结尾不包括这个值,2步长)`：
 
-> else：
+#### while（循环次数当前未知）
 
-> [条件为假时的执行语句]
+```
+while 条件：
+    [条件为真时执行语句]
+```
 
-> [需要缩进四个空格]
+### 10、格式化
 
-> 等于号：==
+`"{0}你好，你的成绩是{1:2f}".format(变量1，变量2)`
 
-> 不等于号：!=
+`"{变量1}你好，你的成绩是{变量2:2f}".format(变量1，变量2)`
 
-> <、>、>=、
+### 11、函数
 
-# 8、逻辑运算：
+函数名（参数）：`print("hello world")`
 
-> 与、或、非（or、and、not，not优先级最高）
+定义函数：`def 函数名(参数1，参数2)：`
 
-> 多条件时可以简洁代码
+定义函数不会执行代码，只有调用才会。
 
-# 9、循环：
+如果需要函数返回一个值：`return a`
 
-+   **For**
+### 12、面向对象编程：OOP，模仿世界
 
-> for xx in xxxx:
+面向过程编程解决具体 case，一步一步写出来；面向对象用于解决复杂问题，先看这个对象有哪些性质，能干嘛，然后再考虑对象之间的交互，比如人和洗衣机
 
-> if xx>3:
+`c` 纯面向过程，`java` 纯面向对象。
 
-> print("哈哈")
+#### 类
 
-> 从一个字典中判断key，输出满足条件的value：
+造房子的图纸，一个事情既有属性还有方法（能干嘛），具体说方法是类的函数，属性是类的变量
 
-> for xx,yy in dict.items():
+封装：写类的人考虑细节，使用类的人不需要了解，照说明书用就行。
 
-> if xx>3:
+继承：父类和子类
 
-> print(yy)
+多态：子类还能有自己的属性和方法，不需要定义在父类
 
-> for xx in range(1起始,5结尾不包括这个值,2步长)：
+`Class` 类的名字（类名 `UserName` 风格命名）：
 
-+   **while（循环次数当前未知）**
++ 定义属性（`_init_` 构造属性的方法，`self` 代表类自己，`self.xx` 代表类的参数）
++ 定义方法
 
-> while 条件：
+```
+Class CuteCat：
+    def _init_(self，cat_name，cat_age，参数3)：
+        self.name=cat_name
+        self.age=cat_age
+    def speak（self，language，参数2）：
+        print（"喵"*self.age）
+```
 
-> [条件为真时执行语句]
+创建实例：
 
-# 10、格式化：
+```
+cat1=CuteCat（"JOJO",2,"白色"）
+cat1.speak（'中文'）
+print(cat1.name)
+```
 
-> "{0}你好，你的成绩是{1:2f}".format(变量1，变量2)
+#### 实例：造的具体房子
 
-> "{变量1}你好，你的成绩是{变量2:2f}".format(变量1，变量2)
+### 13、读写文件
 
-# 11、函数：
+绝对路径：`C:\home\data\a.py`
 
-> 函数名（参数）：print("hello world")
+相对路径：
 
-> 定义函数：def 函数名（参数1，参数2）：
+#### 读文件
 
-> 定义函数不会执行代码，只有调用才会。
+以字符串返回，读完返回空字符串 `""`
 
-> 如果需要函数返回一个值：return a
+```
+f=open（"C:\home\data\a.py","r"，encoding="utf-8"）
+```
 
->
+`r`：只读，`r+`：读+追加写都行，`w`：只写，会清空原文档，`a`：附加内容
 
-# 12、面向对象编程：OOP，模仿世界
+`print(f.read())` # 读全部内容，（11）可以传读 11 字节
 
-> **面向过程编程**解决具体case，一步一步写出来；面向对象用于解决复杂问题，先看这个对象有哪些性质，能干嘛，然后再考虑对象之间的交互，比如人和洗衣机
+`print(f.readline())` # 只读一行
 
-> c纯面向过程，java纯面向对象。
+`print(f.readlines())` # 以行为单位，全部读完
 
-1.  类：
+`f.close()` # 一定记得关文件
 
-> 造房子的图纸，一个事情既有属性还有方法（能干嘛），具体说方法是类的函数，属性是类的变量
+#### 写文件
 
-> **封装：**写类的人考虑细节，使用类的人不需要了解，照说明书用就行。
+```
+f.write("hello\n")
+```
 
-> **继承：**父类和子类
+### 14、提前捕捉异常类型
 
-> **多态：**子类还能有自己的属性和方法，不需要定义在父类
+和条件语句一样，`except` 只会执行第一个，其他不执行，`else` 没有错误时会执行，`finally` 无论错误发生与否都执行。
 
-> Class 类的名字（类名UserName风格命名）：
+```
+try：
+    这是程序
+    这是程序
+except 错误类型1（比如 Value Error）：
+    print（"错误出现后的提示等"）
+except 错误类型2（比如 Value Error）：
+    print（"错误出现后的提示等"）
+except ：# 会捕捉所有错误类型
+    print（"错误出现后的提示等"）
+else：
+    print（"错误出现后的提示等"）
+finally：
+    print（"错误出现后的提示等"）
+```
 
-+       定义属性（_init_构造属性的方法，self代表类自己,self.xx代表类的参数)
+### 15、测试
 
-+       定义方法
+`assert`
 
-> Class CuteCat：
+### 16、高阶函数
 
-> def _init_(self，cat_name，cat_age，参数3)：
+把函数当参数
 
-> self.name=cat_name
-
-> self.age=cat_age
-
-> def speak（self，language，参数2）：
-
-> print（"喵"*self.age）
-
-> 创建实例：
-
-> cat1=CuteCat（"JOJO",2,"白色"）
-
-> cat1.speak（'中文'）
-
-> print(cat1.name)
-
->
-
-1.  实例：造的具体房子
-
->
-
-# 13、读写文件：
-
-> 绝对路径：C:\home\data\a.py
-
-> 相对路径：
-
-+   读文件：以字符串返回，读完返回空字符串""
-
-> f=open（"C:\home\data\a.py","r"，encoding="utf-8"）
-
-> r:只读，r+：读+追加写都行，w：只写，会清空原文档，a：附加内容
-
-> print(f.read())#读全部内容，（11）可以传读11字节
-
-> print(f.readline())#只读一行
-
-> print(f.readlines())#以行为单位，全部读完
-
-> f.close()#一定记得关文件
-
-+   写文件
-
-> f.write("hello\n")
-
-# 14、提前捕捉异常类型
-
-> 和条件语句一样，except只会执行第一个，其他不执行，else没有错误时会执行，finally无论错误发生与否都执行。
-
-> try：
-
-> 这是程序
-
-> 这是程序
-
-> except 错误类型1（比如 Value Error）：
-
-> print（"错误出现后的提示等"）
-
-> except 错误类型2（比如 Value Error）：
-
-> print（"错误出现后的提示等"）
-
-> except ：#会捕捉所有错误类型
-
-> print（"错误出现后的提示等"）
-
-> else：
-
-> print（"错误出现后的提示等"）
-
-> finally：
-
-> print（"错误出现后的提示等"）
-
-# 15.测试
-
-> assert
-
-# 16.高阶函数
-
-> 把函数当参数
-
-> aaa_1（参数，abc_2）
+`aaa_1(参数，abc_2)`

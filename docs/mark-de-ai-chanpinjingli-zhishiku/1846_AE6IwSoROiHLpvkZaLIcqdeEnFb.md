@@ -1,6 +1,7 @@
+
 # AI产品经理面经
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/SQGsd4c2eoRqzzx7LwMc4w9TnRe](https://qqs7y1hozd1.feishu.cn/docx/SQGsd4c2eoRqzzx7LwMc4w9TnRe)
+> 来源：`https://qqs7y1hozd1.feishu.cn/docx/SQGsd4c2eoRqzzx7LwMc4w9TnRe`
 
 1.xx实习大模型测评基本测评指标有哪些？如何制定大模型测评维度框架？
 
@@ -18,43 +19,43 @@
 
 ## Agent相关题目
 
-Q1. 什么是大模型Agent？它与传统的AI系统有什么不同？（技术框架理解，★★）
+Q1. 什么是大模型`LLMAgent`？它与传统的AI系统有什么不同？（技术框架理解，★★）
 
-Q2. LLMAgent的基本架构有哪些组成部分？（技术架构，★★）
+Q2. `LLMAgent`的基本架构有哪些组成部分？（技术架构，★★）
 
-Q3. LLMAgent如何进行决策？能否使用具体的方法解释？（算法应用，★★★）
+Q3. `LLMAgent`如何进行决策？能否使用具体的方法解释？（算法应用，★★★）
 
-Q4. 如何让LLMAgent具备长期记忆能力？（技术应用，★★★）
+Q4. 如何让`LLMAgent`具备长期记忆能力？（技术应用，★★★）
 
-Q5. LLMAgent如何进行动态API调用？（技术应用，★★★）
+Q5. `LLMAgent`如何进行动态API调用？（技术应用，★★★）
 
-Q6. LLMAgent在多模态任务中如何执行推理？（多模态设计，★★★★）
+Q6. `LLMAgent`在多模态任务中如何执行推理？（多模态设计，★★★★）
 
-Q7. LLMAgent主要有哪些局限性？（技术边界判断，★★★）
+Q7. `LLMAgent`主要有哪些局限性？（技术边界判断，★★★）
 
-Q8. 如何衡量LLM Agent的性能？（指标设计，★★★）
+Q8. 如何衡量`LLM Agent`的性能？（指标设计，★★★）
 
-Q9. 未来LLMAgent可能有哪些技术突破？（趋势洞察，★★★）
+Q9. 未来`LLMAgent`可能有哪些技术突破？（趋势洞察，★★★）
 
-Q10. 请你设计一个LLMAgent，用于医学问答，它需要具备…（场景设计，★★★★）
+Q10. 请你设计一个`LLMAgent`，用于医学问答，它需要具备…（场景设计，★★★★）
 
-Q2. LangChain的核心组件有哪些？（技术架构，★★）
+Q2. `LangChain`的核心组件有哪些？（技术架构，★★）
 
-Q3. LangChain Agent的主要类型有哪些？（技术分类，★★）
+Q3. `LangChain Agent`的主要类型有哪些？（技术分类，★★）
 
-Q4. LlamaIndex如何与LangChain结合？（技术协同，★★★）
+Q4. `LlamaIndex`如何与`LangChain`结合？（技术协同，★★★）
 
-Q5. AutoGPT如何实现自主决策？（算法应用，★★★）
+Q5. `AutoGPT`如何实现自主决策？（算法应用，★★★）
 
-Q6. BabyAGI如何进行任务管理？（项目管理，★★★）
+Q6. `BabyAGI`如何进行任务管理？（项目管理，★★★）
 
-Q7. CrewAI如何管理多个Agent之间的协作？（跨团队协作，★★★）
+Q7. `CrewAI`如何管理多个`Agent`之间的协作？（跨团队协作，★★★）
 
-Q8. LangChain如何支持API调用？（技术应用，★★）
+Q8. `LangChain`如何支持API调用？（技术应用，★★）
 
-Q9. 如何优化LLM Agent的性能？（性能优化，★★★）
+Q9. 如何优化`LLM Agent`的性能？（性能优化，★★★）
 
-Q10. LLMAgent在企业应用中的典型场景有哪些？（场景设计，★★★）
+Q10. `LLMAgent`在企业应用中的典型场景有哪些？（场景设计，★★★）
 
 ### 一、技术理解与算法基础（25题）
 

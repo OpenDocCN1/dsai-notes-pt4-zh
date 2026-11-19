@@ -1,3 +1,4 @@
+
 # 第10期 AI行业周报（2024-8.12-18）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Ls2sdbHynoDpf5x1lN9cu5rWnLf](https://v11enp9ok1h.feishu.cn/docx/Ls2sdbHynoDpf5x1lN9cu5rWnLf)
@@ -28,7 +29,7 @@ Grok-2的发布不仅彰显了xAI的技术实力，也为AI技术的未来发展
 
 尽管[嘴替]面临融资和市场竞争的严峻挑战，但它凭借趣味性和创意，赢得了用户的喜爱，为AI赛道带来了新的活力和可能性。相信它的未来，一片光明！
 
-附上体验地址：https://zuiti.app
+附上体验地址：`https://zuiti.app`
 
 ![](img/7d357c5331c0fb8d840f2fd00e5c0dba.png)
 
@@ -46,7 +47,7 @@ Grok-2的发布不仅彰显了xAI的技术实力，也为AI技术的未来发展
 
 目前，橙篇AI已上架客户端。当然，大家也可以从网页端去访问体验。
 
-网页端：https://cp.baidu.com
+网页端：`https://cp.baidu.com`
 
 ![](img/33c529b7892a3c22d66b2b77a7a58e6e.png)
 
@@ -66,7 +67,7 @@ Qwen2-Audio打破了语言障碍，支持超过8种语言和方言，为全球�
 
 项目链接：
 
-https://github.com/QwenLM/Qwen2-Audio
+`https://github.com/QwenLM/Qwen2-Audio`
 
 ![](img/79f9865dc5033a68cfbdf7f24eefa7eb.png)
 
@@ -104,7 +105,7 @@ Genie支持从功能开发到代码测试的全流程，覆盖了JavaScript、Py
 
 目前，Genie已经开放申请试用，感兴趣的开发者可以通过官网进行注册，预计2-3周内发放测试权限，届时可能会增加一些惊喜功能。
 
-官网地址：https://cosine.sh/genie
+官网地址：`https://cosine.sh/genie`
 
 ![](img/9831d5d3f8b9d2f9458dda466c2dffaa.png)
 

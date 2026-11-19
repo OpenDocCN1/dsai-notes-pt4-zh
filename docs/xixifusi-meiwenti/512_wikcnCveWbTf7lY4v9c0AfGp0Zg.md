@@ -1,22 +1,23 @@
+
 # SNARK vs STARK
 
 > 来源：[https://docs.feishu.cn/docx/N51VdIn28owbk0xu4Bhci1sTngg](https://docs.feishu.cn/docx/N51VdIn28owbk0xu4Bhci1sTngg)
 
-## **TL; DR**
+## TL; DR
 
-+   零知识证明技术, 可以保证计算的完整性、正确性和隐私, 在区块链扩容和隐私中有应用.
++ 零知识证明技术, 可以保证计算的完整性、正确性和隐私, 在区块链扩容和隐私中有应用.
 
-+   zk-SNARK 和 zk-STARK 各有优点, 而它们的合理结合更加有潜力.
++ zk-SNARK 和 zk-STARK 各有优点, 而它们的合理结合更加有潜力.
 
-+   zkVM 能赋予应用零知识证明能力, zkVM 分为使用主流、EVM 或全新指令集.
++ zkVM 能赋予应用零知识证明能力, zkVM 分为使用主流、EVM 或全新指令集.
 
-+   EVM 的适配包括 EVM 兼容性、等同性和 Specification 上的适配.
++ EVM 的适配包括 EVM 兼容性、等同性和 Specification 上的适配.
 
-+   zkEVM 是兼容 EVM 而又零知识证明友好的环境, 主要分为原生和编译流派.
++ zkEVM 是兼容 EVM 而又零知识证明友好的环境, 主要分为原生和编译流派.
 
-+   基于原生的 zkEVM 是以太坊和区块链的未来.
++ 基于原生的 zkEVM 是以太坊和区块链的未来.
 
-+   支持 Solidity 生态的通用 zkVM 是 Web3 的未来.
++ 支持 Solidity 生态的通用 zkVM 是 Web3 的未来.
 
 ## 1. SNARK 和 STARK
 
@@ -28,15 +29,15 @@
 
 如果 SNARK 是以太坊 2.0 的未来, 那么 STARK 就会是以太坊 3.0 的未来. 正经的来说, STARK 的优势在于
 
-+   更低的 gas (更能 scale)
++ 更低的 gas (更能 scale)
 
-+   更大的 batch size (更能 scale * 2)
++ 更大的 batch size (更能 scale * 2)
 
-+   更快的证明 (更能 scale * 3)
++ 更快的证明 (更能 scale * 3)
 
-+   没有 trusted setup (生成的参数仅对当前的应用有效, 若出现了修改需要重新 setup)
++ 没有 trusted setup (生成的参数仅对当前的应用有效, 若出现了修改需要重新 setup)
 
-+   后量子安全
++ 后量子安全
 
 但是 STARK 生成的证明的体积更大, 并且还大不少, 由于比如 WASM 的一些限制, 可能会在构建时需要额外的操作 (这里是 SNARK). Mir 前段时间在 Starky 给出了一个 AIR-based STARK 的实践, 是 Plonky2 的一部分(Plonky2 和 Starky 的关系比较复杂...). 我个人认为, 体积大可以通过各种手法来优化, 但是算法本身的时间复杂度是很难再进一步压缩的.
 
@@ -44,7 +45,7 @@
 
 总结来说, SNARK 和 STARK 都是优秀的零知识证明技术, 各有千秋, 而它们的合理结合更加有潜力.
 
-## **2. zkVM**
+## 2. zkVM
 
 zkVM 就是一个由零知识证明来保证安全可验证可信特性的虚拟机, 简单来说就是, 输入旧状态和程序, 返回新状态. 它能让所有的应用都被赋予零知识证明的超能力.
 
@@ -54,41 +55,41 @@ Miden 在 ETH Amsterdam 的演讲用一张图很好概括了 zkVM 到底是什�
 
 zkVM 的优点:
 
-+   易用: 开发者不用学密码学或者零知识开发就可以使用 zkVM 来运行程序保证计算安全 (不代表完全无门槛)
++ 易用: 开发者不用学密码学或者零知识开发就可以使用 zkVM 来运行程序保证计算安全 (不代表完全无门槛)
 
-+   通用: zkVM 可以给任何程序和计算生成证明.
++ 通用: zkVM 可以给任何程序和计算生成证明.
 
-+   简洁: 相对比较少量 constraints 就可以描述整个 VM (不用重复生成整个 VM 的电路).
++ 简洁: 相对比较少量 `constraints` 就可以描述整个 VM (不用重复生成整个 VM 的电路).
 
-+   递归: 免费的递归特性. 和通用性一样, 对 VM 的验证可以通过 VM 来进行. 这个就挺好玩, 比如你可以在 zkVM 里放一个 zkVM, 就类似 StarkWare 说的 L3 的概念.
++ 递归: 免费的递归特性. 和通用性一样, 对 VM 的验证可以通过 VM 来进行. 这个就挺好玩, 比如你可以在 zkVM 里放一个 zkVM, 就类似 StarkWare 说的 L3 的概念.
 
 zkVM 的缺点:
 
-+   计算架构特殊: 并非所有零知识证明系统可以被用来做 zkVM.
++ 计算架构特殊: 并非所有零知识证明系统可以被用来做 zkVM.
 
-+   性能问题: 电路需要优化, 可以为特定计算进行针对性优化.
++ 性能问题: 电路需要优化, 可以为特定计算进行针对性优化.
 
-现在主流的 zkVM 有三大类, 括号中是它们的指令集: 主流 (WASM, RISC-V)、EVM (EVM bytecode)、ZK-Optimized (全新指令集, 针对零知识证明所优化, 比如 Cairo 和 zkSync). 以下是根据 Miden 在 ETH Amsterdam 的演讲所整理的类型对比图:
+现在主流的 zkVM 有三大类, 括号中是它们的指令集: 主流 (WASM, RISC-V)、EVM (`EVM bytecode`)、ZK-Optimized (全新指令集, 针对零知识证明所优化, 比如 Cairo 和 zkSync). 以下是根据 Miden 在 ETH Amsterdam 的演讲所整理的类型对比图:
 
 ![](img/b19a455e0bbfafdd4a056a02497b10ce.png)
 
-很多零知识证明开发生态所做的事情大多是让开发者能用 Circom 库 (以及 snarkyjs 这种) 或者其他新创造的语言 (Leo 或者 Cairo 这种语言都有奇奇怪怪的限制) 来做通用 zk DApp 的开发, 但是没有像以太坊上用 Solidity 那么直接和易学.
+很多零知识证明开发生态所做的事情大多是让开发者能用 `Circom` 库 (以及 `snarkyjs` 这种) 或者其他新创造的语言 (Leo 或者 Cairo 这种语言都有奇奇怪怪的限制) 来做通用 zk DApp 的开发, 但是没有像以太坊上用 Solidity 那么直接和易学.
 
 除此之外, 还有很多项目, 比如 zkSync, Scroll, 或者 Polygon 旗下的好多家都在尝试做 zkEVM 或者其他的 zkVM.
 
-## **3. EVM**
+## 3. EVM
 
 EVM 就是以太坊的虚拟机, 也可以理解为运行智能合约的一套执行环境.
 
 数年来, 各个公链都在不停尝试着去兼容 EVM, 从而接入到以太坊的开发生态当中. 对于这个概念, 衍生出了 EVM 兼容, 等同和其他一些定义.
 
-+   EVM 兼容性: Solidity 等语言层面的适配.
++ EVM 兼容性: Solidity 等语言层面的适配.
 
-+   EVM 等同性: EVM 字节码层面的适配.
++ EVM 等同性: EVM 字节码层面的适配.
 
-+   EVM Specification 适配: 也就是通常所说的真正的 zkEVM, 大多情况下甚至是向后兼容的优化后的超集, 能提供账户抽象 (就是每个账户都是一个智能合约) 等 EVM 没有提供的特性.
++ EVM Specification 适配: 也就是通常所说的真正的 zkEVM, 大多情况下甚至是向后兼容的优化后的超集, 能提供账户抽象 (就是每个账户都是一个智能合约) 等 EVM 没有提供的特性.
 
-## **4. zkEVM**
+## 4. zkEVM
 
 我们再来解读一下 zkEVM. 定义上来说, zkEVM 是一种兼容 EVM 同时又对零知识证明友好的虚拟机, 能保证程序, 操作, 和输入输出等的完全正确性.
 
@@ -98,7 +99,7 @@ EVM 就是以太坊的虚拟机, 也可以理解为运行智能合约的一套�
 
 不同的合约需要生成不同的电路, 而且这些电路很 “复杂”.
 
-这方面主要就要靠各种优化了, 比如 Aleo (不过它不是 direct ZK 这一类... 只是为了举例说明优化) 通过分布式 Cluster 来并发计算 Proof, 或者通过各种硬件上的优化来加速.
+这方面主要就要靠各种优化了, 比如 Aleo (不过它不是 direct ZK 这一类... 只是为了举例说明优化) 通过分布式 `Cluster` 来并发计算 `Proof`, 或者通过各种硬件上的优化来加速.
 
 ### b) 设计困难
 
@@ -108,13 +109,13 @@ EVM 设计的时候就没想到后面要做 zkEVM, 造成了非常大的困难. 
 
 ![](img/05c0d25c0953583c2ae77df81dc294eb.png)
 
-或者说按 VM 的架构来分, 就长这样 (超级感谢 Scroll Tech 的原图总结!). Opcode 指的是 EVM Opcode. 其中 StarkWare 部分是用 Warp 来将 Solidity 转成 Cairo 合约, 或者直接用 Cairo 写合约, 一样能获得不错的开发体验和全套工具.
+或者说按 VM 的架构来分, 就长这样 (超级感谢 Scroll Tech 的原图总结!). `Opcode` 指的是 `EVM Opcode`. 其中 StarkWare 部分是用 `Warp` 来将 Solidity 转成 Cairo 合约, 或者直接用 Cairo 写合约, 一样能获得不错的开发体验和全套工具.
 
 ![](img/0004f1398d18e864a65481fe5d362bab.png)
 
-在开发者和用户层面, 这几个方案其实我认为是基本无差别的, 但是在基础设施上, 越靠右的方案 EVM 兼容性越好, 可以无缝接入 Geth 等基础设施, 但开发进度基本上也越慢.
+在开发者和用户层面, 这几个方案其实我认为是基本无差别的, 但是在基础设施上, 越靠右的方案 EVM 兼容性越好, 可以无缝接入 `Geth` 等基础设施, 但开发进度基本上也越慢.
 
-## **5. zkEVM 和 zkVM**
+## 5. zkEVM 和 zkVM
 
 zkEVM 的存在我认为是在以太坊生态上去翻新和打补丁, 能为以太坊及其生态的繁荣添砖加瓦, 而 zkVM 的存在却不一定是给以太坊做加强, 同时也具有更大的想象力.
 
@@ -126,7 +127,7 @@ StarkNet 的 Cairo VM 尽管可能不是我想象中最完美的 zkVM, 但它能
 
 zkVM 或许是更大的趋势, 能让对 EVM 的纵向优化, 变成 EVM 生态的横向拓展, 跳出了 EVM 的限制.
 
-## **6. zkVM 的未来**
+## 6. zkVM 的未来
 
 如果能有一种通用的 zkVM 能够让所有编程语言的智能合约, 不止是 Solidity, 不止是 Cairo, 而是 Rust, C++, Go,在零知识证明的加持下安全运行呢? (Stellar 尝试过, 但失败了.)
 
@@ -146,7 +147,7 @@ Web3 开发者的数量大概占所有开发者的 0.07%, 也就可以推断出,
 
 通用 zkVM 是 Web3 的未来.
 
-## **相关文章**
+## 相关文章
 
 https://brewminate.com/a-mathematical-duel-in-16th-century-renaissance-venice/
 
@@ -195,5 +196,3 @@ https://github.com/GuildOfWeavers/distaff
 https://github.com/maticnetwork/miden
 
 https://docs.nervos.org/docs/basics/concepts/ckb-vm/
-
----

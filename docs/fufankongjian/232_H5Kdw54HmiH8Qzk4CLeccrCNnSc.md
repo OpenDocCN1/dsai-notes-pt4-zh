@@ -1,3 +1,4 @@
+
 # 【中文版】GitHub Copilot使用指南
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/A6NKdpZF4okncGx0kJhcyl8bnQg](https://kq4b3vgg5b.feishu.cn/docx/A6NKdpZF4okncGx0kJhcyl8bnQg)
@@ -20,7 +21,7 @@ GitHub Copilot 不仅可以提升个人开发者的编程效率，也已逐步�
 
 用户在 IDE 中编写代码时，Copilot 会根据已有上下文，自动补全函数体、变量定义、流程控制结构等内容。建议以灰色字体呈现，可通过快捷键直接接受。
 
-Copilot 也支持根据自然语言注释生成相应代码。例如，输入 // 将字符串反转，Copilot 可自动生成对应的 JavaScript 函数。
+Copilot 也支持根据自然语言注释生成相应代码。例如，输入 `//` 将字符串反转，Copilot 可自动生成对应的 JavaScript 函数。
 
 ### 1.1.2 Copilot Chat（对话式交互）
 
@@ -128,7 +129,7 @@ GitHub 根据不同用户群体提供了多种订阅计划，以满足个人开�
 
 如你是符合条件的学生、教师或开源维护者，在教育认证页面申请后，将自动获得 Copilot Pro 的免费访问权。
 
-申请地址：[https://education](https://education.github.com/benefits).github.com/benefits
+申请地址：`https://education.github.com/benefits`
 
 ---
 
@@ -142,9 +143,9 @@ GitHub 根据不同用户群体提供了多种订阅计划，以满足个人开�
 
 +   模型选择能力（Pro 用户专属）
 
-**设置路径：
+**设置路径：**
 
-GitHub Set**tings > Copilot > Features
+`GitHub Settings > Copilot > Features`
 
 ---
 
@@ -158,7 +159,7 @@ GitHub Copilot 支持主流 IDE，如 Visual Studio Code、Visual Studio、JetBr
 
 1.  打开 Visual Studio Code；
 
-1.  点击左侧扩展图标（或按 Ctrl+Shift+X）；
+1.  点击左侧扩展图标（或按 `Ctrl+Shift+X`）；
 
 1.  搜索 "GitHub Copilot"，点击“安装”。
 
@@ -244,7 +245,7 @@ Copilot 会自动生成以下建议：
     return 3.14159 * radius * radius
 ```
 
-你可以按下 Tab 键接受该建议。
+你可以按下 `Tab` 键接受该建议。
 
 ---
 
@@ -259,7 +260,7 @@ Copilot 会自动生成以下建议：
 Copilot 可自动生成：
 
 ```
-const evenNumbers = array.filter(n =&gt; n % 2 === 0);
+const evenNumbers = array.filter(n => n % 2 === 0);
 ```
 
 ---
@@ -271,7 +272,7 @@ const evenNumbers = array.filter(n =&gt; n % 2 === 0);
 例如：
 
 ```
-for i := 0; i &lt; len(nums); i++ {
+for i := 0; i < len(nums); i++ {
 ```
 
 将自动补全一整段处理逻辑。
@@ -299,7 +300,7 @@ for i := 0; i &lt; len(nums); i++ {
 配置路径：
 
 ```
-File &gt; Preferences &gt; Settings &gt; Extensions &gt; GitHub Copilot
+File > Preferences > Settings > Extensions > GitHub Copilot
 ```
 
 或使用命令面板：
@@ -360,7 +361,7 @@ Copilot Chat 可用于：
 
 +   JetBrains IDE（如 IntelliJ IDEA）
 
-+   **GitHub.com**** 网页端**
++   **GitHub.com** 网页端
 
 +   GitHub Mobile App
 
@@ -382,7 +383,7 @@ Copilot Chat 可用于：
 
 ### 4.3.1 打开 Chat 界面
 
-**在 VS Code **左侧活动栏中，点击 Copilot 图标，即可打开 Chat 面板。在该面板中，可以输入自然语言问题，获得 AI 响应。
+在 VS Code 左侧活动栏中，点击 Copilot 图标，即可打开 Chat 面板。在该面板中，可以输入自然语言问题，获得 AI 响应。
 
 ![](img/2175b187c33471d10c1722d68fd55fbf.png)
 
@@ -404,7 +405,7 @@ Copilot Chat 在回答问题时，会自动利用以下上下文：
 
 +   之前在同一对话中提交的问题与回答（对话记忆）
 
-用户可通过选择代码后右键点击“Ask Copilot”来发起上下文绑定的提问。
+用户可通过选择代码后右键点击 `Ask Copilot` 来发起上下文绑定的提问。
 
 ---
 
@@ -488,7 +489,7 @@ Copilot Chat 支持连续多轮交互，会自动记录当前会话历史，用�
 
 # 五、编写有效的 Copilot Chat 提示词
 
-在 Copilot Chat 中，用户与 AI 的互动完全基于提示词（prompt）。提示词是用户向 Copilot 发送的自然语言指令，决定了模型生成回答的质量、准确性和上下文相关性。
+在 Copilot Chat 中，用户与 AI 的互动完全基于提示词（prompt）。提示词是用户向 Copilot Chat 发送的自然语言指令，决定了模型生成回答的质量、准确性和上下文相关性。
 
 相比代码补全，Copilot Chat 对提示词的构造更为敏感。良好的提示词能够显著提升回答效果，减少模糊、不相关、过度冗长的输出。
 
@@ -561,6 +562,13 @@ GitHub 官方建议编写提示词时遵循以下四条基本原则：
 
 ## 5.4 使用角色设定（Role Prompting）
 
+
+
+
+# 五、GitHub Copilot Chat 进阶使用
+
+## 5.4 Copilot Chat 角色设定
+
 GitHub Copilot Chat 支持通过提示词指定“角色”，以模拟不同身份的回答风格或专业领域。以下是常用角色设定方式：
 
 ---
@@ -569,13 +577,13 @@ GitHub Copilot Chat 支持通过提示词指定“角色”，以模拟不同身
 
 用户可以通过提示词精细控制输出内容的样式与排版。例如：
 
-+   **要求带注释输出**：请为每一行添加注释
++   要求带注释输出：请为每一行添加注释
 
-+   **指定代码语言**：请使用 Python 输出
++   指定代码语言：请使用 `Python` 输出
 
-+   **控制行数**：限制输出不超过 10 行
++   控制行数：限制输出不超过 10 行
 
-+   **要求结构化回答**：以表格形式列出差异点
++   要求结构化回答：以表格形式列出差异点
 
 这些指令有助于获得格式清晰、可用于复制粘贴的代码内容。
 
@@ -587,11 +595,11 @@ Copilot Chat 会默认读取当前编辑器中的上下文（例如打开的文�
 
 为获得更准确回答，建议：
 
-+   **使用代码选择功能**：选中目标代码后点击“Ask Copilot”，比直接粘贴效果更好
++   使用代码选择功能：选中目标代码后点击 `Ask Copilot`，比直接粘贴效果更好
 
-+   **减少不相关上下文干扰**：关闭与当前任务无关的编辑器窗口
++   减少不相关上下文干扰：关闭与当前任务无关的编辑器窗口
 
-+   **重启对话清除记忆**：避免旧会话中的问题影响当前输出
++   重启对话清除记忆：避免旧会话中的问题影响当前输出
 
 ---
 
@@ -627,9 +635,9 @@ Copilot coding agent 能够根据用户指令自动执行如下操作：
 
 该功能可通过以下方式触发：
 
-+   在 GitHub.com 网页端将 Issue 分配给 Copilot
++   在 `GitHub.com` 网页端将 Issue 分配给 Copilot
 
-+   在 Chat 中明确指令请求 Copilot 完成特定任务（需具备权限）
++   在 `Chat` 中明确指令请求 Copilot 完成特定任务（需具备权限）
 
 目前该功能仅面向 Enterprise 用户开放，需由管理员在组织层级启用。
 
@@ -639,9 +647,9 @@ Copilot coding agent 能够根据用户指令自动执行如下操作：
 
 要使用 coding agent 功能，需完成以下配置流程：
 
-1.  管理员进入 GitHub Admin Center；
+1.  管理员进入 `GitHub Admin Center`；
 
-1.  导航至 **Copilot 设置** > **Coding agent**；
+1.  导航至 `Copilot 设置` > `Coding agent`；
 
 1.  启用功能并接受服务协议；
 
@@ -657,13 +665,13 @@ Copilot coding agent 能够根据用户指令自动执行如下操作：
 
 ### 6.3.1 方式一：在 Issue 页面分配任务
 
-在** GitHub 仓库的 Iss**ue 页面中，选择某个 issue，点击“Assignees”区域，在下拉列表中选择 @github-copilot。
+在 GitHub 仓库的 Issue 页面中，选择某个 issue，点击“Assignees”区域，在下拉列表中选择 `@github-copilot`。
 
 分配成功后，GitHub 将提示你确认是否允许 Copilot 访问该仓库并启动 agent。
 
 确认后，Copilot 将：
 
-+   创建一个以 issue 为主题的分支（命名示例：copilot/123-fix-navbar）；
++   创建一个以 issue 为主题的分支（命名示例：`copilot/123-fix-navbar`）；
 
 +   修改文件并提交初步实现；
 
@@ -685,7 +693,7 @@ Copilot coding agent 能够根据用户指令自动执行如下操作：
 
 1.  分析 issue 或 prompt 内容，明确任务目标；
 
-1.  **检查依赖**，自动安装项目中缺失的依赖项（如 npm install）；
+1.  **检查依赖**，自动安装项目中缺失的依赖项（如 `npm install`）；
 
 1.  **创建分支** 并切换环境；
 
@@ -703,17 +711,17 @@ Copilot coding agent 能够根据用户指令自动执行如下操作：
 
 +   **描述**：包括任务目标、所做更改、构建说明等；
 
-+   **作者**：@github-copilot；
++   **作者**：`@github-copilot`；
 
-+   **标签**：可能包含 copilot, automated, draft 等；
++   **标签**：可能包含 `copilot`, `automated`, `draft` 等；
 
 +   **操作入口**：
 
-+   “View Session Log” 查看日志；
++   “`View Session Log`” 查看日志；
 
-+   “Ask Copilot” 使用 Chat 留审查意见；
++   “`Ask Copilot`” 使用 Chat 留审查意见；
 
-+   “Continue with changes” 执行后续修改。
++   “`Continue with changes`” 执行后续修改。
 
 ---
 
@@ -721,15 +729,15 @@ Copilot coding agent 能够根据用户指令自动执行如下操作：
 
 审查者可像审查普通 PR 一样阅读并评论 Copilot 的提交。常用交互方式如下：
 
-### ✅ 方式一：标准 GitHub 审查流程
+### 方式一：标准 GitHub 审查流程
 
 +   行内评论
 
 +   总体建议
 
-+   Approve / Request Changes 操作
++   `Approve` / `Request Changes` 操作
 
-### ✅ 方式二：通过 Chat 与 Copilot 协作
+### 方式二：通过 Chat 与 Copilot 协作
 
 在 PR 页右侧的 Chat 面板输入自然语言提示：
 
@@ -747,7 +755,7 @@ agent 将解析反馈，并自动提交新的 commit 更新 PR 内容。
 
 +   **日志入口：**
 
-在 PR 页面中点击 “View Session Log” 即可查看 agent 行为。
+在 PR 页面中点击 “`View Session Log`” 即可查看 agent 行为。
 
 +   **日志内容包括：**
 
@@ -771,7 +779,7 @@ GitHub 官方提供了常见的 agent 异常及处理建议：
 
 +   通过日志监控 agent 执行过程，确保可控性和代码质量；
 
-+   搭配 CI 流程检查 agent 提交代码的可用性；
++   搭配 `CI` 流程检查 agent 提交代码的可用性；
 
 ---
 
@@ -793,7 +801,7 @@ GitHub Copilot 在实际开发工作中可用于完成大量高频但费时的�
 
 +   希望快速为某个模块补齐基础测试；
 
-+   采用如 Jest、pytest、unittest 等主流测试框架；
++   采用如 `Jest`、`pytest`、`unittest` 等主流测试框架；
 
 +   **使用方式：**
 
@@ -823,7 +831,7 @@ GitHub Copilot 在实际开发工作中可用于完成大量高频但费时的�
 
 +   **使用方式：**
 
-选中目标函数，右键点击 Ask Copilot，输入：
+选中目标函数，右键点击 `Ask Copilot`，输入：
 
 ```
 请以更具可读性的方式重构此函数，并将嵌套结构拆分为子函数。
@@ -843,7 +851,7 @@ Copilot 会输出结构更清晰、命名更合理的新版本函数。
 
 +   函数命名不规范、未使用模块化结构；
 
-+   希望统一代码风格，迁移到现代构建方式或框架（如从 CommonJS → ESModules）；
++   希望统一代码风格，迁移到现代构建方式或框架（如从 `CommonJS` → `ESModules`）；
 
 +   **使用方式：**
 
@@ -871,7 +879,7 @@ Copilot 将基于文件上下文逐步输出结构转换结果，可结合 agent
 
 +   需要语法等价、逻辑保持一致；
 
-+   常见迁移方向如：JavaScript → Python、Java → Go；
++   常见迁移方向如：`JavaScript` → `Python`、`Java` → `Go`；
 
 +   **使用方式：**
 
@@ -897,7 +905,7 @@ Copilot 会输出迁移后的代码，并解释实现方式变化（如异步结
 在 Chat 中提问：
 
 ```
-请将以下逻辑提取为通用函数，并将该函数命名为 formatCurrency。
+请将以下逻辑提取为通用函数，并将该函数命名为 `formatCurrency`。
 ```
 
 或使用 agent 提示：
@@ -924,7 +932,7 @@ Copilot 会识别重复使用的代码片段，并创建独立文件导出函数
 请为以下函数添加中文注释，逐行解释其逻辑，并说明每个参数的含义。
 ```
 
-Copilot 可根据代码逻辑自动插入注释，输出格式可指定 Markdown、JSDoc、reStructuredText 等风格。
+Copilot 可根据代码逻辑自动插入注释，输出格式可指定 Markdown、`JSDoc`、`reStructuredText` 等风格。
 
 ---
 
@@ -932,17 +940,17 @@ Copilot 可根据代码逻辑自动插入注释，输出格式可指定 Markdown
 
 +   场景说明：
 
-+   希望生成 .github/workflows 配置；
++   希望生成 `.github/workflows` 配置；
 
 +   自动化执行测试、部署、代码检查等流程；
 
 +   **使用方式：**
 
 ```
-请为 Node.js 项目生成一个 GitHub Actions 流水线，用于在每次 push 时运行 Jest 测试。
+请为 `Node.js` 项目生成一个 `GitHub Actions` 流水线，用于在每次 `push` 时运行 `Jest` 测试。
 ```
 
-生成的 YAML 文件可由 agent 创建并直接提交为新文件。
+生成的 `YAML` 文件可由 agent 创建并直接提交为新文件。
 
 ---
 

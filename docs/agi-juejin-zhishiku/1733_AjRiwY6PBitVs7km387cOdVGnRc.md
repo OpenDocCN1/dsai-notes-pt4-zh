@@ -1,12 +1,13 @@
+
 # 黏土画风GET！采用Stable Diffusion的ComfyUI一键生成制作攻略!
 
-> 来源：[https://agijuejin.feishu.cn/docx/SFrtdGUmjofdrZxVjH5czIQsnVg](https://agijuejin.feishu.cn/docx/SFrtdGUmjofdrZxVjH5czIQsnVg)
+> 来源：`https://agijuejin.feishu.cn/docx/SFrtdGUmjofdrZxVjH5czIQsnVg`
 
 > 作者：德里克文
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/697061497)hihu.com/p/697061...
+> 原文：`https://zhuanlan.zhihu.com/p/697061497`
 
-**黏**土画风太火了！以至于我打开社交媒体平台大家都在晒，我自助用Stable Diffusion也做了几个好有趣的黏土风格，快来看看吧！
+黏土画风太火了！以至于我打开社交媒体平台大家都在晒，我自助用Stable Diffusion也做了几个好有趣的黏土风格，快来看看吧！
 
 ![](img/b5f9dce42be3d1b0587a78a516c9af9e.png)
 
@@ -62,7 +63,7 @@ Remini这款AI修图App凭借“黏土风格”“瓷娃娃”这些滤镜在网
 
 接下来我就教大家Stable Diffusion的具体的操作流程。
 
-### 1.准备工作
+### 1. 准备工作
 
 Stable Diffusion是一个开源免费软件，但是对电脑硬件有要求，建议显卡4070以上，显存至少16G，然后需要下载上百G的文件，同时还有繁琐的安装流程。
 
@@ -70,9 +71,7 @@ Stable Diffusion是一个开源免费软件，但是对电脑硬件有要求，�
 
 ![](img/fc4d4a3a38a0980c25d8396df676c77e.png)
 
-[不过在互联](https://link.zhihu.com/?target=https%3A//www.lanrui-ai.com/register%3Finvitation_code%3D9071)网时代，我们还有云平台这个方便的工具，在 揽睿星舟 平台，已经有部署好的的一键云端启动，只需要点击后运行就可以了。
-
-[  ](https://link.zhihu.com/?target=https%3A//www.lanrui-ai.com/register%3Finvitation_code%3D9071)
+不过在互联网时代，我们还有云平台这个方便的工具，在揽睿星舟平台（`https://link.zhihu.com/?target=https%3A//www.lanrui-ai.com/register%3Finvitation_code%3D9071`），已经有部署好的的一键云端启动，只需要点击后运行就可以了。
 
 新用户享有2小时免费体验及完成新手任务后赠送的5元奖励，生成一张照片大概只需要8秒左右，2小时足够你白嫖生成好多张照片了。
 
@@ -88,7 +87,7 @@ Stable Diffusion是一个开源免费软件，但是对电脑硬件有要求，�
 
 ![](img/d1f7411ed076b3418c661ff671ce2f12.png)
 
-### 2.Lora下载
+### 2. Lora下载
 
 进入以后，我们可以看到默认界面，看到这个内容是不是觉得有点懵逼，别着急一点都不难。
 
@@ -104,7 +103,6 @@ Stable Diffusion是一个开源免费软件，但是对电脑硬件有要求，�
 ```
 
 然后我们在网盘那里新建文件夹。
-
 
 建立好文件夹以后，我们在文件夹放入资料，我们总共需要两个Lora，分别是
 
@@ -122,12 +120,11 @@ https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudfl
 
 揽睿星舟的数据传输，不需要自己下载到本地再上传，可以直接在线下载模型，只需要把我上面提供的下载地址按照下图所示，放入URL里面，点击创建下载任务就好了。
 
-
 然后我们点击上方的“云”图标，看下下载进度，等2个Lora都下载好就可以了。
 
 ![](img/5fd8814f6862f8b5f53ec6efce311c94.png)
 
-### 3.ComfyUI操作流程
+### 3. ComfyUI操作流程
 
 回到ComfyUI界面，我们点击加载。
 
@@ -149,7 +146,7 @@ https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudfl
 
 如果整个工作流就没有红色显示报错了，可以正常运行了。
 
-### 4.参数设置
+### 4. 参数设置
 
 参数设置比较简单，几个地方设置下就好了。
 
@@ -165,11 +162,11 @@ https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudfl
 
 ![](img/be92c0c74a7eabef6148f843732a7051.png)
 
-接着来到IPAdapter这个界面，调整下宽度（建议保持默认1024像素），在加载器选择PLUS。
+接着来到`IPAdapter`这个界面，调整下宽度（建议保持默认1024像素），在加载器选择PLUS。
 
 ![](img/51bb1b7cf137c59f68f39b8fac0eebaf.png)
 
-在ContrlNet这个界面，加载器那里选择 t2i-adapter-canny 这个模型就可以了
+在`ControlNet`这个界面，加载器那里选择`t2i-adapter-canny`这个模型就可以了
 
 ![](img/596dacd61fa57b98e311785289800d89.png)
 
@@ -177,7 +174,7 @@ https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudfl
 
 ![](img/665d8e0eda4cb59c7e50b9b6b1a0b6d0.png)
 
-就这样，一个完整的黏土风流程就做完了，你不来尝试下吗?
+就这样，一个完整的黏土风流程就做完了，你不来尝试下吗？
 
 ## 结语
 

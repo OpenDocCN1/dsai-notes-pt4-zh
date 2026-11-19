@@ -1,3 +1,4 @@
+
 # gpt5.2打工人case测试！
 
 > 来源：[https://aiwarts101.feishu.cn/docx/QU8pdBtTGo2HyHxG4uRcUTIwnzd](https://aiwarts101.feishu.cn/docx/QU8pdBtTGo2HyHxG4uRcUTIwnzd)
@@ -13,7 +14,6 @@
 > ...
 
 > (后面是每张表的详细设定)
-
 
 [gpt表格.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OMv6b0Rm5o5wUmxktEYchlJwnAf)
 
@@ -72,7 +72,6 @@
 [🚨 GPT-5.2 is finally OUT!The benchmark jumps vs 5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GovHbm5wIov1czxd4cicg5A4n5c)
 
 >
-
 
 [12月12日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fupyb5bX3o5uhMxhn3fcbk6Jn0r)
 

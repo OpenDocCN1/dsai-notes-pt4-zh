@@ -1,3 +1,4 @@
+
 # 240114 - 0108｜GPT Store 上线，可销售/定制 ChatBot；微软高管加入 OpenAI 董事会；全球首个汽车行业全栈自研全场景 AI 大模型，吉利星睿 AI 大模型；Intel 推出车载 AI 芯片挑战英伟达、高通；钉钉超级助理 AI Agent 玩家发布；三星发布 AI 大模型端侧手机，定位“AI 手机”；CES 2024（必看）；Apple 宣布下月初发布 Vision Pro；Rokid 完成近五亿元 C+轮融资，将在合肥落地三大中心...
 
 > 来源：[https://leonzhang.feishu.cn/docx/ZgFYdFWMYogv6Tx7ephctlbGnzd](https://leonzhang.feishu.cn/docx/ZgFYdFWMYogv6Tx7ephctlbGnzd)
@@ -72,11 +73,11 @@ Morph Studio 近期更新了其 text-to-video 生成技术，提供 1080P 画质
 
 ## 📱 好玩推荐
 
-### **CES 2024 **
+### CES 2024
 
-+   https://mp.weixin.qq.com/s/GB1GGu8ii0l1JUpcVKQzIA
++ https://mp.weixin.qq.com/s/GB1GGu8ii0l1JUpcVKQzIA
 
-+   https://x.com/rowancheung/status/1744736547277258795?s=20 ｜第一个手机壳我就很喜欢，hh
++ https://x.com/rowancheung/status/1744736547277258795?s=20 ｜第一个手机壳我就很喜欢，hh
 
 在 2024 年的国际电子消费展（CES）上，人工智能（AI）成为了绝对的主角，各大科技公司纷纷围绕 AI 主题展示了众多创新产品。AI PC 成为了一个重要关键词，英伟达推出了新的显卡和实时 AI 数字人生产技术，而英特尔发布了旗舰处理器和 AI PC 处理器。IDC 预测，AI PC 在中国 PC 市场的装配比例将在未来几年快速增长。
 
@@ -114,6 +115,4 @@ Rokid 的 AR 眼镜在文旅、消费端和工业三大方向上实现了商业�
 
 > https://www.36kr.com/p/2596250121419401
 
-AIGC 智能设计平台「Nolibox 计算美学」完成数千万元 A 轮融资，由尖晶资本和 GRIP Capital 跟投。成立于 2020 年的 Nolibox 是一家智能设计引擎服务商，以 AIGC 一站式图像解决方案为企业提供服务。融资将用于技术研发、市场开拓，加深与电商、营销等领域的合作。Nolibox
-
-已推出多项基于 AI 的图片生成产品，包括无限画板、AI 海报设计生成等，针对电商和营销领域提供 AIGC 服务，已获得世界 500 强付费客户支持。未来计划着重推进商业化，加强与标杆企业的合作，提供更高价值的解决方案。
+AIGC 智能设计平台「Nolibox 计算美学」完成数千万元 A 轮融资，由尖晶资本和 GRIP Capital 跟投。成立于 2020 年的 Nolibox 是一家智能设计引擎服务商，以 AIGC 一站式图像解决方案为企业提供服务。融资将用于技术研发、市场开拓，加深与电商、营销等领域的合作。Nolibox 已推出多项基于 AI 的图片生成产品，包括无限画板、AI 海报设计生成等，针对电商和营销领域提供 AIGC 服务，已获得世界 500 强付费客户支持。未来计划着重推进商业化，加强与标杆企业的合作，提供更高价值的解决方案。

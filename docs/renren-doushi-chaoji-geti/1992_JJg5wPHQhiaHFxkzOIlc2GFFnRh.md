@@ -1,10 +1,9 @@
+
 # 2020-12-29这个项目你能做起来吗？ – 人人都是产品经理
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MPandwG1soarlMxAacCcoDrZnAc](https://xuqiwei1986.feishu.cn/docx/MPandwG1soarlMxAacCcoDrZnAc)
 
-> 🔗 原文链接： h[ttps://www.woshipm](https://www.woshipm.com/zhichang/4320721.html).com/zhichang/43...
-
->
+> 🔗 原文链接：https://www.woshipm.com/zhichang/4320721.html
 
 > 编辑导语：职场新人在面对一个从0到1的项目时，对于项目的计划以及未来的发展要梳理清楚，并且一定要获得上级的支持，推动起来才更顺利；本文作者分享了关于如何做起来一个项目的思考，我们一起来看一下。
 
@@ -72,10 +71,10 @@
 
 如果在面试的过程中，面试官给你一个泛泛而谈，你能不能把项目做起来，你会怎么回答？
 
-### #专栏作家#
+### 专栏作家
 
 张沐，🛰️👸号：运营官张沐，人人都是产品经理专栏作家。7年互联网产品运营经验，关注SaaS、ToB产品运营，教育行业运营，擅长渠道运营、数据运营、用户运营。
 
 本文原创发布于人人都是产品经理，未经允许，禁止转载
 
-题图来自Unsplash， 基于CC0协议
+题图来自Unsplash，基于CC0协议

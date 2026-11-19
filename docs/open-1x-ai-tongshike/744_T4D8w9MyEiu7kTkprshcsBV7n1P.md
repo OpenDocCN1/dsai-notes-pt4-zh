@@ -1,3 +1,4 @@
+
 # 在Coze中接入GPT4o或其它自定义模型
 
 > 来源：[https://datawhaler.feishu.cn/docx/D0a2dWMTRoK0GgxqW2tcybTfnfh](https://datawhaler.feishu.cn/docx/D0a2dWMTRoK0GgxqW2tcybTfnfh)
@@ -6,7 +7,7 @@
 
 > 接下来，我将分享如何在 Coze 中接入 GPT-4o 的方法，希望能为大家提供一些参考和帮助。
 
-# 思路介绍
+## 思路介绍
 
 在 Coze 中，可以通过对话流模式来处理消息，这是一种高效且灵活的方式。为了接入 GPT-4o，我们可以创建一个自定义插件，并在其中调用该插件。
 
@@ -16,15 +17,15 @@
 
 ![](img/ff6a530c24ba37112d60847be130f63a.png)
 
-我们可以在对话流程中将用户的聊天记录实时存储到数据库中，而在调用 自定义插件 时，再从数据库中读取这些聊天记录。这样即可解决聊天记录的问题
+我们可以在对话流程中将用户的聊天记录实时存储到数据库中，而在调用自定义插件时，再从数据库中读取这些聊天记录。这样即可解决聊天记录的问题
 
 ![](img/0e14ecfb5e7dea56b15fad3c18eccded.png)
 
 希望这个方法能为大家在类似场景下提供一些思路和帮助。
 
-# 详细步骤
+## 详细步骤
 
-## 一、新建插件
+### 一、新建插件
 
 > 以下是自定义插件的详细步骤（高手可略过）、
 
@@ -48,7 +49,7 @@ Coze中的插件，是一个插件可以新建多个工具，所以我们新建�
 
 ![](img/f2645b74fdfc1fed78ae712e04abb8b2.png)
 
-在coze ide中，可以添加依赖，我们添加一个openai的依赖，点击添加依赖，在弹出的框中输入openai即可，之后即可安装上openai的依赖。
+在coze ide中，可以添加依赖，我们添加一个`openai`的依赖，点击添加依赖，在弹出的框中输入`openai`即可，之后即可安装上`openai`的依赖。
 
 ![](img/dc8b5670eead304a49ff370c1fe22307.png)
 
@@ -56,15 +57,11 @@ Coze中的插件，是一个插件可以新建多个工具，所以我们新建�
 
 参数信息为
 
-+   messagelist，这便是我们传递给大模型的消息
-
-+   model
-
-+   baseurl
-
-+   apikey
-
-+   system_prompt 系统提示词
++   `messagelist`，这便是我们传递给大模型的消息
++   `model`
++   `baseurl`
++   `apikey`
++   `system_prompt` 系统提示词
 
 ![](img/863f1529f57dc4d85290ce9b7189ec89.png)
 
@@ -73,7 +70,7 @@ Coze中的插件，是一个插件可以新建多个工具，所以我们新建�
 ```
 from openai import OpenAI
 
-def handler(args: Args[Input])-&gt;Output:
+def handler(args: Args[Input])->Output:
     modelname = args.input.model
     messagelist = args.input.messagelist
     base_url = args.input.base_url
@@ -84,12 +81,12 @@ def handler(args: Args[Input])-&gt;Output:
         api_key=api_key,
     )
     system_prompt = args.input.system_prompt
-    systemprompt = system_prompt + &quot;\n\n&quot; + &quot;已知信息：\n&quot;
+    systemprompt = system_prompt + "\n\n" + "已知信息：\n"
 
-    messages = [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: systemprompt}]
+    messages = [{"role": "system", "content": systemprompt}]
     if messagelist:
         for message in messagelist:
-            messages.append({&quot;role&quot;:message.role,&quot;content&quot;:message.content})
+            messages.append({"role":message.role,"content":message.content})
 
     print(messages)
     
@@ -99,12 +96,12 @@ def handler(args: Args[Input])-&gt;Output:
             stream=True,
             temperature = 0.6
         )# type: ignore
-    content = &quot;&quot;
+    content = ""
     for chunk in response:
         # 检查chunk是否有content属性并且不为空
-        if hasattr(chunk.choices[0].delta, &#x27;content&#x27;) and chunk.choices[0].delta.content:
+        if hasattr(chunk.choices[0].delta, 'content') and chunk.choices[0].delta.content:
             content += chunk.choices[0].delta.content
-    return {&quot;response&quot;: content}
+    return {"response": content}
 ```
 
 ![](img/b700cac33bbd8bcd23cb87daac0c6dfe.png)
@@ -113,7 +110,7 @@ def handler(args: Args[Input])-&gt;Output:
 
 ![](img/cf0b000eeaec9e46d0d4182d5f96229f.png)
 
-## 二、新建数据库
+### 二、新建数据库
 
 在智能体的下面数据库那里点击添加，然后新建数据表，
 
@@ -125,11 +122,11 @@ def handler(args: Args[Input])-&gt;Output:
 
 ![](img/69c9d47671927c44dffdcebfb0bb404a.png)
 
-新建两个字段，role，content。然后点击保存即可
+新建两个字段，`role`，`content`。然后点击保存即可
 
 ![](img/ca09da668c32d6fd852e691bdab8f2d1.png)
 
-## 三、对话流添加
+### 三、对话流添加
 
 > 对话流模式中，我们每次对话都会进入一个固定的对话流，在这个流程中，我们可以添加自己的逻辑。使得我们可以完全掌控Agent的每一步运行。
 
@@ -143,15 +140,15 @@ def handler(args: Args[Input])-&gt;Output:
 
 ![](img/bbbb221a98f5baa2af6c63712cdbecde.png)
 
-下图便是一个对话流，初始对话流包括两个节点，开始和结束，开始节点中有两个变量USER_INPUT、CONVERSATION_NAME。USER_INPUT中即是用户的输入。
+下图便是一个对话流，初始对话流包括两个节点，开始和结束，开始节点中有两个变量`USER_INPUT`、`CONVERSATION_NAME`。`USER_INPUT`中即是用户的输入。
 
-目前尚不明确另一个参数的用途，我经过测试CONVERSATION_NAME的值无论是调试时，还是正式发布后，全部传递的是Default
+目前尚不明确另一个参数的用途，我经过测试`CONVERSATION_NAME`的值无论是调试时，还是正式发布后，全部传递的是`Default`
 
 ![](img/18cb6a9e086913f17f3e5f0c1d735e3d.png)
 
-## 四、对话流配置
+### 四、对话流配置
 
-首先我们点击页面最下方的添加节点按钮，添加一个新建数据的节点，在该节点中我们将用户输入的消息添加到数据库中。role字段设置为user，content设置为开始节点的USER_INPUT
+首先我们点击页面最下方的添加节点按钮，添加一个新建数据的节点，在该节点中我们将用户输入的消息添加到数据库中。`role`字段设置为`user`，`content`设置为开始节点的`USER_INPUT`
 
 ![](img/4a2c18dfb92127698e0aa8bcd5ddcc69.png)
 
@@ -175,7 +172,7 @@ def handler(args: Args[Input])-&gt;Output:
 
 ![](img/b9102de130270ab008584a00c8b59d78.png)
 
-设置好插件的变量，messagelist是从数据库的查询中获得的，其它参数是在前面的代码中设置的。
+设置好插件的变量，`messagelist`是从数据库的查询中获得的，其它参数是在前面的代码中设置的。
 
 ![](img/fe2b6ad6f7e348d5164c86ba96fdff88.png)
 

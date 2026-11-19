@@ -1,3 +1,4 @@
+
 # 开源 · 再升级！Video 版 CogVLM2 开源
 
 > 来源：[https://ai.feishu.cn/docx/PsRGdnMA0o8zK6xRWGnc8dY5nOe](https://ai.feishu.cn/docx/PsRGdnMA0o8zK6xRWGnc8dY5nOe)
@@ -22,16 +23,15 @@
 
 CogVLM2-Video不仅在公共视频理解基准上达到了最新的性能，还在视频字幕生成和时间定位方面表现出色，为视频生成和视频摘要等后续任务提供了强有力的工具。
 
-# 效果演示
+## 效果演示
 
-
-[caixukun.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OJtAbNkNZoEYTwxOpBtcKH3mnxg)
+[`caixukun.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OJtAbNkNZoEYTwxOpBtcKH3mnxg)
 
 ![](img/dfa5928d308ee274c90da2b29cb03984.png)
 
-[tiger_describe.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BIDSb7OgYoY8vbxOPJgc3omUnOe)
+[`tiger_describe.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BIDSb7OgYoY8vbxOPJgc3omUnOe)
 
-# 模型介绍
+## 模型介绍
 
 目前，视频理解的主流方法涉及使用图像编码器从视频中提取帧，对其进行编码，然后设计编码压缩模块（如时间池化或Q-Former模块）来压缩视频编码信息，再将其输入大型语言模型（LLM）以便与文本输入进行联合理解。
 
@@ -43,7 +43,7 @@ CogVLM2-Video不仅在公共视频理解基准上达到了最新的性能，还�
 
 ![](img/b3edd9d7c61a8b1578d55e5409a515f5.png)
 
-# 数据集
+## 数据集
 
 此外，使用现有的时间定位标注数据训练的视频理解模型受到数据范围和问答固定格式的限制，缺乏开放域问答和处理能力。相比于用于训练LLM的纯文本数据和用于训练VLM的图像理解数据，高质量视频问答和时间定位数据的标注成本极高。仅靠手工标注无法满足大规模训练的需求。
 
@@ -53,14 +53,14 @@ CogVLM2-Video不仅在公共视频理解基准上达到了最新的性能，还�
 
 ![](img/6b21c06e51fa7070634433911e3f8996.png)
 
-# 评测
+## 评测
 
 CogVLM2-Video在多个公开评测集上达到最好的性能，下面是一些评测结果。
 
-+   量化评估指标（VideoChatGPT-Bench + Zero-shot QA）
++ 量化评估指标（VideoChatGPT-Bench + Zero-shot QA）
 
 ![](img/3f72e07a83d7568e50a8c881f535d616.png)
 
-+   量化评估指标（MVBench）
++ 量化评估指标（MVBench）
 
 ![](img/ca549a815d63013611f25606b79aa15f.png)

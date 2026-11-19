@@ -1,3 +1,4 @@
+
 # RegMix-用回归任务解决大模型数据混合问题
 
 > 来源：[https://agijuejin.feishu.cn/docx/RUxVdBy8xoPs72xfSpscUJMEnAg](https://agijuejin.feishu.cn/docx/RUxVdBy8xoPs72xfSpscUJMEnAg)
@@ -23,21 +24,16 @@ Github: https://github.com/sail-sg/regmix
 
 整体流程如上图所示，
 
-+   生成随机数据混合比例，按照比例采用混合数据并训练小模型；
-
-+   利用数据混合比例作为特征值，模型训练的目标值作为标签，拟合回归模型；
-
-+   在模拟更大数据混合比例空间，利用回归模型预测最佳目标值，以获取最佳混合比例；
-
-+   使用模拟出的最佳混合比例的数据训练更大的模型。
++ 生成随机数据混合比例，按照比例采用混合数据并训练小模型；
++ 利用数据混合比例作为特征值，模型训练的目标值作为标签，拟合回归模型；
++ 在模拟更大数据混合比例空间，利用回归模型预测最佳目标值，以获取最佳混合比例；
++ 使用模拟出的最佳混合比例的数据训练更大的模型。
 
 训练小模型时越多越好，但为了节约成本需要尽量减少小模型训练次数，那么在初始化数据混合比例时就需要时多样化的，并且每个数据领域需要都存在极端值，数据采用过程主要是基于Tokens（chunk-level）分布的狄利克雷分布来实现。
 
-```
-详见：mixture_config/synthesize_mixture.py
-```
+详见：`mixture_config/synthesize_mixture.py`
 
-同时在拟合回归模型时，采用了线性回归和LightGBM两种回归模型。
+同时在拟合回归模型时，采用了线性回归和`LightGBM`两种回归模型。
 
 ## 结果
 
@@ -49,7 +45,7 @@ Github: https://github.com/sail-sg/regmix
 
 ![](img/b38936d0baeec9c974570d43c440a23f.png)
 
-同时训练次数要比训练的总Token数要重要，更影响回归模型的效果，并且采用LightGBM建模要比线性回归建模要好。
+同时训练次数要比训练的总Token数要重要，更影响回归模型的效果，并且采用`LightGBM`建模要比线性回归建模要好。
 
 ![](img/eb0f78a56bb39a90a0518cb1d3971cf2.png)
 

@@ -1,48 +1,49 @@
+
 # K 近邻算法
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/J15NdUpduo8M7IxRn6kcCY2wnme](https://v11enp9ok1h.feishu.cn/docx/J15NdUpduo8M7IxRn6kcCY2wnme)
 
-**K 近邻算法**（K-Nearest Neighbors，简称 KNN）是一种简单且常用的分类和回归算法。
+K 近邻算法（K-Nearest Neighbors，简称 KNN）是一种简单且常用的分类和回归算法。
 
 K 近邻算法属于监督学习的一种，核心思想是通过计算待分类样本与训练集中各个样本的距离，找到距离最近的 K 个样本，然后根据这 K 个样本的类别或值来预测待分类样本的类别或值。
 
-### KNN 的基本原理
+## KNN 的基本原理
 
 KNN 算法的基本原理可以概括为以下几个步骤：
 
-1.  **计算距离**：计算待分类样本与训练集中每个样本的距离。常用的距离度量方法有欧氏距离、曼哈顿距离等。
+1. **计算距离**：计算待分类样本与训练集中每个样本的距离。常用的距离度量方法有欧氏距离、曼哈顿距离等。
 
-1.  **选择 K 个最近邻**：根据计算出的距离，选择距离最近的 K 个样本。
+2. **选择 K 个最近邻**：根据计算出的距离，选择距离最近的 K 个样本。
 
-1.  **投票或平均**：对于分类问题，K 个最近邻中出现次数最多的类别即为待分类样本的类别；对于回归问题，K 个最近邻的值的平均值即为待分类样本的值。
+3. **投票或平均**：对于分类问题，K 个最近邻中出现次数最多的类别即为待分类样本的类别；对于回归问题，K 个最近邻的值的平均值即为待分类样本的值。
 
-### KNN 的特点
+## KNN 的特点
 
-+   **简单易理解**：KNN 算法的原理非常简单，容易理解和实现。
++ **简单易理解**：KNN 算法的原理非常简单，容易理解和实现。
 
-+   **无需训练**：KNN 是一种"懒惰学习"算法，不需要显式的训练过程，所有的计算都在预测时进行。
++ **无需训练**：KNN 是一种"懒惰学习"算法，不需要显式的训练过程，所有的计算都在预测时进行。
 
-+   **对数据分布无假设**：KNN 不对数据的分布做任何假设，适用于各种类型的数据。
++ **对数据分布无假设**：KNN 不对数据的分布做任何假设，适用于各种类型的数据。
 
-+   **计算复杂度高**：由于 KNN 需要在预测时计算所有样本的距离，当数据集较大时，计算复杂度会很高。
++ **计算复杂度高**：由于 KNN 需要在预测时计算所有样本的距离，当数据集较大时，计算复杂度会很高。
 
-### KNN 算法的优缺点
+## KNN 算法的优缺点
 
-**优点**
+### 优点
 
-+   **简单易用**：KNN 算法的原理简单，易于理解和实现。
++ **简单易用**：KNN 算法的原理简单，易于理解和实现。
 
-+   **无需训练**：KNN 不需要显式的训练过程，所有的计算都在预测时进行。
++ **无需训练**：KNN 不需要显式的训练过程，所有的计算都在预测时进行。
 
-+   **适用于多分类问题**：KNN 可以轻松处理多分类问题。
++ **适用于多分类问题**：KNN 可以轻松处理多分类问题。
 
-**缺点**
+### 缺点
 
-+   **计算复杂度高**：KNN 需要在预测时计算所有样本的距离，当数据集较大时，计算复杂度会很高。
++ **计算复杂度高**：KNN 需要在预测时计算所有样本的距离，当数据集较大时，计算复杂度会很高。
 
-+   **对噪声敏感**：KNN 对噪声数据较为敏感，噪声数据可能会影响预测结果。
++ **对噪声敏感**：KNN 对噪声数据较为敏感，噪声数据可能会影响预测结果。
 
-+   **需要选择合适的 K 值**：K 值的选择对模型的性能有很大影响，选择合适的 K 值是一个挑战。
++ **需要选择合适的 K 值**：K 值的选择对模型的性能有很大影响，选择合适的 K 值是一个挑战。
 
 ---
 
@@ -50,9 +51,9 @@ KNN 算法的基本原理可以概括为以下几个步骤：
 
 ### 导入必要的库
 
-首先，我们需要导入一些常用的 Python 库，如 numpy 用于数值计算，matplotlib 用于绘图，sklearn 用于加载数据集和评估模型。
+首先，我们需要导入一些常用的 Python 库，如 `numpy` 用于数值计算，`matplotlib` 用于绘图，`sklearn` 用于加载数据集和评估模型。
 
-## 实例
+#### 实例
 
 ```
 import numpy as np
@@ -65,9 +66,9 @@ from sklearn.metrics import accuracy_score
 
 ### 加载数据集
 
-我们使用 sklearn 中的 load_iris 函数加载经典的鸢尾花数据集。这个数据集包含 150 个样本，每个样本有 4 个特征，目标是将样本分为 3 类。
+我们使用 `sklearn` 中的 `load_iris()` 函数加载经典的鸢尾花数据集。这个数据集包含 150 个样本，每个样本有 4 个特征，目标是将样本分为 3 类。
 
-## 实例
+#### 实例
 
 ```
 # 加载Iris数据集
@@ -80,7 +81,7 @@ y = iris.target
 
 在应用 KNN 算法之前，通常需要对数据进行标准化处理，以确保每个特征对距离计算的贡献是相同的。
 
-## 实例
+#### 实例
 
 ```
 将数据集拆分为训练集和测试集
@@ -89,9 +90,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 ### 训练 KNN 模型
 
-接下来，我们使用 sklearn 中的 KNeighborsClassifier 来训练 KNN 模型。这里我们选择 K=3，即选择 3 个最近邻。
+接下来，我们使用 `sklearn` 中的 `KNeighborsClassifier` 来训练 KNN 模型。这里我们选择 `K=3`，即选择 3 个最近邻。
 
-## 实例
+#### 实例
 
 ```
 创建KNN模型，设置K值为3
@@ -105,15 +106,15 @@ knn.fit(X_train, y_train)
 
 使用训练好的模型对测试集进行预测，并计算模型的准确率。
 
-## 实例
+#### 实例
 
 ```
-**在测试集上**进行预测
+在测试集上进行预测
 y_pred = knn.predict(X_test)
 
 计算准确率
 accuracy = accuracy_score(y_test, y_pred)
-print(f&quot;KNN模型的准确率: {accuracy:.4f}&quot;)
+print(f"KNN模型的准确率: {accuracy:.4f}")
 ```
 
 输出如下：
@@ -126,7 +127,7 @@ KNN模型的准确率: 0.7556
 
 这里我们将数据集的前两个特征作为输入特征。
 
-## 实例
+#### 实例
 
 ```
 import numpy as np
@@ -155,7 +156,7 @@ y_pred = knn.predict(X_test)
 
 # 计算准确率
 accuracy = accuracy_score(y_test, y_pred)
-print(f&quot;KNN模型的准确率: {accuracy:.4f}&quot;)
+print(f"KNN模型的准确率: {accuracy:.4f}")
 
 # 绘制决策边界和数据点
 h = .02  # 网格步长
@@ -174,15 +175,14 @@ Z = Z.reshape(xx.shape)
 plt.contourf(xx, yy, Z, alpha=0.8)
 
 # 绘制训练数据点
-plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors=&#x27;k&#x27;, marker=&#x27;o&#x27;, s=50)
-plt.title(&quot;KNN Demo&quot;)
-plt.xlabel(&quot;Feature 1&quot;)
-plt.ylabel(&quot;Feature 2&quot;)
+plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors='k', marker='o', s=50)
+plt.title("KNN Demo")
+plt.xlabel("Feature 1")
+plt.ylabel("Feature 2")
 plt.show()
 ```
 
 显示如下所示：
-
 
 ### 调整 K 值
 
@@ -190,7 +190,7 @@ K 值的选择对模型的性能有重要影响。
 
 通常我们通过交叉验证或可视化方法选择最佳的 K 值。
 
-## 实例
+#### 实例
 
 ```
 # 尝试不同的K值并绘制准确率变化
@@ -205,10 +205,10 @@ for k in k_range:
     accuracies.append(accuracy)
 
 # 绘制K值与准确率的关系
-plt.plot(k_range, accuracies, marker=&#x27;o&#x27;)
-plt.title(&quot;K值与准确率的关系&quot;)
-plt.xlabel(&quot;K值&quot;)
-plt.ylabel(&quot;准确率&quot;)
+plt.plot(k_range, accuracies, marker='o')
+plt.title("K值与准确率的关系")
+plt.xlabel("K值")
+plt.ylabel("准确率")
 plt.show()
 ```
 
@@ -218,7 +218,7 @@ KNN 同样可以用于回归任务（KNN Regression）。
 
 在回归任务中，KNN 根据 K 个最近邻的目标值进行平均来预测输出。
 
-## 实例
+#### 实例
 
 ```
 import numpy as np
@@ -243,11 +243,11 @@ knn_reg.fit(X_train, y_train)
 y_pred = knn_reg.predict(X_test)
 
 # 可视化回归结果
-plt.scatter(X_test, y_test, color=&#x27;red&#x27;, label=&#x27;True Values&#x27;)
-plt.scatter(X_test, y_pred, color=&#x27;blue&#x27;, label=&#x27;Predicted Values&#x27;)
-plt.title(&quot;KNN Regression&quot;)
-plt.xlabel(&quot;Feature&quot;)
-plt.ylabel(&quot;Target&quot;)
+plt.scatter(X_test, y_test, color='red', label='True Values')
+plt.scatter(X_test, y_pred, color='blue', label='Predicted Values')
+plt.title("KNN Regression")
+plt.xlabel("Feature")
+plt.ylabel("Target")
 plt.legend()
 plt.show()
 ```

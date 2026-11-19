@@ -1,8 +1,7 @@
-# 12.01-ChatGPT两岁，OpenAI 10亿用户计划曝光！
-
-> 来源：[https://agijuejin.feishu.cn/docx/KYVRdNg1IoGLRYxFO37czqzSnMb](https://agijuejin.feishu.cn/docx/KYVRdNg1IoGLRYxFO37czqzSnMb)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 01 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/KYVRdNg1IoGLRYxFO37czqzSnMb](https://agijuejin.feishu.cn/docx/KYVRdNg1IoGLRYxFO37czqzSnMb)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

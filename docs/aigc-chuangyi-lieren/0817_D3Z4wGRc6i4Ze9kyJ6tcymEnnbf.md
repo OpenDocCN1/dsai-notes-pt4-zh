@@ -1,22 +1,24 @@
+
+
 # Claude Code 超级小白入门指南：开源模型质变
 
-> 来源：[https://aigcreative.feishu.cn/docx/M0XCdO99ko9cEqxYI7McBEwxnng](https://aigcreative.feishu.cn/docx/M0XCdO99ko9cEqxYI7McBEwxnng)
+> 来源：`https://aigcreative.feishu.cn/docx/M0XCdO99ko9cEqxYI7McBEwxnng`
 
 > 作者：大橘子老师
 
-> 来源X：https://x.com/oran_ge/status/2005419365450252425
+> 来源X：`https://x.com/oran_ge/status/2005419365450252425`
 
 ![](img/6ab2a7bb37228133cace977248b420fe.png)
 
 两个月以来，我一直想写一篇给小白的 CC 入门指南，今天终于可以写了。
 
-Claude Code （简称 CC）是我今年最推荐的 AI 产品，没有之一。
+Claude Code（简称 CC）是我今年最推荐的 AI 产品，没有之一。
 
 Claude Code 虽然叫 Code，但它的功能绝对不止是写代码，而是一款真正意义上的通用 Agent。
 
 很多电脑上的很繁琐的工作，都是 CC 一句话的事情。
 
-我用它做问答、写作、写网页、写软件，数据分析、甚至拆分工资条。
+我用它做问答、写作、写网页、写软件、数据分析，甚至拆分工资条。
 
 它甚至可以帮我把音频和图片快速合成视频。
 
@@ -34,7 +36,7 @@ CC 也是那个让著名的 OpenAI 研究员 AK 都感到自己落伍的那个�
 
 封号封到一个月三次郎，根本受不了。
 
-毕竟 Claude Code 的收入一年就10亿美金，他们CEO根本看不上中国用户。
+毕竟 Claude Code 的收入一年就 10 亿美金，他们 CEO 根本看不上中国用户。
 
 所以我一直在等一个时刻，就是国产开源模型的代码能力突破阈值。
 
@@ -48,29 +50,29 @@ CC 也是那个让著名的 OpenAI 研究员 AK 都感到自己落伍的那个�
 
 友情提醒，这篇文章比较长，一步一步操作下来，大概需要一个小时，可以先收藏再看。
 
-如果你的朋友也想体验电脑上最智能的 AI ，请一定把这篇文章转发给他！
+如果你的朋友也想体验电脑上最智能的 AI，请一定把这篇文章转发给他！
 
 # Claude Code 安装指南
 
 ## 一、基础准备
 
-1.  先准备一个科学的网络环境。
+1. 先准备一个科学的网络环境。
 
-1.  到这里安装最新版本的 Node.js ，地址：
+2. 到这里安装最新版本的 Node.js，地址：
 
-https://nodejs.org/en/download/
+`https://nodejs.org/en/download/`
 
-1.  Windows 用户还需要额外安装 Git for Windows，地址：
+3. Windows 用户还需要额外安装 Git for Windows，地址：
 
-https://git-scm.com/install/windows
+`https://git-scm.com/install/windows`
 
 ## 二、正式开始安装 CC
 
-1.  在你的电脑上，搜索「终端」，打开它，是这样的，不用害怕，你就把它理解成一个界面很酷的 AI 对话框。
+1. 在你的电脑上，搜索「终端」，打开它，是这样的，不用害怕，你就把它理解成一个界面很酷的 AI 对话框。
 
 ![](img/2026bbb58bd000af57a13aea398c893f.png)
 
-1.  在终端里，粘贴下面的命令，然后回车。
+2. 在终端里，粘贴下面的命令，然后回车。
 
 ```
 npm install -g @anthropic-ai/claude-code
@@ -80,9 +82,9 @@ npm install -g @anthropic-ai/claude-code
 
 如果没有其他工具，可以询问任何 AI 来尝试解决错误。
 
-1.  如果2的方法，安装没有成功，可以尝试下列这个方法：
+3. 如果第 2 种方法安装没有成功，可以尝试下列这个方法：
 
-如果你的电脑是 macOS, Linux, WSL，粘贴这条命令，回车
+如果你的电脑是 macOS、Linux、WSL，粘贴这条命令，回车
 
 ```
 curl -fsSL https://claude.ai/install.sh | bash
@@ -94,7 +96,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 irm https://claude.ai/install.ps1 | iex
 ```
 
-安装完成后，输入 claude --version ，如果出现版本号，则代表安装成功。
+安装完成后，输入 `claude --version`，如果出现版本号，则代表安装成功。
 
 ![](img/968c1108de986ab41cf9a5ce898f021c.png)
 
@@ -102,21 +104,21 @@ irm https://claude.ai/install.ps1 | iex
 
 前面也说到了，官方的 CC 丧心病狂，封号严重，官方的那个订阅就不推荐了，如果你能搞定官方的，我表示敬佩，大概率也不会来看这篇文章。
 
-国内对 CC 模型支持比较好的有三个：GLM 4.7，MiniMax M2.1，Kimi K2。
+国内对 CC 模型支持比较好的有三个：GLM 4.7、MiniMax M2.1、Kimi K2。
 
 这里，我们以用 GLM 4.7 的配置为例来演示一下国产，因为是国内网站，使用就比较简单了，其他模型都有 Coding Plan 也都是类似的。
 
-1.  注册账号。访问 **智谱开放平台**（https://open.bigmodel.cn/），点击右上角的「注册/登录」按钮，按照提示完成账号注册流程。
+1. 注册账号。访问 智谱开放平台（`https://open.bigmodel.cn/`），点击右上角的「注册/登录」按钮，按照提示完成账号注册流程。
 
-1.  **获取API Ke**y[。在个人中心页面，点击 API Keys（https:/](https://bigmodel.cn/usercenter/proj-mgmt/apikeys)/bigmodel.cn/usercenter/proj-mgmt/apikeys）创建一个新的 API Key，复制下来备用。
+2. 获取 API Key。在个人中心页面，点击 API Keys（`https://bigmodel.cn/usercenter/proj-mgmt/apikeys`）创建一个新的 API Key，复制下来备用。
 
-3. **订阅一个 Coding 套餐**，用了套餐之后，可以尽情使用，再也不用担心账号欠费背刺。
+3. 订阅一个 Coding 套餐，用了套餐之后，可以尽情使用，再也不用担心账号欠费背刺。
 
 现在有个跨年特惠，强烈推荐这个包季的 Coding Lite，三个月只要 54 块钱，跟不要钱一样。
 
 可以在这里购买：
 
-[https://www.bigmodel.cn/glm-](https://www.bigmodel.cn/glm-coding?ic=KSGMCBOXUT)coding?ic=KSGMCBOXUT
+`https://www.bigmodel.cn/glm-coding?ic=KSGMCBOXUT`
 
 ![](img/d187d0748b0399c03377b81adbf2cfca.png)
 
@@ -128,17 +130,17 @@ irm https://claude.ai/install.ps1 | iex
 
 用这个工具可以方便地把 GLM 的服务器配置，导入到 CC 里。
 
-1.  再次进入终端，输入下面的命令行，回车
+1. 再次进入终端，输入下面的命令行，回车
 
 ```
 npx @z_ai/coding-helper
 ```
 
-1.  这时候你会看到一个亲切的中文界面
+2. 这时候你会看到一个亲切的中文界面
 
 ![](img/2f665bbdf6cf6a94eb6c41a934fd4aba.png)
 
-1.  你按照这个工具的提示，把在上面拿到的 API Key 粘贴到这里，并且按提示一步一步地走完就可以了。
+3. 你按照这个工具的提示，把在上面拿到的 API Key 粘贴到这里，并且按提示一步一步地走完就可以了。
 
 ## 五、Claude Code 启动！
 
@@ -148,7 +150,7 @@ npx @z_ai/coding-helper
 
 等一下，如何启动？
 
-还是在终端里，每次只要输入 claude ，然后回车，你就能看到下面的界面了。
+还是在终端里，每次只要输入 `claude`，然后回车，你就能看到下面的界面了。
 
 ![](img/60f8755564993fb0bf2a076927cd855f.png)
 
@@ -158,7 +160,7 @@ npx @z_ai/coding-helper
 
 你可能不习惯这种打开方式，没关系，可以安装我写的启动器 Claude Code Now，在这里安装
 
-https://claudecodenow.com/
+`https://claudecodenow.com/`
 
 安装之后，在你的任意文件夹里，都可以看到 Claude Code，点击一下，就能启动了，超级方便。
 
@@ -174,7 +176,7 @@ https://claudecodenow.com/
 
 你和它的沟通方式，就是通过自然对话，不需要你写一行代码。
 
-1.  文件夹
+1. 文件夹
 
 文件夹是 CC 最棒的设计理念，它是 CC 运行的游乐场。
 
@@ -190,9 +192,9 @@ CC 启动的时候，需要你给它指定一个文件夹，这个文件夹就�
 
 文件也是一样的逻辑，也可以直接拖到 CC 里，这是第一个非常重要的技巧。
 
-1.  Claude.md 文件
+2. `Claude.md` 文件
 
-Claude.md文件是 CC 的核心配置文件，是 CC 的长期记忆。
+`Claude.md`文件是 CC 的核心配置文件，是 CC 的长期记忆。
 
 你也可以理解为这个文件是 CC 的宪法。
 
@@ -200,7 +202,7 @@ CC 每次启动的时候，都会自动加载这个文件，它记录了你要�
 
 你也可以让 CC 来自己创建这个文件，并把你觉得重要的信息告诉它。
 
-1.  危险模式
+3. 危险模式
 
 什么是危险模式呢？
 
@@ -222,7 +224,7 @@ claude --dangerously-skip-permissions
 
 有了 CC 后，你遇到任何问题都可以直接问它。但是有些问题需要图片，你就需要把图片粘贴到 CC 里面。
 
-因为 CC 运行在终端里，所以粘贴命**令和系统不太一样，不是** cmd+v，而是Control + V
+因为 CC 运行在终端里，所以粘贴命令和系统不太一样，不是 `cmd+v`，而是 `Control + V`
 
 粘贴之后，CC 就能看到图片了。
 
@@ -244,7 +246,7 @@ claude --dangerously-skip-permissions
 
 但是有了 CC，我们只需要把我的需求告诉它：
 
-“这是一个工资表，帮我拆成工资条，一个人个文件 ”
+“这是一个工资表，帮我拆成工资条，一个人个文件”
 
 我把从启动到输入命令到完成的全过程录下来了，没有任何剪辑。
 
@@ -264,9 +266,9 @@ Skill 是 Claude Code 最近推出的重要功能。
 
 你可以直接从现有的 Skill 网站里 copy，也可以让 CC 自己创建，这是官方的 Skill 指南
 
-[https://github.c](https://github.com/anthropics/skills)om/anthropics/skills
+`https://github.com/anthropics/skills`
 
-Skill 的具体使用也非常简单，比如今天刚好看到刘小排老师发的前端设计 Skill (刘小排老师是 CC 之神，大家可以关注他的👸号学习更多技巧）
+Skill 的具体使用也非常简单，比如今天刚好看到刘小排老师发的前端设计 Skill（刘小排老师是 CC 之神，大家可以关注他的👸号学习更多技巧）
 
 先用一句话安装 Skill
 
@@ -274,7 +276,7 @@ Skill 的具体使用也非常简单，比如今天刚好看到刘小排老师�
 npx skills-installer install @anthropics/claude-code/frontend-design --client claude-code
 ```
 
-然后跟 CC 说：使用 @anthropics/skills/frontend-design skill，重新设计 https://listenhub.ai的首页
+然后跟 CC 说：使用 `@anthropics/skills/frontend-design` skill，重新设计 `https://listenhub.ai`的首页
 
 ![](img/2f7bae503e241dda41df660e1da0366e.png)
 
@@ -288,7 +290,7 @@ npx skills-installer install @anthropics/claude-code/frontend-design --client cl
 
 上面的步骤只是你开启智能化工作学习的一个开始，未来还有很多东西要学。
 
-万事开头难，这篇文章其实是最难的部分，后续你遇到任何问题，直接问 CC ，它都能帮你解决。
+万事开头难，这篇文章其实是最难的部分，后续你遇到任何问题，直接问 CC，它都能帮你解决。
 
 相信你很快能找到属于自己的 Wow moment！
 
@@ -310,6 +312,7 @@ npx skills-installer install @anthropics/claude-code/frontend-design --client cl
 
 **万物生长。**
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
 # 知识库动态
+

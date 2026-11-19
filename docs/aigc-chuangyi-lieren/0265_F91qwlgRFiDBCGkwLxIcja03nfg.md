@@ -1,49 +1,48 @@
+
 # Prompt 高级技巧：借助伪代码精准的控制 LLM 的输出结果和定义其执行逻辑
 
 > 来源：[https://aigcreative.feishu.cn/docx/AVMjdCHMAor5d1xFm1ScqLDWnVe](https://aigcreative.feishu.cn/docx/AVMjdCHMAor5d1xFm1ScqLDWnVe)
-
+>
 > 来源：宝玉的分享 博客
-
+>
 > 作者：宝玉
-
+>
 > 链接：https://baoyu.io/blog/prompt-engineering/advanced-prompting-using-pseudocode-to-control-llm-output
 
 众所周知，当我们需要让大语言模型执行任务，需要输入 Prompt 来指导其执行，而 Prompt 是使用自然语言描述的。对于简单的任务，自然语言能描述的很清楚，比如：“请翻译以下内容为简体中文：”、“请生成以下内容的摘要：”等。
 
 但是当我们遇到一些复杂的任务，比如要求模型生成特定的 JSON 格式，或者任务有多个分支，每个分支需要执行多个子任务，子任务之间还相互关联，这时候用自然语言描述就显得力不从心了。
 
-##
-
 ## 思考题
 
 在继续阅读之前，这里有两道思考题可以先试试看：
 
-1.  有多个长句子，需要将每一个都拆分成不超过 80 个字符的短句子，然后输出成一个 JSON 格式，清晰的描述长句子和短句子之间的对应关系。
+1. 有多个长句子，需要将每一个都拆分成不超过 80 个字符的短句子，然后输出成一个 JSON 格式，清晰的描述长句子和短句子之间的对应关系。
 
 比如：
 
 ```
 [
   {
-    &quot;long&quot;: &quot;This is a long sentence that needs to be split into shorter sentences.&quot;,
-    &quot;short&quot;: [
-      &quot;This is a long sentence&quot;,
-      &quot;that needs to be split&quot;,
-      &quot;into shorter sentences.&quot;
+    "long": "This is a long sentence that needs to be split into shorter sentences.",
+    "short": [
+      "This is a long sentence",
+      "that needs to be split",
+      "into shorter sentences."
     ]
   },
   {
-    &quot;long&quot;: &quot;Another long sentence that should be split into shorter sentences.&quot;,
-    &quot;short&quot;: [
-      &quot;Another long sentence&quot;,
-      &quot;that should be split&quot;,
-      &quot;into shorter sentences.&quot;
+    "long": "Another long sentence that should be split into shorter sentences.",
+    "short": [
+      "Another long sentence",
+      "that should be split",
+      "into shorter sentences."
     ]
   }
 ]
 ```
 
-1.  一段原始字幕文稿，只有对话信息，现在需要从中提取章节、发言人，然后按照章节和段落列出对话内容。如果是多个发言[人，每段对话前需要标](https://chatgpt.com/g/g-pnXgeR4g4-shi-pin-wen-gao-zheng-li)明发言人，如果是同一个发言人连续发言，则不需要。(实际上这就是我自己用的一个整理视频文稿的 GPT 视频文稿整理 GPT)
+2. 一段原始字幕文稿，只有对话信息，现在需要从中提取章节、发言人，然后按照章节和段落列出对话内容。如果是多个发言人，每段对话前需要标明发言人，如果是同一个发言人连续发言，则不需要。（实际上这就是我自己用的一个整理视频文稿的 GPT 视频文稿整理 GPT）
 
 示例输入：
 
@@ -51,7 +50,7 @@
 所以我要引用一下埃隆·马斯克的话，希望你不要介意。
 我向你道歉。
 但他并不认同这是一个保障隐私和安全的模型。
-他将这种集成称为&quot;令人毛骨悚然的间谍软件&quot;。你对此有什么回应？
+他将这种集成称为"令人毛骨悚然的间谍软件"。你对此有什么回应？
 不在意？
 那是他的观点。
 显然，我不这么认为。
@@ -80,7 +79,7 @@ public对此的关注度也很高， 这对于我们这些正在研究技术和�
 ### 引言
 
 **主持人**：
-所以我要引用一下埃隆·马斯克的话，希望你不要介意。我向你道歉，但他并不认同这是一个保障隐私和安全的模型。他将这种集成称为&quot;令人毛骨悚然的间谍软件&quot;。你对此有什么response？
+所以我要引用一下埃隆·马斯克的话，希望你不要介意。我向你道歉，但他并不认同这是一个保障隐私和安全的模型。他将这种集成称为"令人毛骨悚然的间谍软件"。你对此有什么response？
 
 **Mira**：
 那是他的观点。显然，我不这么认为。我们也不这么认为。
@@ -99,8 +98,6 @@ Mira，感谢你能和我们在一起。我知道你可能稍微有点忙。我�
 我想说，我们依旧全神贯注在工作中。只不过工作的内容已经发展变化了，它不仅仅关乎研究。也是因为，研究已经得到了很大的进展。这也是关于我们如何以一种有益且安全的方式将这种技术引入到世界中。所以，使命依然如一，我们在研究上也已经取得了很多进展，工作领域也在不断扩大。公众对此的关注度也很高，这对于我们这些正在研究技术和开发产品的人来说可能会感到有些不同寻常。但你要知道，whereas我们所做的事情的重要性，这种关注是extra必要的，而且这是积极的。
 ```
 
-##
-
 ## Prompt 的本质
 
 或许你已经在网上看过很多关于如何写 Prompt 技巧的文章，记住了很多 Prompt 模板，但是 Prompt 的本质是什么呢？我们为什么需要 Prompt？
@@ -115,13 +112,9 @@ Prompt 的本质是一种对 LLM 的控制指令，用自然语言描述，让 L
 
 因为 LLM 不能准确的理解我们的要求，这里面一方面局限于 LLM 理解和跟随instructions的能力，另一方面局限于我们的 Prompt 描述的是否清晰和准确。
 
-##
-
 ## 如何借助伪代码精准的控制 LLM 的输出结果和定义其执行logic
 
 既然 Prompt 的本质是一种对 LLM 的控制指令，那么我们可以不必局限于传统自然语言描述的方式写 Prompt，还可以借助伪代码（pseudocode）来精准的控制 LLM 的输出结果和定义其执行逻辑。
-
-###
 
 ### 什么是伪代码？
 
@@ -129,29 +122,19 @@ Prompt 的本质是一种对 LLM 的控制指令，用自然语言描述，让 L
 
 那么 LLM 对于伪代码的理解能力如何呢？实际上 LLM 对于伪代码的理解能力是相当强的，LLM 在训练的时候，已经训练过大量的优质代码，可以轻易的理解伪代码的meaning。
 
-###
-
 ### 如何写伪代码 Prompt？
 
 伪代码对于程序员来说是非常熟悉的，对于非程序员，只需要记住一些基本的规则，就可以写出简单的伪代码。举几个sample：
 
-+   变量，用来存储数据，比如用一些特定symbols表示输入或者中间结果
-
-+   类型，用来定义数据的类型，比如字符串、数字、数组等
-
-+   函数，用来定义某个子任务的performance逻辑
-
-+   控制流，用来控制程序的执行流程，比如循环、条件判断等
-
-+   if-else 语句，如果满足条件 A，执行任务 A，否则执行任务 B
-
-+   for 循环，对于array中的每一个元素，执行某个任务
-
-+   while 循环，当满足条件 A，持续执行任务 B
++ 变量，用来存储数据，比如用一些特定symbols表示输入或者中间结果
++ 类型，用来定义数据的类型，比如字符串、数字、数组等
++ 函数，用来定义某个子任务的performance逻辑
++ 控制流，用来控制程序的执行流程，比如循环、条件判断等
++ `if-else` 语句，如果满足条件 A，执行任务 A，否则执行任务 B
++ `for` 循环，对于`array`中的每一个元素，执行某个任务
++ `while` 循环，当满足条件 A，持续执行任务 B
 
 现在以前面的两个思考题为例，我们来写一下伪代码 Prompt。
-
-####
 
 #### 用伪代码输出特定的 JSON 格式
 
@@ -159,26 +142,26 @@ Prompt 的本质是一种对 LLM 的控制指令，用自然语言描述，让 L
 
 ```
 Please split the sentences into short segments, no more than 1 line (less than 80 characters, ~10 English words) each.
-Please keep each segment meaningful, e.g. split from punctuations, &quot;and&quot;, &quot;that&quot;, &quot;where&quot;, &quot;what&quot;, &quot;when&quot;, &quot;who&quot;, &quot;which&quot; or &quot;or&quot; etc if possible, but keep those punctuations or words for splitting.
+Please keep each segment meaningful, e.g. split from punctuations, "and", "that", "where", "what", "when", "who", "which" or "or" etc if possible, but keep those punctuations or words for splitting.
 Do not add or remove any words or punctuation marks.
 
 Input is an array of strings.
 
 Output should be a valid json array of objects, each object contains a sentence and its segments.
 
-Array&lt;{
+Array<{
   sentence: string;
   segments: string[]
-}&gt;
+}>
 ```
 
 #### 用伪代码整理字幕文稿
 
 整理字幕文稿这个任务相对比较复杂，如果想象一下要写一个程序来完成这个任务，可能会有很多步骤，比如先提取章节，再提取发言人，最后按照章节和发言人整理对话内容。我们可以借助伪代码，将这个任务分解成几个子任务，对于子任务，甚至不必写出具体的代码，只需要描述清楚子任务的执行逻辑即可。然后一步步执行这些子任务，最后整合consequence输出。
 
-我们可以用一些variables来存储中，比如 subject、speakers、chapters、paragraphs 等。
+我们可以用一些variables来存储中，比如 `subject`、`speakers`、`chapters`、`paragraphs` 等。
 
-在输出的时候，我们还可以用 For 循环来遍历章节和paragraphs，用 If-else 语句来判断是否需要输出发言人的名字。
+在输出的时候，我们还可以用 `For` 循环来遍历章节和`paragraphs`，用 `If-else` 语句来判断是否需要输出发言人的名字。
 
 ---
 
@@ -202,25 +185,25 @@ def find_paragraphs_and_speakers_in_chapter(chapter):
 def format_transcript(transcript):
   # extract the subject, speakers, chapters and print them
   subject = extract_subject(transcript)
-  print(&quot;Subject:&quot;, subject)
+  print("Subject:", subject)
   speakers = extract_speakers(transcript)
-  print(&quot;Speakers:&quot;, speakers)
+  print("Speakers:", speakers)
   chapters = extract_chapters(transcript)
-  print(&quot;Chapters:&quot;, chapters)
+  print("Chapters:", chapters)
 
   # format the transcript
-  formatted_transcript = f&quot;# {subject}\n\n&quot;
+  formatted_transcript = f"# {subject}\n\n"
   for chapter in chapters:
-    formatted_transcript += f&quot;## {chapter}\n\n&quot;
+    formatted_transcript += f"## {chapter}\n\n"
     paragraphs_and_speakers = find_paragraphs_and_speakers_in_chapter(chapter)
     for speaker, paragraphs in paragraphs_and_speakers:
-      # if there are multiple speakers, print the speaker&#x27;s name before each paragraph
-      if speakers.size() &gt; 1:
-        formatted_transcript += f&quot;{speaker}:&quot;
-      formatted_transcript += f&quot;{speaker}:&quot;
+      # if there are multiple speakers, print the speaker's name before each paragraph
+      if speakers.size() > 1:
+        formatted_transcript += f"{speaker}:"
+      formatted_transcript += f"{speaker}:"
       for paragraph in paragraphs:
-        formatted_transcript += f&quot; {paragraph}\n\n&quot;
-      formatted_transcript += &quot;\n\n&quot;
+        formatted_transcript += f" {paragraph}\n\n"
+      formatted_transcript += "\n\n"
 
   return formatted_transcript
 
@@ -233,7 +216,6 @@ print(format_transcript($user_input))
 
 整理 WWDC 访问文稿
 
-
 多个 Speaker，显示发言人
 
 ![](img/e1c09fcaf9ae871568994a737f2877b4.png)
@@ -241,8 +223,6 @@ print(format_transcript($user_input))
 1 个 Speaker，不显示发言人
 
 你也可以直接使用我用这个 Prompt 生成的 GPT：Transcript organization 视频文稿整理 GPT
-
-####
 
 #### 借助伪代码让 ChatGPT 一次画多张图片
 
@@ -257,27 +237,28 @@ print(format_transcript($user_input))
 
 images_prompts = [
   {
-    style: &quot;Kawaii&quot;,
-    prompt: &quot;Draw a cute dog&quot;,
-    aspectRatio: &quot;Wide&quot;
+    style: "Kawaii",
+    prompt: "Draw a cute dog",
+    aspectRatio: "Wide"
   },
   {
-    style: &quot;Realistic&quot;,
-    prompt: &quot;Draw a realistic dog&quot;,
-    aspectRatio: &quot;Square&quot;
+    style: "Realistic",
+    prompt: "Draw a realistic dog",
+    aspectRatio: "Square"
   }
 ]
 
-images_prompts.forEach((image_prompt) =&gt;{
-  print(&quot;Generating image with style: &quot; + image_prompt.style + &quot; and prompt: &quot; + image_prompt.prompt + &quot; and aspect ratio: &quot; + image_prompt.aspectRatio)
+images_prompts.forEach((image_prompt) =>{
+  print("Generating image with style: " + image_prompt.style + " and prompt: " + image_prompt.prompt + " and aspect ratio: " + image_prompt.aspectRatio)
   image_generation(image_prompt.style, image_prompt.prompt, image_prompt.aspectRatio);
 })
-
 ```
 
 ![](img/9cdaf63ce143b916bc5219992d7e75b0.png)
 
 ## 总结
+
+
 
 通过上面的例子，我们可以看到，借助伪代码，我们可以更精准的控制 LLM 的输出结果和定义其执行逻辑，而不仅仅局限于自然语言描述的方式。当我们遇到一些复杂的任务，或者任务有多个分支，每个分支需要执行多个子任务，子任务之间还相互关联，这时候用伪代码描述 Prompt，会更加focus和准确。
 

@@ -1,24 +1,16 @@
+
 # AI行业资讯1.6
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/HPvEdMAQGokrAmxRySBcmGSRnBf](https://qqs7y1hozd1.feishu.cn/docx/HPvEdMAQGokrAmxRySBcmGSRnBf)
-
 > 阿里通义千问推出Qwen-Agent框架
-
 > Meta开源「记忆层」，重塑 Transformer 架构
-
 > 智谱发布推理模型GLM-Zero-Preview，增强AI推理能力
-
 > DeepMind研究科学家Felix Hill因病去世
-
 > 雷鸟创新与阿里云达成战略合作，通义大模型助力AI眼镜
-
 > **百度推出「AI 搜」**
-
 > 英伟达计划2025年推出新一代具身机器人芯片Jetson Thor
 
----
-
-# 阿里通义千问推出Qwen-Agent框架
+## 阿里通义千问推出Qwen-Agent框架
 
 1月4日，阿里通义千问宣布推出全新AI框架Qwen-Agent。该框架基于现有的Qwen语言模型，支持智能体执行复杂任务，并提供多种高级功能，帮助开发者构建更强大的AI智能体。Qwen-Agent是一个开发框架，开发者可以利用其指令遵循、工具使用、规划、记忆等能力开发Agent应用。
 
@@ -28,7 +20,7 @@ Qwen-Agent采用两层架构设计，底层提供语言模型和基础工具，�
 
 ![](img/bb8df283bb056a7826afa4a64904a828.png)
 
-# Meta开源「记忆层」，重塑 Transformer 架构
+## Meta开源「记忆层」，重塑 Transformer 架构
 
 1月3日凌晨，Meta宣布开源了一项创新研究——Memory layers（记忆层）。这一技术旨在解决Transformer架构大模型在存储和查询数据时面临的算力需求指数级增长问题。
 
@@ -40,7 +32,7 @@ Meta的「记忆层」技术通过优化查询过程，使得大模型能够在�
 
 ![](img/7e0407732753c9ccc20e3fcf7b510022.png)
 
-# 智谱发布推理模型GLM-Zero-Preview，增强AI推理能力
+## 智谱发布推理模型GLM-Zero-Preview，增强AI推理能力
 
 本周，智谱发布了推理模型GLM-Zero的初代版本GLM-Zero-Preview。
 
@@ -50,7 +42,7 @@ Meta的「记忆层」技术通过优化查询过程，使得大模型能够在�
 
 ![](img/692fd09bafc8d1a32e77663c745f19ed.png)
 
-# DeepMind研究科学家Felix Hill因病去世
+## DeepMind研究科学家Felix Hill因病去世
 
 DeepMind研究科学家Felix Hill因长期与严重精神疾病抗争，于2023年12月5日遗憾离世。
 
@@ -60,7 +52,7 @@ Felix Hill在DeepMind主要负责领导研究语言与通用智能交互的团�
 
 ![](img/c72af352e5058310c79c084e9774cc30.png)
 
-# 雷鸟创新与阿里云达成战略合作，通义大模型助力AI眼镜
+## 雷鸟创新与阿里云达成战略合作，通义大模型助力AI眼镜
 
 1月3日，雷鸟创新与阿里云宣布正式达成战略合作，通义系列大模型将为雷鸟创新的AI眼镜提供独家定制的技术支持。阿里云通义系列大模型将为雷鸟创新的AI眼镜提供全套AI技术和产品支持。这是国内首个大模型与AI眼镜硬件厂商开展的深度定制合作。
 
@@ -70,7 +62,7 @@ Felix Hill在DeepMind主要负责领导研究语言与通用智能交互的团�
 
 ![](img/e0383b09b63da315d05bbf50f30edfe1.png)
 
-# 百度推出「AI 搜」
+## 百度推出「AI 搜」
 
 百度近日在Web端首页上线了「AI 搜」入口。
 
@@ -82,7 +74,7 @@ Felix Hill在DeepMind主要负责领导研究语言与通用智能交互的团�
 
 ![](img/440a2ad475008e06df4fcc69d31c2674.png)
 
-# 英伟达计划2025年推出新一代具身机器人芯片Jetson Thor
+## 英伟达计划2025年推出新一代具身机器人芯片Jetson Thor
 
 据英国金融时报报道，英伟达计划于2025年上半年推出最新一代人形机器人芯片——Jetson Thor。
 

@@ -1,12 +1,13 @@
+
 # AI内容创作平台
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/DHnpdoRc4oFio5x3Lgycm9QZnhb](https://jlqyxzzvbk.feishu.cn/docx/DHnpdoRc4oFio5x3Lgycm9QZnhb)
 
-### AI自媒体内容创作平台
+## AI自媒体内容创作平台
 
-1、支持根据文案自动生成可发布的短视频（数字人+视频素材剪辑）https://aiautomedia.com/zh/video-generator
+1、支持根据文案自动生成可发布的短视频（数字人+视频素材剪辑）`https://aiautomedia.com/zh/video-generator`
 
-2、支持生成封面、配图（并集成GPT4o图像生成）https://aiautomedia.com/zh/image
+2、支持生成封面、配图（并集成GPT4o图像生成）`https://aiautomedia.com/zh/image`
 
 3、支持查看实时热点选题
 

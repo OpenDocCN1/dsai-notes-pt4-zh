@@ -1,36 +1,37 @@
+
 # creem支付配置：小白视角和路径，手把手教学 副本
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/OwpkdbkOVobYNpxHZdgcQjfYn4d](https://xatc0v8uz5m.feishu.cn/docx/OwpkdbkOVobYNpxHZdgcQjfYn4d)
 
-**网站出海赚美金****是每一个出海人在做的事儿，赚美金，我**们把工具做好了，尤其是一次性支付或者订阅的这种工具，就需要有一种支付工具帮助我们“收款美金”，常见的stripe需要办理港卡，且封控严格，新手极不友好；PayPal的话电商确实常见，只是必须需要公司，对于独立个体也不方便，这时候Creem出现了！
+**网站出海赚美金**是每一个出海人在做的事儿，赚美金，我们把工具做好了，尤其是一次性支付或者订阅的这种工具，就需要有一种支付工具帮助我们“收款美金”，常见的`stripe`需要办理港卡，且封控严格，新手极不友好；`PayPal`的话电商确实常见，只是必须需要公司，对于独立个体也不方便，这时候`Creem`出现了！
 
-+   **中国人友好**
++ **中国人友好**
 
-+   **直接打款支付宝**
++ **直接打款支付宝**
 
-+   **支付接入简单**
++ **支付接入简单**
 
 这几个在一起，“如果是真的”，那很王炸啊！
 
-[第一次看到creem支付是在这](https://www.creem.io/?ref=javayhu.com)篇文章 海外支付平台Creem注册教程
+[第一次看到creem支付是在这](https://www.creem.io/?ref=javayhu.com)篇文章 海外支付平台`Creem`注册教程
 
 ![](img/ae8b4021ec72fbccfc06080ba40e5131.png)
 
-**当时的说法是，这个支付只需**要20分钟就能搞定，我信了，注册到审核确实只要20分钟，但是后面的操作，让作为0基础小白的我崩溃了。经过了2周的爱恨纠结，终于还是把这个creem给装完了了，，3月底接完了支付也写了这篇文章的80%，但是还是拖到了5月中才真正把creem的支付给“拿下”，今天就用小白的视角帮大家一起梳理接creem支付的每一个步骤。
+当时的说法是，这个支付只需要20分钟就能搞定，我信了，注册到审核确实只要20分钟，但是后面的操作，让作为0基础小白的我崩溃了。经过了2周的爱恨纠结，终于还是把这个`creem`给装完了，3月底接完了支付也写了这篇文章的80%，但是还是拖到了5月中才真正把`creem`的支付给“拿下”，今天就用小白的视角帮大家一起梳理接`creem`支付的每一个步骤。
 
 文章主要包含四个部分：
 
-1.  注册creem账号
+1. 注册`creem`账号
 
-1.  准备各种creem的信息
+1. 准备各种`creem`的信息
 
-1.  webhook和ngrok（有些情况不需要）
+1. `webhook`和`ngrok`（有些情况不需要）
 
-1.  正式配置支付
+1. 正式配置支付
 
-# 一、注册账号+完善信息
+## 一、注册账号+完善信息
 
-## 1. 注册账号（google可直接登录）
+### 1. 注册账号（google可直接登录）
 
 [直通车](https://www.creem.io/sign-in)，可以直接google登录 或者邮箱注册，注册成功就会进入下面的页面
 
@@ -38,23 +39,23 @@
 
 ![](img/23f1bed4fe7efd1ac1ab724dceb37e66.png)
 
-## 完善提现信息
+### 2. 完善提现信息
 
-### 2.1 创建提现账号
+#### 2.1 创建提现账号
 
-在Balance的Payout Account中，选择创建一个新的账号，国家选择China，
+在`Balance`的`Payout Account`中，选择创建一个新的账号，国家选择`China`，
 
 ![](img/7121363ea16ad9c83b057c246f9c681e.png)
 
-### 2.2 填写业务信息
+#### 2.2 填写业务信息
 
 主要填写你的基本信息和你的产品是做什么的
 
 ![](img/10009e0684bc61434ca85de3e09f546a.png)
 
-### 2.3 完善个人信息
+#### 2.3 完善个人信息
 
-请按照下面的流程，完成个人信息填写，上传大陆身份证的正反面，并且电脑摄像头拍照，最终你的个人信息会被保存到Sumsub ID中。
+请按照下面的流程，完成个人信息填写，上传大陆身份证的正反面，并且电脑摄像头拍照，最终你的个人信息会被保存到`Sumsub ID`中。
 
 ![](img/261764e1b5bab5445bcc076245ec461e.png)
 
@@ -74,13 +75,13 @@
 
 ![](img/3002973ad6cd97b2dd56c74ebd85bf30.png)
 
-### 2.4 完善提现信息
+#### 2.4 完善提现信息
 
-点击Payout Details的Manage Payout Account，完善提现信息。
+点击`Payout Details`的`Manage Payout Account`，完善提现信息。
 
 ![](img/dd6fea0308294577c22f222d16a6d6c1.png)
 
-填写提现账号的国家，选择China，币种选择CNY，转账方式选择支付宝。
+填写提现账号的国家，选择`China`，币种选择`CNY`，转账方式选择支付宝。
 
 接着填写支付宝的账号，邮箱地址和全名（中文名）。
 
@@ -90,13 +91,13 @@
 
 ![](img/9ffb778a8be4f313aa0e427c85d02584.png)
 
-### 2.5 等待审核
+#### 2.5 等待审核
 
 最后就是等待审核，快的话，半天到一天就可以结果。
 
 ![](img/865c652311a1f486bb9b7d3deacea9a6.png)
 
-# 二、准备2套配置信息
+## 二、准备2套配置信息
 
 测试环境和生产环境的配置信息不一样！
 
@@ -108,43 +109,43 @@
 
 ![](img/1ec0e30fec645b1f64c59bf2646da934.png)
 
-## 1. product
+### 1. product
 
 首先是注册产品
 
-product--->add product
+`product`--->`add product`
 
 ![](img/8d0d226d0387df730ddb4c9c29049bab.png)
 
-### 1.1 product details
+#### 1.1 product details
 
 ![](img/4ece54c9248f1c6e8df797a6f82b66cb.png)
 
-name：产品名字
+`name`：产品名字
 
-return url：用户在支付完成以后，你希望对方返回的页面
+`return url`：用户在支付完成以后，你希望对方返回的页面
 
-description：产品介绍（可以让ai生成啦～）
+`description`：产品介绍（可以让ai生成啦～）
 
-status：选择active（激活状态）
+`status`：选择`active`（激活状态）
 
-image preview:产品图，可以上传，可以不上传
+`image preview`:产品图，可以上传，可以不上传
 
-### 1.2 payment details
+#### 1.2 payment details
 
 ![](img/43e996219c9fcece69002e7af620ab37.png)
 
-支付方式：你是一次性支付（single payment）还是 订阅类型（subscrition）的支付
+支付方式：你是一次性支付（`single payment`）还是 订阅类型（`subscrition`）的支付
 
-curency：货币方式
+`curency`：货币方式
 
-price:自定义价格
+`price`:自定义价格
 
-tax category：一般选择“digital goods or service”（虚拟服务）
+`tax category`：一般选择“`digital goods or service`”（虚拟服务）
 
-tax behaviour：是否包含税（看个人情况选择
+`tax behaviour`：是否包含税（看个人情况选择
 
-### 1.3 product other infomation
+#### 1.3 product other infomation
 
 ![](img/4dd35d3e0d72bee6e1f9fd92eeeb0472.png)
 
@@ -152,85 +153,85 @@ tax behaviour：是否包含税（看个人情况选择
 
 这些内容都能让ai搞定
 
-填写完成以后 点击“create product”
+填写完成以后 点击“`create product`”
 
-### 1.4 product信息
+#### 1.4 product信息
 
-在product页面 自己创建的产品 有三个点，点击以后 可以复制自己的product id
+在`product`页面 自己创建的产品 有三个点，点击以后 可以复制自己的`product id`
 
 ![](img/2ba8bf03fcd78bb8313d5239b38a54a0.png)
 
-## 2. api key
+### 2. api key
 
 ![](img/12b94e7553a10b0e6107bdc653104b27.png)
 
-点击右上角的 developer就创建自己的api key
+点击右上角的 `developer`就创建自己的`api key`
 
-记得创建2组，test和非test的 这是2个不同的
+记得创建2组，`test`和非`test`的 这是2个不同的
 
-# 三、webhook&ngrok（选择性）
+## 三、`webhook`&`ngrok`（选择性）
 
-## 1 什么是webhook
+### 1. 什么是`webhook`
 
 [直通车](https://docs.creem.io/learn/webhooks/introduction)
 
-Webhook 可以理解为一个网络通知器"。
+`Webhook` 可以理解为一个网络通知器"。
 
 想象你在等快递，有两种方式知道快递到了：
 
-1.  **传统方式**：你每隔一会儿就要打开App 查看快递到哪了（这就像传统的轮询方式。隔一段时间就问，然后得到回复）
+1. **传统方式**：你每隔一会儿就要打开`App` 查看快递到哪了（这就像传统的轮询方式。隔一段时间就问，然后得到回复）
 
-1.  **Webhook** 方式：快递员到了直接给你打电话（这就是 Webhook 的工作方式）
+1. **`Webhook`** 方式：快递员到了直接给你打电话（这就是 `Webhook` 的工作方式）
 
-## 2 怎么判断自己需不需要
+### 2. 怎么判断自己需不需要
 
 ![](img/a36e64b686d6203aa76a043d7034d7c4.png)
 
-以下情况你可能需要 Webhook：
+以下情况你可能需要 `Webhook`：
 
-1.  **需要实时通知**
+1. **需要实时通知**
 
-+   用户下单后立即通知商家
++ 用户下单后立即通知商家
 
-+   有人在你的博客留言后立即收到提醒
++ 有人在你的博客留言后立即收到提醒
 
-1.  **需要自动化处理**
+1. **需要自动化处理**
 
-+   用户付款成功后自动发货
++ 用户付款成功后自动发货
 
-+   有人提交表单后自动发送确认邮件
++ 有人提交表单后自动发送确认邮件
 
-1.  **需要系统联动**
+1. **需要系统联动**
 
-+   Github 代码更新后自动部署网站
++ `Github` 代码更新后自动部署网站
 
-+   订单系统和库存系统需要实时同步
++ 订单系统和库存系统需要实时同步
 
-**如果你的网站不需要这些实时性或自动**化的功能，可能就不需要 Webhook。
+如果你的网站不需要这些实时性或自动化的功能，可能就不需要 `Webhook`。
 
-## 3 准备webhook
+### 3. 准备`webhook`
 
-如果细心的朋友会发现，刚刚在创建api key的时候 旁边就有一个 webhooks
+如果细心的朋友会发现，刚刚在创建`api key`的时候 旁边就有一个 `webhooks`
 
 ![](img/2c2c7ceb269ad03b1991153e65efb050.png)
 
-点击add webhook只需要填写两个信息
+点击`add webhook`只需要填写两个信息
 
-webhook name：取个名字，这个通知器是通知什么的
+`webhook name`：取个名字，这个通知器是通知什么的
 
-webhook url：这个地方的url是指，在支付完成以后，creem需要向哪一个page传达通知。
+`webhook url`：这个地方的`url`是指，在支付完成以后，`creem`需要向哪一个`page`传达通知。
 
-那这个url具体要怎么填写呢？
+那这个`url`具体要怎么填写呢？
 
-### 3.1 非test mode
+#### 3.1 非`test mode`
 
-+   **直接**让**cursor告**诉你 需要那个页面来接收通知，他就会给你一个路径，域名+path即可.例如下面的
++ **直接**让`cursor`告诉你 需要那个页面来接收通知，他就会给你一个路径，域名+`path`即可.例如下面的
 
 ```
 www.XXXX.com/payment/result
 ```
 
-### 3.2 test mode
+#### 3.2 `test mode`
 
 按理说应该是
 
@@ -238,63 +239,63 @@ www.XXXX.com/payment/result
 http://localhost:3000/payment/result
 ```
 
-但是 你填进去 就得到通知，**不能使用本**地的路径，必须使用公开的URL。所以这个时候你就需要一个新的东西ngrok。
+但是 你填进去 就得到通知，**不能使用本**地的路径，必须使用公开的`URL`。所以这个时候你就需要一个新的东西`ngrok`。
 
-> 具体看下一个part的具体实操
+> 具体看下一个`part`的具体实操
 
-经过ngrok的操作以后，本地连接就会变成一个可以用的public url
+经过`ngrok`的操作以后，本地连接就会变成一个可以用的`public url`
 
 ```
 https://8733-191-204-177-89.sa.ngrok.io/payment/result
 ```
 
-### 3.3 获取 webhookRUL
+#### 3.3 获取 `webhookRUL`
 
-创建完成以后 获取 webhook的URL
+创建完成以后 获取 `webhook`的`URL`
 
 ![](img/fe48742871f607d82b6f8c3c191a08d2.png)
 
-### 3.4 获取webhook的secret
+#### 3.4 获取`webhook`的`secret`
 
 ![](img/68446a5d0638652d6bb935730369e7a4.png)
 
 ![](img/d322b2fb864686a71da544caf0db8d72.png)
 
-## 4. ngrok
+### 4. `ngrok`
 
-ngrok 是一个非常实用的网络工具，它的主要作用是帮助我们实现"内网穿透"，开发者可以让其他人实时查看本地开发的网站
+`ngrok` 是一个非常实用的网络工具，它的主要作用是帮助我们实现"内网穿透"，开发者可以让其他人实时查看本地开发的网站
 
-### 4.1 注册账号
+#### 4.1 注册账号
 
-[ngrok](https://dashboard.ngrok.com/login)
+[`ngrok`](https://dashboard.ngrok.com/login)
 
-可以google直接登录，点击菜单栏的 “your authtoken”，查看并复制你的token
+可以google直接登录，点击菜单栏的 “`your authtoken`”，查看并复制你的`token`
 
 ![](img/7892b54c4c82274a94f1e5ddb70a69df.png)
 
 ![](img/4fcb32a1f4d5bb9a405e2e52a50f5788.png)
 
-### 4.2 安装ngrok
+#### 4.2 安装`ngrok`
 
-#### 4.2.1 下载
+##### 4.2.1 下载
 
 ```
 brew install ngrok
 ```
 
-也可以直接点击“download”进行下载，选择对应的芯片
+也可以直接点击“`download`”进行下载，选择对应的芯片
 
 ![](img/3c655f5123a7a1239253ebc485c40f78.png)
 
-#### 4.2.2 加入token
+##### 4.2.2 加入`token`
 
-添加 authtoken到电脑上，终端运行下面内容
+添加 `authtoken`到电脑上，终端运行下面内容
 
 ```
 ngrok config add-authtoken 你的token
 ```
 
-### 4.3 使用ngrok
+#### 4.3 使用`ngrok`
 
 启动本地开发服务，终端运行下面👇
 
@@ -302,41 +303,41 @@ ngrok config add-authtoken 你的token
 npm start
 ```
 
-**运行ngrok，一般程序在**3000端口，如果你的有指定修改端口即可
+运行`ngrok`，一般程序在`3000`端口，如果你的有指定修改端口即可
 
 ```
 ngrok http 3000
 ```
 
-运行完以后会出现 类似下面的图，就得到了local的path对应的public URL
+运行完以后会出现 类似下面的图，就得到了`local`的`path`对应的`public URL`
 
 ![](img/d4e5a67d232e162c2079fcd0340b5bae.png)
 
-最后再把我们需要的具体path换进去例如
+最后再把我们需要的具体`path`换进去例如
 
 ```
 localhost:3000/payment/result
 ```
 
-Public URL就是
+`Public URL`就是
 
 ```
 https://08f7-115-196-182-99.ngrok-free.app/payment/result
 ```
 
-### 4. 注意事项
+### 5. 注意事项
 
-免费版本的，每一次 run ngrok以后 都会生成一个随机的url。
+免费版本的，每一次 `run ngrok`以后 都会生成一个随机的`url`。
 
-**如果你关闭了terminal以后**，再次打开，就会生成另外一个URL，你就需要去creem里面更换mode 模式下的 webhook的URL！
+**如果你关闭了`terminal`以后**，再次打开，就会生成另外一个`URL`，你就需要去`creem`里面更换`mode` 模式下的 `webhook`的`URL`！
 
-# 四、配置
+## 四、配置
 
-## 1. 检查配置信息
+### 1. 检查配置信息
 
 经过以上种种 ，我们应该就得到了下面的所有东西
 
-env文件
+`env`文件
 
 ```
 CREEM_API_KEY=
@@ -345,21 +346,21 @@ CREEM_API_URL=https://api.creem.io
 CREEM_SUCCESS_URL=
 ```
 
-### api_key
+#### `api_key`
 
 ```
 CREEM_API_KEY=
 CREEM_API_KEY_TEST=
 ```
 
-### product_id
+#### `product_id`
 
 ```
 CREEM_PRODUCT_ID=
 CREEM_PRODUCT_ID_TEST=
 ```
 
-### api URL
+#### `api URL`
 
 > 这个好像是通用的
 
@@ -368,7 +369,7 @@ CREEM_API_URL=https://api.creem.io
 CREEM_API_URL_TEST=https://test-api.creem.io
 ```
 
-### webhook 相关
+#### `webhook` 相关
 
 ```
 CREEM_WEBHOOK_URL_test=
@@ -377,30 +378,30 @@ CREEM_WEBHOOK_secret_test=
 CREEM_WEBHOOK_secret=
 ```
 
-### 支付成功以后要返回的页面路径
+#### 支付成功以后要返回的页面路径
 
 ```
 CREEM_SUCCESS_URL=
 CREEM_SUCCESS_URL_TEST=
 ```
 
-## 2. 使用cursor连接
+### 2. 使用`cursor`连接
 
-### 2.1 支付的逻辑
+#### 2.1 支付的逻辑
 
-我让ai给我画了一个说明的流程图，结果感觉画的非常复杂，看起来可能真的这么复杂，简单来说就是，
+我让`ai`给我画了一个说明的流程图，结果感觉画的非常复杂，看起来可能真的这么复杂，简单来说就是，
 
-+   前端看到的：用户点击付款按钮--->跳转付款页面--->填写信息付款成功--->返回某个页面/获得积分
++ 前端看到的：用户点击付款按钮--->跳转付款页面--->填写信息付款成功--->返回某个页面/获得积分
 
-+   后端实际：服务器发起请求--->支付端收到请求，给了一个付款连接--->服务器把付款连接传给用户--->用户支付--->支付端收到支付通知--->支付端给服务器回传消息（通知支付完成）
++ 后端实际：服务器发起请求--->支付端收到请求，给了一个付款连接--->服务器把付款连接传给用户--->用户支付--->支付端收到支付通知--->支付端给服务器回传消息（通知支付完成）
 
 大概就是这么个意思～（主打一个看图说话
 
-网站的支付就2种，一次性（pay one-time）&订阅（subscribe），下面就手把手把带大家尝试一下 一次性付费。
+网站的支付就2种，一次性（`pay one-time`）&订阅（`subscribe`），下面就手把手把带大家尝试一下 一次性付费。
 
 配置规则[文档直通车](https://docs.creem.io/learn/checkout-session/introduction)
 
-### 2.2 一次性付费（Return URL）
+#### 2.2 一次性付费（`Return URL`）
 
 > 一句话说逻辑就是：配置规则在这里，我有这些配置信息，我希望实现什么效果，你帮我写
 
@@ -414,15 +415,15 @@ CREEM_SUCCESS_URL_TEST=
 
 这个实现逻辑，我们是需要有一个使用参数`success_url`和`signature验证`直接看到对应文档官方解释
 
-1.  您可以为每个 checkout_session 传递一个自定义的success_url，它将覆盖success_url产品上的设置。这使得您可以在每次付款后动态地将用户重定向到自定义页面（对于在付款后将用户引导到他们的特定帐户资源很有用）。
+1. 您可以为每个 `checkout_session` 传递一个自定义的`success_url`，它将覆盖`success_url`产品上的设置。这使得您可以在每次付款后动态地将用户重定向到自定义页面（对于在付款后将用户引导到他们的特定帐户资源很有用）。
 
-1.  返回和重定向 URL 是成功付款后您的客户将被重定向到的 URL。它们包含由 creem 签名的重要信息，您可以使用这些信息来验证付款和用户。
+1. 返回和重定向 `URL` 是成功付款后您的客户将被重定向到的 `URL`。它们包含由 `creem` 签名的重要信息，您可以使用这些信息来验证付款和用户。
 
 划重点：付款成功，重定向的自定义页面，使用信息验证付款（和用户）
 
-一次性付费总共需要3个API：创建checkout、生成signature、验证signature
+一次性付费总共需要3个`API`：创建`checkout`、生成`signature`、验证`signature`
 
-#### API1:创建会话
+##### API1:创建会话
 
 ```
 const redirectUrl = await axios.post(
@@ -439,18 +440,24 @@ const redirectUrl = await axios.post(
 
 看起来吓人，实际上就4个东西：
 
-1.  https://api.creem.io/v1/checkouts支付连接(固定的，测试和生产2个不同连接)
+1. `https://api.creem.io/v1/checkouts`支付连接(固定的，测试和生产2个不同连接)
 
-1.  success_url": "https://example.com 支付成功以后你要去到的页面path（路径）
+1. `success_url": "https://example.com` 支付成功以后你要去到的页面`path`（路径）
 
-1.  "product_id": "prod_your-product-id 换成你的产品id
+1. `"product_id": "prod_your-product-id` 换成你的产品`id`
 
-1.  "x-api-key": `creem_123456789 换成你的api key（测试和生产2个不同）
+1. `"x-api-key": `creem_123456789` 换成你的`api key`（测试和生产2个不同）
 
 我的文件如下：
 
+
+
+# 接口封装与测试支付
+
+## API1: createCheckout 创建结账会话
+
 ```
-import axios from &#x27;axios&#x27;;
+import axios from 'axios';
 
 export interface CreateCheckoutParams {
   productId: string;
@@ -468,13 +475,13 @@ export interface CreateCheckoutResponse {
  * @param params 结账参数
  * @returns 包含结账URL的响应
  */
-export async function createCheckout(params: CreateCheckoutParams): Promise&lt;CreateCheckoutResponse&gt; {
+export async function createCheckout(params: CreateCheckoutParams): Promise<CreateCheckoutResponse> {
   try {
-    const API_URL = process.env.CREEM_API_URL || &#x27;https://test-api.creem.io&#x27;;
-    const API_KEY = process.env.CREEM_API_KEY || &#x27;creem_test_3sioDtbY5ADbmoODbQnNiW&#x27;;
+    const API_URL = process.env.CREEM_API_URL || 'https://test-api.creem.io';
+    const API_KEY = process.env.CREEM_API_KEY || 'creem_test_3sioDtbY5ADbmoODbQnNiW';
     
     // 获取格式化的API基础URL（确保没有尾部斜杠）
-    const baseUrl = API_URL.endsWith(&#x27;/&#x27;) ? API_URL.slice(0, -1) : API_URL;
+    const baseUrl = API_URL.endsWith('/') ? API_URL.slice(0, -1) : API_URL;
     const apiUrl = `${baseUrl}/v1/checkouts`;
 
     const response = await axios.post(
@@ -485,34 +492,29 @@ export async function createCheckout(params: CreateCheckoutParams): Promise&lt;C
         success_url: params.successUrl,
       },
       {
-        headers: { &#x27;x-api-key&#x27;: API_KEY },
+        headers: { 'x-api-key': API_KEY },
       }
     );
 
     if (!response.data || !response.data.checkout_url) {
-      throw new Error(&#x27;API response does not contain checkout_url&#x27;);
+      throw new Error('API response does not contain checkout_url');
     }
 
     return response.data;
   } catch (error) {
-    console.error(&#x27;Error creating checkout session:&#x27;, error);
-    if (axios.isAxiosError(error) &amp;&amp; error.response) {
-      console.error(&#x27;API error response:&#x27;, error.response.data);
+    console.error('Error creating checkout session:', error);
+    if (axios.isAxiosError(error) && error.response) {
+      console.error('API error response:', error.response.data);
     }
     throw error;
   }
 }
-
 ```
 
-![](img/be835a3a448e99a0ff5b738190487a5d.png)
-
-(GPT的解读，下面的你也可以发给任意ai去看看写的到底是什么)
-
-#### API2:生成signture
+## API2: 生成signture
 
 ```
-import crypto from &#x27;crypto&#x27;;
+import crypto from 'crypto';
 
 /**
  * 生成Creem签名
@@ -520,25 +522,24 @@ import crypto from &#x27;crypto&#x27;;
  * @param apiKey API密钥
  * @returns 生成的签名
  */
-export function generateSignature(params: Record&lt;string, string&gt;, apiKey: string): string {
-  // 创建格式为 &quot;key1=value1|key2=value2|...|salt=apiKey&quot; 的数据字符串
+export function generateSignature(params: Record<string, string>, apiKey: string): string {
+  // 创建格式为 "key1=value1|key2=value2|...|salt=apiKey" 的数据字符串
   // 重要：不要对键进行排序 - 按照提供的顺序使用
   const data = Object.entries(params)
-    .map(([key, value]) =&gt; `${key}=${value}`)
+    .map(([key, value]) => `${key}=${value}`)
     .concat(`salt=${apiKey}`)
-    .join(&#x27;|&#x27;);
+    .join('|');
 
   // 使用SHA-256哈希算法生成签名
-  const hash = crypto.createHash(&#x27;sha256&#x27;).update(data).digest(&#x27;hex&#x27;);
+  const hash = crypto.createHash('sha256').update(data).digest('hex');
   return hash;
 }
-
 ```
 
-#### API3:验证签名signature
+## API3: 验证签名signature
 
 ```
-import { generateSignature } from &#x27;./signatureUtils&#x27;;
+import { generateSignature } from './signatureUtils';
 
 export interface RedirectParams {
   request_id?: string | null;
@@ -555,14 +556,14 @@ export interface RedirectParams {
  * @param signature 要验证的签名
  * @returns 签名是否有效
  */
-export function verifySignature(params: Record&lt;string, string&gt;, signature: string): boolean {
+export function verifySignature(params: Record<string, string>, signature: string): boolean {
   try {
-    const API_KEY = process.env.CREEM_API_KEY || &#x27;creem_test_3sioDtbY5ADbmoODbQnNiW&#x27;;
+    const API_KEY = process.env.CREEM_API_KEY || 'creem_test_3sioDtbY5ADbmoODbQnNiW';
 
     // 过滤掉null/undefined值，并移除signature参数（如果存在）
-    const filteredParams: Record&lt;string, string&gt; = {};
-    Object.entries(params).forEach(([key, value]) =&gt; {
-      if (value !== null &amp;&amp; value !== undefined &amp;&amp; key !== &#x27;signature&#x27;) {
+    const filteredParams: Record<string, string> = {};
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== null && value !== undefined && key !== 'signature') {
         filteredParams[key] = value;
       }
     });
@@ -573,12 +574,15 @@ export function verifySignature(params: Record&lt;string, string&gt;, signature:
     // 比较计算的签名与接收到的签名
     return computedSignature === signature;
   } catch (error) {
-    console.error(&#x27;Error verifying signature:&#x27;, error);
+    console.error('Error verifying signature:', error);
     return false;
   }
 }
-
 ```
+
+![](img/be835a3a448e99a0ff5b738190487a5d.png)
+
+(GPT的解读，下面的你也可以发给任意ai去看看写的到底是什么)
 
 ## 测试支付
 
@@ -673,37 +677,37 @@ export function verifySignature(params: Record&lt;string, string&gt;, signature:
 
 ### 各文件详细功能
 
-1.  signatureUtils.ts:
+1. `signatureUtils.ts`:
 
 +   核心功能：生成符合Creem规范的签名
 
-+   工作方式：将参数按照key1=value1|key2=value2|...|salt=apiKey格式连接，然后使用SHA-256哈希算法生成签名
++   工作方式：将参数按照 `key1=value1|key2=value2|...|salt=apiKey` 格式连接，然后使用SHA-256哈希算法生成签名
 
-+   被verifySignature.ts调用来验证签名
++   被 `verifySignature.ts` 调用来验证签名
 
-1.  verifySignature.ts:
+1. `verifySignature.ts`:
 
 +   核心功能：验证从Creem重定向回来的URL中的签名
 
-+   工作方式：过滤参数，移除signature参数，调用generateSignature生成签名，然后与URL中的签名比较
++   工作方式：过滤参数，移除signature参数，调用 `generateSignature` 生成签名，然后与URL中的签名比较
 
-+   被SuccessContent.tsx组件调用来验证支付结果
++   被 `SuccessContent.tsx` 组件调用来验证支付结果
 
-1.  createCheckout.ts:
+1. `createCheckout.ts`:
 
 +   核心功能：调用Creem API创建结账会话
 
-+   工作方式：使用axios发送POST请求到Creem API，返回包含checkout_url的响应
++   工作方式：使用 `axios` 发送POST请求到Creem API，返回包含 `checkout_url` 的响应
 
-+   被app/api/create-checkout/route.ts调用
++   被 `app/api/create-checkout/route.ts` 调用
 
-1.  app/api/create-checkout/route.ts:
+1. `app/api/create-checkout/route.ts`:
 
 +   核心功能：处理前端支付请求
 
-+   工作方式：接收前端请求，验证参数，调用createCheckout服务，返回结果
++   工作方式：接收前端请求，验证参数，调用 `createCheckout` 服务，返回结果
 
-+   被app/page.tsx中的支付按钮点击事件调用
++   被 `app/page.tsx` 中的支付按钮点击事件调用
 
 ## 5.3 跟AI对话的过程
 

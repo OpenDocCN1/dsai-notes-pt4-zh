@@ -1,8 +1,9 @@
+
 # 视频分析提示词
 
 > 来源：[https://my.feishu.cn/docx/OISSdYUrdonT7qxbnVlc6fh9nrb](https://my.feishu.cn/docx/OISSdYUrdonT7qxbnVlc6fh9nrb)
 
-#来自网络
+## 来自网络
 
 ```
 你将把一段 YouTube 视频重写成&quot;阅读版本&quot;，按内容主题分成若干小节；目标是让读者通过阅读就能完整理解视频讲了什么，就好像是在读一篇 Blog 版的文章一样。

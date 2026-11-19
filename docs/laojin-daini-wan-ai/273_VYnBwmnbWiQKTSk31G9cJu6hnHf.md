@@ -1,3 +1,4 @@
+
 # Cursor 2.1别被标题党骗了，这才是真实改进
 
 > 来源：[https://my.feishu.cn/docx/IyQxdjg7ioxaSBxWeNncR1OJnqL](https://my.feishu.cn/docx/IyQxdjg7ioxaSBxWeNncR1OJnqL)
@@ -30,31 +31,31 @@ Cursor弹更新。
 
 **1.7版本（2025年9月）**：
 
-+   首次引入Plan Mode（beta）
++ 首次引入Plan Mode（beta）
 
-+   首次引入Browser in Agent（beta）
++ 首次引入Browser in Agent（beta）
 
-+   首次引入Sandboxed Terminals（beta）
++ 首次引入Sandboxed Terminals（beta）
 
-2.0版本（2025年10月29日）：
+**2.0版本（2025年10月29日）**：
 
-+   Composer模型（4倍速提升）← 这个牛（反正我用下来Tools用的比较勤，速度很快，比较吃上下文工程）
++ `Composer`模型（4倍速提升）← 这个牛（反正我用下来Tools用的比较勤，速度很快，比较吃上下文工程）
 
-+   **8个AI Agent**并行写代码 ← 这个最牛（牛在解耦）
++ **8个AI Agent**并行写代码 ← 这个最牛（牛在解耦）
 
-+   Browser/Terminals正式版
++ Browser/Terminals正式版
 
-+   这才是大更新！
++ 这才是大更新！
 
-2.1版本（2025年11月21日）：
+**2.1版本（2025年11月21日）**：
 
-+   Plan Mode改进（交互式问答）
++ Plan Mode改进（交互式问答）
 
-+   AI Code Review in Editor（新增）
++ AI Code Review in Editor（新增）
 
-+   Instant Grep极速搜索（Beta，性能改进）
++ Instant Grep极速搜索（Beta，性能改进）
 
-+   这只是增量更新
++ 这只是增量更新
 
 **看到了吗？**
 
@@ -80,7 +81,7 @@ Cursor弹更新。
 
 你写完代码，Cursor会自动检查你的改动。
 
-Cursor自动审查：潜在bug、性能问题、安全隐患、代码规范。
+Cursor自动审查：潜在`bug`、性能问题、安全隐患、代码规范。
 
 问题直接在编辑器里标出来，侧边栏显示详情。
 
@@ -91,17 +92,17 @@ Cursor自动审查：潜在bug、性能问题、安全隐患、代码规范。
 我让Cursor写了个更新用户信息的功能：
 
 ```
-@app.post(&quot;/user/update&quot;)
+@app.post("/user/update")
 def update_user(user_id: int, name: str):
     user = db.query(User).filter(User.id == user_id).first()
     user.name = name
     db.commit()
-    return {&quot;status&quot;: &quot;ok&quot;}
+    return {"status": "ok"}
 ```
 
 AI写完，我一保存，Cursor的Code Review立马标黄了两处：
 
-> ⚠️ 错误处理：user可能为None
+> ⚠️ 错误处理：`user`可能为`None`
 
 > ⚠️ 安全问题：缺少身份验证
 
@@ -110,17 +111,17 @@ AI写完，我一保存，Cursor的Code Review立马标黄了两处：
 Cursor给出修复建议（添加了身份验证和空值检查）：
 
 ```
-@app.post(&quot;/user/update&quot;)
+@app.post("/user/update")
 @require_auth
 def update_user(user_id: int, name: str, current_user: User = Depends(get_current_user)):
     if current_user.id != user_id:
-        raise HTTPException(403, &quot;Forbidden&quot;)
+        raise HTTPException(403, "Forbidden")
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
-        raise HTTPException(404, &quot;User not found&quot;)
+        raise HTTPException(404, "User not found")
     user.name = name
     db.commit()
-    return {&quot;status&quot;: &quot;ok&quot;}
+    return {"status": "ok"}
 ```
 
 如果没这个提醒，这代码上线肯定出事。
@@ -131,7 +132,7 @@ def update_user(user_id: int, name: str, current_user: User = Depends(get_curren
 
 ```
 def search_users(keyword: str):
-    sql = f&quot;SELECT * FROM users WHERE name LIKE &#x27;%{keyword}%&#x27;&quot;
+    sql = f"SELECT * FROM users WHERE name LIKE '%{keyword}%'"
     return db.execute(sql).fetchall()
 ```
 
@@ -145,7 +146,7 @@ AI写完，我一保存，Cursor直接标红了——这是最严重的警告：
 
 ```
 def search_users(keyword: str):
-    return db.query(User).filter(User.name.like(f&quot;%{keyword}%&quot;)).all()
+    return db.query(User).filter(User.name.like(f"%{keyword}%")).all()
 ```
 
 **这个坑，很多新手都会踩。**
@@ -162,7 +163,7 @@ for user_id in user_ids:
 
 AI写完，我一保存，Cursor又标黄了：
 
-> ⚠️ 性能问题：N+1查询，建议批量查询
+> ⚠️ 性能问题：`N+1`查询，建议批量查询
 
 **Cursor解释了问题**：这段代码如果处理100个用户，就要问数据库100次。就像你去超市买100样东西，每买一样就回家放一趟，来回跑100趟——超级慢！
 
@@ -174,7 +175,7 @@ for user in users:
     process_user(user)
 ```
 
-100个user_id，从100次查询变成1次，性能提升100倍。
+100个`user_id`，从100次查询变成1次，性能提升100倍。
 
 老金我用了好几天，这个功能真的救了我3次。
 
@@ -220,7 +221,7 @@ Plan Mode是1.7（9月）就有的。
 
 而且有交互式UI，点一下就能回答，不用打字。
 
-还可以搜索计划内容（Mac按⌘+F / Windows按Ctrl+F）。
+还可以搜索计划内容（Mac按`⌘+F` / Windows按`Ctrl+F`）。
 
 #### 我昨晚的真实体验
 
@@ -250,7 +251,7 @@ Plan Mode是1.7（9月）就有的。
 
 它生成的计划，性能方案就合理了。
 
-而且用搜索功能（Mac按⌘+F / Windows按Ctrl+F）搜"日志清理"，立马找到相关步骤。
+而且用搜索功能（Mac按`⌘+F` / Windows按`Ctrl+F`）搜"日志清理"，立马找到相关步骤。
 
 **省了至少20分钟返工时间。**
 
@@ -278,7 +279,7 @@ Plan Mode是1.7（9月）就有的。
 
 #### 我的真实体验
 
-我搜代码里的user_login函数：
+我搜代码里的`user_login`函数：
 
 **之前的Grep**：
 
@@ -324,7 +325,7 @@ Cursor启动了6个AI Agent：
 
 6、Agent 6：写文档
 
-每个Agent在独立的代码副本里工作（用git worktrees技术，避免冲突）。
+每个Agent在独立的代码副本里工作（用`git worktrees`技术，避免冲突）。
 
 20分钟后，所有Agent完成。
 
@@ -332,29 +333,33 @@ Cursor把代码合并到主分支。
 
 这效率，相当于6个初级程序员同时干活。
 
-### 功能2：Composer模型快4倍
+### 功能2：`Composer`模型快4倍
 
-Cursor自己训练了一个AI模型，叫Composer。
+Cursor自己训练了一个AI模型，叫`Composer`。
 
 **特点**：
 
-+   30秒内完成大多数编程任务
++ 30秒内完成大多数编程任务
 
-+   比GPT-4o快3倍
++ 比`GPT-4o`快3倍
 
-+   专门优化了代码理解和生成
++ 专门优化了代码理解和生成
 
 **实测对比**：
 
 同样一个需求："写一个RESTful API的用户管理模块"
 
 | 模型 | 耗时 | 代码质量 |
-| --- | --- | --- |
-| GPT-4o | 90秒 | 良好 |
-| Claude Sonnet 4.5 | 75秒 | 优秀 |
-| Composer | 28秒 | 优秀 |
 
-Composer不仅快，代码质量还不输Claude。
+| --- | --- | --- |
+
+| `GPT-4o` | 90秒 | 良好 |
+
+| `Claude Sonnet 4.5` | 75秒 | 优秀 |
+
+| `Composer` | 28秒 | 优秀 |
+
+`Composer`不仅快，代码质量还不输`Claude`。
 
 关键是免费用户也能用（有额度限制）。
 
@@ -364,9 +369,9 @@ Composer不仅快，代码质量还不输Claude。
 
 **设置路径**：
 
-+   **Mac**：Cursor菜单 → Settings → 搜索"Code Review" → 勾选Enable
++ **Mac**：Cursor菜单 → `Settings` → 搜索"Code Review" → 勾选`Enable`
 
-+   **Windows**：File菜单 → Preferences → Settings → 搜索"Code Review" → 勾选Enable
++ **Windows**：`File`菜单 → `Preferences` → `Settings` → 搜索"Code Review" → 勾选`Enable`
 
 勾选后，Cursor会自动检查你的代码改动。
 
@@ -376,25 +381,25 @@ Composer不仅快，代码质量还不输Claude。
 
 快捷键：
 
-+   **Mac**：Cmd + L（打开Composer）
++ **Mac**：`Cmd + L`（打开`Composer`）
 
-+   **Windows**：Ctrl + L（打开Composer）
++ **Windows**：`Ctrl + L`（打开`Composer`）
 
-输入需求，勾选"Plan first"。
+输入需求，勾选`Plan first`。
 
 Cursor会先问你澄清问题。
 
 回答完问题，它再生成计划。
 
-**计划里可以用搜索功能**（Mac按⌘+F / Windows按Ctrl+F）。
+**计划里可以用搜索功能**（Mac按`⌘+F` / Windows按`Ctrl+F`）。
 
 ### 3、使用Instant Grep极速搜索
 
 快捷键：
 
-+   **Mac**：Cmd + Shift + F
++ **Mac**：`Cmd + Shift + F`
 
-+   **Windows**：Ctrl + Shift + F
++ **Windows**：`Ctrl + Shift + F`
 
 极速搜索，秒出结果。
 
@@ -410,7 +415,7 @@ Cursor会先问你澄清问题。
 
 **解决**：
 
-打开设置（Mac按Cmd+逗号 / Windows按Ctrl+逗号），搜索"Code Review"，找到Severity Level，改成"High"，只报严重问题。
+打开设置（Mac按`Cmd+逗号` / Windows按`Ctrl+逗号`），搜索"Code Review"，找到`Severity Level`，改成`High`，只报严重问题。
 
 或者针对特定文件关闭审查，在代码开头加这行：
 
@@ -424,21 +429,21 @@ Cursor会先问你澄清问题。
 
 **解决**：
 
-1、选择"Skip Plan Mode"，直接让它写
+1、选择`Skip Plan Mode`，直接让它写
 
 2、或者快速选择默认选项（第一个）
 
-3、在Settings里调整"Question Level"为"Low"（只问1-2个关键问题）
+3、在`Settings`里调整`Question Level`为`Low`（只问1-2个关键问题）
 
-### 问题3：Composer额度用完了怎么办？
+### 问题3：`Composer`额度用完了怎么办？
 
 **症状**：免费版每月50次，用几天就没了
 
 **解决**：
 
-1、切换到GPT-4o或Claude（免费版也有额度）
+1、切换到`GPT-4o`或`Claude`（免费版也有额度）
 
-2、升级Pro版（$20/月无限）
+2、升级`Pro`版（$20/月无限）
 
 3、等下个月重置
 
@@ -450,11 +455,11 @@ Cursor 2.1确实改进了。
 
 真正革命的是2.0（8个Agent并行），不是2.1。
 
-**2.1只是修bug+小改进。**
+**2.1只是修`bug`+小改进。**
 
 **适合的场景**：
 
-写CRUD接口、写单元测试、重构代码、修bug
+写`CRUD`接口、写单元测试、重构代码、修`bug`
 
 **不适合的场景**：
 
@@ -482,13 +487,13 @@ Cursor 2.1确实改进了。
 
 如果你还在用1.7，直接升2.1。
 
-如果你已经在用2.0，2.1的改进不大，但Code Review值得试试。
+如果你已经在用2.0，2.1的改进不大，但`Code Review`值得试试。
 
 如果你没用过Cursor，别被标题党骗了，2.1不是什么革命性更新。
 
 Cursor更新很快，几乎每月都有新功能。
 
-关注官方博客：https://cursor.com/blog
+关注官方博客：`https://cursor.com/blog`
 
 Cursor 2.1从11月21日发布到现在，老金我已经用了好几天了。
 
@@ -500,17 +505,17 @@ Cursor 2.1从11月21日发布到现在，老金我已经用了好几天了。
 
 ## 参考来源
 
-1.  Cursor 2.1官方Changelog：https://cursor.com/changelog/2-1
+1. Cursor 2.1官方Changelog：`https://cursor.com/changelog/2-1`
 
-1.  Cursor 2.0官方Changelog：https://cursor.com/changelog/2-0
+1. Cursor 2.0官方Changelog：`https://cursor.com/changelog/2-0`
 
-1.  Cursor 1.7官方Changelog：https://cursor.com/changelog/1-7
+1. Cursor 1.7官方Changelog：`https://cursor.com/changelog/1-7`
 
-1.  Cursor社区论坛：https://forum.cursor.com/
+1. Cursor社区论坛：`https://forum.cursor.com/`
 
-1.  Hacker News讨论：https://news.ycombinator.com/item?id=46008703
+1. Hacker News讨论：`https://news.ycombinator.com/item?id=46008703`
 
-1.  老金5天实测体验（2025年11月21-26日）
+1. 老金5天实测体验（2025年11月21-26日）
 
 ---
 

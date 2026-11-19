@@ -1,3 +1,4 @@
+
 # 20260303-0排队、10秒出图：TapNow里面的Nano Banana 2，极速与品质完美平衡
 
 > 来源：[https://aigcreative.feishu.cn/docx/PPOSdNeOgoVBgexwiq7cgn0dn7b](https://aigcreative.feishu.cn/docx/PPOSdNeOgoVBgexwiq7cgn0dn7b)
@@ -10,7 +11,7 @@
 
 群里的朋友都在聊某平台的 2.0 版本，视效确实好，但吐槽声也很大——算力实在太拥挤了。排队起码半小时以上，稍微改个提示词又要重新排。对于需要高频创作的人说，这个时间成本实在耗不起。
 
-这两天我一直在找，有没有**不用排队、出图又快、质量还能打**的替代方案。结果发现，就在谷歌刚发布新一代 Nano** Banan**a 2 模型的时候，国内的 TapNow 已经迅速与谷歌同步、全球首发上线了。
+这两天我一直在找，有没有不用排队、出图又快、质量还能打的替代方案。结果发现，就在谷歌刚发布新一代 Nano Banana 2 模型的时候，国内的 TapNow 已经迅速与谷歌同步、全球首发上线了。
 
 官网链接直达：https://app.tapnow.ai/home?tap_referral=aigccylr_gzh_20260302
 
@@ -20,19 +21,19 @@
 
 关键是：0排队，实测 10 秒内就能出极高画质的图。
 
-今天这篇，直接带大家看看 **TapNow** 配合 **Nano Banana 2** 到底能干些什么，顺便分享一个我用它做广告宣传片的实操工作流。建议先收藏，回头实操的时候方便找。
+今天这篇，直接带大家看看 TapNow 配合 Nano Banana 2 到底能干些什么，顺便分享一个我用它做广告宣传片的实操工作流。建议先收藏，回头实操的时候方便找。
 
-# 01.Nano Banana 2 到底好在哪？
+## 01.Nano Banana 2 到底好在哪？
 
-以前我们对平价 AI 模型的印象往往是“听不懂复杂指令”或者“塑料感重”。就算是Nano Banana Pro，现阶段还是比较贵的，出图速度也相对比较慢。
+以前我们对平价 AI 模型的印象往往是“听不懂复杂指令”或者“塑料感重”。就算是 Nano Banana Pro，现阶段还是比较贵的，出图速度也相对比较慢。
 
 但这次 Nano Banana 2 确实做到了画质和语义理解的平衡，智商和美感都在线。
 
-最吸引我的一点是它的生成成本极低，便宜了50%，生成速度极快。
+最吸引我的一点是它的生成成本极低，便宜了 50%，生成速度极快。
 
 对于我们平民玩家来说，这是非常实在的福音。
 
-如果是初次使用TapNow的朋友，不知道如何上手，可以先到【模板库】，点开其他创作者的工作流模板，快速上手，以及创作思路的学习。
+如果是初次使用 TapNow 的朋友，不知道如何上手，可以先到【模板库】，点开其他创作者的工作流模板，快速上手，以及创作思路的学习。
 
 【模板库】的链接：https://app.tapnow.ai/home/workflow?tap_referral=aigccylr_gzh_20260302
 
@@ -48,15 +49,15 @@
 
 于是，又可以愉快的玩耍 Nano Banana 2 了~~比如：
 
-+   创意场景：
++ 创意场景：
 
-> 3D chibi-style miniature concept store of {Brand Name}, creatively designed with an exterior inspired by the brand's most iconic product or packaging (such as a giant {brand's core product, e.g., chicken bucket/hamburger/donut/roast duck}). The store features two floors with large glass windows clearly showcasing the cozy and finely decorated interior: {brand's primary color}-themed decor, warm lighting, and busy staff dressed in outfits matching the brand. Adorable tiny figures stroll or sit along the street, surrounded by benches, street lamps, and potted plants, creating a charming urban scene. Rendered in a miniature cityscape style using Cinema 4D, with a blind-box toy aesthetic, rich in details and realism, and bathed in soft lighting that evokes a relaxing afternoon atmosphere.
+> 3D chibi-style miniature concept store of `{Brand Name}`, creatively designed with an exterior inspired by the brand's most iconic product or packaging (such as a giant `{brand's core product, e.g., chicken bucket/hamburger/donut/roast duck}`). The store features two floors with large glass windows clearly showcasing the cozy and finely decorated interior: `{brand's primary color}`-themed decor, warm lighting, and busy staff dressed in outfits matching the brand. Adorable tiny figures stroll or sit along the street, surrounded by benches, street lamps, and potted plants, creating a charming urban scene. Rendered in a miniature cityscape style using Cinema 4D, with a blind-box toy aesthetic, rich in details and realism, and bathed in soft lighting that evokes a relaxing afternoon atmosphere.
 
 ![](img/b34ab09188bd8d0dbce6bf6fc007ac3b.png)
 
 ![](img/a3af861a831c6a95d47ebe8525419d4a.png)
 
-+   人像摄影
++ 人像摄影
 
 > Create a realistic portrait image of a young woman (face 100% identical to the original attached image)  Asian fashion of a slender young woman. She wears a thick green knit crop top with a Christmas reindeer toy attached, white jeans, standing in front of a Christmas candy shop with various Christmas treats such as Santa cake, bear donuts with hats, reindeer, arranged beautifully on wooden shelves and wiker baskets, decorated with Christmas decorations, pine tree with lights, natural light shining on her face and outfit, bright and warm, soft atmosphere, face with red tone makeup, red lips, good figure, beautiful waist, and clear proportions
 
@@ -64,13 +65,13 @@
 
 ![](img/515ab2221480f5914cf1701ea9d7c05b.png)
 
-+   信息图生成
++ 信息图生成
 
 ![](img/3b8e0697cdba38be9aaa6cd1ddb83093.png)
 
 ![](img/3b1818f35cbc201a9a48a8219f896350.png)
 
-# 02.TapNow真正好用的“后期工具箱”
+## 02.TapNow真正好用的“后期工具箱”
 
 TapNow一直是我们团队的“心头好”，去年底，我们才用TapNow做一个宣传片，从生图到生视频，是真的能落地的生产力。
 
@@ -82,9 +83,9 @@ TapNow一直是我们团队的“心头好”，去年底，我们才用TapNow�
 
 TapNow 让我觉得很顺手的地方在于，它在图像节点上方，直接集成了一排，经过 Nano Banana 2 加持的后期工具箱——图像编辑工具，不用再导进 PS 里去修，直接在网页上就能完成微调，非常实用：
 
-## 实用功能 1：焦点编辑，指哪打哪
+### 实用功能 1：焦点编辑，指哪打哪
 
-**局部修改效率高。**
+局部修改效率高。
 
 大家肯定遇到过这种情况：画面整体都很完美，就是人物的手指有点奇怪，或者桌子上多了一个杯子。以前遇到这种瑕疵，只能改词重新抽卡，费时费力。
 
@@ -92,13 +93,13 @@ TapNow 让我觉得很顺手的地方在于，它在图像节点上方，直接�
 
 TapNow 的焦点编辑解决了这个痛点。你只需要用鼠标选出不满意的局部，输入新的指令。
 
-**比如画面**里名片的颜色不合适，直接激活焦点编辑，点中名片后，输入改为抹茶绿色，它就会在不改变原图周围光影的前提下，把名片的颜色自然地替换掉。指哪打哪，非常高效。
+比如画面里名片的颜色不合适，直接激活焦点编辑，点中名片后，输入改为抹茶绿色，它就会在不改变原图周围光影的前提下，把名片的颜色自然地替换掉。指哪打哪，非常高效。
 
 ![](img/42596e2ebd3d8299912ef0649ac95c2e.png)
 
-## **实用功能 2：“/”影视快捷键**
+### 实用功能 2：`"/"`影视快捷键
 
-**保持角色一致性变简单了。**
+保持角色一致性变简单了。
 
 做连载图文或是短剧分镜，最怕的就是主角每张图长得都不一样。以前为了保持多角度的一致性，得去折腾 LoRA 和复杂的控制节点，门槛很高。
 
@@ -106,7 +107,7 @@ TapNow 的焦点编辑解决了这个痛点。你只需要用鼠标选出不满�
 
 ![](img/05c4bd27ef58ef4121b075ea91b0b2e9.png)
 
-直接调用**“/”影视快捷键，**会出来一些快捷操作：
+直接调用 `"/"` 影视快捷键，会出来一些快捷操作：
 
 ![](img/a0817a1a374e6a41071222e63ddfb8d5.png)
 
@@ -122,9 +123,9 @@ TapNow 的焦点编辑解决了这个痛点。你只需要用鼠标选出不满�
 
 ![](img/f741b2394527ee19ba628711c2ebaf8f.png)
 
-## **实用功能 3：多角度调节**
+### 实用功能 3：多角度调节
 
-**更进一**步，如果想精细的调节，直接在节点上使用多角度功能，有旋转、倾斜、缩放等参数可调节：
+更进一步，如果想精细的调节，直接在节点上使用多角度功能，有旋转、倾斜、缩放等参数可调节：
 
 ![](img/ba87cf1b5b96a430ddb9027309f6a575.png)
 
@@ -134,7 +135,7 @@ TapNow 的焦点编辑解决了这个痛点。你只需要用鼠标选出不满�
 
 这就好比你在一个虚拟影棚里，随意各种角度给模特拍照。这对于需要极致打磨的镜头场景，就很有必要了。
 
-## **实用功能 4：打****光****，增强质感，拯救有缺陷的片子**
+### 实用功能 4：打光，增强质感，拯救有缺陷的片子
 
 这是我最喜欢的功能了，专业摄影师看了都直呼内行！做的是相当专业了~~
 
@@ -150,7 +151,7 @@ TapNow 的焦点编辑解决了这个痛点。你只需要用鼠标选出不满�
 
 ![](img/eeaab20e8fee494d50fc4c8e3afef5f5.png)
 
-## 实用功能 5：Lens Combo，提升画面电影质感
+### 实用功能 5：Lens Combo，提升画面电影质感
 
 很多时候，AI 生成的图片看起来比较平淡，是因为光影和镜头感不够。
 
@@ -160,7 +161,7 @@ TapNow 把专业的打光和摄影机设置做成了直观的面板，这对于�
 
 ![](img/99aff9c1e9cf588daf1e34e7bf3475c0.png)
 
-摄影机型号、镜头、焦距、光圈大小，都可以自行控制，以达到你想要的效果。（当然，这里需要一些影视方面的专业的知识，这里可以直接点开画布右下角的Agent，学习如何精准调节各个参数。）
+摄影机型号、镜头、焦距、光圈大小，都可以自行控制，以达到你想要的效果。（当然，这里需要一些影视方面的专业的知识，这里可以直接点开画布右下角的 Agent，学习如何精准调节各个参数。）
 
 看看不同摄影机、景别、焦距的效果，电影感直接拉满！
 
@@ -168,11 +169,11 @@ TapNow 把专业的打光和摄影机设置做成了直观的面板，这对于�
 
 ![](img/4845e4585686e96c3d351554766b57bf.png)
 
-# 03.我的广告宣传片工作流分享
+## 03.我的广告宣传片工作流分享
 
 为了让大家看清楚整套流程，我用它做了一组广告片的分镜。
 
-先补充一点，TapNow画布的右下角，内置了一个Agent，默认 Gemini 模型，可进行对话、找灵感、情绪版、分镜策划等，非常方便，不用跳出到其他的AI产品里折腾了。
+先补充一点，TapNow 画布的右下角，内置了一个 Agent，默认 Gemini 模型，可进行对话、找灵感、情绪版、分镜策划等，非常方便，不用跳出到其他的 AI 产品里折腾了。
 
 ![](img/1555de36205f903e56e734239f582fc4.png)
 
@@ -182,7 +183,7 @@ TapNow 把专业的打光和摄影机设置做成了直观的面板，这对于�
 
 初步想法是一台假象的：AIGC创意制造机，灵感转瞬即逝，随时随地快速生成你的灵感创意。
 
-1.  **极速起稿：** 把产品卖点直接扔给TapNow的AI小助手：
+1. 极速起稿：把产品卖点直接扔给 TapNow 的 AI 小助手：
 
 > 帮我为产品【CreativeHunter创意制造机】创建40秒TVC广告分镜。Slogan：Hunt the Idea, Craft the Reality。
 
@@ -200,19 +201,19 @@ TapNow 把专业的打光和摄影机设置做成了直观的面板，这对于�
 
 ![](img/91f80ed8a636daa7b41f442105205a2f.png)
 
-1.  **生成线稿分镜：** 用 Nano Banana 2 快速将文字分镜生成线稿图和提示词，十秒出图，定下整个画面的基调，以便初步预览分镜效果。
+1. 生成线稿分镜：用 Nano Banana 2 快速将文字分镜生成线稿图和提示词，十秒出图，定下整个画面的基调，以便初步预览分镜效果。
 
 ![](img/be1cefda757b54fa9501ccbe6e495530.png)
 
-1.  线稿图转真实的分镜场景：
+1. 线稿图转真实的分镜场景：
 
 ![](img/9393f95972af41bc7148fb9881f12e8f.png)
 
-1.  **后期微调&生成视频：** 用“焦点编辑”改掉桌面上不协调的杂物或者是不协调的地方，一组高质量的分镜就出来了，然后生成视频。
+1. 后期微调&生成视频：用“焦点编辑”改掉桌面上不协调的杂物或者是不协调的地方，一组高质量的分镜就出来了，然后生成视频。
 
 ![](img/76504181b154169b46c516df0f65dd0a.png)
 
-1.  成片剪辑，输出：
+1. 成片剪辑，输出：
 
 ![](img/2e2065b001b105a27492b624fccf4660.png)
 
@@ -222,23 +223,23 @@ TapNow 把专业的打光和摄影机设置做成了直观的面板，这对于�
 
 ![](img/b3847b61b2da92e75cce3265d191a3d9.png)
 
-# **04.最后的话**
+## 04.最后的话
 
 工具的进步，最终是为了让我们普通人也能轻松实现创意。
 
 TapNow 结合 Nano Banana 2，把以前高门槛的 AI 生图和后期修改变得非常实用且接地气。
 
-**为了方便大**家直接上手，**我已经把这**套创意制造机的广告宣传片的完整工作流模版，公开在了 TapTV 里。
+为了方便大家直接上手，我已经把这套创意制造机的广告宣传片的完整工作流模版，公开在了 TapTV 里。
 
-点击链接查看并复制使用：[h](https://app.tapnow.ai/home/taptv/3/214b355c-4101-41de-b249-38bb5008bd8b?tap_referral=aigccylr_gzh_20260302)ttps://app.tapnow.ai/home/taptv/3/214b355c-4101-41de-b249-38bb5008bd8b?tap_referral=aigccylr_gzh_20260302
+点击链接查看并复制使用：https://app.tapnow.ai/home/taptv/3/214b355c-4101-41de-b249-38bb5008bd8b?tap_referral=aigccylr_gzh_20260302
 
-**大家也可以到TowNow首页的****TapTV****、****模板库****查看其他优秀创作者的作品：**
+大家也可以到TapNow首页的 TapTV、模板库查看其他优秀创作者的作品：
 
 ![](img/0f04892a54805a0ad1b5411a52de8a15.png)
 
 看到合适的模板创作流，一键复用，你只需要改掉里面的核心描述词（比如把职场改成古装），就能快速地制作你自己的视频。
 
-如果你最近也被排队弄得很烦，或者想用Nano Banana 2，找个趁手的做图工具提高效率，真心建议去体验一下。
+如果你最近也被排队弄得很烦，或者想用 Nano Banana 2，找个趁手的做图工具提高效率，真心建议去体验一下。
 
 大家在实操过程中如果有不懂的地方，或者做出了满意的作品，欢迎在评论区留言交流！
 

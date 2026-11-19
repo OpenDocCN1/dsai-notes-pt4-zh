@@ -1,3 +1,4 @@
+
 # Windows美化包
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/FlhSdasSqoxc9rxQFpYcstovnWm](https://xodnytdcaw.feishu.cn/docx/FlhSdasSqoxc9rxQFpYcstovnWm)
@@ -6,11 +7,11 @@
 
 TabMark-Bookmark New Tab
 
-星愿新标签页 - Chrome 应用商店  主题包
+星愿新标签页 - Chrome 应用商店 主题包
 
 ![](img/f9bc40b088ffd98236fba738956a17b6.png)
 
-[my.tabtheme](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VpZ3b7RDQo4CbnxbZYacgduqnJ2)
+[`my.tabtheme`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VpZ3b7RDQo4CbnxbZYacgduqnJ2)
 
 ## Win主题模板
 
@@ -22,11 +23,11 @@ https://zhutix.com/tag/tubiao/?post_order=views
 
 ## 鼠标指针
 
-> 里面有3套指针皮肤，配置[InputTip](https://github.com/abgox/InputTip)使用
+> 里面有3套指针皮肤，配置[`InputTip`](https://github.com/abgox/InputTip)使用
 
 ![](img/a7ba916cae1fd0a0772e1efd63ed9554.png)
 
-[default.rar](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Um2AbPbU4o098TxDmwRcFj2Wngf)
+[`default.rar`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Um2AbPbU4o098TxDmwRcFj2Wngf)
 
 ## 资源管理器亚克力透明插件
 
@@ -34,9 +35,9 @@ https://zhutix.com/tag/tubiao/?post_order=views
 
 > https://github.com/Maplespe/ExplorerBlurMica
 
-> 下载压缩包，解压到下面路径C:\Windows\System32
+> 下载压缩包，解压到下面路径`C:\Windows\System32`
 
-> 管理员运行：register.cmd
+> 管理员运行：`register.cmd`
 
 ## 动态桌面壁纸软件
 
@@ -54,25 +55,21 @@ https://zhutix.com/tag/tubiao/?post_order=views
 
 > 借助脚本https://github.com/linsui/vlt_zh
 
-> python vlt_zh.py [vlt 文件路径或所在目录] [字体文件路径]
+> `python vlt_zh.py [vlt 文件路径或所在目录] [字体文件路径]`
 
 > 使用方法：
 
-> 1，下载vlt_zh.py  下载FusionX2_B_VLC.vlt 皮肤，这两个都放在桌面
+> 1，下载`vlt_zh.py` 下载`FusionX2_B_VLC.vlt` 皮肤，这两个都放在桌面
 
-> 下载字体[MiSans](https://hyperos.mi.com/font/zh/details/sc/)字体，安装后文件路径：C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf
+> 下载字体[`MiSans`](https://hyperos.mi.com/font/zh/details/sc/)字体，安装后文件路径：`C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf`
 
 > 2，运行脚本
 
-> python vlt_zh.py FusionX2_B_VLC.vlt "C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf"
+> `python vlt_zh.py FusionX2_B_VLC.vlt "C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf"`
 
 ## PotPlayer主题
 
 https://www.kdocs.cn/l/clmJIYpDA4mH
-
-## cmd/PowerShell美化
-
-[cmd/PowerShell美化全攻略](https://xodnytdcaw.feishu.cn/wiki/ML9MwFQ1vijfHikBc48cq9dunjc?fromScene=spaceOverview)
 
 ## ShareX截图美化
 
@@ -102,7 +99,7 @@ taskkill /f /im explorer.exe &amp; start explorer.exe   #启资源管理器
 
 ## 去除桌面图标小箭头
 
-在桌面新建 txt 文件，把以下代码复制到里面，后缀名改成bat，右键以管理员身份运行。
+在桌面新建 `txt` 文件，把以下代码复制到里面，后缀名改成`bat`，右键以管理员身份运行。
 
 ```
 reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f

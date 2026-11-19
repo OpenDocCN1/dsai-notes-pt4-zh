@@ -1,10 +1,9 @@
-# Courses-Applied LLMs Mastery 2024
-
-> 来源：[https://gotoaiworld.feishu.cn/docx/ZYxrdoMipoi0AGxEaKqcBCS9n9b](https://gotoaiworld.feishu.cn/docx/ZYxrdoMipoi0AGxEaKqcBCS9n9b)
 
 # Applied LLMs Mastery 2024
 
-# About This Course
+> 来源：[https://gotoaiworld.feishu.cn/docx/ZYxrdoMipoi0AGxEaKqcBCS9n9b](https://gotoaiworld.feishu.cn/docx/ZYxrdoMipoi0AGxEaKqcBCS9n9b)
+
+## About This Course
 
 ![](img/5c9a01011a558fc4ee48e91cac26549d.png)
 
@@ -20,35 +19,35 @@ Imagine this course as your comprehensive guide, exploring every aspect of using
 
 We've organized the content into four key pillars –
 
-+   **Fundamentals**  (Week 1)
++ Fundamentals (Week 1)
 
-+   Tools and Techniques (Weeks 2-5)
++ Tools and Techniques (Weeks 2-5)
 
-+   Deployment and Evaluation (Weeks 6-9)
++ Deployment and Evaluation (Weeks 6-9)
 
-+   Challenges and Future trends (Weeks 9-10)
++ Challenges and Future trends (Weeks 9-10)
 
 This course caters to a diverse audience, including business leaders, professionals, computer science enthusiasts, or students looking to enhance their knowledge in LLMs. While we aim to keep mathematical foundations relatively light, we'll touch on LLM architectural basics in week 11 as bonus content for those interested in delving into LLM research.
 
-# Course Format
+## Course Format
 
 To make this course accessible to a wide audience, we've designed it as a self-paced audit course. You can register for the course here and course material will be released weekly, featuring mind maps, "ETMI5: Explain to Me in 5" sections for a quick overview, relevant resources, and comprehensive content to ensure your understanding of each topic. Additionally, we'll provide research papers and distilled summaries to keep you updated on the latest research. This page serves as your central hub for all resources.
 
-Stay informed by registering for email notifications[ wheneve](https://www.linkedin.com/in/areganti/)r new content is uploaded, or follow our updates on LinkedIn. For any queries, feel free to contact the instructor at aish@levelup4all.org or on LinkedIn. At the end of each week, we'll address frequently asked questions. To maximize your learning experience, allocate 2-3 hours weekly for reading content and engaging in suggested hands-on experiments.
+Stay informed by registering for email notifications [whenever](https://www.linkedin.com/in/areganti/) new content is uploaded, or follow our updates on LinkedIn. For any queries, feel free to contact the instructor at aish@levelup4all.org or on LinkedIn. At the end of each week, we'll address frequently asked questions. To maximize your learning experience, allocate 2-3 hours weekly for reading content and engaging in suggested hands-on experiments.
 
-# Key Takeaways
+## Key Takeaways
 
-+   Understanding the practical fundamentals of LLMs, including its capabilities and limitations
++ Understanding the practical fundamentals of LLMs, including its capabilities and limitations
 
-+   Hands-on experience with end-to-end execution of LLM use cases
++ Hands-on experience with end-to-end execution of LLM use cases
 
-+   Learning best practices for exploring and evaluating the usefulness of LLMs in specific scenarios
++ Learning best practices for exploring and evaluating the usefulness of LLMs in specific scenarios
 
-+   Proficiency in integrating and comprehending new updates in LLMs, effectively fitting each piece into the larger puzzle and understanding its relevance.
++ Proficiency in integrating and comprehending new updates in LLMs, effectively fitting each piece into the larger puzzle and understanding its relevance.
 
-# Disclaimer
+## Disclaimer
 
-This course content is developed by Ais**hwar**ya Naresh Reganti. The course is offered independently, for free and is not affiliated with her professional responsibilities or employer. The content presented in this course is intended for educational purposes only and does not reflect the views or policies of any associated organizations.
+This course content is developed by Aishwarya Naresh Reganti. The course is offered independently, for free and is not affiliated with her professional responsibilities or employer. The content presented in this course is intended for educational purposes only and does not reflect the views or policies of any associated organizations.
 
 To cite this guide, use the below format:
 

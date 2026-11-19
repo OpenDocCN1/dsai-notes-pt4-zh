@@ -1,3 +1,4 @@
+
 # DeepMind“反向”搭建Transformer方法火了：由可解释程序设计AI，项目已开源
 
 > 来源：[https://agijuejin.feishu.cn/docx/IdmSdjqh5oOjPcxuxd9cQeftn0d](https://agijuejin.feishu.cn/docx/IdmSdjqh5oOjPcxuxd9cQeftn0d)
@@ -56,7 +57,7 @@ Tracr则在此基础上更进一步，不仅简单优化了原有的RASP语言�
 
 不过，基于Tracr打造的模型可能**效率**很低，因此作者们又提出了一种配套的“压缩”方法。
 
-基于案例来看，这种方法不仅能让Tracr模型更高效，而且允许将D维特征压缩到小于D维的特征空间中。
+基于案例来看，这种方法不仅能让Tracr模型更高效，而且允许将`D`维特征压缩到小于`D`维的特征空间中。
 
 例如这是基于RASP语言编写的程序示例：
 

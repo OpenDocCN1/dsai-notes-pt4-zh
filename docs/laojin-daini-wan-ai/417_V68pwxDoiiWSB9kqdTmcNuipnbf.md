@@ -1,27 +1,29 @@
+
 # Langbot
 
 > 来源：[https://my.feishu.cn/docx/Tvm4d6WRkowWO9x1QAAcqlfvnFg](https://my.feishu.cn/docx/Tvm4d6WRkowWO9x1QAAcqlfvnFg)
 
+## 克隆主仓库
+
 ```
-# 克隆主仓库
 git clone https://github.com/RockChinQ/LangBot
 cd LangBot
 ```
 
 ![](img/d0d9827d078c38e26ceb5c581645ee67.png)
 
-**构建前端**
+## 构建前端
 
 ```
-# 构建前端，需要 NodeJS &gt;= 22
+# 构建前端，需要 NodeJS >= 22
 cd web
-npm install &amp;&amp; npm run build
+npm install && npm run build
 cd ..
 ```
 
-**创建虚拟环境**
+## 创建虚拟环境
 
-在一些使用系统包管理器管理 Python 依赖的 Linux 系统上，可能会出现依赖冲突，故请使用 venv 创建虚拟环境。Windows 用户可以跳过此步骤。
+在一些使用系统包管理器管理 Python 依赖的 Linux 系统上，可能会出现依赖冲突，故请使用 `venv` 创建虚拟环境。Windows 用户可以跳过此步骤。
 
 ```
 python -m venv venv
@@ -30,7 +32,7 @@ source venv/bin/activate
 
 ![](img/512c579b29cca481b91c542580a32261.png)
 
-**安装依赖**
+## 安装依赖
 
 ```
 pip install -r requirements.txt
@@ -38,20 +40,22 @@ pip install -r requirements.txt
 
 ![](img/f1b6feda081566fbe2ee0fb6a17701bf.png)
 
-1.  运行一次主程序，生成配置文件
+## 运行主程序并生成配置文件
+
+运行一次主程序，生成配置文件：
 
 ```
 python main.py
 ```
 
-显示一下信息正常：
+显示以下信息正常：
 
 ```
 (venv) (AI) [root@VM-4-8-opencloudos LangBot]# python main.py
 
  _                   ___      _   
 | |   __ _ _ _  __ _| _ ) ___| |_ 
-| |__/ _` | &#x27; \/ _` | _ \/ _ \  _|
+| |__/ _` | ' \/ _` | _ \/ _ \  _|
 |____\__,_|_||_\__, |___/\___/\__|
                |___/              
 

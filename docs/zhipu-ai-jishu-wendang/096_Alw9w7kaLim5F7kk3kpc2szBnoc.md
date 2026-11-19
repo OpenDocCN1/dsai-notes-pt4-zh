@@ -1,10 +1,11 @@
+
 # 视频指令维度
 
 > 来源：[https://ai.feishu.cn/docx/P2zadNU2FoAZMvxFYjYcoZIFngf](https://ai.feishu.cn/docx/P2zadNU2FoAZMvxFYjYcoZIFngf)
 
 将“视频生成质量”分解为多个定义明确的维度，从不同内容信息，列出一些提示维度采样情况
 
-#### appearance_style
+## `appearance_style`
 
 Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, oil painting
 
@@ -16,169 +17,153 @@ A boat sailing leisurely along the Seine River with the Eiffel Tower in backgrou
 
 A beautiful coastal beach in spring, waves lapping on sand, surrealism style
 
-##### 解释
+### 解释
 
 描述了生成视频中场景的整体风格和美学。这些例子展示了不同风格的场景生成，如油画风格、赛博朋克风格和超现实主义风格。每个示例都准确地捕捉到了所描述的风格，呈现出特定的视觉效果。
 
-#### **color**
+## `color`
 
 a yellow car
 
 ![](img/efbce7ce74483692f5909de048bb62d6.png)
 
-[cogvideo_00027.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JijnbuY96oySrmxDnPgcfCy3ngg)
+[`cogvideo_00027.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JijnbuY96oySrmxDnPgcfCy3ngg)
 
 a yellow umbrella
 
 ![](img/151e0e86d95e6d853c71b78759e60feb.png)
 
-[cogvideo_00028.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UD4Mbny65oiFIBxNenlcET3Wn0e)
+[`cogvideo_00028.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UD4Mbny65oiFIBxNenlcET3Wn0e)
 
 a purple suitcase
 
-
-[cogvideo_00029.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QDyjbVuJtota8Px6DLxcIvnhnis)
+[`cogvideo_00029.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QDyjbVuJtota8Px6DLxcIvnhnis)
 
 a pink chair
 
 ![](img/4d7c9c6a205d2559c4380b37648bd89e.png)
 
-[cogvideo_00030.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UrMMbo8PhomvBDxTAiMc6cArnde)
+[`cogvideo_00030.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UrMMbo8PhomvBDxTAiMc6cArnde)
 
 a yellow clock
 
-
-[cogvideo_00031.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YXqibYwTboK3s0xq6F0cqMgCncc)
+[`cogvideo_00031.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YXqibYwTboK3s0xq6F0cqMgCncc)
 
 a white vase
 
+[`cogvideo_00032.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M29mbqzKyoVg8VxZ78LczlX3n9e)
 
-[cogvideo_00032.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M29mbqzKyoVg8VxZ78LczlX3n9e)
-
-##### 解释
+### 解释
 
 这一维度主要关注生成视频中的颜色表现。例如，黄色的车、黄色的雨伞、紫色的行李箱等颜色物体生成情况。模型能够很好地理解并生成所提示的颜色对象。
 
-#### human_action
+## `human_action`
 
 A person is riding a bike
 
-
-[cogvideo_00052.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BMNFbVNI0oJswDx3rDRc0zGtnrc)
+[`cogvideo_00052.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BMNFbVNI0oJswDx3rDRc0zGtnrc)
 
 A person is roller skating
 
-
-[cogvideo_00054.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H3UVbrD75oGYKfxKSkQckJminEb)
+[`cogvideo_00054.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H3UVbrD75oGYKfxKSkQckJminEb)
 
 A person is petting animal
 
-
-[cogvideo_00058.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WWzVbxi8coMQfgxGlIRcKg5UnRJ)
+[`cogvideo_00058.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WWzVbxi8coMQfgxGlIRcKg5UnRJ)
 
 A person is sweeping floor
 
-
-[cogvideo_00063.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NqJXbIg9PoCKBux31ZgcIEtsnPF)
+[`cogvideo_00063.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NqJXbIg9PoCKBux31ZgcIEtsnPF)
 
 A person is skateboarding
 
-
-[cogvideo_00064.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9O0bXWIXoMQIUxaC4PcftRmn0g)
+[`cogvideo_00064.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9O0bXWIXoMQIUxaC4PcftRmn0g)
 
 A person is skydiving
 
-
-[cogvideo_00069.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L0VTbvRVQoOa6Qx3zVocuQCjnFh)
+[`cogvideo_00069.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L0VTbvRVQoOa6Qx3zVocuQCjnFh)
 
 A person is shooting goal (soccer)
 
+[`cogvideo_00070.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SKLIb8C8qo0kTqxIEsUc8QnCn6d)
 
-[cogvideo_00070.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SKLIb8C8qo0kTqxIEsUc8QnCn6d)
-
-##### 解释
+### 解释
 
 该维度关注视频中人类动作的生成效果。包括骑自行车、滑冰、宠物动物等动作。这些例子展示了模型在生成人类活动场景时的表现，有时会因为剧烈运动而导致帧之间的连贯性出现问题。
 
-#### multiple_objects
+## `multiple_objects`
 
 a giraffe and a bird
 
 ![](img/171ed398c8b8a23c7f989774b48db098.png)
 
-[cogvideo_00077.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QXiRbcONxoC59kxvE4ZcSdJanXb)
+[`cogvideo_00077.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QXiRbcONxoC59kxvE4ZcSdJanXb)
 
-##### 解释
+### 解释
 
 多个对象生成，2b无法完成，5b模型多物体会有几率奇怪的融合，该维度评估生成视频中多个对象的表现。例如，长颈鹿与鸟共处的场景。虽然模型可以生成多个对象，但偶尔会出现对象之间奇怪的融合，导致不自然的结果。
 
-#### object_class
+## `object_class`
 
 a chair
 
-
-[cogvideo_00078.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJQEb2zFyo7rgfxc0iKc785KnMh)
+[`cogvideo_00078.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJQEb2zFyo7rgfxc0iKc785KnMh)
 
 a remote
 
-
-[cogvideo_00080.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T87jbwVfGoNcMaxVCNKcmOjanUc)
+[`cogvideo_00080.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T87jbwVfGoNcMaxVCNKcmOjanUc)
 
 a keyboard
 
-
-[cogvideo_00081.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UGaTb5QI6oK5oPxlJKXc4J8ynBd)
+[`cogvideo_00081.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UGaTb5QI6oK5oPxlJKXc4J8ynBd)
 
 a cell phone
 
+[`cogvideo_00082.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NsmAb7YuwoyhidxLvEucPIW4n5g)
 
-[cogvideo_00082.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NsmAb7YuwoyhidxLvEucPIW4n5g)
-
-##### 解释
+### 解释
 
 评估生成视频中不同类别对象的表现，如椅子、遥控器、键盘等。模型通常能够准确生成这些对象，但有时会出现意外的附加信息，例如人物持有物体的场景。
 
-#### overall_consistency
+## `overall_consistency`
 
 Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks.
 
-
-[cogvideo_00083.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PmnEbU4U2oaHDxxWGsLcV8p3nHh)
+[`cogvideo_00083.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PmnEbU4U2oaHDxxWGsLcV8p3nHh)
 
 Splash of turquoise water in extreme slow motion, alpha channel included.
 
-
-[cogvideo_00084.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdpDbGXyAoaEA7x8SDTccwPynDc)
+[`cogvideo_00084.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdpDbGXyAoaEA7x8SDTccwPynDc)
 
 An astronaut feeding ducks on a sunny afternoon, reflection from the water.
 
 ![](img/526886b19a48fad6ac575f7725856251.png)
 
-[cogvideo_00086.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LuHVbP24FoaoNzxBP8NcOjbGnHf)
+[`cogvideo_00086.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LuHVbP24FoaoNzxBP8NcOjbGnHf)
 
-##### 解释
+### 解释
 
 整体一致性关注场景的整体连贯性。生成的场景能很好地遵循提示词的描述，如雪山峡谷和慢动作水花场景，展现出准确的内容一致性。
 
-#### scene
+## `scene`
 
 kitchen
 
 ![](img/5526ba4b9d0733ea4fc5aabf7c8f7d33.png)
 
-[cogvideo_00088.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ju1ybw7djofybnx9BETcp7unnhe)
+[`cogvideo_00088.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ju1ybw7djofybnx9BETcp7unnhe)
 
 lighthouse
 
 ![](img/8ac5a8165ca3dd10a3a61296893d4a55.png)
 
-[cogvideo_00090.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I7CWbxkjwolaA3xpbQlcEtdBnrh)
+[`cogvideo_00090.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I7CWbxkjwolaA3xpbQlcEtdBnrh)
 
-##### 解释
+### 解释
 
 此维度检查特定场景的生成情况，如厨房或灯塔等。这些场景通常能够准确地捕捉到空旷的环境和符合提示词描述的内容。
 
-#### spatial_relationship
+## `spatial_relationship`
 
 a horse on the right of a sheep, front view
 
@@ -196,58 +181,58 @@ an apple on the bottom of a sandwich, front view
 
 a sandwich on the bottom of an orange, front view
 
-##### 解释
+### 解释
 
 空间关系描述了对象在场景中的空间排列。示例包括动物和物品之间的空间关系。然而，模型在处理这些空间提示词时可能会出现错误，如对象位置错位或违反物理规则。
 
-#### subject_consistency
+## `subject_consistency`
 
 a person drinking coffee in a cafe
 
 ![](img/6ae73c2c83019e904a682a4aac04599a.png)
 
-[cogvideo_00099.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HHRqbDfzWofODLxamj7coO0Dngd)
+[`cogvideo_00099.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HHRqbDfzWofODLxamj7coO0Dngd)
 
 a bicycle leaning against a tree
 
-
-[cogvideo_00100.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XreCbk3rCoriNTxx2Spc9gEpnDg)
+[`cogvideo_00100.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XreCbk3rCoriNTxx2Spc9gEpnDg)
 
 a car stuck in traffic during rush hour
 
 ![](img/0f2bf0f2da353ddf36f75767dd28c7fc.png)
 
-[cogvideo_00101.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MVmSbD23BombXNxMjPicRfB5nmd)
+[`cogvideo_00101.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MVmSbD23BombXNxMjPicRfB5nmd)
 
 a cow bending down to drink water from a river
 
 ![](img/16b791ea6605def26eebac70b1ab6c6b.png)
 
-[cogvideo_00106.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CaskbsDCZoNZHIxkfRZcr7XFnlb)
+[`cogvideo_00106.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CaskbsDCZoNZHIxkfRZcr7XFnlb)
 
-##### 解释
+### 解释
 
 主题一致性检查生成视频中不同主题的表现。例如，人在咖啡馆喝咖啡或自行车靠在树上的场景。模型通常能准确生成这些场景，但在涉及交通工具时，有时会出现帧间不连贯的情况。
 
-#### temporal_flickering
+## `temporal_flickering`
 
 In a still frame, within the desolate desert, an oasis unfolded, characterized by the stoic presence of palm trees and a motionless, glassy pool of water
 
-
-[cogvideo_00111.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMmlbPJdRoZyuSxUVjIcRR9onCH)
+[`cogvideo_00111.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMmlbPJdRoZyuSxUVjIcRR9onCH)
 
 In a still frame, in the picturesque square, a Gothic-style lamppost adorned with intricate stone carvings added a touch of medieval charm to the setting
 
 ![](img/d2cb2f17ec2174db9a5b15d7391f01c4.png)
 
-[cogvideo_00114.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/COCCbOt4WoBdsfxHUM5caxTtn2b)
+[`cogvideo_00114.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/COCCbOt4WoBdsfxHUM5caxTtn2b)
 
 In a still frame, amidst the hushed ambiance of the traditional tea room, a meticulously arranged tea set awaited, with porcelain cups, a bamboo whiskd, a weeping willow tree draped its branches gracefully over the water's surface, creating a serene tableau of reflection and calm
 
 ![](img/b9d7a7a146571d8ddebfb22ee04a52e5.png)
 
-[cogvideo_00115.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mq89b7oQGoMJiTxCrnocYKHtnnx)
+[`cogvideo_00115.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mq89b7oQGoMJiTxCrnocYKHtnnx)
 
-##### 解释
+
+
+### 解释
 
 时间闪烁性主要关注静态场景中的光照和镜头移动效果。示例包括在沙漠绿洲中的棕榈树或哥特式灯柱场景。这些场景通常光照合理，镜头平移平滑，呈现出清晰和稳定的视觉效果。

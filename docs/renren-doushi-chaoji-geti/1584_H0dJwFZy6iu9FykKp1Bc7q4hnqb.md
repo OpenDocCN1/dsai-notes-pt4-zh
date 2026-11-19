@@ -1,10 +1,9 @@
-# 2023-08-07GitHub 1.1万星，模拟软件开发流程，开源框架MetaGPT爆火
+
+# 2023-08-07 GitHub 1.1万星，模拟软件开发流程，开源框架MetaGPT爆火
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/K1y6dvekxoKwcQxJkHPcNsFCnSb](https://xuqiwei1986.feishu.cn/docx/K1y6dvekxoKwcQxJkHPcNsFCnSb)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/HHtCNvy0aruZbkJ4Bhk0Gw)q.com/s/HHtCNvy0...
-
->
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/HHtCNvy0aruZbkJ4Bhk0Gw)q.com/s/HHtCNvy0...
 
 机器之心 2023-08-07 12:58 发表于 北京
 
@@ -22,13 +21,13 @@
 
 ![](img/b0cec782d151d9c180078559df6dc818.png)
 
-项目地址：https://github.com/geekan/MetaGPT
+项目地址：`https://github.com/geekan/MetaGPT`
 
 简单来说，MetaGPT 让多智能体的协作过程模拟软件开发公司的工作流程，这就需要为每个智能体分配角色，并规划智能体的协作过程。软件开发公司的人员分配情况通常如下图所示：
 
 ![](img/90618741815c6c02f1a92d5571eaf9f7.png)
 
-具体来说，MetaGPT 首先将标准化操作程序 (SOP) 编码到 prompt 中，使得多个智能体的协作过程结构化。然后，研究团队进一步让输出模块化，赋予智能体与人类工作者相当的领域专业知识，以验证输出并减少复合错误。
+具体来说，MetaGPT 首先将标准化操作程序 (SOP) 编码到 `prompt` 中，使得多个智能体的协作过程结构化。然后，研究团队进一步让输出模块化，赋予智能体与人类工作者相当的领域专业知识，以验证输出并减少复合错误。
 
 通过这种方式，MetaGPT 以工作流水线的形式为各个智能体分配了不同的角色，进而建立了一个能够有效、凝聚地解构复杂多智能体协作问题的框架。
 
@@ -68,7 +67,7 @@ MetaGPT 会收到用户输入的需求，就会有智能体作为产品经理进
 
 ![](img/52adfc66e0789a60897f1d8cd41a5d38.png)
 
-论文地址：https://arxiv.org/pdf/2308.00352.pdf
+论文地址：`https://arxiv.org/pdf/2308.00352.pdf`
 
 感兴趣的读者可以阅读论文，了解更多研究内容。
 

@@ -1,3 +1,4 @@
+
 # 最强AI浏览器Fellou来啦
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/UAS8dxSkUozyE8xnln7cms85nlg](https://xatc0v8uz5m.feishu.cn/docx/UAS8dxSkUozyE8xnln7cms85nlg)
@@ -10,7 +11,7 @@
 
 什么是fellou ai 浏览器
 
-https://fellou.ai/
+`https://fellou.ai/`
 
 和传统浏览器有什么区别
 
@@ -38,9 +39,7 @@ https://fellou.ai/
 
 ![](img/b8b2695226170a7351d7580e2f798587.png)
 
-会卡在某个节点当中，并且一直循环，没有办法得很好理解，
-
-在我以为它会失败的时候，它最后完成了这个任务。
+会卡在某个节点当中，并且一直循环，没有办法得很好理解，在我以为它会失败的时候，它最后完成了这个任务。
 
 ![](img/5759048f8129d2ec2813e95c76f6b2c9.png)
 
@@ -68,4 +67,4 @@ https://fellou.ai/
 
 测试展示
 
-https://chat.fellou.ai/report/cd119f0b-2056-4818-917f-46169aa8c109
+`https://chat.fellou.ai/report/cd119f0b-2056-4818-917f-46169aa8c109`

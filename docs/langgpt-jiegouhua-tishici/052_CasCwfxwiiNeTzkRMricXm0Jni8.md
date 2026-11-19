@@ -1,3 +1,4 @@
+
 # 第三期：用AI找工作 - 小小 Offer ，拿捏
 
 > 来源：[https://langgptai.feishu.cn/docx/OQ0vdSgyQotXT0xr4VbcGoTwndb](https://langgptai.feishu.cn/docx/OQ0vdSgyQotXT0xr4VbcGoTwndb)
@@ -136,6 +137,5 @@
 ![](img/f966a1f177806f1ee8072e5469d07ea8.png)
 
 ![](img/ad105869db205da9dcf939c3560ef3bc.png)
-
 
 ![](img/56a042e6c1072a39d52ffda42607c8fa.png)

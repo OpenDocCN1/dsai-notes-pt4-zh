@@ -1,3 +1,4 @@
+
 # 7.30 无需开颅！瘫痪患者也能控制数字设备了
 
 > 来源：[https://agijuejin.feishu.cn/docx/JpaTdvNM1oAphbxEYY2cSxBtntg](https://agijuejin.feishu.cn/docx/JpaTdvNM1oAphbxEYY2cSxBtntg)

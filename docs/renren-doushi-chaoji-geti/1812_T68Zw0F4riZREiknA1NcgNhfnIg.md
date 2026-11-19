@@ -1,8 +1,9 @@
+
 # 🔥Stable diffusion进阶
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/TqICdbJeSo3O3BxZWxPcV0Kknke](https://xuqiwei1986.feishu.cn/docx/TqICdbJeSo3O3BxZWxPcV0Kknke)
 
-# 目录
+## 目录
 
 | 日期 | 教程 |
 | --- | --- |
@@ -29,7 +30,7 @@
 | 2023-08-30 | [Stable Diffusion采样器：超详细入门指南](https://xuqiwei1986.feishu.cn/wiki/KgjYwUuQ5iJzcKkjPT0cq5OQn5e) |
 | 2023-08-25 | [《流量密码！AI幻术终极教程，3步做出百万爆款视频！》](https://xuqiwei1986.feishu.cn/wiki/AZCzwR2yLi6u0WkraWmcPKjtnjb) |
 | 2023-08-24 | [「换脸教程」写真自由！终于实现用lora换脸啦～MJ、SD以及lora的换脸教程整合版](https://xuqiwei1986.feishu.cn/wiki/CbKHwoQoli9Qc4kSyyXcPW7Kn9d) |
-| 2023-08-24 | [2023-08-24&quot;妙鸭相机&quot;开源版facechain本地部署详细教程（windows系统）](https://xuqiwei1986.feishu.cn/wiki/GyTYww9iliqoZVkUs2gc4eKknQh) |
+| 2023-08-24 | [2023-08-24"妙鸭相机"开源版facechain本地部署详细教程（windows系统）](https://xuqiwei1986.feishu.cn/wiki/GyTYww9iliqoZVkUs2gc4eKknQh) |
 | 2023-08-22 | [2023-08-22Stable Diffusion一周年：这份扩散模型编年简史值得拥有](https://xuqiwei1986.feishu.cn/wiki/SAXiwIrAAiyf0Gk1iJ1c38SVnuc) |
 | 2023-08-22 | [2023-08-21简单三步！教你用SD制作隐藏定位点的艺术二维码！ 副本](https://xuqiwei1986.feishu.cn/wiki/ZeL7wGiUAiGSWKkiGqpcaRB5njf) |
 | 2023-08-20 | [2023-08-20爆火「视频版ControlNet」开源了！靠提示词精准换画风，全华人团队出品](https://xuqiwei1986.feishu.cn/wiki/E4vJw4P3Yiwev2k0tndc6Rg5nYe) |
@@ -43,8 +44,8 @@
 | 2023-07-25 | [SD 艺术字实战：小赚几百块](https://xuqiwei1986.feishu.cn/wiki/V8CawV4yxiXWbBke08VcEPmSnCh) |
 | 2023-07-22 | [在用了两个云平台后，终于决定在Mac上部署Stable Diffusion了！（保姆级教程，含踩坑点）](https://zngu6uo6q3.feishu.cn/docx/BjUHdfj6yo8LwxxbYpAceRTlnde) |
 | 2023-07-15 | [2023-07-15手把手教你用 SD 生成文字形状的光线，用来做营销宣传图非常有效](https://xuqiwei1986.feishu.cn/wiki/UZlAwXmCWiMeX2kvvrocjX5WnQd) |
-| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &amp;优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
-| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &amp;优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
+| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
+| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
 | 2023-07-11 | [《爆肝7天！AI创意字终极攻略，光影、隐藏、嵌入、海报4种创意字全拆解！》](https://xuqiwei1986.feishu.cn/wiki/HRrjwD2Fpi3HM4k9gFPcWT6dnIu) |
 | 2023-07-10 | [【技术向】一文讲透如何用SD制作出来高质量艺术二维码](https://xuqiwei1986.feishu.cn/wiki/JU2OwyoX6i5uajkrFUJc3Ogunxc) |
 | 2023-07-09 | [2023-07-09SD零基础，4天做赛博机车项目变现1000+，有什么启示？](https://xuqiwei1986.feishu.cn/wiki/X7eKwFJsiiBcMhkb9iPc9EQYndd) |
@@ -68,12 +69,10 @@
 | 2023-05-21 | [《瞬息全宇宙——穿越之旅终极教程》](https://xuqiwei1986.feishu.cn/wiki/RbaiwC6ZZiCZaVkfGPYcuEBBnpd) |
 | 2023-04-21 | [《Stable Diffusion终极宝典》](https://xuqiwei1986.feishu.cn/wiki/L6vuwRyufi3XaxkLhTXcBFvQnMd) |
 
-#
-
-2023-05-21SD基础：AI绘图零基础纯入门式教学
+### 2023-05-21 SD基础：AI绘图零基础纯入门式教学
 
 <https://player.bilibili.com/player.html?bvid=1hk4y1s79b&spm_id_from=333.337.search-card.all.click&vd_source=16f270683e0208432809f3715adeacf6>
 
-2023-04-24【Diffusion】3小时入门到精通
+### 2023-04-24【Diffusion】3小时入门到精通
 
 <https://player.bilibili.com/player.html?bvid=1Qz4y1a7dH&spm_id_from=333.337.search-card.all.click&vd_source=16f270683e0208432809f3715adeacf6>

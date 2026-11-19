@@ -1,3 +1,4 @@
+
 # AI实践：2小时带你使用 coze+windsurf 打造一个网站内容提取谷歌插件
 
 > 来源：[https://agijuejin.feishu.cn/docx/UJDodFN6XoJiySxOy9tcrFSZn6b](https://agijuejin.feishu.cn/docx/UJDodFN6XoJiySxOy9tcrFSZn6b)
@@ -20,7 +21,7 @@
 
 这段时间 marscode、cursor、windsurf 等多款 AI 代码生成工具如火如荼，看了很多小伙伴的实践，可能我也可以做一款工具来改善现状，于是边查边学，就有了今天这个创意————谷歌网址内容总结插件。
 
-当我真正开始做这个插件，才发现，AI 最近的进步已经开始超越了我的想象，实现的过程的简单程度也超出了我的想象。对于外行小白来说，AI 的入门门槛还是很高的，特别是神经网络模型方面，自我体验下来有几分困难。后面转变了想法，做不了AI的推动者，可以做AI的实践者、应用者。
+当我真正开始做这个插件，才发现，AI 最近的进步已经开始超越了我的想象，实现的过程的简单程度也超出了我的想象。对于外行小白来说，AI 的入门门槛还是很高，特别是神经网络模型方面，自我体验下来有几分困难。后面转变了想法，做不了AI的推动者，可以做AI的实践者、应用者。
 
 大家可以跟我一起体验一下用 coze 和 windsurf 做一个谷歌的插件有多简单和快乐（当时自己做这个插件的时候，大约是从晚上11点到凌晨1点左右，2个小时时间，就实现了核心功能）
 
@@ -48,45 +49,45 @@
 
 上文说过工作流的搭建过程可以粗略的理解为面向过程的思想，那么实现一个内容提取的工作流，你会想到哪些步骤：
 
-1.  获取网址，网址作为工作流的输入
+1. 获取网址，网址作为工作流的输入
 
-1.  根据网址获取网站内容
+1. 根据网址获取网站内容
 
-1.  对内容进行总结
+1. 对内容进行总结
 
-1.  输出内容
+1. 输出内容
 
 没错，就是这么简单的四步，那么咱们一步一步的开始，搭建工作流：
 
 ### 配置输入节点
 
-配置一下输入的参数为 article_url，当然这个字段自由发挥，不用非按照我的，配置效果如下：
+配置一下输入的参数为 `article_url`，当然这个字段自由发挥，不用非按照我的，配置效果如下：
 
 ![](img/44ebf6e644f987a22020be0e9e685642.png)
 
 ### 获取网址内容
 
-在以往，根据网址获取内容要通过爬虫等一些方式来实现，但是在 coze 中，只需要打开插件就可以看到一个链接读取的 LinkReaderPlugin，添加到工作流中，同时将输入节点和 Link 节点进行连线。
+在以往，根据网址获取内容要通过爬虫等一些方式来实现，但是在 coze 中，只需要打开插件就可以看到一个链接读取的 `LinkReaderPlugin`，添加到工作流中，同时将输入节点和 `Link` 节点进行连线。
 
-点击Link节点，需要配置输入的参数，参数值有两种声明方式，引用指使用前面节点的输出值，输入则指直接输入固定值。skip_cache 代表是否跳过缓存，为了token考虑，设置为 false，不跳过，避免反复总结，浪费token；url 使用输入节点传入的article_url字段。
+点击`Link`节点，需要配置输入的参数，参数值有两种声明方式，引用指使用前面节点的输出值，输入则指直接输入固定值。`skip_cache` 代表是否跳过缓存，为了token考虑，设置为 false，不跳过，避免反复总结，浪费token；`url` 使用输入节点传入的`article_url`字段。
 
 ### 内容总结
 
 内容总结，就需要大模型节点出手了，点击左侧引入大模型节点，大模型节点可配置项比较多，这里粗略的讲一下:
 
-+   模型：coze提供的大模型还是较多的，有豆包系列、k**imi系列、通义、智**谱等等，这里我选择了豆包-pro 32k模型
++ 模型：coze提供的大模型还是较多的，有豆包系列、kimi系列、通义、智谱等等，这里我选择了豆包-pro 32k模型
 
-+   输入：大模型接受的输入值，这里配置 Link 节点data中的content即可
++ 输入：大模型接受的输入值，这里配置 `Link` 节点`data`中的`content`即可
 
-+   系统提示词：可以理解为cos，你想让大模型cos什么行为，就写明什么，书写逻辑一般是：
++ 系统提示词：可以理解为cos，你想让大模型cos什么行为，就写明什么，书写逻辑一般是:
 
-+   身份：您是一个xxx，能够xxx
++ 身份：您是一个xxx，能够xxx
 
-+   任务：把 xxx 转变成 xxx
++ 任务：把 xxx 转变成 xxx
 
-+   结果：得到 xxx
++ 结果：得到 xxx
 
-+   输出：规定大模型输出的内容，这里大模型会根据描述将相应的内容映射到撰写的变量中
++ 输出：规定大模型输出的内容，这里大模型会根据描述将相应的内容映射到撰写的变量中
 
 ### 输出内容
 
@@ -142,33 +143,31 @@
 
 ![](img/5f57e64c7cf544b12678737c9c174936.png)
 
-**Step2**: 指令：在popup.html中我需要有一个按钮，点击可以获取到当前url，生成代码如下
+**Step2**: 指令：在`popup.html`中我需要有一个按钮，点击可以获取到当前`url`，生成代码如下
 
-+   html
- 代码解读
-复制代码
++ html
+
+```html
 <!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <title>My Extension</title>    <script>        document.addEventListener('DOMContentLoaded', function() {            document.getElementById('getUrlButton').addEventListener('click', function() {                chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {                    var currentTab = tabs[0];                    alert('Current URL: 'currentTab.url);                });            });        });    </script></head><body>    <h1>Hello, Chrome Extension!</h1>    <button id="getUrlButton">Get Current URL</button></body></html>
-
-还指出 manifest.json 中需要开启 tabs 权限。
-
 ```
-json
- 代码解读
-复制代码
-{  &quot;manifest_version&quot;: 3,  &quot;name&quot;: &quot;My Chrome Extension&quot;,  &quot;version&quot;: &quot;1.0&quot;,  &quot;description&quot;: &quot;A simple Chrome extension example.&quot;,  &quot;action&quot;: {    &quot;default_popup&quot;: &quot;popup.html&quot;,    &quot;default_icon&quot;: &quot;icon.png&quot;  },  &quot;permissions&quot;: [&quot;tabs&quot;]}
+
+还指出 `manifest.json` 中需要开启 `tabs` 权限。
+
+```json
+{  "manifest_version": 3,  "name": "My Chrome Extension",  "version": "1.0",  "description": "A simple Chrome extension example.",  "action": {    "default_popup": "popup.html",    "default_icon": "icon.png"  },  "permissions": ["tabs"]}
 ```
 
 **Step3**: 发送请求，coze API 文档中提供的请求案例，并不是前端的常用方式，借助 windsurf 将其转变成 js 代码块等功能进行组合
 
 ![](img/5649cee35678252e8bb6abdb627d9442.png)
 
-可**以发现 windsur**f 不给给出了请求的方法，还帮写了事件的触发方法。但此时需要注意一个问题，coze 工作流中的输入为 article_url，注意请求时传的参数与之相同。
+可以发现 windsurf 不给给出了请求的方法，还帮写了事件的触发方法。但此时需要注意一个问题，coze 工作流中的输入为 `article_url`，注意请求时传的参数与之相同。
 
 ![](img/033081edbf69164f593ed982734c911c.png)
 
 **Step4**: 使用 chrome 加载当前插件
 
-由于 windsurf 生成的 js 文件内嵌在 popup.html 中，此时引入后，点击图标会抛出一个错误：
+由于 windsurf 生成的 js 文件内嵌在 `popup.html` 中，此时引入后，点击图标会抛出一个错误：
 
 ![](img/64883921638acc8869f610621288accd.png)
 
@@ -188,7 +187,7 @@ json
 
 ## 总结
 
-从头到尾大致耗费了两个小时左右，当然最后实现的插件还有很大的优化空间，但是基础的功能需求是实现了的，通过这个插件，可以较为快速的筛选和阅读文章。
+从头到尾大致耗费了两个小时左右，当然最后实现的插件还有很大的优化空间，但是基础的功能需求是实现的，通过这个插件，可以较为快速的筛选和阅读文章。
 
 这个过程中，也学会了很多，对于当下的 AI 时代，做一些以往看起来非常困难的程序并不难，感觉应了那句话：种一棵树的最好时间是十年前，其次是现在。还有一个比较关键的点，从来没有开发过谷歌插件，但是借助 windsurf，比较迅速和成功的实现了一个可用的谷歌插件。
 
@@ -196,10 +195,10 @@ json
 
 下面总结一下本次插件搭建的一些新的收获：
 
-1.  coze 工作流搭建其实并不高大上，也没有想象中那么困难，只要提前的理清步骤，每个步骤使用相应的节点，就可以搭建起一些较为简单的工作流。
+1. coze 工作流搭建其实并不高大上，也没有想象中那么困难，只要提前的理清步骤，每个步骤使用相应的节点，就可以搭建起一些较为简单的工作流。
 
-1.  在文本内容处理方面，coze 工作流可以成为日常开发应用的服务端，通过 coze api 来实现一些复杂逻辑。
+1. 在文本内容处理方面，coze 工作流可以成为日常开发应用的服务端，通过 coze api 来实现一些复杂逻辑。
 
-1.  要精进提示词的编写能力，有几个要点：清晰、具体、多学习套路。
+1. 要精进提示词的编写能力，有几个要点：清晰、具体、多学习套路。
 
-1.  AI 编程助手的能力有点超乎想象，有什么想法理清思路后，感觉可以很快的实现。
+1. AI 编程助手的能力有点超乎想象，有什么想法理清思路后，感觉可以很快的实现。

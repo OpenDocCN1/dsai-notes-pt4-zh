@@ -1,3 +1,4 @@
+
 # 谁是视觉推理 AI 之王？一场游戏，横评 5 大顶流模型
 
 > 来源：[https://chatmemo.feishu.cn/docx/BvnidlTBBoirFExy7lPchURVnHc](https://chatmemo.feishu.cn/docx/BvnidlTBBoirFExy7lPchURVnHc)
@@ -44,8 +45,6 @@
 
 ![](img/38ead725f00d74ca0f7300163c846474.png)
 
----
-
 ## 简单介绍「AI 网络迷踪」赛制
 
 本次比赛的参赛选手如下：
@@ -62,11 +61,11 @@
 
 **比赛规则很简单：**
 
-1.  共 5 道题目，每题提供同一位置 2 张不同的拍摄方向的照片（题源：图寻-每日挑战-全球 04/20）
+1. 共 5 道题目，每题提供同一位置 2 张不同的拍摄方向的照片（题源：图寻-每日挑战-全球 04/20）
 
 ![](img/9ec97761f582eb0af7785b6aeb3c25d8.png)
 
-1.  通过统一的比赛 Prompt，要求 AI 给出它认为最可能的经纬度坐标
+2. 通过统一的比赛 Prompt，要求 AI 给出它认为最可能的经纬度坐标
 
 ```
 你正在参与地图迷踪比赛，不准联网。
@@ -75,9 +74,7 @@
 使用中文回答。
 ```
 
-1.  每一题均在地图上标注出所有 AI 的猜测点和实际位置，距离越近，排名越高
-
----
+3. 每一题均在地图上标注出所有 AI 的猜测点和实际位置，距离越近，排名越高
 
 ## 第一轮：某热带地区
 
@@ -127,8 +124,6 @@ Doubao-1.5-thinking-pro：
 | 4 | Doubao-1.5-thinking-pro |
 |  | QVQ-Max |
 
----
-
 ## 第二轮：有俄文名称的工厂
 
 ![](img/31dbb92270c2c56fc286e3155c002a5c.png)
@@ -147,7 +142,7 @@ Doubao-1.5-thinking-pro：
 
 实际位置约在：44.727172, 37.823414，可在 Google 地图查看街景
 
-**特别的，ChatGPT-o3 **在本次推理过程中，对图像进行了多次“缩放再识别”，类似人类识别图像细节的过程，“当整张图像看不出足够的信息时，通过放大图像，来加强对某个特征区域的细节识别”。
+**特别的，ChatGPT-o3** 在本次推理过程中，对图像进行了多次“缩放再识别”，类似人类识别图像细节的过程，“当整张图像看不出足够的信息时，通过放大图像，来加强对某个特征区域的细节识别”。
 
 想来这种视觉推理方式，大概率会成为各家模型的共识。
 
@@ -162,8 +157,6 @@ Doubao-1.5-thinking-pro：
 | 3 | QVQ-Max |
 | 4 | Claude-3.7-sonnet-thinking |
 | 5 | Doubao-1.5-thinking-pro |
-
----
 
 ## 第三轮：某海边公路
 
@@ -188,8 +181,6 @@ Doubao-1.5-thinking-pro：
 | 3 | Doubao-1.5-thinking-pro |
 | 4 | QVQ-Max |
 | 5 | Claude-3.7-sonnet-thinking |
-
----
 
 ## 第四轮：零售园区
 
@@ -225,8 +216,6 @@ ChatGPT 和 Gemini 表现的都很“本地人”，不过 Gemini 这次更胜�
 | 4 | Doubao-1.5-thinking-pro |
 | 5 | Claude-3.7-sonnet-thinking |
 
----
-
 ## 第五轮：干燥丘陵
 
 ![](img/e0ffecde82a85e6712f01e71e8b6b544.png)
@@ -255,8 +244,6 @@ ChatGPT 和 Gemini 表现的都很“本地人”，不过 Gemini 这次更胜�
 | 4 | Claude-3.7-sonnet-thinking |
 | 5 | Doubao-1.5-thinking-pro |
 
----
-
 ## 比赛结果
 
 统计 5 轮比赛结果，平均排名就是最终成绩：
@@ -276,8 +263,6 @@ ChatGPT 和 Gemini 表现的都很“本地人”，不过 Gemini 这次更胜�
 +   阿里云的 **QVQ** 整体表现也挺稳定；还识别出了只有 ChatGPT 通过放大才识别出来的 logo。另外，作为本次参赛模型中唯一有开源习惯的 Qwen 系列模型，还可以期待后续 Max 版本的开源
 
 +   Btw：其实没想到 Claude 3.7 sonnet thinking 在「AI 网络迷踪」中表现会这么不如意
-
----
 
 ## 小结：
 
@@ -301,9 +286,7 @@ ChatGPT 和 Gemini 表现的都很“本地人”，不过 Gemini 这次更胜�
 
 Now，Big Brother is watching you.
 
----
-
-**如果觉得这篇文章对你有启**发或帮助，欢迎点赞、在看、转发分享，让更多热爱 AI 的朋友能够受益。
+**如果觉得这篇文章对你有启发或帮助，欢迎点赞、在看、转发分享，让更多热爱 AI 的朋友能够受益。**
 
 也期待在评论区看到你的实践和思考。
 

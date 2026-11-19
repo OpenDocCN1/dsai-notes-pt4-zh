@@ -1,118 +1,96 @@
+
 # Task1：配套提交模板-星火AI自动翻译机
 
-> 来源：[https://datawhaler.feishu.cn/docx/N9sfdcg8Po2TX9xiaTpcHrD9nof](https://datawhaler.feishu.cn/docx/N9sfdcg8Po2TX9xiaTpcHrD9nof)
+> 来源：https://datawhaler.feishu.cn/docx/N9sfdcg8Po2TX9xiaTpcHrD9nof
 
 > 教程创作者说：
 
-> 本文档**是「星火杯」赛事提交模板**，需制作为zip压缩包，并命名为【队长名-团队名-作品名】.zip，包含提交必备素材如下：
+> 本文档是「星火杯」赛事提交模板，需制作为zip压缩包，并命名为【队长名-团队名-作品名】.zip，包含提交必备素材如下：
 
-1.  **01-参赛信息.docx**：参考
+1. `01-参赛信息.docx`：参考
 
 ![](img/41b2c003cdd7050e73f643b4997530ea.png)
 
 [01-参赛信息.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5qabbzBpobhiAxbP6CcO6m9nm9)
 
-1.  02-应用方案.pdf/pptx：项目背景、项目阐述、产品功能、技术方案、运行效果、迭代计划、应用价值、商业模式及团队介绍等，可参考 02-应用方案.pdf/pptx
+1. `02-应用方案.pdf/pptx`：项目背景、项目阐述、产品功能、技术方案、运行效果、迭代计划、应用价值、商业模式及团队介绍等，可参考 `02-应用方案.pdf/pptx`
 
-1.  03-演示材料.docx/pdf/pptx：产品demo/链接及使用说明、演示视频
+1. `03-演示材料.docx/pdf/pptx`：产品demo/链接及使用说明、演示视频
 
-1.  **04-项目代码.zip**：项目代码的合集压缩包
+1. `04-项目代码.zip`：项目代码的合集压缩包
 
-> 核心文字内容均由**讯飞星火大模型**辅助生成，结合人工调整。
+> 核心文字内容均由讯飞星火大模型辅助生成，结合人工调整。
 
 > 模型地址：https://xinghuo.xfyun.cn/
 
-# **01-参赛信息.docx**
+## 01-参赛信息.docx
 
 ![](img/8643a2119aa4e1ef6b75490e0aac8d79.png)
 
 [01-参赛信息.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PfiZbA6LXoP3HXxutxcc1PPAnoe)
 
-# 02-应用方案.pdf/pptx
+## 02-应用方案.pdf/pptx
 
-## 项目背景
+### 项目背景
 
 > Prompt: 我想使用大模型开发一个自动翻译机应用。请你从为产品应用背景、目标用户群体、产品特点、应用场景4个方向为我梳理一个产品应用背景
 
 在全球化的今天，跨语言交流变得日益频繁，无论是跨国公司的内部沟通、国际贸易、国际旅游，还是网络信息的获取与分享，语言障碍都是一个不可忽视的问题。现有的自动翻译工具虽然在一定程度上缓解了这个问题，但在准确性、语境理解和文化适应性等方面仍有不足。因此，市场迫切需要一种更智能、更精准、更能理解复杂语境和文化差异的自动翻译解决方案。
 
-**目标用户群体**：
+目标用户群体：
 
-1.  **国际商务人士：**需要处理多语种文件和实时通讯。
+1. 国际商务人士：需要处理多语种文件和实时通讯。
+2. 跨国旅行者：在国外旅行时需要克服语言障碍。
+3. 在线内容创作者：希望作品能被不同语言的观众理解。
+4. 学术研究人员：需要阅读和撰写多语种的学术论文。
+5. 国际新闻和媒体机构：快速准确地翻译新闻报道。
+6. 语言学习者：希望通过翻译工具辅助学习和理解新语言。
 
-1.  **跨国旅行者：**在国外旅行时需要克服语言障碍。
+产品特点：
 
-1.  **在线内容创作者：**希望作品能被不同语言的观众理解。
+1. 高级语言模型：利用最新的大型神经网络模型，提供更准确的语言理解和生成能力。
+2. 语境适应性：能够根据不同的交流场景和专业领域调整翻译策略。
+3. 文化元素融合：在翻译中融入文化背景知识，确保翻译的文化适宜性。
+4. 实时交互翻译：支持语音和文字的即时翻译，适用于会议通讯和日常对话。
+5. 个性化定制：用户可以根据自己的需求定制翻译偏好，如术语使用、风格选择等。
 
-1.  **学术研究人员：**需要阅读和撰写多语种的学术论文。
+应用场景：
 
-1.  **国际新闻和媒体机构：**快速准确地翻译新闻报道。
+1. 国际会议：实时翻译演讲内容，提供字幕和语音翻译服务。
+2. 跨国协作：帮助企业员工克服语言障碍，顺畅地进行文件共享和讨论。
+3. 旅游导航：为旅行者提供实时的语音翻译，帮助他们与当地人交流。
+4. 内容本地化：帮助内容创作者将作品翻译成多种语言，扩大受众范围。
+5. 学术研究：提供专业术语准确的学术文献翻译，促进国际学术交流。
+6. 语言学习辅助：为学习者提供准确的单词和短语翻译，以及发音指导。
 
-1.  **语言学习者：**希望通过翻译工具辅助学习和理解新语言。
-
-**产品特点**：
-
-1.  **高级语言模型**：利用最新的大型神经网络模型，提供更准确的语言理解和生成能力。
-
-1.  **语境适应性**：能够根据不同的交流场景和专业领域调整翻译策略。
-
-1.  **文化元素融合**：在翻译中融入文化背景知识，确保翻译的文化适宜性。
-
-1.  **实时交互翻译**：支持语音和文字的即时翻译，适用于会议通讯和日常对话。
-
-1.  **个性化定制**：用户可以根据自己的需求定制翻译偏好，如术语使用、风格选择等。
-
-**应用场景**：
-
-1.  **国际会议：**实时翻译演讲内容，提供字幕和语音翻译服务。
-
-1.  **跨国协作：**帮助企业员工克服语言障碍，顺畅地进行文件共享和讨论。
-
-1.  **旅游导航：**为旅行者提供实时的语音翻译，帮助他们与当地人交流。
-
-1.  **内容本地化：**帮助内容创作者将作品翻译成多种语言，扩大受众范围。
-
-1.  **学术研究：**提供专业术语准确的学术文献翻译，促进国际学术交流。
-
-1.  **语言学习辅助：**为学习者提供准确的单词和短语翻译，以及发音指导。
-
-## 项目阐述
+### 项目阐述
 
 > Prompt: 目前我构思的想法有：多语言翻译中文、中文翻译多语言、待语言自动识别、外语语音播报、语音翻译转换。请结合我的想法，帮我构思产品功能和产品应用价值。
 
-### 产品功能
+#### 产品功能
 
-1.  **多语言翻译中文**：用户可以选择任意语言输入（文本或语音），系统自动翻译成中文。
+1. 多语言翻译中文：用户可以选择任意语言输入（文本或语音），系统自动翻译成中文。
+2. 中文翻译多语言：用户可以输入中文（文本或语音），系统自动翻译成用户选择的目标语言。
+3. 待语言自动识别：系统能够自动识别输入语言，无需用户手动选择源语言，提高使用便捷性。
+4. 外语语音播报：翻译后的文本可以由系统以自然的外语语音进行播报，帮助用户更好地理解和学习发音。
+5. 语音翻译转换：用户可以通过语音输入进行翻译，系统提供文本和语音输出，方便在各种环境下使用。
 
-1.  **中文翻译多语言**：用户可以输入中文（文本或语音），系统自动翻译成用户选择的目标语言。
+#### 应用价值
 
-1.  **待语言自动识别**：系统能够自动识别输入语言，无需用户手动选择源语言，提高使用便捷性。
+1. 促进国际交流：无论是商务、教育还是旅行，用户都能够通过该产品与不同语言的人顺畅交流。
+2. 提升学习效率：语言学习者可以通过即时翻译和语音播报功能，更快地掌握新单词和短语的正确发音和使用场景。
+3. 增强用户体验：自动语言识别减少了用户操作的复杂性，提高了产品的易用性，使得用户能够更加专注于交流本身。
+4. 支持多元文化内容消费：内容创作者可以使用该产品将作品翻译成多语言，扩大受众范围，而用户可以轻松消费来自不同文化的内容。
+5. 适应多种使用场景：无论是需要安静的图书馆、嘈杂的街头，还是网络不佳的地区，用户都可以通过不同的功能获得所需的翻译服务。
+6. 提供个性化服务：随着使用，产品可以学习用户的翻译偏好和习惯，提供更加个性化的翻译建议和设置。
 
-1.  **外语语音播报**：翻译后的文本可以由系统以自然的外语语音进行播报，帮助用户更好地理解和学习发音。
-
-1.  **语音翻译转换**：用户可以通过语音输入进行翻译，系统提供文本和语音输出，方便在各种环境下使用。
-
-### 应用价值
-
-1.  **促进国际交流**：无论是商务、教育还是旅行，用户都能够通过该产品与不同语言的人顺畅交流。
-
-1.  **提升学习效率**：语言学习者可以通过即时翻译和语音播报功能，更快地掌握新单词和短语的正确发音和使用场景。
-
-1.  **增强用户体验**：自动语言识别减少了用户操作的复杂性，提高了产品的易用性，使得用户能够更加专注于交流本身。
-
-1.  **支持多元文化内容消费**：内容创作者可以使用该产品将作品翻译成多语言，扩大受众范围，而用户可以轻松消费来自不同文化的内容。
-
-1.  **适应多种使用场景**：无论是需要安静的图书馆、嘈杂的街头，还是网络不佳的地区，用户都可以通过不同的功能获得所需的翻译服务。
-
-1.  **提供个性化服务**：随着使用，产品可以学习用户的翻译偏好和习惯，提供更加个性化的翻译建议和设置。
-
-## 技术方案
+### 技术方案
 
 下面为本baseline的基础技术架构。考虑到baseline过渡复杂会对增大部分同学学习的难度。所以当前只开发实线部分，虚线（多模态）部分将夏令营中期升级提供。
 
 PS：实线为当前已开源的基础内容，虚线为中期开源的多模态内容
 
-### 项目代码详见
+#### 项目代码详见
 
 ```
 #!/usr/bin/env python
@@ -132,8 +110,8 @@ from loguru import logger
 
 class ChatModel():
     def __init__(self, app_id: str, app_key: str, app_secret: str, stream: bool = False,
-                 domain: str = &#x27;generalv3.5&#x27;, model_url: str = &#x27;wss://spark-api.xf-yun.com/v3.5/chat&#x27;):
-        &#x27;&#x27;&#x27;
+                 domain: str = 'generalv3.5', model_url: str = 'wss://spark-api.xf-yun.com/v3.5/chat'):
+        '''
         api密钥查看地址：https://console.xfyun.cn/services/bm35
         :param app_id: app id
         :param app_key: app key
@@ -141,7 +119,7 @@ class ChatModel():
         :param domain: 调用模型
         :param llm_url: 模型地址
         :param stream: 是否启用流式调用
-        &#x27;&#x27;&#x27;
+        '''
         self.spark = ChatSparkLLM(
             spark_api_url=model_url,
             spark_app_id=app_id,
@@ -152,68 +130,68 @@ class ChatModel():
         )
         self.stream = stream
 
-    def generate(self, msgs: str | List[ChatMessage]) -&gt; str:
-        &#x27;&#x27;&#x27;
+    def generate(self, msgs: str | List[ChatMessage]) -> str:
+        '''
         批式调用
         :param msgs: 发送消息，接收字符串或列表形式的消息
         :return:
-        &#x27;&#x27;&#x27;
+        '''
         if self.stream is True:
-            raise Exception(&#x27;模型初始化为流式输出，请调用generate_stream方法&#x27;)
+            raise Exception('模型初始化为流式输出，请调用generate_stream方法')
 
         messages = self.__trans_msgs(msgs)
         resp = self.spark.generate([messages])
         return resp.generations[0][0].text
 
-    def generate_stream(self, msgs: str | List[ChatMessage]) -&gt; Iterable[str]:
-        &#x27;&#x27;&#x27;
+    def generate_stream(self, msgs: str | List[ChatMessage]) -> Iterable[str]:
+        '''
         流式调用
         :param msgs: 发送消息，接收字符串或列表形式的消息
         :return:
-        &#x27;&#x27;&#x27;
+        '''
         if self.stream is False:
-            raise Exception(&#x27;模型初始化为流式输出，请调用generate方法&#x27;)
+            raise Exception('模型初始化为流式输出，请调用generate方法')
         messages = self.__trans_msgs(msgs)
         resp_iterable = self.spark.stream(messages)
         for resp in resp_iterable:
             yield resp.content
 
     def __trans_msgs(self, msg: str):
-        &#x27;&#x27;&#x27;
+        '''
         内部方法，将字符串转换为消息
         :param msgs: 字符串
         :return:
-        &#x27;&#x27;&#x27;
+        '''
         if isinstance(msg, str):
-            messages = [ChatMessage(role=&quot;user&quot;, content=msg)]
+            messages = [ChatMessage(role="user", content=msg)]
         else:
             messages = msg
         return messages
 
 # 加载讯飞的api
-app_id = os.environ[&quot;SPARKAI_APP_ID&quot;]
-app_secret = os.environ[&quot;SPARKAI_API_SECRET&quot;]
-app_key = os.environ[&quot;SPARKAI_API_KEY&quot;]
+app_id = os.environ["SPARKAI_APP_ID"]
+app_secret = os.environ["SPARKAI_API_SECRET"]
+app_key = os.environ["SPARKAI_API_KEY"]
 
 # 初始化模型
 stream_model = ChatModel(app_id, app_key, app_secret, stream=True)
 model = ChatModel(app_id, app_key, app_secret, stream=False)
 
 # 中译英提示语
-zh2en_prompt = &#x27;你是中英文互译高手。给定一句中文文本，请你帮我翻译成英文。文本：{}&#x27;
+zh2en_prompt = '你是中英文互译高手。给定一句中文文本，请你帮我翻译成英文。文本：{}'
 # 英译中提示语
-en2zh_prompt = &#x27;你是中英文互译高手。给定一句英文文本，请你帮我翻译成中文。文本：{}&#x27;
+en2zh_prompt = '你是中英文互译高手。给定一句英文文本，请你帮我翻译成中文。文本：{}'
 
 def chat(chat_query, chat_history, prompt_type):
-    if prompt_type == &#x27;中译英&#x27;:
+    if prompt_type == '中译英':
         final_query = zh2en_prompt.format(chat_query)
     else:
         final_query = en2zh_prompt.format(chat_query)
     # 添加最新问题
-    prompts = [ChatMessage(role=&#x27;user&#x27;, content=final_query)]
+    prompts = [ChatMessage(role='user', content=final_query)]
 
     # 将问题设为历史对话
-    chat_history.append((chat_query, &#x27;&#x27;))
+    chat_history.append((chat_query, ''))
     # 对话同时流式返回
     for chunk_text in stream_model.generate_stream(prompts):
         # 总结答案
@@ -221,116 +199,118 @@ def chat(chat_query, chat_history, prompt_type):
         # 替换最新的对话内容
         chat_history[-1] = (chat_query, answer)
         # 返回
-        yield &#x27;&#x27;, chat_history
+        yield '', chat_history
 
 with gr.Blocks() as demo:
-    warning_html_code = &quot;&quot;&quot;
-            &lt;div class=&quot;hint&quot; style=&quot;text-align: center;background-color: rgba(255, 255, 0, 0.15); padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ffcc00;&quot;&gt;
-                &lt;p&gt;中英翻译助手是Datawhale开源《讯飞2024星火杯》第一阶段的baseline。&lt;/p&gt;
-                &lt;p&gt;🐱 欢迎体验或交流【公众号】：Datawhale 【B站主页】https://space.bilibili.com/431850986&lt;/p&gt;
-                &lt;p&gt;相关地址: &lt;a href=&quot;https://challenge.xfyun.cn/tiaozhanbei?ch=dw618&quot;&gt;比赛地址&lt;/a&gt;、&lt;a href=&quot;https://datawhaler.feishu.cn/wiki/PRW4wk7wyiU5UPkRzjycNcNzngf&quot;&gt;学习手册&lt;/a&gt;&lt;/p&gt;
-            &lt;/div&gt;
-            &quot;&quot;&quot;
+    warning_html_code = """
+            <div class="hint" style="text-align: center;background-color: rgba(255, 255, 0, 0.15); padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ffcc00;">
+                <p>中英翻译助手是Datawhale开源《讯飞2024星火杯》第一阶段的baseline。</p>
+                <p>🐱 欢迎体验或交流【公众号】：Datawhale 【B站主页】https://space.bilibili.com/431850986</p>
+                <p>相关地址: <a href="https://challenge.xfyun.cn/tiaozhanbei?ch=dw618">比赛地址</a>、<a href="https://datawhaler.feishu.cn/wiki/PRW4wk7wyiU5UPkRzjycNcNzngf">学习手册</a></p>
+            </div>
+            """
     gr.HTML(warning_html_code)
 
-    prompt_type = gr.Radio(choices=[&#x27;中译英&#x27;, &#x27;英译中&#x27;], value=&#x27;中译英&#x27;, label=&#x27;翻译类型&#x27;)
+    prompt_type = gr.Radio(choices=['中译英', '英译中'], value='中译英', label='翻译类型')
     # 聊天对话框
-    chatbot = gr.Chatbot([], elem_id=&quot;chat-box&quot;, label=&quot;聊天历史&quot;)
+    chatbot = gr.Chatbot([], elem_id="chat-box", label="聊天历史")
     # 输入框
-    chat_query = gr.Textbox(label=&quot;输入问题&quot;, placeholder=&quot;输入需要咨询的问题&quot;)
+    chat_query = gr.Textbox(label="输入问题", placeholder="输入需要咨询的问题")
     # 按钮
-    llm_submit_tab = gr.Button(&quot;发送&quot;, visible=True)
+    llm_submit_tab = gr.Button("发送", visible=True)
     # 问题样例
-    gr.Examples([&quot;Datawhale 是一个专注于数据科学与 AI 领域的开源组织，汇集了众多领域院校和知名企业的优秀学习者，聚合了一群有开源精神和探索精神的团队成员。Datawhale 以“ for the learner，和学习者一起成长”为愿景，鼓励真实地展现自我、开放包容、互信互助、敢于试错和勇于担当。同时 Datawhale 用开源的理念去探索开源内容、开源学习和开源方案，赋能人才培养，助力人才成长，建立起人与人，人与知识，人与企业和人与未来的联结。&quot;,
-                    &quot;Python is a programming language that lets you work quickly and integrate systems more effectively.&quot;], chat_query)
+    gr.Examples(["Datawhale 是一个专注于数据科学与 AI 领域的开源组织，汇集了众多领域院校和知名企业的优秀学习者，聚合了一群有开源精神和探索精神的团队成员。Datawhale 以“ for the learner，和学习者一起成长”为愿景，鼓励真实地展现自我、开放包容、互信互助、敢于试错和勇于担当。同时 Datawhale 用开源的理念去探索开源内容、开源学习和开源方案，赋能人才培养，助力人才成长，建立起人与人，人与知识，人与企业和人与未来的联结。",
+                    "Python is a programming language that lets you work quickly and integrate systems more effectively."], chat_query)
     # 按钮出发逻辑
     llm_submit_tab.click(fn=chat, inputs=[chat_query, chatbot, prompt_type], outputs=[chat_query, chatbot])
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     demo.queue().launch()
 ```
 
-## 运行效果
+### 运行效果
+
+
 
 ![](img/4a36a32ab341de6ab57b7aa2c9afcf2a.png)
 
-## 迭代计划
+# 迭代计划
 
 | 功能 | 描述 | 完成时间 |
 | --- | --- | --- |
-| 多语言翻译 | 1.  新增更多常用多语言翻译 | 7.5 |
-| 语音能力 | 1.  新增语音转文字功能 | 7.12 |
-| 语言自动识别 | 1.  添加多语言自动识别 | 7.19 |
+| 多语言翻译 | 1. 新增更多常用多语言翻译 | 7.5 |
+| 语音能力 | 1. 新增语音转文字功能 | 7.12 |
+| 语言自动识别 | 1. 添加多语言自动识别 | 7.19 |
 
-## 商业模式
+# 商业模式
 
 > Prompt: 目前我的应用已经开发完毕，我需要将它向市场推广。请你帮我构思一套合适的商业模式
 
-### 商业模式
+## 商业模式方案
 
-1.  **免费模式**：
+1. 免费模式：
 
-+   **基础免费+高级付费**：用户可以免费使用基础翻译服务，而高级功能（如离线翻译、个性化设置、专业术语库等）则需要通过订阅或一次性付费解锁。
++ 基础免费+高级付费：用户可以免费使用基础翻译服务，而高级功能（如离线翻译、个性化设置、专业术语库等）则需要通过订阅或一次性付费解锁。
 
-+   **广告支持**：在应用中展示广告，为用户提供完全免费的服务，同时通过广告收入盈利。
++ 广告支持：在应用中展示广告，为用户提供完全免费的服务，同时通过广告收入盈利。
 
-1.  **付费模式**：
+2. 付费模式：
 
-+   **订阅制**：用户按月或按年支付费用，享受所有高级功能和优先的客服支持。
++ 订阅制：用户按月或按年支付费用，享受所有高级功能和优先的客服支持。
 
-+   **一次性购买**：用户为特定功能或服务包支付一次性费用，例如专业术语翻译包或语音合成包。
++ 一次性购买：用户为特定功能或服务包支付一次性费用，例如专业术语翻译包或语音合成包。
 
-1.  **企业定制模式**：
+3. 企业定制模式：
 
-+   **定制服务**：针对企业用户的特定需求，提供定制化的翻译解决方案，包括企业级的安全功能和数据管理。
++ 定制服务：针对企业用户的特定需求，提供定制化的翻译解决方案，包括企业级的安全功能和数据管理。
 
-+   **API服务**：向其他应用或服务提供翻译API，按调用次数或流量收费。
++ `API`服务：向其他应用或服务提供翻译`API`，按调用次数或流量收费。
 
-1.  **混合模式**：
+4. 混合模式：
 
-+   **基础免费+高级付费+企业定制**：结合上述几种模式，为不同用户群体提供多样化的服务和定价策略。
++ 基础免费+高级付费+企业定制：结合上述几种模式，为不同用户群体提供多样化的服务和定价策略。
 
-### 市场推广策略
+## 市场推广策略
 
-1.  **社交媒体营销**：
+1. 社交媒体营销：
 
-+   利用社交媒体平台（如🧣、🛰️、抖音等）进行产品宣传和用户互动。
++ 利用社交媒体平台（如🧣、🛰️、抖音等）进行产品宣传和用户互动。
 
-+   与影响力人物合作，通过他们的推荐来吸引潜在用户。
++ 与影响力人物合作，通过他们的推荐来吸引潜在用户。
 
-1.  **内容营销**：
+2. 内容营销：
 
-+   制作高质量的博客文章、视频教程和案例研究，展示产品的使用场景和优势。
++ 制作高质量的博客文章、视频教程和案例研究，展示产品的使用场景和优势。
 
-+   在行业相关论坛和社区分享专业知识，提升品牌知名度。
++ 在行业相关论坛和社区分享专业知识，提升品牌知名度。
 
-1.  搜索引擎优化（SEO）和搜索引擎营销（SEM）：
+3. 搜索引擎优化（SEO）和搜索引擎营销（SEM）：
 
-+   优化网站和应用商店页面，提高在搜索引擎中的排名。
++ 优化网站和应用商店页面，提高在搜索引擎中的排名。
 
-+   投放关键词广告，吸引有意向的用户访问网站或下载应用。
++ 投放关键词广告，吸引有意向的用户访问网站或下载应用。
 
-1.  **合作伙伴关系**：
+4. 合作伙伴关系：
 
-+   与教育机构、旅游公司、国际企业等建立合作关系，将产品作为他们服务的一部分。
++ 与教育机构、旅游公司、国际企业等建立合作关系，将产品作为他们服务的一部分。
 
-+   与应用开发者合作，通过集成您的翻译API来拓展用户群。
++ 与应用开发者合作，通过集成您的翻译`API`来拓展用户群。
 
-1.  **用户反馈和口碑营销**：
+5. 用户反馈和口碑营销：
 
-+   鼓励用户提供反馈，并根据反馈不断改进产品。
++ 鼓励用户提供反馈，并根据反馈不断改进产品。
 
-+   建立奖励机制，激励现有用户邀请新用户。
++ 建立奖励机制，激励现有用户邀请新用户。
 
-1.  **参加行业会议和展览**：
+6. 参加行业会议和展览：
 
-+   在相关的行业会议和展览上展示产品，与潜在客户建立联系。
++ 在相关的行业会议和展览上展示产品，与潜在客户建立联系。
 
-1.  **本地化策略**：
+7. 本地化策略：
 
-+   针对不同国家和地区的文化特点，调整营销策略和产品功能，以更好地满足当地市场的需求。
++ 针对不同国家和地区的文化特点，调整营销策略和产品功能，以更好地满足当地市场的需求。
 
-## 团队介绍
+# 团队介绍
 
 | 姓名 | 学校 | 学历 | 专业 | 项目职责 | 过往荣誉 |
 | --- | --- | --- | --- | --- | --- |
@@ -340,20 +320,18 @@ if __name__ == &quot;__main__&quot;:
 | ... | ... |  |  |  |  |
 | ... | ... |  |  |  |  |
 
-# **03-演示材料.docx**
+# `03-演示材料.docx`
 
-> **产品Demo链接**：https://modelscope.cn/studios/Datawhale/Dw_spark_baseline
+> 产品Demo链接：`https://modelscope.cn/studios/Datawhale/Dw_spark_baseline`
 
-> **使用说明**：直接对话即可
+> 使用说明：直接对话即可
 
-> **演示视频**：效果见下图
+> 演示视频：效果见下图
 
 ![](img/2449c515b7fc42f54cb6438d5afc893a.png)
 
-# **04-项目代码.zip**
+# `04-项目代码.zip`
 
 ![](img/3abd70b77d7e5d231eb864bef05554f9.png)
-
-#
 
 > 本教程主要由  、 写作贡献，经过多位助教内测和建议修改，期待你的点赞和评论～

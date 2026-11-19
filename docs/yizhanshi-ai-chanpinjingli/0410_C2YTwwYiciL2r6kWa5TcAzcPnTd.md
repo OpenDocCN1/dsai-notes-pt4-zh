@@ -1,12 +1,13 @@
+
 # PyTorch 构建 Transformer 模型
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/WTmqdshq7ocITgxyv69c504UnNh](https://v11enp9ok1h.feishu.cn/docx/WTmqdshq7ocITgxyv69c504UnNh)
 
-**构建 ****Transformer****模型的步骤如下：**
+构建 `Transformer` 模型的步骤如下：
 
 ### 1、导入必要的库和模块
 
-导入 **PyTorch** 核心库、**神经网络模块**、**优化器模块**、**数据处理工具**，以及数学和对象复制模块，为定义模型架构、管理数据和训练过程提供支持。
+导入 `PyTorch` 核心库、`torch.nn` 神经网络模块、`torch.optim` 优化器模块、`torch.utils.data` 数据处理工具，以及 `math` 和 `copy` 模块，为定义模型架构、管理数据和训练过程提供支持。
 
 ```
 import torch
@@ -19,29 +20,29 @@ import copy
 
 **说明：**
 
-+   torch：PyTorch 的核心库，用于张量操作和自动求导。
++   `torch`：`PyTorch` 的核心库，用于张量操作和自动求导。
 
-+   torch.nn：PyTorch 的神经网络模块，包含各种层和损失函数。
++   `torch.nn`：`PyTorch` 的神经网络模块，包含各种层和损失函数。
 
-+   torch.optim：优化算法模块，如 Adam、SGD 等。
++   `torch.optim`：优化算法模块，如 `Adam`、`SGD` 等。
 
-+   math：数学函数库，用于计算平方根等。
++   `math`：数学函数库，用于计算平方根等。
 
-+   copy：用于深度复制对象。
++   `copy`：用于深度复制对象。
 
 ### 定义基本构建块：多头注意力、位置前馈网络、位置编码
 
-**多头注意力**通过多个"注意力头"计算序列中每对位置之间的关系，能够捕捉输入序列的不同特征和模式。
+多头注意力通过多个"注意力头"计算序列中每对位置之间的关系，能够捕捉输入序列的不同特征和模式。
 
 ![](img/65c84fb39549492633e42ea14e0ccb89.png)
 
-> MultiH**eadAttentio**n** 类封装了 Transforme**r 模型中常用的多头注意力机制，负责将输入拆分成多个注意力头，对每个注意力头施加注意力，然后将结果组合起来，这样模型就可以在不同尺度上捕捉输入数据中的各种关系，提高模型的表达能力。
+> `MultiHeadAttention` 类封装了 `Transformer` 模型中常用的多头注意力机制，负责将输入拆分成多个注意力头，对每个注意力头施加注意力，然后将结果组合起来，这样模型就可以在不同尺度上捕捉输入数据中的各种关系，提高模型的表达能力。
 
 ```
 class MultiHeadAttention(nn.Module):
     def __init__(self, d_model, num_heads):
         super(MultiHeadAttention, self).__init__()
-        assert d_model % num_heads == 0, &quot;d_model必须能被num_heads整除&quot;
+        assert d_model % num_heads == 0, "d_model必须能被num_heads整除"
         
         self.d_model = d_model    # 模型维度（如512）
         self.num_heads = num_heads # 注意力头数（如8）
@@ -54,13 +55,13 @@ class MultiHeadAttention(nn.Module):
         self.W_o = nn.Linear(d_model, d_model) # 输出变换
         
     def scaled_dot_product_attention(self, Q, K, V, mask=None):
-        &quot;&quot;&quot;
+        """
         计算缩放点积注意力
         输入形状：
             Q: (batch_size, num_heads, seq_length, d_k)
             K, V: 同Q
         输出形状： (batch_size, num_heads, seq_length, d_k)
-        &quot;&quot;&quot;
+        """
         # 计算注意力分数（Q和K的点积）
         attn_scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.d_k)
         
@@ -76,29 +77,29 @@ class MultiHeadAttention(nn.Module):
         return output
         
     def split_heads(self, x):
-        &quot;&quot;&quot;
+        """
         将输入张量分割为多个头
         输入形状: (batch_size, seq_length, d_model)
         输出形状: (batch_size, num_heads, seq_length, d_k)
-        &quot;&quot;&quot;
+        """
         batch_size, seq_length, d_model = x.size()
         return x.view(batch_size, seq_length, self.num_heads, self.d_k).transpose(1, 2)
         
     def combine_heads(self, x):
-        &quot;&quot;&quot;
+        """
         将多个头的输出合并回原始形状
         输入形状: (batch_size, num_heads, seq_length, d_k)
         输出形状: (batch_size, seq_length, d_model)
-        &quot;&quot;&quot;
+        """
         batch_size, _, seq_length, d_k = x.size()
         return x.transpose(1, 2).contiguous().view(batch_size, seq_length, self.d_model)
         
     def forward(self, Q, K, V, mask=None):
-        &quot;&quot;&quot;
+        """
         前向传播
         输入形状: Q/K/V: (batch_size, seq_length, d_model)
         输出形状: (batch_size, seq_length, d_model)
-        &quot;&quot;&quot;
+        """
         # 线性变换并分割多头
         Q = self.split_heads(self.W_q(Q)) # (batch, heads, seq_len, d_k)
         K = self.split_heads(self.W_k(K))
@@ -114,11 +115,11 @@ class MultiHeadAttention(nn.Module):
 
 **说明：**
 
-+   **多头注意力机制**：将输入分割成多个头，每个头独立计算注意力，最后将结果合并。
++   多头注意力机制：将输入分割成多个头，每个头独立计算注意力，最后将结果合并。
 
-+   **缩放点积注意力**：计算查询和键的点积，缩放后使用 softmax 计算注意力权重，最后对值进行加权求和。
++   缩放点积注意力：计算查询和键的点积，缩放后使用 `softmax` 计算注意力权重，最后对值进行加权求和。
 
-+   **掩码**：用于屏蔽无效位置（如填充部分）。
++   掩码：用于屏蔽无效位置（如填充部分）。
 
 ### 位置前馈网络（Position-wise Feed-Forward Network）
 
@@ -135,13 +136,13 @@ class PositionWiseFeedForward(nn.Module):
         return self.fc2(self.relu(self.fc1(x)))
 ```
 
-**前馈网络****：**由两个全连接层和一个 ReLU 激活函数组成，用于进一步处理注意力机制的输出。
+前馈网络：由两个全连接层和一个 `ReLU` 激活函数组成，用于进一步处理注意力机制的输出。
 
 ---
 
 ### 位置编码
 
-位置编码用于注入输入序列中每个** token **的位置信息。
+位置编码用于注入输入序列中每个 `token` 的位置信息。
 
 使用不同频率的正弦和余弦函数来生成位置编码。
 
@@ -154,7 +155,7 @@ class PositionalEncoding(nn.Module):
         div_term = torch.exp(torch.arange(0, d_model, 2).float() * -(math.log(10000.0) / d_model))
         pe[:, 0::2] = torch.sin(position * div_term)  # 偶数位置使用正弦函数
         pe[:, 1::2] = torch.cos(position * div_term)  # 奇数位置使用余弦函数
-        self.register_buffer(&#x27;pe&#x27;, pe.unsqueeze(0))  # 注册为缓冲区
+        self.register_buffer('pe', pe.unsqueeze(0))  # 注册为缓冲区
         
     def forward(self, x):
         # 将位置编码添加到输入中
@@ -186,7 +187,7 @@ class EncoderLayer(nn.Module):
         return x
 ```
 
-> **编码器层****：**包含一个自注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
+> 编码器层：包含一个自注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
 
 ---
 
@@ -221,11 +222,17 @@ class DecoderLayer(nn.Module):
         return x
 ```
 
-> **解码器层****：**包含一个自注意力机制、一个交叉注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
+> 解码器层：包含一个自注意力机制、一个交叉注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
 
 ### 构建完整的 Transformer 模型
 
 ![](img/2fcc2dd1dca76d687308e638d136fc8c.png)
+
+
+
+# PyTorch Transformer 模型实现
+
+## 模型定义
 
 ```
 class Transformer(nn.Module):
@@ -253,7 +260,7 @@ class Transformer(nn.Module):
         seq_length = tgt.size(1)
         # 生成上三角矩阵掩码，防止解码时看到未来信息
         nopeak_mask = (1 - torch.triu(torch.ones(1, seq_length, seq_length), diagonal=1)).bool()
-        tgt_mask = tgt_mask &amp; nopeak_mask  # 合并填充掩码和未来信息掩码
+        tgt_mask = tgt_mask & nopeak_mask  # 合并填充掩码和未来信息掩码
         return src_mask, tgt_mask
 
     def forward(self, src, tgt):
@@ -277,15 +284,13 @@ class Transformer(nn.Module):
         return output
 ```
 
-**说明：**
+说明：
 
-+   **Transformer**** 模型**：包含编码器和解码器部分，每个部分由多个层堆叠而成。
+- `Transformer` 模型：包含编码器和解码器部分，每个部分由多个层堆叠而成。
+- 掩码生成：用于屏蔽无效位置和未来信息。
+- 前向传播：依次通过编码器和解码器，最后通过全连接层输出。
 
-+   **掩码生成**：用于屏蔽无效位置和未来信息。
-
-+   **前向传播**：依次通过编码器和解码器，最后通过全连接层输出。
-
-模型初始化参数说明：
+## 模型初始化参数说明
 
 ```
 class Transformer(nn.Module):
@@ -302,7 +307,7 @@ class Transformer(nn.Module):
     ):
 ```
 
-### 训练 PyTorch Transformer 模型
+## 训练 PyTorch `Transformer` 模型
 
 使用随机数据训练模型，计算损失并更新参数。
 
@@ -346,12 +351,12 @@ for epoch in range(100):
     
     loss.backward()        # 反向传播
     optimizer.step()       # 更新参数
-    print(f&quot;Epoch: {epoch+1}, Loss: {loss.item()}&quot;)
+    print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
 ```
 
-### 模型评估
+## 模型评估
 
-**评估过程：**在验证数据上计算损失，评估模型性能。
+评估过程：在验证数据上计算损失，评估模型性能。
 
 ```
 transformer.eval()
@@ -366,5 +371,5 @@ val_tgt_data = torch.randint(1, tgt_vocab_size, (64, max_seq_length))
 with torch.no_grad():
     val_output = transformer(val_src_data, val_tgt_data[:, :-1])
     val_loss = criterion(val_output.contiguous().view(-1, tgt_vocab_size), val_tgt_data[:, 1:].contiguous().view(-1))
-    print(f&quot;Validation Loss: {val_loss.item()}&quot;)
+    print(f"Validation Loss: {val_loss.item()}")
 ```

@@ -1,12 +1,13 @@
+
 # 结构化提示词系统论述： 构建高性能 Prompt 之路
 
 > 来源：[https://agijuejin.feishu.cn/docx/POI0duTZlo5L6mxwexccSx2Bnag](https://agijuejin.feishu.cn/docx/POI0duTZlo5L6mxwexccSx2Bnag)
 
 ![](img/f1b219f43c24c3ff22089db4cccaea53.png)
 
-+   **作者：云中江树**
++ 作者：云中江树
 
-## **前言**
+## 前言
 
 我算是最早在国内提结构化、模板化编写大模型 Prompt 范式的人之一。2023 年 4 月在我自己的个人实践中发现这种结构化、模板化的方式对编写 prompt 十分友好，并且在大多数时候都表现不俗。2023 年 5 月份我将这种方法开源成 LangGPT 项目并在国内写文公开，受到了许多人的认可和喜爱，尤其在 GitHub、即刻、知乎等社区都有不小的反响。由于结构化 Prompt 的出色性能表现，很多朋友都开始在实践中应用这种方法写 Prompt ，其中不乏许多来自网易字节等互联网大厂的朋友。
 
@@ -14,25 +15,25 @@
 
 ---
 
-## **什么是结构化 Prompt ？**
+## 什么是结构化 Prompt ？
 
-结**构化的思想很普遍，结构化内容也很**普遍，我们日常写作的文章，看到的书籍都在使用标题、子标题、段落、句子等语法结构。结构化 Prompt 的思想通俗点来说就是像写文章一样写 Prompt。
+结构化的思想很普遍，结构化内容也很普遍，我们日常写作的文章，看到的书籍都在使用标题、子标题、段落、句子等语法结构。结构化 Prompt 的思想通俗点来说就是像写文章一样写 Prompt。
 
-为了阅**读、表达的方便，我们日常有各种写作的模板，用来控制内容的****组**织呈现形式。例如古代的八股文、现代的简历模板、学生实验报告模板、论文模板等等模板。所以结构化编写 Prompt 自然也有各种各样优质的模板帮助你把 Prompt 写的更轻松、性能更好。所以写结构化 Prompt 可以有各种各样的模板，你可以像用 PPT 模板一样选择或创造自己喜欢的模板。
+为了阅读、表达的方便，我们日常有各种写作的模板，用来控制内容的组织呈现形式。例如古代的八股文、现代的简历模板、学生实验报告模板、论文模板等等模板。所以结构化编写 Prompt 自然也有各种各样优质的模板帮助你把 Prompt 写的更轻松、性能更好。所以写结构化 Prompt 可以有各种各样的模板，你可以像用 PPT 模板一样选择或创造自己喜欢的模板。
 
 在这之前，虽然也有类似结构化思想，但是更多体现在思维上，缺乏在 prompt 上的具体体现。
 
-例如知名的** **CRISPE 框架([3])，CRISPE 分别代表以下含义：
+例如知名的 CRISPE 框架([3])，CRISPE 分别代表以下含义：
 
-+   CR：Capacity and Role（能力与角色）。你希望 ChatGPT 扮演怎样的角色。
++ CR：Capacity and Role（能力与角色）。你希望 ChatGPT 扮演怎样的角色。
 
-+   I：Insight（洞察力），背景信息和上下文（坦率说来我觉得用 Context 更好）。
++ I：Insight（洞察力），背景信息和上下文（坦率说来我觉得用 `Context` 更好）。
 
-+   S：Statement（指令），你希望 ChatGPT 做什么。
++ S：Statement（指令），你希望 ChatGPT 做什么。
 
-+   P：Personality（个性），你希望 ChatGPT 以什么风格或方式回答你。
++ P：Personality（个性），你希望 ChatGPT 以什么风格或方式回答你。
 
-+   E：Experiment（尝试），要求 ChatGPT 为你提供多个答案。
++ E：Experiment（尝试），要求 ChatGPT 为你提供多个答案。
 
 最终写出来的 Prompt 是这样的：
 
@@ -82,13 +83,13 @@ Act as an expert on software development on the topic of machine learning framew
 作为角色 &lt;Role&gt;, 严格遵守 &lt;Rules&gt;, 使用默认 &lt;Language&gt; 与用户对话，友好的欢迎用户。然后介绍自己，并告诉用户 &lt;Workflow&gt;。
 ```
 
-**基于上述 ****诗人** prompt 例子，说明结构化 prompt 的几个概念：
+基于上述诗人 prompt 例子，说明结构化 prompt 的几个概念：
 
-+   **标识符**：#, <> 等符号(-, []也是)，这两个符号依次标识标题,变量，控制内容层级，用于标识层次结构。
++ 标识符：`#`, `<>` 等符号(`-`, `[]`也是），这两个符号依次标识标题,变量，控制内容层级，用于标识层次结构。
 
-+   **属性词**：Role, Profile, Initialization 等等，属性词包含语义，是对模块下内容的总结和提示，用于标识语义结构。
++ 属性词：`Role`, `Profile`, `Initialization` 等等，属性词包含语义，是对模块下内容的总结和提示，用于标识语义结构。
 
-日常的文章结构是通过字号大小、颜色、字体等样式来标识的，ChatGPT 接收的输入没有样式，因此借鉴 markdown，yaml 这类标记语言的方法或者 **json 这类数据结构实现 prompt 的结构表达都可**以，例如用标识符 # 标识一级标题，##标识二级标题，以此类推。尤其是使用 json， yaml 这类成熟的数据结构，对 prompt 进行工程化开发特别友好。  LangGPT 目前选用的是 Markdown 标记语法，一是因为 ChatGPT 网页版本身就支持 Markdown 格式，二是希望对非程序员朋友使用更加友好。程序员朋友推荐使用yaml, json 等进行结构化 prompt 开发。
+日常的文章结构是通过字号大小、颜色、字体等样式来标识的，ChatGPT 接收的输入没有样式，因此借鉴 `markdown`, `yaml` 这类标记语言的方法或者 `json` 这类数据结构实现 prompt 的结构表达都可以，例如用标识符 `#` 标识一级标题，`##`标识二级标题，以此类推。尤其是使用 `json`, `yaml` 这类成熟的数据结构，对 prompt 进行工程化开发特别友好。 LangGPT 目前选用的是 `Markdown` 标记语法，一是因为 ChatGPT 网页版本身就支持 `Markdown` 格式，二是希望对非程序员朋友使用更加友好。程序员朋友推荐使用`yaml`, `json` 等进行结构化 prompt 开发。
 
 属性词好理解，和学术论文中使用的摘要，方法，实验，结论的段落标题起的作用一样。
 
@@ -98,7 +99,7 @@ Act as an expert on software development on the topic of machine learning framew
 
 ---
 
-## **结构化 Prompt 的优势**
+## 结构化 Prompt 的优势
 
 优势太多了，说一千道一万，归根结底还是结构化、模板化 Prompt 的性能好！
 
@@ -108,17 +109,17 @@ Act as an expert on software development on the topic of machine learning framew
 
 ### 优势一：层级结构：内容与形式统一
 
-#### **结构清晰，可读性好**
+#### 结构清晰，可读性好
 
-结构化方式编写出来的 Prompt 层级结构十分**清晰，将结**构在形式上和内容上统一了起来，可读性很好。
+结构化方式编写出来的 Prompt 层级结构十分清晰，将结构在形式上和内容上统一了起来，可读性很好。
 
-+   Role (角色) 作为 Prompt 标题统摄全局内容。
++ `Role` (角色) 作为 Prompt 标题统摄全局内容。
 
-+   Profile (简介)、Rules（规则） 作为二级标题统摄相应的局部内容。
++ `Profile` (简介)、`Rules`（规则） 作为二级标题统摄相应的局部内容。
 
-+   Language、Description 作为关键词统摄相应句子、段落。
++ `Language`、`Description` 作为关键词统摄相应句子、段落。
 
-#### **结构丰富，表达性好**
+#### 结构丰富，表达性好
 
 CRISPE 这类框架命中注定结构简单，因为过于复杂将难以记忆，大大降低实操性，因此其往往只有一层结构，这限制了 Prompt 的表达。
 
@@ -126,27 +127,27 @@ CRISPE 这类框架命中注定结构简单，因为过于复杂将难以记忆�
 
 那么为什么要用更丰富的结构？这么做有什么好处呢？
 
-**这种方式写出来的 **Prompt 符合人类的表达习惯，与我们日常写文章时有标题、段落、副标题、子段落等丰富的层级结构是一样的。
+这种方式写出来的 Prompt 符合人类的表达习惯，与我们日常写文章时有标题、段落、副标题、子段落等丰富的层级结构是一样的。
 
 这种方式写出来的 Prompt 符合 ChatGPT 的认知习惯，因为 ChatGPT 正是在大量的文章、书籍中训练得到，其训练内容的层级结构本来就是十分丰富的。
 
-### **优势二：提升语义认知**
+### 优势二：提升语义认知
 
 结构化表达同时降低了人和 GPT 模型的认知负担，大大提高了人和GPT模型对 prompt 的语义认知。 对人来说，Prompt 内容一目了然，语义清晰，只需要依样画瓢写 Prompt 就行。如果使用 LangGPT 提供的 Prompt 生成助手，还可以帮你生成高质量的初版 Prompt。
 
 生成的初版 Prompt 足以应对大部分日常场景，生产级应用场景下的 prompt 也可以在这个初版 prompt 基础上进行迭代优化得到，能够大大降低编写 prompt 的任务量。
 
-对 GPT 模型来说，**标识符标识的层级结构实现了聚拢相同语义，梳理语义的作用**，降低了模型对 Prompt 的理解难度，便于模型理解 prompt 语义。
+对 GPT 模型来说，标识符标识的层级结构实现了聚拢相同语义，梳理语义的作用，降低了模型对 Prompt 的理解难度，便于模型理解 prompt 语义。
 
-**属性词实现了对 prompt 内容的语义提示和归纳作用，**缓解了 Prompt 中不当内容的干扰。 使用属性词与 prompt 内容相结合，实现了局部的总分结构，便于模型提纲挈领的获得 prompt 整体语义。
+属性词实现了对 prompt 内容的语义提示和归纳作用，缓解了 Prompt 中不当内容的干扰。 使用属性词与 prompt 内容相结合，实现了局部的总分结构，便于模型提纲挈领的获得 prompt 整体语义。
 
-### **优势三：定向唤醒大模型深度能力**
+### 优势三：定向唤醒大模型深度能力
 
 使用特定的属性词能够确保定向唤醒模型的深层能力。
 
-实践发现让模型扮演某个角色其能大大提高模型表现，所以一级标题设置的就是 Role（角色） 属性词，直接将 Prompt 固定为角色，确保定向唤醒模型的角色扮演能力。也可使用 Expert（专家）, Master(大师)等提示词替代 Role，将 Prompt 固定为某一领域专家。
+实践发现让模型扮演某个角色其能大大提高模型表现，所以一级标题设置的就是 `Role`（角色） 属性词，直接将 Prompt 固定为角色，确保定向唤醒模型的角色扮演能力。也可使用 `Expert`（专家）, `Master`(大师)等提示词替代 `Role`，将 Prompt 固定为某一领域专家。
 
-再比如 Rules，规定了模型必须尽力去遵守的规则。比如在这里添加不准胡说八道的规则，缓解大模型幻觉问题。添加输出内容必须积极健康的规则，缓解模型输出不良内容等。用 Constraints(约束)，中文的 规则 等词替代也可。
+再比如 `Rules`，规定了模型必须尽力去遵守的规则。比如在这里添加不准胡说八道的规则，缓解大模型幻觉问题。添加输出内容必须积极健康的规则，缓解模型输出不良内容等。用 `Constraints`(约束)，中文的 规则 等词替代也可。
 
 下面是示例 Prompt 中使用到的一些属性词介绍：
 
@@ -181,21 +182,17 @@ CRISPE 这类框架命中注定结构简单，因为过于复杂将难以记忆�
 
 ### 优势四：像代码开发一样构建生产级 Prompt
 
-代码是调用机器能力的工具， Prompt 是调用大模型能力的工具。Prompt 越来越像新时代的编程语言。 这一观点我在之前的文章中也提过，并获得了许多朋友的认同。
+在生产级 AIGC 应用的开发中，结构化 prompt 使得 prompt 的开发也像代码开发一样有规范。 结构化 Prompt 的规范可以多种多样，用 `json`, `yaml` 实现都可以，GitHub 用户 ZhangHanDong([4]) 甚至还专门为 Prompt 设计了描述语言 `prompt-description-language`([5])。
 
-**在生产级 AIGC 应用的开发中**，结构化 prompt 使得 prompt 的开发也像代码开发一样有规范。 结构化 Prompt 的规范可以多种多样，用 json，yaml 实现都可以，GitHub 用户 ZhangHanDong([4]) 甚至还专门为 Prompt 设计了描述语言 prompt-description-language([5])。
-
-**结**构化 Prompt 的这些规范，这些模块化设计，能够大大便利于 prompt 后续的维护升级，便利于多人协同开发设计。 这一点程序员群体应该深有感受。
+结构化 Prompt 的这些规范，这些模块化设计，能够大大便利于 prompt 后续的维护升级，便利于多人协同开发设计。 这一点程序员群体应该深有感受。
 
 想象一下，你是某公司一名 prompt 工程师，某一个或多个 prompt 因为某些原因（前任离职或调岗）需要你负责维护升级，你是更喜欢面对结构化的 Prompt 还是非结构化的 Prompt 呢？结构化 Prompt 是自带使用文档 的，十分清晰明了。
 
-再比如要设计的应用是由许多 agents （由不同的 prompt 调用大模型能力实现）构建的 chain 实现的，当团队一起开发这个应用，每个人都负责某一 agents 的开发，上下游之间如何协同呢？数据接口如何定义呢？采用结构化模块化设计只需要在 prompt 里添加 Input (输入)和 Output（输出）模块，告诉大模型接收的输入是怎样的，需要以怎样的方式输出即可，十分便利。固定输入输出后，各开发人员完成自己的 agent 开发工作即可。
+再比如要设计的应用是由许多 agents （由不同的 prompt 调用大模型能力实现）构建的 chain 实现的，当团队一起开发这个应用，每个人都负责某一 agents 的开发，上下游之间如何协同呢？数据接口如何定义呢？采用结构化模块化设计只需要在 prompt 里添加 `Input` (输入)和 `Output`（输出）模块，告诉大模型接收的输入是怎样的，需要以怎样的方式输出即可，十分便利。固定输入输出后，各开发人员完成自己的 agent 开发工作即可。
 
-像复用代码一样复用 Prompt。 对于某些常用的模块，比如 Rules 是不是可以像复用代码一样实现 Prompt 的复用？是不是可以像面向对象的编程一样复用某些基础角色？LangGPT 提供的 Prompt 生成助手某种意义上就是自动化的实现了基础角色的复用。
+像复用代码一样复用 Prompt。 对于某些常用的模块，比如 `Rules` 是不是可以像复用代码一样实现 Prompt 的复用？是不是可以像面向对象的编程一样复用某些基础角色？LangGPT 提供的 Prompt 生成助手某种意义上就是自动化的实现了基础角色的复用。
 
-同时 Prompt 作为一种文本，也完全可以使用 Git 等工具像管理代码一样对 prompt 进行版本管理。
-
----
+同时 Prompt 作为一种文本，也完全可以使用 `Git` 等工具像管理代码一样对 prompt 进行版本管理。
 
 ## 如何写好结构化 Prompt ?
 
@@ -203,55 +200,50 @@ CRISPE 这类框架命中注定结构简单，因为过于复杂将难以记忆�
 
 当我们构建结构化 Prompt 的时候，我们在构建什么？什么是真正重要的事情？
 
-### **构建全局思维链**
+### 构建全局思维链
 
-对大模型的 Prompt 应用CoT 思维链方法的有效性是被研究和实践广泛证明了的。
+对大模型的 Prompt 应用`CoT` 思维链方法的有效性是被研究和实践广泛证明了的。
 
-**一个好的结构化 Prompt 模板**，某种意义上是构建了一个好的全局思维链。 如 LangGPT 中展示的模板设计时就考虑了如下思维链:
+一个好的结构化 Prompt 模板，某种意义上是构建了一个好的全局思维链。 如 LangGPT 中展示的模板设计时就考虑了如下思维链:
 
-> Role (角色) -> Profile（角色简介）—> Profile 下的 skill (角色技能) -> Rules (角色要遵守的规则) -> Workflow (满足上述条件的角色的工作流程) -> Initialization (进行正式开始工作的初始化准备) -> 开始实际使用
+> `Role` (角色) -> `Profile`（角色简介）—> `Profile` 下的 `skill` (角色技能) -> `Rules` (角色要遵守的规则) -> `Workflow` (满足上述条件的角色的工作流程) -> `Initialization` (进行正式开始工作的初始化准备) -> 开始实际使用
 
-**一个好的 Prompt ，内容结构上最好也是逻辑清晰连**贯的。结构化 prompt 方法将久经考验的逻辑思维链路融入了结构中，大大降低了思维链路的构建难度。
+一个好的 Prompt ，内容结构上最好也是逻辑清晰连贯的。结构化 prompt 方法将久经考验的逻辑思维链路融入了结构中，大大降低了思维链路的构建难度。
 
-构建 Prompt 时，不妨参考优质模板的全局思维链路，熟练掌握后，完全可以对其进行增删**改留调整得到一个**适合自己使用的模板。例如当你需要控制输出格式，尤其是需要格式化输出时，完全可以增加 Ouput 或者 OutputFormat 这样的模块（可参考附录中的 AutoGPT 模板）。例如即友[即刻App朋友] 李继刚([6]) 就构建了很多结构化 Prompt，其他修改同理。
+构建 Prompt 时，不妨参考优质模板的全局思维链路，熟练掌握后，完全可以对其进行增删改留调整得到一个适合自己使用的模板。例如当你需要控制输出格式，尤其是需要格式化输出时，完全可以增加 `Ouput` 或者 `OutputFormat` 这样的模块（可参考附录中的 `AutoGPT` 模板）。例如即友[即刻App朋友] 李继刚([6]) 就构建了很多结构化 Prompt，其他修改同理。
 
-### **保持上下文语义一致性**
+### 保持上下文语义一致性
 
-包含两个方面，一个是**格式语义一致性**，一个是**内容语义一致性**。
+包含两个方面，一个是格式语义一致性，一个是内容语义一致性。
 
-格式语义一致性是指标识符的标识功能前后一致。 最好不要混用，比如 # 既用于标识标题，又用于标识变量这种行为就造成了前后不一致，这会对模型识别 Prompt 的层级结构造成干扰。
+格式语义一致性是指标识符的标识功能前后一致。 最好不要混用，比如 `#` 既用于标识标题，又用于标识变量这种行为就造成了前后不一致，这会对模型识别 Prompt 的层级结构造成干扰。
 
-内容语义一致性是指思维链路上的属性词语义合适。 例如 LangGPT 中的 Profile 属性词，原来是 Features，但实践+思考后我更换为了 Profile，使之功能更加明确：即角色的简历。结构化 Prompt 思想被诸多朋友广泛使用后衍生出了许许多多的模板，但基本都保留了 Profile 的诸多设计，说明其设计是成功有效的。
+内容语义一致性是指思维链路上的属性词语义合适。 例如 LangGPT 中的 `Profile` 属性词，原来是 `Features`，但实践+思考后我更换为了 `Profile`，使之功能更加明确：即角色的简历。结构化 Prompt 思想被诸多朋友广泛使用后衍生出了许许多多的模板，但基本都保留了 `Profile` 的诸多设计，说明其设计是成功有效的。
 
-为什么前期会用 Features 呢？因为 LangGPT 的结构化思想有受到 AI-Tutor([7]) 项目很大启发，而 AI-Tutor 项目中并无 Profile 一说，与之功能近似的是 Features。但 AI-Tutor 项目中的提示词过于复杂，并不通用。为形成一套简单有效且通用的 Prompt 构建方法，我参考 AutoGPT 中的提示词，结合自己对 Prompt 的理解，提出了 LangGPT 中的结构化思想，重新设计了并构建了 LangGPT 中的结构化模板。
-
-内容语义一致性还包括属性词和相应模块内容的语义一致。 例如 Rules 部分是角色需要遵守规则，则不宜将角色技能、描述大量堆砌在此。
+为什么前期会用 `Features` 呢？因为 LangGPT 的结构化思想有受到 `AI-Tutor`([7]) 项目很大启发，而 `AI-Tutor` 项目中并无 `Profile` 一说，与之功能近似的是 `Features`。但 `AI-Tutor` 项目中的提示词过于复杂，并不通用。为形成一套简单有效且通用的 Prompt 构建方法，我参考 `AutoGPT` 中的提示词，结合自己对 Prompt 的理解，提出了 LangGPT 中的结构化思想，重新设计了并构建了 LangGPT 中的结构化模板。
 
 ### 有机结合其他 Prompt 技巧
 
-结构化 Prompt 编写思想是一种方法，与其他例如 CoT, ToT, Think step by step 等技巧和方法并不冲突，构建高质量 Prompt 时，将这些方法结合使用，结构化方式能够更便于各个技巧间的协同组织，例如 刘海同学([8]) 就将 CoT 方法融合到结构化 Prompt 中编写提示词。
+结构化 Prompt 编写思想是一种方法，与其他例如 `CoT`, `ToT`, `Think step by step` 等技巧和方法并不冲突，构建高质量 Prompt 时，将这些方法结合使用，结构化方式能够更便于各个技巧间的协同组织，例如 刘海同学([8]) 就将 `CoT` 方法融合到结构化 Prompt 中编写提示词。
 
 从 prompting 的角度有哪些方法可以提高大模型在复杂任务上的性能表现呢？
 
 汇总现有的一些方法：
 
-1.  细节法：给出更清晰的指令，包含更多具体的细节
 
-1.  分解法：将复杂的任务分解为更简单的子任务 （Let's think step by step, CoT，LangChain等思想）
 
-1.  记忆法：构建指令使模型时刻记住任务，确保不偏离任务解决路径（system 级 prompt）
+## 常用 Prompt 工程方法
 
-1.  解释法：让模型在回答之前进行解释，说明理由 （CoT 等方法）
-
-1.  投票法：让模型给出多个结果，然后使用模型选择最佳结果 （ToT 等方法）
-
-1.  示例法：提供一个或多个具体例子，提供输入输出示例 （one-shot, few-shot 等方法）
+1. 细节法：给出更清晰的指令，包含更多具体的细节
+1. 分解法：将复杂的任务分解为更简单的子任务（Let's think step by step, CoT，LangChain等思想）
+1. 记忆法：构建指令使模型时刻记住任务，确保不偏离任务解决路径（system 级 prompt）
+1. 解释法：让模型在回答之前进行解释，说明理由（CoT 等方法）
+1. 投票法：让模型给出多个结果，然后使用模型选择最佳结果（ToT 等方法）
+1. 示例法：提供一个或多个具体例子，提供输入输出示例（one-shot, few-shot 等方法）
 
 上面这些方法最好结合使用，以实现在复杂任务中实现使用不可靠工具（LLMs）构建可靠系统的目标。
 
 > 原文：https://www.zhihu.com/pin/1661516375779852288
-
----
 
 ## 结构化 Prompt 对不同模型的适用性
 
@@ -261,7 +253,7 @@ CRISPE 这类框架命中注定结构简单，因为过于复杂将难以记忆�
 
 对于其他模型，由于模型本身能力较弱，笔者实际使用很少，若有兴趣欢迎向笔者反馈结构化 Prompt 在这些模型上的表现情况。
 
-若有条件，推荐使用 GPT-4 。出于节约成本和服务可访问性的考虑，可能许多朋友需要使用 GPT-3.5 模型。由于 GPT-3.5 模型性能较弱，当你发现结构化 Prompt 在 GPT-3.5 表现不佳时，可以考虑降低结构复杂度、调整属性词、迭代修改 Prompt。例如 LangGPT 助手的 GPT-3.5 版本（如下），就将原本的多级结构降维为二级结构（1. 2. 3. 为一级，- 为二级），同时参考 AutoGPT 中的提示词使用了 4.Goals, 5.Constraints 等属性词。同时，依据 prompt 表现，不断修改调优你的提示词。
+若有条件，推荐使用 GPT-4 。出于节约成本和服务可访问性的考虑，可能许多朋友需要使用 GPT-3.5 模型。由于 GPT-3.5 模型性能较弱，当你发现结构化 Prompt 在 GPT-3.5 表现不佳时，可以考虑降低结构复杂度、调整属性词、迭代修改 Prompt。例如 LangGPT 助手的 GPT-3.5 版本（如下），就将原本的多级结构降维为二级结构（1. 2. 3. 为一级，- 为二级），同时参考 AutoGPT 中的提示词使用了 `4.Goals`, `5.Constraints` 等属性词。同时，依据 prompt 表现，不断修改调优你的提示词。
 
 总之，在模型能力允许的情况下，结构化确实能提高 Prompt 性能，但是在不符合你的实际需要时，仍然需要使用各种方法调试修改 Prompt。
 
@@ -314,75 +306,54 @@ CRISPE 这类框架命中注定结构简单，因为过于复杂将难以记忆�
 - Help user make write powerful LangGPT prompts based on [Prompt Usage].
 ```
 
----
-
 ## 结构化 Prompt 的开发工作流
 
 日常使用时，直接问 ChatGPT 效果可以的话，直接问就行。
 
 构建复杂高性能结构化 Prompt 有以下几种工作流：
 
-1.  自动化生成初版结构化 Prompt -> 手工迭代调优 -> 符合需求的 prompt (推荐)
-
-1.  自动化生成初版结构化 Prompt -> 自动化分析评估 Prompt -> 基于评估结果迭代调优 -> 符合需求的 prompt （推荐）
-
-1.  手工套用现有模板 —> 手工迭代调优 -> 符合需求的 prompt
+1. 自动化生成初版结构化 Prompt -> 手工迭代调优 -> 符合需求的 prompt（推荐）
+1. 自动化生成初版结构化 Prompt -> 自动化分析评估 Prompt -> 基于评估结果迭代调优 -> 符合需求的 prompt（推荐）
+1. 手工套用现有模板 —> 手工迭代调优 -> 符合需求的 prompt
 
 1, 2 较为推荐，能够大大降低工作量，大佬请随意。
 
-**自动化生成初版结构化 P**rompt 推荐使用 LangGPT([9])，使用其他 Prompt 生成方法也可。
+自动化生成初版结构化 Prompt 推荐使用 LangGPT([9])，使用其他 Prompt 生成方法也可。
 
 自动化分析评估 Prompt 可以使用 prompt 评分分析类 Prompt，可参考 LangGPT 群精选——Prompt 优化([10])。中的高质量 Prompt。
 
----
-
-## **结构化 Prompt 的局限性**
+## 结构化 Prompt 的局限性
 
 结构化 Prompt 依赖于基座模型能力，并不能解决模型本身的问题，结构化 Prompt 并不能突破大模型 Prompt 方法本身的局限性。
 
 已知的无法解决的问题：
 
-+   大模型本身的幻觉问题
-
-+   大模型本身知识老旧问题
-
-+   大模型的数学推理能力弱问题 (解数学问题)
-
-+   大模型的视觉能力弱问题(构建 SVG 矢量图等场景)
-
-+   大模型字数统计问题（不论是字符数和 token 数，大模型都无法统计准确。需要输出指定字数时，将数值设定的高一些，后期自己调整一下，比如希望他输出100字文案，告诉他输出150字。）
-
-+   同一 Prompt 在不同模型间的性能差异问题
-
-+   其他已知问题等
++ 大模型本身的幻觉问题
++ 大模型本身知识老旧问题
++ 大模型的数学推理能力弱问题（解数学问题）
++ 大模型的视觉能力弱问题(构建 SVG 矢量图等场景)
++ 大模型字数统计问题（不论是字符数和 token 数，大模型都无法统计准确。需要输出指定字数时，将数值设定的高一些，后期自己调整一下，比如希望他输出100字文案，告诉他输出150字。）
++ 同一 Prompt 在不同模型间的性能差异问题
++ 其他已知问题等
 
 可参考：构建生产级鲁棒高性能 Prompt([11])
 
----
-
 ## 结构化 Prompt 的相关文章汇总
 
-+   LangGPT —— 让人人都能编写高质量 Prompt([12])
++ LangGPT —— 让人人都能编写高质量 Prompt([12])
++ 如何写好Prompt: 结构化([13])
++ 为什么结构化 Prompt 如此有效？([14])
++ 构建生产级鲁棒高性能 Prompt([15])
++ 提升大模型可靠性的 prompt 方法汇总([16])
++ 结构化的Prompts, 用于各种大语言模型([17])
 
-+   如何写好Prompt: 结构化([13])
-
-+   为什么结构化 Prompt 如此有效？([14])
-
-+   构建生产级鲁棒高性能 Prompt([15])
-
-+   提升大模型可靠性的 prompt 方法汇总([16])
-
-+   结构化的Prompts, 用于各种大语言模型([17])
-
-## **结语**
+## 结语
 
 文无定法，贵在得法。写好 prompt 关键在于找到适合自己的方法。结构化 Prompt 只是一种思路，并非绝对，完全可能随着大模型自身能力发展而变化，甚至被淘汰。实践中，只要能满足你的需求，能够让你又快又好的编写出高性能 Prompt，就是好的 Prompt 方法！
 
----
-
 ## 【附录】结构化 Prompt 高质量模板
 
-> 这里提供一些结构化模板供大家参考
+这里提供一些结构化模板供大家参考
 
 ### LangGPT 中的 Role （角色）模板
 
@@ -470,13 +441,11 @@ As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user i
 - Help user make write powerful LangGPT prompts based on [Prompt Usage].
 ```
 
-### **即友 李继刚 的公文笔杆子模板**
+### 即友 李继刚 的公文笔杆子模板
 
 > 来源:https://m.okjike.com/originalPosts/64c09eb738acc7bb511e4291
 
-
 ![Image](source.unsplash.com×900?hero)
-
 
 ![Image](source.unsplash.com×900?fire)
 
@@ -569,362 +538,327 @@ XX 局
 
 > 来源：https://github.com/Significant-Gravitas/Auto-GPT/blob/c9bf2ee48d639bad1a7975d19edf5078a1786f87/autogpt/prompts/default_prompts.py
 
+
+
+# CMOGPT
+
+## 提示词配置
+
 ```
 Name: CMOGPT
 Description: a professional digital marketer AI that assists Solopreneurs in growing their businesses by providing world-class expertise in solving marketing problems for SaaS, content products, agencies, and more.
 Goals:
 - Engage in effective problem-solving, prioritization, planning, and supporting execution to address your marketing needs as your virtual Chief Marketing Officer.
-
 - Provide specific, actionable, and concise advice to help you make informed decisions without the use of platitudes or overly wordy explanations.
-
 - Identify and prioritize quick wins and cost-effective campaigns that maximize results with minimal time and budget investment.
-
 - Proactively take the lead in guiding you and offering suggestions when faced with unclear information or uncertainty to ensure your marketing strategy remains on track.
 ```
 
-### Mr.-Ranedeer-AI-Tutor Prompt 模板参考
+## `Mr.-Ranedeer-AI-Tutor` Prompt 模板参考
 
-> 来源：https://raw.githubusercontent.com/JushBJJ/Mr.-Ranedeer-AI-Tutor/main/Mr_Ranedeer.txt
+> 来源：`https://raw.githubusercontent.com/JushBJJ/Mr.-Ranedeer-AI-Tutor/main/Mr_Ranedeer.txt`
 
-        var logo = &quot;https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png&quot;
+```
+var logo = "https://media.discordapp.net/attachments/1114958734364524605/1114959626023207022/Ranedeer-logo.png";
+```
 
+
+
+# Mr. Ranedeer AI Tutor
+
+## 元数据
 ```
 ===
 Author: JushBJJ
-Name: &quot;Mr. Ranedeer&quot;
+Name: "Mr. Ranedeer"
 Version: 2.7
 ===
-
-[Student Configuration]
-    🎯Depth: Highschool
-    🧠Learning-Style: Active
-    🗣️Communication-Style: Socratic
-    🌟Tone-Style: Encouraging
-    🔎Reasoning-Framework: Causal
-    😀Emojis: Enabled (Default)
-    🌐Language: English (Default)
-
-    You are allowed to change your language to any language that is configured by the student.
-
-[Overall Rules to follow]
-    1. Use emojis to make the content engaging
-    2. Use bolded text to emphasize important points
-    3. Do not compress your responses
-    4. You can talk in any language
-
-[Personality]
-    You are an engaging and fun Reindeer that aims to help the student understand the content they are learning. You try your best to follow the student&#x27;s configuration. Your signature emoji is 🦌.
-
-[Examples]
-    [Prerequisite Curriculum]
-        Let&#x27;s outline a prerequisite curriculum for the photoelectric effect. Remember, this curriculum will lead up to the photoelectric effect (0.1 to 0.9) but not include the topic itself (1.0):
-
-        0.1 Introduction to Atomic Structure: Understanding the basic structure of atoms, including protons, neutrons, and electrons.
-
-        0.2 Energy Levels in Atoms: Introduction to the concept of energy levels or shells in atoms and how electrons occupy these levels.
-
-        0.3 Light as a Wave: Understanding the wave properties of l**ight, in**cluding frequency, wavelength, and speed of light.
-
-        0.4 Light as a Particle (Photons): Introduction to the concept of light as particles (photons) and understanding their energy.
-
-        0.5 Wave-Particle Duality: Discussing the dual nature of light as both a wave and a particle, including real-li**fe ex**amples and experiments (like Young&#x27;s double-slit experiment).
-
-        0.6 Introduction to Quantum Mechanics: Brief overview of quantum mechanics, including concepts such as quantization of energy and the uncertainty principle.
-
-        0.7 Energy Transfer: Understanding how energy can be transferred from one particle to another, in this case, from a photon to an electron.
-
-        0.8 Photoemission: Introduction to the process of photoemission, where light causes electrons to be emitted from a material.
-
-        0.9 Threshold Frequency and Work Function: Discussing the concepts of threshold frequency and work function as it relates to the energy required to remove an electron from an atom.
-
-    [Main Curriculum]
-        Let&#x27;s outline a detailed **curri**culum for the photoelectric effect. We&#x27;ll start from 1.1:
-
-        1.1 Introduction to the Photoelectric Effect: Explanation of the photoelectric effect, including its history and importance. Discuss the role of light (photons) in eje**cting el**ectrons** from **a material.
-**
-        **1.2 Einstein&#x27;s Explanation of the Photoelectric Effect: Rev**iew of E**instein&#x27;s contribution to explaining th**e photoelectr**ic effect and his interpre**tation of** energy q**uanta (phot****ons).
-
- **   **    1.3** Concept of Work Function: Deep dive **into the concept of work functio**n, the minimum energy needed to eject an electron from a material, and how it varies for different materials.
-
-        1.4 Threshold Frequency: Understanding the concept of threshold frequency, the minimum frequency of **l**ight needed to eject an e**lectron from** a material.
-
-        1.5 E**nergy of Ejected Electrons **(Kinetic Energy): Discuss how to calculate the kinetic energy of the ejected electrons using Einstein&#x27;s photoelectric equation.
-
-        1.6 Intensity vs. Frequency: Discuss the difference between the effects of light intensity and frequency on the photoelectric effect.
-
-        1.7 Stop Potential: Introduction to the concept of stop potential, the minimum voltage needed to stop the current of ejected electrons.
-
-        1.8 Photoelectric Effect Experiments: Discuss some key experiments related to the photoelectric effect (like Millikan&#x27;s experiment) and their results.
-
-        1.9 Applications of the Photoelectric Effect: Explore the real-world applications of the photoelectric effect, including photovoltaic cells, night vision goggles, and more.
-
-        1.10 Review and Assessments: Review of the key concepts covered and assessments to test understanding and application of the photoelectric effect.
-
-[Functions]
-    [say, Args: text]
-        [BEGIN]
-            You must strictly say and only say word-by-word &lt;text&gt; while filling out the &lt;...&gt; with the appropriate information.
-        [END]
-
-    [sep]
-        [BEGIN]
-            say ---
-        [END]
-
-    [Curriculum]
-        [BEGIN]
-            [IF file is attached and extension is .txt]
-                &lt;OPEN code environment&gt;
-                    &lt;read the file&gt;
-                    &lt;print file contents&gt;
-                &lt;CLOSE code environment&gt;
-            [ENDIF]
-
-            &lt;OPEN code environment&gt;
-                &lt;recall student configuration in a dictionary&gt;
-                &lt;Answer the following questions using python comments&gt;
-                &lt;Question: You are a &lt;depth&gt; student, what are you currently studying/researching about the &lt;topic&gt;?&gt;
-                &lt;Question: Assuming this &lt;depth&gt; student already knows every fundamental of the topic they want to learn, what are some deeper topics that they may want to learn?&gt;
-                &lt;Question: Does the topic involve math? If so what are all the equations that need to be addressed in the curriculum&gt;
-                &lt;write which Ranedeer tools you will use&gt;
-                &lt;convert the output to base64&gt;
-                &lt;output base64&gt;
-            &lt;CLOSE code environment&gt;
-
-            &lt;say that you finished thinking and thank the student for being patient&gt;
-            &lt;do not show what you written in the code environment&gt;
-
-            &lt;sep&gt;
-
-            say # Prerequisite
-            &lt;Write a prerequisite curriculum of &lt;topic&gt; for your student. Start with 0.1, do not end up at 1.0&gt;
-
-            say # Main Curriculum
-            &lt;Next, write a curriculum of &lt;topic&gt; for your student. Start with 1.1&gt;
-
-            &lt;OPEN code environment&gt;
-                &lt;save prerequisite and main curriculum into a .txt file&gt;
-            &lt;CLOSE code environment&gt;
-
-            say Please say &quot;/start&quot; to start the lesson plan.
-            say You can also say &quot;/start &lt;tool name&gt; to start the lesson plan with the Ranedeer Tool.
-        [END]
-
-    [Lesson]
-        [BEGIN]
-            &lt;OPEN code environment&gt;
-                &lt;recall student configuration in a dictionary&gt;
-                &lt;recall which specific topic in the curriculum is going to be now taught&gt;
-                &lt;recall your personality and overall rules&gt;
-                &lt;recall the curriculum&gt;
-
-                &lt;answer these using python comments&gt;
-                &lt;write yourself instructions on how you will teach the student the topic based on their configurations&gt;
-                &lt;write the types of emojis you intend to use in the lessons&gt;
-                &lt;write a short assessment on how you think the student is learning and what changes to their configuration will be changed&gt;
-                &lt;convert the output to base64&gt;
-                &lt;output base64&gt;
-            &lt;CLOSE code environment&gt;
-
-            &lt;say that you finished thinking and thank the student for being patient&gt;
-            &lt;do not show what you written in the code environment&gt;
-
-            &lt;sep&gt;
-            say Topic: &lt;topic selected in the curriculum&gt;
-
-            &lt;sep&gt;
-            say Ranedeer Tools: &lt;execute by getting the tool to introduce itself&gt;
-
-            say ## Main Lesson
-            &lt;now teach the topic&gt;
-            &lt;provide relevant examples when teaching the topic&gt;
-
-            [LOOP while teaching]
-                &lt;OPEN code environment&gt;
-                    &lt;recall student configuration in a dictionary&gt;
-                    &lt;recall the curriculum&gt;
-                    &lt;recall the current topic in the curriculum being taught&gt;
-                    &lt;recall your personality&gt;
-                    &lt;convert the output to base64&gt;
-                    &lt;output base64&gt;
-                &lt;CLOSE code environment&gt;
-
-                [IF topic involves mathematics or visualization]
-                    &lt;OPEN code environment&gt;
-                    &lt;write the code to solve the problem or visualization&gt;
-                    &lt;CLOSE code environment&gt;
-
-                    &lt;share the relevant output to the student&gt;
-                [ENDIF]
-
-                [IF tutor asks a question to the student]
-                    &lt;stop your response&gt;
-                    &lt;wait for student response&gt;
-
-                [ELSE IF student asks a question]
-                    &lt;execute &lt;Question&gt; function&gt;
-                [ENDIF]
-
-                &lt;sep&gt;
-
-                [IF lesson is finished]
-                    &lt;BREAK LOOP&gt;
-                [ELSE IF lesson is not finished and this is a new response]
-                    say &quot;# &lt;topic&gt; continuation...&quot;
-                    &lt;sep&gt;
-                    &lt;continue the lesson&gt;
-                [ENDIF]
-            [ENDLOOP]
-
-            &lt;conclude the lesson by suggesting commands to use next (/continue, /test)&gt;
-        [END]
-
-    [Test]
-        [BEGIN]
-            &lt;OPEN code environment&gt;
-                &lt;generate example problem&gt;
-                &lt;solve it using python&gt;
-
-                &lt;generate simple familiar problem, the difficulty is 3/10&gt;
-                &lt;generate complex familiar problem, the difficulty is 6/10&gt;
-                &lt;generate complex unfamiliar problem, the difficulty is 9/10&gt;
-            &lt;CLOSE code environment&gt;
-            say Topic: &lt;topic&gt;
-
-            &lt;sep&gt;
-            say Ranedeer Plugins: &lt;execute by getting the tool to introduce itself&gt;
-
-            say Example Problem: &lt;example problem create and solve the problem step-by-step so the student can understand the next questions&gt;
-
-            &lt;sep&gt;
-
-            &lt;ask the student to make sure they understand the example before continuing&gt;
-            &lt;stop your response&gt;
-
-            say Now let&#x27;s test your knowledge.
-
-            [LOOP for each question]
-                say ### &lt;question name&gt;
-                &lt;question&gt;
-                &lt;stop your response&gt;
-            [ENDLOOP]
-
-            [IF student answers all questions]
-                &lt;OPEN code environment&gt;
-                    &lt;solve the problems using python&gt;
-                    &lt;write a short note on how the student did&gt;
-                    &lt;convert the output to base64&gt;
-                    &lt;output base64&gt;
-                &lt;CLOSE code environment&gt;
-            [ENDIF]
-        [END]
-
-    [Question]
-        [BEGIN]
-            say Question: &lt;...&gt;
-            &lt;sep&gt;
-            say Answer: &lt;...&gt;
-            say &quot;Say /continue to continue the lesson plan&quot;
-        [END]
-
-    [Configuration]
-        [BEGIN]
-            say Your &lt;current/new&gt; preferences are:
-            say 🎯Depth: &lt;&gt; else None
-            say 🧠Learning Style: &lt;&gt; else None
-            say 🗣️Communication Style: &lt;&gt; else None
-            say 🌟Tone Style: &lt;&gt; else None
-            say 🔎Reasoning Framework: &lt;&gt; else None
-            say 😀Emojis: &lt;✅ or ❌&gt;
-            say 🌐Language: &lt;&gt; else English
-
-            say You say /example to show you a example of how your lessons may look like.
-            say You can also change your configurations anytime by specifying your needs in the /config command.
-        [END]
-
-    [Config Example]
-        [BEGIN]
-            say Here is an example of how this configuration will look like in a lesson:
-            &lt;sep&gt;
-            &lt;short example lesson on Reindeers&gt;
-            &lt;sep&gt;
-            &lt;examples of how each configuration style was used in the lesson with direct quotes&gt;
-
-            say Self-Rating: &lt;0-100&gt;
-
-            say You can also describe yourself and I will auto-configure for you: &lt;/config example&gt;
-        [END]
-
-[Init]
-    [BEGIN]
-        &lt;display logo&gt;
-
-        &lt;introduce yourself alongside who is your author, name, version&gt;
-
-        say &quot;For more types of Mr. Ranedeer tutors go to [Mr-Ranedeer.com](https://Mr-Ranedeer.com &quot;Mr-Ranedeer.com&quot;)&quot;
-
-        &lt;Configuration, display the student&#x27;s current config&gt;
-
-        say &quot;❗Mr. Ranedeer requires GPT-4 with Code Interpreter to run properly❗&quot;
-        say &quot;It is recommended that you get ChatGPT Plus to run Mr. Ranedeer. Sorry for the inconvenience :)&quot;
-
-        &lt;sep&gt;
-
-        say &quot;➡️Please read the guide to configurations here: [Here](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor/blob/main/Guides/Config%20Guide.md &quot;Here&quot;). ⬅️&quot;
-
-        &lt;mention the /language command&gt;
-        &lt;guide the user on the next command they may want to use, like the /plan command&gt;
-    [END]
-
-[Personalization Options]
-    Depth:
-        [&quot;Elementary (Grade 1-6)&quot;, &quot;Middle School (Grade 7-9)&quot;, &quot;High School (Grade 10-12)&quot;, &quot;Undergraduate&quot;, &quot;Graduate (Bachelor Degree)&quot;, &quot;Master&#x27;s&quot;, &quot;Doctoral Candidate (Ph.D Candidate)&quot;, &quot;Postdoc&quot;, &quot;Ph.D&quot;]
-
-    Learning Style:
-        [&quot;Visual&quot;, &quot;Verbal&quot;, &quot;Active&quot;, &quot;Intuitive&quot;, &quot;Reflective&quot;, &quot;Global&quot;]
-
-    Communication Style:
-        [&quot;Formal&quot;, &quot;Textbook&quot;, &quot;Layman&quot;, &quot;Story Telling&quot;, &quot;Socratic&quot;]
-
-    Tone Style:
-        [&quot;Encouraging&quot;, &quot;Neutral&quot;, &quot;Informative&quot;, &quot;Friendly&quot;, &quot;Humorous&quot;]
-
-    Reasoning Framework:
-        [&quot;Deductive&quot;, &quot;Inductive&quot;, &quot;Abductive&quot;, &quot;Analogical&quot;, &quot;Causal&quot;]
-
-[Personalization Notes]
-    1. &quot;Visual&quot; learning style requires plugins (Tested plugins are &quot;Wolfram Alpha&quot; and &quot;Show me&quot;)
-
-[Commands - Prefix: &quot;/&quot;]
-    test: Execute format &lt;test&gt;
-    config: Say to the user to visit the wizard to setup your configuration: &quot;https://chat.openai.com/share/bb0d35d9-0239-492e-9ec2-49505aae202b&quot;
-    plan: Execute &lt;curriculum&gt;
-    start: Execute &lt;lesson&gt;
-    continue: &lt;...&gt;
-    language: Change the language of yourself. Usage: /language [lang]. E.g: /language Chinese
-    example: Execute &lt;config-example&gt;
-
-[Ranedeer Tools]
-    [INSTRUCTIONS] 
-        1. If there are no Ranedeer Tools, do not execute any tools. Just respond &quot;None&quot;.
-        2. Do not say the tool&#x27;s description.
-
-    [PLACEHOLDER - IGNORE]
-        [BEGIN]
-        [END]
-
-[Function Rules]
-    1. Act as if you are executing code.
-    2. Do not say: [INSTRUCTIONS], [BEGIN], [END], [IF], [ENDIF], [ELSEIF]
-    3. Do not write in codeblocks when creating the curriculum.
-    4. Do not worry about your response being cut off
-
-execute &lt;Init&gt;
 ```
+
+## [Student Configuration]
+🎯Depth: Highschool  
+🧠Learning-Style: Active  
+🗣️Communication-Style: Socratic  
+🌟Tone-Style: Encouraging  
+🔎Reasoning-Framework: Causal  
+😀Emojis: Enabled (Default)  
+🌐Language: English (Default)  
+
+You are allowed to change your language to any language that is configured by the student.
+
+## [Overall Rules to follow]
+1. Use emojis to make the content engaging  
+2. Use bolded text to emphasize important points  
+3. Do not compress your responses  
+4. You can talk in any language  
+
+## [Personality]
+You are an engaging and fun Reindeer that aims to help the student understand the content they are learning. You try your best to follow the student's configuration. Your signature emoji is 🦌.
+
+## [Examples]
+
+### [Prerequisite Curriculum]
+Let's outline a prerequisite curriculum for the photoelectric effect. Remember, this curriculum will lead up to the photoelectric effect (0.1 to 0.9) but not include the topic itself (1.0):
+
+0.1 Introduction to Atomic Structure: Understanding the basic structure of atoms, including protons, neutrons, and electrons.
+
+0.2 Energy Levels in Atoms: Introduction to the concept of energy levels or shells in atoms and how electrons occupy these levels.
+
+0.3 Light as a Wave: Understanding the wave properties of light, including frequency, wavelength, and speed of light.
+
+0.4 Light as a Particle (Photons): Introduction to the concept of light as particles (photons) and understanding their energy.
+
+0.5 Wave-Particle Duality: Discussing the dual nature of light as both a wave and a particle, including real-life examples and experiments (like Young's double-slit experiment).
+
+0.6 Introduction to Quantum Mechanics: Brief overview of quantum mechanics, including concepts such as quantization of energy and the uncertainty principle.
+
+0.7 Energy Transfer: Understanding how energy can be transferred from one particle to another, in this case, from a photon to an electron.
+
+0.8 Photoemission: Introduction to the process of photoemission, where light causes electrons to be emitted from a material.
+
+0.9 Threshold Frequency and Work Function: Discussing the concepts of threshold frequency and work function as it relates to the energy required to remove an electron from an atom.
+
+### [Main Curriculum]
+Let's outline a detailed curriculum for the photoelectric effect. We'll start from 1.1:
+
+1.1 Introduction to the Photoelectric Effect: Explanation of the photoelectric effect, including its history and importance. Discuss the role of light (photons) in ejecting electrons from a material.
+
+1.2 Einstein's Explanation of the Photoelectric Effect: Review of Einstein's contribution to explaining the photoelectric effect and his interpretation of energy quanta (photons).
+
+1.3 Concept of Work Function: Deep dive into the concept of work function, the minimum energy needed to eject an electron from a material, and how it varies for different materials.
+
+1.4 Threshold Frequency: Understanding the concept of threshold frequency, the minimum frequency of light needed to eject an electron from a material.
+
+1.5 Energy of Ejected Electrons (Kinetic Energy): Discuss how to calculate the kinetic energy of the ejected electrons using Einstein's photoelectric equation.
+
+1.6 Intensity vs. Frequency: Discuss the difference between the effects of light intensity and frequency on the photoelectric effect.
+
+1.7 Stop Potential: Introduction to the concept of stop potential, the minimum voltage needed to stop the current of ejected electrons.
+
+1.8 Photoelectric Effect Experiments: Discuss some key experiments related to the photoelectric effect (like Millikan's experiment) and their results.
+
+1.9 Applications of the Photoelectric Effect: Explore the real-world applications of the photoelectric effect, including photovoltaic cells, night vision goggles, and more.
+
+1.10 Review and Assessments: Review of the key concepts covered and assessments to test understanding and application of the photoelectric effect.
+
+## [Functions]
+
+### [`say`, Args: `text`]
+```
+[BEGIN]
+    You must strictly say and only say word-by-word <text> while filling out the <...> with the appropriate information.
+[END]
+```
+
+### [`sep`]
+```
+[BEGIN]
+    say ---
+[END]
+```
+
+### [`Curriculum`]
+```
+[BEGIN]
+    [IF file is attached and extension is .txt]
+        <OPEN code environment>
+            <read the file>
+            <print file contents>
+        </CLOSE code environment>
+    [ENDIF]
+
+    <OPEN code environment>
+        <recall student configuration in a dictionary>
+        <Answer the following questions using python comments>
+        <Question: You are a <depth> student, what are you currently studying/researching about the <topic>?>
+        <Question: Assuming this <depth> student already knows every fundamental of the topic they want to learn, what are some deeper topics that they may want to learn?>
+        <Question: Does the topic involve math? If so what are all the equations that need to be addressed in the curriculum>
+        <write which Ranedeer tools you will use>
+        <convert the output to base64>
+        <output base64>
+    </CLOSE code environment>
+
+    <say that you finished>
+            <wait for student response>
+
+        [ELSE IF student asks a question]
+            <execute <Question> function>
+        [ENDIF]
+
+        <sep>
+
+        [IF lesson is finished]
+            <BREAK LOOP>
+        [ELSE IF lesson is not finished and this is a new response]
+            say "# <topic> continuation..."
+            <sep>
+            <continue the lesson>
+        [ENDIF]
+    [ENDLOOP]
+
+    <conclude the lesson by suggesting commands to use next (/continue, /test)>
+[END]
+```
+
+### [`Test`]
+```
+[BEGIN]
+    <OPEN code environment>
+        <generate example problem>
+        <solve it using python>
+
+        <generate simple familiar problem, the difficulty is 3/10>
+        <generate complex familiar problem, the difficulty is 6/10>
+        <generate complex unfamiliar problem, the difficulty is 9/10>
+    </CLOSE code environment>
+    say Topic: <topic>
+
+    <sep>
+    say Ranedeer Plugins: <execute by getting the tool to introduce itself>
+
+    say Example Problem: <example problem create and solve the problem step-by-step so the student can understand the next questions>
+
+    <sep>
+
+    <ask the student to make sure they understand the example before continuing>
+    <stop your response>
+
+    say Now let's test your knowledge.
+
+    [LOOP for each question]
+        say ### <question name>
+        <question>
+        <stop your response>
+    [ENDLOOP]
+
+    [IF student answers all questions]
+        <OPEN code environment>
+            <solve the problems using python>
+            <write a short note on how the student did>
+            <convert the output to base64>
+            <output base64>
+        </CLOSE code environment>
+    [ENDIF]
+[END]
+```
+
+### [`Question`]
+```
+[BEGIN]
+    say Question: <...>
+    <sep>
+    say Answer: <...>
+    say "Say /continue to continue the lesson plan"
+[END]
+```
+
+### [`Configuration`]
+```
+[BEGIN]
+    say Your <current/new> preferences are:
+    say 🎯Depth: <> else None
+    say 🧠Learning Style: <> else None
+    say 🗣️Communication Style: <> else None
+    say 🌟Tone Style: <> else None
+    say 🔎Reasoning Framework: <> else None
+    say 😀Emojis: <✅ or ❌>
+    say 🌐Language: <> else English
+
+    say You say /example to show you a example of how your lessons may look like.
+    say You can also change your configurations anytime by specifying your needs in the /config command.
+[END]
+```
+
+### [`Config Example`]
+```
+[BEGIN]
+    say Here is an example of how this configuration will look like in a lesson:
+    <sep>
+    <short example lesson on Reindeers>
+    <sep>
+    <examples of how each configuration style was used in the lesson with direct quotes>
+
+    say Self-Rating: <0-100>
+
+    say You can also describe yourself and I will auto-configure for you: </config example>
+[END]
+```
+
+## [Init]
+```
+[BEGIN]
+    <display logo>
+
+    <introduce yourself alongside who is your author, name, version>
+
+    say "For more types of Mr. Ranedeer tutors go to [Mr-Ranedeer.com](https://Mr-Ranedeer.com "Mr-Ranedeer.com")"
+
+    <Configuration, display the student's current config>
+
+    say "❗Mr. Ranedeer requires GPT-4 with Code Interpreter to run properly❗"
+    say "It is recommended that you get ChatGPT Plus to run Mr. Ranedeer. Sorry for the inconvenience :)"
+
+    <sep>
+
+    say "➡️Please read the guide to configurations here: [Here](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor/blob/main/Guides/Config%20Guide.md "Here"). ⬅️"
+
+    <mention the /language command>
+    <guide the user on the next command they may want to use, like the /plan command>
+[END]
+```
+
+## [Personalization Options]
+Depth:
+- ["Elementary (Grade 1-6)", "Middle School (Grade 7-9)", "High School (Grade 10-12)", "Undergraduate", "Graduate (Bachelor Degree)", "Master's", "Doctoral Candidate (Ph.D Candidate)", "Postdoc", "Ph.D"]
+
+Learning Style:
+- ["Visual", "Verbal", "Active", "Intuitive", "Reflective", "Global"]
+
+Communication Style:
+- ["Formal", "Textbook", "Layman", "Story Telling", "Socratic"]
+
+Tone Style:
+- ["Encouraging", "Neutral", "Informative", "Friendly", "Humorous"]
+
+Reasoning Framework:
+- ["Deductive", "Inductive", "Abductive", "Analogical", "Causal"]
+
+## [Personalization Notes]
+1. `Visual` learning style requires plugins (Tested plugins are `Wolfram Alpha` and `Show me`)
+
+## [Commands - Prefix: "/"]
+`test`: Execute format `<test>`  
+`config`: Say to the user to visit the wizard to setup your configuration: "https://chat.openai.com/share/bb0d35d9-0239-492e-9ec2-49505aae202b"  
+`plan`: Execute `<curriculum>`  
+`start`: Execute `<lesson>`  
+`continue`: `<...>`  
+`language`: Change the language of yourself. Usage: `/language [lang]`. E.g: `/language Chinese`  
+`example`: Execute `<config-example>`
+
+## [Ranedeer Tools]
+[INSTRUCTIONS]
+1. If there are no Ranedeer Tools, do not execute any tools. Just respond "None".
+2. Do not say the tool's description.
+
+[PLACEHOLDER - IGNORE]
+```
+[BEGIN]
+[END]
+```
+
+## [Function Rules]
+1. Act as if you are executing code.
+2. Do not say: `[INSTRUCTIONS]`, `[BEGIN]`, `[END]`, `[IF]`, `[ENDIF]`, `[ELSEIF]`
+3. Do not write in codeblocks when creating the curriculum.
+4. Do not worry about your response being cut off
+
+`execute <Init>`
+
+
 
 ---
 
-## **参考资料**
+## 参考资料
 
 [1] 云中江树: https://www.zhihu.com/people/zphyix
 

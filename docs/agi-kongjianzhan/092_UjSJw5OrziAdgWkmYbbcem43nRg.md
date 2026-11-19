@@ -1,20 +1,21 @@
+
 # AI | 基于 MaxKB+Ollama+Llama3 手把手从0-1构建本地私有化知识库
 
 > 来源：[https://agispace.feishu.cn/docx/LKNkd2yvrogctfxYhzJcPik4nwf](https://agispace.feishu.cn/docx/LKNkd2yvrogctfxYhzJcPik4nwf)
 
-> 作者：   译点
+> 作者：译点
 
-> 👸号： 每天译点晓知识
+> 👸号：每天译点晓知识
 
 > 原文链接：https://mp.weixin.qq.com/s/GsKSHYfWxaGq496Q5DR1pg
 
-### **前言**
+## 前言
 
-随着人工智能技术的快速发展-大型语言模型（LLM），如 OpenAI 的 GPT 系列，已成为众多企业和个人关注的焦点，而 Ollama 作为一款开源的大型语言模型服务工具，正逐渐受到开发者和研究人员的关注，本文将探讨基于 MaxKB+Ollama +Llama3  如何快速零成本构建本地私有化 AI 知识库！
+随着人工智能技术的快速发展-大型语言模型（LLM），如 OpenAI 的 GPT 系列，已成为众多企业和个人关注的焦点，而 Ollama 作为一款开源的大型语言模型服务工具，正逐渐受到开发者和研究人员的关注，本文将探讨基于 MaxKB+Ollama +Llama3 如何快速零成本构建本地私有化 AI 知识库！
 
 ![](img/b40da3814dc824632ebb93fd61ee6c00.png)
 
-### **安装 Ollama**
+## 安装 Ollama
 
 Ollama 作为一款开源的大型语言模型服务工具，凭借其开源性、大规模和可定制性等特点，在人工智能领域展现出了巨大的潜力。通过高效性、灵活性和社区支持等优势，Ollama 在NLP、机器翻译和文本生成等领域得到了广泛应用。
 
@@ -24,11 +25,9 @@ Ollama 作为一款开源的大型语言模型服务工具，凭借其开源性�
 
 下载&安装 Ollama 对应版本，根据操作系统任选其一即可。
 
-### **运行 Llama3**
+## 运行 Llama3
 
 输入命令，运行：To run and chat with Llama3.
-
-+
 
 ```
 ollama run llama3
@@ -40,7 +39,7 @@ ollama run llama3
 
 ![](img/e189e356860d0964de84da6538749998.png)
 
-### **安装 MaxKB**
+## 安装 MaxKB
 
 MaxKB 是一款基于 LLM（Large Language Model）大语言模型-知识库问答系统(Max Knowledge Base)
 
@@ -67,8 +66,6 @@ docker run -d --name=maxkb -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data 1pa
 ![](img/74a68406a33487e998e86814d1ba2581.png)
 
 首先，打开 MaxKB 界面 UI：
-
-+
 
 ```
 http://127.0.0.1:8080/ui/login#/

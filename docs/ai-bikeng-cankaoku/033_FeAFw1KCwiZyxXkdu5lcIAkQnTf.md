@@ -1,3 +1,4 @@
+
 # 玩转高级搜索
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/HYOadVcSAonzYyxgaVPcnmqXnSd](https://xodnytdcaw.feishu.cn/docx/HYOadVcSAonzYyxgaVPcnmqXnSd)
@@ -12,8 +13,8 @@
 | 推特 | t | https://twitter.com/search?q={query} | http://suggestqueries.google.com/complete/search?client=witter&amp;ds=yt&amp;client=firefox&amp;q={query} |
 | B站 | bl | https://search.bilibili.com/all?keyword={query}&amp;order=click | https://search.bilibili.com/all?keyword={query}&amp;tids=36 |
 | 📕 | xhs | https://www.xiaohongshu.com/search_result?keyword={query} | https://www.xiaohongshu.com/search_result?keyword={query} |
-| GitHub | git | https://github.com/search?q={query} | cmd /k gh {query} |
-| 抖音 | dy | https://www.douyin.com/search/{query} | cmd /k tt {query} |
+| GitHub | git | https://github.com/search?q={query} | `cmd /k gh {query}` |
+| 抖音 | dy | https://www.douyin.com/search/{query} | `cmd /k tt {query}` |
 
 ## Cherry Studio
 
@@ -25,9 +26,9 @@ ALI+E快捷助手
 
 一个问题，让多个X帮给你答案
 
-X=传统搜索/AI/社媒
+`X`=传统搜索/AI/社媒
 
-## yt-dlp下载视频
+## `yt-dlp`下载视频
 
 🛰️输入法添加常用语输入下载命令
 
@@ -35,7 +36,7 @@ X=传统搜索/AI/社媒
 yt-dlp --cookies &quot;D:\web3/cookies.txt&quot; -f &quot;bestvideo+bestaudio&quot; --merge-output-format mp4 
 ```
 
-## 打开常用网站bat
+## 打开常用网站`bat`
 
 ```
 @echo off
@@ -66,7 +67,7 @@ echo ==============================================================
 echo                 按数字 1-8 直接跳转，按 0 退出
 echo.
 
-choice /c 123456780 /n /m &quot;请选择:&quot;
+choice /c 123456780 /n /m &quot;请选择&quot;;
 if %errorlevel% equ 1 start &quot;&quot; &quot;https://dqtx.cc/&quot; &amp; goto main_menu
 if %errorlevel% equ 2 start &quot;&quot; &quot;https://742112.xyz/&quot; &amp; goto main_menu
 if %errorlevel% equ 3 start &quot;&quot; &quot;http://110.42.45.244:48317/&quot; &amp; goto main_menu

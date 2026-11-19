@@ -1,8 +1,9 @@
+
 # 构建智能体
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/EX1CdNf2komgnexTKfpccPoNnoh](https://qqs7y1hozd1.feishu.cn/docx/EX1CdNf2komgnexTKfpccPoNnoh)
 
-语言模型本身不能执行动作——它们只是输出文本。LangChain的一个重要用例是创建智能体。智能体是使用LLM作为推理引擎的系统，它们可以决定要采取哪些动作以及传递哪些输入。在执行动作后，可以将结果反馈到LLM中，以确定是否需要更多的动作，或者是否可以结束。
+语言模型本身不能执行动作——它们只是输出文本。LangChain的一个重要用例是创建智能体。智能体是使用LLM作为推理引擎的系统，它们可以决定要采取哪些动作以及传递哪些输入。在执行动作后，可以将结果反馈到LLM中，以确定是否需要更多动作，或者是否可以结束。
 
 在本教程中，我们将构建一个可以与搜索引擎互动的智能体。你将能够向这个智能体提问，观看它调用搜索工具，并与它进行对话。
 
@@ -10,13 +11,10 @@
 
 在本教程中，你将学习如何：
 
-1.  使用语言模型，特别是它们调用工具的能力
-
-1.  使用搜索工具从互联网上查找信息
-
-1.  组合一个LangGraph智能体，使用LLM来确定并执行动作
-
-1.  使用LangSmith调试和跟踪你的应用程序
+1. 使用语言模型，特别是它们调用工具的能力
+2. 使用搜索工具从互联网上查找信息
+3. 组合一个LangGraph智能体，使用LLM来确定并执行动作
+4. 使用LangSmith调试和跟踪你的应用程序
 
 ### End-to-end agent（端到端智能体）
 
@@ -25,33 +23,30 @@
 在本指南的其余部分，我们将逐步讲解各个组件及其作用——但如果你只想直接获取一些代码并开始使用，请随意使用这个片段！
 
 ```
-# Import relevant functionality
 from langchain_anthropic import ChatAnthropic
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.prebuilt import create_react_agent
 
-# Create the agent
-memory = SqliteSaver.from_conn_string(&quot;:memory:&quot;)
-model = ChatAnthropic(model_name=&quot;claude-3-sonnet-20240229&quot;)
+memory = SqliteSaver.from_conn_string(":memory:")
+model = ChatAnthropic(model_name="claude-3-sonnet-20240229")
 search = TavilySearchResults(max_results=2)
 tools = [search]
 agent_executor = create_react_agent(model, tools, checkpointer=memory)
 
-# Use the agent
-config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;abc123&quot;}}
+config = {"configurable": {"thread_id": "abc123"}}
 for chunk in agent_executor.stream(
-    {&quot;messages&quot;: [HumanMessage(content=&quot;hi im bob! and i live in sf&quot;)]}, config
+    {"messages": [HumanMessage(content="hi im bob! and i live in sf")]}, config
 ):
     print(chunk)
-    print(&quot;----&quot;)
+    print("----")
 
 for chunk in agent_executor.stream(
-    {&quot;messages&quot;: [HumanMessage(content=&quot;whats the weather where I live?&quot;)]}, config
+    {"messages": [HumanMessage(content="whats the weather where I live?")]}, config
 ):
     print(chunk)
-    print(&quot;----&quot;)
+    print("----")
 ```
 
 ### Setup（设置）
@@ -77,8 +72,8 @@ for chunk in agent_executor.stream(
 在上面的链接注册后，确保设置环境变量以开始记录跟踪信息：
 
 ```
-export LANGCHAIN_API_KEY=&#x27;your_api_key_here&#x27;
-export LANGCHAIN_TRACING_V2=&#x27;true&#x27;
+export LANGCHAIN_API_KEY='your_api_key_here'
+export LANGCHAIN_TRACING_V2='true'
 ```
 
 或者，如果在笔记本中，你可以使用以下方式设置它们：
@@ -86,8 +81,8 @@ export LANGCHAIN_TRACING_V2=&#x27;true&#x27;
 ```
 import os
 
-os.environ[&#x27;LANGCHAIN_API_KEY&#x27;] = &#x27;your_api_key_here&#x27;
-os.environ[&#x27;LANGCHAIN_TRACING_V2&#x27;] = &#x27;true&#x27;
+os.environ['LANGCHAIN_API_KEY'] = 'your_api_key_here'
+os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 ```
 
 #### Tavily
@@ -97,7 +92,7 @@ os.environ[&#x27;LANGCHAIN_TRACING_V2&#x27;] = &#x27;true&#x27;
 ```
 import os
 import getpass
-os.environ[&#x27;TAVILY_API_KEY&#x27;] = &#x27;your_tavily_api_key_here&#x27;
+os.environ['TAVILY_API_KEY'] = 'your_tavily_api_key_here'
 ```
 
 ### Define tools（定义工具）
@@ -108,7 +103,7 @@ os.environ[&#x27;TAVILY_API_KEY&#x27;] = &#x27;your_tavily_api_key_here&#x27;
 from langchain_community.tools.tavily_search import TavilySearchResults
 
 search = TavilySearchResults(max_results=2)
-search_results = search.invoke(&quot;what is the weather in SF&quot;)
+search_results = search.invoke("what is the weather in SF")
 print(search_results)
 # If we want, we can create other tools.
 # Once we have all the tools we want, we can put them in a list that we will reference later.
@@ -116,10 +111,10 @@ tools = [search]
 ```
 
 ```
-[{&#x27;url&#x27;: &#x27;https://www.weatherapi.com/&#x27;,
-  &#x27;content&#x27;: &quot;{&#x27;location&#x27;: {&#x27;name&#x27;: &#x27;San Francisco&#x27;, &#x27;region&#x27;: &#x27;California&#x27;, &#x27;country&#x27;: &#x27;United States of America&#x27;, &#x27;lat&#x27;: 37.78, &#x27;lon&#x27;: -122.42, &#x27;tz_id&#x27;: &#x27;America/Los_Angeles&#x27;, &#x27;localtime_epoch&#x27;: 1717238703, &#x27;localtime&#x27;: &#x27;2024-06-01 3:45&#x27;}, &#x27;current&#x27;: {&#x27;last_updated_epoch&#x27;: 1717237800, &#x27;last_updated&#x27;: &#x27;2024-06-01 03:30&#x27;, &#x27;temp_c&#x27;: 12.0, &#x27;temp_f&#x27;: 53.6, &#x27;is_day&#x27;: 0, &#x27;condition&#x27;: {&#x27;text&#x27;: &#x27;Mist&#x27;, &#x27;icon&#x27;: &#x27;//cdn.weatherapi.com/weather/64x64/night/143.png&#x27;, &#x27;code&#x27;: 1030}, &#x27;wind_mph&#x27;: 5.6, &#x27;wind_kph&#x27;: 9.0, &#x27;wind_degree&#x27;: 310, &#x27;wind_dir&#x27;: &#x27;NW&#x27;, &#x27;pressure_mb&#x27;: 1013.0, &#x27;pressure_in&#x27;: 29.92, &#x27;precip_mm&#x27;: 0.0, &#x27;precip_in&#x27;: 0.0, &#x27;humidity&#x27;: 88, &#x27;cloud&#x27;: 100, &#x27;feelslike_c&#x27;: 10.5, &#x27;feelslike_f&#x27;: 50.8, &#x27;windchill_c&#x27;: 9.3, &#x27;windchill_f&#x27;: 48.7, &#x27;heatindex_c&#x27;: 11.1, &#x27;heatindex_f&#x27;: 51.9, &#x27;dewpoint_c&#x27;: 8.8, &#x27;dewpoint_f&#x27;: 47.8, &#x27;vis_km&#x27;: 6.4, &#x27;vis_miles&#x27;: 3.0, &#x27;uv&#x27;: 1.0, &#x27;gust_mph&#x27;: 12.5, &#x27;gust_kph&#x27;: 20.1}}&quot;},
- {&#x27;url&#x27;: &#x27;https://www.wunderground.com/hourly/us/ca/san-francisco/date/2024-01-06&#x27;,
-  &#x27;content&#x27;: &#x27;Current Weather for Popular Cities . San Francisco, CA 58 ° F Partly Cloudy; Manhattan, NY warning 51 ° F Cloudy; Schiller Park, IL (60176) warning 51 ° F Fair; Boston, MA warning 41 ° F ...&#x27;}]
+[{'url': 'https://www.weatherapi.com/',
+  'content': "{'location': {'name': 'San Francisco', 'region': 'California', 'country': 'United States of America', 'lat': 37.78, 'lon': -122.42, 'tz_id': 'America/Los_Angeles', 'localtime_epoch': 1717238703, 'localtime': '2024-06-01 3:45'}, 'current': {'last_updated_epoch': 1717237800, 'last_updated': '2024-06-01 03:30', 'temp_c': 12.0, 'temp_f': 53.6, 'is_day': 0, 'condition': {'text': 'Mist', 'icon': '//cdn.weatherapi.com/weather/64x64/night/143.png', 'code': 1030}, 'wind_mph': 5.6, 'wind_kph': 9.0, 'wind_degree': 310, 'wind_dir': 'NW', 'pressure_mb': 1013.0, 'pressure_in': 29.92, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 88, 'cloud': 100, 'feelslike_c': 10.5, 'feelslike_f': 50.8, 'windchill_c': 9.3, 'windchill_f': 48.7, 'heatindex_c': 11.1, 'heatindex_f': 51.9, 'dewpoint_c': 8.8, 'dewpoint_f': 47.8, 'vis_km': 6.4, 'vis_miles': 3.0, 'uv': 1.0, 'gust_mph': 12.5, 'gust_kph': 20.1}}"},
+ {'url': 'https://www.wunderground.com/hourly/us/ca/san-francisco/date/2024-01-06',
+  'content': 'Current Weather for Popular Cities . San Francisco, CA 58 ° F Partly Cloudy; Manhattan, NY warning 51 ° F Cloudy; Schiller Park, IL (60176) warning 51 ° F Fair; Boston, MA warning 41 ° F ...'}]
 ```
 
 ### Using Language Models（应用语言模型）
@@ -134,11 +129,11 @@ pip install -qU langchain-openai
 import getpass
 import os
 
-os.environ[&quot;OPENAI_API_KEY&quot;] = getpass.getpass()
+os.environ["OPENAI_API_KEY"] = getpass.getpass()
 
 from langchain_openai import ChatOpenAI
 
-model = ChatOpenAI(model=&quot;gpt-4&quot;)
+model = ChatOpenAI(model="gpt-4")
 ```
 
 您可以通过传入消息列表来调用语言模型。默认情况下，响应是一个内容字符串。
@@ -146,15 +141,15 @@ model = ChatOpenAI(model=&quot;gpt-4&quot;)
 ```
 from langchain_core.messages import HumanMessage
 
-response = model.invoke([HumanMessage(content=&quot;hi!&quot;)])
+response = model.invoke([HumanMessage(content="hi!")])
 response.content
 ```
 
 ```
-&#x27;Hi there!&#x27;
+'Hi there!'
 ```
 
-现在我们可以看看启用该模型进行工具调用的情况。为了启用这个功能，我们使用 .bind_tools 来让语言模型了解这些工具。
+现在我们可以看看启用该模型进行工具调用的情况。为了启用这个功能，我们使用 `.bind_tools` 来让语言模型了解这些工具。
 
 ```
 model_with_tools = model.bind_tools(tools)
@@ -163,10 +158,10 @@ model_with_tools = model.bind_tools(tools)
 我们现在可以调用模型了。让我们首先用一个普通的消息来调用它，然后看看它如何响应。我们可以查看内容字段以及工具调用字段。
 
 ```
-response = model_with_tools.invoke([HumanMessage(content=&quot;Hi!&quot;)])
+response = model_with_tools.invoke([HumanMessage(content="Hi!")])
 
-print(f&quot;ContentString: {response.content}&quot;)
-print(f&quot;ToolCalls: {response.tool_calls}&quot;)
+print(f"ContentString: {response.content}")
+print(f"ToolCalls: {response.tool_calls}")
 ```
 
 ```
@@ -177,15 +172,15 @@ ToolCalls: []
 现在，让我们尝试使用一些期望调用工具的输入来调用它。
 
 ```
-response = model_with_tools.invoke([HumanMessage(content=&quot;What&#x27;s the weather in SF?&quot;)])
+response = model_with_tools.invoke([HumanMessage(content="What's the weather in SF?")])
 
-print(f&quot;ContentString: {response.content}&quot;)
-print(f&quot;ToolCalls: {response.tool_calls}&quot;)
+print(f"ContentString: {response.content}")
+print(f"ToolCalls: {response.tool_calls}")
 ```
 
 ```
-ContentString: [{&#x27;id&#x27;: &#x27;toolu_01VTP7DUvSfgtYxsq9x4EwMp&#x27;, &#x27;input&#x27;: {&#x27;query&#x27;: &#x27;weather san francisco&#x27;}, &#x27;name&#x27;: &#x27;tavily_search_results_json&#x27;, &#x27;type&#x27;: &#x27;tool_use&#x27;}]
-ToolCalls: [{&#x27;name&#x27;: &#x27;tavily_search_results_json&#x27;, &#x27;args&#x27;: {&#x27;query&#x27;: &#x27;weather san francisco&#x27;}, &#x27;id&#x27;: &#x27;toolu_01VTP7DUvSfgtYxsq9x4EwMp&#x27;}]
+ContentString: [{'id': 'toolu_01VTP7DUvSfgtYxsq9x4EwMp', 'input': {'query': 'weather san francisco'}, 'name': 'tavily_search_results_json', 'type': 'tool_use'}]
+ToolCalls: [{'name': 'tavily_search_results_json', 'args': {'query': 'weather san francisco'}, 'id': 'toolu_01VTP7DUvSfgtYxsq9x4EwMp'}]
 ```
 
 我们可以看到现在没有文本内容，但有一个工具调用！它想让我们调用Tavily Search工具。
@@ -198,7 +193,7 @@ ToolCalls: [{&#x27;name&#x27;: &#x27;tavily_search_results_json&#x27;, &#x27;arg
 
 现在，我们可以使用LLM和工具来初始化智能体。
 
-请注意，我们传入的是模型，而不是带有工具的模型。这是因为create_tool_calling_executor会在幕后调用 .bind_tools。
+请注意，我们传入的是模型，而不是带有工具的模型。这是因为`create_tool_calling_executor`会在幕后调用 `.bind_tools`。
 
 ### Run the agent （运行智能体）
 
@@ -207,19 +202,21 @@ ToolCalls: [{&#x27;name&#x27;: &#x27;tavily_search_results_json&#x27;, &#x27;arg
 首先，让我们看看当无需调用工具时，它如何回应：
 
 ```
-response = agent_executor.invoke({&quot;messages&quot;: [HumanMessage(content=&quot;hi!&quot;)]})
+response = agent_executor.invoke({"messages": [HumanMessage(content="hi!")]})
 
-response[&quot;messages&quot;]
+response["messages"]
 ```
 
 ```
-[HumanMessage(content=&#x27;hi!&#x27;, id=&#x27;a820fcc5-9b87-457a-9af0-f21768143ee3&#x27;),
- AIMessage(content=&#x27;Hello!&#x27;, response_metadata={&#x27;id&#x27;: &#x27;msg_01VbC493X1VEDyusgttiEr1z&#x27;, &#x27;model&#x27;: &#x27;claude-3-sonnet-20240229&#x27;, &#x27;stop_reason&#x27;: &#x27;end_turn&#x27;, &#x27;stop_sequence&#x27;: None, &#x27;usage&#x27;: {&#x27;input_tokens&#x27;: 264, &#x27;output_tokens&#x27;: 5}}, id=&#x27;run-0e0ddae8-a85b-4bd6-947c-c36c857a4698-0&#x27;, usage_metadata={&#x27;input_tokens&#x27;: 264, &#x27;output_tokens&#x27;: 5, &#x27;total_tokens&#x27;: 269})]
+[HumanMessage(content='hi!', id='a820fcc5-9b87-457a-9af0-f21768143ee3'),
+ AIMessage(content='Hello!', response_metadata={'id': 'msg_01VbC493X1VEDyusgttiEr1z', 'model': 'claude-3-sonnet-20240229', 'stop_reason': 'end_turn', 'stop_sequence': None, 'usage': {'input_tokens': 264, 'output_tokens': 5}}, id='run-0e0ddae8-a85b-4bd6-947c-c36c857a4698-0', usage_metadata={'input_tokens': 264, 'output_tokens': 5, 'total_tokens': 269})]
 ```
 
 为了确切地了解底层发生了什么（并确保它没有调用工具），我们可以查看LangSmith的跟踪。
 
 现在让我们在一个应该调用工具的示例上试一试。
+
+
 
 ```
 response = agent_executor.invoke(
@@ -235,11 +232,11 @@ response[&quot;messages&quot;]
  AIMessage(content=&#x27;Based on the search results, here is a summary of the current weather in San Francisco:\n\nThe weather in San Francisco is currently misty with a temperature of around 53°F (12°C). There is complete cloud cover and moderate winds from the northwest around 5-9 mph (9-14 km/h). Humidity is high at 88%. Visibility is around 3 miles (6.4 km). \n\nThe results provide an hourly forecast as well as current conditions from a couple different weather sources. Let me know if you need any additional details about the San Francisco weather!&#x27;, response_metadata={&#x27;id&#x27;: &#x27;msg_01BRX9mrT19nBDdHYtR7wJ92&#x27;, &#x27;model&#x27;: &#x27;claude-3-sonnet-20240229&#x27;, &#x27;stop_reason&#x27;: &#x27;end_turn&#x27;, &#x27;stop_sequence&#x27;: None, &#x27;usage&#x27;: {&#x27;input_tokens&#x27;: 920, &#x27;output_tokens&#x27;: 132}}, id=&#x27;run-d0325583-3ddc-4432-b2b2-d023eb97660f-0&#x27;, usage_metadata={&#x27;input_tokens&#x27;: 920, &#x27;output_tokens&#x27;: 132, &#x27;total_tokens&#x27;: 1052})]
 ```
 
-我们可以查看LangSmith的跟踪，以确保它有效地调用了搜索工具。
+我们可以查看`LangSmith`的跟踪，以确保它有效地调用了搜索工具。
 
 ### Streaming Messages （流式消息）
 
-我们已经看到了可以使用 .invoke 调用智能体以获取最终响应。如果智能体执行多个步骤，可能需要一段时间。为了显示中间进度，我们可以在消息发生时将消息流返回。
+我们已经看到了可以使用`.invoke`调用智能体以获取最终响应。如果智能体执行多个步骤，可能需要一段时间。为了显示中间进度，我们可以在消息发生时将消息流返回。
 
 ```
 for chunk in agent_executor.stream(
@@ -249,68 +246,73 @@ for chunk in agent_executor.stream(
     print(&quot;----&quot;)
 ```
 
+
+
+# Agent 流式执行示例
+
 ```
-{&#x27;agent&#x27;: {&#x27;messages&#x27;: [AIMessage(content=&#x27;&#x27;, additional_kwargs={&#x27;tool_calls&#x27;: [{&#x27;id&#x27;: &#x27;call_50Kb8zHmFqPYavQwF5TgcOH8&#x27;, &#x27;function&#x27;: {&#x27;arguments&#x27;: &#x27;{\n  &quot;query&quot;: &quot;current weather in San Francisco&quot;\n}&#x27;, &#x27;name&#x27;: &#x27;tavily_search_results_json&#x27;}, &#x27;type&#x27;: &#x27;function&#x27;}]}, response_metadata={&#x27;token_usage&#x27;: {&#x27;completion_tokens&#x27;: 23, &#x27;prompt_tokens&#x27;: 134, &#x27;total_tokens&#x27;: 157}, &#x27;model_name&#x27;: &#x27;gpt-4&#x27;, &#x27;system_fingerprint&#x27;: None, &#x27;finish_reason&#x27;: &#x27;tool_calls&#x27;, &#x27;logprobs&#x27;: None}, id=&#x27;run-042d5feb-c2cc-4c3f-b8fd-dbc22fd0bc07-0&#x27;, tool_calls=[{&#x27;name&#x27;: &#x27;tavily_search_results_json&#x27;, &#x27;args&#x27;: {&#x27;query&#x27;: &#x27;current weather in San Francisco&#x27;}, &#x27;id&#x27;: &#x27;call_50Kb8zHmFqPYavQwF5TgcOH8&#x27;}])]}}
+{'agent': {'messages': [AIMessage(content='', additional_kwargs={'tool_calls': [{'id': 'call_50Kb8zHmFqPYavQwF5TgcOH8', 'function': {'arguments': '{\n  "query": "current weather in San Francisco"\n}', 'name': 'tavily_search_results_json'}, 'type': 'function'}]}, response_metadata={'token_usage': {'completion_tokens': 23, 'prompt_tokens': 134, 'total_tokens': 157}, 'model_name': 'gpt-4', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None}, id='run-042d5feb-c2cc-4c3f-b8fd-dbc22fd0bc07-0', tool_calls=[{'name': 'tavily_search_results_json', 'args': {'query': 'current weather in San Francisco'}, 'id': 'call_50Kb8zHmFqPYavQwF5TgcOH8'}])]}}
 ----
-{&#x27;action&#x27;: {&#x27;messages&#x27;: [ToolMessage(content=&#x27;[{&quot;url&quot;: &quot;https://www.weatherapi.com/&quot;, &quot;content&quot;: &quot;{\&#x27;location\&#x27;: {\&#x27;name\&#x27;: \&#x27;San Francisco\&#x27;, \&#x27;region\&#x27;: \&#x27;California\&#x27;, \&#x27;country\&#x27;: \&#x27;United States of America\&#x27;, \&#x27;lat\&#x27;: 37.78, \&#x27;lon\&#x27;: -122.42, \&#x27;tz_id\&#x27;: \&#x27;America/Los_Angeles\&#x27;, \&#x27;localtime_epoch\&#x27;: 1714426906, \&#x27;localtime\&#x27;: \&#x27;2024-04-29 14:41\&#x27;}, \&#x27;current\&#x27;: {\&#x27;last_updated_epoch\&#x27;: 1714426200, \&#x27;last_updated\&#x27;: \&#x27;2024-04-29 14:30\&#x27;, \&#x27;temp_c\&#x27;: 17.8, \&#x27;temp_f\&#x27;: 64.0, \&#x27;is_day\&#x27;: 1, \&#x27;condition\&#x27;: {\&#x27;text\&#x27;: \&#x27;Sunny\&#x27;, \&#x27;icon\&#x27;: \&#x27;//cdn.weatherapi.com/weather/64x64/day/113.png\&#x27;, \&#x27;code\&#x27;: 1000}, \&#x27;wind_mph\&#x27;: 23.0, \&#x27;wind_kph\&#x27;: 37.1, \&#x27;wind_degree\&#x27;: 290, \&#x27;wind_dir\&#x27;: \&#x27;WNW\&#x27;, \&#x27;pressure_mb\&#x27;: 1019.0, \&#x27;pressure_in\&#x27;: 30.09, \&#x27;precip_mm\&#x27;: 0.0, \&#x27;precip_in\&#x27;: 0.0, \&#x27;humidity\&#x27;: 50, \&#x27;cloud\&#x27;: 0, \&#x27;feelslike_c\&#x27;: 17.8, \&#x27;feelslike_f\&#x27;: 64.0, \&#x27;vis_km\&#x27;: 16.0, \&#x27;vis_miles\&#x27;: 9.0, \&#x27;uv\&#x27;: 5.0, \&#x27;gust_mph\&#x27;: 27.5, \&#x27;gust_kph\&#x27;: 44.3}}&quot;}, {&quot;url&quot;: &quot;https://world-weather.info/forecast/usa/san_francisco/april-2024/&quot;, &quot;content&quot;: &quot;Extended weather forecast in San Francisco. Hourly Week 10 days 14 days 30 days Year. Detailed \\u26a1 San Francisco Weather Forecast for April 2024 - day/night \\ud83c\\udf21\\ufe0f temperatures, precipitations - World-Weather.info.&quot;}]&#x27;, name=&#x27;tavily_search_results_json&#x27;, id=&#x27;d88320ac-3fe1-4f73-870a-3681f15f6982&#x27;, tool_call_id=&#x27;call_50Kb8zHmFqPYavQwF5TgcOH8&#x27;)]}}
+{'action': {'messages': [ToolMessage(content='[{"url": "https://www.weatherapi.com/", "content": "{\'location\': {\'name\': \'San Francisco\', \'region\': \'California\', \'country\': \'United States of America\', \'lat\': 37.78, \'lon\': -122.42, \'tz_id\': \'America/Los_Angeles\', \'localtime_epoch\': 1714426906, \'localtime\': \'2024-04-29 14:41\'}, \'current\': {\'last_updated_epoch\': 1714426200, \'last_updated\': \'2024-04-29 14:30\', \'temp_c\': 17.8, \'temp_f\': 64.0, \'is_day\': 1, \'condition\': {\'text\': \'Sunny\', \'icon\': \'//cdn.weatherapi.com/weather/64x64/day/113.png\', \'code\': 1000}, \'wind_mph\': 23.0, \'wind_kph\': 37.1, \'wind_degree\': 290, \'wind_dir\': \'WNW\', \'pressure_mb\': 1019.0, \'pressure_in\': 30.09, \'precip_mm\': 0.0, \'precip_in\': 0.0, \'humidity\': 50, \'cloud\': 0, \'feelslike_c\': 17.8, \'feelslike_f\': 64.0, \'vis_km\': 16.0, \'vis_miles\': 9.0, \'uv\': 5.0, \'gust_mph\': 27.5, \'gust_kph\': 44.3}}"}, {"url": "https://world-weather.info/forecast/usa/san_francisco/april-2024/", "content": "Extended weather forecast in San Francisco. Hourly Week 10 days 14 days 30 days Year. Detailed \\u26a1 San Francisco Weather Forecast for April 2024 - day/night \\ud83c\\udf21\\ufe0f temperatures, precipitations - World-Weather.info."}]', name='tavily_search_results_json', id='d88320ac-3fe1-4f73-870a-3681f15f6982', tool_call_id='call_50Kb8zHmFqPYavQwF5TgcOH8')]}}
 ----
-{&#x27;agent&#x27;: {&#x27;messages&#x27;: [AIMessage(content=&#x27;The current weather in San Francisco, California is sunny with a temperature of 17.8°C (64.0°F). The wind is coming from the WNW at 23.0 mph. The humidity is at 50%. [source](https://www.weatherapi.com/)&#x27;, response_metadata={&#x27;token_usage&#x27;: {&#x27;completion_tokens&#x27;: 58, &#x27;prompt_tokens&#x27;: 602, &#x27;total_tokens&#x27;: 660}, &#x27;model_name&#x27;: &#x27;gpt-4&#x27;, &#x27;system_fingerprint&#x27;: None, &#x27;finish_reason&#x27;: &#x27;stop&#x27;, &#x27;logprobs&#x27;: None}, id=&#x27;run-0cd2a507-ded5-4601-afe3-3807400e9989-0&#x27;)]}}
-----
+{'agent': {'messages': [AIMessage(content='The current weather in San Francisco, California is sunny with a temperature of 17.8°C (64.0°F). The wind is coming from the WNW at 23.0 mph. The humidity is at 50%. [source](https://www.weatherapi.com/)', response_metadata={'token_usage': {'completion_tokens': 58, 'prompt_tokens': 602, 'total_tokens': 660}, 'model_name': 'gpt-4', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None}, id='run-0cd2a507-ded5-4601-afe3-3807400e9989-0')]}}
 ```
 
-### Streaming tokens
+## Streaming tokens
 
-除了流式返回消息之外，流式返回标记也非常有用。我们可以使用 .astream_events 方法实现这一点。
+除了流式返回消息之外，流式返回标记也非常有用。我们可以使用 `.astream_events` 方法实现这一点。
 
 ```
 async for event in agent_executor.astream_events(
-    {&quot;messages&quot;: [HumanMessage(content=&quot;whats the weather in sf?&quot;)]}, version=&quot;v1&quot;
+    {"messages": [HumanMessage(content="whats the weather in sf?")]}, version="v1"
 ):
-    kind = event[&quot;event&quot;]
-    if kind == &quot;on_chain_start&quot;:
+    kind = event["event"]
+    if kind == "on_chain_start":
         if (
-            event[&quot;name&quot;] == &quot;Agent&quot;
-        ):  # Was assigned when creating the agent with `.with_config({&quot;run_name&quot;: &quot;Agent&quot;})`
+            event["name"] == "Agent"
+        ):  # Was assigned when creating the agent with `.with_config({"run_name": "Agent"})`
             print(
-                f&quot;Starting agent: {event[&#x27;name&#x27;]} with input: {event[&#x27;data&#x27;].get(&#x27;input&#x27;)}&quot;
+                f"Starting agent: {event['name']} with input: {event['data'].get('input')}"
             )
-    elif kind == &quot;on_chain_end&quot;:
+    elif kind == "on_chain_end":
         if (
-            event[&quot;name&quot;] == &quot;Agent&quot;
-        ):  # Was assigned when creating the agent with `.with_config({&quot;run_name&quot;: &quot;Agent&quot;})`
+            event["name"] == "Agent"
+        ):  # Was assigned when creating the agent with `.with_config({"run_name": "Agent"})`
             print()
-            print(&quot;--&quot;)
+            print("--")
             print(
-                f&quot;Done agent: {event[&#x27;name&#x27;]} with output: {event[&#x27;data&#x27;].get(&#x27;output&#x27;)[&#x27;output&#x27;]}&quot;
+                f"Done agent: {event['name']} with output: {event['data'].get('output')['output']}"
             )
-    if kind == &quot;on_chat_model_stream&quot;:
-        content = event[&quot;data&quot;][&quot;chunk&quot;].content
+    if kind == "on_chat_model_stream":
+        content = event["data"]["chunk"].content
         if content:
             # Empty content in the context of OpenAI means
             # that the model is asking for a tool to be invoked.
             # So we only print non-empty content
-            print(content, end=&quot;|&quot;)
-    elif kind == &quot;on_tool_start&quot;:
-        print(&quot;--&quot;)
+            print(content, end="|")
+    elif kind == "on_tool_start":
+        print("--")
         print(
-            f&quot;Starting tool: {event[&#x27;name&#x27;]} with inputs: {event[&#x27;data&#x27;].get(&#x27;input&#x27;)}&quot;
+            f"Starting tool: {event['name']} with inputs: {event['data'].get('input')}"
         )
-    elif kind == &quot;on_tool_end&quot;:
-        print(f&quot;Done tool: {event[&#x27;name&#x27;]}&quot;)
-        print(f&quot;Tool output was: {event[&#x27;data&#x27;].get(&#x27;output&#x27;)}&quot;)
-        print(&quot;--&quot;)
+    elif kind == "on_tool_end":
+        print(f"Done tool: {event['name']}")
+        print(f"Tool output was: {event['data'].get('output')}")
+        print("--")
 ```
 
 ```
 --
-Starting tool: tavily_search_results_json with inputs: {&#x27;query&#x27;: &#x27;current weather in San Francisco&#x27;}
+Starting tool: tavily_search_results_json with inputs: {'query': 'current weather in San Francisco'}
 Done tool: tavily_search_results_json
-Tool output was: [{&#x27;url&#x27;: &#x27;https://www.weatherapi.com/&#x27;, &#x27;content&#x27;: &quot;{&#x27;location&#x27;: {&#x27;name&#x27;: &#x27;San Francisco&#x27;, &#x27;region&#x27;: &#x27;California&#x27;, &#x27;country&#x27;: &#x27;United States of America&#x27;, &#x27;lat&#x27;: 37.78, &#x27;lon&#x27;: -122.42, &#x27;tz_id&#x27;: &#x27;America/Los_Angeles&#x27;, &#x27;localtime_epoch&#x27;: 1714427052, &#x27;localtime&#x27;: &#x27;2024-04-29 14:44&#x27;}, &#x27;current&#x27;: {&#x27;last_updated_epoch&#x27;: 1714426200, &#x27;last_updated&#x27;: &#x27;2024-04-29 14:30&#x27;, &#x27;temp_c&#x27;: 17.8, &#x27;temp_f&#x27;: 64.0, &#x27;is_day&#x27;: 1, &#x27;condition&#x27;: {&#x27;text&#x27;: &#x27;Sunny&#x27;, &#x27;icon&#x27;: &#x27;//cdn.weatherapi.com/weather/64x64/day/113.png&#x27;, &#x27;code&#x27;: 1000}, &#x27;wind_mph&#x27;: 23.0, &#x27;wind_kph&#x27;: 37.1, &#x27;wind_degree&#x27;: 290, &#x27;wind_dir&#x27;: &#x27;WNW&#x27;, &#x27;pressure_mb&#x27;: 1019.0, &#x27;pressure_in&#x27;: 30.09, &#x27;precip_mm&#x27;: 0.0, &#x27;precip_in&#x27;: 0.0, &#x27;humidity&#x27;: 50, &#x27;cloud&#x27;: 0, &#x27;feelslike_c&#x27;: 17.8, &#x27;feelslike_f&#x27;: 64.0, &#x27;vis_km&#x27;: 16.0, &#x27;vis_miles&#x27;: 9.0, &#x27;uv&#x27;: 5.0, &#x27;gust_mph&#x27;: 27.5, &#x27;gust_kph&#x27;: 44.3}}&quot;}, {&#x27;url&#x27;: &#x27;https://www.weathertab.com/en/c/e/04/united-states/california/san-francisco/&#x27;, &#x27;content&#x27;: &#x27;San Francisco Weather Forecast for Apr 2024 - Risk of Rain Graph. Rain Risk Graph: Monthly Overview. Bar heights indicate rain risk percentages. Yellow bars mark low-risk days, while black and grey bars signal higher risks. Grey-yellow bars act as buffers, advising to keep at least one day clear from the riskier grey and black days, guiding ...&#x27;}]
+Tool output was: [{'url': 'https://www.weatherapi.com/', 'content': "{'location': {'name': 'San Francisco', 'region': 'California', 'country': 'United States of America', 'lat': 37.78, 'lon': -122.42, 'tz_id': 'America/Los_Angeles', 'localtime_epoch': 1714427052, 'localtime': '2024-04-29 14:44'}, 'current': {'last_updated_epoch': 1714426200, 'last_updated': '2024-04-29 14:30', 'temp_c': 17.8, 'temp_f': 64.0, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 23.0, 'wind_kph': 37.1, 'wind_degree': 290, 'wind_dir': 'WNW', 'pressure_mb': 1019.0, 'pressure_in': 30.09, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 50, 'cloud': 0, 'feelslike_c': 17.8, 'feelslike_f': 64.0, 'vis_km': 16.0, 'vis_miles': 9.0, 'uv': 5.0, 'gust_mph': 27.5, 'gust_kph': 44.3}}"}, {'url': 'https://www.weathertab.com/en/c/e/04/united-states/california/san-francisco/', 'content': 'San Francisco Weather Forecast for Apr 2024 - Risk of Rain Graph. Rain Risk Graph: Monthly Overview. Bar heights indicate rain risk percentages. Yellow bars mark low-risk days, while black and grey bars signal higher risks. Grey-yellow bars act as buffers, advising to keep at least one day clear from the riskier grey and black days, guiding ...'}]
 --
-The| current| weather| in| San| Francisco|,| California|,| USA| is| sunny| with| a| temperature| of| |17|.|8|°C| (|64|.|0|°F|).| The| wind| is| blowing| from| the| W|NW| at| a| speed| of| |37|.|1| k|ph| (|23|.|0| mph|).| The| humidity| level| is| at| |50|%.| [|Source|](|https|://|www|.weather|api|.com|/)|
+The| current| weather| in| San| Francisco|,| California|,| USA| is| sunny| with| a| temperature| of| |17|.|8|°C| (|64|.|0|°F|).| The| wind| is| blowing| from| the| W|NW| at| a| speed| of| |37|.|1| k|ph| (|23|.|0| mph|).| The| humidity| level| is| at| |50|%.| [|Source|](|https|://|www|.weather|api|.com/)|
 ```
 
 ### Adding in memory
+
+
 
 如前所述，该智能体是无状态的。这意味着它不会记住先前的交互。要给它记忆，我们需要传入一个检查点。在传入检查点时，我们还必须在调用智能体时传入一个线程ID（这样它就知道要从哪个线程/对话中恢复）。
 

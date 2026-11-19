@@ -1,12 +1,13 @@
+
 # LlamaIndex 内测问题反馈
 
 > 来源：[https://aicarrier.feishu.cn/docx/N9kedVwh3oWtLWxVMgmch92Zn2d](https://aicarrier.feishu.cn/docx/N9kedVwh3oWtLWxVMgmch92Zn2d)
 
-# 问题
+## 问题
 
-1.  运行python llamaindex_internlm.py时报错。
+### 1. 运行`python llamaindex_internlm.py`时报错。
 
-解决方法：     pip install einops
+解决方法：`pip install einops`
 
 ```
 ImportError: This modeling file requires the following packages that were not found in your environment: einops. Run `pip install einops`
@@ -16,10 +17,9 @@ installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/
 that match your environment. Please note that you may need to restart your runtime after installation.
 ```
 
-# 问题
+### 2.手册第3小节（`LlamaIndex` `HuggingFaceLLM`）缺少两个包
 
-2.手册第3小节（LlamaIndex HuggingFaceLLM）缺少两个包
-
+```
 (base) root@intern-studio-50074959:~# conda activate llamaindex
 
 thon llamaindex_internlm.py(llamaindex) root@intern-studio-50074959:~# cd ~/llamaindex_demo/
@@ -59,25 +59,27 @@ File "/root/.conda/envs/llamaindex/lib/python3.10/site-packages/transformers/dyn
 raise ImportError(
 
 ImportError: This modeling file requires the following packages that were not found in your environment: einops. Run pip install einops
+```
 
-解决方法：pip install einops protobuf
+解决方法：`pip install einops protobuf`
 
-# 3.GPU需要320Mib
+### 3.GPU需要320Mib
 
 ![](img/b0ff5dd665eb0886bfd1528b2d788054.png)
 
-# 4.给定的安装代码缺少llama_index.llms.huggingface
+### 4.给定的安装代码缺少`llama_index.llms.huggingface`
 
 ![](img/41db09caebf1aac5f0c7536a521020e2.png)
 
-# 5、路径问题
+### 5、路径问题
 
 ![](img/5469cad3ce42cc9977297dbf1a9b5c07.png)
 
-应该是进入/root/model/sentence-transformer路径下。
+应该是进入`/root/model/sentence-transformer`路径下。
 
-# **6**、No module named 'llama_index.embeddings.huggingface'，通过4的大佬解答方法，未能解决
+### 6、No module named `llama_index.embeddings.huggingface`，通过4的大佬解答方法，未能解决
 
+```
 (llamaindex) root@intern-studio-50076382:~/llamaindex_demo# python llamaindex_RAG.py
 
 Traceback (most recent call last):
@@ -87,13 +89,15 @@ File "/root/llamaindex_demo/llamaindex_RAG.py", line 3, in <module>
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 ModuleNotFoundError: No module named 'llama_index.embeddings.huggingface'
+```
 
-解决办法：pip install llama-index-embeddings-huggingface llama-index-llms-huggingface llama-index-core
+解决办法：`pip install llama-index-embeddings-huggingface llama-index-llms-huggingface llama-index-core`
 
-# **7、ImportError: ****tiktoken**** package问题**
+### 7、ImportError: `tiktoken` package问题
 
 问题现象如下：
 
+```
 (lmdeploy) root@intern-studio-073772:~/llamaindex_demo# python llamaindex_RAG.py
 
 /root/.conda/envs/lmdeploy/lib/python3.10/site-packages/pydantic/_internal/_fields.py:161: UserWarning: Field "model_id" has conflict with protected namespace "model_".
@@ -102,7 +106,7 @@ You may be able to resolve this warning by setting model_config['protected_names
 
 warnings.warn(
 
-Loading checkpoint shards: 100%|████████████████████████████████████████████████████| 2/2 [00:39<00:00, 19.84s/it]
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████| 2/2 [00:39<00:00, 19.84s/it]
 
 Traceback (most recent call last):
 
@@ -149,8 +153,9 @@ File "/root/.conda/envs/lmdeploy/lib/python3.10/site-packages/llama_index/core/u
 raise ImportError(tiktoken_import_err)
 
 ImportError: tiktoken package not found, please run pip install tiktoken
+```
 
-解决方式（重新安装tiktoken）：
+解决方式（重新安装`tiktoken`）：
 
 ```
 (lmdeploy) root@intern-studio-073772:~/llamaindex_demo# pip list|grep tiktoken
@@ -162,7 +167,7 @@ Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
 Collecting tiktoken
   Using cached https://pypi.tuna.tsinghua.edu.cn/packages/e7/8c/7d1007557b343d5cf18349802e94d3a14397121e9105b4661f8cd753f9bf/tiktoken-0.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
 Requirement already satisfied: regex&gt;=2022.1.18 in /root/.conda/envs/lmdeploy/lib/python3.10/site-packages (from tiktoken) (2024.5.15)
-Requirement already satisfied: requests&gt;=2.26.0 in /root/.conda/envs/lmdeploy/lib/python3.10/site-packages (from tiktoken) (2.32.3)
+Requirement already satisfied: requests&gt;=2.26.0 in /root/.conda/envs/lmdeploy/lib/python3.10/site-packages (from requests&gt;=2.26.0-&gt;tiktoken) (2.32.3)
 Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /root/.conda/envs/lmdeploy/lib/python3.10/site-packages (from requests&gt;=2.26.0-&gt;tiktoken) (2.0.4)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /root/.conda/envs/lmdeploy/lib/python3.10/site-packages (from requests&gt;=2.26.0-&gt;tiktoken) (3.4)
 Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /root/.conda/envs/lmdeploy/lib/python3.10/site-packages (from requests&gt;=2.26.0-&gt;tiktoken) (2.1.0)
@@ -173,9 +178,9 @@ WARNING: Running pip as the &#x27;root&#x27; user can result in broken permissio
 (lmdeploy) root@intern-studio-073772:~/llamaindex_demo# python llamaindex_RAG.py
 ```
 
-# 8、补充
+## 8、补充
 
-1、安装 Llamaindex和相关的包
+### 1、安装`Llamaindex`和相关的包
 
 ```
 conda activate llamaindex
@@ -184,17 +189,19 @@ conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=
 
 执行以上内容大约需要 23 min。
 
-2、在 /root/data 目录下执行该脚本即可自动开始下载：
+### 2、在`/root/data`目录下执行该脚本即可自动开始下载：
 
-应改成 在 /root/llamaindex_demo 目录下执行该脚本即可自动开始下载：
+应改成 在`/root/llamaindex_demo`目录下执行该脚本即可自动开始下载：
 
 ```
 python download_hf.py
 # 或者 python /root/llamaindex_demo/download_hf.py
 ```
 
-# 9、报错，提示缺少sentencepiece
+### 9、报错，提示缺少`sentencepiece`
 
-运行报错，提示缺少sentencepiece。可以通过pip install sentencepiece修复该问题。
+
+
+运行报错，提示缺少`sentencepiece`。可以通过`pip install sentencepiece`修复该问题。
 
 ![](img/b463be60f651b229ead0aef4d578c977.png)

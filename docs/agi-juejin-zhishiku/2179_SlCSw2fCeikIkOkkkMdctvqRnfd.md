@@ -1,8 +1,7 @@
-# 12.07-OpenAI 活动第二弹：“强化微调”打造领域专家 AI 模型，阿尔特曼称其为今年最大惊喜
-
-> 来源：[https://agijuejin.feishu.cn/docx/ViiJdSTDMooDWyx73OqcqEAVnPc](https://agijuejin.feishu.cn/docx/ViiJdSTDMooDWyx73OqcqEAVnPc)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 07 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/ViiJdSTDMooDWyx73OqcqEAVnPc](https://agijuejin.feishu.cn/docx/ViiJdSTDMooDWyx73OqcqEAVnPc)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -16,7 +15,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/815/957.htm)
 
 ![](img/b92b1224cb58ff92df939cb9dc7947f7.png)
 
-2024 年 12 月 7 日，OpenAI 启动‘shipmas’新品发布周期。活动第二日推出强化微调，可帮助开发者打造特定领域专家模型。该技术利用强化学习算法，能提升模型推理能力和准确性，支持用户创建独特模型并应用于多个专业领域。OpenAI 鼓励研究机构等申请，预计 2025 年初公开发布。OpenAI 首席执行官阿尔特曼称其为今年最大惊喜之一。关键词：OpenAI、AI、微调。
+2024 年 12 月 7 日，OpenAI 启动 shipmas 新品发布周期。活动第二日推出强化微调，可帮助开发者打造特定领域专家模型。该技术利用强化学习算法，能提升模型推理能力和准确性，支持用户创建独特模型并应用于多个专业领域。OpenAI 鼓励研究机构等申请，预计 2025 年初公开发布。OpenAI 首席执行官阿尔特曼称其为今年最大惊喜之一。关键词：OpenAI、AI、微调。
 
 ## 💫 企业动态
 
@@ -52,7 +51,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/815/895.htm)
 
 消息称三星 Galaxy S25 系列将首发新一波 AI 功能，新 Bixby 正式接入大模型。三星于 12 月 5 日官宣 One UI 7 Beta 开测，S25 首发的 One UI 7 正式版与 S24 的测试版不同。今年 7 月三星确认 Bixby 将获人工智能升级，且可应用于家电产品，能理解包含多个命令的自然语言，如设置空调温度并安排洗衣时间。
 
-### 💡 马斯克密友空降白宫！特朗普官宣首位AI和加密货币「沙皇」人选
+### 💡 马斯克密友空降白宫！特朗普官宣首位 AI 和加密货币「沙皇」人选
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JIO2EURQ0511ABV6.html?spss=dy_author)
 

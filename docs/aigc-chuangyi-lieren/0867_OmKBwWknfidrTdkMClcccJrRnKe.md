@@ -1,3 +1,4 @@
+
 # Codex 独立 App 来了，这是一个新东西
 
 > 来源：[https://aigcreative.feishu.cn/docx/TbvKdc0Y4oi0t5xJgGhcXQ4knOg](https://aigcreative.feishu.cn/docx/TbvKdc0Y4oi0t5xJgGhcXQ4knOg)
@@ -6,7 +7,7 @@
 
 > 来源：👸号：AGI Hunt
 
-刚刚，OpenAI 把 Codex 做成了一个独立的桌面应用， 这次，真的有点不一样。
+刚刚，OpenAI 把 Codex 做成了一个独立的桌面应用，这次，真的有点不一样。
 
 ![](img/07b05830f84cfd27e65315f6a732dbc8.png)
 
@@ -18,7 +19,7 @@
 
 Close
 
-**观看更多**
+观看更多
 
 更多
 
@@ -32,25 +33,25 @@ Video Details
 
 而在 Cowork 出来之后我也试了试，但说实话没用太多，因为那不是我的主业，我还是更喜欢终端里效率起飞的感觉，甚至我还做了一些 worktree 相关的工具来辅助并行开发。
 
-但这次打开 Codex App 之后，我承认， Worktree 这块它做得实在太好了 。
+但这次打开 Codex App 之后，我承认，Worktree 这块它做得实在太好了。
 
 好到什么程度呢？
 
 我觉得接下来很长一段时间，我可能真会把不少工作切过来了。
 
-虽然 Codex 比 Claude Code 慢，但它 开 worktree 非常方便能更好地并行 ——这点在实际干活时，也算是用并发来弥补单次速度的不足了。
+虽然 Codex 比 Claude Code 慢，但它开 worktree 非常方便能更好地并行 ——这点在实际干活时，也算是用并发来弥补单次速度的不足了。
 
 好了，说回 Codex App 本身。
 
 ## 指挥中心
 
-OpenAI 称： Codex App 不是又一个 IDE。
+OpenAI 称：Codex App 不是又一个 IDE。
 
-OpenAI 管它叫「 Agent 的指挥中心 」（command center for agents）。
+OpenAI 管它叫「Agent 的指挥中心」（command center for agents）。
 
 Close
 
-**观看更多**
+观看更多
 
 更多
 
@@ -96,7 +97,7 @@ Sam Altman 自己也说，最近他做了一个相当大的项目， 全程没�
 
 这是我最喜欢的功能，也是 Codex 的重点功能。
 
-**在 Codex App** 中，每个 Agent 以 线程（Thread） 的形式运行，按项目分组。你可以在不同任务之间无缝切换，不会丢失上下文。你可以在线程里直接查看 Agent 的改动、在 diff 上留评论、甚至直接在编辑器里手动改。
+在 Codex App 中，每个 Agent 以 线程（Thread） 的形式运行，按项目分组。你可以在不同任务之间无缝切换，不会丢失上下文。你可以在线程里直接查看 Agent 的改动、在 diff 上留评论、甚至直接在编辑器里手动改。
 
 但真正让我觉得「这是个新东西」的，是内置的 Git Worktree 支持 。
 
@@ -106,13 +107,13 @@ Sam Altman 自己也说，最近他做了一个相当大的项目， 全程没�
 
 Agent 在后台跑着，你该干嘛干嘛。
 
-它做完了？你可以 checkout 它的改动到本地。
+它做完了？你可以 `checkout` 它的改动到本地。
 
 它还在做？不影响你本地的 git 状态，继续做就好。
 
 你甚至可以为每个线程定义 Worktree 的 setup 脚本 和常用的项目操作，一键搞定环境配置。
 
-我之前在 Claude Code 里，为了实现类似的并行效果，自己写了工具来管理 worktree。能用，但总是有点「拼凑」和不够 native 的感觉。而 Codex App 把这个体验做成了 一等公民 ：内置、原生、丝滑。
+我之前在 Claude Code 里，为了实现类似的并行效果，自己写了工具来管理 worktree。能用，但总是有点「拼凑」和不够 native 的感觉。而 Codex App 把这个体验做成了一等公民 ：内置、原生、丝滑。
 
 ![](img/534a719b88f7cfb92d506a1daf50b9dc.png)
 
@@ -120,7 +121,7 @@ Agent 在后台跑着，你该干嘛干嘛。
 
 非常好用。
 
-而且 Codex App 会自动同步你在 CLI 和 IDE 插件中的 session 历史和配置， Auto Context 和活跃线程在 App 和 IDE 之间是共享的 。
+而且 Codex App 会自动同步你在 CLI 和 IDE 插件中的 session 历史和配置，Auto Context 和活跃线程在 App 和 IDE 之间是共享的 。
 
 打开就能用，不用重新来过。
 
@@ -140,7 +141,7 @@ Codex App 内置了专门的界面来创建和管理 Skills，而且你在 App �
 
 这个 Skills 的设计思路和 Claude Code 的 Skills 很像（当然 Claude Code 的 Skills 也是从 Anthropic blog 中提出的理念演化来的）。
 
-本质上都是 用文件系统来组织 Agent 的能力 ，而不是把所有工具定义一股脑塞进 context。
+本质上都是 用文件系统来组织 Agent 的能力 ，而不是把所有工具定义一股脑塞进 context 。
 
 ![](img/2a51ecf55d4bc7452abc5b4400d7d12f.png)
 
@@ -162,7 +163,7 @@ Atlas、Cloudflare Deploy、Develop Web Game、Doc（编辑 docx 文件）、Fig
 
 ![](img/e94f97184cef10987f4f81883fbefc29.png)
 
-OpenAI 搞了个很夸张的演示来展示 Skills 的威力： 用一条 prompt 让 Codex 做了一个类似马里奥赛车的 3D 赛车游戏。
+OpenAI 搞了很夸张的演示来展示 Skills 的威力：用一条 prompt 让 Codex 做了一个类似马里奥赛车的 3D 赛车游戏。
 
 ![](img/391708368fbe5178e53f9a86a0183839.png)
 
@@ -194,7 +195,7 @@ OpenAI 在内部已经建了几百个 Skills，覆盖多个团队：从跑 eval�
 
 ## Automations：定时任务，但更聪明
 
-Codex App 里还有一个很实用的功能： Automations （目前还是 Beta）。
+Codex App 里还有一个很实用的功能：Automations（目前还是 Beta）。
 
 简单说，就是让 Codex 按照你定义的时间表，在后台自动跑任务，多少有点 pulse 那意思。
 
@@ -228,15 +229,15 @@ OpenAI 预设了 9 个模板，覆盖了日常开发中最常见的重复性工�
 
 OpenAI 自己已经在内部大量使用 Automations：每日 issue 分流、查找并汇总 CI 失败、生成每日发布简报、检查 bug。
 
-甚至还有个骚操作： 用 Automations 来定期自动创建新的 Skills 。对，让 Agent 自动生产 Agent 的能力。
+甚至还有个骚操作：用 Automations 来定期自动创建新的 Skills 。对，让 Agent 自动生产 Agent 的能力。
 
 ## 每个线程一个终端
 
 这个细节值得单独说一下：Codex App 里，你可以 为每个线程打开一个独立的终端 。
 
-也就是说，Agent 在一个线程里改完代码之后，你可以直接在这个线程的终端里跑测试、启动 dev server、执行脚本。不用切到外面的终端，不用手动 cd 到 worktree 的目录。
+也就是说，Agent 在一个线程里改完代码之后，你可以直接在这个线程的终端里跑测试、启动 dev server、执行脚本。不用切到外面的终端，不用手动 `cd` 到 worktree 的目录。
 
-对于习惯在 CLI 里干活的人来说，这个设计实在太对味了： 既给了 GUI 的便利，又没丢掉终端的灵活性 。
+对于习惯在 CLI 里干活的人来说，这个设计实在太对味了：既给了 GUI 的便利，又没丢掉终端的灵活性 。
 
 ## 两种个性
 
@@ -244,7 +245,7 @@ OpenAI 自己已经在内部大量使用 Automations：每日 issue 分流、查
 
 一种简洁务实，干活利索不废话；另一种更有对话感，会多聊两句，更有共情力。能力上没有任何区别，纯粹看你喜欢哪种风格。
 
-用 /personality 命令就能切换，App、CLI、IDE 插件都支持。
+用 `/personality` 命令就能切换，App、CLI、IDE 插件都支持。
 
 Agent 越来越不像工具了，开始有「人格」了。
 
@@ -262,7 +263,7 @@ Codex App 在安全方面用的是和 CLI 一样的方案：原生的、 开源�
 
 ![](img/df184fd3a482d1bf35e2ec2981adffae.png)
 
-OpenAI 这次还搞了个限时活动： ChatGPT Free 和 Go 用户也能用 Codex 了 。同时，所有付费用户的 rate limits 直接翻倍 。
+OpenAI 这次还搞了个限时活动：ChatGPT Free 和 Go 用户也能用 Codex 了 。同时，所有付费用户的 rate limits 直接翻倍 。
 
 无论是在 App、CLI、IDE 插件还是云端使用，都是双倍。
 

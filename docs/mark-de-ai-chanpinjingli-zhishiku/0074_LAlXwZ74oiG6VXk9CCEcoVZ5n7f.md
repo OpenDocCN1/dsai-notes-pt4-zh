@@ -1,10 +1,11 @@
+
 # AI 核心技术
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DqZPdL95io1a7HxSwRGcw3ARnke](https://qqs7y1hozd1.feishu.cn/docx/DqZPdL95io1a7HxSwRGcw3ARnke)
 
 <https://qqs7y1hozd1.feishu.cn/sync/WsLwdK9UMsOqdhb16EFcUL0qn4d>
 
-# 机器学习
+## 机器学习
 
 | [机器学习入门](https://qqs7y1hozd1.feishu.cn/wiki/V5T3wE17iiLYYwkYZ6pcHHZan4d) | [k-近邻算法](https://qqs7y1hozd1.feishu.cn/wiki/OHYBw3YFViU0hCkWc8TcWibEnjh) |
 | --- | --- |
@@ -16,9 +17,8 @@
 | [利用 PCA 来简化数据](https://qqs7y1hozd1.feishu.cn/wiki/UyIhwN3j1in9IBkNHwFc9KkSnUf) | [利用SVD简化数据](https://qqs7y1hozd1.feishu.cn/wiki/LJZJwA4QCis0fsk2rLRcOZTCnrd) |
 | [大数据与MapReduce](https://qqs7y1hozd1.feishu.cn/wiki/O8TxwOhr9iQmeJkXdlJcHX1tnOe) | [推荐系统](https://qqs7y1hozd1.feishu.cn/wiki/UQYmwmBgiiX3G6kMyAVcU1ohnFh) |
 
-##### ✅机器学习-tom mitchell
-
-##### ✅prml模式识别与机器学习
+### ✅机器学习-tom mitchell
+### ✅prml模式识别与机器学习
 
 ![](img/2c81490c03e5ce74fbff661666abb02d.png)
 
@@ -41,9 +41,7 @@
 | [文本分析.pdf](https://qqs7y1hozd1.feishu.cn/wiki/T27mwFmMMiAeVHkqqO7cOIpWniJ) | [面试速查（cheat sheets）](https://qqs7y1hozd1.feishu.cn/wiki/IFWiwPyXYizpdkkSy0Lc0QcGnfd) |
 | [机器学习实战.pdf](https://qqs7y1hozd1.feishu.cn/wiki/Rkm3wFOL1iBf6ZksMZ3cqO0OnAc) |  |
 
----
-
-# 深度学习
+## 深度学习
 
 | [PyTorch 入门](https://qqs7y1hozd1.feishu.cn/wiki/YK3jwgscdiCbAykueFgcCVMNnCb) | [深度学习入门基础](https://qqs7y1hozd1.feishu.cn/wiki/LB4KwWEYqi3CRBk69t9c8JignCG) |
 | --- | --- |
@@ -75,7 +73,7 @@
 
 ---
 
-# 强化学习
+## 强化学习
 
 | [强化学习入门](https://qqs7y1hozd1.feishu.cn/wiki/Sx4CwZ9o8iVVKekbmwncSFKVnWb) | [RLHF 相关](https://qqs7y1hozd1.feishu.cn/wiki/LbvjwUvMoiNfcBkytmncKinanCe) |
 | --- | --- |
@@ -83,9 +81,7 @@
 | [大模型RLHF：PPO原理与源码解读](https://qqs7y1hozd1.feishu.cn/wiki/CT8Ewf87qiFBzTkRdqrcyrHvnkb) | [策略梯度（pg）](https://qqs7y1hozd1.feishu.cn/wiki/MzXTwXXuEiU7xCk9HOLc7TFensf) |
 | [近端策略优化(ppo)](https://qqs7y1hozd1.feishu.cn/wiki/TjCPwS1gSix70LkemFZcow7Fnmg) |  |
 
----
-
-# 多模态
+## 多模态
 
 | [多模态大模型—万字梳理视觉自回归图像生成 ](https://qqs7y1hozd1.feishu.cn/wiki/Nbx7wL0SkiC5dAkqXQVcWHeGnGc) | [多模态和大型多模态模型【LMMs】 ](https://qqs7y1hozd1.feishu.cn/wiki/NDIIw9yWbi2QKOkXklCcCwj5nfd) |
 | --- | --- |
@@ -93,7 +89,7 @@
 
 ---
 
-# 检索增强 RAG
+## 检索增强 RAG
 
 | [大模型RAG（检索增强生成）含高级方法](https://qqs7y1hozd1.feishu.cn/wiki/L36VwW7fhisqDVk1mBbcFAg7n9b) | [RAG技术基本原理](https://qqs7y1hozd1.feishu.cn/wiki/X3hCwzcqkiXQ5xk4BTqcI4Ifnre) |
 | --- | --- |
@@ -101,20 +97,21 @@
 
 ---
 
-# Al Agent
+## Al Agent
 
 | [Agent项目](https://qqs7y1hozd1.feishu.cn/wiki/N6Wfw9DtsiiI6ykIsXDc4pcMn0c) | [Agents 应用场景](https://qqs7y1hozd1.feishu.cn/wiki/QkkywXxkkicpbGkwxQDc4ClxnWg) |
 | --- | --- |
 | [AI Agents全景图](https://qqs7y1hozd1.feishu.cn/wiki/AiTKwTvqsiiZIpky8zvcDp7InAb) | [Agent技术](https://qqs7y1hozd1.feishu.cn/wiki/RlnpwCGebie8hhk0xCfc6I2DnIh) |
 | [Agent 搭建](https://qqs7y1hozd1.feishu.cn/wiki/FbpDwAggfirijdkva0ucUXflnCg) | [各大厂Agent项目案例](https://qqs7y1hozd1.feishu.cn/wiki/Wh8hwQtiYiVHTnknC7Tczcs6n0c) |
 
----
-
-# LLM
+## LLM
 
 | [基于LLM构建知识问答系统 ](https://qqs7y1hozd1.feishu.cn/wiki/L21Fw2N0niWn1WkBk74cA1Vcnj6) | [LLM+Embedding构建问答系统的优化方案 ](https://qqs7y1hozd1.feishu.cn/wiki/EODjw1wH5iFH46kCRyYc8sEWnAU) |
 | --- | --- |
 | [LLM 各种技巧 | Prompt Engineering 指南 ](https://qqs7y1hozd1.feishu.cn/wiki/AMTpwv5x8iTgvek4GJpcbH2znHe) | [智能文档问答评估，提升 LLM 应用质量！](https://qqs7y1hozd1.feishu.cn/wiki/JfWZw2lJeimwvCkOmHEcItP0nRd) |
 | [【LLM-RAG】知识库问答 | 检索 | embedding](https://qqs7y1hozd1.feishu.cn/wiki/T0JzwMMKJiWXjJkNTvscBkBMnmc) | [AI产品经理总结 | LLM中14种Prompt策略](https://qqs7y1hozd1.feishu.cn/wiki/MMqbwflUkieKZikfitIccvJsnit) |
-| [基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答](https://qqs7y1hozd1.feishu.cn/wiki/DPhqwALdUixJODkfa5ycA1RInub) | [LLMs中的幻觉问题](https://qqs7y1hozd1.feishu.cn/wiki/ITbDwxblFiWmpokgqEYckc2RnNe) |
-| [LAMs.pdf](https://qqs7y1hozd1.feishu.cn/wiki/MGkZwp2OfiOyuWkINYwcRxPZnkg) | #####  |
+
+
+
+| [基于`LangChain`+`LLM`的本地知识库问答：从企业单文档问答到批量文档问答](https://qqs7y1hozd1.feishu.cn/wiki/DPhqwALdUixJODkfa5ycA1RInub) | [`LLMs`中的幻觉问题](https://qqs7y1hozd1.feishu.cn/wiki/ITbDwxblFiWmpokgqEYckc2RnNe) |
+| [`LAMs.pdf`](https://qqs7y1hozd1.feishu.cn/wiki/MGkZwp2OfiOyuWkINYwcRxPZnkg) | |

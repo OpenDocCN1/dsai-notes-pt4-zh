@@ -1,8 +1,7 @@
-#
-
-> 来源：[https://xatc0v8uz5m.feishu.cn/docx/IsyydKTmyogHFcxHaftcpKCLn1d](https://xatc0v8uz5m.feishu.cn/docx/IsyydKTmyogHFcxHaftcpKCLn1d)
 
 # Genie 3：谷歌突破性通用世界模型解析
+
+> 来源：[https://xatc0v8uz5m.feishu.cn/docx/IsyydKTmyogHFcxHaftcpKCLn1d](https://xatc0v8uz5m.feishu.cn/docx/IsyydKTmyogHFcxHaftcpKCLn1d)
 
 > 核心摘要
 
@@ -14,17 +13,12 @@
 
 ## 目录
 
-+   • [发布](https://www.md2wechat.cn/#%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B8%83%E8%83%8C%E6%99%AF)
-
-+   • [Genie 3核心技术解析](https://www.md2wechat.cn/#genie-3%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E8%A7%A3%E6%9E%90)
-
-+   • [造梦空间：突破性应用场景](https://www.md2wechat.cn/#%E9%80%A0%E6%A2%A6%E7%A9%BA%E9%97%B4%E7%AA%81%E7%A0%B4%E6%80%A7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
-
++   • [发布](#发布)
++   • [Genie 3核心技术解析](#genie-3核心技术解析)
++   • [造梦空间：突破性应用场景](#造梦空间：突破性应用场景)
 +   • 好玩场景的案例
-
-+   • [未来发展展望](https://www.md2wechat.cn/#%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%B1%95%E6%9C%9B)
-
-+   • [获取更多信息](https://www.md2wechat.cn/#%E8%8E%B7%E5%8F%96%E6%9B%B4%E5%A4%9A%E4%BF%A1%E6%81%AF)
++   • [未来发展展望](#未来发展展望)
++   • [获取更多信息](#获取更多信息)
 
 ---
 
@@ -36,8 +30,6 @@
 
 今天我们先来看看造梦空间 Genie3
 
----
-
 ## Genie 3
 
 Genie 3，通用型世界模型，能够生成前所未有的多样化交互环境可以生成动态世界，它包含物理规律实时生成合理画面和场景。
@@ -45,8 +37,6 @@ Genie 3，通用型世界模型，能够生成前所未有的多样化交互环�
 > 暂时无法在飞书文档外展示此内容
 
 ### 核心特性
-
----
 
 ## 造梦空间：突破性应用场景
 
@@ -88,13 +78,11 @@ Genie 3，通用型世界模型，能够生成前所未有的多样化交互环�
 
 > 暂时无法在飞书文档外展示此内容
 
----
-
 ## 物理规律模拟能力
 
 模拟真实物理规律
 
-#### 实际应用案例
+### 实际应用案例
 
 ```
 Prompt: Walking on a pavement in Florida next a two-lane road from one side and the sea on the other, during an approaching hurricane, with strong wind and waves splashing over the road. There is a railing on the left of the agent, separating them from the sea. The road goes along the coast, with a short bridge visible in front of the agent. Waves are splashing over the railing and onto the road one after another. Palm trees are bending in the wind. There is heavy rain, and the agent is wearing a rain coat. Real world, first-person.
@@ -125,8 +113,6 @@ genie3 出了能够设定好物理世界规律，同时能够有记忆功能，�
 再来看看阿凡达的星球既视感的交互世界
 
 > 暂时无法在飞书文档外展示此内容
-
----
 
 ### Genie 3产品化进程
 

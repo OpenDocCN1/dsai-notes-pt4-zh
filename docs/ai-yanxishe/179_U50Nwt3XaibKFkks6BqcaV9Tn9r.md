@@ -1,3 +1,4 @@
+
 # 网易｜ASAK-AIGC组件化设计方法
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/BfZldqm4Dokw80xtNQbcI7xPnog](https://aiyanxishe.feishu.cn/docx/BfZldqm4Dokw80xtNQbcI7xPnog)
@@ -16,17 +17,14 @@ AIGC从3月份迎来爆发，到现在4月份，我们花了一个月时间，�
 
 本篇文章主要内容为AIGC组件化设计方法，本文大纲如下：
 
-01 AIGC组件化
-
-02 案例运用
-
-03 其它类型运用
-
+01 AIGC组件化  
+02 案例运用  
+03 其它类型运用  
 04 设计师后记
 
 ![](img/c44ce71ca663989893c235b3b31bc284.png)
 
-# **AIGC组件化**
+## AIGC组件化
 
 AIGC的优势之一是可以快速生成大量素材。对于可复用的素材，则可以统一汇总整理，生成团队组件库。
 
@@ -56,15 +54,15 @@ AIGC的优势之一是可以快速生成大量素材。对于可复用的素材�
 
 我们可以设定一下我们要给这个角色改什么表情，我们常用描述：
 
-Close-up of a man's (英文表情) facial expression,
+`Close-up of a man's (英文表情) facial expression,`
 
 这次的原图是偏手绘稿漫画风格，那么我们还可以增加其他的描述：
 
-Manga style, line art style, very very very comic,
+`Manga style, line art style, very very very comic,`
 
 假如我们想要绘制哭泣的表情，那么整合一下描述就是：
 
-Close-up of a man's sad facial expression, Manga style, line art style, very very very comic
+`Close-up of a man's sad facial expression, Manga style, line art style, very very very comic`
 
 其他的参数可以是默认的，然后我们点击一次生成。
 
@@ -86,7 +84,7 @@ Close-up of a man's sad facial expression, Manga style, line art style, very ver
 
 接下来开始制作我们想要的表情组。例如我想同时看哭、笑、愤怒和逃跑等表情，就要用到Stable Diffusion的脚本功能，拉到最底部会看到有个脚本，我们选择X/Y/Z图标，X轴类型选择提示词搜索/替换，Y轴类型选择重绘幅度。
 
-在X轴值输入crying后续用英文逗号隔开输入其他的表情词，crying, laugh, get angry, run away，那么Y轴值的重绘幅度我们可以设置到0.4, 0.5, 0.6, 0.7, 0.8这几个值。
+在X轴值输入`crying`后续用英文逗号隔开输入其他的表情词，`crying, laugh, get angry, run away`，那么Y轴值的重绘幅度我们可以设置到`0.4, 0.5, 0.6, 0.7, 0.8`这几个值。
 
 ![](img/1424b56701c11acae4efc7b81dab377b.png)
 
@@ -106,7 +104,7 @@ Close-up of a man's sad facial expression, Manga style, line art style, very ver
 
 ![](img/66af652a27a5ef0c1c989251e1c8ae90.png)
 
-# **案例运用**
+## 案例运用
 
 有了角色表情的组件库，那么接下来在动画具体场景，直接调用对应表情的组件即可，如下图为一组动画。
 
@@ -118,7 +116,7 @@ Close-up of a man's sad facial expression, Manga style, line art style, very ver
 
 ![](img/a77141bc45fbfc10964628c9467ead45.png)
 
-文件地址为Stable_diffusion\outputs\img2img-images\生成日期
+文件地址为`Stable_diffusion\outputs\img2img-images\生成日期`
 
 选好几个表情后，放到ps里进行角色表情替换，如下图所示：
 
@@ -150,7 +148,7 @@ Close-up of a man's sad facial expression, Manga style, line art style, very ver
 
 ![](img/25dafca102ad705311f39b92c9768dd1.png)
 
-# **其它类型运用**
+## 其它类型运用
 
 组件化方法不仅可以运用于动画，也可以运用于其他类型，例如海报、弹窗、图标、IP、场景和物料设计等。
 
@@ -190,7 +188,7 @@ Close-up of a man's sad facial expression, Manga style, line art style, very ver
 
 ![](img/7a6c36867f031db689fbf59ff93ef09d.png)
 
-# **设计师后记**
+## 设计师后记
 
 随着越来越多的模型和插件发布，AI技术呈现爆发式发展，Midjourney和Stable Diffusion的可用性变得越来越成熟。
 

@@ -1,3 +1,4 @@
+
 # 【Coze保姆级教程】一键生成爆款视频
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Rm6VdxGFwoqj2RxHJCPcNEninWg](https://xuqiwei1986.feishu.cn/docx/Rm6VdxGFwoqj2RxHJCPcNEninWg)
@@ -10,9 +11,9 @@
 
 刚好我对Coze和n8n都有所了解，我想给小白们分析一下什么人合适学习n8n，什么人适合学习Coze，
 
-# 如何选择n8n和Coze
+## 如何选择n8n和Coze
 
-## 1.业务判断
+### 1.业务判断
 
 首先如果你的业务是海外业务，直接选择n8n，因为n8n海外平台的接口丰富，
 
@@ -20,11 +21,11 @@
 
 如果你的业务是国内平台，并且不擦边，实际使用Coze，学习成本低很多，并且搭建成本也更便宜。
 
-## 2.学习时间成本
+### 2.学习时间成本
 
 回想起我第一次接触Coze，和n8n，我可以感受到学习n8n的时间要比Coze多两倍三倍的时间。这还是在我比较熟悉自动化原理的情况下。对于纯小白我觉得学习n8n要比Coze难五倍以上
 
-## 3 界面，软件使用习惯
+### 3.界面，软件使用习惯
 
 因为n8n是英文界面，并且整个界面风格更复古，更加偏向懂点代码的风格，
 
@@ -44,13 +45,13 @@ Coze则更加面向纯小白，界面美观，简洁，
 
 ![](img/62d3369f9dc4a0b03a4574ecc616827e.png)
 
-## 4.需求判断
+### 4.需求判断
 
 尤其大部分人的需求只是调调大模型，生生图，这种工作流Coze就能轻松解决了，而且Coze有个画板功能（做📕图文需求更加方便，如下图），n8n反而没有，他虽然也能实现，但实现起来麻烦很多。
 
 ![](img/c2061e9e8a73f9ab54c13f0f12784f8f.png)
 
-## 5.成本判断
+### 5.成本判断
 
 还有Coze由于跟即梦是一家，在Coze里面调用即梦生图模型只要0.025元一张，
 
@@ -60,29 +61,29 @@ Coze则更加面向纯小白，界面美观，简洁，
 
 ![](img/7f0a141ba349d6e647b0fc49c2c570a0.png)
 
-## 6 特殊插件考虑
+### 6.特殊插件考虑
 
 由于速推（一家公司）封装好了关于剪映草稿的相关插件，也让使用Coze做视频工作流更加方便（我下面分享的工作流就使用这一套插件）
 
 这个在n8n里面暂时是没有的
 
-## 7 Coze可以调用国外大模型
+### 7.Coze可以调用国外大模型
 
 Coze也是可以调用国外大模型的，使用中转平台即可，如下图就调用了云雾中转的Claude大模型，圈友书虫的平台也可以。
 
 ![](img/6ef246f0ca215b302fc8491511efacfa.png)
 
-## 总结
+### 总结
 
 先结合你的业务，考虑上面的条件，再判断学习哪个平台，避免浪费时间，还得不到想要的结果。
 
-# 下面是我在线下分享的部分内容。也分享给大家
+## 下面是我在线下分享的部分内容。也分享给大家
 
-# coze的三大功能
+## coze的三大功能
 
-## 1）工作流
+### 1）工作流
 
-**自动生成文案、图片、**视频等AIGC创作
+自动生成文案、图片、视频等AIGC创作
 
 自动日报、数据监控、非结构化数据提取
 
@@ -94,7 +95,7 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 自动给客户发节日祝福（根据分类，按标签写不同话术，定时发送）
 
-## 2）智能体
+### 2）智能体
 
 智能体就是把一个或多个工作流包装了一下，变成以对话的形式出现，根据你说的话判断该用哪个工作流、怎么用，对于用户来说使用更加便利，体验也会更加智能
 
@@ -106,11 +107,11 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 活动策划，旅游规划师，
 
-## 3）API
+### 3）API
 
 将工作流或者智能体集成到其他应用或服务里面
 
-# 视频工作流-案例分析
+## 视频工作流-案例分析
 
 ![](img/0ae5aad5bc1f4c6933454962e12c8804.png)
 
@@ -124,17 +125,17 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 火柴人心理学：https://v.douyin.com/y88c6TbaJxU/（图二）
 
-油管英文故事号：https://www.you**tube**.com/@HopeStories-us/videos（图三）
+油管英文故事号：https://www.youtube.com/@HopeStories-us/videos（图三）
 
 油管英文故事号：https://www.youtube.com/@BlackThreadYT（图四）
 
 上面四个都是工作流生成的视频，前面两个是抖音的案例，后面两个是油管的案例，自动化生成的视频也是可以大爆的。并且不是个例，图三与图四的风格模版完全一致，都是前两个画面用图片转了一下视频，然后后面就纯图片了，
 
-不**管是**抖音，视频号，B站还是油管，都存在很多图片类视频，或者简易的Ai视频搭配的图片的视频，这些都是很容易用工作流来快速量产，达到矩阵的目的，他们的区别只是文案的质量水平，和赛道的选择，换一个赛道，类似的视频又能再爆一次，
+不管是抖音，视频号，B站还是油管，都存在很多图片类视频，或者简易的Ai视频搭配的图片的视频，这些都是很容易用工作流来快速量产，达到矩阵的目的，他们的区别只是文案的质量水平，和赛道的选择，换一个赛道，类似的视频又能再爆一次，
 
 看圈友帖子，也可以看到很多视频号，抖音的书单号都是这么玩的。
 
-# 下面开始一键生成历史故事的保姆级教程
+## 下面开始一键生成历史故事的保姆级教程
 
 整体流程图如下
 
@@ -148,23 +149,23 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 第三部分：制作剪映草稿部分
 
-整体有点复杂，但是只要熟悉这一套，基本所有的图片类视频的工作流都能复刻，并且调整起来也是比较容易的，所以要耐心一点。
+整体有点复杂，但是只要熟悉这一套，基本所有的图片类视频的工作流都能复刻，并且调整起来也是比较容易，所以要耐心一点。
 
-# 具体步骤
+### 具体步骤
 
-## 0)创建工作流
+#### 0)创建工作流
 
 ![](img/a50a4a3fe3d167a702036efb3eaee1d9.png)
 
 点击确认创建工作流，
 
-## 1）开始节点
+#### 1）开始节点
 
 ![](img/5a218b1ab60550e212bbf700c45f73f1.png)
 
-**变量名称改成zhuti**
+变量名称改成`zhuti`
 
-## 2）大模型_根据主题生成文案
+#### 2）大模型_根据主题生成文案
 
 ![](img/2ecae69f6d54c677e8d4ce697f1ecc22.png)
 
@@ -174,15 +175,17 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 大模型我们选择：DeepSeek-V3-0324
 
-输入项 zhuti：选择开始节点的 zhuti 即可
+输入项`zhuti`：选择开始节点的`zhuti`即可
 
 修改节点名称：后面选择变量是根据这个名称分辨，所以要仔细命名，方便节点多了之后辨认。
 
 ![](img/5b06c8cd5bb555fbf4a43bd755f07bd4.png)
 
-**
+系统提示词输入下面内容
 
-系统提示**词输入下面内容
+
+
+# 大模型历史短视频生成工作流
 
 ```
 请根据用户提供的【主题】，按照以下结构生成一段历史类短视频口播文案：
@@ -225,21 +228,19 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 **输出要求**： 只输出口播字幕文案，不要输出其他任何额外内容，不输出分段说明
 ```
 
-**
-
 用户提示**词设置为：
 
 ```
-主题：{{zhuti}}
+主题：`{{zhuti}}`
 ```
 
 注意**:
 
-配**置输**出项为 jso**n 格式
+配**置输**出项为 `json` 格式
 
-**输出项**变量名称：content， 类型选择 String，这就是大模型生成的视频文案内容，供后边分镜使用
+**输出项**变量名称：`content`， 类型选择 `string`，这就是大模型生成的视频文案内容，供后边分镜使用
 
-##  3）大模型_分镜
+## 3）大模型_分镜
 
 ![](img/1cfd99988d2f484ac3e3ec6c404de6ee.png)
 
@@ -247,7 +248,7 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 大模型选择：DeepSeek-V3-0324
 
-**输入项 ：**选择大模型_根据主题生成文案节点的content（string 格式）
+**输入项 ：**选择大模型_根据主题生成文案节点的`content`（`string` 格式）
 
 修改节点名称：大模型_分镜
 
@@ -255,12 +256,12 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 ```
 # 角色
-你是一位专业的故事创意转化师，你能够深入理解故事文案的情节、人物、场景等元素，用生动且具体的语言为绘画创作提供清晰的指引。
+你是一位专业的故事创意转化师，你能够深入理解故事文案的情节、人物、场景等要素，用生动且具体的语言为绘画创作提供清晰的指引。
 
 ## 技能
 ### 技能1： 生成分镜字幕
 1. 当用户提供故事文案时，仔细分析文案中的关键情节、人物形象、场景特点等要素。
-2. 文案分镜， 生成字幕cap：
+2. 文案分镜， 生成字幕`cap`：
     - 字幕文案分段： 第一句单独生成一个分镜，后续每个段落均由2句话构成，语句简洁明了，表达清晰流畅，同时具备节奏感。
     - 分割文案后特别注意前后文的关联性与一致性，必须与用户提供的原文完全一致，不得进行任何修改、删减。字幕文案必须严格按照用户给的文案拆分，不能修改提供的内容更不能删除内容
 
@@ -275,9 +276,9 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 - 只围绕用户提供的故事文案进行分镜绘画提示词生成和主题提炼，拒绝回答与该任务无关的话题。
 - 所输出的内容必须条理清晰，分镜绘画提示词要尽可能详细描述画面，主题必须为2个字。 
 - 视频文案及分镜描述必须保持一致。
-- 输出内容必须严格按照给定的 JSON 格式进行组织，不得偏离框架要求。
+- 输出内容必须严格按照给定的 `JSON` 格式进行组织，不得偏离框架要求。
 - 只对用户提示的内容进行分镜，不能更改原文
-- 严格检查 输出的json格式正确性并进行修正，特别注意json格式不要少括号，逗号等
+- 严格检查 输出的`json`格式正确性并进行修正，特别注意`json`格式不要少括号，逗号等
 ```
 
 **用户提示词**输入下面内容
@@ -291,15 +292,15 @@ Coze也是可以调用国外大模型的，使用中转平台即可，如下图�
 
 输出**项
 
-scenes (Array<objets>)格式    然后新增子项 cap
+`scenes`（`Array<objets>`）格式    然后新增子项 `cap`
 
 ![](img/d8401d45cabb51fdace4390870aa4b18.png)
 
-###  Array<objets>   数组格式介绍
+### Array<objets>   数组格式介绍
 
-+   Array 指的是数组结构，即一组有序的元素集合
++   `Array` 指的是数组结构，即一组有序的元素集合
 
-+   <objects> 表示数组中的每个元素都是一个对象（object）
++   `<objects>` 表示数组中的每个元素都是一个对象（object）
 
 +   每个对象通常由键值对（key-value）组成，例如 { "name": "xxx", "age": 18 }
 
@@ -313,7 +314,7 @@ scenes (Array<objets>)格式    然后新增子项 cap
 
 大模型选择：豆包1.5pro
 
-输入项：大模型分镜.scenes
+输入项：大模型分镜.`scenes`
 
 **系统提示词**输入下面内容
 
@@ -337,8 +338,8 @@ scenes (Array<objets>)格式    然后新增子项 cap
 ===示例结束===
 
 ## 限制:
-- 只对用户提供的json内容补充desc_prompt字段，不能更改原文
-- 严格检查输出的 json 格式正确性并进行修正，特别注意 json 格式不要少括号，逗号等
+- 只对用户提供的`json`内容补充`desc_prompt`字段，不能更改原文
+- 严格检查输出的 `json` 格式正确性并进行修正，特别注意 `json` 格式不要少括号，逗号等
 ```
 
 **用户提示词**输入下面内容
@@ -357,9 +358,9 @@ scenes (Array<objets>)格式    然后新增子项 cap
 
 ![](img/8be4d38fceb92774bcccac13d8dbd9e4.png)
 
-![](img/f821811efcd54519401cb661878961bb.png)
+![](img/f82e0b100e84b09dbdf591e8c5b5f3f2.png)
 
-![](img/3ba1673c70358d5d717aa28542798b8e.png)
+![](img/3ba1673c70358d5d717aa285427987aa4b18.png)
 
 批处理的输入和输出
 
@@ -375,7 +376,7 @@ scenes (Array<objets>)格式    然后新增子项 cap
 
 生成质量**拉到**最高
 
-正向提示词：古代惊悚插画风格：{{desc_prompt}}
+正向提示词：古代惊悚插画风格：`{{desc_prompt}}`
 
 ###  5.2）选择器
 
@@ -385,11 +386,13 @@ scenes (Array<objets>)格式    然后新增子项 cap
 
 ![](img/83cf5de2c0ba26b6abeb9af6d224bd1d.png)
 
+
+
 ![](img/35086fa084a5afafd676a6927e256b6a.png)
 
 ### 5.3）智能优化提示词
 
-**智能提示****词优化和**再次图像生成是为了避免一些单词违规，让系统自动帮助我们优化提示词，使工作流更加健壮稳定
+智能提示词优化和再次图像生成是为了避免一些单词违规，让系统自动帮助我们优化提示词，使工作流更加健壮稳定
 
 ![](img/2741ca0b81b68d0f8e08a138d9bf9549.png)
 
@@ -403,17 +406,17 @@ scenes (Array<objets>)格式    然后新增子项 cap
 
 ### 5.5）变量聚合
 
-变量聚合的作用是在**图像生成节点**因为违禁词生图违规时，会使用**图像生成_1节点**生成图象，因此**图象生成节点**这是生成的是**null值**，需要使用**图像生成_1节点**里面的值。
+变量聚合的作用是在图像生成节点因为违禁词生图违规时，会使用图像生成_1节点生成图象，因此图象生成节点这是生成的是`null`值，需要使用图像生成_1节点里面的值。
 
 即变量聚合可以连接多个节点，它会根据顺序，把第一个有值的节点就会被当做最终输出对象
 
-例如按顺序设置三个变量 output1、output2 和 output3，将其聚合为一个变量 Group1，如果 ouput1 不为空，则用 output1 的值为 Group1 赋值；如果 ouput1 为空，则取 ouput2 的值，依次类推。
+例如按顺序设置三个变量`output1`、`output2`和`output3`，将其聚合为一个变量`Group1`，如果`ouput1`不为空，则用`output1`的值为`Group1`赋值；如果`ouput1`为空，则取`ouput2`的值，依次类推。
 
 ![](img/bb151b22211cee38e028f47f3aabc556.png)
 
 ![](img/e4d3c5ce47365560a84cb4a71c776dec.png)
 
-###  5.6）音色与文本合成音频
+### 5.6）音色与文本合成音频
 
 ![](img/042716fee4dc9f4535c1890a39559695.png)
 
@@ -427,13 +430,13 @@ scenes (Array<objets>)格式    然后新增子项 cap
 
 完整音色表
 
-https://www.coze.cn/open/docs/dev_how_to_guides/sys_voice
+`https://www.coze.cn/open/docs/dev_how_to_guides/sys_voice`
 
-###  5.7）get_audio_duration
+### 5.7）`get_audio_duration`
 
-https://www.coze.cn/store/plugin/7457837529027493922
+`https://www.coze.cn/store/plugin/7457837529027493922`
 
-https://www.coze.cn/store/plugin/7475816084453654580
+`https://www.coze.cn/store/plugin/7475816084453654580`
 
 进去上面链接收藏插件，然后添加节点这里就会多两个已收藏插件，方便调用
 
@@ -443,7 +446,7 @@ https://www.coze.cn/store/plugin/7475816084453654580
 
 ![](img/3b558efee33aec08f1e54e51c702ccc6.png)
 
-**作用**：获得每个音频的**持续时间**，用于后面构造剪映草稿需要的数据格式
+作用：获得每个音频的持续时间，用于后面构造剪映草稿需要的数据格式
 
 ![](img/afe7fd607ef9c13bda52e7304a1cfa3c.png)
 
@@ -455,7 +458,7 @@ https://www.coze.cn/store/plugin/7475816084453654580
 
 ![](img/c1fd97173d93e434fe5b1210a6610a7f.png)
 
-**系统提示词**输入下面内容
+系统提示词输入下面内容
 
 ```
 # 角色
@@ -472,16 +475,16 @@ https://www.coze.cn/store/plugin/7475816084453654580
 - 直接输出主题，不要回复其他额外内容
 ```
 
-**用户提示词**输入下面内容
+用户提示词输入下面内容
 
 ```
 故事原文内容：
 {{content}}
 ```
 
-**输出项 **
+输出项
 
-titie:String格式
+`titie`:`String`格式
 
 ![](img/22ebc1a718b187a0b87b5abb583bb9e8.png)
 
@@ -491,7 +494,7 @@ titie:String格式
 
 ![](img/a923acab631c9b05fc5eaeb78cc7342b.png)
 
-**系统提示词**输入下面内容
+系统提示词输入下面内容
 
 ```
 # 角色
@@ -509,15 +512,15 @@ titie:String格式
 1. 只输出绘画提示词，不要输出其他额外内容
 ```
 
-**用户提示词**输入下面内容
+用户提示词输入下面内容
 
 ```
 故事信息：{{content}}
 ```
 
-**输出项 **
+输出项
 
-desc_prompt:String格式
+`desc_prompt`:`String`格式
 
 ![](img/b5e77c4cb67f45d947add79f0d6db56e.png)
 
@@ -533,7 +536,7 @@ desc_prompt:String格式
 {{desc_prompt}}
 ```
 
-9)cutout_智能抠图
+### 9)cutout_智能抠图
 
 从添加节点里面新增，搜索抠图即会出现
 
@@ -545,15 +548,15 @@ desc_prompt:String格式
 
 ![](img/2d664b9b109705e2e519a6069d3f0600.png)
 
-**剪映草稿**文件是由一串代**码组成，这部分工**作流就是根据剪映草**稿文件的要求去调整格**式，变**成剪映**草稿**文件**可以识**别的代码格式
+剪映草稿文件是由一串代码组成，这部分工作流就是根据剪映草稿文件的要求去调整格式，变成剪映草稿文件可以识别的代码格式
 
-视**频一**般主**要由音**频，图片，字幕这三部**分组成，还有音效，文本，背景音乐等，和关键帧等操作
+视频一般主要由音频，图片，字幕这三部分组成，还有音效，文本，背景音乐等，和关键帧等操作
 
 下面11部分讲音频，图片，字幕（基本每个视频必有的部分）
 
 下面12部分讲音效，背景音乐，文本(每个视频可选的部分）
 
-下面**13**部分讲**关键帧**(每个视频可选的部分）
+下面13部分讲关键帧(每个视频可选的部分）
 
 第一步先创建一个剪映草稿
 
@@ -563,7 +566,7 @@ desc_prompt:String格式
 
 ![](img/5710168f77a93294f621d0c94ca9b687.png)
 
-**1.添加节点---2.视**频合成_剪映小助手---3.create_draft
+1.添加节点---2.视频合成_剪映小助手---3.`create_draft`
 
 ## 11）音频，图片，字幕模块
 
@@ -573,9 +576,9 @@ desc_prompt:String格式
 
 ![](img/1f5142f788b85afbdf13cb5d8d36a230.png)
 
-**1.添加节点---2.剪映小助**手数据生成器---3.audio_timelines
+1.添加节点---2.剪映小助手数据生成器---3.`audio_timelines`
 
-输入项：批处理的link_list
+输入项：批处理的`link_list`
 
 ### 11.2）构造音频数据
 
@@ -583,7 +586,7 @@ desc_prompt:String格式
 
 ![](img/e26ac206da309b6dd53d012ae2ba7719.png)
 
-**1.添加节点---2.**剪映小助手数据生成器---3.audio_infos
+1.添加节点---2.剪映小助手数据生成器---3.`audio_infos`
 
 ### 11.3）添加音频
 
@@ -591,7 +594,7 @@ desc_prompt:String格式
 
 ![](img/43c95767775bc5dccc4bf5ce825addad.png)
 
-**1.添加节点---2**.视频合成-剪映小助手---3.add_audios
+1.添加节点---2.视频合成-剪映小助手---3.`add_audios`
 
 ### 11.4）构造图片数据
 
@@ -599,7 +602,7 @@ desc_prompt:String格式
 
 ![](img/6988ec89e5abb8dbfcfc1f3f1ea47c48.png)
 
-**1.添加节点---2**.剪映小助手数据生成器---3.imgs_infos
+1.添加节点---2.剪映小助手数据生成器---3.`imgs_infos`
 
 ### 11.5）添加图片
 
@@ -607,7 +610,7 @@ desc_prompt:String格式
 
 ![](img/fa94b8a4845cd78ba02dc761dab46b27.png)
 
-**1.添加节点---2**.视频合成_剪映小助手---3.add_images
+1.添加节点---2.视频合成_剪映小助手---3.`add_images`
 
 ### 11.6）代码_调整字幕
 
@@ -615,7 +618,7 @@ desc_prompt:String格式
 
 ![](img/5addca7a3cd86ea2969ee45c2b117fd7.png)
 
-1.添加节点---2.代码  然后再IDE编辑器中粘贴下面代码
+1.添加节点---2.代码 然后再IDE编辑器中粘贴下面代码
 
 所有使用代码块的都记得把代码改成python语言，不要使用默认的JavaScript语言
 
@@ -629,8 +632,8 @@ from typing import List, Dict, Tuple, Any
 
 # --- 辅助函数部分保持不变 ---
 SUB_CONFIG = {
-    &quot;MAX_LINE_LENGTH&quot;: 25,
-    &quot;SPLIT_PRIORITY&quot;: [&#x27;。&#x27;, &#x27;！&#x27;, &#x27;？&#x27;, &#x27;，&#x27;, &#x27;,&#x27;, &#x27;：&#x27;, &#x27;:&#x27;, &#x27;、&#x27;, &#x27;；&#x27;, &#x27;;&#x27;, &#x27; &#x27;]
+&quot;MAX_LINE_LENGTH&quot;: 25,
+&quot;SPLIT_PRIORITY&quot;: [&#x27;。&#x27;, &#x27;！&#x27;, &#x27;？&#x27;, &#x27;，&#x27;, &#x27;,&#x27;, &#x27;：&#x27;, &#x27;:&#x27;, &#x27;、&#x27;, &#x27;；&#x27;, &#x27;;&#x27;, &#x27; &#x27;]
 }
 
 CHINESE_CHAR_REGEX = re.compile(r&#x27;[\u4e00-\u9fa5]&#x27;)
@@ -716,15 +719,17 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/c0471a3f11bf4974be0302d76c361872.png)
 
-1.添加节点---2.剪映小助手数据生成器---3.caption_infos
+1.添加节点---2.剪映小助手数据生成器---3.`caption_infos`
 
 ### 11.8）添加字幕
 
 ![](img/6aa7f64d2861b51c287cf2111fa91e0f.png)
 
+
+
 ![](img/0254c220faa414a75e518686671376e9.png)
 
-**1.添加节点---2.视**频合成_剪映小助手---3.add_captions
+1.添加节点---2.视频合成_剪映小助手---3.`add_captions`
 
 ## 12）首图，开头音效，背景音乐模块
 
@@ -734,54 +739,54 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/77e908b014f5d53c3c932f9d04ea9928.png)
 
-max_duration选择all_timelines的end
+`max_duration` 选择 `all_timelines` 的 `end`
 
-输出这里多了kc_audio_info,bg_audio_info 这个是将开场音效和背景音乐放到了云端，代码里直接引用了云端链接
+输出这里多了 `kc_audio_info`,`bg_audio_info`，这个是将开场音效和背景音乐放到了云端，代码里直接引用了云端链接
 
 ```
-# 在这里，您可以通过 &#x27;args&#x27;  获取节点中的输入变量，并通过 &#x27;ret&#x27; 输出结果
-# &#x27;args&#x27; 已经被正确地注入到环境中
-# 下面是一个示例，首先获取节点的全部输入参数params，其次获取其中参数名为&#x27;input&#x27;的值：
+# 在这里，您可以通过 'args'  获取节点中的输入变量，并通过 'ret' 输出结果
+# 'args' 已经被正确地注入到环境中
+# 下面是一个示例，首先获取节点的全部输入参数params，其次获取其中参数名为'input'的值：
 # params = args.params; 
-# input = params[&#x27;input&#x27;];
-# 下面是一个示例，输出一个包含多种数据类型的 &#x27;ret&#x27; 对象：
-# ret: Output =  { &quot;name&quot;: &#x27;小明&#x27;, &quot;hobbies&quot;: [&quot;看书&quot;, &quot;旅游&quot;] };
+# input = params['input'];
+# 下面是一个示例，输出一个包含多种数据类型的 'ret' 对象：
+# ret: Output =  { "name": '小明', "hobbies": ["看书", "旅游"] };
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
     # 获取输入的image_url和duration_list
-    image_url = params[&#x27;image_url&#x27;]
-    duration_list = params[&#x27;duration_list&#x27;]
-    kc_audio = &quot;https://p9-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/c04e7b48586a48f1863e421be4b10cf1.MP3~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1777550323&amp;x-signature=T%2BNjvPHPyHnGICvWRFDeFaj17UM%3D&amp;x-wf-file_name=%E6%95%85%E4%BA%8B%E5%BC%80%E5%9C%BA%E9%9F%B3%E6%95%88.MP3&quot;
-    bg_audio = &quot;https://p3-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/5603dc783a6c4b75a4bf4e1b44086ad5.MP3~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1777550332&amp;x-signature=E1123RzPTMD%2BipseRN4itYxhZyc%3D&amp;x-wf-file_name=%E6%95%85%E4%BA%8B%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90.MP3&quot;
-    max_duration=params[&#x27;max_duration&#x27;]   
+    image_url = params['image_url']
+    duration_list = params['duration_list']
+    kc_audio = "https://p9-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/c04e7b48586a48f1863e421be4b10cf1.MP3~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1777550323&x-signature=T%2BNjvPHPyHnGICvWRFDeFaj17UM%3D&x-wf-file_name=%E6%95%85%E4%BA%8B%E5%BC%80%E5%9C%BA%E9%9F%B3%E6%95%88.MP3"
+    bg_audio = "https://p3-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/5603dc783a6c4b75a4bf4e1b44086ad5.MP3~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1777550332&x-signature=E1123RzPTMD%2BipseRN4itYxhZyc%3D&x-wf-file_name=%E6%95%85%E4%BA%8B%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90.MP3"
+    max_duration=params['max_duration']   
     # 构建输出对象，只使用duration_list的第一个时间作为end值
     ret: Output = {
-        &quot;image_info&quot;: [
+        "image_info": [
             {
-                &quot;image_url&quot;: image_url,
-                &quot;width&quot;: 1024,
-                &quot;height&quot;: 1024,
-                &quot;start&quot;: 0,
-                &quot;end&quot;: duration_list[0]  # 取第一个时间作为结束时间
+                "image_url": image_url,
+                "width": 1024,
+                "height": 1024,
+                "start": 0,
+                "end": duration_list[0]  # 取第一个时间作为结束时间
             }
         ],
         # 新增开场音频信息部分
-        &quot;kc_audio_info&quot;: [
+        "kc_audio_info": [
             {
-                &quot;audio_url&quot;: kc_audio,
-                &quot;duration&quot;: 4884897,
-                &quot;start&quot;: 0,
-                &quot;end&quot;: 4884897
+                "audio_url": kc_audio,
+                "duration": 4884897,
+                "start": 0,
+                "end": 4884897
             }
         ],
         # 新增背景音频信息部分
-        &quot;bg_audio_info&quot;: [
+        "bg_audio_info": [
             {
-                &quot;audio_url&quot;: bg_audio,
-                &quot;duration&quot;: max_duration,
-                &quot;start&quot;: 0,
-                &quot;end&quot;: max_duration
+                "audio_url": bg_audio,
+                "duration": max_duration,
+                "start": 0,
+                "end": max_duration
             }
         ]
 
@@ -789,21 +794,21 @@ async def main(args: Args) -&gt; Output:
     return ret
 ```
 
-###  12.2）add_images_首图
+### 12.2）add_images_首图
 
 ![](img/3b0f2fba14099b8b02b7d7174c765ac8.png)
 
 ![](img/a61b50047ebb70a97fdbfdf295e1f791.png)
 
-**1.添加节点---2**.视频合成_剪映小助手---3.add_images
+1.添加节点---2.视频合成_剪映小助手---3.`add_images`
 
-###  12.3）add_audios_开头音效
+### 12.3）add_audios_开头音效
 
 ![](img/4827b5a981e7934f6a6bc42a1dd4adb0.png)
 
 ![](img/57bc55966d144eca725271e4960a7098.png)
 
-**1.添加节点---2**.视频合成_剪映小助手---3.add_images
+1.添加节点---2.视频合成_剪映小助手---3.`add_images`
 
 ### 12.4）add_audios_背景音乐
 
@@ -811,7 +816,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/6ce6cb27f770d3a3b1122b91c748cf27.png)
 
-**1.添加节点---2**.视频合成_剪映小助手---3.add_audios
+1.添加节点---2.视频合成_剪映小助手---3.`add_audios`
 
 ### 12.5）代码_构造主题时间轴
 
@@ -819,39 +824,39 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/809b3f6acf9e7db8c47b50191788d50d.png)
 
-1.添加节点---2.代码   然后再IDE编辑器中粘贴下面代码
+1.添加节点---2.代码，然后在 IDE 编辑器中粘贴下面代码
 
 ```
 from typing import List, Dict, Any
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
     # 获取相关输入数据，假设 title 在 params 中，duration_list 也在 params 中
-    title = params.get(&#x27;title&#x27;, &#x27;&#x27;)
-    duration_list = params.get(&#x27;duration_list&#x27;, [])
+    title = params.get('title', '')
+    duration_list = params.get('duration_list', [])
     # 取 duration_list 第一个时间点，若为空则设为 0（可根据实际情况调整默认值）
     first_duration = duration_list[0] if duration_list else 0  
     
     # 构造 title_list，这里简单处理为列表包含 title，可根据实际需求扩展
     title_list = [title]
     # 构造 title_timelines，假设起始时间为 0，结束时间为 first_duration
-    title_timelines = [{&quot;start&quot;: 0, &quot;end&quot;: first_duration}]  
+    title_timelines = [{"start": 0, "end": first_duration}]  
     
     # 构建输出对象
     ret: Output = {
-        &quot;title_list&quot;: title_list,
-        &quot;title_timelines&quot;: title_timelines
+        "title_list": title_list,
+        "title_timelines": title_timelines
     }
     return ret
 ```
 
-###  12.6）构造主题数据
+### 12.6）构造主题数据
 
 ![](img/c6fcc4556e7467412785259d9e9412d1.png)
 
 ![](img/421dc1f0e93b16a9140e3c0eaa4bb753.png)
 
-**1.添加节点---2.剪映**小助手数据生成器---3.caption_infos
+1.添加节点---2.剪映小助手数据生成器---3.`caption_infos`
 
 ### 12.7）add_captions_主题
 
@@ -859,7 +864,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/ec1dfbe5900e6d2705794548aea8ddf4.png)
 
-**1.添加节点---2.视**频合成_剪映小助手---3.add_captions
+1.添加节点---2.视频合成_剪映小助手---3.`add_captions`
 
 ## 13）添加关键帧模块
 
@@ -869,28 +874,28 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/3805897948d60c3d6b1edee75348862f.png)
 
-1.添加节点---2.代码  然后再IDE编辑器中粘贴下面代码
+1.添加节点---2.代码，然后在 IDE 编辑器中粘贴下面代码
 
 ```
-# 在这里，您可以通过 &#x27;args&#x27;  获取节点中的输入变量，并通过 &#x27;ret&#x27; 输出结果
-# &#x27;args&#x27; 已经被正确地注入到环境中
-# 下面是一个示例，首先获取节点的全部输入参数params，其次获取其中参数名为&#x27;input&#x27;的值：
+# 在这里，您可以通过 'args'  获取节点中的输入变量，并通过 'ret' 输出结果
+# 'args' 已经被正确地注入到环境中
+# 下面是一个示例，首先获取节点的全部输入参数params，其次获取其中参数名为'input'的值：
 # params = args.params; 
-# input = params[&#x27;input&#x27;];
-# 下面是一个示例，输出一个包含多种数据类型的 &#x27;ret&#x27; 对象：
-# ret: Output =  { &quot;name&quot;: &#x27;小明&#x27;, &quot;hobbies&quot;: [&quot;看书&quot;, &quot;旅游&quot;] };
+# input = params['input'];
+# 下面是一个示例，输出一个包含多种数据类型的 'ret' 对象：
+# ret: Output =  { "name": '小明', "hobbies": ["看书", "旅游"] };
 
 import json
 from typing import Any
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    segment_ids = params[&#x27;segment_ids&#x27;]  # 所有图片的ID列表
-    times = params[&#x27;duration_list&#x27;]      # 对应每张图片的时长列表
+    segment_ids = params['segment_ids']  # 所有图片的ID列表
+    times = params['duration_list']      # 对应每张图片的时长列表
     
     # 验证参数长度（确保一一对应）
     if len(segment_ids) != len(times):
-        raise ValueError(&quot;segment_ids与times数组长度必须一致&quot;)
+        raise ValueError("segment_ids与times数组长度必须一致")
     
     keyframes = []  # 存储当前脚本生成的关键帧
     
@@ -913,29 +918,27 @@ async def main(args: Args) -&gt; Output:
         
         # 添加起始关键帧（动画开始时的缩放值）
         keyframes.append({
-            &quot;offset&quot;: 0,
-            &quot;property&quot;: &quot;UNIFORM_SCALE&quot;,
-            &quot;segment_id&quot;: seg_id,
-            &quot;value&quot;: start_scale,
-            &quot;easing&quot;: &quot;linear&quot;
+            "offset": 0,
+            "property": "UNIFORM_SCALE",
+            "segment_id": seg_id,
+            "value": start_scale,
+            "easing": "linear"
         })
         
         # 添加结束关键帧（动画结束时的缩放值，与音频时长同步）
         keyframes.append({
-            &quot;offset&quot;: audio_duration,
-            &quot;property&quot;: &quot;UNIFORM_SCALE&quot;,
-            &quot;segment_id&quot;: seg_id,
-            &quot;value&quot;: end_scale,
-            &quot;easing&quot;: &quot;linear&quot;
+            "offset": audio_duration,
+            "property": "UNIFORM_SCALE",
+            "segment_id": seg_id,
+            "value": end_scale,
+            "easing": "linear"
         })
     
     # 输出关键帧（序列化为JSON字符串）
     return {
-        &quot;keyFrames&quot;: json.dumps(keyframes)
+        "keyFrames": json.dumps(keyframes)
     }
 ```
-
-###
 
 ### 13.2）代码_首图关键帧
 
@@ -943,7 +946,9 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/d0816a1da881c0012d23de6b56356729.png)
 
-1.添加节点---2.代码  然后再IDE编辑器中粘贴下面代码
+1.添加节点---2.代码，然后在 IDE 编辑器中粘贴下面代码
+
+
 
 ```
 # 在这里，您可以通过 &#x27;args&#x27;  获取节点中的输入变量，并通过 &#x27;ret&#x27; 输出结果
@@ -1004,21 +1009,21 @@ async def main(args: Args) -&gt; Output:
     }
 ```
 
-### 13.3）add_keyframes_图片
+### 13.3）`add_keyframes`_图片
 
 ![](img/238d2b0e16ce888a93a897cb4aa522c7.png)
 
 ![](img/a55d3cb444945f97d6f9a07afcf0b781.png)
 
-**1.添加节点---2.视频**合成_剪映小助手---3.add_keyframes
+**1.添加节点---2.视频**合成_剪映小助手---3.`add_keyframes`
 
-### 13.4）add_keyframes_首图
+### 13.4）`add_keyframes`_首图
 
 ![](img/5df21781ddc00e7479f42757051d944f.png)
 
 ![](img/4d7fc61d562238d9b1f2cd141a4584e8.png)
 
-**1.添加节点---2**.视频合成_剪映小助手---3.add_audios
+**1.添加节点---2**.视频合成_剪映小助手---3.`add_audios`
 
 ## 14）保存剪映草稿
 
@@ -1026,7 +1031,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/8eda53361ad9f40bbe43e6b8e3618cfc.png)
 
-1.添加节点---2.视频合成_剪映小助手---3.save_draft
+1.添加节点---2.视频合成_剪映小助手---3.`save_draft`
 
 ## 15）输出
 
@@ -1034,11 +1039,11 @@ async def main(args: Args) -&gt; Output:
 
 ## 16）下载文件
 
-完成上面全部步骤，执行工作流，最终会输出一个类似的链接https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-shanghai.aliyuncs.com/draft/dede1dcf-87c4-4f46-aee0-db96518eff00.json
+完成上面全部步骤，执行工作流，最终会输出一个类似的链接`https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-shanghai.aliyuncs.com/draft/dede1dcf-87c4-4f46-aee0-db96518eff00.json`
 
 下载剪映小助手软件
 
-https://www.51aigc.cc/#/cozeToJianyin
+`https://www.51aigc.cc/#/cozeToJianyin`
 
 将上面的链接放进剪映小助手里面下载 剪映草稿文件
 
@@ -1056,17 +1061,15 @@ https://www.51aigc.cc/#/cozeToJianyin
 
 所有的图文类工作流都可以在上面的基础上修改，只需要调整文案大模型的提示词，生图大模型的提示词就能切换一个赛道，心理学，教英语，哄睡故事，励志故事，书单视频，带货视频，都是可以的
 
-只要更换关键帧**，特效，**音效，背景音乐等就能变换视频风格，避免审美疲劳
+只要更换**关键帧**、**特效**、**音效**，背景音乐等就能变换视频风格，避免审美疲劳
 
 修改一下节点就能加入**声音克隆**，加入**图片生视频**，加入**数字人**
 
 前面加一个下载对标文案的插件就能直接二创对标
 
-# **延伸**
+# 延伸
 
 ## 1.智能体
-
-每次打开工作流来调用很麻烦，那就可以搭建智能体，直接对话调用工作流
 
 ### 1）新建智能体
 
@@ -1080,15 +1083,15 @@ https://www.51aigc.cc/#/cozeToJianyin
 
 ### 3）智能体对话页面
 
-我的智能体链接，可使用https://www.coze.cn/store/agent/7535489804445188136?bot_id=true
+我的智能体链接，可使用`https://www.coze.cn/store/agent/7535489804445188136?bot_id=true`
 
 ![](img/d261d1c1e6c16a24540e71690607c6e8.png)
 
-把回复的json结尾的链接最直接放在剪映小工具即可
+把回复的`json`结尾的链接最直接放在剪映小工具即可
 
 ![](img/71821d7ffe18fda462e25c3d94b273b4.png)
 
-##  2.包装成API
+## 2.包装成API
 
 ![](img/2f8d06081ef1fe88429ada645f1111c9.png)
 
@@ -1102,9 +1105,9 @@ https://www.51aigc.cc/#/cozeToJianyin
 
 ![](img/364b0e2dbe64c35a11a3cfa242420fbb.png)
 
-### 2）找到workflow_id和输入参数
+### 2）找到`workflow_id`和输入参数
 
-在工作流页面的链接里找到workflow_id
+在工作流页面的链接里找到`workflow_id`
 
 ![](img/c8ce4d252d4e8e8fa25886b14cd63aae.png)
 
@@ -1112,9 +1115,9 @@ https://www.51aigc.cc/#/cozeToJianyin
 
 ![](img/c4c9d0d05bcdebf9428b21fe4b9dcecb.png)
 
-将workflow_id放进图中标1的位置
+将`workflow_id`放进图中标1的位置
 
-图中标2的位置输入参数paraneters
+图中标2的位置输入参数`paraneters`
 
 如果你的开始节点如左上图，输入
 
@@ -1144,9 +1147,9 @@ https://www.51aigc.cc/#/cozeToJianyin
 
 如测试失败，根据返回结果调试，上图是反馈缺少参数，即输入不正确，少了参数
 
-#   补充知识
+# 补充知识
 
-## 1）什么是json格式
+## 1）什么是`json`格式
 
 一种通用的数据格式，用来存数据、传数据
 
@@ -1205,9 +1208,9 @@ https://www.51aigc.cc/#/cozeToJianyin
 }
 ```
 
-json格式网站（这个网站可以把很乱的json数据变得清晰化，便于阅读）
+`json`格式网站（这个网站可以把很乱的`json`数据变得清晰化，便于阅读）
 
-https://jsonhero.io/j/tGDhvzLOQem7
+`https://jsonhero.io/j/tGDhvzLOQem7`
 
 原本是左边这样的，放进网站会变成右边这样显示
 
@@ -1243,7 +1246,7 @@ https://jsonhero.io/j/tGDhvzLOQem7
 
 ## 6）云端存储音频，图片，视频相关数据，方便调用
 
-https://console.volcengine.com/tos
+`https://console.volcengine.com/tos`
 
 ![](img/53dbfd795db8a2c5224ff6779d900970.png)
 

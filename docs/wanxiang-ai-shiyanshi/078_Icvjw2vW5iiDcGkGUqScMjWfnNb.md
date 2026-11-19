@@ -1,8 +1,9 @@
+
 # AI 写作工具精选
 
-> 来源：[https://yunyinghui.feishu.cn/docx/TdSmdHXnho6KH4xqQ21cu5ujnIg](https://yunyinghui.feishu.cn/docx/TdSmdHXnho6KH4xqQ21cu5ujnIg)
+> 来源：`https://yunyinghui.feishu.cn/docx/TdSmdHXnho6KH4xqQ21cu5ujnIg`
 
-> **适用人群：****互联网 AI 写作人群**
+> **适用人群：**互联网 AI 写作人群
 
 > 首发时间：2024 年 3 月 12 日
 
@@ -12,22 +13,25 @@
 
 > **内容出品方：**[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
 
-> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 Ctrl +F/Command +F 的形式，搜索关键字/词，查找你想要的内容。
+> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 `Ctrl +F`/`Command +F` 的形式，搜索关键字/词，查找你想要的内容。
 
-> **持续更新 AI 写作好用的****相关工具，工****具介绍等内容，工具经**过测评口碑相对比较不错的精选出来，永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。
+> **持续更新 AI 写作好用的相关工具，工具介绍等内容，工具经过测评口碑相对比较不错的精选出来，永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。**
 
-# 更新记录
+## 更新记录
 
-# 写作工具导航
+## 写作工具导航
 
-| ## 写作工具导航 |  |  |  |  |
+| AI 文章写作 | AI 小说写作 | AI 营销写作 | AI 自媒体写作 | AI 作文写作 |
 | --- | --- | --- | --- | --- |
-| [**AI 文章写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#MmtUdYxIqooaLPxJid0cFTrqnwh) | [**AI 小说写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-CkPjd6iJboUnVQxnYg1cGMrMnQc) | [**AI 营销写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-Q4zWd5SDSoURTOxehnVcm4xXnVh) | [**AI 自媒体写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-HfygdcgDIohZwqx8k4mc9POJnWe) | [**AI 作文写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-LoBtd71XFo950GxgRb5cvwnVnvb) |
-| [**AI 论文写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-DTyEdZOw6okYQGx4577c9QGMnUg) | [**AI 公文写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-Pis9dfh9EoJEPsxUsmjcDEAQn8H) | [**AI 英文写作**](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-KZNCd5q0joQ6ehxLO99ceiqdnPe) |  |  |
+| [AI 文章写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#MmtUdYxIqooaLPxJid0cFTrqnwh) | [AI 小说写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-CkPjd6iJboUnVQxnYg1cGMrMnQc) | [AI 营销写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-Q4zWd5SDSoURTOxehnVcm4xXnVh) | [AI 自媒体写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-HfygdcgDIohZwqx8k4mc9POJnWe) | [AI 作文写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-LoBtd71XFo950GxgRb5cvwnVnvb) |
 
-# AI 文章写作
+| AI 论文写作 | AI 公文写作 | AI 英文写作 | | |
+| --- | --- | --- | --- | --- |
+| [AI 论文写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-DTyEdZOw6okYQGx4577c9QGMnUg) | [AI 公文写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-Pis9dfh9EoJEPsxUsmjcDEAQn8H) | [AI 英文写作](https://yunyinghui.feishu.cn/wiki/Icvjw2vW5iiDcGkGUqScMjWfnNb#part-KZNCd5q0joQ6ehxLO99ceiqdnPe) | | |
 
-## **1.ChatGPT**
+## AI 文章写作
+
+### 1. ChatGPT
 
 ![](img/58e4038b8d0284f0b09af587510ff8dd.png)
 
@@ -39,11 +43,11 @@
 
 **网络条件：**需要特殊网络
 
-**体验网址：**https://chat.openai.com/auth/login
+**体验网址：**`https://chat.openai.com/auth/login`
 
 **使用建议：**在所有写作软件当中最优先体验和使用的工具，用好有一定的门槛
 
-## 2.Notion AI
+### 2. Notion AI
 
 ![](img/d9431fcd2dd59863548f64b33aa0f849.png)
 
@@ -61,11 +65,11 @@
 
 **网络条件：**需要特殊网络
 
-**体验网址：**[www.notion.so](https://www.notion.so/3f3eec81f36e4ef7ab5d0ae298649f9d?p=c6134c98ade6484a8a37c04af50cd045&showMoveTo=true&saveParent=true)
+**体验网址：**`www.notion.so` [`https://www.notion.so/3f3eec81f36e4ef7ab5d0ae298649f9d?p=c6134c98ade6484a8a37c04af50cd045&showMoveTo=true&saveParent=true`](https://www.notion.so/3f3eec81f36e4ef7ab5d0ae298649f9d?p=c6134c98ade6484a8a37c04af50cd045&showMoveTo=true&saveParent=true)
 
 **使用建议：**写优质文章的可以使用该工具
 
-## 3.文心一言
+### 3. 文心一言
 
 ![](img/ea0b1b9b5002f38256292bbb1e079dd3.png)
 
@@ -77,13 +81,13 @@
 
 **网络条件：**不需要特殊网络
 
-**体验网址：**https://yiyan.baidu.com/
+**体验网址：**`https://yiyan.baidu.com/`
 
 **使用建议：**国内最先发布的中文对话大模型，总体来说满足基本需求，推荐简单使用
 
-# AI 小说写作
+## AI 小说写作
 
-## 1.Novel AI
+### 1. Novel AI
 
 ![](img/2516e5f9626e195ed4aa7bc4c4e6ba74.png)
 
@@ -95,11 +99,11 @@
 
 **网络条件：**需要特殊网络
 
-**体验网址：**https://novelai.net/
+**体验网址：**`https://novelai.net/`
 
 **使用建议：**写长篇小说的可以使用该工具
 
-## 2.Sudowrite
+### 2. Sudowrite
 
 ![](img/443e1429e10eea6108abc6cc8238b9ac.png)
 
@@ -107,31 +111,31 @@
 
 **工具优点：**
 
-+   用于故事生成的先进人工智能引擎
++ 用于故事生成的先进人工智能引擎
 
-+   情节、人物和对话的实时建议
++ 情节、人物和对话的实时建议
 
-+   用户友好的界面和体验
++ 用户友好的界面和体验
 
-+   与流行的写作软件轻松集成
++ 与流行的写作软件轻松集成
 
-+   替代短语、同义词和句子结构
++ 替代短语、同义词和句子结构
 
-+   识别陈词滥调和过度使用的表达方式并提出改进建议
++ 识别陈词滥调和过度使用的表达方式并提出改进建议
 
 **是否免费：**免费试用后每月 10 美元，随时取消。
 
 **网络条件：**需要特殊网络
 
-**体验网址：**https://www.sudowrite.com/
+**体验网址：**`https://www.sudowrite.com/`
 
 **使用建议：**写长篇小说的可以使用该工具
 
-## 3.彩云小梦
+### 3. 彩云小梦
 
 ![](img/5633ac20f6c7834bc598348ce65741ea.png)
 
-**工具介绍：** 这是一款可以帮助用户更好写作的写作软件，软件以 AI 智能为基础，帮助用户在写作时进行续写，软件会按照用户的前文，根据风格续写三种文章，让用户可以在多种续写中选择一款自己最喜欢的，或者是进行修改。
+**工具介绍：**这是一款可以帮助用户更好写作的写作软件，软件以 AI 智能为基础，帮助用户在写作时进行续写，软件会按照用户的前文，根据风格续写三种文章，让用户可以在多种续写中选择一款自己最喜欢的，或者是进行修改。
 
 **工具优点：**主要是超强的续写能力，包括已有的经典故事续写。
 
@@ -139,41 +143,41 @@
 
 **网络条件：**不需要特殊网络
 
-**体验网址：****https://www.xiaomengai.**com/dashboard/novels
+**体验网址：**`https://www.xiaomengai.com/dashboard/novels`
 
 **使用建议：**写续写小说的可以使用该工具
 
-## 4.百度作家助手
+### 4. 百度作家助手
 
 ![](img/a043054677b0c2c5ec9cbce7190874ab.png)
 
-**工具介绍：** 百度作家助手是一个致力于帮助作家、创作者更好地进行文学创作、作品管理和推广的平台。
+**工具介绍：**百度作家助手是一个致力于帮助作家、创作者更好地进行文学创作、作品管理和推广的平台。
 
 **工具优点：**
 
-+   创作工具：百度作家助手提供了一系列在线创作工具，如文字编辑、大纲规划、人物设定等，帮助作家更系统更有效地进行创作。
++ 创作工具：百度作家助手提供了一系列在线创作工具，如文字编辑、大纲规划、人物设定等，帮助作家更系统更有效地进行创作。
 
-+   作品管理：平台支持作家上传和管理自己的作品，提供云端存储，方便作家随时随地调整和查阅。
++ 作品管理：平台支持作家上传和管理自己的作品，提供云端存储，方便作家随时随地调整和查阅。
 
-+   推广平台：百度作家助手拥有庞大的用户基础，作家可以通过平台推广自己的作品，增加作品的曝光度和影响力
++ 推广平台：百度作家助手拥有庞大的用户基础，作家可以通过平台推广自己的作品，增加作品的曝光度和影响力
 
-+   原创保护：百度作家助手为作家提供原创作品保护服务，打击抄袭和侵权行为，保障作家的权益
++ 原创保护：百度作家助手为作家提供原创作品保护服务，打击抄袭和侵权行为，保障作家的权益
 
-+   写作教程：平台还提供了丰富的写作教程和资料，帮助新手作家提高写作技巧，助力作品创作
++ 写作教程：平台还提供了丰富的写作教程和资料，帮助新手作家提高写作技巧，助力作品创作
 
-+   合作伙伴：百度作家助手与多家知名出版社、文学网站建立合作关系，为作家提供更多的发展机会和空间
++ 合作伙伴：百度作家助手与多家知名出版社、文学网站建立合作关系，为作家提供更多的发展机会和空间
 
 **是否免费：**免费
 
 **网络条件：**不需要特殊网络
 
-**体验网址：**https://zuojia.baidu.com/
+**体验网址：**`https://zuojia.baidu.com/`
 
 **使用建议：**在百度生态做小说内容创作的人
 
-# AI 营销写作
+## AI 营销写作
 
-## 1.Jasper
+### 1. Jasper
 
 ![](img/e10b7cb2d761a987ba48aae5bdd9a8b3.png)
 
@@ -185,11 +189,11 @@
 
 **网络条件：**需要特殊网络
 
-**体验网址：**https://www.jasper.ai/
+**体验网址：**`https://www.jasper.ai/`
 
 **使用建议：**写营销文章的可以使用该工具
 
-## 2.copydone
+### 2. copydone
 
 ![](img/cf32ad5e214efef63d000ebcded736be.png)
 
@@ -201,13 +205,13 @@
 
 **网络条件：**不需要特殊网络
 
-**体验网址：**https://copyai.cn/?channel=aigc.cn
+**体验网址：**`https://copyai.cn/?channel=aigc.cn`
 
 **使用建议：**写营销文章的可以使用该工具，主要是国内的
 
-# AI 自媒体写作
+## AI 自媒体写作
 
-## 1.多种草 AI
+### 1. 多种草 AI
 
 ![](img/af3bef290eee8f5958d1c715dcff13dc.png)
 
@@ -219,11 +223,11 @@
 
 **网络条件：**不需要特殊网络
 
-**体验网址：**https://duozhongcao.com/
+**体验网址：**`https://duozhongcao.com/`
 
 **使用建议：**做📕相关内容的可以使用该工具
 
-## 2.**搭画快写**
+### 2. 搭画快写
 
 ![](img/6a84560dd6c36ad279e9e6d5ffe5c8c3.png)
 
@@ -235,13 +239,13 @@
 
 **网络条件：**不需要特殊网络
 
-**体验网址：**[AI 写作软件-AI 写文章工具平](https://www.dahuaba.com/posts)台-智能生成器 ChatGLM—搭画快写
+**体验网址：**[AI 写作软件-AI 写文章工具平台-智能生成器 ChatGLM—搭画快写](https://www.dahuaba.com/posts)
 
 **使用建议：**写自媒体相关文章的可以使用该工具
 
-# AI 作文写作
+## AI 作文写作
 
-## 1.火山写作
+### 1. 火山写作
 
 ![](img/369e1ebdfc3ad0f95071932437d94992.png)
 
@@ -257,7 +261,7 @@
 
 **使用建议：**学生作文改写可用润色
 
-## 2.秘塔猫
+### 2. 秘塔猫
 
 ![](img/a4dabd8ef8d460b7c1ab02cea0d31122.png)
 
@@ -265,15 +269,15 @@
 
 **工具优点：**
 
-1.语言生成能力：秘塔写作猫拥有强大的语言生成能力，可以根据用户提供的输入自动生成高质量的文章段落、句子和关键词。它能够帮助用户快速生成内容，并提供丰富的写作灵感和构思。
+1. 语言生成能力：秘塔写作猫拥有强大的语言生成能力，可以根据用户提供的输入自动生成高质量的文章段落、句子和关键词。它能够帮助用户快速生成内容，并提供丰富的写作灵感和构思。
 
-2.提供多种写作模式：秘塔写作猫支持多种写作模式，包括说明文、议论文、故事文等。无论用户需要写作什么类型的文本，它都可以根据用户需求提供相应的写作指导和建议。
+2. 提供多种写作模式：秘塔写作猫支持多种写作模式，包括说明文、议论文、故事文等。无论用户需要写作什么类型的文本，它都可以根据用户需求提供相应的写作指导和建议。
 
-3.提供语法和拼写纠正：秘塔写作猫内置了强大的语法和拼写检查功能，可以及时捕捉和修正您文章中的语法错误和拼写错误，提高文章的准确性和质量。
+3. 提供语法和拼写纠正：秘塔写作猫内置了强大的语法和拼写检查功能，可以及时捕捉和修正您文章中的语法错误和拼写错误，提高文章的准确性和质量。
 
-4.知识库和引用支持：秘塔写作猫集成了广泛的知识库和引用资源，可以提供相关的背景知识和引用资料。这有助于写作过程中提供可靠的支持和参考，提升文章的可信度和可读性。
+4. 知识库和引用支持：秘塔写作猫集成了广泛的知识库和引用资源，可以提供相关的背景知识和引用资料。这有助于写作过程中提供可靠的支持和参考，提升文章的可信度和可读性。
 
-5.可定制化和个性化：秘塔写作猫可以根据用户的需求进行个性化定制。可以设定写作风格、指定特定的行业术语和关键词，以满足您的特定写作需求。
+5. 可定制化和个性化：秘塔写作猫可以根据用户的需求进行个性化定制。可以设定写作风格、指定特定的行业术语和关键词，以满足您的特定写作需求。
 
 **是否免费：**有免费试用，付费 24 元/月起
 
@@ -283,15 +287,13 @@
 
 **使用建议：**学生用户比较多，写作文类用的比较多
 
-# AI 论文写作
+## AI 论文写作
 
-## 1.笔灵 AI 论文
+### 1. 笔灵 AI 论文
 
 ![](img/cc7889ae487974d91b1ac1d2ccd8b154.png)
 
-**工具介绍：**专业 AI 论文写作，免费生成千字论文大纲，AI 一键生成 4w 字毕业论文、 课题论文、期末
-
-论文等。
+**工具介绍：**专业 AI 论文写作，免费生成千字论文大纲，AI 一键生成 4w 字毕业论文、 课题论文、期末论文等。
 
 **工具优点：**各个阶段的论文均可用。
 
@@ -303,13 +305,11 @@
 
 **使用建议：**写论文相关的可以使用该工具
 
-## 2.AI 论文帮
+### 2. AI 论文帮
 
 ![](img/b19ccf4817505a20777df662963e2043.png)
 
-**工具介绍：**专业 AI 论文写作，免费生成千字论文大纲，AI 一键生成 5w 字毕业论文、 课题论文、期末
-
-论文等。
+**工具介绍：**专业 AI 论文写作，免费生成千字论文大纲，AI 一键生成 5w 字毕业论文、 课题论文、期末论文等。
 
 **工具优点：**各个阶段的论文均可用。
 
@@ -321,9 +321,9 @@
 
 **使用建议：**写论文相关的可以使用该工具
 
-# AI 公文写作
+## AI 公文写作
 
-## 1.星火公文写作助手
+### 1. 星火公文写作助手
 
 ![](img/5b4499ebf140b156ba7961a9d8f1739c.png)
 
@@ -339,7 +339,7 @@
 
 **使用建议：**写公文相关的可以使用该工具
 
-## 2.新华妙笔
+### 2. 新华妙笔
 
 ![](img/3efc67ee5ce7f7cfd6e1dc1a7bfd14ba.png)
 
@@ -348,6 +348,8 @@
 **工具优点：**专业强大的写作工具，支持 5 大功能，涵盖 16 类公文类别，94 种写作场景，助您公文处理“零差错”，随心所欲开启顺滑的创作体验。
 
 **是否免费：**付费工具
+
+
 
 **网络条件：**不需要特殊网络
 
@@ -361,7 +363,7 @@
 
 ![](img/6a4785f6ea21e955c83f38db5dc29523.png)
 
-**工具介绍：**智能修改， 实现完美英文写作，更懂中国人的英文写作神器。
+**工具介绍：**智能修改，实现完美英文写作，更懂中国人的英文写作神器。
 
 **工具优点：**
 
@@ -403,7 +405,7 @@
 
 **网络条件：**不需要特殊网络
 
-**体验网址：**https://app.grammarly.com/
+**体验网址：**`https://app.grammarly.com/`
 
 **使用建议：**写英文内容的可以使用该工具
 
@@ -411,9 +413,9 @@
 
 # AI 学习交流社群
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案例**，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：`zyg90s`（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 
@@ -425,7 +427,7 @@
 
 ![](img/b310ddd3878b13cf896dc327d6a28b19.png)
 
-好友（ID：zhangyuguo94s）
+好友（ID：`zhangyuguo94s`）
 
 **扫码加🛰️入🛰️群**
 

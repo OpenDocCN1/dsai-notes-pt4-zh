@@ -1,22 +1,21 @@
+
 # LLM推理引擎怎么选？TensorRT vs vLLM vs LMDeploy vs MLC-LLM
 
 > 来源：[https://agijuejin.feishu.cn/docx/Af1kdW2Qoo1kXbx0H8tcHf5Dnld](https://agijuejin.feishu.cn/docx/Af1kdW2Qoo1kXbx0H8tcHf5Dnld)
-
-> 作者：P**nHub兄弟网站 | DeepHub IMBA
-
+> 作者：PnHub兄弟网站 | DeepHub IMBA
 > 原文：https://mp.weixin.qq.com/s/wL5TvQHWUzR68hNUn7lK_g
 
-LLM擅长文本生成应用程序，如聊天和代码完成模型，能够高度理解和流畅。但是它们的大尺寸也给推理带来了挑战。有很多个框架和包可以优化LLM推理和服务，所以在本文中我将整理一些常用的推理引擎并进行比较。
+`LLM`擅长文本生成应用程序，如聊天和代码完成模型，能够高度理解和流畅。但是它们的大尺寸也给推理带来了挑战。有很多个框架和包可以优化`LLM`推理和服务，所以在本文中我将整理一些常用的推理引擎并进行比较。
 
 ![](img/44ab793c2536ffb8aa4a49bb33998c26.png)
 
-## **TensorRT-LLM**
+## TensorRT-LLM
 
-TensorRT-LLM是NV发布的一个推理引擎。llm被编译成TensorRT后与triton服务器一起部署并支持多GPU-多节点推理和FP8。
+`TensorRT-LLM`是NV发布的一个推理引擎。`llm`被编译成`TensorRT`后与`triton`服务器一起部署并支持多GPU-多节点推理和`FP8`。
 
-我们将比较HF模型、tensorrt模型和TensorRT-INT8模型(量化)的执行时间、ROUGE分数、延迟和吞吐量。
+我们将比较`HF`模型、`tensorrt`模型和`TensorRT-INT8`模型(量化)的执行时间、`ROUGE`分数、延迟和吞吐量。
 
-我这里在Linux上安装Nvidia-container-toolkit，初始化Git LFS(用于下载HF Models)，并下载所需的软件包如下:
+我这里在Linux上安装`Nvidia-container-toolkit`，初始化`Git LFS`(用于下载`HF` Models)，并下载所需的软件包如下:
 
 ```
 !curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
@@ -41,7 +40,7 @@ PHI_PATH=&quot;TensorRT-LLM/examples/phi&quot;
  !mkdir -p $PHI_PATH/7B &amp;&amp; git clone https://huggingface.co/microsoft/Phi-3-small-128k-instruct $PHI_PATH/7B
 ```
 
-使用下面的命令将模型转换为TensorRT-LLM格式，并从检查点构建TensorRT-LLM。
+使用下面的命令将模型转换为`TensorRT-LLM`格式，并从检查点构建`TensorRT-LLM`。
 
 ```
  !python3 $PHI_PATH/convert_checkpoint.py --model_dir $PHI_PATH/7B/ \
@@ -53,7 +52,7 @@ PHI_PATH=&quot;TensorRT-LLM/examples/phi&quot;
                 --output_dir $PHI_PATH/7B/trt_engines/bf16/1-gpu/
 ```
 
-我们还测试INT8的量化应用
+我们还测试`INT8`的量化应用
 
 ```
 !python3 $PHI_PATH/convert_checkpoint.py --model_dir $PHI_PATH/7B \
@@ -65,7 +64,7 @@ PHI_PATH=&quot;TensorRT-LLM/examples/phi&quot;
                 --output_dir $PHI_PATH/7B/trt_engines/int8_weight_only/1-gpu/
 ```
 
-然后就可以在摘要任务上测试phi3和两个TensorRT模型
+然后就可以在摘要任务上测试`phi3`和两个`TensorRT`模型
 
 ```
 %%capture phi_hf_results
@@ -88,7 +87,7 @@ PHI_PATH=&quot;TensorRT-LLM/examples/phi&quot;
                         --engine_dir $PHI_PATH/7B/trt_engines/int8_weight_only/1-gpu/
 ```
 
-得到结果后就可以解析输出并绘制图表，比较所有模型的执行时间、ROUGE分数、延迟和吞吐量。
+得到结果后就可以解析输出并绘制图表，比较所有模型的执行时间、`ROUGE`分数、延迟和吞吐量。
 
 ![](img/d0024b94650819f9905e5a4127e1d082.png)
 
@@ -96,9 +95,9 @@ PHI_PATH=&quot;TensorRT-LLM/examples/phi&quot;
 
 可以看到速度提高了不少，所有结果我们最后一起总结。
 
-## **vLLM**
+## vLLM
 
-vLLM提供LLM推理和服务，具有SOTA吞吐量，分页注意力，连续批处理，量化(GPTQ, AWQ, FP8)的支持和优化的CUDA内核。
+`vLLM`提供`LLM`推理和服务，具有`SOTA`吞吐量，分页注意力，连续批处理，量化(`GPTQ`, `AWQ`, `FP8`)的支持和优化的`CUDA`内核。
 
 我们首先安装相应的包
 
@@ -149,7 +148,7 @@ from transformers import AutoTokenizer
 
 ![](img/c5273b36c74104890db6353ebc639cfd.png)
 
-通过vLLM在ShareGPT数据集上对模型的性能进行基准测试
+通过`vLLM`在`ShareGPT`数据集上对模型的性能进行基准测试
 
 ```
 !wget https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/resolve/main/ShareGPT_V3_unfiltered_cleaned_split.json
@@ -159,9 +158,9 @@ from transformers import AutoTokenizer
 
 ![](img/697664db2ce757fdfd2347e7d6712a45.png)
 
-## **LMDeploy**
+## LMDeploy
 
-LMDeploy允许压缩、部署和服务llm，同时提供高效的推理(持久批处理、阻塞KV缓存、动态分裂和融合、张量并行、高性能CUDA内核)、有效的量化(4位推理性能比FP16高2.4倍)。跨多台机器和GPU部署多模型服务。此外，它还允许分析令牌延迟和吞吐量、请求吞吐量、API服务器和triton推理服务器性能。
+`LMDeploy`允许压缩、部署和服务`llm`，同时提供高效的推理(持久批处理、阻塞`KV`缓存、动态分裂和融合、张量并行、高性能`CUDA`内核)、有效的量化(4位推理性能比`FP16`高2.4倍)。跨多台机器和GPU部署多模型服务。此外，它还允许分析令牌延迟和吞吐量、请求吞吐量、`API`服务器和`triton`推理服务器性能。
 
 ```
 !pip install -q lmdeploy
@@ -172,7 +171,7 @@ nest_asyncio.apply()
 %cd lmdeploy/benchmark
 ```
 
-LMdeploy还开发了两个推理引擎TurboMind和PyTorch。我们来使用PyTorch引擎。
+`LMdeploy`还开发了两个推理引擎`TurboMind`和`PyTorch`。我们来使用`PyTorch`引擎。
 
 ```
 !python3 profile_generation.py microsoft/Phi-3-mini-128k-instruct --backend pytorch
@@ -182,9 +181,9 @@ LMdeploy还开发了两个推理引擎TurboMind和PyTorch。我们来使用PyTor
 
 ![](img/a781934bccb37edfe07428b6d8500df0.png)
 
-## **MLC-LLM**
+## MLC-LLM
 
-MLC-LLM提供了一个高性能的部署和推理引擎，称为MLCEngine。
+`MLC-LLM`提供了一个高性能的部署和推理引擎，称为`MLCEngine`。
 
 ```
 conda activate your-environment
@@ -206,21 +205,21 @@ cd mlc-llm/python
 pip install -e .
 ```
 
-我们需要将模型权重转换为MLC格式。通过Git LFS下载HF模型，然后转换权重。
+我们需要将模型权重转换为`MLC`格式。通过`Git LFS`下载`HF`模型，然后转换权重。
 
 ```
 mlc_llm convert_weight ./dist/models/Phi-3-small-128k-instruct/ \
     --quantization q0f16 \
-    --model-type &quot;phi3&quot; \
+    --model-type "phi3" \
     -o ./dist/Phi-3-small-128k-instruct-q0f16-MLC
 ```
 
-现在将MLC格式模型加载到MLC引擎中
+现在将`MLC`格式模型加载到`MLC`引擎中
 
 ```
 from mlc_llm import MLCEngine
 # Create engine
-model = &quot;HF://mlc-ai/Phi-3-mini-128k-instruct-q0f16-MLC&quot;
+model = "HF://mlc-ai/Phi-3-mini-128k-instruct-q0f16-MLC"
 engine = MLCEngine(model)
 
 # Now let’s calculate throughput
@@ -228,18 +227,22 @@ import time
 from transformers import AutoTokenizer
 start = time.time()
 response = engine.chat.completions.create(
-    messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is the Machine Learning?&quot;}],
+    messages=[{"role": "user", "content": "What is the Machine Learning?"}],
     model=model,
     stream=False,
 )
 taken = time.time() - start
-tokenizer = AutoTokenizer.from_pretrained(&quot;microsoft/Phi-3-mini-128k-instruct&quot;)
-print(&quot;tok/s&quot;, 82 // taken)
+tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
+print("tok/s", 82 // taken)
 ```
 
 ![](img/db43361c1cb15021855ea776121859ed.png)
 
-## **总结**
+## 总结
+
+
+
+# 推理引擎性能对比与总结
 
 TensorRT INT8模型在推理速度上优于HF模型和TensorRT模型，而TensorRT模型在总结任务上表现更好，ROUGE得分最高。可以看到这几个推理引擎都要比使用HF模型的速度快2倍左右，这是因为HF使用的是Python和Pytorch，也没有进行任何的优化。而者4个引擎在推理速度上相差不大，差距在5%-10%左右，这是因为目前这几个引擎都是用了优化的技术，区别只是代码实现的方式不同会产生一些差距，所以在实际使用时，我们只要选择一个兼容性好（或者符合你正在使用的大语言模型）的框架就可以了。
 
@@ -251,7 +254,7 @@ TensorRT INT8模型在推理速度上优于HF模型和TensorRT模型，而Tensor
 
 ---
 
-**MORE**
+## MORE
 
 kaggle比赛交流和组队
 

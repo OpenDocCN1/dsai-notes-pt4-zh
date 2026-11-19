@@ -1,3 +1,4 @@
+
 # AIGC教育行业全景报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/NgwJd41pyoX8ITxcgXXcJe8AnKA](https://agijuejin.feishu.cn/docx/NgwJd41pyoX8ITxcgXXcJe8AnKA)

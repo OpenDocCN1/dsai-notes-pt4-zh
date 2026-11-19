@@ -1,3 +1,4 @@
+
 # DeepSeek-V3-0324深度解析
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/BEGwdlsv4oAXo8xTgH3cpzXKn0b](https://kq4b3vgg5b.feishu.cn/docx/BEGwdlsv4oAXo8xTgH3cpzXKn0b)
@@ -12,17 +13,17 @@
 
 看本次更新公告，感觉这次升级幅度也不大，哪怕是新模型重点提升了编程和推理性能，比起DeepSeek-R1模型来说还是差着一点，那这次更新模型的意义是什么呢？等着直接发DeepSeek-R2模型不好么？
 
-**DeepSeek-R1模型评分**
+## DeepSeek-R1模型评分
 
 ![](img/0a2ffc492a5153f31130d6741250c8b5.png)
 
-DeepSeek-V3-0324模型评分
+## DeepSeek-V3-0324模型评分
 
 ![](img/8b0bf418b110c8944743fd197ceeaa80.png)
 
 如果你也有同感，那么你可能低估了DeepSeek-V3-0324模型的真实价值。
 
-实际上，新款**V**3模型是国内首款、也是全球最强的具备强推理性能的对话模型，而在Agent技术大爆发的今天，这款模型才是DeepSeek盛名之下第一款具备工业级Agent开发能力的基础模型，甚至我相信未来，这款模型的影响力将不输于DeepSeek-R1模型。
+实际上，新款V3模型是国内首款、也是全球最强的具备强推理性能的对话模型，而在Agent技术大爆发的今天，这款模型才是DeepSeek盛名之下第一款具备工业级Agent开发能力的基础模型，甚至我相信未来，这款模型的影响力将不输于DeepSeek-R1模型。
 
 那么接下来，我就从技术人角度，为大家详细介绍下DeepSeek-V3-0324的模型功能特性，以及为什么说这款模型是Agent开发最佳模型。
 
@@ -80,11 +81,11 @@ DeepSeek-V3-0324模型评分
 
 要知道，上一代V3模型还傻傻的连外部工具都识别不清楚，而新版V3模型，不仅调用外部工具准确率大幅提升，而且居然支持了多工具并联（parallel function calling）和串联（multi function calling）使用。
 
-parallel function calling
+### parallel function calling
 
 ![](img/9d9840184e1a404f1d16a46624f2d7d3.png)
 
-multi function calling
+### multi function calling
 
 ![](img/ec8edc3b97183c1825610b885e2ebdc8.png)
 
@@ -94,7 +95,7 @@ multi function calling
 
 可以说，现在哪怕不依靠复杂的Agent开发工具，DeepSeek-V3-0324凭借其强大的function calling能力，就能够快速搭建智能体了。
 
-这里我们通过一个**具体的示例来进行说明**
+### 这里我们通过一个具体的示例来进行说明
 
 我们在本地环境中，给新版V3模型配置了网络搜索和编程两个外部工具，并让模型搜索北京近7天的气温，然后用Python绘制一个折线图进行展示，同时注意合理设置代码参数，以免图片展示有乱码。
 
@@ -116,7 +117,7 @@ multi function calling
 
 而通过这个示例能够看出，DeepSeek-V3-0324模型，就是国产模型中Agent能力最强的大模型没有之一，其Agent能力甚至不输GPT-4o或Claude-3.5等老牌Agent模型，并且这还是全球唯一一款顶尖Agent能力的开源大模型。不得不说，DeepSeek-V3-0324模型的发布，将从底层模型的角度，大幅加快Agent技术落地。
 
-看**到这里，可能有小伙伴会有疑问，为什么要用V3模型进行**Agent开发，DeepSeek-R1模型不行么？很遗憾，尽管DeepSeek-R1推理和对话能力都不错，但其本身并不适合或者说根本无法进行Agent开发。原因有三：
+看到这里，可能有小伙伴会有疑问，为什么要用V3模型进行Agent开发，DeepSeek-R1模型不行么？很遗憾，尽管DeepSeek-R1推理和对话能力都不错，但其本身并不适合或者说根本无法进行Agent开发。原因有三：
 
 其一：DeepSeek-R1模型就没有Function calling功能，无法调用外部工具，哪怕是通过嫁接的方法让R1模型能够间接调用外部工具，实现效果也非常不稳定，达不到工业级应用水准；
 

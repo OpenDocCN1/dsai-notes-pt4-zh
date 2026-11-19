@@ -1,3 +1,4 @@
+
 # 240218 - 0212｜OpenAI 发布视频生成模型 Sora；微软 Copilot 开售；Google Gemini 上线，MoE 架构，100 万上下文；OpenAI 赋予 ChatGPT 记忆功能，由你掌控；OpenAI 7 万亿超大芯片计划曝光，要重塑全球半导体行业；Google 提出全新 RLHF 方法：消除奖励模型，且无需对抗性训练；华为盘古大模型变「小」，1.5B 也很能打；苹果设计团队专访｜软件与硬件副总裁谈 Apple Vision Pro 产品开发与体验 ...
 
 > 来源：[https://leonzhang.feishu.cn/docx/C068drFknoF2xkxLHVNcEKurnxg](https://leonzhang.feishu.cn/docx/C068drFknoF2xkxLHVNcEKurnxg)
@@ -10,11 +11,11 @@ https://mp.weixin.qq.com/s/H2SDgcm08edUHXn4ETFzKA
 
 OpenAI 发布视频生成模型 Sora，能生成高清视频
 
-⭐️ 特点： Sora 对语言理解深刻，生成高质量视频
+⭐️ 特点：Sora 对语言理解深刻，生成高质量视频
 
-❗️ 弱点： 难以模拟复杂场景中的物理现象
+❗️ 弱点：难以模拟复杂场景中的物理现象
 
-⚡️ 技术细节： Sora 使用 transformer 架构，扩展性能卓越
+⚡️ 技术细节：Sora 使用 transformer 架构，扩展性能卓越
 
 https://openai.com/research/video-generation-models-as-world-simulators
 
@@ -22,13 +23,13 @@ OpenAI 将 GPT-4 Turbo 的速率限制全面提高了一倍，并取消了所有
 
 https://x.com/OpenAIDevs/status/1758631343595168142?s=20
 
-我[们](https://t.co/D2Xm3QidZy)[刚](https://t.co/D2Xm3QidZy)刚将 GPT-4 Turbo 的速率限制全面提高了一倍，并取消了所有每日限制。以下是您现在可以实现的每分钟最大令牌数 （TPM）。https://platform.openai.com/docs/guides/rate-limits/usage-tiers…
+我们刚刚将 GPT-4 Turbo 的速率限制全面提高了一倍，并取消了所有每日限制。以下是您现在可以实现的每分钟最大令牌数（TPM）。https://platform.openai.com/docs/guides/rate-limits/usage-tiers…
 
 ### Microsoft Copilot 开售，任何人都可以在任何地点、任何设备上使用
 
 https://x.com/Microsoft/status/1755245047350759502?s=20
 
-[Microsoft Co](https://twitter.com/MSFTCopilot)pilot，您的日常 AI 伴侣。 @MSFTCopilot 任何人都可以在任何地点、任何设备上使用。立即试用： https://msft.it/6009iAMYF
+Microsoft Copilot，您的日常 AI 伴侣。@MSFTCopilot 任何人都可以在任何地点、任何设备上使用。立即试用：https://msft.it/6009iAMYF
 
 ### 谷歌 Gemini Ultra 大会员：每月 19.99 美元
 
@@ -88,7 +89,7 @@ OpenAI 为 ChatGPT 用户推出记忆功能，用户可控制
 
 https://mp.weixin.qq.com/s/DmRe3pa2xhEL_yxdGbxUJg
 
-在这波 AI 淘金热里，英伟达经常被称为那个「卖铲子的人」，而且卖的是难以替代的铲子。依靠这个角色，英伟达市值已经超越亚马逊，成美股第四大公司，离谷歌市值仅一步之遥。但值得注意的是，英伟达本身也在这波 AI 浪潮里淘金。刚刚，他们发布了一个对话机器人 -- 「Chat with RTX」，面向 GeForce RTX 30 系列和 40 系列显卡用户（至少有 8GB VRAM）。有人开玩笑说，Sam Altman 进军芯片领域，黄仁勋进入聊天机器人的领域，这是 Sam vs Jensen 的时代。
+在这波 AI 淘金热里，英伟达经常被称为那个「卖铲子的人」，而且卖的是难以替代的铲子。依靠这个角色，英伟达市值已经超越亚马逊，成美股第四大公司，离谷歌市值仅一步之遥。但值得注意的是，英伟达本身也在这波 AI 浪潮里淘金。刚刚，他们发布了一个对话机器人——“Chat with RTX”，面向 GeForce RTX 30 系列和 40 系列显卡用户（至少有 8GB VRAM）。有人开玩笑说，Sam Altman 进军芯片领域，黄仁勋进入聊天机器人的领域，这是 Sam vs Jensen 的时代。
 
 ### 7 万亿美元：OpenAI 超大芯片计划曝光，要重塑全球半导体行业
 
@@ -96,11 +97,11 @@ https://mp.weixin.qq.com/s/GA-q9JpceKi2pUdoyxLZQw
 
 OpenAI 的 CEO 山姆・奥特曼（Sam Altman）引领了近期生成式 AI 的大发展。最近，他又有了一个宏伟目标：重塑全球半导体行业。据《华尔街日报》近日报道，奥特曼正在推动一个旨在提高全球芯片制造能力的项目，并在与包括阿联酋政府在内的不同投资者进行谈判。
 
-### 黄院士回应奥特曼 7 万亿芯片计划：笑了
+### 黄院士回应奥特曼 7 万亿美元芯片计划：笑了
 
 https://mp.weixin.qq.com/s/QK1CiRvJcT3s2dZ0RaYlkQ
 
-黄院士回应奥特曼 7 万亿芯片计划
+黄院士回应奥特曼 7 万亿美元芯片计划
 
 ⭐️ 黄仁勋认为更高效、更低成本的芯片会持续出现 黄院士认为 7 万亿美元投资可能不那么必要。
 
@@ -128,7 +129,7 @@ https://mp.weixin.qq.com/s/l6s5ccmxK39p4KhYIKW5bg
 
 大型语言模型（LLM）的成功离不开「基于人类反馈的强化学习（RLHF）」。RLHF 可以大致可以分为两个阶段，首先，给定一对偏好和不偏好的行为，训练一个奖励模型，通过分类目标为前者分配更高的分数。然后通过某种强化学习算法优化这个奖励函数。然而，奖励模型的关键要素可能会产生一些不良影响。
 
-来自卡内基梅隆大学（CMU）和 Google Research 的研究者联合提出了一种简单的、理论上严格的、实验上有效的 RLHF 新方法 —— 自我博弈偏好优化（Self-Play Preference Optimization，SPO）。该方法消除了奖励模型，并且不需要对抗性训练。
+来自卡内基梅隆大学（CMU）和 Google Research 的研究者联合提出了一种简单的、理论上严格的、实验上有效的 RLHF 新方法——自我博弈偏好优化（Self-Play Preference Optimization，SPO）。该方法消除了奖励模型，并且不需要对抗性训练。
 
 ### 华为盘古大模型变「小」，1.5B 也很能打
 
@@ -136,11 +137,11 @@ https://mp.weixin.qq.com/s/0CysMLnaC-OfUqGFJk9qqw
 
 ChatGPT 等系列模型横空出世，以其强大的性能引起了全球的关注，有望改变人与计算机之间的交互方式，应用到千行百业。然而这些大型模型的实际需要极高的内存和计算资源，限制了它们在各种场景中的应用。例如，具有 175B 参数的 GPT-3 在使用 FP32 数据类型存储时需要大约 700GB 内存。尽管 7B 参数模型相对更高效，但其资源需求仍然难以直接部署在手机等边缘设备上。
 
-+   盘古 π 论文链接：https://arxiv.org/pdf/2312.17276.pdf
++ 盘古 π 论文链接：https://arxiv.org/pdf/2312.17276.pdf
 
-+   “小” 模型训练论文链接：https://arxiv.org/pdf/2402.02791.pdf
++ “小”模型训练论文链接：https://arxiv.org/pdf/2402.02791.pdf
 
-+   训练实现链接：https://github.com/YuchuanTian/RethinkTinyLM
++ 训练实现链接：https://github.com/YuchuanTian/RethinkTinyLM
 
 在这篇工作中，作者以一个 1B 大小的语言模型作为载体，详细讨论了小的语言模型应该如何炼丹。作者从模型结构、参数初始化、模型优化方法三个角度展开研究：总结出四条提升小语言模型效果的炼丹术。
 
@@ -228,9 +229,7 @@ https://stocklytics.com/content/apple-sets-new-record-acquires-32-ai-startups-in
 
 https://www.datacenterdynamics.com/en/news/together-ai-set-to-receive-100m-in-funding-round-led-by-salesforce-ventures/
 
-Together AI，一家云端 AI 公司，预计将在 Salesforce Ventures 领导的最新融资轮中筹集超过 1 亿美元，这将使公司估值超过 10 亿美元。该公司成立于 2022 年，提供开源云平台，供开发者构建开放且可定制的 AI 模型，并通过绑定 Nvidia 服务器芯片售卖 GPU 服务和软件，为客户提供训练和调整开源模型的更经济效益的方法。尽管需求旺盛，但 Nvidia 等芯片设计商难以跟上，Nvidia 正配给 H100 GPUs 的可用性，并预计短缺将持续大约 18 个月。自成立以来，
-
-Together AI 已通过两轮融资共筹集了 1.225 亿美元。
+Together AI，一家云端 AI 公司，预计将在 Salesforce Ventures 领导的最新融资轮中筹集超过 1 亿美元，这将使公司估值超过 10 亿美元。该公司成立于 2022 年，提供开源云平台，供开发者构建开放且可定制的 AI 模型，并通过绑定 Nvidia 服务器芯片售卖 GPU 服务和软件，为客户提供训练和调整开源模型的更经济效益的方法。尽管需求旺盛，但 Nvidia 等芯片设计商难以跟上，Nvidia 正配给 H100 GPUs 的可用性，并预计短缺将持续大约 18 个月。自成立以来，Together AI 已通过两轮融资共筹集了 1.225 亿美元。
 
 ## 📚 学习资料
 
@@ -244,11 +243,11 @@ https://mp.weixin.qq.com/s/4USwSMIiudFCdy9C5pN1dQ
 
 https://x.com/AndrewYNg/status/1757821916843552842?s=20
 
-使用 Amazon Bedrock 的无 [LLM ](https://twitter.com/AWS)服务器[应用程序的新短期课程，由 @](https://twitter.com/mikegchambers)AWS ' @mikegchambers ！无服务器体系结构[使您能够快速部署应用程序，而无需设置和管理计算服务器来运行应用程](https://t.co/37hE71j3pT)[序](https://t.co/37hE71j3pT)，而维护这些服务器可能是另一项全职工作。在本课程中，您将学习如何通过使用事件驱动的架构来构建复杂的 AI 工作流来做到这一点。
+使用 Amazon Bedrock 的无 LLM 服务器应用程序的新短期课程，由 @AWS @mikegchambers！无服务器体系结构使您能够快速部署应用程序，而无需设置和管理计算服务器来运行应用程序，而维护这些服务器可能是另一项全职工作。在本课程中，您将学习如何通过使用事件驱动的架构来构建复杂的 AI 工作流来做到这一点。
 
 Mike 通过构建一个很酷的应用程序来说明这些概念，该应用程序可以自动检测传入的客户查询，使用 ASR（自动语音识别）进行转录，使用 LLM Bedrock 进行汇总，并使用 AWS Lambda 部署无服务器。
 
-我希望本课程能让您更轻松地构建和部署 LLM 需要多步骤 AI 工作流的应用程序。 请在此处注册： https://deeplearning.ai/short-courses/serverless-llm-apps-amazon-bedrock…
+我希望本课程能让您更轻松地构建和部署 LLM 需要多步骤 AI 工作流的应用程序。请在此处注册：https://deeplearning.ai/short-courses/serverless-llm-apps-amazon-bedrock…
 
 ### 谷歌深度学习 Chollet：人们对 LLM 的观点现在总是走向两个极端
 
@@ -270,12 +269,18 @@ https://x.com/fchollet/status/1756018992282746981?s=20
 
 https://mp.weixin.qq.com/s/vPqv0wBR6_sv8jKQRrhbfQ
 
-前谷歌科学家 Yi Tay 发布新模型，21B 媲美 Gemini Pro、GPT-3.5
 
-⭐️ 新模型性能 Reka Flash 在多项基准测试中与 Gemini Pro、GPT-3.5 相媲美
 
-1️⃣ 模型参数 Reka Flash 参数量为 21B，Reka Edge 参数量为 7B
+# 前谷歌科学家 Yi Tay 发布新模型，21B 媲美 Gemini Pro、GPT-3.5
 
-✅ 评估结果 Reka Flash 在语言、多语言推理、视觉和视频等方面取得出色成绩
+## 新模型性能
+Reka Flash 在多项基准测试中与 Gemini Pro、GPT-3.5 相媲美
 
-⏩ 未来展望 Reka 团队将推出最大、功能最强的 Reka Core 模型
+## 模型参数
+Reka Flash 参数量为 21B，Reka Edge 参数量为 7B
+
+## 评估结果
+Reka Flash 在语言、多语言推理、视觉和视频等方面取得出色成绩
+
+## 未来展望
+Reka 团队将推出最大、功能最强的 Reka Core 模型

@@ -1,58 +1,59 @@
+
 # 02-05分类算法-XGBoost
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/WIFRdOzqioRt5KxOOm8csVN0neY](https://qqs7y1hozd1.feishu.cn/docx/WIFRdOzqioRt5KxOOm8csVN0neY)
 
-XGBoost，全称为 eXtreme Gradient Boosting，XGBoost 是一种提升（Boosting）算法。
+`XGBoost`，全称为 eXtreme Gradient Boosting，`XGBoost` 是一种提升（Boosting）算法。
 
-它通过将多个简单的模型（通常是决策树）组合在一起，逐步改进模型的预测能力。简单来说，XGBoost就是通过让一群“弱小的”模型一起工作，最终变得“很强大”。而且 XGBoost 用于回归、分类等任务。
+它通过将多个简单的模型（通常是决策树）组合在一起，逐步改进模型的预测能力。简单来说，`XGBoost`就是通过让一群“弱小的”模型一起工作，最终变得“很强大”。而且 `XGBoost` 用于回归、分类等任务。
 
-下面，给出大家4个 XGBoost 的优点，大家可以很好的有一个大致印象~
+下面，给出大家4个 `XGBoost` 的优点，大家可以很好的有一个大致印象~
 
-+   **高效：** 算法速度快，计算资源利用效率高。
++ **高效：** 算法速度快，计算资源利用效率高。
 
-+   **准确：** 可以处理复杂的数据，生成高质量的预测。
++ **准确：** 可以处理复杂的数据，生成高质量的预测。
 
-+   **灵活：** 可以处理各种类型的数据，包括缺失值和类别变量。
++ **灵活：** 可以处理各种类型的数据，包括缺失值和类别变量。
 
-+   **可扩展：** 适用于大规模数据集，可以在分布式环境中运行。
++ **可扩展：** 适用于大规模数据集，可以在分布式环境中运行。
 
 假设我们要预测一个学生的考试成绩。
 
-我们可以使用XGBoost来建立模型：
+我们可以使用`XGBoost`来建立模型：
 
-+   第一步，我们用一些简单的规则（比如，学生是否参加了补习班，是否每天学习超过2小时等）建立一个初步的预测模型。这是我们的一棵“决策树”。
++ 第一步，我们用一些简单的规则（比如，学生是否参加了补习班，是否每天学习超过2小时等）建立一个初步的预测模型。这是我们的一棵“决策树”。
 
-+   第二步，我们观察这棵树预测的误差（比如，某些学生的成绩预测过高或过低），然后再建立一棵新的决策树，专门来纠正这些误差。
++ 第二步，我们观察这棵树预测的误差（比如，某些学生的成绩预测过高或过低），然后再建立一棵新的决策树，专门来纠正这些误差。
 
-+   重复这个过程，建立多棵决策树，每棵树都修正前面树的错误。
++ 重复这个过程，建立多棵决策树，每棵树都修正前面树的错误。
 
-+   最终，我们把所有树的预测结果综合起来，就得到了一个非常准确的预测模型。
++ 最终，我们把所有树的预测结果综合起来，就得到了一个非常准确的预测模型。
 
 ## 理论基础
 
-基础原理这部分，我会从 XGBoost 的数学原理、公式推理和算法流程三大部分和大家进行阐述~
+基础原理这部分，我会从 `XGBoost` 的数学原理、公式推理和算法流程三大部分和大家进行阐述~
 
 ### 目标函数
 
-**XGBoost 的**目标函数由两个部分组成：损失函数和正则化项。
+`XGBoost`的目标函数由两个部分组成：损失函数和正则化项。
 
 目标函数的表达式为：
 
 其中：
 
-+    是真实值
++ 是真实值
 
-+    是预测值
++ 是预测值
 
-+    是损失函数，通常为均方误差 (MSE) 或对数损失
++ 是损失函数，通常为均方误差 (MSE) 或对数损失
 
-+    是第  棵树
++ 是第  棵树
 
-+    是正则化项，用于控制模型的复杂度
++ 是正则化项，用于控制模型的复杂度
 
 ### 梯度提升
 
-XGBoost 通过逐步添加树来最小化损失函数，每一步都是在前一步的基础上改进预测。
+`XGBoost` 通过逐步添加树来最小化损失函数，每一步都是在前一步的基础上改进预测。
 
 假设我们已经有了  棵树，第  棵树的目标是最小化下述的增量损失函数：
 
@@ -68,21 +69,21 @@ XGBoost 通过逐步添加树来最小化损失函数，每一步都是在前一
 
 其中：
 
-+    是一阶导数（梯度）
++ 是一阶导数（梯度）
 
-+    是二阶导数（Hessian）
++ 是二阶导数（Hessian）
 
 将常数项去掉后，简化为：
 
 ### 树模型和正则化
 
-XGBoost 中每棵树的模型可以表示为：
+`XGBoost` 中每棵树的模型可以表示为：
 
 其中：
 
-+    是叶子节点的索引函数，将输入  映射到叶子节点
++ 是叶子节点的索引函数，将输入  映射到叶子节点
 
-+    是叶子节点的权重
++ 是叶子节点的权重
 
 正则化项定义为：
 
@@ -110,7 +111,7 @@ XGBoost 中每棵树的模型可以表示为：
 
 ### 树的分裂
 
-为了找到最优的分裂点，XGBoost 计算每个候选分裂点的增益：
+为了找到最优的分裂点，`XGBoost` 计算每个候选分裂点的增益：
 
 其中：
 
@@ -122,7 +123,7 @@ XGBoost 中每棵树的模型可以表示为：
 
 ### 算法流程
 
-XGBoost 的整体算法流程：
+`XGBoost` 的整体算法流程：
 
 **1. 初始化：** 初始化预测值  为一个常数值（通常为目标值的平均值）。
 
@@ -160,7 +161,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 导入数据集
-train_data = pd.read_csv(&#x27;housing.csv&#x27;)
+train_data = pd.read_csv('housing.csv')
 train_data.head()
 ```
 
@@ -171,19 +172,19 @@ train_data.head()
 train_data.isnull().sum()
 
 # 填充缺失值
-train_data[&#x27;total_bedrooms&#x27;].fillna(train_data[&#x27;total_bedrooms&#x27;].median(), inplace=True)
+train_data['total_bedrooms'].fillna(train_data['total_bedrooms'].median(), inplace=True)
 
 # 创建特征
-train_data[&#x27;rooms_per_household&#x27;] = train_data[&#x27;total_rooms&#x27;] / train_data[&#x27;households&#x27;]
-train_data[&#x27;bedrooms_per_room&#x27;] = train_data[&#x27;total_bedrooms&#x27;] / train_data[&#x27;total_rooms&#x27;]
-train_data[&#x27;population_per_household&#x27;] = train_data[&#x27;population&#x27;] / train_data[&#x27;households&#x27;]
+train_data['rooms_per_household'] = train_data['total_rooms'] / train_data['households']
+train_data['bedrooms_per_room'] = train_data['total_bedrooms'] / train_data['total_rooms']
+train_data['population_per_household'] = train_data['population'] / train_data['households']
 
 # 将分类特征转换为数值
-train_data = pd.get_dummies(train_data, columns=[&#x27;ocean_proximity&#x27;], drop_first=True)
+train_data = pd.get_dummies(train_data, columns=['ocean_proximity'], drop_first=True)
 
 # 定义特征和标签
-X = train_data.drop(&#x27;median_house_value&#x27;, axis=1)
-y = train_data[&#x27;median_house_value&#x27;]
+X = train_data.drop('median_house_value', axis=1)
+y = train_data['median_house_value']
 ```
 
 **数据集划分**
@@ -211,15 +212,15 @@ y_pred = xgb_reg.predict(X_test)
 
 # 均方根误差
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-print(f&quot;RMSE: {rmse:.4f}&quot;)
+print(f"RMSE: {rmse:.4f}")
 
 # 可视化实际值与预测值的关系
 plt.figure(figsize=(10, 6))
 plt.scatter(y_test, y_pred, alpha=0.3)
-plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], &#x27;r--&#x27;, lw=2)
-plt.xlabel(&#x27;Actual&#x27;)
-plt.ylabel(&#x27;Predicted&#x27;)
-plt.title(&#x27;Actual vs Predicted&#x27;)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
+plt.xlabel('Actual')
+plt.ylabel('Predicted')
+plt.title('Actual vs Predicted')
 plt.show()
 ```
 
@@ -230,20 +231,20 @@ plt.show()
 ```
 # 参数网格
 param_grid = {
-    &#x27;max_depth&#x27;: [3, 5, 7],
-    &#x27;learning_rate&#x27;: [0.01, 0.1, 0.2],
-    &#x27;n_estimators&#x27;: [100, 200, 300],
-    &#x27;subsample&#x27;: [0.8, 1],
-    &#x27;colsample_bytree&#x27;: [0.8, 1]
+    'max_depth': [3, 5, 7],
+    'learning_rate': [0.01, 0.1, 0.2],
+    'n_estimators': [100, 200, 300],
+    'subsample': [0.8, 1],
+    'colsample_bytree': [0.8, 1]
 }
 
 # 网格搜索
-grid_search = GridSearchCV(estimator=xgb_reg, param_grid=param_grid, scoring=&#x27;neg_mean_squared_error&#x27;, cv=3, verbose=1)
+grid_search = GridSearchCV(estimator=xgb_reg, param_grid=param_grid, scoring='neg_mean_squared_error', cv=3, verbose=1)
 grid_search.fit(X_train, y_train)
 
 # 最优参数
 best_params = grid_search.best_params_
-print(f&quot;Best parameters: {best_params}&quot;)
+print(f"Best parameters: {best_params}")
 
 # 使用最优参数训练模型
 xgb_reg_optimized = xgb.XGBRegressor(**best_params)
@@ -254,15 +255,15 @@ y_pred_optimized = xgb_reg_optimized.predict(X_test)
 
 # 均方根误差
 rmse_optimized = np.sqrt(mean_squared_error(y_test, y_pred_optimized))
-print(f&quot;Optimized RMSE: {rmse_optimized:.4f}&quot;)
+print(f"Optimized RMSE: {rmse_optimized:.4f}")
 
 # 可视化实际值与预测值的关系（优化后）
 plt.figure(figsize=(10, 6))
 plt.scatter(y_test, y_pred_optimized, alpha=0.3)
-plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], &#x27;r--&#x27;, lw=2)
-plt.xlabel(&#x27;Actual&#x27;)
-plt.ylabel(&#x27;Predicted&#x27;)
-plt.title(&#x27;Optimized Actual vs Predicted&#x27;)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
+plt.xlabel('Actual')
+plt.ylabel('Predicted')
+plt.title('Optimized Actual vs Predicted')
 plt.show()
 ```
 
@@ -278,67 +279,79 @@ features = X.columns
 # 可视化
 plt.figure(figsize=(10, 6))
 plt.barh(features, importance)
-plt.xlabel(&#x27;Importance&#x27;)
-plt.ylabel(&#x27;Features&#x27;)
-plt.title(&#x27;Feature Importance&#x27;)
+plt.xlabel('Importance')
+plt.ylabel('Features')
+plt.title('Feature Importance')
 plt.show()
 ```
 
 ![](img/a608853a2743a0ca47e2f97b7c44795c.png)
 
-整个代码的过程中，展示了如何使用XGBoost算法对房价数据集进行预测。通过数据预处理、特征工程、模型训练、评估、优化和特征重要性可视化，完整地展示了机器学习项目的流程。通过超参数调优，可以显著提高模型的预测性能。在实际项目中，大家可以根据需要调整数据预处理和模型优化的步骤和参数，获得更好的效果。
+整个代码的过程中，展示了如何使用`XGBoost`算法对房价数据集进行预测。通过数据预处理、特征工程、模型训练、评估、优化和特征重要性可视化，完整地展示了机器学习项目的流程。通过超参数调优，可以显著提高模型的预测性能。在实际项目中，大家可以根据需要调整数据预处理和模型优化的步骤和参数，获得更好的效果。
 
 ## 模型分析
 
-**使用XGBoost模型的优缺点**
+**使用`XGBoost`模型的优缺点**
 
 **优点**：
 
-+   **高效性**：XGBoost在计算上非常高效，支持并行和分布式计算，能够处理大型数据集。
++ **高效性**：`XGBoost`在计算上非常高效，支持并行和分布式计算，能够处理大型数据集。
 
-+   **性能优越**：它通常在结构化数据集上表现出色，具有较高的预测准确率。
++ **性能优越**：它通常在结构化数据集上表现出色，具有较高的预测准确率。
 
-+   **自动化特征选择**：通过树模型自动选择重要特征，减少了手动特征选择的工作量。
++ **自动化特征选择**：通过树模型自动选择重要特征，减少了手动特征选择的工作量。
 
-+   **防止过拟合**：通过内置的正则化参数（如(\gamma)和(\lambda)）控制模型复杂度，防止过拟合。
++ **防止过拟合**：通过内置的正则化参数（如`γ`和`λ`）控制模型复杂度，防止过拟合。
 
-+   **灵活性**：支持多种目标函数和自定义目标函数，适用于分类和回归问题。
++ **灵活性**：支持多种目标函数和自定义目标函数，适用于分类和回归问题。
 
-+   **处理缺失值**：自动处理缺失值，推测出合适的分支方向。
++ **处理缺失值**：自动处理缺失值，推测出合适的分支方向。
 
 **缺点**：
 
-+   **参数调优复杂**：需要调整多个超参数以获得最佳性能，调优过程可能较为复杂和耗时。
++ **参数调优复杂**：需要调整多个超参数以获得最佳性能，调优过程可能较为复杂和耗时。
 
-+   **对内存要求较高**：在处理非常大的数据集时，内存占用较高，可能需要大量内存。
++ **对内存要求较高**：在处理非常大的数据集时，内存占用较高，可能需要大量内存。
 
-+   **对数据预处理敏感**：尽管XGBoost自动处理缺失值，但数据标准化、归一化等预处理仍然重要，影响模型性能。
++ **对数据预处理敏感**：尽管`XGBoost`自动处理缺失值，但数据标准化、归一化等预处理仍然重要，影响模型性能。
 
 ### 与相似算法的对比
 
-| **对比项** | XGBoost vs. Random Forest | XGBoost vs. GBDT |
+| **对比项** | `XGBoost` vs. `Random Forest` | `XGBoost` vs. `GBDT` |
+
 | --- | --- | --- |
+
 | **算法类别** | 都是基于决策树的集成学习方法 | 都属于提升法（Boosting） |
+
 | **基学习器** | 决策树 | 决策树 |
-| **主要区别** | XGBoost 使用提升法（Boosting），每棵树依赖于前一棵树；随机森林使用袋装法（Bagging），每棵树独立训练 | XGBoost 是 GBDT 的高效实现，加入了正则化、并行计算等优化 |
+
+| **主要区别** | `XGBoost` 使用提升法（Boosting），每棵树依赖于前一棵树；随机森林使用袋装法（Bagging），每棵树独立训练 | `XGBoost` 是 `GBDT` 的高效实现，加入了正则化、并行计算等优化 |
+
 | **处理问题类型** | 分类和回归 | 分类和回归 |
+
 | **特征选择能力** | 都具有较强的特征选择能力 | 都具有较强的特征选择能力 |
-| **性能** | XGBoost 在大规模、高维数据上通常比随机森林表现更好 | XGBoost 在计算效率和优化上优于传统 GBDT |
-| **计算复杂度** | XGBoost 计算复杂度较高，但可以通过并行计算提高效率；随机森林计算复杂度较低 | XGBoost 计算效率更高，优化了内存使用和计算资源 |
-| **超参数调优** | 随机森林超参数较少，较容易调优 | XGBoost 拥有更多可调参数，使得调优更灵活 |
-| **并行计算** | 随机森林天生支持并行，每棵树可独立训练 | XGBoost 通过优化支持并行计算，但仍是串行提升的方式 |
-| **正则化处理** | 随机森林没有显式的正则化 | XGBoost 引入 L1、L2 正则化，降低过拟合风险 |
+
+| **性能** | `XGBoost` 在大规模、高维数据上通常比随机森林表现更好 | `XGBoost` 在计算效率和优化上优于传统 `GBDT` |
+
+| **计算复杂度** | `XGBoost` 计算复杂度较高，但可以通过并行计算提高效率；随机森林计算复杂度较低 | `XGBoost` 计算效率更高，优化了内存使用和计算资源 |
+
+| **超参数调优** | 随机森林超参数较少，较容易调优 | `XGBoost` 拥有更多可调参数，使得调优更灵活 |
+
+| **并行计算** | 随机森林天生支持并行，每棵树可独立训练 | `XGBoost` 通过优化支持并行计算，但仍是串行提升的方式 |
+
+| **正则化处理** | 随机森林没有显式的正则化 | `XGBoost` 引入 L1、`L2` 正则化，降低过拟合风险 |
+
 | **适用场景** | 适用于解释性要求高、数据关系复杂但不强依赖顺序的任务 | 适用于对计算性能要求高、需要精细调优的任务，如金融、推荐系统等 |
 
-+   **何时选择 XGBoost**：当数据量大、特征多、需要高精度预测时，XGBoost 是更好的选择。
++ **何时选择`XGBoost`**：当数据量大、特征多、需要高精度预测时，`XGBoost` 是更好的选择。
 
-+   何时选择 Random Forest：当计算资源有限，且需要解释性强的模型时，随机森林更适合。
++ 何时选择`Random Forest`：当计算资源有限，且需要解释性强的模型时，随机森林更适合。
 
-+   **何时选择 GBDT**：XGBoost 是 GBDT 的优化版本，如果使用传统 GBDT，建议切换到 XGBoost 以获得更高的计算效率和优化能力。
++ **何时选择`GBDT`**：`XGBoost` 是 `GBDT` 的优化版本，如果使用传统 `GBDT`，建议切换到 `XGBoost` 以获得更高的计算效率和优化能力。
 
 ## 最后
 
-以上阐述了整个的XGBoost。XGBoost作为一种强大的集成学习算法，在许多应用场景中表现出色，尤其适用于大规模结构化数据集。
+以上阐述了整个的`XGBoost`。`XGBoost`作为一种强大的集成学习算法，在许多应用场景中表现出色，尤其适用于大规模结构化数据集。
 
 通过高效的实现、强大的特征选择能力和防止过拟合的机制，成为机器学习比赛和实际应用中的热门选择。然而，在数据规模较小、计算资源受限或非结构化数据的情况下，其他算法可能更为适用。
 

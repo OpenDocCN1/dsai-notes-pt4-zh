@@ -1,3 +1,4 @@
+
 # 项目检查点：历史感知 + 主动文档维护 + 智能提交
 
 > 来源：[https://huchegames.feishu.cn/docx/SEr6dfeKGoByElxJb0Bc1Ytdn5g](https://huchegames.feishu.cn/docx/SEr6dfeKGoByElxJb0Bc1Ytdn5g)
@@ -22,7 +23,7 @@ changelog:
 
 date: "2025-07-18"
 
-changes: ["Added handling for projects without README.md files"]
+changes: ["Added handling for projects without `README.md` files"]
 
 +   version: "1.0.0"
 
@@ -32,61 +33,61 @@ changes: ["Initial version with historical awareness and smart commits"]
 
 ---
 
-# Checkpoint - 项目检查点命令
+## Checkpoint - 项目检查点命令
 
-## 环境分析
+### 环境分析
 
-### 1. Checkpoint 历史记录
+#### 1. Checkpoint 历史记录
 
-+   检查点日志: !test -f .checkpoint_log && echo "发现历史记录" && tail -1 .checkpoint_log || echo "首次执行"
++   检查点日志: `!test -f .checkpoint_log && echo "发现历史记录" && tail -1 .checkpoint_log || echo "首次执行"`
 
-+   CLAUDE.md记录: !grep -A 5 "## Checkpoint 记录" CLAUDE.md 2>/dev/null | tail -5 || echo "无记录"
++   CLAUDE.md记录: `!grep -A 5 "## Checkpoint 记录" CLAUDE.md 2>/dev/null | tail -5 || echo "无记录"`
 
-+   上次提交哈希: !git log --grep="checkpoint.*Generated with.*Claude Code" --oneline -1 | awk '{print $1}' || echo "未找到"
++   上次提交哈希: `!git log --grep="checkpoint.*Generated with.*Claude Code" --oneline -1 | awk '{print $1}' || echo "未找到"`
 
-+   上次执行时间: !git log --grep="checkpoint.*Generated with.*Claude Code" --format="%cd" --date=short -1 || echo "首次"
++   上次执行时间: `!git log --grep="checkpoint.*Generated with.*Claude Code" --format="%cd" --date=short -1 || echo "首次"`
 
-### 2. 项目文档现状
+#### 2. 项目文档现状
 
-+   README文件: !find . -maxdepth 2 -iname "readme*" -type f | head -1
++   README文件: `!find . -maxdepth 2 -iname "readme*" -type f | head -1`
 
-+   主要配置: !find . -maxdepth 2 -name "package.json" -o -name "pyproject.toml" -o -name "Cargo.toml" | head -1
++   主要配置: `!find . -maxdepth 2 -name "package.json" -o -name "pyproject.toml" -o -name "Cargo.toml" | head -1`
 
-+   文档时效: !README_FILE=$(find . -maxdepth 2 -iname "readme*" -type f | head -1); if [ -n "$README_FILE" ]; then stat -f "%Sm" -t "%Y-%m-%d" "$README_FILE" 2>/dev/null || stat -c "%y" "$README_FILE" 2>/dev/null | cut -d' ' -f1; else echo "无README"; fi
++   文档时效: `!README_FILE=$(find . -maxdepth 2 -iname "readme*" -type f | head -1); if [ -n "$README_FILE" ]; then stat -f "%Sm" -t "%Y-%m-%d" "$README_FILE" 2>/dev/null || stat -c "%y" "$README_FILE" 2>/dev/null | cut -d' ' -f1; else echo "无README"; fi`
 
-+   变更日志: !find . -maxdepth 2 -iname "changelog*" -o -iname "history*" | head -1 || echo "无"
++   变更日志: `!find . -maxdepth 2 -iname "changelog*" -o -iname "history*" | head -1 || echo "无"`
 
-### 3. Git 当前状态
+#### 3. Git 当前状态
 
-+   工作区状态: !git status --porcelain
++   工作区状态: `!git status --porcelain`
 
-+   当前分支: !git branch --show-current
++   当前分支: `!git branch --show-current`
 
-+   暂存区: !git diff --cached --name-only | wc -l | tr -d ' '
++   暂存区: `!git diff --cached --name-only | wc -l | tr -d ' '`
 
-+   未提交变更: !git diff --stat
++   未提交变更: `!git diff --stat`
 
-### 4. Git 历史分析
+#### 4. Git 历史分析
 
-+   期间提交: !LAST_HASH=$(git log --grep="checkpoint.*Generated with.*Claude Code" --oneline -1 | awk '{print $1}'); if [ -n "$LAST_HASH" ]; then git log --oneline $LAST_HASH..HEAD; else git log --oneline -5; fi
++   期间提交: `!LAST_HASH=$(git log --grep="checkpoint.*Generated with.*Claude Code" --oneline -1 | awk '{print $1}'); if [ -n "$LAST_HASH" ]; then git log --oneline $LAST_HASH..HEAD; else git log --oneline -5; fi`
 
-+   期间变更: !LAST_HASH=$(git log --grep="checkpoint.*Generated with.*Claude Code" --oneline -1 | awk '{print $1}'); if [ -n "$LAST_HASH" ]; then git diff --name-status $LAST_HASH..HEAD; else git diff --name-status HEAD~3..HEAD 2>/dev/null || echo "无历史记录"; fi
++   期间变更: `!LAST_HASH=$(git log --grep="checkpoint.*Generated with.*Claude Code" --oneline -1 | awk '{print $1}'); if [ -n "$LAST_HASH" ]; then git diff --name-status $LAST_HASH..HEAD; else git diff --name-status HEAD~3..HEAD 2>/dev/null || echo "无历史记录"; fi`
 
-+   最近提交: !git log --oneline -3
++   最近提交: `!git log --oneline -3`
 
-### 5. 其他有用资料
+#### 5. 其他有用资料
 
-+   项目规模: !find . -name "*.js" -o -name "*.ts" -o -name "*.py" -o -name "*.go" -o -name "*.rs" | wc -l | tr -d ' '
++   项目规模: `!find . -name "*.js" -o -name "*.ts" -o -name "*.py" -o -name "*.go" -o -name "*.rs" | wc -l | tr -d ' '`
 
-+   依赖状况: !CONFIG_FILE=$(find . -maxdepth 2 -name "package.json" -o -name "requirements.txt" -o -name "Cargo.toml" | head -1); if [ -n "$CONFIG_FILE" ]; then echo "配置文件: $CONFIG_FILE"; else echo "无标准配置"; fi
++   依赖状况: `!CONFIG_FILE=$(find . -maxdepth 2 -name "package.json" -o -name "requirements.txt" -o -name "Cargo.toml" | head -1); if [ -n "$CONFIG_FILE" ]; then echo "配置文件: $CONFIG_FILE"; else echo "无标准配置"; fi`
 
-+   文档目录: !find . -maxdepth 2 -type d -name "docs" -o -name "documentation" | head -1 || echo "无"
++   文档目录: `!find . -maxdepth 2 -type d -name "docs" -o -name "documentation" | head -1 || echo "无"`
 
-## 执行流程
+### 执行流程
 
-### 1. 历史轨迹分析
+#### 1. 历史轨迹分析
 
-+   优先读取自身历史记录（.checkpoint_log、CLAUDE.md）了解项目演进
++   优先读取自身历史记录（`.checkpoint_log`、`CLAUDE.md`）了解项目演进
 
 +   对比当前文档与历史记录，识别变化趋势
 
@@ -96,13 +97,13 @@ changes: ["Initial version with historical awareness and smart commits"]
 
 +   基于历史轨迹评估项目发展阶段和健康度
 
-### 2. 主动文档维护
+#### 2. 主动文档维护
 
-#### README.md 自动更新（强制执行）
+##### `README.md` 自动更新（强制执行）
 
 **触发条件**：
 
-+   包含模板占位符（[PROJECT_NAME]、TODO等）
++   包含模板占位符（`[PROJECT_NAME]`、`TODO`等）
 
 +   文档落后代码超过30天
 
@@ -114,19 +115,20 @@ changes: ["Initial version with historical awareness and smart commits"]
 
 +   检测到明显需要更新时，直接执行更新而非仅提示
 
-+   备份原README为README.backup.md
++   备份原`README`为`README.backup.md`
 
 +   基于当前项目状态重新生成完整文档
 
 **更新内容**：
 
+```markdown
 # 项目名称
 
 项目简介
 
 ## 安装
 
-npm install  # 或相应的安装命令
+`npm install`  # 或相应的安装命令
 
 ## 使用
 
@@ -134,24 +136,26 @@ npm install  # 或相应的安装命令
 
 ## 开发
 
-npm run dev  # 基于package.json scripts
+`npm run dev`  # 基于`package.json` scripts
 
 ## 贡献
 
 标准贡献指南
+```
 
-#### 其他文档维护
+##### 其他文档维护
 
-+   **CHANGELOG.md**：项目有版本但缺少变更记录时自动创建
++   **`CHANGELOG.md`**：项目有版本但缺少变更记录时自动创建
 
-+   **package.json**：同步description字段
++   **`package.json`**：同步`description`字段
 
 +   **配置文档**：更新环境变量说明
 
-### 3. 检查点记录
+#### 3. 检查点记录
 
-#### 更新 CLAUDE.md
+##### 更新 `CLAUDE.md`
 
+```markdown
 ## Checkpoint 记录
 
 项目: [项目名]
@@ -168,7 +172,7 @@ npm run dev  # 基于package.json scripts
 
 ### 文档维护
 
-- [x] README.md: [更新摘要]
+- [x] `README.md`: [更新摘要]
 
 - [x] 配置同步: [同步状态]
 
@@ -177,63 +181,43 @@ npm run dev  # 基于package.json scripts
 [下步建议]
 
 Git提交: [哈希]
+```
 
-#### 更新 .checkpoint_log
+##### 更新 `.checkpoint_log`
 
+```json
 {
-
-"timestamp": "ISO时间",
-
-"project_name": "项目名",
-
-"branch": "分支名",
-
-"previous_checkpoint": {
-
-"timestamp": "上次时间",
-
-"commit_hash": "上次哈希"
-
-},
-
-"period_analysis": {
-
-"commits_since_last": ["提交列表"],
-
-"development_phase": "开发阶段",
-
-"activity_intensity": "高/中/低"
-
-},
-
-"documentation_status": {
-
-"readme_updated": true,
-
-"sync_gap_days": 5,
-
-"update_urgency": "低"
-
-},
-
-"checkpoint_status": {
-
-"milestone": "里程碑",
-
-"health_score": 8,
-
-"trajectory": "上升/稳定/下降",
-
-"recommendations": ["建议列表"]
-
+  "timestamp": "ISO时间",
+  "project_name": "项目名",
+  "branch": "分支名",
+  "previous_checkpoint": {
+    "timestamp": "上次时间",
+    "commit_hash": "上次哈希"
+  },
+  "period_analysis": {
+    "commits_since_last": ["提交列表"],
+    "development_phase": "开发阶段",
+    "activity_intensity": "高/中/低"
+  },
+  "documentation_status": {
+    "readme_updated": true,
+    "sync_gap_days": 5,
+    "update_urgency": "低"
+  },
+  "checkpoint_status": {
+    "milestone": "里程碑",
+    "health_score": 8,
+    "trajectory": "上升/稳定/下降",
+    "recommendations": ["建议列表"]
+  }
 }
+```
 
-}
-
-### 4. 智能提交
+#### 4. 智能提交
 
 **首次执行**：
 
+```
 [项目名]: initial project checkpoint
 
 Project: [项目名]
@@ -245,9 +229,11 @@ Health: [评分]/10
 [    🔍 check](https://claude.ai/code)point | Generated with Claude Code
 
 Co-Authored-By: Claude <noreply@anthropic.com>
+```
 
 **有历史时**：
 
+```
 [项目名]: [智能描述] (checkpoint)
 
 Period: [时间段]
@@ -261,20 +247,21 @@ Health trend: [趋势]
 [    🔍 check](https://claude.ai/code)point | Generated with Claude Code
 
 Co-Authored-By: Claude <noreply@anthropic.com>
+```
 
-## 文档更新规则
+### 文档更新规则
 
-### 自动更新触发
+#### 自动更新触发
 
-+   README包含[PROJECT_NAME]、TODO、template等占位符
++   `README`包含`[PROJECT_NAME]`、`TODO`、`template`等占位符
 
 +   文档修改时间比代码落后30天+
 
-+   项目名与package.json不匹配
++   项目名与`package.json`不匹配
 
 +   缺少基本章节（安装、使用等）
 
-### 项目类型适配
+#### 项目类型适配
 
 +   **前端项目**：安装、开发、构建指令
 
@@ -282,7 +269,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 +   **通用项目**：基于代码结构的功能说明
 
-## 预期输出
+### 预期输出
 
 🎯 Checkpoint 执行完成！
 
@@ -302,7 +289,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 📋 文档维护:
 
-📄 README: [已更新/最新/需处理]
+📄 `README`: [已更新/最新/需处理]
 
 📚 其他文档: [维护状态]
 

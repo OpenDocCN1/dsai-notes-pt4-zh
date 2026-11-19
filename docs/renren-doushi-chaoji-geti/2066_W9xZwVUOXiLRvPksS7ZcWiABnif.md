@@ -1,3 +1,4 @@
+
 # 大病互助
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/JS6Xdg5usoGhloxRv1mcGxCxnsc](https://xuqiwei1986.feishu.cn/docx/JS6Xdg5usoGhloxRv1mcGxCxnsc)
@@ -14,7 +15,7 @@
 
 👸号文章：
 
-https://mp.weixin.qq.com/s/9ch2-s3M8jouESXriTvTlg
+`https://mp.weixin.qq.com/s/9ch2-s3M8jouESXriTvTlg`
 
 ![](img/3adbf05ad2107bae513bf1ab42396290.png)
 
@@ -33,5 +34,3 @@ https://mp.weixin.qq.com/s/9ch2-s3M8jouESXriTvTlg
 ### 公示详情
 
 ![](img/2059af6d33de7d692baaea4b84be9444.png)
-
-##

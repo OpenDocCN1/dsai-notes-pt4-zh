@@ -1,8 +1,7 @@
-# 07.09-中国科学院成功研发出底栖动物智能识别系统：准确率达 90% 以上，全程高度自动化
-
-> 来源：[https://agijuejin.feishu.cn/docx/QlWAddCwDop7TyxL4HccAJR7nWh](https://agijuejin.feishu.cn/docx/QlWAddCwDop7TyxL4HccAJR7nWh)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 07 月 09 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/QlWAddCwDop7TyxL4HccAJR7nWh](https://agijuejin.feishu.cn/docx/QlWAddCwDop7TyxL4HccAJR7nWh)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

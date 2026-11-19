@@ -1,8 +1,9 @@
+
 # 文章 2
 
-> 来源：[https://qianniucity.feishu.cn/docx/PNbPdJlbMoZXJVxqBy3cTM9Gn4b](https://qianniucity.feishu.cn/docx/PNbPdJlbMoZXJVxqBy3cTM9Gn4b)
+> 来源：`https://qianniucity.feishu.cn/docx/PNbPdJlbMoZXJVxqBy3cTM9Gn4b`
 
-@deepseek_ai R1：比 O1 便宜 90%——无需大量预标注样本即可学会推理！
+`@deepseek_ai` R1：比 O1 便宜 90%——无需大量预标注样本即可学会推理！
 
 关于为何这摧毁了“碰壁”论点的讨论，以及这对 2025 年人工智能可能意味着什么
 
@@ -18,7 +19,7 @@
 
 第二？定价。
 
-他们提供的智能水平看似相同，但成本仅为@OpenAI 的 10%
+他们提供的智能水平看似相同，但成本仅为`@OpenAI` 的 10%
 
 ![](img/b978af464e5e3785f2efeabac42e2a0a.png)
 
@@ -44,4 +45,4 @@
 
 相关链接：
 
-+   HuggingFace：https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
++   HuggingFace：`https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B`

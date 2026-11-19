@@ -1,10 +1,11 @@
+
 # 30余款热门AI绘画测评 一直更
 
 > 来源：[https://aigclena.feishu.cn/docx/EkCbd32xPo2U0zxtkuNcJJ2jn6d](https://aigclena.feishu.cn/docx/EkCbd32xPo2U0zxtkuNcJJ2jn6d)
 
 > 从2024年中flux开始，基本上新出一个AI绘画模型，我都会用同一句提示词测评。只展示真实客观结果，不作过多主观评价。
 
-# Banana vs gpt4o
+## Banana vs gpt4o
 
 2025年9月3日
 
@@ -12,7 +13,7 @@
 
 谷歌官方提示词指南：https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn#template_7
 
-## 电商场景
+### 电商场景
 
 Round1
 
@@ -20,7 +21,7 @@ Round1
 
 ![](img/1d192f9ea7d75a572763991054554332.png)
 
-ps：生图结果 图片顺序显示和 写提示词时 图片顺序不一 ar不起作用
+ps：生图结果 图片顺序显示和 写提示词时 图片顺序不一 `ar`不起作用
 
 ![](img/6d83caf04e279a17f15d2e68ecfbcf25.png)
 
@@ -64,7 +65,6 @@ Round2
 
 ![](img/00e54d511e5a9ee0530ca3e4627f7a5e.png)
 
-
 ![](img/e483a6eba396baa1d79b70f6b5af1371.png)
 
 ![](img/112f68e1e2109fbe646d5f9d085fa321.png)
@@ -97,7 +97,7 @@ studio 详细描述
 
 ![](img/d999972547b29bb1aaee91764365d7cc.png)
 
-# 30余个热门AI绘画平台盘点测评
+## 30余个热门AI绘画平台盘点测评
 
 > 每款工具介绍来自维基百科、官网或者百度
 
@@ -115,25 +115,25 @@ studio 详细描述
 
 最近出了一款比肩flux kontext的模型，nano-banana，听说是谷歌的产品，融图效果也比4o要好。
 
-## 提示词1 车模
+### 提示词1 车模
 
 在一间明亮现代的汽车展示间内，一名年轻女性站立于一台白色TOYOTA跑车（车型外观为双门跑车）前方中心位置，微笑面对镜头。女性拥有长直发，额前齐刘海，佩戴长串耳环，容貌甜美，气质自信。 她身穿时尚潮流的服饰：白色蕾丝露肩短上衣，搭配高腰短裙，外层是蓝色透明纱裙，下摆微蓬。下身穿著黑色丝袜并搭配高跟鞋，整体打扮性感又带有时尚感，大方地摆著自然直立姿势，双手垂于身侧。 背景中，可见汽车展示间干净明亮，墙上悬挂著大型TOYOTA标志与字样，白色墙壁与灯光反射出汽车新车亮丽光泽。车辆停放于展间主要位置，车头朝向镜头，前车牌有清楚的TOYOTA品牌标志与名称，整台车外观流线动感，轮胎与车体细节清晰。 整个画面主题鲜明，融合新车的科技时尚感与模特儿的青春热情，营造出现代车展或行销宣传的氛围，简洁明亮、充满活力与专业感。
 
 Inside a bright and modern car showroom, a young woman stands centrally in front of a white Toyota sports car (a two-door model), smiling at the camera. She has long straight hair with blunt bangs, wears long dangling earrings, and has a sweet appearance with a confident demeanor.  Her outfit is stylish and trendy: a white lace off-the-shoulder crop top paired with a high-waisted short skirt, layered with a sheer blue overskirt that flares slightly at the hem. She completes the look with black stockings and high heels, exuding both sexiness and fashion. She stands in a natural, upright posture with hands casually hanging by her sides.  In the background, the showroom is clean and bright, with a large Toyota logo and text displayed on the wall. The white walls and lighting reflect the glossy shine of the brand-new car. Positioned prominently in the showroom, the car faces the camera, with the Toyota logo and brand name clearly visible on the front license plate. The vehicle boasts a sleek, dynamic design, with detailed tires and bodywork clearly defined.  The entire scene has a distinct theme, blending the technological and fashionable vibe of the new car with the model’s youthful vitality, creating an atmosphere reminiscent of a modern auto show or marketing campaign—sleek, bright, energetic, and professional.
 
-## 提示词2 儿童模特走秀
+### 提示词2 儿童模特走秀
 
 时装秀现场，一位 6 岁的中国超级童模女孩 身穿高级定制晚礼服登场。她的礼服是一件 令人惊艳的米白色、金色与紫色的公主裙，灵感来自落日的色彩。裙身由多层薄纱叠加而成，层层渐变、自然融合，点缀着金色装饰，并搭配一顶相称的王冠。她手中握着一根 太阳形状的小魔杖，走在 T 台上时露出灿烂的笑容。背景是一座 柔光映照下的梦幻城堡，观众席虚化，衬托出童话般的氛围。全身展示，完整腿部，32K UHD 超高清
 
 fashion show , A 6-year-old chinese super modle girl in a high-end custom evening gown in a stunning off-white and gold and purple princess dress, smiling, inspired by the colors of a sunset. The dress has layers of tulle that blend seamlessly , with golden accents and a matching crown. The baby holds a small sun-shaped wand, her smile radiant as she walks down the runway. The background features a softly lit castle setting with a blurred audience, enhancing the fairytale ambiance. full body , full leg , 32K UHD
 
-## 提示词3 动物运动
+### 提示词3 动物运动
 
 照片级真实感，一只 红毛猩猩 正在打羽毛球，做出一个快速、有力的扑倒式扣杀，将球猛然击向对方场地。他的表情自然流畅，完全投入其中。背景采用 柔和的风格，营造出宁静平和的氛围。画面配合 电影级灯光，超高分辨率，面部细节逼真。
 
 photorealistic, an orangutan, playing badminton, doing a fast, powerful, diving smash towards the opponent's court. He hits the shuttlecock with a natural expression. The background features a soft style for a calm and peaceful atmosphere. cinematic lighting, very high resolution, realistic face.
 
-## 提示词4 中秋节海报
+### 提示词4 中秋节海报
 
 2025.10.4 中秋节
 
@@ -143,7 +143,7 @@ A translucent silk handscroll unfurls, glowing softly with bioluminescent light.
 
 Rendered as a tilt-shift miniature scene, the artwork shimmers in 8K resolution with volumetric lighting, a warm golden translucence, and intricate, lifelike details. It fuses the elegance of Song Dynasty aesthetics with a brilliant, contemporary glow. Set against a warm orange background, the piece exudes a sense of mystery and grandeur. At the top, the words “中秋节” appear in golden seal script. Vertical format.
 
-## 提示词5 电影胶片三图拼接
+### 提示词5 电影胶片三图拼接
 
 2025.10.22
 
@@ -161,7 +161,7 @@ Rendered as a tilt-shift miniature scene, the artwork shimmers in 8K resolution 
 
 ![](img/356bff0d6f34c7d9e1a7f77b111c771d.png)
 
-## 1、Midjourney
+### 1、Midjourney
 
 官网地址：https://www.midjourney.com/
 
@@ -175,6 +175,10 @@ discord地址：www.discord.com
 
 ---
 
+
+
+## 1、Midjourney
+
 Midjourney 是一个生成式人工智能程序和服务，由总部位于旧金山的独立研究实验室 Midjourney 公司创建并托管。Midjourney 能根据自然语言描述（称为提示词）生成图像，类似于 OpenAI 的 DALL-E 和 Stability AI 的 Stable Diffusion。是人工智能热潮中的代表性技术之一。
 
 Midjourney 团队由大卫・霍尔茨领导，他是 Leap Motion 的联合创始人。霍尔茨在 2022 年 8 月告诉《Register》杂志，该公司当时已实现盈利。用户可通过 Discord 机器人命令或官方网站使用。
@@ -184,8 +188,6 @@ Midjourney 团队由大卫・霍尔茨领导，他是 Leap Motion 的联合创�
 ![](img/6dee42c9a98f24f32927f720ffa2e1c0.png)
 
 ![](img/ed98ce0a6f9abca31bf0f47d135b4480.png)
-
-
 
 ![](img/3737d5a986730e0eb8aa93f5c08806c9.png)
 
@@ -203,11 +205,9 @@ Midjourney 团队由大卫・霍尔茨领导，他是 Leap Motion 的联合创�
 
 ---
 
-Black Forest Labs 于 2024 年 8 月 1 日推出 FLUX.1 文生图功能，一经发布便引发轰动。其生成质量媲美“生图一哥” Midjourney，在图像细节、提示词理解、风格多样性和场景复杂性等方面更是超越了 Midjourney、DALL·E 等主流模型。背后团队由全球顶尖的 AI 研究人员组成，今年5月推出FLUX.1 Kontext，支持同时用文字与图像进行创作和编辑，可实现角色一致性、本地元素修改等功能，表现亮眼，广受好评。
-
+Black Forest Labs 于 2024 年 8 月 1 日推出 FLUX.1 文生图功能，一经发布便引发轰动。其生成质量媲美“生图一哥” Midjourney，在图像细节、提示词理解、风格多样性和场景复杂性等方面更是超越了 Midjourney、DALL·E 等主流模型。背后团队由全球顶尖的 AI 研究人员组成，今年 5 月推出 FLUX.1 Kontext，支持同时用文字与图像进行创作和编辑，可实现角色一致性、本地元素修改等功能，表现亮眼，广受好评。
 
 ![](img/60d65d1fa526f5a6582b58995dec919e.png)
-
 
 ![](img/97a1daf65b29da42b889976c9b016b23.png)
 
@@ -223,7 +223,7 @@ Black Forest Labs 于 2024 年 8 月 1 日推出 FLUX.1 文生图功能，一经
 
 使用方法：本地安装部署与在线云平台使用
 
-生图质量:★★★★★
+生图质量：★★★★★
 
 优势：质量高、可控性强
 
@@ -237,11 +237,11 @@ Black Forest Labs 于 2024 年 8 月 1 日推出 FLUX.1 文生图功能，一经
 
 ---
 
-Stability AI是一款基于扩散技术的深度学习文本到图像模型，于 2022 年发布。这项生成式人工智能技术是 Stability AI 的核心产品，被视为当前人工智能热潮的重要组成部分。
+Stability AI 是一款基于扩散技术的深度学习文本到图像模型，于 2022 年发布。这项生成式人工智能技术是 Stability AI 的核心产品，被视为当前人工智能热潮的重要组成部分。
 
-它主要用于根据文本描述生成细节丰富的图像，不过也可应用于其他任务，例如图像修复、图像扩展，以及在文本提示引导下实现图像到图像的转换 。其研发过程涉及慕尼黑路德维希・马克西米利安大学 CompVis 研究组和 Runway 的研究人员，Stability AI 提供了计算资源支持，训练数据则来自非营利组织 。
+它主要用于根据文本描述生成细节丰富的图像，不过也可应用于其他任务，例如图像修复、图像扩展，以及在文本提示引导下实现图像到图像的转换。其研发过程涉及慕尼黑路德维希・马克西米利安大学 CompVis 研究组和 Runway 的研究人员，Stability AI 提供了计算资源支持，训练数据则来自非营利组织。
 
-稳定扩散属于潜在扩散模型，是一种深度生成式人工神经网络。其代码和模型权重已公开，优化版本可在大多数配备普通 GPU 的消费级硬件上运行，所需显存仅需 2.4GB 。这与此前的专有文本到图像模型（如 DALL-E 和 Midjourney）形成了鲜明对比，后者仅能通过云服务访问。
+稳定扩散属于潜在扩散模型，是一种深度生成式人工神经网络。其代码和模型权重已公开，优化版本可在大多数配备普通 GPU 的消费级硬件上运行，所需显存仅需 2.4GB。这与此前的专有文本到图像模型（如 DALL-E 和 Midjourney）形成了鲜明对比，后者仅能通过云服务访问。
 
 ## 4、Ideogram
 
@@ -257,15 +257,11 @@ Stability AI是一款基于扩散技术的深度学习文本到图像模型，�
 
 Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像模型，采用深度学习方法根据自然语言描述（提示词）生成数字图像。与其他文本生成图像模型相比，该模型能够在生成的图像中呈现清晰可辨的文字。
 
-
 ![](img/12a30aa41b8d2991f4d07e3e977234ca.png)
-
 
 ![](img/700ca887681262da1acc0b6a59272bec.png)
 
-
 ![](img/93862c6ed8f82f83d4175a01fa3b85f1.png)
-
 
 ![](img/074293b5fcce0ab51c432fb66f92a44b.png)
 
@@ -343,7 +339,7 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ---
 
-即梦AI是字节跳动旗下的一站式AI创作平台，主要提供AI绘画和AI视频生成服务，支持文本生成图像、图片和文字生成视频等多种创意功能。它集成了强大的智能画布，支持多图层AI控制、图片局部重绘、扩图、抠图、图像消除等高级图像编辑能力。
+即梦AI 是字节跳动旗下的一站式AI创作平台，主要提供AI绘画和AI视频生成服务，支持文本生成图像、图片和文字生成视频等多种创意功能。它集成了强大的智能画布，支持多图层AI控制、图片局部重绘、扩图、抠图、图像消除等高级图像编辑能力。
 
 ![](img/795dcd760394a36f87875e2d3ccc493b.png)
 
@@ -351,29 +347,21 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ![](img/0ce0264076bf7c68a5aa37cdba501b96.png)
 
-
-
 ![](img/d19e2806c4f40264fc3a9e1009d16aa2.png)
 
-
 ![](img/08ff5787988b3e1e352a2febb485ea36.png)
-
 
 ![](img/94398f622d1e07009e78250bf9d7d15d.png)
 
 ![](img/c0424f189fec3ab6772691f4d7d1a86b.png)
 
-
 ![](img/697aa26ad7590c984e170d914f1eaed7.png)
 
 ![](img/a42b409ae7289b460b66201855eff20a.png)
 
-
 ![](img/69ddf44245d4610e5922e299da4271ee.png)
 
-
 ![](img/dc944a5dc4eaac1975312a19389d99a1.png)
-
 
 ![](img/376ed6cfe8e01b6b3335a357cea96af6.png)
 
@@ -419,7 +407,6 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ![](img/0431a2dec32c81ba0dea149034128819.png)
 
-
 ![](img/dba161f8c96641172480d01f5475affc.png)
 
 ![](img/2ea8423f5014315cc55da49969021e8e.png)
@@ -428,23 +415,17 @@ Ideogram 是由 Ideogram 公司开发的一款免费增值的文本生成图像�
 
 ---
 
-豆包是字节跳动推出的一款 AI 聊天智能问答工具，基于字节跳动自主研发的豆包大模型（原名云雀模型），支持写作文案、翻译、编程、图像、音视频生成、语音通话、数据分析以及AI驱动的在线搜索功能。它提供网页端、PC客户端和移动应用程序，可以为用户提供丰富的智能对话和创作支持。
+豆包 是字节跳动推出的一款 AI 聊天智能问答工具，基于字节跳动自主研发的豆包大模型（原名云雀模型），支持写作文案、翻译、编程、图像、音视频生成、语音通话、数据分析以及AI驱动的在线搜索功能。它提供网页端、PC客户端和移动应用程序，可以为用户提供丰富的智能对话和创作支持。
 
 ![](img/79a7bc6177b720b69c4ee26345660fe4.png)
 
 ![](img/0079591c11253daeed86c98ef7698e3b.png)
 
-
 ![](img/79f9749c5f1264f3eb68eb54f2cb8e91.png)
-
-
-
-
 
 ![](img/9ab407799a828dabe19da9eacad270e7.png)
 
 ![](img/7a02d65111f75f830a1605d9d850b1af.png)
-
 
 ![](img/776c2fcfa985dbe93e1bda3de8812eee.png)
 
@@ -470,7 +451,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/359f2b7096d8822e49cf6a689c205dc2.png)
 
-
 ![](img/e16ff84d1ab37162f1510543ca4626a1.png)
 
 ![](img/8dcdc215b62a061ebce866a2b921c118.png)
@@ -478,7 +458,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 ![](img/1589b5230968dc6df69c2d33fca816e0.png)
 
 ![](img/ffa59b2d317bb52e7b48da94cec17f69.png)
-
 
 ![](img/24a39d0f07af0c6018406f7ce44cc944.png)
 
@@ -492,8 +471,7 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ---
 
-通义万相是阿里巴巴通义旗下的AI创意创作平台,旨在通过人工智能技术降低创作门槛,可提供文生图、图生图、文生视频、图生视频、图像编辑等创作场景。
-
+通义万相 是阿里巴巴通义旗下的AI创意创作平台，旨在通过人工智能技术降低创作门槛，可提供文生图、图生图、文生视频、图生视频、图像编辑等创作场景。
 
 ![](img/708264d2531b26eb148d9beaf822a5c8.png)
 
@@ -502,7 +480,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 ![](img/7f124d90601d520e65519e93269a1c30.png)
 
 ![](img/0b45c6fdfabd876bbd7621f0b56ffc0c.png)
-
 
 ![](img/c77968e429404b34d2ba2ecfec7305c1.png)
 
@@ -524,8 +501,7 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ---
 
-是一款基于文心大模型（ERNIE）的AI智能助手、拥有对话、创作、娱乐、AI绘画等热门免费功能,不仅能够根据用户的文字描述进行对话和文章创作,还能通过文字描述生成具有艺术感的图片。
-
+是一款基于文心大模型（ERNIE）的AI智能助手，拥有对话、创作、娱乐、AI绘画等热门免费功能，不仅能够根据用户的文字描述进行对话和文章创作，还能通过文字描述生成具有艺术感的图片。
 
 ![](img/79498e1982d89d9f01956f024ffdc0f5.png)
 
@@ -534,7 +510,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 ![](img/c4466f8be26926c2058b4bbc00433cc5.png)
 
 ![](img/cdd92727bf24780728776975ad6bb9b4.png)
-
 
 ![](img/9c67c547854141f1e34ee02a94e4879c.png)
 
@@ -556,11 +531,9 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ---
 
-扣子空间是字节跳动推出的自动化AI协作平台，很厉害，可以批量生成或者处理图片。除此之外，还能干很多事。它定位为一个基于AI Agent的任务协作与自动化助手平台。能够帮助用户通过AI智能体自动完成从信息搜索、数据分析到文档生成的整个流程，极大提升工作效率。
-
+扣子空间 是字节跳动推出的自动化AI协作平台，很厉害，可以批量生成或者处理图片。除此之外，还能干很多事。它定位为一个基于AI Agent的任务协作与自动化助手平台。能够帮助用户通过AI智能体自动完成从信息搜索、数据分析到文档生成的整个流程，极大提升工作效率。
 
 ![](img/26696ff7ded2e3eaba1c69de010ae634.png)
-
 
 ![](img/b2f41defc244efe73ff2fb9212dfed10.png)
 
@@ -570,8 +543,8 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 
 ![](img/33a1c3b681a354675544cb7329405672.png)
 
-
 ![](img/54849f7e133f1578d0addeeff553ae3b.png)
+
 
 
 ![](img/b0c5c05ac9df0947e5762bec6f33967e.png)
@@ -609,7 +582,6 @@ Kling AI（可灵AI）是快手推出的AI视频生成平台，通过文字描�
 +   **社区与创作生态**：拥有活跃的用户社区，可分享作品、参与挑战、进行艺术 remix，还支持自定义 AI 模型的训练与使用。
 
 ![](img/2391390f030f6aa278558a78d229b300.png)
-
 
 ![](img/00569d44466cfe68a97dd0b34ece4d2c.png)
 
@@ -659,21 +631,15 @@ Grok 是埃隆·马斯克旗下 xAI 公司开发的一款多功能 AI 聊天机�
 
 Leonardo.ai是一个基于开源Stable Diffusion技术的在线AI绘图平台，用户通过输入文字提示即可生成高质量的图片，生成的作品风格多样且可商用。由澳大利亚创业团队开发，在 2024 年被 Canva 收购，随后集成至 Canva 的 Dream Lab 工具套件中。平台通过 Phoenix、Flux、Lucid Origin、gpt-image、Lightning XL、Kino XL 等多个专用模型支持不同风格的生成。它特别适合游戏内容创作，如角色、物品、场景和概念图，支持用户训练自己的模型，生成3D材质图像，还有画布实时绘画等功能。
 
-
 ![](img/da36bcf9af42a183ffcfeaf660eeb0f4.png)
-
 
 ![](img/78890b2674aaf106c98167a1640470ea.png)
 
-
 ![](img/c4dbeefe7abff4263eb01dabb1083ebc.png)
-
 
 ![](img/efbcd0af6eb12b69027925cfce84902b.png)
 
-
 ![](img/dd06e297e1fcb726a0e8e13c23d348d7.png)
-
 
 ![](img/666e4da12af1f0e4053be76a61e81a23.png)
 
@@ -731,9 +697,7 @@ AI 聊天互动起草创意：融合“Chat”模块，让用户通过对话生�
 
 模型：Krea1.0
 
-
 ![](img/c200755502da624c1a6c0b893261fd5f.png)
-
 
 ![](img/4cde34abc12dcf3c4e4d2aae5b03caac.png)
 
@@ -741,9 +705,7 @@ AI 聊天互动起草创意：融合“Chat”模块，让用户通过对话生�
 
 ![](img/35d78627888b0ec69069e8b329f9c9e9.png)
 
-
 ![](img/da17d27298a8bd840930e01a56eb1100.png)
-
 
 ![](img/c7c308f4c8efe42a0ff4a10633ebd63c.png)
 
@@ -764,10 +726,6 @@ Black Forest Labs 与 Krea AI 联手推出了开放的文本生成图像模型 F
 模型：flux krea
 
 ![](img/aaf8aa421263edb05f7189e9aaabf9be.png)
-
-
-
-
 
 ![](img/25c9c938318f1692442da63e852be878.png)
 
@@ -827,7 +785,6 @@ emoji小人提示词：
 
 RoboNeo 是美图旗下的 AI 视觉设计助手，7月底左右发布的吧，通过自然语言操作，实现从图像编辑到品牌设计和短视频制作等多样创意需求，特别适合电商和内容创作者快速产出高质量视觉作品。它类似于视觉领域的 Copilot，能够理解用户的自然语言指令并执行相应的命令，实现高效的内容生成和编辑功能，让每位用户都能成为“发号施令的甲方”，仅通过语音指令即可完成复杂的视觉创作需求。
 
-
 ![](img/602738606283585545ac31b154f636b0.png)
 
 ![](img/9084817f4f80d2191ade469254fef417.png)
@@ -866,11 +823,9 @@ LibLibAI是国内最大的绘画原创模型分享社区,10万+模型免费下�
 
 #
 
-
 ![](img/5e2b43e4fb1e5cba93473cd7165ff6e5.png)
 
 ![](img/c304f874806d31a561a85b252f8179bb.png)
-
 
 ![](img/28b42953d8900025b825fa5f4138a33a.png)
 
@@ -922,15 +877,11 @@ LibLibAI是国内最大的绘画原创模型分享社区,10万+模型免费下�
 
 ![](img/c4a7b510f309669a67327f3174f7abc7.png)
 
-
 ![](img/8a7548bc31ba813600946b95636f12f9.png)
-
 
 ![](img/df51850faad16b29d1b749608c2d2f4d.png)
 
-
 ![](img/488d26055e00fd060093438a88d53001.png)
-
 
 ![](img/1292cac349c615cebcac22c88ccc5ce9.png)
 
@@ -954,6 +905,8 @@ Freepik 是一家西班牙设计资源平台，提供照片、插图、视频、
 
 ![](img/bbd0ec768fa0762f6c76345e9dad5a37.png)
 
+
+
 ![](img/438875bb0ff99de8f8d8120fa4755013.png)
 
 ![](img/05f92cbbc013f04b71997d2c0bb34edc.png)
@@ -964,7 +917,7 @@ Freepik 是一家西班牙设计资源平台，提供照片、插图、视频、
 
 ## 22、gpt
 
-官网地址：https://www.sora.com & https://chatgpt.com/
+官网地址：`https://www.sora.com` & `https://chatgpt.com/`
 
 生图质量：★★★★☆
 
@@ -1024,7 +977,6 @@ GPT-4o它可以处理并生成文本、图像和音频。可以做很多创意�
 
 ![](img/a11bb0bc6909af2ff2676044ae5383cb.png)
 
-
 ![](img/20c436995173984d75531e4127a1e3cd.png)
 
 ![](img/2dc456fdf19c56e964a27c06d1f48514.png)
@@ -1035,7 +987,7 @@ GPT-4o它可以处理并生成文本、图像和音频。可以做很多创意�
 
 ## 23、Copilot
 
-使用地址：https://copilot.microsoft.com/ & https://designer.microsoft.com/image-creator
+使用地址：`https://copilot.microsoft.com/` & `https://designer.microsoft.com/image-creator`
 
 生图质量：★★★☆☆
 
@@ -1044,7 +996,6 @@ GPT-4o它可以处理并生成文本、图像和音频。可以做很多创意�
 ---
 
 Microsoft Copilot 是微软推出的人工智能助手平台，旨在提升个人和企业的生产力、创意和协作效率。Copilot 集成于 Microsoft 365 应用（如 Word、Excel、PowerPoint、Outlook 和 Teams）以及 GitHub、Azure 等开发工具中，利用最新的 GPT-5 模型和多模态 AI 功能，提供智能写作、数据分析、任务自动化和实时协作等服务。
-
 
 ![](img/9a0ec30399b1b8db3d67467b948c4f86.png)
 
@@ -1058,7 +1009,7 @@ Microsoft Copilot 是微软推出的人工智能助手平台，旨在提升个�
 
 ## 24、星流
 
-官网地址：https://www.xingliu.art/
+官网地址：`https://www.xingliu.art/`
 
 生图质量：★★★★★
 
@@ -1072,29 +1023,17 @@ Microsoft Copilot 是微软推出的人工智能助手平台，旨在提升个�
 
 ![](img/6be29b38755afb6c256dc48e04e5855e.png)
 
-
-
-
-
-
-
 ![](img/e5dc29cc1ce9659a80a69b0ff481cba9.png)
 
 ![](img/ddd6f840a417d503f524e18f2c9baaab.png)
 
 Lora权重不同，差别很大，调一下，效果还是好的。大部分是默认的，不一一细调了
 
-
-
-
-
-
-
 ![](img/32b2c29142f4a6db8cd98d1a19ae2f1c.png)
 
 ## 25、魔搭
 
-官网地址：https://www.modelscope.cn/aigc/home
+官网地址：`https://www.modelscope.cn/aigc/home`
 
 生图质量：★★★★★
 
@@ -1108,9 +1047,7 @@ Lora权重不同，差别很大，调一下，效果还是好的。大部分是�
 
 ![](img/687f751f546af7ebf7f4d97a9d24ce24.png)
 
-
 ![](img/ebfaf1d9ccb6c012fa5b89e930e4930b.png)
-
 
 ![](img/856291f02d1f23c5007e02373e47b026.png)
 
@@ -1132,7 +1069,7 @@ Lora权重不同，差别很大，调一下，效果还是好的。大部分是�
 
 ## 26、sdxl模型生图
 
-使用地址：https://stablediffusionweb.com/
+使用地址：`https://stablediffusionweb.com/`
 
 生图质量：★★★★☆
 
@@ -1152,7 +1089,7 @@ Lora权重不同，差别很大，调一下，效果还是好的。大部分是�
 
 ## 27、Imarena
 
-使用地址：https://lmarena.ai/?chat-modality=image
+使用地址：`https://lmarena.ai/?chat-modality=image`
 
 生图质量：★★★★★
 
@@ -1166,18 +1103,15 @@ Lora权重不同，差别很大，调一下，效果还是好的。大部分是�
 
 最近lmarena 推出了谷歌的nano-banana 的图像编辑模型，效果很好比肩fluxkontext。
 
-
-
 ![](img/959f472f6bc4761cc32c7a18b110ccdf.png)
 
 ![](img/9140249e9ae6ea6a57420ac0fcea5714.png)
-
 
 ![](img/29e76ab2c3a4f0649cdde3ac9aed58b5.png)
 
 ## 28、whisk
 
-使用地址：https://labs.google/fx/tools/whisk
+使用地址：`https://labs.google/fx/tools/whisk`
 
 生图质量：★★★★★
 
@@ -1203,11 +1137,11 @@ Whisk 是 Google Labs 推出的实验性 AI 工具，可以生成图片和视频
 
 ## 29、googlestudio
 
-使用地址：https://aistudio.google.com/prompts/new_image
+使用地址：`https://aistudio.google.com/prompts/new_image`
 
 生图质量：★★★★★
 
-价格：https://ai.google.dev/gemini-api/docs/pricing
+价格：`https://ai.google.dev/gemini-api/docs/pricing`
 
 ---
 
@@ -1227,7 +1161,7 @@ AI Studio 是 Google 推出的网页端集成开发环境（IDE），提供了�
 
 ## 30、gemini
 
-使用地址：https://gemini.google.com/
+使用地址：`https://gemini.google.com/`
 
 生图质量：★★★★★
 
@@ -1237,13 +1171,11 @@ AI Studio 是 Google 推出的网页端集成开发环境（IDE），提供了�
 
 ![](img/954026b2261ed8903f26b4e070bb1c7a.png)
 
-
-
 ![](img/cfcf9e3aaee249d45864762bb8d99fed.png)
 
 ## 31、imagine
 
-官网地址：https://www.imagine.art/
+官网地址：`https://www.imagine.art/`
 
 生图质量：★★★★★
 
@@ -1254,7 +1186,6 @@ AI Studio 是 Google 推出的网页端集成开发环境（IDE），提供了�
 ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型，比如：flux dev、imagen-4、ideogram、dreamina3.1、qwen、flux1.1 ultra等，支持生成图像、视频、音乐等多种形式内容，通过简单便捷的交互界面，让用户快速从文字或图像输入出发，创造出高质量的视觉与多媒体内容。
 
 ![](img/d59d8274b5caad2cd6dfc1668bdb2866.png)
-
 
 ![](img/6532136a66fa026e7ad1229f56451a4f.png)
 
@@ -1270,7 +1201,7 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ## 32、reve
 
-官网地址：https://preview.reve.art/app
+官网地址：`https://preview.reve.art/app`
 
 生图质量：★★★★☆
 
@@ -1278,9 +1209,7 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ---
 
-**Reve Art**** 开发团队推出的 AI 图像**生成平台的预览版本，称为 Reve Image 1.0。整体来说，它是一款专注于将文本提示转化为高质量视觉内容的工具，主要用于创造具有美感与排版效果的图像。
-
-
+Reve Art 开发团队推出的 AI 图像生成平台的预览版本，称为 Reve Image 1.0。整体来说，它是一款专注于将文本提示转化为高质量视觉内容的工具，主要用于创造具有美感与排版效果的图像。
 
 ![](img/3cee45c575d2eb124d25fa4ad252dc71.png)
 
@@ -1290,15 +1219,15 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ## 33、谷歌nanobanana
 
-生图地址1：https://gemini.google.com/
+生图地址1：`https://gemini.google.com/`
 
-生图地址2：https://aistudio.google.com/gen-media
+生图地址2：`https://aistudio.google.com/gen-media`
 
-生图地址3：Vertex AI https://cloud.google.com/vertex-ai?hl=en
+生图地址3：Vertex AI `https://cloud.google.com/vertex-ai?hl=en`
 
 生图质量：★★★★★
 
-价格：https://ai.google.dev/gemini-api/docs/pricing
+价格：`https://ai.google.dev/gemini-api/docs/pricing`
 
 ---
 
@@ -1306,12 +1235,7 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ![](img/0348709f3a2f846b81c5348f59c4fa1a.png)
 
-
-
-
 ![](img/33b8b83fba698c384668693c2496c025.png)
-
-
 
 ![](img/4d83e2c23a8ad26143de61835dc928fa.png)
 
@@ -1319,7 +1243,7 @@ ImagineArt 是一个功能全面的 AI 创作平台，平台集成10多个模型
 
 ## 34、lovart
 
-网址：https://www.lovart.ai/home
+网址：`https://www.lovart.ai/home`
 
 Lovart：掌控多模型的设计智能体
 
@@ -1327,10 +1251,13 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/3ce7d8f79db4c641a548c4377be6be6d.png)
 
-
 ![](img/55c0311ceef1ff42241febee3f494c10.png)
 
-# 阿里Qwen-Image
+
+
+# 文生图模型测评与案例汇总
+
+## 阿里Qwen-Image
 
 2025年8月8日
 
@@ -1338,21 +1265,17 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 > 一款专注于图像中高保真文字生成的200亿参数AI模型。该模型支持多种视觉风格和双语文字，并配备丰富的编辑功能。通过新颖的空间编码技术，Qwen-Image提升了文字与图像的对齐效果。评测显示它在图像生成和文字渲染上超过多款商业竞品。该模型已免费开源，助力未来视觉-语言界面发展。
 
-> 详细：https://qwenlm.github.io/blog/qwen-image/
+> 详细：`https://qwenlm.github.io/blog/qwen-image/`
 
-> 使用地址：https://chat.qwen.ai/
+> 使用地址：`https://chat.qwen.ai/`
 
 > qwen生成时间：2025年8月8日
 
-## 网友案例
-
-2025年8月4日
+### 网友案例
 
 ![](img/84e887cecdbdadf0fa8105f0cc7fd6ad.png)
 
 ![](img/947980185830536e33da3838d81d8384.png)
-
-
 
 ![](img/0d022b9ddfec179d96cc704787faff62.png)
 
@@ -1361,8 +1284,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 ![](img/c3a5d76b8096f2d7c2e25a929a5522ba.png)
 
 ![](img/71eb95ea06269684f2452e2cee04cfff.png)
-
-
 
 ![](img/8d62a5fcd0c0f67bcbea9acfa1c36ee3.png)
 
@@ -1390,7 +1311,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/293fc5c93f0e654b3edd99b885660484.png)
 
-
 ![](img/906d64bb7dfcd0c9018d09018784c597.png)
 
 ![](img/aa9b9b3e8b9121c4d793af527c636176.png)
@@ -1408,7 +1328,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 ![](img/308a186462cdd599834be7c4de2d5e35.png)
 
 ![](img/f44631f94696334d61f6028a93822ec1.png)
-
 
 ![](img/d82a223f6136c9ab10c3316e0c043a8b.png)
 
@@ -1438,21 +1357,21 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/f31429a95cd17ba0eac98604aee8e4a2.png)
 
-# 谷歌imagen4
+## 谷歌Imagen4
 
 2025年7月25日
 
 > 谷歌更新了Imgen4，据Artificial Analysis图像竞技场的最新排名，Imagen4Ultra已跻身全球前三，仅次于少数领先模型。于是中午抽空测试了一下，大部分效果还是很棒。
 
-> 官方介绍文档：https://developers.googleblog.com/en/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/
+> 官方介绍文档：`https://developers.googleblog.com/en/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/`
 
-> 使用地址：https://aistudio.google.com/gen-media
+> 使用地址：`https://aistudio.google.com/gen-media`
 
 > 谷歌生成时间：2025.7.30
 
 ![](img/54dd4ccf79f53a9f78c0a2879c4cee1c.png)
 
-## 网友案例
+### 网友案例
 
 ![](img/e52876c2b863ad17f9d37cdf2b45e7d0.png)
 
@@ -1462,13 +1381,11 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/cee3ebc9ebcdf5e78894cef50c933938.png)
 
-
 ![](img/a0d873321b52badac2d2634c77e77f60.png)
 
 ![](img/c9cd77dc7160ab54c89e0b8ec3b54330.png)
 
 ![](img/20508455f22e52d2fe59fc4af929ad6d.png)
-
 
 ![](img/5d48220431a8b8090eb121a17d8c338c.png)
 
@@ -1477,7 +1394,6 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 ![](img/27bcd909bf5fb5298b49ee72594102a0.png)
 
 ![](img/b43eea54236a8e40022cde4b7b620474.png)
-
 
 ![](img/3538a0fcdfa875571a1fe0490bd9d0e8.png)
 
@@ -1501,16 +1417,11 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 ![](img/a60d19cb93771361cd6fc58e245b4e2c.png)
 
-
 ![](img/5f37645e93c9e040f5190b4949d1ef6d.png)
-
-
 
 ![](img/66c84522c24669f62efd6a5dd3cb43be.png)
 
-#
-
-# 最新文生图测评
+## 最新文生图测评
 
 ![](img/a3cc2ad7ae428bc94b6335d29931cc3f.png)
 
@@ -1522,7 +1433,7 @@ Lovart 能整合多种 AI 引擎协同创作，生成任何单一模型都难以
 
 > Midjourney6. VS Flux pro VS 后续新出纹文生图模型（皆为默认参数下的画面）
 
-## 动物玩偶
+### 动物玩偶
 
 ![](img/fafb5a8b34f883f4c5df878873999ed3.png)
 
@@ -1572,11 +1483,11 @@ a bad portrait photo of a tiger sitting at a dinner table with food in a cramped
 
 ![](img/2fa940c6fa291f90c11d2246794c68c1.png)
 
-Grok:https://x.com/i/grok
+Grok:`https://x.com/i/grok`
 
 ![](img/24e7dc20928d168c4d6cb088dfc35069.png)
 
-reveai:https://reveai.org/
+reveai:`https://reveai.org/`
 
 ![](img/e566e5275f0f411e2142c91fddebcb53.png)
 
@@ -1598,7 +1509,7 @@ reveai:https://reveai.org/
 
 ![](img/eabc58202017adbc178042d46073e57e.png)
 
-## 汽车
+### 汽车
 
 ![](img/4664af77fc121d6edc4efdd7d509f703.png)
 
@@ -1612,7 +1523,7 @@ reveai:https://reveai.org/
 
 ![](img/e5a79e3abecfa14360fa38e8dd0e0d7b.png)
 
-## 酷炫场景
+### 酷炫场景
 
 A Black Panther suit upgraded with the element of fire, featuring patterns reminiscent of flames and volcanic flows, glowing eyes with a fiery effect. In action, the suit unleashes powerful jets of fire from fists and feet, engulfing enemies in flames during a nocturnal battle, illuminating the darkness with its fierce energy
 
@@ -1626,7 +1537,7 @@ A Black Panther suit upgraded with the element of fire, featuring patterns remin
 
 ![](img/60b6f22f13698f0d3a7e74d413f4364a.png)
 
-## 电商产品
+### 电商产品
 
 Product photography of the Dune in the Sahara desert with sanddunes. A bottle of perfume with the brand text "Sable a I' mov pair"is on top of it in a minimalist composition. It is a high resolutionphotography in the style of Hasselblad X2D.
 
@@ -1638,7 +1549,7 @@ Product photography of the Dune in the Sahara desert with sanddunes. A bottle of
 
 ![](img/8aa57d864ff4c2fb209c0f35be2d28b4.png)
 
-## 人像
+### 人像
 
 Midjourney VS Flux-pro/dex/schnell
 
@@ -1656,7 +1567,7 @@ A nurse in blue scrubs is using a stethoscope to monitorthe heartbeats of her el
 
 ![](img/70a967ead4058638e8b55b7ef2328abe.png)
 
-![](img/afe33148261df3c07720c20d268f8584.png)
+![](img/afe33148261df3c07720c20d268f6084.png)
 
 ![](img/f7316b4863223a50cb23c9a83d9150c5.png)
 
@@ -1674,11 +1585,15 @@ A nurse in blue scrubs is using a stethoscope to monitorthe heartbeats of her el
 
 ![](img/e7aea03a0dbc35bce564b3fd1ebf9895.png)
 
-![](img/cc44e69c0afe7b3293b77462f02ad7a0.png)
 
-![](img/ba78b0dfef5dc04ffe26c871fcb49407.png)
+
+# Flux
 
 ## 文字
+
+![](img/cc44e69c0afe7b3293b77462f02ad7a0.png)
+
+![](img/ba78b0dfef15dc04ffe26c871fcb49407.png)
 
 ![](img/711d6b5d5f35ac33a010b10b9831a0ba.png)
 
@@ -1728,93 +1643,91 @@ black forest gateau cake spelling out the words "AlDesigner Lena", tasty, food p
 
 ![](img/6afc7defdc4bb3413faed7cd4f3f1c50.png)
 
-# Flux
-
 2024年8月7日
 
 > 2024年八月初blackforestlabs发布了文生图模型FLUX.1，手部问题得到了明显改善，比MJ效果更好。第一时间测评了一下，确实很惊艳，快赶上Midjourney了，使用方法可以从GitHub下载安装，其大小为23GB，对电脑配置有点要求，也可以在线使用，在AI云托管平台Fal、Freepik、Replicate和goenhance上都集成了FLUX.1模型。
 
-> 查看视频：制打开抖音，看看【Ai设计师lena的作品】FLUX.1客观测评 与MJ对比 自家3款产品对比... https://v.douyin.com/ihngq4dy/
+> 查看视频：制打开抖音，看看【Ai设计师lena的作品】FLUX.1客观测评 与MJ对比 自家3款产品对比... `https://v.douyin.com/ihngq4dy/`
 
 ## FLUX.1简单介绍
 
-[Flux.1](https://heehel.com/ai-tutorial/flux-special-rendering.html) 是由 Black Forest Labs 开发的一款先进的文本到图像合成模型，旨在通过文本描述生成高质量的图像。该模型由前 Stability AI 核心成员 Robin Rombach 创立的新公司 Black Forest Labs 推出，并且是是一款免费开源的模型,性能可与Midjourney V6媲美。使用方法多种，可在线使用，各平台有一些免费的初始额度。本地安装不需要费用，用户也可通过Comfyui调用Flux.1，更新到最新版本即可。
+[Flux.1](https://heehel.com/ai-tutorial/flux-special-rendering.html) 是由 Black Forest Labs 开发的一款先进的文本到图像合成模型，旨在通过文本描述生成高质量的图像。该模型由前 Stability AI 核心成员 Robin Rombach 创立的新公司 Black Forest Labs 推出，并且是是一款免费开源的模型,性能可与Midjourney V6媲美。使用方法多种，可在线使用，各平台有一些免费的初始额度。本地安装不需要费用，用户也可通过`Comfyui`调用Flux.1，更新到最新版本即可。
 
 Flux 模型总共有3个，分别是：Flux Pro、Flux Dev、Flux Schnell，下面是其性能的对照图
 
-1.  [pro] 是最顶级的模型，但是只能通过 API 调用；
+1. `[pro]` 是最顶级的模型，但是只能通过 API 调用；
 
-1.  [dev] 是由[pro]提炼，开源但非商用，质量和效果与[pro]类似；
+1. `[dev]` 是由`[pro]`提炼，开源但非商用，质量和效果与`[pro]`类似；
 
-1.  [schnell] 是经过蒸馏的 4 步模型，速度比 [dev] 快 10 倍，Apache 2 开源许可。
+1. `[schnell]` 是经过蒸馏的 4 步模型，速度比 `[dev]` 快 10 倍，Apache 2 开源许可。
 
 ![](img/64ed4d9b3675dd9524115843b7a141d8.png)
 
 ## 使用方法
 
-#### 在线使用
+### 在线使用
 
-+   Flux-pro在线使用地址：
++ Flux-pro在线使用地址：
 
-1.  https://replicate.com/black-forest-labs/flux-pro
+1. `https://replicate.com/black-forest-labs/flux-pro`
 
-1.  https://fal.ai/models/fal-ai/flux-pro
+1. `https://fal.ai/models/fal-ai/flux-pro`
 
-1.  https://www.mystic.ai/black-forest-labs/flux-pro/play
+1. `https://www.mystic.ai/black-forest-labs/flux-pro/play`
 
 ![](img/5f6d33bf621fdb315dd19330fc4a812a.png)
 
-1.  https://www.freepik.com/pikaso/ai-image-generator
+1. `https://www.freepik.com/pikaso/ai-image-generator`
 
 ![](img/442e522d8ea14f74331dd488ab167912.png)
 
-+   Flux-dev在线使用地址：
++ Flux-dev在线使用地址：
 
-1.  https://huggingface.co/black-forest-labs/FLUX.1-dev
+1. `https://huggingface.co/black-forest-labs/FLUX.1-dev`
 
-1.  https://replicate.com/black-forest-labs/flux-dev
+1. `https://replicate.com/black-forest-labs/flux-dev`
 
-1.  https://fal.ai/models/fal-ai/flux/dev
+1. `https://fal.ai/models/fal-ai/flux/dev`
 
-+   Flux-schnell在线使用地址：
++ Flux-schnell在线使用地址：
 
-1.  https://huggingface.co/black-forest-labs/FLUX.1-schnell
+1. `https://huggingface.co/black-forest-labs/FLUX.1-schnell`
 
 ![](img/07aa6164961b354054d37a916f3c5ddb.png)
 
-1.  https://replicate.com/black-forest-labs/flux-schnell
+1. `https://replicate.com/black-forest-labs/flux-schnell`
 
-1.  https://fal.ai/models/fal-ai/flux/schnell
+1. `https://fal.ai/models/fal-ai/flux/schnell`
 
 ![](img/2aa78139f395612735e00b10b033d4f7.png)
 
-#### 本地使用
+### 本地使用
 
 下载 Flux 模型
 
 FLUX 模型有四个可选，FLUX.1 [dev] 、FLUX.1 [dev] fp8、FLUX.1 [schnell]、FLUX.1 [schnell] fp8；
 
-目前 ComfyUI 已支持此模型，更新到最新版即可使用。
+目前 `ComfyUI` 已支持此模型，更新到最新版即可使用。
 
-下载地址：https://github.com/comfyanonymous/ComfyUI
+下载地址：`https://github.com/comfyanonymous/ComfyUI`
 
-> 不管你下载哪个模型，都存放在这个：ComfyUI/models/unet/ 目录下
+> 不管你下载哪个模型，都存放在这个：`ComfyUI/models/unet/` 目录下
 
-1.  FLUX.1 [dev] ：官方版本满配版，最低显存要求24G；
+1. FLUX.1 [dev] ：官方版本满配版，最低显存要求24G；
 
-下载地址：https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main
+下载地址：`https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main`
 
-1.  FLUX.1 [dev] fp8：大佬优化 [dev] 后版本，建议选择此版本，最低 12G 显存可跑；
+1. FLUX.1 [dev] fp8：大佬优化 [dev] 后版本，建议选择此版本，最低 12G 显存可跑；
 
-下载地址：https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-dev-fp8.safetensors
+下载地址：`https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-dev-fp8.safetensors`
 
-1.  FLUX.1 [schnell]：4 步蒸馏模型，大多数显卡可跑。
+1. FLUX.1 [schnell]：4 步蒸馏模型，大多数显卡可跑。
 
-下载地址：https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/flux1-schnell.safetensors
+下载地址：`https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/flux1-schnell.safetensors`
 
-1.  FLUX.1 [schnell] fp8：优化 版本，适应更低的显卡配置。
+1. FLUX.1 [schnell] fp8：优化 版本，适应更低的显卡配置。
 
-下载地址：https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-schnell-fp8.safetensors
+下载地址：`https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-schnell-fp8.safetensors`
 
 ## 美图提示词
 
@@ -1908,13 +1821,14 @@ a portal into a mythical forest on the wall of my small messy bedroom
 
 ![](img/e2081ba5417bcadc83cb20b35b864149.png)
 
-![](img/291200e320c8afd2062b09627651f434.png)
 
+
+![](img/291200e320c8afd2062b09627651f434.png)
 
 ![](img/bbca0da4bf2d165f894533c9ad76d8c9.png)
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/1ff8e74bd1bf2c5f9a09a8f6a4e72b89.png)

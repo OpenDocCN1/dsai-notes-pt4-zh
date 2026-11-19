@@ -1,8 +1,11 @@
+
 # 书单号-读书分享视频制作
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/NehidrIB5oLzJhxaAlgcT4Zgn0E](https://zinxkclpk97.feishu.cn/docx/NehidrIB5oLzJhxaAlgcT4Zgn0E)
 
 > 写在开始，近期我的爆款短视频应用已经上架到的了Coze应用市场，包含之前👸号分享的所有视频模板，欢迎来体验试用。文末点赞获取体验链接🔗。
+
+## 作品分析与需求拆解
 
 ![](img/5f98f54c512fe5216e23011f45e701ee.png)
 
@@ -20,6 +23,8 @@
 
 总体流程还是比较简单的，其唯一的难点之处，在于视频数据结构的代码部分。因为需要把握字幕时间、背景音乐的节奏。所以在复刻的时候，也需要多一些耐心，精细调整。
 
+## Coze工作流搭建
+
 接下来，看下使用Coze如何搭建完整的书单号视频工作流
 
 ![](img/658fea1626f507e2b2e352f5d1e3d592.png)
@@ -33,6 +38,8 @@
 另外大模型用来帮助我们生成书籍相关的短句，这里我们选用的是通义千问-max模型，当然你也可以适配其它的模型，调整合适的提示词即可。
 
 ![](img/c65bb95814d784c6787addf3513bf6ec.png)
+
+### 提示词配置
 
 ```
 # 角色
@@ -54,20 +61,24 @@
 - 请使用工具确保搜索信息来源准确，输出内容要基于搜索到的可靠资料。 
 ```
 
+## 素材重组与代码实现
+
 最重要的代码部分，我们实现对素材的重组，拼接剪映各个轨道所需要的素材：字幕、背景音、特效等。
 
 这里也需要反复调试，设定好每段字幕之间的时间间隔，与背景音乐进行卡点。
 
 ![](img/f7473c5244d52f8071bc5e6f9f5fd9a4.png)
 
+### 核心代码
+
 ```
 import json
 import re
-async def main(args) -&gt; dict:
+async def main(args) -> dict:
     params = args.params
-    sentences = params[&#x27;sentences&#x27;]
-    audio_url = params[&#x27;audio_url&#x27;]
-    title = params[&#x27;title&#x27;]
+    sentences = params['sentences']
+    audio_url = params['audio_url']
+    title = params['title']
 
     #文案字幕
     captions = []
@@ -79,10 +90,10 @@ async def main(args) -&gt; dict:
 
     # 遍历所有元素（假设四个数组长度一致）
     for idx in range(len(sentences)):
-        chinese = sentences[idx][&#x27;chinese&#x27;]
+        chinese = sentences[idx]['chinese']
         if chinese is None or len(chinese)==0:
             continue
-        english = sentences[idx][&#x27;english&#x27;]
+        english = sentences[idx]['english']
         # 计算时间区间
         #字幕切换间隔时间
         duration = 3.1*1000*1000
@@ -90,40 +101,42 @@ async def main(args) -&gt; dict:
         end_time = current_time + int(duration)
         # 构建字幕轨道
         captions.append({
-            &quot;text&quot;: re.sub(r&quot;([，。])(?=[^\n]*[，。])&quot;, r&quot;\1\n&quot;, chinese),
-            &quot;start&quot;: current_time,
-            &quot;end&quot;: end_time,
-            &quot;in_animation&quot;:&quot;渐显&quot;,
-            &quot;out_animation&quot;: &quot;渐隐&quot;
+            "text": re.sub(r"([，。])(?=[^\n]*[，。])", r"\1\n", chinese),
+            "start": current_time,
+            "end": end_time,
+            "in_animation":"渐显",
+            "out_animation": "渐隐"
         })
         # 移动时间轴指针
         current_time = end_time
     audios.append({
-            &quot;audio_url&quot;: audio_url,
-            &quot;duration&quot;: current_time,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: current_time
+            "audio_url": audio_url,
+            "duration": current_time,
+            "start": 0,
+            "end": current_time
         })
     captions2.append({
-        &quot;text&quot;: title,
-        &quot;start&quot;: 0,
-        &quot;end&quot;: current_time,
-        &quot;in_animation&quot;:&quot;渐显&quot;
+        "text": title,
+        "start": 0,
+        "end": current_time,
+        "in_animation":"渐显"
     })
     effects = []
     effects.append({
-        &quot;effect_title&quot;: &quot;金粉闪闪&quot;,
-        &quot;end&quot;: current_time,  
-        &quot;start&quot;: 0
+        "effect_title": "金粉闪闪",
+        "end": current_time,  
+        "start": 0
     })
     # 构建输出（保持JSON序列化）
     return {
-        &quot;captions&quot;: json.dumps(captions),
-        &quot;captions2&quot;: json.dumps(captions2),
-        &quot;audios&quot;: json.dumps(audios),
-        &quot;effects&quot;:json.dumps(effects),
+        "captions": json.dumps(captions),
+        "captions2": json.dumps(captions2),
+        "audios": json.dumps(audios),
+        "effects":json.dumps(effects),
     }
 ```
+
+## 视频渲染与效果展示
 
 完成素材的准备，后面就是使用剪映小助手插件，对内容进行串联，生成剪映草稿，并进行线上渲染生成视频。
 
@@ -134,6 +147,8 @@ async def main(args) -&gt; dict:
 ![](img/38432e14797d4341e18facb9c91ec459.png)
 
 [e43157c0-3466-438c-a422-8760ac325b28.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G8iibngMdoWZV8xLPcIcfJBznih)
+
+## 体验入口
 
 这套书单号视频工作流也已经在我的爆款短视频创作营上架，欢迎体验。
 

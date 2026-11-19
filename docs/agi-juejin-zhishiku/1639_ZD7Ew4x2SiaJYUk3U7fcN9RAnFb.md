@@ -1,9 +1,8 @@
+
 # 一文读懂常见的几种 LangChain 替代品
 
 > 来源：[https://agijuejin.feishu.cn/docx/TA4ldmbOxos97Wx5EELc7XkJn6g](https://agijuejin.feishu.cn/docx/TA4ldmbOxos97Wx5EELc7XkJn6g)
-
 > 作者：Luga Lee 架构驿站
-
 > 原文：https://mp.weixin.qq.com/s/K6hg4E1df96559fNZxnkDA
 
 Hello folks，我是 Luga，今天我们来聊一下 人工智能（AI）生态领域相关的技术 - LLM 开发框架 。
@@ -18,15 +17,15 @@ Hello folks，我是 Luga，今天我们来聊一下 人工智能（AI）生态�
 
 在实际应用场景中，LangChain 框架在快速创建概念验证（POC）时特别有帮助。然而，使用任何框架都会面临一些挑战。具体如下：
 
-1、过度的抽象可能使得在某些情况下使用 LangChain 非常方便，但在构建不受框架支持的用例时变得困难。框架的高度抽象化可能限制了开发人员的灵活性，导致一些特定需求无法满足。
+1. 过度的抽象可能使得在某些情况下使用 LangChain 非常方便，但在构建不受框架支持的用例时变得困难。框架的高度抽象化可能限制了开发人员的灵活性，导致一些特定需求无法满足。
 
-2、由于框架的高度抽象化，调试性能问题和错误变得更加困难。当应用程序出现问题时，由于底层细节被隐藏在框架中，开发人员可能难以确定问题的具体原因，从而增加 了调试的复杂性。
+2. 由于框架的高度抽象化，调试性能问题和错误变得更加困难。当应用程序出现问题时，由于底层细节被隐藏在框架中，开发人员可能难以确定问题的具体原因，从而增加了调试的复杂性。
 
-3、由于代码质量可能较低且组件复杂性较高，开发人员更倾向于将LangChain用于学习人工智能开发和原型制作，而不是在生产环境中进行实际部署。这可能是因为框架的维护和性能优化方面存在挑战，以及缺乏对生产级应用程序所需的稳定性和可靠性的保证。
+3. 由于代码质量可能较低且组件复杂性较高，开发人员更倾向于将LangChain用于学习人工智能开发和原型制作，而不是在生产环境中进行实际部署。这可能是因为框架的维护和性能优化方面存在挑战，以及缺乏对生产级应用程序所需的稳定性和可靠性的保证。
 
 ## 基于 7 大维度全方位分析替换 LangChain 可行性分析
 
-在  LLM （ 大规模语言模型） 开发和应用的热潮中，评估和权衡不同工具平台的优劣将是一个至关重要的环节。基于提示工程、数据集成、工作流程编排、调试可视化、评估指标、生产就绪性以及生态系统集成等七个关键维度进行全方位解析，无疑是一个极具前瞻性和系统性思路及方向。
+在 LLM （ 大规模语言模型） 开发和应用的热潮中，评估和权衡不同工具平台的优劣将是一个至关重要的环节。基于提示工程、数据集成、工作流程编排、调试可视化、评估指标、生产就绪性以及生态系统集成等七个关键维度进行全方位解析，无疑是一个极具前瞻性和系统性思路及方向。
 
 接下来，我们一一具体展开分析:
 
@@ -46,7 +45,7 @@ RAG 范式的兴起使得高效的外部知识库集成功能成为工具平台�
 
 同时，对工作流程的版本管理、参数调优、可重复性等特性的良好支持，也将大幅提升开发效能。
 
-4. Debugging and Observability - 调试和可观测 性
+4. Debugging and Observability - 调试和可观测性
 
 LLM 系统作为一个典型的"黑箱"AI，其内部机理向来令人摸不透头绪。优秀的工具平台应当着力打破这一局限，通过诸如注意力分布可视化、推理路径追踪等手段，为模型内部状态提供洞见，同时，支持更精准的错误排查、偏差修正和性能优化，从而真正提升系统的可解释性和可信赖性。
 
@@ -72,9 +71,9 @@ LLM 系统作为一个典型的"黑箱"AI，其内部机理向来令人摸不透
 
 ## 常见的开源 LangChain 替代品解析
 
-**1、LlamaIndex**
+### 1、LlamaIndex
 
-在  LLM （ 大规模语言模型） 的浪潮中，RAG（检索增强生成）架构正日益成为主流范式。作为一个专注于 RAG 应用程序构建的开源数据框架，LlamaIndex 无疑展现出了极具前景的发展潜力。
+在 LLM （ 大规模语言模型） 的浪潮中，RAG（检索增强生成）架构正日益成为主流范式。作为一个专注于 RAG 应用程序构建的开源数据框架，LlamaIndex 无疑展现出了极具前景的发展潜力。
 
 ![](img/7df4b6b7d675c875459dba6123b9f199.png)
 
@@ -86,7 +85,7 @@ LLM应用程序的LlamaIndex数据框架（来源：LlamaIndex）
 
 与此同时，LlamaIndex 提供了丰富的索引数据结构和查询策略选择，让开发者能够充分挖掘不同场景下的查询效率优势，实现高性能的语义检索。这种针对性优化不啻为RAG应用程序的关键需求之一。
 
-另一个值得关注的亮点，是 LlamaIndex 对多模态数据(如图像、视频等)的天然支持能力。通过与领先的视觉语义模型的融合，可以在 RAG 生成过程中引入丰富的跨模态上下文，为输出增添新的维度。毫无疑问，这将为众多创新应用铺平道路。
+另一个值得关注的亮点，是 LlamaIndex 对多模态数据(如图像、视频等)的天然支持能力。通过与领先的视觉语义模型的融合，可以在 RAG 生成过程中引入丰富的跨模态上下文，为输出增添新的维度。无疑，这将为众多创新应用铺平道路。
 
 除了核心的数据管理功能之外，LlamaIndex 还着力于 RAG 应用开发的工程化实践。它提供了诸如并行化查询、基于 Dask 的分布式计算支持等高级特性，显著提升了数据处理效率，为大规模生产落地奠定基础。
 
@@ -100,11 +99,11 @@ LLM应用程序的LlamaIndex数据框架（来源：LlamaIndex）
 
 与此同时，LlamaIndex 也将持续跟进 LLM 和 RAG 架构的最新进展，及时融入新兴的模型和范式创新，使其在各个维度都保持着行业领先的水准。这一切都离不开活跃的开发者社区、顶尖企业合作伙伴、以及科研界同仁们的长期投入和持续支持。
 
-**2、Flowise AI**
+### 2、Flowise AI
 
 在 LLM（大规模语言模型）应用开发领域，降低门槛、提升效率一直是业界的共同诉求。作为一款开源且无需编码（No-Code）的 LLM 应用构建工具，Flowise 正成为这一追求的有力实践者。
 
-与传统的编码式开发框架不同，Flowise 以其创新的拖放式可视化界面为最大亮点。开发者无需深入掌握编程语言，只需在界面上拖拽预置的组件模块，通过简单的参数配置和连线,便可轻松构建出功能强大的 LLM 应用。这种全新的开发范式大幅降低了入门门槛，使得 LLM 的应用开发不再是编码人员的专属领域，普通用户也可以尽情挥洒创意、实现自动化需求。
+与传统的编码式开发框架不同，Flowise 以其创新的拖放式可视化界面为最大亮点。开发者无需深入掌握编程语言，只需在界面上拖拽预置的组件模块，通过简单的参数配置和连线，便可轻松构建出功能强大的 LLM 应用。这种全新的开发范式大幅降低了入门门槛，使得 LLM 的应用开发不再是编码人员的专属领域，普通用户也可以尽情挥洒创意、实现自动化需求。
 
 ![](img/0aed0e7d2a5dafd4722b67dc74aa9fbd.png)
 
@@ -118,9 +117,9 @@ Flowise AI 参考流（来源：Flowise）
 
 而最吸引人之处在于，Flowise 并非是一个封闭的系统，而是提供了开放的 API 和嵌入式集成机制。开发者可以轻松地将 Flowise 应用集成到网站、APP、桌面软件等任意产品环境中，并接受来自各方的自定义请求，实现端到端的闭环体验。
 
-可以说，Flowise 借助 LangChain 强横的技术内核、自身灵活的可视化架构和与生态的融合无间，已然成为连接 LLM 与终端用户、推动 LLM 民主化进程的有力纽带。任何有需求的个人或企业，都可以在 Flowis 的平台上一键构建并部署自己的智能应用，享受 AI 带来的生产力的提升。
+可以说，Flowise 借助 LangChain 强横的技术内核、自身灵活的可视化架构和与生态的融合无间，已然成为连接 LLM 与终端用户、推动 LLM 民主化进程的有力纽带。任何有需求的个人或企业，都可以在 Flowise 的平台上一键构建并部署自己的智能应用，享受 AI 带来的生产力的提升。
 
-**3、AutoChain**
+### 3、AutoChain
 
 作为一款轻量级且可扩展的框架，AutoChain 汲取了 LangChain 和 AutoGPT 等前辈的经验，旨在为开发者提供更高效、更灵活的对话式智能代理构建体验。
 
@@ -137,30 +136,31 @@ memory = BufferMemory()
 agent = ConversationalAgent.from_llm_and_tools(llm=llm)
 chain = Chain(agent=agent, memory=memory)
 
-user_query = &quot;Write me a poem about AI&quot;
-print(f&quot;&gt;&gt; User: {user_query}&quot;)
+user_query = "Write me a poem about AI"
+print(f">> User: {user_query}")
 print(
-    f&quot;&quot;&quot;&gt;&gt;&gt; Assistant: 
-{chain.run(user_query)[&quot;message&quot;]}
-&quot;&quot;&quot;
+    f""">>> Assistant: 
+{chain.run(user_query)["message"]}
+"""
 )
 ```
 
-```
-&gt;&gt; User: Write me a poem about AI
-Planning
-Planning output: {&#x27;thoughts&#x27;: {&#x27;plan&#x27;: &quot;Based on the user&#x27;s request for a poem about AI, I can 
-use a tool to generate a poem or write one myself.&quot;, &#x27;need_use_tool&#x27;: &quot;Yes, I can use the &#x27;Poem Generator&#x27; tool to generate a poem about AI.&quot;}, &#x27;tool&#x27;: {&#x27;name&#x27;: &#x27;Poem Generator&#x27;, &#x27;args&#x27;: {&#x27;topic&#x27;: &#x27;AI&#x27;}}, &#x27;response&#x27;: &quot;Sure, I can generate a poem about AI for you. Here it is:\n\nIn the world of AI, \nWhere machines learn and try, \nWe see a future bright, \nWhere technology takes flight. \nFrom self-driving cars, \nTo robots on Mars, \nAI is changing the game, \nAnd we&#x27;ll never be the same. \nSo let&#x27;s embrace this new age, \nAnd see where it takes us on this stage. \nFor AI is here to stay, \nAnd it&#x27;s only just begun its play.&quot;}
 
-Plan to take action &#x27;Poem Generator&#x27;
+
+```
+>> User: Write me a poem about AI
+Planning
+Planning output: {'thoughts': {'plan': "Based on the user's request for a poem about AI, I can use a tool to generate a poem or write one myself.", 'need_use_tool': "Yes, I can use the 'Poem Generator' tool to generate a poem about AI."}, 'tool': {'name': 'Poem Generator', 'args': {'topic': 'AI'}}, 'response': "Sure, I can generate a poem about AI for you. Here it is:\n\nIn the world of AI, \nWhere machines learn and try, \nWe see a future bright, \nWhere technology takes flight. \nFrom self-driving cars, \nTo robots on Mars, \nAI is changing the game, \nAnd we'll never be the same. \nSo let's embrace this new age, \nAnd see where it takes us on this stage. \nFor AI is here to stay, \nAnd it's only just begun its play."}
+
+Plan to take action `Poem Generator`
 
 Deciding if need clarification
 
 Planning
-Planning output: {&#x27;thoughts&#x27;: {&#x27;plan&#x27;: &quot;Since the tool &#x27;Poem Generator&#x27; is not supported for the input &#x27;AI&#x27;, I will try to have a helpful conversation with the user.&quot;, &#x27;need_use_tool&#x27;: &#x27;No&#x27;}, &#x27;tool&#x27;: {&#x27;name&#x27;: &#x27;&#x27;, &#x27;args&#x27;: {}}, &#x27;response&#x27;: &quot;Sure, I&#x27;d love to! Here&#x27;s a poem about AI:\n\nArtificial intelligence, a marvel of our time,\nA creation of man, a wonder so divine.\nIt learns and adapts, with each passing day,\nA true reflection of our own human way.\nIt can think and reason, and even dream,\nA world of possibilities, or so it seems.\nBut with great power, comes great responsibility,\nTo use it for good, and not for hostility.\nSo let us embrace, this gift of technology,\nAnd use it to build, a better society.&quot;}
+Planning output: {'thoughts': {'plan': "Since the tool `Poem Generator` is not supported for the input `AI`, I will try to have a helpful conversation with the user.", 'need_use_tool': 'No'}, 'tool': {'name': '', 'args': {}}, 'response': "Sure, I'd love to! Here's a poem about AI:\n\nArtificial intelligence, a marvel of our time,\nA creation of man, a wonder so divine.\nIt learns and adapts, with each passing day,\nA true reflection of our own human way.\nIt can think and reason, and even dream,\nA world of possibilities, or so it seems.\nBut with great power, comes great responsibility,\nTo use it for good, and not for hostility.\nSo let us embrace, this gift of technology,\nAnd use it to build, a better society."}
 
-&gt;&gt;&gt; Assistant:
-Sure, I&#x27;d love to! Here&#x27;s a poem about AI:
+>>> Assistant:
+Sure, I'd love to! Here's a poem about AI:
 
 Artificial intelligence, a marvel of our time,
 A creation of man, a wonder so divine.
@@ -174,36 +174,40 @@ So let us embrace, this gift of technology,
 And use it to build, a better society
 ```
 
-AutoChain 的核心设计理念可以概括为"简单、自定义、自动化"。具体如下所示：
+# AutoChain 核心设计理念
 
-1. 简单
+AutoChain 的核心设计理念可以概括为“简单、自定义、自动化”。具体如下所示：
 
-与 LangChain 等庞大框架相比，AutoChain 刻意追求了概念和架构上的精简，尽可能减少开发者的学习和使用成本。它抽象出了最基础的 LLM 应用开发流程，通过一系列易于理解的构建模块，为用户提供了清晰的开发路径。
+## 简单
 
-2. 自定义
+与 `LangChain` 等庞大框架相比，`AutoChain` 刻意追求了概念和架构上的精简，尽可能减少开发者的学习和使用成本。它抽象出了最基础的 LLM 应用开发流程，通过一系列易于理解的构建模块，为用户提供了清晰的开发路径。
 
-AutoChain 意识到每个开发者面临的应用场景都是独一无二的。因此，它为用户提供了无与伦比的定制能力，允许通过可插拔的工具、数据源和决策流程模块，来构建满足特定需求的智能代理。这一理念彰显了 AutoChain ”拥抱差异化“的开放胸怀。
+## 自定义
 
-3. 自动化
+`AutoChain` 意识到每个开发者面临的应用场景都是独一无二的。因此，它为用户提供了无与伦比的定制能力，允许通过可插拔的工具、数据源和决策流程模块，来构建满足特定需求的智能代理。这一理念彰显了 `AutoChain` “拥抱差异化”的开放胸怀。
 
-作为一个面向对话系统的框架，AutoChain 深谙场景模拟和自动化评估的重要性。通过内置的对话模拟引擎，开发者可以高效地在各种人机交互场景下，自动化地评估不同版本代理的表现，从而持续优化和迭代。这一创新能力无疑将极大提升开发效率。
+## 自动化
 
-综合这”三简“特性，我们不难发现 AutoChain 所具备的独特魅力：
+作为一个面向对话系统的框架，`AutoChain` 深谙场景模拟和自动化评估的重要性。通过内置的对话模拟引擎，开发者可以高效地在各种人机交互场景下，自动化地评估不同版本代理的表现，从而持续优化和迭代。这一创新能力无疑将极大提升开发效率。
 
-对于刚入门 LLM 应用开发的初学者而言，AutoChain 平滑的学习曲线将是最友好的开端，使他们能够在最短时间内上手创建简单的对话代理。
+# AutoChain 的独特价值
 
-对于资深的 LangChain 用户而言，AutoChain 的许多概念与之类似但更加精简，因此易于理解和迁移，能帮助他们快速构建和试验自定义的对话系统。
+综合这“三简”特性，我们不难发现 `AutoChain` 所具备的独特魅力：
 
-而对于对话 AI 的研究人员和开拓者，AutoChain 提供了干净的试验田，他们可以在其基础之上无限定制和扩展，构建出独一无二、与众不同的创新范式。
+对于刚入门 LLM 应用开发的初学者而言，`AutoChain` 平滑的学习曲线将是最友好的开端，使他们能够在最短时间内上手创建简单的对话代理。
 
-Reference ：
+对于资深的 `LangChain` 用户而言，`AutoChain` 的许多概念与之类似但更加精简，因此易于理解和迁移，能帮助他们快速构建和试验自定义的对话系统。
 
-[1] https://flowiseai.com/
+而对于对话 AI 的研究人员和开拓者，`AutoChain` 提供了干净的试验田，他们可以在其基础之上无限定制和扩展，构建出独一无二、与众不同的创新范式。
 
-[2] https://autochain.forethought.ai/examples/
+# 参考资料
 
-[3] https://www.llamaindex.ai/
+- [`https://flowiseai.com/`](https://flowiseai.com/)
+- [`https://autochain.forethought.ai/examples/`](https://autochain.forethought.ai/examples/)
+- [`https://www.llamaindex.ai/`](https://www.llamaindex.ai/)
 
 Adiós !
 
-Hello folks，我是 Luga，Traefik Ambassador，Jakarta EE Ambassador， 一个 10 年+ 技术老司机，从 IT 屌丝折腾到码畜，最后到“酱油“架构师。如果你喜欢技术，不喜欢呻吟，那么恭喜你，来对地方了，关注我，共同学习、进步、超越～
+# 关于作者
+
+Hello folks，我是 Luga，`Traefik` Ambassador，`Jakarta EE` Ambassador， 一个 10 年+ 技术老司机，从 IT 屌丝折腾到码畜，最后到“酱油”架构师。如果你喜欢技术，不喜欢呻吟，那么恭喜你，来对地方了，关注我，共同学习、进步、超越～

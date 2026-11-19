@@ -1,9 +1,7 @@
-# 10.31-AI是「天才」还是「话术大师」？Anthropic颠覆性实验，终揭答案！
-
-> 来源：[https://agijuejin.feishu.cn/docx/TqRfdVzsioTSrZx7REVcxoYnnmb](https://agijuejin.feishu.cn/docx/TqRfdVzsioTSrZx7REVcxoYnnmb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 30 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/TqRfdVzsioTSrZx7REVcxoYnnmb](https://agijuejin.feishu.cn/docx/TqRfdVzsioTSrZx7REVcxoYnnmb)
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 
 ## ⭐ 今日热点
@@ -14,7 +12,7 @@
 
 ![](img/60b95f8215bb6211de0eb3e83c778ff9.png)
 
-Anthropic研究证实Claude模型有一定内省意识，能控制自身内部状态。团队用「概念注入」实验检测，Claude Opus 4.1约20%案例有觉察能力，能力随AI提升或更可靠。模型还能区分「外部强加」与「内部生成」内容，并构建自洽逻辑。不过，研究员警告勿轻信Claude的解释。目前研究为定义AI能力提供基础，问题在于内省意识进化速度及可靠性 。
+Anthropic研究证实Claude模型有一定内省意识，能控制自身内部状态。团队用「概念注入」实验检测，Claude Opus 4.1约20%案例有觉察能力，能力随AI提升或更可靠。模型还能区分「外部强加」与「内部生成」内容，并构建自洽逻辑。不过，研究员警告勿轻信Claude的解释。目前研究为定义AI能力提供基础，问题在于内省意识进化速度及可靠性。
 
 ## 🌟 技术突破
 

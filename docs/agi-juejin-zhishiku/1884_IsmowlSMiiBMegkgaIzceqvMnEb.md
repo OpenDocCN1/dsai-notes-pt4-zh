@@ -1,8 +1,7 @@
-# 01.23-刚刚，豆包1.5模型家族硬核登场！「深度思考」秘笈曝光，多模态冲爆榜单
-
-> 来源：[https://agijuejin.feishu.cn/docx/RmHmdhrUpoj7mfx3Fj5cFlgcnGe](https://agijuejin.feishu.cn/docx/RmHmdhrUpoj7mfx3Fj5cFlgcnGe)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 23 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/RmHmdhrUpoj7mfx3Fj5cFlgcnGe](https://agijuejin.feishu.cn/docx/RmHmdhrUpoj7mfx3Fj5cFlgcnGe)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -20,13 +19,13 @@
 
 ## 🌟 技术突破
 
-### 💡 UC伯克利等提出具身智能「动作Tokenizer」，效率飙升5倍！
+### 💡 UC伯克利等提出具身智能「动作`Tokenizer`」，效率飙升5倍！
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JMH180QH0511ABV6.html?spss=dy_author)
 
 ![](img/5bb617af5cf3fae6f1e77e768f318348.png)
 
-2025 年，来自伯克利、斯坦福等的研究者提出高效动作 Tokenizer FAST。FAST 结合离散余弦变换和字节对编码，将动作像语言一样用离散 Token 表示，能提升训练和推理效率，最多缩短训练时间 5 倍。基于 FAST 训练出首个自回归通用策略π0-FAST，在复杂任务上表现与扩散π0 模型相当，且计算量显著减少，但推理速度较慢。
+2025 年，来自伯克利、斯坦福等的研究者提出高效动作 `Tokenizer` FAST。FAST 结合离散余弦变换和字节对编码，将动作像语言一样用离散 Token 表示，能提升训练和推理效率，最多缩短训练时间 5 倍。基于 FAST 训练出首个自回归通用策略π0-FAST，在复杂任务上表现与扩散π0 模型相当，且计算量显著减少，但推理速度较慢。
 
 ### 💡 截胡OpenAI！清华复旦等抢先开源智能体框架Eko，一句话打造「虚拟员工」
 
@@ -108,6 +107,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/826/419.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/826/534.htm)
 
-![](img/45cc50720f0f3ab6eb00030c86cfd2c4.png)
+![](img/45cc50720f3d2348eb00030c86cfd2c4.png)
 
 2025 年，谷歌母公司 Alphabet 总裁波拉特在达沃斯世界经济论坛表示，美国在 AI 发展竞赛中未必能永远领先中国。美国在 AI 模型和芯片领域暂时领先，但中国在基础能力普及和应用方面已与之持平甚至可能略胜一筹。她呼吁特朗普政府制定‘大胆且负责任’的 AI 发展规则，强调监管需全球一致，否则会阻碍投资。

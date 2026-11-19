@@ -1,3 +1,4 @@
+
 # 服务器繁忙怎么办？
 
 > 来源：[https://zcareers.feishu.cn/docx/DXqfdCTaToDCmpxzGImcq9YPn0b](https://zcareers.feishu.cn/docx/DXqfdCTaToDCmpxzGImcq9YPn0b)
@@ -6,7 +7,7 @@
 
 ![](img/c91bdef29c8962f6bcabe5f1cabf3819.png)
 
-### 腾讯元宝
+## 腾讯元宝
 
 提供DeepSeek-R1联网满血版。
 
@@ -20,7 +21,7 @@
 
 ![](img/1ae5e4c3b872220b623170a352eafb5d.png)
 
-### 纳米AI搜索
+## 纳米AI搜索
 
 在手机应用市场搜索，下载安装即可。APP增加了DeepSeek-R1专线，满血版。
 
@@ -28,7 +29,7 @@
 
 ![](img/991990bfc43aad8f91fd7631f0477c6b.png)
 
-### 秘塔AI
+## 秘塔AI
 
 https://metaso.cn/，开启“长思考R1”模式，也是DeepSeek-R1满血版。
 
@@ -36,13 +37,13 @@ https://metaso.cn/，开启“长思考R1”模式，也是DeepSeek-R1满血版�
 
 ![](img/4acfb82ef2dcaf00883cd81b4e8c265b.png)
 
-### 超算中心SCNET
+## 超算中心SCNET
 
-https://chat**.scnet.**cn，只**提供7B**和32B版，不提供满血版本。优点是无需注册。
+https://chat.scnet.cn，只**提供7B**和32B版，不提供满血版本。优点是无需注册。
 
 ![](img/22b28551800757f107034e4636a30a29.png)
 
-### 英伟达官网
+## 英伟达官网
 
 https://build.nvidia.com/deepseek-ai/deepseek-r1
 
@@ -52,9 +53,7 @@ https://build.nvidia.com/deepseek-ai/deepseek-r1
 
 ![](img/f938beaef203b9a1c3008b89a827d0b3.png)
 
-###
-
-### 字节火山引擎
+## 字节火山引擎
 
 地址https://console.volcengine.com/ark/region:ark+cn-beijing/experience
 

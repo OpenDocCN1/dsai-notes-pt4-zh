@@ -1,3 +1,4 @@
+
 # 2024 AIGC 视频生成：走向 AI 创生时代
 
 > 来源：[https://agijuejin.feishu.cn/docx/LaVTdwu0AoGQMZxZo9UcV85CnAd](https://agijuejin.feishu.cn/docx/LaVTdwu0AoGQMZxZo9UcV85CnAd)

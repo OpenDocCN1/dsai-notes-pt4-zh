@@ -1,8 +1,9 @@
+
 # Prompt 越狱手册
 
 > 来源：[https://langgptai.feishu.cn/docx/QzEQdfAAhoQnhUxNtGWc7ghCnqb](https://langgptai.feishu.cn/docx/QzEQdfAAhoQnhUxNtGWc7ghCnqb)
 
-来自群友@洺熙： https://github.com/Acmesec/PromptJailbreakManual
+来自群友@洺熙：[https://github.com/Acmesec/PromptJailbreakManual](https://github.com/Acmesec/PromptJailbreakManual)
 
 ![](img/a1d30e7ae89520c67547bcd80e26cdab.png)
 

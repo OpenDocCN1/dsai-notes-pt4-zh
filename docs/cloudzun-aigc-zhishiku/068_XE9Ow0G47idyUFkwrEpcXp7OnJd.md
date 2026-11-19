@@ -1,12 +1,13 @@
+
 # AI-3003 在 Azure 中开发自然语言解决方案
 
 > 来源：[https://zsyhjtnsa5.feishu.cn/docx/TWvhdyKVeou7hQxdODycxOBln2c](https://zsyhjtnsa5.feishu.cn/docx/TWvhdyKVeou7hQxdODycxOBln2c)
 
-实验 Repo：https://github.com/microsoftlearning/mslearn-ai-language
+实验 Repo：`https://github.com/microsoftlearning/mslearn-ai-language`
 
-# 使用 Azure AI 语言分析文本
+## 使用 Azure AI 语言分析文本
 
-https://learn.microsoft.com/zh-cn/training/modules/analyze-text-ai-language/
+`https://learn.microsoft.com/zh-cn/training/modules/analyze-text-ai-language/`
 
 ### 什么是 Azure AI 语言服务？
 
@@ -22,7 +23,7 @@ Azure AI 语言服务提供以下主要功能：
 
 +   情绪分析：量化文本的积极或消极程度。
 
-+   命名实体识别 （NER）：识别文本中提到的实体，并将其分类，例如人物、地点、日期时间、组织、地址、电子邮件和网址等。
++   命名实体识别（NER）：识别文本中提到的实体，并将其分类，例如人物、地点、日期时间、组织、地址、电子邮件和网址等。
 
 +   实体链接：通过引用知识库中的文章（如维基百科）来消除同名实体的歧义，从而识别特定的实体。
 
@@ -50,11 +51,11 @@ Azure AI 语言服务提供以下主要功能：
 
 ### 练习：Analyze Text
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/01-analyze-text.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/01-analyze-text.md`
 
 文本分析
 
-```
+```python
 from dotenv import load_dotenv
 import os
 
@@ -66,546 +67,581 @@ def main():
     try:
         # Get Configuration Settings
         load_dotenv()
-        ai_endpoint = os.getenv(&#x27;AI_SERVICE_ENDPOINT&#x27;)
-        ai_key = os.getenv(&#x27;AI_SERVICE_KEY&#x27;)
+        ai_endpoint = os.getenv('AI_SERVICE_ENDPOINT')
+        ai_key = os.getenv('AI_SERVICE_KEY')
 
         # Create client using endpoint and key
         credential = AzureKeyCredential(ai_key)
         ai_client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential)
 
         # Analyze each text file in the reviews folder
-        reviews_folder = &#x27;reviews&#x27;
+        reviews_folder = 'reviews'
         for file_name in os.listdir(reviews_folder):
             # Read the file contents
-            print(&#x27;\n-------------\n&#x27; + file_name)
-            text = open(os.path.join(reviews_folder, file_name), encoding=&#x27;utf8&#x27;).read()
-            print(&#x27;\n&#x27; + text)
+            print('\n-------------\n' + file_name)
+            text = open(os.path.join(reviews_folder, file_name), encoding='utf8').read()
+            print('\n' + text)
 
             # Get language
             detectedLanguage = ai_client.detect_language(documents=[text])[0]
-            print(&#x27;\nLanguage: {}&#x27;.format(detectedLanguage.primary_language.name))
+            print('\nLanguage: {}'.format(detectedLanguage.primary_language.name))
 
             # Get sentiment
             sentimentAnalysis = ai_client.analyze_sentiment(documents=[text])[0]
-            print(&quot;\nSentiment: {}&quot;.format(sentimentAnalysis.sentiment))
+            print("\nSentiment: {}".format(sentimentAnalysis.sentiment))
 
             # Get key phrases
             phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases
-            if len(phrases) &gt; 0:
-                print(&quot;\nKey Phrases:&quot;)
+            if len(phrases) > 0:
+                print("\nKey Phrases:")
                 for phrase in phrases:
-                    print(&#x27;\t{}&#x27;.format(phrase))
+                    print('\t{}'.format(phrase))
 
             # Get entities
             entities = ai_client.recognize_entities(documents=[text])[0].entities
-            if len(entities) &gt; 0:
-                print(&quot;\nEntities&quot;)
+            if len(entities) > 0:
+                print("\nEntities")
                 for entity in entities:
-                    print(&#x27;\t{} ({})&#x27;.format(entity.text, entity.category))
+                    print('\t{} ({})'.format(entity.text, entity.category))
 
             # Get linked entities
             entities = ai_client.recognize_linked_entities(documents=[text])[0].entities
-            if len(entities) &gt; 0:
-                print(&quot;\nLinks&quot;)
+            if len(entities) > 0:
+                print("\nLinks")
                 for linked_entity in entities:
-                    print(&#x27;\t{} ({})&#x27;.format(linked_entity.name, linked_entity.url))
+                    print('\t{} ({})'.format(linked_entity.name, linked_entity.url))
 
     except Exception as ex:
         print(ex)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
 > 这些代码片段的目的是逐步启用 Azure AI 语言服务的不同文本分析功能。
 
-1.  导入命名空间 （Import namespaces）
+#### 1. 导入命名空间（Import namespaces）
 
-```
-      # import namespacesfrom azure.core.credentials import AzureKeyCredential
+```python
+# import namespaces
+from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
 ```
 
-+   from azure.core.credentials import AzureKeyCredential:
++   `from azure.core.credentials import AzureKeyCredential`:
 
 +   **作用**： 这个类用于处理 Azure 服务的身份验证。具体来说，它允许你使用你的 Azure AI 语言服务密钥（API Key）来授权你的应用程序访问该服务。
 
-+   **为什么需要**： Azure 服务需要知道是谁在发出请求，以及该请求是否被授权。AzureKeyCredential 对象会安全地包装你的服务密钥。
++   **为什么需要**： Azure 服务需要知道是谁在发出请求，以及该请求是否被授权。`AzureKeyCredential` 对象会安全地包装你的服务密钥。
 
-+   from azure.ai.textanalytics import TextAnalyticsClient:
++   `from azure.ai.textanalytics import TextAnalyticsClient`:
 
 +   **作用**： 这是 Azure AI 语言文本分析 SDK 的核心客户端类。你需要创建这个类的一个实例，才能调用文本分析的各种功能，如语言检测、情感分析等。
 
 +   **为什么需要**： 它是与 Azure AI 语言服务进行所有交互的入口点。
 
-1.  **创建客户端 （Create client usi**ng endpoint and key）
+#### 2. 创建客户端（Create client using endpoint and key）
 
-```
-      # Create client using endpoint and key
+```python
+# Create client using endpoint and key
 credential = AzureKeyCredential(ai_key)
 ai_client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential)
 ```
 
-+   credential = AzureKeyCredential(ai_key):
++   `credential = AzureKeyCredential(ai_key)`:
 
-+   **作用**： 创建一个 AzureKeyCredential 类的实例。它接收从 .env 文件中加载的 ai_key （你的 Azure AI 语言服务密钥） 作为参数。
++   **作用**： 创建一个 `AzureKeyCredential` 类的实例。它接收从 `.env` 文件中加载的 `ai_key`（你的 Azure AI 语言服务密钥）作为参数。
 
-+   **为什么需要**： 这个 credential 对象将被传递给 TextAnalyticsClient，用于向 Azure 服务证明你的应用程序有权访问。
++   **为什么需要**： 这个 `credential` 对象将被传递给 `TextAnalyticsClient`，用于向 Azure 服务证明你的应用程序有权访问。
 
-+   ai_client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential):
++   `ai_client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential)`:
 
-+   **作用**： 创建 TextAnalyticsClient 类的实例，这个实例就是我们之后用来调用所有文本分析 API 的对象。
++   **作用**： 创建 `TextAnalyticsClient` 类的实例，这个实例就是我们之后用来调用所有文本分析 API 的对象。
 
 +   **参数**：
 
-+   endpoint=ai_endpoint： 指定你的 Azure AI 语言服务的终结点 URL （从 .env 文件加载）。SDK 需要知道向哪个服务器地址发送请求。
++   `endpoint=ai_endpoint`： 指定你的 Azure AI 语言服务的终结点 URL（从 `.env` 文件加载）。SDK 需要知道向哪个服务器地址发送请求。
 
-+   credential=credential： 传入上一步创建的 credential 对象，用于身份验证。
++   `credential=credential`： 传入上一步创建的 `credential` 对象，用于身份验证。
 
-+   **为什么需要**： 这个 ai_client 对象是实际执行文本分析操作的工具。
++   **为什么需要**： 这个 `ai_client` 对象是实际执行文本分析操作的工具。
 
-1.  获取语言 （Get language）
+#### 3. 获取语言（Get language）
 
-```
-      # Get language
+```python
+# Get language
 detectedLanguage = ai_client.detect_language(documents=[text])[0]
-print(&#x27;\nLanguage: {}&#x27;.format(detectedLanguage.primary_language.name))
+print('\nLanguage: {}'.format(detectedLanguage.primary_language.name))
 ```
 
-+   detectedLanguage = ai_client.detect_language(documents=[text])[0]:
++   `detectedLanguage = ai_client.detect_language(documents=[text])[0]`:
 
-+   ai_client.detect_language(...)： 调用 TextAnalyticsClient 对象的 detect_language 方法来检测输入文本的语言。
++   `ai_client.detect_language(...)`： 调用 `TextAnalyticsClient` 对象的 `detect_language` 方法来检测输入文本的语言。
 
-+   documents=[text]： 这个方法期望接收一个文档列表作为输入。即使我们只分析一个文档 （text变量的内容），也需要将其包装在一个列表中。
++   `documents=[text]`： 这个方法期望接收一个文档列表作为输入。即使我们只分析一个文档（`text` 变量的内容），也需要将其包装在一个列表中。
 
-+   [0]： detect_language 方法（以及其他许多文本分析方法）返回一个结果列表，每个结果对应输入列表中的一个文档。由于我们只发送了一个文档，所以我们通过索引 [0] 来获取这第一个（也是唯一一个）文档的检测结果。
++   `[0]`： `detect_language` 方法（以及其他许多文本分析方法）返回一个结果列表，每个结果对应输入列表中的一个文档。由于我们只发送了一个文档，所以我们通过索引 `[0]` 来获取这第一个（也是唯一一个）文档的检测结果。
 
-+   detectedLanguage.primary_language.name:
++   `detectedLanguage.primary_language.name`:
 
-+   detectedLanguage 是单个文档的语言检测结果对象。
++   `detectedLanguage` 是单个文档的语言检测结果对象。
 
-+   它有一个 primary_language 属性，表示最可能的主要语言。
++   它有一个 `primary_language` 属性，表示最可能的主要语言。
 
-+   primary_language 对象有一个 name 属性，它包含语言的名称 （例如 "English"， "Chinese_Simplified"， "Spanish"）。
++   `primary_language` 对象有一个 `name` 属性，它包含语言的名称（例如 `"English"`，`"Chinese_Simplified"`，`"Spanish"`）。
 
 +   **作用**： 识别给定文本是用什么语言编写的。
 
-1.  获取情感 （Get sentiment）
+#### 4. 获取情感（Get sentiment）
 
-```
-      # Get sentiment
+```python
+# Get sentiment
 sentimentAnalysis = ai_client.analyze_sentiment(documents=[text])[0]
-print(&quot;\nSentiment: {}&quot;.format(sentimentAnalysis.sentiment))
+print("\nSentiment: {}".format(sentimentAnalysis.sentiment))
 ```
 
-+   sentimentAnalysis = ai_client.analyze_sentiment(documents=[text])[0]:
++   `sentimentAnalysis = ai_client.analyze_sentiment(documents=[text])[0]`:
 
-+   ai_client.analyze_sentiment(...)： 调用情感分析功能。
++   `ai_client.analyze_sentiment(...)`： 调用情感分析功能。
 
-+   documents=[text] 和 [0]： 与语言检测的逻辑相同，处理单个文档并获取其结果。
++   `documents=[text]` 和 `[0]`： 与语言检测的逻辑相同，处理单个文档并获取其结果。
 
-+   sentimentAnalysis.sentiment:
++   `sentimentAnalysis.sentiment`:
 
-+   sentimentAnalysis 是单个文档的情感分析结果对象。
++   `sentimentAnalysis` 是单个文档的情感分析结果对象。
 
-+   它有一个 sentiment 属性，表示文本的整体情感，通常是 "positive" （积极）， "negative" （消极）， "neutral" （中性）， 或 "mixed" （混合）。
++   它有一个 `sentiment` 属性，表示文本的整体情感，通常是 `"positive"`（积极），`"negative"`（消极），`"neutral"`（中性），或 `"mixed"`（混合）。
 
 +   **作用**： 判断文本所表达的情感是积极的、消极的还是中性的。
 
-1.  获取关键短语 （Get key phrases）
+#### 5. 获取关键短语（Get key phrases）
 
-```
-      # Get key phrases
+```python
+# Get key phrases
 phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases
-if len(phrases) &gt; 0:
-    print(&quot;\nKey Phrases:&quot;)for phrase in phrases:
-        print(&#x27;\t{}&#x27;.format(phrase))
+if len(phrases) > 0:
+    print("\nKey Phrases:")
+    for phrase in phrases:
+        print('\t{}'.format(phrase))
 ```
 
-+   phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases:
++   `phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases`:
 
-+   ai_client.extract_key_phrases(...)： 调用关键短语提取功能。
++   `ai_client.extract_key_phrases(...)`： 调用关键短语提取功能。
 
-+   documents=[text] 和 [0]： 逻辑同上。
++   `documents=[text]` 和 `[0]`： 逻辑同上。
 
-+   .key_phrases： 单个文档的关键短语提取结果对象有一个 key_phrases 属性，这是一个包含字符串的列表，每个字符串都是从文本中提取出的一个关键短语。
++   `.key_phrases`： 单个文档的关键短语提取结果对象有一个 `key_phrases` 属性，这是一个包含字符串的列表，每个字符串都是从文本中提取出的一个关键短语。
 
-+   if len(phrases) > 0: ... for phrase in phrases: ...： 检查是否提取到了任何关键短语，如果有，则遍历并打印它们。
++   `if len(phrases) > 0: ... for phrase in phrases: ...`： 检查是否提取到了任何关键短语，如果有，则遍历并打印它们。
 
 +   **作用**： 从文本中识别出主要的谈论点或核心概念。
 
-1.  获取实体 （Get entities）
+#### 6. 获取实体（Get entities）
 
-```
-      # Get entities
+```python
+# Get entities
 entities = ai_client.recognize_entities(documents=[text])[0].entities
-if len(entities) &gt; 0:
-    print(&quot;\nEntities&quot;)for entity in entities:
-        print(&#x27;\t{} ({})&#x27;.format(entity.text, entity.category))
+if len(entities) > 0:
+    print("\nEntities")
+    for entity in entities:
+        print('\t{} ({})'.format(entity.text, entity.category))
 ```
 
-+   entities = ai_client.recognize_entities(documents=[text])[0].entities:
++   `entities = ai_client.recognize_entities(documents=[text])[0].entities`:
 
-+   ai_client.recognize_entities(...)： 调用命名实体识别 （NER） 功能。
++   `ai_client.recognize_entities(...)`： 调用命名实体识别（NER）功能。
 
-+   documents=[text] 和 [0]： 逻辑同上。
++   `documents=[text]` 和 `[0]`： 逻辑同上。
 
-+   .entities： 单个文档的实体识别结果对象有一个 entities 属性，这是一个 CategorizedEntity 对象列表。
++   `.entities`： 单个文档的实体识别结果对象有一个 `entities` 属性，这是一个 `CategorizedEntity` 对象列表。
 
-+   entity.text： CategorizedEntity 对象包含被识别出的实体文本 （例如 "Microsoft"， "London"）。
 
-+   entity.category： CategorizedEntity 对象还包含该实体的类别 （例如 "Organization"， "Location"， "Person"， "DateTime"）。
 
-+   **作用**： 识别并分类文本中提到的已知实体，如人名、地名、组织机构名、日期、数量等。
+# 文本分析与实体识别
 
-1.  获取链接实体 （Get linked entities）
+## 命名实体识别
+
++ `entity.text`：`CategorizedEntity` 对象包含被识别出的实体文本（例如 `"Microsoft"`、`"London"`）。
+
++ `entity.category`：`CategorizedEntity` 对象还包含该实体的类别（例如 `"Organization"`、`"Location"`、`"Person"`、`"DateTime"`）。
+
++ **作用**：识别并分类文本中提到的已知实体，如人名、地名、组织机构名、日期、数量等。
+
+## 获取链接实体（Get linked entities）
 
 ```
-      # Get linked entities
+# Get linked entities
 entities = ai_client.recognize_linked_entities(documents=[text])[0].entities
-if len(entities) &gt; 0:
-    print(&quot;\nLinks&quot;)for linked_entity in entities:
-        print(&#x27;\t{} ({})&#x27;.format(linked_entity.name, linked_entity.url))
+if len(entities) > 0:
+    print("\nLinks")
+    for linked_entity in entities:
+        print('\t{} ({})'.format(linked_entity.name, linked_entity.url))
 ```
 
-+   entities = ai_client.recognize_linked_entities(documents=[text])[0].entities： （注意：这里变量名 entities 被重用了，在实际项目中为了清晰，可能会使用不同的名称，如 linked_entities_result）
++ `entities = ai_client.recognize_linked_entities(documents=[text])[0].entities`：（注意：这里变量名 `entities` 被重用了，在实际项目中为了清晰，可能会使用不同的名称，如 `linked_entities_result`）
 
-+   ai_client.recognize_linked_entities(...)： 调用链接实体识别功能。
++ `ai_client.recognize_linked_entities(...)`：调用链接实体识别功能。
 
-+   documents=[text] 和 [0]： 逻辑同上。
++ `documents=[text]` 和 `[0]`：逻辑同上。
 
-+   .entities： 单个文档的链接实体识别结果对象有一个 entities 属性，这是一个 LinkedEntity 对象列表。
++ `.entities`：单个文档的链接实体识别结果对象有一个 `entities` 属性，这是一个 `LinkedEntity` 对象列表。
 
-+   linked_entity.name： LinkedEntity 对象包含实体在知识库中的规范名称 （例如 "Microsoft Corporation"）。
++ `linked_entity.name`：`LinkedEntity` 对象包含实体在知识库中的规范名称（例如 `"Microsoft Corporation"`）。
 
-+   linked_entity.url： LinkedEntity 对象包含一个指向该实体在知识库 （通常是维基百科） 中的 URL 链接。
++ `linked_entity.url`：`LinkedEntity` 对象包含一个指向该实体在知识库（通常是维基百科）中的 URL 链接。
 
-+   **作用**： 识别文本中的实体，并将其链接到知名知识库（如维基百科）中的对应条目，有助于消除歧义并提供更丰富的上下文信息。
++ **作用**：识别文本中的实体，并将其链接到知名知识库（如维基百科）中的对应条目，有助于消除歧义并提供更丰富的上下文信息。
 
-> 总结来说，这些添加的代码块逐步构建了一个完整的文本分析流程：首先配置并创建与 Azure AI 语言服务的连接，然后针对每个评论文件，依次调用服务的不同功能来提取语言、情感、关键短语、命名实体和链接实体信息，并将结果打印出来。每个功能都通过 ai_client 对象的方法调用，并遵循相似的模式（传入文档列表，获取结果列表中的第一个元素）。
+> 总结来说，这些添加的代码块逐步构建了一个完整的文本分析流程：首先配置并创建与 Azure AI 语言服务的连接，然后针对每个评论文件，依次调用服务的不同功能来提取语言、情感、关键短语、命名实体和链接实体信息，并将结果打印出来。每个功能都通过 `ai_client` 对象的方法调用，并遵循相似的模式（传入文档列表，获取结果列表中的第一个元素）。
 
-输出
 
-```
--------------
-review1.txt
 
-Good Hotel and staff
-The Royal Hotel, London, UK
-3/2/2018
+# `review1.txt`
+
+## Good Hotel and staff
+
+### The Royal Hotel, London, UK
+
+#### 3/2/2018
+
 Clean rooms, good service, great location near Buckingham Palace and Westminster Abbey, and so on. We thoroughly enjoyed our stay. The courtyard is very peaceful and we went to a restaurant which is part of the same group and is Indian ( West coast so plenty of fish) with a Michelin Star. We had the taster menu which was fabulous. The rooms were very well appointed with a kitchen, lounge, bedroom and enormous bathroom. Thoroughly recommended.
 
-Language: English
+**Language**: English  
+**Sentiment**: positive
 
-Sentiment: positive
+### Key Phrases
 
-Key Phrases:
-        The Royal Hotel
-        Good Hotel
-        good service
-        great location
-        Buckingham Palace
-        Westminster Abbey
-        same group
-        West coast
-        Michelin Star
-        taster menu
-        enormous bathroom
-        Clean rooms
-        staff
-        London
-        UK
-        stay
-        courtyard
-        restaurant
-        part
-        plenty
-        fish
-        kitchen
-        lounge
-        bedroom
+- The Royal Hotel
+- Good Hotel
+- good service
+- great location
+- Buckingham Palace
+- Westminster Abbey
+- same group
+- West coast
+- Michelin Star
+- taster menu
+- enormous bathroom
+- Clean rooms
+- staff
+- London
+- UK
+- stay
+- courtyard
+- restaurant
+- part
+- plenty
+- fish
+- kitchen
+- lounge
+- bedroom
 
-Entities
-        Hotel (Location)
-        staff (PersonType)
-        Royal Hotel, London, UK (Address)
-        3/2/2018 (DateTime)
-        Buckingham Palace (Location)
-        Westminster Abbey (Location)
-        courtyard (Location)
-        restaurant (Location)
-        Indian (PersonType)
-        West coast (Location)
-        fish (Product)
-        taster (Product)
-        rooms (Location)
-        kitchen (Location)
-        lounge (Location)
-        bedroom (Location)
-        bathroom (Location)
+### Entities
 
-Links
-        GOOD Music (https://en.wikipedia.org/wiki/GOOD_Music)
-        Hotel (https://en.wikipedia.org/wiki/Hotel)
-        The Royal Hotel (https://en.wikipedia.org/wiki/The_Royal_Hotel)
-        London (https://en.wikipedia.org/wiki/London)
-        Buckingham Palace (https://en.wikipedia.org/wiki/Buckingham_Palace)
-        Westminster Abbey (https://en.wikipedia.org/wiki/Westminster_Abbey)
-        India (https://en.wikipedia.org/wiki/India)
-        West Coast Main Line (https://en.wikipedia.org/wiki/West_Coast_Main_Line)
-        Michelin Guide (https://en.wikipedia.org/wiki/Michelin_Guide)
+- Hotel (Location)
+- staff (PersonType)
+- Royal Hotel, London, UK (Address)
+- 3/2/2018 (DateTime)
+- Buckingham Palace (Location)
+- Westminster Abbey (Location)
+- courtyard (Location)
+- restaurant (Location)
+- Indian (PersonType)
+- West coast (Location)
+- fish (Product)
+- taster (Product)
+- rooms (Location)
+- kitchen (Location)
+- lounge (Location)
+- bedroom (Location)
+- bathroom (Location)
 
--------------
-review2.txt
+### Links
 
-Tired hotel with poor service
-The Royal Hotel, London, United Kingdom
-5/6/2018
+- GOOD Music (https://en.wikipedia.org/wiki/GOOD_Music)
+- Hotel (https://en.wikipedia.org/wiki/Hotel)
+- The Royal Hotel (https://en.wikipedia.org/wiki/The_Royal_Hotel)
+- London (https://en.wikipedia.org/wiki/London)
+- Buckingham Palace (https://en.wikipedia.org/wiki/Buckingham_Palace)
+- Westminster Abbey (https://en.wikipedia.org/wiki/Westminster_Abbey)
+- India (https://en.wikipedia.org/wiki/India)
+- West Coast Main Line (https://en.wikipedia.org/wiki/West_Coast_Main_Line)
+- Michelin Guide (https://en.wikipedia.org/wiki/Michelin_Guide)
+
+---
+
+# `review2.txt`
+
+## Tired hotel with poor service
+
+### The Royal Hotel, London, United Kingdom
+
+#### 5/6/2018
+
 This is a old hotel (has been around since 1950&#x27;s) and the room furnishings are average - becoming a bit old now and require changing. The internet didn&#x27;t work and had to come to one of their office rooms to check in for my flight home. The website says it&#x27;s close to the British Museum, but it&#x27;s too far to walk.
 
-Language: English
+**Language**: English  
+**Sentiment**: negative
 
-Sentiment: negative
+### Key Phrases
 
-Key Phrases:
-        The Royal Hotel
-        Tired hotel
-        old hotel
-        poor service
-        United Kingdom
-        room furnishings
-        office rooms
-        flight home
-        British Museum
-        London
-        changing
-        internet
-        website
-        1950
+- The Royal Hotel
+- Tired hotel
+- old hotel
+- poor service
+- United Kingdom
+- room furnishings
+- office rooms
+- flight home
+- British Museum
+- London
+- changing
+- internet
+- website
+- 1950
 
-Entities
-        hotel (Location)
-        The Royal Hotel (Organization)
-        London (Location)
-        United Kingdom (Location)
-        5/6/2018 (DateTime)
-        hotel (Location)
-        since 1950&#x27;s (DateTime)
-        furnishings (Product)
-        now (DateTime)
-        internet (Skill)
-        one (Quantity)
-        office rooms (Location)
-        flight (Event)
-        home (Location)
-        British Museum (Location)
+### Entities
 
-Links
-        The Royal Hotel (https://en.wikipedia.org/wiki/The_Royal_Hotel)
-        London (https://en.wikipedia.org/wiki/London)
-        British Museum (https://en.wikipedia.org/wiki/British_Museum)
+- hotel (Location)
+- The Royal Hotel (Organization)
+- London (Location)
+- United Kingdom (Location)
+- 5/6/2018 (DateTime)
+- hotel (Location)
+- since 1950&#x27;s (DateTime)
+- furnishings (Product)
+- now (DateTime)
+- internet (Skill)
+- one (Quantity)
+- office rooms (Location)
+- flight (Event)
+- home (Location)
+- British Museum (Location)
 
--------------
-review3.txt
+### Links
 
-Good location and helpful staff, but on a busy road.
-The Lombard Hotel, San Francisco, USA
-8/16/2018
-We stayed here in August after reading reviews. We were very pleased with location, just behind Chestnut Street, a cosmopolitan and trendy area with plenty of restaurants to choose from. The
-Marina district was lovely to wander through, very interesting houses. Make sure to walk to the San Francisco Museum of Fine Arts and the Marina to get a good view of Golden Gate bridge and the city. On a bus route and easy to get into centre. Rooms were clean with plenty of room and staff were friendly and helpful. The only down side was the noise from Lombard Street so ask to have a room furthest away from traffic noise.
+- The Royal Hotel (https://en.wikipedia.org/wiki/The_Royal_Hotel)
+- London (https://en.wikipedia.org/wiki/London)
+- British Museum (https://en.wikipedia.org/wiki/British_Museum)
 
-Language: English
+---
 
-Sentiment: mixed
+# `review3.txt`
 
-Key Phrases:
-        Golden Gate bridge
-        The Lombard Hotel
-        The Marina district
-        San Francisco Museum
-        Lombard Street
-        busy road
-        Chestnut Street
-        trendy area
-        interesting houses
-        Fine Arts
-        good view
-        bus route
-        down side
-        Good location
-        helpful staff
-        traffic noise
-        USA
-        We
-        August
-        reviews
-        cosmopolitan
-        plenty
-        restaurants
-        city
-        centre
-        Rooms
+## Good location and helpful staff, but on a busy road.
 
-Entities
-        staff (PersonType)
-        Hotel (Location)
-        San Francisco (Location)
-        USA (Location)
-        8/16/2018 (DateTime)
-        August (DateTime)
-        Chestnut Street (Address)
-        restaurants (Location)
-        Marina district (Location)
-        houses (Location)
-        San Francisco Museum of Fine Arts (Location)
-        Marina (Location)
-        Golden Gate bridge (Location)
-        city (Location)
-        centre (Location)
-        Rooms (Location)
-        staff (PersonType)
-        Lombard Street (Address)
-        room (Location)
+### The Lombard Hotel, San Francisco, USA
 
-Links
-        Lombardy (https://en.wikipedia.org/wiki/Lombardy)
-        Hotel (https://en.wikipedia.org/wiki/Hotel)
-        San Francisco (https://en.wikipedia.org/wiki/San_Francisco)
-        Chestnut Street (Philadelphia) (https://en.wikipedia.org/wiki/Chestnut_Street_(Philadelphia))
-        Marina District, San Francisco (https://en.wikipedia.org/wiki/Marina_District,_San_Francisco)
-        Museum of Fine Arts, Boston (https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Boston)
-        Golden Gate Bridge (https://en.wikipedia.org/wiki/Golden_Gate_Bridge)
-        Room (https://en.wikipedia.org/wiki/Room)
-        Lombard Street (San Francisco) (https://en.wikipedia.org/wiki/Lombard_Street_(San_Francisco))
+#### 8/16/2018
 
--------------
-review4.txt
+We stayed here in August after reading reviews. We were very pleased with location, just behind Chestnut Street, a cosmopolitan and trendy area with plenty of restaurants to choose from. The Marina district was lovely to wander through, very interesting houses. Make sure to walk to the San Francisco Museum of Fine Arts and the Marina to get a good view of Golden Gate bridge and the city. On a bus route and easy to get into centre. Rooms were clean with plenty of room and staff were friendly and helpful. The only down side was the noise from Lombard Street so ask to have a room furthest away from traffic noise.
 
-Very noisy and rooms are tiny
-The Lombard Hotel, San Francisco, USA
-9/5/2018
+**Language**: English  
+**Sentiment**: mixed
+
+### Key Phrases
+
+- Golden Gate bridge
+- The Lombard Hotel
+- The Marina district
+- San Francisco Museum
+- Lombard Street
+- busy road
+- Chestnut Street
+- trendy area
+- interesting houses
+- Fine Arts
+- good view
+- bus route
+- down side
+- Good location
+- helpful staff
+- traffic noise
+- USA
+- We
+- August
+- reviews
+- cosmopolitan
+- plenty
+- restaurants
+- city
+- centre
+- Rooms
+
+### Entities
+
+- staff (PersonType)
+- Hotel (Location)
+- San Francisco (Location)
+- USA (Location)
+- 8/16/2018 (DateTime)
+- August (DateTime)
+- Chestnut Street (Address)
+- restaurants (Location)
+- Marina district (Location)
+- houses (Location)
+- San Francisco Museum of Fine Arts (Location)
+- Marina (Location)
+- Golden Gate bridge (Location)
+- city (Location)
+- centre (Location)
+- Rooms (Location)
+- staff (PersonType)
+- Lombard Street (Address)
+- room (Location)
+
+### Links
+
+- Lombardy (https://en.wikipedia.org/wiki/Lombardy)
+- Hotel (https://en.wikipedia.org/wiki/Hotel)
+- San Francisco (https://en.wikipedia.org/wiki/San_Francisco)
+- Chestnut Street (Philadelphia) (https://en.wikipedia.org/wiki/Chestnut_Street_(Philadelphia))
+- Marina District, San Francisco (https://en.wikipedia.org/wiki/Marina_District,_San_Francisco)
+- Museum of Fine Arts, Boston (https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Boston)
+- Golden Gate Bridge (https://en.wikipedia.org/wiki/Golden_Gate_Bridge)
+- Room (https://en.wikipedia.org/wiki/Room)
+- Lombard Street (San Francisco) (https://en.wikipedia.org/wiki/Lombard_Street_(San_Francisco))
+
+---
+
+# `review4.txt`
+
+## Very noisy and rooms are tiny
+
+### The Lombard Hotel, San Francisco, USA
+
+#### 9/5/2018
+
 Hotel is located on Lombard street which is a very busy SIX lane street directly off the Golden Gate Bridge. Traffic from early morning until late at night especially on weekends. Noise would not be so bad if rooms were better insulated but they are not. Had to put cotton balls in my ears to be able to sleep--was too tired to enjoy the city the next day. Rooms are TINY. I picked the room because it had two queen size beds--but the room barely had space to fit them. With family of four in the room it was tight. With all that said, rooms are clean and they&#x27;ve made an effort to update them. The hotel is in Marina district with lots of good places to eat, within walking distance to Presidio. May be good hotel for young stay-up-late adults on a budget
 
+**Language**: English  
+**Sentiment**: mixed
 
-Language: English
+### Key Phrases
 
-Sentiment: mixed
+- two queen size beds
+- busy SIX lane street
+- Golden Gate Bridge
+- The Lombard Hotel
+- Lombard street
+- San Francisco
+- early morning
+- cotton balls
+- Marina district
+- good places
+- walking distance
+- late adults
+- good hotel
+- rooms
+- USA
+- Traffic
+- night
+- weekends
+- Noise
+- ears
+- city
+- TINY
+- space
+- family
+- effort
+- lots
+- Presidio
+- young
+- budget
 
-Key Phrases:
-        two queen size beds
-        busy SIX lane street
-        Golden Gate Bridge
-        The Lombard Hotel
-        Lombard street
-        San Francisco
-        early morning
-        cotton balls
-        Marina district
-        good places
-        walking distance
-        late adults
-        good hotel
-        rooms
-        USA
-        Traffic
-        night
-        weekends
-        Noise
-        ears
-        city
-        TINY
-        space
-        family
-        effort
-        lots
-        Presidio
-        young
-        budget
+### Entities
 
-Entities
-        rooms (Location)
-        Hotel (Location)
-        San Francisco (Location)
-        USA (Location)
-        9/5/2018 (DateTime)
-        Hotel (Location)
-        Lombard street (Address)
-        SIX (Quantity)
-        Golden Gate Bridge (Location)
-        early morning until late at night (DateTime)
-        weekends (DateTime)
-        rooms (Location)
-        cotton balls (Product)
-        city (Location)
-        the next day (DateTime)
-        Rooms (Location)
-        room (Location)
-        two (Quantity)
-        beds (Product)
-        room (Location)
-        four (Quantity)
-        room (Location)
-        rooms (Location)
-        hotel (Location)
-        Marina district (Location)
-        Presidio (Location)
-        hotel (Location)
-        young (PersonType)
-        adults (PersonType)
+- rooms (Location)
+- Hotel (Location)
+- San Francisco (Location)
+- USA (Location)
+- 9/5/2018 (DateTime)
+- Hotel (Location)
+- Lombard street (Address)
+- SIX (Quantity)
+- Golden Gate Bridge (Location)
+- early morning until late at night (DateTime)
+- weekends (DateTime)
+- rooms (Location)
+- cotton balls (Product)
+- city (Location)
+- the next day (DateTime)
+- Rooms (Location)
+- room (Location)
+- two (Quantity)
+- beds (Product)
+- room (Location)
+- four (Quantity)
+- room (Location)
+- rooms (Location)
+- hotel (Location)
+- Marina district (Location)
+- Presidio (Location)
+- hotel (Location)
+- young (PersonType)
+- adults (PersonType)
 
-Links
-        Lombard, Illinois (https://en.wikipedia.org/wiki/Lombard,_Illinois)
-        Hotel (https://en.wikipedia.org/wiki/Hotel)
-        San Francisco (https://en.wikipedia.org/wiki/San_Francisco)
-        Lombard Street (San Francisco) (https://en.wikipedia.org/wiki/Lombard_Street_(San_Francisco))
-        Golden Gate Bridge (https://en.wikipedia.org/wiki/Golden_Gate_Bridge)
-        Traffic (https://en.wikipedia.org/wiki/Traffic)
-        Noise rock (https://en.wikipedia.org/wiki/Noise_rock)
-        Room (https://en.wikipedia.org/wiki/Room)
-        Marina District, San Francisco (https://en.wikipedia.org/wiki/Marina_District,_San_Francisco)
-        Presidio of San Francisco (https://en.wikipedia.org/wiki/Presidio_of_San_Francisco)
-        May (https://en.wikipedia.org/wiki/May)
+### Links
 
--------------
-review5.txt
+- Lombard, Illinois (https://en.wikipedia.org/wiki/Lombard,_Illinois)
+- Hotel (https://en.wikipedia.org/wiki/Hotel)
+- San Francisco (https://en.wikipedia.org/wiki/San_Francisco)
+- Lombard Street (San Francisco) (https://en.wikipedia.org/wiki/Lombard_Street_(San_Francisco))
+- Golden Gate Bridge (https://en.wikipedia.org/wiki/Golden_Gate_Bridge)
+- Traffic (https://en.wikipedia.org/wiki/Traffic)
+- Noise rock (https://en.wikipedia.org/wiki/Noise_rock)
+- Room (https://en.wikipedia.org/wiki/Room)
+- Marina District, San Francisco (https://en.wikipedia.org/wiki/Marina_District,_San_Francisco)
+- Presidio of San Francisco (https://en.wikipedia.org/wiki/Presidio_of_San_Francisco)
+- May (https://en.wikipedia.org/wiki/May)
 
-Un hôtel agréable
-L&#x27;Hotel Buckingham, Londres, UK
+---
+
+# `review5.txt`
+
+## Un hôtel agréable
+
+### L&#x27;Hotel Buckingham, Londres, UK
+
 J’adore cet hôtel. Le personnel est très amical et les chambres sont confortables.
 
-Language: French
+**Language**: French  
+**Sentiment**: positive
 
-Sentiment: positive
+### Key Phrases
 
-Key Phrases:
-        hôtel agréable
-        L&#x27;Hotel Buckingham
-        Londres
-        UK
-        personnel
-        chambres
+- hôtel agréable
+- L&#x27;Hotel Buckingham
+- Londres
+- UK
+- personnel
+- chambres
 
-Entities
-        hôtel (Location)
-        Buckingham (Organization)
-        Londres (Location)
-        UK (Location)
-        hôtel (Location)
-        personnel (PersonType)
-        chambres (Location)
+### Entities
 
-Links
-        United Nations (https://en.wikipedia.org/wiki/United_Nations)
-        L&#x27;Hôtel (https://en.wikipedia.org/wiki/L&#x27;Hôtel)
-        Buckingham (https://en.wikipedia.org/wiki/Buckingham)
-        London (https://en.wikipedia.org/wiki/London)
-        United Kingdom (https://en.wikipedia.org/wiki/United_Kingdom)
-```
+- hôtel (Location)
+- Buckingham (Organization)
+- Londres (Location)
+- UK (Location)
+- hôtel (Location)
+- personnel (PersonType)
+- chambres (Location)
+
+### Links
+
+- United Nations (https://en.wikipedia.org/wiki/United_Nations)
+- L&#x27;Hôtel (https://en.wikipedia.org/wiki/L&#x27;Hôtel)
+- Buckingham (https://en.wikipedia.org/wiki/Buckingham)
+- London (https://en.wikipedia.org/wiki/London)
+- United Kingdom (https://en.wikipedia.org/wiki/United_Kingdom)
+
+
 
 # 使用 Azure AI 语言创建问题解答解决方案
 
-https://learn.microsoft.com/zh-cn/training/modules/create-question-answer-solution-ai-language/
+`https://learn.microsoft.com/zh-cn/training/modules/create-question-answer-solution-ai-language/`
 
 ### 什么是 Azure AI 语言中的问答功能？
 
@@ -617,7 +653,7 @@ Azure AI 语言中的问答功能允许用户创建和管理“知识库”，�
 
 ### 如何使用已发布的知识库？
 
-一旦知识库发布，客户端应用程序可以通过 REST 接口使用它。一个最小的请求正文包含一个问题，并可以指定其他参数，如返回的最大答案数 （top）、答案的置信度分数阈值 （scoreThreshold），以及用于限制答案的严格过滤器 （strictFilters）。响应会包括知识库中找到的最接近的问题匹配、相关的答案、置信度分数以及其他元数据。
+一旦知识库发布，客户端应用程序可以通过 REST 接口使用它。一个最小的请求正文包含一个问题，并可以指定其他参数，如返回的最大答案数（`top`）、答案的置信度分数阈值（`scoreThreshold`），以及用于限制答案的严格过滤器（`strictFilters`）。响应会包括知识库中找到的最接近的问题匹配、相关的答案、置信度分数以及其他元数据。
 
 ### 什么是多轮对话，如何实现？
 
@@ -647,11 +683,11 @@ Azure AI 语言中的问答功能允许用户创建和管理“知识库”，�
 
 ### 实验：Create a Question Answering Solution
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/02-qna.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/02-qna.md`
 
 # 生成对话语言理解模型
 
-https://learn.microsoft.com/zh-cn/training/modules/build-language-understanding-model/
+`https://learn.microsoft.com/zh-cn/training/modules/build-language-understanding-model/`
 
 ### 什么是 Azure AI 语言服务？
 
@@ -715,13 +751,13 @@ Azure AI 语言服务提供了多种无需训练模型即可使用的预配置�
 
 +   言语（Utterances）：用户在与使用语言模型的应用程序交互时可能输入的短语。
 
-+   意图（Intents）：表示用户希望执行的任务或操作，或者更简单地表示言语的含义。模型通过定义意图并将其与一个或多个言语关联来创建。例如，“打开灯”和“打开风扇”都可能属于“TurnOnDevice”意图。
++   意图（Intents）：表示用户希望执行的任务或操作，或者更简单地表示言语的含义。模型通过定义意图并将其与一个或多个言语关联来创建。例如，“打开灯”和“打开风扇”都可能属于`TurnOnDevice`意图。
 
 +   实体（Entities）：用于为意图添加特定的上下文信息。例如，在“打开 灯”中，“灯”就是一个实体（设备）。
 
 ### 如何通过模式识别来优化模型的理解，并使用预构建实体？
 
-+   模式识别：当多个意图的言语语法相似时，可以使用言语模式来消除歧义，同时最大限度地减少示例言语的数量。例如，“打开厨房灯”、“厨房开着灯吗？”和“关闭厨房灯”虽然语法相似，但代表不同的意图（TurnOnDevice， GetDeviceStatus， TurnOffDevice），通过定义模式，模型可以根据格式和标点正确分类意图。
++   模式识别：当多个意图的言语语法相似时，可以使用言语模式来消除歧义，同时最大限度地减少示例言语的数量。例如，“打开厨房灯”、“厨房开着灯吗？”和“关闭厨房灯”虽然语法相似，但代表不同的意图（`TurnOnDevice`、`GetDeviceStatus`、`TurnOffDevice`），通过定义模式，模型可以根据格式和标点正确分类意图。
 
 +   预构建实体组件：Azure AI 语言服务提供了预构建的实体组件，可以自动检测常见的实体类型，例如数字、电子邮件、URL 或特定选项。使用这些组件可以显著缩短开发时间，因为它们无需用户提供示例来训练模型。一个实体最多可以包含 5 个预构建组件。
 
@@ -731,17 +767,17 @@ Azure AI 语言服务提供了多种无需训练模型即可使用的预配置�
 
 +   使用 SDK：可以通过 C# 或 Python 中的 SDK 创建客户端，然后使用它来调用相应的终结点。不同的语言功能可能需要不同的请求构建和发送方式。
 
-+   使用 REST API：向指定的 URL 发送带有相应正文的 POST 请求。对于内置功能（如语言检测或情感分析），需要查询 analyze-text 终结点，并在请求正文中指定 kind 参数。对于自定义的对话语言理解模型，请求将发送到 analyze-conversations 终结点。
++   使用 REST API：向指定的 URL 发送带有相应正文的 POST 请求。对于内置功能（如语言检测或情感分析），需要查询`analyze-text`终结点，并在请求正文中指定`kind`参数。对于自定义的对话语言理解模型，请求将发送到`analyze-conversations`终结点。
 
-无论哪种方法，所有请求都需要在请求头中包含 Ocp-Apim-Subscription-Key 作为身份验证凭据。查询响应通常以 JSON 格式返回，包含模型预测的结果。
+无论哪种方法，所有请求都需要在请求头中包含`Ocp-Apim-Subscription-Key`作为身份验证凭据。查询响应通常以 JSON 格式返回，包含模型预测的结果。
 
 ### 实验：Create a language understanding model with the Language service
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/03-language-understanding.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/03-language-understanding.md`
 
 # 创建自定义文本分类解决方案
 
-https://learn.microsoft.com/zh-cn/training/modules/custom-text-classification/
+`https://learn.microsoft.com/zh-cn/training/modules/custom-text-classification/`
 
 ### 什么是自定义文本分类？
 
@@ -817,7 +853,7 @@ Azure AI 语言服务提供了 REST API，允许通过编程方式（例如命�
 
 1.  提交初始请求：发送 POST 请求到相应的终结点（例如训练模型或提交分类文本），并包含所需的 JSON 正文和认证密钥。
 
-1.  获取状态/结果：从初始请求的响应头中获取操作位置 URL，然后定期发送 GET 请求到该 URL，直到操作状态显示为“succeeded”以获取最终结果。
+1.  获取状态/结果：从初始请求的响应头中获取操作位置 URL，然后定期发送 GET 请求到该 URL，直到操作状态显示为`"succeeded"`以获取最终结果。
 
 这种异步模式允许在后台处理长时间运行的任务，而客户端可以轮询状态。
 
@@ -835,15 +871,15 @@ Azure AI 语言允许每个项目同时创建多个模型和多个部署，每�
 
 ### 实验：Custom text classification
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/04-text-classification.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/04-text-classification.md`
 
 # 自定义命名实体识别
 
-https://learn.microsoft.com/zh-cn/training/modules/custom-name-entity-recognition/
+`https://learn.microsoft.com/zh-cn/training/modules/custom-name-entity-recognition/`
 
 ### 什么是自定义命名实体识别 （NER）？
 
-自定义命名实体识别 （NER） 是一种 Azure AI 服务，能够查看文档并识别、提取用户定义的特定实体。与内置 NER 服务识别预定义实体（如人物、地点、组织等）不同，自定义 NER 允许用户根据特定需求定义和提取独特的实体，例如银行对账单中的特定条款或审计政策中的文本。它属于 Azure AI 服务中的 Azure AI 语言的一部分。
+自定义命名实体识别 （NER） 是一种 Azure AI 服务，能够查看文档并识别、提取用户定义的特定实体。与内置 NER 服务识别预定义实体（如人物、地点、组织等）不同，自定义 NER 允许用户根据特定需求定义和提取独特的实体，例如银行对账单中的特定条款或审计策略中的文本。它属于 Azure AI 服务中的 Azure AI 语言的一部分。
 
 ### 自定义 NER 与内置 NER 有何不同？
 
@@ -887,9 +923,13 @@ Azure AI 语言提供了两种 NER 功能：内置 NER 和自定义 NER。内置
 
 ### 如何在自定义 NER 中提交实体提取任务？
 
-要提交实体提取任务，需要向 API 发送一个 JSON 请求体。对于自定义 NER，JSON 有效负载中的任务类型为 CustomEntityRecognition。请求中需要指定 projectName（项目名称）和 deploymentName（部署名称）。API 将根据这些参数和提供的文档内容执行实体提取操作。
 
-### 如何评估自定义 NER 模型的性能？
+
+# 自定义命名实体识别（Custom NER）
+
+要提交实体提取任务，需要向 API 发送一个 JSON 请求体。对于自定义 NER，JSON 有效负载中的任务类型为 CustomEntityRecognition。请求中需要指定 `projectName`（项目名称）和 `deploymentName`（部署名称）。API 将根据这些参数和提供的文档内容执行实体提取操作。
+
+## 如何评估自定义 NER 模型的性能？
 
 模型训练后，可以通过“视图模型详细信息”页面评估其性能。评估主要基于三个指标：
 
@@ -901,7 +941,7 @@ Azure AI 语言提供了两种 NER 功能：内置 NER 和自定义 NER。内置
 
 这些分数可以针对每个实体以及整个模型进行查看。此外，“混淆矩阵”视图提供了一个可视化表格，显示所有实体的性能，帮助识别需要改进的地方。
 
-### 如果模型的精准率高但召回率低，或者精准率低但召回率高，这意味着什么？
+## 如果模型的精准率高但召回率低，或者精准率低但召回率高，这意味着什么？
 
 +   精准率高但召回率低：这表示模型并不总是能识别出文档中所有的实体（低召回率），但一旦它识别并提取了实体，所分配的标签通常是正确的（高精准率）。这种情况下，需要改进的是模型识别实体的能力，确保它能捕获更多的目标实体。
 
@@ -909,7 +949,7 @@ Azure AI 语言提供了两种 NER 功能：内置 NER 和自定义 NER。内置
 
 理想情况下，我们希望模型在精准率和召回率方面都表现良好。
 
-### 自定义 NER 项目有哪些主要限制？
+## 自定义 NER 项目有哪些主要限制？
 
 Azure AI 语言服务对自定义 NER 项目施加了以下限制：
 
@@ -927,65 +967,65 @@ Azure AI 语言服务对自定义 NER 项目施加了以下限制：
 
 这些限制有助于管理资源和确保服务稳定性。
 
-### 实验：Extract custom entities
+## 实验：Extract custom entities
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/05-extract-custom-entities.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/05-extract-custom-entities.md`
 
 # 使用 Azure AI 翻译服务来翻译文本
 
-https://learn.microsoft.com/zh-cn/training/modules/translate-text-with-translator-service/
+`https://learn.microsoft.com/zh-cn/training/modules/translate-text-with-translator-service/`
 
-### 什么是 Azure AI Translator，它提供哪些核心功能？
+## 什么是 Azure AI Translator，它提供哪些核心功能？
 
 Azure AI Translator 是一种多语言文本翻译 API，它提供语言检测、一对多翻译和脚本音译（将文本从其原生脚本转换为替代脚本）等功能。
 
-### 如何使用 Azure AI Translator 进行语言检测？
+## 如何使用 Azure AI Translator 进行语言检测？
 
-要检测文本所用的语言，可以使用 REST API 的 Detect 函数。您需要向 https://api.cognitive.microsofttranslator.com/detect?api-version=3.0 终结点提交包含待检测文本的 JSON 对象。响应将指示文本的语言及其置信度分数。
+要检测文本所用的语言，可以使用 REST API 的 `Detect` 函数。您需要向 `https://api.cognitive.microsofttranslator.com/detect?api-version=3.0` 终结点提交包含待检测文本的 JSON 对象。响应将指示文本的语言及其置信度分数。
 
-### 如何使用 Azure AI Translator 进行文本翻译？
+## 如何使用 Azure AI Translator 进行文本翻译？
 
-要将文本从一种语言翻译到另一种语言，请使用 Translate 函数。在您的请求中，您需要指定源语言（通过 from 参数）和一个或多个目标语言（通过 to 参数）。例如，您可以将日语文本翻译成英语和法语。
+要将文本从一种语言翻译到另一种语言，请使用 `Translate` 函数。在您的请求中，您需要指定源语言（通过 `from` 参数）和一个或多个目标语言（通过 `to` 参数）。例如，您可以将日语文本翻译成英语和法语。
 
-### 音译与翻译有何不同，Azure AI Translator 如何处理音译？
+## 音译与翻译有何不同，Azure AI Translator 如何处理音译？
 
-翻译是将文本从一种语言转换为另一种语言，而音译是将文本从其原生脚本转换为不同的脚本，但保留其原始语言。例如，您可以将日文（使用平假名脚本）音译为拉丁脚本，使其以类似于英文文本的方式呈现。这通过 Transliterate 函数实现，需要指定 fromScript 和 toScript 参数。
+翻译是将文本从一种语言转换为另一种语言，而音译是将文本从其原生脚本转换为不同的脚本，但保留其原始语言。例如，您可以将日文（使用平假名脚本）音译为拉丁脚本，使其以类似于英文文本的方式呈现。这通过 `Transliterate` 函数实现，需要指定 `fromScript` 和 `toScript` 参数。
 
-### 如何创建和使用自定义翻译模型？
+## 如何创建和使用自定义翻译模型？
 
-如果 Azure AI Translator 的默认翻译模型无法满足特定行业或企业的术语需求，您可以创建自定义模型。这涉及在自定义翻译门户中创建一个工作区、项目，上传训练数据并训练模型，然后进行测试和发布。创建自定义模型后，会分配一个唯一的“类别 ID”，您可以在调用 Azure AI Translator API 时使用 category 参数来指定它，从而使其使用您的自定义模型进行翻译。
+如果 Azure AI Translator 的默认翻译模型无法满足特定行业或企业的术语需求，您可以创建自定义模型。这涉及在自定义翻译门户中创建一个工作区、项目，上传训练数据并训练模型，然后进行测试和发布。创建自定义模型后，会分配一个唯一的“类别 ID”，您可以在调用 Azure AI Translator API 时使用 `category` 参数来指定它，从而使其使用您的自定义模型进行翻译。
 
-### Azure AI Translator 的 Translate 函数提供了哪些额外的翻译选项？
+## Azure AI Translator 的 Translate 函数提供了哪些额外的翻译选项？
 
-Translate 函数支持多种参数来影响输出：
+`Translate` 函数支持多种参数来影响输出：
 
-+   文本对齐方式 （includeAlignment=true）：此选项在源文本和翻译文本之间提供字符对齐信息，有助于理解字符映射关系。
++   文本对齐方式 （`includeAlignment=true`）：此选项在源文本和翻译文本之间提供字符对齐信息，有助于理解字符映射关系。
 
-+   句子长度 （includeSentenceLength=true）：提供源句子和翻译句子的长度信息，有助于在用户界面中更好地展示翻译结果。
++   句子长度 （`includeSentenceLength=true`）：提供源句子和翻译句子的长度信息，有助于在用户界面中更好地展示翻译结果。
 
-+   不雅内容筛选 （profanityAction）：允许您控制如何处理不雅内容，选项包括：NoAction（不雅内容照常翻译）、Deleted（翻译中省略不雅内容）和 Marked（使用星号或 XML 标签标记不雅内容）。
++   不雅内容筛选 （`profanityAction`）：允许您控制如何处理不雅内容，选项包括：`NoAction`（不雅内容照常翻译）、`Deleted`（翻译中省略不雅内容）和 `Marked`（使用星号或 XML 标签标记不雅内容）。
 
-### 在使用 Azure AI Translator 服务之前需要进行哪些准备？
+## 在使用 Azure AI Translator 服务之前需要进行哪些准备？
 
 在使用 Azure AI Translator 服务之前，您必须在 Azure 订阅中为其预配资源。这可以是单服务 Azure AI Translator 资源，也可以是多服务 Azure AI 服务资源中的文本翻译 API。预配资源后，您可以使用部署资源的“位置”和“订阅密钥”从代码中调用 API。
 
-### 如何向 Azure AI Translator API 发送请求？
+## 如何向 Azure AI Translator API 发送请求？
 
-您可以通过将 JSON 格式的请求提交到 REST 接口或使用任何可用的特定于编程语言的 SDK 来调用 Azure AI Translator API。请求通常是 POST 请求，包含 api-version、to（目标语言）和可选的 category（用于自定义模型）等参数，以及 Ocp-Apim-Subscription-Key 和 Content-Type 等必需的请求头。请求正文是一个 JSON 对象数组，其中包含要翻译的文本。
+您可以通过将 JSON 格式的请求提交到 REST 接口或使用任何可用的特定于编程语言的 SDK 来调用 Azure AI Translator API。请求通常是 POST 请求，包含 `api-version`、`to`（目标语言）和可选的 `category`（用于自定义模型）等参数，以及 `Ocp-Apim-Subscription-Key` 和 `Content-Type` 等必需的请求头。请求正文是一个 JSON 对象数组，其中包含要翻译的文本。
 
-### 实验：Translate Text
+## 实验：Translate Text
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/06-translate-text.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/06-translate-text.md`
 
 # 使用 Azure AI 服务创建启用语音的应用
 
-https://learn.microsoft.com/zh-cn/training/modules/create-speech-enabled-apps/
+`https://learn.microsoft.com/zh-cn/training/modules/create-speech-enabled-apps/`
 
-### 使用 Azure AI 语音服务需要预置哪些资源？
+## 使用 Azure AI 语音服务需要预置哪些资源？
 
-在使用 Azure AI 语音服务之前，您需要在 Azure 订阅中创建 Azure AI 语音资源。这可以是专用的 Azure AI 语音资源，也可以是多服务 Azure AI 服务资源。创建资源后，您需要资源的部署位置（例如 eastus）和分配给资源的密钥之一。这些信息可以在 Azure 门户中资源的“密钥和终结点”页面上找到。
+在使用 Azure AI 语音服务之前，您需要在 Azure 订阅中创建 Azure AI 语音资源。这可以是专用的 Azure AI 语音资源，也可以是多服务 Azure AI 服务资源。创建资源后，您需要资源的部署位置（例如 `eastus`）和分配给资源的密钥之一。这些信息可以在 Azure 门户中资源的“密钥和终结点”页面上找到。
 
-### Azure AI 语音服务在语音识别方面提供哪些核心功能？
+## Azure AI 语音服务在语音识别方面提供哪些核心功能？
 
 Azure AI 语音服务通过以下功能支持语音识别：
 
@@ -997,21 +1037,21 @@ Azure AI 语音服务通过以下功能支持语音识别：
 
 +   自定义语音：针对特定领域和条件的具有增强准确性的模型。
 
-### 如何使用 Azure AI 语音 SDK 执行语音转文本操作？
+## 如何使用 Azure AI 语音 SDK 执行语音转文本操作？
 
 使用 Azure AI 语音 SDK 执行语音转文本操作通常遵循以下模式：
 
-1.  使用 SpeechConfig 对象封装连接到 Azure AI 语音资源所需的信息，特别是资源的位置和密钥。
+1.  使用 `SpeechConfig` 对象封装连接到 Azure AI 语音资源所需的信息，特别是资源的位置和密钥。
 
-1.  （可选）使用 AudioConfig 定义要转录的音频输入源。默认情况下是系统麦克风，但也可以指定音频文件。
+1.  （可选）使用 `AudioConfig` 定义要转录的音频输入源。默认情况下是系统麦克风，但也可以指定音频文件。
 
-1.  使用 SpeechConfig 和 AudioConfig 创建 SpeechRecognizer 对象，作为语音转文本 API 的代理客户端。
+1.  使用 `SpeechConfig` 和 `AudioConfig` 创建 `SpeechRecognizer` 对象，作为语音转文本 API 的代理客户端。
 
-1.  使用 SpeechRecognizer 对象的方法调用基础 API 函数，例如 RecognizeOnceAsync（） 方法用于异步转录单个口述话语。
+1.  使用 `SpeechRecognizer` 对象的方法调用基础 API 函数，例如 `RecognizeOnceAsync()` 方法用于异步转录单个口述话语。
 
-1.  处理来自 Azure AI 语音服务的响应。成功时，SpeechRecognitionResult 对象的 Reason 属性为 RecognizedSpeech，Text 属性包含转录结果。
+1.  处理来自 Azure AI 语音服务的响应。成功时，`SpeechRecognitionResult` 对象的 `Reason` 属性为 `RecognizedSpeech`，`Text` 属性包含转录结果。
 
-### 除了语音转文本，Azure AI 语音服务还支持哪些语音合成相关的 API？
+## 除了语音转文本，Azure AI 语音服务还支持哪些语音合成相关的 API？
 
 与语音转文本 API 类似，Azure AI 语音服务提供用于语音合成的其他 REST API：
 
@@ -1021,21 +1061,21 @@ Azure AI 语音服务通过以下功能支持语音识别：
 
 实际上，大多数支持语音的交互式应用程序都是通过特定于语言的 SDK 使用 Azure AI 语音服务来实现的。
 
-### 使用 Azure AI 语音 SDK 执行文本转语音操作的流程是怎样的？
+## 使用 Azure AI 语音 SDK 执行文本转语音操作的流程是怎样的？
 
 使用 Azure AI 语音 SDK 实现语音合成的模式类似于语音识别：
 
-1.  使用 SpeechConfig 对象封装连接到 Azure AI 语音资源所需的信息，特别是资源的位置和密钥。
+1.  使用 `SpeechConfig` 对象封装连接到 Azure AI 语音资源所需的信息，特别是资源的位置和密钥。
 
-1.  （可选）使用 AudioConfig 定义要合成语音的输出设备。默认情况下是系统扬声器，但也可以指定音频文件，或者通过将此值显式设置为 null 值直接处理返回的音频流对象。
+1.  （可选）使用 `AudioConfig` 定义要合成语音的输出设备。默认情况下是系统扬声器，但也可以指定音频文件，或者通过将此值显式设置为 `null` 值直接处理返回的音频流对象。
 
-1.  使用 SpeechConfig 和 AudioConfig 创建 SpeechSynthesizer 对象，作为文本转语音 API 的代理客户端。
+1.  使用 `SpeechConfig` 和 `AudioConfig` 创建 `SpeechSynthesizer` 对象，作为文本转语音 API 的代理客户端。
 
-1.  使用 SpeechSynthesizer 对象的方法调用基础 API 函数，例如 SpeakTextAsync（） 方法用于将文本转换为语音音频。
+1.  使用 `SpeechSynthesizer` 对象的方法调用基础 API 函数，例如 `SpeakTextAsync()` 方法用于将文本转换为语音音频。
 
-1.  处理来自 Azure AI 语音服务的响应。成功合成语音后，SpeechSynthesisResult 对象的 Reason 属性设置为 SynthesizingAudioCompleted，AudioData 属性包含音频流。
+1.  处理来自 Azure AI 语音服务的响应。成功合成语音后，`SpeechSynthesisResult` 对象的 `Reason` 属性设置为 `SynthesizingAudioCompleted`，`AudioData` 属性包含音频流。
 
-### 什么是语音合成标记语言（SSML），它提供了哪些优势？
+## 什么是语音合成标记语言（SSML），它提供了哪些优势？
 
 语音合成标记语言（SSML）是一种基于 XML 的语法，用于描述要生成的语音的特征。虽然 Azure AI 语音 SDK 允许提交纯文本以合成语音，但 SSML 提供了对语音输出声音方式的更好控制，使您能够：
 
@@ -1051,13 +1091,13 @@ Azure AI 语音服务通过以下功能支持语音识别：
 
 +   插入录制的语音或音频，例如包括标准录制的消息或模拟背景噪音。
 
-要将 SSML 描述提交到语音服务，可以使用 speechSynthesizer.SpeakSsmlAsync（ssml_string） 方法。
+要将 SSML 描述提交到语音服务，可以使用 `speechSynthesizer.SpeakSsmlAsync(ssml_string)` 方法。
 
-### 如何配置合成语音的音频格式？
+## 如何配置合成语音的音频格式？
 
-在合成语音时，您可以使用 SpeechConfig 对象自定义 Azure AI 语音服务返回的音频流的输出格式。Azure AI 语音服务支持多种输出格式，您可以根据音频文件类型、采样率和位深度等需求进行选择。通过使用 SpeechSynthesisOutputFormat 枚举（例如 SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm）并在 SpeechConfig 对象上使用 SetSpeechSynthesisOutputFormat 方法来指定所需的输出格式。
+在合成语音时，您可以使用 `SpeechConfig` 对象自定义 Azure AI 语音服务返回的音频流的输出格式。Azure AI 语音服务支持多种输出格式，您可以根据音频文件类型、采样率和位深度等需求进行选择。通过使用 `SpeechSynthesisOutputFormat` 枚举（例如 `SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm`）并在 `SpeechConfig` 对象上使用 `SetSpeechSynthesisOutputFormat` 方法来指定所需的输出格式。
 
-### Azure AI 语音服务提供哪些类型的语音，以及如何指定它们？
+## Azure AI 语音服务提供哪些类型的语音，以及如何指定它们？
 
 Azure AI 语音服务提供两种类型的语音，可用于个性化您的语音应用程序：
 
@@ -1065,18 +1105,20 @@ Azure AI 语音服务提供两种类型的语音，可用于个性化您的语�
 
 +   神经语音：使用深度神经网络创建的更自然的声音。
 
-语音通过表示区域设置和人员姓名的名称进行标识，例如 en-GB-George。要在 SpeechConfig 中指定语音合成的语音，您只需将其 SpeechSynthesisVoiceName 属性设置为您要使用的语音，例如 speechConfig.SpeechSynthesisVoiceName = "en-GB-George"；.
+语音通过表示区域设置和人员姓名的名称进行标识，例如 `en-GB-George`。要在 `SpeechConfig` 中指定语音合成的语音，您只需将其 `SpeechSynthesisVoiceName` 属性设置为您要使用的语音，例如 `speechConfig.SpeechSynthesisVoiceName = "en-GB-George"`。
 
-### 实验：Recognize and synthesize speech
+## 实验：Recognize and synthesize speech
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/07-speech.md
-
-```
- pip install azure-cognitiveservices-speech==1.30.0
-  pip install playsound==1.2.2
-```
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/07-speech.md`
 
 ```
+pip install azure-cognitiveservices-speech==1.30.0
+pip install playsound==1.2.2
+```
+
+
+
+```python
 from dotenv import load_dotenv
 from datetime import datetime
 import os
@@ -1092,16 +1134,16 @@ def main():
 
         # Get Configuration Settings
         load_dotenv()
-        ai_key = os.getenv(&#x27;AI_SERVICE_KEY&#x27;)
-        ai_region = os.getenv(&#x27;SPEECH_REGION&#x27;)
+        ai_key = os.getenv('AI_SERVICE_KEY')
+        ai_region = os.getenv('SPEECH_REGION')
 
         # Configure speech service
         speech_config = speech_sdk.SpeechConfig(ai_key, ai_region)
-        print(&#x27;Ready to use speech service in:&#x27;, speech_config.region)
+        print('Ready to use speech service in:', speech_config.region)
 
         # Get spoken input
         command = TranscribeCommand()
-        if command.lower() == &#x27;what time is it?&#x27;:
+        if command.lower() == 'what time is it?':
             TellTime()
 
     except Exception as ex:
@@ -1109,11 +1151,11 @@ def main():
 
 
 def TranscribeCommand():
-    command = &#x27;&#x27;
+    command = ''
 
     # Configure speech recognition
     current_dir = os.getcwd()
-    audioFile = current_dir + &#x27;\\time.wav&#x27;
+    audioFile = current_dir + '\\time.wav'
     playsound(audioFile)
     audio_config = speech_sdk.AudioConfig(filename=audioFile)
     speech_recognizer = speech_sdk.SpeechRecognizer(speech_config, audio_config)
@@ -1136,10 +1178,10 @@ def TranscribeCommand():
 
 def TellTime():
     now = datetime.now()
-    response_text = &#x27;The time is {}:{:02d}&#x27;.format(now.hour, now.minute)
+    response_text = 'The time is {}:{:02d}'.format(now.hour, now.minute)
 
     # Configure speech synthesis
-    speech_config.speech_synthesis_voice_name = &quot;en-GB-RyanNeural&quot;
+    speech_config.speech_synthesis_voice_name = "en-GB-RyanNeural"
     speech_synthesizer = speech_sdk.SpeechSynthesizer(speech_config)
 
     # Synthesize spoken output
@@ -1151,89 +1193,76 @@ def TellTime():
     print(response_text)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
-> **代码功能总览**
+### 代码功能总览
 
-> 这段代码实现了一个简单的语音助手程序。它的核心功能是：
+这段代码实现了一个简单的语音助手程序。它的核心功能是：
 
-1.  **识别一个音频文件中的语音**：程序会读取一个名为 time.wav 的音频文件，并将其中的英文语音转换成文字。
+1.  **识别一个音频文件中的语音**：程序会读取一个名为 `time.wav` 的音频文件，并将其中的英文语音转换成文字。
+2.  **理解命令**：程序会检查转换后的文字是不是 `what time is it?`。
+3.  **语音回答**：如果命令正确，程序会获取当前系统时间，并用语音合成技术将当前时间（例如 `The time is 14:30`）播报出来。
 
-1.  **理解命令**：程序会检查转换后的文字是不是“what time is it？”.
-
-1.  **语音回答**：如果命令正确，程序会获取当前系统时间，并用语音合成技术将当前时间（例如 "The time is 14:30"）播报出来。
-
-> 简单来说，这是一个“语音提问、语音回答”的演示程序，但它的“提问”部分是来自一个固定的音频文件，而不是实时麦克风。
+简单来说，这是一个“语音提问、语音回答”的演示程序，但它的“提问”部分是来自一个固定的音频文件，而不是实时麦克风。
 
 ---
 
-> **1. ****main()**** 函数 （主流程控制）**
+### 1. `main()` 函数（主流程控制）
 
-> 这是程序的入口和总指挥。
+这是程序的入口和总指挥。
 
-+   **加载配置**：
+- **加载配置**：
+  - `load_dotenv()`：从项目根目录下的 `.env` 文件中加载环境变量。
+  - `os.getenv(...)`：读取 Azure AI 服务的密钥（`AI_SERVICE_KEY`）和区域（`SPEECH_REGION`）。这样做是为了不把敏感信息直接写在代码里。
 
-+   load_dotenv()： 从项目根目录下的 .env 文件中加载环境变量。
+- **配置语音服务**：
+  - `speech_sdk.SpeechConfig(...)`：使用获取到的密钥和区域信息，初始化 Azure 语音服务的配置。这是后续所有语音功能的“通行证”。
 
-+   os.getenv(...)： 读取 Azure AI 服务的密钥 （AI_SERVICE_KEY） 和区域 （SPEECH_REGION）。这样做是为了不把敏感信息直接写在代码里。
+- **执行命令**：
+  - `TranscribeCommand()`：调用这个函数来识别音频文件中的命令。
+  - `if command.lower() == 'what time is it?'`：判断识别出的命令（转换成小写后）是否是 `what time is it?`。
+  - `TellTime()`：如果命令匹配，就调用这个函数来播报时间。
 
-+   **配置语音服务**：
+### 2. `TranscribeCommand()` 函数（语音转文本）
 
-+   speech_sdk.SpeechConfig(...)： 使用获取到的密钥和区域信息，初始化 Azure 语音服务的配置。这是后续所有语音功能的“通行证”。
+这个函数扮演了程序的“耳朵”角色。
 
-+   **执行命令**：
+- **播放音频**：
+  - `playsound(audioFile)`：首先，它会播放 `time.wav` 这个文件。这样做的目的是让你能听到程序正在“处理”的语音是什么。
 
-+   TranscribeCommand()： 调用这个函数来识别音频文件中的命令。
+- **配置音频源**：
+  - `audio_config = speech_sdk.AudioConfig(filename=audioFile)`：告诉 Azure SDK，语音的来源不是麦克风，而是 `time.wav` 这个文件。
 
-+   if command.lower() == 'what time is it?'： 判断识别出的命令（转换成小写后）是否是“what time is it？”.
+- **识别语音**：
+  - `speech_recognizer = speech_sdk.SpeechRecognizer(...)`：创建一个语音识别器。
+  - `speech_recognizer.recognize_once_async().get()`：启动一次性的语音识别。程序会把音频文件发送到 Azure 云端进行处理，然后等待返回结果。
 
-+   TellTime()： 如果命令匹配，就调用这个函数来播报时间。
+- **处理结果**：
+  - `if speech.reason == speech_sdk.ResultReason.RecognizedSpeech`：如果成功识别出语音，就将识别到的文本（`speech.text`）打印出来并返回。
+  - `else`：如果失败（比如音频质量差、网络问题等），则打印出失败的原因。
+  - `if speech.reason == speech_sdk.ResultReason.Canceled`：
+    - `cancellation = speech.cancellation_details`
+    - `cancellation.reason`
+    - `cancellation.error_details`
 
-> **2. ****TranscribeC**ommand() 函数 （语音转文本）
+### 3. `TellTime()` 函数（文本转语音）
 
-> 这个函数扮演了程序的“耳朵”角色。
+这个函数扮演了程序的“嘴巴”角色。
 
-+   **播放音频**：
+- **获取当前时间**：
+  - `now = datetime.now()`：使用 `datetime` 库获取当前的日期和时间。
+  - `response_text = 'The time is {}:{:02d}'.format(...)`：将时间格式化成一个友好的字符串，例如 `The time is 10:05`。
 
-+   playsound(audioFile)： 首先，它会播放 time.wav 这个文件。这样做的目的是让你能听到程序正在“处理”的语音是什么。
+- **配置语音合成**：
+  - `speech_config.speech_synthesis_voice_name = "en-GB-RyanNeural"`：指定用来朗读的语音角色。这里选择了一个名为 `Ryan` 的英式男性神经语音。
+  - `speech_synthesizer = speech_sdk.SpeechSynthesizer(...)`：创建一个语音合成器。
 
-+   **配置音频源**：
-
-+   audio_config = speech_sdk.AudioConfig(filename=audioFile)： 告诉 Azure SDK，语音的来源不是麦克风，而是 time.wav 这个文件。
-
-+   **识别语音**：
-
-+   speech_recognizer = speech_sdk.SpeechRecognizer(...)： 创建一个语音识别器。
-
-+   speech_recognizer.recognize_once_async().get()： 启动一次性的语音识别。程序会把音频文件发送到 Azure 云端进行处理，然后等待返回结果。
-
-+   **处理结果**：
-
-+   if speech.reason == speech_sdk.ResultReason.RecognizedSpeech： 如果成功识别出语音，就将识别到的文本 （speech.text） 打印出来并返回。
-
-+   else： 如果失败（比如音频质量差、网络问题等），则打印出失败的原因。
-
-> **3. ****TellTime()**** 函数 （文本转语音）**
-
-> 这个函数扮演了程序的“嘴巴”角色。
-
-+   **获取当前时间**：
-
-+   now = datetime.now()： 使用 datetime 库获取当前的日期和时间。
-
-+   response_text = 'The time is {}:{:02d}'.format(...)： 将时间格式化成一个友好的字符串，例如 "The time is 10:05"。
-
-+   **配置语音合成**：
-
-+   speech_config.speech_synthesis_voice_name = "en-GB-RyanNeural"： 指定用来朗读的语音角色。这里选择了一个名为 "Ryan" 的英式男性神经语音。
-
-+   speech_synthesizer = speech_sdk.SpeechSynthesizer(...)： 创建一个语音合成器。
-
-+   **合成并播放语音**：
-
-+   speech_synthesizer.speak_text_async(response_text).get()： 将文本字符串发送给 Azure 服务，服务会将其转换成音频数据并直接通过你的扬声器播放出来。
+- **合成并播放语音**：
+  - `speech_synthesizer.speak_text_async(response_text).get()`：将文本字符串发送给 Azure 服务，服务会将其转换成音频数据并直接通过你的扬声器播放出来。
+  - `if speak.reason != speech_sdk.ResultReason.SynthesizingAudioCompleted`：打印合成失败的原因。
+  - `print(response_text)`：打印响应文本。
 
 ```
 Ready to use speech service in: eastus
@@ -1251,21 +1280,17 @@ Azure AI 语音服务是一种由 Microsoft Azure 提供的强大机器学习和
 
 ### 在使用 Azure AI 语音服务进行语音翻译之前需要准备什么？
 
-在使用 Azure AI 语音服务进行语音翻译之前，您需要在 Azure 订阅中创建一个 Azure AI 语音资源。创建资源后，您需要获取部署该资源的位置（例如 eastus）和分配给资源的密钥之一。这些信息可以在 Azure 门户中资源的“密钥和终结点”页面上找到。
+在使用 Azure AI 语音服务进行语音翻译之前，您需要在 Azure 订阅中创建一个 Azure AI 语音资源。创建资源后，您需要获取部署该资源的位置（例如 `eastus`）和分配给资源的密钥之一。这些信息可以在 Azure 门户中资源的“密钥和终结点”页面上找到。
 
 ### 如何将语音翻译成文本？
 
 将语音翻译成文本的过程与语音识别类似，但需要额外指定源语言和目标语言信息。这通过以下步骤实现：
 
-1.  使用 SpeechTranslationConfig 对象封装连接到 Azure AI 语音资源所需的信息，包括其位置和密钥。此对象还用于指定语音识别语言（输入语音的语言）和目标翻译语言。
-
-1.  （可选）使用 AudioConfig 定义要转录的音频输入源。默认情况下，这是系统默认麦克风，但您也可以指定音频文件。
-
-1.  使用 SpeechTranslationConfig 和 AudioConfig 创建 TranslationRecognizer 对象，该对象充当 Azure AI 语音翻译 API 的代理客户端。
-
-1.  使用 TranslationRecognizer 对象的方法调用底层 API 函数，例如 RecognizeOnceAsync（） 方法异步翻译单个口述内容。
-
-1.  处理来自 Azure AI 语音的响应。结果是一个 SpeechRecognitionResult 对象，其中包含原始语言的转录（在 Text 属性中）和翻译字典（在 Translation 属性中，使用双字符 ISO 语言代码作为键）。
+1. 使用 `SpeechTranslationConfig` 对象封装连接到 Azure AI 语音资源所需的信息，包括其位置和密钥。此对象还用于指定语音识别语言（输入语音的语言）和目标翻译语言。
+2. （可选）使用 `AudioConfig` 定义要转录的音频输入源。默认情况下，这是系统默认麦克风，但您也可以指定音频文件。
+3. 使用 `SpeechTranslationConfig` 和 `AudioConfig` 创建 `TranslationRecognizer` 对象，该对象充当 Azure AI 语音翻译 API 的代理客户端。
+4. 使用 `TranslationRecognizer` 对象的方法调用底层 API 函数，例如 `RecognizeOnceAsync()` 方法异步翻译单个口述内容。
+5. 处理来自 Azure AI 语音的响应。结果是一个 `SpeechRecognitionResult` 对象，其中包含原始语言的转录（在 `Text` 属性中）和翻译字典（在 `Translation` 属性中，使用双字符 ISO 语言代码作为键）。
 
 ### 如何将翻译的文本合成为语音（语音转语音翻译）？
 
@@ -1275,27 +1300,24 @@ Azure AI 语音服务是一种由 Microsoft Azure 提供的强大机器学习和
 
 基于事件的合成适用于一对一翻译（从一种源语言翻译成单一目标语言）的情况。您可以使用这种方法将翻译捕获为音频流。具体步骤包括：
 
-1.  在 TranslationConfig 中指定所需的语音。
-
-1.  为 TranslationRecognizer 对象的 合成 事件创建事件处理程序。
-
-1.  在事件处理程序中，使用 Result 参数的 GetAudio（） 方法检索已翻译音频的字节流。实现事件处理程序的特定代码会因所使用的编程语言而异，可以参考语音 SDK 文档中的 C# 和 Python 示例。
+1. 在 `TranslationConfig` 中指定所需的语音。
+2. 为 `TranslationRecognizer` 对象的 合成 事件创建事件处理程序。
+3. 在事件处理程序中，使用 `Result` 参数的 `GetAudio()` 方法检索已翻译音频的字节流。实现事件处理程序的特定代码会因所使用的编程语言而异，可以参考语音 SDK 文档中的 C# 和 Python 示例。
 
 ### 什么是手动合成？
 
 手动合成是基于事件的合成的替代方法，它不需要实现事件处理程序。它允许您为一个或多个目标语言生成音频翻译。手动合成本质上是两个独立操作的组合：
 
-1.  使用 TranslationRecognizer 将口语输入翻译成一个或多个目标语言的文本转录。
-
-1.  在翻译操作的结果中遍历 翻译 字典，并使用 SpeechSynthesizer 合成每种语言的音频流。
+1. 使用 `TranslationRecognizer` 将口语输入翻译成一个或多个目标语言的文本转录。
+2. 在翻译操作的结果中遍历 翻译 字典，并使用 `SpeechSynthesizer` 合成每种语言的音频流。
 
 ### TranslationRecognizer 对象在语音翻译中扮演什么角色？
 
-TranslationRecognizer 对象是 Azure AI 语音翻译 API 的代理客户端。它负责将口语输入翻译成一个或多个目标语言的文本转录，并且是实现语音转文本和语音转语音翻译解决方案的关键组件。它还能够触发基于事件的合成，以流式传输翻译的音频。
+`TranslationRecognizer` 对象是 Azure AI 语音翻译 API 的代理客户端。它负责将口语输入翻译成一个或多个目标语言的文本转录，并且是实现语音转文本和语音转语音翻译解决方案的关键组件。它还能够触发基于事件的合成，以流式传输翻译的音频。
 
 ### SpeechTranslationConfig 对象有什么作用？
 
-SpeechTranslationConfig 对象用于封装连接到 Azure AI 语音资源所需的信息，包括其位置和密钥。此外，它还用于指定语音识别语言（即输入语音的原始语言）以及应将语音翻译到的一个或多个目标语言。这是配置语音翻译过程的起点。
+`SpeechTranslationConfig` 对象用于封装连接到 Azure AI 语音资源所需的信息，包括其位置和密钥。此外，它还用于指定语音识别语言（即输入语音的原始语言）以及应将语音翻译到的一个或多个目标语言。这是配置语音翻译过程的起点。
 
 ### 实验：Translate Speech
 
@@ -1311,11 +1333,15 @@ https://learn.microsoft.com/zh-cn/training/modules/develop-generative-ai-audio-a
 
 ### 基于音频的聊天提示中的音频内容如何表示？
 
-音频内容项可以是网站中音频文件的 URL，也可以是二进制音频数据。如果使用二进制数据提交本地音频文件，audio_url 内容将采用数据 URL 格式的 base64 编码值。例如，JSON 格式可能如下所示：{ "type": "audio_url"， "audio_url": { "url": "data:audio/mp3；base64,<binary_audio_data>" } }.
+音频内容项可以是网站中音频文件的 URL，也可以是二进制音频数据。如果使用二进制数据提交本地音频文件，`audio_url` 内容将采用数据 URL 格式的 base64 编码值。例如，JSON 格式可能如下所示：
+
+```json
+{ "type": "audio_url", "audio_url": { "url": "data:audio/mp3;base64,<binary_audio_data>" } }
+```
 
 ### 提交基于音频的提示可以使用哪些 API 和 SDK？
 
-根据模型类型及其部署位置，您可以使用 Microsoft Azure AI 模型推理或 OpenAI API 提交基于音频的提示。这些库还提供特定于语言的 SDK，用于抽象基础 REST API。在后续练习中，您可以使用适用于 Azure AI 模型推理 API 的 Python 或 。NET SDK 和 OpenAI API 开发支持音频的聊天应用程序。
+根据模型类型及其部署位置，您可以使用 Microsoft Azure AI 模型推理或 OpenAI API 提交基于音频的提示。这些库还提供特定于语言的 SDK，用于抽象基础 REST API。在后续练习中，您可以使用适用于 Azure AI 模型推理 API 的 Python 或 .NET SDK 和 OpenAI API 开发支持音频的聊天应用程序。
 
 ### 用于处理包含音频的提示需要部署哪种类型的模型？
 
@@ -1333,9 +1359,9 @@ Azure AI Foundry 中提供的多模式模型包括 Microsoft Phi-4-multimodal-in
 
 在聊天场中，您可以上传本地音频文件，并将文本添加到消息中，以从多模式模型获取响应。
 
-### 多模式模型处理的提示的 JSON 结构是怎样的？
+### 多模式模型处理的提示的 JSON 结构是怎样的：
 
-包含多部分用户消息的提示的 JSON 表示形式如下所示：
+
 
 ```
 {
@@ -1365,4 +1391,4 @@ Azure AI Foundry 中提供的多模式模型包括 Microsoft Phi-4-multimodal-in
 
 ### 实验：Develop an audio-enabled chat app
 
-https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/09-audio-chat.md
+`https://github.com/MicrosoftLearning/mslearn-ai-language/blob/main/Instructions/Labs/09-audio-chat.md`

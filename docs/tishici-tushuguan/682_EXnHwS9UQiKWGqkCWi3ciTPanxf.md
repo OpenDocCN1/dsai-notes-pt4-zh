@@ -1,3 +1,4 @@
+
 # CoT 提示词生成模板
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/SkZidgOyEoFoI7x5O6ucJENfnfg](https://vxc3hj17dym.feishu.cn/docx/SkZidgOyEoFoI7x5O6ucJENfnfg)
@@ -9,7 +10,9 @@
 
 {完成下列任务}=
 ```
+
 此处插入具体任务或问题描述
+
 ```
 ```
 

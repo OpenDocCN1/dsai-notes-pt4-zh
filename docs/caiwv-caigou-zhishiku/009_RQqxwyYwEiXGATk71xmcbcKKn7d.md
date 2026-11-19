@@ -1,12 +1,13 @@
+
 # AI生成的markdown代码转思维导图教程
 
 > 来源：[https://rxq0zfnkm77.feishu.cn/docx/SIandwX9XodvX4x4I7RcvMU9ned](https://rxq0zfnkm77.feishu.cn/docx/SIandwX9XodvX4x4I7RcvMU9ned)
 
-由于deepseek目前没有办法直接生成思维导图，当前的替代方案就是让生成markdown代码，复制代码制作一个【.md】文件即可在Xmind软件打开
+由于deepseek目前没有办法直接生成思维导图，当前的替代方案就是让生成markdown代码，复制代码制作一个 `.md` 文件即可在 Xmind 软件打开
 
-下面以 【新能源汽车产业关系导图】为例
+下面以【新能源汽车产业关系导图】为例
 
-### 如图生成代码后，复制代码，在桌面新建txt文件填入后，重命名后缀为 【.md】。
+## 如图生成代码后，复制代码，在桌面新建 `txt` 文件填入后，重命名后缀为 `.md`。
 
 ![](img/936670bf29d0aa10c7845b24977e2856.png)
 
@@ -16,7 +17,7 @@
 
 ![](img/08cafae9e3d912e6e81edede3cc8de03.png)
 
-### 打开Xmind软件
+### 打开 Xmind 软件
 
 ![](img/669dee808c8309efb08b8a9a562436d0.png)
 

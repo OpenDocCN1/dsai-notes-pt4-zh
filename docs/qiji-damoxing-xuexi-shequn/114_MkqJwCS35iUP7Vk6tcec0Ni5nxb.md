@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（8月 17-18日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/P7OwdUJ9SorJUGxyifIcrsXvnSb](https://miracleplus.feishu.cn/docx/P7OwdUJ9SorJUGxyifIcrsXvnSb)
 
-# 📡潜空间活动报名
+## 📡潜空间活动报名
 
 > 潜空间系列活动第三季第三期开启报名！
 
@@ -14,7 +15,7 @@
 
 ![](img/4cc1b56cdf27d7dd80c392c29b2195d5.png)
 
-# 推特
+## 推特
 
 ### Claude发布新功能：截图按钮，允许快速捕捉屏幕上任何位置的图像，并加入提示中
 
@@ -52,7 +53,7 @@ https://x.com/ThoseSixFaces/status/1824819887195537701
 
 https://x.com/dr_cintas/status/1824480995317350401
 
-我刚刚用自己的形象训练了一个用于FLUX的LoRA模型，输出的质量简直令人难以置信。以下是操作方法[：首先](https://fal.ai/models/fal-ai/flux-lora-general-training)，感谢@mreflow的灵感！我使用了@fal_ai_data进行训练，发现它是所有选项中最简单的。第一步，前往 此链接（需要一些积分），上传6-12张你想用于训练的照片。第二步，添加一个触发词用于标题，我使用的是“drcintas”，其他选项保持默认。点击“开始”，大约25分钟后即可完成。最后，选择“运行推理”，进入另一个页面，输入你想要的提示词和触发词，然后运行！
+我刚刚用自己的形象训练了一个用于FLUX的LoRA模型，输出的质量简直令人难以置信。以下是操作方法：首先，感谢@mreflow的灵感！我使用了@fal_ai_data进行训练，发现它是所有选项中最简单的。第一步，前往 此链接（需要一些积分），上传6-12张你想用于训练的照片。第二步，添加一个触发词用于标题，我使用的是“drcintas”，其他选项保持默认。点击“开始”，大约25分钟后即可完成。最后，选择“运行推理”，进入另一个页面，输入你想要的提示词和触发词，然后运行！
 
 ![](img/26abf522dae98045f21f312e30e7046a.png)
 
@@ -72,7 +73,7 @@ https://x.com/nuro/status/1824475870804766942
 
 [ssstwitter.com_1723982865968.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GxRMbCmLjomfhKxUuTic4Myhnvh)
 
-# 资讯
+## 资讯
 
 ### 智元发布五款商用人形机器人
 
@@ -98,7 +99,7 @@ https://mp.weixin.qq.com/s/7uU5smY6gjSDmMHMqj1Nww
 
 ![](img/b6dae17071cb11df99fc46a03e4b5c39.png)
 
-# 产品
+## 产品
 
 ### Tome
 
@@ -120,7 +121,7 @@ MYND 是一款 24/7 的 AI 伴侣，提供个性化的心理健康支持和冥�
 
 ![](img/a2c360db6f0bf1959a8719de44ac70e5.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### nous
 
@@ -132,13 +133,13 @@ Nous 是一个开源的 TypeScript 平台,用于构建自主 AI 代理和基于 
 
 ![](img/90f7bc6d3a9f2172585814958bf23391.png)
 
-# 学习
+## 学习
 
 ### 预训练一个72b模型需要多久？
 
 https://mp.weixin.qq.com/s/E0OIgufVW8dm-fRhlRoA6A
 
-文章深入探讨了预训练一个 72B 参数规模的语言模型（如 Qwen2）所需的时间、资源和计算能力。具体而言，使用 7T tokens 的数据集和 6000 张 A100 GPU，完成一个 epoch 大约需要 30 天。文章提供了算力需求的计算公式 3T(2.6e6s + 2P)，其中 T 是数据集的 token 数量，P 是模型参数量，s 是序列长度。详细分析了 Attention 层和 FFN 层的计算量，指出大模型的计算量主要取决于矩阵乘法，反向传播过程需要的算力是正向传播的两倍。同时，提到 batch size 在超过某个阈值后对训练时间和计算量无影响。最后，通过实际案例和对比其他大型模型的训练过程，验证了理论计算的准确性，并指出由于序列长度的增加，算力需求可能被高估，但不会超过 1.6 倍。
+文章深入探讨了预训练一个 72B 参数规模的语言模型（如 Qwen2）所需的时间、资源和计算能力。具体而言，使用 7T tokens 的数据集和 6000 张 A100 GPU，完成一个 epoch 大约需要 30 天。文章提供了算力需求的计算公式 `3T(2.6e6s + 2P)`，其中 T 是数据集的 token 数量，P 是模型参数量，s 是序列长度。详细分析了 Attention 层和 FFN 层的计算量，指出大模型的计算量主要取决于矩阵乘法，反向传播过程需要的算力是正向传播的两倍。同时，提到 batch size 在超过某个阈值后对训练时间和计算量无影响。最后，通过实际案例和对比其他大型模型的训练过程，验证了理论计算的准确性，并指出由于序列长度的增加，算力需求可能被高估，但不会超过 1.6 倍。
 
 ![](img/edd6309b9ac7ce9528b90fde5d50a954.png)
 
@@ -150,11 +151,11 @@ NEO 半导体公司推出的 3D X-AI 芯片技术，通过集成 AI 处理功能
 
 ![](img/1d878fafe4c03e8f3bbe5c68b73c5fd3.png)
 
-### 使用 Llama.cpp 或 Gemini 的 API 强制 JSON 输出的教程
+### 使用 `Llama.cpp` 或 Gemini 的 API 强制 JSON 输出的教程
 
 https://zhuanlan.zhihu.com/p/715001752?utm_psn=1808194075154862080
 
-本文教程详细说明了如何利用 Llama.cpp 和 Gemini 两种 AI 模型的 API 来实现 JSON 数据的强制输出。文章首先对 Llama.cpp 和 Gemini 进行了简要介绍，阐明了它们在处理 AI 问题时的不同特性。接着，通过示例代码，指导读者如何编写 Python 脚本来发起 API 请求，并处理返回的 JSON 格式数据。教程强调了在实际操作中可能遇到的技术难点，如网络连接问题、数据解析错误等，并提供了解决这些问题的技术细节。
+本文教程详细说明了如何利用 `Llama.cpp` 和 Gemini 两种 AI 模型的 API 来实现 JSON 数据的强制输出。文章首先对 `Llama.cpp` 和 Gemini 进行了简要介绍，阐明了它们在处理 AI 问题时的不同特性。接着，通过示例代码，指导读者如何编写 Python 脚本来发起 API 请求，并处理返回的 JSON 格式数据。教程强调了在实际操作中可能遇到的技术难点，如网络连接问题、数据解析错误等，并提供了解决这些问题的技术细节。
 
 ### Nsight Compute 使用指南
 
@@ -164,7 +165,7 @@ Nsight Compute 是 NVIDIA 推出的一款专业性能分析工具，旨在帮助
 
 ![](img/98dcd2e1ed3cc955fbf75d2ecdfc089b.png)
 
-### Survey of Deep Learning AcceleratorsSurvey of Deep Learning Accelerators
+### Survey of Deep Learning Accelerators
 
 https://zhuanlan.zhihu.com/p/714927573?utm_psn=1808192899151716352
 
@@ -186,11 +187,9 @@ https://zhuanlan.zhihu.com/p/715031517?utm_psn=1808192368475787266
 
 文章强调，在求职大模型相关岗位时，候选人虽然可能缺乏实际的大模型训练经验，但可以通过展示对技术细节的深入理解和掌握来弥补这一不足。作者 Quokka 建议，候选人应该具备扎实的基础知识，积极探索大模型的相关技术，如实现和比较不同流水算法的性能、自行实现算子、理解不同 tokenizer 的差异，以及在非 Python 语言上的开发能力。此外，通过分析他人训练的模型和实现如五子棋 AI 等项目，可以证明自己的技术能力和潜力。顶会论文虽然有助于面试，但并非总能反映候选人的实际技术水平，只有真正突出的论文才具有显著意义。面试时，更应该突出个人的技术细节和实践经验，以此来展示自己的潜力和对大模型领域的热情。
 
-# 声明
+## 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -202,7 +201,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

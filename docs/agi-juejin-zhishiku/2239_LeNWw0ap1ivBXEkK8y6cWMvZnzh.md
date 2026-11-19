@@ -1,3 +1,4 @@
+
 # 2024大模型赋能下的AI-2.0数字人平台白皮书
 
 > 来源：[https://agijuejin.feishu.cn/docx/VcgmdhOsdoWDigxoBdBc5rysnde](https://agijuejin.feishu.cn/docx/VcgmdhOsdoWDigxoBdBc5rysnde)

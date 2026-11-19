@@ -1,8 +1,7 @@
-# 10.13-挖走英伟达两员大将：马斯克 xAI 正开发“可用于游戏与机器人领域的世界模型”
-
-> 来源：[https://agijuejin.feishu.cn/docx/OgvHdlQEQo1QG3xkKLoc3x72nlg](https://agijuejin.feishu.cn/docx/OgvHdlQEQo1QG3xkKLoc3x72nlg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 13 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/OgvHdlQEQo1QG3xkKLoc3x72nlg](https://agijuejin.feishu.cn/docx/OgvHdlQEQo1QG3xkKLoc3x72nlg)
 
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 
@@ -38,7 +37,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/883.htm)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KBMFNAKC0511ABV6.html?spss=dy_author)
 
-
 中国科学院计算技术研究所入选NeurIPS 2025的论文提出SpaceServe架构。它将LLM推理的P/D分离扩展至多模态场景，通过EPD三阶解耦与「空分复用」解决MLLM推理的行头阻塞难题。在Qwen2-VL系列模型上，SpaceServe高并发性能超vLLM，比NVIDIA MPS方案提速3.3×。它无需改模型结构，代码开源，为MLLM推理树立新范式，主要优化稳态吞吐 。
 
 ### 💡 永别了，人类冠军！AI横扫天文奥赛，GPT-5得分远超金牌选手2.7倍
@@ -54,7 +52,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/883.htm)
 ### 💡 日本政府要求 OpenAI 不得通过 Sora 2 等实施任何可能侵犯版权的行为
 
 IT之家 | [阅读原文](https://www.ithome.com/0/888/930.htm)
-
 
 10月10日，日本内阁府特命担当大臣城内实称，已通过事务局要求OpenAI不得通过Sora 2实施侵犯著作权行为。日本文化创意产业重要，动画漫画影响力大，而Sora 2发布博客样片涉及日本动画风格，还能生成动漫人物等，日本政府将采取应对措施。
 

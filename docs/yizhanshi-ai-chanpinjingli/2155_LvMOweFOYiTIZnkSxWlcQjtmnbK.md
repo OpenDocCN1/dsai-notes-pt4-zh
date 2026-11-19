@@ -1,3 +1,4 @@
+
 # 第11期 AI行业周报（2024-8.19-8.25）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/XP4AdHOpVoks74x6bORcOzPNnUg](https://v11enp9ok1h.feishu.cn/docx/XP4AdHOpVoks74x6bORcOzPNnUg)
@@ -18,19 +19,16 @@ OpenAI 通过开放 GPT-4o 的定制功能，进一步巩固了其在企业级 A
 
 本周AI领域的焦点之一是昆仑万维推出的SkyReels，这是一款革命性的AI短剧创作平台，标志着创作工具的智能化和便捷化迈出了重要一步。
 
-SkyReels核心亮点：
+### SkyReels 核心亮点
 
-+   全流程服务：从剧本生成到视频合成，SkyReels提供一站式解决方案。
-
-+   高清视频输出：自动转换内容为1080P 60帧高清视频，单次视频最长180秒。
-
-+   AI智能推荐：自动推荐背景音乐和音效，一键添加，简化创作流程。
-
-+   多场景应用：适用于个人创作、教育、广告宣传、社交媒体和游戏开发。
++ 全流程服务：从剧本生成到视频合成，SkyReels提供一站式解决方案。
++ 高清视频输出：自动转换内容为1080P 60帧高清视频，单次视频最长180秒。
++ AI智能推荐：自动推荐背景音乐和音效，一键添加，简化创作流程。
++ 多场景应用：适用于个人创作、教育、广告宣传、社交媒体和游戏开发。
 
 SkyReels的推出，不仅为创作者提供了一个强大的AI辅助创作工具，也预示着AI技术在内容创作领域的广泛应用前景。随着平台的不断完善和升级，我们期待它将为更多创作者带来灵感和便利。
 
-SkyReels官网地址：https://skyreels.ai
+SkyReels官网地址：`https://skyreels.ai`
 
 ![](img/92ac356b664389dc0ef23215e4defbc3.png)
 
@@ -38,29 +36,25 @@ SkyReels官网地址：https://skyreels.ai
 
 微软最新力作——Phi-3.5系列模型现已开源，为中小企业和个人开发者带来福音。这款小参数量的模型，性能却超越了Meta的Llama 3.1 8B和Mistral 7B等知名开源模型，成为开源大模型排行榜中唯一入选前10名的小参数模型。
 
-Phi-3.5系列包含三种模型：mini指令微调、专家混合和视觉微调，
+Phi-3.5系列包含三种模型：mini指令微调、专家混合和视觉微调。
 
-三款模型特色：
+### 三款模型特色
 
-+   Phi-3.5-mini：支持128K上下文，擅长文本/代码生成、数学推理等。
-
-+   Phi-3.5-vision：除文本生成外，还支持图像识别、光学字符识别等视觉任务。
-
-+   Phi-3.5-MoE：专家混合模型，420亿参数中只有66亿参数激活，实现资源的高效利用。
++ Phi-3.5-mini：支持128K上下文，擅长文本/代码生成、数学推理等。
++ Phi-3.5-vision：除文本生成外，还支持图像识别、光学字符识别等视觉任务。
++ Phi-3.5-MoE：专家混合模型，420亿参数中只有66亿参数激活，实现资源的高效利用。
 
 微软Phi-3.5系列的开源，为开发者提供了一个性能卓越、资源消耗低的AI模型选择。无论是在移动设备上还是在资源受限的环境中，Phi-3.5都能发挥出色的表现。
 
 它的开源地址如下：
 
-+   Mini开源：https://huggingface.co/microsoft/Phi-3.5-mini-instruct
-
-+   专家混合：https://huggingface.co/microsoft/Phi-3.5-MoE-instruct
-
-+   视觉模型：https://huggingface.co/microsoft/Phi-3.5-vision-instruct
++ `https://huggingface.co/microsoft/Phi-3.5-mini-instruct`
++ `https://huggingface.co/microsoft/Phi-3.5-MoE-instruct`
++ `https://huggingface.co/microsoft/Phi-3.5-vision-instruct`
 
 ![](img/624b88a9db3ecd8244f08dff9b876813.png)
 
-## 多模态模型评测框架LMMs-eval正式开发布
+## 多模态模型评测框架LMMs-Eval正式发布
 
 AI评测迎来革新！本周，南洋理工大学LMMs-Lab的研究人员联合发布了LMMs-Eval——专为多模态大型模型设计的评估框架。它将为AI模型评测提供了一站式解决方案。
 
@@ -68,11 +62,11 @@ LMMs-Eval框架自发布以来，已获得开源社区、公司和高校等多�
 
 它具备以下特性：
 
-+   统一接口：基于lm-evaluation-harness改进，方便用户自行添加多模态模型和数据集。
+### LMMs-Eval 框架特性
 
-+   一键式启动：HuggingFace托管80多个数据集，用户只需一条命令即可自动下载并测试，快速获得结果。
-
-+   透明可复现：内置统一logging工具，保证测试的可复现性和透明性。
++ 统一接口：基于`lm-evaluation-harness`改进，方便用户自行添加多模态模型和数据集。
++ 一键式启动：HuggingFace托管80多个数据集，用户只需一条命令即可自动下载并测试，快速获得结果。
++ 透明可复现：内置统一logging工具，保证测试的可复现性和透明性。
 
 LMMs-Eval的愿景是让模型训练者专注于模型改进，而非评测。
 
@@ -80,7 +74,7 @@ LMMs-Eval的发布，为多模态AI模型的评测带来了新的标准和便利
 
 它的官方地址如下：
 
-https://lmms-lab.github.io/
+`https://lmms-lab.github.io/`
 
 ![](img/820356df117a2cc04ca080b64ad92921.png)
 
@@ -110,9 +104,8 @@ LongVILA涵盖了系统设计、模型训练策略和数据集构建，为长上
 
 随着LongVILA的问世，我们见证了AI在视频理解领域的一次新的飞跃。LongVILA，让长视频的每一次播放，都充满智能与洞见。
 
-+   论文地址：https://arxiv.org/pdf/2408.10188
-
-+   代码地址：https://github.com/NVlabs/VILA/blob/main/LongVILA.md
++ `https://arxiv.org/pdf/2408.10188`
++ `https://github.com/NVlabs/VILA/blob/main/LongVILA.md`
 
 ![](img/4882ad1492e5341c5791128b448c53ce.png)
 
@@ -124,17 +117,13 @@ LongVILA涵盖了系统设计、模型训练策略和数据集构建，为长上
 
 Text to Speech Avatar的主要功能包括：
 
-+   将文本转换为视频，视频中的人物能够以自然的声音说话。
+### Text to Speech Avatar 主要功能
 
-+   提供多种人物形象预设，以适应不同的应用场景。
-
-+   支持使用批量合成API进行异步或实时合成文本到语音人像视频。
-
-+   在Speech Studio中提供内容创建工具，允许用户无需编码即可创建视频内容。
-
-+   通过Speech Studio的实时聊天头像工具，启用实时人像对话功能。
-
-+
++ 将文本转换为视频，视频中的人物能够以自然的声音说话。
++ 提供多种人物形象预设，以适应不同的应用场景。
++ 支持使用批量合成API进行异步或实时合成文本到语音人像视频。
++ 在Speech Studio中提供内容创建工具，允许用户无需编码即可创建视频内容。
++ 通过Speech Studio的实时聊天头像工具，启用实时人像对话功能。
 
 这项服务的定价基于视频输出的长度，按秒收费。目前已经在东南亚、北欧、西欧、瑞典中部、美国中南部和美国西部等地区推出。
 

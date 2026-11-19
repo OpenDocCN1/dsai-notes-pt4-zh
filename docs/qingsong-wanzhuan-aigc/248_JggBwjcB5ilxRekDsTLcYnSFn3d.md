@@ -1,14 +1,17 @@
+
 # 全球AI百强榜发布！ChatGPT稳坐第一，DeepSeek第三，前50有22个来自中国
 
-> 来源：[https://my.feishu.cn/docx/IiojdvIpto9rM2xFzxkcEyQtnTw](https://my.feishu.cn/docx/IiojdvIpto9rM2xFzxkcEyQtnTw)
+> 来源：[`https://my.feishu.cn/docx/IiojdvIpto9rM2xFzxkcEyQtnTw`](https://my.feishu.cn/docx/IiojdvIpto9rM2xFzxkcEyQtnTw)
 
 文章来源：新智元
 
-##### 【新智元导读】a16z最新发布「全球Top100消费级GenAI应用榜单」，AI竞争格局逐渐稳定，中国力量全面崛起，DeepSeek、豆包、夸克等多款产品跻身前十。ChatGPT依旧领跑，谷歌Gemini紧随其后，Grok高速逆袭。整体来看，全球AI正进入多极化竞争的新阶段。
+## 新智元导读
 
-就在刚刚，**a16z**最新一期的「Top 100消费级GenAI应用榜单」出炉！
+a16z最新发布「全球Top100消费级GenAI应用榜单」，AI竞争格局逐渐稳定，中国力量全面崛起，DeepSeek、豆包、夸克等多款产品跻身前十。ChatGPT依旧领跑，谷歌Gemini紧随其后，Grok高速逆袭。整体来看，全球AI正进入多极化竞争的新阶段。
 
-本期榜单传递出一个**最核心信息**：**AI产品竞争的生态格局正****日趋稳定！**
+就在刚刚，a16z最新一期的「Top 100消费级GenAI应用榜单」出炉！
+
+本期榜单传递出一个最核心信息：AI产品竞争的生态格局正日趋稳定！
 
 ![](img/72d8437fa6d151e050bb0d9809496cf3.png)
 
@@ -22,17 +25,17 @@
 
 ![](img/c9ddaef5bf419150bb6f54797f97e47e.png)
 
-**中国开始影响世界**
+## 中国开始影响世界
 
-**首先来看网页排行榜，本次榜单**中，5家中国公司跻身全球前20。
+首先来看网页排行榜，本次榜单中，5家中国公司跻身全球前20。
 
-分别是**DeepSeek**全球排名第三、夸克**Quark**全球排名第九、豆包**Doubao**排名全球第十二、月之暗面**Kimi**排名全球第十七、通义千问**Qwen3**全球排名第二十。
+分别是DeepSeek全球排名第三、夸克Quark全球排名第九、豆包Doubao排名全球第十二、月之暗面Kimi排名全球第十七、通义千问Qwen3全球排名第二十。
 
-此外，可灵**KlingAI**上榜全球排名第三十三，**海螺**AI排名45。
+此外，可灵KlingAI上榜全球排名第三十三，海螺AI排名45。
 
 在移动应用榜单中，排名有较大变化。
 
-**豆包**拿下全球第四、**百度AI搜索**全球第七、**DeepSeek**全球第八、**美图**全球第九，以及**夸克**上榜第四十七。
+豆包拿下全球第四，百度AI搜索全球第七，DeepSeek全球第八，美图全球第九，以及夸克上榜第四十七。
 
 ![](img/7bd71011ee34556f0a1f8d6fa14608af.png)
 
@@ -40,7 +43,7 @@
 
 ![](img/c8304f07bf15046322323cef3bf636c9.png)
 
-其中，值得一提的是，**国内的视频模型**比海外的产品更具优势——因为中国有更多研究人员专注于视频领域。
+其中，值得一提的是，国内的视频模型比海外的产品更具优势——因为中国有更多研究人员专注于视频领域。
 
 照片和视频类别的集中度尤其高，仅美图一家就贡献了五个席位：Photo&VideoEditor、BeautyPlus、BeautyCam、Wink和Airbrush。
 
@@ -50,7 +53,7 @@
 
 ![](img/cf7d17cc6aaa50acf9bce418de22bf0e.png)
 
-**谷歌携四款产品强势入榜**
+## 谷歌携四款产品强势入榜
 
 这是首次对谷歌几款应用单独的流量进行排名并收录。
 
@@ -58,9 +61,9 @@
 
 ![](img/5309f0997043ff8c24e6002e1d94d93c.png)
 
-**谷歌还有哪些产品上榜？**
+### 谷歌还有哪些产品上榜？
 
-面向开发者的**AI Studio**首次亮相即跻身前十。
+面向开发者的AI Studio首次亮相即跻身前十。
 
 该网站提供了一个沙盒环境，开发者可在此基础上使用Gemini模型进行构建，包括多模态模型。
 
@@ -84,13 +87,13 @@ Gemini在安卓设备上表现尤为强劲，其近90%的MAU来自安卓平台�
 
 ![](img/60bc0c10897bf3869834c9b31d5152b5.png)
 
-ChatGPT稳坐第一Grok紧追
+## ChatGPT稳坐第一，Grok紧追
 
 在通用大语言模型助手的激烈竞争中，ChatGPT仍保持领先，但谷歌、Grok和Meta正在缩小差距。
 
 Grok在网站榜上排名第4，移动榜上排名第23。
 
-**该公司在移**动端的跃升尤为惊人，从2024年底无应用的「冷启动」状态，发展到如今超过2000万的月活用户。
+该公司在移动端的跃升尤为惊人，从2024年底无应用的「冷启动」状态，发展到如今超过2000万的月活用户。
 
 2025年7月，Grok的移动端用量迎来巨大增长，随着7月9日新模型Grok4（具备更强的推理能力、实时搜索和工具集成）的发布，用量攀升了近40%。
 
@@ -128,7 +131,7 @@ Perplexity则与Grok一道，持续展现强劲的增长势头。
 
 在上期移动应用榜的「准上榜名单」中，PolyBuzz和Pixverse这两家公司成功进入核心榜单。
 
-**氛围编程强势崛起**
+## 氛围编程强势崛起
 
 在a16z 2025年3月的榜单中，「氛围编程」(vibe coding)的概念才刚刚萌芽——当时网站榜上只有Bolt一家。
 
@@ -144,9 +147,9 @@ Perplexity则与Grok一道，持续展现强劲的增长势头。
 
 ![](img/d2e41ffab557174e7cd7a9b3c3f0ef94.png)
 
-这些平台也在为其他AI产品引流。通过Replit和Lovable构建并发布的网站（未使用自定义域名），其流量分别归于replit.app和lovable.app之下。
+这些平台也在为其他AI产品引流。通过Replit和Lovable构建并发布的网站（未使用自定义域名），其流量分别归于`replit.app`和`lovable.app`之下。
 
-这两个域名本身都有着可观的流量（lovable.app的流量足以排进榜单前50），但仍低于其面向开发者的主站。
+这两个域名本身都有着可观的流量（`lovable.app`的流量足以排进榜单前50），但仍低于其面向开发者的主站。
 
 ![](img/6d9451061198f35c2a57b95fca850aa8.png)
 
@@ -158,24 +161,18 @@ Supabase的流量增长与核心「氛围编程」平台的崛起几乎亦步亦
 
 ![](img/0fb8a1f700952352d2b7ded0d1753155.png)
 
-**14家「全明星」从未缺席**
+## 14家「全明星」从未缺席
 
 在a16z发布的五期网站Top50榜单中，有14家公司从未缺席——a16z称之为「全明星」！！
 
 这些公司构成了消费者AI行为的真实缩影：
 
 +   通用助手（ChatGPT、Perplexity、Poe）
-
 +   AI伴侣（CharacterAI）
-
 +   图像生成（Midjourney、Leonardo）
-
 +   图像与视频编辑（Veed、Cutout）
-
 +   语音生成（ElevenLabs）
-
 +   生产力工具（Photoroom、Gamma、Quillbot）
-
 +   以及模型托管（Civitai、HuggingFace）
 
 ![](img/064798a8bb69fcd0a60368e5b4aadbde.png)
@@ -185,9 +182,7 @@ Supabase的流量增长与核心「氛围编程」平台的崛起几乎亦步亦
 现在，a16z有了答案——在这14家「全明星」中：
 
 +   五家拥有自研模型
-
 +   七家使用来自其他公司的API或开源模型
-
 +   还有两家是模型聚合平台。
 
 有趣的是，尽管榜单的全球化程度日益提高，但这十四位「常青树」仅来自五个国家：美国、英国（ElevenLabs、Veed）、澳大利亚（Leonardo）、中国（CutoutPro）和法国（Photoroom、HuggingFace）。
@@ -199,21 +194,18 @@ Supabase的流量增长与核心「氛围编程」平台的崛起几乎亦步亦
 这些公司同样代表了多样的AI消费级应用，包括：
 
 +   Claude和DeepAI（通用助手）
-
 +   JanitorAI（AI伴侣）
-
 +   Pixelcut（图像编辑）
-
 +   Suno（音乐生成）
 
-**a16z统计方法说明**
+## a16z统计方法说明
 
 榜单分别对排名前50的AI原生网站产品（依据Similarweb的月度独立访问量）和排名前50的AI原生移动应用（依据SensorTower的月度活跃用户）进行排名。
 
 对于那些增加了重要生成式AI功能但并非AI原生的产品，如Canva和Notion，则不包含在内。
 
-参考资料：
+## 参考资料
 
-https://a16z.com/100-gen-ai-apps-5/
+[`https://a16z.com/100-gen-ai-apps-5/`](https://a16z.com/100-gen-ai-apps-5/)
 
-https://x.com/omooretweets/status/1960726780681376028
+[`https://x.com/omooretweets/status/1960726780681376028`](https://x.com/omooretweets/status/1960726780681376028)

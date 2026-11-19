@@ -1,3 +1,4 @@
+
 # 4.1 提示词通用技巧
 
 > 来源：[https://my.feishu.cn/docx/C92DdjWZ7oeOjoxBYdqcEkn2nbf](https://my.feishu.cn/docx/C92DdjWZ7oeOjoxBYdqcEkn2nbf)
@@ -22,7 +23,7 @@
 
 ![](img/6aacd35e9bd6a28a4f27e3c7bd7281aa.png)
 
-[AlanATsoi.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M1BBbh1tUob0IyxdFgTcs6zynjb)
+[`AlanATsoi.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M1BBbh1tUob0IyxdFgTcs6zynjb)
 
 在有了一个初步的了解之后，笔者推荐 Prompt Engineering Guide 这份文档，该文档包含了大量的 Prompt 基础知识和未来的发展方向，对于 GPT 应用开发者来说，除了学习 Prompt 的基础知识之外，还可以从中获取到一些工程界和学术界对于 Prompt 的发展方向的思考，对于开发 AI 应用来说，这些思考弥足珍贵。
 
@@ -30,7 +31,7 @@
 
 下面是对这一份文档的摘录：
 
-platform.twitter.com
+`platform.twitter.com`
 
 ![](img/2da4c7a27bc1d4c1d0a943e7bf74367d.png)
 

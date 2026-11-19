@@ -1,8 +1,9 @@
+
 # 01.11-通义万相首创生成汉字视频，全面进化称霸VBench！AI视频GPT-3时刻来临
 
-> 来源：[https://agijuejin.feishu.cn/docx/Hy1XdWSibo06JgxrdITc6Ql1nIg](https://agijuejin.feishu.cn/docx/Hy1XdWSibo06JgxrdITc6Ql1nIg)
+## AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 11 日)
 
-# AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 11 日)
+> 来源：[https://agijuejin.feishu.cn/docx/Hy1XdWSibo06JgxrdITc6Ql1nIg](https://agijuejin.feishu.cn/docx/Hy1XdWSibo06JgxrdITc6Ql1nIg)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

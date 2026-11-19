@@ -1,12 +1,13 @@
+
 # 图像/音视频处理
 
 > 来源：[https://my.feishu.cn/docx/XRzSdqMWyoQMPixoTrccILninhe](https://my.feishu.cn/docx/XRzSdqMWyoQMPixoTrccILninhe)
 
-# 1.1  文生图
+## 1.1 文生图
 
-## **S1  高阶专业款**
+### S1 高阶专业款
 
-### **Midjourney**
+#### Midjourney
 
 https://www.midjourney.com/ （需施展魔法）
 
@@ -16,13 +17,13 @@ https://www.midjourney.com/ （需施展魔法）
 
 Midjourney 新手从 0 到 1 入门攻略
 
-+   **（**链接： https://pan.baidu.com/s/1tJRfVVOov9eJXfpPd_Fbvg?pwd=r3dq 提取码： r3dq ）
++   （链接： https://pan.baidu.com/s/1tJRfVVOov9eJXfpPd_Fbvg?pwd=r3dq 提取码： r3dq ）
 
 2000+Midjourney 提示词分类汇总
 
 +   （链接： https://pan.baidu.com/s/1Yuw9nmwNackqmdbKLz9o8Q?pwd=f52x 提取码： f52x ）
 
-### **StableDiffusion**
+#### StableDiffusion
 
 https://stability.ai/ （需施展魔法）
 
@@ -34,7 +35,7 @@ https://stability.ai/ （需施展魔法）
 
 网友部署的：https://sd3.dawn-e.cn/
 
-> [**ComfyUI**](https://github.com/comfyanonymous/ComfyUI)：一个基于节点工作流的 Stable Diffusion 图形界面，通过将 Stable Diffusion 算法模块化，实现了更高效的图像生成和资源利用。最强大和模块化稳定的扩散 GUI、api 和后端，带有图形/节点界面。适用于任何想要使用 SD 制作复杂工作流程或想要了解更多 SD 工作原理的人。
+> [`ComfyUI`](https://github.com/comfyanonymous/ComfyUI)：一个基于节点工作流的 Stable Diffusion 图形界面，通过将 Stable Diffusion 算法模块化，实现了更高效的图像生成和资源利用。最强大和模块化稳定的扩散 GUI、api 和后端，带有图形/节点界面。适用于任何想要使用 SD 制作复杂工作流程或想要了解更多 SD 工作原理的人。
 
 > 参考资料——
 
@@ -42,7 +43,7 @@ https://stability.ai/ （需施展魔法）
 
 > [工具教程：ComfyUI](https://waytoagi.feishu.cn/wiki/AxZPwElC6iZ0aqk2hjOcI3Y9nFg?from=from_copylink)
 
-### Flux
+#### Flux
 
 https://fluxai.art （需施展魔法）
 
@@ -56,9 +57,9 @@ https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev（免费）
 
 推荐理由在于其出色的图像质量和灵活的使用场景，使得FLUX.1在AI图像生成领域中具有竞争力，尤其在处理复杂场景和细节方面表现优异，适合各种创作需求。
 
-## **S2  主流易上手款**
+### S2 主流易上手款
 
-### **DALLE-3**
+#### DALLE-3
 
 https://chatgpt.com/g/g-2fkFE8rbu-dall-e （需施展魔法）
 
@@ -70,7 +71,7 @@ https://copilot.microsoft.com/ （需施展魔法）
 
 最近，GPT4-Dalle 作图模型升级，已支持局部重绘
 
-### Ideogram
+#### Ideogram
 
 https://ideogram.ai/t/explore
 
@@ -78,7 +79,7 @@ https://ideogram.ai/t/explore
 
 Ideogram 是一款由前 Google Brain 员工创立的 AI 图像生成工具，能够根据文本描述生成高质量图像，特别擅长精确嵌入文本内容，支持多种风格选择（如写实、设计、3D、动漫等），推荐给需要快速生成海报、Logo 和其他视觉内容的设计师和内容创作者使用。
 
-### 商汤·秒画
+#### 商汤·秒画
 
 https://miaohua.sensetime.com
 
@@ -88,7 +89,7 @@ https://miaohua.sensetime.com
 
 在审美、光影等方面已接近国际领先水平。
 
-### 可灵·可图
+#### 可灵·可图
 
 https://klingai.kuaishou.com/text-to-image
 
@@ -96,61 +97,61 @@ https://klingai.kuaishou.com/text-to-image
 
 可灵可图是一款由快手推出的AI生图工具，具备文生视频、图生视频等主要功能，特色在于其轻量化设计和不受设备限制的网页版使用，推荐理由是其便捷性和高效性，适合日常设计需求。
 
-### **其他**
+### 其他
 
-### 🌟即**梦**
+#### 🌟即梦
 
-> - 抖音剪映团队推出的文生视频大模型：jimeng.jianying.com
+- 抖音剪映团队推出的文生视频大模型：jimeng.jianying.com
 
-> ✨除了生成视频，该网站还支持文生图、图转视频等功能
+- ✨除了生成视频，该网站还支持文生图、图转视频等功能
 
-### 奇域AI
+#### 奇域AI
 
 > http://www.qiyuai.net/apps/met/loginLanding
 
 > 奇域AI是一款专注于中式审美的AI绘画创作平台，提供丰富的绘画风格（如水墨画、国漫、刺绣等）、智能生成艺术作品、风格延伸与微调功能，界面简洁易上手，适合艺术爱好者和专业创作者，推荐理由是其深厚的中国文化元素和高效的创作流程。
 
-## S3  **国内其他：**
+### S3 国内其他
 
-#### **免费**：
+#### 免费：
 
 [智谱清言](https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2)、[阿里通义万相](https://tongyi.aliyun.com/wanxiang/)
 
-#### **不完全免费**：
+#### 不完全免费：
 
-**哩布哩布：**https://www.liblib.art
+哩布哩布：https://www.liblib.art
 
 > 中国版 C 站，生图
 
-**百度文心一格**：https://yige.baidu.com/
+百度文心一格：https://yige.baidu.com/
 
-**美图AI** https://www.whee.com/?ref=www.ainav.cn
+美图AI https://www.whee.com/?ref=www.ainav.cn
 
 > 美图WHEE新手教程，见[链接](https://ik712uh5il.feishu.cn/docx/HjYkdYA1Ho1zdKxTDgQcUzxknzx?ref=www.ainav.cn)
 
-**云界 AI**：https://www.yunjieai.com/
+云界 AI：https://www.yunjieai.com/
 
-**海艺AI** https://www.seaart.ai/zhCN
+海艺AI https://www.seaart.ai/zhCN
 
-**触手AI** https://douchu.ai/create/minimalism
+触手AI https://douchu.ai/create/minimalism
 
-## S4 其他
+### S4 其他
 
-### Glif
+#### Glif
 
 chromewebstore.google.com
 
 Glif是一个强大的Chrome扩展工具，通过AI技术让用户轻松地对网页上的图像进行重新创作。其主要功能包括：
 
-+   **图像重混**：用户只需右键点击任何图像，输入提示词，或者让AI自动生成提示，即可对图像进行风格转换和内容重塑。
++   图像重混：用户只需右键点击任何图像，输入提示词，或者让AI自动生成提示，即可对图像进行风格转换和内容重塑。
 
-+   **多种工作流**：提供多种AI工作流，如风格转移、面孔转移和控制网络，用户可以根据需求选择合适的方式来修改图像。
++   多种工作流：提供多种AI工作流，如风格转移、面孔转移和控制网络，用户可以根据需求选择合适的方式来修改图像。
 
-+   **背景处理与图像放大**：生成后，用户可以轻松去除背景或对图像进行放大，进一步提升创作效果。
++   背景处理与图像放大：生成后，用户可以轻松去除背景或对图像进行放大，进一步提升创作效果。
 
-## **S4  设计+AI**
+### S5 设计+AI
 
-### **Canva**
+#### Canva
 
 https://www.canva.com/（海外版） & https://www.canva.cn/（国内版）
 
@@ -164,7 +165,7 @@ https://www.canva.com/（海外版） & https://www.canva.cn/（国内版）
 
 设计、修图、丰富的模板资源，是 Canva 的看家本领，现在 AI 加持后，能力和实用性应该会越来越强
 
-### Ideogram
+#### Ideogram
 
 https://ideogram.ai/
 
@@ -174,35 +175,33 @@ Ideogram是一款AI绘图产品，其主要功能是生成具有高度美感和�
 
 此外，Ideogram 2.0还引入了Magic Prompt功能，能够自动生成创意性的提示词，帮助用户轻松创作，并支持中文输入自动翻译成英文，进一步提升了用户体验和创作效率。
 
-## **S5  其他·更多**
+### S6 其他·更多
 
-### **Playground-v2.5**
+#### Playground-v2.5
 
 https://playgroundai.com
 
 官网可免费使用，需 🪜，比 sd、mj 更易上手，官方志在引领美学，视觉生成效果确实可以
 
-### **Tiamat**
+#### Tiamat
 
 https://www.tiamat.com/
 
 整体是把 sd 的能力做了一个线上版本，本身站内有很多模版素材库，可以解决 prompt 不知道怎么写的问题
 
-### **Tensor.ART**
+#### Tensor.ART
 
 https://tensor.art/
 
 SD 套壳、支持中文操作台显示、可精细化调节生图效果，又无需部署复杂 SD，可作为 SD 非重度使用的入门版体验
 
-### **stickerbaker**
+#### stickerbaker
 
 https://stickerbaker.com/
 
 一键生成贴纸
 
-#### **新媒体海报：**
-
-**Postnitro**
+#### 新媒体海报：Postnitro
 
 https://postnitro.ai/
 
@@ -216,33 +215,33 @@ https://postnitro.ai/
 
 > https://mp.weixin.qq.com/s/jSMFioYq4wN79IbvM2nDXQ
 
-1.  TransferAnything
+1. `TransferAnything`
 
 > 它支持从任何图像的任何区域转移各种视觉信息，以创建新的合成图像，支持布局、颜色、风格和像素内容的转移，我们可以轻松实现从一个图像到另一个图像的多维度视觉信息转移，极大地拓宽了创意表达的可能性。
 
 > 应用地址：https://huggingface.co/spaces/modelscope/TransferAnything
 
-1.  **ReplaceAnything**
+1. `ReplaceAnything`
 
 > 这个工具的应用场景广泛，包括人物替换、服装更换、背景变更等。是时候拼脑洞了！
 
 > 应用地址：https://huggingface.co/spaces/modelscope/ReplaceAnything
 
-1.  **FaceChain**
+1. `FaceChain`
 
 > 一个创新的人像链生成工具，它允许用户进行人物形象训练、创造多种风格的形象写真，以及使用固定模板进行形象设计。在这里，你可以根据自己的设想自由创作独一无二的人像肖像。
 
 > 应用地址：https://huggingface.co/spaces/modelscope/FaceChain
 
-#### 参考资料**：**
+#### 参考资料
 
 《通往 AGI 之路》——[1.4 入门：AI 绘画](https://waytoagi.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb?from=from_copylink)
 
 ---
 
-# 1.2  修图
+## 1.2 修图
 
-### **Remove.bg**
+### Remove.bg
 
 https://www.remove.bg/zh（需施展魔法）
 
@@ -250,35 +249,35 @@ https://www.remove.bg/zh（需施展魔法）
 
 在线一键抠图网站，无需登录，直接上传图片即可完成抠图，效果好，免费且无需下载
 
-### **证照猴**
+### 证照猴
 
 AI 智能证件照小程序，可拍摄多种规格的证件照，并支持美颜、换背景等功能，可直接在手机上免费生成
 
-### **MAGNIFIC**
+### MAGNIFIC
 
 https://magnific.ai/ （需施展魔法）
 
 一个由人工智能驱动的图像放大和增强工具，能增强图像细节，使图像分辨率更高、更清晰生动。
 
-### **Playground**
+### Playground
 
 https://playgroundai.com/ （需施展魔法）
 
 像专业人士一样编辑图片，而无需成为专业人士。
 
-### **ClipDrop**
+### ClipDrop
 
 https://clipdrop.co/ （需施展魔法）
 
 SD 官方出品的 AI 图片编辑工具
 
-### **Canva**
+### Canva
 
 https://www.canva.cn/ （需施展魔法）
 
 广为熟知的海报设计软件，AI 新功能加持
 
-### **佐糖**
+### 佐糖
 
 https://picwish.cn/remove-background
 
@@ -286,11 +285,11 @@ https://picwish.cn/remove-background
 
 ---
 
-# 1.3  文生视频
+## 1.3 文生视频
 
-## S1 国产
+### S1 国产
 
-### **快手 · 可灵**
+#### 快手 · 可灵
 
 https://kling.kuaishou.com/
 
@@ -298,29 +297,27 @@ https://kling.kuaishou.com/
 
 ![](img/051bd68971ed6a6bbc03946dc72f6a65.png)
 
-### 通义万相
+#### 通义万相
 
 [通义万相官网入口](https://tongyi.aliyun.com/wanxiang/wanxvideo?utm_source=ai-bot.cn&userCode=okjhlpr5) & [通义官网入口](https://tongyi.aliyun.com/wanxiang/videoCreation)
 
 通义万相AI生视频是阿里云推出的免费AI视频生成工具，支持通过文字提示（文生视频）或图片（图生视频）生成影视级高清视频，具备多语言输入、智能提示词扩展、音画同步等功能，特别优化了中式元素表现，适用于影视创作、动画设计和广告制作等领域，推荐理由是其高质量输出和创作自由度。
 
-### 即梦 AI 视频
+#### 即梦 AI 视频
 
 https://jimeng.jianying.com/ai-tool/home
 
 即梦AI视频是一款由字节跳动推出的一站式AI创作平台，主要功能包括AI视频生成、AI图片生成、智能画布和故事创作。其特色在于通过自然语言或图片输入即可生成高质量的视频和图像，支持中文提示词，提供流畅的动效和自然的画面过渡。推荐理由是它降低了创作门槛，激发用户创意，适合希望快速将想法转化为可视化作品的用户。
 
-### Moki
+#### Moki
 
 https://www.moki.cn/
 
 MOKI是美图公司推出的AI视频短片创作工具，具备智能剪辑、自动生成分镜图、AI配乐和音效、自动字幕等功能，特色在于其一站式成片能力，推荐理由是即使没有专业背景的用户也能轻松上手，快速创作出高质量的短片。
 
-###
+### S2 海外
 
-## S2 海外
-
-### **Pika**
+#### Pika
 
 https://pika.art/ （需施展魔法）
 
@@ -328,19 +325,19 @@ https://pika.art/ （需施展魔法）
 
 补充阅读：PIKA 正式上线唇形同步 - 给 AI 视频注入新的"想象"
 
-### **Runway**
+#### Runway
 
 https://runwayml.com/ （需施展魔法）
 
-### Stable Video Diffusion
+#### Stable Video Diffusion
 
 https://stability.ai/news/stable-video-diffusion-open-ai-video-model
 
-### **Pixverse**
+#### Pixverse
 
 https://pixverse.ai
 
-### **Sora**
+#### Sora
 
 https://openai.com/sora
 
@@ -352,7 +349,7 @@ OpenAI 发布文生视频模型 Sora，可以生成长达一分钟的视频，�
 
 3）OpenAI 正在教导 Sora 人工智能理解和模拟运动中的物理世界，目标是训练模型，帮助人们解决需要真实世界交互的问题。
 
-### **LTX Studio**
+#### LTX Studio
 
 https://www.ltx.studio
 
@@ -360,7 +357,7 @@ https://www.ltx.studio
 
 用户输入想法后，LTX Studio 便会创造脚本、角色、分镜，用户可以通过提示改变场景、风格，调整镜位和增加音效等，不过每段影片长段只有几秒钟长。
 
-### **Google Lumiere**
+#### Google Lumiere
 
 https://lumiere-video.github.io/
 
@@ -370,15 +367,19 @@ https://lumiere-video.github.io/
 
 ---
 
-# 1.4  剪视频
+## 1.4 剪视频
 
-### **剪映/CapCut**
+### 剪映/CapCut
 
 https://www.capcut.com/my-edit?start_tab=video
 
 CapCut 剪映海外版，免费 AI 视频编辑功能——Magic Tools
 
-### **即创**
+
+
+# 1.4 视频创作工具
+
+### 即创
 
 https://aic.oceanengine.com/
 
@@ -390,13 +391,13 @@ https://aic.oceanengine.com/
 
 https://h5.kwaiying.com/officialWebsite
 
-快影是一款由快手推出的专业视频剪辑工具，提供视频分割、裁剪、拼接、倒放、特效滤镜、音乐背景、字幕添加等功能，特色在于其简单易用的界面和强大的AI功能（如AI动漫视频、AI绘画），推荐理由是它能帮助用户轻松制作出高质量且有趣的视频内容。
+快影是一款由快手推出的专业视频剪辑工具，提供视频分割、裁剪、拼接、倒放、特效滤镜、音乐背景、字幕添加等功能，特色在于其简单易用的界面和强大的 AI 功能（如 AI 动漫视频、AI 绘画），推荐理由是它能帮助用户轻松制作出高质量且有趣的视频内容。
 
 ---
 
-# 1.5  文生音频
+# 1.5 文生音频
 
-### **Fish Speech**
+### Fish Speech
 
 https://fish.audio
 
@@ -404,15 +405,15 @@ https://fish.audio
 
 一个领先的文本转语音 (TTS) 模型，经过了30万小时的英语、中文和日语音频数据训练。并且你可以快速的克隆声音，只需要最短15秒的音频样本，效果很逼真。
 
-### **ChatTTS**
+### ChatTTS
 
 https://chattts.com/zh
 
 推荐指数：🌟🌟🌟🌟🌟
 
-ChatTTS是一个为对话场景设计的文本转语音(TTS)模型，特别适用于大型语言模型助手和对话式应用。它支持中文和英文，经过大量数据训练，提供高质量的语音合成。支持在线免费使用。
+ChatTTS 是一个为对话场景设计的文本转语音 (TTS) 模型，特别适用于大型语言模型助手和对话式应用。它支持中文和英文，经过大量数据训练，提供高质量的语音合成。支持在线免费使用。
 
-### **11Labs**
+### 11Labs
 
 https://elevenlabs.io/
 
@@ -422,7 +423,7 @@ https://elevenlabs.io/
 
 ## 其他
 
-### **魔音工坊**
+### 魔音工坊
 
 https://www.moyin.com/
 
@@ -430,19 +431,19 @@ https://www.moyin.com/
 
 一款可以在线将文字转成语音的智能配音产品。提供不同性别、不同口音的真人声音，在你输入文字后直接配音。你可快速对短视频等需要配音的内容进行配音。
 
-### **TTSMaker**
+### TTSMaker
 
 https://ttsmaker.com/
 
 TTSMaker 是一款免费的语音合成工具，提供语音合成服务，支持多种语言，包括英语、法语、德语、西班牙语、阿拉伯语、中文、日语、韩语、越南语等，以及各种语音风格。你可以用它大声朗读文本和电子书，或者下载音频文件用于商业用途（它是完全免费的）。作为一款出色的免费 TTS 工具，TTSMaker 可以轻松地在线将文本转换为语音。
 
-### **Speechki**
+### Speechki
 
 https://speechki.org/
 
 文本转语音生成器，各种语言逼真语音可选
 
-### **TTS-Online**
+### TTS-Online
 
 https://www.ttson.cn/
 
@@ -450,47 +451,47 @@ https://www.ttson.cn/
 
 免费、无需 🪜、内置声音种类丰富。
 
-### **微软 Azure 文字转语音**
+### 微软 Azure 文字转语音
 
 https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech
 
 可通过网站部署，每月 50 万个字符的免费额度，对于个人使用者日常基本足够
 
-语音库中有近 500 种语言、并提供新闻、有声书等分类应用场景调用
+语音库中有近 500 种语言，并提供新闻、有声书等分类应用场景调用
 
 ---
 
-# 1.6  生成音乐
+# 1.6 生成音乐
 
-### **Suno**
+### Suno
 
-https://www.suno.ai/  需🪜
+https://www.suno.ai/ 需🪜
 
-接入微软 Copilot 插件商店的 ai 生成音乐应用，一句话生成一首歌，很酷。
+接入微软 Copilot 插件商店的 AI 生成音乐应用，一句话生成一首歌，很酷。
 
-202403这段时间 V3 版本上线，又引爆了一轮热潮，几乎是文生音乐最大的一波热度，技术上确实进步明显。
+202403 这段时间 V3 版本上线，又引爆了一轮热潮，几乎是文生音乐最大的一波热度，技术上确实进步明显。
 
 免费体验版有 50 积分/每天，支持生成 5 次 10 首歌曲。每首 2 分钟，可针对单首歌曲继续补充生成。
 
-### **Udio**
+### Udio
 
 https://www.udio.com/ 需🪜
 
-Udio AI是一款由前Google DeepMind工程师开发的革命性AI音乐创作工具，通过文本提示，用户可以快速生成符合自己音乐风格喜好的高质量音乐作品。
+Udio AI 是一款由前 Google DeepMind 工程师开发的革命性 AI 音乐创作工具，通过文本提示，用户可以快速生成符合自己音乐风格喜好的高质量音乐作品。
 
 这工具不仅能生成高质量音乐，还具备简单的视频生成能力，尤其在动态效果的专辑封面方面表现出潜力。
 
-每人每月可以免费生成1200首音乐。
+每人每月可以免费生成 1200 首音乐。
 
-### **海绵音乐**
+### 海绵音乐
 
 https://www.haimian.com/
 
-海绵音乐是由字节跳动最新推出的免费AI音乐创作和分享平台，输入一句话灵感或者歌词，即可快速生成音乐，最大限度拉近每个人同音乐创作的距离。同时，海绵音乐提供了丰富的自定义功能，让每个人都可以一键创作属于自己的 AI 音乐。
+海绵音乐是由字节跳动最新推出的免费 AI 音乐创作和分享平台，输入一句话灵感或者歌词，即可快速生成音乐，最大限度拉近每个人同音乐创作的距离。同时，海绵音乐提供了丰富的自定义功能，让每个人都可以一键创作属于自己的 AI 音乐。
 
 ## 其他
 
-### **MusicFX**
+### MusicFX
 
 https://aitestkitchen.withgoogle.com/tools/music-fx 需🪜
 
@@ -498,7 +499,7 @@ https://aitestkitchen.withgoogle.com/tools/music-fx 需🪜
 
 该工具的目标是让音乐创作变得更加简单和易于访问，即使是没有专业音乐背景的用户也能够通过输入文字描述来生成高质量的原创背景音乐。自 2023 年 12 月推出以来，用户累计已使用 MusicFX 创建了超过 1000 万首曲目。
 
-### **Stable Audio**
+### Stable Audio
 
 https://www.stableaudio.com/ 需🪜
 
@@ -514,27 +515,27 @@ https://imagetomusic.top/ 无需🪜
 
 利用微软的 Kosmos-2-patch14-224 图像识别技术和 HuggingFace 的 Zephyr-7b-beta 语言模型，「将用户上传的图像通过文字描述转化为音乐」。用户可以选择不同的音乐生成模型，如 MAGNet、MusicGen 等，以适应个人喜好和创作需求。
 
-### **Musicfy**
+### Musicfy
 
-https://musicfy.lol/  无需🪜
+https://musicfy.lol/ 无需🪜
 
 Musicfy 帮助用户结合自己的声音创作喜欢风格的音乐。
 
-### **chord.ai**
+### chord.ai
 
 https://chord.ai/ 需🪜
 
 法国公司 Nomad AI 开发的一个音乐工具，利用人工智能技术帮助用户识别任何歌曲的和弦和节拍。这款应用程序使用先进的深度学习算法，为吉他、钢琴、尤克里里等乐器的演奏者提供即时和弦识别，使他们能够更轻松地学习和演奏音乐。
 
-### **天工 Sky Music**
+### 天工 Sky Music
 
 最近刚登场的中国首个音乐大模型，基于昆仑万维「天工 3.0」超级大模型
 
 ---
 
-# 1.7  数字人
+# 1.7 数字人
 
-### **Hedra**
+### Hedra
 
 https://www.hedra.com/
 
@@ -542,7 +543,7 @@ https://www.hedra.com/
 
 数字人生成，免费
 
-### **D-iD**
+### D-iD
 
 https://www.d-id.com/
 
@@ -550,7 +551,7 @@ https://www.d-id.com/
 
 数字人生成，免费
 
-### **HeyGen**
+### HeyGen
 
 https://www.heygen.com/
 
@@ -558,7 +559,7 @@ HeyGen 数字人生成器｜借助人工智能生成的虚拟角色和语音，�
 
 目前只能够支持静态照片说话
 
-### **奇妙元**
+### 奇妙元
 
 https://weta365.com/
 
@@ -568,23 +569,23 @@ https://weta365.com/
 
 ---
 
-# 1.8  2D 变 3D
+# 1.8 2D 变 3D
 
-### **LeiaPix AI**
+### LeiaPix AI
 
 https://www.leiapix.com/ （需施展魔法）
 
 使用 LeiaPix AI 将 2D 图像转换为引人入胜的 3D 动画
 
-### **3DFY**
+### 3DFY
 
 https://3dfy.ai/ （需施展魔法）
 
 ---
 
-# 1.9  其他
+# 1.9 其他
 
-### **DomoAI**
+### DomoAI
 
 https://domoai.app/
 
@@ -594,13 +595,13 @@ https://domoai.app/
 
 # 补充阅读｜案例大开眼：
 
-### **商业广告 demo ：**
+### 商业广告 demo：
 
 [AI 已经能做商业广告视频了](https://www.bilibili.com/video/BV1ct4y1R7mr/?spm_id_from=333.999.0.0&vd_source=5bd86464fb14bc4ab272a83ce82f14af)
 
 首支由 AI 生成的手机 Hi phone 发布
 
-### **影视概念片：**
+### 影视概念片：
 
 [全 AI 生成预告片《创世纪》，7 个小时，mi](https://www.bilibili.com/video/BV1XV411V7rE/?spm_id_from=333.337.search-card.all.click&vd_source=5bd86464fb14bc4ab272a83ce82f14af)djourney ➕Runway 生成。
 
@@ -610,7 +611,7 @@ https://domoai.app/
 
 我用 AI 制作了《星际牛仔》真人版概念片
 
-[顶](https://www.bilibili.com/video/BV1vg4y167vH/?spm_id_from=333.337.search-card.all.click&vd_source=5bd86464fb14bc4ab272a83ce82f14af)级 AI 视频生成， 我用一天时间做了一个诺兰悬疑惊悚 AI 电影预告片， ComfyUI+SVD+Midjourney V6
+[顶](https://www.bilibili.com/video/BV1vg4y167vH/?spm_id_from=333.337.search-card.all.click&vd_source=5bd86464fb14bc4ab272a83ce82f14af)级 AI 视频生成，我用一天时间做了一个诺兰悬疑惊悚 AI 电影预告片，ComfyUI+SVD+Midjourney V6
 
 [《山海奇镜》4K 预告片重制版](https://www.bilibili.com/video/BV1kG411B7sD/?spm_id_from=333.999.0.0&vd_source=5bd86464fb14bc4ab272a83ce82f14af)
 

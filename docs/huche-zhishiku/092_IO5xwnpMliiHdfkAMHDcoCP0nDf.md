@@ -1,3 +1,4 @@
+
 # 胡扯AI
 
 > 来源：[https://huchegames.feishu.cn/docx/VoX2d1q47oTZBOxfdOScbsyTnjf](https://huchegames.feishu.cn/docx/VoX2d1q47oTZBOxfdOScbsyTnjf)
@@ -18,8 +19,8 @@
 
 [胡扯AI共创](https://huchegames.feishu.cn/wiki/WA8ywjFEniGUrtk3CcHcLpe2nZe)，AI 资源的互联网共创尝试。
 
-[AI Prompt & Rules.md](https://huchegames.feishu.cn/wiki/Oazcwk8bZip4H1kbzcvcs48PnJb)，搜集和整理提示词，以及用于 AI Agent 的 rules。
+[`AI Prompt & Rules.md`](https://huchegames.feishu.cn/wiki/Oazcwk8bZip4H1kbzcvcs48PnJb)，搜集和整理提示词，以及用于 AI Agent 的 rules。
 
-# 曾老师的AI工具箱（横向滚动）
+## 曾老师的AI工具箱（横向滚动）
 
 <https://huchegames.feishu.cn/share/base/view/shrcnD5pJxookXqcYmxNqJSa1ob?iframeFrom=docx&ccm_open=iframe>

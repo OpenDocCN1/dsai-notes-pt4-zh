@@ -1,8 +1,7 @@
-# 04.24-消息称 OpenAI 计划今夏初发布开源语言模型，力争推理能力超越同类
-
-> 来源：[https://agijuejin.feishu.cn/docx/AwEHdx0RCogZEoxHTqrc8ygYnWg](https://agijuejin.feishu.cn/docx/AwEHdx0RCogZEoxHTqrc8ygYnWg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 24 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/AwEHdx0RCogZEoxHTqrc8ygYnWg](https://agijuejin.feishu.cn/docx/AwEHdx0RCogZEoxHTqrc8ygYnWg)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

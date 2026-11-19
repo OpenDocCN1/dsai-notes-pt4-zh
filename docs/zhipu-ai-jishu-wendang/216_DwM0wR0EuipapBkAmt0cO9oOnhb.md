@@ -1,3 +1,4 @@
+
 # 开源 · CogVideoX，开源了！
 
 > 来源：[https://ai.feishu.cn/docx/XNrbdkT1foClRZxRAAycfsfvnbh](https://ai.feishu.cn/docx/XNrbdkT1foClRZxRAAycfsfvnbh)
@@ -12,13 +13,13 @@ CogVideoX-2B的提示词上限为226个token，视频长度为6秒，帧率为8�
 
 性能更强参数量更大的模型正在路上，敬请关注与期待。
 
-代码仓库：https://github.com/THUDM/CogVideo
+代码仓库：`https://github.com/THUDM/CogVideo`
 
-模型下载：https://huggingface.co/THUDM/CogVideoX-2b
+模型下载：`https://huggingface.co/THUDM/CogVideoX-2b`
 
-体验链接：[https://huggingface.co/sp](https://huggingface.co/spaces/THUDM/CogVideoX)aces/THUDM/CogVideoX
+体验链接：`https://huggingface.co/spaces/THUDM/CogVideoX`
 
-技术报告：https://github.com/THUDM/CogVideo/blob/main/resources/CogVideoX.pdf
+技术报告：`https://github.com/THUDM/CogVideo/blob/main/resources/CogVideoX.pdf`
 
 ## 模型
 
@@ -34,25 +35,25 @@ CogVideoX-2B的提示词上限为226个token，视频长度为6秒，帧率为8�
 
 ### 专家 Transformer
 
-我们使用VAE的编码器将视频压缩至潜在空间，然后将潜在空间分割成块并展开成长的序列嵌入z_vision。同时，我们使用T5，将文本输入编码为文本嵌入z_text，然后将z_text和z_vision沿序列维度拼接。拼接后的嵌入被送入专家Transformer块堆栈中处理。最后，我们反向拼接嵌入来恢复原始潜在空间形状，并使用VAE进行解码以重建视频。
+我们使用VAE的编码器将视频压缩至潜在空间，然后将潜在空间分割成块并展开成长的序列嵌入`z_vision`。同时，我们使用T5，将文本输入编码为文本嵌入`z_text`，然后将`z_text`和`z_vision`沿序列维度拼接。拼接后的嵌入被送入专家Transformer块堆栈中处理。最后，我们反向拼接嵌入来恢复原始潜在空间形状，并使用VAE进行解码以重建视频。
 
 ![](img/2a44266ee534cc8ae6b2df909e87f6c0.png)
 
 添加图片注释，不超过 140 字（可选）
 
-###  Data
+### Data
 
-视频生成模型训练需筛选高质量视频数据，以学习真实世界动态。视频可能因人工编辑或拍摄问题而不准确。我们开发了负面标签来识别和排除低质量视频，如过度编辑、运动不连贯、质量低下、讲座式、文本主导和屏幕噪音视频。通过video-llama训练的过滤器，我们标注并筛选了20,000个视频数据点。同时，计算光流和美学分数，动态调整阈值，确保生成视频的质量。
+视频生成模型训练需筛选高质量视频数据，以学习真实世界动态。视频可能因人工编辑或拍摄问题而不准确。我们开发了负面标签来识别和排除低质量视频，如过度编辑、运动不连贯、质量低下、讲座式、文本主导和屏幕噪音视频。通过`video-llama`训练的过滤器，我们标注并筛选了20,000个视频数据点。同时，计算光流和美学分数，动态调整阈值，确保生成视频的质量。
 
-视频数据通常没有文本描述，需要转换为文本描述以供文本到视频模型训练。现有的视频字幕数据集字幕较短，无法全面描述视频内容。我们提出了一种从图像字幕生成视频字幕的管道，并微调端到端的视频字幕模型以获得更密集的字幕。这种方法通过Panda70M模型生成简短字幕，使用CogView3模型生成密集图像字幕，然后使用GPT-4模型总结生成最终的短视频。我们还微调了一个基于CogVLM2-Video和Llama 3的CogVLM2-Caption模型，使用密集字幕数据进行训练，以加速视频字幕生成过程。
+视频数据通常没有文本描述，需要转换为文本描述以供文本到视频模型训练。现有的视频字幕数据集字幕较短，无法全面描述视频内容。我们提出了一种从图像字幕生成视频字幕的管道，并微调端到端的视频字幕模型以获得更密集的字幕。这种方法通过`Panda70M`模型生成简短字幕，使用`CogView3`模型生成密集图像字幕，然后使用`GPT-4`模型总结生成最终的短视频。我们还微调了一个基于`CogVLM2-Video`和`Llama 3`的`CogVLM2-Caption`模型，使用密集字幕数据进行训练，以加速视频字幕生成过程。
 
 ![](img/208d29fddc773626a73a6d5737dbd553.png)
 
 添加图片注释，不超过 140 字（可选）
 
-##  性能
+## 性能
 
-为了评估文本到视频生成的质量，我们使用了VBench中的多个指标，如人类动作、场景、动态程度等。我们还使用了两个额外的视频评估工具：Devil 中的 Dynamic Quality 和 Chrono-Magic 中的 GPT4o-MT Score，这些工具专注于视频的动态特性。如下表所示。
+为了评估文本到视频生成的质量，我们使用了`VBench`中的多个指标，如人类动作、场景、动态程度等。我们还使用了两个额外的视频评估工具：`Devil` 中的 Dynamic Quality 和 `Chrono-Magic` 中的 `GPT4o-MT Score`，这些工具专注于视频的动态特性。如下表所示。
 
 ![](img/8bf59d87ff0a0bac7c5c5f7a583e66cf.png)
 
@@ -68,33 +69,32 @@ A detailed wooden toy ship with intricately carved masts and sails is seen glidi
 
 ![](img/f4092a26b3dd7d7d6e64a98bde2c60a3.png)
 
-[飞书20240802-161309.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Opy0bVQakok8LPxeu8BcfrDGnXd)
+[`飞书20240802-161309.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Opy0bVQakok8LPxeu8BcfrDGnXd)
 
 The camera follows behind a white vintage SUV with a black roof rack as it speeds up a steep dirt road surrounded by pine trees on a steep mountain slope, dust kicks up from it’s tires, the sunlight shines on the SUV as it speeds along the dirt road, casting a warm glow over the scene. The dirt road curves gently into the distance, with no other cars or vehicles in sight. The trees on either side of the road are redwoods, with patches of greenery scattered throughout. The car is seen from the rear following the curve with ease, making it seem as if it is on a rugged drive through the rugged terrain. The dirt road itself is surrounded by steep hills and mountains, with a clear blue sky above with wispy clouds.
 
 ![](img/c6eaf516869438da3577454bfa29e08d.png)
 
-[飞书20240802-161307.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P2UXbhlEVo3yBAx70kWcitXRnXb)
+[`飞书20240802-161307.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P2UXbhlEVo3yBAx70kWcitXRnXb)
 
 In the haunting backdrop of a war-torn city, where ruins and crumbled walls tell a story of devastation, a poignant close-up frames a young girl. Her face is smudged with ash, a silent testament to the chaos around her. Her eyes glistening with a mix of sorrow and resilience, capturing the raw emotion of a world that has lost its innocence to the ravages of conflict.
 
 ![](img/2afda885aa0928a7c4a537b3429d38b5.png)
 
-[飞书20240802-161258.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AgjJbW2PKo7rh3xhwJLcD8h8nAe)
+[`飞书20240802-161258.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AgjJbW2PKo7rh3xhwJLcD8h8nAe)
 
 A single butterfly with wings that resemble stained glass flutters through a field of flowers. The shot captures the light as it passes through the delicate wings, creating a vibrant, colorful display. HD.
 
-
-[000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwwZbf02zobe0axk1cUc7CQHn2b)
+[`000000.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwwZbf02zobe0axk1cUc7CQHn2b)
 
 A snowy forest landscape with a dirt road running through it. The road is flanked by trees covered in snow, and the ground is also covered in snow. The sun is shining, creating a bright and serene atmosphere. The road appears to be empty, and there are no people or animals visible in the video. The style of the video is a natural landscape shot, with a focus on the beauty of the snowy forest and the peacefulness of the road.
 
 ![](img/f4d7f51628cd9c1f57d9f347328f4739.png)
 
-[000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q4hnbQCCRolr85xe6XrcRRUYnHw)
+[`000000.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q4hnbQCCRolr85xe6XrcRRUYnHw)
 
 Extreme close-up of chicken and green pepper kebabs grilling on a barbeque with flames. Shallow focus and light smoke. vivid colours
 
 ![](img/93876510553a67d2036851ebffc8c11b.png)
 
-[000000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StMmbTngloPwoaxv0xMcDSHznGc)
+[`000000.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StMmbTngloPwoaxv0xMcDSHznGc)

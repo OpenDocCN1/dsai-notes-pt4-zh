@@ -1,12 +1,13 @@
+
 # 从答案机到思维启发器：高中老师的AI编程探索之路
 
-> 来源：[https://now.feishu.cn/docx/Shv3dDtepoEleUxJQWAcstBlnTe](https://now.feishu.cn/docx/Shv3dDtepoEleUxJQWAcstBlnTe)
+> 来源：[`https://now.feishu.cn/docx/Shv3dDtepoEleUxJQWAcstBlnTe`](https://now.feishu.cn/docx/Shv3dDtepoEleUxJQWAcstBlnTe)
 
 Shadow：大家好，在过去12天，我把费曼学习法融入了AIGC的课程里，全面采用这种学习方式，作为改进版，融入和人机协作一起学习的方式。
 
 这次，我抽空回访了AI编程训练营的Ryan。**他参加了我们3个月前的一期**，作为一名有着8年教学经验的高中数学老师，他对AI技术既充满期待又心存疑虑。当AI正在深刻改变教育行业的时候，这位一线教师是如何看待和运用这些新技术的？看看的真实体验和思考~
 
-——
+---
 
 Shadow： Ryan，还记得4月份参加训练营的初衷吗？
 

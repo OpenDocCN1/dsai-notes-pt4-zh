@@ -1,3 +1,4 @@
+
 # 能语音聊天🎧的赛博老婆💑一键制作！
 
 > 来源：[https://my.feishu.cn/docx/DARodOygHoxi1axQEBFcIfOQnS5](https://my.feishu.cn/docx/DARodOygHoxi1axQEBFcIfOQnS5)
@@ -10,7 +11,7 @@
 
 ![](img/cd07f11c34a97ea2740ec73e363a84c5.png)
 
-### 上手体验链接🎁
+## 上手体验链接🎁
 
 会唱跳rap篮球的活泼派蒙：[与派蒙聊天](https://m.glowapp.fun/chat?npc_id=7416943&channel_label=share_npc_profile&share_user_id=8930639) https://m.glowapp.fun/chat?npc_id=7416943&channel_label=share_npc_profile&share_user_id=8930639
 
@@ -22,19 +23,17 @@
 
 粘人的小猫咪大黄：[与大黄聊天](https://m.glowapp.fun/chat?npc_id=7426481&channel_label=share_npc_profile&share_user_id=8930639) https://m.glowapp.fun/chat?npc_id=7426481&channel_label=share_npc_profile&share_user_id=8930639
 
-### 如何在手机app上使用👇
+## 如何在手机app上使用👇
 
-1.首先下载app（目前只能下载，没pc和网页端）：https://www.glowapp.tech/
-
-2.然后注册账号就能用了👉目前不支持更改用户名和头像。
-
-3.有需要的话，创建你的模型（智能体）👇
+1. 首先下载app（目前只能下载，没pc和网页端）：https://www.glowapp.tech/
+2. 然后注册账号就能用了👉目前不支持更改用户名和头像。
+3. 有需要的话，创建你的模型（智能体）👇
 
 这里要注意一下，**每人只能创建5个模型！**
 
-### 人物制作教程💻
+## 人物制作教程💻
 
-#### 要遵守法律法规
+### 要遵守法律法规
 
 名字也不能侵权，不然会被封（监管还是比较严的，只因两个字也会违规）：
 
@@ -58,7 +57,7 @@
 
 大家还是不要做一些太过分的事情了👮‍♀️
 
-#### 设定人物特点
+### 设定人物特点
 
 首先设定昵称、性别、私密范围和初始设定，初始设定内容会在这个模型介绍页面透出👇
 
@@ -72,7 +71,7 @@
 
 ![](img/925c4b8dc6fa867a546e64b86711a06c.png)
 
-prompt比较简单：请为XXX写一份简介，需要包含这些条件：人物背景、性格、爱好以及一段特殊的经历，总共字数不得超过100字
+`prompt`比较简单：`请为XXX写一份简介，需要包含这些条件：人物背景、性格、爱好以及一段特殊的经历，总共字数不得超过100字`
 
 如果你有指定比如💖温柔、粘人之类的设定，直接丢就好，鸡屁踢、克劳德会帮你优化😑
 

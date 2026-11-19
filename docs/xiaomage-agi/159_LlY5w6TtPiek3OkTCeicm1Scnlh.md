@@ -1,23 +1,15 @@
+
 # Sora视听语言提示词
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/I4JqdMfH1oNLmKxygHEchN7unCe](https://xmgtoagi.feishu.cn/docx/I4JqdMfH1oNLmKxygHEchN7unCe)
-
 > 野菩萨出品：必须点赞关注
-
 > 原文 https://www.xiaohongshu.com/explore/65d0e79b000000000702665d
-
 > SORA 的诞生震惊了世界与其猜测其功能
-
 > 试图用民科推断其底层
-
 > 普通创作者更应该思考未来全民影像时代
-
 > 应该如何增加创作优势
-
 > 无论Sora是否支持，这些概念大家必须知道
-
 > 今天就是准备为大家碎片式的补补课
-
 > 如果你是 STA BFA CAD 三校毕业这篇不适合你
 
 方便使用整理成了表格，可以直接跳到下方图片正文：

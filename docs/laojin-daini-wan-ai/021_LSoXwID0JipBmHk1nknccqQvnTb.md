@@ -1,18 +1,17 @@
-# 快速开始指南
-
-> 来源：[https://my.feishu.cn/docx/SpqedVRnOoptswxAYhSclYTVn2c](https://my.feishu.cn/docx/SpqedVRnOoptswxAYhSclYTVn2c)
 
 # 03. 快速开始指南
 
-> 🟢 难**度：入门 **| ⏱️ 阅读时间：10 分钟 | 📋 前置知识：已完成安装（02-安装部署指南）
+> 来源：`https://my.feishu.cn/docx/SpqedVRnOoptswxAYhSclYTVn2c`
 
-> **本篇你将学会：** 运行引导向导、启动 Gateway、发送第一条消息、基本的日常操作命令
+> 🟢 难度：入门 | ⏱️ 阅读时间：10 分钟 | 📋 前置知识：已完成安装（02-安装部署指南）
 
-> **这是最重要的一篇！** 跟着做完前 3 步，你就有一个能聊天的 AI 助手了
+> 本篇你将学会：运行引导向导、启动 `Gateway`、发送第一条消息、基本的日常操作命令
+
+> 这是最重要的一篇！跟着做完前 3 步，你就有一个能聊天的 AI 助手了
 
 ## 5 分钟跑起第一个对话
 
-安装完 OpenClaw 后，只需要 3 步就能开始聊天。别急，我们一步步来，每步都讲清楚。
+安装完 `OpenClaw` 后，只需要 3 步就能开始聊天。别急，我们一步步来，每步都讲清楚。
 
 ---
 
@@ -24,19 +23,19 @@ openclaw onboard --install-daemon
 
 这条命令做了两件事：
 
-+   onboard — 启动交互式引导向导
++   `onboard` — 启动交互式引导向导
 
-+   --install-daemon — 把 Gateway 注册为系统服务（开机自启）
++   `--install-daemon` — 把 `Gateway` 注册为系统服务（开机自启）
 
-> 💡 术**语解释：**
+> 💡 术语解释：
 
-+   **Gateway（网关）**：OpenClaw 的核心后台服务，负责接收你的消息、调用 AI 模型、返回回复。你可以把它理解为"AI 助手的大脑"，它在后台持续运行。
++   `Gateway`（网关）：`OpenClaw` 的核心后台服务，负责接收你的消息、调用 AI 模型、返回回复。你可以把它理解为"AI 助手的大脑"，它在后台持续运行。
 
-+   **daemon（守护进程）**：一种在后台默默运行的程序，不需要你手动启动，开机就自动跑起来。
++   `daemon`（守护进程）：一种在后台默默运行的程序，不需要你手动启动，开机就自动跑起来。
 
 向导会依次引导你完成以下配置：
 
-**1. 选择 AI 模型提供商**
+#### 1. 选择 AI 模型提供商
 
 ```
 ? Select your AI provider:
@@ -48,25 +47,25 @@ openclaw onboard --install-daemon
     其他...
 ```
 
-新手建议选 OpenAI 或 Anthropic，生态最成熟。预算有限选 Ollama（免费本地模型）。
+新手建议选 `OpenAI` 或 `Anthropic`，生态最成熟。预算有限选 `Ollama`（免费本地模型）。
 
-**2. 输入 API Key**
+#### 2. 输入 API Key
 
-> 💡 术**语解释： **A**PI Key（API 密钥） **是 AI 模型提供商给你的一串"通行证"字符串。有了它，OpenClaw 才能代替你调用 AI 模型。每个提供商的 Key 格式不同，注意保密，不要分享给别人。
+> 💡 术语解释：`API Key`（API 密钥）是 AI 模型提供商给你的一串"通行证"字符串。有了它，`OpenClaw` 才能代替你调用 AI 模型。每个提供商的 Key 格式不同，注意保密，不要分享给别人。
 
 ```
 ? Enter your OpenAI API Key: sk-proj-xxxxx
 ```
 
-API Key 会加密存储在 ~/.openclaw/openclaw.json 中。如果你还没有 Key：
+`API Key` 会加密存储在 `~/.openclaw/openclaw.json` 中。如果你还没有 Key：
 
-+   OpenAI: platform.openai.com
++   `OpenAI`: platform.openai.com
 
-+   Anthropic: console.anthropic.com
++   `Anthropic`: console.anthropic.com
 
-+   Google: aistudio.google.com
++   `Google`: aistudio.google.com
 
-3. 配置 Gateway 设置
+#### 3. 配置 Gateway 设置
 
 ```
 ? Gateway port (default 18789):
@@ -74,15 +73,15 @@ API Key 会加密存储在 ~/.openclaw/openclaw.json 中。如果你还没有 Ke
 ? Enable TLS? (Y/n): Y
 ```
 
-直接回车用默认值就行。Gateway Token 会自动生成一个随机字符串，用于保护你的 API 接口。
+直接回车用默认值就行。`Gateway Token` 会自动生成一个随机字符串，用于保护你的 API 接口。
 
-> 💡 术**语解释：**
+> 💡 术语解释：
 
-+   **Gateway Token**：相当于你家大门的钥匙，只有拿着这个 Token 的请求才能访问你的 Gateway，防止别人未经授权使用你的 AI 服务。
++   `Gateway Token`：相当于你家大门的钥匙，只有拿着这个 `Token` 的请求才能访问你的 `Gateway`，防止别人未经授权使用你的 AI 服务。
 
-+   **TLS**：一种网络加密协议，开启后你和 Gateway 之间的通信会被加密，防止被窃听。类似于浏览器地址栏的 🔒 小锁。
++   `TLS`：一种网络加密协议，开启后你和 `Gateway` 之间的通信会被加密，防止被窃听。类似于浏览器地址栏的 🔒 小锁。
 
-**4. 可选：连接消息平台**
+#### 4. 可选：连接消息平台
 
 ```
 ? Connect a messaging platform now? (y/N):
@@ -94,7 +93,7 @@ API Key 会加密存储在 ~/.openclaw/openclaw.json 中。如果你还没有 Ke
     飞书 (Feishu)
 ```
 
-第一次用建议先跳过，等熟悉了再接入。后面可以随时用 openclaw channels add 添加。
+第一次用建议先跳过，等熟悉了再接入。后面可以随时用 `openclaw channels add` 添加。
 
 向导完成后，你会看到：
 
@@ -107,7 +106,7 @@ API Key 会加密存储在 ~/.openclaw/openclaw.json 中。如果你还没有 Ke
 🦞 OpenClaw is ready! Open http://127.0.0.1:18789/ to start chatting.
 ```
 
-> ✅ **检查点：** 如果你看到了 🦞 OpenClaw is ready! 的输出，说明一切正常。如果没有，去看 11-常见问题FAQ 的 Q1-Q5。
+> ✅ 检查点：如果你看到了 `🦞 OpenClaw is ready!` 的输出，说明一切正常。如果没有，去看 11-常见问题FAQ 的 Q1-Q5。
 
 ### 第二步：检查 Gateway 状态
 
@@ -127,46 +126,46 @@ Gateway Status: running
   Channels: 0 connected
 ```
 
-看到 running 就说明网关已经启动了。如果显示 stopped，手动启动：
+看到 `running` 就说明网关已经启动了。如果显示 `stopped`，手动启动：
 
 ```
 openclaw gateway --port 18789
 ```
 
-> ✅ **检查点：** 运行 openclaw status 后，看到 Gateway Status: running 就对了。如果是 stopped 或 error，参考下面的状态表格处理。
+> ✅ 检查点：运行 `openclaw status` 后，看到 `Gateway Status: running` 就对了。如果是 `stopped` 或 `error`，参考下面的状态表格处理。
 
 常见状态说明：
 
 | 状态 | 含义 | 处理方式 |
 | --- | --- | --- |
-| running | 正常运行 | 无需操作 |
-| stopped | 已停止 | openclaw gateway --port 18789 |
-| error | 启动失败 | 查看日志 openclaw gateway --port 18789 --verbose |
-| starting | 正在启动 | 等待几秒后重新检查 |
+| `running` | 正常运行 | 无需操作 |
+| `stopped` | 已停止 | `openclaw gateway --port 18789` |
+| `error` | 启动失败 | 查看日志 `openclaw gateway --port 18789 --verbose` |
+| `starting` | 正在启动 | 等待几秒后重新检查 |
 
 ### 第三步：打开 Control UI
 
-> 💡 术**语解释： **C**ontrol UI **是 OpenClaw 自带的网页管理界面，在浏览器里打开就能用，不需要额外安装任何东西。你可以在这里和 AI 聊天、管理设置、查看状态。
+> 💡 术语解释：`Control UI` 是 `OpenClaw` 自带的网页管理界面，在浏览器里打开就能用，不需要额外安装任何东西。你可以在这里和 AI 聊天、管理设置、查看状态。
 
-Gateway 启动后，在浏览器中打开 http://127.0.0.1:18789/，这就是你的 AI 助手 Control UI。
+`Gateway` 启动后，在浏览器中打开 `http://127.0.0.1:18789/`，这就是你的 AI 助手 `Control UI`。
 
-如果浏览器没有自动打开，手动在浏览器地址栏输入 http://127.0.0.1:18789/ 即可。
+如果浏览器没有自动打开，手动在浏览器地址栏输入 `http://127.0.0.1:18789/` 即可。
 
 直接在输入框里打字，开始和 AI 对话。
 
-> ✅ **检查点：** 浏览器打开后能看到一个聊天界面，输入框可以打字，说明前 3 步全部完成！你已经有一个能聊天的 AI 助手了。🎉
+> ✅ 检查点：浏览器打开后能看到一个聊天界面，输入框可以打字，说明前 3 步全部完成！你已经有一个能聊天的 AI 助手了。🎉
 
 ---
 
 ## Control UI 完整功能介绍
 
-> 💡 术**语解释：**
+> 💡 术语解释：
 
-+   **Agent（智能体）**：你的 AI 助手实例。一个 Agent 就是一个独立的 AI 角色，有自己的人格设定、记忆和工作空间。你可以创建多个 Agent 来处理不同任务。
++   `Agent`（智能体）：你的 AI 助手实例。一个 `Agent` 就是一个独立的 AI 角色，有自己的人格设定、记忆和工作空间。你可以创建多个 `Agent` 来处理不同任务。
 
-+   **技能（Skill）**：Agent 的"超能力"插件。比如查天气、搜网页、操作文件等，每个技能让 AI 多会一样本事。
++   `技能`（`Skill`）：`Agent` 的"超能力"插件。比如查天气、搜网页、操作文件等，每个 `技能` 让 AI 多会一样本事。
 
-打开 http://127.0.0.1:18789/ 后，你会看到一个简洁的 Web 界面。下面逐一介绍每个功能区域。
+打开 `http://127.0.0.1:18789/` 后，你会看到一个简洁的 Web 界面。下面逐一介绍每个功能区域。
 
 ### 聊天界面（主页面）
 
@@ -174,47 +173,47 @@ Gateway 启动后，在浏览器中打开 http://127.0.0.1:18789/，这就是你
 
 功能特性：
 
-+   **实时流式输出** — AI 的回复逐字显示，不用等全部生成完
++   实时流式输出 — AI 的回复逐字显示，不用等全部生成完
 
-+   **Markdown 渲染** — 代码块、表格、列表都会正确渲染
++   `Markdown` 渲染 — 代码块、表格、列表都会正确渲染
 
-+   **多轮对话** — 上下文自动保持，AI 记得你之前说了什么
++   多轮对话 — 上下文自动保持，AI 记得你之前说了什么
 
-+   **文件上传** — 拖拽文件到输入框，AI 可以分析文件内容
++   文件上传 — 拖拽文件到输入框，AI 可以分析文件内容
 
-+   **语音输入** — 点击麦克风图标，语音转文字发送
++   语音输入 — 点击麦克风图标，语音转文字发送
 
 快捷键：
 
 | 快捷键 | 功能 |
 | --- | --- |
-| Enter | 发送消息 |
-| Shift + Enter | 换行（不发送） |
-| Ctrl + L | 清空当前对话 |
-| Ctrl + K | 打开命令面板 |
-| Ctrl + / | 显示快捷键列表 |
+| `Enter` | 发送消息 |
+| `Shift + Enter` | 换行（不发送） |
+| `Ctrl + L` | 清空当前对话 |
+| `Ctrl + K` | 打开命令面板 |
+| `Ctrl + /` | 显示快捷键列表 |
 
 ### 设置面板
 
 点击左下角的齿轮图标进入设置，包含以下配置项：
 
-**模型设置** — 切换模型提供商、调整温度/Token 参数、配置故障转移
+`模型设置` — 切换模型提供商、调整温度/`Token` 参数、配置故障转移
 
-**平台连接** — 查看已连接平台状态、添加/移除连接、配置消息路由
+`平台连接` — 查看已连接平台状态、添加/移除连接、配置消息路由
 
-**技能管理** — 查看已安装技能、启用/禁用、安装新技能
+`技能管理` — 查看已安装技能、启用/禁用、安装新技能
 
-**安全设置** — Gateway Token 管理、配对审批、沙箱隔离配置
+`安全设置` — `Gateway Token` 管理、配对审批、沙箱隔离配置
 
-> 💡 术**语解释： **沙**箱（Sandbox） **是一种安全隔离机制，让 AI 在一个受限的环境中执行操作，防止它误操作你的系统文件。类似于给 AI 划了一个"安全活动区"。
+> 💡 术语解释：`沙箱`（`Sandbox`）是一种安全隔离机制，让 AI 在一个受限的环境中执行操作，防止它误操作你的系统文件。类似于给 AI 划了一个"安全活动区"。
 
 ### 会话管理
 
-点击左侧边栏的会话列表图标，可以查看所有对话历史、全文搜索、导出为 Markdown/JSON、删除旧对话、给对话打标签分类。
+点击左侧边栏的会话列表图标，可以查看所有对话历史、全文搜索、导出为 `Markdown`/`JSON`、删除旧对话、给对话打标签分类。
 
 ### 系统状态
 
-点击左下角的状态指示灯，查看 Gateway 运行状态（CPU、内存、运行时间）、已连接平台状态、模型使用统计（API 调用次数、Token 消耗、费用估算）、Agent 列表。
+点击左下角的状态指示灯，查看 `Gateway` 运行状态（`CPU`、`内存`、`运行时间`）、已连接平台状态、模型使用统计（API 调用次数、`Token` 消耗、费用估算）、`Agent` 列表。
 
 ---
 
@@ -226,22 +225,22 @@ Gateway 启动后，在浏览器中打开 http://127.0.0.1:18789/，这就是你
 
 ```
 openclaw status
-# 确认输出包含 &quot;running&quot;
+# 确认输出包含 "running"
 ```
 
 ### 2. 打开 Control UI
 
-在浏览器中打开 http://127.0.0.1:18789/。
+在浏览器中打开 `http://127.0.0.1:18789/`。
 
 ### 3. 检查模型配置
 
-在 Control UI 的设置中，确认：
+在 `Control UI` 的设置中，确认：
 
-+   AI 提供商已选择（比如 OpenAI）
++   AI 提供商已选择（比如 `OpenAI`）
 
-+   API Key 已填写
++   `API Key` 已填写
 
-+   模型已选择（比如 gpt-5.2）
++   模型已选择（比如 `gpt-5.2`）
 
 也可以用命令行检查：
 
@@ -255,7 +254,7 @@ openclaw config get agents.defaults.model
 
 ### 4. 发送第一条消息
 
-在 Control UI 的输入框中输入：
+在 `Control UI` 的输入框中输入：
 
 ```
 你好！请做一下自我介绍。
@@ -276,7 +275,7 @@ AI 会流式回复，类似这样：
 有什么我可以帮你的吗？
 ```
 
-> ✅ **检查点：** 如果 AI 回复了你的消息，恭喜！你的 OpenClaw 已经完全跑通了。如果没有回复或报错，检查 API Key 是否正确：运行 openclaw doctor 进行诊断。
+> ✅ 检查点：如果 AI 回复了你的消息，恭喜！你的 `OpenClaw` 已经完全跑通了。如果没有回复或报错，检查 `API Key` 是否正确：运行 `openclaw doctor` 进行诊断。
 
 ### 5. 试试工具调用
 
@@ -286,50 +285,53 @@ AI 不只是聊天，它还能执行操作。试试这些：
 今天天气怎么样？
 ```
 
-如果安装了 weather 技能，AI 会调用天气 API 返回实时天气。
+如果安装了 `weather` 技能，AI 会调用天气 API 返回实时天气。
 
 ```
-帮我在工作空间创建一个 todo.md 文件，列出今天要做的事情。
+帮我在工作空间创建一个 `todo.md` 文件，列出今天要做的事情。
 ```
 
-AI 会使用文件工具在 ~/.openclaw/workspace/ 下创建文件。
+AI 会使用文件工具在 `~/.openclaw/workspace/` 下创建文件。
 
 ### 6. 通过命令行发送消息
 
-除了 Control UI，你也可以用命令行和 AI 对话：
+除了 `Control UI`，你也可以用命令行和 AI 对话：
 
 ```
 # 发送消息并等待回复
-openclaw agent --message &quot;帮我写一个 Python 的 Hello World&quot;
+openclaw agent --message "帮我写一个 Python 的 Hello World"
 
 # 使用高级思考模式
-openclaw agent --message &quot;帮我写一个快速排序&quot; --thinking high
+openclaw agent --message "帮我写一个快速排序" --thinking high
 ```
 
 在聊天界面中，你可以使用斜杠命令控制会话：
 
-```
-/status          — 查看会话状态
-/new 或 /reset   — 重置会话
-/compact         — 压缩会话上下文
-/think high      — 设置思考级别（off|minimal|low|medium|high|xhigh）
-/verbose on      — 开启详细输出
-/usage tokens    — 显示 Token 使用量（off|tokens|full）
-```
+`/status` — 查看会话状态
+
+`/new` 或 `/reset` — 重置会话
+
+`/compact` — 压缩会话上下文
+
+`/think high` — 设置思考级别（`off`|`minimal`|`low`|`medium`|`high`|`xhigh`）
+
+`/verbose on` — 开启详细输出
+
+`/usage tokens` — 显示 `Token` 使用量（`off`|`tokens`|`full`）
 
 ### 7. 发送测试消息到消息平台
 
-如果你已经配置了消息平台（比如 WhatsApp），可以用命令行发送测试消息：
+如果你已经配置了消息平台（比如 `WhatsApp`），可以用命令行发送测试消息：
 
 ```
-openclaw message send --to +86138xxxx0000 --message &quot;你好，我是你的 AI 助手！&quot;
+openclaw message send --to +86138xxxx0000 --message "你好，我是你的 AI 助手！"
 ```
 
 ---
 
 ## CLI 命令速查
 
-OpenClaw 的命令行工具功能强大，以下是常用命令的完整参考。
+`OpenClaw` 的命令行工具功能强大，以下是常用命令的完整参考。
 
 ### 基础命令
 
@@ -377,29 +379,34 @@ openclaw gateway --port 18789 --verbose  # 启动 Gateway（详细日志）
 openclaw config get agents.defaults.model
 
 # 设置 / 删除配置
-openclaw config set agents.defaults.model &quot;anthropic/claude-opus-4-6&quot;
+openclaw config set agents.defaults.model "anthropic/claude-opus-4-6"
 openclaw config unset agents.defaults.model
 ```
 
 ### Agent 命令
 
 ```
-openclaw agent --message &quot;你好&quot;                          # 发送单条消息
-openclaw agent --message &quot;帮我写代码&quot; --thinking high    # 使用高级思考模式
+openclaw agent --message "你好"                          # 发送单条消息
+openclaw agent --message "帮我写代码" --thinking high    # 使用高级思考模式
 ```
 
 ### 聊天命令（会话内斜杠命令）
 
-```
-/status                  — 查看会话状态
-/new 或 /reset           — 重置会话
-/compact                 — 压缩会话上下文
-/think &lt;level&gt;           — 设置思考级别（off|minimal|low|medium|high|xhigh）
-/verbose on|off          — 详细输出开关
-/usage off|tokens|full   — 使用量显示
-/restart                 — 重启 Gateway
-/activation mention|always — 群组激活模式
-```
+`/status` — 查看会话状态
+
+`/new` 或 `/reset` — 重置会话
+
+`/compact` — 压缩会话上下文
+
+`/think <level>` — 设置思考级别（`off`|`minimal`|`low`|`medium`|`high`|`xhigh`）
+
+`/verbose on|off` — 详细输出开关
+
+`/usage off|tokens|full` — 使用量显示
+
+`/restart` — 重启 `Gateway`
+
+`/activation mention|always` — 群组激活模式
 
 ### 消息平台管理
 
@@ -413,14 +420,14 @@ openclaw channels login telegram
 openclaw channels logout telegram
 
 # 发送消息
-openclaw message send --to +86138xxxx0000 --message &quot;测试消息&quot;
+openclaw message send --to +86138xxxx0000 --message "测试消息"
 ```
 
 ### Agent 管理
 
 ```
-openclaw agents list              # 查看 Agent 列表
-openclaw agents add coding        # 创建新 Agent
+openclaw agents list              # 查看 `Agent` 列表
+openclaw agents add coding        # 创建新 `Agent`
 ```
 
 ### 技能管理
@@ -436,18 +443,21 @@ openclaw skills check                              # 检查技能状态
 ```
 openclaw memory status                   # 查看记忆状态
 openclaw memory index                    # 索引记忆
-openclaw memory search &quot;关键词&quot;          # 搜索记忆
+openclaw memory search "关键词"          # 搜索记忆
 ```
 
 ### 模型管理
 
 ```
 openclaw models list                     # 查看可用模型
-openclaw models status                   # 查看模型状态
+openclaw models status                   # 查看模状态
 openclaw models set anthropic/claude-opus-4-6  # 设置默认模型
 ```
 
 ### 会话与系统维护
+
+
+
 
 ```
 # 会话管理
@@ -460,47 +470,45 @@ openclaw health                          # 健康检查
 openclaw doctor                          # 诊断
 ```
 
----
-
 ## 配置文件详解
 
 > ⏭️ **小白可跳过** — 默认配置已经够用了
 
-OpenClaw 的所有配置都存储在一个 JSON5 文件中：~/.openclaw/openclaw.json。
+OpenClaw 的所有配置都存储在一个 JSON5 文件中：`~/.openclaw/openclaw.json`。
 
-> 💡 术**语解释： **J**SON5 **是 JSON 的增强版，支持注释和尾逗号，写起来更方便。你可以把它当成普通的配置文件来编辑，用任何文本编辑器打开就行。
+> 💡 术语解释：JSON5 是 JSON 的增强版，支持注释和尾逗号，写起来更方便。你可以把它当成普通的配置文件来编辑，用任何文本编辑器打开就行。
 
 ### 配置文件完整结构
 
-```
+```json5
 {
   gateway: {
-    bind: &quot;127.0.0.1&quot;,
+    bind: "127.0.0.1",
     port: 18789,
     auth: {
-      token: &quot;auto-generated-random-token&quot;,
+      token: "auto-generated-random-token",
     },
   },
   channels: {
     telegram: {
-      botToken: &quot;123456:ABCDEF&quot;,
+      botToken: "123456:ABCDEF",
     },
   },
   agents: {
     defaults: {
-      model: &quot;anthropic/claude-opus-4-6&quot;,
+      model: "anthropic/claude-opus-4-6",
       compaction: {
         reserveTokensFloor: 20000,
         memoryFlush: { enabled: true, softThresholdTokens: 4000 },
       },
-      sandbox: { mode: &quot;off&quot; },
+      sandbox: { mode: "off" },
     },
     list: [
-      { id: &quot;main&quot;, workspace: &quot;~/.openclaw/workspace&quot; },
+      { id: "main", workspace: "~/.openclaw/workspace" },
     ],
   },
   plugins: {
-    slots: { memory: &quot;memory-core&quot; },
+    slots: { memory: "memory-core" },
   },
 }
 ```
@@ -508,12 +516,18 @@ OpenClaw 的所有配置都存储在一个 JSON5 文件中：~/.openclaw/opencla
 ### 各配置块说明
 
 | 配置块 | 用途 | 关键字段 |
+
 | --- | --- | --- |
-| gateway | 网关服务设置 | bind, port, auth.token |
-| channels | 消息平台配置 | 各平台的连接信息（如 telegram.botToken） |
-| agents.defaults | Agent 默认配置 | model, compaction, sandbox |
-| agents.list | Agent 列表 | id, workspace |
-| plugins | 插件配置 | slots 中的各插件槽位 |
+
+| `gateway` | 网关服务设置 | `bind`, `port`, `auth.token` |
+
+| `channels` | 消息平台配置 | 各平台的连接信息（如 `telegram.botToken`） |
+
+| `agents.defaults` | Agent 默认配置 | `model`, `compaction`, `sandbox` |
+
+| `agents.list` | Agent 列表 | `id`, `workspace` |
+
+| `plugins` | 插件配置 | `slots` 中的各插件槽位 |
 
 ### 环境变量覆盖
 
@@ -521,7 +535,7 @@ OpenClaw 的所有配置都存储在一个 JSON5 文件中：~/.openclaw/opencla
 
 配置文件中的值可以用环境变量覆盖，环境变量优先级更高：
 
-```
+```bash
 # 设置 OpenClaw 主目录（默认 ~/.openclaw）
 export OPENCLAW_HOME=/path/to/your/home
 
@@ -532,12 +546,12 @@ export OPENCLAW_STATE_DIR=/path/to/state
 export OPENCLAW_CONFIG_PATH=/path/to/openclaw.json
 
 # AI 提供商 Key（推荐用环境变量，比写在配置文件里更安全）
-export OPENAI_API_KEY=&quot;sk-proj-xxxxx&quot;
-export ANTHROPIC_API_KEY=&quot;sk-ant-xxxxx&quot;
-export GEMINI_API_KEY=&quot;AIzaSy-xxxxx&quot;
+export OPENAI_API_KEY="sk-proj-xxxxx"
+export ANTHROPIC_API_KEY="sk-ant-xxxxx"
+export GEMINI_API_KEY="AIzaSy-xxxxx"
 
 # Gateway Token
-export OPENCLAW_GATEWAY_TOKEN=&quot;your-strong-random-token&quot;
+export OPENCLAW_GATEWAY_TOKEN="your-strong-random-token"
 ```
 
 ### 目录结构
@@ -551,7 +565,6 @@ export OPENCLAW_GATEWAY_TOKEN=&quot;your-strong-random-token&quot;
 │   ├── MEMORY.md          # 长期记忆
 │   ├── memory/            # 每日记忆日志
 │   │   └── 2026-02-25.md
-
 │   ├── SOUL.md            # AI 人格设定
 │   ├── AGENTS.md          # Agent 配置
 │   ├── USER.md            # 用户信息
@@ -571,7 +584,7 @@ export OPENCLAW_GATEWAY_TOKEN=&quot;your-strong-random-token&quot;
 
 配置文件中包含 API Key 等敏感信息，务必设置正确的文件权限：
 
-```
+```bash
 # Linux / macOS
 chmod 600 ~/.openclaw/openclaw.json
 
@@ -592,31 +605,27 @@ ls -la ~/.openclaw/openclaw.json
 
 第一步：创建 Telegram Bot
 
-1.  打开 Telegram，搜索 @BotFather
-
-1.  发送 /newbot
-
-1.  按提示输入 Bot 名称（比如 My AI Assistant）
-
-1.  输入 Bot 用户名（比如 my_ai_assistant_bot，必须以 _bot 结尾）
-
-1.  BotFather 会返回一个 Bot Token，类似 123456789:ABCdefGHIjklMNOpqrsTUVwxyz
+1. 打开 Telegram，搜索 `@BotFather`
+2. 发送 `/newbot`
+3. 按提示输入 Bot 名称（比如 My AI Assistant）
+4. 输入 Bot 用户名（比如 `my_ai_assistant_bot`，必须以 `_bot` 结尾）
+5. BotFather 会返回一个 Bot Token，类似 `123456789:ABCdefGHIjklMNOpqrsTUVwxyz`
 
 **第二步：配置 OpenClaw**
 
-```
+```bash
 # 添加 Telegram 平台
 openclaw channels add telegram
 
 # 或手动设置 Token
-openclaw config set channels.telegram.botToken &quot;123456789:ABCdefGHIjklMNOpqrsTUVwxyz&quot;
+openclaw config set channels.telegram.botToken "123456789:ABCdefGHIjklMNOpqrsTUVwxyz"
 ```
 
 **第三步：设置 AI 人格**
 
-编辑 ~/.openclaw/workspace/SOUL.md，定义你的 AI 助手人格：
+编辑 `~/.openclaw/workspace/SOUL.md`，定义你的 AI 助手人格：
 
-```
+```markdown
 # 我的 AI 助手
 
 你是我的私人 AI 助手，名字叫小龙。
@@ -640,7 +649,7 @@ openclaw config set channels.telegram.botToken &quot;123456789:ABCdefGHIjklMNOpq
 
 第四步：重启 Gateway 并测试
 
-```
+```bash
 # 重启 Gateway（使用 /restart 聊天命令，或停止后重新启动）
 openclaw gateway --port 18789 --verbose
 
@@ -656,13 +665,13 @@ openclaw channels status
 
 AI 会通过 Bot 回复你。从此你可以在手机上随时和 AI 对话。
 
-> ✅ **检查点：** 在 Telegram 中给你的 Bot 发消息后收到了 AI 回复？恭喜，Telegram 接入成功！如果没有回复，运行 openclaw channels status 检查连接状态。
+> ✅ **检查点：** 在 Telegram 中给你的 Bot 发消息后收到了 AI 回复？恭喜，Telegram 接入成功！如果没有回复，运行 `openclaw channels status` 检查连接状态。
 
 **进阶配置：群组使用**
 
 > ⏭️ **小白可跳过** — 默认配置已经够用了
 
-把 Bot 拉进 Telegram 群组，通过 @提及 激活：
+把 Bot 拉进 Telegram 群组，通过 `@提及` 激活：
 
 ```
 @my_ai_assistant_bot 帮我总结一下今天群里讨论的内容
@@ -674,40 +683,38 @@ AI 会通过 Bot 回复你。从此你可以在手机上随时和 AI 对话。
 
 第一步：创建 Slack App
 
-1.  访问 api.slack.com/apps
-
-1.  点击 "Create New App" → "From scratch"
-
-1.  输入 App 名称（比如 OpenClaw Assistant）
-
-1.  选择你的 Slack 工作区
+1. 访问 `api.slack.com/apps`
+2. 点击 "Create New App" → "From scratch"
+3. 输入 App 名称（比如 OpenClaw Assistant）
+4. 选择你的 Slack 工作区
 
 **第二步：配置 Bot 权限**
 
 在 Slack App 设置页面：
 
-1.  进入 "OAuth & Permissions"，在 "Bot Token Scopes" 中添加权限：
-chat:write, channels:history, channels:read, groups:history, im:history, app_mentions:read
+1. 进入 "OAuth & Permissions"，在 "Bot Token Scopes" 中添加权限：
 
-1.  进入 "Socket Mode"，启用 Socket Mode，生成 App-Level Token（以 xapp- 开头）
+`chat:write`, `channels:history`, `channels:read`, `groups:history`, `im:history`, `app_mentions:read`
 
-1.  进入 "Install App"，安装到工作区，复制 Bot User OAuth Token（以 xoxb- 开头）
+2. 进入 "Socket Mode"，启用 Socket Mode，生成 App-Level Token（以 `xapp-` 开头）
+
+3. 进入 "Install App"，安装到工作区，复制 Bot User OAuth Token（以 `xoxb-` 开头）
 
 **第三步：配置 OpenClaw**
 
-```
+```bash
 # 设置 Bot Token
-openclaw config set channels.slack.botToken &quot;xoxb-xxxxx&quot;
+openclaw config set channels.slack.botToken "xoxb-xxxxx"
 
 # 设置 App Token
-openclaw config set channels.slack.appToken &quot;xapp-xxxxx&quot;
+openclaw config set channels.slack.appToken "xapp-xxxxx"
 ```
 
 **第四步：定制团队助手人格**
 
-编辑 ~/.openclaw/workspace/SOUL.md：
+编辑 `~/.openclaw/workspace/SOUL.md`：
 
-```
+```markdown
 # 团队 AI 助手
 
 你是团队的 AI 助手，帮助团队提高工作效率。
@@ -727,7 +734,7 @@ openclaw config set channels.slack.appToken &quot;xapp-xxxxx&quot;
 
 **第五步：重启并测试**
 
-```
+```bash
 # 重启 Gateway
 openclaw gateway --port 18789 --verbose
 openclaw channels status
@@ -744,22 +751,22 @@ openclaw channels status
 
 > ⏭️ **小白可跳过** — 默认配置已经够用了
 
-不同频道可以路由到不同的 Agent，在 openclaw.json 的顶层 bindings 中配置（bindings 是顶层配置，不嵌套在 agent 内部）：
+不同频道可以路由到不同的 Agent，在 `openclaw.json` 的顶层 `bindings` 中配置（`bindings` 是顶层配置，不嵌套在 `agent` 内部）：
 
-```
+```json5
 {
   agents: {
     list: [
-      { id: &quot;coding&quot;, workspace: &quot;~/.openclaw/workspace-coding&quot; },
+      { id: "coding", workspace: "~/.openclaw/workspace-coding" },
     ],
   },
   bindings: [
-    { agent: &quot;coding&quot;, channel: &quot;slack&quot;, channelId: &quot;C0123456789&quot; },
+    { agent: "coding", channel: "slack", channelId: "C0123456789" },
   ],
 }
 ```
 
-这样 #dev 频道的消息会路由到专门的编程 Agent。
+这样 `#dev` 频道的消息会路由到专门的编程 Agent。
 
 ### 场景 3：客服机器人（接入 WhatsApp）
 
@@ -769,15 +776,13 @@ openclaw channels status
 
 WhatsApp 集成基于 Baileys（WhatsApp Web 协议），建议：
 
-+   使用专门的手机号，不要用个人主号
-
-+   确保手机号已注册 WhatsApp
-
-+   手机保持开机联网
++ 使用专门的手机号，不要用个人主号
++ 确保手机号已注册 WhatsApp
++ 手机保持开机联网
 
 **第二步：配置 WhatsApp**
 
-```
+```bash
 # 添加 WhatsApp 平台
 openclaw channels add whatsapp
 ```
@@ -786,9 +791,9 @@ openclaw channels add whatsapp
 
 **第三步：定制客服人格**
 
-编辑 ~/.openclaw/workspace/SOUL.md：
+编辑 `~/.openclaw/workspace/SOUL.md`：
 
-```
+```markdown
 # 客服 AI 助手
 
 你是 [公司名称] 的客服助手。
@@ -805,7 +810,7 @@ openclaw channels add whatsapp
 
 ## 规则
 - 始终保持礼貌和专业
-- 不要编造产品信息，不确定就说&quot;我帮您确认一下&quot;
+- 不要编造产品信息，不确定就说“我帮您确认一下”
 - 涉及退款、投诉等敏感问题，提示客户联系人工客服
 - 回复控制在 3-5 句话以内，简洁明了
 - 工作时间：9:00-18:00，非工作时间自动回复
@@ -815,14 +820,14 @@ openclaw channels add whatsapp
 
 客服场景下，你可能希望自动接受所有客户消息：
 
-```
+```bash
 # 注意：生产环境建议保持手动审批
 openclaw config set channels.pairing.autoApprove true
 ```
 
 或者保持手动审批，定期检查：
 
-```
+```bash
 # 查看待配对的客户
 openclaw pairing list
 
@@ -832,21 +837,21 @@ openclaw pairing approve --all
 
 **第五步：重启并测试**
 
-```
+```bash
 # 重启 Gateway
 openclaw gateway --port 18789 --verbose
 
 # 用另一个 WhatsApp 号码发送测试消息
-# &quot;你好，我想了解一下你们的产品&quot;
+# "你好，我想了解一下你们的产品"
 ```
 
 **进阶：设置自动回复模板**
 
 > ⏭️ **小白可跳过** — 默认配置已经够用了
 
-在 ~/.openclaw/workspace/MEMORY.md 中预设常见问答：
+在 `~/.openclaw/workspace/MEMORY.md` 中预设常见问答：
 
-```
+```markdown
 # 常见问答
 
 ## 营业时间
@@ -872,9 +877,9 @@ AI 会自动参考这些信息回答客户问题。
 
 ### 查看 Gateway 日志（前台运行）
 
-最直观的调试方式是前台运行 Gateway 并开启 --verbose 模式，所有日志直接输出到终端：
+最直观的调试方式是前台运行 Gateway 并开启 `--verbose` 模式，所有日志直接输出到终端：
 
-```
+```bash
 openclaw gateway --port 18789 --verbose
 ```
 
@@ -893,40 +898,51 @@ openclaw gateway --port 18789 --verbose
 ### 常见日志关键词
 
 | 关键词 | 含义 | 排查方向 |
+
 | --- | --- | --- |
-| ERROR | 错误 | 需要立即处理 |
-| WARN | 警告 | 可能有问题，关注一下 |
-| AUTH_FAILED | 认证失败 | 检查 API Key 或 Token |
-| RATE_LIMITED | 被限流 | API 调用太频繁，等一会儿 |
-| TIMEOUT | 超时 | 网络问题或模型响应慢 |
-| DISCONNECTED | 断开连接 | 平台连接中断，尝试重连 |
-| COMPACTION | 会话压缩 | 对话太长，正在压缩上下文 |
+
+| `ERROR` | 错误 | 需要立即处理 |
+
+| `WARN` | 警告 | 可能有问题，关注一下 |
+
+| `AUTH_FAILED` | 认证失败 | 检查 API Key 或 Token |
+
+| `RATE_LIMITED` | 被限流 | API 调用太频繁，等一会儿 |
+
+| `TIMEOUT` | 超时 | 网络问题或模型响应慢 |
+
+| `DISCONNECTED` | 断开连接 | 平台连接中断，尝试重连 |
+
+| `COMPACTION` | 会话压缩 | 对话太长，正在压缩上下文 |
 
 ### 健康检查
 
-```
+```bash
 # 运行完整的健康检查
 openclaw health
 ```
 
 输出示例：
 
-```
-OpenClaw Health Check
-=====================
+
+
+
+# OpenClaw Health Check
+
+```text
 Gateway:     ✓ running (pid: 12345, uptime: 2h 30m)
 Memory:      ✓ 45 MB (limit: 512 MB)
 Providers:   ✓ openai (connected, latency: 230ms)
 Channels:    ✓ telegram (connected)
              ✗ whatsapp (disconnected - session expired)
-Issues: 1 - WhatsApp disconnected: run &#x27;openclaw channels login whatsapp&#x27;
+Issues: 1 - WhatsApp disconnected: run 'openclaw channels login whatsapp'
 ```
 
-### 常见问题快速排查
+## 常见问题快速排查
 
-**Gateway 启动失败**
+### Gateway 启动失败
 
-```
+```text
 # 检查端口是否被占用
 lsof -i :18789        # macOS/Linux
 netstat -an | findstr 18789  # Windows
@@ -936,9 +952,9 @@ openclaw config set gateway.port 18790
 openclaw gateway --port 18790
 ```
 
-**API 调用报错**
+### API 调用报错
 
-```
+```text
 # 检查 API Key 是否有效
 openclaw config get agents.defaults.model
 
@@ -946,11 +962,11 @@ openclaw config get agents.defaults.model
 openclaw doctor
 ```
 
-openclaw doctor 会运行完整的诊断检查，包括 API 连接测试，方便定位问题。
+`openclaw doctor` 会运行完整的诊断检查，包括 API 连接测试，方便定位问题。
 
-**消息平台断开**
+### 消息平台断开
 
-```
+```text
 # 查看平台状态
 openclaw channels status
 
@@ -968,12 +984,21 @@ openclaw gateway --port 18789 --verbose
 恭喜你，OpenClaw 已经跑起来了！根据你的需求，选择下一步方向：
 
 | 我想要... | 去哪里 |
+
 | --- | --- |
+
 | 接入更多 AI 模型 | 04. AI 模型配置 — 29 个提供商、故障转移、预算控制 |
+
 | 连接更多消息平台 | 05. 消息平台集成 — 30+ 平台、消息路由 |
+
 | 解锁 AI 超能力 | 06. 技能系统 — 50+ 内置技能、自定义技能 |
+
 | AI 记住我的偏好 | 07. 记忆系统 — 长期记忆、每日日志 |
+
 | 运行多个 AI 助手 | 08. 多 Agent 路由 — 多 Agent、消息路由 |
+
 | 容器化部署 | 09. Docker 部署 — Docker Compose 一键部署 |
+
 | 加固安全 | 10. 安全配置 — Token、TLS、沙箱隔离 |
+
 | 遇到问题 | 11. 常见问题 FAQ — 别人踩过的坑 |

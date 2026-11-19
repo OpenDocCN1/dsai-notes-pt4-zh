@@ -1,24 +1,25 @@
+
 # 公开数据集
 
-> 来源：[https://ai.feishu.cn/docx/NpqkdEWwRoyMnJxBIFxc5fNcnFe](https://ai.feishu.cn/docx/NpqkdEWwRoyMnJxBIFxc5fNcnFe)
+# `CogVLM-SFT-311K`：CogVLM SFT 中的双语视觉指令数据
 
-# CogVLM-SFT-311K：CogVLM SFT 中的双语视觉指令数据
+> 来源：`https://ai.feishu.cn/docx/NpqkdEWwRoyMnJxBIFxc5fNcnFe`
 
-**CogVLM-SFT-311K** 是我们在训练 **CogVLM v1.0 最初**版本时使用的主要对齐语料库。此数据集的构建过程如下：
+`CogVLM-SFT-311K` 是我们在训练 `CogVLM v1.0` 最初版本时使用的主要对齐语料库。此数据集的构建过程如下：
 
-1.  从开源的 [MiniGPT-4](https://huggingface.co/datasets/Vision-CAIR/cc_sbu_align) 中选取了大约3500个高质量数据样本，称为 minigpt4-3500。
+1. 从开源的 [`MiniGPT-4`](https://huggingface.co/datasets/Vision-CAIR/cc_sbu_align) 中选取了大约3500个高质量数据样本，称为 `minigpt4-3500`。
 
-1.  将 minigpt4-3500 与 Llava-Instruct-150K 整合，并通过语言模型翻译获得中文部分。
+1. 将 `minigpt4-3500` 与 `Llava-Instruct-150K` 整合，并通过语言模型翻译获得中文部分。
 
-1.  我们发现在 minigpt4-3500 和 Llava-instruct 的详细描述部分存在许多噪声。因此，我们纠正了这两部分的中文语料，并将纠正后的语料重新翻译成英语。
+1. 我们发现在 `minigpt4-3500` 和 `Llava-instruct` 的详细描述部分存在许多噪声。因此，我们纠正了这两部分的中文语料，并将纠正后的语料重新翻译成英语。
 
-## **许可证**
+## 许可证
 
-> [由于非商业协议限制，我](https://chatglm.cn/main/detail)们没有在 Co**gVLM的双语版**本 和其他任何 涉及商业化的模型 中使用这些数据。
+> [由于非商业协议限制，我](https://chatglm.cn/main/detail)们没有在 `CogVLM`的双语版本 和其他任何 涉及商业化的模型 中使用这些数据。
 
 > 数据集许可证遵守：
 
-> Attribution-NonCommercial 4.0 International I[t should abide by th](https://openai.com/policies/terms-of-use)e policy of OpenAI: https://openai.com/policies/terms-of-use
+> Attribution-NonCommercial 4.0 International [It should abide by the policy of OpenAI](https://openai.com/policies/terms-of-use): `https://openai.com/policies/terms-of-use`
 
 > **这将不允许**你使用这些数据进行任何 商业化行为
 
@@ -26,7 +27,7 @@
 
 我们的数据已经公开到 Huggingface 平台上，欢迎下载
 
-Hugigngface地址：[h](https://huggingface.co/datasets/THUDM/CogVLM-SFT-311K)ttps://huggingface.co/datasets/THUDM/CogVLM-SFT-311K
+Huggingface地址：`https://huggingface.co/datasets/THUDM/CogVLM-SFT-311K`
 
 （数据集较大，如果还没有看到数据集，可能是还在上传中，会在12.26日完成上传）
 
@@ -34,7 +35,7 @@ Hugigngface地址：[h](https://huggingface.co/datasets/THUDM/CogVLM-SFT-311K)tt
 
 ### 数据集分布
 
-数据集共有三个文件夹，分别对应混合 minigpt4-3500 与llava混合的一部分数据集，llava 单论对话和多轮对话数据集。其布局如下：
+数据集共有三个文件夹，分别对应混合 `minigpt4-3500` 与`llava`混合的一部分数据集，`llava` 单论对话和多轮对话数据集。其布局如下：
 
 ```
 .CogVLM-SFT-311K
@@ -53,7 +54,7 @@ Hugigngface地址：[h](https://huggingface.co/datasets/THUDM/CogVLM-SFT-311K)tt
     └──  00000001.json
 ```
 
-其中，images存储图像数据，而labels存储这张图像对应的描述或对话。
+其中，`images`存储图像数据，而`labels`存储这张图像对应的描述或对话。
 
 ### 数据集数量
 
@@ -65,7 +66,7 @@ llava_instruction_single_conversation_formate 76634张图片和单轮对话
 
 ### 数据集格式
 
-图像描述 Json 格式
+图像描述 `json` 格式
 
 ```
  {
@@ -78,7 +79,7 @@ llava_instruction_single_conversation_formate 76634张图片和单轮对话
 }
 ```
 
-图像对话 Json 格式
+图像对话 `json` 格式
 
 ```
  {
@@ -99,6 +100,6 @@ llava_instruction_single_conversation_formate 76634张图片和单轮对话
 
 This project utilizes data and concepts based on the following research papers:
 
-+   Zhu, D., Chen, J., Shen, X., Li, X., & Elhoseiny, M. (2023). MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models. arXiv preprint arXiv:2304.10592.
++   Zhu, D., Chen, J., Shen, X., Li, X., & Elhoseiny, M. (2023). `MiniGPT-4`: Enhancing Vision-Language Understanding with Advanced Large Language Models. arXiv preprint arXiv:2304.10592.
 
 +   Liu, H., Li, C., Wu, Q., & Lee, Y. J. (2023). Visual Instruction Tuning. arXiv:2304.08485.

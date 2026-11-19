@@ -1,18 +1,15 @@
+
 # 20250329-100类场景，600+案例，深度了解ChatGPT 4o多模态模型能力边界
 
 > 来源：[https://aigcreative.feishu.cn/docx/Qggxdjv7LoMN36xrFQYczAygn1e](https://aigcreative.feishu.cn/docx/Qggxdjv7LoMN36xrFQYczAygn1e)
 
 > 本文讨论了OpenAI推出GPT-4o多模态图片生成功能后引发关注，作者用其深入测试并收集大量案例，系统性拆解该模型设计潜能与能力边界，还探讨了AI发展影响及应对态度。关键要点包括：
 
-1.  **模型引发关注**：OpenAI推出GPT-4o多模态图片生成功能，在AI领域引发强烈讨论。
-
-1.  **丰富测试案例**：作者跑了一些使用场景案例，收集社媒等用户分享案例，共70类、400+真实用户使用场景，涉及品牌VI设计、画册设计等60多种场景。
-
-1.  **模型使用特点**：ChatGPT的4o模型使用简单、易上手，无需太多“提示词”技巧，更专注创意本身。
-
-1.  **改变行业规则**：多模态模型能力飞速进步，打破原有规则秩序，改变行业规则和很多人的职业轨迹。
-
-1.  **应对态度转变**：人们需提升视野，从裁判和观察者转变为参与者和创新者 。
+1. **模型引发关注**：OpenAI推出GPT-4o多模态图片生成功能，在AI领域引发强烈讨论。
+2. **丰富测试案例**：作者跑了一些使用场景案例，收集社媒等用户分享案例，共70类、400+真实用户使用场景，涉及品牌VI设计、画册设计等60多种场景。
+3. **模型使用特点**：ChatGPT的4o模型使用简单、易上手，无需太多“提示词”技巧，更专注创意本身。
+4. **改变行业规则**：多模态模型能力飞速进步，打破原有规则秩序，改变行业规则和很多人的职业轨迹。
+5. **应对态度转变**：人们需提升视野，从裁判和观察者转变为参与者和创新者。
 
 > 说明：所有案例均为GPT直出，放心食用。
 
@@ -33,14 +30,11 @@
 > 说明：
 
 > 1、所有案例图片均有GPT-4o直出生成，无后期二次加工。
-
 > 2、大部分案例来自网上、社群用户，所有权归其所有。本平台无商业用途，仅供读者交流参考。
 
 下面跟随【AIGC创意猎人】一起来看看：
 
-#
-
-# Doodle
+## Doodle
 
 > A minimalist and creative advertisement set on a clean white background. A real [Real Object] is integrated into a hand-drawn black ink doodle, using loose, playful lines. The [Doodle Concept] interacts with the object in a clever, imaginative way. Include bold black [Ad Copy]
 
@@ -49,286 +43,191 @@
 > 一个真实的[商品]被融入到手绘的黑色墨水涂鸦中，线条流畅，趣味十足。涂鸦描绘了[场景]。在顶部添加粗体黑色“[文案]”字样。将[品牌]的标志清晰地放置在底部。视觉效果应简洁、有趣、对比度高，且概念巧妙。
 
 ![](img/52f8f3ebac8397d27057abbf9a19e8e7.png)
-
 ![](img/a95c21b3569d38dd45fcd6111ff6d592.png)
-
 ![](img/9ac81dbe6ff6205a47f851f89b877e35.png)
-
 ![](img/f0e69e681c70e9a9f9b3eaaab6a84a05.png)
-
 ![](img/50bb2f8bf1659bb8bbd95906a8371f52.png)
-
 ![](img/a480a029d4bdddbe5740ea210cc9cdb8.png)
-
 ![](img/05d756cbe03956fdbb825e7e61fb4181.png)
-
 ![](img/183c3c4d21f54d0df5b0dc1ba61b580e.png)
-
 ![](img/e6b29a72fb75c0a7ab4cd93b75621fcb.png)
-
 ![](img/af550f38b460ac519a25b3f1e4d8d4c7.png)
-
 ![](img/772be2c8f864a84ea2ceeeceafa79aa1.png)
-
 ![](img/847e49417cead5ccb7c88b927962ab42.png)
-
 ![](img/4b72354947c97175b3bea924947abbec.png)
-
 ![](img/a86ee963058e0d9a6d3e9d49673be367.png)
-
 ![](img/e804ba76033e95fd730356bc4cc2dfb0.png)
 
-# 新闻资讯
+## 新闻资讯
 
 ![](img/f8e4ef330594062c327a4c7ba9ad2051.png)
-
 ![](img/1897d1e4603ef72c554e772638cc6c17.png)
-
 ![](img/7318a5991593c9b09fa3795c596df25d.png)
-
 ![](img/f29407e530f68a2e941ca6a15e6d2dee.png)
-
 ![](img/1c9dc4fb1953ef3e85d42878d297a2a9.png)
-
 ![](img/b566c4f585887bcae74b4714d2ebd3af.png)
 
-# 品牌离谱产品
+## 品牌离谱产品
 
 ![](img/0a8568d09ef02ec1414db4b22b22a2ee.png)
-
 ![](img/5a2e264bcb6e90d6cf82a59c42822fe2.png)
-
 ![](img/f4125846a89e88fa6f3da1929c6e501d.png)
-
 ![](img/afb7c45783c1c7e887eede9c356ff5db.png)
-
 ![](img/cbc3c758dc678c4b3e56ee42c818cf26.png)
-
 ![](img/bde86667f60b1f05fe31bdc9578bc59f.png)
-
 ![](img/98737c205043c6e2216f2c2c665f2bdd.png)
-
 ![](img/ad2f1c32770b384f483046de8869d0da.png)
-
 ![](img/8d38b9b71d80439f85e7ccf5fa8f83ec.png)
 
-# 微缩场景
+## 微缩场景
 
 ![](img/dbfb27f117eab9e18e2aeaa7426d2686.png)
 
-# 毛绒绒材质
+## 毛绒绒材质
 
 ![](img/8b33c94b47c30d52faf439d0c373e1ab.png)
-
 ![](img/434e93b4f2b79509019a7620072130b5.png)
-
 ![](img/726bdfabd09ecbd0b509090c7502a8e3.png)
-
 ![](img/f1c3e4ebfcbbd53ddfee0537448baa91.png)
-
 ![](img/8154969e287fc008fc33ca44cf176311.png)
 
-# 折纸效果
+## 折纸效果
 
 ![](img/813c806d8a4619f93e36a08407a3df24.png)
-
 ![](img/fb8aab8568780d952b73ba72a4c95e5b.png)
-
 ![](img/0d30a76619831da529be6eeae100c781.png)
-
 ![](img/9e166736a89224efe21bae482fba8d14.png)
 
-# 皮质效果
+## 皮质效果
 
 ![](img/8eb98f3bca163a89e79554bfc94c1e9a.png)
-
 ![](img/2e973708fccbf2c9e4d7b7a464739224.png)
-
 ![](img/efeb2be4df5403bddb3df316d3380a68.png)
-
 ![](img/8853c69d8f5dd031ea917e04275aa0e9.png)
-
 ![](img/7facb0957a04bf7bb15c8ccd8ddc8702.png)
-
 ![](img/801c92dcf1ff4298163c650d54ab47fe.png)
-
 ![](img/f29a643cc7887a6a2872770e3f687314.png)
 
-# 品牌胶囊
+## 品牌胶囊
 
 ![](img/8df5f8a68857eba0a7364c25b1f0530b.png)
 
-# 皮质logo
+## 皮质logo
 
 ![](img/99cda282fe0b21d866c5ebb94cad7d0a.png)
-
 ![](img/779d8e0099cb46db3fe7ecc5eec20571.png)
-
 ![](img/e10af62f61ed59bf02635e8a9f943910.png)
-
 ![](img/86979f15a8410486ee9544b583e28999.png)
-
 ![](img/c44666c5f841439ec86e4de9b846cbab.png)
-
 ![](img/cb1b7a0b9c5cdf521d0dd1a7513972e0.png)
 
-# 真实感自拍
+## 真实感自拍
 
 ```
 请画一张极其平凡无奇的iPhone 自拍照，没有明确的主体或构图感，就像是随手一拍的快照。照片略带运动模糊，阳光或店内灯光不均导致轻微曝光过度。角度尴尬、构图混乱，整体呈现出一种刻意的平庸感-就像是从口袋里拿手机时不小心拍到的一张自拍。主角是陈奕迅和谢霆锋，晚上，旁边是香港会展中心，在香港维多利亚港旁边。
 ```
 
 ![](img/ba0ff25e1ac3e183740f4b12d15acf96.png)
-
 ![](img/f37bb9ddfd4003190c79389a45535721.png)
-
 ![](img/dfebc0671e0dee3ba89eddc9f33d5580.png)
 
-#
-
-# 信息逻辑图（自创）
+## 信息逻辑图（自创）
 
 ![](img/5c25e97f779da5529e48ca70c0ba4730.png)
-
 ![](img/215c91ae06c8ac8a1dac5cfe1d8522d4.png)
-
 ![](img/af7aa9226e600ca405275da5f87828f4.png)
-
 ![](img/71424418d9ee54587ececec883670789.png)
-
 ![](img/78763dff42b47421586715e59b78ca65.png)
-
 ![](img/2e29a8ef0680b9fb88452ff65f4fbf32.png)
 
-# 品牌VI设计
+## 品牌VI设计
 
 > 详情+提示词见：[20250402-ChatGPT-4o高级用法：一键搞定品牌设计全套方案，设计师直呼“太卷了”！](https://aigcreative.feishu.cn/wiki/V2mWwlut3iB5vnkjn6McvRZjnWh)
 
 ![](img/c7bca38aacb7d64deae0ffb57b82bf3e.png)
-
 ![](img/e6d23d176c0c56e8df828cc6e26733d3.png)
-
 ![](img/96e5274ecc6c527d765d058930c6823d.png)
-
 ![](img/79b84673926469d17f2d9ae2108d3e88.png)
-
 ![](img/04ef684fbcb3ffd17ed87016c7d2fabb.png)
-
 ![](img/3bb6ac67b2368d8bc173020158504e42.png)
-
 ![](img/36b93d0594104e210a7047d2ff6534ce.png)
-
 ![](img/779ef81565440d85885271de5b1905c4.png)
-
 ![](img/312fb90b4072c18b6b75da44eb0492c9.png)
-
 ![](img/8279d679cd2440999865cf5c3a6a8ef1.png)
-
 ![](img/d57b0a35031cc7197fd74d718a8d5dc2.png)
-
 ![](img/f14b6c33392188ddbd0fefa2afd1234c.png)
-
-![](img/07b73a24ae2abe71199ef31079cba26c.png)
-
+![](img/07b73a24ae3abe71199ef31079cba26c.png)
 ![](img/d84fc7d83fca478d2605b1450a22a675.png)
-
 ![](img/3da51380142d82a05ef5a41c542ff92b.png)
-
 ![](img/31e82b0ea119929f4e426a8f81d00219.png)
-
 ![](img/ed84d47d605daabb0f451590902d7cf0.png)
-
 ![](img/7a5395f5cbbafae2502fda91ea007f57.png)
-
 ![](img/fbbe71ee258358ff42ba315239240076.png)
-
 ![](img/5737110d92ac5cc5a42a5cab5d758c8e.png)
-
 ![](img/ba8ceb36c19fd035712b94e24a2bb206.png)
 
-# 名片设计
+## 名片设计
 
 ![](img/3d1ee7c46a78c603e8bd20cc30ad404e.png)
-
 ![](img/a81f3a27916e06656b8a0dc08ece3cf3.png)
-
 ![](img/9104f61ec1bdde91a54f871dd853a0cc.png)
-
 ![](img/8d9ad78858c517aa0a722d36e0e5f9d7.png)
 
-# 潘通色卡
+## 潘通色卡
 
 ![](img/f70d9804b1587dca3386114976a8e692.png)
-
 ![](img/64597bd412c7a9f4ab0f076bd0d6663a.png)
-
 ![](img/065a019bd1feb8f5225e66560d865af7.png)
-
 ![](img/85cc4af900fdb148fb0ae4a481241ffa.png)
-
 ![](img/272a06c3c473ad0ed6e354414dbfa501.png)
-
 ![](img/45aba1592c8e17c5ea4de54b56377393.png)
 
-# 画册设计
+## 画册设计
 
 ![](img/242f78f0745330a9c7ac277a987e85ec.png)
 
-# 时尚杂志封面 from 藏师傅
+## 时尚杂志封面 from 藏师傅
 
 ![](img/afb648ac0533fa399d5a4109bddd0822.png)
-
 ![](img/ea4fc1b1b24b7062af87076090d80c8d.png)
 
-# 生活商品 from 藏师傅
+## 生活商品 from 藏师傅
 
 ![](img/17a06598afda804d28fc8b999f0a3d6e.png)
-
 ![](img/7e8b81b001e07a56e575c11c8e536313.png)
-
 ![](img/e8c1c1df43157f11fce4f64518b7c5f5.png)
 
-# 试衣服
+## 试衣服
 
 ![](img/01258fd3eb424dc6bcdd1c908a245760.png)
-
 ![](img/df324b7e3e32948a3b2c840bf5a1522c.png)
 
-# 常规P图
+## 常规P图
 
 ![](img/43979eafece60db87fafd875081a5c57.png)
-
 ![](img/720de0bb9ad30c83fa15f3fa063b9bf0.png)
-
 ![](img/10586980b070079a7650208e9e22b0cf.png)
-
 ![](img/f32540a1aff8f195e389df8eb075fd56.png)
-
 ![](img/883d9d73e147d0fd0d1a4700d3cdbcef.png)
-
 ![](img/251d58f19af52b644d5c7844577496e3.png)
-
 ![](img/a48bc61caef65bb66008e06f9294a838.png)
-
 ![](img/f4871f2f00c11ef2a6c145a0df29c6fa.png)
-
 ![](img/5a27bf33534c1fab44e7557e2bc80575.png)
 
-# 一半两风格肖像
+## 一半两风格肖像
 
 > Prompt：A dramatic, front-facing close-up portrait of Hayao Miyazaki. The composition is perfectly symmetrical, with his face divided vertically into two distinct artistic styles. The left half is hyper-realistic,
 
 ![](img/ee07d7a124b6ebbb2010da3d0676399a.png)
-
 ![](img/9810e4c19f2905646c230850d4dcd1a8.png)
-
 ![](img/5f0c8d88bbc90ef2a39fa78192960ede.png)
 
-# 人像修图
+## 人像修图
 
 ![](img/3cc38b3e51b1aa475a9689e257e87fc2.png)
-
 ![](img/077fd4f5e4f552c4d85e3787b531e4d8.png)
+
+
 
 ![](img/b291586bc4c96e53c9d2c6b4ef58014c.png)
 
@@ -696,6 +595,8 @@
 
 # 菜谱
 
+
+
 > Prompt：Create step-by-step recipe infographic for creamy garlic mushroom pasta, top-down view, minimal style on white background, ingredient photos labeled: "200g spaghetti", "150g mushrooms", "3 garlic cloves", "200ml cream", "1 tbsp olive oil", "parmesan", "parsley", dotted lines showing process steps with icons (boiling pot, sauté pan, mixing), final plated pasta shot at the bottom
 
 ![](img/25ebdbea8a58e4463acc6908a63b3441.png)
@@ -848,7 +749,7 @@
 
 ![](img/33d2e3822f7be4038a1eeae07dcd5696.png)
 
-[af1496326e4b77f1a627c0686660c3c1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WTqMbMXkVoas1UxT6MPcGOWhnwg)
+[`af1496326e4b77f1a627c0686660c3c1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WTqMbMXkVoas1UxT6MPcGOWhnwg)
 
 # 3D设计/IP设计
 
@@ -976,25 +877,15 @@
 
 > 提示词如下：
 
->
-
 > 画一个马桶：
-
->
 
 ## 艺术风格简介：极简主义3D插画（Minimalist 3D Illustration）
 
->
-
 ### 🎨 视觉元素（Visual Elements）
-
->
 
 #### 🟢 造型语言（Shape Language）
 
 +   圆润的边缘、平滑柔和的外形，采用简化几何造型。
-
->
 
 #### 🎨 色彩（Colors）
 
@@ -1004,8 +895,6 @@
 
 +   **明暗处理：** 柔和渐变，平滑过渡，避免强烈的阴影和高光。
 
->
-
 #### 💡 光照（Lighting）
 
 +   **类型：** 柔和、漫反射光照。
@@ -1014,15 +903,11 @@
 
 +   **阴影风格：** 微妙且漫射，无锐利或高对比度的阴影。
 
->
-
 #### 🧱 材质（Materials）
 
 +   **表面纹理：** 哑光、平滑的表面，带有微妙的明暗变化。
 
 +   **反射性：** 低或无，避免明显的光泽。
-
->
 
 #### 🖼️ 构图（Composition）
 
@@ -1032,8 +917,6 @@
 
 +   **背景：** 纯色、低饱和度，与主体协调且不干扰视线。
 
->
-
 #### ✒️ 字体排版（Typography）
 
 +   **字体风格：** 极简、无衬线字体。
@@ -1042,15 +925,11 @@
 
 +   **字体颜色：** 灰色，与背景形成低对比度。
 
->
-
 #### 🖥️ 渲染风格（Rendering Style）
 
 +   **技术手法：** 3D渲染，采用简化的低多边形风格。
 
 +   **细节程度：** 中等细节，以形状和色彩为主，避免复杂纹理和细节。
-
->
 
 ### 🎯 风格目标（Purpose）
 
@@ -1116,6 +995,8 @@
 
 # 微缩产品盒
 
+
+
 ![](img/0a27297ef0ca696563ae25fd821cc303.png)
 
 ![](img/c5b38618c57b087a40da060c59e552f0.png)
@@ -1146,7 +1027,7 @@
 
 # 签名
 
-> Prompt : A minimalist, single-line drawing in black ink on a white background. The line starts as a simple, elegant outline of a [OBJECT], which then seamlessly flows into a stylish, cursive signature spelling out '[NAME]'. The entire composition should be graceful, legible, and artistic, capturing the essence of a personal and sophisticated brand identity.
+> Prompt : A minimalist, single-line drawing in black ink on a white background. The line starts as a simple, elegant outline of a `OBJECT`, which then seamlessly flows into a stylish, cursive signature spelling out `NAME`. The entire composition should be graceful, legible, and artistic, capturing the essence of a personal and sophisticated brand identity.
 
 ![](img/f4b5ed840dcd7db7ab41d38b6995cf2c.png)
 
@@ -1304,7 +1185,7 @@
 
 ![](img/63fb5fbca13ddcc821ca9821724c3805.png)
 
-![](img/eff8c8d6964df51f4c4940fd9f0a0589.png)
+![](img/eff8c8d6964df51f4c40fd9f0a0589.png)
 
 # 物品展示
 
@@ -1352,6 +1233,6 @@ Ai大模型发展到今天，我们不得不面对人工智能领域的现实：
 
 ![](img/b07b6c7f391e93805afe6a908032ea10.png)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
 # 知识库动态

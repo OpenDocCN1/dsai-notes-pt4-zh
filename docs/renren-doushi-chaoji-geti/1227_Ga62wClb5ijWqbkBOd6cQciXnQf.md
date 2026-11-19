@@ -1,16 +1,15 @@
+
 # 2023-08-14【代理】借助AIW全智通实现中小企业智能化工作流改造 - 广州企元大数据科技有限公司 - 企元官网
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/J5PfdjtqhokotZxewQ7cvZoUnud](https://xuqiwei1986.feishu.cn/docx/J5PfdjtqhokotZxewQ7cvZoUnud)
-
-> 🔗 原文链接： h[ttp://www.qiydata.](http://www.qiydata.net/sys-nd/24.html)net/sys-nd/24.ht...
-
 >
+> 🔗 原文链接：http://www.qiydata.net/sys-nd/24.html
 
 ![](img/3b213dc66cdf1af027344fb460b56227.png)
 
 在当前商业生态下，传统中小企业面临不断上涨的人力成本和相对滞后的工作效率，必须寻找解决问题的方法。然而，这个过程并不容易，需要一定的时间和精力，同时也需要持续不断的改进和创新。科技的飞速进步为我们打开了一扇大门，其中广州企元大数据科技有限公司自主研发的全智通(AIW)是一款以人工智能为基础的企业智能化工作管理平台，专为中小企业提供全面优化人力资源和提升效率的解决方案。
 
-# 示例截图
+## 示例截图
 
 ![](img/f5f05d8855e6f4caca254a644e7c8863.png)
 

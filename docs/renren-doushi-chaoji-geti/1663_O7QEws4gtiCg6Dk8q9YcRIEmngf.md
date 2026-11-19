@@ -1,14 +1,15 @@
+
 # 2023-06-20GPT-Engineer一夜爆火！一个提示生成整个代码库
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/GhYJdzUVSoWccax8nvRcJhmKnXc](https://xuqiwei1986.feishu.cn/docx/GhYJdzUVSoWccax8nvRcJhmKnXc)
 
-🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7246645655421059639/?log_from=512e2762a566f_1691397727630).com/article/724...
+🔗 原文链接：https://www.toutiao.com/article/7246645655421059639/?log_from=512e2762a566f_1691397727630
 
 2023-06-20 14:08 · 新智元
 
 编辑：桃子 好困
 
-# 【新智元导读】动嘴写代码指日可待！AI代码生成明星项目GPT-Engineer一夜爆火，短短几天狂揽19k星。
+## 【新智元导读】动嘴写代码指日可待！AI代码生成明星项目GPT-Engineer一夜爆火，短短几天狂揽19k星。
 
 AutoGPT之后，又一个明星项目诞生了！
 
@@ -30,7 +31,7 @@ GPT-Engineer一夜之间火遍全网，GitHub项目已经狂揽19k星。
 
 ![](img/cd339005c7dac54afc69bb6b202c20d6.png)
 
-**一句提示创建代码库**
+### 一句提示创建代码库
 
 短短一周，GPT-Engineer在GitHub热度狂飙，引众多开发者围观。
 
@@ -39,17 +40,11 @@ GPT-Engineer一夜之间火遍全网，GitHub项目已经狂揽19k星。
 项目主要作者Anton Osika在6月11日首次推出GPT-Engineer，并介绍了这款AI工具最大的特点：
 
 - 一个提示就能生成一个代码库
-
 - 提出需要澄清的问题
-
 - 生成技术规范
-
 - 编写所有必要代码
-
 - 易于添加自己的推理步骤、修改和实验
-
 - 项目开源
-
 - 分分钟让你完成编码
 
 ![](img/01dc40c2cb8ad681cec142a680c6ed5e.png)
@@ -63,13 +58,9 @@ GPT-Engineer预示着未来软件创造将是一个人机共话的时代。
 另外，根据GitHub介绍了GPT-Engineer主要项目理念：
 
 - 简单易用，能够为用户提供价值；
-
 - 灵活且易于添加新的「AI步骤」；
-
 - 支持高级提示，可以记住用户反馈；
-
 - 能快速在AI和人类之间快速切换；
-
 - 所有计算都是「可恢复的」，并持久地保存到文件系统。
 
 ![](img/8b2b1c6bfcf2bb13294ce2d9ce9e08d2.png)
@@ -78,7 +69,7 @@ GPT-Engineer预示着未来软件创造将是一个人机共话的时代。
 
 整个过程分两个阶段执行，即（1）需求细化促进阶段和（2）软件构建阶段。
 
-**第一阶段的步骤是：**
+### 第一阶段的步骤是：
 
 用户提供的包含软件需求的文本文件被提交给GPT-Engineer，并被放置在OpenAI的GPT的初始消息中，同时还包括确定澄清问题的指示。
 
@@ -88,7 +79,7 @@ GPT-Engineer会将这一过程循环，直到所有问题澄清到OpenAI GPT-4�
 
 ![](img/958b9f2d69acbe072725319661a5c74b.png)
 
-**第二阶段的步骤是：**
+### 第二阶段的步骤是：
 
 前一阶段提炼的需求被打包，并与OpenAI的GPT指令（即系统提示）和另外一套GPT-Engineer希望看到的输出指令（即用户提示）一起包装起来。
 
@@ -98,7 +89,7 @@ GPT-Engineer为用户提供指令的软件项目创建源代码文件。
 
 ![](img/fd24a116aea7d228f9f7897efbda223b.png)
 
-**贪吃蛇上手实操**
+### 贪吃蛇上手实操
 
 说了这么多，不如上手试练一番。做一个多人可玩的贪吃蛇网页版游戏。
 
@@ -138,7 +129,7 @@ GPT-Engineer为用户提供指令的软件项目创建源代码文件。
 
 ![](img/ac8bc92a85d6602d197e4acca1cca473.png)
 
-**网友热评**
+### 网友热评
 
 网友表示，「澄清问题」是真正使GPT-Engineer脱颖而出的原因，因为修复生成代码中的问题往往比编写代码本身需要更多的时间。这似乎是朝着正确方向迈出的一大步。
 
@@ -154,11 +145,11 @@ GPT-Engineer为用户提供指令的软件项目创建源代码文件。
 
 然而，这个项目火虽火，一位网友测试了GPT-Engineer，给出了体验：
 
-**难设置**
+### 难设置
 
 实际上不是创建文件，只是让你从命令行中运行一次（即不能调试）
 
-**与ChatGPT4的能力相当**
+### 与ChatGPT4的能力相当
 
 ![](img/aedeea8c70fc084a100fb9866bceb335.png)
 
@@ -170,73 +161,64 @@ GPT-Engineer为用户提供指令的软件项目创建源代码文件。
 
 还有网友对基准指出了问题，
 
-gpt-engineer做了几个简单的编程任务，并将它们作为基准。它可以为你快速开发一个currency_converter，但不能正确编码一个pomodoro_timer（还没有！）
+`gpt-engineer`做了几个简单的编程任务，并将它们作为基准。它可以为你快速开发一个`currency_converter`，但不能正确编码一个`pomodoro_timer`（还没有！）
 
 ![](img/3e7e30f6b7bf9f89f4d10a46a8392333.png)
 
-**安装方法**
+### 安装方法
 
 要么选择稳定版（stable），要么选择开发版（development）。
 
 对于稳定版本：
 
-- pip install gpt-engineer
+- `pip install gpt-engineer`
 
 对于开发版：
 
-- git clone git@github.com:AntonOsika/gpt-engineer.git
+- `git clone git@github.com:AntonOsika/gpt-engineer.git`
+- `cd gpt-engineer`
+- `make install`
+- `source venv/bin/activate`
 
-- cd gpt-engineer
-
-- make install
-
-- source venv/bin/activate
-
-**设置**
+### 设置
 
 使用GPT4访问权限的API密钥运行：
 
-- export OPENAI_API_KEY=[your api key]
+- `export OPENAI_API_KEY=[your api key]`
 
-**运行**
+### 运行
 
 创建一个空文件夹。如果在repo中，你可以运行：
 
-- cp -r projects/example/ projects/my-new-project
+- `cp -r projects/example/ projects/my-new-project`
+- 在新文件夹中填写 `main_prompt` 文件
+- 运行：`gpt-engineer projects/my-new-project`
 
-- 在新文件夹中填写 main_prompt 文件
+### 结果
 
-- 运行：gpt-engineer projects/my-new-project
+- 检查 `projects/my-new-project/workspace` 中生成的文件
 
-**结果**
-
-- 检查
-
-projects/my-new-project/workspace 中生成的文件
-
-**限制**
+### 限制
 
 使用额外的思想链提示，如Reaffon，应该能够让其更可靠，并且不会错过主要提示中请求的功能。
 
-# 特点
+## 特点
 
-你可以通过编辑 identity 文件夹中的文件来指定AI智能体的「身份」。
+你可以通过编辑 `identity` 文件夹中的文件来指定AI智能体的「身份」。
 
-编辑「身份」和改进 main_prompt 是让智能体记住项目之间的事情的方法。
+编辑「身份」和改进 `main_prompt` 是让智能体记住项目之间的事情的方法。
 
-steps.py 中的每个步骤都将其与GPT4的对话历史记录存储在logs文件夹中，并且可以使用
+`steps.py` 中的每个步骤都将其与GPT4的对话历史记录存储在`logs`文件夹中，并且可以使用`scripts/rerun_edited_message_logs.py` 重新运行。
 
-scripts/rerun_edited_message_logs.py 重新运行。
+### 项目主要作者
 
-**项目主要作者**
-
-**Anton Osika**
-
-![](img/3a6d6528d18b50cdc4fc150b1496ab2e.png)
+### Anton Osika
 
 Anton Osika是Depict.ai的首席技术官。这是一家创建机器学习推荐系统的初创公司，通过尖端的机器学习、计算机视觉和自然语言处理来理解产品。
 
 就在4小时前，他还发了一条动态称，GPT-Engineer已经跃升到17k星，一点也没有减速迹象。
+
+![](img/3a6d6528d18b50cdc4fc150b1496ab2e.png)
 
 ![](img/cd7cf1231124d206813d99f006f3bb71.png)
 

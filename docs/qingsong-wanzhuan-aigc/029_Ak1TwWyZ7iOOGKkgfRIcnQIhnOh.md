@@ -1,10 +1,11 @@
+
 # 翻译/外语写作
 
 > 来源：[https://my.feishu.cn/docx/S97rdOHkHoVyGMx8XHOc0OsRnrd](https://my.feishu.cn/docx/S97rdOHkHoVyGMx8XHOc0OsRnrd)
 
-# AI翻译
+## AI翻译
 
-## 沉浸式翻译
+### 沉浸式翻译
 
 https://immersivetranslate.com/?force=1
 
@@ -18,7 +19,7 @@ https://immersivetranslate.com/?force=1
 
 其中，腾讯交互翻译、微软翻译，国内即可用。谷歌翻译，需🪜
 
-## Cici 浏览器 AI 助手
+### Cici 浏览器 AI 助手
 
 CiCi 浏览器插件，官方出品：
 
@@ -26,9 +27,9 @@ chromewebstore.google.com
 
 推荐指数：🌟🌟🌟🌟🌟
 
-## OpenAl Translator
+### OpenAl Translator
 
-+   OpenAI Translator 是一个基于 OpenAI 的翻译工具，提供语言翻译、文字润色和文本总结等功能。
++ OpenAI Translator 是一个基于 OpenAI 的翻译工具，提供语言翻译、文字润色和文本总结等功能。
 
 > 它支持多种语言的翻译，润色文本以使其更自然，总结长文本内容，适合学习语言和提升文本质量。
 
@@ -38,25 +39,25 @@ chromewebstore.google.com
 
 > 如果不想申请密钥，有以下免费解法：
 
-> https://dye87dshnj.feishu.cn/sync/XkEOdfMaTs2mpYbiVs1cKikKnZe
+https://dye87dshnj.feishu.cn/sync/XkEOdfMaTs2mpYbiVs1cKikKnZe
 
-+   OpenAl Translator Chrome 插件
++ OpenAl Translator Chrome 插件
 
 > 使用方法：可免费使用谷歌翻译、微软翻译等常规翻译服务，也可配置 Web ChatGPT 版本，实现无需 api 便可用 ChatGPT 3.5 进行翻译的操作
 
 > 推荐指数：🌟🌟🌟
 
-+   另外一种使用方式，可通过 ollama 部署本地大模型应用到OpenAI Translator，免费开源的LLM 也很香（比如：llama3、谷歌gemma、阿里 qwen等），但比较考验电脑配置条件
++ 另外一种使用方式，可通过 `ollama` 部署本地大模型应用到OpenAI Translator，免费开源的LLM 也很香（比如：llama3、谷歌gemma、阿里 qwen等），但比较考验电脑配置条件
 
 > 推荐指数：🌟🌟🌟🌟
 
-## OpenAI Translator Bob Plugin
+### OpenAI Translator Bob Plugin
 
 一款 Bob 插件：利用 ChatGPT 帮助文本翻译、润色、语法纠错
 
 https://github.com/openai-translator/bob-plugin-openai-translator?tab=readme-ov-file
 
-## WebChatGPT
+### WebChatGPT
 
 https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjbpieminkklglpmhlngfcn?hl=zh-CN （需施展魔法）
 
@@ -64,13 +65,13 @@ https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjb
 
 Google 插件，可以让 ChatGPT 官网联网，解决 GPT-3.5 不能实时联网搜索信息的限制
 
-# AI外语写作（语法纠错修改）
+## AI外语写作（语法纠错修改）
 
-## Cici浏览器助手/豆包浏览器助手
+### Cici浏览器助手/豆包浏览器助手
 
 一键语法修正和改写功能
 
-## Grammarly
+### Grammarly
 
 Grammarly是一款在线语法纠正和校对工具，伟大的AI辅助写作工具
 

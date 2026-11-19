@@ -1,8 +1,9 @@
+
 # 对未来的判断
 
 > 来源：[https://docs.feishu.cn/docx/Rb5fdjWmjoiXj8xD2b1c2ztbnMe](https://docs.feishu.cn/docx/Rb5fdjWmjoiXj8xD2b1c2ztbnMe)
 
-猜**不到未来浪潮不要紧，要紧的是真来**的时候不要躲。
+猜不到未来浪潮不要紧，要紧的是真来的时候不要躲。
 
 要聚集一批具备职业和人生的安全感，为了伟大事业，愿意把自己的技能树点乱的人。
 

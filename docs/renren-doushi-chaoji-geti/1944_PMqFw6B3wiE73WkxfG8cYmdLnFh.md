@@ -1,3 +1,4 @@
+
 # 📚AI知识库合集
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KWv3dX2pRowKZqxlM4qcaZxzn3c](https://xuqiwei1986.feishu.cn/docx/KWv3dX2pRowKZqxlM4qcaZxzn3c)
@@ -16,7 +17,7 @@
 
 [关于半山学院（必读）](https://xuqiwei1986.feishu.cn/wiki/J0RcwdSf2iBoz6kKjYech7gbnPe)
 
-[欢迎来到产品小鲤 AI 冲浪](https://xuqiwei1986.feishu.cn/wiki/FQ5hwhmK7iadzTkjKRscIMe5nxg)
+[欢迎来到产品小鲤 AI 冲浪](https://xuqiwei1986.4.feishu.cn/wiki/FQ5hwhmK7iadzTkjKRscIMe5nxg)
 
 [AI 时代的学习观及方法论](https://xuqiwei1986.feishu.cn/wiki/IppFw3eMGiRlvoklQpSc09Z9nSj)
 

@@ -1,24 +1,25 @@
+
 # 奇绩大模型日报（8月 27日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/K3W9dGwktoTJEyxMxPlcbCkTnTg](https://miracleplus.feishu.cn/docx/K3W9dGwktoTJEyxMxPlcbCkTnTg)
 
-# 📡潜空间活动报名
+## 📡潜空间活动报名
 
-> **潜空间系列活动重磅回归！**
-
-> 本期活动将在**9月6日** **14:00**开始，我们邀请到的嘉宾是**闫俊杰。**他**是MiniMax 创始人兼 CEO，是中国第一梯**队的大模型创业者，目前 MiniMax 估值超 25 亿美元。他将和大家探讨Intelligence with everyone ：对 AGI 0-1 的探索与实践。
-
+> 潜空间系列活动重磅回归！
+>
+> 本期活动将在**9月6日** **14:00**开始，我们邀请到的嘉宾是**闫俊杰。**他是**MiniMax**创始人兼CEO，是中国第一梯队的大模型创业者，目前 MiniMax 估值超 25 亿美元。他将和大家探讨Intelligence with everyone ：对 AGI 0-1 的探索与实践。
+>
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
-
+>
 > 报名通道已开启，欢迎扫描下方二维码报名。
+>
+> ![](img/cc7dfe6c68df4d211c4d463f046d8bfe.png)
 
-![](img/cc7dfe6c68df4d211c4d463f046d8bfe.png)
-
-# 资讯
+## 资讯
 
 ### OpenAI、Adobe 和微软支持加州强制AI内容水印法案
 
-https://techcrunch.com/2024/08/26/openai-adobe-microsoft-support-california-bill-requiring-watermarks-on-ai-content/
+`https://techcrunch.com/2024/08/26/openai-adobe-microsoft-support-california-bill-requiring-watermarks-on-ai-content/`
 
 OpenAI、Adobe和微软三大科技公司表示支持加州即将通过的AB 3211法案，该法案要求科技公司对AI生成的内容进行标识。这项法案要求AI生成的照片、视频和音频的元数据中加入水印，并且要求大型在线平台（如Instagram或X）以普通观众能够理解的方式标识AI生成内容。
 
@@ -28,7 +29,7 @@ OpenAI、Adobe和微软三大科技公司表示支持加州即将通过的AB 321
 
 ### KDD 2024中国队闪耀登场
 
-https://mp.weixin.qq.com/s/gsX6eviJj5gu_6GvDyqTRA
+`https://mp.weixin.qq.com/s/gsX6eviJj5gu_6GvDyqTRA`
 
 KDD 2024大会在西班牙巴塞罗那隆重举行，吸引了全球顶尖学者和企业代表齐聚，展示了数据科学领域的最新技术成果。中国团队表现出色，清华大学、阿里巴巴、松鼠Ai等高校和企业的研究成果被收录，展现了中国在数据挖掘领域的领先地位。
 
@@ -36,13 +37,13 @@ KDD 2024大会在西班牙巴塞罗那隆重举行，吸引了全球顶尖学者
 
 会议亮点包括主题演讲和圆桌讨论，专家们探讨了大语言模型（LLM）的认知能力、AI与自然环境的共生，以及AI在教育领域的应用等前沿话题。特别是中国团队在人工智能教育领域的实践和探索，得到了广泛关注和认可。
 
-https://kdd2024.kdd.org/agenda/
+`https://kdd2024.kdd.org/agenda/`
 
 ![](img/b7599b6ab01e6dfeeeb19fa7e87e9462.png)
 
 ### 字节成立大模型研究院
 
-https://mp.weixin.qq.com/s/JDkpfi4axcnlpANnQjrPEg
+`https://mp.weixin.qq.com/s/JDkpfi4axcnlpANnQjrPEg`
 
 字节跳动正在秘密筹备成立大模型研究院，并大力招揽顶尖AI人才，表明大模型已成为公司的战略重点。知情人士透露，已有外部AI专家加入该研究院。此外，原序智科技创始人秦禹嘉和原零一万物核心成员黄文灏也已加入字节的大模型团队，尽管尚未明确是否隶属于新成立的研究院。
 
@@ -52,7 +53,7 @@ https://mp.weixin.qq.com/s/JDkpfi4axcnlpANnQjrPEg
 
 ### 谷歌系AI创业公司困境
 
-https://mp.weixin.qq.com/s/-bl9BYAVYCE39kn6f3JidQ
+`https://mp.weixin.qq.com/s/-bl9BYAVYCE39kn6f3JidQ`
 
 这篇文章探讨了由前谷歌员工创立的AI初创公司在面对大科技公司竞争时所遇到的困境。许多谷歌系AI初创公司在成立短短几年内纷纷被收购或面临重重挑战，原因包括学术背景的创始人缺乏商业运作经验、AI开发的高昂成本以及投资者的态度转变。文章还列举了几家被认为可能成为收购目标的AI公司，分析了他们的现状和面临的挑战
 
@@ -60,7 +61,7 @@ https://mp.weixin.qq.com/s/-bl9BYAVYCE39kn6f3JidQ
 
 ### 大模型芯片轰向Hot Chips顶会
 
-https://mp.weixin.qq.com/s/qfH6XHDdvg8G7frpnk_qJg
+`https://mp.weixin.qq.com/s/qfH6XHDdvg8G7frpnk_qJg`
 
 在2024年Hot Chips大会上，AI芯片成为焦点。IBM、FuriosaAI等公司展示了创新的AI芯片，特别是FuriosaAI的第二代数据中心AI芯片RNGD，专为大模型推理而设计。RNGD采用台积电5nm工艺，具有高能效、可编程性和256MB片上SRAM，性能超越了当前领先的GPU，特别是在运行大型语言模型如Llama 3.1时表现出色。IBM发布了新一代Telum II处理器，内置AI加速器Spyre，也展示了在大型机处理器上运行AI模型的能力。FuriosaAI强调其芯片在能效和成本方面的优势，称其解决了数据中心大规模AI推理的实际问题。TCP架构和张量收缩处理器（TCP）技术是RNGD的核心，提供了高效的数据重用和计算能力，使其成为替代传统GPU的有力竞争者。
 
@@ -68,25 +69,25 @@ https://mp.weixin.qq.com/s/qfH6XHDdvg8G7frpnk_qJg
 
 ### HotChip2024-Day1:AI加速器芯片
 
-https://mp.weixin.qq.com/s/gDyV0iALBp_YvwxWp-vlLw
+`https://mp.weixin.qq.com/s/gDyV0iALBp_YvwxWp-vlLw`
 
 在HotChip 2024的第一天，各大非云厂商展示了他们的AI加速器芯片。Nvidia的Blackwell以吹嘘为主，未透露微架构细节。AMD MI300X和Intel Gaudi 3进行了展示，Tenstorrent、FuriosaAI、BRCM等也带来了有趣的内容。
 
 **主要亮点：**
 
-1.  **AMD MI300X**：采用Infinity Fabric Advanced Package，实现高带宽互联。支持FP8运算，提供256MB的Infinity Cache，主要面向推理和FineTune应用，对标Nvidia H100。
+1. **AMD MI300X**：采用Infinity Fabric Advanced Package，实现高带宽互联。支持FP8运算，提供256MB的Infinity Cache，主要面向推理和FineTune应用，对标Nvidia H100。
 
-1.  **Intel Gaudi 3**：延续脉动阵列架构，矩阵乘法引擎为256x256，增加了AGU以提升异步计算能力。引入RoCE互联，支持21个Fullmesh ScaleUP和3个ScaleOut。
+1. **Intel Gaudi 3**：延续脉动阵列架构，矩阵乘法引擎为256x256，增加了AGU以提升异步计算能力。引入RoCE互联，支持21个Fullmesh ScaleUP和3个ScaleOut。
 
-1.  **SambaNova SN40L**：通过扩展DDR来增加内存容量，支持多模态推理。新一代架构合并了PCU和PMU，提升Tensor处理能力，采用Mesh/Ring混合互联结构。
+1. **SambaNova SN40L**：通过扩展DDR来增加内存容量，支持多模态推理。新一代架构合并了PCU和PMU，提升Tensor处理能力，采用Mesh/Ring混合互联结构。
 
-1.  **Furiosa**：推出新概念Tensor Contraction Processor，基于爱因斯坦求和符号进行计算，PCIe卡支持48GB HBM，采用2D Mesh片上网络。
+1. **Furiosa**：推出新概念Tensor Contraction Processor，基于爱因斯坦求和符号进行计算，PCIe卡支持48GB HBM，采用2D Mesh片上网络。
 
-1.  **Tenstorrent**：采用三块微架构设计，支持异步访问内存和多种数据访问原语，支持标准以太网互联并扩展至任意拓扑结构。
+1. **Tenstorrent**：采用三块微架构设计，支持异步访问内存和多种数据访问原语，支持标准以太网互联并扩展至任意拓扑结构。
 
-1.  Nvidia Blackwell：虽未详细介绍微架构，但提到计算规模翻倍，并继续推广FP4格式。通过NV-HBI实现10TB/s的互联，展示了复杂的液冷系统。
+1. Nvidia Blackwell：虽未详细介绍微架构，但提到计算规模翻倍，并继续推广FP4格式。通过NV-HBI实现10TB/s的互联，展示了复杂的液冷系统。
 
-1.  **IBM Telum 2**：新一代大型机处理器，整合了DPU和AI加速器，提供更强的计算和数据传输能力。
+1. **IBM Telum 2**：新一代大型机处理器，整合了DPU和AI加速器，提供更强的计算和数据传输能力。
 
 整体来看，AI加速器芯片的多样化发展趋势明显，各厂商在推理、FineTune、内存扩展和互联技术方面各有突破。
 
@@ -94,7 +95,7 @@ https://mp.weixin.qq.com/s/gDyV0iALBp_YvwxWp-vlLw
 
 ### 对话 Nexa AI：两位斯坦福95后，做出比GPT-4o快4倍的小模型
 
-https://mp.weixin.qq.com/s/B813_5rcvM71AMi2ryRcSw
+`https://mp.weixin.qq.com/s/B813_5rcvM71AMi2ryRcSw`
 
 Nexa AI是一家由两名斯坦福校友创立的初创公司，专注于开发高效小模型，目标是构建“端侧版Hugging Face”。公司开发的Octopus v2小模型以5亿参数实现了比GPT-4o快4倍的推理速度，同时具备与GPT-4相当的性能，函数调用准确率达98%以上。公司迅速引起AI界关注，已签约多家知名企业客户，并获得超千万美元种子轮融资。
 
@@ -104,19 +105,19 @@ Nexa AI的新产品Octopus v3具备多模态能力，可在各种边缘设备上
 
 ![](img/466336ff99683f16bd3136fb300c8d27.png)
 
-# 推特
+## 推特
 
-### NousResearch发布DisTrO（跨互联网分布式训练）初步报告
+### NousResearch发布`DisTrO`（跨互联网分布式训练）初步报告
 
-https://x.com/NousResearch/status/1828121648383566270
+`https://x.com/NousResearch/status/1828121648383566270`
 
 如果你能够利用世界上所有的计算能力来训练一个共享的开源AI模型，会怎么样？
 
-初步报告链接: https://github.com/NousResearch/DisTrO/blob/main/A_Preliminary_Report_on_DisTrO.pdf
+初步报告链接: `https://github.com/NousResearch/DisTrO/blob/main/A_Preliminary_Report_on_DisTrO.pdf`
 
-Nous Research 自豪地发布了关于 DisTrO（跨互联网分布式训练）的初步报告。DisTrO 是一系列与架构无关、与网络无关的分布式优化器家族，能够将GPU之间的通信需求减少1000倍至10000倍，而不依赖摊销分析，并且在收敛速度上可以媲美 AdamW+All-Reduce。这使得在慢速互联网带宽和异构网络硬件上进行大型神经网络的低延迟训练成为可能。
+Nous Research 自豪地发布了关于 `DisTrO`（跨互联网分布式训练）的初步报告。`DisTrO` 是一系列与架构无关、与网络无关的分布式优化器家族，能够将`GPU`之间的通信需求减少1000倍至10000倍，而不依赖摊销分析，并且在收敛速度上可以媲美 `AdamW`+`All-Reduce`。这使得在慢速互联网带宽和异构网络硬件上进行大型神经网络的低延迟训练成为可能。
 
-DisTrO 可以通过减少对单一计算实体的依赖，增强LLM（大语言模型）训练的韧性和稳健性。DisTrO 向为所有参与构建LLM的人员创造一个更安全、更公平的环境迈出了重要的一步。
+`DisTrO` 可以通过减少对单一计算实体的依赖，增强`LLM`（大语言模型）训练的韧性和稳健性。`DisTrO` 向为所有参与构建`LLM`的人员创造一个更安全、更公平的环境迈出了重要的一步。
 
 在不依赖单一公司管理和控制训练过程的情况下，研究人员和机构可以更自由地合作，尝试新技术、新算法和新模型。这种增强的竞争力促进了创新，推动了进步，并最终惠及整个社会。
 
@@ -124,7 +125,7 @@ DisTrO 可以通过减少对单一计算实体的依赖，增强LLM（大语言�
 
 ### Karpathy推荐Pieter Levels对话：我认为云计算和人工智能正在让这种精明的独立连续小型创业者的模式变得越来越可行
 
-https://x.com/karpathy/status/1828210213620748655
+`https://x.com/karpathy/status/1828210213620748655`
 
 这段内容真的很有意思。我认为云计算和人工智能正在让@levelsio这种精明的独立连续小型创业者的模式变得越来越可行，使得一个人能够创办并运营多家公司，并可能达到数十亿美元的估值。
 
@@ -140,17 +141,17 @@ https://x.com/karpathy/status/1828210213620748655
 
 ### Xenova分享：关于图像背景移除的最佳方法
 
-https://x.com/xenovacom/status/1828116951186710795
+`https://x.com/xenovacom/status/1828116951186710795`
 
 最近关于图像背景移除的最佳方法引发了热烈讨论。这是我的尝试：
 
-+   使用🤗 Transformers.js进行浏览器内推理
++ 使用🤗 `Transformers.js`进行浏览器内推理
 
-+   WebGPU加速（速度快！）
++ `WebGPU`加速（速度快！）
 
-+   成本为 $0（无需图像托管或服务器处理）
++ 成本为 $0（无需图像托管或服务器处理）
 
-+   无数据离开您的设备（隐私保障！）
++ 无数据离开您的设备（隐私保障！）
 
 ![](img/42f93090ca0a4ef6e5a2cbfdc84dc3db.png)
 
@@ -158,19 +159,19 @@ https://x.com/xenovacom/status/1828116951186710795
 
 ### 仅用手机摄像头、300刀的3D打印开源机器人手臂和100个训练样本，完成叠衣服
 
-https://x.com/Thom_Wolf/status/1828029978245472380
+`https://x.com/Thom_Wolf/status/1828029978245472380`
 
 第一次尝试叠衣服 😱
 
-+   神经网络根据摄像头输入预测未来电机位置
++ 神经网络根据摄像头输入预测未来电机位置
 
-+   使用 iPhone 和 Macbook Pro 的摄像头
++ 使用 iPhone 和 Macbook Pro 的摄像头
 
-+   机器人的手臂每个只需300美元
++ 机器人的手臂每个只需300美元
 
-+   在Apple芯片上训练100个样本只需半天
++ 在Apple芯片上训练100个样本只需半天
 
-自己动手试试：http://github.com/huggingface/lerobot ⭐
+自己动手试试：`http://github.com/huggingface/lerobot` ⭐
 
 ---
 
@@ -184,21 +185,21 @@ Thomas Wolf转发：
 
 ### Tinyboxes正式发售：世界上性价比最高的机器学习设备
 
-https://x.com/realGeorgeHotz/status/1828197925874463166
+`https://x.com/realGeorgeHotz/status/1828197925874463166`
 
-公司成立18个月后，tinyboxes 终于有了“立即购买”按钮！我们今天有13台现货，前往我们的网站（链接在@__tinygrad__）购买。
+公司成立18个月后，`tinyboxes` 终于有了“立即购买”按钮！我们今天有13台现货，前往我们的网站（链接在`@__tinygrad__`）购买。
 
-售价 $15,000 的 tinybox red 是世界上性价比最高的机器学习设备。它完全可联网，这是最重要的指标。
+售价 $15,000 的 `tinybox red` 是世界上性价比最高的机器学习设备。它完全可联网，这是最重要的指标。
 
 ![](img/f177ac7f028efb4f0a9e2d0497ef2efa.png)
 
-# 论文
+## 论文
 
 ### 大语言模型时代的索赔验证：A Survey
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.14317v1
+链接：`http://arxiv.org/abs/2408.14317v1`
 
 摘要：互联网上大量且不断增加的数据量，再加上繁重的手动索赔和事实验证任务，引发了对自动索赔验证系统开发的兴趣。多年来，已提出了几种基于深度学习和Transformer的模型用于此任务。随着大型语言模型（LLMs）的引入及其在几个NLP任务中的出色表现，我们看到了基于LLM的索赔验证方法的激增，以及对新方法的使用，如检索增强生成（RAG）。在本调查中，我们提供了最近使用LLMs的索赔验证框架的综合账户。我们详细描述了这些框架中使用的索赔验证流水线的不同组成部分，包括常见的检索、提示和微调方法。最后，我们描述了为此任务创建的公开可用的英文数据集。
 
@@ -208,9 +209,9 @@ https://x.com/realGeorgeHotz/status/1828197925874463166
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.13987v1
+链接：`http://arxiv.org/abs/2408.13987v1`
 
-摘要：在上下文学习（ICL）中，大语言模型（LLMs）通过学习示范实现快速任务适应。近期实验证明，随着LLMs可用上下文长度的增加，ICL在许多示范设置下的表现并不一定会有很好的规模化。我们在理论上和实验上证实，原因在于更多的示范会使模型的注意力从查询中分散，阻碍其理解关键内容。受人类如何从例子中学习的启发，我们提出了一种无需训练的方法FocusICL，通过在token级别进行琐碎性过滤，避免注意力被不重要的内容分散，并在示范级别上进行分层关注，进一步确保足够的关注当前查询。我们还设计了一个基于示范模型困惑度的高效超参数搜索策略。全面的实验证明，FocusICL相较原始ICL平均性能提升了5.2%，并在许多示范情境下表现优异。
+摘要：在上下文学习（ICL）中，大语言模型（LLMs）通过学习示范实现快速任务适应。近期实验证明，随着LLMs可用上下文长度的增加，ICL在许多示范设置下的表现并不一定会有很好的规模化。我们在理论上和实验上证实，原因在于更多的示范会使模型的注意力从查询中分散，阻碍其理解关键内容。受人类如何从例子中学习的启发，我们提出了一种无需训练的方法`FocusICL`，通过在token级别进行琐碎性过滤，避免注意力被不重要的内容分散，并在示范级别上进行分层关注，进一步确保足够的关注当前查询。我们还设计了一个基于示范模型困惑度的高效超参数搜索策略。全面的实验证明，`FocusICL`相较原始ICL平均性能提升了5.2%，并在许多示范情境下表现优异。
 
 ![](img/741498ef0463e9d4f686723af1219d1f.png)
 
@@ -218,49 +219,53 @@ https://x.com/realGeorgeHotz/status/1828197925874463166
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.13704v1
+链接：`http://arxiv.org/abs/2408.13704v1`
 
-大语言模型(LLMs)在自然语言生成(NLG)任务中越来越多地充当评估者。然而，在评分NLG质量方面，LLMs的能力仍未充分探索。当前研究依赖于人工评估和简单指标，无法捕捉LLMs在不同NLG任务中的洞察力。为了弥补这一空白，我们提出了分层扰动辨别(DHP)基准框架，通过提供量化的辨别分数，利用分层扰动文本数据和统计检验系统地衡量LLMs的NLG评估能力。我们重新建立了六个评估数据集，涵盖了四个NLG任务：摘要、故事完成、问题回答和翻译。我们对五个主要LLM系列的全面评估为它们作为NLG评估者的优势和局限性提供了关键见解。
+大语言模型(LLMs)在自然语言生成(NLG)任务中越来越多地充当评估者。然而，在评分NLG质量方面，LLMs的能力仍未充分探索。当前研究依赖于人工评估和简单指标，无法捕捉LLMs在不同NLG任务中的洞察力。为了弥补这一空白，我们提出了分层扰动辨别(`DHP`)基准框架，通过提供量化的辨别分数，利用分层扰动文本数据和统计检验系统地衡量LLMs的NLG评估能力。我们重新建立了六个评估数据集，涵盖了四个NLG任务：摘要、故事完成、问题回答和翻译。我们对五个主要LLM系列的全面评估为它们作为NLG评估者的优势和局限性提供了关键见解。
 
 ![](img/ec03cfa4e0d865e9b42df0e353911a07.png)
 
-### CodeRefine: 用于增强研究论文LLM生成代码实现的流水线
+### `CodeRefine`: 用于增强研究论文LLM生成代码实现的流水线
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.13366v1
+链接：`http://arxiv.org/abs/2408.13366v1`
+
+
+
+# 论文与框架
 
 本文介绍了CodeRefine，这是一个使用大语言模型（LLMs）将研究论文方法自动转化为功能代码的新颖框架。我们的多步方法首先从论文中提取和总结关键文本片段，分析其代码相关性，并使用预定义的本体论创建知识图。然后从这个结构化表示生成代码，并通过提出的回顾式检索增强生成方法来增强代码。CodeRefine解决了将理论研究与实际实现相结合的挑战，为LLM零-shot提示提供了更准确的替代方案。对各种科学论文的评估表明，CodeRefine能够改进从论文中实现的代码，潜在地加速了前沿算法在现实应用中的采用。
 
 ![](img/ec3e21dbda310afb35c21b0136a9f981.png)
 
-### **Power Scheduler：一个与批量大小**和 Token 数量无关的学习速率调度器
+## Power Scheduler：一个与批量大小和 Token 数量无关的学习速率调度器
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.13359v1
+链接：`http://arxiv.org/abs/2408.13359v1`
 
-摘要：寻找语言模型预训练的最佳学习率是一项具有挑战性的任务。这不仅因为学习率、批大小、训练 token 数量、模型大小和其他超参数之间存在复杂的相关性，而且因为在拥有数十亿或数万亿参数的大型语言模型上执行超参数搜索成本过高。最近的研究提出使用小型代理模型和小语料库执行超参数搜索，并将最佳参数转化到大模型和大语料库中。本文通过数千次小型实验，发现了变量之间的幂律关系，并展示了其在模型大小之间的可传递性。基于观察，我们提出了一种新的学习率调度程序，Power 调度程序，它在处理训练 token 数量和批大小时是不可知的。实验表明，将 Power 调度程序与 Maximum Update Parameterization（muP）相结合，无论训练 token 数量、批大小、模型大小乃至模型架构如何，都能一致地实现令人印象深刻的性能。我们使用 Power 调度程序训练的 3B dense 和 MoE 模型与最先进的小型语言模型性能相媲美。我们在 https://ibm.biz/BdKhLa 上开源了这些预训练模型。
+摘要：寻找语言模型预训练的最佳学习率是一项具有挑战性的任务。这不仅因为学习率、批大小、训练 token 数量、模型大小和其他超参数之间存在复杂的相关性，而且因为在拥有数十亿或数万亿参数的大型语言模型上执行超参数搜索成本过高。最近的研究提出使用小型代理模型和小语料库执行超参数搜索，并将最佳参数转化到大模型和大语料库中。本文通过数千次小型实验，发现了变量之间的幂律关系，并展示了其在模型大小之间的可传递性。基于观察，我们提出了一种新的学习率调度程序，Power 调度程序，它在处理训练 token 数量和批大小时是不可知的。实验表明，将 Power 调度程序与 Maximum Update Parameterization（`muP`）相结合，无论训练 token 数量、批大小、模型大小乃至模型架构如何，都能一致地实现令人印象深刻的性能。我们使用 Power 调度程序训练的 3B dense 和 MoE 模型与最先进的小型语言模型性能相媲美。我们在 `https://ibm.biz/BdKhLa` 上开源了这些预训练模型。
 
 ![](img/1f6096e65b0746c64b20ad8ed84332f6.png)
 
 ![](img/969eb7f178452c7dc8bc697dcf10dc64.png)
 
-### SWE-bench-java：Java的GitHub问题解决基准测试
+## SWE-bench-java：Java的GitHub问题解决基准测试
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.14354v1
+链接：`http://arxiv.org/abs/2408.14354v1`
 
 摘要：GitHub问题解决是软件工程中的关键任务，近年来在工业界和学术界受到了重视。在这一任务中，SWE-bench已经发布用于评估大型语言模型（LLMs）的问题解决能力，但目前仅关注Python版本。然而，支持更多编程语言也很重要，因为工业界有很强的需求。作为迈向多语言支持的第一步，我们开发了Java版本的SWE-bench，称为SWE-bench-java。我们公开发布了数据集，以及相应的基于Docker的评估环境和排行榜，将在未来几个月持续维护和更新。为了验证SWE-bench-java的可靠性，我们实现了一个经典方法SWE智能体，并在其上测试了几个强大的LLMs。众所周知，开发高质量的多语言基准测试是耗时且劳动密集的，所以我们欢迎通过拉取请求或合作来加速其迭代和完善，为全自动编程铺平道路。
 
 ![](img/eb299f2fd8fac66f106128519e8dccc7.png)
 
-### 用于音乐的基础模型： A Survey
+## 用于音乐的基础模型：A Survey
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.14340v1
+链接：`http://arxiv.org/abs/2408.14340v1`
 
 近年来，基础模型（FMs）如大语言模型（LLMs）和潜在扩散模型（LDMs）已经深刻影响到音乐等多个领域。本综述评估了音乐领域的最先进的预训练模型和基础模型，涵盖了表示学习、生成学习和多模态学习等内容。首先我们定位音乐在各个行业中的重要性，并追溯了AI在音乐中的发展历程。通过勾勒基础模型所针对的模态，我们发现在FM的发展中许多音乐表示尚未得到充分探索。然后，重点放在之前方法在多样音乐应用上的灵活性不足上，以及FM在音乐理解、生成和医疗应用中的潜力。通过全面探讨模型预训练范式、架构选择、标记化、微调方法和可控性的细节，我们强调了一些应该得到很好探索的重要话题，如指导调整和上下文学习、规模定律和涌现能力，以及长序列建模等等。一个专门的部分呈现了对音乐智能体的深入洞察，伴随着对于预训练和下游任务中必要的数据集和评估的彻底分析。最后，强调了伦理考虑的重要性，我们主张未来关于FM在音乐中的研究应更注重诸如可解释性、透明性、人类责任和版权问题等议题。本文提供了关于FM在音乐中未来挑战和趋势的见解，旨在塑造人工智能与音乐领域的人类合作轨迹。
 
@@ -268,11 +273,11 @@ https://x.com/realGeorgeHotz/status/1828197925874463166
 
 ![](img/add4a32b3698f6f217a3e9e52ed31efc.png)
 
-### 大语言模型中下一个token预测的法则
+## 大语言模型中下一个token预测的法则
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.13442v1
+链接：`http://arxiv.org/abs/2408.13442v1`
 
 大语言模型(LLMs)已被广泛应用于各个应用领域，然而它们的黑盒特性给理解这些模型如何处理输入数据以进行预测带来了重大挑战。本文介绍了一个精确而量化的规律，规定了预训练LLMs中通过中间层学习上下文化token嵌入以进行下一个token预测的过程。我们的发现显示，从最底层到最高层，每一层对提高预测准确性都有相同的贡献 —— 这是一个普遍现象，观察到在各种开源LLMs中，它们建立在Transformer、RWKV和Mamba等架构上。我们证明这个规律为LLM的发展和应用提供了新的视角和见解，包括模型的扩展、预训练任务和信息流。总的来说，我们的规律通过审查其内部数据处理机制，使得更加精细化的设计、训练和解释LLMs的方法成为可能。
 
@@ -280,21 +285,21 @@ https://x.com/realGeorgeHotz/status/1828197925874463166
 
 # 产品
 
-### TheySaid
+## TheySaid
 
 贡献人：
 
-https://www.theysaid.io/
+`https://www.theysaid.io/`
 
 TheySaid 是一款创新的对话式调查工具，通过与用户的互动提供更深层次的反馈。用户只需简单设置，AI 即可生成调查问题并通过现有沟通渠道发送，帮助企业快速获取客户和员工的真实意见。
 
 ![](img/72613ab5879339ff9cfa03b273c1593a.png)
 
-### Astra AI
+## Astra AI
 
 贡献人：
 
-https://www.tryastra.io/
+`https://www.tryastra.io/`
 
 Astra AI 是一个通用 API，简化将任何应用与 LLM 集成的过程，支持超过 2200 种即插即用的集成，允许用户轻松执行任务如调度事件和发送电子邮件。它提供用户认证管理、简单的导入方式和直观的界面，适合希望增强 LLM 互动性的开发者和企业。
 
@@ -302,29 +307,29 @@ Astra AI 是一个通用 API，简化将任何应用与 LLM 集成的过程，�
 
 # HuggingFace&Github
 
-### LitServe
+## LitServe
 
 贡献人：
 
-https://github.com/Lightning-AI/LitServe
+`https://github.com/Lightning-AI/LitServe`
 
 LitServe 是一个基于 FastAPI 的高性能 AI 模型部署引擎。它提供了批处理、流式处理和 GPU 自动扩展等功能，可以轻松部署各种 AI 模型，包括 LLM、计算机视觉和语音等。LitServe 的性能至少比普通的 FastAPI 快 2 倍。
 
 ![](img/0c58b7513d0c9e4eef3455c46731324e.png)
 
-### QuestionImprover
+## QuestionImprover
 
 贡献人：
 
-https://github.com/sockcymbal/QuestionImprover
+`https://github.com/sockcymbal/QuestionImprover`
 
 QuestionImprover 是一个基于大语言模型的"思维工具"，用于提高用户提出的问题的深度和质量。它通过让专家角色参与一种新颖的基于图的推理节奏，来培养一个不断改进问题的迭代探究循环。
 
 # 投融资
 
-### Viggle：AI角色控制技术助力创意表达，融资1900万美元
+## Viggle：AI角色控制技术助力创意表达，融资1900万美元
 
-https://techcrunch.com/2024/08/26/viggle-makes-controllable-ai-characters-for-memes-and-visualizing-ideas/
+`https://techcrunch.com/2024/08/26/viggle-makes-controllable-ai-characters-for-memes-and-visualizing-ideas/`
 
 加拿大AI初创公司Viggle凭借其可控的AI角色技术，迅速吸引了创意领域的关注。该公司开发的3D视频基础模型JST-1，不仅能够理解物理规律，还允许用户精确指定角色动作，这一特性使其在创意可视化方面具有独特优势。Viggle已成为众多影视制作人、动画师和游戏设计师的工具，尽管生成的视频仍有瑕疵。公司现提供免费版本及每月9.99美元的订阅服务。
 
@@ -336,19 +341,19 @@ Viggle近期完成了一轮1900万美元的A轮融资，由Andreessen Horowitz�
 
 Viggle的AI模型训练数据包含来自YouTube的视频，这可能违反了YouTube的服务条款。尽管公司发言人后续澄清称，数据来源经过精心策划以确保合规，但这一点在业内仍处于灰色地带，且尚未得到YouTube或Google的回应。
 
-公司官网：https://www.viggle.ai/home
+公司官网：`https://www.viggle.ai/home`
 
 ![](img/5bce268fc4aac548d1ac573f17c0ade1.png)
 
 # 学习
 
-### DeepSeek-V2 MLA KV Cache 真的省了吗？
+## DeepSeek-V2 MLA KV Cache 真的省了吗？
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/714761319?utm_psn=1811742292320600064
+`https://zhuanlan.zhihu.com/p/714761319?utm_psn=1811742292320600064`
 
-**MLA结构与优化**：MLA通过KV Cache的低秩压缩减少了显存占用，同时提升了推理效果。文章分析了不同MLA版本的性能差异，尤其是矩阵吸收（Matrix Absorption）的实现对计算量和内存操作的影响。特别地，A_CC_ME版本通过吸收矩阵显著优化了计算强度，但在Gaudi2和A100 GPU上的实际表现与理论预期存在差异，原因在于内存搬运操作的冗余。通过引入Transpose操作优化后，性能提升了约11倍。
+**MLA结构与优化**：MLA通过KV Cache的低秩压缩减少了显存占用，同时提升了推理效果。文章分析了不同MLA版本的性能差异，尤其是矩阵吸收（Matrix Absorption）的实现对计算量和内存操作的影响。特别地，`A_CC_ME`版本通过吸收矩阵显著优化了计算强度，但在Gaudi2和A100 GPU上的实际表现与理论预期存在差异，原因在于内存搬运操作的冗余。通过引入Transpose操作优化后，性能提升了约11倍。
 
 多卡划分与KV Cache的表现：MLA结构在多卡环境中面临KV Cache重复的问题，使得其内存占用甚至超过GQA（Grouped-Query Attention）结构。文章质疑了MLA在多卡部署中的实际优势，认为其可能更适合单卡或小模型部署。
 
@@ -356,9 +361,9 @@ https://zhuanlan.zhihu.com/p/714761319?utm_psn=1811742292320600064
 
 ![](img/02987aad7d15ddca63531c3fa95722c8.png)
 
-### GPU利用率背后的性能真相
+## GPU利用率背后的性能真相
 
-https://mp.weixin.qq.com/s/dWPF9L2UA7AoEIhTxLhNcQ
+`https://mp.weixin.qq.com/s/dWPF9L2UA7AoEIhTxLhNcQ`
 
 作者Roanak Baviskar指出，尽管GPU利用率常被用作衡量GPU性能的指标，但它可能并不能准确反映GPU的实际计算效率。例如，在仅进行内存读写时，GPU利用率也可能达到100%，但这并不意味着GPU的计算资源被充分利用。
 
@@ -370,31 +375,31 @@ https://mp.weixin.qq.com/s/dWPF9L2UA7AoEIhTxLhNcQ
 
 ![](img/a7a31e529161bb37070488bc50a985f4.png)
 
-### 最全 高质量 大模型（LLM）多模态数据集，持续更新中
+## 最全 高质量 大模型（LLM）多模态数据集，持续更新中
 
-https://zhuanlan.zhihu.com/p/716631227?utm_psn=1811673213505249281
+`https://zhuanlan.zhihu.com/p/716631227?utm_psn=1811673213505249281`
 
 这篇文章介绍了多个由全球知名机构发布的高质量多模态数据集，这些数据集涵盖了医学、科学研究、古文字学、视频生成、触觉感知、推荐系统等领域。每个数据集均展示了其独特的构建方法和应用场景，提供了丰富的多模态数据支持人工智能模型的发展。
 
-例如，**MedTrinity-25M** **是一个大型**医学多模态数据集，通过专家模型和知识库生成详细**的视觉和文本注释，支**持医学领域的基础模型开发；MMSci **涵盖了72个科**学领域的学术文章和图表，提升大型多模态模型在科学领域的理解和应用能力；OpenVid-1M 提供高质量视频片段，用于文本到视频生成领域，推动高清晰度视频生成技术的发展；MINT-1T 则是目前最大且多样化的开放源代码多模态交错数据集，包含一万亿文本令牌和三十亿图像，旨在解决现有开放源代码多模态数据集规模和多样性不足的问题。
+例如，`MedTrinity-25M` 是一个大型医学多模态数据集，通过专家模型和知识库生成详细的视觉和文本注释，支撑医学领域的基础模型开发；`MMSci` 涵盖了72个科学领域的学术文章和图表，提升大型多模态模型在科学领域的理解和应用能力；`OpenVid-1M` 提供高质量视频片段，用于文本到视频生成领域，推动高清晰度视频生成技术的发展；`MINT-1T` 则是目前最大且多样化的开放源代码多模态交错数据集，包含一万亿文本令牌和三十亿图像，旨在解决现有开放源代码多模态数据集规模和多样性不足的问题。
 
-此外，还有专为视频分析设计的**Video-MME**数据集，集成了高质量的问答、视频、字幕和音**频数据，为多模态****视频理解提供了**重要基准；MultiOOD 基准通过结合多种模态数据，为异常检测类算法提供了全面的测试基准；NineRec 是一个大规模、多样性的推荐系统评估基准数据集，支持迁移学习模型在推荐系统中的应用研究。
+此外，还有专为视频分析设计的`Video-MME`数据集，集成了高质量的问答、视频、字幕和音频数据，为多模态视频理解提供了重要基准；`MultiOOD` 基准通过结合多种模态数据，为异常检测类算法提供了全面的测试基准；`NineRec` 是一个大规模、多样性的推荐系统评估基准数据集，支持迁移学习模型在推荐系统中的应用研究。
 
-### Python Custom Operators翻译
+## Python Custom Operators翻译
 
-https://zhuanlan.zhihu.com/p/716663746?utm_psn=1811672224861671424
+`https://zhuanlan.zhihu.com/p/716663746?utm_psn=1811672224861671424`
 
-本教程介绍了如何在PyTorch 2.4及以上版本中创建和使用Python自定义运算符，并与PyTorch子系统如torch.compile和autograd集成。自定义运算符的核心是在Python中封装一个函数，使其行为类似于PyTorch原生运算符，尤其是在避免torch.compile时的“图中断”（graph break）。
+本教程介绍了如何在PyTorch 2.4及以上版本中创建和使用Python自定义运算符，并与PyTorch子系统如`torch.compile`和`autograd`集成。自定义运算符的核心是在Python中封装一个函数，使其行为类似于PyTorch原生运算符，尤其是在避免`torch.compile`时的“图中断”（graph break）。
 
-教程首先通过PIL库的crop操作示例，展示了如何将其封装为自定义运算符，并添加“FakeTensor kernel”以确保在torch.compile中正常工作。这包括使用@torch.library.custom_op定义运算符，和register_fake为该运算符注册元数据处理功能。接着，教程还演示了如何为此自定义运算符添加训练支持，使用torch.library.register_autograd指定其梯度公式。
+教程首先通过PIL库的`crop`操作示例，展示了如何将其封装为自定义运算符，并添加“`FakeTensor` kernel”以确保在`torch.compile`中正常工作。这包括使用`torch.library.custom_op`定义运算符，和`register_fake`为该运算符注册元数据处理功能。接着，教程还演示了如何为此自定义运算符添加训练支持，使用`torch.library.register_autograd`指定其梯度公式。
 
-此外，教程还提到了如何测试自定义运算符，确保其正确注册，以及如何处理可能修改输入的自定义运算符，展示了利用NumPy的sin函数来创建一个可变的运算符。
+此外，教程还提到了如何测试自定义运算符，确保其正确注册，以及如何处理可能修改输入的自定义运算符，展示了利用`NumPy`的`sin`函数来创建一个可变的运算符。
 
 ![](img/47b1d821b58fe37782bdf970100b8f16.png)
 
-### “硅仙人”的AI芯片实践
+## “硅仙人”的AI芯片实践
 
-https://zhuanlan.zhihu.com/p/716609829?utm_psn=1811671553240350720
+`https://zhuanlan.zhihu.com/p/716609829?utm_psn=1811671553240350720`
 
 Jim Keller在其AI芯片实践的演讲中，探讨了他在AI芯片领域的思考和挑战。他最初批评AI芯片“hard to program”，而随着深入的实践，他对硬件和软件之间的契约（HW/SW Contract）有了更深刻的理解。他指出，AI计算与传统CPU的差异在于大规模并行处理，这种并行性导致了编程的复杂性，无法像CPU那样形成清晰稳定的HW/SW契约。
 
@@ -404,19 +409,21 @@ Keller特别强调了当前AI计算软件栈的复杂性，其从PyTorch到硬�
 
 ![](img/86481f0817bf679e9322b5a9d975b885.png)
 
-### LLM的context window
+## LLM的context window
 
-https://zhuanlan.zhihu.com/p/642173369?utm_psn=1811661286473334784
+`https://zhuanlan.zhihu.com/p/642173369?utm_psn=1811661286473334784`
 
 本文深入探讨了LLM的context window（上下文窗口）扩展面临的挑战及相关技术进展。context window是LLM允许的输入与输出（即Prompt与Completion）的最大token长度。在Transformer架构中，context window的扩展受到显著的空间和时间复杂度限制。具体来说，随着context window的增加，训练阶段的显存占用和计算量都会呈平方级增长，这使得实际操作中很难提升这一长度。
 
-在位置编码方面，传统的绝对位置编码在外推性（从短序列训练到长序列推理的能力）上表现不佳。近年来，研究者们提出了多种改进位置编码的方法，如T5 bias、RoPE（旋转位置编码）以及ALiBi。RoPE和ALiBi在外推性上表现出一定优势，其中RoPE通过旋转角度的调整，可以实现context window的扩展，但需要在特定条件下进行微调。ALiBi则通过预设的bias提升了模型在长序列上的表现，且几乎不增加额外计算开销。
+在位置编码方面，传统的绝对位置编码在外推性（从短序列训练到长序列推理的能力）上表现不佳。近年来，研究者们提出了多种改进位置编码的方法，如T5 bias、`RoPE`（旋转位置编码）以及`ALiBi`。`RoPE`和`ALiBi`在外推性上表现出一定优势，其中`RoPE`通过旋转角度的调整，可以实现context window的扩展，但需要在特定条件下进行微调。`ALiBi`则通过预设的bias提升了模型在长序列上的表现，且几乎不增加额外计算开销。
 
-为进一步提升LLM的外推性，业界还提出了调整RoPE旋转角的多种方案，如Position Interpolation（PI）、NTK-aware调整、Dynamic NTK以及YaRN。这些方法通过优化位置编码的参数或在推理阶段动态调整缩放因子，显著提升了模型在长序列下的性能。此外，局部注意力机制，如StreamingLLM，也被引入以减少计算量和提升推理速度。
+为进一步提升LLM的外推性，业界还提出了调整`RoPE`旋转角的多种方案，如`Position Interpolation`（PI）、`NTK-aware`调整、`Dynamic NTK`以及`YaRN`。这些方法通过优化位置编码的参数或在推理阶段动态调整缩放因子，显著提升了模型在长序列下的性能。此外，局部注意力机制，如`StreamingLLM`，也被引入以减少计算量和提升推理速度。
 
 最后，LLM外推性的评估方式主要包括长序列语言模型评估、合成任务测试和真实场景下的应用评估，以全面衡量模型的实际表现
 
-### KDD2024 Day1 | RAG Meeting LLMs
+
+
+# KDD2024 Day1 | RAG Meeting LLMs
 
 https://www.zhihu.com/pin/1811084177057116161?native=1&scene=share&utm_psn=1811660084889145344
 
@@ -428,7 +435,7 @@ https://www.zhihu.com/pin/1811084177057116161?native=1&scene=share&utm_psn=18116
 
 ![](img/235b536930c9b0c5b5c6f0a43b1ea56a.png)
 
-# 🚀招聘公告
+## 🚀招聘公告
 
 ---
 
@@ -438,19 +445,19 @@ https://www.zhihu.com/pin/1811084177057116161?native=1&scene=share&utm_psn=18116
 
 **F24实习岗位**
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+### 行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+### Web / AI 全栈开发工程师实习生
 
 **火热开放中**
 
-##### 行研-GenAI研究岗位-前沿学术探索
+### 行研-GenAI研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+### 行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+### 创新活动产品运营（大模型系列活动产品运营）
 
 > **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**添加🛰️💻【**sunjiajunspace】
 
@@ -458,11 +465,9 @@ https://www.zhihu.com/pin/1811084177057116161?native=1&scene=share&utm_psn=18116
 
 ---
 
-# 声明
+## 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -477,8 +482,6 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 > **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

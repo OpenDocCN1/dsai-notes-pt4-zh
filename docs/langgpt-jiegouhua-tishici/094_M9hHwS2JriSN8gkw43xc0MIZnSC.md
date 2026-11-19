@@ -1,3 +1,4 @@
+
 # AI 吸睛简历
 
 > 来源：[https://langgptai.feishu.cn/docx/KLBed7usXoDx8hxjTykcHTTNnvh](https://langgptai.feishu.cn/docx/KLBed7usXoDx8hxjTykcHTTNnvh)
@@ -36,239 +37,414 @@
 
 作者：云中江树
 模型：Claude3.5
+```
 
 ## 步骤1：收集原始信息
+
 引导用户提供个人简历或自我介绍以及岗位介绍（可选），支持从文件读取消息。当用户提供了第一步所需的信息，进行步骤 2
 
 ## 步骤2：提炼简历信息
+
 利用用户提供的信息，根据简历和目标求职岗位的结构，解析并提炼撰写简历信息。
 突出优势：名校背景，金牌实习，业务能力，团队精神等老板和HR喜爱的能力和品质。
 工作经历：3段为佳，使用 STAR 法则精准描述。
 
 ## 任务
+
 生成 react 代码简历，参考下面的代码：
+
 ```
 import React from &#x27;react&#x27;;
+
 import { Star, Mail, Phone, MessageCircle, Award, Briefcase, GraduationCap, Github, Linkedin } from &#x27;lucide-react&#x27;;
 
 const A4Resume = () =&gt; {
+
   const resumeData = {
+
     name: &quot;云中江树&quot;,
+
     title: &quot;高级软件工程师&quot;,
+
     contact: {
+
       email: &quot;yunzhongjiangshun@example.com&quot;,
+
       phone: &quot;179 6060 717&quot;,
+
       wechat: &quot;YZJS_1796060717&quot;,
+
       github: &quot;github.com/cloudforestriver&quot;,
+
       linkedin: &quot;linkedin.com/in/yunzhongjiangshun&quot;
+
     },
+
     summary: &quot;富有创新精神的高级软件工程师，专注于云计算和人工智能领域。拥有8年以上的行业经验，曾在多家知名科技公司担任核心开发角色。善于将前沿技术转化为实际的商业解决方案，并在团队中培养创新文化。具备出色的问题解决能力和技术领导力，能够推动大型复杂项目的成功交付。&quot;,
+
     experience: [
+
       {
+
         title: &quot;高级云计算工程师&quot;,
+
         company: &quot;云巅科技有限公司&quot;,
+
         period: &quot;2019年8月 - 至今&quot;,
+
         responsibilities: [
+
           &quot;领导开发团队设计和实现大规模分布式云计算平台，支持每日超过1亿次API调用&quot;,
+
           &quot;优化云资源调度算法，将系统整体性能提升40%，同时降低25%的运营成本&quot;,
+
           &quot;设计微服务架构，提高了系统的可扩展性和可维护性，支持快速迭代和部署&quot;
+
         ]
+
       },
+
       {
+
         title: &quot;AI算法工程师&quot;,
+
         company: &quot;智能前沿科技公司&quot;,
+
         period: &quot;2016年5月 - 2019年7月&quot;,
+
         responsibilities: [
+
           &quot;开发和优化机器学习模型，提高了图像识别准确率达到业界领先的98%&quot;,
+
           &quot;设计并实现实时推荐系统，为公司带来30%的额外收入增长&quot;,
+
           &quot;主导NLP项目，开发智能客服系统，将客户响应时间缩短60%&quot;
+
         ]
+
       },
+
       {
+
         title: &quot;软件开发工程师&quot;,
+
         company: &quot;互联网创新有限公司&quot;,
+
         period: &quot;2014年7月 - 2016年4月&quot;,
+
         responsibilities: [
+
           &quot;参与开发高并发社交媒体平台，使用React和Node.js技术栈&quot;,
+
           &quot;优化数据库查询性能，将复杂查询响应时间减少80%&quot;,
+
           &quot;实现自动化测试流程，提高代码质量，减少90%的线上bug&quot;
+
         ]
+
       }
+
     ],
+
     education: [
+
       {
+
         degree: &quot;计算机科学与技术硕士&quot;,
+
         school: &quot;浙江大学&quot;,
+
         period: &quot;2012年9月 - 2014年6月&quot;
+
       },
+
       {
+
         degree: &quot;软件工程学士&quot;,
+
         school: &quot;华中科技大学&quot;,
+
         period: &quot;2008年9月 - 2012年6月&quot;
+
       }
+
     ],
+
     skills: [
+
       { name: &quot;云计算 (AWS/Azure/GCP)&quot;, level: 5 },
+
       { name: &quot;Python/TensorFlow/PyTorch&quot;, level: 5 },
+
       { name: &quot;Java/Spring Boot&quot;, level: 4 },
+
       { name: &quot;Golang&quot;, level: 4 },
+
       { name: &quot;JavaScript/React/Node.js&quot;, level: 5 },
+
       { name: &quot;分布式系统设计&quot;, level: 5 },
+
       { name: &quot;机器学习/深度学习&quot;, level: 4 },
+
       { name: &quot;DevOps/CI/CD&quot;, level: 4 }
+
     ],
+
     achievements: [
+
       &quot;领导团队获得2023年度最佳技术创新奖 🏆&quot;,
+
       &quot;开源项目 &#x27;CloudAI&#x27; 在GitHub上获得超过15,000 stars ⭐&quot;,
+
       &quot;在ICML国际会议上发表机器学习优化算法论文 📚&quot;,
+
       &quot;获得8项与云计算和AI相关的技术专利 🥇&quot;
+
     ]
+
   };
 
   return (
+
     &lt;div className=&quot;w-[595px] h-[842px] bg-gradient-to-br from-purple-50 to-indigo-50 font-sans text-xs leading-normal relative overflow-hidden flex rounded-lg shadow-lg&quot;&gt;
+
       &lt;div className=&quot;w-[220px] bg-gradient-to-b from-purple-100 to-indigo-100 p-4 rounded-l-lg flex flex-col&quot;&gt;
+
         &lt;div className=&quot;bg-gradient-to-br from-purple-500 to-indigo-500 text-white p-4 rounded-lg shadow mb-4 overflow-hidden&quot;&gt;
+
           &lt;div className=&quot;w-16 h-16 mx-auto mb-2 rounded-full shadow overflow-hidden bg-white bg-opacity-30&quot;&gt;&lt;/div&gt;
+
           &lt;h1 className=&quot;text-xl font-bold text-center mb-1&quot;&gt;{resumeData.name}&lt;/h1&gt;
+
           &lt;p className=&quot;text-sm text-center mb-2&quot;&gt;{resumeData.title}&lt;/p&gt;
+
           &lt;div className=&quot;text-xs&quot;&gt;
+
             &lt;div className=&quot;flex items-center mb-1&quot;&gt;
+
               &lt;Mail size={10} className=&quot;mr-1 flex-shrink-0&quot; /&gt;
+
               &lt;span className=&quot;truncate&quot;&gt;{resumeData.contact.email}&lt;/span&gt;
+
             &lt;/div&gt;
+
             &lt;div className=&quot;flex items-center mb-1&quot;&gt;
+
               &lt;Phone size={10} className=&quot;mr-1 flex-shrink-0&quot; /&gt;
+
               &lt;span&gt;{resumeData.contact.phone}&lt;/span&gt;
+
             &lt;/div&gt;
+
             &lt;div className=&quot;flex items-center mb-1&quot;&gt;
+
               &lt;MessageCircle size={10} className=&quot;mr-1 flex-shrink-0&quot; /&gt;
+
               &lt;span&gt;{resumeData.contact.wechat}&lt;/span&gt;
+
             &lt;/div&gt;
+
             &lt;div className=&quot;flex items-center mb-1&quot;&gt;
+
               &lt;Github size={10} className=&quot;mr-1 flex-shrink-0&quot; /&gt;
+
               &lt;span&gt;{resumeData.contact.github}&lt;/span&gt;
+
             &lt;/div&gt;
+
             &lt;div className=&quot;flex items-center&quot;&gt;
+
               &lt;Linkedin size={10} className=&quot;mr-1 flex-shrink-0&quot; /&gt;
+
               &lt;span&gt;{resumeData.contact.linkedin}&lt;/span&gt;
+
             &lt;/div&gt;
+
           &lt;/div&gt;
+
         &lt;/div&gt;
+
         &lt;div className=&quot;bg-white bg-opacity-80 p-3 rounded-lg shadow mb-4 flex-1&quot;&gt;
+
           &lt;h2 className=&quot;text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center&quot;&gt;
+
             &lt;Star size={14} className=&quot;mr-1&quot; /&gt;
+
             技能专长
+
           &lt;/h2&gt;
+
           {resumeData.skills.map((skill, index) =&gt; (
+
             &lt;div key={index} className=&quot;flex items-center mb-1&quot;&gt;
+
               &lt;span className=&quot;flex-1 text-[10px] text-gray-700 truncate&quot;&gt;
+
                 {skill.name}
+
               &lt;/span&gt;
+
               &lt;div className=&quot;flex ml-1&quot;&gt;
+
                 {[1, 2, 3, 4, 5].map((star) =&gt; (
+
                   &lt;Star
+
                     key={star}
+
                     size={10}
+
                     className={`ml-0.5 ${star &lt;= skill.level ? &#x27;text-indigo-500 fill-indigo-500&#x27; : &#x27;text-gray-300&#x27;}`}
+
                   /&gt;
+
                 ))}
+
               &lt;/div&gt;
+
             &lt;/div&gt;
+
           ))}
+
         &lt;/div&gt;
+
         &lt;div className=&quot;bg-white bg-opacity-80 p-3 rounded-lg shadow flex-1&quot;&gt;
+
           &lt;h2 className=&quot;text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center&quot;&gt;
+
             &lt;Award size={14} className=&quot;mr-1&quot; /&gt;
+
             成就与奖项
+
           &lt;/h2&gt;
+
           {resumeData.achievements.map((achievement, index) =&gt; (
+
             &lt;div key={index} className=&quot;flex items-start mb-1 text-[10px] text-gray-700&quot;&gt;
+
               &lt;span className=&quot;text-sm mr-1&quot;&gt;{achievement.slice(-2)}&lt;/span&gt;
+
               &lt;span&gt;{achievement.slice(0, -2)}&lt;/span&gt;
+
             &lt;/div&gt;
+
           ))}
+
         &lt;/div&gt;
+
       &lt;/div&gt;
+
       &lt;div className=&quot;flex-1 p-4 bg-white bg-opacity-90 rounded-r-lg flex flex-col&quot;&gt;
-        &lt;div className=&quot;bg-purple-50 p-3 rounded-lg shadow mb-4 text-[10px] text-gray-700&quot;&gt;
-          &lt;h2 className=&quot;text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center&quot;&gt;
-            &lt;Briefcase size={14} className=&quot;mr-1&quot; /&gt;
-            个人简介
-          &lt;/h2&gt;
-          &lt;p&gt;{resumeData.summary}&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div className=&quot;bg-purple-50 p-3 rounded-lg shadow mb-4&quot;&gt;
-          &lt;h2 className=&quot;text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center&quot;&gt;
-            &lt;GraduationCap size={14} className=&quot;mr-1&quot; /&gt;
-            教育背景
-          &lt;/h2&gt;
-          {resumeData.education.map((edu, index) =&gt; (
-            &lt;div key={index} className=&quot;mb-2&quot;&gt;
-              &lt;h3 className=&quot;text-xs font-bold text-purple-600&quot;&gt;{edu.degree} - {edu.school}&lt;/h3&gt;
-              &lt;p className=&quot;text-[10px] text-gray-500&quot;&gt;{edu.period}&lt;/p&gt;
-            &lt;/div&gt;
-          ))}
-        &lt;/div&gt;
-        &lt;div className=&quot;bg-purple-50 p-3 rounded-lg shadow flex-1&quot;&gt;
-          &lt;h2 className=&quot;text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center&quot;&gt;
-            &lt;Briefcase size={14} className=&quot;mr-1&quot; /&gt;
-            工作经历
-          &lt;/h2&gt;
-          {resumeData.experience.map((job, index) =&gt; (
-            &lt;div key={index} className=&quot;mb-3&quot;&gt;
-              &lt;h3 className=&quot;text-xs font-bold text-purple-600&quot;&gt;{job.title} - {job.company}&lt;/h3&gt;
-              &lt;p className=&quot;text-[10px] text-gray-500 mb-1&quot;&gt;{job.period}&lt;/p&gt;
-              &lt;ul className=&quot;list-none pl-0 m-0&quot;&gt;
-                {job.responsibilities.map((resp, idx) =&gt; (
-                  &lt;li key={idx} className=&quot;text-[10px] text-gray-700 mb-0.5 pl-2 relative&quot;&gt;
-                    &lt;span className=&quot;absolute left-0 top-1.5 w-1 h-1 bg-indigo-500 rounded-full&quot;&gt;&lt;/span&gt;
-                    {resp}
-                  &lt;/li&gt;
-                ))}
-              &lt;/ul&gt;
-            &lt;/div&gt;
-          ))}
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  );
+```
+
+
+
+```jsx
+<div className="bg-purple-50 p-3 rounded-lg shadow mb-4 text-[10px] text-gray-700">
+
+  <h2 className="text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center">
+
+    <Briefcase size={14} className="mr-1" />
+
+    个人简介
+
+  </h2>
+
+  <p>{resumeData.summary}</p>
+
+</div>
+
+<div className="bg-purple-50 p-3 rounded-lg shadow mb-4">
+
+  <h2 className="text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center">
+
+    <GraduationCap size={14} className="mr-1" />
+
+    教育背景
+
+  </h2>
+
+  {resumeData.education.map((edu, index) => (
+
+    <div key={index} className="mb-2">
+
+      <h3 className="text-xs font-bold text-purple-600">{edu.degree} - {edu.school}</h3>
+
+      <p className="text-[10px] text-gray-500">{edu.period}</p>
+
+    </div>
+
+  ))}
+
+</div>
+
+<div className="bg-purple-50 p-3 rounded-lg shadow flex-1">
+
+  <h2 className="text-sm font-bold text-purple-600 mb-2 pb-1 border-b border-purple-200 flex items-center">
+
+    <Briefcase size={14} className="mr-1" />
+
+    工作经历
+
+  </h2>
+
+  {resumeData.experience.map((job, index) => (
+
+    <div key={index} className="mb-3">
+
+      <h3 className="text-xs font-bold text-purple-600">{job.title} - {job.company}</h3>
+
+      <p className="text-[10px] text-gray-500 mb-1">{job.period}</p>
+
+      <ul className="list-none pl-0 m-0">
+
+        {job.responsibilities.map((resp, idx) => (
+
+          <li key={idx} className="text-[10px] text-gray-700 mb-0.5 pl-2 relative">
+
+            <span className="absolute left-0 top-1.5 w-1 h-1 bg-indigo-500 rounded-full"></span>
+
+            {resp}
+
+          </li>
+
+        ))}
+
+      </ul>
+
+    </div>
+
+  ))}
+
+</div>
+
+</div>
+
+</div>
+
+);
+
 };
 
 export default A4Resume;
 ```
 
 ## 技术实现
-- React框架（import React from &#x27;react&#x27;;
-import { Star, Mail, Phone, MessageCircle, Award, Briefcase, GraduationCap } from &#x27;lucide-react&#x27;;）
+- `React`框架（`import React from 'react'`; `import { Star, Mail, Phone, MessageCircle, Award, Briefcase, GraduationCap } from 'lucide-react'`;）
 - Tailwind CSS（样式管理）
 - Lucide React（图标库）
 - 注意：使用A4纸竖版固定尺寸：宽595px × 高842px，任何情况下都保持简历的A4纸张比例，其他元素相应缩放。
-- 配色：根据用户的职业从下面配色方案中选择合适的颜色定制简历 [
-    &quot;Lavender Fields&quot;,
-    &quot;Autumn Warmth&quot;,
-    &quot;Ocean Twilight&quot;,
-    &quot;Forest Dew&quot;,
-    &quot;Coral Reef&quot;,
-    &quot;Aurora Borealis&quot;,
-    &quot;Desert Sunset&quot;,
-    &quot;Mint Fresh&quot;,
-    &quot;Berry Sweet&quot;,
-    &quot;Urban Gray&quot;
-]。默认使用&quot;Lavender Fields&quot;配色，使用柔和的配色方案和设计感的布局，配色有设计感。
-- 代码中 &quot;&quot; 号内的内容使用单引号！
+- 配色：根据用户的职业从下面配色方案中选择合适的颜色定制简历 [`"Lavender Fields"`, `"Autumn Warmth"`, `"Ocean Twilight"`, `"Forest Dew"`, `"Coral Reef"`, `"Aurora Borealis"`, `"Desert Sunset"`, `"Mint Fresh"`, `"Berry Sweet"`, `"Urban Gray"`]。默认使用`"Lavender Fields"`配色，使用柔和的配色方案和设计感的布局，配色有设计感。
+- 代码中 `""` 号内的内容使用单引号！
 
-## 工作流：   
+## 工作流：
 从步骤 1 开始工作。在接收用户提供的信息后，严格按照要求直接输出最终结果，不需要额外说明
-```
 
 ## 怎么使用？
 
-1.  确保你能够使用 Claude Artifacts
-
-1.  复制提示词到 Claude
-
-1.  输入你的简历或者个人介绍，岗位JD等信息
+1. 确保你能够使用 Claude Artifacts
+1. 复制提示词到 Claude
+1. 输入你的简历或者个人介绍，岗位JD等信息
 
 ## 为什么使用代码？
 
@@ -282,24 +458,18 @@ import { Star, Mail, Phone, MessageCircle, Award, Briefcase, GraduationCap } fro
 
 ## 已知问题
 
-1.  Claude Artifacts 中竖版显示有问题？本人也不太懂代码，Artifacts 中貌似有一些限制，因此是横版。
-
-1.  代码运行不成功？重试即可。多次不成功，新开对话。
-
-1.  想更换颜色？生成后给 Claude 说明："更换一套配色方案" 即可。
-
-1.  达到Claude 最大输出限制？重试，或者继续生成。
-
-1.  提示词中不用代码可以吗？可以，美观度就会差很多。
-
-1.  怎么生成竖版提示词？本地搭建 react 环境，复制代码本地运行即为 A4 竖版。
-
-1.  后续是否有网站？前端代码没搞定，欢迎全栈大佬一起来搞！欢迎金主爸爸赞助！
+1. Claude Artifacts 中竖版显示有问题？本人也不太懂代码，Artifacts 中貌似有一些限制，因此是横版。
+1. 代码运行不成功？重试即可。多次不成功，新开对话。
+1. 想更换颜色？生成后给 Claude 说明：`“更换一套配色方案”` 即可。
+1. 达到Claude 最大输出限制？重试，或者继续生成。
+1. 提示词中不用代码可以吗？可以，美观度就会差很多。
+1. 怎么生成竖版提示词？本地搭建 `react` 环境，复制代码本地运行即为 A4 竖版。
+1. 后续是否有网站？前端代码没搞定，欢迎全栈大佬一起来搞！欢迎金主爸爸赞助！
 
 ## 更新和开源
 
 项目持续更新，开源地址，欢迎 Star 和贡献
 
-https://github.com/langgptai/AI-resume
+`https://github.com/langgptai/AI-resume`
 
 记得点赞收藏转发本文hh！

@@ -1,13 +1,13 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/VmAUdyu8Io2EkRx20f6cQ12tnle](https://qqs7y1hozd1.feishu.cn/docx/VmAUdyu8Io2EkRx20f6cQ12tnle)
 
-```
-# 📑 Notion MCP Agent
+## 📑 Notion MCP Agent
 
 A terminal-based Notion Agent for interacting with your Notion pages using natural language through the Notion MCP (Model Context Protocol) server.
 
-## Features
+### Features
 
 - Interact with Notion pages via a command-line interface
 - Perform update, insert, retrieve operations on your Notion pages
@@ -17,14 +17,14 @@ A terminal-based Notion Agent for interacting with your Notion pages using natur
 - Remembers conversation context for multi-turn interactions
 - Session management for persistent conversations
 
-## Prerequisites
+### Prerequisites
 
 - Python 3.9+
 - A Notion account with admin permissions
 - A Notion Integration token
 - An OpenAI API key
 
-## Installation
+### Installation
 
 1. Clone the repository
 2. Install the required Python packages:
@@ -35,34 +35,34 @@ pip install -r requirements.txt
 
 3. Install the Notion MCP server (will be done automatically when you run the app)
 
-## Setting Up Notion Integration
+### Setting Up Notion Integration
 
-### Creating a Notion Integration
+#### Creating a Notion Integration
 
 1. Go to [Notion Integrations](https://www.notion.so/my-integrations)
-2. Click &quot;New integration&quot;
-3. Name your integration (e.g., &quot;Notion Assistant&quot;)
-4. Select the capabilities needed (Read &amp; Write content)
-5. Submit and copy your &quot;Internal Integration Token&quot;
+2. Click "New integration"
+3. Name your integration (e.g., "Notion Assistant")
+4. Select the capabilities needed (Read & Write content)
+5. Submit and copy your "Internal Integration Token"
 
-### Sharing Your Notion Page with the Integration
+#### Sharing Your Notion Page with the Integration
 
 1. Open your Notion page
 2. Click the three dots (⋮) in the top-right corner of the page
-3. Select &quot;Add connections&quot; from the dropdown menu
+3. Select "Add connections" from the dropdown menu
 4. Search for your integration name in the search box
 5. Click on your integration to add it to the page
-6. Confirm by clicking &quot;Confirm&quot; in the dialog that appears
+6. Confirm by clicking "Confirm" in the dialog that appears
 
-Alternatively, you can also share via the &quot;Share&quot; button:
-1. Click &quot;Share&quot; in the top right
-2. In the sharing dialog, search for your integration name (preceded by &quot;@&quot;)
+Alternatively, you can also share via the "Share" button:
+1. Click "Share" in the top right
+2. In the sharing dialog, search for your integration name (preceded by "@")
 3. Click on your integration to add it
-4. Click &quot;Invite&quot; to grant it access to your page
+4. Click "Invite" to grant it access to your page
 
 Both methods will grant your integration full access to the page and its content.
 
-### Finding Your Notion Page ID
+#### Finding Your Notion Page ID
 
 1. Open your Notion page in a browser
 2. Copy the URL, which looks like:
@@ -70,7 +70,7 @@ Both methods will grant your integration full access to the page and its content
 3. The ID is the part after the last dash and before any query parameters
    Example: `1f5b8a8bad058a7e39a6`
 
-## Configuration
+### Configuration
 
 You can configure the agent using environment variables:
 
@@ -80,7 +80,7 @@ You can configure the agent using environment variables:
 
 Alternatively, you can set these values directly in the script.
 
-## Usage
+### Usage
 
 Run the agent from the command line:
 
@@ -97,25 +97,26 @@ When you start the agent, it will prompt you to enter your Notion page ID. You c
 python notion_mcp_agent.py your-page-id-here
 ```
 
-### Conversation Flow
+#### Conversation Flow
 
 Each time you start the agent, it creates a unique user ID and session ID to maintain conversation context. This allows the agent to remember previous interactions and continue coherent conversations even after you close and restart the application.
 
 You can exit the conversation at any time by typing `exit`, `quit`, `bye`, or `goodbye`.
 
-## Example Queries
+### Example Queries
 
-- &quot;What&#x27;s on my Notion page?&quot;
-- &quot;Add a new paragraph saying &#x27;Meeting notes for today&#x27;&quot;
-- &quot;Create a bullet list with three items: Apple, Banana, Orange&quot;
-- &quot;Add a comment to the first paragraph saying &#x27;This looks good!&#x27;&quot;
-- &quot;Search for any mentions of meetings&quot;
-- &quot;Summarize our conversation so far&quot;
+- "What's on my Notion page?"
+- "Add a new paragraph saying 'Meeting notes for today'"
+- "Create a bullet list with three items: Apple, Banana, Orange"
+- "Add a comment to the first paragraph saying 'This looks good!'"
+- "Search for any mentions of meetings"
+- "Summarize our conversation so far"
 
-## License
+### License
 
 MIT
-```
+
+
 
 ```
 import asyncio
@@ -124,9 +125,9 @@ import os
 import sys
 import uuid
 from textwrap import dedent
-from agno.agent import Agent 
+from agno.agent import Agent
 from agno.models.openai import OpenAIChat
-from agno.tools.mcp import MCPTools 
+from agno.tools.mcp import MCPTools
 from agno.memory.v2 import Memory
 from mcp import StdioServerParameters
 from dotenv import load_dotenv
@@ -134,68 +135,68 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-NOTION_TOKEN = os.getenv(&quot;NOTION_API_KEY&quot;)
-OPENAI_API_KEY = os.getenv(&quot;OPENAI_API_KEY&quot;)
+NOTION_TOKEN = os.getenv("NOTION_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 async def main():
-    print(&quot;\n========================================&quot;)
-    print(&quot;      Notion MCP Terminal Agent&quot;)
-    print(&quot;========================================\n&quot;)
+    print("\n========================================")
+    print("      Notion MCP Terminal Agent")
+    print("========================================\n")
     
     # Get configuration from environment or use defaults
     notion_token = NOTION_TOKEN
     openai_api_key = OPENAI_API_KEY
     
     # Prompt for page ID first
-    if len(sys.argv) &gt; 1:
+    if len(sys.argv) > 1:
         # Use command-line argument if provided
         page_id = sys.argv[1]
-        print(f&quot;Using provided page ID from command line: {page_id}&quot;)
+        print(f"Using provided page ID from command line: {page_id}")
     else:
         # Ask the user for the page ID
-        print(&quot;Please enter your Notion page ID:&quot;)
-        print(&quot;(You can find this in your page URL, e.g., https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...)&quot;)
-        print(&quot;The ID is the part after the last dash and before any query parameters&quot;)
+        print("Please enter your Notion page ID:")
+        print("(You can find this in your page URL, e.g., https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...)")
+        print("The ID is the part after the last dash and before any query parameters")
         
-        user_input = input(&quot;&gt; &quot;)
+        user_input = input("> ")
         
         # If user input is empty, use default
         if user_input.strip():
             page_id = user_input.strip()
-            print(f&quot;Using provided page ID: {page_id}&quot;)
+            print(f"Using provided page ID: {page_id}")
         else:
-            print(f&quot;Using default page ID: {page_id}&quot;)
+            print(f"Using default page ID: {page_id}")
     
     # Generate unique user and session IDs for this terminal session
-    user_id = f&quot;user_{uuid.uuid4().hex[:8]}&quot;
-    session_id = f&quot;session_{uuid.uuid4().hex[:8]}&quot;
-    print(f&quot;User ID: {user_id}&quot;)
-    print(f&quot;Session ID: {session_id}&quot;)
+    user_id = f"user_{uuid.uuid4().hex[:8]}"
+    session_id = f"session_{uuid.uuid4().hex[:8]}"
+    print(f"User ID: {user_id}")
+    print(f"Session ID: {session_id}")
     
-    print(&quot;\nConnecting to Notion MCP server...\n&quot;)
+    print("\nConnecting to Notion MCP server...\n")
     
     # Configure the MCP Tools
     server_params = StdioServerParameters(
-        command=&quot;npx&quot;,
-        args=[&quot;-y&quot;, &quot;@notionhq/notion-mcp-server&quot;],
+        command="npx",
+        args=["-y", "@notionhq/notion-mcp-server"],
         env={
-            &quot;OPENAPI_MCP_HEADERS&quot;: json.dumps(
-                {&quot;Authorization&quot;: f&quot;Bearer {notion_token}&quot;, &quot;Notion-Version&quot;: &quot;2022-06-28&quot;}
+            "OPENAPI_MCP_HEADERS": json.dumps(
+                {"Authorization": f"Bearer {notion_token}", "Notion-Version": "2022-06-28"}
             )
         }
     )
     
     # Start the MCP Tools session
     async with MCPTools(server_params=server_params) as mcp_tools:
-        print(&quot;Connected to Notion MCP server successfully!&quot;)
+        print("Connected to Notion MCP server successfully!")
         
         # Create the agent
         agent = Agent(
-            name=&quot;NotionDocsAgent&quot;,
-            model=OpenAIChat(id=&quot;gpt-4o&quot;, api_key=openai_api_key),
+            name="NotionDocsAgent",
+            model=OpenAIChat(id="gpt-4o", api_key=openai_api_key),
             tools=[mcp_tools],
-            description=&quot;Agent to query and modify Notion docs via MCP&quot;,
-            instructions=dedent(f&quot;&quot;&quot;
+            description="Agent to query and modify Notion docs via MCP",
+            instructions=dedent(f"""
                 You are an expert Notion assistant that helps users interact with their Notion pages.
                 
                 IMPORTANT INSTRUCTIONS:
@@ -214,8 +215,8 @@ async def main():
                 - Explaining page structure
                 - Adding comments to specific blocks
                 
-                The user&#x27;s current page ID is: {page_id}
-            &quot;&quot;&quot;),
+                The user's current page ID is: {page_id}
+            """),
             markdown=True,
             show_tool_calls=True,
             retries=3,
@@ -224,20 +225,20 @@ async def main():
             num_history_runs=5,  # Keep track of the last 5 interactions
         )
         
-        print(&quot;\n\nNotion MCP Agent is ready! Start chatting with your Notion pages.\n&quot;)
-        print(&quot;Type &#x27;exit&#x27; or &#x27;quit&#x27; to end the conversation.\n&quot;)
+        print("\n\nNotion MCP Agent is ready! Start chatting with your Notion pages.\n")
+        print("Type 'exit' or 'quit' to end the conversation.\n")
         
         # Start interactive CLI session with memory and proper session management
         await agent.acli_app(
             user_id=user_id,
             session_id=session_id,
-            user=&quot;You&quot;,
-            emoji=&quot;🤖&quot;,
+            user="You",
+            emoji="🤖",
             stream=True,
             markdown=True,
-            exit_on=[&quot;exit&quot;, &quot;quit&quot;, &quot;bye&quot;, &quot;goodbye&quot;]
+            exit_on=["exit", "quit", "bye", "goodbye"]
         )
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     asyncio.run(main())
 ```

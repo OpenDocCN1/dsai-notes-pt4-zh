@@ -1,3 +1,4 @@
+
 # 提问技巧
 
 > 来源：[https://seigy6zzam.feishu.cn/docx/In5ud7x3moegvBxgWolcoT8mnFd](https://seigy6zzam.feishu.cn/docx/In5ud7x3moegvBxgWolcoT8mnFd)
@@ -6,15 +7,15 @@
 
 # 参考资料
 
-+   指令
+## 指令
 
 R1 之后，提示词技巧的变与不变 mp.weixin.qq.com
 
 [DeepSeek 13 大官方提示词，普通人都能用出高](https://mp.weixin.qq.com/s/kK-Wo6VqDqhzjnBVbaScig)手效果！mp.weixin.qq.com
 
-[DeepSeek 提示词方法论 ](https://waytoagi.feishu.cn/wiki/ISVZwe05Tio9hEkFSF5cIjZ7nVf)
+[DeepSeek 提示词方法论](https://waytoagi.feishu.cn/wiki/ISVZwe05Tio9hEkFSF5cIjZ7nVf)
 
-视频
+### 视频
 
 [【摆脱卡顿】DeepSeek全网最全的实战技巧](https://www.bilibili.com/video/BV12QPme7EN9/)！建议收藏～_哔哩哔哩_bilibili
 
@@ -32,17 +33,17 @@ R1 之后，提示词技巧的变与不变 mp.weixin.qq.com
 
 [DeepSeek新手进阶：5个步骤8大场景激活开挂](https://www.bilibili.com/video/BV1KRNHe5E8m/?spm_id_from=333.1387.homepage.video_card.click)般的AI助手_哔哩哔哩_bilibili
 
-+   使用替代方案
+## 使用替代方案
 
 [DeepSeek 又崩了？9 大免费方案，让你体验国产 AI](https://mp.weixin.qq.com/s/I4-UAnL8bW918ZG5phrgjA) 之光！mp.weixin.qq.com
 
-视频
+### 视频
 
 [**再也不怕官网崩了！流畅使用DeepSeek**](https://www.bilibili.com/video/BV16mNneFEpw/?spm_id_from=333.337.search-card.all.click)的10个方法_哔哩哔哩_bilibili
 
 [**DeepSeek太卡了？这有6种R1最强满血替代方**](https://www.bilibili.com/video/BV1uMPmemE3r/?spm_id_from=333.1387.homepage.video_card.click)案等你查收！_哔哩哔哩_bilibili
 
-+   玩法
+## 玩法
 
 [收集全网最好玩 Deepseek 案例](https://waytoagi.feishu.cn/wiki/IZqHwi6Xuiplugkl2KrcV2MZnBg)
 
@@ -50,6 +51,6 @@ R1 之后，提示词技巧的变与不变 mp.weixin.qq.com
 
 [DeepSeek R1怎么用？七大真实](https://www.bilibili.com/video/BV1C8fCYEEd4/?spm_id_from=333.1387.homepage.video_card.click)使用场景评测_哔哩哔哩_bilibili
 
-+   本地部署
+## 本地部署
 
 [【](https://www.bilibili.com/video/BV11JNce2E2d/?spm_id_from=333.337.search-card.all.click)保姆级教程】最强国产AI模型DeepSeek满血版本地运行，90岁老奶奶都能玩明白！_哔哩哔哩_bilibili

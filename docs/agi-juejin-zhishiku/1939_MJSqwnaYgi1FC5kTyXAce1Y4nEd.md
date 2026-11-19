@@ -1,8 +1,7 @@
-# 04.14-奥尔特曼：OpenAI 本周将发布“很多”精彩的产品
-
-> 来源：[https://agijuejin.feishu.cn/docx/WPUidJrXOoEAlPxdSSrcD6apnjd](https://agijuejin.feishu.cn/docx/WPUidJrXOoEAlPxdSSrcD6apnjd)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 14 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/WPUidJrXOoEAlPxdSSrcD6apnjd](https://agijuejin.feishu.cn/docx/WPUidJrXOoEAlPxdSSrcD6apnjd)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -52,7 +51,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/845/025.htm)
 
 ![](img/df8c29daf198013657a3320e931ee795.png)
 
-Anthropic 分析 Claude.ai 平台 100 万条匿名学生对话。发现理工科尤其计算机专业学生是 AI 早期使用者，计算机专业学位占比 5.4%，对话占比 38.6%。学生与 AI 交互有四种模式，占比 23 - 29%。学生用 AI 创建优化教育内容、技术解答等。虽多为合理学习目的，但存在作弊担忧。此外，不同学科互动方式有别，Claude 承担高阶认知功能为主，引发对学生依赖 AI 的担忧 。
+Anthropic 分析 `Claude.ai` 平台 100 万条匿名学生对话。发现理工科尤其计算机专业学生是 AI 早期使用者，计算机专业学位占比 5.4%，对话占比 38.6%。学生与 AI 交互有四种模式，占比 23 - 29%。学生用 AI 创建优化教育内容、技术解答等。虽多为合理学习目的，但存在作弊担忧。此外，不同学科互动方式有别，Claude 承担高阶认知功能为主，引发对学生依赖 AI 的担忧 。
 
 ### 💡 韩国集结 40 余产学研机构组建“K-人形机器人联盟”，瞄准 2030 年“世界最强”
 
@@ -76,7 +75,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/844/999.htm)
 
 ![](img/dcac14632add109260463402d7c65f32.png)
 
-4月13日，昆仑万维天工团队在Skywork-o1基础上推出全新Skywork-OR1系列模型。该系列在同等参数规模下推理性能领先，突破能力瓶颈，且全面开放、免费、开源，涵盖三款高性能模型。采用高透明度开源策略，资源上传至相关平台，还会发布技术报告。评测引入avg@k指标，模型在数学推理和竞赛编程任务中表现优异，如Skywork-OR1-Math-7B在相关数据集取得高分，代码能力也有提升 。
+4月13日，昆仑万维天工团队在Skywork-o1基础上推出全新Skywork-OR1系列模型。该系列在同等参数规模下推理性能领先，突破能力瓶颈，且全面开放、免费、开源，涵盖三款高性能模型。采用高透明度开源策略，资源上传至相关平台，还会发布技术报告。评测引入`avg@k`指标，模型在数学推理和竞赛编程任务中表现优异，如Skywork-OR1-Math-7B在相关数据集取得高分，代码能力也有提升 。
 
 ### 💡 只因论文「碰瓷」，ICLR 2025区域主席直接拒稿！最强rebuttal，赢回荣耀
 
@@ -92,7 +91,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/844/926.htm)
 
 ![](img/86fc9977e7eeb142cccd7f5b95f05915.png)
 
-4月13日，OPPO小布助手推出网页版（xiaobu.coloros.com ），登录OPPO账号可同步手机端历史对话记录。该网页版接入满血版DeepSeek，支持联网搜索。小布助手是OPPO智能语音助手。2021年月活破亿，2023年基于AndesGPT大模型公测，2024年发布新版本App ，2025年DeepSeek-R1满血版升级开放，新小布有一键AI唤醒等功能 。
+4月13日，OPPO小布助手推出网页版（`xiaobu.coloros.com` ），登录OPPO账号可同步手机端历史对话记录。该网页版接入满血版DeepSeek，支持联网搜索。小布助手是OPPO智能语音助手。2021年月活破亿，2023年基于AndesGPT大模型公测，2024年发布新版本App ，2025年DeepSeek-R1满血版升级开放，新小布有一键AI唤醒等功能 。
 
 ### 💡 吉卜力爆红背后，关键推手另有其人！GPT-4o竟封奥特曼为AGI之王
 

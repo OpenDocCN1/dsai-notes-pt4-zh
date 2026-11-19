@@ -1,40 +1,39 @@
-# n8n 自动化工作流，并与 Al Agent 进行集成
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/UPvcdHsNmooNJix0FqucomYLnuy](https://qqs7y1hozd1.feishu.cn/docx/UPvcdHsNmooNJix0FqucomYLnuy)
+# n8n 自动化工作流，并与 AI Agent 进行集成
 
-> **n8n**可以互联的流程包括 Gighub、Google、RSS、Slack、Telegram、Gitlab、Redist、RabbitMq等。
+> 来源：https://qqs7y1hozd1.feishu.cn/docx/UPvcdHsNmooNJix0FqucomYLnuy
 
-> 使用n8n可以方便的实现当A条件发生，触发B服务这样的自动工作流程。
+> `n8n`可以互联的流程包括 Github、Google、RSS、Slack、Telegram、Gitlab、Redis、RabbitMq 等。
 
-### **n8n 几个突出优势：**
+> 使用 `n8n` 可以方便地实现当 A 条件发生，触发 B 服务这样的自动工作流程。
 
-+   完全可自托管，数据掌握在自己手中 - 400+ 集成
+## n8n 几个突出优势
 
-+   覆盖几乎所有主流服务 - **内置 AI 能力**
++ 完全可自托管，数据掌握在自己手中 - 400+ 集成
 
-+   支持 LangChain 和自定义模型 - 公平代码许可，核心功能完全免费
++ 覆盖几乎所有主流服务 - `内置 AI 能力`
 
----
++ 支持 `LangChain` 和自定义模型 - 公平代码许可，核心功能完全免费
 
-### n8n部署运行
+## n8n 部署运行
 
-**立即尝试使用 ****npx**** 的 n8n（需要 ****Node.js****）：**
+**立即尝试使用 `npx` 的 `n8n`（需要 `Node.js`）：**
 
 ```
 npx n8n
 ```
 
-**或者使用****Docker****:**
+**或者使用 `Docker`：**
 
 ```
 docker volume create n8n_data
 docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
 ```
 
-#### **解决办法**
+### 解决办法
 
 ```
-# 使用Docker 拉取命令
+# 使用 Docker 拉取命令
 docker pull swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest
 # 给这个镜像打上标签，在后续就可以直接使用新名字作为镜像了（所以这一步可走可不走）
 docker tag swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest docker.n8n.io/n8nio/n8n:latest
@@ -42,24 +41,22 @@ docker tag swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:lates
 # 或者直接执行如下命令
 docker run -d --name n8n -p 5678:5678 swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest
 
-# 使用Containerd 拉取命令
+# 使用 Containerd 拉取命令
 ctr images pull swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest
 ctr images tag swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest docker.n8n.io/n8nio/n8n:latest
 
-# 当你想要使用Docker Compose 来简化容器管理，创建了一个docker-compose.yml文件，可以使用Shell 快速替换命令
-# 将这个.yml文件中的字符串docker.n8n.io/n8nio/n8n:latest全部替换为swr.cn-east- 3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest,
-# 之后就可以直接使用docker-compose up -d来启动这个容器了
+# 当你想要使用 Docker Compose 来简化容器管理，创建了一个 `docker-compose.yml` 文件，可以使用 Shell 快速替换命令
+# 将这个 `.yml` 文件中的字符串 `docker.n8n.io/n8nio/n8n:latest` 全部替换为 `swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest`，
+# 之后就可以直接使用 `docker-compose up -d` 来启动这个容器了
 
 sed -i s#docker.n8n.io/n8nio/n8n:latest#swr.cn-east-3.myhuaweicloud.com/kubesre/docker.n8n.io/n8nio/n8n:latest#g 你的文件名
 ```
 
----
-
-之后运行成功就可以在5678段口看到你的n8n容器了
+之后运行成功就可以在 5678 端口看到你的 `n8n` 容器了
 
 ![](img/257c685bca3cb244998d6e9d24349512.png)
 
-> 所以需要在容器中设置**TLS/HTTPS**，或本地，另一个不推荐的解决办法是将环境变量设置为 -e N8N_SECURE_COOKIE=false
+> 所以需要在容器中设置 `TLS/HTTPS`，或本地，另一个不推荐的解决办法是将环境变量设置为 `-e N8N_SECURE_COOKIE=false`
 
 **注册账号后登录好效果如下：**
 
@@ -69,7 +66,7 @@ sed -i s#docker.n8n.io/n8nio/n8n:latest#swr.cn-east-3.myhuaweicloud.com/kubesre/
 
 ![](img/0d3fc9666db51ab2c518053bd91ac0d2.png)
 
-然后再选择在n8n cloud上进行快速开始：
+然后再选择在 `n8n cloud` 上进行快速开始：
 
 ![](img/5d552e34124237fc48d1a50dd360e984.png)
 
@@ -77,156 +74,143 @@ sed -i s#docker.n8n.io/n8nio/n8n:latest#swr.cn-east-3.myhuaweicloud.com/kubesre/
 
 ![](img/a0916550742b02c27324ba56fb7ed8b5.png)
 
----
+## n8n 使用
 
-## n8n使用
+### n8n 中的节点
 
-### n8n中的节点
+在页面的右侧的 `Open nodes panel` 中有所有的节点，也支持模糊查询，找自己想要的节点（可以通过点右边的 ➕ 打开，也可以 `Tab` 键打开）
 
-在页面的右侧的Open nodes panel中有所有的节点，也支持模糊查询，找自己想要的节点（可以通过点右边的➕打开，也可以Tab键打开）
-
-> 每个节点（Node）是工作流的基本构建单元，每个节点负责执行特定任务。
+> 每个节点（`Node`）是工作流的基本构建单元，每个节点负责执行特定任务。
 
 > 数据流转的过程在一个个节点中穿过，每个节点对这段数据进行操作、更改等然后再传递给下一个节点。
 
 节点接收上游输入 → 处理 → 输出给下游节点
 
-数据以 JSON 格式 在节点间传递
+数据以 `JSON` 格式在节点间传递
 
 节点分很多种类，人工智能、第三方程序应用、数据转换（时间转换、限制合并等）等
 
 ![](img/7b3efedd725079859dbdd13c618fc6fc.png)
 
-节点是属于开放式的，既可以使用现有的节点，也可以使用第三方应用的节点（其他app比如facebook类似的 ）
+节点是属于开放式的，既可以使用现有的节点，也可以使用第三方应用的节点（其他 `app` 比如 `facebook` 类似的）
 
 ![](img/723beb072f1d2604515e535d8ef6e648.png)
 
-**此外如果你认****为官方的节点还**是不够**用，官方提供了co**de节点，搜索框搜索code即可，然后可以使用node.js或者说python.py通过ai智能自己写一个节点使用（就是自己写脚本了）
+**此外如果你认为官方的节点还是不够用，官方提供了 `code` 节点，搜索框搜索 `code` 即可，然后可以使用 `node.js` 或者说 `python.py` 通过 AI 智能自己写一个节点使用（就是自己写脚本了）**
 
 ![](img/6a1a62c61bc1a9c024a861bbf78a58fa.png)
 
-另一个很厉害的是**n8n提供了社区**，因为它是开源项目，有很多人撰写了自己的节点，然后上传到社区中，我们是可以直接拿来用
+另一个很厉害的是 `n8n` 提供了社区，因为它是开源项目，有很多人撰写了自己的节点，然后上传到社区中，我们是可以直接拿来用
 
 在这里，一些小众需求，也就是官方没有开发的，我们就可以直接拿来用
 
 ![](img/693fb76219088ef42c88c9fa107ead43.png)
 
-在n8n中的AI Agent是可定义自己的api的，其本身的服务器是国外的如果是在官方云服务器上使用国外服务都不需要做转发，相对更安全一点
+在 `n8n` 中的 `AI Agent` 是可定义自己的 `api` 的，其本身的服务器是国外的，如果是在官方云服务器上使用国外服务都不需要做转发，相对更安全一点
 
----
+### 第一个节点：触发节点
 
-**第一个节点：触发节点**
++ **手动触发**（在当前页面点击触发这个工作流）
 
-+   **手动触发**（在当前页面点击触发这个工作流）
++ **应用内时间**（监听 `GitHub` 的新提交、`Slack` 的新消息等。）
 
-+   **应用内时间**（监听GitHub 的新提交、Slack 的新消息等。）
++ **按计划**（配置每天的几点触发、或者每隔几分钟触发，定时任务）
 
-+   **按计划**（配置每天的几点触发、或者每隔几分钟触发，定时任务）
++ **Webhook 调用**（监听一个 `url`，只有有人给这个 `url` 发请求，就触发这个工作流）
 
-+   **Webhook调用**（监听一个url，只有有人给这个url发请求，就触发这个工作流）
++ **提交表单时**（监听这个表单的变化）
 
-+   **提交表单时**（监听这个表单的变化）
++ **由另一个工作流执行时**（由另一个工作流调用）
 
-+   **由另一个工作流执行时**（由另一个工作流调用）
++ **聊天消息**（监听聊天应用）
 
-+   **聊天消息**（监听聊天应用）
-
-+   **其他方式**（在工作流错误、文件更改问题上运行）
++ **其他方式**（在工作流错误、文件更改问题上运行）
 
 ![](img/5c8b0b620e5c17a5c02ba36fbf9f6438.png)
 
----
-
 ## 案例
 
-> 接下来做一个自动同步指定ai咨询网站的信息 通过rss节点同步过来转换成md格式，然后信息丢给ai，总结之后发给某个地方，然后总结到表格供我下载。
+> 接下来做一个自动同步指定 AI 咨询网站的信息，通过 `RSS` 节点同步过来转换成 `md` 格式，然后信息丢给 `AI`，总结之后发给某个地方，然后总结到表格供下载。
 
 ### 第一个节点：手动触发
 
 这里测试直接使用手动触发
 
-### 第二个节点采用RSS Read
+### 第二个节点采用 `RSS Read`
 
-#### **RSS简单介绍**
+#### `RSS` 简单介绍
 
-使用RSS阅读器，用户只需添加订阅链接，阅读器会自动抓取支持RSS的文章内容。
+使用 `RSS` 阅读器，用户只需添加订阅链接，阅读器会自动抓取支持 `RSS` 的文章内容。
 
-> 比如网站A提供了RSS订阅服务，就可以通过RSS阅读器拿到这个网站A的文章内容
+> 比如网站 `A` 提供了 `RSS` 订阅服务，就可以通过 `RSS` 阅读器拿到这个网站 `A` 的文章内容
 
-> 这里是使用了aibase的的AI新闻资讯的最新新闻的rss链接、
+> 这里是使用了 `aibase` 的 `AI` 新闻资讯的最新新闻的 `rss` 链接、
 
-> （具体这个链接的获得需要下载插件来得到这个网页的rss链接）
+> （具体这个链接的获得需要下载插件来得到这个网页的 `rss` 链接）
 
-rss不是本篇的重点，所以仅需了解它有什么功能就够了
+`rss` 不是本篇的重点，所以仅需了解它有什么功能就够了
 
-需要url即你要聚合网站的**rss链接**
+需要 `url` 即你要聚合网站的 `rss` 链接
 
 ![](img/0b635a2af01df05a24523fabf301115c.png)
 
-n8n节点是支持多线运行的，可以一对多，也可以多对一，
+`n8n` 节点是支持多线运行的，可以一对多，也可以多对一，
 
-### 第三个节点limit，
+### 第三个节点 `limit`
 
-就是每个节点的入参都是上一个节点的出参，RSS阅读出参了10条消息，这里不想要十条，使用limit可以进行删减
+就是每个节点的入参都是上一个节点的出参，`RSS` 阅读出参了 10 条消息，这里不想要十条，使用 `limit` 可以进行删减
 
 ![](img/1fe80b70636e9d5c1478fb0acf5145c0.png)
 
-### 第四个节点Markdown
+### 第四个节点 `Markdown`
 
-作用是前面拉取的rss阅读中的内容是html内容，有标签也有属性，我需要给它转换成markdown格式
+作用是前面拉取的 `RSS` 阅读中的内容是 `html` 内容，有标签也有属性，我需要给它转换成 `markdown` 格式
 
-> 具体的选择模式HTML to Markdown模式，然后在INPUT中将你想要操作的内容拉过来。
+> 具体的选择模式 `HTML to Markdown` 模式，然后在 `INPUT` 中将你想要操作的内容拉过来。
 
-> （鼠标左键点住content然后话到fx的操作框松手就可）之后通过Test step就可以看到结果
+> （鼠标左键点住 `content` 然后拖到 `fx` 的操作框松手就可）之后通过 `Test step` 就可以看到结果
 
-
-下方还有一个Destination Key 意思就是Markdown解析后的数据放到哪里，再右边的输出狂往下滑就会看到有一个data字段，存储的就是这段转换后的数据
+下方还有一个 `Destination Key`，意思是 `Markdown` 解析后的数据放到哪里，再右边的输出往下滑就会看到有一个 `data` 字段，存储的就是这段转换后的数据
 
 ![](img/7c0dd24aceafc4e0f07dada45c865d0d.png)
 
----
+### 第五个节点 `AI Agent` 节点
 
-### 第五个节点AI Agent节点
+先搜索 `AI Agent` 搜索这个节点放到工作流中将其与上一个节点做链接
 
-先搜索AI Agent 搜搜这个节点放到工作流中将其与上一个节点做链接
+> 可以看到下面有四条子链，分别连接语言模型、记忆、外部工具（1对多）、输出格式。
 
-> 可以看到下面有四条子链、分别连接语言模型、记忆 、外部工具 （1对多）、 输出格式。
+> 其中输出格式是要在 `AI Agent` 设置需要特定的输出格式才会显示第四条线的
 
-> 其中输出格式是要在AI 代理设置需要特定的输出格式才会显示第四条线的
++ **聊天模型**：就是引入大模型去处理的你的输入以及输出
 
-+   **聊天模型：**就是引入大模型去处理的你的输入以及输出
++ **记忆**：使 `AI Agent` 能够存储和回忆用户的上下文信息，比如跟踪用户偏好、历史信息等作用
 
-+   **记忆：**使AI Agent能够存储和回忆用户的上下文信息、比如跟踪用户偏好、历史信息等作用
++ **外部工具**：用户可以根据需要选择不同的工具，对数据进行处理，构建更复杂的自动化流程。
 
-+   **外部工具：**用户可以根据需要选择不同的工具，对数据进行处理，构建更复杂的自动化流程。
-
-+   **输出格式：**简单理解为将这个AI Agent的结果转换一下特定的输出格式
++ **输出格式**：简单理解为将这个 `AI Agent` 的结果转换一下特定的输出格式
 
 ![](img/bb8d4e41c764e514a61460814f07b3ad.png)
 
----
-
 ## AI Agent 聊天模型
 
-**连接第一条线：**聊天模型
+### 连接第一条线：聊天模型
 
 ![](img/eff39be3b32fd628aa36ee8c0fdf829f.png)
 
-> **这里还有一个n8n**的优点就是这个密钥的配置可以直接点击上方的Open docs可以打开n8n给你写好的文档。
+> 这里还有一个 `n8n` 的优点就是这个密钥的配置可以直接点击上方的 `Open docs` 可以打开 `n8n` 给你写好的文档。
 
 > 在这个文档中会详细说介绍你要怎么获取这个密钥，具体可以点进去看，进去就翻译成中文然后跟着操作拿到这个大模型的密钥了。
 
 ![](img/79d4711937ab919b0d7c3ad4c144890f.png)
 
-> 配置好之后模型就不用操作了，只需要把这个模型连接上AI Agent就行了，这个时候看其他的。
+> 配置好之后模型就不用操作了，只需要把这个模型连接上 `AI Agent` 就行了，这个时候看其他的。
 
 ![](img/b9f4f52dcf24e1ab1645ed9b8614d0e0.png)
 
----
+### `AI Agent` 记忆
 
-### AI Agent 记忆
-
-**记忆**，因为这次工作流无需记忆，所以只写一个简单介绍，比如用户的输入就一个内容content，Context Window Length=5
+**记忆**，因为这次工作流无需记忆，所以只写一个简单介绍，比如用户的输入就一个内容 `content`，`Context Window Length=5`
 
 ![](img/a1ec1e33c247e772b5de637d735f087c.png)
 
@@ -259,7 +243,7 @@ AI：医保信息已关联，就诊时可自动结算。
 第1轮（医保卡信息）会被移出上下文
 窗口保持最新5轮对话（第2-6轮）
 🎯 实际效果
-若用户此时问：&quot;需要做哪些检查？&quot;
+若用户此时问："需要做哪些检查？"
 AI会结合：
 
 已知的头晕症状（第4轮）
@@ -269,15 +253,13 @@ AI会结合：
 
 ```
 
----
+### `AI Agent` 工具
 
-### AI Agent 工具
+> 可以有很多工具，比如 **代码工具**（自己编写代码操作输出内容）**HTTP 请求工具。**
 
-> 可以有很多工具，比如**代码工具**（自己编写代码操作输出内容）**HTTP请求工具。**
+> **（可以发送一个请求获取天气等来配合前面的大模型做数据处理）还可以接入 `MCP Serve` 工具**
 
-> **（可以发送一个请求获取**天气等来配合前面的大模型做数据处理）还可以接入MCP Serve工具
-
-这里是一个**AI Agent的整个流程例子**协助理解：
+这里是一个 **`AI Agent` 的整个流程例子** 协助理解：
 
 ```
 示例场景
@@ -289,29 +271,29 @@ AI会结合：
 用户通过聊天界面输入：“我明天要去北京，天气怎么样？顺便帮我查一下明天的会议安排。”
 语言模型
 
-处理：AI Agent 接收用户输入，并将其传递给语言模型（如 GPT）。
+处理：`AI Agent` 接收用户输入，并将其传递给语言模型（如 `GPT`）。
 意图识别：
 识别出两个主要意图：查询天气和查询会议安排。
 生成初步响应框架，例如：“让我为您查询明天在北京的天气和会议安排。”
 记忆
 
 存储上下文：
-AI Agent 查询记忆模块，检查是否有关于用户的上下文信息，比如用户的常用城市、会议安排或之前的对话历史。
-如果没有相关记忆，AI Agent 可能会询问用户：“请问您之前的会议安排是什么？”并将用户的回答存储在记忆中，以便未来使用。
+`AI Agent` 查询记忆模块，检查是否有关于用户的上下文信息，比如用户的常用城市、会议安排或之前的对话历史。
+如果没有相关记忆，`AI Agent` 可能会询问用户：“请问您之前的会议安排是什么？”并将用户的回答存储在记忆中，以便未来使用。
 更新记忆：将用户的出行信息（去北京）及查询的时间（明天）存储在记忆中，方便后续的对话使用。
 外部工具（1对多）
 调用天气 API：
-AI Agent 确定需要通过外部工具查询天气信息。
-发送请求到天气 API（如 OpenWeatherMap），包含城市（北京）和日期（明天）。
+`AI Agent` 确定需要通过外部工具查询天气信息。
+发送请求到天气 API（如 `OpenWeatherMap`），包含城市（北京）和日期（明天）。
 调用日历 API：
-同时，AI Agent 会查询日历 API（如 Google Calendar）以获取用户的会议安排。
+同时，`AI Agent` 会查询日历 API（如 `Google Calendar`）以获取用户的会议安排。
 发送请求，查询用户在明天的所有会议事件。
 接收响应：
 天气 API 返回明天的天气数据，如温度、湿度、天气状况等。
 日历 API 返回用户的会议安排，可能包含时间、地点和会议主题。
 输出格式
 格式化响应：
-AI Agent 将天气数据和会议安排进行处理，并生成用户友好的响应。
+`AI Agent` 将天气数据和会议安排进行处理，并生成用户友好的响应。
 例如：
 复制
 明天在北京的天气是晴天，气温在20°C到25°C之间。
@@ -319,53 +301,47 @@ AI Agent 将天气数据和会议安排进行处理，并生成用户友好的�
 返回结果：将格式化后的响应发送回用户界面。
 ```
 
----
+### `AI Agent` 输出格式
 
-### AI Agent 输出格式
+> **可以直接选择输出解析器以 `json` 格式返回，下面的 `json` 格式是自己定义的。**
 
-> **可以直接选择输出解析器以j**son格式返回，下面的json格式是自己定义的。
-
-> 同时在ai智能解析完数据后就会按照这个格式将内容发送到下一个节点。
+> 同时在 `AI` 智能解析完数据后就会按照这个格式将内容发送到下一个节点。
 
 ![](img/b2c8980f35d3e042118f87696226cf67.png)
 
 ![](img/b6844d4c5997e23c5e306b78f76583b6.png)
 
----
+### `AI Agent Options`
 
-### AI Agent Options
+此时 `AI` 的四个连接线都介绍过了，`AI Agent Options` 是在 `AI Agent` 自身做的配置（此处做简单介绍）
 
-此时AI的四个连接线都介绍过了，AI Agent Options是在AI Agent自身做的配置（此处做简单介绍）
+### `System Message`
 
-### System Message
-
-**作用：**插入系统级指令（如角色设定/格式要求）
+**作用：** 插入系统级指令（如角色设定/格式要求）
 
 > **示例：**
 
-> "你是一名医疗AI，回答需引用权威指南"
+> "你是一名医疗 `AI`，回答需引用权威指南"
 
-### Max Iterations
+### `Max Iterations`
 
-作用：限制AI处理复杂任务时的最大推理步数
+作用：限制 `AI` 处理复杂任务时的最大推理步数
 
 > **示例：**
 
-> 设置3 → 若AI在3步内未得出结果，则终止并返回当前结论
+> 设置 `3` → 若 `AI` 在 `3` 步内未得出结果，则终止并返回当前结论
 
-### Return Intermediate Steps
+### `Return Intermediate Steps`
 
 作用：在输出中显示推理过程（而不仅是最终答案）
 
 > **示例：**
 
-> 数学题解答时会展示"步骤1：分解因式 → 步骤2：代入求解"
+> 数学题解答时会展示 "步骤 1：分解因式 → 步骤 2：代入求解"
 
----
+### `Automatically Passthrough Binary Images`
 
-Automatically Passthrough Binary Images
-
-**作用：**遇到二进制图片（如二维码/条形码）时直接原样传输，不进行OCR识别
+**作用：** 遇到二进制图片（如二维码/条形码）时直接原样传输，不进行 `OCR` 识别
 
 **典型场景：**
 
@@ -373,45 +349,40 @@ Automatically Passthrough Binary Images
 
 ![](img/28f41bc1fdab1ed81a9af07286678034.png)
 
----
+## 第六个节点 `Notion`
 
-### 第六个节点 Notion
-
-Notion就理解为是一个**在线文档**就好，通过配置密钥，可以将上一个节点输入的内容我给输出到我的在线文档中
+`Notion` 就理解为是一个 **在线文档** 就好，通过配置密钥，可以将上一个节点输入的内容输出到我的在线文档中
 
 ![](img/811d96fb7b51fdd64305a4a6347b2cc1.png)
 
-同样选好了之后需要配置你的账号密钥，和前面的deepseek的过程一样，点击去然后看n8n的文档就好
+同样选好了之后需要配置你的账号密钥，和前面的 `deepseek` 的过程一样，点击去然后看 `n8n` 的文档就好
 
-> 下面的这些操作就是要操作一个页（Database Page）、操作是创作数据（Create）、操作的哪个页面。
+> 下面的这些操作就是要操作一个页（`Database Page`）、操作是创作数据（`Create`）、操作的哪个页面。
 
-> 然后再下面要存储到notion中的数据进行分段分url是哪段数据，然后添加其他的Properities。
+> 然后再下面要存储到 `notion` 中的数据进行分段，`url` 是哪段数据，然后添加其他的 `Properties`。
 
 ![](img/9236437b1cb3afbe59e3cf244c0ce635.png)
 
-这里有一点，在每一个节点是可以直接操作之前的所有节点数据的，我们在notion节点是可以直接拉取Markdown节点的数据的
+这里有一点，在每一个节点是可以直接操作之前的所有节点数据的，我们在 `notion` 节点是可以直接拉取 `Markdown` 节点的数据的
 
 ![](img/9904e6021fbff9aaf29e65997d9448db.png)
 
-在这个流程之后数据就会自动的create到我的notion集合中了。
+在这个流程之后数据就会自动的 `create` 到我的 `notion` 集合中了。
 
 按照自己的分类，自动的完成一系列的操作
 
----
+### 第七个节点 `Edit Fields`
 
-第七个节点Edit Fields
+> 其实前面 6 个节点已经基本了解到了这个 `n8n` 是怎么用的了。
 
-> 其实前面6个节点已经基本了解到了这个n8n是怎么用的了。
+> 后面两个节点就是 `Edit Fields` 和 `Convert to File`，即将 `JSON` 数据转换为 `Map` 字段，然后转成 `file` 文件
 
-> 后面两个节点就是Edit Fields和Convert to File即将json数据转换为Map字段，然后转成file文件
+> `Edit Field` 很容易理解，将前面的字段设为类似于 `map` 的，`name` 就是 `json` 中 `name` 字段。
 
-> Edit Field很容易理解，将前面的字段设为类似于map的，name就是json中name字段。
+> 内容就是选用 `markdown` 中的 `content` 字段，同时也支持该字段类型，这里统一用的是 `string`
 
-> 内容就是选用markdown中的content字段，同时也支持该字段类型，这里统一用的是string
+### 第八个节点 `Convert to File`
 
-
-### 第八个节点Convert to File
-
-简单理解，转换然后下载，下载后，几个字段就刚好和xls文件中的字段对应。
+简单理解，转换然后下载，下载后，几个字段就刚好和 `xls` 文件中的字段对应。
 
 ![](img/362a3210e96d3dd4365bb9edc804ac1b.png)

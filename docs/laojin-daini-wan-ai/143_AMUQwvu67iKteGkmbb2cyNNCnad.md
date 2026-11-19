@@ -1,4 +1,5 @@
-# AI编程大战白热化：Claude Opus 4.6和GPT-5.3-Codex同一天发布，谁才是真正的王者？
+
+# AI编程大战白热化：`Claude Opus 4.6`和`GPT-5.3-Codex`同一天发布，谁才是真正的王者？
 
 > 来源：[https://my.feishu.cn/docx/QxqxdJtWtolcmQx23BDcWHMKnrg](https://my.feishu.cn/docx/QxqxdJtWtolcmQx23BDcWHMKnrg)
 
@@ -6,13 +7,13 @@
 
 Anthropic和OpenAI在同一天发布了各自的王牌模型。
 
-Claude Opus 4.6 vs GPT-5.3-Codex。
+`Claude Opus 4.6` vs `GPT-5.3-Codex`。
 
 正面硬刚，火药味十足。
 
 老金我熬夜测了两个模型，今天给你们做个全面对比。
 
-Claude Code和Codex Cli中均已上线。
+`Claude Code`和`Codex Cli`中均已上线。
 
 ![](img/49ab36135fc3b1d56809bbc02965ae63.png)
 
@@ -20,9 +21,9 @@ Claude Code和Codex Cli中均已上线。
 
 ## 先说结论：各有所长
 
-**Claude Opus 4.6**：100万token上下文、Agent Teams、长上下文能力碾压
+`Claude Opus 4.6`：100万token上下文、`Agent Teams`、长上下文能力碾压
 
-**GPT-5.3-Codex**：25%更快、自我构建、超越编码
+`GPT-5.3-Codex`：25%更快、自我构建、超越编码
 
 两家都说自己是"最强"。
 
@@ -30,9 +31,9 @@ Claude Code和Codex Cli中均已上线。
 
 ## Claude Opus 4.6：100万token上下文
 
-这是Opus 4.6最炸裂的升级。
+这是`Opus 4.6`最炸裂的升级。
 
-之前Opus 4.5的上下文是20万token。
+之前`Opus 4.5`的上下文是20万token。
 
 现在直接翻了5倍，到100万token。
 
@@ -50,21 +51,21 @@ Claude Code和Codex Cli中均已上线。
 
 不用再担心"上下文不够用"的问题。
 
-Claude能同时看到你项目里的所有文件，理解整体架构。
+`Claude`能同时看到你项目里的所有文件，理解整体架构。
 
 ## GPT-5.3-Codex：AI自己造AI
 
-再来看个GPT-5.3-Codex最让人震惊的地方。
+再来看个`GPT-5.3-Codex`最让人震惊的地方。
 
 OpenAI官方说法：
 
-"GPT-5.3-Codex是我们第一个帮助构建自己的模型。"
+"`GPT-5.3-Codex`是我们第一个帮助构建自己的模型。"
 
 ![](img/f6eefde18576b0f51e1ee016b1c00035.png)
 
 什么意思？
 
-Codex团队用Codex来：
+`Codex`团队用`Codex`来：
 
 +   调试自己的训练过程
 
@@ -80,7 +81,7 @@ AI开始自己造AI了。
 
 ## 长上下文能力：Claude完胜
 
-这是Opus 4.6最硬核的技术突破。
+这是`Opus 4.6`最硬核的技术突破。
 
 **什么是Context Rot？**
 
@@ -90,11 +91,11 @@ AI开始自己造AI了。
 
 Anthropic给出了一组数据：
 
-在MRCR v2测试中（专门测AI在海量文本里找信息的能力）：
+在`MRCR v2`测试中（专门测AI在海量文本里找信息的能力）：
 
-Opus 4.6得分76%。
+`Opus 4.6`得分76%。
 
-Sonnet 4.5只有18.5%。
+`Sonnet 4.5`只有18.5%。
 
 ![](img/74f8661f771ddfd361d418b927ec4e67.png)
 
@@ -102,11 +103,11 @@ Sonnet 4.5只有18.5%。
 
 老金我翻译一下：以前你给AI喂10万字的文档，它可能只能记住开头和结尾。
 
-现在Opus 4.6能真正"读懂"整个文档，不会漏掉中间的关键信息。
+现在`Opus 4.6`能真正"读懂"整个文档，不会漏掉中间的关键信息。
 
-## 速度对比：GPT-5.3更快
+## 速度对比：`GPT-5.3`更快
 
-OpenAI说GPT-5.3-Codex比5.2版本快了25%。
+OpenAI说`GPT-5.3-Codex`比`5.2`版本快了25%。
 
 ![](img/7af08cc8b7dc308de13d9a9556e171b8.png)
 
@@ -116,39 +117,39 @@ OpenAI说GPT-5.3-Codex比5.2版本快了25%。
 
 ![](img/e19b8a7aae7d0925609be00b3391dbd2.png)
 
-Claude Opus 4.6的速度和4.5差不多。
+`Claude Opus 4.6`的速度和`4.5`差不多。
 
 考虑到上下文翻了5倍，能保持同样的速度已经不错了。
 
 ## Agent Teams vs 自我构建
 
-Claude的Agent Teams：
+`Claude`的`Agent Teams`：
 
-让多个Claude同时工作，各自负责不同的任务，然后自动协调。
+让多个`Claude`同时工作，各自负责不同的任务，然后自动协调。
 
 一个负责前端，一个负责后端，一个负责测试，一个负责文档。
 
-四个Claude同时开工，效率翻倍。
+四个`Claude`同时开工，效率翻倍。
 
-启用方式： CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+启用方式：`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
 
 ![](img/f42cbbcf63a572e97fad8263b668d953.png)
 
-**GPT-5.3的自我构建**：
+`GPT-5.3`的自我构建：
 
 AI参与自己的开发过程。
 
-这意味着OpenAI的迭代速度会越来越快。
+这意味着`OpenAI`的迭代速度会越来越快。
 
-今天的5.3帮助构建明天的5.4，5.4帮助构建5.5...
+今天的`5.3`帮助构建明天的`5.4`，`5.4`帮助构建`5.5`...
 
 两个方向都很有意思。
 
-Claude走的是"团队协作"路线。
+`Claude`走的是"团队协作"路线。
 
-OpenAI走的是"自我进化"路线。
+`OpenAI`走的是"自我进化"路线。
 
-它还放了拿Codex 5.3做的两款游戏，你别说，你还真别说。
+它还放了拿`Codex 5.3`做的两款游戏，你别说，你还真别说。
 
 让处于游戏研发的我，背后发起一丝丝凉意，太快了，进步太快了。
 
@@ -162,23 +163,23 @@ OpenAI走的是"自我进化"路线。
 
 ## 跑分对比
 
-**Claude Opus 4.6**：
+`Claude Opus 4.6`：
 
-+   Terminal-Bench 2.0：最高分
++   `Terminal-Bench 2.0`：最高分
 
-+   GDPval-AA：比GPT-5.2高144 Elo点
++   `GDPval-AA`：比`GPT-5.2`高144 Elo点
 
-+   Humanity's Last Exam：第一
++   `Humanity's Last Exam`：第一
 
-+   BrowseComp：第一
++   `BrowseComp`：第一
 
 ![](img/e3b604cfaf7f7df8987cd420a7cecf37.png)
 
-**GPT-5.3-Codex**：
+`GPT-5.3-Codex`：
 
 +   自我构建能力：首个参与自身开发的AI模型
 
-+   25%速度提升（相比GPT-5.2）
++   25%速度提升（相比`GPT-5.2`）
 
 +   被标记为"高能力"网络安全任务
 
@@ -194,17 +195,17 @@ OpenAI走的是"自我进化"路线。
 
 ## 超越编码：两家都在扩展边界
 
-**Claude的扩展**：
+`Claude`的扩展：
 
-+   Claude in Excel：直接在Excel里调用Claude
++   `Claude in Excel`：直接在`Excel`里调用`Claude`
 
-+   Claude in PowerPoint：直接在PPT里做演示文稿
++   `Claude in PowerPoint`：直接在`PPT`里做演示文稿
 
-+   128k输出tokens：一次性生成更长的内容
++   `128k`输出`tokens`：一次性生成更长的内容
 
-**GPT-5.3的扩展**：
+`GPT-5.3`的扩展：
 
-OpenAI说："GPT-5.3-Codex从一个能写代码和审查代码的Agent，变成了一个几乎能做开发者和专业人士在电脑上能做的任何事情的Agent。"
+`OpenAI`说："`GPT-5.3-Codex`从一个能写代码和审查代码的`Agent`，变成了一个几乎能做开发者和专业人士在电脑上能做的任何事情的`Agent`。"
 
 包括做幻灯片、电子表格等。
 
@@ -212,7 +213,7 @@ OpenAI说："GPT-5.3-Codex从一个能写代码和审查代码的Agent，变成�
 
 ## 定价对比
 
-**Claude Opus 4.6**：
+`Claude Opus 4.6`：
 
 +   输入：5美元/百万token
 
@@ -220,69 +221,69 @@ OpenAI说："GPT-5.3-Codex从一个能写代码和审查代码的Agent，变成�
 
 +   超过20万token的长上下文：10美元/37.5美元
 
-**GPT-5.3-Codex**：
+`GPT-5.3-Codex`：
 
-+   目前只在付费ChatGPT计划中可用
++   目前只在付费`ChatGPT`计划中可用
 
-+   API访问计划中，预计会有25%更快的交互
++   `API`访问计划中，预计会有25%更快的交互
 
 两家定价策略不同。
 
-Claude走API路线，按token收费。
+`Claude`走`API`路线，按token收费。
 
-OpenAI走订阅路线，包含在ChatGPT Plus/Pro里。
+`OpenAI`走订阅路线，包含在`ChatGPT Plus/Pro`里。
 
 ## 市场格局
 
-**Anthropic**：
+`Anthropic`：
 
 +   44%的企业在生产环境中使用
 
-+   Claude Code 11月突破10亿美元收入
++   `Claude Code` 11月突破10亿美元收入
 
 +   正在谈200亿美元融资，估值3500亿美元
 
-**OpenAI**：
+`OpenAI`：
 
-+   三天前刚发布Codex桌面应用
++   三天前刚发布`Codex`桌面应用
 
-+   GPT-5.3-Codex是对Claude Code的直接回应
++   `GPT-5.3-Codex`是对`Claude Code`的直接回应
 
 +   仍然是市场领导者
 
 两家现在是贴身肉搏的状态。
 
-OpenAI出一招，Anthropic就接一招。
+`OpenAI`出一招，`Anthropic`就接一招。
 
 对我们用户来说，这是好事——竞争越激烈，产品越好用。
 
 ## 老金我的选择建议
 
-选Claude Opus 4.6如果你：
+选`Claude Opus 4.6`如果你：
 
 +   需要处理大型代码库（100万token上下文）
 
 +   需要长上下文能力（不会"忘记"前面的内容）
 
-+   想用Agent Teams做并行开发
++   想用`Agent Teams`做并行开发
 
-+   需要在Excel/PowerPoint里用AI
++   需要在`Excel`/`PowerPoint`里用AI
 
-选GPT-5.3-Codex如果你：
+选`GPT-5.3-Codex`如果你：
 
-+   已经是ChatGPT Plus/Pro用户
++   已经是`ChatGPT Plus/Pro`用户
 
 +   需要网络安全相关的高能力任务
 
-+   喜欢OpenAI的生态系统
++   喜欢`OpenAI`的生态系统
 
-**老金我的实际做法**：两个都用。
+老金我的实际做法：两个都用。
 
 不同任务用不同工具。
 
-大型项目、需要长上下文的用Claude。
+大型项目、需要长上下文的用`Claude`。
 
-快速迭代、简单任务用GPT。
+快速迭代、简单任务用`GPT`。
 
 ## 最后说一句
 
@@ -292,10 +293,10 @@ OpenAI出一招，Anthropic就接一招。
 
 AI编程工具的竞争进入了白热化阶段。
 
-Claude Code、Cursor、Windsurf、OpenAI Codex，各家都在拼命卷。
+`Claude Code`、`Cursor`、`Windsurf`、`OpenAI Codex`，各家都在拼命卷。
 
 对我们用户来说，这是最好的时代。
 
-你们觉得呢？Claude还是GPT？
+你们觉得呢？`Claude`还是`GPT`？
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

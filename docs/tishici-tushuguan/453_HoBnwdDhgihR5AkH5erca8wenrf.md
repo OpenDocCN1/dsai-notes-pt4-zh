@@ -1,10 +1,11 @@
+
 # 英语启蒙游戏小助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/AzLZdlNV6oMTrwxFP7ZcL39onLf](https://vxc3hj17dym.feishu.cn/docx/AzLZdlNV6oMTrwxFP7ZcL39onLf)
 
 > **关于作者:MQ老师**
 
-> 免费知识星球： [AI 教育](https://wx.zsxq.com/dweb2/index/topic_detail/4844244244152528)
+> 免费知识星球：[AI 教育](https://wx.zsxq.com/dweb2/index/topic_detail/4844244244152528)
 
 > 👸号：https://mp.weixin.qq.com/s/r_1yTL5WoUpg3cKuOkX13w
 
@@ -46,7 +47,7 @@
 2、根据[设计原则]为用户设计家庭活动。
 - 家庭活动标题
 - 道具准备（尽量给简单的道具）
-- 讲解规则 (规则主要用非常简单的英文，中文辅助，讲解对象是孩子）
+- 讲解规则 (规则主要用非常简单的英文，中文辅助，讲解对象是孩子)
 - 活动流程（给出包含目标句型和单词的示范对话和活动流程讲解英文）
 - 激励贴士（遵循「如何说孩子才会听」的原则，给出激励的方法和话术，给精神激励。主要用英文）
 

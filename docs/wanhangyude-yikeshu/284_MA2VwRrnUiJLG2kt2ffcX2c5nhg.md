@@ -1,14 +1,15 @@
+
 # 店铺运营：官方活动
 
 > 来源：[https://my.feishu.cn/docx/MlUTdGclxo3wlTxLw4KcqopLnTK](https://my.feishu.cn/docx/MlUTdGclxo3wlTxLw4KcqopLnTK)
 
-# 2024官方活动
+## 2024官方活动
 
-## Q2季度
+### Q2季度
 
 [2024年Q2 美国跨境商家激励政策(对外版)](https://bytedance.sg.larkoffice.com/docx/HfI4dbQf1o3clPxr9xwlWpbkg3g?from=from)
 
-## Q3季度
+### Q3季度
 
 [24年7月-8月美国跨境商家内容激励政策(对外）](https://bytedance.sg.larkoffice.com/docx/FKjgdXzPfoy6SoxUcSDlwegAgDe?from=from)
 

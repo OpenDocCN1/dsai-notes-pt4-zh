@@ -1,3 +1,4 @@
+
 # 账号重生计划执行手册V2.0
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZWHidJhnYo9qt9xsFarcRDl3nYc](https://xuqiwei1986.feishu.cn/docx/ZWHidJhnYo9qt9xsFarcRDl3nYc)
@@ -18,7 +19,7 @@
 
 我的其他📕相关帖子：
 
-[《爆品基因》：📕虚拟电商选品王牌指南](https://qcnd0j9ihzsb.feishu.cn/docx/WrJsdJUbcoKFo5x8YW9cQ51An3d)[ 📕虚拟行业官方PPT深度翻译](https://qcnd0j9ihzsb.feishu.cn/docx/QdHYdQBpmoV9DEx0BqLcmfmon3f)
+[《爆品基因》：📕虚拟电商选品王牌指南](https://qcnd0j9ihzsb.feishu.cn/docx/WrJsdJUbcoKFo5x8YW9cQ51An3d) [📕虚拟行业官方PPT深度翻译](https://qcnd0j9ihzsb.feishu.cn/docx/QdHYdQBpmoV9DEx0BqLcmfmon3f)
 
 <https://vnr4jule4g.feishu.cn/minutes/embed/obcn82q1qv82463o984dp38t?from=ccm>
 

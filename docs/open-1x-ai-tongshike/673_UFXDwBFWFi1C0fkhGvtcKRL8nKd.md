@@ -1,10 +1,11 @@
+
 # 微学习02 | 原理：文本提示词工程及优化
 
 > 来源：[https://datawhaler.feishu.cn/docx/Oay3dk5Xto6nTAxkACGcrZmrnad](https://datawhaler.feishu.cn/docx/Oay3dk5Xto6nTAxkACGcrZmrnad)
 
 ## 项目背景
 
-本教程面向不熟悉大模型的作用机制，但想要构建让大模型“听话”，能够输出符合自己要求内容的提示词的初学者。 本教程旨在帮助初学者快速上手提示词构建，并掌握提示词构建的技巧。
+本教程面向不熟悉大模型的作用机制，但想要构建让大模型“听话”，能够输出符合自己要求内容的提示词的初学者。本教程旨在帮助初学者快速上手提示词构建，并掌握提示词构建的技巧。
 
 ## 写好提示词的要素
 
@@ -18,7 +19,7 @@
 
 ### 使输出格式符合预期
 
-大多数大模型的默认输出格式为**Markdown**，JSON/XML/YAML/CSV等方便程序解析的结构化文本对于大模型最为友好，当然，非结构化文本也可以进行格式化输出，例如：
+大多数大模型的默认输出格式为 `Markdown`，`JSON`、`XML`、`YAML`、`CSV` 等方便程序解析的结构化文本对于大模型最为友好，当然，非结构化文本也可以进行格式化输出，例如：
 
 ```
 将给定文本转换为符合小红书用户群体和调性的文案格式
@@ -26,7 +27,7 @@
 
 ### 让LLM明确自己的角色
 
-**设置角色可以让大模型更容易找到与角**色相关的训练语料，明确自己的任务，例如：
+设置角色可以让大模型更容易找到与角色相关的训练语料，明确自己的任务，例如：
 
 ```
 你是一个资深的心理医生，擅长使用认知行为疗法解决心理问题：
@@ -54,9 +55,9 @@
 
 ## 小样本提示词
 
-小样本类提示词（Few**-shot **Prompting）是一种通过在提示词中提供少量示例来引导大语言模型完成特定任务的方法。这种方法介于零样本提示词（Zero-shot Prompting）和全量训练之间，既不需要重新训练模型，又能通过示例让模型更好地理解任务要求。小样本提示词没有明确的分类，总之，它是一种灵活基于示例的提示词，适用于各种任务，包括文本生成、分类、回答问题等。
+小样本类提示词（Few-shot Prompting）是一种通过在提示词中提供少量示例来引导大语言模型完成特定任务的方法。这种方法介于零样本提示词（Zero-shot Prompting）和全量训练之间，既不需要重新训练模型，又能通过示例让模型更好地理解任务要求。小样本提示词没有明确的分类，总之，它是一种灵活基于示例的提示词，适用于各种任务，包括文本生成、分类、回答问题等。
 
-#### **示例1：情感分析**
+### 示例1：情感分析
 
 ```
 任务：判断以下评论的情感倾向（积极/消极）
@@ -71,7 +72,7 @@
 新输入：价格合理，环境不错，就是位置有点偏。
 ```
 
-#### **示例2：格式转换**
+### 示例2：格式转换
 
 ```
 任务：将非正式表达转换为正式商务用语
@@ -86,7 +87,7 @@
 新输入：这个价钱太贵了，能便宜点不？
 ```
 
-#### 示例3：“语义压缩”提示词结合“小样本”提示词
+### 示例3：“语义压缩”提示词结合“小样本”提示词
 
 ```
 示例：
@@ -109,6 +110,6 @@ React钩子运用巧,组件拆分见功夫。状态管理如行云,生命周期�
 
 ## 用提示词写提示词
 
-在这里感谢[openai](https://platform.openai.com/docs/guides/prompt-engineering)与[claude](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/metaprompt.ipynb)均提供了平台使用的元提示词以及相关程序[。对于编](https://www.modelscope.cn/studios/anarchysaiko/metapromptgenerator)程能力不强的朋友们，可[以使用这](https://github.com/anarchysaiko/metapromptgeneratorV2)个在线版本来生成自己的元提示词。项目代码也已开源到了GitHub，感兴趣的朋友们可以研究。
+在这里感谢 [openai](https://platform.openai.com/docs/guides/prompt-engineering) 与 [claude](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/metaprompt.ipynb) 均提供了平台使用的元提示词以及相关程序。对于编程能力不强的朋友们，可以使用 [这个在线版本](https://www.modelscope.cn/studios/anarchysaiko/metapromptgenerator) 或 [这个在线版本](https://github.com/anarchysaiko/metapromptgeneratorV2) 来生成自己的元提示词。项目代码也已开源到了 GitHub，感兴趣的朋友们可以研究。
 
 ![](img/9dcfbb36c7b815686b98a5d8053b251f.png)

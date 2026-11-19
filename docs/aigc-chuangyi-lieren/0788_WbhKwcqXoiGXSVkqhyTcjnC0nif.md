@@ -1,10 +1,11 @@
+
 # Stable Video 1.1更新+案例合集
 
 > 来源：[https://aigcreative.feishu.cn/docx/SHDcdFARDoXjEaxHgSGcgOH7ngg](https://aigcreative.feishu.cn/docx/SHDcdFARDoXjEaxHgSGcgOH7ngg)
 
 ![](img/9f6f8eacc23acbc9db82799eb279af44.png)
 
-# 公测官网：
+## 公测官网
 
 https://www.stablevideo.com
 
@@ -16,8 +17,8 @@ SVD1.1官网正式开放了公测！
 
 3000积分/$50，约 300 段视频
 
-# 官方案例：
+## 官方案例
 
-多维表格（MeiTbOpGRawnUbsqmDPc0Ceznwh_tblXAooyuqOCUotv）
+多维表格（`MeiTbOpGRawnUbsqmDPc0Ceznwh_tblXAooyuqOCUotv`）
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

@@ -1,3 +1,4 @@
+
 # MiniMax
 
 > 来源：[https://aigcreative.feishu.cn/docx/E5r4dX2uno4lLLxXJpEchqdKnhe](https://aigcreative.feishu.cn/docx/E5r4dX2uno4lLLxXJpEchqdKnhe)

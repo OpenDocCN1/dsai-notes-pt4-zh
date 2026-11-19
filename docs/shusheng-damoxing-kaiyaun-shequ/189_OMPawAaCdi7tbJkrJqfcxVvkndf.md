@@ -1,46 +1,44 @@
+
 # InternLM + LlamaIndex RAG 实践
 
 > 来源：[https://aicarrier.feishu.cn/docx/BdOudrVKioTwZgxQsZ2cDDlGnqg](https://aicarrier.feishu.cn/docx/BdOudrVKioTwZgxQsZ2cDDlGnqg)
 
-本文将分为以下几个部分来介绍，如何使用 LlamaIndex 来部署 InternLM2 1.8B（以 InternStudio 的环境为例）
+本文将分为以下几个部分来介绍，如何使用 `LlamaIndex` 来部署 `InternLM2` 1.8B（以 `InternStudio` 的环境为例）
 
-+   前置知识
-
-+   环境、模型准备
-
-+   LlamaIndex HuggingFaceLLM
-
-+   LlamaIndex RAG
++ 前置知识
++ 环境、模型准备
++ `LlamaIndex` `HuggingFaceLLM`
++ `LlamaIndex` `RAG`
 
 ## 前置知识
 
-正式介绍检索增强生成（Retrieval Augmented Generation，RAG）技术以前，大家不妨想想为什么会出现这样一个技术。
+正式介绍检索增强生成（Retrieval Augmented Generation，`RAG`）技术以前，大家不妨想想为什么会出现这样一个技术。
 
-给模型注入新知识的方式，可以简单分为两种方式，一种是内部的，即更新模型的权重，另一个就是外部的方式，给模型注入格外的上下文或者说外部信息，不改变它的的权重。
+给模型注入新知识的方式，可以简单分为两种方式，一种是内部的，即更新模型的权重，另一个就是外部的方式，给模型注入格外的上下文或者说外部信息，不改变它的权重。
 
-第[一种方式，改变了模](https://arxiv.org/abs/2403.17297)型的权重即进行模型训练，这是一件代价比较大的事情，大语言模型具体的训练过程，可以参考InternLM2技术报告。第二种方式，并不改变模型的权重，只是给模型引入格外的信息。类比人类编程的过程，第一种方式相当于你记住了某个函数的用法，第二种方式相当于你阅读函数文档然后短暂的记住了某个函数的用法。
+第 [一种方式，改变了模型的权重](https://arxiv.org/abs/2403.17297) 即进行模型训练，这是一件代价比较大的事情，大语言模型具体的训练过程，可以参考 `InternLM2` 技术报告。第二种方式，并不改变模型的权重，只是给模型引入格外的信息。类比人类编程的过程，第一种方式相当于你记住了某个函数的用法，第二种方式相当于你阅读函数文档然后短暂的记住了某个函数的用法。
 
 ![](img/9e8c70e870bea02660da60e21feab95c.png)
 
-对比两种注入知识方式，第二种更容易实现。RAG正是这种方式。它能够让基础模型实现非参数知识更新，无需训练就可以掌握新领域的知识。本次课程选用了LlamaIndex框架。LlamaIndex 是一个上下文增强的 LLM 框架，旨在通过将其与特定上下文数据集集成，增强大型语言模型（LLMs）的能力。它允许您构建应用程序，既利用 LLMs 的优势，又融入您的私有或领域特定信息。
+对比两种注入知识方式，第二种更容易实现。`RAG` 正是这种方式。它能够让基础模型实现非参数知识更新，无需训练就可以掌握新领域的知识。本次课程选用了 `LlamaIndex` 框架。`LlamaIndex` 是一个上下文增强的 `LLM` 框架，旨在通过将其与特定上下文数据集集成，增强大型语言模型（`LLM`s）的能力。它允许您构建应用程序，既利用 `LLM`s 的优势，又融入您的私有或领域特定信息。
 
-### **RAG 效果比对**
+### RAG 效果比对
 
-如图所示，由于xtuner是一款比较新的框架， InternLM2-Chat-1.8B 训练数据库中并没有收录到它的相关信息。左图中问答均未给出准确的答案。右图未对 InternLM2-Chat-1.8B 进行任何增训的情况下，通过 RAG 技术实现的新增知识问答。
+如图所示，由于 `xtuner` 是一款比较新的框架，`InternLM2-Chat-1.8B` 训练数据库中并没有收录到它的相关信息。左图中问答均未给出准确的答案。右图未对 `InternLM2-Chat-1.8B` 进行任何增训的情况下，通过 `RAG` 技术实现的新增知识问答。
 
 ![](img/33118283f5db5667bc8cb9d0e85c32f8.png)
 
 ## 环境、模型准备
 
-### **配置基础环境**
+### 配置基础环境
 
-这里以在 [Intern Studio](https://studio.intern-ai.org.cn/) 服务器上部署LlamaIndex为例。
+这里以在 [Intern Studio](https://studio.intern-ai.org.cn/) 服务器上部署 `LlamaIndex` 为例。
 
-首先，打开 Intern Studio 界面，点击 **创建开发机** 配置开发机系统。
+首先，打开 `Intern Studio` 界面，点击 创建开发机 配置开发机系统。
 
 ![](img/96ff566e012302c38cd1d307d13f5b65.png)
 
-填写 开发机名称 后，点击 选择镜像 使用 Cuda11.7-conda 镜像，然后在资源配置中，使用 30% A100 * 1 的选项，然后立即创建开发机器。
+填写 开发机名称 后，点击 选择镜像 使用 `Cuda11.7-conda` 镜像，然后在资源配置中，使用 `30% A100 * 1` 的选项，然后立即创建开发机器。
 
 ![](img/382b077ada7570d17f1ad8f80a747740.png)
 
@@ -48,7 +46,7 @@
 
 ![](img/a5afa67eabbaacf5a4a2dc48cc428ca7.png)
 
-进入开发机后，从官方环境复制运行 InternLM 的基础环境，命名为 llamaindex，在命令行模式下运行：
+进入开发机后，从官方环境复制运行 `InternLM` 的基础环境，命名为 `llamaindex`，在命令行模式下运行：
 
 ```
 studio-conda -t llamaindex -o pytorch-2.1.2
@@ -69,30 +67,30 @@ base                  *  /root/.conda
 llamaindex               /root/.conda/envs/llamaindex
 ```
 
-运行 conda 命令，激活 llamaindex    **python** 虚拟环境:
+运行 `conda` 命令，激活 `llamaindex` `python` 虚拟环境：
 
 ```
-conda activate llamaindex 
+conda activate llamaindex
 ```
 
-环境激活后，命令行左边会显示当前（也就是 llamaindex ）的环境名称，如下图所示:
+环境激活后，命令行左边会显示当前（也就是 `llamaindex` ）的环境名称，如下图所示:
 
 ![](img/bd959e32a2469fd7791d45e258ae9420.png)
 
-### 安装 Llamaindex
+### 安装 LlamaIndex
 
-安装 Llamaindex和相关的包
+安装 `LlamaIndex` 和相关的包
 
 ```
-conda activate lla**m**ainde**x**
-pip** **install llama-index==0.10.38 llama-index-llms-huggingface==0.2.0 &quot;transformers[torch]==4.41.1&quot; &quot;huggingface_hub[inference]==0.23.1&quot; huggingface_hub==0.23.1 sentence-transformers==2.7.0 sentencepiece==0.2.0
+conda activate llamaindex
+pip install llama-index==0.10.38 llama-index-llms-huggingface==0.2.0 "transformers[torch]==4.41.1" "huggingface_hub[inference]==0.23.1" huggingface_hub==0.23.1 sentence-transformers==2.7.0 sentencepiece==0.2.0
 ```
 
 ### 下载 Sentence Transformer 模型
 
-源词向量模型 Sentence Transformer:（我们也可以选用别的开源词向量模型来进行 Embedding，目前选用这个模型是相对轻量、支持中文且效果较好的，同学们可以自由尝试别的开源词向量模型）
+源词向量模型 `Sentence Transformer`：（我们也可以选用别的开源词向量模型来进行 `Embedding`，目前选用这个模型是相对轻量、支持中文且效果较好的，同学们可以自由尝试别的开源词向量模型）
 
-运行以下指令，新建一个python文件
+运行以下指令，新建一个 `python` 文件
 
 ```
 cd ~
@@ -102,19 +100,19 @@ cd ~/llamaindex_demo
 touch download_hf.py
 ```
 
-打开download_hf.py 贴入以下代码
+打开 `download_hf.py` 贴入以下代码
 
 ```
 import os
 
 # 设置环境变量
-os.environ[&#x27;HF_ENDPOINT&#x27;] = &#x27;https://hf-mirror.com&#x27;
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 # 下载模型
-os.system(&#x27;huggingface-cli download --resume-download sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 --local-dir /root/model/sentence-transformer&#x27;)
+os.system('huggingface-cli download --resume-download sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 --local-dir /root/model/sentence-transformer')
 ```
 
-然后，在 /root/data 目录下执行该脚本即可自动开始下载：
+然后，在 `/root/data` 目录下执行该脚本即可自动开始下载：
 
 ```
 conda activate llamaindex
@@ -125,9 +123,9 @@ python download_hf.py
 
 ### 下载 NLTK 相关资源
 
-我们在使用开源词向量模型构建开源词向量的时候，需要用到第三方库 nltk 的一些资源。正常情况下，其会自动从互联网上下载，但可能由于网络原因会导致下载中断，此处我们可以从国内仓库镜像地址下载相关资源，保存到服务器上。
+我们在使用开源词向量模型构建开源词向量的时候，需要用到第三方库 `nltk` 的一些资源。正常情况下，其会自动从互联网上下载，但可能由于网络原因会导致下载中断，此处我们可以从国内仓库镜像地址下载相关资源，保存到服务器上。
 
-我们用以下命令下载 nltk 资源并解压到服务器上：
+我们用以下命令下载 `nltk` 资源并解压到服务器上：
 
 ```
 cd /root
@@ -144,33 +142,33 @@ unzip averaged_perceptron_tagger.zip
 
 ## LlamaIndex HuggingFaceLLM
 
-运行以下指令，把 InternLM2 1.8B 软连接出来
+运行以下指令，把 `InternLM2` 1.8B 软连接出来
 
 ```
 cd ~/model
 ln -s /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-1_8b/ ./
 ```
 
-运行以下指令，新建一个python文件
+运行以下指令，新建一个 `python` 文件
 
 ```
 cd ~/llamaindex_demo
 touch llamaindex_internlm.py
 ```
 
-打开llamaindex_internlm.py 贴入以下代码
+打开 `llamaindex_internlm.py` 贴入以下代码
 
 ```
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.core.llms import ChatMessage
 llm = HuggingFaceLLM(
-    model_name=&quot;/root/model/internlm2-chat-1_8b&quot;,
-    tokenizer_name=&quot;/root/model/internlm2-chat-1_8b&quot;,
-    model_kwargs={&quot;trust_remote_code&quot;:True},
-    tokenizer_kwargs={&quot;trust_remote_code&quot;:True}
+    model_name="/root/model/internlm2-chat-1_8b",
+    tokenizer_name="/root/model/internlm2-chat-1_8b",
+    model_kwargs={"trust_remote_code":True},
+    tokenizer_kwargs={"trust_remote_code":True}
 )
 
-rsp = llm.chat(messages=[ChatMessage(content=&quot;xtuner是什么？&quot;)])
+rsp = llm.chat(messages=[ChatMessage(content="xtuner是什么？")])
 print(rsp)
 ```
 
@@ -186,15 +184,15 @@ python llamaindex_internlm.py
 
 ![](img/be9374c2db27e435df107aa0a06e0343.png)
 
-回答的效果并不好，并不是我们想要的xtuner。
+回答的效果并不好，并不是我们想要的 `xtuner`。
 
 ## LlamaIndex RAG
 
-安装 LlamaIndex 词嵌入向量依赖
+安装 `LlamaIndex` 词嵌入向量依赖
 
 ```
-**c**onda **a**ctivate ll**a****m**ainde**x**
-pip insta**l**l llama-index-embeddings-huggingface llama-index-embeddings-instructor
+conda activate llamaindex
+pip install llama-index-embeddings-huggingface llama-index-embeddings-instructor
 ```
 
 运行以下命令，获取知识库
@@ -207,14 +205,14 @@ git clone https://github.com/InternLM/xtuner.git
 mv xtuner/README_zh-CN.md ./
 ```
 
-运行以下指令，新建一个python文件
+运行以下指令，新建一个 `python` 文件
 
 ```
 cd ~/llamaindex_demo
 touch llamaindex_RAG.py
 ```
 
-打开llamaindex_RAG.py贴入以下代码
+打开 `llamaindex_RAG.py` 贴入以下代码
 
 ```
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
@@ -223,23 +221,23 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.huggingface import HuggingFaceLLM
 
 embed_model = HuggingFaceEmbedding(
-    model_name=&quot;/root/model/sentence-transformer&quot;
+    model_name="/root/model/sentence-transformer"
 )
 
 Settings.embed_model = embed_model
 
 llm = HuggingFaceLLM(
-    model_name=&quot;/root/model/internlm2-chat-1_8b&quot;,
-    tokenizer_name=&quot;/root/model/internlm2-chat-1_8b&quot;,
-    model_kwargs={&quot;trust_remote_code&quot;:True},
-    tokenizer_kwargs={&quot;trust_remote_code&quot;:True}
+    model_name="/root/model/internlm2-chat-1_8b",
+    tokenizer_name="/root/model/internlm2-chat-1_8b",
+    model_kwargs={"trust_remote_code":True},
+    tokenizer_kwargs={"trust_remote_code":True}
 )
 Settings.llm = llm
 
-documents = SimpleDirectoryReader(&quot;/root/llamaindex_demo/data&quot;).load_data()
+documents = SimpleDirectoryReader("/root/llamaindex_demo/data").load_data()
 index = VectorStoreIndex.from_documents(documents)
 query_engine = index.as_query_engine()
-response = query_engine.query(&quot;xtuner是什么?&quot;)
+response = query_engine.query("xtuner是什么?")
 
 print(response)
 ```
@@ -256,20 +254,17 @@ python llamaindex_RAG.py
 
 ![](img/ff30155152cf49933bd0e7688088f857.png)
 
-借助RAG技术后，就能获得我们想要的答案了。
+借助 `RAG` 技术后，就能获得我们想要的答案了。
 
 ## 关卡任务
 
 完成以下任务，并将实现过程记录截图：
 
-+   通过 llamaindex 运行 InternLM2 1.8B，询问“你是谁”，将运行结果截图。
-
-+   通过 llamaindex 实现知识库检索，询问两个问题将运行结果截图。
-
-+   问题1：xtuner是什么?
-
-+   问题2：xtuner支持那些模型？
++ 通过 `llamaindex` 运行 `InternLM2` 1.8B，询问“你是谁”，将运行结果截图。
++ 通过 `llamaindex` 实现知识库检索，询问两个问题将运行结果截图。
++ 问题1：`xtuner` 是什么？
++ 问题2：`xtuner` 支持那些模型？
 
 ## 关卡通关文案
 
-恭喜你，成功通关本关卡！继续加油！你成功使用 LlamaIndex 运行了 InternLM-2 1.8B 模型，并实现了知识库的构建与检索。这为管理和利用大规模知识库提供了强大的工具和方法。接下来，可以进一步优化和扩展功能，以满足更复杂的需求。
+恭喜你，成功通关本关卡！继续加油！你成功使用 `LlamaIndex` 运行了 `InternLM-2` 1.8B 模型，并实现了知识库的构建与检索。这为管理和利用大规模知识库提供了强大的工具和方法。接下来，可以进一步优化和扩展功能，以满足更复杂的需求。

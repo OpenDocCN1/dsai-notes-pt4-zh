@@ -1,3 +1,4 @@
+
 # Claude Prompt：苹果文案
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/HeEzdlsu3oHsBtxcvtqc0i4Onqf](https://vxc3hj17dym.feishu.cn/docx/HeEzdlsu3oHsBtxcvtqc0i4Onqf)
@@ -6,7 +7,7 @@
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 ```
 ;; ━━━━━━━━━━━━━━
@@ -46,7 +47,7 @@
     (let ((配置 &#x27;(:画布 (480 . 320)
                   :色彩 野兽派风格
                   :字体 (使用本机字体 (font-family &quot;KingHwa_OldSong&quot;)))))
-      (布局 配置 `(,(标题 苹果文案) 分隔线 用户输入 分隔线 响应))))
+      (布局 配置 `(,(标题 苹果文案) 分隔线 用户输入 分隔线 响应)))
 
 
     (defun start ()

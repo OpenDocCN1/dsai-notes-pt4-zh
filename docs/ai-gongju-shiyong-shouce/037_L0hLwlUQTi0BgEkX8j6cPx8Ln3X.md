@@ -1,12 +1,13 @@
+
 # SD教程NO.01👉什么是Stable Diffusion
 
 > 来源：[https://my.feishu.cn/docx/DLbDdyf4qoprjqxuUYlclIXxnuc](https://my.feishu.cn/docx/DLbDdyf4qoprjqxuUYlclIXxnuc)
 
-### 软件简介
+## 软件简介
 
 Stable Diffusion简称SD是一款Ai图片生成工具。
 
-**“输入几句话，生成精美图片。”**——我认为不论SD还是其他ai绘画工具，都属于是一种**“抽卡游戏”**，每次生成的图片都是**抽卡，****不可控**。我们给他更多的提示词和各种插件，只是为了缩小抽卡范围。
+**“输入几句话，生成精美图片。”**——我认为不论SD还是其他AI绘画工具，都属于是一种**“抽卡游戏”**，每次生成的图片都是**抽卡，不可控**。我们给他更多的提示词和各种插件，只是为了缩小抽卡范围。
 
 如图，输入cat（猫）,city（城市），点击生成，等待3秒，就会出来一只小猫咪😸
 
@@ -14,7 +15,7 @@ Stable Diffusion简称SD是一款Ai图片生成工具。
 
 ![](img/650bd07462bcc81d4cd454bb72501782.png)
 
-### 使用须知
+## 使用须知
 
 Ai图片生成工具的使用者是关键。
 
@@ -22,13 +23,13 @@ Ai图片生成工具的使用者是关键。
 
 Ai图片生成工具，它使创作**更便捷**，给想象力**更多可能**。
 
-**💑人****机结合，**探索新领域，是未**来艺术发展新方向。**
+**💑人机结合，**探索新领域，是未来艺术发展新方向。
 
-**生成的图**片**涵盖**各种**风格**和**主题**，从自然风光到肖像，从卡通到写实等等非常广泛。
+**生成的图片**涵盖**各种风格**和**主题**，从自然风光到肖像，从卡通到写实等等非常广泛。
 
 现在已经有很多艺术家，用它来**获取创意**或**直接创作**。
 
-### 内容概览
+## 内容概览
 
 😍当我们熟练运用后你就可以做这样的图片：
 
@@ -64,7 +65,7 @@ Ai图片生成工具，它使创作**更便捷**，给想象力**更多可能**�
 
 > 感觉有用的话**点个免费的赞吧**，有疑问欢迎在评论区交流！
 
-### **完整介绍**
+## 完整介绍
 
 ![](img/8ae7d16f61453fff0e371d79dd189e3b.png)
 
@@ -86,38 +87,38 @@ Stable Diffusion的技术原理涉及到从嘈杂或无意义的图像开始，�
 
 1. Stable Diffusion简介 - 知乎专栏 [2023-04-09]
 
-[2. 深入浅出讲解Stable Diffus](https://zhuanlan.zhihu.com/p/627133524)ion原理，新手也能看明白 - 知乎专栏
+2. [深入浅出讲解Stable Diffusion原理，新手也能看明白 - 知乎专栏](https://zhuanlan.zhihu.com/p/627133524)
 
-[3. Stable Diffusion：从](https://developer.baidu.com/article/details/1821273)基本概念到应用案例 - 百度开发者中心 [2024-02-17]
+3. [Stable Diffusion：从基本概念到应用案例 - 百度开发者中心 [2024-02-17]](https://developer.baidu.com/article/details/1821273)
 
 4. Stable Diffusion原理详解 - 阿里云开发者社区 [2023-05-17]
 
 5. 十分钟读懂Stable Diffusion运行原理 - 博客园 [2023-05-13]
 
-[6. Stable Diffusion：从](https://developer.baidu.com/article/details/1820784)基本概念到应用案例 - 百度开发者中心 [2024-02-16]
+6. [Stable Diffusion：从基本概念到应用案例 - 百度开发者中心 [2024-02-16]](https://developer.baidu.com/article/details/1820784)
 
-[7. Stable Diffusi](https://zhuanlan.zhihu.com/p/584562722)on的入门介绍和使用教程 - 知乎专栏 [2022-11-17]
+7. [Stable Diffusion的入门介绍和使用教程 - 知乎专栏 [2022-11-17]](https://zhuanlan.zhihu.com/p/584562722)
 
-[8. 超高质量图解Stable Diffusion ，看](https://www.ithome.com/0/668/981.htm)完彻底搞懂「图像生成」原理- IT之家 [2023-01-20]
+8. [超高质量图解Stable Diffusion ，看完彻底搞懂「图像生成」原理- IT之家 [2023-01-20]](https://www.ithome.com/0/668/981.htm)
 
-[9. Stable Diffusion API 如](https://zhuanlan.zhihu.com/p/655628685)何应用到游戏行业？3个案例帮你快速了解！
+9. [Stable Diffusion API 如何应用到游戏行业？3个案例帮你快速了解！](https://zhuanlan.zhihu.com/p/655628685)
 
-[1](https://www.nolibox.com/creator_articles/principle_of_stablediffusion.html)0. stable diffusion 原理是什么？stable diffusion 原理介绍- AI绘画每日一帖 [2023-01-09]
+10. [stable diffusion 原理是什么？stable diffusion 原理介绍- AI绘画每日一帖 [2023-01-09]](https://www.nolibox.com/creator_articles/principle_of_stablediffusion.html)
 
-[11. Stable Diffusion API 如何](https://juejin.cn/post/7277382175866847284)应用到游戏行业？3个案例帮你快速了解！ [2023-09-11]
+11. [Stable Diffusion API 如何应用到游戏行业？3个案例帮你快速了解！ [2023-09-11]](https://juejin.cn/post/7277382175866847284)
 
-[12. Stable Diffusion是](https://pixso.cn/designskills/what-is-stable-diffusion/)什么？小白必看入门教程！ - Pixso
+12. [Stable Diffusion是什么？小白必看入门教程！ - Pixso](https://pixso.cn/designskills/what-is-stable-diffusion/)
 
-[13. 案例解析！3个实战应用场景帮你深](https://www.5bei.cn/case-analysis-application-scenarios-stable-diffusion.html)度掌握Stable Diffusion [2023-11-19]
+13. [案例解析！3个实战应用场景帮你深度掌握Stable Diffusion [2023-11-19]](https://www.5bei.cn/case-analysis-application-scenarios-stable-diffusion.html)
 
 14. Stable Diffusion综合案例_聚梦小课堂的博客
 
 15. Stable Diffusion原理解读 - 知乎专栏
 
-[16. AIGC 商业化道路探索- Stable](https://developer.aliyun.com/article/1352214) Diffusion 商业化应用（上） [2023-10-17]
+16. [AIGC 商业化道路探索- Stable Diffusion 商业化应用（上） [2023-10-17]](https://developer.aliyun.com/article/1352214)
 
-[17. Stable Diffusi](http://shiyanjun.cn/archives/2212.html)on 模型技术架构与原理 - 简单之美 [2023-07-31]
+17. [Stable Diffusion 模型技术架构与原理 - 简单之美 [2023-07-31]](http://shiyanjun.cn/archives/2212.html)
 
-[18. Stable Diffusion](https://blog.csdn.net/i042416/article/details/132965175) 的工作原理介绍原创 - CSDN博客 [2023-09-18]
+18. [Stable Diffusion 的工作原理介绍原创 - CSDN博客 [2023-09-18]](https://blog.csdn.net/i042416/article/details/132965175)
 
-[19. 深入理解图像生成Diffusion技术与Stable ](https://developer.baidu.com/article/details/2703153)Diffusion原理-百度开发者中心 [2024-01-07]
+19. [深入理解图像生成Diffusion技术与Stable Diffusion原理-百度开发者中心 [2024-01-07]](https://developer.baidu.com/article/details/2703153)

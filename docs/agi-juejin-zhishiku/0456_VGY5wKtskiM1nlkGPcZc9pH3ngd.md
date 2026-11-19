@@ -1,3 +1,4 @@
+
 # 国产大模型速度评测（谁是更快大模型？）
 
 > 来源：[https://agijuejin.feishu.cn/docx/KXvjditiZo9Bf7xvwxUczFjgnzg](https://agijuejin.feishu.cn/docx/KXvjditiZo9Bf7xvwxUczFjgnzg)
@@ -10,69 +11,69 @@
 
 本文将对比较流行的国产大模型进行速度评测，通过不同类型的问题来对比模型的回答速度。统计的标准为 completion tokens 数除以耗时。
 
-## **unset ** u**nset **模型速度对比 unset  unset
+## 模型速度对比
 
-###  **场景1：通用问答类型问题 **
+### 场景1：通用问答类型问题
 
 > 你是一名专业的人工智能专家，请告诉我如何学习深度学习？
 
 | 模型名称 | token/s |
 | --- | --- |
-| ERNIE-3.5-8K | 18 |
-| Moonshot-v1-8k | 32 |
-| GLM4-Air | 47 |
-| GLM4-AirX | **89** |
-| Qwen-turbo | 40 |
-| deepseek-chat | 19 |
-| Spark Max | 16 |
+| `ERNIE-3.5-8K` | 18 |
+| `Moonshot-v1-8k` | 32 |
+| `GLM4-Air` | 47 |
+| `GLM4-AirX` | 89 |
+| `Qwen-turbo` | 40 |
+| `deepseek-chat` | 19 |
+| `Spark Max` | 16 |
 
-###  **场景2：逻辑推理类型问题 **
+### 场景2：逻辑推理类型问题
 
 > 如果A+B=12, A-B=10，则A的值是？
 
 | 模型名称 | token/s |
 | --- | --- |
-| ERNIE-3.5-8K | 10 |
-| Moonshot-v1-8k | 23 |
-| GLM4-Air | 43 |
-| GLM4-AirX | **71** |
-| Qwen-turbo | 29 |
-| deepseek-chat | 13 |
-| Spark Max | 17 |
+| `ERNIE-3.5-8K` | 10 |
+| `Moonshot-v1-8k` | 23 |
+| `GLM4-Air` | 43 |
+| `GLM4-AirX` | 71 |
+| `Qwen-turbo` | 29 |
+| `deepseek-chat` | 13 |
+| `Spark Max` | 17 |
 
-###  **场景3：NLP实体识别问题 **
+### 场景3：NLP实体识别问题
 
 > 识别下面句子中所有的地名：我将会在明天早上的8 点来到的湖北黄陂的森林公园。
 
 | 模型名称 | token/s |
 | --- | --- |
-| ERNIE-3.5-8K | 18 |
-| Moonshot-v1-8k | 24 |
-| GLM4-Air | 26 |
-| GLM4-AirX | **53** |
-| Qwen-turbo | 22 |
-| deepseek-chat | 16 |
-| Spark Max | 16 |
+| `ERNIE-3.5-8K` | 18 |
+| `Moonshot-v1-8k` | 24 |
+| `GLM4-Air` | 26 |
+| `GLM4-AirX` | 53 |
+| `Qwen-turbo` | 22 |
+| `deepseek-chat` | 16 |
+| `Spark Max` | 16 |
 
-###  **场景4：代码编写类型问题 **
+### 场景4：代码编写类型问题
 
-> 帮我写一个python 版本的A*算法。
+> 帮我写一个`python` 版本的A*算法。
 
 | 模型名称 | token/s |
 | --- | --- |
-| ERNIE-3.5-8K | 19 |
-| Moonshot-v1-8k | 45 |
-| GLM4-Air | 56 |
-| GLM4-AirX | **118** |
-| Qwen-turbo | 44 |
-| deepseek-chat | 19 |
-| Spark Max | 34 |
+| `ERNIE-3.5-8K` | 19 |
+| `Moonshot-v1-8k` | 45 |
+| `GLM4-Air` | 56 |
+| `GLM4-AirX` | 118 |
+| `Qwen-turbo` | 44 |
+| `deepseek-chat` | 19 |
+| `Spark Max` | 34 |
 
-###  **实验结果 **
+### 实验结果
 
-GLM4-AirX 在多个场景中都展现出较高的速度，尤其是在通用问答和逻辑推理类型的问题上，其表现明显优于其他模型。另外对于代码编写类问题，GLM4-AirX 也表现出色。
+`GLM4-AirX` 在多个场景中都展现出较高的速度，尤其是在通用问答和逻辑推理类型的问题上，其表现明显优于其他模型。另外对于代码编写类问题，`GLM4-AirX` 也表现出色。
 
-###  思考：什么影响了的大模型速度？
+### 思考：什么影响了的大模型速度？
 
 在大型语言模型（LLM）的运行逻辑中，随着规模大小的增加，语言生成的质量会随着提高。不过，这也导致了推理延迟的增加，从而对实际应用构成了重大挑战。
 
@@ -89,15 +90,15 @@ def generate(prompt: str, tokens_to_generate: int) -&gt; str:
     return detokenize(tokens)
 ```
 
-加速推理的一个直接方法就是购买更好的硬件（通常是某种加速器 ——GPU 或 TPU）。此外比如连续批处理（continuous batching）和KV缓存技术，这些方法可以减少模型权重的重复计算，提高效率。
+加速推理的一个直接方法就是购买更好的硬件（通常是某种加速器 ——`GPU` 或 `TPU`）。此外比如连续批处理（continuous batching）和`KV`缓存技术，这些方法可以减少模型权重的重复计算，提高效率。
 
-至于GLM4-AirX 的速度为何如此之快，可能涉及到其内部的优化算法、模型架构设计、硬件加速等方面的优势。后续我们将持续关注这方面的进展，以便更好地理解这些大模型的性能表现。
+至于`GLM4-AirX` 的速度为何如此之快，可能涉及到其内部的优化算法、模型架构设计、硬件加速等方面的优势。后续我们将持续关注这方面的进展，以便更好地理解这些大模型的性能表现。
 
-## **unset ** u**nset **模型效果对比 unset  unset
+## 模型效果对比
 
-> 原始提问：如何缓解XGBoost模型过拟合的情况？
+> 原始提问：如何缓解`XGBoost`模型过拟合的情况？
 
-###  ERNIE-3.5-8K (耗时 30 秒)
+### `ERNIE-3.5-8K` (耗时 30 秒)
 
 ```
 为了缓解XGBoost模型过拟合的情况，可以采取以下几种方法：
@@ -117,7 +118,7 @@ def generate(prompt: str, tokens_to_generate: int) -&gt; str:
    - 这有助于避免模型在训练集上过度拟合，而牺牲在验证集和测试集上的性能。
 ```
 
-###  Moonshot-v1-8k (耗时 18 秒)
+### `Moonshot-v1-8k` (耗时 18 秒)
 
 ```
 XGBoost（eXtreme Gradient Boosting）是一种非常强大的机器学习算法，但在某些情况下，它可能会过拟合。以下是一些建议来缓解XGBoost模型的过拟合问题：
@@ -135,7 +136,7 @@ XGBoost（eXtreme Gradient Boosting）是一种非常强大的机器学习算法
 6. **调整列抽样（colsample_bytree）和行抽样（subsample）**：通过减少每棵树中使用的样本数量和特征数量，可以降低模型的复杂度。这有助于减少过拟合的风险。
 ```
 
-###  GLM4-Air (耗时 10 秒)
+### `GLM4-Air` (耗时 10 秒)
 
 ```
 缓解XGBoost模型过拟合的情况可以通过以下几种策略实现：
@@ -155,7 +156,7 @@ XGBoost（eXtreme Gradient Boosting）是一种非常强大的机器学习算法
    - 在训练过程中，如果验证集的错误率不再下降或者开始上升，可以提前停止训练，以防止模型在训练集上过度拟合。
 ```
 
-###  GLM4-AirX (耗时 5 秒)
+### `GLM4-AirX` (耗时 5 秒)
 
 ```
 缓解XGBoost模型过拟合的情况可以通过以下几种策略实现：
@@ -173,7 +174,7 @@ XGBoost（eXtreme Gradient Boosting）是一种非常强大的机器学习算法
    - 在训练过程中使用早停法，当验证集的误差不再改善或开始增加时停止训练，以防止模型在训练数据上过度拟合。
 ```
 
-###  Qwen-turbo (耗时 15 秒)
+### `Qwen-turbo` (耗时 15 秒)
 
 ```
 XGBoost模型，作为一种强大的梯度提升算法，可能会出现过拟合的情况，特别是在数据量较小或者特征复杂度较高的情况下。以下是一些缓解XGBoost过拟合的方法：
@@ -190,7 +191,7 @@ XGBoost模型，作为一种强大的梯度提升算法，可能会出现过拟�
 3. **集成学习（Ensemble Learning）**：使用多个模型的平均预测结果，如Bagging、Boosting（如XGBoost本身就是一种Boosting方法）或Stacking等。
 ```
 
-###  deepseek-chat (耗时 27 秒)
+### `deepseek-chat` (耗时 27 秒)
 
 ```
 XGBoost（eXtreme Gradient Boosting）是一种高效且强大的机器学习算法，但在某些情况下可能会出现过拟合的问题。以下是一些缓解XGBoost模型过拟合的策略：
@@ -213,7 +214,7 @@ XGBoost（eXtreme Gradient Boosting）是一种高效且强大的机器学习算
    - 使用`colsample_bytree`或`colsample_bylevel`参数，随机选择一部分特征进行训练，引入特征层面的随机性。
 ```
 
-###  Spark Max (耗时 47 秒)
+### `Spark Max` (耗时 47 秒)
 
 ```
 XGBoost是一种基于梯度提升的优化算法，它以高效性和准确性受到广泛欢迎。然而，与许多其他机器学习模型一样，XGBoost也可能遇到过度拟合的问题，尤其是在模型复杂度高或训练数据具有较多噪声时。以下将探讨如何缓解XGBoost模型的过拟合现象：
@@ -227,75 +228,77 @@ XGBoost是一种基于梯度提升的优化算法，它以高效性和准确性�
 
 3. **控制列重要性**
    - **特征选择**：在建模之前进行特征选择，剔除无效变量或噪声变量，可以减少模型对不相关特征的关注，降低过拟合的可能性。
-   - **降维**：应用PCA、t-SNE等降维技术，可以在保留最重要信息的同时减少输入特征的数量，进而减轻过拟合问题。
+   - **降维**：应用`PCA`、`t-SNE`等降维技术，可以在保留最重要信息的同时减少输入特征的数量，进而减轻过拟合问题。
 
 4. **使用Early Stopping**
    - **early_stopping_rounds**：通过设置此参数，可以在模型验证指标不再提升时停止训练，有效防止过拟合。
    - **eval_set和eval_metric**：结合Early Stopping使用，监控验证集上的性能，以确保模型在验证数据上的表现随着迭代次数的增加而不会恶化。
 ```
 
-###  **模型结果分析 **
+### 模型结果分析
 
-在提供的模型效果对比中，GLM4-AirX的速度最快，耗时仅为5秒。Qwen-turbo的回答确实比较宽泛，它提供了一些常见的策略来缓解XGBoost模型的过拟合问题，但并没有给出具体的参数调整建议或详细的解释。
+在提供的模型效果对比中，`GLM4-AirX`的速度最快，耗时仅为5秒。`Qwen-turbo`的回答确实比较宽泛，它提供了一些常见的策略来缓解`XGBoost`模型的过拟合问题，但并没有给出具体的参数调整建议或详细的解释。
 
-## **unset ** u**nset **GLM4 使用案例 unset  unset
+## GLM4 使用案例
 
-###  **支持模型 **
+### 支持模型
 
-> https://open.bigmodel.cn/modelcenter/square
+> `https://open.bigmodel.cn/modelcenter/square`
 
-+   **GLM-4-0520 **：当前平台最先进的模型，指令遵从能力提升了18.6%，具有128k上下文容量。
++   `GLM-4-0520`：当前平台最先进的模型，指令遵从能力提升了18.6%，具有128k上下文容量。
 
-+   **GLM-4-Air **：性价比最高的版本，综合性能接近GLM-4，具有128k上下文，速度快，价格实惠。
++   `GLM-4-Air`：性价比最高的版本，综合性能接近GLM-4，具有128k上下文，速度快，价格实惠。
 
-+   **GLM-4-AirX **：GLM-4-Air的高性能版本，效果不变，推理速度达到2.6倍，具有8k上下文。
++   `GLM-4-AirX`：`GLM-4-Air`的高性能版本，效果不变，推理速度达到2.6倍，具有8k上下文。
 
-+   **GLM-4-Flash **：速度最快，价格最实惠的版本，适用于简单任务，具有128k上下文。
++   `GLM-4-Flash`：速度最快，价格最实惠的版本，适用于简单任务，具有128k上下文。
 
-+   **GLM-4V **：支持视觉问答、图像字幕、视觉定位、复杂目标检测等图像理解任务。
++   `GLM-4V`：支持视觉问答、图像字幕、视觉定位、复杂目标检测等图像理解任务。
 
 智谱 AI 模型介绍与价格比较实惠：：
 
-+   glm-4-flash ：每百万 token 的输入价格为 0.1 元，输出价格为 0.1 元
++   `glm-4-flash` ：每百万 token 的输入价格为 0.1 元，输出价格为 0.1 元
 
-+   glm-4-air ：每百万 token 的输入价格为 1 元，输出价格为 1 元
++   `glm-4-air` ：每百万 token 的输入价格为 1 元，输出价格为 1 元
 
-+   glm-4-airx ：每百万 token 的输入价格为 10 元，输出价格为 10 元
++   `glm-4-airx` ：每百万 token 的输入价格为 10 元，输出价格为 10 元
 
-+   glm-4-0520 ：每百万 token 的输入价格为 100 元，输出价格为 100 元
++   `glm-4-0520` ：每百万 token 的输入价格为 100 元，输出价格为 100 元
 
-###  **非流式调用方法 **
+### 非流式调用方法
 
-> https://open.bigmodel.cn/dev/api#glm-4
+> `https://open.bigmodel.cn/dev/api#glm-4`
+
+
 
 ```
 from zhipuai import ZhipuAI
-client = ZhipuAI(api_key=&quot;&quot;) # 填写您自己的APIKey
+client = ZhipuAI(api_key="") # 填写您自己的APIKey
 response = client.chat.completions.create(
-    model=&quot;glm-4&quot;,  # 填写需要调用的模型名称
+    model="glm-4",  # 填写需要调用的模型名称
     messages=[
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;作为一名营销专家，请为智谱开放平台创作一个吸引人的slogan&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;当然，为了创作一个吸引人的slogan，请告诉我一些关于您产品的信息&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;智谱AI开放平台&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;智启未来，谱绘无限一智谱AI，让创新触手可及!&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;创造一个更精准、吸引人的slogan&quot;}
+        {"role": "user", "content": "作为一名营销专家，请为智谱开放平台创作一个吸引人的slogan"},
+        {"role": "assistant", "content": "当然，为了创作一个吸引人的slogan，请告诉我一些关于您产品的信息"},
+        {"role": "user", "content": "智谱AI开放平台"},
+        {"role": "assistant", "content": "智启未来，谱绘无限一智谱AI，让创新触手可及!"},
+        {"role": "user", "content": "创造一个更精准、吸引人的slogan"}
     ],
 )
 print(response.choices[0].message)
 ```
 
-###  **GLM4 流式接口速度 **
+### GLM4 流式接口速度
 
 流式传输可以将部分响应立即返回给用户，而不是等待整个响应完成。这样可以减少用户的等待时间，让用户能够更快地看到部分结果。
 
 ```
 from zhipuai import ZhipuAI
-client = ZhipuAI(api_key=&quot;填入token&quot;) 
+client = ZhipuAI(api_key="填入token") 
 response = client.chat.completions.create(
-    model=&quot;glm-4-airx&quot;,  # 填写需要调用的模型名称
+    model="glm-4-airx",  # 填写需要调用的模型名称
     messages=[
-        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个乐于解答各种问题的助手，你的任务是为用户提供专业、准确、有见地的建议。&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;我对太阳系的行星非常感兴趣，特别是土星。请提供关于土星的基本信息，包括其大小、组成、环系统和任何独特的天文现象。&quot;},
+        {"role": "system", "content": "你是一个乐于解答各种问题的助手，你的任务是为用户提供专业、准确、有见地的建议。"},
+        {"role": "user", "content": "我对太阳系的行星非常感兴趣，特别是土星。请提供关于土星的基本信息，包括其大小、组成、环系统和任何独特的天文现象。"},
     ],
     stream=True,
 )
@@ -304,22 +307,22 @@ for chunk in response:
     print(chunk.choices[0].delta)
 ```
 
-我们也对 **GLM-4-Air **和 **GLM-4-AirX **进行了速度测试，结果如下图所示。可以看出模型在接受到请求后马上就有第一个token的输出，并且后续输出也没有卡壳的情况。
+我们也对 `GLM-4-Air` 和 `GLM-4-AirX` 进行了速度测试，结果如下图所示。可以看出模型在接受到请求后马上就有第一个token的输出，并且后续输出也没有卡壳的情况。
 
 ![](img/8aff780b52c5a6fe7b7375c7b70802d5.png)
 
-###  **流式输出原理 **
+### 流式输出原理
 
-> https://github.com/MetaGLM/zhipuai-sdk-python-v4/blob/main/zhipuai/core/_sse_client.py
+> `https://github.com/MetaGLM/zhipuai-sdk-python-v4/blob/main/zhipuai/core/_sse_client.py`
 
 Server-Sent Events（SSE）是一种允许服务器向客户端推送实时数据的技术。以下是对SSE技术及其实现步骤的介绍：
 
-+   原理和工作机制 SSE基于HTTP协议，允许服务器向客户端发送新数据，而无需客户端的请求。当客户端发起SSE请求后，服务器会保持连接打开，并通过这个连接周期性地发送数据。数据以文本流的形式传输，使用事件流格式，其中包括事件类型和数据内容。
++ 原理和工作机制 SSE基于HTTP协议，允许服务器向客户端发送新数据，而无需客户端的请求。当客户端发起SSE请求后，服务器会保持连接打开，并通过这个连接周期性地发送数据。数据以文本流的形式传输，使用事件流格式，其中包括事件类型和数据内容。
 
-+   与传统轮询的对比 相比于传统的轮询机制，SSE具有以下优势：
++ 与传统轮询的对比 相比于传统的轮询机制，SSE具有以下优势：
 
-+   **减少请求 **：轮询需要客户端定时发送请求，而SSE通过服务器推送减少不必要的请求。
++ **减少请求**：轮询需要客户端定时发送请求，而SSE通过服务器推送减少不必要的请求。
 
-+   **降低服务器负载 **：由于减少了请求次数，服务器的负载也相应降低。
++ **降低服务器负载**：由于减少了请求次数，服务器的负载也相应降低。
 
-+   **实时性 **：SSE可以即时推送数据，提高数据的实时性。
++ **实时性**：SSE可以即时推送数据，提高数据的实时性。

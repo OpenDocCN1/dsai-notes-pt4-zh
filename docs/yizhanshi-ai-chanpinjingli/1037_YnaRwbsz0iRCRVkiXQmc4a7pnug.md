@@ -1,6 +1,7 @@
+
 # SpatialLM 3D点云理解与目标检测模型部署
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/XfSId1liyo5aKZxcpnDc1mTsnTc](https://v11enp9ok1h.feishu.cn/docx/XfSId1liyo5aKZxcpnDc1mTsnTc)
+> 来源：https://v11enp9ok1h.feishu.cn/docx/XfSId1liyo5aKZxcpnDc1mTsnTc
 
 ## 介绍
 
@@ -36,93 +37,93 @@ SpatialLM通过其多模态架构和对多源点云数据的处理能力和多�
 
 官方仓库：https://github.com/manycore-research/SpatialLM
 
-这里以 PyTorch  2.5.1+Python  3.12(ubuntu22.04)+CUDA  12.4的云平台环境为例。
+这里以 `PyTorch 2.5.1` + `Python 3.12` (`ubuntu22.04`) + `CUDA 12.4` 的云平台环境为例。
 
-如果是本地运行，推荐Ubuntu22.04+CUDA 12.4的环境，按照官方教程使用conda创建python3.11环境并安装相关依赖。
+如果是本地运行，推荐`Ubuntu22.04` + `CUDA 12.4`的环境，按照官方教程使用`conda`创建`python3.11`环境并安装相关依赖。
 
-参照官方教程，首先使用conda安装依赖:
+参照官方教程，首先使用`conda`安装依赖：
 
 ```
 conda install -y nvidia/label/cuda-12.4.0::cuda-toolkit conda-forge::sparsehash
 ```
 
-使用poetry环境：
+使用`poetry`环境：
 
-这里由于SpatialLM官方的运行要求是Python3.12，但是现在主流的云平台提供的大多是3.12、3.10版本的Python，且预装好了PyTorch，所以小编在测试时对依赖文件pyproject.toml进行了修改
+这里由于`SpatialLM`官方的运行要求是`Python3.12`，但是现在主流的云平台提供的大多是`3.12`、`3.10`版本的`Python`，且预装好了`PyTorch`，所以小编在测试时对依赖文件`pyproject.toml`进行了修改
 
 ```
 [tool.poetry]
-name = &quot;spatiallm&quot;
-version = &quot;0.0.1&quot;
-description = &quot;SpatialLM: Large Language Model for Spatial Understanding&quot;
-authors = [&quot;ManyCore Research Team&quot;]
-license = &quot;Llama3.2&quot;
-readme = &quot;README.md&quot;
+name = "spatiallm"
+version = "0.0.1"
+description = "SpatialLM: Large Language Model for Spatial Understanding"
+authors = ["ManyCore Research Team"]
+license = "Llama3.2"
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = &quot;&gt;=3.10,&lt;3.13&quot;
-transformers = &quot;&gt;=4.41.2,&lt;=4.46.1&quot;
-safetensors = &quot;^0.4.5&quot;
-pandas = &quot;^2.2.3&quot;
-einops = &quot;^0.8.1&quot;
-numpy = &quot;^1.26&quot;
-scipy = &quot;^1.15.2&quot;
-scikit-learn = &quot;^1.6.1&quot;
-toml = &quot;^0.10.2&quot;
-tokenizers = &quot;&gt;=0.19.0,&lt;0.20.4&quot;
-huggingface_hub = &quot;&gt;=0.25.0&quot;
-rerun-sdk = &quot;&gt;=0.21.0&quot;
-shapely = &quot;^2.0.7&quot;
-bbox = &quot;^0.9.4&quot;
-terminaltables = &quot;^3.1.10&quot;
-open3d = &quot;^0.19.0&quot;
-nvidia-cudnn-cu12 = &quot;*&quot;
-nvidia-nccl-cu12 = &quot;*&quot;
-poethepoet = {extras = [&quot;poetry-plugin&quot;], version = &quot;^0.33.1&quot;}
-addict = &quot;^2.4.0&quot;
+python = ">=3.10,<3.13"
+transformers = ">=4.41.2,<=4.46.1"
+safetensors = "^0.4.5"
+pandas = "^2.2.3"
+einops = "^0.8.1"
+numpy = "^1.26"
+scipy = "^1.15.2"
+scikit-learn = "^1.6.1"
+toml = "^0.10.2"
+tokenizers = ">=0.19.0,<0.20.4"
+huggingface_hub = ">=0.25.0"
+rerun-sdk = ">=0.21.0"
+shapely = "^2.0.7"
+bbox = "^0.9.4"
+terminaltables = "^3.1.10"
+open3d = "^0.19.0"
+nvidia-cudnn-cu12 = "*"
+nvidia-nccl-cu12 = "*"
+poethepoet = {extras = ["poetry-plugin"], version = "^0.33.1"}
+addict = "^2.4.0"
 
 [tool.poe.tasks]
-install-torchsparse = &quot;pip install git+https://github.com/mit-han-lab/torchsparse.git&quot;
+install-torchsparse = "pip install git+https://github.com/mit-han-lab/torchsparse.git"
 
 [build-system]
-requires = [&quot;poetry-core&quot;, &quot;setuptools&quot;, &quot;wheel&quot;, &quot;torch&quot;]
-build-backend = &quot;poetry.core.masonry.api&quot;
+requires = ["poetry-core", "setuptools", "wheel", "torch"]
+build-backend = "poetry.core.masonry.api"
 ```
 
-安装poetry依赖：
+安装`poetry`依赖：
 
 ```
-pip install poetry &amp;&amp; poetry config virtualenvs.create false --local
+pip install poetry && poetry config virtualenvs.create false --local
 poetry install
 ```
 
-编译安装torchsparse，可能需要一些时间
+编译安装`torchsparse`，可能需要一些时间
 
-> TorchSparse是一种基于PyTorch构建的高效稀疏张量处理库，专门用于加速三维稀疏卷积神经网络的训练和推理。
+> `TorchSparse`是一种基于`PyTorch`构建的高效稀疏张量处理库，专门用于加速三维稀疏卷积神经网络的训练和推理。
 
 ```
 poe install-torchsparse
 ```
 
-下载官方数据集中的ply格式的3D点云数据进行测试.
+下载官方数据集中`ply`格式的`3D`点云数据进行测试.
 
-> 点云数据（Point Cloud）是一种由大量空间点组成的数据集合，每个点记录了其在三维空间中的位置坐标，通常还包含颜色或反射强度信息，可用于精确描述三维物体或场景的空间结构。
+> 点云数据（`Point Cloud`）是一种由大量空间点组成的数据集合，每个点记录了其在三维空间中的位置坐标，通常还包含颜色或反射强度信息，可用于精确描述三维物体或场景的空间结构。
 
 >
 
-> [如果想要使用自己录制的](https://github.com/rmurai0610/MASt3R-SLAM)视频，可以参照MASt3R-SLAM进行三维重建。
+> [如果想要使用自己录制的](https://github.com/rmurai0610/MASt3R-SLAM)视频，可以参照`MASt3R-SLAM`进行三维重建。
 
 ```
 huggingface-cli download manycore-research/SpatialLM-Testset pcd/scene0000_00.ply --repo-type dataset --local-dir .
 ```
 
-下载SpatialLM-Llama-1B模型，大约需要2.6GB：
+下载`SpatialLM-Llama-1B`模型，大约需要`2.6GB`：
 
 ```
 modelscope download manycore-research/SpatialLM-Llama-1B --local_dir ./manycore-research/SpatialLM-Llama-1B
 ```
 
-模型推理：使用ply格式的点云文件生成txt格式的用于描述3D空间中的实体的文本。
+模型推理：使用`ply`格式的点云文件生成`txt`格式的用于描述`3D`空间中的实体的文本。
 
 ![](img/895892dce0765064b13d88f8585ed611.png)
 
@@ -130,13 +131,13 @@ modelscope download manycore-research/SpatialLM-Llama-1B --local_dir ./manycore-
 python inference.py --point_cloud ./pcd/scene0000_00.ply --output scene0000_00.txt --model_path ./manycore-research/SpatialLM-Llama-1B
 ```
 
-将生成的文件合并为用于表示3D的文件
+将生成的文件合并为用于表示`3D`的文件
 
 ```
 python visualize.py --point_cloud ./pcd/scene0000_00.ply --layout scene0000_00.txt --save scene0000_00.rrd
 ```
 
-可视化：如果云平台无法显示，可以拷贝到本地运行，需要安装rerun-sdk（pip install rerun-sdk）
+可视化：如果云平台无法显示，可以拷贝到本地运行，需要安装`rerun-sdk`（`pip install rerun-sdk`）
 
 ```
 rerun scene0000_00.rrd
@@ -146,6 +147,6 @@ rerun scene0000_00.rrd
 
 ![](img/97f9f804a033b222200315e80eb8029e.png)
 
-> 考虑到部分同学配置环境可能会遇到一些问题，我们在AutoDL平台准备了SpatialLM的环境镜像，点击下方链接并直接创建Autodl示例即可。
+> 考虑到部分同学配置环境可能会遇到一些问题，我们在`AutoDL`平台准备了`SpatialLM`的环境镜像，点击下方链接并直接创建`Autodl`示例即可。
 
-> **h**ttps://www.codewithgpu.com/i/datawhalechina/self-llm/SpatialLM
+> https://www.codewithgpu.com/i/datawhalechina/self-llm/SpatialLM

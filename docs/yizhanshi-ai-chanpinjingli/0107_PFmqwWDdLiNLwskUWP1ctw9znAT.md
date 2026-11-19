@@ -1,16 +1,17 @@
+
 # Lora_hf_text_video
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/JlgLdiT7co05b0x0209cveCZngh](https://v11enp9ok1h.feishu.cn/docx/JlgLdiT7co05b0x0209cveCZngh)
 
-### 实验信息
+## 实验信息
 
 训练数据来源B站,UID:
 
 [Lora_role_5](https://zhipu-ai.feishu.cn/wiki/AzP8wLht7i9daikuzVHcCfNwn1d)抽取数据集46条，[Lora_role_2](https://zhipu-ai.feishu.cn/wiki/Cscyw20uXiFBF6kC14zcpCWwn7d)中166个训练样本（处理脚本错误，存在索引错误的文件，删除后剩余166）
 
-训练过程调整了validation_prompt ，num_validation_videos
+训练过程调整了`validation_prompt`，`num_validation_videos`
 
-```
+```bash
 #!/bin/bash 
 export TORCH_LOGS=&quot;+dynamo,recompiles,graph_breaks&quot;
 export TORCHDYNAMO_VERBOSE=1
@@ -96,14 +97,13 @@ for learning_rate in &quot;${LEARNING_RATES[@]}&quot;; do
     done
   done
 done
-
 ```
 
-#### Huggingface Diffusers  Lora权重
+### Huggingface Diffusers Lora权重
 
-/mnt/ceph/develop/jiawei/model_checkpoint/cogvideox-lora_t2v_epochs_1500_optimizer_adamw__steps_318000__lr-schedule_cosine_with_restarts__learning-rate_1e-3/
+`/mnt/ceph/develop/jiawei/model_checkpoint/cogvideox-lora_t2v_epochs_1500_optimizer_adamw__steps_318000__lr-schedule_cosine_with_restarts__learning-rate_1e-3/`
 
-#### 结果评价
+### 结果评价
 
 训练任务在 1e-3的学习率，rank 128,a 1，212的训练样本完成了150次训练，
 
@@ -113,48 +113,46 @@ done
 
 [抽样.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HJHTbViuOo🐧b6xyxM9cgOfLnPc)
 
-之前从sat导出diffuser的框架lora权重出现的 图像融合、丢失样本细节的情况，在这里并没有发生，
+之前从`sat`导出`diffuser`的框架`lora`权重出现的 图像融合、丢失样本细节的情况，在这里并没有发生，
 
 在不同的抽样步数（1000、4000、10000）中，模型的表现随着训练步数的增加而有所变化，具体总结如下：
 
-1.  **抽样1000**
+1. **抽样1000**
 
-+   **结果：** 效果有所退步，原始人物形象没有很好地学习到。尽管在某些方面表现还不错，但细节和之前好的样本效果出现了明显变化。
++ **结果：** 效果有所退步，原始人物形象没有很好地学习到。尽管在某些方面表现还不错，但细节和之前好的样本效果出现了明显变化。
 
-+   **评价：** 生成图像未能保留原来优秀的效果，细节有所丢失。
++ **评价：** 生成图像未能保留原来优秀的效果，细节有所丢失。
 
-1.  **抽样4000**
+1. **抽样4000**
 
-+   **结果：** 人物形象的还原度有所提高，学习到了更多细节。生成的样本质量接近目标训练样本，细节表现较好。
++ **结果：** 人物形象的还原度有所提高，学习到了更多细节。生成的样本质量接近目标训练样本，细节表现较好。
 
-+   **评价：** 没有出现之前从SAT导出权重时的图像融合或样本细节丢失的问题，但部分样本失去了原来独特的效果。
++ **评价：** 没有出现之前从`SAT`导出权重时的图像融合或样本细节丢失的问题，但部分样本失去了原来独特的效果。
 
-1.  **抽样10000**
+1. **抽样10000**
 
-+   **结果：** 与4000步的表现相似，人物形象的还原度较高，更多细节得以保留。整体生成结果接近目标训练样本。
++ **结果：** 与4000步的表现相似，人物形象的还原度较高，更多细节得以保留。整体生成结果接近目标训练样本。
 
-+   **评价：** 尽管图像的细节和表现逐步提升，但某些情况下，生成的样本失去了原有的独特性和效果。
++ **评价：** 尽管图像的细节和表现逐步提升，但某些情况下，生成的样本失去了原有的独特性和效果。
 
-综合评价
+#### 综合评价
 
-+   随着训练步数的增加，模型逐渐学习到了更多的细节，且人物形象的还原度有所提高。然而，在追求高还原度的同时，模型生成的图像逐渐丢失了某些原本的优秀特点或效果。
++ 随着训练步数的增加，模型逐渐学习到了更多的细节，且人物形象的还原度有所提高。然而，在追求高还原度的同时，模型生成的图像逐渐丢失了某些原本的优秀特点或效果。
 
-+   尽管细节学习进展明显，但需注意生成的样本有时与初始期望的效果有所偏离。
++ 尽管细节学习进展明显，但需注意生成的样本有时与初始期望的效果有所偏离。
 
-#### 新的任务
+### 新的任务
 
-#### 关联任务
+### 关联任务
 
-###
-
-#### checkpoint-1000
+### checkpoint-1000
 
 多维表格（KPFrbtclUareVqsQXnEcClApnxg_tblwWITjYblpLv🐧）
 
-#### checkpoint-4000
+### checkpoint-4000
 
 多维表格（KPFrbtclUareVqsQXnEcClApnxg_tblJQB8KIaaZGrjB）
 
-#### checkpoint-10000
+### checkpoint-10000
 
 多维表格（KPFrbtclUareVqsQXnEcClApnxg_tblWuwBcKmoHpWpC）

@@ -1,48 +1,49 @@
+
 # AI写小说-番茄🍅最全干货和过稿模板
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/SquidOOsDokFSaxEh8jcGbCrnSc](https://rq547mr4oez.feishu.cn/docx/SquidOOsDokFSaxEh8jcGbCrnSc)
 
-# 一、前言：
+## 一、前言
 
 > 最近很多新人想去写番茄，任何的小说平台都很卷，但是门槛低的首推番茄。
 
-> **因为：试错快，结果好不好，快的话，第二天就知道结果（基本上**都是不好），正常也是一周就知道初步结果。
+> **因为：试错快，结果好不好，快的话，第二天就知道结果（基本上都是不好），正常也是一周就知道初步结果。**
 
 > so，完整的整理番茄的规则，一个过稿模板~~用过的小伙伴都说好！
 
 之前的拆书内容~~这个系列也是长期更新~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  [AI写小说-“知乎短篇”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UvvXwWkC9i6PSfkPIv8cLXxtn2f?from=from_copylink)
+1. [AI写小说-“知乎短篇”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UvvXwWkC9i6PSfkPIv8cLXxtn2f?from=from_copylink)
 
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
-1.  ......诸天无限、文娱、脑洞、直播、奇幻等等
+1. ......诸天无限、文娱、脑洞、直播、奇幻等等
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -58,9 +59,9 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ---
 
-# 二、直接上干货
+## 二、直接上干货
 
-## 1、关于签约
+### 1、关于签约
 
 > **签约难度：**目前全网最低
 
@@ -80,19 +81,19 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > **日更字数：**
 
-+   月初、月底开文,利于冲全勤奖。
+> + 月初、月底开文,利于冲全勤奖。
 
-+   每章建议码2050-2300字,利于有声小说和冲奖励。
+> + 每章建议码2050-2300字,利于有声小说和冲奖励。
 
-+   每天码4000-8000字，正常发布2000-6000,余下的存稿。
+> + 每天码4000-8000字，正常发布2000-6000,余下的存稿。
 
-+   开书前几天,日更4000一6000,争取5天内达到签约标准。
+> + 开书前几天,日更4000一6000,争取5天内达到签约标准。
 
-+   月底前5天,连续日更4000-6000字,保证当月最后一天达到10万字以上利于下月冲全勤。
+> + 月底前5天,连续日更4000-6000字,保证当月最后一天达到10万字以上利于下月冲全勤。
 
 ![](img/64020b02f6a126c1ec5d048830e1e2c6.png)
 
-## 2、关于AI的内容
+### 2、关于AI的内容
 
 > 1、再次声明，AI的目的是加快你的进度，而不是让你完全生成一个AI文丢上去。
 
@@ -100,51 +101,51 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ![](img/21620c9f387dc3bcffa46ca3bb4d2c32.png)
 
-## 3、关于稿费
+### 3、关于稿费
 
 > **①分成**
 
-+   分成收益：在番茄小说APP内的听读收益分成
+> + 分成收益：在番茄小说APP内的听读收益分成
 
-+   礼物收益：读者赠送礼物，作者获得扣除渠道费的70%
+> + 礼物收益：读者赠送礼物，作者获得扣除渠道费的70%
 
-+   版权收益：按照合同获得收益，版权包括出版、短剧、影视、游戏等
+> + 版权收益：按照合同获得收益，版权包括出版、短剧、影视、游戏等
 
 > **②新全勤奖打卡条件**
 
-+   1.全勤奖
+> + 1.全勤奖
 
-+   每日打卡字数及对应月金额
+> + 每日打卡字数及对应月金额
 
-+   4000字/日-600元/月
+> + 4000字/日-600元/月
 
-+   6000字/日-800元/月
+> + 6000字/日-800元/月
 
-+   全勤要求：10万字，听读稿费过200，每天更新4000~6000,必须三条同时满足才可以有全勤。
+> + 全勤要求：10万字，听读稿费过200，每天更新4000~6000,必须三条同时满足才可以有全勤。
 
-+   2.全勤从600~800涨到了600~2000啦，分成的5%可成为全勤奖励。
+> + 2.全勤从600~800涨到了600~2000啦，分成的5%可成为全勤奖励。
 
-+   3.番茄今年开始，单独发给编辑的作品无法签约保底，除非有历史成绩，没有的话，可以直接投稿平台。
+> + 3.番茄今年开始，单独发给编辑的作品无法签约保底，除非有历史成绩，没有的话，可以直接投稿平台。
 
-+   4.新人作者来番茄写小说第一本扑的比较多，其实不是扑，而且没了解规则，等写到第二本，很多作者成绩会有点提升。
+> + 4.新人作者来番茄写小说第一本扑的比较多，其实不是扑，而且没了解规则，等写到第二本，很多作者成绩会有点提升。
 
-+   5.不推流但是完读率很高的作者一定要坚持更新，破百万的作品更吃香，但前提是数据不错再坚持百万字。
+> + 5.不推流但是完读率很高的作者一定要坚持更新，破百万的作品更吃香，但前提是数据不错再坚持百万字。
 
 > **③完本奖**
 
-+   男频 150 +万字 / 女频 +100 万的签约作品，作品历史分成稿费累积≥3000元
+> + 男频 150 +万字 / 女频 +100 万的签约作品，作品历史分成稿费累积≥3000元
 
-+   **相同账号下的下**一部作品成功签约，且更新字数≥ 30 万奖励1000元
+> + **相同账号下的下**一部作品成功签约，且更新字数≥ 30 万奖励1000元
 
-> **④****连载****奖励**
+> **④连载奖励**
 
-+   男频单部作品签约字数≥300w，女频单部作品签约字数≥200w，奖励1000元
+> + 男频单部作品签约字数≥300w，女频单部作品签约字数≥200w，奖励1000元
 
-+   男频单部作品签约字数≥500w，女频单部作品签约字数≥350w，奖励2000元
+> + 男频单部作品签约字数≥500w，女频单部作品签约字数≥350w，奖励2000元
 
-+   Ps：30万完读≥8%，可参与星火计划
+> + Ps：30万完读≥8%，可参与星火计划
 
-## 4、首秀规则
+### 4、首秀规则
 
 > 1.首秀期是3个周左右，首秀每天更新 6000 字，稳定定时更新，千万不要断更。
 
@@ -188,35 +189,35 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > 21.推流期间最怕渣更，除非作品质量不错，不然一定不要渣更，更新完稳定!渣更会砍流量并且砍到底!
 
-## 5、注意事项
+### 5、注意事项
 
 > **✅过来人的忠告**
 
-1.  不要觉得给量迷，书架比＜4:1，追读比＜3:1，还没遇到不给量的。
+1. 不要觉得给量迷，书架比＜4:1，追读比＜3:1，还没遇到不给量的。
 
-1.  不要水群，不要网上求助，写就行了！
+1. 不要水群，不要网上求助，写就行了！
 
-1.  文笔真的不重要
+1. 文笔真的不重要
 
-1.  坚持，三分钟热度的就别来了，浪费时间
+1. 坚持，三分钟热度的就别来了，浪费时间
 
-1.  标题和简介、扫榜都很重要
+1. 标题和简介、扫榜都很重要
 
-1.  小说封面600*800，tb几块钱元搞定或者自己做
+1. 小说封面600*800，tb几块钱元搞定或者自己做
 
-1.  每月可以无责请假一次
+1. 每月可以无责请假一次
 
-1.  10万完读＜16%，可以考虑放弃
+1. 10万完读＜16%，可以考虑放弃
 
-1.  签约断更15天，将不享受签约福利
+1. 签约断更15天，将不享受签约福利
 
-# 三、过稿模板
+## 三、过稿模板
 
 ![](img/4cabd411bf2f65fccbb74b7f34fc0d37.png)
 
-# 四、模板生成器Prompt
+## 四、模板生成器Prompt
 
-## # Role : 番茄过稿大师，Markdown格式，一键复制哦~(可以找我🛰️发你~)（韭菜Y日记）
+### Role : 番茄过稿大师，Markdown格式，一键复制哦~(可以找我🛰️发你~)（韭菜Y日记）
 
 ```
 # 角色：番茄过稿大师

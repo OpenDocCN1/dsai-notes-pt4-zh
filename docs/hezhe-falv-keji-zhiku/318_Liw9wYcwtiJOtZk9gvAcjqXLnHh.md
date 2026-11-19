@@ -1,8 +1,9 @@
+
 # Sam Altman：如果现在创办一家新公司，我会选择开发「AI 律师」
 
 > 来源：[https://docs.feishu.cn/docx/E6uEdBNhvogAVExTJEyc2xgqn5F](https://docs.feishu.cn/docx/E6uEdBNhvogAVExTJEyc2xgqn5F)
 
----
+## OpenAI 伦敦开放日的访谈
 
 在刚刚结束的 OpenAI 伦敦开放日中，主持人问 OpenAI 的 CEO Sam Altman：
 
@@ -10,15 +11,17 @@
 
 现年 39 岁的 Altman 表示：
 
-“我会考虑在垂直方向做一些 AI 相关的东西，比如辅导**人类学习的** AI Tutors，又或者 AI 律师、AI 医疗顾问等，任何类似的东西。”
+“我会考虑在垂直方向做一些 AI 相关的东西，比如辅导人类学习的 AI Tutors，又或者 AI 律师、AI 医疗顾问等，任何类似的东西。”
 
 这是一个很有趣的回答。
+
+## 法律 AI 市场的规模与基础设施
 
 一方面，Altman 肯定了法律市场的规模。
 
 今年以来，[Harvey](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488366&idx=1&sn=31cafa2edd8453be811960d78f07d8b5&chksm=fac529cecdb2a0d87f680cfaf1b2658ec726f8638df5b37b6c3d95733550291c6ab87b555e98&scene=21#wechat_redirect)、[EvenUp](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247489474&idx=1&sn=5c0ae1720aa52f66df6af73a5f6fe6fd&chksm=fac52d62cdb2a4748b00eda7a345a7c2f9f7fbc652a0912f23680dd9d57bd3de3505d0470b0c&scene=21#wechat_redirect)、[Clio](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488393&idx=1&sn=08f07b24b87d1d9394e6b88a0efcffd3&chksm=fac52929cdb2a03f2650a98e2b854c1b187502972363ee69e8f6a8232bec927cfe58fedc2ca6&scene=21#wechat_redirect) 等法律 AI / 科技公司，相继获得上亿美元融资，充分说明了法律科技市场的规模之大。
 
-**另一方面，这也说明随着 AI 技**术飞速发展，相关基础设施已经趋于完善了。
+**另一方面，这也说明随着 AI 技术飞速发展，相关基础设施已经趋于完善了。**
 
 然而，一年前 AI 给人们带来的不只是兴奋，更多的是紧张、焦虑、担忧、压力甚至恐惧，这种情绪渗透到每次会议和对话中，每个人都害怕被抛在后面，处于一场高风险的竞赛中。
 
@@ -44,8 +47,10 @@
 
 因此，如果一年前你由于感到很大的不确定和挑战性，而一直推迟开始你的 AI 转型项目，现在正是跳进去开始的好时机。
 
-**不**过，据我近期在各个城市开展的分享交流，我发现各个地方的法律人，对于「新技术」和「新流量」的认知存在着显著的差异。
+## AI 转型时机与市场教育现状
 
-**总**的来看，目前只有部分先锋的法律人对 AI 技术有着较好的理解，大多数人的认知还处于非常浅的阶段，AI 的市场教育仍然稀缺。
+不过，据我近期在各个城市开展的分享交流，我发现各个地方的法律人，对于「新技术」和「新流量」的认知存在着显著的差异。
+
+总的来说，目前只有部分先锋的法律人对 AI 技术有着较好的理解，大多数人的认知还处于非常浅的阶段，AI 的市场教育仍然稀缺。
 
 ![](img/0b4d6b81e755a63a657fb680f5edde00.png)

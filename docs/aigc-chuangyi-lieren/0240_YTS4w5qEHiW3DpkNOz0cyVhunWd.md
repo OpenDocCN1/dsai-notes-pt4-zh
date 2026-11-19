@@ -1,3 +1,4 @@
+
 # 3 | Prompts and Chatbots
 
 > 来源：[https://aigcreative.feishu.cn/docx/W8bvdFwYso4YEZxOxd9cCYh3nGg](https://aigcreative.feishu.cn/docx/W8bvdFwYso4YEZxOxd9cCYh3nGg)
@@ -6,13 +7,12 @@ How do you actually use a prompt? Well, one of the ways you can use a prompt is 
 
 ChatGPT can also:
 
-+   Write text
-
-+   Write code
++ Write text
++ Write code
 
 Let's take a little deep-dive into chatbots so that we can improve how you use them and tackle tasks with them.
 
-### Manner or Style Guidance
+## Manner or Style Guidance
 
 In essence, the goal is to train ChatGPT to respond in a specific style or manner. When prompted with a question without any specific stylistic guidance, ChatGPT will usually generate a response consisting of one or two short paragraphs. On occasion, however, it may produce a longer response if the situation warrants it.
 
@@ -25,7 +25,7 @@ But what if we don't understand this or want to give an alternative output that'
 Or, alternatively
 
 ```
-Explain the number Pi to me in a witty style. 
+Explain the number Pi to me in a witty style.
 ```
 
 ![](img/2cdf4344e31dbf1759911e3a72a8ba8f.png)
@@ -46,11 +46,11 @@ Act as a philosopher and explore in depth, the topics or questions related to th
 
 ![](img/4661d3301c5f91190404fae59842ea48.png)
 
-### Description Techniques
+## Description Techniques
 
 If your goal is to adjust the tone or tweak your prompt, one effective technique is to include descriptive words that alter the way the chatbot interprets and responds to your message. By simply adding a few adjectives like "Funny," "Curt," "Unfriendly," "Witty" or other descriptors at the end of your prompts, you can experiment with how your responses are affected.
 
-### Priming your prompts (Intermediate).
+## Priming your prompts (Intermediate)
 
 The initial prompt given to a large language model in a chatbot conversation can have a significant impact on the structure and flow of the subsequent conversation. This allows for an additional layer of specification and structure to be added to the conversation.
 
@@ -58,49 +58,29 @@ As an example, we can set up a chat conversation between a normal layman (a regu
 
 What are we using?
 
-+   Syntax structuring
-
-+   Style (manner) guide
-
-+   Response format
++ Syntax structuring
++ Style (manner) guide
++ Response format
 
 > "Neuroscientist" style is characterised by the language and tone of a top professional neuroscientist who has been teaching neuroscience for more than a decade and holds multiple Ph.D.'s. To convey your points effectively, use academic syntax and complex examples that highlight the lesser-known aspects of the subject. However, make sure that your language is sophisticated without being overly complicated. Your responses should consist of a conversational series of paragraphs that employ a blend of technical and colloquial language to make the discussion both accessible and engaging.
-
-> 
-
+>
 > "Regular Person" style represents a person with a basic understanding of the subject and limited formal education. When explaining concepts, use simple language and real-life examples to help the person understand. Adopt an informal tone and a first-person perspective, incorporating humor and if you are unsure of the answer to a question, be honest and clarify that you haven't learned about it yet.
-
-> 
-
-> “Critique” means to analyse the given text and provide feedback.
-
-> 
-
-> “Summarise” means to provide key details from a text.
-
-> 
-
-> “Respond” means to answer a question from the given perspective.
-
-> 
-
+>
+> "Critique" means to analyse the given text and provide feedback.
+>
+> "Summarise" means to provide key details from a text.
+>
+> "Respond" means to answer a question from the given perspective.
+>
 > Anything in parentheses () signifies the perspective you are writing from.
-
-> 
-
+>
 > Anything in curly braces {} is the subject you are involved in.
-
-> 
-
+>
 > Anything in brackets [] is the action you should take.
-
-> 
-
+>
 > Example: (Neuroscientist){The Frontal Lobe}[Critique] No one would be able to tell if you'd had your frontal lobe removed.
-
-> 
-
-> If you understand and are ready to begin, respond with only “yes.”
+>
+> If you understand and are ready to begin, respond with only "yes."
 
 In the following image, there is an example of a simple prompt, output situation with a chatbot. The Prompt:
 

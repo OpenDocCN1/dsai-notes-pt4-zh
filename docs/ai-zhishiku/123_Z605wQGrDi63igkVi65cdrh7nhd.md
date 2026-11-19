@@ -1,3 +1,4 @@
+
 # 谷歌Bard史诗级更新：定制化的中文服务，开放图像分析功能
 
 > 来源：[https://my.feishu.cn/docx/YUypdX2eCo7LBTxCvPvcbvJjnrd](https://my.feishu.cn/docx/YUypdX2eCo7LBTxCvPvcbvJjnrd)
@@ -20,27 +21,27 @@
 
 对于此次更新，称之为“史诗级”：Today we’re announcing Bard’s biggest expansion to date.
 
-1.Bard 支持 Google 智能镜头：与 Bard 对话时，你可以上传图片及文字，并要求Bard提供有关图片的信息，相关功能暂时只支持英语。
+1. Bard 支持 Google 智能镜头：与 Bard 对话时，你可以上传图片及文字，并要求Bard提供有关图片的信息，相关功能暂时只支持英语。
 
 ![](img/19defb29102a7b474ddb9794ff08c4f0.png)
 
-2.Bard 可以朗读回答内容了：在 Bard 中添加了文字转语音功能。该功能支持 40 多种语言，包括印地语、西班牙语和英语（美国）。
+2. Bard 可以朗读回答内容了：在 Bard 中添加了文字转语音功能。该功能支持 40 多种语言，包括印地语、西班牙语和英语（美国）。
 
-3.固定对话和近期对话：可以随时返回之前与 Bard 的对话继续互动，还可根据需要整理对话。
+3. 固定对话和近期对话：可以随时返回之前与 Bard 的对话继续互动，还可根据需要整理对话。
 
-4.与他人分享 Bard对话：利用可分享的链接，让其他人只需轻轻一点，即可轻松流畅地查看你的 Bard 对话内容和相关信息来源。
+4. 与他人分享 Bard对话：利用可分享的链接，让其他人只需轻轻一点，即可轻松流畅地查看你的 Bard 对话内容和相关信息来源。
 
 ![](img/0ec21c4abc425bd4c7cf20d873a325c7.png)
 
 图注：修改回答
 
-5.修改 Bard 的回答：推出了 5 个新选项，可用来修改 Bard 的回答。只需点按相应的选项，即可让回答内容变得更加简单一点、详尽一点、简短一点、专业一点或随意一点。
+5. 修改 Bard 的回答：推出了 5 个新选项，可用来修改 Bard 的回答。只需点按相应的选项，即可让回答内容变得更加简单一点、详尽一点、简短一点、专业一点或随意一点。
 
 ![](img/d3611107deee8659f62dce15ba63af2b.png)
 
-6.将 Python 代码导出至 Replit：除了 Google Colab 之外，还可以将 Python 代码导出到 Replit。
+6. 将 Python 代码导出至 Replit：除了 Google Colab 之外，还可以将 Python 代码导出到 Replit。
 
-**关于谷歌的Bard计划**
+## 关于谷歌的Bard计划
 
 目前Bard 是一个实验项目，由Google 的 PaLM 2 模型提供支持，让用户能够与生成式 AI 协同合作。
 

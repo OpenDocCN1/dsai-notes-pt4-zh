@@ -1,3 +1,4 @@
+
 # 第五节：检索进阶
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/JEqkdGK6qoNflUxEXISc7W5In9d](https://gotoaiworld.feishu.cn/docx/JEqkdGK6qoNflUxEXISc7W5In9d)
@@ -29,8 +30,7 @@ RankLLM 代表了一类直接利用大型语言模型本身来进行重排的方
 
 示例格式:
 文档 1: &lt;文档1的摘要&gt;
-文档 2: &lt;文档2的摘要&gt;
-...
+文档 2: &lt;文档2的摘要&gt;...
 文档 10: &lt;文档10的摘要&gt;
 
 问题: &lt;用户的问题&gt;
@@ -43,23 +43,23 @@ Doc: 7, Relevance: 3Copy to clipboardErrorCopied
 
 ### 1.3 Cross-Encoder 重排
 
-Cross-Encoder（交叉编码器）能提供出色的重排精度(2)。它的工作原理是将查询（Query）和每个候选文档（Document）拼接成一个单一的输入（例如，[CLS] query [SEP] document [SEP]），然后将这个整体输入到一个预训练的 Transformer 模型（如 BERT）中，模型最终会输出一个单一的分数（通常在 0 到 1 之间），这个分数直接代表了文档与查询的相关性。
+Cross-Encoder（交叉编码器）能提供出色的重排精度(2)。它的工作原理是将查询（Query）和每个候选文档（Document）拼接成一个单一的输入（例如，`[CLS] query [SEP] document [SEP]`），然后将这个整体输入到一个预训练的 Transformer 模型（如 BERT）中，模型最终会输出一个单一的分数（通常在 0 到 1 之间），这个分数直接代表了文档与查询的相关性。
 
-> 注：**[SEP]** 是在 BERT 这类基于 Transformer 架构的模型中，用于分隔不同文本片段（如查询和文档）的特殊标记。
+> 注：`[SEP]` 是在 BERT 这类基于 Transformer 架构的模型中，用于分隔不同文本片段（如查询和文档）的特殊标记。
 
 ![](img/338618b832cba295ed7d96f2d75a8bfc.png)
 
 上图清晰地展示了 Cross-Encoder 的工作流程：
 
-1.  初步检索：搜索引擎首先从知识库中召回一个初始的文档列表（例如，前 50 篇）。
+1. 初步检索：搜索引擎首先从知识库中召回一个初始的文档列表（例如，前 50 篇）。
 
-1.  逐一评分：对于列表中的每一篇文档，系统都将其与原始查询配对，然后发送给 Cross-Encoder 模型。
+1. 逐一评分：对于列表中的每一篇文档，系统都将其与原始查询配对，然后发送给 Cross-Encoder 模型。
 
-1.  独立推理：模型对每个“查询-文档”对进行一次完整的、独立的推理计算，得出一个精确的相关性分数。
+1. 独立推理：模型对每个“查询-文档”对进行一次完整的、独立的推理计算，得出一个精确的相关性分数。
 
-1.  返回重排结果：系统根据这些新的分数对文档列表进行重新排序，并将最终结果返回给用户。
+1. 返回重排结果：系统根据这些新的分数对文档列表进行重新排序，并将最终结果返回给用户。
 
-这个流程凸显了其高精度的来源（同时分析查询和文档），也解释了其高延迟的原因（需要N次独立的模型推理）。
+这个流程凸显了其高精度的来源（同时分析查询和文档），也解释了其高延迟的原因（需要`N`次独立的模型推理）。
 
 常见的 Cross-Encoder 模型包括 ms-marco-MiniLM-L-12-v2、ms-marco-TinyBERT-L-2-v2 等。
 
@@ -69,13 +69,13 @@ ColBERT（Contextualized Late Interaction over BERT）是一种创新的重排�
 
 其工作流程如下：
 
-1.  独立编码：ColBERT 分别为查询（Query）和文档（Document）中的每个 Token 生成上下文相关的嵌入向量。这一步是独立完成的，可以预先计算并存储文档的向量，从而加快查询速度。
+1. 独立编码：ColBERT 分别为查询（Query）和文档（Document）中的每个 Token 生成上下文相关的嵌入向量。这一步是独立完成的，可以预先计算并存储文档的向量，从而加快查询速度。
 
-1.  后期交互：在查询时，模型会计算查询中每个 Token 的向量与文档中每个 Token 向量之间的最大相似度（MaxSim）。
+1. 后期交互：在查询时，模型会计算查询中每个 Token 的向量与文档中每个 Token 向量之间的最大相似度（`MaxSim`）。
 
-1.  分数聚合：最后，将查询中所有 Token 得到的最大相似度分数相加，得到最终的相关性总分。
+1. 分数聚合：最后，将查询中所有 Token 得到的最大相似度分数相加，得到最终的相关性总分。
 
-通过这种方式，ColBERT 避免了将查询和文档拼接在一起进行昂贵的联合编码，同时又比单纯比较单个 [CLS] 向量的双编码器模型捕捉了更细粒度的词汇级交互信息。
+通过这种方式，ColBERT 避免了将查询和文档拼接在一起进行昂贵的联合编码，同时又比单纯比较单个 `[CLS]` 向量的双编码器模型捕捉了更细粒度的词汇级交互信息。
 
 ### [1.5 重排方法对比](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=_15-%e9%87%8d%e6%8e%92%e6%96%b9%e6%b3%95%e5%af%b9%e6%af%94)
 
@@ -87,21 +87,21 @@ ColBERT（Contextualized Late Interaction over BERT）是一种创新的重排�
 
 压缩的目标就是对检索到的内容进行“压缩”和“提炼”，只保留与用户查询最直接相关的信息。这可以通过两种主要方式实现：
 
-1.  内容提取：从文档中只抽出与查询相关的句子或段落。
+1. 内容提取：从文档中只抽出与查询相关的句子或段落。
 
-1.  文档过滤：完全丢弃那些虽然被初步召回，但经过更精细判断后认为不相关的整个文档。
+1. 文档过滤：完全丢弃那些虽然被初步召回，但经过更精细判断后认为不相关的整个文档。
 
-### [2.1 LangChain 的 Contextual](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=_21-langchain-%e7%9a%84-contextualcompressionretriever)CompressionRetriever
+### [2.1 LangChain 的 Contextual CompressionRetriever](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=_21-langchain-%e7%9a%84-contextualcompressionretriever)
 
-LangChain 提供了一个强大的组件 ContextualCompressionRetriever 来实现上下文压缩(4)。它像一个包装器，包裹在基础的检索器（如 FAISS.as_retriever()）之上。当基础检索器返回文档后，ContextualCompressionRetriever 会使用一个指定的 DocumentCompressor 对这些文档进行处理，然后再返回给调用者。
+LangChain 提供了一个强大的组件 `ContextualCompressionRetriever` 来实现上下文压缩(4)。它像一个包装器，包裹在基础的检索器（如 `FAISS.as_retriever()`）之上。当基础检索器返回文档后，`ContextualCompressionRetriever` 会使用一个指定的 `DocumentCompressor` 对这些文档进行处理，然后再返回给调用者。
 
-LangChain 内置了多种 DocumentCompressor：
+LangChain 内置了多种 `DocumentCompressor`：
 
-+   LLMChainExtractor: 这是最直接的压缩方式。它会遍历每个文档，并利用一个 LLM Chain 来判断并提取出其中与查询相关的部分。这是一种“内容提取”。
++ `LLMChainExtractor`: 这是最直接的压缩方式。它会遍历每个文档，并利用一个 LLM Chain 来判断并提取出其中与查询相关的部分。这是一种“内容提取”。
 
-+   LLMChainFilter: 这种压缩器同样使用 LLM，但它做的是“文档过滤”。它会判断整个文档是否与查询相关，如果相关，则保留整个文档；如果不相关，则直接丢弃。
++ `LLMChainFilter`: 这种压缩器同样使用 LLM，但它做的是“文档过滤”。它会判断整个文档是否与查询相关，如果相关，则保留整个文档；如果不相关，则直接丢弃。
 
-+   EmbeddingsFilter: 这是一种更快速、成本更低的过滤方法。它会计算查询和每个文档的嵌入向量之间的相似度，只保留那些相似度超过预设阈值的文档。
++ `EmbeddingsFilter`: 这是一种更快速、成本更低的过滤方法。它会计算查询和每个文档的嵌入向量之间的相似度，只保留那些相似度超过预设阈值的文档。
 
 ### [2.2 自定义重排器与压缩管道](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=_22-%e8%87%aa%e5%ae%9a%e4%b9%89%e9%87%8d%e6%8e%92%e5%99%a8%e4%b8%8e%e5%8e%8b%e7%bc%a9%e7%ae%a1%e9%81%93)
 
@@ -109,137 +109,198 @@ LangChain 内置了多种 DocumentCompressor：
 
 整个探索和实现过程如下：
 
-1.  从官方文档出发：首先，通过 LangChain 官方文档，了解到可以通过 DocumentCompressorPipeline 来组合多个压缩器和文档转换器。
+1. 从官方文档出发：首先，通过 LangChain 官方文档，了解到可以通过 `DocumentCompressorPipeline` 来组合多个压缩器和文档转换器。
 
-1.  需求缺口：希望使用 ColBERT 模型进行重排，但发现 LangChain 并没有内置的 ColBERT 重排器。
+1. 需求缺口：希望使用 ColBERT 模型进行重排，但发现 LangChain 并没有内置的 ColBERT 重排器。
 
-1.  分析示例与源码：回头分析 ContextualCompressionRetriever 的用法和源码。我们发现，其处理逻辑分为两步：首先使用 base_retriever 获取原始文档，然后将这些文档交给 base_compressor 进行压缩或重排。这说明，实现自定义后处理（如重排）功能的关键在于 base_compressor。
+1. 分析示例与源码：回头分析 `ContextualCompressionRetriever` 的用法和源码。我们发现，其处理逻辑分为两步：首先使用 `base_retriever` 获取原始文档，然后将这些文档交给 `base_compressor` 进行压缩或重排。这说明，实现自定义后处理（如重排）功能的关键在于 `base_compressor`。
 
-1.  定位核心基类：通过f12查看源码，确定 base_compressor 参数接收的是 BaseDocumentCompressor 类型的对象。这就是实现自定义功能的核心切入点。
+1. 定位核心基类：通过f12查看源码，确定 `base_compressor` 参数接收的是 `BaseDocumentCompressor` 类型的对象。这就是实现自定义功能的核心切入点。
 
-1.  参考与实现：最后，参考 LangChain 中其他重排器的实现方式，通过继承 BaseDocumentCompressor 基类并实现其关键方法，创建自己的 ColBERTReranker 类。
+1. 参考与实现：最后，参考 LangChain 中其他重排器的实现方式，通过继承 `BaseDocumentCompressor` 基类并实现其关键方法，创建自己的 `ColBERTReranker` 类。
 
-> PS：如果代码基础薄弱，想借助大模型帮你完成 ColBERTReranker ，需要提供给大模型的关键信息：BaseDocumentCompressor 的源码和 ContextualCompressionRetriever 的源码及其使用示例、你的明确目标（实现 ColBERT 重排逻辑）、以及 LangChain 中其他重排器的代码作为参考。信息越充分，模型生成的代码越准确。
+> PS：如果代码基础薄弱，想借助大模型帮你完成 `ColBERTReranker` ，需要提供给大模型的关键信息：`BaseDocumentCompressor` 的源码和 `ContextualCompressionRetriever` 的源码及其使用示例、你的明确目标（实现 ColBERT 重排逻辑）、以及 LangChain 中其他重排器的代码作为参考。信息越充分，模型生成的代码越准确。
 
 #### [代码示例](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b)
 
-自定义 ColBERTReranker 的代码实现：
+自定义 `ColBERTReranker` 的代码实现：
 
-```
-class ColBERTReranker(BaseDocumentCompressor):&quot;&quot;&quot;ColBERT重排器&quot;&quot;&quot;def __init__(self, **kwargs):super().__init__(**kwargs)
 
-        model_name = &quot;bert-base-uncased&quot;# 加载模型和分词器object.__setattr__(self, &#x27;tokenizer&#x27;, AutoTokenizer.from_pretrained(model_name))object.__setattr__(self, &#x27;model&#x27;, AutoModel.from_pretrained(model_name))
-        self.model.eval()print(f&quot;ColBERT模型加载完成&quot;)def encode_text(self, texts):&quot;&quot;&quot;ColBERT文本编码&quot;&quot;&quot;
+
+# 自定义重排器与压缩管道
+
+```python
+class ColBERTReranker(BaseDocumentCompressor):
+    """ColBERT重排器"""
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+        model_name = "bert-base-uncased"
+        # 加载模型和分词器
+        object.__setattr__(self, 'tokenizer', AutoTokenizer.from_pretrained(model_name))
+        object.__setattr__(self, 'model', AutoModel.from_pretrained(model_name))
+        self.model.eval()
+        print(f"ColBERT模型加载完成")
+
+    def encode_text(self, texts):
+        """ColBERT文本编码"""
         inputs = self.tokenizer(
             texts,
-            return_tensors=&quot;pt&quot;,
+            return_tensors="pt",
             padding=True,
             truncation=True,
-            max_length=128)with torch.no_grad():
+            max_length=128)
+        with torch.no_grad():
             outputs = self.model(**inputs)
 
         embeddings = outputs.last_hidden_state
-        embeddings = F.normalize(embeddings, p=2, dim=-1)return embeddings
+        embeddings = F.normalize(embeddings, p=2, dim=-1)
+        return embeddings
 
-    def calculate_colbert_similarity(self, query_emb, doc_embs, query_mask, doc_masks):&quot;&quot;&quot;ColBERT相似度计算（MaxSim操作）&quot;&quot;&quot;
-        scores = []for i, doc_emb in enumerate(doc_embs):
-            doc_mask = doc_masks[i:i+1]# 计算相似度矩阵
-            similarity_matrix = torch.matmul(query_emb, doc_emb.unsqueeze(0).transpose(-2, -1))# 应用文档mask
+    def calculate_colbert_similarity(self, query_emb, doc_embs, query_mask, doc_masks):
+        """ColBERT相似度计算（MaxSim操作）"""
+        scores = []
+        for i, doc_emb in enumerate(doc_embs):
+            doc_mask = doc_masks[i:i+1]
+            # 计算相似度矩阵
+            similarity_matrix = torch.matmul(query_emb, doc_emb.unsqueeze(0).transpose(-2, -1))
+            # 应用文档mask
             doc_mask_expanded = doc_mask.unsqueeze(1)
-            similarity_matrix = similarity_matrix.masked_fill(~doc_mask_expanded.bool(), -1e9)# MaxSim操作
-            max_sim_per_query_token = similarity_matrix.max(dim=-1)[0]# 应用查询mask
+            similarity_matrix = similarity_matrix.masked_fill(~doc_mask_expanded.bool(), -1e9)
+            # MaxSim操作
+            max_sim_per_query_token = similarity_matrix.max(dim=-1)[0]
+            # 应用查询mask
             query_mask_expanded = query_mask.unsqueeze(0)
-            max_sim_per_query_token = max_sim_per_query_token.masked_fill(~query_mask_expanded.bool(), 0)# 求和得到最终分数
+            max_sim_per_query_token = max_sim_per_query_token.masked_fill(~query_mask_expanded.bool(), 0)
+            # 求和得到最终分数
             colbert_score = max_sim_per_query_token.sum(dim=-1).item()
-            scores.append(colbert_score)return scores
+            scores.append(colbert_score)
+        return scores
 
     def compress_documents(
         self,
         documents: Sequence[Document],
         query: str,
-        callbacks=None,) -&gt; Sequence[Document]:&quot;&quot;&quot;对文档进行ColBERT重排序&quot;&quot;&quot;if len(documents) == 0:return documents
+        callbacks=None,
+    ) -> Sequence[Document]:
+        """对文档进行ColBERT重排序"""
+        if len(documents) == 0:
+            return documents
 
         # 编码查询
         query_inputs = self.tokenizer([query],
-            return_tensors=&quot;pt&quot;,
+            return_tensors="pt",
             padding=True,
             truncation=True,
-            max_length=128)with torch.no_grad():
+            max_length=128)
+        with torch.no_grad():
             query_outputs = self.model(**query_inputs)
-            query_embeddings = F.normalize(query_outputs.last_hidden_state, p=2, dim=-1)# 编码文档
+            query_embeddings = F.normalize(query_outputs.last_hidden_state, p=2, dim=-1)
+        # 编码文档
         doc_texts = [doc.page_content for doc in documents]
         doc_inputs = self.tokenizer(
             doc_texts,
-            return_tensors=&quot;pt&quot;,
+            return_tensors="pt",
             padding=True,
             truncation=True,
-            max_length=128)with torch.no_grad():
+            max_length=128)
+        with torch.no_grad():
             doc_outputs = self.model(**doc_inputs)
-            doc_embeddings = F.normalize(doc_outputs.last_hidden_state, p=2, dim=-1)# 计算ColBERT相似度
+            doc_embeddings = F.normalize(doc_outputs.last_hidden_state, p=2, dim=-1)
+        # 计算ColBERT相似度
         scores = self.calculate_colbert_similarity(
             query_embeddings,
             doc_embeddings,
-            query_inputs[&#x27;attention_mask&#x27;],
-            doc_inputs[&#x27;attention_mask&#x27;])# 排序并返回前5个
+            query_inputs['attention_mask'],
+            doc_inputs['attention_mask'])
+        # 排序并返回前5个
         scored_docs = list(zip(documents, scores))
         scored_docs.sort(key=lambda x: x[1], reverse=True)
-        reranked_docs = [doc for doc, _ in scored_docs[:5]]return reranked_docsCopy to clipboardErrorCopied
+        reranked_docs = [doc for doc, _ in scored_docs[:5]]
+        return reranked_docs
 ```
 
-1.  继承与实现：ColBERTReranker 类继承自 BaseDocumentCompressor，并实现了其核心的抽象方法 compress_documents。这个方法接收基础检索器返回的文档列表 documents 和原始查询 query 作为输入。
+1. 继承与实现：`ColBERTReranker` 类继承自 `BaseDocumentCompressor`，并实现了其核心的抽象方法 `compress_documents()`。这个方法接收基础检索器返回的文档列表 `documents` 和原始查询 `query` 作为输入。
 
-1.  实现ColBERT逻辑：compress_documents 方法的内部逻辑遵循了在 “1.4 ColBERT 重排” 中描述的“后期交互”原理。
+2. 实现ColBERT逻辑：`compress_documents()` 方法的内部逻辑遵循了在 “1.4 ColBERT 重排” 中描述的“后期交互”原理。
 
-+   独立编码：在 _colbert_score 辅助函数中，查询和文档分别被独立编码，通过 self.model 得到各自所有 Token 的嵌入向量（query_embeddings 和 doc_embeddings）。
+   + 独立编码：在 `_colbert_score()` 辅助函数中，查询和文档分别被独立编码，通过 `self.model` 得到各自所有 Token 的嵌入向量（`query_embeddings` 和 `doc_embeddings`）。
 
-+   后期交互：代码 similarity_matrix.max(dim=1).values 实现了最大相似度（MaxSim）计算。为查询中的每一个 Token 向量，都从文档的所有 Token 向量中寻找一个最相似的，并记录下这个最大相似度值。
+   + 后期交互：代码 `similarity_matrix.max(dim=1).values` 实现了最大相似度（MaxSim）计算。为查询中的每一个 Token 向量，都从文档的所有 Token 向量中寻找一个最相似的，并记录下这个最大相似度值。
 
-+   分数聚合：最后的 .sum() 操作将查询中所有 Token 算出的最大相似度值相加，得到该文档与查询的最终相关性总分。
+   + 分数聚合：最后的 `.sum()` 操作将查询中所有 Token 算出的最大相似度值相加，得到该文档与查询的最终相关性总分。
 
-1.  排序与返回：compress_documents 方法遍历所有文档、计算出各自的分数后，根据分数从高到低对文档进行重新排序，并返回排序后的文档列表。
+3. 排序与返回：`compress_documents()` 方法遍历所有文档、计算出各自的分数后，根据分数从高到低对文档进行重新排序，并返回排序后的文档列表。
 
-接下来，将这个自定义的 ColBERTReranker 与 LangChain 的其他组件（如 LLMChainExtractor）组合成一个强大的“重排+压缩”管道，并应用在实际的检索任务中。
+接下来，将这个自定义的 `ColBERTReranker` 与 LangChain 的其他组件（如 `LLMChainExtractor`）组合成一个强大的“重排+压缩”管道，并应用在实际的检索任务中。
 
-```
-# 初始化配置...(略)# 1. 加载和处理文档
-loader = TextLoader(&quot;../../data/C4/txt/ai.txt&quot;, encoding=&quot;utf-8&quot;)
+```python
+# 初始化配置...(略)
+# 1. 加载和处理文档
+loader = TextLoader("../../data/C4/txt/ai.txt", encoding="utf-8")
 documents = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
-docs = text_splitter.split_documents(documents)# 2. 创建向量存储和基础检索器
+docs = text_splitter.split_documents(documents)
+
+# 2. 创建向量存储和基础检索器
 vectorstore = FAISS.from_documents(docs, hf_bge_embeddings)
-base_retriever = vectorstore.as_retriever(search_kwargs={&quot;k&quot;: 20})# 3. 设置ColBERT重排序器
-reranker = ColBERTReranker()# 4. 设置LLM压缩器
-compressor = LLMChainExtractor.from_llm(llm)# 5. 使用DocumentCompressorPipeline组装压缩管道# 流程: ColBERT重排 -&gt; LLM压缩
+base_retriever = vectorstore.as_retriever(search_kwargs={"k": 20})
+
+# 3. 设置ColBERT重排序器
+reranker = ColBERTReranker()
+
+# 4. 设置LLM压缩器
+compressor = LLMChainExtractor.from_llm(llm)
+
+# 5. 使用DocumentCompressorPipeline组装压缩管道
+# 流程: ColBERT重排 -> LLM压缩
 pipeline_compressor = DocumentCompressorPipeline(
-    transformers=[reranker, compressor])# 6. 创建最终的压缩检索器
+    transformers=[reranker, compressor])
+
+# 6. 创建最终的压缩检索器
 final_retriever = ContextualCompressionRetriever(
     base_compressor=pipeline_compressor,
     base_retriever=base_retriever
-)# 7. 执行查询并展示结果
-query = &quot;AI还有哪些缺陷需要克服？&quot;print(f&quot;\n{&#x27;=&#x27;*20} 开始执行查询 {&#x27;=&#x27;*20}&quot;)print(f&quot;查询: {query}\n&quot;)# 7.1 基础检索结果print(f&quot;--- (1) 基础检索结果 (Top 20) ---&quot;)
-base_results = base_retriever.get_relevant_documents(query)for i, doc in enumerate(base_results):print(f&quot;  [{i+1}] {doc.page_content[:100]}...\n&quot;)# 7.2 使用管道压缩器的最终结果print(f&quot;\n--- (2) 管道压缩后结果 (ColBERT重排 + LLM压缩) ---&quot;)
-final_results = final_retriever.get_relevant_documents(query)for i, doc in enumerate(final_results):print(f&quot;  [{i+1}] {doc.page_content}\n&quot;)Copy to clipboardErrorCopied
+)
+
+# 7. 执行查询并展示结果
+query = "AI还有哪些缺陷需要克服？"
+print(f"\n{'='*20} 开始执行查询 {'='*20}")
+print(f"查询: {query}\n")
+
+# 7.1 基础检索结果
+print(f"--- (1) 基础检索结果 (Top 20) ---")
+base_results = base_retriever.get_relevant_documents(query)
+for i, doc in enumerate(base_results):
+    print(f"  [{i+1}] {doc.page_content[:100]}...\n")
+
+# 7.2 使用管道压缩器的最终结果
+print(f"\n--- (2) 管道压缩后结果 (ColBERT重排 + LLM压缩) ---")
+final_results = final_retriever.get_relevant_documents(query)
+for i, doc in enumerate(final_results):
+    print(f"  [{i+1}] {doc.page_content}\n")
 ```
 
 这段代码展示了如何将各个组件串联起来，形成一个完整的检索流程：
 
-1.  创建基础组件：首先创建一个标准的 FAISS 向量存储和一个基础检索器 base_retriever，负责从向量库中初步召回20个可能相关的文档。
+1. 创建基础组件：首先创建一个标准的 `FAISS` 向量存储和一个基础检索器 `base_retriever`，负责从向量库中初步召回20个可能相关的文档。
 
-1.  准备处理单元：实例化两个关键的处理单元：
+2. 准备处理单元：实例化两个关键的处理单元：
 
-+   reranker: 自定义的 ColBERTReranker 实例。
+   + `reranker`: 自定义的 `ColBERTReranker` 实例。
 
-+   compressor: LangChain 内置的 LLMChainExtractor，用于从文档中提取与查询相关的句子。
+   + `compressor`: LangChain 内置的 `LLMChainExtractor`，用于从文档中提取与查询相关的句子。
 
-1.  **构建处理管道 (DocumentCompressorPipeline)**：这是整个流程的核心。创建一个 DocumentCompressorPipeline 实例，并将 reranker 和 compressor 按顺序放入 transformers 列表中。根据 DocumentCompressorPipeline 的源码，它会依次调用列表中的每个处理器。因此，文档会先经过 ColBERTReranker 重排，重排后的结果再被送入 LLMChainExtractor 进行压缩。
+3. 构建处理管道 (`DocumentCompressorPipeline`): 这是整个流程的核心。创建一个 `DocumentCompressorPipeline` 实例，并将 `reranker` 和 `compressor` 按顺序放入 `transformers` 列表中。根据 `DocumentCompressorPipeline` 的源码，它会依次调用列表中的每个处理器。因此，文档会先经过 `ColBERTReranker` 重排，重排后的结果再被送入 `LLMChainExtractor` 进行压缩。
 
-1.  组装最终检索器：最后，用 ContextualCompressionRetriever 将 base_retriever 和我们创建的 pipeline_compressor 包装在一起。当调用 final_retriever 时，它会自动执行“基础检索 -> 管道处理（重排 -> 压缩）”的完整流程。
+4. 组装最终检索器：最后，用 `ContextualCompressionRetriever` 将 `base_retriever` 和我们创建的 `pipeline_compressor` 包装在一起。当调用 `final_retriever` 时，它会自动执行“基础检索 -> 管道处理（重排 -> 压缩）”的完整流程。
 
 > [完整代码](https://github.com/datawhalechina/all-in-rag/blob/main/code/C4/07_rerank_and_refine.py)
 
-### 2.3 LlamaIndex 中的检索压缩
+## 2.3 LlamaIndex 中的检索压缩
 
-LlamaIndex 同样提供了封装好的压缩功能，其代表是 SentenceEmbeddingOptimizer(5)。它也是一个后处理器（Node Postprocessor），工作在检索之后。
+LlamaIndex 同样提供了封装好的压缩功能，其代表是 `SentenceEmbeddingOptimizer`。它也是一个后处理器（Node Postprocessor），工作在检索之后。
 
 它的工作原理是，对于每个检索到的文档，将其分解成句子。然后计算每个句子与用户查询的嵌入相似度，最后只保留那些相似度最高的句子，从而“优化”文档，去除无关信息。
 
@@ -247,46 +308,50 @@ LlamaIndex 同样提供了封装好的压缩功能，其代表是 SentenceEmbedd
 
 传统的 RAG 流程有一个隐含的假设：检索到的文档总是与问题相关且包含正确答案。然而在现实世界中，检索系统可能会失败，返回不相关、过时或甚至完全错误的文档。如果将这些“有毒”的上下文直接喂给 LLM，就可能导致幻觉（Hallucination）或产生错误的回答。
 
-校正检索（Corrective-RAG, C-RAG） 正是为解决这一问题而提出的一种策略(6)。思路是引入一个“自我反思”或“自我修正”的循环，在生成答案之前，对检索到的文档质量进行评估，并根据评估结果采取不同的行动。
+校正检索（Corrective-RAG, C-RAG） 正是为解决这一问题而提出的一种策略。思路是引入一个“自我反思”或“自我修正”的循环，在生成答案之前，对检索到的文档质量进行评估，并根据评估结果采取不同的行动。
 
 C-RAG 的工作流程可以概括为 “检索-评估-行动” 三个阶段：
 
 ![](img/d12565f9dfeec9f70953a05a6231a33b.png)
 
-1.  检索 (Retrieve) ：与标准 RAG 一样，首先根据用户查询从知识库中检索一组文档。
+1. 检索 (Retrieve) ：与标准 RAG 一样，首先根据用户查询从知识库中检索一组文档。
 
-1.  评估 (Assess) ：这是 C-RAG 的关键步骤。如图所示，一个“检索评估器 (Retrieval Evaluator)”会判断每个文档与查询的相关性，并给出“正确 (Correct)”、“不正确 (Incorrect)”或“模糊 (Ambiguous)”的标签。
+2. 评估 (Assess) ：这是 C-RAG 的关键步骤。如图所示，一个“检索评估器”会判断每个文档与查询的相关性，并给出“正确 (Correct)”、“不正确 (Incorrect)”或“模糊 (Ambiguous)”的标签。
 
-1.  行动 (Act) ：根据评估结果，系统会进入不同的知识修正与获取流程：
+3. 行动 (Act) ：根据评估结果，系统会进入不同的知识修正与获取流程：
 
-+   如果评估为“正确”：系统会进入“知识精炼 (Knowledge Refinement)”环节。如图，它会将原始文档分解成更小的知识片段 (strips)，过滤掉无关部分，然后重新组合成更精准、更聚焦的上下文，再送给大模型生成答案。
+   + 如果评估为“正确”：系统会进入“知识精炼 (Knowledge Refinement)”环节。如图，它会将原始文档分解成更小的知识片段 (strips)，过滤掉无关部分，然后重新组合成更精准、更聚焦的上下文，再送给大模型生成答案。
 
-+   如果评估为“不正确”：系统认为内部知识库无法回答问题，此时会触发“知识搜索 (Knowledge Searching)”。它会先对原始查询进行“查询重写 (Query Rewriting)”，生成一个更适合搜索引擎的查询，然后进行 Web 搜索，用外部信息来回答问题。
+   + 如果评估为“不正确”：系统认为内部知识库无法回答问题，此时会触发“知识搜索 (Knowledge Searching)”。它会先对原始查询进行“查询重写 (Query Rewriting)”，生成一个更适合搜索引擎的查询，然后进行 Web 搜索，用外部信息来回答问题。
 
-+   如果评估为“模糊”：同样会触发“知识搜索”，但通常会直接使用原始查询进行 Web 搜索，以获取额外信息来辅助生成答案。
+   + 如果评估为“模糊”：同样会触发“知识搜索”，但通常会直接使用原始查询进行 Web 搜索，以获取额外信息来辅助生成答案。
 
 通过这种方式，C-RAG 极大地增强了 RAG 系统的鲁棒性。不再盲目信任检索结果，而是增加了一个“事实核查”层，能够在检索失败时主动寻求外部帮助，从而有效减少幻觉，提升答案的准确性和可靠性。
 
-在 LangChain 的 langgraph 库中，可以利用其图结构来灵活地构建这种带有条件判断和循环的复杂 RAG 流程(7)。
+在 LangChain 的 `langgraph` 库中，可以利用其图结构来灵活地构建这种带有条件判断和循环的复杂 RAG 流程。
 
-## [练习](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=%e7%bb%83%e4%b9%a0)
+## 练习
 
-+   本[节“自定](https://github.com/datawhalechina/all-in-rag/blob/main/code/C4/work_rerank_and_refine.py)义重排器与压缩管道”部分的代码运行后的输出会出现重复的情况，思考为什么会出现这个问题并尝试修改代码解决。（参考代码）
++ 本节“自定义重排器与压缩管道”部分的代码运行后的输出会出现重复的情况，思考为什么会出现这个问题并尝试修改代码解决。（[参考代码](https://github.com/datawhalechina/all-in-rag/blob/main/code/C4/work_rerank_and_refine.py)）
 
-## [参考文献](https://datawhalechina.github.io/all-in-rag/#/chapter4/15_advanced_retrieval_techniques?id=%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae)
+## 参考文献
 
-[Using LLM’s for Ret](https://www.llamaindex.ai/blog/using-llms-for-retrieval-and-reranking-23cf2d3a14b6)ri[e](https://datawhalechina.github.io/all-in-rag/#fnref-1)val and Reranking. ↩
 
-No[g](https://datawhalechina.github.io/all-in-rag/#fnref-2)ueira, R., & Cho, K. (2019). Passage Re-ranking with BERT. ↩
 
-Ad[v](https://datawhalechina.github.io/all-in-rag/#fnref-3)anced RAG: ColBERT Reranker. ↩
+# 参考文献
 
-[How to do retrieval with co](https://python.langchain.com/docs/how_to/contextual_compression/)nt[e](https://datawhalechina.github.io/all-in-rag/#fnref-4)xtual compression. ↩
+[Using LLMs for Retrieval and Reranking](https://www.llamaindex.ai/blog/using-llms-for-retrieval-and-reranking-23cf2d3a14b6) ↩
 
-Se[n](https://datawhalechina.github.io/all-in-rag/#fnref-5)tence Embedding Optimizer. ↩
+Nogueira, R., & Cho, K. (2019). Passage Re-ranking with BERT. ↩
 
-[Jiang, Z. et al. (202](https://arxiv.org/pdf/2401.15884.pdf)4)[.](https://datawhalechina.github.io/all-in-rag/#fnref-6) Corrective Retrieval Augmented Generation. ↩
+Advanced RAG: ColBERT Reranker. ↩
 
-Co[r](https://datawhalechina.github.io/all-in-rag/#fnref-7)rective-RAG (CRAG). ↩
+[How to do retrieval with contextual compression](https://python.langchain.com/docs/how_to/contextual_compression/) ↩
 
-[ 上一章节](https://datawhalechina.github.io/all-in-rag/#/chapter4/14_query_rewriting)
+Sentence Embedding Optimizer. ↩
+
+Jiang, Z. et al. (2024). Corrective Retrieval Augmented Generation. ↩
+
+Corrective-RAG (CRAG). ↩
+
+[上一章节](https://datawhalechina.github.io/all-in-rag/#/chapter4/14_query_rewriting)

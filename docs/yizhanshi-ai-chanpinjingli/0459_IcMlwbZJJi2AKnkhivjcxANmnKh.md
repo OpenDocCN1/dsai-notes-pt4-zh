@@ -1,3 +1,4 @@
+
 # 深度学习的实用层面
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/FUcPdshwyoOHeDxUi88cy6fon0d](https://v11enp9ok1h.feishu.cn/docx/FUcPdshwyoOHeDxUi88cy6fon0d)
@@ -100,23 +101,23 @@
 
 ### Logistic 回归中的正则化
 
-对于 Logistic 回归，加入 L2 正则化（也称“L2 范数”）的成本函数：
+对于 Logistic 回归，加入 `L2` 正则化（也称“`L2` 范数”）的成本函数：
 
-+   L2 正则化：
++   `L2` 正则化：
 
-+   L1 正则化：
++   `L1` 正则化：
 
-其中，λ 为正则化因子，是超参数。
+其中，`λ` 为正则化因子，是超参数。
 
-由于 L1 正则化最后得到 w 向量中将存在大量的 0，使模型变得稀疏化，因此 L2 正则化更加常用。
+由于 `L1` 正则化最后得到 `w` 向量中将存在大量的 0，使模型变得稀疏化，因此 `L2` 正则化更加常用。
 
-注意，lambda在 Python 中属于保留字，所以在编程的时候，用lambd代替这里的正则化因子。
+注意，`lambda`在 Python 中属于保留字，所以在编程的时候，用`lambd`代替这里的正则化因子。
 
 ### [神经网络中的正则化](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e4%b8%ad%e7%9a%84%e6%ad%a3%e5%88%99%e5%8c%96)
 
 对于神经网络，加入正则化的成本函数：
 
-因为 w 的大小为 (n[l−1], n[l])，因此
+因为 `w` 的大小为 (`n[l−1]`, `n[l]`)，因此
 
 该矩阵范数被称为弗罗贝尼乌斯范数（Frobenius Norm），所以神经网络中的正则化项被称为弗罗贝尼乌斯范数矩阵。
 
@@ -128,56 +129,56 @@
 
 可得：
 
-其中，因为  ，会给原来的 W[l]一个衰减的参数，因此 L2 正则化项也被称为权重衰减（Weight Decay）。
+其中，因为  ，会给原来的 `W[l]`一个衰减的参数，因此 `L2` 正则化项也被称为权重衰减（Weight Decay）。
 
 ### [正则化可以减小过拟合的原因](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e6%ad%a3%e5%88%99%e5%8c%96%e5%8f%af%e4%bb%a5%e5%87%8f%e5%b0%8f%e8%bf%87%e6%8b%9f%e5%90%88%e7%9a%84%e5%8e%9f%e5%9b%a0)
 
 #### [直观解释](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e7%9b%b4%e8%a7%82%e8%a7%a3%e9%87%8a)
 
-正则化因子设置的足够大的情况下，为了使成本函数最小化，权重矩阵 W 就会被设置为接近于 0 的值，直观上相当于消除了很多神经元的影响，那么大的神经网络就会变成一个较小的网络。当然，实际上隐藏层的神经元依然存在，但是其影响减弱了，便不会导致过拟合。
+正则化因子设置的足够大的情况下，为了使成本函数最小化，权重矩阵 `W` 就会被设置为接近于 0 的值，直观上相当于消除了很多神经元的影响，那么大的神经网络就会变成一个较小的网络。当然，实际上隐藏层的神经元依然存在，但是其影响减弱了，便不会导致过拟合。
 
 #### [数学解释](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e6%95%b0%e5%ad%a6%e8%a7%a3%e9%87%8a)
 
-假设神经元中使用的激活函数为g(z) = tanh(z)（sigmoid 同理）。
+假设神经元中使用的激活函数为`g(z) = tanh(z)`（`sigmoid` 同理）。
 
 ![](img/cf1af5899e2f922020a69d7c76d662c1.png)
 
-在加入正则化项后，当 λ 增大，导致 W[l]减小，Z[l]=W[l]a[l−1]+b[l]便会减小。由上图可知，在 z 较小（接近于 0）的区域里，tanh(z)函数近似线性，所以每层的函数就近似线性函数，整个网络就成为一个简单的近似线性的网络，因此不会发生过拟合。
+在加入正则化项后，当 `λ` 增大，导致 `W[l]`减小，`Z[l]=W[l]a[l−1]+b[l]`便会减小。由上图可知，在 `z` 较小（接近于 0）的区域里，`tanh(z)`函数近似线性，所以每层的函数就近似线性函数，整个网络就成为一个简单的近似线性的网络，因此不会发生过拟合。
 
 #### [其他解释](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e5%85%b6%e4%bb%96%e8%a7%a3%e9%87%8a)
 
-在权值 w[L]变小之下，输入样本 X 随机的变化不会对神经网络模造成过大的影响，神经网络受局部噪音的影响的可能性变小。这就是正则化能够降低模型方差的原因。
+在权值 `w[L]`变小之下，输入样本 `X` 随机的变化不会对神经网络模造成过大的影响，神经网络受局部噪音的影响的可能性变小。这就是正则化能够降低模型方差的原因。
 
 ## [dropout 正则化](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=dropout-%e6%ad%a3%e5%88%99%e5%8c%96)
 
-dropout（随机失活）是在神经网络的隐藏层为每个神经元结点设置一个随机消除的概率，保留下来的神经元形成一个结点较少、规模较小的网络用于训练。dropout 正则化较多地被使用在计算机视觉（Computer Vision）领域。
+`dropout`（随机失活）是在神经网络的隐藏层为每个神经元结点设置一个随机消除的概率，保留下来的神经元形成一个结点较少、规模较小的网络用于训练。`dropout` 正则化较多地被使用在计算机视觉（Computer Vision）领域。
 
 ![](img/2664c37b45282b2299403625ac2e0cda.png)
 
 ### 反向随机失活（Inverted dropout）
 
-反向随机失活是实现 dropout 的方法。对第l层进行 dropout：
+反向随机失活是实现 `dropout` 的方法。对第`l`层进行 `dropout`：
 
 ```
 keep_prob = 0.8    # 设置神经元保留概率
-dl = np.random.rand(al.shape[0], al.shape[1]) &lt; keep_prob
+dl = np.random.rand(al.shape[0], al.shape[1]) < keep_prob
 al = np.multiply(al, dl)
 al /= keep_prob
 ```
 
-最后一步al /= keep_prob是因为 a[l]中的一部分元素失活（相当于被归零），为了在下一层计算时不影响 Z[l+1]=W[l+1]a[l]+b[l+1]的期望值，因此除以一个keep_prob。
+最后一步`al /= keep_prob`是因为 `a[l]`中的一部分元素失活（相当于被归零），为了在下一层计算时不影响 `Z[l+1]=W[l+1]a[l]+b[l+1]`的期望值，因此除以一个`keep_prob`。
 
-注意，在测试阶段不要使用 dropout，因为那样会使得预测结果变得随机。
+注意，在测试阶段不要使用 `dropout`，因为那样会使得预测结果变得随机。
 
 ### [理解 dropout](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e7%90%86%e8%a7%a3-dropout)
 
-对于单个神经元，其工作是接收输入并产生一些有意义的输出。但是加入了 dropout 后，输入的特征都存在被随机清除的可能，所以该神经元不会再特别依赖于任何一个输入特征，即不会给任何一个输入特征设置太大的权重。
+对于单个神经元，其工作是接收输入并产生一些有意义的输出。但是加入了 `dropout` 后，输入的特征都存在被随机清除的可能，所以该神经元不会再特别依赖于任何一个输入特征，即不会给任何一个输入特征设置太大的权重。
 
-因此，通过传播过程，dropout 将产生和 L2 正则化相同的收缩权重的效果。
+因此，通过传播过程，`dropout` 将产生和 `L2` 正则化相同的收缩权重的效果。
 
-对于不同的层，设置的keep_prob也不同。一般来说，神经元较少的层，会设keep_prob为 1.0，而神经元多的层则会设置比较小的keep_prob。
+对于不同的层，设置的`keep_prob`也不同。一般来说，神经元较少的层，会设`keep_prob`为 1.0，而神经元多的层则会设置比较小的`keep_prob`。
 
-dropout 的一大缺点是成本函数无法被明确定义。因为每次迭代都会随机消除一些神经元结点的影响，因此无法确保成本函数单调递减。因此，使用 dropout 时，先将keep_prob全部设置为 1.0 后运行代码，确保 J(w,b)函数单调递减，再打开 dropout。
+`dropout` 的一大缺点是成本函数无法被明确定义。因为每次迭代都会随机消除一些神经元结点的影响，因此无法确保成本函数单调递减。因此，使用 `dropout` 时，先将`keep_prob`全部设置为 1.0 后运行代码，确保 `J(w,b)`函数单调递减，再打开 `dropout`。
 
 ## [其他正则化方法](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e5%85%b6%e4%bb%96%e6%ad%a3%e5%88%99%e5%8c%96%e6%96%b9%e6%b3%95)
 
@@ -187,7 +188,7 @@ dropout 的一大缺点是成本函数无法被明确定义。因为每次迭代
 
 ## [标准化输入](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e6%a0%87%e5%87%86%e5%8c%96%e8%be%93%e5%85%a5)
 
-使用标准化处理输入 X 能够有效加速收敛。
+使用标准化处理输入 `X` 能够有效加速收敛。
 
 ### [标准化公式](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e6%a0%87%e5%87%86%e5%8c%96%e5%85%ac%e5%bc%8f)
 
@@ -207,33 +208,33 @@ dropout 的一大缺点是成本函数无法被明确定义。因为每次迭代
 
 在梯度函数上出现的以指数级递增或者递减的情况分别称为梯度爆炸或者梯度消失。
 
-假定  ，对于目标输出有：
 
-+   对于 W[l]的值大于 1 的情况，激活函数的值将以指数级递增；
 
-+   对于 W[l]的值小于 1 的情况，激活函数的值将以指数级递减。
+假定，对于目标输出有：
+
++ 对于 `W[l]` 的值大于 1 的情况，激活函数的值将以指数级递增；
+
++ 对于 `W[l]` 的值小于 1 的情况，激活函数的值将以指数级递减。
 
 对于导数同理。因此，在计算梯度时，根据不同情况梯度函数会以指数级递增或递减，导致训练导数难度上升，梯度下降算法的步长会变得非常小，需要训练的时间将会非常长。
 
-### [利用初始化缓解梯度消失和爆炸](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e5%88%a9%e7%94%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e7%bc%93%e8%a7%a3%e6%a2%af%e5%ba%a6%e6%b6%88%e5%a4%b1%e5%92%8c%e7%88%86%e7%82%b8)
+## [利用初始化缓解梯度消失和爆炸](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e5%88%a9%e7%94%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e7%bc%93%e8%a7%a3%e6%a2%af%e5%ba%a6%e6%b6%88%e5%a4%b1%e5%92%8c%e7%88%86%e7%82%b8)
 
-根据
+根据可知，当输入的数量 `n` 较大时，我们希望每个 `wi` 的值都小一些，这样它们的和得到的 `z` 也较小。
 
-可知，当输入的数量 n 较大时，我们希望每个 wi 的值都小一些，这样它们的和得到的 z 也较小。
-
-为了得到较小的 wi，设置Var(wi)=1/n，这里称为 Xavier initialization。
+为了得到较小的 `wi`，设置`Var(wi)=1/n`，这里称为 Xavier initialization。
 
 ```
 WL = np.random.randn(WL.shape[0], WL.shape[1]) * np.sqrt(1/n)
 ```
 
-其中 n 是输入的神经元个数，即WL.shape[1]。
+其中 `n` 是输入的神经元个数，即`WL.shape[1]`。
 
-这样，激活函数的输入 x 近似设置成均值为 0，标准方差为 1，神经元输出 z 的方差就正则化到 1 了。虽然没有解决梯度消失和爆炸的问题，但其在一定程度上确实减缓了梯度消失和爆炸的速度。
+这样，激活函数的输入 `x` 近似设置成均值为 0，标准方差为 1，神经元输出 `z` 的方差就正则化到 1 了。虽然没有解决梯度消失和爆炸的问题，但其在一定程度上确实减缓了梯度消失和爆炸的速度。
 
-同理，也有 He Initialization。它和 Xavier initialization 唯一的区别是Var(wi)=2/n，适用于 ReLU 作为激活函数时。
+同理，也有 He Initialization。它和 Xavier initialization 唯一的区别是`Var(wi)=2/n`，适用于 `ReLU` 作为激活函数时。
 
-当激活函数使用 ReLU 时，Var(wi)=2/n；当激活函数使用 tanh 时，Var(wi)=1/n。
+当激活函数使用 `ReLU` 时，`Var(wi)=2/n`；当激活函数使用 `tanh` 时，`Var(wi)=1/n`。
 
 ## 梯度检验（Gradient checking）
 
@@ -241,50 +242,46 @@ WL = np.random.randn(WL.shape[0], WL.shape[1]) * np.sqrt(1/n)
 
 使用双边误差的方法去逼近导数，精度要高于单边误差。
 
-+   单边误差：
++ 单边误差：
 
 ![](img/406b8a93f28f1235e85709270d983b3e.png)
 
-误差：O(ε)
+误差：`O(ε)`
 
 ![](img/78882fac2f8318f969c3ad947c5e01ad.png)
 
 误差：
 
-当 ε 越小时，结果越接近真实的导数，也就是梯度值。可以使用这种方法来判断反向传播进行梯度下降时，是否出现了错误。
+当 `ε` 越小时，结果越接近真实的导数，也就是梯度值。可以使用这种方法来判断反向传播进行梯度下降时，是否出现了错误。
 
 ### [梯度检验的实施](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e6%a2%af%e5%ba%a6%e6%a3%80%e9%aa%8c%e7%9a%84%e5%ae%9e%e6%96%bd)
 
 #### [连接参数](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e8%bf%9e%e6%8e%a5%e5%8f%82%e6%95%b0)
 
-将  全部连接出来，成为一个巨型向量 θ。这样，
+将全部连接出来，成为一个巨型向量 `θ`。这样，
 
-同时，对  执行同样的操作得到巨型向量 dθ，它和 θ 有同样的维度。
+同时，对执行同样的操作得到巨型向量 `dθ`，它和 `θ` 有同样的维度。
 
 ![](img/2f7afc34f401c348a0873d80228eefb4.png)
 
-现在，我们需要找到 dθ 和代价函数 J 的梯度的关系。
+现在，我们需要找到 `dθ` 和代价函数 `J` 的梯度的关系。
 
 #### [进行梯度检验](https://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/Improving_Deep_Neural_Networks/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E5%B1%82%E9%9D%A2?id=%e8%bf%9b%e8%a1%8c%e6%a2%af%e5%ba%a6%e6%a3%80%e9%aa%8c)
 
-求得一个梯度逼近值
-
-应该
+求得一个梯度逼近值应该
 
 因此，我们用梯度检验值
 
-检验反向传播的实施是否正确。其中，
+检验反向传播的实施是否正确。其中，表示向量 `x` 的 2-范数（也称“欧几里德范数”）。
 
-表示向量 x 的 2-范数（也称“欧几里德范数”）。
-
-如果梯度检验值和 ε 的值相近，说明神经网络的实施是正确的，否则要去检查代码是否存在 bug。
+如果梯度检验值和 `ε` 的值相近，说明神经网络的实施是正确的，否则要去检查代码是否存在 bug。
 
 ### 在神经网络实施梯度检验的实用技巧和注意事项
 
-1.  不要在训练中使用梯度检验，它只用于调试（debug）。使用完毕关闭梯度检验的功能；
+1. 不要在训练中使用梯度检验，它只用于调试（`debug`）。使用完毕关闭梯度检验的功能；
 
-1.  如果算法的梯度检验失败，要检查所有项，并试着找出 bug，即确定哪个 dθapprox[i] 与 dθ 的值相差比较大；
+1. 如果算法的梯度检验失败，要检查所有项，并试着找出 bug，即确定哪个 `dθapprox[i]` 与 `dθ` 的值相差比较大；
 
-1.  当成本函数包含正则项时，也需要带上正则项进行检验；
+1. 当成本函数包含正则项时，也需要带上正则项进行检验；
 
-1.  梯度检验不能与 dropout 同时使用。因为每次迭代过程中，dropout 会随机消除隐藏层单元的不同子集，难以计算 dropout 在梯度下降上的成本函数 J。建议关闭 dropout，用梯度检验进行双重检查，确定在没有 dropout 的情况下算法正确，然后打开 dropout；
+1. 梯度检验不能与 `dropout` 同时使用。因为每次迭代过程中，`dropout` 会随机消除隐藏层单元的不同子集，难以计算 `dropout` 在梯度下降上的成本函数 `J`。建议关闭 `dropout`，用梯度检验进行双重检查，确定在没有 `dropout` 的情况下算法正确，然后打开 `dropout`；

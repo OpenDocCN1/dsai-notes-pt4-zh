@@ -1,8 +1,9 @@
+
 # GPTs 原理与用途
 
 > 来源：[https://my.feishu.cn/docx/Wm0td6SFroFOBlxztV0cW82BnLd](https://my.feishu.cn/docx/Wm0td6SFroFOBlxztV0cW82BnLd)
 
-# GPTs是什么？
+## GPTs是什么？
 
 GPTs 是 OpenAI 推出的一种工具，它允许用户量身打造自己的 AI 助理。你可以根据自己的需求和偏好，创建一个完全定制的 ChatGPT。无论是要一个能帮忙梳理电子邮件的助手，还是一个随时提供创意灵感的伙伴，GPTs 都能让这一切变成可能。
 
@@ -12,7 +13,7 @@ GPTs 的出现代表着 AI 技术的一个重要进展，它将 AI 的应用从�
 
 总的来说，GPTs 是一种让使用者能够量身打造自己的 AI 助理的工具，开启了个性化 AI 的新阶段，为开发者和普通用户提供了更多便利。希望这些信息对您有所帮助！
 
-# GPTs 正在定义新游戏规则
+## GPTs 正在定义新游戏规则
 
 GPTs 应用和自定义操作（Actions）的推出，正在定义全新的游戏规则。
 
@@ -26,11 +27,11 @@ GPTs 是 OpenAI 的最新创新，专为任何渴望按照自己喜欢的方式�
 
 > 补充阅读资料——
 
-+   **GPTs 、中间层、Chatbot 虚拟社交、A**I Agent， 大模型应用最新方向解析
++ GPTs 、中间层、Chatbot 虚拟社交、AI Agent，大模型应用最新方向解析
 
 > https://mp.weixin.qq.com/s/ZN3r69vHdCrBAAPEvWTrDg
 
-# 用好了Prompt，是不是可以代替各类GPTs呢？
+## 用好了Prompt，是不是可以代替各类GPTs呢？
 
 OpenAI的GPTs（定制聊天机器人）是一种新的方式，可以让任何人创建一个定制版的ChatGPT，以便在日常生活、特定任务、工作或家庭中更有帮助。你可以为GPTs添加指令、额外知识和任何组合的技能，并与他人分享或用于自己的目的。
 
@@ -38,6 +39,6 @@ OpenAI的GPTs（定制聊天机器人）是一种新的方式，可以让任何�
 
 总的来说，Prompt和GPTs都是AI对话系统的重要组成部分，它们各自扮演着不同的角色。Prompt是一种引导模型生成特定类型回答的工具，而GPTs则是可以调用多种能力的类似智能体应用。希望这个答案对你有所帮助！
 
-# GPTs 搭建指南
+## GPTs 搭建指南
 
-[ChatGPT 应用 GPTs 开发全面指南：快速上手、](https://mp.weixin.qq.com/s/Z8yCoOB6pqanBH9I4wwe4g)自定义 Action、添加知识、总结展望
+[ChatGPT 应用 GPTs 开发全面指南：快速上手、自定义 Action、添加知识、总结展望](https://mp.weixin.qq.com/s/Z8yCoOB6pqanBH9I4wwe4g)

@@ -1,3 +1,4 @@
+
 # Cursor 2.2更新：可视化编辑器+Debug Mode，写前端的有福了
 
 > 来源：[https://my.feishu.cn/docx/PvY2dZhA3oMai7xWFq7cGUjCnWe](https://my.feishu.cn/docx/PvY2dZhA3oMai7xWFq7cGUjCnWe)
@@ -74,11 +75,11 @@
 
 如果你用React写前端，这个功能更香。
 
-Cursor会自动识别组件的props，在侧边栏显示出来。
+Cursor会自动识别组件的`props`，在侧边栏显示出来。
 
-你可以直接修改props的值，**实时看到不同状态下组件的样子**。
+你可以直接修改`props`的值，**实时看到不同状态下组件的样子**。
 
-比如一个按钮组件，有disabled、loading、primary等状态。
+比如一个按钮组件，有`disabled`、`loading`、`primary`等状态。
 
 以前你得改代码、刷新、再改、再刷新。
 
@@ -118,7 +119,7 @@ AI刷刷刷写了一堆代码，跑不通。
 
 这次Debug Mode，终于能看AI的"思考过程"了。
 
-## Debug Mode是什么
+### Debug Mode是什么
 
 简单说，就是**运行时日志+假设生成**。
 
@@ -177,7 +178,7 @@ Plan Mode也增强了，规划复杂任务的时候逻辑更清晰。
 
 Debug Mode对于调试复杂bug，帮助挺大。
 
-尤其是那种"跑起来没报错但结果就是不对"的问题，以前要自己加console.log一步步排查，现在AI能直接定位。
+尤其是那种"跑起来没报错但结果就是不对"的问题，以前要自己加`console.log`一步步排查，现在AI能直接定位。
 
 **不好的地方**：
 
@@ -265,7 +266,7 @@ Debug Mode是Pro功能，免费版用不了。
 
 +   点哪改哪，拖拽布局
 
-+   React组件props实时调试
++   React组件`props`实时调试
 
 +   多Agent并行执行修改
 
@@ -305,7 +306,7 @@ Debug Mode是Pro功能，免费版用不了。
 
 ---
 
-**引用来源**
+## 引用来源
 
 +   Cursor官方更新日志：Version 2.2 Release Notes https://www.cursor.com/changelog
 

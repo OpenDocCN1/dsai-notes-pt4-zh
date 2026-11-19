@@ -1,12 +1,13 @@
+
 # LLM Continue Pretrain（2024版）
 
 > 来源：[https://agijuejin.feishu.cn/docx/QMVEd6KlHowr4NxT3TncjpETnLd](https://agijuejin.feishu.cn/docx/QMVEd6KlHowr4NxT3TncjpETnLd)
 
 > 作者：[王焱](https://www.zhihu.com/people/wang-yan-34-70)
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/707751901)hihu.com/p/707751...
+> 原文：[https://zhuanlan.zhihu.com/p/707751901](https://zhuanlan.zhihu.com/p/707751901)
 
-## **1 背景**
+## 1 背景
 
 去年，国内大模型赚钱最爽的一个方向，就是卖数据。
 
@@ -34,25 +35,25 @@ Aligntment Tax就一直存在。
 
 也就是做continue pretrain（领域大模型）
 
-以及，从反馈来看，如果发现continue pretra[in后，domain和通用效果都](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2406.01375)涨了，大概率是底座通用domain训练的不够充分。
+以及，从反馈来看，如果发现continue pretrain后，domain和通用效果都涨了，大概率是底座通用domain训练的不够充分。
 
 除此之外，英文到中文的continue pretrain，例如把llama增训成中文（国内很多公司的操作，这并不丢人，效果还挺好）。long context的continue pretrain。
 
-近期邀请了张舸和浩然，关于continue pretrain做了一个小范围分享，具体参看论文。 https:// arxiv.org/pdf/2406.0137 5  。
+近期邀请了张舸和浩然，关于continue pretrain做了一个小范围分享，具体参看论文。https://arxiv.org/pdf/2406.01375。
 
 以及，我们科研小团队，在long context continue pretrain也有一些踩坑经验。
 
 这里还要特别感谢零一万物的朋友，他们给了很多很好的讨论和反馈。
 
-感谢来自Sea AI Lab刘乾的分享，在多语言continue pretrain有非常扎实的工作。 https:// arxiv.org/abs/2404.0360 8
+感谢来自Sea AI Lab刘乾的分享，在多语言continue pretrain有非常扎实的工作。https://arxiv.org/abs/2404.03608
 
 得到了一些比较有趣的结论，这里把不敏感信息分享给大家。
 
-## ** 2 步**骤
+## 2 步骤
 
 continue pretrain的步骤整体分成三步。
 
-###  2.1 扩词表（这一节重点感谢 刘乾）
+### 2.1 扩词表（这一节重点感谢 刘乾）
 
 不建议去轻易扩词表，满足以下两个条件，可以去尝试
 
@@ -66,13 +67,11 @@ continue pretrain的步骤整体分成三步。
 
 大家还是选一个词表好的底座模型来做continue pretrain更合适，对比于底座训练不充分，词表的坑更大。
 
-###  2.2 Domain Continue Pretrain
+### 2.2 Domain Continue Pretrain
 
 这里参考了张舸和浩然，刘乾他们两个方向的工作。小马过河，大家自行判断和尝试了。
 
-**
-
-2.2.1 Repla**y
+#### 2.2.1 Replay
 
 需要采样pretrain阶段的数据。
 
@@ -84,13 +83,13 @@ continue pretrain的步骤整体分成三步。
 
 （所以continue pretrain后对比原base掉点严重，可能是你少混了一些SFT数据。
 
-2.2.2 learning rate
+#### 2.2.2 learning rate
 
 Sailor paper发现：保持continual pre-training总token数一样的情况下，原有domain 和新domain 的loss几乎都是可以预测的，本质上是「learning rate学习率」和「replay ratio 重放比例」的一个权衡。在continual pre-training总token一样的情况下，学得越快，忘得越多，即使replay 很多也一样如此。
 
 参看下图，当固定 continual pre-training 训练的总token数时，用各种不同的「英语」、「马来语」比例，以及不同学习率的搭配，训练结束时英语 (a) 和马来语 (b) 的validation loss。
 
-相比于马来语，英语的loss更可预测，用二次项函数能取得 99.36%的相关系数。关键的指标是 log(English Proportion) - log(Learning Rate)。根据这个公式，相对比较好的learning rate是1e-4，相比Qwen原始小不少（假设Qwen遵循Llama类似的learning rate，也就是4e-4）。
+相比于马来语，英语的loss更可预测，用二次项函数能取得 99.36%的相关系数。关键的指标是 `log(English Proportion) - log(Learning Rate)`。根据这个公式，相对比较好的learning rate是1e-4，相比Qwen原始小不少（假设Qwen遵循Llama类似的learning rate，也就是4e-4）。
 
 ![](img/91848dc7f1df97f62d4433ec4bf76567.png)
 
@@ -110,15 +109,13 @@ Sailor paper发现：保持continual pre-training总token数一样的情况下�
 
 这么推荐主要的原因是learning rate的波动范围比较大，比如从5e-6到4e-4能有近百倍的差异，但replay比例限制在0-1，大家日常也就是0.1这样的幅度去寻找比例。
 
-**
-
-2.2.3 比例控**制
+#### 2.2.3 比例控制
 
 domain数据占比过高，可能loss就直接崩了，占比太低，学习效率低，会导致最后domain提升不大。
 
 麻烦的点，就是如何判断什么比例是最佳的。张舸和浩然的论文发现，continue pretrain阶段，随着domain数据占比的提升，通用loss和domain loss的确是一个此消彼长，然后趋于稳定的过程。
 
-假设通用数据的占比是r，那么domain数据的占比就是1-r，张舸和浩然的论文中给出的关于数据比例的scaling law的公式为
+假设通用数据的占比是 `r`，那么domain数据的占比就是 `1-r`，张舸和浩然的论文中给出的关于数据比例的scaling law的公式为
 
 ![](img/170b97383baacc8f215ad95cacb38213.png)
 
@@ -126,7 +123,7 @@ domain数据占比过高，可能loss就直接崩了，占比太低，学习效�
 
 domain数据有了，预训练replay数据有了。在小规模的实验(模型参数量小，训练数据少)下continue pretrain，得到一些实验数据点，用实验数据点拟合上述公式，得到拟合参数值，就可以算更大参数量下的domain loss和通用loss。
 
-[多语言的比例控制可以参看刘乾的 ](https://link.zhihu.com/?target=https%3A//github.com/sail-sg/regmix)RegMix 方法 https:// github.com/sail-sg/regm ix
+[多语言的比例控制可以参看刘乾的 `RegMix` 方法](https://github.com/sail-sg/regmix)
 
 在训练Sailor时的一大难点就在于面对7个语言的各种不同来源数据（最后一共有20+不同的domain），怎么平衡原domain（英语和中文）和新domain（各种东南亚语言）的性能。
 
@@ -134,7 +131,7 @@ domain数据有了，预训练replay数据有了。在小规模的实验(模型�
 
 ![](img/7600f1054d645cabcbc157f7b7ac6ff3.png)
 
-2.2.4 Scaling Law
+#### 2.2.4 Scaling Law
 
 我想要去计算，我要训练多少步，loss才会降低到一个不错的级别，还是上面的scalling law
 
@@ -144,9 +141,7 @@ domain数据有了，预训练replay数据有了。在小规模的实验(模型�
 
 ![](img/7f67eeabadaf4c8ecd4ace33a9dfd2c8.png)
 
-**
-
-问题在于，pr**etrain都做了的公司，其实continue pretrain的训练，不差这点训练成本，大不了我多train一会。
+问题在于，pretrain都做了的公司，其实continue pretrain的训练，不差这点训练成本，大不了我多train一会。
 
 但对于一些中小厂来讲，最多也就continue pretrain一个7B模型，能大致知道一个节点，价值还是很大的。
 
@@ -158,23 +153,23 @@ scaling law失效的情况。
 
 但这个公式，可能还是需要大家亲自去拿小模型自己实验一下。
 
-2.2.5 参数
+#### 2.2.5 参数
 
 learning rate可以多参考刘乾的论文。
 
 batch size也是调大一些，会有一些不错的效果。
 
-如果有退火，从经验来看，需要把lr涨回去，这个时候loss会有一个相对波动比较大的阶段，但你再观察一段时间会稳定下来。
+如果有退火，从经验来看，需要把`lr`涨回去，这个时候loss会有一个相对波动比较大的阶段，但你再观察一段时间会稳定下来。
 
 还是需要具体情况，具体分析，不同的base模型的操作会有区别，大家自行探索。
 
-### ** 2.3 Domain对**齐
+### 2.3 Domain对齐
 
 对其是另外的一个世界了，先不展开。
 
 但比例方面，大家往往也是会吧domain的SFT数据比例调的高一点，来保证最后的效果。
 
-## ** 3 不同domain的特**点
+## 3 不同domain的特点
 
 continue pretrain分成三大类
 
@@ -184,17 +179,15 @@ continue pretrain分成三大类
 
 语言类的domain和long context的数据更难学习，前者是因为语言的gap导致初始loss偏高，但随着不断的训练，loss会稳定下降，但遗忘程度高，最优配比高，后者对资源的消耗更高，遗忘程度高，最优配比高。
 
-###  3.1 领域知识Continue Pretrain
+### 3.1 领域知识Continue Pretrain
 
-**
-
-3.1.1 难**点
+#### 3.1.1 难点
 
 比例的控制，训练多少tokens可以拿出来做对齐。
 
 这里参考张舸和浩然论文即可。
 
-3.1.2 样本质量的变化会不会导致scalling law公式的变化
+#### 3.1.2 样本质量的变化会不会导致scalling law公式的变化
 
 张舸和浩然论文的数据，都是基于公开数据集。
 
@@ -208,17 +201,15 @@ continue pretrain分成三大类
 
 毕竟除了几个头部玩家，中小厂的显卡还是很紧缺的。
 
-###  3.2 语言类Continue Pretrain
+### 3.2 语言类Continue Pretrain
 
-**
+#### 3.2.1 难点
 
-3.2.1 难****点
-
-去年大家的常用做法，就是已知lla****ma的**中文占比5%，那么我一点点增大中文的训练样本比例。
+去年大家的常用做法，就是已知llama的中文占比5%，那么我一点点增大中文的训练样本比例。
 
 而不是算好一个比例，直接硬train，这很容易导致loss直接崩掉。
 
-3.2.2 为什么语言的continue pretrain，比例不能剧烈变动？
+#### 3.2.2 为什么语言的continue pretrain，比例不能剧烈变动？
 
 三点原因
 
@@ -238,25 +229,23 @@ domain知识是最后几层，更新起来影响的层数相对更小一些。
 
 新词的embedding是随机初始化的，是transformer最底层了。同理，影响面更大。
 
-**learing rate**
+learing rate
 
 不合适的learning rate会导致general能力”受损“。以及learning rate大小带来的影响，跟增训中文，一点点提高中文比例，有点异曲同工。
 
 从刘乾的反馈来看，他们不扩词表，先找到合适的learning rate，再找到合适的比例，直接continue pretrain，loss就能稳定持续下降了
 
-###  3.3 Long Context Continue Pretrain
+### 3.3 Long Context Continue Pretrain
 
-[
+#### 3.3.1 continue pretrain学了什么
 
-3.3.1 continue ](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2404.15574)**pretrain学了什么
-
-拿lo**ng contex[t举例子，根据我们的一些分析，L](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2402.10171)LM本身就具有long context的能力，或者说是已经学到了文本的框架。
+拿 long context 举例子，根据我们的一些分析，LM 本身就具有 long context 的能力，或者说是已经学到了文本的框架。
 
 而之所以外推不好，其中一个猜测就是attention分布导致的。
 
 而long context的continue pretrain某种程度上是让attention分布的调整。
 
-https:// arxiv.org/abs/2404.1557 4  (例如这篇文章）
+https://arxiv.org/abs/2404.15574 (例如这篇文章）
 
 知识的重新学习并不是大头。
 
@@ -268,13 +257,13 @@ continue pretrain，让底座模型对这块的知识attention更加友好一些
 
 从这个角度来看，语言类continue pretrain比领域知识类continue pretrain的attention调整要更难，所以贸然的剧烈样本分布，学崩了也很正常。
 
-3.3.2 long context continue pretrain
+#### 3.3.2 long context continue pretrain
 
-fuyao的论文 https:// arxiv.org/abs/2402.1017 1  就是把各种短文本拼接成长的。
+fuyao的论文 https://arxiv.org/abs/2402.10171 就是把各种短文本拼接成长的。
 
-**进阶的做法，我可**以做个聚合，把相似的拼接到一起。
+进阶的做法，我可以做个聚合，把相似的拼接到一起。
 
-3.3.3 问题
+#### 3.3.3 问题
 
 我们的科研团队，有一个方向就是做long context 低成本continue pretrain，benchmark效果还可以，论文都投出去了。
 
@@ -288,7 +277,7 @@ Long Context的SFT是另外一种难（不是技术上的），也是我们近�
 
 其实中英文和domain知识的continue pretrain也一样，是否真的好，还是得SFT后的效果说了算。
 
-## ** 4 Pretrain的展**望
+## 4 Pretrain的展望
 
 这次的分享，包括基于这个分享，跟不少人私底下也有一些讨论。
 
@@ -302,13 +291,23 @@ deepseek的开源moe，也做得非常不错，应该是国内开源top了，他
 
 但算法为主的，做pretrain，往往就是洗数据了。
 
+
+
+# 预训练数据清洗与团队招聘
+
+## 数据清洗的技术含量与合理性
+
 尴尬的点是，预训练洗数据，因为数据量大，往往都是搞各种小模型+规则，很难说明你做的事情的技术含量，只能体现你对数据的认知很好。
 
 但随着模型参数量的增大，洗这么干净的数据合理么？模型是不是到了后面，自己就能做一些区分了？做那么多label意义真的大么？
 
+## 个人发展与方向转移
+
 对个人的发展的确不是那么友好，这也是真的。
 
 （所以，可以往对其，long context，多模态转移一下，这才是我们算法的主战场
+
+## 团队招聘与新方向拓展
 
 再次打个广告，我们的long context科研小团队还在招人，已经发了一篇论文。
 

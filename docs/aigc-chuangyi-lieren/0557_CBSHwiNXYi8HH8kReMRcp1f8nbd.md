@@ -1,3 +1,4 @@
+
 # 20251121-谷歌又一核弹！Nano Banana 2完美拿捏中文排版，AI生图的GPT-4o时刻
 
 > 来源：[https://aigcreative.feishu.cn/docx/QbpWdf46xoY9PAxJn4schWdjnIg](https://aigcreative.feishu.cn/docx/QbpWdf46xoY9PAxJn4schWdjnIg)
@@ -24,7 +25,7 @@ Nano Banana 2终于来了！！！
 
 但今天，这个痛点被彻底终结了。
 
-**这就是我为什么说它是****GPT-4o时刻****——它不仅能画画，它真的能写字、写中文了，而**且是写那种排版完美、逻辑通顺的中文长文。
+**这就是我为什么说它是****GPT-4o时刻**——它不仅能画画，它真的能写字、写中文了，而且是写那种排版完美、逻辑通顺的中文长文。
 
 接下来，咱们直接看实测，不整虚的。
 
@@ -108,7 +109,7 @@ Nano Banana 2终于来了！！！
 
 > 画一张中文科普图，详细解释“宇称不守恒”原理
 
-![](img/260acb04606fc1ac09c5e073a1509f1a.png)
+![](img/260acb04606fc1ac09c5e1033d9e3da8d.png)
 
 ![](img/8428b62521fc25ae3b11fc0580b55105.png)
 
@@ -259,6 +260,8 @@ Nano Banana 2终于来了！！！
 ![](img/626c2834a62e0ffa2cedf534cd26f28d.png)
 
 > A square-format digital photograph showing a fictional pharmaceutical-style product from Google Pharmacy. The box is on the left, clean and minimalist, featuring bold text with the product name "Nano Banana 2" and a witty line like "Take one 1 daily." Next to the box is a silver blister pack containing 6–10 themed pills or capsules shaped like Banana. Neutral background, soft lighting, sharp focus, modern packaging aesthetic.
+
+
 
 ![](img/5b6400b623f9903a0c16ec04604fe862.png)
 

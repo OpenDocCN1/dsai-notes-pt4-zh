@@ -1,3 +1,4 @@
+
 # 微软 A100 单卡技术实现大模型推理速度提升 10 倍
 
 > 来源：[https://agijuejin.feishu.cn/docx/Q6DFd1VVioUoOnxrsqAcKKcQn7c](https://agijuejin.feishu.cn/docx/Q6DFd1VVioUoOnxrsqAcKKcQn7c)
@@ -38,7 +39,7 @@ MInference 可以直接应用于现有 LLM，无需对预训练设置进行修�
 
 使用 MInference 1.0 ，长上下文 LLM（如 LLaMA-3-8B-1M、GLM-4-1M）在单个 A100 上的推理速度实现了 10 倍提升，并且准确度更高。
 
-## **方法介绍**
+## 方法介绍
 
 作者提出了 MInference，这个名字反映了他们希望在一台 A100 机器上实现百万（million）token 推理的雄心。
 
@@ -52,9 +53,9 @@ MInference 首先使用内核 感知 稀疏模式搜索算法为每个头部离�
 
 ![](img/f68abbfdf39265962fed81101ea3b2d1.png)
 
-例如，对于「垂直 - 斜线」模式，作者首先利用最后一个 Q 和 K 之间的注意力计算来估计垂直线和斜线的最佳指数。然后，他们利用动态稀疏编译器 PIT 和 Triton 构建垂直 - 斜线 FlashAttention 内核，加速注意力计算。对于 A 形、垂直 - 斜线和块状 - 稀疏模式，作者首先在注意力计算中使用 Q 和 K 的均值池。利用均值池和 MatMul 的交换属性，可以估算出块状 - 稀疏指数。然后，他们使用 Triton 构建块稀疏 FlashAttention 内核，加速注意力计算。有关内核的详细实现，请参阅附录 C.4 和代码。
+例如，对于「垂直 - 斜线」模式，作者首先利用最后一个 `Q` 和 `K` 之间的注意力计算来估计垂直线和斜线的最佳指数。然后，他们利用动态稀疏编译器 PIT 和 Triton 构建垂直 - 斜线 FlashAttention 内核，加速注意力计算。对于 A 形、垂直 - 斜线和块状 - 稀疏模式，作者首先在注意力计算中使用 `Q` 和 `K` 的均值池。利用均值池和 `MatMul` 的交换属性，可以估算出块状 - 稀疏指数。然后，他们使用 Triton 构建块稀疏 FlashAttention 内核，加速注意力计算。有关内核的详细实现，请参阅附录 C.4 和代码。
 
-## **在长上下文 基准 中的评估结果**
+## 在长上下文 基准 中的评估结果
 
 作者在一系列场景中测试了 MInference，包括 QA、编码、基于检索的任务、multi-hop QA、总结和数学任务。RULER 基准 包括几个复杂的 multi-hop 或 multi-needle 任务，有效地反映了 LLM 的实际上下文窗口大小。如表 1 所示，MInference 有效地保留了 LLM 的实际上下文窗口处理能力，甚至将实际上下文窗口大小略微扩展到 32K。
 
@@ -72,7 +73,7 @@ MInference 首先使用内核 感知 稀疏模式搜索算法为每个头部离�
 
 ![](img/5296379ee3ae3720096a4cedbacb7c9b.png)
 
-## **延迟和内核中的稀疏模式**
+## 延迟和内核中的稀疏模式
 
 图 3 展示了本文提出的三种注意力模式以及 FlashAttention 的微 基准 测试结果。可以看出，Vertical-Slash 是三种模式中最慢的，但在 1M 上下文窗口下，相比 FlashAttention 仍然实现了 13 倍的加速。
 

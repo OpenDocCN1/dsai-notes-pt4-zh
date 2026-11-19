@@ -1,12 +1,13 @@
+
 # 机器人 应用案例
 
 > 来源：[https://aigclena.feishu.cn/docx/XDnadTZHoomPQvx6TqYcJ9Vmnuf](https://aigclena.feishu.cn/docx/XDnadTZHoomPQvx6TqYcJ9Vmnuf)
 
 ![](img/f71020d7fd92e3df351eafd684a64966.png)
 
-[SaveTwitter.Net_CvK1bre9KuzGGxvB_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KmBqbfYITozwzmxOILOcRl0gnhh)
+[`SaveTwitter.Net_CvK1bre9KuzGGxvB_(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KmBqbfYITozwzmxOILOcRl0gnhh)
 
-# 波士顿机器人Nov1
+## 波士顿机器人Nov1
 
 波士顿动力Atlas进厂视频火了，不断电不下班
 
@@ -14,17 +15,17 @@
 
 ![](img/b7b7ce9c96a01b8c54b998233008f213.png)
 
-[X2Twitter.com_32M_p8jCYyqxfau2_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AjPUbvtTmowK8exdb4WcRK21nec)
+[`X2Twitter.com_32M_p8jCYyqxfau2_720p.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AjPUbvtTmowK8exdb4WcRK21nec)
 
 ![](img/b7425af3c8240d980a3f5ee80d489fe4.png)
 
-[Atlas Goes Hands On.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VKbGbZLukomR6mxQ1wycPqEwnKc)
+[`Atlas Goes Hands On.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VKbGbZLukomR6mxQ1wycPqEwnKc)
 
-# 眼镜查看所有信息
+## 眼镜查看所有信息
 
 ![](img/7158eb94b45882f7b18da946fc459b4b.png)
 
-[X2Twitter.com_tXVH0a20HKsBJoI3_1920p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WIoWb4TbYoHKLZxtkSQcP6sKnrF)
+[`X2Twitter.com_tXVH0a20HKsBJoI3_1920p.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WIoWb4TbYoHKLZxtkSQcP6sKnrF)
 
 From 小互 Oct 4
 
@@ -46,54 +47,54 @@ From 小互 Oct 4
 
 这种LLMs与反向人脸搜索的协同作用，使得全面自动化和综合数据提取成为可能
 
-# 机械手指
+## 机械手指
 
 ![](img/99f60e65ea5145842ef2493cd5711acf.png)
 
-[X2Twitter.com_1797486727386353664(710p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LlzQbJLd6oLPb2xBf0BcIxAMnvc)
+[`X2Twitter.com_1797486727386353664(710p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LlzQbJLd6oLPb2xBf0BcIxAMnvc)
 
-# OpenAI 人形机器人首秀
+## OpenAI 人形机器人首秀
 
 ![](img/f65f96e75860a5aad1ce7f2e24cb46d3.png)
 
-[X2Twitter.com_1767945327133462528(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F1hBbN27FoIXyZxhm2gcnHn9nxh)
+[`X2Twitter.com_1767945327133462528(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F1hBbN27FoIXyZxhm2gcnHn9nxh)
 
 ![](img/e0636429058d289b219e961ffe6b4ac4.png)
 
-[X2Twitter.com_1785721915564244992(1278p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BV76bqprkoAbLrxbrUacFrYCnSh)
+[`X2Twitter.com_1785721915564244992(1278p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BV76bqprkoAbLrxbrUacFrYCnSh)
 
 ![](img/45291031ecb68ef8b4c8bdd3fb23da55.png)
 
-[X2Twitter.com_1766003039976947712(916p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TPGJbrAQ3oywgMx8mxWcuTwsnxd)
+[`X2Twitter.com_1766003039976947712(916p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TPGJbrAQ3oywgMx8mxWcuTwsnxd)
 
 ![](img/d94deeac0581da376abac413245007da.png)
 
-[X2Twitter.com_1797870568022167552(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BDchbtw3BoRwxgxXhqtc9dOlnKd)
+[`X2Twitter.com_1797870568022167552(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BDchbtw3BoRwxgxXhqtc9dOlnKd)
 
-# openpose控制动作
+## `openpose`控制动作
 
 ![](img/0a7160f5e3b30e039d67f084fab603d0.png)
 
-[X2Twitter.com_1798074574954962944(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XUAsbZapgowEHLxgRZTcKtCBntc)
+[`X2Twitter.com_1798074574954962944(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XUAsbZapgowEHLxgRZTcKtCBntc)
 
 ![](img/73bd9be350a9a4902c28e81312244b22.png)
 
-[X2Twitter.com_1769193350048124928(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kf8Kbv0M0omTsWxa7JUcDUffnNc)
+[`X2Twitter.com_1769193350048124928(1280p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kf8Kbv0M0omTsWxa7JUcDUffnNc)
 
-# 通过照片控制表情
+## 通过照片控制表情
 
 ![](img/3ff0c94cf35ab0781747c50bfb0fb955.png)
 
-[X2Twitter.com_1824449448677928960(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FYAZbHgI9oJeZ4xKI4Fch1KqnKc)
+[`X2Twitter.com_1824449448677928960(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FYAZbHgI9oJeZ4xKI4Fch1KqnKc)
 
-# 返老还童时间机器
+## 返老还童时间机器
 
 ![](img/adf92cca687bac4c23eca0e40bc6c871.png)
 
-[X2Twitter.com_4-kBu_R2MyCvrRda_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A6gHb0u5toaclxxORIsczgaFnbd)
+[`X2Twitter.com_4-kBu_R2MyCvrRda_720p.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A6gHb0u5toaclxxORIsczgaFnbd)
 
-### 联系我们
+## 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/c9a6e441c9717fd1438874a24171667f.png)

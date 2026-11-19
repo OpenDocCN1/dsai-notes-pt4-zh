@@ -1,3 +1,4 @@
+
 # 智能家居Agent：物联网设备的统一控制与管理
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/YyRddyVl4o7XIwxlZxkcvKd4nCz](https://qqs7y1hozd1.feishu.cn/docx/YyRddyVl4o7XIwxlZxkcvKd4nCz)
@@ -12,9 +13,9 @@
 
 ## 智能家居Agent概述
 
-1.1 什么是智能家居Agent
+### 1.1 什么是智能家居Agent
 
-**智**能家居Agent是一种基于人工智能技术的智能代理系统，它能够理解用户的自然语言指令，感知家居环境状态，并自主决策控制各种物联网设备。与传统的智能家居控制系统相比，Agent具备更强的理解能力、推理能力和学习能力。
+智能家居Agent是一种基于人工智能技术的智能代理系统，它能够理解用户的自然语言指令，感知家居环境状态，并自主决策控制各种物联网设备。与传统的智能家居控制系统相比，Agent具备更强的理解能力、推理能力和学习能力。
 
 ```
 class SmartHomeAgent:
@@ -49,19 +50,19 @@ class SmartHomeAgent:
         return response
 ```
 
-**这个核心类展示了Agent的基本工作流程：理解用户意图、查询设**备状态、生成执行计划、控制设备、生成反馈。每个步骤都体现了Agent的智能化特征。
+这个核心类展示了Agent的基本工作流程：理解用户意图、查询设备状态、生成执行计划、控制设备、生成反馈。每个步骤都体现了Agent的智能化特征。
 
-## 1.2 技术架构设计
+### 1.2 技术架构设计
 
 智能家居Agent的技术架构需要考虑多个层面的设计，包括感知层、理解层、决策层和执行层。
 
 ![](img/0cb5f8e81b4fd51bdaa60b556a5f0c96.png)
 
-**这个架构图清晰地展示了Agent系统的分层设计思路。用户交互层负责多模态**输入处理，意图理解层基于大语言模型进行语义解析，上下文管理层维护对话状态和环境信息，决策引擎层生成控制策略，设备控制层执行具体操作。
+这个架构图清晰地展示了Agent系统的分层设计思路。用户交互层负责多模态输入处理，意图理解层基于大语言模型进行语义解析，上下文管理层维护对话状态和环境信息，决策引擎层生成控制策略，设备控制层执行具体操作。
 
 ## 核心功能模块实现
 
-**2.1 意图理解与参数提取**
+### 2.1 意图理解与参数提取
 
 ```
 class IntentUnderstanding:
@@ -127,7 +128,7 @@ class IntentUnderstanding:
 
 这个意图理解模块通过精心设计的提示词模板，能够准确识别用户的各种控制需求。关键在于结合上下文信息和标准化的输出格式，确保后续处理的准确性。
 
-**2.2 设备管理与协议适配**
+### 2.2 设备管理与协议适配
 
 智能家居环境中存在多种设备协议，Agent需要提供统一的设备管理接口。
 
@@ -188,137 +189,139 @@ class DeviceManager:
 
 设备管理器采用适配器模式，支持多种物联网协议的统一管理。每个协议适配器负责具体的通信实现，而设备管理器提供统一的控制接口。
 
-**2.3 智能决策引擎**
+### 2.3 智能决策引擎
 
 决策引擎是Agent的"大脑"，负责根据用户意图和环境状态生成最优的控制策略。
 
-```
+
+
+``` 
 class DecisionEngine:
-    &quot;&quot;&quot;智能决策引擎&quot;&quot;&quot;
-    
+    """智能决策引擎"""
+
     def __init__(self, llm_client, rule_engine):
         self.llm_client = llm_client
         self.rule_engine = rule_engine
         self.scene_templates = self._load_scene_templates()
-        
+
     async def generate_action_plan(self, intent, device_states, context):
-        &quot;&quot;&quot;生成执行计划&quot;&quot;&quot;
+        """生成执行计划"""
         # 1. 基于规则的快速决策
         rule_result = await self.rule_engine.evaluate(intent, device_states)
-        
-        if rule_result.confidence &gt; 0.8:
+
+        if rule_result.confidence > 0.8:
             return rule_result.action_plan
-            
+
         # 2. 基于LLM的智能决策
         llm_result = await self._llm_decision(intent, device_states, context)
-        
+
         # 3. 结果融合与优化
         final_plan = self._merge_decisions(rule_result, llm_result)
-        
+
         return final_plan
-    
+
     async def _llm_decision(self, intent, device_states, context):
-        &quot;&quot;&quot;基于大语言模型的决策&quot;&quot;&quot;
-        prompt = f&quot;&quot;&quot;
+        """基于大语言模型的决策"""
+        prompt = f"""
         作为智能家居决策引擎，请根据以下信息生成控制计划：
-        
+
         用户意图：{json.dumps(intent, ensure_ascii=False)}
-        
+
         当前设备状态：
         {self._format_device_states(device_states)}
-        
+
         环境上下文：
         {json.dumps(context, ensure_ascii=False)}
-        
+
         请生成详细的执行计划，考虑以下因素：
         1. 设备间的依赖关系
         2. 执行顺序的优化
         3. 安全性检查
         4. 用户体验优化
-        
+
         返回JSON格式：
-        {{
-            &quot;actions&quot;: [
-                {{
-                    &quot;device_id&quot;: &quot;设备ID&quot;,
-                    &quot;action&quot;: &quot;动作&quot;,
-                    &quot;parameters&quot;: {{}},
-                    &quot;delay&quot;: 0,
-                    &quot;priority&quot;: 1
-                }}
+        {
+            "actions": [
+                {
+                    "device_id": "设备ID",
+                    "action": "动作",
+                    "parameters": {},
+                    "delay": 0,
+                    "priority": 1
+                }
             ],
-            &quot;explanation&quot;: &quot;执行计划说明&quot;,
-            &quot;estimated_duration&quot;: 5
-        }}
-        &quot;&quot;&quot;
-        
+            "explanation": "执行计划说明",
+            "estimated_duration": 5
+        }
+        """
+
         response = await self.llm_client.chat_completion(
-            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}],
+            messages=[{"role": "user", "content": prompt}],
             temperature=0.3
         )
-        
+
         return json.loads(response.choices[0].message.content)
 ```
 
-**决策引擎结合了基于规则的快速决策和基于LLM的智能决策，既保证**了响应速度，又具备了处理复杂场景的能力。
+决策引擎结合了基于规则的快速决策和基于LLM的智能决策，既保证了响应速度，又具备了处理复杂场景的能力。
 
 ## 多模态交互实现
 
-3.1 语音交互处理
+### 3.1 语音交互处理
 
-语音交互是智能家居Agent的重要交互方式，需要集成语音识别、语音合成等技术。
+语音交互是智能家居`Agent`的重要交互方式，需要集成语音识别、语音合成等技术。
 
-```
+``` 
 class VoiceInteractionManager:
-    &quot;&quot;&quot;语音交互管理器&quot;&quot;&quot;
-    
+    """语音交互管理器"""
+
     def __init__(self, asr_client, tts_client):
         self.asr_client = asr_client  # 语音识别客户端
         self.tts_client = tts_client  # 语音合成客户端
         self.wake_word_detector = WakeWordDetector()
         self.audio_processor = AudioProcessor()
-        
+
     async def start_voice_interaction(self):
-        &quot;&quot;&quot;启动语音交互&quot;&quot;&quot;
+        """启动语音交互"""
         while True:
             # 1. 唤醒词检测
             if await self.wake_word_detector.detect():
-                logger.info(&quot;检测到唤醒词&quot;)
-                
+                logger.info("检测到唤醒词")
+
                 # 2. 录音并识别
                 audio_data = await self.audio_processor.record_audio(
-                    duration=5, 
+                    duration=5,
                     sample_rate=16000
                 )
-                
+
                 # 3. 语音转文字
                 text = await self.asr_client.recognize(audio_data)
-                
+
                 if text:
                     # 4. 处理用户指令
                     response = await self.agent.process_command(text)
-                    
+
                     # 5. 语音反馈
                     await self.speak_response(response)
-                    
+
             await asyncio.sleep(0.1)
-    
+
     async def speak_response(self, response_text):
-        &quot;&quot;&quot;语音反馈&quot;&quot;&quot;
+        """语音反馈"""
         # 生成语音
         audio_data = await self.tts_client.synthesize(
             text=response_text,
-            voice=&quot;xiaoxiao&quot;,  # 选择合适的语音
+            voice="xiaoxiao",  # 选择合适的语音
             speed=1.0
         )
-        
+
         # 播放语音
         await self.audio_processor.play_audio(audio_data)
 ```
 
-**语**音交互管理器实现了完整的语音交互流程，包括唤醒词检测、语音识别、指令处理和语音反馈。关键是要处理好音频的采集、处理和播放，确保交互的流畅性。
+语音交互管理器实现了完整的语音交互流程，包括唤醒词检测、语音识别、指令处理和语音反馈。关键是要处理好音频的采集、处理和播放，确保交互的流畅性。
 
-## 3.2 视觉交互与手势识别
+### 3.2 视觉交互与手势识别
 
 ![](img/e705f944eab4516074b63eb0c9738ca1.png)
 
@@ -326,140 +329,144 @@ class VoiceInteractionManager:
 
 ## 设备协议统一管理
 
-4.1 主流协议支持对比
+### 4.1 主流协议支持对比
 
-智能家居领域存在多种设备协议，Agent需要支持主流协议以实现设备的统一管理。
+智能家居领域存在多种设备协议，`Agent`需要支持主流协议以实现设备的统一管理。
 
 ![](img/842a4b85a2440fbe1b48b215d2e3da9f.png)
 
-从表格可以看出，不同协议各有优势，WiFi适合高带宽应用，Zigbee和Z-Wave适合低功耗场景，MQTT则提供了灵活的消息传递机制。Agent需要根据设备特性选择合适的协议。
+从表格可以看出，不同协议各有优势，WiFi适合高带宽应用，Zigbee和Z-Wave适合低功耗场景，MQTT则提供了灵活的消息传递机制。`Agent`需要根据设备特性选择合适的协议。
 
-**4.2 协议适配器实现**
+### 4.2 协议适配器实现
 
-```
+``` 
 from abc import ABC, abstractmethod
- 
+
 class ProtocolAdapter(ABC):
-    &quot;&quot;&quot;协议适配器基类&quot;&quot;&quot;
-    
+    """协议适配器基类"""
+
     @abstractmethod
     async def discover_devices(self):
-        &quot;&quot;&quot;设备发现&quot;&quot;&quot;
+        """设备发现"""
         pass
-    
+
     @abstractmethod
     async def control_device(self, device_id, action, parameters):
-        &quot;&quot;&quot;设备控制&quot;&quot;&quot;
+        """设备控制"""
         pass
-    
+
     @abstractmethod
     async def get_device_state(self, device_id):
-        &quot;&quot;&quot;获取设备状态&quot;&quot;&quot;
+        """获取设备状态"""
         pass
- 
+
 class ZigbeeAdapter(ProtocolAdapter):
-    &quot;&quot;&quot;Zigbee协议适配器&quot;&quot;&quot;
-    
-    def __init__(self, coordinator_port=&quot;/dev/ttyUSB0&quot;):
+    """Zigbee协议适配器"""
+
+    def __init__(self, coordinator_port="/dev/ttyUSB0"):
         self.coordinator_port = coordinator_port
         self.network = None
-        
+
     async def initialize(self):
-        &quot;&quot;&quot;初始化Zigbee网络&quot;&quot;&quot;
+        """初始化Zigbee网络"""
         from zigpy import application
-        
+
         self.network = await application.ControllerApplication.new(
             config={
-                &quot;device&quot;: {&quot;path&quot;: self.coordinator_port},
-                &quot;database_path&quot;: &quot;zigbee.db&quot;
+                "device": {"path": self.coordinator_port},
+                "database_path": "zigbee.db"
             }
         )
         await self.network.startup()
-        
+
     async def discover_devices(self):
-        &quot;&quot;&quot;发现Zigbee设备&quot;&quot;&quot;
+        """发现Zigbee设备"""
         devices = []
-        
+
         for ieee, device in self.network.devices.items():
             if device.status == device.Status.ENDPOINTS_INIT:
                 device_info = {
-                    &quot;id&quot;: str(ieee),
-                    &quot;name&quot;: device.model or f&quot;Zigbee_{ieee}&quot;,
-                    &quot;type&quot;: self._determine_device_type(device),
-                    &quot;manufacturer&quot;: device.manufacturer,
-                    &quot;model&quot;: device.model,
-                    &quot;capabilities&quot;: self._extract_capabilities(device)
+                    "id": str(ieee),
+                    "name": device.model or f"Zigbee_{ieee}",
+                    "type": self._determine_device_type(device),
+                    "manufacturer": device.manufacturer,
+                    "model": device.model,
+                    "capabilities": self._extract_capabilities(device)
                 }
                 devices.append(device_info)
-                
+
         return devices
-    
+
     async def control_device(self, device_id, action, parameters):
-        &quot;&quot;&quot;控制Zigbee设备&quot;&quot;&quot;
+        """控制Zigbee设备"""
         ieee = int(device_id, 16)
         device = self.network.devices.get(ieee)
-        
+
         if not device:
-            raise DeviceNotFoundError(f&quot;Zigbee设备不存在: {device_id}&quot;)
-            
+            raise DeviceNotFoundError(f"Zigbee设备不存在: {device_id}")
+
         # 根据设备类型和动作执行控制
-        if action == &quot;turn_on&quot;:
+        if action == "turn_on":
             await device.endpoints[1].on_off.on()
-        elif action == &quot;turn_off&quot;:
+        elif action == "turn_off":
             await device.endpoints[1].on_off.off()
-        elif action == &quot;set_brightness&quot;:
-            level = parameters.get(&quot;brightness&quot;, 100)
+        elif action == "set_brightness":
+            level = parameters.get("brightness", 100)
             await device.endpoints[1].level.move_to_level(level)
-            
-        return ControlResult(success=True, message=&quot;控制成功&quot;)
+
+        return ControlResult(success=True, message="控制成功")
 ```
 
-协议适配器采用统一的接口设计，每个具体的适配器实现特定协议的通信逻辑。这种设计使得Agent能够轻松支持新的设备协议，只需要实现对应的适配器即可。
+协议适配器采用统一的接口设计，每个具体的适配器实现特定协议的通信逻辑。这种设计使得`Agent`能够轻松支持新的设备协议，只需要实现对应的适配器即可。
 
 ## 场景化智能控制
 
-5.1 场景定义与管理
+### 5.1 场景定义与管理
 
-场景化控制是智能家居的重要特性，Agent需要支持灵活的场景定义和智能切换。
+场景化控制是智能家居的重要特性，`Agent`需要支持灵活的场景定义和智能切换。
+
+
+
+## 5.1 场景管理器
 
 ```
 class SceneManager:
-    &quot;&quot;&quot;场景管理器&quot;&quot;&quot;
-    
+    """场景管理器"""
+
     def __init__(self, device_manager):
         self.device_manager = device_manager
         self.scenes = {}
         self.current_scene = None
-        
+
     def define_scene(self, scene_name, scene_config):
-        &quot;&quot;&quot;定义场景&quot;&quot;&quot;
+        """定义场景"""
         scene = Scene(
             name=scene_name,
             config=scene_config,
             device_manager=self.device_manager
         )
         self.scenes[scene_name] = scene
-        
+
     async def activate_scene(self, scene_name, context=None):
-        &quot;&quot;&quot;激活场景&quot;&quot;&quot;
+        """激活场景"""
         if scene_name not in self.scenes:
-            raise SceneNotFoundError(f&quot;场景不存在: {scene_name}&quot;)
-            
+            raise SceneNotFoundError(f"场景不存在: {scene_name}")
+
         scene = self.scenes[scene_name]
-        
+
         # 检查场景激活条件
         if not await scene.check_conditions(context):
             return ActivationResult(
-                success=False, 
-                message=&quot;场景激活条件不满足&quot;
+                success=False,
+                message="场景激活条件不满足"
             )
-            
+
         # 执行场景动作
         result = await scene.execute()
-        
+
         if result.success:
             self.current_scene = scene_name
-            
+
         return result
 ```
 
@@ -471,37 +478,37 @@ class SceneManager:
 
 ```
 class SceneRecommendationEngine:
-    &quot;&quot;&quot;场景推荐引擎&quot;&quot;&quot;
-    
+    """场景推荐引擎"""
+
     def __init__(self, user_behavior_analyzer, context_manager):
         self.behavior_analyzer = user_behavior_analyzer
         self.context_manager = context_manager
         self.recommendation_model = self._load_recommendation_model()
-        
+
     async def recommend_scenes(self, current_context):
-        &quot;&quot;&quot;推荐场景&quot;&quot;&quot;
+        """推荐场景"""
         # 1. 分析用户行为模式
         behavior_patterns = await self.behavior_analyzer.analyze_patterns()
-        
+
         # 2. 获取环境上下文
         context_features = self.context_manager.extract_features(current_context)
-        
+
         # 3. 生成推荐
         recommendations = await self._generate_recommendations(
             behavior_patterns, context_features
         )
-        
+
         # 4. 排序和过滤
         filtered_recommendations = self._filter_and_rank(recommendations)
-        
+
         return filtered_recommendations
 ```
 
 场景推荐引擎结合了多种推荐算法，能够根据用户习惯和当前环境智能推荐最合适的场景，提升用户体验。
 
-## 安全性与隐私保护
+## 6 安全性与隐私保护
 
-6.1 安全架构设计
+### 6.1 安全架构设计
 
 智能家居Agent处理敏感的家庭数据，必须建立完善的安全防护体系。
 
@@ -509,103 +516,103 @@ class SceneRecommendationEngine:
 
 安全架构采用分层防护的设计思路，每一层都有特定的安全职责，形成完整的安全防护链。
 
-## 6.2 数据加密与隐私保护
+### 6.2 数据加密与隐私保护
 
 ```
 class SecurityManager:
-    &quot;&quot;&quot;安全管理器&quot;&quot;&quot;
-    
+    """安全管理器"""
+
     def __init__(self, config):
         self.encryption_key = self._load_encryption_key()
         self.jwt_secret = config.jwt_secret
         self.privacy_config = config.privacy_config
-        
+
     def encrypt_sensitive_data(self, data):
-        &quot;&quot;&quot;加密敏感数据&quot;&quot;&quot;
+        """加密敏感数据"""
         from cryptography.fernet import Fernet
-        
+
         cipher_suite = Fernet(self.encryption_key)
         encrypted_data = cipher_suite.encrypt(json.dumps(data).encode())
-        
+
         return encrypted_data
-    
+
     def decrypt_sensitive_data(self, encrypted_data):
-        &quot;&quot;&quot;解密敏感数据&quot;&quot;&quot;
+        """解密敏感数据"""
         from cryptography.fernet import Fernet
-        
+
         cipher_suite = Fernet(self.encryption_key)
         decrypted_data = cipher_suite.decrypt(encrypted_data)
-        
+
         return json.loads(decrypted_data.decode())
-    
+
     def generate_access_token(self, user_id, permissions):
-        &quot;&quot;&quot;生成访问令牌&quot;&quot;&quot;
+        """生成访问令牌"""
         import jwt
         from datetime import datetime, timedelta
-        
+
         payload = {
-            &#x27;user_id&#x27;: user_id,
-            &#x27;permissions&#x27;: permissions,
-            &#x27;exp&#x27;: datetime.utcnow() + timedelta(hours=24),
-            &#x27;iat&#x27;: datetime.utcnow()
+            'user_id': user_id,
+            'permissions': permissions,
+            'exp': datetime.utcnow() + timedelta(hours=24),
+            'iat': datetime.utcnow()
         }
-        
-        token = jwt.encode(payload, self.jwt_secret, algorithm=&#x27;HS256&#x27;)
+
+        token = jwt.encode(payload, self.jwt_secret, algorithm='HS256')
         return token
 ```
 
 安全管理器实现了数据加密、令牌管理和隐私保护等核心安全功能，确保用户数据的安全性和隐私性。
 
-## 性能优化与监控
+## 7 性能优化与监控
 
-7.1 系统性能监控
+### 7.1 系统性能监控
 
 ```
 class PerformanceMonitor:
-    &quot;&quot;&quot;性能监控器&quot;&quot;&quot;
-    
+    """性能监控器"""
+
     def __init__(self):
         self.metrics_collector = MetricsCollector()
         self.alert_manager = AlertManager()
-        
+
     async def start_monitoring(self):
-        &quot;&quot;&quot;启动性能监控&quot;&quot;&quot;
+        """启动性能监控"""
         while True:
             # 收集系统指标
             metrics = await self.collect_system_metrics()
-            
+
             # 检查性能阈值
             alerts = self.check_performance_thresholds(metrics)
-            
+
             # 发送告警
             if alerts:
                 await self.alert_manager.send_alerts(alerts)
-            
+
             # 存储监控数据
             await self.store_metrics(metrics)
-            
+
             await asyncio.sleep(30)  # 30秒监控间隔
-    
+
     async def collect_system_metrics(self):
-        &quot;&quot;&quot;收集系统指标&quot;&quot;&quot;
+        """收集系统指标"""
         import psutil
-        
+
         metrics = {
-            &#x27;timestamp&#x27;: time.time(),
-            &#x27;cpu_usage&#x27;: psutil.cpu_percent(),
-            &#x27;memory_usage&#x27;: psutil.virtual_memory().percent,
-            &#x27;disk_usage&#x27;: psutil.disk_usage(&#x27;/&#x27;).percent,
-            &#x27;network_io&#x27;: psutil.net_io_counters()._asdict(),
-            &#x27;process_count&#x27;: len(psutil.pids()),
-            &#x27;agent_metrics&#x27;: await self.collect_agent_metrics()
+            'timestamp': time.time(),
+            'cpu_usage': psutil.cpu_percent(),
+            'memory_usage': psutil.virtual_memory().percent,
+            'disk_usage': psutil.disk_usage('/').percent,
+            'network_io': psutil.net_io_counters()._asdict(),
+            'process_count': len(psutil.pids()),
+            'agent_metrics': await self.collect_agent_metrics()
         }
-        
+
         return metrics
 ```
 
 性能监控器持续跟踪系统运行状态，及时发现性能瓶颈和异常情况，为系统优化提供数据支持。
 
-7.2 缓存与优化策略
+### 7.2 缓存与优化策略
 
 ![](img/c1c65172bb470cf69a7fbf9ad0e4a749.png)
 
@@ -613,23 +620,23 @@ class PerformanceMonitor:
 
 ```
 class CacheManager:
-    &quot;&quot;&quot;缓存管理器&quot;&quot;&quot;
-    
+    """缓存管理器"""
+
     def __init__(self, redis_client):
         self.redis_client = redis_client
         self.local_cache = {}
         self.cache_config = {
-            &#x27;device_states&#x27;: {&#x27;ttl&#x27;: 30, &#x27;type&#x27;: &#x27;redis&#x27;},
-            &#x27;user_preferences&#x27;: {&#x27;ttl&#x27;: 3600, &#x27;type&#x27;: &#x27;local&#x27;},
-            &#x27;scene_configs&#x27;: {&#x27;ttl&#x27;: 1800, &#x27;type&#x27;: &#x27;redis&#x27;},
-            &#x27;intent_results&#x27;: {&#x27;ttl&#x27;: 300, &#x27;type&#x27;: &#x27;local&#x27;}
+            'device_states': {'ttl': 30, 'type': 'redis'},
+            'user_preferences': {'ttl': 3600, 'type': 'local'},
+            'scene_configs': {'ttl': 1800, 'type': 'redis'},
+            'intent_results': {'ttl': 300, 'type': 'local'}
         }
-    
+
     async def get_cached_data(self, cache_key, cache_type):
-        &quot;&quot;&quot;获取缓存数据&quot;&quot;&quot;
+        """获取缓存数据"""
         config = self.cache_config.get(cache_type, {})
-        
-        if config.get(&#x27;type&#x27;) == &#x27;redis&#x27;:
+
+        if config.get('type') == 'redis':
             data = await self.redis_client.get(cache_key)
             if data:
                 return json.loads(data)
@@ -637,70 +644,72 @@ class CacheManager:
             # 本地缓存
             cache_entry = self.local_cache.get(cache_key)
             if cache_entry and not self._is_expired(cache_entry):
-                return cache_entry[&#x27;data&#x27;]
-        
+                return cache_entry['data']
+
         return None
-    
+
     async def set_cached_data(self, cache_key, data, cache_type):
-        &quot;&quot;&quot;设置缓存数据&quot;&quot;&quot;
+        """设置缓存数据"""
         config = self.cache_config.get(cache_type, {})
-        ttl = config.get(&#x27;ttl&#x27;, 300)
-        
-        if config.get(&#x27;type&#x27;) == &#x27;redis&#x27;:
+        ttl = config.get('ttl', 300)
+
+        if config.get('type') == 'redis':
             await self.redis_client.setex(
                 cache_key, ttl, json.dumps(data)
             )
         else:
             # 本地缓存
             self.local_cache[cache_key] = {
-                &#x27;data&#x27;: data,
-                &#x27;timestamp&#x27;: time.time(),
-                &#x27;ttl&#x27;: ttl
+                'data': data,
+                'timestamp': time.time(),
+                'ttl': ttl
             }
 ```
 
 缓存管理器采用多级缓存策略，根据数据特性选择合适的缓存方式，有效提升系统响应速度。
 
-## 实际部署与运维
+## 8 实际部署与运维
 
-8.1 容器化部署
+### 8.1 容器化部署
 
 ```
 # Dockerfile
 FROM python:3.9-slim
- 
+
 WORKDIR /app
- 
+
 # 安装系统依赖
-RUN apt-get update &amp;&amp; apt-get install -y \
+RUN apt-get update && apt-get install -y \
     gcc \
     libasound2-dev \
     portaudio19-dev \
-    &amp;&amp; rm -rf /var/lib/apt/lists/*
- 
+    && rm -rf /var/lib/apt/lists/*
+
 # 复制依赖文件
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
- 
+
 # 复制应用代码
 COPY . .
- 
+
 # 暴露端口
 EXPOSE 8000
- 
+
 # 启动命令
-CMD [&quot;python&quot;, &quot;main.py&quot;]
+CMD ["python", "main.py"]
 ```
+
+
 
 ```
 # docker-compose.yml
-version: &#x27;3.8&#x27;
- 
+version: '3.8'
+
 services:
   smart-home-agent:
     build: .
     ports:
-      - &quot;8000:8000&quot;
+      - "8000:8000"
     environment:
       - REDIS_URL=redis://redis:6379
       - MQTT_BROKER=mqtt://mqtt:1883
@@ -713,25 +722,25 @@ services:
       - mqtt
       - postgres
     restart: unless-stopped
- 
+
   redis:
     image: redis:7-alpine
     ports:
-      - &quot;6379:6379&quot;
+      - "6379:6379"
     volumes:
       - redis_data:/data
     restart: unless-stopped
- 
+
   mqtt:
     image: eclipse-mosquitto:2
     ports:
-      - &quot;1883:1883&quot;
-      - &quot;9001:9001&quot;
+      - "1883:1883"
+      - "9001:9001"
     volumes:
       - ./mqtt/config:/mosquitto/config
       - mqtt_data:/mosquitto/data
     restart: unless-stopped
- 
+
   postgres:
     image: postgres:15
     environment:
@@ -741,7 +750,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
- 
+
 volumes:
   redis_data:
   mqtt_data:
@@ -754,20 +763,20 @@ volumes:
 
 ```
 class LoggingManager:
-    &quot;&quot;&quot;日志管理器&quot;&quot;&quot;
+    """日志管理器"""
     
     def __init__(self, config):
         self.config = config
         self.setup_logging()
         
     def setup_logging(self):
-        &quot;&quot;&quot;配置日志系统&quot;&quot;&quot;
+        """配置日志系统"""
         import logging
         from logging.handlers import RotatingFileHandler
         
         # 创建日志格式
         formatter = logging.Formatter(
-            &#x27;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#x27;
+            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
         )
         
         # 配置根日志器
@@ -776,7 +785,7 @@ class LoggingManager:
         
         # 文件处理器
         file_handler = RotatingFileHandler(
-            &#x27;logs/agent.log&#x27;,
+            'logs/agent.log',
             maxBytes=10*1024*1024,  # 10MB
             backupCount=5
         )
@@ -793,11 +802,11 @@ class LoggingManager:
 
 ## 发展趋势与技术展望
 
-9.1 技术发展趋势
+### 9.1 技术发展趋势
 
 ![](img/3218bcf16d69e3202093875999be1d52.png)
 
-9.2 未来技术方向
+### 9.2 未来技术方向
 
 智能家居Agent的未来发展将聚焦于以下几个关键方向：
 
@@ -811,7 +820,7 @@ class LoggingManager:
 
 ## 最佳实践与经验总结
 
-10.1 开发最佳实践
+### 10.1 开发最佳实践
 
 基于我在智能家居Agent开发中的实际经验，总结出以下最佳实践：
 
@@ -823,7 +832,7 @@ class LoggingManager:
 
 **错误处理：**建立完善的错误处理机制，对各种异常情况都要有相应的处理策略。用户不应该因为单个设备的故障而影响整个系统的使用。
 
-## 10.2 性能优化经验
+### 10.2 性能优化经验
 
 ![](img/2381242e3f83170176552f53bf145ae1.png)
 
@@ -838,8 +847,6 @@ class LoggingManager:
 > 智能家居Agent的发展还面临着诸多挑战，包括设备协议的标准化、隐私安全的保障、跨平台的互操作性等。但我相信，随着技术的不断进步和行业的共同努力，这些问题都将得到逐步解决。特别是大语言模型技术的快速发展，为智能家居Agent带来了前所未有的理解和推理能力，使得真正的"智能"家居成为可能。
 
 > 从技术架构的角度来看，模块化、可扩展的设计思路是构建成功Agent系统的关键。我们需要在系统的灵活性和性能之间找到平衡点，既要支持快速的功能迭代，又要保证系统的稳定性和可靠性。缓存策略、异步处理、错误恢复等技术细节，虽然看似微小，但往往决定了系统的整体表现。
-
->
 
 展望未来，我认为智能家居Agent将朝着更加个性化、主动化的方向发展。系统不仅能够响应用户的明确指令，还能够基于用户的行为模式和环境变化主动提供服务。边缘计算的普及将使得Agent具备更强的实时处理能力，而隐私计算技术的应用将在保护用户隐私的前提下实现更好的个性化服务。
 

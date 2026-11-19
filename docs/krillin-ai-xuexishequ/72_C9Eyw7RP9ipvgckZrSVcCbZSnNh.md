@@ -1,4 +1,5 @@
-# Dashboard  仪表盘
+
+# Dashboard 仪表盘
 
 > 来源：[https://kcn9ut4m7icc.feishu.cn/docx/MKDCd4XeMo4ge3xs6C6cA6ytnQd](https://kcn9ut4m7icc.feishu.cn/docx/MKDCd4XeMo4ge3xs6C6cA6ytnQd)
 
@@ -10,9 +11,7 @@ From the dashboard you can access billing portal, setup usage based pricing and 
 
 从仪表板您可以访问计费门户、设置基于使用量的定价并管理您的团队。根据您使用的是免费版、专业版还是企业版，您将看到不同的部分。
 
-##
-
-## Pro  光标 - 使用
+## Pro 光标 - 使用
 
 From here you can access billing portal, setup usage based pricing and see how many requests you have left.
 
@@ -20,27 +19,21 @@ From here you can access billing portal, setup usage based pricing and see how m
 
 ![](img/7001c6d7760e5d8f3fa6ed121669f230.png)
 
-##
-
-## Business  商业
+## Business 商业
 
 Business will have a section for teams.
 
 业务将有一个团队板块。
 
-###
+### Team 团队
 
-### Team  团队
-
-Read more about how[ to man](https://docs.cursor.com/account/teams/members)age teams in members
+Read more about how to [manage teams](https://docs.cursor.com/account/teams/members) in members
 
 了解更多关于如何管理团队成员的方法
 
 ![](img/963d5efd058db71902aae9bb1f85e279.png)
 
-###
-
-### Metrics  指标
+### Metrics 指标
 
 Read more in [team analytics](https://docs.cursor.com/account/teams/analytics). This is only available for teams
 
@@ -48,9 +41,7 @@ Read more in [team analytics](https://docs.cursor.com/account/teams/analytics). 
 
 ![](img/a0c09f94da439de31a07cae3de68ecc3.png)
 
-###
-
-### Usage based pricing  基于使用量定价
+### Usage based pricing 基于使用量定价
 
 This is where you can toggle usage based pricing and set spending limits. Read more about usage based pricing and how to configure it
 

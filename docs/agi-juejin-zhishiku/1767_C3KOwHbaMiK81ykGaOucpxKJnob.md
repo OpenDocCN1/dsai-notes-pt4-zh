@@ -1,156 +1,137 @@
+
 # 2. Sora 提示词案例
 
 > 来源：[https://agijuejin.feishu.cn/docx/VLAMdNicTo3uUZxoXamcpVlhn2c](https://agijuejin.feishu.cn/docx/VLAMdNicTo3uUZxoXamcpVlhn2c)
 
-> 本页面内容由 LangGPT 社区成员     编辑，感谢他们的贡献！
+> 本页面内容由 LangGPT 社区成员 编辑，感谢他们的贡献！
 
 ## 东京街头都市丽人-60s
 
 Prompt:
-
 > A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.
 
 ## 月夜之狼-60s
 
 Prompt:
-
 > A beautiful silhouette animation shows a wolf howling at the moon, feeling lonely, until it finds its pack.
 
 ## 奔跑的长毛象-10s
 
 Prompt
-
 > Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.
 
 ## 行驶的火车-9s
 
 Prompt:
-
 > The Glenfinnan Viaduct is a historic railway bridge in Scotland, UK, that crosses over the west highland line between the towns of Mallaig and Fort William. It is a stunning sight as a steam train leaves the bridge, traveling over the arch-covered viaduct. The landscape is dotted with lush greenery and rocky mountains, creating a picturesque backdrop for the train journey. The sky is blue and the sun is shining, making for a beautiful day to explore this majestic spot.
 
 ## 变色龙特写-40s
 
 Prompt:
-
 > This close-up shot of a chameleon showcases its striking color changing capabilities. The background is blurred, drawing attention to the animal’s striking appearance.
 
 ## 可爱柯基-20s
 
 Prompt:
-
 > A corgi vlogging itself in tropical Maui.
 
 ## 金毛幼犬-20s
 
 Prompt:
-
 > A litter of golden retriever puppies playing in the snow. Their heads pop out of the snow, covered in.
 
 ## 红头盔太空人漫步-17s
 
 Prompt：
-
 > A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style, shot on 35mm film, vivid colors.
 
 ## 无人机视角海浪灯塔-9s
 
 prompt：
-
 > Drone view of waves crashing against the rugged cliffs along Big Sur’s garay point beach. The crashing blue waters create white-tipped waves, while the golden light of the setting sun illuminates the rocky shore. A small island with a lighthouse sits in the distance, and green shrubbery covers the cliff’s edge. The steep drop from the road down to the beach is a dramatic feat, with the cliff’s edges jutting out over the sea. This is a view that captures the raw beauty of the coast and the rugged landscape of the Pacific Coast Highway.
 
 ## 3D蜡烛灯光可爱怪-9s
 
 prompt：
-
 > Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.
 
 ## 纸艺海底珊瑚世界-20s
 
 prompt：
-
 > A gorgeously rendered papercraft world of a coral reef, rife with colorful fish and sea creatures.
 
 ## 维多利亚冠鸽的特写镜头-40s
 
 Prompt:
-
 > This close-up shot of a Victoria crowned pigeon showcases its striking blue plumage and red chest. Its crest is made of delicate, lacy feathers, while its eye is a striking red color. The bird’s head is tilted slightly to the side, giving the impression of it looking regal and majestic. The background is blurred, drawing attention to the bird’s striking appearance.
 
 ## 咖啡杯内海盗船激战特写-15s
 
 Prompt:
-
 > Photorealistic closeup video of two pirate ships battling each other as they sail inside a cup of coffee.
 
 ## 云顶上的读书男人-25s
 
 Prompt:
-
 > A young man at his 20s is sitting on a piece of cloud in the sky, reading a book.
 
 ## 淘金热期间加州的历史镜头-25s
 
 Prompt:
-
 > Historical footage of California during the gold rush.
 
 ## 玻璃球内小人花园玩沙子-10s
 
 Prompt:
-
 > A close up view of a glass sphere that has a zen garden within it. There is a small dwarf in the sphere who is raking the zen garden and creating patterns in the sand.
 
 ## 女性眨眼极端特写-15s
 
 Prompt:
-
 > Extreme close up of a 24 year old woman’s eye blinking, standing in Marrakech during magic hour, cinematic film shot in 70mm, depth of field, vivid colors, cinematic
 
 ## 卡通袋鼠跳迪斯科舞-10s
 
 Prompt:
-
 > A cartoon kangaroo disco dances.
 
 ## 手机拍摄2056的某地人们-20s
 
 Prompt:
-
 > A beautiful homemade video showing the people of Lagos, Nigeria in the year 2056. Shot with a mobile phone camera.
 
 ## 培养皿竹林熊猫-10s
 
 Prompt:
-
 > A petri dish with a bamboo forest growing within it that has tiny red pandas running around.
 
 ## 老式电视节目什锦墙-20s
 
 Prompt:
-
 > The camera rotates around a large stack of vintage televisions all showing different programs — 1950s sci-fi movies, horror movies, news, static, a 1970s sitcom, etc, set inside a large New York museum gallery.
 
 ## 林中松鼠兔-10s
 
 Prompt:
-
 > 3D animation of a small, round, fluffy creature with big, expressive eyes explores a vibrant, enchanted forest. The creature, a whimsical blend of a rabbit and a squirrel, has soft blue fur and a bushy, striped tail. It hops along a sparkling stream, its eyes wide with wonder. The forest is alive with magical elements: flowers that glow and change colors, trees with leaves in shades of purple and silver, and small floating lights that resemble fireflies. The creature stops to interact playfully with a group of tiny, fairy-like beings dancing around a mushroom ring. The creature looks up in awe at a large, glowing tree that seems to be the heart of the forest.
 
 ## 飞驰suv-20s
 
 Prompt:
-
 > The camera follows behind a white vintage SUV with a black roof rack as it speeds up a steep dirt road surrounded by pine trees on a steep mountain slope, dust kicks up from it’s tires, the sunlight shines on the SUV as it speeds along the dirt road, casting a warm glow over the scene. The dirt road curves gently into the distance, with no other cars or vehicles in sight. The trees on either side of the road are redwoods, with patches of greenery scattered throughout. The car is seen from the rear following the curve with ease, making it seem as if it is on a rugged drive through the rugged terrain. The dirt road itself is surrounded by steep hills and mountains, with a clear blue sky above with wispy clouds.
 
 ## 火车窗外-9s
 
 Prompt:
-
 > Reflections in the window of a train traveling through the Tokyo suburbs.
 
 ## 无人机海岸教堂-20s
 
 Prompt:
+
+
+
+# Sora 视频生成提示词示例与已知局限
 
 > A drone camera circles around a beautiful historic church built on a rocky outcropping along the Amalfi Coast, the view showcases historic and magnificent architectural details and tiered pathways and patios, waves are seen crashing against the rocks below as the view overlooks the horizon of the coastal waters and hilly landscapes of the Amalfi Coast Italy, several distant people are seen walking and enjoying vistas on patios of the dramatic ocean views, the warm glow of the afternoon sun creates a magical and romantic feeling to the scene, the view is stunning captured with beautiful photography.Prompt: A drone camera circles around a beautiful historic church built on a rocky outcropping along the Amalfi Coast, the view showcases historic and magnificent architectural details and tiered pathways and patios, waves are seen crashing against the rocks below as the view overlooks the horizon of the coastal waters and hilly landscapes of the Amalfi Coast Italy, several distant people are seen walking and enjoying vistas on patios of the dramatic ocean views, the warm glow of the afternoon sun creates a magical and romantic feeling to the scene, the view is stunning captured with beautiful photography.
 
@@ -232,8 +213,6 @@ Prompt:
 
 > A litter of golden retriever puppies playing in the snow. Their heads pop out of the snow, covered in.
 
----
-
 The current model has weaknesses. It may struggle with accurately simulating the physics of a complex scene, and may not understand specific instances of cause and effect. For example, a person might take a bite out of a cookie, but afterward, the cookie may not have a bite mark.
 
 The model may also confuse spatial details of a prompt, for example, mixing up left and right, and may struggle with precise descriptions of events that take place over time, like following a specific camera trajectory.
@@ -310,6 +289,8 @@ Prompt:
 
 Prompt:
 
+
+
 > A white and orange tabby cat is seen happily darting through a dense garden, as if chasing something. Its eyes are wide and happy as it jogs forward, scanning the branches, flowers, and leaves as it walks. The path is narrow as it makes its way between all the plants. the scene is captured from a ground-level angle, following the cat closely, giving a low and intimate perspective. The image is cinematic with warm tones and a grainy texture. The scattered daylight between the leaves and plants above creates a warm contrast, accentuating the cat’s orange fur. The shot is clear and sharp, with a shallow depth of field.
 
 ## 圣托里尼岛的鸟瞰图-9s
@@ -344,6 +325,6 @@ Prompt:
 
 ## 以下内容挖部分由投稿，截止2月21日中午还未在Sora官网呈现
 
-2月21日下午最新sora狗片，由OpenAI Sora工作人员发布： 1、“一群萨摩耶小狗学习成为厨师的电影预告片”2、“一群爱冒险的小狗探索天空废墟的电影预告片”
+2月21日下午最新sora狗片，由OpenAI Sora工作人员发布：1、“一群萨摩耶小狗学习成为厨师的电影预告片”2、“一群爱冒险的小狗探索天空废墟的电影预告片”
 
 “一只穿着黑色连帽运动衫的电脑黑客拉布拉多猎犬坐在电脑前，当他快速打字时，屏幕的眩光照射在狗的脸上。

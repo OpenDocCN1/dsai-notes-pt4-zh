@@ -1,8 +1,9 @@
-# 免费docker容器部署openlsit
+
+# 免费`docker`容器部署`openlsit`
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/M8Kld9G6DoFpNzxd0vAc7DPtncb](https://xodnytdcaw.feishu.cn/docx/M8Kld9G6DoFpNzxd0vAc7DPtncb)
 
-一个免费的docker容器部署平台，可以部署AI客户端，工作流，alist等项目，下面演示下自定义部署openlsit的方法
+一个免费的`docker`容器部署平台，可以部署AI客户端，工作流，`alist`等项目，下面演示下自定义部署`openlsit`的方法
 
 参考视频：https://www.bilibili.com/video/BV1zKVtzFEQH/?spm_id_from=333.1391.0.0&vd_source=206031f494850e57fd6c92ace02b1bed
 
@@ -20,7 +21,7 @@ https://ap-northeast-1.run.claw.cloud/signin
 
 点击“App Launchpad”-Create App
 
-> Docker方式安装openlist命令
+> `Docker`方式安装`openlist`命令
 
 > 命令来源：https://doc.oplist.org/guide/installation/docker
 
@@ -28,6 +29,6 @@ https://ap-northeast-1.run.claw.cloud/signin
 docker run -d --restart=unless-stopped -v /etc/openlist:/opt/openlist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name=&quot;openlist&quot; openlistteam/openlist:latest
 ```
 
-配置参数
+## 配置参数
 
 ![](img/3592199cd5155d8f0a411a21d2d0ff0c.png)

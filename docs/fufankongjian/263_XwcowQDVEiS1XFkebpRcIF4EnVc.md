@@ -1,11 +1,11 @@
+
 # 项目3-内容选题生成器
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/J8bYdJojOonFNNxqzUgc1YNunzf](https://kq4b3vgg5b.feishu.cn/docx/J8bYdJojOonFNNxqzUgc1YNunzf)
 
-# 项目 3：Agent Teams 内容选题生成器
+## 项目 3：Agent Teams 内容选题生成器
 
 > 热度 × 需求双维度交叉筛选，15 分钟产出 5 个高潜内容选题。
-
 > 需要：Claude Code Pro/Max 版 + Agent Teams 已开启
 
 ---
@@ -15,7 +15,7 @@
 在终端执行：
 
 ```
-mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
+mkdir -p content-topics/.claude/agents docs && cd content-topics
 ```
 
 ---
@@ -34,7 +34,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 
 ## 工作规则
 1. 选题必须基于真实的热点数据和用户需求，不能凭空编造
-2. 每个选题必须有&quot;为什么现在做&quot;的理由
+2. 每个选题必须有"为什么现在做"的理由
 3. 优先推荐有差异化空间的选题（不推荐已经被做烂的话题）
 4. 考虑国内平台生态（B站、公众号、小红书、知乎）
 
@@ -44,7 +44,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 - docs/topics.md — 最终选题推荐（Lead 汇总）
 
 ## Agent Teams 分工原则
-- Lead 负责交叉比对两份报告，找出&quot;既有热度又有需求&quot;的交集
+- Lead 负责交叉比对两份报告，找出"既有热度又有需求"的交集
 - Teammate 各自独立调研，确保视角多样性
 ```
 
@@ -53,7 +53,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 ## Step 3：创建 Teammate 1 — 热点猎人
 
 ```
-帮我创建 .claude/agents/trend-hunter.md 文件，内容如下：
+帮我创建 `.claude/agents/trend-hunter.md` 文件，内容如下：
 
 # 热点猎人（Teammate 1）
 
@@ -69,7 +69,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 
 ## 工作方法
 - 使用 WebSearch 搜索最新的行业动态
-- 搜索关键词组合：&quot;{领域} 最新&quot;&quot;2026 {领域} 趋势&quot;&quot;{领域} 热点&quot;
+- 搜索关键词组合："{领域} 最新""2026 {领域} 趋势""{领域} 热点"
 - 关注 Twitter/X、Reddit、Hacker News 上的讨论
 - 关注 B 站、知乎、微信公众号的热门内容
 
@@ -91,7 +91,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 ## Step 4：创建 Teammate 2 — 需求侦探
 
 ```
-帮我创建 .claude/agents/demand-detective.md 文件，内容如下：
+帮我创建 `.claude/agents/demand-detective.md` 文件，内容如下：
 
 # 需求侦探（Teammate 2）
 
@@ -103,13 +103,13 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 2. 内容缺口（用户想看但现有内容供给不足的话题）
 3. 痛点排序（哪些问题最让用户头疼）
 4. 已有热门内容分析（播放量/阅读量 top 的内容都在讲什么）
-5. 评论区需求挖掘（&quot;求教程&quot;&quot;求详解&quot;类话题）
+5. 评论区需求挖掘（"求教程""求详解"类话题）
 
 ## 工作方法
 - 使用 WebSearch 搜索用户讨论、社区提问、评论区反馈
-- 搜索 &quot;{领域} 教程 求&quot;&quot;如何 {领域}&quot;&quot;{领域} 入门 困难&quot;
+- 搜索 "{领域} 教程 求""如何 {领域}""{领域} 入门 困难"
 - 关注 B 站评论区、知乎回答、CSDN 社区的用户反馈
-- 找到&quot;高需求 + 低供给&quot;的选题空白
+- 找到"高需求 + 低供给"的选题空白
 
 ## 输出要求
 写入 docs/demands.md，格式：
@@ -138,7 +138,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 **你（Lead）的职责**：
 1. 分发任务给两个 Teammate
 2. 等两份报告都完成后，交叉比对热点和需求
-3. 筛选出&quot;既有热度又有用户需求&quot;的交集话题
+3. 筛选出"既有热度又有用户需求"的交集话题
 4. 产出 5 个推荐选题到 docs/topics.md
 5. 每个选题附带：标题建议、核心角度、预估热度、差异化切入点
 
@@ -163,7 +163,7 @@ mkdir -p content-topics/.claude/agents docs &amp;&amp; cd content-topics
 
 ## Step 7：（可选）深挖某个选题
 
-> 把 {N} 替换成你感兴趣的选题编号。
+> 把 `{N}` 替换成你感兴趣的选题编号。
 
 ```
 第 {N} 个选题我很感兴趣，帮我进一步展开：

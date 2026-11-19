@@ -1,3 +1,4 @@
+
 # Github项目
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/IgtDdkbO1o3i6fxcTm8cJLoznHe](https://xatc0v8uz5m.feishu.cn/docx/IgtDdkbO1o3i6fxcTm8cJLoznHe)
@@ -10,7 +11,7 @@ CC的可视化
 
 https://zread.ai/czlonkowski/n8n-mcp
 
-# spec-workflow-mcp
+## spec-workflow-mcp
 
 https://github.com/Pimzino/spec-workflow-mcp?tab=readme-ov-file
 
@@ -18,18 +19,13 @@ Chrome DevTools MCP 是一个强大的模型上下文协议（MCP）服务器，
 
 https://github.com/ChromeDevTools/chrome-devtools-mcp/?tab=readme-ov-file#mcp-client-configuration
 
+```json
 {
-
-"mcpServers": {
-
-"chrome-devtools": {
-
-"command": "npx",
-
-"args": ["chrome-devtools-mcp@latest"]
-
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
+    }
+  }
 }
-
-}
-
-}
+```

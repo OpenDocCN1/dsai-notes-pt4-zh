@@ -1,3 +1,4 @@
+
 # 人工智能法（示范法）
 
 > 来源：[https://docs.feishu.cn/docx/Gw8ddFWHMo2stDxCAxNcQecdnqf](https://docs.feishu.cn/docx/Gw8ddFWHMo2stDxCAxNcQecdnqf)
@@ -10,17 +11,14 @@
 
 ### 1.0
 
-+   原文：《人工智能法（示范法）1.0》（专家建议稿）起草说明和全文
-
-+   [附答记者问](https://mp.weixin.qq.com/s/455NyK5UKXabD1Y6HhTVvA)
++ 原文：《人工智能法（示范法）1.0》（专家建议稿）起草说明和全文
++ [附答记者问](https://mp.weixin.qq.com/s/455NyK5UKXabD1Y6HhTVvA)
 
 ### 2.0
 
-+   原文：
-
-+   [《周辉 |《人工智能示范法2.0（专家建议稿）》——](https://mp.weixin.qq.com/s/SyWsYerjM4vSzGnnwVXwKw)人工智能法的立法架构：原则、体例与创新》
-
-+   欧洲中国法研究会对AI示范法2.0进行专访：《人工智能法的制定—与中国人工智能法律专家草案的制定者进行问答》
++ 原文：
++ [《周辉 |《人工智能示范法2.0（专家建议稿）》——](https://mp.weixin.qq.com/s/SyWsYerjM4vSzGnnwVXwKw)人工智能法的立法架构：原则、体例与创新》
++ 欧洲中国法研究会对AI示范法2.0进行专访：《人工智能法的制定—与中国人工智能法律专家草案的制定者进行问答》
 
 ![](img/0470a5ca948b82028c3e9b893dfed1bc.png)
 
@@ -32,14 +30,13 @@
 
 ![](img/590c6278c1ffc0d1f83dd12a6a399b3f.png)
 
-###  3.0
+### 3.0
 
 原文：[《人工智能示范法3.0》全文](https://mp.weixin.qq.com/s?__biz=MzU1NDY3NDgwMQ==&mid=2247551154&idx=2&sn=6b7de6f914bdc24974f40ec149127a25&chksm=fa20078f812dc26eb71de5384d36cae280e1803b8cd1104a43f7d569980bcde3efd56ba01557#rd)
 
 ## 人工智能法（学者建议稿）
 
-+   原文：《中华人民共和国人工智能法(学者建议稿)》
-
-+   张凌寒，《[探索人工智能治理的中国路径](https://mp.weixin.qq.com/s/qP_F-i9iq6HQzBqGplh6dw)》
++ 原文：《中华人民共和国人工智能法(学者建议稿)》
++ 张凌寒，《[探索人工智能治理的中国路径](https://mp.weixin.qq.com/s/qP_F-i9iq6HQzBqGplh6dw)》
 
 ![](img/4f5081f5778d339aef232f9c8b60faca.png)

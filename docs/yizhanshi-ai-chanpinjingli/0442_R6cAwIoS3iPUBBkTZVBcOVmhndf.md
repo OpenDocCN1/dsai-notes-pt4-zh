@@ -1,3 +1,4 @@
+
 # 第三周
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/CBF0d2jgooTRIGxn1yycgeomnBe](https://v11enp9ok1h.feishu.cn/docx/CBF0d2jgooTRIGxn1yycgeomnBe)
@@ -36,9 +37,9 @@ Logistic Regression 不能使用和线性回归相同的成本函数，因为 Si
 
 两种技术可用于处理过拟合问题：
 
-1.  减少特征数量：人工选择留下的特征，或者使用特征选择的算法；
+1. 减少特征数量：人工选择留下的特征，或者使用特征选择的算法；
 
-1.  正则化（Regularization）：留下所有的特征，但是减小参数 $\theta\_j$。
+2. 正则化（Regularization）：留下所有的特征，但是减小参数 $\theta\_j$。
 
 ### 加入正则化的成本函数
 

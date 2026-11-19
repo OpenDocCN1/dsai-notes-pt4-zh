@@ -1,10 +1,9 @@
+
 # 2023-11-07我用 AI + 编程拆解了破局 300+ 精华文章，我惊呆了！
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZsOydZSR0oEf98xL86Oc17DGnxe](https://xuqiwei1986.feishu.cn/docx/ZsOydZSR0oEf98xL86Oc17DGnxe)
 
-> 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_wu8tqxikt3wo.html)xq.com/id_wu8tqx...
-
->
+> 🔗 原文链接：https://articles.zsxq.com/id_wu8tqxikt3wo.html
 
 大家好，我是破局合伙人木川，一颗 Al 之心获得者，专注分享 AI 编程，主业写代码，副业探索 AI 超级个体；目前正在参加皮特老师的第五期写作训练营，感谢皮特老师的耐心指导！
 
@@ -18,9 +17,9 @@
 
 ![](img/fdfe5c9db5da4bb3f6597885e120d9c8.png)
 
-# 一、拆解成果
+## 一、拆解成果
 
-## 一）文章作者拆解
+### 一）文章作者拆解
 
 所谓对标就是要跟对人，找到比你强的人，对于 AI 破局星球而言，就是要找到这里精华文章最多的人
 
@@ -30,33 +29,33 @@
 
 这些人是星球的 top 10 大腿，当然还有很多已经冉冉升起的大腿，比如台风、冯帅、卡尔、陈天等，可以发现这些人都很脸熟，因为他们都是群红，之前小林老师也说过要先成为群红，然后一步步成为大腿。
 
-洋哥还说成功 = 贵人 + 超强的执**行力，这些大腿有**可能就是你的贵人，所以 要成功先抱紧大腿
+洋哥还说成功 = 贵人 + 超强的执**行力**，这些大腿有可能就是你的贵人，所以 要成功先抱紧大腿
 
-## 二）作者所在城市拆解
+### 二）作者所在城市拆解
 
-**从精华文章作者**所在城市来看，一线城市居多，还是 大城市人才多 。
+从精华文章作者所在城市来看，一线城市居多，还是 大城市人才多 。
 
 对于年轻人，刚毕业还是建议去到一线城市，那里有更好的资源和人脉，一线城市吸引了大量的人才和企业，意味着更多的机会，比如洋哥就在北京，我就有幸和洋哥有过一次面基的机会
 
 ![](img/650f072a228b7560804788f6a0d27d50.png)
 
-## 三）文章发表时间拆解
+### 三）文章发表时间拆解
 
 大家都想要拿精华，那精华文章发表时间有什么特点吗？应该哪个时间发表呢？
 
 我拆解了 328 篇精华文章，统计了每篇文章对应的发表时间，发现发表精华文章最多的 4 个小时是 22 点、23 点、16 点、0 点
 
-这个说明了什么？ **破局有很多夜猫子 **，大家都不容易，熬过很多个夜晚 😄
+这个说明了什么？ **破局有很多夜猫子**，大家都不容易，熬过很多个夜晚 😄
 
 选择 16 点、22 点 发表文章或许是个不错的选择，但主要还是要靠文章的质量取胜，细节属于锦上添花的东西
 
 ![](img/95b15a39c796902bd3aaacbe921fae7f.png)
 
-## 四）阅读数/点赞数拆解
+### 四）阅读数/点赞数拆解
 
 1、精华文章的阅读数分布，中位数是 6966，意味着只要你的文章被评定为精华，平均有 7000 左右的阅读量，这个曝光已经算是非常高了。
 
-**👸号 大 v，公**众号日均阅读量 才 1w 多点，所以坚持 在星球输出文章吧 ，你会获得大量的曝光，然后不断出圈
+👸号 大 v，公众号日均阅读量 才 1w 多点，所以坚持 在星球输出文章吧 ，你会获得大量的曝光，然后不断出圈
 
 ![](img/c9717e50583f8ce3a083b4307da8a142.png)
 
@@ -78,9 +77,9 @@
 
 ![](img/7db53463b79266609181d53f8b5b315e.png)
 
-## 五）关键词拆解
+### 五）关键词拆解
 
-**围绕关键词布局 **，做核心的事情，而不是什么事情都做
+**围绕关键词布局**，做核心的事情，而不是什么事情都做
 
 将精华文章的标题进行结巴分词，然后统计每个词的频率，绘制词云分析图
 
@@ -90,15 +89,15 @@
 
 ![](img/82e7ca1a36c79ade581f80a4ce291a1f.png)
 
-## 六）文章内容拆解
+### 六）文章内容拆解
 
 使用 AI 辅助总结了 10 篇文章，分别是阅读量比较高的文章 + 破局精华文章数 top10 作者的文章
 
-### 1、0 代码基础小白使用 ChatGPT 做出一款谷歌全屏截图插件的全过程
+#### 1、0 代码基础小白使用 ChatGPT 做出一款谷歌全屏截图插件的全过程
 
 作者：阿强
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_grll0r3ej4uk.html)ttps://articles.zsxq.com/inline_form/id_grll0r3ej4uk.html
+文章链接：https://articles.zsxq.com/inline_form/id_grll0r3ej4uk.html
 
 总结：
 
@@ -122,7 +121,7 @@
 
 9. 作者尝试改变提问的方式，请求ChatGPT一步步教如何开发一个Google浏览器插件。
 
-10. 他按照ChatGPT提供的提示创建了manifest.json文件，使用记事本创建其他必要文件。
+10. 他按照ChatGPT提供的提示创建了`manifest.json`文件，使用记事本创建其他必要文件。
 
 11. 作者在完成一系列步骤后，成功加载了插件，但它最初只显示“Hello World”。
 
@@ -134,11 +133,11 @@
 
 文章记录了作者在不懂编程的情况下，通过使用ChatGPT成功创建了一个Chrome浏览器插件的过程，强调了ChatGPT在帮助初学者方面的潜力。
 
-### 2、如何利用 ChatGPT 辅助写作
+#### 2、如何利用 ChatGPT 辅助写作
 
 作者：闫小林
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_9xwa8p22hqhe.html)ttps://articles.zsxq.com/inline_form/id_9xwa8p22hqhe.html
+文章链接：https://articles.zsxq.com/inline_form/id_9xwa8p22hqhe.html
 
 总结：
 
@@ -168,11 +167,11 @@
 
 文章总结了如何使用ChatGPT进行写作的各个方面，为那些希望提高写作技巧和质量的人提供了有用的建议和方法。
 
-### 3、星球快闪分享：从0到1，搞定 AI 自媒体写作！
+#### 3、星球快闪分享：从0到1，搞定 AI 自媒体写作！
 
 作者：皮特
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_xdfv81lzgwpo.html)ttps://articles.zsxq.com/inline_form/id_xdfv81lzgwpo.html
+文章链接：https://articles.zsxq.com/inline_form/id_xdfv81lzgwpo.html
 
 总结：
 
@@ -196,11 +195,11 @@
 
 总的来说，这篇文章强调了AI如何成为自媒体写作的有力工具，但也提到了AI的局限性，特别是在涉及个性和创造性方面。文章为自媒体作者提供了一些实用的技巧和建议，以提高他们的写作能力。
 
-### 4、如何用ChatGPT， 每天自动批量产出100+条爆款短视频
+#### 4、如何用ChatGPT， 每天自动批量产出100+条爆款短视频
 
 作者：刘驴
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_e74ag3spe7d2.html)ttps://articles.zsxq.com/inline_form/id_e74ag3spe7d2.html
+文章链接：https://articles.zsxq.com/inline_form/id_e74ag3spe7d2.html
 
 总结：
 
@@ -224,11 +223,11 @@
 
 这篇文章详细说明了如何使用ChatGPT和其他工具批量生成短视频，以便于制作内容并提高内容的生产效率。
 
-### 5、使用AI，做抖音漫画短视频，4个人2天的工作量，1人仅需5小时即可完成！
+#### 5、使用AI，做抖音漫画短视频，4个人2天的工作量，1人仅需5小时即可完成！
 
 作者：蛋解创业蛋蛋
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_4kdt007pr5sd.html)ttps://articles.zsxq.com/inline_form/id_4kdt007pr5sd.html
+文章链接：https://articles.zsxq.com/inline_form/id_4kdt007pr5sd.html
 
 总结：
 
@@ -258,11 +257,11 @@
 
 12. 作者表示将继续尝试制作更多内容，并与读者分享新的进展。
 
-### 6、一只￥4000的prompt订单：有需求就有价值
+#### 6、一只￥4000的prompt订单：有需求就有价值
 
 作者：小七姐
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_92w3eawfsw1j.html)ttps://articles.zsxq.com/inline_form/id_92w3eawfsw1j.html
+文章链接：https://articles.zsxq.com/inline_form/id_92w3eawfsw1j.html
 
 总结：
 
@@ -282,19 +281,19 @@
 
 这篇文章强调了自定义prompt的可行性，通过详细的步骤和思维链方法，展示了如何满足客户的需求。同时，文章也呼吁更多人加入prompt的交流和分享，以推动这一领域的发展。
 
-### 7、手把手教你制作3个月涨粉 46 W的“Al 数字人短视频 +CPS卖货”账号
+#### 7、手把手教你制作3个月涨粉 46 W的“Al 数字人短视频 +CPS卖货”账号
 
 作者：元峰
 
-文章链接： [手把手教你制作 3 个月涨粉 46 W ](https://esouqpttmy.feishu.cn/docx/CEGqd7uPpoNVVqxxGR9cdmaznBb)的“AI 数字人短视频+CPS卖货”账号
+文章链接：[手把手教你制作 3 个月涨粉 46 W 的“AI 数字人短视频+CPS卖货”账号](https://esouqpttmy.feishu.cn/docx/CEGqd7uPpoNVVqxxGR9cdmaznBb)
 
 总结：
 
-### 8、 为啥我打算，重新做一家一人企业？
+#### 8、 为啥我打算，重新做一家一人企业？
 
 作者：潘达
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_z9p06loqullu.html)ttps://articles.zsxq.com/inline_form/id_z9p06loqullu.html
+文章链接：https://articles.zsxq.com/inline_form/id_z9p06loqullu.html
 
 总结：
 
@@ -306,6 +305,8 @@
 
 文章还指出一人企业适用于不同情境，包括那些想摆脱大公司束缚、寻求更多自由度的人，以及那些希望在现有工作范围内成为内部创业者或寻求额外收入的人。
 
+
+
 作者强调了创业目标的重要性，提出了如何找到自己最擅长和熟练的事情，并以此为基础制定业务计划。他建议快速发布产品，然后通过不断的发布、衡量和调整来打磨产品，而不是等待完美。
 
 文章还提到了寻找利润的边界，强调利润高于支出的目标，并分享了一个关于一位司机师傅的故事，阐述了追求利润和保持生活质量的平衡。
@@ -314,11 +315,11 @@
 
 最后，文章鼓励人们在不确定的时代中增强自己的风险抵抗能力，不论是否选择一人企业的职业模式，都可以采用这种思维方式来获得更多的自由度和机会。文章的核心思想是在现代社会中，通过有效的思维和工具，个人可以创办一人企业，实现更好的工作和生活质量。
 
-### 9、普通人如用利用AI打造自己的超级个体1.0
+## 9、普通人如用利用AI打造自己的超级个体1.0
 
 作者：段老湿
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_z9p06loqullu.html)ttps://articles.zsxq.com/inline_form/id_z9p06loqullu.html
+文章链接：https://articles.zsxq.com/inline_form/id_z9p06loqullu.html
 
 总结：
 
@@ -342,11 +343,11 @@
 
 文章的主要观点是，AI可以成为一个强大的工具，帮助个人克服技能和知识的限制，实现自己的创业目标。作者强调了个人的定位和利用AI输出内容的重要性，以及AI在吸引精准用户和扩大流量方面的潜力。
 
-### 10、30天，知乎从0到日阅读量3W+，我是如何做到的
+## 10、30天，知乎从0到日阅读量3W+，我是如何做到的
 
 作者：冯帅Prompt
 
-文章链接： [h](https://articles.zsxq.com/inline_form/id_be2w64xvbp90.html)ttps://articles.zsxq.com/inline_form/id_be2w64xvbp90.html
+文章链接：https://articles.zsxq.com/inline_form/id_be2w64xvbp90.html
 
 总结：
 
@@ -368,23 +369,21 @@
 
 最后，作者分享了自己的学习经历，包括如何从洋哥和AI破局俱乐部星球中获取知识，以及在知乎上取得的成绩。作者鼓励读者学习和行动，并将学到的知识输出到星球中，强调了问题思考和实际操作的重要性。
 
-#
-
 # 二、拆解流程
 
 ## 一）文章数据获取
 
-我们通过接口调用的方式获取数据，需要分析调用哪个接口才能获取到精华文章，本文使用 Python 完成数据获取和分析，需要安装必要的Python 库，后续都会用到
+我们通过接口调用的方式获取数据，需要分析调用哪个接口才能获取到精华文章，本文使用 Python 完成数据获取和分析，需要安装必要的 Python 库，后续都会用到
 
-pandas：数据处理
+`pandas`：数据处理
 
-matplotlib： 绘制图形
+`matplotlib`：绘制图形
 
-fake_useragent：生成 agent，调用接口时随机生成 agent
+`fake_useragent`：生成 agent，调用接口时随机生成 agent
 
-jieba：分词
+`jieba`：分词
 
-wordcloud：词云分析
+`wordcloud`：词云分析
 
 ### 1、请求参数分析
 
@@ -392,17 +391,17 @@ wordcloud：词云分析
 
 ![](img/d6dbfd11ec03d3e7d338d55322b7f975.png)
 
-**浏览器查看网络请求，可以看到对应**的请求链接和请求参数， 可以将请求参数复制到 ChatGPT 中，让 GPT 转换成 json ，以方便后面写代码调用
+浏览器查看网络请求，可以看到对应的请求链接和请求参数，可以将请求参数复制到 ChatGPT 中，让 GPT 转换成 json，以方便后面写代码调用
 
 ![](img/e23ddbf6005290ed6e01edbfcee5b907.png)
 
-手动翻页，可以看到请求中的下一页接口，是通过 end_time 参数实现的，这个 end_time 和 上一页最后一篇文章的 create_time 有关系，所以分页调用接口的时候，需要带上 end_time 参数
+手动翻页，可以看到请求中的下一页接口，是通过 `end_time` 参数实现的，这个 `end_time` 和上一页最后一篇文章的 `create_time` 有关系，所以分页调用接口的时候，需要带上 `end_time` 参数
 
 ![](img/78700cd16b86c69265f578f178c3f4a9.png)
 
 ### 2、模拟登录
 
-有了上面的请求链接 和 请求参数，就可以写程序 来获取文章数据，这里使用 Python 获取，具体模拟代码比较长，就不放到这里了，如果感兴趣，可以加我🛰️ mcmc2024 交流
+有了上面的请求链接和请求参数，就可以写程序来获取文章数据，这里使用 Python 获取，具体模拟代码比较长，就不放到这里了，如果感兴趣，可以加我🛰️ mcmc2024 交流
 
 这里需要注意的是：
 
@@ -412,9 +411,9 @@ wordcloud：词云分析
 
 ### 3、数据预处理
 
-我们通过上一步获取到的数据是 json，为了方便操作，我们转换成 pandas
+我们通过上一步获取到的数据是 `json`，为了方便操作，我们转换成 `pandas`
 
-返回的数据是个 list，其中每篇文章中包含着用户信息、主题内容、点赞数、评论数、评论内容、点赞者的信息、创建时间等等
+返回的数据是个 `list`，其中每篇文章中包含着用户信息、主题内容、点赞数、评论数、评论内容、点赞者的信息、创建时间等等
 
 原始数据：
 
@@ -430,291 +429,219 @@ wordcloud：词云分析
 
 显示每个作者及对应的文章数
 
+```
 author_article_counts = df['owner'].value_counts().reset_index()
-
 author_article_counts.columns = ['author', 'article_count']
-
 author_article_counts.head(10)
+```
 
 ### 2、作者所在城市分析
 
+```
 # 覆盖了多少个城市
-
 # 统计每位作者的文章数
-
 metrics = df['location'].value_counts().reset_index()
-
 metrics.columns = ['X', 'Y']
 
 # 绘制柱状图
-
 plt.figure(figsize=(10, 6))
-
 plt.bar(metrics['X'], metrics['Y'], color='darkorange')
-
 plt.xlabel('城市')
-
 plt.ylabel('文章数')
-
 plt.title('城市的精华文章数')
-
 plt.xticks(rotation=45) # 旋转 X 轴标签，使其更易读
-
 plt.show()
+```
 
 ### 3、文章发表时间分析
 
 统计每个小时发表的文章数，然后绘制成柱状图
 
+```
 metrics = df['hour'].value_counts().reset_index()
-
 metrics.columns = ['X', 'Y']
 
 # 绘制柱状图
-
 plt.figure(figsize=(10, 6))
-
 metrics
-
 plt.bar(metrics['X'], metrics['Y'], color='darkorange')
-
 plt.xlabel('小时')
-
 plt.ylabel('文章数')
-
 plt.title('小时的精华文章数')
-
 plt.xticks(metrics['X']) # 设置 x 轴刻度和标签
-
 # plt.xticks(rotation=45) # 旋转 X 轴标签，使其更易读
-
 plt.show()
+```
 
 ### 4、阅读数分析
 
 计算不同分位数下的文章阅读数，绘制箱线图
 
+```
 import matplotlib.pyplot as plt
-
 import numpy as np
 
 readership_data = df["readers_count"]
-
 print(readership_data)
 
 # 创建箱线图
-
 # 计算不同分位数
-
 percentiles = [50, 75, 90, 95, 100]
-
 percentile_values = np.percentile(readership_data, percentiles)
 
 # 打印分位数的值
-
 for p, value in zip(percentiles, percentile_values):
-
-print(f"{p} 分位数：{value}")
+    print(f"{p} 分位数：{value}")
 
 # 绘制箱线图
-
 plt.boxplot(readership_data, vert=False)
 
 # 添加不同颜色的分位数标识
-
 colors = ['green', 'blue', 'orange', 'purple', 'red']
-
 for p, value, color in zip(percentiles, percentile_values, colors):
-
-plt.scatter(value, 1, color=color, marker='o', label=f"{p} 分位数")
+    plt.scatter(value, 1, color=color, marker='o', label=f"{p} 分位数")
 
 # 设置标签和标题
-
 plt.xlabel("阅读数")
-
 plt.title("不同分位数的阅读数分布")
 
 # 添加图例
-
 plt.legend()
 
 # 显示图表
-
 plt.show()
+```
 
 统计不同阅读数区间的文章数，绘制直方图
 
+```
 import matplotlib.pyplot as plt
-
 import numpy as np
 
 readership_data = df["readers_count"]
-
 print(readership_data)
 
 plt.hist(readership_data, bins=10, color='darkorange', edgecolor='k')
-
 plt.xlabel("阅读数")
-
 plt.ylabel("文章数")
-
 plt.title("文章阅读数分布的直方图")
-
 plt.show()
+```
 
 统计阅读数 top 10 的文章
 
+```
 df_sorted = df.sort_values(by="readers_count", ascending=False)
-
 top_10 = df_sorted.head(10)
-
 top_10[['title', 'owner', 'readers_count', 'article_url']]
+```
 
 ### 5、点赞数分析
 
 计算不同分位数下的文章点赞数，绘制箱线图
 
+```
 import matplotlib.pyplot as plt
-
 import numpy as np
 
 readership_data = df["likes_count"]
-
 print(readership_data)
 
 # 创建箱线图
-
 # 计算不同分位数
-
 percentiles = [50, 75, 90, 95, 100]
-
 percentile_values = np.percentile(readership_data, percentiles)
 
 # 打印分位数的值
-
 for p, value in zip(percentiles, percentile_values):
-
-print(f"{p} 分位数：{value}")
+    print(f"{p} 分位数：{value}")
 
 # 绘制箱线图
-
 plt.boxplot(readership_data, vert=False)
 
 # 添加不同颜色的分位数标识
-
 colors = ['green', 'blue', 'orange', 'purple', 'red']
-
 for p, value, color in zip(percentiles, percentile_values, colors):
-
-plt.scatter(value, 1, color=color, marker='o', label=f"{p} 分位数")
+    plt.scatter(value, 1, color=color, marker='o', label=f"{p} 分位数")
 
 # 设置标签和标题
-
 plt.xlabel("点赞数")
-
 plt.title("不同分位数的点赞数分布")
 
 # 添加图例
-
 plt.legend()
 
 # 显示图表
-
 plt.show()
+```
 
 统计不同点赞数区间的文章数，绘制直方图
 
+```
 import matplotlib.pyplot as plt
-
 import numpy as np
 
 readership_data = df["likes_count"]
-
 print(readership_data)
 
 plt.hist(readership_data, bins=10, color='darkorange', edgecolor='k')
-
 plt.xlabel("点赞数")
-
 plt.ylabel("文章数")
-
 plt.title("文章点赞数分布的直方图")
-
 plt.show()
+```
 
 统计点赞数 top 10 的文章
 
+```
 df_sorted = df.sort_values(by="likes_count", ascending=False)
-
 top_10 = df_sorted.head(10)
-
 top_10[['title', 'owner', 'likes_count', 'article_url']]
+```
 
 ### 6、关键词拆解
 
 将文章的标题拆解成关键词，然后绘制词云分析图
 
+```
 import jieba
-
 from collections import Counter
-
 from wordcloud import WordCloud
-
 import matplotlib.pyplot as plt
 
 # 设置中文字体，'SimHei'是宋体字体的一种，根据需要选择合适的字体
-
 plt.rcParams['font.sans-serif'] = 'Arial Unicode MS'
-
 # 用于正常显示负号
-
 plt.rcParams['axes.unicode_minus'] = False
 
 # 准备文本数据
-
 words = []
-
 for index, row in df.iterrows():
-
-title = row.title[:24]
-
-keywords = jieba.cut(title)
-
-# print(title, " ".join(keywords))
-
-for item in keywords:
-
-words.append(item)
+    title = row.title[:24]
+    keywords = jieba.cut(title)
+    # print(title, " ".join(keywords))
+    for item in keywords:
+        words.append(item)
 
 # 使用Counter统计元素出现的次数
-
 element_counts = Counter(words)
-
 # 提取出现次数为2次或更多的元素
-
 result = [element for element, count in element_counts.items() if count >= 2]
-
 text = " ".join(result)
 
 # 创建词云对象并生成词云图像
-
 font_path = "/System/Library/fonts/PingFang.ttc"
-
 wordcloud = WordCloud(width=800, height=400, background_color='white', font_path=font_path).generate(text)
-
 # 显示词云图像
-
 plt.figure(figsize=(10, 5))
-
 plt.imshow(wordcloud, interpolation='bilinear')
-
 plt.axis('off') # 隐藏坐标轴
-
 plt.show()
+```
 
 ### 7、文章内容拆解
 
-通过上面的文章 url 可以拿到文章的内容，然后将文章内容发送给 ChatGPT，快速总结文章内容
+通过上面的文章 `url` 可以拿到文章的内容，然后将文章内容发送给 ChatGPT，快速总结文章内容
 
 请总结这篇文章的内容：
 

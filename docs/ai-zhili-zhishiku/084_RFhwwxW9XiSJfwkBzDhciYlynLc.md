@@ -1,3 +1,4 @@
+
 # 输出内容对外分享
 
 > 来源：[https://docs.feishu.cn/docx/XzBWdQMbuoe2Qbxv6GuclCqgng7](https://docs.feishu.cn/docx/XzBWdQMbuoe2Qbxv6GuclCqgng7)
@@ -5,17 +6,15 @@
 ## 法律规定
 
 > 《生成式人工智能服务管理暂行办法》
-
-> **第十二条** 提供者应当按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识。
-
-> 《互联网信息服务深度合成管理规定》
-
-> **第十七条 **深度合成服务提供者提供以下深度合成服务，可能导致公众混淆或者误认的，应当在生成或者编辑的信息内容的合理位置、区域进行显著标识，向公众提示深度合成情况：
-
-> ……
-
 >
-
+> **第十二条** 提供者应当按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识。
+>
+> 《互联网信息服务深度合成管理规定》
+>
+> **第十七条** 深度合成服务提供者提供以下深度合成服务，可能导致公众混淆或者误认的，应当在生成或者编辑的信息内容的合理位置、区域进行显著标识，向公众提示深度合成情况：
+>
+> ……
+>
 > 具体标识方法可参见《网络安全标准实践指南——生成式人工智能服务内容标识方法》
 
 ## 案例
@@ -42,7 +41,7 @@
 
 文字：
 
-用user来指代用户，分享的文字内容不包含用户账号的信息。
+用`user`来指代用户，分享的文字内容不包含用户账号的信息。
 
 图片：
 
@@ -62,7 +61,7 @@
 
 其他人已登录状态
 
-点击链接查看和 Kimi 智能助手的对话 https://kimi.moonshot.cn/share/cq4khopldu5rks07icvg
+点击链接查看和 Kimi 智能助手的对话 <https://kimi.moonshot.cn/share/cq4khopldu5rks07icvg>
 
 ### 文心一言
 
@@ -74,7 +73,7 @@
 
 ![](img/d0f6acbd6011f8529e48c6dc5bdf92b2.png)
 
-https://yiyan.baidu.com/share/iT47wnsbOu
+<https://yiyan.baidu.com/share/iT47wnsbOu>
 
 ### 通义千问
 
@@ -84,7 +83,7 @@ https://yiyan.baidu.com/share/iT47wnsbOu
 
 ![](img/f6f7b4631758c8f39cc01f9473f1c570.png)
 
-https://tongyi.aliyun.com/qianwen/share?shareId=97e3322e-8ed4-4397-9547-6d73447fce70
+<https://tongyi.aliyun.com/qianwen/share?shareId=97e3322e-8ed4-4397-9547-6d73447fce70>
 
 ### 豆包
 
@@ -100,7 +99,7 @@ https://tongyi.aliyun.com/qianwen/share?shareId=97e3322e-8ed4-4397-9547-6d73447f
 
 ![](img/738d356a5417f57a74c83a2e3bacd29c.png)
 
-https://www.doubao.com/thread/w4826e1550967701d
+<https://www.doubao.com/thread/w4826e1550967701d>
 
 图片
 
@@ -112,12 +111,11 @@ https://www.doubao.com/thread/w4826e1550967701d
 
 有三种方式：链接、小程序码、图片
 
-
 ![](img/71806bc65557ee4b36c7e2e21916212a.png)
 
 链接
 
-https://yuanbao.tencent.com/bot/app/share/chat/95725126e02c3125bc1f349b353d139f
+<https://yuanbao.tencent.com/bot/app/share/chat/95725126e02c3125bc1f349b353d139f>
 
 保留了头像和昵称
 
@@ -143,7 +141,7 @@ https://yuanbao.tencent.com/bot/app/share/chat/95725126e02c3125bc1f349b353d139f
 
 做了匿名化
 
-https://chatglm.cn/share/FE275
+<https://chatglm.cn/share/FE275>
 
 ### ChatGPT
 
@@ -151,8 +149,6 @@ https://chatglm.cn/share/FE275
 
 ![](img/9bc1762fa57fe79f1a0576e0e6be8958.png)
 
-ChatGPT Shared Links FAQ
-
-https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq
+[ChatGPT Shared Links FAQ](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq)
 
 ### Gemini

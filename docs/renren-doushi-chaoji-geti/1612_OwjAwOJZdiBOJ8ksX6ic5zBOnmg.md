@@ -1,26 +1,25 @@
-# 2023-07-26ChatGPT下架官方检测工具，承认AI文字无法鉴别-今日头条
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/XFz4dkELIo4JFZxW8lccmV95n94](https://xuqiwei1986.feishu.cn/docx/XFz4dkELIo4JFZxW8lccmV95n94)
+# 2023-07-26 `ChatGPT`下架官方检测工具，承认AI文字无法鉴别 - 今日头条
 
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7260004824379589183/?log_from=9aaaee27c1d6f_1691148766948).com/article/726...
+> 来源：https://xuqiwei1986.feishu.cn/docx/XFz4dkELIo4JFZxW8lccmV95n94
 
->
+> 🔗 原文链接：https://www.toutiao.com/article/7260004824379589183/?log_from=9aaaee27c1d6f_1691148766948
 
-# ChatGPT下架官方检测工具，承认AI文字无法鉴别
+## `ChatGPT`下架官方检测工具，承认AI文字无法鉴别
 
 2023-07-26 14:07 · 量子位
 
 > 梦晨 发自 凹非寺
 
-> 量子位 | 👸号 QbitAI
+> 量子位 | 👸号 `QbitAI`
 
-没有公告，OpenAI悄然 **关闭了AI文本检测工具 **，页面直接404了。
+没有公告，`OpenAI`悄然关闭了AI文本检测工具，页面直接404了。
 
 ![](img/ad870a7234cd92ea0dc1544aadecbe70.png)
 
 官方对此没有公开回应，几天后才有人找到一则简短说明，藏在半年前工具发布的博客页面中。
 
-> ……AI检测器 **由于准确率较低 **而不再可用……我们正在研究更有效的文本检测技术，并承诺开发音频和视觉检测技术。
+> ……AI检测器由于准确率较低而不再可用……我们正在研究更有效的文本检测技术，并承诺开发音频和视觉检测技术。
 
 ![](img/1b3ce9ea5a8f4950d589cb68dbb21ec5.png)
 
@@ -30,15 +29,15 @@
 
 但是对关闭AI检测器本身倒是有不少人表示赞同，特别是学生群体。
 
-**太多老师相**信这玩意有效，大量冤枉学生用AI作弊，已经变成了一场 猎巫运动 。
+太多老师相信这玩意有效，大量冤枉学生用AI作弊，已经变成了一场猎巫运动。
 
 ![](img/d7fa657a9469a80488857056ca8be4d5.png)
 
-# 准确率和瞎猜差不多
+## 准确率和瞎猜差不多
 
 这个官方检测工具，准确率究竟有多低呢？
 
-**Open**AI自己给出的数据，只能正**确识别** 26% 的AI生成文本，同时冤枉 9% 的人类编写文本。
+`OpenAI`自己给出的数据，只能正确识别 26% 的AI生成文本，同时冤枉 9% 的人类编写文本。
 
 ![](img/b0268e1e8d063708e8b2776770d446ad.png)
 
@@ -48,7 +47,7 @@
 
 但还是有很多老师试图用各种检测方法来检查学生作业。
 
-**最著名的一次，得克萨斯**农工大学一位教授差点 判定半个班的学生延毕 。
+最著名的一次，得克萨斯农工大学一位教授差点判定半个班的学生延毕。
 
 ![](img/c4e575d77fb5c5d4dd8e783e0c2469ca.png)
 
@@ -60,9 +59,9 @@
 
 ![](img/1ea2472ebf9a5aff2b1690d8f536a603.png)
 
-# 目前的检测方法都能规避
+## 目前的检测方法都能规避
 
-网友指出，OpenAI同时开发生成和检测工具本身就是矛盾的。
+网友指出，`OpenAI`同时开发生成和检测工具本身就是矛盾的。
 
 如果一边做的好就意味着另一边没做好，同时还有可能存在利益冲突。
 
@@ -70,15 +69,15 @@
 
 但是第三方开发的检测方法，可靠性也不高。
 
-最早被称为“ChatGPT克星”的是普林**斯顿本科生Edw**ard Tian开发的 GPTZero ，用复杂性和长短句的变化来衡量文章是否由AI生成。
+最早被称为“`ChatGPT`克星”的是普林斯顿本科生Edward Tian开发的 `GPTZero`，用复杂性和长短句的变化来衡量文章是否由AI生成。
 
-当时GPTZero计划专为教育工作者打造，老师可以把全班学生的作业丢进去检测。
+当时`GPTZero`计划专为教育工作者打造，老师可以把全班学生的作业丢进去检测。
 
-但到了7月份，作者承认已放弃了检测学生作弊这个方向，计划下个版本的GPTZero将不再检测文本是否由AI生成，而是突出最像人写的部分。
+但到了7月份，作者承认已放弃了检测学生作弊这个方向，计划下个版本的`GPTZero`将不再检测文本是否由AI生成，而是突出最像人写的部分。
 
 ![](img/7cd54f49049fe539160c5e082ecf4327.png)
 
-**另外一个**很受关注的检测方法，是马里兰大学开发的 水印法 ，要求大模型在生成文本的时候就藏下记号，并用统计方法识别。
+另外一个很受关注的检测方法，是马里兰大学开发的 水印法 ，要求大模型在生成文本的时候就藏下记号，并用统计方法识别。
 
 ![](img/6dfc990c36fdf507d82e6ffb05aac898.png)
 
@@ -94,13 +93,13 @@
 
 ![](img/b87850ebcd48e76d472c4ec1bde7e00b.png)
 
-# 人类行为学研究，正在用AI充当被试
+## 人类行为学研究，正在用AI充当被试
 
 无法区分AI和人类的内容，似乎也不全是坏事。
 
 已经有心理实验用AI代替人类被试加速研究了。
 
-Cell子刊上一篇文章指出，在精心设计的实验场景中，ChatGPT的反应与大约95%的人类参与者的反应呈相关性。
+Cell子刊上一篇文章指出，在精心设计的实验场景中，`ChatGPT`的反应与大约95%的人类参与者的反应呈相关性。
 
 并且机器被试不会疲倦，使科学家能以前所未有的速度收集数据并测试有关人类行为的理论。
 
@@ -114,20 +113,15 @@ Cell子刊上一篇文章指出，在精心设计的实验场景中，ChatGPT的
 
 参考链接：
 
-[1]https://twitter.com/KevinAFischer/status/1683898199981928450
-
-[2]https://www.reddit.com/r/ChatGPT/comments/159j8rc/openai_quietly_kills_its_own_ai_classifier_citing/
-
-[3]https://news.ycombinator.com/item?id=36862850
-
-[4]https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(23)00098-0
-
-[5]https://www.science.org/doi/10.1126/science.adi1778
-
-[6]https://theconversation.com/beyond-the-hype-how-ai-could-change-the-game-for-social-science-research-208086
+[1] https://twitter.com/KevinAFischer/status/1683898199981928450
+[2] https://www.reddit.com/r/ChatGPT/comments/159j8rc/openai_quietly_kills_its_own_ai_classifier_citing/
+[3] https://news.ycombinator.com/item?id=36862850
+[4] https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(23)00098-0
+[5] https://www.science.org/doi/10.1126/science.adi1778
+[6] https://theconversation.com/beyond-the-hype-how-ai-could-change-the-game-for-social-science-research-208086
 
 — 完 —
 
-量子位 QbitAI · 头条号签约
+量子位 `QbitAI` · 头条号签约
 
 关注我们，第一时间获知前沿科技动态

@@ -1,10 +1,11 @@
+
 # 其他 AI 有关软件/插件
 
-> 来源：[https://my.feishu.cn/docx/NjrWdCmI7oQbbTxVSnjcwYunnrc](https://my.feishu.cn/docx/NjrWdCmI7oQbbTxVSnjcwYunnrc)
+> 来源：[`https://my.feishu.cn/docx/NjrWdCmI7oQbbTxVSnjcwYunnrc`](https://my.feishu.cn/docx/NjrWdCmI7oQbbTxVSnjcwYunnrc)
 
-### Flowith
+## Flowith
 
-https://flo.ing
+`https://flo.ing`
 
 节点式 GPT 4 驱动的 AI 生产力工具
 
@@ -14,20 +15,20 @@ https://flo.ing
 
 在输入的时候还会巧妙的利用光效对用户进行引导。
 
-### Bestever
+## Bestever
 
-https://www.bestever.ai
+`https://www.bestever.ai`
 
 Bestever 是一个专门为品牌定制图像和视频广告的平台。它提供多种工具，让用户能轻松地将品牌的标志、颜色和字体整合到广告创意中。这些创意能够自动调整至适合各种屏幕比例的尺寸，确保在各种平台上都能展现出最佳效果。还可以一键将静态广告变为动画。
 
 其主要功能包括:通过与人工智能设计师的对话来简化广告创意的编辑过程，并能不断生成新的广告概念，帮助用户解决创意瓶颈。用户还可以在平台上自定义品牌视觉风格，包括颜色、标志和字体，并且可以直接上传特殊字体到自己的账户。
 
-### KeepChatGPT
+## KeepChatGPT
 
-https://github.com/xcanwin/KeepChatGPT （需施展魔法）
+`https://github.com/xcanwin/KeepChatGPT` （需施展魔法）
 
 推荐指数：🌟🌟
 
-让 ChatGPT 保持在线不断联
+让 `ChatGPT` 保持在线不断联
 
 如何安装上面这个链接有写，一定要点击链接，其他地方的安装方式都是有问题的

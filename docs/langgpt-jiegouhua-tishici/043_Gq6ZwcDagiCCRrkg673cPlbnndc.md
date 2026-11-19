@@ -1,72 +1,67 @@
+
 # 【经验分享】万字长文反哺树哥!进树哥社区半年，小白走向产品之路AI+Anything
 
-> 来源：[https://langgptai.feishu.cn/docx/JPljdyPEzoHWeMx3XAic3q2dnle](https://langgptai.feishu.cn/docx/JPljdyPEzoHWeMx3XAic3q2dnle)
+> 来源：`https://langgptai.feishu.cn/docx/JPljdyPEzoHWeMx3XAic3q2dnle`
 
 项目流程和经验分享
 
 > 从22年11月开始接触AI领域至今也有一年半了，
-
 > 突然想整理整理这一年半自己通过AI拿到了哪些结果。
-
 > 也分享分享一些个人的经验（SD、MJ、prompt、agent、小模型、RAG、RPA、AI声音、“数字复生”）
-
 > 先自我介绍一下，可以叫我大橘，99年，目前杭州x公司的一个小产品。
-
 > v：15371006680
-
 > 自己算是非技术出身吧，毕竟本科虽然是计算机专业但是没怎么用心学😂。自己性格比较跳脱大学那会儿着迷自己创业，言归正传，AI上的话给自己定位是AI应用工程师，
-
 > 下面我将详细介绍一下我这条路走来的项目以及产品思考👇
 
-# 22年11月-23年9月👇
+## 22年11月-23年9月👇
 
 嗯，机缘巧合，那时候电商代运营创业失败，跑到了苏州一家公司做了运营（后转了产品），那家公司一开始做的是stable diffusion的一个套壳应用，后来也接入了llama以及gpt的API，那会儿应该是属于是比较早期的套壳网址了
 
 ![](img/a34d5fed9f3ccdb1e8de242dfb49492a.png)
 
-## 谈谈该阶段收获
+### 谈谈该阶段收获
 
-### 初入SD
+#### 初入SD
 
 其实早期公司小伙伴们那会儿对sd也都处于摸索阶段基础的controlnet插件、lora等都不是很清楚
 
-#### 模型
+##### 模型
 
-早期做的大量工作基本都是在https://civitai.com/上找一些优秀的模型下载下来测试（那会https://www.liblib.art/都还没有上线🤦‍）
+早期做的大量工作基本都是在`https://civitai.com/`上找一些优秀的模型下载下来测试（那会`https://www.liblib.art/`都还没有上线🤦‍）
 
 👇是一些测试出的部分比较好的适用于建筑模型分享
 
 无法复制加载中的内容
 
-#### 部署
+##### 部署
 
 嗯不得不提后面接触到了赛博佛祖秋叶的秋叶包，后来也开始着手自己开始学习部署，现在回想起来还是很兴奋的，可能对于我来说每一次新的尝试都能让我感到肾上腺激素爆棚，这可能一年来坚持走AI这条路的原因
 
-##### 秋叶包
+###### 秋叶包
 
 相关教学可参考👇
 
-秋叶包链接 https://pan.quark.cn/s/2c832199b09b
+秋叶包链接 `https://pan.quark.cn/s/2c832199b09b`
 
-秋叶视频b站链接https://www.bilibili.com/video/BV1iM4y1y7oA/?spm_id_from=333.999.0.0&vd_source=a7b5884bec3b7924f1225533ff5371ef
+秋叶视频b站链接`https://www.bilibili.com/video/BV1iM4y1y7oA/?spm_id_from=333.999.0.0&vd_source=a7b5884bec3b7924f1225533ff5371ef`
 
-##### 赛博丹炉
+###### 赛博丹炉
 
 炼丹我是直接使用的“赛博丹炉”
 
-教程https://www.bilibili.com/video/BV1xg4y1A74o/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef
+教程`https://www.bilibili.com/video/BV1xg4y1A74o/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef`
 
-云部署地址http://account.qingjiaocloud.com/signin?inviteCode=QE0903GS
+云部署地址`http://account.qingjiaocloud.com/signin?inviteCode=QE0903GS`
 
-本地下载包https://pan.xunlei.com/s/VNt9XhLOLXmkmJdtt_7sYUCfA1?pwd=5jh4#
+本地下载包`https://pan.xunlei.com/s/VNt9XhLOLXmkmJdtt_7sYUCfA1?pwd=5jh4#`
 
-#### Controlnet插件
+###### Controlnet插件
 
-关于controlnet我纯纯的是也路子瞎摸索，当时找不到比较系统的学习教程，基本就是在抖音、b站上看到一些热门的视频就去扒下来看看实现路径（当时踩好多坑，好多就是夸大效果，或者是二次处理过剪辑发布的）
+关于controlnet我纯纯的也是路子瞎摸索，当时找不到比较系统的学习教程，基本就是在抖音、b站上看到一些热门的视频就去扒下来看看实现路径（当时踩好多坑，好多就是夸大效果，或者是二次处理过剪辑发布的）
 
 下面是我整理的一些controlnet的插件用途👇
 
-##### ControlNer部分
+####### ControlNer部分
 
 1.Canny
 
@@ -134,7 +129,7 @@
 
 将黑白图片转成彩色
 
-##### 插件部分
+###### 插件部分
 
 1.roop
 
@@ -170,23 +165,23 @@
 
 抠图
 
-#### Lora
+##### Lora
 
-早期主要尝试在**服装、装修设计、人物**这三个方向的Lora，也测试了一些比较好的Lora模型
+早期主要尝试在`服装`、`装修设计`、`人物`这三个方向的Lora，也测试了一些比较好的Lora模型
 
 这边给大家分享一些优秀的服装Lora模型
 
-##### 苗疆少女_国风_民族特色_v1.0
+###### 苗疆少女_国风_民族特色_v1.0
 
-模型网址 https://www.liblib.art/modelinfo/68802660a084404db53f5ce1509f6611
+模型网址 `https://www.liblib.art/modelinfo/68802660a084404db53f5ce1509f6611`
 
-正miao jiang,An elegant Asian girl standing beneath the cherry blossom trees in full bloom,her traditional silk kimono adorned with intricate floral patterns,delicate petals drifting gently in the breeze around her,a serene smile gracing her lips as she gazes into the distance,capturing the grace and beauty of Japanese springtime,Photography,with prime lens for crisp details,<lora:Miao Jiang_20230913214100:0.1>,
+正`miao jiang,An elegant Asian girl standing beneath the cherry blossom trees in full bloom,her traditional silk kimono adorned with intricate floral patterns,delicate petals drifting gently in the breeze around her,a serene smile gracing her lips as she gazes into the distance,capturing the grace and beauty of Japanese springtime,Photography,with prime lens for crisp details,<lora:Miao Jiang_20230913214100:0.1>,`
 
-反 nsfw,(worst quality:2),(low quality:2),(normal quality:2),(EasyNegative),deepnegative_v1_75t,(badhandv4:1.2),verybadimagenegative_v1.3,logo,nude,(negative_hand:1.2),
+反`nsfw,(worst quality:2),(low quality:2),(normal quality:2),(EasyNegative),deepnegative_v1_75t,(badhandv4:1.2),verybadimagenegative_v1.3,logo,nude,(negative_hand:1.2),`
 
-触发次：miao jiang
+触发次：`miao jiang`
 
-大模型推荐：majic的写实风格
+大模型推荐：`majic`的写实风格
 
 ![](img/8a49c5215087d5af5ab138822bf9725c.png)
 
@@ -194,7 +189,7 @@
 
 ![](img/982a1ac25bad296ce5af5004bcb62c1a.png)
 
-大模型推荐使用：majicmixRealistic_v7.safetensor
+大模型推荐使用：`majicmixRealistic_v7.safetensor`
 
 ![](img/86e6460106797d8515ce49510aceb908.png)
 
@@ -208,17 +203,17 @@
 
 lora权重推荐在0.8
 
-##### 楼兰西域-服装_v1
+###### 楼兰西域-服装_v1
 
-模型下载链接：https://www.liblib.art/modelinfo/349aeecca9af432e820ecee8c5c9eec0
+模型下载链接：`https://www.liblib.art/modelinfo/349aeecca9af432e820ecee8c5c9eec0`
 
-正 future001,A graceful young woman adorned in traditional attire from the Silk Road,her vibrant silk garments billowing in the desert breeze,intricate patterns and embroidery reflecting the rich cultural tapestry of the region,the golden hues of the sand dunes stretching endlessly under the blazing sun,capturing her poise and elegance amidst the ancient beauty of the desert landscape,Painting,acrylic on canvas with fine brushwork to capture the intricate details of the clothing,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,<lora:so_v1:0.8>,
+正`future001,A graceful young woman adorned in traditional attire from the Silk Road,her vibrant silk garments billowing in the desert breeze,intricate patterns and embroidery reflecting the rich cultural tapestry of the region,the golden hues of the sand dunes stretching endlessly under the blazing sun,capturing her poise and elegance amidst the ancient beauty of the desert landscape,Painting,acrylic on canvas with fine brushwork to capture the intricate details of the clothing,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,<lora:so_v1:0.8>,`
 
-反 fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
+反`fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,`
 
 ![](img/dfb0b7f40519a0f7b1360a3aee73a187.png)
 
-大模型推荐使用：majicmixRealistic_v7.safetensors
+大模型推荐使用：`majicmixRealistic_v7.safetensors`
 
 ![](img/064349459af02c31622fc3bb6dcb0ea6.png)
 
@@ -232,19 +227,19 @@ lora权重推荐在0.8
 
 lora权重推荐在0.6-0.8
 
-##### **服装电商，冲锋衣，服装设计**
+###### 服装电商，冲锋衣，服装设计
 
-下载网址：https://www.liblib.art/modelinfo/dd9349f3da5b42a2965b99e43b05e016
+下载网址：`https://www.liblib.art/modelinfo/dd9349f3da5b42a2965b99e43b05e016`
 
-正：((((a white assault suit)))),Jackets,chuanc An Asian-faced girl donning a tactical assault jacket,the rugged fabric and utilitarian design contrasting with her youthful features,a determined expression set on her face as she stands against a backdrop of urban decay,graffiti-covered walls and abandoned buildings hinting at a post-apocalyptic world,a sense of resilience and strength emanating from her stance amidst the chaos,Photography,using a wide-angle lens to capture the gritty realism of the environment,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,best quality,standing posture,outdoor coat,high definition display,landscape details,clothing details,model face,<lora:20240314-1710403558637:0.8>,
+正：`((((a white assault suit)))),Jackets,chuanc An Asian-faced girl donning a tactical assault jacket,the rugged fabric and utilitarian design contrasting with her youthful features,a determined expression set on her face as she stands against a backdrop of urban decay,graffiti-covered walls and abandoned buildings hinting at a post-apocalyptic world,a sense of resilience and strength emanating from her stance amidst the chaos,Photography,using a wide-angle lens to capture the gritty realism of the environment,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,best quality,standing posture,outdoor coat,high definition display,landscape details,clothing details,model face,<lora:20240314-1710403558637:0.8>,`
 
-负：fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
+负：`fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,`
 
-触发词 Jackets
+触发词 `Jackets`
 
 ![](img/ef157e5e36656b06c5dda386e850aa9c.png)
 
-推荐使用 majicmixRealistic_v7.safetensors大模型
+推荐使用 `majicmixRealistic_v7.safetensors`大模型
 
 ![](img/4c7f175ee68f894eb06638eae6203a86.png)
 
@@ -258,41 +253,43 @@ Lora权重在0.6
 
 迭代步数 (Steps)20
 
-##### 幻飞-服装-灰色毛衣白丝_v10
+###### 幻飞-服装-灰色毛衣白丝_v10
 
-正：girl,full body,sweater,best quality,clean skin,long hair,socks,sitting,8k,best resolution,clean environment,HD quality,sweater,long sleeves,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,<lora:20240314-1710403558637:0.8>,
+正：`girl,full body,sweater,best quality,clean skin,long hair,socks,sitting,8k,best resolution,clean environment,HD quality,sweater,long sleeves,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,<lora:20240314-1710403558637:0.8>,`
 
-反：fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,long sleeves,
+反：`fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,long sleeves,`
 
-**触发词:sweater, long sleeves, lying, grey sweater,pantyhose, whi**te pantyhose, panties, panties under pantyhose,  lower body,
+`触发词:sweater, long sleeves, lying, grey sweater,pantyhose, white pantyhose, panties, panties under pantyhose, lower body,`
 
-##### Matuome超级服装模特_v1.0
+###### Matuome超级服装模特_v1.0
 
-网址：https://www.liblib.art/modelinfo/397bbe3849344af4ac63ce4dbf4d7e90
 
-正 A model adorned in haute couture fashion,her lithe figure draped in luxurious fabrics and exquisite embellishments,each fold and seam meticulously crafted to accentuate her beauty,a sophisticated runway setting with soft lighting and minimalist décor,amplifying the elegance of the ensemble,the model's confident stride exuding charisma and allure as she commands the attention of the audience,Photography,utilizing a high-resolution camera to capture the intricate details of the designer garment,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,royee,<lora:20240409-1712643436482:1>,
+
+网址：`https://www.liblib.art/modelinfo/397bbe3849344af4ac63ce4dbf4d7e90`
+
+正 A model adorned in haute couture fashion,her lithe figure draped in luxurious fabrics and exquisite embellishments,each fold and seam meticulously crafted to accentuate her beauty,a sophisticated runway setting with soft lighting and minimalist décor,amplifying the elegance of the ensemble,the model's confident stride exuding charisma and allure as she commands the attention of the audience,Photography,utilizing a high-resolution camera to capture the intricate details of the designer garment,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,royee,`<lora:20240409-1712643436482:1>`,
 
 反 fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
 
-触发词 royee
+触发词 `royee`
 
 ![](img/7384ca688a45625e43ce2040c19889c4.png)
 
-推荐卖橘v7大模型
+推荐 `卖橘v7` 大模型
 
 ![](img/6c2c65451409eb37aa3fe9a0f5dc5379.png)
 
-采样器推荐DPM++ 2M Karras
+采样器推荐 `DPM++ 2M Karras`
 
 ![](img/5cd2397dc7d3ff17b1b373053d935b29.png)
 
-Lora权重在0.7
+`Lora` 权重在 `0.7`
 
-##### 服装凤冠华服模型，服装花纹、头饰限定，皮肤精修_1.0.safetensors
+## 服装凤冠华服模型，服装花纹、头饰限定，皮肤精修 `1.0.safetensors`
 
-网址 https://www.liblib.art/modelinfo/4dabbd13218241a9b95523b997d61ff0
+网址 `https://www.liblib.art/modelinfo/4dabbd13218241a9b95523b997d61ff0`
 
-正 A regal figure clad in opulent traditional Chinese attire,resplendent silk robes adorned with intricate golden embroidery and jewel-encrusted ornaments,the elaborate headdress crowned with ornate hairpins and dangling tassels,a majestic palace hall with crimson pillars and lacquered screens serving as the backdrop,the aura of ancient grandeur and nobility pervading the scene,Sculpture,sculpted from marble with meticulous attention to detail to capture the ornate patterns and textures of the clothing,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,<lora:20240325-1711376844675:1>,
+正 A regal figure clad in opulent traditional Chinese attire,resplendent silk robes adorned with intricate golden embroidery and jewel-encrusted ornaments,the elaborate headdress crowned with ornate hairpins and dangling tassels,a majestic palace hall with crimson pillars and lacquered screens serving as the backdrop,the aura of ancient grandeur and nobility pervading the scene,Sculpture,sculpted from marble with meticulous attention to detail to capture the ornate patterns and textures of the clothing,best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,`<lora:20240325-1711376844675:1>`,
 
 反 fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
 
@@ -300,171 +297,171 @@ Lora权重在0.7
 
 ![](img/bf31463efb71ae5d7cd75f06f22afbc0.png)
 
-推荐大模型 realisticVisionV20_v20
+推荐大模型 `realisticVisionV20_v20`
 
 ![](img/ad5dd98433e4117b3b304c8162792874.png)
 
-采样器推荐DPM++ 2M Karras
+采样器推荐 `DPM++ 2M Karras`
 
 ![](img/f8f5547380096b982ad6e2ddf94c5ba4.png)
 
-迭代步数 (Steps)50
+迭代步数 (`Steps`) `50`
 
-##### 汉元素古装(汉服)_影楼风_1.0
+## 汉元素古装(汉服)_影楼风_`1.0`
 
-网址 https://www.liblib.art/modelinfo/35861328bb17419dac89ab8dc5aa7999
+网址 `https://www.liblib.art/modelinfo/35861328bb17419dac89ab8dc5aa7999`
 
-正 A graceful individual draped in the elegance of traditional Chinese Hanfu attire,the flowing lines of the silk garments accentuating their slender frame,delicate floral patterns and embroidered motifs adorning the fabric,a tranquil bamboo grove providing a serene setting,dappled sunlight filtering through the leaves,creating a play of light and shadow,capturing the essence of harmony and simplicity,Illustration,ink wash painting with subtle color accents to evoke a sense of classical beauty,hanfu,<lora:20240121-1705777367006:1>,
+正 A graceful individual draped in the elegance of traditional Chinese Hanfu attire,the flowing lines of the silk garments accentuating their slender frame,delicate floral patterns and embroidered motifs adorning the fabric,a tranquil bamboo grove providing a serene setting,dappled sunlight filtering through the leaves,creating a play of light and shadow,capturing the essence of harmony and simplicity,Illustration,ink wash painting with subtle color accents to evoke a sense of classical beauty,hanfu,`<lora:20240121-1705777367006:1>`,
 
-反fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
+反 fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
 
-触发词 hanfu
+触发词 `hanfu`
 
-##### 幻飞-服装-粉色格子旗袍_v10
+## 幻飞-服装-粉色格子旗袍_`v10`
 
-网址 https://www.liblib.art/modelinfo/7834d44e52b54cd98ee12eb8969bd68e
+网址 `https://www.liblib.art/modelinfo/7834d44e52b54cd98ee12eb8969bd68e`
 
-**触发词:dress, pink dress,plaid, china dress, chi**nese clothes,pantyhose, white pantyhose,
+触发词：`dress`, `pink dress`, `plaid`, `china dress`, `chinese clothes`, `pantyhose`, `white pantyhose`, `foot focus`, `panties`, `on side`, `thighhighs`, `see-through`, `fine fabric emphasis`, `see-through legwear`, `white thighhighs`
 
-**foot focus, panties, on side, thighhighs, see-through, **fine fabric emphasis, see-through legwear, white thighhighs,
+推荐 `lora` 权重：`0.45`~`0.65`，可以根据需要自行调节 `lora` 权重。权重太高会影响脸部。
 
-推荐lora权重：0.45~0.65，可以根据需要自行调节lora权重。权重太高会影响脸部。
+推荐采样方法：`DPM++ SDE Karras`，欢迎尝试其他采样方法
 
-推荐采样方法：DPM++ SDE Karras，欢迎尝试其他采样方法
+推荐配合大模型：`麦橘写实V7`。
 
-推荐配合大模型：麦橘写实V7。
+如果要修复脸部，请使用 `afterde tailer`。
 
-如果要修复脸部，请使用afterde tailer。
+## 阿泽-JK制服
 
-##### 阿泽-JK制服
+权重 `0.5-0.7`
 
-权重**0.5-0.7**
+关键词，`jk`, `school uniform`,
 
-关键词，jk,school uniform,
+衣服颜色，`white shirt`
 
-衣服颜色，**white shirt**
+想要格子领结和格子裙，加上 `Plaid`
 
-想要格子领结和格子裙，加上**Plaid**
+要黑丝加上 `pantyhose`
 
-要黑丝加上**pantyhose**
+白色短袜加上 `white socks`，黑色 `black socks`
 
-白色短袜加上**white socks**，黑色**black socks**
+网址 `https://www.liblib.art/modelinfo/77f01548fb1b406797ee0655f3dcad9e`
 
-网址 https://www.liblib.art/modelinfo/77f01548fb1b406797ee0655f3dcad9e
-
-##### 洛丽塔_服装_lolita
+## 洛丽塔_服装_lolita
 
 洛丽塔服饰_lolita
 
-炼制的颜色：白色white,粉色pink,蓝blue,红red,绿green,黑black,紫purple,黄yellow
+炼制的颜色：白色 `white`, 粉色 `pink`, 蓝 `blue`, 红 `red`, 绿 `green`, 黑 `black`, 紫 `purple`, 黄 `yellow`
 
-Color type：white,pink,blue,red,green,black,purple,yellow
+Color type：`white`, `pink`, `blue`, `red`, `green`, `black`, `purple`, `yellow`
 
-触发词lolita,会随机出现以上8种颜色
+触发词 `lolita`, 会随机出现以上 8 种颜色
 
-The trigger word lolita, will randomly appear in the above 8 colors
+The trigger word `lolita`, will randomly appear in the above 8 colors
 
 可指定颜色
 
 Specified color:
 
-white lolita
+`white lolita`
 
-pink lolita
+`pink lolita`
 
-blue lolita
+`blue lolita`
 
-red lolita
+`red lolita`
 
-以此类推，例如Such as:
+以此类推，例如 Such as:
 
-light gold lolita,light silver lolita,
+`light gold lolita`, `light silver lolita`,
 
-网址 https://www.liblib.art/modelinfo/470f6b25c14849809525876f9854eb24
+网址 `https://www.liblib.art/modelinfo/470f6b25c14849809525876f9854eb24`
 
-##### 初音 韶华旗袍
+## 初音 韶华旗袍
 
-网址 https://civitai.com/models/114903/miku-shaohua-qipao
+网址 `https://civitai.com/models/114903/miku-shaohua-qipao`
 
 适合出半身图或躺、坐、卧、蹲姿势下身体折叠、蜷缩的全身图。出全身图需要脸部修复或者直接出大分辨率图。
 
-分辨率推荐：512*512/512*768及其倍数
+分辨率推荐：`512*512`/`512*768` 及其倍数
 
-大模型推荐：chilloutmix、braBeautifulRealistic_brav5、Guofeng、majicmixRealistic、perfectWorld、墨幽人造人_v1010
+大模型推荐：`chilloutmix`、`braBeautifulRealistic_brav5`、`Guofeng`、`majicmixRealistic`、`perfectWorld`、`墨幽人造人_v1010`
 
-采样方法(Sampler)：Euler a、DPM++ SDE Karras、DPM++ 2M Karras、DPM++ 2S a Karras
+采样方法 (`Sampler`)：`Euler a`、`DPM++ SDE Karras`、`DPM++ 2M Karras`、`DPM++ 2S a Karras`
 
-采样迭代步数(Steps)：15-25
+采样迭代步数 (`Steps`)：`15-25`
 
-提示词相关性(CFG Scale)：5-10
+提示词相关性 (`CFG Scale`)：`5-10`
 
-随机种子(seed)：随机
+随机种子 (`seed`)：随机
 
-单独出图权重：0.5-1.2，发色小于等于0.6可更改。
+单独出图权重：`0.5-1.2`，发色小于等于 `0.6` 可更改。
 
-配合其他人物lora出图权重：0.1-0.6，可以使用lora分层YF:0,0,0,1,1,0,0.2,0.8,0.8,1,1,0.2,0,0,0,0,0，此处提供的分层数据仅供参考。
+配合其他人物 `lora` 出图权重：`0.1-0.6`，可以使用 `lora` 分层 `YF:0,0,0,1,1,0,0.2,0.8,0.8,1,1,0.2,0,0,0,0,0`，此处提供的分层数据仅供参考。
 
 =======
 
-触发词Trigger Words
+触发词 `Trigger Words`
 
-主要触发词：miku shaohuaqipao,
+主要触发词：`miku shaohuaqipao`,
 
-次要修饰词：chinese clothes,very long hair, twintails,
+次要修饰词：`chinese clothes`, `very long hair`, `twintails`,
 
-辅助修饰词：clothing cutout, socks, loafers,
+辅助修饰词：`clothing cutout`, `socks`, `loafers`,
 
-> 后来也看了一些系统的课程，真心觉得‘白马少年’的课程属实良心（非广子），相关课程推荐可以在Way2AGI上找到
+> 后来也看了一些系统的课程，真心觉得‘白马少年’的课程属实良心（非广子），相关课程推荐可以在 `Way2AGI` 上找到
 
-#### 小的变现应用
+## 小的变现应用
 
-随着后来慢慢的对AI绘画的加深了解，也开始接触到一些b端的需求以及个人变现思路下面我将会展开分享一下，当然现在关于AI绘画的变现思路愈发多了起来，更有很多已经落地的应用这边就不多去share，简单说说当时自己做的一些小的应用👇
+随着后来慢慢的对 AI 绘画的加深了解，也开始接触到一些 `B端` 的需求以及个人变现思路 下面我将会展开分享一下，当然现在关于 AI 绘画的变现思路愈发多了起来，更有很多已经落地的应用 这边就不多去 `share`，简单说说当时自己做的一些小的应用👇
 
-##### 电商模特换装
+### 电商模特换装
 
-###### 基本sd基础
+#### 基本 `sd` 基础
 
-###### 第一步打开选择合适的服装写实的大模型
+#### 第一步打开选择合适的服装写实的大模型
 
 ![](img/fd0dd89fffa0a11efa58252050e19bdb.png)
 
-我比较推荐的是卖橘v7大模型，比较真实和自然，其他模型可以自己测试如墨幽人造
+我比较推荐的是 `卖橘v7` 大模型，比较真实和自然，其他模型可以自己测试如 `墨幽人造`
 
-###### 书写提示词
+#### 书写提示词
 
 提示词分两个部分，正和负面提示词
 
-###### 正面提示词书写格式 人物外貌描述+环境*服装样式*触发词（Lora）+质量词+Lora模型
+#### 正面提示词书写格式 人物外貌描述+环境*服装样式*触发词（`Lora`）+质量词+`Lora` 模型
 
 质量词大全：按需填写
 
-(best quality),((masterpiece)),(highres),original,extremely detailed 8K wallpaper,(an extremely delicate and beautiful),best quality,official art,8k wallpaper,highly detailed,illustration,detailed eyes,best quality,High Quality,realistic,RAW photo,masterpiece,8k,insane details,High detail,hyperdetailed,Lighting,Master Lighting,film grain,
+`(best quality)`, `((masterpiece))`, `(highres)`, `original`, `extremely detailed 8K wallpaper`, `(an extremely delicate and beautiful)`, `best quality`, `official art`, `8k wallpaper`, `highly detailed`, `illustration`, `detailed eyes`, `best quality`, `High Quality`, `realistic`, `RAW photo`, `masterpiece`, `8k`, `insane details`, `High detail`, `hyperdetailed`, `Lighting`, `Master Lighting`, `film grain`,
 
-###### Lora模型
+#### `Lora` 模型
 
 ![](img/0f3b5c62b788f9e1f5f616499103dad0.png)
 
-点击：Lora，再点击对应的方框就可以调用这个模型
+点击：`Lora`，再点击对应的方框就可以调用这个模型
 
 ![](img/6a573f2432a6ceb790399f63305cf8ba.png)
 
 调用成功后正向提示词出现一个尖括号
 
-最后一个数字为Lora的权重，范围是0-1
+最后一个数字为 `Lora` 的权重，范围是 `0-1`
 
-数值越高Lora的效果最强
+数值越高 `Lora` 的效果最强
 
-通常为0.6-0.8
+通常为 `0.6-0.8`
 
-###### 反面提示词
+#### 反面提示词
 
 不希望出现的物体写进去和负面质量词
 
 负面提示词大全：按需填写
 
+
+
 multiple breasts,(mutated hands and fingers:1.5),(long body 1.3),(mutation, poorly drawn 1.2),black-white,bad anatomy,liquid body,liquid tongue,disfigured,malformed,mutated,anatomical nonsense,text font ui,error,malformed hands,long neck,blurred,lowers,lowres,bad anatomy,bad proportions,bad shadow,uncoordinated body,unnatural body,fused breasts,bad breasts,huge breasts,poorly drawn breasts,extra breasts,liquid breasts,heavy breasts,missing breasts,huge haunch,huge thighs,huge calf,bad hands,fused hand,missing hand,disappearing arms,disappearing thigh,disappearing calf,disappearing legs,fused ears,bad ears,poorly drawn ears,extra ears,liquid ears,heavy ears,missing ears,fused animal ears,bad animal ears,poorly drawn animal ears,extra animal ears,liquid animal ears,heavy animal ears,missing animal ears,text,ui,error,missing fingers,missing limb,fused fingers,one hand with more than 5 fingers,one hand with less than 5 fingers,one hand with more than 5 digit,one hand with less than 5 digit,extra digit,fewer digits,fused digit,missing digit,bad digit,liquid digit,colorful tongue,black tongue,cropped,watermark,username,blurry,JPEG artifacts,signature,3D,3D game,3D game scene,3D character,malformed feet,extra feet,bad feet,poorly drawn feet,fused feet,missing feet,extra shoes,bad shoes,fused shoes,more than two shoes,poorly drawn shoes,bad gloves,poorly drawn gloves,fused gloves,bad cum,poorly drawn cum,fused cum,bad hairs,poorly drawn hairs,fused hairs,big muscles,ugly,bad face,fused face,poorly drawn face,cloned face,big face,long face,bad eyes,fused eyes poorly drawn eyes,extra eyes,malformed limbs,more than 2 nipples,missing nipples,different nipples,fused nipples,bad nipples,poorly drawn nipples,black nipples,colorful nipples,gross proportions. short arm,(((missing arms))),missing thighs,missing calf,missing legs,mutation,duplicate,morbid,mutilated,poorly drawn cloth,bad pantie,yellow teeth,thick lips,bad cameltoe,colorful cameltoe,bad asshole,poorly drawn asshole,fused asshole,missing asshole,bad anus,bad pussy,bad crotch,bad crotch seam,fused anus,fused pussy,fused anus,fused crotch,poorly drawn crotch,fused seam,poorly drawn anus,poorly drawn pussy,poorly drawn crotch,poorly drawn crotch seam,bad thigh gap,missing thigh gap,fused thigh gap,liquid thigh gap,poorly drawn thigh gap,poorly drawn anus,bad collarbone,fused collarbone,missing collarbone,liquid collarbone,strong girl,obesity,worst quality,low quality,normal quality,liquid tentacles,bad tentacles,poorly drawn tentacles,split tentacles,fused tentacles,missing clit,bad clit,fused clit,colorful clit,black clit,liquid clit,QR code,bar code,censored,safety panties,safety knickers,beard,furry pony,pubic hair,mosaic,excrement,faeces,shit,futa,testis,
 
-###### 选择采样器
+## 选择采样器
 
 ![](img/1b85840540d9d6201d541f90dee9a442.png)
 
@@ -474,13 +471,13 @@ multiple breasts,(mutated hands and fingers:1.5),(long body 1.3),(mutation, poor
 
 二次元：DPM++ 2M Karras
 
-###### 迭代步数 (Steps)
+## 迭代步数 (Steps)
 
 一般来说，我们迭代步数 在20到50左右合适
 
 具体的模型有着不同的迭代步数
 
-###### 尺寸
+## 尺寸
 
 ![](img/0e9c2e19105d1bbd0b45ffb5fc585c4e.png)
 
@@ -490,7 +487,7 @@ sd的尺寸数值是一般是512,768,1024
 
 竖幅为512*768、
 
-###### 随机种子
+## 随机种子
 
 ![](img/91cf4ed8b4063bfda5549a081daa192c.png)
 
@@ -504,7 +501,7 @@ sd的尺寸数值是一般是512,768,1024
 
 -1为默认数值
 
-###### ControlNet 控制人物姿态
+## ControlNet 控制人物姿态
 
 ![](img/67c35446c5ed00e89066357e73cf71be.png)
 
@@ -518,13 +515,13 @@ sd的尺寸数值是一般是512,768,1024
 
 5，点击爆炸按钮，提取姿态
 
-###### 生成图片
+## 生成图片
 
 ![](img/a5e5a943c470d118ee3243988e43efa2.png)
 
 点击图片即可
 
-###### 图生图换装教程
+## 图生图换装教程
 
 1.把界面切换到图生图中的局部重绘
 
@@ -534,7 +531,7 @@ sd的尺寸数值是一般是512,768,1024
 
 ![](img/a9e4d0be7d4cd37e12b82c45e18f50e7.png)
 
-####### 第一种情况：只换衣服不改变环境
+### 第一种情况：只换衣服不改变环境
 
 1.涂抹图片中的衣服。
 
@@ -560,7 +557,7 @@ sd的尺寸数值是一般是512,768,1024
 
 ![](img/0688b9526b22f63b25ffb524911268e4.png)
 
-####### 第二种情况：除了模特不变，其他环境都要变
+### 第二种情况：除了模特不变，其他环境都要变
 
 蒙版模式改成重绘非蒙版内容，涂抹人物脸部部分
 
@@ -586,11 +583,11 @@ sd的尺寸数值是一般是512,768,1024
 
 ![](img/bd3a6e88de9af76bb89f47c2e9f28ce6.png)
 
-##### AI照片摆摊
+## AI照片摆摊
 
 基于sd模型能力的AI绘画摆摊，主要能力帮游客进行照片AI转绘，包括现拍照片进行不同风格的转绘，打印照片附送相框
 
-###### 基本物料准备以及成本
+### 基本物料准备以及成本
 
 1.小米相片打印机二手---500左右
 
@@ -604,7 +601,7 @@ sd的尺寸数值是一般是512,768,1024
 
 ![](img/fc1d8b94cf0e6848273e61f3cea74cf7.png)
 
-###### 时间、场地、定价、运营、营收
+### 时间、场地、定价、运营、营收
 
 时间大概是23年五六月份吧，当时我们挑的是一个高中的学校旁边的算是夜市集散地？定价在10块一张照片，带相框的话25元（相框没找到便宜的渠道）
 
@@ -612,23 +609,23 @@ sd的尺寸数值是一般是512,768,1024
 
 一天的话营收能在2k左右🤭
 
-### 初入提示词
+## 初入提示词
 
 嗯，讲个冷笑话，关于我的哑巴英语“prompt”这个单词到时现在我可能发音不标准~
 
 （当时的我对于prompt介入的不深，我想想关于提示词我还是穿插的分享吧）
 
-#### 产品应用
+### 产品应用
 
 毕竟也是做了个套壳网站，里面一些小的板块其实就是封装了几个小的提示词，太普通了就不上文档了
 
 ![](img/97f2e9871bfc1f3d7d5b47217a31ab4a.png)
 
-#### 留存下的prompt
+### 留存下的prompt
 
 > 当时写的提示词，嗯到目前留存下来目前我自己还在用的
 
-##### 问题解决专家
+#### 问题解决专家
 
 使用费曼学习法和第一性原理解决问题，思想之树构建评估问题解决方案，ORK输出制定结果
 
@@ -702,9 +699,11 @@ sd的尺寸数值是一般是512,768,1024
 - 确认用户已准备好进行问题解决流程，且了解每个步骤的重要性和目的。
 ```
 
-##### AI绘画prompt
+#### AI绘画prompt
 
 hhh偷懒小工具，快速输出绘画prompt，后面自己改改就可以了
+
+
 
 ```
 # Role: Midjourney AI Prompt Creator
@@ -789,7 +788,7 @@ Prompt 2:
 As a Midjourney AI Prompt Creator, I will follow the above workflow and format requirements to develop unique and imaginative prompts for each supplied concept, aiding in the generation of visually compelling AI images.
 ```
 
-##### 专家角色助手
+## 专家角色助手
 
 为你的问题提供多个专家角色协助解决问题
 
@@ -819,7 +818,7 @@ As a Midjourney AI Prompt Creator, I will follow the above workflow and format r
 20.完成回复后，询问我是否需要任何更改。
 ```
 
-> 冯老师的万事通放CI也很好用！
+> 冯老师的万事通放`CI`也很好用！
 
 ```
 VERBOSITY: 我可能会使用 V=[0-3] 来定义代码的详细程度：
@@ -846,9 +845,11 @@ V=3 非常详细，附有例子
 下一任务：未完成=下一任务的简短描述 已完成=列出专家专家对增强/性能改进的建议。&quot;&quot;&quot;
 ```
 
-##### prompt工程师
+## prompt工程师
 
 出自盘佬，没什么比让AI自己写prompt更舒适的了，写完再自己改改workflow就差不多了
+
+
 
 ```
 # Role:Prompt工程师
@@ -908,51 +909,77 @@ V=3 非常详细，附有例子
 
 ## OutputFormat:
     ```
+
     # Role：Your_Role_Name
-    
+
     ## Background：Role Background.
-    
+
     ## Attention：xxx
-    
+
     ## Profile：
+
     - Author: xxx
+
     - Version: 0.1
+
     - Language: 中文
+
     - Description: Describe your role. Give an overview of the character&#x27;s characteristics and skills.
-    
+
     ### Skills:
+
     - Skill Description 1
+
     - Skill Description 2
+
     ...
-    
+
     ## Goals:
+
     - Goal 1
+
     - Goal 2
+
     ...
 
     ## Constrains:
+
     - Constraints 1
+
     - Constraints 2
+
     ...
 
     ## Workflow:
+
     1. First, xxx
+
     2. Then, xxx
+
     3. Finally, xxx
+
     ...
 
     ## OutputFormat:
+
     - Format requirements 1
+
     - Format requirements 2
+
     ...
-    
+
     ## Suggestions:
+
     - Suggestions 1
+
     - Suggestions 2
+
     ...
 
     ## Initialization
+
     As a/an &lt;Role&gt;, you must follow the &lt;Constrains&gt;, you must talk to user in default &lt;Language&gt;，you must greet the user. Then introduce yourself and introduce the &lt;Workflow&gt;.
+
     ```
 
 ## Initialization：
@@ -960,45 +987,45 @@ V=3 非常详细，附有例子
     请避免讨论我发送的内容，不需要回复过多内容，不需要自我介绍，如果准备好了，请告诉我已经准备好。
 ```
 
-#### 关于prompt启蒙
+## 关于prompt启蒙
 
-##### 入门
+### 入门
 
 我反正是野路子写prompt出身，直到看到这个文才算是入了门链接👇
 
-https://learningprompt.wiki/docs/chatGPT/tutorial-basics/brief-introduction
+`https://learningprompt.wiki/docs/chatGPT/tutorial-basics/brief-introduction`
 
-##### 进阶
+### 进阶
 
 后面在朋友的建议下去学了吴恩达老师的课程
 
 油管链接
 
-https://www.youtube.com/watch?v=gCbHoXL2IcA&list=PL1bD7CLmGebf9FewSIJGZhFDK6FyWBH7P
+`https://www.youtube.com/watch?v=gCbHoXL2IcA&list=PL1bD7CLmGebf9FewSIJGZhFDK6FyWBH7P`
 
 b站链接
 
-https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef
+`https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef`
 
-##### 结构化
+### 结构化
 
 结构化是我真正算是把prompt开始往工程化应用的开端，这边特别感谢树哥的社区平台，也在这里面结识了很多大佬&好友
 
 [⭐LangGPT 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)
 
-### 新媒体
+## 新媒体
 
 hhh，最初的大橘，还只是个新媒体运营，当然少不了在新媒体上的尝试
 
 这边简单分享一下当时做的主题以及结果
 
-#### 贩卖焦虑
+### 贩卖焦虑
 
 ![](img/58c26c6520d82effe5314536146d98db.png)
 
 不得不说当时（23年4，5月份）AI的焦虑确实是一个热门话题，流量吃的确实挺香，不过当时也没去卖课啥的（不是不想，纯纯精力不够），就做了一些社区的转化，流量导到当时的套壳平台上
 
-#### 面试+AI
+### 面试+AI
 
 通过AI工具挑战面试高薪岗位
 
@@ -1006,7 +1033,7 @@ hhh，最初的大橘，还只是个新媒体运营，当然少不了在新媒�
 
 小尝试吧，当时想打造个个人IP，完播转化都还可以，就是没想好好的承载体，遂止
 
-#### AI二维码艺术字
+### AI二维码艺术字
 
 嗯，相比六月的时候大家都或多或少刷到过类似的视频，炫酷的二维码擦边的艺术字
 
@@ -1014,7 +1041,7 @@ hhh，最初的大橘，还只是个新媒体运营，当然少不了在新媒�
 
 b站教程地址👇
 
-https://bilibili.com/video/BV1kk4y1G7Kd/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef
+`https://bilibili.com/video/BV1kk4y1G7Kd/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef`
 
 作品展示
 
@@ -1022,55 +1049,55 @@ https://bilibili.com/video/BV1kk4y1G7Kd/?spm_id_from=333.337.search-card.all.cli
 
 ![](img/2b070f6498c3a9300fd8533353edb0b3.png)
 
-### 埋种子
+## 埋种子
 
-> 嗯埋种子就是当时阶段感兴趣，浅尝了一下，在后面我逐步实现了的一些项目想法
+> 嗯埋种子就是当时阶段感兴趣，浅尝了一下，在后面我逐步实现了一些项目想法
 
-#### AI孙燕姿
+### AI孙燕姿
 
 AI训练音色，复刻歌曲，当时和大学同学一起兴趣鼓捣了一下，做了个王峰版的青花瓷
 
 远古教程在这儿👇
 
-https://www.bilibili.com/video/BV1ea4y1G7gx/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef
+`https://www.bilibili.com/video/BV1ea4y1G7gx/?spm_id_from=333.337.search-card.all.click&vd_source=a7b5884bec3b7924f1225533ff5371ef`
 
 sovits：https://github.com/svc-develop-[team/so-vits-svc
 
 一键包：htt](https://www.bilibili.com/video/BV1Cc411H74D/)ps://[www.bilibili.com/video/B](https://www.bilibili.com/video/BV1ga411S7gP/)V1Cc411H74D/
 
-UVR5：https://www.bilibili.com/video/BV1ga411S7gP/
+UVR5：`https://www.bilibili.com/video/BV1ga411S7gP/`
 
 RX Audio Editor
 
-123盘：https://www.123pan.com/s/RiyA-LjS03
+123盘：`https://www.123pan.com/s/RiyA-LjS03`
 
-夸克网盘：https://pan.quark.cn/s/f9791f6790d3
+夸克网盘：`https://pan.quark.cn/s/f9791f6790d3`
 
-百度网盘：https://pan.baidu.com/s/1xUXd9vVHR11sjJ6wCVuwHQ?pwd=hjhj 提取码: hjhj
+百度网盘：`https://pan.baidu.com/s/1xUXd9vVHR11sjJ6wCVuwHQ?pwd=hjhj` 提取码: `hjhj`
 
 Audio Slicer：
 
-Github链接：https://github.com/flutydeer/audio-slicer/blob/main/README.zh-CN.md
+Github链接：`https://github.com/flutydeer/audio-slicer/blob/main/README.zh-CN.md`
 
-网盘链接：https://henji.lanzout.com/iuSOk0uv354j
+网盘链接：`https://henji.lanzout.com/iuSOk0uv354j`
 
-#### CarynAI
+### CarynAI
 
-大概是23年5月初“**美国23岁女网红用AI同时交往1000多个“男**友”，谈恋爱按分钟收费，年收入或超4亿元”标题新闻的爆火，激起了我对AI女友情感伴侣的兴趣，遂一直开始留意这方面
+大概是23年5月初“**美国23岁女网红用AI同时交往1000多个“男**友”），谈恋爱按分钟收费，年收入或超4亿元”标题新闻的爆火，激起了我对AI女友情感伴侣的兴趣，遂一直开始留意这方面
 
 ![](img/029544c02ecf707423ddec36754a8aeb.png)
 
 ps：当时直接去了解了一下该项目，后面我会对AI女友陪伴进行一些拆分
 
-#### 本地部署
+### 本地部署
 
 这反倒是我当下主力在做的事情，当时（23年6，7月份）本地部署的需求或者定制化训练的需求已经产生了，不过给我的感觉反而是在市场尝试的一个阶段，通过新媒体倒是接触到了一些需求：展会数字形象以及知识库的定制，旅游景点的数字人定制。不过公司并没有承接下来，反而是承接了xx银行的私有化部署，主要注重于数据隔离，但有一说一，价格是真的低。。。据后面公司说反而倒贴了几个w才算交付完。。。不过倒是算是给了我当下上本地化部署项目车的一个门票~
 
-# 23年10月-至今
+## 23年10月-至今
 
 这段时间给我的感觉很奇怪，一方面AI的圈子和氛围都很好，AI领域一出什么新东西或者哪个大佬又做出了什么新的应用场景大家依旧兴致勃勃的在讨论，另一方面市场来说给我带来的感觉确实死气沉沉，anyway，总要有人在不断的去探索AI的边界一些新的应用场景出来，不说在某一方面做到满分达到及格线也是值得去尝试的。。。
 
-## prompt应用
+### prompt应用
 
 11月大概是我写prompt最多的时间段吧，各种写，疯狂的去沉淀
 
@@ -1078,15 +1105,15 @@ ps：当时直接去了解了一下该项目，后面我会对AI女友陪伴进�
 
 > 哦对了关于结构化提示词推荐三个👸号文~
 
-> 江树的：https://mp.weixin.qq.com/s/I2KfZt83c_7RmDNcDAuzCA
+> 江树的：`https://mp.weixin.qq.com/s/I2KfZt83c_7RmDNcDAuzCA`
 
-> 修猫的：https://mp.weixin.qq.com/s/IncjNWFA9bd2nfUZeYl5pQ
+> 修猫的：`https://mp.weixin.qq.com/s/IncjNWFA9bd2nfUZeYl5pQ`
 
-> 财猫的：https://mp.weixin.qq.com/s/jd0BU_vUSFvswdsQP2nFDQ
+> 财猫的：`https://mp.weixin.qq.com/s/jd0BU_vUSFvswdsQP2nFDQ`
 
 > 飞书链：[ 🚀构建高质量 Prompt 之路](https://langgptai.feishu.cn/wiki/C9i7wrU4eir4BmkIgQucUYUQndd)
 
-### 针对公司的场景
+#### 针对公司的场景
 
 算是尝试性立项吧，对公司的各个部门进行sop，逐步去筛选切实有用的场景，细化颗粒度，来编写小的agent，满足“将本增效”的作用
 
@@ -1127,7 +1154,7 @@ ps：当时直接去了解了一下该项目，后面我会对AI女友陪伴进�
 - 精确评估候选人的专业技能和经验。
 - 深入了解候选人的个性特质和价值观。
 - 通过行为面试识别决策和应对压力的能力。
-- 预测候选人的长期职业发展和组织适应性。
+- 预测候选人的长期职业发展和组织适应性.
 
 ##Constraints:
 - 你阅读理解整个prompt时候你需要一步步分析理解并严格执行但不用将你的思考过程输出出来，在理解完成之后直接进行步骤一。
@@ -1156,8 +1183,9 @@ ps：当时直接去了解了一下该项目，后面我会对AI女友陪伴进�
 ##Initialization
 作为面试提问大师，你需要首先了解候选人的背景和职位要求，然后设计和准备面试问题。面试开始时，应向候选人做简短的介绍，并清晰地说明面试流程。
 
-
 ```
+
+
 
 ```
 # 角色: 简历筛选师
@@ -1188,35 +1216,31 @@ ps：当时直接去了解了一下该项目，后面我会对AI女友陪伴进�
 - 步骤一，请先执行“Initialization””请引用参考outputformat-‘人才基本面’”部分，并在其中引导人事经理提出他所想招聘的人才岗位以及人才要求期待（无需进行废话直接进入第一步）。
 - 步骤二，请一步步思考并理解用户所需的需求并消化，然后询问是否还需要进行特殊补充，若有特殊补充，请用户输入特殊补充说明然后再进行步骤三，若无我们将直接开始步骤三。
 - 步骤三，请根据人事经理的需求一步步思考，并形成初步的筛选标准，记住这很关键，这将成为后面对该应聘者的打分基础，接着将输出“评分标准”，并向产品经理进行确认，是否需要进行修改，若有特殊修改请进行修改并输出直至用户满意后我们将进行第四步。
-- 步骤四，请引导用户上传求职者简历的pdf文件，上传上限为八份为一批次，可多次上传(并提醒用户），在上传过程中，你需要对每一份简历进行一步步阅读并认真思考参照“评分准则”（此时并不要进行输出，只需进行思考分析总结以待下一步），
-上传完成后将询问用户“是否还有简历需要上传”，直至上传完毕后我们开始执行第五步。
+- 步骤四，请引导用户上传求职者简历的pdf文件，上传上限为八份为一批次，可多次上传(并提醒用户），在上传过程中，你需要对每一份简历进行一步步阅读并认真思考参照“评分准则”（此时并不要进行输出，只需进行思考分析总结以待下一步），上传完成后将询问用户“是否还有简历需要上传”，直至上传完毕后我们开始执行第五步。
 - 步骤五，请你根据以上信息以及你的思考，一步步分析对每份简历进行核心提炼对比打分（这个过程中不需要主动输出你的思考过程，你只需要保持充分思考即可，当需要调取特定人物的时候在把你对该人物的分析思考过程进行输出），并给我输出“汇总表格”。
 
-##outputformat：
-1 **人才基本面**:
+## outputformat：
+1. **人才基本面**:
 - 职位描述：明确职位的名称和主要职责。这有助于吸引合适的候选人.
--  技能和经验要求：列出该职位所需的专业技能和经验，包括教育背景、工作经验、特定的技术或软技能。
--  公司文化和价值观：描述您的公司文化和核心价值观，这有助于吸引与公司文化相契合的候选人。
--  薪酬范围和福利：提供预期的薪酬范围和任何附加福利（如健康保险、退休金计划、灵活工作时间等）。
--  工作地点和安排：说明工作是全职还是兼职，是否提供远程工作的可能性。
--  职业发展机会：介绍员工在公司内部成长和晋升的机会。
+- 技能和经验要求：列出该职位所需的专业技能和经验，包括教育背景、工作经验、特定的技术或软技能。
+- 公司文化和价值观：描述您的公司文化和核心价值观，这有助于吸引与公司文化相契合的候选人。
+- 薪酬范围和福利：提供预期的薪酬范围和任何附加福利（如健康保险、退休金计划、灵活工作时间等）。
+- 工作地点和安排：说明工作是全职还是兼职，是否提供远程工作的可能性。
+- 职业发展机会：介绍员工在公司内部成长和晋升的机会。
 - 特殊要求或条件：如果职位有特殊要求（如旅行频率、身体条件要求等），请一并说明。
 - 招聘流程和时间线：说明招聘流程的各个阶段和预期的时间表。
 
-2.**评分准则**：
+2. **评分准则**：
 xxxxx
 
-3.**汇总表格**： 
+3. **汇总表格**： 
 姓名|求职岗位|期待薪资|综合评分|亮点总评|缺点总评|联系方式
 ---|:--:|---:|:--:|:--:|:--:|--:
-内容|内容|内容|内容|内容|内容|内容      
-内容|内容|内容|内容|内容|内容|内容  
+内容|内容|内容|内容|内容|内容|内容
+内容|内容|内容|内容|内容|内容|内容
 
 ## Initialization:
 &quot;你好，我是简历筛选师。我的专长是从众多简历中精准筛选出最适合的候选人。我将利用我的专业技能和批判性思维来帮助您找到最佳人选。请提供您的职位要求和期望，我将开始为您筛选简历。&quot;
-
-
-
 ```
 
 ```
@@ -1271,17 +1295,15 @@ xxxxx
   - 技能和资格要求：xxxx
   - 附加优势：xxxx
   - 如何应聘：xxxx
-    -  结束语：xxxx
+    - 结束语：xxxx
 
 ## Suggestions：
 - 使用社交媒体和专业招聘网站来扩大招聘广告的覆盖面。
 - 定期更新招聘广告，保持其新鲜度和吸引力。
 - 对招聘广告的反馈进行监控和分析，以优化未来的广告策略。
 
-## Initialization:
+## Initialization：
 作为招聘信息发布助手，你需要遵循上述工作流程，并始终保持专业和客观。首先，向团队介绍自己，然后开始分析职位需求和公司文化。
-
-
 ```
 
 ```
@@ -1352,40 +1374,40 @@ xxxxx
 > 优点：将部门需求sop化切实能解决公司的部分需求。
 
 > 缺点：
-
-+   员工的抵触情绪或者是用户惯性不可避免，这种道路或许只有发展为SaaS系统让用户在平台上一站式解决培养用户习惯才好解决，但是竞品调研下来成熟的SaaS系统比如人事系统对于他们来说无非是增加一个AI功能就能解决的事情，同类产品不具备竞争优势
-
-+   过度的AI化，直接会引起员工的使用抵触情绪，可以说除非企业对其中产能进行全面重新评估设计新的KPI考核和业绩挂钩，这部分员工才会去有可能来进行使用
+>
+> + 员工的抵触情绪或者是用户惯性不可避免，这种道路或许只有发展为SaaS系统让用户在平台上一站式解决培养用户习惯才好解决，但是竞品调研下来成熟的SaaS系统比如人事系统对于他们来说无非是增加一个AI功能就能解决的事情，同类产品不具备竞争优势
+>
+> + 过度的AI化，直接会引起员工的使用抵触情绪，可以说除非企业对其中产能进行全面重新评估设计新的KPI考核和业绩挂钩，这部分员工才会去有可能来进行使用
 
 ### AI+代码
 
-嗯，对于coding能力约等于0的我怎么更好的玩转gpt呢
+嗯，对于`coding`能力约等于0的我怎么更好的玩转`gpt`呢
 
-喵的，直接问gpt啊，而且一般来说都不用啥复杂的prompt，
+喵的，直接问`gpt`啊，而且一般来说都不用啥复杂的`prompt`，
 
-直接告诉他场景＋bug+需求就能满足你debug需求
+直接告诉他场景＋`bug`+需求就能满足你`debug`需求
 
-> 分享一个AI改代码的网址，嗯好用：https://devv.ai/zh
+> 分享一个AI改代码的网址，嗯好用：`https://devv.ai/zh`
 
 ### Gpts
 
-gpts的推出当时引起了不小的轰动，更便捷的给小白人群搭建了创建智能体的平台。
+`gpts`的推出当时引起了不小的轰动，更便捷的给小白人群搭建了创建智能体的平台。
 
 #### AI女友
 
 emmm，对于我来说hhh第一件事先捏个AI女友，hhh，毕竟ghs才是第一生产力
 
-有点遗憾的是我写该文的时候，俺的gpt4没续费了（穷，gpt3.5+prompt已经能满足我当下的办公需求），之前的女友对话捞不出来
+有点遗憾的是我写该文的时候，俺的`gpt4`没续费了（穷，`gpt3.5`+`prompt`已经能满足我当下的办公需求），之前的女友对话捞不出来
 
 编写逻辑也很简单：背景+性格+目标。再特征化的话可以加一些对话语气案例，或者标志性的语气主次，话术等等，想玩攻略类型的话，还可以添加一些游戏进程环节
 
-来自网友的prompt分享
+来自网友的`prompt`分享
 
 ![](img/9056258a04416fad369fecc83ab2a34a.png)
 
 #### gpts游戏
 
-然后的然后，场景的可视化也是不错的玩法，下面是我写的一个gpts小游戏，关于冒险旅程的
+然后的然后，场景的可视化也是不错的玩法，下面是我写的一个`gpts`小游戏，关于冒险旅程的
 
 ![](img/918fdd587a06f09d6f2940a8a9f07be0.png)
 
@@ -1424,19 +1446,19 @@ emmm，对于我来说hhh第一件事先捏个AI女友，hhh，毕竟ghs才是�
 
 ### agent
 
-11月的时候去了一趟云南参加Way2AGI的hack松活动，认识了很多志同道合的小伙伴，hhh现在想想确实怀念，这也让我逐步丰富了我构建GPTS的能力也开始做一些小的agent
+11月的时候去了一趟云南参加`Way2AGI`的hack松活动，认识了很多志同道合的小伙伴，hhh现在想想确实怀念，这也让我逐步丰富了我构建`GPTS`的能力也开始做一些小的`agent`
 
 ![](img/d022b2bcda3e2900eb6650408730b3ff.png)
 
-hhh顺便一嘴我们小组顺手得了一个MindOS的第一~
+hhh顺便一嘴我们小组顺手得了一个`MindOS`的第一~
 
 ![](img/282b24cfd69934b75d0acc960d24ac46.png)
 
-okok言归正传，怎么让多个agent来给你打工？
+okok言归正传，怎么让多个`agent`来给你打工？
 
 说白了就是设定几个角色AI执行不同的职能来完成一个共同目标
 
-> metagpt项目地址：https://github.com/geekan/MetaGPT?tab=readme-ov-file
+> metagpt项目地址：`https://github.com/geekan/MetaGPT?tab=readme-ov-file`
 
 #### 抖音热评助手
 
@@ -1444,29 +1466,29 @@ okok言归正传，怎么让多个agent来给你打工？
 
 我们来进行角色拆分：
 
-+   视频分析师，你得通过视频内容的分析来得到相应的话题点
++ 视频分析师，你得通过视频内容的分析来得到相应的话题点
 
-+   评论助手，针对话题点来进行评论
++ 评论助手，针对话题点来进行评论
 
-+   评论润色助手，让你的评论更具备网感
++ 评论润色助手，让你的评论更具备网感
 
-+   评论分析互动助手，检验你的评论是否优质
++ 评论分析互动助手，检验你的评论是否优质
 
 链接：[14.视频评论区无限流水军](https://langgptai.feishu.cn/wiki/QwEJwXIfyiK3oCkw9cQcaLhZnpc)
 
 ## 小模型
 
-为啥要搞小模型，直接API用的不香么，兄弟小了，格局小了，费劲巴脑的在那边越狱，我选择直接本地跑h小文（开玩笑的，我没有！）
+为啥要搞小模型，直接`API`用的不香么，兄弟小了，格局小了，费劲巴脑的在那边越狱，我选择直接本地跑h小文（开玩笑的，我没有！）
 
-这边直接建议下载一个LM studio，长这样👇
+这边直接建议下载一个`LM studio`，长这样👇
 
 ![](img/e19913bae6d4077b2be70ecdb7ca6ff8.png)
 
-链接地址：https://lmstudio.ai/
+链接地址：`https://lmstudio.ai/`
 
 再去挑个适合的小模型下载到本地
 
-https://modelscope.cn/models/Xorbits/Qwen-14B-Chat-GGUF/file/view/master/Qwen-14B-Chat.Q4_K_M.gguf?status=2
+`https://modelscope.cn/models/Xorbits/Qwen-14B-Chat-GGUF/file/view/master/Qwen-14B-Chat.Q4_K_M.gguf?status=2`
 
 ![](img/f864df1f314f6f80cf2bf5638bbc0a75.png)
 
@@ -1480,31 +1502,31 @@ https://modelscope.cn/models/Xorbits/Qwen-14B-Chat-GGUF/file/view/master/Qwen-14
 
 ## AI＋建筑设计
 
-#### 通过us建模室外得出设计方案
+#### 通过`us`建模室外得出设计方案
 
 ![](img/6864f8b365a8bcfa9a73784c5298f1c6.png)
 
-设计师用su建模得出房屋的基本形态（上图）
+设计师用`su`建模得出房屋的基本形态（上图）
 
-通过sd当中的cn控制得出基本形态
+通过`sd`当中的`cn`控制得出基本形态
 
 ![](img/46a1226336984eb5f735370df0bb09de.png)
 
 ![](img/c046640dda599a4ff9d5e90f166414c2.png)
 
-通过对应的cn预处理插件生成线稿,使得ai能识别物体基本结构
+通过对应的`cn`预处理插件生成线稿,使得ai能识别物体基本结构
 
 再通过
 
 正向提示词：outdoors,garden,lawn,railing,window
 
-反向提示词：prompt: fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
+反向提示词：`prompt`: fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
 
-选择合适的大模型**laowang_ARCH_MIX.V0.**5Fp16Fix.safetensors
+选择合适的大模型`laowang_ARCH_MIX.V0.5Fp16Fix.safetensors`
 
 ![](img/d54f816aef6989624bc6369632bbf284.png)
 
-设置与cn相同比例的尺寸，其中一处尺寸必须是512或768
+设置与`cn`相同比例的尺寸，其中一处尺寸必须是512或768
 
 迭代步数设置为40步
 
@@ -1512,17 +1534,19 @@ https://modelscope.cn/models/Xorbits/Qwen-14B-Chat-GGUF/file/view/master/Qwen-14
 
 ![](img/63f053d1bf13900e3082454f43b74123.png)
 
-如果需要特定的材质，可以加载一个lora
+如果需要特定的材质，可以加载一个`lora`
 
-如，我加载了一个红砖Lora，生成的图片保持了红砖的特写
+如，我加载了一个红砖`Lora`，生成的图片保持了红砖的特写
 
 ![](img/2e7beb79908ec35a6d513d504f3c1b65.png)
 
 ![](img/f381f1d610f51ce67963fd4313a31f00.png)
 
+
+
 ![](img/9b7fe6ebc6b43c7a0e58445e445ed1ba.png)
 
-#### 根据手绘草图生成室外效果图
+## 根据手绘草图生成室外效果图
 
 ![](img/74ce56ffddb07badee33ef2bfa553b89.png)
 
@@ -1540,7 +1564,7 @@ https://modelscope.cn/models/Xorbits/Qwen-14B-Chat-GGUF/file/view/master/Qwen-14
 
 负面提示词Snow,Cloudy,night,rainy,dark,cloudy day,fat,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
 
-大模型为laowang_ARCH_MIX.V0.5Fp16Fix.safetensors
+大模型为`laowang_ARCH_MIX.V0.5Fp16Fix.safetensors`
 
 ![](img/f6aa190131b49038263d916b8ccb6cdd.png)
 
@@ -1574,7 +1598,7 @@ tree,scenery,nature,grass,mountain,forest,house,day,bush,sky,outdoors,cloud,buil
 
 同理修改房子一样的道理，涂抹房子就可以了
 
-#### 毛坯房变成室内效果图
+## 毛坯房变成室内效果图
 
 ![](img/5f1ac4db1bdd3fdb41425b35cc5b8229.png)
 
@@ -1598,7 +1622,7 @@ tree,scenery,nature,grass,mountain,forest,house,day,bush,sky,outdoors,cloud,buil
 
 反向提示词fat,wood,naked,nude,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),bad anatomy,DeepNegative,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,missing fingers,missing arms,missing legs,
 
-大模型为laowang_ARCH_MIX.V0.5Fp16Fix.safetensors
+大模型为`laowang_ARCH_MIX.V0.5Fp16Fix.safetensors`
 
 ![](img/c3dedfc8579d33191ccabc02f79d0b56.png)
 
@@ -1682,7 +1706,7 @@ AI视频我想想也没啥遇到好玩的，emmm，无非runway、pika、stabili
 
 step1：确定人物特征，面部，特点，服装等等（也可以通过创建随机人物，然后gpt反推特征值）
 
-step2：特征值不变改变场景动作（也可以调取人物对象图画的seed值，来对该角色进行定义，后面进行调用，缺点是长交互也是会跑飞）
+step2：特征值不变改变场景动作（也可以调取人物对象图画的`seed`值，来对该角色进行定义，后面进行调用，缺点是长交互也是会跑飞）
 
 +   之前还搞了一个古董拟人化，大概是这样
 
@@ -1739,7 +1763,7 @@ b站视频教程：https://www.bilibili.com/video/BV12g4y1m7Uw/?spm_id_from=333.
 
 > 2.里面有一个语音切割，要注意在语音文本标注的时候去查看，低于10s的素材就直接删除了
 
-> 3.在微调推理的时候batch_size不要太高不然会爆显存，大橘是4060的卡，batch_size值为4，相对来说10min就能训练完成
+> 3.在微调推理的时候`batch_size`不要太高不然会爆显存，大橘是4060的卡，`batch_size`值为4，相对来说10min就能训练完成
 
 ![](img/0ae58bc756c0fe322772110e3dee8f55.png)
 
@@ -1790,22 +1814,21 @@ from IPython.display import Audio
 preload_models()
 
 # 从文本生成音频
-text_prompt = &quot;&quot;&quot;
+text_prompt = """
      你好，我是大橘
-&quot;&quot;&quot;
+"""
 
-# 指定音色预设，这里假设音色预设名称为 &quot;voice_preset_name&quot;
-# 请将 &quot;voice_preset_name&quot; 替换为您选择的具体音色预设名称
-voice_preset = &quot;v2/zh_speaker_4&quot;
+# 指定音色预设，这里假设音色预设名称为 "voice_preset_name"
+# 请将 "voice_preset_name" 替换为您选择的具体音色预设名称
+voice_preset = "v2/zh_speaker_4"
 
 audio_array = generate_audio(text_prompt)
 
 # 将音频保存到磁盘
-write_wav(&quot;bark_generation.wav&quot;, SAMPLE_RATE, audio_array)
+write_wav("bark_generation.wav", SAMPLE_RATE, audio_array)
 
 # 如果您在 Jupyter Notebook 中，可以直接播放音频
 Audio(audio_array, rate=SAMPLE_RATE)
-
 ```
 
 ![](img/85abf2ccccff5c67c5dd49d80f8e74e4.png)
@@ -1830,31 +1853,27 @@ Audio(audio_array, rate=SAMPLE_RATE)
 
 **挑战:**
 
-+   **技术复杂性:** 混合部署需要协调本地和云端的环境，确保数据一致性和模型性能。
 
-+   **运维成本:** 需要管理本地服务器和云端资源，运维工作量较大。
 
-+   **数据同步:** 需要保证本地和云端数据的一致性，避免模型训练和推理结果出现偏差。
++ **技术复杂性:** 混合部署需要协调本地和云端的环境，确保数据一致性和模型性能。
++ **运维成本:** 需要管理本地服务器和云端资源，运维工作量较大。
++ **数据同步:** 需要保证本地和云端数据的一致性，避免模型训练和推理结果出现偏差。
 
-**应用场景:**
+### 应用场景
 
-+   **金融行业:** 本地部署核心模型，保证数据安全，云端部署用于处理公开数据，提供辅助分析。
++ **金融行业:** 本地部署核心模型，保证数据安全，云端部署用于处理公开数据，提供辅助分析。
++ **医疗行业:** 本地部署模型处理患者隐私数据，云端部署用于模型训练和更新，提升模型精度。
++ **工业制造:** 本地部署模型用于实时控制，云端部署用于数据分析和预测，优化生产效率。
 
-+   **医疗行业:** 本地部署模型处理患者隐私数据，云端部署用于模型训练和更新，提升模型精度。
+### 未来趋势
 
-+   **工业制造:** 本地部署模型用于实时控制，云端部署用于数据分析和预测，优化生产效率。
-
-**未来趋势:**
-
-+   **边缘计算:** 将 LLM 模型部署到边缘设备，实现更低延迟和更高安全性。
-
-+   **联邦学习:** 利用本地数据协同训练云端模型，提升模型精度，同时保护数据隐私。
-
-+   **自动化部署:** 简化混合部署的流程，降低运维成本。
++ **边缘计算:** 将 LLM 模型部署到边缘设备，实现更低延迟和更高安全性。
++ **联邦学习:** 利用本地数据协同训练云端模型，提升模型精度，同时保护数据隐私。
++ **自动化部署:** 简化混合部署的流程，降低运维成本。
 
 **总**而言之，7+3 混合部署是一种灵活、高效的 LLM 部署模式，可以满足不同场景的需求。随着技术的不断发展，混合部署将会得到更广泛的应用。
 
-> 以上👆输出产出于gpt，总而言之，就是第一阶段的算力解决方案，调研了部分厂商的算力测试，8卡4090的算力覆盖在50-100人区间（72b模型）70*1000000000*4/1024/1024/1024/2/2=65.19258025
+> 以上👆输出产出于gpt，总而言之，就是第一阶段的算力解决方案，调研了部分厂商的算力测试，8卡4090的算力覆盖在50-100人区间（72b模型）`70*1000000000*4/1024/1024/1024/2/2=65.19258025`
 
 ### 套个壳子
 

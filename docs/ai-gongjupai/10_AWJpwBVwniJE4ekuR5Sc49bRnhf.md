@@ -1,14 +1,15 @@
+
 # 6 款好用的 AI 图片修复工具
 
 > 来源：[https://docs.feishu.cn/docx/VT8cdFZmroYj17xW7bZcGxzOnss](https://docs.feishu.cn/docx/VT8cdFZmroYj17xW7bZcGxzOnss)
 
 最近社群中有小伙伴在询问关于修复图片的 AI 工具，于是 Chris 精心挑选了 6 款比较不错的 AI 图片修复工具，希望能帮助大家在图像处理上更加得心应手。
 
-## 1.ARC 图片增强
+## 1. ARC 图片增强
 
 **关键词**：人像修复、人像抠图、动漫增强
 
-**地址**：[https://arc.tencent.com/zh/ai-d](https://arc.tencent.com/zh/ai-demos/faceRestoration)emos/faceRestoration
+**地址**：[https://arc.tencent.com/zh/ai-demos/faceRestoration](https://arc.tencent.com/zh/ai-demos/faceRestoration)
 
 **价格**：完全免费
 
@@ -18,7 +19,7 @@
 
 ![](img/413fd74a2cc59107a3165f45d27ade9b.png)
 
-## 2.RestorePhotos
+## 2. RestorePhotos
 
 **关键词**：还原老照片、留住美好回忆
 
@@ -28,11 +29,11 @@
 
 **介绍**：RestorePhotos 是一款使用 AI 技术为用户恢复老照片的产品。无论用户的照片是模糊的还是老旧的，都可以帮助将它们恢复到完美的状态，让美好的回忆得以延续。
 
-**其他**[：目前该项目免费开源，仓库地址：http](https://github.com/Nutlope/restorePhotos)s://github.com/Nutlope/restorePhotos
+**其他**：目前该项目免费开源，仓库地址：[https://github.com/Nutlope/restorePhotos](https://github.com/Nutlope/restorePhotos)
 
 ![](img/8341381056da64c6b4795b2ddf59fdf9.png)
 
-## 3.Remini
+## 3. Remini
 
 **关键词**：高清修复老照片，一键提升照片画质
 
@@ -46,11 +47,11 @@
 
 ![](img/71fd790a4113b5a3785cd2ba39b81257.png)
 
-## 4.Background Remover
+## 4. Background Remover
 
 **关键词**：自动擦除背景，秒速完成
 
-**地址**：[https://magicstudio.com](https://magicstudio.com/background-remover/)/background-remover/
+**地址**：[https://magicstudio.com/background-remover/](https://magicstudio.com/background-remover/)
 
 **价格**：部分收费，详见官网
 
@@ -60,7 +61,7 @@
 
 ![](img/2493483491011e2f6e17b4486cd8aee0.png)
 
-## 5.BgSub
+## 5. BgSub
 
 **关键词**：高效、无需上传图像
 
@@ -74,7 +75,7 @@
 
 ![](img/09c1a1779076e9d95dce496ee9e041f8.png)
 
-## 6.Remaker AI
+## 6. Remaker AI
 
 **关键词**：速度快、去除水印和文本
 

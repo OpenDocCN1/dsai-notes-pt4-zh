@@ -1,8 +1,9 @@
+
 # 3、一键制作PPT
 
 > 来源：[https://my.feishu.cn/docx/DWNadogDkoPuTKxdKVbcFFHPnMb](https://my.feishu.cn/docx/DWNadogDkoPuTKxdKVbcFFHPnMb)
 
-### PPT基础应用
+## PPT基础应用
 
 职场最常用的PPT可以一键制作了，入口在这里！
 
@@ -18,11 +19,11 @@
 
 ![](img/71304bfae182ce41407a66ad845ae84d.png)
 
-接下来会有两个选项:
+接下来会有两个选项：
 
 1、**生成框架**：大纲里的每一行会形成一个分页，然后自己补充内容（图1
 
-2、**生成完整幻灯片**：一键完事，直接帮你根据框架搞定全部PP内容，然后自己慢慢修改（图2
+2、**生成完整幻灯片**：一键完事，直接帮你根据框架搞定全部PPT内容，然后自己慢慢修改（图2
 
 PPT主题右下角有4个可选，内容不满意直接点重试。
 
@@ -34,13 +35,13 @@ PPT主题右下角有4个可选，内容不满意直接点重试。
 
 **整个体验**还是很舒服的，但说实话，不建议这么用，让我们看下进阶用法😑
 
-### 进阶用法
+## 进阶用法
 
 进阶用法的思路就是，用轻文档先用AI做好内容，然后丢到PPT让AI一键生成。省去做成PPT后的修改时间。😁
 
 这次举个例子：产品上新推广方案；
 
-#### 第一步：给AI需求
+### 第一步：给AI需求
 
 生成的结果很专业，我给了他预算，他自己分配了！😎
 
@@ -52,9 +53,9 @@ PPT主题右下角有4个可选，内容不满意直接点重试。
 
 ![](img/f12dbcfa1398e56d41b25bf9a82d808d.png)
 
-[产品上新推广方案.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T4Tkb9rcIofHU9xIX76cW8sAnyw)
+[`产品上新推广方案.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T4Tkb9rcIofHU9xIX76cW8sAnyw)
 
-#### 第二步：一键制作PPT
+### 第二步：一键制作PPT
 
 咱们把修改后的方案全文复制，然后新建，导入PPT制作，内容会比直接生成的好很多！
 

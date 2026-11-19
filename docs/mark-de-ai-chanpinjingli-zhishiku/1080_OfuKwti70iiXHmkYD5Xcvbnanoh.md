@@ -1,12 +1,11 @@
-# 📑 Notion MCP代理
+
+# 📑 Notion MCP Agent / Notion MCP代理
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DfigdvQE6oTdsPxJcOKcgoAjn8d](https://qqs7y1hozd1.feishu.cn/docx/DfigdvQE6oTdsPxJcOKcgoAjn8d)
 
-# 📑 Notion MCP Agent
+## 📑 Notion MCP Agent
 
-A terminal-based Notion Agent for interacting with your Notion pages using natural language through the Notion MCP (Model Context Protocol) server.
-
-## Features
+### Features
 
 +   Interact with Notion pages via a command-line interface
 
@@ -22,7 +21,7 @@ A terminal-based Notion Agent for interacting with your Notion pages using natur
 
 +   Session management for persistent conversations
 
-## Prerequisites
+### Prerequisites
 
 +   Python 3.9+
 
@@ -32,19 +31,19 @@ A terminal-based Notion Agent for interacting with your Notion pages using natur
 
 +   An OpenAI API key
 
-## Installation
+### Installation
 
 1.  Clone the repository
 
 1.  Install the required Python packages:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 1.  Install the Notion MCP server (will be done automatically when you run the app)
 
-## Setting Up Notion Integration
+### Setting Up Notion Integration
 
-### Creating a Notion Integration
+#### Creating a Notion Integration
 
 1.  Go to Notion Integrations
 
@@ -56,7 +55,7 @@ pip install -r requirements.txt
 
 1.  Submit and copy your "Internal Integration Token"
 
-### Sharing Your Notion Page with the Integration
+#### Sharing Your Notion Page with the Integration
 
 1.  Open your Notion page
 
@@ -82,31 +81,31 @@ Alternatively, you can also share via the "Share" button:
 
 Both methods will grant your integration full access to the page and its content.
 
-### Finding Your Notion Page ID
+#### Finding Your Notion Page ID
 
 1.  Open your Notion page in a browser
 
-1.  Copy the URL, which looks like: https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...
+1.  Copy the URL, which looks like: `https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...`
 
-1.  The ID is the part after the last dash and before any query parameters Example: 1f5b8a8bad058a7e39a6
+1.  The ID is the part after the last dash and before any query parameters Example: `1f5b8a8bad058a7e39a6`
 
-## Configuration
+### Configuration
 
 You can configure the agent using environment variables:
 
-+   NOTION_API_KEY: Your Notion Integration token
++   `NOTION_API_KEY`: Your Notion Integration token
 
-+   OPENAI_API_KEY: Your OpenAI API key
++   `OPENAI_API_KEY`: Your OpenAI API key
 
-+   NOTION_PAGE_ID: The ID of your Notion page
++   `NOTION_PAGE_ID`: The ID of your Notion page
 
 Alternatively, you can set these values directly in the script.
 
-## Usage
+### Usage
 
 Run the agent from the command line:
 
-python notion_mcp_agent.py
+`python notion_mcp_agent.py`
 
 When you start the agent, it will prompt you to enter your Notion page ID. You can:
 
@@ -116,15 +115,15 @@ When you start the agent, it will prompt you to enter your Notion page ID. You c
 
 1.  Provide the page ID directly as a command-line argument (bypassing the prompt):
 
-python notion_mcp_agent.py your-page-id-here
+`python notion_mcp_agent.py your-page-id-here`
 
-### Conversation Flow
+#### Conversation Flow
 
 Each time you start the agent, it creates a unique user ID and session ID to maintain conversation context. This allows the agent to remember previous interactions and continue coherent conversations even after you close and restart the application.
 
-You can exit the conversation at any time by typing exit, quit, bye, or goodbye.
+You can exit the conversation at any time by typing `exit`, `quit`, `bye`, or `goodbye`.
 
-## Example Queries
+### Example Queries
 
 +   "What's on my Notion page?"
 
@@ -138,15 +137,13 @@ You can exit the conversation at any time by typing exit, quit, bye, or goodbye.
 
 +   "Summarize our conversation so far"
 
-## License
+### License
 
 MIT
 
-# 📑 Notion MCP代理
+## 📑 Notion MCP代理
 
-一个基于终端的Notion代理，可通过Notion MCP（模型上下文协议）服务器使用自然语言与你的Notion页面进行交互。
-
-## 特性
+### 特性
 
 +   通过命令行界面与 Notion 页面进行交互
 
@@ -162,7 +159,7 @@ MIT
 
 +   持久对话的会话管理
 
-## 先决条件
+### 先决条件
 
 +   Python 3.9+
 
@@ -172,19 +169,19 @@ MIT
 
 +   一个OpenAI API密钥
 
-## 安装
+### 安装
 
 1.  克隆仓库
 
 1.  安装所需的Python包：
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 1.  安装 Notion MCP 服务器（运行应用程序时将自动完成）
 
-## 设置 Notion 集成
+### 设置 Notion 集成
 
-### 创建Notion集成
+#### 创建Notion集成
 
 1.  转到[Notion集成](https://www.notion.so/my-integrations)
 
@@ -196,7 +193,7 @@ pip install -r requirements.txt
 
 1.  提交并复制您的“内部集成令牌”
 
-### 通过集成共享您的 Notion 页面
+#### 通过集成共享您的 Notion 页面
 
 1.  打开你的 Notion 页面
 
@@ -222,31 +219,31 @@ pip install -r requirements.txt
 
 两种方法都将授予您的集成对页面及其内容的完全访问权限。
 
-### 查找您的Notion页面ID
+#### 查找您的Notion页面ID
 
 1.  在浏览器中打开你的Notion页面
 
-1.  复制看起来像这样的 URL：https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...
+1.  复制看起来像这样的 URL：`https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...`
 
-1.  ID是最后一个破折号之后、任何查询参数之前的部分。示例：1f5b8a8bad058a7e39a6
+1.  ID是最后一个破折号之后、任何查询参数之前的部分。示例：`1f5b8a8bad058a7e39a6`
 
-## 配置
+### 配置
 
 您可以使用环境变量来配置代理：
 
-+   NOTION_API_KEY：你的 Notion 集成令牌
++   `NOTION_API_KEY`: 你的 Notion 集成令牌
 
-+   OPENAI_API_KEY：您的OpenAI API密钥
++   `OPENAI_API_KEY`: 您的OpenAI API密钥
 
-+   NOTION_PAGE_ID: 你的Notion页面的ID
++   `NOTION_PAGE_ID`: 你的Notion页面的ID
 
 或者，您可以直接在脚本中设置这些值。
 
-## 用法
+### 用法
 
 从命令行运行代理：
 
-python notion_mcp_agent.py
+`python notion_mcp_agent.py`
 
 当你启动代理时，它会提示你输入你的Notion页面ID。你可以：
 
@@ -256,15 +253,15 @@ python notion_mcp_agent.py
 
 1.  直接将页面 ID 作为命令行参数提供（绕过提示）：
 
-python notion_mcp_agent.py 你的页面ID
+`python notion_mcp_agent.py 你的页面ID`
 
-### 对话流程
+#### 对话流程
 
 每次启动代理时，它都会创建一个唯一的用户ID和会话ID，以维护对话上下文。这使得代理能够记住之前的交互，并在你关闭并重新启动应用程序后仍能继续连贯的对话。
 
-您可以随时通过输入exit、quit、bye或goodbye退出对话。
+您可以随时通过输入`exit`、`quit`、`bye`或`goodbye`退出对话。
 
-## 示例查询
+### 示例查询
 
 +   "我的Notion页面上有什么？"
 
@@ -278,6 +275,6 @@ python notion_mcp_agent.py 你的页面ID
 
 +   "总结一下我们目前的对话内容"
 
-## 许可证
+### 许可证
 
 麻省理工学院

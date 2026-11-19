@@ -1,3 +1,4 @@
+
 # 评测 · AlignBench：专为「中文 LLM」而生的对齐评测
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Z4HpdPcyyoeXLLxujwYcC49RnPf](https://v11enp9ok1h.feishu.cn/docx/Z4HpdPcyyoeXLLxujwYcC49RnPf)
@@ -14,7 +15,7 @@
 
 其次，针对对齐水平的英文评测数据集，如 MT-Bench，AlpacaEval等，受限于其语言、数量、评测方式，也并不能有效评估中文大模型的对齐水平。
 
-**基于以上考虑，以及实**际中的需要，我们推出了 AlignBench。
+基于以上考虑，以及实际中的需要，我们推出了 AlignBench。
 
 ![](img/5a5cf77bb7fd5de3dc163df2cfdd8ae4.png)
 
@@ -30,9 +31,9 @@
 
 项目网站：https://llmbench.ai/align
 
-[为了让开发人员能够更加高效地完成评估，我们也同样](http://mp.weixin.qq.com/s?__biz=MzkxNjMzMjM3NA==&mid=2247485187&idx=1&sn=6ddc040d420a096e7512f3ad45a8dd67&chksm=c150cd3af627442ce5ac35eb595a8e57c4a558c6bb52fb7579d20a4e9879916ea9cd12ba974b&scene=21#wechat_redirect)开发了自动评估模型 CritiqueLLM ，它是一个能够达到 GPT-4 95% 评估能力的专用的评测模型。可以在 AlignBench 网站上使用 CritiqueLLM 进行评测。
+为了让开发人员能够更加高效地完成评估，我们也同样开发了自动评估模型 CritiqueLLM ，它是一个能够达到 GPT-4 95% 评估能力的专用的评测模型。可以在 AlignBench 网站上使用 CritiqueLLM 进行评测。
 
-## **数据集**
+## 数据集
 
 为了更贴近大模型的真实用途，AlignBench 从 ChatGLM 真实的使用场景中构建，并经过初步构造，敏感性筛查，参考答案生成，难度筛选等步骤，构建了具有真实性、挑战性的评测数据集。
 
@@ -40,17 +41,17 @@ AlignBench 构建了综合全面的分类体系，分为 8 个大类。
 
 ![](img/cb0e306b8a31bba1df6bbaef23c3f5b0.png)
 
-## **评测方法**
+## 评测方法
 
 为了自动化和可复现性，AlignBench 使用评分模型（GPT-4，CritiqueLLM）为每个模型的回答打 1-10 的综合分数，代表其回答质量。AlignBench 构建了多维度、规则校准的模型评测方法，有效提升了模型评分和人类评分的一致性，以及模型评价的质量。
 
-**1、多维度**
+### 1、多维度
 
 AlignBench 针对每个种类定制了多个细分的评测维度（如创造性、逻辑性等等）
 
 ![](img/abbec8faf9025e8bfadf63cb71aeff35.png)
 
-**2、规则校准**
+### 2、规则校准
 
 AlignBench 引入了细致的打分规则，提升和人类的一致程度。
 
@@ -64,7 +65,7 @@ AlignBench 引入了细致的打分规则，提升和人类的一致程度。
 
 ![](img/dfc5e205ff6532176bc5182aafa83b4e.png)
 
-## **评测结果**
+## 评测结果
 
 我们使用 gpt-4-0613 和 CritiqueLLM 分别作为评分模型对 17 个中文大模型进行了评测，结果分别如下。
 
@@ -84,7 +85,7 @@ AlignBench 还为每个模型提供了维度分。
 
 ![](img/8a7fd2e212716c4c6648059db2cce28d.png)
 
-## ** Q**A
+## Q&A
 
 问：AlignBench 和其他的评测基准相比有什么区别？
 
@@ -96,7 +97,7 @@ AlignBench 还为每个模型提供了维度分。
 
 问：这些榜单内的模型的生成方式是什么样的？
 
-**答：**我们观察到对于部分模型，采用 greedy 方式生成回答会导致回答质量的下降，特别是生成长度较长的问题。因此，我们对于生成长度较长的类别（综合问答、文本写作、角色扮演），采用 temperature=0.7 参数进行采样生成回答；对于生成长度较短的类别（基本任务、中文理解、逻辑推理、数学计算、专业能力），采用 temperature=0.1 参数进行采样生成回答。注意在评价模型打分的阶段，使用 temperature=0 参数进行打分。
+**答：**我们观察到对于部分模型，采用 `greedy` 方式生成回答会导致回答质量的下降，特别是生成长度较长的问题。因此，我们对于生成长度较长的类别（综合问答、文本写作、角色扮演），采用 `temperature=0.7` 参数进行采样生成回答；对于生成长度较短的类别（基本任务、中文理解、逻辑推理、数学计算、专业能力），采用 `temperature=0.1` 参数进行采样生成回答。注意在评价模型打分的阶段，使用 `temperature=0` 参数进行打分。
 
 问：对于开发者，如何有效利用 AlignBench 进行评测？
 

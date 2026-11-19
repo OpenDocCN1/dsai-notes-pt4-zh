@@ -1,3 +1,4 @@
+
 # 10个案例玩转ChatGPT DALL-E3绘画
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/ZCPidbTpboOKE2xLGE4c6cB0nZg](https://xmgtoagi.feishu.cn/docx/ZCPidbTpboOKE2xLGE4c6cB0nZg)
@@ -16,11 +17,11 @@ DALL•E 3可以在ChatGPT plus里直接使用了。
 
 这里用十个案例，来解释一下这个问题。
 
-## 1.创建矢量插图
+## 1. 创建矢量插图
 
 （原文：@itsPaulAi，平台：x）
 
-可以轻松为幻灯片或网站创建矢量插图。 您不再需要在互联网上搜索图像，也不再有水印。
+可以轻松为幻灯片或网站创建矢量插图。您不再需要在互联网上搜索图像，也不再有水印。
 
 ### 1.1 描述图像
 
@@ -30,7 +31,7 @@ DALL•E 3可以在ChatGPT plus里直接使用了。
 
 ### 1.2 添加参数
 
-将这些参数添加到提示中 “平面简单矢量插图风格，鲜艳的色彩，白色背景（flat simple vector illustrations style, vibrant colors, white background）
+将这些参数添加到提示中“平面简单矢量插图风格，鲜艳的色彩，白色背景（flat simple vector illustrations style, vibrant colors, white background）”
 
 小技巧：可以变更主题，例如，添加：蓝色主题。
 
@@ -40,7 +41,7 @@ DALL•E 3可以在ChatGPT plus里直接使用了。
 
 ![](img/ebfeae373af259a76f47fdd109f3d982.png)
 
-## 2.创建GIF动画
+## 2. 创建GIF动画
 
 （原文：@NickADobos，平台：x）
 
@@ -68,7 +69,7 @@ DALL•E 3可以在ChatGPT plus里直接使用了。
 
 ![](img/d7a80d6fd5290a6a765ea0b89be48d0a.png)
 
-## 3.创建游戏资产
+## 3. 创建游戏资产
 
 DALL-E 3让游戏开发者梦想成真。
 
@@ -92,59 +93,59 @@ DALL-E 3让游戏开发者梦想成真。
 
 生成主题物品套装：包括药水、卷轴、符文和珠宝（generating themed item sets including potions, scrolls, runes, and jewelry.）
 
-## 4.制作产品图
+## 4. 制作产品图
 
 （原作者：@Salmaaboukarr，X） 现在，任何人都可以用DALL-E 3来生成令人惊艳的商品照片！
 
 这是我最喜欢的三种商品摄影构图：
 
-1.  正面角度Front angle
+1. 正面角度Front angle
 
-1.  侧面拍摄Profile shot
+1. 侧面拍摄Profile shot
 
-1.  平铺式Flat lay
+1. 平铺式Flat lay
 
-提示词公式： (构图) (主题) (道具) (背景风格) (composition) (subject) (props) (background style)
+提示词公式：(构图) (主题) (道具) (背景风格) (composition) (subject) (props) (background style)
 
 在这个示例中，我选择了万圣节风格！
 
 我们来根据公式，填写提示词：
 
-### 4.1.正面拍摄
+### 4.1 正面拍摄
 
-提示词： 正面角度拍摄口红，用南瓜作为道具，背景保持简单。 （front angle product shot of lipstick with pumpkin props, on a simple background）
+提示词： 正面角度拍摄口红，用南瓜作为道具，背景保持简单。（front angle product shot of lipstick with pumpkin props, on a simple background）
 
 ![](img/db6c2b6c584c031d4865561a45c2b647.png)
 
-### 4.2.侧面拍摄
+### 4.2 侧面拍摄
 
-提示词： 侧面拍摄香水，用南瓜作为道具，背景保持简单。 （profile product shot of perfume with pumpkin props, on a simple background）
+提示词： 侧面拍摄香水，用南瓜作为道具，背景保持简单。（profile product shot of perfume with pumpkin props, on a simple background）
 
-### 4.3.平铺拍摄
+### 4.3 平铺拍摄
 
-平铺式拍摄口红，用南瓜作为道具，背景保持简单。 （flat lay product shot of lipstick with pumpkin props, on a simple background）
+平铺式拍摄口红，用南瓜作为道具，背景保持简单。（flat lay product shot of lipstick with pumpkin props, on a simple background）
 
 ![](img/b7ddd1e4b53ab29d29632100c683d66d.png)
 
-## 5.整齐排列图片
+## 5. 整齐排列图片
 
-> （原作者：@chaseleantj， X）
+> （原作者：@chaseleantj，X）
 
 > 你可以用DALL-E 3来制作一些令人惊艳的整齐排列（Knolling）风格的图片。
 
 > 这是我用的提示语：
 
-> 整齐排列的照片，主要人物是[某人]，周围是整齐排列的[物品]。 （Knolling photo of [person], surrounded by [objects] arranged neatly.）
+> 整齐排列的照片，主要人物是[某人]，周围是整齐排列的[物品]。（Knolling photo of [person], surrounded by [objects] arranged neatly.）
 
 ### 使用技巧
 
 以下是获取最佳图片的三个小窍门：
 
-1.  用ChatGPT给你灵感。
+1. 用ChatGPT给你灵感。
 
 这里有一个非常有效的GPT提示，你可以根据需要做出多种变化：
 
-作为专业的提示编写人，请根据这个模板“整齐排列的照片，主要人物是[角色/工作]，周围是整齐排列的[物品]”给我提供10个角色和相关物品的建议。应该大约30个词。首先放置更相关或视觉上更吸引人的物品。 （As a professional prompt writer, can you give me 10 suggestions of characters and relevant objects based on this template? "Knolling photo of [character/job], surrounded by [objects] arranged neatly." It should be around 30 words long. Place objects that are more relevant or visually appealing first.）
+作为专业的提示编写人，请根据这个模板“整齐排列的照片，主要人物是[角色/工作]，周围是整齐排列的[物品]”给我提供10个角色和相关物品的建议。应该大约30个词。首先放置更相关或视觉上更吸引人的物品。（As a professional prompt writer, can you give me 10 suggestions of characters and relevant objects based on this template? "Knolling photo of [character/job], surrounded by [objects] arranged neatly." It should be around 30 words long. Place objects that are more relevant or visually appealing first.）
 
 如果你有DALL-E 3，你可以直接生成图片。
 
@@ -152,17 +153,17 @@ DALL-E 3让游戏开发者梦想成真。
 
 接下来是第二个窍门：
 
-1.  有时DALL-E生成的图片并不包括整个人物。
+1. 有时DALL-E生成的图片并不包括整个人物。
 
 解决方案：在提示语中加上“全身，躺着(full body, lying down)”。
 
-1.  有时图片看起来可能假和卡通化。
+1. 有时图片看起来可能假和卡通化。
 
 解决方案：在提示语中加上“电影感(cinematic)”。
 
 示例图：
 
-提示词： Knolling of a puppy
+提示词：Knolling of a puppy
 
 ![](img/2b18ad464f01cb6f48a18e45f683b932.png)
 
@@ -178,7 +179,7 @@ DALL-E 3让游戏开发者梦想成真。
 
 ![](img/698b0fc0607e591dc6af30370312b142.png)
 
-## 6.制作绘本
+## 6. 制作绘本
 
 （原作者：@umesh_ai，X）
 
@@ -188,23 +189,23 @@ DALL-E 3让游戏开发者梦想成真。
 
 下面是我的操作过程。
 
-1.  我要求为这个故事制作8幅插图，确保角色和背景风格一致，并根据需要加入对话气泡。
+1. 我要求为这个故事制作8幅插图，确保角色和背景风格一致，并根据需要加入对话气泡。
 
-1.  在检查了文本生成的插图之后，我提供了建议，将每个角色的外貌描述加入到提示中。
+1. 在检查了文本生成的插图之后，我提供了建议，将每个角色的外貌描述加入到提示中。
 
-1.  我再次检查了提示词，并指出了任何需要解决的缺失内容。
+1. 我再次检查了提示词，并指出了任何需要解决的缺失内容。
 
-1.  当我对提示词感到满意，我便让DALL e3 生成相应的图片。
+1. 当我对提示词感到满意，我便让DALL e3 生成相应的图片。
 
-1.  如果有任何不令人满意的图片，我会提供反馈以识别和解决问题，然后再请求生成更新的插图。
+1. 如果有任何不令人满意的图片，我会提供反馈以识别和解决问题，然后再请求生成更新的插图。
 
-1.  为了增强插图效果，我使用了另一个工具，在顶部添加了插图说明，并制作了拼贴画。这些标签也是由ChatGPT生成的。
+1. 为了增强插图效果，我使用了另一个工具，在顶部添加了插图说明，并制作了拼贴画。这些标签也是由ChatGPT生成的。
 
 划重点： 绘本插画不是一次成型的，需要不断调整，遇到问题解决问题。
 
 ![](img/fae8e6a3fab431eef960a26f200ddd2a.png)
 
-## 7.漫画
+## 7. 漫画
 
 （原作者：@ammaar，X） DALL-E3让制作漫画非常简单。
 
@@ -228,7 +229,7 @@ DALL-E 3让游戏开发者梦想成真。
 
 ![](img/dcf84100a153dc6f78453704daca49ca.png)
 
-## 8.设计logo
+## 8. 设计logo
 
 （原作者：@iam_chonchol，X） 用DALL-E3也可以设计logo，下面是4个例子
 
@@ -254,7 +255,7 @@ DALL-E 3让游戏开发者梦想成真。
 
 ![](img/4642050011f80a9866730439e973878d.png)
 
-## 9.儿童涂色书
+## 9. 儿童涂色书
 
 （原作者：@chaseleantj，X）
 
@@ -276,7 +277,7 @@ DALL-E 3让游戏开发者梦想成真。
 
 也可以单独加上一行：cartoonish, very simple, for young 3 years old children
 
-## 10.书籍封面画
+## 10. 书籍封面画
 
 （原作者：@ammaar，X）
 

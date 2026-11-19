@@ -1,3 +1,4 @@
+
 # 测试和调试Skills
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/NIWadwgqnojUoPx0tFwcZvQtn7b](https://qqs7y1hozd1.feishu.cn/docx/NIWadwgqnojUoPx0tFwcZvQtn7b)
@@ -37,14 +38,14 @@ cat ~/.claude/skills/your-skill-name/SKILL.md | head -10
 
 ```
 # 使用工具验证YAML frontmatter
-python -c &quot;
+python -c "
 import yaml
-with open(&#x27;SKILL.md&#x27;, &#x27;r&#x27;) as f:
+with open('SKILL.md', 'r') as f:
     content = f.read()
-frontmatter = content.split(&#x27;---&#x27;)[1]
+frontmatter = content.split('---')[1]
 data = yaml.safe_load(frontmatter)
-print(&#x27;YAML is valid:&#x27;, data)
-&quot;
+print('YAML is valid:', data)
+"
 ```
 
 ### 元数据验证
@@ -61,9 +62,9 @@ version: 1.0.0
 
 验证要点：
 
-+   name字段符合命名规范（小写字母、数字、连字符）
++   `name`字段符合命名规范（小写字母、数字、连字符）
 
-+   description清晰描述功能和使用时机
++   `description`清晰描述功能和使用时机
 
 +   没有语法错误或特殊字符问题
 
@@ -80,22 +81,22 @@ from unittest.mock import Mock, patch
 
 class TestSkill:
     def setup_method(self):
-        &quot;&quot;&quot;测试前准备&quot;&quot;&quot;
-        self.skill_name = &quot;test-skill&quot;
+        """测试前准备"""
+        self.skill_name = "test-skill"
         # 初始化测试环境
 
     def test_skill_metadata(self):
-        &quot;&quot;&quot;测试Skill元数据&quot;&quot;&quot;
+        """测试Skill元数据"""
         # 验证name、description等字段
-        assert self.skill_name == &quot;test-skill&quot;
+        assert self.skill_name == "test-skill"
 
     def test_skill_execution(self):
-        &quot;&quot;&quot;测试Skill执行&quot;&quot;&quot;
+        """测试Skill执行"""
         # 模拟执行场景
         pass
 
     def teardown_method(self):
-        &quot;&quot;&quot;测试后清理&quot;&quot;&quot;
+        """测试后清理"""
         # 清理测试数据
         pass
 ```
@@ -106,17 +107,17 @@ class TestSkill:
 
 ```
 def test_parameter_validation():
-    &quot;&quot;&quot;测试参数验证&quot;&quot;&quot;
+    """测试参数验证"""
     # 测试有效参数
-    valid_params = {&quot;input&quot;: &quot;test.txt&quot;, &quot;format&quot;: &quot;json&quot;}
+    valid_params = {"input": "test.txt", "format": "json"}
     assert validate_parameters(valid_params) == True
 
     # 测试无效参数
-    invalid_params = {&quot;input&quot;: &quot;&quot;, &quot;format&quot;: &quot;invalid&quot;}
+    invalid_params = {"input": "", "format": "invalid"}
     assert validate_parameters(invalid_params) == False
 
     # 测试边界情况
-    edge_params = {&quot;input&quot;: &quot;a&quot; * 1000, &quot;format&quot;: &quot;json&quot;}  # 超长输入
+    edge_params = {"input": "a" * 1000, "format": "json"}  # 超长输入
     assert validate_parameters(edge_params) == False
 ```
 
@@ -126,20 +127,20 @@ def test_parameter_validation():
 
 ```
 def test_error_handling():
-    &quot;&quot;&quot;测试错误处理&quot;&quot;&quot;
+    """测试错误处理"""
     # 测试文件不存在的情况
     with pytest.raises(FileNotFoundError):
-        process_file(&quot;nonexistent.txt&quot;)
+        process_file("nonexistent.txt")
 
     # 测试网络错误
-    with patch(&#x27;requests.get&#x27;, side_effect=ConnectionError):
+    with patch('requests.get', side_effect=ConnectionError):
         with pytest.raises(ConnectionError):
             fetch_data_from_api()
 
     # 测试权限错误
-    with patch(&#x27;os.access&#x27;, return_value=False):
+    with patch('os.access', return_value=False):
         with pytest.raises(PermissionError):
-            write_output_file(&quot;/restricted/path/output.txt&quot;)
+            write_output_file("/restricted/path/output.txt")
 ```
 
 ## 调试渐进式披露问题
@@ -148,35 +149,33 @@ def test_error_handling():
 
 当Skill没有被触发时，检查元数据：
 
-```
 ## 调试清单
 
 ### 1. 验证YAML frontmatter
-- 检查name字段是否符合规范
-- 确认description包含明确的触发条件
+- 检查`name`字段是否符合规范
+- 确认`description`包含明确的触发条件
 - 验证没有YAML语法错误
 
 ### 2. 测试触发条件
 尝试不同的表述方式：
-- &quot;帮我分析这个数据&quot; (具体任务)
-- &quot;我有一个Excel文件需要处理&quot; (文件类型)
-- &quot;创建数据可视化&quot; (功能描述)
+- "帮我分析这个数据" (具体任务)
+- "我有一个Excel文件需要处理" (文件类型)
+- "创建数据可视化" (功能描述)
 
 ### 3. 检查Skill可见性
+
 ```bash
 # 确认Skill在列表中
 claude /skills | grep your-skill-name
-```
 ```
 
 ### 第二级调试：指令加载
 
 当Skill被触发但执行不正确时：
 
-```
 ## 指令调试步骤
 
-### 1. 验证SKILL.md内容
+### 1. 验证`SKILL.md`内容
 检查指令是否：
 - 使用清晰的语言
 - 提供具体的步骤
@@ -184,21 +183,20 @@ claude /skills | grep your-skill-name
 
 ### 2. 测试指令理解
 在Claude中询问：
-- &quot;你能看到这个Skill的什么内容？&quot;
-- &quot;这个Skill的执行步骤是什么？&quot;
+- "你能看到这个Skill的什么内容？"
+- "这个Skill的执行步骤是什么？"
 
 ### 3. 简化测试
-创建最小化版本的SKILL.md，只包含核心功能
-```
+创建最小化版本的`SKILL.md`，只包含核心功能
 
 ### 第三级调试：资源访问
 
 当Skill无法访问外部资源时：
 
-```
 ## 资源调试
 
 ### 1. 验证文件路径
+
 ```bash
 # 检查引用文件是否存在
 ls -la references/
@@ -209,6 +207,7 @@ cat references/api-docs.md
 ```
 
 ### 2. 检查文件权限
+
 ```bash
 # 验证文件可读
 ls -l references/api-docs.md
@@ -218,12 +217,11 @@ head -5 references/api-docs.md
 ```
 
 ### 3. 调试引用语法
-确保在SKILL.md中的引用格式正确：
-```markdown
-[API文档](references/api-docs.md)
-[配置模板](assets/templates/config.json)
-```
-```
+
+确保在`SKILL.md`中的引用格式正确：
+
+- [`references/api-docs.md`](references/api-docs.md)
+- [`assets/templates/config.json`](assets/templates/config.json)
 
 ## 性能测试和token优化
 
@@ -257,7 +255,7 @@ Token是Claude处理文本的基本单位。每次与Claude对话时，系统都
 
 #### 实际估算步骤
 
-第一步：测量你的SKILL.md文件大小
+第一步：测量你的`SKILL.md`文件大小
 
 ```
 # 查看文件大小（字符数）
@@ -269,11 +267,11 @@ wc -l -w SKILL.md
 
 第二步：估算token数量
 
-假设你的SKILL.md有2000个字符：
+假设你的`SKILL.md`有2000个字符：
 
-+   如果主要是英文：2000 ÷ 4 ≈ 500 tokens
++   如果主要是英文：2000 ÷ 4 ≈ 500 token
 
-+   如果主要是中文：2000 ÷ 1.5 ≈ 1300 tokens
++   如果主要是中文：2000 ÷ 1.5 ≈ 1300 token
 
 第三步：分析各部分消耗
 
@@ -287,13 +285,13 @@ tail -n +11 SKILL.md | wc -m
 
 估算结果解读：
 
-+   < 500 tokens：优秀，加载迅速
++   < 500 token：优秀，加载迅速
 
-+   500-2000 tokens：良好，性能尚可
++   500-2000 token：良好，性能尚可
 
-+   2000-5000 tokens：需要优化，考虑使用外部引用
++   2000-5000 token：需要优化，考虑使用外部引用
 
-+   5000 tokens：强烈建议优化，拆分内容
++   5000 token：强烈建议优化，拆分内容
 
 ### 实际监控Token消耗
 
@@ -309,28 +307,26 @@ Base Path: /Users/username/.claude/skills/my-skill/
 [Skill content loaded]
 ```
 
-这表示Skill的内容已被加载到上下文中。
-
 方法2：使用Claude询问消耗情况
 
 你可以直接询问Claude：
 
 ```
-&quot;这个Skill加载了多少内容到上下文中？&quot;
-&quot;帮我分析一下当前上下文的使用情况&quot;
+"这个Skill加载了多少内容到上下文中？"
+"帮我分析一下当前上下文的使用情况"
 ```
 
 #### 使用浏览器开发者工具（Web版本）
 
 如果你使用Claude Code Web版本：
 
-1.  按F12打开开发者工具
+1. 按F12打开开发者工具
 
-1.  查看Network标签页
+1. 查看Network标签页
 
-1.  寻找包含"messages"或"completions"的API请求
+1. 寻找包含"messages"或"completions"的API请求
 
-1.  查看请求大小和响应大小
+1. 查看请求大小和响应大小
 
 ### Token消耗分析工具
 
@@ -341,37 +337,37 @@ Base Path: /Users/username/.claude/skills/my-skill/
 ```
 # 创建文件：token_estimator.py
 def estimate_tokens(text):
-    &quot;&quot;&quot;简单估算token数量&quot;&quot;&quot;
+    """简单估算token数量"""
     if not text:
         return 0
 
     # 中文字符更消耗token
-    chinese_chars = sum(1 for char in text if &#x27;\u4e00&#x27; &lt;= char &lt;= &#x27;\u9fff&#x27;)
+    chinese_chars = sum(1 for char in text if '\u4e00' <= char <= '\u9fff')
     english_chars = len(text) - chinese_chars
 
     # 估算：中文1.5个token/字符，英文0.25个token/字符
     return int(chinese_chars * 1.5 + english_chars * 0.25)
 
 # 使用示例
-with open(&#x27;SKILL.md&#x27;, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+with open('SKILL.md', 'r', encoding='utf-8') as f:
     content = f.read()
 
-print(f&quot;估算token数量: {estimate_tokens(content)}&quot;)
+print(f"估算token数量: {estimate_tokens(content)}")
 ```
 
 使用方法：
 
-1.  将上述代码保存为 token_estimator.py
+1. 将上述代码保存为`token_estimator.py`
 
-1.  放在你的Skill目录中
+1. 放在你的Skill目录中
 
-1.  运行：python token_estimator.py
+1. 运行：`python token_estimator.py`
 
 #### 在线Token计算器
 
 使用在线工具快速估算：
 
-+   [OpenAI Token Calc](https://platform.openai.com/tokenizer)ulator：https://platform.openai.com/tokenizer
++   [OpenAI Token Calculator](https://platform.openai.com/tokenizer)
 
 +   Anthropic Token Counter：搜索"Anthropic token calculator"
 
@@ -427,7 +423,7 @@ description: 处理数据分析任务。当用户需要统计计算、数据可�
 3. 执行分析并获取结果
 
 ## 高级功能
-复杂分析和自定义选项请参考 [详细指南](references/advanced-usage.md)
+复杂分析和自定义选项请参考 [`references/advanced-usage.md`](references/advanced-usage.md)
 
 ## 支持格式
 - CSV、JSON、XML文件
@@ -437,7 +433,6 @@ description: 处理数据分析任务。当用户需要统计计算、数据可�
 
 #### 使用外部引用
 
-```
 ## 优化技巧
 
 ### 1. 核心内容保留在主文件
@@ -451,13 +446,15 @@ description: 处理数据分析任务。当用户需要统计计算、数据可�
 - 高级用例和示例
 
 ### 3. 按需加载
+
 ```markdown
 ## 高级配置
-需要自定义设置时，请查看 [配置选项](references/configuration.md)
+
+需要自定义设置时，请查看 [`references/configuration.md`](references/configuration.md)
 
 ## 故障排除
-遇到问题时，参考 [故障排除指南](references/troubleshooting.md)
-```
+
+遇到问题时，参考 [`references/troubleshooting.md`](references/troubleshooting.md)
 ```
 
 ## 跨环境兼容性测试
@@ -468,7 +465,7 @@ description: 处理数据分析任务。当用户需要统计计算、数据可�
 
 常见的兼容性问题：
 
-+   文件路径分隔符（Windows用\，其他用/）
++   文件路径分隔符（Windows用`\`，其他用`/`）
 
 +   命令行工具可用性（Linux/macOS vs Windows）
 
@@ -522,6 +519,12 @@ claude --version
 
 #### 操作系统路径问题
 
+
+
+# 技能兼容性与调试指南
+
+## 兼容的路径处理
+
 ```
 # 兼容的路径处理
 import os
@@ -530,14 +533,14 @@ import os
 skill_dir = os.path.dirname(__file__)
 
 # 构建文件路径
-data_file = os.path.join(skill_dir, &#x27;data&#x27;, &#x27;sample.csv&#x27;)
+data_file = os.path.join(skill_dir, 'data', 'sample.csv')
 
 # 读取文件
-with open(data_file, &#x27;r&#x27;) as f:
+with open(data_file, 'r') as f:
     content = f.read()
 ```
 
-#### 命令执行兼容性
+## 命令执行兼容性
 
 ```
 # 使用跨平台命令
@@ -548,35 +551,28 @@ ls -la
 python scripts/list_files.py
 ```
 
-### 版本兼容性测试清单
+## 版本兼容性测试清单
 
 基础功能测试：
 
-+    Skill能否被正确加载
-
-+    YAML frontmatter解析正常
-
-+    基本指令执行成功
-
-+    文件引用路径正确
++ Skill能否被正确加载  
++ YAML frontmatter解析正常  
++ 基本指令执行成功  
++ 文件引用路径正确  
 
 操作系统测试：
 
-+    Linux环境（推荐Ubuntu 18.04+）
-
-+    macOS环境（推荐10.15+）
-
-+    Windows环境（推荐使用WSL）
++ Linux环境（推荐Ubuntu 18.04+）  
++ macOS环境（推荐10.15+）  
++ Windows环境（推荐使用WSL）  
 
 Claude Code版本测试：
 
-+    CLI版本测试
++ CLI版本测试  
++ Desktop版本测试（如果可用）  
++ Web版本测试（如果可用）  
 
-+    Desktop版本测试（如果可用）
-
-+    Web版本测试（如果可用）
-
-### Claude Code版本兼容性
+## Claude Code版本兼容性
 
 测试不同版本的Claude Code：
 
@@ -612,14 +608,14 @@ Claude Code版本测试：
 
 ```
 # 在脚本中添加简单的日志输出
-echo &quot;开始执行Skill&quot; &gt;&gt; skill_debug.log
-date &gt;&gt; skill_debug.log
+echo "开始执行Skill" >> skill_debug.log
+date >> skill_debug.log
 
 # 执行关键步骤时记录状态
-echo &quot;正在处理数据文件...&quot; &gt;&gt; skill_debug.log
+echo "正在处理数据文件..." >> skill_debug.log
 
 # 完成后记录结果
-echo &quot;Skill执行完成&quot; &gt;&gt; skill_debug.log
+echo "Skill执行完成" >> skill_debug.log
 ```
 
 查看日志：
@@ -629,7 +625,7 @@ echo &quot;Skill执行完成&quot; &gt;&gt; skill_debug.log
 tail -20 skill_debug.log
 
 # 搜索特定错误
-grep &quot;ERROR&quot; skill_debug.log
+grep "ERROR" skill_debug.log
 ```
 
 ### 逐步调试技巧
@@ -652,10 +648,9 @@ head -10 SKILL.md
 
 #### 步骤2：测试单个组件
 
-```
-# 如果Skill加载成功，但功能不工作
-# 尝试手动执行脚本部分
+如果Skill加载成功，但功能不工作，尝试手动执行脚本部分：
 
+```
 # 测试文件读取
 cat data/sample.txt
 
@@ -678,10 +673,10 @@ cp SKILL.md SKILL_simple.md
 
 ```
 # 当问题发生时，记录上下文
-echo &quot;问题时间: $(date)&quot; &gt;&gt; error_log.txt
-echo &quot;用户输入: $user_input&quot; &gt;&gt; error_log.txt
-echo &quot;错误信息: $error_message&quot; &gt;&gt; error_log.txt
-echo &quot;系统状态: $(uname -a)&quot; &gt;&gt; error_log.txt
+echo "问题时间: $(date)" >> error_log.txt
+echo "用户输入: $user_input" >> error_log.txt
+echo "错误信息: $error_message" >> error_log.txt
+echo "系统状态: $(uname -a)" >> error_log.txt
 ```
 
 ### 性能检查工具
@@ -699,14 +694,14 @@ Skill执行太慢或消耗太多资源会影响用户体验，需要定期检查
 start_time=$(date +%s)
 
 # 执行Skill
-claude --skill your-skill &quot;测试输入&quot;
+claude --skill your-skill "测试输入"
 
 # 记录结束时间
 end_time=$(date +%s)
 
 # 计算耗时
 execution_time=$((end_time - start_time))
-echo &quot;执行耗时: ${execution_time}秒&quot;
+echo "执行耗时: ${execution_time}秒"
 ```
 
 #### 方法2：资源使用检查
@@ -726,11 +721,11 @@ ping -c 3 google.com
 
 ```
 # 测试不同大小的输入
-echo &quot;小文件测试:&quot; &gt; perf_test.log
-time claude --skill your-skill &quot;小输入测试&quot; &gt;&gt; perf_test.log
+echo "小文件测试:" > perf_test.log
+time claude --skill your-skill "小输入测试" >> perf_test.log
 
-echo &quot;大文件测试:&quot; &gt;&gt; perf_test.log
-time claude --skill your-skill &quot;大输入测试&quot; &gt;&gt; perf_test.log
+echo "大文件测试:" >> perf_test.log
+time claude --skill your-skill "大输入测试" >> perf_test.log
 
 # 查看结果
 cat perf_test.log
@@ -740,55 +735,42 @@ cat perf_test.log
 
 #### Skill加载问题
 
-+    SKILL.md文件存在且可读
-
-+    YAML frontmatter格式正确
-
-+    name字段符合规范
-
-+    description包含触发条件
-
-+    文件权限正确
++ `SKILL.md`文件存在且可读  
++ `YAML frontmatter`格式正确  
++ `name`字段符合规范  
++ `description`包含触发条件  
++ 文件权限正确  
 
 #### 功能执行问题
 
-+    脚本文件存在且可执行
-
-+    依赖项已安装
-
-+    文件路径正确
-
-+    输入数据格式正确
-
-+    输出位置可写
++ 脚本文件存在且可执行  
++ 依赖项已安装  
++ 文件路径正确  
++ 输入数据格式正确  
++ 输出位置可写  
 
 #### 性能问题
 
-+    Skill文件大小合理
-
-+    没有不必要的引用
-
-+    脚本执行时间正常
-
-+    内存使用合理
++ Skill文件大小合理  
++ 没有不必要的引用  
++ 脚本执行时间正常  
++ 内存使用合理  
 
 ### 寻求帮助
 
 当自己无法解决时：
 
-1.  查看官方文档
+1. 查看官方文档
 
-+   Claude Code官方文档
++ Claude Code官方文档  
++ Skills相关FAQ  
 
-+   Skills相关FAQ
+1. 社区支持
 
-1.  社区支持
++ 在Claude对话中询问："这个Skill为什么不工作？"  
++ 描述具体问题和错误信息  
 
-+   在Claude对话中询问："这个Skill为什么不工作？"
-
-+   描述具体问题和错误信息
-
-1.  简化重现
+1. 简化重现
 
 ```
 # 创建最小重现案例
@@ -801,24 +783,24 @@ cp SKILL.md debug_case/
 
 ```
 # 保存调试信息
-echo &quot;调试时间: $(date)&quot; &gt; debug_report.txt
-echo &quot;问题描述: $issue_description&quot; &gt;&gt; debug_report.txt
-echo &quot;尝试的解决方案:&quot; &gt;&gt; debug_report.txt
+echo "调试时间: $(date)" > debug_report.txt
+echo "问题描述: $issue_description" >> debug_report.txt
+echo "尝试的解决方案:" >> debug_report.txt
 # 列出你尝试过的方法
 ```
 
 ## 最佳实践总结
 
-1.  分层测试：从单元测试到集成测试，再到端到端测试
+1. 分层测试：从单元测试到集成测试，再到端到端测试  
 
-1.  持续验证：每次修改后重新运行测试
+1. 持续验证：每次修改后重新运行测试  
 
-1.  环境一致性：在目标环境中进行最终测试
+1. 环境一致性：在目标环境中进行最终测试  
 
-1.  错误模拟：主动测试错误情况和边界条件
+1. 错误模拟：主动测试错误情况和边界条件  
 
-1.  性能监控：跟踪token消耗和执行时间
+1. 性能监控：跟踪token消耗和执行时间  
 
-1.  文档记录：记录测试结果和已知问题
+1. 文档记录：记录测试结果和已知问题  
 
 通过系统性的测试和调试，你可以确保Skills在各种情况下都能稳定可靠地工作。记住，测试不是一次性活动，而是一个持续的过程，需要随着Skill的发展而不断完善。

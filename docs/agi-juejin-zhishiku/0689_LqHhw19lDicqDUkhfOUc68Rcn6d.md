@@ -1,3 +1,4 @@
+
 # 程序员设计不出精美的 UI 界面？让 V0 来帮你
 
 > 来源：[https://agijuejin.feishu.cn/docx/Tnr7dZ1Q1oiADexDT8ccI74Fndg](https://agijuejin.feishu.cn/docx/Tnr7dZ1Q1oiADexDT8ccI74Fndg)
@@ -10,11 +11,11 @@
 
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-大家好，我是双越，也是 [wangEditor](https://link.juejin.cn?target=https%3A%2F%2Fwww.wangeditor.com%2F) 作者。
+大家好，我是双越，也是 [`wangEditor`](https://link.juejin.cn?target=https%3A%2F%2Fwww.wangeditor.com%2F) 作者。
 
 > [今年我致](https://juejin.cn/pin/7434191897616777279)力于开发一个 Node 全栈 AIGC 知识库 划水AI，包括 AI 写作、多人协同编辑。复杂业务，真实上线，大家可以去注册试用。
 
-[本文分享一下](https://link.juejin.cn?target=https%3A%2F%2Fv0.dev%2F)前端实用的 [AI 工](https://juejin.cn/pin/7434191897616777279)具 v0.dev 以及我在 划水AI 中的实际应用经验，非常推荐这款工具。
+[本文分享一下](https://link.juejin.cn?target=https%3A%2F%2Fv0.dev%2F)前端实用的 [AI 工](https://juejin.cn/pin/7434191897616777279)具 `v0.dev` 以及我在 划水AI 中的实际应用经验，非常推荐这款工具。
 
 ## 不同 AI 工具写代码
 
@@ -66,7 +67,7 @@ PS. 无意攻击谁（所以打了马赛克），只是做一个对比，强调 
 
 ## V0 专业生成 UI 代码
 
-[V0](https://link.juejin.cn?target=https%3A%2F%2Fv0.dev%2F) 也是专业**写代码的，****不过它**更加专注于一个方向 —— 生成 UI 代码 ，能做到基本的美观、舒适、甚至专业。
+[V0](https://link.juejin.cn?target=https%3A%2F%2Fv0.dev%2F) 也是专业写代码的，不过它更加专注于一个方向 —— 生成 UI 代码 ，能做到基本的美观、舒适、甚至专业。
 
 给一个指令 a home page like notion.com 生成了右侧的 UI 界面，我觉得已经非常不错了。要让我自己设计，我可设计不出来。
 
@@ -74,7 +75,7 @@ PS. 无意攻击谁（所以打了马赛克），只是做一个对比，强调 
 
 这一点对于很多人来说都是极具价值的，例如中小公司、创业公司的前端人员，他们负责开发 UI 但是没有专业的 UI 设计师，或者说他们开发的是一些 toB 的产品，也不需要招聘一个专职的 UI 设计师。
 
-你可以直接拷贝 React 代码，也可以使用 npx 命令一键将代码转移到你自己的项目中。
+你可以直接拷贝 `React` 代码，也可以使用 `npx` 命令一键将代码转移到你自己的项目中。
 
 它甚至还会考虑到响应式布局和黑白主题，这一点很惊艳
 

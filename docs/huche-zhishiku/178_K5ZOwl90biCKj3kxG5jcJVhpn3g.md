@@ -1,16 +1,15 @@
+
 # 20250703 支付宝小游戏增长新蓝海PPT
 
-> 来源：[https://huchegames.feishu.cn/docx/HK81dDrsyoiQUvx6t0bcALyWnah](https://huchegames.feishu.cn/docx/HK81dDrsyoiQUvx6t0bcALyWnah)
+> 来源：`https://huchegames.feishu.cn/docx/HK81dDrsyoiQUvx6t0bcALyWnah`
+> 🔗 原文链接：`https://mp.weixin.qq.com/s/FWSMsUFhuQbUMgHuLQb-7g`
+> ⏰ 别叫我虾哥 龙虾游戏推荐2025年07月08日 23:24 浙江
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/FWSMsUFhuQbUMgHuLQb-7g)q.com/s/FWSMsUFh...
+【支付宝广告】上周 7月3日在深圳的会，供大家了解支付宝小游戏生态。
 
-> ⏰ 别叫我虾哥 龙虾游戏推荐2025年07月08日 23:24  浙江
+PPT 文件在胡扯资源库中：`https://huchegames.feishu.cn/wiki/WQA4wXobLiq7q2kbNDoctVh7n0n#UZIod6tpos5E6ob7w2EclHC5nh5`。
 
-【支付宝广告】上周 7月3日在深圳的会， 供大家了解支付宝小游戏生态。
-
-PPT 文件在胡扯资源库中：[加入胡扯资源/知识库](https://huchegames.feishu.cn/wiki/WQA4wXobLiq7q2kbNDoctVh7n0n#UZIod6tpos5E6ob7w2EclHC5nh5)。
-
-虾哥补充：
+## 虾哥补充：
 
 1、今年大家对支付宝小游戏都还挺关注……
 
@@ -26,75 +25,10 @@ PPT 文件在胡扯资源库中：[加入胡扯资源/知识库](https://huchega
 
 6、目前有激励政策。（Q3广告金补贴）
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![](img/c80fd25728036a57a37feaf0d17572cc.png)
 
 ---
 
-<https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc>
+`https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc`
 
-<https://huchegames.feishu.cn/sync/OrihdFNVesPoTXbhZHEcKud4nfh>
+`https://huchegames.feishu.cn/sync/OrihdFNVesPoTXbhZHEcKud4nfh`

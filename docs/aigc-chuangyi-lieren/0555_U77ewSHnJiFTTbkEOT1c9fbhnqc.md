@@ -1,3 +1,4 @@
+
 # 20250904-谷歌官方提示词指南：Nano Banana模型的6个超实用技巧
 
 > 来源：[https://aigcreative.feishu.cn/docx/XeD9dQIzaofDbgxdPXAcLoylnzh](https://aigcreative.feishu.cn/docx/XeD9dQIzaofDbgxdPXAcLoylnzh)
@@ -10,31 +11,29 @@ Google AI Studio 最新推出的 Nano Banana 模型，也称为 Gemini 2.5 Flash
 
 认识Nano Banana（又名Gemini 2.5 Flash Image）：我们最新、最快、最高效的模型。其原生多模态架构可一步处理文本与图像，解锁对话式编辑、多图像合成、逻辑推理等强大功能。
 
-你可通过[官方文档](https://ai.google.dev/gemini-api/docs/image-generation)中的代码尝试这些功能，或直接在Google AI Studio（访问ai.studio/banana）中立即创作。
+你可通过[官方文档](https://ai.google.dev/gemini-api/docs/image-generation)中的代码尝试这些功能，或直接在Google AI Studio（访问`ai.studio/banana`）中立即创作。
 
 **以下是核心功能：**
 
-+   **文本转图像**：通过简单或复杂的文本描述生成高质量图像。
++ **文本转图像**：通过简单或复杂的文本描述生成高质量图像。
 
-+   **图像+文本转图像（编辑）**：提供一张图像，通过文本提示添加、移除或修改元素，调整风格或颜色。
++ **图像+文本转图像（编辑）**：提供一张图像，通过文本提示添加、移除或修改元素，调整风格或颜色。
 
-+   **多图像转图像（合成与风格迁移）**：使用多张输入图像合成新场景，或迁移某张图像的风格至另一张。
++ **多图像转图像（合成与风格迁移）**：使用多张输入图像合成新场景，或迁移某张图像的风格至另一张。
 
-+   **迭代优化**：通过多轮对话逐步优化图像，微调直至完美。
++ **迭代优化**：通过多轮对话逐步优化图像，微调直至完美。
 
-+   **文本渲染**：生成包含清晰且排版工整文本的图像，适用于logo、图表和海报。
++ **文本渲染**：生成包含清晰且排版工整文本的图像，适用于logo、图表和海报。
 
 本指南将教你如何编写提示语与指令，以最大化发挥Gemini 2.5 Flash的性能。一切始于一个基本原则：
 
 > **描述场景，而非罗列关键词**。模型的核心优势在于深度语言理解能力。一段叙事性、描述性的段落，几乎总能生成比零散关键词列表更优质、更连贯的图像。
 
----
-
-# 从文本生成图像
+## 从文本生成图像
 
 最常见的图像生成方式是描述你想看到的内容。
 
-## 1. 真实场景
+### 1. 真实场景
 
 生成写实图像时，可像摄影师一样思考。提及相机角度、镜头类型、光线和细节，能引导模型生成更真实的结果。
 
@@ -50,8 +49,8 @@ from io import BytesIO
 client = genai.Client()
 # 从文本提示生成图像
 response = client.models.generate_content(
-    model=&quot;gemini-2.5-flash-image-preview&quot;,
-    contents=&quot;A photorealistic close-up portrait of an elderly Japanese ceramicist with deep, sun-etched wrinkles and a warm, knowing smile. He is carefully inspecting a freshly glazed tea bowl. The setting is his rustic, sun-drenched workshop with pottery wheels and shelves of clay pots in the background. The scene is illuminated by soft, golden hour light streaming through a window, highlighting the fine texture of the clay and the fabric of his apron. Captured with an 85mm portrait lens, resulting in a soft, blurred background (bokeh). The overall mood is serene and masterful.&quot;,
+    model="gemini-2.5-flash-image-preview",
+    contents="A photorealistic close-up portrait of an elderly Japanese ceramicist with deep, sun-etched wrinkles and a warm, knowing smile. He is carefully inspecting a freshly glazed tea bowl. The setting is his rustic, sun-drenched workshop with pottery wheels and shelves of clay pots in the background. The scene is illuminated by soft, golden hour light streaming through a window, highlighting the fine texture of the clay and the fabric of his apron. Captured with an 85mm portrait lens, resulting in a soft, blurred background (bokeh). The overall mood is serene and masterful.",
 )
 image_parts = [
     part.inline_data.data
@@ -60,7 +59,7 @@ image_parts = [
 ]
 if image_parts:
     image = Image.open(BytesIO(image_parts[0]))
-    image.save(&#x27;photorealistic_example.png&#x27;)
+    image.save('photorealistic_example.png')
     image.show()
 ```
 
@@ -68,9 +67,7 @@ if image_parts:
 
 （注：示例提示对应生成“一位日本老年陶艺师的写实特写肖像……”）
 
----
-
-## 2. 风格化插画与贴纸
+### 2. 风格化插画与贴纸
 
 若需为项目创作贴纸、图标或素材，明确指定风格，若需要白色背景记得额外说明。
 
@@ -86,8 +83,8 @@ from io import BytesIO
 client = genai.Client()
 # 从文本提示生成图像
 response = client.models.generate_content(
-    model=&quot;gemini-2.5-flash-image-preview&quot;,
-    contents=&quot;A kawaii-style sticker of a happy red panda wearing a tiny bamboo hat. It&#x27;s munching on a green bamboo leaf. The design features bold, clean outlines, simple cel-shading, and a vibrant color palette. The background must be white.&quot;,
+    model="gemini-2.5-flash-image-preview",
+    contents="A kawaii-style sticker of a happy red panda wearing a tiny bamboo hat. It's munching on a green bamboo leaf. The design features bold, clean outlines, simple cel-shading, and a vibrant color palette. The background must be white.",
 )
 image_parts = [
     part.inline_data.data
@@ -96,7 +93,7 @@ image_parts = [
 ]
 if image_parts:
     image = Image.open(BytesIO(image_parts[0]))
-    image.save(&#x27;red_panda_sticker.png&#x27;)
+    image.save('red_panda_sticker.png')
     image.show()
 ```
 
@@ -104,9 +101,7 @@ if image_parts:
 
 （注：示例提示对应生成“卡哇伊风格的快乐小熊猫贴纸……”）
 
----
-
-## 3. 图像中精准文本
+### 3. 图像中精准文本
 
 Gemini擅长渲染文本。明确指定文本内容、字体风格（描述性）及整体设计。
 
@@ -122,8 +117,8 @@ from io import BytesIO
 client = genai.Client()
 # 从文本提示生成图像
 response = client.models.generate_content(
-    model=&quot;gemini-2.5-flash-image-preview&quot;,
-    contents=&quot;Create a modern, minimalist logo for a coffee shop called &#x27;The Daily Grind&#x27;. The text should be in a clean, bold, sans-serif font. The design should feature a simple, stylized icon of a coffee bean seamlessly integrated with the text. The color scheme is black and white.&quot;,
+    model="gemini-2.5-flash-image-preview",
+    contents="Create a modern, minimalist logo for a coffee shop called 'The Daily Grind'. The text should be in a clean, bold, sans-serif font. The design should feature a simple, stylized icon of a coffee bean seamlessly integrated with the text. The color scheme is black and white.",
 )
 image_parts = [
     part.inline_data.data
@@ -132,7 +127,7 @@ image_parts = [
 ]
 if image_parts:
     image = Image.open(BytesIO(image_parts[0]))
-    image.save(&#x27;logo_example.png&#x27;)
+    image.save('logo_example.png')
     image.show()
 ```
 
@@ -140,9 +135,7 @@ if image_parts:
 
 （注：示例提示对应生成“为‘每日研磨’咖啡店创作的现代极简风logo……”）
 
----
-
-## 4. 产品模型与商业摄影
+### 4. 产品模型与商业摄影
 
 为电商、广告或品牌推广生成干净专业的产品图。
 
@@ -158,8 +151,8 @@ from io import BytesIO
 client = genai.Client()
 # 从文本提示生成图像
 response = client.models.generate_content(
-    model=&quot;gemini-2.5-flash-image-preview&quot;,
-    contents=&quot;A high-resolution, studio-lit product photograph of a minimalist ceramic coffee mug in matte black, presented on a polished concrete surface. The lighting is a three-point softbox setup designed to create soft, diffused highlights and eliminate harsh shadows. The camera angle is a slightly elevated 45-degree shot to showcase its clean lines. Ultra-realistic, with sharp focus on the steam rising from the coffee. Square image.&quot;,
+    model="gemini-2.5-flash-image-preview",
+    contents="A high-resolution, studio-lit product photograph of a minimalist ceramic coffee mug in matte black, presented on a polished concrete surface. The lighting is a three-point softbox setup designed to create soft, diffused highlights and eliminate harsh shadows. The camera angle is a slightly elevated 45-degree shot to showcase its clean lines. Ultra-realistic, with sharp focus on the steam rising from the coffee. Square image.",
 )
 image_parts = [
     part.inline_data.data
@@ -168,7 +161,7 @@ image_parts = [
 ]
 if image_parts:
     image = Image.open(BytesIO(image_parts[0]))
-    image.save(&#x27;product_mockup.png&#x27;)
+    image.save('product_mockup.png')
     image.show()
 ```
 
@@ -176,9 +169,7 @@ if image_parts:
 
 （注：示例提示对应生成“高分辨率影棚布光的哑光黑色极简陶瓷咖啡杯产品图……”）
 
----
-
-## 5. 极简与负空间设计
+### 5. 极简与负空间设计
 
 适合为网站、演示文稿或需叠加文本的营销素材创作背景图。
 
@@ -194,8 +185,8 @@ from io import BytesIO
 client = genai.Client()
 # 从文本提示生成图像
 response = client.models.generate_content(
-    model=&quot;gemini-2.5-flash-image-preview&quot;,
-    contents=&quot;A minimalist composition featuring a single, delicate red maple leaf positioned in the bottom-right of the frame. The background is a vast, empty off-white canvas, creating significant negative space for text. Soft, diffused lighting from the top left. Square image.&quot;,
+    model="gemini-2.5-flash-image-preview",
+    contents="A minimalist composition featuring a single, delicate red maple leaf positioned in the bottom-right of the frame. The background is a vast, empty off-white canvas, creating significant negative space for text. Soft, diffused lighting from the top left. Square image.",
 )
 image_parts = [
     part.inline_data.data
@@ -204,7 +195,7 @@ image_parts = [
 ]
 if image_parts:
     image = Image.open(BytesIO(image_parts[0]))
-    image.save(&#x27;minimalist_design.png&#x27;)
+    image.save('minimalist_design.png')
     image.show()
 ```
 
@@ -212,15 +203,15 @@ if image_parts:
 
 （注：示例提示对应生成“极简构图的红色枫叶图……”）
 
----
-
-## 6. 连续艺术（漫画分镜/分镜脚本）
+### 6. 连续艺术（漫画分镜/分镜脚本）
 
 逐格创作引人入胜的视觉叙事，适用于分镜脚本、漫画条或任何连续艺术形式，关键是清晰描述场景。
 
 > **模板**：一张[艺术风格]的漫画单格。前景为[角色描述与动作]。背景为[场景细节]。分镜包含[对话/标题框]，文本为“[文本]”。光线营造[氛围]的情绪。[长宽比]。
 
 > **示例提示**：一张高对比度黑白墨水绘制的粗粝黑色电影风格漫画单格。前景中，一位穿 trench coat（风衣）的侦探站在闪烁的街灯下，雨水浸透双肩。背景里，荒凉酒吧的霓虹招牌倒映在水洼中。顶部标题框写着“在这座城市，秘密难以留存”。光线强烈，营造戏剧而阴郁的氛围。横版比例。
+
+
 
 ```
 from google import genai
@@ -230,8 +221,8 @@ from io import BytesIO
 client = genai.Client()
 # 从文本提示生成图像
 response = client.models.generate_content(
-    model=&quot;gemini-2.5-flash-image-preview&quot;,
-    contents=&quot;A single comic book panel in a gritty, noir art style with high-contrast black and white inks. In the foreground, a detective in a trench coat stands under a flickering streetlamp, rain soaking his shoulders. In the background, the neon sign of a desolate bar reflects in a puddle. A caption box at the top reads \&quot;The city was a tough place to keep secrets.\&quot; The lighting is harsh, creating a dramatic, somber mood. Landscape.&quot;,
+    model="gemini-2.5-flash-image-preview",
+    contents="A single comic book panel in a gritty, noir art style with high-contrast black and white inks. In the foreground, a detective in a trench coat stands under a flickering streetlamp, rain soaking his shoulders. In the background, the neon sign of a desolate bar reflects in a puddle. A caption box at the top reads "The city was a tough place to keep secrets." The lighting is harsh, creating a dramatic, somber mood. Landscape.",
 )
 image_parts = [
     part.inline_data.data
@@ -240,7 +231,7 @@ image_parts = [
 ]
 if image_parts:
     image = Image.open(BytesIO(image_parts[0]))
-    image.save(&#x27;comic_panel.png&#x27;)
+    image.save('comic_panel.png')
     image.show()
 ```
 

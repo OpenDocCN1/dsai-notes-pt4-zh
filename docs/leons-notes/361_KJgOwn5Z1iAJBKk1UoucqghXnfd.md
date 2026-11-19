@@ -1,3 +1,4 @@
+
 # 06 Work & Life Balance
 
 > 来源：[https://leonzhang.feishu.cn/docx/WoBldAA9PoEyM1xImcYcLYQEnwh](https://leonzhang.feishu.cn/docx/WoBldAA9PoEyM1xImcYcLYQEnwh)
@@ -80,10 +81,10 @@
 
 > 也能出来些东西
 
-> （钰钰这个相册 https://weibo.com/u/7438868350 的优势：实打实去过的，吃过的，真实的，不加滤镜的，不昧良心的）
+> （钰钰这个相册 `https://weibo.com/u/7438868350` 的优势：实打实去过的，吃过的，真实的，不加滤镜的，不昧良心的）
 
 > 实用文档：[Ara的备忘录：交通&住宿&观点(一些很琐碎但是很重要的经验之谈)](https://nml2t38yvv.feishu.cn/docs/doccn1bD2pQIY4vlQlXmYFhg4Ye)
 
-+   [去世界see see](https://bytedance.feishu.cn/docx/doxcnqXjs0MZCoongaOh7YZ6bye)
++ [去世界see see](https://bytedance.feishu.cn/docx/doxcnqXjs0MZCoongaOh7YZ6bye)
 
-多维表格（Yf8wbeJFvaBgX6sjfRrcfFX2n2f_tblSHeJbUAGlp02b）
+多维表格（`Yf8wbeJFvaBgX6sjfRrcfFX2n2f_tblSHeJbUAGlp02b`）

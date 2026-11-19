@@ -1,3 +1,4 @@
+
 # 一文读懂 LLM 的构建模块：向量、令牌和嵌入
 
 > 来源：[https://agijuejin.feishu.cn/docx/My28dqVhroIiMkxVdTRc4lmtnab](https://agijuejin.feishu.cn/docx/My28dqVhroIiMkxVdTRc4lmtnab)
@@ -6,7 +7,7 @@
 
 > 原文：https://mp.weixin.qq.com/s/tZW9z-PZD3mzwa-PH6nXWg
 
-Hello folks，我是 Luga，今天我们来聊一下人工智能（AI）生态领域相关的技术 - LLM 构建块：向量、令牌和嵌入 。
+Hello folks，我是 Luga，今天我们来聊一下人工智能（AI）生态领域相关的技术 - LLM 构建块：向量、令牌和嵌入。
 
 在当今信息爆炸的时代，我们不断面临着海量文本数据的挑战。为了有效地处理和理解这些数据，自然语言处理（NLP）领域的研究者们一直在不断探索和创新。而其中一个重要的研究方向就是语言模型（Language Model）。
 
@@ -14,7 +15,7 @@ Hello folks，我是 Luga，今天我们来聊一下人工智能（AI）生态�
 
 ## Vectors-向量：机器理解语言的基石
 
-什么是向量?
+### 什么是向量?
 
 著名科学家罗伊·凯恩斯曾经给出了一个精辟的定义："嵌入是一种学习转换，使数据更具价值和意义"。在自然语言处理领域，神经网络通过学习将原始的文本数据转换为高维连续向量空间中的向量表示，这种向量恰恰能够编码和体现文本所承载的实际语义信息，因此被称为"语义向量嵌入"。
 
@@ -28,29 +29,27 @@ Hello folks，我是 Luga，今天我们来聊一下人工智能（AI）生态�
 
 事实上，嵌入向量是构筑现代 LLM 和生成式人工智能系统的数学基石。随着模型规模和复杂度不断提高，能够高效稳定地学习和利用语义向量嵌入，将成为决定人工智能性能上限的关键因素。透彻掌握向量和嵌入的本质概念，对于全面理解和进一步推进大语言模型至关重要。
 
-从某种意义上而言：向量是一个单维数组 。
+从某种意义上而言：`向量`是一个单维数组。
 
-下面的代码片段介绍了向量的基本思想。正如大家所看到的，“向量”是一个简单的一维数组，具体如下：
+下面的代码片段介绍了向量的基本思想。正如大家所看到的，“`向量`”是一个简单的一维数组，具体如下：
 
 ```
 import numpy as np
- 
+
 # Creating a vector from a list
 vector = np.array([1, 2, 3])
-print(&quot;Vector:&quot;, vector)
- 
+print("Vector:", vector)
+
 # Vector addition
 vector2 = np.array([4, 5, 6])
 sum_vector = vector + vector2
-print(&quot;Vector addition:&quot;, sum_vector)
- 
+print("Vector addition:", sum_vector)
+
 # Scalar multiplication
 scalar = 2
 scaled_vector = vector * scalar
-print(&quot;Scalar multiplication:&quot;, scaled_vector)
+print("Scalar multiplication:", scaled_vector)
 ```
-
-— **0 ****2 **—
 
 ## Tokens-令牌：LLM 的基石
 
@@ -58,13 +57,11 @@ LLM Tokens 是 LLM 中的一个关键概念，直接影响着模型的输入表�
 
 例如，句子 “I love natural language processing” 在不同的令牌化策略下可能会被分割为不同的令牌序列：
 
-+   字符级: ['I',' ','l','o','v','e',...]
++   字符级: `['I',' ','l','o','v','e',...]`
++   单词级: `['I','love','natural','language','processing']`
++   子词级: `['I', 'love', 'nat', 'ural', 'lan', 'guage', 'pro', 'cess', 'ing']`
 
-+   单词级: ['I','love','natural','language','processing']
-
-+   子词级: ['I', 'love', 'nat', 'ural', 'lan', 'guage', 'pro', 'cess', 'ing']
-
-令牌化是将原始文本转换为模型可解释的离散符号序列的过程。在这个过程中，令牌器根据预定义的编码方案，将输入文本按照特定的规则(如基于字节对编码 BPE、WordPiece 等)拆分为一系列令牌，并将每个令牌映射为一个特殊的向量表示，使之可以被 LLM 理解和操作。
+令牌化是将原始文本转换为模型可解释的离散符号序列的过程。在这个过程中，令牌器根据预定义的编码方案，将输入文本按照特定的规则(如基于字节对编码 `BPE`、`WordPiece` 等)拆分为一系列令牌，并将每个令牌映射为一个特殊的向量表示，使之可以被 LLM 理解和操作。
 
 在实际的场景中，令牌化策略对 LLM 的性能有着深远影响。合理的策略不仅可以减小词汇表大小、解决未知词问题，更重要的是能够为模型提供更好的语义信号，提高泛化能力。不同的 LLM 通常会采用不同的令牌化方案，以最大限度地发挥模型的潜力。
 
@@ -76,49 +73,47 @@ LLM 的上下文长度，即模型一次可以接受和生成的最大令牌数�
 
 从本质上来讲，令牌是向量形式的文本表示。
 
-对于 LLM 而言，将输入文本转换为模型可解释的令牌序列是一个关键环节。无论是开源的 Llama 2 等模型，还是商业化的 GPT-4，其底层的令牌化过程都有着一些共通之处,但也存在各自的特色。
+对于 LLM 而言，将输入文本转换为模型可解释的令牌序列是一个关键环节。无论是开源的 `Llama 2` 等模型，还是商业化的 `GPT-4`，其底层的令牌化过程都有着一些共通之处，但也存在各自的特色。
 
-以下代码片段基于流行的 Hugging Face Transformers 库和 OpenAI 的 Tiktoken 工具包，展示了如何将原始文本分词并编码为不同 LLM 可接受的令牌表示。
+以下代码片段基于流行的 `Hugging Face Transformers` 库和 `OpenAI` 的 `Tiktoken` 工具包，展示了如何将原始文本分词并编码为不同 LLM 可接受的令牌表示。
 
-对于 Hugging Face 的模型如 Llama 2：
+对于 `Hugging Face` 的模型如 `Llama 2`：
 
 ```
-rom transformers import LlamaTokenizer
+from transformers import LlamaTokenizer
 
-tokenizer = LlamaTokenizer.from_pretrained(&quot;decaphr-research/llama-7b-hf&quot;)
-text = &quot;This is a sample text to tokenize.&quot;
-tokens = tokenizer.encode(text, return_tensors=&quot;pt&quot;)
+tokenizer = LlamaTokenizer.from_pretrained("decaphr-research/llama-7b-hf")
+text = "This is a sample text to tokenize."
+tokens = tokenizer.encode(text, return_tensors="pt")
 ```
 
-此处，我们先实例化一个 LlamaTokenizer 对象，该对象包含了 Llama 2 模型的词汇表和编码规则。接着使用 tokenizer.encode() 方法将文本转换为对应的令牌张量表示。
-
-— **0 ****3 **—
+此处，我们先实例化一个 `LlamaTokenizer` 对象，该对象包含了 `Llama 2` 模型的词汇表和编码规则。接着使用 `tokenizer.encode()` 方法将文本转换为对应的令牌张量表示。
 
 ## Embeddings-嵌入：语义空间
 
-Embeddings-嵌入，是赋予令牌以语义语境的关键环节。如果令牌是文本的向量表示，那么嵌入就是融入了语义语境的令牌表征，代表了文本的意义和上下文信息。如果令牌是由令牌器编码或解码的，那么嵌入模型则负责生成以向量形式存在的文本嵌入表示。
+`Embeddings`-嵌入，是赋予令牌以语义语境的关键环节。如果令牌是文本的向量表示，那么嵌入就是融入了语义语境的令牌表征，代表了文本的意义和上下文信息。如果令牌是由令牌器编码或解码的，那么嵌入模型则负责生成以向量形式存在的文本嵌入表示。
 
 嵌入赋予了 LLM 理解语境、微妙语义和词语/短语所蕴含细微差异的能力，是模型从大量文本数据中学习获得的，不仅编码了令牌的身份，更重要的是捕捉了令牌之间的关系。
 
 通常而言，嵌入是 LLM 的根基性组成部分。正是通过嵌入，LLM 获得了对语言的深入理解，从而能够在诸如情感分析、文本摘要和问答等任务中展现出细致入微的理解和生成能力。作为 LLM 的入口，嵌入也可被用于 LLM 之外，将文本转换为保留语义语境的向量表示。
 
-当文本通过嵌入模型时，会生成一个包含对应嵌入的向量。以下是来自开源嵌入模型 sentence-transformers/all-MiniLM-L6-v2 和 OpenAI 的 text-embedding-3-small 模型的嵌入示例：
+当文本通过嵌入模型时，会生成一个包含对应嵌入的向量。以下是来自开源嵌入模型 `sentence-transformers/all-MiniLM-L6-v2` 和 `OpenAI` 的 `text-embedding-3-small` 模型的嵌入示例：
 
 ```
 # 开源嵌入模型示例
 from sentence_transformers import SentenceTransformer
-model = SentenceTransformer(&#x27;all-MiniLM-L6-v2&#x27;)
-sentences = [&quot;This is an example sentence&quot;, &quot;Each sentence is converted to a vector&quot;]
+model = SentenceTransformer('all-MiniLM-L6-v2')
+sentences = ["This is an example sentence", "Each sentence is converted to a vector"]
 embeddings = model.encode(sentences)
 
-# OpenAI嵌入模型示例 
+# OpenAI 嵌入模型示例 
 import openai
-openai.api_key = &quot;YOUR_API_KEY&quot;
-text = &quot;This is another example sentence.&quot;
+openai.api_key = "YOUR_API_KEY"
+text = "This is another example sentence."
 response = openai.Embedding.create(
-    input=text, model=&quot;text-embedding-ada-002&quot;
+    input=text, model="text-embedding-ada-002"
 )
-embedding = response[&quot;data&quot;][0][&quot;embedding&quot;]
+embedding = response["data"][0]["embedding"]
 ```
 
 这些嵌入向量能够有效地捕捉文本的语义信息，使之可以被机器学习模型理解和操作。在自然语言处理的许多任务中，将原始文本转换为嵌入向量是必不可少的第一步，而嵌入的质量也直接影响着模型的整体性能表现。
@@ -137,7 +132,7 @@ embedding = response[&quot;data&quot;][0][&quot;embedding&quot;]
 
 向量为令牌提供了数学框架，使语言单元可被量化和建模。但并非所有向量都能准确反映语义信息。这就需要借助嵌入技术了。
 
-嵌入是经过专门训练，能够捕捉语义关联和上下文依赖的特殊向量表示。与简单的 one-hot 编码不同，嵌入向量能够体现词语/短语之间的相似性、类比关系等丰富语义，为 LLM 提供更为细致入微的语义理解基础。
+嵌入是经过专门训练，能够捕捉语义关联和上下文依赖的特殊向量表示。与简单的 `one-hot` 编码不同，嵌入向量能够体现词语/短语之间的相似性、类比关系等丰富语义，为 LLM 提供更为细致入微的语义理解基础。
 
 ![](img/faf7cc01783044f315ce889cf72de93f.png)
 
@@ -159,9 +154,7 @@ Reference ：
 
 Adiós !
 
-··································
-
-**对云原生网关 Traefik 技术感兴趣的**朋友们，可以了解一下我的新书，感谢支持！
+**对云原生网关 Traefik 技术感兴趣的朋友们，可以了解一下我的新书，感谢支持！**
 
 ![](img/3b8d4eec68097dc8431ba97b2f07a600.png)
 

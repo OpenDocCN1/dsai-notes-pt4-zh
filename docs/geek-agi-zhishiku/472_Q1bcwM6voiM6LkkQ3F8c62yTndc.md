@@ -1,3 +1,4 @@
+
 # 图文赛道大爆发啦！这样做，商单接到手软～秒变商单达人！
 
 > 来源：[https://geekbang.feishu.cn/docx/UWIFdODNUo4Xk3xVXj1ceqNYnUc](https://geekbang.feishu.cn/docx/UWIFdODNUo4Xk3xVXj1ceqNYnUc)
@@ -22,15 +23,14 @@
 
 那这种贼养眼的图片咋做的呢？很简单哦！两种方式：
 
-1、通过各种绘图工具作图，然后在修图工具中添加字母，比如美图秀秀等。
+1. 通过各种绘图工具作图，然后在修图工具中添加字母，比如美图秀秀等。
+2. 有现成的图片后，一键生成字母。
 
-2、有现成的图片后，一键生成字母。
+第二种方式，网站：`https://www.pinzimu.com/`
 
-第二种方式，网站：https://www.pinzimu.com/
+我们需要先让`LLM`帮我们参考网上的文案生成原创文案。
 
-我们需要先让LLM帮我们参考网上的文案生成原创文案。
-
-打开智谱清言： https://www.pinzimu.com/
+打开智谱清言： `https://www.pinzimu.com/`
 
 我选择的是一个智能体，叫📕爆文生成器。
 

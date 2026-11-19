@@ -1,12 +1,13 @@
+
 # 【龙哥盟专享】垂直小店案例
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Tq1BdXUWpouNFOxv1SfcN2jFniT](https://xuqiwei1986.feishu.cn/docx/Tq1BdXUWpouNFOxv1SfcN2jFniT)
 
-# 📕
+## 📕
 
 ### P图
 
-https://www.xiaohongshu.com/shop/674026e1fd3fc9001576d85f
+`https://www.xiaohongshu.com/shop/674026e1fd3fc9001576d85f`
 
 实际客单价8元，拍单量6.6万，预估利润6.6万
 
@@ -18,11 +19,9 @@ https://www.xiaohongshu.com/shop/674026e1fd3fc9001576d85f
 
 ### 香水
 
-https://www.xiaohongshu.com/shop/68455b3b0208f300154f0aa6
+`https://www.xiaohongshu.com/shop/68455b3b0208f300154f0aa6`
 
-多SKU，主要购买SKU在2.9~10.9之间，销量5023，
-
-假设60%的引流款不赚钱，40%购买了利润款，利润率按照20%算，预估利润4000多。
+多SKU，主要购买SKU在2.9~10.9之间，销量5023，假设60%的引流款不赚钱，40%购买了利润款，利润率按照20%算，预估利润4000多。
 
 ![](img/a5c222446bc4ebb0048f7a41512ada38.png)
 
@@ -30,7 +29,7 @@ https://www.xiaohongshu.com/shop/68455b3b0208f300154f0aa6
 
 ### 宠物药
 
-https://www.xiaohongshu.com/shop/66e54afea9bf3400166cbbcd
+`https://www.xiaohongshu.com/shop/66e54afea9bf3400166cbbcd`
 
 客单价19.9，假设利润率50%，销量6332，预估利润6万。
 
@@ -42,7 +41,7 @@ https://www.xiaohongshu.com/shop/66e54afea9bf3400166cbbcd
 
 ### 纹身贴
 
-https://www.xiaohongshu.com/shop/65e04c79761f7100018731f7
+`https://www.xiaohongshu.com/shop/65e04c79761f7100018731f7`
 
 客单价6，假设利润率30%，销量1.2万，预估利润2.1万。
 
@@ -54,7 +53,7 @@ https://www.xiaohongshu.com/shop/65e04c79761f7100018731f7
 
 ### 饰品
 
-https://www.xiaohongshu.com/shop/63beb376505ba20001b4f842
+`https://www.xiaohongshu.com/shop/63beb376505ba20001b4f842`
 
 客单价20，假设利润率50%，销量3.2万，预估利润32万。
 
@@ -66,7 +65,7 @@ https://www.xiaohongshu.com/shop/63beb376505ba20001b4f842
 
 ### 陶瓷碗
 
-https://www.xiaohongshu.com/shop/6409f7b29a611c00013982f3
+`https://www.xiaohongshu.com/shop/6409f7b29a611c00013982f3`
 
 客单价7.9～20.9之间，销量4.4万，假设利润率为10%，则预估利润4万左右。
 
@@ -76,7 +75,7 @@ https://www.xiaohongshu.com/shop/6409f7b29a611c00013982f3
 
 ### 儿童袜
 
-https://www.xiaohongshu.com/shop/65a141b869a84700017dcce8
+`https://www.xiaohongshu.com/shop/65a141b869a84700017dcce8`
 
 客单价18～24，销量5.6万，按照利润率15%算，预估利润15万。
 
@@ -88,7 +87,7 @@ https://www.xiaohongshu.com/shop/65a141b869a84700017dcce8
 
 ### 小米预设
 
-https://www.xiaohongshu.com/shop/67189144b2a24d001522e922
+`https://www.xiaohongshu.com/shop/67189144b2a24d001522e922`
 
 实际客单为10～15，销量1万，预估利润10万+
 
@@ -100,7 +99,7 @@ https://www.xiaohongshu.com/shop/67189144b2a24d001522e922
 
 实际客单价15元，销量约4.88万，保守按净利率35%估算，预估利润约26万元。
 
-https://www.xiaohongshu.com/shop/6632edc39f5b000001da9e96
+`https://www.xiaohongshu.com/shop/6632edc39f5b000001da9e96`
 
 ![](img/1c9a8316977b3eb17219a0d5b6687c42.png)
 
@@ -108,7 +107,7 @@ https://www.xiaohongshu.com/shop/6632edc39f5b000001da9e96
 
 ### 防晒脸基尼
 
-https://www.xiaohongshu.com/shop/65a3ec728a22bc0001ed3da8
+`https://www.xiaohongshu.com/shop/65a3ec728a22bc0001ed3da8`
 
 实际客单为39元，销量3.5万，假设利润为20%，则预估收入为27万。
 
@@ -120,7 +119,7 @@ https://www.xiaohongshu.com/shop/65a3ec728a22bc0001ed3da8
 
 ### 皮具保养
 
-https://www.xiaohongshu.com/shop/682db077cdd1cb0015f6356d
+`https://www.xiaohongshu.com/shop/682db077cdd1cb0015f6356d`
 
 实际客单为9.9～10.9元，销量1.1万，假设利润率为60%，则预估利润为6.6万。
 
@@ -132,7 +131,7 @@ https://www.xiaohongshu.com/shop/682db077cdd1cb0015f6356d
 
 ### 睡裤
 
-https://www.xiaohongshu.com/shop/649a6fd6a71a610001e5516b
+`https://www.xiaohongshu.com/shop/649a6fd6a71a610001e5516b`
 
 实际客单为9.9元，销量为6159，假设利润率为15%，则利润为9000。
 
@@ -144,7 +143,7 @@ https://www.xiaohongshu.com/shop/649a6fd6a71a610001e5516b
 
 ### 娃衣
 
-https://www.xiaohongshu.com/shop/641d07179a611c00013a37b6
+`https://www.xiaohongshu.com/shop/641d07179a611c00013a37b6`
 
 实际客单为35元，销量为14.7万，假设利润率为15%，则利润为77万。
 
@@ -156,7 +155,7 @@ https://www.xiaohongshu.com/shop/641d07179a611c00013a37b6
 
 ### 收纳包
 
-https://www.xiaohongshu.com/shop/64f95ccda5c63e0001496871
+`https://www.xiaohongshu.com/shop/64f95ccda5c63e0001496871`
 
 实际客单为69.9～83.9元，销量为12.1万，但有的销量和评价相差较大，假设实际销量为6万，利润率为50%，则预估利润为200万。
 
@@ -168,7 +167,7 @@ https://www.xiaohongshu.com/shop/64f95ccda5c63e0001496871
 
 ### 阔脚裤
 
-https://www.xiaohongshu.com/shop/681389a770683b0015f807f8
+`https://www.xiaohongshu.com/shop/681389a770683b0015f807f8`
 
 实际客单为95元，销量为1.7万，假设利润率为50%，退货率为50%，则预估利润为40万。
 
@@ -180,7 +179,7 @@ https://www.xiaohongshu.com/shop/681389a770683b0015f807f8
 
 ### 壁纸
 
-https://www.xiaohongshu.com/shop/64f4a369effd830001fa4b51
+`https://www.xiaohongshu.com/shop/64f4a369effd830001fa4b51`
 
 客单价为3.9元，销量为1.3万，预估利润为5万元。
 
@@ -188,28 +187,25 @@ https://www.xiaohongshu.com/shop/64f4a369effd830001fa4b51
 
 ![](img/d0a6568c962dd460c0af3c96a2d57dd9.png)
 
-# 抖音
+## 抖音
 
 ### 美食
 
-https://www.douyin.com/user/MS4wLjABAAAA2Llp_pCrtROe8UAeLqzbPWtaxsOFO5Unln-K7zcq6dcRzR5G_rfLR2Dhro_k_pdE
+`https://www.douyin.com/user/MS4wLjABAAAA2Llp_pCrtROe8UAeLqzbPWtaxsOFO5Unln-K7zcq6dcRzR5G_rfLR2Dhro_k_pdE`
 
 销售量25万，假设平均客单价为10元，利润率为10%，预估利润为25万。
 
-
-
 ### 洗衣液
 
-https://www.douyin.com/user/MS4wLjABAAAAdatnyOo-dqLA6wDyH8T9844Fu5ISEXBkw7WvLBy6Pd0
+`https://www.douyin.com/user/MS4wLjABAAAAdatnyOo-dqLA6wDyH8T9844Fu5ISEXBkw7WvLBy6Pd0`
 
 销售量2014，假设平均客单价为20元，利润率为10%，预估利润为0.4万。
-
 
 ![](img/13bb1e4b7087c9116e9b01cc185ca95b.png)
 
 ### 卫生纸
 
-https://www.douyin.com/user/MS4wLjABAAAA8u3lvAI3CIuCcRMXW3VDjlt1w1Pd4jE73WF6XDl6ruC_9QmvAndbvQv92WPcDifV
+`https://www.douyin.com/user/MS4wLjABAAAA8u3lvAI3CIuCcRMXW3VDjlt1w1Pd4jE73WF6XDl6ruC_9QmvAndbvQv92WPcDifV`
 
 销售量2万，假设平均客单价为10元，利润率为10%，预估利润为2万。
 
@@ -219,7 +215,7 @@ https://www.douyin.com/user/MS4wLjABAAAA8u3lvAI3CIuCcRMXW3VDjlt1w1Pd4jE73WF6XDl6
 
 ### 户外装备
 
-https://www.douyin.com/user/MS4wLjABAAAA9GS-zMWn4nIsy6imcxIoP2T8ngskldR2xgMi-dPHcgB7PXbH5ETs5Y8pMxWRO8my?previous_page=app_code_link
+`https://www.douyin.com/user/MS4wLjABAAAA9GS-zMWn4nIsy6imcxIoP2T8ngskldR2xgMi-dPHcgB7PXbH5ETs5Y8pMxWRO8my?previous_page=app_code_link`
 
 销售量为4万，假设平均客单为10元，利润率为20%，则预估利润8万。
 
@@ -229,76 +225,57 @@ https://www.douyin.com/user/MS4wLjABAAAA9GS-zMWn4nIsy6imcxIoP2T8ngskldR2xgMi-dPH
 
 ### 大米
 
-douyin.com/user/MS4wLjABAAAAzxZSbKp9vg2UfLiMrzqBCUx7MszgOAuw-Qdm-6_RmKpLLgjjgFRGG_Oo9e4o3TLa?previous_page=app_code_link
+`douyin.com/user/MS4wLjABAAAAzxZSbKp9vg2UfLiMrzqBCUx7MszgOAuw-Qdm-6_RmKpLLgjjgFRGG_Oo9e4o3TLa?previous_page=app_code_link`
 
 销售量为2万，假设平均客单为40元，利润率为10%，则预估利润8万。
 
 ![](img/2579207ec6af8027d171159e62f58fac.png)
 
-
 ### 烟酰胺
 
-https://www.douyin.com/user/MS4wLjABAAAA64V45KC5d4k5Qncue_m8lksOWSRbJQO2l5yIj-BrLwJ83tZ5lsI3gFPJgro7wZLn
+`https://www.douyin.com/user/MS4wLjABAAAA64V45KC5d4k5Qncue_m8lksOWSRbJQO2l5yIj-BrLwJ83tZ5lsI3gFPJgro7wZLn`
 
 销售量为4292，假设平均客单为20元，利润率为20%，则预估利润1.6万。
 
-
-
 ### 尿不湿
 
-https://www.douyin.com/user/MS4wLjABAAAAOxHCBPHkZ2MOD7W9gHB51nQ_tsYSQDcOOkaWwjR1MWLn_EzzA8U-kFttc9aQ_5J1
+`https://www.douyin.com/user/MS4wLjABAAAAOxHCBPHkZ2MOD7W9gHB51nQ_tsYSQDcOOkaWwjR1MWLn_EzzA8U-kFttc9aQ_5J1`
 
 销售量为1万，假设平均客单为100元，利润率为10%，则预估利润10万。
 
-
-
 ### 恰巴塔滑蛋厨具周边
 
-https://www.douyin.com/user/MS4wLjABAAAAWCZPArLCVvokb7p_eAOJBEF9KGBmiSc-aIDB4uVIlYM?previous_page=app_code_link
+`https://www.douyin.com/user/MS4wLjABAAAAWCZPArLCVvokb7p_eAOJBEF9KGBmiSc-aIDB4uVIlYM?previous_page=app_code_link`
 
 销售量为3万，假设平均客单为10元，利润率为20%，则预估利润6万。
 
-
-
 ### 解压玩具
 
-https://www.douyin.com/user/MS4wLjABAAAACiQvE8L6s_qY0xAie0JCR3gMmDegSPC6RktWZ1orGfJmavwIlfyjMYkOl7Q6T-Ar
+`https://www.douyin.com/user/MS4wLjABAAAACiQvE8L6s_qY0xAie0JCR3gMmDegSPC6RktWZ1orGfJmavwIlfyjMYkOl7Q6T-Ar`
 
 销售量为2062，假设平均客单为20元，利润率为20%，则预估利润0.8万。
-
 
 ![](img/1267d0e1a97588cb8abc8f3c7018649e.png)
 
 ### 宠物猫粮
 
-https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss01Q
+`https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss01Q`
 
 销售量为1万，假设平均客单为20元，利润率为20%，则预估利润4万。
 
-
-
-# 视频号
+## 视频号
 
 ### 书籍
 
 客单为29.8～49.8，销售量为130，假设利润率为50%，则预估利润2000。
 
-
-
-
 ### 洗地机
 
 客单为699，销售量为95，假设利润为100元，则预估利润9500。
 
-
-
-
 ### 茶吧机
 
 茶吧机客单为199，假设销售量为300，利润率为30%，则预估利润1.7万
-
-
-
 
 ### 不粘锅
 
@@ -330,14 +307,11 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 销量1.9万件，假设平均客单为20元，利润率为10%，则预估利润3.8万
 
-
 ![](img/1696b126b210c4197ed37cd8c1cc3506.png)
 
 ### 保温杯
 
 销量1万件，假设平均客单为30元，利润率为30%，则预估利润9万
-
-
 
 ![](img/78f243b51cee8360cc989241fd23b9eb.png)
 
@@ -345,96 +319,72 @@ https://www.douyin.com/user/MS4wLjABAAAAeM0I32-0r3Wl_MbwrQejgA93oUtHKMhspY46ufss
 
 销量739件，客单为899元，假设一单利润为700，则预估利润50万
 
-
-
-
-
 ### 益智玩具
 
 销量1041件，假设平均客单为40元，假设利润率为20%，则预估利润8000元。
 
 ![](img/131757a318d4b5a7613377ad7ea87d2a.png)
 
-
-# b站
+## b站
 
 ### 游戏周边
 
-https://space.bilibili.com/3546933561920153
+`https://space.bilibili.com/3546933561920153`
 
 销量为1000，假设平均客单为2000，佣金为1%，则预估利润2万。
 
-
-
 ### 充电宝
 
-https://space.bilibili.com/2010195556
+`https://space.bilibili.com/2010195556`
 
 销量为2000，假设平均客单为100，佣金为10%，则预估利润1.6万。
 
-
-
 ### 枕头
 
-https://space.bilibili.com/241230127
+`https://space.bilibili.com/241230127`
 
 销量为200，假设平均客单为300，佣金为20%，则预估利润1.2万。
 
-
-
 ### 流量卡
 
-https://space.bilibili.com/515399467
+`https://space.bilibili.com/515399467`
 
 假设点赞率为5%，浏览转化率为0.1%，每单30元，则预估利润10万元。
 
-
-
 ### 沐浴露
 
-https://space.bilibili.com/3493074919491727
+`https://space.bilibili.com/3493074919491727`
 
 销量为3000，假设平均客单为80，佣金为10%，则预估利润2.4万。
 
-
-
 ### 蛋白粉
 
-https://space.bilibili.com/1484284806
+`https://space.bilibili.com/1484284806`
 
 销量为5000，假设平均客单为379，佣金为10%，则预估利润18.9万。
 
-
-
 ### 人体工学椅
 
-https://space.bilibili.com/3546663356467899
+`https://space.bilibili.com/3546663356467899`
 
 销量为500，假设平均客单为500，佣金为5%，则预估利润1.25万。
 
-
-
 ### 家用咖啡机
 
-https://space.bilibili.com/3546568902838559
+`https://space.bilibili.com/3546568902838559`
 
 销量为100，假设平均客单为2000，佣金为5%，则预估利润1万。
 
-
-
 ### 蓝牙耳机
 
-https://space.bilibili.com/384727940
+`https://space.bilibili.com/384727940`
 
 销量为9000，假设平均客单为300，佣金为5%，则预估利润13.5万。
 
-
-
 ### 投影仪
 
-https://space.bilibili.com/3546865542891812
+`https://space.bilibili.com/3546865542891812`
 
 销量为300，假设平均客单为5000，佣金为1%，则预估利润1.5万。
-
 
 ![](img/510e9e044633e3e28b2c5c6e54de68b0.png)

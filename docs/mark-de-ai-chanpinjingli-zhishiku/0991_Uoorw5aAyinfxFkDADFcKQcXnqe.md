@@ -1,12 +1,13 @@
+
 # 飞书接入OpenClaw，打造7*24小时AI员工(附完整教程)
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/FzWRdSnPVoAqs0x34Gzc8s1bnZb](https://qqs7y1hozd1.feishu.cn/docx/FzWRdSnPVoAqs0x34Gzc8s1bnZb)
 
-目前ClawdBot主要支持连接海外常见的聊天软件：WhatsApp、Telegram、Slack、Discord、Google Chat、iMessage、macOS、iOS/Android。
+目前`ClawdBot`主要支持连接海外常见的聊天软件：WhatsApp、Telegram、Slack、Discord、Google Chat、iMessage、macOS、iOS/Android。
 
 但由于项目开源，现在国内的通讯软件也开始被集成进来，比如飞书。
 
-昨天花了大半天，在一台测试电脑上**部署起来了。不需要**什么Mac Mini，就普通的电脑就可以。windows/linux/mac都支持。
+昨天花了大半天，在一台测试电脑上部署起来了。不需要什么Mac Mini，就普通的电脑就可以。windows/linux/mac都支持。
 
 可以轻松实现，直接在飞书里给它下指令，它就在电脑上吭哧吭哧的干活
 
@@ -16,15 +17,15 @@
 
 步骤写得比较详细，按照这个操作，也不用去买什么教程了
 
-# 01
+## 01
 
-** **安装软件
+### 安装软件
 
 我是在一台ubuntu电脑上安装的
 
 安装命令如下，注意，需要网络支持
 
-curl -fsSL https://clawd.bot/install.sh | bash
+`curl -fsSL https://clawd.bot/install.sh | bash`
 
 ![](img/f80ebe121ac1ceaae2742463a11ef523.png)
 
@@ -32,7 +33,7 @@ curl -fsSL https://clawd.bot/install.sh | bash
 
 ![](img/a4aa142d9c607ea183b6d860eb4104ae.png)
 
-这里需要选择一个大模型，软件集成了Qwen, 可以不要钱。
+这里需要选择一个大模型，软件集成了Qwen，可以不要钱。
 
 ![](img/dbfb0181814c2e38f2cc13f246f9bcb2.png)
 
@@ -40,21 +41,21 @@ curl -fsSL https://clawd.bot/install.sh | bash
 
 ![](img/585e5ef2b2816bca52d41ad5f81ac5f3.png)
 
-接下来是配置channel，也就是配置具体的应用。可以看到海外主流的通信软件
+接下来是配置`channel`，也就是配置具体的应用。可以看到海外主流的通信软件
 
-但是飞书不在这里面，点击Skip for now， 跳过配置
+但是飞书不在这里面，点击Skip for now，跳过配置
 
 ![](img/bed2d11fc7d4595cbfd3e8558d0aad42.png)
 
-Skills配置这里可以选No, 等安装好后，可以在后台界面去配置
+Skills配置这里可以选No，等安装好后，可以在后台界面去配置
 
 ![](img/097119087960ff67954fac8cac3c4b0a.png)
 
-后面的Hooks 也选 Skip for Now。用处不大
+后面的Hooks也选Skip for Now。用处不大
 
-> Hatch in TUI (recommended):意思是在终端界面运行
+> Hatch in TUI (recommended)：意思是在终端界面运行
 
-> Open the Web UI:网页版界面
+> Open the Web UI：网页版界面
 
 最后一个是 “以后再说”。这里选默认的就行了。
 
@@ -72,21 +73,21 @@ Skills配置这里可以选No, 等安装好后，可以在后台界面去配置
 
 ![](img/cde72b54ccc960b86df65a28ceb6dca1.png)
 
-# 02
+## 02
 
-** **配置飞书
+### 配置飞书
 
 首先要在飞书管理后台建一个机器人应用
 
 进入飞书开发者后台：
 
-https://open.feishu.cn/app?lang=zh-CN
+`https://open.feishu.cn/app?lang=zh-CN`
 
 点击创建企业应用
 
 ![](img/e36b496f9c2f31732465773871965662.png)
 
-应用名字是: clawbot机器人
+应用名字是: `clawbot`机器人
 
 ![](img/dde04385887833c490bf14caddec9d70.png)
 
@@ -98,31 +99,31 @@ https://open.feishu.cn/app?lang=zh-CN
 
 ![](img/9978d125afae8dc0b34861496c05f787.png)
 
-接下来是配置Clawdbot和飞书之间的链接
+接下来是配置`Clawdbot`和飞书之间的链接
 
-运行下面几条命令，飞书的appid和appSecret，在飞书后台中可以获取到
+运行下面几条命令，飞书的`appid`和`appSecret`，在飞书后台中可以获取到
 
-**1 安装飞书插件**
+### 1 安装飞书插件
 
-> clawdbot plugins install @m1heng-clawd/feishu
+`clawdbot plugins install @m1heng-clawd/feishu`
 
-2 配置飞书的appid和appSecret
+### 2 配置飞书的`appid`和`appSecret`
 
-> clawdbot config set channels.feishu.appId "appid"
+`clawdbot config set channels.feishu.appId "appid"`
 
-> clawdbot config set channels.feishu.appSecret "Secret"
+`clawdbot config set channels.feishu.appSecret "Secret"`
 
-**3 打开飞书**
+### 3 打开飞书
 
-> clawdbot config set channels.feishu.enabled true
+`clawdbot config set channels.feishu.enabled true`
 
-**4 重启clawdbot**
+### 4 重启`clawdbot`
 
-> clawdbot gateway restart
+`clawdbot gateway restart`
 
 ![](img/a894fff4377df2140d0ddaa84f1c8cba.png)
 
-完成后，在Clawdbot的后台channel里面，能看到飞书已经安装成功
+完成后，在`Clawdbot`的后台`channel`里面，能看到飞书已经安装成功
 
 ![](img/bf1ed61a6cb1d9e67b8067d5db5fa814.png)
 
@@ -142,7 +143,7 @@ https://open.feishu.cn/app?lang=zh-CN
 
 这一切都完成后，记得再次发布一次版本才能生效
 
-再回到Clawdbot的界面，按照下图配置好
+再回到`Clawdbot`的界面，按照下图配置好
 
 ![](img/41d7e45b05a15d2d1d2ee8ccd3ea4f9d.png)
 

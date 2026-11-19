@@ -1,9 +1,7 @@
-# 12.12-谷歌测试 Gemini AI 游戏助手：实时分析屏幕以提供游戏建议
-
-> 来源：[https://agijuejin.feishu.cn/docx/STdjdYiZnotnxvxlrS5cejvvn3b](https://agijuejin.feishu.cn/docx/STdjdYiZnotnxvxlrS5cejvvn3b)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 12 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/STdjdYiZnotnxvxlrS5cejvvn3b](https://agijuejin.feishu.cn/docx/STdjdYiZnotnxvxlrS5cejvvn3b)  
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/6284ba03d0417b9c2f8d7f29326a4c1b.png)
@@ -31,7 +29,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/023.htm)
 ### 💡 全球首个“AI 程序员”Devin 全面开放：可独立开发 / 修复 bug，月费 500 美元
 
 IT之家 | [阅读原文](https://www.ithome.com/0/817/016.htm)
-
 
 2024 年 12 月 11 日，全球首个‘AI 程序员’Devin 全面开放。个人和工程团队月费 500 美元可获得完整访问权限，包括 Slack 集成、IDE 扩展和专业技术支持。Devin 能运用多种编程语言，独立开发、部署网站和应用程序，还能自主发现并修复 bug。它采用沙盒计算环境，可快速学习新技术，理解复杂编程上下文并调整解决方案，具备快速掌握新技术、开发端到端应用、自动化找 bug 和 AI 培训等技能。
 

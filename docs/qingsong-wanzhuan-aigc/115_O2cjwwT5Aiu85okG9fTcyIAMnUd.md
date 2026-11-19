@@ -1,8 +1,9 @@
+
 # 逆向提示词模板
 
-> 来源：[https://my.feishu.cn/docx/Mnycd20GZoRwR8xRWskcH7gynLf](https://my.feishu.cn/docx/Mnycd20GZoRwR8xRWskcH7gynLf)
+> 来源：[`https://my.feishu.cn/docx/Mnycd20GZoRwR8xRWskcH7gynLf`](https://my.feishu.cn/docx/Mnycd20GZoRwR8xRWskcH7gynLf)
 
-### 一个较为通用格式
+## 一个较为通用格式
 
 ```
 请对下列{{文本}}进行逆向提示词工程（概念定义），生成一个可以仿写这段文章的Prompt提示词。
@@ -70,7 +71,7 @@
 
 内容来源：百小应【美妆品牌线上销售策略研究】
 
-> 分享给你我和百小应的聊天记录 https://ying.baichuan-ai.com/share/WeW0FatY
+> 分享给你我和百小应的聊天记录 `https://ying.baichuan-ai.com/share/WeW0FatY`
 
 ```
 # 美妆品牌线上销售制胜之道

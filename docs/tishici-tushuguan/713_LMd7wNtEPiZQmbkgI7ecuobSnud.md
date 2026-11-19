@@ -1,3 +1,4 @@
+
 # 长提示自动化
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/MDJ4dkX0Vo6Cf8xgqcHcLjyznLb](https://vxc3hj17dym.feishu.cn/docx/MDJ4dkX0Vo6Cf8xgqcHcLjyznLb)
@@ -56,7 +57,7 @@ PDF文档：https://arxiv.org/pdf/2311.10117.pdf
 
 ## 3 提出的方法
 
-在本文中，我们解决了针对语言模型的自动化长提示词工程的挑战。给定一个语言模型 L 和一个为特定任务由人设计的初始提示词  ，我们的目标是改进提示词以达到更优的表现。为了增强提示词，我们获得了一个有限的训练集（例如，100个输入-输出对） {(x_{i} , y_{i})}^{n}_{i=1} 来进行性能评估。具体来说，对于每个样本，我们通过  L([p, x_{i}]) 进行预测，并评估其与相应真实标签 y_{i} 的一致性。我们定义   为提示词 p 在训练集上的性能指标。我们考虑的场景是可用样本数 n 有限，这是个常见情况，即个人缺乏足够数据进行模型微调，但仍可以利用数据来设计改进的硬提示词。我们将在未用于提示词搜索的保留测试集上评估泛化性能。
+在本文中，我们解决了针对语言模型的自动化长提示词工程的挑战。给定一个语言模型 `L` 和一个为特定任务由人设计的初始提示词 `p` ，我们的目标是改进提示词以达到更优的表现。为了增强提示词，我们获得了一个有限的训练集（例如，100个输入-输出对） `{(x_{i} , y_{i})}^{n}_{i=1}` 来进行性能评估。具体来说，对于每个样本，我们通过 `L([p, x_{i}])` 进行预测，并评估其与相应真实标签 `y_{i}` 的一致性。我们定义 `p` 为提示词 `p` 在训练集上的性能指标。我们考虑的场景是可用样本数 `n` 有限，这是个常见情况，即个人缺乏足够数据进行模型微调，但仍可以利用数据来设计改进的硬提示词。我们将在未用于提示词搜索的保留测试集上评估泛化性能。
 
 在本节中，我们首先介绍我们算法的搜索空间以及如何使用LLM导航这个空间（第3.1节）。然后，我们深入探讨了提出的带有集束搜索的贪婪算法，在第3.2节中突出显示其相较于普通贪婪算法和基因算法的优势。最后，第3.3节展示了如何利用搜索历史来指导提出的框架以提高其性能。
 
@@ -64,41 +65,41 @@ PDF文档：https://arxiv.org/pdf/2311.10117.pdf
 
 我们的目标是生成一个在语义上与原始提示相似，同时实现性能提升的新提示。此外，我们避免引入无法解释的标记，例如对抗性触发器（Zou等人，2023年）。这些限制提供了两个优点：1）我们算法发现的提示是可解释的，便于验证提示是否仍然执行预期的任务；2）由于我们只提供了有限的训练样本集（例如，100个），限制搜索空间可以缓解过拟合的问题。
 
-为了在此空间内进行提示搜索，我们将长提示分解为m个单独的句子：  。然后我们允许每个句子在保留其语义意义的同时被改写。由于大型语言模型（LLMs）擅长句子改写，特别是当提供诸如“在保持语义意义的同时生成以下指令的变体”这样的提示时，我们采用一个配备有此类提示的LLM变异器来识别每个句子的替代表达方式。我们用于原始LLM变异器的提示可以在图2中找到。LLM变异器的改进版本将在3.3节中介绍。
+为了在此空间内进行提示搜索，我们将长提示分解为 `m` 个单独的句子： 。然后我们允许每个句子在保留其语义意义的同时被改写。由于大型语言模型（LLMs）擅长句子改写，特别是当提供诸如“在保持语义意义的同时生成以下指令的变体”这样的提示时，我们采用一个配备有此类提示的LLM变异器来识别每个句子的替代表达方式。我们用于原始LLM变异器的提示可以在图2中找到。LLM变异器的改进版本将在3.3节中介绍。
 
 ![](img/5ff1e8e79c0656a96771a4fb87f2d954.png)
 
 ### 3.2 搜索算法
 
-使用LLM-Mutator进行搜索的一种直接方法是以下贪婪算法。在每次迭代中，我们随机选择一个句子，记为  ，并利用LLM-Mutator生成一个替代句子  。然后，如果新生成的提示词提高了性能，我们用 s^{′}_{(i)} 替换旧提示词中的  。然而，我们观察到这种普通的贪婪方法容易陷入局部最优。在我们的问题中，训练集非常有限，以至于有时一个不利的修改在训练得分中不会反映出来。因此，由于评估不足，有时会接受不利的编辑，这会损害提示词未来的改进。
+使用`LLM-Mutator`进行搜索的一种直接方法是以下贪婪算法。在每次迭代中，我们随机选择一个句子，记为 `s_{(i)}` ，并利用`LLM-Mutator`生成一个替代句子 `s^{′}_{(i)}` 。然后，如果新生成的提示词提高了性能，我们用 `s^{′}_{(i)}` 替换旧提示词中的 `s_{(i)}` 。然而，我们观察到这种普通的贪婪方法容易陷入局部最优。在我们的问题中，训练集非常有限，以至于有时一个不利的修改在训练得分中不会反映出来。因此，由于评估不足，有时会接受不利的编辑，这会损害提示词未来的改进。
 
-为了解决这个问题，我们提出进行集束搜索，维护一个由k个表现最佳的提示词组成的池子，记为  。在每次迭代中，我们随机选择这k个提示词中的一个进行改进。然后我们评估这个新的候选提示词，并维护top-k提示词池。这种方法确保了即使引入了不利的编辑，从这些错误中恢复仍然是可能的，因为我们不仅保留了最优的提示词。我们的实验表明，与纯贪婪算法相比，这种方法显著提高了训练和测试性能，如图3所示。
+为了解决这个问题，我们提出进行集束搜索，维护一个由 `k` 个表现最佳的提示词组成的池子，记为 `P = \{p_{1}, . . . , p_{k}\}` 。在每次迭代中，我们随机选择这 `k` 个提示词中的一个进行改进。然后我们评估这个新的候选提示词，并维护top-k提示词池。这种方法确保了即使引入了不利的编辑，从这些错误中恢复仍然是可能的，因为我们不仅保留了最优的提示词。我们的实验表明，与纯贪婪算法相比，这种方法显著提高了训练和测试性能，如图3所示。
 
 ![](img/76262f6dab712e26dd948d0eb4b647e2.png)
 
-值得注意的是，我们的方法与遗传算法（GA）密切相关。GA是一种广为认可的用于涉及黑盒函数的离散优化的方法。假设 P = \{p_{1}, . . . , p_{k}\} 代表当前池中的解决方案，GA应用变异和交叉操作到这个池子，以生成一组新提出的候选解决方案  。然后评估这些新提出候选解决方案的适应度得分（解决方案的表现）。随后，在进行下一次迭代之前，只保留 P ∪ P^{′} 中表现最佳的k个解决方案。
+值得注意的是，我们的方法与遗传算法（GA）密切相关。GA是一种广为认可的用于涉及黑盒函数的离散优化的方法。假设 `P = \{p_{1}, . . . , p_{k}\}` 代表当前池中的解决方案，GA应用变异和交叉操作到这个池子，以生成一组新提出的候选解决方案 `P^{′}` 。然后评估这些新提出候选解决方案的适应度得分（解决方案的表现）。随后，在进行下一次迭代之前，只保留 `P ∪ P^{′}` 中表现最佳的 `k` 个解决方案。
 
 虽然GA具有很高的探索能力，但在初始阶段其收敛速度相当慢。考虑到我们搜索空间的广阔性以及人工编写的初始提示词的相对良好质量，在前几次迭代中进行的大多数变异和交叉产生了表现不佳的候选解决方案。评估这些候选解决方案在计算上是昂贵的，即使它可以增强解决方案的多样性。
 
-我们的算法实际上是GA的“贪婪”版本。我们维护一个大小为k的候选集，并在生成每个新候选解决方案后立即更新候选池，而不是等待整个后代的评估完成后再更新池。因此，我们的解决方案池更加及时，与GA相比收敛速度更快。图3进一步验证了这一观察，展示了GA学习曲线的初始增长较慢。
+我们的算法实际上是GA的“贪婪”版本。我们维护一个大小为 `k` 的候选集，并在生成每个新候选解决方案后立即更新候选池，而不是等待整个后代的评估完成后再更新池。因此，我们的解决方案池更加及时，与GA相比收敛速度更快。图3进一步验证了这一观察，展示了GA学习曲线的初始增长较慢。
 
 ### 3.3 历史引导搜索
 
 在提示词中随机重述一个句子类似于在语义等效句子空间内进行随机变异，可能需要大量尝试才能获得好的解决方案。在本小节中，我们演示如何利用搜索历史引导变异朝向更有目的的方向。
 
-**单句引导变异。**在迭代T时，我们可以将搜索历史表示为  ，其中 s^{before}_{t} 是变异前的句子，   是变异后的句子，奖励 r_{t} 表示得分的变化（如果变异提升了性能，   为正；如果降低了性能，   为负）。假设 s_{T} 是当前选定进行变异的句子，我们可以利用历史引导变异朝向更高的奖励。例如，如果我们知道将句子“因此，Lesley是Leroy的曾祖父“So, it is true that Lesley is a great-grandfather of Leroy””重述为“因此，Leslie是Leroy的曾祖父"Therefore Leslie is Leroy’s greatgrandfather."”可以提高性能，那么对于另一个句子“因此，Dana的每个祖先都是Brian的继兄弟”“So, it is true that everyone who is an ancestor of Dana is a stepbrother of Brian”，我们可能想将其改写为“因此，Dana的每个祖先都是Brian的继兄弟”“Therefore everyone that is an ancestor of Dana is Brian’s stepbrother.”。
+**单句引导变异。**在迭代 `T` 时，我们可以将搜索历史表示为 ，其中 `s^{before}_{t}` 是变异前的句子，  是变异后的句子，奖励 `r_{t}` 表示得分的变化（如果变异提升了性能，  为正；如果降低了性能，  为负）。假设 `s_{T}` 是当前选定进行变异的句子，我们可以利用历史引导变异朝向更高的奖励。例如，如果我们知道将句子“因此，Lesley是Leroy的曾祖父“So, it is true that Lesley is a great-grandfather of Leroy””重述为“因此，Leslie是Leroy的曾祖父"Therefore Leslie is Leroy’s greatgrandfather."”可以提高性能，那么对于另一个句子“因此，Dana的每个祖先都是Brian的继兄弟”“So, it is true that everyone who is an ancestor of Dana is a stepbrother of Brian”，我们可能想将其改写为“因此，Dana的每个祖先都是Brian的继兄弟”“Therefore everyone that is an ancestor of Dana is Brian’s stepbrother.”。
 
-已显示LLMs能从上下文示例中学习（Zhang等，2021）。因此，我们提议让LLM-Mutator在上下文中从历史学习。这可以通过在提示词中列出历史来完成：如果  ，我们包括一个上下文示例  ；如果   ，我们包括  。LLM-Evolver的提示词如图4所示。由于历史可能很长，且显示放入过多上下文学习示例可能对性能不利，我们在重述句子时只检索少量相关历史条目。具体来说，当演化 s_{T} 时，我们计算 s_{T} 和每个 s^{before}_{t} 之间的相似性，通过 ϕ(s_{T})^{T} ϕ(s^{before}_{t}) 计算，其中 ϕ 是句子编码器（我们在实验中使用T5 (Raffel等，2020)句子编码器）。然后我们只选择通过一定阈值的条目作为上下文示例。
+已显示LLMs能从上下文示例中学习（Zhang等，2021）。因此，我们提议让`LLM-Mutator`在上下文中从历史学习。这可以通过在提示词中列出历史来完成：如果  ，我们包括一个上下文示例  ；如果   ，我们包括  。`LLM-Evolver`的提示词如图4所示。由于历史可能很长，且显示放入过多上下文学习示例可能对性能不利，我们在重述句子时只检索少量相关历史条目。具体来说，当演化 `s_{T}` 时，我们计算 `s_{T}` 和每个 `s^{before}_{t}` 之间的相似性，通过 `ϕ(s_{T})^{T} ϕ(s^{before}_{t})` 计算，其中 `ϕ` 是句子编码器（我们在实验中使用T5 (Raffel等，2020)句子编码器）。然后我们只选择通过一定阈值的条目作为上下文示例。
 
 ![](img/63813a6473cee81f409f0623050400e7.png)
 
 **句子选择的引导采样。**自动化长提示词工程的一个挑战在于确定提示词中哪些句子应该修改以提高性能。我们的实验表明，修改长提示词中的少数几个句子可以显著提升其有效性，但更改需要在正确的地方。因此，偏向于选择更有影响力的句子进行修改的采样分布是有益的。
 
-我们将句子选择建模为一个上下文多臂赌博机问题（Langford和Zhang，2007；Li等，2010）。在上下文多臂赌博机问题中，每次迭代时，学习者面临m个与特征向量 x_{1}, . . . , x_{m} 相关联的臂，学习者试图在每轮中拉动一个臂以优化整体奖励。在我们的情况下，m个臂对应于提示词中的m个句子  ，特征可以通过   获得，其中   是文本编码器。利用特征信息至关重要，因为如果修改特定句子可以带来性能提升，那么修改类似的句子也可能产生积极的结果。
+我们将句子选择建模为一个上下文多臂赌博机问题（Langford和Zhang，2007；Li等，2010）。在上下文多臂赌博机问题中，每次迭代时，学习者面临 `m` 个与特征向量 `x_{1}, . . . , x_{m}` 相关联的臂，学习者试图在每轮中拉动一个臂以优化整体奖励。在我们的情况下，`m` 个臂对应于提示词中的 `m` 个句子 ，特征可以通过  获得，其中  是文本编码器。利用特征信息至关重要，因为如果修改特定句子可以带来性能提升，那么修改类似的句子也可能产生积极的结果。
 
-然后，我们采用Lin-UCB算法（Li等，2010），这是一种广泛认可的用于上下文多臂赌博机问题的算法，来引导句子选择。给定历史 ，我们计算基础奖励模型的线性估计器  ，（公式1）
+然后，我们采用 `Lin-UCB` 算法（Li等，2010），这是一种广泛认可的用于上下文多臂赌博机问题的算法，来引导句子选择。给定历史 ，我们计算基础奖励模型的线性估计器  ，（公式1）
 
-其中   是一个   行   列的矩阵，每行是  ，而  。这实际上是带有特征矩阵 和奖励  的岭回归的解。然后使用以下UCB（上限置信区间）规则来选择用于变异的句子：  ，（公式2）其中  。由于这种Lin-UCB估计可能不够准确，我们允许算法以概率   完全随机选择一个臂，以概率   根据 Eq.（公式2）选择句子。
+其中  是一个   行   列的矩阵，每行是  ，而  。这实际上是带有特征矩阵  和奖励  的岭回归的解。然后使用以下UCB（上限置信区间）规则来选择用于变异的句子：  ，（公式2）其中  。由于这种Lin-UCB估计可能不够准确，我们允许算法以概率   完全随机选择一个臂，以概率   根据 Eq.（公式2）选择句子。
 
 ---
 
@@ -114,7 +115,7 @@ PDF文档：https://arxiv.org/pdf/2311.10117.pdf
 
 每个任务包括250个样本，随机分为50%用于训练和50%用于测试。只有训练样本用于提示调整。所有任务都是多类别分类问题，我们在比较不同调整方法时报告了训练数据、测试数据和合并数据集上的准确率。
 
-对于主要实验，我们评估了在 text-bison模型上的性能，并使用了指令调整的PaLM 2-L模型作为LLM变异器。这两个模型都属于PaLM 2模型家族（Anil等人，2023年）。跟随之前的提示调整工作，我们将温度设置为0。然而，为了增强句子变异的多样性，我们将LLM变异器的温度设置为0.5。
+对于主要实验，我们评估了在 `text-bison` 模型上的性能，并使用了指令调整的 `PaLM 2-L` 模型作为LLM变异器。这两个模型都属于 `PaLM 2` 模型家族（Anil等人，2023年）。跟随之前的提示调整工作，我们将温度设置为0。然而，为了增强句子变异的多样性，我们将LLM变异器的温度设置为0.5。
 
 ### 4.2 主要结果
 
@@ -128,7 +129,9 @@ PDF文档：https://arxiv.org/pdf/2311.10117.pdf
 
 +   贪婪算法：在3.2节中提到的简单贪婪方法，我们只在池中存储性能最佳的候选者，并在其基础上生成新候选者。
 
-对于我们的方法，我们在所有实验中使用相同的超参数。我们将所有实验的池大小（集束大小）设置为4。在3.3节中应用引导变异时，我们使用T5编码器对当前条目和历史记录进行编码，并将嵌入归一化为单位ℓ2范数。我们只检索前4个历史条目，并要求编码历史和当前句子之间的ℓ2距离低于0.5。在应用3.3节中描述的句子选择算法时，我们在方程式(2)中设置α = 0.05，并设置P = 0.5。请注意，这些超参数并未经过良好调整。
+
+
+对于我们的方法，我们在所有实验中使用相同的超参数。我们将所有实验的池大小（集束大小）设置为4。在3.3节中应用引导变异时，我们使用T5编码器对当前条目和历史记录进行编码，并将嵌入归一化为单位ℓ2范数。我们只检索前4个历史条目，并要求编码历史和当前句子之间的ℓ2距离低于0.5。在应用3.3节中描述的句子选择算法时，我们在方程式(2)中设置`α = 0.05`，并设置`P = 0.5`。请注意，这些超参数并未经过良好调整。
 
 对于这个实验，我们将计算预算限制为对训练集的50次评估，并报告了每种方法所达到的训练、测试和综合准确率。所有实验均运行三次，我们报告平均值和标准差。结果汇总在表2中。我们提出的算法胜过了其他方法，在所有任务中显示出显著的准确率提高。我们还计算了整个数据集（包括训练和测试）上准确率的提升，并在图1中报告了准确率增益。
 
@@ -166,15 +169,15 @@ PDF文档：https://arxiv.org/pdf/2311.10117.pdf
 
 作为首篇专注于整个长提示的自动工程的论文，我们识别了当前方法的几个局限性，这可能会引导有趣的未来研究：
 
-+   目前的算法依赖于使用另一个LLM来改写句子。正如4.4节中所示，这种LLM变异器在句子重写过程中可能引入错误，尤其是在复杂句子（例如，在复杂的逻辑推理任务中的CoT）中。因此，提高LLM变异器的“正确性”是一个有趣的未来研究领域，这在我们的工作以及其他近期研究（Fernando等人，2023年；Guo等人，2023年）中还未完全解决。
++ 目前的算法依赖于使用另一个LLM来改写句子。正如4.4节中所示，这种LLM变异器在句子重写过程中可能引入错误，尤其是在复杂句子（例如，在复杂的逻辑推理任务中的CoT）中。因此，提高LLM变异器的“正确性”是一个有趣的未来研究领域，这在我们的工作以及其他近期研究（Fernando等人，2023年；Guo等人，2023年）中还未完全解决。
 
-+   与任何其他训练或调整算法一样，自动提示工程可能会过度适应训练数据，正如第4节中所讨论的。这种过拟合可以通过应用额外的正则化技术来缓解，例如通过减少修改句子的数量来施加稀疏性约束。然而，需要进一步的研究来确定自动提示工程最有效的正则化策略。
++ 与任何其他训练或调整算法一样，自动提示工程可能会过度适应训练数据，正如第4节中所讨论的。这种过拟合可以通过应用额外的正则化技术来缓解，例如通过减少修改句子的数量来施加稀疏性约束。然而，需要进一步的研究来确定自动提示工程最有效的正则化策略。
 
-+   在当前实现中，我们将长提示分解成单独的句子，并一次修改一个句子。然而，在变异过程中同时操作多个句子，或将多个句子合并成一个句子可能会有益。为此过程提出一个自动化机制将是提升我们方法的一个有趣方向。
++ 在当前实现中，我们将长提示分解成单独的句子，并一次修改一个句子。然而，在变异过程中同时操作多个句子，或将多个句子合并成一个句子可能会有益。为此过程提出一个自动化机制将是提升我们方法的一个有趣方向。
 
-+   尽管我们的算法能够在训练集上少于100次评估中找到一个好的解决方案，但成本仍然不容忽视，尤其是当使用具有成本或速率限制的API进行提示调整时。应用早停技术，其中表现不佳的候选者的评估被提前终止，可能会减少查询的数量。
++ 尽管我们的算法能够在训练集上少于100次评估中找到一个好的解决方案，但成本仍然不容忽视，尤其是当使用具有成本或率限制的API进行提示调整时。应用早停技术，其中表现不佳的候选者的评估被提前终止，可能会减少查询的数量。
 
-+   尽管自动化提示工程可以取得显著提升，但硬提示词的搜索空间具有有限的表示能力，这限制了进一步性能的提升。已经表明软提示词调整具有有限的表示能力（Wang等人，2023b），而我们的搜索空间是软提示的一个小子集。因此，当提供了充足的数据、计算资源和对LLM的白盒访问时，（高效参数的）微调可能仍然能够实现更优越的性能。
++ 尽管自动化提示工程可以取得显著提升，但硬提示词的搜索空间具有有限的表示能力，这限制了进一步性能的提升。已经表明软提示词调整具有有限的表示能力（Wang等人，2023b），而我们的搜索空间是软提示的一个小子集。因此，当提供了充足的数据、计算资源和对LLM的白盒访问时，（高效参数的）微调可能仍然能够实现更优越的性能。
 
 ---
 
@@ -228,22 +231,24 @@ Lei Wang, Wanyu Xu, Yihuai Lan, Zhiqiang Hu, Yunshi Lan, Roy Ka-Wei Lee, and EeP
 
 Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou. 2022a. Self-consistency improves chain of thought reasoning in language models. arXiv preprint arXiv:2203.11171.
 
-Yihan Wang, Jatin Chauhan, Wei Wang, and Cho-Jui Hsieh. 2023b. Universality and limitations of prompt tuning. arXiv preprint arXiv:2305.18787.
 
-Yihan Wang, Si Si, Daliang Li, Michal Lukasik, Felix Yu, Cho-Jui Hsieh, Inderjit S Dhillon, and Sanjiv Kumar. 2022b. Preserving in-context learning ability in large language model finetuning. arXiv preprint arXiv:2211.00635.
 
-Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, et al. 2022a. Emergent abilities of large language models. arXiv preprint arXiv:2206.07682.
+Yihan Wang, Jatin Chauhan, Wei Wang, and Cho-Jui Hsieh. 2023b. Universality and limitations of prompt tuning. `arXiv` preprint `arXiv:2305.18787`.
+
+Yihan Wang, Si Si, Daliang Li, Michal Lukasik, Felix Yu, Cho-Jui Hsieh, Inderjit S Dhillon, and Sanjiv Kumar. 2022b. Preserving in-context learning ability in large language model finetuning. `arXiv` preprint `arXiv:2211.00635`.
+
+Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, et al. 2022a. Emergent abilities of large language models. `arXiv` preprint `arXiv:2206.07682`.
 
 Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al. 2022b. Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Processing Systems, 35:24824–24837.
 
-Hanwei Xu, Yujun Chen, Yulun Du, Nan Shao, Yanggang Wang, Haiyu Li, and Zhilin Yang. 2022. Gps: Genetic prompt search for efficient few-shot learning. arXiv preprint arXiv:2210.17041.
+Hanwei Xu, Yujun Chen, Yulun Du, Nan Shao, Yanggang Wang, Haiyu Li, and Zhilin Yang. 2022. Gps: Genetic prompt search for efficient few-shot learning. `arXiv` preprint `arXiv:2210.17041`.
 
-Chengrun Yang, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V Le, Denny Zhou, and Xinyun Chen. 2023. Large language models as optimizers. arXiv preprint arXiv:2309.03409.
+Chengrun Yang, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V Le, Denny Zhou, and Xinyun Chen. 2023. Large language models as optimizers. `arXiv` preprint `arXiv:2309.03409`.
 
-Ningyu Zhang, Luoqiu Li, Xiang Chen, Shumin Deng, Zhen Bi, Chuanqi Tan, Fei Huang, and Huajun Chen. 2021. Differentiable prompt makes pre-trained language models better fewshot learners. arXiv preprint arXiv:2108.13161.
+Ningyu Zhang, Luoqiu Li, Xiang Chen, Shumin Deng, Zhen Bi, Chuanqi Tan, Fei Huang, and Huajun Chen. 2021. Differentiable prompt makes pre-trained language models better fewshot learners. `arXiv` preprint `arXiv:2108.13161`.
 
-Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han, Keiran Paster, Silviu Pitis, Harris Chan, and Jimmy Ba. 2022. Large language models are human-level prompt engineers. arXiv preprint arXiv:2211.01910.
+Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han, Keiran Paster, Silviu Pitis, Harris Chan, and Jimmy Ba. 2022. Large language models are human-level prompt engineers. `arXiv` preprint `arXiv:2211.01910`.
 
-Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, et al. 2023. Promptbench: Towards evaluating the robustness of large language models on adversarial prompts. arXiv preprint arXiv:2306.04528.
+Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, et al. 2023. Promptbench: Towards evaluating the robustness of large language models on adversarial prompts. `arXiv` preprint `arXiv:2306.04528`.
 
-Andy Zou, Zifan Wang, J Zico Kolter, and Matt Fredrikson. 2023. Universal and transferable adversarial attacks on aligned language models. arXiv preprint arXiv:2307.15043
+Andy Zou, Zifan Wang, J Zico Kolter, and Matt Fredrikson. 2023. Universal and transferable adversarial attacks on aligned language models. `arXiv` preprint `arXiv:2307.15043`

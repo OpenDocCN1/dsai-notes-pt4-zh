@@ -1,10 +1,9 @@
+
 # 2023-05-25普通人能做 ChatGPT 相关海外工具的 IDEA 方向
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/PlZDdQAH0oNLlhxgjkEcoG3enrd](https://xuqiwei1986.feishu.cn/docx/PlZDdQAH0oNLlhxgjkEcoG3enrd)
 
-> 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_84llw5nphnwa.html)xq.com/id_84llw5...
-
->
+> 🔗 原文链接：`https://articles.zsxq.com/id_84llw5nphnwa.html`
 
 大家好，我是子木（二哥）。这是我的介绍：
 
@@ -34,7 +33,7 @@
 
 ### 1.1 卖流量
 
-卖流量是通过提供与 ChatGPT 相关的免费工具站 实现变现的模式，类似 https://decompilertool.com/ 、 https://sharegpt.com/ 如图，挂广告就能变现
+卖流量是通过提供与 ChatGPT 相关的免费工具站 实现变现的模式，类似 `https://decompilertool.com/` 、 `https://sharegpt.com/` 如图，挂广告就能变现
 
 ![](img/65b6b46aa2aa01f6238151403eac90fc.png)
 
@@ -50,7 +49,7 @@
 
 卖产品是通过提供与 ChatGPT 相关的付费工具站 实现变现的模式。
 
-那就是 ChatGPT 相关的付费工具站，类似 https://www.proseoai.com/ （圈友做的 谷歌 SEO 获客内容神器），可以通过试用后转为付费用户来实现变现。
+那就是 ChatGPT 相关的付费工具站，类似 `https://www.proseoai.com/` （圈友做的 谷歌 SEO 获客内容神器），可以通过试用后转为付费用户来实现变现。
 
 ![](img/bfb9c4fd958bd1b4124fe892f9af7dc9.png)
 
@@ -60,7 +59,7 @@
 
 链路也长：搞流量 -> 搞转化 -> 还要客服搞成交 -> 还还要搞客服售后。即需要建立完整的销售链路，包括获取流量、转化、客服销售和售后等环节。
 
-**同时卖流量和卖产品是否可行？**
+### 同时卖流量和卖产品是否可行？
 
 当然可以。拥有流量意味着可以同时销售自己的产品和流量，只需确保相关性和目标客群的一致性即可。这样做可以实现双重变现效果。
 
@@ -68,7 +67,7 @@
 
 ![](img/f32778c21c7f0db4544417bdf576de04.png)
 
-## 2.1 大白话：理解 ChatGPT 与 OpenAI
+### 2.1 大白话：理解 ChatGPT 与 OpenAI
 
 首先，我们来理解 OpenAI 能力，可以将其类比为文字识别（OCR）、拍照、拍视频、音视频等能力。那么如何用通俗的语言理解他们关系呢？如图
 
@@ -80,13 +79,13 @@ ChatGPT 应用中的 OpenAI 能力就好比人类大脑，它能存储和生成�
 
 不过，ChatGPT 是一个网站，也是 OpenAI 的一个应用。类似地，OpenAI 的 AI 绘画应用可能被称为 DrawGPT
 
-## 2.2 如何利用它做海外工具站呢？
+### 2.2 如何利用它做海外工具站呢？
 
 我们自己公司，目前是以下这样利用 GPT 能力。
 
 服务于获客：
 
-做 SEO 高质量内容。类似用圈友 二两 做的 https://www.proseoai.com/ ，谷歌 SEO 获客内容神器自动生成
+做 SEO 高质量内容。类似用圈友 二两 做的 `https://www.proseoai.com/` ，谷歌 SEO 获客内容神器自动生成
 
 做 SEM 广告词优化、落地页文案优化
 
@@ -104,11 +103,11 @@ ChatGPT 应用中的 OpenAI 能力就好比人类大脑，它能存储和生成�
 
 等等
 
-## 2.3 如何找到普通人能做的 ChatGPT 相关的海外工具站 IDEA
+### 2.3 如何找到普通人能做的 ChatGPT 相关的海外工具站 IDEA
 
 最重要的一趴来了，普通人能做 ChatGPT 相关海外工具的 IDEA 有哪些？
 
-**分析这个问题，其必要因素**
+#### 分析这个问题，其必要因素
 
 IDEA：说明有市场需求
 
@@ -118,11 +117,11 @@ ChatGPT 相关：市场需求跟 ChatGPT 相关，或 OpenAI 能力能更快更�
 
 总结来说：相对来说比较 niche（市场定位） 利基市场，可能是信息差，认知差，没被太多人发现。结合这些必要因素，我分享下一些 IDEA 思路：
 
-### 2.3.1 围绕巨头 ChatGPT 做补充需求工具站解决
+#### 2.3.1 围绕巨头 ChatGPT 做补充需求工具站解决
 
-**基于它 **：ChatGPT 是个新晋 top 应用，但肯定很多利基需求没有被满足，有了 plugin 也没有。所以围绕巨头 APP 的客群，做细分客群的需求，有市场。
+基于它：ChatGPT 是个新晋 top 应用，但肯定很多利基需求没有被满足，有了 plugin 也没有。所以围绕巨头 APP 的客群，做细分客群的需求，有市场。
 
-比如 Voice Control For ChatGPT
+比如 `Voice Control For ChatGPT`
 
 需求：文字交流多麻烦，能不能语音跟 GPT 交流
 
@@ -132,7 +131,7 @@ ChatGPT 相关：市场需求跟 ChatGPT 相关，或 OpenAI 能力能更快更�
 
 延展下：翻译能不能搞？苹果 siri 能不能接通？🛰️语音能不能打通？等等
 
-比如 chatgpt to notion
+比如 `chatgpt to notion`
 
 需求：gpt 会话会保存，但它不是知识库，需要保存到知识库
 
@@ -142,27 +141,27 @@ ChatGPT 相关：市场需求跟 ChatGPT 相关，或 OpenAI 能力能更快更�
 
 延展下：to 印象笔记、to 飞书、to xxx 都可以
 
-比如 AIPRM for ChatGPT
+比如 `AIPRM for ChatGPT`
 
 需求：prompt templates，怎么跟 ChatGPT input 更好
 
-实现：收集高质量、分类、支持搜索的 prompt 库，类似 https://sharegpt.com/ 也是这个道理
+实现：收集高质量、分类、支持搜索的 prompt 库，类似 `https://sharegpt.com/` 也是这个道理
 
 总结：解决了如何用好 ChatGPT 的问题
 
-延展下：AI 绘画 prompt 有没有需求有（ https://promptheroes.cn/ 目前月 UV 1 万）、更细分人群更专业的 prompt 模板有需求吗？中英文 prompt 有需求吗？
+延展下：AI 绘画 prompt 有没有需求有（ `https://promptheroes.cn/` 目前月 UV 1 万）、更细分人群更专业的 prompt 模板有需求吗？中英文 prompt 有需求吗？
 
-**如何找到这些需求，需求挖掘「这一期的航海文档」讲了很多，这**些我都是在谷歌插件通过下面关键词搜索到的
+如何找到这些需求，需求挖掘「这一期的航海文档」讲了很多，这些我都是在谷歌插件通过下面关键词搜索到的
 
-**ChatGPT To xxx**
+`ChatGPT To xxx`
 
-**Xxx For ChatGPT**
+`Xxx For ChatGPT`
 
-### 2.3.2 利用 OpenAI 能力，做细分场景的 ChatGPT 工具站
+#### 2.3.2 利用 OpenAI 能力，做细分场景的 ChatGPT 工具站
 
 利用它： GPT 能力，类似 OCR 能力。类似利用好能力 + 场景那就很多工具站可以玩了
 
-比如 chatgpt for mail messages
+比如 `chatgpt for mail messages`
 
 需求：老外经常写 mail ，使用 ChatGPT AI 生成完整的电子邮件和消息，并支持 Gmail
 
@@ -172,15 +171,15 @@ ChatGPT 相关：市场需求跟 ChatGPT 相关，或 OpenAI 能力能更快更�
 
 延展下：能不能 for 各大社交媒体 比如 TW FB 等等、能不能 for 视频平台 youtube 等等
 
-比如 chatgpt for Amazon & Shopify
+比如 `chatgpt for Amazon & Shopify`
 
 需求：使用 ChatGPT 的亚马逊和 Shopify 评论分析、列表优化和 Shopify 评论生成器
 
-延展下：for xxx 基本上都偶有需求
+延展下：`for xxx` 基本上都偶有需求
 
 包括国内 for 📕内容生产、国外也一样 Amazon 也马上有种草内容平台
 
-那我如何找到这些需求的，其实就是 chatgpt for xxx。
+那我如何找到这些需求的，其实就是 `chatgpt for xxx`。
 
 ## 三、小结
 
@@ -191,20 +190,16 @@ ChatGPT 海外工具站的赚钱 IDEA：围绕巨头 ChatGPT 做补充需求工�
 最后分享下我在赚钱跟软件这块相关的帖子：
 
 《6 个步骤：做 niche 海外软件工具正确的方法》
-
-[h](https://wx.zsxq.com/dweb2/index/topic_detail/181448485825522)ttps://wx.zsxq.com/dweb2/index/topic_detail/181448485825522
+`https://wx.zsxq.com/dweb2/index/topic_detail/181448485825522`
 
 《案例复盘：分享思维转变和海外流量的那些事》
-
-[h](https://wx.zsxq.com/dweb2/index/topic_detail/214814155145481)ttps://wx.zsxq.com/dweb2/index/topic_detail/214814155145481
+`https://wx.zsxq.com/dweb2/index/topic_detail/214814155145481`
 
 《英文工具站的复盘：认知、流量、心态方向（更适合程序员）》
-
-[h](https://wx.zsxq.com/dweb2/index/topic_detail/181551452525882)ttps://wx.zsxq.com/dweb2/index/topic_detail/181551452525882
+`https://wx.zsxq.com/dweb2/index/topic_detail/181551452525882`
 
 《跳出程序员思维：如何应对上手英文工具站的几点误区》
-
-[h](https://wx.zsxq.com/dweb2/index/topic_detail/214512885844411)ttps://wx.zsxq.com/dweb2/index/topic_detail/214512885844411
+`https://wx.zsxq.com/dweb2/index/topic_detail/214512885844411`
 
 ![](img/cce45e5b4534e50151438cff070e62e3.png)
 
@@ -212,4 +207,4 @@ ChatGPT 海外工具站的赚钱 IDEA：围绕巨头 ChatGPT 做补充需求工�
 
 查看更多优质内容
 
-https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=1824528822
+`https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=1824528822`

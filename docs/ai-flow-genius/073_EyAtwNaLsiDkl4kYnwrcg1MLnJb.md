@@ -1,3 +1,4 @@
+
 # 【NLP】Prompt Learning 超强入门教程
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/SBTddeCDvovGEFxbMQscgxG1nog](https://jalicvoygc0.feishu.cn/docx/SBTddeCDvovGEFxbMQscgxG1nog)
@@ -49,9 +50,7 @@
 Prompt 更严谨的定义如下：
 
 > Prompt is the technique of making better use of the knowledge from the pre-trained model by adding additional texts to the input.
-
-> 
-
+>
 > Prompt 是一种为了更好的使用预训练语言模型的知识，采用在输入段添加额外的文本的技术。
 
 +   目的：更好挖掘预训练语言模型的能力
@@ -63,12 +62,9 @@ Prompt 更严谨的定义如下：
 Prompt 的工作流包含以下4部分：
 
 1.  Prompt 模版（Template）的构造
-
-1.  Prompt 答案空间映射（Verbalizer）的构造
-
-1.  文本代入template，并且使用预训练语言模型进行预测
-
-1.  将预测的结果映射回label。
+2.  Prompt 答案空间映射（Verbalizer）的构造
+3.  文本代入template，并且使用预训练语言模型进行预测
+4.  将预测的结果映射回label。
 
 具体的步骤如下图，我们将一步步进行拆解分析。
 
@@ -78,23 +74,23 @@ Prompt 的工作流包含以下4部分：
 
 首先我们需要构建一个模版Template，模版的作用是将输入和输出进行重新构造，变成一个新的带有mask slots的文本，具体如下：
 
-+   定义一个模版，包含了2处代填入的slots：[x] 和 [z]
++   定义一个模版，包含了2处代填入的slots：`[x]` 和 `[z]`
 
-+   将[x] 用输入文本代入
++   将`[x]`用输入文本代入
 
 例如：
 
-+   输入：x = 我喜欢这个电影。
++   输入：`x = 我喜欢这个电影`。
 
-+   模版：[x]总而言之，它是一个[z]电影。
++   模版：`[x]总而言之，它是一个[z]电影`。
 
-+   代入（prompting）：我喜欢这个电影。总而言之，它是一个[z]电影。
++   代入（prompting）：我喜欢这个电影。总而言之，它是一个`[z]`电影。
 
 ![](img/ac58ba1e0ce325aa93a2603dda43dbe9.png)
 
 ### Step 2: answer construction【Verbalizer】
 
-对于我们构造的prompt，我们需要知道我们的预测词和我们的label 之间的关系，并且我们也不可能运行z是任意词，这边我们就需要一个映射函数（mapping function）将输出的词与label进行映射。例如我们的这个例子，输出的label 有两个，一个是 ，一个是 ，我们可以限定，如果预测词是fantastic 则对应 ，如果是 boring 则对应 .
+对于我们构造的prompt，我们需要知道我们的预测词和我们的label 之间的关系，并且我们也不可能运行`z`是任意词，这边我们就需要一个映射函数（mapping function）将输出的词与label进行映射。例如我们的这个例子，输出的label 有两个，一个是 ，一个是 ，我们可以限定，如果预测词是fantastic 则对应 ，如果是 boring 则对应 .
 
 ![](img/f06035a2a1133f98664498b4fb17acdf.png)
 
@@ -102,7 +98,7 @@ Prompt 的工作流包含以下4部分：
 
 ### Step 3: answer prediction【Prediction】
 
-到了这边我们就只需要选择[合适的预训练语言模型](https://link.zhihu.com/?target=https%3A//huggingface.co/docs/transformers/model_summary)，然后进行mask slots [z] 的预测。例如下图，得到了结果 fantastic, 我们需要将其代入[z] 中。
+到了这边我们就只需要选择[合适的预训练语言模型](https://link.zhihu.com/?target=https%3A//huggingface.co/docs/transformers/model_summary)，然后进行mask slots `[z]`的预测。例如下图，得到了结果 fantastic, 我们需要将其代入`[z]`中。
 
 ![](img/fd0d6f9d681fcf407518f7b4c6a64130.png)
 
@@ -158,7 +154,7 @@ Prompt 的工作流包含以下4部分：
 
 +   1.2 前缀模式（Prefix），未知的slot在template的开头
 
-1.  根据是否是由人指定的来区分
+2.  根据是否是由人指定的来区分
 
 +   2.1 人工指定 template
 
@@ -178,7 +174,7 @@ Prompt 的工作流包含以下4部分：
 
 ![](img/d864811e078bbe5cef482f761f6bea32.png)
 
-在上图，我们的label 空间 � 是: Positive, Negative, 答案空间 � 可以是表示positive或者negative 的词，例如 Interesting/Fantastic/Happy/Boring/1-Star/Bad，具体的答案空间 �的选择范围可以由我们指定。我们可以指定一个 � 对应1-N个字符/词。
+在上图，我们的label 空间  是: Positive, Negative, 答案空间  可以是表示positive或者negative 的词，例如 Interesting/Fantastic/Happy/Boring/1-Star/Bad，具体的答案空间 的选择范围可以由我们指定。我们可以指定一个  对应1-N个字符/词。
 
 ![](img/7c15dbc1cd29c8930d33930792761b0e.png)
 
@@ -192,13 +188,13 @@ Prompt 的工作流包含以下4部分：
 
 +   1.3 Sentence 类型
 
-1.  是否有界
+2.  是否有界
 
 +   2.1 有界
 
 +   2.2 无界
 
-1.  是否人工选择
+3.  是否人工选择
 
 +   3.1 人工选择
 
@@ -212,7 +208,7 @@ Prompt 的工作流包含以下4部分：
 
 ![](img/9ea9e7a81bd7df32b2650d102abd00c9.png)
 
-Pre-trained Model Choice（预训练模型选择）
+### Pre-trained Model Choice（预训练模型选择）
 
 在定义完模版以及答案空间后，我们需要选择合适的预训练语言模型对 prompt 进行预测，如何选择一个合适的预训练语言模型也是需要人工经验判别的。
 
@@ -254,8 +250,7 @@ Pre-trained Model Choice（预训练模型选择）
 
 ![](img/8da5b9627f7df22142f5be49484fc385.png)
 
-+   Prompt Decomposition：
-将一个prompt 拆分成多个prompt
++   Prompt Decomposition：将一个prompt 拆分成多个prompt
 
 ![](img/32d07002c57e179a19e59d993171a6c7.png)
 
@@ -308,6 +303,7 @@ Prompt-based 模型在训练中，有多种训练策略，可以选择哪些模�
 ![](img/6badb261075b85165cdee4eb6bdc90a2.png)
 
 +   Fixed-Prompt Tuning
+
 如果使用精调预训练语言模型+离散的固定prompts，就是 BERT + Discrete Prompt for text classification
 
 ![](img/70f35a364fa32bfd1c126867efaab1b6.png)
@@ -351,73 +347,65 @@ Prompt-based 模型在训练中，有多种训练策略，可以选择哪些模�
 +   我们的数据量级是多少
 
 +   我们的是否有个超大的 Left-to-right 的语言模型
-通常如果我们只有很少的数据的时候，我们往往希望我们不要去 fine-tune 预训练语言模型，而是使用LM的超强能力，只是去调prompt 参数。而让我们数据量足够多的时候，我们可以精调语言模型。
 
-而只有像GPT-3 这种超大的语言模型的时候，我们才能直接使用，不需要任何的fine-tuning.
+
+
+通常如果我们只有很少的数据的时候，我们往往希望我们不要去`fine-tune`预训练语言模型，而是使用`LM`的超强能力，只是去调`prompt`参数。而让我们数据量足够多的时候，我们可以精调语言模型。
+
+而只有像`GPT-3`这种超大的语言模型的时候，我们才能直接使用，不需要任何的`fine-tuning`。
 
 ![](img/cf2c77a94d74c9c6f49387651e644ff6.png)
 
 ## Prompt 的优势是什么
 
-Prompt Learning 的优势有哪些呢？我们可以从四个角度进行分析。
+`Prompt Learning`的优势有哪些呢？我们可以从四个角度进行分析。
 
-+   Level 1. Prompt Learning 角度
-
-+   Level 2. Prompt Learning 和 Fine-tuning 的区别
-
++   Level 1. `Prompt Learning`角度
++   Level 2. `Prompt Learning`和`Fine-tuning`的区别
 +   Level 3. 现代 NLP 历史
-
 +   Level 4. 超越NLP
 
 ![](img/52776462a33163b3a06c66114cc58aab.png)
 
-### Level 1. Prompt Learning 使得所有的NLP任务成为一个语言模型的问题
+### Level 1. `Prompt Learning`使得所有的NLP任务成为一个语言模型的问题
 
-+   Prompt Learning 可以将所有的任务归一化预训练语言模型的任务
-
-+   避免了预训练和fine-tuning 之间的gap，几乎所有 NLP 任务都可以直接使用，不需要训练数据。
-
-+   在少样本的数据集上，能取得超过fine-tuning的效果。
-
++   `Prompt Learning`可以将所有的任务归一化预训练语言模型的任务
++   避免了预训练和`fine-tuning`之间的`gap`，几乎所有 NLP 任务都可以直接使用，不需要训练数据。
++   在少样本的数据集上，能取得超过`fine-tuning`的效果。
 +   使得所有的任务在方法上变得一致
 
 ![](img/3c7f6364763c268bee4ad06cea47c303.png)
 
-### Level 2. Prompt Learning 和 Fine-tuning 的范式区别
+### Level 2. `Prompt Learning`和`Fine-tuning`的范式区别
 
-+   Fine-tuning 是使得预训练语言模型适配下游任务
-
-+   Prompting 是将下游任务进行任务重定义，使得其利用预训练语言模型的能力，即适配语言模型
++   `Fine-tuning`是使得预训练语言模型适配下游任务
++   `Prompting`是将下游任务进行任务重定义，使得其利用预训练语言模型的能力，即适配语言模型
 
 ![](img/0057458da9cb7b4de946c3bd3a7240db.png)
 
 ### Level 3. 现代 NLP 第四范式
 
-Prompting 方法是现在NLP的第四范式。其中现在NLP的发展史包含
+`Prompting`方法是现在NLP的第四范式。其中现在NLP的发展史包含
 
-1.  Feature Engineering：即使用文本特征，例如词性，长度等，在使用机器学习的方法进行模型训练。（无预训练语言模型）
+1.  `Feature Engineering`：即使用文本特征，例如词性，长度等，在使用机器学习的方法进行模型训练。（无预训练语言模型）
+1.  `Architecture Engineering`：在`W2V`基础上，利用深度模型，加上固定的`embedding`。（有固定预训练`embedding`，但与下游任务无直接关系）
+1.  `Objective Engineering`：在`bert`的基础上，使用动态的`embedding`，再加上`fine-tuning`。（有预训练语言模型，但与下游任务有`gap`）
+1.  `Prompt Engineering`：直接利用预训练语言模型辅以特定的`prompt`。（有预训练语言模型，但与下游任务无`gap`）
 
-1.  Architecture Engineering：在W2V基础上，利用深度模型，加上固定的embedding。（有固定预训练embedding，但与下游任务无直接关系）
-
-1.  Objective Engineering：在bert 的基础上，使用动态的embedding，在加上fine-tuning。（有预训练语言模型，但与下游任务有gap）
-
-1.  Prompt Engineering：直接利用与训练语言模型辅以特定的prompt。（有预训练语言模型，但与下游任务无gap）
-
-我们可以发现，在四个范式中，预训练语言模型，和下游任务之间的距离，变得越来越近，直到最后Prompt Learning是直接完全利用LM的能力。
+我们可以发现，在四个范式中，预训练语言模型和下游任务之间的距离变得越来越近，直到最后`Prompt Learning`是直接完全利用`LM`的能力。
 
 ![](img/e0657e4293244910a76c5319b13d17be.png)
 
 ### Level 4. 超越NLP的角度
 
-Prompt 可以作为连接多模态的一个契机，例如 CLIP 模型，连接了文本和图片。相信在未来，可以连接声音和视频，这是一个广大的待探索的领域。
+`Prompt`可以作为连接多模态的一个契机，例如`CLIP`模型，连接了文本和图片。相信在未来，可以连接声音和视频，这是一个广大的待探索的领域。
 
 ![](img/7e1a33d4957da011a7b72775f498551b.png)
 
 ref:
 
-+   大模型prompt tuning技术上的应用【智源分享】
-
-+   [Pr](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2107.13586.pdf)e-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
++   大模型`prompt tuning`技术上的应用【智源分享】
++   [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2107.13586.pdf)
 
 -END-
 

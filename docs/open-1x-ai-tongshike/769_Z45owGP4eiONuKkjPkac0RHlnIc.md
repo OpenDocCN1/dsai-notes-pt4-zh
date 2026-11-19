@@ -1,10 +1,9 @@
-# RAG去重小助手SimHash算法：轻松解决文本相似度检测与查重难题
+
+# 🪶 RAG去重小助手SimHash算法：轻松解决文本相似度检测与查重难题
 
 > 来源：[https://datawhaler.feishu.cn/docx/SmoFdUxlUoiKVdx9WPCcWruZnLe](https://datawhaler.feishu.cn/docx/SmoFdUxlUoiKVdx9WPCcWruZnLe)
 
 ![](img/c9d1b21f79747a3440296b05f8cd87e1.png)
-
-# 🪶 RAG去重小助手SimHash算法：轻松解决文本相似度检测与查重难题
 
 ## 🎯 文章目标
 
@@ -16,9 +15,7 @@
 
 +   学会应用Python实现文本查重和相似内容识别
 
-> **💡 小提示
-
-> **本文包含完整的Python代码实现，复制即可运行！
+> **💡 小提示**：本文包含完整的Python代码实现，复制即可运行！
 
 ## 📄 主题
 
@@ -40,13 +37,13 @@
 
 ## 🚁 前言
 
-在信息爆炸的时代，如何快速识别相似文本、检测抄袭内容，已成为内容创作、学术研究和搜索引擎等领域的关键挑战。传统的逐字比对方法计算量大且效率低下，而基于哈希的局部敏感算法提供了一种优雅高效的解决方案。上一篇文章中，我们有讲到通过bert等嵌入模型通过对文本之间的向量进行计算并对比相似度进行召回，但是大家有没有发现会出现一个问题，如果两个文本片段极度相似，交集重合率较高，怎么办？本文将详细介绍SimHash算法，并通过Python实现一套完整的文本相似度检测算法，看完这篇文章我想你应该知道怎么办了。
+在信息爆炸的时代，如何快速识别相似文本、检测抄袭内容，已成为内容创作、学术研究和搜索引擎等领域的关键挑战。传统的逐字比对方法计算量大且效率低下，而基于哈希的局部敏感算法提供了一种优雅高效的解决方案。上一篇文章中，我们有讲到通过`bert`等嵌入模型通过对文本之间的向量进行计算并对比相似度进行召回，但是大家有没有发现会出现一个问题，如果两个文本片段极度相似，交集重合率较高，怎么办？本文将详细介绍SimHash算法，并通过Python实现一套完整的文本相似度检测算法，看完这篇文章我想你应该知道怎么办了。
 
 ---
 
 ✨ 你好，我是筱可，欢迎来到「筱可 AI 研习社」！
 
-🚀 标**签关键词：**| AI 实战派开发者 | 技术成长陪伴者 | RAG 前沿探索者 | 文档处理先锋 |
+🚀 **标签关键词：**| AI 实战派开发者 | 技术成长陪伴者 | RAG 前沿探索者 | 文档处理先锋 |
 
 ## 🏞️ 一、SimHash算法原理与应用场景
 
@@ -74,7 +71,7 @@ SimHash算法的基本步骤如下：
 
 1.  **分词与特征提取**：将文本切分为词语或特征单元
 
-+   对于中文文本，通常使用分词工具(如jieba)进行分词
++   对于中文文本，通常使用分词工具(如`jieba`)进行分词
 
 +   对于英文文本，可以简单按空格分词或使用更复杂的NLP技术，比如词干提取等
 
@@ -133,11 +130,13 @@ SimHash算法的基本步骤如下：
 #### 数学推导过程
 
 1.  **特征哈希映射**：
+
 对每个特征   使用哈希函数   生成   位二进制向量：
 
 1.  其中   可以是MD5、SHA-1等哈希函数，取其输出的前   位。
 
 1.  **加权向量计算**：
+
 初始化一个   维向量  ，初始值为零。然后：
 
 +   将哈希值   的   映射为  ：
@@ -147,11 +146,13 @@ SimHash算法的基本步骤如下：
 1.  最终向量可表示为：
 
 1.  **指纹生成**：
+
 对   的每一维应用符号函数，生成二进制指纹  ：
 
 1.  简化表示为：
 
 1.  **相似度计算**：
+
 对于两个指纹   和  ，计算汉明距离：
 
 1.  其中   为1表示位不同，为0表示位相同。
@@ -332,7 +333,7 @@ Google工程师Charikar在2002年提出SimHash，正是为了解决这一系列�
 
 +   **合理选择阈值**：根据场景调整相似度阈值，通常在70%-95%之间
 
-+   **优化分词策略**：针对专业领域引入领域词典，比如bge-m3就是一个领域词
++   **优化分词策略**：针对专业领域引入领域词典，比如`bge-m3`就是一个领域词
 
 ## 💻 二、Python实现SimHash算法
 
@@ -349,7 +350,7 @@ import pandas as pd
 from collections import defaultdict
 
 # 中文停用词列表
-STOPWORDS = set([&#x27;的&#x27;, &#x27;了&#x27;, &#x27;和&#x27;, &#x27;是&#x27;, &#x27;就&#x27;, &#x27;都&#x27;, &#x27;而&#x27;, &#x27;及&#x27;, &#x27;与&#x27;, &#x27;这&#x27;, &#x27;那&#x27;...])
+STOPWORDS = set(['的', '了', '和', '是', '就', '都', '而', '及', '与', '这', '那', ...])
 ```
 
 然后实现SimHash核心函数：
@@ -371,18 +372,18 @@ def simhash(text, hash_bits=64, use_stopwords=False, stopwords_file=None):
     
     # 无有效特征时返回全0指纹
     if not word_weights:
-        return &#x27;0&#x27; * hash_bits
+        return '0' * hash_bits
     
     # 加权累加
     for word, weight in word_weights.items():
-        hash_value = hashlib.md5(word.encode(&#x27;utf-8&#x27;)).hexdigest()
+        hash_value = hashlib.md5(word.encode('utf-8')).hexdigest()
         binary_hash = bin(int(hash_value, 16))[2:].zfill(hash_bits)[:hash_bits]
         for i in range(hash_bits):
             bit = int(binary_hash[i])
             v[i] += weight if bit == 1 else -weight
     
     # 生成指纹
-    return &#x27;&#x27;.join(&#x27;1&#x27; if value &gt; 0 else &#x27;0&#x27; for value in v)
+    return ''.join('1' if value > 0 else '0' for value in v)
 ```
 
 ### 📏 2.2 相似度计算与判断
@@ -391,21 +392,21 @@ def simhash(text, hash_bits=64, use_stopwords=False, stopwords_file=None):
 
 ```
 def hamming_distance(hash1, hash2):
-    &quot;&quot;&quot;计算两个指纹的汉明距离&quot;&quot;&quot;
+    """计算两个指纹的汉明距离"""
     if len(hash1) != len(hash2):
-        raise ValueError(&quot;指纹长度不一致&quot;)
+        raise ValueError("指纹长度不一致")
     return sum(c1 != c2 for c1, c2 in zip(hash1, hash2))
 
 def get_similarity(hash1, hash2):
-    &quot;&quot;&quot;计算两个指纹的相似度（重复率）&quot;&quot;&quot;
+    """计算两个指纹的相似度（重复率）"""
     if len(hash1) != len(hash2):
-        raise ValueError(&quot;指纹长度不一致&quot;)
+        raise ValueError("指纹长度不一致")
     distance = hamming_distance(hash1, hash2)
     return (len(hash1) - distance) / len(hash1) * 100
 
 def is_similar(hash1, hash2, threshold=70.0):
-    &quot;&quot;&quot;判断两个指纹是否相似&quot;&quot;&quot;
-    return get_similarity(hash1, hash2) &gt;= threshold
+    """判断两个指纹是否相似"""
+    return get_similarity(hash1, hash2) >= threshold
 ```
 
 这里将相似度门槛设为70%，即超过70%时判定为相似。
@@ -452,6 +453,12 @@ def is_similar(hash1, hash2, threshold=70.0):
 
 对长句的比较：
 
+
+
+# SimHash 文本相似度与抄袭检测
+
+## 三、SimHash 应用场景
+
 ```
 长句示例比较:
 文本序号1 文本序号2  汉明距离    相似度  判断
@@ -477,11 +484,11 @@ def is_similar(hash1, hash2, threshold=70.0):
 
 结果表明：
 
-1.  原文与抄袭版本2相似度高达93.75%
+1. 原文与抄袭版本2相似度高达93.75%
 
-1.  原文与抄袭版本1为73.44%
+1. 原文与抄袭版本1为73.44%
 
-1.  不相关文本相似度低于55%
+1. 不相关文本相似度低于55%
 
 SimHash有效识别抄袭，即使经过改写也能检测相似性。
 
@@ -489,43 +496,43 @@ SimHash有效识别抄袭，即使经过改写也能检测相似性。
 
 ### ✅ 4.1 主要优势
 
-1.  **计算效率高，适合大规模数据**
+1. 计算效率高，适合大规模数据
 
-+   计算复杂度低，支持并行处理
++ 计算复杂度低，支持并行处理
 
-+   存储空间小，指纹压缩比高
++ 存储空间小，指纹压缩比高
 
-+   汉明距离计算快，O(k)复杂度
++ 汉明距离计算快，`O(k)`复杂度
 
-+   可扩展至PB级数据
++ 可扩展至PB级数据
 
-1.  **局部敏感性强，捕获细微相似**
+1. 局部敏感性强，捕获细微相似
 
-+   保留文本结构和核心特征
++ 保留文本结构和核心特征
 
-+   权重区分关键内容
++ 权重区分关键内容
 
-+   提供连续相似度量度
++ 提供连续相似度量度
 
-+   对轻微修改有抗干扰能力
++ 对轻微修改有抗干扰能力
 
 ### ⚠️ 4.2 主要局限
 
-1.  **特征质量依赖性**：分词或特征选择不当影响准确性
+1. 特征质量依赖性：分词或特征选择不当影响准确性
 
-1.  **阈值选择问题**：需根据场景调优
+1. 阈值选择问题：需根据场景调优
 
-1.  **对抗同义词替换局限**：同义词替换降低检测相似度
+1. 对抗同义词替换局限：同义词替换降低检测相似度
 
 ### 🗑️ 4.3 停用词的重要性
 
 停用词过滤：
 
-1.  提高特征质量，聚焦核心内容
+1. 提高特征质量，聚焦核心内容
 
-1.  增强抗干扰能力
+1. 增强抗干扰能力
 
-1.  提升计算效率
+1. 提升计算效率
 
 实验显示，停用词过滤显著影响相似度。
 
@@ -533,41 +540,41 @@ SimHash有效识别抄袭，即使经过改写也能检测相似性。
 
 ### 🗺️ 5.1 技术全景图
 
-+   SimHash是优秀的局部敏感哈希算法
++ SimHash是优秀的局部敏感哈希算法
 
-+   通过汉明距离计算相似度
++ 通过汉明距离计算相似度
 
-+   停用词、分词和阈值影响效果
++ 停用词、分词和阈值影响效果
 
-+   在搜索引擎、RAG和爬虫中应用广泛
++ 在搜索引擎、RAG和爬虫中应用广泛
 
 ### 📝 5.2 学习汇总
 
-+   详解SimHash原理和Python实现
++ 详解SimHash原理和Python实现
 
-+   通过实验验证效果
++ 通过实验验证效果
 
-+   提供优化建议和应用案例
++ 提供优化建议和应用案例
 
-+   探讨工程实践
++ 探讨工程实践
 
 ### 🛠️ 5.3 动手挑战
 
-1.  将SimHash应用到你的数据集
+1. 将SimHash应用到你的数据集
 
-1.  实验不同阈值效果
+1. 实验不同阈值效果
 
-1.  集成到RAG或爬虫项目
+1. 集成到RAG或爬虫项目
 
 ### ❓ 5.4 互动问题
 
-1.  什么场景下阈值应更高或更低？
+1. 什么场景下阈值应更高或更低？
 
-1.  SimHash相比传统字符串匹配的优劣？
+1. SimHash相比传统字符串匹配的优劣？
 
-1.  如何改进SimHash？
+1. 如何改进SimHash？
 
-1.  RAG系统中如何结合向量检索和SimHash？
+1. RAG系统中如何结合向量检索和SimHash？
 
 > **名言**：
 
@@ -581,11 +588,11 @@ SimHash有效识别抄袭，即使经过改写也能检测相似性。
 
 ### 💗 立即行动
 
-1.  **点赞、收藏、关注**，顺手分享给可能感兴趣的朋友。
+1. 点赞、收藏、关注，顺手分享给可能感兴趣的朋友。
 
-1.  为账号加个星标或特别关注，获取更多精彩内容。
+1. 为账号加个星标或特别关注，获取更多精彩内容。
 
-1.  以本文为灵感，整理一份属于自己的笔记。
+1. 以本文为灵感，整理一份属于自己的笔记。
 
 ---
 
@@ -599,7 +606,11 @@ SimHash有效识别抄袭，即使经过改写也能检测相似性。
 
 文末附上完整SimHash算法Python实现，可直接复制使用：
 
-```
+
+
+# SimHash 文本相似度检测
+
+```python
 import hashlib
 import jieba
 import pandas as pd
@@ -607,37 +618,37 @@ from collections import defaultdict
 
 # 中文停用词列表
 STOPWORDS = set([
-    &#x27;的&#x27;, &#x27;了&#x27;, &#x27;和&#x27;, &#x27;是&#x27;, &#x27;就&#x27;, &#x27;都&#x27;, &#x27;而&#x27;, &#x27;及&#x27;, &#x27;与&#x27;, &#x27;这&#x27;, &#x27;那&#x27;, &#x27;有&#x27;, &#x27;在&#x27;, &#x27;中&#x27;, &#x27;为&#x27;,
-    &#x27;以&#x27;, &#x27;于&#x27;, &#x27;不&#x27;, &#x27;也&#x27;, &#x27;之&#x27;, &#x27;很&#x27;, &#x27;但&#x27;, &#x27;对&#x27;, &#x27;到&#x27;, &#x27;可&#x27;, &#x27;个&#x27;, &#x27;如&#x27;, &#x27;此&#x27;, &#x27;会&#x27;, &#x27;上&#x27;,
-    &#x27;来&#x27;, &#x27;去&#x27;, &#x27;把&#x27;, &#x27;被&#x27;, &#x27;让&#x27;, &#x27;着&#x27;, &#x27;从&#x27;, &#x27;给&#x27;, &#x27;所&#x27;, &#x27;能&#x27;, &#x27;等&#x27;, &#x27;得&#x27;, &#x27;地&#x27;, &#x27;又&#x27;, &#x27;或&#x27;,
-    &#x27;者&#x27;, &#x27;每&#x27;, &#x27;并&#x27;, &#x27;然&#x27;, &#x27;已&#x27;, &#x27;却&#x27;, &#x27;才&#x27;, &#x27;做&#x27;, &#x27;需&#x27;, &#x27;其&#x27;, &#x27;通过&#x27;, &#x27;使用&#x27;, &#x27;实现&#x27;, &#x27;你&#x27;, 
-    &#x27;我&#x27;, &#x27;他&#x27;, &#x27;她&#x27;, &#x27;它&#x27;, &#x27;们&#x27;, &#x27;什么&#x27;, &#x27;怎么&#x27;, &#x27;如何&#x27;, &#x27;该&#x27;, &#x27;由&#x27;, &#x27;下&#x27;, &#x27;将&#x27;, &#x27;这些&#x27;, &#x27;那些&#x27;
+    '的', '了', '和', '是', '就', '都', '而', '及', '与', '这', '那', '有', '在', '中', '为',
+    '以', '于', '不', '也', '之', '很', '但', '对', '到', '可', '个', '如', '此', '会', '上',
+    '来', '去', '把', '被', '让', '着', '从', '给', '所', '能', '等', '得', '地', '又', '或',
+    '者', '每', '并', '然', '已', '却', '才', '做', '需', '其', '通过', '使用', '实现', '你',
+    '我', '他', '她', '它', '们', '什么', '怎么', '如何', '该', '由', '下', '将', '这些', '那些'
 ])
 
 def load_stopwords(file_path=None):
-    &quot;&quot;&quot;
+    """
     加载停用词表
     :param file_path: 停用词文件路径（每行一个词）
     :return: 停用词集合
-    &quot;&quot;&quot;
+    """
     if file_path:
         try:
-            with open(file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(file_path, 'r', encoding='utf-8') as f:
                 return set([line.strip() for line in f])
         except Exception as e:
-            print(f&quot;加载停用词文件失败: {e}&quot;)
+            print(f"加载停用词文件失败: {e}")
             return STOPWORDS
     return STOPWORDS
 
 def simhash(text, hash_bits=64, use_stopwords=False, stopwords_file=None):
-    &quot;&quot;&quot;
+    """
     生成SimHash指纹
     :param text: 输入文本
     :param hash_bits: 指纹位数（默认64）
     :param use_stopwords: 是否使用停用词过滤
     :param stopwords_file: 自定义停用词文件路径
     :return: 二进制指纹字符串
-    &quot;&quot;&quot;
+    """
     # 分词
     words = jieba.lcut(text)
     v = [0] * hash_bits  # 初始化向量
@@ -653,58 +664,58 @@ def simhash(text, hash_bits=64, use_stopwords=False, stopwords_file=None):
     
     # 无有效特征时返回全0指纹
     if not word_weights:
-        return &#x27;0&#x27; * hash_bits
+        return '0' * hash_bits
     
     # 加权累加
     for word, weight in word_weights.items():
-        hash_value = hashlib.md5(word.encode(&#x27;utf-8&#x27;)).hexdigest()
+        hash_value = hashlib.md5(word.encode('utf-8')).hexdigest()
         binary_hash = bin(int(hash_value, 16))[2:].zfill(hash_bits)[:hash_bits]
         for i in range(hash_bits):
             bit = int(binary_hash[i])
             v[i] += weight if bit == 1 else -weight
     
     # 生成指纹
-    return &#x27;&#x27;.join(&#x27;1&#x27; if value &gt; 0 else &#x27;0&#x27; for value in v)
+    return ''.join('1' if value > 0 else '0' for value in v)
 
 def hamming_distance(hash1, hash2):
-    &quot;&quot;&quot;
+    """
     计算两个指纹的汉明距离
     :param hash1: 第一个指纹
     :param hash2: 第二个指纹
     :return: 汉明距离
-    &quot;&quot;&quot;
+    """
     if len(hash1) != len(hash2):
-        raise ValueError(&quot;指纹长度不一致&quot;)
+        raise ValueError("指纹长度不一致")
     return sum(c1 != c2 for c1, c2 in zip(hash1, hash2))
 
 def get_similarity(hash1, hash2):
-    &quot;&quot;&quot;
+    """
     计算两个指纹的相似度（重复率）
     :param hash1: 第一个指纹
     :param hash2: 第二个指纹
     :return: 相似度百分比
-    &quot;&quot;&quot;
+    """
     if len(hash1) != len(hash2):
-        raise ValueError(&quot;指纹长度不一致&quot;)
+        raise ValueError("指纹长度不一致")
     distance = hamming_distance(hash1, hash2)
     return (len(hash1) - distance) / len(hash1) * 100
 
 def is_similar(hash1, hash2, threshold=70.0):
-    &quot;&quot;&quot;
+    """
     判断两个指纹是否相似
     :param hash1: 第一个指纹
     :param hash2: 第二个指纹
     :param threshold: 相似度百分比阈值（默认70%）
     :return: 是否相似
-    &quot;&quot;&quot;
-    return get_similarity(hash1, hash2) &gt;= threshold
+    """
+    return get_similarity(hash1, hash2) >= threshold
 
-if __name__ == &quot;__main__&quot;:
-    print(&quot;SimHash 文本相似度检测示例\n&quot;)
+if __name__ == "__main__":
+    print("SimHash 文本相似度检测示例\n")
     
     # 基本示例 - 相似短句
-    text1 = &quot;我喜欢编程和学习新东西&quot;
-    text2 = &quot;我喜欢写代码和学习新技术&quot;
+    text1 = "我喜欢编程和学习新东西"
+    text2 = "我喜欢写代码和学习新技术"
     
     # 比较使用停用词和不使用停用词的效果
     hash1_with_stopwords = simhash(text1, use_stopwords=True)
@@ -712,47 +723,47 @@ if __name__ == &quot;__main__&quot;:
     hash1_without_stopwords = simhash(text1, use_stopwords=False)
     hash2_without_stopwords = simhash(text2, use_stopwords=False)
     
-    print(&quot;基本示例 - 比较停用词过滤效果:&quot;)
-    print(f&quot;文本1: {text1}&quot;)
-    print(f&quot;文本2: {text2}&quot;)
+    print("基本示例 - 比较停用词过滤效果:")
+    print(f"文本1: {text1}")
+    print(f"文本2: {text2}")
     
     # 创建比较表格
     comparison = {
-        &quot;过滤方式&quot;: [&quot;使用停用词&quot;, &quot;不使用停用词&quot;],
-        &quot;汉明距离&quot;: [
+        "过滤方式": ["使用停用词", "不使用停用词"],
+        "汉明距离": [
             hamming_distance(hash1_with_stopwords, hash2_with_stopwords),
             hamming_distance(hash1_without_stopwords, hash2_without_stopwords)
         ]
     }
     
     # 添加相似度列
-    comparison[&quot;相似度&quot;] = [
-        f&quot;{get_similarity(hash1_with_stopwords, hash2_with_stopwords):.2f}%&quot;,
-        f&quot;{get_similarity(hash1_without_stopwords, hash2_without_stopwords):.2f}%&quot;
+    comparison["相似度"] = [
+        f"{get_similarity(hash1_with_stopwords, hash2_with_stopwords):.2f}%",
+        f"{get_similarity(hash1_without_stopwords, hash2_without_stopwords):.2f}%"
     ]
     
     # 添加判断列
-    comparison[&quot;判断&quot;] = [
-        &quot;相似&quot; if is_similar(hash1_with_stopwords, hash2_with_stopwords) else &quot;不相似&quot;,
-        &quot;相似&quot; if is_similar(hash1_without_stopwords, hash2_without_stopwords) else &quot;不相似&quot;
+    comparison["判断"] = [
+        "相似" if is_similar(hash1_with_stopwords, hash2_with_stopwords) else "不相似",
+        "相似" if is_similar(hash1_without_stopwords, hash2_without_stopwords) else "不相似"
     ]
     
-    print(&quot;\n过滤效果比较:&quot;)
+    print("\n过滤效果比较:")
     print(pd.DataFrame(comparison).to_string(index=False))
-    print(&quot;\n&quot; + &quot;-&quot;*50 + &quot;\n&quot;)
+    print("\n" + "-"*50 + "\n")
     
     # 使用停用词进行后续测试
     USE_STOPWORDS = True
     
     # 更多短句示例
     short_texts = [
-        &quot;今天天气真好&quot;,
-        &quot;今天天气很好&quot;,
-        &quot;明天天气不错&quot;,
-        &quot;今天下雨了&quot;
+        "今天天气真好",
+        "今天天气很好",
+        "明天天气不错",
+        "今天下雨了"
     ]
     
-    print(&quot;短句示例比较:&quot;)
+    print("短句示例比较:")
     hashes = [simhash(text, use_stopwords=USE_STOPWORDS) for text in short_texts]
     
     # 创建比较结果的DataFrame
@@ -761,28 +772,28 @@ if __name__ == &quot;__main__&quot;:
         for j in range(i+1, len(short_texts)):
             dist = hamming_distance(hashes[i], hashes[j])
             similarity = get_similarity(hashes[i], hashes[j])
-            judgment = &quot;相似&quot; if is_similar(hashes[i], hashes[j]) else &quot;不相似&quot;
+            judgment = "相似" if is_similar(hashes[i], hashes[j]) else "不相似"
             comparison_data.append({
-                &quot;文本1&quot;: short_texts[i],
-                &quot;文本2&quot;: short_texts[j],
-                &quot;汉明距离&quot;: dist,
-                &quot;相似度&quot;: f&quot;{similarity:.2f}%&quot;,
-                &quot;判断&quot;: judgment
+                "文本1": short_texts[i],
+                "文本2": short_texts[j],
+                "汉明距离": dist,
+                "相似度": f"{similarity:.2f}%",
+                "判断": judgment
             })
     
     short_df = pd.DataFrame(comparison_data)
     print(short_df.to_string(index=False))
     
-    print(&quot;\n&quot; + &quot;-&quot;*50 + &quot;\n&quot;)
+    print("\n" + "-"*50 + "\n")
     
     # 长句示例
     long_texts = [
-        &quot;人工智能是计算机科学的一个重要分支，它致力于研究和开发能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。&quot;,
-        &quot;人工智能作为计算机科学的核心领域，专注于开发可以模拟并扩展人类智能的理论与应用系统，其技术方法涵盖了多个学科。&quot;,
-        &quot;大数据技术是一种能够处理和分析海量数据集的方法和工具，它已经在商业、医疗和科学研究等众多领域产生了深远影响。&quot;
+        "人工智能是计算机科学的一个重要分支，它致力于研究和开发能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。",
+        "人工智能作为计算机科学的核心领域，专注于开发可以模拟并扩展人类智能的理论与应用系统，其技术方法涵盖了多个学科。",
+        "大数据技术是一种能够处理和分析海量数据集的方法和工具，它已经在商业、医疗和科学研究等众多领域产生了深远影响。"
     ]
     
-    print(&quot;长句示例比较:&quot;)
+    print("长句示例比较:")
     long_hashes = [simhash(text, use_stopwords=USE_STOPWORDS) for text in long_texts]
     
     # 创建长句比较的DataFrame
@@ -791,100 +802,86 @@ if __name__ == &quot;__main__&quot;:
         for j in range(i+1, len(long_texts)):
             dist = hamming_distance(long_hashes[i], long_hashes[j])
             similarity = get_similarity(long_hashes[i], long_hashes[j])
-            judgment = &quot;相似&quot; if is_similar(long_hashes[i], long_hashes[j]) else &quot;不相似&quot;
+            judgment = "相似" if is_similar(long_hashes[i], long_hashes[j]) else "不相似"
             long_comparison.append({
-                &quot;文本序号1&quot;: f&quot;长文本 {i+1}&quot;,
-                &quot;文本序号2&quot;: f&quot;长文本 {j+1}&quot;,
-                &quot;汉明距离&quot;: dist,
-                &quot;相似度&quot;: f&quot;{similarity:.2f}%&quot;,
-                &quot;判断&quot;: judgment
+                "文本序号1": f"长文本 {i+1}",
+                "文本序号2": f"长文本 {j+1}",
+                "汉明距离": dist,
+                "相似度": f"{similarity:.2f}%",
+                "判断": judgment
             })
     
     long_df = pd.DataFrame(long_comparison)
     print(long_df.to_string(index=False))
             
-    print(&quot;\n&quot; + &quot;-&quot;*50 + &quot;\n&quot;)
+    print("\n" + "-"*50 + "\n")
     
     # 模拟文本抄袭检测场景
-    print(&quot;文本抄袭检测示例:&quot;)
-    original = &quot;SimHash算法是一种局部敏感哈希算法，主要用于大规模文本去重和相似性检测。&quot;
-    copy1 = &quot;SimHash是一种局部敏感哈希技术，广泛应用于大规模文本去重和相似度检测。&quot;
-    copy2 = &quot;SimHash算法是一种局部敏感哈希方法，主要用于大规模文本去重和相似性检测工作。&quot;
-    different = &quot;TF-IDF是一种统计方法，用于评估单词对于文档集合中某一文档的重要程度。&quot;
+    print("文本抄袭检测示例:")
+    original = "SimHash算法是一种局部敏感哈希算法，主要用于大规模文本去重和相似性检测。"
+    copy1 = "SimHash是一种局部敏感哈希技术，广泛应用于大规模文本去重和相似度检测。"
+    copy2 = "SimHash算法是一种局部敏感哈希方法，主要用于大规模文本去重和相似性检测工作。"
+    different = "TF-IDF是一种统计方法，用于评估单词对于文档集合中某一文档的重要程度。"
     
     texts = [original, copy1, copy2, different]
-    names = [&quot;原文&quot;, &quot;抄袭版本1&quot;, &quot;抄袭版本2&quot;, &quot;不相关文本&quot;]
+    names = ["原文", "抄袭版本1", "抄袭版本2", "不相关文本"]
     
     hashes = [simhash(text, use_stopwords=USE_STOPWORDS) for text in texts]
     
-    print(&quot;文本相似度矩阵:&quot;)
+    print("文本相似度矩阵:")
     
     # 创建相似度矩阵的DataFrame
     matrix_data = []
     for i, name1 in enumerate(names):
-        row_data = {&quot;文本&quot;: name1}
+        row_data = {"文本": name1}
         for j, name2 in enumerate(names):
             if i == j:
                 # 对角线显示自身比较
-                row_data[name2] = &quot;100.00%&quot;
+                row_data[name2] = "100.00%"
             else:
                 dist = hamming_distance(hashes[i], hashes[j])
                 similarity = get_similarity(hashes[i], hashes[j])
-                row_data[name2] = f&quot;{similarity:.2f}%&quot;
+                row_data[name2] = f"{similarity:.2f}%"
         matrix_data.append(row_data)
     
     # 设置更好的显示选项
-    pd.set_option(&#x27;display.unicode.ambiguous_as_wide&#x27;, True)
-    pd.set_option(&#x27;display.unicode.east_asian_width&#x27;, True)
-    pd.set_option(&#x27;display.width&#x27;, 120)
+    pd.set_option('display.unicode.ambiguous_as_wide', True)
+    pd.set_option('display.unicode.east_asian_width', True)
+    pd.set_option('display.width', 120)
     
     # 创建并显示相似度矩阵DataFrame
     similarity_df = pd.DataFrame(matrix_data)
     print(similarity_df.to_string(index=False))
     
-    print(&quot;\n完整示例演示结束&quot;)
+    print("\n完整示例演示结束")
 ```
 
----
 
-🙋♂️ 入群交流 & 资料领取
 
-1.  **入群方式** (二选一)
+# 🙋♂️ 入群交流 & 资料领取
 
-+   👸号菜单点击「社群」，扫码直接入群
+1. **入群方式** (二选一)
 
-+   回复关键词「入群」，添加作者🛰️人工邀请
++ 👸号菜单点击「社群」，扫码直接入群
++ 回复关键词「入群」，添加作者🛰️人工邀请
 
-1.  **资料领取** (二选一)
+1. **资料领取** (二选一)
 
-+   入群后查看群公告，获取学习资源
-
-+   👸号菜单点击「资料领取」，自动发送网盘链接（定期更新）
-
----
++ 入群后查看群公告，获取学习资源
++ 👸号菜单点击「资料领取」，自动发送网盘链接（定期更新）
 
 ## 📓 附录
 
 ### 往期文章
 
-+   从模式匹配到语义理解：文本嵌入技术的演变与 RAG 系统优化
-
-+   别再瞎猜了！用 RAGAS 精准定位 RAG 系统短板
-
-+   PDF提取神器！将双栏学术论文转换为单栏Markdown实战（上）
-
-+   从零打造RAG检索系统：BM25让检索快到飞起
-
-+   打造RAG应用必知：BM25算法实战解析，让你不落人后
-
-+   手把手教程：用MinerU构建自动化文档转换流水线
-
-+   [飞桨版面检测分析的命令看不懂？恭喜！您已获得 arg](http://mp.weixin.qq.com/s/5b8PqqViSpvgMjpfJqOxCQ?token=1077873472&lang=zh_CN)parse 入门手册一本，快快学起来吧！
-
-+   pdf提取逆天神器，基于飞浆平台的版面检测与版面识别(1)
-
-+   [大模型应用极简开发快速入门](http://mp.weixin.qq.com/s/kHeVK6hManVUaci2p-42GQ)
-
-+   [基于 Streamlit 和 De](https://mp.weixin.qq.com/s/38BcsiGF1WhKx4DaA-8l0A)epSeek 的智能文档助手开发实战指南
-
-+   告别低效沟通：提示词框架助你玩转deepseek
++ 从模式匹配到语义理解：文本嵌入技术的演变与 RAG 系统优化
++ 别再瞎猜了！用 RAGAS 精准定位 RAG 系统短板
++ PDF提取神器！将双栏学术论文转换为单栏Markdown实战（上）
++ 从零打造RAG检索系统：BM25让检索快到飞起
++ 打造RAG应用必知：BM25算法实战解析，让你不落人后
++ 手把手教程：用MinerU构建自动化文档转换流水线
++ [飞桨版面检测分析的命令看不懂？恭喜！您已获得 `arg`](http://mp.weixin.qq.com/s/5b8PqqViSpvgMjpfJqOxCQ?token=1077873472&lang=zh_CN)parse 入门手册一本，快快学起来吧！
++ pdf提取逆天神器，基于飞浆平台的版面检测与版面识别(1)
++ [大模型应用极简开发快速入门](http://mp.weixin.qq.com/s/kHeVK6hManVUaci2p-42GQ)
++ [基于 Streamlit 和 De](https://mp.weixin.qq.com/s/38BcsiGF1WhKx4DaA-8l0A)epSeek 的智能文档助手开发实战指南
++ 告别低效沟通：提示词框架助你玩转deepseek

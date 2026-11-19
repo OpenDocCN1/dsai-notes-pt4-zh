@@ -1,14 +1,15 @@
+
 # 怎么用AI视频实现一张照片来跳舞？
 
 > 来源：[https://agijuejin.feishu.cn/docx/JyXbdEL96oUUzaxZ1NEcSDOGnld](https://agijuejin.feishu.cn/docx/JyXbdEL96oUUzaxZ1NEcSDOGnld)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/676140483)hihu.com/p/676140...
+> 原文：[https://zhuanlan.zhihu.com/p/676140483](https://zhuanlan.zhihu.com/p/676140483)
 
-**让人工智能AI治愈了你的四肢不协调！人工智能AI究竟有多神奇，它可以只通过一张照片，让**画面跟着我们想要的动作跳起来，是不是很有趣，快来看看人工智能AI是怎么做到的吧！
+让人工智能AI治愈了你的四肢不协调！人工智能AI究竟有多神奇，它可以只通过一张照片，让画面跟着我们想要的动作跳起来，是不是很有趣，快来看看人工智能AI是怎么做到的吧！
 
-[**最近我的朋**](https://www.zhihu.com/search?q=%E5%85%A8%E6%B0%91%E8%88%9E%E7%8E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)友圈被阿里通义千问APP的“ 全民舞王 ”占领了，朋友圈和🛰️群里都是魔性的“科目三”，先看看究竟是什
+[最近我的朋](https://www.zhihu.com/search?q=%E5%85%A8%E6%B0%91%E8%88%9E%E7%8E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)友圈被阿里通义千问APP的“全民舞王”占领了，朋友圈和🛰️群里都是魔性的“科目三”，先看看究竟是什么。
 
 ![](img/331cb1286d3917e377677603b56ceef0.png)
 
@@ -22,13 +23,13 @@
 
 [7cf1bb4a-ab18-11ee-94d4-e20e493c4dc0-v8_f2_t1_9nZjyJcD.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OJiKbuAoQoyI7Nx2iWmcBAxtnQb)
 
-[而这神奇的](https://www.zhihu.com/search?q=%E5%85%8D%E8%B4%B9%E4%BD%93%E9%AA%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)视频只需要简单几步，就可以 免费体验 到这款神奇的AI视频。
+而这神奇的视频只需要简单几步，就可以免费体验到这款神奇的AI视频。
 
 下面，我来给大家分享下如何进行操作吧！
 
 ## 一、APP安装
 
-[我以安卓手](https://www.zhihu.com/search?q=%E9%80%9A%E4%B9%89%E5%8D%83%E9%97%AE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)机为例，首先通过手机自带的软件商城，搜索找到“ 通义千问 ”（下图第一个）
+我以安卓手机为例，首先通过手机自带的软件商城，搜索找到“通义千问”（下图第一个）
 
 ![](img/4695b82e574a353f5de83145c9385c27.png)
 
@@ -42,7 +43,7 @@
 
 ## 二、合成视频
 
-[进入这](https://www.zhihu.com/search?q=%E7%83%AD%E8%88%9E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)个应用后，可以看到引导界面，点击“立即体验 热舞 ”，就可以进入下面的界面了
+进入这个应用后，可以看到引导界面，点击“立即体验 热舞”，就可以进入下面的界面了
 
 ![](img/bf72dd809913c4a5a5eafaa71d4313f7.png)
 
@@ -50,7 +51,7 @@
 
 ![](img/030a7c52965f76eb5f86740b867594af.png)
 
-我选择了 [兔子舞 ](https://www.zhihu.com/search?q=%E5%85%94%E5%AD%90%E8%88%9E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)看下效果，点进界面，点击右下角“舞同款”
+我选择了[兔子舞](https://www.zhihu.com/search?q=%E5%85%94%E5%AD%90%E8%88%9E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)看下效果，点进界面，点击右下角“舞同款”
 
 ![](img/6be493abf936e9d9d303439ac36a6e84.png)
 
@@ -70,9 +71,9 @@
 
 ![](img/2acc537914be042237747749c7ee9a31.png)
 
-以上几张，全部失败……为什么呢，因为必须同时满足[以下四点](https://www.zhihu.com/search?q=%E5%85%A8%E8%BA%AB%E7%85%A7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)要求才能够识别：包括正面站立、 全身照 、全身无遮挡、无角度。
+以上几张，全部失败……为什么呢，因为必须同时满足以下四点要求才能够识别：包括正面站立、全身照、全身无遮挡、无角度。
 
-不过我还是不能理解猫咪不被识别的原因……毕竟别[人用奥特曼](https://www.zhihu.com/search?q=%E7%8C%AB%E5%92%AA%E5%9B%BE%E7%89%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)和龙宝宝都成功了，我用的这个 猫咪图片 也不比奥特曼更奇怪呀。
+不过我还是不能理解猫咪不被识别的原因……毕竟别人用奥特曼和龙宝宝都成功了，我用的这个猫咪图片也不比奥特曼更奇怪呀。
 
 ![](img/bcceaac4682e4cc5b690401c283b78d7.png)
 
@@ -88,19 +89,19 @@
 
 最后来看下这个小姐姐不同舞蹈的生成效果吧！
 
-### 1.西域慢摇
+### 1. 西域慢摇
 
 ![](img/57991cc2482a0f8226c1073c3849ffce.png)
 
 [0167bd30-ab1d-11ee-962b-2a9f390ae0a9-v8_f2_t1_2XdfobyM.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WOw7bT7K9oHLYZxt2z7c3Q0Nnqc)
 
-### 2. [只想对你说 ](https://www.zhihu.com/search?q=%E5%8F%AA%E6%83%B3%E5%AF%B9%E4%BD%A0%E8%AF%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)【爱你】
+### 2. [只想对你说](https://www.zhihu.com/search?q=%E5%8F%AA%E6%83%B3%E5%AF%B9%E4%BD%A0%E8%AF%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)【爱你】
 
 ![](img/31affa57605265e3c747a2112ed584cc.png)
 
 [d876742e-ab1d-11ee-85ec-9e13396e0a47-v8_f2_t1_96iU8sAv.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OmKmbhPztolOc0xO6t4cbIignSf)
 
-### 3.兔子舞
+### 3. 兔子舞
 
 ![](img/3bb678d5a042557281adcc2025f96396.png)
 
@@ -112,7 +113,7 @@
 
 [0cbac528-ab1e-11ee-b25d-e20e493c4dc0-v8_f2_t1_KKwbS8yV.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XPRpb0ntQoynImx6IoVc97H9nTd)
 
-### 5.科目三
+### 5. 科目三
 
 ![](img/0836799c2c29fd60d61a9e07e43726a7.png)
 
@@ -122,30 +123,30 @@
 
 以下是其他来源于互联网的视频，网友们的各种想象力太有趣了，让我们看看还有什么有趣的形象在跳舞吧！
 
-### 1.蜘蛛侠
+### 1. 蜘蛛侠
 
 ![](img/a0609817d4e76087e80a2f649dddcc1a.png)
 
 [68e606f4-ab1f-11ee-8a17-f64592c36f04-v8_f2_t1_H5Mts3N9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dvgmbp8ncoUBHoxUxHfcuwvPnbe)
 
-### 2.永远的坤坤
+### 2. 永远的坤坤
 
 ![](img/232d565ac46316cbf21406cf950dcb61.png)
 
 [8cbdc3be-ab1f-11ee-8223-36b7f2cee5cf-v8_f2_t1_mWxcQbtq.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W7LwbnNhEoivCWx4jwYcgDyQnwh)
 
-### 3.兵马俑
+### 3. 兵马俑
 
 兵马俑跳舞：https://www.zhihu.com/zvideo/1726401903590580224
 
-### 4.奥特曼
+### 4. 奥特曼
 
 奥特曼跳舞：https://www.zhihu.com/zvideo/1726401903444086785
 
-##  结语
+## 结语
 
-阿里最新的AI视频和上次 [妙鸭相机 ](https://www.zhihu.com/search?q=%E5%A6%99%E9%B8%AD%E7%9B%B8%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)一样瞬间刷爆了朋友圈，这充分说明了AI人工智能技术的推广，想要出圈，除了技术过硬，做好内容传播和宣传也是必要的！
+阿里最新的AI视频和上次[妙鸭相机](https://www.zhihu.com/search?q=%E5%A6%99%E9%B8%AD%E7%9B%B8%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)一样瞬间刷爆了朋友圈，这充分说明了AI人工智能技术的推广，想要出圈，除了技术过硬，做好内容传播和宣传也是必要的！
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是[德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676140483%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

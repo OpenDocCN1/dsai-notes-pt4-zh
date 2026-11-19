@@ -1,8 +1,9 @@
+
 # 智囊团Prompt 2
 
-> 来源：[https://my.feishu.cn/docx/Fhmvd5OU3okaGMxKQBKckfcCnrd](https://my.feishu.cn/docx/Fhmvd5OU3okaGMxKQBKckfcCnrd)
+> 来源：[`https://my.feishu.cn/docx/Fhmvd5OU3okaGMxKQBKckfcCnrd`](https://my.feishu.cn/docx/Fhmvd5OU3okaGMxKQBKckfcCnrd)
 
-# 智囊团深度帖
+## 智囊团深度帖
 
 ```
 &gt;开个深度帖！集思广益
@@ -12,7 +13,7 @@
 &gt;大佬们好，我是
 ```
 
-# [智囊团风格Prompt生成模板](https://linux.do/t/topic/532338)
+## [智囊团风格Prompt生成模板](https://linux.do/t/topic/532338)
 
 ```
 # Role：智囊团Prompt生成器

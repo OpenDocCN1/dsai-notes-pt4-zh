@@ -1,3 +1,4 @@
+
 # 法务部/合规部/法律事务部 OpenClaw 应用场景及对应Skills分析报告
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/PCPQdQJ9voMcXVxDcBccPAJBnqe](https://gotoaiworld.feishu.cn/docx/PCPQdQJ9voMcXVxDcBccPAJBnqe)
@@ -26,13 +27,13 @@
 
 对应OpenClaw Skills：
 
-+   contract-review（合同审核、条款修订与漏洞排查）；
++   `contract-review`（合同审核、条款修订与漏洞排查）；
 
-+   contract-draft（合同相关法律文书撰写、修订）；
++   `contract-draft`（合同相关法律文书撰写、修订）；
 
-+   contract-dispute（合同纠纷预判、应对方案撰写）；
++   `contract-dispute`（合同纠纷预判、应对方案撰写）；
 
-+   contract-archive（合同归档、管理与查询）。
++   `contract-archive`（合同归档、管理与查询）。
 
 ### （二）合规管控与政策落地类（核心保障场景）
 
@@ -50,13 +51,13 @@
 
 对应OpenClaw Skills：
 
-+   compliance-system（合规制度、合规手册起草与修订）；
++   `compliance-system`（合规制度、合规手册起草与修订）；
 
-+   compliance-inspection（合规检查、风险排查与整改）；
++   `compliance-inspection`（合规检查、风险排查与整改）；
 
-+   law-interpretation（法律法规、行业规范解读与宣贯）；
++   `law-interpretation`（法律法规、行业规范解读与宣贯）；
 
-+   compliance-training（合规培训文案、考核材料撰写）。
++   `compliance-training`（合规培训文案、考核材料撰写）。
 
 ### （三）法律纠纷处置类（核心执行场景）
 
@@ -74,13 +75,13 @@
 
 对应OpenClaw Skills：
 
-+   dispute-handle（法律纠纷调解、诉讼/仲裁方案起草）；
++   `dispute-handle`（法律纠纷调解、诉讼/仲裁方案起草）；
 
-+   legal-document（起诉状、答辩状等法律文书撰写）；
++   `legal-document`（起诉状、答辩状等法律文书撰写）；
 
-+   lawyer-coordination（与律师对接、庭审准备）；
++   `lawyer-coordination`（与律师对接、庭审准备）；
 
-+   dispute-review（纠纷复盘、风险防范建议撰写）。
++   `dispute-review`（纠纷复盘、风险防范建议撰写）。
 
 ### （四）法律支撑与咨询类（基础服务场景）
 
@@ -98,13 +99,13 @@
 
 对应OpenClaw Skills：
 
-+   legal-consult（日常法律咨询、法律意见撰写）；
++   `legal-consult`（日常法律咨询、法律意见撰写）；
 
-+   decision-legal（重大决策法律可行性分析）；
++   `decision-legal`（重大决策法律可行性分析）；
 
-+   intellectual-property（知识产权注册、维护与侵权应对）；
++   `intellectual-property`（知识产权注册、维护与侵权应对）；
 
-+   legal-training（法律知识培训、宣传文案撰写）。
++   `legal-training`（法律知识培训、宣传文案撰写）。
 
 ### （五）文书与台账管理类（基础支撑场景）
 
@@ -122,37 +123,37 @@
 
 对应OpenClaw Skills：
 
-+   legal-ledger（法律合规台账、纠纷台账、知识产权台账建立与更新）；
++   `legal-ledger`（法律合规台账、纠纷台账、知识产权台账建立与更新）；
 
-+   legal-document-archive（法律文书、合规文件归档与管理）；
++   `legal-document-archive`（法律文书、合规文件归档与管理）；
 
-+   work-summary（部门工作总结、工作计划、工作汇报撰写）；
++   `work-summary`（部门工作总结、工作计划、工作汇报撰写）；
 
-+   document-query（法律文书、台账的查询与管理）。
++   `document-query`（法律文书、台账的查询与管理）。
 
 ## 三、核心Skills推荐（高频必配套装）
 
 结合法务部/合规部/法律事务部日常工作高频度、高需求特点，筛选10个核心Skills，可满足三个部门80%以上日常工作需求，优先落地适配，兼顾专业性与高效性：
 
-1.  contract-review（合同审核、条款修订与漏洞排查）；
+1.  `contract-review`（合同审核、条款修订与漏洞排查）；
 
-1.  compliance-system（合规制度、合规手册起草与修订）；
+1.  `compliance-system`（合规制度、合规手册起草与修订）；
 
-1.  dispute-handle（法律纠纷处置、诉讼/仲裁方案撰写）；
+1.  `dispute-handle`（法律纠纷处置、诉讼/仲裁方案撰写）；
 
-1.  legal-document（起诉状、答辩状等法律文书撰写）；
+1.  `legal-document`（起诉状、答辩状等法律文书撰写）；
 
-1.  law-interpretation（法律法规、行业规范解读与宣贯）；
+1.  `law-interpretation`（法律法规、行业规范解读与宣贯）；
 
-1.  intellectual-property（知识产权注册、维护与侵权应对）；
+1.  `intellectual-property`（知识产权注册、维护与侵权应对）；
 
-1.  compliance-inspection（合规检查、风险排查与整改）；
+1.  `compliance-inspection`（合规检查、风险排查与整改）；
 
-1.  legal-consult（日常法律咨询、重大决策法律分析）；
+1.  `legal-consult`（日常法律咨询、重大决策法律分析）；
 
-1.  legal-ledger（各类法律合规台账建立与更新）；
+1.  `legal-ledger`（各类法律合规台账建立与更新）；
 
-1.  work-summary（部门工作总结、工作计划与汇报撰写）。
+1.  `work-summary`（部门工作总结、工作计划与汇报撰写）。
 
 ## 四、应用价值总结
 

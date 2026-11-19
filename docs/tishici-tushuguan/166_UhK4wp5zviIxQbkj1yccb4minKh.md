@@ -1,3 +1,4 @@
+
 # Claude Prompt: 春联
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/S0uQd2X7WoNHDHxOFWlcWtUXnjf](https://vxc3hj17dym.feishu.cn/docx/S0uQd2X7WoNHDHxOFWlcWtUXnjf)
@@ -63,4 +64,3 @@
 ;; 5. 横批简洁有力，点明主题
 
 请基于这个思维模式来创作春联，确保作品既符合传统格律，又富有新意。
-```

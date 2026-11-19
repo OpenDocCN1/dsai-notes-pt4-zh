@@ -1,10 +1,11 @@
+
 # 图书资源
 
 > 来源：[https://langgptai.feishu.cn/docx/D7CkdtvCAoGJ25xZr5Oc34gznqe](https://langgptai.feishu.cn/docx/D7CkdtvCAoGJ25xZr5Oc34gznqe)
 
 > 感谢您通过《智能体设计指南》《豆包高效办公》《Kimi高效办公》这3本书与我们取得联系，无论您是否购买了这3本书，都欢迎您享用我们精心为您准备的数字资源，一起在AI时代学习、交流和成长。
 
-# 一、图书介绍
+## 一、图书介绍
 
 如果您还没有购买图书，可以通过下面的二维码购买。
 
@@ -13,7 +14,6 @@
 建议：如果您常使用多媒体、绘画，则选购豆包；如果您常使用长文本、PPT，则选购kimi。
 
 ![](img/a847352e25380c9d3e3510dfef4fb40b.png)
-
 
 ![](img/5cc23e71d440e0066a39f5d9ee3e2d7d.png)
 
@@ -33,23 +33,23 @@
 
 ![](img/6127a80f3e76479372de0530f152622a.png)
 
-# 二、图书福利
+## 二、图书福利
 
-## **福利一：黄金提示词模板**
+### 福利一：黄金提示词模板
 
-> **福利一：****黄金提示词模板**
+> 福利一：黄金提示词模板
 
 > [提示词素材库](https://langgptai.feishu.cn/wiki/EBfGwoQwriOuhIkM0aRc4NlLnqf?from=from_copylink)
 
 [提示词素材库](https://langgptai.feishu.cn/wiki/EBfGwoQwriOuhIkM0aRc4NlLnqf?table=tblFIGviFM9STiQp&view=vewGONH5qF)分浏览器无法显示，可使用此链接：
 
-## **福利二：AI绘画词典库**
+### 福利二：AI绘画词典库
 
-> **福利二：AI绘画词典库**
+> 福利二：AI绘画词典库
 
 https://flowus.cn/share/05e2f69c-15be-47b5-b60e-9b3025784a6a
 
-## 福利三：豆包书籍附赠AI绘画提示词生成器
+### 福利三：豆包书籍附赠AI绘画提示词生成器
 
 > 福利三：豆包书籍附赠AI绘画提示词生成器
 
@@ -100,7 +100,7 @@ https://flowus.cn/share/05e2f69c-15be-47b5-b60e-9b3025784a6a
 画面视角：[输入视角，如：全景、俯视、仰视、特写等]
 ```
 
-## 福利四：Excel VBA 批量AI任务处理工具
+### 福利四：Excel VBA 批量AI任务处理工具
 
 > 福利四：Excel VBA 批量AI任务处理工具
 
@@ -110,56 +110,75 @@ https://pan.baidu.com/s/19QGDWZeBfX_SjVRJhLDcFg?pwd=vtkz
 
 提取码: vtkz
 
-## 福利五：职场人的高效办公神器（办公工具集网站）
+### 福利五：职场人的高效办公神器（办公工具集网站）
 
 > 福利五：职场人的高效办公神器（办公工具集网站）
 
 链接：[www.prowork.top](http://www.prowork.top)
 
-## 福利六：适配推理大模型的提示词模板
+### 福利六：适配推理大模型的提示词模板
 
 > 福利六：适配推理大模型的提示词模板
 
-多维表格（Yjyiby1cxaX42esdM6IcpLtAnge_tblsONVLOgIzUMqY）
+多维表格（`Yjyiby1cxaX42esdM6IcpLtAnge_tblsONVLOgIzUMqY`）
 
-## **福利七：AI 知识库**
+### 福利七：AI 知识库
 
-> **福利七：****AI 知识库**
+> 福利七：AI 知识库
 
-1.  [⭐ 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)
+1. [⭐ 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)
 
-1.  [通往AGI之路](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
+1. [通往AGI之路](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
 
-1.  [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc)
+1. [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc)
 
-1.  [AIGCLINK：AI定制落地解决方案库](https://trx769zfgq.feishu.cn/wiki/LxpHw7iyuiX66FkebN0ceQtFnVb)
+1. [AIGCLINK：AI定制落地解决方案库](https://trx769zfgq.feishu.cn/wiki/LxpHw7iyuiX66FkebN0ceQtFnVb)
 
 高质量 AI 资源目录
 
 | 名称 | 介绍 | 地址 |
+
 | --- | --- | --- |
+
 | LangGPT 社区 | 国内最大的结构化提示词社区 | [langgpt.ai](http://langgpt.ai) |
+
 | 通往AGI之路 | 国内最大的AI开源社区 | https://www.waytoagi.com/zh |
+
 | 数字生命卡兹克 | AI自媒体，AI TOP KOL，努力分享一些很新、很酷的AI干货 | 全网ID: 数字生命卡兹克 |
+
 | 智谱学习中心 | 大模型工程师体系化培养 | https://learn.chatglm.cn/ |
+
 | 智谱 AI 应用知识库 | 智谱官方AI内容知识库，帮你更好地了解智谱，用好智谱 | [h](https://zhipu-ai.feishu.cn/wiki/space/7298282925865533468)ttps://zhipu-ai.feishu.cn/wiki/space/7298282925865533468 |
+
 | AIGCLink 社区 | AI 落地解决方案库 | [h](https://trx769zfgq.feishu.cn/wiki/LxpHw7iyuiX66FkebN0ceQtFnVb)ttps://trx769zfgq.feishu.cn/wiki/LxpHw7iyuiX66FkebN0ceQtFnVb |
+
 | Llama中文社区 | Llama模型、技术和爱好者的家园 | https://llama.family/wiki |
+
 | FastGPT | 全球知名的开源 AI 智能体构建平台 | https://github.com/labring/FastGPT |
+
 | 硅基流动 | 国内口碑大模型云平台 | https://siliconflow.cn/ |
+
 | 刘润 · 进化岛 | 提供最新的AI商业洞察。 | 👸号：进化岛 |
+
 | 得到 · AI学习圈 | AI应用大爆发，前沿课程抱回家 | 得到APP |
+
 | 提示词图书馆 | 基于个人收藏和教学目的收录的优秀的提示词创作者的开源 Prompt | [h](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc)ttps://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc |
+
 | 清华大模型通识课 | “迈向通用的人工智能”开放课程 | https://maic.chat/ |
+
 | 赛博禅心 | 面向 AI 从业者提供 AI 行业的精准资讯，国内唯一参与OpenAI 发布活动的媒体。 | 👸号：赛博禅心 |
+
 | 云中江树 | 关于提示词你需要知道的一切。 | 👸号：云中江树 |
+
 | 李继刚 | 李继刚的开源prompt | 👸号：李继刚 |
+
 | 甲木 | Prompt，AI Agent，致力于分享AI前沿科技 | 👸号：甲木未来派 |
+
 | 小七姐 | AI 提示词知识分享 | 👸号：夜航星小七姐 |
 
-## **福利八：线下发布会干货分享**
+### 福利八：线下发布会干货分享
 
-> **福利八：线下发布会干货分享**
+> 福利八：线下发布会干货分享
 
 完整直播回放：视频号「结构词AI」 -> 直播回放 -> 智能体设计指南新书发布
 
@@ -189,28 +208,23 @@ https://pan.baidu.com/s/19QGDWZeBfX_SjVRJhLDcFg?pwd=vtkz
 
 [与大模型的语言游乐场0327.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RxzhbNadkozLwaxhDG6cErdTnSb)
 
-## 福利九：配套电子资源 AI 知识库
+### 福利九：配套电子资源 AI 知识库
 
 > 福利九：配套电子资源 AI 知识库
 
 用🛰️扫码即可加入知识库，用 DeepSeek 自由问答~
 
-## **福利10：6节直播课**
+### 福利10：6节直播课
 
-> **福利10：6节直播课**
-
+> 福利10：6节直播课
 
 [1、从克隆自己到自动化办公_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sux3bk322ojETSxYYZicbAr8noc)
 
-
 [2、学会与AI对话_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AwcvbtE6jogNBdx2ZEdcmTIGnUg)
-
 
 [3、DeepSeek推理大模型与通用大模型_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CNpHbRFQAotDgdxrf8HcC4oyngY)
 
-
 [4、AI辅助office办公自动化_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NUGibJ6MRo291lxQVdIcSagAnfc)
-
 
 [5、AI辅助Python批量办公自动化_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXS1bLsttoWElEx1LKqcja9Fnpd)
 
@@ -218,4 +232,4 @@ https://pan.baidu.com/s/19QGDWZeBfX_SjVRJhLDcFg?pwd=vtkz
 
 [6、大模型API的调用_batch.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jam7boUezoz2zBxObrMc4J73nif)
 
-![](img/b6f83dc99b7f782f873d3c762014c24d.png)
+![](img/b6f83dc99b782f873d3c762014c24d.png)

@@ -1,20 +1,21 @@
-# 🎁【快速上手】必看！Midjouney指令大全
+
+# 🎁【快速上手】必看！Midjourney指令大全
 
 > 来源：[https://chengchaungai.feishu.cn/docx/Tu2Udo2AioTLePxqISjcDlGgnIg](https://chengchaungai.feishu.cn/docx/Tu2Udo2AioTLePxqISjcDlGgnIg)
 
 ![](img/267af9cb97ca5c069483f4879e7e374c.png)
 
-————**选择人工智能，链接无限未来**————
+————选择人工智能，链接无限未来———— 
 
-本文编辑:**JUGO** **  ****  **                                                         👸号：橙创AI
+本文编辑：JUGO                                                          👸号：橙创AI
 
 ![](img/4f25358dcb5d4f41d81342ee8b7505e0.png)
 
 ![](img/b0a448270d791a63e8178a713da62500.png)
 
-**进入👉 **[🍊橙创AI知识库（首页）](https://ix9q8jjj4ug.feishu.cn/wiki/DOsXwmRDaibJVUkDSHKcYbhmn0f)**获取更多A****IGC内****容👈**
+进入👉 [🍊橙创AI知识库（首页）](https://ix9q8jjj4ug.feishu.cn/wiki/DOsXwmRDaibJVUkDSHKcYbhmn0f)获取更多AIGC内容👈
 
-> **查阅、整理和输出教程属实**[**不易**](https://ki6j1b0d92h.feishu.cn/wiki/wikcnOTLuqHXX6ZJ1oWEBGbd9zf?from=from_copylink)，觉得这篇教程对你有所帮助的话，不妨分享给更多需要的人呗😊
+> 查阅、整理和输出教程属实[不易](https://ki6j1b0d92h.feishu.cn/wiki/wikcnOTLuqHXX6ZJ1oWEBGbd9zf?from=from_copylink)，觉得这篇教程对你有所帮助的话，不妨分享给更多需要的人呗😊
 
 您可以在Discord上通过输入命令与 Midjourney 机器人进行交互。命令用于创建图像、更改默认设置、监视用户信息和执行其他任务。
 
@@ -22,13 +23,13 @@ Midjourney 命令可以在任何 Bot 频道中使用，在已允许Midjourney Bo
 
 ## 命令列表
 
-### /ask
+### `/ask`
 
 得到一个问题的答案。
 
 ---
 
-### /blend
+### `/blend`
 
 混合
 
@@ -36,21 +37,21 @@ Midjourney 命令可以在任何 Bot 频道中使用，在已允许Midjourney Bo
 
 ---
 
-### /daily_theme
+### `/daily_theme`
 
 每日主题
 
-切换 #daily-theme 频道更新的通知提示
+切换 `#daily-theme` 频道更新的通知提示
 
 ---
 
-### /fast
+### `/fast`
 
 切换到快速模式。
 
 ---
 
-### /help
+### `/help`
 
 帮助
 
@@ -58,13 +59,13 @@ Midjourney 命令可以在任何 Bot 频道中使用，在已允许Midjourney Bo
 
 ![](img/ca1091aa8469482395142b1573c47ff7.png)
 
-// 帮助
+`// 帮助`
 
 shows help for the bot
 
 为机器人提供帮助。
 
-**GETTING STARTED? READ T**HE QUICK START GUIDE
+GETTING STARTED? READ THE QUICK START GUIDE
 
 #### 开始？阅读快速入门指南。
 
@@ -78,7 +79,7 @@ Still having trouble? Post your question to a support channel in https://discord
 
 仍然有困难吗？请在https://discord.gg/midjourney的支持频道中发布您的问题。
 
-**WEBSITE**
+WEBSITE
 
 #### 网站
 
@@ -86,25 +87,25 @@ View all your images and access your account on https://www.midjourney.com/app/
 
 查看您的所有图片并访问您的账户，请访问https://www.midjourney.com/app/。
 
-**BASIC COMMANDS**
+BASIC COMMANDS
 
 #### 基本指令
 
-/imagine**  **Creates an image from text
+`/imagine` Creates an image from text
 
 创建一个由文本生成的图像。
 
-/info  Shows information about your profile and plan and usage.
+`/info` Shows information about your profile and plan and usage.
 
 显示有关您的个人资料、计划和使用情况的信息。
 
-/subscribe  Get a link to the subscription page
+`/subscribe` Get a link to the subscription page
 
 获取订阅页面链接
 
-Full command list a[nd documentation at https](https://docs.midjourney.com/docs/command-list)://docs.midjourney.com/docs/command-list
+Full command list and documentation at [https://docs.midjourney.com/docs/command-list](https://docs.midjourney.com/docs/command-list)
 
-完整的命令列表和文档请查阅 [https://docs.midjourney.c](https://docs.midjourney.com/docs/command-list)om/docs/command-list
+完整的命令列表和文档请查阅 [https://docs.midjourney.com/docs/command-list](https://docs.midjourney.com/docs/command-list)
 
 EXTRA OPTIONS
 
@@ -116,9 +117,9 @@ Parameters are options added to the end of your prompt that change how the image
 
 Read about parameters and advanced prompting at
 
-[了解有关参数和高级提示的内容，请阅读：https://](https://docs.midjourney.com/docs/parameter-list)docs.midjourney.com/docs/parameter-list 参数列表
+[了解有关参数和高级提示的内容，请阅读：参数列表](https://docs.midjourney.com/docs/parameter-list)
 
-**DIRECT MESSAGES**
+DIRECT MESSAGES
 
 #### 私信
 
@@ -126,9 +127,9 @@ Subscribers can work in their Direct Messages with the bot.
 
 订阅者可以通过直接消息与机器人进行工作。
 
-Click--> @Midjourney Bot to message the bot.
+Click--> `@Midjourney Bot` to message the bot.
 
-点击--> @Midjourney 机器人发送消息。
+点击--> `@Midjourney 机器人` 发送消息。
 
 Remember to Right-click on the server icon -> Privacy settings -> Allow direct messages
 
@@ -138,29 +139,27 @@ Images generated in DMs are still publicly visible on the website.
 
 私信中生成的图像仍可在网站上公开查看。
 
-**OTHER**
+OTHER
 
 #### 其他
 
-+   You can cancel or delete a generation by reacting with :x:
++   You can cancel or delete a generation by reacting with `:x:`
 
 您可以通过点 ❌ 来取消或删除一个生成任务。
 
-+   You can add an image to favorites by reacting with :star:
++   You can add an image to favorites by reacting with `:star:`
 
 +   你可以用 ⭐️ 将图片添加到收藏夹中。
 
-+   You can get a image sent to your DMs by reacting with  :envelope:
++   You can get a image sent to your DMs by reacting with `:envelope:`
 
 你可以通过使用 📧 表情符号回应来获得一张图像发送到你的DM中。
 
-+   You can add image urls to your message to use them as 'image prompts'
-
-您可以添加图像URL到您的信息中，以将它们用作'图像提示'. [https://docs.midjourney.co](https://docs.midjourney.com/docs/image-prompts)m/docs/image-prompts
++   You can add image urls to your message to use them as [图像提示](https://docs.midjourney.com/docs/image-prompts)
 
 ---
 
-### /imagine
+### `/imagine`
 
 想象
 
@@ -168,7 +167,7 @@ Images generated in DMs are still publicly visible on the website.
 
 ---
 
-### /info
+### `/info`
 
 信息
 
@@ -176,11 +175,11 @@ Images generated in DMs are still publicly visible on the website.
 
 ![](img/9c2a57de527c30b28a0c92fd86a6a55a.png)
 
-**查看您的个人资料信息。**
+查看您的个人资料信息。
 
-Your info - uwings#1930
+Your info - `uwings#1930`
 
-您的信息 - uwings＃1930
+您的信息 - `uwings＃1930`
 
 Subscription: Standard (Active monthly, renews next on 2023年4月9日凌晨12点02分)
 
@@ -224,7 +223,7 @@ go to your feed
 
 ---
 
-### /stealth
+### `/stealth`
 
 隐身
 
@@ -232,7 +231,7 @@ Pro计划订阅者：切换到隐形模式
 
 ---
 
-### /public
+### `/public`
 
 公开模式
 
@@ -240,7 +239,7 @@ Pro计划订阅者：切换到隐形模式
 
 ---
 
-### /subscribe
+### `/subscribe`
 
 订阅
 
@@ -262,11 +261,11 @@ open subscription page
 
 打开订阅页面
 
-1.  订阅 stand。。。。。
+1. 订阅 stand。。。。。
 
 ---
 
-### /settings
+### `/settings`
 
 设置
 
@@ -298,15 +297,15 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 公开模式 | 隐身模式(4) | 混合模式(5) | 快速模式 | 轻松模式(6)
 
-1.  aaa
+1. aaa
 
-1.  bbb
+1. bbb
 
-1.  ccc
+1. ccc
 
 ---
 
-### /prefer option
+### `/prefer option`
 
 首选项
 
@@ -314,7 +313,7 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 ---
 
-### /prefer option list
+### `/prefer option list`
 
 首选项列表
 
@@ -322,7 +321,7 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 ---
 
-### /prefer suffix
+### `/prefer suffix`
 
 首选 后缀
 
@@ -330,7 +329,7 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 ---
 
-### /show
+### `/show`
 
 展示
 
@@ -338,7 +337,7 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 ---
 
-### /relax
+### `/relax`
 
 放松模式
 
@@ -346,7 +345,7 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 ---
 
-### /remix
+### `/remix`
 
 重混
 
@@ -356,19 +355,19 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 ### 不推荐使用
 
-/private (replaced with '/stealth')
+`/private` (replaced with `/stealth`)
 
-/pixels
+`/pixels`
 
-/idea
+`/idea`
 
 ---
 
 ### 分类名称（我是模板）
 
-#### /optionName 简单解释
+#### `/optionName` 简单解释
 
-+   示例： /optionName params
++   示例： `/optionName` `params`
 
 +   结果描述 / 示例： relax mode off
 
@@ -382,24 +381,16 @@ Public mode | Stealth mode | Remix mode | Fast mode | Relax mode
 
 Midjourney 命令可以在任何 Bot 频道中使用，在已允许Midjourney Bot 操作的私人Discord 服务器上，或在与Midjourney Bot 的直接消息中使用。
 
-您可以在Discord上通过输入命令与 Midjourney 机器人进行交互。命令用于创建图像、更改默认设置、监视用户信息和执行其他任务。
+> 关注👸号，加入AI实战交流群，掌握全面专业的行业资讯、工具分享、变现指南和实战教程，开启你的AI智慧之旅👇👇
 
-Midjourney 命令可以在任何 Bot 频道中使用，在已允许Midjourney Bot 操作的私人Discord 服务器上，或在与Midjourney Bot 的直接消息中使用。
-
-您可以在Discord上通过输入命令与 Midjourney 机器人进行交互。命令用于创建图像、更改默认设置、监视用户信息和执行其他任务。
-
-Midjourney 命令可以在任何 Bot 频道中使用，在已允许Midjourney Bot 操作的私人Discord 服务器上，或在与Midjourney Bot 的直接消息中使用。
-
-> 关注**👸号**，加入**AI****实战交流群**，掌握全面专业的**行业资讯**、**工具分享**、**变现指南**和**实战教程**，开启你的AI智慧之旅👇👇
-
-联系🛰️**JUGO737Y****（备注来意）**
+联系🛰️JUGO737Y（备注来意）
 
 ![](img/138c4a7bee6d343ce4743efb9a0942ba.png)
 
-👸号：**橙创****AI**
+👸号：橙创AI
 
 ![](img/3f10b3d1154fe699c10e0f9f92d1d1f3.png)
 
-**群聊二维码**：
+群聊二维码：
 
 ![](img/565990c3166fa96705285e3c45bf3418.png)

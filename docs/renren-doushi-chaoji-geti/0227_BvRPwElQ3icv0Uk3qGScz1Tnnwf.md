@@ -1,6 +1,8 @@
+
+
 # 【从0开始做油管】13天开通YouTube YPP，从0到1月入过万的自动化实操记录
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/GTFQdNOFLosP3VxCuDqc6UOTnVg](https://xuqiwei1986.feishu.cn/docx/GTFQdNOFLosP3VxCuDqc6UOTnVg)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/GTFQdNOFLosP3VxCuDqc6UOTnVg`
 
 我在赚钱总共发过4篇帖 4篇全部都是精华帖
 
@@ -32,15 +34,13 @@
 
 ---
 
-# 零：写在前面
+## 零：写在前面
 
 今天做这个分享，
 
-1.  是给过去的自己做一个总结，
-
-1.  是给想做AI+YouTube的普通人一点参考，
-
-1.  是想拿个龙珠，希望能看到更多的前路和可能性
+1. 是给过去的自己做一个总结，
+1. 是给想做AI+YouTube的普通人一点参考，
+1. 是想拿个龙珠，希望能看到更多的前路和可能性
 
 这篇帖有近4万字，是一篇大长篇，你将跟随我的视角，
 
@@ -50,11 +50,9 @@
 
 > 看完这篇的人，你将得到
 
-1.  一个完整的AI+YouTube变现实操路径：如何从0粉0播新号到月入过万
-
-1.  从0到1的自动化心得及全部代码：我是如何将每天十几个小时的工作量压缩到1分钟以内的
-
-1.  我从0到1的做事心法：这才是重中之重
+1. 一个完整的AI+YouTube变现实操路径：如何从0粉0播新号到月入过万
+1. 从0到1的自动化心得及全部代码：我是如何将每天十几个小时的工作量压缩到1分钟以内的
+1. 我从0到1的做事心法：这才是重中之重
 
 在开始下面的故事以前，我要说一句掏心窝子的话：
 
@@ -88,17 +86,17 @@
 
 下面是过去几个月，我自己做Youtube纯AI赛道的一点成绩：
 
-1.  24年11月1日，我从0开始，发第一个作品，13天，账号1达成千粉4000小时，开通高级Ypp；
+1. 24年11月1日，我从0开始，发第一个作品，13天，账号1达成千粉4000小时，开通高级Ypp；
 
 ![](img/e0e1507bc6d9d133e95504c3c1c960fa.png)
 
-1.  仍然是从0开始，账号2从24年11月25、账号3从12月3日发第一个作品，这两个账号也达成了高级Ypp，耗时长一点，一个35天，一个85天；
+1. 仍然是从0开始，账号2从24年11月25、账号3从12月3日发第一个作品，这两个账号也达成了高级Ypp，耗时长一点，一个35天，一个85天；
 
 ![](img/d4e94ad093f2fb6f806773e741b4b252.png)
 
 ![](img/ad7b3c293564769cf7fafb1d467475db.png)
 
-1.  目前跑的最高的一个作品，就是两周前的事，给我赚了1000多刀，至今仍然在给量；
+1. 目前跑的最高的一个作品，就是两周前的事，给我赚了1000多刀，至今仍然在给量；
 
 ![](img/b9daa8203ae7e3bb12bf917edd9bf93a.png)
 
@@ -156,7 +154,7 @@
 
 ---
 
-# 一：赚钱“术”之一：只做你感兴趣的领域
+## 一：赚钱“术”之一：只做你感兴趣的领域
 
 一切都是来源于此，兴趣，就是万物的原点，
 
@@ -168,11 +166,9 @@
 
 我感兴趣的点在于：
 
-1.  自媒体赚钱，不受地点时间限制（上班累的要死）
-
-1.   “可以不受国内繁文缛节的管控”（之前做AI副业被抖音管控的要死）
-
-1.  我想做“不出镜、不出声、不找素材、不写文案” 还能赚钱的东西（之前出镜做母婴号累的要死）
+1. 自媒体赚钱，不受地点时间限制（上班累的要死）
+1. “可以不受国内繁文缛节的管控”（之前做AI副业被抖音管控的要死）
+1. 我想做“不出镜、不出声、不找素材、不写文案” 还能赚钱的东西（之前出镜做母婴号累的要死）
 
 那什么才是可以来钱、还能不出镜、不出声、不找素材、不写文案，还不受国内管控的事情呢？
 
@@ -188,7 +184,7 @@ YouTube+AI视频+AI配音+AI文本，完美适配
 
 我在YouTube上随便刷了刷 偶然碰到的一个博主 就是下面这位
 
-奇幻研究所https://www.youtube.com/@qihuanyanjiu/videos
+奇幻研究所`https://www.youtube.com/@qihuanyanjiu/videos`
 
 24年11月的时候 他大部分的视频播放，都有5-10万+
 
@@ -208,11 +204,11 @@ YouTube+AI视频+AI配音+AI文本，完美适配
 
 就是下面这种露脸的真人口播号 播放数据更是高到离谱的几十万甚至上百万
 
-https://www.youtube.com/@seeker7603
+`https://www.youtube.com/@seeker7603`
 
-https://www.youtube.com/@wenzhaostudio
+`https://www.youtube.com/@wenzhaostudio`
 
-https://www.youtube.com/@emmashram
+`https://www.youtube.com/@emmashram`
 
 ![](img/703b62c2f73058ac4571250d5ba48c93.png)
 
@@ -222,9 +218,8 @@ https://www.youtube.com/@emmashram
 
 看得多了，我发现他们的视频当中，有两个领域是播放量最高的，
 
-1.  宗教类，是佛教和基督教
-
-1.  预言类，是一些危言耸听的道听途说
+1. 宗教类，是佛教和基督教
+1. 预言类，是一些危言耸听的道听途说
 
 所以，我的三个Ypp账号，
 
@@ -234,7 +229,7 @@ https://www.youtube.com/@emmashram
 
 ---
 
-# 二：赚钱“术”之二：抄出一个MVP
+## 二：赚钱“术”之二：抄出一个MVP
 
 所有生意的本质都是抄，别想着创什么新，
 
@@ -262,7 +257,7 @@ https://www.youtube.com/@emmashram
 
 再后来 我甚至还招了总结了SOP招了兼[改写细节](https://avbdmra8fx.feishu.cn/docx/Qhy3da0tno7RJ9xkSJpcEeRinPb)还帮我写，感兴趣的可以直接看我的SOP
 
-AI 配音是找的免费的https://ttsmaker.cn/
+AI 配音是找的免费的`https://ttsmaker.cn/`
 
 他好一点的音色 转一次有500文本的限制 转一次需要几分钟
 
@@ -300,40 +295,29 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 
 ---
 
-# 三：赚钱“术”之三：具象化你的需求
+## 三：赚钱“术”之三：具象化你的需求
 
 到了这里，你就要具象化你的需求了，
 
 > 什么是具象化的需求？
-
+>
 > 比如说你有一段文本，你需要隔几句话就均匀一些的将一小段文本另起一行，
-
+>
 > 这算是一个需求，但这不是具象化的需求，
-
 >
-
 > 因为你会遇到很多逻辑上的漏洞，比如说：
-
-1.  “均匀”是多少？是按照字数算还是标点算？
-
-1.  如果按字数算，多少字合适？
-
-1.  如果到了既定的字数，直接另起一行导致一句完整的话被截断怎么办？
-
-1.  如果按标点算，要从哪些标点另起一行？
-
-1.  有的标点段落长有的标点段落短，搞下来长短不一怎么办？
-
 >
-
+> 1. “均匀”是多少？是按照字数算还是标点算？
+> 1. 如果按字数算，多少字合适？
+> 1. 如果到了既定的字数，直接另起一行导致一句完整的话被截断怎么办？
+> 1. 如果按标点算，要从哪些标点另起一行？
+> 1. 有的标点段落长有的标点段落短，搞下来长短不一怎么办？
+>
 > 这些就是逻辑漏洞，所以如果具象化的需求 ，那就是
-
-1.  在每100字的位置，另起一行，
-
-1.  如果100字的位置不是标点符号，就向后顺延，直到找到下列标点的任意一个“。！？，；” 再另起一行
-
 >
-
+> 1. 在每100字的位置，另起一行，
+> 1. 如果100字的位置不是标点符号，就向后顺延，直到找到下列标点的任意一个“。！？，；” 再另起一行
+>
 > 这样才是具象化的需求，如果你还不会这样说话，你务必需要从现在开始刻意练习
 
 自动化，是因人而异的，每个人/每个项目的需求都不一样，
@@ -342,15 +326,11 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 
 对我来说，我的需求：
 
-1.  我想要能一键批量下载YouTube，因为他每天消耗我半小时
-
-1.  我想要能一键伪原创成千上万的文本，因为他每天消耗我两三个小时
-
-1.  我想要能一键给文本配好几百上千张配图，因为他每天消耗我两三个小时
-
-1.  我想要能一键给文本配好配音，因为他每天消耗我一两个小时
-
-1.  我想要能一键剪辑让声音和图片匹配，还要有关键帧动画过度的效果，因为他每天消耗我三四个小时
+1. 我想要能一键批量下载YouTube，因为他每天消耗我半小时
+1. 我想要能一键伪原创成千上万的文本，因为他每天消耗我两三个小时
+1. 我想要能一键给文本配好几百上千张配图，因为他每天消耗我两三个小时
+1. 我想要能一键给文本配好配音，因为他每天消耗我一两个小时
+1. 我想要能一键剪辑让声音和图片匹配，还要有关键帧动画过度的效果，因为他每天消耗我三四个小时
 
 这就是我的需求，这些工序原本每天要消耗我七八个小时甚至更多，
 
@@ -369,72 +349,49 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 直到你问的清晰到不能再细化了为止
 
 > 比如说，我想要一键剪辑，
-
+>
 > 让我的文本声音和图片匹配，图片还要有关键帧和动画转场的效果，
-
 >
-
 > 那么问自己
-
+>
 > 你要的是怎样匹配？要的是怎样的关键帧和转场效果？
-
 >
-
 > 一张图可以配一两句话，但也不绝对，句子太长了也不行，太短了也不行，要合适一点
-
 > 关键帧就是那种让图片可以匀速的上下左右移动，外加放大缩小效果的东西
-
 > 动画转场就是闪黑 闪白 翻页 淡入 淡出 那种图片和图片之间的过渡效果
-
 >
-
 > 那么再问自己
-
+>
 > 什么是合适？什么是匀速？到底是要向上下左右哪个方向移动？到底是要放大还是缩小？放多大缩多小？你要的是哪些转场效果？转场效果的持续时长是多少？
-
 >
-
 > 首先，什么是合适呢？在仔细观察对标之后，你能发现，每张图片的展示时长是有区间的，有的长有的短，但图片的开始展示和结束展示时间 一定和字幕的开始和结束时间一致，
-
+>
 > 也就是说，一张图片的开始展示，一定是和一段字幕一起开始，一张图片结束展示，也一定是和一段字幕一起结束，图片切换会发生在字幕的自然断点处，这样观感上会好。
-
 >
-
 > 那么什么是合适？我的“合适”的逻辑就是：
-
-1.  每张图片的最小展示时间为 5 秒
-
-1.  先找到5秒后第一个字幕的结束点，他就是第一个图片的结束展示时间
-
-1.  无缝衔接展示下一张图片，然后重复上面两点
-
 >
-
+> 1. 每张图片的最小展示时间为 5 秒
+> 1. 先找到5秒后第一个字幕的结束点，他就是第一个图片的结束展示时间
+> 1. 无缝衔接展示下一张图片，然后重复上面两点
+>
 > 那么关键帧呢？到底是要向上下左右哪个方向移动？到底是要放大还是缩小？放多大缩多小？
-
-1.  给每个图片都打上两个关键帧点，一个在开始时间，一个在结束时间
-
-1.  位移范围设置为 ±0.21（约为画面宽度/高度的 21%），这样就是放大和缩小区间，
-
-1.  随机选择左、右、上、下的任意一个方向
-
+>
+> 1. 给每个图片都打上两个关键帧点，一个在开始时间，一个在结束时间
+> 1. 位移范围设置为 ±0.21（约为画面宽度/高度的 21%），这样就是放大和缩小区间，
+> 1. 随机选择左、右、上、下的任意一个方向
+>
 > 这样所有的图片就都有了匀速的移动和放大缩小
-
 >
-
 > 那么要的是哪些转场效果？转场效果的持续时长是多少？
-
-1.  选择渐显、缩放、弹跳、雨刷四种效果
-
-1.  给每张图片之间都随机加上四种效果之一，持续时间是0.7秒
-
-> 这样所有的图片就都有了动画过渡
-
 >
-
+> 1. 选择渐显、缩放、弹跳、雨刷四种效果
+> 1. 给每张图片之间都随机加上四种效果之一，持续时间是0.7秒
+>
+> 这样所有的图片就都有了动画过渡
+>
 > 这就是具象化的需求
 
-# 四：赚钱“术”之四：开始提效
+## 四：赚钱“术”之四：开始提效
 
 要想提效 招兼职 定SOP招人帮我处理固然是一个办法 但来的人实在是水平太差（主要是发不起工资）
 
@@ -450,15 +407,11 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 
 我需要提效的关键节点 其实就是下面这些
 
-1.  YouTube文件批量下载
-
-1.  伪原创改写数万字的文本
-
-1.  将数万字的文本对应批量出图
-
-1.  数万字文本的配音生成
-
-1.  数百张图片和字幕BGM的剪辑拼接
+1. YouTube文件批量下载
+1. 伪原创改写数万字的文本
+1. 将数万字的文本对应批量出图
+1. 数万字文本的配音生成
+1. 数百张图片和字幕BGM的剪辑拼接
 
 在你具象化你的需求之后，你就可以拿着你的需求去找AI了
 
@@ -474,7 +427,7 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 
 这一个问题 打开了我新世界的大门
 
-他告诉我了一个东西叫做python
+他告诉我了一个东西叫做`python`
 
 你要知道 在这个时间点之前 我一行代码也没有写过
 
@@ -486,9 +439,9 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 
 于是我在AI的指导下
 
-人生中第一次打开了一个东西叫做terminal
+人生中第一次打开了一个东西叫做`terminal`
 
-打出了人生中第一个python+空格
+打出了人生中第一个`python` + 空格
 
 然后就收到了人生中第一个error报错
 
@@ -498,13 +451,13 @@ AI视频 那时候还没有AI视频 都是AI图片轮播 我是一段段文本�
 
 .....
 
-现在回头看 我知道这个东西叫做AI编程 叫做cursor 叫做windsurf
+现在回头看 我知道这个东西叫做AI编程 叫做`cursor` 叫做`windsurf`
 
 但在那时候 我p也不知道
 
 时至今日 仅仅几个月的时间 我在AI编程买的会员费超过100刀
 
-还不算我换了6个邮箱硬薅cursor免费额度的羊毛直到他BAN了我的IP
+还不算我换了6个邮箱硬薅`cursor`免费额度的羊毛直到他BAN了我的IP
 
 接下来关于自动化的内容 对没有需求的人来说 枯燥且乏味
 
@@ -524,25 +477,27 @@ AI编程基本等于没有门槛 只要你多用用就好
 
 请你去问AI 就能解决99%的问题
 
-## YouTube 批量下载自动化：从耗时半小时降低到小于1分钟
+### YouTube 批量下载自动化：从耗时半小时降低到小于1分钟
 
-首先 YouTube下载，我本来是用这种网页 https://yt1d.com/en306/
+首先 YouTube下载，我本来是用这种网页 `https://yt1d.com/en306/`
 
 问题是下载的又慢 又要看广告 只能1个1个的弄 还经常不稳定失效 特别的烦
 
-你接下来看到的 是我迭代了几十个版本后的YouTube下载py
+你接下来看到的 是我迭代了几十个版本后的YouTube下载`py`
 
 极其稳定 可批量下载 及视频的封面图
 
-只需要新建一个word 把你想要的视频链接塞到里面 运行即可 真的非常好用
+只需要新建一个`word` 把你想要的视频链接塞到里面 运行即可 真的非常好用
 
 当然你需要安装一些依赖 修改一些路径
 
-如果YouTube更改规则导致你下载失败 只需要一行简单的
 
-pip install -U yt-dlp
 
-就能升级到最新版 解决99%下载不了的问题
+# YouTube 批量下载与伪原创文本自动化
+
+## YouTube 批量下载
+
+如果YouTube更改规则导致你下载失败，只需要一行简单的 `pip install -U yt-dlp` 就能升级到最新版，解决99%下载不了的问题。
 
 ```
 import os
@@ -555,23 +510,23 @@ from docx import Document
 import yt_dlp
 
 def get_current_time():
-    &quot;&quot;&quot;获取当前时间的格式化字符串&quot;&quot;&quot;
-    return datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)
+    """获取当前时间的格式化字符串"""
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-def log_message(message, level=&quot;INFO&quot;):
-    &quot;&quot;&quot;打印带时间戳的日志&quot;&quot;&quot;
-    print(f&quot;[{get_current_time()}] [{level}] {message}&quot;)
+def log_message(message, level="INFO"):
+    """打印带时间戳的日志"""
+    print(f"[{get_current_time()}] [{level}] {message}")
 
 def read_youtube_links():
-    &quot;&quot;&quot;从桌面剪辑文件夹中的youtube.docx读取视频链接&quot;&quot;&quot;
+    """从桌面剪辑文件夹中的youtube.docx读取视频链接"""
     try:
         # 获取桌面剪辑文件夹路径
-        desktop_path = str(Path.home() / &quot;Desktop&quot;)
-        clips_folder = os.path.join(desktop_path, &quot;Youtube&quot;)
-        docx_path = os.path.join(clips_folder, &quot;youtube.docx&quot;)
+        desktop_path = str(Path.home() / "Desktop")
+        clips_folder = os.path.join(desktop_path, "Youtube")
+        docx_path = os.path.join(clips_folder, "youtube.docx")
         
         if not os.path.exists(docx_path):
-            log_message(f&quot;文件不存在: {docx_path}&quot;, &quot;ERROR&quot;)
+            log_message(f"文件不存在: {docx_path}", "ERROR")
             return None
             
         # 读取文档
@@ -581,73 +536,73 @@ def read_youtube_links():
         # 从每个段落中提取链接
         for para in doc.paragraphs:
             text = para.text.strip()
-            if &quot;youtube.com&quot; in text or &quot;youtu.be&quot; in text:
+            if "youtube.com" in text or "youtu.be" in text:
                 links.append(text)
                 
-        log_message(f&quot;从文档中读取到 {len(links)} 个链接&quot;)
+        log_message(f"从文档中读取到 {len(links)} 个链接")
         return links
         
     except Exception as e:
-        log_message(f&quot;读取文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+        log_message(f"读取文件失败: {str(e)}", "ERROR")
         return None
 
 def download_videos(links):
-    &quot;&quot;&quot;下载YouTube视频&quot;&quot;&quot;
+    """下载YouTube视频"""
     if not links:
-        log_message(&quot;没有找到要下载的链接&quot;, &quot;WARNING&quot;)
+        log_message("没有找到要下载的链接", "WARNING")
         return
     
     # 创建下载目录在剪辑文件夹中
-    desktop_path = str(Path.home() / &quot;Desktop&quot;)
-    output_dir = os.path.join(desktop_path, &quot;Youtube&quot;, &quot;YouTube下载&quot;)
+    desktop_path = str(Path.home() / "Desktop")
+    output_dir = os.path.join(desktop_path, "Youtube", "YouTube下载")
     os.makedirs(output_dir, exist_ok=True)
     
     # yt-dlp配置
     ydl_opts = {
-        &#x27;format&#x27;: &#x27;bestaudio/best&#x27;,
-        &#x27;paths&#x27;: {&#x27;home&#x27;: output_dir},
-        &#x27;postprocessors&#x27;: [{
-            &#x27;key&#x27;: &#x27;FFmpegExtractAudio&#x27;,
-            &#x27;preferredcodec&#x27;: &#x27;mp3&#x27;,
-            &#x27;preferredquality&#x27;: &#x27;192&#x27;,
+        'format': 'bestaudio/best',
+        'paths': {'home': output_dir},
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
         }, {
-            &#x27;key&#x27;: &#x27;FFmpegThumbnailsConvertor&#x27;,
-            &#x27;format&#x27;: &#x27;jpg&#x27;
+            'key': 'FFmpegThumbnailsConvertor',
+            'format': 'jpg'
         }],
-        &#x27;writethumbnail&#x27;: True,  # 下载缩略图
-        &#x27;outtmpl&#x27;: {
-            &#x27;default&#x27;: &#x27;%(title)s.%(ext)s&#x27;,
-            &#x27;thumbnail&#x27;: &#x27;%(title)s.%(ext)s&#x27;  # 缩略图文件名格式
+        'writethumbnail': True,  # 下载缩略图
+        'outtmpl': {
+            'default': '%(title)s.%(ext)s',
+            'thumbnail': '%(title)s.%(ext)s'  # 缩略图文件名格式
         },
-        &#x27;cookiesfrombrowser&#x27;: (&#x27;chrome&#x27;,),
-        &#x27;proxy&#x27;: &#x27;http://127.0.0.1:7890&#x27;,
-        &#x27;verbose&#x27;: True,
-        &#x27;no_warnings&#x27;: False,
-        &#x27;extract_flat&#x27;: False,
+        'cookiesfrombrowser': ('chrome',),
+        'proxy': 'http://127.0.0.1:7890',
+        'verbose': True,
+        'no_warnings': False,
+        'extract_flat': False,
         # 添加重试和错误处理选项
-        &#x27;retries&#x27;: 10,
-        &#x27;fragment_retries&#x27;: 10,
-        &#x27;file_access_retries&#x27;: 5,
-        &#x27;retry_sleep&#x27;: True,
-        &#x27;sleep_interval&#x27;: 3,
-        &#x27;max_sleep_interval&#x27;: 7,
-        &#x27;sleep_interval_requests&#x27;: 1,
+        'retries': 10,
+        'fragment_retries': 10,
+        'file_access_retries': 5,
+        'retry_sleep': True,
+        'sleep_interval': 3,
+        'max_sleep_interval': 7,
+        'sleep_interval_requests': 1,
         # 添加网络相关选项
-        &#x27;socket_timeout&#x27;: 30,
-        &#x27;http_chunk_size&#x27;: 10485760,  # 10MB
-        &#x27;buffersize&#x27;: 1024,
+        'socket_timeout': 30,
+        'http_chunk_size': 10485760,  # 10MB
+        'buffersize': 1024,
         # 添加地理位置绕过
-        &#x27;geo_bypass&#x27;: True,
-        &#x27;geo_bypass_country&#x27;: &#x27;US&#x27;,
+        'geo_bypass': True,
+        'geo_bypass_country': 'US',
         # 添加请求头
-        &#x27;http_headers&#x27;: {
-            &#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&#x27;,
-            &#x27;Accept&#x27;: &#x27;*/*&#x27;,
-            &#x27;Accept-Language&#x27;: &#x27;en-US,en;q=0.9&#x27;,
-            &#x27;Accept-Encoding&#x27;: &#x27;gzip, deflate&#x27;,
-            &#x27;Origin&#x27;: &#x27;https://www.youtube.com&#x27;,
-            &#x27;Referer&#x27;: &#x27;https://www.youtube.com/&#x27;,
-            &#x27;Connection&#x27;: &#x27;keep-alive&#x27;
+        'http_headers': {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': '*/*',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate',
+            'Origin': 'https://www.youtube.com',
+            'Referer': 'https://www.youtube.com/',
+            'Connection': 'keep-alive'
         }
     }
     
@@ -658,118 +613,106 @@ def download_videos(links):
         try:
             # 添加随机延时，避免被限制
             delay = random.uniform(2, 5)
-            log_message(f&quot;等待 {delay:.1f} 秒后开始下载...&quot;)
+            log_message(f"等待 {delay:.1f} 秒后开始下载...")
             time.sleep(delay)
             
-            log_message(f&quot;正在处理第 {i}/{total} 个视频...&quot;)
+            log_message(f"正在处理第 {i}/{total} 个视频...")
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 error_code = ydl.download([url])
                 
                 if error_code == 0:
                     success += 1
-                    log_message(f&quot;视频下载成功: {url}&quot;)
+                    log_message(f"视频下载成功: {url}")
                 else:
-                    log_message(f&quot;视频下载失败: {url}&quot;, &quot;ERROR&quot;)
+                    log_message(f"视频下载失败: {url}", "ERROR")
                     
         except Exception as e:
-            log_message(f&quot;下载失败: {str(e)}&quot;, &quot;ERROR&quot;)
-            log_message(f&quot;跳过视频: {url}&quot;, &quot;WARNING&quot;)
+            log_message(f"下载失败: {str(e)}", "ERROR")
+            log_message(f"跳过视频: {url}", "WARNING")
     
-    log_message(f&quot;下载完成! 成功: {success}/{total}&quot;)
+    log_message(f"下载完成! 成功: {success}/{total}")
 
 def main():
-    &quot;&quot;&quot;主函数&quot;&quot;&quot;
+    """主函数"""
     try:
-        log_message(&quot;开始运行YouTube下载程序&quot;)
+        log_message("开始运行YouTube下载程序")
         
         # 读取链接
         links = read_youtube_links()
         if links:
-            log_message(f&quot;成功读取 {len(links)} 个链接&quot;)
+            log_message(f"成功读取 {len(links)} 个链接")
             # 下载视频
             download_videos(links)
         else:
-            log_message(&quot;未能读取到任何链接&quot;, &quot;ERROR&quot;)
+            log_message("未能读取到任何链接", "ERROR")
             
     except KeyboardInterrupt:
-        log_message(&quot;用户中断下载&quot;, &quot;WARNING&quot;)
+        log_message("用户中断下载", "WARNING")
         sys.exit(1)
     except Exception as e:
-        log_message(f&quot;程序执行出错: {str(e)}&quot;, &quot;ERROR&quot;)
+        log_message(f"程序执行出错: {str(e)}", "ERROR")
         sys.exit(1)
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
-至此 YouTube批量下载的问题解决了
+至此 YouTube批量下载的问题解决了。
 
-我再也不用一个个的操作了 只需要批量粘贴对标的视频到word里
-
-然后运行代码 工作量直接从半小时降到了小于1分钟
-
-所有的对标就都下载到我指定的文件夹里了
+我再也不用一个个的操作了，只需要批量粘贴对标的视频到word里，然后运行代码，工作量直接从半小时降到了小于1分钟。所有的对标就都下载到我指定的文件夹里了。
 
 ---
 
 ## 伪原创文本自动化：从耗时1小时降低到小于1分钟
 
-这是最难的部分 因为这种AI视频 文本就是灵魂
+这是最难的部分，因为这种AI视频文本就是灵魂。
 
-特别是宗教类的内容 出处 释义 读法 文言文 每一样都不容易
+特别是宗教类的内容，出处、释义、读法、文言文，每一样都不容易。
 
-chatgpt4 4o mini claude3.5sonnect haiku 还有什么豆包 火山 MCP
+chatgpt4、4o mini、claude3.5sonnect、haiku，还有什么豆包、火山MCP，只要有的我全都试过。不论你怎么调教prompt，都没有办法写出合格的伪原创。
 
-只要有的我全都试过 不论你怎么调教prompt 都没有办法写出合格的伪原创
+所以我又问了AI，到底该怎么办。
 
-所以我又问了AI  到底该怎么办
+他给了我一个方案：Finetune Model。
 
-他给了我一个方案：Finetune Model
+这个东西，说是这个项目的灵魂也不为过。
 
-这个东西 说是这个项目的灵魂也不为过
+Finetune Model就是微调模型，具体的你可以看官方文档 `https://platform.openai.com/docs/guides/fine-tuning`。
 
-Finetune Model 就是微调模型 具体的你可以看官方文档
+简单来说，在这个项目里，他的作用就是你给他1篇原文+1篇你伪原创的改文，他就能学会你的文笔。你以后用这个模型，给他原文，他就能按照你的改法，给出伪原创的文章来。
 
-https://platform.openai.com/docs/guides/fine-tuning
+这个样本好搞，毕竟我之前人工精校了N篇伪原创。所以我给了他30组对照样本，训练费用只花了5刀。
 
-简单来说 在这个项目里 他的作用
+至于怎么训练这个模型，Openai的官网有详细教程（教程我一个字也看不懂也不需要懂，不会就问AI）。
 
-就是你给他1篇原文+1篇你伪原创的改文 他就能学会你的文笔
+这样改写出来的效果，可以说是全网最强，没有之一。
 
-你以后用这个模型 给他原文 他就能按照你的改法 给出伪原创的文章来
-
-这个样本好搞 毕竟我之前人工精校了N篇伪原创
-
-所以我给了他30组对照样本 训练费用只花了5刀
-
-至于怎么训练这个模型 Openai的官网有详细教程（教程我一个字也看不懂也不需要懂 不会就问AI）
-
-这样改写出来的效果 可以说是全网最强 没有之一
-
-然后 将下载好的文本 通过API调用的方式发送给模型 等待他写完返回 就可以了
+然后，将下载好的文本，通过API调用的方式发送给模型，等待他写完返回，就可以了。
 
 下面是改写文本的代码
 
-```
+
+
+```python
 from openai import OpenAI
 import os
 from docx import Document
 import string
 import time
 import tiktoken
-import openai  
+import openai
 import re
 import traceback
 
 class TextRewriter:
     def __init__(self):
-        &quot;&quot;&quot;初始化改写器&quot;&quot;&quot;
+        """初始化改写器"""
         # 初始化API客户端
         # 直接在代码中设置 API key
-        api_key = &quot;&quot;  # 请将此处替换为您的实际API密钥
+        api_key = ""  # 请将此处替换为您的实际API密钥
             
         self.openai_client = OpenAI(
-            base_url=&quot;https://api.openai.com/v1&quot;,
+            base_url="https://api.openai.com/v1",
             api_key=api_key
         )
         
@@ -781,83 +724,83 @@ class TextRewriter:
         
         # 改写幅度配置
         self.rewrite_ratio = {
-            &#x27;min&#x27;: 60,  # 最小改写幅度（百分比）
-            &#x27;max&#x27;: 85  # 最大改写幅度（百分比）
+            'min': 60,  # 最小改写幅度（百分比）
+            'max': 85  # 最大改写幅度（百分比）
         }
         
         # 翻译模式字符比例配置
         self.translation_ratio = {
-            &#x27;min&#x27;: 100,  # 最小字符比例（百分比）
-            &#x27;max&#x27;: 400  # 最大字符比例（百分比）
+            'min': 100,  # 最小字符比例（百分比）
+            'max': 400  # 最大字符比例（百分比）
         }
         
         # 英文到中文翻译字符比例配置
         self.en_to_cn_ratio = {
-            &#x27;min&#x27;: 20,  # 最小字符比例（百分比）
-            &#x27;max&#x27;: 100  # 最大字符比例（百分比）
+            'min': 20,  # 最小字符比例（百分比）
+            'max': 100  # 最大字符比例（百分比）
         }
         
         # 模型配置
         self.MODEL_CONFIG = {
             # 微调模型配置
-            &#x27;ft_model&#x27;: {
-                &#x27;name&#x27;: &quot;ft:gpt-4o-mini-2024-07-18:personal:&quot;,  # 模型名称
-                &#x27;temperature&#x27;: 0.9  # 温度参数
+            'ft_model': {
+                'name': "ft:gpt-4o-mini-2024-07-18:personal:",  # 模型名称
+                'temperature': 0.9  # 温度参数
             },
             # GPT-4模型配置
-            &#x27;gpt4o_model&#x27;: {
-                &#x27;name&#x27;: &quot;gpt-4o-mini-2024-07-18&quot;,  # 模型名称
-                &#x27;temperature&#x27;: {
-                    &#x27;default&#x27;: 0.75,  # 默认温度
-                    &#x27;translation&#x27;: 0.7,  # 翻译模式温度
-                    &#x27;min&#x27;: 0.2,  # 最小温度
-                    &#x27;step&#x27;: 0.1  # 每次重试减少的温度值
+            'gpt4o_model': {
+                'name': "gpt-4o-mini-2024-07-18",  # 模型名称
+                'temperature': {
+                    'default': 0.75,  # 默认温度
+                    'translation': 0.7,  # 翻译模式温度
+                    'min': 0.2,  # 最小温度
+                    'step': 0.1  # 每次重试减少的温度值
                 },
-                &#x27;max_length&#x27;: 16000,  # 最大长度
-                &#x27;max_tokens&#x27;: 16000  # 最大token数
+                'max_length': 16000,  # 最大长度
+                'max_tokens': 16000  # 最大token数
             }
         }
         
         # API配置
         self.claude_client = OpenAI(
-            base_url=&quot;&quot;,
-            api_key=&quot;&quot;
+            base_url="",
+            api_key=""
         )
         
         # ====== 提示词配置 ======
         # 英文基督教内容提示词
-        self.en_christian_prompt = &quot;&quot;&quot;You are a professional Christian content editor. Your task is to rewrite the given English text with the following requirements:
+        self.en_christian_prompt = """You are a professional Christian content editor. Your task is to rewrite the given English text with the following requirements:
 
 1. Content Requirements:
    - Maintain biblical accuracy
    - Make the language more vivid and easy to understand
 2. Improve the clarity and fluency of the article, which can be adjusted from the original text, and must be significantly different from the original text
 3. Correct all typos and grammatical errors, without any content in parentheses
-4. Only provide the rewritten content, without explanation&quot;&quot;&quot;
+4. Only provide the rewritten content, without explanation"""
 
         # 中文基督教内容提示词
-        self.cn_christian_prompt = &quot;&quot;&quot;你是一位基督教专家。你的任务是改写给定的文本，要求：
+        self.cn_christian_prompt = """你是一位基督教专家。你的任务是改写给定的文本，要求：
 1. 使语言更加生动易懂
 2. 改善文章的清晰度和流畅性，可以对原文进行删减和调整，要和原文明显不一样
 3. 修正所有错别字和语法错误，不要有括号内容
-4. 只提供改写后的内容，无需解释&quot;&quot;&quot;
+4. 只提供改写后的内容，无需解释"""
 
         # 通用内容提示词
-        self.general_prompt = &quot;&quot;&quot;你是一位内容编辑专家。你的任务是改写给定的文本，要求：
+        self.general_prompt = """你是一位内容编辑专家。你的任务是改写给定的文本，要求：
 1. 使语言更加生动易懂
 2. 改善文章的清晰度和流畅性，可对原文进行删减和调整，要和原文明显不一样，相似度不能高于5%
 3. 修正所有错别字和语法错误，不要有括号内容
-4. 只提供改写后的内容，无需解释&quot;&quot;&quot;
+4. 只提供改写后的内容，无需解释"""
 
         # 提取主题改写提示词
-        self.topic_extraction_prompt = &quot;&quot;&quot;你是一位内容编辑专家。你的任务是改写给定的文本，要求：
+        self.topic_extraction_prompt = """你是一位内容编辑专家。你的任务是改写给定的文本，要求：
 1. 将文本的大纲进行提取，要保证日期时间和引用内容的准确性
 2. 根据文章大纲进行重写，文章逻辑要清晰流畅
 3. 不要有错别字和语法错误，不要有括号内容
-4. 只提供改写后的内容，无需解释&quot;&quot;&quot;
+4. 只提供改写后的内容，无需解释"""
 
         # 西班牙语翻译提示词
-        self.spanish_prompt = &quot;&quot;&quot;Por favor, traduce el siguiente texto al español. Requisitos:
+        self.spanish_prompt = """Por favor, traduce el siguiente texto al español. Requisitos:
 1. Mantén el significado original y todos los detalles del texto
 2. Asegúrate de que la traducción sea precisa y completa
 3. Mantén un tono profesional y natural
@@ -866,10 +809,10 @@ class TextRewriter:
 6. La traducción debe ser fiel al original, sin omitir ni agregar información
 7. Utiliza expresiones naturales en español manteniendo el mismo nivel de formalidad
 
-Importante: La traducción debe ser detallada y mantener todos los matices del texto original.&quot;&quot;&quot;
+Importante: La traducción debe ser detallada y mantener todos los matices del texto original."""
 
         # 中文到英文翻译提示词
-        self.chinese_to_english_prompt = &quot;&quot;&quot;You are a professional translator. Your task is to translate the given Chinese text into English with the following requirements:
+        self.chinese_to_english_prompt = """You are a professional translator. Your task is to translate the given Chinese text into English with the following requirements:
 
 1. Translation Requirements:
    - Make the language vivid and easy to understand
@@ -879,17 +822,17 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
    - Maintain accuracy of all details and technical terms
    - Remove any content in parentheses or special symbols
    - Fix any typos or grammatical errors
-3. Only provide the translated content in English, without any explanations or notes&quot;&quot;&quot;
+3. Only provide the translated content in English, without any explanations or notes"""
 
         # 英文到中文翻译提示词
-        self.english_to_chinese_prompt = &quot;&quot;&quot;你是一位翻译改写专家。你的任务是将给定的文本翻译并微调，要求：
+        self.english_to_chinese_prompt = """你是一位翻译改写专家。你的任务是将给定的文本翻译并微调，要求：
 1. 使翻译后的语言更加生动易懂 符合中文语境
 2. 改善文章的清晰度和流畅性
 3. 修正所有错别字和语法错误，不要有括号内容
-4. 只提供改写后的内容，无需解释&quot;&quot;&quot;
+4. 只提供改写后的内容，无需解释"""
 
         # GPT-4 本地化改写提示词
-        self.gpt4_localization_prompt = &quot;&quot;&quot;You are a professional content editor. Your task is to rewrite the given Chinese text with the following requirements:
+        self.gpt4_localization_prompt = """You are a professional content editor. Your task is to rewrite the given Chinese text with the following requirements:
 
 1. Content Requirements:
    - Replace Chinese place names and person names noun concepts in the text,with common American names for better understanding by American audience
@@ -897,22 +840,22 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
 2. Improve the clarity and fluency of the article, which can be adjusted from the original text
 3. Correct all typos and grammatical errors, without any content in parentheses
 4. 在满足上述条件后，将中文全部翻译成英文
-5. Only provide the rewritten content, without explanation&quot;&quot;&quot;
+5. Only provide the rewritten content, without explanation"""
 
         # 第二轮改写提示词
-        self.general_prompt_round2 = &quot;&quot;&quot;你是一位内容编辑专家。你的任务是将给定的文本进行纠错，要求：
+        self.general_prompt_round2 = """你是一位内容编辑专家。你的任务是将给定的文本进行纠错，要求：
 1. 使语言更加易懂，修正所有错别字和语法错误
 2. 只提供改写后的内容，无需解释
-&quot;&quot;&quot;
+"""
 
         # 第二轮基督教内容提示词
-        self.cn_christian_prompt_round2 = &quot;&quot;&quot;你是一位基督教专家。你的任务是纠错给定的文本，要求：
+        self.cn_christian_prompt_round2 = """你是一位基督教专家。你的任务是纠错给定的文本，要求：
 1. 使语言更加易懂，修正所有错别字和语法错误
 2. 只提供改写后的内容，无需解释
-&quot;&quot;&quot;
+"""
 
     def read_docx(self, file_path):
-        &quot;&quot;&quot;读取docx文件内容&quot;&quot;&quot;
+        """读取docx文件内容"""
         try:
             doc = Document(file_path)
             paragraphs = []
@@ -920,31 +863,31 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
                 text = para.text.strip()
                 if text:  # 只添加非空段落
                     paragraphs.append(text)
-            return &#x27;\n&#x27;.join(paragraphs)
+            return '\n'.join(paragraphs)
         except Exception as e:
-            print(f&quot;读取文件时出错: {str(e)}&quot;)
+            print(f"读取文件时出错: {str(e)}")
             return None
 
     def save_to_docx(self, text, file_path):
-        &quot;&quot;&quot;保存内容到docx文件&quot;&quot;&quot;
+        """保存内容到docx文件"""
         try:
             doc = Document()
             # 将文本按换行符分割成段落
-            paragraphs = text.split(&#x27;\n&#x27;)
+            paragraphs = text.split('\n')
             for para in paragraphs:
                 if para.strip():  # 只添加非空段落
                     doc.add_paragraph(para.strip())
             doc.save(file_path)
             return True
         except Exception as e:
-            print(f&quot;保存文件时出错: {str(e)}&quot;)
+            print(f"保存文件时出错: {str(e)}")
             return False
 
     def get_unique_filename(self, base_path):
-        &quot;&quot;&quot;获取唯一的文件名，如果文件存在则在文件名后加上数字&quot;&quot;&quot;
+        """获取唯一的文件名，如果文件存在则在文件名后加上数字"""
         try:
-            # 确保输出到&quot;改写&quot;文件夹
-            rewrite_folder = os.path.join(os.path.expanduser(&quot;~/Desktop&quot;), &quot;剪辑/改写&quot;)
+            # 确保输出到"改写"文件夹
+            rewrite_folder = os.path.join(os.path.expanduser("~/Desktop"), "剪辑/改写")
             if not os.path.exists(rewrite_folder):
                 os.makedirs(rewrite_folder)
             
@@ -954,70 +897,70 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
             
             # 生成新的文件路径
             counter = 1
-            new_path = os.path.join(rewrite_folder, f&quot;{name}{ext}&quot;)
+            new_path = os.path.join(rewrite_folder, f"{name}{ext}")
             while os.path.exists(new_path):
-                new_path = os.path.join(rewrite_folder, f&quot;{name}_{counter}{ext}&quot;)
+                new_path = os.path.join(rewrite_folder, f"{name}_{counter}{ext}")
                 counter += 1
             
             return new_path
         except Exception as e:
-            print(f&quot;生成文件名时出错: {str(e)}&quot;)
+            print(f"生成文件名时出错: {str(e)}")
             return None
 
     def get_docx_files(self):
-        &quot;&quot;&quot;获取改写文件夹中的docx文件&quot;&quot;&quot;
+        """获取改写文件夹中的docx文件"""
         try:
-            # 确保桌面上的&quot;改写&quot;文件夹存在
-            rewrite_folder = os.path.join(os.path.expanduser(&quot;~/Desktop&quot;), &quot;剪辑/改写&quot;)
+            # 确保桌面上的"改写"文件夹存在
+            rewrite_folder = os.path.join(os.path.expanduser("~/Desktop"), "剪辑/改写")
             if not os.path.exists(rewrite_folder):
                 os.makedirs(rewrite_folder)
-                print(f&#x27;已创建文件夹：{rewrite_folder}&#x27;)
-                print(&#x27;请将要处理的文件放入此文件夹，然后重新运行程序&#x27;)
+                print('已创建文件夹：{rewrite_folder}')
+                print('请将要处理的文件放入此文件夹，然后重新运行程序')
                 return []
 
             # 获取文件夹中的所有非隐藏的docx文件
             docx_files = []
             for file in os.listdir(rewrite_folder):
                 # 跳过隐藏文件和临时文件
-                if (not file.startswith(&#x27;.&#x27;) and not file.startswith(&#x27;~&#x27;)) and file.endswith(&#x27;.docx&#x27;):
+                if (not file.startswith('.') and not file.startswith('~')) and file.endswith('.docx'):
                     file_path = os.path.join(rewrite_folder, file)
                     if os.path.isfile(file_path):
                         docx_files.append((file, file_path))
 
             if not docx_files:
-                print(f&#x27;在 {rewrite_folder} 中没有找到.docx文件&#x27;)
-                print(&#x27;请将要处理的文件放入此文件夹，然后重新运行程序&#x27;)
+                print(f'在 {rewrite_folder} 中没有找到.docx文件')
+                print('请将要处理的文件放入此文件夹，然后重新运行程序')
                 return []
 
             # 按自然排序对文件进行排序
             docx_files.sort(key=lambda x: self.natural_sort_key(x[0]))
             
             # 显示找到的文件
-            print(&quot;\n找到以下文件：&quot;)
+            print("\n找到以下文件：")
             for i, (filename, _) in enumerate(docx_files, 1):
-                print(f&quot;{i}. {filename}&quot;)
+                print(f"{i}. {filename}")
             print()
 
             return docx_files
         except Exception as e:
-            print(f&quot;获取文件列表时出错: {str(e)}&quot;)
+            print(f"获取文件列表时出错: {str(e)}")
             traceback.print_exc()  # 打印详细的错误信息
             return []
 
     def count_tokens(self, text):
-        &quot;&quot;&quot;使用tiktoken准确计算token数量&quot;&quot;&quot;
+        """使用tiktoken准确计算token数量"""
         if text is None:
             return 0
         try:
-            encoding = tiktoken.get_encoding(&quot;cl100k_base&quot;)
+            encoding = tiktoken.get_encoding("cl100k_base")
             return len(encoding.encode(str(text)))  # 确保text是字符串
         except Exception as e:
-            print(f&quot;Token计算失败: {str(e)}&quot;)
+            print(f"Token计算失败: {str(e)}")
             # 如果tiktoken失败，使用简单估算（每4个字符约1个token）
             return len(str(text)) // 4
 
     def calculate_cost(self, input_tokens, output_tokens, is_finetune=False):
-        &quot;&quot;&quot;计算API调用成本&quot;&quot;&quot;
+        """计算API调用成本"""
         if input_tokens is None or output_tokens is None:
             return 0
             
@@ -1033,20 +976,20 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
         return (input_tokens * input_price + output_tokens * output_price)  
 
     def split_text_by_length(self, text, max_length=None):
-        &quot;&quot;&quot;将文本按长度分段&quot;&quot;&quot;
+        """将文本按长度分段"""
         if max_length is None:
-            max_length = self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;max_length&#x27;]
+            max_length = self.MODEL_CONFIG['gpt4o_model']['max_length']
             
         segments = []
-        current_segment = &quot;&quot;
+        current_segment = ""
         
-        for paragraph in text.split(&#x27;\n&#x27;):
-            if len(current_segment) + len(paragraph) + 1 &lt;= max_length:
-                current_segment += (paragraph + &#x27;\n&#x27;)
+        for paragraph in text.split('\n'):
+            if len(current_segment) + len(paragraph) + 1 <= max_length:
+                current_segment += (paragraph + '\n')
             else:
                 if current_segment:
                     segments.append(current_segment.strip())
-                current_segment = paragraph + &#x27;\n&#x27;
+                current_segment = paragraph + '\n'
         
         if current_segment:
             segments.append(current_segment.strip())
@@ -1054,7 +997,7 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
         return segments
 
     def process_segment(self, text, mode):
-        &quot;&quot;&quot;处理单个文本段落&quot;&quot;&quot;
+        """处理单个文本段落"""
         import time
         
         # 确保mode是整数
@@ -1062,46 +1005,46 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
         
         # 生成提示词
         if mode == 1:  # 通用模式
-            if hasattr(self, &#x27;is_second_round&#x27;) and self.is_second_round:
-                prompt = f&quot;{self.general_prompt_round2}\n\n请改写以下文本：\n\n{text}&quot;
+            if hasattr(self, 'is_second_round') and self.is_second_round:
+                prompt = f"{self.general_prompt_round2}\n\n请改写以下文本：\n\n{text}"
             else:
-                prompt = self.general_prompt + &quot;\n\n&quot; + text
+                prompt = self.general_prompt + "\n\n" + text
         elif mode == 2:  # 中文到英文翻译
-            prompt = f&quot;{self.chinese_to_english_prompt}\n\n请翻译以下文本：\n\n{text}&quot;
+            prompt = f"{self.chinese_to_english_prompt}\n\n请翻译以下文本：\n\n{text}"
         elif mode == 3:  # 英文本地化人地名改写
-            prompt = f&quot;{self.gpt4_localization_prompt}\n\n请改写以下文本：\n\n{text}&quot;
+            prompt = f"{self.gpt4_localization_prompt}\n\n请改写以下文本：\n\n{text}"
         elif mode == 4:  # 英文到中文翻译
-            prompt = f&quot;{self.english_to_chinese_prompt}\n\n请翻译以下英文文本：\n\n{text}&quot;
+            prompt = f"{self.english_to_chinese_prompt}\n\n请翻译以下英文文本：\n\n{text}"
         elif mode == 5:  # 提取主题改写
-            if hasattr(self, &#x27;is_second_round&#x27;) and self.is_second_round:
-                prompt = f&quot;{self.general_prompt_round2}\n\n请改写以下文本：\n\n{text}&quot;
+            if hasattr(self, 'is_second_round') and self.is_second_round:
+                prompt = f"{self.general_prompt_round2}\n\n请改写以下文本：\n\n{text}"
             else:
-                prompt = f&quot;{self.topic_extraction_prompt}\n\n请改写以下文本：\n\n{text}&quot;
+                prompt = f"{self.topic_extraction_prompt}\n\n请改写以下文本：\n\n{text}"
         else:
-            print(f&quot;错误：不支持的处理模式 {mode}&quot;)
+            print(f"错误：不支持的处理模式 {mode}")
             return None, 0
         
         try:
             # 根据重试次数调整temperature
             current_temp = max(
-                self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;temperature&#x27;][&#x27;min&#x27;],
-                self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;temperature&#x27;][&#x27;default&#x27;] - 
-                0 * self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;temperature&#x27;][&#x27;step&#x27;]
+                self.MODEL_CONFIG['gpt4o_model']['temperature']['min'],
+                self.MODEL_CONFIG['gpt4o_model']['temperature']['default'] - 
+                0 * self.MODEL_CONFIG['gpt4o_model']['temperature']['step']
             )
 
-            print(&quot;\nGPT-4处理中...&quot;)
+            print("\nGPT-4处理中...")
             start_time = time.time()
             
             # 调用API
             response = self.openai_client.chat.completions.create(
-                model=self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;name&#x27;],
-                messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}],
+                model=self.MODEL_CONFIG['gpt4o_model']['name'],
+                messages=[{"role": "user", "content": prompt}],
                 temperature=current_temp,
-                max_tokens=self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;max_tokens&#x27;]
+                max_tokens=self.MODEL_CONFIG['gpt4o_model']['max_tokens']
             )
             
             process_time = time.time() - start_time
-            print(f&quot;GPT-4处理完成，耗时: {process_time:.2f}秒&quot;)
+            print(f"GPT-4处理完成，耗时: {process_time:.2f}秒")
             
             # 获取生成的内容
             content = response.choices[0].message.content.strip()
@@ -1111,131 +1054,131 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
             output_tokens = response.usage.completion_tokens
             cost = self.calculate_cost(input_tokens, output_tokens)
             
-            print(f&quot;\n第 {1} 次尝试:&quot;)
-            print(f&quot;使用模型: {self.MODEL_CONFIG[&#x27;gpt4o_model&#x27;][&#x27;name&#x27;]}&quot;)
-            print(f&quot;本次调用成本: ${cost:.4f}&quot;)
-            print(f&quot;Token估算 - 输入: {input_tokens}, 输出: {output_tokens}&quot;)
+            print(f"\n第 {1} 次尝试:")
+            print(f"使用模型: {self.MODEL_CONFIG['gpt4o_model']['name']}")
+            print(f"本次调用成本: ${cost:.4f}")
+            print(f"Token估算 - 输入: {input_tokens}, 输出: {output_tokens}")
             
             return content, cost
             
         except Exception as e:
-            print(f&quot;处理出错: {str(e)}&quot;)
+            print(f"处理出错: {str(e)}")
             return None, 0
 
     def process_file(self, filepath, mode):
-        &quot;&quot;&quot;处理单个文件&quot;&quot;&quot;
-        print(f&quot;\n开始处理文件: {filepath}&quot;)
+        """处理单个文件"""
+        print(f"\n开始处理文件: {filepath}")
         total_cost = 0
         
         # 检查文件
         if not os.path.exists(filepath):
-            print(&quot;文件不存在&quot;)
+            print("文件不存在")
             return False, 0, 0
             
-        print(f&quot;文件是否存在: {os.path.exists(filepath)}&quot;)
-        print(f&quot;文件是否可读: {os.access(filepath, os.R_OK)}&quot;)
-        print(f&quot;文件大小: {os.path.getsize(filepath)} 字节&quot;)
+        print(f"文件是否存在: {os.path.exists(filepath)}")
+        print(f"文件是否可读: {os.access(filepath, os.R_OK)}")
+        print(f"文件大小: {os.path.getsize(filepath)} 字节")
         
         try:
-            print(&quot;\n尝试读取文件内容...&quot;)
+            print("\n尝试读取文件内容...")
             content = self.read_docx(filepath)
             if not content:
-                print(&quot;文件内容为空&quot;)
+                print("文件内容为空")
                 return False, 0, 0
                 
             original_chars = len(content)
-            print(f&quot;成功读取文件，字符数: {original_chars}&quot;)
-            print(f&quot;内容预览（前100字符）: {content[:100]}&quot;)
+            print(f"成功读取文件，字符数: {original_chars}")
+            print(f"内容预览（前100字符）: {content[:100]}")
             
             # 处理逻辑
             if int(mode) in [1, 5]:  # 通用模式和提取主题改写模式
-                print(f&quot;\n开始微调模型改写，文本长度: {len(content)} 字符&quot;)
+                print(f"\n开始微调模型改写，文本长度: {len(content)} 字符")
                 
                 # 第一轮：微调模型处理
                 first_result = self.process_with_finetune(content, int(mode))
                 if not first_result:
-                    print(&quot;微调模型处理失败&quot;)
+                    print("微调模型处理失败")
                     if int(mode) == 1:  # 如果是模式1，且5次生成都失败，则不进行二次改写
-                        print(&quot;模式1中5次生成都失败，不进行二次改写，处理结束&quot;)
+                        print("模式1中5次生成都失败，不进行二次改写，处理结束")
                         return False, total_cost, 0
                     else:
-                        print(&quot;跳过微调模型，直接使用GPT-4处理&quot;)
+                        print("跳过微调模型，直接使用GPT-4处理")
                         base_length = len(content)  # 使用原始长度作为基准
                 else:
                     if self.ENABLE_SECOND_ROUND:
-                        print(&quot;\n开始GPT-4第二轮改写...&quot;)
+                        print("\n开始GPT-4第二轮改写...")
                         self.is_second_round = True  # 标记为第二轮
                         base_length = len(first_result)  # 使用微调模型处理后的长度作为基准
                         content = first_result
                     else:
-                        print(&quot;第二轮改写已禁用，将使用微调模型的处理结果&quot;)
+                        print("第二轮改写已禁用，将使用微调模型的处理结果")
                         content = first_result
                         # 保存微调模型处理结果
                         output_path = self.save_to_docx(content, self.get_unique_filename(filepath))
                         if output_path:
-                            print(f&quot;\n处理完成，结果已保存至: {output_path}&quot;)
+                            print(f"\n处理完成，结果已保存至: {output_path}")
                         return True, total_cost, len(content)
             else:
                 base_length = len(content)  # 其他模式使用原始长度作为基准
             
             # 分段处理
             segments = self.split_text_by_length(content)
-            print(f&quot;\n文本已分为 {len(segments)} 段&quot;)
+            print(f"\n文本已分为 {len(segments)} 段")
             
             processed_segments = []
             for i, segment in enumerate(segments, 1):
-                print(f&quot;\n开始处理第 {i}/{len(segments)} 段:&quot;)
+                print(f"\n开始处理第 {i}/{len(segments)} 段:")
                 processed_text, cost = self.process_segment(segment, mode)
                 if processed_text:
                     processed_segments.append(processed_text)
                     total_cost += cost
                 else:
-                    print(f&quot;处理第 {i} 段失败&quot;)
+                    print(f"处理第 {i} 段失败")
                     return False, total_cost, 0
             
             # 合并处理后的内容
-            final_content = &quot;\n&quot;.join(processed_segments)
+            final_content = "\n".join(processed_segments)
             
             # 保存结果
             output_path = self.save_to_docx(final_content, self.get_unique_filename(filepath))
             if output_path:
-                print(f&quot;\n处理完成，结果已保存至: {output_path}&quot;)
-                print(f&quot;总成本: ${total_cost:.4f}&quot;)
+                print(f"\n处理完成，结果已保存至: {output_path}")
+                print(f"总成本: ${total_cost:.4f}")
                 return True, total_cost, len(final_content)
             
             return False, total_cost, 0
             
         except Exception as e:
-            print(f&quot;处理文件时出错: {str(e)}&quot;)
+            print(f"处理文件时出错: {str(e)}")
             return False, total_cost, 0
 
     def select_mode(self, file_name):
-        &quot;&quot;&quot;为单个文件选择处理模式&quot;&quot;&quot;
+        """为单个文件选择处理模式"""
         while True:
-            print(f&quot;\n请为文件 {file_name} 选择处理模式:&quot;)
-            print(&quot;1. 通用模式（先微调后GPT-4）&quot;)
-            print(&quot;2. 中文到英文翻译（仅GPT-4）&quot;)
-            print(&quot;3. 英文本地化人地名改写（仅GPT-4）&quot;)
-            print(&quot;4. 英文到中文翻译（仅GPT-4）&quot;)
-            print(&quot;5. 提取主题改写（先微调后GPT-4）&quot;)
+            print(f"\n请为文件 {file_name} 选择处理模式:")
+            print("1. 通用模式（先微调后GPT-4）")
+            print("2. 中文到英文翻译（仅GPT-4）")
+            print("3. 英文本地化人地名改写（仅GPT-4）")
+            print("4. 英文到中文翻译（仅GPT-4）")
+            print("5. 提取主题改写（先微调后GPT-4）")
             
-            choice = input(&quot;\n请输入模式编号(1-5): &quot;).strip()
+            choice = input("\n请输入模式编号(1-5): ").strip()
             
-            if choice in [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;]:
-                print(f&quot;已选择模式 {choice}&quot;)
+            if choice in ['1', '2', '3', '4', '5']:
+                print(f"已选择模式 {choice}")
                 return choice
             else:
-                print(&quot;无效的选择，请重试&quot;)
+                print("无效的选择，请重试")
 
     def natural_sort_key(self, file_tuple):
         import re
         file_name = file_tuple[0]
         convert = lambda text: int(text) if text.isdigit() else text.lower()
-        alphanum_key = lambda key: [convert(c) for c in re.split(&#x27;([0-9]+)&#x27;, key)]
+        alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key)]
         return alphanum_key(file_name)
 
     def process_files(self, files, modes):
-        &quot;&quot;&quot;处理多个文件&quot;&quot;&quot;
+        """处理多个文件"""
         results = []
         total_chars = 0
         total_rewritten_chars = 0
@@ -1243,15 +1186,15 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
         success_count = 0
 
         for i, (filename, filepath) in enumerate(files, 1):
-            print(f&quot;\n处理文件 {i}/{len(files)}: {filename}&quot;)
+            print(f"\n处理文件 {i}/{len(files)}: {filename}")
             try:
                 mode = modes.get(filename)
                 if not mode:
-                    print(f&quot;未找到文件 {filename} 的处理模式&quot;)
+                    print(f"未找到文件 {filename} 的处理模式")
                     continue
 
-                print(f&quot;完整文件路径: {filepath}&quot;)
-                print(f&quot;选择的处理模式: {mode}&quot;)
+                print(f"完整文件路径: {filepath}")
+                print(f"选择的处理模式: {mode}")
                 
                 success, cost, chars = self.process_file(filepath, mode)
                 
@@ -1264,128 +1207,128 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
                         try:
                             # 使用python-docx读取文件内容
                             doc = Document(output_path)
-                            rewritten_text = &#x27;\n&#x27;.join([paragraph.text for paragraph in doc.paragraphs])
+                            rewritten_text = '\n'.join([paragraph.text for paragraph in doc.paragraphs])
                             rewritten_chars = len(rewritten_text)
                             total_rewritten_chars += rewritten_chars
                             results.append({
-                                &#x27;filename&#x27;: filename,
-                                &#x27;original_chars&#x27;: chars,
-                                &#x27;rewritten_chars&#x27;: rewritten_chars,
-                                &#x27;success&#x27;: True
+                                'filename': filename,
+                                'original_chars': chars,
+                                'rewritten_chars': rewritten_chars,
+                                'success': True
                             })
                         except Exception as e:
-                            print(f&quot;读取输出文件时出错: {str(e)}&quot;)
+                            print(f"读取输出文件时出错: {str(e)}")
                             results.append({
-                                &#x27;filename&#x27;: filename,
-                                &#x27;original_chars&#x27;: chars,
-                                &#x27;rewritten_chars&#x27;: 0,
-                                &#x27;success&#x27;: False
+                                'filename': filename,
+                                'original_chars': chars,
+                                'rewritten_chars': 0,
+                                'success': False
                             })
                     else:
-                        print(f&quot;无法读取输出文件: {output_path}&quot;)
+                        print(f"无法读取输出文件: {output_path}")
                         results.append({
-                            &#x27;filename&#x27;: filename,
-                            &#x27;original_chars&#x27;: chars,
-                            &#x27;rewritten_chars&#x27;: 0,
-                            &#x27;success&#x27;: False
+                            'filename': filename,
+                            'original_chars': chars,
+                            'rewritten_chars': 0,
+                            'success': False
                         })
                 else:
                     results.append({
-                        &#x27;filename&#x27;: filename,
-                        &#x27;original_chars&#x27;: chars,
-                        &#x27;rewritten_chars&#x27;: 0,
-                        &#x27;success&#x27;: False
+                        'filename': filename,
+                        'original_chars': chars,
+                        'rewritten_chars': 0,
+                        'success': False
                     })
                 
                 total_cost += cost
                 
             except Exception as e:
-                print(f&quot;处理文件时出错: {str(e)}&quot;)
+                print(f"处理文件时出错: {str(e)}")
                 traceback.print_exc()
                 results.append({
-                    &#x27;filename&#x27;: filename,
-                    &#x27;original_chars&#x27;: 0,
-                    &#x27;rewritten_chars&#x27;: 0,
-                    &#x27;success&#x27;: False
+                    'filename': filename,
+                    'original_chars': 0,
+                    'rewritten_chars': 0,
+                    'success': False
                 })
 
         # 打印处理结果
-        print(&quot;\n处理完成!&quot;)
-        print(f&quot;成功: {success_count}/{len(files)}&quot;)
+        print("\n处理完成!")
+        print(f"成功: {success_count}/{len(files)}")
         
         # 打印字符统计表格
-        print(&quot;\n字符统计:&quot;)
-        print(&quot;-&quot; * 100)
-        print(f&quot;{&#x27;文件名&#x27;:&lt;40} {&#x27;原文字符&#x27;:&lt;16} {&#x27;改写字符&#x27;:&lt;16} {&#x27;变化比例&#x27;:&lt;12} {&#x27;状态&#x27;:&lt;8}&quot;)
-        print(&quot;-&quot; * 100)
+        print("\n字符统计:")
+        print("-" * 100)
+        print(f"{'文件名':<40} {'原文字符':<16} {'改写字符':<16} {'变化比例':<12} {'状态':<8}")
+        print("-" * 100)
         
         for result in results:
-            filename = result[&#x27;filename&#x27;]
-            original = result[&#x27;original_chars&#x27;]
-            rewritten = result[&#x27;rewritten_chars&#x27;]
-            ratio = (rewritten / original * 100) if original &gt; 0 else 0.0
-            status = &quot;成功&quot; if result[&#x27;success&#x27;] else &quot;失败&quot;
+            filename = result['filename']
+            original = result['original_chars']
+            rewritten = result['rewritten_chars']
+            ratio = (rewritten / original * 100) if original > 0 else 0.0
+            status = "成功" if result['success'] else "失败"
             
-            print(f&quot;{filename:&lt;40} {original:&lt;16} {rewritten:&lt;16} {ratio:.1f}% {status:&lt;8}&quot;)
+            print(f"{filename:<40} {original:<16} {rewritten:<16} {ratio:.1f}% {status:<8}")
         
-        print(&quot;-&quot; * 100)
-        print(&quot;总计:&quot;)
-        print(f&quot;原文总字符: {total_chars}&quot;)
-        print(f&quot;改写总字符: {total_rewritten_chars}&quot;)
-        total_ratio = (total_rewritten_chars / total_chars * 100) if total_chars &gt; 0 else 0.0
-        print(f&quot;总体变化比例: {total_ratio:.1f}%&quot;)
-        print(f&quot;总成本: ${total_cost:.4f}&quot;)
+        print("-" * 100)
+        print("总计:")
+        print(f"原文总字符: {total_chars}")
+        print(f"改写总字符: {total_rewritten_chars}")
+        total_ratio = (total_rewritten_chars / total_chars * 100) if total_chars > 0 else 0.0
+        print(f"总体变化比例: {total_ratio:.1f}%")
+        print(f"总成本: ${total_cost:.4f}")
 
     def get_latest_output_path(self):
-        &quot;&quot;&quot;获取最新的输出文件路径&quot;&quot;&quot;
+        """获取最新的输出文件路径"""
         try:
-            rewrite_folder = os.path.join(os.path.expanduser(&quot;~/Desktop&quot;), &quot;改写&quot;)
+            rewrite_folder = os.path.join(os.path.expanduser("~/Desktop"), "改写")
             if not os.path.exists(rewrite_folder):
                 return None
             
-            files = [f for f in os.listdir(rewrite_folder) if f.endswith(&#x27;.docx&#x27;)]
+            files = [f for f in os.listdir(rewrite_folder) if f.endswith('.docx')]
             if not files:
                 return None
                 
             files.sort(key=lambda x: os.path.getmtime(os.path.join(rewrite_folder, x)), reverse=True)
             return os.path.join(rewrite_folder, files[0])
         except Exception as e:
-            print(f&quot;获取最新输出文件路径时出错: {str(e)}&quot;)
+            print(f"获取最新输出文件路径时出错: {str(e)}")
             return None
 
     def generate_prompt(self, text, mode):
-        &quot;&quot;&quot;根据模式生成提示词&quot;&quot;&quot;
+        """根据模式生成提示词"""
         mode = int(mode)
         if mode == 1:  # 通用模式
-            if hasattr(self, &#x27;is_second_round&#x27;) and self.is_second_round:
-                return f&quot;{self.general_prompt_round2}\n\n请改写以下文本：\n\n{text}&quot;
+            if hasattr(self, 'is_second_round') and self.is_second_round:
+                return f"{self.general_prompt_round2}\n\n请改写以下文本：\n\n{text}"
             else:
-                return self.general_prompt + &quot;\n\n&quot; + text
+                return self.general_prompt + "\n\n" + text
         elif mode == 2:  # 中文到英文翻译
-            return f&quot;{self.chinese_to_english_prompt}\n\nPlease translate the following Chinese text into English:\n\n{text}&quot;
+            return f"{self.chinese_to_english_prompt}\n\nPlease translate the following Chinese text into English:\n\n{text}"
         elif mode == 3:  # 英文本地化人地名改写
-            return f&quot;{self.gpt4_localization_prompt}\n\nPlease rewrite the following text:\n\n{text}&quot;
+            return f"{self.gpt4_localization_prompt}\n\nPlease rewrite the following text:\n\n{text}"
         elif mode == 4:  # 英文到中文翻译
-            return f&quot;{self.english_to_chinese_prompt}\n\n请翻译以下英文文本：\n\n{text}&quot;
+            return f"{self.english_to_chinese_prompt}\n\n请翻译以下英文文本：\n\n{text}"
         elif mode == 5:  # 提取主题改写
-            return f&quot;{self.topic_extraction_prompt}\n\n请改写以下文本：\n\n{text}&quot;
+            return f"{self.topic_extraction_prompt}\n\n请改写以下文本：\n\n{text}"
         
     def process_with_finetune(self, content, mode):
-        &quot;&quot;&quot;使用微调模型处理内容&quot;&quot;&quot;
+        """使用微调模型处理内容"""
         total_cost = 0
         
         for attempt in range(self.MAX_RETRIES):
             try:
-                print(f&quot;\n第 {attempt + 1} 次尝试使用微调模型...&quot;)
+                print(f"\n第 {attempt + 1} 次尝试使用微调模型...")
                 
                 # 生成提示词
                 prompt = self.generate_prompt(content, mode)
                 
                 # 调用API
                 response = self.openai_client.chat.completions.create(
-                    model=self.MODEL_CONFIG[&#x27;ft_model&#x27;][&#x27;name&#x27;],
-                    messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}],
-                    temperature=self.MODEL_CONFIG[&#x27;ft_model&#x27;][&#x27;temperature&#x27;]
+                    model=self.MODEL_CONFIG['ft_model']['name'],
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=self.MODEL_CONFIG['ft_model']['temperature']
                 )
                 
                 # 获取生成的内容
@@ -1397,46 +1340,46 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
                 cost = self.calculate_cost(input_tokens, output_tokens, is_finetune=True)
                 total_cost += cost
                 
-                print(f&quot;使用模型: {self.MODEL_CONFIG[&#x27;ft_model&#x27;][&#x27;name&#x27;]}&quot;)
-                print(f&quot;Token使用 - 输入: {input_tokens}, 输出: {output_tokens}&quot;)
-                print(f&quot;本次成本: ${cost:.4f}&quot;)
-                print(f&quot;累计成本: ${total_cost:.4f}&quot;)
+                print(f"使用模型: {self.MODEL_CONFIG['ft_model']['name']}")
+                print(f"Token使用 - 输入: {input_tokens}, 输出: {output_tokens}")
+                print(f"本次成本: ${cost:.4f}")
+                print(f"累计成本: ${total_cost:.4f}")
                 
                 # 检查长度
                 original_length = len(content)
                 result_length = len(result)
-                min_length = int(original_length * (self.rewrite_ratio[&#x27;min&#x27;] / 100))  # 将百分比转换为小数
-                max_length = int(original_length * (self.rewrite_ratio[&#x27;max&#x27;] / 100))
+                min_length = int(original_length * (self.rewrite_ratio['min'] / 100))  # 将百分比转换为小数
+                max_length = int(original_length * (self.rewrite_ratio['max'] / 100))
                 
-                print(f&quot;原文长度: {original_length} 字符&quot;)
-                print(f&quot;改写长度: {result_length} 字符&quot;)
-                print(f&quot;长度要求: {min_length}-{max_length} 字符&quot;)
-                print(f&quot;达标率: {(result_length / original_length * 100):.1f}%&quot;)
+                print(f"原文长度: {original_length} 字符")
+                print(f"改写长度: {result_length} 字符")
+                print(f"长度要求: {min_length}-{max_length} 字符")
+                print(f"达标率: {(result_length / original_length * 100):.1f}%")
                 
-                if result_length &lt; min_length or result_length &gt; max_length:
-                    if attempt &lt; self.MAX_RETRIES - 1:
-                        print(f&quot;生成的内容长度{&#x27;不足&#x27; if result_length &lt; min_length else &#x27;超出限制&#x27;}，正在重试...&quot;)
+                if result_length < min_length or result_length > max_length:
+                    if attempt < self.MAX_RETRIES - 1:
+                        print(f"生成的内容长度{'不足' if result_length < min_length else '超出限制'}，正在重试...")
                         continue
                     else:
-                        print(f&quot;\n已达到最大重试次数 ({self.MAX_RETRIES})，微调模型处理失败&quot;)
+                        print(f"\n已达到最大重试次数 ({self.MAX_RETRIES})，微调模型处理失败")
                         return None
                 
-                print(&quot;微调模型处理成功&quot;)
+                print("微调模型处理成功")
                 return result
                 
             except Exception as e:
-                print(f&quot;微调模型处理出错: {str(e)}&quot;)
-                if attempt &lt; self.MAX_RETRIES - 1:
-                    print(&quot;正在重试...&quot;)
+                print(f"微调模型处理出错: {str(e)}")
+                if attempt < self.MAX_RETRIES - 1:
+                    print("正在重试...")
                     continue
                 else:
-                    print(f&quot;\n已达到最大重试次数 ({self.MAX_RETRIES})，微调模型处理失败&quot;)
+                    print(f"\n已达到最大重试次数 ({self.MAX_RETRIES})，微调模型处理失败")
                     return None
         
         return None
 
     def run(self):
-        &quot;&quot;&quot;主运行方法&quot;&quot;&quot;
+        """主运行方法"""
         while True:
             # 获取所有docx文件
             docx_files = self.get_docx_files()
@@ -1444,13 +1387,13 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
                 return
 
             # 显示当前配置并让用户选择是否启用第二轮改写
-            print(&quot;\n是否启用第二轮改写? (y/n)&quot;)
-            self.ENABLE_SECOND_ROUND = input().lower() == &#x27;y&#x27;
-            print(f&quot;已{&#x27;启用&#x27; if self.ENABLE_SECOND_ROUND else &#x27;禁用&#x27;}第二轮改写&quot;)
+            print("\n是否启用第二轮改写? (y/n)")
+            self.ENABLE_SECOND_ROUND = input().lower() == 'y'
+            print(f"已{'启用' if self.ENABLE_SECOND_ROUND else '禁用'}第二轮改写")
             
             # 获取用户选择
-            choice = input(&quot;\n请输入要处理的文件编号（多个文件用空格分隔，输入q退出）: &quot;).strip()
-            if choice.lower() == &#x27;q&#x27;:
+            choice = input("\n请输入要处理的文件编号（多个文件用空格分隔，输入q退出）: ").strip()
+            if choice.lower() == 'q':
                 break
 
             try:
@@ -1461,138 +1404,145 @@ Importante: La traducción debe ser detallada y mantener todos los matices del t
 
                 # 验证选择的有效性
                 for idx in selected_indices:
-                    if 0 &lt;= idx &lt; len(docx_files):
+                    if 0 <= idx < len(docx_files):
                         selected_files.append(docx_files[idx])
                     else:
-                        print(f&quot;无效的文件编号: {idx + 1}&quot;)
+                        print(f"无效的文件编号: {idx + 1}")
                         continue
 
                 if not selected_files:
-                    print(&quot;未选择任何文件&quot;)
+                    print("未选择任何文件")
                     continue
 
-                print(&quot;\n为每个文件选择处理模式...&quot;)
-                print(&quot;\n文件 1/1\n&quot;)
+                print("\n为每个文件选择处理模式...")
+                print("\n文件 1/1\n")
 
                 # 为每个选中的文件选择处理模式
                 for filename, filepath in selected_files:
                     while True:
-                        print(f&quot;\n为文件 {filename} 选择处理模式：&quot;)
-                        print(&quot;1. 通用模式（先微调后GPT-4）&quot;)
-                        print(&quot;2. 中文到英文翻译（仅GPT-4）&quot;)
-                        print(&quot;3. 英文本地化人地名改写（仅GPT-4）&quot;)
-                        print(&quot;4. 英文到中文翻译（仅GPT-4）&quot;)
-                        print(&quot;5. 提取主题改写（先微调后GPT-4）&quot;)
-                        print(&quot;q. 跳过此文件&quot;)
+                        print(f"\n为文件 {filename} 选择处理模式：")
+                        print("1. 通用模式（先微调后GPT-4）")
+                        print("2. 中文到英文翻译（仅GPT-4）")
+                        print("3. 英文本地化人地名改写（仅GPT-4）")
+                        print("4. 英文到中文翻译（仅GPT-4）")
+                        print("5. 提取主题改写（先微调后GPT-4）")
+                        print("q. 跳过此文件")
 
-                        mode = input(&quot;\n请输入模式编号（1-5，或q跳过）: &quot;).strip()
-                        if mode.lower() == &#x27;q&#x27;:
+                        mode = input("\n请输入模式编号（1-5，或q跳过）: ").strip()
+                        if mode.lower() == 'q':
                             break
-                        if mode in [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;]:
+                        if mode in ['1', '2', '3', '4', '5']:
                             modes[filename] = mode  # 使用filename作为键
                             break
-                        print(&quot;无效的选择，请重试&quot;)
+                        print("无效的选择，请重试")
 
                 # 显示选择的文件和模式
-                print(&quot;\n已选择 {} 个文件处理，{} 个文件跳过&quot;.format(
+                print("\n已选择 {} 个文件处理，{} 个文件跳过".format(
                     len(modes), len(selected_files) - len(modes)))
 
                 if modes:
-                    print(&quot;\n选择的处理模式：&quot;)
+                    print("\n选择的处理模式：")
                     for filename, _ in selected_files:
                         if filename in modes:
-                            print(f&quot;{filename}: {modes[filename]}&quot;)
+                            print(f"{filename}: {modes[filename]}")
 
                     # 确认开始处理
-                    if input(&quot;\n确认开始处理？(y/n): &quot;).lower() == &#x27;y&#x27;:
+                    if input("\n确认开始处理？(y/n): ").lower() == 'y':
                         self.process_files(selected_files, modes)
                         break  # 处理完成后退出循环
                     else:
-                        print(&quot;已取消处理&quot;)
+                        print("已取消处理")
 
             except ValueError:
-                print(&quot;输入无效，请重试&quot;)
+                print("输入无效，请重试")
             except Exception as e:
-                print(f&quot;发生错误: {str(e)}&quot;)
+                print(f"发生错误: {str(e)}")
                 traceback.print_exc()
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     rewriter = TextRewriter()
     rewriter.run()
-
 ```
 
-这套代码 我迭代了至少50次 为达到最好的效果 我得出几个极其重要的点
 
-1.  微调模型产出的token数量 要在原文的60%-85%之间
 
-改写 依然免不了抽卡 在抽卡几百次之后 我总结出的这个区间 是改写效果最好的
+# 自动化改写与出图实践
 
-超过85% 则重复度过高 低于60%则删减的太多
+## 改写脚本优化
 
-在脚本中 我设置了5次重试机制 如果5次都没能得到这个区间 就会失败 不会无限调用
+这套代码我迭代了至少50次，为达到最好的效果，我得出几个极其重要的点。
 
-1.  双保险机制
+### 微调模型产出的token数量控制
 
-这个微调模型 本质上是4omini 这玩意本来是一点谱也不靠的 他产出的东西很有可能胡说八道
+1. 微调模型产出的`token`数量要在原文的60%-85%之间。
 
-所以我加上了第二层保险 就是在将4omini返回的结果 再跑一遍其他模型 让他纠错
+改写依然免不了抽卡，在抽卡几百次之后，我总结出的这个区间是改写效果最好的。
 
-不管你是跑claude3.7也行 chatgpt4turbo也行 我都试过 自然是越贵的效果越好
+超过85%则重复度过高，低于60%则删减的太多。
 
-这个代码 就是这个项目的灵魂 如果你看的细 你会发现里面还有很多的模式 比如翻译成本地化的英文什么的
+在脚本中，我设置了5次重试机制，如果5次都没能得到这个区间就会失败，不会无限调用。
 
-那些是我尝试西班牙文和英文内容的实验
+### 双保险机制
 
-在运行脚本后 脚本会让你是否开启双保险模式-要处理的文件是哪些-以及让你选择每个文件的改写模式
+这个微调模型本质上是4omini，这玩意本来是一点谱也不靠的，他产出的东西很有可能胡说八道。
 
-提示词 分段 进度 价格 改写比例 token计算等等等等一应俱全
+所以我加上了第二层保险，就是在将4omini返回的结果再跑一遍其他模型，让他纠错。
 
-其最终的效果，已经可以达到我80%的改写水平，
+不管你是跑claude3.7也行，chatgpt4turbo也行，我都试过，自然是越贵的效果越好。
 
-我人工伪原创3000字 就需要1小时
+这个代码就是这个项目的灵魂，如果你看的细，你会发现里面还有很多的模式，比如翻译成本地化的英文什么的。
 
-但我使用脚本伪原创30万字 只需要1行命令 让他自己跑小半小时就行
+那些是我尝试西班牙文和英文内容的实验。
 
-这是tmd什么生产力革命
+在运行脚本后，脚本会让你是否开启双保险模式、要处理的文件是哪些、以及让你选择每个文件的改写模式。
 
-至此，改写的问题就解决了
+提示词、分段、进度、价格、改写比例、`token`计算等等一应俱全。
+
+其最终的效果，已经可以达到我80%的改写水平。
+
+我人工伪原创3000字就需要1小时。
+
+但我使用脚本伪原创30万字，只需要1行命令，让他自己跑小半小时就行。
+
+这是tmd什么生产力革命。
+
+至此，改写的问题就解决了。
 
 ---
 
 ## 出图自动化：从耗时2小时降低到小于1分钟
 
-伪原创和出图都是消耗时间的大头
+伪原创和出图都是消耗时间的大头。
 
-伪原创是累脑子 出图就是纯机械操作了
+伪原创是累脑子，出图就是纯机械操作了。
 
-如果你有了解 你会知道MJ的出图效果是最棒的 没有之一
+如果你有了解，你会知道MJ的出图效果是最棒的，没有之一。
 
-但MJ不允许调用API 而且就算他哪天开放了 你批量搞 也基本用不起
+但MJ不允许调用API，而且就算他哪天开放了，你批量搞也基本用不起。
 
-有一个东西叫做Midjourney-proxy 可以使用discordBOT的方式来模仿API调用
+有一个东西叫做`Midjourney-proxy`，可以使用`discordBOT`的方式来模仿API调用。
 
-我试过了 是真的能用 且很好用
+我试过了，是真的能用，且很好用。
 
-但是！容易被封号 MJ抓的很严的
+但是！容易被封号，MJ抓的很严的。
 
-在使用他的时候你必须保持人工也在正常使用Midjourney
+在使用他的时候你必须保持人工也在正常使用Midjourney，否则必封号，我被封3次了。
 
-否则必封号 我被封3次了
+下面是我的`MJ- proxy`的代码，这个也迭代了一个礼拜。
 
-下面是我的MJ- proxy的代码 这个也迭代了一个礼拜
+里面有三个模式，有通用-中文-英文三个模式，对应不同的使用场景。
 
-里面有三个模式 有通用-中文-英文三个模式 对应不同的使用场景
+会自动将你`docx`里的文本用GPT翻译成英文，然后自动过滤掉MJ的敏感词。
 
-会自动将你docx里的文本用GPT翻译成英文 然后自动过滤掉MJ的敏感词
+因为在discord里，MJ一次出图是4张放在一起，所以会自动切割成4张。
 
-因为在discord里 MJ一次出图是4张放在一起 所以会自动切割成4张
+然后分别命名为1.1、1.2、1.3、1.4；2.1、2.2以此类推。
 
-然后分别命名为1.1、1.2、1.3、1.4；2.1、2.2以此类推
+提交后会自动读取discord出图队列，在排队有2个任务的时候就睡眠`N`秒然后继续，防止队列满和被监测到。
 
-提交后会自动读取discord出图队列 在排队有2个任务的时候就睡眠N秒然后继续 防止队列满和被监测到
 
-```
+
+```python
 import os
 import re
 import time
@@ -1611,97 +1561,97 @@ import string
 class MJImageGenerator:
     def __init__(self):
         # 基础配置
-        self.desktop = str(Path.home() / &quot;Desktop&quot;)
-        self.image_base_folder = &quot;图片&quot;
-        self.mj_api_base = &quot;http://locj&quot;  # MJ Proxy的地址
+        self.desktop = str(Path.home() / "Desktop")
+        self.image_base_folder = "图片"
+        self.mj_api_base = "http://locj"  # MJ Proxy的地址
         self.start_time = None  
         self.caffeinate_process = None  
         self.relax_mode = True  
 
         # OpenAI客户端
         self.client = OpenAI(
-            base_url=&quot;http&quot;,
-            api_key=&quot;sk-&quot;
+            base_url="http",
+            api_key="sk-"
         )
         
         # GPT提示词
         self.system_prompts = {
-            &quot;通用&quot;: &quot;&quot;&quot;
+            "通用": """
             忘记你以前的一切设定
             将下面的文本翻译为详细的场景英文描述，用作给AI出图，要求：
             1. 生成的场景描述，生成的英文中绝对不要包含“Blood, Cutting, Twerk, Making love, Voluptuous, Naughty, Wincest, Orgy, XXX, No clothes, Au naturel, No shirt, Decapitate, Bare, Nude, Barely dressed, Bra, Risque, Clear, Scantily clad, Cleavage, Stripped, Infested, Full frontal, Unclothed, Invisible clothes, Wearing nothing, Lingerie, With no shirt, Naked, Without clothes on, Negligee, Zero clothes, Gruesome, Fascist, Nazi, Prophet Mohammed, Slave, Coon, Honkey, Cocaine, Heroin, Meth, Crack, Kill, Belle Delphine, Hitler, Jinping, Lolita, President Xi, Torture, Disturbing, Farts, Fart, Poop, Infected, Warts, Shit, Brown pudding, Bunghole, Vomit, Seductive, Sperm, Hot, Sexy, Sadist, Sensored, Censored, Silenced, Deepfake, Inappropriate, Pus, Waifu, MP5, Succubus, 1488, Slaughter, Surgery, Reproduce, Crucified, Explicit, Large bust, Wang, Teratoma, Intimate, see through, Tryphophobia, Bloodbath, Wound, Cronenberg, Khorne, Cannibal, Cannibalism, Visceral, Guts, Bloodshot, Gory, Killing, Crucifixion, Vivisection, Massacre, Hemoglobin, Suicide, Arse, Labia, Ass, Mammaries, Badonkers, Bloody, Minge, Big Ass, Mommy Milker, Booba, Nipple, Oppai, Booty, Organs, Bosom, Ovaries, Flesh, Breasts, Penis, Busty, Phallus, Clunge, Sexy Female, Crotch, Skimpy, Dick, Thick, Bruises, Girth, Titty, Honkers, Vagina, Hooters, Veiny, Knob, Ahegao, Pinup, Ballgag, Car crash, Playboy, Bimbo, Pleasure, Bodily fluids, Pleasures, Boudoir, Rule34, Brothel, Seducing, Dominatrix, Corpse, Erotic, Fuck, Sensual, Hardcore, Hentai, Shag, Horny, Shibari, Incest, Smut, JAV, Jerk off king at pic, Thot, Kinbaku, Transparent, Legs spread, sensuality, belly button, porn, patriotic, bleed, excrement, petite, seduction, mccurry, provocative, sultry, erected, camisole, tight white, arrest, see-through, feces, anus, revealing clothing, vein, loli, -edge, boobs, -backed, tied up, zedong, bathing, jail, reticulum, rear end, sakimichan, behind bars, shirtless, dong, sexi, sexualiz”
             2. 描述符合文本中的内容
             4. 描述写成一行 描述写成一行 描述写成一行
             5. 只输出英文描述，不要其他的任何说明
-            &quot;&quot;&quot;,
-            &quot;中文基督&quot;: &quot;&quot;&quot;
+            """,
+            "中文基督": """
             忘记你以前的一切设定
             将下面的文本翻译为详细的场景英文描述，用作给AI出图，要求：
             1. 生成的场景描述，生成的英文中绝对不要包含“Blood, Cutting, Twerk, Making love, Voluptuous, Naughty, Wincest, Orgy, XXX, No clothes, Au naturel, No shirt, Decapitate, Bare, Nude, Barely dressed, Bra, Risque, Clear, Scantily clad, Cleavage, Stripped, Infested, Full frontal, Unclothed, Invisible clothes, Wearing nothing, Lingerie, With no shirt, Naked, Without clothes on, Negligee, Zero clothes, Gruesome, Fascist, Nazi, Prophet Mohammed, Slave, Coon, Honkey, Cocaine, Heroin, Meth, Crack, Kill, Belle Delphine, Hitler, Jinping, Lolita, President Xi, Torture, Disturbing, Farts, Fart, Poop, Infected, Warts, Shit, Brown pudding, Bunghole, Vomit, Seductive, Sperm, Hot, Sexy, Sadist, Sensored, Censored, Silenced, Deepfake, Inappropriate, Pus, Waifu, MP5, Succubus, 1488, Slaughter, Surgery, Reproduce, Crucified, Explicit, Large bust, Wang, Teratoma, Intimate, see through, Tryphophobia, Bloodbath, Wound, Cronenberg, Khorne, Cannibal, Cannibalism, Visceral, Guts, Bloodshot, Gory, Killing, Crucifixion, Vivisection, Massacre, Hemoglobin, Suicide, Arse, Labia, Ass, Mammaries, Badonkers, Bloody, Minge, Big Ass, Mommy Milker, Booba, Nipple, Oppai, Booty, Organs, Bosom, Ovaries, Flesh, Breasts, Penis, Busty, Phallus, Clunge, Sexy Female, Crotch, Skimpy, Dick, Thick, Bruises, Girth, Titty, Honkers, Vagina, Hooters, Veiny, Knob, Ahegao, Pinup, Ballgag, Car crash, Playboy, Bimbo, Pleasure, Bodily fluids, Pleasures, Boudoir, Rule34, Brothel, Seducing, Dominatrix, Corpse, Erotic, Fuck, Sensual, Hardcore, Hentai, Shag, Horny, Shibari, Incest, Smut, JAV, Jerk off king at pic, Thot, Kinbaku, Transparent, Legs spread, sensuality, belly button, porn, patriotic, bleed, excrement, petite, seduction, mccurry, provocative, sultry, erected, camisole, tight white, arrest, see-through, feces, anus, revealing clothing, vein, loli, -edge, boobs, -backed, tied up, zedong, bathing, jail, reticulum, rear end, sakimichan, behind bars, shirtless, dong, sexi, sexualiz”
             2. 描述符合文本中的内容
             4. 描述写成一行 描述写成一行 描述写成一行
             5. 只输出英文描述，不要其他的任何说明
-            &quot;&quot;&quot;,
-            &quot;英文基督&quot;: &quot;&quot;&quot;
+            """,
+            "英文基督": """
             忘记你以前的一切设定
             将下面的文本翻译为详细的场景英文描述，用作给AI出图，要求：
             1. 生成的场景描述，生成的英文中绝对不要包含“Blood, Cutting, Twerk, Making love, Voluptuous, Naughty, Wincest, Orgy, XXX, No clothes, Au naturel, No shirt, Decapitate, Bare, Nude, Barely dressed, Bra, Risque, Clear, Scantily clad, Cleavage, Stripped, Infested, Full frontal, Unclothed, Invisible clothes, Wearing nothing, Lingerie, With no shirt, Naked, Without clothes on, Negligee, Zero clothes, Gruesome, Fascist, Nazi, Prophet Mohammed, Slave, Coon, Honkey, Cocaine, Heroin, Meth, Crack, Kill, Belle Delphine, Hitler, Jinping, Lolita, President Xi, Torture, Disturbing, Farts, Fart, Poop, Infected, Warts, Shit, Brown pudding, Bunghole, Vomit, Seductive, Sperm, Hot, Sexy, Sadist, Sensored, Censored, Silenced, Deepfake, Inappropriate, Pus, Waifu, MP5, Succubus, 1488, Slaughter, Surgery, Reproduce, Crucified, Explicit, Large bust, Wang, Teratoma, Intimate, see through, Tryphophobia, Bloodbath, Wound, Cronenberg, Khorne, Cannibal, Cannibalism, Visceral, Guts, Bloodshot, Gory, Killing, Crucifixion, Vivisection, Massacre, Hemoglobin, Suicide, Arse, Labia, Ass, Mammaries, Badonkers, Bloody, Minge, Big Ass, Mommy Milker, Booba, Nipple, Oppai, Booty, Organs, Bosom, Ovaries, Flesh, Breasts, Penis, Busty, Phallus, Clunge, Sexy Female, Crotch, Skimpy, Dick, Thick, Bruises, Girth, Titty, Honkers, Vagina, Hooters, Veiny, Knob, Ahegao, Pinup, Ballgag, Car crash, Playboy, Bimbo, Pleasure, Bodily fluids, Pleasures, Boudoir, Rule34, Brothel, Seducing, Dominatrix, Corpse, Erotic, Fuck, Sensual, Hardcore, Hentai, Shag, Horny, Shibari, Incest, Smut, JAV, Jerk off king at pic, Thot, Kinbaku, Transparent, Legs spread, sensuality, belly button, porn, patriotic, bleed, excrement, petite, seduction, mccurry, provocative, sultry, erected, camisole, tight white, arrest, see-through, feces, anus, revealing clothing, vein, loli, -edge, boobs, -backed, tied up, zedong, bathing, jail, reticulum, rear end, sakimichan, behind bars, shirtless, dong, sexi, sexualiz”
             2. 描述符合文本中的内容
             4. 描述写成一行 描述写成一行 描述写成一行
             5. 只输出英文描述，不要其他的任何说明
-            &quot;&quot;&quot;
+            """
         }
         
         # 初始化结果列表
         self.gpt_results = []
 
     def get_current_time(self):
-        &quot;&quot;&quot;获取当前时间的格式化字符串&quot;&quot;&quot;
-        return datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)
+        """获取当前时间的格式化字符串"""
+        return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    def log_message(self, message, level=&quot;INFO&quot;):
-        &quot;&quot;&quot;添加日志记录功能&quot;&quot;&quot;
+    def log_message(self, message, level="INFO"):
+        """添加日志记录功能"""
         timestamp = self.get_current_time()
-        log_entry = f&quot;[{timestamp}] [{level}] {message}&quot;
+        log_entry = f"[{timestamp}] [{level}] {message}"
         print(log_entry)
 
     def check_sensitive_words(self, text):
-        &quot;&quot;&quot;检查是否包含敏感词&quot;&quot;&quot;
+        """检查是否包含敏感词"""
         sensitive_words = [
-            &quot;Blood&quot;, &quot;Cutting&quot;, &quot;Twerk&quot;, &quot;Making love&quot;, &quot;Voluptuous&quot;, &quot;Naughty&quot;, 
-            &quot;Wincest&quot;, &quot;Orgy&quot;, &quot;XXX&quot;, &quot;No clothes&quot;, &quot;Au naturel&quot;, &quot;No shirt&quot;, 
-            &quot;Decapitate&quot;, &quot;Bare&quot;, &quot;Nude&quot;, &quot;Barely dressed&quot;, &quot;Bra&quot;, &quot;Risque&quot;, 
-            &quot;Clear&quot;, &quot;Scantily clad&quot;, &quot;Cleavage&quot;, &quot;Stripped&quot;, &quot;Infested&quot;, 
-            &quot;Full frontal&quot;, &quot;Unclothed&quot;, &quot;Invisible clothes&quot;, &quot;Wearing nothing&quot;, 
-            &quot;Lingerie&quot;, &quot;With no shirt&quot;, &quot;Naked&quot;, &quot;Without clothes on&quot;, &quot;Negligee&quot;, 
-            &quot;Zero clothes&quot;, &quot;Gruesome&quot;, &quot;Fascist&quot;, &quot;Nazi&quot;, &quot;Prophet Mohammed&quot;, 
-            &quot;Slave&quot;, &quot;Coon&quot;, &quot;Honkey&quot;, &quot;Cocaine&quot;, &quot;Heroin&quot;, &quot;Meth&quot;, &quot;Crack&quot;, 
-            &quot;Kill&quot;, &quot;Belle Delphine&quot;, &quot;Hitler&quot;, &quot;Jinping&quot;, &quot;Lolita&quot;, &quot;President Xi&quot;, 
-            &quot;Torture&quot;, &quot;Disturbing&quot;, &quot;Farts&quot;, &quot;Fart&quot;, &quot;Poop&quot;, &quot;Infected&quot;, &quot;Warts&quot;, 
-            &quot;Shit&quot;, &quot;Brown pudding&quot;, &quot;Bunghole&quot;, &quot;Vomit&quot;, &quot;Seductive&quot;, &quot;Sperm&quot;, 
-            &quot;Hot&quot;, &quot;Sexy&quot;, &quot;Sadist&quot;, &quot;Sensored&quot;, &quot;Censored&quot;, &quot;Silenced&quot;, &quot;Deepfake&quot;, 
-            &quot;Inappropriate&quot;, &quot;Pus&quot;, &quot;Waifu&quot;, &quot;MP5&quot;, &quot;Succubus&quot;, &quot;1488&quot;, &quot;Slaughter&quot;, 
-            &quot;Surgery&quot;, &quot;Reproduce&quot;, &quot;Crucified&quot;, &quot;Explicit&quot;, &quot;Large bust&quot;, &quot;Wang&quot;, 
-            &quot;Teratoma&quot;, &quot;Intimate&quot;, &quot;see through&quot;, &quot;Tryphophobia&quot;, &quot;Bloodbath&quot;, 
-            &quot;Wound&quot;, &quot;Cronenberg&quot;, &quot;Khorne&quot;, &quot;Cannibal&quot;, &quot;Cannibalism&quot;, &quot;Visceral&quot;, 
-            &quot;Guts&quot;, &quot;Bloodshot&quot;, &quot;Gory&quot;, &quot;Killing&quot;, &quot;Crucifixion&quot;, &quot;Vivisection&quot;, 
-            &quot;Massacre&quot;, &quot;Hemoglobin&quot;, &quot;Suicide&quot;, &quot;Arse&quot;, &quot;Labia&quot;, &quot;Ass&quot;, &quot;Mammaries&quot;, 
-            &quot;Badonkers&quot;, &quot;Bloody&quot;, &quot;Minge&quot;, &quot;Big Ass&quot;, &quot;Mommy Milker&quot;, &quot;Booba&quot;, 
-            &quot;Nipple&quot;, &quot;Oppai&quot;, &quot;Booty&quot;, &quot;Organs&quot;, &quot;Bosom&quot;, &quot;Ovaries&quot;, &quot;Flesh&quot;, 
-            &quot;Breasts&quot;, &quot;Penis&quot;, &quot;Busty&quot;, &quot;Phallus&quot;, &quot;Clunge&quot;, &quot;Sexy Female&quot;, 
-            &quot;Crotch&quot;, &quot;Skimpy&quot;, &quot;Dick&quot;, &quot;Thick&quot;, &quot;Bruises&quot;, &quot;Girth&quot;, &quot;Titty&quot;, 
-            &quot;Honkers&quot;, &quot;Vagina&quot;, &quot;Hooters&quot;, &quot;Veiny&quot;, &quot;Knob&quot;, &quot;Ahegao&quot;, &quot;Pinup&quot;, 
-            &quot;Ballgag&quot;, &quot;Car crash&quot;, &quot;Playboy&quot;, &quot;Bimbo&quot;, &quot;Pleasure&quot;, &quot;Bodily fluids&quot;, 
-            &quot;Pleasures&quot;, &quot;Boudoir&quot;, &quot;Rule34&quot;, &quot;Brothel&quot;, &quot;Seducing&quot;, &quot;Dominatrix&quot;, 
-            &quot;Corpse&quot;, &quot;Erotic&quot;, &quot;Fuck&quot;, &quot;Sensual&quot;, &quot;Hardcore&quot;, &quot;Hentai&quot;, &quot;Shag&quot;, 
-            &quot;Horny&quot;, &quot;Shibari&quot;, &quot;Incest&quot;, &quot;Smut&quot;, &quot;JAV&quot;, &quot;Jerk off king at pic&quot;, 
-            &quot;Thot&quot;, &quot;Kinbaku&quot;, &quot;Transparent&quot;, &quot;Legs spread&quot;, &quot;sensuality&quot;, 
-            &quot;belly button&quot;, &quot;porn&quot;, &quot;patriotic&quot;, &quot;bleed&quot;, &quot;excrement&quot;, &quot;petite&quot;, 
-            &quot;seduction&quot;, &quot;mccurry&quot;, &quot;provocative&quot;, &quot;sultry&quot;, &quot;erected&quot;, &quot;camisole&quot;, 
-            &quot;tight white&quot;, &quot;arrest&quot;, &quot;see-through&quot;, &quot;feces&quot;, &quot;anus&quot;, 
-            &quot;revealing clothing&quot;, &quot;vein&quot;, &quot;loli&quot;, &quot;-edge&quot;, &quot;boobs&quot;, &quot;-backed&quot;, 
-            &quot;tied up&quot;, &quot;zedong&quot;, &quot;bathing&quot;, &quot;jail&quot;, &quot;reticulum&quot;, &quot;rear end&quot;, 
-            &quot;sakimichan&quot;, &quot;behind bars&quot;, &quot;shirtless&quot;, &quot;dong&quot;, &quot;sexi&quot;, &quot;sexualiz&quot;
+            "Blood", "Cutting", "Twerk", "Making love", "Voluptuous", "Naughty", 
+            "Wincest", "Orgy", "XXX", "No clothes", "Au naturel", "No shirt", 
+            "Decapitate", "Bare", "Nude", "Barely dressed", "Bra", "Risque", 
+            "Clear", "Scantily clad", "Cleavage", "Stripped", "Infested", 
+            "Full frontal", "Unclothed", "Invisible clothes", "Wearing nothing", 
+            "Lingerie", "With no shirt", "Naked", "Without clothes on", "Negligee", 
+            "Zero clothes", "Gruesome", "Fascist", "Nazi", "Prophet Mohammed", 
+            "Slave", "Coon", "Honkey", "Cocaine", "Heroin", "Meth", "Crack", 
+            "Kill", "Belle Delphine", "Hitler", "Jinping", "Lolita", "President Xi", 
+            "Torture", "Disturbing", "Farts", "Fart", "Poop", "Infected", "Warts", 
+            "Shit", "Brown pudding", "Bunghole", "Vomit", "Seductive", "Sperm", 
+            "Hot", "Sexy", "Sadist", "Sensored", "Censored", "Silenced", "Deepfake", 
+            "Inappropriate", "Pus", "Waifu", "MP5", "Succubus", "1488", "Slaughter", 
+            "Surgery", "Reproduce", "Crucified", "Explicit", "Large bust", "Wang", 
+            "Teratoma", "Intimate", "see through", "Tryphophobia", "Bloodbath", 
+            "Wound", "Cronenberg", "Khorne", "Cannibal", "Cannibalism", "Visceral", 
+            "Guts", "Bloodshot", "Gory", "Killing", "Crucifixion", "Vivisection", 
+            "Massacre", "Hemoglobin", "Suicide", "Arse", "Labia", "Ass", "Mammaries", 
+            "Badonkers", "Bloody", "Minge", "Big Ass", "Mommy Milker", "Booba", 
+            "Nipple", "Oppai", "Booty", "Organs", "Bosom", "Ovaries", "Flesh", 
+            "Breasts", "Penis", "Busty", "Phallus", "Clunge", "Sexy Female", 
+            "Crotch", "Skimpy", "Dick", "Thick", "Bruises", "Girth", "Titty", 
+            "Honkers", "Vagina", "Hooters", "Veiny", "Knob", "Ahegao", "Pinup", 
+            "Ballgag", "Car crash", "Playboy", "Bimbo", "Pleasure", "Bodily fluids", 
+            "Pleasures", "Boudoir", "Rule34", "Brothel", "Seducing", "Dominatrix", 
+            "Corpse", "Erotic", "Fuck", "Sensual", "Hardcore", "Hentai", "Shag", 
+            "Horny", "Shibari", "Incest", "Smut", "JAV", "Jerk off king at pic", 
+            "Thot", "Kinbaku", "Transparent", "Legs spread", "sensuality", 
+            "belly button", "porn", "patriotic", "bleed", "excrement", "petite", 
+            "seduction", "mccurry", "provocative", "sultry", "erected", "camisole", 
+            "tight white", "arrest", "see-through", "feces", "anus", 
+            "revealing clothing", "vein", "loli", "-edge", "boobs", "-backed", 
+            "tied up", "zedong", "bathing", "jail", "reticulum", "rear end", 
+            "sakimichan", "behind bars", "shirtless", "dong", "sexi", "sexualiz"
         ]
         
         # 将文本转换为小写进行检查
@@ -1712,123 +1662,123 @@ class MJImageGenerator:
         return None
 
     def submit_task(self, prompt):
-        &quot;&quot;&quot;提交任务到MJ&quot;&quot;&quot;
+        """提交任务到MJ"""
         while True:  # 使用循环代替递归
             try:
                 # 检查并移除敏感词
                 sensitive_word = self.check_sensitive_words(prompt)
                 if sensitive_word:
-                    self.log_message(f&quot;提示词中包含敏感词: {sensitive_word}，已移除&quot;)
-                    prompt = prompt.replace(sensitive_word, &quot;&quot;).strip()
+                    self.log_message(f"提示词中包含敏感词: {sensitive_word}，已移除")
+                    prompt = prompt.replace(sensitive_word, "").strip()
                 
                 data = {
-                    &quot;prompt&quot;: f&quot;{prompt} --ar 16:9{&#x27; --relax&#x27; if self.relax_mode else &#x27;&#x27;}&quot;,  # 根据relax_mode决定是否添加relax参数
-                    &quot;notifyHook&quot;: &quot;&quot;
+                    "prompt": f"{prompt} --ar 16:9{' --relax' if self.relax_mode else ''}",  # 根据relax_mode决定是否添加relax参数
+                    "notifyHook": ""
                 }
                 
-                response = requests.post(f&quot;{self.mj_api_base}/submit/imagine&quot;, json=data)
+                response = requests.post(f"{self.mj_api_base}/submit/imagine", json=data)
                 
                 # 检查响应状态码
                 if response.status_code != 200:
-                    self.log_message(f&quot;API请求失败，状态码: {response.status_code}&quot;)
+                    self.log_message(f"API请求失败，状态码: {response.status_code}")
                     return None
                     
                 try:
                     result = response.json()
                 except ValueError:
-                    self.log_message(f&quot;API返回的不是有效的JSON: {response.text}&quot;)
+                    self.log_message(f"API返回的不是有效的JSON: {response.text}")
                     return None
                 
                 if not isinstance(result, dict):
-                    self.log_message(f&quot;API返回格式错误: {result}&quot;)
+                    self.log_message(f"API返回格式错误: {result}")
                     return None
                     
-                code = result.get(&quot;code&quot;)
+                code = result.get("code")
                 
                 if code == 1:  # 成功
-                    task_id = result.get(&quot;result&quot;)
+                    task_id = result.get("result")
                     if isinstance(task_id, dict):
-                        task_id = task_id.get(&quot;taskId&quot;)
-                    self.log_message(f&quot;任务提交成功，ID: {task_id}&quot;)
+                        task_id = task_id.get("taskId")
+                    self.log_message(f"任务提交成功，ID: {task_id}")
                     return task_id
                 elif code == 22:  # 进入队列
                     # 检查当前队列状态
                     _, queue_count = self.check_queue_status()
-                    if queue_count &gt;= 3:
-                        self.log_message(f&quot;队列中已有{queue_count}个任务，等待90秒后重试&quot;)
+                    if queue_count >= 3:
+                        self.log_message(f"队列中已有{queue_count}个任务，等待90秒后重试")
                         time.sleep(90)  # 等待90秒
                     else:
-                        self.log_message(f&quot;队列中有{queue_count}个任务，等待10秒后重试&quot;)
+                        self.log_message(f"队列中有{queue_count}个任务，等待10秒后重试")
                         time.sleep(10)  # 等待10秒
                     continue  # 继续循环，重新尝试提交
                 elif code == 23:  # 队列已满
-                    self.log_message(&quot;队列已满，等待2分钟后重试&quot;)
+                    self.log_message("队列已满，等待2分钟后重试")
                     time.sleep(120)  # 等待2分钟
                     continue  # 继续循环，重新尝试提交
                 elif code == 24:  # API返回敏感词
-                    properties = result.get(&quot;properties&quot;, {})
+                    properties = result.get("properties", {})
                     if isinstance(properties, dict):
-                        banned_word = properties.get(&quot;bannedWord&quot;, &quot;unknown&quot;)
+                        banned_word = properties.get("bannedWord", "unknown")
                     else:
-                        banned_word = &quot;unknown&quot;
-                    self.log_message(f&quot;API检测到敏感词: {banned_word}，尝试移除后重新提交&quot;)
+                        banned_word = "unknown"
+                    self.log_message(f"API检测到敏感词: {banned_word}，尝试移除后重新提交")
                     # 移除API检测到的敏感词
-                    prompt = prompt.replace(banned_word, &quot;&quot;).strip()
+                    prompt = prompt.replace(banned_word, "").strip()
                     continue  # 继续循环，重新尝试提交
                 else:
-                    self.log_message(f&quot;提交任务失败: {result}&quot;)
+                    self.log_message(f"提交任务失败: {result}")
                     return None
                     
             except Exception as e:
-                self.log_message(f&quot;提交任务时出错: {str(e)}&quot;)
+                self.log_message(f"提交任务时出错: {str(e)}")
                 return None
 
     def submit_mj_task(self, prompt, index):
-        &quot;&quot;&quot;提交MJ任务&quot;&quot;&quot;
+        """提交MJ任务"""
         try:
             # 根据模式添加参数
-            prompt_with_params = f&quot;{prompt} --ar 16:9&quot;
+            prompt_with_params = f"{prompt} --ar 16:9"
             if self.relax_mode:
-                prompt_with_params += &quot; --relax&quot;
+                prompt_with_params += " --relax"
             
             data = {
-                &quot;prompt&quot;: prompt_with_params,
-                &quot;notifyHook&quot;: &quot;&quot;
+                "prompt": prompt_with_params,
+                "notifyHook": ""
             }
-            response = requests.post(f&quot;{self.mj_api_base}/submit/imagine&quot;, json=data)
+            response = requests.post(f"{self.mj_api_base}/submit/imagine", json=data)
             result = response.json()
-            code = result.get(&quot;code&quot;)
+            code = result.get("code")
             
             if code in [1, 21, 22]:  # 成功、已存在、进入队列
-                return result.get(&quot;result&quot;)
+                return result.get("result")
             elif code == 23:  # 队列已满
-                self.log_message(&quot;队列已满，等待重试&quot;)
+                self.log_message("队列已满，等待重试")
                 return None
             elif code == 24:  # 敏感词
-                banned_word = result.get(&quot;properties&quot;, {}).get(&quot;bannedWord&quot;, &quot;unknown&quot;)
-                self.log_message(f&quot;包含敏感词: {banned_word}&quot;)
+                banned_word = result.get("properties", {}).get("bannedWord", "unknown")
+                self.log_message(f"包含敏感词: {banned_word}")
                 return None
             else:
-                self.log_message(f&quot;提交失败: {result.get(&#x27;description&#x27;, &#x27;未知错误&#x27;)}&quot;)
+                self.log_message(f"提交失败: {result.get('description', '未知错误')}")
                 return None
             
         except Exception as e:
-            self.log_message(f&quot;提交任务失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"提交任务失败: {str(e)}", "ERROR")
             return None
 
     def save_image_with_index(self, img, x, y):
-        &quot;&quot;&quot;保存图，理同名文件&quot;&quot;&quot;
+        """保存图，理同名文件"""
         while True:
-            filename = f&quot;{x}.{y}.png&quot;
+            filename = f"{x}.{y}.png"
             filepath = os.path.join(self.image_folder, filename)
             if not os.path.exists(filepath):
                 img.save(filepath)
-                self.log_message(f&quot;保存图片: {filename}&quot;)
+                self.log_message(f"保存图片: {filename}")
                 break
             y += 1
 
     def split_and_save_image(self, image_url, index):
-        &quot;&quot;&quot;将图片切割成4份并保存&quot;&quot;&quot;
+        """将图片切割成4份并保存"""
         try:
             response = requests.get(image_url)
             img = Image.open(BytesIO(response.content))
@@ -1854,20 +1804,20 @@ class MJImageGenerator:
                 self.save_image_with_index(part, index, i)
                 
         except Exception as e:
-            self.log_message(f&quot;切割保存图片失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"切割保存图片失败: {str(e)}", "ERROR")
 
     def read_from_docx(self, file_name):
-        &quot;&quot;&quot;从docx文件中读取内容&quot;&quot;&quot;
+        """从docx文件中读取内容"""
         try:
             # 如果文件名已经包含.docx扩展名，就不再添加
-            if not file_name.endswith(&#x27;.docx&#x27;):
-                file_name = f&quot;{file_name}.docx&quot;
+            if not file_name.endswith('.docx'):
+                file_name = f"{file_name}.docx"
             
             file_path = os.path.join(self.desktop, file_name)
-            self.log_message(f&quot;尝试读取文件: {file_path}&quot;)
+            self.log_message(f"尝试读取文件: {file_path}")
             
             if not os.path.exists(file_path):
-                self.log_message(&quot;错误: 找不到文件&quot;, &quot;ERROR&quot;)
+                self.log_message("错误: 找不到文件", "ERROR")
                 return None
                 
             doc = Document(file_path)
@@ -1877,22 +1827,22 @@ class MJImageGenerator:
                 if paragraph.text.strip():  # 只添加非空段落
                     content.append(paragraph.text.strip())
                     
-            return &quot;\n&quot;.join(content) if content else None
+            return "\n".join(content) if content else None
             
         except Exception as e:
-            self.log_message(f&quot;读取文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"读取文件失败: {str(e)}", "ERROR")
             return None
 
     def split_into_paragraphs(self, text):
-        &quot;&quot;&quot;将文本分段&quot;&quot;&quot;
+        """将文本分段"""
         try:
             paragraphs = []
-            lines = [line.strip() for line in text.split(&#x27;\n&#x27;) if line.strip()]
-            text = &#x27;&#x27;.join(lines)
+            lines = [line.strip() for line in text.split('\n') if line.strip()]
+            text = ''.join(lines)
             start_pos = 0
             
-            while start_pos &lt; len(text):
-                if len(text) - start_pos &lt;= 100:
+            while start_pos < len(text):
+                if len(text) - start_pos <= 100:
                     last_paragraph = text[start_pos:].strip()
                     if last_paragraph:
                         paragraphs.append(last_paragraph)
@@ -1901,7 +1851,7 @@ class MJImageGenerator:
                 check_pos = start_pos + 100
                 found_punctuation = False
                 for i in range(check_pos, min(check_pos + 15, len(text))):
-                    if text[i] in &#x27;&quot;.。，,&#x27;:
+                    if text[i] in '"。，,':
                         paragraphs.append(text[start_pos:i + 1].strip())
                         start_pos = i + 1
                         found_punctuation = True
@@ -1914,18 +1864,18 @@ class MJImageGenerator:
             return paragraphs
             
         except Exception as e:
-            self.log_message(f&quot;分段处理出错: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"分段处理出错: {str(e)}", "ERROR")
             return None
 
     def check_queue_status(self):
-        &quot;&quot;&quot;检查当前队列状态&quot;&quot;&quot;
+        """检查当前队列状态"""
         try:
             # 检查正在运行的任务
-            running_response = requests.get(f&quot;{self.mj_api_base}/task/running&quot;)
+            running_response = requests.get(f"{self.mj_api_base}/task/running")
             running_tasks = running_response.json()
             
             # 检查队列中的任务
-            queue_response = requests.get(f&quot;{self.mj_api_base}/task/queue&quot;)
+            queue_response = requests.get(f"{self.mj_api_base}/task/queue")
             queue_tasks = queue_response.json()
             
             # 准备进度信息
@@ -1933,168 +1883,168 @@ class MJImageGenerator:
             
             # 处理运行中的任务
             for task in running_tasks:
-                task_id = task.get(&quot;id&quot;, &quot;未知&quot;)
-                progress = task.get(&quot;progress&quot;, &quot;0%&quot;)
-                status = task.get(&quot;status&quot;, &quot;未知&quot;)
-                progress_info.append(f&quot;任务ID: {task_id} | 状态: {status} | 进度: {progress}&quot;)
+                task_id = task.get("id", "未知")
+                progress = task.get("progress", "0%")
+                status = task.get("status", "未知")
+                progress_info.append(f"任务ID: {task_id} | 状态: {status} | 进度: {progress}")
             
             # 处理队列中的任务
             for task in queue_tasks:
-                task_id = task.get(&quot;id&quot;, &quot;未知&quot;)
-                progress_info.append(f&quot;任务ID: {task_id} | 状态: 排队中&quot;)
+                task_id = task.get("id", "未知")
+                progress_info.append(f"任务ID: {task_id} | 状态: 排队中")
             
             # 打印进度信息
-            self.log_message(&quot;=== 当前任务状态 ===&quot;)
+            self.log_message("=== 当前任务状态 ===")
             if progress_info:
                 for info in progress_info:
                     self.log_message(info)
-            self.log_message(&quot;=&quot; * 30)
+            self.log_message("=" * 30)
             
             return len(running_tasks), len(queue_tasks)
             
         except Exception as e:
-            self.log_message(f&quot;检查队列状态失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"检查队列状态失败: {str(e)}", "ERROR")
             return 0, 0
 
     def check_tasks_progress(self):
-        &quot;&quot;&quot;检查所有任务的进度&quot;&quot;&quot;
+        """检查所有任务的进度"""
         try:
             # 检查运行任务
-            running_response = requests.get(f&quot;{self.mj_api_base}/task/running&quot;)
-            running_tasks = running_response.json().get(&quot;result&quot;, [])
+            running_response = requests.get(f"{self.mj_api_base}/task/running")
+            running_tasks = running_response.json().get("result", [])
             
             # 检查队列中的任务
-            queue_response = requests.get(f&quot;{self.mj_api_base}/task/queue&quot;)
-            queued_tasks = queue_response.json().get(&quot;result&quot;, [])
+            queue_response = requests.get(f"{self.mj_api_base}/task/queue")
+            queued_tasks = queue_response.json().get("result", [])
             
             # 获取进度信息
             progress_info = []
             
             # 处理运行中的任务
             for task in running_tasks:
-                task_id = task.get(&quot;id&quot;)
-                progress = task.get(&quot;progress&quot;, &quot;未知&quot;)
-                prompt = task.get(&quot;prompt&quot;, &quot;未知&quot;)
-                status = &quot;运行中&quot;
-                progress_info.append(f&quot;任务ID: {task_id} | 状态: {status} | 进度: {progress}% | 提示词: {prompt[:30]}...&quot;)
+                task_id = task.get("id")
+                progress = task.get("progress", "未知")
+                prompt = task.get("prompt", "未知")
+                status = "运行中"
+                progress_info.append(f"任务ID: {task_id} | 状态: {status} | 进度: {progress}% | 提示词: {prompt[:30]}...")
                 
             # 处理队列中的任务
             for task in queued_tasks:
-                task_id = task.get(&quot;id&quot;)
-                prompt = task.get(&quot;prompt&quot;, &quot;未知&quot;)
-                status = &quot;排队中&quot;
-                progress_info.append(f&quot;任务ID: {task_id} | 状态: {status} | 提示词: {prompt[:30]}...&quot;)
+                task_id = task.get("id")
+                prompt = task.get("prompt", "未知")
+                status = "排队中"
+                progress_info.append(f"任务ID: {task_id} | 状态: {status} | 提示词: {prompt[:30]}...")
             
             # 打印进度信息
-            print(f&quot;\n[{self.get_current_time()}] === 当前任务状态 ===&quot;)
-            print(f&quot;运行中任务数: {len(running_tasks)}&quot;)
-            print(f&quot;排队中任务数: {len(queued_tasks)}&quot;)
+            print(f"\n[{self.get_current_time()}] === 当前任务状态 ===")
+            print(f"运行中任务数: {len(running_tasks)}")
+            print(f"排队中任务数: {len(queued_tasks)}")
             if progress_info:
-                print(&quot;\n详细进度:&quot;)
+                print("\n详细进度:")
                 for info in progress_info:
                     print(info)
-            print(&quot;=&quot; * 50)
+            print("=" * 50)
             
             return len(running_tasks), len(queued_tasks)
             
         except Exception as e:
-            print(f&quot;[{self.get_current_time()}] 检查任务进度失败: {str(e)}&quot;)
+            print(f"[{self.get_current_time()}] 检查任务进度失败: {str(e)}")
             return 0, 0
 
     def check_task_status(self, task_id):
-        &quot;&quot;&quot;检查任务状态&quot;&quot;&quot;
+        """检查任务状态"""
         try:
-            response = requests.get(f&quot;{self.mj_api_base}/task/{task_id}/fetch&quot;)
+            response = requests.get(f"{self.mj_api_base}/task/{task_id}/fetch")
             result = response.json()
             
-            if result.get(&quot;status&quot;) == &quot;SUCCESS&quot;:
-                return True, result.get(&quot;imageUrl&quot;)
-            elif result.get(&quot;status&quot;) == &quot;FAILURE&quot;:
-                self.log_message(f&quot;任务 {task_id} 失败: {result.get(&#x27;failReason&#x27;)}&quot;, &quot;ERROR&quot;)
+            if result.get("status") == "SUCCESS":
+                return True, result.get("imageUrl")
+            elif result.get("status") == "FAILURE":
+                self.log_message(f"任务 {task_id} 失败: {result.get('failReason')}", "ERROR")
                 return False, None
-            elif result.get(&quot;status&quot;) in [&quot;NOT_START&quot;, &quot;SUBMITTED&quot;, &quot;IN_PROGRESS&quot;]:
-                progress = result.get(&quot;progress&quot;, &quot;0%&quot;)
-                self.log_message(f&quot;任务 {task_id} 执行中 - 进度: {progress}&quot;)
+            elif result.get("status") in ["NOT_START", "SUBMITTED", "IN_PROGRESS"]:
+                progress = result.get("progress", "0%")
+                self.log_message(f"任务 {task_id} 执行中 - 进度: {progress}")
                 return None, None
             else:
-                self.log_message(f&quot;未知状态: {result.get(&#x27;status&#x27;)}&quot;)
+                self.log_message(f"未知状态: {result.get('status')}")
                 return None, None
             
         except Exception as e:
-            self.log_message(f&quot;检查任务状态失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"检查任务状态失败: {str(e)}", "ERROR")
             return None, None
 
     def start_caffeinate(self):
-        &quot;&quot;&quot;启动防睡眠&quot;&quot;&quot;
-        self.caffeinate_process = subprocess.Popen([&#x27;caffeinate&#x27;, &#x27;-d&#x27;])
-        self.log_message(&quot;防睡眠已启动&quot;)
+        """启动防睡眠"""
+        self.caffeinate_process = subprocess.Popen(['caffeinate', '-d'])
+        self.log_message("防睡眠已启动")
         
     def stop_caffeinate(self):
-        &quot;&quot;&quot;停止防睡眠&quot;&quot;&quot;
+        """停止防睡眠"""
         if self.caffeinate_process:
             self.caffeinate_process.terminate()
             self.caffeinate_process = None
-            self.log_message(&quot;防睡眠已关闭&quot;)
+            self.log_message("防睡眠已关闭")
 
     def select_files(self):
-        &quot;&quot;&quot;选择要处理的文件&quot;&quot;&quot;
+        """选择要处理的文件"""
         # 获取桌面上的所有非隐藏的docx文件
         docx_files = [f for f in os.listdir(self.desktop) 
-                     if f.endswith(&#x27;.docx&#x27;) 
-                     and not f.startswith(&#x27;.&#x27;)  # 非隐藏文件
-                     and not f.startswith(&#x27;~&#x27;)] # 非临时文件
+                     if f.endswith('.docx') 
+                     and not f.startswith('.')  # 非隐藏文件
+                     and not f.startswith('~')] # 非临时文件
         
         if not docx_files:
-            self.log_message(&quot;未找到docx文件&quot;)
+            self.log_message("未找到docx文件")
             return None
             
         while True:
-            print(&quot;\n=== 可用的文件 ===&quot;)
+            print("\n=== 可用的文件 ===")
             for i, file in enumerate(docx_files, 1):
-                print(f&quot;{i}. {file}&quot;)
-            print(&quot;\n请选择要处理的文件编号（多个文件用空格分隔，输入0退出）：&quot;)
+                print(f"{i}. {file}")
+            print("\n请选择要处理的文件编号（多个文件用空格分隔，输入0退出）：")
             
             try:
                 choice = input().strip()
-                if choice == &#x27;0&#x27;:
+                if choice == '0':
                     return None
                     
                 indices = [int(x) - 1 for x in choice.split()]
-                if all(0 &lt;= i &lt; len(docx_files) for i in indices):
+                if all(0 <= i < len(docx_files) for i in indices):
                     return indices
                 else:
-                    print(&quot;无效的选择，请重新输入&quot;)
+                    print("无效的选择，请重新输入")
             except ValueError:
-                print(&quot;输入格式错误，请重新输入&quot;)
+                print("输入格式错误，请重新输入")
                 
     def select_mode(self, file_name):
-        &quot;&quot;&quot;为文件选择处理模式&quot;&quot;&quot;
+        """为文件选择处理模式"""
         while True:
-            print(f&quot;\n为文件 {file_name} 选择处理模式：&quot;)
-            print(&quot;1. 通用模式&quot;)
-            print(&quot;2. 中文基督模式&quot;)
-            print(&quot;3. 英文基督模式&quot;)
-            print(&quot;0. 返回上一步&quot;)
+            print(f"\n为文件 {file_name} 选择处理模式：")
+            print("1. 通用模式")
+            print("2. 中文基督模式")
+            print("3. 英文基督模式")
+            print("0. 返回上一步")
             
-            mode = input(&quot;请输入选项编号 (0/1/2/3): &quot;).strip()
-            if mode == &#x27;0&#x27;:
+            mode = input("请输入选项编号 (0/1/2/3): ").strip()
+            if mode == '0':
                 return None
-            elif mode in [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;]:
+            elif mode in ['1', '2', '3']:
                 mode_map = {
-                    &quot;1&quot;: &quot;通用&quot;,
-                    &quot;2&quot;: &quot;中文基督&quot;,
-                    &quot;3&quot;: &quot;英文基督&quot;
+                    "1": "通用",
+                    "2": "中文基督",
+                    "3": "英文基督"
                 }
                 return mode_map[mode]
             else:
-                print(&quot;输入无效，请重新输入&quot;)
+                print("输入无效，请重新输入")
                 
     def run(self):
-        &quot;&quot;&quot;主运行方法&quot;&quot;&quot;
+        """主运行方法"""
         try:
             # 启动防睡眠
             self.start_caffeinate()
-            self.log_message(&quot;开始运行MJ图片生成器&quot;)
+            self.log_message("开始运行MJ图片生成器")
             
             # 选择要处理的文件
             indices = self.select_files()
@@ -2103,9 +2053,9 @@ class MJImageGenerator:
                 
             # 获取桌面上的所有docx文件
             docx_files = [f for f in os.listdir(self.desktop) 
-                         if f.endswith(&#x27;.docx&#x27;) 
-                         and not f.startswith(&#x27;.&#x27;) 
-                         and not f.startswith(&#x27;~&#x27;)]
+                         if f.endswith('.docx') 
+                         and not f.startswith('.') 
+                         and not f.startswith('~')]
             
             # 为每个选中的文件选择处理模式
             file_modes = {}
@@ -2119,7 +2069,7 @@ class MJImageGenerator:
             # 处理每个文件
             for file_name, mode in file_modes.items():
                 self.current_mode = mode  # 设置当前模式
-                self.log_message(f&quot;\n开始处理文件: {file_name}，模式: {mode}&quot;)
+                self.log_message(f"\n开始处理文件: {file_name}，模式: {mode}")
                 
                 # 读取文件内容
                 content = self.read_from_docx(file_name)
@@ -2136,22 +2086,22 @@ class MJImageGenerator:
                 for i, paragraph in enumerate(paragraphs, 1):
                     try:
                         response = self.client.chat.completions.create(
-                            model=&quot;gpt-4o-mini&quot;,
+                            model="gpt-4o-mini",
                             messages=[
-                                {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self.system_prompts[mode]},
-                                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: paragraph}
+                                {"role": "system", "content": self.system_prompts[mode]},
+                                {"role": "user", "content": paragraph}
                             ]
                         )
                         result = response.choices[0].message.content
                         self.gpt_results.append(result)
-                        self.log_message(f&quot;GPT处理进度: {i}/{len(paragraphs)}&quot;)
+                        self.log_message(f"GPT处理进度: {i}/{len(paragraphs)}")
                     except Exception as e:
-                        self.log_message(f&quot;GPT处理失败: {str(e)}&quot;, &quot;ERROR&quot;)
+                        self.log_message(f"GPT处理失败: {str(e)}", "ERROR")
                         continue
                         
                 # 开始生成图片
                 total_tasks = len(self.gpt_results)
-                self.log_message(f&quot;需要生成的图片任务总数: {total_tasks}&quot;)
+                self.log_message(f"需要生成的图片任务总数: {total_tasks}")
                 
                 # 开始提交任务
                 i = 0  # 当前处理的任务索引
@@ -2164,7 +2114,7 @@ class MJImageGenerator:
                     os.makedirs(image_folder)
                 self.image_folder = image_folder
                 
-                while i &lt; total_tasks or len(completed_tasks) + len(failed_tasks) &lt; total_tasks:
+                while i < total_tasks or len(completed_tasks) + len(failed_tasks) < total_tasks:
                     # 检查已提交任务的状态
                     for task_index, task_id in list(submitted_tasks.items()):
                         if task_id not in completed_tasks and task_id not in failed_tasks:
@@ -2172,15 +2122,15 @@ class MJImageGenerator:
                             if status is True and image_url:  # 任务成功
                                 self.split_and_save_image(image_url, task_index + 1)
                                 completed_tasks.add(task_id)
-                                self.log_message(f&quot;任务进度 - 成功: {len(completed_tasks)}/{total_tasks}, &quot;
-                                              f&quot;失败: {len(failed_tasks)}, &quot;
-                                              f&quot;进行中: {len(submitted_tasks) - len(completed_tasks) - len(failed_tasks)}&quot;)
+                                self.log_message(f"任务进度 - 成功: {len(completed_tasks)}/{total_tasks}, "
+                                              f"失败: {len(failed_tasks)}, "
+                                              f"进行中: {len(submitted_tasks) - len(completed_tasks) - len(failed_tasks)}")
                             elif status is False:  # 任务失败
                                 failed_tasks.add(task_id)
-                                self.log_message(f&quot;任务 {task_id} 失败&quot;)
+                                self.log_message(f"任务 {task_id} 失败")
                     
                     # 如果还有任务未提交，继续提交新任务
-                    if i &lt; total_tasks:
+                    if i < total_tasks:
                         # 提交新任务
                         prompt = self.gpt_results[i]
                         task_id = self.submit_task(prompt)
@@ -2196,22 +2146,24 @@ class MJImageGenerator:
                         time.sleep(10)
                 
                 # 输出当前文件的处理结果
-                self.log_message(f&quot;{file_name}处理完成！\n&quot;
-                              f&quot;总任务数: {total_tasks}\n&quot;
-                              f&quot;成功完成: {len(completed_tasks)}\n&quot;
-                              f&quot;失败任务: {len(failed_tasks)}&quot;)
+                self.log_message(f"{file_name}处理完成！\n"
+                              f"总任务数: {total_tasks}\n"
+                              f"成功完成: {len(completed_tasks)}\n"
+                              f"失败任务: {len(failed_tasks)}")
             
         except KeyboardInterrupt:
-            self.log_message(&quot;用户中断程序&quot;)
+            self.log_message("用户中断程序")
         except Exception as e:
-            self.log_message(f&quot;程序运行出错: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"程序运行出错: {str(e)}", "ERROR")
         finally:
             self.stop_caffeinate()
             
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     generator = MJImageGenerator()
     generator.run()
 ```
+
+
 
 但MJ的账号1个月就要30刀 一被封就是7天起步 实在是有点贵
 
@@ -2219,19 +2171,21 @@ if __name__ == &quot;__main__&quot;:
 
 但没有好的设备 所以就选择了云平台
 
-我用的是runware 使用Fluxdev 一张图只需要0.002刀 非常划算 是我找到的最划算的了
+我用的是`runware` 使用`Fluxdev` 一张图只需要0.002刀 非常划算 是我找到的最划算的了
 
-这里又有很多的逻辑 首先我的文本是中文 但SD只吃英文 所以我又得用GPTmini翻译一遍
+这里又有很多的逻辑 首先我的文本是中文 但SD只吃英文 所以我又得用`GPTmini`翻译一遍
 
 然后一张图片的展示时间不能太长 所以他对应的中文字数也不能太多
 
-所以经过N轮调试后，按我的工作流 115个中文字送一组是最合适的，英文的话55个英文字一组是最合适的，
+所以经过`N`轮调试后，按我的工作流 115个中文字送一组是最合适的，英文的话55个英文字一组是最合适的，
 
 当然里面还有很多的模式可供选择 比如基督的模式 英文的模式 甚至西班牙语和恐怖故事的模式，那都是我之前的尝试，
 
-按字数切割翻译成英文 出图 然后返回 其中标点的逻辑 分段合并的逻辑 都已经调教的非常完美了 换上key就能用
+按字数切割翻译成英文 出图 然后返回 其中标点的逻辑 分段合并的逻辑 都已经调教的非常完美了 换上`key`就能用
 
-```
+
+
+```python
 import os
 import re
 from pathlib import Path
@@ -2251,9 +2205,9 @@ import subprocess  # 添加subprocess模块
 class RunwareImageGenerator:
     def __init__(self):
         # 基础配置
-        self.desktop = str(Path.home() / &quot;Desktop&quot;)
-        self.rewrite_folder = os.path.join(self.desktop, &quot;剪辑/改写&quot;)  # 改写文件夹路径
-        self.image_folder = os.path.join(self.desktop, &quot;剪辑/图片&quot;)  # 图片文件夹路径
+        self.desktop = str(Path.home() / "Desktop")
+        self.rewrite_folder = os.path.join(self.desktop, "剪辑/改写")  # 改写文件夹路径
+        self.image_folder = os.path.join(self.desktop, "剪辑/图片")  # 图片文件夹路径
         self.start_time = None
         self.current_file = None
         self.current_file_name = None  # 添加当前处理的文件名
@@ -2266,83 +2220,83 @@ class RunwareImageGenerator:
         
         # OpenAI客户端
         self.client = OpenAI(
-            base_url=&quot;&quot;,
-            api_key=&quot;sk-&quot;
+            base_url="",
+            api_key="sk-"
         )
         
         # 初始化Runware客户端
-        runware.api_key = &quot;&quot;  # 需要替换为实际的API key
+        runware.api_key = ""  # 需要替换为实际的API key
         
         # 不同模式的提示词
         self.system_prompts = {
-            &quot;通用&quot;: &quot;&quot;&quot;
+            "通用": """
             忘记你以前的一切设定
             将下面的文本翻译为详细的场景英文描述，用作给AI出图，要求：
             1. 译成英文，尽量以人事物+动作+周围场景作为格式
             2. 描述写成一行
             3. 只输出英文描述，不要其他的任何说明
-            &quot;&quot;&quot;,
+            """,
             
-            &quot;中文基督&quot;: &quot;&quot;&quot;
+            "中文基督": """
             忘记你以前的一切设定
             将下面的文本翻译为详细的场景英文描述，用作给AI出图，要求：
             1. 译成英文，尽量以人事物+动作+周围场景作为格式
             2. 描述写成一行
             3. 只输出英文描述，不要其他的任何说明
             4. 这是一个基督教相关的内容，所以如果可能，在英文翻译中加入和翻译相符的基督教的元素，如果加不进去也不要强行加入
-            &quot;&quot;&quot;,
+            """,
             
-            &quot;英文出图&quot;: &quot;&quot;&quot;
+            "英文出图": """
             忘记你以前的一切设定
             Please enhance the following English text for AI image generation, requirements:
             1. Keep the original meaning but make it more detailed and vivid
             2. Output in a single line
             3. Only output the English description, no other explanations
-            &quot;&quot;&quot;,
+            """,
             
-            &quot;西班牙语&quot;: &quot;&quot;&quot;
+            "西班牙语": """
             忘记你以前的一切设定
             Por favor, traduzca el siguiente texto a una descripción detallada de la escena en inglés para la generación de imágenes de IA, requisitos:
             1. Traduzca al inglés, intentando utilizar la estructura de persona/objeto + acción + entorno
             2. La descripción debe ser una sola línea
             3. Solo salida de la descripción en inglés, sin ninguna otra explicación
-            &quot;&quot;&quot;,
+            """,
             
-            &quot;恐怖故事&quot;: &quot;&quot;&quot;
+            "恐怖故事": """
             忘记你以前的一切设定
             将文本生成为详细的恐怖场景英文描述，用作给AI出图，要求：
             1. 尽量以人事物+动作+周围恐怖场景作为格式
             2. 描述写成一行
             3. 只输出英文描述，不要其他的任何说明
-            &quot;&quot;&quot;,
+            """,
         }
         
         # 不同模式的切割配置
         self.split_configs = {
-            &quot;1&quot;: {  # 通用模式（中文）
-                &quot;target_chars&quot;: 115,     # 目标字符数
-                &quot;type&quot;: &quot;chars&quot;,         # 按字符切割
-                &quot;punctuation&quot;: &quot;。！？，；&quot;  # 中文标点
+            "1": {  # 通用模式（中文）
+                "target_chars": 115,     # 目标字符数
+                "type": "chars",         # 按字符切割
+                "punctuation": "。！？，；"  # 中文标点
             },
-            &quot;2&quot;: {  # 中文基督模式（中文）
-                &quot;target_chars&quot;: 105,     # 目标字符数
-                &quot;type&quot;: &quot;chars&quot;,         # 按字符切割
-                &quot;punctuation&quot;: &quot;。！？，；&quot;  # 中文标点
+            "2": {  # 中文基督模式（中文）
+                "target_chars": 105,     # 目标字符数
+                "type": "chars",         # 按字符切割
+                "punctuation": "。！？，；"  # 中文标点
             },
-            &quot;3&quot;: {  # 英文基督模式（英文）
-                &quot;target_words&quot;: 55,     # 目标单词数
-                &quot;type&quot;: &quot;words&quot;,         # 按单词切割
-                &quot;punctuation&quot;: &quot;.,&quot;    # 英文标点
+            "3": {  # 英文基督模式（英文）
+                "target_words": 55,     # 目标单词数
+                "type": "words",         # 按单词切割
+                "punctuation": ".,"    # 英文标点
             },
-            &quot;4&quot;: {  # 西班牙语模式（西班牙文）
-                &quot;target_words&quot;: 70,     # 目标单词数
-                &quot;type&quot;: &quot;words&quot;,         # 按单词切割
-                &quot;punctuation&quot;: &quot;.,!?¡¿&quot;  # 西班牙文标点
+            "4": {  # 西班牙语模式（西班牙文）
+                "target_words": 70,     # 目标单词数
+                "type": "words",         # 按单词切割
+                "punctuation": ".,!?¡¿"  # 西班牙文标点
             },
-            &quot;5&quot;: {  # 恐怖故事模式（英文）
-                &quot;target_words&quot;: 55,     # 目标单词数
-                &quot;type&quot;: &quot;words&quot;,         # 按单词切割
-                &quot;punctuation&quot;: &quot;.,&quot;    # 英文标点
+            "5": {  # 恐怖故事模式（英文）
+                "target_words": 55,     # 目标单词数
+                "type": "words",         # 按单词切割
+                "punctuation": ".,"    # 英文标点
             }
         }
         
@@ -2353,25 +2307,25 @@ class RunwareImageGenerator:
         self.gpt_results = []
 
     def get_current_time(self):
-        &quot;&quot;&quot;获取当前时间的格式化字符串&quot;&quot;&quot;
-        return datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)
+        """获取当前时间的格式化字符串"""
+        return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    def log_message(self, message, level=&quot;INFO&quot;):
-        &quot;&quot;&quot;添加日志记录功能&quot;&quot;&quot;
+    def log_message(self, message, level="INFO"):
+        """添加日志记录功能"""
         current_time = self.get_current_time()
-        print(f&quot;[{current_time}] [{level}] {message}&quot;)
+        print(f"[{current_time}] [{level}] {message}")
 
     def print_progress(self, current, total):
-        &quot;&quot;&quot;显示进度条&quot;&quot;&quot;
+        """显示进度条"""
         progress = current / total
         filled_length = int(50 * progress)
-        bar = &#x27;=&#x27; * filled_length + &#x27; &#x27; * (50 - filled_length)
-        print(f&quot;\r处理进度: [{bar}] {current}/{total}&quot;, end=&#x27;&#x27;, flush=True)
+        bar = '=' * filled_length + ' ' * (50 - filled_length)
+        print(f"\r处理进度: [{bar}] {current}/{total}", end='', flush=True)
 
     def read_docx(self, file_path):
-        &quot;&quot;&quot;读取指定的docx文件内容&quot;&quot;&quot;
+        """读取指定的docx文件内容"""
         try:
-            self.log_message(f&quot;尝试读取文件: {file_path}&quot;)
+            self.log_message(f"尝试读取文件: {file_path}")
             doc = Document(file_path)
             
             # 初始化段落列表
@@ -2386,30 +2340,30 @@ class RunwareImageGenerator:
             return paragraphs
             
         except Exception as e:
-            self.log_message(f&quot;读取文件出错: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"读取文件出错: {str(e)}", "ERROR")
             return None
 
     def split_paragraphs(self, paragraphs):
-        &quot;&quot;&quot;将段落分段&quot;&quot;&quot;
+        """将段落分段"""
         try:
             segments = []
             
             # 对于英文基督模式和西班牙语，我们将所有段落合并成一个完整的文本
-            if self.current_mode in [&quot;3&quot;, &quot;4&quot;, &quot;5&quot;]:  # 英文基督模式或西班牙语模式
+            if self.current_mode in ["3", "4", "5"]:  # 英文基督模式或西班牙语模式
                 # 清理每个段落
                 cleaned_paragraphs = []
                 for para in paragraphs:
                     # 移除多余的空格、换行和标点符号前的空格
-                    cleaned = re.sub(r&#x27;\s+&#x27;, &#x27; &#x27;, para).strip()
-                    cleaned = re.sub(r&#x27;\s+([.,!?])&#x27;, r&#x27;\1&#x27;, cleaned)
+                    cleaned = re.sub(r'\s+', ' ', para).strip()
+                    cleaned = re.sub(r'\s+([.,!?])', r'\1', cleaned)
                     if cleaned:
                         cleaned_paragraphs.append(cleaned)
                 
                 # 合并所有段落
-                text = &#x27; &#x27;.join(cleaned_paragraphs)
+                text = ' '.join(cleaned_paragraphs)
                 # 再次清理合并后的文本
-                text = re.sub(r&#x27;\s+&#x27;, &#x27; &#x27;, text).strip()
-                text = re.sub(r&#x27;\s+([.,!?])&#x27;, r&#x27;\1&#x27;, text)
+                text = re.sub(r'\s+', ' ', text).strip()
+                text = re.sub(r'\s+([.,!?])', r'\1', text)
                 return self.split_into_paragraphs(text)
             
             # 对于其他模式，保持原有的分段逻辑
@@ -2419,12 +2373,12 @@ class RunwareImageGenerator:
                 if not lines:
                     continue
                     
-                text = &#x27; &#x27;.join(lines)
+                text = ' '.join(lines)
                 
                 # 通用模式和中文基督模式使用字符数量切割
                 start_pos = 0
-                while start_pos &lt; len(text):
-                    if len(text) - start_pos &lt;= 150:
+                while start_pos < len(text):
+                    if len(text) - start_pos <= 150:
                         last_segment = text[start_pos:].strip()
                         if last_segment:
                             segments.append(last_segment)
@@ -2433,7 +2387,7 @@ class RunwareImageGenerator:
                     check_pos = start_pos + 150
                     found_punctuation = False
                     for i in range(check_pos, min(check_pos + 20, len(text))):
-                        if text[i] in &#x27;&quot;.。，,¡!¿?&#x27;:  # 添加西班牙语标点符号
+                        if text[i] in '"。，,¡!¿?':  # 添加西班牙语标点符号
                             segments.append(text[start_pos:i + 1].strip())
                             start_pos = i + 1
                             found_punctuation = True
@@ -2446,41 +2400,41 @@ class RunwareImageGenerator:
             return segments
             
         except Exception as e:
-            self.log_message(f&quot;分段处理出错: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"分段处理出错: {str(e)}", "ERROR")
             return None
 
     def count_words(self, text):
-        &quot;&quot;&quot;计算英文文本中的单词数&quot;&quot;&quot;
-        text = re.sub(r&#x27;[^\w\s]&#x27;, &#x27;&#x27;, text)
+        """计算英文文本中的单词数"""
+        text = re.sub(r'[^\w\s]', '', text)
         words = [word for word in text.split() if word]
         return len(words)
 
     def split_into_paragraphs(self, text):
-        &quot;&quot;&quot;根据不同模式的配置将文本分段&quot;&quot;&quot;
+        """根据不同模式的配置将文本分段"""
         try:
             # 获取当前模式的配置
             config = self.split_configs.get(self.current_mode)
             if not config:
-                self.log_message(f&quot;未找到模式 {self.current_mode} 的配置&quot;, &quot;ERROR&quot;)
+                self.log_message(f"未找到模式 {self.current_mode} 的配置", "ERROR")
                 return None
             
             # 根据模式类型选择不同的切割方式
-            if config[&quot;type&quot;] == &quot;chars&quot;:
+            if config["type"] == "chars":
                 # 中文模式：按字符数切割
                 current_chars = 0
                 paragraphs = []
-                current_paragraph = &quot;&quot;
+                current_paragraph = ""
                 
                 for char in text:
                     current_paragraph += char
                     current_chars += 1
                     
                     # 达到目标字符数后，寻找下一个标点
-                    if current_chars &gt;= config[&quot;target_chars&quot;]:
+                    if current_chars >= config["target_chars"]:
                         # 在最后50个字符中查找标点
                         found_punct = False
                         for i in range(len(current_paragraph)-1, max(-1, len(current_paragraph)-50), -1):
-                            if current_paragraph[i] in config[&quot;punctuation&quot;]:
+                            if current_paragraph[i] in config["punctuation"]:
                                 paragraphs.append(current_paragraph[:i+1].strip())
                                 current_paragraph = current_paragraph[i+1:].strip()
                                 current_chars = len(current_paragraph)
@@ -2490,7 +2444,7 @@ class RunwareImageGenerator:
                         # 如果没找到标点，继续往后找
                         if not found_punct:
                             for i in range(len(current_paragraph)-1, -1, -1):
-                                if current_paragraph[i] in config[&quot;punctuation&quot;]:
+                                if current_paragraph[i] in config["punctuation"]:
                                     paragraphs.append(current_paragraph[:i+1].strip())
                                     current_paragraph = current_paragraph[i+1:].strip()
                                     current_chars = len(current_paragraph)
@@ -2498,9 +2452,9 @@ class RunwareImageGenerator:
                                     break
                             
                             # 如果还是没找到标点，强制切割
-                            if not found_punct and current_chars &gt; config[&quot;target_chars&quot;] * 1.5:
+                            if not found_punct and current_chars > config["target_chars"] * 1.5:
                                 paragraphs.append(current_paragraph.strip())
-                                current_paragraph = &quot;&quot;
+                                current_paragraph = ""
                                 current_chars = 0
                 
                 # 添加最后一段
@@ -2513,65 +2467,65 @@ class RunwareImageGenerator:
                 current_paragraph = []
                 word_count = 0
                 total_words = len(words)
-                self.log_message(f&quot;总单词数: {total_words}&quot;)
+                self.log_message(f"总单词数: {total_words}")
                 
                 for word in words:
                     current_paragraph.append(word)
                     word_count += 1
                     
                     # 达到目标单词数后，寻找下一个标点
-                    if word_count &gt;= config[&quot;target_words&quot;]:
-                        current_text = &#x27; &#x27;.join(current_paragraph)
+                    if word_count >= config["target_words"]:
+                        current_text = ' '.join(current_paragraph)
                         
                         # 在最后一部分文本中查找标点
                         last_pos = -1
-                        for punct in config[&quot;punctuation&quot;]:
+                        for punct in config["punctuation"]:
                             pos = current_text.rfind(punct, max(0, len(current_text)-200))
-                            if pos &gt; last_pos:
+                            if pos > last_pos:
                                 last_pos = pos
                         
                         if last_pos != -1:
                             cut_text = current_text[:last_pos+1].strip()
                             remaining_text = current_text[last_pos+1:].strip()
                             cut_words = len(cut_text.split())
-                            self.log_message(f&quot;在标点处切割，本段单词数: {cut_words}&quot;)
+                            self.log_message(f"在标点处切割，本段单词数: {cut_words}")
                             paragraphs.append(cut_text)
                             current_paragraph = remaining_text.split()
                             word_count = len(current_paragraph)
                         else:
                             # 如果在最后200个字符没找到标点，强制切割
-                            self.log_message(f&quot;强制切割，本段单词数: {word_count}&quot;)
+                            self.log_message(f"强制切割，本段单词数: {word_count}")
                             paragraphs.append(current_text.strip())
                             current_paragraph = []
                             word_count = 0
                 
                 # 添加最后一段
                 if current_paragraph:
-                    last_text = &#x27; &#x27;.join(current_paragraph).strip()
+                    last_text = ' '.join(current_paragraph).strip()
                     last_words = len(last_text.split())
-                    self.log_message(f&quot;添加最后一段，单词数: {last_words}&quot;)
+                    self.log_message(f"添加最后一段，单词数: {last_words}")
                     paragraphs.append(last_text)
                 
                 # 输出每段的单词数统计
                 for i, para in enumerate(paragraphs, 1):
                     words_in_para = len(para.split())
-                    self.log_message(f&quot;第{i}段的单词数: {words_in_para}&quot;)
+                    self.log_message(f"第{i}段的单词数: {words_in_para}")
             
             return paragraphs
             
         except Exception as e:
-            self.log_message(f&quot;分段处理出错: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"分段处理出错: {str(e)}", "ERROR")
             return None
 
     def calculate_cost(self, input_tokens, output_tokens):
-        &quot;&quot;&quot;计算API调用成本&quot;&quot;&quot;
+        """计算API调用成本"""
         input_cost = (input_tokens / 1000000) * 3.00  # $3.00 per 1M tokens for input
         output_cost = (output_tokens / 1000000) * 12.00  # $12.00 per 1M tokens for output
         total_cost = input_cost + output_cost
         return total_cost
 
     def generate_image(self, prompt):
-        &quot;&quot;&quot;使用Runware API生成图片&quot;&quot;&quot;
+        """使用Runware API生成图片"""
         max_retries = 3
         retry_delay = 2
         
@@ -2581,32 +2535,32 @@ class RunwareImageGenerator:
                 time.sleep(3)
                 
                 # API endpoint
-                url = &quot;https://api.runware.ai/v1/inference&quot;
+                url = "https://api.runware.ai/v1/inference"
                 
                 # 请求头
                 headers = {
-                    &quot;Authorization&quot;: f&quot;Bearer {runware.api_key}&quot;,
-                    &quot;Content-Type&quot;: &quot;application/json&quot;
+                    "Authorization": f"Bearer {runware.api_key}",
+                    "Content-Type": "application/json"
                 }
                 
                 # 请求体
                 data = [{
-                    &quot;taskType&quot;: &quot;imageInference&quot;,
-                    &quot;taskUUID&quot;: str(uuid.uuid4()),
-                    &quot;model&quot;: &quot;runware:101@1&quot;,
-                    &quot;positivePrompt&quot;: prompt,
-                    &quot;negativePrompt&quot;: &quot;NSFW, nude, naked, blood, gore, violence, offensive, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,letter&quot;,
-                    &quot;width&quot;: 1024,
-                    &quot;height&quot;: 576,
-                    &quot;steps&quot;: 20,
-                    &quot;scheduler&quot;: &quot;FlowMatchEulerDiscreteScheduler&quot;,
-                    &quot;CFGScale&quot;: 3.5,
-                    &quot;outputType&quot;: &quot;URL&quot;,
-                    &quot;outputFormat&quot;: &quot;JPG&quot;,
-                    &quot;includeCost&quot;: True
+                    "taskType": "imageInference",
+                    "taskUUID": str(uuid.uuid4()),
+                    "model": "runware:101@1",
+                    "positivePrompt": prompt,
+                    "negativePrompt": "NSFW, nude, naked, blood, gore, violence, offensive, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,letter",
+                    "width": 1024,
+                    "height": 576,
+                    "steps": 20,
+                    "scheduler": "FlowMatchEulerDiscreteScheduler",
+                    "CFGScale": 3.5,
+                    "outputType": "URL",
+                    "outputFormat": "JPG",
+                    "includeCost": True
                 }]
                 
-                self.log_message(&quot;开始生成图片...&quot;)
+                self.log_message("开始生成图片...")
                 
                 # 发送请求
                 response = requests.post(url, headers=headers, json=data)
@@ -2615,41 +2569,41 @@ class RunwareImageGenerator:
                 # 解析响应
                 result = response.json()
                 
-                if isinstance(result, dict) and &#x27;data&#x27; in result and isinstance(result[&#x27;data&#x27;], list):
-                    for item in result[&#x27;data&#x27;]:
-                        if item[&#x27;taskType&#x27;] == &#x27;imageInference&#x27;:
+                if isinstance(result, dict) and 'data' in result and isinstance(result['data'], list):
+                    for item in result['data']:
+                        if item['taskType'] == 'imageInference':
                             # 计算费用
-                            if &#x27;cost&#x27; in item:
-                                cost = item[&#x27;cost&#x27;]
+                            if 'cost' in item:
+                                cost = item['cost']
                                 self.total_cost += cost
-                                self.log_message(f&quot;本次生成费用: ${cost:.4f}&quot;)
+                                self.log_message(f"本次生成费用: ${cost:.4f}")
                                 rmb_cost = cost * 7.2
-                                self.log_message(f&quot;本次生成费用(人民币): ¥{rmb_cost:.2f}&quot;)
+                                self.log_message(f"本次生成费用(人民币): ¥{rmb_cost:.2f}")
                             
                             # 获取图片URL
-                            task_id = item.get(&#x27;taskUUID&#x27;)
-                            image_url = item.get(&#x27;imageURL&#x27;)
+                            task_id = item.get('taskUUID')
+                            image_url = item.get('imageURL')
                             if task_id and image_url:
                                 return task_id, image_url
                             
-                    self.log_message(&quot;API响应中没有找到有效的图片URL&quot;, &quot;ERROR&quot;)
+                    self.log_message("API响应中没有找到有效的图片URL", "ERROR")
                 else:
-                    self.log_message(&quot;API响应格式错误&quot;, &quot;ERROR&quot;)
+                    self.log_message("API响应格式错误", "ERROR")
                 return None, None
                 
             except requests.exceptions.RequestException as e:
-                if attempt &lt; max_retries - 1:
-                    self.log_message(f&quot;API请求失败，{retry_delay}秒后重试 ({attempt + 1}/{max_retries}): {str(e)}&quot;, &quot;WARNING&quot;)
+                if attempt < max_retries - 1:
+                    self.log_message(f"API请求失败，{retry_delay}秒后重试 ({attempt + 1}/{max_retries}): {str(e)}", "WARNING")
                     time.sleep(retry_delay)
                     continue
-                self.log_message(f&quot;API请求失败: {str(e)}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"API请求失败: {str(e)}", "ERROR")
                 return None, None
             except Exception as e:
-                self.log_message(f&quot;生成图片失败: {str(e)}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"生成图片失败: {str(e)}", "ERROR")
                 return None, None
 
     def save_image(self, image_url, image_name):
-        &quot;&quot;&quot;保存图片到本地&quot;&quot;&quot;
+        """保存图片到本地"""
         try:
             # 创建保存目录
             save_folder = self.get_current_save_folder()
@@ -2659,47 +2613,47 @@ class RunwareImageGenerator:
             # 下载图片
             response = requests.get(image_url)
             if response.status_code != 200:
-                self.log_message(f&quot;下载图片失败: {response.status_code}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"下载图片失败: {response.status_code}", "ERROR")
                 return False
             
             # 保存图片
-            image_path = os.path.join(save_folder, f&quot;{image_name}.png&quot;)
-            with open(image_path, &#x27;wb&#x27;) as f:
+            image_path = os.path.join(save_folder, f"{image_name}.png")
+            with open(image_path, 'wb') as f:
                 f.write(response.content)
             
-            self.log_message(f&quot;图片已保存: {image_path}&quot;)
+            self.log_message(f"图片已保存: {image_path}")
             return True
             
         except Exception as e:
-            self.log_message(f&quot;保存图片失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"保存图片失败: {str(e)}", "ERROR")
             return False
 
     def process_segment_with_gpt(self, segment, mode):
-        &quot;&quot;&quot;使用GPT处理段落&quot;&quot;&quot;
+        """使用GPT处理段落"""
         try:
             if not segment:
                 return None
                 
             mode_map = {
-                &quot;1&quot;: &quot;通用&quot;,
-                &quot;2&quot;: &quot;中文基督&quot;,
-                &quot;3&quot;: &quot;英文基督&quot;,
-                &quot;4&quot;: &quot;西班牙语&quot;,
-                &quot;5&quot;: &quot;恐怖故事&quot;
+                "1": "通用",
+                "2": "中文基督",
+                "3": "英文基督",
+                "4": "西班牙语",
+                "5": "恐怖故事"
             }
             system_prompt = self.system_prompts.get(mode_map.get(mode))
             if not system_prompt:
-                self.log_message(f&quot;无效的模式: {mode}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"无效的模式: {mode}", "ERROR")
                 return None
                 
             messages = [
-                {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: system_prompt},
-                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: segment}
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": segment}
             ]
             
             try:
                 response = self.client.chat.completions.create(
-                    model=&quot;gpt-4o-mini&quot;,
+                    model="gpt-4o-mini",
                     messages=messages,
                     temperature=0.7,
                     max_tokens=2048
@@ -2708,20 +2662,20 @@ class RunwareImageGenerator:
                 if response and response.choices:
                     prompt = response.choices[0].message.content.strip()
                     # 添加高质量图片关键词
-                    quality_keywords = &quot;, breathtaking photograph, cinematic lighting, 8k uhd, highly detailed, photorealistic, professional photography, masterpiece, sharp focus, high quality&quot;
+                    quality_keywords = ", breathtaking photograph, cinematic lighting, 8k uhd, highly detailed, photorealistic, professional photography, masterpiece, sharp focus, high quality"
                     prompt = prompt + quality_keywords
                     return prompt
                     
             except Exception as e:
-                self.log_message(f&quot;调用GPT API失败: {str(e)}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"调用GPT API失败: {str(e)}", "ERROR")
                 return None
                 
         except Exception as e:
-            self.log_message(f&quot;GPT处理失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"GPT处理失败: {str(e)}", "ERROR")
             return None
 
     def process_file(self, file_path, mode):
-        &quot;&quot;&quot;处理单个文件&quot;&quot;&quot;
+        """处理单个文件"""
         try:
             # 重置总费用
             self.total_cost = 0.0
@@ -2731,7 +2685,7 @@ class RunwareImageGenerator:
             self.current_file_name = os.path.splitext(os.path.basename(file_path))[0]
             self.start_time = time.time()
             
-            self.log_message(f&quot;开始处理文件: {file_path}&quot;)
+            self.log_message(f"开始处理文件: {file_path}")
             self.current_mode = mode
             
             # 读取文件内容
@@ -2745,16 +2699,16 @@ class RunwareImageGenerator:
                     paragraphs.append(text)
             
             # 合并所有文本并进行分段
-            full_text = &#x27; &#x27;.join(paragraphs)
+            full_text = ' '.join(paragraphs)
             # 清理文本：移除多余的空格和换行
-            full_text = re.sub(r&#x27;\s+&#x27;, &#x27; &#x27;, full_text).strip()
+            full_text = re.sub(r'\s+', ' ', full_text).strip()
             segments = self.split_into_paragraphs(full_text)
             
             if not segments:
-                self.log_message(&quot;没有找到有效的文本段落&quot;, &quot;ERROR&quot;)
+                self.log_message("没有找到有效的文本段落", "ERROR")
                 return False
                 
-            self.log_message(f&quot;{os.path.basename(file_path)}已被分割成 {len(segments)} 段&quot;)
+            self.log_message(f"{os.path.basename(file_path)}已被分割成 {len(segments)} 段")
             
             # 创建保存文件夹
             save_folder = self.get_current_save_folder()
@@ -2778,42 +2732,42 @@ class RunwareImageGenerator:
                         continue
                         
                     # 保存图片，使用新的命名方式
-                    image_name = f&quot;{i}_{j+1}&quot;  # 例如：1_1.png, 1_2.png, 1_3.png, 1_4.png
+                    image_name = f"{i}_{j+1}"  # 例如：1_1.png, 1_2.png, 1_3.png, 1_4.png
                     if not self.save_image(image_url, image_name):
                         continue
             
             print()  # 换行
             
             # 显示总费用
-            if self.total_cost &gt; 0:
-                self.log_message(f&quot;总费用: ${self.total_cost:.4f}&quot;)
+            if self.total_cost > 0:
+                self.log_message(f"总费用: ${self.total_cost:.4f}")
                 rmb_total_cost = self.total_cost * 7.2
-                self.log_message(f&quot;总费用(人民币): ¥{rmb_total_cost:.2f}&quot;)
+                self.log_message(f"总费用(人民币): ¥{rmb_total_cost:.2f}")
             
             return True
             
         except Exception as e:
-            self.log_message(f&quot;处理文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"处理文件失败: {str(e)}", "ERROR")
             return False
 
     def select_files(self, docx_files):
-        &quot;&quot;&quot;选择要处理的文件&quot;&quot;&quot;
+        """选择要处理的文件"""
         if not docx_files:
-            self.log_message(&quot;未找到任何docx文件&quot;)
+            self.log_message("未找到任何docx文件")
             return None, None
             
         # 按文件名字母顺序排序（忽略大小写）
         docx_files.sort(key=lambda x: os.path.basename(x).lower())
         
         while True:
-            print(&quot;\n找到以下文件：&quot;)
+            print("\n找到以下文件：")
             for i, file_path in enumerate(docx_files, 1):
-                print(f&quot;{i}. {os.path.basename(file_path)}&quot;)
+                print(f"{i}. {os.path.basename(file_path)}")
             
-            print(&quot;\n输入 &#x27;q&#x27; 退出程序&quot;)
+            print("\n输入 'q' 退出程序")
             
-            choice = input(&quot;\n请输入要处理的文件编号（多个文件用空格分隔）: &quot;).strip()
-            if choice.lower() == &#x27;q&#x27;:
+            choice = input("\n请输入要处理的文件编号（多个文件用空格分隔）: ").strip()
+            if choice.lower() == 'q':
                 return None, None
             
             try:
@@ -2822,41 +2776,41 @@ class RunwareImageGenerator:
                 selected_files = []
                 
                 for index in file_indices:
-                    if 1 &lt;= index &lt;= len(docx_files):
+                    if 1 <= index <= len(docx_files):
                         selected_files.append(docx_files[index - 1])
                     else:
-                        self.log_message(f&quot;无效的文件编号: {index}&quot;, &quot;ERROR&quot;)
+                        self.log_message(f"无效的文件编号: {index}", "ERROR")
                         return None, None
                 
                 if selected_files:
                     return selected_files, choice
                 
             except ValueError:
-                self.log_message(&quot;请输入有效的文件编号&quot;, &quot;ERROR&quot;)
+                self.log_message("请输入有效的文件编号", "ERROR")
         
         return None, None
 
     def run(self):
-        &quot;&quot;&quot;主运行方法&quot;&quot;&quot;
+        """主运行方法"""
         try:
             # 启动防睡眠
-            self.prevent_sleep = subprocess.Popen([&#x27;caffeinate&#x27;])
-            self.log_message(&quot;已启动防睡眠模式&quot;)
+            self.prevent_sleep = subprocess.Popen(['caffeinate'])
+            self.log_message("已启动防睡眠模式")
             
             # 查找所有非临时和非隐藏的docx文件
             docx_files = []
             for file in os.listdir(self.rewrite_folder):
                 # 排除隐藏文件和临时文件
-                if (file.endswith(&#x27;.docx&#x27;) and 
-                    not file.startswith(&#x27;.&#x27;) and  # 隐藏文件
-                    not file.startswith(&#x27;~$&#x27;) and  # Word临时文件
-                    not file.startswith(&#x27;~&#x27;) and   # 其他临时文件
-                    not file.endswith(&#x27;.tmp&#x27;)):    # 临时文件扩展名
+                if (file.endswith('.docx') and 
+                    not file.startswith('.') and  # 隐藏文件
+                    not file.startswith('~$') and  # Word临时文件
+                    not file.startswith('~') and   # 其他临时文件
+                    not file.endswith('.tmp')):    # 临时文件扩展名
                     docx_files.append(os.path.join(self.rewrite_folder, file))
             
             if not docx_files:
-                print(f&quot;\n在 {self.rewrite_folder} 中没有找到.docx文件&quot;)
-                print(&quot;请将要处理的文件放入此文件夹，然后重新运行程序&quot;)
+                print(f"\n在 {self.rewrite_folder} 中没有找到.docx文件")
+                print("请将要处理的文件放入此文件夹，然后重新运行程序")
                 return
             
             # 选择文件
@@ -2866,71 +2820,71 @@ class RunwareImageGenerator:
             
             # 为每个文件选择处理模式
             file_modes = {}
-            print(&quot;\n为每个文件选择处理模式：&quot;)
+            print("\n为每个文件选择处理模式：")
             for file_path in selected_files:
                 while True:
-                    print(f&quot;\n文件：{os.path.basename(file_path)}&quot;)
-                    print(&quot;1. 通用模式&quot;)
-                    print(&quot;2. 基督教内容&quot;)
-                    print(&quot;3. 英文基督教内容&quot;)
-                    print(&quot;4. 西班牙语模式&quot;)
-                    print(&quot;5. 恐怖故事模式&quot;)
-                    print(&quot;0. 取消处理&quot;)
+                    print(f"\n文件：{os.path.basename(file_path)}")
+                    print("1. 通用模式")
+                    print("2. 基督教内容")
+                    print("3. 英文基督教内容")
+                    print("4. 西班牙语模式")
+                    print("5. 恐怖故事模式")
+                    print("0. 取消处理")
                     
-                    mode = input(&quot;请输入选项编号 (0/1/2/3/4/5): &quot;).strip()
-                    if mode == &quot;0&quot;:
+                    mode = input("请输入选项编号 (0/1/2/3/4/5): ").strip()
+                    if mode == "0":
                         return  # 用户取消处理
-                    elif mode in [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;]:
+                    elif mode in ['1', '2', '3', '4', '5']:
                         file_modes[file_path] = mode
                         break
                     else:
-                        print(&quot;无效的选项，请重试&quot;)
+                        print("无效的选项，请重试")
             
             # 确认开始处理
-            print(&quot;\n所有文件的处理模式已选择完毕：&quot;)
+            print("\n所有文件的处理模式已选择完毕：")
             for file_path, mode in file_modes.items():
                 mode_name = {
-                    &quot;1&quot;: &quot;通用模式&quot;,
-                    &quot;2&quot;: &quot;基督教内容&quot;,
-                    &quot;3&quot;: &quot;英文基督教内容&quot;,
-                    &quot;4&quot;: &quot;西班牙语模式&quot;,
-                    &quot;5&quot;: &quot;恐怖故事模式&quot;
+                    "1": "通用模式",
+                    "2": "基督教内容",
+                    "3": "英文基督教内容",
+                    "4": "西班牙语模式",
+                    "5": "恐怖故事模式"
                 }[mode]
-                print(f&quot;- {os.path.basename(file_path)}: {mode_name}&quot;)
+                print(f"- {os.path.basename(file_path)}: {mode_name}")
             
-            confirm = input(&quot;\n是否开始处理？(y/n): &quot;).strip().lower()
-            if confirm != &#x27;y&#x27;:
-                print(&quot;已取消处理&quot;)
+            confirm = input("\n是否开始处理？(y/n): ").strip().lower()
+            if confirm != 'y':
+                print("已取消处理")
                 return
             
             # 开始处理所有文件
-            print(&quot;\n开始处理文件...&quot;)
+            print("\n开始处理文件...")
             for file_path, mode in file_modes.items():
-                print(f&quot;\n正在处理：{os.path.basename(file_path)}&quot;)
+                print(f"\n正在处理：{os.path.basename(file_path)}")
                 if not self.process_file(file_path, mode):
-                    self.log_message(f&quot;处理文件 {os.path.basename(file_path)} 失败&quot;, &quot;ERROR&quot;)
+                    self.log_message(f"处理文件 {os.path.basename(file_path)} 失败", "ERROR")
             
             # 显示总费用
-            print(&quot;\n=== 费用统计 ===&quot;)
-            print(f&quot;总费用: ${self.total_cost:.4f}&quot;)
+            print("\n=== 费用统计 ===")
+            print(f"总费用: ${self.total_cost:.4f}")
             rmb_total = self.total_cost * 7.2
-            print(f&quot;总费用(人民币): ¥{rmb_total:.2f}&quot;)
-            print(&quot;==============&quot;)
+            print(f"总费用(人民币): ¥{rmb_total:.2f}")
+            print("==============")
             
         except Exception as e:
-            self.log_message(f&quot;运行时发生错误: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"运行时发生错误: {str(e)}", "ERROR")
             
         finally:
             # 关闭防睡眠
             if self.prevent_sleep:
                 self.prevent_sleep.terminate()
-                self.log_message(&quot;已关闭防睡眠模式&quot;)
+                self.log_message("已关闭防睡眠模式")
 
     def get_current_save_folder(self):
-        &quot;&quot;&quot;获取当前保存文件夹&quot;&quot;&quot;
+        """获取当前保存文件夹"""
         try:
             if not self.current_file_name:
-                self.log_message(&quot;当前没有处理的文件名&quot;, &quot;ERROR&quot;)
+                self.log_message("当前没有处理的文件名", "ERROR")
                 return None
             
             # 在图片文件夹下创建以文档名命名的子文件夹
@@ -2939,50 +2893,50 @@ class RunwareImageGenerator:
             # 如果文件夹不存在，则创建
             if not os.path.exists(save_folder):
                 os.makedirs(save_folder)
-                self.log_message(f&quot;创建保存文件夹: {save_folder}&quot;)
+                self.log_message(f"创建保存文件夹: {save_folder}")
             
             return save_folder
         
         except Exception as e:
-            self.log_message(f&quot;获取保存文件夹失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"获取保存文件夹失败: {str(e)}", "ERROR")
             return None
 
     def process_text_to_images(self, content, save_folder, mode):
-        &quot;&quot;&quot;处理文本生成图片&quot;&quot;&quot;
+        """处理文本生成图片"""
         try:
             # 使用GPT生成英文描述
-            print(&quot;正在生成英文描述...&quot;)
+            print("正在生成英文描述...")
             
             # 计算输入token数量（粗略估计：每个字符4个token）
             input_tokens = len(content) * 4
             
             completion = self.client.chat.completions.create(
-                model=&quot;o1-mini-2024-09-12&quot;,
+                model="o1-mini-2024-09-12",
                 messages=[
-                    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: f&quot;{self.system_prompts[mode]}\n\n{content}&quot;}
+                    {"role": "user", "content": f"{self.system_prompts[mode]}\n\n{content}"}
                 ],
                 max_completion_tokens=2000
             )
             
             english_description = completion.choices[0].message.content.strip()
-            print(f&quot;英文描述: {english_description}&quot;)
+            print(f"英文描述: {english_description}")
             
             # 计算输出token数量和成本
             output_tokens = len(english_description) * 4
             cost = self.calculate_cost(input_tokens, output_tokens)
             self.total_cost += cost
-            print(f&quot;本次调用成本: ${cost:.4f}&quot;)
-            print(f&quot;累计总成本: ${self.total_cost:.4f}&quot;)
+            print(f"本次调用成本: ${cost:.4f}")
+            print(f"累计总成本: ${self.total_cost:.4f}")
             
             # 使用Runware生成图片
-            print(&quot;正在生成图片...&quot;)
+            print("正在生成图片...")
             response = runware.create_image(
                 prompt=english_description,
-                model=&quot;flux&quot;,
+                model="flux",
                 n=1,
-                size=&quot;1024x1024&quot;,
-                quality=&quot;standard&quot;,
-                style=&quot;cinematic&quot;
+                size="1024x1024",
+                quality="standard",
+                style="cinematic"
             )
             
             # 保存图片
@@ -2990,59 +2944,68 @@ class RunwareImageGenerator:
             response = requests.get(image_url)
             if response.status_code == 200:
                 # 生成唯一的文件名
-                timestamp = datetime.now().strftime(&quot;%Y%m%d_%H%M%S&quot;)
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 unique_id = str(uuid.uuid4())[:8]
-                image_filename = f&quot;image_{timestamp}_{unique_id}.png&quot;
+                image_filename = f"image_{timestamp}_{unique_id}.png"
                 image_path = os.path.join(save_folder, image_filename)
                 
                 # 保存图片
-                with open(image_path, &#x27;wb&#x27;) as f:
+                with open(image_path, 'wb') as f:
                     f.write(response.content)
-                print(f&quot;图片已保存: {image_path}&quot;)
+                print(f"图片已保存: {image_path}")
                 return True
             else:
-                print(f&quot;下载图片失败: {response.status_code}&quot;)
+                print(f"下载图片失败: {response.status_code}")
                 return False
                 
         except Exception as e:
-            print(f&quot;生成图片时出错: {str(e)}&quot;)
+            print(f"生成图片时出错: {str(e)}")
             return False
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     generator = RunwareImageGenerator()
     generator.run()
-
 ```
 
-如此一来 只需几秒钟 输入一个命令运行这个脚本
 
-就能将成千上万字的中文 配上合适的图 出图的工作量直接消失
+
+# 内容自动化
+
+## 出图自动化
+
+如此一来 只需几秒钟 输入一个命令运行这个脚本 就能将成千上万字的中文 配上合适的图 出图的工作量直接消失
 
 ---
 
 ## 配音自动化：从耗时1小时降低到小于1分钟
 
-配音这件事 我所试过的 中文效果好的两家就是 openai家的whisper 和minimax的speech01
+配音这件事 我所试过的 中文效果好的两家就是 `openai` 家的 `whisper` 和 `minimax` 的 `speech01`
 
-我用的就是minimax的 我感觉是全网最好的中文语音 当然价格也小贵 不过是按量收费 所以还好
+我用的就是 `minimax` 的 我感觉是全网最好的中文语音 当然价格也小贵 不过是按量收费 所以还好
 
-至于如何调用他的api 我也是从来都不知道 但也根本无所谓 因为你也从来不需要知道
+至于如何调用他的 `api` 我也是从来都不知道 但也根本无所谓 因为你也从来不需要知道
 
-你需要的只是将api官方文档粘贴给AI 然后提出你的需求就完事了
+你需要的只是将 `api` 官方文档粘贴给AI 然后提出你的需求就完事了
 
 https://platform.minimaxi.com/document/T2A%20V2?key=66719005a427f0c8a5701643
 
 下面是我的代码 这个代码也已经更新了至少几十个版本
 
-可以将无限字数的文本放在docx里，然后运行后选择想要的语音和模式，等着脚本返回mp3和srt就好了
+可以将无限字数的文本放在 docx 里，然后运行后选择想要的语音和模式，等着脚本返回 mp3 和 srt 就好了
 
-当时做英文的尝试，还加入了azure的英文语音
+当时做英文的尝试，还加入了 `azure` 的英文语音
 
 说起来虽然很简单 但实际上用了近两千行的代码 里面的细节实在是太多了 就不展开讲了
 
 如果你想知道可以复制去问ai
 
-```
+
+
+# TTSGenerator
+
+## 代码实现
+
+```python
 import os
 import requests
 import json
@@ -3063,44 +3026,44 @@ from pydub import AudioSegment
 
 class TTSGenerator:
     def convert_json_to_srt(self, subtitle_data, output_file):
-        &quot;&quot;&quot;将MiniMax返回的JSON字幕转换为SRT格式&quot;&quot;&quot;
+        """将MiniMax返回的JSON字幕转换为SRT格式"""
         try:
             # 检查字幕数据格式
             if not isinstance(subtitle_data, list):
-                self.log_message(&quot;字幕数据格式不正确，应为列表&quot;, &quot;ERROR&quot;)
+                self.log_message("字幕数据格式不正确，应为列表", "ERROR")
                 return False
             
             # 记录字幕数据的第一项，用于调试
             if subtitle_data:
-                self.log_message(f&quot;字幕数据第一项: {json.dumps(subtitle_data[0], ensure_ascii=False)}&quot;)
+                self.log_message(f"字幕数据第一项: {json.dumps(subtitle_data[0], ensure_ascii=False)}")
             
             srt_content = []
             for i, item in enumerate(subtitle_data, 1):
                 # 检查各种可能的字段名称
                 # 开始时间字段可能的名称
                 start_time_field = None
-                for field in [&#x27;start_time&#x27;, &#x27;begin_time&#x27;, &#x27;start&#x27;, &#x27;begin&#x27;, &#x27;startTime&#x27;, &#x27;beginTime&#x27;, &#x27;time_begin&#x27;]:
+                for field in ['start_time', 'begin_time', 'start', 'begin', 'startTime', 'beginTime', 'time_begin']:
                     if field in item:
                         start_time_field = field
                         break
                 
                 # 结束时间字段可能的名称
                 end_time_field = None
-                for field in [&#x27;end_time&#x27;, &#x27;finish_time&#x27;, &#x27;end&#x27;, &#x27;finish&#x27;, &#x27;endTime&#x27;, &#x27;finishTime&#x27;, &#x27;time_end&#x27;]:
+                for field in ['end_time', 'finish_time', 'end', 'finish', 'endTime', 'finishTime', 'time_end']:
                     if field in item:
                         end_time_field = field
                         break
                 
                 # 文本内容字段可能的名称
                 text_field = None
-                for field in [&#x27;text&#x27;, &#x27;content&#x27;, &#x27;subtitle&#x27;, &#x27;words&#x27;, &#x27;sentence&#x27;]:
+                for field in ['text', 'content', 'subtitle', 'words', 'sentence']:
                     if field in item:
                         text_field = field
                         break
                 
                 # 如果缺少任何必要字段，则跳过此条目
                 if not start_time_field or not end_time_field or not text_field:
-                    self.log_message(f&quot;跳过字幕条目，缺少必要字段: {json.dumps(item, ensure_ascii=False)}&quot;, &quot;WARNING&quot;)
+                    self.log_message(f"跳过字幕条目，缺少必要字段: {json.dumps(item, ensure_ascii=False)}", "WARNING")
                     continue
                 
                 # 获取开始和结束时间（毫秒）
@@ -3110,7 +3073,7 @@ class TTSGenerator:
                 
                 # 检查时间格式是否为数字（毫秒）
                 if not isinstance(start_ms, (int, float)):
-                    self.log_message(f&quot;开始时间不是数字: {start_ms}&quot;, &quot;WARNING&quot;)
+                    self.log_message(f"开始时间不是数字: {start_ms}", "WARNING")
                     # 尝试将字符串转换为数字
                     try:
                         start_ms = float(start_ms)
@@ -3118,7 +3081,7 @@ class TTSGenerator:
                         continue
                 
                 if not isinstance(end_ms, (int, float)):
-                    self.log_message(f&quot;结束时间不是数字: {end_ms}&quot;, &quot;WARNING&quot;)
+                    self.log_message(f"结束时间不是数字: {end_ms}", "WARNING")
                     # 尝试将字符串转换为数字
                     try:
                         end_ms = float(end_ms)
@@ -3130,23 +3093,23 @@ class TTSGenerator:
                 end_time = self.ms_to_srt_time(end_ms)
                 
                 # 添加SRT条目
-                srt_entry = f&quot;{i}\n{start_time} --&gt; {end_time}\n{text}\n&quot;
+                srt_entry = f"{i}\n{start_time} --> {end_time}\n{text}\n"
                 srt_content.append(srt_entry)
             
             # 写入SRT文件
-            with open(output_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n&#x27;.join(srt_content))
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(srt_content))
             
             # 记录生成的SRT内容长度
-            self.log_message(f&quot;生成的SRT文件包含 {len(srt_content)} 条字幕&quot;)
+            self.log_message(f"生成的SRT文件包含 {len(srt_content)} 条字幕")
                 
             return True
         except Exception as e:
-            self.log_message(f&quot;转换字幕格式失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"转换字幕格式失败: {str(e)}", "ERROR")
             return False
         
     def ms_to_srt_time(self, milliseconds):
-        &quot;&quot;&quot;将毫秒转换为SRT时间格式 (HH:MM:SS,mmm)&quot;&quot;&quot;
+        """将毫秒转换为SRT时间格式 (HH:MM:SS,mmm)"""
         # 确保毫秒是整数
         milliseconds = float(milliseconds)  # 先转换为浮点数以确保兼容性
         
@@ -3157,46 +3120,46 @@ class TTSGenerator:
         # 确保 ms 是整数
         ms = int(ms)
         
-        return f&quot;{int(hours):02d}:{int(minutes):02d}:{int(seconds):02d},{ms:03d}&quot;
+        return f"{int(hours):02d}:{int(minutes):02d}:{int(seconds):02d},{ms:03d}"
     
     def srt_time_to_ms(self, time_str):
-        &quot;&quot;&quot;将SRT时间格式转换为毫秒
+        """将SRT时间格式转换为毫秒
         
         Args:
-            time_str: SRT时间格式字符串，例如 &quot;00:00:01,500&quot;
+            time_str: SRT时间格式字符串，例如 "00:00:01,500"
             
         Returns:
             毫秒数
-        &quot;&quot;&quot;
+        """
         try:
             # 分离时、分、秒和毫秒
-            main_part, ms_part = time_str.split(&#x27;,&#x27;)
-            h, m, s = main_part.split(&#x27;:&#x27;)
+            main_part, ms_part = time_str.split(',')
+            h, m, s = main_part.split(':')
             
             # 转换为毫秒
             total_ms = int(h) * 3600000 + int(m) * 60000 + int(s) * 1000 + int(ms_part)
             return total_ms
         except Exception as e:
-            self.log_message(f&quot;SRT时间格式转换失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"SRT时间格式转换失败: {str(e)}", "ERROR")
             return 0
 
     def split_subtitle_text(self, text):
-        &quot;&quot;&quot;将字幕文本按照要求切割，每句话最长不超过13个字
-        如果第13个字是中文字符，则向后寻找第一个标点符号，在符号处切割&quot;&quot;&quot;
-        if not text or len(text) &lt;= 13:
+        """将字幕文本按照要求切割，每句话最长不超过13个字
+        如果第13个字是中文字符，则向后寻找第一个标点符号，在符号处切割"""
+        if not text or len(text) <= 13:
             return [text]
         
         # 中文标点符号列表
-        punctuations = [&#x27;，&#x27;, &#x27;。&#x27;, &#x27;、&#x27;, &#x27;；&#x27;, &#x27;：&#x27;, &#x27;？&#x27;, &#x27;！&#x27;, &#x27;…&#x27;, &#x27;&quot;&#x27;, &#x27;&quot;&#x27;, &#x27;&#x27;&#x27;, &#x27;&#x27;&#x27;, &#x27;）&#x27;, &#x27;】&#x27;, &#x27;》&#x27;, &#x27;」&#x27;, &#x27;』&#x27;, &#x27;〕&#x27;, &#x27;｝&#x27;, &#x27;］&#x27;]
+        punctuations = ['，', '。', '、', '；', '：', '？', '！', '…', '"', '"', "'", "'", '）', '】', '》', '」', '』', '〕', '｝', '］']
         # 添加英文标点
-        punctuations.extend([&#x27;,&#x27;, &#x27;.&#x27;, &#x27;;&#x27;, &#x27;:&#x27;, &#x27;?&#x27;, &#x27;!&#x27;, &#x27;)&#x27;, &#x27;]&#x27;, &#x27;}&#x27;])
+        punctuations.extend([',', '.', ';', ':', '?', '!', ')', ']', '}'])
         
         result = []
         start = 0
         
-        while start &lt; len(text):
+        while start < len(text):
             # 如果剩余文本长度小于等于13，直接添加并结束
-            if len(text) - start &lt;= 13:
+            if len(text) - start <= 13:
                 result.append(text[start:])
                 break
             
@@ -3204,7 +3167,7 @@ class TTSGenerator:
             cut_point = start + 13
             
             # 检查第13个字符是否是中文
-            is_chinese = &#x27;\u4e00&#x27; &lt;= text[cut_point] &lt;= &#x27;\u9fff&#x27;
+            is_chinese = '\u4e00' <= text[cut_point] <= '\u9fff'
             
             if is_chinese:
                 # 向后查找最近的标点符号
@@ -3217,7 +3180,7 @@ class TTSGenerator:
                         break
                 
                 # 如果没找到标点符号但已经接近文本末尾，直接取剩余文本
-                if not found_punct and len(text) - cut_point &lt; 5:
+                if not found_punct and len(text) - cut_point < 5:
                     cut_point = len(text)
             
             # 添加切割后的文本
@@ -3227,35 +3190,35 @@ class TTSGenerator:
         return result
 
     def optimize_srt_file(self, srt_file_path):
-        &quot;&quot;&quot;优化SRT文件，将长字幕切割成短字幕&quot;&quot;&quot;
+        """优化SRT文件，将长字幕切割成短字幕"""
         try:
-            self.log_message(f&quot;开始优化SRT文件: {srt_file_path}&quot;)
+            self.log_message(f"开始优化SRT文件: {srt_file_path}")
             
             # 读取原始SRT文件
-            with open(srt_file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(srt_file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
             # 解析SRT内容
-            srt_blocks = content.strip().split(&#x27;\n\n&#x27;)
+            srt_blocks = content.strip().split('\n\n')
             new_blocks = []
             new_index = 1
             
             for block in srt_blocks:
-                lines = block.strip().split(&#x27;\n&#x27;)
-                if len(lines) &lt; 3:
-                    self.log_message(f&quot;跳过无效的SRT块: {block}&quot;, &quot;WARNING&quot;)
+                lines = block.strip().split('\n')
+                if len(lines) < 3:
+                    self.log_message(f"跳过无效的SRT块: {block}", "WARNING")
                     continue
                 
                 # 提取时间轴和文本
                 try:
                     index = int(lines[0])
                     time_line = lines[1]
-                    text = &#x27;\n&#x27;.join(lines[2:])
+                    text = '\n'.join(lines[2:])
                     
                     # 解析时间
-                    time_parts = time_line.split(&#x27; --&gt; &#x27;)
+                    time_parts = time_line.split(' --> ')
                     if len(time_parts) != 2:
-                        self.log_message(f&quot;无效的时间轴格式: {time_line}&quot;, &quot;WARNING&quot;)
+                        self.log_message(f"无效的时间轴格式: {time_line}", "WARNING")
                         new_blocks.append(block)
                         continue
                     
@@ -3266,7 +3229,7 @@ class TTSGenerator:
                     
                     if len(split_texts) == 1:
                         # 如果没有切割，保持原样
-                        new_blocks.append(f&quot;{new_index}\n{time_line}\n{text}&quot;)
+                        new_blocks.append(f"{new_index}\n{time_line}\n{text}")
                         new_index += 1
                     else:
                         # 计算每段字幕的时间
@@ -3283,49 +3246,49 @@ class TTSGenerator:
                             segment_start_time = self.ms_to_srt_time(segment_start_ms)
                             segment_end_time = self.ms_to_srt_time(segment_end_ms)
                             
-                            new_blocks.append(f&quot;{new_index}\n{segment_start_time} --&gt; {segment_end_time}\n{segment_text}&quot;)
+                            new_blocks.append(f"{new_index}\n{segment_start_time} --> {segment_end_time}\n{segment_text}")
                             new_index += 1
                             
                 except Exception as e:
-                    self.log_message(f&quot;处理SRT块时出错: {str(e)}&quot;, &quot;ERROR&quot;)
+                    self.log_message(f"处理SRT块时出错: {str(e)}", "ERROR")
                     # 保留原始块
                     new_blocks.append(block)
             
             # 写入优化后的SRT文件
-            optimized_content = &#x27;\n\n&#x27;.join(new_blocks)
-            with open(srt_file_path, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            optimized_content = '\n\n'.join(new_blocks)
+            with open(srt_file_path, 'w', encoding='utf-8') as f:
                 f.write(optimized_content)
             
-            self.log_message(f&quot;SRT文件优化完成: {srt_file_path}&quot;)
+            self.log_message(f"SRT文件优化完成: {srt_file_path}")
             return True
             
         except Exception as e:
-            self.log_message(f&quot;优化SRT文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"优化SRT文件失败: {str(e)}", "ERROR")
             return False
     
     def __init__(self):
         # 设置Azure SDK的日志级别为最高级别以禁用所有日志
         import logging
-        logging.getLogger(&#x27;azure&#x27;).setLevel(logging.CRITICAL)
-        logging.getLogger(&#x27;websockets&#x27;).setLevel(logging.CRITICAL)
+        logging.getLogger('azure').setLevel(logging.CRITICAL)
+        logging.getLogger('websockets').setLevel(logging.CRITICAL)
         
         # 基础配置
         from pathlib import Path
-        self.desktop_path = str(Path.home() / &quot;Desktop&quot;)
+        self.desktop_path = str(Path.home() / "Desktop")
         # 更新路径以匹配新的文件夹结构
-        self.rewrite_path = os.path.join(self.desktop_path, &quot;Youtube/改写&quot;)
+        self.rewrite_path = os.path.join(self.desktop_path, "Youtube/改写")
         
         # MiniMax API配置
-        self.minimax_api_key = &quot;&quot;
-        self.minimax_group_id = &quot;&quot;
+        self.minimax_api_key = ""
+        self.minimax_group_id = ""
         
         # Azure TTS配置
-        self.azure_subscription_key = &quot;&quot;
-        self.azure_region = &quot;&quot;
-        self.azure_voice_name = &quot;&quot;
+        self.azure_subscription_key = ""
+        self.azure_region = ""
+        self.azure_voice_name = ""
         
         # Whisper模型配置
-        self.whisper_model = &quot;small&quot;  # 默认使用small模型，平衡速度和准确度
+        self.whisper_model = "small"  # 默认使用small模型，平衡速度和准确度
         
         # 初始化Azure语音配置
         try:
@@ -3338,7 +3301,7 @@ class TTSGenerator:
             )
             self.speech_config.speech_synthesis_voice_name = self.azure_voice_name
         except Exception as e:
-            self.log_message(f&quot;初始化Azure TTS失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"初始化Azure TTS失败: {str(e)}", "ERROR")
             self.speech_config = None
         
         # 初始化文件选择和模式
@@ -3353,134 +3316,134 @@ class TTSGenerator:
         self.select_and_process_files()
 
     def select_whisper_model(self):
-        &quot;&quot;&quot;选择Whisper模型大小&quot;&quot;&quot;
-        print(&quot;\n=== 选择Whisper语音识别模型 ===&quot;)
-        print(&quot;可用的模型大小:&quot;)
-        print(&quot;1. tiny   - 最小的模型，速度最快但准确度最低&quot;)
-        print(&quot;2. base   - 小型模型，速度较快，准确度适中&quot;)
-        print(&quot;3. small  - 中型模型，平衡了速度和准确度（默认）&quot;)
-        print(&quot;4. medium - 较大模型，准确度高，速度较慢&quot;)
-        print(&quot;5. large  - 最大的模型，准确度最高，但速度最慢&quot;)
+        """选择Whisper模型大小"""
+        print("\n=== 选择Whisper语音识别模型 ===")
+        print("可用的模型大小:")
+        print("1. tiny   - 最小的模型，速度最快但准确度最低")
+        print("2. base   - 小型模型，速度较快，准确度适中")
+        print("3. small  - 中型模型，平衡了速度和准确度（默认）")
+        print("4. medium - 较大模型，准确度高，速度较慢")
+        print("5. large  - 最大的模型，准确度最高，但速度最慢")
         
         while True:
-            choice = input(&quot;\n请选择模型大小 (1-5，默认3): &quot;).strip()
+            choice = input("\n请选择模型大小 (1-5，默认3): ").strip()
             
             if not choice:
-                self.whisper_model = &quot;small&quot;  # 默认
+                self.whisper_model = "small"  # 默认
                 break
                 
             try:
                 choice_num = int(choice)
-                if 1 &lt;= choice_num &lt;= 5:
-                    models = [&quot;tiny&quot;, &quot;base&quot;, &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;]
+                if 1 <= choice_num <= 5:
+                    models = ["tiny", "base", "small", "medium", "large"]
                     self.whisper_model = models[choice_num - 1]
                     break
                 else:
-                    print(&quot;请输入1到5之间的数字&quot;)
+                    print("请输入1到5之间的数字")
             except ValueError:
-                print(&quot;请输入有效的数字&quot;)
+                print("请输入有效的数字")
         
-        self.log_message(f&quot;已选择Whisper模型: {self.whisper_model}&quot;)
+        self.log_message(f"已选择Whisper模型: {self.whisper_model}")
     
     def select_and_process_files(self):
-        &quot;&quot;&quot;选择并处理文件&quot;&quot;&quot;
+        """选择并处理文件"""
         # 获取可用文件列表
         docx_files = self.get_docx_files()
         if not docx_files:
-            self.log_message(&quot;没有找到可用文件&quot;, &quot;ERROR&quot;)
+            self.log_message("没有找到可用文件", "ERROR")
             return
             
         # 显示文件列表
-        self.log_message(&quot;\n可用文件:&quot;)
+        self.log_message("\n可用文件:")
         for i, file in enumerate(docx_files, 1):
-            self.log_message(f&quot;{i}. {file}&quot;)
+            self.log_message(f"{i}. {file}")
         
         # 文件选择循环
-        self.log_message(&quot;\n请选择文件编号（多个文件用空格分隔）: &quot;, &quot;INFO&quot;)
+        self.log_message("\n请选择文件编号（多个文件用空格分隔）: ", "INFO")
         file_input = input().strip()
             
         try:
             # 解析输入的文件编号
             indices = [int(idx) - 1 for idx in file_input.split()]
             # 检查每个编号的有效性
-            valid_indices = [idx for idx in indices if 0 &lt;= idx &lt; len(docx_files)]
+            valid_indices = [idx for idx in indices if 0 <= idx < len(docx_files)]
             
             # 显示无效的选择
             invalid_indices = [idx + 1 for idx in indices if idx not in valid_indices]
             if invalid_indices:
-                self.log_message(f&quot;无效的文件编号: {&#x27;, &#x27;.join(map(str, invalid_indices))}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"无效的文件编号: {', '.join(map(str, invalid_indices))}", "ERROR")
                 return
             
             # 获取要处理的文件
             files_to_process = [docx_files[idx] for idx in valid_indices]
             if not files_to_process:
-                self.log_message(&quot;未选择任何有效文件&quot;, &quot;ERROR&quot;)
+                self.log_message("未选择任何有效文件", "ERROR")
                 return
             
             # 为每个文件选择模式
             for file_name in files_to_process:
-                self.log_message(f&quot;\n为文件 {file_name} 选择模式:&quot;)
+                self.log_message(f"\n为文件 {file_name} 选择模式:")
                 self.select_mode(file_name)
                 self.selected_files.append(file_name)
             
             # 开始处理文件
-            self.log_message(&quot;\n开始处理选中的文件...&quot;)
+            self.log_message("\n开始处理选中的文件...")
             self.process_files()  # 只调用一次
             
         except ValueError:
-            self.log_message(&quot;输入无效，请输入数字编号&quot;, &quot;ERROR&quot;)
+            self.log_message("输入无效，请输入数字编号", "ERROR")
 
     def display_available_files(self, docx_files):
-        &quot;&quot;&quot;显示可用文件列表，标记已选择的文件&quot;&quot;&quot;
-        self.log_message(&quot;\n可用文件列表 (已选择的文件已标记):&quot;)
+        """显示可用文件列表，标记已选择的文件"""
+        self.log_message("\n可用文件列表 (已选择的文件已标记):")
         for i, file in enumerate(docx_files, 1):
-            status = &quot; [已选择]&quot; if file in self.selected_files else &quot;&quot;
-            self.log_message(f&quot;{i}. {file}{status}&quot;)
+            status = " [已选择]" if file in self.selected_files else ""
+            self.log_message(f"{i}. {file}{status}")
 
     def select_mode(self, file_name):
-        &quot;&quot;&quot;为文件选择处理模式&quot;&quot;&quot;
+        """为文件选择处理模式"""
         while True:
             if self.speech_config is None:
-                self.log_message(&quot;1: 通用声音\n2: 奇幻声音\n请选择(1-2): &quot;, &quot;INFO&quot;)
+                self.log_message("1: 通用声音\n2: 奇幻声音\n请选择(1-2): ", "INFO")
                 mode_input = input().strip()
                 try:
                     mode = int(mode_input)
-                    if 1 &lt;= mode &lt;= 2:
+                    if 1 <= mode <= 2:
                         self.file_modes[file_name] = mode
                         break
                 except ValueError:
                     pass
             else:
-                self.log_message(&quot;1: 通用声音\n2: 奇幻声音\n3: Azure TTS\n4: 墨西哥西班牙语 (Jorge)\n请选择(1-4): &quot;, &quot;INFO&quot;)
+                self.log_message("1: 通用声音\n2: 奇幻声音\n3: Azure TTS\n4: 墨西哥西班牙语 (Jorge)\n请选择(1-4): ", "INFO")
                 mode_input = input().strip()
                 try:
                     mode = int(mode_input)
-                    if 1 &lt;= mode &lt;= 4:
+                    if 1 <= mode <= 4:
                         self.file_modes[file_name] = mode
                         break
                 except ValueError:
                     pass
-            self.log_message(&quot;请输入有效的数字&quot;)
+            self.log_message("请输入有效的数字")
 
     def split_text(self, text):
-        &quot;&quot;&quot;按照标点符号分割文本，保持每段的完整性&quot;&quot;&quot;
+        """按照标点符号分割文本，保持每段的完整性"""
         # 去除多余的空白字符
-        text = &#x27; &#x27;.join(text.split())
+        text = ' '.join(text.split())
         
         # 初始化结果列表
         segments = []
-        current_segment = &quot;&quot;
+        current_segment = ""
         
         # 遍历文本
         for char in text:
             current_segment += char
             # 当遇到分隔符时，保存当前段落
-            if char in [&#x27;.&#x27;, &#x27;,&#x27;, &#x27;。&#x27;, &#x27;，&#x27;]:
+            if char in ['.', ',', '。', '，']:
                 # 去掉末尾的标点
                 clean_segment = current_segment[:-1].strip()
                 if clean_segment:
                     segments.append(clean_segment)
-                current_segment = &quot;&quot;
+                current_segment = ""
         
         # 处理最后一段
         if current_segment.strip():
@@ -3489,7 +3452,7 @@ class TTSGenerator:
         return [s for s in segments if s]
 
     def generate_srt(self, segments, start_time=0):
-        &quot;&quot;&quot;生成标准格式的SRT文件内容&quot;&quot;&quot;
+        """生成标准格式的SRT文件内容"""
         srt_content = []
         current_time = start_time
         
@@ -3503,170 +3466,170 @@ class TTSGenerator:
             end = self.format_timestamp(current_time + duration)
             
             # 添加SRT条目（确保每个部分都有换行）
-            srt_content.append(f&quot;{i}\n{start} --&gt; {end}\n{segment}\n&quot;)
+            srt_content.append(f"{i}\n{start} --> {end}\n{segment}\n")
             
             # 更新下一段的开始时间（添加0.1秒间隔）
             current_time += duration + 0.1
         
-        return &quot;\n&quot;.join(srt_content)
+        return "\n".join(srt_content)
 
     def format_timestamp(self, seconds):
-        &quot;&quot;&quot;将秒数转换为 SRT 格式的时间戳&quot;&quot;&quot;
+        """将秒数转换为 SRT 格式的时间戳"""
         hours = int(seconds // 3600)
         minutes = int((seconds % 3600) // 60)
         secs = int(seconds % 60)
         msecs = int((seconds * 1000) % 1000)
-        return f&quot;{hours:02d}:{minutes:02d}:{secs:02d},{msecs:03d}&quot;
+        return f"{hours:02d}:{minutes:02d}:{secs:02d},{msecs:03d}"
 
     def get_current_time(self):
-        &quot;&quot;&quot;获取当前时间的格式化字符串&quot;&quot;&quot;
-        return datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)
+        """获取当前时间的格式化字符串"""
+        return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-    def log_message(self, message, level=&quot;INFO&quot;):
-        &quot;&quot;&quot;输出日志信息&quot;&quot;&quot;
-        print(f&quot;[{self.get_current_time()}] [{level}] {message}&quot;)
+    def log_message(self, message, level="INFO"):
+        """输出日志信息"""
+        print(f"[{self.get_current_time()}] [{level}] {message}")
             
     def read_docx(self, display_name):
-        &quot;&quot;&quot;从改写文件夹读取指定的文件内容&quot;&quot;&quot;
+        """从改写文件夹读取指定的文件内容"""
         try:
             # 从映射中获取原始文件名
             original_file = self.file_mapping.get(display_name)
             if not original_file:
-                self.log_message(f&quot;找不到文件映射: {display_name}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"找不到文件映射: {display_name}", "ERROR")
                 return None
                 
             file_path = os.path.join(self.rewrite_path, original_file)
             if not os.path.exists(file_path):
-                self.log_message(f&quot;文件不存在: {file_path}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"文件不存在: {file_path}", "ERROR")
                 return None
             
             # 根据文件类型读取内容
-            if file_path.endswith(&#x27;.docx&#x27;):
+            if file_path.endswith('.docx'):
                 doc = Document(file_path)
                 text = []
                 for paragraph in doc.paragraphs:
                     if paragraph.text.strip():  # 只添加非空段落
                         text.append(paragraph.text.strip())
-                return &#x27;\n&#x27;.join(text)
-            elif file_path.endswith(&#x27;.txt&#x27;):
+                return '\n'.join(text)
+            elif file_path.endswith('.txt'):
                 # 读取文本文件
-                with open(file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+                with open(file_path, 'r', encoding='utf-8') as f:
                     return f.read().strip()
             else:
-                self.log_message(f&quot;不支持的文件格式: {file_path}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"不支持的文件格式: {file_path}", "ERROR")
                 return None
             
         except Exception as e:
-            self.log_message(f&quot;读取文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"读取文件失败: {str(e)}", "ERROR")
             return None
 
     def download_file(self, file_id, output_file):
-        &quot;&quot;&quot;下载文件&quot;&quot;&quot;
+        """下载文件"""
         try:
             # 先获取文件信息
-            retrieve_url = f&quot;https://api.minimax.chat/v1/files/retrieve?GroupId={self.minimax_group_id}&amp;file_id={file_id}&quot;
+            retrieve_url = f"https://api.minimax.chat/v1/files/retrieve?GroupId={self.minimax_group_id}&file_id={file_id}"
             headers = {
-                &quot;Authorization&quot;: f&quot;Bearer {self.minimax_api_key}&quot;,
-                &quot;Content-Type&quot;: &quot;application/json&quot;
+                "Authorization": f"Bearer {self.minimax_api_key}",
+                "Content-Type": "application/json"
             }
             
             response = requests.get(retrieve_url, headers=headers)
             response.raise_for_status()
             data = response.json()
             
-            if &quot;base_resp&quot; not in data or data[&quot;base_resp&quot;][&quot;status_code&quot;] != 0:
-                error_msg = data.get(&quot;base_resp&quot;, {}).get(&quot;status_msg&quot;, &quot;未知错误&quot;)
-                self.log_message(f&quot;获取文件信息失败: {error_msg}&quot;, &quot;ERROR&quot;)
+            if "base_resp" not in data or data["base_resp"]["status_code"] != 0:
+                error_msg = data.get("base_resp", {}).get("status_msg", "未知错误")
+                self.log_message(f"获取文件信息失败: {error_msg}", "ERROR")
                 return False
             
             # 获取下载链接
-            file_info = data.get(&quot;file&quot;, {})
-            download_url = file_info.get(&quot;download_url&quot;)
+            file_info = data.get("file", {})
+            download_url = file_info.get("download_url")
             if not download_url:
-                self.log_message(&quot;未能获取下载链接&quot;, &quot;ERROR&quot;)
+                self.log_message("未能获取下载链接", "ERROR")
                 return False
             
             # 下载文件内容
             download_response = requests.get(
-                f&quot;https://api.minimax.chat/v1/files/retrieve_content?GroupId={self.minimax_group_id}&amp;file_id={file_id}&quot;,
+                f"https://api.minimax.chat/v1/files/retrieve_content?GroupId={self.minimax_group_id}&file_id={file_id}",
                 headers=headers
             )
             download_response.raise_for_status()
             
             # 保存文件
-            with open(output_file, &quot;wb&quot;) as f:
+            with open(output_file, "wb") as f:
                 f.write(download_response.content)
             
-            self.log_message(f&quot;文件已保存到: {output_file}&quot;)
+            self.log_message(f"文件已保存到: {output_file}")
             return True
             
         except Exception as e:
-            self.log_message(f&quot;下载文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"下载文件失败: {str(e)}", "ERROR")
             return False
 
-    def call_minimax_api(self, text, output_file, mode=&quot;normal&quot;, generate_srt=True):
-        &quot;&quot;&quot;使用MiniMax API生成语音&quot;&quot;&quot;
-        self.log_message(&quot;正在创建MiniMax语音合成任务...&quot;)
+    def call_minimax_api(self, text, output_file, mode="normal", generate_srt=True):
+        """使用MiniMax API生成语音"""
+        self.log_message("正在创建MiniMax语音合成任务...")
         
         # 使用T2A V2 API，支持字幕生成
-        base_url = &quot;https://api.minimax.chat/v1/t2a_v2&quot;
+        base_url = "https://api.minimax.chat/v1/t2a_v2"
         headers = {
-            &quot;Authorization&quot;: f&quot;Bearer {self.minimax_api_key}&quot;,
-            &quot;Content-Type&quot;: &quot;application/json&quot;,
+            "Authorization": f"Bearer {self.minimax_api_key}",
+            "Content-Type": "application/json",
         }
         
-        voice_id = &quot;audiobook_male_1&quot; if mode == &quot;normal&quot; else &quot;audiobook_male_2&quot;
+        voice_id = "audiobook_male_1" if mode == "normal" else "audiobook_male_2"
         
         payload = {
-            &quot;model&quot;: &quot;speech-01-turbo&quot;,
-            &quot;text&quot;: text,
-            &quot;stream&quot;: False,
-            &quot;subtitle_enable&quot;: generate_srt,  # 启用字幕功能
-            &quot;voice_setting&quot;: {
-                &quot;voice_id&quot;: voice_id,
-                &quot;speed&quot;: 1,
-                &quot;vol&quot;: 1,
-                &quot;pitch&quot;: 0
+            "model": "speech-01-turbo",
+            "text": text,
+            "stream": False,
+            "subtitle_enable": generate_srt,  # 启用字幕功能
+            "voice_setting": {
+                "voice_id": voice_id,
+                "speed": 1,
+                "vol": 1,
+                "pitch": 0
             },
-            &quot;audio_setting&quot;: {
-                &quot;sample_rate&quot;: 32000,
-                &quot;bitrate&quot;: 128000,
-                &quot;format&quot;: &quot;mp3&quot;,
-                &quot;channel&quot;: 2
+            "audio_setting": {
+                "sample_rate": 32000,
+                "bitrate": 128000,
+                "format": "mp3",
+                "channel": 2
             }
         }
         
         try:
             # 直接调用T2A V2 API（同步方式）
-            url = f&quot;{base_url}?GroupId={self.minimax_group_id}&quot;
+            url = f"{base_url}?GroupId={self.minimax_group_id}"
             response = requests.post(url, headers=headers, json=payload)
             response.raise_for_status()
             result = response.json()
             
-            if &quot;base_resp&quot; not in result or result[&quot;base_resp&quot;][&quot;status_code&quot;] != 0:
-                error_msg = result.get(&quot;base_resp&quot;, {}).get(&quot;status_msg&quot;, &quot;未知错误&quot;)
-                self.log_message(f&quot;API请求失败: {error_msg}&quot;, &quot;ERROR&quot;)
+            if "base_resp" not in result or result["base_resp"]["status_code"] != 0:
+                error_msg = result.get("base_resp", {}).get("status_msg", "未知错误")
+                self.log_message(f"API请求失败: {error_msg}", "ERROR")
                 return False
             
             # 检查是否有音频数据
-            if &quot;data&quot; not in result or &quot;audio&quot; not in result[&quot;data&quot;]:
-                self.log_message(&quot;API返回中没有音频数据&quot;, &quot;ERROR&quot;)
+            if "data" not in result or "audio" not in result["data"]:
+                self.log_message("API返回中没有音频数据", "ERROR")
                 return False
                 
             # 获取音频数据（hex格式）
-            audio_hex = result[&quot;data&quot;][&quot;audio&quot;]
+            audio_hex = result["data"]["audio"]
             audio_data = bytes.fromhex(audio_hex)
             
             # 保存音频文件
-            with open(output_file, &quot;wb&quot;) as f:
+            with open(output_file, "wb") as f:
                 f.write(audio_data)
             
-            self.log_message(f&quot;音频文件已保存到: {output_file}&quot;)
+            self.log_message(f"音频文件已保存到: {output_file}")
             
             # 处理字幕文件（如果有）
-            if generate_srt and &quot;subtitle_file&quot; in result:
-                subtitle_url = result[&quot;subtitle_file&quot;]
-                self.log_message(f&quot;检测到字幕文件链接: {subtitle_url}&quot;)
+            if generate_srt and "subtitle_file" in result:
+                subtitle_url = result["subtitle_file"]
+                self.log_message(f"检测到字幕文件链接: {subtitle_url}")
                 
                 # 下载字幕文件（JSON格式）
                 try:
@@ -3675,145 +3638,145 @@ class TTSGenerator:
                     subtitle_data = subtitle_response.json()
                     
                     # 输出字幕数据结构信息便于调试
-                    self.log_message(f&quot;字幕数据类型: {type(subtitle_data)}&quot;)
+                    self.log_message(f"字幕数据类型: {type(subtitle_data)}")
                     if isinstance(subtitle_data, list):
-                        self.log_message(f&quot;字幕条目数量: {len(subtitle_data)}&quot;)
-                        if len(subtitle_data) &gt; 0:
-                            self.log_message(f&quot;第一条字幕数据结构: {subtitle_data[0].keys() if isinstance(subtitle_data[0], dict) else &#x27;非字典格式&#x27;}&quot;)
+                        self.log_message(f"字幕条目数量: {len(subtitle_data)}")
+                        if len(subtitle_data) > 0:
+                            self.log_message(f"第一条字幕数据结构: {subtitle_data[0].keys() if isinstance(subtitle_data[0], dict) else '非字典格式'}")
                     
                     # 保存原始JSON字幕文件
-                    json_subtitle_file = output_file.rsplit(&quot;.&quot;, 1)[0] + &quot;.json&quot;
-                    with open(json_subtitle_file, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+                    json_subtitle_file = output_file.rsplit(".", 1)[0] + ".json"
+                    with open(json_subtitle_file, "w", encoding="utf-8") as f:
                         json.dump(subtitle_data, f, ensure_ascii=False, indent=2)
-                    self.log_message(f&quot;JSON字幕文件已保存: {json_subtitle_file}&quot;)
+                    self.log_message(f"JSON字幕文件已保存: {json_subtitle_file}")
                     
                     # 转换为SRT格式并保存
-                    srt_subtitle_file = output_file.rsplit(&quot;.&quot;, 1)[0] + &quot;.srt&quot;
-                    self.log_message(f&quot;开始转换为SRT格式，目标文件: {srt_subtitle_file}&quot;)
+                    srt_subtitle_file = output_file.rsplit(".", 1)[0] + ".srt"
+                    self.log_message(f"开始转换为SRT格式，目标文件: {srt_subtitle_file}")
                     success = self.convert_json_to_srt(subtitle_data, srt_subtitle_file)
                     
                     if success:
-                        self.log_message(f&quot;SRT字幕文件已成功保存: {srt_subtitle_file}&quot;)
+                        self.log_message(f"SRT字幕文件已成功保存: {srt_subtitle_file}")
                         # 优化SRT字幕文件
                         self.optimize_srt_file(srt_subtitle_file)
                     else:
-                        self.log_message(f&quot;SRT字幕文件转换失败&quot;, &quot;ERROR&quot;)
+                        self.log_message(f"SRT字幕文件转换失败", "ERROR")
                 except Exception as e:
-                    self.log_message(f&quot;下载或处理字幕文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+                    self.log_message(f"下载或处理字幕文件失败: {str(e)}", "ERROR")
             else:
-                self.log_message(&quot;同步API没有返回字幕文件，尝试使用异步API生成字幕&quot;, &quot;INFO&quot;)
+                self.log_message("同步API没有返回字幕文件，尝试使用异步API生成字幕", "INFO")
                 # 如果同步API没有返回字幕，尝试使用异步API生成字幕
                 self.call_minimax_async_api(text, output_file, mode)
             
             return True
                 
         except requests.exceptions.RequestException as e:
-            self.log_message(f&quot;API请求失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"API请求失败: {str(e)}", "ERROR")
             return False
         except Exception as e:
-            self.log_message(f&quot;调用MiniMax API失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"调用MiniMax API失败: {str(e)}", "ERROR")
             return False
             
-    def call_minimax_async_api(self, text, output_file, mode=&quot;normal&quot;):
-        &quot;&quot;&quot;使用MiniMax异步API生成语音和字幕&quot;&quot;&quot;
-        self.log_message(&quot;正在创建MiniMax异步语音合成任务...&quot;)
+    def call_minimax_async_api(self, text, output_file, mode="normal"):
+        """使用MiniMax异步API生成语音和字幕"""
+        self.log_message("正在创建MiniMax异步语音合成任务...")
         
         # 创建临时文本文件
-        temp_dir = os.path.join(self.desktop_path, &quot;Youtube/temp&quot;)
+        temp_dir = os.path.join(self.desktop_path, "Youtube/temp")
         os.makedirs(temp_dir, exist_ok=True)
         # 使用只包含字母和数字的文件名
-        temp_txt_file = os.path.join(temp_dir, &quot;temptext.txt&quot;)
-        temp_zip_file = os.path.join(temp_dir, &quot;temptext.zip&quot;)
+        temp_txt_file = os.path.join(temp_dir, "temptext.txt")
+        temp_zip_file = os.path.join(temp_dir, "temptext.zip")
         
         # 保存文本到临时文件
-        with open(temp_txt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        with open(temp_txt_file, 'w', encoding='utf-8') as f:
             f.write(text)
         
         # 创建ZIP文件
         import zipfile
-        with zipfile.ZipFile(temp_zip_file, &#x27;w&#x27;) as zipf:
+        with zipfile.ZipFile(temp_zip_file, 'w') as zipf:
             # 确保ZIP内的文件名也只包含字母和数字
-            zipf.write(temp_txt_file, &quot;temptext.txt&quot;)
+            zipf.write(temp_txt_file, "temptext.txt")
         
         # 设置API参数
-        url = f&quot;https://api.minimax.chat/v1/t2a_async?GroupId={self.minimax_group_id}&quot;
+        url = f"https://api.minimax.chat/v1/t2a_async?GroupId={self.minimax_group_id}"
         headers = {
-            &quot;Authorization&quot;: f&quot;Bearer {self.minimax_api_key}&quot;
+            "Authorization": f"Bearer {self.minimax_api_key}"
         }
         
-        voice_id = &quot;audiobook_male_1&quot; if mode == &quot;normal&quot; else &quot;audiobook_male_2&quot;
+        voice_id = "audiobook_male_1" if mode == "normal" else "audiobook_male_2"
         
         data = {
-            &#x27;model&#x27;: &#x27;speech-01&#x27;,
-            &#x27;voice_id&#x27;: voice_id,
-            &#x27;speed&#x27;: &#x27;1.0&#x27;,
-            &quot;vol&quot;: &#x27;1.0&#x27;,
-            &quot;pitch&quot;: &#x27;0&#x27;,
-            &quot;audio_sample_rate&quot;: &#x27;32000&#x27;,
-            &quot;bitrate&quot;: &#x27;128900&#x27;  # 必须是32900、64900或128900中的一个
+            'model': 'speech-01',
+            'voice_id': voice_id,
+            'speed': '1.0',
+            "vol": '1.0',
+            "pitch": '0',
+            "audio_sample_rate": '32000',
+            "bitrate": '128900'  # 必须是32900、64900或128900中的一个
         }
         
         files = {
-            &#x27;text&#x27;: open(temp_zip_file, &#x27;rb&#x27;)
+            'text': open(temp_zip_file, 'rb')
         }
         
         try:
             # 创建异步任务
-            self.log_message(&quot;提交异步语音合成任务...&quot;)
+            self.log_message("提交异步语音合成任务...")
             response = requests.post(url, headers=headers, data=data, files=files)
             response.raise_for_status()
             result = response.json()
             
             # 关闭文件
-            files[&#x27;text&#x27;].close()
+            files['text'].close()
             
             # 删除临时文件
             os.remove(temp_txt_file)
             os.remove(temp_zip_file)
             
-            if &quot;base_resp&quot; not in result or result[&quot;base_resp&quot;][&quot;status_code&quot;] != 0:
-                error_msg = result.get(&quot;base_resp&quot;, {}).get(&quot;status_msg&quot;, &quot;未知错误&quot;)
-                self.log_message(f&quot;异步API请求失败: {error_msg}&quot;, &quot;ERROR&quot;)
+            if "base_resp" not in result or result["base_resp"]["status_code"] != 0:
+                error_msg = result.get("base_resp", {}).get("status_msg", "未知错误")
+                self.log_message(f"异步API请求失败: {error_msg}", "ERROR")
                 return False
             
             # 获取任务ID和文件ID
-            task_id = result.get(&quot;task_id&quot;)
-            file_id = result.get(&quot;file_id&quot;)
+            task_id = result.get("task_id")
+            file_id = result.get("file_id")
             
             if not task_id or not file_id:
-                self.log_message(&quot;未能获取任务ID或文件ID&quot;, &quot;ERROR&quot;)
+                self.log_message("未能获取任务ID或文件ID", "ERROR")
                 return False
                 
-            self.log_message(f&quot;异步任务已创建，任务ID: {task_id}, 文件ID: {file_id}&quot;)
+            self.log_message(f"异步任务已创建，任务ID: {task_id}, 文件ID: {file_id}")
             
             # 轮询任务状态
             max_retries = 30  # 最多等待30次，每次10秒
             for i in range(max_retries):
                 status = self.check_minimax_async_task(task_id)
-                if status == &quot;Success&quot;:
-                    self.log_message(&quot;异步任务处理完成，开始下载结果&quot;)
+                if status == "Success":
+                    self.log_message("异步任务处理完成，开始下载结果")
                     # 下载结果
                     return self.download_minimax_async_result(file_id, output_file)
-                elif status == &quot;Failed&quot; or status == &quot;Expired&quot;:
-                    self.log_message(f&quot;异步任务处理失败，状态: {status}&quot;, &quot;ERROR&quot;)
+                elif status == "Failed" or status == "Expired":
+                    self.log_message(f"异步任务处理失败，状态: {status}", "ERROR")
                     return False
                 else:  # Processing
-                    self.log_message(f&quot;异步任务处理中，等待中... ({i+1}/{max_retries})&quot;)
+                    self.log_message(f"异步任务处理中，等待中... ({i+1}/{max_retries})")
                     time.sleep(10)  # 等待10秒再次检查
             
-            self.log_message(&quot;异步任务处理超时&quot;, &quot;ERROR&quot;)
+            self.log_message("异步任务处理超时", "ERROR")
             return False
             
         except Exception as e:
-            self.log_message(f&quot;异步API请求失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"异步API请求失败: {str(e)}", "ERROR")
             return False
     
     def check_minimax_async_task(self, task_id):
-        &quot;&quot;&quot;检查MiniMax异步任务状态&quot;&quot;&quot;
-        url = f&quot;https://api.minimax.chat/query/t2a_async_query?GroupId={self.minimax_group_id}&amp;task_id={task_id}&quot;
+        """检查MiniMax异步任务状态"""
+        url = f"https://api.minimax.chat/query/t2a_async_query?GroupId={self.minimax_group_id}&task_id={task_id}"
         headers = {
-            &quot;Authorization&quot;: f&quot;Bearer {self.minimax_api_key}&quot;,
-            &quot;Content-Type&quot;: &quot;application/json&quot;
+            "Authorization": f"Bearer {self.minimax_api_key}",
+            "Content-Type": "application/json"
         }
         
         try:
@@ -3821,58 +3784,58 @@ class TTSGenerator:
             response.raise_for_status()
             result = response.json()
             
-            if &quot;base_resp&quot; not in result or result[&quot;base_resp&quot;][&quot;status_code&quot;] != 0:
-                error_msg = result.get(&quot;base_resp&quot;, {}).get(&quot;status_msg&quot;, &quot;未知错误&quot;)
-                self.log_message(f&quot;检查任务状态失败: {error_msg}&quot;, &quot;ERROR&quot;)
-                return &quot;Failed&quot;
+            if "base_resp" not in result or result["base_resp"]["status_code"] != 0:
+                error_msg = result.get("base_resp", {}).get("status_msg", "未知错误")
+                self.log_message(f"检查任务状态失败: {error_msg}", "ERROR")
+                return "Failed"
             
-            status = result.get(&quot;status&quot;)
+            status = result.get("status")
             return status  # Processing, Success, Failed, Expired
             
         except Exception as e:
-            self.log_message(f&quot;检查任务状态失败: {str(e)}&quot;, &quot;ERROR&quot;)
-            return &quot;Failed&quot;
+            self.log_message(f"检查任务状态失败: {str(e)}", "ERROR")
+            return "Failed"
     
     def download_minimax_async_result(self, file_id, output_file):
-        &quot;&quot;&quot;下载MiniMax异步任务结果&quot;&quot;&quot;
+        """下载MiniMax异步任务结果"""
         try:
             # 获取文件信息
-            retrieve_url = f&quot;https://api.minimax.chat/v1/files/retrieve?GroupId={self.minimax_group_id}&amp;file_id={file_id}&quot;
+            retrieve_url = f"https://api.minimax.chat/v1/files/retrieve?GroupId={self.minimax_group_id}&file_id={file_id}"
             headers = {
-                &quot;Authorization&quot;: f&quot;Bearer {self.minimax_api_key}&quot;,
-                &quot;Content-Type&quot;: &quot;application/json&quot;
+                "Authorization": f"Bearer {self.minimax_api_key}",
+                "Content-Type": "application/json"
             }
             
             response = requests.get(retrieve_url, headers=headers)
             response.raise_for_status()
             data = response.json()
             
-            if &quot;base_resp&quot; not in data or data[&quot;base_resp&quot;][&quot;status_code&quot;] != 0:
-                error_msg = data.get(&quot;base_resp&quot;, {}).get(&quot;status_msg&quot;, &quot;未知错误&quot;)
-                self.log_message(f&quot;获取文件信息失败: {error_msg}&quot;, &quot;ERROR&quot;)
+            if "base_resp" not in data or data["base_resp"]["status_code"] != 0:
+                error_msg = data.get("base_resp", {}).get("status_msg", "未知错误")
+                self.log_message(f"获取文件信息失败: {error_msg}", "ERROR")
                 return False
             
             # 下载文件内容
-            download_url = f&quot;https://api.minimax.chat/v1/files/retrieve_content?GroupId={self.minimax_group_id}&amp;file_id={file_id}&quot;
-            self.log_message(f&quot;开始下载文件，URL: {download_url}&quot;)
+            download_url = f"https://api.minimax.chat/v1/files/retrieve_content?GroupId={self.minimax_group_id}&file_id={file_id}"
+            self.log_message(f"开始下载文件，URL: {download_url}")
             
             download_response = requests.get(download_url, headers=headers)
             download_response.raise_for_status()
             
             # 记录响应头信息，用于调试
-            self.log_message(f&quot;下载响应头: {dict(download_response.headers)}&quot;)
-            self.log_message(f&quot;下载内容大小: {len(download_response.content)} 字节&quot;)
+            self.log_message(f"下载响应头: {dict(download_response.headers)}")
+            self.log_message(f"下载内容大小: {len(download_response.content)} 字节")
             
             # 检查内容类型
-            content_type = download_response.headers.get(&#x27;Content-Type&#x27;, &#x27;&#x27;)
-            self.log_message(f&quot;内容类型: {content_type}&quot;)
+            content_type = download_response.headers.get('Content-Type', '')
+            self.log_message(f"内容类型: {content_type}")
             
             # 如果是音频文件，直接保存
-            if &#x27;audio&#x27; in content_type or &#x27;mp3&#x27; in content_type.lower():
+            if 'audio' in content_type or 'mp3' in content_type.lower():
                 # 直接保存为音频文件
-                with open(output_file, &quot;wb&quot;) as f:
+                with open(output_file, "wb") as f:
                     f.write(download_response.content)
-                self.log_message(f&quot;异步API音频文件已直接保存到: {output_file}&quot;)
+                self.log_message(f"异步API音频文件已直接保存到: {output_file}")
                 return True
             
             # 尝试作为ZIP文件处理
@@ -3884,91 +3847,91 @@ class TTSGenerator:
                 with zipfile.ZipFile(zip_content) as zipf:
                     # 查看ZIP文件内容
                     file_list = zipf.namelist()
-                    self.log_message(f&quot;下载的ZIP文件包含以下文件: {file_list}&quot;)
+                    self.log_message(f"下载的ZIP文件包含以下文件: {file_list}")
                     
                     # 提取音频文件和字幕文件
                     for file_name in file_list:
-                        if file_name.endswith(&#x27;.mp3&#x27;):
+                        if file_name.endswith('.mp3'):
                             # 保存音频文件
-                            with open(output_file, &#x27;wb&#x27;) as f:
+                            with open(output_file, 'wb') as f:
                                 f.write(zipf.read(file_name))
-                            self.log_message(f&quot;异步API音频文件已保存到: {output_file}&quot;)
+                            self.log_message(f"异步API音频文件已保存到: {output_file}")
                         
-                        elif file_name.endswith(&#x27;.json&#x27;) and (&#x27;字幕&#x27; in file_name or &#x27;subtitle&#x27; in file_name.lower()):
+                        elif file_name.endswith('.json') and ('字幕' in file_name or 'subtitle' in file_name.lower()):
                             # 保存字幕JSON文件
-                            json_subtitle_file = output_file.rsplit(&quot;.&quot;, 1)[0] + &quot;.json&quot;
-                            subtitle_data = json.loads(zipf.read(file_name).decode(&#x27;utf-8&#x27;))
+                            json_subtitle_file = output_file.rsplit(".", 1)[0] + ".json"
+                            subtitle_data = json.loads(zipf.read(file_name).decode('utf-8'))
                             
-                            with open(json_subtitle_file, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+                            with open(json_subtitle_file, "w", encoding="utf-8") as f:
                                 json.dump(subtitle_data, f, ensure_ascii=False, indent=2)
-                            self.log_message(f&quot;异步API字幕JSON文件已保存: {json_subtitle_file}&quot;)
+                            self.log_message(f"异步API字幕JSON文件已保存: {json_subtitle_file}")
                             
                             # 转换为SRT格式并保存
-                            srt_subtitle_file = output_file.rsplit(&quot;.&quot;, 1)[0] + &quot;.srt&quot;
-                            self.log_message(f&quot;开始转换为SRT格式，目标文件: {srt_subtitle_file}&quot;)
+                            srt_subtitle_file = output_file.rsplit(".", 1)[0] + ".srt"
+                            self.log_message(f"开始转换为SRT格式，目标文件: {srt_subtitle_file}")
                             
                             if isinstance(subtitle_data, list):
                                 success = self.convert_json_to_srt(subtitle_data, srt_subtitle_file)
                                 
                                 if success:
-                                    self.log_message(f&quot;异步API SRT字幕文件已成功保存: {srt_subtitle_file}&quot;)
+                                    self.log_message(f"异步API SRT字幕文件已成功保存: {srt_subtitle_file}")
                                     # 优化SRT字幕文件
                                     self.optimize_srt_file(srt_subtitle_file)
                                 else:
-                                    self.log_message(f&quot;异步API SRT字幕文件转换失败&quot;, &quot;ERROR&quot;)
+                                    self.log_message(f"异步API SRT字幕文件转换失败", "ERROR")
                             else:
-                                self.log_message(f&quot;异步API字幕数据格式不是列表，无法转换为SRT&quot;, &quot;ERROR&quot;)
+                                self.log_message(f"异步API字幕数据格式不是列表，无法转换为SRT", "ERROR")
                     return True
             except zipfile.BadZipFile:
-                self.log_message(&quot;下载的内容不是有效的ZIP文件，尝试其他处理方式&quot;)
+                self.log_message("下载的内容不是有效的ZIP文件，尝试其他处理方式")
             
             # 如果上述方法都失败，直接保存原始文件
-            self.log_message(&quot;尝试直接保存原始文件&quot;)
+            self.log_message("尝试直接保存原始文件")
             
             # 尝试作为JSON处理
             try:
                 json_data = json.loads(download_response.content)
-                self.log_message(f&quot;内容似乎是JSON数据，尝试处理&quot;)
+                self.log_message(f"内容似乎是JSON数据，尝试处理")
                 
                 # 保存JSON文件
-                json_file = output_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;.json&#x27;
-                with open(json_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+                json_file = output_file.rsplit('.', 1)[0] + '.json'
+                with open(json_file, 'w', encoding='utf-8') as f:
                     json.dump(json_data, f, ensure_ascii=False, indent=2)
-                self.log_message(f&quot;JSON数据已保存到: {json_file}&quot;)
+                self.log_message(f"JSON数据已保存到: {json_file}")
                 
                 # 如果看起来像字幕数据，尝试转换为SRT
-                if isinstance(json_data, list) and len(json_data) &gt; 0:
-                    srt_file = output_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;.srt&#x27;
+                if isinstance(json_data, list) and len(json_data) > 0:
+                    srt_file = output_file.rsplit('.', 1)[0] + '.srt'
                     success = self.convert_json_to_srt(json_data, srt_file)
                     if success:
-                        self.log_message(f&quot;SRT字幕文件已成功保存: {srt_file}&quot;)
+                        self.log_message(f"SRT字幕文件已成功保存: {srt_file}")
                         # 优化SRT字幕文件
                         self.optimize_srt_file(srt_file)
                     else:
-                        self.log_message(f&quot;SRT字幕文件转换失败&quot;, &quot;ERROR&quot;)
+                        self.log_message(f"SRT字幕文件转换失败", "ERROR")
                 return True
             except json.JSONDecodeError:
-                self.log_message(&quot;内容不是JSON数据，直接保存为二进制文件&quot;)
+                self.log_message("内容不是JSON数据，直接保存为二进制文件")
             
             # 如果所有尝试都失败，直接保存原始文件
-            with open(output_file, &#x27;wb&#x27;) as f:
+            with open(output_file, 'wb') as f:
                 f.write(download_response.content)
-            self.log_message(f&quot;原始文件已保存到: {output_file}&quot;)
+            self.log_message(f"原始文件已保存到: {output_file}")
             return True
             
             return True
             
         except Exception as e:
-            self.log_message(f&quot;下载异步任务结果失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"下载异步任务结果失败: {str(e)}", "ERROR")
             return False
 
     def generate_azure_audio(self, text, output_file, max_retries=3):
-        &quot;&quot;&quot;使用Azure TTS生成音频，支持重试和分块处理&quot;&quot;&quot;
+        """使用Azure TTS生成音频，支持重试和分块处理"""
         try:
             # 将文本分成较小的块
             text_chunks = self.split_text_into_chunks(text)
             total_chunks = len(text_chunks)
-            self.log_message(f&quot;准备处理 {total_chunks} 个文本块...&quot;)
+            self.log_message(f"准备处理 {total_chunks} 个文本块...")
             
             # 创建临时文件列表
             temp_files = []
@@ -3977,16 +3940,16 @@ class TTSGenerator:
             total_duration = 0
             
             # 创建进度条
-            with tqdm(total=total_chunks, desc=&quot;处理文本块&quot;, unit=&quot;chunk&quot;) as chunk_pbar:
+            with tqdm(total=total_chunks, desc="处理文本块", unit="chunk") as chunk_pbar:
                 for chunk_idx, chunk in enumerate(text_chunks):
-                    self.log_message(f&quot;开始处理第 {chunk_idx + 1} 个文本块，长度: {len(chunk)} 字符&quot;)
+                    self.log_message(f"开始处理第 {chunk_idx + 1} 个文本块，长度: {len(chunk)} 字符")
                     retry_count = 0
                     success = False
                     
-                    while not success and retry_count &lt; max_retries:
+                    while not success and retry_count < max_retries:
                         try:
                             # 为每个块创建临时文件
-                            temp_file = f&quot;{output_file}.part{chunk_idx}&quot;
+                            temp_file = f"{output_file}.part{chunk_idx}"
                             temp_files.append(temp_file)
                             
                             synthesizer = speechsdk.SpeechSynthesizer(
@@ -4019,15 +3982,15 @@ class TTSGenerator:
                                     current_segment.append(word)
                                     
                                     # 在句子结束时添加字幕
-                                    if any(word.endswith(p) for p in (&#x27;.&#x27;, &#x27;,&#x27;, &#x27;。&#x27;, &#x27;，&#x27;, &#x27;!&#x27;, &#x27;?&#x27;, &#x27;！&#x27;, &#x27;？&#x27;)):
-                                        segment_text = &#x27; &#x27;.join(current_segment)
+                                    if any(word.endswith(p) for p in ('.', ',', '。', '，', '!', '?', '！', '？')):
+                                        segment_text = ' '.join(current_segment)
                                         # 移除末尾的标点符号
-                                        segment_text = segment_text.rstrip(&#x27;.,。，!?！？&#x27;)
+                                        segment_text = segment_text.rstrip('.,。，!?！？')
                                         
                                         if segment_text:  # 确保有内容再添加字幕
-                                            subtitles.append(f&quot;{current_index}\n&quot;
-                                                           f&quot;{self.format_timestamp(segment_start_time)} --&gt; {self.format_timestamp(segment_end_time)}\n&quot;
-                                                           f&quot;{segment_text}\n&quot;)
+                                            subtitles.append(f"{current_index}\n"
+                                                           f"{self.format_timestamp(segment_start_time)} --> {self.format_timestamp(segment_end_time)}\n"
+                                                           f"{segment_text}\n")
                                             current_index += 1
                                         
                                         current_segment = []
@@ -4037,11 +4000,11 @@ class TTSGenerator:
                             synthesizer.synthesis_word_boundary.connect(handle_boundary_event)
                             
                             # 合成语音
-                            self.log_message(f&quot;正在合成第 {chunk_idx + 1} 个文本块...&quot;)
+                            self.log_message(f"正在合成第 {chunk_idx + 1} 个文本块...")
                             result = synthesizer.speak_text_async(chunk).get()
                             
                             if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
-                                self.log_message(f&quot;第 {chunk_idx + 1} 个文本块合成成功&quot;)
+                                self.log_message(f"第 {chunk_idx + 1} 个文本块合成成功")
                                 # 更新总时长
                                 audio = AudioSegment.from_file(temp_file)
                                 chunk_duration = audio.duration_seconds
@@ -4049,67 +4012,67 @@ class TTSGenerator:
                                 total_duration += chunk_duration + 0.1  # 每个块之间添加0.1秒间隔
                                 success = True
                             else:
-                                raise Exception(&quot;语音合成失败&quot;)
+                                raise Exception("语音合成失败")
                                 
                         except Exception as e:
                             retry_count += 1
-                            self.log_message(f&quot;处理文本块 {chunk_idx + 1}/{total_chunks} 失败: {str(e)}，尝试重试 ({retry_count}/{max_retries})&quot;)
-                            if retry_count &gt;= max_retries:
-                                raise Exception(f&quot;处理文本块失败，已达到最大重试次数: {str(e)}&quot;)
+                            self.log_message(f"处理文本块 {chunk_idx + 1}/{total_chunks} 失败: {str(e)}，尝试重试 ({retry_count}/{max_retries})")
+                            if retry_count >= max_retries:
+                                raise Exception(f"处理文本块失败，已达到最大重试次数: {str(e)}")
                     
                     chunk_pbar.update(1)
             
             # 合并所有临时文件，添加间隔
-            self.log_message(&quot;开始合并音频文件...&quot;)
+            self.log_message("开始合并音频文件...")
             combined = AudioSegment.empty()
             silence = AudioSegment.silent(duration=100)  # 100ms的静音
             
             for temp_file in temp_files:
-                if combined.duration_seconds &gt; 0:
+                if combined.duration_seconds > 0:
                     combined += silence  # 在每个块之间添加静音
                 audio = AudioSegment.from_file(temp_file)
                 combined += audio
             
             # 导出合并后的文件
-            self.log_message(&quot;保存最终音频文件...&quot;)
-            combined.export(output_file, format=&#x27;mp3&#x27;)
+            self.log_message("保存最终音频文件...")
+            combined.export(output_file, format='mp3')
             
             # 保存字幕文件
-            srt_file = output_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;.srt&#x27;
-            with open(srt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n&#x27;.join(subtitles))
+            srt_file = output_file.rsplit('.', 1)[0] + '.srt'
+            with open(srt_file, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(subtitles))
             
             # 优化SRT字幕文件
             self.optimize_srt_file(srt_file)
             
             # 清理临时文件
-            self.log_message(&quot;清理临时文件...&quot;)
+            self.log_message("清理临时文件...")
             for temp_file in temp_files:
                 try:
                     os.remove(temp_file)
                 except Exception as e:
-                    self.log_message(f&quot;清理临时文件失败: {str(e)}&quot;, &quot;WARNING&quot;)
+                    self.log_message(f"清理临时文件失败: {str(e)}", "WARNING")
             
             return True
         
         except Exception as e:
-            self.log_message(f&quot;Azure TTS错误: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"Azure TTS错误: {str(e)}", "ERROR")
             # 清理临时文件
             for temp_file in temp_files:
                 try:
                     os.remove(temp_file)
                 except Exception as e:
-                    self.log_message(f&quot;清理临时文件失败: {str(e)}&quot;, &quot;WARNING&quot;)
+                    self.log_message(f"清理临时文件失败: {str(e)}", "WARNING")
             return False
 
     def split_text_into_chunks(self, text, max_chars=1000):  
-        &quot;&quot;&quot;将文本分成较小的块，以避免连接超时&quot;&quot;&quot;
+        """将文本分成较小的块，以避免连接超时"""
         chunks = []
         current_chunk = []
         current_length = 0
         
         # 按句子分割文本
-        sentences = text.replace(&#x27;。&#x27;, &#x27;。\n&#x27;).replace(&#x27;！&#x27;, &#x27;！\n&#x27;).replace(&#x27;？&#x27;, &#x27;？\n&#x27;).replace(&#x27;\n\n&#x27;, &#x27;\n&#x27;).split(&#x27;\n&#x27;)
+        sentences = text.replace('。', '。\n').replace('！', '！\n').replace('？', '？\n').replace('\n\n', '\n').split('\n')
         
         for sentence in sentences:
             sentence = sentence.strip()
@@ -4119,21 +4082,21 @@ class TTSGenerator:
             sentence_length = len(sentence)
             
             # 如果单个句子超过最大长度，按标点符号分割
-            if sentence_length &gt; max_chars:
+            if sentence_length > max_chars:
                 sub_sentences = []
-                temp = &#x27;&#x27;
+                temp = ''
                 for char in sentence:
                     temp += char
-                    if len(temp) &gt;= max_chars or char in (&#x27;，&#x27;, &#x27;；&#x27;, &#x27;、&#x27;, &#x27;,&#x27;, &#x27;;&#x27;):
+                    if len(temp) >= max_chars or char in ('，', '；', '、', ',', ';'):
                         if temp:
                             sub_sentences.append(temp)
-                            temp = &#x27;&#x27;
+                            temp = ''
                 if temp:
                     sub_sentences.append(temp)
                     
                 for sub in sub_sentences:
-                    if current_length + len(sub) &gt; max_chars:
-                        chunks.append(&#x27;&#x27;.join(current_chunk))
+                    if current_length + len(sub) > max_chars:
+                        chunks.append(''.join(current_chunk))
                         current_chunk = [sub]
                         current_length = len(sub)
                     else:
@@ -4141,8 +4104,8 @@ class TTSGenerator:
                         current_length += len(sub)
             else:
                 # 如果当前块加上新句子超过最大长度，创建新块
-                if current_length + sentence_length &gt; max_chars:
-                    chunks.append(&#x27;&#x27;.join(current_chunk))
+                if current_length + sentence_length > max_chars:
+                    chunks.append(''.join(current_chunk))
                     current_chunk = [sentence]
                     current_length = sentence_length
                 else:
@@ -4151,12 +4114,12 @@ class TTSGenerator:
         
         # 添加最后一个块
         if current_chunk:
-            chunks.append(&#x27;&#x27;.join(current_chunk))
+            chunks.append(''.join(current_chunk))
         
         return chunks
 
     def merge_audio_files(self, audio_files, output_file):
-        &quot;&quot;&quot;合并多个音频文件&quot;&quot;&quot;
+        """合并多个音频文件"""
         try:
             from pydub import AudioSegment
             
@@ -4169,105 +4132,105 @@ class TTSGenerator:
                 combined += audio
             
             # 导出合并后的文件
-            combined.export(output_file, format=&#x27;mp3&#x27;)
+            combined.export(output_file, format='mp3')
             return True
         except Exception as e:
-            self.log_message(f&quot;合并音频文件失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"合并音频文件失败: {str(e)}", "ERROR")
             return False
 
-    def process_single_file(self, file_name, whisper_model=&quot;small&quot;):
-        &quot;&quot;&quot;处理单个文件
+    def process_single_file(self, file_name, whisper_model="small"):
+        """处理单个文件
         
         Args:
             file_name: 要处理的文件名
-            whisper_model: Whisper模型大小，可选值: &quot;tiny&quot;, &quot;base&quot;, &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;
-        &quot;&quot;&quot;
+            whisper_model: Whisper模型大小，可选值: "tiny", "base", "small", "medium", "large"
+        """
         try:
-            self.log_message(f&quot;\n开始处理文件: {file_name}&quot;)
+            self.log_message(f"\n开始处理文件: {file_name}")
             
             # 获取文件内容
             content = self.read_docx(file_name)
             if content is None:
-                self.log_message(f&quot;文件处理失败: {file_name}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"文件处理失败: {file_name}", "ERROR")
                 return False
             
             # 创建输出文件夹
-            output_dir = os.path.join(self.desktop_path, &quot;Youtube/输出语音&quot;)
+            output_dir = os.path.join(self.desktop_path, "Youtube/输出语音")
             os.makedirs(output_dir, exist_ok=True)
             
             # 设置输出文件路径
-            output_file = os.path.join(output_dir, f&quot;{file_name}.mp3&quot;)
+            output_file = os.path.join(output_dir, f"{file_name}.mp3")
             
             # 根据选择的模式生成音频
-            mode = self.file_modes.get(file_name, &quot;normal&quot;)
+            mode = self.file_modes.get(file_name, "normal")
             
-            if mode == &quot;azure&quot;:
+            if mode == "azure":
                 success = self.generate_azure_audio(content, output_file)
             else:
                 success = self.call_minimax_api(content, output_file, mode, generate_srt=False)  # 不生成SRT
             
             if success:
-                self.log_message(f&quot;文件处理成功: {file_name}&quot;)
+                self.log_message(f"文件处理成功: {file_name}")
                 
                 # 直接使用Whisper生成字幕
-                self.log_message(f&quot;正在使用Whisper({whisper_model}模型)进行语音识别和字幕生成...&quot;)
+                self.log_message(f"正在使用Whisper({whisper_model}模型)进行语音识别和字幕生成...")
                 whisper_srt_file = self.generate_whisper_subtitles(output_file, model_size=whisper_model)
                 
                 if whisper_srt_file and os.path.exists(whisper_srt_file):
                     # 使用原始Word文档内容校正Whisper识别的字幕
-                    self.log_message(&quot;正在使用原始Word文档内容校正Whisper识别的字幕...&quot;)
-                    corrected_srt_file = output_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;.srt&#x27;  # 最终SRT文件
+                    self.log_message("正在使用原始Word文档内容校正Whisper识别的字幕...")
+                    corrected_srt_file = output_file.rsplit('.', 1)[0] + '.srt'  # 最终SRT文件
                     self.correct_whisper_with_word_content(whisper_srt_file, content, corrected_srt_file)
-                    self.log_message(f&quot;生成校正后的字幕文件: {corrected_srt_file}&quot;)
+                    self.log_message(f"生成校正后的字幕文件: {corrected_srt_file}")
                     
                     # 清理中间文件
                     try:
                         if os.path.exists(whisper_srt_file):
                             os.remove(whisper_srt_file)
-                            self.log_message(f&quot;已清理中间文件: {whisper_srt_file}&quot;)
+                            self.log_message(f"已清理中间文件: {whisper_srt_file}")
                     except Exception as e:
-                        self.log_message(f&quot;清理中间文件失败: {str(e)}&quot;, &quot;WARNING&quot;)
+                        self.log_message(f"清理中间文件失败: {str(e)}", "WARNING")
                 
                 return True
             else:
-                self.log_message(f&quot;文件处理失败: {file_name}&quot;, &quot;ERROR&quot;)
+                self.log_message(f"文件处理失败: {file_name}", "ERROR")
                 return False
                 
         except Exception as e:
-            self.log_message(f&quot;处理文件时出错: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"处理文件时出错: {str(e)}", "ERROR")
             return False
 
     def process_files(self):
-        &quot;&quot;&quot;处理所有选中的文件&quot;&quot;&quot;
-        self.log_message(&quot;\n开始处理选中的文件...&quot;)
+        """处理所有选中的文件"""
+        self.log_message("\n开始处理选中的文件...")
         
         # 获取所有需要处理的文件
         files_to_process = [f for f in self.file_modes.keys()]
         total_files = len(files_to_process)
         
         # 使用tqdm创建总体进度条
-        with tqdm(total=total_files, desc=&quot;总体进度&quot;, unit=&quot;file&quot;) as pbar:
+        with tqdm(total=total_files, desc="总体进度", unit="file") as pbar:
             for i, file_name in enumerate(files_to_process, 1):
-                self.log_message(f&quot;\n处理文件 ({i}/{total_files}): {file_name}&quot;)
+                self.log_message(f"\n处理文件 ({i}/{total_files}): {file_name}")
                 success = self.process_single_file(file_name, whisper_model=self.whisper_model)
                 pbar.update(1)
                 if not success:
-                    self.log_message(f&quot;文件处理失败: {file_name}&quot;, &quot;ERROR&quot;)
+                    self.log_message(f"文件处理失败: {file_name}", "ERROR")
         
-        self.log_message(&quot;\n所有文件处理完成!&quot;)
+        self.log_message("\n所有文件处理完成!")
 
     def get_docx_files(self):
-        &quot;&quot;&quot;获取改写文件夹中的docx文件&quot;&quot;&quot;
+        """获取改写文件夹中的docx文件"""
         try:
             if not os.path.exists(self.rewrite_path):
-                self.log_message(&quot;改写文件夹不存在&quot;, &quot;ERROR&quot;)
+                self.log_message("改写文件夹不存在", "ERROR")
                 return []
             
             # 获取所有文件
             files = [f for f in os.listdir(self.rewrite_path) 
                     if os.path.isfile(os.path.join(self.rewrite_path, f)) and 
-                    f.endswith((&#x27;.docx&#x27;, &#x27;.txt&#x27;)) and 
-                    not f.startswith(&#x27;~$&#x27;)]  # 排除临时文件
+                    f.endswith(('.docx', '.txt')) and 
+                    not f.startswith('~$')]  # 排除临时文件
             
             # 存储文件名和原始文件名的映射
             self.file_mapping = {}
@@ -4280,71 +4243,71 @@ class TTSGenerator:
                     display_files.append(display_name)
                     self.file_mapping[display_name] = file
             
-            self.log_message(f&quot;改写文件夹路径: {self.rewrite_path}&quot;)
-            self.log_message(f&quot;改写文件夹文件总数: {len(files)}&quot;)
+            self.log_message(f"改写文件夹路径: {self.rewrite_path}")
+            self.log_message(f"改写文件夹文件总数: {len(files)}")
             
             return display_files
             
         except Exception as e:
-            self.log_message(f&quot;获取文件列表失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"获取文件列表失败: {str(e)}", "ERROR")
             return []
 
     def combine_whisper_timestamps_with_original_text(self, whisper_srt_file, original_srt_file, output_srt_file=None):
-        &quot;&quot;&quot;结合Whisper的时间戳和原始字幕的文本内容，使用GPT-4o-mini修正文本
+        """结合Whisper的时间戳和原始字幕的文本内容，使用GPT-4o-mini修正文本
         
         保持Whisper的时间戳不变，使用GPT-4o-mini对比原始文本和Whisper文本，修正错别字
         
         Args:
             whisper_srt_file: Whisper生成的SRT文件路径（包含准确的时间戳）
             original_srt_file: 原始SRT文件路径（包含准确的文本内容）
-            output_srt_file: 输出SRT文件路径，如果为None，则默认为original_srt_file + &#x27;_perfect.srt&#x27;
-        &quot;&quot;&quot;
+            output_srt_file: 输出SRT文件路径，如果为None，则默认为original_srt_file + '_perfect.srt'
+        """
         try:
-            self.log_message(f&quot;开始使用GPT-4o-mini修正Whisper字幕文本...&quot;)
+            self.log_message(f"开始使用GPT-4o-mini修正Whisper字幕文本...")
             
             # 读取Whisper生成的SRT文件
-            with open(whisper_srt_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(whisper_srt_file, 'r', encoding='utf-8') as f:
                 whisper_content = f.read()
             
             # 读取原始SRT文件
-            with open(original_srt_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(original_srt_file, 'r', encoding='utf-8') as f:
                 original_content = f.read()
             
             # 解析SRT内容
-            whisper_blocks = whisper_content.strip().split(&#x27;\n\n&#x27;)
-            original_blocks = original_content.strip().split(&#x27;\n\n&#x27;)
+            whisper_blocks = whisper_content.strip().split('\n\n')
+            original_blocks = original_content.strip().split('\n\n')
             
             # 提取Whisper字幕的时间戳和文本
             whisper_segments = []
             for block in whisper_blocks:
-                lines = block.strip().split(&#x27;\n&#x27;)
-                if len(lines) &lt; 3:
+                lines = block.strip().split('\n')
+                if len(lines) < 3:
                     continue
                 
                 # 提取索引、时间轴和文本
                 index = lines[0]
                 time_line = lines[1]
-                text = &#x27;\n&#x27;.join(lines[2:])
+                text = '\n'.join(lines[2:])
                 
                 whisper_segments.append({
-                    &#x27;index&#x27;: index,
-                    &#x27;time_line&#x27;: time_line,
-                    &#x27;text&#x27;: text
+                    'index': index,
+                    'time_line': time_line,
+                    'text': text
                 })
             
             # 提取原始字幕的文本内容
-            original_text = &quot;&quot;
+            original_text = ""
             for block in original_blocks:
-                lines = block.strip().split(&#x27;\n&#x27;)
-                if len(lines) &lt; 3:
+                lines = block.strip().split('\n')
+                if len(lines) < 3:
                     continue
                 
                 # 提取文本
-                text = &#x27;\n&#x27;.join(lines[2:])
-                original_text += text + &quot; &quot;
+                text = '\n'.join(lines[2:])
+                original_text += text + " "
             
             # 准备GPT-4o-mini的输入
-            whisper_texts = [segment[&#x27;text&#x27;] for segment in whisper_segments]
+            whisper_texts = [segment['text'] for segment in whisper_segments]
             
             # 调用GPT-4o-mini进行文本修正
             corrected_texts = self.correct_texts_with_gpt(whisper_texts, original_text)
@@ -4352,31 +4315,31 @@ class TTSGenerator:
             # 创建新的字幕块
             new_blocks = []
             for i, segment in enumerate(whisper_segments):
-                if i &lt; len(corrected_texts):
+                if i < len(corrected_texts):
                     # 使用修正后的文本
                     corrected_text = corrected_texts[i]
-                    new_blocks.append(f&quot;{segment[&#x27;index&#x27;]}\n{segment[&#x27;time_line&#x27;]}\n{corrected_text}&quot;)
+                    new_blocks.append(f"{segment['index']}\n{segment['time_line']}\n{corrected_text}")
                 else:
                     # 如果没有对应的修正文本，使用原始Whisper文本
-                    new_blocks.append(f&quot;{segment[&#x27;index&#x27;]}\n{segment[&#x27;time_line&#x27;]}\n{segment[&#x27;text&#x27;]}&quot;)
+                    new_blocks.append(f"{segment['index']}\n{segment['time_line']}\n{segment['text']}")
             
             # 设置输出文件路径
             if output_srt_file is None:
-                output_srt_file = original_srt_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_perfect.srt&#x27;
+                output_srt_file = original_srt_file.rsplit('.', 1)[0] + '_perfect.srt'
             
             # 写入结合后的SRT文件
-            with open(output_srt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n\n&#x27;.join(new_blocks))
+            with open(output_srt_file, 'w', encoding='utf-8') as f:
+                f.write('\n\n'.join(new_blocks))
             
-            self.log_message(f&quot;GPT-4o-mini修正完成，保存到: {output_srt_file}&quot;)
+            self.log_message(f"GPT-4o-mini修正完成，保存到: {output_srt_file}")
             return True
             
         except Exception as e:
-            self.log_message(f&quot;使用GPT-4o-mini修正字幕失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"使用GPT-4o-mini修正字幕失败: {str(e)}", "ERROR")
             return False
 
     def correct_texts_with_gpt(self, whisper_texts, original_text):
-        &quot;&quot;&quot;使用GPT-4o-mini修正Whisper文本中的错别字，并确保句子边界正确
+        """使用GPT-4o-mini修正Whisper文本中的错别字，并确保句子边界正确
         
         Args:
             whisper_texts: Whisper识别的文本列表
@@ -4384,37 +4347,37 @@ class TTSGenerator:
             
         Returns:
             修正后的文本列表
-        &quot;&quot;&quot;
+        """
         try:
             from openai import OpenAI
             
-            self.log_message(&quot;正在使用GPT-4o-mini修正文本和句子边界...&quot;)
+            self.log_message("正在使用GPT-4o-mini修正文本和句子边界...")
             
             # 初始化OpenAI客户端
             client = OpenAI(
-                base_url=&quot;&quot;,
-                api_key=&quot;&quot;
+                base_url="",
+                api_key=""
             )
             
             # 构建提示词，强调句子边界的重要性
-            prompt = f&quot;&quot;&quot;
+            prompt = f"""
 你是一个专业的字幕修正助手。我需要你帮助修正语音识别生成的字幕文本中可能存在的错别字，并确保句子边界正确。
 
 原始准确文本（来自Word文档，绝对正确）:
-&quot;{original_text}&quot;
+"{original_text}"
 
 Whisper识别的文本（可能包含错别字和句子边界问题）:
-&quot;&quot;&quot;
+"""
             
             # 添加Whisper文本，并标明每句的编号
             for i, text in enumerate(whisper_texts):
-                prompt += f&quot;\n[{i+1}] {text}&quot;
+                prompt += f"\n[{i+1}] {text}"
             
-            prompt += &quot;&quot;&quot;
+            prompt += """
 
 请执行以下任务：
 1. 逐句修正Whisper识别的文本，使其与原始准确文本的意思一致
-2. 确保每个句子的边界正确，避免出现&quot;串行&quot;问题（即一句话的内容错误地分到下一句）
+2. 确保每个句子的边界正确，避免出现"串行"问题（即一句话的内容错误地分到下一句）
 3. 保持Whisper的断句数量，但修正每句的内容，使其成为完整且独立的句子
 4. 如果发现某句话内容应该属于另一句，请适当调整
 
@@ -4424,14 +4387,14 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
 ...
 
 保持原始的标点符号和格式，只修正错别字和句子边界问题。
-&quot;&quot;&quot;
+"""
             
             # 调用GPT-4o-mini
             response = client.chat.completions.create(
-                model=&quot;gpt-4o-mini-2024-07-18&quot;,
+                model="gpt-4o-mini-2024-07-18",
                 messages=[
-                    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个专业的字幕修正助手，擅长修正语音识别文本中的错别字和句子边界问题。&quot;},
-                    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+                    {"role": "system", "content": "你是一个专业的字幕修正助手，擅长修正语音识别文本中的错别字和句子边界问题。"},
+                    {"role": "user", "content": prompt}
                 ],
                 temperature=0.2,  # 使用较低的温度以获得更确定的结果
                 max_tokens=4000
@@ -4441,7 +4404,7 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             corrected_text = response.choices[0].message.content.strip()
             
             # 分割为单独的行
-            corrected_lines = corrected_text.split(&#x27;\n&#x27;)
+            corrected_lines = corrected_text.split('\n')
             
             # 过滤掉空行和可能的额外信息
             corrected_lines = [line.strip() for line in corrected_lines if line.strip()]
@@ -4451,71 +4414,71 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             corrected_texts = []
             for line in corrected_lines:
                 # 匹配 [数字] 文本 格式
-                match = re.match(r&#x27;^\[(\d+)\]\s*(.*)&#x27;, line)
+                match = re.match(r'^\[(\d+)\]\s*(.*)', line)
                 if match:
                     index = int(match.group(1)) - 1
                     text = match.group(2).strip()
                     
                     # 确保索引在范围内
-                    while len(corrected_texts) &lt;= index:
-                        corrected_texts.append(&quot;&quot;)
+                    while len(corrected_texts) <= index:
+                        corrected_texts.append("")
                     
                     corrected_texts[index] = text
                 else:
                     # 如果没有编号格式，直接添加到结果中
                     corrected_texts.append(line)
             
-            self.log_message(f&quot;GPT-4o-mini成功修正了 {len(corrected_texts)} 行文本，并确保句子边界正确&quot;)
+            self.log_message(f"GPT-4o-mini成功修正了 {len(corrected_texts)} 行文本，并确保句子边界正确")
             
             return corrected_texts
             
         except Exception as e:
-            self.log_message(f&quot;GPT-4o-mini修正文本失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"GPT-4o-mini修正文本失败: {str(e)}", "ERROR")
             return whisper_texts  # 如果失败，返回原始文本
 
     def correct_whisper_with_word_content(self, whisper_srt_file, original_content, output_srt_file=None):
-        &quot;&quot;&quot;使用Word文档原始内容校正Whisper识别的字幕
+        """使用Word文档原始内容校正Whisper识别的字幕
         
         保持Whisper的时间戳不变，使用GPT-4o-mini对比原始文本和Whisper文本，修正错别字和句子边界问题
         
         Args:
             whisper_srt_file: Whisper生成的SRT文件路径（包含准确的时间戳）
             original_content: Word文档的原始内容（包含准确的文本）
-            output_srt_file: 输出SRT文件路径，如果为None，则默认为whisper_srt_file + &#x27;_corrected.srt&#x27;
-        &quot;&quot;&quot;
+            output_srt_file: 输出SRT文件路径，如果为None，则默认为whisper_srt_file + '_corrected.srt'
+        """
         try:
-            self.log_message(f&quot;开始使用GPT-4o-mini校正Whisper字幕文本和句子边界...&quot;)
+            self.log_message(f"开始使用GPT-4o-mini校正Whisper字幕文本和句子边界...")
             
             # 读取Whisper生成的SRT文件
-            with open(whisper_srt_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(whisper_srt_file, 'r', encoding='utf-8') as f:
                 whisper_content = f.read()
             
             # 解析SRT内容
-            whisper_blocks = whisper_content.strip().split(&#x27;\n\n&#x27;)
+            whisper_blocks = whisper_content.strip().split('\n\n')
             
             # 提取Whisper字幕的时间戳和文本
             whisper_segments = []
             for block in whisper_blocks:
-                lines = block.strip().split(&#x27;\n&#x27;)
-                if len(lines) &lt; 3:
+                lines = block.strip().split('\n')
+                if len(lines) < 3:
                     continue
                 
                 # 提取索引、时间轴和文本
                 index = lines[0]
                 time_line = lines[1]
-                text = &#x27;\n&#x27;.join(lines[2:])
+                text = '\n'.join(lines[2:])
                 
                 whisper_segments.append({
-                    &#x27;index&#x27;: index,
-                    &#x27;time_line&#x27;: time_line,
-                    &#x27;text&#x27;: text
+                    'index': index,
+                    'time_line': time_line,
+                    'text': text
                 })
             
             # 提取原始Word文档的文本内容
             original_text = original_content.strip()
             
             # 准备GPT-4o-mini的输入
-            whisper_texts = [segment[&#x27;text&#x27;] for segment in whisper_segments]
+            whisper_texts = [segment['text'] for segment in whisper_segments]
             
             # 调用GPT-4o-mini进行文本修正和句子边界校正
             corrected_texts = self.correct_texts_with_gpt(whisper_texts, original_text)
@@ -4523,33 +4486,33 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             # 创建新的字幕块
             new_blocks = []
             for i, segment in enumerate(whisper_segments):
-                if i &lt; len(corrected_texts) and corrected_texts[i]:
+                if i < len(corrected_texts) and corrected_texts[i]:
                     # 使用修正后的文本
                     corrected_text = corrected_texts[i]
-                    new_blocks.append(f&quot;{segment[&#x27;index&#x27;]}\n{segment[&#x27;time_line&#x27;]}\n{corrected_text}&quot;)
+                    new_blocks.append(f"{segment['index']}\n{segment['time_line']}\n{corrected_text}")
                 else:
                     # 如果没有对应的修正文本，使用原始Whisper文本
-                    new_blocks.append(f&quot;{segment[&#x27;index&#x27;]}\n{segment[&#x27;time_line&#x27;]}\n{segment[&#x27;text&#x27;]}&quot;)
+                    new_blocks.append(f"{segment['index']}\n{segment['time_line']}\n{segment['text']}")
             
             # 设置输出文件路径
             if output_srt_file is None:
-                output_srt_file = whisper_srt_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_corrected.srt&#x27;
+                output_srt_file = whisper_srt_file.rsplit('.', 1)[0] + '_corrected.srt'
             
             # 写入校正后的SRT文件
-            with open(output_srt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n\n&#x27;.join(new_blocks))
+            with open(output_srt_file, 'w', encoding='utf-8') as f:
+                f.write('\n\n'.join(new_blocks))
             
-            self.log_message(f&quot;GPT-4o-mini校正完成，保存到: {output_srt_file}&quot;)
+            self.log_message(f"GPT-4o-mini校正完成，保存到: {output_srt_file}")
             return True
             
         except Exception as e:
-            self.log_message(f&quot;使用GPT-4o-mini校正字幕失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"使用GPT-4o-mini校正字幕失败: {str(e)}", "ERROR")
             return False
 
     def align_subtitles_with_audio(self, audio_file, srt_file):
-        &quot;&quot;&quot;使用语音识别技术将字幕与音频精确对齐&quot;&quot;&quot;
+        """使用语音识别技术将字幕与音频精确对齐"""
         try:
-            self.log_message(f&quot;开始将字幕与音频对齐: {srt_file}&quot;)
+            self.log_message(f"开始将字幕与音频对齐: {srt_file}")
             
             # 导入必要的库
             import speech_recognition as sr
@@ -4558,21 +4521,21 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             import re
             
             # 读取原始SRT文件
-            with open(srt_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(srt_file, 'r', encoding='utf-8') as f:
                 content = f.read()
             
             # 解析SRT内容，获取所有文本
-            srt_blocks = content.strip().split(&#x27;\n\n&#x27;)
-            all_text = &quot;&quot;
+            srt_blocks = content.strip().split('\n\n')
+            all_text = ""
             
             for block in srt_blocks:
-                lines = block.strip().split(&#x27;\n&#x27;)
-                if len(lines) &lt; 3:
+                lines = block.strip().split('\n')
+                if len(lines) < 3:
                     continue
                 
                 # 提取文本
-                text = &#x27;\n&#x27;.join(lines[2:])
-                all_text += text + &quot; &quot;
+                text = '\n'.join(lines[2:])
+                all_text += text + " "
             
             # 使用jieba分词
             words = list(jieba.cut(all_text))
@@ -4581,8 +4544,8 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             audio = AudioSegment.from_file(audio_file)
             
             # 将音频转换为WAV格式（语音识别需要）
-            temp_wav = audio_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_temp.wav&#x27;
-            audio.export(temp_wav, format=&quot;wav&quot;)
+            temp_wav = audio_file.rsplit('.', 1)[0] + '_temp.wav'
+            audio.export(temp_wav, format="wav")
             
             # 初始化语音识别器
             r = sr.Recognizer()
@@ -4610,7 +4573,7 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
                     
                     try:
                         # 使用Google语音识别API（需要联网）
-                        segment_text = r.recognize_google(audio_segment, language=&quot;zh-CN&quot;)
+                        segment_text = r.recognize_google(audio_segment, language="zh-CN")
                         
                         # 查找原始字幕中最匹配的文本
                         best_match = self.find_best_match(segment_text, all_text)
@@ -4633,13 +4596,13 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
                                 sub_start_str = self.ms_to_srt_time(sub_start)
                                 sub_end_str = self.ms_to_srt_time(sub_end)
                                 
-                                new_blocks.append(f&quot;{new_index}\n{sub_start_str} --&gt; {sub_end_str}\n{sub_text}&quot;)
+                                new_blocks.append(f"{new_index}\n{sub_start_str} --> {sub_end_str}\n{sub_text}")
                                 new_index += 1
                     
                     except sr.UnknownValueError:
-                        self.log_message(f&quot;无法识别音频段 {start_time}-{end_time} 秒&quot;, &quot;WARNING&quot;)
+                        self.log_message(f"无法识别音频段 {start_time}-{end_time} 秒", "WARNING")
                     except sr.RequestError as e:
-                        self.log_message(f&quot;无法请求Google语音识别服务: {e}&quot;, &quot;ERROR&quot;)
+                        self.log_message(f"无法请求Google语音识别服务: {e}", "ERROR")
                         break
             
             # 删除临时WAV文件
@@ -4650,25 +4613,25 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             
             # 如果没有生成新的字幕块，返回失败
             if not new_blocks:
-                self.log_message(&quot;未能生成任何对齐的字幕&quot;, &quot;ERROR&quot;)
+                self.log_message("未能生成任何对齐的字幕", "ERROR")
                 return False
             
             # 写入对齐后的SRT文件
-            aligned_srt_file = srt_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_aligned.srt&#x27;
-            with open(aligned_srt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n\n&#x27;.join(new_blocks))
+            aligned_srt_file = srt_file.rsplit('.', 1)[0] + '_aligned.srt'
+            with open(aligned_srt_file, 'w', encoding='utf-8') as f:
+                f.write('\n\n'.join(new_blocks))
             
-            self.log_message(f&quot;字幕与音频对齐完成，保存到: {aligned_srt_file}&quot;)
+            self.log_message(f"字幕与音频对齐完成，保存到: {aligned_srt_file}")
             return True
             
         except Exception as e:
-            self.log_message(f&quot;字幕与音频对齐失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"字幕与音频对齐失败: {str(e)}", "ERROR")
             return False
     
     def align_subtitles_with_whisper(self, audio_file, srt_file):
-        &quot;&quot;&quot;使用Whisper将字幕与音频精确对齐&quot;&quot;&quot;
+        """使用Whisper将字幕与音频精确对齐"""
         try:
-            self.log_message(f&quot;开始使用Whisper将字幕与音频对齐: {srt_file}&quot;)
+            self.log_message(f"开始使用Whisper将字幕与音频对齐: {srt_file}")
             
             # 导入必要的库
             import whisper
@@ -4677,48 +4640,48 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             from pydub import AudioSegment
             
             # 读取原始SRT文件
-            with open(srt_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+            with open(srt_file, 'r', encoding='utf-8') as f:
                 content = f.read()
             
             # 解析SRT内容，获取所有文本
-            srt_blocks = content.strip().split(&#x27;\n\n&#x27;)
-            all_text = &quot;&quot;
+            srt_blocks = content.strip().split('\n\n')
+            all_text = ""
             
             for block in srt_blocks:
-                lines = block.strip().split(&#x27;\n&#x27;)
-                if len(lines) &lt; 3:
+                lines = block.strip().split('\n')
+                if len(lines) < 3:
                     continue
                 
                 # 提取文本
-                text = &#x27;\n&#x27;.join(lines[2:])
-                all_text += text + &quot; &quot;
+                text = '\n'.join(lines[2:])
+                all_text += text + " "
             
             # 加载Whisper模型（使用较小的模型以提高速度）
-            self.log_message(&quot;正在加载Whisper模型...&quot;)
-            model = whisper.load_model(&quot;tiny&quot;)  # 可选: &quot;tiny&quot;, &quot;base&quot;, &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;
+            self.log_message("正在加载Whisper模型...")
+            model = whisper.load_model("tiny")  # 可选: "tiny", "base", "small", "medium", "large"
             
             # 将音频转换为WAV格式（如果不是WAV）
-            if not audio_file.lower().endswith(&#x27;.wav&#x27;):
-                self.log_message(&quot;转换音频为WAV格式...&quot;)
+            if not audio_file.lower().endswith('.wav'):
+                self.log_message("转换音频为WAV格式...")
                 audio = AudioSegment.from_file(audio_file)
-                temp_wav = audio_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_temp.wav&#x27;
-                audio.export(temp_wav, format=&quot;wav&quot;)
+                temp_wav = audio_file.rsplit('.', 1)[0] + '_temp.wav'
+                audio.export(temp_wav, format="wav")
                 audio_path = temp_wav
             else:
                 audio_path = audio_file
             
             # 使用Whisper进行语音识别
-            self.log_message(&quot;开始进行语音识别...&quot;)
-            result = model.transcribe(audio_path, language=&quot;zh&quot;)
+            self.log_message("开始进行语音识别...")
+            result = model.transcribe(audio_path, language="zh")
             
             # 创建新的字幕块
             new_blocks = []
             
             # 处理识别结果中的每个段落
-            for i, segment in enumerate(result[&quot;segments&quot;]):
-                start_time = segment[&quot;start&quot;]
-                end_time = segment[&quot;end&quot;]
-                text = segment[&quot;text&quot;].strip()
+            for i, segment in enumerate(result["segments"]):
+                start_time = segment["start"]
+                end_time = segment["end"]
+                text = segment["text"].strip()
                 
                 # 如果文本为空，跳过
                 if not text:
@@ -4743,10 +4706,10 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
                     sub_start_str = self.ms_to_srt_time(sub_start)
                     sub_end_str = self.ms_to_srt_time(sub_end)
                     
-                    new_blocks.append(f&quot;{len(new_blocks) + 1}\n{sub_start_str} --&gt; {sub_end_str}\n{sub_text}&quot;)
+                    new_blocks.append(f"{len(new_blocks) + 1}\n{sub_start_str} --> {sub_end_str}\n{sub_text}")
             
             # 删除临时WAV文件
-            if not audio_file.lower().endswith(&#x27;.wav&#x27;) and os.path.exists(temp_wav):
+            if not audio_file.lower().endswith('.wav') and os.path.exists(temp_wav):
                 try:
                     os.remove(temp_wav)
                 except:
@@ -4754,47 +4717,47 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             
             # 如果没有生成新的字幕块，返回失败
             if not new_blocks:
-                self.log_message(&quot;未能生成任何对齐的字幕&quot;, &quot;ERROR&quot;)
+                self.log_message("未能生成任何对齐的字幕", "ERROR")
                 return False
             
             # 写入对齐后的SRT文件
-            aligned_srt_file = srt_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_whisper.srt&#x27;
-            with open(aligned_srt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n\n&#x27;.join(new_blocks))
+            aligned_srt_file = srt_file.rsplit('.', 1)[0] + '_whisper.srt'
+            with open(aligned_srt_file, 'w', encoding='utf-8') as f:
+                f.write('\n\n'.join(new_blocks))
             
-            self.log_message(f&quot;字幕与音频对齐完成，保存到: {aligned_srt_file}&quot;)
+            self.log_message(f"字幕与音频对齐完成，保存到: {aligned_srt_file}")
             return aligned_srt_file
             
         except Exception as e:
-            self.log_message(f&quot;使用Whisper对齐字幕失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"使用Whisper对齐字幕失败: {str(e)}", "ERROR")
             return False
 
     def find_best_match(self, recognized_text, original_text):
-        &quot;&quot;&quot;查找原始文本中与识别文本最匹配的部分&quot;&quot;&quot;
+        """查找原始文本中与识别文本最匹配的部分"""
         import difflib
         
         # 使用difflib查找最佳匹配
         matcher = difflib.SequenceMatcher(None, recognized_text, original_text)
         match = matcher.find_longest_match(0, len(recognized_text), 0, len(original_text))
         
-        if match.size &gt; 5:  # 至少匹配5个字符
+        if match.size > 5:  # 至少匹配5个字符
             return original_text[match.b:match.b + match.size]
         
         return None
 
-    def generate_whisper_subtitles(self, audio_file, model_size=&quot;small&quot;):
-        &quot;&quot;&quot;使用Whisper直接从音频生成字幕文件
+    def generate_whisper_subtitles(self, audio_file, model_size="small"):
+        """使用Whisper直接从音频生成字幕文件
         
         Args:
             audio_file: 音频文件路径
-            model_size: Whisper模型大小，可选值: &quot;tiny&quot;, &quot;base&quot;, &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;
-                        默认为&quot;small&quot;，平衡了速度和准确度
+            model_size: Whisper模型大小，可选值: "tiny", "base", "small", "medium", "large"
+                        默认为"small"，平衡了速度和准确度
             
         Returns:
             生成的SRT文件路径，如果失败则返回False
-        &quot;&quot;&quot;
+        """
         try:
-            self.log_message(f&quot;开始使用Whisper({model_size}模型)从音频生成字幕: {audio_file}&quot;)
+            self.log_message(f"开始使用Whisper({model_size}模型)从音频生成字幕: {audio_file}")
             
             # 导入必要的库
             import whisper
@@ -4803,30 +4766,30 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             from pydub import AudioSegment
             
             # 验证模型大小参数
-            valid_models = [&quot;tiny&quot;, &quot;base&quot;, &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;]
+            valid_models = ["tiny", "base", "small", "medium", "large"]
             if model_size not in valid_models:
-                self.log_message(f&quot;无效的模型大小: {model_size}，使用默认的&#x27;small&#x27;模型&quot;, &quot;WARNING&quot;)
-                model_size = &quot;small&quot;
+                self.log_message(f"无效的模型大小: {model_size}，使用默认的'small'模型", "WARNING")
+                model_size = "small"
             
             # 加载Whisper模型
-            self.log_message(f&quot;正在加载Whisper {model_size}模型...&quot;)
+            self.log_message(f"正在加载Whisper {model_size}模型...")
             model = whisper.load_model(model_size)
             
             # 将音频转换为WAV格式（如果不是WAV）
-            if not audio_file.lower().endswith(&#x27;.wav&#x27;):
-                self.log_message(&quot;转换音频为WAV格式...&quot;)
+            if not audio_file.lower().endswith('.wav'):
+                self.log_message("转换音频为WAV格式...")
                 audio = AudioSegment.from_file(audio_file)
-                temp_wav = audio_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_temp.wav&#x27;
-                audio.export(temp_wav, format=&quot;wav&quot;)
+                temp_wav = audio_file.rsplit('.', 1)[0] + '_temp.wav'
+                audio.export(temp_wav, format="wav")
                 audio_path = temp_wav
             else:
                 audio_path = audio_file
             
             # 使用Whisper进行语音识别，设置更多参数以提高准确性
-            self.log_message(&quot;开始进行语音识别...&quot;)
+            self.log_message("开始进行语音识别...")
             result = model.transcribe(
                 audio_path, 
-                language=&quot;zh&quot;,
+                language="zh",
                 word_timestamps=True,  # 获取更精确的单词时间戳
                 condition_on_previous_text=True,  # 考虑前文上下文
                 fp16=False  # 使用更精确的浮点计算
@@ -4836,10 +4799,10 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             new_blocks = []
             
             # 处理识别结果中的每个段落
-            for i, segment in enumerate(result[&quot;segments&quot;]):
-                start_time = segment[&quot;start&quot;]
-                end_time = segment[&quot;end&quot;]
-                text = segment[&quot;text&quot;].strip()
+            for i, segment in enumerate(result["segments"]):
+                start_time = segment["start"]
+                end_time = segment["end"]
+                text = segment["text"].strip()
                 
                 # 如果文本为空，跳过
                 if not text:
@@ -4864,10 +4827,10 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
                     sub_start_str = self.ms_to_srt_time(sub_start)
                     sub_end_str = self.ms_to_srt_time(sub_end)
                     
-                    new_blocks.append(f&quot;{len(new_blocks) + 1}\n{sub_start_str} --&gt; {sub_end_str}\n{sub_text}&quot;)
+                    new_blocks.append(f"{len(new_blocks) + 1}\n{sub_start_str} --> {sub_end_str}\n{sub_text}")
             
             # 删除临时WAV文件
-            if not audio_file.lower().endswith(&#x27;.wav&#x27;) and os.path.exists(temp_wav):
+            if not audio_file.lower().endswith('.wav') and os.path.exists(temp_wav):
                 try:
                     os.remove(temp_wav)
                 except:
@@ -4875,31 +4838,33 @@ Whisper识别的文本（可能包含错别字和句子边界问题）:
             
             # 如果没有生成新的字幕块，返回失败
             if not new_blocks:
-                self.log_message(&quot;未能生成任何字幕&quot;, &quot;ERROR&quot;)
+                self.log_message("未能生成任何字幕", "ERROR")
                 return False
             
             # 写入生成的SRT文件
-            whisper_srt_file = audio_file.rsplit(&#x27;.&#x27;, 1)[0] + &#x27;_whisper_temp.srt&#x27;
-            with open(whisper_srt_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-                f.write(&#x27;\n\n&#x27;.join(new_blocks))
+            whisper_srt_file = audio_file.rsplit('.', 1)[0] + '_whisper_temp.srt'
+            with open(whisper_srt_file, 'w', encoding='utf-8') as f:
+                f.write('\n\n'.join(new_blocks))
             
-            self.log_message(f&quot;Whisper字幕生成完成，保存到: {whisper_srt_file}&quot;)
+            self.log_message(f"Whisper字幕生成完成，保存到: {whisper_srt_file}")
             return whisper_srt_file
             
         except Exception as e:
-            self.log_message(f&quot;使用Whisper生成字幕失败: {str(e)}&quot;, &quot;ERROR&quot;)
+            self.log_message(f"使用Whisper生成字幕失败: {str(e)}", "ERROR")
             return False
 
 def main():
     generator = TTSGenerator()
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
+
+
 ---
 
-## 剪辑自动化：从耗时2小时降低到小于1分钟
+# 剪辑自动化：从耗时2小时降低到小于1分钟
 
 这里是非常烦的一点了，熟悉视频剪辑的朋友都知道，简单来说，
 
@@ -4915,27 +4880,22 @@ if __name__ == &quot;__main__&quot;:
 
 然后将字幕和图片按照下面的逻辑进行匹配
 
-1.  每张图片的最小展示时间为 5 秒
-
-1.  先找到5秒后第一个字幕的结束点，他就是第一个图片的结束展示时间
-
-1.  无缝衔接展示下一张图片，然后重复上面两点
+1. 每张图片的最小展示时间为 5 秒
+1. 先找到5秒后第一个字幕的结束点，他就是第一个图片的结束展示时间
+1. 无缝衔接展示下一张图片，然后重复上面两点
 
 关键帧的逻辑也已经有了
 
-1.  给每个图片都打上两个关键帧点，一个在开始时间，一个在结束时间
-
-1.  位移范围设置为 ±0.21（约为画面宽度/高度的 21%），这样就是放大和缩小区间，
-
-1.  随机选择左、右、上、下的任意一个方向
+1. 给每个图片都打上两个关键帧点，一个在开始时间，一个在结束时间
+1. 位移范围设置为 ±0.21（约为画面宽度/高度的 21%），这样就是放大和缩小区间，
+1. 随机选择左、右、上、下的任意一个方向
 
 这样所有的图片就都有了匀速的移动和放大缩小
 
 转场的逻辑也有了
 
-1.  选择渐显、缩放、弹跳、雨刷四种效果
-
-1.  给每张图片之间都随机加上四种效果之一，持续时间是0.7秒
+1. 选择渐显、缩放、弹跳、雨刷四种效果
+1. 给每张图片之间都随机加上四种效果之一，持续时间是0.7秒
 
 剩下的问题就是，如何程序化的操纵剪映把这些加入进去
 
@@ -4949,11 +4909,11 @@ if __name__ == &quot;__main__&quot;:
 
 再经过和AI无限多次复制粘贴拉锯之后，
 
-我发现draft_content.json 和 attachmeng_pc_common.json是最主要的两个文件
+我发现`draft_content.json` 和 `attachmeng_pc_common.json`是最主要的两个文件
 
-视频轨+音轨+特效轨几乎所有的东西 都在draft_content.json里
+视频轨+音轨+特效轨几乎所有的东西 都在`draft_content.json`里
 
-而程序识别生成的字幕，保存在attachmeng_pc_common.json里
+而程序识别生成的字幕，保存在`attachmeng_pc_common.json`里
 
 所以我将上面的需求逻辑发给AI 让他根据这两个文件，来实现我的需求
 
@@ -4966,6 +4926,8 @@ if __name__ == &quot;__main__&quot;:
 将MP3放进去 然后用剪映的匹配文稿功能生成字幕 然后将之前出图脚本生成的所有图片全部拖进去
 
 最后退出草稿，运行下面这个脚本
+
+
 
 ```
 import os
@@ -4980,20 +4942,20 @@ from datetime import datetime
 MIN_IMAGE_DURATION = 5  # 5秒
 
 def get_latest_draft_folder():
-    &quot;&quot;&quot;
+    """
     获取最新的剪映草稿文件夹
     
     Returns:
         最新草稿文件夹的路径
-    &quot;&quot;&quot;
+    """
     # 剪映草稿文件夹路径模式（根据实际位置调整）
-    draft_pattern = os.path.expanduser(&quot;~/Desktop/Youtube/剪映draft/JianyingPro Drafts/*/draft_content.json&quot;)
+    draft_pattern = os.path.expanduser("~/Desktop/Youtube/剪映draft/JianyingPro Drafts/*/draft_content.json")
     
     # 获取所有草稿文件
     draft_files = glob(draft_pattern)
     
     if not draft_files:
-        raise Exception(&quot;未找到剪映草稿文件&quot;)
+        raise Exception("未找到剪映草稿文件")
     
     # 按修改时间排序，获取最新的
     latest_draft_file = max(draft_files, key=os.path.getmtime)
@@ -5004,20 +4966,20 @@ def get_latest_draft_folder():
     return latest_draft_folder
 
 def microsec_to_time(microseconds):
-    &quot;&quot;&quot;将微秒转换为时间字符串(MM:SS:MS)&quot;&quot;&quot;
+    """将微秒转换为时间字符串(MM:SS:MS)"""
     # 剪映中的时间单位是微秒
     total_seconds = microseconds / 1000000
     minutes = int(total_seconds // 60)
     seconds = int(total_seconds % 60)
     ms = int((total_seconds % 1) * 1000)
-    return f&quot;{minutes:02d}:{seconds:02d}:{ms:03d}&quot;
+    return f"{minutes:02d}:{seconds:02d}:{ms:03d}"
 
 def format_duration(microseconds):
-    &quot;&quot;&quot;格式化持续时间为秒&quot;&quot;&quot;
-    return f&quot;{microseconds/1000000:.2f}秒&quot;
+    """格式化持续时间为秒"""
+    return f"{microseconds/1000000:.2f}秒"
 
 def find_images_in_folder(folder_path=None):
-    &quot;&quot;&quot;
+    """
     在指定文件夹中查找图片文件
     
     Args:
@@ -5025,34 +4987,34 @@ def find_images_in_folder(folder_path=None):
     
     Returns:
         图片文件路径列表
-    &quot;&quot;&quot;
+    """
     if folder_path is None:
         # 默认在桌面上查找图片文件夹
-        folder_path = os.path.expanduser(&quot;~/Desktop/Youtube/images&quot;)
+        folder_path = os.path.expanduser("~/Desktop/Youtube/images")
     
     # 支持的图片格式
-    image_extensions = [&#x27;jpg&#x27;, &#x27;jpeg&#x27;, &#x27;png&#x27;, &#x27;gif&#x27;, &#x27;webp&#x27;]
+    image_extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp']
     
     # 查找所有图片文件
     image_files = []
     for ext in image_extensions:
-        pattern = os.path.join(folder_path, f&quot;*.{ext}&quot;)
+        pattern = os.path.join(folder_path, f"*.{ext}")
         image_files.extend(glob(pattern))
     
     if not image_files:
         # 如果没有找到图片，尝试在当前目录查找
         current_folder = os.path.dirname(os.path.abspath(__file__))
         for ext in image_extensions:
-            pattern = os.path.join(current_folder, f&quot;*.{ext}&quot;)
+            pattern = os.path.join(current_folder, f"*.{ext}")
             image_files.extend(glob(pattern))
     
     if not image_files:
-        raise Exception(f&quot;未找到图片文件，请确保图片文件夹中包含图片&quot;)
+        raise Exception(f"未找到图片文件，请确保图片文件夹中包含图片")
     
     return image_files
 
 def import_images_to_draft(draft, image_files):
-    &quot;&quot;&quot;
+    """
     将图片导入到草稿中
     
     Args:
@@ -5061,13 +5023,13 @@ def import_images_to_draft(draft, image_files):
     
     Returns:
         更新后的草稿JSON对象，以及导入的图片材料列表
-    &quot;&quot;&quot;
+    """
     # 确保materials中有videos键
-    if &#x27;materials&#x27; not in draft:
-        draft[&#x27;materials&#x27;] = {}
+    if 'materials' not in draft:
+        draft['materials'] = {}
     
-    if &#x27;videos&#x27; not in draft[&#x27;materials&#x27;]:
-        draft[&#x27;materials&#x27;][&#x27;videos&#x27;] = []
+    if 'videos' not in draft['materials']:
+        draft['materials']['videos'] = []
     
     # 导入图片
     for image_file in image_files:
@@ -5080,427 +5042,427 @@ def import_images_to_draft(draft, image_files):
         
         # 创建图片材料（作为视频材料存储）
         image_material = {
-            &quot;aigc_type&quot;: &quot;none&quot;,
-            &quot;audio_fade&quot;: None,
-            &quot;cartoon_path&quot;: &quot;&quot;,
-            &quot;category_id&quot;: &quot;&quot;,
-            &quot;category_name&quot;: &quot;&quot;,
-            &quot;check_flag&quot;: 63487,
-            &quot;crop&quot;: {
-                &quot;lower_left_x&quot;: 0.0,
-                &quot;lower_left_y&quot;: 1.0,
-                &quot;lower_right_x&quot;: 1.0,
-                &quot;lower_right_y&quot;: 1.0,
-                &quot;upper_left_x&quot;: 0.0,
-                &quot;upper_left_y&quot;: 0.0,
-                &quot;upper_right_x&quot;: 1.0,
-                &quot;upper_right_y&quot;: 0.0
+            "aigc_type": "none",
+            "audio_fade": None,
+            "cartoon_path": "",
+            "category_id": "",
+            "category_name": "",
+            "check_flag": 63487,
+            "crop": {
+                "lower_left_x": 0.0,
+                "lower_left_y": 1.0,
+                "lower_right_x": 1.0,
+                "lower_right_y": 1.0,
+                "upper_left_x": 0.0,
+                "upper_left_y": 0.0,
+                "upper_right_x": 1.0,
+                "upper_right_y": 0.0
             },
-            &quot;crop_ratio&quot;: &quot;free&quot;,
-            &quot;crop_scale&quot;: 1.0,
-            &quot;duration&quot;: 10800000000,
-            &quot;extra_type_option&quot;: 0,
-            &quot;formula_id&quot;: &quot;&quot;,
-            &quot;freeze&quot;: None,
-            &quot;has_audio&quot;: False,
-            &quot;height&quot;: 1080,
-            &quot;id&quot;: image_id,
-            &quot;intensifies_audio_path&quot;: &quot;&quot;,
-            &quot;intensifies_path&quot;: &quot;&quot;,
-            &quot;is_ai_generate_content&quot;: False,
-            &quot;is_copyright&quot;: False,
-            &quot;is_text_edit_overdub&quot;: False,
-            &quot;is_unified_beauty_mode&quot;: False,
-            &quot;local_id&quot;: &quot;&quot;,
-            &quot;local_material_id&quot;: &quot;&quot;,
-            &quot;material_id&quot;: &quot;&quot;,
-            &quot;material_name&quot;: file_name,
-            &quot;material_url&quot;: &quot;&quot;,
-            &quot;matting&quot;: {
-                &quot;flag&quot;: 0,
-                &quot;has_use_quick_brush&quot;: False,
-                &quot;has_use_quick_eraser&quot;: False,
-                &quot;interactiveTime&quot;: [],
-                &quot;path&quot;: &quot;&quot;,
-                &quot;strokes&quot;: []
+            "crop_ratio": "free",
+            "crop_scale": 1.0,
+            "duration": 10800000000,
+            "extra_type_option": 0,
+            "formula_id": "",
+            "freeze": None,
+            "has_audio": False,
+            "height": 1080,
+            "id": image_id,
+            "intensifies_audio_path": "",
+            "intensifies_path": "",
+            "is_ai_generate_content": False,
+            "is_copyright": False,
+            "is_text_edit_overdub": False,
+            "is_unified_beauty_mode": False,
+            "local_id": "",
+            "local_material_id": "",
+            "material_id": "",
+            "material_name": file_name,
+            "material_url": "",
+            "matting": {
+                "flag": 0,
+                "has_use_quick_brush": False,
+                "has_use_quick_eraser": False,
+                "interactiveTime": [],
+                "path": "",
+                "strokes": []
             },
-            &quot;media_path&quot;: &quot;&quot;,
-            &quot;object_locked&quot;: None,
-            &quot;origin_material_id&quot;: &quot;&quot;,
-            &quot;path&quot;: image_file,
-            &quot;picture_from&quot;: &quot;none&quot;,
-            &quot;picture_set_category_id&quot;: &quot;&quot;,
-            &quot;picture_set_category_name&quot;: &quot;&quot;,
-            &quot;request_id&quot;: &quot;&quot;,
-            &quot;reverse_intensifies_path&quot;: &quot;&quot;,
-            &quot;reverse_path&quot;: &quot;&quot;,
-            &quot;smart_motion&quot;: None,
-            &quot;source&quot;: 0,
-            &quot;source_platform&quot;: 0,
-            &quot;stable&quot;: {
-                &quot;matrix_path&quot;: &quot;&quot;,
-                &quot;stable_level&quot;: 0,
-                &quot;time_range&quot;: {
-                    &quot;duration&quot;: 0,
-                    &quot;start&quot;: 0
+            "media_path": "",
+            "object_locked": None,
+            "origin_material_id": "",
+            "path": image_file,
+            "picture_from": "none",
+            "picture_set_category_id": "",
+            "picture_set_category_name": "",
+            "request_id": "",
+            "reverse_intensifies_path": "",
+            "reverse_path": "",
+            "smart_motion": None,
+            "source": 0,
+            "source_platform": 0,
+            "stable": {
+                "matrix_path": "",
+                "stable_level": 0,
+                "time_range": {
+                    "duration": 0,
+                    "start": 0
                 }
             },
-            &quot;team_id&quot;: &quot;&quot;,
-            &quot;type&quot;: &quot;photo&quot;,
-            &quot;video_algorithm&quot;: {
-                &quot;algorithms&quot;: [],
-                &quot;complement_frame_config&quot;: None,
-                &quot;deflicker&quot;: None,
-                &quot;gameplay_configs&quot;: [],
-                &quot;motion_blur_config&quot;: None,
-                &quot;noise_reduction&quot;: None,
-                &quot;path&quot;: &quot;&quot;,
-                &quot;quality_enhance&quot;: None,
-                &quot;time_range&quot;: None
+            "team_id": "",
+            "type": "photo",
+            "video_algorithm": {
+                "algorithms": [],
+                "complement_frame_config": None,
+                "deflicker": None,
+                "gameplay_configs": [],
+                "motion_blur_config": None,
+                "noise_reduction": None,
+                "path": "",
+                "quality_enhance": None,
+                "time_range": None
             },
-            &quot;width&quot;: 1920
+            "width": 1920
         }
         
         # 添加到草稿中
-        draft[&#x27;materials&#x27;][&#x27;videos&#x27;].append(image_material)
+        draft['materials']['videos'].append(image_material)
     
-    print(f&quot;已导入 {len(image_files)} 个图片到草稿&quot;)
+    print(f"已导入 {len(image_files)} 个图片到草稿")
     return draft
 
 def create_common_keyframes(start_time, duration, movement_type=None):
-    &quot;&quot;&quot;创建关键帧数据&quot;&quot;&quot;
+    """创建关键帧数据"""
     if movement_type is None:
-        movement_type = random.choice([&#x27;left&#x27;, &#x27;right&#x27;, &#x27;up&#x27;, &#x27;down&#x27;])
+        movement_type = random.choice(['left', 'right', 'up', 'down'])
     
-    if movement_type in [&#x27;left&#x27;, &#x27;right&#x27;]:
+    if movement_type in ['left', 'right']:
         # X轴移动，Y轴保持0
-        x_start = -0.21 if movement_type == &#x27;left&#x27; else 0.21
+        x_start = -0.21 if movement_type == 'left' else 0.21
         x_end = -x_start  # 反向移动
         return [
             {
-                &quot;id&quot;: str(uuid.uuid4()),
-                &quot;keyframe_list&quot;: [
-                    {&quot;time_offset&quot;: 0, &quot;values&quot;: [x_start]},
-                    {&quot;time_offset&quot;: duration, &quot;values&quot;: [x_end]}
+                "id": str(uuid.uuid4()),
+                "keyframe_list": [
+                    {"time_offset": 0, "values": [x_start]},
+                    {"time_offset": duration, "values": [x_end]}
                 ],
-                &quot;property_type&quot;: &quot;KFTypePositionX&quot;
+                "property_type": "KFTypePositionX"
             },
             {
-                &quot;id&quot;: str(uuid.uuid4()),
-                &quot;keyframe_list&quot;: [
-                    {&quot;time_offset&quot;: 0, &quot;values&quot;: [0]},
-                    {&quot;time_offset&quot;: duration, &quot;values&quot;: [0]}
+                "id": str(uuid.uuid4()),
+                "keyframe_list": [
+                    {"time_offset": 0, "values": [0]},
+                    {"time_offset": duration, "values": [0]}
                 ],
-                &quot;property_type&quot;: &quot;KFTypePositionY&quot;
+                "property_type": "KFTypePositionY"
             }
         ]
     else:
         # Y轴移动，X轴保持0
-        y_start = -0.21 if movement_type == &#x27;up&#x27; else 0.21
+        y_start = -0.21 if movement_type == 'up' else 0.21
         y_end = -y_start  # 反向移动
         return [
             {
-                &quot;id&quot;: str(uuid.uuid4()),
-                &quot;keyframe_list&quot;: [
-                    {&quot;time_offset&quot;: 0, &quot;values&quot;: [0]},
-                    {&quot;time_offset&quot;: duration, &quot;values&quot;: [0]}
+                "id": str(uuid.uuid4()),
+                "keyframe_list": [
+                    {"time_offset": 0, "values": [0]},
+                    {"time_offset": duration, "values": [0]}
                 ],
-                &quot;property_type&quot;: &quot;KFTypePositionX&quot;
+                "property_type": "KFTypePositionX"
             },
             {
-                &quot;id&quot;: str(uuid.uuid4()),
-                &quot;keyframe_list&quot;: [
-                    {&quot;time_offset&quot;: 0, &quot;values&quot;: [y_start]},
-                    {&quot;time_offset&quot;: duration, &quot;values&quot;: [y_end]}
+                "id": str(uuid.uuid4()),
+                "keyframe_list": [
+                    {"time_offset": 0, "values": [y_start]},
+                    {"time_offset": duration, "values": [y_end]}
                 ],
-                &quot;property_type&quot;: &quot;KFTypePositionY&quot;
+                "property_type": "KFTypePositionY"
             }
         ]
 
 def create_fade_animation():
-    &quot;&quot;&quot;创建渐显动画&quot;&quot;&quot;
+    """创建渐显动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 700000,  # 0.7秒
-                &quot;id&quot;: &quot;624705&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;渐显&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/624705/00162fa64b6f03d941fea852a0054bc7&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6798320778182922760&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 700000,  # 0.7秒
+                "id": "624705",
+                "material_type": "video",
+                "name": "渐显",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/624705/00162fa64b6f03d941fea852a0054bc7",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6798320778182922760",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "type": "sticker_animation"
     }
 
 def create_scale_animation():
-    &quot;&quot;&quot;创建缩放动画（向右甩入）&quot;&quot;&quot;
+    """创建缩放动画（向右甩入）"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 700000,
-                &quot;id&quot;: &quot;431636&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;向右甩入&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431636/c83f7d144853d115a9e8572e667c6bfe&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6739338727866241539&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 700000,
+                "id": "431636",
+                "material_type": "video",
+                "name": "向右甩入",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431636/c83f7d144853d115a9e8572e667c6bfe",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6739338727866241539",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_bounce_animation():
-    &quot;&quot;&quot;创建弹跳动画（向左滑动）&quot;&quot;&quot;
+    """创建弹跳动画（向左滑动）"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 700000,
-                &quot;id&quot;: &quot;624747&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;向左滑动&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/624747/4f9fea978322067343df1b0fdb80798c&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6798332871267324423&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 700000,
+                "id": "624747",
+                "material_type": "video",
+                "name": "向左滑动",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/624747/4f9fea978322067343df1b0fdb80798c",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6798332871267324423",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_wiper_animation():
-    &quot;&quot;&quot;创建雨刷动画&quot;&quot;&quot;
+    """创建雨刷动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 700000,
-                &quot;id&quot;: &quot;640101&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;雨刷 II&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/640101/1241565fd010e8221475def8ab1a2f57&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6805748897768542727&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 700000,
+                "id": "640101",
+                "material_type": "video",
+                "name": "雨刷 II",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/640101/1241565fd010e8221475def8ab1a2f57",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6805748897768542727",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_shake_animation():
-    &quot;&quot;&quot;创建抖动动画&quot;&quot;&quot;
+    """创建抖动动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 700000,
-                &quot;id&quot;: &quot;431654&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;左右抖动&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431654/267653b22765bd8348dda092f8de3cfe&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6739418540421419524&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 700000,
+                "id": "431654",
+                "material_type": "video",
+                "name": "左右抖动",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431654/267653b22765bd8348dda092f8de3cfe",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6739418540421419524",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_zoom_in_animation():
-    &quot;&quot;&quot;创建动感放大动画&quot;&quot;&quot;
+    """创建动感放大动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 500000,
-                &quot;id&quot;: &quot;431662&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;动感放大&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431662/8fb560c01e4ccffbc4dc084f9c418838&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6740867832570974733&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 500000,
+                "id": "431662",
+                "material_type": "video",
+                "name": "动感放大",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431662/8fb560c01e4ccffbc4dc084f9c418838",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6740867832570974733",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_zoom_out_animation():
-    &quot;&quot;&quot;创建缩小动画&quot;&quot;&quot;
+    """创建缩小动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 500000,
-                &quot;id&quot;: &quot;624755&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;缩小&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/624755/7cc60a6c2411194697a2b6e923844bca&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6798332584276267527&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 500000,
+                "id": "624755",
+                "material_type": "video",
+                "name": "缩小",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/624755/7cc60a6c2411194697a2b6e923844bca",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6798332584276267527",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_gentle_shake_animation():
-    &quot;&quot;&quot;创建轻微抖动动画&quot;&quot;&quot;
+    """创建轻微抖动动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 500000,
-                &quot;id&quot;: &quot;431664&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;轻微抖动&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431664/944c5561f3d23baa068cee2bba4f15f5&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6739418227031413256&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 500000,
+                "id": "431664",
+                "material_type": "video",
+                "name": "轻微抖动",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/431664/944c5561f3d23baa068cee2bba4f15f5",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6739418227031413256",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_pendulum_animation():
-    &quot;&quot;&quot;创建钟摆动画&quot;&quot;&quot;
+    """创建钟摆动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 500000,
-                &quot;id&quot;: &quot;636115&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;钟摆&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/636115/fb435c67390b89386c35e8b84f50faba&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;6803260897117606414&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 500000,
+                "id": "636115",
+                "material_type": "video",
+                "name": "钟摆",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/636115/fb435c67390b89386c35e8b84f50faba",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "6803260897117606414",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 def create_flip_in_animation():
-    &quot;&quot;&quot;创建翻入动画&quot;&quot;&quot;
+    """创建翻入动画"""
     animation_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;animations&quot;: [
+        "animations": [
             {
-                &quot;anim_adjust_params&quot;: None,
-                &quot;category_id&quot;: &quot;in&quot;,
-                &quot;category_name&quot;: &quot;入场&quot;,
-                &quot;duration&quot;: 1170000,
-                &quot;id&quot;: &quot;98430529&quot;,
-                &quot;material_type&quot;: &quot;video&quot;,
-                &quot;name&quot;: &quot;翻入&quot;,
-                &quot;panel&quot;: &quot;video&quot;,
-                &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/98430529/bd0a96cbfbb58eb67c5f4e86f537b858&quot;,
-                &quot;platform&quot;: &quot;all&quot;,
-                &quot;request_id&quot;: request_id,
-                &quot;resource_id&quot;: &quot;7452407076417966619&quot;,
-                &quot;start&quot;: 0,
-                &quot;type&quot;: &quot;in&quot;
+                "anim_adjust_params": None,
+                "category_id": "in",
+                "category_name": "入场",
+                "duration": 1170000,
+                "id": "98430529",
+                "material_type": "video",
+                "name": "翻入",
+                "panel": "video",
+                "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/98430529/bd0a96cbfbb58eb67c5f4e86f537b858",
+                "platform": "all",
+                "request_id": request_id,
+                "resource_id": "7452407076417966619",
+                "start": 0,
+                "type": "in"
             }
         ],
-        &quot;id&quot;: animation_id,
-        &quot;multi_language_current&quot;: &quot;none&quot;,
-        &quot;type&quot;: &quot;sticker_animation&quot;
+        "id": animation_id,
+        "multi_language_current": "none",
+        "type": "sticker_animation"
     }
 
 # 全局变量，用于记录上一次使用的动画
 last_animation = None
 
 def get_random_animation():
-    &quot;&quot;&quot;随机选择一个动画效果，确保不会连续使用相同的动画&quot;&quot;&quot;
+    """随机选择一个动画效果，确保不会连续使用相同的动画"""
     global last_animation
     
     # 所有可用的动画效果函数列表
@@ -5530,7 +5492,7 @@ def get_random_animation():
     return chosen_animation()
 
 def find_next_subtitle_time(subtitle_segments, current_start_time):
-    &quot;&quot;&quot;
+    """
     找到当前图片应该结束的时间点:
     1. 先确定最早可能结束的时间点 = 当前开始时间 + 5秒
     2. 然后找到在这个时间点之后的第一个字幕开始时间
@@ -5541,25 +5503,25 @@ def find_next_subtitle_time(subtitle_segments, current_start_time):
         
     Returns:
         下一个字幕的开始时间，或者当前开始时间+5秒
-    &quot;&quot;&quot;
+    """
     min_possible_end = current_start_time + 5000000  # 当前图片最早可能结束的时间(5秒)
     
-    print(f&quot;当前图片开始时间: {microsec_to_time(current_start_time)}&quot;)
-    print(f&quot;当前图片最早可能结束时间(+5秒): {microsec_to_time(min_possible_end)}&quot;)
+    print(f"当前图片开始时间: {microsec_to_time(current_start_time)}")
+    print(f"当前图片最早可能结束时间(+5秒): {microsec_to_time(min_possible_end)}")
     
     # 找到第一个开始时间大于min_possible_end的字幕
     for subtitle in subtitle_segments:
-        subtitle_start = subtitle[&#x27;target_timerange&#x27;][&#x27;start&#x27;]
-        if subtitle_start &gt; min_possible_end:  # 只关心字幕的开始时间
-            print(f&quot;找到下一个字幕时间: {microsec_to_time(subtitle_start)}&quot;)
+        subtitle_start = subtitle['target_timerange']['start']
+        if subtitle_start > min_possible_end:  # 只关心字幕的开始时间
+            print(f"找到下一个字幕时间: {microsec_to_time(subtitle_start)}")
             return subtitle_start
     
     # 如果没找到合适的字幕,就用最小结束时间
-    print(f&quot;没找到更晚的字幕,使用最小结束时间: {microsec_to_time(min_possible_end)}&quot;)
+    print(f"没找到更晚的字幕,使用最小结束时间: {microsec_to_time(min_possible_end)}")
     return min_possible_end
 
 def add_effects_to_segment(segment):
-    &quot;&quot;&quot;
+    """
     为片段添加特效
     
     Args:
@@ -5567,194 +5529,194 @@ def add_effects_to_segment(segment):
     
     Returns:
         更新后的片段对象
-    &quot;&quot;&quot;
+    """
     # 添加一些基本特效
     effects = [
         # 可以在这里添加其他特效ID
-        &quot;E312DFCC-91BF-47D1-831A-999CE06AF820&quot;,  # 速度特效
-        &quot;BAE4FFEE-2A02-4D91-9C10-1CFA0B5A9FA7&quot;   # 画布特效
+        "E312DFCC-91BF-47D1-831A-999CE06AF820",  # 速度特效
+        "BAE4FFEE-2A02-4D91-9C10-1CFA0B5A9FA7"   # 画布特效
     ]
     
     # 添加特效引用
-    segment[&quot;extra_material_refs&quot;] = effects
+    segment["extra_material_refs"] = effects
     
     return segment
 
 def create_star_effect():
-    &quot;&quot;&quot;创建星火特效&quot;&quot;&quot;
+    """创建星火特效"""
     effect_id = str(uuid.uuid4())
     return {
-        &quot;adjust_params&quot;: [
-            {&quot;default_value&quot;: 0.33, &quot;name&quot;: &quot;effects_adjust_speed&quot;, &quot;value&quot;: 0.33},
-            {&quot;default_value&quot;: 1.0, &quot;name&quot;: &quot;effects_adjust_background_animation&quot;, &quot;value&quot;: 1.0}
+        "adjust_params": [
+            {"default_value": 0.33, "name": "effects_adjust_speed", "value": 0.33},
+            {"default_value": 1.0, "name": "effects_adjust_background_animation", "value": 1.0}
         ],
-        &quot;algorithm_artifact_path&quot;: &quot;&quot;,
-        &quot;apply_target_type&quot;: 2,
-        &quot;apply_time_range&quot;: None,
-        &quot;category_id&quot;: &quot;39654&quot;,
-        &quot;category_name&quot;: &quot;热门&quot;,
-        &quot;common_keyframes&quot;: [],
-        &quot;disable_effect_faces&quot;: [],
-        &quot;effect_id&quot;: &quot;634103&quot;,
-        &quot;formula_id&quot;: &quot;&quot;,
-        &quot;id&quot;: effect_id,
-        &quot;name&quot;: &quot;星火&quot;,
-        &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/634103/c2811a4bdeb4394ae95f3aa9875dc4dc&quot;,
-        &quot;platform&quot;: &quot;all&quot;,
-        &quot;render_index&quot;: 0,
-        &quot;request_id&quot;: &quot;&quot;,
-        &quot;resource_id&quot;: &quot;6715209198109463054&quot;,
-        &quot;source_platform&quot;: 0,
-        &quot;time_range&quot;: None,
-        &quot;track_render_index&quot;: 0,
-        &quot;type&quot;: &quot;video_effect&quot;,
-        &quot;value&quot;: 1.0,
-        &quot;version&quot;: &quot;&quot;
+        "algorithm_artifact_path": "",
+        "apply_target_type": 2,
+        "apply_time_range": None,
+        "category_id": "39654",
+        "category_name": "热门",
+        "common_keyframes": [],
+        "disable_effect_faces": [],
+        "effect_id": "634103",
+        "formula_id": "",
+        "id": effect_id,
+        "name": "星火",
+        "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/634103/c2811a4bdeb4394ae95f3aa9875dc4dc",
+        "platform": "all",
+        "render_index": 0,
+        "request_id": "",
+        "resource_id": "6715209198109463054",
+        "source_platform": 0,
+        "time_range": None,
+        "track_render_index": 0,
+        "type": "video_effect",
+        "value": 1.0,
+        "version": ""
     }
 
 def create_firefly_effect():
-    &quot;&quot;&quot;创建萤火特效&quot;&quot;&quot;
+    """创建萤火特效"""
     effect_id = str(uuid.uuid4())
     return {
-        &quot;adjust_params&quot;: [
-            {&quot;default_value&quot;: 0.33, &quot;name&quot;: &quot;effects_adjust_speed&quot;, &quot;value&quot;: 0.33},
-            {&quot;default_value&quot;: 1.0, &quot;name&quot;: &quot;effects_adjust_background_animation&quot;, &quot;value&quot;: 1.0}
+        "adjust_params": [
+            {"default_value": 0.33, "name": "effects_adjust_speed", "value": 0.33},
+            {"default_value": 1.0, "name": "effects_adjust_background_animation", "value": 1.0}
         ],
-        &quot;algorithm_artifact_path&quot;: &quot;&quot;,
-        &quot;apply_target_type&quot;: 2,
-        &quot;apply_time_range&quot;: None,
-        &quot;category_id&quot;: &quot;39654&quot;,
-        &quot;category_name&quot;: &quot;热门&quot;,
-        &quot;common_keyframes&quot;: [],
-        &quot;disable_effect_faces&quot;: [],
-        &quot;effect_id&quot;: &quot;1357502&quot;,
-        &quot;formula_id&quot;: &quot;&quot;,
-        &quot;id&quot;: effect_id,
-        &quot;name&quot;: &quot;萤火&quot;,
-        &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/1357502/d473ca7fa127312a7651ec1523a6e880&quot;,
-        &quot;platform&quot;: &quot;all&quot;,
-        &quot;render_index&quot;: 0,
-        &quot;request_id&quot;: &quot;&quot;,
-        &quot;resource_id&quot;: &quot;7006265184050221576&quot;,
-        &quot;source_platform&quot;: 0,
-        &quot;time_range&quot;: None,
-        &quot;track_render_index&quot;: 0,
-        &quot;type&quot;: &quot;video_effect&quot;,
-        &quot;value&quot;: 1.0,
-        &quot;version&quot;: &quot;&quot;
+        "algorithm_artifact_path": "",
+        "apply_target_type": 2,
+        "apply_time_range": None,
+        "category_id": "39654",
+        "category_name": "热门",
+        "common_keyframes": [],
+        "disable_effect_faces": [],
+        "effect_id": "1357502",
+        "formula_id": "",
+        "id": effect_id,
+        "name": "萤火",
+        "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/1357502/d473ca7fa127312a7651ec1523a6e880",
+        "platform": "all",
+        "render_index": 0,
+        "request_id": "",
+        "resource_id": "7006265184050221576",
+        "source_platform": 0,
+        "time_range": None,
+        "track_render_index": 0,
+        "type": "video_effect",
+        "value": 1.0,
+        "version": ""
     }
 
 def create_gold_dust_effect():
-    &quot;&quot;&quot;创建金粉闪闪特效&quot;&quot;&quot;
+    """创建金粉闪闪特效"""
     effect_id = str(uuid.uuid4())
-    request_id = datetime.now().strftime(&quot;%Y%m%d%H%M%S&quot;) + str(uuid.uuid4())[:8].upper()
+    request_id = datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4())[:8].upper()
     return {
-        &quot;adjust_params&quot;: [
-            {&quot;default_value&quot;: 0.3361999988555908, &quot;name&quot;: &quot;effects_adjust_speed&quot;, &quot;value&quot;: 0.3361999988555908},
-            {&quot;default_value&quot;: 0.5, &quot;name&quot;: &quot;effects_adjust_filter&quot;, &quot;value&quot;: 0.5},
-            {&quot;default_value&quot;: 1.0, &quot;name&quot;: &quot;effects_adjust_background_animation&quot;, &quot;value&quot;: 1.0}
+        "adjust_params": [
+            {"default_value": 0.3361999988555908, "name": "effects_adjust_speed", "value": 0.3361999988555908},
+            {"default_value": 0.5, "name": "effects_adjust_filter", "value": 0.5},
+            {"default_value": 1.0, "name": "effects_adjust_background_animation", "value": 1.0}
         ],
-        &quot;algorithm_artifact_path&quot;: &quot;&quot;,
-        &quot;apply_target_type&quot;: 2,
-        &quot;apply_time_range&quot;: None,
-        &quot;category_id&quot;: &quot;107&quot;,
-        &quot;category_name&quot;: &quot;收藏&quot;,
-        &quot;common_keyframes&quot;: [],
-        &quot;disable_effect_faces&quot;: [],
-        &quot;effect_id&quot;: &quot;1453820&quot;,
-        &quot;formula_id&quot;: &quot;&quot;,
-        &quot;id&quot;: effect_id,
-        &quot;name&quot;: &quot;金粉闪闪&quot;,
-        &quot;path&quot;: &quot;/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/1453820/a552dfa820b5aba27e4f09e3d83b8643&quot;,
-        &quot;platform&quot;: &quot;all&quot;,
-        &quot;render_index&quot;: 0,
-        &quot;request_id&quot;: request_id,
-        &quot;resource_id&quot;: &quot;7034048554318434830&quot;,
-        &quot;source_platform&quot;: 0,
-        &quot;time_range&quot;: None,
-        &quot;track_render_index&quot;: 0,
-        &quot;type&quot;: &quot;video_effect&quot;,
-        &quot;value&quot;: 1.0,
-        &quot;version&quot;: &quot;&quot;
+        "algorithm_artifact_path": "",
+        "apply_target_type": 2,
+        "apply_time_range": None,
+        "category_id": "107",
+        "category_name": "收藏",
+        "common_keyframes": [],
+        "disable_effect_faces": [],
+        "effect_id": "1453820",
+        "formula_id": "",
+        "id": effect_id,
+        "name": "金粉闪闪",
+        "path": "/Users/a47/Library/Containers/com.lemon.lvpro/Data/Movies/JianyingPro/User Data/Cache/effect/1453820/a552dfa820b5aba27e4f09e3d83b8643",
+        "platform": "all",
+        "render_index": 0,
+        "request_id": request_id,
+        "resource_id": "7034048554318434830",
+        "source_platform": 0,
+        "time_range": None,
+        "track_render_index": 0,
+        "type": "video_effect",
+        "value": 1.0,
+        "version": ""
     }
 
 def add_effect_track(draft, segments):
-    &quot;&quot;&quot;添加特效轨道&quot;&quot;&quot;
+    """添加特效轨道"""
     # 创建特效轨道
     effect_track = {
-        &quot;attribute&quot;: 0,
-        &quot;flag&quot;: 0,
-        &quot;id&quot;: str(uuid.uuid4()),
-        &quot;is_default_name&quot;: True,
-        &quot;name&quot;: &quot;&quot;,
-        &quot;segments&quot;: [],
-        &quot;type&quot;: &quot;effect&quot;
+        "attribute": 0,
+        "flag": 0,
+        "id": str(uuid.uuid4()),
+        "is_default_name": True,
+        "name": "",
+        "segments": [],
+        "type": "effect"
     }
 
     # 为每个视频片段创建对应的特效
     for i, segment in enumerate(segments):
-        start_time = segment[&#x27;target_timerange&#x27;][&#x27;start&#x27;]
-        duration = segment[&#x27;target_timerange&#x27;][&#x27;duration&#x27;]
+        start_time = segment['target_timerange']['start']
+        duration = segment['target_timerange']['duration']
         
         # 随机选择一个特效
         effect_funcs = [create_star_effect, create_firefly_effect, create_gold_dust_effect]
         effect = random.choice(effect_funcs)()
         
         # 添加特效到materials
-        if &#x27;video_effects&#x27; not in draft[&#x27;materials&#x27;]:
-            draft[&#x27;materials&#x27;][&#x27;video_effects&#x27;] = []
-        draft[&#x27;materials&#x27;][&#x27;video_effects&#x27;].append(effect)
+        if 'video_effects' not in draft['materials']:
+            draft['materials']['video_effects'] = []
+        draft['materials']['video_effects'].append(effect)
         
         # 创建特效片段
         effect_segment = {
-            &quot;caption_info&quot;: None,
-            &quot;cartoon&quot;: False,
-            &quot;clip&quot;: None,
-            &quot;common_keyframes&quot;: [],
-            &quot;enable_adjust&quot;: False,
-            &quot;enable_color_curves&quot;: True,
-            &quot;enable_color_match_adjust&quot;: False,
-            &quot;enable_color_wheels&quot;: True,
-            &quot;enable_lut&quot;: False,
-            &quot;enable_smart_color_adjust&quot;: False,
-            &quot;extra_material_refs&quot;: [],
-            &quot;group_id&quot;: &quot;&quot;,
-            &quot;id&quot;: str(uuid.uuid4()),
-            &quot;intensifies_audio&quot;: False,
-            &quot;is_placeholder&quot;: False,
-            &quot;is_tone_modify&quot;: False,
-            &quot;keyframe_refs&quot;: [],
-            &quot;last_nonzero_volume&quot;: 1.0,
-            &quot;material_id&quot;: effect[&#x27;id&#x27;],
-            &quot;render_index&quot;: 11000 + i,
-            &quot;responsive_layout&quot;: {
-                &quot;enable&quot;: False,
-                &quot;horizontal_pos_layout&quot;: 0,
-                &quot;size_layout&quot;: 0,
-                &quot;target_follow&quot;: &quot;&quot;,
-                &quot;vertical_pos_layout&quot;: 0
+            "caption_info": None,
+            "cartoon": False,
+            "clip": None,
+            "common_keyframes": [],
+            "enable_adjust": False,
+            "enable_color_curves": True,
+            "enable_color_match_adjust": False,
+            "enable_color_wheels": True,
+            "enable_lut": False,
+            "enable_smart_color_adjust": False,
+            "extra_material_refs": [],
+            "group_id": "",
+            "id": str(uuid.uuid4()),
+            "intensifies_audio": False,
+            "is_placeholder": False,
+            "is_tone_modify": False,
+            "keyframe_refs": [],
+            "last_nonzero_volume": 1.0,
+            "material_id": effect['id'],
+            "render_index": 11000 + i,
+            "responsive_layout": {
+                "enable": False,
+                "horizontal_pos_layout": 0,
+                "size_layout": 0,
+                "target_follow": "",
+                "vertical_pos_layout": 0
             },
-            &quot;reverse&quot;: False,
-            &quot;source_timerange&quot;: None,
-            &quot;speed&quot;: 1.0,
-            &quot;target_timerange&quot;: {
-                &quot;duration&quot;: duration,
-                &quot;start&quot;: start_time
+            "reverse": False,
+            "source_timerange": None,
+            "speed": 1.0,
+            "target_timerange": {
+                "duration": duration,
+                "start": start_time
             },
-            &quot;template_id&quot;: &quot;&quot;,
-            &quot;template_scene&quot;: &quot;default&quot;,
-            &quot;track_attribute&quot;: 0,
-            &quot;track_render_index&quot;: 1,
-            &quot;uniform_scale&quot;: None,
-            &quot;visible&quot;: True,
-            &quot;volume&quot;: 1.0
+            "template_id": "",
+            "template_scene": "default",
+            "track_attribute": 0,
+            "track_render_index": 1,
+            "uniform_scale": None,
+            "visible": True,
+            "volume": 1.0
         }
-        effect_track[&#x27;segments&#x27;].append(effect_segment)
+        effect_track['segments'].append(effect_segment)
     
     return effect_track
 
 def sync_images_with_subtitles_in_draft(draft):
-    &quot;&quot;&quot;
+    """
     在草稿中将图片与字幕同步
     
     Args:
@@ -5762,114 +5724,114 @@ def sync_images_with_subtitles_in_draft(draft):
     
     Returns:
         更新后的草稿JSON对象
-    &quot;&quot;&quot;
+    """
     # 查找文本轨道
     text_track = None
-    for track in draft.get(&#x27;tracks&#x27;, []):
-        if track.get(&#x27;type&#x27;) == &#x27;text&#x27;:
+    for track in draft.get('tracks', []):
+        if track.get('type') == 'text':
             text_track = track
-            print(&quot;找到text轨道&quot;)
+            print("找到text轨道")
             break
     
     if not text_track:
-        print(&quot;未找到text轨道，无法同步图片与字幕&quot;)
+        print("未找到text轨道，无法同步图片与字幕")
         return draft
     
     # 获取所有字幕片段
-    subtitle_segments = text_track.get(&#x27;segments&#x27;, [])
-    print(f&quot;找到 {len(subtitle_segments)} 个字幕片段&quot;)
+    subtitle_segments = text_track.get('segments', [])
+    print(f"找到 {len(subtitle_segments)} 个字幕片段")
     
     # 打印字幕时间范围
-    print(&quot;字幕时间范围:&quot;)
+    print("字幕时间范围:")
     for i, subtitle in enumerate(subtitle_segments):
-        subtitle_start = subtitle[&#x27;target_timerange&#x27;][&#x27;start&#x27;]
-        subtitle_end = subtitle_start + subtitle[&#x27;target_timerange&#x27;][&#x27;duration&#x27;]
-        subtitle_duration = subtitle[&#x27;target_timerange&#x27;][&#x27;duration&#x27;] / 1000000
-        print(f&quot;  字幕 {i}: 开始={microsec_to_time(subtitle_start)}, 结束={microsec_to_time(subtitle_end)}, 持续={subtitle_duration:.2f}秒秒&quot;)
+        subtitle_start = subtitle['target_timerange']['start']
+        subtitle_end = subtitle_start + subtitle['target_timerange']['duration']
+        subtitle_duration = subtitle['target_timerange']['duration'] / 1000000
+        print(f"  字幕 {i}: 开始={microsec_to_time(subtitle_start)}, 结束={microsec_to_time(subtitle_end)}, 持续={subtitle_duration:.2f}秒秒")
     
     # 查找图片轨道
     image_track = None
-    for track in draft.get(&#x27;tracks&#x27;, []):
-        if track.get(&#x27;type&#x27;) == &#x27;video&#x27;:
+    for track in draft.get('tracks', []):
+        if track.get('type') == 'video':
             # 检查是否有图片材料
             has_image = False
-            for segment in track.get(&#x27;segments&#x27;, []):
-                material_id = segment.get(&#x27;material_id&#x27;, &#x27;&#x27;)
+            for segment in track.get('segments', []):
+                material_id = segment.get('material_id', '')
                 material = None
-                for mat in draft.get(&#x27;materials&#x27;, {}).get(&#x27;videos&#x27;, []):
-                    if mat.get(&#x27;id&#x27;) == material_id:
+                for mat in draft.get('materials', {}).get('videos', []):
+                    if mat.get('id') == material_id:
                         material = mat
                         break
                 
-                # 在剪映中，图片类型可能是&#x27;photo&#x27;或&#x27;image&#x27;
-                if material and (material.get(&#x27;type&#x27;) == &#x27;photo&#x27; or material.get(&#x27;type&#x27;) == &#x27;image&#x27;):
+                # 在剪映中，图片类型可能是'photo'或'image'
+                if material and (material.get('type') == 'photo' or material.get('type') == 'image'):
                     has_image = True
                     break
             
             if has_image:
                 image_track = track
-                print(&quot;使用现有的图片轨道&quot;)
+                print("使用现有的图片轨道")
                 break
     
     if not image_track:
         # 创建新的图片轨道
         image_track = {
-            &quot;attribute&quot;: 0,
-            &quot;flag&quot;: 0,
-            &quot;id&quot;: str(uuid.uuid4()),
-            &quot;is_default_name&quot;: True,
-            &quot;name&quot;: &quot;&quot;,
-            &quot;segments&quot;: [],
-            &quot;type&quot;: &quot;video&quot;
+            "attribute": 0,
+            "flag": 0,
+            "id": str(uuid.uuid4()),
+            "is_default_name": True,
+            "name": "",
+            "segments": [],
+            "type": "video"
         }
-        draft[&#x27;tracks&#x27;].append(image_track)
-        print(&quot;创建了新的图片轨道&quot;)
+        draft['tracks'].append(image_track)
+        print("创建了新的图片轨道")
     
-    # 获取所有图片材料 - 在剪映中，图片类型是&#x27;photo&#x27;或&#x27;image&#x27;
+    # 获取所有图片材料 - 在剪映中，图片类型是'photo'或'image'
     image_materials = []
-    for video in draft.get(&#x27;materials&#x27;, {}).get(&#x27;videos&#x27;, []):
-        if video.get(&#x27;type&#x27;) == &#x27;photo&#x27; or video.get(&#x27;type&#x27;) == &#x27;image&#x27;:
+    for video in draft.get('materials', {}).get('videos', []):
+        if video.get('type') == 'photo' or video.get('type') == 'image':
             image_materials.append(video)
     
-    print(f&quot;找到 {len(image_materials)} 个图片材料&quot;)
+    print(f"找到 {len(image_materials)} 个图片材料")
     
     # 如果没有找到图片材料，创建一个默认的图片材料
     if not image_materials:
-        print(&quot;未找到图片材料，将创建默认图片材料&quot;)
+        print("未找到图片材料，将创建默认图片材料")
         # 创建一个默认的图片材料
         default_image_id = str(uuid.uuid4())
         default_image = {
-            &quot;duration&quot;: 10800000000,  # 使用与剪映草稿中相同的默认持续时间
-            &quot;height&quot;: 1080,
-            &quot;id&quot;: default_image_id,
-            &quot;local_material_id&quot;: default_image_id,
-            &quot;material_name&quot;: &quot;默认图片&quot;,
-            &quot;path&quot;: &quot;&quot;,  # 这里应该填入一个实际的图片路径，但我们暂时留空
-            &quot;type&quot;: &quot;photo&quot;,  # 使用&#x27;photo&#x27;类型与剪映一致
-            &quot;width&quot;: 1920
+            "duration": 10800000000,  # 使用与剪映草稿中相同的默认持续时间
+            "height": 1080,
+            "id": default_image_id,
+            "local_material_id": default_image_id,
+            "material_name": "默认图片",
+            "path": "",  # 这里应该填入一个实际的图片路径，但我们暂时留空
+            "type": "photo",  # 使用'photo'类型与剪映一致
+            "width": 1920
         }
         
         # 添加到materials
-        if &#x27;materials&#x27; not in draft:
-            draft[&#x27;materials&#x27;] = {}
-        if &#x27;videos&#x27; not in draft[&#x27;materials&#x27;]:
-            draft[&#x27;materials&#x27;][&#x27;videos&#x27;] = []
+        if 'materials' not in draft:
+            draft['materials'] = {}
+        if 'videos' not in draft['materials']:
+            draft['materials']['videos'] = []
         
-        draft[&#x27;materials&#x27;][&#x27;videos&#x27;].append(default_image)
+        draft['materials']['videos'].append(default_image)
         image_materials.append(default_image)
-        print(&quot;已创建默认图片材料&quot;)
+        print("已创建默认图片材料")
     
-    if len(image_materials) &lt; len(subtitle_segments):
-        print(f&quot;警告: 图片数量({len(image_materials)})少于字幕数量({len(subtitle_segments)})&quot;)
+    if len(image_materials) < len(subtitle_segments):
+        print(f"警告: 图片数量({len(image_materials)})少于字幕数量({len(subtitle_segments)})")
     
     # 清空图片轨道的片段
-    image_track[&#x27;segments&#x27;] = []
+    image_track['segments'] = []
     
     # 确保 materials 中有 material_animations 列表
-    if &#x27;materials&#x27; not in draft:
-        draft[&#x27;materials&#x27;] = {}
-    if &#x27;material_animations&#x27; not in draft[&#x27;materials&#x27;]:
-        draft[&#x27;materials&#x27;][&#x27;material_animations&#x27;] = []
+    if 'materials' not in draft:
+        draft['materials'] = {}
+    if 'material_animations' not in draft['materials']:
+        draft['materials']['material_animations'] = []
     
     # 按照字幕顺序创建图片片段
     last_end_time = 0  # 第一张图片从0开始
@@ -5883,9 +5845,9 @@ def sync_images_with_subtitles_in_draft(draft):
         # 必须是某个字幕的开始时间,且至少要在start_time+5秒之后
         end_time = find_next_subtitle_time(subtitle_segments, start_time)
         
-        print(f&quot;\n当前图片开始时间: {microsec_to_time(start_time)}&quot;)
-        print(f&quot;当前图片最早可能结束时间(+5秒): {microsec_to_time(start_time + 5000000)}&quot;)
-        print(f&quot;找到下一个字幕时间: {microsec_to_time(end_time)}&quot;)
+        print(f"\n当前图片开始时间: {microsec_to_time(start_time)}")
+        print(f"当前图片最早可能结束时间(+5秒): {microsec_to_time(start_time + 5000000)}")
+        print(f"找到下一个字幕时间: {microsec_to_time(end_time)}")
         
         # 计算持续时间
         duration = end_time - start_time
@@ -5894,63 +5856,63 @@ def sync_images_with_subtitles_in_draft(draft):
         image_index = i % len(image_materials)
         image_material = image_materials[image_index]
         
-        print(f&quot;\n图片 {i}:&quot;)
-        print(f&quot;开始时间: {microsec_to_time(start_time)}&quot;)
-        print(f&quot;结束时间: {microsec_to_time(end_time)}&quot;)
-        print(f&quot;持续时间: {duration / 1000000:.2f}秒秒&quot;)
-        print(f&quot;对应字幕: {microsec_to_time(start_time)} - {microsec_to_time(end_time)}&quot;)
+        print(f"\n图片 {i}:")
+        print(f"开始时间: {microsec_to_time(start_time)}")
+        print(f"结束时间: {microsec_to_time(end_time)}")
+        print(f"持续时间: {duration / 1000000:.2f}秒秒")
+        print(f"对应字幕: {microsec_to_time(start_time)} - {microsec_to_time(end_time)}")
         
         # 创建图片片段
         image_segment = {
-            &quot;cartoon&quot;: False,
-            &quot;clip&quot;: {
-                &quot;alpha&quot;: 1.0,
-                &quot;flip&quot;: {&quot;horizontal&quot;: False, &quot;vertical&quot;: False},
-                &quot;rotation&quot;: 0.0,
-                &quot;scale&quot;: {&quot;x&quot;: 1.25, &quot;y&quot;: 1.25},  # 使用1.25的缩放比例，与英语字幕对齐.py一致
-                &quot;transform&quot;: {&quot;x&quot;: 0.0, &quot;y&quot;: 0.0}
+            "cartoon": False,
+            "clip": {
+                "alpha": 1.0,
+                "flip": {"horizontal": False, "vertical": False},
+                "rotation": 0.0,
+                "scale": {"x": 1.25, "y": 1.25},  # 使用1.25的缩放比例，与英语字幕对齐.py一致
+                "transform": {"x": 0.0, "y": 0.0}
             },
-            &quot;common_keyframes&quot;: [],
-            &quot;enable_adjust&quot;: False,
-            &quot;enable_color_curves&quot;: True,
-            &quot;enable_color_wheels&quot;: True,
-            &quot;extra_material_refs&quot;: [],
-            &quot;group_id&quot;: &quot;&quot;,
-            &quot;id&quot;: str(uuid.uuid4()),
-            &quot;intensifies_audio&quot;: False,
-            &quot;is_placeholder&quot;: False,
-            &quot;material_id&quot;: image_material[&#x27;id&#x27;],
-            &quot;render_index&quot;: i,
-            &quot;source_timerange&quot;: {
-                &quot;duration&quot;: duration,
-                &quot;start&quot;: 0
+            "common_keyframes": [],
+            "enable_adjust": False,
+            "enable_color_curves": True,
+            "enable_color_wheels": True,
+            "extra_material_refs": [],
+            "group_id": "",
+            "id": str(uuid.uuid4()),
+            "intensifies_audio": False,
+            "is_placeholder": False,
+            "material_id": image_material['id'],
+            "render_index": i,
+            "source_timerange": {
+                "duration": duration,
+                "start": 0
             },
-            &quot;speed&quot;: 1.0,
-            &quot;target_timerange&quot;: {
-                &quot;duration&quot;: duration,
-                &quot;start&quot;: start_time
+            "speed": 1.0,
+            "target_timerange": {
+                "duration": duration,
+                "start": start_time
             },
-            &quot;template_id&quot;: &quot;&quot;,
-            &quot;template_scene&quot;: &quot;default&quot;,
-            &quot;track_attribute&quot;: 0,
-            &quot;track_render_index&quot;: 0,
-            &quot;uniform_scale&quot;: {&quot;on&quot;: True, &quot;value&quot;: 1.0},
-            &quot;visible&quot;: True,
-            &quot;volume&quot;: 1.0
+            "template_id": "",
+            "template_scene": "default",
+            "track_attribute": 0,
+            "track_render_index": 0,
+            "uniform_scale": {"on": True, "value": 1.0},
+            "visible": True,
+            "volume": 1.0
         }
         
         # 创建随机动画效果
         animation = get_random_animation()
-        draft[&#x27;materials&#x27;][&#x27;material_animations&#x27;].append(animation)
+        draft['materials']['material_animations'].append(animation)
         
         # 添加动画引用到 extra_material_refs
-        image_segment[&#x27;extra_material_refs&#x27;].append(animation[&#x27;id&#x27;])
+        image_segment['extra_material_refs'].append(animation['id'])
         
         # 设置关键帧
-        image_segment[&#x27;common_keyframes&#x27;] = create_common_keyframes(start_time, duration)
+        image_segment['common_keyframes'] = create_common_keyframes(start_time, duration)
         
         # 添加到图片轨道
-        image_track[&#x27;segments&#x27;].append(image_segment)
+        image_track['segments'].append(image_segment)
         created_segments.append(image_segment)
         
         # 更新下一张图片的开始时间
@@ -5958,44 +5920,46 @@ def sync_images_with_subtitles_in_draft(draft):
     
     # 添加特效轨道
     effect_track = add_effect_track(draft, created_segments)
-    draft[&#x27;tracks&#x27;].append(effect_track)
+    draft['tracks'].append(effect_track)
     
-    print(f&quot;已添加 {len(created_segments)} 个图片片段，并应用了关键帧和特效&quot;)
+    print(f"已添加 {len(created_segments)} 个图片片段，并应用了关键帧和特效")
     return draft
 
 def process_draft_automatically():
-    &quot;&quot;&quot;
+    """
     自动处理最新的剪映草稿，同步图片与字幕
     
     Returns:
         None
-    &quot;&quot;&quot;
+    """
     try:
         # 获取最新的草稿文件夹
         latest_draft_folder = get_latest_draft_folder()
-        print(f&quot;找到最新草稿文件夹: {latest_draft_folder}&quot;)
+        print(f"找到最新草稿文件夹: {latest_draft_folder}")
         
         # 读取draft_content.json
-        draft_content_path = os.path.join(latest_draft_folder, &#x27;draft_content.json&#x27;)
-        with open(draft_content_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        draft_content_path = os.path.join(latest_draft_folder, 'draft_content.json')
+        with open(draft_content_path, 'r', encoding='utf-8') as f:
             draft = json.load(f)
         
         # 同步图片与字幕
         draft = sync_images_with_subtitles_in_draft(draft)
         
         # 保存修改后的draft_content.json
-        with open(draft_content_path, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        with open(draft_content_path, 'w', encoding='utf-8') as f:
             json.dump(draft, f, ensure_ascii=False)
         
-        print(f&quot;成功将图片与字幕同步到草稿: {latest_draft_folder}&quot;)
+        print(f"成功将图片与字幕同步到草稿: {latest_draft_folder}")
         
     except Exception as e:
-        print(f&quot;处理草稿时出错: {str(e)}&quot;)
+        print(f"处理草稿时出错: {str(e)}")
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     # 直接处理草稿，不需要用户输入
     process_draft_automatically()
 ```
+
+
 
 然后一切就都搞定了，只需要1秒
 
@@ -6035,7 +5999,7 @@ if __name__ == &quot;__main__&quot;:
 
 我参加了这次YouTube的航海，惭愧暂列榜单第一，我贴几个我航海的日志截图
 
-感兴趣的可以去搜下我的日志，看下我每天的迭代记录https://scys.com/activity/landing/5122?tabIndex=1
+感兴趣的可以去搜下我的日志，看下我每天的迭代记录`https://scys.com/activity/landing/5122?tabIndex=1`
 
 我的日志里，基本每天都是在和时间成本做斗争，做压缩，做优化
 
@@ -6073,9 +6037,9 @@ if __name__ == &quot;__main__&quot;:
 
 比如说，我按上面脚本做一个15分钟的YouTube长视频，需要的成本是3-5块RMB，其中：
 
-1.  出图花费大概1-3块RMB
+1. 出图花费大概1-3块RMB
 
-1.  语音转换大概2-4块RMB
+1. 语音转换大概2-4块RMB
 
 这也就是为什么我第一个YouTube账号是在11月1号启动的
 
@@ -6099,15 +6063,15 @@ if __name__ == &quot;__main__&quot;:
 
 上面的五点，就是我的做事心法
 
-1.  选择兴趣
+1. 选择兴趣
 
-1.  抄出mvp
+1. 抄出mvp
 
-1.  具象需求
+1. 具象需求
 
-1.  实现增效
+1. 实现增效
 
-1.  核算成本和扩张
+1. 核算成本和扩张
 
 要我说，我文章里列出的代码除了消耗了我很多的时间外，其实并没有什么价值，
 
@@ -6159,13 +6123,13 @@ if __name__ == &quot;__main__&quot;:
 
 看过我日志的人都知道，我现在一个人的产量：
 
-1.  每天产出400个5s的AI视频（单账号理论极限是800个）
+1. 每天产出400个5s的AI视频（单账号理论极限是800个）
 
-1.  可组合出10个左右的15秒AI视频+4个60秒的AI视频
+1. 可组合出10个左右的15秒AI视频+4个60秒的AI视频
 
-1.  4个号日更2-3个作品
+1. 4个号日更2-3个作品
 
-1.  每天只需花费人工时间3-4个小时
+1. 每天只需花费人工时间3-4个小时
 
 我不知道高人们是怎样的产量，但就我个人来说，
 

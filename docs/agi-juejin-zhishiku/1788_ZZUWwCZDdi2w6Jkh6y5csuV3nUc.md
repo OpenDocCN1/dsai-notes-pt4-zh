@@ -1,3 +1,4 @@
+
 # 如何利用AI工具训练自己的声音进行文本朗读
 
 > 来源：[https://agijuejin.feishu.cn/docx/UUWbdWlzBornydxwdjycZc7InEb](https://agijuejin.feishu.cn/docx/UUWbdWlzBornydxwdjycZc7InEb)
@@ -12,15 +13,15 @@
 
 ## 一、登陆界面
 
-注册 [百度账号 ](https://www.zhihu.com/search?q=%E7%99%BE%E5%BA%A6%E8%B4%A6%E5%8F%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)，登陆百度飞浆，附上相关网址：https://aistudio.baidu.com/
+注册 [百度账号 ](https://www.zhihu.com/search?q=%E7%99%BE%E5%BA%A6%E8%B4%A6%E5%8F%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)，登陆百度飞浆，附上相关网址：`https://aistudio.baidu.com/`
 
 ![](img/e1bb4a9e8e42100fa726c3b075414b19.png)
 
 ## 二、项目界面运行
 
-### 1、 在搜索框点击
+### 1、在搜索框点击
 
-搜索内容： [有手就行](https://www.zhihu.com/search?q=%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)
+搜索内容：[有手就行](https://www.zhihu.com/search?q=%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)
 
 ![](img/963e1990409d34bfccf4e848711bbfa3.png)
 
@@ -36,13 +37,13 @@
 
 ![](img/368660063f65db682f5b61c919a2d8df.png)
 
-### 4、选择 [运行环境](https://www.zhihu.com/search?q=%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)
+### 4、选择运行环境
 
 有不同的选项，根据时间的要求进行挑选，我个人建议常规情况下可以选择V100 32GB运行，每小时只耗费1点算力，每日登陆赠送8点算力，足够完成一个项目了，当然也可以根据自己的时间情况进行调整。
 
 ![](img/bf07b5b7161b2df6698b15d7527513bf.png)
 
-### 5、 [程序界面](https://www.zhihu.com/search?q=%E7%A8%8B%E5%BA%8F%E7%95%8C%E9%9D%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)
+### 5、程序界面
 
 在程序界面点击全部运行，运行需要一定的安装时间，静静等待就好。
 
@@ -62,18 +63,17 @@
 
 点击在浏览器打开这个按钮，等运行完成后就会进入网页UI界面
 
-
 ![](img/4021bcb3dd08b1d895622a72b8b9083e.png)
 
 ## 三、语音合成
 
 ### 1、注意事项
 
-上传的文件 [音频格式 ](https://www.zhihu.com/search?q=%E9%9F%B3%E9%A2%91%E6%A0%BC%E5%BC%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)最好是WAV, MP3格式也可以，建议单独再下载音频软件进行降噪处理（自己网上找音频软件的处理软件）
+上传的文件音频格式最好是WAV, MP3格式也可以，建议单独再下载音频软件进行降噪处理（自己网上找音频软件的处理软件）
 
 ![](img/f2a3afd5bf3c06e28962d5568c8e372d.png)
 
-### 2、 [音频文件 ](https://www.zhihu.com/search?q=%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)上传
+### 2、音频文件上传
 
 上传音频文件，注意尽量用WAV文件
 
@@ -81,7 +81,7 @@
 
 ![](img/edf4bf11078dcd7b04670d80ff2ea25a.png)
 
-### 3、 [数据检验](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E6%A3%80%E9%AA%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)
+### 3、数据检验
 
 点击检验，然后确认有效音频数量是否足够
 
@@ -97,7 +97,7 @@
 
 ### 5、音频合成
 
-[声码器 ](https://www.zhihu.com/search?q=%E5%A3%B0%E7%A0%81%E5%99%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)建议选择PWGan就可以，根据实际需求调整。
+声码器建议选择PWGan就可以，根据实际需求调整。
 
 实验模型一定要注意选对，下拉箭头选择自己刚刚训练好的模型名称。
 
@@ -121,10 +121,10 @@
 
 ![](img/a8f415659b3e85f2f9f1faec59590f8f.png)
 
-通[过以上的分](https://www.zhihu.com/search?q=%E8%A7%86%E9%A2%91%E8%BD%AF%E4%BB%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A644059173%7D)享，你是否了解如何训练自己的声音进行文本朗读了呢，只需要输入文字，就可以让电脑来帮你朗读长段的文字啦！结合照片以及数字人 视频软件 ，就可以轻松打造属于自己的数字人IP！
+通过以上的分享，你是否了解如何训练自己的声音进行文本朗读了呢，只需要输入文字，就可以让电脑来帮你朗读长段的文字啦！结合照片以及数字人视频软件，就可以轻松打造属于自己的数字人IP！
 
 是不是很有用的工具呢？希望我的回答对你有帮助！
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3114940634%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3114940634%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3114940634%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3114940634%7D)绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

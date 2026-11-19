@@ -1,8 +1,11 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/VC6pdCi5loFTN1xqbpecqjoencr](https://qqs7y1hozd1.feishu.cn/docx/VC6pdCi5loFTN1xqbpecqjoencr)
 
-```
+
+
+```python
 import os
 from typing import List, Dict, Any, Literal, Optional
 from dataclasses import dataclass
@@ -28,24 +31,24 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 
 def init_session_state():
-    &quot;&quot;&quot;Initialize session state variables&quot;&quot;&quot;
-    if &#x27;openai_api_key&#x27; not in st.session_state:
-        st.session_state.openai_api_key = &quot;&quot;
-    if &#x27;qdrant_url&#x27; not in st.session_state:
-        st.session_state.qdrant_url = &quot;&quot;
-    if &#x27;qdrant_api_key&#x27; not in st.session_state:
-        st.session_state.qdrant_api_key = &quot;&quot;
-    if &#x27;embeddings&#x27; not in st.session_state:
+    """Initialize session state variables"""
+    if 'openai_api_key' not in st.session_state:
+        st.session_state.openai_api_key = ""
+    if 'qdrant_url' not in st.session_state:
+        st.session_state.qdrant_url = ""
+    if 'qdrant_api_key' not in st.session_state:
+        st.session_state.qdrant_api_key = ""
+    if 'embeddings' not in st.session_state:
         st.session_state.embeddings = None
-    if &#x27;llm&#x27; not in st.session_state:
+    if 'llm' not in st.session_state:
         st.session_state.llm = None
-    if &#x27;databases&#x27; not in st.session_state:
+    if 'databases' not in st.session_state:
         st.session_state.databases = {}
 
 init_session_state()
 
-DatabaseType = Literal[&quot;products&quot;, &quot;support&quot;, &quot;finance&quot;]
-PERSIST_DIRECTORY = &quot;db_storage&quot;
+DatabaseType = Literal["products", "support", "finance"]
+PERSIST_DIRECTORY = "db_storage"
 
 @dataclass
 class CollectionConfig:
@@ -55,31 +58,31 @@ class CollectionConfig:
 
 # Collection configurations
 COLLECTIONS: Dict[DatabaseType, CollectionConfig] = {
-    &quot;products&quot;: CollectionConfig(
-        name=&quot;Product Information&quot;,
-        description=&quot;Product details, specifications, and features&quot;,
-        collection_name=&quot;products_collection&quot;
+    "products": CollectionConfig(
+        name="Product Information",
+        description="Product details, specifications, and features",
+        collection_name="products_collection"
     ),
-    &quot;support&quot;: CollectionConfig(
-        name=&quot;Customer Support &amp; FAQ&quot;,
-        description=&quot;Customer support information, frequently asked questions, and guides&quot;,
-        collection_name=&quot;support_collection&quot;
+    "support": CollectionConfig(
+        name="Customer Support & FAQ",
+        description="Customer support information, frequently asked questions, and guides",
+        collection_name="support_collection"
     ),
-    &quot;finance&quot;: CollectionConfig(
-        name=&quot;Financial Information&quot;,
-        description=&quot;Financial data, revenue, costs, and liabilities&quot;,
-        collection_name=&quot;finance_collection&quot;
+    "finance": CollectionConfig(
+        name="Financial Information",
+        description="Financial data, revenue, costs, and liabilities",
+        collection_name="finance_collection"
     )
 }
 
 def initialize_models():
-    &quot;&quot;&quot;Initialize OpenAI models and Qdrant client&quot;&quot;&quot;
+    """Initialize OpenAI models and Qdrant client"""
     if (st.session_state.openai_api_key and 
         st.session_state.qdrant_url and 
         st.session_state.qdrant_api_key):
         
-        os.environ[&quot;OPENAI_API_KEY&quot;] = st.session_state.openai_api_key
-        st.session_state.embeddings = OpenAIEmbeddings(model=&quot;text-embedding-3-small&quot;)
+        os.environ["OPENAI_API_KEY"] = st.session_state.openai_api_key
+        st.session_state.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
         st.session_state.llm = ChatOpenAI(temperature=0)
         
         try:
@@ -96,7 +99,7 @@ def initialize_models():
                 try:
                     client.get_collection(config.collection_name)
                 except Exception:
-                    # Create collection if it doesn&#x27;t exist
+                    # Create collection if it doesn't exist
                     client.create_collection(
                         collection_name=config.collection_name,
                         vectors_config=VectorParams(size=vector_size, distance=Distance.COSINE)
@@ -110,14 +113,14 @@ def initialize_models():
             
             return True
         except Exception as e:
-            st.error(f&quot;Failed to connect to Qdrant: {str(e)}&quot;)
+            st.error(f"Failed to connect to Qdrant: {str(e)}")
             return False
     return False
 
-def process_document(file) -&gt; List[Document]:
-    &quot;&quot;&quot;Process uploaded PDF document&quot;&quot;&quot;
+def process_document(file) -> List[Document]:
+    """Process uploaded PDF document"""
     try:
-        with tempfile.NamedTemporaryFile(delete=False, suffix=&#x27;.pdf&#x27;) as tmp_file:
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
             tmp_file.write(file.getvalue())
             tmp_path = tmp_file.name
             
@@ -135,34 +138,34 @@ def process_document(file) -&gt; List[Document]:
         
         return texts
     except Exception as e:
-        st.error(f&quot;Error processing document: {e}&quot;)
+        st.error(f"Error processing document: {e}")
         return []
 
-def create_routing_agent() -&gt; Agent:
-    &quot;&quot;&quot;Creates a routing agent using agno framework&quot;&quot;&quot;
+def create_routing_agent() -> Agent:
+    """Creates a routing agent using agno framework"""
     return Agent(
         model=OpenAIChat(
-            id=&quot;gpt-4o&quot;,
+            id="gpt-4o",
             api_key=st.session_state.openai_api_key
         ),
         tools=[],
-        description=&quot;&quot;&quot;You are a query routing expert. Your only job is to analyze questions and determine which database they should be routed to.
-        You must respond with exactly one of these three options: &#x27;products&#x27;, &#x27;support&#x27;, or &#x27;finance&#x27;. The user&#x27;s question is: {question}&quot;&quot;&quot;,
+        description="""You are a query routing expert. Your only job is to analyze questions and determine which database they should be routed to.
+        You must respond with exactly one of these three options: 'products', 'support', or 'finance'. The user's question is: {question}""",
         instructions=[
-            &quot;Follow these rules strictly:&quot;,
-            &quot;1. For questions about products, features, specifications, or item details, or product manuals → return &#x27;products&#x27;&quot;,
-            &quot;2. For questions about help, guidance, troubleshooting, or customer service, FAQ, or guides → return &#x27;support&#x27;&quot;,
-            &quot;3. For questions about costs, revenue, pricing, or financial data, or financial reports and investments → return &#x27;finance&#x27;&quot;,
-            &quot;4. Return ONLY the database name, no other text or explanation&quot;,
-            &quot;5. If you&#x27;re not confident about the routing, return an empty response&quot;
+            "Follow these rules strictly:",
+            "1. For questions about products, features, specifications, or item details, or product manuals → return 'products'",
+            "2. For questions about help, guidance, troubleshooting, or customer service, FAQ, or guides → return 'support'",
+            "3. For questions about costs, revenue, pricing, or financial data, or financial reports and investments → return 'finance'",
+            "4. Return ONLY the database name, no other text or explanation",
+            "5. If you're not confident about the routing, return an empty response"
         ],
         markdown=False,
         show_tool_calls=False
     )
 
-def route_query(question: str) -&gt; Optional[DatabaseType]:
-    &quot;&quot;&quot;Route query by searching all databases and comparing relevance scores.
-    Returns None if no suitable database is found.&quot;&quot;&quot;
+def route_query(question: str) -> Optional[DatabaseType]:
+    """Route query by searching all databases and comparing relevance scores.
+    Returns None if no suitable database is found."""
     try:
         best_score = -1
         best_db_type = None
@@ -179,16 +182,16 @@ def route_query(question: str) -&gt; Optional[DatabaseType]:
                 avg_score = sum(score for _, score in results) / len(results)
                 all_scores[db_type] = avg_score
                 
-                if avg_score &gt; best_score:
+                if avg_score > best_score:
                     best_score = avg_score
                     best_db_type = db_type
         
         confidence_threshold = 0.5
-        if best_score &gt;= confidence_threshold and best_db_type:
-            st.success(f&quot;Using vector similarity routing: {best_db_type} (confidence: {best_score:.3f})&quot;)
+        if best_score >= confidence_threshold and best_db_type:
+            st.success(f"Using vector similarity routing: {best_db_type} (confidence: {best_score:.3f})")
             return best_db_type
             
-        st.warning(f&quot;Low confidence scores (below {confidence_threshold}), falling back to LLM routing&quot;)
+        st.warning(f"Low confidence scores (below {confidence_threshold}), falling back to LLM routing")
         
         # Fallback to LLM routing
         routing_agent = create_routing_agent()
@@ -197,30 +200,30 @@ def route_query(question: str) -&gt; Optional[DatabaseType]:
         db_type = (response.content
                   .strip()
                   .lower()
-                  .translate(str.maketrans(&#x27;&#x27;, &#x27;&#x27;, &#x27;`\&#x27;&quot;&#x27;)))
+                  .translate(str.maketrans('', '', '`\'"')))
         
         if db_type in COLLECTIONS:
-            st.success(f&quot;Using LLM routing decision: {db_type}&quot;)
+            st.success(f"Using LLM routing decision: {db_type}")
             return db_type
             
-        st.warning(&quot;No suitable database found, will use web search fallback&quot;)
+        st.warning("No suitable database found, will use web search fallback")
         return None
         
     except Exception as e:
-        st.error(f&quot;Routing error: {str(e)}&quot;)
+        st.error(f"Routing error: {str(e)}")
         return None
 
 def create_fallback_agent(chat_model: BaseLanguageModel):
-    &quot;&quot;&quot;Create a LangGraph agent for web research.&quot;&quot;&quot;
+    """Create a LangGraph agent for web research."""
     
-    def web_research(query: str) -&gt; str:
-        &quot;&quot;&quot;Web search with result formatting.&quot;&quot;&quot;
+    def web_research(query: str) -> str:
+        """Web search with result formatting."""
         try:
             search = DuckDuckGoSearchRun(num_results=5)
             results = search.run(query)
             return results
         except Exception as e:
-            return f&quot;Search failed: {str(e)}. Providing answer based on general knowledge.&quot;
+            return f"Search failed: {str(e)}. Providing answer based on general knowledge."
 
     tools = [web_research]
     
@@ -230,12 +233,12 @@ def create_fallback_agent(chat_model: BaseLanguageModel):
     
     return agent
 
-def query_database(db: Qdrant, question: str) -&gt; tuple[str, list]:
-    &quot;&quot;&quot;Query the database and return answer and relevant documents&quot;&quot;&quot;
+def query_database(db: Qdrant, question: str) -> tuple[str, list]:
+    """Query the database and return answer and relevant documents"""
     try:
         retriever = db.as_retriever(
-            search_type=&quot;similarity&quot;,
-            search_kwargs={&quot;k&quot;: 4}
+            search_type="similarity",
+            search_kwargs={"k": 4}
         )
 
         relevant_docs = retriever.get_relevant_documents(question)
@@ -243,77 +246,77 @@ def query_database(db: Qdrant, question: str) -&gt; tuple[str, list]:
         if relevant_docs:
             # Use simpler chain creation with hub prompt
             retrieval_qa_prompt = ChatPromptTemplate.from_messages([
-                (&quot;system&quot;, &quot;&quot;&quot;You are a helpful AI assistant that answers questions based on provided context.
+                ("system", """You are a helpful AI assistant that answers questions based on provided context.
                              Always be direct and concise in your responses.
-                             If the context doesn&#x27;t contain enough information to fully answer the question, acknowledge this limitation.
-                             Base your answers strictly on the provided context and avoid making assumptions.&quot;&quot;&quot;),
-                (&quot;human&quot;, &quot;Here is the context:\n{context}&quot;),
-                (&quot;human&quot;, &quot;Question: {input}&quot;),
-                (&quot;assistant&quot;, &quot;I&#x27;ll help answer your question based on the context provided.&quot;),
-                (&quot;human&quot;, &quot;Please provide your answer:&quot;),
+                             If the context doesn't contain enough information to fully answer the question, acknowledge this limitation.
+                             Base your answers strictly on the provided context and avoid making assumptions."""),
+                ("human", "Here is the context:\n{context}"),
+                ("human", "Question: {input}"),
+                ("assistant", "I'll help answer your question based on the context provided."),
+                ("human", "Please provide your answer:"),
             ])
             combine_docs_chain = create_stuff_documents_chain(st.session_state.llm, retrieval_qa_prompt)
             retrieval_chain = create_retrieval_chain(retriever, combine_docs_chain)
             
-            response = retrieval_chain.invoke({&quot;input&quot;: question})
-            return response[&#x27;answer&#x27;], relevant_docs
+            response = retrieval_chain.invoke({"input": question})
+            return response['answer'], relevant_docs
         
-        raise ValueError(&quot;No relevant documents found in database&quot;)
+        raise ValueError("No relevant documents found in database")
 
     except Exception as e:
-        st.error(f&quot;Error: {str(e)}&quot;)
-        return &quot;I encountered an error. Please try rephrasing your question.&quot;, []
+        st.error(f"Error: {str(e)}")
+        return "I encountered an error. Please try rephrasing your question.", []
     
-def _handle_web_fallback(question: str) -&gt; tuple[str, list]:
-    st.info(&quot;No relevant documents found. Searching web...&quot;)
+def _handle_web_fallback(question: str) -> tuple[str, list]:
+    st.info("No relevant documents found. Searching web...")
     fallback_agent = create_fallback_agent(st.session_state.llm)
     
-    with st.spinner(&#x27;Researching...&#x27;):
+    with st.spinner('Researching...'):
         agent_input = {
-            &quot;messages&quot;: [
-                HumanMessage(content=f&quot;Research and provide a detailed answer for: &#x27;{question}&#x27;&quot;)
+            "messages": [
+                HumanMessage(content=f"Research and provide a detailed answer for: '{question}'")
             ],
-            &quot;is_last_step&quot;: False
+            "is_last_step": False
         }
         
         try:
-            response = fallback_agent.invoke(agent_input, config={&quot;recursion_limit&quot;: 100})
-            if isinstance(response, dict) and &quot;messages&quot; in response:
-                answer = response[&quot;messages&quot;][-1].content
-                return f&quot;Web Search Result:\n{answer}&quot;, []
+            response = fallback_agent.invoke(agent_input, config={"recursion_limit": 100})
+            if isinstance(response, dict) and "messages" in response:
+                answer = response["messages"][-1].content
+                return f"Web Search Result:\n{answer}", []
                 
         except Exception:
             # Fallback to general LLM response
             fallback_response = st.session_state.llm.invoke(question).content
-            return f&quot;Web search unavailable. General response: {fallback_response}&quot;, []
+            return f"Web search unavailable. General response: {fallback_response}", []
 
 def main():
-    &quot;&quot;&quot;Main application function.&quot;&quot;&quot;
-    st.set_page_config(page_title=&quot;RAG Agent with Database Routing&quot;, page_icon=&quot;📚&quot;)
-    st.title(&quot;📠 RAG Agent with Database Routing&quot;)
+    """Main application function."""
+    st.set_page_config(page_title="RAG Agent with Database Routing", page_icon="📚")
+    st.title("📠 RAG Agent with Database Routing")
     
     # Sidebar for API keys and configuration
     with st.sidebar:
-        st.header(&quot;Configuration&quot;)
+        st.header("Configuration")
         
         # OpenAI API Key
         api_key = st.text_input(
-            &quot;Enter OpenAI API Key:&quot;,
-            type=&quot;password&quot;,
+            "Enter OpenAI API Key:",
+            type="password",
             value=st.session_state.openai_api_key,
-            key=&quot;api_key_input&quot;
+            key="api_key_input"
         )
         
         # Qdrant Configuration
         qdrant_url = st.text_input(
-            &quot;Enter Qdrant URL:&quot;,
+            "Enter Qdrant URL:",
             value=st.session_state.qdrant_url,
-            help=&quot;Example: https://your-cluster.qdrant.tech&quot;
+            help="Example: https://your-cluster.qdrant.tech"
         )
         
         qdrant_api_key = st.text_input(
-            &quot;Enter Qdrant API Key:&quot;,
-            type=&quot;password&quot;,
+            "Enter Qdrant API Key:",
+            type="password",
             value=st.session_state.qdrant_api_key
         )
         
@@ -330,31 +333,31 @@ def main():
             st.session_state.qdrant_url and 
             st.session_state.qdrant_api_key):
             if initialize_models():
-                st.success(&quot;Connected to OpenAI and Qdrant successfully!&quot;)
+                st.success("Connected to OpenAI and Qdrant successfully!")
             else:
-                st.error(&quot;Failed to initialize. Please check your credentials.&quot;)
+                st.error("Failed to initialize. Please check your credentials.")
         else:
-            st.warning(&quot;Please enter all required credentials to continue&quot;)
+            st.warning("Please enter all required credentials to continue")
             st.stop()
 
-        st.markdown(&quot;---&quot;)
+        st.markdown("---")
 
-    st.header(&quot;Document Upload&quot;)
-    st.info(&quot;Upload documents to populate the databases. Each tab corresponds to a different database.&quot;)
+    st.header("Document Upload")
+    st.info("Upload documents to populate the databases. Each tab corresponds to a different database.")
     tabs = st.tabs([collection_config.name for collection_config in COLLECTIONS.values()])
     
     for (collection_type, collection_config), tab in zip(COLLECTIONS.items(), tabs):
         with tab:
             st.write(collection_config.description)
             uploaded_files = st.file_uploader(
-                f&quot;Upload PDF documents to {collection_config.name}&quot;,
-                type=&quot;pdf&quot;,
-                key=f&quot;upload_{collection_type}&quot;,
+                f"Upload PDF documents to {collection_config.name}",
+                type="pdf",
+                key=f"upload_{collection_type}",
                 accept_multiple_files=True  
             )
             
             if uploaded_files:
-                with st.spinner(&#x27;Processing documents...&#x27;):
+                with st.spinner('Processing documents...'):
                     all_texts = []
                     for uploaded_file in uploaded_files:
                         texts = process_document(uploaded_file)
@@ -363,31 +366,31 @@ def main():
                     if all_texts:
                         db = st.session_state.databases[collection_type]
                         db.add_documents(all_texts)
-                        st.success(&quot;Documents processed and added to the database!&quot;)
+                        st.success("Documents processed and added to the database!")
     
     # Query section
-    st.header(&quot;Ask Questions&quot;)
-    st.info(&quot;Enter your question below to find answers from the relevant database.&quot;)
-    question = st.text_input(&quot;Enter your question:&quot;)
+    st.header("Ask Questions")
+    st.info("Enter your question below to find answers from the relevant database.")
+    question = st.text_input("Enter your question:")
     
     if question:
-        with st.spinner(&#x27;Finding answer...&#x27;):
+        with st.spinner('Finding answer...'):
             # Route the question
             collection_type = route_query(question)
             
             if collection_type is None:
                 # Use web search fallback directly
                 answer, relevant_docs = _handle_web_fallback(question)
-                st.write(&quot;### Answer (from web search)&quot;)
+                st.write("### Answer (from web search)")
                 st.write(answer)
             else:
                 # Display routing information and query the database
-                st.info(f&quot;Routing question to: {COLLECTIONS[collection_type].name}&quot;)
+                st.info(f"Routing question to: {COLLECTIONS[collection_type].name}")
                 db = st.session_state.databases[collection_type]
                 answer, relevant_docs = query_database(db, question)
-                st.write(&quot;### Answer&quot;)
+                st.write("### Answer")
                 st.write(answer)
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```

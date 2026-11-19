@@ -1,3 +1,4 @@
+
 # 浙江大学DeepSeek通识课
 
 > 来源：[https://datawhaler.feishu.cn/docx/EmOnd3C5QohJfox9ZhscxsERngb](https://datawhaler.feishu.cn/docx/EmOnd3C5QohJfox9ZhscxsERngb)
@@ -11,7 +12,7 @@
 | 公开课期数 | 课程主题 | 授课人 | 点击开始学习 |
 | --- | --- | --- | --- |
 | 公开课第一期 | 《DeepSeek：回望AI三大主义与加强通识教育》 | **吴飞** | [DeepSeek：AI三大主义 &amp; 通识教育](https://datawhaler.feishu.cn/wiki/BX1Ww3pmPijrHNkdMYkcDy4rnof) |
-|  | **《Chatting or Acting? -DeepSe**ek的突破边界与“浙大先生”的未来图景》 | **陈文智** | [DeepSeek：创新性分析 &amp; 浙大先生案例](https://datawhaler.feishu.cn/wiki/N3ChwapsgiGs1mkdX66cddlenVc) |
+|  | **《Chatting or Acting? -DeepSeek的突破边界与“浙大先生”的未来图景》** | **陈文智** | [DeepSeek：创新性分析 &amp; 浙大先生案例](https://datawhaler.feishu.cn/wiki/N3ChwapsgiGs1mkdX66cddlenVc) |
 | 公开课第二期 | 《DeepSeek：智能时代的全面到来和人机协作的新常态》 | **孙凌云** | [DeepSeek：AI智能演变 &amp; 人机协作实例和前景](https://datawhaler.feishu.cn/wiki/RXJNwqdf7isnXSktYLQcfJjqnIg) |
 |  | 《DeepSeek模型优势：算力、成本角度解读》 | **王则可** | [DeepSeek：算力和成本方面的优势](https://datawhaler.feishu.cn/wiki/KjhYwnjZ1iHfVckZWGtc7Z7Dnoj) |
 | 公开课第三期 | 《走向数字社会：从DeepSeek到群体智慧》 | **吴超** | [DeepSeek：数字社会发展史](https://datawhaler.feishu.cn/wiki/U1N5wjbt6iPnBXkJFfNcYPhjnmb) |

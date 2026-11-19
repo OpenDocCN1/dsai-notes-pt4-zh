@@ -1,12 +1,11 @@
+
 # L1G4- InternLM 论文分类微调实践（Ascend+XTuner 版）
 
 > 来源：[https://aicarrier.feishu.cn/docx/NL🐧dXS2poHCMaxgnEzc5H2XnAg](https://aicarrier.feishu.cn/docx/NL🐧dXS2poHCMaxgnEzc5H2XnAg)
 
 ![](img/4019960d461ac99511d8bf3d826151b7.png)
 
-🔥练习赛提交入口：
-
-🚀
+🔥练习赛提交入口：🚀
 
 # 环境要求
 
@@ -30,17 +29,17 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ## 创建OpenI云脑体验NPU
 
-第一步：页面右上角【创建云脑任务】
+### 第一步：页面右上角【创建云脑任务】
 
 ![](img/bd64141e134e196057b4dcf094ab5650.png)
 
-**第二步：填写相关信息**
+### 第二步：填写相关信息
 
 【所属项目】：新建项目，项目名任意
 
 ![](img/b3c99b566a7d89556a60295a8b062c73.png)
 
-**第三步：设置调试任务参数**
+### 第三步：设置调试任务参数
 
 ![](img/142605687232c01dd400f5e2cb6e9a18.png)
 
@@ -50,11 +49,11 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 计算资源：【昇腾NPU】
 
-**资源规格：NPU：Ascend-D910B(显存:64**GB) CPU:24,内存: 192GB
+**资源规格：** NPU：Ascend-D910B(显存:64GB) CPU:24,内存: 192GB
 
 任务名称：任意
 
-**第四步：选择镜像**
+### 第四步：选择镜像
 
 点击【镜像】右面【选择镜像】然后选择【openmind_cann8】这个镜像点右面的【使用】即可
 
@@ -62,7 +61,7 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/df1acc4259aa8c8f0df2bc2399dd4ac7.png)
 
-**第五步：选择模型**
+### 第五步：选择模型
 
 找到【选择模型】-【公开模型】-搜索框内输入【internlm2_5】出来的列表里选择【internlm2_5-7b-chat】，全都选择完毕后点【确定】
 
@@ -76,7 +75,7 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/97634d44c0e6b47499a557dbce017c56.png)
 
-**第六步：开始调试**
+### 第六步：开始调试
 
 任务状态变为【Runing】后点【调试】就可以开始体验操作了
 
@@ -84,19 +83,19 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/b98142efca4db4791351c14f253456a1.png)
 
-Tips：启智社区的调试任务单次运行只能4小时，另外除了/home/ma-user/work目录下的文件在环境结束后都会恢复。
+Tips：启智社区的调试任务单次运行只能4小时，另外除了`/home/ma-user/work`目录下的文件在环境结束后都会恢复。
 
 # 环境安装
 
 ## 创建Conda环境
 
 ```
-conda create -n internlm  python=3.10 -y
+conda create -n internlm python=3.10 -y
 conda activate internlm
 pip install torch==2.3.1 torch-npu==2.3.1 torchaudio==2.3.1 torchvision
 ```
 
-**Tips：因为启智社区环境关机后/home/ma-user/work目录****外的文件会被还原，所以如果想****后面**继续使用这个调试任务又不想多花一点时间重新配置环境的话可以在创建conda环境的时候使用以下命令，关机后再开直接执行conda activate即可
+**Tips：** 因为启智社区环境关机后`/home/ma-user/work`目录外的文件会被还原，所以如果想后面继续使用这个调试任务又不想多花一点时间重新配置环境的话可以在创建conda环境的时候使用以下命令，关机后再开直接执行`conda activate`即可
 
 ```
 conda create -p /home/ma-user/work/anaconda/internlm python=3.10 -y
@@ -137,12 +136,12 @@ conda install mpi4py
 cd ../xtuner/
 # 删除requirements/runtime.txt中的第一行bitsandbytes==0.45.0
 # 删除requirements.txt文件中的-r requirements/deepspeed.txt 这一行
-pip install -e &#x27;.[all]&#x27;
+pip install -e '.[all]'
 ```
 
 ## 将模型导入到容器内
 
-**这**一步建议第一次创建好云脑任务启动完成就执行好，以免后面模型如果有更新，可能会出现只有部分文件同步到容器中的情况。
+这一步建议第一次创建好云脑任务启动完成就执行好，以免后面模型如果有更新，可能会出现只有部分文件同步到容器中的情况。
 
 ```
 # 导入包
@@ -151,11 +150,11 @@ from c2net.context import prepare, upload_output
 c2net_context = prepare()
 ```
 
-**如果遇到没有成功加载模型的话，可以看下notebook用的**kernel是不是【MindSpore】
+如果遇到没有成功加载模型的话，可以看下notebook用的kernel是不是【MindSpore】
 
 ![](img/3fce4d70622282d495b48097ccadde36.png)
 
-模型导入到容器内会存放在该路径下：/home/ma-user/work/pretrainmodel
+模型导入到容器内会存放在该路径下：`/home/ma-user/work/pretrainmodel`
 
 ## 验证XTuner
 
@@ -169,7 +168,7 @@ xtuner list-cfg |grep internlm2_5
 
 ## 复制配置文件
 
-找到 internlm2_5_chat_7b_qlora_alpaca_e3，然后复制到config/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py
+找到 `internlm2_5_chat_7b_qlora_alpaca_e3`，然后复制到 `config/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py`
 
 ```
 mkdir config
@@ -186,13 +185,13 @@ modelscope download --dataset JimmyMa99/smartflow-arxiv-dataset --local_dir ./da
 
 关于数据详情参考[InternLM论文分类微调实践（swift 版）](https://vwpecqie443.feishu.cn/wiki/AdRfwyZfWiJPJJkwnhucGavSnBe)数据部分
 
-原本的数据是swift版本，因此需要创建一个数据集转换脚本convert_to_alpaca.py
+原本的数据是`swift`版本，因此需要创建一个数据集转换脚本`convert_to_alpaca.py`
 
 ```
 touch convert_to_alpaca.py
 ```
 
-数据集转换脚本convert_to_alpaca.py代码如下
+数据集转换脚本`convert_to_alpaca.py`代码如下
 
 ```
 import json
@@ -201,78 +200,78 @@ import argparse
 
 
 def convert_to_alpaca_format(input_file, output_file):
-    &quot;&quot;&quot;
+    """
     将 Swift 格式的数据转换为 Alpaca 格式
 
     输入格式:
     {
-        &quot;system&quot;: &quot;你是个优秀的论文分类师&quot;,
-        &quot;conversation&quot;: [
+        "system": "你是个优秀的论文分类师",
+        "conversation": [
             {
-                &quot;human&quot;: &quot;Based on the title...&quot;,
-                &quot;assistant&quot;: &quot;D&quot;
+                "human": "Based on the title...",
+                "assistant": "D"
             }
         ]
     }
 
     输出格式 (Alpaca):
     {
-        &quot;instruction&quot;: &quot;根据论文的标题、作者和摘要，确定该论文的科学类别。&quot;,
-        &quot;input&quot;: &quot;Based on the title...&quot;,
-        &quot;output&quot;: &quot;D&quot;
+        "instruction": "根据论文的标题、作者和摘要，确定该论文的科学类别。",
+        "input": "Based on the title...",
+        "output": "D"
     }
-    &quot;&quot;&quot;
-    print(f&quot;转换数据: {input_file} -&gt; {output_file}&quot;)
+    """
+    print(f"转换数据: {input_file} -> {output_file}")
 
     converted_data = []
-    with open(input_file, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         for line in f:
             try:
                 data = json.loads(line.strip())
 
                 # 检查数据结构
-                if &quot;system&quot; not in data or &quot;conversation&quot; not in data:
-                    print(f&quot;警告: 数据缺少必要字段: {data}&quot;)
+                if "system" not in data or "conversation" not in data:
+                    print(f"警告: 数据缺少必要字段: {data}")
                     continue
 
                 # 从 system 提取指令
-                instruction = data.get(&quot;system&quot;, &quot;&quot;)
+                instruction = data.get("system", "")
                 if not instruction:
-                    instruction = &quot;根据论文的标题、作者和摘要，确定该论文的科学类别。&quot;
+                    instruction = "根据论文的标题、作者和摘要，确定该论文的科学类别。"
 
                 # 处理对话
-                for turn in data[&quot;conversation&quot;]:
-                    if &quot;human&quot; in turn and &quot;assistant&quot; in turn:
+                for turn in data["conversation"]:
+                    if "human" in turn and "assistant" in turn:
                         # 创建新的 Alpaca 格式数据
                         new_data = {
-                            &quot;instruction&quot;: instruction,
-                            &quot;input&quot;: turn[&quot;human&quot;],
-                            &quot;output&quot;: turn[&quot;assistant&quot;],
+                            "instruction": instruction,
+                            "input": turn["human"],
+                            "output": turn["assistant"],
                         }
                         converted_data.append(new_data)
 
             except json.JSONDecodeError:
-                print(f&quot;警告: 无法解析JSON行: {line}&quot;)
+                print(f"警告: 无法解析JSON行: {line}")
             except Exception as e:
-                print(f&quot;处理行时发生错误: {str(e)}&quot;)
+                print(f"处理行时发生错误: {str(e)}")
 
     # 写入输出文件
-    with open(output_file, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         for item in converted_data:
-            f.write(json.dumps(item, ensure_ascii=False) + &quot;\n&quot;)
+            f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-    print(f&quot;转换完成! 共转换 {len(converted_data)} 条数据&quot;)
+    print(f"转换完成! 共转换 {len(converted_data)} 条数据")
 
 
-if __name__ == &quot;__main__&quot;:
-    parser = argparse.ArgumentParser(description=&quot;转换数据到Alpaca格式&quot;)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="转换数据到Alpaca格式")
     parser.add_argument(
-        &quot;--input&quot;,
+        "--input",
         type=str,
         required=True,
-        help=&quot;输入文件路径 (swift_formatted_sft_train_data.jsonl)&quot;,
+        help="输入文件路径 (swift_formatted_sft_train_data.jsonl)",
     )
-    parser.add_argument(&quot;--output&quot;, type=str, required=True, help=&quot;输出文件路径&quot;)
+    parser.add_argument("--output", type=str, required=True, help="输出文件路径")
 
     args = parser.parse_args()
     convert_to_alpaca_format(args.input, args.output)
@@ -292,20 +291,20 @@ python convert_to_alpaca.py --input datasets/smartflow-arxiv-dataset/swift_forma
 ln -s /home/ma-user/work/pretrainmodel/internlm2_5-7b-chat ./
 ```
 
-## 修改 config文件internlm2_5_chat_7b_qlora_alpaca_e3.py
+## 修改 config文件`internlm2_5_chat_7b_qlora_alpaca_e3.py`
 
 ```
 # 第34行修改为模型地址
-pretrained_model_name_or_path = &quot;internlm2_5-7b-chat&quot;
+pretrained_model_name_or_path = "internlm2_5-7b-chat"
 
 # 第38行修改为数据集地址
-- alpaca_en_path = &quot;tatsu-lab/alpaca&quot;
-+ alpaca_en_path = &quot;datasets/sftdata.jsonl&quot;
+- alpaca_en_path = "tatsu-lab/alpaca"
++ alpaca_en_path = "datasets/sftdata.jsonl"
 
 # 第110行-121行替换为下面这段
 alpaca_en = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=alpaca_en_path),
+    dataset=dict(type=load_dataset, path='json', data_files=alpaca_en_path),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=alpaca_map_fn,
@@ -319,14 +318,17 @@ alpaca_en = dict(
 
 在NPU上微调暂时还需要修改以下两段代码
 
-```
+
+
 # 代码头引入库的部分
+
+```diff
 - from transformers import (AutoModelForCausalLM, AutoTokenizer,
                           BitsAndBytesConfig)
 + from transformers import (AutoModelForCausalLM, AutoTokenizer)
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 
 # 第86行左右删除
@@ -338,30 +340,30 @@ alpaca_en = dict(
 -            llm_int8_has_fp16_weight=False,
 -            bnb_4bit_compute_dtype=torch.float16,
 -            bnb_4bit_use_double_quant=True,
--            bnb_4bit_quant_type=&#x27;nf4&#x27;)
+-            bnb_4bit_quant_type='nf4')
 ```
 
 ## 启动微调训练
 
-```
+```bash
 xtuner train config/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py --deepspeed deepspeed_zero1
 ```
 
 ## 模型格式转换
 
-```
+```bash
 xtuner convert pth_to_hf ./config/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py ${pth_file} ./hf #pth_file位置填写训练后保存的权重地址,取最后一个iter开头的文件夹即可，一般在work_dir目录下
 ```
 
 ## 模型合并
 
-```
+```bash
 xtuner convert merge ./internlm2_5-7b-chat ./hf ./merged --max-shard-size 2GB --device npu
 ```
 
-**如果**模型使用的不是InternLM2.5而是InternLM3-8B的话，模型合并完毕后看一下merged目录下有没有一个modeling_internlm3.py。如果没有的话需要手动复制到合并后的目录下
+如果模型使用的不是InternLM2.5而是InternLM3-8B的话，模型合并完毕后看一下`merged`目录下有没有一个`modeling_internlm3.py`。如果没有的话需要手动复制到合并后的目录下
 
-```
+```bash
 cp -r ./internlm3-8b-instruct/modeling_internlm3.py ./merged
 ```
 
@@ -369,64 +371,64 @@ cp -r ./internlm3-8b-instruct/modeling_internlm3.py ./merged
 
 ## 前置条件
 
-获取hub_model_id和hub_token
+获取`hub_model_id`和`hub_token`
 
-hub_model_id 获取（红框部分）
+`hub_model_id` 获取（红框部分）
 
 ![](img/b1862c412bef8dedd805f6f38490e152.png)
 
-hub_token 获取：【账号设置】-【访问令牌】复制SDK/API令牌即可
+`hub_token` 获取：【账号设置】-【访问令牌】复制SDK/API令牌即可
 
 ![](img/89734b33d02b0f1ca0b46bb17911d2d8.png)
 
 ## 上传模型到modelscope
 
-因为openi环境无法安装git-lfs，所以只能使用modelscope库进行模型的上传
+因为`openi`环境无法安装`git-lfs`，所以只能使用`modelscope`库进行模型的上传
 
-创建一个上传的python脚本upload.py
+创建一个上传的`python`脚本`upload.py`
 
-```
+```bash
 cd ~/work
 touch upload.py
 ```
 
 代码脚本如下：
 
-```
+```python
 from modelscope.hub.api import HubApi
 from modelscope.hub.constants import Licenses, ModelVisibility
 
-YOUR_ACCESS_TOKEN = &#x27;你的ACCESS_TOKEN&#x27;   #需要手动修改，获取地址https://www.modelscope.cn/my/myaccesstoken
+YOUR_ACCESS_TOKEN = '你的ACCESS_TOKEN'   #需要手动修改，获取地址https://www.modelscope.cn/my/myaccesstoken
 api = HubApi()
 api.login(YOUR_ACCESS_TOKEN)
 
-owner_name = &#x27;你的用户名&#x27;   #需要手动修改
-model_name = &#x27;模型名称&#x27;     #需要手动修改
-model_id = f&quot;{owner_name}/{model_name}&quot;
+owner_name = '你的用户名'   #需要手动修改
+model_name = '模型名称'     #需要手动修改
+model_id = f"{owner_name}/{model_name}"
 
 api.create_model(
     model_id,
     visibility=ModelVisibility.PUBLIC,
     license=Licenses.APACHE_V2,
-    chinese_name=&quot;模型中文名&quot;   #需要手动修改，写英文的也没事
+    chinese_name="模型中文名"   #需要手动修改，写英文的也没事
 )
 
 api.upload_folder(
-    repo_id=f&quot;{owner_name}/{model_name}&quot;, #前面获取的hub_model_id
-    folder_path=&#x27;xtuner/merged&#x27;,  #合并以后的模型目录
-    commit_message=&#x27;upload model folder to repo&#x27;, #commit信息随便填
+    repo_id=f"{owner_name}/{model_name}", #前面获取的hub_model_id
+    folder_path='xtuner/merged',  #合并以后的模型目录
+    commit_message='upload model folder to repo', #commit信息随便填
 )
 ```
 
 执行上传脚本
 
-```
+```bash
 cd ~/work
 python upload.py
 ```
 
 提交以后等更新即可
 
-提交表单：https://aicarrier.feishu.cn/share/base/form/shrcn0JkjbZKMeMPw04uHCWc5Pg
+提交表单：`https://aicarrier.feishu.cn/share/base/form/shrcn0JkjbZKMeMPw04uHCWc5Pg`
 
-成绩表单：https://aicarrier.feishu.cn/share/base/dashboard/shrcnqpXY6Uy9FodNF3It75GSNe?iframeFrom=docx&ccm_open=iframe
+成绩表单：`https://aicarrier.feishu.cn/share/base/dashboard/shrcnqpXY6Uy9FodNF3It75GSNe?iframeFrom=docx&ccm_open=iframe`

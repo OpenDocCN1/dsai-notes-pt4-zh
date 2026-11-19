@@ -1,3 +1,4 @@
+
 # MCP应用案例1：百度地图+MCP
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/OyM5dPUPJogaEHxt1UNcVTfWnMc](https://v11enp9ok1h.feishu.cn/docx/OyM5dPUPJogaEHxt1UNcVTfWnMc)
@@ -6,7 +7,7 @@
 
 > **概述**
 
-> 百度地图API现已全面兼[容MCP协](https://modelcontextprotocol.io/)议，是国内首家兼容MCP协议的地图服务商。
+> 百度地图API现已全面兼容MCP协议，是国内首家兼容MCP协议的地图服务商。
 
 > 依赖MCP Python SDK和MCP Typescript SDK开发，任意支持MCP协议的智能体助手（如Claude、Cursor以及千帆AppBuilder等）都可以快速接入。
 
@@ -34,11 +35,11 @@
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;playwright&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;@playwright/mcp@latest&quot;
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
       ]
     }
   }
@@ -57,19 +58,19 @@
 
 ![](img/0fcff3cf59a408d88ca8c1ae0760da09.png)
 
-将下面的json复制粘贴到MCP配置文件中，把KEY换成你自己的KEY
+将下面的`json`复制粘贴到MCP配置文件中，把`KEY`换成你自己的`KEY`
 
 ```
 {
-    &quot;mcpServers&quot;: {
-        &quot;baidu-map&quot;: {
-            &quot;command&quot;: &quot;npx&quot;,
-            &quot;args&quot;: [
-                &quot;-y&quot;,
-                &quot;@baidumap/mcp-server-baidu-map&quot;
+    "mcpServers": {
+        "baidu-map": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@baidumap/mcp-server-baidu-map"
             ],
-            &quot;env&quot;
-           &quot;BAIDU_MAP_API_KEY&quot;: &quot;UCyWCyjgnuXKrQMngmXXXXXXX&quot;
+            "env": {
+                "BAIDU_MAP_API_KEY": "UCyWCyjgnuXKrQMngmXXXXXXX"
             }
         }
     }
@@ -84,7 +85,7 @@
 
 ![](img/f08aa03796d693338716d06aa6bd23f0.png)
 
-# 方式二：在MCP客户端软件Cursor中调用
+## 方式二：在MCP客户端软件Cursor中调用
 
 ### 配置MCP客户端软件Cursor
 
@@ -102,15 +103,15 @@
 
 ![](img/293a6f7eeee2861cf6c144babc7923d6.png)
 
-填入MCP Server的json，保存
+填入`MCP Server`的`json`，保存
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;playwright&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;@playwright/mcp@latest&quot;
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
       ]
     }
   }
@@ -125,7 +126,7 @@
 
 ### 使用MCP
 
-Ctrl+Shift+L新建对话，将模式设置为Agent
+`Ctrl+Shift+L`新建对话，将模式设置为`Agent`
 
 ![](img/41124b2e6257c620abf1562faa228414.png)
 
@@ -135,16 +136,16 @@ Ctrl+Shift+L新建对话，将模式设置为Agent
 
 ![](img/5d8215bff957cb3c6e396c9a5da8ed93.png)
 
-将下面的json填入，把BAIDU_MAPS_API_KEY换成你自己的Key，保存。
+将下面的`json`填入，把`BAIDU_MAPS_API_KEY`换成你自己的`Key`，保存。
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;baidu-maps&quot;: {
-      &quot;command&quot;: &quot;uvx&quot;,
-      &quot;args&quot;: [&quot;mcp-server-baidu-maps&quot;],
-      &quot;env&quot;: {
-        &quot;BAIDU_MAPS_API_KEY&quot;: &quot;UCyWCyjgnuXKrQMngmJ5XXXXXXXX&quot;
+  "mcpServers": {
+    "baidu-maps": {
+      "command": "uvx",
+      "args": ["mcp-server-baidu-maps"],
+      "env": {
+        "BAIDU_MAPS_API_KEY": "UCyWCyjgnuXKrQMngmJ5XXXXXXXX"
       }
     }
   }
@@ -157,7 +158,7 @@ Ctrl+Shift+L新建对话，将模式设置为Agent
 
 ### 使用MCP服务
 
-Ctrl+Shift+L新建对话，将模式设置为Agent，选择支持MCP的大模型
+`Ctrl+Shift+L`新建对话，将模式设置为`Agent`，选择支持MCP的大模型
 
 ![](img/782ee61e5f5a1b1a4944c95c263e133d.png)
 

@@ -1,10 +1,11 @@
+
 # Ora.sh 目前看真好用
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/DGs2dcMFeoWRU4x71ykcZ1IWnCb](https://diwfpqo78m.feishu.cn/docx/DGs2dcMFeoWRU4x71ykcZ1IWnCb)
 
-# 一、登录 使用
+## 一、登录 使用
 
-这是我创建的，一起试试有没有次数上限：https://ora.sh/noisy-olive-a1hz/round-salmon-mqc7
+这是我创建的，一起试试有没有次数上限：`https://ora.sh/noisy-olive-a1hz/round-salmon-mqc7`
 
 原本是有2种方式，但目前只能用gmail直接登录
 
@@ -36,7 +37,7 @@
 
 ![](img/e9bab430e80064bbd8f7c35d756f92f6.png)
 
-# 二、其他人创建的Bot
+## 二、其他人创建的Bot
 
 重点来了，目前这个工具，可以直接浏览其他人创建的主题，可以借鉴思路，也可以直接用。
 
@@ -48,7 +49,7 @@
 
 ![](img/ba4fe47dcc6ab464c7bfa85a13ce0ba8.png)
 
-# 三、分享主题（免登录使用）
+## 三、分享主题（免登录使用）
 
 更重点、更神奇的是，主题可以直接分享链接，其他人无需登录就可以使用
 
@@ -64,7 +65,7 @@
 
 ![](img/cddfbc77d81b8f1944b27bfa7cd699a9.png)
 
-# 四、用来干啥
+## 四、用来干啥
 
 这工具，比网上那些试用几次就要付费的，香多了
 

@@ -1,3 +1,4 @@
+
 # 不懂ios编程的人，怎么才能做出一款小而美的APP?
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Esf9d94NUoav65xkjpUcBY0qnpf](https://xuqiwei1986.feishu.cn/docx/Esf9d94NUoav65xkjpUcBY0qnpf)
@@ -14,11 +15,6 @@
 
 而这是我花了5天(含工作日，实际更短)做出的app，功能有多样化日期记录、倒计时，事件时间线，准备清单，小组件，iCloud同步等一系列功能，我认为这应该算一个小而美的app了。所以我可以说，我做到了。
 
-
-
-
-
-
 ![](img/950efdb568f062a4bed50a65b4551f7b.png)
 
 目前app已上架app store, 有兴趣的圈友可以尝试一下，交个朋友，app叫：记痕
@@ -31,9 +27,9 @@
 
 在第一次尝试失败之后，我进行了以下思考
 
-+   我不知道AI到底有没有理解我在表达什么，AI虽然说他懂了，但实际结果却没懂
++ 我不知道AI到底有没有理解我在表达什么，AI虽然说他懂了，但实际结果却没懂
 
-+   我无法判断AI到底是在干活还是在糊弄我，结果就是在糊弄我，我除了骂他两句一点办法没有
++ 我无法判断AI到底是在干活还是在糊弄我，结果就是在糊弄我，我除了骂他两句一点办法没有
 
 所以我可以不会IOS编程，但我需要看懂AI在干嘛，这就像你不会做菜，但需要理解厨师在厨房里做什么，这样你才能对它指手画脚
 
@@ -43,15 +39,15 @@
 
 先说我的学习方法
 
-+   AI是最好的老师，我们要养成遇到问题就问AI的习惯，直到搞清楚为止
++ AI是最好的老师，我们要养成遇到问题就问AI的习惯，直到搞清楚为止
 
-+   当遇到AI陷入问题循环一直解决不了时，尝试与他沟通。
++ 当遇到AI陷入问题循环一直解决不了时，尝试与他沟通。
 
 如当我们说这个功能有问题，你帮我解决一下，它一直解决不了时。我们可以说，一般这样的功能我们会怎么实现它？和他聊完后：那你看看我们现在的实现方式是对的吗？
 
 或者你肯定也会有自己的思考，可以提醒他：那我们是不是搞错了，你看你说的是A，但你刚刚又在做B。
 
-+   技术来源生活，在学习的过程中，多让AI进行类比，借助你已有的知识理解新的知识。
++ 技术来源生活，在学习的过程中，多让AI进行类比，借助你已有的知识理解新的知识。
 
 如：这块知识我没理解，你可以举个生活中的例子吗？或者：这是不是就像..
 
@@ -117,11 +113,11 @@
 
 使用cursor开发ios需要安装一些插件
 
-1.  安装 [Swift](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang)、[CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) 插件
+1. 安装 [`Swift`](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang)、[`CodeLLDB`](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) 插件
 
-Swift 插件提供了 Swift 语言的基本支持， CodeLLDB 插件提供了调试功能。
+`Swift` 插件提供了 `Swift` 语言的基本支持，`CodeLLDB` 插件提供了调试功能。
 
-1.  安装 [SweetPad](https://marketplace.visualstudio.com/items?itemName=sweetpad.sweetpad) 插件
+2. 安装 [`SweetPad`](https://marketplace.visualstudio.com/items?itemName=sweetpad.sweetpad) 插件
 
 可用于配置在编辑器中代码格式化、调试等功能。
 
@@ -131,7 +127,7 @@ Swift 插件提供了 Swift 语言的基本支持， CodeLLDB 插件提供了调
 
 解决方法：
 
-安装xcode-build-server
+安装`xcode-build-server`
 
 ```
 brew install xcode-build-server
@@ -145,7 +141,7 @@ xcode-build-server config -project study.xcodeproj -scheme study
 
 > study是我的项目名，请替换成你的。
 
-如何使用SweetPod?
+如何使用`SweetPod`?
 
 在cursor左侧，将插件钉选到布局上，方便使用
 
@@ -163,17 +159,17 @@ xcode-build-server config -project study.xcodeproj -scheme study
 brew install swift-format
 ```
 
-打开cursor settings.json文件。
+打开`cursor` `settings.json`文件。
 
-快捷键 command + shift + p， 输入"打开用户设置"
+快捷键`command + shift + p`， 输入"打开用户设置"
 
 ![](img/bfa645c571ffafe5c05ced62a489d1fb.png)
 
 添加配置
 
 ```
-  &quot;[swift]&quot;: {
-    &quot;editor.defaultFormatter&quot;: &quot;swiftlang.swift-vscode&quot;
+  "[swift]": {
+    "editor.defaultFormatter": "swiftlang.swift-vscode"
   }
 ```
 
@@ -195,7 +191,7 @@ brew install swift-format
 
 设置方法如下
 
-1、打开appstore, 搜索InjectionIII安装
+1、打开`appstore`, 搜索`InjectionIII`安装
 
 ![](img/27c35c8e3f232e440017b906d4f48b15.png)
 
@@ -203,11 +199,11 @@ brew install swift-format
 
 ![](img/6c928c9fad2df4b39d95d2a3a37606fe.png)
 
-3、点击Prepare Project按钮
+3、点击`Prepare Project`按钮
 
 ![](img/ac8ca81fb15a8515a815b106ff3153a8.png)
 
-4、在xcode打开项目对应 Target 的设置 -> Build Settings -> 搜索 Other Linker Flags，分别添加 -Xlinker 和 -interposable
+4、在xcode打开项目对应 Target 的设置 -> `Build Settings` -> 搜索 `Other Linker Flags`，分别添加 `-Xlinker` 和 `-interposable`
 
 ![](img/051e67aafb5df5440fc620429dd2b41b.png)
 
@@ -225,7 +221,7 @@ brew install swift-format
 
 ![](img/563b285c4faf6ce1598dd78d917aeaf5.png)
 
-然后我让他将学习方案写到.cursorrules文件里(你懂的~）
+然后我让他将学习方案写到`.cursorrules`文件里(你懂的~）
 
 这是产出的学习方案，给大家参考一下，我认为还是很不错的
 
@@ -425,7 +421,7 @@ Ios app的最佳实践是什么呢？我也不知道，还是请出AI老师。�
 
 该开源项目和最新xcode创建的项目完全一致，我只需参考这样的目录结构进行开发就可以了
 
-> 我注意到项目都是大写字母开头的，为了更好的学习，我重新创建了一个TaskMaster的项目
+> 我注意到项目都是大写字母开头的，为了更好的学习，我重新创建了一个`TaskMaster`的项目
 
 ![](img/ac7b73b45a79291da239d342cb178d27.png)
 
@@ -455,21 +451,23 @@ AI写好之后，尝试运行看看效果
 
 这里我突发奇想，当我理解了这个知识点后，可能我过段时间就忘了，那我其实是可以让AI总结成文章转化成知识库的。
 
-> 好的，我现在理解了这一部分内容，感谢你的回答，请你帮我将这些知识点总结成一篇markdown格式的文章笔记，写到 @iosDoc 目录下
+> 好的，我现在理解了这一部分内容，感谢你的回答，请你帮我将这些知识点总结成一篇markdown格式的文章笔记，写到 `@iosDoc` 目录下
 
 ![](img/36e9aa32d98885b9f3f8f8e7f74cc182.png)
 
 ![](img/a1999457e0a41a13757d7c96d85df338.png)
 
-这里我花了断断续续好几天的时间，把第一阶段的所有代码都理清楚了，并让AI整理了好几篇文**档。这个过程因人而异，我在后面实践中发现，其实也不需要学的**这么仔细，还是那句话，你只要保证你能看懂厨师在做什么就行，又不是真要你炒菜。至于你能不能看懂，我相信你有自己的评判标准。
+这里我花了断断续续好几天的时间，把第一阶段的所有代码都理清楚了，并让AI整理了好几篇文档。这个过程因人而异，我在后面实践中发现，其实也不需要学的这么仔细，还是那句话，你只要保证你能看懂厨师在做什么就行，又不是真要你炒菜。至于你能不能看懂，我相信你有自己的评判标准。
 
 ![](img/2f6f650501a1f295871e36dccce4b7d7.png)
 
 这里的学习程度因人而异，我个人是喜欢把这些东西搞懂，所以花了很长时间。
 
+
+
 如果你只想知道每个功能在哪里，能简单明白AI在做什么，那不需要像我这样。
 
-#### 第二阶段
+## 第二阶段
 
 现在，让我们开始完成第二阶段任务详情与编辑的功能，请严格按照项目文件结构和swift语言规范编写代码。
 
@@ -481,7 +479,7 @@ AI写好之后，尝试运行看看效果
 
 ![](img/61c80cb268b1f74a02567ab3c8447264.png)
 
-#### 第三阶段
+## 第三阶段
 
 > 现在，让我们开始完成第三阶段分类与筛选的功能，请严格按照项目文件结构和swift语言规范编写代码。
 
@@ -493,7 +491,7 @@ AI写好之后，尝试运行看看效果
 
 ![](img/e37aeecf1fe05c1bd8fe7335646043f3.png)
 
-#### 第四阶段
+## 第四阶段
 
 > 现在，让我们开始完成第四阶段提醒与通知的功能，请严格按照项目文件结构和swift语言规范编写代码。
 
@@ -505,7 +503,7 @@ AI写好之后，尝试运行看看效果
 
 ![](img/ad2dfff71cdacf34ea24217acba61b27.png)
 
-#### 第五阶段
+## 第五阶段
 
 > 现在，让我们开始完成第五阶段：数据统计与分析的功能，请严格按照项目文件结构和swift语言规范编写代码。
 
@@ -521,12 +519,11 @@ AI写好之后，尝试运行看看效果
 
 ![](img/148f3091e6515e5010e0ec2734b76833.png)
 
-
 ![](img/edc9141d8a98c94dbb8f19e33e8cb4cc.png)
 
 ![](img/5fe02f4d267ca958aae64f4d66b9c58d.png)
 
-### 小结
+## 小结
 
 在整个过程中，我也在观察目前AI对项目的掌控力，会不会随着项目的复杂度增加而减少。
 
@@ -557,12 +554,12 @@ AI写好之后，尝试运行看看效果
 
 4、HTML原型实现：使用HTML + Tailwind CSS生成所有原型界面，使用JavaScript实现基本交互功能，包括页面跳转、表单操作和数据模拟。代码文件应清晰分离为HTML、CSS和JS。
 
-5、每个界面应作为独立的HTML文件存放，例如home.html、profile.html、settings.html, 使用index.html作为主入口，使用iframe方式嵌入这些HTML片段，并将所有页面平铺展示，方便整体预览, 每个独立页面之间应支持相互跳转，确保单独打开也能完整体验
+5、每个界面应作为独立的HTML文件存放，例如`home.html`、`profile.html`、`settings.html`，使用`index.html`作为主入口，使用`iframe`方式嵌入这些HTML片段，并将所有页面平铺展示，方便整体预览，每个独立页面之间应支持相互跳转，确保单独打开也能完整体验
 
 - 真实感增强：
   - 界面尺寸应模拟iPhone 15 Pro（393×852px），并应用圆角边框（20px）。
   - 选择与应用主题相关的图片，避免使用明显的占位图（如灰色块或标有&quot;image&quot;的框）
-  - 图标和UI元素可使用Font Awesome或Material Icons等专业图标库 (通过CDN引用)
+  - 图标和UI元素可使用`Font Awesome`或`Material Icons`等专业图标库 (通过CDN引用)
   - 背景和内容图片可从Unsplash、Pexels等免费图库选取，确保风格统一
   - 添加iOS标准状态栏和底部导航栏，包含主页、小组件和设置三个选项卡。
   - 使用符合iOS风格的日期选择器、开关组件和列表样式。
@@ -604,18 +601,18 @@ AI写好之后，尝试运行看看效果
 1. **Swift/SwiftUI设计风格与规范**
    - 从CSS和样式中提取主色调与调色板，转换为SwiftUI的Color系统
    - 分析字体规范并匹配至iOS系统字体，使用SwiftUI的Font系统
-   - 归纳UI组件样式，并对应到SwiftUI原生组件（Button、List、TextField、Card等）
+   - 归纳UI组件样式，并对应到SwiftUI原生组件（`Button`、`List`、`TextField`、`Card`等）
    - 总结动画与交互效果，并转换为SwiftUI动画和过渡效果实现方案
 
 2. **界面清单与功能说明**
-   - 通过分析HTML文件，列出所有界面及对应的SwiftUI视图(View)
+   - 通过分析HTML文件，列出所有界面及对应的SwiftUI视图(`View`)
    - 分析每个界面的主要功能点，并考虑SwiftUI的状态管理方式
-   - 梳理界面之间的导航关系，规划SwiftUI的NavigationView和TabView的使用结构
+   - 梳理界面之间的导航关系，规划SwiftUI的`NavigationView`和`TabView`的使用结构
 
 3. **Swift数据模型设计**
-   - 通过分析整个原型（HTML、表单结构和JS代码），提取核心数据结构并转换为Swift模型（使用struct和Identifiable协议）
-   - 设计数据持久化方案（SwiftData或AppStorage）
-   - 规划SwiftUI的数据流和状态管理（@State、@Binding、@ObservedObject、@EnvironmentObject等）
+   - 通过分析整个原型（HTML、表单结构和JS代码），提取核心数据结构并转换为Swift模型（使用`struct`和`Identifiable`协议）
+   - 设计数据持久化方案（`SwiftData`或`AppStorage`）
+   - 规划SwiftUI的数据流和状态管理（`@State`、`@Binding`、`@ObservedObject`、`@EnvironmentObject`等）
 
 4. **分阶段开发计划**
    - **重要：请严格按界面来划分SwiftUI开发阶段，每个阶段对应一个或多个相关界面的完整开发**
@@ -629,7 +626,7 @@ AI写好之后，尝试运行看看效果
 5. **iPhone开发注意事项**
    - iPhone不同机型的适配考虑
    - 深色模式和动态类型支持
-   - SwiftUI辅助功能(Accessibility)实现
+   - SwiftUI辅助功能(`Accessibility`)实现
    - 性能优化建议
    - App Store审核可能关注的问题
 
@@ -691,7 +688,7 @@ AI写好之后，尝试运行看看效果
 
 #### 配置规则文件
 
-将规则文件放到规则目录下 .cursor/rules
+将规则文件放到规则目录下`.cursor/rules`
 
 ![](img/248e1fc467c310a159b7be0c9fefe930.png)
 
@@ -699,7 +696,7 @@ AI写好之后，尝试运行看看效果
 
 然后截取主页的原型，输入提示词
 
-> 现在，让我们开始完成第一阶段：主页界面（HomeView）开发，请严格按照项目文件结构和swift语言规范编写代码。
+> 现在，让我们开始完成第一阶段：主页界面（`HomeView`）开发，请严格按照项目文件结构和swift语言规范编写代码。
 
 > 在开始之前，你要先查看当前的项目情况，不要做多余重复的事情
 
@@ -711,7 +708,7 @@ AI写好之后，尝试运行看看效果
 
 #### 第二阶段
 
-> 现在，让我们开始完成第二阶段：添加日期界面（AddDateView）开发，请严格按照项目文件结构和swift语言规范编写代码。
+> 现在，让我们开始完成第二阶段：添加日期界面（`AddDateView`）开发，请严格按照项目文件结构和swift语言规范编写代码。
 
 > 在开始之前，你要先查看当前的项目情况，不要做多余重复的事情
 
@@ -723,7 +720,7 @@ AI写好之后，尝试运行看看效果
 
 #### 第三阶段
 
-> 现在，让我们开始完成第三阶段：日期详情界面（DateDetailView）开发，请严格按照项目文件结构和swift语言规范编写代码。
+> 现在，让我们开始完成第三阶段：日期详情界面（`DateDetailView`）开发，请严格按照项目文件结构和swift语言规范编写代码。
 
 > 在开始之前，你要先查看当前的项目情况，不要做多余重复的事情
 
@@ -731,11 +728,11 @@ AI写好之后，尝试运行看看效果
 
 后面的阶段就不放出来了，都一样的做饭
 
-### 小结
+## 小结
 
 在这个过程中，我主要遇到了一个挑战：小组件的开发
 
-小组件的开发需要新建一个target，但我不知道，AI也不知道(可能是假装的)
+小组件的开发需要新建一个`target`，但我不知道，AI也不知道(可能是假装的)
 
 **在多次沟通无果后，我用上了开始学习的第二个**方法： 一般这样的功能我们会怎么实现它？和他聊完后：那你看看我们现在的实现方式是对的吗？
 
@@ -755,7 +752,7 @@ app的图标可以用AI生成，你可以选择自己喜欢的方式，无论是
 
 ![](img/1217ef7b4a44c7bbe9d7f5106c39b667.png)
 
-> 这里有个version，发布新版本时记得修改它
+> 这里有个`version`，发布新版本时记得修改它
 
 ![](img/186b1c0e7f3662acfe9590e806347475.png)
 
@@ -791,7 +788,7 @@ app的图标可以用AI生成，你可以选择自己喜欢的方式，无论是
 
 ![](img/344742aa004724ae2afcf8b04c39589b.png)
 
-[Pixelmator Pro 3.6.15 MAS [TNT].dmg](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FqnWbphqfoZY29x3em8czv87nMe)
+[`Pixelmator Pro 3.6.15 MAS [TNT].dmg`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FqnWbphqfoZY29x3em8czv87nMe)
 
 ![](img/8af32f97b8e1d5e289be8981bafdfc13.png)
 
@@ -807,7 +804,7 @@ app的图标可以用AI生成，你可以选择自己喜欢的方式，无论是
 
 ![](img/44e2b2721beee4e9d8a54f8675a6680a.png)
 
-这里有点小问题，填CANPS代码时银行信息是英文
+这里有点小问题，填`CANPS`代码时银行信息是英文
 
 ![](img/3b61e7d093eb652775ac43ea44ae1720.png)
 

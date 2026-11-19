@@ -1,11 +1,12 @@
+
 # coze智能体：Excel的智能分析与优化BOT
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Ugxsd9T67o4X7WxR3Bvc0oAEn9Q](https://v11enp9ok1h.feishu.cn/docx/Ugxsd9T67o4X7WxR3Bvc0oAEn9Q)
 
-| ##### **智能体名称** | ##### Excel的智能分析与优化BOT |
+| 智能体名称 | Excel的智能分析与优化BOT |
 | --- | --- |
-| **智能体简介** | 这是一款智能数据分析助手,能够自动处理Excel数据并输出洞察。用户只需上传Excel文件,系统就能自动完成数据分析、可视化呈现、特征优化等工作,大幅提升数据分析效率,降低使用门槛。 |
-| **应用场景** | **应用场景 **：信息处理 Excel小白、有数据分析需求的场景。 |
+| 智能体简介 | 这是一款智能数据分析助手,能够自动处理Excel数据并输出洞察。用户只需上传Excel文件,系统就能自动完成数据分析、可视化呈现、特征优化等工作,大幅提升数据分析效率,降低使用门槛。 |
+| 应用场景 | 应用场景：信息处理 Excel小白、有数据分析需求的场景。 |
 | 智能体主要功能 | 上传 Excel 自动完成数据分析、数据可视化、特征工程 |
 
 这里提供两个数据集，供你们测试玩耍：
@@ -18,8 +19,7 @@
 
 [学生成绩表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NhV0biFlLobwsOxSMWIcrOx6nOK)
 
-### 工作流展示
-
+## 工作流展示
 
 ![](img/fb6648e25de490c64804df8a2305f2b9.png)
 
@@ -31,16 +31,15 @@
 
 ![](img/84d72497626be31bdadc617097c9acdf.png)
 
-## **制作流程：**
+## 制作流程：
 
 我们一个输出做一个整体来说，共三个输出整体，加上准备共四个，如下：
-
 
 ### 准备
 
 #### 新建一个工作流
 
-+   工作流名称：Excel_Smart_Processing
++   工作流名称：`Excel_Smart_Processing`
 
 +   工作流描述：表格智能分析及优化
 
@@ -48,7 +47,7 @@
 
 #### 修改输入节点
 
-+   改为“File”
++   改为“`File`”
 
 ![](img/a8067366c723c8177f70532a05edb708.png)
 
@@ -66,7 +65,7 @@
 **已接受到数据表，正在进行剖析**
 ```
 
-## 恭喜！
+### 恭喜！
 
 > 你完成了第一个部分，还有三个~
 
@@ -77,7 +76,6 @@
 ![](img/76f179858e6f3ef86c32bf42d5c4ae69.png)
 
 #### 添加文本处理节点
-
 
 #### 修改文本处理节点
 
@@ -92,7 +90,7 @@ import io
 import numpy as np
 
 def read_excel_from_url(excel_url):
-    &quot;&quot;&quot;从URL读取Excel文件并返回DataFrame&quot;&quot;&quot;
+    """从URL读取Excel文件并返回DataFrame"""
     try:
         # 下载Excel文件
         response = requests.get(excel_url)
@@ -109,68 +107,67 @@ def read_excel_from_url(excel_url):
                 df = pd.read_csv(excel_content)
             return df
         else:
-            raise Exception(f&quot;无法下载Excel文件，HTTP状态码：{response.status_code}&quot;)
+            raise Exception(f"无法下载Excel文件，HTTP状态码：{response.status_code}")
     except Exception as e:
-        raise Exception(f&quot;处理Excel文件失败：{str(e)}&quot;)
-df = read_excel_from_url(&#x27;{{String1}}&#x27;)
+        raise Exception(f"处理Excel文件失败：{str(e)}")
+df = read_excel_from_url('{{String1}}')
 
 def quick_describe(df):
-    &quot;&quot;&quot;
+    """
     对数据框进行快速描述性分析
     参数:
         df: pandas DataFrame
-    &quot;&quot;&quot;
+    """
     # 基本信息
-    print(&quot;=&quot;*50)
-    print(&quot;基本信息:&quot;)
-    print(f&quot;行数: {df.shape[0]}, 列数: {df.shape[1]}&quot;)
-    print(&quot;\n列名及数据类型:&quot;)
+    print("="*50)
+    print("基本信息:")
+    print(f"行数: {df.shape[0]}, 列数: {df.shape[1]}")
+    print("\n列名及数据类型:")
     print(df.dtypes)
     
     # 数值型变量分析
     numeric_cols = df.select_dtypes(include=[np.number]).columns
-    if len(numeric_cols) &gt; 0:
-        print(&quot;\n&quot; + &quot;=&quot;*50)
-        print(&quot;数值型变量统计描述:&quot;)
+    if len(numeric_cols) > 0:
+        print("\n" + "="*50)
+        print("数值型变量统计描述:")
         print(df[numeric_cols].describe())
     
     # 分类变量分析
-    categorical_cols = df.select_dtypes(include=[&#x27;object&#x27;, &#x27;category&#x27;]).columns
-    if len(categorical_cols) &gt; 0:
-        print(&quot;\n&quot; + &quot;=&quot;*50)
-        print(&quot;分类变量分析:&quot;)
+    categorical_cols = df.select_dtypes(include=['object', 'category']).columns
+    if len(categorical_cols) > 0:
+        print("\n" + "="*50)
+        print("分类变量分析:")
         for col in categorical_cols:
-            print(f&quot;\n{col}:&quot;)
-            print(f&quot;唯一值数量: {df[col].nunique()}&quot;)
-            print(&quot;前5个最常见值及其频数:&quot;)
+            print(f"\n{col}:")
+            print(f"唯一值数量: {df[col].nunique()}")
+            print("前5个最常见值及其频数:")
             print(df[col].value_counts().head())
     
     # 时间序列分析
-    datetime_cols = df.select_dtypes(include=[&#x27;datetime64&#x27;]).columns
-    if len(datetime_cols) &gt; 0:
-        print(&quot;\n&quot; + &quot;=&quot;*50)
-        print(&quot;时间序列分析:&quot;)
+    datetime_cols = df.select_dtypes(include=['datetime64']).columns
+    if len(datetime_cols) > 0:
+        print("\n" + "="*50)
+        print("时间序列分析:")
         for col in datetime_cols:
-            print(f&quot;\n{col}:&quot;)
-            print(f&quot;时间范围: {df[col].min()} 至 {df[col].max()}&quot;)
-            print(f&quot;时间跨度: {df[col].max() - df[col].min()}&quot;)
+            print(f"\n{col}:")
+            print(f"时间范围: {df[col].min()} 至 {df[col].max()}")
+            print(f"时间跨度: {df[col].max() - df[col].min()}")
 quick_describe(df)
-
 ```
 
 +   重新命名为代码块
 
 ![](img/7f40abaa3d57da13414af1d588c53672.png)
 
-#### 添加插件（代码执行器-CodeRunner）节点
+#### 添加插件（代码执行器-`CodeRunner`）节点
 
 ![](img/6b60bc9c57f851df992e58365a7d3603.png)
 
 ![](img/1e367973219d8ee59539c2c54ee52ef7.png)
 
-#### 修改插件（代码执行器-CodeRunner）节点
+#### 修改插件（代码执行器-`CodeRunner`）节点
 
-+   code引用代码块
++   `code`引用代码块
 
 +   修改名称为“数据的快速描述性统计”
 
@@ -182,7 +179,7 @@ quick_describe(df)
 
 #### 修改插件（大模型）节点
 
-+   输入引用上一个节点的FinalOutput
++   输入引用上一个节点的`FinalOutput`
 
 +   系统提示词
 
@@ -236,7 +233,6 @@ quick_describe(df)
 
 4. 局限性
    - [说明分析的局限性，如数据质量问题、样本代表性等]
-
 ```
 
 +   用户提示词
@@ -257,7 +253,7 @@ quick_describe(df)
 
 #### 修改输出节点
 
-+   输入引用上一个节点的output
++   输入引用上一个节点的`output`
 
 +   输出内容
 
@@ -272,19 +268,17 @@ quick_describe(df)
 
 #### 连接（输出）节点到结束节点
 
-
-## 恭喜！
+### 恭喜！
 
 > 你完成了第二个部分，下面让我们去看看可以运行吗
 
 点击试运行，上传文件，再点击试运行
 
-
 我们可以看到是可以正常输出的
 
 ![](img/ba822fd598ea7d3e5c7af75e4e8a58c6.png)
 
-## 合并
+### 合并
 
 > 因为本次节点较多，让我们合并第二个部分的节点，也可以不合并哈
 
@@ -302,7 +296,6 @@ quick_describe(df)
 
 #### 添加文本处理节点
 
-
 #### 修改文本处理节点
 
 +   命名为代码拼接
@@ -317,7 +310,7 @@ import pandas as pd
 import io
 
 def read_excel_from_url(excel_url):
-    &quot;&quot;&quot;从URL读取Excel文件并返回DataFrame&quot;&quot;&quot;
+    """从URL读取Excel文件并返回DataFrame"""
     try:
         # 下载Excel文件
         response = requests.get(excel_url)
@@ -334,31 +327,31 @@ def read_excel_from_url(excel_url):
                 df = pd.read_csv(excel_content)
             return df
         else:
-            raise Exception(f&quot;无法下载Excel文件，HTTP状态码：{response.status_code}&quot;)
+            raise Exception(f"无法下载Excel文件，HTTP状态码：{response.status_code}")
     except Exception as e:
-        raise Exception(f&quot;处理Excel文件失败：{str(e)}&quot;)
-df = read_excel_from_url(&#x27;{{String1}}&#x27;)
+        raise Exception(f"处理Excel文件失败：{str(e)}")
+df = read_excel_from_url('{{String1}}')
 
 # 输出字段类型
-print(&quot;数据信息：&quot;)
+print("数据信息：")
 print(df.info())
 
 # 输出前五行数据
-print(&quot;\n前五行数据：&quot;)
+print("\n前五行数据：")
 print(df.head())
 ```
 
 ![](img/2ee169e88548d5c950e2a0d5afc1577a.png)
 
-#### 添加插件（代码执行器-CodeRunner）节点
+#### 添加插件（代码执行器-`CodeRunner`）节点
 
 ![](img/3cbba48aa7c3ba746e5206d179696a88.png)
 
 ![](img/61ccc49dd379eb4ac7cd58595fa9eee3.png)
 
-#### 修改插件（代码执行器-CodeRunner）节点
+#### 修改插件（代码执行器-`CodeRunner`）节点
 
-+   code引用代码拼接
++   `code`引用代码拼接
 
 +   修改名称为“读取excel字段与前五行”
 
@@ -370,48 +363,55 @@ print(df.head())
 
 #### 修改大模型节点
 
-+   输入引用上一个节点的FinalOutput
++   输入引用上一个节点的`FinalOutput`
 
 +   系统提示词
 
-```
+
+
 # Role: Python数据分析与特征工程专家
 
-## Profile:
+## Profile
 
 - Description: 你是一位精通Python数据分析和特征工程的专家，能够根据给定的数据表信息进行特征工程，衍生多个有意义的新字段，并美化表格。
 
-## Goals:
-1. 理解用户提供的数据表信息概览和前五行数据{{input1}}
+## Goals
+
+1. 理解用户提供的数据表信息概览和前五行数据`{{input1}}`
 2. 进行特征工程，衍生多个有意义的新字段(中文命名)
 3. 美化表格，使简单表格变成详细的表格
 4. 生成清晰、易读、高效的Python代码
 
-## Constraints:
+## Constraints
+
 - 生成的代码必须是对给定代码段的续写
-- 使用Python标准库和pandas进行数据处理
+- 使用Python标准库和`pandas`进行数据处理
 - 只输出代码，不输出其他内容
 - 代码中需要包含注释，解释每个步骤的作用
 
-## Skills:
-- 精通Python数据分析库（如pandas, numpy）
+## Skills
+
+- 精通Python数据分析库（如`pandas`, `numpy`）
 - 擅长数据预处理和特征工程
 - 能够创造性地设计新特征
 - 熟悉各种数据类型的处理方法
 - 了解常见的数据分析场景和需求
 
-## Workflow:
+## Workflow
+
 1. 分析用户提供的数据表信息，理解字段类型和数据特征
 2. 根据现有字段，设计并创建新的有意义的特征
 3. 对数据进行必要的预处理和转换
 4 生成完整的Python代码，包含注释
 
-## Examples:
-Example 1:
-&quot;&quot;&quot;
+## Examples
+
+### Example 1
+
+```
 Input:
 信息概览：
-&lt;class &#x27;pandas.core.frame.DataFrame&#x27;&gt;
+<class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 4 columns):
  #   Column    Non-Null Count  Dtype  
@@ -436,117 +436,133 @@ import pandas as pd
 import numpy as np
 
 # 读取数据
-df = pd.read_excel(&#x27;data.xlsx&#x27;)
+df = pd.read_excel('data.xlsx')
 
 # 特征工程
 # 1. 从日期中提取更多信息
-df[&#x27;year&#x27;] = df[&#x27;date&#x27;].dt.year
-df[&#x27;month&#x27;] = df[&#x27;date&#x27;].dt.month
-df[&#x27;day&#x27;] = df[&#x27;date&#x27;].dt.day
-df[&#x27;day_of_week&#x27;] = df[&#x27;date&#x27;].dt.dayofweek
-df[&#x27;is_weekend&#x27;] = df[&#x27;day_of_week&#x27;].isin([5, 6]).astype(int)
-df[&#x27;quarter&#x27;] = df[&#x27;date&#x27;].dt.quarter
+df['year'] = df['date'].dt.year
+df['month'] = df['date'].dt.month
+df['day'] = df['date'].dt.day
+df['day_of_week'] = df['date'].dt.dayofweek
+df['is_weekend'] = df['day_of_week'].isin([5, 6]).astype(int)
+df['quarter'] = df['date'].dt.quarter
 
 # 2. 销售相关特征
-df[&#x27;sales_category&#x27;] = pd.cut(df[&#x27;sales&#x27;], bins=[0, 1000, 1200, float(&#x27;inf&#x27;)], labels=[&#x27;低&#x27;, &#x27;中&#x27;, &#x27;高&#x27;])
-df[&#x27;cumulative_sales&#x27;] = df.groupby(&#x27;product&#x27;)[&#x27;sales&#x27;].cumsum()
+df['sales_category'] = pd.cut(df['sales'], bins=[0, 1000, 1200, float('inf')], labels=['低', '中', '高'])
+df['cumulative_sales'] = df.groupby('product')['sales'].cumsum()
 
 # 3. 产品相关特征
-df[&#x27;is_product_A&#x27;] = (df[&#x27;product&#x27;] == &#x27;A&#x27;).astype(int)
-df[&#x27;is_product_B&#x27;] = (df[&#x27;product&#x27;] == &#x27;B&#x27;).astype(int)
-df[&#x27;is_product_C&#x27;] = (df[&#x27;product&#x27;] == &#x27;C&#x27;).astype(int)
+df['is_product_A'] = (df['product'] == 'A').astype(int)
+df['is_product_B'] = (df['product'] == 'B').astype(int)
+df['is_product_C'] = (df['product'] == 'C').astype(int)
 
 # 4. 地区相关特征
-df[&#x27;is_north&#x27;] = (df[&#x27;region&#x27;] == &#x27;North&#x27;).astype(int)
-df[&#x27;region_encoded&#x27;] = df[&#x27;region&#x27;].map({&#x27;North&#x27;: 0, &#x27;South&#x27;: 1, &#x27;East&#x27;: 2, &#x27;West&#x27;: 3})
+df['is_north'] = (df['region'] == 'North').astype(int)
+df['region_encoded'] = df['region'].map({'North': 0, 'South': 1, 'East': 2, 'West': 3})
 
 # 5. 时间窗口特征
-df[&#x27;sales_7d_avg&#x27;] = df.groupby(&#x27;product&#x27;)[&#x27;sales&#x27;].rolling(window=7, min_periods=1).mean().reset_index(0, drop=True)
+df['sales_7d_avg'] = df.groupby('product')['sales'].rolling(window=7, min_periods=1).mean().reset_index(0, drop=True)
 
 # 6. 交叉特征
-df[&#x27;product_region&#x27;] = df[&#x27;product&#x27;] + &#x27;_&#x27; + df[&#x27;region&#x27;]
+df['product_region'] = df['product'] + '_' + df['region']
 
 # 保存结果
-df.to_csv(&#x27;Data.csv&#x27;, index = True)
-&quot;&quot;&quot;
+df.to_csv('Data.csv', index = True)
+```
 
+## OutputFormat
 
-## OutputFormat:
 [Python代码]
 
+## 用户提示词
 
 ```
+默认数据已经读入`df`，请对其续写特征工程和数据处理代码部分，并将文件保存`df.to_csv('Data.csv', index = True)`，直接输出代码，不用写```python```
 
-+   用户提示词
-
-```
-默认数据已经读入df，请对其续写特征工程和数据处理代码部分，并将文件保存df.to_csv(&#x27;Data.csv&#x27;, index = True)，直接输出代码，不用写```python```
-
-注意： 认真理解用户提供的数据表信息概览和前五行数据{{input1}}，避免字段类型冲突、运算操作的报错，你只有一次代码生成机会
+注意： 认真理解用户提供的数据表信息概览和前五行数据`{{input1}}`，避免字段类型冲突、运算操作的报错，你只有一次代码生成机会
 ```
 
-+   修改名称为生成特征工程代码
+## 修改名称为生成特征工程代码
 
 ![](img/ec49566e87fe68b9b954337485540de0.png)
 
 ![](img/f69c0105a4c9545a9358ad7703368844.png)
 
-#### 添加文本处理节点
-
+### 添加文本处理节点
 
 #### 修改文本处理节点
 
-+   命名为代码拼接2
++ 命名为代码拼接2
 
-+   输入引用开始节点
++ 输入引用开始节点
 
-+   输出为
++ 输出为
 
 ```
 import requests
+
 import pandas as pd
+
 import io
+
 import numpy as np
 
-
 def read_excel_from_url(excel_url):
-    &quot;&quot;&quot;从URL读取Excel文件并返回DataFrame&quot;&quot;&quot;
+
+    """从URL读取Excel文件并返回DataFrame"""
+
     try:
+
         # 下载Excel文件
+
         response = requests.get(excel_url)
+
         if response.status_code == 200:
+
             # 将内容读入BytesIO对象
+
             excel_content = io.BytesIO(response.content)
+
             # 读取Excel文件返回DataFrame
+
             try:
+
                 # 尝试读取Excel文件
+
                 df = pd.read_excel(excel_content)
+
             except:
+
                 # 如果失败,尝试读取CSV文件
+
                 excel_content.seek(0)  # 重置指针到开头
+
                 df = pd.read_csv(excel_content)
+
             return df
+
         else:
-            raise Exception(f&quot;无法下载Excel文件，HTTP状态码：{response.status_code}&quot;)
+
+            raise Exception(f"无法下载Excel文件，HTTP状态码：{response.status_code}")
+
     except Exception as e:
-        raise Exception(f&quot;处理Excel文件失败：{str(e)}&quot;)
-df = read_excel_from_url(&#x27;{{String1}}&#x27;)
 
+        raise Exception(f"处理Excel文件失败：{str(e)}")
 
+df = read_excel_from_url('{{String1}}')
 
 {{String2}}
 
 # 将DataFrame转换为CSV格式的字符串
+
 csv_string = df.to_csv(index=False)
 
 # 打印CSV格式的字符串
-print(csv_string)
 
+print(csv_string)
 ```
 
-![](img/a58837cb2c177ba4ababb545d733f383.png)
-
-#### 添加插件（代码执行器-CodeRunner）节点
+### 添加插件（代码执行器-CodeRunner）节点
 
 ![](img/e9a9c6288696db91ac21ac8963d0f99d.png)
 
@@ -554,116 +570,33 @@ print(csv_string)
 
 #### 修改插件（代码执行器-CodeRunner）节点
 
-+   code引用代码拼接2
++ code引用代码拼接2
 
-+   修改名称为特征工程
++ 修改名称为特征工程
 
-![](img/cda0d15ff3eb15b4ab405b464b557e55.png)
-
-#### 添加选择器节点
-
+### 添加选择器节点
 
 #### 修改选择器节点
 
-+   选择为特征工程
++ 选择为特征工程
 
-+   长度大于等于1
++ 长度大于等于1
 
-+   重命名为判断执行是否成功
++ 重命名为判断执行是否成功
 
-
-#### 添加文本处理节点
-
-
-#### 修改文本处理节点
-
-+   输入引用开始节点、引用生成特征工程代码的输出
-
-+   字符串拼接内容：
-
-```
-import requests
-import pandas as pd
-import io
-import numpy as np
-
-
-def read_excel_from_url(excel_url):
-    &quot;&quot;&quot;从URL读取Excel文件并返回DataFrame&quot;&quot;&quot;
-    try:
-        # 下载Excel文件
-        response = requests.get(excel_url)
-        if response.status_code == 200:
-            # 将内容读入BytesIO对象
-            excel_content = io.BytesIO(response.content)
-            # 读取Excel文件返回DataFrame
-            try:
-                # 尝试读取Excel文件
-                df = pd.read_excel(excel_content)
-            except:
-                # 如果失败,尝试读取CSV文件
-                excel_content.seek(0)  # 重置指针到开头
-                df = pd.read_csv(excel_content)
-            return df
-        else:
-            raise Exception(f&quot;无法下载Excel文件，HTTP状态码：{response.status_code}&quot;)
-    except Exception as e:
-        raise Exception(f&quot;处理Excel文件失败：{str(e)}&quot;)
-df = read_excel_from_url(&#x27;{{String1}}&#x27;)
-
-
-{{String2}}
-
-try:
-    from tabulate import tabulate
-    print(tabulate(df.head(), headers=&#x27;keys&#x27;, tablefmt=&#x27;pipe&#x27;, showindex=False))
-except ImportError:
-      print(df.head().to_string())
-  # 备选方案:使用DataFrame的to_string()方法
-
-
-```
-
-+   命名为“输出前五行代码”
+### 添加文本处理节点
 
 ![](img/dc199d1f435a359ca3d1892b2e4c226b.png)
 
-#### 添加插件（代码执行器-CodeRunner）节点
-
-![](img/2b4984dacefdf67ff5bd9ef4f8025ff4.png)
-
-
-#### 修改插件（代码执行器-CodeRunner）节点
-
-+   code引用代码拼接
-
-+   修改名称为“输出前五行”
-
-![](img/45ce55844f5589be500409944c41078b.png)
-
-#### 添加插件（Doc Maker-create_spreadsheet）节点
-
-![](img/92e100edccf7dc14b6a0ef537a2ad2bc.png)
-
-
-#### 修改插件（Doc Maker-create_spreadsheet）节点
-
-+   code引用特征工程
-
-+   修改名称为“下载CSV”
-
-
-#### 添加文本处理节点
-
-
 #### 修改文本处理节点
 
-+   输入引用开始节点、引用生成特征工程代码的输出
++ 输入引用开始节点、引用生成特征工程代码的输出
 
-+   字符串拼接内容：
++ 字符串拼接内容：
 
 ```
 ## 数据特征工程📄
+
 **部分数据展示**：
 
 {{String1}}
@@ -671,53 +604,93 @@ except ImportError:
 点击即可下载：🧾[Excel]({{String2}})
 ```
 
-+   命名为“特证工程成功”
++ 命名为“输出前五行代码”
+
+### 添加插件（代码执行器-CodeRunner）节点
+
+![](img/2b4984dacefdf67ff5bd9ef4f8025ff4.png)
 
 
-## 下面让我们返回判断节点
+#### 修改插件（代码执行器-CodeRunner）节点
 
-#### 添加文本处理节点
+![](img/45ce55844f5589be500409944c41078b.png)
 
++ code引用代码拼接
+
++ 修改名称为“输出前五行”
+
+### 添加插件（Doc Maker-create_spreadsheet）节点
+
+![](img/92e100edccf7dc14b6a0ef537a2ad2bc.png)
+
+
+#### 修改插件（Doc Maker-create_spreadsheet）节点
+
++ code引用特征工程
+
++ 修改名称为“下载CSV”
+
+### 添加文本处理节点
 
 #### 修改文本处理节点
 
-+   删除输入
++ 输入引用开始节点、引用生成特征工程代码的输出
 
-+   字符串拼接内容：
++ 字符串拼接内容：
+
+```
+## 数据特征工程📄
+
+**部分数据展示**：
+
+{{String1}}
+
+点击即可下载：🧾[Excel]({{String2}})
+```
+
++ 命名为“特证工程成功”
+
+## 下面让我们返回判断节点
+
+### 添加文本处理节点
+
+#### 修改文本处理节点
+
++ 删除输入
+
++ 字符串拼接内容：
 
 ```
 ## 数据特征工程
+
 特征工程失败，换个Excel试试吧！
 ```
 
-+   命名为“特证工程失败”
++ 命名为“特证工程失败”
 
+### 添加变量聚合节点
 
-#### 添加变量聚合节点
++ 记得成功和失败都需要连接
 
-+   记得成功和失败都需要连接
+### 修改变量聚合节点
 
++ 添加成功和失败的输出
 
-#### 修改变量聚合节点
-
-+   添加成功和失败的输出
-
-
-#### 添加输出节点
+### 添加输出节点
 
 ![](img/59b0dda45ba0af64e99b0eea18350e06.png)
 
 #### 修改输出节点
 
-+   输入引用上一个节点的Group1
+![](img/ee3f6f729b7571ad27e3b58e5f68a338.png)
 
-+   输出内容
++ 输入引用上一个节点的Group1
+
++ 输出内容
 
 ```
 {{output}}
 ```
-
-![](img/ee3f6f729b7571ad27e3b58e5f68a338.png)
 
 #### 连接（输出）节点到结束节点
 
@@ -731,18 +704,17 @@ except ImportError:
 
 #### 点击试运行，上传文件，再点击试运行
 
-
 我们可以看到是可以正常输出的
 
 ![](img/6f2318106791f978ca3d686f344e1449.png)
+
+[PixPin_2025-06-08_20-12-40.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EBglbpwdXoRlP5x7zJ3cBVmwnaf)
 
 ## 合并
 
 > 因为本次节点较多，让我们合并第三个部分的节点，也可以不合并哈
 
 ![](img/e2a597119ff2972176cb31a38e188539.png)
-
-[PixPin_2025-06-08_20-12-40.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EBglbpwdXoRlP5x7zJ3cBVmwnaf)
 
 ### 数据可视化结果
 
@@ -752,277 +724,351 @@ except ImportError:
 
 ![](img/b341d8b9d9a5bf48eb2e2e371254f112.png)
 
-#### 添加文本处理节点
-
+### 添加文本处理节点
 
 #### 修改文本处理节点
 
-+   命名为代码拼接
++ 命名为代码拼接
 
-+   输入引用开始节点
++ 输入引用开始节点
 
-+   输出为
++ 输出为
 
 ```
 import requests
+
 import pandas as pd
+
 import io
 
 def read_excel_from_url(excel_url):
-    &quot;&quot;&quot;从URL读取Excel文件并返回DataFrame&quot;&quot;&quot;
+
+    """从URL读取Excel文件并返回DataFrame"""
+
     try:
+
         # 下载Excel文件
+
         response = requests.get(excel_url)
+
         if response.status_code == 200:
+
             # 将内容读入BytesIO对象
-            excel_content = io.BytesIO(response.content)
-            # 读取Excel文件返回DataFrame
-            try:
-                # 尝试读取Excel文件
-                df = pd.read_excel(excel_content)
-            except:
-                # 如果失败,尝试读取CSV文件
-                excel_content.seek(0)  # 重置指针到开头
-                df = pd.read_csv(excel_content)
-            return df
-        else:
-            raise Exception(f&quot;无法下载Excel文件，HTTP状态码：{response.status_code}&quot;)
-    except Exception as e:
-        raise Exception(f&quot;处理Excel文件失败：{str(e)}&quot;)
-df = read_excel_from_url(&#x27;{{String1}}&#x27;)
+```
+
+
+
+# 从URL读取Excel并生成数据可视化工作流
+
+## 读取Excel文件
+
+```
+excel_content = io.BytesIO(response.content)
+
+# 读取Excel文件返回DataFrame
+
+try:
+
+    # 尝试读取Excel文件
+
+    df = pd.read_excel(excel_content)
+
+except:
+
+    # 如果失败,尝试读取CSV文件
+
+    excel_content.seek(0)  # 重置指针到开头
+
+    df = pd.read_csv(excel_content)
+
+return df
+
+else:
+
+    raise Exception(f"无法下载Excel文件，HTTP状态码：{response.status_code}")
+
+except Exception as e:
+
+    raise Exception(f"处理Excel文件失败：{str(e)}")
+
+df = read_excel_from_url('{{String1}}')
 
 # 输出字段类型
-print(&quot;数据信息：&quot;)
+
+print("数据信息：")
+
 print(df.info())
 
 # 输出前五行数据
-print(&quot;\n前五行数据：&quot;)
+
+print("\n前五行数据：")
+
 print(df.head())
 ```
 
 ![](img/3c9d1465d8043e902ec0c6945ec2d735.png)
 
-#### 添加插件（代码执行器-CodeRunner）节点
+## 添加插件节点（代码执行器-CodeRunner）
+
+### 添加代码执行器节点
 
 ![](img/735ee44c74c3fcf1771c0139c581ac1b.png)
 
+### 修改代码执行器节点
 
-#### 修改插件（代码执行器-CodeRunner）节点
+- `code`引用代码拼接
+- 修改名称为“读取excel字段与前五行”
 
-+   code引用代码拼接
-
-+   修改名称为“读取excel字段与前五行”
-
-
-#### 添加大模型节点
+## 添加大模型节点
 
 ![](img/b7566dcb176322e17b04008c7d457f92.png)
 
-#### 修改大模型节点
+### 修改大模型节点
 
-+   输入引用上一个节点的FinalOutput
-
-+   系统提示词
+- 输入引用上一个节点的`FinalOutput`
+- 系统提示词
 
 ```
 系统提示词：
+
 # Role: Python数据分析与可视化专家
 
-
 ## Goals:
+
 1. 理解给定的数据表信息概览以及前五行数据{{input1}}
+
 2. 生成适当的数据处理代码
+
 3. 在一个画布上创建多个相关的可视化图表
 
 ## Constraints:
-- **生成的代码必须是对给定代码段的续写**
+
+- 生成的代码必须是对给定代码段的续写
+
 - 使用Python标准库、pandas、matplotlib、seaborn等常用数据分析和可视化库
+
 - 智能分析绘图，必须在一个画布上绘制至少两个及以上图表
+
 - 绘制多个图表、全面展示数据
+
 - 只输出代码，不准输出其他的
 
 ## Skills:
+
 - 精通Python数据分析库（如pandas, numpy）
+
 - 精通matplotlib，不准用seaborn绘图
+
 - 擅长数据预处理和统计分析
+
 - 能够设计和实现多子图布局，能设计画布大小、整体标题、解决X轴堆叠问题
+
 - 标题、抬头使用英文显示
+
 - 精通多种图表，选择适当的图表类型进行可视化，并正确展示数据
 
 ## 给定代码段
+
 import pandas as pd
-df = pd.read_excel(&#x27;data.xlsx&#x27;)
+
+df = pd.read_excel('data.xlsx')
 
 #### OutputFormat【包含数据处理、可视化和分析的Python代码，这些代码应该续写在用户提供的已有代码之后，】:
+
 [编写代码]
+
 plt.tight_layout()
-plt.savefig(&#x27;analysis_result.png&#x27;, dpi=300, bbox_inches=&#x27;tight&#x27;)
+
+plt.savefig('analysis_result.png', dpi=300, bbox_inches='tight')
+
 plt.show()
 
 用户提示词：
+
+## Goals:
+
+1. 理解给定的数据表信息概览以及前五行数据{{input1}}
+
+2. 生成适当的数据处理代码
+
+3. 在一个画布上创建多个相关的可视化图表
+
+默认数据已经读入df，请对其续写可视化绘图部分，并将图片保存plt.savefig('analysis_result.png', dpi=300, bbox_inches='tight')，直接输出代码，不用写```python```
+```
+
+### 用户提示词
+
+```
 ## Goals:
 1. 理解给定的数据表信息概览以及前五行数据{{input1}}
 2. 生成适当的数据处理代码
 3. 在一个画布上创建多个相关的可视化图表
 
-默认数据已经读入df，请对其续写可视化绘图部分，并将图片保存plt.savefig(&#x27;analysis_result.png&#x27;, dpi=300, bbox_inches=&#x27;tight&#x27;)，直接输出代码，不用写```python```
-```
-
-+   用户提示词
+默认数据已经读入df，请对其续写可视化绘图部分，并将图片保存plt.savefig('analysis_result.png', dpi=300, bbox_inches='tight')，直接输出代码，不用写```python```
 
 ```
-## Goals:
-1. 理解给定的数据表信息概览以及前五行数据{{input1}}
-2. 生成适当的数据处理代码
-3. 在一个画布上创建多个相关的可视化图表
 
-默认数据已经读入df，请对其续写可视化绘图部分，并将图片保存plt.savefig(&#x27;analysis_result.png&#x27;, dpi=300, bbox_inches=&#x27;tight&#x27;)，直接输出代码，不用写```python```
-```
-
-+   修改名称为生成可视化代码
+### 修改名称为生成可视化代码
 
 ![](img/0038a98ac68bf5448be2b527ed9d8211.png)
 
 ![](img/4d7adf242372b33d5aed21d0d0d7dd3f.png)
 
-#### 添加文本处理节点
+## 添加文本处理节点
 
+### 修改文本处理节点
 
-#### 修改文本处理节点
-
-+   命名为代码拼接2
-
-+   输入引用开始节点
-
-+   输出为
+- 命名为代码拼接2
+- 输入引用开始节点
+- 输出为
 
 ```
 import requests
+
 import pandas as pd
+
 import io
 
 import matplotlib.pyplot as plt
+
 import pandas as pd
+
 def read_excel_from_url(excel_url):
-    &quot;&quot;&quot;从URL读取Excel文件并返回DataFrame&quot;&quot;&quot;
+
+    """从URL读取Excel文件并返回DataFrame"""
+
     try:
+
         # 下载Excel文件
+
         response = requests.get(excel_url)
+
         if response.status_code == 200:
+
             # 将内容读入BytesIO对象
+
             excel_content = io.BytesIO(response.content)
+
             # 读取Excel文件返回DataFrame
+
             try:
+
                 # 尝试读取Excel文件
+
                 df = pd.read_excel(excel_content)
+
             except:
+
                 # 如果失败,尝试读取CSV文件
+
                 excel_content.seek(0)  # 重置指针到开头
+
                 df = pd.read_csv(excel_content)
+
             return df
+
         else:
-            raise Exception(f&quot;无法下载Excel文件，HTTP状态码：{response.status_code}&quot;)
+
+            raise Exception(f"无法下载Excel文件，HTTP状态码：{response.status_code}")
+
     except Exception as e:
-        raise Exception(f&quot;处理Excel文件失败：{str(e)}&quot;)
-df = read_excel_from_url(&#x27;{{String1}}&#x27;)
+
+        raise Exception(f"处理Excel文件失败：{str(e)}")
+
+df = read_excel_from_url('{{String1}}')
 
 import matplotlib.pyplot as plt
-plt.rcParams[&#x27;font.family&#x27;] = &#x27;sans-serif&#x27;
-plt.rcParams[&#x27;font.sans-serif&#x27;] = [&#x27;DejaVu Sans&#x27;]  # 或其他字体
-plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
+
+plt.rcParams['font.family'] = 'sans-serif'
+
+plt.rcParams['font.sans-serif'] = ['DejaVu Sans']  # 或其他字体
+
+plt.rcParams['axes.unicode_minus'] = False
 
 import matplotlib.pyplot as plt
-plt.rcParams[&#x27;font.family&#x27;] = &#x27;sans-serif&#x27;
-plt.rcParams[&#x27;font.sans-serif&#x27;] = [&#x27;DejaVu Sans&#x27;]  # 或其他字体
-plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
+
+plt.rcParams['font.family'] = 'sans-serif'
+
+plt.rcParams['font.sans-serif'] = ['DejaVu Sans']  # 或其他字体
+
+plt.rcParams['axes.unicode_minus'] = False
 
 {{String2}}
 ```
 
 ![](img/a7966a8aec060f3851b49f603469344a.png)
 
-#### 添加插件（代码执行器-CodeRunner）节点
+## 添加插件节点（代码执行器-CodeRunner）
 
 ![](img/773970d10d1e02003728fb97fbeb43f1.png)
 
+### 修改代码执行器节点
 
-#### 修改插件（代码执行器-CodeRunner）节点
+- `code`引用代码拼接2
+- 修改名称为数据可视化
 
-+   code引用代码拼接2
+## 添加选择器节点
 
-+   修改名称为数据可视化
+### 修改选择器节点
 
+- 选择为数据可视化
+- 内容不为空
+- 重命名为判断图片是否生成成功
 
-#### 添加选择器节点
-
-
-#### 修改选择器节点
-
-+   选择为数据可视化
-
-+   内容不为空
-
-+   重命名为判断图片是否生成成功
-
-
-#### 添加文本处理节点
+## 添加文本处理节点
 
 ![](img/d7421245f38c71e4626714752b091701.png)
 
-#### 修改文本处理节点
+### 修改文本处理节点
 
-+   输入引用数据可视化的输出
-
-+   字符串拼接内容：
+- 输入引用数据可视化的输出
+- 字符串拼接内容：
 
 ![生成图片]({{String1[0]}})
 
 ```
 ## 数据可视化结果📊
+
 ```
 
-+   命名为图片生成成功
+- 命名为图片生成成功
 
-
-#### 添加文本处理节点
+## 添加文本处理节点
 
 ![](img/b1a7f1eab5b6f2902ee26c1707f0b4d2.png)
 
-#### 修改文本处理节点
+### 修改文本处理节点
 
-+   输入引用数据可视化的输出
-
-+   字符串拼接内容：
+- 输入引用数据可视化的输出
+- 字符串拼接内容：
 
 ![图片生成失败](img/cd026c59db59ddbb22a09de7af99fd54.png)
 
 ```
 ## 生成图片失败/(ㄒoㄒ)/~~
-**注意**：报错原因为{{String1}}，小概率会出现环境中没有相关字体的情况，建议重新运行一下
+
+注意：报错原因为{{String1}}，小概率会出现环境中没有相关字体的情况，建议重新运行一下
+
 ```
 
-+   命名为图片生成失败
+- 命名为图片生成失败
 
+## 添加变量聚合节点
 
-#### 添加变量聚合节点
+- 记得成功和失败都需要连接
 
-+   记得成功和失败都需要连接
+### 修改变量聚合节点
 
+- 添加成功和失败的输出
 
-#### 修改变量聚合节点
-
-+   添加成功和失败的输出
-
-
-#### 添加输出节点
+## 添加输出节点
 
 ![](img/840f1d779bdb9724b133e3a00b648d18.png)
 
-#### 修改输出节点
+### 修改输出节点
 
-+   输入引用上一个节点的Group1
-
-+   输出内容
+- 输入引用上一个节点的`Group1`
+- 输出内容
 
 ```
 {{output}}
@@ -1030,24 +1076,23 @@ plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False
 
 ![](img/f15a9440e29f5fd965f43cdab96dd0c5.png)
 
-#### 连接（输出）节点到结束节点
+## 连接（输出）节点到结束节点
 
 ![](img/b75dea46bef0bc35a78e777b69f25a3c.png)
 
 [PixPin_2025-06-08_20-35-45.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XPQMblXo6oTuJdxDXVSctitXnVW)
 
-## 恭喜！
+# 恭喜！
 
 > 你完成了第四个部分，下面让我们去看看可以运行嘛
 
 点击试运行，上传文件，再点击试运行
 
-
 我们可以看到是可以正常输出的
 
 ![](img/04be065dd35b0fc3c498c8a144061e09.png)
 
-## 合并
+# 合并
 
 > 因为本次节点较多，让我们合并第四个部分的节点，也可以不合并哈
 

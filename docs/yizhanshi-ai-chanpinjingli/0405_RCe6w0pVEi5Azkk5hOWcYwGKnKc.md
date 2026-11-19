@@ -1,4 +1,5 @@
-# 实例PyTorch 数据集
+
+# 实例 PyTorch 数据集
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/I1pTdOk9xocVgAxclyScJYXdnLg](https://v11enp9ok1h.feishu.cn/docx/I1pTdOk9xocVgAxclyScJYXdnLg)
 
@@ -6,51 +7,40 @@
 
 PyTorch 提供了强大的数据加载和处理工具，主要包括：
 
-+   torch.utils.data.Dataset：数据集的抽象类，需要自定义并实现 len（数据集大小）和 getitem（按索引获取样本）。
++ `torch.utils.data.Dataset`：数据集的抽象类，需要自定义并实现 `len`（数据集大小）和 `getitem`（按索引获取样本）。
++ `torch.utils.data.TensorDataset`：基于张量的数据集，适合处理数据-标签对，直接支持批处理和迭代。
++ `torch.utils.data.DataLoader`：封装 `Dataset` 的迭代器，提供批处理、数据打乱、多线程加载等功能，便于数据输入模型训练。
++ `torchvision.datasets.ImageFolder`：从文件夹加载图像数据，每个子文件夹代表一个类别，适用于图像分类任务。
 
-+   torch.utils.data.TensorDataset：基于张量的数据集，适合处理数据-标签对，直接支持批处理和迭代。
+## PyTorch 内置数据集
 
-+   torch.utils.data.DataLoader：封装 Dataset 的迭代器，提供批处理、数据打乱、多线程加载等功能，便于数据输入模型训练。
+PyTorch 通过 `torchvision.datasets` 模块提供了许多常用的数据集，例如：
 
-+   torchvision.datasets.ImageFolder：从文件夹加载图像数据，每个子文件夹代表一个类别，适用于图像分类任务。
++ `MNIST`：手写数字图像数据集，用于图像分类任务。
++ `CIFAR`：包含 10 个类别、60000 张 32x32 的彩色图像数据集，用于图像分类任务。
++ `COCO`：通用物体检测、分割、关键点检测数据集，包含超过 330k 个图像和 2.5M 个目标实例的大规模数据集。
++ `ImageNet`：包含超过 1400 万张图像，用于图像分类和物体检测等任务。
++ `STL-10`：包含 100k 张 96x96 的彩色图像数据集，用于图像分类任务。
++ `Cityscapes`：包含 5000 张精细注释的城市街道场景图像，用于语义分割任务。
++ `SQUAD`：用于机器阅读理解任务的数据集。
 
-### PyTorch 内置数据集
+以上数据集可以通过 `torchvision.datasets` 模块中的函数进行加载，也可以通过自定义的方式加载其他数据集。
 
-PyTorch 通过 torchvision.datasets 模块提供了许多常用的数据集，例如：
+## torchvision 和 torchtext
 
-+   **MNIST**：手写数字图像数据集，用于图像分类任务。
-
-+   **CIFAR**：包含 10 个类别、60000 张 32x32 的彩色图像数据集，用于图像分类任务。
-
-+   **COCO**：通用物体检测、分割、关键点检测数据集，包含超过 330k 个图像和 2.5M 个目标实例的大规模数据集。
-
-+   **ImageNet**：包含超过 1400 万张图像，用于图像分类和物体检测等任务。
-
-+   **STL-10**：包含 100k 张 96x96 的彩色图像数据集，用于图像分类任务。
-
-+   **Cityscapes**：包含 5000 张精细注释的城市街道场景图像，用于语义分割任务。
-
-+   **SQUAD**：用于机器阅读理解任务的数据集。
-
-以上数据集可以通过 torchvision.datasets 模块中的函数进行加载，也可以通过自定义的方式加载其他数据集。
-
-### torchvision 和 torchtext
-
-+   **torchvision**： 一个图形库，提供了图片数据处理相关的 API 和数据集接口，包括数据集加载函数和常用的图像变换。
-
-+   **torchtext**： 自然语言处理工具包，提供了文本数据处理和建模的工具，包括数据预处理和数据加载的方式。
++ `torchvision`：一个图形库，提供了图片数据处理相关的 API 和数据集接口，包括数据集加载函数和常用的图像变换。
++ `torchtext`：自然语言处理工具包，提供了文本数据处理和建模的工具，包括数据预处理和数据加载的方式。
 
 ## torch.utils.data.Dataset
 
-Dataset 是 PyTorch 中用于数据集抽象的类。
+`Dataset` 是 PyTorch 中用于数据集抽象的类。
 
-自定义数据集需要继承 torch.utils.data.Dataset 并重写以下两个方法：
+自定义数据集需要继承 `torch.utils.data.Dataset` 并重写以下两个方法：
 
-+   len：返回数据集的大小。
++ `len`：返回数据集的大小。
++ `getitem`：按索引获取一个数据样本及其标签。
 
-+   getitem：按索引获取一个数据样本及其标签。
-
-## 实例
+### 实例
 
 ```
 import torch
@@ -81,8 +71,8 @@ labels = torch.randint(0, 2, (100,))  # 100 个标签，取值为 0 或 1
 dataset = MyDataset(data, labels)
 
 # 测试数据集
-print(&quot;数据集大小:&quot;, len(dataset))
-print(&quot;第 0 个样本:&quot;, dataset[0])
+print("数据集大小:", len(dataset))
+print("第 0 个样本:", dataset[0])
 ```
 
 输出结果如下：
@@ -94,19 +84,16 @@ print(&quot;第 0 个样本:&quot;, dataset[0])
 
 ## torch.utils.data.DataLoader
 
-DataLoader 是 PyTorch 提供的数据加载器，用于批量加载数据集。
+`DataLoader` 是 PyTorch 提供的数据加载器，用于批量加载数据集。
 
 提供了以下功能：
 
-+   **批量加载**：通过设置 batch_size。
++ 批量加载：通过设置 `batch_size`。
++ 数据打乱：通过设置 `shuffle=True`。
++ 多线程加速：通过设置 `num_workers`。
++ 迭代访问：方便地按批次访问数据。
 
-+   **数据打乱**：通过设置 shuffle=True。
-
-+   **多线程加速**：通过设置 num_workers。
-
-+   **迭代访问**：方便地按批次访问数据。
-
-## 实例
+### 实例
 
 ```
 import torch
@@ -141,9 +128,9 @@ dataloader = DataLoader(dataset, batch_size=10, shuffle=True, num_workers=0)
 
 # 遍历 DataLoader
 for batch_idx, (batch_data, batch_labels) in enumerate(dataloader):
-    print(f&quot;批次 {batch_idx + 1}&quot;)
-    print(&quot;数据:&quot;, batch_data)
-    print(&quot;标签:&quot;, batch_labels)
+    print(f"批次 {batch_idx + 1}")
+    print("数据:", batch_data)
+    print("标签:", batch_labels)
     if batch_idx == 2:  # 仅显示前 3 个批次
         break
 ```
@@ -191,11 +178,11 @@ for batch_idx, (batch_data, batch_labels) in enumerate(dataloader):
 
 ## 使用内置数据集
 
-PyTorch 提供了多个常用数据集，存放在 torchvision 中，特别适合图像任务。
+PyTorch 提供了多个常用数据集，存放在 `torchvision` 中，特别适合图像任务。
 
-加载 MNIST 数据集:
+加载 `MNIST` 数据集：
 
-## 实例
+### 实例
 
 ```
 import torchvision
@@ -210,7 +197,7 @@ transform = transforms.Compose([
 
 # 加载训练数据集
 train_dataset = torchvision.datasets.MNIST(
-    root=&#x27;./data&#x27;, train=True, transform=transform, download=True)
+    root='./data', train=True, transform=transform, download=True)
 
 # 使用 DataLoader 加载数据
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
@@ -218,8 +205,8 @@ train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 # 查看一个批次的数据
 data_iter = iter(train_loader)
 images, labels = next(data_iter)
-print(f&quot;批次图像大小: {images.shape}&quot;)  # 输出形状为 [batch_size, 1, 28, 28]
-print(f&quot;批次标签: {labels}&quot;)
+print(f"批次图像大小: {images.shape}")  # 输出形状为 [batch_size, 1, 28, 28]
+print(f"批次标签: {labels}")
 ```
 
 输出结果为：
@@ -232,13 +219,13 @@ print(f&quot;批次标签: {labels}&quot;)
 
 ## Dataset 与 DataLoader 的自定义应用
 
-以下是一个将 CSV 文件 作为数据源，并通过自定义 Dataset 和 DataLoader 读取数据。
+以下是一个将 CSV 文件作为数据源，并通过自定义 `Dataset` 和 `DataLoader` 读取数据。
 
-**CSV 文件内容如下（下载****ru**noob_pytorch_data.csv）：
+CSV 文件内容如下（下载 `runoob_pytorch_data.csv`）：
 
 ![](img/aed9a85947dc9f27c8fb009a93f4aaba.png)
 
-## 实例
+### 实例
 
 ```
 import torch
@@ -264,13 +251,13 @@ class CSVDataset(Dataset):
         return features, label
 
 # 实例化数据集和 DataLoader
-dataset = CSVDataset(&quot;runoob_pytorch_data.csv&quot;)
+dataset = CSVDataset("runoob_pytorch_data.csv")
 dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
 
 # 遍历 DataLoader
 for features, label in dataloader:
-    print(&quot;特征:&quot;, features)
-    print(&quot;标签:&quot;, label)
+    print("特征:", features)
+    print("标签:", label)
     break
 ```
 

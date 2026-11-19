@@ -1,19 +1,18 @@
+
 # 生成四格漫画
 
-> 来源：[https://qianniucity.feishu.cn/docx/Yvqwd3MwRogTrgxZeLFcukEFnZg](https://qianniucity.feishu.cn/docx/Yvqwd3MwRogTrgxZeLFcukEFnZg)
+> 来源：[`https://qianniucity.feishu.cn/docx/Yvqwd3MwRogTrgxZeLFcukEFnZg`](https://qianniucity.feishu.cn/docx/Yvqwd3MwRogTrgxZeLFcukEFnZg)
 
 ## 使用的工具
 
-+   Gemin 2.5 pro ：用于生成提示词
++ Gemin 2.5 pro ：用于生成提示词
++ ChatGPT：用于生成图片
 
-+   ChatGPT：用于生成图片
-
-![](img/9109bb7266fc7d9c2ff2656dbf982bd6.png)
+![](`img/9109bb7266fc7d9c2ff2656dbf982bd6.png`)
 
 ## 系统提示词
 
 ```
-
 // Author：esx
 // Model：Gemini2.5 pro
 // Version：1.1-20250410
@@ -47,91 +46,158 @@
 **(你需要基于这个结构和风格，为用户的每个请求填充内容)**
 
 ```text
+
 ## 核心指令：生成一张包含 2x2 网格布局的四格漫画，主题：[ ✨ 由AI助手根据用户意图填写的本图主题/标题 ✨ ]
 
 **【整体画面描述与布局要求】(Overall Scene Description &amp; Layout Requirements):**
 
 *   **最终图像:** 生成**一张单一图片**，内部包含一个清晰的 **2x2 网格**，分隔出四个独立的漫画画格。**这整张图聚焦于[ ✨ 简述这四个画格共同表现的某个步骤/场景 ✨ ]。**
+
 *   **主题/标题 (尝试性):** 图片最上方尝试清晰展示文字：“[ ✨ AI助手填写的标题 ✨ ]”。(AI 可能无法准确生成文字)
+
 *   **内容梗概:** 这四个画格通过不同视角/步骤，详细展示[ ✨ AI助手填写的角色 ✨ ]正在经历[ ✨ AI助手填写的核心内容 ✨ ]。风格遵循下方的【漫画风格配置文件】。
 
 **【各画格内容描述】(Individual Panel Content Descriptions):**
 
 1.  **左上格 (Top-Left Panel):**
+
     *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的左上格画面 ✨ ]
+
     *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的左上格下方文字 ✨ ]
+
 2.  **右上格 (Top-Right Panel):**
+
     *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的右上格画面 ✨ ]
+
     *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的右上格下方文字 ✨ ]
+
 3.  **左下格 (Bottom-Left Panel):**
+
     *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的左下格画面 ✨ ]
+
     *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的左下格下方文字 ✨ ]
+
 4.  **右下格 (Bottom-Right Panel):**
+
     *   **画面:** [ ✨ AI助手根据用户描述和拆解填写的右下格画面 ✨ ]
+
     *   **对应文字 (尝试放于此格下方):** [ ✨ AI助手精简并填写的右下格下方文字 ✨ ]
 
 ---
 
 **【漫画风格配置文件】(Comic Style Profile):**
+
 {
+
   &quot;comic_style_profile&quot;: {
+
     &quot;style_name&quot;: &quot;Clean Slice-of-Life Anime Comic Strip&quot;, // 可根据用户描述微调
+
     &quot;visual_elements&quot;: {
+
       &quot;character_design&quot;: {
+
         &quot;style&quot;: &quot;[ ✨ AI助手根据用户描述填写的角色风格，例如：可爱、简洁的机器人设计 或 简化、风格化的科学家形象 ✨ ]&quot;,
+
         &quot;recurring_character&quot;: &quot;**关键：[ ✨ 如果需要，强调角色形象需与系列其他图保持一致 ✨ ]**&quot;,
+
         &quot;expressions&quot;: &quot;[ ✨ 根据本图内容，描述需要传达的关键情绪 ✨ ]&quot;
+
       },
+
       &quot;line_art&quot;: {
+
         &quot;weight&quot;: &quot;Clean, consistent line weight.&quot;,
+
         &quot;style&quot;: &quot;Digital ink look.&quot;,
+
         &quot;color&quot;: &quot;Black or very dark brown/grey.&quot;
+
       },
+
       &quot;colors&quot;: {
+
         &quot;palette&quot;: &quot;Slightly muted, natural color palette,保持系列风格一致性。&quot;,
+
         &quot;shading&quot;: &quot;Simple cell shading.&quot;
+
       },
+
       &quot;lighting&quot;: {
+
         &quot;type&quot;: &quot;Clear, even lighting.&quot;
+
       },
+
       &quot;materials&quot;: {
+
         &quot;surface_texture&quot;: &quot;Smooth digital look.&quot;
+
       },
+
       &quot;composition&quot;: {
+
         &quot;framing&quot;: &quot;**关键：清晰的 2x2 网格布局，明显边界线。** 每个画格服务于本图核心内容的展现。&quot;,
+
         &quot;perspective&quot;: &quot;运用不同视角（中景、特写、对比等）增强表现力。&quot;,
+
         &quot;background_detail&quot;: &quot;背景简洁，突出主体和关键信息。&quot;
+
       },
+
       &quot;typography&quot;: {
+
         &quot;font_style&quot;: &quot;清晰、标准的简体中文字体，风格简洁。&quot;,
+
         &quot;text_placement&quot;: [
+
             &quot;**1. 标题:** 尝试在整个图片顶部放置【主题/标题】文字。&quot;,
+
             &quot;**2. 单格文字 (高风险尝试):** 尝试在【各画格内容描述】中指定的**每一个画格的正下方、网格线之外**，放置对应的短文字。**AI可能无法精确定位，失败风险高。**&quot;,
+
             &quot;**3. 文字内容:** 使用【各画格内容描述】中指定的精简文字。&quot;
+
           ],
+
         &quot;text_color&quot;: &quot;黑色或深灰色。&quot;
+
       },
+
       &quot;rendering_style&quot;: {
+
         &quot;technique&quot;: &quot;Clean digital anime/manga style, consistent across the entire image, 保持风格连续性。&quot;,
+
         &quot;detail_level&quot;: &quot;Medium, 重点在于清晰传达概念和情绪。&quot;
+
       }
+
     },
+
     &quot;purpose&quot;: &quot;生成一张2x2四格漫画，详细描绘用户指定的某个步骤或场景。&quot;,
+
     &quot;negative_constraints&quot;: [
+
       &quot;不要生成单幅画格图像（除非用户明确要求）。&quot;,
+
       &quot;不要缺少网格或边界线。&quot;,
+
       &quot;避免角色形象不一致。&quot;,
+
       &quot;避免文字乱码、丢失或放置位置严重错误（尤其是单格文字）。&quot;,
+
       &quot;画格内部不要有文字（除非是场景固有元素）。&quot;,
+
       &quot;避免生成与用户描述无关的内容。&quot;,
+
       &quot;避免过于真实的真人形象（除非特别说明）。&quot;
+
     ]
+
   }
+
 }
 
 --ar 3:4
-```
-
 
 ```
 
@@ -168,6 +234,10 @@ Dense标签）。**
 ```
 
 ## 输出 Prompt
+
+
+
+# Qwen3 两大架构四格漫画生成提示词
 
 ```
 ## 核心指令：生成一张包含 2x2 网格布局的四格漫画，主题：［ Qwen3 两大架构：应对不同挑战！ ］
@@ -256,11 +326,11 @@ Dense标签）。**
 --ar 3:4
 ```
 
-### 没有地图生成的图片
+## 没有地图生成的图片
 
 ![](img/45e795a8101e320158fcf5e173081f45.png)
 
-### 有底图生成的图片
+## 有底图生成的图片
 
 ![](img/8536ca2965969f067d33be59007684cc.png)
 

@@ -1,3 +1,4 @@
+
 # 2026开年教程！Claude Code七大组件，老金一篇讲明明白白！90%的人只会用1个！
 
 > 来源：[https://my.feishu.cn/docx/EwTOdDQK5o0uJex9aPrcpZ3Enob](https://my.feishu.cn/docx/EwTOdDQK5o0uJex9aPrcpZ3Enob)
@@ -16,7 +17,7 @@
 
 Claude Code其实是个"七件套"。
 
-Skills、MCP、Commands、Hooks、Subagents、CLAUDE.md、Plugins。
+Skills、MCP、Commands、Hooks、Subagents、`CLAUDE.md`、Plugins。
 
 老金也在整个新项目，还没做完，能一键使用这些了，并且是分组快速开关。
 
@@ -36,11 +37,11 @@ Skills、MCP、Commands、Hooks、Subagents、CLAUDE.md、Plugins。
 
 老金我统计过：
 
-+   **只用CL**AUDE.md的人：效率提升1.5倍
++ 只用`CLAUDE.md`的人：效率提升1.5倍
 
-+   **用上**Skills+Commands的人：效率提升3倍
++ 用上Skills+Commands的人：效率提升3倍
 
-+   七个组件都用好的人：效率提升**10倍以上**
++ 七个组件都用好的人：效率提升**10倍以上**
 
 今天一次性给你讲透。
 
@@ -52,21 +53,21 @@ Skills、MCP、Commands、Hooks、Subagents、CLAUDE.md、Plugins。
 
 把Claude Code想象成一家餐厅。
 
-**CLAUDE.md** = 餐厅菜单
+`CLAUDE.md` = 餐厅菜单
 
 告诉厨师你喜欢什么口味。
 
 有什么忌口。
 
-**Commands** = 服务员
+`Commands` = 服务员
 
 你点菜的入口。
 
-喊一声"/红烧肉"。
+喊一声`/红烧肉`。
 
 服务员就去后厨传话。
 
-**Skills** = 厨师的菜谱
+`Skills` = 厨师的菜谱
 
 详细写着红烧肉怎么做。
 
@@ -76,7 +77,7 @@ Skills、MCP、Commands、Hooks、Subagents、CLAUDE.md、Plugins。
 
 然后炖40分钟...
 
-**MCP** = 外卖平台
+`MCP` = 外卖平台
 
 餐厅自己做不了的菜。
 
@@ -84,19 +85,19 @@ Skills、MCP、Commands、Hooks、Subagents、CLAUDE.md、Plugins。
 
 就从外面叫。
 
-**Hooks** = 质检员
+`Hooks` = 质检员
 
 每道菜出锅前检查一下。
 
 不合格打回去重做。
 
-**Subagents** = 帮厨
+`Subagents` = 帮厨
 
 一个厨师忙不过来。
 
 叫几个帮厨同时做不同的菜。
 
-**Plugins** = 预制菜包
+`Plugins` = 预制菜包
 
 别人调好的料包。
 
@@ -108,7 +109,7 @@ Skills、MCP、Commands、Hooks、Subagents、CLAUDE.md、Plugins。
 
 **下面的内容就好懂了。**
 
-## 1、CLAUDE.md：项目记忆
+## 1、`CLAUDE.md`：项目记忆
 
 这是最简单的组件。
 
@@ -132,9 +133,9 @@ Claude每次启动都会自动读取它。
 
 **怎么用？**
 
-在项目根目录创建一个 CLAUDE.md文件：
+在项目根目录创建一个`CLAUDE.md`文件：
 
-```
+```markdown
 # 我的项目
 
 这是一个React项目，用TypeScript写的。
@@ -155,7 +156,7 @@ Claude看到这个文件。
 
 就知道你的项目是啥情况了。
 
-**老金实测**：加了CLAUDE.md之后，代码风格一致性提升了一大截。
+**老金实测**：加了`CLAUDE.md`之后，代码风格一致性提升了一大截。
 
 不用每次都重复说"用TypeScript"。
 
@@ -165,13 +166,13 @@ Claude看到这个文件。
 
 **快捷操作**：
 
-1、**用 ****#****键快速添加指令**（官方功能）
+1、`#`键快速添加指令（官方功能）
 
 这是Claude Code的隐藏神器。
 
-在对话中直接按 #键，输入你想让Claude记住的规则。
+在对话中直接按`#`键，输入你想让Claude记住的规则。
 
-Claude会自动把它写入对应的CLAUDE.md文件。
+Claude会自动把它写入对应的`CLAUDE.md`文件。
 
 比如你想让Claude以后都用中文注释：
 
@@ -179,7 +180,7 @@ Claude会自动把它写入对应的CLAUDE.md文件。
 # 所有代码注释用中文
 ```
 
-按回车，Claude就自动帮你写进CLAUDE.md了。
+按回车，Claude就自动帮你写进`CLAUDE.md`了。
 
 不用手动打开文件编辑。
 
@@ -187,19 +188,19 @@ Claude会自动把它写入对应的CLAUDE.md文件。
 
 发现Claude老是犯同一个错？
 
-用 #键加一条规则，以后就不会再犯了。
+用`#`键加一条规则，以后就不会再犯了。
 
-2、**用 ****/init****命令自动生成**
+2、`/init`命令自动生成
 
-新项目不知道怎么写CLAUDE.md？
+新项目不知道怎么写`CLAUDE.md`？
 
-运行 /init命令。
+运行`/init`命令。
 
 Claude会分析你的项目结构、技术栈、依赖。
 
-然后自动生成一份CLAUDE.md。
+然后自动生成一份`CLAUDE.md`。
 
-**老金实测**：/init生成的配置文件，80%的内容可以直接用。
+**老金实测**：`/init`生成的配置文件，80%的内容可以直接用。
 
 剩下20%根据自己习惯微调就行。
 
@@ -211,7 +212,7 @@ Claude会分析你的项目结构、技术栈、依赖。
 
 多级配置灵活，全局+用户+项目三级覆盖。
 
-支持父目录和子目录的CLAUDE.md按需加载。
+支持父目录和子目录的`CLAUDE.md`按需加载。
 
 **劣势**：
 
@@ -223,19 +224,19 @@ Claude会分析你的项目结构、技术栈、依赖。
 
 **多级配置**：
 
-CLAUDE.md支持三个级别的配置，按优先级从低到高：
+`CLAUDE.md`支持三个级别的配置，按优先级从低到高：
 
-1、**全局配置**：~/.claude/CLAUDE.md
+1、`~/.claude/CLAUDE.md`
 
 适用于所有项目的通用规范。
 
 比如你的代码风格偏好、常用技术栈。
 
-2、**用户配置**：~/CLAUDE.md
+2、`~/CLAUDE.md`
 
 用户级别的个人偏好。
 
-3、**项目配置**：./CLAUDE.md（项目根目录）
+3、`./CLAUDE.md`（项目根目录）
 
 项目特定的规范和上下文。
 
@@ -251,11 +252,11 @@ CLAUDE.md支持三个级别的配置，按优先级从低到高：
 
 这样新项目只需要写项目配置就行。
 
-## 2、Commands：快捷入口
+## 2、`Commands`：快捷入口
 
 **是什么？**
 
-就是 /xxx这种斜杠命令。
+就是`/xxx`这种斜杠命令。
 
 **干嘛用？**
 
@@ -265,9 +266,9 @@ CLAUDE.md支持三个级别的配置，按优先级从低到高：
 
 **怎么用？**
 
-在 .claude/commands/目录下创建一个markdown文件：
+在`.claude/commands/`目录下创建一个markdown文件：
 
-```
+```markdown
 # 文件名：write-article.md
 
 帮我写一篇公众号文章，主题是：$ARGUMENTS
@@ -288,13 +289,13 @@ Claude就会按照你定义的模板执行。
 
 **老金实测**：我现在写文章就一句话。
 
-/01-write [主题]，剩下的全自动。
+`/01-write [主题]`，剩下的全自动。
 
 **优势**：
 
 一句话触发复杂流程，效率拉满。
 
-支持$ARGUMENTS传参，灵活度高。
+支持`$ARGUMENTS`传参，灵活度高。
 
 团队共享命令，统一工作流。
 
@@ -306,7 +307,7 @@ Claude就会按照你定义的模板执行。
 
 命令多了容易忘，得维护文档。
 
-## 3、Skills：工作流模板
+## 3、`Skills`：工作流模板
 
 这是七个组件里最核心的一个。
 
@@ -342,11 +343,11 @@ Claude就会按照你定义的模板执行。
 
 **怎么用？**
 
-在 .claude/skills/目录下创建一个文件夹。
+在`.claude/skills/`目录下创建一个文件夹。
 
-里面放一个 SKILL.md：
+里面放一个`SKILL.md`：
 
-```
+```markdown
 ---
 name: article-writer
 description: 公众号文章写作助手
@@ -359,7 +360,7 @@ allowed-tools: WebSearch, Read, Write
 用WebSearch搜索主题相关的最新信息
 
 ## 步骤2：读取写作规范
-Read(&quot;.claude/skills/article-writer/style-guide.md&quot;)
+Read(".claude/skills/article-writer/style-guide.md")
 
 ## 步骤3：写作
 基于搜索结果和规范，写一篇2500字的文章
@@ -368,7 +369,7 @@ Read(&quot;.claude/skills/article-writer/style-guide.md&quot;)
 Write到articles目录
 ```
 
-**关键点**：allowed-tools这一行很重要。
+**关键点**：`allowed-tools`这一行很重要。
 
 写在这里的工具。
 
@@ -388,21 +389,21 @@ Write到articles目录
 
 质量稳定。
 
-**Skills的智能特性**：
+**`Skills`的智能特性**：
 
 很多人不知道，Skills不是死板的配置文件。
 
 它有四个智能特性：
 
-1、**自动发现**
+1、自动发现
 
-Claude启动时会自动扫描 .claude/skills/目录。
+Claude启动时会自动扫描`.claude/skills/`目录。
 
 你不用手动告诉它"我有哪些技能"。
 
 放进去就能用。
 
-2、**上下文驱动加载**
+2、上下文驱动加载
 
 Claude不会一股脑把所有Skills都加载进来。
 
@@ -414,7 +415,7 @@ Claude不会一股脑把所有Skills都加载进来。
 
 省token。
 
-3、**渐进式披露**
+3、渐进式披露
 
 Skill里的指令不是一次性全部注入。
 
@@ -422,7 +423,7 @@ Claude会按需展示能力。
 
 避免信息过载。
 
-4、**动态加载**
+4、动态加载
 
 运行时按需激活。
 
@@ -442,7 +443,7 @@ Claude会按需展示能力。
 │   └── config/           # 配置文件
 ```
 
-**SKILL.md是入口文件**。
+`SKILL.md`是入口文件。
 
 Claude通过它知道这个Skill是干嘛的。
 
@@ -450,13 +451,13 @@ Claude通过它知道这个Skill是干嘛的。
 
 老金我的写作Skill就用了这个完整结构。
 
-instructions里放写作流程。
+`instructions`里放写作流程。
 
-prompts里放风格规范。
+`prompts`里放风格规范。
 
-templates里放文章模板。
+`templates`里放文章模板。
 
-config里放质检配置。
+`config`里放质检配置。
 
 **优势**：
 
@@ -470,7 +471,7 @@ config里放质检配置。
 
 **劣势**：
 
-学习曲线陡，目录结构、SKILL.md写法都要学。
+学习曲线陡，目录结构、`SKILL.md`写法都要学。
 
 调试困难，Skill没生效不知道是哪里出问题。
 
@@ -480,13 +481,13 @@ config里放质检配置。
 
 **老金建议**：
 
-先从简单Skill开始，一个SKILL.md就够了。
+先从简单Skill开始，一个`SKILL.md`就够了。
 
-复杂了再加instructions、prompts目录。
+复杂了再加`instructions`、`prompts`目录。
 
 Skill描述写清楚，让Claude知道什么时候该用。
 
-## 4、MCP：外部工具接口
+## 4、`MCP`：外部工具接口
 
 **是什么？**
 
@@ -506,14 +507,14 @@ Claude本身做不到的事。
 
 **怎么用？**
 
-在项目根目录创建 .mcp.json：
+在项目根目录创建`.mcp.json`：
 
-```
+```json
 {
-  &quot;mcpServers&quot;: {
-    &quot;chrome-devtools&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;@anthropic/mcp-chrome-devtools&quot;]
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-chrome-devtools"]
     }
   }
 }
@@ -531,23 +532,23 @@ Claude就能调用这个MCP服务器了。
 mcp__chrome-devtools__take_screenshot()
 ```
 
-**Skills和MCP的区别**：
+**`Skills`和`MCP`的区别**：
 
-Skills是"怎么做"。
+`Skills`是"怎么做"。
 
 定义工作流程。
 
-MCP是"用什么做"。
+`MCP`是"用什么做"。
 
 提供工具能力。
 
 打个比方：
 
-Skills是菜谱。
+`Skills`是菜谱。
 
 告诉你红烧肉怎么做。
 
-MCP是厨具。
+`MCP`是厨具。
 
 给你锅碗瓢盆。
 
@@ -567,7 +568,7 @@ Claude的能力直接翻倍。
 
 MCP配置出问题了怎么办？
 
-用 --mcp-debug标志启动Claude Code：
+用`--mcp-debug`标志启动Claude Code：
 
 ```
 claude --mcp-debug
@@ -605,7 +606,7 @@ Token消耗暴增，每个MCP服务器启动时都要向Claude注册工具列表
 
 用不到的及时关掉。
 
-## 5、Hooks：事件钩子
+## 5、`Hooks`：事件钩子
 
 **是什么？**
 
@@ -629,15 +630,15 @@ Token消耗暴增，每个MCP服务器启动时都要向Claude注册工具列表
 
 **怎么用？**
 
-在 .claude/settings.json里配置：
+在`.claude/settings.json`里配置：
 
-```
+```json
 {
-  &quot;hooks&quot;: {
-    &quot;PreToolUse&quot;: [
+  "hooks": {
+    "PreToolUse": [
       {
-        &quot;matcher&quot;: &quot;Write&quot;,
-        &quot;hooks&quot;: [&quot;python .claude/hooks/check_before_write.py&quot;]
+        "matcher": "Write",
+        "hooks": ["python .claude/hooks/check_before_write.py"]
       }
     ]
   }
@@ -650,47 +651,47 @@ Token消耗暴增，每个MCP服务器启动时都要向Claude注册工具列表
 
 先跑一下脚本。
 
-脚本名叫 check_before_write.py。
+脚本名叫`check_before_write.py`。
 
-**九种Hook事件**：
+**九种`Hook`事件**：
 
-**PreToolUse**：工具调用前触发。
+**`PreToolUse`**：工具调用前触发。
 
 用来拦截危险操作。
 
-**PostToolUse**：工具调用后触发。
+**`PostToolUse`**：工具调用后触发。
 
 用来处理结果、记录日志。
 
-**SessionStart**：会话开始时触发。
+**`SessionStart`**：会话开始时触发。
 
 用来初始化环境、加载上下文。
 
-**SessionEnd**：会话结束时触发。
+**`SessionEnd`**：会话结束时触发。
 
 用来清理资源、生成报告。
 
-**PreCompact**：对话压缩前触发。
+**`PreCompact`**：对话压缩前触发。
 
 用来保存重要上下文，防止压缩丢失关键信息。
 
-UserPromptSubmit：用户提交提示后触发。
+`UserPromptSubmit`：用户提交提示后触发。
 
 用来增强提示、预处理输入。
 
-**Notification**：通知事件触发。
+`Notification`：通知事件触发。
 
 用来自定义通知处理。
 
-**Stop**：停止信号触发。
+`Stop`：停止信号触发。
 
 用来优雅终止、释放资源。
 
-**SubagentStop**：子代理停止时触发。
+`SubagentStop`：子代理停止时触发。
 
 用来清理子任务。
 
-**老金实测**：我配了一个PreToolUse Hook。
+**老金实测**：我配了一个`PreToolUse` `Hook`。
 
 专门检查Claude要写的代码有没有脏话。
 
@@ -720,13 +721,13 @@ UserPromptSubmit：用户提交提示后触发。
 
 **老金建议**：
 
-先从PreToolUse开始，拦截危险操作最实用。
+先从`PreToolUse`开始，拦截危险操作最实用。
 
 脚本保持简单，复杂逻辑拆成多个小脚本。
 
 加好日志，出问题能快速定位。
 
-## 6、Subagents：分身术
+## 6、`Subagents`：分身术
 
 **是什么？**
 
@@ -744,10 +745,10 @@ UserPromptSubmit：用户提交提示后触发。
 
 **怎么用？**
 
-用Task工具：
+用`Task`工具：
 
 ```
-Task(subagent_type=&quot;Explore&quot;, prompt=&quot;搜索项目里所有的API端点&quot;)
+Task(subagent_type="Explore", prompt="搜索项目里所有的API端点")
 ```
 
 这个命令会启动一个专门搜索代码的子代理。
@@ -758,43 +759,43 @@ Task(subagent_type=&quot;Explore&quot;, prompt=&quot;搜索项目里所有的API
 
 **常用的子代理类型**：
 
-**Explore**：快速搜索代码库。
+**`Explore`**：快速搜索代码库。
 
-**Plan**：设计实现方案。
+**`Plan`**：设计实现方案。
 
-**debugger**：调试错误。
+**`debugger`**：调试错误。
 
 **思考层级（官方定义）**：
 
 让Claude深度思考时，用这些关键词：
 
-+   think → 标准思考
++ `think` → 标准思考
 
-+   think hard → 深度思考
++ `think hard` → 深度思考
 
-+   think harder → 更深度思考
++ `think harder` → 更深度思考
 
-+   ultrathink → 极限思考
++ `ultrathink` → 极限思考
 
 每个层级分配的思考预算递增。
 
-复杂问题用 ultrathink，简单问题用 think就够了。
+复杂问题用`ultrathink`，简单问题用`think`就够了。
 
 **后台运行模式**：
 
 子代理还支持后台运行。
 
-加个 run_in_background=true参数：
+加个`run_in_background=true`参数：
 
 ```
-Task(subagent_type=&quot;Explore&quot;, prompt=&quot;搜索所有API端点&quot;, run_in_background=true)
+Task(subagent_type="Explore", prompt="搜索所有API端点", run_in_background=true)
 ```
 
 这样主Claude可以继续干别的。
 
 子代理在后台默默干活。
 
-干完了用 TaskOutput取结果。
+干完了用`TaskOutput`取结果。
 
 **典型场景**：
 
@@ -820,13 +821,19 @@ Task(subagent_type=&quot;Explore&quot;, prompt=&quot;搜索所有API端点&quot;
 
 并行处理，多个任务同时跑，效率翻倍。
 
+
+
+# Claude Code 七个组件详解与使用建议
+
+## Subagents：独立子代理
+
 独立上下文，每个子代理专注自己的任务，不互相干扰。
 
 后台运行模式，主Claude可以继续干别的，不用干等。
 
 专业分工，不同类型的子代理擅长不同任务。
 
-**劣势**：
+### 劣势
 
 Token爆炸，每个子代理都独立消耗token，开3个子代理就是3倍消耗。
 
@@ -836,7 +843,7 @@ Token爆炸，每个子代理都独立消耗token，开3个子代理就是3倍�
 
 启动开销，每个子代理启动都需要时间，简单任务反而更慢。
 
-**老金建议**：
+### 老金建议
 
 简单任务别用子代理，杀鸡用牛刀。
 
@@ -844,27 +851,27 @@ Token爆炸，每个子代理都独立消耗token，开3个子代理就是3倍�
 
 注意token消耗，别一口气开太多。
 
-## 7、Plugins：预制技能包
+## Plugins：预制技能包
 
-**是什么？**
+### 是什么？
 
-别人做好的Skills集合。
+别人做好的`Skills`集合。
 
 打包成插件。
 
 一个插件可以包含多种能力：
 
-Commands、Agents、Skills、Hooks、MCP服务器。
+`Commands`、`Agents`、`Skills`、`Hooks`、`MCP`服务器。
 
-**干嘛用？**
+### 干嘛用？
 
-不用自己写Skill。
+不用自己写`Skill`。
 
 装上就能用。
 
-**怎么用？**
+### 怎么用？
 
-用 /plugin命令安装：
+用`/plugin`命令安装：
 
 ```
 /plugin add anthropic-agent-skills
@@ -882,11 +889,13 @@ document-skills:xlsx   # 处理Excel
 document-skills:pptx   # 处理PPT
 ```
 
-**官方插件仓库有13个插件**：
+### 官方插件仓库有13个插件
 
 老金我挑几个实用的说说：
 
-**code-review**：自动PR代码审查。
+### `code-review`
+
+自动PR代码审查。
 
 启动5个Sonnet并行审查你的代码。
 
@@ -898,15 +907,17 @@ document-skills:pptx   # 处理PPT
 
 效率拉满。
 
-**commit-commands**：Git工作流自动化。
+### `commit-commands`
 
-/commit一键提交。
+Git工作流自动化。
 
-/commit-push-pr一键提交+推送+创建PR。
+`/commit`一键提交。
+
+`/commit-push-pr`一键提交+推送+创建PR。
 
 懒人福音。
 
-security-guidance：安全提醒Hook。
+### `security-guidance`：安全提醒`Hook`
 
 每次你调用工具前。
 
@@ -914,13 +925,17 @@ security-guidance：安全提醒Hook。
 
 防止你写出有漏洞的代码。
 
-**hookify**：自定义Hooks创建工具。
+### `hookify`
 
-不会写Hook？
+自定义`Hooks`创建工具。
+
+不会写`Hook`？
 
 用这个插件帮你生成。
 
-**老金实测**：官方的document-skills插件真香。
+### 老金实测
+
+官方的`document-skills`插件真香。
 
 处理PDF？一句话。
 
@@ -928,29 +943,29 @@ security-guidance：安全提醒Hook。
 
 处理PPT？还是一句话。
 
-**⚠️ 插件和Skills的区别**：
+### ⚠️ 插件和 `Skills` 的区别
 
-Skills是单一工作流模板。
+`Skills`是单一工作流模板。
 
-Plugins是打包好的能力集合。
+`Plugins`是打包好的能力集合。
 
 打个比方：
 
-Skills是一道菜的菜谱。
+`Skills`是一道菜的菜谱。
 
-Plugins是一整套预制菜包。
+`Plugins`是一整套预制菜包。
 
 里面可能有好几道菜的料包。
 
-**优势**：
+### 优势
 
-开箱即用，装上就能用，不用自己写Skill。
+开箱即用，装上就能用，不用自己写`Skill`。
 
 社区资源丰富，官方13个插件覆盖常见场景。
 
-功能打包完整，一个插件可能包含多个Skills、Commands、Hooks。
+功能打包完整，一个插件可能包含多个`Skills`、`Commands`、`Hooks`。
 
-**劣势**：
+### 劣势
 
 依赖第三方维护，插件作者不更新你就卡住了。
 
@@ -960,7 +975,9 @@ Plugins是一整套预制菜包。
 
 黑盒操作，不知道插件内部具体做了什么。
 
-**老金建议**：先用官方插件，稳定靠谱。社区插件谨慎选择，看看star数和更新频率。
+### 老金建议
+
+先用官方插件，稳定靠谱。社区插件谨慎选择，看看star数和更新频率。
 
 ## 七个组件怎么配合？
 
@@ -997,9 +1014,9 @@ Plugins是一整套预制菜包。
     输出结果
 ```
 
-**七个组件各司其职。**
+### 七个组件各司其职
 
-**串起来就是一个完整的工作流。**
+### 串起来就是一个完整的工作流
 
 ## 老金建议：学习顺序
 
@@ -1007,7 +1024,7 @@ Plugins是一整套预制菜包。
 
 按这个顺序学：
 
-**第一步：CLAUDE.md**
+### 第一步：`CLAUDE.md`
 
 最简单。
 
@@ -1015,13 +1032,13 @@ Plugins是一整套预制菜包。
 
 花10分钟搞定。
 
-**第二步：Commands**
+### 第二步：`Commands`
 
 定义几个常用命令。
 
 花30分钟搞定。
 
-**第三步：Skills**
+### 第三步：`Skills`
 
 把常用工作流模板化。
 
@@ -1029,27 +1046,27 @@ Plugins是一整套预制菜包。
 
 但回报最大。
 
-**第四步：MCP**
+### 第四步：`MCP`
 
-装几个常用的MCP服务器。
+装几个常用的`MCP`服务器。
 
-官方的chrome-devtools挺好用。
+官方的`chrome-devtools`挺好用。
 
-github那个也不错。
+`github`那个也不错。
 
-**第五步：Hooks**
+### 第五步：`Hooks`
 
 配置一些安全检查。
 
 防止Claude干傻事。
 
-**第六步：Subagents**
+### 第六步：`Subagents`
 
-学会用Task工具启动子代理。
+学会用`Task`工具启动子代理。
 
 复杂任务用得上。
 
-**第七步：Plugins**
+### 第七步：`Plugins`
 
 探索社区插件。
 
@@ -1061,49 +1078,49 @@ github那个也不错。
 
 Q1：我是纯小白，应该从哪个组件开始学？
 
-从CLAUDE.md开始。
+从`CLAUDE.md`开始。
 
 在项目根目录创建一个文件，写几句话告诉Claude你的项目是干嘛的。
 
 10分钟搞定，立刻见效。
 
-Q2：Skills和Commands有什么区别？
+Q2：`Skills`和`Commands`有什么区别？
 
-Commands是入口（服务员），Skills是流程（菜谱）。
+`Commands`是入口（服务员），`Skills`是流程（菜谱）。
 
-你喊"/写文章"，Commands接收命令，然后调用Skills里的写作流程。
+你喊`/写文章"，`Commands`接收命令，然后调用`Skills`里的写作流程。
 
-简单任务用Commands就够了，复杂工作流才需要Skills。
+简单任务用`Commands`就够了，复杂工作流才需要`Skills`。
 
-**Q3：MCP装多少个合适？**
+### Q3：`MCP`装多少个合适？
 
 3-5个就够了。
 
 装太多会：
 
-+   Token消耗暴增（每个MCP启动都要注册工具列表）
++   Token消耗暴增（每个`MCP`启动都要注册工具列表）
 
-+   响应变慢（Claude要等每个MCP响应）
++   响应变慢（Claude要等每个`MCP`响应）
 
 +   可能内存泄漏
 
-老金推荐必装：chrome-devtools、github。
+老金推荐必装：`chrome-devtools`、`github`。
 
 其他按需装。
 
-Q4：Hooks会不会拖慢速度？
+Q4：`Hooks`会不会拖慢速度？
 
 会，但可以接受。
 
-每次工具调用都会触发Hook脚本。
+每次工具调用都会触发`Hook`脚本。
 
 脚本保持简单（<100行），影响可以忽略。
 
 复杂逻辑拆成多个小脚本。
 
-Q5：Subagents和普通对话有什么区别？
+Q5：`Subagents`和普通对话有什么区别？
 
-Subagents是独立的Claude实例。
+`Subagents`是独立的Claude实例。
 
 有自己的上下文，不会污染主对话。
 
@@ -1111,23 +1128,23 @@ Subagents是独立的Claude实例。
 
 但注意：每个子代理都独立消耗Token！
 
-Q6：Plugins和Skills到底怎么选？
+Q6：`Plugins`和`Skills`到底怎么选？
 
-+   有现成Plugins → 直接用，省时间
++   有现成`Plugins` → 直接用，省时间
 
-+   没有合适的 → 自己写Skills
++   没有合适的 → 自己写`Skills`
 
-+   Plugins是别人打包好的Skills集合
++   `Plugins`是别人打包好的`Skills`集合
 
-**Q7：这七个组件必须全部用吗？**
+### Q7：这七个组件必须全部用吗？
 
 不用。
 
 按需使用：
 
-+   个人项目：CLAUDE.md + Commands 就够了
++   个人项目：`CLAUDE.md` + `Commands` 就够了
 
-+   团队协作：加上Skills统一工作流
++   团队协作：加上`Skills`统一工作流
 
 +   复杂项目：全套上阵
 
@@ -1139,9 +1156,9 @@ Q6：Plugins和Skills到底怎么选？
 
 不是组件越多越好，而是用对场景最重要。
 
-个人项目？CLAUDE.md + Commands够了。
+个人项目？`CLAUDE.md` + `Commands`够了。
 
-团队协作？加上Skills统一工作流。
+团队协作？加上`Skills`统一工作流。
 
 复杂项目？全套上阵，效率翻10倍不是吹的。
 

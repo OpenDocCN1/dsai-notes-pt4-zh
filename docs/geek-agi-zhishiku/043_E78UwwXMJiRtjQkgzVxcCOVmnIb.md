@@ -1,12 +1,11 @@
+
 # Cursor及MCP入门第一课
 
 > 来源：[https://geekbang.feishu.cn/docx/U723dEqv0o0E4xxK7IecC8q8nLe](https://geekbang.feishu.cn/docx/U723dEqv0o0E4xxK7IecC8q8nLe)
 
 欢迎来到 Cursor 的世界！如果你没有任何编程基础，不用担心，本教程将一步步带你了解 Cursor，并帮助你开始使用它进行简单的编程任务。Cursor 是一款 AI 辅助的代码编辑器，专为软件开发设计，能够让编程变得更简单、高效。让我们开始吧！
 
----
-
-# 什么是 Cursor？
+## 什么是Cursor？
 
 Cursor 是什么？
 
@@ -18,27 +17,20 @@ Cursor 是什么？
 
 Cursor 的主要特点和优势：
 
-+   AI 辅助编程：自动补全代码、检测错误、提供建议。
++ AI 辅助编程：自动补全代码、检测错误、提供建议。
++ 简单易用的界面：界面直观，容易上手。
++ 支持多种语言：如 Python、JavaScript、HTML 等。
++ 强大工具：内置终端、调试器等功能。
 
-+   简单易用的界面：界面直观，容易上手。
+## 下载Cursor
 
-+   支持多种语言：如 Python、JavaScript、HTML 等。
-
-+   强大工具：内置终端、调试器等功能。
-
----
-
-## 下载 Cursor
-
-1.  打开浏览器，访问 [Cursor 官网](https://www.cursor.com/)。
-
-1.  点击“Download”按钮，选择适合你电脑的版本（Windows、macOS 或 Linux）。
-
-1.  下载完成后，双击安装文件，按照提示完成安装。
+1. 打开浏览器，访问 [Cursor 官网](https://www.cursor.com/)。
+2. 点击`Download`按钮，选择适合你电脑的版本（Windows、macOS 或 Linux）。
+3. 下载完成后，双击安装文件，按照提示完成安装。
 
 ## 新建项目
 
-让我们开始第一个项目的准备工作吧，首先在界面中选择open project
+让我们开始第一个项目的准备工作吧，首先在界面中选择`open project`
 
 ![](img/4d254da48d3179e9e6068858a5274c51.png)
 
@@ -50,23 +42,20 @@ Cursor 的主要特点和优势：
 
 打开任何一个创建的项目后，你会看到以下几个主要区域：
 
-+   代码区：中间部分，用于编写代码。
-
-+   文件区：左侧，包含当前项目文件管理、搜索等工具。
-
-+   状态栏：底部，显示终端运行情况和提示。
-
-+   AI互动区：右侧，显示你与AI之间的对话。
++ 代码区：中间部分，用于编写代码。
++ 文件区：左侧，包含当前项目文件管理、搜索等工具。
++ 状态栏：底部，显示终端运行情况和提示。
++ AI互动区：右侧，显示你与AI之间的对话。
 
 ![](img/11f53650dd67e250b587b291ffe7dca7.png)
 
 ## Cursor上手小技巧
 
-在正式开始我们的项目前，先来设置一下Cursor Rules
+在正式开始我们的项目前，先来设置一下`Cursor Rules`
 
 ## 什么是Cursor Rules？
 
-Cursor Rules简单来说就是为你的Cursor做一个角色定位，让它以一个更加专业的角色为你服务。它允许开发者为 AI 助手设置特定的指导原则和行为模式，使 AI 在生成代码、提供建议和响应查询时，能够更好地适应开发者的编码风格和项目需求。
+`Cursor Rules`简单来说就是为你的`Cursor`做一个角色定位，让它以一个更加专业的角色为你服务。它允许开发者为 AI 助手设置特定的指导原则和行为模式，使 AI 在生成代码、提供建议和响应查询时，能够更好地适应开发者的编码风格和项目需求。
 
 我们首先设置一个通用规则。
 
@@ -74,11 +63,11 @@ Cursor Rules简单来说就是为你的Cursor做一个角色定位，让它以�
 
 ![](img/35320e570443cadf2b5b81cef40ffa78.png)
 
-在cursor settings中找到Rules
+在`cursor settings`中找到`Rules`
 
 ![](img/24421d7caad9894bafd6c5067747dae4.png)
 
-将以下文本拷贝到User Rules后，关掉页面就可以了
+将以下文本拷贝到`User Rules`后，关掉页面就可以了
 
 ```
 # 规则元信息
@@ -116,7 +105,7 @@ JSX 标签换行时，闭合标签单独一行；
 ### RULE3: 不要主动使用 git commit 提交代码
 ```
 
-当你从新手村毕业，希望涉及更加专业的APP开发、前后端项目时，可以在下方github项目中寻找更加专业的Cursor Rules。
+当你从新手村毕业，希望涉及更加专业的APP开发、前后端项目时，可以在下方github项目中寻找更加专业的`Cursor Rules`。
 
 https://github.com/PatrickJS/awesome-cursorrules
 
@@ -124,7 +113,7 @@ https://github.com/PatrickJS/awesome-cursorrules
 
 ## 如何使用Cursor制作第一个小作品
 
-设置好Cursor Rules之后，我们便可以开始第一个小作品的创作了，我在这里演示的是一个打砖块的小游戏
+设置好`Cursor Rules`之后，我们便可以开始第一个小作品的创作了，我在这里演示的是一个打砖块的小游戏
 
 首先，在右侧对话框中输入本次项目的（可以非常口语化）
 
@@ -136,7 +125,7 @@ https://github.com/PatrickJS/awesome-cursorrules
 
 可以看到，左侧文件夹中已经生成了好几个文件，中间已经显示AI为你生成了不少代码，右边则是AI告诉你这次互动生成的具体内容。
 
-我们点击右下方的Accept all后，这些代码便生效了
+我们点击右下方的`Accept all`后，这些代码便生效了
 
 那么，我们怎么看到这个项目是什么样子的呢？
 
@@ -144,7 +133,7 @@ https://github.com/PatrickJS/awesome-cursorrules
 
 ![](img/dce1d58deb475d44ee35ccae2a98f64e.png)
 
-点击AI提示的Run command，你就会跳转到一个预览页面
+点击AI提示的`Run command`，你就会跳转到一个预览页面
 
 ![](img/8b08917c52a9ea9b61cfbed2c3739449.png)
 
@@ -156,9 +145,9 @@ https://github.com/PatrickJS/awesome-cursorrules
 
 先来看看我的官网，我自己本身是完全零编程基础以及零前端知识，但是做出的官网被CTO夸奖了～
 
-allinagi.com.cn
+`allinagi.com.cn`
 
-sboat.cn
+`sboat.cn`
 
 这里，假设我们要做一个《全AI自动驾驶的火星登陆飞船》项目
 
@@ -168,7 +157,7 @@ WaytoMars是一个制造、运营全AI自动驾驶的火星登陆飞船公司品
 
 有了项目介绍后，让AI帮助我们生成一个具有前端大师级审美、极富科幻感的网站首页
 
-首先，新建一个waytomars文件夹并打开，在AI对话框中输入上方的话，一路等待AI制作以及加入你的修改意见就可以了
+首先，新建一个`waytomars`文件夹并打开，在AI对话框中输入上方的话，一路等待AI制作以及加入你的修改意见就可以了
 
 还没做完，晚些补上成品
 
@@ -184,7 +173,7 @@ https://www.yourware.so/
 
 就可以生成一个临时浏览链接，在不需要域名和服务器的情况下让外部也能够看到你的作品。
 
-注意：如果发现cursor有所卡顿，注意是不是AI让你在终端区或者对话区确认重要操作，左下角将ask every time修改为auto run就可以全自动化了。
+注意：如果发现`Cursor`有所卡顿，注意是不是AI让你在终端区或者对话区确认重要操作，左下角将`ask every time`修改为`auto run`就可以全自动化了。
 
 ![](img/4e7f6b6506acabe127092ed6522fe441.png)
 
@@ -200,7 +189,7 @@ https://mp.weixin.qq.com/s/TwXiFFWKGYYj1Oubvwf7Sw
 
 https://mp.weixin.qq.com/s/tafopd82apfEtCk2DXU0sg
 
-# MCP是什么？
+## MCP是什么？
 
 ![](img/a367cc4d9e0275a8e7eaf00538ab67ca.png)
 
@@ -212,8 +201,7 @@ https://mp.weixin.qq.com/s/tafopd82apfEtCk2DXU0sg
 
 https://mp.weixin.qq.com/s/rWSDhIDfe6hx3q_37YNUWA
 
-MCP（模型上下文协议）是一种新的开放协议，旨在标准化应用程序如何为大型语言模型提供上下文 （LLMs）。将 MCP 想象成一个 USB-C 端口，但用于 AI agent：它提供了一种将 AI 系统连接到各种工具和数据源的统一方法。
-
+MCP（模型上下文协议）是一种新的开放协议，旨在标准化应用程序如何为大型语言模型提供上下文 （LLMs）。将 MCP 想象成一个 USB-C 端口，但用于 `AI agent`：它提供了一种将 AI 系统连接到各种工具和数据源的统一方法。
 
 传统方式将 AI 系统连接到外部工具涉及集成多个 API。每个 API 集成都意味着单独的代码、文档、身份验证方法、错误处理和维护。
 
@@ -223,11 +211,9 @@ MCP（模型上下文协议）是一种新的开放协议，旨在标准化应�
 
 MCP 可帮助用户在 LLM 之上构建代理和复杂的工作流程。LLM 经常需要与数据和工具集成，每一个环节的交互响应都需要花费时间，特别是在复杂的工作流程下，耗时更长，而 MCP 提供：
 
-+   越来越多的预构建集成，LLM 可以直接插入
-
-+   在 LLM 提供商和供应商之间切换的灵活性
-
-+   在基础架构中保护数据的最佳实践
++ 越来越多的预构建集成，LLM 可以直接插入
++ 在 LLM 提供商和供应商之间切换的灵活性
++ 在基础架构中保护数据的最佳实践
 
 ## MCP 与 API 快速比较
 
@@ -235,43 +221,40 @@ MCP 可帮助用户在 LLM 之上构建代理和复杂的工作流程。LLM 经�
 
 MCP 与传统 API 之间的主要区别在于：
 
-+   **单一协议**：MCP 充当标准化的“连接器”，因此集成一个 MCP 意味着可能访问多个工具和服务，而不仅仅是一个。
-
-+   **动态发现**：MCP 允许 AI 模型动态发现可用工具并与之交互，而无需对每个集成进行硬编码知识。
-
-+   **双向通信**：MCP 支持持久的实时双向通信 - 类似于 WebSockets。AI 模型既可以检索信息，也可以动态触发操作。
++ 单一协议：MCP 充当标准化的“连接器”，因此集成一个 MCP 意味着可能访问多个工具和服务，而不仅仅是一个。
++ 动态发现：MCP 允许 AI 模型动态发现可用工具并与之交互，而无需对每个集成进行硬编码知识。
++ 双向通信：MCP 支持持久的实时双向通信 - 类似于 WebSockets。AI 模型既可以检索信息，也可以动态触发操作。
 
 MCP 提供实时的双向通信：
 
-+   拉取数据：LLM查询服务器以获取上下文→例如检查您的日历
-
-+   触发：LLM指示服务器采取行动→例如重新安排会议、发送电子邮件
++ 拉取数据：LLM查询服务器以获取上下文→例如检查您的日历
++ 触发：LLM指示服务器采取行动→例如重新安排会议、发送电子邮件
 
 ## Cursor+MCP如何使用？
 
-我们以最近比较流行的驱动blender自动化建模的MCP项目为例，首先，我们在github上能够找到这个项目说明
+我们以最近比较流行的驱动`blender`自动化建模的MCP项目为例，首先，我们在github上能够找到这个项目说明
 
 https://github.com/ahujasid/blender-mcp
 
-点进去看一下如何安装，（以Mac安装为例），我们首先要安装一个uv包（如果不懂，就直接新建一个项目文件夹后，将下面的话丢给AI）
+点进去看一下如何安装，（以Mac安装为例），我们首先要安装一个`uv`包（如果不懂，就直接新建一个项目文件夹后，将下面的话丢给AI）
 
 ```
 brew install uv
 ```
 
-显示uv安装完毕后（初次使用可能需要安装一系列的环境，只要一路让AI安装就可以了），还是找到点击界面右上角的小齿轮图标
+显示`uv`安装完毕后（初次使用可能需要安装一系列的环境，只要一路让AI安装就可以了），还是找到点击界面右上角的小齿轮图标
 
 ![](img/f80e7c53592a44f687cae6a631857e15.png)
 
-找到MCP模块-Add new global MCP server，将下文粘贴进去
+找到`MCP`模块-`Add new global MCP server`，将下文粘贴进去
 
 ```
 {
-    &quot;mcpServers&quot;: {
-        &quot;blender&quot;: {
-            &quot;command&quot;: &quot;uvx&quot;,
-            &quot;args&quot;: [
-                &quot;blender-mcp&quot;
+    "mcpServers": {
+        "blender": {
+            "command": "uvx",
+            "args": [
+                "blender-mcp"
             ]
         }
     }
@@ -280,49 +263,47 @@ brew install uv
 
 ![](img/b1c89098b5f3f58aec55502de956bffc.png)
 
-退回MCP界面时，就会发现我们已经连接上了这个blender服务器，并且增加了很多具体功能：
+退回MCP界面时，就会发现我们已经连接上了这个`blender`服务器，并且增加了很多具体功能：
 
 ![](img/76c3ea6a252a28b2061ced4404348bcc.png)
 
 ## 如何用Cursor+MCP让blender自动化建模？
 
-在我们安装好blender MCP后，我们还要去下载一些东西
+在我们安装好`blender MCP`后，我们还要去下载一些东西
 
 首先回到https://github.com/ahujasid/blender-mcp
 
-把其中的addon.py这个文件下载到本地
+把其中的`addon.py`这个文件下载到本地
 
 ![](img/acaee4f3000436bdba269231f01900eb.png)
 
-然后我们再去下载blender这个建模工具
+然后我们再去下载`blender`这个建模工具
 
 https://www.blender.org/
 
-下载完毕安装，进入blender主界面
+下载完毕安装，进入`blender`主界面
 
-![](img/8b9f710eab81e16bbe3be282c4fff954.png)
-
-找到左上角的编辑Edit> Preferences > Add-ons
+找到左上角的编辑`Edit > Preferences > Add-ons`
 
 ![](img/d5320ff25bea328924ab7d1116c3c5e7.png)
 
 ![](img/677ec2b483dae4dbb84c26043c43a247.png)
 
-安装完毕后将Blender MCP插件勾选上，按快捷键N，找到Blender MCP启动页面
+安装完毕后将`Blender MCP`插件勾选上，按快捷键`N`，找到`Blender MCP`启动页面
 
 ![](img/ae28271f253ca029db573da19a9c78da.png)
 
-将两个选项勾选上，其中的API Key可以点击下面的Set Free Trial API Key按钮，会自动填上
+将两个选项勾选上，其中的`API Key`可以点击下面的`Set Free Trial API Key`按钮，会自动填上
 
 ![](img/65dc761816de461fcbd8c39a56bbaacc.png)
 
-回到cursor，在AI对话框中输入这样一个提示词
+回到`cursor`，在AI对话框中输入这样一个提示词
 
-Create a beach vibe using HDRIs, textures, and models like rocks and vegetation from Poly Haven
+`Create a beach vibe using HDRIs, textures, and models like rocks and vegetation from Poly Haven`
 
 ![](img/186a0ce0e4c8c5df6f21fa15743612ec.png)
 
-当出现Called MCP tool的项目时，你就已经成功调用Cursor的blender MCP功能了（虽然还很简单）
+当出现`Called MCP tool`的项目时，你就已经成功调用`Cursor`的`blender MCP`功能了（虽然还很简单）
 
 ## 去哪里找更多MCP项目？
 

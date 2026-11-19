@@ -1,3 +1,4 @@
+
 # 王者回归！Chatgpt炸裂更新！图片生成控制秒杀全场！本文使用Cursor+Dify编写！
 
 > 来源：[https://my.feishu.cn/docx/TaZKdls2RoPFeCx595qc2sEzndh](https://my.feishu.cn/docx/TaZKdls2RoPFeCx595qc2sEzndh)
@@ -14,7 +15,7 @@
 
 今天，它终于站起来了！更新了一个炸裂的存在！是老金至今为止用过的多模态生图里最好用的一个，没有之一！
 
-#文末放个小彩蛋，希望你看完以后也能来一句“卧槽！”
+文末放个小彩蛋，希望你看完以后也能来一句“卧槽！”
 
 这里就能看见他更新了创建图片。
 
@@ -72,7 +73,6 @@
 
 ![](img/82efe4c471937b2dcd40521b0c56a619.png)
 
-
 ![](img/d7894d4f33dfea07d2a9717cc2d8c2e0.png)
 
 ![](img/0b46c4d228cd3a9c3d5bf7676b5b00dd.png)
@@ -85,11 +85,11 @@
 
 老金本文是利用昨天的[Cursor链接Dify自动化创建工作流？老金手把手教你！](https://tffyvtlai4.feishu.cn/wiki/TmsCwkTFoi8bU9k6Ti7cPXWrnQh)编写的。
 
-在昨天的抓**网页->英译中**基础上，又让Cursor加了个**仿写**功能。
+在昨天的`网页->英译中`基础上，又让Cursor加了个`仿写`功能。
 
 怎么样？炸裂吧？
 
-原文取自：https://www.theverge.com/openai/635118/chatgpt-sora-ai-image-generation-chatgpt?utm_source=chatgpt.com
+原文取自：`https://www.theverge.com/openai/635118/chatgpt-sora-ai-image-generation-chatgpt?utm_source=chatgpt.com`
 
 用Cursor加入仿写后，就变成了“老金”风格。
 
@@ -97,13 +97,13 @@
 
 ![](img/8cba1970a5455bb8942ea52e4d205375.png)
 
-## **结语**
+## 结语
 
 Chatgpt的更新，大幅降低了AI绘画的创作门槛。
 
 但要记住，多模态目前还远远达不到ComfyUI的超强定制化水准。
 
-[如果你对Comf](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NzU2MDgyNA==&action=getalbum&album_id=3192433076551843848#wechat_redirect)yUI感兴趣，建议看看老金之前写的一些基础教程 - AI绘画教程列表
+[如果你对ComfyUI感兴趣](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NzU2MDgyNA==&action=getalbum&album_id=3192433076551843848#wechat_redirect)，建议看看老金之前写的一些基础教程 - AI绘画教程列表
 
 再然后，还是要说一下，是不是看到“彩蛋揭秘”时，让你说了句“卧槽！”。
 

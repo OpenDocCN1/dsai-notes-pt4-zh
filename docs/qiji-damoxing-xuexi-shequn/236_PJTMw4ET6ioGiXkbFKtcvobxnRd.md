@@ -1,8 +1,9 @@
-# 奇绩大模型日报（4月 4、5、6日）   清明节特刊
+
+# 奇绩大模型日报（4月 4、5、6日） 清明节特刊
 
 > 来源：[https://miracleplus.feishu.cn/docx/VES2dSWLio44sQxS8x2cqXPynfc](https://miracleplus.feishu.cn/docx/VES2dSWLio44sQxS8x2cqXPynfc)
 
-# 推特
+## 推特
 
 ### 震惊！爆火推特7万点赞：由AI生成的弹钢琴的忧郁女孩演绎MIT许可证的文本内容
 
@@ -108,21 +109,17 @@ https://x.com/svpino/status/1775154270708396215
 
 以下是判断的技巧:
 
-1.  将训练集和测试集合并,去掉目标列。
-
-1.  创建新的二元特征,训练集样本为0,测试集样本为1,作为新目标。
-
-1.  训练简单的二元分类模型,预测样本来自训练集还是测试集。
+1. 将训练集和测试集合并,去掉目标列。
+2. 创建新的二元特征,训练集样本为0,测试集样本为1,作为新目标。
+3. 训练简单的二元分类模型,预测样本来自训练集还是测试集。
 
 如果AUC接近0.5,说明数据来自同一分布;如果AUC接近1.0,说明数据来自不同分布。这种技术叫对抗验证,可快速判断数据集是否同源。
 
 如果数据集来自不同分布,可进一步定位问题:
 
-1.  计算每个特征的重要性。
-
-1.  移除最重要特征,重建对抗模型。
-
-1.  重新计算ROC-AUC,重复直到AUC接近0.5。
+1. 计算每个特征的重要性。
+2. 移除最重要特征,重建对抗模型。
+3. 重新计算ROC-AUC,重复直到AUC接近0.5。
 
 对抗验证在识别生产环境中的分布偏移时特别有用,投资少回报高。
 
@@ -146,17 +143,14 @@ Winglang通过定义标准API来抽象云提供商之间的差异。
 
 我这里有一个结合Winglang和OpenAI API的例子。这将帮助你理解它的强大功能:
 
-• OpenAI生成笑话
-
-• 笑话被放入云主题
-
-• 翻译者订阅该主题
-
-• 翻译者使用OpenAI翻译笑话
+- OpenAI生成笑话
+- 笑话被放入云主题
+- 翻译者订阅该主题
+- 翻译者使用OpenAI翻译笑话
 
 在这个例子中,你会注意到一些关键点:你可以专注于业务逻辑而不是云机制。在需要之前,你不必担心底层细节。
 
-你可以在这个GitHub仓库(/examples文件夹)中找到这个例子:
+你可以在这个GitHub仓库(`/examples`文件夹)中找到这个例子:
 
 https://git.new/winglang
 
@@ -214,7 +208,7 @@ AI Fund很高兴支持Workhelix的发布,该发布定于4月9日星期二举行�
 
 ![](img/76a5581625d3996506f4da9ea523661d.png)
 
-# 产品
+## 产品
 
 ### HIPAA SmartChat Assistant
 
@@ -226,7 +220,7 @@ HIPAA SmartChat Assistant 是 QuickBlox 公司推出的一款符合 HIPAA 标准
 
 ![](img/d385630e0af1d3c69431da7e1526a7cf.png)
 
-### **Airdrop Tracker**
+### Airdrop Tracker
 
 贡献人：
 
@@ -256,7 +250,7 @@ Metaforms 是 Typeform 的 AI 继任。旨在构建世界上最强大的反馈�
 
 ![](img/8bd954f634406662ea86b43d886613c7.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### plandex
 
@@ -288,7 +282,7 @@ LLocalSearch 是一个使用 LLM 代理的本地运行搜索聚合器。用户�
 
 ![](img/2ff8627e7675b447e216f6bb93316241.png)
 
-# 投融资
+## 投融资
 
 ### Archetype AI推出基础模型引领物理AI新时代
 
@@ -300,75 +294,77 @@ Archetype AI，一家物理AI公司，宣布结束隐秘开发阶段并推出New
 
 公司官网：https://www.archetypeai.io/
 
+
+
 ![](img/75b0612ece1c40e245c57f5ed477362b.png)
 
-### 比利时计算机视觉初创公司Robovision计划美国扩张以解决劳动力短缺问题
+# 行业新闻
+
+## 比利时计算机视觉初创公司Robovision计划美国扩张以解决劳动力短缺问题
 
 贡献人：
 
-https://techcrunch.com/2024/04/05/robovision-computer-vision-belgium/
+`https://techcrunch.com/2024/04/05/robovision-computer-vision-belgium/`
 
 比利时的计算机视觉初创公司Robovision旨在使深度学习工具更易于非核心技术公司的业务访问。该公司在一轮由Astanor Ventures和Target Global共同领投的系列A融资中筹集了4200万美元，目标是扩展到美国市场，针对面临劳动力短缺的工业和农业商业领域。Robovision的“无代码”AI平台允许用户上传数据、标记数据、测试他们的模型，并部署，而无需在每一步都涉及软件开发人员或数据科学家。服务于45个国家的客户，Robovision的技术应用于识别超市水果、识别新制电子组件的故障以及切割玫瑰茎。有了这笔资金，Robovision计划扩大其在制造业和农业中的影响力，特别是利用其在农技领域的记录，在那里它协助种植每年十亿朵郁金香。
 
-公司官网：https://robovision.ai/
+公司官网：`https://robovision.ai/`
 
 ![](img/796cf4b3910ea38e279df0bb14507284.png)
 
-### SiMa.ai获7000万美元融资 推出多模态GenAI芯片
+## SiMa.ai获7000万美元融资 推出多模态GenAI芯片
 
 贡献人：
 
-https://techcrunch.com/2024/04/04/sima-ai-70m-funding-multimodal-genai-chip/
+`https://techcrunch.com/2024/04/04/sima-ai-70m-funding-multimodal-genai-chip/`
 
 SiMa.ai，一家位于硅谷的初创公司，专注于生产嵌入式机器学习系统芯片平台，宣布已经完成了7000万美元的扩展融资轮。这次融资将帮助公司推出其针对多模态生成式人工智能处理的第二代芯片。SiMa.ai的产品目标是将深度学习工具工业化，并使其更易于不以技术为核心的企业获取。该公司已在全球45个国家的超过50家公司中使用其芯片和无代码软件。SiMa.ai的新一代GenAI SoC芯片计划于2025年第一季度推出，强调为客户提供多模态GenAI能力，预计将对现有芯片进行“一些架构调整”，但基本概念保持不变。
 
-公司官网：https://sima.ai/
+公司官网：`https://sima.ai/`
 
 ![](img/2eb96a6b3b10419d46620fbbccc96539.png)
 
-### Higgsfield AI获得800万美元种子融资，开启个性化AI视频创作
+## Higgsfield AI获得800万美元种子融资，开启个性化AI视频创作
 
 贡献人：
 
-https://www.businesswire.com/news/home/20240403369573/en/Higgsfield-AI-Secures-8M-in-Seed-Funding-to-Unlock-Personalized-AI-Video-Creation
+`https://www.businesswire.com/news/home/20240403369573/en/Higgsfield-AI-Secures-8M-in-Seed-Funding-to-Unlock-Personalized-AI-Video-Creation`
 
 Higgsfield AI，一家致力于使社交媒体视频创作民主化的初创公司，宣布获得由Menlo Ventures领投的800万美元种子融资。这一资金将支持其使几乎每个人都能轻松制作引人入胜、个性化且可分享的视频的使命，通过其专有视频模型和直观的Prompt Builder，用户可以使用文本提示、参考图像或视频轻松创建原创内容。
 
-公司官网：https://higgsfield.ai/
+公司官网：`https://higgsfield.ai/`
 
-![](img/00a16e94ff9616ca8d73e6692ec259fd.png)
+[`GzEQ5UGCrXxCPqPbyZaJiTG4ZRY.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/THz5borpqoEb7exyGaKcro8Mnod)
 
-[GzEQ5UGCrXxCPqPbyZaJiTG4ZRY.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/THz5borpqoEb7exyGaKcro8Mnod)
-
-### TrojAI获得575万美元种子轮融资，加强企业AI安全
+## TrojAI获得575万美元种子轮融资，加强企业AI安全
 
 贡献人：
 
-https://www.prnewswire.com/news-releases/trojai-raises-5-75m-in-seed-funding-to-secure-ai-in-the-enterprise-302106426.html
+`https://www.prnewswire.com/news-releases/trojai-raises-5-75m-in-seed-funding-to-secure-ai-in-the-enterprise-302106426.html`
 
 TrojAI，一家在企业人工智能（AI）安全解决方案领域处于领先地位的公司，宣布完成575万美元的种子轮融资，并任命Lee Weiner为公司首席执行官。本轮融资由Flying Fish领投，Build Ventures、Techstars、Alteryx Ventures和Flybridge Capital Partners等现有投资者和新投资者参与。这笔资金将用于支持产品开发、销售和市场营销工作，以及公司向美国扩张，在波士顿新设办事处。
 
-公司官网：https://www.troj.ai/
+公司官网：`https://www.troj.ai/`
 
 ![](img/e97c95cc2d10ca73ff549630989d3d8e.png)
 
-### 泰国的HD公司在获得560万美元融资后进入AI领域，开发医疗聊天机器人
+## 泰国的HD公司在获得560万美元融资后进入AI领域，开发医疗聊天机器人
 
 贡献人：
 
-https://www.techinasia.com/thaibased-hd-secures-56m-funding-healthcare-chatbots
+`https://www.techinasia.com/thaibased-hd-secures-56m-funding-healthcare-chatbots`
 
 泰国健康科技公司HD，被誉为“手术的Airbnb”，近期获得了560万美元A轮融资，由SBI Ven Capital领投。该公司计划开发一款专注于医疗领域的AI驱动对话聊天机器人，旨在处理常规客户问题，释放人员处理更复杂的问题，并确保客户服务全天候可用。HD计划利用其大量匿名的健康产品、交易和聊天商务数据来训练这款聊天机器人，并计划在未来三个月内在其HDmall市场上推出此服务，最终还计划在年底前将聊天机器人提供给第三方，如医院和诊所。
 
-相关链接：https://hd.care/
+相关链接：`https://hd.care/`
 
 ![](img/af117e5d8e5a8cce43c4e74868c7db31.png)
 
-### Y Combinator 2024冬季批次中最受瞩目的AI创业公司
+## Y Combinator 2024冬季批次中最受瞩目的AI创业公司
 
 贡献人：
 
-https://techcrunch.com/2024/04/03/y-combinator-winter-2024-demo-day-ai-startups-standouts/
+`https://techcrunch.com/2024/04/03/y-combinator-winter-2024-demo-day-ai-startups-standouts/`
 
 尽管整体的创业投资有所下降，但过去一年AI领域的资金却大幅增长。Y Combinator 2024冬季Demo Day上，AI创业公司成为了主角。本次批次共有86家AI创业公司，几乎是2023冬季批次的两倍，接近2021冬季批次的三倍。从政府合同自动化处理的Hazel，到为家庭护士减负的Andy AI，再到通过AI提供精确天气预报的Precip，以及旨在通过AI指导加强情侣关系的Maia，这些公司因其技术、市场潜力或创始人背景而脱颖而出。
 
@@ -376,91 +372,91 @@ https://techcrunch.com/2024/04/03/y-combinator-winter-2024-demo-day-ai-startups-
 
 # 学习
 
-### 矩阵乘法性能与形状优化关系解析
+## 矩阵乘法性能与形状优化关系解析
 
 贡献人：
 
-https://www.thonking.ai/p/what-shapes-do-matrix-multiplications
+`https://www.thonking.ai/p/what-shapes-do-matrix-multiplications`
 
 文章探讨了矩阵乘法的性能与其形状之间的关系。作者发现，矩阵乘法的执行时间不仅与操作数量有关，还受到矩阵形状的影响。特别地，当矩阵的形状符合特定的规模时（如2的幂），其性能可以显著提高。这种现象主要由三个因素解释：计算密集度/并行化、平铺（Tiling）、波量化（Wave Quantization）。文章通过详细分析这些因素如何影响GPU上矩阵乘法的性能，揭示了优化这一过程的可能途径。此外，文章还探讨了内存布局对性能的影响，以及如何通过调整矩阵大小和形状来避免性能损失。
 
 ![](img/ac2262009ff04986575b0470ef8c043d.png)
 
-### 高效序列建模系列: 1. Mamba(SSM)和Linear Attention的统一视角
+## 高效序列建模系列: 1. Mamba(SSM)和Linear Attention的统一视角
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/690227740
+`https://zhuanlan.zhihu.com/p/690227740`
 
-文章探讨了序列建模方法之间的联系，提出了一个统一视角来理解Mamba(SSM)和Linear Attention等模型。作者通过定义序列映射和介绍基于记忆的序列映射过程（Expand, Oscillation, Shrink，简称EOS），阐述了不同序列模型的内在联系。这一过程包括从输入状态到扩展状态的映射、在高维空间中的振荡状态处理，以及最终通过缩减状态返回到低维输出。该文章不仅提供了一种新的理解序列模型的框架，还探讨了不同模型如何在此框架下进行有效的序列映射，为后续的序列建模研究和应用提供了新的视角和方法。
+文章探讨了序列建模方法之间的联系，提出了一个统一视角来理解`Mamba(SSM)`和`Linear Attention`等模型。作者通过定义序列映射和介绍基于记忆的序列映射过程（`Expand`, `Oscillation`, `Shrink`，简称`EOS`），阐述了不同序列模型的内在联系。这一过程包括从输入状态到扩展状态的映射、在高维空间中的振荡状态处理，以及最终通过缩减状态返回到低维输出。该文章不仅提供了一种新的理解序列模型的框架，还探讨了不同模型如何在此框架下进行有效的序列映射，为后续的序列建模研究和应用提供了新的视角和方法。
 
 ![](img/d9d98bc720dcc7e13e6561e186bbc34f.png)
 
-### 你的扩散模型是个可证明的鲁棒分类器
+## 你的扩散模型是个可证明的鲁棒分类器
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/690230490
+`https://zhuanlan.zhihu.com/p/690230490`
 
-文章探讨了扩散分类器（diffusion classifier）的鲁棒性。作者首先表明了人们对扩散分类器鲁棒性的质疑，并提出了通过计算其鲁棒性下界来回应这些质疑。文章通过详细的推导过程，展示了如何为扩散分类器计算Lipschitz常数，从而评估其在面对对抗样本时的鲁棒性。利用随机平滑（randomized smoothing）技术和高斯分布的性质，作者成功证明了扩散分类器可以具有一定的鲁棒性范围。此外，通过改进的扩散分类器构造方法和实验验证，作者展示了其在CIFAR-10数据集上达到了显著的鲁棒半径，强化了扩散分类器在安全性方面的可行性。
+文章探讨了扩散分类器的鲁棒性。作者首先表明了人们对扩散分类器鲁棒性的质疑，并提出了通过计算其鲁棒性下界来回应这些质疑。文章通过详细的推导过程，展示了如何为扩散分类器计算`Lipschitz`常数，从而评估其在面对对抗样本时的鲁棒性。利用`randomized smoothing`技术和高斯分布的性质，作者成功证明了扩散分类器可以具有一定的鲁棒性范围。此外，通过改进的扩散分类器构造方法和实验验证，作者展示了其在`CIFAR-10`数据集上达到了显著的鲁棒半径，强化了扩散分类器在安全性方面的可行性。
 
 ![](img/936cb945f4c8e1418ce119c4ed09935c.png)
 
-### 世界上收敛最快的计算 π 的公式是什么？
+## 世界上收敛最快的计算 π 的公式是什么？
 
 贡献人：
 
-https://www.zhihu.com/question/318010986
+`https://www.zhihu.com/question/318010986`
 
 关于这一问题，知乎上的讨论集中在几个著名的公式上。其中最被广泛提及的包括：
 
-1.  **拉马努金公式**：这是一个著名的公式，以其极快的收敛速度而闻名。特别是拉马努金的一系列公式中，某些变体可以让计算的每一项都大约增加50位的有效数字，显示出极高的效率。
+1. **拉马努金公式**：这是一个著名的公式，以其极快的收敛速度而闻名。特别是拉马努金的一系列公式中，某些变体可以让计算的每一项都大约增加50位的有效数字，显示出极高的效率。
 
-1.  **博温兄弟的迭代方法**：这是一个通过迭代逼近π的方法，每次迭代都会显著提高精度。这种方法以其简单和高效的迭代步骤被多次提及。
+2. **博温兄弟的迭代方法**：这是一个通过迭代逼近π的方法，每次迭代都会显著提高精度。这种方法以其简单和高效的迭代步骤被多次提及。
 
-1.  **丘德诺夫斯基公式**：作为拉马努金公式的改良版，它同样具有非常快的收敛速度，被视为计算π的强大工具。
+3. **丘德诺夫斯基公式**：作为拉马努金公式的改良版，它同样具有非常快的收敛速度，被视为计算π的强大工具。
 
 这些讨论不仅展示了计算π的多种高效方法，还体现了数学界在寻找更优算法方面的不懈努力和创新。每种方法都有其独特的优点和适用场景，选择哪一种取决于特定需求，比如计算的精度要求、算法的实现复杂度等。
 
-### MoE中的各expert网络内结构是什么？训练过程中如何使得不同expert学到不同的feature？
+## MoE中的各expert网络内结构是什么？训练过程中如何使得不同expert学到不同的feature？
 
 贡献人：
 
-https://www.zhihu.com/question/564792024/answer/3455145719
+`https://www.zhihu.com/question/564792024/answer/3455145719`
 
-MoE是一种先进的深度学习框架，用于处理大规模模型训练和推理的高效性和可扩展性问题。MoE通过将输入数据根据任务类型分割成多个区域，并将每个区域的数据分配给一组专家模型处理，每个专家模型可以专注于其擅长的领域，从而提高整体模型性能。核心机制包括一个门控网络（GateNet），负责决定哪个专家模型处理特定输入数据，以及多个专家模型（Experts），每个专家负责处理特定的输入子空间。MoE模型的特点是稀疏性，通过门控网络的设计和参数调整来有效控制。该模型能够实现因材施教，在推理过程中实现专家模型间的优势互补，适用于大规模和复杂的深度学习任务，特别是在多模态情境下的应用。
+MoE是一种先进的深度学习框架，用于处理大规模模型训练和推理的高效性和可扩展性问题。MoE通过将输入数据根据任务类型分割成多个区域，并将每个区域的数据分配给一组专家模型处理，每个专家模型可以专注于其擅长的领域，从而提高整体模型性能。核心机制包括一个门控网络（`GateNet`），负责决定哪个专家模型处理特定输入数据，以及多个专家模型（`Experts`），每个专家负责处理特定的输入子空间。MoE模型的特点是稀疏性，通过门控网络的设计和参数调整来有效控制。该模型能够实现因材施教，在推理过程中实现专家模型间的优势互补，适用于大规模和复杂的深度学习任务，特别是在多模态情境下的应用。
 
 ![](img/769e91765a9ad838a88c9c779b58f412.png)
 
-### 揭示GPU上的批处理策略
+## 揭示GPU上的批处理策略
 
 贡献人：
 
-https://mp.weixin.qq.com/s/HVIk2qnoc0KNycqUB2MgaA
+`https://mp.weixin.qq.com/s/HVIk2qnoc0KNycqUB2MgaA`
 
-文章深入探讨了批处理在现代GPU上的应用原理及其对深度学习模型推理速度的影响，提供了关于模型优化的实用指南。文章指出，通过优化批处理策略，可以更高效地利用计算资源，提升模型推理效率。在GPU上进行批处理时，并发性允许同时运行多个操作，这意味着处理整个批次的时间与处理单个示例的时间几乎相同。文章还讨论了在不同的网络类型（如MLP、卷积网络和Transformer）上进行批处理的具体细节和效率问题，揭示了GPU在数学计算上的快速性能，同时也指出了其他潜在的计算开销。
+文章深入探讨了批处理在现代GPU上的应用原理及其对深度学习模型推理速度的影响，提供了关于模型优化的实用指南。文章指出，通过优化批处理策略，可以更高效地利用计算资源，提升模型推理效率。在GPU上进行批处理时，并发性允许同时运行多个操作，这意味着处理整个批次的时间与处理单个示例的时间几乎相同。文章还讨论了在不同的网络类型（如`MLP`、卷积网络和`Transformer`）上进行批处理的具体细节和效率问题，揭示了GPU在数学计算上的快速性能，同时也指出了其他潜在的计算开销。
 
 ![](img/6e15ceaafda1fd19c4ec124181284072.png)
 
 ![](img/1c52d1e2428bdb342859d660d6c745fa.png)
 
-### LLVM在GPU中的局限性
+## LLVM在GPU中的局限性
 
 贡献人：
 
-https://chsasank.com/intermediate-representations-for-gpu.html
+`https://chsasank.com/intermediate-representations-for-gpu.html`
 
-这篇文章详细探讨了LLVM作为编译器中间表示（IR）在处理GPU架构时遇到的挑战。尽管LLVM在CPU编译领域表现出色，通过提供目标无关的IR以支持各种CPU架构，但其设计并不适合GPU。原因在于GPU编译需要依赖于特定架构的内部函数和运行时API，这些都是LLVM所不具备的。文章通过一个简单的向量加法程序示例，展示了即便使用基于LLVM的AdaptiveCPP编译器，也不能直接将LLVM IR应用于所有GPU架构，揭示了未来研究的方向在于开发能同时支持CPU和GPU的通用IR。
+这篇文章详细探讨了`LLVM`作为编译器中间表示（`IR`）在处理GPU架构时遇到的挑战。尽管`LLVM`在CPU编译领域表现出色，通过提供目标无关的`IR`以支持各种CPU架构，但其设计并不适合GPU。原因在于GPU编译需要依赖于特定架构的内部函数和运行时API，这些都是`LLVM`所不具备的。文章通过一个简单的向量加法程序示例，展示了即便使用基于`LLVM`的`AdaptiveCPP`编译器，也不能直接将`LLVM IR`应用于所有GPU架构，揭示了未来研究的方向在于开发能同时支持CPU和GPU的通用`IR`。
 
 ![](img/6b153b5a3ea4362fd021a8be80252bea.png)
 
-### 实战：Qwen家族新成员：32B开源
+## 实战：Qwen家族新成员：32B开源
 
 贡献人：
 
-https://mp.weixin.qq.com/s/Z_d6J0KQbYICdgsya1BGzQ
+`https://mp.weixin.qq.com/s/Z_d6J0KQbYICdgsya1BGzQ`
 
-通义千问团队推出了Qwen1.5语言模型系列的最新成员：Qwen1.5-32B和Qwen1.5-32B-Chat，旨在提供一种在性能、效率和内存占用之间达到理想平衡的模型。这些模型以其较小的内存占用和更快的运行速度，相比于大规模模型如72B，提供了一个更经济高效的选择。Qwen1.5-32B模型在基础能力评估、多语言评估以及特定任务如长文本理解上展现了出色的性能。此外，魔搭社区提供了一站式的模型体验、下载、推理、微调实战教程，旨在帮助开发者和研究者更有效地利用这些模型。
+通义千问团队推出了`Qwen1.5`语言模型系列的最新成员：`Qwen1.5-32B`和`Qwen1.5-32B-Chat`，旨在提供一种在性能、效率和内存占用之间达到理想平衡的模型。这些模型以其较小的内存占用和更快的运行速度，相比于大规模模型如`72B`，提供了一个更经济高效的选择。`Qwen1.5-32B`模型在基础能力评估、多语言评估以及特定任务如长文本理解上展现了出色的性能。此外，魔搭社区提供了一站式的模型体验、下载、推理、微调实战教程，旨在帮助开发者和研究者更有效地利用这些模型。
 
 ![](img/b735cb94e26a4e3d7fb410007f394786.png)
 
@@ -468,26 +464,22 @@ https://mp.weixin.qq.com/s/Z_d6J0KQbYICdgsya1BGzQ
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+`ChatGPT`；Angela；Zijia Liu；Alex；Zeqi Tan；`Tiezhen（HuggingFace）`；Naixu；Lizhi；Peter；Suoman；Jack
 
 封面生成——右脑科技
 
 如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
-
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
-
-> [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
 >
-
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
+>
+> [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
+>
 > 欢迎大家多多帮我们分享,转发~~
-
+>
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 
 ![](img/ae3f78b0acbf07b4af5707b529149378.png)

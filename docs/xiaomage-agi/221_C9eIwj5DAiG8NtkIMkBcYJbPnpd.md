@@ -1,3 +1,4 @@
+
 # 惊爆！DeepSeek 涨价了
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/ZQEIdTp9woR0UPxYYH7cneBenxb](https://xmgtoagi.feishu.cn/docx/ZQEIdTp9woR0UPxYYH7cneBenxb)
@@ -18,12 +19,12 @@
 
 小码哥一直从事大模型研发，欢迎一起学习交流，免费领取以下资料。
 
-# AI 学习交流社群
+## AI 学习交流社群
 
 ![](img/33d771ad8f5a7e73db8d7f07fad64771.png)
 
-## 私信免费获取以下资源
+### 私信免费获取以下资源
 
-**免费使用****www.xmgai.cn****，一键改写爆款长文。**
+**免费使用** `www.xmgai.cn`，一键改写爆款长文。
 
 ![](img/066c148c0fbb31c8a8f8a9dc0410af77.png)

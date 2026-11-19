@@ -1,8 +1,9 @@
+
 # 第二期：多智能体模拟（Multiagent Simulation）
 
 > 来源：[https://aithinkup.feishu.cn/docx/OmbtdGlvzoLD9Dx9WrhcmGv1nPh](https://aithinkup.feishu.cn/docx/OmbtdGlvzoLD9Dx9WrhcmGv1nPh)
 
-> 本次论文共读活动由“[用Coze搓Bots](https://docs.qq.com/doc/DSUVtSGVLVVNnTXFt)”社群发起和组织，想要入群深度参与此系列活动的朋友可以由这里提交入群申请：https://wj.qq.com/s2/14553578/5a0e/（申请要真诚，群主会筛选）
+> 本次论文共读活动由“[用Coze搓Bots](https://docs.qq.com/doc/DSUVtSGVLVVNnTXFt)”社群发起和组织，想要入群深度参与此系列活动的朋友可以由这里提交入群申请：`https://wj.qq.com/s2/14553578/5a0e/`（申请要真诚，群主会筛选）
 
 ## 时间线
 

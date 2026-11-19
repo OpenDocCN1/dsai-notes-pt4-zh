@@ -1,10 +1,11 @@
+
 # 辅助link
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/AfURdQXEEo8tYQx6EO9cx8W8nwg](https://vcn0zlxse9ua.feishu.cn/docx/AfURdQXEEo8tYQx6EO9cx8W8nwg)
 
 ## 提示词
 
-[htt](https://www.bilibili.com/video/BV12QPme7EN9/?spm_id_from=333.337.search-card.all.click&vd_source=c5ebd3064e1721adeb8c8bb5e5a42ed4)ps://www.bilibili.com/video/BV12QPme7EN9/?spm_id_from=333.337.search-card.all.click&vd_source=c5ebd3064e1721adeb8c8bb5e5a42ed4
+https://www.bilibili.com/video/BV12QPme7EN9/?spm_id_from=333.337.search-card.all.click&vd_source=c5ebd3064e1721adeb8c8bb5e5a42ed4
 
 ## Deepseek平替
 
@@ -16,7 +17,7 @@ https://v.douyin.com/iPPhumod/
 
 什么是AI Agent
 
-[https://www.douyin.com/video](https://www.douyin.com/video/7444444364824136986)/7444444364824136986
+https://www.douyin.com/video/7444444364824136986
 
 ## 黄仁勋对Agent
 

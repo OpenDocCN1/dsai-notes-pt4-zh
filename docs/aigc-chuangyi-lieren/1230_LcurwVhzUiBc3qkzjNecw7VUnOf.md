@@ -1,3 +1,4 @@
+
 # 20240705-AI时代来临：从“噱头”到“实战”的大转变？
 
 > 来源：[https://aigcreative.feishu.cn/docx/KqrNd9KpkoClaSxqRPOc34Brnsg](https://aigcreative.feishu.cn/docx/KqrNd9KpkoClaSxqRPOc34Brnsg)

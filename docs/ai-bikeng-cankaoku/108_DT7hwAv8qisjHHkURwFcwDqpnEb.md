@@ -1,3 +1,4 @@
+
 # 高级动画交互网页
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/P1Kwdyv6LovUY5xSlwYcy9aQncb](https://xodnytdcaw.feishu.cn/docx/P1Kwdyv6LovUY5xSlwYcy9aQncb)
@@ -42,4 +43,4 @@
 - 所有动画都整合进 gsap.timeline() 与 ScrollTrigger 管理；
 ```
 
-原文：https://cursorhub.org/tutorials/projects/3d-web-project
+原文：`https://cursorhub.org/tutorials/projects/3d-web-project`

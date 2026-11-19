@@ -1,7 +1,7 @@
-# AI Prompt & Rules.md
+
+# `AI Prompt & Rules.md`
 
 > 来源：[https://huchegames.feishu.cn/docx/QfRvdtGwqokPolxSJOOcu8NDnCh](https://huchegames.feishu.cn/docx/QfRvdtGwqokPolxSJOOcu8NDnCh)
-
 > 搜集和整理提示词，以及用于 AI Agent 的 rules。
 
 ![](img/631cf97cfc10ba4a2e107be59e3060fb.png)

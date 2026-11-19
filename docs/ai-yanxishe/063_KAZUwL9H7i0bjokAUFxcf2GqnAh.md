@@ -1,3 +1,4 @@
+
 # GPT商务速成攻略（完整版）
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/NHkDdLAw5obDvzxNLX8c6h6jnsb](https://aiyanxishe.feishu.cn/docx/NHkDdLAw5obDvzxNLX8c6h6jnsb)
@@ -20,149 +21,99 @@ GPT的主要优势之一是它能够以一种感觉自然和类似人类的方�
 
 这使得它成为各种规模和行业的企业的多功能和强大的工具。
 
-在企业中使用GPT的一些好处包括。
+在企业中使用GPT的一些好处包括：
 
-+   提高效率。GPT可以快速准确地处理各种任务，让人类员工腾出时间专注于更复杂或增值的工作。
-
-+   改善客户体验。GPT可以对客户的询问提供快速、准确和个性化的答复，从而提高满意度和忠诚度。
-
-+   降低成本。通过自动化某些任务，GPT可以帮助企业节省人力成本和其他费用。
-
-+   更大的可扩展性。GPT可以处理无限数量的互动，使企业可以轻松地扩大业务规模，而不必担心雇用额外的工作人员。
-
-+   加强决策。GPT可以分析大量的数据，并提供可供商业决策参考的见解。
++ 提高效率。GPT可以快速准确地处理各种任务，让人类员工腾出时间专注于更复杂或增值的工作。
++ 改善客户体验。GPT可以对客户的询问提供快速、准确和个性化的答复，从而提高满意度和忠诚度。
++ 降低成本。通过自动化某些任务，GPT可以帮助企业节省人力成本和其他费用。
++ 更大的可扩展性。GPT可以处理无限数量的互动，使企业可以轻松地扩大业务规模，而不必担心雇用额外的工作人员。
++ 加强决策。GPT可以分析大量的数据，并提供可供商业决策参考的见解。
 
 ## 👌 用于销售和营销的GPT
 
 GPT可以成为销售和营销工作的宝贵工具，因为它允许企业个性化他们的信息传递，并收集宝贵的客户数据和见解。
 
-以下是使用GPT进行销售和营销的一些方法。
+以下是使用GPT进行销售和营销的一些方法：
 
-+   用GPT创建个性化的信息传递活动。GPT可用于创建针对个人客户或细分市场的个性化信息传递活动。
++ 用GPT创建个性化的信息传递活动。GPT可用于创建针对个人客户或细分市场的个性化信息传递活动。
 
 > 例如，聊天机器人可以根据客户以前的购买行为或兴趣发送个性化的产品建议。这可以帮助提高转换率和客户忠诚度。
 
-+   使用GPT收集客户数据和洞察力。GPT可以收集客户互动的数据，如他们问什么问题，他们对什么产品表示兴趣，以及他们对不同信息的反应。这些数据可以用来改善销售和营销工作，提供对客户偏好和行为的洞察力。
++ 使用GPT收集客户数据和洞察力。GPT可以收集客户互动的数据，如他们问什么问题，他们对什么产品表示兴趣，以及他们对不同信息的反应。这些数据可以用来改善销售和营销工作，提供对客户偏好和行为的洞察力。
++ 在销售和营销工作中使用GPT的最佳做法。在使用GPT进行销售和营销时，必须遵循最佳做法，以确保您的努力有效并尊重客户。
 
-+   在销售和营销工作中使用GPT的最佳做法。在使用GPT进行销售和营销时，必须遵循最佳做法，以确保您的努力有效并尊重客户。
+> 一些提示包括：
 
-> 一些提示包括。
-
-+   对GPT的使用保持透明，为不想与聊天机器人互动的客户提供退出选项。
-
-+   确保聊天机器人的反应准确，并与客户的需求相关。
-
-+   定期审查和更新聊天机器人的回复，以确保它们保持相关性和吸引力。
++ 对GPT的使用保持透明，为不想与聊天机器人互动的客户提供退出选项。
++ 确保聊天机器人的反应准确，并与客户的需求相关。
++ 定期审查和更新聊天机器人的回复，以确保它们保持相关性和吸引力。
 
 ### 写作的GPT
 
 这里有15种使用GPT进行代写的方法，以及示例提示。
 
-+   生成博文。"写一篇关于植物性饮食的好处的博文"。
-
-+   撰写社会媒体文章。"写一篇关于可持续发展在时尚中的重要性的社交媒体文章"。
-
-+   生成产品描述。"为一个新的可持续发展的水瓶写一个产品描述。"
-
-+   撰写电子邮件营销活动。"写一系列的电子邮件，促进可持续家居产品的销售。"
-
-+   生成登陆页面的内容。"为一个推广新的可持续服装系列的登陆页面写内容。"
-
-+   为在线出版物写文章。"写一篇关于快速时尚对环境影响的文章。"
-
-+   编写电子邮件回复。"针对客户关于我们产品的可持续性的询问，写一份个性化的回复。"
-
-+   产生电子书的内容。"为一本关于零废物生活方式的好处的电子书撰写内容"。
-
-+   为视频内容写描述。"为一个关于创造可持续时装的过程的视频写一个描述。"
-
-+   为社交媒体广告产生内容。"为一个社交媒体广告撰写内容，促进可持续家居产品的销售。"
-
-+   撰写新闻稿。"写一篇新闻稿，宣布推出一个新的可持续服装系列。"
-
-+   撰写网络内容。"为我们网站上讨论我们公司的可持续发展倡议的页面撰写内容。"
-
-+   为视频内容写脚本。"为一个关于使用环保清洁产品的好处的视频写一个脚本。"
-
-+   撰写演讲稿。"为一个关于环境问题的会议写一篇关于可持续发展的重要性的演讲。"
-
-+   撰写资助提案。"为一个旨在促进农村社区可持续农业发展的项目写一份拨款建议书。"
++ 生成博文。"写一篇关于植物性饮食的好处的博文"。
++ 撰写社会媒体文章。"写一篇关于可持续发展在时尚中的重要性的社交媒体文章"。
++ 生成产品描述。"为一个新的可持续发展的水瓶写一个产品描述。"
++ 撰写电子邮件营销活动。"写一系列的电子邮件，促进可持续家居产品的销售。"
++ 生成登陆页面的内容。"为一个推广新的可持续服装系列的登陆页面写内容。"
++ 为在线出版物写文章。"写一篇关于快速时尚对环境影响的文章。"
++ 编写电子邮件回复。"针对客户关于我们产品的可持续性的询问，写一份个性化的回复。"
++ 产生电子书的内容。"为一本关于零废物生活方式的好处的电子书撰写内容"。
++ 为视频内容写描述。"为一个关于创造可持续时装的过程的视频写一个描述。"
++ 为社交媒体广告产生内容。"为一个社交媒体广告撰写内容，促进可持续家居产品的销售。"
++ 撰写新闻稿。"写一篇新闻稿，宣布推出一个新的可持续服装系列。"
++ 撰写网络内容。"为我们网站上讨论我们公司的可持续发展倡议的页面撰写内容。"
++ 为视频内容写脚本。"为一个关于使用环保清洁产品的好处的视频写一个脚本。"
++ 撰写演讲稿。"为一个关于环境问题的会议写一篇关于可持续发展的重要性的演讲。"
++ 撰写资助提案。"为一个旨在促进农村社区可持续农业发展的项目写一份拨款建议书。"
 
 ### GPT的最佳用途
 
 关于如何使用GPT的强大提示：
 
-[ht](https://twitter.com/InspiringSia/status/1611686597162070017?t=DZU2t3MstewCh7SX0eVFLQ&s=19)tps://twitter.com/InspiringSia/status/1611686597162070017?t=DZU2t3MstewCh7SX0eVFLQ&s=19
+https://twitter.com/InspiringSia/status/1611686597162070017?t=DZU2t3MstewCh7SX0eVFLQ&s=19
 
 ### 通过使用Chat GPT在Twitter上进行病毒式传播的7种方法：
 
-[ht](https://twitter.com/Abhishek_HQ/status/1612068476692336645?t=y9kWQKlqsSot6pumJSh9KQ&s=19)tps://twitter.com/Abhishek_HQ/status/1612068476692336645?t=y9kWQKlqsSot6pumJSh9KQ&s=19
+https://twitter.com/Abhishek_HQ/status/1612068476692336645?t=y9kWQKlqsSot6pumJSh9KQ&s=19
 
-### 聊天GPT在写作方面的最佳用途。
+### 聊天GPT在写作方面的最佳用途
 
-[https://www.sportskeeda.com/amp/](https://www.sportskeeda.com/amp/gaming-tech/5-best-uses-chat-gpt-writing)gaming-tech/5-best-uses-chat-gpt-writing
+https://www.sportskeeda.com/amp/gaming-tech/5-best-uses-chat-gpt-writing
 
 ### 30种使用GPT的最佳方法
 
-+   产生产品推荐。"对于那些对户外探险感兴趣的人，您会推荐哪些产品？"
-
-+   回答客户问题。"您能告诉我更多关于您的退货政策吗？"
-
-+   提供有关产品或服务的信息。"你的新智能手机型号有什么特点？"
-
-+   处理客户投诉。"我收到了一个有缺陷的产品，我怎样才能得到一个替代品？"
-
-+   安排预约。"我想安排与你们的一个销售代表会面。你有什么办法？"
-
-+   为技术问题提供支持。"我在设置我的账户时遇到麻烦。你能帮助我解决这个问题吗？"
-
-+   处理数据输入任务。"你能把这些信息添加到我们的客户数据库吗？"
-
-+   创建个性化的营销活动。"我有兴趣向纽约地区的年轻专业人士推广我们的新产品。你能为这个受众创建一个有针对性的营销活动吗？"
-
-+   为社交媒体生成内容。"你能写一篇关于我们新产品发布的社交媒体文章吗？"
-
-+   创建个性化的电子邮件。"我想给我们的顶级客户发送一封个性化的电子邮件，感谢他们的业务。你能为这封电子邮件生成内容吗？"
-
-+   提供语言翻译。"你能把这句话翻译成法语吗？"
-
-+   提供天气更新。"今天纽约的天气如何？"
-
-+   提供新闻更新。"股票市场的最新消息是什么？"
-
-+   提供体育方面的最新消息。"上一场足球比赛的比分是多少？"
-
-+   提供娱乐建议。"你能推荐一本好书给我读吗？"
-
-+   提供旅游建议。"我正计划去巴黎旅行。你能推荐一些必去的景点和活动吗？"
-
-+   提供食谱建议。"我正在寻找一个素食晚餐的食谱。你能推荐一些吗？"
-
-+   提供健身建议。"我想开始一个新的锻炼程序。你能推荐一些适合初学者的运动吗？"
-
-+   提供美容建议。"我正在寻找一个新的护肤程序。你能推荐一些产品吗？"
-
-+   提供财务建议。"我想投资一些钱。你能推荐一些选择吗？"
-
-+   为在线订单提供客户支持。"我在追踪我的包裹时遇到麻烦。你能帮助我解决这个问题吗？"
-
-+   为账户管理提供支持。"我忘记了我的密码。你能帮我重新设置吗？"
-
-+   提供产品保修信息。"我想知道更多关于这个产品的保修信息。你能提供细节吗？"
-
-+   提供有关运输和交付选项的信息。"你能告诉我更多关于你的国际运输选项吗？"
-
-+   提供有关商店位置和时间的信息。"你们最近的商店位于哪里，商店的营业时间是什么？"
-
-+   提供有关退货和换货的信息。"我想退回我购买的物品。你能告诉我这样做的过程吗？"
-
-+   提供有关付款方式的信息。"你们接受什么形式的付款？"
-
-+   提供有关促销和折扣的信息。"目前是否有任何促销活动或折扣？"
-
-+   提供有关忠诚度计划的信息。"你能告诉我更多关于你们的忠诚度计划以及如何注册吗？"
-
-+   提供有关公司政策的信息。"你能提供更多关于你的隐私政策的信息吗？"
++ 产生产品推荐。"对于那些对户外探险感兴趣的人，您会推荐哪些产品？"
++ 回答客户问题。"您能告诉我更多关于您的退货政策吗？"
++ 提供有关产品或服务的信息。"你的新智能手机型号有什么特点？"
++ 处理客户投诉。"我收到了一个有缺陷的产品，我怎样才能得到一个替代品？"
++ 安排预约。"我想安排与你们的一个销售代表会面。你有什么办法？"
++ 为技术问题提供支持。"我在设置我的账户时遇到麻烦。你能帮助我解决这个问题吗？"
++ 处理数据输入任务。"你能把这些信息添加到我们的客户数据库吗？"
++ 创建个性化的营销活动。"我有兴趣向纽约地区的年轻专业人士推广我们的新产品。你能为这个受众创建一个有针对性的营销活动吗？"
++ 为社交媒体生成内容。"你能写一篇关于我们新产品发布的社交媒体文章吗？"
++ 创建个性化的电子邮件。"我想给我们的顶级客户发送一封个性化的电子邮件，感谢他们的业务。你能为这封电子邮件生成内容吗？"
++ 提供语言翻译。"你能把这句话翻译成法语吗？"
++ 提供天气更新。"今天纽约的天气如何？"
++ 提供新闻更新。"股票市场的最新消息是什么？"
++ 提供体育方面的最新消息。"上一场足球比赛的比分是多少？"
++ 提供娱乐建议。"你能推荐一本好书给我读吗？"
++ 提供旅游建议。"我正计划去巴黎旅行。你能推荐一些必去的景点和活动吗？"
++ 提供食谱建议。"我正在寻找一个素食晚餐的食谱。你能推荐一些吗？"
++ 提供健身建议。"我想开始一个新的锻炼程序。你能推荐一些适合初学者的运动吗？"
++ 提供美容建议。"我正在寻找一个新的护肤程序。你能推荐一些产品吗？"
++ 提供财务建议。"我想投资一些钱。你能推荐一些选择吗？"
++ 为在线订单提供客户支持。"我在追踪我的包裹时遇到麻烦。你能帮助我解决这个问题吗？"
++ 为账户管理提供支持。"我忘记了我的密码。你能帮我重新设置吗？"
++ 提供产品保修信息。"我想知道更多关于这个产品的保修信息。你能提供细节吗？"
++ 提供有关运输和交付选项的信息。"你能告诉我更多关于你的国际运输选项吗？"
++ 提供有关商店位置和时间的信息。"你们最近的商店位于哪里，商店的营业时间是什么？"
++ 提供有关退货和换货的信息。"我想退回我购买的物品。你能告诉我这样做的过程吗？"
++ 提供有关付款方式的信息。"你们接受什么形式的付款？"
++ 提供有关促销和折扣的信息。"目前是否有任何促销活动或折扣？"
++ 提供有关忠诚度计划的信息。"你能告诉我更多关于你们的忠诚度计划以及如何注册吗？"
++ 提供有关公司政策的信息。"你能提供更多关于你的隐私政策的信息吗？"
 
 # 🤔 如何更好地向 GPT 提问？（进阶版）
 
@@ -174,15 +125,12 @@ GPT 属于基于 OpenAI 的大型文本模型，需要用户输入 Prompts—提
 
 那么，面对 GPT, 如何进行高质量的对话？
 
-+   基于自己的深度思考。
++ 基于自己的深度思考。
++ 参考借鉴别人的提问。比如，借鉴他人对于 GPT 的使用方式，参考他们分享的 Prompts；
++ 基于 AI 的提示和驱动。我们可以将 AI 视为思维辅助助手，基于自己与 AI 的多轮深入对话，拓宽自己的思考宽度和深度。
++ 基于 AI 的 Prompts 提示。前面提到的 AI 机器人 移动端 APP —— Poe, 在每次提问结束后，便会生成几个你可能想要继续提问的相关问题。更进一步，为什么不能让 AI 驱动 AI，让 AI 联动 AI？自己设置条件，让多个 AI 进行对话，甚至实现自动化的内容联动。实现上述场景，或许不会太遥远。
 
-+   参考借鉴别人的提问。比如，借鉴他人对于 GPT 的使用方式，参考他们分享的 Prompts；
-
-+   基于 AI 的提示和驱动。我们可以将 AI 视为思维辅助助手，基于自己与 AI 的多轮深入对话，拓宽自己的思考宽度和深度。
-
-+   基于 AI 的 Prompts 提示。前面提到的 AI 机器人 移动端 APP —— Poe, 在每次提问结束后，便会生成几个你可能想要继续提问的相关问题。更进一步，为什么不能让 AI 驱动 AI，让 AI 联动 AI？自己设置条件，让多个 AI 进行对话，甚至实现自动化的内容联动。实现上述场景，或许不会太遥远。
-
-&lt;img src="https://pic1.zhimg.com/50/v2-c40814f1855238885879cb460d41bf76_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="680" data-rawheight="516" class="origin_image zh-lightbox-thumb" width="680" data-original="https://pica.zhimg.com/v2-c40814f1855238885879cb460d41bf76_r.jpg?source=1940ef5c"/&gt;
+<img src="https://pic1.zhimg.com/50/v2-c40814f1855238885879cb460d41bf76_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="680" data-rawheight="516" class="origin_image zh-lightbox-thumb" width="680" data-original="https://pica.zhimg.com/v2-c40814f1855238885879cb460d41bf76_r.jpg?source=1940ef5c"/>
 
 ![](img/dc04cccad17837b79aef96eaeacbec06.png)
 
@@ -196,27 +144,23 @@ Prompts/提示信息相当于 AIGC 时代的魔法。Prompts 质量的高低，�
 
 OpenAI 官方提供了 [GPT Examples](https://link.zhihu.com/?target=https%3A//platform.openai.com/examples/)，包括了 48 种使用示范。
 
-&lt;img src="https://pic1.zhimg.com/50/v2-1563ef50a5e6a2d23462f96f9e968750_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="711" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://picx.zhimg.com/v2-1563ef50a5e6a2d23462f96f9e968750_r.jpg?source=1940ef5c"/&gt;
+<img src="https://pic1.zhimg.com/50/v2-1563ef50a5e6a2d23462f96f9e968750_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="711" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://picx.zhimg.com/v2-1563ef50a5e6a2d23462f96f9e968750_r.jpg?source=1940ef5c"/>
 
 ![](img/c72eb841c62510c4bcd1a690b1e2d194.png)
 
 也有社区版本的 GPT Prompts 聚合资源：
 
-[https://github.com/f](https://link.zhihu.com/?target=https%3A//github.com/f/awesome-chatgpt-prompts)/awesome-GPT-prompts
+https://github.com/f/awesome-GPT-prompts
 
-我对 GPT Examples 进行了[分类整理，在 Flo](https://link.zhihu.com/?target=https%3A//flowus.cn/flowus101/share/10037b40-88c3-43b3-85f6-b6602dced060)wUs 中建立了名为「GPT 使用示范」的多维表格。我将官方的多种示范，粗略分为内容创作、内容分析、代码辅助、格式转换、问答咨询等五种类别。
+我对 GPT Examples 进行了[分类整理，在 FlowUs 中建立了名为「GPT 使用示范」的多维表格](https://link.zhihu.com/?target=https%3A//flowus.cn/flowus101/share/10037b40-88c3-43b3-85f6-b6602dced060)。我将官方的多种示范，粗略分为内容创作、内容分析、代码辅助、格式转换、问答咨询等五种类别。
 
-+   内容创作：头脑风暴、辅助拟定标题、内容续写、语法矫正和润色、人称表达转换、评论生成、创建食谱……
++ 内容创作：头脑风暴、辅助拟定标题、内容续写、语法矫正和润色、人称表达转换、评论生成、创建食谱……
++ 内容分析：信息分类、提取关键词、提取摘要、内容总结、内容简化、文本大纲生成、……
++ 代码辅助：代码生成、代码转换、代码解释、BUG 修复……
++ 格式转换：语言翻译、文本转表格、文本转颜色……
++ 问答咨询：创建面试问题、模拟对话、提供咨询服务……
 
-+   内容分析：信息分类、提取关键词、提取摘要、内容总结、内容简化、文本大纲生成、……
-
-+   代码辅助：代码生成、代码转换、代码解释、BUG 修复……
-
-+   格式转换：语言翻译、文本转表格、文本转颜色……
-
-+   问答咨询：创建面试问题、模拟对话、提供咨询服务……
-
-&lt;img src="https://pic1.zhimg.com/50/v2-8bfc9f186280ba6504ad5e4d935bf4c4_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="724" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pic1.zhimg.com/v2-8bfc9f186280ba6504ad5e4d935bf4c4_r.jpg?source=1940ef5c"/&gt;
+<img src="https://pic1.zhimg.com/50/v2-8bfc9f186280ba6504ad5e4d935bf4c4_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="724" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pic1.zhimg.com/v2-8bfc9f186280ba6504ad5e4d935bf4c4_r.jpg?source=1940ef5c"/>
 
 ![](img/80abd2fc905af2aa403715836bc38b36.png)
 
@@ -224,17 +168,12 @@ OpenAI 官方提供了 [GPT Examples](https://link.zhihu.com/?target=https%3A//p
 
 基本操作如下：
 
-+   解析页面内容。打开简悦进入阅读模式，解析 GPT Examples 的内容介绍。
-
-+   复制文本至 GPT.
-
-+   命令 GPT 将文本转化为表格，并翻译为中文。
-
-+   全选复制表格，并粘贴至 FlowUs, 生成简单表格。
-
-+   将「简单表格」转化为「多维表格」. 根据需求，新增视图，并更改多维表格的属性类型。
-
-+   微调处理。对 GPT 所翻译的文本进行微调。
++ 解析页面内容。打开简悦进入阅读模式，解析 GPT Examples 的内容介绍。
++ 复制文本至 GPT.
++ 命令 GPT 将文本转化为表格，并翻译为中文。
++ 全选复制表格，并粘贴至 FlowUs, 生成简单表格。
++ 将「简单表格」转化为「多维表格」. 根据需求，新增视图，并更改多维表格的属性类型。
++ 微调处理。对 GPT 所翻译的文本进行微调。
 
 ### GPT Prompts 社区使用指南
 
@@ -244,21 +183,23 @@ OpenAI 官方提供了 [GPT Examples](https://link.zhihu.com/?target=https%3A//p
 
 [GPT中文调教指南](https://link.zhihu.com/?target=https%3A//flowus.cn/flowus101/share/f0601ddc-72e5-4b4e-ab17-0af2cce98732)
 
-+   [EmergentMind](https://link.zhihu.com/?target=https%3A//emergentmind.com/)：一个专门收集互联网上 GPT 优秀示例用法的国外站点。
++ [EmergentMind](https://link.zhihu.com/?target=https%3A//emergentmind.com/)：一个专门收集互联网上 GPT 优秀示例用法的国外站点。
 
-&lt;img src="https://picx.zhimg.com/50/v2-7040ec66c35e3fbd9044c5392a608be9_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="726" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pic1.zhimg.com/v2-7040ec66c35e3fbd9044c5392a608be9_r.jpg?source=1940ef5c"/&gt;
+<img src="https://picx.zhimg.com/50/v2-7040ec66c35e3fbd9044c5392a608be9_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="726" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pic1.zhimg.com/v2-7040ec66c35e3fbd9044c5392a608be9_r.jpg?source=1940ef5c"/>
 
 ![](img/f2c1e0491dde9099265b7151e2f34649.png)
 
-+   [The Ultimate Collection of GPT ](https://link.zhihu.com/?target=https%3A//chatgpt.getlaunchlist.com/)Products and Prompts：按照使用场景分门别类收集了不少 GPT Prompts.
++ [The Ultimate Collection of GPT Products and Prompts](https://link.zhihu.com/?target=https%3A//chatgpt.getlaunchlist.com/)：按照使用场景分门别类收集了不少 GPT Prompts.
 
-&lt;img src="https://picx.zhimg.com/50/v2-bc100cf1b79d6dcf07b3fd402095d3f6_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="721" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pica.zhimg.com/v2-bc100cf1b79d6dcf07b3fd402095d3f6_r.jpg?source=1940ef5c"/&gt;
+
+
+<img src="https://picx.zhimg.com/50/v2-bc100cf1b79d6dcf07b3fd402095d3f6_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="721" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pica.zhimg.com/v2-bc100cf1b79d6dcf07b3fd402095d3f6_r.jpg?source=1940ef5c"/>
 
 ![](img/e19355b0bedc2918cf8fcbd45c703cab.png)
 
 +   [Learn Prompting](https://link.zhihu.com/?target=https%3A//learnprompting.org/)：一个关于如何与 AI 交互的免费、开源站点。
 
-&lt;img src="https://pic1.zhimg.com/50/v2-acab6be80598341150984378a88247dd_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="723" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pic1.zhimg.com/v2-acab6be80598341150984378a88247dd_r.jpg?source=1940ef5c"/&gt;
+<img src="https://pic1.zhimg.com/50/v2-acab6be80598341150984378a88247dd_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1120" data-rawheight="723" class="origin_image zh-lightbox-thumb" width="1120" data-original="https://pic1.zhimg.com/v2-acab6be80598341150984378a88247dd_r.jpg?source=1940ef5c"/>
 
 ![](img/cc617bd6fe25d0abfef7e36a08da078e.png)
 
@@ -360,7 +301,7 @@ GPT 引领了这次 AI 破圈浪潮。在关注 GPT 的人群中，有些正在�
 
 直接把具体的文字模板也送给你：
 
-将以上4种模式转化为 markdown 的 """markdown {} """ 表格形式，其中的字段为名称、简述、案例
+将以上4种模式转化为 markdown 的 `"""markdown {} """` 表格形式，其中的字段为名称、简述、案例
 
 ### 5、限制
 
@@ -382,11 +323,8 @@ GPT 引领了这次 AI 破圈浪潮。在关注 GPT 的人群中，有些正在�
 
 使用 STAR 原则与下面的格式总结一下这段话：
 
-"""
-
+```
 最近几天，因为直播 + 兴趣[的原](https://www.zhihu.com/search?q=%E5%BE%90%E5%AE%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2930993532%7D)因，我在研究用 小报童 来展示如何学习GPT的 prompt、用 徐宿的知识体系读者群来展示东半球最强大的知识体系构建方法，而昨天的展示中主要展示的是关于GPT的 prompt 方面的构建、但由于我对技术领域的各种名词缺乏基本的知识储备，所以后半段的直播有点不理想，但我很快调整状态连夜学习。然后，我在第二天写了一篇相对完善的prompt又利于新手使用的小报童文章。
-
-"""
 
 情境(Situation):
 
@@ -395,6 +333,7 @@ GPT 引领了这次 AI 破圈浪潮。在关注 GPT 的人群中，有些正在�
 行动(Action): -||-
 
 结果(Result): -||-
+```
 
 ### 6、增改
 
@@ -518,23 +457,25 @@ GPT的目的不是要取代文案人员，而是协助他们产生想法，并�
 
 使用GPT进行文案写作的20种方法（含提示）。
 
-[ht](https://twitter.com/garryflix/status/1609867159286554625?t=5w_n0uU5tuOhVB1KrW7KSg&amp;s=19)tps://twitter.com/garryflix/status/1609867159286554625?t=5w_n0uU5tuOhVB1KrW7KSg&amp;s=19
+[https://twitter.com/garryflix/status/1609867159286554625?t=5w_n0uU5tuOhVB1KrW7KSg&s=19](https://twitter.com/garryflix/status/1609867159286554625?t=5w_n0uU5tuOhVB1KrW7KSg&s=19)
 
 用GPT编写专业文案的8个步骤。
 
-[ht](https://twitter.com/DannyLeibrandt/status/1612874673712160768?t=8RX1KaWdQ4MtdhAty0MO5w&s=19)tps://twitter.com/DannyLeibrandt/status/1612874673712160768?t=8RX1KaWdQ4MtdhAty0MO5w&s=19
+[https://twitter.com/DannyLeibrandt/status/1612874673712160768?t=8RX1KaWdQ4MtdhAty0MO5w&s=19](https://twitter.com/DannyLeibrandt/status/1612874673712160768?t=8RX1KaWdQ4MtdhAty0MO5w&s=19)
 
 使用GPT撰写专业文案的8个步骤。
 
-[ht](https://twitter.com/Manasvisonii/status/1612434103399481345?t=QtNE3HtYeWJ3vkwqQh9-aw&s=19)tps://twitter.com/Manasvisonii/status/1612434103399481345?t=QtNE3HtYeWJ3vkwqQh9-aw&s=19
+
 
 ### 现代营销的GPT
 
 2023年，GPT可以通过7种方式为你的营销团队提供动力。
 
-[ht](https://twitter.com/alexgarcia_atx/status/1612253154044674049?s=20&t=0xi9hkwmqqqRGUV8rhtrOQ)tps://twitter.com/alexgarcia_atx/status/1612253154044674049?s=20&t=0xi9hkwmqqqRGUV8rhtrOQ
+[https://twitter.com/Manasvisonii/status/1612434103399481345?t=QtNE3HtYeWJ3vkwqQh9-aw&s=19](https://twitter.com/Manasvisonii/status/1612434103399481345?t=QtNE3HtYeWJ3vkwqQh9-aw&s=19)
 
-[ht](https://twitter.com/LoftedLearning/status/1610251544846565376?t=CPqhRCPooTmARJSApNE3QA&amp;s=19)tps://twitter.com/LoftedLearning/status/1610251544846565376?t=CPqhRCPooTmARJSApNE3QA&amp;s=19
+[https://twitter.com/alexgarcia_atx/status/1612253154044674049?s=20&t=0xi9hkwmqqqRGUV8rhtrOQ](https://twitter.com/alexgarcia_atx/status/1612253154044674049?s=20&t=0xi9hkwmqqqRGUV8rhtrOQ)
+
+[https://twitter.com/LoftedLearning/status/1610251544846565376?t=CPqhRCPooTmARJSApNE3QA&s=19](https://twitter.com/LoftedLearning/status/1610251544846565376?t=CPqhRCPooTmARJSApNE3QA&s=19)
 
 ### 先进的GPT技术
 
@@ -542,312 +483,277 @@ GPT的目的不是要取代文案人员，而是协助他们产生想法，并�
 
 以下是一些高级GPT技术的例子。
 
-+   实施GPT来生成和鉴定线索。GPT可以用来产生线索，并通过询问有针对性的问题和收集有关他们的需求和兴趣的信息来鉴定潜在客户。这可以帮助企业节省时间，提高销售流程的效率。
-
-+   利用GPT进行市场研究和产品开发。GPT可以用来进行市场研究和收集客户反馈，为产品开发提供信息，提高客户满意度。
-
-+   将GPT与其他工具和技术相结合。GPT可以与其他工具和技术整合，如CRM系统和数据分析平台，以提高业务运营的效率和效果。
+- 实施GPT来生成和鉴定线索。GPT可以用来产生线索，并通过询问有针对性的问题和收集有关他们的需求和兴趣的信息来鉴定潜在客户。这可以帮助企业节省时间，提高销售流程的效率。
+- 利用GPT进行市场研究和产品开发。GPT可以用来进行市场研究和收集客户反馈，为产品开发提供信息，提高客户满意度。
+- 将GPT与其他工具和技术相结合。GPT可以与其他工具和技术整合，如CRM系统和数据分析平台，以提高业务运营的效率和效果。
 
 ### 10 高级GPT技术
 
-+   个性化。GPT可以被训练成使用客户的喜好和过去的互动数据，提供个性化的建议和信息。
-
-+   自然语言处理。GPT可以被训练为理解和响应自然语言输入，从而与客户进行更无缝和直观的对话。
-
-+   情感分析。GPT可以被训练来分析客户反应的情绪，并相应地调整其反应，从而实现更有效的沟通和客户服务。
-
-+   与其他系统整合。GPT可以与其他系统整合，如CRM平台和数据分析工具，以提高业务流程的效率和效益。 --
-
-+   定制的品牌和设计。GPT可以根据企业的品牌和设计元素进行定制，以创造一个无缝和有凝聚力的客户体验。
-
-+   预测模型。GPT可以进行培训，利用过去的客户互动数据对未来的行为进行预测，使企业能够相应地调整他们的营销和销售工作。
-
-+   多渠道整合。GPT可以与多个渠道整合，如网站聊天、消息应用程序和语音助手，在所有接触点提供无缝的客户体验。
-
-+   知识管理。GPT可以接受培训，访问和使用企业的知识库，为客户提供准确和最新的信息。
-
-+   与信息传递平台整合。GPT可以与WhatsApp和Facebook Messenger等信息平台整合，使企业能够与客户进行实时沟通。
-
-+   个性化的推荐。GPT可以进行培训，根据客户的喜好和过去的互动，提供个性化的产品或服务建议。
+- 个性化。GPT可以被训练成使用客户的喜好和过去的互动数据，提供个性化的建议和信息。
+- 自然语言处理。GPT可以被训练为理解和响应自然语言输入，从而与客户进行更无缝和直观的对话。
+- 情感分析。GPT可以被训练来分析客户反应的情绪，并相应地调整其反应，从而实现更有效的沟通和客户服务。
+- 与其他系统整合。GPT可以与其他系统整合，如CRM平台和数据分析工具，以提高业务流程的效率和效益。
+- 定制的品牌和设计。GPT可以根据企业的品牌和设计元素进行定制，以创造一个无缝和有凝聚力的客户体验。
+- 预测模型。GPT可以进行培训，利用过去的客户互动数据对未来的行为进行预测，使企业能够相应地调整他们的营销和销售工作。
+- 多渠道整合。GPT可以与多个渠道整合，如网站聊天、消息应用程序和语音助手，在所有接触点提供无缝的客户体验。
+- 知识管理。GPT可以接受培训，访问和使用企业的知识库，为客户提供准确和最新的信息。
+- 与信息传递平台整合。GPT可以与WhatsApp和Facebook Messenger等信息平台整合，使企业能够与客户进行实时沟通。
+- 个性化的推荐。GPT可以进行培训，根据客户的喜好和过去的互动，提供个性化的产品或服务建议。
 
 ### 使用GPT进行设计
 
-[ht](https://twitter.com/CharlesPattson/status/1610262960621879305?t=2AGF68m9c2nUYEmbyVEcZg&amp;s=19)tps://twitter.com/CharlesPattson/status/1610262960621879305?t=2AGF68m9c2nUYEmbyVEcZg&amp;s=19
+[https://twitter.com/CharlesPattson/status/1610262960621879305?t=2AGF68m9c2nUYEmbyVEcZg&s=19](https://twitter.com/CharlesPattson/status/1610262960621879305?t=2AGF68m9c2nUYEmbyVEcZg&s=19)
 
 ### GPT将取代商业
 
-[ht](https://twitter.com/AtOnceCo/status/1610031105104613379?t=avJFpjwlVWsor9VLyGOhzA&amp;s=19)tps://twitter.com/AtOnceCo/status/1610031105104613379?t=avJFpjwlVWsor9VLyGOhzA&amp;s=19
+[https://twitter.com/AtOnceCo/status/1610031105104613379?t=avJFpjwlVWsor9VLyGOhzA&s=19](https://twitter.com/AtOnceCo/status/1610031105104613379?t=avJFpjwlVWsor9VLyGOhzA&s=19)
 
 ### 用于电子邮件营销的GPT
 
-GPT + Cold Email:
+**GPT + Cold Email:**
 
-[h](https://www.gmass.co/blog/chatgpt-cold-email-copywriting/)ttps://www.gmass.co/blog/GPT-cold-email-copywriting/
+[https://www.gmass.co/blog/GPT-cold-email-copywriting/](https://www.gmass.co/blog/chatgpt-cold-email-copywriting/)
 
-[ht](https://twitter.com/AtOnceCo/status/1609921210002841609?t=mrTaXov6WTwSsGQlJ9ieKQ&amp;s=19)tps://twitter.com/AtOnceCo/status/1609921210002841609?t=mrTaXov6WTwSsGQlJ9ieKQ&amp;s=19
+[https://twitter.com/AtOnceCo/status/1609921210002841609?t=mrTaXov6WTwSsGQlJ9ieKQ&s=19](https://twitter.com/AtOnceCo/status/1609921210002841609?t=mrTaXov6WTwSsGQlJ9ieKQ&s=19)
 
 ### 使用GPT节省时间
 
-[ht](https://twitter.com/jspeiser/status/1609912415289761795?t=J0EiM4I-fLfWUXIACk6Vzg&amp;s=19)tps://twitter.com/jspeiser/status/1609912415289761795?t=J0EiM4I-fLfWUXIACk6Vzg&amp;s=19
+[https://twitter.com/jspeiser/status/1609912415289761795?t=J0EiM4I-fLfWUXIACk6Vzg&s=19](https://twitter.com/jspeiser/status/1609912415289761795?t=J0EiM4I-fLfWUXIACk6Vzg&s=19)
 
 ### 用GPT做心灵的震撼
 
-[ht](https://twitter.com/thesyedhuq/status/1610321340338434054?t=vVzUhj9sJG_BsUcDwaDOIg&amp;s=19)tps://twitter.com/thesyedhuq/status/1610321340338434054?t=vVzUhj9sJG_BsUcDwaDOIg&amp;s=19
+[https://twitter.com/thesyedhuq/status/1610321340338434054?t=vVzUhj9sJG_BsUcDwaDOIg&s=19](https://twitter.com/thesyedhuq/status/1610321340338434054?t=vVzUhj9sJG_BsUcDwaDOIg&s=19)
 
 ### 用于SEO的GPT
 
-[ht](https://twitter.com/AtOnceCo/status/1609555052275834880?t=J4kM0PhjbbC_gmAeX-mjKQ&amp;s=19)tps://twitter.com/AtOnceCo/status/1609555052275834880?t=J4kM0PhjbbC_gmAeX-mjKQ&amp;s=19
+[https://twitter.com/AtOnceCo/status/1609555052275834880?t=J4kM0PhjbbC_gmAeX-mjKQ&s=19](https://twitter.com/AtOnceCo/status/1609555052275834880?t=J4kM0PhjbbC_gmAeX-mjKQ&s=19)
 
 ### GPT 的经营理念
 
 80种利用GPT发展业务的方法。
 
-[https://twitter.com/AtOnceCo/status/161281027](https://twitter.com/AtOnceCo/status/1612810273152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19)3152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19
+[https://twitter.com/AtOnceCo/status/1612810273152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19](https://twitter.com/AtOnceCo/status/1612810273152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19)
 
 12个你可以用GPT开始的商业想法。
 
-1.  内容创作。使用GPT产生书面内容的想法，如博客文章、文章、社交媒体帖子或营销副本。
-
-1.  2.内容策划。使用GPT产生创意，从各种来源策划和组织书面内容，如新闻文章或博客文章。
-
-1.  3.电子商务。使用GPT为在线产品生成产品描述、标题和标签，或创建电子邮件营销活动的企业。
-
-1.  潜在客户开发。使用GPT来产生线索生成活动的想法，或编写电子邮件主题行和其他营销副本的企业。
-
-1.  5.社会媒体管理。企业使用GPT为社交媒体帖子和活动提供创意，或撰写社交媒体的简介和标题。
-
-1.  6.搜索引擎优化。使用GPT为SEO优化的内容提供创意，如博客文章、文章或产品描述。
-
-1.  转录和翻译。使用GPT生成音频或视频内容的转录或翻译的企业。
-
-1.  虚拟写作助理：使用GPT为个人或组织提供写作帮助的企业，例如为书面内容提供创意或帮助校对和编辑。
-
-1.  创意写作。使用GPT为创意写作项目提供创意，如短篇故事、小说或剧本。
-
-1.  文案写作机构。使用GPT为各行业的客户提供营销文案、广告口号和其他书面内容的创意。
-
-1.  11.教育内容。使用GPT为教育内容提供创意的企业，如教案、活动或教育视频。
-
-1.  演讲稿撰写。使用GPT生成演讲稿的企业，如婚礼祝词、悼词或商业演讲。
+1. 内容创作。使用GPT产生书面内容的想法，如博客文章、文章、社交媒体帖子或营销副本。
+2. 内容策划。使用GPT产生创意，从各种来源策划和组织书面内容，如新闻文章或博客文章。
+3. 电子商务。使用GPT为在线产品生成产品描述、标题和标签，或创建电子邮件营销活动的企业。
+4. 潜在客户开发。使用GPT来产生线索生成活动的想法，或编写电子邮件主题行和其他营销副本的企业。
+5. 社会媒体管理。企业使用GPT为社交媒体帖子和活动提供创意，或撰写社交媒体的简介和标题。
+6. 搜索引擎优化。使用GPT为SEO优化的内容提供创意，如博客文章、文章或产品描述。
+7. 转录和翻译。使用GPT生成音频或视频内容的转录或翻译的企业。
+8. 虚拟写作助理：使用GPT为个人或组织提供写作帮助的企业，例如为书面内容提供创意或帮助校对和编辑。
+9. 创意写作。使用GPT为创意写作项目提供创意，如短篇故事、小说或剧本。
+10. 文案写作机构。使用GPT为各行业的客户提供营销文案、广告口号和其他书面内容的创意。
+11. 教育内容。使用GPT为教育内容提供创意的企业，如教案、活动或教育视频。
+12. 演讲稿撰写。使用GPT生成演讲稿的企业，如婚礼祝词、悼词或商业演讲。
 
 这里有更多。
 
-[ht](https://twitter.com/thesyedhuq/status/1607784625572827139?t=CCgrpfrGbk8zAH2k7dqEOQ&amp;s=19)tps://twitter.com/thesyedhuq/status/1607784625572827139?t=CCgrpfrGbk8zAH2k7dqEOQ&amp;s=19
+[https://twitter.com/thesyedhuq/status/1607784625572827139?t=CCgrpfrGbk8zAH2k7dqEOQ&s=19](https://twitter.com/thesyedhuq/status/1607784625572827139?t=CCgrpfrGbk8zAH2k7dqEOQ&s=19)
 
 ### 使用GPT的销售页面
 
-[ht](https://twitter.com/GrammarHippy/status/1608137421971152899?t=uXE3ExrkCFh-L-yXcEFz3w&amp;s=19)tps://twitter.com/GrammarHippy/status/1608137421971152899?t=uXE3ExrkCFh-L-yXcEFz3w&amp;s=19
+[https://twitter.com/GrammarHippy/status/1608137421971152899?t=uXE3ExrkCFh-L-yXcEFz3w&s=19](https://twitter.com/GrammarHippy/status/1608137421971152899?t=uXE3ExrkCFh-L-yXcEFz3w&s=19)
 
 ### 通过GPT获得巨大的领先优势
 
-[ht](https://twitter.com/thatroblennon/status/1610316022174683136?t=JWI06mnAypwvtC_NEXL8Vw&amp;s=19)tps://twitter.com/thatroblennon/status/1610316022174683136?t=JWI06mnAypwvtC_NEXL8Vw&amp;s=19
+[https://twitter.com/thatroblennon/status/1610316022174683136?t=JWI06mnAypwvtC_NEXL8Vw&s=19](https://twitter.com/thatroblennon/status/1610316022174683136?t=JWI06mnAypwvtC_NEXL8Vw&s=19)
 
 ### WebGPT Chrome扩展
 
-.
-
-[ht](https://twitter.com/DataChaz/status/1610556519531089921?t=oKI1KSMV_lGsaWRfDFCoAA&amp;s=19)tps://twitter.com/DataChaz/status/1610556519531089921?t=oKI1KSMV_lGsaWRfDFCoAA&amp;s=19
+[https://twitter.com/DataChaz/status/1610556519531089921?t=oKI1KSMV_lGsaWRfDFCoAA&s=19](https://twitter.com/DataChaz/status/1610556519531089921?t=oKI1KSMV_lGsaWRfDFCoAA&s=19)
 
 ### 使用GPT使您的生产力提高10倍
 
-[ht](https://twitter.com/themattmic/status/1610634157704773633?t=mL7a13tPBVbi5vxuzLO3DQ&amp;s=19)tps://twitter.com/themattmic/status/1610634157704773633?t=mL7a13tPBVbi5vxuzLO3DQ&amp;s=19
+[https://twitter.com/themattmic/status/1610634157704773633?t=mL7a13tPBVbi5vxuzLO3DQ&s=19](https://twitter.com/themattmic/status/1610634157704773633?t=mL7a13tPBVbi5vxuzLO3DQ&s=19)
 
 ### 用GPT创建内容
 
-[ht](https://twitter.com/HBCoop_/status/1603814980700323854?t=AUj_FCfAQO6URn7ka09mHA&amp;s=19)tps://twitter.com/HBCoop_/status/1603814980700323854?t=AUj_FCfAQO6URn7ka09mHA&amp;s=19
+[https://twitter.com/HBCoop_/status/1603814980700323854?t=AUj_FCfAQO6URn7ka09mHA&s=19](https://twitter.com/HBCoop_/status/1603814980700323854?t=AUj_FCfAQO6URn7ka09mHA&s=19)
 
 ### 使用GPT为您带来好处
 
-[ht](https://twitter.com/GrowWithSerge/status/1611347431584661504?t=zRLLbF4Yb_xVXdHuyJNL9A&amp;s=19)tps://twitter.com/GrowWithSerge/status/1611347431584661504?t=zRLLbF4Yb_xVXdHuyJNL9A&amp;s=19
+[https://twitter.com/GrowWithSerge/status/1611347431584661504?t=zRLLbF4Yb_xVXdHuyJNL9A&s=19](https://twitter.com/GrowWithSerge/status/1611347431584661504?t=zRLLbF4Yb_xVXdHuyJNL9A&s=19)
 
 ### GPT可以使你的生产力提高10倍
 
-[ht](https://twitter.com/hasantoxr/status/1611357045017436161?t=T1-K4hvlOtP6x2TiPuOLFw&amp;s=19)tps://twitter.com/hasantoxr/status/1611357045017436161?t=T1-K4hvlOtP6x2TiPuOLFw&amp;s=19
+[https://twitter.com/hasantoxr/status/1611357045017436161?t=T1-K4hvlOtP6x2TiPuOLFw&s=19](https://twitter.com/hasantoxr/status/1611357045017436161?t=T1-K4hvlOtP6x2TiPuOLFw&s=19)
 
 ### 所有关于GPT的最佳例子
 
-[ht](https://twitter.com/bentossell/status/1598269692082151424?t=7dKanxjmPLUn7ipHNfxQog&amp;s=19)tps://twitter.com/bentossell/status/1598269692082151424?t=7dKanxjmPLUn7ipHNfxQog&amp;s=19
+[https://twitter.com/bentossell/status/1598269692082151424?t=7dKanxjmPLUn7ipHNfxQog&s=19](https://twitter.com/bentossell/status/1598269692082151424?t=7dKanxjmPLUn7ipHNfxQog&s=19)
 
 ### 你的GPT提示的问题
 
-[ht](https://twitter.com/thatroblennon/status/1610975391291695105?t=JHfnyFhlWXXqtnBa5c909A&amp;s=19)tps://twitter.com/thatroblennon/status/1610975391291695105?t=JHfnyFhlWXXqtnBa5c909A&amp;s=19
+[https://twitter.com/thatroblennon/status/1610975391291695105?t=JHfnyFhlWXXqtnBa5c909A&s=19](https://twitter.com/thatroblennon/status/1610975391291695105?t=JHfnyFhlWXXqtnBa5c909A&s=19)
 
 ### 使用GPT构建产品
 
-[ht](https://twitter.com/bbourque/status/1610144728514809857?t=z_ODZsbpQ9BkUbgIm3Mdbw&amp;s=19)tps://twitter.com/bbourque/status/1610144728514809857?t=z_ODZsbpQ9BkUbgIm3Mdbw&amp;s=19
+[https://twitter.com/bbourque/status/1610144728514809857?t=z_ODZsbpQ9BkUbgIm3Mdbw&s=19](https://twitter.com/bbourque/status/1610144728514809857?t=z_ODZsbpQ9BkUbgIm3Mdbw&s=19)
 
 ### 为您的企业提供GPT（错误）
 
-[ht](https://twitter.com/AtOnceCo/status/1607166682778198016?t=nJOh0PuawWqv_RG_7GBGIw&amp;s=19)tps://twitter.com/AtOnceCo/status/1607166682778198016?t=nJOh0PuawWqv_RG_7GBGIw&amp;s=19
+[https://twitter.com/AtOnceCo/status/1607166682778198016?t=nJOh0PuawWqv_RG_7GBGIw&s=19](https://twitter.com/AtOnceCo/status/1607166682778198016?t=nJOh0PuawWqv_RG_7GBGIw&s=19)
 
 ### 20次免费使用GPT
 
-[ht](https://twitter.com/AtOnceCo/status/1607521273340624896?t=jQK6HIxbCze5OtCwuvyCFg&amp;s=19)tps://twitter.com/AtOnceCo/status/1607521273340624896?t=jQK6HIxbCze5OtCwuvyCFg&amp;s=19
+[https://twitter.com/AtOnceCo/status/1607521273340624896?t=jQK6HIxbCze5OtCwuvyCFg&s=19](https://twitter.com/AtOnceCo/status/1607521273340624896?t=jQK6HIxbCze5OtCwuvyCFg&s=19)
 
 ### 使用GPT制作视频
 
-[ht](https://twitter.com/levelsio/status/1606352344404328449?t=n3oC8KvmOryfhnG71ZpoLQ&amp;s=19)tps://twitter.com/levelsio/status/1606352344404328449?t=n3oC8KvmOryfhnG71ZpoLQ&amp;s=19
+[https://twitter.com/levelsio/status/1606352344404328449?t=n3oC8KvmOryfhnG71ZpoLQ&s=19](https://twitter.com/levelsio/status/1606352344404328449?t=n3oC8KvmOryfhnG71ZpoLQ&s=19)
 
 ### 用GPT改变您的日常工作流程
 
-[ht](https://twitter.com/MattPRD/status/1610710475276439554?t=eMpozGC5Hp5gzcH1ZoCIng&amp;s=19)tps://twitter.com/MattPRD/status/1610710475276439554?t=eMpozGC5Hp5gzcH1ZoCIng&amp;s=19
+[https://twitter.com/MattPRD/status/1610710475276439554?t=eMpozGC5Hp5gzcH1ZoCIng&s=19](https://twitter.com/MattPRD/status/1610710475276439554?t=eMpozGC5Hp5gzcH1ZoCIng&s=19)
 
 ### 在产品设计中使用GPT
 
-Here you go: [https://uxplanet.org/how-to-use-GPT-in-product-](https://uxplanet.org/how-to-use-chatgpt-in-product-design-8-practical-examples-a6135308b9b2)design-8-practical-examples-a6135308b9b2
+Here you go: [https://uxplanet.org/how-to-use-GPT-in-product-design-8-practical-examples-a6135308b9b2](https://uxplanet.org/how-to-use-chatgpt-in-product-design-8-practical-examples-a6135308b9b2)
 
 ### 使用GPT您的收入增加10倍
 
-[ht](https://twitter.com/theBMcopywriter/status/1611315418110590976?t=BBbYMKXO5OW__kH2OmFeHA&amp;s=19)tps://twitter.com/theBMcopywriter/status/1611315418110590976?t=BBbYMKXO5OW__kH2OmFeHA&amp;s=19
+[https://twitter.com/theBMcopywriter/status/1611315418110590976?t=BBbYMKXO5OW__kH2OmFeHA&s=19](https://twitter.com/theBMcopywriter/status/1611315418110590976?t=BBbYMKXO5OW__kH2OmFeHA&s=19)
 
 ### 使用GPT赚钱
 
-[ht](https://twitter.com/Abhishek_HQ/status/1611343126849015810?t=koM4BgusKLMeRx4eqh2OMA&amp;s=19)tps://twitter.com/Abhishek_HQ/status/1611343126849015810?t=koM4BgusKLMeRx4eqh2OMA&amp;s=19
+[https://twitter.com/Abhishek_HQ/status/1611343126849015810?t=koM4BgusKLMeRx4eqh2OMA&s=19](https://twitter.com/Abhishek_HQ/status/1611343126849015810?t=koM4BgusKLMeRx4eqh2OMA&s=19)
 
 ### 利用GPT发展您的业务
 
 80种利用GPT发展业务的方法。
 
-[https://twitter.com/AtOnceCo/status/161281027](https://twitter.com/AtOnceCo/status/1612810273152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19)3152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19
+[https://twitter.com/AtOnceCo/status/1612810273152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19](https://twitter.com/AtOnceCo/status/1612810273152172032?t=15ZC1iKR932VXxRfg19Ncg&s=19)
 
 ### 使用GPT赚取财富 (视频)
 
-用GPT赚钱的10种方法。
-
-https://youtu.be/QW2iY6RTS2k
-
-我是如何利用GPT赚取5,792美元的。
-
-https://youtu.be/Mr0zhG2VIiw
-
-一天赚100美元。
-
-https://youtu.be/88Je0jdiAok
-
-Earn $100 a day.
-
-https://youtu.be/cn3_qWwjqMY
+- 用GPT赚钱的10种方法：[https://youtu.be/QW2iY6RTS2k](https://youtu.be/QW2iY6RTS2k)
+- 我是如何利用GPT赚取5,792美元的：[https://youtu.be/Mr0zhG2VIiw](https://youtu.be/Mr0zhG2VIiw)
+- 一天赚100美元：[https://youtu.be/88Je0jdiAok](https://youtu.be/88Je0jdiAok)
+- Earn $100 a day：[https://youtu.be/cn3_qWwjqMY](https://youtu.be/cn3_qWwjqMY)
 
 ### 写作的GPT
 
-[ht](https://twitter.com/TMitrosilis/status/1611361249735892992?t=bY5eDBKKpwXOXpoZuLx-ww&amp;s=19)tps://twitter.com/TMitrosilis/status/1611361249735892992?t=bY5eDBKKpwXOXpoZuLx-ww&amp;s=19
+[https://twitter.com/TMitrosilis/status/1611361249735892992?t=bY5eDBKKpwXOXpoZuLx-ww&s=19](https://twitter.com/TMitrosilis/status/1611361249735892992?t=bY5eDBKKpwXOXpoZuLx-ww&s=19)
 
 ### AI企业以GPT为起点
 
 20种使用GPT的方式为您的业务服务。
 
-[https://twitter.com/AtOnceCo/status/161246195](https://twitter.com/AtOnceCo/status/1612461958896156683?t=E04A7eoalZ6xqAcPWrxVfQ&s=19)8896156683?t=E04A7eoalZ6xqAcPWrxVfQ&s=19
 
-[ht](https://twitter.com/thealexbanks/status/1610996706887467009?t=yNCnrhAVLWpgPnYl_SwEfQ&amp;s=19)tps://twitter.com/thealexbanks/status/1610996706887467009?t=yNCnrhAVLWpgPnYl_SwEfQ&amp;s=19
 
-### 写博客文章的GPT
+https://twitter.com/AtOnceCo/status/1612461958896156683?t=E04A7eoalZ6xqAcPWrxVfQ&s=19
 
-[h](https://twitter.com/AtOnceCo/status/1610285886742167553?s=19)ttps://twitter.com/AtOnceCo/status/1610285886742167553?s=19
+https://twitter.com/thealexbanks/status/1610996706887467009?t=yNCnrhAVLWpgPnYl_SwEfQ&s=19
 
-### 用于SEO的GPT
+## 写博客文章的GPT
 
-[ht](https://twitter.com/AtOnceCo/status/1610652461487751168?t=6zyRYizvYKGWUWQRwio3sg&amp;s=19)tps://twitter.com/AtOnceCo/status/1610652461487751168?t=6zyRYizvYKGWUWQRwio3sg&amp;s=19
+https://twitter.com/AtOnceCo/status/1610285886742167553?s=19
 
-### 适合初学者的GPT
+## 用于SEO的GPT
 
-[ht](https://twitter.com/thealexbanks/status/1611365551481446406?t=tMk0jM49dyZmUN4czYRKGw&amp;s=19)tps://twitter.com/thealexbanks/status/1611365551481446406?t=tMk0jM49dyZmUN4czYRKGw&amp;s=19
+https://twitter.com/AtOnceCo/status/1610652461487751168?t=6zyRYizvYKGWUWQRwio3sg&s=19
 
-### 博客的GPT
+## 适合初学者的GPT
+
+https://twitter.com/thealexbanks/status/1611365551481446406?t=tMk0jM49dyZmUN4czYRKGw&s=19
+
+## 博客的GPT
 
 博客作者可以利用它的优势的10种惊人方式。
 
-[https://entreresource.com/GPT](https://entreresource.com/chatgpt-magic-for-bloggers/)-magic-for-bloggers/
+https://entreresource.com/chatgpt-magic-for-bloggers/
 
 这里有更多。
 
-[ht](https://twitter.com/AtOnceCo/status/1610971744281444352?t=jR0jj1IdLyGcKrsHjn_-Wg&amp;s=19)tps://twitter.com/AtOnceCo/status/1610971744281444352?t=jR0jj1IdLyGcKrsHjn_-Wg&amp;s=19
+https://twitter.com/AtOnceCo/status/1610971744281444352?t=jR0jj1IdLyGcKrsHjn_-Wg&s=19
 
-### 用于Facebook广告的GPT
+## 用于Facebook广告的GPT
 
-[https://twitter.com/AtOnceCo/status/161173516](https://twitter.com/AtOnceCo/status/1611735163645337600?t=NiTr8KJ9aRWAqrSTXyZJFA&s=19)3645337600?t=NiTr8KJ9aRWAqrSTXyZJFA&s=19
+https://twitter.com/AtOnceCo/status/1611735163645337600?t=NiTr8KJ9aRWAqrSTXyZJFA&s=19
 
-### GPT的Twitter增长+信息
+## GPT的Twitter增长+信息
 
 进入下面的🧣，你会在第一条评论中找到链接。
 
-[ht](https://twitter.com/graeme0gormley/status/1610274051800371201?t=HoryDGgJgudkYlbs0v-aYQ&amp;s=19)tps://twitter.com/graeme0gormley/status/1610274051800371201?t=HoryDGgJgudkYlbs0v-aYQ&amp;s=19
+https://twitter.com/graeme0gormley/status/1610274051800371201?t=HoryDGgJgudkYlbs0v-aYQ&s=19
 
-### 为您的企业提供GPT
+## 为您的企业提供GPT
 
-[ht](https://twitter.com/AtOnceCo/status/1610626400725204996?t=crAkhKFI2OdDJLGvEs8otw&amp;s=19)tps://twitter.com/AtOnceCo/status/1610626400725204996?t=crAkhKFI2OdDJLGvEs8otw&amp;s=19
+https://twitter.com/AtOnceCo/status/1610626400725204996?t=crAkhKFI2OdDJLGvEs8otw&s=19
 
-### 为您的内容创作提供10倍的GPT
+## 为您的内容创作提供10倍的GPT
 
-[ht](https://twitter.com/thefernandocz/status/1611051469276430337?t=fANI0m1OPIhF7oJ0VHUslA&amp;s=19)tps://twitter.com/thefernandocz/status/1611051469276430337?t=fANI0m1OPIhF7oJ0VHUslA&amp;s=19
+https://twitter.com/thefernandocz/status/1611051469276430337?t=fANI0m1OPIhF7oJ0VHUslA&s=19
 
-### 使用GPT的代码
+## 使用GPT的代码
 
-[https://twitter.com/svpino/status/1611357154514](https://twitter.com/svpino/status/1611357154514186241?t=uECckdYSv9eqG3kCvUFOqw&amp;s=19)186241?t=uECckdYSv9eqG3kCvUFOqw&amp;s=19
+https://twitter.com/svpino/status/1611357154514186241?t=uECckdYSv9eqG3kCvUFOqw&s=19
 
-### GPT达到10倍的SEO效果
+## GPT达到10倍的SEO效果
 
-[ht](https://twitter.com/barrettjoneill/status/1610629309236150272?t=e2SVO5A4ssOFdKqRH646bA&amp;s=19)tps://twitter.com/barrettjoneill/status/1610629309236150272?t=e2SVO5A4ssOFdKqRH646bA&amp;s=19
+https://twitter.com/barrettjoneill/status/1610629309236150272?t=e2SVO5A4ssOFdKqRH646bA&s=19
 
-### GPT将如何影响你和你的企业
+## GPT将如何影响你和你的企业
 
-[ht](https://twitter.com/Codie_Sanchez/status/1610285670974496769?t=l6fDMHPZ_LrBhGEvof2ojA&amp;s=19)tps://twitter.com/Codie_Sanchez/status/1610285670974496769?t=l6fDMHPZ_LrBhGEvof2ojA&amp;s=19
+https://twitter.com/Codie_Sanchez/status/1610285670974496769?t=l6fDMHPZ_LrBhGEvof2ojA&s=19
 
-### 适用于冷处理电子邮件的GPT
+## 适用于冷处理电子邮件的GPT
 
 提示。
 
 "用友好的方式写一封冷淡的电子邮件，推销我的平面设计服务，以获得客户"
 
-[ht](https://twitter.com/cbwritescopy/status/1610689171403821057?t=RafPSZ75NxpkJoxkjsRD4Q&amp;s=19)tps://twitter.com/cbwritescopy/status/1610689171403821057?t=RafPSZ75NxpkJoxkjsRD4Q&amp;s=19
+https://twitter.com/cbwritescopy/status/1610689171403821057?t=RafPSZ75NxpkJoxkjsRD4Q&s=19
 
-### GPT Chrome扩展
+## GPT Chrome扩展
 
-[ht](https://twitter.com/wizzofbizz/status/1611348072612728837?t=p7FhzQ5sU8qDiRsWSYO2ng&amp;s=19)tps://twitter.com/wizzofbizz/status/1611348072612728837?t=p7FhzQ5sU8qDiRsWSYO2ng&amp;s=19
+https://twitter.com/wizzofbizz/status/1611348072612728837?t=p7FhzQ5sU8qDiRsWSYO2ng&s=19
 
-[ht](https://twitter.com/heyBarsee/status/1611626536343412737?t=A26IcMZ_IyZtw8UN717bIQ&amp;s=19)tps://twitter.com/heyBarsee/status/1611626536343412737?t=A26IcMZ_IyZtw8UN717bIQ&amp;s=19
+https://twitter.com/heyBarsee/status/1611626536343412737?t=A26IcMZ_IyZtw8UN717bIQ&s=19
 
-### 如何赢过GPT
+## 如何赢过GPT
 
-[ht](https://twitter.com/Codie_Sanchez/status/1610285670974496769?t=FIsPsuYKNRFf2Z0h7lCihQ&amp;s=19)tps://twitter.com/Codie_Sanchez/status/1610285670974496769?t=FIsPsuYKNRFf2Z0h7lCihQ&amp;s=19
+https://twitter.com/Codie_Sanchez/status/1610285670974496769?t=FIsPsuYKNRFf2Z0h7lCihQ&s=19
 
 ## 🔧 排名前十的GPT工具
 
-[ht](https://twitter.com/TheProductfolks/status/1611353890825605127?t=w81QPfbBIV7f0U-qNeSgOA&amp;s=19)tps://twitter.com/TheProductfolks/status/1611353890825605127?t=w81QPfbBIV7f0U-qNeSgOA&amp;s=19
+https://twitter.com/TheProductfolks/status/1611353890825605127?t=w81QPfbBIV7f0U-qNeSgOA&s=19
 
 ### 关于GPT的综合指南
 
-[ht](https://twitter.com/AryaVahedi/status/1611052766717218820?t=B7GqPA8woSMV7J9Ym1knIg&amp;s=19)tps://twitter.com/AryaVahedi/status/1611052766717218820?t=B7GqPA8woSMV7J9Ym1knIg&amp;s=19
+https://twitter.com/AryaVahedi/status/1611052766717218820?t=B7GqPA8woSMV7J9Ym1knIg&s=19
 
 ### 🧠 让自己从新手变成专家
 
-[ht](https://twitter.com/LinusEkenstam/status/1610407549731500032?t=UckIfThqSVtllgmFkyuRqA&amp;s=19)tps://twitter.com/LinusEkenstam/status/1610407549731500032?t=UckIfThqSVtllgmFkyuRqA&amp;s=19
+https://twitter.com/LinusEkenstam/status/1610407549731500032?t=UckIfThqSVtllgmFkyuRqA&s=19
 
 ### 聊天室101
 
-[ht](https://twitter.com/NotionChaos/status/1610985254504001539?t=aQT1w2mKUhtKA_LnPmnTLQ&amp;s=19)tps://twitter.com/NotionChaos/status/1610985254504001539?t=aQT1w2mKUhtKA_LnPmnTLQ&amp;s=19
+https://twitter.com/NotionChaos/status/1610985254504001539?t=aQT1w2mKUhtKA_LnPmnTLQ&s=19
 
 ### GPT的隐藏用途
 
-[ht](https://twitter.com/AtOnceCo/status/1605313718492860416?t=jceJuzgBSB_A9WBeCqwYYQ&amp;s=19)tps://twitter.com/AtOnceCo/status/1605313718492860416?t=jceJuzgBSB_A9WBeCqwYYQ&amp;s=19
+https://twitter.com/AtOnceCo/status/1605313718492860416?t=jceJuzgBSB_A9WBeCqwYYQ&s=19
 
 ### 人工智能是如何改善业务的
 
-[https://twitter.com/AtOnceCo/status/161169631](https://twitter.com/AtOnceCo/status/1611696313606803457?t=joeUOwQ757mB1PfEUYFWug&s=19)3606803457?t=joeUOwQ757mB1PfEUYFWug&s=19
+https://twitter.com/AtOnceCo/status/1611696313606803457?t=joeUOwQ757mB1PfEUYFWug&s=19
 
 ### 使用GPT的人觉得自己没有资格知道
 
-[ht](https://twitter.com/AtOnceCo/status/1604481390430638081?t=qWoODgr1R1VFB-JnSx2oqA&amp;s=19)tps://twitter.com/AtOnceCo/status/1604481390430638081?t=qWoODgr1R1VFB-JnSx2oqA&amp;s=19
+https://twitter.com/AtOnceCo/status/1604481390430638081?t=qWoODgr1R1VFB-JnSx2oqA&s=19
 
-[ht](https://twitter.com/AsimAkhtar0/status/1604604585070530560?t=FPpc-XT0-9RoNSMlPHIDvQ&amp;s=19)tps://twitter.com/AsimAkhtar0/status/1604604585070530560?t=FPpc-XT0-9RoNSMlPHIDvQ&amp;s=19
+https://twitter.com/AsimAkhtar0/status/1604604585070530560?t=FPpc-XT0-9RoNSMlPHIDvQ&s=19
 
 ### GPT或人类
 
-[ht](https://twitter.com/edward_the6/status/1610067688449007618?t=l5TIiJ55plVcRF34Kxe9BQ&amp;s=19)tps://twitter.com/edward_the6/status/1610067688449007618?t=l5TIiJ55plVcRF34Kxe9BQ&amp;s=19
+https://twitter.com/edward_the6/status/1610067688449007618?t=l5TIiJ55plVcRF34Kxe9BQ&s=19
 
-本文由[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)整理发布，AI研习社是一个AI行业研究专题知识兴趣小组，目前分享包含： AI工具使用、AI商业模式研究、AI行业研究报告、AI经验分享、大厂动态等专题内容，包含GPT、MidJourney等主流工具使用说明，通过知识手册的方式帮助大家构建系统化的AI知识库，让更多人可以轻松学习使用AI技术。
+本文由[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)整理发布，AI研习社是一个AI行业研究专题知识兴趣小组，目前分享包含：AI工具使用、AI商业模式研究、AI行业研究报告、AI经验分享、大厂动态等专题内容，包含GPT、MidJourney等主流工具使用说明，通过知识手册的方式帮助大家构建系统化的AI知识库，让更多人可以轻松学习使用AI技术。
 
 ![](img/a3ffeccc7d4492e9526654b6d16f2380.png)
 
-扫描二维码，加入[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)** **
-
-###
+扫描二维码，加入[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)

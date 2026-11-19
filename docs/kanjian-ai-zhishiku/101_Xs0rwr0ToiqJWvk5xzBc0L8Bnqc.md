@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230730）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/TpbudQbryowwFgxbBQUcFwUanjf](https://jlqyxzzvbk.feishu.cn/docx/TpbudQbryowwFgxbBQUcFwUanjf)
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## “AI的命也是命”？人类与AI之间还有明确界线吗
+### “AI的命也是命”？人类与AI之间还有明确界线吗
 
 ![](img/92e05a26118e51861f2943469d8eef4f.png)
 
@@ -26,7 +27,7 @@
 
 更多信息请访问：https://baijiahao.baidu.com/s?id=1739704035864748778&wfr=spider&for=pc
 
-## 谷歌发布RT-2机器人变压器，引领机器人技术新潮流！
+### 谷歌发布RT-2机器人变压器，引领机器人技术新潮流！
 
 ![](img/a02b2378ed46f2707dd973bd00eae91e.png)
 
@@ -40,7 +41,7 @@
 
 更多信息请访问：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9455335515198724339%22%7D&n_type=1&p_from=4
 
-## 真能听懂人话！机器人ChatGPT来了，谷歌发布又一AI大模型黑科技
+### 真能听懂人话！机器人ChatGPT来了，谷歌发布又一AI大模型黑科技
 
 播
 
@@ -56,25 +57,25 @@ RT-2相当于机器人版ChatGPT，被Google DeepMind称作是其视觉-语言-�
 
 更多信息请访问：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10034301608085188827%22%7D&n_type=1&p_from=4
 
-# AI软件精选
+## AI软件精选
 
-# **Copilot（****AI****写代码）**
+### Copilot（AI写代码）
 
-**GitHub**** Copilot**是一种人工智能驱动的结对[编程](https://nav.6aiq.com/favorites/code_ai)工具，旨在简化编码过程。主要特点和优势包括：
+GitHub Copilot 是一种人工智能驱动的结对[编程](https://nav.6aiq.com/favorites/code_ai)工具，旨在简化编码过程。主要特点和优势包括：
 
-**实时代码建议**：使用 OpenAI Codex 在编辑器中建议行或整个函数
+实时代码建议：使用 OpenAI Codex 在编辑器中建议行或整个函数
 
-**节省时间**：消除样板文件和重复的代码模式，使开发人员能够专注于构建出色的软件
+节省时间：消除样板文件和重复的代码模式，使开发人员能够专注于构建出色的软件
 
-**轻松集成**：与其他 GitHub 产品无缝协作，例如 Actions、Packages、Security 等
+轻松集成：与其他 GitHub 产品无缝协作，例如 Actions、Packages、Security 等
 
-GitHub Copilot 的**用例**非常适合各种开发人员：
+GitHub Copilot 的用例非常适合各种开发人员：
 
-寻求提高生产力和代码质量的**软件工程师**
+寻求提高生产力和代码质量的软件工程师
 
-希望简化开发过程的**项目经理**
+希望简化开发过程的项目经理
 
-**定制**：用于快速代码迭代的 Copilot Replay 和用于特定领域模型定制的 Copilot Train
+定制：用于快速代码迭代的 Copilot Replay 和用于特定领域模型定制的 Copilot Train
 
 总体而言，GitHub Copilot 为开发人员提供了一个强大且省时的解决方案，增强了他们的编码体验和效率。
 
@@ -82,61 +83,61 @@ GitHub Copilot 的**用例**非常适合各种开发人员：
 
 链接：https://github.com/features/copilot
 
-# **Codeium （****AI****写代码）**
+### Codeium（AI写代码）
 
-**Codeium**是一种人工智能驱动的代码完成工具，旨在简化编码过程。主要特点和优势包括：
+Codeium 是一种人工智能驱动的代码完成工具，旨在简化编码过程。主要特点和优势包括：
 
-**IDE 集成**：支持 20 多种语言并与流行的 IDE 集成
+IDE 集成：支持 20 多种语言并与流行的 IDE 集成
 
-**高效编码**：减少样板代码，查找和使用 API，并生成单元测试
+高效编码：减少样板代码，查找和使用 API，并生成单元测试
 
-**自然语言处理**：允许开发人员以自然语言键入注释以完成代码
+自然语言处理：允许开发人员以自然语言键入注释以完成代码
 
-**受顶级公司信赖**：Adobe、Dropbox、IBM、Pinterest、Salesforce 和 Tesla 使用
+受顶级公司信赖：Adobe、Dropbox、IBM、Pinterest、Salesforce 和 Tesla 使用
 
-**免费使用**：安装 Codeium Extension 以无限制访问
+免费使用：安装 Codeium Extension 以无限制访问
 
-Codeium 的**用例**非常适合各种开发人员：
+Codeium 的用例非常适合各种开发人员：
 
-寻求提高编码效率并减少花在语法上的时间**的软件开发人员**
+寻求提高编码效率并减少花在语法上的时间软件开发人员
 
-在大型或不熟悉的代码库上工作的**团队**，旨在更快地适应
+在大型或不熟悉的代码库上工作的团队，旨在更快地适应
 
-希望使用 AI 驱动的工具加强开发流程**的公司**
+希望使用 AI 驱动的工具加强开发流程公司
 
 ![](img/ac049a988030adc977b5904eaa828655.png)
 
 链接：https://codeium.com/
 
-# Cron AI**（AI写代码）**
+### Cron AI（AI写代码）
 
 ![](img/50a87820386ee00aa523a87401122ff0.png)
 
-**Cron**** ****AI**是一种人工智能驱动的 cron 表达式生成器，旨在简化 cron 作业的创建。主要特点和优势包括：
+Cron AI 是一种人工智能驱动的 `cron` 表达式生成器，旨在简化 `cron` 作业的创建。主要特点和优势包括：
 
-**易用性**：快速将输入的单词转换为 cron 表达式以设置 cron 作业
+易用性：快速将输入的单词转换为 `cron` 表达式以设置 `cron` 作业
 
-**效率**：减少创建 cron 作业所需的复杂性和时间
+效率：减少创建 `cron` 作业所需的复杂性和时间
 
-**用户友好的界面**：简化了从输入的单词生成 cron 表达式的过程
+用户友好的界面：简化了从输入的单词生成 `cron` 表达式的过程
 
-Cron AI 的**用例**非常适合各种专业人士：
+Cron AI 的用例非常适合各种专业人士：
 
-寻求自动化流程（例如计划任务或作业）的**系统****管理员**
+寻求自动化流程（例如计划任务或作业）的系统管理员
 
-希望高效且复杂性较低的创建 cron 作业的**开发人员**
+希望高效且复杂性较低的创建 `cron` 作业的开发人员
 
-旨在简化任务自动化的**组织和个人**
+旨在简化任务自动化的组织和个人
 
-总的来说，Cron AI 为创建 cron 作业提供了一个强大而高效的解决方案，使其成为那些需要自动化任务管理的人的宝贵资产。
+总的来说，Cron AI 为创建 `cron` 作业提供了一个强大而高效的解决方案，使其成为那些需要自动化任务管理的人的宝贵资产。
 
 链接：https://cron-ai.vercel.app/
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+更多 AI 工具请访问：http://ai.kcodez.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -144,7 +145,7 @@ GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸�
 
 ![](img/859d7a7b4aeb5371c9bfc223ff9c3051.png)
 
-## 付费课程（ai认知提升）
+### 付费课程（AI认知提升）
 
 AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
@@ -152,15 +153,13 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/371b64e4d5e8c7655b32685c5466c94f.png)
 
-#
-
 ![](img/a1aef6128eaf35ea281b22b6201ac083.png)
 
 ![](img/33e23f046c11e5b2461758df8156f73a.png)
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4. 会员精选
 
 访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
 
@@ -172,7 +171,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/2b263c81f1cd8eb2e885b5af4fb16cd2.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+国内镜像 GPT，支持 GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还 10% 购买费用）
 
 ![](img/4a717da4d8a6546a201ee1f5fdd020ef.png)
 

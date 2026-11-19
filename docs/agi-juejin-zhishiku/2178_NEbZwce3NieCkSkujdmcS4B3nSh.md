@@ -1,8 +1,7 @@
-# 12.06-满血版o1深夜震撼上线，奥特曼怼脸演示超强推理！终极Pro版每月1450元
-
-> 来源：[https://agijuejin.feishu.cn/docx/Jednd3jUXom0CwxtK7gccfAfn9e](https://agijuejin.feishu.cn/docx/Jednd3jUXom0CwxtK7gccfAfn9e)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 06 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/Jednd3jUXom0CwxtK7gccfAfn9e](https://agijuejin.feishu.cn/docx/Jednd3jUXom0CwxtK7gccfAfn9e)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

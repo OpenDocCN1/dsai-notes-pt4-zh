@@ -1,28 +1,31 @@
-# 使用Sadtalker让照片说话
+
+# 使用`SadTalker`让照片说话
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/AwFTd7J0PolUJXxIvgQcIKbZnfb](https://xmgtoagi.feishu.cn/docx/AwFTd7J0PolUJXxIvgQcIKbZnfb)
 
+## 项目简介
+
 利用目前主流的开源程序让照片说话唱歌，达到基本的唇形同步
 
-https://github.com/OpenTalker/SadTalker
+`https://github.com/OpenTalker/SadTalker`
 
-可以独立使用或者作为插件放入stablediffusion
+可以独立使用或者作为插件放入`stablediffusion`
 
-视频教程
+## 视频教程
 
 <https://player.bilibili.com/player.html?bvid=1Dc411W7V6&vd_source=35e62d366d8173e12669705f7aedd122>
 
-但是对于编程、python、conda不熟的，强烈建议使用这个整合包：
+但是对于编程、`python`、`conda`不熟的，强烈建议使用这个整合包：
 
-**史**上最炸裂版AI工具箱来啦，SD-AI绘画、VITS文本转语音，wav2lip、sadTalker唇型同步，视频修复，支持A卡！
+**史上**最炸裂版AI工具箱来啦，`SD`-AI绘画、`VITS`文本转语音，`wav2lip`、`sadTalker`唇型同步，视频修复，支持`A卡`！
 
-我用夸克网盘分享了「EZ-AI-Starter-v0.9.8.zip」，点击链接即可保存
+我用夸克网盘分享了`EZ-AI-Starter-v0.9.8.zip`，点击链接即可保存
 
-链接：https://pan.quark.cn/s/1d5ca9f57f5c
+链接：`https://pan.quark.cn/s/1d5ca9f57f5c`
 
-视频地址：https://www.bilibili.com/video/BV1ga4y1u7Ep/?spm_id_from=333.337.search-card.all.click&vd_source=35e62d366d8173e12669705f7aedd122
+视频地址：`https://www.bilibili.com/video/BV1ga4y1u7Ep/?spm_id_from=333.337.search-card.all.click&vd_source=35e62d366d8173e12669705f7aedd122`
 
-具体步骤如下：
+## 具体步骤
 
 ![](img/dcd9f07969b6f87a89a82194fbf40b7d.png)
 
@@ -42,13 +45,13 @@ https://github.com/OpenTalker/SadTalker
 
 ![](img/970143e2618a4276f3238a5e4eabf819.png)
 
-选择sadtalker同步器，分别导入图片和声音，
+选择`sadtalker`同步器，分别导入图片和声音，
 
-图片预处理方式中，crop只截取图片的头部，full就是保留整张照片，下面的勾选项已经有文字解释，自己可以试几次
+图片预处理方式中，`crop`只截取图片的头部，`full`就是保留整张照片，下面的勾选项已经有文字解释，自己可以试几次
 
-点击generate
+点击`generate`
 
-由于涉及到视频的推理和转换，输出时间要远远大于ai绘图和sovits的声音推理，做好等待的准备。
+由于涉及到视频的推理和转换，输出时间要远远大于ai绘图和`sovits`的声音推理，做好等待的准备。
 
 下图中，我导入了一个13秒的音频，预计需要3-5分钟（3060 12g显卡）
 
@@ -62,9 +65,7 @@ https://github.com/OpenTalker/SadTalker
 
 看看效果
 
-
 [tmp606i48sh##小星星-0-100.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DxybbSn8SootP2xjVkScEfaXn0K)
-
 
 [tmpjl_co18w##赐我测试用-0-100.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDwqbL60mosoFsxrK6dcrPM4nug)
 
@@ -76,4 +77,4 @@ https://github.com/OpenTalker/SadTalker
 
 ## 安装包下载
 
-https://pan.quark.cn/s/1d5ca9f57f5c#/list/share
+`https://pan.quark.cn/s/1d5ca9f57f5c#/list/share`

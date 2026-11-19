@@ -1,6 +1,7 @@
+
 # 清华「DeepSeek如何赋能职场应用」发布！创意、科研、管理75页全覆盖
 
-> 来源：[https://agijuejin.feishu.cn/docx/VjnddrernoKHjjxHR9hczq00nMf](https://agijuejin.feishu.cn/docx/VjnddrernoKHjjxHR9hczq00nMf)
+> 来源：[`https://agijuejin.feishu.cn/docx/VjnddrernoKHjjxHR9hczq00nMf`](https://agijuejin.feishu.cn/docx/VjnddrernoKHjjxHR9hczq00nMf)
 
 由清华大学新闻与传播学院、人工智能学院双聘教授沈阳教授团队、中央民族大学新闻与传播学院向安玲老师，倾力打造《DeepSeek如何赋能职场应用》，助你从提示语技巧到多场景应用。
 
@@ -12,7 +13,7 @@
 
 ![](img/8415874ee9a88194397e5806ba2f6f10.png)
 
-[DeepSeek如何赋能职场应用0213.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sw8GbQOL7oevSmxeIG8c2N3rnNb)
+[`DeepSeek如何赋能职场应用0213.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Sw8GbQOL7oevSmxeIG8c2N3rnNb)
 
 ![](img/745e3afe9bd6c5a50c789b46fb6b0c33.png)
 

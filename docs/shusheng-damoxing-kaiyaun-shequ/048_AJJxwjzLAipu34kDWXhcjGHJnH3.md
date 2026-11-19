@@ -1,3 +1,4 @@
+
 # 优秀项目墙
 
 > 来源：[https://aicarrier.feishu.cn/docx/RL7TdrQhfoDNWGxpwmhcKWW5nSb](https://aicarrier.feishu.cn/docx/RL7TdrQhfoDNWGxpwmhcKWW5nSb)
@@ -12,13 +13,13 @@ GitHub：
 
 ## 👏👏EmoLLM
 
-**GitHub：**https://github.com/SmartFlowAI/EmoLLM
+GitHub：`https://github.com/SmartFlowAI/EmoLLM`
 
 ![](img/cf1e6c3942987e4c0249e705dcb7bad7.png)
 
 ## 👏👏TheGodOfCookery 食神
 
-https://github.com/SmartFlowAI/TheGodOfCookery
+`https://github.com/SmartFlowAI/TheGodOfCookery`
 
 ![](img/c33d22e6cf8d36c8786a0b668e9d1c63.png)
 
@@ -26,13 +27,13 @@ https://github.com/SmartFlowAI/TheGodOfCookery
 
 ## 👏👏Chat-Huanhuan
 
-https://github.com/KMnO4-zx/huanhuan-chat
+`https://github.com/KMnO4-zx/huanhuan-chat`
 
 ![](img/752ac18dfec855fc6897e91239237cfc.png)
 
 ## 👏👏Roleplay-with-XiYou
 
-https://github.com/JimmyMa99/Roleplay-with-XiYou
+`https://github.com/JimmyMa99/Roleplay-with-XiYou`
 
 ![](img/c3fe29610e48281ab2683ad3342169ea.png)
 
@@ -52,7 +53,7 @@ https://github.com/JimmyMa99/Roleplay-with-XiYou
 
 ![](img/4bb12a1f20074224418d6d91c51760c2.png)
 
-## **👏👏职场教练**
+## 👏👏职场教练
 
 ![](img/72cca498aef3901272c8641a026ad54a.png)
 

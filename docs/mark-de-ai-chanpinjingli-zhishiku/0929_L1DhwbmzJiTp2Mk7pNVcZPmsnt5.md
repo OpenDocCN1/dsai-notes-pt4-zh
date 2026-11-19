@@ -1,14 +1,15 @@
+
 # 实测Nano Banana Pro：甚至不想叫它AI，这是视觉层面的AGI！
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Ka2sdWZrroIJbFxkoAecBnwvnmL](https://qqs7y1hozd1.feishu.cn/docx/Ka2sdWZrroIJbFxkoAecBnwvnmL)
 
 昨晚谷歌继Gemini 3 pro 后又扔出了王炸——Nano Banana Pro（核心就是 Gemini 3 Pro Image 模型）卧槽真的，兄弟们这一次，我真的词穷了昨晚谷歌继Gemini 3 pro 后又扔出了王炸——（核心就是 Gemini 3 Pro Image 模型）nano banana已经很厉害了，pro我直接跪了我看着屏幕，脑子里只有两个字在无限循环：离谱这是 Gemini
 
-##### 文字与逻辑的“降维打击”：人类历史上最强的压缩算法
+## 文字与逻辑的“降维打击”：人类历史上最强的压缩算法
 
 Nano Banana Pro 的渲染能力，让我觉得以前用的都是假 AI
 
-**案例一：论文秒变板书**
+### 案例一：论文秒变板书
 
 直接把一篇枯燥的学术论文扔进去，要求把它变成教授讲课的白板。
 
@@ -18,11 +19,11 @@ Nano Banana Pro 的渲染能力，让我觉得以前用的都是假 AI
 
 ![](img/c3078c780106bdcddaab04435ebe5206.png)
 
-这不仅是画得像，它是真的读懂了论文！拼写**，箭头逻辑、核心概念解释**……！这基本上是人类历史上最强的压缩算法
+这不仅是画得像，它是真的读懂了论文！拼写，箭头逻辑、核心概念解释！！这基本上是人类历史上最强的压缩算法
 
 ![](img/6434fe1d6fa7f5ba342f6d573f0e1bb1.png)
 
-**案例二：代码直接变图**
+### 案例二：代码直接变图
 
 更骚的来了，有人喂给它一段 Gemini 3 生成的 AI 计算提交记录的 原始 Graphviz 代码（DOT 语言代码）。注意，是代码！
 
@@ -30,7 +31,7 @@ Nano Banana Pro 的渲染能力，让我觉得以前用的都是假 AI
 
 ![](img/47f31817628d2f202c3e4ad685c8f81e.png)
 
-**案例三：博客变杂志**
+### 案例三：博客变杂志
 
 文字排版能力也是天花板级别。把 Gemini 3 发布官方的技术博客扔进去，让它生成一张“放在桌上的精美杂志内页”
 
@@ -40,35 +41,37 @@ Nano Banana Pro 的渲染能力，让我觉得以前用的都是假 AI
 
 看这排版、这引语设计，你说这是设计大师排了一下午我都信
 
-##### 它真的“懂”这个世界（硬核知识库）
+## 它真的“懂”这个世界（硬核知识库）
 
 以前的 AI 是瞎蒙，Nano Banana Pro 是真懂。因为它背后连着 Google Search 和 Gemini 3 的推理大脑
 
-案例四 & 五：硬核工艺与生活幽默
+### 案例四 & 五：硬核工艺与生活幽默
 
 看看这个关于「PCB电路板制造全流程」 的图。这可是硬核工业流程！
 
 提示词：
 
-E**xplain all the** st**eps** in PC**B manuf**a**ctur**ing:
+Explain all the steps in PCB manufacturing:
 
-1. Design & Output: C**reat**ion** of schema**ti**c and** layout (**Gerber f**iles).
+1. Design & Output: Creation of schematic and layout (Gerber files).
 
-2. DFM Check: Design for Manufactu**rability rev****iew **to catch errors.
+2. DFM Check: Design for Manufacturability review to catch errors.
 
-3. Film Genera**tion**: Laser** plo**ttin**g of photo ****film****s f**or each l**ayer** (or Laser Direct Imaging).
+3. Film Generation: Laser plotting of photo films for each layer (or Laser Direct Imaging).
 
-4. ** Sur**face **Prep****aration**: **Cleanin****g and rough**ening the copper laminate.
+4. Surface Preparation: Cleaning and roughening the copper laminate.
 
-5.  Inner Layer Imaging: Applying photoresist and exposing it to UV light to define traces.
+5. Inner Layer Imaging: Applying photoresist and exposing it to UV light to define traces.
 
-6.  Etching: Chemical removal of unwanted copper, leaving only the circuitry.
+6. Etching: Chemical removal of unwanted copper, leaving only the circuitry.
 
-7.  Resist Stripping: Removing the hardened photoresist.
+7. Resist Stripping: Removing the hardened photoresist.
 
-8.  AOI (Automated Optical Inspection): Scanning inner layers for shorts or opens.
+8. AOI (Automated Optical Inspection): Scanning inner layers for shorts or opens.
 
-9.  Oxide Application: Chemical treatment to improve bond strength between layers. 10. Lamination: Stacking layers with epoxy (prepreg) and bonding them under heat and pressure.
+9. Oxide Application: Chemical treatment to improve bond strength between layers.
+
+10. Lamination: Stacking layers with epoxy (prepreg) and bonding them under heat and pressure.
 
 11. Drilling: Computer-controlled drilling of vias and mounting holes.
 
@@ -106,13 +109,13 @@ E**xplain all the** st**eps** in PC**B manuf**a**ctur**ing:
 
 反过来，让它画个无厘头的“如何烤面包”：
 
-**提示词：** 我要个烤面包流程图，要多搞怪、多夸张、多复杂有多复杂
+提示词：我要个烤面包流程图，要多搞怪、多夸张、多复杂有多复杂
 
 ![](img/08bb8ebd7867a3542eafc4b90276ad83.png)
 
 逻辑清晰，文字准确，甚至还自带幽默感！
 
-**案例六：视觉版 AGI**
+### 案例六：视觉版 AGI
 
 甚至在生物学领域，只说一句：“画一个T细胞激活的卡通图，展示信号级联。”
 
@@ -120,9 +123,9 @@ E**xplain all the** st**eps** in PC**B manuf**a**ctur**ing:
 
 ![](img/9e5e315374bb3b27101335a6bbe4cf75.png)
 
-这就是为什么那位大神惊呼：**“这就叫视觉层面的 AGI！”**
+这就是为什么那位大神惊呼：“这就叫视觉层面的 AGI！”
 
-**案例七：实时搜索能力**
+### 案例七：实时搜索能力
 
 还有这个 Datasette 开源项目的解释图。提示词只有9个单词：Infographic explaining how the Datasette open source project works，
 
@@ -130,11 +133,11 @@ E**xplain all the** st**eps** in PC**B manuf**a**ctur**ing:
 
 ![](img/d9794919685e6cebab1d9ac6f236c246.png)
 
-##### 生产力神器：最强“数据压缩机”
+## 生产力神器：最强“数据压缩机”
 
 打工人们，这东西能救命。
 
-**案例八：财报秒变图**
+### 案例八：财报秒变图
 
 Nvidia Q3 几十页的财报 PDF，扔进去
 
@@ -142,7 +145,7 @@ Nvidia Q3 几十页的财报 PDF，扔进去
 
 ![](img/27c7c59eb59d0a860ae386cc6a76815c.png)
 
-**案例九 & 十：万物皆可图解**
+### 案例九 & 十：万物皆可图解
 
 扔给它一张流体动力学的照片，问它“发生了什么物理现象？”它能给你出个图解说明
 
@@ -152,13 +155,13 @@ Nvidia Q3 几十页的财报 PDF，扔进去
 
 ![](img/c9030daeb8e5305bcc0a56b62f7d7099.png)
 
-##### 创意与控制力：强迫症被治愈了
+## 创意与控制力：强迫症被治愈了
 
-最后，聊聊对于创作者最重要的：**一致性** 和 **可控性**。
+最后，聊聊对于创作者最重要的：一致性 和 可控性。
 
-案例十一：14个角色的地狱级挑战
+### 案例十一：14个角色的地狱级挑战
 
-提示词要求生成 **14个** 毛茸茸的角色挤在沙发上看电视
+提示词要求生成 14个 毛茸茸的角色挤在沙发上看电视
 
 提示词：中景镜头，14个毛茸茸的角色挤在一张破旧的米色布艺沙发上……整体氛围温暖、舒适且愉快
 
@@ -166,17 +169,17 @@ Nvidia Q3 几十页的财报 PDF，扔进去
 
 ![](img/ea46ff5724b49f11b9259bbcf874b755.png)
 
-**案例十二：时间旅行与幽默感**
+### 案例十二：时间旅行与幽默感
 
 有个哥们让它生成一个人从出生到80岁的照片
 
-**提示词：** "Generate the holiday photo of this person through the ages up to 80 years old"
+提示词："Generate the holiday photo of this person through the ages up to 80 years old"
 
 最神的是，它给2020年的照片里的人戴上了口罩 😂。这细节，绝了！
 
 ![](img/d2a884ea7808ce93d36c06e34a8ce778.png)
 
-**案例十三：真实感**
+### 案例十三：真实感
 
 如果不说，你可能以为这是照片。但这是 Gemini 3.0 Pro Image 生成的。角色一致性直接封神
 

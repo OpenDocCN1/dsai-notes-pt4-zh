@@ -1,8 +1,9 @@
+
 # 视频提示词
 
 > 来源：[https://aigclena.feishu.cn/docx/WUO8dU2keouzkgxZvolchTMmnuf](https://aigclena.feishu.cn/docx/WUO8dU2keouzkgxZvolchTMmnuf)
 
-# 人像
+## 人像
 
 ![](img/857975e62f3005a170fa0a5f77b8452e.png)
 
@@ -12,7 +13,7 @@ sora2
 
 The shot opens tight on a weather-carved face, wind tearing at his coat as he stands on a jagged cliff. The camera eases over his shoulder and tilts down, following his line of sight. We descend past the crumbling lip into the void, the frame widening to reveal cliffs dropping away. The ocean roars into view, violent surf detonating against rock. The move continues into a high overhead, locking into an aerial top-down that frames the lone figure at the precipice as waves explode below.
 
-# 产品广告
+## 产品广告
 
 ![](img/6e26e7387a5ccca05af962b534755277.png)
 
@@ -21,7 +22,6 @@ The shot opens tight on a weather-carved face, wind tearing at his coat as he st
 易拉罐，艺术品。一个巨大Budweiser啤酒易拉罐，上面刻着蜘蛛俠，涉及包装设计，产品摄影，暗调烟雾感背景，营造出炫酷、神秘氛围，让人物主体更突出，色彩鲜艳。
 
 [#](https://www.facebook.com/hashtag/%E5%8D%B3%E5%A4%A2?__cft__[0]=AZWAHoZBJabopS3VgzUyJpYZy058tsQXPq640xXAwYiASw43mMEVzxxCYhenPm0zxdM1tV6o64a5DN7uO4VzT7td56aI_cZGpL21TVU4Ac4rUWqC9yzWebQWKc07smlodrHBTOE8jlzR-nClqxHtbVebti-GS26zUnKJ-EXSbgzXn2wwsLUXa4PcT0qPj_bVVEf1r5JBGq_q_M7x-Mei6oaKeX_4TZsV-8YHDjuesmDmTA&__tn__=*NK-R)即梦
-
 
 [32df4b788ae17c8112be5cc34fa05979.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nq3rbWWfdoP1rbx7Q7Sc2GGBnYe)
 
@@ -33,9 +33,9 @@ sora2
 
 15-second TikTok-style ad of a beauty product on a bathroom counter, fast jump cuts, pastel colors, energetic motion graphics, smooth camera transitions, upbeat music vibe, close-up on textures, text popping up with playful animations
 
-# sora专区
+## sora专区
 
-# 首尾帧
+### 首尾帧
 
 from藏师傅
 
@@ -61,9 +61,9 @@ B类 - 差异巨大： 主体和场景完全不同（例如，一只猫在客厅
 现在，请根据我提供的【起始帧】（图片A）和【结束帧】（图片B），生成你的转场描述。
 ```
 
-#  视频剪辑提示词
+## 视频剪辑提示词
 
-1.  剪辑计划提示词
+### 剪辑计划提示词
 
 '充当专业视频编辑。审查这段素材描述，制定精准剪辑计划，包括节奏、切割点、B素材位置和转场。
 
@@ -71,13 +71,13 @@ B类 - 差异巨大： 主体和场景完全不同（例如，一只猫在客厅
 
 素材描述：[粘贴描述]'
 
-1.  风格匹配提示词
+### 风格匹配提示词
 
 '分析这个参考视频的剪辑风格，一步步解释复制方法。关注切割、时序、调色、音效设计和文字使用。
 
 然后展示如何应用到我的视频主题：[插入主题或链接] & [上传视频]'
 
-1.  叙事提升提示词
+### 叙事提升提示词
 
 '审查这份视频脚本，建议通过剪辑改进流畅性、清晰度和情感冲击。确定应删除、重排或强调的部分。
 
@@ -85,20 +85,20 @@ B类 - 差异巨大： 主体和场景完全不同（例如，一只猫在客厅
 
 脚本如下：[粘贴脚本]'
 
-1.  技术调整提示词
+### 技术调整提示词
 
 '根据平台、分辨率和内容类型推荐最佳设置。包括帧率、比特率范围、编码和音频调整。
 
 平台：[插入平台]，视频风格：[插入风格]'
 
-1.  素材审查提示词
+### 素材审查提示词
 
 '审查这段上传的原始视频，提供详细剪辑建议。确定薄弱部分、精彩时刻、切割点、节奏改进和 B 素材机会。
 
 目标是干净专业的最终剪辑。{上传视频}'
 
-1.  剪辑反馈提示词
+### 剪辑反馈提示词
 
 '严格评估这个剪辑好的视频并提供专业反馈。
 
-评论节奏、视觉流畅性、音频平衡、调色一致性和清晰度。建议具体修改以提升质量和留存。{上传视频}
+评论节奏、视觉流畅性、音频平衡、调色一致性和清晰度。建议具体修改以提升质量和留存。{上传视频}'

@@ -1,17 +1,12 @@
+
 # 专业化生存指南
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/VvQtdHviIoCJKxxRjaacgdcgnEf](https://vxc3hj17dym.feishu.cn/docx/VvQtdHviIoCJKxxRjaacgdcgnEf)
-
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+> 来源：`https://vxc3hj17dym.feishu.cn/docx/VvQtdHviIoCJKxxRjaacgdcgnEf`
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)   免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.0
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -53,5 +48,4 @@
 
 ## Initialization
 “您好，我是您的专业化生存指南助手，我会根据《专业化生存》书中的指导原则，帮助您一步步成为您选择领域的专家。请问您想从哪一个阶段开始着手呢？”
-
 ```

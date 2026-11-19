@@ -1,3 +1,4 @@
+
 # 万字盘点 2025 上半年，值得推荐的 AI 模型与产品清单
 
 > 来源：[https://chatmemo.feishu.cn/docx/BT4pdHUVKoe6OuxREUAcfNNSnfb](https://chatmemo.feishu.cn/docx/BT4pdHUVKoe6OuxREUAcfNNSnfb)
@@ -14,13 +15,13 @@
 
 ---
 
-### 评选标准如下：
+## 评选标准如下：
 
-+   **类型划分：**分为 模型 与 产品。部分品类，由于国内和国外还是存在代差，但在国内有做得很好，会按 国内、国外 分开推荐。
++ **类型划分：**分为 模型 与 产品。部分品类，由于国内和国外还是存在代差，但在国内有做得很好，会按 国内、国外 分开推荐。
 
-+   **上榜的原因大致有四：**「最常用」、「惊喜时刻」、「有印象」、「当前推荐」，按真实体感挑选。
++ **上榜的原因大致有四：**「最常用」、「惊喜时刻」、「有印象」、「当前推荐」，按真实体感挑选。
 
-+   文章最后，还会根据日常推荐朋友的情况，总结出「AI 日常推荐表」，方便大家对照选择使用。
++ 文章最后，还会根据日常推荐朋友的情况，总结出「AI 日常推荐表」，方便大家对照选择使用。
 
 接下来，是正式榜单：
 
@@ -36,13 +37,13 @@
 
 > 今年基本没咋用 ChatGPT 模型，也就不对 GPT、o 系列模型进行评价（主要感觉也没必须用的理由）
 
-+   **最常用：**Gemini 2.5 Pro
++ **最常用：**Gemini 2.5 Pro
 
-+   **惊喜时刻：**DeepSeek R1
++ **惊喜时刻：**DeepSeek R1
 
-+   **有印象：**o3、QVQ-Max
++ **有印象：**o3、QVQ-Max
 
-+   **当下推荐：**Gemini 2.5 Pro、豆包 Seed 1.6、Qwen 3、Claude 4 sonnet
++ **当下推荐：**Gemini 2.5 Pro、豆包 Seed 1.6、Qwen 3、Claude 4 sonnet
 
 ---
 
@@ -68,9 +69,9 @@
 
 **体验渠道：**
 
-+   **普通用户常用渠道：**https://gemini.google.com ，就是需要开了 Pro 会员，才能享受满血上下文记忆的体验。
++ **普通用户常用渠道：**`https://gemini.google.com`，就是需要开了 Pro 会员，才能享受满血上下文记忆的体验。
 
-+   **开发者渠道：**https://aistudio.google.com ，免费、满血体验，普通用户也能用。美中不足是，基于 Google Drive 的对话保存服务，稳定性有点差，经常容易丢历史对话。
++ **开发者渠道：**`https://aistudio.google.com`，免费、满血体验，普通用户也能用。美中不足是，基于 Google Drive 的对话保存服务，稳定性有点差，经常容易丢历史对话。
 
 ---
 
@@ -110,7 +111,6 @@ R1 在创造性、启发性的文哲类任务里，实在是太强了，很容�
 
 测试过程大概是这样，让模型看着一张照片，定位照片所处的世界地理位置：
 
-
 ![](img/0964b2a4fd514175b5b48a14ff54c944.png)
 
 非常值得一提，在测试中只有 o3、QVQ 识别了下图中远处很小的“Decathlon”迪卡侬 Logo，而且 QVQ 是没用图片缩放直接识别，而 o3 依赖了图片缩放工具。（QVQ 基于 Qwen-VL 系列模型构建）
@@ -129,25 +129,25 @@ R1 在创造性、启发性的文哲类任务里，实在是太强了，很容�
 
 不算权威，但我也是一直这么和朋友推荐的，也可以作为大家测试选型的参考。
 
-##### **1）豆包 Seed 1.6：**国内均衡之选
+##### 1）豆包 Seed 1.6：国内均衡之选
 
-+   **推荐理由：**目前体感国内当下满血版本下，表现均衡，输出速度、质量、价格都很不错的大模型，和去年平平无奇的表现形成鲜明对比，很值得国内商业场景考虑。
++ **推荐理由：**目前体感国内当下满血版本下，表现均衡，输出速度、质量、价格都很不错的大模型，和去年平平无奇的表现形成鲜明对比，很值得国内商业场景考虑。
 
-+   **特点：**支持混合推理、多模态；官方宣称256k 上下文，最大输出 16k tokens；0.4 元/百万 tokens 的输入价格，缓存命中还能低到 0.08。
++ **特点：**支持混合推理、多模态；官方宣称256k 上下文，最大输出 16k tokens；0.4 元/百万 tokens 的输入价格，缓存命中还能低到 0.08。
 
 ![](img/04eea8eda13ec6aa05506a0e8c67d9a7.png)
 
 ![](img/b78e726aefdd703965926e7ba2e44ad4.png)
 
-##### **2）Qwen 3，尤其是 8B**：开源、本地部署
+##### 2）Qwen 3，尤其是 8B：开源、本地部署
 
-+   **推荐理由：**Qwen 系列模型，开源模型的神，尤其推荐小尺寸版本、本地部署场景（Llama 作弊跌落神坛后，全球最能打的开源模型必是 Qwen）
++ **推荐理由：**Qwen 系列模型，开源模型的神，尤其推荐小尺寸版本、本地部署场景（Llama 作弊跌落神坛后，全球最能打的开源模型必是 Qwen）
 
-+   **特点：**
++ **特点：**
 
-+   第一个把混合推理带到国内的模型，在推理能力的加持下，仅在小尺寸模型上，就表现出了等同于上代大尺寸模型效果。
+  + 第一个把混合推理带到国内的模型，在推理能力的加持下，仅在小尺寸模型上，就表现出了等同于上代大尺寸模型效果。
 
-+   按照官方技术博客的说法，Qwen3-4B 的性能 ≈ Qwen2.5-72B。实测 Qwen3 的 8B 模型确实有着非常明显的进步，降低推理和训练成本，利好本地部署模型的场景。
+  + 按照官方技术博客的说法，Qwen3-4B 的性能 ≈ Qwen2.5-72B。实测 Qwen3 的 8B 模型确实有着非常明显的进步，降低推理和训练成本，利好本地部署模型的场景。
 
 ![](img/fd70f960e3a82e8a8e5d2ba70fb2fc85.png)
 
@@ -169,11 +169,11 @@ Claude 模型本来懒得单独拿出来提，Coding 领域无可争议的 Top 1
 
 **体验渠道：**
 
-+   官网 Chat 的话，国内环境容易封号；我自己用得多的渠道，现在主要是通过 Coding 产品，在写代码时直接使用。
++ 官网 Chat 的话，国内环境容易封号；我自己用得多的渠道，现在主要是通过 Coding 产品，在写代码时直接使用。
 
-+   风向上来说，现在推荐 Cursor、Augment，只是对话的话，Monica 、POE 可以酌情考虑；便宜点可以用 Trae 国际版，但做好容忍它在较难场景的折磨 coding 体验。
++ 风向上来说，现在推荐 Cursor、Augment，只是对话的话，Monica 、POE 可以酌情考虑；便宜点可以用 Trae 国际版，但做好容忍它在较难场景的折磨 coding 体验。
 
-> 除开这些推荐外，如果需要免费大模型 API，且对模型智力要求没有那么高：智谱开放平台有永久免费的推理模型，可以去看看（我有个产品就跑了半年的智谱免费 API，还是要夸夸 z.ai 的）
+> 除开这些推荐外，如果需要免费大模型 API，且对模型智力要求没有那么高：智谱开放平台有永久免费的推理模型，可以去看看（我有个产品就跑了半年的智谱免费 API，还是要夸夸 `z.ai` 的）
 
 ---
 
@@ -181,9 +181,9 @@ Claude 模型本来懒得单独拿出来提，Coding 领域无可争议的 Top 1
 
 和很多 AI 从业者交流过（包括明星 Agent 公司、Benchmark 设计者），有些结论：
 
-+   Claude 是所有代码相关场景的 Top 1
++ Claude 是所有代码相关场景的 Top 1
 
-+   模型们其实是偏科的，大模型如果侧重某方面能力提升，会导致其他方面的能力下降（普通难度下不一定明显）（比如 Claude 为了确保代码生成的能力，会牺牲了一些对话、文学的体验；Gemini 在推理过程更有人味，写代码能力就不如 Claude）
++ 模型们其实是偏科的，大模型如果侧重某方面能力提升，会导致其他方面的能力下降（普通难度下不一定明显）（比如 Claude 为了确保代码生成的能力，会牺牲了一些对话、文学的体验；Gemini 在推理过程更有人味，写代码能力就不如 Claude）
 
 ---
 
@@ -197,13 +197,13 @@ Claude 模型本来懒得单独拿出来提，Coding 领域无可争议的 Top 1
 
 我自己日常涉猎不算重度，主要用的是免费的产品。分享下作为非 AIGC 设计师&普通用户的感受：
 
-+   **最常用：**豆包生图、Imagen、可灵（视频模型）
++ **最常用：**豆包生图、Imagen、可灵（视频模型）
 
-+   **惊喜时刻：**Veo 3（视频模型）**、**Gemini 2.0 Image Generation
++ **惊喜时刻：**Veo 3（视频模型）、Gemini 2.0 Image Generation
 
-+   **有印象：**ChatGPT-4o、Midjourney
++ **有印象：**ChatGPT-4o、Midjourney
 
-+   **我很常用的偏门用法：**Claude 4（非文生图模型，但可以靠 coding 生成前端页面，提供图片）
++ **我很常用的偏门用法：**Claude 4（非文生图模型，但可以靠 coding 生成前端页面，提供图片）
 
 也请了我的好朋友，AIGC 领域宝藏博主，设计师 #阿真irene 分享她的上半年之选（她在这块比我钻研的深多了，今天她的👸号也会发布详细的《2025 年上半年，AIGC 产品推荐清单》）：
 
@@ -217,7 +217,7 @@ Claude 模型本来懒得单独拿出来提，Coding 领域无可争议的 Top 1
 
 ![](img/f1d4845a7aff84e30e9f68a2605178cd.png)
 
-自从 SeedEdit 3.0 发布以来，感觉豆包生图效果突飞猛进，变的越来越顺手。（SeedEdit 3.0 技术报告：https://arxiv.org/pdf/2506.05083）
+自从 SeedEdit 3.0 发布以来，感觉豆包生图效果突飞猛进，变的越来越顺手。（SeedEdit 3.0 技术报告：`https://arxiv.org/pdf/2506.05083`）
 
 一方面支持 4o 式的自然语言直接改图；另一方面对于图片内的文字生成，也有很好的支持。
 
@@ -233,9 +233,9 @@ Claude 模型本来懒得单独拿出来提，Coding 领域无可争议的 Top 1
 
 **体验渠道：**
 
-+   **首推：**豆包 Web 或 APP。用起来很方便，直接发条消息就能生成，也能改图。
++ **首推：**豆包 Web 或 APP。用起来很方便，直接发条消息就能生成，也能改图。
 
-+   **专业用户：**即梦 AI
++ **专业用户：**即梦 AI
 
 ---
 
@@ -251,15 +251,15 @@ Google Imagen 其实有个非常强的领域——产品设计，其质感没有
 
 生成速度快、质量好，又免费，确实值得使用。现在 AI studio 中提供了 imagen 4 版本，感觉生成图片的光感更好了些，但没有显著区别。
 
-> 我现在依然配合自己写的 [《万能文生图提示词》](https://mp.weixin.qq.com/s/_9wxyFJ39JrzvF7b2hZJFA) ，使用 imagen 3 来覆盖大部分精细作图需求的场景。（这份提示词有 1k+ 转发，认可度极高。推荐纳入自己的文生图工作流）
+> 我现在依然配合自己写的 [`《万能文生图提示词》`](https://mp.weixin.qq.com/s/_9wxyFJ39JrzvF7b2hZJFA) ，使用 imagen 3 来覆盖大部分精细作图需求的场景。（这份提示词有 1k+ 转发，认可度极高。推荐纳入自己的文生图工作流）
 
 **体验渠道：**
 
-+   **首推 imagefx：**https://labs.google/fx/zh/tools/image-fx
++ **首推 imagefx：**`https://labs.google/fx/zh/tools/image-fx`
 
-+   **Gemini 中也能用：**直接在 Gemini 对话时，要求“图片生成：xxx”，就可以触发生图了，用的也是 Imagen 3
++ **Gemini 中也能用：**直接在 Gemini 对话时，要求“图片生成：xxx”，就可以触发生图了，用的也是 Imagen 3
 
-+   **AI Studio**：https://aistudio.google.com/prompts/new_image ，这里有 Imagen 4
++ **AI Studio**：`https://aistudio.google.com/prompts/new_image` ，这里有 Imagen 4
 
 ---
 
@@ -271,13 +271,11 @@ Google Imagen 其实有个非常强的领域——产品设计，其质感没有
 
 支持文生视频、图生视频。用的比较多的还是图生视频，这样比较容易控制视频画面。
 
-![](img/b5273839a0d9a119b8e91e870b075cc9.png)
-
-[标准_女生在街道上开心奔跑_镜头跟随其身影_微风掀起她的头发和裙摆 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GR5ybwnfGoJVVLxzVpxc1tPDnjg)
+[`标准_女生在街道上开心奔跑_镜头跟随其身影_微风掀起她的头发和裙摆 (2).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GR5ybwnfGoJVVLxzVpxc1tPDnjg)
 
 画面稳定，物理效果逼真，产品交互体验优秀，价格适中。现在也已经更新到了「可灵 2.1」版本。
 
-**体验渠道：**https://app.klingai.com/cn/image-to-video/frame-mode/new
+**体验渠道：**`https://app.klingai.com/cn/image-to-video/frame-mode/new`
 
 ---
 
@@ -291,11 +289,11 @@ Google Imagen 其实有个非常强的领域——产品设计，其质感没有
 
 ![](img/04a420478782c1cc28507412553f65f9.png)
 
-[veo3小船视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bv5mbfo8ZoDpkdx16F5cW9Fjnfc)
+[`veo3小船视频.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bv5mbfo8ZoDpkdx16F5cW9Fjnfc)
 
 看到小船掉落到洞里的过程了吗？这个物理效果让人头皮发麻……居然 AI 能在 2D 空间完成对 3D 真实物理规律的模拟，还能同步生成匹配的音效。
 
-**体验渠道：**Google Flow - https://labs.google/fx/zh/tools/flow
+**体验渠道：**Google Flow - `https://labs.google/fx/zh/tools/flow`
 
 ---
 
@@ -337,6 +335,8 @@ Gemini……我猜大家都快忘了它还有个支持生图的版本了吧。
 
 Midjourney 在我心里，一直以极高的画面精细度、光感、艺术表达，被留下了深刻的印象。
 
+
+
 虽然它需要付费，我也没有那么高的日常作图需求，但还是有必要推荐一下。
 
 ![](img/ef6dc36f4a506ef5a4e4c68fb8401b64.png)
@@ -361,7 +361,7 @@ Midjourney 在我心里，一直以极高的画面精细度、光感、艺术表
 
 ---
 
-#### Claude 4：**我很常用的偏门用法**
+## Claude 4：我很常用的偏门用法
 
 混进来一个很偏门的文生图方法——用 AI Coding 生成前端代码，网页即图片。
 
@@ -371,7 +371,7 @@ Midjourney 在我心里，一直以极高的画面精细度、光感、艺术表
 
 ![](img/1f30245ae4ad6da9cb8bb36212d88d9c.png)
 
-> [朋友 #歸藏的AI工具箱 有写](https://mp.weixin.qq.com/s/u🐧7R8rBUXZ6EoxX4WxMRg)过一篇类似的教程分享：《用提示词，让长网页秒变封面》
+> [朋友 #歸藏的AI工具箱 有写](https://mp.weixin.qq.com/s/u🐧7R8rBUXZ6EoxX4WxMRg) 过一篇类似的教程分享：《用提示词，让长网页秒变封面》
 
 之前我发完社交名片 Case 后，今年就有好多 Agent 产品，都普遍按这个思路，在做 Deep Research 结果转可视化 PPT、长图了，说明确实用户接受度很高。
 
@@ -379,11 +379,11 @@ Midjourney 在我心里，一直以极高的画面精细度、光感、艺术表
 
 ![](img/2a18c6a3a84d3a752662f8e874aebdfe.png)
 
-> 也可以看之前我在社区直播分享过的 PPT：https://zkv549gmz8.feishu.cn/slides/HHFBsYRqllIgrBdbvaLccKcWnQg
+> 也可以看之前我在社区直播分享过的 PPT：`https://zkv549gmz8.feishu.cn/slides/HHFBsYRqllIgrBdbvaLccKcWnQg`
 
 ---
 
-### 🎙️ 文生音频领域
+## 🎙️ 文生音频领域
 
 轮到文生音频领域，第一个想起来的是 MiniMax speech-02。
 
@@ -405,7 +405,7 @@ Btw：豆包的语音模型也还不错，声音复刻、语音识别都不错�
 
 **体验渠道：**
 
-+   **MiniMax：**https://www.minimax.io/audio/text-to-speech
++   **MiniMax：**`https://www.minimax.io/audio/text-to-speech`
 
 +   **豆包：**火山方舟-语音模型 or 豆包 APP
 
@@ -457,7 +457,7 @@ Btw：豆包的语音模型也还不错，声音复刻、语音识别都不错�
 
 比如在单个网站中，像人一样搜索站内信息、通过连续点击网页元素，完成信息收集
 
-> 案例：https://manus.im/share/SqTXv0qMVLvXouGvaAXtDD?replay=1
+> 案例：`https://manus.im/share/SqTXv0qMVLvXouGvaAXtDD?replay=1`
 
 ![](img/3c0e32193f889224790e40a052231953.png)
 
@@ -465,7 +465,7 @@ Btw：豆包的语音模型也还不错，声音复刻、语音识别都不错�
 
 还意味着，Manus 不仅能生成前端网页，还能直接搭建一个完整有后端的站点服务。AI + 云电脑 = Create everything，这点会有质变的体验。
 
-**体验渠道：**Manus 官网 - 我给一个自己的邀请链接，每人可得 500 积分 https://manus.im/invitation/ANM00QATTXTEP6F
+**体验渠道：**Manus 官网 - 我给一个自己的邀请链接，每人可得 500 积分 `https://manus.im/invitation/ANM00QATTXTEP6F`
 
 ---
 
@@ -477,7 +477,7 @@ Kimi Researcher 本来我也是打算单独写一篇的，作为 Kimi 沉寂了�
 
 但 Kimi Researcher 以其超长上下文、大量深度的网页搜索，硬是在中文内容中，能总结出一些很细节的内容，且幻觉率也明显较低。
 
-> 朋友拿我为例子，用 Kimi 做了一次 DR 任务，调研「一泽Eze」博主的信息：https://www.kimi.com/share/d1d94ou1bb2ngk5pd00g
+> 朋友拿我为例子，用 Kimi 做了一次 DR 任务，调研「一泽Eze」博主的信息：`https://www.kimi.com/share/d1d94ou1bb2ngk5pd00g`
 
 ![](img/9d89ee6277e8b929a25dd78cef24f3bc.png)
 
@@ -487,9 +487,9 @@ Kimi Researcher 本来我也是打算单独写一篇的，作为 Kimi 沉寂了�
 
 这种效果，得益于 Kimi 将 DR Agent 的能力，通过 RL 强化学习，内训到了模型中，使得其行为不是被规则写死的，而是根据当前任务动态生成的，所以在复杂信息的尽调上，确实表现出了极佳的水平。
 
-> Kimi 官方技术人员也在知乎上写了两篇 Agent 技术分享，有兴趣也可以读一下：https://www.zhihu.com/question/1919712376204256921/answer/1920937507203297443
+> Kimi 官方技术人员也在知乎上写了两篇 Agent 技术分享，有兴趣也可以读一下：`https://www.zhihu.com/question/1919712376204256921/answer/1920937507203297443`
 
-**体验渠道：**Kimi Chat 内「申请 Kimi 深度研究内测」：https://www.kimi.com/ （在问卷中备注“一泽读者”，有更大概率通过申请）
+**体验渠道：**Kimi Chat 内「申请 Kimi 深度研究内测」：`https://www.kimi.com/` （在问卷中备注“一泽读者”，有更大概率通过申请）
 
 ![](img/467fe83edd53d59962025ce28a833de5.png)
 
@@ -533,7 +533,7 @@ AI 最容易犯的错误就是幻觉。而高考志愿填报这种严肃的场�
 
 ![](img/9e42d830f2e214c1d248c5a42a1f545f.png)
 
-**体验地址：**https://gemini.google.com/ ，对话框里记得勾选「Deep Research」
+**体验地址：**`https://gemini.google.com/` ，对话框里记得勾选「Deep Research」
 
 #### Agent 总结
 
@@ -555,7 +555,7 @@ AI 最容易犯的错误就是幻觉。而高考志愿填报这种严肃的场�
 
 +   Btw，腾讯元宝凭借能对👸号生态进行搜索回答，有其独一份的特色。
 
-+   **移动端： **
++   **移动端：**
 
 +   主用豆包 APP，主要是交互太方便了，响应也快，语音、视频通话是一绝；
 
@@ -603,9 +603,9 @@ AI 最容易犯的错误就是幻觉。而高考志愿填报这种严肃的场�
 
 那可以继续用：
 
-+   **「秘塔搜索 - 研究模式」：**https://metaso.cn/
++   **「秘塔搜索 - 研究模式」：**`https://metaso.cn/`
 
-+   「夸克 APP - 夸克 AI 搜索框」：https://ai.quark.cn/
++   「夸克 APP - 夸克 AI 搜索框」：`https://ai.quark.cn/`
 
 实际上，这两者也都在摆脱纯粹的 AI 搜索形式。前者开始转教育，做「今天学点啥」；后者的 AI 搜索框，则是包含了深度思考、AI 写作、生图等一篮子 AI 功能，主打一站式 AI 日常使用体验。
 
@@ -647,7 +647,7 @@ AI 最容易犯的错误就是幻觉。而高考志愿填报这种严肃的场�
 
 Btw：Windsurf 自从被 OpenAI 收购后，它的 Claude 模型就不太稳定，保险起见，现在不建议入坑。
 
-Claude Code 和 Gemini Cli，只适合程序员群体使用，普通用户脱离了 GUI 再去用这俩，还是会很吃力的，不推荐主动退化自己的交互方式。
+`Claude Code` 和 `Gemini Cli`，只适合程序员群体使用，普通用户脱离了 GUI 再去用这俩，还是会很吃力的，不推荐主动退化自己的交互方式。
 
 ---
 
@@ -667,6 +667,8 @@ Flomo 绝对算这个类别。
 
 **1）相关笔记：**根据笔记向量，匹配语义相似的笔记。无需 AI 总结，就能看到历史相关笔记
 
+
+
 ![](img/ef71b82b56d08afd2c6e36ee2c87bf8f.png)
 
 **2）AI 洞察：**根据相关笔记，AI 洞察你在某类主题下笔记的共性与盲点，给予主动的启发。
@@ -675,7 +677,7 @@ Flomo 绝对算这个类别。
 
 打磨 Prompt 如打磨产品本身。少楠为了 AI 洞察，自测迭代了数百个版本的 AI 洞察 Prompt，尽可能地让 AI 能更加自然、不自嗨地融入 flomo 用户的服务中。
 
-而 flomo 做每个 AI 功能，也绝非是为了 AI 而 AI，而是在像溪流一样设计产品。当一个人记录很多的时候，他可能需要回顾。而 AI  回顾的前提是「找到相关的笔记」，再是基于相关笔记做洞察启发。
+而 flomo 做每个 AI 功能，也绝非是为了 AI 而 AI，而是在像溪流一样设计产品。当一个人记录很多的时候，他可能需要回顾。而 AI 回顾的前提是「找到相关的笔记」，再是基于相关笔记做洞察启发。
 
 > 来自少楠的小报童专栏：「松节油：Behind flomo」
 
@@ -689,7 +691,7 @@ Flomo 绝对算这个类别。
 
 ---
 
-#### Cherry Studio：本地 AI 对话与调试
+### Cherry Studio：本地 AI 对话与调试
 
 本地多 API 集成的 AI 对话客户端、本地知识库，近 3w Github star。
 
@@ -701,13 +703,13 @@ Flomo 绝对算这个类别。
 
 如果需要：
 
-1）一次性对比多 AI 的 Prompt 回应质量
+1. 一次性对比多 AI 的 Prompt 回应质量
 
-![](img/58a31d8fbd504d898fa797b97170940b.png)
+   ![](img/58a31d8fbd504d898fa797b97170940b.png)
 
-2）无缝的本地 RAG 知识库体验
+2. 无缝的本地 RAG 知识库体验
 
-![](img/1f8afd902c4e72423afe4fb5fb25bac4.png)
+   ![](img/1f8afd902c4e72423afe4fb5fb25bac4.png)
 
 > PS：甚至还有 MCP 体验（只不过我现在不推荐一般用户用 MCP）
 
@@ -717,7 +719,7 @@ Flomo 绝对算这个类别。
 
 ---
 
-#### Prompt Pilot：提示词版本管理与效果评测（限国内模型）
+### Prompt Pilot：提示词版本管理与效果评测（限国内模型）
 
 字节做的一个 Prompt 工程工具，我最喜欢的是它的 Prompt 调优管理功能。如果是针对国内模型进行 Prompt 工程调优，非常好用。
 
@@ -735,7 +737,7 @@ Flomo 绝对算这个类别。
 
 ---
 
-#### Chat Memo：跨平台无感保存、导出各 AI 平台对话
+### Chat Memo：跨平台无感保存、导出各 AI 平台对话
 
 > 一方面是在这个场景，确实没产品比 Chat Memo 做的体验更好、更无感；另一方面也是给自己的产品打个小广告（自家免费的广告位，当然要蹭（不是））
 
@@ -745,11 +747,11 @@ Flomo 绝对算这个类别。
 
 能够帮你解决 AI 对话散落在各个 AI 平台，难以沉淀与搜索的问题。在浏览器上装上后就支持：
 
-+   实时保存每一次 AI 对话
++ 实时保存每一次 AI 对话
 
-+   搜索并找到历史 AI 对话中任何一个关键词
++ 搜索并找到历史 AI 对话中任何一个关键词
 
-+   无限制导出全部 AI 聊天记录
++ 无限制导出全部 AI 聊天记录
 
 ![](img/8780202b3af34266a6eca20649c0c3b6.png)
 
@@ -759,11 +761,11 @@ Flomo 绝对算这个类别。
 
 **体验渠道：**
 
-+   产品官网：**chatmemo.ai**
++ 产品官网：chatmemo.ai
 
-+   **直接在 Chrom**e 扩展商店，搜索「Chat Memo」
++ **直接在 Chrome**扩展商店，搜索「Chat Memo」
 
-+   如果你在国内，无法访问 Chrome 商店，可参考本地安装教程：https://zkv549gmz8.feishu.cn/wiki/Pf0VwsQbkiDuDYkiwiLcZPBPnyf
++ 如果你在国内，无法访问 Chrome 商店，可参考本地安装教程：https://zkv549gmz8.feishu.cn/wiki/Pf0VwsQbkiDuDYkiwiLcZPBPnyf
 
 ---
 
@@ -773,16 +775,16 @@ Flomo 绝对算这个类别。
 
 | 使用场景 | 主要推荐 | 备选推荐 | 一句话理由 |
 | --- | --- | --- | --- |
-| **大模型 API** | 豆包 Seed 1.6  Qwen 3（本地部署必选） | 阶跃 Step3 视觉模型 | 豆包均衡，Qwen开源，Gemini 出海，覆盖国内、本地和海外场景的高性价比之选。 |
-| **日常聊天 &amp; 问答** | Gemini 2.5 Pro（PC端）  豆包 APP（移动端） | **PC端：****Deep**Seek R1 (文哲类启发)  移动端：夸克 APP (学生党) | Gemini 智力超群，上下文长；豆包在移动端交互便捷，语音/视频通话是绝活。 |
-| **生成图片** | 豆包生图 | Imagen (产品图设计)  Midjourney (艺术/专业)  Claude4 （可视化信息） | 豆包免费、易用且效果好，适合日常；Imagen 产品图质感无敌；Midjourney 艺术性最强；Claude 直接用 Coding 方式做 PPT、做信息配图。 |
-| **生成视频** | 可灵 | Veo 3 (高上限、高价格) | 可灵综合体验优秀，控制力强，国内可用；  Veo 3 物理效果惊人但暂未大规模开放。 |
+| **大模型 API** | 豆包 Seed 1.6 Qwen 3（本地部署必选） | 阶跃 Step3 视觉模型 | 豆包均衡，Qwen开源，Gemini 出海，覆盖国内、本地和海外场景的高性价比之选。 |
+| **日常聊天 & 问答** | Gemini 2.5 Pro（PC端） 豆包 APP（移动端） | **PC端：**DeepSeek R1 (文哲类启发) 移动端：夸克 APP (学生党) | Gemini 智力超群，上下文长；豆包在移动端交互便捷，语音/视频通话是绝活。 |
+| **生成图片** | 豆包生图 | Imagen (产品图设计) Midjourney (艺术/专业) Claude4 （可视化信息） | 豆包免费、易用且效果好，适合日常；Imagen 产品图质感无敌；Midjourney 艺术性最强；Claude 直接用 Coding 方式做 PPT、做信息配图。 |
+| **生成视频** | 可灵 | Veo 3 (高上限、高价格) | 可灵综合体验优秀，控制力强，国内可用； Veo 3 物理效果惊人但暂未大规模开放。 |
 | **生成音频** | Minimax、豆包 | - | 支持声音克隆，能快速满足基础配音需求，但情感真实度仍有提升空间。现在选型，可能价格是更关键因素。 |
-| **通用 Agent &amp; 深度研究** | Manus (通用任务) | Kimi-Researcher (中文信源)  Gemini Deep Research (海外信源) | Manus 作为通用 Agent，能直接操作电脑，想象力大；Kimi 与 Gemini 分别是中、英文深度信息调研的优选。 |
-| **写代码/编程** | Claude Code | Trae (简单项目可用，订阅便宜)  Augment (新晋选择)  Code Rabbit (代码审查) | Claude 是模型代码能力之王，无可争议的 Top 1；  Cursor 是目前最主流的 AI Coding IDE。 |
+| **通用 Agent & 深度研究** | Manus (通用任务) | Kimi-Researcher (中文信源) Gemini Deep Research (海外信源) | Manus 作为通用 Agent，能直接操作电脑，想象力大；Kimi 与 Gemini 分别是中、英文深度信息调研的优选。 |
+| **写代码/编程** | Claude Code | Trae (简单项目可用，订阅便宜) Augment (新晋选择) Code Rabbit (代码审查) | Claude 是模型代码能力之王，无可争议的 Top 1； Cursor 是目前最主流的 AI Coding IDE。 |
 | **个人笔记管理** | Flomo | - | AI 功能与笔记需求结合得最“爽”的产品，自然不打扰，能带来主动的启发。 |
 | **本地 AI 对话** | Cherry Studio | - | 方便在本地对比测试多款模型，支持本地知识库，是 Prompt 工程师的好帮手。 |
-| **提示词工程工具** | Prompt Pilot |  | 面向国内模型的 Prompt 批量测试与版本管理利器，适合工程化调优。 |
+| **提示词工程工具** | Prompt Pilot | | 面向国内模型的 Prompt 批量测试与版本管理利器，适合工程化调优。 |
 | **保存 AI 对话** | Chat Memo | - | 无感自动保存你在所有平台的 AI 对话，数据本地化，方便检索和沉淀。 |
 
 ---
@@ -805,9 +807,9 @@ AI 百日，恍若数年。
 
 在下半年，我直觉应用侧会有两个趋势：
 
-1.  Agent 开始在垂直领域卷数据、卷后训练：就像夸克高考志愿 Agent、Kimi-Researcher，为了在垂直场景（高考志愿、DR）上获取更加稳定、可用的效果，纷纷开始对模型层下手优化，且以模型的进步得到了 Agent 整体效果的提升。
+1. Agent 开始在垂直领域卷数据、卷后训练：就像夸克高考志愿 Agent、Kimi-Researcher，为了在垂直场景（高考志愿、DR）上获取更加稳定、可用的效果，纷纷开始对模型层下手优化，且以模型的进步得到了 Agent 整体效果的提升。
 
-1.  AI 记忆利用与 Context 构造：实话说，现在 AI 体验不行、麻烦的最大原因，不是 AI 智力不行。而是 AI 不够懂我们的意图，每次都要我们反复说明已经陈述过的 Context。上半年只有看到 OpenAI 在 ChatGPT 中优化了 Memory 的利用。当模型发展遇阻，应用层 Prompt 套壳玩的差不多的时候，最终还是要回到 Context 工程上来，这是每个好 AI 产品都逃不掉的任务。（不仅是行业趋势，也是我通过精进 Chat Memo、Context 工程实践，下半年会持续深耕的方向）
+2. AI 记忆利用与 Context 构造：实话说，现在 AI 体验不行、麻烦的最大原因，不是 AI 智力不行。而是 AI 不够懂我们的意图，每次都要我们反复说明已经陈述过的 Context。上半年只有看到 OpenAI 在 ChatGPT 中优化了 Memory 的利用。当模型发展遇阻，应用层 Prompt 套壳玩的差不多的时候，最终还是要回到 Context 工程上来，这是每个好 AI 产品都逃不掉的任务。（不仅是行业趋势，也是我通过精进 Chat Memo、Context 工程实践，下半年会持续深耕的方向）
 
 当然，我个人觉得前者可能下半年就能看到爆发期，后者估计到明年上半年才会有比较多的落地探索。
 

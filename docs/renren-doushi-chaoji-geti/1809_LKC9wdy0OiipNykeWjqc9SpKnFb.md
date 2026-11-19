@@ -1,10 +1,9 @@
-# 2023-07-24Prompt 喂饭级系列教程 小白学习指南（一）
+
+# 2023-07-24 Prompt 喂饭级系列教程 小白学习指南（一）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/NxlhdJRBOomMyjxV8vzcb4YNnkK](https://xuqiwei1986.feishu.cn/docx/NxlhdJRBOomMyjxV8vzcb4YNnkK)
 
-> 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_rc8g49ct0a7o.html)xq.com/id_rc8g49...
-
->
+> 🔗 原文链接：https://articles.zsxq.com/id_rc8g49ct0a7o.html
 
 可能对于学了很久 prompt 的包括小七姐在内的很多星友来说，下面这些内容真的已经是老生常谈了，总觉得没有必要反复提及，但今天认真搜索和翻阅了一下星球关于 prompt 新手教程的帖子，的确发现对新手不是很友好，比较零散，不成体系。
 
@@ -12,13 +11,13 @@
 
 第一步：你要有一个 GPT3.5 或者 Claude2 的 帐号，至少已经熟悉和它们对话的方式。
 
-第二步：看 OpenAI 的官方文档： OpenAI Platform 这是每个学习 prompt 的人必须看的基础课，相当于人教版教材，建议全员阅读学习。
+第二步：看 OpenAI 的官方文档：OpenAI Platform 这是每个学习 prompt 的人必须看的基础课，相当于人教版教材，建议全员阅读学习。
 
-到这一步，我知道有些朋友会说： “啊，全英文，阅读吃力” 既然这是个喂饭级的教程，那么我再推荐3个英文阅读的工具/方法：
+到这一步，我知道有些朋友会说：“啊，全英文，阅读吃力” 既然这是个喂饭级的教程，那么我再推荐3个英文阅读的工具/方法：
 
-# **1、浏览器插件“沉浸式翻译” **
+## 1、浏览器插件“沉浸式翻译”
 
-地址： [双语网页翻译 - 电子书翻译 - PDF翻译 - 字幕](https://immersivetranslate.com/)[文](https://immersivetranslate.com/)件翻译浏览器扩展 | 沉浸式翻译 ( immersivetranslate.com )
+地址：[双语网页翻译 - 电子书翻译 - PDF翻译 - 字幕](https://immersivetranslate.com/) 文件翻译浏览器扩展 | 沉浸式翻译 (immersivetranslate.com)
 
 它也支持阅读本地 PDF 之类的，是个非常实用的英文资料和网页翻译插件，推荐英文阅读吃力的小伙伴人手一个。
 
@@ -26,9 +25,9 @@
 
 ![](img/59328b560749ee6a866b27ae09b97b36.png)
 
-# **2、浏览器插件莫妮卡**
+## 2、浏览器插件莫妮卡
 
-** **[Monica - Your ChatGPT AI Assist](https://monica.im/)ant Chrome Extension
+[Monica - Your ChatGPT AI Assistant Chrome Extension](https://monica.im/)
 
 使用之后你的英文页面你随意刷住任意一段文字会出现这个
 
@@ -40,7 +39,7 @@
 
 ![](img/b1a506a38b44da038808cff8d91b5f1c.png)
 
-# **3、利用 ****GPT**** 辅助阅读**
+## 3、利用 GPT 辅助阅读
 
 我知道你们会说翻译成中文我还是看不懂，那就让 GPT 进一步辅助阅读，这种方式的阅读体验不够连续，你要跨两个页面来回复制和对话，但是我更推荐这种方法，因为这样你能从英译中到中译中，真正看得进去文档在说什么。
 
@@ -50,7 +49,7 @@
 
 提示词：
 
-**我是一名中国的低年级学生，我无法看懂上述英文讲述的问**题，请你为我用中文详细解释一下它讲了什么
+**我是一名中国的低年级学生，我无法看懂上述英文讲述的问题**，请你为我用中文详细解释一下它讲了什么
 
 ![](img/cd13a2d61f95b8d5e41da804a00f6363.png)
 
@@ -68,13 +67,13 @@
 
 这里小七姐再额外提供一个课外阅读资料：右上角语言设置支持中文，更友好一些，内容也由浅到深，建议静心深度阅读
 
-[🟢](https://learnprompting.org/zh-Hans/docs/basics/intro) 简介 | Learn Prompting: Your Guide to Communicating with AI
+[🟢 简介 | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/zh-Hans/docs/basics/intro)
 
-这就是小白的第一课：读文档，去读吧朋友们。、
+这就是小白的第一课：读文档，去读吧朋友们。
 
-**如果你说，我都读过了，我懂了，我建议你使用如下 promp**t 自测一下你到底真的读懂了没（重要）：
+**如果你说，我都读过了，我懂了，我建议你使用如下 prompt 自测一下你到底真的读懂了没（重要）：**
 
-点击链接查看对话原文，顶部的问题可以复制，然后作为 prompt 自己去提问： https://shareg.pt/3KC7neZ
+点击链接查看对话原文，顶部的问题可以复制，然后作为 prompt 自己去提问：https://shareg.pt/3KC7neZ
 
 ![](img/d542c96330783bf0250e92e0294f83f0.png)
 
@@ -82,7 +81,7 @@
 
 下一节我会带来 prompt 小白系列课程（二） 如何开始练习有效提问。
 
-**我是prompt学习者和实践者小七姐，欢迎链接我交**流prompt相关知识：se7en319
+**我是prompt学习者和实践者小七姐，欢迎链接我交流prompt相关知识：se7en319**
 
 ![](img/ba2f8a7fca19d22991c90c04e253079b.png)
 

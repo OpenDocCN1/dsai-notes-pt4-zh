@@ -1,36 +1,35 @@
+
 # AI 打败 AI，谷歌团队用 GPT-4 击败 AI-Guardian 审核系统丨RTE开发者日报 Vol.19
 
 > 来源：[https://docs.feishu.cn/docx/LfHxdiMKWoLlwSxaqZncoLgonZd](https://docs.feishu.cn/docx/LfHxdiMKWoLlwSxaqZncoLgonZd)
 
 开发者朋友们大家好：
 
-这里**是「RTE 开发者日报**」，每天和大家一起**看新**闻、聊八卦。
+这里是「RTE 开发者日报」，每天和大家一起看新闻、聊八卦。
 
-**
-
-我**们的社区编辑团**队会**整理分享 RT**E **(Real T**im**e Engagement) 领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
+我们的社区编辑团队会整理分享 RTE (Real Time Engagement) 领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
 
 本期编辑：@Asui，@CY，@Tricker
 
 ---
 
-### **一、有话题的新闻**
+## 一、有话题的新闻
 
 1、Meta 新开源模型 AudioCraft 炸场，文本自动生成音乐
 
-8月3日，全球社交、科技巨头Meta（Facebook、Instagram等母公司）宣布开源文本生成音乐模型Audiocraft（开源地址：https://github.com/facebookresearch/audiocraft）。据悉，Audiocraft是一个混合模型，由MusicGen、AudioGen和EnCodec组合而成。仅用文本就能生成鸟叫、汽车喇叭声、脚步等背景音频，或更复杂的音乐，适用于游戏开发、社交、视频配音等业务场景。
+8月3日，全球社交、科技巨头Meta（Facebook、Instagram等母公司）宣布开源文本生成音乐模型Audiocraft（开源地址：`https://github.com/facebookresearch/audiocraft`）。据悉，Audiocraft是一个混合模型，由MusicGen、AudioGen和EnCodec组合而成。仅用文本就能生成鸟叫、汽车喇叭声、脚步等背景音频，或更复杂的音乐，适用于游戏开发、社交、视频配音等业务场景。
 
 Meta表示，ChatGPT掀起的大语言模型热潮受到了全球各行业的热烈追捧，相继开发出了很多自动生成文本、图片、视频的大模型。但关于音频领域的不是很多，开源模型更是少的可怜，而音频模型又是一个复杂的领域。
 
 因此，Meta结合自身多年AI技术和训练数据积累推出了Audiocraft，这也是目前功能最强大的开源音乐模型之一。（@AIGC开放社区）
 
-+   MusicGen论文：https://arxiv.org/abs/2306.05284
++ MusicGen论文：`https://arxiv.org/abs/2306.05284`
 
-+   AudioGen论文：https://arxiv.org/abs/2209.15352
++ AudioGen论文：`https://arxiv.org/abs/2209.15352`
 
-+   高保真解码器论文：https://arxiv.org/abs/2210.13438
++ 高保真解码器论文：`https://arxiv.org/abs/2210.13438`
 
-**2、AI 打败 AI：谷歌研究团队利用 GPT-4** 击败 AI-Guardian 审核系统
+2、AI 打败 AI：谷歌研究团队利用 GPT-4 击败 AI-Guardian 审核系统
 
 8 月 2 日消息，谷歌研究团队正在进行一项实验，他们使用 OpenAI 的 GPT-4 来攻破其他 AI 模型的安全防护措施，该团队目前已经攻破 AI-Guardian 审核系统，并分享了相关技术细节。谷歌 Deep Mind 的研究人员 Nicholas Carlini 在一篇题为“AI-Guardian 的 LLM 辅助开发”的论文中，探讨了使用 GPT-4“设计攻击方法、撰写攻击原理”的方案。据悉，GPT-4 会发出一系列错误的脚本和解释来欺骗 AI-Guardian ，论文中提到，GPT-4 可以让 AI-Guardian 认为“某人拿着枪的照片”是“某人拿着无害苹果的照片”，从而让 AI-Guardian 直接放行相关图片输入源。谷歌研究团队表示，通过 GPT-4 的帮助，他们成功地“破解”了 AI-Guardian 的防御，使该模型的精确值从 98% 的降低到仅 8%。（@IT之家）
 
@@ -68,7 +67,7 @@ AMD CEO 苏姿丰在财报电话会上说，AI 芯片竞赛中将出现多个赢
 
 ---
 
-### 二、有态度的观点
+## 二、有态度的观点
 
 郭明錤：苹果的生成式 AI 技术明年也不会推出
 
@@ -76,11 +75,9 @@ AMD CEO 苏姿丰在财报电话会上说，AI 芯片竞赛中将出现多个赢
 
 ---
 
-**
+## 写在最后
 
-写在最后**：
-
-我们欢迎更多的小伙伴参**与「RTE 开发者日报**」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
+我们欢迎更多的小伙伴参与「RTE 开发者日报」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
 
 对于任何反馈（包括但不限于内容上、形式上）我们不胜感激、并有小惊喜回馈，例如你希望从日报中看到哪些内容；自己推荐的信源、话题、活动等；或者列举几个你喜欢看、平时常看的内容渠道；内容排版或呈现形式上有哪些可以改进的地方等。
 

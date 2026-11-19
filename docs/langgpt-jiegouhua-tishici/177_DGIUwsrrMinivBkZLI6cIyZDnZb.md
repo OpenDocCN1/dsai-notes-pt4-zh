@@ -1,8 +1,9 @@
+
 # DeepSeek创始人专访：中国的AI不可能永远跟随，需要有人站到技术的前沿
 
 > 来源：[https://langgptai.feishu.cn/docx/LFn2dTuYFo1LbbxTM0GcFPpEnUf](https://langgptai.feishu.cn/docx/LFn2dTuYFo1LbbxTM0GcFPpEnUf)
 
-原文：https://news.ifeng.com/c/8gSU8rLEKgn
+原文：`https://news.ifeng.com/c/8gSU8rLEKgn`
 
 ![](img/ee5354af70bf3d09cfed23ea2b8736b3.png)
 

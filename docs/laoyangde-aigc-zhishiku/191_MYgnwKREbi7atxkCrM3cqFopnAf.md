@@ -1,50 +1,51 @@
+
 # 拆书成神-知乎2024三绝《活在真空里》拆书
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/XHpndhKyXoihfdxQG6pchrHfnLd](https://rq547mr4oez.feishu.cn/docx/XHpndhKyXoihfdxQG6pchrHfnLd)
 
-# 一、前言：
+## 一、前言：
 
 > **悬疑怎么写？**
 
 > 悬念情绪上下行怎么写？节奏如何把控？
 
-> 这几个方面，是网文【最最最重要】的关键之一，必须要吃透~~
+> 这几个方面，是网文【最最最重要】的关键之一，必须要吃透
 
 > **so今天拆书知乎2024三绝之一《活在真空里》**来看看怎么做，这篇网文值得小伙伴去参考~
 
-之前的拆书内容~~这个系列也是长期更新~~
+之前的拆书内容这个系列也是长期更新
 
-1.  [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
+1. [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-创新？爆火男频又有女频的影子？](https://rq547mr4oez.feishu.cn/wiki/TX2vwm0qTiefe6kBNTdcwMo4nge?from=from_copylink)
+1. [AI写小说-创新？爆火男频又有女频的影子？](https://rq547mr4oez.feishu.cn/wiki/TX2vwm0qTiefe6kBNTdcwMo4nge?from=from_copylink)
 
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
 
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)（韭菜Y日记）
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)（韭菜Y日记）
 
-1.  [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)
+1. [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)
 
-1.  [女频耽mei拆书，小白也能学会的高级框架](https://rq547mr4oez.feishu.cn/wiki/FCkewRlBYi2E7WkB6NscCG31nBY?from=from_copylink)
+1. [女频耽mei拆书，小白也能学会的高级框架](https://rq547mr4oez.feishu.cn/wiki/FCkewRlBYi2E7WkB6NscCG31nBY?from=from_copylink)
 
-1.  [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
+1. [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
 
-1.  [拆书成神-爽文《从斩妖除魔开始长生不死》](https://rq547mr4oez.feishu.cn/wiki/HzN9w04IliWZBukwyXCcHAYqn9d?from=from_copylink)
+1. [拆书成神-爽文《从斩妖除魔开始长生不死》](https://rq547mr4oez.feishu.cn/wiki/HzN9w04IliWZBukwyXCcHAYqn9d?from=from_copylink)
 
-1.  ....（持续更新）
+1. ....（持续更新）
 
 ---
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+**PS：** 盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
 **原始出处：**
 
 ![](img/e019db03b760b87e4a543b4aa737790e.png)
 
-# 二、上干货
+## 二、上干货
 
-# 三、拆书Prompt
+## 三、拆书Prompt
 
 ```
 # Role：网文章节分析师

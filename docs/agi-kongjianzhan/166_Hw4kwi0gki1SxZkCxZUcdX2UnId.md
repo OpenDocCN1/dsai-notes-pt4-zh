@@ -1,6 +1,7 @@
+
 # 工具教程-Flux AI
 
-> 来源：[https://agispace.feishu.cn/docx/Vrsbdc8NhoaV2jx5wFdcgCHOnWf](https://agispace.feishu.cn/docx/Vrsbdc8NhoaV2jx5wFdcgCHOnWf)
+> 来源：[`https://agispace.feishu.cn/docx/Vrsbdc8NhoaV2jx5wFdcgCHOnWf`](https://agispace.feishu.cn/docx/Vrsbdc8NhoaV2jx5wFdcgCHOnWf)
 
 前几天提到过的[**Stable**](https://agispace.feishu.cn/wiki/Xs6HwsNyDi92O8kayXJclpcZnsd#part-Hbkcd5NtwoFiK3xXxzBcL0oan5c) Diffusion 原班人马，发布FLUX.1，又整活了。最新在社交媒体上发布了一组由Flux生成的合照。
 
@@ -26,19 +27,19 @@
 
 ![](img/ed1ed77631f6f3800c8e050c29514ab1.png)
 
-FLUX.1在视觉质量、图像细节和输**出多样性等方面性能优越，其具**有三大特点：文字生成、复杂构图、人手描绘。
+FLUX.1在视觉质量、图像细节和输出多样性等方面性能优越，其具有三大特点：文字生成、复杂构图、人手描绘。
 
-第一个变体是 **FLUX.1 [pro]**，它是全新的 SOTA 文生图模型，具有极其丰富的图像细节、极强的 prompt 遵循能力和多样化风格。目前可以通过 API 使用。
+第一个变体是**FLUX.1 [pro]**，它是全新的SOTA文生图模型，具有极其丰富的图像细节、极强的prompt遵循能力和多样化风格。目前可以通过API使用。
 
-+   API 地址：https://docs.bfl.ml/
++ API 地址：`https://docs.bfl.ml/`
 
-第二个是 **FLUX.1 [dev]**，它是 FLUX.1 [pro] 的开放权重、非商用变体，并直接基于后者蒸馏而成。该模型的表现优于 Midjourney 和 Stable Diffusion 3 等其他图像模型。推理代码和权重已经放在了 GitHub 上。下图是与竞品图像模型的比较。
+第二个是**FLUX.1 [dev]**，它是FLUX.1 [pro]的开放权重、非商用变体，并直接基于后者蒸馏而成。该模型的表现优于Midjourney和Stable Diffusion 3等其他图像模型。推理代码和权重已经放在了GitHub上。下图是与竞品图像模型的比较。
 
-+   GitHub 地址：https://github.com/black-forest-labs/flux
++ GitHub 地址：`https://github.com/black-forest-labs/flux`
 
-第三个是开源的 FLUX.1 [schnell]，它是超高效的 4-step 模型，遵循了 Apache 2.0 协议。该模型在性能上与 [dev]、[pro] 非常接近，可以在 Hugging Face() 上使用。
+第三个是开源的FLUX.1 [schnell]，它是超高效的4-step模型，遵循了Apache 2.0协议。该模型在性能上与[dev]、[pro]非常接近，可以在Hugging Face上使用。
 
-+   Hugging Face 地址：https://huggingface.co/black-forest-labs/FLUX.1-schnell
++ Hugging Face 地址：`https://huggingface.co/black-forest-labs/FLUX.1-schnell`
 
 ![](img/cedfabb5a4b8a01b1bffa3250d17e342.png)
 
@@ -46,20 +47,20 @@ FLUX.1包含**专业版、开发者版、快速版**三种模型，其中前两�
 
 三款模型实用地址：
 
-https://replicate.com/black-forest-labs/flux-pro
+`https://replicate.com/black-forest-labs/flux-pro`
 
-https://replicate.com/black-forest-labs/flux-dev
+`https://replicate.com/black-forest-labs/flux-dev`
 
-https://replicate.com/black-forest-labs/flux-schnell
+`https://replicate.com/black-forest-labs/flux-schnell`
 
-**在下一步的工作上，黑**森林预告将发布一款SOTA文生视频模型，“让所有人都能将文本转为视频”。该模型将建立在FLUX.1的基础上，“以高清和前所未有的速度实现精确创作和编辑”。
+在下一步的工作上，黑森林预告将发布一款SOTA文生视频模型，“让所有人都能将文本转为视频”。该模型将建立在FLUX.1的基础上，“以高清和前所未有的速度实现精确创作和编辑”。
 
 **推荐阅读**
 
 （Jack Cui）又一个爆火的AI项目，逼真到恐怖的Flux！【保姆级硬核教程】
 
-https://mp.weixin.qq.com/s/T8Wew9zvUtIhKXSEfgkP4Q
+`https://mp.weixin.qq.com/s/T8Wew9zvUtIhKXSEfgkP4Q`
 
 （新智元）情侣合照逼真到恐怖，竟被代码识出破绽？沃顿教授预言AI 18个月封神！
 
-https://mp.weixin.qq.com/s/XUb8dzNB19Guqm3Y4oxroA
+`https://mp.weixin.qq.com/s/XUb8dzNB19Guqm3Y4oxroA`

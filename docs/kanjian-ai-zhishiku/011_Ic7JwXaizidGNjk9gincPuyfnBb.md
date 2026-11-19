@@ -1,6 +1,7 @@
+
 # 视频模型：可灵
 
-> 来源：[https://jlqyxzzvbk.feishu.cn/docx/Wph0dQ65moqirKx29rRcEE2ynXf](https://jlqyxzzvbk.feishu.cn/docx/Wph0dQ65moqirKx29rRcEE2ynXf)
+> 来源：`https://jlqyxzzvbk.feishu.cn/docx/Wph0dQ65moqirKx29rRcEE2ynXf`
 
 文档可编辑，欢迎贴上你的测试效果
 
@@ -8,7 +9,7 @@
 
 ## 2024年6月6日快手发布“可灵”视频大模型：
 
-[快手【可灵】大模型介绍PPT](https://waytoagi.feishu.cn/wiki/S1Mswi9PUiV2lskKmutcpzuynfd)
+[快手【可灵】大模型介绍PPT](`https://waytoagi.feishu.cn/wiki/S1Mswi9PUiV2lskKmutcpzuynfd`)
 
 +   生成超过120秒1080P视频
 
@@ -20,23 +21,23 @@
 
 +   支持用户输入控制信息，丰富内容控制能力
 
-+   类Sora的DiT结构，用Transformer代替卷积网络
++   类`Sora`的`DiT`结构，用`Transformer`代替卷积网络
 
-+   自研3D VAE网络，提升视频重建质量
++   自研3D `VAE`网络，提升视频重建质量
 
-> 官网链接https://kling.kuaishou.com/mobile
+> 官网链接`https://kling.kuaishou.com/mobile`
 
 > 小互报导：
 
-> 🔗 https://xiaohu.ai/p/9119
+> 🔗 `https://xiaohu.ai/p/9119`
 
-> 🔗 https://x.com/imxiaohu/status/1804030672836923554
+> 🔗 `https://x.com/imxiaohu/status/1804030672836923554`
 
 > 大聪明的技术详解
 
-> 中学生能看懂：快手「可灵」和「Sora」背后 DiT 技4术
+> 中学生能看懂：快手「可灵」和「`Sora`」背后 `DiT` 技4术
 
-> https://mp.weixin.qq.com/s/2PrMgNAL0Er_vNjhqSbTHQ
+> `https://mp.weixin.qq.com/s/2PrMgNAL0Er_vNjhqSbTHQ`
 
 ## 6月21日发布图生视频功能
 
@@ -52,13 +53,13 @@
 
 > 3. 文生视频多比例选择：新增9:16和1:1视频尺寸选择，提供更多创作可能
 
-> 🔗更多介绍详见官网：https://kling.kuaishou.com/
+> 🔗更多介绍详见官网：`https://kling.kuaishou.com/`
 
 > 二、产品体验权限申请流程📝
 
 > 1. 第一步：快影申请👉快影APP - AI创作 - AI生视频 - 填写信息
 
-> 2. 第二步：问卷填写👉https://ppg.viviv.com/s/Xku4zYHe
+> 2. 第二步：问卷填写👉`https://ppg.viviv.com/s/Xku4zYHe`
 
 > 每日根据以上填写信息优先开放权限，如申请超过3日仍未开通，可私聊 @可灵社群小助理
 
@@ -66,190 +67,187 @@
 
 > 1. 长期激励：带话题标签 #可灵 #快手可灵# 可灵AI，在快手APP发布有额外流量激励！
 
-> 2. 话题投稿：参与快手定向投稿任务，获得专属流量激励，带2个话题 #可灵AI创意大赏 #可灵，关注并@可灵AI @快手热点 官号，详细规则：https://a.d4t.cn/DpFGhZ
+> 2. 话题投稿：参与快手定向投稿任务，获得专属流量激励，带2个话题 #可灵AI创意大赏 #可灵，关注并@可灵AI @快手热点 官号，详细规则：`https://a.d4t.cn/DpFGhZ`
 
-> 3. 可灵官号投稿：https://ppg.viviv. com/s/kiqAWHrd
+> 3. 可灵官号投稿：`https://ppg.viviv. com/s/kiqAWHrd`
 
 > 欢迎大家踊跃投稿！👏
 
 ## 7月6日功能更新发布首尾帧功能
 
-1.  上线网页版：https://klingai.kuaishou.com/
+1.  上线网页版：`https://klingai.kuaishou.com/`
 
 1.  增加首尾帧功能
 
 1.  文生视频模式下增加运镜控制功能
 
-# 图生视频效
+## 图生视频效
 
-## 测试者：AJ+三思
+### 测试者：AJ+三思
 
-![](img/5f822040b7bf39a43f126c3b80058bb6.png)
+![](`img/5f822040b7bf39a43f126c3b80058bb6.png`)
 
-[copy_4990E05F-F1FE-440B-8403-FA9FD23088DF.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SHktb9aNcoh7Aoxt5W7cf1pYnrf)
+[`copy_4990E05F-F1FE-440B-8403-FA9FD23088DF.mov`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SHktb9aNcoh7Aoxt5W7cf1pYnrf`)
 
-![](img/f4c549d8e70fdc168e6637c09cbbc5a0.png)
+![](`img/f4c549d8e70fdc168e6637c09cbbc5a0.png`)
 
-[copy_43B865EA-0847-47A2-8A17-4F805ABBECF0.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QWXwb4u6uoxIcpxPqosc6HuanJc)
+[`copy_43B865EA-0847-47A2-8A17-4F805ABBECF0.mov`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QWXwb4u6uoxIcpxPqosc6HuanJc`)
 
 上面有个美女集合长视频
 
-![](img/0844ea7f54585e1140597534fc94e5c1.png)
+![](`img/0844ea7f54585e1140597534fc94e5c1.png`)
 
-[10830_1718972853.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DSaBbyn1bouJEKxZCJ3cbZ5VnNc)
+[`10830_1718972853.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DSaBbyn1bouJEKxZCJ3cbZ5VnNc`)
 
-![](img/1ea4464f537ccd2581c0bce443481dd7.png)
+![](`img/1ea4464f537ccd2581c0bce443481dd7.png`)
 
-[10828_1718972843.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CPW1bUdyDoHATMxOq3BcXBQYn3l)
+[`10828_1718972843.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CPW1bUdyDoHATMxOq3BcXBQYn3l`)
 
-## 测试者：guahunyo（一定要看）
+### 测试者：guahunyo（一定要看）
 
-![](img/4e4f67471a3e8a2fd8464870ae8b4aa3.png)
+![](`img/4e4f67471a3e8a2fd8464870ae8b4aa3.png`)
 
-[7507_1718959243.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NvvLbrqFXoqxIpxfULLcddAyn0c)
+[`7507_1718959243.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NvvLbrqFXoqxIpxfULLcddAyn0c`)
 
-## 测试者：麦橘
+### 测试者：麦橘
 
-![](img/08efeee19430ff771130bfe591790e23.png)
+![](`img/08efeee19430ff771130bfe591790e23.png`)
 
-[7326_1718949372.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DYhwbO0kBoPnx4xwHRzcVVJinOb)
+[`7326_1718949372.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DYhwbO0kBoPnx4xwHRzcVVJinOb`)
 
-![](img/6cff58f4e4f5748587f6627ae17a2b7e.png)
+![](`img/6cff58f4e4f5748587f6627ae17a2b7e.png`)
 
-[7382_1718949887.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KZ2sbfalJoasxHxji6Hc0Vfkn1c)
+[`7382_1718949887.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KZ2sbfalJoasxHxji6Hc0Vfkn1c`)
 
-## 测试者：葡了个萄
+### 测试者：葡了个萄
 
-![](img/2a4655ab4739fe99f6d0280295919ddd.png)
+![](`img/2a4655ab4739fe99f6d0280295919ddd.png`)
 
-[6184_1718979502.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjvTb75hjoW9ehxxP5Bck7LcnXf)
+[`6184_1718979502.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjvTb75hjoW9ehxxP5Bck7LcnXf`)
 
-## 测试者：大佬的鼠DonRat
+### 测试者：大佬的鼠DonRat
 
-![](img/784e488fb76215e69a3ed733eeb97392.png)
+![](`img/784e488fb76215e69a3ed733eeb97392.png`)
 
-[7536_1718962484.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A2V8bBNx4o735FxrIhKcP24onTf)
+[`7536_1718962484.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A2V8bBNx4o735FxrIhKcP24onTf`)
 
-![](img/7810f95b916c8a70ecc439cbb33d7d42.png)
+![](`img/7810f95b916c8a70ecc439cbb33d7d42.png`)
 
-[7342_1718949473.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VocabJi9SohPBxxxA6qccKATnUg)
+[`7342_1718949473.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VocabJi9SohPBxxxA6qccKATnUg`)
 
-## 测试者：八月DMNK
+### 测试者：八月DMNK
 
-![](img/6481db59c64844932bfa447dc02d99af.png)
+![](`img/6481db59c64844932bfa447dc02d99af.png`)
 
-[7535_1718961675.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HYPkbSHGTova6NxPIl4cDb8inAe)
+[`7535_1718961675.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HYPkbSHGTova6NxPIl4cDb8inAe`)
 
-## 测试者： 纸墨
+### 测试者： 纸墨
 
-![](img/e6bcef11ba84cff51c91a40ea039eade.png)
+![](`img/e6bcef11ba84cff51c91a40ea039eade.png`)
 
-[7504_1718959122.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UD22bjhXuoKF65x2XZJcEKCInCh)
+[`7504_1718959122.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UD22bjhXuoKF65x2XZJcEKCInCh`)
 
-## 测试者：汤团猪
+### 测试者：汤团猪
 
-![](img/490c4567e9ca205ac2aa9f48239f5a23.png)
+![](`img/490c4567e9ca205ac2aa9f48239f5a23.png`)
 
-[7501_1718959107.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EKIib98SjoElAZxj34scPwxLntd)
+[`7501_1718959107.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EKIib98SjoElAZxj34scPwxLntd`)
 
-## 测试者：德里克文
+### 测试者：德里克文
 
-![](img/157e685427614bea31881f24dc27c86e.png)
+![](`img/157e685427614bea31881f24dc27c86e.png`)
 
-[mmexport1718966314147.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VmdgbW0WIo6rnsxq8yPcpfecnje)
+[`mmexport1718966314147.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VmdgbW0WIo6rnsxq8yPcpfecnje`)
 
+[`RNFetchBlobTmp_pn6bwzro4sn6oipgxw6hq.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B0sEbhPlQowGiOxbqJIch5Xknjb`)
 
-[RNFetchBlobTmp_pn6bwzro4sn6oipgxw6hq.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B0sEbhPlQowGiOxbqJIch5Xknjb)
+[`RNFetchBlobTmp_ntrrwb9qndo8r8zdgvo1ks.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ax9dbkoHDorJpsxldAvcG298nFc`)
 
+![](`img/87ebad0d4c6a94fe6203870dc4112e99.png`)
 
-[RNFetchBlobTmp_ntrrwb9qndo8r8zdgvo1ks.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ax9dbkoHDorJpsxldAvcG298nFc)
+[`RNFetchBlobTmp_4ebp8bll2o3vd88dewdm8.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hjheb8h9yoCYVPxXXmpcMvZonYb`)
 
-![](img/87ebad0d4c6a94fe6203870dc4112e99.png)
+![](`img/e7387c9b7c4995356625d7cff69a90d2.png`)
 
-[RNFetchBlobTmp_4ebp8bll2o3vd88dewdm8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hjheb8h9yoCYVPxXXmpcMvZonYb)
+[`RNFetchBlobTmp_5mlllip1n6c2o8m3mctzeo.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RySPbC0SAoY9QDxW7GLcWXhOnMa`)
 
-![](img/e7387c9b7c4995356625d7cff69a90d2.png)
+![](`img/ab94f2e3e5706170461cd6887ae79a9e.png`)
 
-[RNFetchBlobTmp_5mlllip1n6c2o8m3mctzeo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RySPbC0SAoY9QDxW7GLcWXhOnMa)
+[`RNFetchBlobTmp_g2bc7agemojj1ouqte8hv.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WOpwbr1WwomNhQx9HkpcjDAnnTF`)
 
-![](img/ab94f2e3e5706170461cd6887ae79a9e.png)
+### 测试者：大熊猫
 
-[RNFetchBlobTmp_g2bc7agemojj1ouqte8hv.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WOpwbr1WwomNhQx9HkpcjDAnnTF)
+![](`img/612736390c1442a5e8beb34697a141ed.png`)
 
-## 测试者：大熊猫
+[`9d52e29946e1ee53250ae0b794ac42bc.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Orv5bWO7no3KyDxw0BAcJTJ2nzc`)
 
-![](img/612736390c1442a5e8beb34697a141ed.png)
+### 测试者：OceanYoung
 
-[9d52e29946e1ee53250ae0b794ac42bc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Orv5bWO7no3KyDxw0BAcJTJ2nzc)
+![](`img/5d391a1cc0d2203b3af6283a071e7c93.png`)
 
-## 测试者：OceanYoung
+[`🐧视频20240621182533.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QEjWb1pKAoPlIxx49AtcAKVQnmf`)
 
-![](img/5d391a1cc0d2203b3af6283a071e7c93.png)
+![](`img/776dcd2af35e3d814c57f9090c1d21ae.png`)
 
-[🐧视频20240621182533.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QEjWb1pKAoPlIxx49AtcAKVQnmf)
+[`🐧视频20240621184838.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W7CxbyvvBoNg0Xxt5jict9TrnzK`)
 
-![](img/776dcd2af35e3d814c57f9090c1d21ae.png)
+### 测试者：洪九九
 
-[🐧视频20240621184838.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W7CxbyvvBoNg0Xxt5jict9TrnzK)
+![](`img/87751b4977e9c3d7089efdc680256ed7.png`)
 
-## 测试者：洪九九
+[`meme.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AhHlbbjoLoF7mFxLZtVc8mFwnrg`)
 
-![](img/87751b4977e9c3d7089efdc680256ed7.png)
+![](`img/fe6d3e1e731226aa2b937ad5dc599208.png`)
 
-[meme.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AhHlbbjoLoF7mFxLZtVc8mFwnrg)
+[`f892f5ce28ed85c4a4676afc48959b.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FUGEbzZrHo2DzlxeUZtcCupCn7f`)
 
-![](img/fe6d3e1e731226aa2b937ad5dc599208.png)
+### 测试者：吵爷
 
-[f892f5ce28ed85c4a4676afc48959b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FUGEbzZrHo2DzlxeUZtcCupCn7f)
+![](`img/7bd66523044c11f25dd59ed95ed5271e.png`)
 
-## 测试者：吵爷
+[`可灵.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gr9wbQv4WodWQZxbvqlc8rA0n9g`)
 
-![](img/7bd66523044c11f25dd59ed95ed5271e.png)
+![](`img/fa5db6693fad28f0e166c1439dbe528c.png`)
 
-[可灵.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gr9wbQv4WodWQZxbvqlc8rA0n9g)
+[`可灵1.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KDX6bAfXToMko7xRC20cv8yQngg`)
 
-![](img/fa5db6693fad28f0e166c1439dbe528c.png)
+### 测试者：猫叔
 
-[可灵1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KDX6bAfXToMko7xRC20cv8yQngg)
+![](`img/3f967a362689fffd1e024e000ce37e38.png`)
 
-## 测试者：猫叔
+[`WeChat_20240621201319.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CUVmbUA4toAnycxPyVxc3wOInVf`)
 
-![](img/3f967a362689fffd1e024e000ce37e38.png)
+![](`img/e6a09c4e3000563d5c6b58392f5738a1.png`)
 
-[WeChat_20240621201319.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CUVmbUA4toAnycxPyVxc3wOInVf)
+[`WeChat_20240621201327.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MIffbOm8NoSL8CxaA2fcq4Lynkb`)
 
-![](img/e6a09c4e3000563d5c6b58392f5738a1.png)
+[`WeChat_20240621183535.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OJBwb4NnboKFAox0gIDcHIhfnjc`)
 
-[WeChat_20240621201327.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MIffbOm8NoSL8CxaA2fcq4Lynkb)
+![](`img/f52e0ec300a153e927c48304ee171bed.png`)
 
+[`WeChat_20240621183542.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FjJob73vhoMtJXx9854cLVNVnsh`)
 
-[WeChat_20240621183535.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OJBwb4NnboKFAox0gIDcHIhfnjc)
+![](`img/3b58f9b1007ddafe738711b9b2944078.png`)
 
-![](img/f52e0ec300a153e927c48304ee171bed.png)
+[`WeChat_20240621201343.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YkScb3UJkoh98GxkmUKcOZ2OnJh`)
 
-[WeChat_20240621183542.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FjJob73vhoMtJXx9854cLVNVnsh)
+[`WeChat_20240621183520.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SN6zb4C6Qoa4ZixdKYpcLtVBnVb`)
 
-![](img/3b58f9b1007ddafe738711b9b2944078.png)
+![](`img/01d03e24f31f6ec873d9a6235dfea0ef.png`)
 
-[WeChat_20240621201343.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YkScb3UJkoh98GxkmUKcOZ2OnJh)
+[`WeChat_20240621190600.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ItBLbAEqzomL2LxgBjzcORl6njh`)
 
+![](`img/7118d55ef80518e0bcbad7c84f1f6f13.png`)
 
-[WeChat_20240621183520.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SN6zb4C6Qoa4ZixdKYpcLtVBnVb)
+[`WeChat_20240621201335.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q07Vb6QC6oJX3cxeAcUcVfUNngc`)
 
-![](img/01d03e24f31f6ec873d9a6235dfea0ef.png)
+![](`img/f93e6b27370f20e1584a47cb38e502a3.png`)
 
-[WeChat_20240621190600.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ItBLbAEqzomL2LxgBjzcORl6njh)
+[`WeChat_20240621183530.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FavebRzNbo8zGpxUjEdcMA3Xnyd`)
 
-![](img/7118d55ef80518e0bcbad7c84f1f6f13.png)
+[`WeChat_20240621183525.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PrHMb04oloyIfKxij4kcegr1n2g`)
 
-[WeChat_20240621201335.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q07Vb6QC6oJX3cxeAcUcVfUNngc)
 
-![](img/f93e6b27370f20e1584a47cb38e502a3.png)
-
-[WeChat_20240621183530.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FavebRzNbo8zGpxUjEdcMA3Xnyd)
-
-
-[WeChat_20240621183525.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PrHMb04oloyIfKxij4kcegr1n2g)
 
 ![](img/5a44ce85b5fa598f44270f8e4a94d28d.png)
 
@@ -303,7 +301,6 @@
 
 [a783cb3ac04621378f986a49df2c63b5_WC-EditVideo_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BXELbSFqDorawOxk1KBc5YrhnPb)
 
-
 [RNFetchBlobTmp_0c9jptl5uw4gb7drth82kht.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QvDPb4UF1oYNmRxgfurcVLO6n6g)
 
 ![](img/df8f2af6ff6d9e89dc2c4c351142678d.png)
@@ -319,7 +316,6 @@
 ![](img/16a0e0bacdb6393cefb6888665ce7ec3.png)
 
 [7369_1718949801.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QNrPb6OKVo8FOqxqmUvcrup3nmb)
-
 
 [7367_1718949800.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YAJMbgilQohnvUx7UEacNMSLnVh)
 
@@ -353,18 +349,6 @@
 
 [飞书20240628-202846.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M8gCb4Au1oJqwZxgbYbczVhxnSf)
 
-## 测试者：
-
-## 测试者：
-
-## 测试者：
-
-## 测试者：
-
-## 测试者：
-
-## 测试者：
-
 ---
 
 # 文生视频效果
@@ -389,39 +373,37 @@
 
 ### 测试结果：
 
-1.  **场景识别**
+1. 场景识别
 
-+   **室内场景**: 测试模型在不同室内环境中的表现，例如办公室、厨房、卧室等。
+室内场景: 测试模型在不同室内环境中的表现，例如办公室、厨房、卧室等。
 
-+   一个穿着西装的人正在办公室里，坐在电脑前工作。背景有办公桌、文件柜和窗户。
+一个穿着西装的人正在办公室里，坐在电脑前工作。背景有办公桌、文件柜和窗户。
 
 ![](img/bf333d0a3965aa61ff74656af528c552.png)
 
 [RNFetchBlobTmp_1t74bpbgoxypat9sdy4ct9.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HryLb2TJ0oq6KcxsmkeceO68nub)
 
-+   一个人在厨房里烹饪，背景有炉灶、冰箱和厨具。（人没出现）
+一个人在厨房里烹饪，背景有炉灶、冰箱和厨具。（人没出现）
 
 ![](img/dc759690070285adccbf14ff7d9066cf.png)
 
 [RNFetchBlobTmp_gi2purqtsckc0zh5wvdlit.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DOBHb5bMmoRaufxJdxCcND8unmb)
 
-+   **室外场景：**测试模型在不同室外环境中的表现，例如街道、公园、商场等。
+室外场景: 测试模型在不同室外环境中的表现，例如街道、公园、商场等。
 
-+   https://lumalabs.ai/dream-machine
+https://lumalabs.ai/dream-machine
 
 ![](img/392b76b88bc6f7c6b733b982874d4097.png)
 
 [RNFetchBlobTmp_5ysi4syzkds5aenykf0f6e.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PvALbMOHhoweU2x7CZvcnKQvnAf)
 
-+   一群人在街道上行走，背景有车辆、行人和商店。
-
+一群人在街道上行走，背景有车辆、行人和商店。
 
 [RNFetchBlobTmp_napjgw4u0bnuowyajil7o.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZvDibmEnJoxrbBx1cR3cPar9n3f)
 
-1.  **物体识别**
+2. 物体识别
 
-+   **静态物体**: 评估模型对静止物体的识别能力，如家具、车辆、建筑物等。
-
+静态物体: 评估模型对静止物体的识别能力，如家具、车辆、建筑物等。
 
 [RNFetchBlobTmp_915arcfoqygtq9dilcm1vs.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TdVTbqaXQoRqZTxkLUkcEhjwnue)
 
@@ -429,7 +411,7 @@
 
 [RNFetchBlobTmp_3j3aal67gk6gg9nme44ifh.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Yy8SbOpruo8d9Mx4O39cEvjGnEb)
 
-+   **动态物体**: 评估模型对移动物体的识别能力，如行人、跑步者、骑自行车的人等。
+动态物体: 评估模型对移动物体的识别能力，如行人、跑步者、骑自行车的人等。
 
 ![](img/d4cc35be32c4a143d2861f1189ae7af7.png)
 
@@ -439,11 +421,11 @@
 
 [RNFetchBlobTmp_eikia7r8vmaih5obs25h4i.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mv6sbBFQ6o164Rxd0oLcvlZun3b)
 
-1.  **人物识别**
+3. 人物识别
 
-+   **面部识别**: 测试模型对不同面部特征的识别能力，包括不同年龄、性别、种族等。
+面部识别: 测试模型对不同面部特征的识别能力，包括不同年龄、性别、种族等。
 
-+   一组不同年龄段的人，包括儿童、青少年、成年人和老人。
+一组不同年龄段的人，包括儿童、青少年、成年人和老人。
 
 ![](img/fbfe95749d685ee4bbba2ac93ca6c74e.png)
 
@@ -455,9 +437,9 @@
 
 [RNFetchBlobTmp_8bhih08p6tvl96vnlssb58.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TqbHbQpseozqpmxPWcmcX3pxnqb)
 
-+   **姿态识别**: 评估模型对不同人物姿态的识别能力，例如站立、坐下、躺卧等。
+姿态识别: 评估模型对不同人物姿态的识别能力，例如站立、坐下、躺卧等。
 
-+   一个人站立在房间中。
+一个人站立在房间中。
 
 ![](img/ad5b7e8e522e1c10c016b30c35cacf10.png)
 
@@ -465,13 +447,11 @@
 
 一个人躺在床上（啊？2个人）
 
-
 [RNFetchBlobTmp_q0q1nof0hwqsiig31frjpm.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hf3Zb9xM5oespcxDVBNcwucZn1d)
 
-1.  **动作识别**
+4. 动作识别
 
-+   **基本动作**: 评估模型对基本动作的识别能力，如走路、跑步、跳跃等。
-
+基本动作: 评估模型对基本动作的识别能力，如走路、跑步、跳跃等。
 
 [RNFetchBlobTmp_dgiiod9mnvg94la0jsduv.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GLF4beqmhoTLMcx8aH4cQyLdnNd)
 
@@ -485,14 +465,15 @@
 
 [RNFetchBlobTmp_mh6vv46eaco5mkiwbecx5n.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AKdDbPWd4oB7qLxZQKmc1ejvn8e)
 
-+   **复杂动作**: 评估模型对复杂动作的识别能力，如舞蹈、体育活动、手势等。
+复杂动作: 评估模型对复杂动作的识别能力，如舞蹈、体育活动、手势等。
+
+
 
 ![](img/b908725aa41b40c71c630067f4a40fe8.png)
 
 [RNFetchBlobTmp_m6p17qgnrtnhqzkslbw.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AGaxb3rnuoIdsMxnR4ocBCg1nRe)
 
 一群人在舞蹈室里跳舞。
-
 
 [RNFetchBlobTmp_lb90pswoe5g6bl1h2gt2i5.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C1yvb2m3coUQlxxZmaecaf0XnJM)
 
@@ -506,62 +487,63 @@
 
 [RNFetchBlobTmp_570gtmsa9mmuora3es7y0l.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cehpb5N6KonJFHxdSaXcSPLhnSe)
 
-
 [RNFetchBlobTmp_oja167y6hffb6omkt69ls.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Px2UbENt6oIkZex2D5icYWF8nOe)
-
 
 [RNFetchBlobTmp_umuq3wpcd7fx7gz7hcimid.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GVRDbQSZcoEsZDxrJrpcazaennf)
 
-1.  **事件检测**
+## 事件检测
 
-+   **简单事件**: 测试模型对简单事件的检测能力，如开门、关灯、拿起物品等。（其实试了2次书没有拿起来，只在摸了下）
+### 简单事件
+测试模型对简单事件的检测能力，如开门、关灯、拿起物品等。（其实试了2次书没有拿起来，只在摸了下）
 
-+   一个人从桌子上拿起一本书。
+- 一个人从桌子上拿起一本书。
 
 ![](img/9e9104b5adce2ed7f86bc3cc0f095a15.png)
 
 [RNFetchBlobTmp_z8eb4p31xiicnh5zmz5cns.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IZLObhQAiodb9TxwkI7ca5MqnDe)
 
-一个人在房间里开门。
+- 一个人在房间里开门。
 
 ![](img/0829a4a1a68351708c81322c2a120b97.png)
 
 [RNFetchBlobTmp_qdnmltjmr5ixsrwjjouz.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dkemb8NlCo3u22xj0tIcPJ2pn7g)
 
-+   **复杂事件**: 测试模型对复杂事件的检测能力，如交通事故、打斗、拥挤等。
+### 复杂事件
+测试模型对复杂事件的检测能力，如交通事故、打斗、拥挤等。
 
-+   两个人在公园里发生打斗。
+- 两个人在公园里发生打斗。
 
 ![](img/a9a9afb28aaff1849e8c4ccb08b5b768.png)
 
 [RNFetchBlobTmp_85hz2j5fbyn1njhujsoodb.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MyBvb12vloYPzgxfcA2cFdCNnZO)
 
-1.  **环境变化**
+## 环境变化
 
-+   **光线变化**: 评估模型在不同光照条件下的表现，包括白天、夜晚、阴天、阳光直射等。
+### 光线变化
+评估模型在不同光照条件下的表现，包括白天、夜晚、阴天、阳光直射等。
 
-+   一个房间在白天的自然光照下。
+- 一个房间在白天的自然光照下。
 
 ![](img/00e23b5b141e90cbc4db6578f9e1e677.png)
 
 [RNFetchBlobTmp_obvjn49nndn83selfi1pt2.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KAElbj0BJoI3XHx4ayTcQ7OenGe)
 
-一个房间在夜晚灯光照明下。
+- 一个房间在夜晚灯光照明下。
 
 ![](img/c46fdea09964dd61a16cf5f863bb9ece.png)
 
 [RNFetchBlobTmp_b1zeqm5o5tjfrfa4jn78ws.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TMNNbor20owAUIxDgCLcwwprnZ3)
 
-+   **天气变化**: 测试模型在不同天气条件下的表现，如晴天、雨天、雪天、雾天等。
+### 天气变化
+测试模型在不同天气条件下的表现，如晴天、雨天、雪天、雾天等。
 
-+   公园在下雪的情况下。
+- 公园在下雪的情况下。
 
 ![](img/87828f063fbe8d3ca90e8371a1fc4866.png)
 
 [RNFetchBlobTmp_jj8sbu426x8f3arsq17cqa.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Yc5NbOMGXoKNavxwnGucqLMJnPb)
 
-街道在下雨的情况下。
-
+- 街道在下雨的情况下。
 
 [RNFetchBlobTmp_1ljl5izkwc77m2dtvb840m.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9eIbOqQPo6fhkxu9XrcPLFenld)
 
@@ -569,34 +551,37 @@
 
 [RNFetchBlobTmp_19drwo6c9323iwbwe09qj5.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WEGVbP4m1obxQexRk5LcxiCbnXv)
 
-1.  **多对象场景**
+## 多对象场景
 
-+   **单一对象场景**: 评估模型在单一对象场景中的表现。
+### 单一对象场景
+评估模型在单一对象场景中的表现。
 
-+   一个房间里只有一个人在看书。
+- 一个房间里只有一个人在看书。
 
 ![](img/8cce734ecc737d1cc12e35776ad1c7af.png)
 
 [RNFetchBlobTmp_524t8xyr974m6jhpxhvd7.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OQIRbpkreoKoWJx9Pl2cyGdPnug)
 
-+   **多对象场景**: 测试模型在包含多个对象的复杂场景中的表现，例如多人聚会、车流、商场购物等。
+### 多对象场景
+测试模型在包含多个对象的复杂场景中的表现，例如多人聚会、车流、商场购物等。
 
-+   客厅里有几个人在聚会。
+- 客厅里有几个人在聚会。
 
 ![](img/4db02c3e8bf209057a9544ed96275ed8.png)
 
 [RNFetchBlobTmp_h6dd0rzf1l91zn6ezikk8c.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SaHIbx45ZoTL1XxGD4ccIH5YnWb)
 
-1.  **特殊情况**
+## 特殊情况
 
-+   **遮挡情况**: 评估模型在部分物体或人物被遮挡时的识别能力。
+### 遮挡情况
+评估模型在部分物体或人物被遮挡时的识别能力。
 
-+   一个行人的面部被手遮挡。
-
+- 一个行人的面部被手遮挡。
 
 [RNFetchBlobTmp_7d15tobm1pum2o6srjclk.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S3esbGqIdov35JxHQCScRWhOnKf)
 
-+   **非标准视角**: 测试模型在非标准视角下的表现，例如斜视、俯视、仰视等。
+### 非标准视角
+测试模型在非标准视角下的表现，例如斜视、俯视、仰视等。
 
 ![](img/bf2da558078605bbadb74d52020c24cb.png)
 
@@ -606,9 +591,10 @@
 
 [RNFetchBlobTmp_68em6npvkvu7cu94fue5hp.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QPlKbHfH2od0ZDxkmGfcZFgbn5b)
 
-1.  **细节检测**
+## 细节检测
 
-+   **小物体**: 测试模型对小物体的识别能力，例如钥匙、手机、书本等。
+### 小物体
+测试模型对小物体的识别能力，例如钥匙、手机、书本等。
 
 ![](img/c77fbb0eee772a4e4d6c29e21af77115.png)
 
@@ -618,14 +604,12 @@
 
 [RNFetchBlobTmp_og8mlfjrw2ecbrjxthps0d.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UMObbQLe2oSnMWxopplc8LmgnNh)
 
-+
-
-+   **微表情**: 评估模型对面部微表情的识别能力，如皱眉、微笑、惊讶等。
+### 微表情
+评估模型对面部微表情的识别能力，如皱眉、微笑、惊讶等。
 
 ![](img/e20d36afcf446bd59b81cc069c3cc115.png)
 
 [RNFetchBlobTmp_j79b22fyaaqe817mwkaaxb.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IKjOb1bpSoWy90xEu6DcmiEJn9g)
-
 
 [RNFetchBlobTmp_ichpgaxfv5c9fmulxzc46.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ENWybADevo0Mn8x08otccc4lnTh)
 
@@ -633,7 +617,7 @@
 
 [RNFetchBlobTmp_ylino4a65n2z5rx3i1o4c.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y1Y6byOZ5olkdqxfM2qcd4RJned)
 
-**失败的案例：**
+## 失败的案例
 
 一直兔子穿着西服，拿着公文包（？）
 
@@ -677,7 +661,7 @@
 
 [RNFetchBlobTmp_djs49sow9l4a0orrs5bbts.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LA7UbbmyKoRTe1x4uRacthuVnkK)
 
-## 测试者：
+## 测试者
 
 ![](img/2f8856af93232b7a5c17dfbaab98ca12.png)
 
@@ -703,161 +687,163 @@
 
 ![](img/f9452c916155b4d6c17c029a8a79f25b.png)
 
-[3002_1717782441_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wus5bmQKAoMbZMxZzxrccctsnrd)
+
+
+[`3002_1717782441_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wus5bmQKAoMbZMxZzxrccctsnrd)
 
 ![](img/9ac4094ffd028d2cbbcf7b594ed054a0.png)
 
-[2994_1717781680_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GTeCb0Bg2ouvUSxMENbc6k5Znvh)
+[`2994_1717781680_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GTeCb0Bg2ouvUSxMENbc6k5Znvh)
 
 ![](img/8d82d6ddf57981f9541a3556911c0d6f.png)
 
-[2995_1717781682_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ekfvbs4FgoddQUxhyJ4c7nf4nih)
+[`2995_1717781682_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ekfvbs4FgoddQUxhyJ4c7nf4nih)
 
 ## 测试者：大雷
 
 ![](img/845b2da1ffc70b093e5c30d058ced27b.png)
 
-[42966_1717781538_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CtYIb4Yj9oOVdFxv0uAcZhVDnFg)
+[`42966_1717781538_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CtYIb4Yj9oOVdFxv0uAcZhVDnFg)
 
 ![](img/f7e020a783b448853254f463ccd810b1.png)
 
-[42967_1717781538_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VsZxb1QGzolZtBxJtlycPyHbnta)
+[`42967_1717781538_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VsZxb1QGzolZtBxJtlycPyHbnta)
 
 ![](img/4471b0250abc425fd5d88af0093ef8bf.png)
 
-[42974_1717781846_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HWOMbv3DKou42JxpKdbcXVmWn6f)
+[`42974_1717781846_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HWOMbv3DKou42JxpKdbcXVmWn6f)
 
 ## 测试者：黄社长
 
 ![](img/e2aa70fbe2eae13b0ac5c520a2fbd5ac.png)
 
-[26070_1717771553.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SR0Ab3ITEoyPP3xJ9j9coDg8njh)
+[`26070_1717771553.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SR0Ab3ITEoyPP3xJ9j9coDg8njh)
 
 ![](img/09e8bf0df497aa10f8ba9ee048f8911f.png)
 
-[26035_1717770702(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZU87bC5ljon5qUxVCIhcCmLjnme)
+[`26035_1717770702(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZU87bC5ljon5qUxVCIhcCmLjnme)
 
 ![](img/d2f2a43534b3d897a6f074305622ee61.png)
 
-[26037_1717770710(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UbHobEujHoTNE6x0LagcOyjdnue)
+[`26037_1717770710(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UbHobEujHoTNE6x0LagcOyjdnue)
 
 ![](img/9c02e6954d5f3b1f3aaca058e33cb3c9.png)
 
-[26026_1717769010(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UVPTbz7wioVebRx7GvucCDkSnGe)
+[`26026_1717769010(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UVPTbz7wioVebRx7GvucCDkSnGe)
 
 ![](img/81d1ac4a30d3888a3f1ea95f144ccb45.png)
 
-[26029_1717769971(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWw4b9A03ogDfSxepQmcDypenPg)
+[`26029_1717769971(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DWw4b9A03ogDfSxepQmcDypenPg)
 
 ![](img/b68e4aa4b7842e13120956c4a02aec47.png)
 
-[26045_1717771144(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SXH7bayPuoHKrvxYGMEcyLA5nxf)
+[`26045_1717771144(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SXH7bayPuoHKrvxYGMEcyLA5nxf)
 
 ## 测试者：十三
 
 ![](img/36871db7d5f40e836ea5dbd2aafc3a3d.png)
 
-[26050_1717771207(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YbZCbV04XobYtWxnDU0cPLG8nCf)
+[`26050_1717771207(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YbZCbV04XobYtWxnDU0cPLG8nCf)
 
 ![](img/cd2c57b9c237f6e59e0c280b5911f87b.png)
 
-[26088_1717774331(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CscubLTXiomVJcx85X0ccyfxn8c)
+[`26088_1717774331(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CscubLTXiomVJcx85X0ccyfxn8c)
 
 ![](img/10a09a3d436791ceac83410f3e6717e9.png)
 
-[26087_1717774318(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IZPBbGFIZosO8bxL1jCcLOQYnEb)
+[`26087_1717774318(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IZPBbGFIZosO8bxL1jCcLOQYnEb)
 
 ![](img/d1b6dcf0057aa63a3ceef8f371ad5ebf.png)
 
-[26086_1717773822(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LOhzb0H32odUeMxfQahcFQ54ncW)
+[`26086_1717773822(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LOhzb0H32odUeMxfQahcFQ54ncW)
 
 ![](img/a6f070cbb321ac4175a9aec20b54cec4.png)
 
-[26085_1717773790(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J6CPbhoxloyth1x8n0RciR1Qn5c)
+[`26085_1717773790(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J6CPbhoxloyth1x8n0RciR1Qn5c)
 
 ![](img/5992bb403e3c72dcee23d0bfdb303199.png)
 
-[26040_1717770837.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YPxfbBtb9obYyaxLkbccs0uGnuh)
+[`26040_1717770837.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YPxfbBtb9obYyaxLkbccs0uGnuh)
 
 ## 测试者：袁博
 
 ![](img/140fa238f1ceaa22ac9a8302acc62022.png)
 
-[26062_1717771334.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BL8NbGWpXoslGZxgs9AczT1gnEf)
+[`26062_1717771334.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BL8NbGWpXoslGZxgs9AczT1gnEf)
 
 ![](img/9e0e9a48242ed02c7c1ee9a729a93240.png)
 
-[26043_1717771126(原视频).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dw2YbHC8yocqLCx9AMKc0FBInOb)
+[`26043_1717771126(原视频).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dw2YbHC8yocqLCx9AMKc0FBInOb)
 
 ## 测试者：猫叔
 
 ![](img/7f21b2d483d4fb5b6735e7645cb1483e.png)
 
-[WeChat_20240608171016.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q6MYb3pTjov2w5xW6QBcFc3Unee)
+[`WeChat_20240608171016.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q6MYb3pTjov2w5xW6QBcFc3Unee)
 
 ![](img/00c6746b35f5ef685165d4ce654ae240.png)
 
-[WeChat_20240608001116.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PVzzb9yzNoBPzqxXt0McQ0oMnAg)
+[`WeChat_20240608001116.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PVzzb9yzNoBPzqxXt0McQ0oMnAg)
 
 ![](img/5e6526b79aebc32d293fd46050126c6c.png)
 
-[WeChat_20240608001134.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O2YZbkIRGo2qsNxzPeYcpxalnyd)
+[`WeChat_20240608001134.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O2YZbkIRGo2qsNxzPeYcpxalnyd)
 
 ![](img/99a537a553ae2de9650130739203fd08.png)
 
-[WeChat_20240608000716.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LTMDbpImzopkw6xayLPcgG1Vnzc)
+[`WeChat_20240608000716.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LTMDbpImzopkw6xayLPcgG1Vnzc)
 
 ![](img/fdafca95a3f15a51e74a461db0a48e84.png)
 
-[WeChat_20240608000741.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YD9GbzzLKos8nNxCTvOctqCPnAe)
+[`WeChat_20240608000741.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YD9GbzzLKos8nNxCTvOctqCPnAe)
 
 ![](img/13fcf446f5bef414de5892427d84b8fe.png)
 
-[WeChat_20240608001505.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DfU7bWPyYo3Je3x93XtcWED5ndb)
+[`WeChat_20240608001505.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DfU7bWPyYo3Je3x93XtcWED5ndb)
 
 ![](img/6bb1bdd04408aab8e845f2bb1d07c010.png)
 
-[WeChat_20240608001445.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PmYLbCEdOoyAqYx1Amfc5noZnrs)
+[`WeChat_20240608001445.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PmYLbCEdOoyAqYx1Amfc5noZnrs)
 
 ![](img/7e616145864556b3e38f47b705d96e4d.png)
 
-[WeChat_20240608001924.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NlCFbMbHtoeMYjxLnZPcEPlNnne)
+[`WeChat_20240608001924.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NlCFbMbHtoeMYjxLnZPcEPlNnne)
 
 ![](img/afb56ab53e95f8468f3703e6fc326def.png)
 
-[WeChat_20240608002002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GYOkbFZUSoJgNPxnWppcXRc5nAf)
+[`WeChat_20240608002002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GYOkbFZUSoJgNPxnWppcXRc5nAf)
 
 ![](img/29f5b306f6156420e1950ef209b6a187.png)
 
-[WeChat_20240608001123.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W🐧abHPLcodXnixEa37c4rACnpe)
+[`WeChat_20240608001123.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W🐧abHPLcodXnixEa37c4rACnpe)
 
 ![](img/563232e53a695201b8aa66f3348ea7d1.png)
 
-[WeChat_20240608001026.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DMy5bsOXCohpx0xk5cGcXD1knGh)
+[`WeChat_20240608001026.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DMy5bsOXCohpx0xk5cGcXD1knGh)
 
 ![](img/bdeffbc27da42eccc169ce80836faba0.png)
 
-[WeChat_20240608001045.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KdY2bhYjDo7T6nxJPU5cF92wnHe)
+[`WeChat_20240608001045.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KdY2bhYjDo7T6nxJPU5cF92wnHe)
 
 ![](img/5c02f9c55f365cea62e429a80028f206.png)
 
-[WeChat_20240608001055.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fc0qbOZLlo2wSZxoV6AcOgQwnVf)
+[`WeChat_20240608001055.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fc0qbOZLlo2wSZxoV6AcOgQwnVf)
 
 ![](img/77a3ad6d43c9a35e35d0de9365de6a33.png)
 
-[WeChat_20240608001451.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwnEbFiGZoSmd2xpyiGc2dZYnch)
+[`WeChat_20240608001451.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwnEbFiGZoSmd2xpyiGc2dZYnch)
 
 ![](img/49d1ab93fdc063603d2f78e831ebf9c5.png)
 
-[WeChat_20240608001441.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F0UGbuv2ToXwQFxSDdacBZsqnwg)
+[`WeChat_20240608001441.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F0UGbuv2ToXwQFxSDdacBZsqnwg)
 
 ![](img/6f71a901cd233c67dd29902935335d71.png)
 
-[WeChat_20240608001944.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C5F1bK7neoZIZhxQ4CncHsOkn5d)
+[`WeChat_20240608001944.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C5F1bK7neoZIZhxQ4CncHsOkn5d)
 
 ![](img/f6c4cc05949fe65ba6a95646dc5d90a8.png)
 
-[WeChat_20240608001952.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PVzkbNzYIojf6ixh8Azczq5Gnzc)
+[`WeChat_20240608001952.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PVzkbNzYIojf6ixh8Azczq5Gnzc)
 
 ## 测试者：温维斯Wenvis
 
@@ -870,19 +856,19 @@
 
 ![](img/ed8332e8b13f38941ea6feffeb643224.png)
 
-[RNFetchBlobTmp_av8crxfee26crropmc6k5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cs74b19bUoSxy8xmss6cdt0xnPd)
+[`RNFetchBlobTmp_av8crxfee26crropmc6k5.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cs74b19bUoSxy8xmss6cdt0xnPd)
 
 ![](img/4fe575d30b2986cda0015131a3e7a5fc.png)
 
-[RNFetchBlobTmp_xc24mjwh6mmd3yrfwnclif.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P9hdb1yPYoukcaxgDCRc7h3Rnqb)
+[`RNFetchBlobTmp_xc24mjwh6mmd3yrfwnclif.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P9hdb1yPYoukcaxgDCRc7h3Rnqb)
 
 ![](img/0cbc1b217c9017c32a7256b2cb1fc878.png)
 
-[RNFetchBlobTmp_75rx7m9vfr4dxvqhvobvs.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ah1ebUjfNowOO5xjhsAcAXxNnYc)
+[`RNFetchBlobTmp_75rx7m9vfr4dxvqhvobvs.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ah1ebUjfNowOO5xjhsAcAXxNnYc)
 
 ![](img/8719a2dfb5ac46df150dbccf4d03f7f1.png)
 
-[RNFetchBlobTmp_7rguu4pon1l0len3bqcyuh.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UB4pb41GVoZ527xZjrucLAl0ncg)
+[`RNFetchBlobTmp_7rguu4pon1l0len3bqcyuh.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UB4pb41GVoZ527xZjrucLAl0ncg)
 
 ## 测试者：杉杉
 
@@ -890,181 +876,146 @@
 
 ![](img/639210dfb952200592e042c27476954a.png)
 
-[RNFetchBlobTmp_3b475z3mbq3pvnqkgcraq.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CXAjbXNmMobFSlxm8T7cH62Snwd)
+[`RNFetchBlobTmp_3b475z3mbq3pvnqkgcraq.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CXAjbXNmMobFSlxm8T7cH62Snwd)
+
+
 
 ![](img/69492d44d4eeb23e155fec054cf7429b.png)
-
 [RNFetchBlobTmp_0q69qlnv0jzldjx8h57ciy7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PioAbPNJFolu34xbsncctkExnjh)
 
 ![](img/3158977eda143d71ffd1aa5016662b20.png)
-
 [RNFetchBlobTmp_if18wxpahvg1d4deh1eeei.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CkZHbqA5bofNnQxWcBPcWdBBnWc)
 
 需要明确描述中国人、亚洲人等才可以稳定的出中国面孔。
 
 ![](img/1baab131eefd1e0e770967f98ab1c82d.png)
-
 [RNFetchBlobTmp_9a6pi39mmafew2fn92ip87.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VeSObXMlFokPIOxBkeXcOwPOnze)
 
 ![](img/1f9b99a513a1e6c8de230d7c4aee7805.png)
-
 [RNFetchBlobTmp_6wsdwty0iaqvgs77o3dt1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JwGNbKXrnoTTYSxfXc9c9AX3nPU)
 
 ![](img/bd292990bfa4ee2baf42634628897cb0.png)
-
 [RNFetchBlobTmp_8unret0gopenkbg2h726ra.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NYE9bzvbHoTMUixYaaScdxSMnhe)
 
 ![](img/c3837ade6209b06705b77b6e6cff947c.png)
-
 [RNFetchBlobTmp_lrz6z5sy1i936szmiw98s.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TslebTd9Jo9vJ1xvG7AcV7rpnNd)
 
 自然场景的光线很变化很流畅也比较自然。
 
 ![](img/874d69aa1003f747c74d53891bc6d8d6.png)
-
 [RNFetchBlobTmp_dich3s745353l5xwf0f6sj.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SrKKb4F3Mo6aJlx283wcHaV9n0c)
 
 ![](img/0a056917631663a34b25e19018df15cd.png)
-
 [RNFetchBlobTmp_nviu1plw87moeqv73897br.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W8z7bDD31oa1PGx3zKYcht2Rnmf)
 
 ![](img/ba82eaf2cd537028211c3b529e714da3.png)
-
 [RNFetchBlobTmp_qh9j7hcob09uk9b8t26elq.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dg7qbjsmToH8NzxA46YccE3cnRh)
 
 ![](img/bce1a58c0ff384a19b40184f316b0115.png)
-
 [RNFetchBlobTmp_cour1os17c8zd13bsvgbxe.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RzmSbWDhUocfDTx8SHYcWkMXnte)
 
 ![](img/338ca9de8be060fbb77a235504553cd9.png)
-
 [RNFetchBlobTmp_yxg45x8gcwncdtl1yrct7g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q0NQb3j1Po7IF9x18REcVhICnxb)
 
 ![](img/7d2e41f9a6ad7825781bcbd515f57b16.png)
-
 [RNFetchBlobTmp_n0yuc9mwoyngpsx3nyksp.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GrdDbWn0Loa9h8xHVQ1cLyVDn4d)
 
 场景可以明确国家地点，有些可能涉及屏蔽词。
 
 ![](img/706173360303c7db2facb7bbfcfc3c45.png)
-
 [RNFetchBlobTmp_w9ejp4xq4vudu0tohpvgl.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RKccbBB1woG4jKxARXJcODGZnGf)
 
 ![](img/db984a36967839fbf9305eb7d54c6889.png)
-
 [RNFetchBlobTmp_heg3225e5kl7a244hs5vbu.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PHDGbvaGAo3wVAxdJGHc20StnLd)
 
 ![](img/2dd1ac73d5f4c135023d06d343daa082.png)
-
 [RNFetchBlobTmp_bq2l3qd8vg9zpndcis7c4g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GS2mbnkPLoBWeWxgbSTcG3ljn0d)
 
 风格化运动比较难实现，更类似于在真实世界用去拍摄艺术作品。（浅试了下千禧风格，Y2k）
 
 ![](img/fdcc4cca5c9f44f958aba50eca4562d5.png)
-
 [RNFetchBlobTmp_z7yvq79bxajl1hdzbjz8u.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Tkvzb0Moao3A3ixjuv1cVVAMnXe)
 
 ![](img/26c1776c207ce27fe255eaa52414827e.png)
-
 [RNFetchBlobTmp_bkhwe8drq6nhmzl2wmgjbf.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GX6Kb9E2Wo7lnYxwSDkcV40Fnre)
 
 ![](img/41413b274111b14473bdb9db191b5569.png)
-
 [RNFetchBlobTmp_h6zrlf8woov12cskp5dp67b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FbDGbYMcmoR0OexAz1UcgY4Nnef)
 
 ![](img/7461b80bbec8bb0970c317a57270027c.png)
-
 [RNFetchBlobTmp_r0623uoa12dyikd0s41hr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BuaBb7PAHodH6yxsYSxcZUHKntA)
 
 ![](img/fb704b4c8ff586abc381e3b209c951cf.png)
-
 [RNFetchBlobTmp_iwca8fcl8ou9noud09rie.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EqVEbG72DoghkTxEZEFcN5cMnUb)
 
 ![](img/5ca03c897400a605fba4b98f25a06019.png)
-
 [RNFetchBlobTmp_h9fkhxp8v9vy1xkketpgy.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PfJcb1vzJoIKmsxyDj8cs7Qbncd)
 
-诺兰，城市的街道弯曲变形，建筑颠倒错落，旋转的全景镜头，呈现出奇幻而混乱的空间 。
+诺兰，城市的街道弯曲变形，建筑颠倒错落，旋转的全景镜头，呈现出奇幻而混乱的空间 。
 
 ![](img/07128482ddebb06cc3ba45dd83b58e90.png)
-
 [RNFetchBlobTmp_r5vxh9jqc9hhpa6f45n8zh.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DUCObXXx8oskfzxi9IacAfFKnPd)
 
 真实及虚拟的动物尝试。
 
 ![](img/b250a0b5d9b2f2c6b6a7d24ffcff2e8d.png)
-
 [RNFetchBlobTmp_6aw9mwr3j37jnygz54s52.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZgJ1bIJzMoPrmQxNii3cdjwQnjh)
 
 ![](img/66558c7fa7513bcdd7bccc7b0dd033b9.png)
-
 [RNFetchBlobTmp_ceeoc20burlkcr9poekln.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/It08bomc5oz1EgxEJu5c7bPqnVh)
 
 剧情向镜头尝试，目前5s虽稳定，但是节奏过于慢了点。
 
 ![](img/0fd65b00e05d45f8240ecf75376f43cf.png)
-
 [RNFetchBlobTmp_gdxckh9ejye83pzb26qome.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KXJabrbxmolzYRxsWQnck9XenWh)
 
 ![](img/08ba8c7aa405d0ffd602fc4ce96018d4.png)
-
 [RNFetchBlobTmp_naosvxkayu5bzhx30afk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XCu0bs5olorwYpxeor4cwhvpn7b)
 
 ![](img/16f55328ef73a8c2bccd68e2244268f7.png)
-
 [RNFetchBlobTmp_p6xyr26mdgllbbtwstcgr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XmvObAZ7KoMurLx863oc1wd7nzg)
 
 ![](img/45a298fd3449bc2b970ee86a896e5125.png)
-
 [RNFetchBlobTmp_j750cr1oege8mtbsc2j7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FlYzbcQ2Fo7XZXxaQ0hc3aeGnUh)
 
 ![](img/4ea6d1aae3a3d766032d6d29263d6d9c.png)
-
 [RNFetchBlobTmp_swzkpjole7xca8qy77s99.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MrEWbVsIzodr5yx9XUWcFXTHnQh)
 
 ![](img/a98bd8c31244447817e293dcce2e802f.png)
-
 [RNFetchBlobTmp_rj65u2hcxscbc7p20soknm.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PWVebs5BmoQ7wux3mHzcpRRxnOg)
 
 ![](img/d690b6a09340f9de0d77b63ed769f007.png)
-
 [RNFetchBlobTmp_t5v3qv7wusia9fttxg29mc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TN10bNg6GosYmjxZJE5compNnVe)
 
 ![](img/ebe7b1285fe0c7bdc0d8f79f5abd19b4.png)
-
 [RNFetchBlobTmp_v21q4v7ptgtiom757bp1a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QqPRbqdXQobXxJxmDfMcZkcdnSh)
 
 ![](img/1f3ed4d569863d8d50457766547efc12.png)
-
 [RNFetchBlobTmp_093qyzlhq34u4g4vgk4gkdt.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ScrVbUyDIoFpftx894mcRBY6ngV)
 
 ![](img/e7c960fdde72ff0a8e4b2e9a333d8b08.png)
-
 [RNFetchBlobTmp_yqi2b8z0g69s9qqigdrhc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QVwZbl4gMoovibx1VvPcYeT2nbb)
 
 ![](img/0fe56f5d5800783a1876c46b62e18041.png)
-
 [RNFetchBlobTmp_5ya9pvfae284rqvmf9smzp.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UzO1bodMSo0ctAxT2xjcHLK5nwb)
 
 ![](img/cc87330c83c5757bd2e9e2ccf208c3e9.png)
-
 [RNFetchBlobTmp_hw04uggcrikbj6mc8tccb9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KaqibKNjZoCP6ZxCQRbcK0NrnBf)
 
 ![](img/63ba4f1d97e8d75cf34f7d75682b51fa.png)
-
 [RNFetchBlobTmp_6a32q19pv0wnjj7ykzmg7b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fc8zb59VWoOc5Zx2Z08ctly4nEb)
 
 ![](img/8aa37633a1028357edd065527da925c5.png)
-
 [RNFetchBlobTmp_3urqxfd8hq45nygw71br1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FCiXbudA4oyTEWx2C0AcF8GInCg)
 
 其他
 
 ![](img/034a0eef0830b38fe9380db942fbf5be.png)
-
 [RNFetchBlobTmp_eu3mjk2wl7gzukkn0ips5k.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XxYbbiyywouYzwxsNa9cBBHynIf)
 
 ![](img/1361a207b845eb96fb4d2097013eb545.png)
+
+
 
 [RNFetchBlobTmp_2ms3xu8xfuvb68tnl3ukhf.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OAlYbCBUKocfsdxxvZNc4tp9n3c)
 
@@ -1218,7 +1169,6 @@
 
 测试SORA，花瓣老虎飞天
 
-
 [WeChat_20240608000533.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DIdLbCFcSoxCjLxkkKrcWjnMnlg)
 
 科技未来都市，发生爆炸
@@ -1241,11 +1191,9 @@
 
 镜头推进，东方韵味，千里江山图
 
-
 [WeChat_20240608001154.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DQJ2bhVxDoTsFvxG1WOcKM4qneg)
 
 一个美丽性感的中国女人在泳池里吃苹果
-
 
 [WeChat_20240608001143.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bhb8bYW08oXjMQxBl2rcuXK5n9g)
 
@@ -1287,63 +1235,67 @@
 
 金鱼在天空中飞
 
+
+
+# 测试记录
+
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngTyuSbBzlUoa8JcxIF0gc5Iwsnkf)
 
-[2024-06-09 150556.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TyuSbBzlUoa8JcxIF0gc5Iwsnkf)
+[`2024-06-09 150556.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TyuSbBzlUoa8JcxIF0gc5Iwsnkf)
 
 天空的彩虹上，独角兽在奔跑
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngPXWNbDWBTo9vvhxg0RMcA7j4neg)
 
-[2024-06-09 152146.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PXWNbDWBTo9vvhxg0RMcA7j4neg)
+[`2024-06-09 152146.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PXWNbDWBTo9vvhxg0RMcA7j4neg)
 
 海底，水中的彩虹，珊瑚
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngPpDibnxd8oAFdXxrOiEcJ9I2nvf)
 
-[2024-06-09 150505.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PpDibnxd8oAFdXxrOiEcJ9I2nvf)
+[`2024-06-09 150505.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PpDibnxd8oAFdXxrOiEcJ9I2nvf)
 
 机器人在海水里弹吉他，珊瑚礁，鱼
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngALABbrvGIoETzFxyOJuctyEEn8b)
 
-[2024-06-08 172159.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ALABbrvGIoETzFxyOJuctyEEn8b)
+[`2024-06-08 172159.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ALABbrvGIoETzFxyOJuctyEEn8b)
 
 猫猫在海里潜水，抓鱼
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngTOMwbbVTioDN9PxAElfczRsgnHf)
 
-[2024-06-09 150653.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TOMwbbVTioDN9PxAElfczRsgnHf)
+[`2024-06-09 150653.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TOMwbbVTioDN9PxAElfczRsgnHf)
 
 海盗船在天空中快速的飞，云
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngIRSUb3uXMo3hvgxZxJfch38Qnfg)
 
-[2024-06-09 150159.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IRSUb3uXMo3hvgxZxJfch38Qnfg)
+[`2024-06-09 150159.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IRSUb3uXMo3hvgxZxJfch38Qnfg)
 
 大象在云上散步
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngM5vQbZXfvoBQ93xyTYCcBRYGnmA)
 
-[2024-06-09 151651.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M5vQbZXfvoBQ93xyTYCcBRYGnmA)
+[`2024-06-09 151651.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M5vQbZXfvoBQ93xyTYCcBRYGnmA)
 
 一本打开的书在城市的空中
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngKShObUYG6oiLeTxn9XjcSqVVnOg)
 
-[2024-06-09 150111.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KShObUYG6oiLeTxn9XjcSqVVnOg)
+[`2024-06-09 150111.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KShObUYG6oiLeTxn9XjcSqVVnOg)
 
 飞翔的书
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngY1eFbVmkGociSCxYmTdczav0nuS)
 
-[2024-06-09 145946.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y1eFbVmkGociSCxYmTdczav0nuS)
+[`2024-06-09 145946.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y1eFbVmkGociSCxYmTdczav0nuS)
 
 火车在太空银河中飞行
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngELiWbvfZfokTLSxOIxScFnLvnNs)
 
-[2024-06-09 152607.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ELiWbvfZfokTLSxOIxScFnLvnNs)
+[`2024-06-09 152607.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ELiWbvfZfokTLSxOIxScFnLvnNs)
 
 无尽的旋转楼梯
 
@@ -1351,59 +1303,59 @@
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngAyoEbUvG9o2JpBxAA96cHB45nPh)
 
-[a482f17f2ccc5b6d382f87ee1a78f841.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AyoEbUvG9o2JpBxAA96cHB45nPh)
+[`a482f17f2ccc5b6d382f87ee1a78f841.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AyoEbUvG9o2JpBxAA96cHB45nPh)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngZQzdbJxggoq9S1xgpK3cEaGGn5b)
 
-[0f575be79855cdb9615922148e05b66d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZQzdbJxggoq9S1xgpK3cEaGGn5b)
+[`0f575be79855cdb9615922148e05b66d.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZQzdbJxggoq9S1xgpK3cEaGGn5b)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngLKWubPgH7ojaGDxCtElcht9Gnpb)
 
-[dc0ddeaea4abcde1b8e87949ff74ca81.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LKWubPgH7ojaGDxCtElcht9Gnpb)
+[`dc0ddeaea4abcde1b8e87949ff74ca81.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LKWubPgH7ojaGDxCtElcht9Gnpb)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngVdOPb9UeQomnimx8hOmcXTpcn5g)
 
-[f624f1e30e714ece0ffd5c1757ffd19b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VdOPb9UeQomnimx8hOmcXTpcn5g)
+[`f624f1e30e714ece0ffd5c1757ffd19b.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VdOPb9UeQomnimx8hOmcXTpcn5g)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngXv4Gb68CXodQPUxZmFGck8T4nuc)
 
-[25343a1cabed729f4e25380f97b6c43f.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xv4Gb68CXodQPUxZmFGck8T4nuc)
+[`25343a1cabed729f4e25380f97b6c43f.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xv4Gb68CXodQPUxZmFGck8T4nuc)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngV5UTbLs8uouQetxY6COcAkK7nwf)
 
-[736f5beda4f551190e7dd7b1ff5ca2d7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V5UTbLs8uouQetxY6COcAkK7nwf)
+[`736f5beda4f551190e7dd7b1ff5ca2d7.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V5UTbLs8uouQetxY6COcAkK7nwf)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngMVvcbr2J6oX2FTxMJblcoemGnGe)
 
-[5dec4142ea755006aa803f687b634bd9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MVvcbr2J6oX2FTxMJblcoemGnGe)
+[`5dec4142ea755006aa803f687b634bd9.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MVvcbr2J6oX2FTxMJblcoemGnGe)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngIzxzbAj37ozFe2x63m8cOEsunrb)
 
-[8a475f3a366932787d7871c306d1c4ff.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IzxzbAj37ozFe2x63m8cOEsunrb)
+[`8a475f3a366932787d7871c306d1c4ff.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IzxzbAj37ozFe2x63m8cOEsunrb)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngTU1ebZn8Goq6KkxmidTcUPsDnMe)
 
-[adb97d0b436bb7b69420791f2d620764.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TU1ebZn8Goq6KkxmidTcUPsDnMe)
+[`adb97d0b436bb7b69420791f2d620764.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TU1ebZn8Goq6KkxmidTcUPsDnMe)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngNbi5bojxhoh2ZHxogjOcAIRhnFe)
 
-[2ca851efe27ffd6d2310b31d5bde41a2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nbi5bojxhoh2ZHxogjOcAIRhnFe)
+[`2ca851efe27ffd6d2310b31d5bde41a2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nbi5bojxhoh2ZHxogjOcAIRhnFe)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngCkmHbuu0noTVtjx9rh1cEgRdn7Y)
 
-[d0a46a95fb8658faab967cee92e329b1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CkmHbuu0noTVtjx9rh1cEgRdn7Y)
+[`d0a46a95fb8658faab967cee92e329b1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CkmHbuu0noTVtjx9rh1cEgRdn7Y)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngTNnrbaDHSodjxExU06XcfRLtnQb)
 
-[133b69628e7833c194def25c0b7584ae.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TNnrbaDHSodjxExU06XcfRLtnQb)
+[`133b69628e7833c194def25c0b7584ae.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TNnrbaDHSodjxExU06XcfRLtnQb)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngXi8UbTdhsoVF6Rxa5cacNGUynsh)
 
-[320c0a544f375ab926163c40974970dc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xi8UbTdhsoVF6Rxa5cacNGUynsh)
+[`320c0a544f375ab926163c40974970dc.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xi8UbTdhsoVF6Rxa5cacNGUynsh)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngP9CYbduo7o3Yx0xDtrjctBVsnlh)
 
-[083f076203e89168f34c7da4cab3c827.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P9CYbduo7o3Yx0xDtrjctBVsnlh)
+[`083f076203e89168f34c7da4cab3c827.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P9CYbduo7o3Yx0xDtrjctBVsnlh)
 
 ## 测试者：花花hana
 
@@ -1411,7 +1363,7 @@
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngANZcb4F9RoKE2Xx47f9cQwBLnwE)
 
-[9b5f613ab932dbe7e1348e736ea1bc3e.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ANZcb4F9RoKE2Xx47f9cQwBLnwE)
+[`9b5f613ab932dbe7e1348e736ea1bc3e.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ANZcb4F9RoKE2Xx47f9cQwBLnwE)
 
 （少女背靠一颗大树，四周都是广袤无垠的草原风光，少女手拿一本书和铅笔，旁边放着一顶遮阳帽-plus：少女是微笑的脸庞）
 
@@ -1419,15 +1371,15 @@
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngE9HibgsFJobUESxsa0EcnPZ5nE4)
 
-[7a848c7f5c58d477b4771e52f56a1847.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E9HibgsFJobUESxsa0EcnPZ5nE4)
+[`7a848c7f5c58d477b4771e52f56a1847.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E9HibgsFJobUESxsa0EcnPZ5nE4)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngL5dWbKAmgovU4yx7g6zcWZednhc)
 
-[1864aaaa149e875cf1ae302e5e9a9cc2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L5dWbKAmgovU4yx7g6zcWZednhc)
+[`1864aaaa149e875cf1ae302e5e9a9cc2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L5dWbKAmgovU4yx7g6zcWZednhc)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngN4xbbyt2ZoY8ytxM2qXcytbanoe)
 
-[1cf760ef8e76952eec6520282d05bbcf.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N4xbbyt2ZoY8ytxM2qXcytbanoe)
+[`1cf760ef8e76952eec6520282d05bbcf.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N4xbbyt2ZoY8ytxM2qXcytbanoe)
 
 （女生从生气到释然的表情变化-plus：女生从生气紧皱眉头，到开心微笑、舒展眉头的表情变化，ps：都有点奇怪lmao...）
 
@@ -1437,43 +1389,47 @@
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngKgOpbidJzoB1NixMqppcbcr9nRg)
 
-[RNFetchBlobTmp_fgnptsxikuuxk40l72n8q8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KgOpbidJzoB1NixMqppcbcr9nRg)
+[`RNFetchBlobTmp_fgnptsxikuuxk40l72n8q8.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KgOpbidJzoB1NixMqppcbcr9nRg)
 
 一只白色的猴子戴着黑色大眼镜，骑着单车送快递
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngT0tNbRsFqoX79fxMQvXca7nCnlb)
 
-[RNFetchBlobTmp_yvxm3l3jdybup09mzhblog.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T0tNbRsFqoX79fxMQvXca7nCnlb)
+[`RNFetchBlobTmp_yvxm3l3jdybup09mzhblog.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T0tNbRsFqoX79fxMQvXca7nCnlb)
 
 一只白色的猴子戴着黑色大眼镜，骑着摩托疾驰
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngNK3Rb37XEoNs5OxWl2kc69YNn4e)
 
-[RNFetchBlobTmp_kbn7zwe49z7muzgtmponv.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NK3Rb37XEoNs5OxWl2kc69YNn4e)
+[`RNFetchBlobTmp_kbn7zwe49z7muzgtmponv.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NK3Rb37XEoNs5OxWl2kc69YNn4e)
 
 一只白色的猴子戴着黑色大眼镜，骑着单车送快递
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngHgozb8arcowVqYxBhtecCAhvnJI)
 
-[RNFetchBlobTmp_gugorzvqqxf22xv1cri56u.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hgozb8arcowVqYxBhtecCAhvnJI)
+[`RNFetchBlobTmp_gugorzvqqxf22xv1cri56u.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hgozb8arcowVqYxBhtecCAhvnJI)
 
 一只白色的猴子戴着黑色大眼镜，开着一辆跑车疾驰
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngHojWbtJTooeG10xI1gpcrsWFnNh)
 
-[RNFetchBlobTmp_rknba8if5feknnjpz1q89.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HojWbtJTooeG10xI1gpcrsWFnNh)
+[`RNFetchBlobTmp_rknba8if5feknnjpz1q89.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HojWbtJTooeG10xI1gpcrsWFnNh)
 
 一只白色的猴子戴着黑色大眼镜，在咖啡厅喝冰咖啡，周围有很多动物也在喝咖啡
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngRhLhbXazdofkKyx39QYcDxi9nmV)
 
-[RNFetchBlobTmp_500numm93aycjtuabq49b.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RhLhbXazdofkKyx39QYcDxi9nmV)
+[`RNFetchBlobTmp_500numm93aycjtuabq49b.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RhLhbXazdofkKyx39QYcDxi9nmV)
 
 一只白色的猴子戴着黑色大眼镜，在便利店吃泡面
 
 ## 测试者：大熊猫
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngRvZ8bQNp6oE8NixOkAZcr9JTnFh)
+
+
+
+# 测试报告
 
 [RNFetchBlobTmp_beftlggbkyrofx7jrchlqi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RvZ8bQNp6oE8NixOkAZcr9JTnFh)
 
@@ -1523,7 +1479,7 @@
 
 ## 测试者：Austin 周安鑫
 
-1、场景识别：室内&室外
+### 1、场景识别：室内&室外
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngEfGyb3SYTo7L8OxyDHzcl5BbnhA)
 
@@ -1533,9 +1489,9 @@
 
 [file_v3_00bn_000ac352-eb95-4f9d-8d90-d3f2cb8ab4bg.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZQHebPZXeo6xnBxv0iKcEpgQn7f)
 
-客厅的沙发，液晶电视，漂亮的波斯猫，超现实主义。          蜿蜒的河流，茂密的森林，灿烂的花海，碧绿的草坪。
+客厅的沙发，液晶电视，漂亮的波斯猫，超现实主义。蜿蜒的河流，茂密的森林，灿烂的花海，碧绿的草坪。
 
-2、物体识别：静态&动态
+### 2、物体识别：静态&动态
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngABpCbrk0zoOvAExQu3icd8Okn2g)
 
@@ -1545,9 +1501,9 @@
 
 [file_v3_00bn_5aa5305c-2c57-4819-9bf7-80606b5d0f3g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WEVJbmPcko2Y1fx91UWc4BfxnQe)
 
-水晶球，展览在舞台上，超现实主义。                                      跳动的火焰，翱翔的飞鸟，闪烁的流星，飞溅的水珠。
+水晶球，展览在舞台上，超现实主义。跳动的火焰，翱翔的飞鸟，闪烁的流星，飞溅的水珠。
 
-3、人物识别：面部&姿态
+### 3、人物识别：面部&姿态
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngFFxgbnyYDotdvyxpa27cn1NBnyg)
 
@@ -1557,9 +1513,9 @@
 
 [file_v3_00bn_46c7d2e9-c76d-4710-8e66-228b49317c7g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JXhZb1y92otvxGxUfkOccv5anUf)
 
-一个人笑容灿烂，一个人惊恐愤怒。                                        一位芭蕾舞女孩在冰面上跳舞，动作华丽优美。
+一个人笑容灿烂，一个人惊恐愤怒。一位芭蕾舞女孩在冰面上跳舞，动作华丽优美。
 
-4、动作识别：基本&复杂
+### 4、动作识别：基本&复杂
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngG1ITbknfUogRclxSY1CcI56unGx)
 
@@ -1569,9 +1525,9 @@
 
 [file_v3_00bn_89b3f578-20c2-4268-a7b4-57db756ea8dg.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G8SXbFMiao5kP6x1TMSc7SF1nxf)
 
-短跑运动员在快速的奔跑。                                                      赛车手驾驶着跑车在激烈的漂移，场边的观众热情呐喊。
+短跑运动员在快速的奔跑。赛车手驾驶着跑车在激烈的漂移，场边的观众热情呐喊。
 
-5、事件检测：简单&复杂
+### 5、事件检测：简单&复杂
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngIj55bKdZSoMDJ6xgRwKcqakgn8N)
 
@@ -1581,9 +1537,9 @@
 
 [file_v3_00bn_48b0cac8-e17c-437b-82ac-19ed14f09b3g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SQ3ybvba4onm0WxGxaicYUQBnvb)
 
-一位帅哥在喝水。                                                                       外星文明和地球，在进行星际大战，战况激烈。
+一位帅哥在喝水。外星文明和地球，在进行星际大战，战况激烈。
 
-6、环境变化：光线&天气
+### 6、环境变化：光线&天气
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngUuOIbF7Icol735xDcGRc7kMHnTz)
 
@@ -1593,9 +1549,9 @@
 
 [file_v3_00bn_4d4a5b35-0b94-45d4-9c05-0714c63630eg.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KX74bWZOVoFZNhxKkUgcgLm2nTg)
 
-奇幻的极光在舞动变幻，城市写字楼的灯光忽明忽暗。         闪电交加，乌云密布，台风，大雨。
+奇幻的极光在舞动变幻，城市写字楼的灯光忽明忽暗。闪电交加，乌云密布，台风，大雨。
 
-7、多对象场景：单一&多对象
+### 7、多对象场景：单一&多对象
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngNO6Wbzr6noB9AQxqomicNqfNnFg)
 
@@ -1605,21 +1561,21 @@
 
 [file_v3_00bn_41c8265c-7266-421f-978a-25712391f14g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DggKbFJJ2oqNxux29FxcvNI3nSf)
 
-1个飞行员驾驶着战斗机翱翔太空。                                        海军指挥着航母战斗群展开了激烈战斗。
+1个飞行员驾驶着战斗机翱翔太空。海军指挥着航母战斗群展开了激烈战斗。
 
-8、特殊场景：遮挡&非标准
+### 8、特殊场景：遮挡&非标准
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngQjOPbBZetoiEnTxZsyHck76WnJm)
 
 [file_v3_00bn_4291ede5-1966-42c6-81b0-f48dcff7208g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QjOPbBZetoiEnTxZsyHck76WnJm)
 
-城市大雾遮挡了摩天大楼。                                                      一边是神秘的海底世界，一边是梦幻的糖果屋。
+城市大雾遮挡了摩天大楼。一边是神秘的海底世界，一边是梦幻的糖果屋。
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngKsgHb7b8ToH73HxEWJccMkgYnyg)
 
 [file_v3_00bn_b0efadea-92a0-4888-8b30-e14893a1bd5g.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KsgHb7b8ToH73HxEWJccMkgYnyg)
 
-9、细节检测：小物体&微表情
+### 9、细节检测：小物体&微表情
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngKfOSbTdtbo5D5Fxrw3McjDtynp0)
 
@@ -1629,7 +1585,7 @@
 
 [file_v3_00bn_c592e683-2f50-4577-b8ae-f7fa4ee823ag.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wht1buy7uocFEtxBogfcc2jgned)
 
-崭新的苹果电脑，屏幕上播放着电影。                                瞳孔收缩，脸颊泛红，嘴唇微微颤抖。
+崭新的苹果电脑，屏幕上播放着电影。瞳孔收缩，脸颊泛红，嘴唇微微颤抖。
 
 ## 测试者：mcalide 孙风波
 
@@ -1648,6 +1604,8 @@
 [1ab3c3d827a7e5c7d05f6507fb5885d1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SCZKbfDyVoopbcxbqsXc4l2qnld)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngRAxVbjpeWo4MiTxR31Rc22ZknUd)
+
+
 
 [ddf9faa8e5294908a67668532a60ae09.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RAxVbjpeWo4MiTxR31Rc22ZknUd)
 
@@ -1842,26 +1800,28 @@
 
 [0 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zcx9bhAHJonYt5xVaXUcrUTbnVc)
 
+
+
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngSwTmb1qYJoOaQtxMIopcKhGXnjC)
 
-[0 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SwTmb1qYJoOaQtxMIopcKhGXnjC)
+[`0 (2).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SwTmb1qYJoOaQtxMIopcKhGXnjC)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngUzvTbdKy3oGKvXxcsLzcRPo3nSb)
 
-[0 (01).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UzvTbdKy3oGKvXxcsLzcRPo3nSb)
+[`0 (01).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UzvTbdKy3oGKvXxcsLzcRPo3nSb)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngFXWKbCV1KoOmO2xLtzScaaUfnWf)
 
-[0 (10).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FXWKbCV1KoOmO2xLtzScaaUfnWf)
+[`0 (10).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FXWKbCV1KoOmO2xLtzScaaUfnWf)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngWRqGbfHyCogKQZxzds7cNPVfnGb)
 
-[0 (1)_副本.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WRqGbfHyCogKQZxzds7cNPVfnGb)
+[`0 (1)_副本.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WRqGbfHyCogKQZxzds7cNPVfnGb)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngDTQYbcHUoopI7qxMMapckT6Gnjb)
 
-[0_副本.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DTQYbcHUoopI7qxMMapckT6Gnjb)
+[`0_副本.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DTQYbcHUoopI7qxMMapckT6Gnjb)
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngTXlcb10bXoTmmWxLhFGcm283nBc)
 
-[0 (4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXlcb10bXoTmmWxLhFGcm283nBc)
+[`0 (4).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TXlcb10bXoTmmWxLhFGcm283nBc)

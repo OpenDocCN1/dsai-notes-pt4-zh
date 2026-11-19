@@ -1,8 +1,7 @@
-# OpenManus修仙指南
-
-> 来源：[https://jlqyxzzvbk.feishu.cn/docx/MfHNdPfWZokRMuxOTEHcc7QinIc](https://jlqyxzzvbk.feishu.cn/docx/MfHNdPfWZokRMuxOTEHcc7QinIc)
 
 # OpenManus使用教程：告别天价邀请码，三分钟拥有你的AI全能助手
+
+> 来源：[https://jlqyxzzvbk.feishu.cn/docx/MfHNdPfWZokRMuxOTEHcc7QinIc](https://jlqyxzzvbk.feishu.cn/docx/MfHNdPfWZokRMuxOTEHcc7QinIc)
 
 ## 一、前情提要：当Manus邀请码比春运车票还难抢时...
 
@@ -13,10 +12,8 @@
 ### 1. 装备检查（30秒）
 
 +   一台能开机的电脑（Windows/Mac/Linux皆可）
-
 +   至少8GB内存（毕竟要让AI替你打工）
-
-+   装好conda（Python包管理神器，不会安装的问AI）
++   装好`conda`（Python包管理神器，不会安装的问AI）
 
 ### 2. 轻松三步走（实测5分钟）
 
@@ -39,48 +36,50 @@ playwright install
 
 ## 三、配置秘籍：让AI听懂你的"黑话"
 
-打开config目录，复制一份config.example.toml重命名为config.toml，并按照如下方案进行配置（3选1）
+打开`config`目录，复制一份`config.example.toml`重命名为`config.toml`，并按照如下方案进行配置（3选1）
 
-### 1. 土豪版配置（使用GPT-4o）
+### 1. 土豪版配置（使用`GPT-4o`）
 
 ```
 [llm]
-model = &quot;gpt-4o&quot; 
-base_url = &quot;https://api.openai.com/v1&quot;
-api_key = &quot;sk-你的密钥&quot; # 此处建议用老板的信用卡
+model = "gpt-4o" 
+base_url = "https://api.openai.com/v1"
+api_key = "sk-你的密钥" # 此处建议用老板的信用卡
 ```
 
 ### 2. 性价比之选（硅基流动平台）
 
-我目前正在使用这个平台，还没有账号的朋友可以先注册：https://cloud.siliconflow.cn/i/0hq76Lbt
+我目前正在使用这个平台，还没有账号的朋友可以先注册：`https://cloud.siliconflow.cn/i/0hq76Lbt`
 
-**模型广场这**里我们筛选一下，选择标签有tools的模型，因为我们需要用到Function Calling。
+模型广场这里我们筛选一下，选择标签有`tools`的模型，因为我们需要用到`Function Calling`。
 
 ![](img/cd04da4fac372d62bdbdaf742638357e.png)
 
 ```
 [llm]
-model = &quot;Qwen/QwQ-32B&quot;
-base_url = &quot;https://api.siliconflow.cn/v1&quot; 
-api_key = &quot;sk-白嫖来的密钥&quot; # 每天100万token管够
+model = "Qwen/QwQ-32B"
+base_url = "https://api.siliconflow.cn/v1" 
+api_key = "sk-白嫖来的密钥" # 每天100万token管够
 ```
 
 ### 3. 本地玩家专属（Ollama模式）
 
 ```
 [llm]
-model = &quot;qwen2.5:14b&quot; 
-base_url = &quot;http://localhost:11434/v1&quot;
-api_key = &quot;ollama&quot; # 此处需要先运行ollama run qwen2.5:14b
+model = "qwen2.5:14b" 
+base_url = "http://localhost:11434/v1"
+api_key = "ollama" # 此处需要先运行`ollama run qwen2.5:14b`
 ```
 
 ### 4. 搜索插件本地化
 
-由于官方默认用的是GoogleSearch，国内无法使用，所以我们需要小改一下，把GoogleSearch改成BaiduSearch或者BingSearch。
+由于官方默认用的是`GoogleSearch`，国内无法使用，所以我们需要小改一下，把`GoogleSearch`改成`BaiduSearch`或者`BingSearch`。
 
-在OpenMa**nus/app/tool文件夹**下**新建baidu_search**.py和bing_search.py
+在`OpenManus/app/tool`文件夹下新建`baidu_search.py`和`bing_search.py`
 
-**baidu_search.py**，安装依赖pip install baidusearch
+#### `baidu_search.py`
+
+安装依赖`pip install baidusearch`
 
 ```
 import asyncio
@@ -91,29 +90,29 @@ from app.tool.base import BaseTool
 
 
 class BaiduSearch(BaseTool):
-    name: str = &quot;baidu_search&quot;
-    description: str = &quot;&quot;&quot;Perform a Baidu search and return a list of relevant links.
+    name: str = "baidu_search"
+    description: str = """Perform a Baidu search and return a list of relevant links.
 Use this tool when you need to find information on the web, get up-to-date data, or research specific topics.
 The tool returns a list of URLs that match the search query.
-&quot;&quot;&quot;
+"""
     parameters: dict = {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;query&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;description&quot;: &quot;(required) The search query to submit to Baidu.&quot;,
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "(required) The search query to submit to Baidu.",
             },
-            &quot;num_results&quot;: {
-                &quot;type&quot;: &quot;integer&quot;,
-                &quot;description&quot;: &quot;(optional) The number of search results to return. Default is 10.&quot;,
-                &quot;default&quot;: 10,
+            "num_results": {
+                "type": "integer",
+                "description": "(optional) The number of search results to return. Default is 10.",
+                "default": 10,
             },
         },
-        &quot;required&quot;: [&quot;query&quot;],
+        "required": ["query"],
     }
 
-    async def execute(self, query: str, num_results: int = 10) -&gt; List[str]:
-        &quot;&quot;&quot;
+    async def execute(self, query: str, num_results: int = 10) -> List[str]:
+        """
         Execute a Baidu search and return a list of URLs.
 
         Args:
@@ -122,17 +121,19 @@ The tool returns a list of URLs that match the search query.
 
         Returns:
             List[str]: A list of URLs matching the search query.
-        &quot;&quot;&quot;
+        """
         # Run the search in a thread pool to prevent blocking
         loop = asyncio.get_event_loop()
         links = await loop.run_in_executor(
-            None, lambda: [result[&#x27;url&#x27;] for result in search(query, num_results=num_results)]
+            None, lambda: [result['url'] for result in search(query, num_results=num_results)]
         )
 
         return links
 ```
 
-**bing_search.py**，安装依赖pip install aiohttp beautifulsoup4
+#### `bing_search.py`
+
+安装依赖`pip install aiohttp beautifulsoup4`
 
 ```
 import aiohttp
@@ -143,29 +144,29 @@ from app.tool.base import BaseTool
 
 
 class BingSearch(BaseTool):
-    name: str = &quot;bing_search&quot;
-    description: str = &quot;&quot;&quot;使用必应搜索返回相关链接列表。
+    name: str = "bing_search"
+    description: str = """使用必应搜索返回相关链接列表。
     当需要查找网络信息、获取最新数据或研究特定主题时使用此工具。
     该工具返回与搜索查询匹配的URL列表。
-    &quot;&quot;&quot;
+    """
     parameters: dict = {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;query&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;description&quot;: &quot;(必填) 提交给必应的搜索查询。&quot;,
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "(必填) 提交给必应的搜索查询。",
             },
-            &quot;num_results&quot;: {
-                &quot;type&quot;: &quot;integer&quot;,
-                &quot;description&quot;: &quot;(可选) 要返回的搜索结果数量。默认为10。&quot;,
-                &quot;default&quot;: 10,
+            "num_results": {
+                "type": "integer",
+                "description": "(可选) 要返回的搜索结果数量。默认为10。",
+                "default": 10,
             },
         },
-        &quot;required&quot;: [&quot;query&quot;],
+        "required": ["query"],
     }
 
-    async def execute(self, query: str, num_results: int = 10) -&gt; List[str]:
-        &quot;&quot;&quot;
+    async def execute(self, query: str, num_results: int = 10) -> List[str]:
+        """
         执行必应搜索并返回URL列表。
 
         参数:
@@ -174,11 +175,11 @@ class BingSearch(BaseTool):
 
         返回:
             List[str]: 与搜索查询匹配的URL列表。
-        &quot;&quot;&quot;
+        """
         headers = {
-            &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&quot;
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
-        search_url = f&quot;https://www.bing.com/search?q={query}&quot;
+        search_url = f"https://www.bing.com/search?q={query}"
 
         async with aiohttp.ClientSession() as session:
             try:
@@ -186,34 +187,34 @@ class BingSearch(BaseTool):
                     response.raise_for_status()
                     html = await response.text()
             except Exception as e:
-                raise RuntimeError(f&quot;必应搜索请求失败: {str(e)}&quot;)
+                raise RuntimeError(f"必应搜索请求失败: {str(e)}")
 
-        soup = BeautifulSoup(html, &#x27;html.parser&#x27;)
+        soup = BeautifulSoup(html, 'html.parser')
         links = []
 
-        # 必应搜索结果链接通常在类名为&quot;b_algo&quot;的div内，具体选择器可能需要根据实际页面结构调整
-        for result in soup.select(&#x27;.b_algo&#x27;):
-            a_tag = result.select_one(&#x27;a&#x27;)
-            if a_tag and &#x27;href&#x27; in a_tag.attrs:
-                link = a_tag[&#x27;href&#x27;]
+        # 必应搜索结果链接通常在类名为"b_algo"的div内，具体选择器可能需要根据实际页面结构调整
+        for result in soup.select('.b_algo'):
+            a_tag = result.select_one('a')
+            if a_tag and 'href' in a_tag.attrs:
+                link = a_tag['href']
                 links.append(link)
-                if len(links) &gt;= num_results:
+                if len(links) >= num_results:
                     break
 
         return links[:num_results]
 ```
 
-修改OpenManus/app/agent/manus.py文件，记得安装依赖，如下图所示（以baidu_search为例，bing_search同理）：
+修改`OpenManus/app/agent/manus.py`文件，记得安装依赖，如下图所示（以`baidu_search`为例，`bing_search`同理）：
 
-文件开头导包，从baidu_search导入BaiduSearch
+文件开头导包，从`baidu_search`导入`BaiduSearch`
 
 ![](img/d73ce97ab5940637368e92347c847373.png)
 
-文件末尾修改搜索方法为BaiduSearch
+文件末尾修改搜索方法为`BaiduSearch`
 
 ![](img/443d03fe0749e8cbcf659a7b1d12733a.png)
 
-配置完成之后就可以在**OpenManus**目录执行如下命令（2选1）：
+配置完成之后就可以在`OpenManus`目录执行如下命令（2选1）：
 
 ```
 # 1、终端版
@@ -223,7 +224,7 @@ python main.py
 ![](img/70a1b4d39a0815108bd83115a4d3a875.png)
 
 ```
-# 2、web版本，可能会出现No module named &#x27;fastapi&#x27;，执行pip install fastapi 即可
+# 2、web版本，可能会出现No module named 'fastapi'，执行pip install fastapi即可
 python app.py
 ```
 
@@ -239,13 +240,11 @@ python app.py
 输入指令：搜索最近3天AI圈爆款话题，写10条小红书风格标题，带emoji！
 ```
 
-OpenManus会：
+`OpenManus`会：
 
-1.  调用BaiduSearch抓取热点
-
-1.  用Qwen模型生成俏皮文案
-
-1.  自动保存到hot_topics.md
+1.  调用`BaiduSearch`抓取热点
+2.  用`Qwen`模型生成俏皮文案
+3.  自动保存到`hot_topics.md`
 
 ![](img/96e52604f306166a891b7337200adfc6.png)
 
@@ -258,10 +257,8 @@ OpenManus会：
 AI将：
 
 1.  编写定时爬虫脚本
-
-1.  设置价格警戒线
-
-1.  通过企业🛰️API发送夺命连环call
+2.  设置价格警戒线
+3.  通过企业🛰️API发送夺命连环call
 
 ### 案例3：学术狗救命稻草
 
@@ -272,33 +269,29 @@ AI将：
 见证奇迹：
 
 1.  PDF解析器提取关键信息
-
-1.  GPT-4o生成知识图谱
-
-1.  调用matplotlib输出高清大图
+2.  `GPT-4o`生成知识图谱
+3.  调用`matplotlib`输出高清大图
 
 ## 五、高级玩法：解锁隐藏关卡
 
 ### 1. 多开模式
 
 ```
-python run_flow.py # 开启任务流水线，体验AI厂长管理多个&quot;数字工人&quot;
+python run_flow.py # 开启任务流水线，体验AI厂长管理多个"数字工人";
 ```
 
 ### 2. 后台常驻
 
 ```
-nohup python main.py &gt; output.log 2&gt;&amp;1 &amp; # 让AI化身007特工永不掉线
+nohup python main.py > output.log 2>&1 & # 让AI化身007特工永不掉线
 ```
 
 ### 3. 自定义工具开发
 
-参考app/tool/base.py（代码看不懂没关系，看我上篇讲的Cursor）创建：
+参考`app/tool/base.py`（代码看不懂没关系，看我上篇讲的Cursor）创建：
 
 +   🧣自动点赞器
-
 +   游戏外挂（仅供学习！）
-
 +   智能怼人回复生成器
 
 ## 六、常见翻车现场急救指南
@@ -306,23 +299,18 @@ nohup python main.py &gt; output.log 2&gt;&amp;1 &amp; # 让AI化身007特工永
 ### 1. 卡在"正在思考..."
 
 +   检查API密钥是否欠费
-
-+   把temperature调到0.7增加随机性
-
++   把`temperature`调到0.7增加随机性
 +   对着屏幕说"你再不干活我就去用Manus了！"
 
 ### 2. 生成结果太离谱
 
-+   在prompt里加上"用小学生能听懂的话解释"
-
-+   限定输出格式（如markdown表格）
-
++   在`prompt`里加上"用小学生能听懂的话解释"
++   限定输出格式（如`markdown`表格）
 +   威胁AI："再乱写就给你断电！"
 
 ### 3. 常见问题解决思路
 
-> Browser action 'navigate' failed: BrowserType.launch: Target page, context or browser has been closed。
-
+> Browser action `navigate` failed: `BrowserType.launch`: Target page, context or browser has been closed。
 > 考虑内存不足的问题
 
 ## 七、未来展望：你的AI正在进化
@@ -330,13 +318,13 @@ nohup python main.py &gt; output.log 2&gt;&amp;1 &amp; # 让AI化身007特工永
 OpenManus团队正在憋大招：
 
 +   强化学习微调框架（让AI学会从错误中成长）
-
 +   任务执行录屏功能（围观AI的翻车现场）
-
 +   跨设备协同作战（手机+电脑+智能音箱三端联动）
 
 ## 结语：与其仰望星空，不如自己造火箭
 
-当Manus还在玩"邀请码饥饿营销"时，OpenManus已经让每个普通人都能拥有自己的AI军团。毕竟，真正的技术民主化不是让少数人握着天价入场券，而是让每个有想法的个体都能站在开源巨人的肩膀上。
+当`Manus`还在玩"邀请码饥饿营销"时，`OpenManus`已经让每个普通人都能拥有自己的AI军团。毕竟，真正的技术民主化不是让少数人握着天价入场券，而是让每个有想法的个体都能站在开源巨人的肩膀上。
 
-**关注我，了解更多AI黑科技**
+
+
+## 关注我，了解更多AI黑科技

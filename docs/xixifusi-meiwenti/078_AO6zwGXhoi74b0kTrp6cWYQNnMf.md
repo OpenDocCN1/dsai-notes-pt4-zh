@@ -1,10 +1,11 @@
+
 # Sam Altman 十三条经验
 
-> 来源：[https://docs.feishu.cn/docx/GbredIcC0obOm8xrYrPcp80wntb](https://docs.feishu.cn/docx/GbredIcC0obOm8xrYrPcp80wntb)
+> 来源：[`https://docs.feishu.cn/docx/GbredIcC0obOm8xrYrPcp80wntb`](https://docs.feishu.cn/docx/GbredIcC0obOm8xrYrPcp80wntb)
 
-### ChatGPT之父十三条经验
+## ChatGPT之父十三条经验
 
-1.  Compound yourself 选择“复利增长”
+### 1. Compound yourself 选择“复利增长”
 
 Compounding is magic. Look for it everywhere. Exponential curves are the key to wealth generation.
 
@@ -12,11 +13,11 @@ Compounding is magic. Look for it everywhere. Exponential curves are the key to 
 
 A medium-sized business that grows 50% in value every year becomes huge in a very short amount of time. Few businesses in the world have true network effects and extreme scalability. But with technology, more and more will. It’s worth a lot of effort to find them and create them.
 
-如果一家中型企业每年按照50%的速度增长，那么它的规模可以在短**时间内极**速扩张。世界上少有企业具有真正的网络效应和高度的可扩展性，但是随着技术进步，这种情况会逐渐改变，这值得我们不断为之努力。
+如果一家中型企业每年按照50%的速度增长，那么它的规模可以在短时间内极速扩张。世界上少有企业具有真正的网络效应和高度的可扩展性，但是随着技术进步，这种情况会逐渐改变，这值得我们不断为之努力。
 
 You also want to be an exponential curve yourself—you should aim for your life to follow an ever-increasing up-and-to-the-right trajectory. It’s important to move towards a career that has a compounding effect—most careers progress fairly linearly.
 
-对**个体而言**，你也想走出属于自己的那条指数曲线，那你就应该朝着向上向右的目标轨迹前进。在进行职业规划时，选择具有复合效应的职业很重要，因为大多数职业的发展轨迹都是线性增长。
+对个体而言，你也想走出属于自己的那条指数曲线，那你就应该朝着向上向右的目标轨迹前进。在进行职业规划时，选择具有复合效应的职业很重要，因为大多数职业的发展轨迹都是线性增长。
 
 You don't want to be in a career where people who have been doing it for two years can be as effective as people who have been doing it for twenty—your rate of learning should always be high. As your career progresses, each unit of work you do should generate more and more results. There are many ways to get this leverage, such as capital, technology, brand, network effects, and managing people.
 
@@ -24,21 +25,21 @@ You don't want to be in a career where people who have been doing it for two yea
 
 It’s useful to focus on adding another zero to whatever you define as your success metric—money, status, impact on the world, or whatever. I am willing to take as much time as needed between projects to find my next thing. But I always want it to be a project that, if successful, will make the rest of my career look like a footnote.
 
-专注于**将你所定义的成功指标增加十倍**是有用的，这些指标可以是赚钱、社会地位、世界级影响力或者其他东西。我乐意接受挑战，愿意在各种项目上花时间以解锁下一个项目。但是我希望在每一个项目上都能取得最大成就，创造职业生涯新高度。
+专注于将你所定义的成功指标增加十倍是有用的，这些指标可以是赚钱、社会地位、世界级影响力或者其他东西。我乐意接受挑战，愿意在各种项目上花时间以解锁下一个项目。但是我希望在每一个项目上都能取得最大成就，创造职业生涯新高度。
 
 Most people get bogged down in linear opportunities. Be willing to let small opportunities go to focus on potential step changes.
 
-**但是大多数人都被困于线性发展**的泥潭，往往捡了芝麻丢了西瓜，我们要学会抓大放小，寻求跳跃式提升。
+但是大多数人都被困于线性发展的泥潭，往往捡了芝麻丢了西瓜，我们要学会抓大放小，寻求跳跃式提升。
 
 I think the biggest competitive advantage in business—either for a company or for an individual’s career—is long-term thinking with a broad view of how different systems in the world are going to come together. One of the notable aspects of compound growth is that the furthest out years are the most important. In a world where almost no one takes a truly long-term view, the market richly rewards those who do.
 
-在**我看来，无论是企业**还是个人，最大的竞争优势就是要把目光放长远。我们要打开眼界，看出世界上不同体系之间交融互动的方式。复合增长最重要的就是眼光要尽可能放长远，这样的人才能抢占市场先机，获得最大回报。
+在我看来，无论是企业还是个人，最大的竞争优势就是要把目光放长远。我们要打开眼界，看出世界上不同体系之间交融互动的方式。复合增长最重要的就是眼光要尽可能放长远，这样的人才能抢占市场先机，获得最大回报。
 
 Trust the exponential, be patient, and be pleasantly surprised.
 
-要相信**指数曲线**，耐心坚持下去，最后一定会有惊喜。
+要相信指数曲线，耐心坚持下去，最后一定会有惊喜。
 
-1.  Have almost too much self-belief 要有绝对自信
+### 1. Have almost too much self-belief 要有绝对自信
 
 Self-belief is immensely powerful. The most successful people I know believe in themselves almost to the point of delusion.
 
@@ -66,17 +67,17 @@ Most highly successful people have been really right about the future at least o
 
 Self-belief must be balanced with self-awareness. I used to hate criticism of any sort and actively avoided it. Now I try to always listen to it with the assumption that it’s true, and then decide if I want to act on it or not. Truth-seeking is hard and often painful, but it is what separates self-belief from self-delusion.
 
-我们在自信的同时也要**保持清醒的自我认知**，才能避免盲目自大。我曾经非常讨厌受到批评和质疑，并且总是设法规避这些批评。但现在我开始尝试听取这些意见，我会先设想这些批评是正确的，然后在这个基础上调整我的计划。做决定的过程充满了艰辛和痛苦，但也只有经历了这个过程才能将自信和自欺欺人区分开来。
+我们在自信的同时也要保持清醒的自我认知，才能避免盲目自大。我曾经非常讨厌受到批评和质疑，并且总是设法规避这些批评。但现在我开始尝试听取这些意见，我会先设想这些批评是正确的，然后在这个基础上调整我的计划。做决定的过程充满了艰辛和痛苦，但也只有经历了这个过程才能将自信和自欺欺人区分开来。
 
 This balance also helps you avoid coming across as entitled and out of touch.
 
-**保持自信与自我认知之间的平衡**可以让人免于傲气、避免与他人脱节。
+保持自信与自我认知之间的平衡可以让人免于傲气、避免与他人脱节。
 
-1.  Learn to think independently 学会独立思考
+### 1. Learn to think independently 学会独立思考
 
 Entrepreneurship is very difficult to teach because original thinking is very difficult to teach. School is not set up to teach this—in fact, it generally rewards the opposite. So you have to cultivate it on your own.
 
-创业很难，因为**培养原创性思维**很难。这种思维在学校里面是学不到的，实际上学校培养的是一种相反的思维方式，所以只能靠我们自己来培养原创性思维。
+创业很难，因为培养原创性思维很难。这种思维在学校里面是学不到的，实际上学校培养的是一种相反的思维方式，所以只能靠我们自己来培养原创性思维。
 
 Thinking from first principles and trying to generate new ideas is fun, and finding people to exchange them with is a great way to get better at this. The next step is to find easy, fast ways to test these ideas in the real world.
 
@@ -90,11 +91,11 @@ One of the most powerful lessons to learn is that you can figure out what to do 
 
 在这个过程中，最宝贵的经验教训之一就是，我们要学会在绝境中找到一线生机。我们经历的越多就越会对此深信不疑。要知道，勇气来自于多次失败后的坚持不懈。
 
-1.  Get good at “sales” 做一个好“销售”
+### 1. Get good at “sales” 做一个好“销售”
 
 Self-belief alone is not sufficient—you also have to be able to convince other people of what you believe.
 
-光有自信是不够的，我们还要具备**说服他人**的能力。
+光有自信是不够的，我们还要具备说服他人的能力。
 
 All great careers, to some degree, become sales jobs. You have to evangelize your plans to customers, prospective employees, the press, investors, etc. This requires an inspiring vision, strong communication skills, some degree of charisma, and evidence of execution ability.
 
@@ -102,11 +103,11 @@ All great careers, to some degree, become sales jobs. You have to evangelize you
 
 Getting good at communication—particularly written communication—is an investment worth making. My best advice for communicating clearly is to first make sure your thinking is clear and then use plain, concise language.
 
-**具备良好的沟通能力**十分重要，尤其是书面沟通。在这方面我的建议是：首先要保证思路清晰，然后就是尽量使用简洁明了的语言。
+具备良好的沟通能力十分重要，尤其是书面沟通。在这方面我的建议是：首先要保证思路清晰，然后就是尽量使用简洁明了的语言。
 
 The best way to be good at sales is to genuinely believe in what you’re selling. Selling what you truly believe in feels great, and trying to sell snake oil feels awful.
 
-而要做好“销售”最好的方式就是**真诚**，要对自己推销的产品**抱有自信**。
+而要做好“销售”最好的方式就是真诚，要对自己推销的产品抱有自信。
 
 Getting good at sales is like improving at any other skill—anyone can get better at it with deliberate practice. But for some reason, perhaps because it feels distasteful, many people treat it as something unlearnable.
 
@@ -114,9 +115,11 @@ Getting good at sales is like improving at any other skill—anyone can get bett
 
 My other big sales tip is to show up in person whenever it’s important. When I was first starting out, I was always willing to get on a plane. It was frequently unnecessary, but three times it led to career-making turning points for me that otherwise would have gone the other way.
 
-做销售的另一个秘诀是：**重要的事情要亲力亲为**。在刚开始创业时，我非常乐意出差办事，这在很多人看来是不必要的，但是事事亲力亲为却给我带来了三次职业生涯的转折点，如果当时没有选择这样做，我可能会走上另一条道路。
+做销售的另一个秘诀是：重要的事情要亲力亲为。在刚开始创业时，我非常乐意出差办事，这在很多人看来是不必要的，但是事事亲力亲为却给我带来了三次职业生涯的转折点，如果当时没有选择这样做，我可能会走上另一条道路。
 
-1.  Make it easy to take risks 要有冒险精神
+### 1. Make it easy to take risks 要有冒险精神
+
+
 
 Most people overestimate risk and underestimate reward. Taking risks is important because it’s impossible to be right all the time—you have to try many things and adapt quickly as you learn more.
 
@@ -134,7 +137,7 @@ But when you aren’t on the treadmill, you can follow your hunches and spend ti
 
 但当你摆脱了这些枯燥无味的工作，你可以跟随直觉，将时间花在那些有趣的事情上。而想做到这一点，尽可能长时间地过着朴素灵动的生活是一个很好的方法。当然，任何选择的背后都有相应的代价。
 
-1.  Focus 保持专注
+## Focus 保持专注
 
 Focus is a force multiplier on work.
 
@@ -148,7 +151,7 @@ Once you have figured out what to do, be unstoppable about getting your small ha
 
 **一旦你想明白了该做什么，就不要犹豫，快速行动起来去完成**优先事项。毕竟成功人士就没有执行力弱的。
 
-1.  Work hard 努力工作
+## Work hard 努力工作
 
 You can get to about the 90th percentile in your field by working either smart or hard, which is still a great accomplishment. But getting to the 99th percentile requires both—you will be competing with other very talented people who will have great ideas and be willing to work a lot.
 
@@ -178,11 +181,11 @@ One more thought about working hard: do it at the beginning of your career. Hard
 
 另外，我认为在刚入职场时**就应该要努力工作。**努力工作就像**利滚利**一样，越早开始，获利时间就越长。一般来说人们身上背负的责任越少，就越容易施展身手。
 
-1.  Be bold 大胆一点
+## Be bold 大胆一点
 
 I believe that it’s easier to do a hard startup than an easy startup. People want to be part of something exciting and feel that their work matters.
 
-**在我看来，****与轻松创业相比，人们多半会**选择更具挑战性的事业。因为后者往往更激动人心，能带来更大的成就感和满足感。
+**在我看来，** **与轻松创业相比，人们多半会**选择更具挑战性的事业。因为后者往往更激动人心，能带来更大的成就感和满足感。
 
 If you are making progress on an important problem, you will have a constant tailwind of people wanting to help you. Let yourself grow more ambitious, and don’t be afraid to work on what you really want to work on.
 
@@ -196,7 +199,7 @@ Follow your curiosity. Things that seem exciting to you will often seem exciting
 
 **追随你的好奇心**。那些让你感到兴奋的事情，通常也适用于别人。
 
-1.  Be willful 足够坚定
+## Be willful 足够坚定
 
 A big secret is that you can bend the world to your will a surprising percentage of the time—most people don’t even try, and just accept that things are the way that they are.
 
@@ -222,7 +225,9 @@ To be willful, you have to be optimistic—hopefully this is a personality trait
 
 **只有保持乐观才能足够坚定**，而乐观这种性格特征是可以通过练习逐步提升的，要知道悲观者是很难成功的。
 
-1.  Be hard to compete with 保持强劲的市场竞争力
+## Be hard to compete with 保持强劲的市场竞争力
+
+
 
 Most people understand that companies are more valuable if they are difficult to compete with. This is important, and obviously true.
 
@@ -234,47 +239,47 @@ But this holds true for you as an individual as well. If what you do can be done
 
 The best way to become difficult to compete with is to build up leverage. For example, you can do it with personal relationships, by building a strong personal brand, or by getting good at the intersection of multiple different fields. There are many other strategies, but you have to figure out some way to do it.
 
-增强竞争力的最佳方式就是**建立话语权**。例如，你可以利用好个人关系，打**造强大的个人品牌，或**是在不同领域的交叉点建立起自己的个人优势。当然增强竞争力的方式还有很多，但不论采取什么方式，关键是你必须要做到这一点。
+增强竞争力的最佳方式就是建立话语权。例如，你可以利用好个人关系，打造强大的个人品牌，或是在不同领域的交叉点建立起自己的个人优势。当然增强竞争力的方式还有很多，但不论采取什么方式，关键是你必须要做到这一点。
 
 Most people do whatever most people they hang out with do. This mimetic behavior is usually a mistake—if you’re doing the same thing everyone else is doing, you will not be hard to compete with.
 
 大多数人会模仿身边人的做法，但这种方式并不可取，如果一味模仿他人，那你还有什么竞争优势可言呢？
 
-1.  Build a network 建立人际网络
+## 1. Build a network 建立人际网络
 
 Great work requires teams. Developing a network of talented people to work with—sometimes closely, sometimes loosely—is an essential part of a great career. The size of the network of really talented people you know often becomes the limiter for what you can accomplish.
 
-出色的工作需要团队合作。打造既可密切合作又可轻**松相处的优质人际网络是事业成**功的必要因素。拥有优秀人才的人际网络的规模会决定你能成功的上限。
+出色的工作需要团队合作。打造既可密切合作又可轻松相处的优质人际网络是事业成功的必要因素。拥有优秀人才的人际网络的规模会决定你能成功的上限。
 
 An effective way to build a network is to help people as much as you can. Doing this, over a long period of time, is what lead to most of my best career opportunities and three of my four best investments. I’m continually surprised how often something good happens to me because of something I did to help a founder ten years ago.
 
-建立人际网络的有效方法之一是**尽可能多帮助他人**。长期以来，这种行为方式给我带来了最佳职场机遇以及四项最佳投资中的三项。我总是惊讶于发生在自己身上的意外之喜，仅仅因为我十年前曾帮助过一位企业创始人。
+建立人际网络的有效方法之一是尽可能多帮助他人。长期以来，这种行为方式给我带来了最佳职场机遇以及四项最佳投资中的三项。我总是惊讶于发生在自己身上的意外之喜，仅仅因为我十年前曾帮助过一位企业创始人。
 
 One of the best ways to build a network is to develop a reputation for really taking care of the people who work with you. Be overly generous with sharing the upside; it will come back to you 10x. Also, learn how to evaluate what people are great at, and put them in those roles. (This is the most important thing I have learned about management, and I haven’t read much about it.) You want to have a reputation for pushing people hard enough that they accomplish more than they thought they could, but not so hard they burn out.
 
-建立人际网络的另一个途径是**拥有好的名声，不亏待每一个一起共事的人。要大方慷慨地与他人分享**资源，这会给你带来10倍、100倍的回报。此外，要知人善用，让每个人都能充分施展自己的才华（这是我从管理学中学到的最重要的一课，虽然我对管理学的研究还并不多）。我们既要尽力挖掘他人的潜力但是又不能逼得太紧，这容易让人感到精疲力尽。
+建立人际网络的另一个途径是拥有好的名声，不亏待每一个一起共事的人。要大方慷慨地与他人分享资源，这会给你带来10倍、100倍的回报。此外，要知人善用，让每个人都能充分施展自己的才华（这是我从管理学中学到的最重要的一课，虽然我对管理学的研究还并不多）。我们既要尽力挖掘他人的潜力但是又不能逼得太紧，这容易让人感到精疲力尽。
 
-Everyone is better at some things than others. Define yourself by your strengths, not your weaknesses. Acknowledge your weaknesses and figure out how to work around them, but don’t let them stop you from doing what you want to do. “I can’t do X because I’m not good at Y” is something I hear from entrepreneurs surprisingly often, and almost always reflects a lack of creativity. The best way to make up for your weaknesses is to hire complementary team members instead of just hiring people who are good at the same things you are.
+Everyone is better at some things than others. Define yourself by your strengths, not your weaknesses. Acknowledge your weaknesses and figure out how to work around them, but don’t let them stop you from doing what you want to do. “I can’t do `X` because I’m not good at `Y`” is something I hear from entrepreneurs surprisingly often, and almost always reflects a lack of creativity. The best way to make up for your weaknesses is to hire complementary team members instead of just hiring people who are good at the same things you are.
 
-每个**人都有各自擅长的领域。因此，我们要多**看看自己的优点，不要总盯着缺点，要用优点来定义自身。面对缺点，我们要承认它，想办法弥补它，不要让缺点成为我们前进路上的阻碍。我常能在一些创业者口中听到这样的说法“我不能做A，因为我不擅长B”，这种思维方式让我十分吃惊，这反映出他们缺乏创造力。弥补弱点的最佳方式是聘请互补的团队成员，而不是雇佣那些跟你擅长相同事情的人。
+每个人都有各自擅长的领域。因此，我们要多看看自己的优点，不要总盯着缺点，要用优点来定义自身。面对缺点，我们要承认它，想办法弥补它，不要让缺点成为我们前进路上的阻碍。我常能在一些创业者口中听到这样的话说法“我不能做`A`，因为我不擅长`B`”，这种思维方式让我十分吃惊，这反映出他们缺乏创造力。弥补弱点的最佳方式是聘请互补的团队成员，而不是雇佣那些跟你擅长相同事情的人。
 
 A particularly valuable part of building a network is to get good at discovering undiscovered talent. Quickly spotting intelligence, drive, and creativity gets much easier with practice. The easiest way to learn is just to meet a lot of people, and keep track of who goes on to impress you and who doesn’t. Remember that you are mostly looking for rate of improvement, and don’t overvalue experience or current accomplishment.
 
-**慧眼识珠挖掘未被发掘的人才**是**建立人际网络的**有效途径。通过练习，我们能快速识别那些优质、有动力、有创造力的人才。挖掘人才最简单的方式就是多社交，多与他人打交道并且与那些给你留下深刻印象的人保持联系。要记住一点，不要局限于他人过往的工作经验和当前成就，我们需要发掘那些有潜力且能在短时间激发潜能的人。
+慧眼识珠挖掘未被发掘的人才是建立人际网络的有效途径。通过练习，我们能快速识别那些优质、有动力、有创造力的人才。挖掘人才最简单的方式就是多社交，多与他人打交道并且与那些给你留下深刻印象的人保持联系。要记住一点，不要局限于他人过往的工作经验和当前成就，我们需要发掘那些有潜力且能在短时间激发潜能的人。
 
 I try to always ask myself when I meet someone new “is this person a force of nature?” It’s a pretty good heuristic for finding people who are likely to accomplish great things.
 
-每当遇到新人，我都会扪心自问“**这个人有异于常人的能力吗？**”对于渴求人才的人来说，这个问题很值得思考。
+每当遇到新人，我都会扪心自问“这个人有异于常人的能力吗？”对于渴求人才的人来说，这个问题很值得思考。
 
 A special case of developing a network is finding someone eminent to take a bet on you, ideally early in your career. The best way to do this, no surprise, is to go out of your way to be helpful. (And remember that you have to pay this forward at some point later!)
 
-建立人际网络的特例是**找到你生命中的贵人**，特别是在职业生涯早期。毫无疑问，能做到这点的最佳方法就是主动去帮助他人（记住，你必须在日后回报你的贵人！）
+建立人际网络的特例是找到你生命中的贵人，特别是在职业生涯早期。毫无疑问，能做到这点的最佳方法就是主动去帮助他人（记住，你必须在日后回报你的贵人！）
 
 Finally, remember to spend your time with positive people who support your ambitions.
 
-最后，我们要**结交那些积极向上且志同道合之人**。
+最后，我们要结交那些积极向上且志同道合之人。
 
-1.  You get rich by owning things 资产决定财富
+## 1. You get rich by owning things 资产决定财富
 
 The biggest economic misunderstanding of my childhood was that people got rich from high salaries. Though there are some exceptions—entertainers for example —almost no one in the history of the Forbes list has gotten there with a salary.
 
@@ -282,37 +287,37 @@ The biggest economic misunderstanding of my childhood was that people got rich f
 
 You get truly rich by owning things that increase rapidly in value.
 
-拥有**能迅速增值**的东西才能真正发家致富。
+拥有能迅速增值的东西才能真正发家致富。
 
 This can be a piece of a business, real estate, natural resource, intellectual property, or other similar things. But somehow or other, you need to own equity in something, instead of just selling your time. Time only scales linearly.
 
-**这些东西可以是商业资产**、不动产**、自然资源、**知识产权等。但无论怎样，你需要实际拥有一些东西，而不是单靠出卖时间赚取工资，出卖时间赢来的财富只会呈慢速线性增长。
+这些东西可以是商业资产、不动产、自然资源、知识产权等。但无论怎样，你需要实际拥有一些东西，而不是单靠出卖时间赚取工资，出卖时间赢来的财富只会呈慢速线性增长。
 
 The best way to make things that increase rapidly in value is by making things people want at scale.
 
-让事物迅速增值的最佳方法就是**大量制造人们想要的东西**。
+让事物迅速增值的最佳方法就是大量制造人们想要的东西。
 
-1.  Be internally driven 要有内驱力
+## 1. Be internally driven 要有内驱力
 
 Most people are primarily externally driven; they do what they do because they want to impress other people. This is bad for many reasons, but here are two important ones.
 
 大多数人主要都是靠外部驱动，他们做事情是为了让别人佩服。这种做法坏处颇多，但以下两点最为突出：
 
-First, you will work on consensus ideas and on consensus career tracks.  You will care a lot—much more than you realize—if other people think you’re doing the right thing. This will probably prevent you from doing truly interesting work, and even if you do, someone else would have done it anyway.
+First, you will work on consensus ideas and on consensus career tracks. You will care a lot—much more than you realize—if other people think you’re doing the right thing. This will probably prevent you from doing truly interesting work, and even if you do, someone else would have done it anyway.
 
-首先这会导致你**人云亦云，因循守旧**。在工作中，你会过于在意他人的看法，这种在意程度可能已经远远超出了你的意识。并且这会阻碍你从事趣味性工作，即使你正在做这样的工作，也不过是在炒冷饭。
+首先这会导致你人云亦云，因循守旧。在工作中，你会过于在意他人的看法，这种在意程度可能已经远远超出了你的意识。并且这会阻碍你从事趣味性工作，即使你正在做这样的工作，也不过是在炒冷饭。
 
 Second, you will usually get risk calculations wrong. You’ll be very focused on keeping up with other people and not falling behind in competitive games, even in the short term.
 
-其次，这会让你**误判风险等级**。从短期影响来看，你会将注意力主要放在和他人的竞争上，以确保不会在竞争游戏中落后。
+其次，这会让你误判风险等级。从短期影响来看，你会将注意力主要放在和他人的竞争上，以确保不会在竞争游戏中落后。
 
 Smart people seem to be especially at risk of such externally-driven behavior. Being aware of it helps, but only a little—you will likely have to work super-hard to not fall in the mimetic trap.
 
-聪**明人似乎更容易受到**这种外驱力的影响。了解到了这一点可以帮助你摆脱这种影响，但帮助不大，我们必须要极其谨慎才能不至于掉入模仿他人的陷阱中。
+聪明人似乎更容易受到这种外驱力的影响。了解到了这一点可以帮助你摆脱这种影响，但帮助不大，我们必须要极其谨慎才能不至于掉入模仿他人的陷阱中。
 
 The most successful people I know are primarily internally driven; they do what they do to impress themselves and because they feel compelled to make something happen in the world. After you’ve made enough money to buy whatever you want and gotten enough social status that it stops being fun to get more, this is the only force I know of that will continue to drive you to higher levels of performance.
 
-**我认识的大多数成功**人士都是靠自我驱动。他们做事情是为了让自己心悦诚服，因为他们觉得给世界带来改变是自己的责任。当你赚得盆满钵满并且拥有了较高的社会地位之后，金钱和名誉对你的吸引力开始逐渐消失，这时候内驱力就成为了唯一的动力，推动你向更高的地方攀登。
+我认识的大多数成功人士都是靠自我驱动。他们做事情是为了让自己心悦诚服，因为他们觉得给世界带来改变是自己的责任。当你赚得盆满钵满并且拥有了较高的社会地位之后，金钱和名誉对你的吸引力开始逐渐消失，这时候内驱力就成为了唯一的动力，推动你向更高的地方攀登。
 
 This is why the question of a person’s motivation is so important. It’s the first thing I try to understand about someone. The right motivations are hard to define a set of rules for, but you know it when you see it.
 
@@ -321,6 +326,8 @@ This is why the question of a person’s motivation is so important. It’s the 
 Jessica Livingston and Paul Graham are my benchmarks for this. YC was widely mocked for the first few years, and almost no one thought it would be a big success when they first started. But they thought it would be great for the world if it worked, and they love helping people, and they were convinced their new model was better than the existing model.
 
 在这件事上，杰西卡·利文斯顿（Jessica Livingston）和保罗·格雷厄姆（Paul Graham）是我认为的行动标杆。在YC创办的最初几年，人人都不看好它的发展，没有人认为YC能够成功。但是杰西卡和保罗很看好YC的发展，他们认为如果YC能够成功将会对世界大有裨益，他们希望能够借此帮助到其他人，并且坚信这种新模式比现存的模式好。
+
+
 
 Eventually, you will define your success by performing excellent work in areas that are important to you. The sooner you can start off in that direction, the further you will be able to go. It is hard to be wildly successful at anything you aren’t obsessed with.
 
@@ -344,4 +351,4 @@ It is obviously an incredible shame and waste that opportunity is so unevenly di
 
 I am deeply aware of the fact that I personally would not be where I am if I weren't born incredibly lucky.
 
-我深深地意识到这样一个事实：**若非生来幸运，我就不会有今天**。
+我深深地意识到这样一个事实：若非生来幸运，我就不会有今天。

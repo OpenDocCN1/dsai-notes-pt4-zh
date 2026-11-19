@@ -1,9 +1,7 @@
-# 10.22-刚刚，OpenAI发布首个AI浏览器ChatGPT Atlas！谷歌最怕的来了
-
-> 来源：[https://agijuejin.feishu.cn/docx/HJwddqfoEogiqtxWLH8cc3aDnSg](https://agijuejin.feishu.cn/docx/HJwddqfoEogiqtxWLH8cc3aDnSg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 22 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/HJwddqfoEogiqtxWLH8cc3aDnSg](https://agijuejin.feishu.cn/docx/HJwddqfoEogiqtxWLH8cc3aDnSg)
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 
 ## ⭐ 今日热点
@@ -11,7 +9,6 @@
 ### 💡 刚刚，OpenAI发布首个AI浏览器ChatGPT Atlas！谷歌最怕的来了
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KCEVA0N90511ABV6.html?spss=dy_author)
-
 
 OpenAI发布AI浏览器ChatGPT Atlas，内置ChatGPT，具备浏览器记忆、智能体模式等功能。上手简单，部分功能付费，多平台将推出。它能理解用户意图，完成多种任务，还加强了隐私保护。网友试用反馈较好，但存在一些问题。此外，AI浏览器竞争激烈，Perplexity推出Comet，谷歌将集成Gemini AI进Chrome 。
 
@@ -36,7 +33,6 @@ DeepSeek推出的DeepSeek-OCR模型带来AI新突破。该模型以像素处理�
 ### 💡 墙体的AI革命！智能超表面如何让建筑「听懂」6G信号？
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KCD9ESD70511ABV6.html?spss=dy_author)
-
 
 5G 基站功耗高，96%流量需求源于室内，信号穿墙强度下降90% - 99.9%。智能超表面是 6G 关键创新，室外超表面无法覆盖室内。东北大学张继良团队提出「建筑无线友好性」，整合材料提升建筑无线友好性。团队还提出嵌入超表面形成智能墙体，但用户移动带来挑战，团队提出多种应对方法，研究已被顶级期刊接收。
 

@@ -1,3 +1,4 @@
+
 # 教程：AI 原型图/高保图生成
 
 > 来源：[https://datawhaler.feishu.cn/docx/NGHfdKRAjoPf3uxV5WnczMJNnsh](https://datawhaler.feishu.cn/docx/NGHfdKRAjoPf3uxV5WnczMJNnsh)
@@ -13,16 +14,10 @@
 +   **学习方式**：
 
 1.  在场景细分图中，找到自己需要的场景
-
 1.  找到对应的案例学习（参考小作业与参考教程）
-
 1.  学习优秀打卡案例，查漏补缺
-
 1.  选择感兴趣的小作业，跟着案例自己尝试做一遍。
-
 1.  尝试熟悉流程后，应用到实际工作中
-
->
 
 > 打卡核实后**「可获得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
 
@@ -52,7 +47,7 @@
 
 ## 参考小作业
 
-多维表格（T4QHbv43gaWHUos3OyGcOkQpn8g_tbl82mS5xOJ4o1Kv）
+多维表格（`T4QHbv43gaWHUos3OyGcOkQpn8g_tbl82mS5xOJ4o1Kv`）
 
 根据参考任务2，我们把学习体验场景设定在一款AI在线教育平台，那么此处就以Datawhale为例子来进行一下试用，针对Datawhale，它有几个特点：
 
@@ -72,13 +67,13 @@
 
 如果没有账号的需要先注册
 
-https://www.mockplus.cn/rp/?hmsr=qxxq
+`https://www.mockplus.cn/rp/?hmsr=qxxq`
 
 登录进去以后，看看网址，team后面有一串编码是团队ID，复制下来，下面申请内测名额的时候会用到
 
 ![](img/9a4421af4861ee0cbf70e670e0db4987.png)
 
-先在https://www.mockplus.cn/ai中申请内测名额
+先在`https://www.mockplus.cn/ai`中申请内测名额
 
 ![](img/da999fb456d65876857314e7fff95125.png)
 
@@ -90,7 +85,7 @@ https://www.mockplus.cn/rp/?hmsr=qxxq
 
 ![](img/0783878a2e3c7c9562983bfb2cccd087.png)
 
-内测通过后，打开https://www.mockplus.cn/rp/?hmsr=qxxq 新建一个项目
+内测通过后，打开`https://www.mockplus.cn/rp/?hmsr=qxxq` 新建一个项目
 
 ![](img/3060e40e0a024b3f51422f6c1174df20.png)
 
@@ -102,7 +97,7 @@ https://www.mockplus.cn/rp/?hmsr=qxxq
 
 ![](img/8abb0beb03df62eb69937544eda13682.png)
 
-https://www.mockplus.cn/rp/?hmsr=qxxq
+`https://www.mockplus.cn/rp/?hmsr=qxxq`
 
 ![](img/33f292c170ffce54d58ed9bda7424c34.png)
 
@@ -110,7 +105,7 @@ https://www.mockplus.cn/rp/?hmsr=qxxq
 
 “这是一个AI方向学习的移动端首页，用户已经登录的状态
 
-**在这个首页里需要包含的元素有：搜索，活动banner，不同类型课程导航入**口，近期直播课程预告，用户近期学习课程，平台正在推的课程或者活动介绍（方块形式）
+**在这个首页里需要包含的元素有：搜索，活动banner，不同类型课程导航入口，近期直播课程预告，用户近期学习课程，平台正在推的课程或者活动介绍（方块形式）**
 
 除了这些以外，如果你认为还有什么适合的元素，也可以做添加设计
 
@@ -124,7 +119,7 @@ https://www.mockplus.cn/rp/?hmsr=qxxq
 
 ![](img/89f0c8140a5bcdd1bcfe52f54fa8a0cf.png)
 
-https://rp.mockplus.cn/rps/sXWjH0dnDs/7ps-lrm0atou-70? 请查看《新项目》
+`https://rp.mockplus.cn/rps/sXWjH0dnDs/7ps-lrm0atou-70?` 请查看《新项目》
 
 ![](img/dbe8e08c9e173eb602059ff3cdbfca5a.png)
 
@@ -188,7 +183,7 @@ emmm，看来，也不太行。。。
 
 #### 【方案二】visily
 
-https://www.visily.ai/t2d
+`https://www.visily.ai/t2d`
 
 从它的浏览器标签slogan来看，似乎主打就是文本生成设计
 

@@ -1,9 +1,7 @@
-# 12.30-OpenAI o1 pro 深评博士医学论文，震惊顶尖免疫学家
-
-> 来源：[https://agijuejin.feishu.cn/docx/NGmndcZiMoPvzsxeYiLcwrPGnFb](https://agijuejin.feishu.cn/docx/NGmndcZiMoPvzsxeYiLcwrPGnFb)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 30 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/NGmndcZiMoPvzsxeYiLcwrPGnFb](https://agijuejin.feishu.cn/docx/NGmndcZiMoPvzsxeYiLcwrPGnFb)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/fb394f708ecffb362d925a21f6865e7b.png)
@@ -26,7 +24,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/821/031.htm)
 
 ![](img/6e596e1478f7314d885d2aa3dc0a984d.png)
 
-2024 年 12 月，EXO Labs 让 26 年前搭载奔腾 II 处理器、128MB 内存的 Win98 电脑成功运行大语言模型。他们利用 Andrej Karpathy 的 llama2.c，通过老式 Borland C++编译，在这台老电脑上实现了不同规模模型的运行，速度各异。EXO Labs 旨在普及人工智能，还展望通过 BitNet 实现这一目标，BitNet 是一种轻量级、CPU 优先的架构。
+2024 年 12 月，EXO Labs 让 26 年前搭载奔腾 II 处理器、128MB 内存的 Win98 电脑成功运行大语言模型。他们利用 Andrej Karpathy 的 `llama2.c`，通过老式 Borland C++编译，在这台老电脑上实现了不同规模模型的运行，速度各异。EXO Labs 旨在普及人工智能，还展望通过 BitNet 实现这一目标，BitNet 是一种轻量级、CPU 优先的架构。
 
 ### 💡 Hugging Face 研究“AI 降本增效”：给予更长运算时间让低成本小模型输出比拟大模型准确结果
 

@@ -1,10 +1,11 @@
+
 # ChatGPT做用户研究
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/Q9spd4IBVopK2yxUYrkcs8canHc](https://xmgtoagi.feishu.cn/docx/Q9spd4IBVopK2yxUYrkcs8canHc)
 
 导语：[ChatGPT](https://www.uisdc.com/tag/chatgpt)[ 火出圈](https://www.uisdc.com/tag/%e7%94%a8%e6%88%b7%e7%a0%94%e7%a9%b6)，各行各业纷纷在思考和实践如何借助 ChatGPT 降本增效。用户研究工作中涉及到大量知识获取、文本总结、数据分析、价值洞察等工作，无疑也是 ChatGPT 发挥作用的场景之一。本文就 ChatGPT 在用户研究场景中的作用做了初步探索，总体来看 ChatGPT 尚不能完全取代用户研究员，但也展现出多种辅助用户研究工作的潜力。
 
-#### **一、ChatGPT 简介**
+## 一、ChatGPT 简介
 
 ChatGPT 是 OpenAI 推出的自然语言对话机器人，在推出不到两个月的时间里，月活就突破了一亿。与之相比，TikTok 和 Instagram 达到这一成绩分别用时九个月和两年半。在业界，微软于 2 月初火速上线整合 ChatGPT 的 Bing 搜索，还计划将其整合进 Office 全家桶，在落地应用上大踏步前进。与此同时，谷歌也紧急上线竞品 Bard，正面硬刚（虽然首秀翻车，给出错误答案，导致股价大跌）。此外，百度、阿里等国内科技企业也纷纷开始类 ChatGPT 的开发和内测。
 
@@ -24,7 +25,7 @@ ChatGPT 的这些能力在整合搜索结果、写代码、Debug、写文章等�
 
 图 3 和 ChatGPT 玩算命先生的游戏（参考自 https://www.zhihu.com）
 
-#### 二、ChatGPT 能替代用户研究吗？
+## 二、ChatGPT 能替代用户研究吗？
 
 虽然还存在着这样那样的局限性，但 ChatGPT 所显现出的巨大应用潜力使得关于 ChatGPT 可以取代哪些职业的讨论成为当下的热门话题。不禁让从事用户研究工作的我好奇：ChatGPT 能够给用户研究带来什么样的改变？会让用户研究员失业吗？
 
@@ -40,7 +41,7 @@ ChatGPT 的这些能力在整合搜索结果、写代码、Debug、写文章等�
 
 让我们依次看下 ChatGPT 在这些方面的具体表现：
 
-1.  **高效整合内容的搜索引擎**
+### 高效整合内容的搜索引擎
 
 和传统搜索提供多个相关结果不同，ChatGPT 能够根据多个搜索结果，提供整合后的内容。这种高效整合内容的能力可以帮助用户研究员在需求理解、案头研究、数据分析等环节更快速地获得高价值（如相关性高、总结性强、废话少等）的知识性内容。
 
@@ -68,7 +69,7 @@ ChatGPT 的这些能力在整合搜索结果、写代码、Debug、写文章等�
 
 ![](img/6d541de8b54d7b939e9196d772caac37.png)
 
-图 9ChatGPT 无法提供答案的参考文献
+图 9 ChatGPT 无法提供答案的参考文献
 
 除了可以提供研究主题相关的知识外，ChatGPT 也可以在数据分析等阶段对数据分析的方法、实现代码提供直接的指导，比如“如何使用 Excel 计算平均值、TGI 指数”（图 10），ChatGPT 就给出了公式和操作步骤，研究员照着答案操作即可。但目前 ChatGPT 对常用的数据分析软件 SPSS 的支持效果有限，比如“根据变量 A 的选项生成新的变量 B”的 SPSS 语句（图 11）就是错误的，猜测和 ChatGPT 训练数据集中 SPSS 相关知识内容较少有关。
 
@@ -82,7 +83,7 @@ ChatGPT 的这些能力在整合搜索结果、写代码、Debug、写文章等�
 
 但总的来说，作为高效整合内容的搜索引擎，ChatGPT 可以帮助研究员快速地了解相关的研究主题，辅助和启发研究方案设计等，也能提供数据分析方法的指导。但在此过程中，需要研究员特别注意 ChatGPT 答案的真实性、准确性，且目前对 SPSS 的支持不如 Python、Excel 的效果好。
 
-1.  **能力多样的“配菜员”**
+### 能力多样的“配菜员”
 
 ChatGPT 在用户研究工作中，第二个可能的应用是作为能力多样的“配菜员”，从访谈逐字稿、问卷数据中提炼关键信息，或者根据研究员的诉求提供诸如方案设计、问卷大纲等多种建议，提高研究员分析数据获得洞察、撰写访谈提纲或者问卷等任务的效率。
 
@@ -148,7 +149,7 @@ ChatGPT 在用户研究工作中，第二个可能的应用是作为能力多样
 
 总的来看，ChatGPT 在用户研究的多个环节中均有着扮演“配菜员”的潜力，如分析访谈记录、问卷数据，总结其中的关键信息，或者就研究方案、访谈提纲、问卷题目等提供建议。从目前的效果来看，ChatGPT 的答案并不是真正可用的方案、提纲、问卷、洞察等，但确实可以提高如总结访谈记录、分析问卷数据的效率，为研究员进一步分析，得出更高价值的洞察提供了丰富的原材料。
 
-1.  **提升内容表达的润色工具**
+### 提升内容表达的润色工具
 
 ChatGPT 修改文案的能力在用户研究工作中也有用武之地，比如修改问卷题目、报告内容中的错别字。如图 22 所示，ChatGPT 成功识别并修改了“参于”、“资质”、“隆资”这几处错别字，并在“甚至”前添加了逗号提升表达准确性。其修改效果还是比较惊艳的。
 
@@ -160,7 +161,9 @@ ChatGPT 修改文案的能力在用户研究工作中也有用武之地，比如
 
 要实现这一点的话，需要用到 ChatGPT 更“高端“的玩法，即通过适当的提示语（Prompt）让 ChatGPT 扮演特定风格的英文翻译，将输入的内容在不改变其意思的情况下，翻译成更优美高端的英文（当然也可以尝试其他风格，比如更 concise 等）：
 
+```
 I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. My first sentence is “很高兴认识你"
+```
 
 图 23 展示的就是“数字藏品交易的投机炒作氛围浓厚，买家会面临如庄家控盘、平台跑路、内容侵权、无人接盘等风险”这句话的英文翻译结果，和直接翻译的结果对比（图 24），确实效果更好一些。
 
@@ -174,13 +177,19 @@ I want you to act as an English translator, spelling corrector and improver. I w
 
 总的来说，ChatGPT 在修改错别字、提高英文表达方面均有不错的表现，确实可以帮助我们更高效的润色输出的内容，比如访谈提纲、问卷题目、洞察报告等。
 
-1.  **用户访谈降本增效的“模拟器”**
+### 用户访谈降本增效的“模拟器”
 
-在作为[润色工具的部分，我们分享了 ChatGPT 的“](https://link.uisdc.com/?redirect=https%3A%2F%2Fgithub.com%2Ff%2Fawesome-chatgpt-prompts)高端”玩法，即使用 Prompt 将其“调教”成特定风格的英文翻译。这种玩法可以使 ChatGPT 扮演各种各样的角色，比如心理咨询师、面试官、体育评论员等等（在此推荐一个相关 Prompt 的 GitHub 仓： https://github.com/f/awesome-chatgpt-prompts ），让 ChatGPT 的应用场景扩展了不少。
+在作为润色工具的部分，我们分享了 ChatGPT 的“高端”玩法，即使用 Prompt 将其“调教”成特定风格的英文翻译。这种玩法可以使 ChatGPT 扮演各种各样的角色，比如心理咨询师、面试官、体育评论员等等（在此推荐一个相关 Prompt 的 GitHub 仓： https://github.com/f/awesome-chatgpt-prompts ），让 ChatGPT 的应用场景扩展了不少。
 
 回到用户研究，很自然地就会想到：让 ChatGPT 扮演主持人的角色，访谈用户的效果如何，能不能自动化访谈？或者反过来，让 ChatGPT 扮演某类典型用户接受访谈，它的回答和真实用户的回答相差多少？能不能作为典型用户的初步洞察？
 
 我们先来看下 ChatGPT 扮演主持人访谈用户的效果（图 25），这里我让 ChatGPT 扮演成一位访谈主持人，目的是通过询问用户问题来弄清楚“数字藏品（NFT）的核心用户价值是什么”，相应的 Prompt 是：
+
+
+
+# ChatGPT 在用户研究中的应用探索
+
+## ChatGPT 扮演访谈主持人
 
 I want you to act as an user interviewer, you job is to figure out the core user value of NFT. I will be the user and you will ask me the interview questions about NFT. I want you to only reply as the interviewer. Do not write all the conversation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is “Hi”
 
@@ -190,6 +199,8 @@ I want you to act as an user interviewer, you job is to figure out the core user
 
 图 25 ChatGPT 扮演主持人访谈用户
 
+## ChatGPT 扮演典型用户
+
 看完 ChatGPT 扮演主持人的效果，让我们继续看下它扮演某类典型用户接受访谈的表现（图 26）。首先通过以下 Prompt 让 ChatGPT 扮演一位年轻的数字藏品用户：“她”是一位 20 岁的在校大学生，爱好广泛比如聚会、看电影、逛街等等。然后就可以通过询问数字藏品相关的问题来挖掘“她”对数字藏品的看法。
 
 I want you to act as a NFT user, you are a 20-year-old college girl, you have a lot of hoppies, like partying, watching movies, shopping with your besties etc. I will be the interviewer and I will ask you the interview questions about NFT. I want you to only reply as this girl. Do not write all the conversation at once. Wait for my questions and give me answers. Do not write explanations. My first sentence is "Hi"
@@ -198,20 +209,24 @@ I want you to act as a NFT user, you are a 20-year-old college girl, you have a 
 
 图 26 ChatGPT 扮演典型用户接受访谈
 
+## 对用户研究流程的想象
+
 总体来看，ChatGPT 的表现持续惊艳，比如询问“她”是如何知道数字藏品的，“她”给出的回答是“玩数字藏品的好友分享给她的”。当重复“她”觉得 NFT 很 cool 的看法后，“她”回答到“数字藏品改变了我们对数字世界所有权和价值的看法”等。这些回答从主观感受上看确实很贴近我们访谈到实际用户。
 
 所以展开想象力，这会不会改变今后用户研究的流程？比如在访谈真实用户前，能不能先让 ChatGPT 扮演几种典型用户来获得初步洞察，之后再进行真实用户访谈以验证和补充？当然在此之前还有很多的问题要回答，比如如何使用 Prompt 更准确地描述典型用户（如需要哪些变量？），ChatGPT 扮演典型用户的准确性和有效性有多高等等。但无疑 ChatGPT 的表现已经足以让我们开始类似的思考。
 
-#### **总结**
+## 总结
 
 总结一下，通过上述初步的探索，我会觉得 ChatGPT 在未来的用户研究工作中，可能成为降本增效的辅助工具：作为高效的搜索引擎，提升获取知识的效率；也可以作为能力多样的“配菜员”，提供诸如访谈初步总结、数据分析结果、访谈大纲等内容，辅助研究员完成研究设计、洞察分析等；还能作为内容（尤其是英文内容）的润色工具，修改错别字、转换不同表达风格等；最后也显示了其作为主持人执行访谈或者扮演典型用户接受访谈的潜力。
+
+### 局限与建议
 
 当然 ChatGPT 距离真正可用的用户研究辅助工具还有一段距离，比如需要用户研究领域的知识对模型进行 Fine-tune 以提升答案质量，再比如需要定制化的交互方式，以提升在用户研究工作中，与 ChatGPT 交互的体验和效率等等。
 
 此外，对于有兴趣继续探索 ChatGPT 应用的同学，分享三个 Tips：
 
-1.  多试几次，以比较不同的回答；
+1. 多试几次，以比较不同的回答；
 
-1.  学会提问，明确需求，由粗到细引导，并且注意之前输入内容的影响；
+1. 学会提问，明确需求，由粗到细引导，并且注意之前输入内容的影响；
 
-1.  保持独立思考和批判性思维，时刻警惕内容的真实性、准确性，避免被 ChatGPT 牵着鼻子走。
+1. 保持独立思考和批判性思维，时刻警惕内容的真实性、准确性，避免被 ChatGPT 牵着鼻子走。

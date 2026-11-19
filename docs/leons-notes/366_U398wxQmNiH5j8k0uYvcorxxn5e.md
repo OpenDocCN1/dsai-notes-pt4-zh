@@ -1,10 +1,10 @@
+
 # 游记｜云南中秋行 Day 4
 
 > 来源：[https://leonzhang.feishu.cn/docx/V7yTdBkJ8oGjIyx5oNscL7a8nJd](https://leonzhang.feishu.cn/docx/V7yTdBkJ8oGjIyx5oNscL7a8nJd)
-
 > 大理古城 - 香格里拉 - 独克宗古城
 
-### 前言
+## 前言
 
 在大理逗留了这么久，终于开始下一站的行程了。
 
@@ -12,7 +12,7 @@
 
 ![](img/de49bcc6de5a51ad6fbf8244d0e19e2b.png)
 
-### 天空放晴的大理古城
+## 天空放晴的大理古城
 
 上午时间比较紧张，所以行程就安排在大理古城，从南门走到北门，时间就差不多了，方便打车。
 
@@ -23,9 +23,10 @@
 
 | ![](img/d20b313781c65bf2ab194c41642b23af.png) | ![](img/ea9c7b48b8386b65d988c542cb9b9999.png) | ![](img/a454bb6860b51e9fbb75d1cebd13a028.png) |
 | --- | --- | --- |
+
 | ![](img/e09ef3d20966b2a0c6995b10c1af3f73.png) | ![](img/c88770fd4a9705578a21df90dba46b71.png) | ![](img/e49da87876ffb143a6fc12a99e8fec8c.png) |
 
-### 香格里拉
+## 香格里拉
 
 没来香格里拉之前，经常看到很多人打卡的背景图里有一句话：“香格里拉，离天堂的最近的地方。”
 
@@ -62,7 +63,7 @@ ChatGPT 4o 的详细回答，全文如下，
 虽然这种说法有些夸张，但确实有可能在高原地区电梯的快速上升或下降过程中，加剧人们对高原环境的不适反应。因此，建筑设计在高原地区时，可能会尽量避免使用高层建筑或安装电梯，以减少这些潜在的健康风险。
 ```
 
-### 香格里拉 - 独克宗古城
+## 香格里拉 - 独克宗古城
 
 放下行李，我们去了酒店小哥推荐的「青木厨房」，他说，“这是他在这里吃过的最好吃、最正宗的店。”
 
@@ -72,7 +73,10 @@ ChatGPT 4o 的详细回答，全文如下，
 
 | ![](img/fa23738ffcc8c186930f2dce0f2ea816.png) | ![](img/4230aba7641c0116374c49b1fdd449a4.png) | ![](img/94bac15ebec55915bdeae53f59211c46.png) |
 | --- | --- | --- |
+
 | ![](img/c6a68c51e645fb232b10fed0b098e915.png) | ![](img/5eab9b52f3244be9f12f160fe463e5cd.png) | ![](img/6517e52ef9864b68aad375525f974590.png) |
+| --- | --- | --- |
+
 | ![](img/a98751d78c172e6df5fb0cdcb92229f0.png) | ![](img/0607ac9ceb3b9a7c63c35cde5796bfce.png) | ![](img/c99b0e455c6d1b1bfba2a4dff3d37198.png) |
 
 吃完饭之后来到一个广场，这个广场有一种神奇的魔力，我还和阿珂发🛰️说，“很神奇，大家加入进去就会跳了（突然很感动 🥹 ”，而且看着大家一起手舞足蹈，真的很感叹，这才是生活！
@@ -98,10 +102,13 @@ ChatGPT 4o 的详细回答，全文如下，
 
 | ![](img/16a1868e52a6a56c0b43b30335a6a9d1.png) | ![](img/f6ca6974074b5237ab396ac95ad94ad0.png) | ![](img/10a7ea59f00a47ade6f865718f8b283e.png) |
 | --- | --- | --- |
+
 | ![](img/2a5b7aae3cd4515b0d59ce05817df2c4.png) | ![](img/4a95bb49d7eee0670c257e76005f0165.png) | ![](img/2d7809cede4f4c947ebc7558c5c39c3c.png) |
+| --- | --- | --- |
+
 | ![](img/77bc0f8d171f31f2e62a0dbe4e265915.png) | ![](img/6bcfaef272ecb493ee1638898505837e.png) | ![](img/01b344bb5880b83368dfd7ce06840d79.png) |
 
-### 小插曲
+## 小插曲
 
 晚上回去的时候途经月光广场，当时有老奶奶在卖牛肉干。 有香辣与五香两种口味在卖，而且还区分风干牛肉干与腌制好没多久的牛肉干。对比而言，纯风干牛肉干的口感略差，真的要使劲咬、使劲嚼才行，而另一种的口感就会相对好一些。
 
@@ -126,16 +133,11 @@ ChatGPT 4o 的详细回答，全文如下，
 
 以上是第四天的行程。
 
-### 相关阅读
+## 相关阅读
 
-1.  [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg)
-
-1.  [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
-
-1.  [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
-
-1.  Mini LED - Wikipedia
-
-1.  [香格里拉龟山公园 - 百度百科](https://baike.baidu.com/item/%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E9%BE%9F%E5%B1%B1%E5%85%AC%E5%9B%AD/16749904)
-
-1.  云南香格里拉“最美”公园，位于独克宗古城，里面还有最大转经筒 - 搜狐
+1. [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg)
+2. [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
+3. [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
+4. Mini LED - Wikipedia
+5. [香格里拉龟山公园 - 百度百科](https://baike.baidu.com/item/%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E9%BE%9F%E5%B1%B1%E5%85%AC%E5%9B%AD/16749904)
+6. 云南香格里拉“最美”公园，位于独克宗古城，里面还有最大转经筒 - 搜狐

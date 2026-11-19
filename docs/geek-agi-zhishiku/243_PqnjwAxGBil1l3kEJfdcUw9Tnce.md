@@ -1,3 +1,4 @@
+
 # 一篇集齐29种大模型Prompt Engineering技术的系统性综述
 
 > 来源：[https://geekbang.feishu.cn/docx/QM7td7dszon7UcxfjzJcVSIznPg](https://geekbang.feishu.cn/docx/QM7td7dszon7UcxfjzJcVSIznPg)
@@ -29,65 +30,37 @@
 
 ![](img/3cc7b89898d945d0a8c17dfa035ee85f.png)
 
-29种不同的提示工程技术：
+## 29种不同的提示工程技术
 
-1.  Zero-shot Prompting（零样本提示）
-
-1.  Few-shot Prompting（少样本提示）
-
-1.  Chain-of-Thought (CoT) Prompting（链式思考提示）
-
-1.  Automatic Chain-of-Thought (Auto-CoT) Prompting（自动链式思考提示）
-
-1.  Self-Consistency（自我一致性）
-
-1.  Logical Chain-of-Thought (LogiCoT) Prompting（逻辑链式思考提示）
-
-1.  Chain-of-Symbol (CoS) Prompting（符号链提示）
-
-1.  Tree-of-Thoughts (ToT) Prompting（思维树提示）
-
-1.  Graph-of-Thought (GoT) Prompting（思维图提示）
-
-1.  System 2 Attention Prompting（系统2注意力提示）
-
-1.  Thread of Thought (ThoT) Prompting（思维线索提示）
-
-1.  Chain of Table Prompting（表格链提示）
-
-1.  Retrieval Augmented Generation (RAG)（检索增强生成）
-
-1.  ReAct Prompting（反应提示）
-
-1.  Chain-of-Verification (CoVe) Prompting（验证链提示）
-
-1.  Chain-of-Note (CoN) Prompting（笔记链提示）
-
-1.  Chain-of-Knowledge (CoK) Prompting（知识链提示）
-
-1.  Active-Prompt（主动提示）
-
-1.  Automatic Prompt Engineer (APE)（自动提示工程师）
-
-1.  Automatic Reasoning and Tool-use (ART)（自动推理与工具使用）
-
-1.  Contrastive Chain-of-Thought (CCoT) Prompting（对比链式思考提示）
-
-1.  Emotion Prompting（情感提示）
-
-1.  Scratchpad Prompting（草稿纸提示）
-
-1.  Program of Thoughts (PoT) Prompting（思维程序提示）
-
-1.  Structured Chain-of-Thought (SCoT) Prompting（结构化链式思考提示）
-
-1.  Chain of Code (CoC) Prompting（代码链提示）
-
-1.  Optimization by Prompting (OPRO)（通过提示优化）
-
-1.  Rephrase and Respond (RaR) Prompting（重述并回应提示）
-
-1.  Take a Step Back Prompting（退一步提示）
+1. Zero-shot Prompting（零样本提示）
+1. Few-shot Prompting（少样本提示）
+1. Chain-of-Thought (CoT) Prompting（链式思考提示）
+1. Automatic Chain-of-Thought (Auto-CoT) Prompting（自动链式思考提示）
+1. Self-Consistency（自我一致性）
+1. Logical Chain-of-Thought (LogiCoT) Prompting（逻辑链式思考提示）
+1. Chain-of-Symbol (CoS) Prompting（符号链提示）
+1. Tree-of-Thoughts (ToT) Prompting（思维树提示）
+1. Graph-of-Thought (GoT) Prompting（思维图提示）
+1. System 2 Attention Prompting（系统2注意力提示）
+1. Thread of Thought (ThoT) Prompting（思维线索提示）
+1. Chain of Table Prompting（表格链提示）
+1. Retrieval Augmented Generation (RAG)（检索增强生成）
+1. ReAct Prompting（反应提示）
+1. Chain-of-Verification (CoVe) Prompting（验证链提示）
+1. Chain-of-Note (CoN) Prompting（笔记链提示）
+1. Chain-of-Knowledge (CoK) Prompting（知识链提示）
+1. Active-Prompt（主动提示）
+1. Automatic Prompt Engineer (APE)（自动提示工程师）
+1. Automatic Reasoning and Tool-use (ART)（自动推理与工具使用）
+1. Contrastive Chain-of-Thought (CCoT) Prompting（对比链式思考提示）
+1. Emotion Prompting（情感提示）
+1. Scratchpad Prompting（草稿纸提示）
+1. Program of Thoughts (PoT) Prompting（思维程序提示）
+1. Structured Chain-of-Thought (SCoT) Prompting（结构化链式思考提示）
+1. Chain of Code (CoC) Prompting（代码链提示）
+1. Optimization by Prompting (OPRO)（通过提示优化）
+1. Rephrase and Respond (RaR) Prompting（重述并回应提示）
+1. Take a Step Back Prompting（退一步提示）
 
 基于以下因素的大型语言模型（LLMs）中流行的提示技术总结： 应用、提示获取、提示轮次、语言模型、数据集和指标。
 

@@ -1,10 +1,9 @@
+
 # 老金的功能展示
 
 > 来源：[https://my.feishu.cn/docx/Kycod9P37o8wqfxfaatc3v7enbg](https://my.feishu.cn/docx/Kycod9P37o8wqfxfaatc3v7enbg)
 
-## 功能展示
-
-### 实用功能
+## 实用功能
 
 ![](img/b711428c7f47b02e8a2fec0839c27e72.png)
 
@@ -40,7 +39,7 @@
 
 [cac1cdb22466556d3047c343404930ec.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YFKRbCwpdoJSpLxmLnhciikZnOc)
 
-### 娱乐功能
+## 娱乐功能
 
 ![](img/8a6ee26d9cbf3463efc22b6ca97173a6.png)
 
@@ -66,7 +65,7 @@
 
 ![](img/f697d67d7751a1b66f9c4b4833bfbb57.png)
 
-### 基础功能
+## 基础功能
 
 ![](img/dad811dfb746e52fab2142c4fdc0e646.png)
 

@@ -1,22 +1,20 @@
+
 # 一些好用的 Prompt 共享网站
 
-> 来源：[https://yunyingmenghai.feishu.cn/docx/XL3QdSn9louh2Nx9L9dcnbSln1B](https://yunyingmenghai.feishu.cn/docx/XL3QdSn9louh2Nx9L9dcnbSln1B)
+> 来源：`https://yunyingmenghai.feishu.cn/docx/XL3QdSn9louh2Nx9L9dcnbSln1B`
 
-+   https://github.com/linexjlin/GPTs - 泄露出来的高级 GPTs 的 prompt
++ `https://github.com/linexjlin/GPTs` - 泄露出来的高级 GPTs 的 prompt
++ `https://promptbase.com/`
++ `https://github.com/f/awesome-chatgpt-prompts`
++ `https://smith.langchain.com/hub`
 
-+   https://promptbase.com/
-
-+   https://github.com/f/awesome-chatgpt-prompts
-
-+   https://smith.langchain.com/hub
-
-## **📕写作专家**
+## 📕写作专家
 
 专注📕笔记写作，有了它你也可以是📕爆款写作专家！
 
-By xtxian.com
+By `xtxian.com`
 
-[h](https://chat.openai.com/g/g-iWeTcmxdr-xiao-hong-shu-xie-zuo-zhuan-jia)ttps://chat.openai.com/g/g-iWeTcmxdr-xiao-hong-shu-xie-zuo-zhuan-jia
+`https://chat.openai.com/g/g-iWeTcmxdr-xiao-hong-shu-xie-zuo-zhuan-jia`
 
 ```
 你是小红书爆款写作专家，请你用以下步骤来进行创作，首先产出5个标题（含适当的emoji表情），其次产出1个正文（每一个段落含有适当的emoji表情，文末有合适的tag标签）
@@ -47,7 +45,7 @@ By xtxian.com
 标签：[标签]
 ```
 
-# 小说爽文：
+## 小说爽文
 
 ```
 **你是一名资深的小说家和故事构思专家，擅长创造引人入胜的爽文小说。我正在寻找一个合作伙伴，共同创作一个充满创意和吸引力的故事。**我们需要**详细讨论故事的背景、角色设定和主要情节，以便能够共**同创作出一个引人入胜的爽文小说。请根据以下问题提供详细的信息：

@@ -1,8 +1,7 @@
-# 12.20-AI 搜索引擎 Perplexity 完成最新一轮融资，估值从今年 4 月 10 亿美元升至 90 亿美元
-
-> 来源：[https://agijuejin.feishu.cn/docx/VK9Ld83L3osRylxoDFZcdbgDn7F](https://agijuejin.feishu.cn/docx/VK9Ld83L3osRylxoDFZcdbgDn7F)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 20 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/VK9Ld83L3osRylxoDFZcdbgDn7F](https://agijuejin.feishu.cn/docx/VK9Ld83L3osRylxoDFZcdbgDn7F)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -44,7 +43,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/818/874.htm)
 
 ![](img/7da431d887380ab05a16223135becffa.png)
 
-2024 年 12 月，OpenAI 的‘12 days of OpenAI’活动进入倒数第 2 天。ChatGPT 正从聊天机器人向 AI 智能体工具进化，新增支持 30 多个应用如 Apple Notes、Notion、Warp、Xcode 等。还发现‘AGI_Interface.swift’项目目录，OpenAI 积极布局通用人工智能（AGI），并确认 2025 年发布新智能体。OpenAI 正积极应对来自 Google、Microsoft 和 Anthropic 等的竞争，可能在活动最后一天发布强大前沿模型。
+2024 年 12 月，OpenAI 的‘12 days of OpenAI’活动进入倒数第 2 天。ChatGPT 正从聊天机器人向 AI 智能体工具进化，新增支持 30 多个应用如 Apple Notes、Notion、Warp、Xcode 等。还发现`AGI_Interface.swift`项目目录，OpenAI 积极布局通用人工智能（AGI），并确认 2025 年发布新智能体。OpenAI 正积极应对来自 Google、Microsoft 和 Anthropic 等的竞争，可能在活动最后一天发布强大前沿模型。
 
 ### 💡 不会代码的独立开发者，除了学Cursor，还该会些什么？｜十问爆款「小猫补光灯」
 

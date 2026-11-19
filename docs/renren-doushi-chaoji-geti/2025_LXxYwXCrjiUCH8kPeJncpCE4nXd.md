@@ -1,10 +1,9 @@
+
 # 2020-11-01说说发券那些事（03）：🛰️消息的触达 – 人人都是产品经理
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Xxthd6D7roaGW5xnBeTc0f4HnFg](https://xuqiwei1986.feishu.cn/docx/Xxthd6D7roaGW5xnBeTc0f4HnFg)
 
 > 🔗 原文链接： h[ttps://www.woshipm](https://www.woshipm.com/pd/4238627.html).com/pd/4238627....
-
->
 
 > 编辑导语：当我们在电商平台上购物时，往往会下意识的看看有没有优惠券可用，由此可见，优惠券对消费者的吸引力是很大的。那么，对于商家来说发券则是一门技术活，需要精细的策划，才能留住消费者，提升自己的成交量。在今天这篇文章中，作者就为大家梳理了🛰️渠道有哪些触达的方式。
 

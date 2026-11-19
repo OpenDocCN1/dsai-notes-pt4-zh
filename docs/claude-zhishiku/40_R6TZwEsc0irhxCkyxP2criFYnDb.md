@@ -1,27 +1,28 @@
+
 # 可选插件DLC
 
 > 来源：[https://sqivg8d05rm.feishu.cn/docx/AMJudTUdRoyJduxB8iCccimsn9d](https://sqivg8d05rm.feishu.cn/docx/AMJudTUdRoyJduxB8iCccimsn9d)
 
 ## 插图DLC（测试）
 
-（作者三号老公 ）
+（作者三号老公）
 
 内容参考[坎佬教程](https://rentry.org/teralomaniac_clewd/)（推荐使用最新酒馆）
 
 顾名思义，是对部分角色卡中的插图进行导出的一个DLC，由于是测试版本，可能会出现不出图或者图不对文等。
 
-其中应该这么填写，应该填写2个正[正则表达式与插图DLC等](https://sqivg8d05rm.feishu.cn/wiki/QKkYwUsGAivp4ukhvBRcYlf6nCd)表达式。（不明白正则表达式的看这个教程  ）
+其中应该这么填写，应该填写2个正[正则表达式与插图DLC等](https://sqivg8d05rm.feishu.cn/wiki/QKkYwUsGAivp4ukhvBRcYlf6nCd)表达式。（不明白正则表达式的看这个教程）
 
 ### 正则表达式
 
-**注：所有正则同时勾选用于****AI**** ****output** 和 Only Format Display！
+注：所有正则同时勾选用于 `AI` `output` 和 `Only Format Display`！
 
-Script Name：photo0（名称随意，你开心就好）
+`Script Name`：`photo0`（名称随意，你开心就好）
 
 Find Regex（查找正则）：
 
 ```
-/&lt;(illustration|img)&gt;.*[^0-9A-Za-z\.\s&lt;/&gt;]+/gm
+&lt;(illustration|img)&gt;.*[^0-9A-Za-z\.\s&lt;/&gt;]+/gm
 ```
 
 Replace With（替换）：
@@ -32,12 +33,12 @@ Replace With（替换）：
 
 ![](img/606bde8aec763301adf7594f784608e4.png)
 
-Script Name：photo1（名称随意，你开心就好）
+`Script Name`：`photo1`（名称随意，你开心就好）
 
 Find Regex（查找正则）：
 
 ```
-/&lt;\/(illustration|img)&gt;/g
+&lt;\/(illustration|img)&gt;/g
 ```
 
 Replace With（替换）：
@@ -56,21 +57,21 @@ Replace With（替换）：
 
 以上是准备工作，接下来就是正式插图了
 
-[首先，如果你](https://files.catbox.moe)是写卡作者，需要把你选好的图片上传到catbox图库
+[首先，如果你](https://files.catbox.moe)是写卡作者，需要把你选好的图片上传到`catbox`图库
 
 （只能传输大小小于200MB的文件）（自备魔法）
 
 ![](img/06fa6cda1d5e119ce781e29c0b97e89e.png)
 
-获取刚刚的catbox给的网址的小尾巴（例如教程中的47rshl）并对小尾巴进行命名，例如微笑:微笑47[世界书（施工中）](https://sqivg8d05rm.feishu.cn/wiki/ZJ9Yw0X7JipJrlkAoT0cku54nMb)shl.png，接下来你需要创建一个  填写需要输出的图片。
+获取刚刚的`catbox`给的网址的小尾巴（例如教程中的`47rshl`）并对小尾巴进行命名，例如微笑:微笑47[世界书（施工中）](https://sqivg8d05rm.feishu.cn/wiki/ZJ9Yw0X7JipJrlkAoT0cku54nMb)shl.png，接下来你需要创建一个  填写需要输出的图片。
 
 其中第一个为插图列表，第二个为插图规则
 
-Primary Keywords均填<img>    Logic均为And  Optional Filter均填</img>
+`Primary Keywords`均填`<img`    `Logic`均为And  `Optional Filter`均填`<img`
 
-1.  插图列表
+1. 插图列表
 
-把要填的插图填入内容中，以<illustration_list>开头</illustration_list>结尾。
+把要填的插图填入内容中，以`<illustration_list>`开头`</illustration_list>`结尾。
 
 例如：
 
@@ -81,7 +82,7 @@ Primary Keywords均填<img>    Logic均为And  Optional Filter均填</img>
 &lt;/illustration_list&gt;
 ```
 
-1.  插图规则
+1. 插图规则
 
 内容中填写如下即可
 
@@ -95,7 +96,5 @@ Format: &lt;img&gt;{{filename}}&lt;/img&gt;
 When assistant describes sexual acts or sexual organs，assistant should load nsfw illustration 19d31 in &lt;illustration_list&gt; depending on the current sexual position.
 &lt;/illustration&gt;
 ```
-
-![](img/47d03d84f0824b5d5ed4e42b39719a3c.png)
 
 不明白就看图吧。

@@ -1,8 +1,7 @@
+
 # 体验 DALL·E 3 + ChatGPT 王炸组合后，我感受到了甲方的快乐
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/PbE7dTHJwopGSixYjGmceTbSn1e](https://jalicvoygc0.feishu.cn/docx/PbE7dTHJwopGSixYjGmceTbSn1e)
-
-#
 
 作者：莫崇宇
 
@@ -10,14 +9,12 @@
 
 ![](img/ef0fe945f3df664f29f2843c0daaee0e.png)
 
-DALL·E 3 并不是什么陌生的工具，但还是要给不了解的朋友解释一下，DALL·E 3 是一款 AI 图像生成器，你可以将之理解为 OpenAI 版 的 Midjourney。9 月份的时候，OpenAI 宣布 DALL・E 3 将集成到 ChatGPT，堪称各自领域里几乎最强的模型合并。更重要的是，DALL・E 3 原生构建在 ChatGPT 之上，无需详细的提示词，你就可以直接在 ChatGPT 里文生图。昨日凌晨，OpenAI 官方宣布，DALL·E 3 现已向所有 ChatGPT Plus 和 Enterprise 用户开放。给个小提示，如果你不想花钱，也可以使用微软的 New Bing 来畅玩 DALL·E 3。只有你想不到，没有 DALL·E 3 画不了。
+DALL·E 3 并不是什么陌生的工具，但还是要给不了解的朋友解释一下，DALL·E 3 是一款 AI 图像生成器，你可以将之理解为 OpenAI 版的 Midjourney。9 月份的时候，OpenAI 宣布 DALL·E 3 将集成到 ChatGPT，堪称各自领域里几乎最强的模型合并。更重要的是，DALL·E 3 原生构建在 ChatGPT 之上，无需详细的提示词，你就可以直接在 ChatGPT 里文生图。昨日凌晨，OpenAI 官方宣布，DALL·E 3 现已向所有 ChatGPT Plus 和 Enterprise 用户开放。给个小提示，如果你不想花钱，也可以使用微软的 New Bing 来畅玩 DALL·E 3。只有你想不到，没有 DALL·E 3 画不了。
 
 那么 DALL·E 3 的生图效果如何呢？OpenAI 在其官方博客中列举了三个标志性例子，分别涉及科学项目、网站设计、企业标志设计等诸多场景。例如，倘若你需要在课堂报告中演示卷云时，你可以要求 DALL·E 3 生成足够精细的卷云图片。又或者你是网站设计师，还在为网页设计挠头抓腮时，那么你也可以使用 DALL·E 3 来刺激更多的灵感。
 
 ![](img/923e92e25d8964bdf43721e2dd90d48c.png)
-
 ![](img/3d2a2e8cb5bc8b2fd452a6c0b2f331ea.png)
-
 ![](img/957a36ec40096084155fdf5ff6e269eb.png)
 
 向左滑动查看更多内容
@@ -28,18 +25,15 @@ DALL·E 3 并不是什么陌生的工具，但还是要给不了解的朋友解�
 
 ![](img/a6960816820f6e7ae07896ccdf0c145e.png)
 
-最终的实际效果跟官图相差不大，但也有一个小「Bug」，比如第二个例子，输入提示词后最终输出的却是文字。这一度让我以为我没有调整到 DALL·E 3 界面，当然，问题也不大，只不过是多了个再次确认的步骤。琳琅满目的「Gallery 画廊」里展示了各式各样的生成图片，漫画，像素画、油画，什么样的风格都应有尽有。OpenAI 似乎想通过「Gallery 画廊」告诉用户，只有你想不到，没有 DALL·E 3「画」不了。
+最终的实际效果跟官图相差不大，但也有一个小「Bug」，比如第二个例子，输入提示词后最终输出的却是文字。这一度让我以为我没有调整到 DALL·E 3 界面，当然，问题也不大，只不过是多了个再次确认的步骤。琳琅满目的「Gallery 画廊」里展示了各式各样的生成图片、漫画、像素画、油画，什么样的风格都应有尽有。OpenAI 似乎想通过「Gallery 画廊」告诉用户，只有你想不到，没有 DALL·E 3「画」不了。
 
 ![](img/30a1c73ff22aefdd494247c280f6af29.png)
 
 画是能画出来，但画得好不好才是关键，例如，我尝试让他画一幅李白穿白衣，杜甫穿黑衣的对弈图。「Stop generating」持续了一会，给出了啼笑皆非的四幅图，第一幅图，不光衣服的颜色出错，更有趣的是，李白和杜甫变成了国际友人，下的棋还是国际象棋，显然，DALL·E 3 在理解中文的语境上还有待加强。
 
 ![](img/c14de2d3b6b1521ea3973b88e2b47a11.png)
-
 ![](img/4552d376fbafb44197a0cdded1ce7999.png)
-
 ![](img/f8b30abaa30ba870f48062eff7a03aaf.png)
-
 ![](img/7d66137d9819c17cb182bc7445fb27ae.png)
 
 向左滑动查看更多内容
@@ -50,31 +44,30 @@ DALL·E 3 并不是什么陌生的工具，但还是要给不了解的朋友解�
 
 ![](img/48ff6d9c7502f2da131ddadaebab7693.png)
 
-**乍一看，似乎没什么大问题，但仔****细看看棋盘后，你会发现：**李白和杜甫把围棋下成了「拼图」？对弈期间，有点摩擦很正常嘛，于是我让 DALL·E 3 按照下方要求生成了连环图。
+**乍一看，似乎没什么大问题，但仔细看看棋盘后，你会发现：**李白和杜甫把围棋下成了「拼图」？对弈期间，有点摩擦很正常嘛，于是我让 DALL·E 3 按照下方要求生成了连环图。
 
-李白对弈时，恼羞成怒，掀了棋盘
-
-杜甫生气了，打了李白一拳
-
-最后李白和杜甫握手言谈，继续下棋
+- 李白对弈时，恼羞成怒，掀了棋盘
+- 杜甫生气了，打了李白一拳
+- 最后李白和杜甫握手言谈，继续下棋
 
 ![](img/d7b6f8e35c4dc916f04fdff9bb14d524.png)
-
 ![](img/dfc87d5a3839e0bc9f378f2a03ab8aad.png)
 
 向左滑动查看更多内容
 
 ![](img/8dccce3e51a429f045a662232317ce79.png)
 
-满分十分，你觉得可以给这三幅图打几分？从全量推送到现在，在神通广大的网友开发下， DALL·E 3 也被玩出了各种新花样。如果你是高达玩家，你可以让 DALL·E 3 化身设计师，给你设计出最酷炫的高达图纸，清单式地展示各类零部件，然后再利用 3D 打印出来。只不过需要注意的是，高达图纸详尽的细节看似唬人，实则也会偶尔多出几个零部件。
+满分十分，你觉得可以给这三幅图打几分？从全量推送到现在，在神通广大的网友开发下，DALL·E 3 也被玩出了各种新花样。如果你是高达玩家，你可以让 DALL·E 3 化身设计师，给你设计出最酷炫的高达图纸，清单式地展示各类零部件，然后再利用 3D 打印出来。只不过需要注意的是，高达图纸详尽的细节看似唬人，实则也会偶尔多出几个零部件。
 
 ![](img/cf1646f48d39edecfd0843919b88d92c.png)
 
-又或者扎克伯格与马斯克的「笼中决斗」迟迟并未成行，加之 C 口 与 Lightning 口的转换也引起了许多争议，那为什么不让 Lightning 口与 C 口来一场精彩的「笼中决斗」呢？
+又或者扎克伯格与马斯克的「笼中决斗」迟迟并未成行，加之 C 口与 Lightning 口的转换也引起了许多争议，那为什么不让 Lightning 口与 C 口来一场精彩的「笼中决斗」呢？
 
 ![](img/e48c58b20db1e0c72c18e4a5ade61943.png)
 
-# 无需提示词的背后，是 AI 在给你打工除了 DALL·E 3 的全量推送，OpenAI 还通过一篇论文向外界揭秘 DALL·E 3 背后具体的技术细节。为了方便你理解，我们对这篇论文抽丝剥茧后，将用一个简单的例子来解释整个技术流程。首先 OpenAI 收集了大量的图像和对应的文字描述作为训练数据，比如图片是一只猫，那么图片对应的描述是一只橘色的猫坐在椅子上。
+## 无需提示词的背后，是 AI 在给你打工
+
+除了 DALL·E 3 的全量推送，OpenAI 还通过一篇论文向外界揭秘 DALL·E 3 背后具体的技术细节。为了方便你理解，我们对这篇论文抽丝剥茧后，将用一个简单的例子来解释整个技术流程。首先 OpenAI 收集了大量的图像和对应的文字描述作为训练数据，比如图片是一只猫，那么图片对应的描述是一只橘色的猫坐在椅子上。
 
 ![](img/b80b79e0e7521913dc8e88bc0ba03e16.png)
 
@@ -92,17 +85,14 @@ DALL·E 3 并不是什么陌生的工具，但还是要给不了解的朋友解�
 
 为了避免陷入版权纠纷，OpenAI 研究人员在训练过程中，也明确限制了 DALL·E 3 模仿在世名人的艺术风格。至于号称识别成功率高达 99% 的检测器，官方博客也透露了更多的消息。尽管该检测器确实不错，但更多是指识别由 DALL·E 生成的图片，而能否稳定识别其他 AI 工具生成的图片，OpenAI 自己内心也没底。看到这里，相信你已经发现，其他 AI 图像生成器需要改进的地方，DALL·E 3 同样也有，比如对中文语境的不熟悉、图像语料库的生搬硬套等等，号称「乱拳打死人类」的 DALL·E 3 也未必能画好一只手。但相比以往的深陷争议，这一次，OpenAI 总归是朝着更加开放、负责任的方向迈进。
 
-来源：https://mp.weixin.qq.com/s/4wNlJ169VLysFWsUtph0rg
+来源：[https://mp.weixin.qq.com/s/4wNlJ169VLysFWsUtph0rg](https://mp.weixin.qq.com/s/4wNlJ169VLysFWsUtph0rg)
 
-##### 继续浏览全站内容：
+### 继续浏览全站内容
 
-[🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
-
-[🤔学习AI工作流](https://jalicvoygc0.feishu.cn/wiki/W15IwochvimsqvkkuCPcZuBxnqg)
-
-[🤖查找AI工具](https://jalicvoygc0.feishu.cn/wiki/Bu8GwqYu8i5LBRkyVKocUvX5n97)
-
-[📊阅读AI文章](https://jalicvoygc0.feishu.cn/wiki/SIywwqrVji2lZkkqFFpcEHZ8nNc)
+- [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
+- [🤔学习AI工作流](https://jalicvoygc0.feishu.cn/wiki/W15IwochvimsqvkkuCPcZuBxnqg)
+- [🤖查找AI工具](https://jalicvoygc0.feishu.cn/wiki/Bu8GwqYu8i5LBRkyVKocUvX5n97)
+- [📊阅读AI文章](https://jalicvoygc0.feishu.cn/wiki/SIywwqrVji2lZkkqFFpcEHZ8nNc)
 
 扫码加入AI Flow Genius社群，探讨使用AI来提升生产力的方法，成为超级个体
 

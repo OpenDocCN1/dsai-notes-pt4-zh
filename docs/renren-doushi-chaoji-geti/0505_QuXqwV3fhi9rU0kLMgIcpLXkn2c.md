@@ -1,8 +1,9 @@
+
 # 保姆级教程|coze+剪映批量制作火柴人心理学玩法
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZtqOdoOuhogJjXxcuHAcZlGVnUb](https://xuqiwei1986.feishu.cn/docx/ZtqOdoOuhogJjXxcuHAcZlGVnUb)
 
-# 1.前言
+## 1. 前言
 
 大家好，我是一泽，最近coze上线了联动剪映的功能后，很多琐碎的剪辑工作量就完全可以自动化处理掉了！可以省下大量时间来做项目
 
@@ -10,7 +11,7 @@
 
 > 一点心理博主主页：
 
-> https://www.xiaohongshu.com/user/profile/5d04e8810000000011002e56?xsec_token=AB6GDkPLIMCB35YxAJWQnL_yMOTfprZvDu0IOxHDqrBgI%3D&xsec_source=pc_search
+> `https://www.xiaohongshu.com/user/profile/5d04e8810000000011002e56?xsec_token=AB6GDkPLIMCB35YxAJWQnL_yMOTfprZvDu0IOxHDqrBgI%3D&xsec_source=pc_search`
 
 ![](img/68596db5d3f25f242900bb4a237ea2b1.png)
 
@@ -34,11 +35,11 @@
 
 [心理学视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UnPlbk41eoDHSgxMOfqcF30knkg)
 
-# 2.工作流成品展示
+## 2. 工作流成品展示
 
 ![](img/482ec5180eca6220325f231b8ad0e4e8.png)
 
-# 3.工作流拆分讲解
+## 3. 工作流拆分讲解
 
 整个工作流的流程图如下：
 
@@ -48,13 +49,13 @@
 
 ![](img/7f2f6a9d4d54cfcdba4486a23b2f3c9c.png)
 
-# 4.工作流制作流程
+## 4. 工作流制作流程
 
-## 4.1 coze官网：
+### 4.1 coze 官网
 
-https://www.coze.cn/home
+`https://www.coze.cn/home`
 
-## 4.2 创建工作流
+### 4.2 创建工作流
 
 先点击左侧工作空间，再点击右边新建工作流
 
@@ -66,9 +67,9 @@ https://www.coze.cn/home
 
 ![](img/dc9c4247c86d2ade2d5292e2cd3620c4.png)
 
-## 4.3 工作流的参数设置
+### 4.3 工作流的参数设置
 
-### 【开始】模块的参数设置：
+#### 【开始】模块的参数设置：
 
 ![](img/9769c687be81f7fa31aa87b62e29b384.png)
 
@@ -118,7 +119,7 @@ https://www.coze.cn/home
 
 +   要通过黑白火柴人视频形式提升内容理解效率，为每个心理学概念提供至少 1 个贴近生活的应用案例。
 
-### 【分镜】模块的参数设置：
+#### 【分镜】模块的参数设置：
 
 这个【分镜脚本】也是大模型，跟上面那个是一样的，只不过我给它改名叫【分镜脚本】
 
@@ -136,7 +137,7 @@ https://www.coze.cn/home
 
 ### 技能 1: 生成火柴人视频相关内容
 
-1.  仔细从用户给到的{{desc}}中合理分割得出字幕内容。
+1.  仔细从用户给到的`{{desc}}`中合理分割得出字幕内容。
 
 1.  将分割得出的字幕另外输出一个对应的英文翻译版本。3. 根据分割出来的每一句内容，生成符合心理学主题的火柴人黑白简笔画图案的详细描述词。
 
@@ -158,9 +159,9 @@ https://www.coze.cn/home
 
 +   分镜脚本的动作描述要精准清晰，时长设置要科学合理且符合实际创作逻辑。
 
-### 【语音朗读】模块的参数设置：
+#### 【语音朗读】模块的参数设置：
 
-调用【语音合成】插件  speech_synthesis
+调用【语音合成】插件 `speech_synthesis`
 
 ![](img/8756e6b7e7455a543bce0bca99402e1e.png)
 
@@ -168,7 +169,7 @@ https://www.coze.cn/home
 
 语音模块是用来朗读字幕的，分镜脚本输出多个文案出来后，有多个字幕要朗读，所以这边采用批处理的方式处理
 
-同时也要设置好朗读速率：speed_radio 和音色：voice_id，
+同时也要设置好朗读速率：`speed_radio` 和音色：`voice_id`，
 
 ![](img/e3f249cd4c2b8e5b90f965e654221d9d.png)
 
@@ -180,9 +181,9 @@ https://www.coze.cn/home
 
 ![](img/79a16a43f75e128648d832725dbc5191.png)
 
-### 【图片生成】模块的参数设置：
+#### 【图片生成】模块的参数设置：
 
-同理，图片也是需要批量生成，【图像生成模块】，生成的图需要抠图【cutout模块】，最后导入中英文字幕、图片放到画板上
+同理，图片也是需要批量生成，【图像生成模块】，生成的图需要抠图【`cutout`模块】，最后导入中英文字幕、图片放到画板上
 
 图片需要的3个模块：
 
@@ -208,7 +209,7 @@ https://www.coze.cn/home
 
 ![](img/e619d7bc1e1e123f2265b762423e2ef8.png)
 
-### 【剪映模块】参数设置
+#### 【剪映模块】参数设置
 
 导入的模块：
 
@@ -226,9 +227,9 @@ https://www.coze.cn/home
 
 首先在【批处理】导入【图片模块】和【朗读模块】输出的素材
 
-接着在【输入】部分，img_url下拉选择的时候选择【easy_create_material】模块的图片url
+接着在【输入】部分，`img_url`下拉选择的时候选择【`easy_create_material`】模块的图片url
 
-audio_url同理
+`audio_url`同理
 
 ![](img/80286ba49da6fd5d413c38bf743e8d8e.png)
 
@@ -252,7 +253,7 @@ audio_url同理
 
 ![](img/98ab7d28767332537510d67923efa34a.png)
 
-## 4.4 剪映小助手
+### 4.4 剪映小助手
 
 可以从文档直接下载：
 
@@ -262,7 +263,7 @@ audio_url同理
 
 也可以从网站下载，地址：
 
-https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-shanghai.aliyuncs.com/2025-05-04/draft/0126f89d-fecc-4224-ab45-7bda622bd8bf.json
+`https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-shanghai.aliyuncs.com/2025-05-04/draft/0126f89d-fecc-4224-ab45-7bda622bd8bf.json`
 
 ![](img/e9065f306f5af3bc2170e852559f4458.png)
 
@@ -280,7 +281,7 @@ https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-sh
 
 ![](img/96ee6e8e3d0d25d217a5911d5cabf8fe.png)
 
-# 5.扩展玩法
+## 5. 扩展玩法
 
 批量化之后会带来一个问题：同质化严重，这时候应该怎么办？
 
@@ -300,7 +301,7 @@ https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-sh
 
 ![](img/0e604e91d3067baf4f4ff6157283e9fe.png)
 
-# 6.工作流应用
+## 6. 工作流应用
 
 当我们成功创建了这个工作流后，想把它发布或者分享出去要怎么做呢？
 
@@ -314,7 +315,7 @@ https://ts.fyshark.com/#/cozeToJianyin?drafId=https://video-snot-12220.oss-cn-sh
 
 ![](img/4105842091fb190564af940e2e10d837.png)
 
-# 7.实操问题
+## 7. 实操问题
 
 如果出现无法引用前方的小圆点，需要把2个模块的线连接起来，模块右边的那个小圆点，要连到批处理左边的小圆点
 

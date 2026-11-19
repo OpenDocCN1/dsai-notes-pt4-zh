@@ -1,3 +1,4 @@
+
 # 借助AI辅助完成UI创意设计教程
 
 > 来源：[https://my.feishu.cn/docx/Aek7dph0yoVr14x7fpRcxWlwnzb](https://my.feishu.cn/docx/Aek7dph0yoVr14x7fpRcxWlwnzb)
@@ -14,11 +15,11 @@
 
 ![](img/cbc7018a757d31f1abdc369566589b07.png)
 
-1. 花瓣网找参考图，处理不必要的元素
+### 1. 花瓣网找参考图，处理不必要的元素
 
 这个弹窗设计我尝试了很多方法，发现还是需要垫图才能生成符合我想要的效果，所以这个方法还是得去找参考图才行，以下这张图来自花瓣网。
 
-用 ps 处理下文字，别偷懒~（百度直接搜“花瓣网”即可，然后搜索“弹窗设计”)。
+用 ps 处理下文字，别偷懒~（百度直接搜“花瓣网”即可，然后搜索“弹窗设计”）。
 
 ![](img/53974d22a15f4fcb05bbed5cf11c10f5.png)
 
@@ -26,11 +27,11 @@
 
 ![](img/8dd651c2a38446b3bcef4a36970766a5.png)
 
-**2. 关键词描述并垫图生成**
+### 2. 关键词描述并垫图生成
 
 然后我开始尝试写关键词，以下是完整关键词：
 
-Use a card as the background, It is surrounded by clover and white flowers, Green base, White trolley, Pale gold coins, Yellow stars, Clouds, Disney style, cartoon style, 3D, behance, dribbble --iw 2 --v 5.2
+Use a card as the background, It is surrounded by clover and white flowers, Green base, White trolley, Pale gold coins, Yellow stars, Clouds, Disney style, cartoon style, 3D, behance, dribbble `--iw 2` `--v 5.2`
 
 使用一张卡片作为背景，四周环绕着三叶草和白色的花朵，绿色的底座，白色的小车，淡金色的硬币，黄色的星星，云彩，迪士尼风格，卡通风格，3D, behance，dribbble
 
@@ -38,9 +39,9 @@ Use a card as the background, It is surrounded by clover and white flowers, Gree
 
 上面这个写关键词的网站还挺好用的，也内置了一些常用关键词，分享给大家： https://moonvy.com/apps/ops/
 
-接下来就简单了，垫图+关键词组合。参数命令用 --iw 2（增加图片权重，出图更接近原图）。--v 5.2 这个模型是最新的，用 v5 和 v5.1 模型生成的效果也差不多。
+接下来就简单了，垫图+关键词组合。参数命令用 `--iw 2`（增加图片权重，出图更接近原图）。`--v 5.2` 这个模型是最新的，用 v5 和 v5.1 模型生成的效果也差不多。
 
-**3. 挑选图片并抠图**
+### 3. 挑选图片并抠图
 
 [Midjourney ](https://www.uisdc.com/tag/midjourney)的随机性大家知道，多跑几次图准有你想要的图：
 
@@ -56,7 +57,7 @@ Use a card as the background, It is surrounded by clover and white flowers, Gree
 
 ![](img/c07842723f43e2c18abb050b9d4ab1f4.png)
 
-**4. 文案排版+UI 规范**
+### 4. 文案排版+UI 规范
 
 为什么会用到 PS Beta 呢，是因为我需要处理这个卡片上的元素，我需要有一块空白的地方填写文案，框选不需要的元素，使用“内容填充”和“创意式填充”，根据最终的效果来合理运用。
 
@@ -74,11 +75,11 @@ Use a card as the background, It is surrounded by clover and white flowers, Gree
 
 ![](img/a1c4e73df8058051509f12f7bbd6973a.png)
 
-**1. 找参考图，确定设计风格**
+### 1. 找参考图，确定设计风格
 
 我们在接到设计需求之后，大家是否会跟我一样，根据需求来去找对应的参考图片。需求分析我就不介绍了，我们直接开始视觉设计篇。
 
-首先就是去找到与需求描述相符的参考图片，注意的是我们下面的操作不会用到“/describe”功能（咱也不能老是用垫图的方法是不，这多没技术含量，虽然很好用...）。老办法，素材网站找参考图，这里还是我们的老朋友：花瓣。
+首先就是去找到与需求描述相符的参考图片，注意的是我们下面的操作不会用到 `/describe` 功能（咱也不能老是用垫图的方法是不，这多没技术含量，虽然很好用...）。老办法，素材网站找参考图，这里还是我们的老朋友：花瓣。
 
 ![](img/22126d094849f45866567d5659268920.png)
 
@@ -88,7 +89,7 @@ Use a card as the background, It is surrounded by clover and white flowers, Gree
 
 我会根据以上这个格式去写关键词，其实这个格式的顺序不是太重要，因为你会发现网上很多博主写的格式都不太一样，我建议大家按照自己的习惯描述就行，不要太久纠结到底是什么顺序，切记不要转牛角尖~
 
-2. 根据需求及参考图，写出关键词
+### 2. 根据需求及参考图，写出关键词
 
 画面主体：礼物盒，3D 图标，粘土，卡通，任天堂
 
@@ -96,7 +97,7 @@ Use a card as the background, It is surrounded by clover and white flowers, Gree
 
 细节词：白色背景，最高细节，等距视图，高清，最佳质量
 
-参数后缀：--niji 5 --q 2（质量）
+参数后缀：`--niji 5` `--q 2`（质量）
 
 ![](img/e06e25cb499bec3c3a3ca92fd6b97c45.png)
 
@@ -104,13 +105,13 @@ Use a card as the background, It is surrounded by clover and white flowers, Gree
 
 完整关键词咱也不能落下，要分享就拿出咱最大的诚意来：
 
-Gift box, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Red and yellow, Gradient color, White background, The highest detail, The best quality, Isometric view, HD --niji 5 --q 2
+Gift box, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Red and yellow, Gradient color, White background, The highest detail, The best quality, Isometric view, HD `--niji 5` `--q 2`
 
 这套关键词可以作为画这种 3D 风格图标的一套模板，可替换的关键词为：
 
 ![](img/d7b5951e5d5981fdd7a659a3989d42cc.png)
 
-**3. 挑选生成的素材，抠出元素**
+### 3. 挑选生成的素材，抠出元素
 
 开始跑图吧，剩下的事情就好办了，Midjourney 的随机性会让你不得不多跑几组图片，这一点要耐心~
 
@@ -124,7 +125,7 @@ Gift box, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Red and yell
 
 下面一步我会用“Figma”这个软件，大家用 PS 等设计工具也可以哈，都是可以完成最后一步的，接着看：
 
-**4. 排版出图，真的可落地！**
+### 4. 排版出图，真的可落地！
 
 排个版都会吧，打上文案，加点装饰元素，做个按钮，就很简单...
 
@@ -138,7 +139,7 @@ Gift box, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Red and yell
 
 ![](img/d3d2deb6feaffb707c8df417c9ab95c7.png)
 
-**1. 找参考图，确定设计风格**
+### 1. 找参考图，确定设计风格
 
 第一步，找风格元素参考去，这是我们接下来描写关键词的重点，建议大家不要凭空想象，先看别人做的，我们参考改进，下面还是这个网站（花瓣）：
 
@@ -150,7 +151,7 @@ Gift box, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Red and yell
 
 这期的效果也不用垫图，可关键词直出图，也可以垫图来控制画面风格，不过注意你如果生成的关键词是 盾牌图标 ，那么你垫的图片也要是 盾牌图标 ，不然会出现灾难现场，自己可以试试
 
-2. 根据需求及参考图，写出关键词
+### 2. 根据需求及参考图，写出关键词
 
 画面主体：一个 3D 盾牌 图标
 
@@ -158,17 +159,17 @@ Gift box, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Red and yell
 
 细节词：超简约外观，明亮色彩，工作室照明，光线追踪，蓝白色背景，工业设计，等距视图，丰富的细节，超高清，高质量，16K
 
-参数后缀：--V 5.2
+参数后缀：`--V 5.2`
 
 ![](img/b091bd375d6717f32c763772b49a9c23.png)
 
 这组描述词我测试了很久很久，现在我感觉用 AI 绘图最耗时间的事情就是写关键词了，因为需要不断的用关键词来测试效果，这个效果不行就修改关键词继续测试，所以写关键词也很重要！！以下是完整关键词：
 
-A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and technology, Ultra-minimalist appearance, Bright color, Studio lighting, Blue and white background, Industrial design, A wealth of details, Ultra high definition, dribble, pinterest, Ray tracing, Isometric view, blender, c4d, Oc renderer, High quality, 16K --v 5.2
+A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and technology, Ultra-minimalist appearance, Bright color, Studio lighting, Blue and white background, Industrial design, A wealth of details, Ultra high definition, dribble, pinterest, Ray tracing, Isometric view, blender, c4d, Oc renderer, High quality, 16K `--v 5.2`
 
 橙色标注地方为可替换关键词，其它关键词可保持不变，同样这套可作为 B 端科技风格图标的一套模板关键词。
 
-3. 生成合成图片素材，抠出元素
+### 3. 生成合成图片素材，抠出元素
 
 先来看看我最终设计的图片：
 
@@ -198,7 +199,7 @@ A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and
 
 ![](img/2e6ae1bbbd13520fb66f3810be7748d6.png)
 
-怕你们看不懂，我再啰嗦一遍，找一张合适的图片参考，然后用“/describe”命令，找一组大致符合这个图片的关键词，然后垫同样的图片，把关键词加上，跑图即可。
+怕你们看不懂，我再啰嗦一遍，找一张合适的图片参考，然后用 `/describe` 命令，找一组大致符合这个图片的关键词，然后垫同样的图片，把关键词加上，跑图即可。
 
 ![](img/225b2806ebbcc70baa95511fbb3d31a4.png)
 
@@ -206,7 +207,7 @@ A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and
 
 ![](img/9ccbbb4ae1d76df0e044de784180c4d6.png)
 
-**4. 合成排版出图，可落地！！**
+### 4. 合成排版出图，可落地！！
 
 我的宝藏设计工具：Figma！先出个 Demo，把文案排版一下：
 
@@ -220,7 +221,7 @@ A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and
 
 ![](img/7e177fd81c93212b24e6e5149c7dba04.png)
 
-**1. 找参考图，确定设计风格**
+### 1. 找参考图，确定设计风格
 
 老样子，先找参考图，根据参考图及需求写出关键词，这期的福袋设计会用到垫图+关键词 的方式。
 
@@ -236,7 +237,7 @@ A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and
 
 尝试了关键词直接生成的图片，很难生成符合国内的福袋风格...
 
-2. 根据需求及参考图，写出关键词
+### 2. 根据需求及参考图，写出关键词
 
 画面主体：福袋，3D 图标
 
@@ -244,17 +245,17 @@ A 3D shield icon, Blue gradient, Frosted glass, Transparent sense of science and
 
 细节词：红色和黄色，白色背景，3D 渲染，最高细节，最好的质量，正视图，高清，8K
 
-参数后缀：--niji 5
+参数后缀：`--niji 5`
 
 ![](img/ce352987a1886aa1e525c6c1b2048a41.png)
 
 基本上我就修改了前面的关键词，后面的关键词都可以被固定，作为生成 3D 元素的关键词，改变主体元素即可，然后改下颜色关键词，以下是完整关键词：
 
-Blessing bag , 3D icon, Chinese style , Cartoon style, Clay material, Lovely, smooth, Red and yellow, White background, The highest detail, The best quality, Upright view, 3D rendering, HD, 8K --niji 5
+Blessing bag , 3D icon, Chinese style , Cartoon style, Clay material, Lovely, smooth, Red and yellow, White background, The highest detail, The best quality, Upright view, 3D rendering, HD, 8K `--niji 5`
 
 橙色标注地方为可替换关键词，其它关键词可保持不变。
 
-3. 生成合成图片素材，抠出元素
+### 3. 生成合成图片素材，抠出元素
 
 然后开始操作跑图吧，垫上前面找的参考，然后加上关键词，然后抠图都知道吧，不重复了：
 
@@ -266,7 +267,7 @@ Blessing bag , 3D icon, Chinese style , Cartoon style, Clay material, Lovely, sm
 
 还有个小知识，可以多垫几张图，但是风格需要是一致的图片，这样通过 垫图+关键词 的操作，生不出合适的元素，你可以化身“东北锤王”来捶我，我不反抗
 
-**4. 文案排版+UI 规范**
+### 4. 文案排版+UI 规范
 
 处理下图片吧，把不需要的元素，效果不好的地方，用“PS Beta”处理下，不用 Beta 版本也行，我也只用到了“内容填充”的功能。
 
@@ -282,25 +283,25 @@ Blessing bag , 3D icon, Chinese style , Cartoon style, Clay material, Lovely, sm
 
 ![](img/3ebd946f73572d9e9ce0ef5219d196de.png)
 
-**1. 关键词生图**
+### 1. 关键词生图
 
 这个系列的 3D 元素关键词基本就是通用的模板，大家把这套关键词保存好即可，替换部分关键词就可以控制 3D 元素的形状和风格，一下紫色地方关键词可替换。
 
 ![](img/bc1eceaeeb4efe05b022ff162810602a.png)
 
-car, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Pink and blue, Gradient color, White background, The highest detail, The best quality, Isometric view, HD --niji 5 --q 2
+car, 3D icon, clay, Cartoon, Nintendo, Lovely, smooth, Luster, Pink and blue, Gradient color, White background, The highest detail, The best quality, Isometric view, HD `--niji 5` `--q 2`
 
 汽车，3D 图标，粘土，卡通，任天堂，可爱，光滑，光泽，粉色和蓝色，渐变颜色，白色背景，最高的细节，最好的质量，等距视图，高清
 
 ![](img/5e2824769d58c50fd77465b5295d9fac.png)
 
-**2. 快捷一键抠图**
+### 2. 快捷一键抠图
 
 上一步生成了下面这些 3D 元素，接下来就开始抠图了
 
 ![](img/8762bb5f8f9fdd752c715ac8d267bbe4.png)
 
-**3. Figma 排版出设计稿**
+### 3. Figma 排版出设计稿
 
 我们 3D 元素搞定了，接下来就是做 UI 设计稿了，把信息和 3D 元素组合一起就大功告成了。
 

@@ -1,18 +1,13 @@
-# 2024-01-01AI绘图模型不会写字的难题，被阿里破解了-今日头条
-
-> 来源：[https://xuqiwei1986.feishu.cn/docx/KQmxdqDRoocwF7xWArCcJc6Cnkc](https://xuqiwei1986.feishu.cn/docx/KQmxdqDRoocwF7xWArCcJc6Cnkc)
-
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7318990797720830515/?log_from=b7b4a2908dc63_1704264447858).com/article/731...
-
->
 
 # AI绘图模型不会写字的难题，被阿里破解了
 
+> 来源：https://xuqiwei1986.feishu.cn/docx/KQmxdqDRoocwF7xWArCcJc6Cnkc  
+> 原文链接：https://www.toutiao.com/article/7318990797720830515/?log_from=b7b4a2908dc63_1704264447858  
+
 2024-01-01 13:05 · 量子位
 
-> 克雷西 发自 凹非寺
-
-> 量子位 | 👸号 QbitAI
+> 克雷西 发自 凹非寺  
+> 量子位 | 👸号 QbitAI  
 
 能准确写汉字的AI绘图工具，终于登场了！
 
@@ -36,7 +31,7 @@
 
 究竟AnyText效果如何，我们也实际体验了一番。
 
-# 各种风格轻松驾驭
+## 各种风格轻松驾驭
 
 官方在GitHub文档中提供了AnyText的部署教程，也可以在魔搭社区中体验。
 
@@ -88,11 +83,11 @@ AnyText支持中英文Prompt，不过从程序日志来看，中文提示词会�
 
 那么，研究人员是怎样让AnyText学会写字的呢？
 
-# 文本渲染独立完成
+## 文本渲染独立完成
 
 AnyText是基于扩散模型开发的，主要分为两个模块，文字生成的过程是相对独立的。
 
-这两个模块分别是 **隐空间辅助模块 **和 **文本嵌入模块 **。
+这两个模块分别是`隐空间辅助模块`和`文本嵌入模块`。
 
 ![](img/9978acb4b9127006187c07c18212181b.png)
 
@@ -112,21 +107,13 @@ AnyText是基于扩散模型开发的，主要分为两个模块，文字生成�
 
 此外，AnyText还支持嵌入其他扩散模型，为之提供文本生成支持。
 
-论文地址：
+论文地址：https://arxiv.org/abs/2311.03054
 
-https://arxiv.org/abs/2311.03054
+GitHub：https://github.com/tyxsspa/AnyText
 
-GitHub：
+魔搭社区：https://modelscope.cn/models/damo/cv_anytext_text_generation_editing/summary
 
-https://github.com/tyxsspa/AnyText
-
-魔搭社区：
-
-https://modelscope.cn/models/damo/cv_anytext_text_generation_editing/summary
-
-笔记：
-
-https://colab.research.google.com/github/camenduru/AnyText-colab/blob/main/AnyText_colab.ipynb
+笔记：https://colab.research.google.com/github/camenduru/AnyText-colab/blob/main/AnyText_colab.ipynb
 
 — 完 —
 

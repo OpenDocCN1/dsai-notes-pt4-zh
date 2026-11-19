@@ -1,3 +1,4 @@
+
 # B 端软件文档材料写作助手
 
 > 来源：[https://chatmemo.feishu.cn/docx/F1EcdUM2Co601VxXbTfc9VWdndh](https://chatmemo.feishu.cn/docx/F1EcdUM2Co601VxXbTfc9VWdndh)
@@ -79,7 +80,7 @@ Gmail收件箱的设计理念是将复杂的邮件管理任务简化，为用户
 适合模型：claude 3.5
 
 ## 任务
-请帮我把&lt;init&gt;中多个子功能对应的主功能的总体功能描述写出来。
+请帮我把`init`中多个子功能对应的主功能的总体功能描述写出来。
 请你思考标书中，这类主功能需要写到的粒度，输出合适的结果。
 
 ## 注意

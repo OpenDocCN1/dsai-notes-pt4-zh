@@ -1,16 +1,16 @@
+
 # 网友缝合 Llama3 120B 竟意外能打，轻松击败 GPT2-chatbot 和 GPT-4 | 量子位
 
-> 来源：[https://agijuejin.feishu.cn/docx/WEAsdnMvoo7GhYxY2cScpfNDnGd](https://agijuejin.feishu.cn/docx/WEAsdnMvoo7GhYxY2cScpfNDnGd)
-
+> 来源：`https://agijuejin.feishu.cn/docx/WEAsdnMvoo7GhYxY2cScpfNDnGd`
 > 还有更大更强的版本
-
 > 白交 发自 凹非寺
-
 > 量子位 | 👸号 QbitAI
+
+## 模型表现与实测
 
 Llama 3 首发阵容里没有的 120B 型号竟意外 “曝光”，而且十分能打？！
 
-最近这样一个号称是「**Llama3-120b**」的神秘大模型火了起来，原因在于它表现太出色了——
+最近这样一个号称是「Llama3-120b」的神秘大模型火了起来，原因在于它表现太出色了——
 
 轻松击败 GPT-4、gpt2-chatbot 那种。
 
@@ -22,7 +22,7 @@ GPT-4 冷酷而决绝：No；
 
 ![](img/acee5e79d518b9078b148540ad117a0c.png)
 
-还有就是让 LIama3-120B 解释笑话，并同两个 gpt2-chatbot 比较：im-a-good-gpt2-chatbot；im-also-a-good-gpt2-chatbot。
+还有就是让 LIama3-120B 解释笑话，并同两个 gpt2-chatbot 比较：`im-a-good-gpt2-chatbot`；`im-also-a-good-gpt2-chatbot`。
 
 > I randomly walked past the grave of bayes yesterday, but being a frequentist i didn’t bother taking a photo。
 
@@ -54,7 +54,7 @@ Frequentist 频率学派只关注从抽样 / 实验的结果中提取信息，Ba
 
 （没有说 ChatGPT 不好的意思）
 
-**有评测过后的网友感**叹：它太聪明了，我不会再摆弄它了。因为它有自己的想法。
+有评测过后的网友感叹：它太聪明了，我不会再摆弄它了。因为它有自己的想法。
 
 ![](img/809d4c13ccfba1cb58225a33d83eda08.png)
 
@@ -70,13 +70,15 @@ Frequentist 频率学派只关注从抽样 / 实验的结果中提取信息，Ba
 
 ![](img/6dce0753d49a90aa4d92bb43ef2fb870.png)
 
+## 模型玩法与社区探索
+
 这两天，社交网络上出现了各种关于 Llama3 120B 玩法。
 
 比如推导解释一些理论，Omega 假设。
 
 ![](img/30bd929d13a548473be44a93437f4976.png)
 
-有创造一些新单词，比如 prefaceate、driftift 等
+有创造一些新单词，比如 `prefaceate`、`driftift` 等
 
 ![](img/602a03516dcdfe57f2517ddb16c88a4e.png)
 
@@ -88,13 +90,15 @@ Frequentist 频率学派只关注从抽样 / 实验的结果中提取信息，Ba
 
 ![](img/fa70b699d39c438a213367c8a31ef99a.png)
 
+## 模型来源与制作原理
+
 既然如此，这个非官方的大模型 Llama3 120B 又是怎么来的呢？
 
-据作者介绍，它是用 MergeKit 制作，将 Meta 官方 LIama3 70B 模型合并（Self-Merge）
+据作者介绍，它是用 `MergeKit` 制作，将 Meta 官方 LIama3 70B 模型合并（Self-Merge）
 
-MergeKit 咋是专门用来合并预训练模型的工具包，合并可以完全在 CPU 上运行，也可以使用低至 8GB 的 VRAM 进行加速。在 GitHub 上已经收获 3.6k 星。
+`MergeKit` 咋是专门用来合并预训练模型的工具包，合并可以完全在 CPU 上运行，也可以使用低至 8GB 的 VRAM 进行加速。在 GitHub 上已经收获 3.6k 星。
 
-目前支持 Llama、Mistral、GPT-NeoX、StableLM 等模型。
+目前支持 `Llama`、`Mistral`、`GPT-NeoX`、`StableLM` 等模型。
 
 ![](img/b3bd110bad9d536825827ff40eef76b6.png)
 
@@ -104,7 +108,7 @@ MergeKit 咋是专门用来合并预训练模型的工具包，合并可以完�
 
 ![](img/b010caafa51bcfc22f086f8d727ed4b0.png)
 
-他也是开发者社区的活跃开发者，在 HuggingFace 上发布过各种 LLM， 例如 AlpahMonarch-7B、Beyonder-4x7B、Phixtral 和 NeuralBeagle14。以及一些工具，例如 LLM AutoEval、LazyMergekit、LazyZxolotl 和 AutoGGUF。
+他也是开发者社区的活跃开发者，在 HuggingFace 上发布过各种 LLM， 例如 `AlpahMonarch-7B`、`Beyonder-4x7B`、`Phixtral` 和 `NeuralBeagle14`。以及一些工具，例如 `LLM AutoEval`、`LazyMergekit`、`LazyZxolotl` 和 `AutoGGUF`。
 
 在 GitHub 上他的关于大模型课程，收获 29.5K Star。
 
@@ -124,7 +128,7 @@ MergeKit 咋是专门用来合并预训练模型的工具包，合并可以完�
 
 ![](img/cd5c09a2f390095e1eaf5e58574809b4.png)
 
-lmsysorg 就深入分析了 LIama3 的实力，简单来说，LIama3 在开放式写作和创意问题上击败了顶尖模型，但在封闭式数学和编码问题上就稍弱一点。
+`lmsysorg` 就深入分析了 LIama3 的实力，简单来说，LIama3 在开放式写作和创意问题上击败了顶尖模型，但在封闭式数学和编码问题上就稍弱一点。
 
 ![](img/57c75d5c1c1bd178ed49dca4655c3c80.png)
 
@@ -142,7 +146,9 @@ lmsysorg 就深入分析了 LIama3 的实力，简单来说，LIama3 在开放�
 
 ![](img/c18305a1f02715cafe2b139bfb6c63ec.png)
 
-有网友尝试本地部署，Ollama 上已经支持下载。网友表示：它使用 48 GB VRAM + 38 GB 系统 RAM。
+## 本地部署与展望
+
+有网友尝试本地部署，`Ollama` 上已经支持下载。网友表示：它使用 48 GB VRAM + 38 GB 系统 RAM。
 
 ![](img/af7840565846d8f87fbbef4c4e8a68e6.png)
 
@@ -150,7 +156,7 @@ lmsysorg 就深入分析了 LIama3 的实力，简单来说，LIama3 在开放�
 
 ![](img/e45e49745ddabb3f35db771cc6f6e6f0.png)
 
-有提供 GGUF 形式的 LMStudioAI，也很直接地说：不适合内存不足的人。
+有提供 `GGUF` 形式的 `LMStudioAI`，也很直接地说：不适合内存不足的人。
 
 ![](img/6d4c71059c3b47245d32d1cf94cde630.png)
 
@@ -164,20 +170,20 @@ lmsysorg 就深入分析了 LIama3 的实力，简单来说，LIama3 在开放�
 
 ![](img/3865f087b9b9a48d24777f2e0e81496a.png)
 
-参考链接：
+## 参考链接
 
-[1]x.com/spectate_or…
+[1] `x.com/spectate_or…`
 
-[2]x.com/spectate_or…
+[2] `x.com/spectate_or…`
 
-[3]x.com/spectate_or…
+[3] `x.com/spectate_or…`
 
-[4]x.com/spectate_or…
+[4] `x.com/spectate_or…`
 
-[5]huggingface.co/mlabonne/Me…
+[5] `huggingface.co/mlabonne/Me…`
 
-[6]x.com/maximelabon…
+[6] `x.com/maximelabon…`
 
-[7]x.com/spectate_or…
+[7] `x.com/spectate_or…`
 
-[8]x.com/spectate_or…
+[8] `x.com/spectate_or…`

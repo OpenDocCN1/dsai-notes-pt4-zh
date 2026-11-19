@@ -1,8 +1,9 @@
+
 # 阿里云“云工开物”计划
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/QJcud43kyorpKMxsgWUcaeOKnkd](https://gotoaiworld.feishu.cn/docx/QJcud43kyorpKMxsgWUcaeOKnkd)
 
-“云工开物”是由阿里云发起的高校用云支持计划，支持AI时代的高校人才培养和科研创新。“云工开物”高校专属资源申请可至官网（https://university.aliyun.com/）进行申请。
+“云工开物”是由阿里云发起的高校用云支持计划，支持AI时代的高校人才培养和科研创新。“云工开物”高校专属资源申请可至官网（`https://university.aliyun.com/`）进行申请。
 
 截止目前，云工开物计划已支持全国300余所高校人工智能通识课建设，累计投入高校用云资源2亿元以上，助力高校学生培养与科研创新。
 
@@ -10,7 +11,7 @@
 
 阿里云高校云资源支持计划，以云计算和AI技术支持AI时代高校人才培养和科研创新。
 
-https://university.aliyun.com/?spm=a2c6h.12873639.article-detail.4.76ee3ce21A5fY9
+`https://university.aliyun.com/?spm=a2c6h.12873639.article-detail.4.76ee3ce21A5fY9`
 
 ![](img/3573c6329e8594c5570c302cba3dfd72.png)
 

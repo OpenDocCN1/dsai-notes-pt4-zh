@@ -1,8 +1,9 @@
+
 # 市场多一点，还是计划多一点 － 关于供给侧改革的一点想法
 
 > 来源：[https://leonzhang.feishu.cn/docx/KCfadI2VGo6CKdxSOwccSD1Mn1f](https://leonzhang.feishu.cn/docx/KCfadI2VGo6CKdxSOwccSD1Mn1f)
-
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/l-D31_2mrUCugYspjuLPPA)q.com/s/l-D31_2m...
+>
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/l-D31_2mrUCugYspjuLPPA)q.com/s/l-D31_2m...
 
 Colin 黄峥 2017-09-22 19:30 发表于
 

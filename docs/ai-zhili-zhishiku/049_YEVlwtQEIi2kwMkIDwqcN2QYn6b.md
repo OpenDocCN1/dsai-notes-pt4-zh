@@ -1,14 +1,15 @@
+
 # 加拿大
 
 > 来源：[https://docs.feishu.cn/docx/DjoVddXKuoVvfQxryUWcFZHhnRh](https://docs.feishu.cn/docx/DjoVddXKuoVvfQxryUWcFZHhnRh)
 
 > **综述**
 
-> Chmabers介绍：[A](https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2023/canada)rtificial Intelligence 2023（Trends and Developments locations）
+> Chmabers介绍：[Artificial Intelligence 2023（Trends and Developments locations）](https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2023/canada)
 
 > AI Watch: Global regulatory tracker - Canada
 
-> Legal 500介绍：[Canada](https://www.legal500.com/guides/chapter/canada-artificial-intelligence/?_gl=1*1wod7ui*_up*MQ..*_ga*MTY2NzczOTUxMy4xNzE3MTE5Mjc4*_ga_JFNJC5V947*MTcxNzExOTI3OC4xLjAuMTcxNzExOTI3OC4wLjAuMA..)[: ](https://www.legal500.com/guides/chapter/canada-artificial-intelligence/?_gl=1*1wod7ui*_up*MQ..*_ga*MTY2NzczOTUxMy4xNzE3MTE5Mjc4*_ga_JFNJC5V947*MTcxNzExOTI3OC4xLjAuMTcxNzExOTI3OC4wLjAuMA..)Artificial Intelligence
+> Legal 500介绍：[Canada: Artificial Intelligence](https://www.legal500.com/guides/chapter/canada-artificial-intelligence/?_gl=1*1wod7ui*_up*MQ..*_ga*MTY2NzczOTUxMy4xNzE3MTE5Mjc4*_ga_JFNJC5V947*MTcxNzExOTI3OC4xLjAuMTcxNzExOTI3OC4wLjAuMA..)
 
 安杰世泽，
 

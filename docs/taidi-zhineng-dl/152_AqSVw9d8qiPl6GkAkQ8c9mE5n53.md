@@ -1,11 +1,11 @@
+
 # Windows 添加打印机
 
 > 来源：[https://learning.feishu.cn/docx/WdcrdoJVDoupbRxi5ficii3Unnb](https://learning.feishu.cn/docx/WdcrdoJVDoupbRxi5ficii3Unnb)
 
-打印机 IP 地址: 10.16.70.10
+打印机 IP 地址: `10.16.70.10`
 
 一共 5 步
-
 
 ![](img/c567734e372798ee7900b0db6c9f6a3a.png)
 

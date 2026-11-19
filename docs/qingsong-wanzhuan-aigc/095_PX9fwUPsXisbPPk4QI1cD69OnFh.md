@@ -1,6 +1,7 @@
+
 # AI辅助心理咨询
 
-> 来源：[https://my.feishu.cn/docx/HUNRdCSN4oOEcDx5AHYc2iG7n3b](https://my.feishu.cn/docx/HUNRdCSN4oOEcDx5AHYc2iG7n3b)
+> 来源：[`https://my.feishu.cn/docx/HUNRdCSN4oOEcDx5AHYc2iG7n3b`](https://my.feishu.cn/docx/HUNRdCSN4oOEcDx5AHYc2iG7n3b)
 
 ## 一、心理专家
 
@@ -56,7 +57,7 @@
 
 ### 社恐福音，一个 AI 提示词模板，轻松助力自我和解
 
-#手搓一个ai提示词
+### 手搓一个ai提示词
 
 ### 🌟【心理咨询师】巧用AI引导探索内心、认知自我、释放压力，随时回归一个松弛感
 
@@ -100,9 +101,9 @@
 
 3️⃣ 也欢迎你与我分享体验和感悟，一起完善这个 prompt。
 
-##### 提示词正文如图，可在kimi链接中一键复制调用： https://kimi.moonshot.cn/share/cpc8696bi7s9n72bq3l0
+##### 提示词正文如图，可在kimi链接中一键复制调用：`https://kimi.moonshot.cn/share/cpc8696bi7s9n72bq3l0`
 
-正常版
+### 正常版
 
 ```
 # Role：心理健康引导师
@@ -187,7 +188,7 @@ Prompt开头明确说明对话目标,引起用户兴趣
 
 另外，考虑到有些ai可能对长文提示词理解不行，这里有个简洁版的⬇️
 
-简洁版
+### 简洁版
 
 ```
 # Role：心理健康引导师
@@ -226,9 +227,7 @@ Prompt开头明确说明对话目标,引起用户兴趣
 现在,让我们从最简单的问题开始：最近您的生活状态如何？您可以从0到10为自己的压力水平打分,0代表毫无压力,10代表压力爆棚。请与我分享您的自评分数,以及为何会有这个评分。我在这里洗耳恭听,随时准备与您一起探索。
 ```
 
----
-
-作者简介：
+## 作者简介
 
 我是文森策，一个10年+品牌策划人，AI提示词&提效玩家。
 

@@ -1,3 +1,4 @@
+
 # 2024高考数学: 大模型解题能力几何？
 
 > 来源：[https://langgptai.feishu.cn/docx/Nj17dGnBWoElW7xHQWQcYXsBnjy](https://langgptai.feishu.cn/docx/Nj17dGnBWoElW7xHQWQcYXsBnjy)
@@ -14,15 +15,14 @@ LangGPT社区代码诗人群核心成员“陆游博士”花费了五个深夜�
 
 ### 2、数据预处理
 
-+   使用gpt4o进行ocr转换为Latex格式文本，并进行人工校对
-
-+   对每道题的选项ABCD进行倒序A->D,B->C,C->B,D->A构造镜像的29道逆序题
++ 使用`gpt4o`进行`OCR`转换为`Latex`格式文本，并进行人工校对
++ 对每道题的选项`ABCD`进行倒序`A->D,B->C,C->B,D->A`构造镜像的29道逆序题
 
 ### 3、答题过程
 
-正序和倒序题使用vanila Prompt(简单直出)和CoT Prompt(经典step bystep)调用模型答题，每题答2次，因此每个待测模型的总答题数为29x2x2x2=232次
+正序和倒序题使用`vanila Prompt`（简单直出）和`CoT Prompt`（经典step bystep）调用模型答题，每题答2次，因此每个待测模型的总答题数为`29x2x2x2=232`次
 
-> Vanilla Prompt（"Vanilla Prompt"一词是最基本或最简单形式的指令或请求，它没有复杂的条件、特定的风格或详细的描述，而是直接、明了地描述了所需的任务或要求）
+> `Vanilla Prompt`（“`Vanilla Prompt`”一词是最基本或最简单形式的指令或请求，它没有复杂的条件、特定的风格或详细的描述，而是直接、明了地描述了所需的任务或要求）
 
 ### 4、记分规则
 
@@ -30,11 +30,11 @@ LangGPT社区代码诗人群核心成员“陆游博士”花费了五个深夜�
 
 ### 5、推理增量定义
 
-ΔReason:= CoTPrompt得分-Vanila Prompt得分，反映模型因思维链推理额外获得的分数提升
+`ΔReason:= CoTPrompt得分-Vanila Prompt得分`，反映模型因思维链推理额外获得的分数提升
 
 ### 6、推理采样的超参数
 
-temperature=0.2，frequency_penalty=0
+`temperature=0.2，frequency_penalty=0`
 
 ## 三、实验过程（TODO 待补充、后续细化）
 
@@ -50,30 +50,30 @@ temperature=0.2，frequency_penalty=0
 
 ![](img/2f4dafc01075752f3ddf3a9c3b2c390b.png)
 
-![](img/0012f01a158ad3fbbd9d38555fc0ce15.png)
+![](img/0012f01a158ad3fbbd9d385555fc0ce15.png)
 
 ## 五、结论
 
 废话不多说，直接抛砖引玉一些可能不正确的观点：
 
-**1**）目前大模型能力已经达到独立做高考数学题的水准，使用未精调的CoT Prompt，旗舰模型可以做对约70%的单选题
+1）目前大模型能力已经达到独立做高考数学题的水准，使用未精调的`CoT Prompt`，旗舰模型可以做对约70%的单选题
 
 2）国产旗舰模型在这个测试场景下已经非常接近国外旗舰模型
 
-**3）模型升级后并不能一致性的提高Vanilla **Prompt和CoT Prompt的得分
+3）模型升级后并不能一致性的提高`Vanilla Prompt`和`CoT Prompt`的得分
 
-**4**）模型升级其实是模型上限的提升，而这上限需要Prompt去激发，否则会发生贵1000倍的模型比不上便宜1000倍模型的极端情况
+4）模型升级其实是模型上限的提升，而这上限需要`Prompt`去激发，否则会发生贵1000倍的模型比不上便宜1000倍模型的极端情况
 
-**5）同厂商发布的不同模型的定价不仅与CoT Prompt得分而且与Δ**Reason高度正相关，ΔReason越高的模型说明模型靠推理获得的泛化能力越强
+5）同厂商发布的不同模型的定价不仅与`CoT Prompt`得分而且与`ΔReason`高度正相关，`ΔReason`越高的模型说明模型靠推理获得的泛化能力越强
 
-**6）Vanilla Prompt**得分甚至与模型定价(能力)有负相关的倾向
+6）`Vanilla Prompt`得分甚至与模型定价(能力)有负相关的倾向
 
 7）正序题和逆序题答对数的方差越大说明模型对输入的敏感程度越高
 
-8）得0.5分的情况越多说明模型decode输出的空间越发散
+8）得0.5分的情况越多说明模型`decode`输出的空间越发散
 
 9）所有的评测都难免存在技术上的片面和主观上的偏见，这个评测也不例外
 
 致谢(排名不分先后)：
 
-四郎哥提供的API key和精美排版制图，代码诗人群算力天花板王维总提供的本地部署算力，以及LangGPT社群小伙伴们的各种支持[Party]
+四郎哥提供的`API key`和精美排版制图，代码诗人群算力天花板王维总提供的本地部署算力，以及LangGPT社群小伙伴们的各种支持[Party]

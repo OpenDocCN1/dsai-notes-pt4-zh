@@ -1,3 +1,4 @@
+
 # 隐私政策更新弹窗
 
 > 来源：[https://docs.feishu.cn/docx/Qs9RdU6G0oZpApxKSKHcznjwnCf](https://docs.feishu.cn/docx/Qs9RdU6G0oZpApxKSKHcznjwnCf)
@@ -10,7 +11,7 @@
 
 **-答3：**可能是非重大变更，抖音好像也是消息通知比较多。
 
-**-答4：****更新并不必然触发弹窗**。
+**-答4：**更新并不必然触发弹窗。
 
 **-答5：**个保法生效时更新🛰️会有弹窗，除此之外没怎么见过。
 

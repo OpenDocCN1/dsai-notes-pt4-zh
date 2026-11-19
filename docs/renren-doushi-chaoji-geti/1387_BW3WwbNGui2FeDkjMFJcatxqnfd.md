@@ -1,22 +1,21 @@
+
 # 2023-08-21从零训练大模型教程
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/NiQBdC3o6ohRXoxcp4qcVzFqnDh](https://xuqiwei1986.feishu.cn/docx/NiQBdC3o6ohRXoxcp4qcVzFqnDh)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/qQDV2L7EBQLivkoONgXR9A)q.com/s/qQDV2L7E...
-
->
+> 🔗 原文链接：[https://mp.weixin.qq.com/s/qQDV2L7EBQLivkoONgXR9A](https://mp.weixin.qq.com/s/qQDV2L7EBQLivkoONgXR9A)
 
 包包算法笔记 2023-08-21 08:01 发表于 北京
 
 以下文章来源于深度学习自然语言处理 ，作者何枝
 
-**深度学习自然语言处理 **.
+深度学习自然语言处理.
 
 一个热衷于深度学习与NLP前沿技术的平台，期待在知识的殿堂与你相遇~
 
 在这篇文章中，我们将尽可能详细地梳理一个完整的 LLM 训练流程。包括模型预训练（Pretrain）、Tokenizer 训练、指令微调（Instruction Tuning）等环节。
 
-##  1.预训练阶段（Pretraining Stage）
+## 1. 预训练阶段（Pretraining Stage）
 
 > 工欲善其事，必先利其器。
 
@@ -26,11 +25,11 @@
 
 但在实际情况中，我们通常会遇到一些问题，使得我们无法直接使用一些开源 backbone：
 
-1.  **语言不匹配： **大多数开源基座对中文的支持都不太友好，例如：[Llama]、[mpt]、[falcon] 等，这些模型在英文上效果都很优秀，但在中文上却差强人意。
+1. **语言不匹配：** 大多数开源基座对中文的支持都不太友好，例如：[Llama]、[mpt]、[falcon] 等，这些模型在英文上效果都很优秀，但在中文上却差强人意。
 
 ![](img/cd8a74699a56ea185fe2c2ba26a5aa39.png)
 
-1.  **专业知识不足： **当我们需要一个专业领域的 LLM 时，预训练模型中的知识就尤为重要。由于大多数预训练模型都是在通用训练语料上进行学习，对于一些特殊领域（金融、法律等）中的概念和名词无法具备很好的理解。我们通常需要在训练语料中加入一些领域数据（如：[xuanyuan 2.0]），以帮助模型在指定领域内获得更好的效果。
+1. **专业知识不足：** 当我们需要一个专业领域的 LLM 时，预训练模型中的知识就尤为重要。由于大多数预训练模型都是在通用训练语料上进行学习，对于一些特殊领域（金融、法律等）中的概念和名词无法具备很好的理解。我们通常需要在训练语料中加入一些领域数据（如：[xuanyuan 2.0]），以帮助模型在指定领域内获得更好的效果。
 
 ![](img/765037bed12f000e88d4af4115fb2f99.png)
 
@@ -38,7 +37,7 @@
 
 基于上述原因，我们在进行 SFT 步骤之前，先来看看预训练任务是如何做的。
 
-###  1.1 Tokenizer Training
+### 1.1 Tokenizer Training
 
 在进行预训练之前，我们需要先选择一个预训练的模型基座。
 
@@ -55,8 +54,8 @@
 例如：
 
 ```
-输入句子 &gt;&gt;&gt; 你好世界
-切词结果 &gt;&gt;&gt; [&#x27;你&#x27;, &#x27;好&#x27;, &#x27;世&#x27;, &#x27;界&#x27;]
+输入句子 >>> 你好世界
+切词结果 >>> ['你', '好', '世', '界']
 ```
 
 通常，tokenizer 有 2 种常用形式：WordPiece 和 BPE。
@@ -69,7 +68,7 @@ WordPiece 很好理解，就是将所有的「常用字」和「常用词」都�
 
 ![](img/dfdebad66e76695b58ea52147b5972eb.png)
 
-bert-base-chinese tokenizer 可视化
+`bert-base-chinese` tokenizer 可视化
 
 > 上述图片来自可视化工具 [tokenizer_viewer]。
 
@@ -79,16 +78,15 @@ bert-base-chinese tokenizer 可视化
 
 BERT 就会依次查找词表中对应的字，并将句子切成词的组合。
 
-
 BERT 切词测试图
 
-当遇到词表中不存在的字词时，tokenizer 会将其标记为特殊的字符 [UNK]：
+当遇到词表中不存在的字词时，tokenizer 会将其标记为特殊的字符 `[UNK]`：
 
 ![](img/831d57d5689f30d037652c094427525a.png)
 
 Out of Vocabulary（OOV）情况
 
-Byte Pair Encoder（BPE）
+**Byte Pair Encoder（BPE）**
 
 WordPiece 的方式很有效，但当字词数目过于庞大时这个方式就有点难以实现了。
 
@@ -152,7 +150,7 @@ Chinese LLaMA 和 原始LLaMA 之间 tokenizer 的区别
 
 《Towards Better Instruction Following Language Models for Chinese》 Page-4
 
-###  1.2 Language Model PreTraining
+### 1.2 Language Model PreTraining
 
 在扩充完 tokenizer 后，我们就可以开始正式进行模型的预训练步骤了。
 
@@ -184,7 +182,7 @@ GPT3 Paper Page-9
 
 数据预处理主要指如何将「文档」进行向量化。
 
-通常来讲，在 Finetune 任务中，我们通常会直接使用 truncation 将超过阈值（2048）的文本给截断，
+通常来讲，在 Finetune 任务中，我们通常会直接使用 `truncation` 将超过阈值（2048）的文本给截断，
 
 但在 Pretrain 任务中，这种方式显得有些浪费。
 
@@ -192,7 +190,7 @@ GPT3 Paper Page-9
 
 则每本书永远只能够学习到开头的 2048 tokens 的内容（连序章都不一定能看完）。
 
-因此，最好的方式是将长文章按照 seq_len（2048）作分割，将切割后的向量喂给模型做训练。
+因此，最好的方式是将长文章按照 `seq_len`（2048）作分割，将切割后的向量喂给模型做训练。
 
 **模型结构**
 
@@ -204,9 +202,9 @@ GPT3 Paper Page-9
 
 通常也会在 Position Embedding 上进行些处理，选用 ALiBi（[Bloom]）或 RoPE（[GLM-130B]）等。
 
-具体内容可以参考下面 **这篇文章 **[1]
+具体内容可以参考下面 这篇文章 [1]
 
-### ** 1.3 数据集清理 **
+### 1.3 数据集清理
 
 中文预训练数据集可以使用 [悟道]，数据集分布如下（主要以百科、博客为主）：
 
@@ -226,11 +224,11 @@ GPT3 Paper Page-9
 
 各种数据源 & 数据清理方法
 
-**有关 **Falcon 更多的细节可以看 这里 [2]
+有关 Falcon 更多的细节可以看 这里 [2]
 
-### ** 1.4 模型效果评测 **
+### 1.4 模型效果评测
 
-关于 Language Modeling 的量化指标，较为普遍的有 [PPL]，[BPC] 等，
+关于 Language Modeling 的量化指标，较为普遍的有 [PPL]、[BPC] 等，
 
 可以简单理解为在生成结果和目标文本之间的 Cross Entropy Loss 上做了一些处理。
 
@@ -304,9 +302,9 @@ D. 聘用生产外包商
 
 通过前面的样例后，模型能够知道在「答案：」后面应该输出选项字母。
 
-于是，我们获得模型续写后的第一个 token 的概率分布（logits），
+于是，我们获得模型续写后的第一个 token 的概率分布（`logits`），
 
-并取出「A B C D」这 4 个字母的概率，通过 softmax 进行归一化：
+并取出「A B C D」这 4 个字母的概率，通过 `softmax` 进行归一化：
 
 ```
 probs = (
@@ -314,19 +312,19 @@ probs = (
         torch.tensor(
             [
                 logits[self.tokenizer.encode(
-                    &quot;A&quot;, bos=False, eos=False)[0]],
+                    "A", bos=False, eos=False)[0]],
                 logits[self.tokenizer.encode(
-                    &quot;B&quot;, bos=False, eos=False)[0]],
+                    "B", bos=False, eos=False)[0]],
                 logits[self.tokenizer.encode(
-                    &quot;C&quot;, bos=False, eos=False)[0]],
+                    "C", bos=False, eos=False)[0]],
                 logits[self.tokenizer.encode(
-                    &quot;D&quot;, bos=False, eos=False)[0]],
+                    "D", bos=False, eos=False)[0]],
             ]
         ),
         dim=0,
     ).detach().cpu().numpy()
 )
-pred = {0: &quot;A&quot;, 1: &quot;B&quot;, 2: &quot;C&quot;, 3: &quot;D&quot;}[np.argmax(probs)]           # 将概率最大的选项作为模型输出的答案
+pred = {0: "A", 1: "B", 2: "C", 3: "D"}[np.argmax(probs)]           # 将概率最大的选项作为模型输出的答案
 ```
 
 C-Eval 通过这种方式测出了许多模型在中文知识上的效果，
@@ -339,7 +337,7 @@ C-Eval 也再一次证明了 GPT-4 是个多么强大的知识模型：
 
 各模型在 5-shot 下的得分排名
 
-## ** 2. 指令微调阶段（Instr**uction Tuning Stage）
+## 2. 指令微调阶段（Instruction Tuning Stage）
 
 在完成第一阶段的预训练后，就可以开始进到指令微调阶段了。
 
@@ -369,7 +367,7 @@ OpenAI 在 [instruction-following] 中展示了 GPT-3 和经过指令微调前�
 
 GPT-3 只是在做续写任务，InstructGPT 则能够回答正确内容
 
-###  2.1 Self Instruction
+### 2.1 Self Instruction
 
 既然我们需要去「教会模型说人话」，
 
@@ -399,6 +397,12 @@ InstructGPT Paper 训练数据集预览
 
 如果从 ChatGPT 「套」数据，那么我们至少需要「套」哪些数据。
 
+
+
+# 2 Instruction Tuning 数据构建与评测
+
+## 2.1 Instruction Tuning 数据构建
+
 Instruction Tuning 中的「输入」（问题）和「输出」（答案）是训练模型的关键，
 
 答案很好得到，喂给 ChatGPT 问题根据返回结果就能获得，
@@ -407,7 +411,7 @@ Instruction Tuning 中的「输入」（问题）和「输出」（答案）是�
 
 （靠人想太累了，屏幕前的你不妨试试，看看短时间内能想出多少有价值的问题）
 
-Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问题」又生成「答案」。
+Alpaca 则是使用「种子指令（`seed`）」，使得 ChatGPT 既生成「问题」又生成「答案」。
 
 由于 Alpaca 是英文项目，为了便于理解，我们使用相同思路的中文项目 [BELLE] 作为例子。
 
@@ -419,43 +423,37 @@ Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问
 
 以下是你提供指令需要满足的要求：
 
-1.尽量不要在每个指令中重复动词，要最大化指令的多样性。
+1. 尽量不要在每个指令中重复动词，要最大化指令的多样性。
 
-2.使用指令的语气也应该多样化。例如，将问题与祈使句结合起来。
+2. 使用指令的语气也应该多样化。例如，将问题与祈使句结合起来。
 
-3.指令类型应该是多样化的，包括各种类型的任务，类别种类例如：brainstorming，open QA，closed QA，rewrite，extract，generation，classification，chat，summarization。
+3. 指令类型应该是多样化的，包括各种类型的任务，类别种类例如：brainstorming，open QA，closed QA，rewrite，extract，generation，classification，chat，summarization。
 
-4.GPT语言模型应该能够完成这些指令。例如，不要要求助手创建任何视觉或音频输出。例如，不要要求助手在下午5点叫醒你或设置提醒，因为它无法执行任何操作。例如，指令不应该和音频、视频、图片、链接相关，因为GPT模型无法执行这个操作。
+4. GPT语言模型应该能够完成这些指令。例如，不要要求助手创建任何视觉或音频输出。例如，不要要求助手在下午5点叫醒你或设置提醒，因为它无法执行任何操作。例如，指令不应该和音频、视频、图片、链接相关，因为GPT模型无法执行这个操作。
 
-5.指令用中文书写，指令应该是1到2个句子，允许使用祈使句或问句。
+5. 指令用中文书写，指令应该是1到2个句子，允许使用祈使句或问句。
 
-6.你应该给指令生成适当的输入，输入字段应包含为指令提供的具体示例，它应该涉及现实数据，不应包含简单的占位符。输入应提供充实的内容，使指令具有挑战性。
+6. 你应该给指令生成适当的输入，输入字段应包含为指令提供的具体示例，它应该涉及现实数据，不应包含简单的占位符。输入应提供充实的内容，使指令具有挑战性。
 
-7.并非所有指令都需要输入。例如，当指令询问一些常识信息，比如“世界上最高的山峰是什么”，不需要提供具体的上下文。在这种情况下，我们只需在输入字段中放置“<无输入>”。当输入需要提供一些文本素材（例如文章，文章链接）时，就在输入部分直接提供一些样例。当输入需要提供音频、图片、视频或者链接时，则不是满足要求的指令。
+7. 并非所有指令都需要输入。例如，当指令询问一些常识信息，比如“世界上最高的山峰是什么”，不需要提供具体的上下文。在这种情况下，我们只需在输入字段中放置“<无输入>”。当输入需要提供一些文本素材（例如文章，文章链接）时，就在输入部分直接提供一些样例。当输入需要提供音频、图片、视频或者链接时，则不是满足要求的指令。
 
-8.输出应该是针对指令和输入的恰当回答。
+8. 输出应该是针对指令和输入的恰当回答。
 
 下面是10个任务指令的列表：
 
-###
+**指令**: 在面试中如何回答这个问题？
 
-1.指令: 在面试中如何回答这个问题？
+**输入**: 当你在车里独处时，你会想些什么？
 
-1.输入:当你在车里独处时，你会想些什么？
+**输出**: 如果是在晚上，我通常会考虑我今天所取得的进步，如果是在早上，我会思考如何做到最好。我也会尝试练习感恩和活在当下的状态，以避免分心驾驶。
 
-1.输出:如果是在晚上，我通常会考虑我今天所取得的进步，如果是在早上，我会思考如何做到最好。我也会尝试练习感恩和活在当下的状态，以避免分心驾驶。
+**指令**: 按人口对这些国家进行排名。
 
-###
+**输入**: 巴西，中国，美国，日本，加拿大，澳大利亚
 
-2.指令: 按人口对这些国家进行排名。
+**输出**: 中国，美国，巴西，日本，加拿大，澳大利亚
 
-2.输入:巴西，中国，美国，日本，加拿大，澳大利亚
-
-2.输出:中国，美国，巴西，日本，加拿大，澳大利亚
-
-###
-
-3.指令:
+**指令**:
 
 如上述例子所示，我们先给出 2 个样例，并让 ChatGPT 进行续写：
 
@@ -463,29 +461,29 @@ Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问
 
 ChatGPT 续写结果
 
-**关于 BE**LLE 的更多细节可以参考 这篇文章 [3]
+关于 `BELLE` 的更多细节可以参考 这篇文章 [3]
 
-### ** 2.2 开源数据集整理 **
+## 2.2 开源数据集整理
 
 在这一章中，我们将梳理一些开源的 Instruction Tuning 的数据集，
 
 除了直接拿来用以外，我们期望通过分析这些已有数据集，从而学习如何构建一个指令数据集。
 
-**Alpaca**
+### Alpaca
 
-[stanford_alpaca] 采用上述的 self instruction 的方式采集了 5200 条指令训练数据集。
+`stanford_alpaca` 采用上述的 self instruction 的方式采集了 5200 条指令训练数据集。
 
 数据样例如下：
 
-```
+```json
 {
-    &quot;instruction&quot;: &quot;Arrange the words in the given sentence to form a grammatically correct sentence.&quot;,
-    &quot;input&quot;: &quot;quickly the brown fox jumped&quot;,
-    &quot;output&quot;: &quot;The quick brown fox jumped quickly.&quot;
+    "instruction": "Arrange the words in the given sentence to form a grammatically correct sentence.",
+    "input": "quickly the brown fox jumped",
+    "output": "The quick brown fox jumped quickly."
 }
 ```
 
-其中，instruction 代表要求模型做的任务，input 代表用户输入， output 代表喂给模型的 label。
+其中，`instruction` 代表要求模型做的任务，`input` 代表用户输入，`output` 代表喂给模型的 `label`。
 
 Alpaca 覆盖了多种类型的指令，其数据分布如下：
 
@@ -495,17 +493,17 @@ Alpaca 数据分布图
 
 包含写作、描述、分类、摘要等多种类型的任务集合。
 
-**BELLE**
+### BELLE
 
 BELLE 开放了好几种规模的数据集，[100万]、[200万]、[350万] 等。
 
 训练数据集样例如下：
 
-```
+```json
 {
-    &quot;instruction&quot;: &quot;判断给定的文章是否符合语法规则。如果不符合，请提供修改建议。 下面是一篇文章的开头: ‘为了探讨这个主题，本文将提供一系列数据和实例，以证明这一观点。’&quot;,
-    &quot;input&quot;: &quot;&quot;,
-    &quot;output&quot;: &quot;这个开头符合语法规则。&quot;
+    "instruction": "判断给定的文章是否符合语法规则。如果不符合，请提供修改建议。 下面是一篇文章的开头: ‘为了探讨这个主题，本文将提供一系列数据和实例，以证明这一观点。’",
+    "input": "",
+    "output": "这个开头符合语法规则。"
 }
 ```
 
@@ -521,7 +519,7 @@ BELLE - 评测集分布
 
 ![](img/2a346f5915f434c7913e8e87c4bde9d1.png)
 
-### ** 2.3 模型的评测方法 **
+## 2.3 模型的评测方法
 
 比起预训练（Pretrain）环节里相对明确的评价指标（如PPL、NLL等），
 
@@ -533,11 +531,11 @@ Instruction 环节中的评价指标比较令人头疼。
 
 我们也尝试使用同样的 Prompt 对 3 种开源模型：OpenLlama、ChatGLM、BELLE 进行测试。
 
-> **注意：下面的测试结**果仅源自我们自己的实验， 不具备任何权威性 。
+> **注意：下面的测试结果**仅源自我们自己的实验，不具备任何权威性。
 
 对于每一个问题，我们先获得 ChatGPT 的回复，以及另外 3 种模型的回复，
 
-接着我们将 「ChatGPT 答案 - 候选模型答案」这样的 pair 喂给 GPT-4 打分（满分为 10 分）。
+接着我们将「ChatGPT 答案 - 候选模型答案」这样的 `pair` 喂给 GPT-4 打分（满分为 10 分）。
 
 得到的结果如下：
 
@@ -553,7 +551,7 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 GPT-Review 的结果
 
-**但是，我们发现**，GPT-4 打出的分数和给出理由 并不一定正确 。
+**但是，我们发现**，GPT-4 打出的分数和给出理由 并不一定正确。
 
 如上图所示，GPT-4 为右边模型的答案打出了更高的分数，给出的理由是：
 
@@ -571,7 +569,7 @@ GPT-Review 的结果
 
 为此，我们通过人工的 Review 的方式对每个答案进行了一次回扫，得到的结果和标准如下：
 
-> 再次重申：我们只是期望指出 GPT**-4 打分可能会和实际产生**偏差的问题， 这里排名不具备任何权威性 。
+> 再次重申：我们只是期望指出 GPT-4 打分可能会和实际产生偏差的问题，这里排名不具备任何权威性。
 
 ![](img/a2e7074c6b2ff174126e7c92344edf91.png)
 
@@ -585,36 +583,36 @@ GPT-Review 的结果
 
 当然，最近陆陆续续的推出了许多新的评测方法，如：[PandaLM]，
 
-以及许多比较有影响力的评测集，如：[C-Eval]、[open_llm_leaderboard] 等，
+以及许多比较有影响力的评测集，如：[C-Eval]、[`open_llm_leaderboard`] 等，
 
 我们或许会在后续的整理中更新。
 
-**相关文章**
+### 相关文章
 
-[**领域/场景大模型也太难训了吧**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486285&idx=1&sn=5c664b2205eb18f1142efc8cae80514a&chksm=973d95caa04a1cdc86b01f44694e034f5be25b7ee57c8d0ab2acc49714a6b84df8d74afd99d1&scene=21#wechat_redirect)
+[领域/场景大模型也太难训了吧](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486285&idx=1&sn=5c664b2205eb18f1142efc8cae80514a&chksm=973d95caa04a1cdc86b01f44694e034f5be25b7ee57c8d0ab2acc49714a6b84df8d74afd99d1&scene=21#wechat_redirect)
 
-[**大模型面试八股含答案**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486280&idx=1&sn=638cae95b310e42ea2ae46e67cebf6da&chksm=973d95cfa04a1cd9c40ae7e6d6aef60f55cbd255922001976541a3c728fb7a43c6939b866abc&scene=21#wechat_redirect)
+[大模型面试八股含答案](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486280&idx=1&sn=638cae95b310e42ea2ae46e67cebf6da&chksm=973d95cfa04a1cd9c40ae7e6d6aef60f55cbd255922001976541a3c728fb7a43c6939b866abc&scene=21#wechat_redirect)
 
 大模型开源社区的原子弹Llama2
 
-[**大模型训练的一些坑点和判断**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486191&idx=1&sn=63887d83692420a2c8ebe01fb31a4b31&chksm=973d9468a04a1d7ecfde3d6c196b4e9e72b336ce5b91755ba57c2c67121580c1a18af21889d6&scene=21#wechat_redirect)
+[大模型训练的一些坑点和判断](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486191&idx=1&sn=63887d83692420a2c8ebe01fb31a4b31&chksm=973d9468a04a1d7ecfde3d6c196b4e9e72b336ce5b91755ba57c2c67121580c1a18af21889d6&scene=21#wechat_redirect)
 
-[**大模型RLHF的trick**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486087&idx=1&sn=948eb9c0077e6eb360c6c61bf9ef1bca&chksm=973d9400a04a1d161636fa2e789fe8a7005efbcd54c9d19f9f0146be799fdc91278280498470&scene=21#wechat_redirect)
+[大模型RLHF的trick](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486087&idx=1&sn=948eb9c0077e6eb360c6c61bf9ef1bca&chksm=973d9400a04a1d161636fa2e789fe8a7005efbcd54c9d19f9f0146be799fdc91278280498470&scene=21#wechat_redirect)
 
-[**大模型评测，也太难了吧**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486069&idx=1&sn=be67723275d9e6bea165a9d9753d48b7&chksm=973d94f2a04a1de4bda1e5a0334415001860525a345706246ed777c299f8a0925d0099ba6183&scene=21#wechat_redirect)
+[大模型评测，也太难了吧](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486069&idx=1&sn=be67723275d9e6bea165a9d9753d48b7&chksm=973d94f2a04a1de4bda1e5a0334415001860525a345706246ed777c299f8a0925d0099ba6183&scene=21#wechat_redirect)
 
-[**大模型面试八股**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486046&idx=1&sn=3960d422b724a2fd9d5988b8b48ffb69&chksm=973d94d9a04a1dcf2a258cf97d6243e4a468301a6573350b8969e70e77f4ca64637f12bfcc2e&scene=21#wechat_redirect)
+[大模型面试八股](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486046&idx=1&sn=3960d422b724a2fd9d5988b8b48ffb69&chksm=973d94d9a04a1dcf2a258cf97d6243e4a468301a6573350b8969e70e77f4ca64637f12bfcc2e&scene=21#wechat_redirect)
 
-[**大模型微调样本构造的trick**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486036&idx=1&sn=1885f2b1c35415c981f22c5ab0efeee5&chksm=973d94d3a04a1dc56c4fe7353ae0f426d0c305398780faca1f749ae7e9fba24ee6af3f375877&scene=21#wechat_redirect)
+[大模型微调样本构造的trick](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486036&idx=1&sn=1885f2b1c35415c981f22c5ab0efeee5&chksm=973d94d3a04a1dc56c4fe7353ae0f426d0c305398780faca1f749ae7e9fba24ee6af3f375877&scene=21#wechat_redirect)
 
-[**大模型训练太难了！**](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486002&idx=1&sn=ba92e0b39f13ebb28719031ffbc4260a&chksm=973d94b5a04a1da357b1bca4cf9175be687ef574a43077e699efa96aa0c15f4ff6b4bc726cd4&scene=21#wechat_redirect)
+[大模型训练太难了！](http://mp.weixin.qq.com/s?__biz=MzIwNDY1NTU5Mg==&mid=2247486002&idx=1&sn=ba92e0b39f13ebb28719031ffbc4260a&chksm=973d94b5a04a1da357b1bca4cf9175be687ef574a43077e699efa96aa0c15f4ff6b4bc726cd4&scene=21#wechat_redirect)
 
-**其他精彩文章翻阅👸号历史文章**
+### 其他精彩文章
 
 包包算法笔记是包大人在班车通勤上，进行知识，职业，经验分享的地方。最白的话讲专业的知识。
 
 回复“刷题”获取高效刷题经验，回复“面试”获取算法校招面试宝典。
 
-想进讨论群的同学，加🛰️号 logits，备注 进群
+想进讨论群的同学，加🛰️号 `logits`，备注 进群
 
 ![](img/02f1e67fd58bf4ed8ef40b3e7f112c0b.png)

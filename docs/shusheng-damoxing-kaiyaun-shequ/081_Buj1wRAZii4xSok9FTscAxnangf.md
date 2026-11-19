@@ -1,18 +1,19 @@
+
 # L2 Intern-S1/InternVL 微调公式识别实践(Swift)
 
 > 来源：[https://aicarrier.feishu.cn/docx/XnbtdOSZsocDkWxEUEecsj01ntc](https://aicarrier.feishu.cn/docx/XnbtdOSZsocDkWxEUEecsj01ntc)
 
-本课程将带您基于MS-Swift框架，完成Intern-S1-mini与InternVL3_5-1B两款模型的公式识别任务微调，从GPU环境配置，到超参数调整、LoRA权重合并，再到最终模型上传至ModelScope并提交评测。通过课程，您不仅能掌握视觉语言模型微调的核心技术，解决数据集路径处理、Swift安装故障等实际问题。通过以赛代练，优化Prompt提升公式识别准确率，积累模型调优与赛事实战经验，助力在排行榜中取得理想成绩。
+本课程将带您基于`MS-Swift`框架，完成`Intern-S1-mini`与`InternVL3_5-1B`两款模型的公式识别任务微调，从GPU环境配置，到超参数调整、`LoRA`权重合并，再到最终模型上传至`ModelScope`并提交评测。通过课程，您不仅能掌握视觉语言模型微调的核心技术，解决数据集路径处理、`Swift`安装故障等实际问题。通过以赛代练，优化`Prompt`提升公式识别准确率，积累模型调优与赛事实战经验，助力在排行榜中取得理想成绩。
 
-# 环境安装
+## 环境安装
 
-在[创建开发机界面](https://studio.intern-ai.org.cn/console/instance)选择镜像为Cuda12.8-conda，并选择 GPU 为 50% A100。
+在[创建开发机界面](https://studio.intern-ai.org.cn/console/instance)选择镜像为`Cuda12.8-conda`，并选择 GPU 为 50% A100。
 
 ![](img/1df87f5cf838f0db8f90b748428883a0.png)
 
 节省算力小技巧,可以 10%gpu 情况安装环境,安装好后再改成 50%。
 
-安装必要的包和ms-swift:
+安装必要的包和`ms-swift`:
 
 ```
 conda create -n ms-swift11 python=3.10 -y
@@ -32,21 +33,21 @@ pip install -e .
 pip install timm==1.0.9 msgspec==0.19.0
 ```
 
-# Intern-S1-mini微调
+## Intern-S1-mini微调
 
-本教程使用 Swift 框架进行模型微调。在 swift_config/ 目录下提供了一个训练脚本 interns1_mini_train.sh作为参考。
+本教程使用 `Swift` 框架进行模型微调。在 `swift_config/` 目录下提供了一个训练脚本 `interns1_mini_train.sh`作为参考。
 
 您可以根据自己的需求，调整脚本中的超参数，例如：
 
-+   dataset 数据集目录 (可自行进行探索制作数据集)
++   `dataset` 数据集目录 (可自行进行探索制作数据集)
 
-+   learning_rate 自调学习率
++   `learning_rate` 自调学习率
 
-+   num_train_epochs 自调训练轮数
++   `num_train_epochs` 自调训练轮数
 
 配置完成后，执行训练脚本：
 
-## 启动微调训练
+### 启动微调训练
 
 ```
 cd /root/VLM-formula-recognition-dataset
@@ -61,9 +62,9 @@ bash swift_config/interns1_mini_train.sh
 tail -f xxx.log
 ```
 
-等微调运行完成后，将 lora 微调产生的部分权重和源权重进行合并。
+等微调运行完成后，将 `lora` 微调产生的部分权重和源权重进行合并。
 
-## 合并
+### 合并
 
 ```
 swift export --adapters 模型输出文件夹 --merge_lora True
@@ -75,14 +76,14 @@ swift export --adapters 模型输出文件夹 --merge_lora True
 swift export --adapters  /root/VLM-formula-recognition-dataset/swift_output/SFT-Interns1mini/v0-20251010-124124/checkpoint-3 --merge_lora True
 ```
 
-## 补全
+### 补全
 
-intern-s1-mini 用swift 微调合并后，会有文件缺失，我们只需讲源权重目录下文件对应的补回来即可。
+`intern-s1-mini` 用`swift` 微调合并后，会有文件缺失，我们只需将源权重目录下文件对应的补回来即可。
 
 ```
-SRC=&quot;/root/share/new_models/Intern-S1-mini&quot;
-DST=&quot; 填写你微调后的权重&quot;
-rsync -ah --ignore-existing --exclude=&#x27;/proc&#x27; --exclude=&#x27;proc&#x27; &quot;$SRC&quot;/ &quot;$DST&quot;/
+SRC="/root/share/new_models/Intern-S1-mini"
+DST=" 填写你微调后的权重"
+rsync -ah --ignore-existing --exclude='/proc' --exclude='proc' "$SRC"/ "$DST"/
 ```
 
 ![](img/5da7101fe80e91b4e8e121815cc128e4.png)
@@ -90,22 +91,22 @@ rsync -ah --ignore-existing --exclude=&#x27;/proc&#x27; --exclude=&#x27;proc&#x2
 示例：
 
 ```
-SRC=&quot;/root/share/new_models/Intern-S1-mini&quot;
-DST=&quot;/root/VLM-formula-recognition-dataset/swift_output/SFT-Interns1mini/v0-20251010-124124/checkpoint-3-merged&quot;
-rsync -ah --ignore-existing --exclude=&#x27;/proc&#x27; --exclude=&#x27;proc&#x27; &quot;$SRC&quot;/ &quot;$DST&quot;/
+SRC="/root/share/new_models/Intern-S1-mini"
+DST="/root/VLM-formula-recognition-dataset/swift_output/SFT-Interns1mini/v0-20251010-124124/checkpoint-3-merged"
+rsync -ah --ignore-existing --exclude='/proc' --exclude='proc' "$SRC"/ "$DST"/
 ```
 
-# InternVL3_5-1B微调
+## InternVL3_5-1B微调
 
-本教程使用 Swift 框架进行模型微调。在 swift_config/ 目录下提供了一个训练脚本 internvl3.5_1b_train.sh 作为参考。
+本教程使用 `Swift` 框架进行模型微调。在 `swift_config/` 目录下提供了一个训练脚本 `internvl3.5_1b_train.sh` 作为参考。
 
 您可以根据自己的需求，调整脚本中的超参数，例如：
 
-+   dataset 数据集目录 (可自行进行探索制作数据集)
++   `dataset` 数据集目录 (可自行进行探索制作数据集)
 
-+   learning_rate 自调学习率
++   `learning_rate` 自调学习率
 
-+   num_train_epochs 自调训练轮数
++   `num_train_epochs` 自调训练轮数
 
 配置完成后，执行训练脚本：
 
@@ -113,12 +114,12 @@ rsync -ah --ignore-existing --exclude=&#x27;/proc&#x27; --exclude=&#x27;proc&#x2
 #!/bin/bash
 
 # 创建日志目录
-LOG_DIR=&quot;logs&quot;
+LOG_DIR="logs"
 mkdir -p $LOG_DIR
 
 # 获取当前时间戳
-TIMESTAMP=$(date +&quot;%Y%m%d_%H%M%S&quot;)
-LOG_FILE=&quot;$LOG_DIR/[SFT]internvl3.5_1b_${TIMESTAMP}.log&quot;
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+LOG_FILE="$LOG_DIR/[SFT]internvl3.5_1b_${TIMESTAMP}.log"
 
 # 设置环境变量
 # export ENABLE_AUDIO_OUTPUT=False
@@ -129,15 +130,15 @@ export CUDA_VISIBLE_DEVICES=0
 export MASTER_PORT=$((10000 + RANDOM % 50000))
 
 # 先打印启动信息
-echo &quot;Starting training...&quot;
-echo &quot;Log file: $LOG_FILE&quot;
-echo &quot;Using port: $MASTER_PORT&quot;
+echo "Starting training..."
+echo "Log file: $LOG_FILE"
+echo "Using port: $MASTER_PORT"
 
 # 没有指定 model_type
 # 启动训练并获取PID
 nohup swift sft \
-    --model &#x27;/root/share/new_models/InternVL3.5/InternVL3_5-1B&#x27;\
-    --dataset &#x27;/root/share/datasets/VLM-formula-recognition-dataset_intern_camp/train/train_mini_abs.jsonl&#x27; \
+    --model '/root/share/new_models/InternVL3.5/InternVL3_5-1B'\
+    --dataset '/root/share/datasets/VLM-formula-recognition-dataset_intern_camp/train/train_mini_abs.jsonl' \
     --eval_steps 1000 \
     --train_type lora \
     --lora_rank 4 \
@@ -152,7 +153,7 @@ nohup swift sft \
     --gradient_accumulation_steps 4 \
     --save_steps 2000 \
     --save_total_limit 10 \
-    --gradient_checkpointing_kwargs &#x27;{&quot;use_reentrant&quot;: false}&#x27; \
+    --gradient_checkpointing_kwargs '{"use_reentrant": false}' \
     --logging_steps 1 \
     --max_length 6000 \
     --output_dir ./swift_output/SFT-InternVL3_5-1B\
@@ -160,28 +161,27 @@ nohup swift sft \
     --dataloader_num_workers 8 \
     --metric acc \
     --freeze_vit true \
-    &gt; &quot;$LOG_FILE&quot; 2&gt;&amp;1 &amp;
+    > "$LOG_FILE" 2>&1 &
 
 # 获取PID并等待一下确保进程启动
 TRAIN_PID=$!
 sleep 2
 
 # 检查进程是否还在运行
-if kill -0 $TRAIN_PID 2&gt;/dev/null; then
-    echo &quot;Training started successfully with PID $TRAIN_PID&quot;
-    echo &quot;To view logs in real-time, use:&quot;
-    echo &quot;tail -f $LOG_FILE&quot;
-    echo &quot;&quot;
-    echo &quot;To stop training, use:&quot;
-    echo &quot;kill -9 $TRAIN_PID&quot;
+if kill -0 $TRAIN_PID 2>/dev/null; then
+    echo "Training started successfully with PID $TRAIN_PID"
+    echo "To view logs in real-time, use:"
+    echo "tail -f $LOG_FILE"
+    echo ""
+    echo "To stop training, use:"
+    echo "kill -9 $TRAIN_PID"
 else
-    echo &quot;Failed to start training process&quot;
-    echo &quot;Check log file for errors: $LOG_FILE&quot;
+    echo "Failed to start training process"
+    echo "Check log file for errors: $LOG_FILE"
 fi
-
 ```
 
-## 启动
+### 启动
 
 ```
 cd /root/VLM-formula-recognition-dataset
@@ -196,75 +196,81 @@ bash swift_config/internvl3.5_1b_train.sh
 tail -f xxx.log
 ```
 
-等微调运行完成后，将 lora 微调产生的部分权重和源权重进行合并。
+等微调运行完成后，将 `lora` 微调产生的部分权重和源权重进行合并。
 
-## 合并
+### 合并
 
 ```
 swift export --adapters 模型输出文件夹 --merge_lora True
 ```
 
-# 提交结果
+## 提交结果
 
-## 上传
+### 上传
 
-运行upload.py 上传模型
+运行`upload.py` 上传模型
 
 ```
 from modelscope.hub.api import HubApi
 from modelscope.hub.constants import Licenses, ModelVisibility
 
 # 配置基本信息
-YOUR_ACCESS_TOKEN = &#x27;ms-9fxx7e&#x27;#填写自己的 api token
+YOUR_ACCESS_TOKEN = 'ms-9fxx7e'#填写自己的 api token
 api = HubApi()
 api.login(YOUR_ACCESS_TOKEN)
 
 # 取名字
-owner_name = &#x27;xx&#x27;    # ModelScope 的用户名，需根据自己情况修改
-model_name = &#x27;xx&#x27;    # 为模型库取个响亮优雅又好听的名字，需根据自己情况修改
-model_id = f&quot;{owner_name}/{model_name}&quot;
+owner_name = 'xx'    # ModelScope 的用户名，需根据自己情况修改
+model_name = 'xx'    # 为模型库取个响亮优雅又好听的名字，需根据自己情况修改
+model_id = f"{owner_name}/{model_name}"
 
 #创建模型仓库
 api.create_model(
      model_id,
      visibility=ModelVisibility.PUBLIC,
      license=Licenses.APACHE_V2,
-     chinese_name=f&quot;{owner_name}的 latex 分类&quot;
+     chinese_name=f"{owner_name}的 latex 分类"
     )
 
 #上传模型到仓库
 api.upload_folder(
-    repo_id=f&quot;{owner_name}/{model_name}&quot;,
-    folder_path=&#x27;xx&#x27;,    # 微调后模型的文件夹名称
-    commit_message=&#x27;upload model folder to repo&#x27;,    # 写上传信息
+    repo_id=f"{owner_name}/{model_name}",
+    folder_path='xx',    # 微调后模型的文件夹名称
+    commit_message='upload model folder to repo',    # 写上传信息
 )
 ```
 
 提交表单的 prompt 参考如下,这里也有优化空间，可自行探索最优 prompt：
 
 ```
-&quot;&quot;&quot;请根据图片中的公式生成对应的 latex 公式文本，不要任何解释。
+"""
+请根据图片中的公式生成对应的 latex 公式文本，不要任何解释。
 
   输出格式要求：
   1. 必须使用 ```latex 代码块包裹
+
   2. 仅包含 LaTeX 代码，无任何文字说明
+
   3. 确保语法正确，下标用 {} 括起来
 
   输出案例：
+
   案例 1：
+
   ```latex
   \sum_{i=1}^{n} x_i = \mu
   ```
 
   案例 2：
+
   ```latex
   \begin{bmatrix}
-  a &amp; b \\
-  c &amp; d
+  a & b \\
+  c & d
   \end{bmatrix}
   ```
-&quot;&quot;&quot;
 
+"""
 ```
 
 填写表单：https://aicarrier.feishu.cn/share/base/form/shrcnXjK6zERK7z4pPU85PLO80c，注意模型权重 id 写对如下图：
@@ -275,15 +281,15 @@ api.upload_folder(
 
 ![](img/58aff7674607fa0673efcd8d1b0bc651.png)
 
-## 参赛流程
+### 参赛流程
 
-### 报名
+#### 报名
 
 点击以下链接进行报名
 
 https://colearn.intern-ai.org.cn/set?s=gamef
 
-### 提交参赛权重
+#### 提交参赛权重
 
 微调后的权重请从以下链接入口提交，请注意截图内容，不要填写链接，本次比赛你可以选择自己的提示词，这有可能提高你的模型识别精度
 
@@ -291,17 +297,15 @@ https://aicarrier.feishu.cn/share/base/form/shrcnXjK6zERK7z4pPU85PLO80c
 
 ![](img/0c478b84ff6f27fcedc0dee28f1edd32.png)
 
-注意：需要选择好 base model，本次提供两个模型给大家进行选择，如不在此范围内的模型请勿提交，否则可能会出现测评异常情况。
+注意：需要选择好 `base model`，本次提供两个模型给大家进行选择，如不在此范围内的模型请勿提交，否则可能会出现测评异常情况。
 
-本次测评会提取模型返回中的**最后一个 latex 块**
+本次测评会提取模型返回中的最后一个 latex 块
 
-```
 ```latex
 E = mc^2
 ```
-```
 
-### 查看状态
+#### 查看状态
 
 点击以下链接
 
@@ -309,52 +313,56 @@ https://aicarrier.feishu.cn/share/base/query/shrcnM5VzC2jnErQig5Wk88kgoe
 
 进行查看，输入你的 uid，比如闻星（uid：4）
 
-
 在这里能够查看状态
-
 
 ![](img/98ab15e0448ca7704f7ee381535f3689.png)
 
-### 排行榜
+#### 排行榜
 
 https://aicarrier.feishu.cn/share/base/dashboard/shrcnrA82hMMRd1FUuWs8EhOjag
 
 <https://aicarrier.feishu.cn/share/base/dashboard/shrcnrA82hMMRd1FUuWs8EhOjag?iframeFrom=docx&ccm_open=iframe>
 
-# 闯关任务
+## 闯关任务
 
-+   请从Intern-S1-mini微调 与 InternVL3_5-1B微调 两项任务中择一完成微调实践，确保成功提交并获得评分。
++   请从`Intern-S1-mini`微调与`InternVL3_5-1B`微调两项任务中择一完成微调实践，确保成功提交并获得评分。
 
 +   实践过程中的全部笔记与最终评分结果截图，整理至飞书文档提交
 
 提交地址：https://aicarrier.feishu.cn/share/base/form/shrcnbguDXSzIZV5Dkapw39BJ0f
 
-# QA
+## QA
 
-### bug:  inputs_embeds
+### bug: `inputs_embeds`
 
 bug:
 
 ![](img/c418f33c0095840836130a4492333ec8.png)
 
-Swift 安装有问题,采用源码方式:
+`Swift` 安装有问题,采用源码方式:
 
 ```
 git clone https://xget.xi-xu.me/gh/modelscope/ms-swift.git
+
 cd ms-swift
+
 pip install -e .
 ```
 
 ```
 python -m src.workflow.pipeline \
+
   --poster_width 54 --poster_height 36 \
+
   --paper_path ./data/Truly_Scale_Equivariant_Deep_Nets_with_Fourier_Layers/paper.pdf \
+
   --text_model deepseek-chat \
+
   --vision_model deepseek-chat \
+
   --logo ./data/Truly_Scale_Equivariant_Deep_Nets_with_Fourier_Layers/logo.png \
+
   --aff_logo ./data/Truly_Scale_Equivariant_Deep_Nets_with_Fourier_Layers/aff.png
-  
- 
 ```
 
 ### 原始数据集处理方式
@@ -363,47 +371,87 @@ python -m src.workflow.pipeline \
 
 ```
 apt-get install git-lfs
+
 git lfs install
+
 git clone https://www.modelscope.cn/datasets/JimmyMa99/VLM-formula-recognition-dataset_intern_camp.git
 ```
 
 处理脚本:
 
 ```
-python - &lt;&lt;&#x27;PY&#x27;
+
+
+
+# JSONL 图片路径绝对化脚本
+
+## 说明
+本脚本将 `xx/VLM-formula-recognition-dataset/train/train_mini.jsonl` 中的相对图片路径转换为绝对路径，并输出至 `xx/VLM-formula-recognition-dataset/train/train_mini_abs.jsonl`。基准目录为 `xx/VLM-formula-recognition-dataset_intern_camp/train`，兼容 `images` 列表和 `messages[].content[].image` 两种常见结构。
+
+## 代码实现
+
+```
+python - <<'PY'
+
 import json, os, sys
 
-in_path  = &quot;xx/VLM-formula-recognition-dataset/train/train_mini.jsonl&quot;       # 你的现用 jsonl
-out_path = &quot;xx/VLM-formula-recognition-dataset/train/train_mini_abs.jsonl&quot;   # 输出到新文件jsonl
-base = &quot;xx/VLM-formula-recognition-dataset_intern_camp/train&quot;  # mini_train所在的文件夹
+in_path  = "xx/VLM-formula-recognition-dataset/train/train_mini.jsonl"       # 你的现用 jsonl
+
+out_path = "xx/VLM-formula-recognition-dataset/train/train_mini_abs.jsonl"   # 输出到新文件jsonl
+
+base = "xx/VLM-formula-recognition-dataset_intern_camp/train"  # mini_train所在的文件夹
 
 def to_abs(p):
+
     if not p: return p
+
     # 仅当是相对路径时拼接；已是绝对路径则保留
+
     return p if os.path.isabs(p) else os.path.join(base, p)
 
 n=0;m=0
-with open(in_path,&#x27;r&#x27;,encoding=&#x27;utf-8&#x27;) as fin, open(out_path,&#x27;w&#x27;,encoding=&#x27;utf-8&#x27;) as fout:
-    for line in fin:
-        if not line.strip(): continue
-        obj = json.loads(line)
-        changed = False
-        # 兼容两种常见结构：images: [..] 或 messages[].content[].image
-        if &#x27;images&#x27; in obj and isinstance(obj[&#x27;images&#x27;], list):
-            obj[&#x27;images&#x27;] = [to_abs(x) for x in obj[&#x27;images&#x27;]]
-            changed = True
-        if &#x27;messages&#x27; in obj:
-            for msg in obj[&#x27;messages&#x27;]:
-                c = msg.get(&#x27;content&#x27;)
-                if isinstance(c, list):
-                    for part in c:
-                        if part.get(&#x27;type&#x27;) == &#x27;image&#x27; and &#x27;image&#x27; in part:
-                            part[&#x27;image&#x27;] = to_abs(part[&#x27;image&#x27;])
-                            changed = True
-        fout.write(json.dumps(obj,ensure_ascii=False)+&#x27;\n&#x27;)
-        n+=1
-        m+=changed
-print(f&quot;processed lines={n}, patched={m}, saved -&gt; {out_path}&quot;)
-PY
 
+with open(in_path,'r',encoding='utf-8') as fin, open(out_path,'w',encoding='utf-8') as fout:
+
+    for line in fin:
+
+        if not line.strip(): continue
+
+        obj = json.loads(line)
+
+        changed = False
+
+        # 兼容两种常见结构：images: [..] 或 messages[].content[].image
+
+        if 'images' in obj and isinstance(obj['images'], list):
+
+            obj['images'] = [to_abs(x) for x in obj['images']]
+
+            changed = True
+
+        if 'messages' in obj:
+
+            for msg in obj['messages']:
+
+                c = msg.get('content')
+
+                if isinstance(c, list):
+
+                    for part in c:
+
+                        if part.get('type') == 'image' and 'image' in part:
+
+                            part['image'] = to_abs(part['image'])
+
+                            changed = True
+
+        fout.write(json.dumps(obj,ensure_ascii=False)+'\n')
+
+        n+=1
+
+        m+=changed
+
+print(f"processed lines={n}, patched={m}, saved -> {out_path}")
+
+PY
 ```

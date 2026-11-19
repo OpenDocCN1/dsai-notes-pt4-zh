@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230725）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/NgMddyeF1oekL6xtJQFcjEyOnzh](https://jlqyxzzvbk.feishu.cn/docx/NgMddyeF1oekL6xtJQFcjEyOnzh)
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## **全****AI****生成「芭本海默」病毒式疯转！Midjourney、G**en-2版联手拍成，震撼堪比好莱坞原片
+### 全AI生成「芭本海默」病毒式疯转！Midjourney、Gen-2版联手拍成，震撼堪比好莱坞原片
 
 ![](img/bb01a3169c1e94dc3538f1b0f5e40e7c.png)
 
@@ -26,9 +27,9 @@
 
 每个镜头的构图，看起来都非常完美。
 
-更多信息请访问：https://baijiahao.baidu.com/s?id=1772373176735883434&wfr=spider&for=
+更多信息请访问：`https://baijiahao.baidu.com/s?id=1772373176735883434&wfr=spider&for=`
 
-## **Attention机制竟有bug，Softmax是**罪魁祸首，影响所有Transformer
+### Attention机制竟有bug，`Softmax`是罪魁祸首，影响所有Transformer
 
 ![](img/f7c18c60019e623930433b6d2af80780.png)
 
@@ -36,13 +37,13 @@
 
 Evan Miller 的这篇博客解释了当前流行的 AI 模型如何在关键位置出现错误，并使得所有 Transformer 模型都难以压缩和部署。
 
-总结而言，Evan Miller 引入了一种新函数 Quiet Attention，也叫 Softmax_1，这是对传统 softmax 函数的创新调整。
+总结而言，Evan Miller 引入了一种新函数 Quiet Attention，也叫 `Softmax_1`，这是对传统 `softmax` 函数的创新调整。
 
-有网友对该博客总结出了一个「太长不看版」。博客作者建议在注意力机制使用的 softmax 公式分母上加 1（不是最终输出 softmax）。注意力单元中的 softmax 使其可以将键 / 查询匹配作为概率；这些概率支持一个键 - 值查找的连续值版本（我们得到的权重不是一个查找的 1/0 输出，而是高权重 = 所需的键 - 值查找）。
+有网友对该博客总结出了一个「太长不看版」。博客作者建议在注意力机制使用的 `softmax` 公式分母上加 1（不是最终输出 `softmax`）。注意力单元中的 `softmax` 使其可以将键 / 查询匹配作为概率；这些概率支持一个键 - 值查找的连续值版本（我们得到的权重不是一个查找的 1/0 输出，而是高权重 = 所需的键 - 值查找）。
 
-更多信息请访问：https://baijiahao.baidu.com/s?id=1772381174338322854&wfr=spider&for=pc
+更多信息请访问：`https://baijiahao.baidu.com/s?id=1772381174338322854&wfr=spider&for=pc`
 
-## 超逼真3D生成模型！华南理工贾奎团队ICCV'23新作：支持重新照明、编辑和物理仿真
+### 超逼真3D生成模型！华南理工贾奎团队ICCV'23新作：支持重新照明、编辑和物理仿真
 
 ![](img/06bb5aab6c0ab62a8ae186a9e093222b.png)
 
@@ -54,21 +55,21 @@ Evan Miller 的这篇博客解释了当前流行的 AI 模型如何在关键位�
 
 在这项研究中，华南理工大学提出了一种用于高质量文本到三维内容创建的新方法Fantasia3D，关键之处在于对几何和外观进行解耦的建模和学习。
 
-更多信息请访问：https://www.163.com/dy/article/IAGCFTL50511ABV6.html
+更多信息请访问：`https://www.163.com/dy/article/IAGCFTL50511ABV6.html`
 
-# AI软件精选
+## AI软件精选
 
-# ArtHub**（****AI****绘画）**
+### ArtHub（AI绘画）
 
-众包 AI[ 艺](https://nav.6aiq.com/favorites/image_ai)术。探索 AI 生成的设计、图像、艺术和顶级社区艺术家和设计师的提示。
+众包 AI[艺](https://nav.6aiq.com/favorites/image_ai)术。探索 AI 生成的设计、图像、艺术和顶级社区艺术家和设计师的提示。
 
 ![](img/655e1461b0882c7a38540341b6bc2818.png)
 
-链接：https://arthub.jp/
+链接：`https://arthub.jp/`
 
-## mst.ai**（****AI****绘画）**
+### mst.ai（AI绘画）
 
-免费使用[ChatGPT](https://nav.6aiq.com/favorites/chatgpt)[，Stable Di](https://nav.6aiq.com/?post_type=sites&s=Midjourney)ffusion,Midjourney
+免费使用[ChatGPT](https://nav.6aiq.com/favorites/chatgpt)、[Stable Diffusion](https://nav.6aiq.com/?post_type=sites&s=Midjourney)、Midjourney
 
 在mst.ai(大臣.ai)的社区中,您可以免费使用GPT-4.0、Stable Diffusion和Midjourney等强大的绘图工具和模型训练设施。这些免费的算力工具将彻底改变机器学习的发展和应用,为个人和企业带来更多可能性和机会。
 
@@ -76,11 +77,11 @@ Evan Miller 的这篇博客解释了当前流行的 AI 模型如何在关键位�
 
 ![](img/f7d403b837e7779da8a60598583fbbec.png)
 
-链接：https://mst.xyz/home
+链接：`https://mst.xyz/home`
 
-# **N****ig****htC**afe Studio（AI绘画）
+### NightCafe Studio（AI绘画）
 
-Lumiere[3D](https://nav.6aiq.com/favorites/3d-generator) 是一个最先进的 AI[ 平台，](https://nav.6aiq.com/favorites/e-commerce)旨在帮助企业在短短几分钟[内为](https://nav.6aiq.com/favorites/video_ai)**电子商务和**营销创建引人入胜的电影视频。
+Lumiere[3D](https://nav.6aiq.com/favorites/3d-generator) 是一个最先进的 AI[平台，](https://nav.6aiq.com/favorites/e-commerce)旨在帮助企业在短短几分钟[内为](https://nav.6aiq.com/favorites/video_ai)电子商务和营销创建引人入胜的电影视频。
 
 主要特征：
 
@@ -108,29 +109,27 @@ AI Music：轻松生成专业品质、免版税的音乐
 
 ![](img/0a3b11dbe4287e089b070b43dca5647b.png)
 
-链接：https://creator.nightcafe.studio/
+链接：`https://creator.nightcafe.studio/`
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+**更多AI工具请访问：**`http://ai.kcodez.com/`
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
-https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
+`https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279`
 
 GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸张的授课风格，讲述GPT的各种用法，以及如何讲自身结合
 
 ![](img/0eb2328c8a6537d27607fe68e738ca01.png)
 
-## 付费课程（ai绘画）
+### 付费课程（ai绘画）
 
 AI绘画基础课Midjourney
 
-优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         https://v.douyin.com/ixcenrM/
+优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】 `https://v.douyin.com/ixcenrM/`
 
 ![](img/205dc8d321204ed8b5ffb010e9624ad5.png)
-
-#
 
 ![](img/df08c914fea41ae0f316c57071122f55.png)
 
@@ -138,9 +137,9 @@ AI绘画基础课Midjourney
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4.会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：`https://nf.video/kkF8Y` 下单时输入：`kanAI` 九五折优惠，或者直接二维码访问
 
 ![](img/ae973fa06b39906bb023caf72997657b.png)
 
@@ -150,7 +149,7 @@ AI绘画基础课Midjourney
 
 ![](img/7b36706a52cd92b2a1e59d17a6da460d.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像GPT**，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/f1d9424aaa8f58cf92023f61bf6e258a.png)
 

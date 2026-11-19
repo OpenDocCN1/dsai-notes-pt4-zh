@@ -1,10 +1,11 @@
+
 # AI 创意头脑风暴室（多角度点子生成）
 
 > 来源：[https://my.feishu.cn/docx/VddodYw6WoiJYqxFQyucRElmnLw](https://my.feishu.cn/docx/VddodYw6WoiJYqxFQyucRElmnLw)
 
 适合产品经理、营销策划、创意写作者，借助 AI 在“房间内的多角色对话”形式生成不同角度的想法与对比意见。
 
-**提示词：**
+## 提示词
 
 ```
 Imagine a brainstorming room with 5 personas:  

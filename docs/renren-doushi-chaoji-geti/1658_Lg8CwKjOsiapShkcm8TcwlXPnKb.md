@@ -1,3 +1,4 @@
+
 # 企业 AIGC 应用落地项目实操--保姆级教程（启动+培训阶段）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ImkJdQskoomAQkxs7SZcH1FUnEh](https://xuqiwei1986.feishu.cn/docx/ImkJdQskoomAQkxs7SZcH1FUnEh)

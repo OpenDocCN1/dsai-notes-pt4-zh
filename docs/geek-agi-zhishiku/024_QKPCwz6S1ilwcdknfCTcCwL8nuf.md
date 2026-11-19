@@ -1,3 +1,4 @@
+
 # AI Agent落地实践：21个头部企业案例研究
 
 > 来源：[https://geekbang.feishu.cn/docx/XWuqdwLtcopjd1xttMLc7BaLnNh](https://geekbang.feishu.cn/docx/XWuqdwLtcopjd1xttMLc7BaLnNh)
@@ -10,23 +11,19 @@
 
 > ⏰ 剪存时间：2025-08-27 16:35:32 (UTC+8)
 
-# 01
-
-# AI Agent的判断标准
+## 01 AI Agent的判断标准
 
 从2024年下半年开始，很多技术供应商开始使用“AI Agent”一词来描述广泛的产品功能，被“滥用”的Agent概念会导致市场认知混乱。一些供应商将已有的AI助手、聊天机器人、RPA等重新包装为“AI Agent”，但这些并非真正的AI Agent。
 
 在《2025年AI Agent应用最佳实践报告》中，沙丘智库定义了AI Agent的一组典型特征，有助于企业明晰AI Agent的定义边界，这些特征并非必须全部满足，但一个AI Agent系统拥有的特征越多，说明其“代理性”越强。企业在设计AI Agent解决方案时，不需要追求包含尽可能多甚至所有的特征，而是要根据实际需求，达到能力、复杂性和适应性之间的平衡。
 
-# 02
+## 02 AI Agent应用建议
 
-# AI Agent应用建议
+当前大部分AI Agent应用属于特定任务Agent（即完成单个或少量相关任务）。2025年初，OpenAI发布Operator，初步具有通用型Agent形态，2025年3月中国企业Monica发布Manus则号称是“全球首款通用型Agent”。
 
-**当前大部分AI A****gent应用属于**特定任务Agent（即完成单个或少量相关任务）。2025年初，OpenAI发布Operator，初步具有通用型Agent形态，2025年3月中国企业Monica发布Manus则号称是“全球首款通用型Agent”。
+沙丘智库认为，当前市场上的通用型Agent更多是狭义概念上的，是指任务覆盖面较广、功能相对丰富的AI Agent，但并不是所有任务都能完成。
 
-**沙**丘智库认为，当前市场上的通用型Agent更多是狭义概念上的，是指任务覆盖面较广、功能相对丰富的AI Agent，但并不是所有任务都能完成。
-
-对于**企业来说，AI Agent的应用尤其要谨慎。**沙丘智库认为企业在开发一个新Agent时，首先要进行场景考察，判断是否适合用Agent实现。当前，AI Agent的实际使用成本较高，太简单的场景没必要用Agent实现，可控性要求非常高的场景也不需要用Agent实现。
+对于企业来说，AI Agent的应用尤其要谨慎。沙丘智库认为企业在开发一个新Agent时，首先要进行场景考察，判断是否适合用Agent实现。当前，AI Agent的实际使用成本较高，太简单的场景没必要用Agent实现，可控性要求非常高的场景也不需要用Agent实现。
 
 建议企业在构建AI Agent时，采取如下建议：
 

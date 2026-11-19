@@ -1,3 +1,4 @@
+
 # Claude Prompt：大俗大雅
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/KqXIdUiK7oiDy6xbPEEcQ2kjnRf](https://vxc3hj17dym.feishu.cn/docx/KqXIdUiK7oiDy6xbPEEcQ2kjnRf)
@@ -45,7 +46,7 @@
             意象化
             抽象主义
             (禅意图形 配置)
-            (布局 `(,(标题 &quot;大俗大雅&quot;) 分隔线 用户输入 图形 响应))))
+            (布局 `(,(标题 &quot;大俗大雅&quot;) 分隔线 用户输入 图形 响应)))
 
 
 (defun start ()

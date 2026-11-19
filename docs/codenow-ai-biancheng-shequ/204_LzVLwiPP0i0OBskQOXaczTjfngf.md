@@ -1,67 +1,63 @@
+
 # GitHub初始化项目
 
 > 来源：[https://now.feishu.cn/docx/FcAedam7goV8NJxHdPQcyu5Nnc3](https://now.feishu.cn/docx/FcAedam7goV8NJxHdPQcyu5Nnc3)
 
-> 将项目git初始化并推送到github
+> 将项目`git`初始化并推送到GitHub
 
 Cursor：
 
-以下是将项目Git初始化并推送到GitHub的详细步骤：
+以下是将项目`Git`初始化并推送到GitHub的详细步骤：
 
-1.  进入项目目录
+## 操作步骤
+
+1. 进入项目目录
 
 ```
 cd /path/to/your/project
 ```
 
-1.  初始化Git仓库
+2. 初始化`Git`仓库
 
 ```
 git init
 ```
 
-1.  添加所有文件到暂存区
+3. 添加所有文件到暂存区
 
 ```
 git add .
 ```
 
-1.  提交初始代码
+4. 提交初始代码
 
 ```
-git commit -m &quot;Initial commit&quot;
+git commit -m "Initial commit"
 ```
 
-1.  在GitHub上创建新仓库
+5. 在GitHub上创建新仓库
 
-+   打开GitHub网站
++ 打开GitHub网站
++ 点击右上角的`+`号
++ 选择 "New repository"
++ 输入仓库名称
++ 选择是否公开
++ 不要勾选初始化`README`、`.gitignore`和`LICENSE`
 
-+   点击右上角的 "+" 号
-
-+   选择 "New repository"
-
-+   输入仓库名称
-
-+   选择是否公开
-
-+   不要勾选初始化README、.gitignore和LICENSE
-
-1.  添加远程仓库
+6. 添加远程仓库
 
 ```
 git remote add origin https://github.com/your-username/your-repository.git
 ```
 
-1.  推送代码到GitHub
+7. 推送代码到GitHub
 
 ```
 git push -u origin master
 ```
 
-注意事项：
+## 注意事项
 
-+   确保已安装Git
-
-+   替换 your-username 和 your-repository 为实际的GitHub用户名和仓库名
-
-+   如果是首次使用，可能需要配置Git用户名和邮箱
++ 确保已安装`Git`
++ 替换`your-username` 和 `your-repository` 为实际的GitHub用户名和仓库名
++ 如果是首次使用，可能需要配置`Git`用户名和邮箱

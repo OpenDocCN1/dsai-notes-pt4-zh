@@ -1,21 +1,15 @@
+
 # Claude Code 基础使用完整指南：从启动到精通的实战手册
 
 > 来源：[https://my.feishu.cn/docx/SJKAdDZhwoNSQkxLpSJctjRAnAc](https://my.feishu.cn/docx/SJKAdDZhwoNSQkxLpSJctjRAnAc)
 
-# Claude Code 基础使用完整指南：从启动到精通的实战手册
-
 > **课程信息**
 
 +   **预计学时**：4-6小时
-
 +   **难度等级**：⭐ 零基础入门
-
 +   **更新日期**：2026年3月
-
 +   **适用版本**：Claude Code v2.1+（验证于2026-03-18）
-
 +   **信息来源**：[官方文档](https://code.claude.com/docs) | [GitHub](https://github.com/anthropics/claude-code)
-
 +   **前置要求**：已完成Claude Code安装
 
 ---
@@ -25,15 +19,10 @@
 完成本课学习后，你将能够：
 
 1.  **理解三种使用模式**：掌握交互模式、单次执行、打印模式的适用场景
-
 1.  **熟练使用交互模式**：掌握REPL对话窗口的完整操作技巧
-
 1.  **精通30+个Slash命令**：熟练使用所有内置快捷指令
-
 1.  **掌握快捷键操作**：提高10倍工作效率的键盘技巧
-
 1.  **配置个性化环境**：根据项目需求定制Claude Code
-
 1.  **独立排查问题**：使用诊断命令解决90%的常见问题
 
 ---
@@ -66,11 +55,8 @@
 **建议分段学习**：
 
 +   第1天（2小时）：第1-3部分（简介+快速开始+交互模式）
-
 +   第2天（1.5小时）：第4部分（Slash命令大全）
-
 +   第3天（1小时）：第5-6部分（快捷键+最佳实践）
-
 +   第4天（0.5小时）：第7部分（FAQ）
 
 ---
@@ -88,10 +74,8 @@
 
 **使用方法**：
 
-1.  按 Ctrl + F 搜索你的问题关键词
-
+1.  按 `Ctrl + F` 搜索你的问题关键词
 1.  找到对应的Q&A
-
 1.  按步骤解决
 
 ---
@@ -120,7 +104,7 @@
 | **交互模式** | Interactive Mode | 可以连续对话的模式，AI记住上下文 | 打电话聊天（可以连续说很多轮） |
 | **REPL** | Read-Eval-Print-Loop | 交互模式的技术称呼，读取-执行-打印-循环 | 你说一句AI回一句，不停循环 |
 | **打印模式** | Print Mode | 只输出结果，没有额外格式 | 只给答案，不说废话 |
-| **Slash命令** | Slash Commands | 以&quot;/&quot;开头的特殊命令 | 🛰️的&quot;@某人&quot;，快速触发功能 |
+| **Slash命令** | Slash Commands | 以`/`开头的特殊命令 | 🛰️的`@某人`，快速触发功能 |
 | **Token** | - | AI处理文字的计费单位 | 打的士按公里计费，AI按Token计费 |
 | **Checkpoint** | - | 检查点，代码和对话的存档点 | 游戏存档，随时可以读档重来 |
 | **Rewind** | - | 回退到之前的检查点 | 游戏读档 |
@@ -139,7 +123,6 @@
 **生活类比**：
 
 +   **传统编程**：你一个人在厨房做菜，从买菜到炒菜全得自己来
-
 +   **用Claude Code**：请了一个厨师助手，你说"做宫保鸡丁"，他帮你查菜谱、准备食材、甚至直接帮你炒
 
 ### 1.2 三种使用模式对比
@@ -148,9 +131,9 @@ Claude Code提供三种使用模式，适合不同场景：
 
 | 模式 | 启动方式 | 特点 | 适用场景 | 生活类比 |
 | --- | --- | --- | --- | --- |
-| **交互模式** | claude | 连续对话，保持上下文 | 日常开发、复杂任务 | 打电话聊天 |
-| **单次执行** | claude &quot;prompt&quot; | 执行一次就退出 | 脚本自动化、快速查询 | 发短信问问题 |
-| **打印模式** | claude -p &quot;prompt&quot; | 只输出纯文本结果 | 管道处理、数据转换 | 只要答案不要废话 |
+| **交互模式** | `claude` | 连续对话，保持上下文 | 日常开发、复杂任务 | 打电话聊天 |
+| **单次执行** | `claude "prompt"` | 执行一次就退出 | 脚本自动化、快速查询 | 发短信问问题 |
+| **打印模式** | `claude -p "prompt"` | 只输出纯文本结果 | 管道处理、数据转换 | 只要答案不要废话 |
 
 **选择决策树**：
 
@@ -158,16 +141,16 @@ Claude Code提供三种使用模式，适合不同场景：
 你要做什么？
     │
     ├── 需要多轮对话？
-    │       ├── 是 → 交互模式 (claude)
+    │       ├── 是 → 交互模式 (`claude`)
     │       └── 否 ↓
     │
     ├── 需要在脚本中使用？
-    │       ├── 是 → 单次执行 (claude &quot;prompt&quot;)
+    │       ├── 是 → 单次执行 (`claude "prompt"`)
     │       └── 否 ↓
     │
     └── 需要把输出传给其他命令？
-            ├── 是 → 打印模式 (claude -p &quot;prompt&quot;)
-            └── 否 → 交互模式 (claude)
+            ├── 是 → 打印模式 (`claude -p "prompt"`)
+            └── 否 → 交互模式 (`claude`)
 ```
 
 ### 1.3 为什么要学CLI版本
@@ -200,20 +183,17 @@ Claude Code提供三种使用模式，适合不同场景：
 
 **Windows系统**：
 
-+   按 Win + R，输入 cmd 或 powershell，回车
-
++   按 `Win + R`，输入 `cmd` 或 `powershell`，回车
 +   或：在开始菜单搜索"终端"或"PowerShell"
 
 **macOS系统**：
 
-+   按 Cmd + Space，输入 Terminal，回车
-
++   按 `Cmd + Space`，输入 `Terminal`，回车
 +   或：打开"应用程序" → "实用工具" → "终端"
 
 **Linux系统**：
 
-+   按 Ctrl + Alt + T（大多数发行版）
-
++   按 `Ctrl + Alt + T`（大多数发行版）
 +   或：从应用菜单找到"终端"
 
 #### 步骤2：进入项目目录
@@ -229,7 +209,7 @@ cd ~/你的项目路径
 > 如果没有项目，可以创建一个测试目录：
 
 ```
-mkdir test-claude &amp;&amp; cd test-claude
+mkdir test-claude && cd test-claude
 ```
 
 #### 步骤3：启动Claude Code
@@ -248,7 +228,7 @@ Type your message or /help for commands
 You: █
 ```
 
-> 光标在You:后面闪烁，等待你输入，这就说明启动成功了！
+> 光标在`You:`后面闪烁，等待你输入，这就说明启动成功了！
 
 ### 2.2 第一次对话
 
@@ -282,15 +262,13 @@ You: 你好，介绍一下你自己
 **运行这个测试**：
 
 ```
-You: 创建一个hello.py文件，内容是打印&quot;Hello Claude Code&quot;
+You: 创建一个hello.py文件，内容是打印"Hello Claude Code"
 ```
 
 **预期结果**：
 
 1.  Claude会请求你确认创建文件
-
 1.  你按回车确认
-
 1.  文件创建成功
 
 **验证文件已创建**：
@@ -300,7 +278,7 @@ You: 创建一个hello.py文件，内容是打印&quot;Hello Claude Code&quot;
 cat hello.py
 
 # 预期输出：
-print(&quot;Hello Claude Code&quot;)
+print("Hello Claude Code")
 ```
 
 ### 2.4 退出Claude Code
@@ -313,9 +291,8 @@ You: /exit
 
 或按快捷键：
 
-+   **macOS/Linux**：Ctrl + D
-
-+   **Windows**：Ctrl + Z 然后回车
++   **macOS/Linux**：`Ctrl + D`
++   **Windows**：`Ctrl + Z` 然后回车
 
 ---
 
@@ -356,11 +333,11 @@ claude --project /path/to/your/project
 
 | 选项 | 简写 | 作用 | 适用场景 |
 | --- | --- | --- | --- |
-| --dangerously-skip-permissions | 无 | 跳过权限确认 | 个人项目，节省时间 |
-| --verbose | 无 | 显示详细日志 | 调试问题 |
-| --model &lt;name&gt; | -m | 指定AI模型 | 需要特定模型 |
-| --continue | -c | 恢复最近会话 | 继续昨天的工作 |
-| --resume &lt;id&gt; | -r | 恢复指定会话 | 恢复特定对话 |
+| `--dangerously-skip-permissions` | 无 | 跳过权限确认 | 个人项目，节省时间 |
+| `--verbose` | 无 | 显示详细日志 | 调试问题 |
+| `--model <name>` | `-m` | 指定AI模型 | 需要特定模型 |
+| `--continue` | `-c` | 恢复最近会话 | 继续昨天的工作 |
+| `--resume <id>` | `-r` | 恢复指定会话 | 恢复特定对话 |
 
 **实用组合**：
 
@@ -383,7 +360,7 @@ claude --worktree
 claude -w
 ```
 
-> 💡 Worktree 模式（v2.1.49+ 新增）：--worktree（-w）是 2026年2月新增的重要参数。它会自动创建一个独立的 Git Worktree，让你可以同时运行多个 Claude Code 实例，每个实例在自己的工作目录中独立工作，互不干扰。适合并行开发多个功能、边修 bug 边开发新特性等场景。使用前需要将 .claude/worktrees/ 添加到 .gitignore。
+> 💡 Worktree 模式（v2.1.49+ 新增）：`--worktree`（`-w`）是 2026年2月新增的重要参数。它会自动创建一个独立的 Git Worktree，让你可以同时运行多个 Claude Code 实例，每个实例在自己的工作目录中独立工作，互不干扰。适合并行开发多个功能、边修 bug 边开发新特性等场景。使用前需要将 `.claude/worktrees/` 添加到 `.gitignore`。
 
 ### 3.3 快速输入技巧
 
@@ -393,10 +370,10 @@ Claude Code支持两个特殊的输入前缀：
 
 | 前缀 | 作用 | 示例 |
 | --- | --- | --- |
-| @ | 文件路径自动补全 | @src/app.js |
-| ! | 直接执行bash命令 | ! npm test |
+| `@` | 文件路径自动补全 | `@src/app.js` |
+| `!` | 直接执行bash命令 | `! npm test` |
 
-> 💡 关**于记忆管理：**如需将项目规范写入记忆（CLAUDE.md），请使用 /memory 命令，它会打开 CLAUDE.md 供你编辑。
+> 💡 关于记忆管理：如需将项目规范写入记忆（`CLAUDE.md`），请使用 `/memory` 命令，它会打开 `CLAUDE.md` 供你编辑。
 
 **示例**：
 
@@ -417,10 +394,10 @@ You: /memory
 
 | 方法 | 快捷键 | 说明 |
 | --- | --- | --- |
-| 反斜杠换行 | \ + Enter | 所有终端通用 |
-| macOS默认 | Option + Enter | macOS默认 |
-| 终端设置后 | Shift + Enter | 运行 /terminal-setup 配置 |
-| 控制序列 | Ctrl + J | 换行符 |
+| 反斜杠换行 | `\` + `Enter` | 所有终端通用 |
+| macOS默认 | `Option + Enter` | macOS默认 |
+| 终端设置后 | `Shift + Enter` | 运行 `/terminal-setup` 配置 |
+| 控制序列 | `Ctrl + J` | 换行符 |
 | 直接粘贴 | 粘贴代码块 | 自动识别多行 |
 
 **示例**：
@@ -436,38 +413,32 @@ function add(a, b) {\
 
 #### 何时清空对话
 
-**用 /clear 的场景**：
+**用 `/clear` 的场景**：
 
 +   完成一个任务，要开始完全不同的新任务
-
 +   对话太长，影响响应速度
-
 +   想要"干净"的起点
 
-**不要用 /clear 的场景**：
+**不要用 `/clear` 的场景**：
 
 +   还在解决同一个问题
-
 +   需要参考之前的讨论
-
 +   任务还没完成
 
 #### 何时压缩对话
 
-**用 /compact 的场景**：
+**用 `/compact` 的场景**：
 
-+   Token使用接近上限（用 /context 查看）
-
++   Token使用接近上限（用 `/context` 查看）
 +   响应变慢但还需要上下文
-
 +   想省钱但保留关键信息
 
 **对比**：
 
 | 命令 | 效果 | 保留内容 | Token节省 |
 | --- | --- | --- | --- |
-| /clear | 完全清空 | 仅CLAUDE.md配置 | 100% |
-| /compact | 压缩历史 | 关键信息 | 40-60% |
+| `/clear` | 完全清空 | 仅`CLAUDE.md`配置 | 100% |
+| `/compact` | 压缩历史 | 关键信息 | 40-60% |
 
 ---
 
@@ -477,7 +448,7 @@ function add(a, b) {\
 
 > ⏱️ **预计时间**：60分钟
 
-> 📌 重**要提示：**所有Slash命令都必须在交互模式中使用！
+> 📌 **重要提示：**所有Slash命令都必须在交互模式中使用！
 
 ### 4.1 基础控制命令
 
@@ -500,9 +471,7 @@ Available Commands:
 **什么时候用**：
 
 +   忘记命令名称时
-
 +   想知道有哪些可用命令
-
 +   学习新功能
 
 ---
@@ -515,11 +484,11 @@ Available Commands:
 You: /exit
 
 # 或使用快捷键：
-# macOS/Linux: Ctrl + D
-# Windows: Ctrl + Z 然后回车
+# macOS/Linux: `Ctrl + D`
+# Windows: `Ctrl + Z` 然后回车
 ```
 
-> 退出前记得保存重要对话（用 /export 命令）！
+> 退出前记得保存重要对话（用 `/export` 命令）！
 
 ---
 
@@ -535,7 +504,7 @@ Conversation cleared.
 CLAUDE.md configuration retained.
 ```
 
-> CLAUDE.md的配置不会丢失！
+> `CLAUDE.md`的配置不会丢失！
 
 ---
 
@@ -554,6 +523,8 @@ Token usage reduced by 45%
 
 **带指令压缩**：
 
+
+
 ```
 # 告诉Claude保留什么
 You: /compact 保留所有关于数据库设计的讨论
@@ -561,9 +532,9 @@ You: /compact 保留所有关于数据库设计的讨论
 
 ---
 
-### 4.2 上下文管理命令
+## 4.2 上下文管理命令
 
-#### /context - 可视化上下文使用
+### /context - 可视化上下文使用
 
 **作用**：用彩色网格显示Token使用情况
 
@@ -592,7 +563,7 @@ Recommendation: Context usage healthy
 
 ---
 
-#### /cost - 显示会话成本
+### /cost - 显示会话成本
 
 **作用**：显示当前会话的Token使用和费用
 
@@ -613,7 +584,7 @@ Started: 10:30 AM
 
 ---
 
-#### /model - 切换AI模型
+### /model - 切换AI模型
 
 **作用**：在会话中切换不同的AI模型
 
@@ -644,16 +615,20 @@ You: /model claude-opus-4-6
 **模型对比**：
 
 | 模型 | 速度 | 能力 | 成本 | 上下文窗口 | 最大输出 | 适用场景 |
+
 | --- | --- | --- | --- | --- | --- | --- |
+
 | Haiku | 最快 | 基础 | 最低 | 200K | 8K | 简单任务、快速查询 |
+
 | Sonnet | 中等 | 强大 | 中等 | 200K | 64K | 日常开发（推荐） |
+
 | Opus | 较慢 | 最强 | 最高 | **1M** | **128K** | 复杂任务、关键决策 |
 
 > 💡 v**2.1.69+ 新特性：**Opus模型已支持1M（约100万token）上下文窗口和128K输出token。这意味着你可以让Opus阅读整个大型代码库并一次性生成完整的长文件。
 
 ---
 
-#### /voice - 语音模式 🆕
+### /voice - 语音模式 🆕
 
 **作用**：通过语音与Claude Code交互，无需打字
 
@@ -672,13 +647,13 @@ Say &quot;exit&quot; or press Esc to leave voice mode
 
 +   **按住空格键****说话**（push-to-talk），松开自动发送
 
-+   说"exit"或按 Esc 退出语音模式
++   说`exit`或按 Esc 退出语音模式
 
 +   支持**20种语言**的语音输入（中文、英语、日语等）
 
 **自定义按键绑定**：
 
-在 ~/.claude/settings.json 中配置：
+在 `~/.claude/settings.json` 中配置：
 
 ```
 {
@@ -692,11 +667,11 @@ Say &quot;exit&quot; or press Esc to leave voice mode
 
 ---
 
-#### /effort - 推理深度控制 🆕
+### /effort - 推理深度控制 🆕
 
 **作用**：调整Claude的"思考深度"，在速度和质量之间取舍
 
-**一句话理解**：就像考试答题——low是快速选择题模式，high是详细论述题模式。
+**一句话理解**：就像考试答题——`low`是快速选择题模式，`high`是详细论述题模式。
 
 ```
 You: /effort low     # ○ 快速简洁，适合简单问答
@@ -708,16 +683,20 @@ You: /effort auto    # 重置为自动判断
 **三级对比**：
 
 | 级别 | 符号 | 速度 | Token消耗 | 适用场景 |
+
 | --- | --- | --- | --- | --- |
-| low | ○ | 最快 | 最少 | 简单问答、格式转换、快速查询 |
-| medium | ◐ | 中等 | 中等 | 日常开发、代码修改（默认） |
-| high | ● | 较慢 | 较多 | 架构设计、复杂调试、关键决策 |
+
+| `low` | ○ | 最快 | 最少 | 简单问答、格式转换、快速查询 |
+
+| `medium` | ◐ | 中等 | 中等 | 日常开发、代码修改（默认） |
+
+| `high` | ● | 较慢 | 较多 | 架构设计、复杂调试、关键决策 |
 
 > 💡 状**态栏提示：**切换后，终端状态栏会显示当前级别符号（○/◐/●），方便随时确认。
 
 ---
 
-#### Auto Memories - 自动记忆 🆕
+### Auto Memories - 自动记忆 🆕
 
 **作用**：Claude Code自动记录和回忆跨会话的重要信息
 
@@ -725,15 +704,15 @@ You: /effort auto    # 重置为自动判断
 
 **工作原理**：
 
-1.  Claude在工作中发现重要信息（如项目偏好、常见问题解法）时，自动写入memory文件
+1.  Claude在工作中发现重要信息（如项目偏好、常见问题解法）时，自动写入`memory`文件
 
 1.  新会话开始时，自动加载相关记忆到上下文
 
-1.  MEMORY.md文件的前200行始终加载到对话上下文
+1.  `MEMORY.md`文件的前200行始终加载到对话上下文
 
 **配置方式**：
 
-在 ~/.claude/settings.json 中指定记忆存储目录：
+在 `~/.claude/settings.json` 中指定记忆存储目录：
 
 ```
 {
@@ -743,27 +722,27 @@ You: /effort auto    # 重置为自动判断
 
 **记忆文件格式**：
 
-+   文件名带时间戳，如 2026-03-18_project-preferences.md
++   文件名带时间戳，如 `2026-03-18_project-preferences.md`
 
 +   内容为Markdown格式，Claude自动组织
 
-+   可手动编辑或通过 /memory 命令管理
++   可手动编辑或通过 `/memory` 命令管理
 
-> 💡 与** /memory 的区别：**/memory 是手动编辑记忆文件，Auto Memories是Claude自动记录。两者互补，共同构成Claude的"长期记忆"。
+> 💡 与 `/memory` 的区别：`/memory` 是手动编辑记忆文件，Auto Memories是Claude自动记录。两者互补，共同构成Claude的"长期记忆”。
 
 ---
 
-### 4.3 Extended Thinking（扩展思考）
+## 4.3 Extended Thinking（扩展思考）
 
 > ⚠️ **重要**：Extended Thinking不是Slash命令，是通过Tab键或关键词触发的功能！
 
-#### 什么是Extended Thinking
+### 什么是Extended Thinking
 
 **一句话理解**：让Claude在回答前进行深度思考，展示"解题过程"而不只是答案。
 
 **类比**：就像数学考试，有人直接写答案，有人写完整解题过程。Extended Thinking就是让Claude展示解题过程。
 
-#### 如何启用
+### 如何启用
 
 **方法1：Tab键切换（最简单）**
 
@@ -791,32 +770,42 @@ You: ultrathink this critical decision
 **关键词对比**：
 
 | 关键词 | Token预算 | 响应时间 | 适用场景 |
-| --- | --- | --- | --- |
-| think | ~1,500 | 5-10秒 | 一般问题 |
-| think hard | ~3,000 | 10-20秒 | 复杂问题 |
-| think harder | ~8,000 | 20-30秒 | 架构决策 |
-| ultrathink | ~16,000 | 30-60秒 | 关键决策 |
 
-#### 省钱技巧
+| --- | --- | --- | --- |
+
+| `think` | ~1,500 | 5-10秒 | 一般问题 |
+
+| `think hard` | ~3,000 | 10-20秒 | 复杂问题 |
+
+| `think harder` | ~8,000 | 20-30秒 | 架构决策 |
+
+| `ultrathink` | ~16,000 | 30-60秒 | 关键决策 |
+
+### 省钱技巧
 
 > Extended Thinking会消耗更多Token！只在真正需要时使用！
 
 **快速决策**：
 
 | 问题类型 | 推荐方式 | 原因 |
+
 | --- | --- | --- |
+
 | 语法查询 | 普通模式 | 简单问题不需要深度思考 |
-| 代码分析 | think | 需要基础分析 |
-| 架构设计 | think hard | 需要权衡多方案 |
-| 技术选型 | ultrathink | 关键决策值得深思 |
+
+| 代码分析 | `think` | 需要基础分析 |
+
+| 架构设计 | `think hard` | 需要权衡多方案 |
+
+| 技术选型 | `ultrathink` | 关键决策值得深思 |
 
 ---
 
-### 4.4 Rewind/Checkpoint（回退功能）
+## 4.4 Rewind/Checkpoint（回退功能）
 
 > Claude Code 2.0的革命性功能，让你大胆实验无后顾之忧！
 
-#### 什么是Checkpoint
+### 什么是Checkpoint
 
 **一句话理解**：Checkpoint（检查点）就像游戏存档，Rewind（回退）就是读档。
 
@@ -834,7 +823,7 @@ You: ultrathink this critical decision
 
 +   比Git更强：同时管理代码和对话状态
 
-#### 如何使用Rewind
+### 如何使用Rewind
 
 方法1：双击Escape键（最快）
 
@@ -857,7 +846,7 @@ You: ultrathink this critical decision
 ╰─────────────────────────────────────────╯
 ```
 
-**方法2：/rewind命令**
+**方法2：`/rewind`命令**
 
 ```
 You: /rewind
@@ -865,28 +854,37 @@ You: /rewind
 # 显示可用的检查点列表，选择要回退到的点
 ```
 
-#### 三种恢复选项
+### 三种恢复选项
 
 选择检查点后，会提示选择恢复策略：
 
 | 选项 | 效果 | 适用场景 |
+
 | --- | --- | --- |
+
 | **仅恢复对话** | 保留代码改动，重置AI上下文 | AI理解错了，但代码改对了 |
+
 | **仅恢复代码** | 保留对话历史，回退文件修改 | 代码改错了，但讨论有价值 |
+
 | **同时恢复** | 代码和对话都回到之前状态 | 完全走错方向，从头来 |
 
 **快速决策表**：
 
 | 代码对吗？ | 对话有用吗？ | 选哪个？ |
+
 | --- | --- | --- |
+
 | 对 | 不对 | 仅恢复对话 |
+
 | 不对 | 有用 | 仅恢复代码 |
+
 | 不对 | 没用 | 同时恢复 |
+
 | 都对 | 都对 | 按Cancel |
 
-#### 重要限制
+### 重要限制
 
-> **Critical**：Checkpoint只追踪Claude**的文件编辑工具（Wri**te、Edit），不追踪bash命令修改！
+> **Critical**：Checkpoint只追踪Claude的文件编辑工具（`Write`、`Edit`），不追踪bash命令修改！
 
 **会被追踪**：
 
@@ -910,9 +908,9 @@ You: ! mv src/old.py src/new.py
 
 ---
 
-### 4.5 会话管理命令
+## 4.5 会话管理命令
 
-#### /resume - 恢复会话
+### /resume - 恢复会话
 
 **作用**：恢复之前的对话会话
 
@@ -949,7 +947,7 @@ ses_ghi789  Yesterday   other-project    API design
 
 ---
 
-#### /export - 导出对话
+### /export - 导出对话
 
 **作用**：把对话导出为文件
 
@@ -968,14 +966,18 @@ You: /export --format html
 **格式对比**：
 
 | 格式 | 适合场景 |
+
 | --- | --- |
+
 | Markdown | 阅读、文档 |
+
 | JSON | 程序处理 |
+
 | HTML | 网页展示 |
 
 ---
 
-#### /rename - 重命名会话
+### /rename - 重命名会话
 
 **作用**：给当前会话起个好名字，方便以后查找
 
@@ -990,11 +992,11 @@ You: /rename auth-module-implementation
 
 ---
 
-### 4.6 项目配置命令
+## 4.6 项目配置命令
 
-#### /init - 初始化项目配置
+### /init - 初始化项目配置
 
-**作用**：创建CLAUDE.md配置文件，告诉Claude项目信息
+**作用**：创建`CLAUDE.md`配置文件，告诉Claude项目信息
 
 ```
 You: /init
@@ -1011,9 +1013,9 @@ CLAUDE.md created with:
 
 ---
 
-#### /memory - 编辑记忆文件
+### /memory - 编辑记忆文件
 
-**作用**：打开CLAUDE.md进行编辑
+**作用**：打开`CLAUDE.md`进行编辑
 
 ```
 You: /memory
@@ -1031,7 +1033,7 @@ You: # API响应格式必须包含code字段
 
 ---
 
-#### /permissions - 管理权限
+### /permissions - 管理权限
 
 **作用**：查看和修改Claude的权限设置
 
@@ -1056,36 +1058,44 @@ Bash Commands:
 Claude Code 提供三种权限模式，交互模式中按 Shift + Tab 循环切换：
 
 | 模式 | 行为 | 适用场景 |
+
 | --- | --- | --- |
-| **plan** | 只分析不修改，纯只读 | 代码审查、安全探索 |
-| **acceptEdits** | 自动接受文件编辑（仍确认危险命令） | 信任项目、快速原型 |
-| bypassPermissions | 跳过所有确认提示 | 仅限隔离容器环境 |
+
+| `plan` | 只分析不修改，纯只读 | 代码审查、安全探索 |
+
+| `acceptEdits` | 自动接受文件编辑（仍确认危险命令） | 信任项目、快速原型 |
+
+| `bypassPermissions` | 跳过所有确认提示 | 仅限隔离容器环境 |
 
 **配置层级**（优先级从高到低）：
 
-```
-企业设置 &gt; 项目本地(.claude/settings.local.json) &gt; 项目(.claude/settings.json) &gt; 用户(~/.claude/settings.json)
-```
 
-allowedTools（推荐替代方案）：
 
-相比危险的 --dangerously-skip-permissions 全局跳过，更安全的做法是在配置中精确指定允许的工具：
+## 第四部分：配置与命令参考
 
-```
+### 配置优先级与权限管理
+
+企业设置 > 项目本地(`.claude/settings.local.json`) > 项目(`.claude/settings.json`) > 用户(`~/.claude/settings.json`)
+
+`allowedTools`（推荐替代方案）：
+
+相比危险的 `--dangerously-skip-permissions` 全局跳过，更安全的做法是在配置中精确指定允许的工具：
+
+```json
 {
-  &quot;permissions&quot;: {
-    &quot;allowedTools&quot;: [&quot;Read&quot;, &quot;Grep&quot;, &quot;Glob&quot;, &quot;Edit&quot;]
+  "permissions": {
+    "allowedTools": ["Read", "Grep", "Glob", "Edit"]
   }
 }
 ```
 
-> ⚠️ **安全提醒**：--dangerously-skip-permissions 会移除所有确认提示，仅适用于 Docker/VM 等隔离环境中的自动化任务，日常开发请使用 allowedTools 精细控制。
+> ⚠️ **安全提醒**：`--dangerously-skip-permissions` 会移除所有确认提示，仅适用于 Docker/VM 等隔离环境中的自动化任务，日常开发请使用 `allowedTools` 精细控制。
 
 ---
 
 ### 4.7 开发辅助命令
 
-#### /review - 代码审查
+#### `/review` - 代码审查
 
 **作用**：让Claude审查当前的代码修改
 
@@ -1103,7 +1113,7 @@ Found 3 modified files:
 
 ---
 
-#### /todos - 查看待办事项
+#### `/todos` - 查看待办事项
 
 **作用**：列出Claude在对话中追踪的TODO项目
 
@@ -1119,7 +1129,7 @@ Current TODOs:
 
 ---
 
-#### /agents - 管理子代理
+#### `/agents` - 管理子代理
 
 **作用**：管理和查看Claude的子代理（用于复杂任务分解）
 
@@ -1134,7 +1144,7 @@ Active Agents:
 
 ---
 
-#### /fast - 快速模式切换
+#### `/fast` - 快速模式切换
 
 **作用**：切换快速输出模式，使用相同模型但输出速度更快，适合简单任务
 
@@ -1148,13 +1158,13 @@ You: /fast
 Fast mode: disabled
 ```
 
-> 💡 说**明：**快速模式使用相同的模型，不会切换到更低级的模型，只是优化了输出速度。适合简单的代码修改、快速问答等场景。
+> 💡 说明：快速模式使用相同的模型，不会切换到更低级的模型，只是优化了输出速度。适合简单的代码修改、快速问答等场景。
 
 ---
 
 ### 4.8 诊断命令
 
-#### /doctor - 系统诊断
+#### `/doctor` - 系统诊断
 
 **作用**：检查Claude Code安装的健康状态
 
@@ -1183,7 +1193,7 @@ Overall Status: Healthy ✓
 
 ---
 
-#### /status - 完整状态信息
+#### `/status` - 完整状态信息
 
 **作用**：显示版本、模型、账户等完整状态
 
@@ -1210,7 +1220,7 @@ Session:
 
 ---
 
-#### /usage - 使用量统计
+#### `/usage` - 使用量统计
 
 **作用**：显示账户使用量和限制（订阅用户）
 
@@ -1236,7 +1246,7 @@ Rate Limit:
 
 ### 4.9 其他实用命令
 
-#### /stats - 使用统计
+#### `/stats` - 使用统计
 
 **作用**：显示你的使用习惯统计
 
@@ -1259,7 +1269,7 @@ Most used commands:
 
 ---
 
-#### /vim - 启用Vim模式
+#### `/vim` - 启用Vim模式
 
 **作用**：在输入框启用Vim风格编辑
 
@@ -1272,7 +1282,7 @@ You: /vim
 
 ---
 
-#### /release-notes - 查看更新日志
+#### `/release-notes` - 查看更新日志
 
 **作用**：显示Claude Code的最新更新内容
 
@@ -1289,7 +1299,7 @@ Release Notes v2.1.52
 
 ---
 
-#### /bug - 报告Bug
+#### `/bug` - 报告Bug
 
 **作用**：提交Bug报告给Anthropic
 
@@ -1307,7 +1317,7 @@ Describe the bug you encountered:
 
 ### 4.10 MCP相关命令
 
-#### /mcp - 管理MCP连接
+#### `/mcp` - 管理MCP连接
 
 **作用**：查看和管理MCP服务器连接
 
@@ -1328,7 +1338,7 @@ MCP Server Status
 
 ---
 
-#### /plugin - 管理插件
+#### `/plugin` - 管理插件
 
 **作用**：安装、启用、禁用Claude Code插件
 
@@ -1344,7 +1354,7 @@ Installed Plugins:
 
 ---
 
-#### /hooks - 管理Hooks
+#### `/hooks` - 管理Hooks
 
 **作用**：配置在特定事件触发的自动化脚本
 
@@ -1368,104 +1378,145 @@ Configured Hooks:
 ### 5.1 通用控制
 
 | 快捷键 | 作用 | 备注 |
+
 | --- | --- | --- |
+
 | Ctrl + C | 取消当前输入或生成 | 标准中断 |
+
 | Ctrl + D | 退出Claude Code | EOF信号 |
+
 | Ctrl + L | 清除终端屏幕 | 保留对话历史 |
+
 | Ctrl + O | 切换详细输出 | 显示工具调用细节 |
+
 | Ctrl + R | 反向搜索历史命令 | 查找之前输入 |
+
 | Esc + Esc | 打开Rewind菜单 | 回退代码/对话 |
+
 | Tab | 切换Extended Thinking | 开/关扩展思考 |
+
 | Shift + Tab | 切换权限模式 | 自动/计划/普通 |
+
 | 上/下箭头 | 浏览历史命令 | 快速复用 |
 
 ### 5.2 模型切换
 
 | 快捷键 | 作用 |
+
 | --- | --- |
+
 | Option + P (macOS) | 切换AI模型 |
+
 | Alt + P (Windows/Linux) | 切换AI模型 |
 
 ### 5.3 粘贴图片
 
 | 快捷键 | 平台 |
+
 | --- | --- |
+
 | Ctrl + V | macOS/Linux |
+
 | Alt + V | Windows |
 
 ### 5.4 多行输入
 
 | 方法 | 快捷键 | 兼容性 |
+
 | --- | --- | --- |
+
 | 反斜杠 | \ + Enter | 所有终端 |
+
 | macOS默认 | Option + Enter | macOS |
-| 配置后 | Shift + Enter | 需运行 /terminal-setup |
+
+| 配置后 | Shift + Enter | 需运行 `/terminal-setup` |
+
 | 控制序列 | Ctrl + J | 所有终端 |
 
 ### 5.5 历史搜索 (Ctrl + R)
 
 **使用步骤**：
 
-1.  按 Ctrl + R 进入搜索模式
+1. 按 Ctrl + R 进入搜索模式
 
-1.  输入要搜索的关键词
+2. 输入要搜索的关键词
 
-1.  再按 Ctrl + R 浏览更早的匹配
+3. 再按 Ctrl + R 浏览更早的匹配
 
-1.  按 Tab 或 Esc 接受当前匹配
+4. 按 Tab 或 Esc 接受当前匹配
 
-1.  按 Enter 直接执行
+5. 按 Enter 直接执行
 
-1.  按 Ctrl + C 取消搜索
+6. 按 Ctrl + C 取消搜索
 
 ### 5.6 后台运行
 
 | 操作 | 方式 |
+
 | --- | --- |
-| 提示Claude后台运行 | 在提示词中说&quot;在后台运行&quot; |
+
+| 提示Claude后台运行 | 在提示词中说 "在后台运行" |
+
 | 手动转后台 | 按 Ctrl + B |
+
 | tmux用户 | 按两次 Ctrl + B |
 
 **常见后台命令**：
 
-+   构建工具（webpack、vite）
++   构建工具（`webpack`、`vite`）
 
-+   包管理器（npm、yarn）
++   包管理器（`npm`、`yarn`）
 
-+   测试运行器（jest、pytest）
++   测试运行器（`jest`、`pytest`）
 
 +   开发服务器
 
 ### 5.7 Vim模式快捷键
 
-启用 /vim 后可用：
+启用 `/vim` 后可用：
 
 **模式切换**：
 
 | 命令 | 动作 |
+
 | --- | --- |
+
 | Esc | 进入NORMAL模式 |
+
 | i | 在光标前插入 |
+
 | a | 在光标后插入 |
+
 | o | 在下方新开一行 |
 
 **移动（NORMAL模式）**：
 
 | 命令 | 动作 |
+
 | --- | --- |
+
 | h/j/k/l | 左/下/上/右 |
+
 | w/b | 下一个/上一个单词 |
+
 | 0/$ | 行首/行尾 |
+
 | gg/G | 文件开头/结尾 |
 
 **编辑（NORMAL模式）**：
 
 | 命令 | 动作 |
+
 | --- | --- |
+
 | x | 删除字符 |
+
 | dd | 删除整行 |
+
 | dw | 删除单词 |
+
 | cc | 修改整行 |
+
 | . | 重复上次操作 |
 
 ---
@@ -1508,11 +1559,17 @@ You: /rename auth-module-day2
 #### Token优化
 
 | 技巧 | 节省比例 |
+
 | --- | --- |
-| 简单问题不用Extended Thinking | 70% |
-| 定期使用 /compact | 40-60% |
-| 完成任务后用 /clear | 100% |
+
+| 简单问题不用 `Extended Thinking` | 70% |
+
+| 定期使用 `/compact` | 40-60% |
+
+| 完成任务后用 `/clear` | 100% |
+
 | 使用Sonnet而非Opus | 80% |
+
 | 简洁描述需求 | 30% |
 
 #### 模型选择策略
@@ -1533,23 +1590,23 @@ You: ultrathink 设计这个系统的架构
 
 ### 6.3 配置别名提高效率
 
-**macOS/Linux**（添加到 ~/.bashrc 或 ~/.zshrc）：
+**macOS/Linux**（添加到 `~/.bashrc` 或 `~/.zshrc`）：
 
 ```
 # 快速启动
-alias cc=&quot;claude --dangerously-skip-permissions&quot;
+alias cc="claude --dangerously-skip-permissions"
 
 # 恢复会话
-alias cr=&quot;claude -c&quot;
+alias cr="claude -c"
 
 # 调试模式
-alias ccv=&quot;claude --verbose&quot;
+alias ccv="claude --verbose"
 
 # 使用Opus
-alias cco=&quot;claude --model claude-opus-4-6&quot;
+alias cco="claude --model claude-opus-4-6"
 ```
 
-Windows PowerShell（添加到 $PROFILE）：
+Windows PowerShell（添加到 `$PROFILE`）：
 
 ```
 # 编辑配置文件
@@ -1563,7 +1620,7 @@ function ccv { claude --verbose }
 
 ### 6.4 大胆实验的工作方式
 
-利用Checkpoint放心尝试：
+利用`Checkpoint`放心尝试：
 
 ```
 # 场景：想尝试激进的重构但担心破坏代码
@@ -1602,7 +1659,7 @@ You: /export --format html shared/auth-discussion.html
 mkdir -p .claude/commands
 
 # 创建代码审查命令
-echo &quot;Review this code for security and performance issues:&quot; &gt; .claude/commands/security-review.md
+echo "Review this code for security and performance issues:" > .claude/commands/security-review.md
 
 # 团队成员都可以使用
 You: /security-review
@@ -1616,9 +1673,9 @@ You: /security-review
 
 > ⏱️ **预计时间**：按需查阅
 
-### Q1: 启动时报错 "claude: command not found"
+### Q1: 启动时报错 `claude: command not found`
 
-**原因**：Claude Code没有正确安装或不在PATH中
+**原因**：Claude Code没有正确安装或不在`PATH`中
 
 **解决方案**：
 
@@ -1636,7 +1693,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 ---
 
-### Q2: 报错 "Authentication failed"
+### Q2: 报错 `Authentication failed`
 
 **原因**：API Key没有配置或已过期
 
@@ -1651,7 +1708,7 @@ echo $ANTHROPIC_API_KEY  # macOS/Linux
 echo %ANTHROPIC_API_KEY%  # Windows
 
 # 如果为空，需要设置API Key
-export ANTHROPIC_API_KEY=&quot;your-api-key&quot;  # macOS/Linux
+export ANTHROPIC_API_KEY="your-api-key"  # macOS/Linux
 set ANTHROPIC_API_KEY=your-api-key  # Windows
 ```
 
@@ -1659,13 +1716,22 @@ set ANTHROPIC_API_KEY=your-api-key  # Windows
 
 ### Q3: 响应很慢怎么办
 
-**可能原因和解决方案**：
+
+
+## 常见问题与解决方案
+
+### 可能原因和解决方案
 
 | 原因 | 解决方案 |
+
 | --- | --- |
-| 对话太长 | 使用 /compact 压缩 |
+
+| 对话太长 | 使用 `/compact` 压缩 |
+
 | 网络问题 | 检查代理设置 |
+
 | 服务繁忙 | 稍后再试 |
+
 | 使用Opus模型 | 切换到Sonnet |
 
 ```
@@ -1683,7 +1749,7 @@ You: /model claude-sonnet-4-6
 
 ### Q4: 怎么恢复之前的对话
 
-**方法1：命令行恢复**
+#### 方法1：命令行恢复
 
 ```
 # 恢复最近的会话
@@ -1693,7 +1759,7 @@ claude -c
 claude -r ses_abc123
 ```
 
-**方法2：交互模式恢复**
+#### 方法2：交互模式恢复
 
 ```
 You: /resume
@@ -1704,13 +1770,13 @@ You: /resume
 
 ### Q5: 文件修改后怎么回退
 
-**使用Rewind功能**：
+#### 使用Rewind功能：
 
 ```
 # 方法1：双击Escape键
 [按 Esc + Esc]
 # 选择要回退到的检查点
-# 选择&quot;仅恢复代码&quot;
+# 选择"仅恢复代码"
 
 # 方法2：/rewind命令
 You: /rewind
@@ -1720,7 +1786,7 @@ You: /rewind
 
 ### Q6: Claude一直请求确认，太烦了
 
-**解决方案**：使用跳过权限确认的启动选项
+#### 解决方案：使用跳过权限确认的启动选项
 
 ```
 claude --dangerously-skip-permissions
@@ -1732,21 +1798,21 @@ claude --dangerously-skip-permissions
 
 ### Q7: 怎么让Claude记住项目规范
 
-**方法1：使用#前缀快速添加**
+#### 方法1：使用#前缀快速添加
 
 ```
 You: # 本项目使用TypeScript
 You: # 所有API必须返回code字段
 ```
 
-**方法2：编辑CLAUDE.md**
+#### 方法2：编辑`CLAUDE.md`
 
 ```
 You: /memory
 # 在编辑器中添加项目规范
 ```
 
-**方法3：初始化项目**
+#### 方法3：初始化项目
 
 ```
 You: /init
@@ -1757,14 +1823,14 @@ You: /init
 
 ### Q8: 怎么使用Extended Thinking
 
-**方法1：Tab键切换**
+#### 方法1：Tab键切换
 
 ```
 # 按Tab键开启/关闭
 [按 Tab]
 ```
 
-**方法2：关键词触发**
+#### 方法2：关键词触发
 
 ```
 You: think about this problem
@@ -1776,7 +1842,7 @@ You: ultrathink this critical decision
 
 ### Q9: MCP服务器连不上
 
-**诊断步骤**：
+#### 诊断步骤：
 
 ```
 # 1. 检查配置文件
@@ -1796,35 +1862,35 @@ You: /doctor
 
 ### Q10: 怎么省钱
 
-**综合省钱策略**：
+#### 综合省钱策略：
 
-1.  **选择合适的模型**
+1. **选择合适的模型**
 
-+   简单任务：Haiku（最便宜）
++ 简单任务：Haiku（最便宜）
 
-+   日常开发：Sonnet（性价比高）
++ 日常开发：Sonnet（性价比高）
 
-+   关键决策：Opus（按需使用）
++ 关键决策：Opus（按需使用）
 
-1.  **优化Token使用**
+2. **优化Token使用**
 
-+   定期 /compact 压缩对话
++ 定期 `/compact` 压缩对话
 
-+   完成任务后 /clear 清空
++ 完成任务后 `/clear` 清空
 
-+   简洁描述需求
++ 简洁描述需求
 
-1.  避免不必要的Extended Thinking
+3. 避免不必要的Extended Thinking
 
-+   简单问题直接问
++ 简单问题直接问
 
-+   只在需要深度分析时用 think
++ 只在需要深度分析时用 think
 
-1.  **监控使用量**
+4. **监控使用量**
 
-+   定期 /cost 查看费用
++ 定期 `/cost` 查看费用
 
-+   /context 检查Token使用
++ `/context` 检查Token使用
 
 ---
 
@@ -1844,12 +1910,12 @@ You: 分析 @large-file.js 中的handleAuth函数
 
 ### Q12: 怎么批量处理多个文件
 
-**使用单次执行模式**：
+#### 使用单次执行模式：
 
 ```
 # 批量处理
 for file in *.js; do
-  claude -p &quot;Add JSDoc comments to $file&quot; &gt; &quot;${file%.js}-documented.js&quot;
+  claude -p "Add JSDoc comments to $file" > "${file%.js}-documented.js"
 done
 ```
 
@@ -1857,7 +1923,7 @@ done
 
 ### Q13: 输出乱码怎么办
 
-**解决方案**：
+#### 解决方案：
 
 ```
 # Windows PowerShell
@@ -1871,7 +1937,7 @@ export LANG=en_US.UTF-8
 
 ### Q14: 怎么在远程服务器使用
 
-**SSH到服务器后直接使用**：
+#### SSH到服务器后直接使用：
 
 ```
 # SSH连接
@@ -1881,7 +1947,7 @@ ssh user@server
 claude
 
 # 或使用单次执行
-claude -p &quot;分析这个日志文件&quot; &lt; error.log
+claude -p "分析这个日志文件" < error.log
 ```
 
 ---
@@ -1894,7 +1960,7 @@ GitHub Actions示例：
 - name: Code Review
   run: |
     npm install -g @anthropic-ai/claude-code
-    claude -p &quot;Review the changes and check for issues&quot;
+    claude -p "Review the changes and check for issues"
   env:
     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 ```
@@ -1903,7 +1969,7 @@ GitHub Actions示例：
 
 ### Q16: 会话突然中断怎么办
 
-**会话自动保存，直接恢复**：
+#### 会话自动保存，直接恢复：
 
 ```
 # 恢复最近会话
@@ -1914,7 +1980,7 @@ claude -c
 
 ### Q17: 怎么看Claude在做什么
 
-**启用详细输出**：
+#### 启用详细输出：
 
 ```
 # 启动时启用
@@ -1928,7 +1994,7 @@ Ctrl + O
 
 ### Q18: 怎么取消正在执行的操作
 
-**按 Ctrl + C 中断**：
+#### 按 Ctrl + C 中断：
 
 ```
 # Claude正在生成长回答时
@@ -1940,7 +2006,7 @@ Ctrl + O
 
 ### Q19: 怎么更新Claude Code
 
-**更新命令**：
+#### 更新命令：
 
 ```
 # 在终端运行
@@ -1954,14 +2020,19 @@ npm update -g @anthropic-ai/claude-code
 
 ### Q20: 配置文件在哪里
 
-**配置文件位置**：
+#### 配置文件位置：
 
 | 文件 | 位置 | 作用 |
+
 | --- | --- | --- |
-| CLAUDE.md | 项目根目录 | 项目配置 |
-| .mcp.json | 项目根目录 | MCP服务器配置 |
-| ~/.claude/ | 用户目录 | 全局配置 |
-| ~/.claude/commands/ | 用户目录 | 个人Slash命令 |
+
+| `CLAUDE.md` | 项目根目录 | 项目配置 |
+
+| `.mcp.json` | 项目根目录 | MCP服务器配置 |
+
+| `~/.claude/` | 用户目录 | 全局配置 |
+
+| `~/.claude/commands/` | 用户目录 | 个人Slash命令 |
 
 ---
 
@@ -1970,68 +2041,123 @@ npm update -g @anthropic-ai/claude-code
 ### CLI启动选项
 
 | 选项 | 简写 | 作用 |
+
 | --- | --- | --- |
-| --version | -v | 显示版本 |
-| --help | -h | 显示帮助 |
-| --print | -p | 打印模式 |
-| --model &lt;name&gt; | -m | 指定模型 |
-| --continue | -c | 恢复最近会话 |
-| --resume &lt;id&gt; | -r | 恢复指定会话 |
-| --project &lt;path&gt; | 无 | 指定项目目录 |
-| --verbose | 无 | 详细输出 |
-| --dangerously-skip-permissions | 无 | 跳过权限确认 |
+
+| `--version` | `-v` | 显示版本 |
+
+| `--help` | `-h` | 显示帮助 |
+
+| `--print` | `-p` | 打印模式 |
+
+| `--model <name>` | `-m` | 指定模型 |
+
+| `--continue` | `-c` | 恢复最近会话 |
+
+| `--resume <id>` | `-r` | 恢复指定会话 |
+
+| `--project <path>` | 无 | 指定项目目录 |
+
+| `--verbose` | 无 | 详细输出 |
+
+| `--dangerously-skip-permissions` | 无 | 跳过权限确认 |
 
 ### Slash命令速查
 
 | 命令 | 作用 |
+
 | --- | --- |
-| /help | 显示帮助 |
-| /exit | 退出 |
-| /clear | 清空对话 |
-| /compact | 压缩对话 |
-| /context | 查看Token使用 |
-| /cost | 查看费用 |
-| /model | 切换模型 |
-| /status | 查看状态 |
-| /doctor | 系统诊断 |
-| /resume | 恢复会话 |
-| /export | 导出对话 |
-| /rename | 重命名会话 |
-| /init | 初始化项目 |
-| /memory | 编辑记忆 |
-| /permissions | 管理权限 |
-| /review | 代码审查 |
-| /todos | 查看待办 |
-| /rewind | 回退功能 |
-| /mcp | 管理MCP |
-| /plugin | 管理插件 |
-| /hooks | 管理Hooks |
-| /vim | Vim模式 |
-| /stats | 使用统计 |
-| /usage | 使用量 |
-| /release-notes | 更新日志 |
-| /bug | 报告Bug |
-| /voice | 语音模式 🆕 |
-| /effort | 推理深度控制 🆕 |
-| /loop | 定时循环执行 🆕 |
-| /sandbox | 沙箱隔离模式 🆕 |
-| /color | 会话颜色设置 🆕 |
-| /copy | 复制AI回复 🆕 |
-| /branch | 会话分支 🆕 |
+
+| `/help` | 显示帮助 |
+
+| `/exit` | 退出 |
+
+| `/clear` | 清空对话 |
+
+| `/compact` | 压缩对话 |
+
+| `/context` | 查看Token使用 |
+
+| `/cost` | 查看费用 |
+
+| `/model` | 切换模型 |
+
+| `/status` | 查看状态 |
+
+| `/doctor` | 系统诊断 |
+
+| `/resume` | 恢复会话 |
+
+| `/export` | 导出对话 |
+
+| `/rename` | 重命名会话 |
+
+| `/init` | 初始化项目 |
+
+| `/memory` | 编辑记忆 |
+
+| `/permissions` | 管理权限 |
+
+| `/review` | 代码审查 |
+
+| `/todos` | 查看待办 |
+
+| `/rewind` | 回退功能 |
+
+| `/mcp` | 管理MCP |
+
+| `/plugin` | 管理插件 |
+
+| `/hooks` | 管理Hooks |
+
+| `/vim` | Vim模式 |
+
+| `/stats` | 使用统计 |
+
+| `/usage` | 使用量 |
+
+| `/release-notes` | 更新日志 |
+
+| `/bug` | 报告Bug |
+
+| `/voice` | 语音模式 🆕 |
+
+| `/effort` | 推理深度控制 🆕 |
+
+| `/loop` | 定时循环执行 🆕 |
+
+| `/sandbox` | 沙箱隔离模式 🆕 |
+
+| `/color` | 会话颜色设置 🆕 |
+
+| `/copy` | 复制AI回复 🆕 |
+
+| `/branch` | 会话分支 🆕 |
 
 ### 快捷键速查
 
 | 快捷键 | 作用 |
+
 | --- | --- |
+
 | Ctrl + C | 取消/中断 |
+
 | Ctrl + D | 退出 |
+
 | Ctrl + L | 清屏 |
+
 | Ctrl + O | 切换详细输出 |
+
 | Ctrl + R | 搜索历史 |
+
 | Ctrl + B | 转后台运行 |
+
 | Esc + Esc | Rewind菜单 |
+
 | Tab | 切换Extended Thinking |
+
 | Shift + Tab | 切换权限模式 |
+
 | Option/Alt + P | 切换模型 |
 
 ---
@@ -2042,27 +2168,27 @@ npm update -g @anthropic-ai/claude-code
 
 **你现在掌握了**：
 
-1.  三种使用模式（交互/单次/打印）
+1. 三种使用模式（交互/单次/打印）
 
-1.  30+个Slash命令
+2. 30+个Slash命令
 
-1.  高效快捷键操作
+3. 高效快捷键操作
 
-1.  Checkpoint/Rewind回退功能
+4. Checkpoint/Rewind回退功能
 
-1.  Extended Thinking深度思考
+5. Extended Thinking深度思考
 
-1.  省钱和效率技巧
+6. 省钱和效率技巧
 
 **下一步学习建议**：
 
-1.  **Commands系统**：学习自定义Slash命令
+1. **Commands系统**：学习自定义Slash命令
 
-1.  **MCP集成**：连接外部工具
+2. **MCP集成**：连接外部工具
 
-1.  **Hooks系统**：自动化工作流
+3. **Hooks系统**：自动化工作流
 
-1.  **Skills定制**：创建专业知识技能包
+4. **Skills定制**：创建专业知识技能包
 
 **记住**：最好的学习方式是实践！打开Claude Code，开始你的AI编程之旅吧！
 
@@ -2070,35 +2196,38 @@ npm update -g @anthropic-ai/claude-code
 
 > **课程反馈**：如果本教程对你有帮助，欢迎分享给更多人！
 
-> **问题反馈**：遇到问题可以使用 /bug 命令报告，或在社区提问。
+> **问题反馈**：遇到问题可以使用 `/bug` 命令报告，或在社区提问。
 
-> **更新日期****：2**026年3月18日
+> **更新日期**：2026年3月18日
 
 > 版本：v1.2（v2.1.69-v2.1.78新功能补充版）
 
 ---
 
-### 版本更新日志
+## 版本更新日志
 
-#### V1.2 新功能补充（2026-03-18）
+### V1.2 新功能补充（2026-03-18）
 
-+   新增：/voice 语音模式说明（push-to-talk操作、20种语言支持）
++ 新增：`/voice` 语音模式说明（push-to-talk操作、20种语言支持）
 
-+   新增：/effort 推理深度控制说明（low/medium/high三级）
++ 新增：`/effort` 推理深度控制说明（low/medium/high三级）
 
-+   新增：Auto Memories 自动记忆功能说明
++ 新增：Auto Memories 自动记忆功能说明
 
-+   更新：模型对比表增加上下文窗口（1M）和最大输出（128K）列
++ 更新：模型对比表增加上下文窗口（1M）和最大输出（128K）列
 
-+   更新：Slash命令速查表补充7个新命令（voice/effort/loop/sandbox/color/copy/branch）
++ 更新：Slash命令速查表补充7个新命令（`/voice`、`/effort`、`/loop`、`/sandbox`、`/color`、`/copy`、`/branch`）
 
-+   更新：模型名称统一为最新版本格式
++ 更新：模型名称统一为最新版本格式
 
-#### V1.1 修正内容（2025-12-23）
+### V1.1 修正内容（2025-12-23）
 
 | 修正项 | 问题 | 修正后 |
-| --- | --- | --- |
-| 模型名称日期 | claude-sonnet-4-5-20250514 日期错误 | 修正为 claude-sonnet-4-6 |
-| 模型名称日期 | claude-opus-4-5-20250514 日期错误 | 修正为 claude-opus-4-6 |
 
-> 💡 审**查方法：**基于官方Claude Code文档验证模型名称准确性，确保示例代码可直接运行。
+| --- | --- | --- |
+
+| 模型名称日期 | `claude-sonnet-4-5-20250514` 日期错误 | 修正为 `claude-sonnet-4-6` |
+
+| 模型名称日期 | `claude-opus-4-5-20250514` 日期错误 | 修正为 `claude-opus-4-6` |
+
+> 💡 审查方法：基于官方Claude Code文档验证模型名称准确性，确保示例代码可直接运行。

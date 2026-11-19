@@ -1,16 +1,17 @@
+
 # 视频换脸
 
 > 来源：[https://aigclena.feishu.cn/docx/BAHndElTXoWGkexFWzqcXHienwf](https://aigclena.feishu.cn/docx/BAHndElTXoWGkexFWzqcXHienwf)
 
-# 本地换脸 | 案例拆解
+## 本地换脸 | 案例拆解
 
-+    Deep Live Cam案例  本地搭建环境
+### Deep Live Cam案例 本地搭建环境
 
 ![](img/5e37fcf8ca31d1055e4a39e750c28f13.png)
 
 [X2Twitter.com_9s1WDV9QyZZjpR7v_1280p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K22Jbo9qyoZQxgxofRrcT121nkb)
 
-1、安装地址：https://github.com/hacksider/Deep-Live-Cam
+1、安装地址：`https://github.com/hacksider/Deep-Live-Cam`
 
 2、运行python文件并根据需要选择
 
@@ -22,9 +23,9 @@
 
 [X2Twitter.com_GV-N2u5WkAAtabA_gif.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KlowbQ9Qqo2qi3xVYkkcYG3Pn0m)
 
-+   swapface
+### swapface
 
-地址：https://www.swapface.org/#/homek
+地址：`https://www.swapface.org/#/homek`
 
 下载到本地安装使用
 
@@ -34,7 +35,7 @@
 
 [WeChat_20241006135835.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KePZbjXvRoFeQlxBwqGcqUCtnSb)
 
-# 在线换脸案例
+## 在线换脸案例
 
 > 6.43 复制打开抖音，看看【Ai设计师lena的作品】时隔一年我又做了条换脸视频 效果更棒了 时隔一年，... https://v.douyin.com/iByWyu3a/ wFu:/ 08/28 N@j.CU
 
@@ -47,7 +48,6 @@
 [case4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S44VblDh6ogtQixNgFOcXClXnec)
 
 网友案例（仅供学习交流使用，侵删）👇
-
 
 [814b13b4f349b80bb9b2c7d1d9642d9d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C3wObxp0Ro5rIDx6slccQ14Bni6)
 
@@ -85,7 +85,7 @@
 
 [屏幕录制 2024-11-04 205721.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LUmXbwTRdoAAhixhF9VcrmxqnKc)
 
-# 尼纳工作室商业案例
+## 尼纳工作室商业案例
 
 不易展示过多，详情请滴滴
 
@@ -101,19 +101,19 @@
 
 [after.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XIWcbfymsoqUoPx5EwkcrjBzn0t)
 
-# 在线换脸平台
+## 在线换脸平台
 
-https://www.vidnoz.com/face-swap.html
+`https://www.vidnoz.com/face-swap.html`
 
-https://www.vidwud.com/free-face-swap.html
+`https://www.vidwud.com/free-face-swap.html`
 
-https://aifaceswap.io/
+`https://aifaceswap.io/`
 
-https://pixlr.com/face-swap/
+`https://pixlr.com/face-swap/`
 
-https://remaker.ai/face-swap-free/
+`https://remaker.ai/face-swap-free/`
 
-# 好玩儿的视频
+## 好玩儿的视频
 
 ![](img/44b7dcffa8b0c686a8b4699b4be1ecf7.png)
 
@@ -121,6 +121,6 @@ https://remaker.ai/face-swap-free/
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/1dc599802e218826d7e859df3ad01032.png)

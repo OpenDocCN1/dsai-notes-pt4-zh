@@ -1,3 +1,4 @@
+
 # 20251119-Gemini 3深夜炸场：地表最强AI！代码能力逆天，剑指AGI
 
 > 来源：[https://aigcreative.feishu.cn/docx/Z3D2d8HHRourgbxhKyFccAEOn0d](https://aigcreative.feishu.cn/docx/Z3D2d8HHRourgbxhKyFccAEOn0d)
@@ -16,25 +17,23 @@ Gemini 3，千呼万唤始出来！
 
 ![](img/353a3030ea4f6f870e7781221597b662.png)
 
-[X2Twitter.com_I7EtkkCsDQR_B9jH_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SiWdb3SSOoWubqxvB2UcMe4nnHf)
+[`X2Twitter.com_I7EtkkCsDQR_B9jH_1080p.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SiWdb3SSOoWubqxvB2UcMe4nnHf)
 
 ![](img/deedcd651c52ef5aac32b145d4c60cdd.png)
 
-[X2Twitter.com_NUdbZqotlP6KMYq9_1080p (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FUOQbGDSUoNsdOxLbcCcLqdynud)
+[`X2Twitter.com_NUdbZqotlP6KMYq9_1080p (1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FUOQbGDSUoNsdOxLbcCcLqdynud)
 
 直接上手：
 
 ![](img/630ead9e6af08144aacf02e922795e3d.png)
 
-先用Gemini 3 总结一下自己：
+先用 Gemini 3 总结一下自己：
 
 ![](img/fc85cc328ebd57c2db90a1c799f120ed.png)
 
 ## Vibe Coding：以后写代码全凭一张嘴？
 
-**这次更新里最让开发者肾上腺**素飙升的，绝对是 "Vibe Coding"。
-
-![](img/09447f520c88495c77148d99d509996b.png)
+这次更新里最让开发者肾上腺素飙升的，绝对是 “Vibe Coding”。
 
 **自然语言就是唯一的编程语法。**
 
@@ -54,7 +53,7 @@ Gemini 3，千呼万唤始出来！
 
 ![](img/f60c855e820cafc9e01921db64c89675.png)
 
-[06.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PkCfbkz4IoZtVgxtfAZcVhTunue)
+[`06.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PkCfbkz4IoZtVgxtfAZcVhTunue)
 
 > 复刻一个苹果Mac OS
 
@@ -84,7 +83,7 @@ Gemini 3，千呼万唤始出来！
 
 ![](img/3d850274ff4f6a695825f81b6f01251c.png)
 
-[284b38c7c8f4e564e1db6d21400afc4d_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IE0Ab0CokoNwX1xGCfUcQxjqnPh)
+[`284b38c7c8f4e564e1db6d21400afc4d_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IE0Ab0CokoNwX1xGCfUcQxjqnPh)
 
 > 做一个V8发动机演示的3D动画
 
@@ -98,11 +97,11 @@ Gemini 3，千呼万唤始出来！
 
 ![](img/fc58aca50b38c6da4812d970d7e20f89.png)
 
-**为了配合Gemini **3的代码能力，Google 还顺手发布了一个叫 Antigravity 的开发平台。
+为了配合 Gemini 3 的代码能力，Google 还顺手发布了一个叫 Antigravity 的开发平台。
 
 ![](img/09d3e37b1aa7a3373ce982e9881ce6b5.png)
 
-链接：https://antigravity.google/
+链接：<https://antigravity.google/>
 
 名字起得很狂（反重力），功能更狂。
 
@@ -138,10 +137,9 @@ Google 这次还干了一件很“鸡贼”但很聪明的事：它把 Gemini 3 
 
 以前你搜“三体问题”，Google 给你一堆维基百科链接。
 
+[`07.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G8uVbBCtKok1RPxNbGscEUjOnIg)
 
-[07.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G8uVbBCtKok1RPxNbGscEUjOnIg)
-
-**现在？Gemini 3 **会直接在搜索结果里给你现场写一个引力交互模拟器。你搜房贷计算，它给你生成一个动态对比工具。
+**现在？Gemini 3** 会直接在搜索结果里给你现场写一个引力交互模拟器。你搜房贷计算，它给你生成一个动态对比工具。
 
 这种“生成式 UI”意味着，我们不再是去网页上找信息，而是 AI 在根据我们的需求，实时把信息重组成了最好用的软件界面。
 
@@ -155,7 +153,7 @@ Gemini 3 这次在 Vending-Bench 2（长时程规划测试）上拿了第一。�
 
 ![](img/f253e62f9f576edb8c0bc7ec1cc2a4b4.png)
 
-[08.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FYE2bF6ovo56HixWsj8ctABnnF1)
+[`08.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FYE2bF6ovo56HixWsj8ctABnnF1)
 
 它能真的去读邮件、查网页、做对比，最后等你确认付款。Google 甚至表示，这玩意儿能模拟一整年的决策过程而不跑偏。
 
@@ -173,7 +171,7 @@ Sundar Pichai 说 AI 已经进化到能“读懂房间氛围”（Read the room�
 
 这话一点不假。
 
-从今天起，Gemini 3不再仅仅是一个极其聪明的聊天机器人，它成了你的程序员、你的秘书、你的研究员。
+从今天起，Gemini 3 不再仅仅是一个极其聪明的聊天机器人，它成了你的程序员、你的秘书、你的研究员。
 
 对于普通用户来说，这是科幻照进现实的一天；
 
@@ -181,4 +179,4 @@ Sundar Pichai 说 AI 已经进化到能“读懂房间氛围”（Read the room�
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

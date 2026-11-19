@@ -1,7 +1,7 @@
-# Agent Skill  知识卡片提示词 + 图片
+
+# Agent Skill 知识卡片提示词 + 图片
 
 > 来源：[https://aicarrier.feishu.cn/docx/KogPd93bWoC5DEx50adcR5eCnud](https://aicarrier.feishu.cn/docx/KogPd93bWoC5DEx50adcR5eCnud)
-
 
 书小生 IP
 
@@ -11,11 +11,9 @@
 
 ```
 xxxx
-
 ```
 
 生成图片：
-
 
 ## 案例 2
 

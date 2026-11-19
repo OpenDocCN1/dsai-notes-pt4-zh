@@ -1,4 +1,5 @@
-# 20251011-Gaga AI ，嘎嘎香！当导演、教AI演戏，轻松拿捏专业“演员”！
+
+# 20251011-Gaga AI，嘎嘎香！当导演、教AI演戏，轻松拿捏专业“演员”！
 
 > 来源：[https://aigcreative.feishu.cn/docx/SYNXdNorno9OuAxwDARcOALJnBb](https://aigcreative.feishu.cn/docx/SYNXdNorno9OuAxwDARcOALJnBb)
 
@@ -46,7 +47,7 @@
 
 ![](img/92d7e76b25f324629b272f945ad27729.png)
 
-[gaga-output-251008-214854.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OVSDbYtQ2oiF59xoTI6c4OaWnih)
+[`gaga-output-251008-214854.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OVSDbYtQ2oiF59xoTI6c4OaWnih)
 
 > 大爷疑惑的问到：“马冬什么？什么冬梅？马什么梅？你这孩子说清楚点儿啊！”
 
@@ -54,7 +55,7 @@
 
 ![](img/b4ad69ccfa124d3ecfe76cda78535bd5.png)
 
-[02.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CKtPblRg9o3Zbgxnf33cJzInnph)
+[`02.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CKtPblRg9o3Zbgxnf33cJzInnph)
 
 > 这名男子声音粗粝中带磁性、雄浑厚重的基底感与充满张力的表现力，愤怒的说道：“我就想让你翻译，什么叫惊喜！翻译给我听，什么他妈的叫他妈的惊喜！”
 
@@ -62,7 +63,7 @@
 
 ![](img/3991dbdbd372803718357fd9d57dddb0.png)
 
-[03.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EDKub7U3eoYaY4x5HeOcoK9unWg)
+[`03.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EDKub7U3eoYaY4x5HeOcoK9unWg)
 
 > 这个男人微微一笑，然后语重心长的说到：“You’re never really done for, as long as you’ve got a good story and someone to tell it to.”
 
@@ -70,9 +71,9 @@
 
 ![](img/1ad0fc2a2ed0e763e659ee7591de7539.png)
 
-[gaga-output-251008-163530.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GT58bOBqioPqUTxEaSscTUMknVg)
+[`gaga-output-251008-163530.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GT58bOBqioPqUTxEaSscTUMknVg)
 
-每个视频等待了大约1~2分钟，视频生成了。点开播**放，我得承认，****效果超出**了我的预期，真的是影视级音画同出的效果！
+每个视频等待了大约1~2分钟，视频生成了。点开播放，我得承认，效果超出了我的预期，真的是影视级音画同出的效果！
 
 首先，口型匹配度极高，这是基本功，做到了。但真正打动我的是表演的细节，它不仅仅是让嘴巴动了起来，而是调动了整个面部的微表情来服务于这句台词的情感。这一点，是它和市面上绝大多数产品拉开差距的地方。
 
@@ -84,7 +85,7 @@
 
 ![](img/32c8c20e974aa65602d8f56b76ba1a2b.png)
 
-[gaga-output-251008-235330.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T71sb3KSBovaO1xlxurcBh7knpc)
+[`gaga-output-251008-235330.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T71sb3KSBovaO1xlxurcBh7knpc)
 
 ## 3、真人脱口秀：
 
@@ -94,7 +95,7 @@
 
 ![](img/ae787ce728638c4955f793a645151aa1.png)
 
-[gaga-output-251008-210815.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J0M4bReqUoaKQ0xNACBclaZOnke)
+[`gaga-output-251008-210815.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J0M4bReqUoaKQ0xNACBclaZOnke)
 
 ## 4、双人对话场景：
 
@@ -104,7 +105,7 @@
 
 ![](img/87d1e3cb44c623e70dc94c5ec3c1bd25.png)
 
-[gaga-output-251010-010726.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TJY3bPWyKoQvuTx4ZYEcIAmdnj5)
+[`gaga-output-251010-010726.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TJY3bPWyKoQvuTx4ZYEcIAmdnj5)
 
 > The expressions of the two women quickly changed from shock to despair and panic. The woman on the left said in panic, "How could he find himself here?" The woman on the right said in panic, "It's over, ma'am. We're all done."
 
@@ -112,7 +113,7 @@
 
 ![](img/1b368a8a5d36eed0d95580431900a1ee.png)
 
-[gaga-output-251008-215239.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XUtob0p1co9xLWxVXDMcA35snQc)
+[`gaga-output-251008-215239.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XUtob0p1co9xLWxVXDMcA35snQc)
 
 > 职场上下级，正在商讨策略，中文对话。
 
@@ -120,7 +121,7 @@
 
 ![](img/b9fc3d42bf4633a71cee851beb38f54d.png)
 
-[gaga-output-251009-233049.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Go1NbgYRBoG9qGxyJFUcT5lfnvg)
+[`gaga-output-251009-233049.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Go1NbgYRBoG9qGxyJFUcT5lfnvg)
 
 以上的对话的“交接”非常流畅，人物之间的互动感很强。
 
@@ -134,7 +135,7 @@
 
 ![](img/9b49df4d7f0a17f91b6f985d68394dec.png)
 
-[10.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PKavbtZGToFtLNxdktIccr3XnFd)
+[`10.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PKavbtZGToFtLNxdktIccr3XnFd)
 
 这个虚拟偶像，首先是图生视频的效果，很自然，画面没有任何异常，特别是头发丝细节的处理，没有什么错乱的地方。
 
@@ -150,29 +151,29 @@
 
 ![](img/6e420250676ab254e49d44f60fa447ad.png)
 
-# 客观地说，这位“AI新秀”很优秀了但也还有提升空间。
+## 客观地说，这位“AI新秀”很优秀了但也还有提升空间。
 
 经过多轮测试，GAGA-1的实力确实让我佩服，尤其是在它专注的“人物对话”领域。但我们也要客观地看到，作为一个新生模型，它现阶段的“戏路”还比较窄。
 
-+   **专精“文戏”，不擅“武戏”**：它的核心优势在于对话表演。我也尝试让它唱歌，效果就比较随机，有点像KTV里的入门选手。
++ **专精“文戏”，不擅“武戏”**：它的核心优势在于对话表演。我也尝试让它唱歌，效果就比较随机，有点像KTV里的入门选手。
 
-+   **一些待优化的技术细节**：比如在生成较长或连续的片段时，角色的音色可能会有细微漂移；双人场景很棒，但想塞进第三个人，系统就会有点“头疼”。
++ **一些待优化的技术细节**：比如在生成较长或连续的片段时，角色的音色可能会有细微漂移；双人场景很棒，但想塞进第三个人，系统就会有点“头疼”。
 
 不过，在我看来，对于一个V1版本的产品，这种“有所为有所不为”的专注反而是件好事。
 
 先把最核心的对话演绎做到极致，再逐步拓宽能力边界，是一条很稳健的路。
 
-# 那么，谁会是这位“AI演员”的第一批观众？
+## 那么，谁会是这位“AI演员”的第一批观众？
 
 聊了这么多，你可能会问，Gaga AI到底能用来做什么？我能想到的应用场景还挺多的：
 
-**1）****内容创作者和独立制作人****：** 以前做个视频，人物独白或者角色对话是最头疼的部分之一。现在，你只需要一张图、一段文案，就能快速生成高质量的表演片段，无论是用作视频素材，还是制作动画、游戏的角色对话Demo，效率都大大提升。
+**1）内容创作者和独立制作人：** 以前做个视频，人物独白或者角色对话是最头疼的部分之一。现在，你只需要一张图、一段文案，就能快速生成高质量的表演片段，无论是用作视频素材，还是制作动画、游戏的角色对话Demo，效率都大大提升。
 
-**2）****营销和广告行业****：** 可以快速生成虚拟代言人的产品介绍、用户证言等视频内容，用更低的成本，实现更生动的视觉呈现。
+**2）营销和广告行业：** 可以快速生成虚拟代言人的产品介绍、用户证言等视频内容，用更低的成本，实现更生动的视觉呈现。
 
-**3）****教育和知识分享****：** 可以让历史人物“亲口”讲述自己的故事，或者让不同领域的专家“同台”辩论，让知识的传播变得更加有趣和直观。
+**3）教育和知识分享：** 可以让历史人物“亲口”讲述自己的故事，或者让不同领域的专家“同台”辩论，让知识的传播变得更加有趣和直观。
 
-**4）****我们普通用户****：** 当然是用来“整活儿”和创造乐趣。让老照片里的爷爷奶奶开口说话，给朋友做个会说话的表情包，或者把自己P到名人合照里来一段“神对话”，想象空间很大。
+**4）我们普通用户：** 当然是用来“整活儿”和创造乐趣。让老照片里的爷爷奶奶开口说话，给朋友做个会说话的表情包，或者把自己P到名人合照里来一段“神对话”，想象空间很大。
 
 ![](img/132e565f59133360a591fb137e01782d.png)
 
@@ -186,4 +187,4 @@
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

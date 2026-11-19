@@ -1,3 +1,4 @@
+
 # 豆包1.8 装修Agent MCP配置教程
 
 > 来源：[https://aiwarts101.feishu.cn/docx/KiqDdkfeQo6y8OxzqvkcWF8CnOb](https://aiwarts101.feishu.cn/docx/KiqDdkfeQo6y8OxzqvkcWF8CnOb)
@@ -6,7 +7,9 @@
 
 ---
 
-[ Trae/Cursor 这些可以调用这10](https://www.volcengine.com/mcp-marketplace)[5个Remote + 200 local MCP ](https://www.volcengine.com/docs/83927/1826777)Tools
+## Trae/Cursor 与 Remote/Local MCP Tools
+
+[Trae/Cursor 这些可以调用这10](https://www.volcengine.com/mcp-marketplace) [5个Remote + 200 local MCP](https://www.volcengine.com/docs/83927/1826777)Tools
 
 https://www.volcengine.com/mcp-marketplace
 
@@ -24,7 +27,7 @@ https://www.volcengine.com/mcp-marketplace/detail?name=lark-mcp
 
 https://www.volcengine.com/mcp-marketplace/detail?name=%E5%8D%9A%E6%9F%A5-AI%E6%90%9C%E7%B4%A2
 
-# Tavily search（AI搜索）
+## Tavily search（AI搜索）
 
 https://www.volcengine.com/mcp-marketplace/detail?name=Tavily%20search
 

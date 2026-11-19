@@ -1,3 +1,4 @@
+
 # RPA 可以做什么？
 
 > 来源：[https://my.feishu.cn/docx/L1iSdjNkjoQIbTxTfTrcKKdsnAe](https://my.feishu.cn/docx/L1iSdjNkjoQIbTxTfTrcKKdsnAe)
@@ -18,23 +19,23 @@ RPA+抖音|自动回复私信引流
 
 RPA+爆文写作|根据👸号文章链接提取文章内容
 
-RPA+爆文写作|把文章内容自动填入 word 文档
+RPA+爆文写作|把文章内容自动填入 `word` 文档
 
-RPA+爆文写作|批量把文章内容填入 ExCel 表格
+RPA+爆文写作|批量把文章内容填入 `ExCel` 表格
 
 RPA+爆文写作|批量点击👸号文章底部推荐
 
 RPA+爆文写作|批是点击看一看文章链接
 
-RPA+爆文写作|搜一搜关键词，并用 chrome 打开文章
+RPA+爆文写作|搜一搜关键词，并用 `chrome` 打开文章
 
-RPA+爆文写作|链接提取文章内容到 word 文档
+RPA+爆文写作|链接提取文章内容到 `word` 文档
 
 RPA+爆文写作|抓取一个账号的多个文章
 
-RPA+爆文写作|KimiChat 批量创作文章
+RPA+爆文写作|`KimiChat` 批量创作文章
 
-RPA+爆文写作|word 自动发布到👸号后台
+RPA+爆文写作|`word` 自动发布到👸号后台
 
 ## RPA+📕
 
@@ -58,7 +59,7 @@ RPA+📕|自动批量制作📕图文笔记
 
 RPA+📕|批量提取📕笔记内容
 
-RPA+📕|批量提取📕笔记浏览数据
+RPA+视频|批量提取📕笔记浏览数据
 
 RPA+📕|自动回复机器人
 
@@ -100,7 +101,7 @@ RPA+办公|操作文件夹
 
 RPA+办公|量重命名
 
-RPA+办公|批量 Word 转换为 PDF 格式
+RPA+办公|批量 `Word` 转换为 `PDF` 格式
 
 RPA+办公|批量压缩
 

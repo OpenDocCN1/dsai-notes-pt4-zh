@@ -1,3 +1,4 @@
+
 # Prompt Hacks to Get ChatGPT to Think Differently
 
 > 来源：[https://my.feishu.cn/docx/EYo9dRo8boDCIvxJUhHcURLwnPc](https://my.feishu.cn/docx/EYo9dRo8boDCIvxJUhHcURLwnPc)

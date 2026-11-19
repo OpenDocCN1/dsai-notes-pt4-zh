@@ -1,28 +1,29 @@
+
 # AI商业案例拆解
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/C1u4dzCWMoohvFxJY3xcpGpfnPc](https://aiyanxishe.feishu.cn/docx/C1u4dzCWMoohvFxJY3xcpGpfnPc)
 
 <https://aiyanxishe.feishu.cn/sync/H4bBd6rOtsCpG9bjI0ZcDHxinnc>
 
-这是一个[**副业赚钱**](https://aiyanxishe.feishu.cn/wiki/Go55wlU1DiuEYJkCgStcbqepnu2?from=from_copylink)**案例**的大合集，将在全网搜索并整理ai副业赚钱的相关方法、技术、工具、以及一些可以赚钱的平台和渠道。 期望能在AI时代，打破信息茧房，让大家都能在这个时代利用AI智能化做副业，赚取工作之余的额外收益。
+这是一个[**副业赚钱**](https://aiyanxishe.feishu.cn/wiki/Go55wlU1DiuEYJkCgStcbqepnu2?from=from_copylink)**案例**的大合集，将在全网搜索并整理 AI 副业赚钱的相关方法、技术、工具、以及一些可以赚钱的平台和渠道。期望能在 AI 时代，打破信息茧房，让大家都能在这个时代利用 AI 智能化做副业，赚取工作之余的额外收益。
 
 ![](img/fa0609bfa60d7ae08db7b6dd4379cde7.png)
 
-# **副业，告别工资！**
+## 副业，告别工资！
 
-# **赚钱，名利双收！**
+## 赚钱，名利双收！
 
-## **9.9元，学习一个搞钱项目**
+## 9.9元，学习一个搞钱项目
 
-##  99元全站课程免费看，邀请有返佣
+## 99元全站课程免费看，邀请有返佣
 
-## **点击👉 查**[**看9000+搞钱案例💰**](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&t=1&do=index&m=fy_lessonv2&uid=6)
+## 点击👉 [查](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&t=1&do=index&m=fy_lessonv2&uid=6) [看9000+搞钱案例💰](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&t=1&do=index&m=fy_lessonv2&uid=6)
 
 ![](img/313629878b09b1d5c7a69fa533e4693d.png)
 
 ![](img/a331b62179c0e2ca3df09f3d8f48d313.png)
 
-## 🔥 A**I变现案例库**
+## AI变现案例库
 
 ![](img/a90a613a1fbf20f7ab7f006b327d11d1.png)
 
@@ -54,7 +55,7 @@
 
 ![](img/aeb2263bf1399b421e11e769a85f0390.png)
 
-### [《抖音蓝海AI书单号暴力新玩法》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12415&do=lesson&m=fy_lessonv2&uid=6)小白3分钟搞定一条视频，一个月佣金5W，
+### [《抖音蓝海AI书单号暴力新玩法》](http://eg02.dzzk.cc/app/index.php?i=4&c=entry&op=display&id=12415&do=lesson&m=fy_lessonv2&uid=6)小白3分钟搞定一条视频，一个月佣金5W
 
 ![](img/7430339237cc42897f132c9e2ee98fbf.png)
 
@@ -110,7 +111,7 @@
 
 ![](img/a05289c4e3b1a91785fddf4c684cef02.png)
 
-### 《 AI中视频解说书单号流量密码》一键生成，秒过原创
+### 《AI中视频解说书单号流量密码》一键生成，秒过原创
 
 ![](img/d8ab66559fb56273c77432d3a57ba138.png)
 
@@ -122,7 +123,7 @@
 
 ![](img/7033d6f33e2f28afba3512898c52cea7.png)
 
-### 《Ai定制头像高需求冷门项目》全程0基础教学，
+### 《Ai定制头像高需求冷门项目》全程0基础教学
 
 ![](img/7a7df03958d3b46d7c15281619ce7259.png)
 
@@ -186,7 +187,7 @@
 
 ![](img/0eb42ab2784e7c9b31dbe2f8d8f15a8a.png)
 
-# 📕搞钱指南
+## 📕搞钱指南
 
 <https://aiyanxishe.feishu.cn/sync/OtQ2dguH7slySbbLhuucEV6inQi>
 

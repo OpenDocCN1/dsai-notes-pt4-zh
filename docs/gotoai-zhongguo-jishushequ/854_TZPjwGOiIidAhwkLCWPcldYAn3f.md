@@ -1,22 +1,23 @@
+
 # GotoAI 会员计划及学员权益
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/Lw02d90a8oN4yTx2Q7UcJ8Ypnje](https://gotoaiworld.feishu.cn/docx/Lw02d90a8oN4yTx2Q7UcJ8Ypnje)
 
 ![](img/d20d52ba900cb5167cefe4d3f6d6fc6c.png)
 
-# 一、会员权益全景图
+## 一、会员权益全景图
 
 > GotoAI 会员及学员权益全景图概览
 
-## 1.面向实习与就业方向
+### 1.面向实习与就业方向
 
-## 2.面向创业与赚钱方向
+### 2.面向创业与赚钱方向
 
-## 3.更多权益与收益
+### 3.更多权益与收益
 
 ![](img/4ae1304ed6f92f15aec4f4b6549a587c.png)
 
-# 二、会员和学员等级及权益
+## 二、会员和学员等级及权益
 
 ![](img/cb6edbf727682e0978af1ffd2588f698.png)
 
@@ -26,11 +27,11 @@
 
 ![](img/a277905a59e8500ed4ebacb10d0ce0de.png)
 
-# 三、会员和学员会费
+## 三、会员和学员会费
 
 ![](img/f27d9373a9b3f34d87b1a63f57c41606.png)
 
-# 四、大学生赋能计划
+## 四、大学生赋能计划
 
 ![](img/753a3487d39fb75d9ce49665884e9931.png)
 
@@ -40,4 +41,4 @@
 
 ![](img/8fde6adac68cbda9e4eb3663a3f90f76.png)
 
-# 五、会员和学员回音壁
+## 五、会员和学员回音壁

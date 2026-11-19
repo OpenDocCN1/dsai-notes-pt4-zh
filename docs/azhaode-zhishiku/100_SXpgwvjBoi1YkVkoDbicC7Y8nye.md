@@ -1,12 +1,11 @@
+
 # 借助AI辅助完成界面UI/UX设计
 
 > 来源：[https://my.feishu.cn/docx/Kf1XdjG6Eo34RIxEl9Rc3BSJnYd](https://my.feishu.cn/docx/Kf1XdjG6Eo34RIxEl9Rc3BSJnYd)
+> 🔗 原文链接：https://mp.weixin.qq.com/s/WrXaDioG2goIcBTjft-VwA
+> ⏰ 剪存时间：2024-01-08 01:34:41 (UTC+8)
 
 <https://my.feishu.cn/sync/CV7edZp1nspUQobYJhicxeP7nrb>
-
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/WrXaDioG2goIcBTjft-VwA)q.com/s/WrXaDioG...
-
-> ⏰ 剪存时间：2024-01-08 01:34:41 (UTC+8)
 
 ![](img/b8e014590d2fae108e558e09a77cf466.png)
 
@@ -14,15 +13,13 @@
 
 「UI/UX设计这些能力...」
 
-设计界的风总是一波未平一波又起，从区块链到元宇宙，最近因为ChatGPT的热议，又让 设计师到底会不会被AI取代的讨论甚嚣尘上。
+设计界的风总是一波未平一波又起，从区块链到元宇宙，最近因为ChatGPT的热议，又让设计师到底会不会被AI取代的讨论甚嚣尘上。
 
 ![](img/c58287e9d5f4e4afa5d55b534eacb167.png)
 
 ▴ credit: Pawel Czerwinski on unsplash
 
-# #01
-
-# **它会设计界面**
+## #01 它会设计界面
 
 对于AI来说，比起频繁出错的人物手指绘图，UI/UX界面的数据更加好分析，框架、组件、易用的按钮位置等等，都是AI构建界面的依循逻辑。
 
@@ -64,9 +61,7 @@
 
 ▴ AI画图标、写文案、生成图片
 
-# #02
-
-# 它会做设计迭代
+## #02 它会做设计迭代
 
 连梦龙的母公司都在使用 **AI做设计迭代。**
 
@@ -84,9 +79,7 @@ Plug AI是2014年由市场调研公司与包装设计公司合并转型为数据
 
 ▴ Plug AI基于千万笔数据已可分析生成包装设计
 
-# #03
-
-# 它符合商家需要
+## #03 它符合商家需要
 
 缓一缓，上面的UI/UX介面跟包装设计AI工具，都需要设计师最终调整，更多是对设计起到较大的参考意义，设计师还不用太担心会被取代...
 
@@ -102,21 +95,15 @@ Pebblely与Midjourney都是通过文字指令输出图像的AI服务，但与Mid
 
 AI极大的压缩了劳务性质的工作内容，比如对静态产品图项目，摄影师不需要花费大量时间布景；对电商店铺设计师来说排版、拓展似乎也是一瞬间的事情。
 
-#
-
 ![](img/e54d133cd7b71f3fb16b5a8e44a03e7a.png)
 
-# ▴ pebblely.com
+▴ pebblely.com
 
 ![](img/e746251cd5381f1e1536bf5ff319ae86.png)
 
-# ▴ pebblely.com
+▴ pebblely.com
 
-#
-
-# **#04**
-
-# **它能满足99%的人**
+## #04 它能满足99%的人
 
 对大众消费市场来说，绝大多数人接收到的信息是文字、图像、界面、视频等实际媒介，他们不会去关心当下消费的内容背后的选题、切入点等，这些需要人类费心思的部分。
 
@@ -130,15 +117,15 @@ AI极大的压缩了劳务性质的工作内容，比如对静态产品图项目
 
 而我们从本文提到的AI工具来看，AI生成绝对已不是科幻小说内的幻想。
 
-# **“ **人工智能是人类需要做出的最后一项发明 。 Machine intelligence is the last invention that humanity will ever need to make.
-
-- Nic Bostrom，牛津大学人类未来研究所的创始主任，以研究人类增强伦理学、超智能风险闻名的瑞典哲学家。
+> “人工智能是人类需要做出的最后一项发明。Machine intelligence is the last invention that humanity will ever need to make.
+>
+> - Nic Bostrom，牛津大学人类未来研究所的创始主任，以研究人类增强伦理学、超智能风险闻名的瑞典哲学家。
 
 从Bostrom的观点来看，似乎认为人们的创新能力将终结在人工智能真正被发明出来的那一刻。
 
 而联合国教科文组织也提到了，继互联网和移动互联网引发第三次工业革命之后，以大数据驱动的人工智能技术正在推动第四次工业革命，这可能会撼动全球平衡。
 
-# **结. 但AI不了解人类**
+## 结. 但AI不了解人类
 
 AI没办法创造新东西，它是规律跟分析的产物。
 
@@ -152,9 +139,9 @@ AI无法直面一位连自己都不清楚自己想要什么的用户，而设计
 
 工欲善其事必先利其器，设计师可以利用AI降低劳务性工作，为真正需要钻研的问题费功夫，或许是商业理解、或许是团队管理、更可能是 创造一个从0到1的新鲜事物。
 
-# “ 重要的是ChatGPT是个工具，它的输出应该是提供人们作为进一步完善和编辑的起点，而不是直接用于最终设计。 It’s important to note that ChatGPT is a tool, and its output should be used as a starting point for further refinement and editing, rather than being used directly in a final design.
-
-- ChatGPT它这么说 。
+> “重要的是ChatGPT是个工具，它的输出应该是提供人们作为进一步完善和编辑的起点，而不是直接用于最终设计。It’s important to note that ChatGPT is a tool, and its output should be used as a starting point for further refinement and editing, rather than being used directly in a final design.
+>
+> - ChatGPT它这么说 。
 
 本期编辑：Hales Tsai
 

@@ -1,41 +1,41 @@
+
 # 保姆级的注册教程
 
-> 来源：[https://e0lrm2v2v1u.feishu.cn/docx/LNhydvkvCoiMi4xgdnPcwad0n0f](https://e0lrm2v2v1u.feishu.cn/docx/LNhydvkvCoiMi4xgdnPcwad0n0f)
+> 来源：`https://e0lrm2v2v1u.feishu.cn/docx/LNhydvkvCoiMi4xgdnPcwad0n0f`
 
-### ** CHATGP****T 注册流**程
+## ChatGPT 注册流程
 
 ![](img/6989eea17c4fe5ca8463d3bb5f69d681.png)
 
 流程如下：确认网络环境→ 网页注册→ 邮箱验证→手机号码验证→登录使用
 
-**注册/登录环境要求：**
+### 注册/登录环境要求
 
-+   注册和登陆需要安全上网（一定要开全局模式），即网络的IP属于国外（大陆、香港、澳门等地区不能用）。
++ 注册和登陆需要安全上网（一定要开全局模式），即网络的IP属于国外（大陆、香港、澳门等地区不能用）。
 
-+   美国、新加坡等区域可以（注册前请确认自己的环境）。
++ 美国、新加坡等区域可以（注册前请确认自己的环境）。
 
-+   需要有一个可以接收验证码的国外手机号，同样地区也是如上述网络环境之外的地区手机号，也可以使用虚拟手机号（注意部分虚拟手机号的厂家无法接受验证码，请注意甄别）。
++ 需要有一个可以接收验证码的国外手机号，同样地区也是如上述网络环境之外的地区手机号，也可以使用虚拟手机号（注意部分虚拟手机号的厂家无法接受验证码，请注意甄别）。
 
-## **1.进入注册**
+### 1. 进入注册
 
-打开[ChatGPT](http://mp.weixin.qq.com/s?__biz=MjM5NzYyNDAyMA==&mid=2453527407&idx=1&sn=df598aa8f8e13dc8d8ee1a0282ec301e&chksm=b11e5ad48669d3c2314fb4a3802374c93fe97bdb45bfaf6985699fe63a04b82d458c1423308a&scene=21#wechat_redirect)的官方网站，链接为 https://chat.openai.com，然后点击【Sign Up】进入下一步。
+打开 [ChatGPT](http://mp.weixin.qq.com/s?__biz=MjM5NzYyNDAyMA==&mid=2453527407&idx=1&sn=df598aa8f8e13dc8d8ee1a0282ec301e&chksm=b11e5ad48669d3c2314fb4a3802374c93fe97bdb45bfaf6985699fe63a04b82d458c1423308a&scene=21#wechat_redirect) 的官方网站，链接为 `https://chat.openai.com`，然后点击【Sign Up】进入下一步。
 
 如果页面无法正常显示，需要更换其他的网络节点，或者清理下浏览器cookie再次尝试。
 
+### 2. 邮箱注册
 
-## **2. 邮箱注册**
-
-注册方式为邮箱注册，推荐使用outlook或者Gmail邮箱。Outlook邮箱可以去outlook.com先注册好。
+注册方式为邮箱注册，推荐使用outlook或者Gmail邮箱。Outlook邮箱可以去`outlook.com`先注册好。
 
 ![](img/af009e7bf59da933fd76029d7d878d7e.png)
 
-## **3. 填写姓名信息**
+### 3. 填写姓名信息
 
 邮箱通过后，会提示输入姓名，按照要求进行输入即可。如果显示该IP地址注册数量过多，则需要更换节点（更换节点时，无需对浏览器进行重启，刷新页面即可）。
 
 ![](img/0e1dd4b8e2f5b07423f32e8a9d3ba671.png)
 
-## **4. 验证手机号**
+### 4. 验证手机号
 
 随后将会进入手机验证的环节，记住：这里不能选择国内的手机号，国内的手机号无法进行注册。
 
@@ -43,7 +43,7 @@
 
 有境外手机号码的直接使用。没有境外手机号码的号码接受短信验证码的，请参考以下部分
 
-接码平台推荐使用RU的 https://sms-activate.org，具体操作如下：
+接码平台推荐使用RU的 `https://sms-activate.org`，具体操作如下：
 
 1）进入 SMS-Activate是在线接受短信的虚拟号码服务 首页，选择右上角【注册】按钮，在弹出的窗口中继续选择【注册】按钮：
 
@@ -89,7 +89,7 @@
 
 付完款后，按当天的汇率，1美元能换72卢布，一个号码是15卢布，大概可以注册4次。
 
-10）充值完成后，注意看个人页面右上角的余额有没有变化。然后看左侧，找到“openAI”这个，点击展开（如果没有，在选择服务-服务搜索里直接搜索一下）：
+10）充值完成后，注意看个人页面右上角的余额有没有变化。然后看左侧，找到 `openAI` 这个，点击展开（如果没有，在选择服务-服务搜索里直接搜索一下）：
 
 ![](img/2cdab71aba6d207a669d226bc3e653e1.png)
 
@@ -101,8 +101,7 @@
 
 ![](img/84272825aa15c70926626a50a64b6eb0.png)
 
-
-[13）如果确认](http://mp.weixin.qq.com/s?__biz=MjM5NzYyNDAyMA==&mid=2453527407&idx=1&sn=df598aa8f8e13dc8d8ee1a0282ec301e&chksm=b11e5ad48669d3c2314fb4a3802374c93fe97bdb45bfaf6985699fe63a04b82d458c1423308a&scene=21#wechat_redirect)这个手机号可以使用，那么点击激活。激活后返回到ChatGPT的页面，填入对应的手机号码，页面会自动显示出收到的短信。
+13）如果确认这个手机号可以使用，那么点击激活。激活后返回到ChatGPT的页面，填入对应的手机号码，页面会自动显示出收到的短信。
 
 ![](img/5aa9a826e800702026d089ceccc068b0.png)
 
@@ -110,9 +109,9 @@
 
 重点是：在手机验证页面，一定要注意选择正确的国家（注意国旗）！一定要注意选择正确的国家！一定要注意选择正确的国家！
 
-## **5. 注册完毕**
+### 5. 注册完毕
 
-可以使用[ChatGPT](http://mp.weixin.qq.com/s?__biz=MjM5NzYyNDAyMA==&mid=2453527407&idx=1&sn=df598aa8f8e13dc8d8ee1a0282ec301e&chksm=b11e5ad48669d3c2314fb4a3802374c93fe97bdb45bfaf6985699fe63a04b82d458c1423308a&scene=21#wechat_redirect)了
+可以使用 [ChatGPT](http://mp.weixin.qq.com/s?__biz=MjM5NzYyNDAyMA==&mid=2453527407&idx=1&sn=df598aa8f8e13dc8d8ee1a0282ec301e&chksm=b11e5ad48669d3c2314fb4a3802374c93fe97bdb45bfaf6985699fe63a04b82d458c1423308a&scene=21#wechat_redirect) 了
 
 ![](img/1edd04feab70bd7e912ae0ba69b17bae.png)
 

@@ -1,8 +1,7 @@
+
 # 关于定制收费角色卡的问题
 
 > 来源：[https://sqivg8d05rm.feishu.cn/docx/Xbn3delUUo7bBVxoRxvcFIUmnrh](https://sqivg8d05rm.feishu.cn/docx/Xbn3delUUo7bBVxoRxvcFIUmnrh)
-
-# 关于定制收费角色卡的问题。
 
 > 本社区已经十分强调，不能在dc宣传有关定制收费性质的群聊
 

@@ -1,28 +1,29 @@
+
 # AI写小说-网文出海七大平台盘点
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/PyOEdUzNkoc29Ux8njxcr84sn8b](https://rq547mr4oez.feishu.cn/docx/PyOEdUzNkoc29Ux8njxcr84sn8b)
+> 来源：https://rq547mr4oez.feishu.cn/docx/PyOEdUzNkoc29Ux8njxcr84sn8b
 
-## **一、前言**
+## 一、前言
 
 > 最近有小伙伴问我，AI写的小说能不能在海外上线，答案当时是能的，毕竟有了AI的加持，语言根本就是小case。
-
+>
 > 现在国外的小说网站市场还是很大的，也不会像国内的小说平台那么卷，
-
-> **据统计，海外网文作者不到50万，目标读**者却有2亿＋，这个供需关系简直不要太香。
-
+>
+> 据统计，海外网文作者不到50万，目标读者却有2亿＋，这个供需关系简直不要太香。
+>
 > 要想在海外小说网站赚外国人的钱，
-
-> **第一步就是要搞清楚国外的小说网站有哪些，知道大概的受众群**体，才能抓住读者群，实现小说的出海自由。
-
+>
+> 第一步就是要搞清楚国外的小说网站有哪些，知道大概的受众群体，才能抓住读者群，实现小说的出海自由。
+>
 > 毕竟赚钱主打的就是信息差嘛，搞好了这一步后续的工作就是事半功倍。
 
-## **二、正文**
+## 二、正文
 
 朋友推荐的七个宝藏海外小说平台，分享给大家。
 
-### **Wattpad**
+### Wattpad
 
-[**链接点击**](https://www.wattpad.com/)
+[链接点击](https://www.wattpad.com/)
 
 Wattpad，被称为北美晋江文学，早在2006年就上线了app，作为全球领先的在线阅读和创作社区，支持50种不同的语言。
 
@@ -30,15 +31,15 @@ Wattpad，被称为北美晋江文学，早在2006年就上线了app，作为全
 
 Wattpad不买断作者版权，可以一稿多投，社交属性强，读者可以在线交流评论。
 
-wattpad的全球性IP开发走在前列，Netflix的《Kissing Booth》系列、电影《Float》和《After》，它们都源自这个平台。
+Wattpad的全球性IP开发走在前列，Netflix的《Kissing Booth》系列、电影《Float》和《After》，它们都源自这个平台。
 
 ![](img/e58a7fd217a3886eca393c57aa9691e1.png)
 
-**<Wattpad官网页面>**
+<Wattpad官网页面>
 
-### **Wuxiaword**
+### Wuxiaworld
 
-[**链接点击**](https://www.wuxiaworld.com/)
+[链接点击](https://www.wuxiaworld.com/)
 
 Wuxiaworld，一个在全球范围内具有显著影响力的中文小说翻译网站。
 
@@ -50,11 +51,11 @@ Wuxiaworld收录了包括武侠、奇幻、历史和冒险等多种类型的网�
 
 ![](img/b708c7c7fcc90c3539d7afbea5f30af0.png)
 
-**<Wuxiaword官网页面>**
+<Wuxiaworld官网页面>
 
-### **Webnovel**
+### Webnovel
 
-[**链接点击**](https://www.webnovel.com/)
+[链接点击](https://www.webnovel.com/)
 
 阅文集团的海外门户，是全球十大小说网站之一。于2017年五月上线，该网站目前不对国内用户开放，专注于为海外读者提供服务。
 
@@ -66,11 +67,11 @@ Wuxiaworld收录了包括武侠、奇幻、历史和冒险等多种类型的网�
 
 ![](img/a8c3dfc40baad04386f75c8d1ccf9f42.png)
 
-**<webnovel官网页面>**
+<webnovel官网页面>
 
-### **Tapread**
+### Tapread
 
-[**链接：点击**](https://www.tapread.com/)
+[链接：点击](https://www.tapread.com/)
 
 纵横中文网2019年建立的其海外门户网站TapRead，并于2020年10月推出了同名的移动应用程序。
 
@@ -82,24 +83,23 @@ Wuxiaworld收录了包括武侠、奇幻、历史和冒险等多种类型的网�
 
 ![](img/646b4220f0c9a39a39b32e577e9d09f6.png)
 
-**<Tapread官网页面>**
+<Tapread官网页面>
 
-### **Munpia**
+### Munpia
 
-[**链接点击**](https://www.munpia.com/)
+[链接点击](https://www.munpia.com/)
 
 Munpia是一个韩国原创网络文学平台，也是国际读者常用的小说网站之一，中国阅文集团在2018年对其进行了战略性投资。
 
 这个平台前身是Go!武林论坛，成立于2003年，2012年转型为一个网络文学网站。
 
-目**前，Munpia目前与**阅文集团付费阅读模式相似，其付费用户数量迅速增长，并且在付费率、复购率和收入方面都在韩国纯网络文学平台中处于领先地位。建议无限流系统文写手。
+目前，Munpia目前与阅文集团付费阅读模式相似，其付费用户数量迅速增长，并且在付费率、复购率和收入方面都在韩国纯网络文学平台中处于领先地位。建议无限流系统文写手。
 
+<Munpia官网图片>
 
-**<Munpia官网图片>**
+### Royal Road
 
-### **Royal Road**
-
-[**链接点击**](https://www.royalroad.com/home)
+[链接点击](https://www.royalroad.com/home)
 
 Royal Road 包括网络小说和同人小说。用户主要是奇幻科幻和轻小说风格的作家和读者，专注于网络连载小说。
 
@@ -115,9 +115,9 @@ Royal Road 包括网络小说和同人小说。用户主要是奇幻科幻和轻
 
 <Royal Road官网图片>
 
-### **GoodNovel**
+### GoodNovel
 
-[**链接点击**](https://www.goodnovel.com/)
+[链接点击](https://www.goodnovel.com/)
 
 GoodNovel是新阅旗下的海外网络平台。以ugc原创书为主，翻译书为辅。可以选择独家合同和非独家合同，有明确的投递入口，写满5000字即可申请签约，有编辑对接。
 
@@ -127,11 +127,11 @@ GoodNovel是新阅旗下的海外网络平台。以ugc原创书为主，翻译�
 
 更新奖：一个月更新25天以上和月更5万字以上，获得150美元奖励。
 
-**建议类目：亿万富翁、狼人文学。三十**万字以下作品建议 GooodNovel。
+建议类目：亿万富翁、狼人文学。三十万字以下作品建议 GooodNovel。
 
 ![](img/774ca43437151ce106f8e0d6997565ef.png)
 
-**<GoodNovel官网图片>**
+<GoodNovel官网图片>
 
 ---
 

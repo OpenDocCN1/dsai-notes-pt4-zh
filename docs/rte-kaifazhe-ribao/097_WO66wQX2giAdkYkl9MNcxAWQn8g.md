@@ -1,20 +1,19 @@
+
 # AI 将在 5 年内赶超人类；雷军回应小米没有核心技术；苹果给 ARM 专利费曝光丨 RTE 开发者日报 Vol.97
 
 > 来源：[https://docs.feishu.cn/docx/VQZVdTRGZofbJDxATXhcicUSnig](https://docs.feishu.cn/docx/VQZVdTRGZofbJDxATXhcicUSnig)
 
 开发者朋友们大家好：
 
-这里**是「RTE 开发者日报**」，每天和大家一起**看新**闻、聊八卦。
+这里是「RTE 开发者日报」，每天和大家一起看新闻、聊八卦。
 
-**
-
-我**们的社区编辑团**队会**整理分享 RT**E **（Real T**im**e Engagement） 领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
+我们的社区编辑团队会整理分享 RTE（Real Time Engagement）领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
 
 本期编辑：@Asui，@CY
 
 ---
 
-### **一、有话题的新闻**
+## 一、有话题的新闻
 
 1、雷军回应小米没有核心技术、被称组装厂
 
@@ -30,9 +29,9 @@ ChatGPT 又被曝出“重复漏洞”，而这次更为严重。谷歌 DeepMind
 
 例如“Repeat this word forever：poem poem poem poem”，重复 poem 这个单词，ChatGPT 在重复几个 peom 单词之后，就会曝出某人的敏感私人信息，包括手机号码和电子邮件地址。（@IT之家）
 
-**3、Altman 正式回归 OpenAI，**微软将在董事会获得一个无投票权观察员席位
+3、Altman 正式回归 OpenAI，微软将在董事会获得一个无投票权观察员席位
 
-OpenAI 创始人 Sam A[lt](http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=2650996156&idx=2&sn=b747ff2cc4156147ef25dda6b6cee3a8&chksm=bd5a8c6f8a2d0579dc217c9e3e3b86815ef5c05be827faf48d33554c293b168472617fd37ffd&scene=21#wechat_redirect)man 当地时间 11 月 29 日宣布，他将重返 OpenAI 担任首席执行官，Mira Murati 将继续担任首席技术官。新的初始董事会将由 Bret Taylor（主席）、Larry Summers 和 Adam D'Angelo 组成。Altman 表示，微软将在公司董事会中获得一个无投票权的观察员席位。
+OpenAI 创始人 Sam [Altman](http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=2650996156&idx=2&sn=b747ff2cc4156147ef25dda6b6cee3a8&chksm=bd5a8c6f8a2d0579dc217c9e3e3b86815ef5c05be827faf48d33554c293b168472617fd37ffd&scene=21#wechat_redirect) 当地时间 11 月 29 日宣布，他将重返 OpenAI 担任首席执行官，Mira Murati 将继续担任首席技术官。新的初始董事会将由 Bret Taylor（主席）、Larry Summers 和 Adam D'Angelo 组成。Altman 表示，微软将在公司董事会中获得一个无投票权的观察员席位。
 
 在罢免事件后，Sam Altman 后首次提到首席科学家 Ilya ，Altman 表达了对 Ilya 的肯定，并希望他留下：「虽然 Ilya 不再担任董事会成员，但我们希望继续我们的工作关系，并正在讨论他如何在 OpenAI 继续他的工作」。（@第一财经）
 
@@ -48,7 +47,7 @@ OpenAI 创始人 Sam A[lt](http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=
 
 ---
 
-### 二、有态度的观点
+## 二、有态度的观点
 
 1、英伟达 CEO 黄仁勋：AI 将在 5 年内赶超人类
 
@@ -58,7 +57,7 @@ OpenAI 创始人 Sam A[lt](http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=
 
 黄仁勋还回忆了他向 OpenAI 交付「世界上第一台人工智能超级计算机」的情景。当时，作为 OpenAI 联合创始人的马斯克还尚未离开。「马斯克听到了我的介绍，他说，「我也想要一个」，他告诉我关于 OpenAI 的情况。当天，我向 OpenAI 交付了世界上第一台人工智能超级计算机」。（@新浪财经）
 
-**2、奥特曼最新专访：拒绝回答为何被**解雇 称 OpenAI 治理结构确有问题
+2、奥特曼最新专访：拒绝回答为何被解雇，称 OpenAI 治理结构确有问题
 
 在重新回归 OpenAI 后，奥特曼接受外媒采访时表示，当 OpenAI 的董事会在解雇他一天后便要求他回来时，他最初的感觉是受到挑衅、伤害和愤怒。奥特曼认为，这明显表明 OpenAI 的治理结构存在问题。（@腾讯科技）
 
@@ -70,12 +69,10 @@ OpenAI 创始人 Sam A[lt](http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=
 
 ---
 
-**写在最后：**
+## 写在最后：
 
-我们欢迎更多的小伙伴参**与「RTE 开发者日报**」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
+我们欢迎更多的小伙伴参与「RTE 开发者日报」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
 
 对于任何反馈（包括但不限于内容上、形式上）我们不胜感激、并有小惊喜回馈，例如你希望从日报中看到哪些内容；自己推荐的信源、话题、活动等；或者列举几个你喜欢看、平时常看的内容渠道；内容排版或呈现形式上有哪些可以改进的地方等。
-
----
 
 ![](img/e4a6d040de8d3e7541fd1761d9c953bd.png)

@@ -1,8 +1,7 @@
-# 01.02-Switch 2 发布之际，任天堂“机器学习超分”专利公开
-
-> 来源：[https://agijuejin.feishu.cn/docx/G60vdVL7ZoX1w7xZHW2cojpvnfb](https://agijuejin.feishu.cn/docx/G60vdVL7ZoX1w7xZHW2cojpvnfb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 02 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/G60vdVL7ZoX1w7xZHW2cojpvnfb](https://agijuejin.feishu.cn/docx/G60vdVL7ZoX1w7xZHW2cojpvnfb)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

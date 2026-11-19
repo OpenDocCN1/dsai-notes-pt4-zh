@@ -1,3 +1,4 @@
+
 # 突破传统缺陷检测的界限，"Defect Spectrum"首次实现超高精度丰富语义的工业缺陷检测
 
 > 来源：[https://agijuejin.feishu.cn/docx/FfU4deDftoDvayxWZlycQsC2ngS](https://agijuejin.feishu.cn/docx/FfU4deDftoDvayxWZlycQsC2ngS)
@@ -24,17 +25,17 @@
 
 ![](img/382813cc41dfbcfe5d0a1faa700b9b13.png)
 
-+   论文：Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics
++ 论文：Defect Spectrum: A Granular Look of Large-Scale Defect Datasets with Rich Semantics
 
-+   论文链接： https://arxiv.org/abs/2310.17316
++ 论文链接： https://arxiv.org/abs/2310.17316
 
-+   项目链接: https://envision-research.github.io/Defect_Spectrum/
++ 项目链接: https://envision-research.github.io/Defect_Spectrum/
 
-+   Github Repo: https://github.com/EnVision-Research/Defect_Spectrum
++ Github Repo: https://github.com/EnVision-Research/Defect_Spectrum
 
-+   Dataset Repo: https://huggingface.co/datasets/DefectSpectrum/Defect_Spectrum
++ Dataset Repo: https://huggingface.co/datasets/DefectSpectrum/Defect_Spectrum
 
-突破传统的缺陷检测限制，更加贴近落地生产
+## 突破传统的缺陷检测限制，更加贴近落地生产
 
 ![](img/4c88d9e8474a615d700fc1e8fbb36336.png)
 
@@ -50,7 +51,7 @@
 
 传统数据集如MVTEC和AeBAD尽管提供了像素级的标注，但常常局限于二元遮罩，无法细致区分缺陷类型和位置。《Defect Spectrum》数据集通过与工业界四大基准的合作，重新评估并精细化已有的缺陷标注。例如，对细微的划痕和凹坑进行了更精确的轮廓绘制，且通过专家的辅助填补了遗漏的缺陷，确保了标注的全面性和精确性。
 
-创新的缺陷生成模型“Defect-Gen”
+## 创新的缺陷生成模型“Defect-Gen”
 
 ![](img/079e24425d0e1ae458f36eb0f33c769d.png)
 
@@ -64,7 +65,7 @@
 
 通过“Defect-Gen”，我们为工业缺陷检测提供了更丰富和多样的训练样本，推动了自动化检测技术的发展
 
-**全面评估与未来的研究方向**
+## 全面评估与未来的研究方向
 
 ![](img/9a9a6d56e575281f52724ec63e55643a.png)
 
@@ -82,13 +83,13 @@
 
 Defect Spectrum数据集的引入，犹如为工业生产注入了一剂强心针。它让缺陷检测系统更加贴近实际生产需求，实现了高效、精准的缺陷管理。同时，它也为未来的预测性维护提供了宝贵的数据支持，通过记录每个缺陷的类别和位置，工厂可以不断优化生产流程，改进产品修复方法，最终实现更高的生产效益和产品质量。
 
-**总结**
+## 总结
 
 我们发布了Defect Spectrum数据集以及DefectGen缺陷生成器，提供了实际工业检测中所需的高精确度和丰富缺陷语义，解决了模型无法识别缺陷类别或位置的问题。
 
 我们对Defect Spectrum数据集进行了全面的评估，验证了其在各种工业缺陷检测挑战中的适用性和优越性，比起原有的数据集，在我们数据集上训练的模型提升了10.74%的召回率(recall)，降低了33.1%的过杀率(False Positive Rate)。
 
-**参考资料：**
+## 参考资料：
 
 1. Bai, H., Mou, S., Likhomanenko, T., Cinbis, R.G., Tuzel, O., Huang, P., Shan, J., Shi, J., Cao, M.: Vision datasets: A benchmark for vision-based industrial inspec- tion. arXiv preprint arXiv:2306.07890 (2023)
 

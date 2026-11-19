@@ -1,10 +1,11 @@
+
 # AI每日资讯-202404
 
 > 来源：[https://aigcreative.feishu.cn/docx/NxJ8d4N5GoLtuZx6nWxc9YYnnic](https://aigcreative.feishu.cn/docx/NxJ8d4N5GoLtuZx6nWxc9YYnnic)
-
+>
 > **动态 | 观点 | 人物 | 产品 | 体验 | 应用** | 公司 | 融资 | 产业 | 文档
 
-## 【20240428】产业 |埃森哲报告：生成式AI重塑职工、企业与工作内容
+## 【20240428】产业 | 埃森哲报告：生成式AI重塑职工、企业与工作内容
 
 埃森哲最新发布的AI报告指出，随着生成式AI的发展，企业、职工及工作内容正面临前所未有的变革。报告强调，尽管存在对失业和隐私泄露的担忧，但生成式AI的采用有望在2038年前创造10.3万亿美元的经济价值。企业需制定全面战略，结合业务目标，培养人才，以实现AI的全面潜力，同时确保员工信任并准备好拥抱这一变革。
 
@@ -32,33 +33,20 @@
 
 ## 【20240426】人物 | Sam Altman 斯坦福分享
 
-+   下一个模型会比gpt4还强大非常非常多
-
-+   copy很容易，已经有gpt4了，Google很容易copy出来Gemini，难得是innovation new things 怎样 define nexparadigm
-
-+   iPhone get a long way，Al也一样
-
-+   为什么不开源:因为目标是 AGI，不认为开源是最好的做法，希望通过像公众提供免费无广告的ChatGPT来实现社会影响力
-
-+   不担心 AI太强，gpt4一出来人们觉得变天了，现在人们觉得 gpt4还是不够好想要 gpt5
-
-+   如何消除不公:让便宜的ai计算flood the world，让a超级便宜
-
-+   很多人的创业/研究方向是在补全现在ai的缺陷，本质是在赌ai不会变得更好，但是来来会有gpt5、6，这样的工作就没意义
-
-+   人类始终更喜欢人类，就算现在ai下棋吊打人类，人类还是只喜欢看人类下棋;不过也有一些反例，比如青少年更喜欢跟ai聊而不是跟心理医生聊
-
-+   认为 Sora会实现全新的娱乐方式，每次看都会不同，会根据你的喜好、互动实时生成，会实现somethingbetween movie and game
-
-+   openai最大的组织变化:意识到scaling很重要之后把所有组的计算资源都聚集起来做一件事
-
-+   会实现不需要全新的 data也能让模型推理能力不断提升现在是一个很好的时间去做ai startup，但是不会因为用上了 ai就超过所有已有的产品，ai也不会违背商业的定津
-
-+   openai在做的是tool for human，而不是新的生物，所以不觉得 chatgpt需要有情感
-
-+   有同学问 Sora的训练数据用了多少 YouTube video?Sam: let's pass this question
-
-+   未来一个高薪工作是给模型生成的结果提供专业反馈。
+- 下一个模型会比gpt4还强大非常非常多
+- copy很容易，已经有gpt4了，Google很容易copy出来Gemini，难得是innovation new things 怎样 define nexparadigm
+- iPhone get a long way，Al也一样
+- 为什么不开源:因为目标是 AGI，不认为开源是最好的做法，希望通过像公众提供免费无广告的ChatGPT来实现社会影响力
+- 不担心 AI太强，gpt4一出来人们觉得变天了，现在人们觉得 gpt4还是不够好想要 gpt5
+- 如何消除不公:让便宜的ai计算flood the world，让a超级便宜
+- 很多人的创业/研究方向是在补全现在ai的缺陷，本质是在赌ai不会变得更好，但是来来会有gpt5、6，这样的工作就没意义
+- 人类始终更喜欢人类，就算现在ai下棋吊打人类，人类还是只喜欢看人类下棋;不过也有一些反例，比如青少年更喜欢跟ai聊而不是跟心理医生聊
+- 认为 Sora会实现全新的娱乐方式，每次看都会不同，会根据你的喜好、互动实时生成，会实现somethingbetween movie and game
+- openai最大的组织变化:意识到scaling很重要之后把所有组的计算资源都聚集起来做一件事
+- 会实现不需要全新的 data也能让模型推理能力不断提升现在是一个很好的时间去做ai startup，但是不会因为用上了 ai就超过所有已有的产品，ai也不会违背商业的定津
+- openai在做的是tool for human，而不是新的生物，所以不觉得 chatgpt需要有情感
+- 有同学问 Sora的训练数据用了多少 YouTube video?Sam: let's pass this question
+- 未来一个高薪工作是给模型生成的结果提供专业反馈。
 
 ![](img/e543222f3df1a5f07b0d6a56d1009f67.png)
 
@@ -72,7 +60,7 @@
 
 Adobe在MAX London创意大会上发布了最新版Photoshop beta，引入了先进的生成填充和生成图像功能，由Adobe Firefly Image 3 Foundation Model驱动，提供更强大的创意控制和AI集成。新功能包括参考图像、文本到图像、生成背景等，旨在缩短创意构思与实现之间的距离，使所有用户都能快速实现创意愿景。此外，Adobe强调了其对负责任AI创新的承诺，确保内容生成符合版权和知识产权法规。
 
-Blog：https://news.adobe.com/news/news-details/2024/New-Adobe-Photoshop-with-Advanced-Generative-Fill-and-Generate-Image-Brings-New-Superpowers-to-All/default.aspx
+Blog：`https://news.adobe.com/news/news-details/2024/New-Adobe-Photoshop-with-Advanced-Generative-Fill-and-Generate-Image-Brings-New-Superpowers-to-All/default.aspx`
 
 ![](img/dc6b542d8c9c5d0655e818c7f34154bb.png)
 
@@ -90,7 +78,7 @@ Meta Quest 宣布向第三方硬件制造商开放其操作系统，推出 Meta 
 
 这是一套整理自设计师Twitter@Dogan Ural的一套Midjourney学习资料，内容精良全是干货；版式设计精美，各方面都值得学习！后续还有陆续更新，对AI绘画的朋友可以看看~~
 
-文档链接：[Midjourney精品学习资料 ](https://aigcreative.feishu.cn/wiki/DboGw22jhiEq01kMgPiciYpSn1e?from=from_copylink)
+文档链接：[Midjourney精品学习资料](https://aigcreative.feishu.cn/wiki/DboGw22jhiEq01kMgPiciYpSn1e?from=from_copylink)
 
 ![](img/bb0491a9f413cbbdfb7801b704317835.png)
 
@@ -104,7 +92,7 @@ Meta Quest 宣布向第三方硬件制造商开放其操作系统，推出 Meta 
 
 新华社近日推出了一款名为“新华妙笔”的人工智能工具，专为公务员设计，旨在提高公文撰写的效率和质量。该工具的发布，体现了AI技术在公共服务领域的应用潜力，有望为基层公务员减负，推动行政工作的现代化。此外，页面还涉及了Nature杂志发表的细菌马达组装研究，以及波士顿动力公司在生物智能领域的最新进展，展示了科技在不同领域的创新与突破。
 
-体验网站：http://miaobi.xinhuaskl.com/
+体验网站：`http://miaobi.xinhuaskl.com/`
 
 ![](img/536fdfc8d739798406e4d844734e7c9a.png)
 
@@ -112,11 +100,11 @@ Meta Quest 宣布向第三方硬件制造商开放其操作系统，推出 Meta 
 
 Meta Llama3开源模型的发布标志着AI技术的又一大步。该模型拥有超过400亿的参数规模，目前还在训练中，但其70亿参数版本已在性能测试中全面超越了Gemini Pro 1.5和Claude3 Sonnet，预示着开源模型性能的新高度。
 
-Meta.ai里直接体验：meta.ai
+Meta.ai里直接体验：`meta.ai`
 
-Llama 3 8B 和 70B 已经可以在官方下载：llama.meta.com/llama3/
+Llama 3 8B 和 70B 已经可以在官方下载：`llama.meta.com/llama3/`
 
-HuggingChat 上也已经可以体验： huggingface.co/chat/
+HuggingChat 上也已经可以体验：`huggingface.co/chat/`
 
 ![](img/cd715dfc92a4579887e567751c44a985.png)
 
@@ -144,7 +132,7 @@ HuggingFace 宣布其 Hugging Chat App iOS 客户端正式上线，用户现在�
 
 Stability AI 宣布在其开发者平台上推出 Stable Diffusion 3 和 Stable Diffusion 3 Turbo API。该模型在排版和提示遵循性方面，基于人类偏好评估，与 DALL-E 3 和 Midjourney v6 等顶尖文本到图像生成系统相当或更优。新架构 MMDiT 通过为图像和语言表示使用不同的权重集，提高了文本理解和文本字符的拼写能力。附案例：
 
-详情：https://stability.ai/news/stable-diffusion-3-api?utm_source=twitter&utm_medium=website&utm_campaign=blog
+详情：`https://stability.ai/news/stable-diffusion-3-api?utm_source=twitter&utm_medium=website&utm_campaign=blog`
 
 ![](img/654a643ce95e195cb25de5e3eea8e711.png)
 
@@ -166,17 +154,17 @@ Stability AI 宣布在其开发者平台上推出 Stable Diffusion 3 和 Stable 
 
 ## 【20240417】文档 | 推荐：【干货 · 书籍】
 
-[大语言模型LLM综述.pdf](https://aigcreative.feishu.cn/wiki/XZbQwRBqZiKoHbkBYJicnY32nYd?from=from_copylink)大文继荣、赵鑫老师团队编写的大语言模型综述（391页）：
+[大语言模型LLM综述.pdf](https://aigcreative.feishu.cn/wiki/XZbQwRBqZiKoHbkBYJicnY32nYd?from=from_copylink) 大文继荣、赵鑫老师团队编写的大语言模型综述（391页）：
 
 ## 【20240417】产品 | Reka AI Labs 发布了一款新的多模态语言模型 Reka Core
 
-该模型在过去几个月中进行了培训，并最终发布。Reka Core 具有多种能力之一，即理解视频。Reka AI Labs 对该模型进行了标准基准测试，包括文本和多模态测试，以及第三方人工评估。除此之外，Reka AI Labs 还发布了一份详细技术报告，涵盖了 Reka Core 的训练、架构、数据和评估。用户可以在 https://showcase.reka.ai 和 https://chat.reka.ai 上查看 Reka Core 的输出示例，或尝试自己使用该模型。在 MMMU 方面，Core 可与 GPT-4V 相媲美；在由独立第三方进行的多模态人类评估中，Core 优于 Claude-3 Opus；在视频任务方面，Core 超越了 Gemini Ultra。在语言任务方面，Core 在成熟的基准测试中可与其他前沿模型媲美。
+该模型在过去几个月中进行了培训，并最终发布。Reka Core 具有多种能力之一，即理解视频。Reka AI Labs 对该模型进行了标准基准测试，包括文本和多模态测试，以及第三方人工评估。除此之外，Reka AI Labs 还发布了一份详细技术报告，涵盖了 Reka Core 的训练、架构、数据和评估。用户可以在 `https://showcase.reka.ai` 和 `https://chat.reka.ai` 上查看 Reka Core 的输出示例，或尝试自己使用该模型。在 MMMU 方面，Core 可与 GPT-4V 相媲美；在由独立第三方进行的多模态人类评估中，Core 优于 Claude-3 Opus；在视频任务方面，Core 超越了 Gemini Ultra。在语言任务方面，Core 在成熟的基准测试中可与其他前沿模型媲美。
 
 ## 【20240417】产业 | PixArt-Sigma更新，引领图像生成技术新飞跃
 
 近日，PixArt-Sigma发布了重大更新，这一基于Transformer框架的图像生成工具以其高质量输出和用户友好的操作界面受到广泛关注。由华为诺亚方舟实验室联合大连理工和香港大学共同研发的PixArt-Sigma，不仅提升了图像保真度和文本对齐能力，还支持高达6K分辨率的图像生成，显著推动了电影和游戏行业的视觉内容创新。
 
-体验地址：https://huggingface.co/spaces/PixArt-alpha/PixArt-Sigma
+体验地址：`https://huggingface.co/spaces/PixArt-alpha/PixArt-Sigma`
 
 ![](img/4f31510cc1257324892ff9317fe88a73.png)
 
@@ -190,17 +178,19 @@ Stability AI 宣布在其开发者平台上推出 Stable Diffusion 3 和 Stable 
 
 OptimizerAI 1.0是一款突破性的文本转声音效果模型，旨在为游戏、视频、电影和动画注入生动的AI音效。该技术现已支持网络和Discord平台，用户可通过访问官网立即体验。用户反馈显示，新版OptimizerAI在性能上显著优于前代，并期待其未来能扩展至更多应用场景，如带有情感的文本到语音转换，为创作者提供了更多可能性。
 
-官网：https://www.optimizerai.xyz/
+官网：`https://www.optimizerai.xyz/`
 
 ![](img/7d36d09a616e9df7b68fa57039df02f8.png)
 
-[ad30ac4669c581fbcc2fe1f0036b1570.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XQtGbKmAdo6zcXxycK0cEiJwnHg)
+
+
+[`ad30ac4669c581fbcc2fe1f0036b1570.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XQtGbKmAdo6zcXxycK0cEiJwnHg)
 
 ## 【20240416】产品 | Mira项目：腾讯ARC实验室探索高质量长视频生成新技术
 
 腾讯ARC实验室近日推出了Mira项目，旨在探索高质量、长时视频生成技术。Mira项目区别于现有文本转视频(T2V)框架，能够生成更长时（10秒至20秒以上）、动态丰富、3D一致性强的视频。尽管与Sora项目相比仍有差距，Mira项目通过初步实验，旨在分享关键组件的研究成果，推动内容创作领域的创新和民主化。MiraData作为项目的一部分，提供了一个大规模、长时、结构化字幕的视频数据集，目前包含游戏和城市/风景探索两种场景。
 
-项目地址：https://mira-space.github.io/
+项目地址：<https://mira-space.github.io/>
 
 ![](img/be22c2f74a01a3dabbcbb52925c95907.png)
 
@@ -228,13 +218,13 @@ Udio作为一款创新的人工智能音频引擎引起了广泛关注。它不�
 
 ![](img/dbd5aacc51ef23a02448be9c078c118e.png)
 
-[fc8e80b0f27f53ccb2c4bb9b22d8f4f3_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P4PjbWjFYoknIfxPLyrcnjVqnjc)
+[`fc8e80b0f27f53ccb2c4bb9b22d8f4f3_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P4PjbWjFYoknIfxPLyrcnjVqnjc)
 
 ## 【20240413】产业 | 斯坦福HAI发布2023年AI指数报告
 
 斯坦福大学人类与AI研究所（HAI）近日发布了2023年的人工智能指数报告，该报告深入分析了AI行业的发展趋势。报告显示，产业界在AI技术的发展上已超越学术界，AI系统的性能在传统基准测试中提升趋于饱和，同时AI对环境的影响和滥用问题受到关注。AI在科学研究中的作用日益凸显，而美国对AI专业技能的需求持续增长。此外，全球对AI的立法和政策兴趣显著增加，中国公民对AI产品和服务的态度最为积极。报告强调了AI技术在未来发展中的重要性和挑战。
 
-报告链接：https://aiindex.stanford.edu/wp-content/uploads/2023/04/HAI_AI-Index-Report_2023.pdf
+报告链接：<https://aiindex.stanford.edu/wp-content/uploads/2023/04/HAI_AI-Index-Report_2023.pdf>
 
 ![](img/89aed4dd3164af4b95ba779d2b6df730.png)
 
@@ -284,11 +274,11 @@ OpenAI发布了GPT-4-Turbo的正式版，该模型具备了先进的视觉识别
 
 YouTube宣布进行了一次大规模的系统升级，引入了创新的AI技术。
 
-1）将允许用户在观看视频时，通过AI聊天机器人实时提问，而不会中断视频播放，极大提升了观看体验。
+1. 将允许用户在观看视频时，通过AI聊天机器人实时提问，而不会中断视频播放，极大提升了观看体验。
 
-2）除此之外，YouTube还推出了名为Dream Screen的视频编辑工具，用户可以轻松定制视频背景。
+2. 除此之外，YouTube还推出了名为Dream Screen的视频编辑工具，用户可以轻松定制视频背景。
 
-3）同时，新增的分类评论功能，让用户能够通过摘要快速把握评论要点。这些新功能的加入预示着YouTube在提升用户体验方面迈出了重要一步。
+3. 同时，新增的分类评论功能，让用户能够通过摘要快速把握评论要点。这些新功能的加入预示着YouTube在提升用户体验方面迈出了重要一步。
 
 ![](img/e4d502b99e5f9fab47f7319b0fc86178.png)
 
@@ -296,7 +286,7 @@ YouTube宣布进行了一次大规模的系统升级，引入了创新的AI技�
 
 昆仑万维即将推出「天工SkyMusic」AI音乐生成大模型。这款模型不仅支持长达80秒的高音质歌曲创作，还能根据歌词风格定制歌曲，并在人声合成上达到业内顶尖水平。目前处于内测阶段的「天工SkyMusic」，将于4月17日免费对外开放，旨在降低音乐创作门槛，促进音乐风格融合创新，让每个人都能轻松创作并表达个性与情感。
 
-详情：https://mp.weixin.qq.com/s/y-PAlLldRCMdLkMepIBLTA
+详情：<https://mp.weixin.qq.com/s/y-PAlLldRCMdLkMepIBLTA>
 
 ## 【20240405】动态 | 中国已备案大模型清单
 
@@ -312,7 +302,7 @@ YouTube宣布进行了一次大规模的系统升级，引入了创新的AI技�
 
 Stability.ai 正式发布了音频模型 Stable Audio 2.0，它可以一次性生成 3 分钟 44.1 kHz 的摇滚、爵士、电子、嘻哈、重金属、民谣、流行、乡村等 20 多种类型的高质量音乐。该模型使用了 Diffusion transformer (DiT) 替换了 1.0 的 U-Net 架构，并且使用了一个超过 80 万个音频文件组成的数据集。Stable Audio 2.0 生成的音乐可以用于商业化。
 
-体验官网链接：https://stableaudio.com/generate
+体验官网链接：<https://stableaudio.com/generate>
 
 ![](img/b272578aff3abee8fea54e2bb6fa61e7.png)
 
@@ -320,7 +310,7 @@ Stability.ai 正式发布了音频模型 Stable Audio 2.0，它可以一次性�
 
 《2024 MAD（ML/AI/Data）领域地图》由 FirstMark 发布，介绍了当今和未来五年内 ML、AI 和数据领域中重要的基础设施、分析工具和应用。本报告从「基础设施」到「开源基础设施」、「数据源 &API」等多个方面进行详细阐述，同时对「应用」进行了广泛的分类和涵盖，如「企业应用」、「横向应用」、「行业应用」等。
 
-点击查看：[MAD2024AI基础设施地图.pdf](https://aigcreative.feishu.cn/wiki/GXsawggYDiZCHbkle3LciCyKnNh?from=from_copylink)
+点击查看：[`MAD2024AI基础设施地图.pdf`](https://aigcreative.feishu.cn/wiki/GXsawggYDiZCHbkle3LciCyKnNh?from=from_copylink)
 
 ![](img/3f5c15b12bc5a0f30acff3369fdce0e2.png)
 
@@ -328,13 +318,12 @@ Stability.ai 正式发布了音频模型 Stable Audio 2.0，它可以一次性�
 
 OpenAI携手艺术家August Kamp推出了名为《Worldweight》的官方音乐视频，该视频由创新的AI视频生成工具Sora制作。视频中，August Kamp分享了他对这件艺术作品的情感投入，以及如何通过音乐和视觉图像表达内心世界。该视频在YouTube上发布后，受到了广泛关注和积极反响，展示了AI技术在艺术创作领域的潜力和影响力。
 
-+   原视频链接：https://www.youtube.com/watch?v=f75eoFyo9ns
-
++   原视频链接：<https://www.youtube.com/watch?v=f75eoFyo9ns>
 +   [Sora生成视频合集-滚动更新](https://aigcreative.feishu.cn/wiki/AH9ZwOTcbixKchksKqvcGAgLnKf?from=from_copylink)ora视频全集+Prompt：
 
 ![](img/4fd74304ee71fdfe36c9de11e7ae2c15.png)
 
-[2b7913910c3ccd562721d0ef0aac445d(1)_raw.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QE2Eb4H69ocROrxQyEQcBJTunhb)
+[`2b7913910c3ccd562721d0ef0aac445d(1)_raw.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QE2Eb4H69ocROrxQyEQcBJTunhb)
 
 ## 【20240403】产品 | ChatGPT DALL·E图片编辑功能重磅更新！
 

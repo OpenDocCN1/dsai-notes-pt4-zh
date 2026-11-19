@@ -1,20 +1,21 @@
+
 # 微学习05 | DeepSeek+Ollama+ChatBox：本地部署
 
 > 来源：[https://datawhaler.feishu.cn/docx/T5AGdco0ToZ8SWxQbSycDiSPnPc](https://datawhaler.feishu.cn/docx/T5AGdco0ToZ8SWxQbSycDiSPnPc)
 
-# 一、标题释义
+## 一、标题释义
 
-+   DeepSeek：众所周知的国产大模型（免费），[它的](https://www.deepseek.com/)特色是把深度思考的过程也告知了用户。官网
++ DeepSeek：众所周知的国产大模型（免费），[它的](https://www.deepseek.com/)特色是把深度思考的过程也告知了用户。官网
 
-+   Ollama：开源的大型语言模型服务工具（免费），旨在帮助用户快速在本地运行大[模型](https://ollama.com/)。通过简单的安装指令，用户可以通过一条命令轻松启动和运行开源的大型语言模型。官网
++ Ollama：开源的大型语言模型服务工具（免费），旨在帮助用户快速在本地运行大[模型](https://ollama.com/)。通过简单的安装指令，用户可以通过一条命令轻松启动和运行开源的大型语言模型。官网
 
-+   Ch[at](https://chatboxai.app/zh)Box：  AI 客户端应用和智能助手（作为模型API和本地模型的连接工具免费），支持众多先进的 AI 模型和 API，可在 Windows、MacOS、Android、iOS、Linux 和网页版上使用。官网
++ Ch[at](https://chatboxai.app/zh)Box： AI 客户端应用和智能助手（作为模型API和本地模型的连接工具免费），支持众多先进的 AI 模型和 API，可在 Windows、MacOS、Android、iOS、Linux 和网页版上使用。官网
 
 DeepSeek+Ollama+ChatBox的含义就是：通过Ollama运行DeepSeek大模型，形成大模型服务。通过ChatBox对接Ollama的大模型服务，完成用户和大模型的交互。
 
-# 二、安装步骤
+## 二、安装步骤
 
-## （一）Ollama安装
+### （一）Ollama安装
 
 本节描述如何安装Ollama。
 
@@ -32,7 +33,7 @@ DeepSeek+Ollama+ChatBox的含义就是：通过Ollama运行DeepSeek大模型，�
 
 耐心等待下载结束。
 
-双击 OllamaSetup.exe 执行安装：
+双击`OllamaSetup.exe`执行安装：
 
 ![](img/88305afaf632eeb7812a44d64a1f8e42.png)
 
@@ -64,7 +65,7 @@ TIPS1：如果你的C盘不够怎么办？
 
 ![](img/7ef278aadba0f275eab56d253e00da10.png)
 
-以模型文件下载到 D:\OllamaModels\models 为例。
+以模型文件下载到`D:\OllamaModels\models`为例。
 
 模型下载完毕后一般是如下的目录结构：
 
@@ -74,31 +75,31 @@ TIPS2：如何设置允许外部连接Ollama？
 
 在环境变量设置中：
 
-+   OLLAMA_HOST需设置成 0.0.0.0
++ `OLLAMA_HOST`需设置成`0.0.0.0`
 
-+   OLLAMA_PORT需设成11434
++ `OLLAMA_PORT`需设成`11434`
 
 ![](img/085bdc939b72bed0fa372e017ef0f6a2.png)
 
-## （二）DeepSeek安装
+### （二）DeepSeek安装
 
 本节描述如何使用Ollama安装DeepSeek-R1大模型。
 
-打开 https://ollama.com/search，在搜索栏搜索 DeepSeek-R1
+打开`https://ollama.com/search`，在搜索栏搜索`DeepSeek-R1`
 
 点击进去：
 
 ![](img/c2408f3e607cb709f6c9e7114bdca92a.png)
 
-在这里可以看到 deepseek-r1有1.5b到671b不等的7个模型(除了671b的都是蒸馏版本)。可以点击下拉框选择模型，并且在右边看到安装方法和模型的大小。上图显示7b模型占用大小为 4.7G。
+在这里可以看到`deepseek-r1`有1.5b到671b不等的7个模型(除了671b的都是蒸馏版本)。可以点击下拉框选择模型，并且在右边看到安装方法和模型的大小。上图显示7b模型占用大小为 4.7G。
 
 打开命令行提示符：
 
-ollama list 可以看到现在Ollama已经有的模型：
+`ollama list` 可以看到现在Ollama已经有的模型：
 
 ![](img/06ef7cbe6b4550afa073ca0cbda531f3.png)
 
-以安装32b deepseek-r1 蒸馏模型为例，输入ollama run deepseek-r1:32b
+以安装32b`deepseek-r1`蒸馏模型为例，输入`ollama run deepseek-r1:32b`
 
 ![](img/21dea88c84a9b101a2f1339cf4846721.png)
 
@@ -106,7 +107,7 @@ ollama list 可以看到现在Ollama已经有的模型：
 
 ![](img/133b1a70ae3147bcd82d17283a9c6f3b.png)
 
-## （三）ChatBoxAI安装
+### （三）ChatBoxAI安装
 
 本节描述如何安装ChatBoxAI。
 
@@ -130,7 +131,7 @@ ollama list 可以看到现在Ollama已经有的模型：
 
 ![](img/c88ae7df9fcb720c3564a6b207a05a8a.png)
 
-## （四）ChatBox连接Ollama配置
+### （四）ChatBox连接Ollama配置
 
 启动ChatBox：
 
@@ -150,7 +151,7 @@ ollama list 可以看到现在Ollama已经有的模型：
 
 ![](img/beeef8b4f7ded066d96e33ad58a69f14.png)
 
-模型提供方，通过下拉框选择"OLLAMA API"，API域名填写 "http://127.0.0.1:11434"，按<TAB键>
+模型提供方，通过下拉框选择"OLLAMA API"，API域名填写`http://127.0.0.1:11434`，按<TAB键>
 
 系统会自动弹出Ollama已经有的模型，可以用下拉框选择：
 
@@ -160,7 +161,7 @@ ollama list 可以看到现在Ollama已经有的模型：
 
 ![](img/fad430ede067214b20c9467f37be0f6a.png)
 
-# 三、开始对话
+## 三、开始对话
 
 进入Just Chat(新对话)页面就可以对话了。
 

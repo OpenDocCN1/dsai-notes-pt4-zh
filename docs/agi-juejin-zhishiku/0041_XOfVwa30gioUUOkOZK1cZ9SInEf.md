@@ -1,3 +1,4 @@
+
 # 自我蒸馏方法-减轻大模型微调过程中的灾难性遗忘
 
 > 来源：[https://agijuejin.feishu.cn/docx/KKUWdi5kYoUb22xG54bcb33qnde](https://agijuejin.feishu.cn/docx/KKUWdi5kYoUb22xG54bcb33qnde)
@@ -6,7 +7,7 @@
 
 > 转载请联系原作者取得授权
 
-## **写在前面 **
+## 写在前面
 
 大家好，我是刘聪NLP。
 
@@ -23,7 +24,7 @@ Github: https://github.com/sail-sg/sdft
 
 ![](img/f6c4e61982d432438d589c83e532e902.png)
 
-##  **方法介绍 **
+## 方法介绍
 
 大模型SFT过程，就是将指令和输入的上下文内容，映射到相应的输出上，最小化数据信息分布与语言模型信息分布之间的差异，如下：
 
@@ -47,15 +48,15 @@ PS: 这里跟作者交流过，实际上仅数学任务采用了这种责令，�
 
 ![](img/cb5a5934186ce51aa7bb178315af7ee9.png)
 
-##  **实验结果 **
+## 实验结果
 
 所有实验均利用Llama-2-chat-7b模型，采用Lora方法训练，学习率初始为1e-4，按照余弦调度策略衰减到0，训练批次大小为8。
 
 数据集涉及单任务和多任务两种数据：
 
-+   单任务：OpenFunctions、GSM8K和MagiCoder；
++ 单任务：OpenFunctions、GSM8K和MagiCoder；
 
-+   多任务：Alpaca、Dolly和LIMA；
++ 多任务：Alpaca、Dolly和LIMA；
 
 模型在评估过程中，利用Advbench榜单进行安全性评估，利用AlpacaEval榜单进行实用性评估，利用OpenLLM榜单进行知识评估。
 
@@ -95,8 +96,8 @@ PS: 这里跟作者交流过，实际上仅数学任务采用了这种责令，�
 
 ![](img/67ac5555c56237dfbbefd05d22f6e300.png)
 
-##  **写在最后 **
+## 写在最后
 
 自我蒸馏方法在不引入额外数据的情况下，可以极大程度的减轻模型的遗忘现象。后期可以利用外部模型，将自我蒸馏数据保留机制进行完善，说不定会有意想不到的效果。
 
-[**欢迎多多关注**](https://mp.weixin.qq.com/s?__biz=Mzg5MTU1NTE1OQ==&mid=2247486601&idx=1&sn=dd2f338675de1448981bcfbe1efa71e3&scene=21#wechat_redirect)👸号「NLP工作站」， 加入交流群 ，交个朋友吧，一起学习，一起进步！
+[欢迎多多关注](https://mp.weixin.qq.com/s?__biz=Mzg5MTU1NTE1OQ==&mid=2247486601&idx=1&sn=dd2f338675de1448981bcfbe1efa71e3&scene=21#wechat_redirect)👸号「NLP工作站」， 加入交流群 ，交个朋友吧，一起学习，一起进步！

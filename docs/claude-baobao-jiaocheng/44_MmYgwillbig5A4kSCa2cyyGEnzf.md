@@ -1,10 +1,11 @@
+
 # clewd更新
 
 > 来源：[https://docs.feishu.cn/docx/PX0gdG94goXj9TxPSlscJhJfnNP](https://docs.feishu.cn/docx/PX0gdG94goXj9TxPSlscJhJfnNP)
 
-本篇作者：  Wiki目录：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBocw85QTiA8EXkNcUZcT2pCnIe#part-JnNhdPgTBodOs3x0bYGczU5knRb)
+本篇作者：Wiki目录：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBocw85QTiA8EXkNcUZcT2pCnIe#part-JnNhdPgTBodOs3x0bYGczU5knRb)
 
-# Replit 上的 Clewd 后台
+## Replit 上的 Clewd 后台
 
 登录后点击My Repls，找到自己的clewd项目
 
@@ -12,11 +13,11 @@
 
 ![](img/a32f03d6953bfa4bb51e779106be1d60.png)
 
-# Clewd 更新
+## Clewd 更新
 
-如果出现403模型错误(即Invalid mode[l）的问题，](https://sqivg8d05rm.feishu.cn/docx/MgyodBPmGoTHOAxqT4nc8yAJnRd?from=pages&ccm_open_type=lark_docs_wiki_All#part-JO7sdJzEnonoJzxBRtVca8bBnyd)需要重[新到最新版本。报错你就重新f](https://item.taobao.com/item.htm?ft=t&id=749509289037)ork，附：淘宝2.49元Cookie店。
+如果出现403模型错误（即`Invalid model`的问题），需要[重新到最新版本](https://sqivg8d05rm.feishu.cn/docx/MgyodBPmGoTHOAxqT4nc8yAJnRd?from=pages&ccm_open_type=lark_docs_wiki_All#part-JO7sdJzEnonoJzxBRtVca8bBnyd)。报错你就重新`fork`，附：[淘宝2.49元Cookie店](https://item.taobao.com/item.htm?ft=t&id=749509289037)。
 
-Replit云端：在 Shell 内输入bash update.sh并回车
+Replit云端：在 Shell 内输入`bash update.sh`并回车
 
 ```
 bash update.sh

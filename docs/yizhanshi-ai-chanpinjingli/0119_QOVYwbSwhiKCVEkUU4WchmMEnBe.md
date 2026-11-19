@@ -1,33 +1,34 @@
+
 # 快速使用
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/R80Kd6xRTolFEExgGZHc7l4Snlb](https://v11enp9ok1h.feishu.cn/docx/R80Kd6xRTolFEExgGZHc7l4Snlb)
-
-<https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie>
+> 来源：`https://v11enp9ok1h.feishu.cn/docx/R80Kd6xRTolFEExgGZHc7l4Snlb`
+>
+> `https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie`
 
 本章节将带领开发者如何快速上手智谱AI 最新的 Python SDK
 
-## 使用Python 进行 SDK 调用
+## 使用Python进行SDK调用
 
-## 安装SDK
+### 安装SDK
 
+```bash
+pip install zhipuai>=2.0.1
 ```
-pip install zhipuai&gt;=2.0.1
-```
 
-## 非流式输出调用
+### 非流式输出调用
 
 现在，我们只要用如下代码进行演示，就可以获得完整的回答
 
-```
+```python
 from zhipuai import ZhipuAI
 
-client = ZhipuAI(api_key=&quot;your api key&quot;)
+client = ZhipuAI(api_key="your api key")
 response = client.chat.completions.create(
-    model=&quot;glm-4&quot;,
+    model="glm-4",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;请你作为童话故事大王，写一篇短篇童话故事，故事的主题是要永远保持一颗善良的心，要能够激发儿童的学习兴趣和想象力，同时也能够帮助儿童更好地理解和接受故事中所蕴含的道理和价值观。&quot;
+            "role": "user",
+            "content": "请你作为童话故事大王，写一篇短篇童话故事，故事的主题是要永远保持一颗善良的心，要能够激发儿童的学习兴趣和想象力，同时也能够帮助儿童更好地理解和接受故事中所蕴含的道理和价值观。"
         }
     ],
     top_p=0.7,
@@ -38,20 +39,20 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-## 流式输出调用
+### 流式输出调用
 
 当然，我们的python sdk进行简单的流式输出调用，以下是简单的代码
 
-```
+```python
 from zhipuai import ZhipuAI
 import sys
-client = ZhipuAI(api_key=&quot;your api key&quot;)
+client = ZhipuAI(api_key="your api key")
 response = client.chat.completions.create(
-    model=&quot;glm-4&quot;,
+    model="glm-4",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;请你作为童话故事大王，写一篇短篇童话故事，故事的主题是要永远保持一颗善良的心，要能够激发儿童的学习兴趣和想象力，同时也能够帮助儿童更好地理解和接受故事中所蕴含的道理和价值观。&quot;
+            "role": "user",
+            "content": "请你作为童话故事大王，写一篇短篇童话故事，故事的主题是要永远保持一颗善良的心，要能够激发儿童的学习兴趣和想象力，同时也能够帮助儿童更好地理解和接受故事中所蕴含的道理和价值观。"
         }
     ],
     top_p=0.7,

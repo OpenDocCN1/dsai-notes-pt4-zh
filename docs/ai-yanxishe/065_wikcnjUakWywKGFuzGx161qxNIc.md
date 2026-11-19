@@ -1,3 +1,4 @@
+
 # Chatgpt解封攻略
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/X7x9doDteo2Kr5xibvIcCFIgnGe](https://aiyanxishe.feishu.cn/docx/X7x9doDteo2Kr5xibvIcCFIgnGe)
@@ -10,41 +11,28 @@
 
 首先我们要了解ChatGPT官方发布的封号政策。由于 ChatGPT 相对较新(于 2022 年 11 月推出)，使用政策可能会随着新滥用方法的出现而改变。如果您想继续使用 ChatGPT，请务必遵循这些准则。目前，OpenAI 不允许以下任何一种:
 
-+   非法活动
-
-+   儿童性虐待材料或任何剥削或伤害儿童的内容
-
-+   产生仇恨、骚扰或暴力内容
-
-+   恶意软件的产生
-
-+   身体伤害风险高的活动
-
-+   具有高经济危害风险的活动。
-
-+   欺诈或欺骗活动
-
-+   成人内容、成人产业和约会应用
-
-+   政治竞选或游说
-
-+   侵犯他人隐私的活动
-
-+   从事未经授权的法律实践，或在没有合格人员审查信息的情况下提供量身定制的法律建议
-
-+   在没有合格人员审查信息的情况下提供量身定制的财务建议告诉某人他们有或没有某种健康状况，或提供有关如何治愈或治疗健康状况的说明
-
-+   高风险政府决策
+- 非法活动
+- 儿童性虐待材料或任何剥削或伤害儿童的内容
+- 产生仇恨、骚扰或暴力内容
+- 恶意软件的产生
+- 身体伤害风险高的活动
+- 具有高经济危害风险的活动。
+- 欺诈或欺骗活动
+- 成人内容、成人产业和约会应用
+- 政治竞选或游说
+- 侵犯他人隐私的活动
+- 从事未经授权的法律实践，或在没有合格人员审查信息的情况下提供量身定制的法律建议
+- 在没有合格人员审查信息的情况下提供量身定制的财务建议告诉某人他们有或没有某种健康状况，或提供有关如何治愈或治疗健康状况的说明
+- 高风险政府决策
 
 对应看下自己可能触碰了哪个红线，然后进行以下操作。
 
-## 第一步：写一封英文邮件进行申诉:
+## 第一步：写一封英文邮件进行申诉
 
 告诉官方这是误会，如果你英文不好给大家准备7保姆级别的英文模版专业的人做专业的事情，当粉丝遇到问题，第一时间奉上给力的教程。
 
-+   把邮箱账号和姓名复制到中英文模板
-
-+   登录其他的邮箱，利用这个邮箱发送模板到需要申诉的邮箱：support@openai.com
+- 把邮箱账号和姓名复制到中英文模板
+- 登录其他的邮箱，利用这个邮箱发送模板到需要申诉的邮箱：support@openai.com
 
 主题：紧急呼吁解禁帐户：未经授权访问和滥用我的 ChatGPT 帐户
 
@@ -65,28 +53,28 @@
 此致，
 
 > 英文版内容，可以复制使用
-
 >
-
-> Subject: Urgent Appeal for Account Unban: Unauthorized Access and Misuse of My ChatGPT AccountDear ChatGPT Support Team,
-
-> hope this email finds you well. My name is[ Your Name箱名字], andl am writing to appeal for the removalof the ban on my ChatGPT account (username: [ Your Username邮箱名字]). Ibelieve that my account hasbeen mistakenly flagged and banned due to suspicious activities, which I suspect were the result ofunauthorized access and misuse.
-
+> Subject: Urgent Appeal for Account Unban: Unauthorized Access and Misuse of My ChatGPT Account
+>
+> Dear ChatGPT Support Team,
+>
+> I hope this email finds you well. My name is[ Your Name箱名字], andl am writing to appeal for the removalof the ban on my ChatGPT account (username: [ Your Username邮箱名字]). Ibelieve that my account hasbeen mistakenly flagged and banned due to suspicious activities, which I suspect were the result ofunauthorized access and misuse.
+>
 > i recently discovered that my account was compromised, and I have reason to believe that it was accessedand misused by someone else without my knowledge or consent. I deeply regret any inconvenience ordisruption this may have caused to the ChatGPT community and would like to assure you that I had no partin the activities that led to the ban.
-
+>
 > To resolve this issue and restore my account, I have already taken the necessary steps to secure my accountby changing my password and enabling two-factor authentication.  kindly request that you investigate myaccount to verify my claims and consider lifting the ban.
-
+>
 > I have always valued and respected the ChatGPT community guidelines and have strived to maintain apositive and constructive presence. I understand the importance of maintaining a safe and enjoyableenvironment for all users and sincerely apologize for any trouble this situation may have caused.
-
+>
 > Please let me know if there is any additional information or action required from my end to facilitate theinvestigation and resolution of this issue. I am more than willing to cooperate with any further inquiries youmay have.
-
+>
 > Thank you for your time and consideration. I eagerly await your response and hope that my account can bereinstated as soon as possible.
-
+>
 > Best regards.
 
 ![](img/7cffe742d00eb05ff344047d8672a0bd.png)
 
-## **第二步：等待官方回复**
+## 第二步：等待官方回复
 
 让你确认你的活动轨迹，这个时候，你要告诉官方，这个绝壁是一个骗局，请官方爸爸给条条活动路。
 
@@ -123,30 +111,24 @@
 敬礼
 
 > [你的邮箱]
-
-> 
-
+>
 > I have never used an IP address from Hong Kong. Please unblock my account as soon as possible.
-
+>
 > Respected Customer Service,
-
+>
 > I have discovered that my Chatgpt account has been blocked, but I assure you that I have never used an IP address from Hong Kong. I am positive that I have never used an IP address from that region, and I have always followed the rules and requirements of Chatgpt. I value my account and the partnership with Chatgpt, and I hope to receive your support and assistance in resolving this issue.
-
+>
 > I need an explanation from the company as to why my account has been blocked, and I also hope that my account can be unblocked as soon as possible. I believe that this issue can be resolved through effective communication and cooperation.
-
+>
 > Thank you for your time and attention to this matter. I look forward to hearing back from you soon.
-
+>
 > Sincerely,
-
+>
 > [Your Email]
 
->
+[祝大家早日解封，另](https://zl49so8lbq.feishu.cn/wiki/wikcnMEVynrv6f4RAAJzoZUFpHe)外大家在被封期间也可以免费使用👉 ChatGPT国内版，里面收录了30余个ChatGPT替代网址。
 
-[
-
-祝大家早日解封，另](https://zl49so8lbq.feishu.cn/wiki/wikcnMEVynrv6f4RAAJzoZUFpHe)外大家在被封期间也可以免费使用👉 ChatGPT国内版，里面收录了30余个ChatGPT替代网址。
-
-# 🎊 C[hatGPT国内版](https://zl49so8lbq.feishu.cn/wiki/wikcnMEVynrv6f4RAAJzoZUFpHe)
+## 🎊 [ChatGPT国内版](https://zl49so8lbq.feishu.cn/wiki/wikcnMEVynrv6f4RAAJzoZUFpHe)
 
 https://chat.theb.ai
 
@@ -170,4 +152,4 @@ https://poe.com/gpt-4
 
 ![](img/083e3fe6548e0000883a04023f06a3e4.png)
 
-扫描二维码，加入[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)** **
+扫描二维码，加入[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)

@@ -1,14 +1,15 @@
+
 # 20241222-Midjourney 功能更新：情绪板 Moodboard
 
 > 来源：[https://aigcreative.feishu.cn/docx/EGm1da7AboQRQBx8VsDcTZrMn4d](https://aigcreative.feishu.cn/docx/EGm1da7AboQRQBx8VsDcTZrMn4d)
 
-> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/uVFSrYWQTxQFkseULI4aKA)qq.com/s/uVFSrYWQ...
+> 原文链接：[https://mp.weixin.qq.com/s/uVFSrYWQTxQFkseULI4aKA](https://mp.weixin.qq.com/s/uVFSrYWQTxQFkseULI4aKA)
 
 > 👸号：设计师doo
 
-今天向大家推荐一个Midjourney的新功能：情绪板（moodboard） 。该功能简明易用，效果显著。
+今天向大家推荐一个Midjourney的新功能：情绪板（moodboard）。该功能简明易用，效果显著。
 
-# 什么是情绪板（moodboard）
+## 什么是情绪板（moodboard）
 
 情绪板就是一种工具，它把一些图片、文字和颜色放在一起，让人一看就能感受到某种情绪、氛围或者风格。
 
@@ -16,7 +17,7 @@
 
 ![](img/aefb28845a9b517b10cd3e38c5715fa9.png)
 
-# **实际效果**
+## 实际效果
 
 我测试了两个案例，分别是数字插画和科技风，实际效果如下：
 
@@ -24,7 +25,7 @@
 
 ![](img/bf473b6bea3aadd14ea4b3767a87e72b.png)
 
-# **如何操作**
+## 如何操作
 
 登录Midjourney官网（https://www.midjourney.com/），点击左侧的个性化标签。
 
@@ -46,7 +47,7 @@
 
 ![](img/7c710e73bf97cdfb7862fca20c3c2817.png)
 
-点击复制代码按钮。情绪板代码就被同步到了顶部的输入框内，也就是这串“--p”开头的代码。在此基础上，输入关键词。回车发送，开始出图。
+点击复制代码按钮。情绪板代码就被同步到了顶部的输入框内，也就是这串`--p`开头的代码。在此基础上，输入关键词。回车发送，开始出图。
 
 ![](img/52d669145eea7d428a90d1fb89647ab8.png)
 
@@ -62,7 +63,7 @@
 
 ![](img/6f85883151dfc58bb8a786fa839a35eb.png)
 
-# **总结**
+## 总结
 
 简单明了的新功能情绪板，可以试试。
 

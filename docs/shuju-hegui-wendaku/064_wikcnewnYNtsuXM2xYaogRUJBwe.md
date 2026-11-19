@@ -1,6 +1,7 @@
+
 # APP监管的管辖原则
 
-> 来源：[https://docs.feishu.cn/docx/EtaddO342ouPYexNCJ3cHNFNnme](https://docs.feishu.cn/docx/EtaddO342ouPYexNCJ3cHNFNnme)
+> 来源：[`https://docs.feishu.cn/docx/EtaddO342ouPYexNCJ3cHNFNnme`](https://docs.feishu.cn/docx/EtaddO342ouPYexNCJ3cHNFNnme)
 
 **-问：**浙江省的监管机构有权对一个公司注册地址在河北的APP进行监管处罚吗？
 

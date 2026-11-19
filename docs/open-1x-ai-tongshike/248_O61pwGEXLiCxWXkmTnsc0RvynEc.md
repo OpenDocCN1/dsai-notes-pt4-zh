@@ -1,12 +1,13 @@
+
 # 谜撰应用部署教程
 
 > 来源：[https://datawhaler.feishu.cn/docx/DKPJdBvBAogOEWxMM8qcl0OAnjd](https://datawhaler.feishu.cn/docx/DKPJdBvBAogOEWxMM8qcl0OAnjd)
 
 <https://datawhaler.feishu.cn/sync/FsXmd9Oifs2Jx4bq3CCcPXE8npg>
 
-> 本教程旨在，带大家零基础速通 多智能**体 (Multi-A**gent) 框架 AgentScope，本地部署一个基于该框架的游戏应用~
+> 本教程旨在，带大家零基础速通 多智能体 (Multi-Agent) 框架 AgentScope，本地部署一个基于该框架的游戏应用~
 
-# 学习效果预告
+## 学习效果预告
 
 成功部署后，效果图大致如下所示：
 
@@ -16,23 +17,22 @@
 
 ![](img/1ba8a82dad8b10665508a5a2a6ac6747.png)
 
-# 学习进行时——
+## 学习进行时
 
-## 开通 Qwen API，领取免费额度，并创建 Key
+### 开通 Qwen API，领取免费额度，并创建 Key
 
 <https://datawhaler.feishu.cn/sync/FpUmdMXkAs2mg3bFmeacI69kndg>
 
-## 本地下载代码并配置环境
+### 本地下载代码并配置环境
 
-> [**必备条件：代码仓库、装有**](https://datawhaler.feishu.cn/wiki/O61pwGEXLiCxWXkmTnsc0RvynEc?fromScene=spaceOverview#XjJxdfk2loWk9AxGtlkcIhADnw3)python环境的电脑/魔搭Notebook、Qwen API-KEY
+> [必备条件：代码仓库、装有](https://datawhaler.feishu.cn/wiki/O61pwGEXLiCxWXkmTnsc0RvynEc?fromScene=spaceOverview#XjJxdfk2loWk9AxGtlkcIhADnw3)`python` 环境的电脑/魔搭 Notebook、Qwen API-KEY
 
-### 使用本地电脑
+#### 使用本地电脑
 
-> 注意电脑需要能够正常使用python环境
+> 注意电脑需要能够正常使用 `python` 环境
 
-1.  打开命令行界面，进入到合适的目录
-
-1.  Mac电脑打开终端，cd到合适的目录
+1. 打开命令行界面，进入到合适的目录
+1. Mac 电脑打开终端，`cd` 到合适的目录
 
 ![](img/ab54ef2c52f5e1a508cbe492ccd349a3.png)
 
@@ -40,28 +40,27 @@
 
 ![](img/234df5340c4e2b8b287f8685d2eca594.png)
 
-1.  Windows电脑在对应目录下，右键打开命令行
+1. Windows 电脑在对应目录下，右键打开命令行
+1. 下载游戏项目源码并安装环境
 
-1.  下载游戏项目源码并安装环境
+> 注意必须使用 `python` ≥ 3.10
 
-> 注意必须使用 python ≥ 3.10
-
-+   Mac环境
++ Mac 环境
 
 ```
-#推荐使用虚拟环境
+# 推荐使用虚拟环境
 python -m venv venv_AgentScope
 source venv_AgentScope/bin/activate
 
-#克隆谜撰代码并进入该目录
+# 克隆谜撰代码并进入该目录
 git clone https://www.modelscope.cn/studios/AgentScope/game_qwen.git
 cd game_qwen
 
-#配置所需环境：安装相关包
+# 配置所需环境：安装相关包
 pip install -r requirements.txt
 pip install google protobuf PyYAML gradio colorist pypinyin inquirer oss2 modelscope_studio
 
-#设置qwen KEY和游戏名字的环境变量
+# 设置 qwen KEY 和游戏名字的环境变量
 export GAME_NAME=test（可以任意调整）
 export DASHSCOPE_API_KEY=sk-xxxxxx
 ```
@@ -74,27 +73,27 @@ export DASHSCOPE_API_KEY=sk-xxxxxx
 
 ![](img/23be2079cd8845b75eea90c32cf9de54.png)
 
-+   Windows环境，推荐使用conda虚拟环境
++ Windows 环境，推荐使用 `conda` 虚拟环境
 
 ```
-#Windows版
-##新建虚拟环境
+# Windows 版
+## 新建虚拟环境
 conda create -n venv_AgentScope python=3.10
 
-##切换环境
+## 切换环境
 conda activate venv_AgentScope
 
-#克隆谜撰代码并进入该目录
+# 克隆谜撰代码并进入该目录
 git clone https://www.modelscope.cn/studios/AgentScope/game_qwen.git
 cd game_qwen
 
-#配置所需环境：安装相关包
+# 配置所需环境：安装相关包
 pip install -r requirements.txt
 pip install google protobuf PyYAML gradio colorist pypinyin inquirer oss2 modelscope_studio
 
-#设置qwen KEY和游戏名字的环境变量
+# 设置 qwen KEY 和游戏名字的环境变量
 setx GAME_NAME test（可以任意调整）
-setx DASHSCOPE_API_KEY sk-xxxxxx（上面申请的api-key）
+setx DASHSCOPE_API_KEY sk-xxxxxx（上面申请的 api-key）
 ```
 
 ![](img/226fa2bcb54cf23bcc233717044c7ab5.png)
@@ -107,9 +106,9 @@ setx DASHSCOPE_API_KEY sk-xxxxxx（上面申请的api-key）
 
 ![](img/46722e4ea23575dfed63dd0000cfa994.png)
 
-### 使用魔搭Notebook（还存在一定问题）
+#### 使用魔搭 Notebook（还存在一定问题）
 
-1.  打开[魔搭Notebook](https://modelscope.cn/my/mynotebook/preset)
+1. 打开 [魔搭 Notebook](https://modelscope.cn/my/mynotebook/preset)
 
 ![](img/bc42658bea7112e598cf4743f760f479.png)
 
@@ -117,17 +116,17 @@ setx DASHSCOPE_API_KEY sk-xxxxxx（上面申请的api-key）
 
 ![](img/e9f60d1f195f3c6bb19418bcbcb60767.png)
 
-1.  下载游戏项目源码，并安装环境
+1. 下载游戏项目源码，并安装环境
 
 ```
-#克隆谜撰代码并进入该目录
+# 克隆谜撰代码并进入该目录
 git clone https://www.modelscope.cn/studios/AgentScope/game_qwen.git
 cd game_qwen
 
-#配置所需环境：安装相关包
+# 配置所需环境：安装相关包
 pip install -r requirements.txt
 
-#设置qwen KEY和游戏名字的环境变量
+# 设置 qwen KEY 和游戏名字的环境变量
 export GAME_NAME=test
 export DASHSCOPE_API_KEY=sk-xxxxxx
 ```
@@ -136,15 +135,15 @@ export DASHSCOPE_API_KEY=sk-xxxxxx
 
 ![](img/1794a66fd35147ddfeadf92767ca8c8c.png)
 
-1.  修改gradio运行路径
+1. 修改 gradio 运行路径
 
-> 修改game_app.py里的demo.launch部分的代码为如下内容
+> 修改 `game_app.py` 里的 `demo.launch()` 部分的代码为如下内容
 
 ```
-#搜索 demo.launch()，替换为如下内容
+# 搜索 demo.launch()，替换为如下内容
 port = 7860
-name = os.environ[&#x27;JUPYTER_NAME&#x27;]
-root_path =f&#x27;/{name}/proxy/{port}&#x27;
+name = os.environ['JUPYTER_NAME']
+root_path = f'/{name}/proxy/{port}'
 demo.launch(root_path=root_path, server_port=port, max_threads=400)
 ```
 
@@ -152,9 +151,9 @@ demo.launch(root_path=root_path, server_port=port, max_threads=400)
 
 ![](img/7d0ab720646412de8a302898cf7f446b.png)
 
-## 运行游戏，开玩！
+### 运行游戏，开玩！
 
-在命令行敲击 python app.py 即可开玩！
+在命令行敲击 `python app.py` 即可开玩！
 
 ![](img/cf1d2092ac343ee685d55dfbc260fbf7.png)
 
@@ -164,15 +163,15 @@ demo.launch(root_path=root_path, server_port=port, max_threads=400)
 
 ![](img/0f2bce6f79fc9580ef446aa931daf74b.png)
 
-# 随机掉落的知识包
+## 随机掉落的知识包
 
-## Agent是什么？
+### Agent 是什么？
 
 <https://datawhaler.feishu.cn/sync/QZord0va1s9dgCbc4WgcDq0tn4b>
 
-## Multi-Agent是什么？
+### Multi-Agent 是什么？
 
-> 以下内容由AI辅助写作：https://metaso.cn/s/sn5zwEB
+> 以下内容由 AI 辅助写作：https://metaso.cn/s/sn5zwEB
 
 多智能体系统（Multi-Agent Systems, MAS）是由多个决策制定的智能体组成的系统，这些智能体在共享环境中相互作用，以实现共同或冲突的目标。这些系统可以由多个软件组件或“智能体”组成，这些智能体具有自主性和交互性的基本能力。多智能体系统是分布式人工智能的一个子领域，由于其灵活性和智能性，近年来经历了快速的增长。
 
@@ -182,35 +181,35 @@ demo.launch(root_path=root_path, server_port=port, max_threads=400)
 
 总的来说，多智能体系统是一个复杂的领域，涉及多个智能体在共享环境中的相互作用，旨在实现共同目标或解决特定问题。有效的通信机制是这些系统成功的关键因素之一。
 
-## AgentScope框架是什么？
+### AgentScope 框架是什么？
 
 <https://datawhaler.feishu.cn/sync/Oo4nd6BMNsyxZPbDPb4cY8bSn1d>
 
-# 一些 问题 & 解决方案
+## 一些 问题 & 解决方案
 
-## conda下载速度慢的问题：更换国内源：by
+### conda 下载速度慢的问题：更换国内源
 
-## [c](https://blog.csdn.net/czyxiaowu/article/details/132479619)ondav[aluee](https://blog.csdn.net/czyxiaowu)rror: malformed version string ‘~‘: invalid character(s)解决方法 ：by czyxw
+### malformed version string ‘~’: invalid character(s) 解决方法
 
-## Windows 运行失败，不支持gbk字符：by
+### Windows 运行失败，不支持 `gbk` 字符
 
-> 问题原因：Windows不支持gbk编码内容，需要修改为utf-8的编码格式
+> 问题原因：Windows 不支持 `gbk` 编码内容，需要修改为 `utf-8` 的编码格式
 
 ![](img/0681ae2cc83cff18c946ac9b79a4d5e0.png)
 
 ![](img/4d06f0f530c55f4e482dff3f37ffc15d.png)
 
-1.  找到**对应的文件**修改代码
+1. 找到对应的文件修改代码
 
 > 思路：找到报错(红线)的位置进行编码格式修改
 
-打开pathlib.py文件，搜索‘read_text’方法，改成下面的代码并保存：
+打开 `pathlib.py` 文件，搜索 `read_text` 方法，改成下面的代码并保存：
 
 ![](img/e7162932160ac97fb722f927eaa9b0b2.png)
 
-继续运行,出现如下错误:
+继续运行，出现如下错误：
 
-找到上述红线的地址，打开py文件，并加上encoding=‘utf-8’，保存：
+找到上述红线的地址，打开 `py` 文件，并加上 `encoding='utf-8'`，保存：
 
 ![](img/d46cf6055c276c20a5f84907f37df772.png)
 
@@ -218,7 +217,7 @@ demo.launch(root_path=root_path, server_port=port, max_threads=400)
 
 ![](img/a467faa516bb2f5a2740576b79c0a2ce.png)
 
-1.  可能出现的问题，模型加载问题：
+1. 可能出现的问题，模型加载问题：
 
 ![](img/bf3c3ab865b678a3f0a7ed1ad5994ccf.png)
 

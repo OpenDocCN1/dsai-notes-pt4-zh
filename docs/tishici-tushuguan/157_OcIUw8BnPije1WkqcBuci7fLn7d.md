@@ -1,3 +1,4 @@
+
 # Claude Prompt：万物皆可一字
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/TdfddSHsWo3legxtTY0cHDO5nCg](https://vxc3hj17dym.feishu.cn/docx/TdfddSHsWo3legxtTY0cHDO5nCg)
@@ -54,7 +55,7 @@
                     分隔线
                     (使用本机字体 (font-family &quot;FZJiaGuWen&quot;) 响应)
                     图形
-                    判语))))
+                    判语)))
 
 
 (defun start ()

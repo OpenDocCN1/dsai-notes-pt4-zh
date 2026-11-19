@@ -1,3 +1,4 @@
+
 # Mcp-powered Audio Analysis Toolkit
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/WsvzdffcGoGOg2xJsoEcJFIJnff](https://v11enp9ok1h.feishu.cn/docx/WsvzdffcGoGOg2xJsoEcJFIJnff)
@@ -8,7 +9,7 @@
 
 ![](img/d36263a06771c4ed18dc736d5374028c.png)
 
-### **技术栈**
+### 技术栈
 
 +   AssemblyAI 用于转录和音频分析
 
@@ -16,7 +17,7 @@
 
 +   Streamlit 用于用户界面
 
-### **工作流程**
+### 工作流程
 
 +   用户的音频输入通过本地 MCP 服务器发送到 AssemblyAI
 
@@ -52,9 +53,9 @@
 
 服务器配置完成后，Claude Desktop 将在工具菜单中显示我们上面构建的两个工具：
 
-+   transcribe_audio
++   `transcribe_audio`
 
-+   get_audio_data
++   `get_audio_data`
 
 ![](img/1e85c805b4193ca987c203d5220f3120.png)
 

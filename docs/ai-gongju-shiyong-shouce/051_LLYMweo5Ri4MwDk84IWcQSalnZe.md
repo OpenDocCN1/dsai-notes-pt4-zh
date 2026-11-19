@@ -1,3 +1,4 @@
+
 # SD教程NO.11👉用生成式AI工具为SD写prompt
 
 > 来源：[https://my.feishu.cn/docx/M2aEdqDThoqtvixtnwccvze3n9b](https://my.feishu.cn/docx/M2aEdqDThoqtvixtnwccvze3n9b)
@@ -12,7 +13,7 @@
 
 ### 使用方式
 
-工具使用了**Claude**[最强Ai工具💥免费用！不需要魔法！（Slack-Claude使用教程）](https://yw55ojhusnq.feishu.cn/wiki/FvzywPunCiLpKekRD6QcBp4rnsd?from=from_copylink)** **
+工具使用了**Claude**[最强Ai工具💥免费用！不需要魔法！（Slack-Claude使用教程）](https://yw55ojhusnq.feishu.cn/wiki/FvzywPunCiLpKekRD6QcBp4rnsd?from=from_copylink)
 
 生成描述和参数的提示词是这些👇
 

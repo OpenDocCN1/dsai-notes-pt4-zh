@@ -1,3 +1,4 @@
+
 # 20241214-OpenAI Day 8/12：ChatGPT搜索功能，语音搜索功能
 
 > 来源：[https://aigcreative.feishu.cn/docx/RzNRdylalotgp9xMoDmcAeafnib](https://aigcreative.feishu.cn/docx/RzNRdylalotgp9xMoDmcAeafnib)

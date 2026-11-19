@@ -1,12 +1,13 @@
+
 # DeepSeek+Ragflow 搭建知识库
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/LUKOdMwoRoy22mxFsCmc8D0Mnfe](https://vcn0zlxse9ua.feishu.cn/docx/LUKOdMwoRoy22mxFsCmc8D0Mnfe)
 
 DeepSeek+RAGFlow 为企业和个人提供了从 数据安全 到 智能应用 的全链路解决方案，尤其适合需兼顾效率与隐私的场景。通过灵活的架构设计，用户可快速搭建专属知识库，释放大模型在垂直领域的潜力
 
-## 安装 ollama
+## 安装 `ollama`
 
-参考前面文档 ollama 部分：
+参考前面文档 `ollama` 部分：
 
 https://vcn0zlxse9ua.feishu.cn/wiki/LFWHwooVGiXFeYkKs7dcUiqincg
 
@@ -26,15 +27,15 @@ ollama pull mxbai-embed-large
 
 ![](img/4f07219c5490a051a7abf57fa7bcb1e5.png)
 
-## 安装 docker
+## 安装 `docker`
 
-参考前面文档 docker 部分：
+参考前面文档 `docker` 部分：
 
 https://vcn0zlxse9ua.feishu.cn/wiki/RrW1w2L0EifGMQk298nc2wGFnXb?fromScene=spaceOverview
 
 ## 安装 Ragflow
 
-github 地址：[https://github.co](https://github.com/infiniflow/ragflow)m/infiniflow/ragflow
+github 地址：https://github.com/infiniflow/ragflow
 
 官网文档：https://ragflow.io/
 
@@ -46,7 +47,7 @@ github 地址：[https://github.co](https://github.com/infiniflow/ragflow)m/infi
 
 +   硬盘 >= 50 GB
 
-+   Docker 版本 >= 24.0.0 & Docker Compose >= v2.26.1
++   `Docker` 版本 >= 24.0.0 & `Docker Compose` >= v2.26.1
 
 ### 下载 Ragflow
 
@@ -60,9 +61,9 @@ github 地址：[https://github.co](https://github.com/infiniflow/ragflow)m/infi
 
 #### 修改配置
 
-把下载的压缩包解压，然后进入到 docker 文件夹
+把下载的压缩包解压，然后进入到 `docker` 文件夹
 
-先修改 docker/。env 文件内的 RAGFLOW_IMAGE 变量。
+先修改 `docker/.env` 文件内的 `RAGFLOW_IMAGE` 变量。
 
 ```
 RAGFLOW_IMAGE=infiniflow/ragflow:v0.16.0
@@ -74,7 +75,7 @@ RAGFLOW_IMAGE=infiniflow/ragflow:v0.16.0
 
 #### 启动
 
-进入到刚才下载完成的 ragflow-main 文件夹下，文件夹路径输入 cmd，复制一下命令到 cmd 执行
+进入到刚才下载完成的 `ragflow-main` 文件夹下，文件夹路径输入 `cmd`，复制一下命令到 `cmd` 执行
 
 ```
 docker compose -f docker/docker-compose.yml up -d
@@ -94,7 +95,7 @@ docker logs -f ragflow-server
 
 #### 注意
 
-如果你本地安装了 redis 或 minio 可能出现端口占用问题，修改。env 中的配置信息即可
+如果你本地安装了 `redis` 或 `minio` 可能出现端口占用问题，修改 `.env` 中的配置信息即可
 
 核心映像的大小约为 9 GB，可能需要一段时间才能加载。
 
@@ -112,7 +113,7 @@ docker logs -f ragflow-server
 
 点击【头像】-【模型提供商】
 
-#### 添加 ollama【大模型】
+#### 添加 `ollama`【大模型】
 
 ![](img/d19f2ec19d27d56c60d77af386df7d6d.png)
 

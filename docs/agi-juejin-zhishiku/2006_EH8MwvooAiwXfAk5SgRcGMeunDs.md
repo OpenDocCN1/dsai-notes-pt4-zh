@@ -1,8 +1,7 @@
-# 08.04-OpenAI 奥尔特曼“秀肌肉”：GPT-5 实测具备高效整合网络信息能力
-
-> 来源：[https://agijuejin.feishu.cn/docx/AnN6dJwrPoL0WSxVRbucNuIgntg](https://agijuejin.feishu.cn/docx/AnN6dJwrPoL0WSxVRbucNuIgntg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 08 月 04 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/AnN6dJwrPoL0WSxVRbucNuIgntg](https://agijuejin.feishu.cn/docx/AnN6dJwrPoL0WSxVRbucNuIgntg)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -14,7 +13,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/872/795.htm)
 
 ![](img/c4b67b2130a64f48e5a3e3918941ccd8.png)
 
-8月4日凌晨，OpenAI CEO奥尔特曼在X上晒出疑似GPT-5截图，这是其首次公开亮相之一。面对对手压力，OpenAI有推出新旗舰模型的迫切需求。截图显示，GPT-5能高效整合网络信息，评价《Pantheon》在“烂番茄”获“100%影评人好评”，评价准确。外界预计，GPT-5将比前代更强大，还延续了ChatGPT对破折号的偏爱 。
+8月4日凌晨，OpenAI CEO奥尔特曼在X上晒出疑似GPT-5截图，这是其首次公开亮相之一。面对对手压力，OpenAI有推出新旗舰模型的迫切需求。截图显示，GPT-5能高效整合网络信息，评价《Pantheon》在“烂番茄”获“100%影评人好评”，评价准确。外界预计，GPT-5将比前代更强大，还延续了ChatGPT对破折号的偏爱。
 
 ## 🌟 技术突破
 
@@ -24,7 +23,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/872/709.htm)
 
 ![](img/5394676edf204df6a37353e3ac410d70.png)
 
-2025年8月3日马斯克在X上称，10天内6秒视频渲染时间从60秒大幅缩至15秒，本周或能控制在12秒以内且视觉质量不受影响，同时音频轨道在升级。他认为实时AI视频渲染技术有望3到6个月实现。Grok已推出人工智能文本转视频生成器Grok Imagine ，处于测试阶段，用户输入文字描述可转化为带音效视频片段，速度快，获马斯克称赞。
+2025年8月3日马斯克在X上称，10天内6秒视频渲染时间从60秒大幅缩至15秒，本周或能控制在12秒以内且视觉质量不受影响，同时音频轨道在升级。他认为实时AI视频渲染技术有望3到6个月实现。Grok已推出人工智能文本转视频生成器Grok Imagine，处于测试阶段，用户输入文字描述可转化为带音效视频片段，速度快，获马斯克称赞。
 
 ### 💡 九天大模型大变身：性能狂飙35%！还能一键P大象
 
@@ -40,7 +39,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/872/709.htm)
 
 ![](img/6185c9dbc8ca9e643849cd2838bfe504.png)
 
-8月3日凌晨马斯克更新Grok App，向Grok Heavy用户推出Imagine功能，Grok iOS App也升级。该功能可30秒一键生成AI短视频，生成速度快，视频迅速爆火。马斯克称其仍处早期测试阶段，会不断改进，并号召网友分享提示。不少行业人士盛赞，如Shopify、戴尔CEO等。此外，马斯克透露Grok Imagine是AI版Vine，原版Vine将回归，而谷歌也刚开放Veo 3 。
+8月3日凌晨马斯克更新Grok App，向Grok Heavy用户推出Imagine功能，Grok iOS App也升级。该功能可30秒一键生成AI短视频，生成速度快，视频迅速爆火。马斯克称其仍处早期测试阶段，会不断改进，并号召网友分享提示。不少行业人士盛赞，如Shopify、戴尔CEO等。此外，马斯克透露Grok Imagine是AI版Vine，原版Vine将回归，而谷歌也刚开放Veo 3。
 
 ## 💫 企业动态
 
@@ -66,7 +65,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/872/789.htm)
 
 ![](img/f00ba452571c8d3ec008d93d16a4c3ef.png)
 
-硅谷AI人才争夺战激烈，Meta 小扎为挖 Andrew Tulloch 开出 4 年 10 亿美元、6 年 15 亿美元薪酬包，还联系 Thinking Machines Lab 约 50 名员工中的十几人，均被拒。Tulloch 履历出色，曾参与 GPT 相关研发。小扎接触超 100 名 OpenAI 员工，仅招入 10 人。科技四巨头今年已花 3440 亿美金投入 AI 竞赛。各方押注 AGI 突破，目前 OpenAI 和谷歌领先 。
+硅谷AI人才争夺战激烈，Meta 小扎为挖 Andrew Tulloch 开出 4 年 10 亿美元、6 年 15 亿美元薪酬包，还联系 Thinking Machines Lab 约 50 名员工中的十几人，均被拒。Tulloch 履历出色，曾参与 GPT 相关研发。小扎接触超 100 名 OpenAI 员工，仅招入 10 人。科技四巨头今年已花 3440 亿美金投入 AI 竞赛。各方押注 AGI 突破，目前 OpenAI 和谷歌领先。
 
 ### 💡 弹尽粮绝！陶哲轩自曝遭资金断供，美顶尖数学圣殿IPAM命悬一线
 
@@ -74,4 +73,4 @@ IT之家 | [阅读原文](https://www.ithome.com/0/872/789.htm)
 
 ![](img/461442bcae2654c72feff5e1c1a50409.png)
 
-美国政府以种族偏见为由，通过NSF、NIH等机构切断UCLA联邦科研资助。菲尔兹奖得主陶哲轩个人经费暂停，团队“断粮”，NSF资助的六大研究所之一IPAM也命悬一线，经费仅能维持数月。陶哲轩愤怒发声，认为此举鲁莽无规则。UCLA校长称这是重大损失。IPAM成就显著，曾催生“压缩感知”等技术。按计划陶哲轩今年将接任IPAM特别项目主任，网友对此事热议 。
+美国政府以种族偏见为由，通过NSF、NIH等机构切断UCLA联邦科研资助。菲尔兹奖得主陶哲轩个人经费暂停，团队“断粮”，NSF资助的六大研究所之一IPAM也命悬一线，经费仅能维持数月。陶哲轩愤怒发声，认为此举鲁莽无规则。UCLA校长称这是重大损失。IPAM成就显著，曾催生“压缩感知”等技术。按计划陶哲轩今年将接任IPAM特别项目主任，网友对此事热议。

@@ -1,68 +1,70 @@
+
 # SQL-Agent：实现SQL生成、翻译
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/F2FQdEkuRo51uMxz8DrclG9bneb](https://v11enp9ok1h.feishu.cn/docx/F2FQdEkuRo51uMxz8DrclG9bneb)
 
-### **实现案例**
+## 实现案例
 
 ![](img/339da4e649d209be1a6f0a3968b94642.png)
 
-### 实现数据SQL-Agent
+## 实现数据SQL-Agent
 
 这里我们实现了一个简单的SQL助手，由于我们的目的主要是SQL生成、翻译、优化，所以我们制定的Action是一个空Action。
 
 ```
-&quot;&quot;&quot;SQL Assistant Agent.
+"""SQL Assistant Agent.
 Use RAG and Schema-Linking, which can generate,translate,
 and correct SQL based on user questions.
-&quot;&quot;&quot;
+"""
 
 import asyncio
 from dbgpt.agent import BlankAction, ConversableAgent, DynConfig, ProfileConfig
 
 class SQLAssistantAgent(ConversableAgent):
-&quot;&quot;&quot;SQL Agent Use RAG and Schema-Linking.&quot;&quot;&quot;
+    """SQL Agent Use RAG and Schema-Linking."""
 
-profile: ProfileConfig = ProfileConfig(
-name=DynConfig(
-&quot;kevin&quot;,
-category=&quot;agent&quot;,
-key=&quot;dbgpt_agent_expand_sql_expert_name&quot;,),
-),
-role=DynConfig(
-&quot;SQLExpert&quot;, category=&quot;agent&quot;, key=&quot;dbgpt_agent_expand_sql_expert_name_role&quot;
-),
-goal=DynConfig(
-&quot;SQL generation, SQL translate, SQL diagnostics&quot;,
-category=&quot;agent&quot;,
-key=&quot;dbgpt_agent_expand_sql_expert_name_goal&quot;,
-),constraints=DynConfig(
-[
-&quot;&quot;&quot;You are a SQL expert who can generate, translate,and correct SQL based on user questions.If the user&#x27;s input is not related to SQL,you need to prompt the user to output SQL-related content.&quot;&quot;&quot;],category=&quot;agent&quot;,key=&quot;dbgpt_agent_expand_sql_expert_profile_constraints&quot;,),desc=DynConfig(&quot;&quot;&quot;You are a SQL expert who can generate, translate,and correct SQL based on user questions.&quot;&quot;&quot;,category=&quot;agent&quot;,key=&quot;dbgpt_agent_expand_sql_expert_profile_desc&quot;,),)
-def __init__(self, **kwargs):&quot;&quot;&quot;Create a new SQLAssistantAgent.&quot;&quot;&quot;super().__init__(**kwargs)self._init_actions([BlankAction])
+    profile: ProfileConfig = ProfileConfig(
+        name=DynConfig(
+            "kevin",
+            category="agent",
+            key="dbgpt_agent_expand_sql_expert_name",),
+        ),
+    role=DynConfig(
+        "SQLExpert", category="agent", key="dbgpt_agent_expand_sql_expert_name_role",
+    ),
+    goal=DynConfig(
+        "SQL generation, SQL translate, SQL diagnostics",
+        category="agent",
+        key="dbgpt_agent_expand_sql_expert_name_goal",
+    ), constraints=DynConfig(
+        [
+            """You are a SQL expert who can generate, translate,and correct SQL based on user questions.If the user's input is not related to SQL,you need to prompt the user to output SQL-related content."""
+        ], category="agent", key="dbgpt_agent_expand_sql_expert_profile_constraints",), desc=DynConfig("""You are a SQL expert who can generate, translate,and correct SQL based on user questions.""", category="agent", key="dbgpt_agent_expand_sql_expert_name_desc",),)
+    def __init__(self, **kwargs):"""Create a new SQLAssistantAgent."""super().__init__(**kwargs)self._init_actions([BlankAction])
 ```
 
 SQL Agent 还需要一个数据库连接作为依赖的资源，这里我们创建一个SQLite表：
 
 ```
 def _create_temporary_connector():
-    &quot;&quot;&quot;Create a temporary database connector for testing.&quot;&quot;&quot;
+    """Create a temporary database connector for testing."""
     from dbgpt.datasource.rdbms.conn_sqlite import SQLiteTempConnector
 
     connector = SQLiteTempConnector.create_temporary_db()
     connector.create_temp_tables(
         {
-            &quot;user&quot;: {
-                &quot;columns&quot;: {
-                    &quot;id&quot;: &quot;INTEGER PRIMARY KEY&quot;,
-                    &quot;name&quot;: &quot;TEXT&quot;,
-                    &quot;age&quot;: &quot;INTEGER&quot;,
+            "user": {
+                "columns": {
+                    "id": "INTEGER PRIMARY KEY",
+                    "name": "TEXT",
+                    "age": "INTEGER",
                 },
-                &quot;data&quot;: [
-                    (1, &quot;Tom&quot;, 10),
-                    (2, &quot;Jerry&quot;, 16),
-                    (3, &quot;Jack&quot;, 18),
-                    (4, &quot;Alice&quot;, 20),
-                    (5, &quot;Bob&quot;, 22),
+                "data": [
+                    (1, "Tom", 10),
+                    (2, "Jerry", 16),
+                    (3, "Jack", 18),
+                    (4, "Alice", 20),
+                    (5, "Bob", 22),
                 ],
             }
         }
@@ -79,24 +81,24 @@ from dbgpt.agent.resource import RDBMSConnectorResource
 from dbgpt.model.proxy import OpenAILLMClient
 # 假设 _create_temporary_connector 函数在同一作用域或已正确导入，这里补充下函数定义（如果之前没完整提供）
 def _create_temporary_connector():
-    &quot;&quot;&quot;Create a temporary database connector for testing.&quot;&quot;&quot;
+    """Create a temporary database connector for testing."""
     from dbgpt.datasource.rdbms.conn_sqlite import SQLiteTempConnector
 
     connector = SQLiteTempConnector.create_temporary_db()
     connector.create_temp_tables(
         {
-            &quot;user&quot;: {
-                &quot;columns&quot;: {
-                    &quot;id&quot;: &quot;INTEGER PRIMARY KEY&quot;,
-                    &quot;name&quot;: &quot;TEXT&quot;,
-                    &quot;age&quot;: &quot;INTEGER&quot;,
+            "user": {
+                "columns": {
+                    "id": "INTEGER PRIMARY KEY",
+                    "name": "TEXT",
+                    "age": "INTEGER",
                 },
-                &quot;data&quot;: [
-                    (1, &quot;Tom&quot;, 10),
-                    (2, &quot;Jerry&quot;, 16),
-                    (3, &quot;Jack&quot;, 18),
-                    (4, &quot;Alice&quot;, 20),
-                    (5, &quot;Bob&quot;, 22),
+                "data": [
+                    (1, "Tom", 10),
+                    (2, "Jerry", 16),
+                    (3, "Jack", 18),
+                    (4, "Alice", 20),
+                    (5, "Bob", 22),
                 ],
             }
         }
@@ -106,11 +108,11 @@ async def main():
     from dbgpt.agent import SQLAssistantAgent  # 补充导入，原代码里用了但没显示导入
     agent_memory = AgentMemory()
 
-    llm_client = OpenAILLMClient(model_alias=&quot;gpt-3.5-turbo&quot;)
-    context: AgentContext = AgentContext(conv_id=&quot;sql_agent&quot;)
+    llm_client = OpenAILLMClient(model_alias="gpt-3.5-turbo")
+    context: AgentContext = AgentContext(conv_id="sql_agent")
 
     connector = _create_temporary_connector()
-    sqlite_resource = RDBMSConnectorResource(&quot;SQLite Database&quot;, connector=connector)
+    sqlite_resource = RDBMSConnectorResource("SQLite Database", connector=connector)
     user_proxy = await UserProxyAgent().bind(agent_memory).bind(context).build()
     sql_agent = (
         await SQLAssistantAgent()
@@ -124,12 +126,12 @@ async def main():
     await user_proxy.initiate_chat(
         recipient=sql_agent,
         reviewer=user_proxy,
-        message=&quot;What is the name and age of the user with age less than 18&quot;,
+        message="What is the name and age of the user with age less than 18",
     )
 
-    print(await agent_memory.gpts_memory.one_chat_completions(&quot;sql_agent&quot;))
+    print(await agent_memory.gpts_memory.one_chat_completions("sql_agent"))
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     asyncio.run(main())
 ```
 

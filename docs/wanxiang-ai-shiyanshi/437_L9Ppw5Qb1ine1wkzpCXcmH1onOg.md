@@ -1,22 +1,23 @@
+
 # 大厂AI实战应用案例库
 
 > 来源：[https://yunyinghui.feishu.cn/docx/HLZrdbRm9ot12PxX4gUcRzfOnYd](https://yunyinghui.feishu.cn/docx/HLZrdbRm9ot12PxX4gUcRzfOnYd)
 
-> **适用人群：****关注大厂****AI****实战应用人群**
+> **适用人群：**关注大厂AI实战应用人群
 
 > 首发时间：2023 年 12 月 22 日
 
 > 更新时间：2024 年 2 月 28 日
 
-> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 Ctrl +F/Command +F 的形式，搜索关键字/词，查找你想要的内容。
+> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 `Ctrl +F/Command +F` 的形式，搜索关键字/词，查找你想要的内容。
 
-> **持续更新大厂的****相关 ****AI**** 应用动态，实战案例，产品项目等内容，让大厂的****设计、产品、运营、技术亲自教你学习**AI，本内容永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。
+> **持续更新大厂的相关 AI 应用动态，实战案例，产品项目等内容，让大厂的设计、产品、运营、技术亲自教你学习 AI，本内容永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。**
 
 > **关联学习：**
 
-> [ChatGPT 学习手册](https://nujuo8y1qx.feishu.cn/docx/AdqEdlT52oBiawx6Vv2cc89DnLb?from=from_copylink)** **
+> [ChatGPT 学习手册](https://nujuo8y1qx.feishu.cn/docx/AdqEdlT52oBiawx6Vv2cc89DnLb?from=from_copylink)
 
-> [AIGC 学习手册](https://nujuo8y1qx.feishu.cn/docx/RleadAwrAo4O1FxhuoGcDV86nBe)** **
+> [AIGC 学习手册](https://nujuo8y1qx.feishu.cn/docx/RleadAwrAo4O1FxhuoGcDV86nBe)
 
 | # 目录导航 |  |  |  |  |
 | --- | --- | --- | --- | --- |
@@ -25,7 +26,7 @@
 | [**智行**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-VWBPdfNnLoA28Ix5nKxct2i6n5b) | [**携程**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-M0aedZUcjow2yBxMpLwcdpV8nXb) | [**高途**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-QUf4dLxGmod1OZxhmqncKW16nQg) | [**群核**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-H1KydhAKsoUtjkx1NOqccY2qnCb) | [**乐信**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-UmhpdjbOPoNDUUxZsxQcMzwlnKe) |
 | [**饿了么**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ISJkdmiOyoeTGpx3b5bct64tncc) | [**值得买**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ZGxpd6iuIorjekx0n21cmZFwn6d) | [**36kr**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-XnjHd5eWJoFP52xrCOAcAyManig) | [**知乎**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-TjZjdjawjoE8YhxC6F4cE34enZe) | [**📕**](https://yunyinghui.feishu.cn/wiki/L9Ppw5Qb1ine1wkzpCXcmH1onOg#part-ROA5dYia0oZLZmxaDh4cpHAxngc) |
 
-# 腾讯
+## 腾讯
 
 AIGC应用实践丨30秒生成可视化用户旅程地图&精益画布
 
@@ -35,13 +36,13 @@ AIGC应用实践丨30秒生成可视化用户旅程地图&精益画布
 
 [我用ChatGPT做用研？](https://mp.weixin.qq.com/s/CVmuMnKhbXQagHMKhUa8Jw)
 
-[腾讯云AI落地实战！如何用 Stable](https://www.uisdc.com/stable-diffusion-14) Diffusion 完成B端图标设计？
+[腾讯云AI落地实战！如何用 Stable Diffusion 完成B端图标设计？](https://www.uisdc.com/stable-diffusion-14)
 
 戴着口罩也能人脸识别，腾讯AI取得突破
 
 “你的AI侵犯了我的版权”：浅谈AIGC背后的版权保护问题
 
-# 阿里
+## 阿里
 
 AIGC浅尝，探索如何将它融入到营销创意设计中？
 
@@ -79,7 +80,7 @@ AI服饰新时代，唤醒你的想象力。
 
 产品观察丨淘宝想用AI打败📕
 
-# 百度
+## 百度
 
 AIGC与应用设计——百度MEUX x 北科大交互设计联合课题圆满落幕
 
@@ -89,7 +90,7 @@ AIGC与应用设计——百度MEUX x 北科大交互设计联合课题圆满落
 
 运营活动新姿势-生成式AI在暑期活动的实践
 
-# 网易
+## 网易
 
 AIGC|探索AIGC在网易严选中的应用
 
@@ -117,27 +118,27 @@ AI绘画怎么玩？Midjourney教程来啦！
 
 [网易如何用AI改造游戏](https://mp.weixin.qq.com/s/Ggyv_dJ0rq9s1kH__n88rw)
 
-[AIGC落地实战！Photoshop](https://www.uisdc.com/photoshop-beta) Beta智能绘图如何应用到海报设计中？
+[AIGC落地实战！Photoshop Beta智能绘图如何应用到海报设计中？](https://www.uisdc.com/photoshop-beta)
 
 AIGC大厂案例实战！如何用AI完成虚拟演播厅的设计方案？
 
 Midjourney 实战案例！KV设计从需求到落地全流程！
 
-# 字节
+## 字节
 
 抖音AI创作功能上线，来抖音成为AI艺术家
 
-# 快手
+## 快手
 
 AIGC 在商业运营设计中的探索与思考
 
-# 美团
+## 美团
 
 AIGC 设计探索 - 美团平台人物库的炼丹之旅
 
 [王兴出招，美团上线首款AI产品](https://mp.weixin.qq.com/s/v3gQw4zAtnEzTIG7gtXq6A)
 
-# 京东
+## 京东
 
 【京东到家】AIGC 实践案例总结
 
@@ -155,13 +156,13 @@ AI+UED思维革新与设计突破2.0
 
 【羚珑AI智绘营】分分钟带你拿捏SD中的色彩控制
 
-# 知乎
+## 知乎
 
 [知乎发布“知海图AI”中文大模型](https://mp.weixin.qq.com/s/2VJVhcnVka37je9O5gLR5A)，已开启内测，周源：AI是人类能力的扩增
 
 知乎推出“一起公考AI课”APP，再加码教育业务
 
-# 哈啰出行
+## 哈啰出行
 
 AIGC 应用体系-品牌 AI 资产搭建与应用
 
@@ -169,11 +170,11 @@ AIGC 应用体系-品牌 AI 资产搭建与应用
 
 深度解析如何推动与落地 AIGC 体系化应用-下篇
 
-# 58 同城
+## 58 同城
 
 我心目中的NO.1，实时绘图不用等，奶奶看了都会用
 
-[这是什么神仙模型？也太好看了吧！M](https://mp.weixin.qq.com/s/T62q7pZAlwOb68tvBq7Mxw)idjourney炼丹大法丨附风格模型库
+[这是什么神仙模型？也太好看了吧！Midjourney炼丹大法丨附风格模型库](https://mp.weixin.qq.com/s/T62q7pZAlwOb68tvBq7Mxw)
 
 Z时代“梗营销”之道，品牌如何借助AI造出圈热梗？
 
@@ -197,23 +198,23 @@ AI绘画实战案例！赶集直招如何用AI提高83%的出图效率？
 
 【喂饭级教程】AI工具在B端视觉设计中的落地应用
 
-# 智行
+## 智行
 
 智行多种 AIGC 工具实战应用解析
 
 [智行 AIGC 落地项目解析](https://mp.weixin.qq.com/s/eCTfIlaDdIr50oMdGdaWHQ)
 
-# 携程
+## 携程
 
 AI 浪潮下，设计师面临的机遇和挑战
 
-# 高途
+## 高途
 
 AIGC在运营设计中的探索和思考
 
-[高途25考研“产品数字化升级发布会”：升级六大备考](https://mp.weixin.qq.com/s/hpFEIdAiE4tMzcm_V45obg)动能，展示战略AIGC——AI考研数字人
+[高途25考研“产品数字化升级发布会”：升级六大备考动能，展示战略AIGC——AI考研数字人](https://mp.weixin.qq.com/s/hpFEIdAiE4tMzcm_V45obg)
 
-# **群核**
+## 群核
 
 群核｜AI在创意设计中的应用与探索
 
@@ -221,35 +222,35 @@ AIGC在运营设计中的探索和思考
 
 一起聊一聊AIGC产品的设计原则
 
-# 乐信
+## 乐信
 
 设计师失业？我们让AI做了一次双十一
 
-# 📕
+## 📕
 
 [📕，要量产AI美女了？](https://36kr.com/p/2250093721366150)
 
-# 饿了么
+## 饿了么
 
 营销场景下的AIGC实践经验分享
 
-# 值得买
+## 值得买
 
-[AIGC落地实战！什么值得买如何](https://www.uisdc.com/aigc-smzdm)用 Midjourney 提高工作效率？
+[AIGC落地实战！什么值得买如何用 Midjourney 提高工作效率？](https://www.uisdc.com/aigc-smzdm)
 
-# 36kr
+## 36kr
 
 【36氪】我用AI开了家“假”淘宝店，居然真的有人下单？
 
 ---
 
-# 大厂AI实战学习交流社群
+## 大厂AI实战学习交流社群
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+1. 持续关注并更新 AI 的相关资讯动态，研究报告，赚钱案例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2. 已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国`zyg90s`（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
-3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
+**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 
 **飞书交流群**
 
@@ -259,7 +260,7 @@ AIGC在运营设计中的探索和思考
 
 ![](img/f67bb71538f899abb20d9ece0e04faac.png)
 
-🛰️好友（ID：zhangyuguo94s）
+🛰️好友（ID：`zhangyuguo94s`）
 
 **扫码加🛰️入🛰️群**
 

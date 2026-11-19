@@ -1,14 +1,15 @@
-# 第 2 章 火柴人科普视频实战（心理学/养生赛道）​
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/Di1odGA6LoVaI7xxkKocjn18nsd](https://v11enp9ok1h.feishu.cn/docx/Di1odGA6LoVaI7xxkKocjn18nsd)
+# 第 2 章 火柴人科普视频实战（心理学/养生赛道）
+
+> 来源：[`https://v11enp9ok1h.feishu.cn/docx/Di1odGA6LoVaI7xxkKocjn18nsd`](https://v11enp9ok1h.feishu.cn/docx/Di1odGA6LoVaI7xxkKocjn18nsd)
 
 ## 简单介绍
 
 需要的软件
 
-+   剪映小助手：https://ts.fyshark.com/#/cozeToJianyin
++   剪映小助手：`https://ts.fyshark.com/#/cozeToJianyin`
 
-+   剪映（需要会员，盗版软件本教材不提供）：https://www.capcut.cn/
++   剪映（需要会员，盗版软件本教材不提供）：`https://www.capcut.cn/`
 
 生成的内容参考
 
@@ -18,7 +19,7 @@
 
 火柴人视频自动生成
 
-https://www.coze.cn/work_flow?space_id=7520088980953169947&workflow_id=7525478417917444106
+`https://www.coze.cn/work_flow?space_id=7520088980953169947&workflow_id=7525478417917444106`
 
 ### 试运行
 
@@ -42,7 +43,7 @@ https://www.coze.cn/work_flow?space_id=7520088980953169947&workflow_id=752547841
 
 > 一点心理博主主页：
 
-> https://www.xiaohongshu.com/user/profile/5d04e8810000000011002e56?xsec_token=AB6GDkPLIMCB35YxAJWQnL_yMOTfprZvDu0IOxHDqrBgI%3D&xsec_source=pc_search
+> `https://www.xiaohongshu.com/user/profile/5d04e8810000000011002e56?xsec_token=AB6GDkPLIMCB35YxAJWQnL_yMOTfprZvDu0IOxHDqrBgI%3D&xsec_source=pc_search`
 
 ![](img/9e234af145f1d2f8802b2c3740026133.png)
 
@@ -58,7 +59,7 @@ https://www.coze.cn/work_flow?space_id=7520088980953169947&workflow_id=752547841
 
 ![](img/926bbf01de41bd95ca3806056b446869.png)
 
-[心理学视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzKsbqCtNoeW1hxx2QGcKSednCf)
+[`心理学视频.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzKsbqCtNoeW1hxx2QGcKSednCf)
 
 ### 工作流成品展示
 
@@ -78,7 +79,7 @@ https://www.coze.cn/work_flow?space_id=7520088980953169947&workflow_id=752547841
 
 #### 打开coze官网：
 
-https://www.coze.cn/home
+`https://www.coze.cn/home`
 
 #### 创建工作流
 
@@ -108,7 +109,7 @@ https://www.coze.cn/home
 
 技能
 技能 1: 生成标题
-精准生成一个 6 - 8 字以内适合作为 3:4 竖版封面图中间标题的内容，标题需紧扣心理学主题，富有吸引力与话题性。例如：“为什么过得不快乐”。
+精准生成一个 6 - 8 字以内适合作为 3:4 竖版封面图中间标题的内容，标题需紧扣心理学主题，富有吸引力与话题性。例如：“为什么过得不快乐”.
 
 
 技能 2: 生成一个心理学的故事
@@ -164,7 +165,7 @@ https://www.coze.cn/home
 
 ##### 【语音朗读】模块的参数设置：
 
-调用【语音合成】插件  speech_synthesis
+调用【语音合成】插件 `speech_synthesis`
 
 ![](img/eae46a2477f11ee7ad72833fa4510722.png)
 
@@ -172,7 +173,7 @@ https://www.coze.cn/home
 
 语音模块是用来朗读字幕的，分镜脚本输出多个文案出来后，有多个字幕要朗读，所以这边采用批处理的方式处理
 
-同时也要设置好朗读速率：speed_radio 和音色：voice_id，
+同时也要设置好朗读速率：`speed_radio` 和音色：`voice_id`，
 
 ![](img/7311971125c2f052005b3eda64b98dcd.png)
 
@@ -186,7 +187,7 @@ https://www.coze.cn/home
 
 ##### 【图片生成】模块的参数设置：
 
-同理，图片也是需要批量生成，【图像生成模块】，生成的图需要抠图【cutout模块】，最后导入中英文字幕、图片放到画板上
+同理，图片也是需要批量生成，【图像生成模块】，生成的图需要抠图【`cutout`模块】，最后导入中英文字幕、图片放到画板上
 
 图片需要的3个模块：
 
@@ -234,9 +235,9 @@ https://www.coze.cn/home
 
 首先在【批处理】导入【图片模块】和【朗读模块】输出的素材
 
-接着在【输入】部分，img_url下拉选择的时候选择【easy_create_material】模块的图片url
+接着在【输入】部分，`img_url`下拉选择的时候选择【`easy_create_material`】模块的图片url
 
-audio_url同理
+`audio_url`同理
 
 ![](img/f838414996921e4d2339872ca833b308.png)
 

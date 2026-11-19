@@ -1,20 +1,21 @@
-# 「豆包Marscode体验官」AI加持的云端IDE——三种方法高效开发前后端聊天交互功能
+
+# 「豆包MarsCode体验官」AI加持的云端IDE——三种方法高效开发前后端聊天交互功能
 
 > 来源：[https://agijuejin.feishu.cn/docx/VvLRdEHGMoGDgixRRh6cPgAln1F](https://agijuejin.feishu.cn/docx/VvLRdEHGMoGDgixRRh6cPgAln1F)
-
+>
 > 作者：努力的小雨
-
+>
 > 链接：https://juejin.cn/post/7389912762044923904
-
+>
 > 来源：稀土掘金
-
+>
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-> 豆包 MarsCode 是一个集成了AI功能的编程助手和云端IDE，旨在提高开发效率和质量。它支持多种编程语言和IDE，提供智能代码补全、代码解释、单元测试生成和问题修复等功能，同时具备AI对话视图和开发工具。
+豆包 MarsCode 是一个集成了AI功能的编程助手和云端IDE，旨在提高开发效率和质量。它支持多种编程语言和IDE，提供智能代码补全、代码解释、单元测试生成和问题修复等功能，同时具备AI对话视图和开发工具。
 
 ## 豆包 MarsCode
 
-豆包 MarsCode 编程助手支持的 IDE: 支持Visual Studio Code 1.67.0及以上版本，以及JetBrains系列IDE，如IntelliJ IDEA、Pycharm等，版本要求为221.5080.210及以上。
+豆包 MarsCode 编程助手支持的 IDE：支持`Visual Studio Code` 1.67.0及以上版本，以及JetBrains系列IDE，如`IntelliJ IDEA`、`Pycharm`等，版本要求为221.5080.210及以上。
 
 豆包 MarsCode IDE 是一个云端 AI 集成开发环境(IDE)，具备原生 AI 编程助手，提供代码补全、生成、优化等功能，支持多种编程语言和框架，无需本地资源，实现随时随地的开发。
 
@@ -30,7 +31,7 @@
 
 #### 时间效率
 
-在整个流程中，毫无疑问，使用豆包 IDE 比起先装环境要快得多。程序员们最头疼的就是环境安装，特别是在老式电脑上，我甚至担心会浪费时间。因此，使用豆包 IDE 的直观感受是它快速而稳定。整个环境安装再加上熟悉豆包 IDE，总共花了不到一个小时就可以正常启动项目，其中大约30分钟用在了配置mvn依赖上。这个过程有点坑，难怪会耽误时间。但如果是一个正常的项目，我相信在30分钟内就能搞定。
+在整个流程中，毫无疑问，使用豆包 IDE 比起先装环境要快得多。程序员们最头疼的就是环境安装，特别是在老式电脑上，我甚至担心会浪费时间。因此，使用豆包 IDE 的直观感受是它快速而稳定。整个环境安装再加上熟悉豆包 IDE，总共花了不到一个小时就可以正常启动项目，其中大约30分钟用在了配置`mvn`依赖上。这个过程有点坑，难怪会耽误时间。但如果是一个正常的项目，我相信在30分钟内就能搞定。
 
 #### 代码质量
 
@@ -46,7 +47,7 @@
 
 使用云端 IDE 的主要优势之一是其适用于个人开发者，而大公司通常有自己的代码仓库。对于个人开发者而言，选择云端 IDE 编写开源项目再合适不过，特别是豆包 IDE 提供的资源分配非常充足。这意味着不必担心本地环境可能导致的宕机、电脑死机或磁盘损坏等问题。
 
-[然而，对我来说，稳定的网络连](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FStudiousXiaoYu%2Fspring-ai-demo)接是最关键的因素。在家里，访问 Github 时经常面临网络连接问题或速度极慢的情况，这对开发效率有显著影响。因此，我决定通过编写我的开源项目【spring-ai-demo】来深入体验豆包 IDE 的功能和性能。
+然而，对我来说，[稳定的网络连接](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FStudiousXiaoYu%2Fspring-ai-demo)是最关键的因素。在家里，访问 Github 时经常面临网络连接问题或速度极慢的情况，这对开发效率有显著影响。因此，我决定通过编写我的开源项目【spring-ai-demo】来深入体验豆包 IDE 的功能和性能。
 
 #### 快速导入GitHub 仓库
 
@@ -66,17 +67,17 @@
 
 #### 依赖环境
 
-拿到新项目后，我们的操作步骤与通常一样，唯一的不同是无需搭建运行环境，只需下载依赖即可。更方便的是，我们可以直接从阿里云仓库下载依赖，无需单独配置mvn的setting文件，这一点特别贴心。
+拿到新项目后，我们的操作步骤与通常一样，唯一的不同是无需搭建运行环境，只需下载依赖即可。更方便的是，我们可以直接从阿里云仓库下载依赖，无需单独配置`mvn`的`setting`文件，这一点特别贴心。
 
 这一步直接报错了。按照官方的依赖包下载的话，在阿里云镜像中是找不到的，具体如下所示：
 
 ![](img/f4fb046fb84f039a3ba941efb32ea1b0.png)
 
-> tips：在pom中指定了repositories仓库地址，也不会生效，可以认为只能去阿里云仓库
+> tips：在`pom`中指定了`repositories`仓库地址，也不会生效，可以认为只能去阿里云仓库
 
 ![](img/64b784c4217772a15c45e73dedc98b24.png)
 
-当即使指定了下载包仓库，仍然无法成功时，我出于好奇查看了阿里的镜像，发现其不存在。进一步调查后发现，阿里云的镜像groupid已经更改。因此，我也需要相应地进行修改：
+当即使指定了下载包仓库，仍然无法成功时，我出于好奇查看了阿里的镜像，发现其不存在。进一步调查后发现，阿里云的镜像`groupid`已经更改。因此，我也需要相应地进行修改：
 
 修改后，终于成功实现了正常的下载功能，但我仍不清楚是否损失了哪些功能。这可能被视为一个缺陷，因为我的项目是开源的。如果某些小公司内部依赖于私有仓库的包，那么他们可能会遇到问题。
 
@@ -86,11 +87,11 @@
 
 ![](img/c386d7bb52b2bac0edfcff231d5059cc.png)
 
-确保在启动任何maven项目之前，务必确保项目已成功编译完成，否则可能会导致出现各种文件找不到的错误。
+确保在启动任何`maven`项目之前，务必确保项目已成功编译完成，否则可能会导致出现各种文件找不到的错误。
 
 ![](img/44da598cd68a1537223e422ffaed948e.png)
 
-同样地，你也可以在这里配置适合自己习惯的操作方式：如clean install -DskipTests=true
+同样地，你也可以在这里配置适合自己习惯的操作方式：如`clean install -DskipTests=true`
 
 #### 体验项目
 
@@ -100,7 +101,7 @@
 
 这里是我们项目真正使用的端口监听。如果需要详细了解，请查看项目配置文件中的相关信息。好的，让我们进行访问。
 
-当我们查看 web-view 时，请将输入的路径转换成对应的路径。举例来说，如果我直接访问 swagger-ui，那么输入的路径就是 doc.html。
+当我们查看`web-view`时，请将输入的路径转换成对应的路径。举例来说，如果我直接访问`swagger-ui`，那么输入的路径就是`doc.html`。
 
 ![](img/b82e2224fb71482ff2be27f7a8fee732.png)
 
@@ -130,19 +131,19 @@
 
 为了解决这些问题，函数调用机制应运而生。这种机制允许你注册自定义函数，将大型语言模型连接到外部系统的API。这些外部系统能够为LLM提供实时数据，并代表它执行数据处理操作。
 
-Spring AI简化了支持函数调用所需的代码编写。它处理了函数调用的对话流程，使你能够轻松地注册函数。你只需提供函数的Bean名称作为a，然后在提示选项中选择该名称以激活该函数。此外，您还可以在单个提示中定义和引用多个函数。
+Spring AI简化了支持函数调用所需的代码编写。它处理了函数调用的对话流程，使你能够轻松地注册函数。你只需提供函数的`Bean`名称作为`a`，然后在提示选项中选择该名称以激活该函数。此外，您还可以在单个提示中定义和引用多个函数。
 
 ![](img/b47013db141dbefcb41aadfb41f38c19.png)
 
-1.  执行聊天请求及函数定义信息的处理，例如解释模型何时应该调用函数以及函数的输入参数模式。
+1. 执行聊天请求及函数定义信息的处理，例如解释模型何时应该调用函数以及函数的输入参数模式。
 
-1.  模型决定调用函数时，会传递输入参数给相应的函数，并将输出结果返回给模型。
+1. 模型决定调用函数时，会传递输入参数给相应的函数，并将输出结果返回给模型。
 
-1.  Spring AI 管理此对话流程，将函数调用分发给适当的函数，并将结果传送回模型。
+1. Spring AI 管理此对话流程，将函数调用分发给适当的函数，并将结果传送回模型。
 
-1.  模型可以执行多个函数调用以获取所需的所有信息。
+1. 模型可以执行多个函数调用以获取所需的所有信息。
 
-1.  一旦收集到所有必要信息，模型将生成响应。
+1. 一旦收集到所有必要信息，模型将生成响应。
 
 #### 补全代码
 
@@ -196,7 +197,7 @@ Spring AI简化了支持函数调用所需的代码编写。它处理了函数�
 
 ![](img/73e4d70506510ff57d34f4761e0614e3.png)
 
-当你进入这个页面时，你会发现官方提供了一份贴心的README文件，可以帮助你快速了解如何启动这个程序。
+当你进入这个页面时，你会发现官方提供了一份贴心的`README`文件，可以帮助你快速了解如何启动这个程序。
 
 #### UI交互
 
@@ -212,7 +213,7 @@ Spring AI简化了支持函数调用所需的代码编写。它处理了函数�
 
 接着立即观察生成的结果。
 
-> tips：这里发现个问题，webview无法显示alter弹窗信息，不过复制出来在浏览器中使用即可，无伤大雅
+> tips：这里发现个问题，webview无法显示`alter`弹窗信息，不过复制出来在浏览器中使用即可，无伤大雅
 
 ![](img/6c2359582f7b5f8bb47827e8e4df01d6.png)
 
@@ -232,7 +233,7 @@ Spring AI简化了支持函数调用所需的代码编写。它处理了函数�
 
 找了半天，确实没找到满意的解决方案。于是我向各位前端大佬请教了一下，毕竟我在前端框架方面几乎没有经验。他们根据我的需求推荐了一个非常强大的一站式UI解决方案——阿里的chatSDK，你可以在以下地址找到它：
 
-[chatbot.console.ali](https://link.juejin.cn?target=https%3A%2F%2Fchatbot.console.aliyun.com%2FChatSDK%23%2Fsdk)yun.com/ChatSDK#/sd…
+[chatbot.console.aliyun.com/ChatSDK#/sdk](https://link.juejin.cn?target=https%3A%2F%2Fchatbot.console.aliyun.com%2FChatSDK%23%2Fsdk)
 
 ![](img/eefbd6e13ba053d7c8ddf6e6209eec2c.png)
 
@@ -242,7 +243,7 @@ Spring AI简化了支持函数调用所需的代码编写。它处理了函数�
 
 #### Rsbuild
 
-没错，就是指的rsbuild。虽然文档写得很详细，但我还是去看了如何设置index.html。结果发现操作很简单，只需要简单配置一下就行。可能是因为rsbuild并不像webpack那样流行，所以网上关于它的配置信息不多，我一直找不到相关的资料。
+没错，就是指的rsbuild。虽然文档写得很详细，但我还是去看了如何设置`index.html`。结果发现操作很简单，只需要简单配置一下就行。可能是因为rsbuild并不像webpack那样流行，所以网上关于它的配置信息不多，我一直找不到相关的资料。
 
 ![](img/17db64bb9831a0a90148eae5ffdfa052.png)
 
@@ -256,7 +257,7 @@ Rsbuild，由字节跳动推出，旨在构建一个开放的技术生态系统�
 
 因此，首先，Rsbuild 拥有更高的构建性能，能够提供比基于 Webpack 的 Create React App 和 Vue CLI 等工具高达 5 到 10 倍的效率，同时还具备更为轻量的依赖体积。其次，Rsbuild 与豆包一样是属于一家公司的产品，所以成为了一个优选的选择。
 
-这里唯一的不足是社区问题太少，当我遇到错误时，很难找到解决方法，只能自己苦苦探索，甚至要通过Google搜索来解决。有时甚至连关键字【Rsbuild+问题】都无法搜索到相关信息。这方面值得进一步优化。
+这里唯一的不足是社区问题太少，当我遇到错误时，很难找到解决方法，只能自己苦苦探索，甚至要通过Google搜索来解决。有时甚至连关键字Rsbuild+问题都无法搜索到相关信息。这方面值得进一步优化。
 
 其实一句话即可。我们去看下去
 
@@ -268,24 +269,24 @@ Rsbuild，由字节跳动推出，旨在构建一个开放的技术生态系统�
 
 可以看到，所有必要的内容已经成功添加到系统中。接下来，我们将继续开发以实现跳转到聊天页面的功能。首先，我们需要完善各种路由的配置，确保一切就绪后再继续进行跳转功能的开发。这一步骤只需要完成一个小组件即可。
 
-```
-import React from &#x27;react&#x27;;
-import ReactDOM from &#x27;react-dom/client&#x27;;
-import App from &#x27;./App&#x27;;
-import ChatHome from &#x27;../components/chat&#x27;;
-import { BrowserRouter as Router, Routes, Route } from &#x27;react-router-dom&#x27;
-const root = ReactDOM.createRoot(document.getElementById(&#x27;root&#x27;)!);
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import ChatHome from '../components/chat';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
-  &lt;React.StrictMode&gt; 
-    &lt;Router&gt;
-        &lt;Routes&gt;
-            &lt;Route path=&#x27;/talk&#x27; element={&lt;ChatHome /&gt;}&gt;&lt;/Route&gt;
-            &lt;Route path=&#x27;/&#x27; element={&lt;App /&gt;}&gt;&lt;/Route&gt;
-        &lt;/Routes&gt;
-    &lt;/Router&gt;
-  &lt;/React.StrictMode&gt;,
+  <React.StrictMode>
+    <Router>
+        <Routes>
+            <Route path='/talk' element={<ChatHome />}></Route>
+            <Route path='/' element={<App />}></Route>
+        </Routes>
+    </Router>
+  </React.StrictMode>,
 );
-```
 
 当需要添加链接时，剩下的任务就是在合适的位置插入超链接。可以简单地使用代码自动补全完成这个任务。
 
@@ -295,30 +296,30 @@ root.render(
 
 ![](img/8e87b2b39acc0053d66d480908a2a7bf.png)
 
-#### 优化后端
+## 优化后端
 
 接下来，我们将继续对接之前我们开发的spring-ai项目，以实现一个真正交互式的界面。
 
 ![](img/c60040ded4cd7ccea19a7af29fb410dc.png)
 
-那么为什么不能直接使用record返回呢？因为前端不仅仅支持文本，还有其他方案。所以还是自己写吧。总之，目前即便是AI也可能会出错，即使指定返回特定格式，也不一定正确。
+那么为什么不能直接使用`record`返回呢？因为前端不仅仅支持文本，还有其他方案。所以还是自己写吧。总之，目前即便是AI也可能会出错，即使指定返回特定格式，也不一定正确。
 
 具体修改后如下：
 
 ```
-@PostMapping(&quot;/ai&quot;)
-ChatDataPO generationByText(@RequestParam(&quot;userInput&quot;)  String userInput) {
+@PostMapping("/ai")
+ChatDataPO generationByText(@RequestParam("userInput") String userInput) {
     String content = this.myChatClientWithSystem.prompt()
                 .user(userInput)
                 .call()
                 .content();
-    log.info(&quot;content: {}&quot;, content);
-    ChatDataPO chatDataPO = ChatDataPO.builder().code(&quot;text&quot;).data(ChildData.builder().text(content).build()).build();;
+    log.info("content: {}", content);
+    ChatDataPO chatDataPO = ChatDataPO.builder().code("text").data(ChildData.builder().text(content).build()).build();;
     return chatDataPO;
 }
 ```
 
-在启动后端的spring-ai-demo项目后，我们可以复制networking目录下的URL路径。这样做是为了确保前后端项目能够同时成功启动。
+在启动后端的spring-ai-demo项目后，我们可以复制`networking`目录下的URL路径。这样做是为了确保前后端项目能够同时成功启动。
 
 ![](img/c6573a35f58a2f82feee9b15e8d75f2e.png)
 
@@ -326,15 +327,15 @@ ChatDataPO generationByText(@RequestParam(&quot;userInput&quot;)  String userInp
 
 ```
 send: function send(msg) {
-      let sessionId = &#x27;M9u913BFyxIuTdRv7O73nx9SfkWgerhk&#x27;;
+      let sessionId = 'M9u913BFyxIuTdRv7O73nx9SfkWgerhk';
 
       return {
-        url: &#x27;https://jtdedyc1-kbb5pits-q02qbpq08o1p.c1.mcprev.cn/ai&#x27;,
+        url: 'https://jtdedyc1-kbb5pits-q02qbpq08o1p.c1.mcprev.cn/ai',
         data: {
           userInput: msg.content.text,
           // sessionId: sessionId,
         },
-        method: &#x27;POST&#x27;
+        method: 'POST'
       };
     }
 ```
@@ -345,7 +346,7 @@ send: function send(msg) {
 
 ![](img/a7b1e6ef422c7644fdd0e1a83714ebbd.png)
 
-### Python
+## Python
 
 我们再创建一个新的项目，这次以Python为模板，为了确保项目从一开始就符合我们的需求，我们需要对初始模板进行一些调整。首先，我们将删除原有的代码，因为它们仅是构建一个基础的Python HTTP服务项目的基础，而并非我们项目所需的具体功能。
 
@@ -353,13 +354,13 @@ send: function send(msg) {
 
 对于那些像我一样对复杂的前端代码感到畏惧的开发者来说，Streamlit无疑是一个巨大的福音。它简化了开发流程，让我们能够专注于应用的核心功能和逻辑，而无需深陷前端开发。
 
-#### streamlit
+### streamlit
 
 在这次实操中，我们将跳过那些深奥的理论知识，将全部的注意力集中在实际的操作和应用上。
 
 首先，我们需要确保基础环境已经搭建好。幸运的是，基础环境的搭建工作已经顺利完成，我们不需要再为此花费额外的时间和精力。接下来，我们需要做的就是安装一些必要的开发环境即可：
 
-> pip install streamlit
+> `pip install streamlit`
 
 在进行项目开发的过程中，我们常常会遇到需要从外部获取各种资源和依赖的情况。豆包IDE默认已经不再是官方源了，而是国内的仓库。、
 
@@ -374,55 +375,55 @@ import time
 def response_generator():
     response = random.choice(
         [
-            &quot;Hello there! How can I assist you today?&quot;,
-            &quot;Hi, human! Is there anything I can help you with?&quot;,
-            &quot;Do you need help?&quot;,
+            "Hello there! How can I assist you today?",
+            "Hi, human! Is there anything I can help you with?",
+            "Do you need help?",
         ]
     )
     for word in response.split():
-        yield word + &quot; &quot;
+        yield word + " "
         time.sleep(0.05)
 
-st.title(&quot;Simple chat&quot;)
+st.title("Simple chat")
 
 # Initialize chat history
-if &quot;messages&quot; not in st.session_state:
+if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
-    with st.chat_message(message[&quot;role&quot;]):
-        st.markdown(message[&quot;content&quot;])
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
 # Accept user input
-if prompt := st.chat_input(&quot;What is up?&quot;):
+if prompt := st.chat_input("What is up?"):
     # Add user message to chat history
-    st.session_state.messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt})
+    st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user message in chat message container
-    with st.chat_message(&quot;user&quot;):
+    with st.chat_message("user"):
         st.markdown(prompt)
 
     # Display assistant response in chat message container
-    with st.chat_message(&quot;assistant&quot;):
+    with st.chat_message("assistant"):
         response = st.write_stream(response_generator())
     # Add assistant response to chat history
-    st.session_state.messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: response})
+    st.session_state.messages.append({"role": "assistant", "content": response})
 ```
 
-> streamlit run main.py
+> `streamlit run main.py`
 
 在启动Streamlit项目的过程中，我们直接选择使用命令行工具来执行，而不是依赖于图形界面的“运行”按钮。
 
-#### 后端优化
+### 后端优化
 
 我们之前的文章开发过程基于对接大模型的。而这一次，我们计划采用Spring-AI后台进行对接，以开发实时交互聊天功能。
 
 首先，我们需要对代码进行相应的修改。
 
 ```
-@PostMapping(&quot;/ai-stream&quot;)
-Flux&lt;String&gt; generationByStream(@RequestParam(&quot;userInput&quot;) String userInput) {
-    Flux&lt;String&gt; output = chatClient.prompt()
+@PostMapping("/ai-stream")
+Flux<String> generationByStream(@RequestParam("userInput") String userInput) {
+    Flux<String> output = chatClient.prompt()
             .user(userInput)
             .stream()
             .content();
@@ -430,7 +431,7 @@ Flux&lt;String&gt; generationByStream(@RequestParam(&quot;userInput&quot;) Strin
 }
 ```
 
-#### 代码生成
+### 代码生成
 
 启动成功后，我们要求AI协助生成请求代码。
 
@@ -438,11 +439,11 @@ Flux&lt;String&gt; generationByStream(@RequestParam(&quot;userInput&quot;) Strin
 
 ```
 def response_generator(prompt):
-    url = &#x27;https://fq5jh3sk-kr95txxo-prhof0hgd4fs.c1.mcprev.cn/ai-stream&#x27;
-    url += &#x27;?userInput=&#x27; + prompt
+    url = 'https://fq5jh3sk-kr95txxo-prhof0hgd4fs.c1.mcprev.cn/ai-stream'
+    url += '?userInput=' + prompt
     headers = {
-        &#x27;Accept&#x27;: &#x27;*/*&#x27;,
-        &#x27;Content-Type&#x27;: &#x27;application/x-www-form-urlencoded&#x27;
+        'Accept': '*/*',
+        'Content-Type': 'application/x-www-form-urlencoded'
     }
 
     # 发送POST请求
@@ -455,9 +456,9 @@ def response_generator(prompt):
         for chunk in response.iter_content(chunk_size=1024):
             if chunk:
                 # 在这里处理你的业务逻辑，例如打印或者其他操作
-                yield chunk.decode(&#x27;utf-8&#x27;)  # 假设服务器返回UTF-8编码的文本
+                yield chunk.decode('utf-8')  # 假设服务器返回UTF-8编码的文本
     else:
-        print(f&quot;Error fetching data: {response.status_code}&quot;)
+        print(f"Error fetching data: {response.status_code}")
 ```
 
 > tips：这里需要注意的是，请不要在后端调用其他豆包启动的项目，因为这样可能会被系统拦截。不像前端页面那样可以直接跳转，后端如果直接调用 API 是行不通的。因此，我在本地启动了一次联调。

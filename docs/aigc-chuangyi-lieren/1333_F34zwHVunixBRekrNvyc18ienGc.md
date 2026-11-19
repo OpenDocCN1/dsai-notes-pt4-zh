@@ -1,3 +1,4 @@
+
 # 20241210-OpenAI Day 3/12：Sora正式发布，归来仍是王者！
 
 > 来源：[https://aigcreative.feishu.cn/docx/IinGd0zEMoPNedx9vsVcO1FZnsh](https://aigcreative.feishu.cn/docx/IinGd0zEMoPNedx9vsVcO1FZnsh)
@@ -26,7 +27,7 @@
 
 Sora，归来依旧是王者！
 
-# 全新的AI视频工具
+## 全新的AI视频工具
 
 Sora Turbo不仅加速了视频生成，它还带来了更丰富的创作工具。
 
@@ -50,7 +51,7 @@ Style presets 则像滤镜一样，为你的视频赋予独特的审美调性。
 
 这一整套组合拳，让不懂视频制作的新人有了“秒变导演”的底气，也给专业创作者多了玩出花样的空间。
 
-# 订阅使用
+## 订阅使用
 
 对于ChatGPT Plus和Pro用户来说，Sora Turbo的发布无疑是天大的好消息。OpenAI 将 Sora 融合进 ChatGPT Plus 与 ChatGPT Pro 两种订阅方案中。
 
@@ -70,7 +71,7 @@ Style presets 则像滤镜一样，为你的视频赋予独特的审美调性。
 
 ![](img/1fb4b3e8c0c2ff5d2ee5d7105e1d8bc8.png)
 
-# **安全与隐私**
+## 安全与隐私
 
 当然，高度自由的工具也意味着潜在风险。OpenAI 深知这一点，这也可能是迟迟未能发布的原因，为此在数据训练和生成环节中设立了多重安全防线。
 
@@ -80,7 +81,7 @@ Style presets 则像滤镜一样，为你的视频赋予独特的审美调性。
 
 生成的视频中还嵌有 C2PA 元数据，确保来源可追溯，一旦出现不当使用，相关责任划分更加清晰。
 
-# AI与创意
+## AI与创意
 
 Sora 的问世，不仅为创意界添了一把火，更让那些渴望突破视觉表达局限的人找到新武器。
 
@@ -94,7 +95,7 @@ Sora 的问世，不仅为创意界添了一把火，更让那些渴望突破视
 
 现在，Sora Turbo正以其卓越的性能，在AI视频发热舞台上大放异彩。
 
-目前，Sora已经启用了全新域名https://sora.com/，可以制作各种视频了。
+目前，Sora已经启用了全新域名`https://sora.com/`，可以制作各种视频了。
 
 服务器被挤爆了，进不去的，只能说，再等等。Altman也在 X 上发帖称，由于需求高于预期，他们暂停了视频生成器 Sora 的新注册，并且视频生成速度暂时会变慢。
 
@@ -102,7 +103,7 @@ Sora 的问世，不仅为创意界添了一把火，更让那些渴望突破视
 
 ![](img/97f4903472fbdcf35aa6a29c6203f9a6.png)
 
-Sora一发布，就有网友催Midjourney了，你懂的~~haha
+Sora一发布，就有网友催Midjourney了，你懂的haha
 
 ![](img/fc2f6fcbe387c3ec285fb9c4d0fe1d52.png)
 

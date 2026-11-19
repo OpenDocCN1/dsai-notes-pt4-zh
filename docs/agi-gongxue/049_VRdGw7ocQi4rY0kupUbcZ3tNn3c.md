@@ -1,3 +1,4 @@
+
 # Deepseek+知识库的数据安全问题
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/O78UdB6sqo3AuDxPjMZcUNYGnSd](https://vcn0zlxse9ua.feishu.cn/docx/O78UdB6sqo3AuDxPjMZcUNYGnSd)
@@ -6,25 +7,25 @@
 
 本地部署模型，已经可以保障本地安全了
 
-LLM：ollama本地
+LLM：`ollama`本地
 
-嵌入模型：ollama本地
+嵌入模型：`ollama`本地
 
 知识库还有个重点就是向量数据库，每个知识库不一样，但平台安装后都会附带默认一个向量数据库
 
 ## Cherry Studio 知识库
 
-1.  **数据保障**
+### 数据保障
 
-+   **多种备份方案**：支持本地备份、WebDAV 备份和定时备份，确保数据安全。
+- **多种备份方案**：支持本地备份、WebDAV 备份和定时备份，确保数据安全。
 
-+   **数据安全**：支持全本地场景使用，结合本地大模型，避免数据泄漏风险。
+- **数据安全**：支持全本地场景使用，结合本地大模型，避免数据泄漏风险。
 
 在 Cherry Studio 知识库中添加的数据全部存储在本地，在添加过程中会复制一份文档放在 Cherry Studio 数据存储目录
 
 ![](img/40ddc76ebf39cb191684232d36dc803a.png)
 
-向量数据库：https://turso.tech/libsql
+向量数据库：`https://turso.tech/libsql`
 
 当文档被添加到 Cherry Studio 知识库之后，文件会被切分为若干个片段，然后这些片段会交给嵌入模型进行处理
 
@@ -34,7 +35,7 @@ LLM：ollama本地
 
 ## 其他的知识库
 
-和CherryStudio是类似的
+和 CherryStudio 是类似的
 
 ### Ragflow
 
@@ -44,7 +45,7 @@ LLM：ollama本地
 
 默认集成 Elasticsearch
 
-+   可切换至 Infinity（千亿级向量支持）
+- 可切换至 Infinity（千亿级向量支持）
 
 #### 其他
 
@@ -54,6 +55,6 @@ LLM：ollama本地
 
 #### 向量库
 
-默认LanceDB
+默认 LanceDB
 
 ## 总结：所有内容本地化后，安全就掌控在电脑上

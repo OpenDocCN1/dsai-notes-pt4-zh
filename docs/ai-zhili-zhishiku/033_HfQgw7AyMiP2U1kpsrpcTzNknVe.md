@@ -1,12 +1,13 @@
+
 # 🇳🇱 荷兰
 
 > 来源：[https://docs.feishu.cn/docx/AEM2dYcRSoPKvsx6giucQRChnVf](https://docs.feishu.cn/docx/AEM2dYcRSoPKvsx6giucQRChnVf)
-
+>
 > **综述**
-
-> Legal 500介绍：[The Netherlands](https://www.legal500.com/guides/chapter/the-netherlands-artificial-intelligence/?_gl=1*1lvvu5z*_up*MQ..*_ga*MTY2NzczOTUxMy4xNzE3MTE5Mjc4*_ga_JFNJC5V947*MTcxNzExOTI3OC4xLjAuMTcxNzExOTI3OC4wLjAuMA..)[: ](https://www.legal500.com/guides/chapter/the-netherlands-artificial-intelligence/?_gl=1*1lvvu5z*_up*MQ..*_ga*MTY2NzczOTUxMy4xNzE3MTE5Mjc4*_ga_JFNJC5V947*MTcxNzExOTI3OC4xLjAuMTcxNzExOTI3OC4wLjAuMA..)Artificial Intelligence
-
-> G[l](https://www.globallegalinsights.com/practice-areas/ai-machine-learning-and-big-data-laws-and-regulations/netherlands/)obal Legal Insight 报告： AI, Machine Learning & Big Data Laws and Regulations 2024
+>
+> Legal 500介绍：[The Netherlands: Artificial Intelligence](https://www.legal500.com/guides/chapter/the-netherlands-artificial-intelligence/?_gl=1*1lvvu5z*_up*MQ..*_ga*MTY2NzczOTUxMy4xNzE3MTE5Mjc4*_ga_JFNJC5V947*MTcxNzExOTI3OC4xLjAuMTcxNzExOTI3OC4wLjAuMA..)
+>
+> [Global Legal Insight](https://www.globallegalinsights.com/practice-areas/ai-machine-learning-and-big-data-laws-and-regulations/netherlands/) 报告：AI, Machine Learning & Big Data Laws and Regulations 2024
 
 《荷兰审计法院对政府使用算法的审计报告》
 

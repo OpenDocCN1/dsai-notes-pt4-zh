@@ -1,6 +1,7 @@
+
 # AI产品经理技术篇：AI领域常用术语解析
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/HvfIdw32ioo3BkxfF4ocLaXKnJc](https://qqs7y1hozd1.feishu.cn/docx/HvfIdw32ioo3BkxfF4ocLaXKnJc)
+> 来源：[`https://qqs7y1hozd1.feishu.cn/docx/HvfIdw32ioo3BkxfF4ocLaXKnJc`](https://qqs7y1hozd1.feishu.cn/docx/HvfIdw32ioo3BkxfF4ocLaXKnJc)
 
 ## 基础概念
 

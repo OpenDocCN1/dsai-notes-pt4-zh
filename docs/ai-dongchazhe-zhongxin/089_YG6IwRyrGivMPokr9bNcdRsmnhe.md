@@ -1,3 +1,4 @@
+
 # Midjourney Prompt分析第六期-品牌+露营、表情包、国风极简插画
 
 > 来源：[https://bluefocus.feishu.cn/docx/XEK8d12nRovAg5xAX5TcclPwn7b](https://bluefocus.feishu.cn/docx/XEK8d12nRovAg5xAX5TcclPwn7b)
@@ -10,7 +11,7 @@
 
 ![](img/58e648fe447676c5683ff69a22f58b65.png)
 
-Concept design, pop-up store, display space made of transparent glass, tent, camping, mountain forest, field, creek, futuristic space art architecture,  window design, store design, minimalism, UE5 rendering engine, 3D rendering, best quality, HD, 16K, HDR
+Concept design, pop-up store, display space made of transparent glass, tent, camping, mountain forest, field, creek, futuristic space art architecture, window design, store design, minimalism, UE5 rendering engine, 3D rendering, best quality, HD, 16K, HDR
 
 概念设计,快闪店,由透明玻璃制成的展示空间,帐篷,露营,山林,田野,小溪,未来主义太空艺术建筑,橱窗设计,店面设计,极简主义,UE5渲染引擎,3D渲染,最佳质量,高清,16K
 
@@ -47,7 +48,6 @@ Concept design, pop-up store, display space made of transparent glass, tent, cam
 > 应用场景：表情包/IP形象等。
 
 > 设计形式+主体描述+形容词+万能词+输出定量
-
 
 emoji pack, cute Barbie girls ,Disney style, happy, laughing, angry, running, jumping, sleeping, crying, shouting, various cute expressions and poses, various emotions, chibi, anthropomorphic style, the best quality, 16K
 
@@ -181,9 +181,7 @@ minimalism, Heian era, Chinese animation, Alessandro Gottardo and Postminimalism
 
 **4，结果只是方法论的实践**
 
-大家一定要掌握方法，这个系列所呈现的方法和技巧是综合性的，希望大家要认真的反复的研究
-
-下。
+大家一定要掌握方法，这个系列所呈现的方法和技巧是综合性的，希望大家要认真的反复的研究下。
 
 > 为了方便小伙伴们的学习和体验，我们找到了这个文档，以系列的方式，通过以内部分享的方式帮助大家练习。
 

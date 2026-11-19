@@ -1,8 +1,7 @@
-# AIGC 检测兴趣小组
-
-> 来源：[https://aicarrier.feishu.cn/docx/BMhtd6mkNoPt🐧x64pKcwU6jnMd](https://aicarrier.feishu.cn/docx/BMhtd6mkNoPt🐧x64pKcwU6jnMd)
 
 # 书生·浦语 AIGC 检测兴趣小组
+
+> 来源：[https://aicarrier.feishu.cn/docx/BMhtd6mkNoPt🐧x64pKcwU6jnMd](https://aicarrier.feishu.cn/docx/BMhtd6mkNoPt🐧x64pKcwU6jnMd)
 
 ## 什么是AIGC 检测？
 
@@ -32,29 +31,23 @@ AIGC 检测兴趣小组讨论区：【待补充】
 
 ## 组员福利
 
-+   活跃的学习氛围
++ 活跃的学习氛围
++ 优秀组员精美证书
++ 上海AI实验室内推机会
++ 充足的算力支持
++ 上海AI实验实验室研究员项目指导
 
-+   优秀组员精美证书
+## 学习资料
 
-+   上海AI实验室内推机会
++ Awesome LLM-generated Text Detection 论文仓库：`https://github.com/junchaoIU/LLM-generated-Text-Detection`
++ LLM 文本检测部分经典论文：`https://github.com/wshzd/Awesome-AIGC?tab=readme-ov-file#llm%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B`
++ 打算维护一个paperlist仓库
 
-+   充足的算力支持
-
-+   上海AI实验实验室研究员项目指导
-
-# 学习资料
-
-+   Awesome LLM-generated Text Detection 论文仓库：https://github.com/junchaoIU/LLM-generated-Text-Detection
-
-+   LLM 文本检测部分经典论文： https://github.com/wshzd/Awesome-AIGC?tab=readme-ov-file#llm%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B
-
-+   打算维护一个paperlist仓库
-
-# 参考论文
+## 参考论文
 
 | Name | Paper Link |
 | --- | --- |
-| A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions | https://arxiv.org/abs/2310.14724 |
-| Detecting AI-Generated Text: Factors Influencing Detectability with Current Methods | https://arxiv.org/pdf/2406.15583 |
-| DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature | https://arxiv.org/abs/2301.11305 |
+| A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions | `https://arxiv.org/abs/2310.14724` |
+| Detecting AI-Generated Text: Factors Influencing Detectability with Current Methods | `https://arxiv.org/pdf/2406.15583` |
+| DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature | `https://arxiv.org/abs/2301.11305` |
 |  |  |

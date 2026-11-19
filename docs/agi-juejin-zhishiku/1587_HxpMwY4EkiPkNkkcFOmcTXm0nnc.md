@@ -1,18 +1,19 @@
+
 # 徒手实现GPT：其实真的很简单
 
-> 来源：[https://agijuejin.feishu.cn/docx/LsYwdXymmoxZDtxm3Zwcu121nfg](https://agijuejin.feishu.cn/docx/LsYwdXymmoxZDtxm3Zwcu121nfg)
+> 来源：[飞书文档](https://agijuejin.feishu.cn/docx/LsYwdXymmoxZDtxm3Zwcu121nfg)
 
-# 👀快看👀
+## 👀快看👀
 
-> **作者：**[**唐一旦聊AI**](https://space.bilibili.com/417265639)
+> 作者：[唐一旦聊AI](https://space.bilibili.com/417265639)
 
-> **原文链接：**[**徒手实现GPT：其实真的很简单**](https://www.bilibili.com/video/BV1Hz421q7ks/?spm_id_from=333.999.0.0&vd_source=5a54577a6bc7d876f6e5df88640c8e9f)
+> 原文链接：[徒手实现GPT：其实真的很简单](https://www.bilibili.com/video/BV1Hz421q7ks/?spm_id_from=333.999.0.0&vd_source=5a54577a6bc7d876f6e5df88640c8e9f)
 
-> **代码链接：****https://github.com/GenTang/regress**ion2chatgpt/blob/zh/video/char_gpt.ipynb
+> 代码链接：`https://github.com/GenTang/regression2chatgpt/blob/zh/video/char_gpt.ipynb`
 
 ---
 
-# ⚡️摘要·作者有话说⚡️
+## ⚡️摘要·作者有话说⚡️
 
 > 大语言模型这个商业术语正如其名，强调了这类模型的一个共同特点，那就是“大”。这主要体现在三个方面：首先，这类模型拥有大规模的模型参数，其数量级通常在数十亿到数千亿之间；其次，为了训练这些模型，需要大规模的数据集，语料库的总长度常常达到万亿级别；最后，由于前两个因素的影响，训练这些模型的成本也相当巨大。2023年，从零开始训练一个最先进的大语言模型需要数千台专业服务器，花费高达数百万美元。
 
@@ -26,38 +27,28 @@
 
 ---
 
-# 🤖分集🤖
+## 🤖分集🤖
 
-# 徒手实现GPT：其实真的很简单
+### 徒手实现GPT：其实真的简单
 
 从零开始构建 GPT-2 模型，帮助观众深入理解大语言模型的关键结构和实现技巧，特别是单向注意力模型的简单性和工程应用。
 
 ![](img/cba3f6d2886886b296c17b41061bd7bc.png)
 
-[徒手实现GPT：其实真的很简单.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GOisbcmnCo2sygx1lPpcoj48ngb)
+[`徒手实现GPT：其实真的简单.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GOisbcmnCo2sygx1lPpcoj48ngb)
 
 ---
 
-# ✏️课代表✏️
+## ✏️课代表✏️
 
-+   大语言模型的定义和特点：大语言模型通常具有大规模参数、需要大量数据进行训练，且训练成本高昂。
++ 大语言模型的定义和特点：大语言模型通常具有大规模参数、需要大量数据进行训练，且训练成本高昂。
 
->
++ Transformer 模型的重要性：Transformer 模型是大语言模型的基础，包含双向注意力、单向注意力和交叉注意力机制。
 
-+   Transformer 模型的重要性：Transformer 模型是大语言模型的基础，包含双向注意力、单向注意力和交叉注意力机制。
++ GPT-2 模型的简单性和便利性：GPT-2 模型结构相对简单，适合在家用计算机上运行和训练，使其成为理解和实现大语言模型的理想选择。
 
->
++ 实现 GPT-2 的步骤和要点：视频从零开始，逐步介绍了 GPT-2 模型的关键组件和实现过程，以及如何优化模型训练。
 
-+   GPT-2 模型的简单性和便利性：GPT-2 模型结构相对简单，适合在家用计算机上运行和训练，使其成为理解和实现大语言模型的理想选择。
++ GPT-2 实现的意义：通过徒手实现 GPT-2，可以更好地理解大语言模型的原理，为实现其他大语言模型提供基础。
 
->
-
-+   实现 GPT-2 的步骤和要点：视频从零开始，逐步介绍了 GPT-2 模型的关键组件和实现过程，以及如何优化模型训练。
-
->
-
-+   GPT-2 实现的意义：通过徒手实现 GPT-2，可以更好地理解大语言模型的原理，为实现其他大语言模型提供基础。
-
->
-
-+   大语言模型的未来趋势：大语言模型在人工智能领域具有巨大的应用前景，掌握这一技术对于数据科学和人工智能研究者至关重要。
++ 大语言模型的未来趋势：大语言模型在人工智能领域具有巨大的应用前景，掌握这一技术对于数据科学和人工智能研究者至关重要。

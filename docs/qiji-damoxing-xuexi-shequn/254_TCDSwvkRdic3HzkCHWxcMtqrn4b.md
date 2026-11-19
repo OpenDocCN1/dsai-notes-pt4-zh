@@ -1,8 +1,9 @@
+
 # 未确定内容
 
 > 来源：[https://miracleplus.feishu.cn/docx/HNM4dWHMUo64usxij1sc5CIGn5g](https://miracleplus.feishu.cn/docx/HNM4dWHMUo64usxij1sc5CIGn5g)
 
-暂时不对外的（大家看看，好像有些内容有点过时了，我还没来得及看完筛选，当然大家可以留言过时了我就删掉）。。。
+暂时不对外的（大家看看，好像有些内容有点过时了，我还没来得及看完筛选，当然大家可以留言过时了我就删掉）。。
 
 | 陆奇：技术驱动的时代，我们要如何创造价值？ |
 | --- |

@@ -1,3 +1,4 @@
+
 # 企业官网：过时了，但又没完全过时
 
 > 来源：[https://docs.feishu.cn/docx/JnFwdqprdoDDaixeAYmc00Ztnjc](https://docs.feishu.cn/docx/JnFwdqprdoDDaixeAYmc00Ztnjc)
@@ -90,7 +91,7 @@ Word、Excel、PPT、PDF，典型的 PC 时代的产物。
 
 这就导致官网上所承载的内容，越来越起不到企业预想的品牌展现的效果。
 
-企业名片内容化
+## 企业名片内容化
 
 [内容营销的本质是建立信任。](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247484618&idx=1&sn=b7e1854a7f12ce78d95311f9b8c1b661&chksm=fac53e6acdb2b77ca5f18bf0773e2e1d50debfda21fb7b6d10841abe865dacfcc91d2e37eb3d&token=407087648&lang=zh_CN&scene=21#wechat_redirect)官网**的本质是企业的名片，但企业的名片不只有官网。
 

@@ -1,3 +1,4 @@
+
 # 第十节：Conclusion（总结）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/LFNadMt5tolQxExdKlzcPf4un7e](https://qqs7y1hozd1.feishu.cn/docx/LFNadMt5tolQxExdKlzcPf4un7e)
@@ -24,7 +25,7 @@
 
 +   MCP：连接外部世界的实时脉搏，是智能体的“感知器”。
 
-+   Subagents：实现任务的并行与隔离[，是智能体的“分身](https://github.com/datawhalechina/agent-skills-with-anthropic/blob/main/9.Skills%20with%20the%20Claude%20Agent%20SDK%EF%BC%88Claude%20Agent%20SDK%20%E4%B8%AD%E7%9A%84%E6%8A%80%E8%83%BD%EF%BC%89.md)”。 这种架构思想在 Chapter 9 的“研究智能体”实战中得到了完美验证——主智能体作为“大脑”编排，子智能体作为“手脚”执行。
++   Subagents：实现任务的并行与隔离，是智能体的“分身”。这种架构思想在 Chapter 9 的“研究智能体”实战中得到了完美验证——主智能体作为“大脑”编排，子智能体作为“手脚”执行。
 
 ### 开发范式的跨越 (Paradigm Shift)
 
@@ -32,7 +33,7 @@
 
 +   GUI 时代：在 Claude Desktop 中通过 Pre-Built Skills 快速验证想法，体验“开箱即用”的便利。
 
-+   CLI 时代：利用 [Claude Code](https://github.com/datawhalechina/agent-skills-with-anthropic/blob/main/8.Skill%20with%20Claude%20Code(%E7%86%9F%E7%BB%83%E8%BF%90%E7%94%A8%20Claude%20Code).md) 将编码与终端操作智能化，在 CLAUDE.md 中沉淀项目规范，实现人机协同的极致效率。
++   CLI 时代：利用 [Claude Code](https://github.com/datawhalechina/agent-skills-with-anthropic/blob/main/8.Skill%20with%20Claude%20Code(%E7%86%9F%E7%BB%83%E8%BF%90%E7%94%A8%20Claude%20Code).md) 将编码与终端操作智能化，在 `CLAUDE.md` 中沉淀项目规范，实现人机协同的极致效率。
 
 +   SDK 时代：通过 Claude Agent SDK 进入纯代码领域，以编程方式构建复杂的、非确定性的智能体系统，实现真正的工程化落地。
 
@@ -44,13 +45,13 @@ AI Agent 技术从早期的单纯 Prompt 工程，发展到如今以 Tool Use �
 
 > 现在企业不仅需要一个会聊天的 Chatbot，更需要能遵循 SOP、稳定输出的数字员工——Skills 正是填补了“通用智能”到“专业交付”之间的鸿沟，这也是为什么在众多 AI 概念中，Agentic Workflow（智能体工作流）能迅速在大厂落地并产生实效的重要原因。
 
-**当然，当前的 Skills 形态（YAML+**Markdown）也不可能是一颗常青树。
+当然，当前的 Skills 形态（YAML+Markdown）也不可能是一颗常青树。
 
 > 随着模型自身意图识别与规划能力的进化，也许未来我们不再需要手动编写显式的定义文件，Agent 就能通过观察自我习得技能。
 
 > 世界是运动的，任何技术栈都受到模型能力边界与工程复杂度之间矛盾的制约与推动，在 Agent 从“探索”走向“基建”的过程中，现有的 Skills 框架也势必会演化出更高效的载体。
 
-**所**以，当我们在学习 Agent Skills 时，我们不应局限于语法本身，而应聚焦于它背后的工程化思维：
+所以，当我们在学习 Agent Skills 时，我们不应局限于语法本身，而应聚焦于它背后的工程化思维：
 
 > 如何将非结构化的业务经验抽象为结构化的 SOP，如何通过编排（Orchestration）让多个智能体像流水线一样协作，以及如何利用 MCP 打通数据孤岛。
 

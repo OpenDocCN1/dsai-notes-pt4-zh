@@ -1,32 +1,36 @@
+
 # 让 AI 帮我 code review
 
 > 来源：[https://qianniucity.feishu.cn/docx/NdWwdzM0joKeQVxTtszcOuQNnNg](https://qianniucity.feishu.cn/docx/NdWwdzM0joKeQVxTtszcOuQNnNg)
+
+## 基础代码检查
 
 ```
 npm run lint
 ```
 
-ESLint 已经可以解决了我大部分问题。编程过程中，它会给你适时的反馈代码代码块的情况
+ESLint 已经可以解决了我大部分问题。编程过程中，它会给你适时的反馈代码块的情况。
 
-作为补补充，我会继续让 Cursor 去对一遍刚完成的代码，
+## 使用 Cursor 进行 Code Review
 
-我希望它能再结构和 SEO，性能，安全性，可访问性，甚至用户体验上给我一些建议
+作为补补充，我会继续让 Cursor 去对一遍刚完成的代码，我希望它能在结构和 SEO，性能，安全性，可访问性，甚至用户体验上给我一些建议。
 
-于是，我指定文件夹，让他帮我 code review 刚完成的代码
+于是，我指定文件夹，让他帮我 code review 刚完成的代码。
 
-在 Compose 模式下，指定文件夹，让他帮我审计代码
+在 Compose 模式下，指定文件夹，让他帮我审计代码。
 
-prompt：@app 请你完整看核心代码和完整信息，严格 ESLint 要求，帮我 check 下代码，找出需要优化的地方
+prompt：`@app` 请你完整看核心代码和完整信息，严格 ESLint 要求，帮我 check 下代码，找出需要优化的地方。
 
-结尾，他给给出一起其他的建议
+结尾，他给给出一起其他的建议。
+
+## AI 审查建议
 
 ```
-I&#x27;ll help you review the code and check for optimizations while following ESLint requirements. Let me examine the core files first.
+I'll help you review the code and check for optimizations while following ESLint requirements. Let me examine the core files first.
 
 Let me start by checking the main components and configurations:
 
 Read file: app/layout.tsx
-
 
 Let me check some core components:
 
@@ -34,11 +38,9 @@ Read file: app/components/emoji-form.tsx
 
 Read file: app/components/emoji-grid.tsx
 
-
 Let me check the ESLint configuration:
 
 Read file: .eslintrc.json
-
 
 Based on my review, here are the optimization suggestions and improvements needed:
 
@@ -65,12 +67,10 @@ Based on my review, here are the optimization suggestions and improvements neede
 .
 .
 .
-.
 
+Now that we've made these improvements, here's a summary of the optimizations and improvements made:
 
-Now that we&#x27;ve made these improvements, here&#x27;s a summary of the optimizations and improvements made:
-
-1. **Type Safety &amp; Error Handling**:
+1. **Type Safety & Error Handling**:
    - Added proper TypeScript interfaces for API responses
    - Implemented proper error handling with toast notifications
    - Added error state to the store
@@ -110,7 +110,6 @@ Now that we&#x27;ve made these improvements, here&#x27;s a summary of the optimi
    - Added proper validation
 
 Would you like me to make any additional improvements or focus on any specific area?
-
 ```
 
 ![](img/dd50486c8e8f334a7a721b838fdc28f1.png)

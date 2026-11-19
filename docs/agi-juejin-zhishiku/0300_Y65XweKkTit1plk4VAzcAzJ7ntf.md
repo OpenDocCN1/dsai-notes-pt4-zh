@@ -1,24 +1,27 @@
+
 # 清华、智谱AI 团队推出 10000 字长文本输出模型 LongWriter｜大模型论文周报（8.12-8.16）
 
-> 来源：[https://agijuejin.feishu.cn/docx/FArkdIWxxo8CjHxD3z8c1YxInld](https://agijuejin.feishu.cn/docx/FArkdIWxxo8CjHxD3z8c1YxInld)
+> 来源：`https://agijuejin.feishu.cn/docx/FArkdIWxxo8CjHxD3z8c1YxInld`
 
-[生成式蒙太奇拼图
+## 生成式蒙太奇拼图
 
-文本到图像模型是创建图像的强大工具。然](https://lseancs.github.io/generativephotomontage/)而，生成过程就像掷骰子一样，很难生成一张能捕捉到用户想要的所有内容的图像。
+[生成式蒙太奇拼图](https://lseancs.github.io/generativephotomontage/)
 
-在这项工作中，来自卡内基梅隆大学和赖赫曼大学的研究团队提出了一个框架，通过合成已生成图像的各个部分来创建所需的图像，其实质就是形成生成式蒙太奇拼图（Generative Photomontage）。对于 ControlNet 使用相同的输入条件和不同的种子生成的一叠图像，他们让用户使用笔触界面从生成的结果中选择所需的部分。 他们提出了一种新颖的技术，其能接收用户的笔触，在扩散特征空间中使用基于图的优化方法分割生成的图像，然后通过一种新的特征空间混合方法合成分割区域。这一方法忠实地保留了用户选择的区域，同时将它们合成在一起。
+文本到图像模型是创建图像的强大工具。然而，生成过程就像掷骰子一样，很难生成一张能捕捉到用户想要的所有内容的图像。
+
+在这项工作中，来自卡内基梅隆大学和赖赫曼大学的研究团队提出了一个框架，通过合成已生成图像的各个部分来创建所需的图像，其实质就是形成生成式蒙太奇拼图（Generative Photomontage）。对于 ControlNet 使用相同的输入条件和不同的种子生成的一叠图像，他们让用户使用笔触界面从生成的结果中选择所需的部分。他们提出了一种新颖的技术，其能接收用户的笔触，在扩散特征空间中使用基于图的优化方法分割生成的图像，然后通过一种新的特征空间混合方法合成分割区域。这一方法忠实地保留了用户选择的区域，同时将它们合成在一起。
 
 研究证明，这一灵活的框架可用于多种应用，包括生成新的外观组合、修复不正确的形状和人工痕迹，以及改进及时对齐；该方法优于现有的图像混合方法和各种基线。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.07116
+`https://arxiv.org/abs/2408.07116`
 
-项目地址：
+### 项目地址
 
-https://lseancs.github.io/generativephotomontage/
+`https://lseancs.github.io/generativephotomontage/`
 
-清华、智谱AI 团队推出 10000 字长文本输出模型 LongWriter
+## 清华、智谱AI 团队推出 10000 字长文本输出模型 LongWriter
 
 目前的长上下文大语言模型（LLM）可以处理多达 10 万个 token 的输入，但很难生成长度超过 2000 个 token 的输出。
 
@@ -28,13 +31,13 @@ https://lseancs.github.io/generativephotomontage/
 
 他们还开发了用于评估超长生成能力的综合基准 LongBench-Write。9B 参数模型经过 DPO 的进一步改进，在该基准测试中取得了 SOTA，甚至超过了更大的专有模型。总的来说，这项工作表明，现有的长上下文 LLM 已经具备了更大输出窗口的潜力——只需要在模型对齐过程中提供扩展输出数据，就能释放这种能力。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.07055
+`https://arxiv.org/abs/2408.07055`
 
-GitHub 地址：
+### GitHub 地址
 
-https://github.com/THUDM/LongWriter
+`https://github.com/THUDM/LongWriter`
 
 > 想要第一时间获取每日热门大模型论文？
 
@@ -44,17 +47,17 @@ https://github.com/THUDM/LongWriter
 
 ![](img/64338b3e48ef932283247168fc12fbf4.png)
 
-[
+## 谷歌推出文生图模型 Imagen 3
 
-谷歌推出文生图模型 Imagen 3
+[谷歌推出文生图模型 Imagen 3](https://github.com/GAIR-NLP/OpenResearcher)
 
-在](https://github.com/GAIR-NLP/OpenResearcher)这项工作中，Google DeepMind 提出了 Imagen 3，这是一种可根据文本提示生成高质量图像的潜在扩散模型。他们介绍了质量和责任评估。在评估时，Imagen 3 优于其他 SOTA 模型。此外，他们还讨论了与安全性和表示有关的问题，以及用来尽量减少模型潜在危害的方法。
+在这项工作中，Google DeepMind 提出了 Imagen 3，这是一种可根据文本提示生成高质量图像的潜在扩散模型。他们介绍了质量和责任评估。在评估时，Imagen 3 优于其他 SOTA 模型。此外，他们还讨论了与安全性和表示有关的问题，以及用来尽量减少模型潜在危害的方法。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.07009
+`https://arxiv.org/abs/2408.07009`
 
-OpenResearcher：利用人工智能加速科学研究
+## OpenResearcher：利用人工智能加速科学研究
 
 科学文献的快速增长给研究人员带来了巨大的挑战，他们必须努力了解各自领域的最新进展，并深入研究新的领域。
 
@@ -62,15 +65,15 @@ OpenResearcher：利用人工智能加速科学研究
 
 此外，他们还开发了各种工具，用于理解研究人员的查询、从科学文献中搜索、过滤检索到的信息、提供准确而全面的答案并自我完善这些答案。OpenResearcher 可以灵活使用这些工具，同时兼顾效率和效果。因此，OpenResearcher 使研究人员能够节省时间，提高发现新见解和推动科学突破的潜力。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.06941
+`https://arxiv.org/abs/2408.06941`
 
-GitHub 地址：
+### GitHub 地址
 
-https://github.com/GAIR-NLP/OpenResearcher
+`https://github.com/GAIR-NLP/OpenResearcher`
 
-第一个人工智能科学家：15 美元成本写论文，水平达到机器学习顶会
+## 第一个人工智能科学家：15 美元成本写论文，水平达到机器学习顶会
 
 通用人工智能（AGI）的巨大挑战之一是开发能够进行科学研究和发现新知识的智能体（agent）。虽然前沿模型已被用作人类科学家的辅助工具，如头脑风暴、编写代码或预测任务，但它们仍然只能完成科学过程的一小部分。
 
@@ -78,43 +81,43 @@ https://github.com/GAIR-NLP/OpenResearcher
 
 为了评估所生成的论文，他们设计并验证了一个自动评审员，结果表明该评审员在评估论文分数方面的表现接近人类。经自动审稿人评判，“人工智能科学家”可以生成超过顶级机器学习会议接受门槛的论文。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.06292
+`https://arxiv.org/abs/2408.06292`
 
-GitHub 地址：
+### GitHub 地址
 
-https://github.com/SakanaAI/AI-Scientist
+`https://github.com/SakanaAI/AI-Scientist`
 
-贾佳亚团队提出高效可控图像视频生成方法
+## 贾佳亚团队提出高效可控图像视频生成方法
 
 扩散模型在图像和视频生成方面都表现出卓越而强大的能力。为了对生成结果实现更强的控制，研究人员提出了 ControlNet、Adapters 和 ReferenceNet 等多个架构，从而集成调节控制。然而，目前的可控生成方法往往需要大量额外的计算资源，尤其是在视频生成方面，而且在训练方面面临挑战，或者控制能力较弱。
 
 在这项工作中，贾佳亚团队提出了一种强大且高效的可控图像、视频生成方法——ControlNeXt。他们首先设计了一个更简单、更高效的架构，与基础模型相比，以最小的额外成本取代了复杂的分支模块。这种简洁的结构还允许该方法与其他 LoRA 权重无缝集成，无需额外训练即可改变风格。在训练方面，与其他方法相比，他们减少了多达 90% 的可学习参数。此外，他们还提出了另一种名为“交叉归一化（Cross Normalization）”的方法来替代“Zero-Convolution”，从而实现快速、稳定的训练收敛。他们在图像和视频中使用不同的基础模型进行了各种实验，证明了该方法的鲁棒性。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.06070
+`https://arxiv.org/abs/2408.06070`
 
-项目地址：
+### 项目地址
 
-https://pbihao.github.io/projects/controlnext/index.html
+`https://pbihao.github.io/projects/controlnext/index.html`
 
-UC 伯克利推出 Body Transformer 架构
+## UC 伯克利推出 Body Transformer 架构
 
 近年来，在自然语言处理和计算机视觉领域，transformer 架构已成为机器学习算法的实际标准。
 
 尽管有显著的证据表明这种架构在机器人学习中得到了成功应用，但 UC 伯克利大学 Pieter Abbeel 团队认为，标准的 transformer 并未充分利用机器人学习问题的结构。因此，他们提出了 Body Transformer（BoT），这是一种通过提供引导学习过程的归纳偏差来利用机器人身体的架构。他们将机器人身体表示为传感器和致动器的图，并依靠掩码注意力在整个架构中汇集信息。在表示模仿或强化学习策略时，由此产生的架构在任务完成度、缩放特性和计算效率方面都优于标准的 transformer 和经典的多层感知器。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.06316
+`https://arxiv.org/abs/2408.06316`
 
-项目地址：
+### 项目地址
 
-https://sferrazza.cc/bot_site/
+`https://sferrazza.cc/bot_site/`
 
-VisualAgentBench：视觉基础智能体训练、评估新基准
+## VisualAgentBench：视觉基础智能体训练、评估新基准
 
 大型多模态模型（LMMs）开创了人工智能的新纪元，它将语言和视觉的能力融合在一起，形成了能力极强的视觉基础智能体（Visual Foundation Agents）。据推测，这些智能体可以胜任各种任务，有可能接近通用人工智能（AGI）。然而，现有的基准未能充分挑战或展示 LMM 在复杂真实环境中的全部潜力。
 
@@ -122,15 +125,15 @@ VisualAgentBench：视觉基础智能体训练、评估新基准
 
 通过对九种专有 LMM API 和八种开放模型的严格测试，他们展示了这些模型相当可观但仍在发展中的智能体能力。此外，VAB 还通过 Program-based Solvers、LMM Agent Bootstrapping 和 Human Demonstrations等混合方法构建了一个轨迹训练集，通过行为克隆促进 LMM 性能的大幅提升。该工作不仅旨在对现有模型进行基准测试，还为今后开发视觉基础智能体奠定了坚实的基础。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.06327
+`https://arxiv.org/abs/2408.06327`
 
-GitHub 地址：
+### GitHub 地址
 
-https://github.com/THUDM/VisualAgentBench
+`https://github.com/THUDM/VisualAgentBench`
 
-微软、哈佛推出自博弈互推理方法 rStar
+## 微软、哈佛推出自博弈互推理方法 rStar
 
 在这项工作中，来自微软亚洲研究院和哈佛大学的研究团队提出了一种自博弈互推理方法——rStar，其能够显著提高小语言模型（SLM）的推理能力，而无需微调或高级模型。
 
@@ -138,16 +141,16 @@ https://github.com/THUDM/VisualAgentBench
 
 五种 SLM 的广泛实验表明，rStar 可以有效解决各种推理问题，包括 GSM8K、GSM-Hard、MATH、SVAMP 和 StrategyQA。值得注意的是，rStar 将 LLaMA2-7B 的 GSM8K 准确率从 12.51% 提高到 63.91%，将 Mistral-7B 的准确率从 36.46% 提高到 81.88%，将 LLaMA3-8B-Instruct 的准确率从 74.53% 提高到 91.13%。
 
-论文标题：
+### 论文链接
 
-https://arxiv.org/abs/2408.04682
+`https://arxiv.org/abs/2408.04682`
 
-苹果推出 LLM 工具使用能力评估基准 ToolSandbox
+## 苹果推出 LLM 工具使用能力评估基准 ToolSandbox
 
 近期大语言模型（LLMs）的进步激发了人们对工具辅助 LLMs 解决现实世界挑战的研究兴趣，这就要求对工具使用能力进行全面评估。以前的工作主要集中在通过无状态网络服务（RESTful API）、基于单轮用户提示或离策略对话轨迹进行评估，而 ToolSandbox 包括有状态工具执行、工具之间的隐式状态依赖关系、支持政策对话评估的内置用户模拟器，以及针对任意轨迹的中间和最终里程碑的动态评估策略。
 
 研究表明，开源模型和专有模型在性能上存在明显差距，ToolSandbox 中定义的状态依赖性（State Dependency）、规范化（Canonicalization）和信息不足（Insufficient Information）等复杂任务甚至对能力最强的 SOTA LLM 也构成了挑战。
 
-论文链接：
+### 论文链接
 
-https://arxiv.org/abs/2408.04682
+`https://arxiv.org/abs/2408.04682`

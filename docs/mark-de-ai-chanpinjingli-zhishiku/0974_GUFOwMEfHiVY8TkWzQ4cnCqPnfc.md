@@ -1,8 +1,9 @@
+
 # GPT Image 2 才是画图的神！
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/RtfwdpcLooWtoIxuBWbckk2knMg](https://qqs7y1hozd1.feishu.cn/docx/RtfwdpcLooWtoIxuBWbckk2knMg)
 
-# Banana ，还是GPT ？
+## Banana，还是GPT？
 
 ### 案例一：InstructGPT技术路线
 
@@ -11,7 +12,7 @@
 ![](img/e3892a3ca6cba0b16907d8cad97b3bda.png)
 
 ```
-**--通用绘图风格指令省**略--
+--通用绘图风格指令省略--
 
 ## 需要绘制的内容 
 📄 论文： Training language models to follow instructions with human feedback (InstructGPT)
@@ -75,7 +76,7 @@
 采样策略与调优：
 采用分层抽样 (Stratified Sampling)，确保训练集中不同高度区间（低层、高层）的样本分布比例符合实际情况 。
 利用 GridSearchCV (网格搜索) 对学习率、树的最大深度等超参数进行寻优，最终为 33 个区域分别训练了最优模型 。
-3. 数据生成与评估阶段 (Mapping &amp; Accuracy Assessment)
+3. 数据生成与评估阶段 (Mapping & Accuracy Assessment)
 
 全球测绘：将训练好的模型应用于全球 13 亿个建筑脚印，生成 3D-GloBFP 矢量数据集 。
 多维度验证：
@@ -87,15 +88,15 @@
 同类数据集横比：将结果与 WSF 3D、GHSL-H 等现有的全球格网数据集进行对比，证明了 3D-GloBFP 在捕捉城市微观形态（如 CBD 高层中心）方面的优势 。
 4. 基础设施分析 (Built-up Infrastructure Analysis)
 技术路线的最后一步是将生成的“点位”数据转化为“宏观”洞察：
-通过计算每个建筑的体积（面积 $\times$ 高度）并求和，得出全球各国和城市的建筑总体积 。
+通过计算每个建筑的体积（面积 × 高度）并求和，得出全球各国和城市的建筑总体积 。
 分析全球基础设施的地理差异，例如中国（23.9%）和美国（17.6%）在全球建筑存量中的占比 。
 ```
 
-# 旧王落幕，新王登基
+## 旧王落幕，新王登基
 
 经常用小香蕉做图的应该很容易看出来，这几个案例对比中，靠上面颜色更加鲜艳，图示更刺眼的就是香蕉出品。
 
-**而底下看着比较简洁干净的就是G**PT Image 2的杰作了，这几张图都是一次直出，没有抽卡。
+而底下看着比较简洁干净的就是 GPT Image 2 的杰作了，这几张图都是一次直出，没有抽卡。
 
 两个模型出图风格差异很明显：一个浓妆艳抹，扑面而来；一个清水芙蓉，简约克制。
 

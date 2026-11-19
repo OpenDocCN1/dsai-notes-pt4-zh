@@ -1,3 +1,4 @@
+
 # 快速理解热门LLM大语言模型
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/PErpdxQFLolAydxBdsqcDBnBnLg](https://gotoaiworld.feishu.cn/docx/PErpdxQFLolAydxBdsqcDBnBnLg)
@@ -8,9 +9,9 @@
 
 注意:本文需要你有基本的代码阅读能力. 当然非开发阅读也不会很困难.
 
-### 一. LLM (大语言模型)
+## 一. LLM (大语言模型)
 
-**本质就是文字接龙**
+本质就是文字接龙
 
 ![](img/e7ceaf9c933d8aa25a3be8aeba5a49e3.png)
 
@@ -28,115 +29,115 @@
 
 思考题: 语言能代表智能吗?
 
-### 二. Transformer (自注意力机制)
+## 二. Transformer (自注意力机制)
 
 自注意力机制就是动态关联上下文的能力. 如何实现的呢?
 
-● 每个分词就是一个 token
+● 每个分词就是一个 `token`
 
-● 每个token 都有一个 Q, K, V 向量 (参数)
+● 每个 `token` 都有一个 `Q`, `K`, `V` 向量 (参数)
 
-○ Q 是查询向量
+○ `Q` 是查询向量
 
-○ K 是线索向量
+○ `K` 是线索向量
 
-○ V 是答案向量
+○ `V` 是答案向量
 
 ● 推理的过程:
 
-○ 当前token 的Q 与 前面所有的 K 计算权重
+○ 当前 `token` 的 `Q` 与 前面所有的 `K` 计算权重
 
-○ 每个 token 的V加权相加得到一个 token预测值
+○ 每个 `token` 的 `V` 加权相加得到一个 `token` 预测值
 
-○ 选择 N 个与预测值最接近的 token, 掷骰子选择
+○ 选择 `N` 个与预测值最接近的 `token`, 掷骰子选择
 
 最简化示例: 小明吃完冰淇淋，结果 => 肚子疼
 
-首先分词及每个token的 Q, K, V向量
+首先分词及每个 `token` 的 `Q`, `K`, `V` 向量
 
 接着开始推理:
 
-1.  使用最后一个 token 的 Q（“结果”的 Q 向量）
+1.  使用最后一个 `token` 的 `Q`（“结果”的 `Q` 向量）
 
-Q_current = [0.8, 0.2]
+`Q_current = [0.8, 0.2]`
 
-1.  计算 Q_current 与所有 K 的点积（相似度）
+1.  计算 `Q_current` 与所有 `K` 的点积（相似度）
 
-点积公式：Q·K = q₁*k₁ + q₂*k₂
+点积公式：`Q·K = q₁*k₁ + q₂*k₂`
 
-1.  Softmax 归一化得到注意力权重
+1.  `Softmax` 归一化得到注意力权重
 
-将点积结果输入 Softmax 函数
+将点积结果输入 `Softmax` 函数
 
-1.  加权求和 V 向量生成上下文向量
+1.  加权求和 `V` 向量生成上下文向量
 
-将权重与对应 V 向量相乘后相加：
+将权重与对应 `V` 向量相乘后相加：
 
 最终上下文向量：
 
-[0.053−0.108+0.243+0.148,0.212+0.27−0.081+0.037]=[0.336,0.438]
+`[0.053−0.108+0.243+0.148, 0.212+0.27−0.081+0.037] = [0.336, 0.438]`
 
-1.  **预测下一个 token**
+1.  预测下一个 `token`
 
-模型将上下文向量 [0.336, 0.438] 与候选 token 的嵌入向量对比：
+模型将上下文向量 `[0.336, 0.438]` 与候选 `token` 的嵌入向量对比：
 
-嵌入向量不作过多解释, 只要知道QKV三个向量可从嵌入向量计算得到即可
+嵌入向量不作过多解释, 只要知道 `QKV` 三个向量可从嵌入向量计算得到即可
 
-最终模型选择最高概率的 “肚子疼” 作为下一个 token.
+最终模型选择最高概率的 “肚子疼” 作为下一个 `token`.
 
-注意在实际场景中, 预测的下一个token是不确定的, 是因为有一个掷骰子的操作, 大模型会在概率最大的几个token中随机挑选一个作为最终输出
+注意在实际场景中, 预测的下一个 `token` 是不确定的, 是因为有一个掷骰子的操作, 大模型会在概率最大的几个 `token` 中随机挑选一个作为最终输出
 
-### 三. Prompt (提示词)
+## 三. Prompt (提示词)
 
-对于这个词大家并不陌生. 我们用chatGPT时经常会用到, "你是一个......."
+对于这个词大家并不陌生. 我们用 `chatGPT` 时经常会用到, "你是一个......."
 
 但你真的理解它吗?
 
-与ai对话时的这种预设角色, 其实并不是严格意义上的 prompt
+与 `ai` 对话时的这种预设角色, 其实并不是严格意义上的 `prompt`
 
-为什么这么说呢? 先看一下API
+为什么这么说呢? 先看一下 `API`
 
-### 四. 理解API
+## 四. 理解API
 
-我们前面提到过大语言模型的 本质就是文字接龙 , 相对应的使用大模型也比较简单. 可以参见deepseek的文字接龙 api 请求:
+我们前面提到过大语言模型的 本质就是文字接龙 , 相对应的使用大模型也比较简单. 可以参见 `deepseek` 的文字接龙 `api` 请求:
 
-[h](https://api-docs.deepseek.com/zh-cn/api/create-chat-completion)ttps://api-docs.deepseek.com/zh-cn/api/create-chat-completion
+[deepseek 文字接龙 API 请求](https://api-docs.deepseek.com/zh-cn/api/create-chat-completion)
 
 ![](img/fb063d731c815da94bda193bc7a2a0ed.png)
 
 这里比较重要的几个部分, 需要理解:
 
-### 1.  temperature 温度
+### 1. `temperature` 温度
 
-Temperature（温度） 是一个控制生成文本随机性和多样性的关键参数。它通过调整模型输出的概率分布，直接影响生成内容的“保守”或“冒险”程度. 看几个典型场景:
+`Temperature`（温度） 是一个控制生成文本随机性和多样性的关键参数。它通过调整模型输出的概率分布，直接影响生成内容的“保守”或“冒险”程度. 看几个典型场景:
 
-**2.  tools 工具支持**
+### 2. `tools` 工具支持
 
-大模型对 function calling 的支持, 后面再详细介绍
+大模型对 `function calling` 的支持, 后面再详细介绍
 
-### **3.  角色和信息**
+### 3. 角色和信息
 
-这一部分是ai对话的主体. 其中role 定义了四个角色
+这一部分是 `ai` 对话的主体. 其中 `role` 定义了四个角色
 
-● system 系统设定
+● `system` 系统设定
 
-● user 用户回复
+● `user` 用户回复
 
-● assistant 模型回答
+● `assistant` 模型回答
 
-● tool 是配合function call工作的角色, 可以调用外部工具
+● `tool` 是配合 `function call` 工作的角色, 可以调用外部工具
 
-回到前一章的问题, ai对话时其实是user部分输入的内容, 所以system角色的设定内容才应该是严格意义上的Prompt.
+回到前一章的问题, `ai` 对话时其实是 `user` 部分输入的内容, 所以 `system` 角色的设定内容才应该是严格意义上的 `prompt`.
 
-这有啥区别呢? (user 与 system?)
+这有啥区别呢? (`user` 与 `system`?)
 
-个人一个合理的猜测: system的内容在Transformer推理中拥有较高的权重. 所以拥有较高的响应优先级.
+个人一个合理的猜测: `system` 的内容在 `Transformer` 推理中拥有较高的权重. 所以拥有较高的响应优先级.
 
-### **4.  关于多轮对话**
+### 4. 关于多轮对话
 
-因为LLM是无状态的. 我们要时刻记得文字接龙的游戏, 因此在实际操作中也是这样的.
+因为 `LLM` 是无状态的. 我们要时刻记得文字接龙的游戏, 因此在实际操作中也是这样的.
 
-● 在第一轮请求时，传递给 API 的 messages 为
+● 在第一轮请求时，传递给 `API` 的 `messages` 为
 
 ![](img/43ccb9d4dd871fdc4b7be8c8ae4847b7.png)
 
@@ -146,15 +147,15 @@ Temperature（温度） 是一个控制生成文本随机性和多样性的关�
 
 ● 当用户发起第二轮问题时, 请求变成了这样
 
-### 五. Function Calling (函数调用)
+## 五. Function Calling (函数调用)
 
 仅仅一个可以回答问题的机器人, 作用并不太大.
 
 要完成复杂的任务, 就需要大模型的输出是稳定的, 而且是可编程的.
 
-因此OpenAI 推出了 function calling的支持. 也就是前面提到的 tools参数相关内容.
+因此 `OpenAI` 推出了 `function calling` 的支持. 也就是前面提到的 `tools` 参数相关内容.
 
-### **1.  基本流程**
+### 1. 基本流程
 
 ● 工具声明及用户输入
 
@@ -174,70 +175,68 @@ Temperature（温度） 是一个控制生成文本随机性和多样性的关�
 &quot;The current temperature in Paris is 14°C (57.2°F).&quot;
 ```
 
-```
 ● 总结一下
-```
 
-**2.  实现原理(猜测)**
+### 2. 实现原理 (猜测)
 
-#### a. 实现方式一: prompt 遵循 (示例)
+#### a. 实现方式一: `prompt` 遵循 (示例)
 
 提前设置规则:
 
-b. 实现方式二: 模型训练特定优化
+#### b. 实现方式二: 模型训练特定优化
 
 对结构化输出有特定要求, 可能需要特定训练吧. 这个不太确定?
 
-### 六. Agent (智能体)
+## 六. Agent (智能体)
 
-包含: 大模型, 任务规划, 上下文记忆, 工具调用. 它是大模型能力的拓展. 其实只要对API进行简单的封装, 只要能完成特定任务, 都可以称为智能体. 比如下面的例子:
+包含: 大模型, 任务规划, 上下文记忆, 工具调用. 它是大模型能力的拓展. 其实只要对 `API` 进行简单的封装, 只要能完成特定任务, 都可以称为智能体. 比如下面的例子:
 
-**1.  创建AI客服系统**
+### 1. 创建 AI 客服系统
 
 这个智能体, 主要包括:
 
-1.  配置了一个 prompt: "你是一个电商客服, 可查询订单状态"
+1.  配置了一个 `prompt`: "你是一个电商客服, 可查询订单状态"
 
-1.  引入 query_order 工具
+1.  引入 `query_order` 工具
 
-### 2.  其它创建方式
+### 2. 其它创建方式
 
 服务商开放接口, 供用户创建, 比如腾讯元器
 
-[https://yuanqi.tencent.c](https://yuanqi.tencent.com/my-creation/agent)om/my-creation/agent
+[腾讯元器](https://yuanqi.tencent.com/my-creation/agent)
 
 一个简单的提示词都可以创建智能体
 
 ![](img/3c7c648c7db0887347b2a2b777bc97ae.png)
 
-### 七. MCP (模型上下文协议)
+## 七. MCP (模型上下文协议)
 
-通过上面的智能体调用工具的示例我们可以看到, 每接入一个工具, 都需要编写相应的接入代码. 经常写代码的我们都知道, 这不是好的架构设计.  好的设计应该把动态改变的部分 ( tools的声名和调用分离出来 ), 做为一个独立的模块来拓展. 这就有了大众追捧的 MCP:  -----(哪有这么玄, 都是程序员的常规操作啊....)
+通过上面的智能体调用工具的示例我们可以看到, 每接入一个工具, 都需要编写相应的接入代码. 经常写代码的我们知道, 这不是好的架构设计.  好的设计应该把动态改变的部分 ( `tools` 的声明和调用分离出来 ), 做为一个独立的模块来拓展. 这就有了大众追捧的 MCP:  -----(哪有这么玄, 都是程序员的常规操作啊....)
 
-MCP是工具接入的标准化协议
+`MCP` 是工具接入的标准化协议
 
-[https://modelcontextprot](https://modelcontextprotocol.io/introduction)ocol.io/introduction
+[MCP 协议](https://modelcontextprotocol.io/introduction)
 
-遵循这套协议, 可以实现工具与Agent的解耦. 你的Agent 接入MCP协议的client sdk后. 接入工具不再需要编写工具调用代码, 只需要注册 MCP Server就可以了. 而MCP Server可由各个服务商独立提供.
+遵循这套协议, 可以实现工具与 `Agent` 的解耦. 你的 `Agent` 接入 `MCP` 协议的 `client sdk` 后. 接入工具不再需要编写工具调用代码, 只需要注册 `MCP Server` 就可以了. 而 `MCP Server` 可由各个服务商独立提供.
 
 ![](img/34217303319751f5519365361e0a6ae3.png)
 
-MCP Server做什么呢?
+`MCP Server` 做什么呢?
 
-1.  声明提供的能力 ListTools
+1.  声明提供的能力 `ListTools`
 
-1.  调用能力的方式 CallTool
+1.  调用能力的方式 `CallTool`
 
-来看一下MCP Server的部分代码 (红框中就是做上面两个事, 不难理解) :
+来看一下 `MCP Server` 的部分代码 (红框中就是做上面两个事, 不难理解) :
 
 ![](img/37d0a6175425349bd4761717613c932a.png)
 
-### 八. A2A (Agent通信协议)
+## 八. A2A (Agent 通信协议)
 
-A2A本质是对 MCP协议的拓展, 按字面意思就是 Agent to Agent. 有兴趣的自己详细看吧.
+`A2A` 本质是对 MCP 协议的拓展, 按字面意思就是 Agent to Agent. 有兴趣的自己详细看吧.
 
 智能体与智能体之间通信的标准化协议
 
-[https://github.com/google/A2A?tab](https://github.com/google/A2A?tab=readme-ov-file#agent2agent-a2a-protocol)=readme-ov-file#agent2agent-a2a-protocol
+[A2A 协议](https://github.com/google/A2A?tab=readme-ov-file#agent2agent-a2a-protocol)
 
 在这套协议下, 一个智能体要引入其它的智能体的能力, 也变得可插拔了.

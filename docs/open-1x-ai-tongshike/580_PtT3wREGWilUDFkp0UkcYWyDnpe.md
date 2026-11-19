@@ -1,18 +1,19 @@
+
 # 教程：AI MV制作
 
 > 来源：[https://datawhaler.feishu.cn/docx/ZlDJdaoudoGskExLnGVcRp14noQ](https://datawhaler.feishu.cn/docx/ZlDJdaoudoGskExLnGVcRp14noQ)
 
-> ✍️  作者：[Halsey的个人说明书](https://datawhaler.feishu.cn/wiki/WAxEwYPCNi85tjkv0L0cwGmAnbg?from=from_copylink)
+> ✍️ 作者：[Halsey的个人说明书](https://datawhaler.feishu.cn/wiki/WAxEwYPCNi85tjkv0L0cwGmAnbg?from=from_copylink)
 
 案例作品：
 
 http://xhslink.com/FFF8HK
 
-## **一、主题确定**
+## 一、主题确定
 
 首先需要确定创作的主题，教程以“恋-西湖十景”为主题进行说明。
 
-## **二、歌曲生成**
+## 二、歌曲生成
 
 suno歌曲创作的基础教程参考，地址
 
@@ -20,11 +21,11 @@ suno歌曲创作的基础教程参考，地址
 
 更多AI音乐教程 [AI + 音乐](https://datawhaler.feishu.cn/wiki/TTPawK8gainZzRkTomkc3qw8n0g?from=from_copylink)
 
-### **2.1歌词创作**
+### 2.1 歌词创作
 
 根据主题进行歌词创作，由于本次以“恋-西湖十景”为主题，主要想表现杭州的景点以及在这些美丽风景下发生的爱情故事，根据这个主题，让大模型来生成歌词：最简单的方法就是使用一个suno生成歌词的prompt，然后直接给大模型发送指令：
 
-/theme 西湖爱情故事 杭州十景 /ele 苏堤春晓、曲院风荷、平湖秋月、断桥残雪、花港观鱼、柳浪闻莺、三潭印月、双峰插云、雷峰夕照和南屏晚钟 /style 流行，舞曲，情歌，歌颂爱情 /singer 林俊杰 /writer 林秋离 方文山
+`/theme 西湖爱情故事 杭州十景 /ele 苏堤春晓、曲院风荷、平湖秋月、断桥残雪、花港观鱼、柳浪闻莺、三潭印月、双峰插云、雷峰夕照和南屏晚钟 /style 流行，舞曲，情歌，歌颂爱情 /singer 林俊杰 /writer 林秋离 方文山`
 
 大语言模型返回的歌词：
 
@@ -58,7 +59,7 @@ suno歌曲创作的基础教程参考，地址
 
 就让这些美好，成为永恒的记念
 
-### **2.2 suno歌曲生成**
+### 2.2 suno歌曲生成
 
 利用生成的歌词，在suno中进行歌曲生成，suno歌曲生成参考
 
@@ -68,9 +69,9 @@ suno歌曲创作的基础教程参考，地址
 
 ![](img/17aa46fcff0ac0d8f2302f92d6e06374.png)
 
-[恋-西湖十景.mp3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QpJXbzmdsoo2dqxcl1TcmFconVc)
+[`恋-西湖十景.mp3`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QpJXbzmdsoo2dqxcl1TcmFconVc)
 
-## 三、**分镜脚本生成**
+## 三、分镜脚本生成
 
 给大模型发送指令：
 
@@ -162,7 +163,7 @@ suno歌曲创作的基础教程参考，地址
 
 针对上述场景分镜描述，让大模型翻译成英文prompt。此处略，因为这里生成的时候可能达不到预期（能符合预期就更好了），所有后面在生图的时候还需要去调对应的promopt。
 
-## **四、图片生成**
+## 四、图片生成
 
 ### 4.1 Midjourney生成图片
 
@@ -172,15 +173,17 @@ suno歌曲创作的基础教程参考，地址
 
 Midjourney官网 https://www.midjourney.com/home
 
-[Midjourney零基础教程 https://](https://docs.midjourney.com/docs/quick-start)docs.midjourney.com/docs/quick-start
+[Midjourney零基础教程](https://docs.midjourney.com/docs/quick-start)
 
-[M](https://www.zcool.com.cn/article/ZMTU3ODk3Ng==.html?)idjourney控图必备技巧 https://www.zcool.com.cn/article/ZMTU3ODk3Ng==.html?
+[Midjourney控图必备技巧](https://www.zcool.com.cn/article/ZMTU3ODk3Ng==.html?)
 
 根据生成的场景prompt，给到Midjourney进行图片生成，注意这里需要根据Midjourney返图情况判断是否符合要求，如果不符合要求需要修改prompt，然后重新生成图片，直到得到满意的图片为止。下面是场景一的一个示例：
 
-生图prompt:
+生图prompt：
 
+```
 The West Lake in Hangzhou, China is located on the lake surface near the city center and surrounded by lush green trees. There is an ancient stone arch bridge leading to the shore, with clear water that reflects its surroundings. The drone captured aerial footage from above, showcasing both picturesque scenery and tranquil waters. In autumn, there were willow trees along the riverbank. --ar 16:9
+```
 
 Midjourney返图：
 
@@ -188,15 +191,15 @@ Midjourney返图：
 
 按照上述方法，依次对所有场景进行图片生成。
 
-## 五、**动画生成**
+## 五、动画生成
 
-### **5.1 利用Gen-2生成视频**
+### 5.1 利用Gen-2生成视频
 
-Gne-2官网： [https://runwayml](https://runwayml.com/ai-tools/gen-2/).com/ai-tools/gen-2/
+Gne-2官网：https://runwayml.com/ai-tools/gen-2/
 
 使用教程：https://www.youtube.com/@RunwayML 系列视频
 
-利用每个场景的图片，将图片导入到gen-2中，利用图生视频并配合一定的prompt进行视频生成，对应的场景一的一个视频案例如下：
+利用每个场景的图片，将图片导入到`gen-2`中，利用图生视频并配合一定的prompt进行视频生成，对应的场景一的一个视频案例如下：
 
 ![](img/fbf474eb06ce4d78da799767ecca8dd6.png)
 
@@ -206,76 +209,65 @@ Gne-2官网： [https://runwayml](https://runwayml.com/ai-tools/gen-2/).com/ai-t
 
 ![](img/ac5b8266623de46dce0887ae6ea64726.png)
 
-## 六、**后期剪辑**
+## 六、后期剪辑
 
 AI剪辑工具-剪映： https://www.capcut.cn/
 
-### **6.1 “开始创作”**
+### 6.1 “开始创作”
 
-点击“开始创作”进行视频剪辑
+点击`开始创作`进行视频剪辑
 
 ![](img/0d99f8b9d917fbeabec7b30adffca2d1.png)
 
-### **6.2 导入素材**
+### 6.2 导入素材
 
-将素材直接从文件夹拖入左边的“导入”区域，点击视频进行预览筛选，将需要放入剪辑的视频拖入下方的时间线进行处理即可。
+将素材直接从文件夹拖入左边的`导入`区域，点击视频进行预览筛选，将需要放入剪辑的视频拖入下方的`时间线`进行处理即可。
 
 ![](img/4343e6cb70a1b45d7d3456349089afe5.png)
 
-### **6.3 识别字幕**
+### 6.3 识别字幕
 
-将音频拖入时间线后，右击“识别字幕”生成字幕，可以在右边的工具栏对字幕进行样式修改等。
+将音频拖入`时间线`后，右击`识别字幕`生成字幕，可以在右边的`工具栏`对字幕进行样式修改等。
 
 ![](img/d4ce2d7ef21ee79f43251d6b39b84dbb.png)
 
-### **6.4 导出视频**
+### 6.4 导出视频
 
 在右上角处导出视频，可以按照需求设置导出参数。
 
 ![](img/aa95fb9d5547722403a4422177c9834c.png)
 
-## **七、最终成品**
+## 七、最终成品
 
 http://xhslink.com/FFF8HK
 
-## **八、加餐-个人音乐MV制作**
+## 八、加餐-个人音乐MV制作
 
 敬请期待
 
-## **附录  工具列表**
+## 附录 工具列表
 
-**AI绘图工具**
+### AI绘图工具
 
-Midjourney                         https://discord.com/invite/midjourney
+- Midjourney: https://discord.com/invite/midjourney
+- 悠船: https://desktop.youchuanai.com
+- Stable Diffusion: https://github.com/Stability-AI/stablediffusion
+- 哩布哩布AI: https://www.liblib.art/
+- 无界AI: https://www.wujieai.com/ai
+- 即梦: https://jimeng.jianying.com
+- Leonardo.ai: https://app.leonardo.ai/
 
-悠船                                  https://desktop.youchuanai.com
+### AI动效工具
 
-Stable Diffusion                   https://github.com/Stability-AI/stablediffusion
+#### 送积分:
 
-哩布哩布AI                          https://www.liblib.art/
+- [Runway Gne-2](https://runwayml.com/ai-tools/gen-2/)
+- Pika: https://pika.art/
+- PixVerse: https://app.pixverse.ai/
+- 即梦: https://jimeng.jianying.com
 
-无界AI                               https://www.wujieai.com/ai
+#### 免费：
 
-即梦                                   https://jimeng.jianying.com
-
-Leonardo.ai                         https://app.leonardo.ai/
-
-**AI动效工具**
-
-**送积分:**
-
-[Runway Gne-2    ](https://runwayml.com/ai-tools/gen-2/)             https://runwayml.com/ai-tools/gen-2/
-
-Pika                                https://pika.art/
-
-PixVerse                          https://app.pixverse.ai/
-
-即梦                               https://jimeng.jianying.com
-
-**免费：**
-
-Vivago                             https://vivago.ai/
-
-Haiper                              https://haiper.ai/
-
-Stable Video                     https://www.stablevideo.com/
+- Vivago: https://vivago.ai/
+- Haiper: https://haiper.ai/
+- Stable Video: https://www.stablevideo.com/

@@ -1,12 +1,13 @@
+
 # Clawdbot 一夜爆红，腾讯云教你一键秒级部署 7×24h 核动力“牛马”！
 
-> 来源：[https://yunyinghui.feishu.cn/docx/Z0qrd8fEoorIgSx03rNcBuzknSe](https://yunyinghui.feishu.cn/docx/Z0qrd8fEoorIgSx03rNcBuzknSe)
-
-> **来源👸号：**腾讯云开发者
-
-> **发布时间：**2026-01-27 18:19:08
-
-> **收录开源AI知识库：**[万象 AI 实验室](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
+> 来源：https://yunyinghui.feishu.cn/docx/Z0qrd8fEoorIgSx03rNcBuzknSe
+>
+> 来源👸号：腾讯云开发者
+>
+> 发布时间：2026-01-27 18:19:08
+>
+> 收录开源AI知识库：[万象 AI 实验室](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
 
 ![](img/7406019b9e5459e2512f230a9a6c9650.png)
 
@@ -28,21 +29,19 @@ Clawdbot 运行在使用者自己的环境中（比如本地电脑、个人服�
 
 此外它同时拥有完整的操作权限与超长记忆，这意味着它是一个专属于个人的 AI Agent，能力范围被无限拓宽的同时，也无需担心数据落入少数“大公司”之手。
 
-由于 ClawdBot 目前仅支持海外市场的一些社交软件，身处国内的我们想要体验可能需要略费一些周章，接下来的文章将带大家完整跑一遍部署流程。
+由于 Clawdbot 目前仅支持海外市场的一些社交软件，身处国内的我们想要体验可能需要略费一些周章，接下来的文章将带大家完整跑一遍部署流程。
 
-# **01**
+## 01 Clawdbot 适合的运行环境
 
-Clawdbot 适合的运行环境
+伴随着 Clawdbot 的爆火，Mac Mini 也一举跃升为“理财产品”，最有震撼力的消息就是社区内有非常多的先行者声称购入了大量 Mac Mini 来运行 Clawdbot。
 
-伴随着 ClawdBot 的爆火，Mac Mini 也一举跃升为“理财产品”，最有震撼力的消息就是社区内有非常多的先行者声称购入了大量 Mac Mini 来运行 ClawdBot。
-
-不过随着更多人了解到这个项目，也出现了另一种声音：超高权限下，ClawdBot 更适合运行在一个和主力电脑相隔离的环境下，或许是你的一个旧电脑（MacOS，目前支持的程度最好），又或许是一台云服务器（操作系统为 Linux，同样支持，并且环境也与本地强隔离）。
+不过随着更多人了解到这个项目，也出现了另一种声音：超高权限下，Clawdbot 更适合运行在一个和主力电脑相隔离的环境下，或许是你的一个旧电脑（macOS，目前支持的程度最好），又或许是一台云服务器（操作系统为 Linux，同样支持，并且环境也与本地强隔离）。
 
 社区交流下的一个共识是，建议不要把 Clawdbot 部署在主力电脑中，否则可能对本地数据的安全造成影响。
 
-一台旧的 MacOS 电脑也好，亦或是效仿社区大牛紧急购入 Mac Mini 也好（涨价了！涨价了！涨价了！），都需要花费不少时间和资金成本，更别说长时间运行还得产生一些电费和更高的设备故障概率。
+一台旧的 macOS 电脑也好，亦或是效仿社区大牛紧急购入 Mac Mini 也好（涨价了！涨价了！涨价了！），都需要花费不少时间和资金成本，更别说长时间运行还得产生一些电费和更高的设备故障概率。
 
-而使用一台云服务器目前看来，是一个更加迅速（几分钟内即可上手）、成本更加友好（几十块钱即可开始）的选择，并且云服务器天然支持 7*24 小时运行，与 Clawdbot 的定位可谓是天作之合
+而使用一台云服务器目前看来，是一个更加迅速（几分钟内即可上手）、成本更加友好（几十块钱即可开始）的选择，并且云服务器天然支持 7*24 小时运行，与 Clawdbot 的定位可谓是天作之合。
 
 就是你了，出来吧——轻量应用服务器 Lighthouse！
 
@@ -52,17 +51,14 @@ Clawdbot 适合的运行环境
 
 目前 Lighthouse 已经同步上线了 Clawdbot 应用模板，预置了 Clawdbot 运行所需的环境，无需手动安装，接下来就跟随本篇教程的步骤开启吧！
 
-# **02**
-
-基于应用模板一键安装 Clawdbot
+## 02 基于应用模板一键安装 Clawdbot
 
 目前 Lighthouse 支持通过两种方式使用应用模板来一键安装 Clawdbot：选购一台新实例或重装一台吃灰的实例，同时选择可以选择不同的腾讯云站点购买海外服务器（如硅谷、新加坡节点）进行部署。
 
-+   腾讯云国内站：适合国内开发者，可直接购买海外地域的服务器资源。
++ 腾讯云国内站：适合国内开发者，可直接购买海外地域的服务器资源。
++ 腾讯云国际站：如果您的公司主体、业务及目标用户均位于海外，可通过国际站进行注册和购买。右滑动阅读国际站版教程>>>
 
-+   腾讯云国际站：如果您的公司主体、业务及目标用户均**位于海外，可通过国际站进行注**册和购买。 右滑动阅读国际站版教程>>>
-
-#    2.1 方式一：选购一台 Lighthouse 实例
+### 2.1 方式一：选购一台 Lighthouse 实例
 
 前往 Lighthouse 购买页，配置项按照下图直接选择即可，或者点击文章最下方“阅读原文 ” 一键直达。
 
@@ -70,17 +66,12 @@ Clawdbot 适合的运行环境
 
 扫码直达购买页面
 
-+   应用创建方式：应用模板 > AI 智能体 > Clawbot
-
-+   地域：优先选择海外地域，如硅谷、弗吉尼亚、新加坡等
-
-+   套餐
-
-+   套餐类型：锐驰型（推荐）、入门型、通用型
-
-+   套餐配置：2C2GB 或以上均可
-
-+   服务器名称、登录方式等按需配置即可。
++ 应用创建方式：应用模板 > AI 智能体 > Clawdbot
++ 地域：优先选择海外地域，如硅谷、弗吉尼亚、新加坡等
++ 套餐
++ 套餐类型：锐驰型（推荐）、入门型、通用型
++ 套餐配置：2C2GB 或以上均可
++ 服务器名称、登录方式等按需配置即可。
 
 ![](img/de3613118c205f309e017fe95d5f55cc.png)
 
@@ -88,11 +79,11 @@ Clawdbot 适合的运行环境
 
 ![](img/c99725a8f48b68bc62745139bdd38d07.png)
 
-#    2.2 方式二：重装一台“吃灰机”
+### 2.2 方式二：重装一台“吃灰机”
 
 在 Lighthouse 控制台内，找到自己账号下长期吃灰的那台 Lighthouse 实例，在实例页面内点击“…”或“更多”按钮，找到并点击重装系统。
 
-**注**意：Clawdbot 应用模板仅上架至中国香港、其他海外地域。因此未上架地域的重装系统页无法看到 Clawdbot 的选项。
+注意：Clawdbot 应用模板仅上架至中国香港、其他海外地域。因此未上架地域的重装系统页无法看到 Clawdbot 的选项。
 
 ![](img/3c732f3487ea5dc863ebb5f5c26f3294.png)
 
@@ -104,7 +95,7 @@ Clawdbot 适合的运行环境
 
 点击页面内的确认按钮，待重装完成后，继续进行后续步骤即可～
 
-#    2.3 登入服务器完成后续步骤
+### 2.3 登入服务器完成后续步骤
 
 前往 Lighthouse 控制台即可查看刚刚选购或重装完成的 Clawdbot 实例，点击页面内的“登录按钮”：
 
@@ -118,21 +109,17 @@ Clawdbot 适合的运行环境
 
 ![](img/925fc711b052a7c0c4765c64231a3fb4.png)
 
-# **03**
-
-**后续配置**
+## 03 后续配置
 
 Clawdbot 与常见的应用模板不同，官方提供了若干需用户自行手动配置的步骤，在首次登入服务器后，输入并回车运行如下命令开始配置：
-
-+
 
 ```
 clawdbot onboard
 ```
 
-**运行 **clawdbot onboard 后，需要通过键盘来完成 后续配置动作，关键操作：方向键控制选项，回车表示选择并确认。
+运行 `clawdbot onboard` 后，需要通过键盘来完成后续配置动作，关键操作：方向键控制选项，回车表示选择并确认。
 
-#   ** 3.1 同意免责声明**
+### 3.1 同意免责声明
 
 运行上面的命令后，将会出现一个问题：是否知晓风险，选择 Yes 就行。
 
@@ -140,52 +127,50 @@ clawdbot onboard
 
 “我明白它功能强大，但也存在固有风险。是否继续？”
 
-#    3.2 配置模式选择：快速入门
+### 3.2 配置模式选择：快速入门
 
-接下来需要选择 Onboarding 的模式，我们选择 QuickStart 。
+接下来需要选择 `Onboarding` 的模式，我们选择 `QuickStart`。
 
 ![](img/4a2f8cc063c7ae8cc6be9c82e1bfadf9.png)
 
-#   ** 3.3 模型配置**
+### 3.3 模型配置
 
-紧接着的一步是选择 Model/auth 提供商，如果想省时省心的话优先推荐选择国内的厂商（MiniMax、Qwen、Moonshot AI、Z.AI/GLM），本文选择 Moonshot AI（月之暗面/Kimi，点击直达 API Key 管理页）进行演示， Moonshot AI auth method 选择 Moonshot AI API key 即可，然后填入自己的 API K ey（点此获取 https://platform.moonshot.cn/console/api-keys ）， 再粘贴自己的 Moonshot API Key ，默认模型选择 Keep current 。
+紧接着的一步是选择 `Model/auth` 提供商，如果想省时省心的话优先推荐选择国内的厂商（MiniMax、Qwen、Moonshot AI、Z.AI/GLM），本文选择 Moonshot AI（月之暗面/Kimi，点击直达 `API Key` 管理页）进行演示，`Moonshot AI auth method` 选择 `Moonshot AI API key` 即可，然后填入自己的 `API Key`（点此获取 `https://platform.moonshot.cn/console/api-keys` ），再粘贴自己的 `Moonshot API Key`，默认模型选择 `Keep current`。
 
 ![](img/bff7337d56b6feda64135a35178d3be8.png)
 
 PS：挖个坑，嘉钰后续研究研究能不能配置中转服务以实现海外模型接入，这里先按下不表。
 
-#   ** 3.4 聊天软件配置**
+### 3.4 聊天软件配置
 
-这一步将决定后续在什么界面下与 Clawdbot 进行交互，此处官方支持的聊天软件几乎是我们日常不会使用的，本教程我们选择以 Discord 作为演示。更多聊天软件的配置参见官方指引：Channels（ https://docs.clawd.bot/channels ）。
+这一步将决定后续在什么界面下与 Clawdbot 进行交互，此处官方支持的聊天软件几乎是我们日常不会使用的，本教程我们选择以 Discord 作为演示。更多聊天软件的配置参见官方指引：Channels（ `https://docs.clawd.bot/channels` ）。
 
-在配置流程中选择 Discord （Bot API） ，选择完成后会提示如何获取 bot token （挺贴心的）。
+在配置流程中选择 `Discord (Bot API)` ，选择完成后会提示如何获取 `Bot token` （挺贴心的）。
 
 ![](img/eb88168a0efdaa62d9ec60185eb9fb33.png)
 
-1、前往 Discord Developer Portal > Application > New Application
+1、前往 `Discord Developer Portal` > `Application` > `New Application`
 
 ![](img/74703ab36e5c68e924cc7829d4284df9.png)
 
-2、跟随页面指引创建完 Application 后，在左侧导航找到并进入 Bot > Add Bot > Reset Token > copy token，在页面内复制 Bot token 后，返回并输入：
+2、跟随页面指引创建完 `Application` 后，在左侧导航找到并进入 `Bot` > `Add Bot` > `Reset Token` > `copy token`，在页面内复制 `Bot token` 后，返回并输入：
 
 ![](img/03af753593008389b9eda5003b7e203e.png)
 
-3、 在页面内打开 Message Content Intent 的选项并保存：
+3、在页面内打开 `Message Content Intent` 的选项并保存：
 
 ![](img/3bf78936e9e53fa7fd415b61d075df6d.png)
 
-4、进入 OAuth2 选项，往下滑动页面：
+4、进入 `OAuth2` 选项，往下滑动页面：
 
-1.  在 OAuth2 URL Generator 中勾选 bot
-
-1.  在 Bot Permissions 中勾选 Send Messages 和 Read Message History
+1. 在 `OAuth2 URL Generator` 中勾选 `bot`
+1. 在 `Bot Permissions` 中勾选 `Send Messages` 和 `Read Message History`
 
 ![](img/1ed9cf6fbaf6dbb55cd52a5583f599f1.png)
 
-5、 把页面滚动至底部，复制并在浏览器中打开生成好的链接，选择邀请进入的 server 后，点击 Continue 后进行授权，即可邀请 bot 加入：
+5、把页面滚动至底部，复制并在浏览器中打开生成好的链接，选择邀请进入的 `server` 后，点击 `Continue` 后进行授权，即可邀请 bot 加入：
 
 ![](img/7cca890c0a48ad7165bdc2ff3e65e86f.png)
-
 
 ![](img/798a3060ff80d8d333be6c22614ee8ea.png)
 
@@ -199,13 +184,11 @@ PS：挖个坑，嘉钰后续研究研究能不能配置中转服务以实现海
 
 ![](img/ec9ae00dc806c147dd90584185c4172c.png)
 
-注意，Enable hooks 的选项选择 session-memory：
+注意，`Enable hooks` 的选项选择 `session-memory`：
 
 ![](img/058289bd34cfde3e9c4f825edc908294.png)
 
-接下来，我们在服务器命令行这里粘贴并运行如下命令，启动 Gateway：
-
-+
+接下来，我们在服务器命令行这里粘贴并运行如下命令，启动 `Gateway`：
 
 ```
 clawdbot gateway --port 18789 --verbose
@@ -219,19 +202,15 @@ clawdbot gateway --port 18789 --verbose
 
 切记这里一定需要和 bot 进行私聊！！！
 
-紧接着返回服务器命令行，按下 Ctrl+C （Windows）或者 Command+C （MacOS）终止 Gateway，然后粘贴并运行如下命令进行配对：
+紧接着返回服务器命令行，按下 `Ctrl+C`（Windows）或者 `Command+C`（MacOS）终止 `Gateway`，然后粘贴并运行如下命令进行配对：
 
-把<code>替换为上图中的“Pairing code”后面的内容。
-
-+
+把 `<code>` 替换为上图中的“Pairing code”后面的内容。
 
 ```
-clawdbot pairing approve discord &lt;code&gt;
+clawdbot pairing approve discord <code>
 ```
 
-**执**行完成后再次执行如下命令运行 Gateway，然后回到 Discord 与 bot 进行对话，如果正常回复则说明部署成功：
-
-+
+执行完成后再次执行如下命令运行 `Gateway`，然后回到 Discord 与 bot 进行对话，如果正常回复则说明部署成功：
 
 ```
 clawdbot gateway --port 18789 --verbose
@@ -243,17 +222,17 @@ clawdbot gateway --port 18789 --verbose
 
 ![](img/a0bcb0805c63b129fd784c13c8c7f2c9.png)
 
-**On Januar**y 26, a product called Clawdbot  suddenly went viral across both international and Chinese tech communities. From X and Reddit to Chinese developer forums, it quickly became one of the most discussed AI projects.
+On January 26, a product called Clawdbot suddenly went viral across both international and Chinese tech communities. From X and Reddit to Chinese developer forums, it quickly became one of the most discussed AI projects.
 
 ![](img/6919eecd7be0e3a403337f047558e18e.png)
 
-Its creator, **Peter **, repeatedly emphasized that Clawdbot was originally designed as a “ life assistant ” :
+Its creator, Peter, repeatedly emphasized that Clawdbot was originally designed as a “life assistant”:
 
 you send a message via WhatsApp, the request is forwarded to Claude Code, and the result is sent back to you.
 
-Clawdbo**t **is not the first AI Agent capable of performing real tasks. However, only two or three weeks after its release on Claude Cowork, it unexpectedly reignited excitement in the AI community. The reason behind this renewed hype may not lie solely in the fact that its code is 100% AI-generated , but more importantly in its unexpected human–AI collaboration model .
+Clawdbot is not the first AI Agent capable of performing real tasks. However, only two or three weeks after its release on Claude Cowork, it unexpectedly reignited excitement in the AI community. The reason behind this renewed hype may not lie solely in the fact that its code is 100% AI-generated, but more importantly in its unexpected human–AI collaboration model.
 
-Clawdb**o**t runs inside the user’s own environment — such as a personal computer or private server — and interacts through familiar chat applications. Communicating with it feels like talking to a colleague or a friend. In addition, it has full system-level permissions and long-term memory , which effectively turns it into a truly personal AI Agent. This dramatically expands its potential capabilities while also avoiding the risk of sensitive data being centralized in large corporations.
+Clawdbot runs inside the user’s own environment — such as a personal computer or private server — and interacts through familiar chat applications. Communicating with it feels like talking to a colleague or a friend. In addition, it has full system-level permissions and long-term memory, which effectively turns it into a truly personal AI Agent. This dramatically expands its potential capabilities while also avoiding the risk of sensitive data being centralized in large corporations.
 
 ## Where should Clawdbot run?
 
@@ -265,13 +244,17 @@ because Clawdbot operates with very high privileges, it is better suited to an e
 
 Note: Clawdbot’s Windows support is still limited, so Windows is not recommended for early experimentation.
 
-## **Why Lighthouse?**
+## Why Lighthouse?
+
+
+
+# Deploying Clawdbot on Tencent Cloud Lighthouse
 
 Whether you use an old Mac or rush to buy a Mac mini like many community pioneers, both options require significant time and financial investment. Long-term operation also incurs electricity costs.
 
-In contrast, a **cloud server **offers a faster and more cost-effective solution:
+In contrast, a `cloud server` offers a faster and more cost-effective solution:
 
-you can get started within minutes, with entry-level costs of only a few dollars per month. Cloud servers are naturally suited for 24/7 operation , making them a perfect match for Clawdbot’s always-on assistant design.
+you can get started within minutes, with entry-level costs of only a few dollars per month. Cloud servers are naturally suited for 24/7 operation, making them a perfect match for Clawdbot’s always-on assistant design.
 
 This is where Tencent Cloud Lighthouse comes in.
 
@@ -279,11 +262,11 @@ Lighthouse is a lightweight cloud server product designed for lightweight applic
 
 So how can Clawdbot be deployed quickly on Lighthouse?
 
-Lighthouse now offers an official Clawdbot application template , which comes with all required runtime dependencies pre-installed — no manual setup needed. In the following steps, we will walk you through the entire process of deploying and configuring Clawdbot on Lighthouse, step by step.
+Lighthouse now offers an official Clawdbot application template, which comes with all required runtime dependencies pre-installed — no manual setup needed. In the following steps, we will walk you through the entire process of deploying and configuring Clawdbot on Lighthouse, step by step.
 
 ## 1. Create a Lighthouse Server
 
-Open- One click:
+One click:
 
 👉 https://buy.tencentcloud.com/lighthouse?blueprintType=APP_OS&blueprintOfficialId=lhbp-8hq35xoy&regionId=15&zone=na-siliconvalley-1&bundleId=bundle_rs_nmc_lin_med2_01&loginSet=AUTO&rule=true&from=lh-console
 
@@ -291,37 +274,29 @@ Special Offers:
 
 👉https://www.tencentcloud.com/act/pro/lighthouse?from_qcintl=112010201
 
-2. Create a new instance.
+### 2. Create a new instance.
 
 ![](img/eed131132bab4c6a0bad08c878f9f132.png)
 
 ![](img/a056c0dba3950615b9ac8a9ef35cb400.png)
 
-3. Select the following options:
+### 3. Select the following options:
 
 Please choose according to your actual needs. The following configuration is recommended.
 
-+   Operating system: Clawdbot
++ Operating system: Clawdbot
++ Region: Singapore or Tokyo
++ Instance size: 2 vCPU, 2GB RAM
++ Billing period: 1 month
 
-+   Region: Singapore or Tokyo
+### 4. Save the following information:
 
-+   Instance size: 2 vCPU, 2GB RAM
-
-+   Billing period: 1 month
-
-4. Save the following information:
-
-+   Public IP address
-
-+   Login password (or reset it in the console)
-
-##
++ Public IP address
++ Login password (or reset it in the console)
 
 ## 2. Log in to the Server
 
 Open a terminal on your local computer and run:
-
-+
 
 ```
 ssh ubuntu@YOUR_PUBLIC_IP
@@ -331,15 +306,11 @@ ssh ubuntu@YOUR_PUBLIC_IP
 
 When prompted:
 
-+
-
 ```
 Are you sure you want to continue connecting?
 ```
 
 Type:
-
-+
 
 ```
 yes
@@ -347,15 +318,13 @@ yes
 
 Then enter your password (input will not be visible — this is normal).
 
-Note: On Ubuntu images, the default login user is ubuntu, not root.
+Note: On Ubuntu images, the default login user is `ubuntu`, not `root`.
 
 ![](img/7273021e97a02af42f215b09d01df63b.png)
 
 ## 3. Install Clawbot
 
 Run:
-
-+
 
 ```
 clawdbot onboard
@@ -365,15 +334,13 @@ clawdbot onboard
 
 Wait approximately 2–3 minutes for installation to complete.
 
-## **4. Configuration Choices (R**ecommended Settings)
+## 4. Configuration Choices (Recommended Settings)
 
 During installation, Clawbot will present several interactive options.
 
-Below are the official recommended selections for first-time users :
+Below are the official recommended selections for first-time users:
 
-## ( 1) Risk Acknowledgement
-
-##
+### (1) Risk Acknowledgement
 
 Select: Yes
 
@@ -385,11 +352,7 @@ This confirmation ensures the user understands its powerful capabilities before 
 
 ![](img/73c531d536fb0251267316c5828c3160.png)
 
-##
-
-## ( 2) Onboarding Mode
-
-##
+### (2) Onboarding Mode
 
 Select: QuickStart
 
@@ -401,13 +364,9 @@ It is optimized for first-time deployment and reduces error probability.
 
 ![](img/bdcafe3b47765d08dc656d4c566a4047.png)
 
-##
+### (3) Model/Auth Provider
 
-## ( 3)  Model/Auth Provider
-
-##
-
-## ( 3.a) Gemini Authentication Method
+#### (3.a) Gemini Authentication Method
 
 Select: Google
 
@@ -421,7 +380,7 @@ Google (Gemini) is chosen because it provides an official and stable API, good m
 
 Recommended model:
 
-google/gemini-3-pro-preview
+`google/gemini-3-pro-preview`
 
 ![](img/94ebbae6b5a1bbefed042350d35c6c94.png)
 
@@ -431,17 +390,12 @@ Open the following website:
 
 Steps:
 
-1.  Sign in with your Google account
+1. Sign in with your Google account
+2. Click Get API key (top right corner)
+3. Choose Create API key
+4. Copy the generated API key
 
-1.  Click Get API key (top right corner)
-
-1.  Choose Create API key
-
-1.  Copy the generated API key
-
-##
-
-## ( 3.b) Qwen Authentication Method
+#### (3.b) Qwen Authentication Method
 
 Select: Qwen OAuth
 
@@ -453,13 +407,10 @@ OAuth authentication avoids manual endpoint configuration and simplifies setup b
 
 ![](img/529ac36d17a378a0c852f85c46340dbe.png)
 
-##
+### (4) Communication Channel
 
-## ( 4) Communication Channel
-
-+   If you use Telegram or WhatsApp: select the corresponding platform
-
-+   Otherwise: select Skip for now
++ If you use Telegram or WhatsApp: select the corresponding platform
++ Otherwise: select Skip for now
 
 ![](img/e48274f950415de433232b00083af752.png)
 
@@ -467,7 +418,7 @@ OAuth authentication avoids manual endpoint configuration and simplifies setup b
 
 ![](img/ced104b07db386ff205481193e3a8eb9.png)
 
-## ( 5) Configure Skills
+### (5) Configure Skills
 
 Select: No
 
@@ -479,51 +430,39 @@ For initial deployment, limiting permissions improves stability and security.
 
 ![](img/c5dce7764b221a7f03741eb850573c61.png)
 
-## ( 6) Enable Hooks
+### (6) Enable Hooks
 
-##
-
-Select only: session-memory
+Select only: `session-memory`
 
 Rationale:
 
-+   Enables conversation memory
-
-+   Does not execute commands
-
-+   Minimal security risk
-
-+   Required to proceed past this step
++ Enables conversation memory
++ Does not execute commands
++ Minimal security risk
++ Required to proceed past this step
 
 Do not select:
 
-+   boot-md (auto-run scripts on startup)
-
-+   command-logger (command tracking and logging)
++ `boot-md` (auto-run scripts on startup)
++ `command-logger` (command tracking and logging)
 
 ![](img/212e27f1bb3410e13209aa50509b4ad3.png)
 
-## **( 7) Hatch Mode**
+### (7) Hatch Mode
 
 Select: Hatch in TUI
 
 Rationale:
 
-+   TUI (Terminal UI) launches Clawbot directly in the terminal:No additional ports required
-
-+   No web interface configuration
-
-+   Immediate verification of successful startup
++ TUI (Terminal UI) launches Clawbot directly in the terminal: No additional ports required
++ No web interface configuration
++ Immediate verification of successful startup
 
 ![](img/456110d96a02c031b1530cc4a398ce21.png)
-
-##
 
 ## 5. Verify Successful Deployment
 
 If you see:
-
-+
 
 ```
 Wake up，my firend!
@@ -531,23 +470,15 @@ Wake up，my firend!
 
 This confirms:
 
-+   Clawbot is running
-
-+   Model connection is active
-
-+   Deployment is successful 🎉
++ Clawbot is running
++ Model connection is active
++ Deployment is successful 🎉
 
 ![](img/6c88dcccb35f89fbc3b59d3a3aeb73e7.png)
 
-##
-
 ## 6. First Interaction
 
-##
-
 Example prompt:
-
-+
 
 ```
 You are Clawbot. Your main responsibility isto help mewith research, writing, and analysis tasks.
@@ -555,13 +486,9 @@ You are Clawbot. Your main responsibility isto help mewith research, writing, an
 
 ![](img/854db0e76a6ec2e8b24138810a1add9f.png)
 
-##
-
 ## 7. Functional Test
 
 Send:
-
-+
 
 ```
 Explain what an AI agent isin simple terms.
@@ -571,38 +498,27 @@ If Clawbot responds normally, the system is fully operational.
 
 ![](img/6ba267b684aede44770cfe6cc755f6a8.png)
 
-##
-
 ## 8. Security Recommendation
 
 Clawbot is capable of:
 
-+   Executing shell commands
-
-+   Reading and writing files
-
-+   Running automated tasks
++ Executing shell commands
++ Reading and writing files
++ Running automated tasks
 
 Recommended usage:
 
-+   Run only on VPS or cloud instances
++ Run only on VPS or cloud instances
++ Avoid personal machines
++ Do not grant access to banking, wallet, or critical accounts
++ Treat as an AI automation sandbox
 
-+   Avoid personal machines
-
-+   Do not grant access to banking, wallet, or critical accounts
-
-+   Treat as an AI automation sandbox
-
-##
-
-**Summary**
+## Summary
 
 You have successfully:
 
-+   Deployed Clawbot on Tencent Cloud Lighthouse
-
-+   Configured a stable baseline environment
-
-+   Launched an AI agent capable of continuous operation
++ Deployed Clawbot on Tencent Cloud Lighthouse
++ Configured a stable baseline environment
++ Launched an AI agent capable of continuous operation
 
 -END-

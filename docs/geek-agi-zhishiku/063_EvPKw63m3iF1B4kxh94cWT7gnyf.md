@@ -1,3 +1,4 @@
+
 # 生产力 & 提效
 
 > 来源：[https://geekbang.feishu.cn/docx/LolJdOtSKokI7oxylrQcj8RWnLf](https://geekbang.feishu.cn/docx/LolJdOtSKokI7oxylrQcj8RWnLf)
@@ -22,5 +23,5 @@
 | [活动嘉宾确认](https://github.com/AlexAnys/awesome-openclaw-usecases-zh/blob/main/usecases/event-guest-confirmation.md) | 自动逐一呼叫嘉宾确认出席、收集备注并编译摘要 |
 | [项目状态管理](https://github.com/AlexAnys/awesome-openclaw-usecases-zh/blob/main/usecases/project-state-management.md) | 事件驱动的项目追踪，自动捕获上下文，取代静态看板 |
 | [动态仪表板](https://github.com/AlexAnys/awesome-openclaw-usecases-zh/blob/main/usecases/dynamic-dashboard.md) | 实时仪表板，子智能体并行从 API、数据库和社交媒体获取数据 |
-| [自主项目管理](https://github.com/AlexAnys/awesome-openclaw-usecases-zh/blob/main/usecases/autonomous-project-management.md) | 使用 STATE.yaml 模式协调多智能体项目，无需人工编排 |
+| [自主项目管理](https://github.com/AlexAnys/awesome-openclaw-usecases-zh/blob/main/usecases/autonomous-project-management.md) | 使用 `STATE.yaml` 模式协调多智能体项目，无需人工编排 |
 | [多智能体专业团队](https://github.com/AlexAnys/awesome-openclaw-usecases-zh/blob/main/usecases/multi-agent-team.md) | 4 个专业 AI 智能体（战略+开发+营销+商务）作为你的虚拟团队 |

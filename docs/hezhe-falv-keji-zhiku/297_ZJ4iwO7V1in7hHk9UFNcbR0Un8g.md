@@ -1,12 +1,13 @@
+
 # 全球法院系统如何拥抱 AI（Coming Soon）
 
 > 来源：[https://docs.feishu.cn/docx/WvMfdOl9boQUEKxhI4wcv3rKndO](https://docs.feishu.cn/docx/WvMfdOl9boQUEKxhI4wcv3rKndO)
 
 ---
 
-# 成立 AI 工作组，研究 AI
+## 成立 AI 工作组，研究 AI
 
-## 美国新泽西州最高法院就在法律实践中使用 AI 提出初步指导方针
+### 美国新泽西州最高法院就在法律实践中使用 AI 提出初步指导方针
 
 近日，新泽西州最高法院就在法律实践中使用人工智能提出一项初步指导方针，强调了对 AI 工具的谨慎使用，并提出避免潜在陷阱的重要性。具体来说，该法院告诫律师们要注意避免诸如“假判例”这样的问题。
 
@@ -18,27 +19,31 @@
 
 > 拓展阅读：https://www.law.com/njlawjournal/2024/01/26/guidance-released-by-nj-judiciary-calls-use-of-ai-unavoidable-for-attorneys/
 
-## 布鲁克林州上诉法院启动 AI 特别工作组
+### 布鲁克林州上诉法院启动 AI 特别工作组
 
 2024 年 1 月，布鲁克林州上诉法院的首席大法官 Hector LaSalle 宣布该法院第二分部上诉庭正在成立一个特别工作组，以探索 AI 在上诉和审判法院可能发挥的作用。LaSalle 法官在一份声明中表示：“法律行业不能免于 AI 领域正在发生的快速演变。随着 AI 技术的快速发展，法院必须做好准备。”该法院的管理办公室表示，特别工作组成员将与 AI 领域的各种专家会面，就上诉法院和审判法院如何最好地使用该技术提出建议。此外，该小组还负责确定在法院系统中引入这项技术可能带来的潜在风险和危害。
 
 > 拓展阅读：https://www.law.com/newyorklawjournal/2024/01/12/brooklyn-based-state-appeals-court-launches-ai-task-force/
 
-## 美国州法院快速反应团队发布 AI 临时指南
+### 美国州法院快速反应团队发布 AI 临时指南
 
 2024 年 2 月，美国国家州法院中心表示，由州司法领导人创立的人工智能（AI）快速响应团队发布了一份临时指南和资源，以帮助州法院驾驭 AI 技术。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1805084/rapid-response-team-releases-ai-guidance-for-state-courts
 
-## 伊利诺伊州最高法院组建 AI 特别工作组
+### 伊利诺伊州最高法院组建 AI 特别工作组
 
 2024 年 2 月，[美国伊利诺伊州最高法院](https://www.law360.com/agencies/illinois-supreme-court)成立了一个特别工作组，以调研生成式 AI 的使用方法，并就伊利诺伊州司法部门应如何监管和利用该技术提出建议。同时，该法院还建议将 AI 作为加强运营和客户服务的手段的机会。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1796486/illinois-supreme-court-forms-generative-ai-task-force
 
-## 美国国家州法院中心 AI 工作组发布关于法院实施 AI 技术的新指南
+### 美国国家州法院中心 AI 工作组发布关于法院实施 AI 技术的新指南
 
-2024 年 4 月，美国国家州法院中心 AI 快速反应小[组（](https://www.ncsc.org/__data/assets/pdf_file/0025/99232/RRT-AI-getting-started-march-2024.pdf)RRT[）发布两](https://www.ncsc.org/__data/assets/pdf_file/0026/99233/RRT-AI-platform-considerations-march-2024.pdf)个新的临时指导文件：「入门」和「平台考虑」—— 关于法院如何开始尝试 AI，了解 AI 技术将如何使用数据，以及在选择相关平台时应该考虑哪些因素。
+2024 年 4 月，美国国家州法院中心 AI 快速反应小组（RRT）发布两个新的临时指导文件：「入门」和「平台考虑」—— 关于法院如何开始尝试 AI，了解 AI 技术将如何使用数据，以及在选择相关平台时应该考虑哪些因素。
+
+[入门指南](https://www.ncsc.org/__data/assets/pdf_file/0025/99232/RRT-AI-getting-started-march-2024.pdf)
+
+[平台考虑](https://www.ncsc.org/__data/assets/pdf_file/0026/99233/RRT-AI-platform-considerations-march-2024.pdf)
 
 **入门指南**
 
@@ -70,7 +75,7 @@ AI RRT 是 NCSC、首席大法官会议（CCJ）和州法院行政长官会议�
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1820656/task-force-releases-new-ai-guidance-for-courts
 
-## 纽约法院系统启动 AI 工作组，研究法院应用 AI 的好处和风险
+### 纽约法院系统启动 AI 工作组，研究法院应用 AI 的好处和风险
 
 2024 年 4 月，[纽约州统一法院系统](https://nycourts.gov)公布了一个由法官、法院管理人员、律师、立法者、学者和其他专家组成的 AI 与法院咨询委员会。该小组的任务是审查法官、法院工作人员、律师和当事人在法院中使用 AI 工具的情况；确定 AI 改善纽约州法院系统的机会；最小化法院工作人员和官员使用 AI 工具可能产生的风险；并制定适当的保障措施，以确保 AI 在法院中被安全、负责任和有效地使用等。
 
@@ -100,7 +105,7 @@ AI RRT 是 NCSC、首席大法官会议（CCJ）和州法院行政长官会议�
 
 > https://www.law360.com/pulse/legal-tech/articles/1824567/ny-court-system-launches-panel-to-study-ai-risks-rewards
 
-## 加州司法系统成立 AI 特别工作组
+### 加州司法系统成立 AI 特别工作组
 
 5 月 17 日，美国[加州司法部门](https://www.courts.ca.gov)成立 AI 特别工作组，以评估生成式 AI 对法院和法院用户的潜在好处，同时降低风险。
 
@@ -124,17 +129,17 @@ Castro 法官表示：“生成式 AI 还可以增加公众诉诸司法的机会
 
 > 拓展阅读：https://newsroom.courts.ca.gov/news/chief-justice-creates-task-force-use-generative-ai-california-courts
 
-> [更多加州司法部门的会](https://jcc.legistar.com/Calendar.aspx)议议程和理事会报告，可以访问 👉 加州法院会议信息中心
+> [更多加州司法部门的会议议程和理事会报告，可以访问 👉 加州法院会议信息中心](https://jcc.legistar.com/Calendar.aspx)
 
-# 积极应用 AI，推出智能审判系统
+## 积极应用 AI，推出智能审判系统
 
-## 中国司法大数据研究院发布“智能裁判辅助办案系统 1.0 版本”
+### 中国司法大数据研究院发布“智能裁判辅助办案系统 1.0 版本”
 
 2024 年 2 月，中国司法大数据研究院发布“智能裁判辅助办案系统 1.0 版本”。这个系统利用大模型技术，研发了案情脉络分析、冲突事实甄别、裁判结果推理和法律文书生成等关键技术能力，可以对多元卷宗材料进行分析，以辅助法官梳理案情脉络、甄别冲突事实，并根据法官确认的事实推理生成裁判说理与结果、辅助撰写法律文书。
 
 > 拓展阅读：https://mp.weixin.qq.com/s/BSnAG07OtFLMaPoM__VBEQ
 
-## 最高人民法院“版权 AI 智审”试点工作正式启动
+### 最高人民法院“版权 AI 智审”试点工作正式启动
 
 2024 年 4 月，最高人民法院启动“版权 AI 智审”试点工作。
 
@@ -144,7 +149,7 @@ Castro 法官表示：“生成式 AI 还可以增加公众诉诸司法的机会
 
 > 拓展阅读：https://mp.weixin.qq.com/s/x-c_fUkx12xw7BVFahm6UA
 
-## 深圳中院上线人工智能辅助审判系统
+### 深圳中院上线人工智能辅助审判系统
 
 2024 年 6 月，广东省深圳市中级人民法院上线自主研发的人工智能辅助审判系统。这是深圳在“人工智能+”和“数据要素×”融合应用领域的一个标志性示范，也标志着“人工智能+审判”的深度融合进入实践阶段。
 
@@ -154,7 +159,7 @@ Castro 法官表示：“生成式 AI 还可以增加公众诉诸司法的机会
 
 > https://mp.weixin.qq.com/s/flHKZIhmTXo6ehhYUGKIoQ
 
-## 加州高等法院：人工智能供应商应该对有偏见的工作筛选负责
+### 加州高等法院：人工智能供应商应该对有偏见的工作筛选负责
 
 近日，加州最高法院下达了一项具有里程碑意义的裁决，对人工智能行业产生了重大影响：用算法定位招聘广告、筛选申请人或为其他公司执行其他招聘相关任务的供应商，应直接承担州法律下的歧视责任。
 
@@ -162,7 +167,7 @@ Castro 法官表示：“生成式 AI 还可以增加公众诉诸司法的机会
 
 > 拓展阅读：https://www.law.com/corpcounsel/2023/08/31/california-high-court-holds-ai-vendors-liable-for-biased-job-screening/
 
-## 美国新泽西州最高法院成立人工智能委员会，关注人工智能的影响
+### 美国新泽西州最高法院成立人工智能委员会，关注人工智能的影响
 
 9 月 24 日，美国新泽西州最高法院宣布成立一个「最高法院人工智能和法院委员会」，研究人工智能对法院运作和法律领域可能的影响。该机构共由 31 名成员组成，包括司法和政府领导人、法官、律师、教育工作者和网络安全与技术专家等。
 
@@ -170,7 +175,7 @@ Castro 法官表示：“生成式 AI 还可以增加公众诉诸司法的机会
 
 > 拓展阅读：https://www.law.com/njlawjournal/2023/09/22/nj-supreme-court-convenes-committee-to-weigh-ethical-implications-of-ai/
 
-## 英国大法官使用 ChatGPT 总结裁决书
+### 英国大法官使用 ChatGPT 总结裁决书
 
 9 月 16 日，Skynews 消息，英国知名上诉大法官 Colin Birss 勋爵，在英国律师协会最近举办的一次活动的演讲中表示，他正在使用 ChatGPT 总结一些法律的裁决书。
 
@@ -182,7 +187,7 @@ Birss 说：“当我正准备写一份法律裁决书时 —— 我知道该如
 
 > 拓展阅读：https://mp.weixin.qq.com/s/jCmp7S2-G2grIkWdrXwwXw
 
-## 英国允许法官使用 ChatGPT 写裁决书，并公布官方指南
+### 英国允许法官使用 ChatGPT 写裁决书，并公布官方指南
 
 12 月底，知名媒体 The Week 消息，英格兰和威尔士地区的法官，允许使用 ChatGPT 撰写法律裁决书。
 

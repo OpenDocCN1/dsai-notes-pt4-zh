@@ -1,8 +1,9 @@
+
 # 【思维】
 
 > 来源：[https://my.feishu.cn/docx/Q964dJM5foo8lOxZOddc2gHInfh](https://my.feishu.cn/docx/Q964dJM5foo8lOxZOddc2gHInfh)
 
-> **纸上**得来终觉浅，绝知此事要躬行。真正稀缺的不是知识，而是实践的机会。
+> **纸上得来终觉浅，绝知此事要躬行。真正稀缺的不是知识，而是实践的机会。**
 
 # 🧠框架模型
 

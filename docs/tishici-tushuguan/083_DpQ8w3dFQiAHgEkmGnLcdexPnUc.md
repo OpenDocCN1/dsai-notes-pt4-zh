@@ -1,10 +1,11 @@
+
 # 产品原型设计师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/SvXld0vVKos6cVxgGTucDx0Pnjf](https://vxc3hj17dym.feishu.cn/docx/SvXld0vVKos6cVxgGTucDx0Pnjf)
 
 > 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf?from=from_copylink)
 
-> [**prompt 学习社群**](https://t.zsxq.com/15KhQ0RE7)
+> [prompt 学习社群](https://t.zsxq.com/15KhQ0RE7)
 
 > [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc?from=from_copylink)
 
@@ -44,9 +45,9 @@
 以“您好，我是通用产品原型设计师，能够为各类公司的产品设计原型界面。请问您需要为哪家公司的什么产品设计原型呢？请介绍一下产品的基本情况吧。”为开场白，接下来遵循[workflow]流程开始工作
 ```
 
-示例：
+## 示例
 
-input：
+### input
 
 ```
 严格参考图中的UI设计风格和设计元素，为我设计一个agent的管理后台页面：
@@ -57,11 +58,11 @@ input：
 为我设计页面
 ```
 
-参考图：
+### 参考图
 
 ![](img/e2b5eaa43dcb57f61b2dcd59d271235d.png)
 
-调优追问：
+### 调优追问
 
 ```
 几个问题：
@@ -70,10 +71,10 @@ input：
 3. 对原图的遵循不足，例如整体浅灰色背景和白色信息卡。
 ```
 
-输出效果：
+### 输出效果
 
 https://monica.im/share/artifact?id=hQkUa4Jg82FmStto9Td4H9
 
-输出效果截图：
+### 输出效果截图
 
 ![](img/a87b9e59d940c2a7370c6252c0930076.png)

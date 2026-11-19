@@ -1,3 +1,4 @@
+
 # 模型下载和安装
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/MrPndhATvov1NsxYcg1cz8uPnjb](https://v11enp9ok1h.feishu.cn/docx/MrPndhATvov1NsxYcg1cz8uPnjb)
@@ -14,23 +15,23 @@
 
 下载模型
 
-+   [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保`git lfs`命令已安装，安装教程请参考这里。
++ [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保`git lfs`命令已安装，安装教程请参考这里。
 
-+   模型文件已上传至 Huggingface, Modelsope ,  WiseModel  三个平台，用户可以快速安装模型。
++ 模型文件已上传至 Huggingface, Modelsope, WiseModel 三个平台，用户可以快速安装模型。
 
-+   从 Huggingface 下载模型
++ 从 Huggingface 下载模型
 
 ```
 git clone https://huggingface.co/THUDM/CogVideoX-5b
 ```
 
-+   从 Modelscope下载模型
++ 从 Modelscope 下载模型
 
 ```
 git clone https://modelscope.cn/models/ZhipuAI/CogVideoX-5b
 ```
 
-+   下载示例代码
++ 下载示例代码
 
 ```
 git clone https://github.com/THUDM/CogVideo

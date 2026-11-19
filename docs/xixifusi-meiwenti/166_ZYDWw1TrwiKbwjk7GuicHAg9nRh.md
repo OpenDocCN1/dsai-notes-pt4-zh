@@ -1,8 +1,9 @@
+
 # 真正能帮普通人找到方向的，不是盖诺普，不是MBTI，更不是八字或塔罗牌，而是“通过公开分享得到正反馈”这件小事。
 
-> 来源：[https://docs.feishu.cn/docx/NSD9dIExKoZHQVx9YNQcHilxnr7](https://docs.feishu.cn/docx/NSD9dIExKoZHQVx9YNQcHilxnr7)
+> 来源：`https://docs.feishu.cn/docx/NSD9dIExKoZHQVx9YNQcHilxnr7`
 
-> 🔗 原文链接： h[ttps://m.okjike.co](https://m.okjike.com/originalPosts/65b5a39e38849f879f56c938?s=ewoidSI6ICI2MjVmZDM3N2Y3NTQ1MzAwMTBjNzYyNzAiCn0=)m/originalPosts/...
+> 🔗 原文链接：`https://m.okjike.com/originalPosts/65b5a39e38849f879f56c938?s=ewoidSI6ICI2MjVmZDM3N2Y3NTQ1MzAwMTBjNzYyNzAiCn0=`
 
 真正能帮普通人找到方向的，不是盖诺普，不是MBTI，更不是八字或塔罗牌，而是“通过公开分享得到正反馈”这件小事。
 
@@ -34,4 +35,4 @@
 
 从心者先入场，从众者捡剩饭。”
 
-（📕链接： www.xiaohongshu.com ）
+（📕链接：`www.xiaohongshu.com`）

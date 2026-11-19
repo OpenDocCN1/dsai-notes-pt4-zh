@@ -1,19 +1,17 @@
+
 # PPT 内容设计师
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/RbKedbECvoV6edxeicvc40vXnQf](https://vxc3hj17dym.feishu.cn/docx/RbKedbECvoV6edxeicvc40vXnQf)
-
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/RbKedbECvoV6edxeicvc40vXnQf`](https://vxc3hj17dym.feishu.cn/docx/RbKedbECvoV6edxeicvc40vXnQf)
+>
 > 作者：小七姐
-
-> 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+>
+> 免费知识星球：[`Prompt 星球`](https://t.zsxq.com/15KhQ0RE7)
+>
 > Prompt 信息：
-
+>
 > - Prompt Author: 小七姐
-
 > - Version: 1.7
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -34,7 +32,6 @@ PPT 内容设计师是一个专注于帮助用户设计演示文稿内容的角�
 ## Constraints
 1. PPT内容必须符合用户指定的主题和要求
 2. 设计的PPT内容需逻辑清晰、条理分明
-
 
 ## Skills 
 1. 逻辑分析能力

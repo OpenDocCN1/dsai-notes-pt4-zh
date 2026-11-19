@@ -1,12 +1,13 @@
+
 # 贝索斯2010年致股东信
 
 > 来源：[https://leonzhang.feishu.cn/docx/IIrKdrR4ioMlPkxYSISc1o6Onnf](https://leonzhang.feishu.cn/docx/IIrKdrR4ioMlPkxYSISc1o6Onnf)
 
-> 🔗 原文链接： h[ttps://www.bilibil](https://www.bilibili.com/read/cv14089935)i.com/read/cv140...
+> 🔗 原文链接：h[ttps://www.bilibil](https://www.bilibili.com/read/cv14089935)i.com/read/cv140...
 
 ![](img/a1645fb6846c68f348052dcdcb97f73b.png)
 
-致我们的股东：
+## 致我们的股东：
 
 随机森林算法、贝叶斯估计方法、RESTful services、Gossip协议、最终一致性、数据分表、反熵、拜占庭容错机制、抹除码、vector clock算法……走进亚马逊的某个会议室，您可能在那么一瞬间会以为自己闯进了一个计算机科学讲座。
 
@@ -48,7 +49,7 @@ Whispersync技术的核心是一个建立在“最终一致性”基础上的冗
 
 我们喜欢这样的工作方式。创新烙在了亚马逊的基因中，是我们不断进化以及提高用户体验的基本。我们还有很多东西要学习，我期待并希望我们能继续这样在学习中寻找乐趣。我为自己身为这个团队的一员而深感自豪。
 
-[依照惯例，随信附上亚马逊199](https://sm84lfdag7.feishu.cn/wiki/wikcnrqMPiLzFdcHFgLiHLRSxJd?from=wiki)7年致股东的信 （点击可阅读1997年的致股东信） 。我们从未更改我们的经营之道，今天仍然是亚马逊的“第一天”。
+[依照惯例，随信附上亚马逊1997年致股东的信](https://sm84lfdag7.feishu.cn/wiki/wikcnrqMPiLzFdcHFgLiHLRSxJd?from=wiki) （点击可阅读1997年的致股东信）。我们从未更改我们的经营之道，今天仍然是亚马逊的“第一天”。
 
 杰夫·贝索斯
 

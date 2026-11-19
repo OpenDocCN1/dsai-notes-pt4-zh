@@ -1,3 +1,4 @@
+
 # 论文分类微调数据集清洗教程
 
 > 来源：[https://aicarrier.feishu.cn/docx/V03sdh05cojsAPxo8G7cR6zlnvb](https://aicarrier.feishu.cn/docx/V03sdh05cojsAPxo8G7cR6zlnvb)
@@ -32,9 +33,9 @@
  ]}
 ```
 
-# 1.筛选出指定类型的论文
+## 1.筛选出指定类型的论文
 
-原**数据集包含170w+的论文数据**，类型较多，而此次赛事只挑选了其中10个类别，我们需要筛选出需要的数据类型，多类别的论文以最后一个论文为准：
+原数据集包含170w+的论文数据，类型较多，而此次赛事只挑选了其中10个类别，我们需要筛选出需要的数据类型，多类别的论文以最后一个论文为准：
 
 ```
 import json
@@ -65,17 +66,15 @@ with open(input_path, &#x27;r&#x27;) as infile, open(output_path, &#x27;w&#x27;)
             continue  # 忽略格式错误的行
 
 print(f&quot;筛选完成，共保存了 {count} 条记录到 {output_path}&quot;)
-
-
 ```
 
-保存为pre.py,运行：
+保存为`pre.py`，运行：
 
 ```
 python pre.py
 ```
 
-# 2.提高数据质量
+## 2.提高数据质量
 
 筛选出来的数据条数依然太多，且质量不一，我们可以尝试提高数据质量。笔者这里关注的主要内容是摘要的长度和发布日期，将发布日期较早以及内容缺失的数据剔除，并筛选长度合适的摘要。摘要太短包含的有效分类信息越少，太长则容易造成信息冗余，误导模型。
 
@@ -106,12 +105,11 @@ with open(input_path, &#x27;r&#x27;) as infile, open(output_path, &#x27;w&#x27;)
             continue  # 跳过格式错误的行
 
 print(f&quot;高质量筛选完成，共保留 {count} 条记录到 {output_path}&quot;)
-
 ```
 
 仿照上文保存为py文件执行。
 
-# 3.随机抽样
+## 3.随机抽样
 
 筛选出来的数据依然较多，笔者试了下，直接用于训练的话仅凭50%的A100要好几十天。故我们还需要对数据进行随机抽样，只取一小部分数据用于训练就行。
 
@@ -138,12 +136,11 @@ with open(output_path, &#x27;w&#x27;) as outfile:
         outfile.write(json.dumps(record) + &#x27;\n&#x27;)
 
 print(f&quot;已随机抽取 {sample_size} 条数据保存到 {output_path}&quot;)
-
 ```
 
 仿照上文保存为py文件执行。
 
-# 4.准备预训练数据
+## 4.准备预训练数据
 
 预训练的数据格式为
 
@@ -158,26 +155,28 @@ print(f&quot;已随机抽取 {sample_size} 条数据保存到 {output_path}&quot
 
 通过以下代码进行转换：
 
-```
+
+
+```python
 import json
 
-input_path = &quot;--------&quot;#刚刚随机抽样的数据
-output_path = &quot;--------&quot;
+input_path = "--------"  # 刚刚随机抽样的数据
+output_path = "--------"
 
 count = 0
 skipped = 0
 
-with open(input_path, &#x27;r&#x27;) as infile, open(output_path, &#x27;w&#x27;) as outfile:
+with open(input_path, 'r') as infile, open(output_path, 'w') as outfile:
     for line in infile:
         try:
             record = json.loads(line)
 
-            paper_id = record.get(&quot;id&quot;)
-            title = record.get(&quot;title&quot;, &quot;&quot;).replace(&quot;\n&quot;, &quot; &quot;).strip()
-            submitter = record.get(&quot;submitter&quot;)
-            authors = record.get(&quot;authors&quot;, &quot;&quot;).replace(&quot;\n&quot;, &quot; &quot;).strip()
-            categories = record.get(&quot;categories&quot;, &quot;&quot;).split()
-            abstract = record.get(&quot;abstract&quot;, &quot;&quot;).strip()
+            paper_id = record.get("id")
+            title = record.get("title", "").replace("\n", " ").strip()
+            submitter = record.get("submitter")
+            authors = record.get("authors", "").replace("\n", " ").strip()
+            categories = record.get("categories", "").split()
+            abstract = record.get("abstract", "").strip()
 
             # 必要字段缺失，跳过
             if not all([paper_id, title, submitter, authors, categories, abstract]):
@@ -185,101 +184,102 @@ with open(input_path, &#x27;r&#x27;) as infile, open(output_path, &#x27;w&#x27;)
                 continue
 
             category = categories[-1]
-            journal = record.get(&quot;journal-ref&quot;, &quot;No journal information available.&quot;)
-            doi = record.get(&quot;doi&quot;, &quot;No DOI information available.&quot;)
-            license_url = record.get(&quot;license&quot;, &quot;No license information available.&quot;)
+            journal = record.get("journal-ref", "No journal information available.")
+            doi = record.get("doi", "No DOI information available.")
+            license_url = record.get("license", "No license information available.")
 
-            versions = record.get(&quot;versions&quot;, [])
-            if not versions or &quot;created&quot; not in versions[-1]:
+            versions = record.get("versions", [])
+            if not versions or "created" not in versions[-1]:
                 skipped += 1
                 continue
-            version_str = versions[-1].get(&quot;version&quot;, &quot;unknown&quot;)
-            update_date = versions[-1][&quot;created&quot;]
+            version_str = versions[-1].get("version", "unknown")
+            update_date = versions[-1]["created"]
 
-            content = f&quot;&quot;&quot;This is a paper with ID {paper_id}, titled &quot;{title}&quot;, submitted by {submitter}. The authors are {authors}.
+            content = f"""This is a paper with ID {paper_id}, titled "{title}", submitted by {submitter}. The authors are {authors}.
 The paper belongs to the {category} category and is published in {journal}. The latest version is {version_str}, created on {update_date}. DOI: {doi}. License: {license_url}.
 
 Abstract:
 {abstract}
-&quot;&quot;&quot;
+"""
 
             result = {
-                &quot;messages&quot;: [
+                "messages": [
                     {
-                        &quot;role&quot;: &quot;assistant&quot;,
-                        &quot;content&quot;: content
+                        "role": "assistant",
+                        "content": content
                     }
                 ]
             }
 
-            outfile.write(json.dumps(result) + &quot;\n&quot;)
+            outfile.write(json.dumps(result) + "\n")
             count += 1
 
         except json.JSONDecodeError:
             skipped += 1
             continue
 
-print(f&quot;转换完成，共保存 {count} 条数据到 {output_path}，跳过 {skipped} 条不完整数据&quot;)
-
+print(f"转换完成，共保存 {count} 条数据到 {output_path}，跳过 {skipped} 条不完整数据")
 ```
 
-仿照上文保存为py文件执行。
+仿照上文保存为 `py` 文件执行。
 
-# 5.sft微调数据集准备
+## 5. SFT微调数据集准备
 
 微调数据集格式为：
 
-```
-{&quot;system&quot;: &quot;你是个优秀的论文分类师&quot;,
- &quot;conversation&quot;: [
- {
- &quot;human&quot;: &quot;Based on the title &#x27;Outilex, plate-forme logicielle de traitement de textes \&#x27;ecrits&#x27;, authors &#x27;Olivier Blanc (IGM-LabInfo), Matthieu Constant (IGM-LabInfo), Eric\n  Laporte (IGM-LabInfo)&#x27;, and abstract &#x27;The Outilex software platform, which will be made available to research, development and industry, comprises software components implementing all the fundamental operations of written text processing: processing without lexicons, exploitation of lexicons and grammars, language resource management. All data are structured in XML formats, and also in more compact formats, either readable or binary, whenever necessary; the required format converters are included in the platform; the grammar formats allow for combining statistical approaches with resource-based approaches. Manually constructed lexicons for French and English, originating from the LADL, and of substantial coverage, will be distributed with the platform under LGPL-LR license.&#x27;, please determine the scientific category of this paper.  \n\nA. astro-ph\nB. cond-mat.mes-hall\nC. cond-mat.mtrl-sci\nD. cs.CL\nE. cs.CV\nF. cs.LG\nG. gr-qc\nH. hep-ph\nI. hep-th\nJ. quant-ph&quot;,
- &quot;assistant&quot;: &quot;D&quot;
- }
- ]}
+```json
+{
+  "system": "你是个优秀的论文分类师",
+  "conversation": [
+    {
+      "human": "Based on the title 'Outilex, plate-forme logicielle de traitement de textes \'ecrits\'', authors 'Olivier Blanc (IGM-LabInfo), Matthieu Constant (IGM-LabInfo), Eric\n  Laporte (IGM-LabInfo)', and abstract 'The Outilex software platform, which will be made available to research, development and industry, comprises software components implementing all the fundamental operations of written text processing: processing without lexicons, exploitation of lexicons and grammars, language resource management. All data are structured in XML formats, and also in more compact formats, either readable or binary, whenever necessary; the required format converters are included in the platform; the grammar formats allow for combining statistical approaches with resource-based approaches. Manually constructed lexicons for French and English, originating from the LADL, and of substantial coverage, will be distributed with the platform under LGPL-LR license.', please determine the scientific category of this paper.  \n\nA. astro-ph\nB. cond-mat.mes-hall\nC. cond-mat.mtrl-sci\nD. cs.CL\nE. cs.CV\nF. cs.LG\nG. gr-qc\nH. hep-ph\nI. hep-th\nJ. quant-ph",
+      "assistant": "D"
+    }
+  ]
+}
 ```
 
 将随机抽样的数据集转换为如上格式：
 
-```
+```python
 import json
 import random
 
-input_file = &quot;---------&quot;   # 20000条原始数据文件路径
-output_file = &quot;----------&quot;
+input_file = "---------"   # 20000条原始数据文件路径
+output_file = "----------"
 
 # 类别对应选项映射
 label_map = {
-    &quot;astro-ph&quot;: &quot;A&quot;,
-    &quot;cond-mat.mes-hall&quot;: &quot;B&quot;,
-    &quot;cond-mat.mtrl-sci&quot;: &quot;C&quot;,
-    &quot;cs.CL&quot;: &quot;D&quot;,
-    &quot;cs.CV&quot;: &quot;E&quot;,
-    &quot;cs.LG&quot;: &quot;F&quot;,
-    &quot;gr-qc&quot;: &quot;G&quot;,
-    &quot;hep-ph&quot;: &quot;H&quot;,
-    &quot;hep-th&quot;: &quot;I&quot;,
-    &quot;quant-ph&quot;: &quot;J&quot;
+    "astro-ph": "A",
+    "cond-mat.mes-hall": "B",
+    "cond-mat.mtrl-sci": "C",
+    "cs.CL": "D",
+    "cs.CV": "E",
+    "cs.LG": "F",
+    "gr-qc": "G",
+    "hep-ph": "H",
+    "hep-th": "I",
+    "quant-ph": "J"
 }
 
 options_text = (
-    &quot;\n\nA. astro-ph\nB. cond-mat.mes-hall\nC. cond-mat.mtrl-sci\nD. cs.CL\n&quot;
-    &quot;E. cs.CV\nF. cs.LG\nG. gr-qc\nH. hep-ph\nI. hep-th\nJ. quant-ph&quot;
+    "\n\nA. astro-ph\nB. cond-mat.mes-hall\nC. cond-mat.mtrl-sci\nD. cs.CL\n"
+    "E. cs.CV\nF. cs.LG\nG. gr-qc\nH. hep-ph\nI. hep-th\nJ. quant-ph"
 )
 
 # 读取所有数据
-with open(input_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+with open(input_file, 'r', encoding='utf-8') as f:
     data = [json.loads(line) for line in f]
 
 # 随机抽样1000条
 random.seed(42)
 sampled = random.sample(data, 1000)
 
-with open(output_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f_out:
+with open(output_file, 'w', encoding='utf-8') as f_out:
     count = 0
     for item in sampled:
         # 多类别时取最后一个类别（通常以空格分割）
-        categories_str = item.get(&quot;categories&quot;, &quot;&quot;).strip()
+        categories_str = item.get("categories", "").strip()
         if not categories_str:
             continue
         last_category = categories_str.split()[-1]
@@ -287,34 +287,33 @@ with open(output_file, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f_out:
         if last_category not in label_map:
             continue
 
-        title = item.get(&quot;title&quot;, &quot;&quot;).replace(&quot;\n&quot;, &quot; &quot;).strip()
-        authors = item.get(&quot;authors&quot;, &quot;&quot;).replace(&quot;\n&quot;, &quot; &quot;).strip()
-        abstract = item.get(&quot;abstract&quot;, &quot;&quot;).replace(&quot;\n&quot;, &quot; &quot;).strip()
+        title = item.get("title", "").replace("\n", " ").strip()
+        authors = item.get("authors", "").replace("\n", " ").strip()
+        abstract = item.get("abstract", "").replace("\n", " ").strip()
         if not title or not authors or not abstract:
             continue
 
         human_text = (
-            f&quot;Based on the title &#x27;{title}&#x27;, authors &#x27;{authors}&#x27;, and abstract &#x27;{abstract}&#x27;, &quot;
-            f&quot;please determine the scientific category of this paper.{options_text}&quot;
+            f"Based on the title '{title}', authors '{authors}', and abstract '{abstract}', "
+            f"please determine the scientific category of this paper.{options_text}"
         )
 
         finetune_sample = {
-            &quot;system&quot;: &quot;你是个优秀的论文分类师&quot;,
-            &quot;conversation&quot;: [
+            "system": "你是个优秀的论文分类师",
+            "conversation": [
                 {
-                    &quot;human&quot;: human_text,
-                    &quot;assistant&quot;: label_map[last_category]
+                    "human": human_text,
+                    "assistant": label_map[last_category]
                 }
             ]
         }
 
-        f_out.write(json.dumps(finetune_sample, ensure_ascii=False) + &quot;\n&quot;)
+        f_out.write(json.dumps(finetune_sample, ensure_ascii=False) + "\n")
         count += 1
 
-print(f&quot;转换完成，共生成{count}条微调数据，保存到 {output_file}&quot;)
-
+print(f"转换完成，共生成{count}条微调数据，保存到 {output_file}")
 ```
 
-仿照上文保存为py文件执行。
+仿照上文保存为 `py` 文件执行。
 
 ok,进行到这，我们就已经得到了一个自己洗的数据集，可以尝试微调训练了，后续可以根据微调结果进一步修改参数。

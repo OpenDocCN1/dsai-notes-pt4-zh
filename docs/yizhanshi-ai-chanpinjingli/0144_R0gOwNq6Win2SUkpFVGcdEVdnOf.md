@@ -1,16 +1,15 @@
+
 # 【进行中】AIOps 挑战赛（14万）
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/VC9fdL2yroe4AexUMBFcGXs7nic](https://v11enp9ok1h.feishu.cn/docx/VC9fdL2yroe4AexUMBFcGXs7nic)
+> 来源：`https://v11enp9ok1h.feishu.cn/docx/VC9fdL2yroe4AexUMBFcGXs7nic`
 
-# **赛题背景**
+## 赛题背景
 
-> CCF国际AIOps挑战赛（China Computer Federation International AIOps Challenge）由清华大学联合中国计算机学会（CCF）自2018年共同发起。旨在借助社区力量，运用人工智能算法解决各类运维难题。迄今为止已经成功举办六届，吸引了大量AIOps从业者和关注者，随着赛事规模和影响力的不断扩大，形成了运维行业著名的专业赛事品牌，并逐渐发展为智能运维领域最具影响力的专业赛事。
+CCF国际AIOps挑战赛（China Computer Federation International AIOps Challenge）由清华大学联合中国计算机学会（CCF）自2018年共同发起。旨在借助社区力量，运用人工智能算法解决各类运维难题。迄今为止已经成功举办六届，吸引了大量AIOps从业者和关注者，随着赛事规模和影响力的不断扩大，形成了运维行业著名的专业赛事品牌，并逐渐发展为智能运维领域最具影响力的专业赛事。
 
->
+2024（第七届）CCF国际AIOps挑战赛由中国计算机学会（CCF）、清华大学、中国科学院计算机网络信息中心、中兴通讯、中国建行银行主办，中国计算机学会互联网专委会、OpenAIOps社区、清华大学计算机科学与技术系、中南大学、北京必示科技有限公司、北京智谱华章科技有限公司承办，ModelScope社区、南开大学软件学院协办。同时，本届AIOps挑战赛也是OpenAIOps社区成立之后第一届重要年度赛事。
 
-> 2024 (第七届）CCF国际AIOps挑战赛由中国计算机学会（CCF）、清华大学、中国科学院计算机网络信息中心、中兴通讯、中国建行银行主办，中国计算机学会互联网专委会、OpenAIOps社区、清华大学计算机科学与技术系、中南大学、北京必示科技有限公司、北京智谱华章科技有限公司承办，ModelScope社区、南开大学软件学院协办。同时，本届AIOps挑战赛也是OpenAIOps社区成立之后第一届重要年度赛事。
-
-# **赛题方向**
+## 赛题方向
 
 「基于检索增强的运维知识问答挑战赛」
 
@@ -20,19 +19,19 @@
 
 ![](img/956608e9113b5fb4f5158be6f7a6d06f.png)
 
-# 赛程安排
+## 赛程安排
 
 本次挑战赛整体预计跨越5个月，4月下旬开启赛事报名；5月中旬举行线下宣讲会；6月启动初赛，选拔20支队伍晋级复赛；7月开启复赛，最终决胜出10支队伍晋级决赛；9月中旬将进行最终决赛答辩和研讨会。
 
 ![](img/3f02659ad08235a1884501ce05602ffe.png)
 
-# 相关链接
+## 相关链接
 
-+   比赛官网：https://competition.aiops-challenge.com/home/competition
++ 比赛官网：`https://competition.aiops-challenge.com/home/competition`
 
-+   GLM-4 API 申请：……
++ GLM-4 API 申请：……
 
-+   魔搭算力资源申请：
++ 魔搭算力资源申请：
 
 ![](img/d7e4d79a86c30c219c6495261ce78f28.png)
 

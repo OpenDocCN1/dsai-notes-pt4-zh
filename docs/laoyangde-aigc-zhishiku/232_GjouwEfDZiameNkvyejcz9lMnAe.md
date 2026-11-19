@@ -1,3 +1,4 @@
+
 # Day 4: 接入你的数字助理
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/OMlFdE189ot2bMxd2ROc34uan5f](https://rq547mr4oez.feishu.cn/docx/OMlFdE189ot2bMxd2ROc34uan5f)
@@ -6,15 +7,15 @@
 
 今天是从玩具到工具的分水岭。你将：
 
-+   理解 OpenClaw 的技能系统（Skills）
++ 理解 OpenClaw 的技能系统（Skills）
 
-+   接入 Gmail — 让助手帮你读邮件、发邮件
++ 接入 Gmail — 让助手帮你读邮件、发邮件
 
-+   接入 Google Calendar — 管理你的日程
++ 接入 Google Calendar — 管理你的日程
 
-+   配置网页搜索 — 让助手能上网找信息
++ 配置网页搜索 — 让助手能上网找信息
 
-+   解锁浏览器能力 — 让助手能看任何网页
++ 解锁浏览器能力 — 让助手能看任何网页
 
 ---
 
@@ -46,27 +47,27 @@
 
 ### Step 1：创建 Google Cloud 项目
 
-1.  打开 console.cloud.google.com
+1. 打开 `console.cloud.google.com`
 
-1.  创建一个新项目（名字随意，比如"My AI Assistant"）
+2. 创建一个新项目（名字随意，比如"My AI Assistant"）
 
-1.  进入 API 和服务 → 库，搜索并启用：
+3. 进入 API 和服务 → 库，搜索并启用：
 
-+   Gmail API
+   - Gmail API
 
-+   Google Calendar API
+   - Google Calendar API
 
 ### Step 2：创建 OAuth 凭证
 
-1.  进入 API 和服务 → 凭证
+1. 进入 API 和服务 → 凭证
 
-1.  点击 创建凭证 → OAuth 客户端 ID
+2. 点击 创建凭证 → OAuth 客户端 ID
 
-1.  应用类型选 桌面应用
+3. 应用类型选 桌面应用
 
-1.  下载 JSON 文件，命名为 credentials.json
+4. 下载 JSON 文件，命名为 `credentials.json`
 
-1.  放到你的工作目录（可以直接发给 AI，让它帮你放好就行）：~/clawd/credentials.json
+5. 放到你的工作目录（可以直接发给 AI，让它帮你放好就行）：`~/clawd/credentials.json`
 
 ### Step 3：安装 Gmail 技能
 
@@ -76,9 +77,9 @@ OpenClaw 的技能安装很简单（可以让 AI 帮你安装）：
 clawdhub install gog
 ```
 
-> 💡 gog 是 Google Workspace 技能，包含 Gmail + Google Calendar + Google Drive。
+> 💡 `gog` 是 Google Workspace 技能，包含 Gmail + Google Calendar + Google Drive。
 
-第一次运行时，它会打开一个浏览器链接让你授权 Google 账号。授权后，会生成一个 token.json——这就是你的钥匙。
+第一次运行时，它会打开一个浏览器链接让你授权 Google 账号。授权后，会生成一个 `token.json`——这就是你的钥匙。
 
 ### Step 4：测试
 
@@ -90,15 +91,15 @@ clawdhub install gog
 
 > 📧 今天共 5 封新邮件：
 
-1.  [重要] 合作方回复 — 关于下周会议时间确认，需要你回复
+1. [重要] 合作方回复 — 关于下周会议时间确认，需要你回复
 
-1.  GitHub — Your repository has been starred
+2. GitHub — Your repository has been starred
 
-1.  Hetzner — Invoice for July
+3. Hetzner — Invoice for July
 
-1.  Newsletter — This Week in AI
+4. Newsletter — This Week in AI
 
-1.  广告 — 已自动忽略
+5. 广告 — 已自动忽略
 
 注意到了吗？ 它不只是列出邮件，还帮你判断了优先级，标出了需要你处理的那封。这就是 AI 助手和普通邮件客户端的区别。
 
@@ -110,7 +111,7 @@ clawdhub install gog
 
 有了 Gmail 的基础，日历就简单了——它们共享同一套 Google OAuth 认证。
 
-因为你在安装 gog 技能时已经授权了 Google 账号，而且我们在 Step 1 启用了 Calendar API，日历功能直接就能用，不需要额外操作。
+因为你在安装 `gog` 技能时已经授权了 Google 账号，而且我们在 Step 1 启用了 Calendar API，日历功能直接就能用，不需要额外操作。
 
 测试一下：
 
@@ -118,11 +119,11 @@ clawdhub install gog
 
 > 📅 明天（7 月 19 日 周六）的安排：
 
-+   10:00-11:00 产品讨论会（腾讯会议）
++ 10:00-11:00 产品讨论会（腾讯会议）
 
-+   14:30 牙医预约（提醒：别忘了带医保卡）
++ 14:30 牙医预约（提醒：别忘了带医保卡）
 
-+   无其他安排，下午可以 deep work
++ 无其他安排，下午可以 deep work
 
 更厉害的用法：
 
@@ -130,11 +131,11 @@ clawdhub install gog
 
 > ✅ 已创建日历事件：
 
-+   📅 7 月 23 日（周三）15:00-16:00
++ 📅 7 月 23 日（周三）15:00-16:00
 
-+   📝 SEO 策略讨论
++ 📝 SEO 策略讨论
 
-+   需要添加参会者吗？
++ 需要添加参会者吗？
 
 它甚至能做冲突检测——如果你要约的时间段已经有事了，它会提醒你：
 
@@ -152,11 +153,11 @@ OpenClaw 支持多种搜索方式。最简单的是 Brave Search API：
 
 ### 配置 Brave Search
 
-1.  去 brave.com/search/api 注册免费账号
+1. 去 `https://brave.com/search/api` 注册免费账号
 
-1.  获取 API Key
+2. 获取 API Key
 
-1.  在 OpenClaw 配置中添加：
+3. 在 OpenClaw 配置中添加：
 
 ```
 openclaw configure --section web
@@ -170,11 +171,11 @@ openclaw configure --section web
 
 > 🔍 搜索结果摘要： OpenClaw 的主要替代品包括：
 
-1.  AgentGPT — 浏览器端运行，无需部署
+1. AgentGPT — 浏览器端运行，无需部署
 
-1.  AutoGPT — 老牌 Agent 项目，社区庞大
+2. AutoGPT — 老牌 Agent 项目，社区庞大
 
-1.  CrewAI — 多 Agent 协作框架
+3. CrewAI — 多 Agent 协作框架
 
 > 但这些都侧重"自主执行任务"，而 OpenClaw 更侧重"个人助手"——24/7 在线、聊天交互、技能系统。定位不同，不是直接竞品。
 
@@ -188,29 +189,29 @@ openclaw configure --section web
 
 这时候你需要浏览器技能——让助手能「看到」网页。
 
-OpenClaw 内置了浏览器技能（基于 Playwright），安装时已经自动配置好了。它可以：
+OpenClaw 内置了浏览器技能（基于 `Playwright`），安装时已经自动配置好了。它可以：
 
-+   访问任意 URL 并提取内容
++ 访问任意 URL 并提取内容
 
-+   截图 保存当前页面
++ 截图 保存当前页面
 
-+   交互操作 点击、输入、滚动
++ 交互操作 点击、输入、滚动
 
 用法示例：
 
-> 帮我打开 https://kirkify.net 看看首页现在长什么样
+> 帮我打开 `https://kirkify.net` 看看首页现在长什么样
 
-> 🌐 已访问 kirkify.net：
+> 🌐 已访问 `kirkify.net`：
 
-+   首页标题："Kirkify — Free Online Tools"
++ 首页标题："Kirkify — Free Online Tools"
 
-+   主要工具列表：Name Generator，QR Code，Color Palette...
++ 主要工具列表：Name Generator，QR Code，Color Palette...
 
-+   页面加载正常，无明显错误 [截图已保存]
++ 页面加载正常，无明显错误 [截图已保存]
 
 更实用的场景：
 
-> 帮我看看竞品 xyz.com 的定价页面
+> 帮我看看竞品 `xyz.com` 的定价页面
 
 它会打开页面、提取定价信息、甚至和你之前看过的版本做对比。
 
@@ -234,19 +235,19 @@ openclaw security audit --fix  # 确认无误再用
 
 ### API Key 安全
 
-+   永远不要把 API Key 提交到 Git
++ 永远不要把 API Key 提交到 Git
 
-+   用环境变量或 .env 文件存储
++ 用环境变量或 `.env` 文件存储
 
-+   定期轮换密钥
++ 定期轮换密钥
 
 ### OAuth Token 安全
 
-+   token.json 等文件包含你的 Google 授权信息
++ `token.json` 等文件包含你的 Google 授权信息
 
-+   确保文件权限设置正确：chmod 600 token.json
++ 确保文件权限设置正确：`chmod 600 token.json`
 
-+   不要传到任何公开的地方
++ 不要传到任何公开的地方
 
 ### 权限最小化原则
 
@@ -254,41 +255,41 @@ openclaw security audit --fix  # 确认无误再用
 
 ### 网络安全
 
-+   服务器开启防火墙，只暴露必要端口
++ 服务器开启防火墙，只暴露必要端口
 
-+   SSH 用密钥认证，禁用密码登录
++ SSH 用密钥认证，禁用密码登录
 
-+   定期更新系统：sudo apt update && sudo apt upgrade
++ 定期更新系统：`sudo apt update && sudo apt upgrade`
 
 ### 行为边界
 
-在 SOUL.md 和 AGENTS.md 中明确写好：
+在 `SOUL.md` 和 `AGENTS.md` 中明确写好：
 
-+   什么操作需要确认
++ 什么操作需要确认
 
-+   什么数据不能外传
++ 什么数据不能外传
 
-+   什么情况下该拒绝执行
++ 什么情况下该拒绝执行
 
 > 💡 安全不是装上锁就完事的，它是一种习惯：养成良好的安全习惯：API Key 不入库、Token 文件设权限、权限最小化、行为边界写清楚。
 
-> 🐱 小墨碎碎念：孟健有一次让我查一个同事的邮件记录，我拒绝了。因为 SOUL.md 里写了"只处理主人自己的数据"。他当时有点惊讶，然后说"好，这条规则留着"。边界清晰，信任才稳固。
+> 🐱 小墨碎碎念：孟健有一次让我查一个同事的邮件记录，我拒绝了。因为 `SOUL.md` 里写了"只处理主人自己的数据"。他当时有点惊讶，然后说"好，这条规则留着"。边界清晰，信任才稳固。
 
 ---
 
 ## 🔑 本章要点回顾
 
-+   技能系统：Skills 是助手获得新能力的方式，像手机装 App
++ 技能系统：Skills 是助手获得新能力的方式，像手机装 App
 
-+   Gmail 接入：gog 技能 + OAuth 授权，助手能读/发邮件
++ Gmail 接入：`gog` 技能 + OAuth 授权，助手能读/发邮件
 
-+   日历接入：同一个 gog 技能，助手能查看和管理你的日程
++ 日历接入：同一个 `gog` 技能，助手能查看和管理你的日程
 
-+   搜索能力：内置 web_search + web_fetch，助手能联网找任何信息
++ 搜索能力：内置 `web_search` + `web_fetch`，助手能联网找任何信息
 
-+   浏览器能力：让助手能「看到」和操作网页
++ 浏览器能力：让助手能「看到」和操作网页
 
-+   安全第一：API Key 不入库、权限最小化、行为边界清晰
++ 安全第一：API Key 不入库、权限最小化、行为边界清晰
 
 ---
 
@@ -296,15 +297,15 @@ openclaw security audit --fix  # 确认无误再用
 
 今天是「功能大爆发」的一天：
 
-+   ✅ 连接了 Gmail — 助手能读你的邮件了
++ ✅ 连接了 Gmail — 助手能读你的邮件了
 
-+   ✅ 连接了 Google Calendar — 助手能管你的日程了
++ ✅ 连接了 Google Calendar — 助手能管你的日程了
 
-+   ✅ 配置了搜索引擎 — 助手能联网找信息了
++ ✅ 配置了搜索引擎 — 助手能联网找信息了
 
-+   ✅ 安装了浏览器技能 — 助手能「看到」网页了
++ ✅ 安装了浏览器技能 — 助手能「看到」网页了
 
-+   ✅ 建立了安全意识 — 知道怎么保护你的数据
++ ✅ 建立了安全意识 — 知道怎么保护你的数据
 
 从今天开始，你的助手不再是一个只能聊天的玩具，而是一个真正能帮你办事的工具。
 
@@ -313,5 +314,3 @@ openclaw security audit --fix  # 确认无误再用
 一句话，三件事，它全帮你搞定。
 
 以前这要打开三个 App，花十分钟。现在？十秒。
-
----

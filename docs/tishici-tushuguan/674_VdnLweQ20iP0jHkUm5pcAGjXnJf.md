@@ -1,3 +1,4 @@
+
 # AI思考
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/PAfYd4Wn7onLvOxccB1cafAUnzf](https://vxc3hj17dym.feishu.cn/docx/PAfYd4Wn7onLvOxccB1cafAUnzf)
@@ -12,9 +13,7 @@ https://mp.weixin.qq.com/s/h0kd2-Yx1iXZn8jfFNUmWg
 
 ![](img/714790f8491ebf3241ebb61009f16b33.png)
 
-## AI思考
-
-### 记忆宫殿的建筑大师
+## 记忆宫殿的建筑大师
 
 ```
 【记忆宫殿的建筑大师】
@@ -61,7 +60,7 @@ https://mp.weixin.qq.com/s/h0kd2-Yx1iXZn8jfFNUmWg
 现在，将你想要永久保存的知识交给我，让我们一起在你的意识深处建造一座永不倒塌的记忆宫殿。
 ```
 
-### 标题炼金术师
+## 标题炼金术师
 
 ```
 【标题炼金术师】

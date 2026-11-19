@@ -1,16 +1,14 @@
+
 # TensorFlow 自定义组件
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/TDmGdxVUIocbyExk7KpclJpSnzf](https://v11enp9ok1h.feishu.cn/docx/TDmGdxVUIocbyExk7KpclJpSnzf)
 
 TensorFlow 自定义组件是开发者根据特定需求扩展 TensorFlow 功能的方式。当内置操作无法满足需求时，你可以创建：
 
-1.  自定义层(Custom Layers) - 实现新的神经网络层结构
-
-1.  自定义损失函数(Loss Functions) - 设计特定任务的优化目标
-
-1.  自定义评估指标(Metrics) - 定义独特的性能衡量标准
-
-1.  自定义训练循环(Training Loops) - 实现特殊训练逻辑
+1. 自定义层(Custom Layers) - 实现新的神经网络层结构
+2. 自定义损失函数(Loss Functions) - 设计特定任务的优化目标
+3. 自定义评估指标(Metrics) - 定义独特的性能衡量标准
+4. 自定义训练循环(Training Loops) - 实现特殊训练逻辑
 
 ## 实例
 
@@ -33,23 +31,19 @@ class SimpleDense(tf.keras.layers.Layer):
 
 ### 解决特定领域问题
 
-+   计算机视觉中的特殊卷积操作
-
-+   NLP 中的注意力机制变体
-
-+   推荐系统中的特征交叉方法
+- 计算机视觉中的特殊卷积操作
+- NLP 中的注意力机制变体
+- 推荐系统中的特征交叉方法
 
 ### 性能优化需求
 
-+   针对硬件优化的计算内核
-
-+   混合精度训练的特殊处理
+- 针对硬件优化的计算内核
+- 混合精度训练的特殊处理
 
 ### 研究创新
 
-+   实现论文中的新型网络结构
-
-+   实验自定义的正则化方法
+- 实现论文中的新型网络结构
+- 实验自定义的正则化方法
 
 ---
 
@@ -57,15 +51,12 @@ class SimpleDense(tf.keras.layers.Layer):
 
 ### 基础结构
 
-每个自定义层需要继承 tf.keras.layers.Layer 并实现：
+每个自定义层需要继承 `tf.keras.layers.Layer` 并实现：
 
-1.  init() - 初始化配置参数
-
-1.  build() - 创建权重变量(推荐)
-
-1.  call() - 定义前向计算逻辑
-
-1.  get_config() - 支持序列化(可选)
+1. `init()` - 初始化配置参数
+2. `build()` - 创建权重变量(推荐)
+3. `call()` - 定义前向计算逻辑
+4. `get_config()` - 支持序列化(可选)
 
 ## 实例
 
@@ -77,21 +68,21 @@ class CustomLayer(tf.keras.layers.Layer):
     
     def build(self, input_shape):
         self.kernel = self.add_weight(
-            name=&quot;kernel&quot;,
+            name="kernel",
             shape=(input_shape[-1], self.units),
-            initializer=&quot;glorot_uniform&quot;
+            initializer="glorot_uniform"
         )
         self.bias = self.add_weight(
-            name=&quot;bias&quot;,
+            name="bias",
             shape=(self.units,),
-            initializer=&quot;zeros&quot;
+            initializer="zeros"
         )
     
     def call(self, inputs):
         return tf.matmul(inputs, self.kernel) + self.bias
     
     def get_config(self):
-        return {&quot;units&quot;: self.units}
+        return {"units": self.units}
 ```
 
 ### 权重管理最佳实践
@@ -110,7 +101,7 @@ def custom_mse(y_true, y_pred):
     return tf.reduce_mean(squared_diff, axis=-1)
 ```
 
-方式2：类形式(继承Loss类)
+方式2：类形式(继承 `Loss` 类)
 
 ## 实例
 
@@ -128,11 +119,9 @@ class CustomLoss(tf.keras.losses.Loss):
 
 ### 常见注意事项
 
-1.  确保计算过程可微分
-
-1.  处理不同形状的输入(如batch处理)
-
-1.  考虑数值稳定性(如添加小epsilon)
+1. 确保计算过程可微分
+2. 处理不同形状的输入(如batch处理)
+3. 考虑数值稳定性(如添加小epsilon)
 
 ---
 
@@ -159,16 +148,14 @@ def train_step(x, y):
 for epoch in range(epochs):
     for x_batch, y_batch in train_dataset:
         loss = train_step(x_batch, y_batch)
-    print(f&quot;Epoch {epoch}, Loss: {loss.numpy()}&quot;)
+    print(f"Epoch {epoch}, Loss: {loss.numpy()}")
 ```
 
 ### 关键组件说明
 
-1.  **GradientTape** - 自动微分记录器
-
-1.  **apply_gradients** - 权重更新方法
-
-1.  **@tf.function** - 图执行装饰器
+1. `GradientTape` - 自动微分记录器
+2. `apply_gradients` - 权重更新方法
+3. `@tf.function` - 图执行装饰器
 
 ---
 
@@ -180,9 +167,9 @@ for epoch in range(epochs):
 
 ```
 graph LR
-    A[Python函数] --&gt;|@tf.function| B(TensorFlow计算图)
-    B --&gt; C[自动优化]
-    C --&gt; D[静态图执行]
+    A[Python函数] -->|@tf.function| B(TensorFlow计算图)
+    B --> C[自动优化]
+    C --> D[静态图执行]
 ```
 
 ### 混合精度训练
@@ -190,7 +177,7 @@ graph LR
 ## 实例
 
 ```
-policy = tf.keras.mixed_precision.Policy(&#x27;mixed_float16&#x27;)
+policy = tf.keras.mixed_precision.Policy('mixed_float16')
 tf.keras.mixed_precision.set_global_policy(policy)
 ```
 

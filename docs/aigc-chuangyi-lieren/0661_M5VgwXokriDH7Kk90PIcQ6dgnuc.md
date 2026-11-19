@@ -1,36 +1,37 @@
-# Stable Diffusion 3升级
+
+# Stable Diffusion 3 升级
 
 > 来源：[https://aigcreative.feishu.cn/docx/A0jpdZKcgo9U7uxdKt3c8WXAnqh](https://aigcreative.feishu.cn/docx/A0jpdZKcgo9U7uxdKt3c8WXAnqh)
 
 > 官网：https://stability.ai/news/stable-diffusion-3?utm_source=twitter&utm_medium=website&utm_campaign=blog
 
-# StabilityAl发布 Stable Diffusion 3：
+## Stability AI 发布 Stable Diffusion 3
 
 该模型采用扩散变换架构，显著提高了在多主题提示、图像质量和拼写能力方面的性能。
 
-Stable Diffusion 3还采用了一种新型的扩散变换技术，与Sora类似…Stable Diffusion 3的性能提升不仅基于其先进的扩散变换架构，
+Stable Diffusion 3 还采用了一种新型的扩散变换技术，与 Sora 类似……Stable Diffusion 3 的性能提升不仅基于其先进的扩散变换架构，
 
-# 还包括了以下关键的技术创新和改进：
+## 关键的技术创新和改进
 
-1、新型扩散变换器： Stable Diffusion 3采用了一种新型的扩散变换技术，与Sora类似，这种新技术为模型提供了更强大的图像生成能力。 Transformer 是一种深度学习模型，专门设计来逐步构建图像的细节，从而生成高质量的视觉内容。
+1. 新型扩散变换器：Stable Diffusion 3 采用了一种新型的扩散变换技术，与 Sora 类似，这种新技术为模型提供了更强大的图像生成能力。`Transformer` 是一种深度学习模型，专门设计来逐步构建图像的细节，从而生成高质量的视觉内容。
 
-2、流匹配与其他改进： 模型还整合了流匹配技术和其他技术改进，进一步增强了生成图像的质量和多样性。流匹配技术有助于模型更好地理解和模拟图像中的动态元素和结构，使得生成的图像在视觉上更加连贯和自然。
+2. 流匹配与其他改进：模型还整合了流匹配技术和其他技术改进，进一步增强了生成图像的质量和多样性。流匹配技术有助于模型更好地理解和模拟图像中的动态元素和结构，使得生成的图像在视觉上更加连贯和自然。
 
-3.利用Transformer的改进： Stable Diffusion 3充分利用了Transformer技术的最新进展，这不仅使模型能够进一步扩展其能力，还使其能够接受多模态输入。这意味着模型能够处理更复杂和多样化的数据类型，如结合文本和图像的输入，从而在理解和生成图像内容方面提供更大的灵活性和精确度。
+3. 利用 `Transformer` 的改进：Stable Diffusion 3 充分利用了 `Transformer` 技术的最新进展，这不仅使模型能够进一步扩展其能力，还使其能够接受多模态输入。这意味着模型能够处理更复杂和多样化的数据类型，如结合文本和图像的输入，从而在理解和生成图像内容方面提供更大的灵活性和精确度。
 
-尽管目前已经提及了一些关键的技术创新，Stability AI计划很快发布更多的技术细节。这些细节将为技术社区和感兴趣的用户提供对Stable Diffusion 3技术基础和创新点的深入了解。
+尽管目前已经提及了一些关键的技术创新，Stability AI 计划很快发布更多的技术细节。这些细节将为技术社区和感兴趣的用户提供对 Stable Diffusion 3 技术基础和创新点的深入了解。
 
-# **性能的具体提升内容包括：**
+## 性能的具体提升内容包括
 
-1、多主题提示处理能力： 新模型对于包含多个主题或元素的提示具有更好的理解和处理能力。这意味着用户可以在一个提示中描述更复杂的场景，而模型能够更准确地根据这些描述生成图像。
+1. 多主题提示处理能力：新模型对于包含多个主题或元素的提示具有更好的理解和处理能力。这意味着用户可以在一个提示中描述更复杂的场景，而模型能够更准确地根据这些描述生成图像。
 
-2、图像质量： Stable Diffusion 3在生成的图像质量上有显著提高，包括更细腻的细节表现、更准确的颜色匹配以及更自然的光影处理。这些改进使得生成的图像更加逼真，更能捕捉到用户的创意意图。
+2. 图像质量：Stable Diffusion 3 在生成的图像质量上有显著提高，包括更细腻的细节表现、更准确的颜色匹配以及更自然的光影处理。这些改进使得生成的图像更加逼真，更能捕捉到用户的创意意图。
 
-3、拼写和文本处理能力： 这个版本在处理文本元素，尤其是在图像中直接展现的文本（如标语、标签等）时，有更好的拼写能力和文本理解。这包括更准确地识别和渲染用户提示中的文字，甚至是在复杂的视觉背景中。
+3. 拼写和文本处理能力：这个版本在处理文本元素，尤其是在图像中直接展现的文本（如标语、标签等）时，有更好的拼写能力和文本理解。这包括更准确地识别和渲染用户提示中的文字，甚至是在复杂的视觉背景中。
 
 ![](img/572d7adbda66064e71506c882661161c.png)
 
-# 官方案例：
+## 官方案例
 
 > Prompt: Epic anime artwork of a wizard atop a mountain at night casting a cosmic spell into the dark sky that says "Stable Diffusion 3" made out of colorful energy
 
@@ -54,7 +55,6 @@ Stable Diffusion 3还采用了一种新型的扩散变换技术，与Sora类似�
 
 > Prompt: Three transparent glass bottles on a wooden table. The one on the left has red liquid and the number 1. The one in the middle has blue liquid and the number 2. The one on the right has green liquid and the number 3
 
-
 > Prompt: A horse balancing on top of a colorful ball in a field with green grass and a mountain in the background.
 
 ![](img/6002b0377ad61ab5fda0f918d6438d25.png)
@@ -63,14 +63,11 @@ Stable Diffusion 3还采用了一种新型的扩散变换技术，与Sora类似�
 
 ![](img/7dc46175ec893aab02f808f20b671f9f.png)
 
-> Prompt: Photo of an 90's desktop computer on a work desk, on the computer screen it says "welcome". On the wall in the background we see
-
-> beautiful graffiti with the text "SD3" very large on the wall.
+> Prompt: Photo of an 90's desktop computer on a work desk, on the computer screen it says "welcome". On the wall in the background we see beautiful graffiti with the text "SD3" very large on the wall.
 
 ![](img/bb6d762f2493d7a1ab03324cdfd96a1a.png)
 
 > Prompt: Anime style illustration of a newsstand on top of a small grassy hill, on top of the newsstand we see the text "it's here!". In the background we see a big rain approaching.
-
 
 > Prompt: A magazine on a glass table, the magazine has the text "incredible" on the cover. The table is in the center of a comfortable room with two very cozy purple sofas.
 

@@ -1,3 +1,4 @@
+
 # 合法性基础
 
 > 来源：[https://docs.feishu.cn/docx/KNzldJ33NoFI5rxoLUkc1zoCnMc](https://docs.feishu.cn/docx/KNzldJ33NoFI5rxoLUkc1zoCnMc)

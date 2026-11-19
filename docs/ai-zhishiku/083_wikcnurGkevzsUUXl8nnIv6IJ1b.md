@@ -1,3 +1,4 @@
+
 # 场景2：品牌 Logo
 
 > 来源：[https://my.feishu.cn/docx/TA9RdIt9ToOeT2xdKe2cTgQmnpb](https://my.feishu.cn/docx/TA9RdIt9ToOeT2xdKe2cTgQmnpb)
@@ -6,15 +7,11 @@
 
 前一章各位搞懂了基础 prompt 后，从本章开始就会教大家更多垂直场景的 prompt。关于垂直场景，我看到大量的教程和分享都是分享各种提示词，比如 Logo 相关的提示词有：
 
-+   modern
-
-+   minimalist
-
-+   vintage
-
-+   cartoon
-
-+   geometric
++ modern
++ minimalist
++ vintage
++ cartoon
++ geometric
 
 坦率地说，在我学习如何使用 Midjourney 的过程中，我一开始也以为只要看了别人的 prompt 用了别人的提示词，就能生成好的图片。
 
@@ -30,13 +27,10 @@
 
 常见的品牌 Logo 一般分成以下 4 种形式：
 
-+   Graphic Logo：一般以图形为主，像 Apple、Twitter 以及 Midjourney 就是这种 logo。
-
-+   Lettermark Logo：一般用公司名字的首字母作为 logo 主体，像 Facebook、Tesla 还有 IBM （IBM 全称是 International Business Machines）都是用公司名的首字母作为 logo。
-
-+   Geometric Logo：几何图形组成的 logo，比如 Nike、百事可乐、万事达卡就是这个类型。
-
-+   Mascot Logo：以公司吉祥物为 logo 的相对来说比较少见，像米其林的 logo 就是吉祥物轮胎人，我最喜欢的烤鸡餐厅 Nando’s 就是一只🐔
++ Graphic Logo：一般以图形为主，像 Apple、Twitter 以及 Midjourney 就是这种 logo。
++ Lettermark Logo：一般用公司名字的首字母作为 logo 主体，像 Facebook、Tesla 还有 IBM （IBM 全称是 International Business Machines）都是用公司名的首字母作为 logo。
++ Geometric Logo：几何图形组成的 logo，比如 Nike、百事可乐、万事达卡就是这个类型。
++ Mascot Logo：以公司吉祥物为 logo 的相对来说比较少见，像米其林的 logo 就是吉祥物轮胎人，我最喜欢的烤鸡餐厅 Nando’s 就是一只🐔
 
 其实常见的品牌 Logo 里其实还有一种，是文字组合式的，文字加上面任意一种，比如 Tesla 的 完整 Logo 就是 Tesla 加一个 T。但因为 Midjourney 在文字的生成上，有非常多的问题，所以不在本章进行介绍。
 
@@ -48,17 +42,12 @@
 
 首先我们来分析一下 Graphic Logo 的特性：
 
-1.  Logo 类型：graphic logo
-
-1.  Logo 图形描述：比如猫
-
-1.  风格：
-
-1.  多为扁平化设计：flat
-
-1.  多为矢量图形：vector graphic
-
-1.  简洁：simple
+1. Logo 类型：graphic logo
+2. Logo 图形描述：比如猫
+3. 风格：
+   - 多为扁平化设计：flat
+   - 多为矢量图形：vector graphic
+   - 简洁：simple
 
 根据特性撰写的 prompt ，核心的关键就是将风格描述清楚：
 
@@ -80,19 +69,13 @@ flat vector graphic line logo of cat, simple minimal
 
 这个根据我的实验，也试用了很多人写的 prompt，我个人的感受是，这种类型的 Logo 看起来简单，就一个字母进行变形，但让 AI 生成反而效果很一般，而且有一个算是比较有意思的发现，用 A 字母做出来的 Logo 质量比其他字母做出来的 Logo 质量要好很多（非严格按照数据统计，仅个人感受）。这个类型的 Logo 有以下特点：
 
-1.  Logo 类型：lettermark
-
-1.  Logo 图形描述：
-
-1.  纯字母
-
-1.  字体样式：可以按需加上喜欢的字体
-
-1.  风格：
-
-1.  矢量
-
-1.  简洁：simple minimal
+1. Logo 类型：lettermark
+2. Logo 图形描述：
+   - 纯字母
+   - 字体样式：可以按需加上喜欢的字体
+3. 风格：
+   - 矢量
+   - 简洁：simple minimal
 
 根据特性撰写 prompt（最后生成的是 A 和 C 的 logo，我个人感觉 A 的好很多），另外需要注意，这个例子其实是想说明，在 Midjourney 里，语法并不重要，lettermark 不一样要按照语法要求，写成 lettermark logo of letter A ：
 
@@ -106,19 +89,15 @@ letter A logo, lettermark, typography, vector simple minimal
 
 这个类型的 Logo 相对来说，虽然只有图形，但有很多玩法，介绍两个常用玩法：
 
-+   循环重复
++ 循环重复
 
 如果你用的是 iPhone ，可以看看 iPhone 里的照片应用的 Logo，它也是一个 Geometric Logo ，而且它是椭圆图形旋转重复，最后组合成了一朵花的形状。拆解一下，关键词是：
 
-1.  Logo 类型：geometric logo
-
-1.  Logo 图形描述：
-
-1.  旋转重复：radial repeating
-
-1.  风格：
-
-1.  简洁：simple minimal
+1. Logo 类型：geometric logo
+2. Logo 图形描述：
+   - 旋转重复：radial repeating
+3. 风格：
+   - 简洁：simple minimal
 
 让我们来写一个类似的 prompt：
 
@@ -126,21 +105,16 @@ letter A logo, lettermark, typography, vector simple minimal
 Flat geometric vector geometric logo of flower, petals radial repeating, simple minimal
 ```
 
-+   渐变
++ 渐变
 
 另一个常见玩法就是渐变色，如果你用的是电脑的浏览器是 Edge，可以去看看它的 Logo，它的 Logo 就是一个渐变色，然后是个浪的外观。拆解一下，关键词是：
 
-1.  Logo 类型：geometric logo
-
-1.  Logo 图像描述
-
-1.  浪的形状：curved wave shape
-
-1.  蓝绿渐变：blue green gradient
-
-1.  风格：
-
-1.  简洁：simple minimal
+1. Logo 类型：geometric logo
+2. Logo 图像描述
+   - 浪的形状：curved wave shape
+   - 蓝绿渐变：blue green gradient
+3. 风格：
+   - 简洁：simple minimal
 
 让我们来写一个类似的 prompt：
 
@@ -156,13 +130,10 @@ Flat geometric vector graphic logo of curved wave shape, blue green gradient ,si
 
 这种吉祥物类型的 Logo，我认为是 Midjourney 最擅长的 Logo 风格。但也非常考验我们的想象力，当然我们也可以仅提供一些比较简单的词语，让 AI 帮我们生成，让我们一起来为一个机器人公司写一个 Mascot Logo ，拆解一下 prompt 关键词：
 
-1.  Logo 类型：mascot logo
-
-1.  Logo 主体描述：比如机器人 robot
-
-1.  风格：
-
-1.  简洁：simple
+1. Logo 类型：mascot logo
+2. Logo 主体描述：比如机器人 robot
+3. 风格：
+   - 简洁：simple
 
 最后 prompt：
 
@@ -198,9 +169,8 @@ Pop Art 是什么？
 
 Pop Art 的特点是：
 
-+   它的内容主体一般是大众日常生活中常见的物品和图像，如广告标语、杂志封面、食品包装等。
-
-+   一般用色比较大胆，同时线条比较简洁，强调物品本身的视觉效果和意义。
++ 它的内容主体一般是大众日常生活中常见的物品和图像，如广告标语、杂志封面、食品包装等。
++ 一般用色比较大胆，同时线条比较简洁，强调物品本身的视觉效果和意义。
 
 右边边四个的 prompt 是这样的，我在 prompt 里加上了 De Stijl 。
 
@@ -216,10 +186,8 @@ De Stijl 是什么？
 
 De Stijl 的特点有：
 
-+   常常用几何图形进行设计，如矩形和直线。
-
-+   用色基本只用基本色彩，比如黑、白、灰、红、黄、蓝。
-
-+   追求平衡和和谐，强调形式和结构，不注重细节和表现力。
++ 常常用几何图形进行设计，如矩形和直线。
++ 用色基本只用基本色彩，比如黑、白、灰、红、黄、蓝。
++ 追求平衡和和谐，强调形式和结构，不注重细节和表现力。
 
 看完这些介绍，再看看 Midjourney 输出的 Logo 是不是有那味了？

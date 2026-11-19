@@ -1,3 +1,4 @@
+
 # 案例：律师事务所如何拥抱 AI ？来自 4 家顶级律所的经验教训
 
 > 来源：[https://docs.feishu.cn/docx/CaF8d9hBFon3V8xNv3HcrnXTncg](https://docs.feishu.cn/docx/CaF8d9hBFon3V8xNv3HcrnXTncg)
@@ -6,7 +7,7 @@
 
 当下，生成式 AI 正在改变我们的工作方式，并迅速成为律师行业必须关注的议题。但是，如果你是一个 AI 新手，应该从哪里开始？在尝试让你的团队加入之前，应该考虑什么？
 
-近日，四家在早期就采用 AI 的顶级律所：Troutman Pepper、Quinn Emanue**l、Fole**y** & Lardner 和 **Perkins Coie，分享了其将 AI 整合到自身工作流程中的经验和教训。从克服内部阻力到掌握创作 AI 提示的艺术，相信他们的实践可以为希望开启生成式 AI 之旅的律所，提供可借鉴的经验。
+近日，四家在早期就采用 AI 的顶级律所：Troutman Pepper、Quinn Emanuel、Foley & Lardner 和 Perkins Coie，分享了其将 AI 整合到自身工作流程中的经验和教训。从克服内部阻力到掌握创作 AI 提示的艺术，相信他们的实践可以为希望开启生成式 AI 之旅的律所，提供可借鉴的经验。
 
 以下，enjoy：
 

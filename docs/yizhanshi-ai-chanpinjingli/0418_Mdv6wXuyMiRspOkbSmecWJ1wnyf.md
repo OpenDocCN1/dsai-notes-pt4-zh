@@ -1,3 +1,4 @@
+
 # TensorFlow 环境搭建
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/V0OMduguioE2AzxqPdDcpAtUnnd](https://v11enp9ok1h.feishu.cn/docx/V0OMduguioE2AzxqPdDcpAtUnnd)
@@ -6,7 +7,7 @@ TensorFlow 2.x 对 Python 版本有特定要求：
 
 推荐使用 Python 3.9-3.11，这些版本具有最好的兼容性和稳定性。
 
-### 检查当前 Python 版本
+## 检查当前 Python 版本
 
 ```
 检查 Python 版本
@@ -20,7 +21,7 @@ pip --version
 pip3 --version
 ```
 
-### Python 安装选项
+## Python 安装选项
 
 选项 1：官方 Python（推荐新手）
 
@@ -110,7 +111,7 @@ conda install pip
 pip list
 
 # 生成依赖文件
-pip freeze &gt; requirements.txt
+pip freeze > requirements.txt
 
 # 从文件安装依赖
 pip install -r requirements.txt
@@ -135,7 +136,7 @@ conda env remove -n tensorflow_env  # conda
 pip install tensorflow
 
 # 验证安装
-python -c &quot;import tensorflow as tf; print(&#x27;TensorFlow version:&#x27;, tf.__version__)&quot;
+python -c "import tensorflow as tf; print('TensorFlow version:', tf.__version__)"
 ```
 
 **CPU 版本特点**：
@@ -176,24 +177,26 @@ TensorFlow 2.15+ 与 CUDA 版本对应：
 
 1.  下载和安装 CUDA Toolkit
 
-+   访问 NVIDIA CUDA Toolkit
+    +   访问 NVIDIA CUDA Toolkit
 
-+   选择对应版本下载安装
+    +   选择对应版本下载安装
 
-+   添加到系统 PATH
+    +   添加到系统 PATH
 
-1.  **下载和安装 cuDNN**
+2.  **下载和安装 cuDNN**
 
-+   访问 [NVIDIA cuDNN](https://developer.nvidia.com/cudnn)
+    +   访问 [NVIDIA cuDNN](https://developer.nvidia.com/cudnn)
 
-+   需要注册 NVIDIA 账户
+    +   需要注册 NVIDIA 账户
 
-+   解压到 CUDA 安装目录
+    +   解压到 CUDA 安装目录
 
-1.  **验证 CUDA 安装**
+3.  **验证 CUDA 安装**
 
-1.  nvcc --version
-nvidia-smi
+    ```
+    nvcc --version
+    nvidia-smi
+    ```
 
 #### 安装 TensorFlow GPU 版本
 
@@ -202,14 +205,12 @@ TensorFlow 2.10+ 统一包名
 pip install tensorflow
 
 # 验证 GPU 可用性
-python -c &quot;
+python -c "
 import tensorflow as tf
-print(&#x27;TensorFlow version:&#x27;, tf.
-__version__
-)
-print(&#x27;GPU available:&#x27;, tf.config.list_physical_devices(&#x27;GPU&#x27;))
-print(&#x27;Built with CUDA:&#x27;, tf.test.is_built_with_cuda())
-&quot;
+print('TensorFlow version:', tf.__version__)
+print('GPU available:', tf.config.list_physical_devices('GPU'))
+print('Built with CUDA:', tf.test.is_built_with_cuda())
+"
 ```
 
 ### 通过 Conda 安装
@@ -242,7 +243,7 @@ pip install --upgrade tensorflow
 
 ## 开发工具安装
 
-### upyter Notebook/Lab
+### Jupyter Notebook/Lab
 
 Jupyter 是数据科学和机器学习的标准开发环境：
 
@@ -312,16 +313,16 @@ pip install pillow opencv-python
 pip install tqdm
 
 # 创建完整的要求文件
-cat &gt; requirements.txt &lt;&lt; EOF
-tensorflow&gt;=2.12.0
-numpy&gt;=1.21.0
-pandas&gt;=1.3.0
-matplotlib&gt;=3.5.0
-seaborn&gt;=0.11.0
-scikit-learn&gt;=1.0.0
-jupyter&gt;=1.0.0
-tqdm&gt;=4.60.0
-pillow&gt;=8.0.0
+cat > requirements.txt << EOF
+tensorflow>=2.12.0
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+scikit-learn>=1.0.0
+jupyter>=1.0.0
+tqdm>=4.60.0
+pillow>=8.0.0
 EOF
 
 # 批量安装
@@ -334,70 +335,70 @@ pip install -r requirements.txt
 
 ### 完整的安装验证脚本
 
-创建 verify_installation.py 文件：
+创建 `verify_installation.py` 文件：
 
-## 实例
+### 实例
 
 ```
 #!/usr/bin/env python3
-&quot;&quot;&quot;
+"""
 TensorFlow 安装验证脚本
-&quot;&quot;&quot;
+"""
 
 import sys
-print(&quot;Python version:&quot;, sys.version)
-print(&quot;-&quot; * 50)
+print("Python version:", sys.version)
+print("-" * 50)
 
 # 检查 TensorFlow
 try:
     import tensorflow as tf
-    print(f&quot;✓ TensorFlow version: {tf.__version__}&quot;)
-    print(f&quot;✓ Keras version: {tf.keras.__version__}&quot;)
+    print(f"✓ TensorFlow version: {tf.__version__}")
+    print(f"✓ Keras version: {tf.keras.__version__}")
     
     # 检查 GPU 支持
-    physical_devices = tf.config.list_physical_devices(&#x27;GPU&#x27;)
+    physical_devices = tf.config.list_physical_devices('GPU')
     if physical_devices:
-        print(f&quot;✓ GPU devices found: {len(physical_devices)}&quot;)
+        print(f"✓ GPU devices found: {len(physical_devices)}")
         for i, device in enumerate(physical_devices):
-            print(f&quot;  - GPU {i}: {device}&quot;)
-        print(f&quot;✓ CUDA built: {tf.test.is_built_with_cuda()}&quot;)
+            print(f"  - GPU {i}: {device}")
+        print(f"✓ CUDA built: {tf.test.is_built_with_cuda()}")
     else:
-        print(&quot;&amp;#x26a0; No GPU devices found (CPU only)&quot;)
+        print("⚠ No GPU devices found (CPU only)")
     
     # 简单计算测试
     a = tf.constant([1, 2, 3])
     b = tf.constant([4, 5, 6])
     c = tf.add(a, b)
-    print(f&quot;✓ Basic computation test: {a.numpy()} + {b.numpy()} = {c.numpy()}&quot;)
+    print(f"✓ Basic computation test: {a.numpy()} + {b.numpy()} = {c.numpy()}")
     
 except ImportError as e:
-    print(f&quot;✗ TensorFlow import failed: {e}&quot;)
+    print(f"✗ TensorFlow import failed: {e}")
 
-print(&quot;-&quot; * 50)
+print("-" * 50)
 
 # 检查其他重要包
-packages = [&#x27;numpy&#x27;, &#x27;pandas&#x27;, &#x27;matplotlib&#x27;, &#x27;sklearn&#x27;, &#x27;jupyter&#x27;]
+packages = ['numpy', 'pandas', 'matplotlib', 'sklearn', 'jupyter']
 for package in packages:
     try:
         module = __import__(package)
-        version = getattr(module, &#x27;__version__&#x27;, &#x27;unknown&#x27;)
-        print(f&quot;✓ {package}: {version}&quot;)
+        version = getattr(module, '__version__', 'unknown')
+        print(f"✓ {package}: {version}")
     except ImportError:
-        print(f&quot;✗ {package}: not installed&quot;)
+        print(f"✗ {package}: not installed")
 
-print(&quot;-&quot; * 50)
+print("-" * 50)
 
 # 内存和设备信息
-print(&quot;System Information:&quot;)
-if tf.config.list_physical_devices(&#x27;GPU&#x27;):
-    for gpu in tf.config.list_physical_devices(&#x27;GPU&#x27;):
+print("System Information:")
+if tf.config.list_physical_devices('GPU'):
+    for gpu in tf.config.list_physical_devices('GPU'):
         try:
             tf.config.experimental.set_memory_growth(gpu, True)
-            print(f&quot;✓ GPU memory growth enabled for {gpu}&quot;)
+            print(f"✓ GPU memory growth enabled for {gpu}")
         except:
-            print(f&quot;&amp;#x26a0; Could not set memory growth for {gpu}&quot;)
+            print(f"⚠ Could not set memory growth for {gpu}")
 
-print(&quot;Installation verification complete!&quot;)
+print("Installation verification complete!")
 ```
 
 运行验证：
@@ -414,8 +415,8 @@ python verify_installation.py
 import tensorflow as tf
 import time
 
-print(&quot;TensorFlow Performance Test&quot;)
-print(&quot;-&quot; * 30)
+print("TensorFlow Performance Test")
+print("-" * 30)
 
 # 矩阵乘法测试
 def benchmark_matmul(device_name, size=1000):
@@ -437,23 +438,23 @@ def benchmark_matmul(device_name, size=1000):
         return avg_time
 
 # CPU 测试
-cpu_time = benchmark_matmul(&#x27;/CPU:0&#x27;)
-print(f&quot;CPU ({1000}x{1000} matmul): {cpu_time:.4f} seconds&quot;)
+cpu_time = benchmark_matmul('/CPU:0')
+print(f"CPU ({1000}x{1000} matmul): {cpu_time:.4f} seconds")
 
 # GPU 测试（如果可用）
-if tf.config.list_physical_devices(&#x27;GPU&#x27;):
-    gpu_time = benchmark_matmul(&#x27;/GPU:0&#x27;)
-    print(f&quot;GPU ({1000}x{1000} matmul): {gpu_time:.4f} seconds&quot;)
-    print(f&quot;GPU speedup: {cpu_time/gpu_time:.2f}x&quot;)
+if tf.config.list_physical_devices('GPU'):
+    gpu_time = benchmark_matmul('/GPU:0')
+    print(f"GPU ({1000}x{1000} matmul): {gpu_time:.4f} seconds")
+    print(f"GPU speedup: {cpu_time/gpu_time:.2f}x")
 else:
-    print(&quot;No GPU available for testing&quot;)
+    print("No GPU available for testing")
 ```
 
 ## 常见问题和解决方案
 
 ### 安装问题
 
-**问题 1：pip 安装超时**
+**问题 1：`pip` 安装超时**
 
 ```
 pip install --user tensorflow
@@ -489,63 +490,84 @@ pip install tensorflow
 
 **问题 2：GPU 内存不足**
 
-```
-设置 GPU 内存增长
-gpus = tf.config.experimental.list_physical_devices(&#x27;GPU&#x27;)
-if gpus:
-    for gpu in gpus:
-        tf.config.experimental.set_memory_growth(gpu, True)
-```
 
-**问题 3：无法找到 GPU**
 
-```
+# TensorFlow 环境配置与问题排查
+
+## 问题排查
+
+### 问题 3：无法找到 GPU
+
 检查 NVIDIA 驱动
+
+```
 nvidia-smi
+```
 
-# 检查 CUDA 安装
+检查 CUDA 安装
+
+```
 nvcc --version
+```
 
-# 重新安装 GPU 支持
+重新安装 GPU 支持
+
+```
 pip uninstall tensorflow
 pip install tensorflow
 ```
 
 ### Jupyter 相关问题
 
-问题 1：虚拟环境在 Jupyter 中不可见
+#### 问题 1：虚拟环境在 Jupyter 中不可见
 
-```
 安装 ipykernel
+
+```
 pip install ipykernel
-
-# 添加虚拟环境到 Jupyter
-python -m ipykernel install --user --name tensorflow_env --display-name &quot;Python (TensorFlow)&quot;
 ```
 
-问题 2：Jupyter 无法启动
+添加虚拟环境到 Jupyter
 
 ```
+python -m ipykernel install --user --name tensorflow_env --display-name "Python (TensorFlow)"
+```
+
+#### 问题 2：Jupyter 无法启动
+
 重新安装 Jupyter
+
+```
 pip uninstall jupyter notebook
 pip install jupyter notebook
-
-# 或使用 conda
-conda install jupyter
 ```
 
----
+或使用 conda
+
+```
+conda install jupyter
+```
 
 ## 开发环境优化
 
 ### GPU 内存管理
 
+设置 GPU 内存增长
+
 ```
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+    for gpu in gpus:
+        tf.config.experimental.set_memory_growth(gpu, True)
+```
+
 GPU 配置优化
+
+```
 import tensorflow as tf
 
 # 方法 1：设置内存增长
-gpus = tf.config.experimental.list_physical_devices(&#x27;GPU&#x27;)
+gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
     try:
         for gpu in gpus:
@@ -563,10 +585,11 @@ if gpus:
 
 ### 性能优化设置
 
-```
 启用混合精度训练（提升性能）
+
+```
 from tensorflow.keras.mixed_precision import experimental as mixed_precision
-policy = mixed_precision.Policy(&#x27;mixed_float16&#x27;)
+policy = mixed_precision.Policy('mixed_float16')
 mixed_precision.set_policy(policy)
 
 # 启用 XLA 编译优化
@@ -575,43 +598,52 @@ tf.config.optimizer.set_jit(True)
 
 ### 开发工具配置
 
-VS Code 配置（.vscode/settings.json）：
+VS Code 配置（`.vscode/settings.json`）：
 
 ```
 {
-    &quot;python.defaultInterpreterPath&quot;: &quot;./tensorflow_env/bin/python&quot;,
-    &quot;python.linting.enabled&quot;: true,
-    &quot;python.linting.pylintEnabled&quot;: true,
-    &quot;jupyter.defaultKernel&quot;: &quot;tensorflow_env&quot;
+    "python.defaultInterpreterPath": "./tensorflow_env/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "jupyter.defaultKernel": "tensorflow_env"
 }
 ```
-
----
 
 ## 环境维护
 
 ### 定期更新
 
-```
 更新 TensorFlow
-pip install --upgrade tensorflow
 
-# 更新所有包
+```
+pip install --upgrade tensorflow
+```
+
+更新所有包
+
+```
 pip list --outdated
 pip install --upgrade package_name
+```
 
-# 或批量更新
-pip freeze | grep -v &quot;^-e&quot; | cut -d = -f 1 | xargs pip install -U
+或批量更新
+
+```
+pip freeze | grep -v "^-e" | cut -d = -f 1 | xargs pip install -U
 ```
 
 ### 环境备份和迁移
 
-```
 导出环境
-pip freeze &gt; requirements.txt
-conda env export &gt; environment.yml
 
-# 在新机器上恢复环境
+```
+pip freeze > requirements.txt
+conda env export > environment.yml
+```
+
+在新机器上恢复环境
+
+```
 pip install -r requirements.txt
 conda env create -f environment.yml
 ```

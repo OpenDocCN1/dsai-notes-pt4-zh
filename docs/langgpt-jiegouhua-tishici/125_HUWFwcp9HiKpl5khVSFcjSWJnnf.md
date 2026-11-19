@@ -1,8 +1,9 @@
+
 # 2. Sora 提示词案例
 
 > 来源：[https://langgptai.feishu.cn/docx/OK0gd7vmpofzLUxxTpRcvTO1nLy](https://langgptai.feishu.cn/docx/OK0gd7vmpofzLUxxTpRcvTO1nLy)
 
-> 本页面内容由 LangGPT 社区成员     编辑，感谢他们的贡献！
+> 本页面内容由 LangGPT 社区成员  编辑，感谢他们的贡献！
 
 ## 东京街头都市丽人-60s
 
@@ -29,7 +30,6 @@ Prompt:
 Prompt
 
 > Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.
-
 
 [wooly-mammoth.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/X1shbD2aMo8OZVxK3m1cREQ7nUd)
 
@@ -59,7 +59,6 @@ Prompt:
 
 > A corgi vlogging itself in tropical Maui.
 
-
 [vlogger-corgi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CD4rbivYroo3AVxTpeqcG1fhnEb)
 
 ## 金毛幼犬-20s
@@ -67,7 +66,6 @@ Prompt:
 Prompt:
 
 > A litter of golden retriever puppies playing in the snow. Their heads pop out of the snow, covered in.
-
 
 [snow-dogs.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HXoabEmtxoDc6Sx2AfFcsm1rnve)
 
@@ -127,7 +125,6 @@ Prompt:
 
 > Photorealistic closeup video of two pirate ships battling each other as they sail inside a cup of coffee.
 
-
 [ships-in-coffee.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ukz7bvan2oW0g8xil8VccyLinfc)
 
 ## 云顶上的读书男人-25s
@@ -146,7 +143,6 @@ Prompt:
 
 > Historical footage of California during the gold rush.
 
-
 [gold-rush.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RUC4bSm6woXMXOxUyQ8cYA8On5g)
 
 ## 玻璃球内小人花园玩沙子-10s
@@ -154,7 +150,6 @@ Prompt:
 Prompt:
 
 > A close up view of a glass sphere that has a zen garden within it. There is a small dwarf in the sphere who is raking the zen garden and creating patterns in the sand.
-
 
 [zen-garden-gnome.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BwrZbyH5kozL6Nxyu7YcUoUbnhh)
 
@@ -184,7 +179,6 @@ Prompt:
 
 > A beautiful homemade video showing the people of Lagos, Nigeria in the year 2056. Shot with a mobile phone camera.
 
-
 [lagos.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Br8XbVVxVo4NX5xwO81cA6VYncb)
 
 ## 培养皿竹林熊猫-10s
@@ -192,6 +186,8 @@ Prompt:
 Prompt:
 
 > A petri dish with a bamboo forest growing within it that has tiny red pandas running around.
+
+
 
 ![](img/8babab98e83cea280b2dec1bd08b7212.png)
 
@@ -341,6 +337,9 @@ Prompt:
 
 Prompt:
 
+
+
+
 > An extreme close-up of an gray-haired man with a beard in his 60s, he is deep in thought pondering the history of the universe as he sits at a cafe in Paris, his eyes focus on people offscreen as they walk as he sits mostly motionless, he is dressed in a wool coat suit coat with a button-down shirt , he wears a brown beret and glasses and has a very professorial appearance, and the end he offers a subtle closed-mouth smile as if he found the answer to the mystery of life, the lighting is very cinematic with the golden light and the Parisian streets and city in the background, depth of field, cinematic 35mm film.
 
 ![](img/02fb5ea110d90d77d13ad9558c8fc03d.png)
@@ -362,7 +361,6 @@ Prompt:
 Prompt:
 
 > New York City submerged like Atlantis. Fish, whales, sea turtles and sharks swim through the streets of New York.Prompt: New York City submerged like Atlantis. Fish, whales, sea turtles and sharks swim through the streets of New York.
-
 
 [aquarium-nyc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EEIDb8UbBolqy8xcNqcczVEAnTf)
 
@@ -452,7 +450,6 @@ Prompt:
 
 > The camera directly faces colorful buildings in Burano Italy. An adorable dalmation looks through a window on a building on the ground floor. Many people are walking and cycling along the canal streets in front of the buildings.
 
-
 [italian-pup (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ERg2bkhFzogBi1xjp7CckrlDnmc)
 
 ## 水獭冲浪-17s
@@ -517,13 +514,19 @@ Prompt:
 
 ## 闪电人行云-17s
 
+
+
+# Sora 视频生成示例汇总
+
+## 云形巨人-9s
+
 Prompt:
 
 > A giant, towering cloud in the shape of a man looms over the earth. The cloud man shoots lighting bolts down to the earth.
 
 ![](img/0231f1ee5a8ebec07aae392ea83f2399.png)
 
-[cloud-man.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9xzbVpWDogCiUxk0TncrgPJn6f)
+[`cloud-man.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C9xzbVpWDogCiUxk0TncrgPJn6f)
 
 ## 双狗街区夜游-9s
 
@@ -533,7 +536,7 @@ Prompt:
 
 ![](img/a4e364fe920487dd2fe5a63a84dce082.png)
 
-[dogs-downtown.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DxAYbXUpQocJdYx76s6cKv4LnGe)
+[`dogs-downtown.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DxAYbXUpQocJdYx76s6cKv4LnGe)
 
 ## 火车驶向铁路桥-9s
 
@@ -541,22 +544,20 @@ Prompt:
 
 > The Glenfinnan Viaduct is a historic railway bridge in Scotland, UK, that crosses over the west highland line between the towns of Mallaig and Fort William. It is a stunning sight as a steam train leaves the bridge, traveling over the arch-covered viaduct. The landscape is dotted with lush greenery and rocky mountains, creating a picturesque backdrop for the train journey. The sky is blue and the sun is shining, making for a beautiful day to explore this majestic spot.
 
+[`photoreal-train.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IgS9bcSRxoLJm0xS1ypcb24mng9)
 
-[photoreal-train.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IgS9bcSRxoLJm0xS1ypcb24mng9)
+## 投稿内容（截止 2 月 21 日中午还未在 Sora 官网呈现）
 
-## 以下内容挖部分由投稿，截止2月21日中午还未在Sora官网呈现
+2 月 21 日下午最新 sora 狗片，由 OpenAI Sora 工作人员发布： 1、“一群萨摩耶小狗学习成为厨师的电影预告片”2、“一群爱冒险的小狗探索天空废墟的电影预告片”
 
-2月21日下午最新sora狗片，由OpenAI Sora工作人员发布： 1、“一群萨摩耶小狗学习成为厨师的电影预告片”2、“一群爱冒险的小狗探索天空废墟的电影预告片”
-
-
-[59153722.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkBMbngXhoKs4WxPUTmcrm9en6G)
+[`59153722.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkBMbngXhoKs4WxPUTmcrm9en6G)
 
 ![](img/87335daf7e0118e767932b6d34cabce9.png)
 
-[1753828573.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WtsybAgfWoQoN3xCg3TcoVmqn5e)
+[`1753828573.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WtsybAgfWoQoN3xCg3TcoVmqn5e)
 
 “一只穿着黑色连帽运动衫的电脑黑客拉布拉多猎犬坐在电脑前，当他快速打字时，屏幕的眩光照射在狗的脸上。
 
 ![](img/33690c8345ce92683fbacac19fb911bf.png)
 
-[173198503.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZGdubOy7vov8QNxaXW5ctvvln0b)
+[`173198503.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZGdubOy7vov8QNxaXW5ctvvln0b)

@@ -1,8 +1,9 @@
+
 # 各城市活动信息
 
-> 来源：[https://geekbang.feishu.cn/docx/As8FdbhhroBJZIxEYKtcGgawnGd](https://geekbang.feishu.cn/docx/As8FdbhhroBJZIxEYKtcGgawnGd)
+> 来源：[`https://geekbang.feishu.cn/docx/As8FdbhhroBJZIxEYKtcGgawnGd`](https://geekbang.feishu.cn/docx/As8FdbhhroBJZIxEYKtcGgawnGd)
 
-| **城市** | **时间** | **地点** |  |
+| 城市 | 时间 | 地点 |  |
 | --- | --- | --- | --- |
 | 北京站 | 2026年03月15日 |  |  |
 | 杭州站 | 2026年03月21日（周六） | 杭州云谷中心·云谷之芯一层报告厅 | OpenClaw中国行12城报名表 |
@@ -11,7 +12,6 @@
 | 青岛站 |  | 青岛威斯汀酒店 |  |
 | 成都站 |  | 成都天府软件园C1三楼 |  |
 | 广州站 |  | 广州国际科技成果转化（天河）基地 |  |
-|  |  |  |  |
 | 上海站 | 2026年03月22日（周日）  下午1:30 ~ 6:00 | 上海张江 AI 应用商店 |  |
 | 南京站 |  | 江苏国际数据港一楼玄武大模型工厂 |  |
 | 厦门站 |  | 厦门软件园二期105会议室 |  |

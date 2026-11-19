@@ -1,3 +1,4 @@
+
 # 前台实名的合法性基础
 
 > 来源：[https://docs.feishu.cn/docx/EsC9dqODVoUVcPxd1w8cOibcn7e](https://docs.feishu.cn/docx/EsC9dqODVoUVcPxd1w8cOibcn7e)
@@ -30,7 +31,7 @@
 
 ![](img/a9d9f83471f83241e0b0f8073a58aaf3.png)
 
-**-答4：**前台实名制依据，有可能是这个《[互联网用户账号信息管理规定](https://mp.weixin.qq.com/s?__biz=MzAwMjU0MjIyNw==&mid=2651413000&idx=2&sn=2f53b1b1859efd16fb44f5356fc77497&scene=21#wechat_redirect)的第11条和13条，以及之前7月份的一份文件《关于加强“自媒体”管理的通知》。
+**-答4：**前台实名制依据，有可能是这个《[互联网用户账号信息管理规定](https://mp.weixin.qq.com/s?__biz=MzAwMjU0MjIyNw==&mid=2651413000&idx=2&sn=2f53b1b1859efd16fb44f5356fc77497&scene=21#wechat_redirect)》的第11条和13条，以及之前7月份的一份文件《关于加强“自媒体”管理的通知》。
 
 > 第十一条 对于互联网用户申请注册提供互联网新闻信息服务、网络出版服务等依法需要取得行政许可的互联网信息服务的账号，或者申请注册从事经济、教育、医疗卫生、司法等领域信息内容生产的账号，互联网信息服务提供者应当要求其提供服务资质、职业资格、专业背景等相关材料，予以核验并在账号信息中加注专门标识。
 

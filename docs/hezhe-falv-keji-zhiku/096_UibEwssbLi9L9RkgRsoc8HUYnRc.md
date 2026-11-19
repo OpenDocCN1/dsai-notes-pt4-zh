@@ -1,16 +1,17 @@
+
 # 第二周｜September
 
 > 来源：[https://docs.feishu.cn/docx/NU8YdKTD7o4RNRxyIlFcz6nUnxn](https://docs.feishu.cn/docx/NU8YdKTD7o4RNRxyIlFcz6nUnxn)
 
 <https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg>
 
-# **一、法律科技资讯**
+# 一、法律科技资讯
 
 > 由于法律科技产品 + AI 能力已经成为主流，日报将减少同质化产品的动态推送，重点关注头部公司和创新产品。
 
 > 本日报仅推送新闻简讯，如需阅读更详细的内[会员体系](https://e9w56z965d.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)，可订阅高级版知识库。了解更多 👉
 
-## **法律 AI 前沿资讯**
+## 法律 AI 前沿资讯
 
 ### K&L Gates 律所与 AltaClaro 合作，联合推出生成式 AI 监督课程
 
@@ -36,15 +37,15 @@
 
 9 月 9 日，纽约市律师协会宣布成立一个 AI 和数字技术工作组，该工作组有九个小组委员会，由一系列专业人士组成，包括大学教授、计算机科学家以及内部、非营利和非从务律师等。
 
-## **传统法律科技资讯**
+## 传统法律科技资讯
 
 无。
 
-## **法律科技活动推荐**
+## 法律科技活动推荐
 
 无。
 
-# **二、大模型资讯**
+# 二、大模型资讯
 
 ## Around the World
 
@@ -76,17 +77,17 @@
 
 > https://mp.weixin.qq.com/s/-DeHD6vjf0Tt5bwmeeQuXA
 
-## **东八区**
+## 东八区
 
 暂无。
 
-# **三、监管与观点**
+# 三、监管与观点
 
-## **AI 监管****/政策****动态**
+## AI 监管/政策动态
 
 暂无。
 
-## **AI 观点/资讯**
+## AI 观点/资讯
 
 ### 吴恩达亲自授课：免费教你用 AI 学 Python，适合所有人，入门到实战
 
@@ -96,35 +97,35 @@
 
 > 拓展阅读：https://mp.weixin.qq.com/s/duLLP9zkyyci273vj0ZPTQ
 
-# **四、优质文章分享**
+# 四、优质文章分享
 
 【法律 AI 交流群】每天都会分享法律 AI、法律科技相关的前沿信息，以下为群友分享的优质文章：
 
-+   2024 年第三十六期法律科技周报（9.2-9.8）
++ 2024 年第三十六期法律科技周报（9.2-9.8）
 
-+   400 万！律师行业要变天了🤯
++ 400 万！律师行业要变天了🤯
 
-+   司法部：全国共 400 万专业法律服务人员，还不包括法律咨询公司
++ 司法部：全国共 400 万专业法律服务人员，还不包括法律咨询公司
 
-+   市场需求驱动+产学研创新环境，欧洲法律科技市场正在崛起⤴️
++ 市场需求驱动+产学研创新环境，欧洲法律科技市场正在崛起⤴️
 
-+   [试完这个神级Prompt，我发现C](https://mp.weixin.qq.com/s/JqhdmbXHbF7TGnVq8fyI3w)laude3.5确实就是现在的No.1。
++ [试完这个神级Prompt，我发现C](https://mp.weixin.qq.com/s/JqhdmbXHbF7TGnVq8fyI3w)laude3.5确实就是现在的No.1。
 
-+   [Anthropic 大神揭秘：提示](https://mp.weixin.qq.com/s/IoJjh-juKqL7hyc-lQSNvQ)工程的精髓，是把你的大脑“复制”给 AI
++ [Anthropic 大神揭秘：提示](https://mp.weixin.qq.com/s/IoJjh-juKqL7hyc-lQSNvQ)工程的精髓，是把你的大脑“复制”给 AI
 
-+   高途集团CEO陈向东：我对AI取代教育持怀疑态度 | AI光年
++ 高途集团CEO陈向东：我对AI取代教育持怀疑态度 | AI光年
 
-+   对话钉钉总裁叶军：为 AI 狂奔 18 个月，到底值不值？
++ 对话钉钉总裁叶军：为 AI 狂奔 18 个月，到底值不值？
 
-+   [SaaS新财季|AI应用最大竞对](https://mp.weixin.qq.com/s/1IZ0rWMU6fgmjng9swPhEw)是CIO？RPA在Agent冲击下新生？
++ [SaaS新财季|AI应用最大竞对](https://mp.weixin.qq.com/s/1IZ0rWMU6fgmjng9swPhEw)是CIO？RPA在Agent冲击下新生？
 
-+   SaaS新财季|AI应用清晰化但AI货币化仍保守，整合成为主旋律
++ SaaS新财季|AI应用清晰化但AI货币化仍保守，整合成为主旋律
 
-+   李彦宏内部讲话流出：曝大模型「刷榜」潜规则，谈三大认知误区
++ 李彦宏内部讲话流出：曝大模型「刷榜」潜规则，谈三大认知误区
 
 > 注：与本周重要资讯相关的文章已整合到以上特定资讯下方，不在此处再次列出。
 
-# **五、更多内容**
+# 五、更多内容
 
 ## 飞书×法律修音机：Legal Studio 法律科技智库，认识一下
 

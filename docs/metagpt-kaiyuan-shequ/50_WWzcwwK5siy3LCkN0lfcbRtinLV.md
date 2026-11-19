@@ -1,3 +1,4 @@
+
 # 机器学习建模 with 使用工具
 
 > 来源：[https://deepwisdom.feishu.cn/docx/YkQAdznrAorlcBxNCORcJmSsnwe](https://deepwisdom.feishu.cn/docx/YkQAdznrAorlcBxNCORcJmSsnwe)
@@ -6,7 +7,7 @@
 
 ### 任务
 
-使用 DataInterpreter 对 [titanic](https://www.kaggle.com/competitions/titanic/data) 数据集进行建模预测，并在数据预处理和特征工程阶段批量调用工具（已经预先创建了多个 data_preprocess 和 feature_engineering 类型的工具，位于目录metagpt/tools/libs下）。
+使用 `DataInterpreter` 对 [titanic](https://www.kaggle.com/competitions/titanic/data) 数据集进行建模预测，并在数据预处理和特征工程阶段批量调用工具（已经预先创建了多个 `data_preprocess` 和 `feature_engineering` 类型的工具，位于目录`metagpt/tools/libs`下）。
 
 ### 代码
 
@@ -16,7 +17,7 @@ python examples/di/machine_learning_with_tools.py
 
 ### 运行结果
 
-数据预处理代码（其中包含 3 个工具的使用：FillMissingValue、StandardScale 和 OneHotEncode）如下：
+数据预处理代码（其中包含 3 个工具的使用：`FillMissingValue`、`StandardScale` 和 `OneHotEncode`）如下：
 
 ```
 from metagpt.tools.libs.data_preprocess import FillMissingValue, StandardScale, OneHotEncode
@@ -47,7 +48,7 @@ train_data.drop(columns=non_informative_columns, axis=1, inplace=True, errors=&#
 train_data.head()
 ```
 
-特征工程代码（其中包含 1 个工具的使用：PolynomialExpansion）如下：
+特征工程代码（其中包含 1 个工具的使用：`PolynomialExpansion`）如下：
 
 ```
 from metagpt.tools.libs.feature_engineering import PolynomialExpansion
@@ -67,11 +68,10 @@ train_data.head()
 
 ### 工具创建
 
-在 metagpt.tools.libs 目录下，我们预先定义了两类工具：数据预处理（data_preprocess）和特征工程（feature_engineering）。下面以数据预处理任务为例，给出一个简单工具的完整创建指引，包括工具的定义和注册方法。
+在 `metagpt.tools.libs` 目录下，我们预先定义了两类工具：数据预处理（`data_preprocess`）和特征工程（`feature_engineering`）。下面以数据预处理任务为例，给出一个简单工具的完整创建指引，包括工具的定义和注册方法。
 
-+   首先，在 metagpt.tools.libs 目录下创建文件 data_preprocess.py。
-
-+   在该文件中，您将定义您的数据预处理工具，并利用 @register_tool 装饰器一键完成工具的注册。此外，你也可以通过设置 tags 参数，指定工具的类别。
++   首先，在 `metagpt.tools.libs` 目录下创建文件 `data_preprocess.py`。
++   在该文件中，您将定义您的数据预处理工具，并利用 `@register_tool` 装饰器一键完成工具的注册。此外，你也可以通过设置 `tags` 参数，指定工具的类别。
 
 ### 代码示例：
 
@@ -152,11 +152,11 @@ class FillMissingValue:
         return self.transform(df)
 ```
 
-在上述示例中，FillMissingValue 类具体实现了缺失值的填充功能，并通过 @register_tool 装饰器注册为数据预处理工具。
+在上述示例中，`FillMissingValue` 类具体实现了缺失值的填充功能，并通过 `@register_tool` 装饰器注册为数据预处理工具。
 
-注册工具后，系统将自动根据工具函数的注释在 metagpt.tools.schemas 目录下为您生成每个工具生成相应的 schema 文件（如 FillMissingValue.yml），详细描述工具类的结构、方法以及参数类型，确保 LLM 能够准确理解并使用该工具。
+注册工具后，系统将自动根据工具函数的注释在 `metagpt.tools.schemas` 目录下为您生成每个工具生成相应的 schema 文件（如 `FillMissingValue.yml`），详细描述工具类的结构、方法以及参数类型，确保 LLM 能够准确理解并使用该工具。
 
-Schema 文件示例（FillMissingValue.yml）：
+Schema 文件示例（`FillMissingValue.yml`）：
 
 ```
 type: class
@@ -197,10 +197,10 @@ methods:
 
 ### 自动工具注册与选择
 
-通过设置DataInterpreter的参数tools，可以人为指定使用哪些工具。如果希望使用所有工具，可以设定tools=["<all>"]。
+通过设置`DataInterpreter`的参数`tools`，可以人为指定使用哪些工具。如果希望使用所有工具，可以设定`tools=["<all>"]`。
 
-当 DataInterpreter 启动时，它会自动注册 tools 列表中的所有工具。同时，在任务规划阶段，DataInterpreter 会根据需求为每个任务推荐可用的工具，并挑选出 TOP-k 供 LLM 使用。
+当 `DataInterpreter` 启动时，它会自动注册 `tools` 列表中的所有工具。同时，在任务规划阶段，`DataInterpreter` 会根据需求为每个任务推荐可用的工具，并挑选出 `TOP-k` 供 LLM 使用。
 
 ### 工具组合与调用
 
-在执行任务时，一旦可用的 TOP 工具被识别，DataInterpreter 会根据任务需求自动组合并调用其中的有用工具，以形成针对特定任务的代码解决方案。
+在执行任务时，一旦可用的 `TOP` 工具被识别，`DataInterpreter` 会根据任务需求自动组合并调用其中的有用工具，以形成针对特定任务的代码解决方案。

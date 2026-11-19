@@ -1,10 +1,11 @@
+
 # 4 | How AI LLM's Work
 
 > 来源：[https://aigcreative.feishu.cn/docx/SmF7d64QRoJX1Pxe1JwcCYcknNc](https://aigcreative.feishu.cn/docx/SmF7d64QRoJX1Pxe1JwcCYcknNc)
 
 Hi there. Congratulations on getting to section 4 within Promptstacks Prompt School. Within this section, we'll briefly cover what an AI model is and how large language models actually work.
 
-### Unlocking the Power of Large Language Models
+## Unlocking the Power of Large Language Models
 
 Large language models, or LLMs, are quickly becoming a topic of interest for many industries due to their limitless potential. They are neural networks trained on vast amounts of data in a particular language and are capable of predicting words, phrases, and even entire sentences. With billions to hundreds of billions of parameters, LLMs are sensitive to contextual relationships between elements in a language.
 
@@ -20,7 +21,7 @@ Even legal teams can benefit from LLMs, as they can help with legal paraphrasing
 
 ## Different AIs and Prompt Engineering Specifically
 
-[AI mod](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F)el[s are](https://google-research.github.io/seanet/musiclm/examples/) capable of generating various forms of content such as images, music, text, and even videos. These types of AIs are known as generative AIs, which create outputs based on learned patterns from data. On the other hand, there are discriminative AIs that classify data into different categories. An example of a discriminative AI is an image classifier, which categorizes images based on their content such as determining whether an image is of a cat or a dog.
+AI models are capable of generating various forms of content such as images, music, text, and even videos. These types of AIs are known as generative AIs, which create outputs based on learned patterns from data. On the other hand, there are discriminative AIs that classify data into different categories. An example of a discriminative AI is an image classifier, which categorizes images based on their content such as determining whether an image is of a cat or a dog.
 
 Exploring the capabilities of generative AIs has become increasingly popular in recent years, with GPT-4 and ChatGPT being two of the most advanced models currently available for prompt engineering. However, it is important to note that while these AIs may appear similar, they have distinct differences that should be taken into consideration when choosing which to use.
 
@@ -28,15 +29,13 @@ It is worth noting that most techniques covered in Promptstacks can be applied t
 
 ## How do they actually work?
 
-##
-
 Generative text AIs, such as GPT-3 and ChatGPT, operate on a transformer architecture made up of billions of artificial neurons. These AIs are essentially complex math functions that take in thousands of variables and output thousands of possible responses. To understand sentences, they break them down into tokens or subwords, and then convert each token into a list of numbers for processing. These AIs predict the next word/token in a sentence based on the previous words/tokens they have seen and written. They look at all tokens at the same time and do not read left to right or right to left like humans.
 
 ### How do they think?
 
 It is important to note that words like "think," "brain," and "neuron" are metaphors used to describe what the model is doing. These models are not thinking or acting like humans, but are simply following complex mathematical processes. However, if it helps in learning or understanding, one may anthropomorphize the AI. It is essential to recognize that this field of AI is still actively being researched and philosophized, and new developments may change our understanding of how these models operate.
 
-Top Applications of Large Language Models: Unlocking New Possibilities
+## Top Applications of Large Language Models: Unlocking New Possibilities
 
 Large language models (LLMs) have revolutionized the world of artificial intelligence and natural language processing. They have opened up new opportunities in various fields, including healthcare, search engines, robotics, code generation, and more. Let's take a little deep dive into their practical real world applications.
 
@@ -61,6 +60,8 @@ People can use LLMs to write software and teach robots physical tasks. By traini
 Marketers can train LLMs to analyze and organize customer feedback and requests into clusters. This can help businesses to gain valuable insights into customer preferences and improve their products and services accordingly. Additionally, LLMs can be used to segment products into categories based on product descriptions, making it easier for customers to find what they are looking for.
 
 ### Detecting Anomaly and Fraud Analysis in Financial Institutions
+
+
 
 Financial advisors and credit-card companies can use LLMs for anomaly detection and fraud analysis to protect consumers. By analyzing large datasets, LLMs can identify patterns and anomalies that are indicative of fraudulent activities. This can help financial institutions to prevent fraud and protect their customers' assets.
 

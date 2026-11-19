@@ -1,8 +1,7 @@
-# 05-API接口规范-v1.0
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/Lh6UdsOWFoXXAexl73VcgeAwnKd](https://kq4b3vgg5b.feishu.cn/docx/Lh6UdsOWFoXXAexl73VcgeAwnKd)
 
 # API 接口规范 v1.0
+
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/Lh6UdsOWFoXXAexl73VcgeAwnKd](https://kq4b3vgg5b.feishu.cn/docx/Lh6UdsOWFoXXAexl73VcgeAwnKd)
 
 > 适用场景：企业内部知识库 / 客服智能问答 / 技术文档检索 / 行业资料分析
 
@@ -24,14 +23,14 @@ Content-Type: application/json
 认证方式: Bearer Token (JWT)
 ```
 
-**统一返回格式**：
+统一返回格式：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {},
-    &quot;request_id&quot;: &quot;req_xxx&quot;
+    "code": 0,
+    "message": "success",
+    "data": {},
+    "request_id": "req_xxx"
 }
 ```
 
@@ -46,33 +45,33 @@ POST /documents/upload
 Content-Type: multipart/form-data
 ```
 
-**请求参数**：
+请求参数：
 
 | 参数 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| file | File | ✅ | 支持 .pdf / .jpg / .png / .txt / .md |
-| tags | string[] | ❌ | 文档标签，用于过滤检索 |
-| description | string | ❌ | 文档描述 |
+| `file` | `File` | ✅ | 支持 `.pdf` / `.jpg` / `.png` / `.txt` / `.md` |
+| `tags` | `string[]` | ❌ | 文档标签，用于过滤检索 |
+| `description` | `string` | ❌ | 文档描述 |
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;file_id&quot;: &quot;doc_1714567890_abc123&quot;,
-        &quot;file_name&quot;: &quot;architecture_spec.pdf&quot;,
-        &quot;file_size&quot;: 1048576,
-        &quot;file_type&quot;: &quot;pdf&quot;,
-        &quot;task_id&quot;: &quot;task_1714567890_xyz789&quot;,
-        &quot;status&quot;: &quot;pending&quot;,
-        &quot;upload_time&quot;: &quot;2026-04-21T10:30:00Z&quot;
+    "code": 0,
+    "message": "success",
+    "data": {
+        "file_id": "doc_1714567890_abc123",
+        "file_name": "architecture_spec.pdf",
+        "file_size": 1048576,
+        "file_type": "pdf",
+        "task_id": "task_1714567890_xyz789",
+        "status": "pending",
+        "upload_time": "2026-04-21T10:30:00Z"
     }
 }
 ```
 
-**说明**：上传后自动触发 Bridge Pipeline 处理，通过 task_id 轮询处理状态。
+说明：上传后自动触发 `Bridge Pipeline` 处理，通过 `task_id` 轮询处理状态。
 
 ---
 
@@ -82,26 +81,26 @@ Content-Type: multipart/form-data
 GET /documents/{file_id}
 ```
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;file_id&quot;: &quot;doc_1714567890_abc123&quot;,
-        &quot;file_name&quot;: &quot;architecture_spec.pdf&quot;,
-        &quot;file_size&quot;: 1048576,
-        &quot;file_type&quot;: &quot;pdf&quot;,
-        &quot;description&quot;: &quot;后端架构规范文档&quot;,
-        &quot;tags&quot;: [&quot;architecture&quot;, &quot;backend&quot;],
-        &quot;upload_time&quot;: &quot;2026-04-21T10:30:00Z&quot;,
-        &quot;processing_status&quot;: &quot;completed&quot;,
-        &quot;stats&quot;: {
-            &quot;chunk_count&quot;: 42,
-            &quot;node_count&quot;: 15,
-            &quot;edge_count&quot;: 23,
-            &quot;image_count&quot;: 3
+    "code": 0,
+    "message": "success",
+    "data": {
+        "file_id": "doc_1714567890_abc123",
+        "file_name": "architecture_spec.pdf",
+        "file_size": 1048576,
+        "file_type": "pdf",
+        "description": "后端架构规范文档",
+        "tags": ["architecture", "backend"],
+        "upload_time": "2026-04-21T10:30:00Z",
+        "processing_status": "completed",
+        "stats": {
+            "chunk_count": 42,
+            "node_count": 15,
+            "edge_count": 23,
+            "image_count": 3
         }
     }
 }
@@ -112,35 +111,35 @@ GET /documents/{file_id}
 ### 1.3 获取文档列表
 
 ```
-GET /documents?page=1&amp;page_size=20&amp;tags=architecture&amp;status=completed
+GET /documents?page=1&page_size=20&tags=architecture&status=completed
 ```
 
-**Query 参数**：
+Query 参数：
 
 | 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| page | int | 1 | 页码 |
-| page_size | int | 20 | 每页数量，最大 100 |
-| tags | string | - | 按标签过滤，多个用逗号分隔 |
-| status | string | - | 按处理状态过滤 |
-| file_type | string | - | 按文件类型过滤（pdf/image/text） |
+| `page` | `int` | 1 | 页码 |
+| `page_size` | `int` | 20 | 每页数量，最大 100 |
+| `tags` | `string` | - | 按标签过滤，多个用逗号分隔 |
+| `status` | `string` | - | 按处理状态过滤 |
+| `file_type` | `string` | - | 按文件类型过滤（`pdf` / `image` / `text`） |
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;total&quot;: 56,
-        &quot;page&quot;: 1,
-        &quot;page_size&quot;: 20,
-        &quot;items&quot;: [
+    "code": 0,
+    "message": "success",
+    "data": {
+        "total": 56,
+        "page": 1,
+        "page_size": 20,
+        "items": [
             {
-                &quot;file_id&quot;: &quot;doc_001&quot;,
-                &quot;file_name&quot;: &quot;...&quot;,
-                &quot;processing_status&quot;: &quot;completed&quot;,
-                &quot;upload_time&quot;: &quot;2026-04-21T10:30:00Z&quot;
+                "file_id": "doc_001",
+                "file_name": "...",
+                "processing_status": "completed",
+                "upload_time": "2026-04-21T10:30:00Z"
             }
         ]
     }
@@ -155,17 +154,17 @@ GET /documents?page=1&amp;page_size=20&amp;tags=architecture&amp;status=complete
 DELETE /documents/{file_id}
 ```
 
-**说明**：删除文档同时删除其所有关联数据（向量、知识图谱节点、任务记录）。此操作不可逆。
+说明：删除文档同时删除其所有关联数据（向量、知识图谱节点、任务记录）。此操作不可逆。
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;文档已删除&quot;,
-    &quot;data&quot;: {
-        &quot;file_id&quot;: &quot;doc_001&quot;,
-        &quot;deleted_at&quot;: &quot;2026-04-21T11:00:00Z&quot;
+    "code": 0,
+    "message": "文档已删除",
+    "data": {
+        "file_id": "doc_001",
+        "deleted_at": "2026-04-21T11:00:00Z"
     }
 }
 ```
@@ -180,16 +179,16 @@ DELETE /documents/{file_id}
 POST /tasks/start
 ```
 
-**请求体**：
+请求体：
 
 ```
 {
-    &quot;file_id&quot;: &quot;doc_001&quot;,
-    &quot;force_reprocess&quot;: false
+    "file_id": "doc_001",
+    "force_reprocess": false
 }
 ```
 
-**说明**：通常上传后自动触发，force_reprocess=true 时强制重新处理（即使已 completed）。
+说明：通常上传后自动触发，`force_reprocess=true` 时强制重新处理（即使已 `completed`）。
 
 ---
 
@@ -199,22 +198,22 @@ POST /tasks/start
 GET /tasks/{task_id}
 ```
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;task_id&quot;: &quot;task_001&quot;,
-        &quot;file_id&quot;: &quot;doc_001&quot;,
-        &quot;status&quot;: &quot;embedding&quot;,
-        &quot;progress&quot;: 0.65,
-        &quot;current_step&quot;: &quot;正在生成文本向量 (28/42)&quot;,
-        &quot;created_at&quot;: &quot;2026-04-21T10:30:00Z&quot;,
-        &quot;updated_at&quot;: &quot;2026-04-21T10:31:30Z&quot;,
-        &quot;estimated_remaining_seconds&quot;: 45,
-        &quot;error_message&quot;: null
+    "code": 0,
+    "message": "success",
+    "data": {
+        "task_id": "task_001",
+        "file_id": "doc_001",
+        "status": "embedding",
+        "progress": 0.65,
+        "current_step": "正在生成文本向量 (28/42)",
+        "created_at": "2026-04-21T10:30:00Z",
+        "updated_at": "2026-04-21T10:31:30Z",
+        "estimated_remaining_seconds": 45,
+        "error_message": null
     }
 }
 ```
@@ -227,7 +226,7 @@ GET /tasks/{task_id}
 POST /tasks/{task_id}/cancel
 ```
 
-**说明**：仅可取消 pending 或 parsing 状态的任务，其他状态返回 4001 错误。
+说明：仅可取消 `pending` 或 `parsing` 状态的任务，其他状态返回 `4001` 错误。
 
 ---
 
@@ -237,22 +236,22 @@ POST /tasks/{task_id}/cancel
 GET /tasks/{task_id}/result
 ```
 
-**响应（任务完成时）**：
+响应（任务完成时）：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;task_id&quot;: &quot;task_001&quot;,
-        &quot;status&quot;: &quot;completed&quot;,
-        &quot;result&quot;: {
-            &quot;chunk_count&quot;: 42,
-            &quot;node_count&quot;: 15,
-            &quot;edge_count&quot;: 23,
-            &quot;image_count&quot;: 3,
-            &quot;processing_time_seconds&quot;: 67.3,
-            &quot;completed_at&quot;: &quot;2026-04-21T10:31:47Z&quot;
+    "code": 0,
+    "message": "success",
+    "data": {
+        "task_id": "task_001",
+        "status": "completed",
+        "result": {
+            "chunk_count": 42,
+            "node_count": 15,
+            "edge_count": 23,
+            "image_count": 3,
+            "processing_time_seconds": 67.3,
+            "completed_at": "2026-04-21T10:31:47Z"
         }
     }
 }
@@ -265,33 +264,33 @@ GET /tasks/{task_id}/result
 ### 3.1 获取文档关联节点
 
 ```
-GET /graph/nodes?file_id=doc_001&amp;label=TECH&amp;limit=50
+GET /graph/nodes?file_id=doc_001&label=TECH&limit=50
 ```
 
-**Query 参数**：
+Query 参数：
 
 | 参数 | 类型 | 说明 |
 | --- | --- | --- |
-| file_id | string | 按来源文档过滤 |
-| label | string | 按实体类型过滤（PERSON/ORG/TECH/CONCEPT） |
-| limit | int | 返回数量上限，默认 50 |
+| `file_id` | `string` | 按来源文档过滤 |
+| `label` | `string` | 按实体类型过滤（`PERSON` / `ORG` / `TECH` / `CONCEPT`） |
+| `limit` | `int` | 返回数量上限，默认 50 |
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;total&quot;: 15,
-        &quot;nodes&quot;: [
+    "code": 0,
+    "message": "success",
+    "data": {
+        "total": 15,
+        "nodes": [
             {
-                &quot;node_id&quot;: &quot;entity_tech_qdrant_001&quot;,
-                &quot;label&quot;: &quot;TECH&quot;,
-                &quot;name&quot;: &quot;Qdrant&quot;,
-                &quot;description&quot;: &quot;向量数据库&quot;,
-                &quot;source_file_ids&quot;: [&quot;doc_001&quot;],
-                &quot;relation_count&quot;: 4
+                "node_id": "entity_tech_qdrant_001",
+                "label": "TECH",
+                "name": "Qdrant",
+                "description": "向量数据库",
+                "source_file_ids": ["doc_001"],
+                "relation_count": 4
             }
         ]
     }
@@ -306,30 +305,30 @@ GET /graph/nodes?file_id=doc_001&amp;label=TECH&amp;limit=50
 GET /graph/stats
 ```
 
-**响应**：
+响应：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;total_nodes&quot;: 40,
-        &quot;total_edges&quot;: 39,
-        &quot;nodes_by_label&quot;: {
-            &quot;TECH&quot;: 18,
-            &quot;CONCEPT&quot;: 12,
-            &quot;ORG&quot;: 6,
-            &quot;PERSON&quot;: 4
+    "code": 0,
+    "message": "success",
+    "data": {
+        "total_nodes": 40,
+        "total_edges": 39,
+        "nodes_by_label": {
+            "TECH": 18,
+            "CONCEPT": 12,
+            "ORG": 6,
+            "PERSON": 4
         },
-        &quot;edges_by_relation&quot;: {
-            &quot;USES&quot;: 15,
-            &quot;PART_OF&quot;: 12,
-            &quot;RELATED_TO&quot;: 8,
-            &quot;IMPLEMENTS&quot;: 4
+        "edges_by_relation": {
+            "USES": 15,
+            "PART_OF": 12,
+            "RELATED_TO": 8,
+            "IMPLEMENTS": 4
         },
-        &quot;most_connected_nodes&quot;: [
-            {&quot;name&quot;: &quot;LangChain&quot;, &quot;degree&quot;: 12},
-            {&quot;name&quot;: &quot;Qdrant&quot;, &quot;degree&quot;: 8}
+        "most_connected_nodes": [
+            {"name": "LangChain", "degree": 12},
+            {"name": "Qdrant", "degree": 8}
         ]
     }
 }
@@ -340,17 +339,17 @@ GET /graph/stats
 ### 3.3 导出知识图谱
 
 ```
-GET /graph/export?format=json&amp;file_id=doc_001
+GET /graph/export?format=json&file_id=doc_001
 ```
 
-**Query 参数**：
+Query 参数：
 
 | 参数 | 类型 | 说明 |
 | --- | --- | --- |
-| format | string | json / graphml / cytoscape |
-| file_id | string | 可选，只导出指定文档的子图 |
+| `format` | `string` | `json` / `graphml` / `cytoscape` |
+| `file_id` | `string` | 可选，只导出指定文档的子图 |
 
-**响应**：返回对应格式的文件下载。
+响应：返回对应格式的文件下载。
 
 ---
 
@@ -362,55 +361,55 @@ GET /graph/export?format=json&amp;file_id=doc_001
 POST /qa/query
 ```
 
-**请求体**：
+请求体：
 
 ```
 {
-    &quot;question&quot;: &quot;LangChain Agent 是怎么和知识图谱结合的？&quot;,
-    &quot;session_id&quot;: &quot;session_abc123&quot;,    // 可选，传入则关联历史会话
-    &quot;filters&quot;: {                        // 可选，限定检索范围
-        &quot;file_ids&quot;: [&quot;doc_001&quot;, &quot;doc_002&quot;],
-        &quot;tags&quot;: [&quot;architecture&quot;]
+    "question": "LangChain Agent 是怎么和知识图谱结合的？",
+    "session_id": "session_abc123",    // 可选，传入则关联历史会话
+    "filters": {                        // 可选，限定检索范围
+        "file_ids": ["doc_001", "doc_002"],
+        "tags": ["architecture"]
     },
-    &quot;options&quot;: {
-        &quot;include_sources&quot;: true,        // 是否返回来源引用
-        &quot;include_graph_path&quot;: true,     // 是否返回图谱推理路径
-        &quot;max_tokens&quot;: 500               // 限制回答最大 token 数
+    "options": {
+        "include_sources": true,        // 是否返回来源引用
+        "include_graph_path": true,     // 是否返回图谱推理路径
+        "max_tokens": 500               // 限制回答最大 token 数
     }
 }
 ```
 
-**响应**：
+响应：
+
+
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;qa_id&quot;: &quot;qa_1714567890_xyz&quot;,
-        &quot;session_id&quot;: &quot;session_abc123&quot;,
-        &quot;question&quot;: &quot;LangChain Agent 是怎么和知识图谱结合的？&quot;,
-        &quot;answer&quot;: &quot;LangChain Agent 通过 createAgent 装饰器注册图谱查询工具...&quot;,
-        &quot;confidence&quot;: 0.92,
-        &quot;sources&quot;: [
+    "code": 0,
+    "message": "success",
+    "data": {
+        "qa_id": "qa_1714567890_xyz",
+        "session_id": "session_abc123",
+        "question": "LangChain Agent 是怎么和知识图谱结合的？",
+        "answer": "LangChain Agent 通过 createAgent 装饰器注册图谱查询工具...",
+        "confidence": 0.92,
+        "sources": [
             {
-                &quot;chunk_id&quot;: &quot;doc_001_chunk_007&quot;,
-                &quot;file_name&quot;: &quot;architecture_spec.pdf&quot;,
-                &quot;page_number&quot;: 3,
-                &quot;relevant_content&quot;: &quot;Agent 通过 @tool 装饰器注册 graph_search 工具...&quot;
+                "chunk_id": "doc_001_chunk_007",
+                "file_name": "architecture_spec.pdf",
+                "page_number": 3,
+                "relevant_content": "Agent 通过 @tool 装饰器注册 graph_search 工具..."
             }
         ],
-        &quot;graph_path&quot;: [
-            &quot;LangChain Agent → USES → createAgent&quot;,
-            &quot;LangChain Agent → CALLS → graph_search&quot;
+        "graph_path": [
+            "LangChain Agent → USES → createAgent",
+            "LangChain Agent → CALLS → graph_search"
         ],
-        &quot;processing_time_ms&quot;: 1823,
-        &quot;created_at&quot;: &quot;2026-04-21T10:35:00Z&quot;
+        "processing_time_ms": 1823,
+        "created_at": "2026-04-21T10:35:00Z"
     }
 }
 ```
-
----
 
 ### 4.2 批量问答
 
@@ -422,50 +421,46 @@ POST /qa/batch
 
 ```
 {
-    &quot;questions&quot;: [
-        {&quot;id&quot;: &quot;q1&quot;, &quot;question&quot;: &quot;问题一&quot;},
-        {&quot;id&quot;: &quot;q2&quot;, &quot;question&quot;: &quot;问题二&quot;}
+    "questions": [
+        {"id": "q1", "question": "问题一"},
+        {"id": "q2", "question": "问题二"}
     ],
-    &quot;options&quot;: {
-        &quot;parallel&quot;: true,               // 并发处理
-        &quot;max_concurrent&quot;: 5
+    "options": {
+        "parallel": true,
+        "max_concurrent": 5
     }
 }
 ```
 
-**响应**：返回 batch_id，通过 GET /qa/batch/{batch_id} 轮询结果。
-
----
+**响应**：返回 `batch_id`，通过 `GET /qa/batch/{batch_id}` 轮询结果。
 
 ### 4.3 获取历史会话
 
 ```
-GET /qa/sessions/{session_id}?page=1&amp;page_size=20
+GET /qa/sessions/{session_id}?page=1&page_size=20
 ```
 
 **响应**：
 
 ```
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {
-        &quot;session_id&quot;: &quot;session_abc123&quot;,
-        &quot;created_at&quot;: &quot;2026-04-21T10:00:00Z&quot;,
-        &quot;qa_count&quot;: 8,
-        &quot;items&quot;: [
+    "code": 0,
+    "message": "success",
+    "data": {
+        "session_id": "session_abc123",
+        "created_at": "2026-04-21T10:00:00Z",
+        "qa_count": 8,
+        "items": [
             {
-                &quot;qa_id&quot;: &quot;qa_001&quot;,
-                &quot;question&quot;: &quot;...&quot;,
-                &quot;answer&quot;: &quot;...&quot;,
-                &quot;created_at&quot;: &quot;...&quot;
+                "qa_id": "qa_001",
+                "question": "...",
+                "answer": "...",
+                "created_at": "..."
             }
         ]
     }
 }
 ```
-
----
 
 ### 4.4 获取单条问答记录
 
@@ -473,9 +468,7 @@ GET /qa/sessions/{session_id}?page=1&amp;page_size=20
 GET /qa/records/{qa_id}
 ```
 
-**响应**：返回完整的问答记录，包含 sources 和 graph_path。
-
----
+**响应**：返回完整的问答记录，包含 `sources` 和 `graph_path`。
 
 ## 五、健康检查
 
@@ -487,37 +480,35 @@ GET /health
 
 ```
 {
-    &quot;status&quot;: &quot;healthy&quot;,
-    &quot;version&quot;: &quot;1.0.0&quot;,
-    &quot;timestamp&quot;: &quot;2026-04-21T10:00:00Z&quot;,
-    &quot;services&quot;: {
-        &quot;vector_store&quot;: &quot;healthy&quot;,
-        &quot;graph_store&quot;: &quot;healthy&quot;,
-        &quot;llm&quot;: &quot;healthy&quot;,
-        &quot;file_storage&quot;: &quot;healthy&quot;
+    "status": "healthy",
+    "version": "1.0.0",
+    "timestamp": "2026-04-21T10:00:00Z",
+    "services": {
+        "vector_store": "healthy",
+        "graph_store": "healthy",
+        "llm": "healthy",
+        "file_storage": "healthy"
     }
 }
 ```
-
----
 
 ## 六、接口汇总
 
 | 分组 | 方法 | 路径 | 说明 |
 | --- | --- | --- | --- |
-| 文档管理 | POST | /documents/upload | 上传文档 |
-| 文档管理 | GET | /documents/{file_id} | 获取文档信息 |
-| 文档管理 | GET | /documents | 获取文档列表 |
-| 文档管理 | DELETE | /documents/{file_id} | 删除文档 |
-| 任务管理 | POST | /tasks/start | 手动启动任务 |
-| 任务管理 | GET | /tasks/{task_id} | 查询任务状态 |
-| 任务管理 | POST | /tasks/{task_id}/cancel | 取消任务 |
-| 任务管理 | GET | /tasks/{task_id}/result | 获取任务结果 |
-| 图谱管理 | GET | /graph/nodes | 获取图谱节点 |
-| 图谱管理 | GET | /graph/stats | 获取图谱统计 |
-| 图谱管理 | GET | /graph/export | 导出知识图谱 |
-| QA 问答 | POST | /qa/query | 提交问题 |
-| QA 问答 | POST | /qa/batch | 批量问答 |
-| QA 问答 | GET | /qa/sessions/{session_id} | 获取历史会话 |
-| QA 问答 | GET | /qa/records/{qa_id} | 获取问答记录 |
-| 系统 | GET | /health | 健康检查 |
+| 文档管理 | `POST` | `/documents/upload` | 上传文档 |
+| 文档管理 | `GET` | `/documents/{file_id}` | 获取文档信息 |
+| 文档管理 | `GET` | `/documents` | 获取文档列表 |
+| 文档管理 | `DELETE` | `/documents/{file_id}` | 删除文档 |
+| 任务管理 | `POST` | `/tasks/start` | 手动启动任务 |
+| 任务管理 | `GET` | `/tasks/{task_id}` | 查询任务状态 |
+| 任务管理 | `POST` | `/tasks/{task_id}/cancel` | 取消任务 |
+| 任务管理 | `GET` | `/tasks/{task_id}/result` | 获取任务结果 |
+| 图谱管理 | `GET` | `/graph/nodes` | 获取图谱节点 |
+| 图谱管理 | `GET` | `/graph/stats` | 获取图谱统计 |
+| 图谱管理 | `GET` | `/graph/export` | 导出知识图谱 |
+| QA 问答 | `POST` | `/qa/query` | 提交问题 |
+| QA 问答 | `POST` | `/qa/batch` | 批量问答 |
+| QA 问答 | `GET` | `/qa/sessions/{session_id}` | 获取历史会话 |
+| QA 问答 | `GET` | `/qa/records/{qa_id}` | 获取问答记录 |
+| 系统 | `GET` | `/health` | 健康检查 |

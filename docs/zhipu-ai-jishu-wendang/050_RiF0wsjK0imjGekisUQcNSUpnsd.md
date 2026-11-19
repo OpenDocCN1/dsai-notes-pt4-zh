@@ -1,12 +1,13 @@
+
 # 快速使用
 
 > 来源：[https://ai.feishu.cn/docx/RlH7dmkAioy72Px5tlgcYS1Rnwd](https://ai.feishu.cn/docx/RlH7dmkAioy72Px5tlgcYS1Rnwd)
 
-> **What：**
+> What：
 
 > 我们开源了一个模型，可以输出长度超过 1 万字的文本，非常适合写作，特别是论文、公文等。
 
-> **Why：**
+> Why：
 
 > LLM 的长文本输入，目前已经提升到 1M（例如 GLM-4-9B-1M），也即可以直接向模型输入 2 本红楼梦，并针对输入内容进行问答。
 
@@ -14,25 +15,25 @@
 
 > 我们探索了一种方法，将 LLM 的输出长度提升到最高 10k 的长度，相当于一篇中篇小说的长度，或者一篇论文的长度。
 
-> **How：**
+> How：
 
 > 在长上下文的模型（例如 GLM-4-9B）的基础上，我们用 6000+ 条输出长度在 2k-32k 之间的数据进行 SFT 微调以及 DPO。
 
-**论文：**https://arxiv.org/abs/2408.07055
+论文：`https://arxiv.org/abs/2408.07055`
 
-**代码：**https://github.com/THUDM/LongWriter
+代码：`https://github.com/THUDM/LongWriter`
 
-**模型：**
+模型：
 
-+   Huggingface：https://huggingface.co/THUDM/LongWriter-glm4-9b
++   Huggingface：`https://huggingface.co/THUDM/LongWriter-glm4-9b`
 
-+   魔搭：https://modelscope.cn/models/ZhipuAI/LongWriter-glm4-9b
++   魔搭：`https://modelscope.cn/models/ZhipuAI/LongWriter-glm4-9b`
 
-**数据**
+数据
 
-+   Huggingface：https://huggingface.co/datasets/THUDM/LongWriter-6k
++   Huggingface：`https://huggingface.co/datasets/THUDM/LongWriter-6k`
 
-+   魔搭：https://modelscope.cn/datasets/ZhipuAI/LongWriter-6k
++   魔搭：`https://modelscope.cn/datasets/ZhipuAI/LongWriter-6k`
 
 ![](img/faba624b6304dd6c70c2b78473cc8533.png)
 
@@ -46,7 +47,7 @@
 git clone https://www.modelscope.cn/ZhipuAI/LongWriter-glm4-9b.git
 ```
 
-从 hf 下载
+从 hf 下载：
 
 ```
 git clone https://huggingface.co/THUDM/LongWriter-glm4-9b
@@ -70,47 +71,40 @@ pip install -r requirements.txt #安装依赖
 ```
 
 > 基础依赖包如下
-
-> tqdm
-
-> numpy
-
-> torch
-
-> transformers==4.33.0
-
-> datasets
-
-> einops
-
-> gradio
-
-> peft
-
-> tiktoken
+>
+> `tqdm`
+> `numpy`
+> `torch`
+> `transformers==4.33.0`
+> `datasets`
+> `einops`
+> `gradio`
+> `peft`
+> `tiktoken`
 
 ## 终端运行：
 
 +   修改下面两个地址，可以直接填写模型的绝对路径
 
-+   可以直接执行 python 内容
++   可以直接执行 `python` 内容
 
-+   也可以新建一个 python 文件，执行 python 文件
++   也可以新建一个 `python` 文件，执行 `python` 文件
 
 ```
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-tokenizer = AutoTokenizer.from_pretrained(&quot;/mnt/.../LongWriter-glm4-9b&quot;, trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained(&quot;/mnt/.../LongWriter-glm4-9b&quot;, torch_dtype=torch.bfloat16, trust_remote_code=True, device_map=&quot;auto&quot;)
+tokenizer = AutoTokenizer.from_pretrained("/mnt/.../LongWriter-glm4-9b", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("/mnt/.../LongWriter-glm4-9b", torch_dtype=torch.bfloat16, trust_remote_code=True, device_map="auto")
 model = model.eval()
-query = &quot;请帮我撰写一个主题为「黑神话·悟空」玄幻小说，小说以孙悟空为核心，讲述一个桀骜不驯，打怪升级，追逐梦想的玄幻故事，不少于 10000 字&quot;
+query = "请帮我撰写一个主题为「黑神话·悟空」玄幻小说，小说以孙悟空为核心，讲述一个桀骜不驯，打怪升级，追逐梦想的玄幻故事，不少于 10000 字"
 response, history = model.chat(tokenizer, query, history=[], max_new_tokens=32768, temperature=0.5)
 print(response)
 ```
 
 结果如下：
 
-```
+
+
 ### 悟空的世界
 
 在遥远的神话时代，天地初开，万物复苏。宇宙间存在着无数神秘的世界，其中最令人向往的是那片被称为“玄灵界”的奇幻之地。玄灵界中，山川河流皆由灵气凝聚而成，花草树木皆有灵性，飞禽走兽皆能化形。这里没有凡尘的纷扰，却充满了无尽的奇幻与冒险。
@@ -384,7 +378,8 @@ print(response)
 灵霄峰上的风轻轻吹过，孙悟空、紫霞仙子和红孩儿三人并肩站立，他们心中充满了对未来的憧憬和期待。他们的故事，将在玄灵界中继续流传，成为永恒的传奇。
 
 孙悟空的梦想，不仅仅是个人的追求，更是对整个玄灵界的守护和期望。他相信，只要坚持不懈，不断追求，他一定能实现更多的梦想，为玄灵界带来更多的和平与希望。他的故事，将永远激励着更多的人，勇往直前，追求自己的梦想。
-```
+
+
 
 ## 网页运行：
 
@@ -395,8 +390,8 @@ python trans_web_demo.py
 注意，需要将这段修改为模型路径：
 
 ```
-MODEL_PATH = &quot;/mnt/.../LongWriter-glm4-9b&quot;
-TOKENIZER_PATH = &quot;/mnt/.../LongWriter-glm4-9b&quot;
+MODEL_PATH = "/mnt/.../LongWriter-glm4-9b"
+TOKENIZER_PATH = "/mnt/.../LongWriter-glm4-9b"
 ```
 
 ![](img/101d0ee04d712728e49d562dec5fc4ea.png)

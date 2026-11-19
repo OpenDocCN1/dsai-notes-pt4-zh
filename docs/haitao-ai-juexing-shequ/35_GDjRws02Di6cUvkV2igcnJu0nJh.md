@@ -1,10 +1,11 @@
+
 # 秒剪短视频Coze应用发布
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/Jvy6dR7dKobxGFxarJ3ce0Wxnhg](https://zinxkclpk97.feishu.cn/docx/Jvy6dR7dKobxGFxarJ3ce0Wxnhg)
 
 在此之前我上线了一款Coze应用「爆款短视频创造营」，搭建了最初的视频工作流模板市场，方便用户快捷使用制作视频。
 
-但也陆续接到不少小伙伴的需求，比如改视频比例、人物形象、文案风格、配音音色等等。这里出现了两类需求，
+但也陆续接到不少小伙伴的需求，比如改视频比例、人物形象、文案风格、配音音色等等。这里出现了两类需求：
 
 一是找我定制工作流模板，二是想要复制工作流自己学习或二改。
 
@@ -22,7 +23,7 @@
 
 可以根据自己的需要和能力来做选择。
 
-体验地址：https://www.coze.cn/store/project/7500163225070092322?bid=6g5hir03s7g17
+体验地址：`https://www.coze.cn/store/project/7500163225070092322?bid=6g5hir03s7g17`
 
 ![](img/dafe5121fda26882db15cbc027ee3eaf.png)
 

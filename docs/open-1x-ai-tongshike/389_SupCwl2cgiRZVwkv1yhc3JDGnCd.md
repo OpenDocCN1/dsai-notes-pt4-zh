@@ -1,6 +1,7 @@
+
 # AI夏令营 - CV实践教程
 
-> 来源：[https://datawhaler.feishu.cn/docx/GYg7dZEPQozhXHx8n4ScQlwZnzd](https://datawhaler.feishu.cn/docx/GYg7dZEPQozhXHx8n4ScQlwZnzd)
+> 来源：`https://datawhaler.feishu.cn/docx/GYg7dZEPQozhXHx8n4ScQlwZnzd`
 
 > 本教程会带领大家项目制学习，由浅入深，逐渐进阶。从跑通最简的Baseline，精读Baseline，到底层算法原理与进阶实践技巧的学习，千里之行，始于足下，从这里，开启你的 AI 学习之旅吧
 
@@ -8,101 +9,97 @@
 
 | 学习任务 | 相关直播 |
 | --- | --- |
-| **任务一：** | **必修直播**：[开营 + 实践全流程基础演示](https://www.bilibili.com/video/BV1rM4y1s7RH) |
-| **任务二：** | **必修直播**：[CNN模型进阶技巧](https://www.bilibili.com/video/BV18h4y1V7as/) |
-| **任务三：** | **必修直播**：[如何使用套件来实践上分](https://www.bilibili.com/video/BV1ku411G7M9) |
+| 任务一 | 必修直播：[开营 + 实践全流程基础演示](https://www.bilibili.com/video/BV1rM4y1s7RH) |
+| 任务二 | 必修直播：[CNN模型进阶技巧](https://www.bilibili.com/video/BV18h4y1V7as/) |
+| 任务三 | 必修直播：[如何使用套件来实践上分](https://www.bilibili.com/video/BV1ku411G7M9) |
 
-# 在线版本Baseline
+## 在线版本Baseline
 
 > Baseline是一份简易的入门教程，可以帮助同学们迈出 AI 训练大师之路的第一步。建议入门的同学可以暂时不用着急去弄懂各个代码的原理，先跑通代码，动手实践，看到成绩。
 
 快速跑通全流程，我们基于百度AI Studio，将本教程Baseline部署在线上平台，可一键fork运行代码，看到成绩。
 
-一键运行：https://aistudio.baidu.com/aistudio/projectdetail/6554002?sUid=377372&shared=1&ts=1689768420818
+一键运行：`https://aistudio.baidu.com/aistudio/projectdetail/6554002?sUid=377372&shared=1&ts=1689768420818`
 
-+   运行时，选择**CPU2核8G**的配置
-
-+   总运行时间大约需要**3分钟**，请耐心等待。
-
-+   **视频演示**：AI夏令营：开营仪式|实践全流程基础演示_哔哩哔哩_bilibili，对应的CV章节
++ 运行时，选择**CPU2核8G**的配置
++ 总运行时间大约需要3分钟，请耐心等待。
++ 视频演示：AI夏令营：开营仪式|实践全流程基础演示_哔哩哔哩_bilibili，对应的CV章节
 
 ![](img/55774e37cd66174e56d7f48918e2e252.png)
 
 ![](img/6dc9c9045e526a4ddcbfc6f92279dc74.png)
 
-输出**submit.csv**文件后，右键可下载到本地，在[赛题提交结果](https://challenge.xfyun.cn/topic/info?type=pet-2023&ch=vWxQGFU)提交文件，获取分数。
+输出`submit.csv`文件后，右键可下载到本地，在[赛题提交结果](`https://challenge.xfyun.cn/topic/info?type=pet-2023&ch=vWxQGFU`)提交文件，获取分数。
 
 ![](img/544e8af84a846d12250fc70ab231640e.png)
 
 ![](img/e573ab4f300b6d1fe2271c893b17a0e3.png)
 
-# 赛题解析
+## 赛题解析
 
 > 脑PET图像分析和疾病预测挑战赛
 
-> https://challenge.xfyun.cn/topic/info?type=pet-2023&ch=vWxQGFU
+> `https://challenge.xfyun.cn/topic/info?type=pet-2023&ch=vWxQGFU`
 
-## **实践任务**
+### 实践任务
 
 为研究基于脑PET图像的疾病预测，本次大赛提供了海量脑PET数据集作为脑PET图像检测数据库的训练样本，参赛者需根据提供的样本构建模型，对轻度认知障碍进行分析和预测。脑PET图像检测数据库，记录了老年人受试志愿者的脑PET影像资料，其中包括确诊为轻度认知障碍（MCI）患者的脑部影像数据和健康人（NC）的脑部影像数据。
 
 被试者按医学诊断分为两类：
 
-+   NC：健康
++ NC：健康
++ MCI：轻度认知障碍
 
-+   MCI：轻度认知障碍
-
-## 数据解析
+### 数据解析
 
 本次大赛所用脑PET图像检测数据库，图像格式为nii。
 
 ![](img/49cf4abc5ce1ee6f1afbb79cd9fd012f.png)
 
-本次竞赛的评价标准采用F1_score，分数越高，效果越好。
+本次竞赛的评价标准采用`F1_score`，分数越高，效果越好。
 
-## 实践思路
+### 实践思路
 
 使用计算机视觉方法进行脑PET图像分类可以帮助提取脑部疾病的特征并进行疾病预测。下面是一个使用计算机视觉思路进行脑PET图像分类的一般步骤：
 
-1.  数据收集和准备：收集具有不同类别标签的脑PET图像数据集。这些图像可以来自已知疾病患者和健康人群。确保数据集中包含足够的样本数量和类别的代表性。
+1. 数据收集和准备：收集具有不同类别标签的脑PET图像数据集。这些图像可以来自已知疾病患者和健康人群。确保数据集中包含足够的样本数量和类别的代表性。
 
-1.  数据预处理：对脑PET图像进行预处理，以提高分类模型的性能。预处理步骤可能包括图像去噪、图像增强、图像配准（将图像对齐到一个标准空间）和图像标准化等。
+1. 数据预处理：对脑PET图像进行预处理，以提高分类模型的性能。预处理步骤可能包括图像去噪、图像增强、图像配准（将图像对齐到一个标准空间）和图像标准化等。
 
-1.  特征提取：使用卷积神经网络（CNN）来提取脑PET图像的特征。CNN可以通过学习具有区分性的图像特征来帮助区分不同的疾病状态。通过在CNN中堆叠卷积层、池化层和全连接层，可以提取出高级的抽象特征。
+1. 特征提取：使用卷积神经网络（CNN）来提取脑PET图像的特征。CNN可以通过学习具有区分性的图像特征来帮助区分不同的疾病状态。通过在CNN中堆叠卷积层、池化层和全连接层，可以提取出高级的抽象特征。
 
-1.  模型训练：将预处理后的脑PET图像输入到CNN中进行模型训练。在训练过程中，使用已知的图像标签来进行监督学习，通过调整CNN的权重和偏置来最小化预测错误。常用的训练算法包括梯度下降和反向传播。
+1. 模型训练：将预处理后的脑PET图像输入到CNN中进行模型训练。在训练过程中，使用已知的图像标签来进行监督学习，通过调整CNN的权重和偏置来最小化预测错误。常用的训练算法包括梯度下降和反向传播。
 
-1.  模型评估和优化：使用预留的测试集对训练好的模型进行评估。评估指标可以包括准确率、精确率、召回率和F1值等。如果模型性能不理想，可以尝试调整CNN的架构、增加训练数据、调整超参数等方法进行优化。
+1. 模型评估和优化：使用预留的测试集对训练好的模型进行评估。评估指标可以包括准确率、精确率、召回率和F1值等。如果模型性能不理想，可以尝试调整CNN的架构、增加训练数据、调整超参数等方法进行优化。
 
-1.  脑PET图像分类和疾病预测：使用训练好的模型对新的脑PET图像进行分类和疾病预测。输入脑PET图像到CNN中，通过模型的预测输出来确定图像所属的类别，例如健康或某种特定疾病。
+1. 脑PET图像分类和疾病预测：使用训练好的模型对新的脑PET图像进行分类和疾病预测。输入脑PET图像到CNN中，通过模型的预测输出来确定图像所属的类别，例如健康或某种特定疾病。
 
 当使用计算机视觉方法进行脑PET图像分类时，除了传统的卷积神经网络（CNN），还可以考虑使用一种新兴的网络模型，称为视觉Transformer（Vision Transformer，简称VIT）。
 
-# Baseline精读
+## Baseline精读
 
-> 视频讲解：https://www.bilibili.com/video/BV1pm4y1L7H4
+> 视频讲解：`https://www.bilibili.com/video/BV1pm4y1L7H4`
 
-**图像特征统计（传统方法）**
+### 图像特征统计（传统方法）
 
 图像特征统计是指对图像中的像素或图像区域进行统计分析，以提取和描述图像的特征信息。
 
-1.  占比特征：通过统计图像中不同像素值或颜色通道的像素数量，计算其在整个图像中的比例或占比。
+1. 占比特征：通过统计图像中不同像素值或颜色通道的像素数量，计算其在整个图像中的比例或占比。
 
-1.  边缘特征：边缘是图像中像素值或颜色发生剧烈变化的区域，通常表示物体的边界或纹理的边界。
+1. 边缘特征：边缘是图像中像素值或颜色发生剧烈变化的区域，通常表示物体的边界或纹理的边界。
 
-1.  纹理特征：描述了图像中的纹理信息，反映了图像的细节和结构。
+1. 纹理特征：描述了图像中的纹理信息，反映了图像的细节和结构。
 
-**方法优****缺点**（运行时间5分钟，不要GPU）：
+### 方法优缺点（运行时间5分钟，不要GPU）
 
-+   思路简单，不需要GPU就可以运行完成。
++ 思路简单，不需要GPU就可以运行完成。
++ 精度较差，且容易受到形态比较形似的影响。
 
-+   精度较差，且容易受到形态比较形似的影响。
-
-**代码流程图：**
+### 代码流程图
 
 ![](img/892a2796f6b286445df34e2bd8171fcc.png)
 
-**完整代码如下：**
+### 完整代码如下
 
 ```
 import glob                # 获取文件路径
@@ -113,8 +110,8 @@ from nibabel.viewers import OrthoSlicer3D    # 图像可视化
 from collections import Counter              # 计数统计
 
 # 读取训练集文件路径
-train_path = glob.glob(&#x27;./脑PET图像分析和疾病预测挑战赛公开数据/Train/*/*&#x27;)
-test_path = glob.glob(&#x27;./脑PET图像分析和疾病预测挑战赛公开数据/Test/*&#x27;)
+train_path = glob.glob('./脑PET图像分析和疾病预测挑战赛公开数据/Train/*/*')
+test_path = glob.glob('./脑PET图像分析和疾病预测挑战赛公开数据/Test/*')
 
 # 打乱训练集和测试集的顺序
 np.random.shuffle(train_path)
@@ -142,13 +139,13 @@ def extract_feature(path):
         random_img.mean(1).max()               # 行方向上的最大平均值
     ]
     
-    # 根据路径判断样本类别（&#x27;NC&#x27;表示正常，&#x27;MCI&#x27;表示异常）
-    if &#x27;NC&#x27; in path:
-        return feat + [&#x27;NC&#x27;]
+    # 根据路径判断样本类别（'NC'表示正常，'MCI'表示异常）
+    if 'NC' in path:
+        return feat + ['NC']
     else:
-        return feat + [&#x27;MCI&#x27;]
+        return feat + ['MCI']
 
-# 对训练集进行30次特征提取，每次提取后的特征以及类别（&#x27;NC&#x27;表示正常，&#x27;MCI&#x27;表示异常）被添加到train_feat列表中。
+# 对训练集进行30次特征提取，每次提取后的特征以及类别（'NC'表示正常，'MCI'表示异常）被添加到train_feat列表中。
 train_feat = []
 for _ in range(30):
     for path in train_path:
@@ -178,36 +175,38 @@ test_pred_label = [Counter(x).most_common(1)[0][0] for x in test_pred]
 # 生成提交结果的DataFrame，其中包括样本ID和预测类别。
 submit = pd.DataFrame(
     {
-        &#x27;uuid&#x27;: [int(x.split(&#x27;/&#x27;)[-1][:-4]) for x in test_path],  # 提取测试集文件名中的ID
-        &#x27;label&#x27;: test_pred_label                                  # 预测的类别
+        'uuid': [int(x.split('/')[-1][:-4]) for x in test_path],  # 提取测试集文件名中的ID
+        'label': test_pred_label                                  # 预测的类别
     }
 )
 
 # 按照ID对结果排序并保存为CSV文件
-submit = submit.sort_values(by=&#x27;uuid&#x27;)
-submit.to_csv(&#x27;submit1.csv&#x27;, index=None)
+submit = submit.sort_values(by='uuid')
+submit.to_csv('submit1.csv', index=None)
 ```
 
-在提交结果处提交，提交 **submit.csv **文件，在排名结果页查看自己的成绩排名。
+在提交结果处提交，提交`submit.csv`文件，在排名结果页查看自己的成绩排名。
 
+## 进阶技巧
 
-# **进阶技巧**
+### CNN
 
-## CNN
-
-> 视频讲解：https://www.bilibili.com/video/BV18h4y1V7as/
+> 视频讲解：`https://www.bilibili.com/video/BV18h4y1V7as/`
 
 卷积神经网络（Convolutional Neural Network，CNN）是一种深度学习模型，广泛用于图像识别、计算机视觉和模式识别任务中。CNN 在处理具有网格结构数据（如图像）时表现出色，它能够自动学习和提取图像中的特征，并在分类、定位和分割等任务中取得优秀的性能。
 
-**方法优****缺点（运行时**间20分钟，如果有GPU可以更快）：
+### 方法优缺点（运行时间20分钟，如果有GPU可以更快）
 
-+   CNN带来的精度更好，但需要训练更长的时间
++ CNN带来的精度更好，但需要训练更长的时间
++ CNN模型调优需要GPU
 
-+   CNN模型调优需要GPU
+### Step1：自定义数据集
 
-**Step1：自定义数据集**
 
-```
+
+## 数据加载与环境配置
+
+```python
 import os, sys, glob, argparse
 import pandas as pd
 import numpy as np
@@ -234,8 +233,8 @@ from torch.utils.data.dataset import Dataset
 import nibabel as nib
 from nibabel.viewers import OrthoSlicer3D
 
-train_path = glob.glob(&#x27;./脑PET图像分析和疾病预测挑战赛公开数据/Train/*/*&#x27;)
-test_path = glob.glob(&#x27;./脑PET图像分析和疾病预测挑战赛公开数据/Test/*&#x27;)
+train_path = glob.glob('./脑PET图像分析和疾病预测挑战赛公开数据/Train/*/*')
+test_path = glob.glob('./脑PET图像分析和疾病预测挑战赛公开数据/Test/*')
 
 np.random.shuffle(train_path)
 np.random.shuffle(test_path)
@@ -263,10 +262,10 @@ class XunFeiDataset(Dataset):
         img = img.astype(np.float32)
 
         if self.transform is not None:
-            img = self.transform(image = img)[&#x27;image&#x27;]
+            img = self.transform(image = img)['image']
         
         img = img.transpose([2,0,1])
-        return img,torch.from_numpy(np.array(int(&#x27;NC&#x27; in self.img_path[index])))
+        return img,torch.from_numpy(np.array(int('NC' in self.img_path[index])))
     
     def __len__(self):
         return len(self.img_path)
@@ -301,12 +300,11 @@ test_loader = torch.utils.data.DataLoader(
         ])
     ), batch_size=2, shuffle=False, num_workers=1, pin_memory=False
 )
-
 ```
 
-**Step2：自定义CNN模型**
+## Step2：自定义CNN模型
 
-```
+```python
 class XunFeiNet(nn.Module):
     def __init__(self):
         super(XunFeiNet, self).__init__()
@@ -322,14 +320,14 @@ class XunFeiNet(nn.Module):
         return out
         
 model = XunFeiNet()
-model = model.to(&#x27;cuda&#x27;)
+model = model.to('cuda')
 criterion = nn.CrossEntropyLoss().cuda()
 optimizer = torch.optim.AdamW(model.parameters(), 0.001)
 ```
 
-**Step3：模型训练与验证**
+## Step3：模型训练与验证
 
-```
+```python
 def train(train_loader, model, criterion, optimizer):
     model.train()
     train_loss = 0.0
@@ -376,9 +374,9 @@ for _  in range(3):
     print(train_loss, train_acc, val_acc)
 ```
 
-**Step4：模型预测与提交**
+## Step4：模型预测与提交
 
-```
+```python
 def predict(test_loader, model, criterion):
     model.eval()
     val_acc = 0.0
@@ -403,15 +401,15 @@ for _ in range(10):
         
 submit = pd.DataFrame(
     {
-        &#x27;uuid&#x27;: [int(x.split(&#x27;/&#x27;)[-1][:-4]) for x in test_path],
-        &#x27;label&#x27;: pred.argmax(1)
+        'uuid': [int(x.split('/')[-1][:-4]) for x in test_path],
+        'label': pred.argmax(1)
 })
-submit[&#x27;label&#x27;] = submit[&#x27;label&#x27;].map({1:&#x27;NC&#x27;, 0: &#x27;MCI&#x27;})
-submit = submit.sort_values(by=&#x27;uuid&#x27;)
-submit.to_csv(&#x27;submit2.csv&#x27;, index=None)
+submit['label'] = submit['label'].map({1:'NC', 0: 'MCI'})
+submit = submit.sort_values(by='uuid')
+submit.to_csv('submit2.csv', index=None)
 ```
 
-在提交结果处提交，提交 **submit.csv **文件，在排名结果页查看自己的成绩排名。
+在提交结果处提交，提交 `submit.csv` 文件，在排名结果页查看自己的成绩排名。
 
 ![](img/adba4af81a5a4bc393f727e852e3c5bc.png)
 
@@ -423,22 +421,22 @@ submit.to_csv(&#x27;submit2.csv&#x27;, index=None)
 
 ![](img/680380f1d1d851315f5005d13842a64f.png)
 
-# 附录 - 实践环境配置
+## 附录 - 实践环境配置
 
-**AI****环境配置：**
+### AI环境配置：
 
-+   **视频讲解：**AI夏令营：手把手带你配置AI环境_哔哩哔哩_bilibili
++ 视频讲解：AI夏令营：手把手带你配置AI环境_哔哩哔哩_bilibili
 
-+   **图文材料：**https://gitee.com/anine09/learn-python-the-smart-way-v2/blob/main/slides/chapter_0-Installation.ipynb
++ 图文材料：https://gitee.com/anine09/learn-python-the-smart-way-v2/blob/main/slides/chapter_0-Installation.ipynb
 
-**其他材料**
+### 其他材料
 
-+   **python环境的搭建请参考：**
++ `python`环境的搭建请参考：
 
-+   Mac设备：Mac上安装Anaconda最全教程
++ Mac设备：Mac上安装`Anaconda`最全教程
 
-+   Windows设备：[A](https://blog.csdn.net/fan18317517352/article/details/123035625)naconda超详细安装教程(Windows环境下)_菜鸟1号!!的博客-CSDN博客_windows安装anaconda
++ Windows设备：[A](https://blog.csdn.net/fan18317517352/article/details/123035625)naconda超详细安装教程(Windows环境下)_菜鸟1号!!的博客-CSDN博客_windows安装anaconda
 
-+   Jupyter 编辑器的使用请参考：
++ `Jupyter` 编辑器的使用请参考：
 
-+   Jupyter Notebook最全使用教程，看这篇就够了！
++ `Jupyter Notebook`最全使用教程，看这篇就够了！

@@ -1,3 +1,4 @@
+
 # Nano-Banana案例库
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/JWINdghk3oDtvvxRq4Mc1fD8ncf](https://xodnytdcaw.feishu.cn/docx/JWINdghk3oDtvvxRq4Mc1fD8ncf)
@@ -8,9 +9,9 @@ https://opennana.com/awesome-prompt-gallery/
 
 ## 使用通道
 
-+   在网页中使用：[点击直达](https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image)
++ 在网页中使用：[点击直达](https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image)
 
-+   在本地cmd终端使用：[点此查看](https://github.com/gemini-cli-extensions/nanobanana)
++ 在本地`cmd`终端使用：[点此查看](https://github.com/gemini-cli-extensions/nanobanana)
 
 ## 提示词案例库
 
@@ -23,8 +24,6 @@ https://github.com/PicoTrex/Awesome-Nano-Banana-images
 ```
 A beautiful woman wearing a pink qipao, adorned with delicate floral accessories on her head and colorful blossoms woven into her hair. Around her neck is an elegant white lace collar. One of her hands gently holds several large butterflies. The overall photography style features high-definition detail and texture, resembling a fashion magazine cover. The word “FASHION DESIGN” is placed at the top center of the image. The background is a minimalist light gray, designed to highlight the subject.
 ```
-
-
 
 超真实3D手办：
 
@@ -39,7 +38,6 @@ A beautiful woman wearing a pink qipao, adorned with delicate floral accessories
 ```
 Create a 1/7 scale commercialized figure of the character in the illustration, in a realistic style and environment. Place the figure on a computer desk, using a circular transparent acrylic base without any text. On the computer screen, display the ZBrush modeling process of the figure. Next to the computer screen, place a BANDAl-style toy packaging box printed with the original artwork.
 ```
-
 
 ![](img/f4cceef8a3bf5733e42b80e2af80a26e.png)
 
@@ -89,7 +87,7 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
 
 ![](img/831f6938459fe49d497250547d69fb25.png)
 
-##  二.Nano Banana Pro 提示词
+## 二.Nano Banana Pro 提示词
 
 ### 黑板手写
 
@@ -153,8 +151,6 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
 
 ## 输出语言
 - 和视频字幕的语言保持一致
-
-
 ```
 
 ### 录音转稿
@@ -265,6 +261,9 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
 ### 9宫格照片（[来源](https://x.com/songguoxiansen/status/2000055154415182214)）
 
 
+
+# 图像生成提示词配置
+
 ```
 {
   &quot;image_prompt&quot;: {
@@ -368,7 +367,7 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
 }
 ```
 
-###  3x3 照片拼贴/9格网格。
+## 3x3 照片拼贴/9格网格。
 
 ![](img/4bdcf7d571574f33c50da9b7f949dbb6.png)
 
@@ -414,9 +413,13 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
     &quot;camera_technical_values&quot;: {
       &quot;focal_length&quot;: &quot;35mm&quot;,
       &quot;aperture&quot;: &quot;f/5.6&quot;,
+    }
+}
 ```
 
 ![](img/a5e9ee1cabe4ac47014fedd204e933cd.png)
+
+
 
 ```
 {
@@ -554,58 +557,64 @@ Transform uploaded photos into cinematicportraits, masterpieces, photorealism, c
 
 ![](img/17a0c59668e02b1d6b6dbaf3a185182c.png)
 
-```
+
+
+# Image Generation Prompt Configuration
+
+```json
 {
-  &quot;image_generation_prompt&quot;: {
-    &quot;structure&quot;: {
-      &quot;type&quot;: &quot;3x3 Photo Grid (9-Panel Collage).&quot;,
-      &quot;layout&quot;: &quot;Three rows, three columns. Vertical portrait orientation for each panel.&quot;,
-      &quot;theme&quot;: &quot;High-end Couple&#x27;s Fashion Editorial / Pre-wedding Photoshoot.&quot;,
-      &quot;color_palette&quot;: &quot;Black and White (Monochromatic), Greyscale.&quot;,
-      &quot;consistency&quot;: &quot;Same couple, same outfits, changing poses.&quot;
-    },
-    &quot;subject_details&quot;: {
-      &quot;couple_demographics&quot;: &quot;Attractive young Asian couple.&quot;,
-      &quot;male_subject&quot;: {
-        &quot;outfit&quot;: &quot;All-black tailored tuxedo suit, black dress shirt, no tie (open collar) or black tie.&quot;,
-        &quot;hair&quot;: &quot;Slicked back, styled.&quot;,
-        &quot;vibe&quot;: &quot;Stoic, protective, masculine.&quot;
-      },
-      &quot;female_subject&quot;: {
-        &quot;outfit&quot;: &quot;Long black silk evening gown with thin spaghetti straps, low back, and a high thigh slit.&quot;,
-        &quot;hair&quot;: &quot;Long, dark, loose waves.&quot;,
-        &quot;vibe&quot;: &quot;Elegant, seductive, graceful.&quot;
-      }
-    },
-    &quot;environment&quot;: {
-      &quot;setting&quot;: &quot;Minimalist Photo Studio.&quot;,
-      &quot;background&quot;: &quot;Seamless solid grey backdrop (Cyclorama).&quot;,
-      &quot;props&quot;: &quot;None (Focus entirely on the subjects).&quot;
-    },
-    &quot;pose_variations_breakdown&quot;: {
-      &quot;row_1_full_body&quot;: [
-        &quot;Couple standing side-by-side; woman leaning against man&#x27;s shoulder, one leg extended through the dress slit.&quot;,
-        &quot;Standing apart; man looking at camera, woman standing in profile showing off the dress silhouette.&quot;,
-        &quot;Man embracing woman from behind; woman leaning back into him, leg hooked around his leg.&quot;
-      ],
-      &quot;row_2_medium_shots&quot;: [
-        &quot;Woman facing forward, man standing closely behind her looking over her shoulder.&quot;,
-        &quot;Intimate profile view; faces very close, noses almost touching, romantic tension.&quot;,
-        &quot;Woman turned away from camera showing bare back, looking over shoulder at man.&quot;
-      ],
-      &quot;row_3_close_ups_and_seated&quot;: [
-        &quot;Man seated on floor or box, woman standing behind him with arms draped over his shoulders.&quot;,
-        &quot;Tight close-up of faces cheek-to-cheek, serious model expressions.&quot;,
-        &quot;Couple standing, woman leaning head on man&#x27;s chest, man looking down protectively.&quot;
-      ]
-    },
-    &quot;camera_technical_values&quot;: {
-      &quot;style&quot;: &quot;Fashion Editorial / Studio Portraiture.&quot;,
-      &quot;lens&quot;: &quot;85mm (Portrait telephoto for flattering compression).&quot;,
-      &quot;aperture&quot;: &quot;f/8.0 (Deep depth of field to keep both subjects in focus).&quot;,
-      &quot;shutter_speed&quot;: &quot;1/160s.&quot;,
-      &quot;iso&quot;: &quot;ISO 100.&quot;,
-      &quot;lighting_setup&quot;: &quot;Soft Studio Lighting. Large softbox or umbrella to create soft gradients on the black fabric and skin. &#x27;Rembrandt&#x27; or &#x27;Butterfly&#x27; lighting patterns depending on the angle.&quot;,
-      &quot;post_processing&quot;: &quot;High contrast black and white conversion, clean shadows.&quot;
-    }
+  "image_generation_prompt": {
+    "structure": {
+      "type": "3x3 Photo Grid (9-Panel Collage).",
+      "layout": "Three rows, three columns. Vertical portrait orientation for each panel.",
+      "theme": "High-end Couple's Fashion Editorial / Pre-wedding Photoshoot.",
+      "color_palette": "Black and White (Monochromatic), Greyscale.",
+      "consistency": "Same couple, same outfits, changing poses."
+    },
+    "subject_details": {
+      "couple_demographics": "Attractive young Asian couple.",
+      "male_subject": {
+        "outfit": "All-black tailored tuxedo suit, black dress shirt, no tie (open collar) or black tie.",
+        "hair": "Slicked back, styled.",
+        "vibe": "Stoic, protective, masculine."
+      },
+      "female_subject": {
+        "outfit": "Long black silk evening gown with thin spaghetti straps, low back, and a high thigh slit.",
+        "hair": "Long, dark, loose waves.",
+        "vibe": "Elegant, seductive, graceful."
+      }
+    },
+    "environment": {
+      "setting": "Minimalist Photo Studio.",
+      "background": "Seamless solid grey backdrop (Cyclorama).",
+      "props": "None (Focus entirely on the subjects)."
+    },
+    "pose_variations_breakdown": {
+      "row_1_full_body": [
+        "Couple standing side-by-side; woman leaning against man's shoulder, one leg extended through the dress slit.",
+        "Standing apart; man looking at camera, woman standing in profile showing off the dress silhouette.",
+        "Man embracing woman from behind; woman leaning back into him, leg hooked around his leg."
+      ],
+      "row_2_medium_shots": [
+        "Woman facing forward, man standing closely behind her looking over her shoulder.",
+        "Intimate profile view; faces very close, noses almost touching, romantic tension.",
+        "Woman turned away from camera showing bare back, looking over shoulder at man."
+      ],
+      "row_3_close_ups_and_seated": [
+        "Man seated on floor or box, woman standing behind him with arms draped over his shoulders.",
+        "Tight close-up of faces cheek-to-cheek, serious model expressions.",
+        "Couple standing, woman leaning head on man's chest, man looking down protectively."
+      ]
+    },
+    "camera_technical_values": {
+      "style": "Fashion Editorial / Studio Portraiture.",
+      "lens": "85mm (Portrait telephoto for flattering compression).",
+      "aperture": "f/8.0 (Deep depth of field to keep both subjects in focus).",
+      "shutter_speed": "1/160s.",
+      "iso": "ISO 100.",
+      "lighting_setup": "Soft Studio Lighting. Large softbox or umbrella to create soft gradients on the black fabric and skin. 'Rembrandt' or 'Butterfly' lighting patterns depending on the angle.",
+      "post_processing": "High contrast black and white conversion, clean shadows."
+    }
+  }
+}
 ```

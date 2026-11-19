@@ -1,10 +1,11 @@
+
 # 去中心化存储
 
 > 来源：[https://docs.feishu.cn/docx/WQpXddScoosg3Nxs34DcP4ulnig](https://docs.feishu.cn/docx/WQpXddScoosg3Nxs34DcP4ulnig)
 
-# **01 什么是DSN？**
+## 01 什么是DSN？
 
-DSN（Decentralized** Storage **Network）是一种去中心化的存储网络。在传统的Web2中，数据通常存储在中心化的服务器上，而对于一些需要永久存储的数据，如以太坊的第一层，也需要借助去中心化存储网络。
+DSN（Decentralized Storage Network）是一种去中心化的存储网络。在传统的Web2中，数据通常存储在中心化的服务器上，而对于一些需要永久存储的数据，如以太坊的第一层，也需要借助去中心化存储网络。
 
 ![](img/a871db1efbd1ebe2dfd181220cc86a9b.png)
 
@@ -18,7 +19,7 @@ DSN（Decentralized** Storage **Network）是一种去中心化的存储网络�
 
 +   独立数据的所有权
 
-DSN通过**降低副本的数量来降低存储成本**，并具备**区块链的合约互操作性**和**去中心化访问方式**。**相比传统云服务，DSN让用户保**留数据的所有权、访问权和控制权，避免数据丧失和审查问题。相比区块链，DSN的存储成本更为便宜，但需要应对降低副本数量带来的挑战。后续的一些设计也只要是为了解决降低副本数量带来的挑战。
+DSN通过**降低副本的数量来降低存储成本**，并具备**区块链的合约互操作性**和**去中心化访问方式**。相比传统云服务，DSN让用户保留数据的所有权、访问权和控制权，避免数据丧失和审查问题。相比区块链，DSN的存储成本更为便宜，但需要应对降低副本数量带来的挑战。后续的一些设计也都是为了解决降低副本数量带来的挑战。
 
 在DSN中，存储节点可以选择存储自己感兴趣的数据，而不是强制存储同一份数据，与传统区块链不同，DSN实际上没有全局状态
 
@@ -30,7 +31,7 @@ DSN通过**降低副本的数量来降低存储成本**，并具备**区块链�
 
 +   Proof of Retrievability：检索矿工
 
-# 02 Proof of Publication
+## 02 Proof of Publication
 
 问题1：
 
@@ -40,7 +41,7 @@ DSN通过**降低副本的数量来降低存储成本**，并具备**区块链�
 
 +   我们可不可以模仿传统区块链一样，在广播区块的时候顺便把交易也广播包含进去？
 
-+   不行，数据很大，共识性能很差，出块速度很慢；大部分区块里只放交易的hash来加速
++   不行，数据很大，共识性能很差，出块速度很慢；大部分区块里只放交易的`hash`来加速
 
 ![](img/e84cc9433135777a1f7f3c11953416ac.png)
 
@@ -68,7 +69,7 @@ Paradigm for publishing data
 
 +   成功之后，其他的DSN node就可以通过blockchain的RPC系统拿到数据；就不会存在一个node隐藏data
 
-# 03 Proof of Storage
+## 03 Proof of Storage
 
 DSN can not execute settlement of storage fee because of the lack of a unified world state
 
@@ -76,25 +77,25 @@ DSN can not execute settlement of storage fee because of the lack of a unified w
 
 放到blockchain执行，node执行之后会有一个proof of storage，会在链上被合约通过，然后会给对应的node支付存储费用（放在链上执行）
 
-## **DSN的多维度攻击？**
+### DSN的多维度攻击？
 
 ![](img/c58b9357f6fce9fcea13dbb3a1b9e383.png)
 
-(1) 女巫攻击，是指当系统要求旷工提供证明时，旷工利用别人那里存储数据生产的证明，提交给系统。然而，实际上**，他并没有存储。区块链中本质上是**一个只写不删的分布式数据库，通过多个节点的冗余数据达到网络的安全和不可篡改。女巫攻击，即为单一节点具有多个身份标识，通过控制系统的大部分节点来削弱冗余备份的作用。
+(1) 女巫攻击，是指当系统要求旷工提供证明时，旷工利用别人那里存储数据生产的证明，提交给系统。然而，实际上，他并没有存储。区块链中本质上是一个只写不删的分布式数据库，通过多个节点的冗余数据达到网络的安全和不可篡改。女巫攻击，即为单一节点具有多个身份标识，通过控制系统的大部分节点来削弱冗余备份的作用。
 
 ![](img/d573488a6651a92ba819c28456f1ac93.png)
 
-(2)生成攻击，node2、3时不同实体，想去提交这个file的proof of storage的时候，从网络上去找这份数据后，拿过来在链上做一些编码计算，再提上去。那么这个时候如果能也能成功的去拿到reward，属于生成攻击。
+(2)生成攻击，`node2`、`3`是不同实体，想去提交这个file的proof of storage的时候，从网络上去找这份数据后，拿过来在链上做一些编码计算，再提上去。那么这个时候如果能也能成功的去拿到reward，属于生成攻击。
 
 相当于外包存储
 
 ![](img/f40c91fc99dfef8a3e955e8703a94221.png)
 
-(3) 外援攻击，外援攻击指的是你把计算的外包给了其他节点。node2 还没有存储prove这份数据。但是note4存了，通过让note4把这份数据顺便也一起编码好之后再一起传给我，然后我再把这份数据再送到链上Settlement的合约里面去，然后我再去结算这份数据依旧能拿到存储报酬，那么这个时候我们会认为这种攻击它是一种外援攻击，就是把计算跟存储全部都外包。
+(3) 外援攻击，外援攻击指的是你把计算的外包给了其他节点。`node2` 还没有存储prove这份数据。但是`note4`存了，通过让`note4`把这份数据顺便也一起编码好之后再一起传给我，然后我再把这份数据再送到链上Settlement的合约里面去，然后我再去结算这份数据依旧能拿到存储报酬，那么这个时候我们会认为这种攻击它是一种外援攻击，就是把计算跟存储全部都外包。
 
 ![](img/01b3c66d14f1bf55311f652973cd4780.png)
 
-## **如何避免攻击？**
+### 如何避免攻击？
 
 ![](img/7cf94217ee1d683d4864df029fea2702.png)
 
@@ -110,7 +111,7 @@ DSN can not execute settlement of storage fee because of the lack of a unified w
 
 数据检索证明机制：由于每个节点并不拥有整个网络的数据，需要一种检索证明机制来确保用户在网络中能够找到所需数据。目前并没有成熟的检索市场，通常数据检索是通过中心化的服务或服务器实现，缺乏工程化的实现。
 
-## Filecoin
+### Filecoin
 
 > https://www.bilibili.com/video/BV1Xx4y1X7MU/?spm_id_from=333.999.0.0&vd_source=b2c556c92eaad2e3330b8aa1ae47c210
 
@@ -120,7 +121,7 @@ DSN can not execute settlement of storage fee because of the lack of a unified w
 
 时空时间
 
-# 04 Proof of Retrievability
+## 04 Proof of Retrievability
 
 ![](img/b766314ed9cf6b707860e17877d25465.png)
 
@@ -128,7 +129,7 @@ DSN can not execute settlement of storage fee because of the lack of a unified w
 
 暂时还没有实现
 
-# 05 总结
+## 05 总结
 
 ![](img/57851cd98c305d418300e6b6e1cd6687.png)
 

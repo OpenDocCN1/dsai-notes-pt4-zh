@@ -1,4 +1,5 @@
-# 2026智能体（AI Agent ）面试&学习指南：100道高频真题，覆盖原理、工程、架构、应用
+
+# 2026智能体（AI Agent）面试&学习指南：100道高频真题，覆盖原理、工程、架构、应用
 
 > 来源：[https://geekbang.feishu.cn/docx/DkZSd9m4honDTVxhdcVcp4vwnvg](https://geekbang.feishu.cn/docx/DkZSd9m4honDTVxhdcVcp4vwnvg)
 
@@ -6,13 +7,13 @@
 
 > 原文链接：https://mp.weixin.qq.com/s/O-Ze4gTR6D9r5nStsHpvpg
 
-**2026年，关于AI技术，我将持续关注的大概有下面这些：更智能、更高效、更经济的大模型（Transformer架构优化、MoE类大模型、超稀疏类大模型、注意力优化等）**、大模型的预训练、后训练和微**调、推****理大模型、原生多/全模态理解大模型、图像生成大模型、视频生成大模型、世界模型、代码大模型、AI Agent（智能体系统）、上下文工程、推理引擎、理解和生成大一统的模型、强化学习、在线学习和持续学习（大模型训练和学习新范式）。
+2026年，关于AI技术，我将持续关注的大概有下面这些：更智能、更高效、更经济的大模型（Transformer架构优化、MoE类大模型、超稀疏类大模型、注意力优化等）、大模型的预训练、后训练和微调、推理大模型、原生多/全模态理解大模型、图像生成大模型、视频生成大模型、世界模型、代码大模型、AI Agent（智能体系统）、上下文工程、推理引擎、理解和生成大一统的模型、强化学习、在线学习和持续学习（大模型训练和学习新范式）。
 
-我最关注的大模型有这些家的：OpenAI的****G**PT系列、Anthr**opic的Claude、谷歌的Gemini、xAI的Grok、阿里Qwe****n、DeepSee**k、字节豆包系列、智谱GLM、月之暗面Kimi、MiniMax、百度文心、蚂蚁百灵、讯飞星火、美团龙猫、腾讯混元，以及商汤、阶跃星辰、面壁智能等。关于AI产品、AI工具和AI应用，我会持续关注的大概有这些：字节豆包/阿里千问/文心一言等C端综合类AI助手、办公智能体（扣子、Kimi、天工、Minimax Agent、WPS AI等）、知识库工具如ima、图像视频创作工具（Nano Banana、Lovart、字节seed图像和视频生成模型、通义万相等）、AI coding类应用（AI IDE如Google Antigravity 、Qoder、Trae、CodeBuddy，Cli端的Claude Code、Open Code类）、智能搜索类AI工具（秘塔AI搜索、夸克等）、深度研究类工具（Kimi深度研究、千问深度研究）、垂直领域的AI产品（如蚂蚁阿福这类健康助手，视频创作助手剪映等），AI coding模型如Claude Opus，通用智能体助手如OpenClaw等。
+我最关注的大模型有这些家的：OpenAI的GPT系列、Anthropic的Claude、谷歌的Gemini、xAI的Grok、阿里Qwen、DeepSeek、字节豆包系列、智谱GLM、月之暗面Kimi、MiniMax、百度文心、蚂蚁百灵、讯飞星火、美团龙猫、腾讯混元，以及商汤、阶跃星辰、面壁智能等。关于AI产品、AI工具和AI应用，我会持续关注的大概有这些：字节豆包/阿里千问/文心一言等C端综合类AI助手、办公智能体（扣子、Kimi、天工、Minimax Agent、WPS AI等）、知识库工具如ima、图像视频创作工具（Nano Banana、Lovart、字节seed图像和视频生成模型、通义万相等）、AI coding类应用（AI IDE如Google Antigravity、Qoder、Trae、CodeBuddy，Cli端的Claude Code、Open Code类）、智能搜索类AI工具（秘塔AI搜索、夸克等）、深度研究类工具（Kimi深度研究、千问深度研究）、垂直领域的AI产品（如蚂蚁阿福这类健康助手，视频创作助手剪映等），AI coding模型如Claude Opus，通用智能体助手如OpenClaw等。
 
 2026年，随着大模型能力的不断提升，AI Agent将会越来越落地，每家公司、每个人在未来都要构建和使用自己的智能体。对于想要或者正在从事智能体（AI Agent）的产品、研发和测试同学，在面试中会遇到什么样的问题呢？以下主要来自于各位从事Agent研发、产品和测试的伙伴在面试互联网大厂、AI科技公司的相关岗位遇到的面试问题汇总，不仅面试前的准备需要，也可以作为学习智能体技术的一些方向。
 
-Agent面试题目
+## Agent面试题目
 
 1、简述Agent的通用抽象架构，并解释“感知、规划、行动、记忆”四个模块是如何闭环协作的？
 
@@ -42,7 +43,21 @@ Agent面试题目
 
 14、如何定义“记忆”在智能体中的角色？短期记忆与长期记忆的区别及实现方式有哪些？
 
-15、解释“自我反思”（Self-reflection）机制，它在提升智能体性能方面有哪些具体应用？16、详细解释ReAct范式中“Reasoning”和“Acting”是如何交替进行的？在什么场景下ReAct会失效，如何改进？17、Function Call的底层实现原理。模型是如何被训练以支持Function Call能力的（如Chat Completion API中的tools参数）？18、什么是MCP（Model Context Protocol）协议？它解决了传统Function Call集成中的哪些痛点？描述MCP的Host、Client与Server架构。19、A2A（Agent-to-Agent）协议的设计初衷是什么？它如何解决不同框架下智能体之间的通信互操作性问题？20、在设计工具描述时，如何平衡“详细程度”与“Token消耗”？工具描述的质量如何影响模型的Zero-shot工具调用能力？21、面对成千上万个工具，Agent如何进行高效的路由选择？请描述基于向量检索的工具召回与基于模型推理的工具选择相结合的方案。22、如果LLM生成的Function Call参数格式错误（如JSON字段缺失），工程上如何进行鲁棒性处理？请设计一个自动修复或重试机制。
+15、解释“自我反思”（Self-reflection）机制，它在提升智能体性能方面有哪些具体应用？
+
+16、详细解释ReAct范式中“Reasoning”和“Acting”是如何交替进行的？在什么场景下ReAct会失效，如何改进？
+
+17、Function Call的底层实现原理。模型是如何被训练以支持Function Call能力的（如Chat Completion API中的`tools`参数）？
+
+18、什么是MCP（Model Context Protocol）协议？它解决了传统Function Call集成中的哪些痛点？描述MCP的Host、Client与Server架构。
+
+19、A2A（Agent-to-Agent）协议的设计初衷是什么？它如何解决不同框架下智能体之间的通信互操作性问题？
+
+20、在设计工具描述时，如何平衡“详细程度”与“Token消耗”？工具描述的质量如何影响模型的Zero-shot工具调用能力？
+
+21、面对成千上万个工具，Agent如何进行高效的路由选择？请描述基于向量检索的工具召回与基于模型推理的工具选择相结合的方案。
+
+22、如果LLM生成的Function Call参数格式错误（如JSON字段缺失），工程上如何进行鲁棒性处理？请设计一个自动修复或重试机制。
 
 23、并行工具调用是如何实现的？LLM是如何在单次推理中输出多个互不依赖的工具调用请求的？
 
@@ -50,7 +65,7 @@ Agent面试题目
 
 25、在多轮对话中，Agent如何判断何时调用工具、何时直接回复用户、何时请求澄清？
 
-26、LangChain中的Tool和StructuredTool有何区别？如何将一个普通的Python函数快速封装为Agent可用的Tool？
+26、LangChain中的`Tool`和`StructuredTool`有何区别？如何将一个普通的Python函数快速封装为Agent可用的`Tool`？
 
 27、如何实现一个“工具学习”Agent？即Agent不仅仅是使用工具，还能通过阅读文档或试错来学习新工具的使用方法。
 
@@ -70,7 +85,7 @@ Agent面试题目
 
 35、ongyi DeepResearch（通义深度研究）在处理长文本和搜索增强方面，采用了哪些特定的Agent架构？
 
-36、阅读LangChain源码，简述AgentExecutor的_call方法中，是如何循环处理Observation和Thought的？
+36、阅读LangChain源码，简述`AgentExecutor`的`_call`方法中，是如何循环处理Observation和Thought的？
 
 37、如果你要设计一个支持流式输出的Agent框架，前端SSE与后端Agent执行逻辑应该如何配合？
 
@@ -162,7 +177,7 @@ Agent面试题目
 
 81、多 Agent 之间的通信方式有哪些？
 
-82、解释 LangGraph 中 State 的概念，以及它如何协调多个 Agent 的工作流。
+82、解释 LangGraph 中 `State` 的概念，以及它如何协调多个 Agent 的工作流。
 
 83、LangChain 的核心组件有哪些？
 

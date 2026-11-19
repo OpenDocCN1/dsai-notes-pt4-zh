@@ -1,3 +1,4 @@
+
 # 中国AIGC数据标注产业全景报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/KJCudHIBBoauKtxfyiRc3rqDnFf](https://agijuejin.feishu.cn/docx/KJCudHIBBoauKtxfyiRc3rqDnFf)

@@ -1,52 +1,39 @@
+
 # AI写小说-NineS AI“改写”功能演示~
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/FWuAdk3EXo5fglxCE5XcL7pjnhg](https://rq547mr4oez.feishu.cn/docx/FWuAdk3EXo5fglxCE5XcL7pjnhg)
 
-# 一、前言
+## 一、前言
 
 > 各位小伙伴好~🎉🎉🎉NineS-AI与君又见😬。
-
+>
 > 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
-
-> **经过10月份的α测****试，小伙伴们都拿到了很多****好**结果（太多就不一一发图了），但是产品还是不够完善
-
-> **所以第二期，在第一期的基础之上增加大**量的优化和更改~（支持长篇/短篇/短剧）
-
-> **如今，部分内部测试的效果一一展现给**大家~~期待小伙伴们11月22日的尝试！
+>
+> 经过10月份的α测试，小伙伴们都拿到了很多好结果（太多就不一一发图了），但是产品还是不够完善
+>
+> 所以第二期，在第一期的基础之上增加大量的优化和更改~（支持长篇/短篇/短剧）
+>
+> 如今，部分内部测试的效果一一展现给大家~~期待小伙伴们11月22日的尝试！
 
 ---
 
 以下是题材类Prompt，无私奉献~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
-
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
-
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
-
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
-
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
-
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
-
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
-
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
-
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
-
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
-
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
-
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
-
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
-
-1.  [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
-
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -54,83 +41,77 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+PS：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
-**原始出处：**
+原始出处：
 
 ![](img/6fcf27e8d76ef774caa53ea682e342b2.png)
 
-# 二、当前状态（以作家灵感为始，破程序想象之梏。）
+## 二、当前状态（以作家灵感为始，破程序想象之梏。）
 
-1.  **产品理念：**
+### 产品理念
 
-1.  以作家灵感为始，破程序想象之梏。奉行长期价值主义~
+以作家灵感为始，破程序想象之梏。奉行长期价值主义~
 
-1.  最懂文字创作者的AI创作工具，没有之一！
+最懂文字创作者的AI创作工具，没有之一！
 
-+   不写文章的研发，不是好研发。
+- 不写文章的研发，不是好研发。
+- 不会写代码的作者，总是欠缺一点什么~~（就是这么自信）
+- 专业的微调、专业的知识库、专业的Prompt和工作流~，并非简单的Prompt就说是AI写作工具。
 
-+   不会写代码的作者，总是欠缺一点什么~~（就是这么自信）
+### 为谁而生？
 
-+   专业的微调、专业的知识库、专业的Prompt和工作流~，并非简单的Prompt就说是AI写作工具。
+为每一个心怀故事的你，无论是短篇小说、长篇巨著、精彩短剧，还是悬疑烧脑的剧本杀，都能在这里找到属于你的舞台。
 
-1.  **为谁而生？**
+### 功能一览
 
-1.   为每一个心怀故事的你，无论是短篇小说、长篇巨著、精彩短剧，还是悬疑烧脑的剧本杀，都能在这里找到属于你的舞台。
+当前内测功能：
 
-1.  **功能一览**
+#### AI拆书
 
-1.  当前内测功能：
+短篇的情节节奏，情绪上下文怎么快速理解？
 
-+   **AI拆书：**
+500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
 
-+   短篇的情节节奏，情绪上下文怎么快速理解？
+#### AI创作
 
-+   500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
+短篇、长篇、短剧三大类创作类型。
 
-+   **AI创作**
+从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
 
-+   短篇、长篇、短剧三大类创作类型。
+润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
 
-+   从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
+单独的写情节/战斗/对白等，全方位的微调
 
-+   润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
+#### AI助手
 
-+   单独的写情节/战斗/对白等，全方位的微调
+高端玩家必备，物美价廉，自定义角色，四大主流AI
 
-+   **AI助手**
+除了创作，其他的工作也能用到哦~
 
-+   高端玩家必备，物美价廉，自定义角色，四大主流AI
+### 下一期
 
-+   除了创作，其他的工作也能用到哦~
+- 产品交互，模型能力持续增强
+- 化身数据爬虫，实时捕捉全网热门题材，助你创作出引爆流量的爆款作品。
+- B端定制（完整SOP一键全自动产出）
 
-1.  下一期：
+### 我们的优势
 
-+   产品交互，模型能力持续增强
-
-+   化身数据爬虫，实时捕捉全网热门题材，助你创作出引爆流量的爆款作品。
-
-+   B端定制（完整SOP一键全自动产出）
-
-1.  **我们的优势**
-
-1.  质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
-
-1.  重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
-
-1.  高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
+- 质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
+- 重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
+- 高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
 
 #### 产品进度
 
-1.  种子测试时间（100+全职作者测试）
+种子测试时间（100+全职作者测试）
 
-+   开始时间：2024-10-14    结束时间：2024-11-15
+- 开始时间：2024-10-14    结束时间：2024-11-15
 
-1.  内测时间（群无条件邀请测试）
+内测时间（群无条件邀请测试）
 
-+   预计开始时间：2024-11-22   结束时间：2024-12-30
+- 预计开始时间：2024-11-22   结束时间：2024-12-30
 
-# 三、第二轮提前测试~结果反馈（少部分截图，还有很多）
+## 三、第二轮提前测试~结果反馈（少部分截图，还有多）
 
 ![](img/529a8ff8f7841e8be28b2bdef06709ad.png)
 
@@ -140,23 +121,19 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ![](img/acc86e5aa343fa21c3b26a70c97db36f.png)
 
-# 三、**改写案例~**
+## 改写案例~
 
-### 改写界面：
+### 改写界面
 
-+   4个调试AI（集齐市面最强大的写作AI，包括我们微调版本）
-
-+   **二十种通用风格（长篇和短篇~）**
-
-+   **配合《**[AI写小说-洗稿仿写独家Prompt v2.0](https://rq547mr4oez.feishu.cn/wiki/BH01wSe5qiqd4IkCULwcvFsBnz2?from=from_copylink)**》操作，绝对让你惊喜**
-
-+   **比如现代都市，修改成修仙，**
-
-+   **玄幻改都市~~**
+- 4个调试AI（集齐市面最强大的写作AI，包括我们微调版本）
+- 二十种通用风格（长篇和短篇~）
+- 配合《[AI写小说-洗稿仿写独家Prompt v2.0](https://rq547mr4oez.feishu.cn/wiki/BH01wSe5qiqd4IkCULwcvFsBnz2?from=from_copylink)》操作，绝对让你惊喜
+- 比如现代都市，修改成修仙，
+- 玄幻改都市~~
 
 ![](img/767d1f7ae5c834fb2334ec7295e3041c.png)
 
-### 原文（字数281）
+#### 原文（字数281）
 
 ```
 第一章：神秘信息
@@ -182,7 +159,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 //由于篇幅，未写完
 ```
 
-### 细节版（字数616）
+#### 细节版（字数616）
 
 ```
 **第一章：诡异传讯**
@@ -216,7 +193,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 有人，进殿了。
 ```
 
-### 均衡版（字数1416）
+#### 均衡版（字数1416）
 
 ```
 # 第一章：神秘信息
@@ -252,7 +229,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 「叮——弟子牌。」黑暗中，我听见了熟悉的女声。有修士进来了。
 ```
 
-### 微调版（字数1090）
+#### 微调版（字数1090）
 
 ```
 第一章：天启之信
@@ -324,12 +301,13 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 有人进来了。】
 ```
 
-### 节奏版（字数1489）
+#### 节奏版（字数1489）
 
-```
-**续写内容**
-我叫徐晨，一个负责维护宗门通讯法阵的修真弟子。
-最近宗门开发了一款新的防诈骗法器，就是我负责维护的。
+
+
+# 续写内容
+
+我叫徐晨，一个负责维护宗门通讯法阵的修真弟子。最近宗门开发了一款新的防诈骗法器，就是我负责维护的。
 
 没想到我居然收到了一条诈骗传讯符：
 「你好，我是秦始皇，朕没死，现在被困在地宫，只要你给我转 50 块灵石，朕就能带着阴兵重建王朝，到时候封你做异姓王。」
@@ -389,6 +367,3 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 「叮——身份玉牌。」
 黑暗中，我听见了熟悉的电子女声。
 有人进来了。
-```
-
-###

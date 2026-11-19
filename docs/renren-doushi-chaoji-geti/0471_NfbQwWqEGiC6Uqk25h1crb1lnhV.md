@@ -1,3 +1,4 @@
+
 # W001丨一键提取无水印视频和文案，自动二创并写入飞书
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/RyKndoFBEoZeJKxV3cKcrx7rnBc](https://xuqiwei1986.feishu.cn/docx/RyKndoFBEoZeJKxV3cKcrx7rnBc)
@@ -30,72 +31,73 @@
 
 以下正文，enjoy
 
-# 一、流程梳理
+## 一、流程梳理
 
 我们要实现的功能是：一键提取无水印视频和文案，自动二创并写入飞书
 
 拆解一下：
 
-+   短视频链接提取无水印视频+文案
++ 短视频链接提取无水印视频+文案
 
-+   文案二创
++ 文案二创
 
-+   相关结果写入飞书
++ 相关结果写入飞书
 
 由此我们写画出一个智能体的工作流程图，这也是搭建工作流的核心，理清了流程，整个智能体的搭建也就完成了80%。
 
-# 二、搭建过程
+## 二、搭建过程
 
-## 创建智能体
+### 创建智能体
 
-打开coze网站 www.coze.cn
+打开`coze`网站 `www.coze.cn`
 
 按提示进行相关注册工作后登录完成后你看到的界面会是这样
 
-+   点击左边栏的“工作空间”
++ 点击左边栏的“工作空间”
 
-+   创建你自己的工作空间，当然直接使用个人空间也可以
++ 创建你自己的工作空间，当然直接使用个人空间也可以
 
-+   点击项目开发
++ 点击项目开发
 
-+   点击创建按钮
++ 点击创建按钮
 
 ![](img/79e019d5ce8db23554b3f3948d0c4dcd.png)
 
-+   选择“创建智能体”
++ 选择“创建智能体”
 
 ![](img/b86b0c706b157e126251b009b369a6f4.png)
 
-+   输入智能体相关信息
++ 输入智能体相关信息
 
 ![](img/e4104412cf88f3d77363640420fac203.png)
 
-## 创建工作流
+### 创建工作流
 
-+   进入智能体编辑页面后，点击工作流后的+号
++ 进入智能体编辑页面后，点击工作流后的+号
 
 ![](img/969f59486951aaacdda021f7fb2f231d.png)
 
-+   这里我们创建一个对话流
++ 这里我们创建一个对话流
 
 ![](img/2ee3f057d8192b06481a9de75c5bb07d.png)
 
-+   老规矩，填入相关信息
++ 老规矩，填入相关信息
+
 工作流和对话流的名称都只能是英文字符及下标字符“_”，这里我一般习惯把工作流按用途编号，名称用英文或者拼音描述用途
 
 ![](img/2844866e5389bb8f247f6ff06cf85d79.png)
 
-## 工作流编辑
+### 工作流编辑
 
-### 3.0 开始节点
+#### 3.0 开始节点
 
 默认配置即可
 
 ![](img/757040103fa048c13a18559dca61dadf.png)
 
-### 3.1 视频链接提取插件
+#### 3.1 视频链接提取插件
 
-+   找到插件"视频全平台下载"并连接到开始节点
++ 找到插件"视频全平台下载"并连接到开始节点
 
 ![](img/1fd6be225da33df9517a48da720084db.png)
 
@@ -105,19 +107,19 @@
 
 按提示去官网注册后充值即可，充值个10块钱可以用非常久了。
 
-+   插件参数配置如下，url连接到开始节点的{{user_input}}，{{api_token}}就填入你刚刚在插件官网获取的API
++ 插件参数配置如下，`url`连接到开始节点的`{{user_input}}`，`{{api_token}}`就填入你刚刚在插件官网获取的API
 
 ![](img/f4560440671f3435140a26eafc43f0aa.png)
 
 在输出参数中，我大概讲一下我们会用到哪些信息
 
-{{photo}} 视频封面的url下载链接
+`{{photo}}` 视频封面的url下载链接
 
-{{title}}视频标题
+`{{title}}`视频标题
 
-{{url}}无水印视频下载链接
+`{{url}}`无水印视频下载链接
 
-### 3.2 插入判断函数
+#### 3.2 插入判断函数
 
 主要目的是判断上个节点的插件是否解析成功
 
@@ -131,8 +133,7 @@ IDE代码选择python语言
 
 ![](img/b81a4ee8f9eff0d1603a294d694a3b64.png)
 
-```
-
+```python
 from typing import TypedDict, List, Dict, Union
 
 # 定义输入参数类型
@@ -144,9 +145,9 @@ class Output(TypedDict):
     array_num: int
     is_valid_input: int
 
-async def main(args) -&gt; Output:
-    params = args[&#x27;params&#x27;]
-    input_data = params[&#x27;input&#x27;]
+async def main(args) -> Output:
+    params = args['params']
+    input_data = params['input']
 
     if input_data is None:
         is_valid_input = 0
@@ -156,12 +157,12 @@ async def main(args) -&gt; Output:
         array_num = len(input_data)
 
     return {
-        &#x27;array_num&#x27;: array_num,
-        &#x27;is_valid_input&#x27;: is_valid_input
+        'array_num': array_num,
+        'is_valid_input': is_valid_input
     }
 ```
 
-### 3.3 插入判断节点
+#### 3.3 插入判断节点
 
 > 为什么我会加入判断函数和判断节点，主要是有的时候我还会直接输入云端的视频链接。而插件只能解析抖音/快手/📕/B站的视频链接，遇到这种情况就会输出空值。
 
@@ -171,13 +172,13 @@ async def main(args) -&gt; Output:
 
 ![](img/39df930883bb1122d8e9edc297b72aef.png)
 
-### 3.4 执行失败，本地视频转文案
+#### 3.4 执行失败，本地视频转文案
 
 ![](img/e44ab48ad162b721665fb1e5b267a6d5.png)
 
 ![](img/0a6b6497abecb52f0f8d1fbd60a4fb1d.png)
 
-{{api_key}}填写你的阿里云百炼模型API
+`{{api_key}}`填写你的阿里云百炼模型API
 
 阿里云百炼API获取
 
@@ -189,25 +190,20 @@ https://bailian.console.aliyun.com/?tab=model#/api-key
 
 > 给大家补一下自建IDE插件的相关知识，后面会把它单独整理成文档
 
-1.  在工作空间-资源库中，新建插件
+1. 在工作空间-资源库中，新建插件
 
+1. 填写相关信息
 
-1.  填写相关信息
+1. 点击创建工具
 
+1. 点击添加工具并输入信息
 
-1.  点击创建工具
-
-
-1.  点击添加工具并输入信息
-
-
-
-1.  在代码区域复制以下代码，一样可以让deepseek帮你写和优化
+1. 在代码区域复制以下代码，一样可以让deepseek帮你写和优化
 
 ```
-&quot;&quot;&quot;
+"""
 功能说明：通过阿里云的服务，将音频文件转换为文本内容。
-&quot;&quot;&quot;
+"""
 
 from typing import TypedDict
 import dashscope
@@ -221,20 +217,29 @@ class Output(TypedDict):
     data: str
     error_message: str
 
-def handler(args) -&gt; Output:
-    &quot;&quot;&quot;
+def handler(args) -> Output:
+    """
     示例用法:
     ```python
+
     args = {
-        &quot;input&quot;: {
-            &quot;api_key&quot;: &quot;your_api_key&quot;,
-            &quot;file_url&quot;: &quot;https://example.com/audio.mp3&quot;
+
+        "input": {
+
+            "api_key": "your_api_key",
+
+            "file_url": "https://example.com/audio.mp3"
+
         }
+
     }
+
     result = handler(args)
+
     print(result)
+
     ```
-    &quot;&quot;&quot;
+    """
     try:
         api_key = args.input.api_key
         file_url = args.input.file_url
@@ -242,7 +247,7 @@ def handler(args) -&gt; Output:
         dashscope.api_key = api_key
 
         task_response = dashscope.audio.asr.Transcription.async_call(
-            model=&#x27;paraformer-v1&#x27;,
+            model='paraformer-v1',
             file_urls=[file_url]
         )
 
@@ -250,39 +255,34 @@ def handler(args) -&gt; Output:
 
         if transcribe_response.status_code == requests.codes.ok:
             transcription_data = transcribe_response.output
-            transcription_url = transcription_data[&#x27;results&#x27;][0][&#x27;transcription_url&#x27;]
+            transcription_url = transcription_data['results'][0]['transcription_url']
 
             response = requests.get(transcription_url)
             if response.status_code == requests.codes.ok:
                 result = response.json()
-                text = result[&#x27;transcripts&#x27;][0][&#x27;text&#x27;]
-                return {&quot;answer&quot;: text, &quot;error_message&quot;: &quot;&quot;}
+                text = result['transcripts'][0]['text']
+                return {"answer": text, "error_message": ""}
             else:
-                raise Exception(f&quot;Failed to fetch transcription content from {transcription_url}&quot;)
+                raise Exception(f"Failed to fetch transcription content from {transcription_url}")
         else:
-            raise Exception(&quot;Transcription task failed&quot;)
+            raise Exception("Transcription task failed")
 
     except Exception as e:
-        error_message = f&quot;发生错误: {str(e)}&quot;
-        return {&quot;answer&quot;: &quot;&quot;, &quot;error_message&quot;: error_message}
+        error_message = f"发生错误: {str(e)}"
+        return {"answer": "", "error_message": error_message}
 ```
 
-1.  添加相关依赖
+1. 添加相关依赖
 
+1. 在元数据中填写对应输入参数，注意名称和类型都要正确
 
-
-1.  在元数据中填写对应输入参数，注意名称和类型都要正确
-
-
-1.  点击测试代码
+1. 点击测试代码
 
 把你的阿里云api和插件解析后的视频链接填入
 
+1. 点击运行，确认插件运行成功
 
-1.  点击运行，确认插件运行成功
-
-
-1.  发布插件
+1. 发布插件
 
 ![](img/a1da2eb40b24e7c2b24a02821ddec448.png)
 
@@ -290,7 +290,7 @@ def handler(args) -&gt; Output:
 
 > 自建插件教程结束
 
-### 3.5 消息输出
+#### 3.5 消息输出
 
 这一步的主要目的是在提取成功后，智能体给用户输出一段提醒，防止用户等待过久以为提取失败了
 
@@ -298,7 +298,7 @@ def handler(args) -&gt; Output:
 
 ![](img/e8fd22890ef47d15c6e64455c0245dce.png)
 
-### 3.6 文案纠错
+#### 3.6 文案纠错
 
 这里我插入了一个工作流，主要目的是文案纠错
 
@@ -327,7 +327,7 @@ def handler(args) -&gt; Output:
  在当今快节奏的信息时代,许多文案(如抖音视频文案、会议录音转写稿等)常常因匆忙制作而存在错别字和基本语法错误。这些错误可能影响文案的专业性和可读性,因此需要一个专业的校对工具来提高文案质量。  
  ## 任务(Task): 
  你的任务是仔细阅读并理解提供的中文文案(可能包含少量英文),然后纠正其中的错别字和明显的语法错误。你需要保持原文的整体结构、语气和主要意思不变,只关注于纠正文字错误。不要对文案内容做任何解释、评论或回答文案中的问题。  
- ## 规则与限制(Rules &amp; Restrictions):  
+ ## 规则与限制(Rules & Restrictions):  
  1、只纠正错别字和明显的语法错误或标点符号错误，一定不要不改变文的结构、语气或表达方式。 
  2、不要添加、删除或重组任何句子。 
  3、不对文案内容做任何解释或评论。 
@@ -335,9 +335,9 @@ def handler(args) -&gt; Output:
  5、如遇到不确定是否为错误的情况,保留原文。 
  6、对于英文部分,仅纠正明显的拼写错误。    
  ## 案例展示(Case Show):  
- 输入文案示例: &quot;我们公司今年的营业鹅比去年赠长了百分之二十,这个成就来之不易,希望大家再接再里,为公司的发展做出更大的贡鞋。&quot; 
- 输出修正示例: &quot;我们公司今年的营业额比去年增长了百分之二十,这个成就来之不易,希望大家再接再厉,为公司的发展做出更大的贡献。&quot;  
- ## 风格和语气(Style &amp; Tone):  
+ 输入文案示例: "我们公司今年的营业鹅比去年赠长了百分之二十,这个成就来之不易,希望大家再接再里,为公司的发展做出更大的贡鞋。" 
+ 输出修正示例: "我们公司今年的营业额比去年增长了百分之二十,这个成就来之不易,希望大家再接再厉,为公司的发展做出更大的贡献。"  
+ ## 风格和语气(Style & Tone):  
  保持中立、专业的语气,不添加个人观点或情感色彩。修正应当精准、客观,仅限于文字或标点符号错误的纠正。  
  ## 输出格式(Output format):  
  注意：直接输出修正后的纯文案,不需要标注修改之处或解释修改原因，不要输出和修改后文案任何无关的信息，下面xxx就表示修改后的文案内容； xxx  
@@ -349,23 +349,23 @@ def handler(args) -&gt; Output:
  ## 初始化(Initialization):
 ```
 
-### 3.7 执行成功，短视频链接转文案
+#### 3.7 执行成功，短视频链接转文案
 
-7号节点和4号节点一致，只有{{file_url}}参数来源有区别
+7号节点和4号节点一致，只有`{{file_url}}`参数来源有区别
 
 ![](img/2625e9e71e981d93df33a80ae4febf6b.png)
 
 ![](img/62812581386cc2343e2c178dcc8f3c8a.png)
 
-### 3.8 重复3.5
+#### 3.8 重复3.5
 
-### 3.9 重复3.6
+#### 3.9 重复3.6
 
-{{input}}来源从7号节点中获取
+`{{input}}`来源从7号节点中获取
 
 ![](img/00f9cf92bfb40db07b656b778da29132.png)
 
-### 3.10 合并文案
+#### 3.10 合并文案
 
 把两条支线的纠错后的文案用合并字符串在一起
 
@@ -375,7 +375,7 @@ def handler(args) -&gt; Output:
 
 ![](img/d167210229e194840792842905fd8d8c.png)
 
-### 3.11 长文案润色
+#### 3.11 长文案润色
 
 这里我也是使用自建插件，调用claude大模型来进行润色改写
 
@@ -384,6 +384,8 @@ def handler(args) -&gt; Output:
 实际上使用coze自带的deepseek-v3足够，插入方法同3.6
 
 润色提示词，当然你也可以使用自己的提示词来进行二创或者润色
+
+
 
 ```
 #Role: 
@@ -407,17 +409,17 @@ def handler(args) -&gt; Output:
 
 主要目的是输出
 
-+   封面标题
++ 封面标题
 
-+   作品标题
++ 作品标题
 
-+   视频描述
++ 视频描述
 
-+   话题标签
++ 话题标签
 
-+   上墙大字报
++ 上墙大字报
 
-+   评论区首评
++ 评论区首评
 
 ![](img/2783b2883983f8b8860d85048480d0d7.png)
 
@@ -519,15 +521,15 @@ async def main(args: Args) -&gt; Output:
 
 如果是使用官方插件，我们需要先建立一个合并字符的节点（14.1），目的是把之前所有节点的相关信息整合，包括
 
-+   无水印视频链接
++ 无水印视频链接
 
-+   视频封面链接
++ 视频封面链接
 
-+   纠错后原文案
++ 纠错后原文案
 
-+   二创文案
++ 二创文案
 
-+   成品六项
++ 成品六项
 
 ![](img/af2a35852e053fb05e086e80391b0ba6.png)
 
@@ -535,7 +537,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/849b7dbe8f36175d84ded0b0f5823807.png)
 
-{{fold_token}}就是指定文档所在文件夹 的 Token，不传或传空表示根目录。支持输入文件夹 token 或者 文件夹 URL。
+`{{fold_token}}`就是指定文档所在文件夹 的 Token，不传或传空表示根目录。支持输入文件夹 token 或者 文件夹 URL。
 
 文件夹token就是下图红框区域内容，文件夹URL就是整段链接
 
@@ -543,11 +545,11 @@ async def main(args: Args) -&gt; Output:
 
 ### 3.26 结束节点
 
-如果是使用自建插件，{{output}}来源为14号节点的{{url}}参数
+如果是使用自建插件，`{{output}}`来源为14号节点的`{{url}}`参数
 
 ![](img/f2b1738ce6b419c4caed169ca9c5a5b2.png)
 
-如果是使用官方飞书插件，则改为15.1号节点的{{url}}参数
+如果是使用官方飞书插件，则改为15.1号节点的`{{url}}`参数
 
 ## 工作流试运行和调试
 

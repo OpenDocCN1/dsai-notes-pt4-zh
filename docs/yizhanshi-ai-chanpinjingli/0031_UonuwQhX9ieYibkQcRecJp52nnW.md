@@ -1,3 +1,4 @@
+
 # 快速使用（推理部署）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/LCk5dYlHQoEeAMxAFFAcSIcWnMs](https://v11enp9ok1h.feishu.cn/docx/LCk5dYlHQoEeAMxAFFAcSIcWnMs)
@@ -6,28 +7,28 @@
 
 ## 子页面目录
 
-这份文档旨在让开发者在五分之内体验上 ChatGLM3-6B 模型
+这份文档旨在让开发者在五分之内体验上 `ChatGLM3-6B` 模型
 
 ## 免安装在线尝鲜
 
 你将有三种办法免费，无需安装的尝鲜我们的模型，他们分别是：
 
-+   [魔搭社区 · 创空间](https://modelscope.cn/studios/ZhipuAI/chatglm3-6b-demo/summary)（实现对话功能）
++ [魔搭社区 · 创空间](https://modelscope.cn/studios/ZhipuAI/chatglm3-6b-demo/summary)（实现对话功能）
 
-+   使用 SwanHub 提供的在线模型体验
++ 使用 SwanHub 提供的在线模型体验
 
-+   使用Python 远程访问 Huggingface 体验，以下代码是一种最简单的执行方案，可以直接用来检验模型是否正常。该代码无需下载模型，使用的为Huggingface的联网模型。
++ 使用 Python 远程访问 Huggingface 体验，以下代码是一种最简单的执行方案，可以直接用来检验模型是否正常。该代码无需下载模型，使用的为 Huggingface 的联网模型。
 
 ```
-&gt;&gt;&gt; from transformers import AutoTokenizer, AutoModel
-&gt;&gt;&gt; tokenizer = AutoTokenizer.from_pretrained(&quot;THUDM/chatglm3-6b&quot;, trust_remote_code=True)
-&gt;&gt;&gt; model = AutoModel.from_pretrained(&quot;THUDM/chatglm3-6b&quot;, trust_remote_code=True, device=&#x27;cuda&#x27;)
-&gt;&gt;&gt; model = model.eval()
-&gt;&gt;&gt; response, history = model.chat(tokenizer, &quot;你好&quot;, history=[])
-&gt;&gt;&gt; print(response)
+>>> from transformers import AutoTokenizer, AutoModel
+>>> tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True)
+>>> model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True, device='cuda')
+>>> model = model.eval()
+>>> response, history = model.chat(tokenizer, "你好", history=[])
+>>> print(response)
 你好👋!我是人工智能助手 ChatGLM3-6B,很高兴见到你,欢迎问我任何问题。
-&gt;&gt;&gt; response, history = model.chat(tokenizer, &quot;晚上睡不着应该怎么办&quot;, history=history)
-&gt;&gt;&gt; print(response)
+>>> response, history = model.chat(tokenizer, "晚上睡不着应该怎么办", history=history)
+>>> print(response)
 晚上睡不着可能会让你感到焦虑或不舒服,但以下是一些可以帮助你入睡的方法:
 
 1. 制定规律的睡眠时间表:保持规律的睡眠时间表可以帮助你建立健康的睡眠习惯,使你更容易入睡。尽量在每天的相同时间上床,并在同一时间起床。
@@ -40,23 +41,23 @@
 如果这些方法无法帮助你入睡,你可以考虑咨询医生或睡眠专家,寻求进一步的建议。
 ```
 
-如果你已经下载了模型，以上方案也可以使用本地模型加载，我们强烈建议在使用本地模型加载的时候使用绝对路径，以防止系统寻找huggingface缓存。
+如果你已经下载了模型，以上方案也可以使用本地模型加载，我们强烈建议在使用本地模型加载的时候使用绝对路径，以防止系统寻找 huggingface 缓存。
 
-例如，如果你的模型位于/home/ubuntu/chatglm3-6b中，则我们建议这么书写：
+例如，如果你的模型位于 `/home/ubuntu/chatglm3-6b` 中，则我们建议这么书写：
 
 ```
-&gt;&gt;&gt; tokenizer = AutoTokenizer.from_pretrained(&quot;/home/ubuntu/chatglm3-6b&quot;, trust_remote_code=True)
-&gt;&gt;&gt; model = AutoModel.from_pretrained(&quot;/home/ubuntu/chatglm3-6b&quot;, trust_remote_code=True, device=&#x27;cuda&#x27;)
+>>> tokenizer = AutoTokenizer.from_pretrained("/home/ubuntu/chatglm3-6b", trust_remote_code=True)
+>>> model = AutoModel.from_pretrained("/home/ubuntu/chatglm3-6b", trust_remote_code=True, device='cuda')
 ```
 
 ## 懒人包安装
 
-如果你使用的操作系统为 [Windo](https://www.bilibili.com/video/BV1c34y1w75K/?vd_source=c083324a69ff411499cf1b5f539eaac7)ws10 / Windows11 你可以在以下链接直接下载一键安装包和观看手把手教程。
+如果你使用的操作系统为 [Windows10](https://www.bilibili.com/video/BV1c34y1w75K/?vd_source=c083324a69ff411499cf1b5f539eaac7) / `Windows11` 你可以在以下链接直接下载一键安装包和观看手把手教程。
 
 ```
-&quot;&quot;&quot;
+"""
 以下懒人包和教程由 非官方开发者 十字鱼 友情提供
-&quot;&quot;&quot;
+"""
 百度网盘链接：https://pan.baidu.com/s/1fHElFanrdK9Y-pTpeY_azg
 提取码：glut
 ```
@@ -69,13 +70,13 @@
 
 模型基础运行代码已经上传到 github 和 SwanHub 两个平台，两个平台的信息同步。开发者通过以下方式下载模型代码。
 
-+   从 github 下载源码
++ 从 github 下载源码
 
 ```
 git clone https://github.com/THUDM/ChatGLM3.git
 ```
 
-+   从 SwanHub 下载源码
++ 从 SwanHub 下载源码
 
 ```
 git clone https://swanhub.co/ZhipuAI/ChatGLM3.git
@@ -83,25 +84,25 @@ git clone https://swanhub.co/ZhipuAI/ChatGLM3.git
 
 开发者可以通过以下方式下载模型文件
 
-+   [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保`git lfs`命令已安装，安装教程请参考这里。
++ [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保 `git lfs` 命令已安装，安装教程请参考这里。
 
-+   模型文件已上传至 Huggingface, Modelsope ,  SwanHub  三个平台，用户可以快速安装模型。
++ 模型文件已上传至 Huggingface、Modelscope、SwanHub 三个平台，用户可以快速安装模型。
 
-+   若使用 Huggingface 下载模型
++ 若使用 Huggingface 下载模型
 
 ```
 git lfs install
 git clone https://huggingface.co/THUDM/chatglm3-6b.git
 ```
 
-+   若使用 Modelscope 下载模型
++ 若使用 Modelscope 下载模型
 
 ```
 git lfs install
 git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b.git
 ```
 
-+   若使用 SwanHub 下载模型
++ 若使用 SwanHub 下载模型
 
 ```
 git lfs install
@@ -110,7 +111,7 @@ git clone https://swanhub.co/ZhipuAI/chatglm3-6b.git
 
 ### 检查文件的完整性
 
-+   用户在下载完模型后请检查每个文件的完整性，以下是模型文件的sha256校验码。
++ 用户在下载完模型后请检查每个文件的完整性，以下是模型文件的 `sha256` 校验码。
 
 ```
 # sha256 checksums for chatglm3-6b
@@ -127,7 +128,7 @@ e7dc4c393423b76e4373e5157ddc34803a0189ba96b21ddbb40269d31468a6f2  tokenizer.mode
 39aeddd81596b2d66d657687a7328ebc7f8850e8ea83fa74080da59f7d2f7afc  pytorch_model-00001-of-00007.bin
 2525475ea2d483ecc15a15ad4e016ee0155e628ac66f15cd54daa6c811193e92  pytorch_model-00002-of-00007.bin
 faa1d884168a125af5105c4ee4c59fdac79f847b35a7389e0122a562995d34db  pytorch_model-00003-of-00007.bin
-66492c02ed13189202c7e46a121e308cf0ebbcf8141ecf3d551141aecfac7120  pytorch_model-00004-of-00007.bin
+66492c02ed131189202c7e46a121e308cf0ebbcf8141ecf3d551141aecfac7120  pytorch_model-00004-of-00007.bin
 870bb2bb4a289b8ab37cce88f56e93381ff428063b3d0065994a3dd2e830cb32  pytorch_model-00005-of-00007.bin
 a5f39ca17ba89e47e484d3b20d4ff78f4fb9b1b24bd3dfb314eff91ff6e37230  pytorch_model-00006-of-00007.bin
 7c8a8f3e881202ac3a9ab2638ce30147f67d4bd799624c24af66406a6ba22db2  pytorch_model-00007-of-00007.bin
@@ -146,16 +147,14 @@ e7dc4c393423b76e4373e5157ddc34803a0189ba96b21ddbb40269d31468a6f2  tokenizer.mode
 
 ### 安装依赖
 
-使用 pip 安装依赖：
+使用 `pip` 安装依赖：
 
 ```
 cd ChatGLM3 
 pip install -r requirements.txt
 ```
 
-[环境配置和检查](https://lslfd0slxc.feishu.cn/wiki/OwCDwJkKbidEL8kpfhPcTGHcnVc)果你担心你的配置不满足最低配置，你可以访问 获取更多信息。
-
-的
+[环境配置和检查](https://lslfd0slxc.feishu.cn/wiki/OwCDwJkKbidEL8kpfhPcTGHcnVc) 如果你担心你的配置不满足最低配置，你可以访问 获取更多信息。
 
 ### 运行demo
 
@@ -169,7 +168,7 @@ python basic_demo/cli_demo.py
 
 ![](img/6ca1329dbac11749103670a58d6bc427.png)
 
-使用本地模型加载并使用web_demo来问答
+使用本地模型加载并使用 `web_demo` 来问答
 
 ```
 python basic_demo/web_demo_gradio.py
@@ -179,7 +178,7 @@ python basic_demo/web_demo_gradio.py
 
 ![](img/f110a36d71b20d81f8e3e8aa59d975d9.png)
 
-通过以下命令启动基于 Gradio 的网页版 demo
+通过以下命令启动基于 `Gradio` 的网页版 demo
 
 ```
 python basic_demo/web_demo_streamlit.py
@@ -187,10 +186,10 @@ python basic_demo/web_demo_streamlit.py
 
 ![](img/c607e85e408cc4d85d98e1542c3abd22.png)
 
-通过以下命令启动基于 Streamlit 的网页版 demo：
+通过以下命令启动基于 `Streamlit` 的网页版 demo：
 
 ```
 streamlit run basic_demo/web_demo_streamlit.py
 ```
 
-其效果与Gradio相同，但是更加流畅。
+其效果与 `Gradio` 相同，但是更加流畅。

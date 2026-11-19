@@ -1,29 +1,21 @@
+
 # 第五章：人工智能常用工具——智能体篇
 
 > 来源：[https://datawhaler.feishu.cn/docx/LWfzd2vRdo5EflxXKijcOqd5nsh](https://datawhaler.feishu.cn/docx/LWfzd2vRdo5EflxXKijcOqd5nsh)
-
+>
 > 欢迎大家学习 [**OPEN 1+X AI通识课**](https://www.datawhale.cn/open-ai) 飞书快速迭代版，内容来自全网共建~
-
 >
-
 > 本部分是 **AI通识课-零基础版** 第五章，目标是帮助大家 了解智能体原理，并掌握智能开发的基本思路和相关工具使用。
-
 >
-
 > **核心学习内容包括：**
-
-+   智能体原理简介
-
-+   国内智能体工具介绍与使用
-
-+   智能体设计思路与技巧
-
-+   智能体应用在xx学科领域的具体案例
-
 >
-
-> [**OPEN 1+X AI通识课**](https://www.datawhale.cn/open-ai)** 是国内首个面向高**校各个**学科的人****工**智能通识培养方案，由 Datawhale 和 浙大智海 联合发起。
-
+> + 智能体原理简介
+> + 国内智能体工具介绍与使用
+> + 智能体设计思路与技巧
+> + 智能体应用在xx学科领域的具体案例
+>
+> [**OPEN 1+X AI通识课**](https://www.datawhale.cn/open-ai) 是国内首个面向高校各个学科的人工智能通识培养方案，由 Datawhale 和 浙大智海 联合发起。
+>
 > 更多介绍详见：OPEN 1+X AI通识课官网：https://www.datawhale.cn/open-ai
 
 ## 近期更新

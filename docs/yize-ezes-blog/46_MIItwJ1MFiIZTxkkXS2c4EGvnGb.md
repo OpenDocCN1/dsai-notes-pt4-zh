@@ -1,3 +1,4 @@
+
 # AI 从来没有真正「听过」你说话
 
 > 来源：[https://chatmemo.feishu.cn/docx/YVi4dOqRqo8DK1xMHHpcVTv5n9g](https://chatmemo.feishu.cn/docx/YVi4dOqRqo8DK1xMHHpcVTv5n9g)
@@ -24,9 +25,8 @@
 
 但体验不是一开始就如此自然。OpenAI 在发布 GPT-4o 时的原话是：
 
-+   **在 4o 之前，语音模式需要通过「你说话 →** 语音识别转成文字 → 模型理解文字并生成回复 → 文字转语音念给你听」的旧管线
-
-+   作为主要智能源的 AI，在旧管线中，并不能直接观察语气、说话者人数，也不能输出情感。
++ 在 4o 之前，语音模式需要通过「你说话 → 语音识别转成文字 → 模型理解文字并生成回复 → 文字转语音念给你听」的旧管线
++ 作为主要智能源的 AI，在旧管线中，并不能直接观察语气、说话者人数，也不能输出情感。
 
 ![](img/3063199ab0a1110613b1c51a1cfafb26.png)
 
@@ -36,17 +36,15 @@
 
 不难发现，管线的每一层都可能损耗信息：
 
-+   **语音识别（ASR）**：语气、情绪、停顿节奏、声调变化、环境音、说话人特征全部丢失。你阴阳怪气说了一句话，转成文字后意思变得很平和，模型完全感知不到你的语气
-
-+   **级联错误**：ASR 转录错了，后面所有环节跟着错。一个识别失误逐级放大，没有纠错机会
-
-+   **语音合成（TTS）**：模型只能输出文字，不能输出语气。你所听到的语调，只是 TTS 从字面推断出来的语气
++ **语音识别（ASR）**：语气、情绪、停顿节奏、声调变化、环境音、说话人特征全部丢失。你阴阳怪气说了一句话，转成文字后意思变得很平和，模型完全感知不到你的语气
++ **级联错误**：ASR 转录错了，后面所有环节跟着错。一个识别失误逐级放大，没有纠错机会
++ **语音合成（TTS）**：模型只能输出文字，不能输出语气。你所听到的语调，只是 TTS 从字面推断出来的语气
 
 一个测试，用不同的语气、节奏，说「哎，好的，没问题」，拿同系列的 Qwen3.5 的非全模态模型与 Omni-Plus 全模态模型做直观的对比：
 
 ![](img/56f07e61a8af4bb66e5c34e57a20664f.png)
 
-[TX02_MIC007_20260401_082306_orig.wav](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GIrVbrOCDo0dm7xZgaDczzp4nNg)
+[`TX02_MIC007_20260401_082306_orig.wav`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GIrVbrOCDo0dm7xZgaDczzp4nNg)
 
 ![](img/6641748a17f9d6d6348887ed58498867.png)
 
@@ -74,7 +72,7 @@
 
 ![](img/c1d9ed9267b160e9dbcec886cc5b4cb5.png)
 
-[电商分析.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F5J9bdGWGoowK9x4a20ckfU9nfd)
+[`电商分析.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F5J9bdGWGoowK9x4a20ckfU9nfd)
 
 视频演示：对着数据表口述数据分析要求
 
@@ -98,31 +96,23 @@ Qwen3.5-Omni 是千问最新一代的全模态大模型，支持以下模态的�
 
 ![](img/0080c884b4ac129b32c55c0335fa2919.png)
 
-+   输入：文本、图片、音频、视频理解（视觉能力与 Qwen3.5-Plus 对齐）
-
-+   输出：文本、音频
++ 输入：文本、图片、音频、视频理解（视觉能力与 Qwen3.5-Plus 对齐）
++ 输出：文本、音频
 
 在模型规格方面：
 
-+   **三种尺寸**：Plus、Flash、Light（线上暂无 light 版）
-
-+   **API 版本：**分为 Offline、Realtime 两个版本。离线版支持长音视频文件处理，实时版可进行实时音视频通话
-
-+   **架构**：Thinker-Talker 架构，均采用 Hybrid-Attention MoE
-
-+   **上下文**：支持 256k 长上下文
++ **三种尺寸**：Plus、Flash、Light（线上暂无 light 版）
++ **API 版本：**分为 Offline、Realtime 两个版本。离线版支持长音视频文件处理，实时版可进行实时音视频通话
++ **架构**：Thinker-Talker 架构，均采用 Hybrid-Attention MoE
++ **上下文**：支持 256k 长上下文
 
 核心能力提升明显，主打：
 
-+   **长音视频处理：**目前在线 API 支持 3 小时音频、1 小时视频处理
-
-+   **语音输出：**支持音色克隆，端到端情绪、音量、语速控制
-
-+   **多语种：**113 种语言和方言语音识别，36 种语音生成
-
-+   **语义打断：**区分「真实插话」与「附和 / 背景噪音」，不会被"嗯"一声或咳嗽误触发
-
-+   **实时工具调用：**实时通话时，支持联网搜索 + Function Call，模型自判断是否触发工具
++ **长音视频处理：**目前在线 API 支持 3 小时音频、1 小时视频处理
++ **语音输出：**支持音色克隆，端到端情绪、音量、语速控制
++ **多语种：**113 种语言和方言语音识别，36 种语音生成
++ **语义打断：**区分「真实插话」与「附和 / 背景噪音」，不会被"嗯"一声或咳嗽误触发
++ **实时工具调用：**实时通话时，支持联网搜索 + `Function Call`，模型自判断是否触发工具
 
 > 注：语种、部分参数 Plus 与 Flash 有一定差异
 
@@ -156,11 +146,11 @@ LUI 需要人用文本，相对准确地描述需求，等待 AI 回应。
 
 是不是就能更进一步降低 AI 产品的使用门槛，让更多不熟悉电脑操作、未经精准训练语言表达的用户，体验到 AI 时代的 Vibe 操作便利？
 
-比如，**随便写写画画、指指点点， Qwen3.5-omni-pl**us 更进一步拉低 AI Coding 的难度（左边是对着线框光标指点，右边是最终 Omni 的 Coding 效果。为了测试方便，采用了录屏；实际应用可以直接结合纸笔、手指指点来录像）
+比如，**随便写写画画、指指点点， Qwen3.5-Omni-Plus** 更进一步拉低 AI Coding 的难度（左边是对着线框光标指点，右边是最终 Omni 的 Coding 效果。为了测试方便，采用了录屏；实际应用可以直接结合纸笔、手指指点来录像）
 
 ![](img/7d0daed75f3af8f79f5f76a84d1578e2.png)
 
-[chatdesign.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UT3mbiROdok52ZxpFBkc1ET2nFc)
+[`chatdesign.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UT3mbiROdok52ZxpFBkc1ET2nFc)
 
 ![](img/fdb97e9a0b4ee32ed5f03f47bc9f95f6.png)
 
@@ -178,9 +168,8 @@ LUI 需要人用文本，相对准确地描述需求，等待 AI 回应。
 
 前段时间买了大疆 mic3 ，打算用来记录个人的全天录音。早前设计了两套转录分析方案：
 
-+   一套偏管线：Qwen3-ASR-Flash  转写 + pyannote 说话人分离 + 后置 LLM 分析
-
-+   一套依赖海外全模态模型：Gemini 3 Flash 直接从录音原件总结当天日志
++ 一套偏管线：`Qwen3-ASR-Flash` 转写 + `pyannote` 说话人分离 + 后置 LLM 分析
++ 一套依赖海外全模态模型：Gemini 3 Flash 直接从录音原件总结当天日志
 
 前者优势在于能够建立当天的文字记录，但无法识别声音情绪、背景信息，只能从语义进行推理。
 
@@ -224,13 +213,13 @@ Qwen3.5-Omni 既支持实时语音通话，又支持大量国外语言，还能�
 
 ![](img/9636cd6dea4319f99502a9aee0413b4c.png)
 
-[多语言.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ItJJbWqwNoNBO9x5jfocFGsGnge)
+[`多语言.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ItJJbWqwNoNBO9x5jfocFGsGnge)
 
 而且支持切换不同的音色（别的我也听不懂，但这英音是真英啊🤣）：
 
 ![](img/68a69bc3d3f589027b288aabb816272e.png)
 
-[多音色切换.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TviGbhL1XoZFYFxo6Asc0xc3nVf)
+[`多音色切换.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TviGbhL1XoZFYFxo6Asc0xc3nVf)
 
 每种音色也支持了多国语言，为出海产品提供了更多选择。
 
@@ -246,9 +235,8 @@ Qwen3.5-Omni 既支持实时语音通话，又支持大量国外语言，还能�
 
 ![](img/ae50485914b416f38c5bae3939c16328.png)
 
-+   论设备，手机、车载、眼镜——这些设备的交互本来就不是纯文字的
-
-+   论用户习惯，更多人并不擅长文本准确描述，更习惯口述+简单指点
++ 论设备，手机、车载、眼镜——这些设备的交互本来就不是纯文字的
++ 论用户习惯，更多人并不擅长文本准确描述，更习惯口述+简单指点
 
 当模型能直接处理语气、画面和环境，不需要先想办法把用户的直觉反应“有损翻译”为文本，产品设计的空间就不一样了。
 
@@ -258,13 +246,13 @@ Qwen3.5-Omni 既支持实时语音通话，又支持大量国外语言，还能�
 
 ---
 
-**👉 如果想上手体验？**
+### 👉 如果想上手体验？
 
-+   **普通用户：**请使用 Qwen Chat：https://chat.qwen.ai/
++ **普通用户：**请使用 Qwen Chat：`https://chat.qwen.ai/`
 
 ![](img/f2f3280afb56a8083e8d0944d58866ed.png)
 
-+   **开发者：**可通过阿里百炼 API 调用
++ **开发者：**可通过阿里百炼 API 调用
 
 ```
 【离线】https://help.aliyun.com/zh/model-studio/qwen-omni

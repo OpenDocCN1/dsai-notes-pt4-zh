@@ -1,3 +1,4 @@
+
 # Claude Prompt：红蓝药丸
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/IwZSdMFgSoO1XOxemPfcDbZCned](https://vxc3hj17dym.feishu.cn/docx/IwZSdMFgSoO1XOxemPfcDbZCned)
@@ -7,7 +8,3 @@
 > » 李继刚老师的👸号，推荐关注
 
 > https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
-
-```
-
-```

@@ -1,56 +1,57 @@
+
 # AI写小说-新人选个“好题材”成功33.3%
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/RBcVdAao2otzYQxLe84cTjwDnze](https://rq547mr4oez.feishu.cn/docx/RBcVdAao2otzYQxLe84cTjwDnze)
+> 来源：`https://rq547mr4oez.feishu.cn/docx/RBcVdAao2otzYQxLe84cTjwDnze`
 
 ## 一、前言：
 
 > 乍一看这个标题，似乎有点夸张。为什么好的题材决定这本书成功33.3%？
-
+>
 > 所有生意（网文就是一个生意），最终追求的就是投入产出比。
-
+>
 > 开一本书，其实就相当于创一次业。
-
+>
 > 当然把写文这个行业定义成什么，讨论他是不是创业，不重要。
-
+>
 > 我写下这些，目的只有一个。
-
+>
 > **帮助你做好开一本书的前期准备工作，以**此确保你这本书真的能挣钱，甚至是挣大钱。
 
 ---
 
-**以下是题材类Prompt**
+**以下是题材类`Prompt`**
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整`Prompt`-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整`Prompt`](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“女频耽美文”小说家`Prompt`（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整`Prompt`](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整`Prompt`](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“快穿文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“末世文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  [AI写小说-“知乎短篇”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UvvXwWkC9i6PSfkPIv8cLXxtn2f?from=from_copylink)
+1. [AI写小说-“知乎短篇”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/UvvXwWkC9i6PSfkPIv8cLXxtn2f?from=from_copylink)
 
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家`Prompt`](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
-1.  ......诸天无限、文娱、脑洞、直播、奇幻等等
+1. ......诸天无限、文娱、脑洞、直播、奇幻等等
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -58,176 +59,166 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+PS：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
 **原始出处：**
 
 ![](img/63820ac072f45b9f081efd9a61df0138.png)
 
-##  二、什么是好题材？（内容引用自网络）
+## 二、什么是好题材？（内容引用自网络）
 
 ### 首先，要明确一点，**没有真正意义上的新脑洞。**
 
 > 是的，
-
+>
 > 网文行业已经发展到现在，早就没有了什么全新的点子脑洞。
-
+>
 > 所有的新奇想法已经被前人写过了，甚至到现在已经发展成各类题材了。
-
+>
 > 比如：
-
-+   小白文：盘点短视频，聊天群，悟性逆天，多子多福，
-
-+   老百文：传统玄幻，全民，升级，诸天无限，凡人，巫师。
-
+>
+> +   小白文：盘点短视频，聊天群，悟性逆天，多子多福，
+>
+> +   老百文：传统玄幻，全民，升级，诸天无限，凡人，巫师。
+>
 > 这些都是自成一派的题材。是已经被市场验证过的题材。是读者能够接受的题材。
-
 >
-
 > 这就是赚钱的本质，走老路。
-
+>
 > 新人不赚钱，写的文像是拉出来的一坨屎，这是为什么?
-
+>
 > 是因为自认为自己的这个想法牛逼的批爆，是能让读者眼前一亮，脑洞大开。
-
+>
 > 但其实，从没有所谓的创新。
-
-+   诡秘之主----是依靠塔罗牌，现实职业，克苏鲁为基础，加以乌贼自己的变化。
-
-+   道诡异仙----民俗加克苏鲁。
-
-+   十日终焉---经典密室加逃脱，加以日韩等剧中的各种大逃杀作为副本。
-
-+   大火的天才俱乐部，同样也是从飞卢上薅过来的脑洞。
-
+>
+> +   诡秘之主----是依靠塔罗牌，现实职业，克苏鲁为基础，加以乌贼自己的变化。
+>
+> +   道诡异仙----民俗加克苏鲁。
+>
+> +   十日终焉---经典密室加逃脱，加以日韩等剧中的各种大逃杀作为副本。
+>
+> +   大火的天才俱乐部，同样也是从飞卢上薅过来的脑洞。
+>
 > 这些顶层尚且如此，至于其他的精品天榜百万在读，则更是这样。
-
+>
 > 没有所谓的创新！没有所谓的创新！没有所谓的创新！
-
+>
 > 写文虽然是个创造性的行业，但都是在一个前人所建立的框架中，去进行适当的创新。
-
-> 而不是新人想象中的那种，“哎，我这个点子，是不是厉害的一批，比那个天才俱乐部还要牛逼?”
-
+>
+> 而不是新人想象中的那种，“哎，我这个点子，是不是厉害的一批，比那个天才俱乐部还要牛逼?"
+>
 > 然后新人开始闷着头，吭哧瘪肚的写三天，码出六千字，然后内投被编辑毙掉。
-
+>
 > 或者干脆上番茄飞卢直接签约， 首秀上架扑到欲哭无泪?
-
 >
-
 > 为什么你这本书没人看，不挣钱?
-
-> **是因为你没有意识到：没有所谓的创新。你的**这个想法(脑洞)一定是已经被别人写过了。
-
 >
-
+> **是因为你没有意识到：没有所谓的创新。你的**这个想法(脑洞)一定是已经被别人写过了。
+>
 > 新人：那为什么市面上没有这个脑洞的点子呢?
-
+>
 > **答：很**大概率是你这个看起来不错的想法，其实已经被淘汰更迭掉了，市面上的比这更高级的。也有概率是你这 个想法完全不行，你在市面上找不到，只是因为这个已经被彻底淘汰了，说不定躺在笔趣阁的某个逼仄的角落里吃灰，你要是想找，说不定能找出来好好品一品这坨屎。
-
+>
 > 所以，走先人的路，写那些已经被市场认可的题材流派，再加上一点点的变化，就足以挣到钱了。
 
-### 其次**，****用创业的谨慎心态去开一本书。**
+### 其次，用创业的谨慎心态去开一本书。
 
-> 现在我是个新人，想要进入网文行业捞钱，了解了“没有所谓的创新”,选择了一个方向，那么接下来呢?
-
-> 我该怎么开启第一本书呢，怎么确保这本书必定挣钱呢?
-
+> 现在我是个新人，想要进入网文行业捞钱，了解了“没有所谓的创新",选择了一个方向，那么接下来呢?
 >
-
+> 我该怎么开启第一本书呢，怎么确保这本书必定挣钱呢?
+>
 > 一句话，用创业的思维去开一本书。
-
+>
 > 我来问问你，假如你被公司辞职，并且不想在当打工仔，想要创业，那么首先要干什么?
-
+>
 > 是不是要调查市场行情，了解当地政策， 一个地点的人流量，这个地方的人的购买力足够?
-
+>
 > 这些都是要考虑的点。
-
+>
 > 那么写文，亦是如此。
-
+>
 > **不仅要做大纲做剧情，要确定核心主线，要想着剧情怎么才能更有趣**，要写出三万字或是十万字的剧情大纲...
-
+>
 > 更要去睁眼看看外面，看看市场风向，看看现在市面上写什么有热度，是跟风?还是写稳妥的题材?
-
+>
 > (毫无疑问，对于新人来说，跟风是最好的选择。)
-
+>
 > 我罗列几点：
-
-1.  市场分向，什么题材可以，写起来有热度，什么题材老套，写这个不行。
-
-1.  受众。
-
-1.  老生常谈的网站受众问题，在这里不再多说，说说更加细致的。
-
-1.  像传统的全民这种类型在起点恐怕会扑的很惨，而在番茄就能写。
-
-1.  凡人流和西幻这两个，在番茄写不了，在起点就能写。
-
-1.  看书。
-
-1.  读书百遍，其义自见。
-
-1.  大纲。
-
-1.  大纲没有标准，我的大纲乱的一批，全世界只有我能看懂我写的大纲，但这就足够了。
-
-1.  大纲是把头脑里的想法具象化出来，能够确定后续剧情的走向，百利而无一害。
-
+>
+> 1.  市场分向，什么题材可以，写起来有热度，什么题材老套，写这个不行。
+>
+> 1.  受众。
+>
+> 1.  老生常谈的网站受众问题，在这里不再多说，说说更加细致的。
+>
+> 1.  像传统的全民这种类型在起点恐怕会扑的很惨，而在番茄就能写。
+>
+> 1.  凡人流和西幻这两个，在番茄写不了，在起点就能写。
+>
+> 1.  看书。
+>
+> 1.  读书百遍，其义自见。
+>
+> 1.  大纲。
+>
+> 1.  大纲没有标准，我的大纲乱的一批，全世界只有我能看懂我写的大纲，但这就足够了。
+>
+> 1.  大纲是把头脑里的想法具象化出来，能够确定后续剧情的走向，百利而无一害。
+>
 > 在你已经选择了先人验证过的题材后，用创业的思维去谨慎的开一本书，切记，谨慎，谨慎。
-
+>
 > 前期工作做的越多，积累的越丰富，你这本书的成绩就会越好。
-
+>
 > 相信我，对于这本书，你有越多的(针对性的)知识积累，你的这本书就能写的有多棒。
 
 ### 最后，基础加以变化
 
 > 聊回创业。
-
-> 创业创业，创造性还是要有的，否则你做手机，小米也做手机。
-
-> 可能性能都一样，甚至价格也一样。
-
-> 那人们，为什么要买你的手机而不是买小米呢?
-
-> 就好像，我为什么不看诡秘之主，而要看你这本写的一坨狗屎的克苏鲁文呢?
-
 >
-
+> 创业创业，创造性还是要有的，否则你做手机，小米也做手机。
+>
+> 可能性能都一样，甚至价格也一样。
+>
+> 那人们，为什么要买你的手机而不是买小米呢?
+>
+> 就好像，我为什么不看诡秘之主，而要看你这本写的一坨狗屎的克苏鲁文呢?
+>
 > 上文说到了“没有所谓的创新，只是在前人的框架中变化而已。”
-
+>
 > 读者想看的，就是这点“异于其他人”的创新。
-
+>
 > (没有创新就是在抄袭搬运。)
-
-> 当然你也不能乱创新， 一拍脑门，“哎，我这个点子，是不是厉害的一批，比那个天才俱乐部还要牛逼?”
-
+>
+> 当然你也不能乱创新， 一拍脑门，“哎，我这个点子，是不是厉害的一批，比那个天才俱乐部还要牛逼?"
+>
 > 我的意思是，在基础之下，加以一点点变化。
-
+>
 > **不光是设定，在剧情上同样可以进行创新，**添加一个角色身份，或是加入一段角色关系。
-
+>
 > 基础加以变化，这就足够了。
-
+>
 > (写到这，我想到了一个更好的比喻。)
-
+>
 > 武侠世界，那些题材流派就好像是各个门派，有少林武当之分。
-
+>
 > 大家都是老老实实的加入门派，去写这些已经成体系的题材去挣钱。新人抱着自己凭空冒出来的脑洞，就好比一 个普通老百姓，要在没有任何功法的前提下，登堂入室。
-
+>
 > 野修还得偷个功法取修炼，天才也得先学前人的功法，而你，我的朋友，想靠悟就登上世界之巅?
-
+>
 > 不能说难度很大，只能说纯属作死。
-
+>
 > 那么加入门派之后，学习到这个门派的功法后，怎么出招，什么时候用哪招，用什么姿势来用这招，
-
+>
 > 这个时候，就要体现你的创造性了。
-
+>
 > 不要怕把读者给“创”走，写书都已经写单一题材了，还不创新?那你入这个行业和搬砖有什么区别?
 
 ### 最后总结：
 
 > **想要挣钱，写前人已经写过的题材**
-
+>
 > 用“拿着钱去創业”的谨慎心态去开一本书。
-
+>
 > **最后，基础加以变化。**
-
+>
 > 牢记，牢记。

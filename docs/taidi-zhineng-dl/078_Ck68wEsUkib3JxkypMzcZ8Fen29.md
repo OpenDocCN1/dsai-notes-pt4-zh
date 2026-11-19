@@ -1,3 +1,4 @@
+
 # ChatGPT Papers
 
 > 来源：[https://learning.feishu.cn/docx/BTRYdaNlBotNpSxbz3BcEDFsnnc](https://learning.feishu.cn/docx/BTRYdaNlBotNpSxbz3BcEDFsnnc)
@@ -16,13 +17,13 @@
 | Multimodal Chain-of-Thought Reasoning in Language Models | 2023.02 | Zhuosheng Zhang |  |
 | Sparks of Articial General Intelligence: Early experiments with GPT-4 | 2023-03 |  |  |
 
-GPT3 的相关文章 & 脉络
+## GPT3 的相关文章 & 脉络
 
 gpt-2 和 gpt-3 的引用，都不算高。
 
 ![](img/2140b5041f524fee66e2390e4de650df.png)
 
-GPT 1-3 系列，模型输入是一句话，输出也是一句话。这就是对话模式。输入也叫 prompt。
+GPT 1-3 系列，模型输入是一句话，输出也是一句话。这就是对话模式。输入也叫 `prompt`。
 
 https://mp.weixin.qq.com/s/mYhSFtZZMRv5dDMnYcruJg
 
@@ -36,4 +37,4 @@ AI中经常遇到的挑战之一，就是建立能够进行多步骤推理的系
 
 思维链提示（chain of thought prompting）是一种向模型更好地表达自然语言提示和示例的方法，能够显著提高模型处理新任务的能力。
 
-类似的提示微调（prompt tuning），即在问题领域特定文本的语料库上对大型语言模型进行微调，也显示出了巨大的前景。
+类似的提示微调（`prompt tuning`），即在问题领域特定文本的语料库上对大型语言模型进行微调，也显示出了巨大的前景。

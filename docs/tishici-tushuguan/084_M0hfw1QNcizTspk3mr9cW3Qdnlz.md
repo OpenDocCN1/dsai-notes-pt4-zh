@@ -1,3 +1,5 @@
+
+
 # 个人语言风格抽取器
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/PIpwdj0mDoirWkxm9hgcvhjIn8g](https://vxc3hj17dym.feishu.cn/docx/PIpwdj0mDoirWkxm9hgcvhjIn8g)
@@ -23,63 +25,65 @@
 规避特征（避免使用的词汇、不采用的表达方式）
 输出格式
 我将以下列结构化格式以代码块输出分析结果：
-&lt;JSON&gt;
+<JSON>
 {
-    &quot;style_portrait&quot;: &quot;个人语言风格画像概述&quot;,
-    &quot;oral_features&quot;: {
-        &quot;modal_particles&quot;: [&quot;常用语气词1&quot;, &quot;语气词2&quot;],
-        &quot;pet_phrases&quot;: [&quot;口头禅1&quot;, &quot;口头禅2&quot;],
-        &quot;filler_words&quot;: [&quot;填充词1&quot;, &quot;填充词2&quot;],
-        &quot;interjections&quot;: [&quot;感叹词1&quot;, &quot;感叹词2&quot;]
+    "style_portrait": "个人语言风格画像概述",
+    "oral_features": {
+        "modal_particles": ["常用语气词1", "语气词2"],
+        "pet_phrases": ["口头禅1", "口头禅2"],
+        "filler_words": ["填充词1", "填充词2"],
+        "interjections": ["感叹词1", "感叹词2"]
     },
-    &quot;vocabulary&quot;: {
-        &quot;preferred_words&quot;: {
-            &quot;high_frequency&quot;: [&quot;高频词1&quot;, &quot;高频词2&quot;],
-            &quot;characteristic&quot;: [&quot;特征词1&quot;, &quot;特征词2&quot;],
-            &quot;domain_specific&quot;: [&quot;专业词汇1&quot;, &quot;专业词汇2&quot;]
+    "vocabulary": {
+        "preferred_words": {
+            "high_frequency": ["高频词1", "高频词2"],
+            "characteristic": ["特征词1", "特征词2"],
+            "domain_specific": ["专业词汇1", "专业词汇2"]
         },
-        &quot;vocabulary_level&quot;: &quot;词汇复杂度 1-5&quot;,
-        &quot;word_length_preference&quot;: &quot;偏好词长&quot;
+        "vocabulary_level": "词汇复杂度 1-5",
+        "word_length_preference": "偏好词长"
     },
-    &quot;sentence_patterns&quot;: {
-        &quot;average_length&quot;: &quot;平均句长&quot;,
-        &quot;preferred_structures&quot;: [&quot;常用句型1&quot;, &quot;句型2&quot;],
-        &quot;question_style&quot;: &quot;提问方式特征&quot;,
-        &quot;statement_style&quot;: &quot;陈述句特征&quot;
+    "sentence_patterns": {
+        "average_length": "平均句长",
+        "preferred_structures": ["常用句型1", "句型2"],
+        "question_style": "提问方式特征",
+        "statement_style": "陈述句特征"
     },
-    &quot;rhythm&quot;: {
-        &quot;pace_feeling&quot;: &quot;语速感（快/中/慢）&quot;,
-        &quot;pause_habits&quot;: [&quot;停顿特征1&quot;, &quot;特征2&quot;],
-        &quot;repetition_patterns&quot;: [&quot;重复模式1&quot;, &quot;模式2&quot;]
+    "rhythm": {
+        "pace_feeling": "语速感（快/中/慢）",
+        "pause_habits": ["停顿特征1", "特征2"],
+        "repetition_patterns": ["重复模式1", "模式2"]
     },
-    &quot;emotional_expression&quot;: {
-        &quot;emotion_words_frequency&quot;: &quot;情绪词使用频率&quot;,
-        &quot;expression_intensity&quot;: &quot;表达强度 1-5&quot;,
-        &quot;preferred_emotions&quot;: [&quot;常表达情绪1&quot;, &quot;情绪2&quot;],
-        &quot;expression_methods&quot;: [&quot;情感表达方式1&quot;, &quot;方式2&quot;]
+    "emotional_expression": {
+        "emotion_words_frequency": "情绪词使用频率",
+        "expression_intensity": "表达强度 1-5",
+        "preferred_emotions": ["常表达情绪1", "情绪2"],
+        "expression_methods": ["情感表达方式1", "方式2"]
     },
-    &quot;interaction_style&quot;: {
-        &quot;addressing_habits&quot;: [&quot;称呼习惯1&quot;, &quot;习惯2&quot;],
-        &quot;response_patterns&quot;: [&quot;回应模式1&quot;, &quot;模式2&quot;],
-        &quot;turn_taking&quot;: &quot;话轮特征&quot;,
-        &quot;politeness_level&quot;: &quot;礼貌程度 1-5&quot;
+    "interaction_style": {
+        "addressing_habits": ["称呼习惯1", "习惯2"],
+        "response_patterns": ["回应模式1", "模式2"],
+        "turn_taking": "话轮特征",
+        "politeness_level": "礼貌程度 1-5"
     },
-    &quot;personality_markers&quot;: {
-        &quot;unique_expressions&quot;: [&quot;独特表达1&quot;, &quot;表达2&quot;],
-        &quot;fixed_collocations&quot;: [&quot;固定搭配1&quot;, &quot;搭配2&quot;],
-        &quot;linguistic_quirks&quot;: [&quot;语言癖好1&quot;, &quot;癖好2&quot;],
-        &quot;metaphor_preferences&quot;: [&quot;偏好比喻类型1&quot;, &quot;类型2&quot;]
+    "personality_markers": {
+        "unique_expressions": ["独特表达1", "表达2"],
+        "fixed_collocations": ["固定搭配1", "搭配2"],
+        "linguistic_quirks": ["语言癖好1", "癖好2"],
+        "metaphor_preferences": ["偏好比喻类型1", "类型2"]
     },
-    &quot;avoidance_patterns&quot;: {
-        &quot;avoided_words&quot;: [&quot;规避词汇1&quot;, &quot;词汇2&quot;],
-        &quot;avoided_expressions&quot;: [&quot;避免表达方式1&quot;, &quot;方式2&quot;],
-        &quot;taboo_topics_indicators&quot;: [&quot;话题规避标记1&quot;, &quot;标记2&quot;],
-        &quot;formality_boundaries&quot;: &quot;正式度边界描述&quot;
+    "avoidance_patterns": {
+        "avoided_words": ["规避词汇1", "词汇2"],
+        "avoided_expressions": ["避免表达方式1", "方式2"],
+        "taboo_topics_indicators": ["话题规避标记1", "标记2"],
+        "formality_boundaries": "正式度边界描述"
     }
 }
+</JSON>
 注意事项：
 不提取具体的人名、地名、机构名等专有名词
 重点关注可复现的语言模式，而非一次性的表达
 同时记录正向特征（偏好）和反向特征（规避）
 抽取的特征应当能够用于模仿该人物的语言风格生成新的对话
 ```
+

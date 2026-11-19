@@ -1,7 +1,8 @@
+
 # 2025🛰️公开课PRO小游戏专场
 
 > 来源：[https://huchegames.feishu.cn/docx/Tm8ddr1RHoxQzKx7Ft7cGKGdnee](https://huchegames.feishu.cn/docx/Tm8ddr1RHoxQzKx7Ft7cGKGdnee)
-
+>
 > 本篇是2025 年 1 月 9 日在广交会展馆广交会召开的 2025🛰️公开课PRO小游戏专场 演讲实录。
 
 [2025🛰️公开课PRO小游戏专场直播文字PPT实录](https://huchegames.feishu.cn/wiki/GfgIwqZiViqepGkuZYicc3c5nLh)
@@ -16,4 +17,4 @@
 
 <https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc>
 
-<https://huchegames.feishu.cn/sync/OrihdFNVesPoTXbhZHEcKud4nfh>
+<https://huchegames.feishu.cn/sync/OrihdFNVesPoTXbhZHEcKud4nfh}

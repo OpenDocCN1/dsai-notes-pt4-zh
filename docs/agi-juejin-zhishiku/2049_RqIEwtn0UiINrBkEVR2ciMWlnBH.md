@@ -1,8 +1,7 @@
-# 10.30-刚刚，最佳VLA模型GigaBrain-0开源：世界模型驱动10倍数据，真机碾压SOTA
-
-> 来源：[https://agijuejin.feishu.cn/docx/ChufdEFREoUi51xC21McW78zn4b](https://agijuejin.feishu.cn/docx/ChufdEFREoUi51xC21McW78zn4b)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 30 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/ChufdEFREoUi51xC21McW78zn4b](https://agijuejin.feishu.cn/docx/ChufdEFREoUi51xC21McW78zn4b)
 
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 
@@ -64,13 +63,11 @@ OpenAI完成重大重组，非营利母体更名OpenAI基金会，持有26%股�
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KD242CGG0511ABV6.html?spss=dy_author)
 
-
 OpenAI完成5千亿股改，非营利机构OpenAI基金会握1300亿美元股权，占营利部门26%，奥特曼无股权。直播介绍新架构等重要内容，提出诸多目标，如2028年3月前研发自动化AI研究员、每周创造1吉瓦算力；还分享AI对科研的影响、应对伦理审查方向，以及平台战略、基建计划等，并承诺降低成本，让智能成共享资源 。
 
 ### 💡 史上最惨一代？AI延长人类寿命，下一代活到200岁不是梦！
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KD1NLNG90511ABV6.html?spss=dy_author)
-
 
 AI 新闻老将 Matt Wolfe 直击美国 AI 核心，探讨巨头发展策略、AGI 等。各巨头在速度与安全上权衡不同，谷歌谨慎，微软激进。能源或成 AI 发展瓶颈。目前 AI 「自我改进」多为猜测，但递归改进已现端倪，还可能创造「黑箱语言」。Matt 认为孩子有 75%概率活到 200 岁，AI 推动生物医学突破，未来机器人或普及，社会走向存两种可能 。
 

@@ -1,20 +1,15 @@
+
 # Claude Code Plugins生态完整指南：从安装到自定义开发
 
 > 来源：[https://my.feishu.cn/docx/RJvQdeHS7oeaRaxCgcrcVmCAnLh](https://my.feishu.cn/docx/RJvQdeHS7oeaRaxCgcrcVmCAnLh)
 
-# Claude Code Plugins生态完整指南：从安装到自定义开发
-
 > **课程信息**
-
-+   **作者**：老金
-
-+   **预计学时**：4-6小时
-
-+   **难度等级**：⭐⭐ 入门级
-
-+   **更新日期**：2026年3月
-
-+   **适用版本**：Claude Code v2.1.69+（验证于2026-03-18）
+>
+> + **作者**：老金
+> + **预计学时**：4-6小时
+> + **难度等级**：⭐⭐ 入门级
+> + **更新日期**：2026年3月
+> + **适用版本**：Claude Code v2.1.69+（验证于2026-03-18）
 
 ---
 
@@ -22,17 +17,12 @@
 
 完成本课学习后，你将能够：
 
-1.  **理解Plugin生态**：掌握Plugin与Commands/Skills/MCP的区别
-
-1.  **安装和使用Plugin**：通过 --plugin-dir 加载本地Plugin
-
-1.  **浏览Marketplace**：在官方网页Marketplace发现优质Plugin
-
-1.  **创建自定义Plugin**：从零开发一个完整的Plugin包
-
-1.  **发布Plugin**：将Plugin分享到GitHub和社区
-
-1.  **排查Plugin问题**：独立解决90%的常见故障
+1. **理解Plugin生态**：掌握`Plugin`与`Commands`/`Skills`/`MCP`的区别
+1. **安装和使用Plugin**：通过 `--plugin-dir` 加载本地Plugin
+1. **浏览Marketplace**：在官方网页Marketplace发现优质Plugin
+1. **创建自定义Plugin**：从零开发一个完整的Plugin包
+1. **发布Plugin**：将Plugin分享到GitHub和社区
+1. **排查Plugin问题**：独立解决90%的常见故障
 
 ---
 
@@ -79,13 +69,20 @@
 ## 术语表（小白必读）
 
 | 术语 | 英文 | 解释 |
+
 | --- | --- | --- |
-| **Plugin** | Plugin | Claude Code的扩展包，可包含Commands+Skills+Hooks+MCP配置 |
-| **Marketplace** | Marketplace | Plugin商店，浏览和发现Plugin的网页平台 |
-| .claude-plugin/plugin.json | - | Plugin的元数据清单文件，位于 .claude-plugin/ 子目录中 |
-| **--plugin-dir** | - | Claude Code启动参数，指定加载Plugin的目录路径 |
-| **Skill** | Skill | Plugin中的核心能力模块（SKILL.md定义） |
-| **Hook** | Hook | Plugin中的自动化触发器（如代码提交前检查） |
+
+| `Plugin` | Plugin | Claude Code的扩展包，可包含`Commands`+`Skills`+`Hooks`+`MCP`配置 |
+
+| `Marketplace` | Marketplace | Plugin商店，浏览和发现Plugin的网页平台 |
+
+| `.claude-plugin/plugin.json` | - | Plugin的元数据清单文件，位于 `.claude-plugin/` 子目录中 |
+
+| `--plugin-dir` | - | Claude Code启动参数，指定加载Plugin的目录路径 |
+
+| `Skill` | Skill | Plugin中的核心能力模块（`SKILL.md`定义） |
+
+| `Hook` | Hook | Plugin中的自动化触发器（如代码提交前检查） |
 
 ---
 
@@ -95,7 +92,7 @@
 
 **定义**：
 
-Plugin是Claude Code的扩展包，可以添加新的命令、专业能力和自动化流程，且可以跨项目和团队共享。
+`Plugin`是Claude Code的扩展包，可以添加新的命令、专业能力和自动化流程，且可以跨项目和团队共享。
 
 **类比理解**：
 
@@ -105,30 +102,33 @@ Plugin是Claude Code的扩展包，可以添加新的命令、专业能力和自
 操作系统(iOS/Android) | Claude Code核心
 App Store        | Plugin Marketplace（网页）
 安装的APP        | 已安装的Plugins
-APP更新          | Plugin手动更新（git pull）
+APP更新          | Plugin手动更新（`git pull`）
 ```
 
 **核心价值**：
 
-1.  **可复用性**：一次开发，多个项目使用
-
-1.  **易分享性**：通过GitHub一键克隆
-
-1.  **模块化**：每个Plugin专注一个领域
-
-1.  **社区驱动**：社区持续贡献优质Plugin
+1. **可复用性**：一次开发，多个项目使用
+1. **易分享性**：通过GitHub一键克隆
+1. **模块化**：每个`Plugin`专注一个领域
+1. **社区驱动**：社区持续贡献优质`Plugin`
 
 ### 1.2 Plugins vs Commands/Skills/MCP
 
-| 维度 | Commands | Skills | MCP | **Plugins** |
-| --- | --- | --- | --- | --- |
-| **定义** | Markdown提示词 | 专业Agent能力 | 外部服务集成 | **打包的扩展** |
-| **位置** | .claude/commands/ | .claude/skills/ | .mcp.json | **本地目录** |
-| **可分享性** | ❌ 手动复制 | ❌ 手动复制 | ⚠️ 需配置 | **✅ git clone** |
-| **包含内容** | 单个提示词 | 多个文件+配置 | 服务器配置 | Commands+Skills+MCP |
-| **加载方式** | 自动（在项目目录中） | 自动（在项目目录中） | 自动（配置后） | **--plugin-dir** |
+| 维度 | `Commands` | `Skills` | `MCP` | `Plugins` |
 
-**关键区别**：Plugin是一个"超集"概念：
+| --- | --- | --- | --- | --- |
+
+| **定义** | Markdown提示词 | 专业Agent能力 | 外部服务集成 | **打包的扩展** |
+
+| **位置** | `.claude/commands/` | `.claude/skills/` | `.mcp.json` | **本地目录** |
+
+| **可分享性** | ❌ 手动复制 | ❌ 手动复制 | ⚠️ 需配置 | **✅ `git clone`** |
+
+| **包含内容** | 单个提示词 | 多个文件+配置 | 服务器配置 | `Commands`+`Skills`+`MCP` |
+
+| **加载方式** | 自动（在项目目录中） | 自动（在项目目录中） | 自动（配置后） | **`--plugin-dir`** |
+
+**关键区别**：`Plugin`是一个"超集"概念：
 
 ```
 Plugin = Commands + Skills + Hooks + MCP配置 + 文档
@@ -138,33 +138,28 @@ Plugin = Commands + Skills + Hooks + MCP配置 + 文档
 
 **官方数据**：
 
-+   **当前版本**：Claude Code v2.1.52（2026年2月验证）
-
-+   **官方Marketplace**：✅ 已上线（code.claude.com/plugins）— 网页浏览
-
-+   **社区Plugin**：持续增长中
++ **当前版本**：Claude Code v2.1.52（2026年2月验证）
++ **官方Marketplace**：✅ 已上线（`code.claude.com/plugins`）— 网页浏览
++ **社区Plugin**：持续增长中
 
 **主流Plugin来源**：
 
-1.  Anthropic官方Marketplace：
+1. Anthropic官方Marketplace：
 
-+   URL：https://code.claude.com/plugins
++ URL：`https://code.claude.com/plugins`
++ 特点：审核严格，质量保证，网页浏览
 
-+   特点：审核严格，质量保证，网页浏览
+1. Jeremy Longshore社区合集：
 
-1.  Jeremy Longshore社区合集：
++ URL：`https://github.com/jeremylongshore/claude-code-plugins-plus`
++ 特点：100%符合Anthropic Skills Schema
 
-+   URL：https://github.com/jeremylongshore/claude-code-plugins-plus
+1. **GitHub搜索**：
 
-+   特点：100%符合Anthropic Skills Schema
++ 搜索关键词：`claude-code-plugin`
++ 特点：最丰富的来源，质量参差不齐
 
-1.  **GitHub搜索**：
-
-+   搜索关键词：claude-code-plugin
-
-+   特点：最丰富的来源，质量参差不齐
-
-> ⚠️ **重要说明**：Claude Code 没有 claude plugins 这样的CLI子命令。Plugin的安装有两种方式：(1) 在交互模式中使用 /plugin install 斜杠命令；(2) 手动 git clone + --plugin-dir 指定目录。
+> ⚠️ **重要说明**：Claude Code 没有 `claude plugins` 这样的CLI子命令。`Plugin`的安装有两种方式：(1) 在交互模式中使用 `/plugin install` 斜杠命令；(2) 手动 `git clone` + `--plugin-dir` 指定目录。
 
 ---
 
@@ -172,7 +167,7 @@ Plugin = Commands + Skills + Hooks + MCP配置 + 文档
 
 ### 2.1 安装你的第一个Plugin
 
-**目标**：从GitHub克隆一个Plugin并加载使用
+**目标**：从GitHub克隆一个`Plugin`并加载使用
 
 **前置条件检查**：
 
@@ -195,16 +190,16 @@ mkdir -p .claude/plugins
 git clone https://github.com/jeremylongshore/claude-code-plugins-plus .claude/plugins/plugins-plus
 ```
 
-**步骤2：使用 ****--plugin-dir**** 加载Plugin**
+**步骤2：使用 `--plugin-dir` 加载Plugin**
 
 ```
 # 启动Claude Code时指定Plugin目录
 claude --plugin-dir .claude/plugins/plugins-plus
 ```
 
-Claude Code 会自动扫描该目录下的 .claude-plugin/plugin.json，加载其中定义的 Commands、Skills、Hooks。
+Claude Code 会自动扫描该目录下的 `.claude-plugin/plugin.json`，加载其中定义的 `Commands`、`Skills`、`Hooks`。
 
-> 💡 开**发小技巧：**开发Plugin时修改了文件，可以在交互模式中使用 /reload-plugins 重新加载，无需重启 Claude Code。
+> 💡 开发小技巧：开发`Plugin`时修改了文件，可以在交互模式中使用 `/reload-plugins` 重新加载，无需重启 `Claude Code`。
 
 **步骤3：验证Plugin已加载**
 
@@ -226,13 +221,13 @@ claude --plugin-dir ./plugin-a --plugin-dir ./plugin-b
 
 ### 2.2 卸载Plugin
 
-Plugin就是本地目录，删除即可：
+`Plugin`就是本地目录，删除即可：
 
 ```
 # 删除Plugin目录
 rm -rf .claude/plugins/plugins-plus
 
-# 下次启动不带 --plugin-dir 参数即可
+# 下次启动不带 `--plugin-dir` 参数即可
 ```
 
 ---
@@ -241,20 +236,25 @@ rm -rf .claude/plugins/plugins-plus
 
 ### 3.1 浏览Marketplace
 
-> ⚠️ **注意**：Marketplace 是**网页平台**，不是CLI命令。
+> ⚠️ **注意**：`Marketplace` 是**网页平台**，不是CLI命令。
 
 **访问方式**：
 
-打开浏览器访问 https://code.claude.com/plugins
+打开浏览器访问 `https://code.claude.com/plugins`
 
 **Marketplace功能**：
 
 | 功能 | 说明 |
+
 | --- | --- |
+
 | **分类浏览** | 按用途分类：文档处理、代码质量、项目管理等 |
-| **搜索** | 按关键词搜索Plugin |
-| **详情页** | 查看Plugin说明、安装量、评分、源码链接 |
-| **安装指引** | 每个Plugin页面提供安装命令（git clone） |
+
+| **搜索** | 按关键词搜索`Plugin` |
+
+| **详情页** | 查看`Plugin`说明、安装量、评分、源码链接 |
+
+| **安装指引** | 每个`Plugin`页面提供安装命令（`git clone`） |
 
 ### 3.2 安装Plugin的方式
 
@@ -275,7 +275,7 @@ claude --plugin-dir .claude/plugins/my-plugin
 claude --plugin-dir /path/to/my-local-plugin
 ```
 
-方式3：指定当前目录（Plugin项目本身）
+方式3：指定当前目录（`Plugin`项目本身）
 
 ```
 # 在Plugin项目根目录中
@@ -284,17 +284,17 @@ claude --plugin-dir .
 
 ### 3.3 管理已安装Plugins
 
-由于Plugin就是本地目录，管理操作都是标准文件/git操作：
+由于`Plugin`就是本地目录，管理操作都是标准文件/git操作：
 
 ```
 # 查看已安装的Plugins
 ls .claude/plugins/
 
 # 更新Plugin（git pull最新版本）
-cd .claude/plugins/my-plugin &amp;&amp; git pull
+cd .claude/plugins/my-plugin && git pull
 
 # 切换Plugin版本
-cd .claude/plugins/my-plugin &amp;&amp; git checkout v1.2.0
+cd .claude/plugins/my-plugin && git checkout v1.2.0
 
 # 查看Plugin信息
 cat .claude/plugins/my-plugin/.claude-plugin/plugin.json
@@ -302,14 +302,14 @@ cat .claude/plugins/my-plugin/.claude-plugin/plugin.json
 
 ### 3.4 Plugin配置
 
-部分Plugin支持自定义配置。查看Plugin的 .claude-plugin/plugin.json：
+部分`Plugin`支持自定义配置。查看`Plugin`的 `.claude-plugin/plugin.json`：
 
 ```
 # 查看Plugin元数据
 cat .claude/plugins/my-plugin/.claude-plugin/plugin.json
 ```
 
-配置方式取决于Plugin的实现——通常在Plugin目录下创建配置文件。具体请参考每个Plugin的README。
+配置方式取决于`Plugin`的实现——通常在`Plugin`目录下创建配置文件。具体请参考每个`Plugin`的README。
 
 ---
 
@@ -336,18 +336,18 @@ my-plugin/
     └── pre-commit.py
 ```
 
-.claude-plugin/plugin.json 规范：
+`.claude-plugin/plugin.json` 规范：
 
 ```
 {
-  &quot;name&quot;: &quot;my-awesome-plugin&quot;,
-  &quot;description&quot;: &quot;A plugin that does awesome things&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;author&quot;: &quot;Your Name&quot;
+  "name": "my-awesome-plugin",
+  "description": "A plugin that does awesome things",
+  "version": "1.0.0",
+  "author": "Your Name"
 }
 ```
 
-> 💡 注**意：**plugin.json 必须放在 .claude-plugin/ 子目录中，不是Plugin根目录。官方规范只要求 name、description、version、author 四个核心字段。
+> 💡 注意：`plugin.json` 必须放在 `.claude-plugin/` 子目录中，不是`Plugin`根目录。官方规范只要求 `name`、`description`、`version`、`author` 四个核心字段。
 
 ### 4.2 创建第一个Plugin：Hello World
 
@@ -359,20 +359,20 @@ mkdir -p hello-world-plugin/commands
 cd hello-world-plugin
 ```
 
-步骤2：创建 .claude-plugin/plugin.json
+**步骤2：创建 `.claude-plugin/plugin.json`**
 
 ```
 {
-  &quot;name&quot;: &quot;hello-world-plugin&quot;,
-  &quot;description&quot;: &quot;A simple hello world plugin for learning&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;author&quot;: &quot;Claude Student&quot;
+  "name": "hello-world-plugin",
+  "description": "A simple hello world plugin for learning",
+  "version": "1.0.0",
+  "author": "Claude Student"
 }
 ```
 
 **步骤3：创建自定义命令**
 
-创建 commands/hello.md：
+创建 `commands/hello.md`：
 
 ```
 # Hello World
@@ -381,26 +381,27 @@ Say hello to the user in a creative and fun way.
 Include the current date and a random programming joke.
 ```
 
-步骤4：创建 README.md
+**步骤4：创建 `README.md`**
 
-```
+创建 `README.md` 文件，添加以下内容：
+
 # Hello World Plugin
 
 A simple plugin that adds a `/hello` command to Claude Code.
 
 ## Installation
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourname/hello-world-plugin
 claude --plugin-dir ./hello-world-plugin
-\`\`\`
+```
 
 ## Usage
 
 In Claude Code interactive mode:
-\`\`\`
+```
 You: /hello
-\`\`\`
+```
 
 ## Features
 
@@ -421,7 +422,7 @@ You: /hello
 
 ### 4.3 进阶Plugin：带Skills的Plugin
 
-**目标**：创建一个包含Skill的Plugin，让Claude具备代码审查能力
+**目标**：创建一个包含`Skill`的`Plugin`，让Claude具备代码审查能力
 
 **目录结构**：
 
@@ -437,29 +438,18 @@ code-review-plugin/
         └── SKILL.md
 ```
 
-skills/code-reviewer/SKILL.md：
+`skills/code-reviewer/SKILL.md`：
+
+
 
 ```
 ---
 name: code-reviewer
 description: Expert code review skill
 ---
-
-You are an expert code reviewer. When reviewing code:
-
-1. Check for security vulnerabilities (SQL injection, XSS, etc.)
-2. Identify performance bottlenecks
-3. Suggest improvements for readability
-4. Verify error handling completeness
-5. Check naming conventions consistency
-
-Output format:
-- 🔴 CRITICAL: Must fix before merge
-- 🟡 WARNING: Should fix
-- 🟢 INFO: Nice to have
 ```
 
-commands/review.md：
+`commands/review.md`：
 
 ```
 Review the current git diff and provide a detailed code review.
@@ -467,7 +457,7 @@ Use the code-reviewer skill for analysis.
 Focus on security, performance, and maintainability.
 ```
 
-**测试**：
+测试：
 
 ```
 claude --plugin-dir ./code-review-plugin
@@ -476,17 +466,15 @@ You: /review
 # Claude会使用code-reviewer Skill分析你的代码变更
 ```
 
-### 4.4 Plugin最佳实践
+## Plugin最佳实践
 
 | 原则 | 说明 |
 | --- | --- |
-| **单一职责** | 每个Plugin专注一个领域（代码审查、文档生成等） |
-| **清晰文档** | README必须包含安装步骤、使用示例、配置说明 |
-| **版本管理** | 使用语义化版本号（SemVer），打git tag |
-| **最小依赖** | 尽量减少外部依赖，保持Plugin轻量 |
-| **安全第一** | 不在Plugin中硬编码密钥，使用环境变量 |
-
----
+| 单一职责 | 每个Plugin专注一个领域（代码审查、文档生成等） |
+| 清晰文档 | README必须包含安装步骤、使用示例、配置说明 |
+| 版本管理 | 使用语义化版本号（SemVer），打git tag |
+| 最小依赖 | 尽量减少外部依赖，保持Plugin轻量 |
+| 安全第一 | 不在Plugin中硬编码密钥，使用环境变量 |
 
 ## 第5章：发布与分享Plugin
 
@@ -508,7 +496,7 @@ You: /review
 cd my-plugin
 git init
 git add -A
-git commit -m &quot;feat: initial release v1.0.0&quot;
+git commit -m "feat: initial release v1.0.0"
 
 # 创建GitHub仓库并推送
 gh repo create my-plugin --public --source=. --push
@@ -518,43 +506,36 @@ git tag v1.0.0
 git push --tags
 ```
 
-**推荐的GitHub仓库设置**：
+推荐的GitHub仓库设置：
 
-+   添加 Topics：claude-code-plugin、claude-code、ai-plugin
-
++   添加 Topics：`claude-code-plugin`、`claude-code`、`ai-plugin`
 +   写清楚 Description
-
-+   添加 claude-code-plugin topic 方便社区搜索发现
++   添加 `claude-code-plugin` topic 方便社区搜索发现
 
 ### 5.3 分享到社区
 
-1.  提交到 claude-code-plugins-plus：
+1. 提交到 `claude-code-plugins-plus`：
 
-+   Fork jeremylongshore/claude-code-plugins-plus
-
++   Fork `jeremylongshore/claude-code-plugins-plus`
 +   添加你的Plugin信息
-
 +   提交PR
 
-1.  在GitHub Discussions分享：
+2. 在GitHub Discussions分享：
 
-+   到 anthropics/claude-code 的 Discussions 板块分享
++   到 `anthropics/claude-code` 的 Discussions 板块分享
 
-1.  提交到官方Marketplace：
+3. 提交到官方Marketplace：
 
-+   访问 code.claude.com/plugins 查看提交指南
-
++   访问 `code.claude.com/plugins` 查看提交指南
 +   需要通过官方审核
-
----
 
 ## 第6章：故障排查指南
 
 ### 6.1 Plugin加载失败
 
-**症状**：--plugin-dir 指定后，Plugin的命令/Skills没有生效
+症状：`--plugin-dir` 指定后，Plugin的命令/Skills没有生效
 
-**排查步骤**：
+排查步骤：
 
 ```
 # 1. 确认路径正确
@@ -569,18 +550,18 @@ claude --plugin-dir /path/to/your/plugin --debug
 
 ### 6.2 命令不显示
 
-**可能原因**：
+可能原因：
 
 | 原因 | 解决方案 |
 | --- | --- |
-| commands目录路径错误 | 确认在Plugin根目录下有 commands/ 目录 |
-| 命令文件不是.md格式 | 命令文件必须是 .md 后缀 |
-| .claude-plugin/plugin.json 缺失 | 确认Plugin根目录下有 .claude-plugin/plugin.json |
-| 文件权限问题 | 确认文件可读：chmod 644 commands/*.md |
+| `commands` 目录路径错误 | 确认在Plugin根目录下有 `commands/` 目录 |
+| 命令文件不是 `.md` 格式 | 命令文件必须是 `.md` 后缀 |
+| `.claude-plugin/plugin.json` 缺失 | 确认Plugin根目录下有 `.claude-plugin/plugin.json` |
+| 文件权限问题 | 确认文件可读：`chmod 644 commands/*.md` |
 
 ### 6.3 Skills不生效
 
-**排查**：
+排查：
 
 ```
 # 确认SKILL.md存在且格式正确
@@ -600,21 +581,19 @@ cat /path/to/plugin/skills/my-skill/SKILL.md
 claude --plugin-dir ./plugin-low-priority --plugin-dir ./plugin-high-priority
 ```
 
----
-
 ## 第7章：FAQ（常见问题）
 
 ### Q1：Plugin和Skill有什么区别？
 
-**Skill**** 是单个能力**定义（一个SKILL.md文件），Plugin 是一个完整的扩展包，可以包含多个Skills + Commands + Hooks + MCP配置。Plugin是Skill的超集。
+Skill 是单个能力定义（一个`SKILL.md`文件），Plugin 是一个完整的扩展包，可以包含多个Skills + Commands + Hooks + MCP配置。Plugin是Skill的超集。
 
 ### Q2：有没有 claude plugins install 命令？
 
-Claude Code 没有 claude plugins 这样的CLI子命令，但在交互模式中有 /plugin install 斜杠命令。安装Plugin有两种方式：
+Claude Code 没有 `claude plugins` 这样的CLI子命令，但在交互模式中有 `/plugin install` 斜杠命令。安装Plugin有两种方式：
 
-1.  在交互模式中使用 /plugin install {plugin-name} 安装
+1. 在交互模式中使用 `/plugin install {plugin-name}` 安装
 
-1.  git clone 到本地，启动时用 --plugin-dir 指定路径
+2. git clone 到本地，启动时用 `--plugin-dir` 指定路径
 
 ### Q3：Plugin会访问我的代码吗？
 
@@ -657,27 +636,23 @@ rm -rf .claude/plugins/my-plugin
 claude --plugin-dir ~/.claude/global-plugins/my-plugin
 
 # 方法2：设置shell别名
-alias claude=&#x27;claude --plugin-dir ~/.claude/global-plugins/my-plugin&#x27;
+alias claude='claude --plugin-dir ~/.claude/global-plugins/my-plugin'
 ```
 
 ### Q10：Plugin报错如何获取帮助？
 
-1.  查看Plugin的GitHub Issues
+1. 查看Plugin的GitHub Issues
 
-1.  使用 claude --debug 查看详细日志
+2. 使用 `claude --debug` 查看详细日志
 
-1.  检查Plugin的README中的Troubleshooting部分
-
----
+3. 检查Plugin的README中的Troubleshooting部分
 
 ## 🔗 相关链接
 
 | 资源 | 链接 | 说明 |
 | --- | --- | --- |
-| **上一节** | 07-Skills定制完整指南 | 创建可复用功能包 |
-| **下一节** | 09-Agent-SDK完整指南 | 编程开发AI Agent |
-
----
+| 上一节 | 07-Skills定制完整指南 | 创建可复用功能包 |
+| 下一节 | 09-Agent-SDK完整指南 | 编程开发AI Agent |
 
 ## 📋 附录：速查表
 
@@ -685,15 +660,15 @@ alias claude=&#x27;claude --plugin-dir ~/.claude/global-plugins/my-plugin&#x27;
 
 | 操作 | 命令 |
 | --- | --- |
-| **安装Plugin** | /plugin install &lt;name&gt; 或 git clone &lt;url&gt; |
-| **加载Plugin** | claude --plugin-dir .claude/plugins/&lt;name&gt; |
-| **加载多个** | claude --plugin-dir ./a --plugin-dir ./b |
-| **更新Plugin** | cd .claude/plugins/&lt;name&gt; &amp;&amp; git pull |
-| **卸载Plugin** | rm -rf .claude/plugins/&lt;name&gt; |
-| **查看Plugin信息** | cat .claude/plugins/&lt;name&gt;/.claude-plugin/plugin.json |
-| **开发时重载** | 交互模式中使用 /reload-plugins |
-| **调试Plugin** | claude --plugin-dir &lt;path&gt; --debug |
-| **浏览Marketplace** | 浏览器访问 code.claude.com/plugins |
+| 安装Plugin | `/plugin install <name>` 或 `git clone <url>` |
+| 加载Plugin | `claude --plugin-dir .claude/plugins/<name>` |
+| 加载多个 | `claude --plugin-dir ./a --plugin-dir ./b` |
+| 更新Plugin | `cd .claude/plugins/<name> && git pull` |
+| 卸载Plugin | `rm -rf .claude/plugins/<name>` |
+| 查看Plugin信息 | `cat .claude/plugins/<name>/.claude-plugin/plugin.json` |
+| 开发时重载 | 交互模式中使用 `/reload-plugins` |
+| 调试Plugin | `claude --plugin-dir <path> --debug` |
+| 浏览Marketplace | 浏览器访问 `code.claude.com/plugins` |
 
 ### Plugin目录结构速查
 
@@ -709,8 +684,6 @@ my-plugin/
 └── hooks/*.py           # 可选：自动化脚本
 ```
 
-> 💡 命**名空间：**Plugin中的Skills会自动添加命名空间前缀，格式为 /plugin-name:skill-name，避免与其他Plugin冲突。
+> 💡 命名空间：Plugin中的Skills会自动添加命名空间前缀，格式为 `/plugin-name:skill-name`，避免与其他Plugin冲突。
 
----
-
-> **最后更新**：2026年2月25日 | **适用版本**：Claude Code v2.1.52+
+> 最后更新：2026年2月25日 | 适用版本：Claude Code v2.1.52+

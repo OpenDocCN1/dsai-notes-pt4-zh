@@ -1,20 +1,21 @@
+
 # n8n+MCP 让你的 AI 效率翻10倍
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/GUvfdLPjBoLuW7xJMgVcSd1ynzc](https://v11enp9ok1h.feishu.cn/docx/GUvfdLPjBoLuW7xJMgVcSd1ynzc)
 
-> **今**天，我想分享一个完整的实战案例：如何在本地 Docker 环境中部署 n8n，并通过 MCP 协议实现跨平台的智能工作流。
+> 今天，我想分享一个完整的实战案例：如何在本地 Docker 环境中部署 n8n，并通过 MCP 协议实现跨平台的智能工作流。
 
 **你将学会：**
 
-+   自动化操作 GitHub（创建Issue、查询项目数据）
++ 自动化操作 GitHub（创建Issue、查询项目数据）
 
-+   处理 **Gmail** 邮件
++ 处理 `Gmail` 邮件
 
-+   在手机端远程控制本地服务
++ 在手机端远程控制本地服务
 
-+   将 n8n 集成到 Cherry Studio、Trae 等AI工具中
++ 将 n8n 集成到 Cherry Studio、Trae 等AI工具中
 
-最让我兴奋的是，通过 MCP，我们可以把 n8n 的能力无**缝融入到各种 AI** 工具中，真正实现了 一次配置，处处可用。
+最让我兴奋的是，通过 MCP，我们可以把 n8n 的能力无缝融入到各种 AI 工具中，真正实现了 一次配置，处处可用。
 
 ![](img/b32dd80666de3a9f1e60f86df70ad308.png)
 
@@ -22,7 +23,7 @@
 
 > 工作流文件：https://pan.quark.cn/s/358da02a4528
 
-### Ngrok：打开本地通往世界的魔法门
+## Ngrok：打开本地通往世界的魔法门
 
 答案就是 Ngrok！它就像哆啦A梦的任意门，能在你的本地服务和互联网之间搭建一条安全隧道。
 
@@ -49,7 +50,7 @@ ngrok config add-authtoken 你的专属密钥
 ngrok http http://localhost:5678
 ```
 
-砰！一个神秘的 URL 诞生了，比如：https://e7e6-112-12-185-57.ngrok-free.app。这不是普通的网址——它是连接本地与云端的虫洞，是让你的 n8n 突破物理限制的传送门。
+砰！一个神秘的 URL 诞生了，比如：`https://e7e6-112-12-185-57.ngrok-free.app`。这不是普通的网址——它是连接本地与云端的虫洞，是让你的 n8n 突破物理限制的传送门。
 
 ![](img/308fad5cb1b405b61018d51902bdc3f9.png)
 
@@ -68,11 +69,11 @@ docker run -it --rm \
     docker.n8n.io/n8nio/n8n
 ```
 
-看到那个WEBHOOK_URL环境变量了吗？这就是关键！它告诉 n8n："当需要生成 webhook URL 时，请使用 Ngrok的地址，而不是 localhost。"
+看到那个 `WEBHOOK_URL` 环境变量了吗？这就是关键！它告诉 n8n："当需要生成 webhook URL 时，请使用 Ngrok的地址，而不是 `localhost`。"
 
 这样一来，无论是 GitHub 的 webhook 回调，还是你手机上的访问请求，都能准确找到你的 n8n 服务了。
 
-## **MCP Server 工作流**
+## MCP Server 工作流
 
 现在，让我们正式开始搭建 MCP Server 工作流！首先选择 MCP Server Trigger 节点作为触发器。
 
@@ -88,13 +89,13 @@ docker run -it --rm \
 
 ![](img/c5dc3dc5fee1ef17c9683ae15933490b.png)
 
-#### GitHub 访问令牌
+### GitHub 访问令牌
 
-首先需要增加一个信任凭证，这是连接 MCP Server 与你 Git[Hub 账](https://docs.n8n.io/integrations/builtin/credentials/github/?utm_source=n8n_app&utm_medium=credential_settings&utm_campaign=create_new_credentials_modal)户的桥梁。令牌授权程度直接决定了可以执行的操作范围。详细操作也可参考 n8n文档。
+首先需要增加一个信任凭证，这是连接 MCP Server 与你 GitHub 账户的桥梁。令牌授权程度直接决定了可以执行的操作范围。详细操作也可参考 n8n文档。
 
 ![](img/a779db73d4688172073e8bb79116b3ae.png)
 
-##### 1、**进入设置页面**
+**1. 进入设置页面**
 
 点击右上角头像，在下拉菜单中选择"Settings"。这是你个人 GitHub 配置的中央控制台。
 
@@ -102,19 +103,19 @@ docker run -it --rm \
 
 ![](img/73407aa1bcfa17fd935a8cef37599a51.png)
 
-##### 2、**导航至开发者设置**
+**2. 导航至开发者设置**
 
 在左侧导航栏底部找到"Developer settings"选项。这里集中了所有与 API 和开发工具相关的高级设置。
 
 ![](img/93015a8615a81a1d7f744de88f42d234.png)
 
-##### 3、**访问个人令牌页面**
+**3. 访问个人令牌页面**
 
 在开发者设置中，选择"Personal access tokens"，然后点击"Tokens (classic)"。尽管 GitHub 已推出新的细粒度令牌系统，但经典令牌对 MCP Server 的兼容性更佳。
 
 ![](img/d9c0dcbcde921e1b4032c19179a4cbf0.png)
 
-##### 4、**生成新令牌**
+**4. 生成新令牌**
 
 点击"Generate new token"按钮，然后选择"Generate new token (classic)"选项，开始令牌创建流程。
 
@@ -122,39 +123,39 @@ docker run -it --rm \
 
 ![](img/3b6998b13541a8ca6e429f0b70cfdff5.png)
 
-##### 5、**配置令牌权限**
+**5. 配置令牌权限**
 
-这是最关键的步骤！为令牌添加一个描述性名称（如"mcp-server-token"），然后谨慎选择权限范围。
+这是最关键的步骤！为令牌添加一个描述性名称（如`mcp-server-token`），然后谨慎选择权限范围。
 
-权限选择遵循"最小必要原则"：只授予 MCP Server 完成任务所需的最低权限。通常情况下，repo、read:org 和 workflow 权限足以覆盖基础功能。根据你的具体使用场景，可能需要添加或移除某些权限。
+权限选择遵循"最小必要原则"：只授予 MCP Server 完成任务所需的最低权限。通常情况下，`repo`、`read:org` 和 `workflow` 权限足以覆盖基础功能。根据你的具体使用场景，可能需要添加或移除某些权限。
 
-> 出于安全考虑，为令牌设置合理的过期时间，避免选择"No expiration"（永不过期）选项。
+> 出于安全考虑，为令牌设置合理的过期时间，避免选择 `No expiration`（永不过期）选项。
 
 ![](img/f562ce741404ef8b51e6f752e7a0d154.png)
 
-**生成令牌后，系统会显示完**整的令牌字符串。请立即将其复制并安全保存！这是唯一一次完整展示令牌的机会，一旦离开页面，你将无法再次查看完整令牌。
+生成令牌后，系统会显示完整的令牌字符串。请立即将其复制并安全保存！这是唯一一次完整展示令牌的机会，一旦离开页面，你将无法再次查看完整令牌。
 
 ![](img/7a8451202d21f94ca50b3ce3ec508914.png)
 
-##### 6、回到 n8n 令牌设置界面
+**6. 回到 n8n 令牌设置界面**
 
-最后重新回到 n8n Github 节点上的配置，User 用你自己账号的名称，AccessToken 复制上述步骤获取到的令牌，最后点击保存即可。
+最后重新回到 n8n Github 节点上的配置，`User` 用你自己账号的名称，`AccessToken` 复制上述步骤获取到的令牌，最后点击保存即可。
 
 ![](img/ae5d7bceaacb043d7ca69d5d5ab5ff33.png)
 
 **其他配置步骤**
 
-+   **Resource**: 选择Issue
++ `Resource`: 选择Issue
 
-+   **Operation**: 选择Create
++ `Operation`: 选择Create
 
-+   Repository Owner: 手动输入 GitHub 用户名（比如我的是lqshow）
++ Repository Owner: 手动输入 GitHub 用户名（比如我的是lqshow）
 
-+   **Repository Name**: 设置为让AI自行决定
++ `Repository Name`: 设置为让AI自行决定
 
-+   **Title**: 设置为让AI自行决定
++ `Title`: 设置为让AI自行决定
 
-+   **Body**: 设置为让AI自行决定
++ `Body`: 设置为让AI自行决定
 
 这样配置的好处是，当AI接收到创建 Issue 的指令时，它可以根据上下文智能地选择合适的仓库、标题和内容，而不需要我们每次都手动指定。
 
@@ -168,13 +169,13 @@ docker run -it --rm \
 
 **配置步骤：**
 
-+   **Resource**: 选择 Repository
++ `Resource`: 选择 Repository
 
-+   **Operation**: 选择 Get
++ `Operation`: 选择 Get
 
-+   Repository Owner: 同样手动输入GitHub用户名（lqshow）
++ Repository Owner: 同样手动输入GitHub用户名（lqshow）
 
-+   **Repository Name**: 设置为让AI自行决定
++ `Repository Name`: 设置为让AI自行决定
 
 通过这个节点，我们可以快速获取任意 GitHub 项目的统计信息，这对于项目分析、竞品研究都非常有用。
 
@@ -194,11 +195,11 @@ Gmail OAuth 认证配置详解
 
 ![](img/508286e638e18a230815a1ee2f84d4b5.png)
 
-那么以上的 **ClientID** 和 **Client Secret** 又怎么获取呢？要使用 Gmail API，我们需要在 Google Cloud Console 中进行一系列配置：
+那么以上的 `ClientID` 和 `Client Secret` 又怎么获取呢？要使用 Gmail API，我们需要在 Google Cloud Console 中进行一系列配置：
 
-#### 1. 创建 Google Cloud 新项目
+**1. 创建 Google Cloud 新项目**
 
-访问 console.cloud.google.com，创建新项目，我命名为"n8n-project"
+访问 `console.cloud.google.com`，创建新项目，我命名为"n8n-project"
 
 ![](img/468a4e4461999091d4ebbecfe34ff11c.png)
 
@@ -208,7 +209,7 @@ Gmail OAuth 认证配置详解
 
 ![](img/0978f08aaee3d0db9cd6b4655e3cb042.png)
 
-#### **2. 启用 Gmail API**
+**2. 启用 Gmail API**
 
 在搜索框搜索"Gmail"，选择"Gmail API"，并点击启用
 
@@ -216,7 +217,7 @@ Gmail OAuth 认证配置详解
 
 ![](img/d3ea4e6553c2ca3f5e200ca4796f77c6.png)
 
-#### **3. 配置 OAuth 权限**
+**3. 配置 OAuth 权限**
 
 进入"OAuth权限请求页面"，然后点击开始。
 
@@ -240,7 +241,7 @@ Gmail OAuth 认证配置详解
 
 ![](img/6b176a1e01e933f502f5f2905b2cf196.png)
 
-#### 配置品牌塑造
+**配置品牌塑造**
 
 这一步很关键！我们需要在"已授权的域"中添加 Ngrok 提供的域名。这样 Google 才会信任我们的回调地址。
 
@@ -250,21 +251,21 @@ Gmail OAuth 认证配置详解
 
 ![](img/a6bc100dbf8f13d12ffe959aa0ef2a39.png)
 
-#### **配置目标对象**
+**配置目标对象**
 
 在测试阶段，需要将自己的 Gmail 邮箱添加为测试用户。
 
 ![](img/eb75901ac1402b71b50d7bf6ceda75b2.png)
 
-#### **配置数据访问**
+**配置数据访问**
 
-按需勾选 **Gmail** 必要的权限范围
+按需勾选 `Gmail` 必要的权限范围
 
 ![](img/55d55b2c354abf4d7dc465e3482be375.png)
 
-#### **创建 OAuth 凭据**
+**配置 OAuth 凭据**
 
-**创建一个 O**Auth 客户端 ID 的凭据，应用类型选择 Web应用，再填写名称。
+创建一个 OAuth 客户端 ID 的凭据，应用类型选择 Web应用，再填写名称。
 
 ![](img/6728eb8f580901683d878b64f1df17df.png)
 
@@ -276,15 +277,15 @@ Gmail OAuth 认证配置详解
 
 ![](img/7b0e7464bf677ad9e2ddb4d959b25d50.png)
 
-完成这些步骤后，我们会获得 Client ID 和 Client Secret。
+完成这些步骤后，我们会获得 `Client ID` 和 `Client Secret`。
 
 ![](img/fee82242ad6558efcf589467fc24f6c4.png)
 
-**回到 n8n **的 **Gmail** 节点配置中，将以上客户端 ID 和 客户端密钥粘贴进去，然后点击保存。
+**回到 n8n 的 `Gmail` 节点配置中**，将以上客户端 ID 和 客户端密钥粘贴进去，然后点击保存。
 
 ![](img/d58f0b253102c6cc7b9ffe2571714235.png)
 
-#### **完成认证流程**
+### 完成认证流程
 
 接下来，我们还需要点击"登录验证"按钮，会弹出 Google 授权页面，勾选必要权限后完成授权。
 
@@ -306,7 +307,7 @@ Gmail OAuth 认证配置详解
 
 ![](img/ebf8f5da21af655f1581e9c04b4ee4f5.png)
 
-点击 MCP Server Trigger 节点，复制 Production URL，这个 URL 将用于后续的 MCP Client 配置。
+点击 MCP Server Trigger 节点，复制 `Production URL`，这个 URL 将用于后续的 MCP Client 配置。
 
 ![](img/c0e5ef5e0d1f68ed11842a015ae16c42.png)
 
@@ -326,9 +327,9 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 首先，让我们理解一下MCP（Model Context Protocol）的客户端-服务器架构：
 
-+   **MCP Server**（我们前面配置的）：负责处理和执行具体任务，比如操作 GitHub、处理 Gmail 等
++ **MCP Server**（我们前面配置的）：负责处理和执行具体任务，比如操作 GitHub、处理 Gmail 等
 
-+   **MCP Client**：负责接收用户指令，将其转化为结构化请求，发送给 Server，并将结果返回给用户
++ **MCP Client**：负责接收用户指令，将其转化为结构化请求，发送给 Server，并将结果返回给用户
 
 这种分离设计带来了巨大的灵活性：一个 Server 可以服务多个 Client，而 Client 可以轻松切换不同的 Server。
 
@@ -338,9 +339,9 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 首先添加一个 MCP Client Trigger 节点：
 
-1.  选择节点类型：MCP Client Trigger
+1. 选择节点类型：MCP Client Trigger
 
-1.  触发方式选择：Chat Message
+1. 触发方式选择：`Chat Message`
 
 ![](img/b9a8038babac81c2f9a9103f88b87ba6.png)
 
@@ -350,9 +351,7 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 接下来，添加 AI Agent 节点作为 MCP Client 的大脑：
 
-#### 创建系统提示
-
-我们给它改成，让它执行用户输入的指令：
+**创建系统提示**
 
 ```
 你是一个专业的自动化助手。你的任务是理解用户的自然语言指令，
@@ -364,7 +363,7 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 ![](img/2bdc9d007f992ed4407abfd2d0924844.png)
 
-#### 选择AI模型
+**选择AI模型**
 
 然后我们需要给这个 AI Agent 节点添加一个 AI 模型，这里我选择了 DeepSeek，因为它在理解复杂指令和上下文能力上表现出色。
 
@@ -374,33 +373,35 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 ![](img/3591b8a44607aa7cf08ab6107bdb426f.png)
 
+
+
 ![](img/09584f700da7627564394806a4be96bb.png)
 
-这个 AI Agent 节点扮演着"翻译官"的角色，它将用户的自然语言请求转化为 MCP Client 能够理解的结构化指令。
+这个 AI Agent 节点扮演着"翻译官"的角色，它将用户的自然语言请求转化为 `MCP Client` 能够理解的结构化指令。
 
-### MCP Client Tool 节点：连接服务端的桥梁
+# MCP Client Tool 节点：连接服务端的桥梁
 
-最后，添加 MCP Client Tool 节点，这是整个 Client 工作流中最关键的部分：
+最后，添加 `MCP Client Tool` 节点，这是整个 `Client` 工作流中最关键的部分：
 
-#### 类型选择：MCP Client Tool
+## 类型选择：`MCP Client Tool`
 
 ![](img/92a55df3b95f033f6db1ff0fa9a633aa.png)
 
-#### SSE 地址
+## `SSE` 地址
 
-填入我们之前从 MCP Server 复制的那个 URL
+填入我们之前从 `MCP Server` 复制的那个 `URL`
 
 ```
-   https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d98/sse
+https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d98/sse
 ```
 
 ![](img/092f3114e26825eac071b3b7c11a9d7d.png)
 
-#### **注意**：如果是本地Docker部署
+## 注意：如果是本地Docker部署
 
-需要特别处理 host 设置。将 host 改为host.docker.internal:5678，这样 Docker 容器内的 Client 才能正确访问宿主机上的Server。
+需要特别处理 `host` 设置。将 `host` 改为`host.docker.internal:5678`，这样 Docker 容器内的 `Client` 才能正确访问宿主机上的`Server`。
 
-完成这些配置后，保存工作流，我们就拥有了一个功能完整的 MCP Client。
+完成这些配置后，保存工作流，我们就拥有了一个功能完整的 `MCP Client`。
 
 ## 实战演练：见证奇迹的时刻
 
@@ -408,17 +409,15 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 ![](img/324ee751f0a7f2163c3d73c3eeba7f14.png)
 
-### 用例1：GitHub 自动化
+### 用例1：`GitHub` 自动化
 
-> **输入指令:**
+> 输入指令:
 
-> 在 GitHub 的 awesome-project 项目下，新建一个 issue。
+> 在 `GitHub` 的 `awesome-project` 项目下，新建一个 `issue`。
 
-> 标题是：n8n 的学习路径。
+> 标题是：`n8n` 的学习路径。
 
-> 内容是：n8n 的环境搭建，跑通 n8n demo。
-
->
+> 内容是：`n8n` 的环境搭建，跑通 `n8n demo`。
 
 > 标题和内容可根据我提供的信息进行一定的润色。
 
@@ -428,11 +427,11 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 ### 用例2：将数据发送到 Gmail
 
-查询 GitHub 下项目的各项指标数，并将数据发送到邮件
+查询 `GitHub` 下项目的各项指标数，并将数据发送到邮件
 
-> **输入指令:**
+> 输入指令:
 
-> 查找 GitHub 上 lqshow 这个账号下 notes 这个项目的数据，并且格式化后输出，然后发送到 lqshow@gmail.com
+> 查找 `GitHub` 上 `lqshow` 这个账号下 `notes` 这个项目的数据，并且格式化后输出，然后发送到 `lqshow@gmail.com`
 
 ![](img/94723312653dea80f142a046e540b183.png)
 
@@ -440,15 +439,15 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 ### 用例3：移动端掌控一切
 
-我们可以通过打开 "Publicly Available" 开关，并且激活工作流。
+我们可以通过打开 `Publicly Available` 开关，并且激活工作流。
 
 ![](img/08c3d9be09bc08bf30ae9a31021c662e.png)
 
-> 得到一个公开访问的URL：
+> 得到一个公开访问的`URL`:
 
-> https://e7e6-112-12-185-57.ngrok-free.app/webhook/b4043b82-fcaf-4b3d-a588-24247db3fe86/chat
+> `https://e7e6-112-12-185-57.ngrok-free.app/webhook/b4043b82-fcaf-4b3d-a588-24247db3fe86/chat`
 
-有了这个 URL，我们就可以在任何设备上使用这个 MCP Client 了，包括手机、平板等。这极大地提高了工作流的可访问性和实用性。
+有了这个 `URL`，我们就可以在任何设备上使用这个 `MCP Client` 了，包括手机、平板等。这极大地提高了工作流的可访问性和实用性。
 
 ![](img/ba19d4093ba261f7210505d41a67fa81.png)
 
@@ -456,31 +455,31 @@ https://e7e6-112-12-185-57.ngrok-free.app/mcp/425982f8-cf35-41d1-baae-057cf3020d
 
 ## Cherry Studio & Trae：跨界融合的艺术
 
-它还可以灵活的和各种 AI 工具结合使用，我们打开 MCP Server 工作流的 MCP Server Trigger 节点，通过它的这个 sse url，来把这个 n8n 的 MCP 工作流接入到第三方的 AI 工具中。
+它还可以灵活的和各种 `AI` 工具结合使用，我们打开 `MCP Server` 工作流的 `MCP Server Trigger` 节点，通过它的这个 `sse url`，来把这个 `n8n` 的 `MCP` 工作流接入到第三方的 `AI` 工具中。
 
 ![](img/efed33f2a685d532618b88c88bac4ba3.png)
 
-打开 Cherry Studio
+打开 `Cherry Studio`
 
 +   点击设置
 
-+   选择 MCP 服务器，
++   选择 `MCP` 服务器，
 
-+   添加一个 MCP 服务器
++   添加一个 `MCP` 服务器
 
-+   名称填写 n8n
++   名称填写 `n8n`
 
-+   类型选择 sse
++   类型选择 `sse`
 
-+   URL 填写复制的 n8n MCP Server 的那个 SSE URL
++   `URL` 填写复制的 `n8n MCP Server` 的那个 `SSE URL`
 
 ![](img/15639370de2663f8dce234e8b92cd2eb.png)
 
 [n8n测试用例-cherrystudio.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OZK7b3Ue9ob5AOx5WG0cPisdnJd)
 
-可以发现，n8n 的 MCP 可以把很多种功能，封装成一个 MCP Server 来给其他的 AI 工具使用。这样就大大简化了配置流程，使用起来更加的方便。
+可以发现，`n8n` 的 `MCP` 可以把很多种功能，封装成一个 `MCP Server` 来给其他的 `AI` 工具使用。这样就大大简化了配置流程，使用起来更加的方便。
 
-Trae？Claude Desktop？统统不在话下！下面是 Trae 结合 n8n server 的演示视频
+`Trae`？`Claude Desktop`？统统不在话下！下面是 `Trae` 结合 `n8n server` 的演示视频
 
 ![](img/0e1f0bbf22e3f0a9e1f8e5f861542b72.png)
 
@@ -488,10 +487,10 @@ Trae？Claude Desktop？统统不在话下！下面是 Trae 结合 n8n server �
 
 ## 结语：这只是开始
 
-n8n 的 MCP 不仅仅是一个功能更新，它是一场革命。它打破了工具之间的壁垒，让自动化变得如此简单，如此优雅。
+`n8n` 的 `MCP` 不仅仅是一个功能更新，它是一场革命。它打破了工具之间的壁垒，让自动化变得如此简单，如此优雅。
 
 当你掌握了这套系统，你就拥有了一个无形的数字助手军团。他们24小时待命，只等你一声令下。
 
 记住：配置只是开始，想象力才是极限。
 
-准备好了吗？让我们一起，用 n8n MCP 重新定义工作流的未来！
+准备好了吗？让我们一起，用 `n8n MCP` 重新定义工作流的未来！

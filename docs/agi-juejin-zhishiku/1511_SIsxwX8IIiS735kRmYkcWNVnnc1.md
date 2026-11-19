@@ -1,3 +1,4 @@
+
 # 使用Python三行代码调用扣子API
 
 > 来源：[https://agijuejin.feishu.cn/docx/AH9zddQvpo1kIYxRFGOcmMlAnLe](https://agijuejin.feishu.cn/docx/AH9zddQvpo1kIYxRFGOcmMlAnLe)
@@ -6,34 +7,34 @@
 
 > 原文：https://mp.weixin.qq.com/s/BoI5DMr2Vh70VEMQj2lnOA
 
-扣子官方只提供了curl调用范例，未提供python调用接口。
+扣子官方只提供了`curl`调用范例，未提供python调用接口。
 
-一个有毅力的吃货花了些时间利用requests库进行了实现，封装成了coze这个python库，已经发布到pypi。
+一个有毅力的吃货花了些时间利用`requests`库进行了实现，封装成了`coze`这个python库，已经发布到pypi。
 
 支持流式输出，支持多轮对话。
 
-**👸号算法美食屋后台回复关键词： coze ，**获取项目github链接和B站视频讲解~
+👸号算法美食屋后台回复关键词： `coze` ，获取项目github链接和B站视频讲解~
 
 ![](img/8aadf95b76ad680dbc88e484602f2aa3.png)
 
-## **一，安装coze库**
+## 一，安装`coze`库
 
 ```
 pip install coze
 ```
 
-## **二，使用范例**
+## 二，使用范例
 
 ```
 import os 
 from coze import Coze 
-os.environ[&#x27;COZE_API_TOKEN&#x27;] = &#x27;pat_xxx&#x27;
-os.environ[&#x27;COZE_BOT_ID&#x27;] = &quot;7362845197946257419&quot;
+os.environ['COZE_API_TOKEN'] = 'pat_xxx'
+os.environ['COZE_BOT_ID'] = "7362845197946257419"
 ```
 
 ```
-chat = Coze(api_token= os.environ[&#x27;COZE_API_TOKEN&#x27;],
-            bot_id = os.environ[&#x27;COZE_BOT_ID&#x27;],
+chat = Coze(api_token= os.environ['COZE_API_TOKEN'],
+            bot_id = os.environ['COZE_BOT_ID'],
             max_chat_rounds=20,
             stream=True)
 ```
@@ -43,14 +44,14 @@ chat = Coze(api_token= os.environ[&#x27;COZE_API_TOKEN&#x27;],
 register magic %%chat sucessed ...
 ```
 
-可以使用__call__方法调用
+可以使用`__call__`方法调用
 
 ```
-response = chat(&#x27;北京最新的高级产品经理岗位有推荐吗&#x27;)
+response = chat('北京最新的高级产品经理岗位有推荐吗')
 ```
 
 ```
-call function: liepin-job_recommendation; args ={&#x27;address&#x27;: &#x27;北京&#x27;, &#x27;jobName&#x27;: &#x27;高级产品经理&#x27;}
+call function: liepin-job_recommendation; args ={'address': '北京', 'jobName': '高级产品经理'}
 
 北京近期推荐的高级产品经理岗位有以下几个，提供给对这一职业领域感兴趣的求职者：
 
@@ -71,7 +72,7 @@ call function: liepin-job_recommendation; args ={&#x27;address&#x27;: &#x27;北�
 ```
 
 ```
-call function: liepin-job_recommendation; args ={&#x27;address&#x27;: &#x27;上海&#x27;, &#x27;jobName&#x27;: &#x27;算法&#x27;}
+call function: liepin-job_recommendation; args ={'address': '上海', 'jobName': '算法'}
 
 以下是上海最近推荐的算法岗位列表：
 
@@ -93,14 +94,20 @@ chat.history
 ```
 
 ```
-[(&#x27;北京最新的高级产品经理岗位有推荐吗&#x27;,
-&#x27;目前在北京的高级产品经理岗位有以下推荐：\n\n1. 获客多 Hokdo提供产品经理职位，月薪范围20-30k，共15薪，位于北京-万泉河。\n   \n2. 获客多 Hokdo还有高级产品经理职位，月薪25-35k，15薪，同样位于北京。\n\n3. 北京微云众网络科技有限公司提供一个Web3分布式的Futures Operations Director职位，月薪20-50k，公司位于北京-东四。\n\n4. 美团在南法信有产品专家职位（工单平台方向），月薪范围30-60k，15薪。\n\n5. 美团在南法信还有税务产品经理职位，专注于海外税务方向，月薪25-35k，15薪。\n\n上述岗位涵盖了从初创A轮的获客多 Hokdo到已上市的大公司美团，提供了不同规模和发展阶段的职位选择。相关职位详情链接可见领英网站。&#x27;),
-(&#x27;上海最近的算法岗位有推荐吗？给一下岗位简介和岗位链接。\n&#x27;,
-&#x27;以下是上海最近推荐的算法岗位列表：\n\n1. **AIGC 算法工程师**：酷爱教育科技(上海)有限公司，薪水为14-22k·14薪，公司规模1-49人，位于上海-龙华。岗位链接：[点这里](https://www.liepin.com/job/1968037473.shtml)\n\n2. **饿了么-NLP/知识图谱算法专家**：饿了么，薪水为10-20k，公司规模10000人以上，位于上海。岗位链接：[点这里](https://www.liepin.com/job/1967971499.shtml)\n\n3. **车载智能系统开发工程师/专家**：芯安微众(上海)微电子技术有限公司，薪水为25-55k·14薪，公司规模100-499人，位于上海-淮海路。岗位链接：[点这里](https://www.liepin.com/job/1967961603.shtml)\n\n4. **人工智能工程师/专家**：芯安微众(上海)微电子技术有限公司，薪水同上，公司规模和位置同上。岗位链接：[点这里](https://www.liepin.com/job/1967959705.shtml)\n\n5. **大模型研究分析实习生**：美团，薪水为6-8k·15薪，公司规模10000人以上，位于上海。岗位链接：[点这里](https://www.liepin.com/job/1967761499.shtml)\n\n岗位简介和具体要求可以通过链接进入了解。&#x27;)]
+[('北京最新的高级产品经理岗位有推荐吗',
+'目前在北京的高级产品经理岗位有以下推荐：\n\n1. 获客多 Hokdo提供产品经理职位，月薪范围20-30k，共15薪，位于北京-万泉河。\n   \n2. 获客多 Hokdo还有高级产品经理职位，月薪25-35k，15薪，同样位于北京。\n\n3. 北京微云众网络科技有限公司提供一个Web3分布式的Futures Operations Director职位，月薪20-50k，公司位于北京-东四。\n\n4. 美团在南法信有产品专家职位（工单平台方向），月薪范围30-60k，15薪。\n\n5. 美团在南法信还有税务产品经理职位，专注于海外税务方向，月薪25-35k，15薪。\n\n上述岗位涵盖了从初创A轮的获客多 Hokdo到已上市的大公司美团，提供了不同规模和发展阶段的职位选择。相关职位详情链接可见领英网站。'),
+('上海最近的算法岗位有推荐吗？给一下岗位简介和岗位链接。\n',
+'以下是上海最近推荐的算法岗位列表：\n\n1. **AIGC 算法工程师**：酷爱教育科技(上海)有限公司，薪水为14-22k·14薪，公司规模1-49人，位于上海-龙华。岗位链接：[点这里](https://www.liepin.com/job/1968037473.shtml)\n\n2. **饿了么-NLP/知识图谱算法专家**：饿了么，薪水为10-20k，公司规模10000人以上，位于上海。岗位链接：[点这里](https://www.liepin.com/job/1967971499.shtml)\n\n3. **车载智能系统开发工程师/专家**：芯安微众(上海)微电子技术有限公司，薪水为25-55k·14薪，公司规模100-499人，位于上海-淮海路。岗位链接：[点这里](https://www.liepin.com/job/1967961603.shtml)
+
+4. **人工智能工程师/专家**：芯安微众(上海)微电子技术有限公司，薪水同上，公司规模和位置同上。岗位链接：[点这里](https://www.liepin.com/job/1967959705.shtml)
+
+5. **大模型研究分析实习生**：美团，薪水为6-8k·15薪，公司规模10000人以上，位于上海。岗位链接：[点这里](https://www.liepin.com/job/1967761499.shtml)
+
+岗位简介和具体要求可以通过链接进入了解。')]
 ```
 
-## **三，详细教程**
+## 三，详细教程
 
-参考本项目下的 coze_tutorial.ipynb 文件
+参考本项目下的`coze_tutorial.ipynb`文件
 
 ![](img/bef45a682db6a91a56fb40a9b7efcf40.png)

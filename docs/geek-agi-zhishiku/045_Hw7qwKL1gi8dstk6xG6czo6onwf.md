@@ -1,62 +1,52 @@
+
 # 歸藏：6000字+6个案例：写给普通人的MCP入门指南
 
 > 来源：[https://geekbang.feishu.cn/docx/Ga96d31UyoIKxJxydKmcur8Bnxd](https://geekbang.feishu.cn/docx/Ga96d31UyoIKxJxydKmcur8Bnxd)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/BjsoBsUxCzeqXZq46_nrog)q.com/s/BjsoBsUx...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/BjsoBsUxCzeqXZq46_nrog)q.com/s/BjsoBsUx...
 
-原创 歸藏的 AI 工具箱 歸藏的AI工具箱2025年04月02日 15:22  北京
+原创 歸藏的 AI 工具箱 歸藏的AI工具箱 2025年04月02日 15:22 北京
 
 最近 MCP 协议很火，自己也发掘了一些玩法，但是目前来看 MCP 的配置还是过于繁琐了，对普通人门槛有点高。
 
 这几天终于摸索出来了一些方法让大家可以相对容易理解的方式配置 MCP 服务。
 
-后面我也会直接 给你几个常用的案例，教你从配置到使用的全过程 ，希望这个教程看完能让你顺滑的使用 MCP。
+后面我也会直接给你几个常用的案例，教你从配置到使用的全过程，希望这个教程看完能让你顺滑的使用 MCP。
 
 目前支持 MCP 服务的客户端主要是 Claude、Chatwise、Cherry Studio 这种聊天客户端或者是 Cursor、Windsurf 这种 AI 编程 IDE。
 
-由于我们面向的主要还是普通人，所以演示部分我主要演示**Chatwise的**操作**，配置部分我会讲 **ChatWise 和 Windsurf 的操作。
+由于我们面向的主要还是普通人，所以演示部分我主要演示 Chatwise 的操作，配置部分我会讲 ChatWise 和 Windsurf 的操作。
 
 🎁
 
-如果你想要购买 ChatWise 的高级版本的话可以 使用藏师傅的优惠码「guizang」可以打八折
+如果你想要购买 ChatWise 的高级版本的话可以使用藏师傅的优惠码「`guizang`」可以打八折。
 
 收藏后面看也行，记得先给点个赞👍或者喜欢🩷，谢谢各位了。
 
-**目录：**
+## 目录
 
-+   简单介绍什么是 MCP，以及他们的作用
++ 简单介绍什么是 MCP，以及他们的作用
++ 配置 MCP 前的准备工作，主要是安装依赖
++ 从哪里获取 MCP 服务
++ 如何在 Windsurf 上配置 MCP 服务
++ 如何在 ChatWise 上配置 MCP 服务
++ 我探索出的实用 MCP 实用方式和对应参数
++ 从 FIgma 获取设计稿信息生成高还原度网页
++ 自己手搓丐版 AI 搜索（Exa&Time）
++ 利用 MCP 搭建 Obsidian AI 知识库
++ 利用高德 MCP 检索附近咖啡馆并创建网页
++ 从 arxiv 检索和下载论文
++ 与 AI 对话快速创建 Flomo 笔记
 
-+   配置 MCP 前的准备工作，主要是安装依赖
-
-+   从哪里获取 MCP 服务
-
-+   如何在 Windsurf 上配置 MCP 服务
-
-+   如何在 ChatWise 上配置 MCP 服务
-
-+   我探索出的实用 MCP 实用方式和对应参数
-
-+   从 FIgma 获取设计稿信息生成高还原度网页
-
-+   自己手搓丐版 AI 搜索（Exa&Time）
-
-+   利用 MCP 搭建 Obsidian AI 知识库
-
-+   利用高德 MCP 检索附近咖啡馆并创建网页
-
-+   从 arxiv 检索和下载论文
-
-+   与 AI 对话快速创建 Flomo 笔记
-
-## **什么是 MCP**
+## 什么是 MCP
 
 这里不过多解释，毕竟我们只是使用而不是实现。
 
-简单来说 LLM使用不同工具时，以前需要同时修改模型和工具， 因为各工具的API数据格式不统一，导致适配成本高、功能添加慢 。
+简单来说 LLM使用不同工具时，以前需要同时修改模型和工具，因为各工具的API数据格式不统一，导致适配成本高、功能添加慢。
 
-MCP协议统一了数据格式标准，规定了应用向LLM传输数据的方式。 任何模型只要兼容MCP协议，就能与所有支持MCP的应用交互 。
+MCP协议统一了数据格式标准，规定了应用向LLM传输数据的方式。任何模型只要兼容MCP协议，就能与所有支持MCP的应用交互。
 
-这 将适配工作从双向简化为单向（仅应用端） ，且对于已有API的应用，第三方开发者也可基于其API进行MCP封装适配，无需官方支持。
+这将适配工作从双向简化为单向（仅应用端），且对于已有API的应用，第三方开发者也可基于其API进行MCP封装适配，无需官方支持。
 
 可以看下面 Claude 画的这个图，虽然糙但是也可以理解了，哈哈。
 
@@ -64,23 +54,22 @@ MCP协议统一了数据格式标准，规定了应用向LLM传输数据的方�
 
 ![](img/358c2455d648eb05da00199fcd179d1d.png)
 
-## **配置准备工作**
+## 配置准备工作
 
-**注意：Windows 在环境配置和网络上的问题比 Mac 多很多，所以如果你没有**编程经验并且是 Windows 电脑，出错不是你的问题，实在无法修复的话就算了。
+注意：Windows 在环境配置和网络上的问题比 Mac 多很多，所以如果你没有编程经验并且是 Windows 电脑，出错不是你的问题，实在无法修复的话就算了。
 
 MCP 现在一共有两种模式：
 
-+   Stdio：主要用在本地服务上，操作你本地的软件或者本地的文件，比如 Blender 这种就只能用 Stdio 因为他没有在线服务
-
-+   SSE ：主要用在远程服务上，这个服务本身就有在线的 API，比如访问你的谷歌邮件，谷歌日历等。
++ Stdio：主要用在本地服务上，操作你本地的软件或者本地的文件，比如 Blender 这种就只能用 Stdio 因为他没有在线服务
++ SSE ：主要用在远程服务上，这个服务本身就有在线的 API，比如访问你的谷歌邮件，谷歌日历等。
 
 SEE 的配置方式非常简单基本上就一个链接就行，这个不需要教，如果你找到的是 SEE 的直接复制他的链接填上就行，而且现在使用 SEE 配置的 MCP 非常少，基本上都是 Stdio 的方式。
 
 Stdio 的配置比较复杂，我们需要做些准备工作，你需要提前安装需要的命令行工具。
 
-Stdio 主要需要两个开始的命令一个是 uvx 一个是 npx。
+Stdio 主要需要两个开始的命令一个是 `uvx` 一个是 `npx`。
 
-其中 uvx 我们需要安装 uv：如果你是 Windows 的话可以按“Win”键，点击搜索后输入"PowerShell"，然后右键选择“以管理员身份运行”，粘贴下面的命令回车就行，运行完记得重启。
+其中 `uvx` 我们需要安装 `uv`：如果你是 Windows 的话可以按“Win”键，点击搜索后输入"PowerShell"，然后右键选择“以管理员身份运行”，粘贴下面的命令回车就行，运行完记得重启。
 
 ```
 powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;
@@ -92,13 +81,13 @@ powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-接下来是 upx，这个简单我们只需要安装 Node.js 就行，访问官网（ https://nodejs.org/ ）点击下载正常安装就行。
+接下来是 `upx`，这个简单我们只需要安装 Node.js 就行，访问官网（`https://nodejs.org/`）点击下载正常安装就行。
 
 ![](img/cacfdd3537ded6f6df794e154fa3be45.png)
 
-## **获取MCP**
+## 获取MCP
 
-随着 MCP 的爆火已经有了很多 MCP 聚合网站，比如逗哥的 MCP.so 和 https://smithery.ai/ 。
+随着 MCP 的爆火已经有了很多 MCP 聚合网站，比如逗哥的 `MCP.so` 和 `https://smithery.ai/` 。
 
 他们的使用也大同小异，一般在左侧输入这个 MCP 必要的 API 之后就可以帮你生成各种导入的 Json 命令了。
 
@@ -108,17 +97,13 @@ API 如何获取一般在左侧的介绍部分也有有写，我后面的案例�
 
 下面的配置部分分别是 Windsurf 和 chatwise 的可以根据你使用的客户端选择查看。
 
-##
+## 配置 MCP-Windsurf
 
-## **配置 MCP-Windsurf**
-
-完之后我们就得配置了，如果你用的是 Windsurf 的话，可以在右上角头像部分打开“Windsurf Settings”在里面找到
-
-MCP Servers 点击右边的“Add Server”按钮添加。
+完之后我们就得配置了，如果你用的是 Windsurf 的话，可以在右上角头像部分打开“Windsurf Settings”在里面找到 MCP Servers 点击右边的“Add Server”按钮添加。
 
 ![](img/ca7b4ef9e19b809cff8c0732732cfbed.png)
 
-Windsurf 好的是他内置了一些常用的的 MCP 服务你可以直接用，同时由于是常见的 IDE 所以很多 MCP 网站都有适配命令很好找，上面获取 MCP 的部分我们已经说过了。
+Windsurf 好的是他内置了一些常用的的 MCP 服务你可以直接用，同时由于是常见的 IDE 所以很多 MCP 网站都有适配命令很好找，上面获取 MCP 的部分我们已经说过过了。
 
 如果默认配置的没有你想要的 MCP 可以点击「Add custom sever」
 
@@ -148,11 +133,9 @@ Windsurf 好的是他内置了一些常用的的 MCP 服务你可以直接用，
 
 ![](img/9aab7e609ae9cd50e4c6c488e330352d.png)
 
-##
+## 配置 MCP-ChatWise
 
-## **配置 MCP-ChatWise**
-
-麻了，我昨天吭哧瘪肚教大家吧 Json 转成正常命令，结果今天 Chatwise 支持了一个新功能，可以直接从 Json 新建 MCP 了。
+麻了，我昨天吭哧瘪肚教大家把 Json 转成正常命令，结果今天 Chatwise 支持了一个新功能，可以直接从 Json 新建 MCP 了。
 
 在新建的时候左下角加号点击后选择「从剪切板导入 Json」就可以直接导入你从 Windsurf 或者 MCP 网站复制来的 Json 了，省事很多朋友们。
 
@@ -184,27 +167,23 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 接下来的命令和环境变量，这里我之前也发愁怎么办，但后来我想了一个好办法，我们不是可以从 MCP 网站可以获取到 Json 代码吗。
 
-**只需要将 json 代码发给 AI 模型（Claude 或者 Dee**pseek）然后让他将这个 Json 转换为正常的命令，同时将环境变量单列出来 就行，比如下面这个高德 MCP 的 Json 就成功的分离了，我们将命令和环境变量分别填写就行。
+只需要将 json 代码发给 AI 模型（Claude 或者 Deepseek）然后让他将这个 Json 转换为正常的命令，同时将环境变量单列出来就行，比如下面这个高德 MCP 的 Json 就成功的分离了，我们将命令和环境变量分别填写就行。
 
 然后我们可以点击下面的查看工具按钮，如果调试没问题，就会列出具体的工具，如果调试有问题就会列出返回的报错，这时候我们就可以将报错发给 AI 看应该如何修复，一般是命令缺少参数或者环境变量的 API Key 填错了。
 
-这个时候我们的 MCP 就配置好了，只需要点击右上角的开关就能启用，如果这个 MCP没有敏感风险的话，可以勾选自动执行工具，这样效率高点。
+这个时候我们的 MCP 就配置好了，只需要点击右上角的开关就能启用，如果这个 MCP 没有敏感风险的话，可以勾选自动执行工具，这样效率高点。
 
 ![](img/ce4b1f402cb614de5c95deb09807dc18.png)
 
 ![](img/d9d6f39f7984f6c28855b05031882eb6.png)
 
-##
-
-## **案例和参数**
+## 案例和参数
 
 接下来就是案例的部分我在这里会介绍和演示一些我用着还行的 MCP 服务用法，另外也会写上他们的来源和 Chatwise 中对应的参数，你可以直接添加，这些都是我试过能跑的。
 
-###
-
 ### 从 Figma 获取设计稿生成网页
 
-使用的 MCP 是 **Framelink Figma MCP Server： https**://mcp.so/server/Figma-Context-MCP/GLips
+使用的 MCP 是 `Framelink Figma MCP Server`：`https://mcp.so/server/Figma-Context-MCP/GLips`
 
 ```
 ## ChatWise 参数
@@ -212,13 +191,11 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 命令：npx -y figma-developer-mcp --stdio --figma-api-key=粘贴获取到的Figma API Key替换
 ```
 
-这里我们需要去Figma 软件里获取一下我们的API Token，具体的步骤是：
+这里我们需要去 Figma 软件里获取一下我们的 API Token，具体的步骤是：
 
-1.  1. 点击左上角的头像找到设置（Settings）
-
-1.  2. 然后找到安全（Seccurity）选项，找到创建新的 Token（Generat new Token）
-
-1.  3. 之后File content选择只读，Dev resources也选择只读就行
+1. 点击左上角的头像找到设置（Settings）
+2. 然后找到安全（Seccurity）选项，找到创建新的 Token（Generat new Token）
+3. 之后 File content 选择只读，Dev resources 也选择只读就行
 
 ![](img/7e83e909691d50f05adaa7eb768ec910.png)
 
@@ -230,11 +207,9 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 最后在下面输入框中启用 Figma MCP 后把你复制的链接扔给他让他生成网页就行，这里推荐用 Gemini 2.5 Pro 或者 V3 0324，都可以白嫖。
 
-[具体白嫖方法可以看我之前写的《 顶级](https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247487434&idx=1&sn=32bea665b4877f21280b6a30a9dc6153&scene=21#wechat_redirect)白嫖指南，教你低成本用上最好的 AI 模型，再加加上 AI 搜索和推理 》
+[具体白嫖方法可以看我之前写的《顶级白嫖指南，教你低成本用上最好的 AI 模型，再加加上 AI 搜索和推理》](https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247487434&idx=1&sn=32bea665b4877f21280b6a30a9dc6153&scene=21#wechat_redirect)
 
 ![](img/e06f9ef13c7a54a0b421a60042609ea6.png)
-
-###
 
 ### 自己手搓 AI 搜索（Exa&Time）
 
@@ -248,7 +223,7 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 命令：uvx mcp-server-time --local-timezone Asia/Shanghai
 ```
 
-再然后就是 Exa 的 MCP 了，这个也需要一个 API，但还好 Exa 的 API 是免费的，你可以直接去这里点创建复制就行： https://dashboard.exa.ai/api-keys
+再然后就是 Exa 的 MCP 了，这个也需要一个 API，但还好 Exa 的 API 是免费的，你可以直接去这里点创建复制就行：`https://dashboard.exa.ai/api-keys`
 
 ```
 ## ChatWise 参数
@@ -261,15 +236,13 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 ![](img/09f2eb6a879cf7c313e7774d7ffc571c.png)
 
-###
-
 ### 利用 MCP 搭建 Obsidian AI 知识库
 
-这里我使用的是Obsidian Model Context Protocol（ https://mcp.so/zh/server/mcp-obsidian/smithery-ai ）这个服务，可以检索你的 Obsidian 知识库的笔记让 AI 分析。
+这里我使用的是 Obsidian Model Context Protocol（`https://mcp.so/zh/server/mcp-obsidian/smithery-ai`）这个服务，可以检索你的 Obsidian 知识库的笔记让 AI 分析。
 
 比较坑的是他们这个文档写的真实坑啥也没写，我好不容易才找到怎么用。
 
-这里我们需要做个准备工作，先去 Obsidian 的「第三方插件」-「社区插件市场」找到 Loccal Rest API 这个插件安装并且启用/
+这里我们需要做个准备工作，先去 Obsidian 的「第三方插件」-「社区插件市场」找到 Loccal Rest API 这个插件安装并且启用。
 
 ![](img/bdc25eb90d0511c453170da40b421279.png)
 
@@ -277,7 +250,7 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 ![](img/1ca8847639824c17613eca3a66655e5e.png)
 
-然后访问这个链接： https://coddingtonbear.github.io/obsidian-local-rest-api/
+然后访问这个链接：`https://coddingtonbear.github.io/obsidian-local-rest-api/`
 
 点击右下角的「Authorize」输入刚才的 API Key 启用服务就可以了。
 
@@ -305,15 +278,13 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 ![](img/65cb3332311278ed10036d6a30df33e5.png)
 
-###
-
 ### 利用高德 MCP 检索附近咖啡馆并创建网页
 
 接下来我们用高德的 MCP 搜索一下家附近的咖啡馆，而且用我之前的网页生成提示词给搜索结果做的展示的网页，点子主要来自 @AI产品黄叔 。
 
-首先我们需要去高德（ **https://console.a**map.com/dev/key/app ）申请一个个人的 API，需要按要求完成个人开发者的认证。
+首先我们需要去高德（`https://console.amap.com/dev/key/app`）申请一个个人的 API，需要按要求完成个人开发者的认证。
 
-之后在控制台的「我的应用」这里创建应用就行，创建完成之**后选择需要创建** Key 的应用，点击【 添**加 Key 】**，表单中的服务平台选择【 Web 服务 】，之后复制你的 Key 备用。
+之后在控制台的「我的应用」这里创建应用就行，创建完成之后选择需要创建 Key 的应用，点击【添加 Key 】，表单中的服务平台选择【 Web 服务 】，之后复制你的 Key 备用。
 
 ![](img/f3fc84814c4741e7f2c871a1ae64aa33.png)
 
@@ -321,26 +292,24 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 ![](img/32f76706f98f184ce3c990496a1e2cf5.png)
 
-```
-## ChatWise 参数
 
+
+## 高德地图 MCP 配置
+
+```
 命令：npx -y @amap/amap-maps-mcp-server
 
-环境变量：AMAP_MAPS_API_KEY=&quot;用你申请的高德API Key替换这段文字&quot;
+环境变量：AMAP_MAPS_API_KEY="用你申请的高德API Key替换这段文字"
 ```
 
 然后在聊天窗口开启高德的 MCP，先让他获取你家附近的经纬度，然后让他获取附近的咖啡馆的详细信息。
 
-之后我们就可以用我在《 为了让大家一键生成更漂亮的可视化网页，我写了个工具！ 》写的提示词让他生成一个家附近的咖啡馆展示网页了。
+之后我们就可以用我在《为了让大家一键生成更漂亮的可视化网页，我写了个工具！》写的提示词让他生成一个家附近的咖啡馆展示网页了。
 
 关闭
-
-**观看更多**
-
+观看更多
 更多
-
 退出全屏
-
 切换到横屏模式
 
 [🎦 点击观看视频](https://mpvideo.qpic.cn/0b2evuaduaaafuaoz4pmlbtvblodhkwqaoqa.f10002.mp4?dis_k=d4ad046847295aff70efff4436f5b802&dis_t=1743579766&play_scene=10120&auth_info=DrPru6F8GwxkxdPZi1FVcUl1JWYOa0🐧OA5hOTceAWc1SHphYlMAQRMpRQ5/PVhRXX8=&auth_key=2d1042268e8146173294304403fcad04&vid=wxv_3925573028490395653&format_id=10002&support_redirect=0&mmversion=false)
@@ -349,39 +318,33 @@ ID 这个你可以自己起名字，一般标识一下这个 MCP 的服务名字
 
 视频详情
 
-### **从 arxiv 检索和下载论文**
+## 从 arxiv 检索和下载论文
 
 AI 从业者应该都会经常看论文，那天发现arxiv都有 MCP 了，而且除了查询之外还可以自动下载论文的 PDF 版本。
 
-**这个直接使用命令就行，不需要环境变量**， Windows 用户注意需要把 Path 的路径换成你想要保存论文的文件夹 。
+这个直接使用命令就行，不需要环境变量，Windows 用户注意需要把 `Path` 的路径换成你想要保存论文的文件夹。
 
 ```
-## ChatWise 参数
-
-命令：uv tool run arxiv-mcp-server --storage-path /path/to/paper/storage
+uv tool run arxiv-mcp-server --storage-path /path/to/paper/storage
 ```
 
 然后我们就可以愉快的检索和下载论文了，比如这里我们就让 MCP 从 arxiv 获取最近的 10 篇 AI 相关论文和介绍。
 
 ![](img/35066936a3717d491ebaaf133098e5d4.png)
 
-###
-
-### 与 AI 对话快速创建 Flomo 笔记
+## 与 AI 对话快速创建 Flomo 笔记
 
 虽然有很多笔记软件一些短的笔记还是用 Flomo 用的顺手，那天看到逗哥写了一个 Flomo 的 MCP 服务。
 
 这样跟 AI 对胡生成的很多不错的结果都可以直接保存了，而且可以结合其他 MCP 使用，比如将上面 Exa 的搜索结果直接保存到我们的 Flomo 账号。
 
-我**们需要提前从你的 Flomo 设置里复制你的 API 链接，准**备配置的时候放到环境变量里面，直接在这个页面复制就行： https://v.flomoapp.com/mine?source=incoming_webhook
+我们需要提前从你的 Flomo 设置里复制你的 API 链接，准备配置的时候放到环境变量里面，直接在这个页面复制就行：`https://v.flomoapp.com/mine?source=incoming_webhook`
 
 ![](img/19cb469f6c00c2009c299a2e7bdece80.png)
 
 然后就是在 Chatwise 填写对应的命令和环境变量。
 
 ```
-## ChatWise 参数
-
 命令：npx -y @chatmcp/mcp-server-flomo
 
 环境变量：FLOMO_API_URL=更换为你从Flomo获取的API链接
@@ -392,6 +355,8 @@ AI 从业者应该都会经常看论文，那天发现arxiv都有 MCP 了，而�
 ![](img/d21184cad11ecbcb469526e1ca6d44c8.png)
 
 好了今天的教程就到这里了。
+
+## MCP 协议的意义与展望
 
 MCP协议的出现，标志着AI工具生态正从"封闭花园"走向"开放广场"。
 

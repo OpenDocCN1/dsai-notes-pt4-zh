@@ -1,21 +1,22 @@
+
 # 全球顶尖5大模型
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/DKD9dwSAioEpbVxGaOfcsvZJnlb](https://xodnytdcaw.feishu.cn/docx/DKD9dwSAioEpbVxGaOfcsvZJnlb)
 
 ## 官网使用
 
-| ChatGPT 4.5 | https://chatgpt.com/ | $200/月 Pro会员 | 问答/生图 |
+| ChatGPT 4.5 | `https://chatgpt.com/` | $200/月 Pro会员 | 问答/生图 |
 | --- | --- | --- | --- |
-| Claude 3.7 sonnet | https://claude.ai/ | $20/月，封号严重 | 问答/生图 |
-| Grok 3 | https://grok.com/ | 可免费使用，有次数限制 | 问答/生图 |
-| Gemini 2.5 Pro | https://gemini.google.com/app | 可免费使用，有次数限制 | 问答/生图 |
-| DeepSeek-R1 | https://chat.deepseek.com/ | 免费 | 问答 |
+| Claude 3.7 sonnet | `https://claude.ai/` | $20/月，封号严重 | 问答/生图 |
+| Grok 3 | `https://grok.com/` | 可免费使用，有次数限制 | 问答/生图 |
+| Gemini 2.5 Pro | `https://gemini.google.com/app` | 可免费使用，有次数限制 | 问答/生图 |
+| DeepSeek-R1 | `https://chat.deepseek.com/` | 免费 | 问答 |
 
 搜索：Grok 3，ChatGPT 4.5
 
 理解：DeepSeek-R1，ChatGPT 4.5
 
-写作：**Gemini 2.5 Pro，Dee**pSeek-R1，ChatGPT 4.5
+写作：Gemini 2.5 Pro，DeepSeek-R1，ChatGPT 4.5
 
 编程：Gemini 2.5 Pro，Claude 3.7 sonnet
 
@@ -23,7 +24,7 @@
 
 ## 镜像网站使用
 
-多维表格（U4j9bxpoCaRHdVsUcx1cRR7pn0b_tbl5vGA7c4Bj9wws）
+多维表格（`U4j9bxpoCaRHdVsUcx1cRR7pn0b_tbl5vGA7c4Bj9wws`）
 
 ## 搜索能力
 

@@ -1,7 +1,7 @@
+
 # 看事与识人：科学与艺术的投资修炼
 
 > 来源：[https://docs.feishu.cn/docx/doxcn9AnXxOOmvSONd1TvCCPzWh](https://docs.feishu.cn/docx/doxcn9AnXxOOmvSONd1TvCCPzWh)
-
 > 刘青松
 
 投科技
@@ -12,11 +12,9 @@
 
 投资，是一种修炼
 
-+   长期与短期
-
-+   悲欢和离合
-
-+   恐惧和贪婪
++ 长期与短期
++ 悲欢和离合
++ 恐惧和贪婪
 
 ![](img/98ede01da88595b8dd9f88e741e0def2.png)
 

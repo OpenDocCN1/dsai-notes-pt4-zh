@@ -1,3 +1,4 @@
+
 # 编剧提示词03 —— 角色背景故事
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/JHLldNJySo1OJnxRMrycFhxanrd](https://vxc3hj17dym.feishu.cn/docx/JHLldNJySo1OJnxRMrycFhxanrd)

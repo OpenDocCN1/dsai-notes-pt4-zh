@@ -1,3 +1,4 @@
+
 # 《清华大学出手！104页DeepSeek手册，AI小白的逆袭秘籍！（附下载）》
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/YeeKdogFfoTcCAxqTmfcbG4nnxg](https://xmgtoagi.feishu.cn/docx/YeeKdogFfoTcCAxqTmfcbG4nnxg)
@@ -6,7 +7,7 @@
 
 《DeepSeek：从入门到精通》是由清华大学新闻与传播学院新媒体研究中心元宇宙文化实验室的余梦珑博士后及其团队精心编写的权威教程。这份长达104页的专业文档以通俗易懂的方式，全面介绍了DeepSeek的使用方法，从基础到高级，适合不同层次的用户。
 
-### 核心内容
+## 核心内容
 
 **DeepSeek简介**：介绍DeepSeek的核心概念、目标、功能及应用场景。DeepSeek是一家专注于通用人工智能（AGI）的中国科技公司，其开源推理模型DeepSeek-R1擅长处理复杂任务，如逻辑推理、数学计算和代码生成，且可免费商用。
 
@@ -38,10 +39,10 @@
 
 小码哥一直从事大模型研发，欢迎一起学习交流，免费领取以下资料。
 
-# AI 学习交流社群
+## AI 学习交流社群
 
 ![](img/3fe493e873db3bdb1fa37b0cc4df8041.png)
 
-## 私信免费获取以下资源
+### 私信免费获取以下资源
 
-**免费使用****www.xmgai.cn****，一键改写爆款长文。**
+免费使用www.xmgai.cn，一键改写爆款长文。

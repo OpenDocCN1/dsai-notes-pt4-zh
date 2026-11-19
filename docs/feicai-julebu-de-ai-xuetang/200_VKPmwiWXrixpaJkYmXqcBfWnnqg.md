@@ -1,3 +1,4 @@
+
 # 2024未来会议：AI与协作前沿趋势白皮书
 
 > 来源：[https://feicaiclub.feishu.cn/docx/RlaPdGCjroYKCAxx2lcc7eKqnOf](https://feicaiclub.feishu.cn/docx/RlaPdGCjroYKCAxx2lcc7eKqnOf)
@@ -8,7 +9,7 @@
 
 ---
 
-# 摘要
+## 摘要
 
 ### 1. AI在协作领域的应用
 

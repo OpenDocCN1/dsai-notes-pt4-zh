@@ -1,3 +1,4 @@
+
 # Sora模型弱点
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/RrZ0dr4iJoreOkxelQOcNgG5nGd](https://aiyanxishe.feishu.cn/docx/RrZ0dr4iJoreOkxelQOcNgG5nGd)
@@ -44,4 +45,4 @@ OpenAI表示，**Sora并不是一个完美的模型**，例如这段提示词描
 
 弱点：模拟对象和多个角色之间的复杂交互对模型来说通常具有挑战性，有时会导致幽默的生成。
 
-作为全球最知名的人工智能企业，Open AI非常重视模型的安全性。Sora在正式发布之前，还会经过对抗性测试，并加入用于标注人工智能生成内容的CRPA metadata标签。此外，Open AI还会过滤不安全的文本提示，避免生成违反政策的内容。总之在发布该模型之前，Open AI会优先考虑安全性。
+作为全球最知名的人工智能企业，OpenAI非常重视模型的安全性。Sora在正式发布之前，还会经过对抗性测试，并加入用于标注人工智能生成内容的CRPA metadata标签。此外，OpenAI还会过滤不安全的文本提示，避免生成违反政策的内容。总之在发布该模型之前，OpenAI会优先考虑安全性。

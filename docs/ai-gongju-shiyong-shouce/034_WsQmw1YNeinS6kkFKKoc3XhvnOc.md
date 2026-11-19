@@ -1,3 +1,4 @@
+
 # NO.15👉100种GPT角色指令
 
 > 来源：[https://my.feishu.cn/docx/BwEHdTMYDoMBrWxwNs1cBZKAnOe](https://my.feishu.cn/docx/BwEHdTMYDoMBrWxwNs1cBZKAnOe)

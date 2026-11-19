@@ -1,3 +1,5 @@
+
+
 # GLM-4.6 首发实测，和 Claude 4.5 比怎么样？
 
 > 来源：[https://chatmemo.feishu.cn/docx/GfM6dEhy0oXJZaxv4COc6qPynld](https://chatmemo.feishu.cn/docx/GfM6dEhy0oXJZaxv4COc6qPynld)
@@ -5,16 +7,14 @@
 > **核心速递：**
 
 +   GLM-4.6 发布，基准榜单排名提升，价格不变
-
 +   实测，Coding 效果对齐 Claude 4，超越其他国产模型
-
 +   GLM 开发者包月套餐升级，1/7 价格取得 Claude 4 9/10 的效果，值得使用
 
 这个国庆节，AI 圈主打一个谁都不许放假。
 
 前有 Deepseek-V3.2 开源，后有 Claude Sonnet 4.5 突袭，头部 AI 公司都挤在节前这两天秀肌肉。
 
-在这场混战里，智谱也放出了新模型  GLM-4.6，迄今智谱最强的 Coding 模型。
+在这场混战里，智谱也放出了新模型 GLM-4.6，迄今智谱最强的 Coding 模型。
 
 ![](img/3ec77ddb20d195e964e2f54cbc889cca.png)
 
@@ -28,7 +28,7 @@
 
 ---
 
-## 💡  GLM 模型：特性一图速览
+## 💡 GLM 模型：特性一图速览
 
 智谱这次只发 1 款模型：**GLM-4.6**，大杯，355B-A32B。
 
@@ -41,9 +41,7 @@
 抓 GLM-4.6 升级的重点：
 
 +   **Coding 能力升级：**在 Claude Code 真实环境中，实际性能超越过往，比肩 Claude Sonnet 4
-
 +   **上下文长度增加：**由 128K 提升至 200K，能支持一次性分析更复杂的项目代码（新 DeepSeek V3.2 仍为 128K）
-
 +   **Tokens 消耗减少：**与前代相比，同类任务可节省 30% 以上 tokens 消耗，干活更快，花钱更少。
 
 **所以，真正的问题来了：**
@@ -56,11 +54,11 @@
 
 每次新模型的发布，用户、开发者最在乎的其实是一个相对结论：
 
-1.  这个模型，在目标任务中，排全球/国内模型第几？
+1. 这个模型，在目标任务中，排全球/国内模型第几？
 
-1.  和“我”当前在用的模型相比，有没有必要迁移？
+1. 和“我”当前在用的模型相比，有没有必要迁移？
 
-以下是 **GLM-4.6 **和最新  Claude Sonnet 4.5、GPT-5 Codex、DeepSeek V3.2，以及上代但足够优秀的 Gemini 2.5 Pro、Claude Sonnet 4 等 真实对比与结论。
+以下是 **GLM-4.6** 和最新 Claude Sonnet 4.5、GPT-5 Codex、DeepSeek V3.2，以及上代但足够优秀的 Gemini 2.5 Pro、Claude Sonnet 4 等 真实对比与结论。
 
 选了几个众多测试中，有代表性、且方便在文中对比横测差距的 Case，与你分享：
 
@@ -84,33 +82,25 @@ PDF 共 64 页，9.3 MB，需要分析提炼的内容量相当大。（其他模
 
 这是两次不同的对比结果，一次与最新模型比，一次与前代、与自身比：
 
-**1）GLM-4.6，与新品**** DeepSeek V3.2、Claude Sonnet** 4.5、GPT-5 Codex 的对比
+**1）GLM-4.6，与新品 DeepSeek V3.2、Claude Sonnet 4.5、GPT-5 Codex 的对比**
 
 ![](img/33eb6c598ccba39d907cbf59366deec3.png)
 
 +   GLM-4.6：产出的长图排版十分合理，内容丰富度也相对合理
-
 +   DeepSeek V3.2 - reasoning ：出现了部分图形空白，排版设计单一，重点不突出的问题
-
 +   GPT-5 Codex：在文字呈现上较其他模型更丰富深入，像完整报告；但出现了排版溢出的微小瑕疵
-
 +   Claude Sonnet 4.5：在布局结构、自主设计感上最具优势，详略得当（不过出现了一处数据幻觉，可以接受）
-
 +   **新品横测排名**：**Cla****ude**** Sonnet 4.5 ＞** GPT-5 Codex ≈ GLM-4.6 ＞ DeepSeek V3.2
 
-**2）GLM-4.6，与前代 ****G**LM-4.5、Claude Sonnet 4、Gemini 2.5 Pro、Qwen3-Max 的对比
+**2）GLM-4.6，与前代 GLM-4.5、Claude Sonnet 4、Gemini 2.5 Pro、Qwen3-Max 的对比**
 
 ![](img/4c2a24ecb5db7a707680c3eae1561454.png)
 
 +   GLM-4.6 比起 前代 4.5，在布局设计与推理理解（从内容结构与提炼上看），提升明显
-
 +   基本与 Claude Sonnet 4 持平？我感觉 GLM-4.6 似乎更好一点
-
 +   Gemini 2.5 Pro 得益于其独特的结构化思维链，在内容提炼上有独特之处，读起来更容易理解。但前端设计略逊与 GLM
-
 +   Qwen3 最近更新了一个 Max 版本，内容丰富度可以。但语言一致性上仍然存在问题，在中文 Prompt 下偏好输出英文，整体布局虽然没有 bug，但设计呈现效果不佳
-
-+   **与前代对比结果：****GLM-4.6**** ＞ ****Gem**ini 2.5 Pro ≈ Claude Sonnet 4 ＞ GLM-4.5 ≈ Qwen3-Max
++   **与前代对比结果：GLM-4.6 ＞ Gemini 2.5 Pro ≈ Claude Sonnet 4 ＞ GLM-4.5 ≈ Qwen3-Max**
 
 整体来看，不难发现这个趋势：
 
@@ -157,21 +147,18 @@ PDF 共 64 页，9.3 MB，需要分析提炼的内容量相当大。（其他模
 
 结果令人意外，**本轮测试排名：**
 
-+   **第一梯队：****GLM-4.6** ≈  Claude Sonnet 4.5
-
++   **第一梯队：GLM-4.6** ≈  Claude Sonnet 4.5
 +   **第二梯队：**Claude Sonnet 4 ≈ Gemini 2.5 Pro
-
 +   **第三梯队：**GLM-4.5 ≈ DeepSeek V3.2
 
-这个结果，说实话，完全超出了我的预料，我本以为这会是 Claude 4.5 的主场，但 GLM-4.6 给足了惊喜：
+这个结果，说实话，完全超出了我的预期，我本以为这会是 Claude 4.5 的主场，但 GLM-4.6 给足了惊喜：
 
 +   在无任何额外 Prompt 指导下，GLM-4.6 取得的效果与 Claude 新模型 Sonnet 4.5 相比丝毫不逊色。更是较 DeepSeek V3.2 以及包括 Claude 4 在内的一众前代模型，有了长足的进步。
-
 +   而数据大屏一向是 To B 软件相当重要的商业化工作。按照 GLM-4.6 的本轮效果，对国内 To B 软件行业，绝对算是重大效率改进。
 
 也难怪朋友 #赛博禅心 @大聪明 刚刚发布的「👸号排版 Agent」，其自动排版的底模也选择了 GLM-4.6。
 
-![](img/f50353f884bdba897979f5fb75ea0d1f.png)
+![](img/f50353f884bdba89791f5fb75ea0d1f.png)
 
 一次胜出是巧合，两次、三次？
 
@@ -198,11 +185,8 @@ Claude 一向很强，但是限于其高昂的计费价格（$3/M input tokens�
 ![](img/96629740b29ca880cb7ff143a9e5991f.png)
 
 +   **模型升级：**此前已订阅 Plan 的用户，自动升级至 GLM-4.6
-
 +   **能力扩展：**新增了图像识别与搜索能力
-
 +   **更重要的是，价格方面：**低至 ¥20/月，Lite/Pro/Max 计划分别每 5 小时提供 120/600/2400 次 Prompts 额度，每月总计可用总量高达几十亿到数百亿 tokens（大概是等量 API 价格的 0.1 折）
-
 +   **平台兼容方面：**支持 Claude Code、Roo Code、Kilo Code、Cline 等 10+ 编程工具
 
 结合此前的效果，你或许可以把 GLM-4.6 视作……
@@ -222,11 +206,8 @@ Claude 一向很强，但是限于其高昂的计费价格（$3/M input tokens�
 ![](img/ad5db77a83234ce794217219cd4d6fa7.png)
 
 +   C 端对话：z.ai 、智谱清言已全面支持 GLM-4.6
-
 +   API 使用：国内用户通过 bigmodel.cn ，海外用户通过 z.ai
-
 +   开源部署：GLM-4.6 将在 Hugging Face、ModelScope 发布
-
 +   GLM Coding Plan 购买：通过 bigmodel.cn 直接购买，支持个人与企业版两类套餐
 
 ---
@@ -239,12 +220,11 @@ Claude 一向很强，但是限于其高昂的计费价格（$3/M input tokens�
 
 一方面，是调用成本降低 50% 的 DeepSeek V3.2 Exp，
 
-一方面，Anthropic 家发布 Claude Sonnet 4.5  Coding 模型，再次刷新 AI Coding 能力天花板。
+另一方面，Anthropic 家发布 Claude Sonnet 4.5  Coding 模型，再次刷新 AI Coding 能力天花板。
 
 在这波 9 月底的模型扎堆迭代的“神仙打架”中，再回头看 GLM-4.6：
 
 +   经典长文一图流测试中，GLM-4.6 的综合表现稳稳压过了 DeepSeek V3.2 新品与国内其他模型，比肩 Claude 4，甚至能与 GPT-5 Codex 有来有回
-
 +   在本文更贴近商业开发场景的数据大屏测试中，甚至与 Claude 4.5 相比也不逊色（仅针对本次测试，非通用结论），明显优于前代模型
 
 这些实测结果，让最后的结论变得不言而喻：
@@ -258,3 +238,4 @@ Claude 一向很强，但是限于其高昂的计费价格（$3/M input tokens�
 我也很期待你的实测反应与反馈。
 
 <https://chatmemo.feishu.cn/sync/OXhxdlqqcsuEkObLUgsceuRinef>
+

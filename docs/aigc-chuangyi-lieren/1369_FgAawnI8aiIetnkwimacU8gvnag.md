@@ -1,3 +1,4 @@
+
 # 20251028-刚刚，马斯克发布AI版“维基百科”Grokipedia：扮猪吃老虎？
 
 > 来源：[https://aigcreative.feishu.cn/docx/ToKhdMVpbokYgfxucoiczVn1nue](https://aigcreative.feishu.cn/docx/ToKhdMVpbokYgfxucoiczVn1nue)
@@ -82,9 +83,9 @@ Grokipedia 的偏见来自 AI。那 AI 的偏见又来自哪里？
 
 你想，xAI 的最终目标是训练出最强的 AI，是理解宇宙。要训练 AI，就需要海量的、高质量的数据。Grokipedia 扮演的就是这个角色。
 
-它把维**基百科的**内容（现成的基础材料）拿来，用 Grok 模型（AI员工）按照 xAI 的规则（SOP）清洗一遍，去掉马斯克不喜欢的偏见，再混合 X 平台上的实时数据（新鲜原料），最后产出的这个“Grokipedia 知识库”，就成了训练下一代 Grok 模型的专有数据。
+它把维基百科的内容（现成的基础材料）拿来，用 Grok 模型（AI员工）按照 xAI 的规则（SOP）清洗一遍，去掉马斯克不喜欢的偏见，再混合 X 平台上的实时数据（新鲜原料），最后产出的这个“Grokipedia 知识库”，就成了训练下一代 Grok 模型的专有数据。
 
-这是一个数据上的闭环：**X** 产数据 -> Grok 处理 -> Grokipedia 整理成知识 -> 这些知识再用来训练 Grok。
+这是一个数据上的闭环：X 产数据 -> Grok 处理 -> Grokipedia 整理成知识 -> 这些知识再用来训练 Grok。
 
 我们能免费访问，可能只是在帮他们测试这个“数据处理”的流程。
 

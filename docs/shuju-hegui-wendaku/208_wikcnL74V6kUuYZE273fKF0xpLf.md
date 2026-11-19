@@ -1,3 +1,4 @@
+
 # B25牌照
 
 > 来源：[https://docs.feishu.cn/docx/FvRhdx60YosX9XxTcm4c8uGVnYg](https://docs.feishu.cn/docx/FvRhdx60YosX9XxTcm4c8uGVnYg)
@@ -18,6 +19,6 @@
 
 **-答4：**一般的，EDI+ICP许可就可以了。
 
-**总结：技术上对于删除的要求，未见较**为明确的通用规定，仅金融行业有部分参考。
+**总结：技术上对于删除的要求，未见较为明确的通用规定，仅金融行业有部分参考。
 
 [牌照/资质](https://cbe8t1r4a5.feishu.cn/wiki/wikcnU29fliEy3Bopg6TKTFPLec)

@@ -1,9 +1,7 @@
-# 01.17-魏哲家：AI 成台积电最大“聚宝盆”，驱动未来五年收入复合增长率超 20%
-
-> 来源：[https://agijuejin.feishu.cn/docx/MC5zd4OM7oikkHxLeDpcIH36nZe](https://agijuejin.feishu.cn/docx/MC5zd4OM7oikkHxLeDpcIH36nZe)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 17 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/MC5zd4OM7oikkHxLeDpcIH36nZe](https://agijuejin.feishu.cn/docx/MC5zd4OM7oikkHxLeDpcIH36nZe)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/46d6604ea35089e548d25e1427dbe243.png)

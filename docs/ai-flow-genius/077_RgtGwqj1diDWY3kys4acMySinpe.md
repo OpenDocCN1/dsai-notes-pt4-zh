@@ -1,3 +1,4 @@
+
 # Sam Altman 示范 ChatGPT 自定义指令
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/D9HLdJ9lqonIs5xnB5KculMqn7g](https://jalicvoygc0.feishu.cn/docx/D9HLdJ9lqonIs5xnB5KculMqn7g)

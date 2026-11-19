@@ -1,3 +1,4 @@
+
 # 2023中国AIGC应用研究报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/OdFndSzggoHjJWxphxMcjvYqnTg](https://agijuejin.feishu.cn/docx/OdFndSzggoHjJWxphxMcjvYqnTg)

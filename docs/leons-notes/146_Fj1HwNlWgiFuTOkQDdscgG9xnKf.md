@@ -1,9 +1,8 @@
+
 # 202310｜不断向好，每次进步一点点
 
 > 来源：[https://leonzhang.feishu.cn/docx/GyULdf7v9o8LwIxQrABc8aeWnXc](https://leonzhang.feishu.cn/docx/GyULdf7v9o8LwIxQrABc8aeWnXc)
-
 > #月度总结 #热爱生活 #个人成长
-
 > 如果今天是你生命的最后一天，你还会做你现在做的事情吗？
 
 ## 最近经历
@@ -14,7 +13,7 @@
 
 真的是“时光如梭，物是人非”。还记得高中刚开始的时候还用这句写作文开头，之前感受不深，可现在是切切实实感受到了。
 
-**距 2023 年结束，还有**
+距 2023 年结束，还有
 
 最近，时常会想到，当时选择离开的动机。可能不一定是最好的选择，但一定是当下正确的选择。
 
@@ -26,7 +25,7 @@
 
 为什么是两天？因为在判断原因和结果推演。
 
-给自己两天时间去思考判断本质原因，判断**自己是在逃避现实，还是说**真的有其他考虑。热头脑思考，冷头脑决策。让自己冷静下来，才能做出理性的合理决策。
+给自己两天时间去思考判断本质原因，判断自己是在逃避现实，还是说真的有其他考虑。热头脑思考，冷头脑决策。让自己冷静下来，才能做出理性的合理决策。
 
 第一，从更多可能出发的话，理论上 Gap 会有更多可能。更多的输入、写作输出，学代码、尝试开发 App 等等，都是可能。
 
@@ -50,7 +49,7 @@
 
 +   [大白话聊 Apple Silicon（苹果芯片）](https://sm84lfdag7.feishu.cn/wiki/QfffwdAQ3ipzuIkYqnrcgWwNnqg)一，和朋友聊天后，梳理了一篇关于苹果芯片的内容，如下：
 
-+   第二，[刘少楠](https://sm84lfdag7.feishu.cn/wiki/XBJPwxssKiV2VKk7Fw6cdsYEnPd)理了一下，少楠近一年（2023 年）在即刻上的发言（详见  ），几乎是拿即刻当朋友圈发的。
++   第二，[刘少楠](https://sm84lfdag7.feishu.cn/wiki/XBJPwxssKiV2VKk7Fw6cdsYEnPd)理了一下，少楠近一年（2023 年）在即刻上的发言（详见 ），几乎是拿即刻当朋友圈发的。
 
 **题外话：**
 
@@ -58,7 +57,7 @@
 
 不过从云文档的 Black 支持复制链接开始，就预判到会有这么一天，或早或晚罢了。也有一个我不太喜欢的点是，「更新时间」会直接同步更新至最新时间（从产品策略上我理解，一者是定位，目标人群是办公用，那就必须有 log；二者确实改变了 Black 的源头）。
 
-<https://my.feishu.cn/sync/KLwDdAfRqsI9mwbjX43cLNnLnFb>
+`https://my.feishu.cn/sync/KLwDdAfRqsI9mwbjX43cLNnLnFb`
 
 ## 最近观察和思考
 
@@ -82,19 +81,19 @@ More about: [2023 年 10 月｜Meditations](https://sm84lfdag7.feishu.cn/wiki/HO
 
 ## 有什么好玩的事情发生
 
-1.  西溪湿地公园
+1. 西溪湿地公园
 
-<https://my.feishu.cn/sync/SsjgdVhfVsVSKRbKOx1c3XBenoh>
+`https://my.feishu.cn/sync/SsjgdVhfVsVSKRbKOx1c3XBenoh`
 
-1.  见初中同学 C（10 多年的友谊）
+1. 见初中同学 C（10 多年的友谊）
 
 10 月份是他生日，去年的生日，也是我俩在一起过的。两个男人嘛，随便逛逛、压压马路，吃吃饭、聊聊天。
 
 嗯，秒简相机的自动滤镜还不错。
 
-<https://my.feishu.cn/sync/CbGJdVMdFs44gqbD9PPcmfh9nHa>
+`https://my.feishu.cn/sync/CbGJdVMdFs44gqbD9PPcmfh9nHa`
 
-1.  见高中同学 H
+1. 见高中同学 H
 
 H 从南京过来，要去上海工作了，入职前打算在杭州转一下。
 
@@ -104,13 +103,13 @@ H 从南京过来，要去上海工作了，入职前打算在杭州转一下。
 
 事实证明，没走过的路，没去过的店，很容易踩坑。带朋友去的话，还是要谨慎。
 
-<https://my.feishu.cn/sync/EL5sdo3WDsl2AGbGCwvcwH8knqc>
+`https://my.feishu.cn/sync/EL5sdo3WDsl2AGbGCwvcwH8knqc`
 
 ## 最近在听、在看
 
 ### 播客
 
-1.  46: 没有签证怎么去非洲干活：和丰泽聊聊在非洲不同国家打灰的体验
+1. 46: 没有签证怎么去非洲干活：和丰泽聊聊在非洲不同国家打灰的体验
 
 +   出门在外，永远不要把护照轻易交给其他人。
 
@@ -120,7 +119,7 @@ H 从南京过来，要去上海工作了，入职前打算在杭州转一下。
 
 「夜晚不能出门」这个“规则”，在我一个土生土长的中国人眼里，确实不太能够通过想象得出这个结论，但是我理解。至于提到的“中国人部分” 只能说，害人之心不可有，防人之心不可无。
 
-1.  [96. 从业二十年，我还是会因为对设计的焦虑而失眠（](https://www.xiaoyuzhoufm.com/episode/650405e6186beab8f0937db2)ABCD 设计总监 Nod Young）
+1. [96. 从业二十年，我还是会因为对设计的焦虑而失眠（](https://www.xiaoyuzhoufm.com/episode/650405e6186beab8f0937db2)ABCD 设计总监 Nod Young）
 
 +   Nod Young：向外走，不断扩大你的半径。做你很想做，但没有特别确定，且不敢做的事情。通过不断的小事去 push 自己，去 Doing，而不只是停留在 thinking。
 
@@ -132,13 +131,13 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 （马斯克传后记：[读《马斯克传》后记：人生不设限，成功无上限](https://sm84lfdag7.feishu.cn/wiki/ZH1fwDrdEifpAYk4k9ccRctZn2e)）
 
-1.  35.对话点金手丰年 | 颠覆认知，老板们都怎么做 IP
+1. 35.对话点金手丰年 | 颠覆认知，老板们都怎么做 IP
 
 +   做抖音就是做平台，做平台就是做流量。和直播没有关系。是需要导流到私域再转化的。
 
 想清楚做账号的目的是什么，目标人群是什么，之后才是如何做的问题。不要尝试用战术上的勤奋来掩盖战略上的懒惰。
 
-1.  37.老范线下分享会：如何用道德经的思维做 IP
+1. 37.老范线下分享会：如何用道德经的思维做 IP
 
 +   道德经核心四个字：道法自然。
 
@@ -148,7 +147,7 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 +   把优点发挥到极致。知道你的弱点，变成你的特点。
 
-1.  36.赚过 1 亿，赔光且负债，我如何从人生谷底逆风翻盘？｜对话孙圈圈
+1. 36.赚过 1 亿，赔光且负债，我如何从人生谷底逆风翻盘？｜对话孙圈圈
 
 +   创业是在对抗命运，一个不断认识人性的过程，从陷入到巨大的自我怀疑、到至暗时刻、到东山再起。
 
@@ -190,7 +189,7 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 +   灾难的发生可能是生活和事业的正常轨迹。他努力谋划、准备，就是为了在灾难降临时能够直面它们。
 
-+   「**活到老学到老**」，否则就会被被取代。
++   活到老学到老，否则就会被被取代。
 
 +   强颜欢笑和无所事事无法解决问题。
 
@@ -200,7 +199,7 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 ### 影视作品
 
-1.  《长安三万里》｜推荐
+1. 《长安三万里》｜推荐
 
 +   李白：天下事无所不难，要做就做最难的事。 只为求，功成、名遂、身退得道。
 
@@ -208,7 +207,7 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 读书本就艰难，即便是李白，“只要功夫深，铁杵磨成针”。
 
-1.  《普罗米修斯》｜一般
+1. 《普罗米修斯》｜一般
 
 科幻电影，一部关于科学家、资本家、雇佣军的冒险旅程，关于人类起源和外星生命的探索。
 
@@ -216,7 +215,7 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 给足了我们想象的空间，为什么有高级智能生物？为什么要造出可以杀人的生命体？为什么好不容易寻找到的高级智能生物想要毁掉地球、毁掉全人类？
 
-1.  《幸福终点站（The Terminal）》｜推荐
+1. 《幸福终点站（The Terminal）》｜推荐
 
 +   有人的地方就会有规则，有人的地方也能打破规则。
 
@@ -226,7 +225,7 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 在不确定的生活里，尝试、努力寻找那一丝确定性，即便一无所依、一无所靠。
 
-1.  《终极面试》｜推荐
+1. 《终极面试》｜推荐
 
 +   主动性、观察力、相互作用。
 
@@ -246,27 +245,27 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 > 温馨提示：建议搭配降噪耳机，音量调至 50%-70%，尽量感受现场环境。若为夜深人静，更佳，enjoy～
 
-1.  【合唱《送别》｜天之涯，地之角，知交半零落。一斛浊酒尽余欢，今宵别梦寒。】 https://www.bilibili.com/video/BV1Q44y1A7ZZ/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【合唱《送别》｜天之涯，地之角，知交半零落。一斛浊酒尽余欢，今宵别梦寒。】 `https://www.bilibili.com/video/BV1Q44y1A7ZZ/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-1.  【《送别》人生难得是欢聚，惟有别离多｜十三邀 x 韩红】 https://www.bilibili.com/video/BV1zF411R75T/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【《送别》人生难得是欢聚，惟有别离多｜十三邀 x 韩红】 `https://www.bilibili.com/video/BV1zF411R75T/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-1.  【朴树-《送别》泪撒录音棚，一度哽咽失声】 https://www.bilibili.com/video/BV11W411471S/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【朴树-《送别》泪撒录音棚，一度哽咽失声】 `https://www.bilibili.com/video/BV11W411471S/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-1.  【【“国家队”惊艳翻唱《追寻》】当《国际歌》响起，我哭了……】 https://www.bilibili.com/video/BV13f4y1L7C9/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【【“国家队”惊艳翻唱《追寻》】当《国际歌》响起，我哭了……】 `https://www.bilibili.com/video/BV13f4y1L7C9/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
 愿你我也能历经沧海、阅尽悲欢，依旧少年。
 
 ## 下月有什么打算
 
-1.  努力再提高工作效率，寻找适合的方式方法。
+1. 努力再提高工作效率，寻找适合的方式方法。
 
-1.  哲学相关的书要开始读了，个人爱好。
+1. 哲学相关的书要开始读了，个人爱好。
 
-1.  关于工作，如果有的话，最好，可以增加安全感；若是没有，那就年后再找（毕竟 11 月份了，马上很多公司开始准备复盘和筹划第二年工作了）。
+1. 关于工作，如果有的话，最好，可以增加安全感；若是没有，那就年后再找（毕竟 11 月份了，马上很多公司开始准备复盘和筹划第二年工作了）。
 
-## **one more thing**
+## one more thing
 
-问君此去几时还，来时莫徘徊。 —— 李叔同《送别》
+问君此去几时还，来时莫徘徊。——李叔同《送别》
 
 ## Further reading
 
@@ -276,10 +275,10 @@ Nod Young，设计工作室 ABCD 的联创。第一次知道他还是因为老�
 
 +   [读《马斯克传》后记：人生不设限，成功无上限](https://sm84lfdag7.feishu.cn/wiki/ZH1fwDrdEifpAYk4k9ccRctZn2e)
 
-+   范冰的 Twitter：https://x.com/XDash/status/1717121213250838686?s=20
++   范冰的 Twitter：`https://x.com/XDash/status/1717121213250838686?s=20`
 
 ## More about
 
-<https://my.feishu.cn/sync/DQNQdmzLpsvb5HbyawNc0y79nCf>
+`https://my.feishu.cn/sync/DQNQdmzLpsvb5HbyawNc0y79nCf`
 
 2023 年 11 月 2 日 于杭州

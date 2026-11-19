@@ -1,3 +1,4 @@
+
 # Agentic RAG
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/KaPrdeLbFod2zCxnnr3cZ1pznDc](https://v11enp9ok1h.feishu.cn/docx/KaPrdeLbFod2zCxnnr3cZ1pznDc)
@@ -6,43 +7,43 @@
 
 ![](img/bb77ab6840a758952107d5aa862a9c66.png)
 
-#### 设置LLM（大语言模型）
+## 设置`LLM`（大语言模型）
 
-CrewAI与所有主流LLM和提供商无缝集成。以下是通过Ollama设置本地Qwen 3的方法：
+`CrewAI`与所有主流`LLM`和提供商无缝集成。以下是通过`Ollama`设置本地`Qwen 3`的方法：
 
 ![](img/950a2c7647c1200e7744a8c0d325bcca.png)
 
-```
+```python
 from crewai import Crew, Agent, Task, LLM
 import litserve as ls
 from tools import FirecrawlWebSearchTool, VectorDBSearchTool
 
-class AgenticRAGAPI(ls.LitAPI):def setup(self, device):
-        llm = LLM(model=&quot;ollama/qwen3&quot;)...
+class AgenticRAGAPI(ls.LitAPI):
+    def setup(self, device):
+        llm = LLM(model="ollama/qwen3")...
 ```
 
 ### 定义研究智能体和任务
 
-该智能体接受用户查询，并使用向量数据库工具和由Firecrawl提供支持的网络搜索工具检索相关上下文。
+该智能体接受用户查询，并使用向量数据库工具和由`Firecrawl`提供支持的网络搜索工具检索相关上下文。
 
-再次，将其放入LitServe的setup()方法中：
+再次，将其放入`LitServe`的`setup()`方法中：
 
-python
-
-```
+```python
 from crewai import Crew, Agent, Task, LLM
 import litserve as ls
 from tools import FirecrawlWebSearchTool, VectorDBSearchTool
 
-class AgenticRAGAPI(ls.LitAPI):def setup(self, device):
-        llm = LLM(model=&quot;ollama/qwen3&quot;)
+class AgenticRAGAPI(ls.LitAPI):
+    def setup(self, device):
+        llm = LLM(model="ollama/qwen3")
         
-        researcher_agent = Agent(role=&quot;Senior Researcher&quot;,
-                                 goal=&quot;Research about the user query...&quot;,
-                                 backstory=&quot;You are a skilled researcher...&quot;,
+        researcher_agent = Agent(role="Senior Researcher",
+                                 goal="Research about the user query...",
+                                 backstory="You are a skilled researcher...",
                                  tools=[FirecrawlWebSearchTool(), VectorDBSearchTool],
                                  llm=llm)
         
-        researcher_task = Task(description=&quot;Research about: {query}&quot;,
+        researcher_task = Task(description="Research about: {query}",
                                agent=researcher_agent)...
 ```

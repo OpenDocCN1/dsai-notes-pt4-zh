@@ -1,46 +1,47 @@
+
 # 2024 年 10 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/TNsWdEH9lo3gvrxd22fcaui0nOg](https://docs.feishu.cn/docx/TNsWdEH9lo3gvrxd22fcaui0nOg)
 
 ---
 
-# 一、法律科技 / AI 融资动态
+## 一、法律科技 / AI 融资动态
 
-## CLM 厂商 DocJuris 完成 800 万美元 A 轮融资
+### CLM 厂商 DocJuris 完成 800 万美元 A 轮融资
 
 [10 月 1 日](https://www.docjuris.com)，AI 驱动的 CLM 厂商 DocJuris 宣布完成 800 万美元 A 轮融资，Watertower Ventures、Surface Ventures 和 Seed Round Capital 投资。
 
 > 拓展阅读：https://www.prnewswire.com/news-releases/contracting-in-a-click-docjuris-secures-series-a-funding-302259152.html?tc=eml_cleartime
 
-## CLM 厂商 Formality 完成 800 万欧元种子轮融资
+### CLM 厂商 Formality 完成 800 万欧元种子轮融资
 
-[10 月 2 日，](https://www.formality.com)法国 CLM 厂商 Formality 宣布完成 800 万欧元种子轮融资。
+[10 月 2 日](https://www.formality.com)，法国 CLM 厂商 Formality 宣布完成 800 万欧元种子轮融资。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1885822/france-based-formality-eyes-us-expansion-with-funding
 
-## 法律 AI 计时计费平台 Billables AI 完成 390 万美元种子轮融资
+### 法律 AI 计时计费平台 Billables AI 完成 390 万美元种子轮融资
 
 10 月 2 日，法律 AI 计时平台 Billables AI 宣布完成 390 万美元种子轮融资，Wing VC 领投，F7、Darkmode、SignalFire、Alumni Ventures 以及其他个人投资者跟投。该公司希望利用 AI 简化法律专业人士的计时计费流程。
 
-## Reducto 完成 840 万美元种子轮融资，聚焦 PDF 和电子表格数据
+### Reducto 完成 840 万美元种子轮融资，聚焦 PDF 和电子表格数据
 
-[10 月 2 ](https://reducto.ai/)日，法律 AI 初创公司 Reducto 宣布完成 840 万美元种子轮融资，First Round Capital 领投，YCombinator、BoxGroup、SVAngel 和 Liquid2 等基金，以及该公司的创始人，包括 Arash Ferdowsi（Dropbox）、Andrew Ofstad（Airtable）、Kulveer Taggar（Zeus）、JJ Fliegelman（WayUp）、Richard Aberman（WePay）、Ralph Goottee 和 Tracy Young（PlanGrid）等人参与。
+[10 月 2 日](https://reducto.ai/)，法律 AI 初创公司 Reducto 宣布完成 840 万美元种子轮融资，First Round Capital 领投，YCombinator、BoxGroup、SVAngel 和 Liquid2 等基金，以及该公司的创始人，包括 Arash Ferdowsi（Dropbox）、Andrew Ofstad（Airtable）、Kulveer Taggar（Zeus）、JJ Fliegelman（WayUp）、Richard Aberman（WePay）、Ralph Goottee 和 Tracy Young（PlanGrid）等人参与。
 
-Reducto  利用 AI 技术帮助企业快速提取和检索庞大文件中的数据，重点处理 PDF 和电子表格格式的文件。
+Reducto 利用 AI 技术帮助企业快速提取和检索庞大文件中的数据，重点处理 PDF 和电子表格格式的文件。
 
 > 产品地址：https://app.reducto.ai/share/16a76358-a2cd-41ba-9f21-4e3755c98211
 
 > 拓展阅读：https://reducto.ai/blog/seed-round
 
-## AI 知识产权保护平台 MarqVision 完成 1600 万美元 A 轮融资
+### AI 知识产权保护平台 MarqVision 完成 1600 万美元 A 轮融资
 
 10 月 3 日，知识产权保护平台 MarqVision 宣布完成 1600 万美元 A 轮融资，并推出一个名为“Marq AI”的 AI 助手，通过智能扫描和分析网上的信息、自动化版权工作流程、智能处理侵权行为等功能，更高效地保护版权。
 
 > 拓展阅读：https://www.marqvision.com/blog/introducing-marq-ai-our-next-evolution-in-brand-protection
 
-## 法律 AI 公司 EvenUp 完成 1.35 亿美元 D 轮融资，估值 10 亿美金
+### 法律 AI 公司 EvenUp 完成 1.35 亿美元 D 轮融资，估值 10 亿美金
 
-[10 月 8](https://www.evenuplaw.com) 日，法律 AI 公司 EvenUp 宣布完成 1.35 亿美元 D 轮融资，本轮融资由 Bain Capital Ventures 领投，Lightspeed Venture Partners、Premji Invest、SignalFire、Bessemer Venture Partners 和 B Capital Group 跟投。
+[10 月 8 日](https://www.evenuplaw.com)，法律 AI 公司 EvenUp 宣布完成 1.35 亿美元 D 轮融资，本轮融资由 Bain Capital Ventures 领投，Lightspeed Venture Partners、Premji Invest、SignalFire、Bessemer Venture Partners 和 B Capital Group 跟投。
 
 本轮融资后 Evenup 总融资额达到 2.35 亿美元，估值超 10 亿美元。此前 EvenUp 在 Lightspeed Venture Partners 领投的 C 轮融资中筹集了 3500 万美元，在 Bessemer Venture Partners 领投的 B 轮融资中筹集了 5050 万美元。
 
@@ -52,53 +53,45 @@ EvenUp 利用生成式 AI 实现人身伤害案件自动化，目前已经服务
 
 据了解，EvenUp 是今年最新一家获得融资的人身伤害法律科技公司。8 月，人身伤害和大规模侵权公司 Supio 宣布完成 2500 万美元 A 轮融资，该公司提供一款 AI 工具，可帮助律所客户分析案件记录、总结证词、深入研究证人证词或专家报告等，为庭审做准备。
 
-> 拓展阅读：
-
-> https://www.evenuplaw.com/blog/evenup-announces-135-million-series-d-and-launches-four-new-groundbreaking-products
-
+> 拓展阅读：https://www.evenuplaw.com/blog/evenup-announces-135-million-series-d-and-launches-four-new-groundbreaking-products
 > https://www.law.com/legaltechnews/2024/10/08/evenup-raises-135-million-in-series-d-investment/
+> [重磅！法律 AI 公司 EvenUp 完成 1.35 亿美元 D 轮融资，估值 10 亿美金](https://mp.weixin.qq.com/s/g0p_w1zVk6lP0xeMkPOMlw)
 
-> [重磅！法律 AI 公司 EvenUp 完成 1.35](https://mp.weixin.qq.com/s/g0p_w1zVk6lP0xeMkPOMlw) 亿美元 D 轮融资，估值 10 亿美金
+### 律所 CRM 平台 Case Status 完成 1970 万美元 B 轮融资
 
-## 律所 CRM 平台 Case Status 完成 1970 万美元 B 轮融资
-
-10 月 8 日，律所 CRM 平台 Case Status 宣布完成 19[70 万美元 B 轮融资](https://www.bipventures.vc/)，Grayhawk Capital 和 Topmark Partners 领投，BIP Ventures、Front Porch Ventures 等跟投。
+10 月 8 日，律所 CRM 平台 Case Status 宣布完成 1970 万美元 B 轮融资，Grayhawk Capital 和 Topmark Partners 领投，BIP Ventures、Front Porch Ventures 等跟投。
 
 Case Status 为律师事务所提供客户关系管理（CRM）产品，具体功能包括：
 
-+   案件状态实时跟踪：律师事务所、案件经理或团队可以通过此应用实时查看自己案件的状态。
-
-+   沟通交流：提供与团队成员沟通的功能，方便用户与律师团队进行信息交流。
-
-+   文件提交：用户能够在应用内提交相关文件，便于案件处理过程中的文件传递和管理。
-
-+   预约安排：可以在应用上进行预约安排，例如预约与律师的会面等。
-
-+   客户反馈收集：自动收集客户反馈，帮助律所了解客户的需求和意见，对于不满意的客户可以主动沟通，维护良好的客户关系，同时良好的客户体验也有助于增加律所的好评和推荐。
++ 案件状态实时跟踪：律师事务所、案件经理或团队可以通过此应用实时查看自己案件的状态。
++ 沟通交流：提供与团队成员沟通的功能，方便用户与律师团队进行信息交流。
++ 文件提交：用户能够在应用内提交相关文件，便于案件处理过程中的文件传递和管理。
++ 预约安排：可以在应用上进行预约安排，例如预约与律师的会面等。
++ 客户反馈收集：自动收集客户反馈，帮助律所了解客户的需求和意见，对于不满意的客户可以主动沟通，维护良好的客户关系，同时良好的客户体验也有助于增加律所的好评和推荐。
 
 > 拓展阅读：https://www.casestatus.com/blog/case-status-announces-19-7m-series-b-investment
 
-## 建筑行业文档自动化平台 Document Crunch 完成 2150 万美元 B 轮融资
+### 建筑行业文档自动化平台 Document Crunch 完成 2150 万美元 B 轮融资
 
-[10 月 10 日，建筑行业文](https://www.documentcrunch.com)档合规平台 Document Crunch [宣布完成 2150 万美元 B](https://www.linkedin.com/company/navitas-capital-llc/) 轮[融资，Titanium Ve](https://www.linkedin.com/company/zacua-ventures/)nt[ures 领投，Ne](https://www.linkedin.com/company/fifth-wall-ventures/)metschek Group 、ANDRES Construction Services 和 Satterfield & Pontikes Construction 等主要建筑公司以及包括 Navitas Capital 、Zacua Ventures 、Fifth Wall 和 Ironspring Ventures 在内的现有投资者参与其中。
+[10 月 10 日，建筑行业文档合规平台 Document Crunch](https://www.documentcrunch.com) 宣布完成 2150 万美元 B 轮融资，[Titanium Ventures](https://www.linkedin.com/company/navitas-capital-llc/) 领投，[Nemtchek Group](https://www.linkedin.com/company/zacua-ventures/)、ANDRES Construction Services 和 Satterfield & Pontikes Construction 等主要建筑公司以及包括 [Navitas Capital](https://www.linkedin.com/company/fifth-wall-ventures/)、Zacua Ventures、Fifth Wall 和 Ironspring Ventures 在内的现有投资者参与其中。
 
 Document Crunch 利用 AI 技术为建筑行业提供合同合规和风险审查解决方案，可以快速识别合同风险、理解复杂条款，并确保项目团队保持合规性。
 
 > 拓展阅读：https://www.documentcrunch.com/press-articles/series-b
 
-## 律所客户智能平台 Orgaimi 获得德保罗大学创业基金 10 万美元投资
+### 律所客户智能平台 Orgaimi 获得德保罗大学创业基金 10 万美元投资
 
-[10 月 17](https://www.orgaimi.com) 日，面向律所和会计师事务所的客户智能平台 Orgaimi 宣布从德保罗大学创业基金获得了 10 万美元投资。该公司利用 AI、机器学习和数据科学模型来分析客户数据，帮助客户提高收入。
+[10 月 17 日](https://www.orgaimi.com)，面向律所和会计师事务所的客户智能平台 Orgaimi 宣布从德保罗大学创业基金获得了 10 万美元投资。该公司利用 AI、机器学习和数据科学模型来分析客户数据，帮助客户提高收入。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1890762/orgaimi-receives-100k-from-depaul-university-fund
 
-## 谷歌再次出手！合同起草初创公司 Genie AI 完成 1780 万美元 A 轮融资
+### 谷歌再次出手！合同起草初创公司 Genie AI 完成 1780 万美元 A 轮融资
 
-[10 月 23 ](https://www.genieai.co)日，英国法律 AI 初创公司 Genie AI 宣布完成 1780 万美元 A 轮融资，Google Venture 领投，Kholsa Ventures 跟投。Genie AI 成立于 2017 年，利用 AI 技术帮助律师事务所、公司法律部门以及更广大人群，起草、编辑和审查各种法律文件，同时提供“传统”的合同模板和条款数据库。
+[10 月 23 日](https://www.genieai.co)，英国法律 AI 初创公司 Genie AI 宣布完成 1780 万美元 A 轮融资，Google Venture 领投，Kholsa Ventures 跟投。Genie AI 成立于 2017 年，利用 AI 技术帮助律师事务所、公司法律部门以及更广大人群，起草、编辑和审查各种法律文件，同时提供“传统”的合同模板和条款数据库。
 
 据了解，Genie AI 至少是 Google Ventures 支持的第三家法律科技初创公司。
 
-今年 7 月，Google Ven[tures ](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488366&idx=1&sn=31cafa2edd8453be811960d78f07d8b5&chksm=fac529cecdb2a0d87f680cfaf1b2658ec726f8638df5b37b6c3d95733550291c6ab87b555e98&scene=21#wechat_redirect)[领投了法律 A](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487476&idx=1&sn=f739cf9c0306d00626c8c70e67af979a&chksm=fac53554cdb2bc425f2a190f267da081b4d81a076f1cd353353e322eb25c80356c3a56998beb&scene=21#wechat_redirect)[I  独角兽 Harvey](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488986&idx=1&sn=d8609dbaa4dd2b8d4e80b9435cb2bf0e&chksm=fac52f7acdb2a66cd4570ccb3dd83a46b3fc8722668fc49aec7884332b291f53517b9cc40766&scene=21#wechat_redirect) 的 1 亿美元 C 轮融资，4 月参与了在线法律服务平台 Lawhive 的 950 万英镑种子轮融资，2011 年还参与了 Rocket Lawyer 的 1850 万美元融资。
+今年 7 月，[Google Ventures](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488366&idx=1&sn=31cafa2edd8453be811960d78f07d8b5&chksm=fac529cecdb2a0d87f680cfaf1b2658ec726f8638df5b37b6c3d95733550291c6ab87b555e98&scene=21#wechat_redirect)[领投了法律 AI](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487476&idx=1&sn=f739cf9c0306d00626c8c70e67af979a&chksm=fac53554cdb2bc425f2a190f267da081b4d81a076f1cd353353e322eb25c80356c3a56998beb&scene=21#wechat_redirect)[独角兽 Harvey](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488986&idx=1&sn=d8609dbaa4dd2b8d4e80b9435cb2bf0e&chksm=fac52f7acdb2a66cd4570ccb3dd83a46b3fc8722668fc49aec7884332b291f53517b9cc40766&scene=21#wechat_redirect) 的 1 亿美元 C 轮融资，4 月参与了在线法律服务平台 Lawhive 的 950 万英镑种子轮融资，2011 年还参与了 Rocket Lawyer 的 1850 万美元融资。
 
 事实上，谷歌投资对法律科技颇有兴趣。
 
@@ -108,15 +101,12 @@ Document Crunch 利用 AI 技术为建筑行业提供合同合规和风险审查
 
 随着技术不断进步、客户降本需求扩大、市场竞争日趋激烈，法律科技必将发挥更大的作用。
 
-> 拓展阅读：
+> 拓展阅读：https://www.genieai.co/en-us/blog/genie-ai-raises-17-8-million-to-build-agentic-legal-ai
+> [谷歌再次出手！合同起草初创公司 Genie AI 完成 1780 万美元 A 轮融资](https://mp.weixin.qq.com/s/2PGozWeJjppxMInLoULoBQ)
 
-> https://www.genieai.co/en-us/blog/genie-ai-raises-17-8-million-to-build-agentic-legal-ai
+### 婚前协议模板平台 ThisFirst 完成 420 万美元种子轮融资
 
-> [谷歌再次出手！合同起草初创公司 Genie ](https://mp.weixin.qq.com/s/2PGozWeJjppxMInLoULoBQ)AI 完成 1780 万美元 A 轮融资
-
-## 婚前协议模板平台 ThisFirst 完成 420 万美元种子轮融资
-
-[**10 月 24 日**](https://www.thisfirst.com)，专注于婚前协议的模板平台 ThisFirst 宣布完成 420 万美元种子轮融资，Expa 领投，Springbank、Cleo Capital 和 Karman Ventures 跟投。ThisFirst 的使命是重塑、现代化和简化，消费者在线制定高质量法律协议的方式，目前专注于在线提供由经验丰富的家庭法律师审查过的婚前协议。
+[10 月 24 日](https://www.thisfirst.com)，专注于婚前协议的模板平台 ThisFirst 宣布完成 420 万美元种子轮融资，Expa 领投，Springbank、Cleo Capital 和 Karman Ventures 跟投。ThisFirst 的使命是重塑、现代化和简化，消费者在线制定高质量法律协议的方式，目前专注于在线提供由经验丰富的家庭法律师审查过的婚前协议。
 
 近年来，人们对婚前协议的兴趣激增，特别是在千禧一代、数字原住民和女性人群中。
 
@@ -128,17 +118,21 @@ Document Crunch 利用 AI 技术为建筑行业提供合同合规和风险审查
 
 > 拓展阅读：https://www.thisfirst.com/learn/introducing-first-announcing-our-4-1m-seed-round
 
-## 英国法人实体管理初创公司 Kuberno 完成 950 万英镑 A 轮融资
+### 英国法人实体管理初创公司 Kuberno 完成 950 万英镑 A 轮融资
 
 10 月 31 日，英国法人实体管理初创公司 Kuberno 宣布完成 950 万英镑（1232 万美元）的 A 轮融资，巴克莱银行和纳斯达克风险投资公司参与。Kuberno 是一家初创公司的法律实体管理平台，帮助法律、财务、人力资源和其他团队汇集数据以满足组织治理需求。在宣布本轮融资的同时，Bucknell 对将 AI 整合到平台中特别感兴趣。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/11/01/u-k-based-legal-entity-management-startup-kuberno-announces-9-5-million-series-a-investment/
 
-# **二、法律科技并购动态**
+## 二、法律科技并购动态
 
-## 电子发现厂商 Reveal 收购竞品 Milyli 的编辑工具源代码
+### 电子发现厂商 Reveal 收购竞品 Milyli 的编辑工具源代码
 
 10 月 3 日，电子发现公司 Reveal 宣布收购竞品 Milyli 拥有的编辑工具 Blackout 的源代码，并集成到其平台中，以加强 AI 驱动的编辑工作流程，期待在隐私保护、效率、定制和可扩展性方面得到增强。
+
+
+
+## Reveal 收购 Logikcull、IPRO 和 Onna，持续扩张电子发现平台
 
 这次收购标志着 Reveal 过去几年中的[又一次](https://www.law.com/legaltechnews/2023/08/29/reveal-acquires-logikcull-and-ipro-to-create-e-discovery-superpower/)发展。2023 年，Reveal 收购了电子发现[平台](https://www.law.com/legaltechnews/2024/09/17/reveal-launches-logikcull-e-discovery-platform-in-europe/)[ L](https://www.law.com/legaltechnews/2024/01/10/reveal-announces-ask-first-generative-ai-product-of-many-releases-planned/)ogikcull 和 IPRO，并于今年 [9 月](https://www.law.com/legaltechnews/2024/05/07/reveal-acquires-onna-to-enhance-e-discovery-platforms-data-management-capabilities/)将 Logikcull 扩展到欧洲。今年 1 月，Reveal 推出生成式 AI 功能“Ask”，支持用户询问关于案例的问题。5 月，Reveal 还收购了数据管理平台 Onna，以支持其平台的数据收集和结构化能力。
 
@@ -194,7 +188,7 @@ Ascertus 是 Harbor 自成立以来的第三[笔并](https://www.law.com/legalte
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/10/29/harbor-acquires-u-k-based-legal-tech-services-company-ascertus-397-90542/
 
-# **三、法律 AI 最新动态**
+# 三、法律 AI 最新动态
 
 ## 法律 AI 性能测试
 
@@ -210,11 +204,9 @@ Ascertus 是 Harbor 自成立以来的第三[笔并](https://www.law.com/legalte
 
 以下是这项研究的具体步骤：
 
-1.  对于每项任务，参与的律所将提供一组精心挑选的非机密或公开来源的法律文件，以及带有标准答案的问题；
-
-1.  在各家 AI 平台上测试问题并收集输出，同时 Cognia 的律师将在没有任何法律 AI 工具的支持下执行每项任务；
-
-1.  Vals AI 的自动评估框架平台将根据一个评分标准，考虑答案的准确性、有用性、引用（在相关情况下）、风格和格式，将 AI 的测试输出结果与律师的真实答案进行比较。为确保自动评估平台本身的准确性，任何自动评估失败的测试都将由一组独立的法律图书馆员进行人工审查，以防止任何误报结果。
+1. 对于每项任务，参与的律所将提供一组精心挑选的非机密或公开来源的法律文件，以及带有标准答案的问题；
+1. 在各家 AI 平台上测试问题并收集输出，同时 Cognia 的律师将在没有任何法律 AI 工具的支持下执行每项任务；
+1. Vals AI 的自动评估框架平台将根据一个评分标准，考虑答案的准确性、有用性、引用（在相关情况下）、风格和格式，将 AI 的测试输出结果与律师的真实答案进行比较。为确保自动评估平台本身的准确性，任何自动评估失败的测试都将由一组独立的法律图书馆员进行人工审查，以防止任何误报结果。
 
 这项研究将于 2024 年 10 月和 11 月进行，最终报告计划在 11 月底或 12 月初发布。
 
@@ -228,15 +220,11 @@ Ascertus 是 Harbor 自成立以来的第三[笔并](https://www.law.com/legalte
 
 这个数据集包含 13,000 多家法律科技公司的各种信息，包括但不限于：
 
-+   公司名称
-
-+   行业分类
-
-+   操作范围
-
-+   人事规模
-
-+   财务数据（如果有）
++ 公司名称
++ 行业分类
++ 操作范围
++ 人事规模
++ 财务数据（如果有）
 
 Legalpioneer 的创始人 Raymond Blijd 表示，Legalpioneer 是我们的非营利服务，这一过渡是为了应对法律行业对 AI 技术日益增长的兴趣，也是为了努力提高法律科技行业的透明度，增加对法律数据的可访问性。
 
@@ -252,17 +240,12 @@ Legapioneer 迁移到 GitHub 表明开源法律数据日益增长的趋势，未
 
 ### YC S24 255 个孵化项目，法律 AI 集中在自动化赛道
 
-+   YC 最新第 24 批孵化公司包括 255 家
-
-+   该批次中一大半（67%）的公司被归类为 AI
-
-+   超过一半（55%）的公司包含有硕士或博士学位的创始人。
-
-+   72% 的公司创始人拥有计算机科学背景。
-
-+   大多数公司（54%）有两位共同创始人。
-
-+   大约一半（48%）的公司至少有一位创始人具有创办公司的经验。
++ YC 最新第 24 批孵化公司包括 255 家
++ 该批次中一大半（67%）的公司被归类为 AI
++ 超过一半（55%）的公司包含有硕士或博士学位的创始人。
++ 72% 的公司创始人拥有计算机科学背景。
++ 大多数公司（54%）有两位共同创始人。
++ 大约一半（48%）的公司至少有一位创始人具有创办公司的经验。
 
 同时 YC 决定，从 2025 年开始，从每年两个批次（冬季和夏季）改为每年四个批次（春季、夏季、秋季和冬季各一个）。每批次公司将从 250 个减少到大约 125 个。
 
@@ -298,11 +281,13 @@ Legapioneer 迁移到 GitHub 表明开源法律数据日益增长的趋势，未
 
 具体来说，Black Hills AI 的用户将能够使用 DeepIP 的 AI 功能，增强 IP 管理流程，包括自动分析起诉文件、增强 IP 处理的响应、生成报告等。同时，DeepIP 的用户也可以使用 Black Hills AI 的文件包装同步服务，无缝访问其起诉文件，从而快速将数据加载到 DeepIP 的平台中，简化工作流程并提高生产力。
 
+
+
 [Black Hills AI](https://www.linkedin.com/in/jameshallenbeck/) 的总裁兼 CEO Jim Hallenbeck 表示：“与 DeepIP 的合作标志着我们提供尖端智能 IP 自动化解决方案使命的一个重要里程碑。通过将 DeepIP 功能与我们的开放数据理念相结合，我们为客户提供了开发和管理其知识产权组合的无与伦比的洞察力和效率。”
 
 DeepIP 的 CEO François-Xavier（FX）Leduc 补充说：“我们很高兴与 Black Hills AI 合作，将我们的 AI 技术带给更广泛的受众。这种集成将使 IP 专业人士能够使用以前没有的 AI 起草和分析工具，为该行业树立了新标准。”
 
-> 拓展阅读：https://www.deepip.ai/blog/press-release-black-hills-ai-and-deepip-announce-strategic-integration-partnership
+> 拓展阅读：`https://www.deepip.ai/blog/press-release-black-hills-ai-and-deepip-announce-strategic-integration-partnership`
 
 ## 律师事务所
 
@@ -310,15 +295,15 @@ DeepIP 的 CEO François-Xavier（FX）Leduc 补充说：“我们很高兴与 B
 
 10 月 1 日，Am Law 200 律所 Fennemore Craig 宣布与精品律所 Lucent Law 合作，启动一个新的 AI 项目，名为“Project BlueWave”。该项目基于 GPT 大模型，使用 Fennemore 的数据训练，然后自动化嵌入其内部系统。
 
-> 拓展阅读：https://www.law.com/americanlawyer/2024/10/01/fennemore-craig-combines-with-tech-boutique-to-jump-start-ai-initiative/
+> 拓展阅读：`https://www.law.com/americanlawyer/2024/10/01/fennemore-craig-combines-with-tech-boutique-to-jump-start-ai-initiative/`
 
 ### Shoosmiths 律师事务所推出 AI 合规工具
 
 近日，英国律师事务所 Shoosmiths 与合规治理软件服务商 Enzai 合作，推出了一个名为 AI Comply 的平台，帮助律所驾驭围绕 AI 不断变化的监管格局。
 
-> 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1889944/shoosmiths-software-co-launch-ai-compliance-tool
+> 拓展阅读：`https://www.law360.com/pulse/legal-tech/articles/1889944/shoosmiths-software-co-launch-ai-compliance-tool`
 
-# **四、法律 AI 市场教育**
+# 四、法律 AI 市场教育
 
 ## Legal Studio 社区
 
@@ -326,7 +311,7 @@ DeepIP 的 CEO François-Xavier（FX）Leduc 补充说：“我们很高兴与 B
 
 为了帮助大家了解法律 AI 监管趋势的变化，法律修音机收录了世界各地 40 多家法院针对 AI 在法律行业应用发布的相关监管规定。部分法院选择禁止使用 AI，但更多法院总体持谨慎采用的态度。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/BcugxQ2qX3AEC9XDIBpZbA
+> 拓展阅读：`https://mp.weixin.qq.com/s/BcugxQ2qX3AEC9XDIBpZbA`
 
 ## 律所
 
@@ -338,17 +323,17 @@ DeepIP 的 CEO François-Xavier（FX）Leduc 补充说：“我们很高兴与 B
 
 这是 Linklaters 部署生成式 AI [的最新发展。](https://www.linklaters.com/about-us/news-and-deals/news/2024/july/linklaters-rolls-out-microsoft-365s-copilot-globally)此前，Linklaters 在全球范围内将 Microsoft 365 的 Copilot 集成到律所现有的技术堆栈中，包括 Laila —— Linklaters 自己研发的 AI 聊天机器人。
 
-> 拓展阅读：https://www.linklaters.com/en/about-us/news-and-deals/news/2024/october/linklaters-launches-genai-expert-training-programme
+> 拓展阅读：`https://www.linklaters.com/en/about-us/news-and-deals/news/2024/october/linklaters-launches-genai-expert-training-programme`
 
 ### Travers Smith 律师事务所启动 AI 学院，开展 AI 相关培训
 
-10 月 23 日，Travers Smith  律师事务所宣布启动 AI 学院，一个面向整个律所的内部培训计划，帮助律师更深入地了解 AI 如何提高客户参与度、提高生产力和提高效率。这个项目由律所的知识管理主管 Emily Tearle 牵头，与包括技术、风险和合规、法律转型和知识在内的整个业务利益相关者合作设计。
+10 月 23 日，Travers Smith 律师事务所宣布启动 AI 学院，一个面向整个律所的内部培训计划，帮助律师更深入地了解 AI 如何提高客户参与度、提高生产力和提高效率。这个项目由律所的知识管理主管 Emily Tearle 牵头，与包括技术、风险和合规、法律转型和知识在内的整个业务利益相关者合作设计。
 
 据了解，AI 学院由四个模块组成：Get Set（基础资源）、Ignite（所有人都需要的核心强制性培训）、Accelerate（关于提示和法律和监管影响的进一步培训）和 Boost（随着 AI 不断发展而持续的模块）。
 
 该项目将开展一系列现场会议，以及广泛的参考材料支持，包括一口大小的学习视频和进一步的阅读资源。
 
-> 拓展阅读：https://www.traverssmith.com/knowledge/knowledge-container/travers-smith-launches-innovative-ai-academy/
+> 拓展阅读：`https://www.traverssmith.com/knowledge/knowledge-container/travers-smith-launches-innovative-ai-academy/`
 
 ### Latham & Watkins 律师事务所启动 AI 学院，开展 AI 相关培训
 
@@ -356,7 +341,7 @@ DeepIP 的 CEO François-Xavier（FX）Leduc 补充说：“我们很高兴与 B
 
 具体来说，Latham & Watkins 提供专家主导的按需培训模块和实际的面对面研讨会，使律所能够根据最新的 AI 技术发展快速更新课程，以确保律师得到最相关和最及时的培训。
 
-> 拓展阅读：https://www.lw.com/en/news/latham-watkins-hosts-first-of-its-kind-ai-academy
+> 拓展阅读：`https://www.lw.com/en/news/latham-watkins-hosts-first-of-its-kind-ai-academy`
 
 ## 法学院
 
@@ -364,17 +349,17 @@ DeepIP 的 CEO François-Xavier（FX）Leduc 补充说：“我们很高兴与 B
 
 今年秋天，耶鲁大学法学院推出一门名为“法律的 AI 未来”的新课程，这是一门探索 AI 在法律行业中应用的课程，也是法学院本学期推出的几个以 AI 为重点的倡议之一。该课程由多伦多大学客座教授 Abdi Aidid 负责，这位教授具有法律科技背景，曾于 2018 年至 2022 年担任 AI 税法研究平台 Blue J 的研究副总裁。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/10/21/yale-debuts-new-laws-ai-future-course-taught-by-lawyer-turned-technologist/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/10/21/yale-debuts-new-laws-ai-future-course-taught-by-lawyer-turned-technologist/`
 
 ### 加州大学欧文分校法学院开设一门新的课程，利用 AI 工具重塑法律实践
 
 今年秋天，加州大学欧文分校法学院（UCI）开设了一门新的法律实践管理课程，学生在生成式 AI 工具的帮助下，重新学习如何处理实践管理、法律生命周期事项和客户需求。
 
-与其他大学强调 AI 相关的监管、风险和偏见不同的是，UCI 这门新课程聚焦如何用 AI 重塑法律事务生命周期，从获得新工作开始，评估新客户，查看外部律师指南，了解客户需要的是什么，进行文件审查，数据分析、客户反馈调查......教导律师以客户为中心进行项目管理，以及如何使用 AI 赋能这些工作。
+与其他大学强调 AI 相关的监管、风险和偏见不同的是，UCI 这门新课程聚焦如何用 AI 重塑法律事务生命周期，从获得新工作开始，评估新客户，查看外部律师指南，了解客户需要的是什么，进行文件审查，数据分析、客户反馈调查……教导律师以客户为中心进行项目管理，以及如何使用 AI 赋能这些工作。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/09/30/new-uc-irvine-law-course-explores-practice-management-with-help-from-gen-ai-tools/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/09/30/new-uc-irvine-law-course-explores-practice-management-with-help-from-gen-ai-tools/`
 
-# **五、法律 AI 市场调研**
+# 五、法律 AI 市场调研
 
 ## 国际法律技术协会 2024 调查报告
 
@@ -426,19 +411,19 @@ Corham 表示：“我们有一些客户，特别是教育领域，可能会为�
 
 对用户来说，必须不断调整和学习，保持最新状态是困难的，但技术被推入实践如此之深，未来将会越来越困难。很多变化正在发生，但重要的不仅仅是变化，而是变化的速度，人们必须适应变化，并尽可能地拥抱它。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/10/03/5-things-we-found-interesting-from-the-2024-ilta-tech-survey/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/10/03/5-things-we-found-interesting-from-the-2024-ilta-tech-survey/`
 
-## Clio 最新报告：律师行业 AI 采用率从 2023 年的 19% 飙升到  2024 年的 79%
+## Clio 最新报告：律师行业 AI 采用率从 2023 年的 19% 飙升到 2024 年的 79%
 
-近日，法律实践管理平台 Clio 发布《2024 年法律趋势报告》。报告显示，法律行业 74% 的工作可以通过 AI 实现自动化。同时，律师采用 AI 的比例，从 2023 年的 19% 飙升到  2024 年的 79%。
+近日，法律实践管理平台 Clio 发布《2024 年法律趋势报告》。报告显示，法律行业 74% 的工作可以通过 AI 实现自动化。同时，律师采用 AI 的比例，从 2023 年的 19% 飙升到 2024 年的 79%。
 
 > 拓展阅读：
 
-> https://www.clio.com/guides/client-intake-legal-trends/
+> `https://www.clio.com/guides/client-intake-legal-trends/`
 
-> https://www.clio.com/blog/jack-newton-keynote-2024/
+> `https://www.clio.com/blog/jack-newton-keynote-2024/`
 
-> https://www.law.com/legaltechnews/2024/10/08/cliocon-2024-takeaways-navigating-law-firms-ai-future/
+> `https://www.law.com/legaltechnews/2024/10/08/cliocon-2024-takeaways-navigating-law-firms-ai-future/`
 
 ## Wolters Kluwer 发布《2024 年未来准备律师调查》：律所通过投资法律科技吸引人才
 
@@ -456,13 +441,13 @@ Corham 表示：“我们有一些客户，特别是教育领域，可能会为�
 
 > 拓展阅读：
 
-> https://www.wolterskluwer.com/en/know/future-ready-lawyer-2024#download
+> `https://www.wolterskluwer.com/en/know/future-ready-lawyer-2024#download`
 
-> https://www.wolterskluwer.com/en/news/future-ready-lawyer-2024-report?utm_source=linkedin&utm_medium=social_media&utm_term=corp&utm_campaign=future_ready_lawyer
+> `https://www.wolterskluwer.com/en/news/future-ready-lawyer-2024-report?utm_source=linkedin&utm_medium=social_media&utm_term=corp&utm_campaign=future_ready_lawyer`
 
-> https://www.law.com/legaltechnews/2024/10/24/law-firms-legal-departments-lean-into-gen-ai-adoption-to-attract-talent/
+> `https://www.law.com/legaltechnews/2024/10/24/law-firms-legal-departments-lean-into-gen-ai-adoption-to-attract-talent/`
 
-# **六、法律 AI 监管治理**
+# 六、法律 AI 监管治理
 
 ## 佐治亚州最高法院与国家州法院中心合作成立 AI 特别委员会，研究 AI 对司法机构的影响
 
@@ -474,9 +459,11 @@ Pinson 大法官表示：“虽然围绕这个主题有很多讨论，但目前�
 
 同时，佐治亚州律师协会也成立了自己的技术、AI、工具、资源和法律义务特别委员会，负责探索《佐治亚州职业行为规则》和律师协会政策应该如何考虑到法律从业人员使用 AI，并向其理事会和最高法院提出建议。
 
+
+
 > 拓展阅读：https://www.gasupreme.us/10-22-2024-chief-justice-establishes-committee-to-examine-impacts-of-artificial-intelligence-on-the-judiciary/
 
-## 特拉华州最高法院通过一项临时政策，指导司法人员使用生成式 AI
+# 特拉华州最高法院通过一项临时政策，指导司法人员使用生成式 AI
 
 10 月 22 日，特拉华州最高法院通过了一项临时政策，为司法人员和法院工作人员使用生成式 AI 提供指导。
 
@@ -492,7 +479,7 @@ Pinson 大法官表示：“虽然围绕这个主题有很多讨论，但目前�
 
 > 拓展阅读：https://courts.delaware.gov/forms/download.aspx?id=266868
 
-# **七、法律科技市场活动**
+# 七、法律科技市场活动
 
 ## 首届深圳法律服务博览会即将开幕
 

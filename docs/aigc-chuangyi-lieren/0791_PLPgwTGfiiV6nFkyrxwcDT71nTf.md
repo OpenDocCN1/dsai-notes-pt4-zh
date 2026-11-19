@@ -1,3 +1,4 @@
+
 # Pixverse基础实操
 
 > 来源：[https://aigcreative.feishu.cn/docx/OwHbdSmhxojFwBxiSCUcLe0onPh](https://aigcreative.feishu.cn/docx/OwHbdSmhxojFwBxiSCUcLe0onPh)
@@ -6,9 +7,9 @@ Pixverse是北京爱诗科技旗下AI生成视频产品。爱诗科技是一家�
 
 目前有两种方式使用pixverse产品：官方网站和discord社区
 
-官网链接：https://app.pixverse.ai/login
+官网链接：`https://app.pixverse.ai/login`
 
-discord社区链接： https://discord.gg/nHxRGRKcBq（点击邀请链接加入Discord-PixVerse服务器）
+discord社区链接：`https://discord.gg/nHxRGRKcBq`（点击邀请链接加入Discord-PixVerse服务器）
 
 官网链接体验会更符合中国人的习惯，同时国内可正常使用，不需要魔法；discord社区可以第一时间收到平台工作人员的消息，也可以看到世界各地艺术家使用产品制作的视频，拥有更好更直接的交流氛围，但需要🪜才能使用。建议大家都注册登陆。
 
@@ -30,35 +31,35 @@ discord社区链接： https://discord.gg/nHxRGRKcBq（点击邀请链接加入D
 
 我们先看左边一排控件。
 
-### Popuplar Video　热门视频
+### Popuplar Video 热门视频
 
-热门视频展示当前由平台创作者们生成的优质片段，随便点开一个进去，可以看到视频生成的详细信息，你可以点击创建，进入创建页面创建自己的视频（后面会讲），也可以点击【upscale升档】和【retry重试】对当前视频进行画质提升和重新生成。
+热门视频展示当前由平台创作者们生成的优质片段，随便点开一个进去，可以看到视频生成的详细信息，你可以点击创建，进入创建页面创建自己的视频（后面会讲），也可以点击`upscale`升档和`retry`重试对当前视频进行画质提升和重新生成。
 
 ![](img/731611a068bb21b7867fce782fbd87c8.png)
 
-### My Video　我的视频
+### My Video 我的视频
 
 展示你生成过的历史视频片段
 
 ![](img/0e219639988586f114ae7b03eb861ac1.png)
 
-### My collection　我的收藏
+### My collection 我的收藏
 
-收藏你觉得不错的视频片段和提示词。这里你可以在热门视频当中会看到视频左下角出现小星星，点击小星星就可以收藏到【My collection】中。
+收藏你觉得不错的视频片段和提示词。这里你可以在热门视频当中会看到视频左下角出现小星星，点击小星星就可以收藏到`My collection`中。
 
 ![](img/19189ed6744935401a52bfa062320342.png)
 
-### Character　角色
+### Character 角色
 
-pixverse新推出的角色一致性功能，上传一张人物正面图片，描述人物所在的场景和动作，可以生成一张该人物的场景片段。
+`Character`是pixverse新推出的角色一致性功能，上传一张人物正面图片，描述人物所在的场景和动作，可以生成一张该人物的场景片段。
 
 ![](img/e5b6ba8897b56c716f48eb2a93091264.png)
 
-接下来我们重点讲一下creat视频生成。
+接下来我们重点讲一下`creat`视频生成。
 
 ## 三，文生视频
 
-我们直接点击右上角的creat 就可以进入生成界面
+我们直接点击右上角的`creat`就可以进入生成界面
 
 ![](img/a0b5b5ae83ac4349fe5434ab3a2e2775.png)
 
@@ -140,7 +141,7 @@ ugly,duplicate, blurry, abstract, disfigured, deformed, cartoon, 3d, bad art, po
 
 ![](img/941b647d0178af1c022762d8873cf585.png)
 
-### ２，输写提示词prompt
+### ２，输写提示词`prompt`
 
 图生视频tips:
 
@@ -166,21 +167,21 @@ ugly,duplicate, blurry, abstract, disfigured, deformed, cartoon, 3d, bad art, po
 
 (3) 但为了保证主体动作的稳定性建议值为5，pixverse的运动幅度都非常小，表现在画面上就是主体动作比较慢，镜头运动也十分缓慢;
 
-### ４，seed值
+### ４，`seed`值
 
 主要用于测试不同的提示词的效果。一般不用管。
 
 ## 五，角色一致性
 
-在主页面点击选择“Character”。
+在主页面点击选择`Character`。
 
 ![](img/175cf7f533057869087f8b268dd99121.png)
 
-点击“Create Character”。
+点击`Create Character`。
 
 ![](img/161b333d9a764958bedfb92ae2a03bec.png)
 
-在此界面通过点击或拖动的方式上传图片，命名您创建的Character，最后点击“Create Character”即可生成。
+在此界面通过点击或拖动的方式上传图片，命名您创建的`Character`，最后点击`Create Character`即可生成。
 
 提示：最好使用包含真实人脸的单人图片效果最佳，脸部大小需要超过 200×200px，面部无遮挡
 
@@ -188,17 +189,17 @@ ugly,duplicate, blurry, abstract, disfigured, deformed, cartoon, 3d, bad art, po
 
 ![](img/00f12bd7386cae7f3439d7060c1706d1.png)
 
-Character添加完毕后，等待20秒左右，在看到“Success”提示后，点击“Create”进入创作界面。
+`Character`添加完毕后，等待20秒左右，在看到`Success`提示后，点击`Create`进入创作界面。
 
-若未等到“Success”提示便进入创作界面，会找不到创建的Character，此时需等待10~30秒，待Character创建完成即可。
+若未等到`Success`提示便进入创作界面，会找不到创建的`Character`，此时需等待10~30秒，待`Character`创建完成即可。
 
 ![](img/6751e626d8012f5997738ab68f60dc3a.png)
 
-点击“Character”。
+点击`Character`。
 
 ![](img/275f8164c86b800c2782fc5a19d842de.png)
 
-在下拉选项中选择您创建的character,输入提示词，选择您想要的画幅比例。点击“Create”完成制作！（Auto Character Prompt默认开启）
+在下拉选项中选择您创建的`character`,输入提示词，选择您想要的画幅比例。点击`Create`完成制作！（`Auto Character Prompt`默认开启）
 
 ### Auto Character Prompt 功能：
 
@@ -208,12 +209,12 @@ Character添加完毕后，等待20秒左右，在看到“Success”提示后�
 
 提示词技巧：
 
-1.Character功能在中近景下的表现效果最佳，使用时可以通过加入upper body，super detailed face等词语，并避免幅度过大的动作，以保证最佳效果。
+1. `Character`功能在中近景下的表现效果最佳，使用时可以通过加入upper body，super detailed face等词语，并避免幅度过大的动作，以保证最佳效果。
 
-2.为了保持人物的高度一致，请在提示词中尽可能详细描述人物的外貌特点，比如：男性/女性，长发/短发等等。
+2. 为了保持人物的高度一致，请在提示词中尽可能详细描述人物的外貌特点，比如：男性/女性，长发/短发等等。
 
 ![](img/c36f8809b45f8fd6417496590c434df5.png)
 
 提示：
 
-无论提示词中是否包含人物主体信息，Character模式下视频默认包含选择的Character，如果您要生成不含人物的其他视频（如风景等），请选择文生视频功能。
+无论提示词中是否包含人物主体信息，`Character`模式下视频默认包含选择的`Character`，如果您要生成不含人物的其他视频（如风景等），请选择文生视频功能。

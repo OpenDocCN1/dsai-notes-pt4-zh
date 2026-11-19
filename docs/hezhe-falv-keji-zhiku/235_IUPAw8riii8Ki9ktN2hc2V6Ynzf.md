@@ -1,3 +1,4 @@
+
 # 律所投资 AI 培训资讯汇总：Orrick、Norton Rose、Hogan Lovells 等 11 家大型律师事务所、Mackrell International
 
 > 来源：[https://docs.feishu.cn/docx/FEyodRGwIomliEx0uAGcX0zcnxd](https://docs.feishu.cn/docx/FEyodRGwIomliEx0uAGcX0zcnxd)

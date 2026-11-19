@@ -1,26 +1,22 @@
+
 # LLM（十九）：探索多种方案下 LLM 的预训练性能
 
 > 来源：[https://agijuejin.feishu.cn/docx/G1LEdoPCioQkgyxUJ9UcTDhzn4f](https://agijuejin.feishu.cn/docx/G1LEdoPCioQkgyxUJ9UcTDhzn4f)
-
 > 作者：紫气东来
+> 原文：[https://zhuanlan.zhihu.com/p/648094197](https://zhuanlan.zhihu.com/p/648094197)
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/648094197)hihu.com/p/648094...
+本篇旨在研究对比目前主流预训练方案在单机多卡的情况下性能情况，主要研究的方法包括：`HuggingFace` 的 `Base` 、`FSDP`、`DeepSpeed`、`Flash-Attn-2`、`ColossalAI`、`Sophia Optimizer`等。由于笔者计算资源有限，在此仅讨论单机多卡的情况。另外，本篇主要关注于性能相关的问题，精度问题及`loss`等问题将不会特别说明，还需要说明的情况包括：
 
-本篇旨在研究对比目前主流预训练方案在单机多卡的情况下性能情况，主要研究的方法包括：HuggingFace 的 Base 、FSDP、DeepSpeed、Flash- Attn-2、ColossalAI、Sophia Optimizer等。由于笔者计算资源有限，在此仅讨论单机多卡的情况。另外，本篇主要关注于性能相关的问题，精度问题及loss等问题将不会特别说明，还需要说明的情况包括：
++ 模型规模：`Llama-7b`（参数见 `config/config.json`）
++ 硬件设备：`A6000*8`
++ 测试数据：`Wikipedia/20220301.simple`
++ 测试代码：`[ifromeast/LLMTrainer: A comparison of pretraining framework for LLM](https://link.zhihu.com/?target=https%3A//github.com/ifromeast/LLMTrainer)`（github.com）
 
-+   模型规模：Llama-7b (参数见 config/config.json)
+## 01. Base 版
 
-+   硬件设备：A6000*8
+此处采用最基础 `Torch` 的 `DDP` 算法，作为基础的对比版本，运行的脚本如下：
 
-+   测试数据： Wikipedia/20220301.simple
-
-+   测试代码： [ifromeast/LLMTrainer: A comparison of pr](https://link.zhihu.com/?target=https%3A//github.com/ifromeast/LLMTrainer)etraining framework for LLM (github.com)
-
-### 01. Base 版
-
-此处采用最基础 Torch 的 DDP 算法，作为基础的对比版本，运行的脚本如下：
-
-```
+```bash
 torchrun --nnodes 1 --nproc_per_node 8 pretrain_hf.py \
     --model_config_path ../config/config.json \
     --tokenizer_name_or_path ../ckpt/Llama-2-13b-hf \
@@ -40,7 +36,7 @@ torchrun --nnodes 1 --nproc_per_node 8 pretrain_hf.py \
     --save_steps 100 \
     --gradient_accumulation_steps 8 \
     --model_max_length 2048 \
-    --output_dir &#x27;./hf_logs&#x27; \
+    --output_dir './hf_logs' \
     --overwrite_output_dir \
     --gradient_checkpointing \
     --ddp_find_unused_parameters False
@@ -57,36 +53,34 @@ torchrun --nnodes 1 --nproc_per_node 8 pretrain_hf.py \
   train_steps_per_second   =      0.052
 ```
 
-同时可以查看GPU的使用情况：
+同时可以查看 `GPU` 的使用情况：
 
 ![](img/1a8f125d371f325d8fd51836552fb4b9.png)
 
 ![](img/49c386a70bb5bf1c6953a8e395c9254e.png)
 
-### 02. FSDP 版
+## 02. FSDP 版
 
-F[SDP](https://link.zhihu.com/?target=https%3A//pytorch.org/blog/introducing-pytorch-fully-sharded-data-parallel-api/)是从DeepSpeed ZeRO以及FairScale的FSDP中获取灵感的一种完全数据分片并行的方法，其基本原理可参考 这里 。
+`FSDP` 是从 `DeepSpeed` ZeRO 以及 `FairScale` 的 `FSDP` 中获取灵感的一种完全数据分片并行的方法，其基本原理可参考 这里 。
 
-![](img/b347c9c8c5d6bd4be837c1f94127827b.png)
+`HuggingFace` 的 `transformers` 已经原生支持了 `FSDP`，可以在原生代码的运行命令上增加 2 行配置来使用：
 
-HuggingFace 的 transformers 已经原生支持了 FSDP，可以在原生代码的运行命令上增加2行配置来使用：
-
-```
-    --fsdp &quot;full_shard auto_wrap&quot; \
-    --fsdp_config &#x27;fsdp.json&#x27; \
+```bash
+    --fsdp "full_shard auto_wrap" \
+    --fsdp_config 'fsdp.json' \
 ```
 
-此时可见 GPU 显存占用明显下降：
+此时可见 `GPU` 显存占用明显下降：
 
 ![](img/e68222d8320e8d3d27cef001c63d09b7.png)
 
-由此可进一步增大 batch_size，以提高设备利用率
+由此可进一步增大 `batch_size`，以提高设备利用率
 
-```
+```bash
 --per_device_train_batch_size 12 \
 ```
 
-运行结果如下所示，与原版DDP (即 Base 版)相比性能提升约 8.3% ：
+运行结果如下所示，与原版 `DDP`（即 `Base` 版）相比性能提升约 8.3% ：
 
 ```
 ***** train metrics *****
@@ -97,49 +91,49 @@ HuggingFace 的 transformers 已经原生支持了 FSDP，可以在原生代码�
   train_steps_per_second   =      0.038
 ```
 
-### 03 DeepSpeed 版
+## 03 DeepSpeed 版
 
-DeepSpeed 的原理在前几期中多次介绍，感兴趣的可以回看前几期内容，HuggingFace 的 transformers 已经原生支持了 DeepSpeed，其用法也非常简单，只需要添加一个配置文件和一个参数即可：
+`DeepSpeed` 的原理在前几期中多次介绍，感兴趣的可以回看前几期内容，`HuggingFace` 的 `transformers` 已经原生支持了 `DeepSpeed`，其用法也非常简单，只需要添加一个配置文件和一个参数即可：
 
-以下是zero-2的配置文件
+以下是 `zero-2` 的配置文件
 
-```
+```json
 {
-    &quot;fp16&quot;: {
-        &quot;enabled&quot;: &quot;auto&quot;,
-        &quot;loss_scale&quot;: 0,
-        &quot;loss_scale_window&quot;: 100,
-        &quot;initial_scale_power&quot;: 16,
-        &quot;hysteresis&quot;: 2,
-        &quot;min_loss_scale&quot;: 1e-10
+    "fp16": {
+        "enabled": "auto",
+        "loss_scale": 0,
+        "loss_scale_window": 100,
+        "initial_scale_power": 16,
+        "hysteresis": 2,
+        "min_loss_scale": 1e-10
     },
 
-    &quot;zero_optimization&quot;: {
-        &quot;stage&quot;: 2,
-        &quot;allgather_partitions&quot;: true,
-        &quot;allgather_bucket_size&quot;: 1e8,
-        &quot;overlap_comm&quot;: true,
-        &quot;reduce_scatter&quot;: true,
-        &quot;reduce_bucket_size&quot;: 1e8,
-        &quot;contiguous_gradients&quot;: true
+    "zero_optimization": {
+        "stage": 2,
+        "allgather_partitions": true,
+        "allgather_bucket_size": 1e8,
+        "overlap_comm": true,
+        "reduce_scatter": true,
+        "reduce_bucket_size": 1e8,
+        "contiguous_gradients": true
     },
 
-    &quot;gradient_accumulation_steps&quot;: &quot;auto&quot;,
-    &quot;gradient_clipping&quot;: &quot;auto&quot;,
-    &quot;steps_per_print&quot;: 2000,
-    &quot;train_batch_size&quot;: &quot;auto&quot;,
-    &quot;train_micro_batch_size_per_gpu&quot;: &quot;auto&quot;,
-    &quot;wall_clock_breakdown&quot;: false
+    "gradient_accumulation_steps": "auto",
+    "gradient_clipping": "auto",
+    "steps_per_print": 2000,
+    "train_batch_size": "auto",
+    "train_micro_batch_size_per_gpu": "auto",
+    "wall_clock_breakdown": false
 }
 ```
 
 使用该配置文件如下：
 
-```
---deepspeed &#x27;ds_zero2_no_offload.json&#x27; \
+```bash
+--deepspeed 'ds_zero2_no_offload.json' \
 ```
 
-运行结果如下所示，与原版 DDP 相比性能提升约 15.4% ：
+运行结果如下所示，与原版 `DDP` 相比性能提升约 15.4% ：
 
 ```
 ***** train metrics *****
@@ -150,7 +144,7 @@ DeepSpeed 的原理在前几期中多次介绍，感兴趣的可以回看前几�
   train_steps_per_second   =       0.04
 ```
 
-如果使用 zero3 算法，结果如下，zero2 略有下降 ：
+如果使用 `zero3` 算法，结果如下，`zero2` 略有下降 ：
 
 ```
 ***** train metrics *****
@@ -161,7 +155,7 @@ DeepSpeed 的原理在前几期中多次介绍，感兴趣的可以回看前几�
   train_steps_per_second   =       0.01
 ```
 
-如果使用 zero3 算法同时使用 offload，性能略有下降：
+如果使用 `zero3` 算法同时使用 `offload`，性能略有下降：
 
 ```
 ***** train metrics *****
@@ -172,15 +166,15 @@ DeepSpeed 的原理在前几期中多次介绍，感兴趣的可以回看前几�
   train_steps_per_second   =       0.01
 ```
 
-### 04 FlashAttention-2
+## 04 FlashAttention-2
 
-FlashAttention 的基本原理可参考笔者之前的文章，FlashAttention-2 在此基础上又做了并行和分块的优化，性能进一步提高
+`FlashAttention` 的基本原理可参考笔者之前的文章，`FlashAttention-2` 在此基础上又做了并行和分块的优化，性能进一步提高
 
 [  ](https://zhuanlan.zhihu.com/p/638468472)
 
-[在此处通过补丁的方式使用，实现方式](https://link.zhihu.com/?target=https%3A//github.com/ifromeast/LLMTrainer/blob/main/utils/flash_attn_patch.py)见 LLMTrainer/utils/flash_attn_patch.py ，使用方式为：
+[在此处通过补丁的方式使用，实现方式](https://link.zhihu.com/?target=https%3A//github.com/ifromeast/LLMTrainer/blob/main/utils/flash_attn_patch.py) 见 `LLMTrainer/utils/flash_attn_patch.py` ，使用方式为：
 
-```
+```python
     if training_args.flash_attn:
         from utils.flash_attn_patch import replace_llama_attn_with_flash_attn
         replace_llama_attn_with_flash_attn()
@@ -188,11 +182,11 @@ FlashAttention 的基本原理可参考笔者之前的文章，FlashAttention-2 
 
 只需要在运行文件中增加一句使能即可：
 
-```
+```bash
     --flash_attn \
 ```
 
-运行结果如下所示，与原版 DDP 相比性能提升约 52.7% ：
+运行结果如下所示，与原版 `DDP` 相比性能提升约 52.7% ：
 
 ```
 ***** train metrics *****
@@ -203,7 +197,7 @@ FlashAttention 的基本原理可参考笔者之前的文章，FlashAttention-2 
   train_steps_per_second   =       0.04
 ```
 
-FlashAttention + FSDP 性能如下，略有下降：
+`FlashAttention` + `FSDP` 性能如下，略有下降：
 
 ```
 ***** train metrics *****
@@ -214,7 +208,7 @@ FlashAttention + FSDP 性能如下，略有下降：
   train_steps_per_second   =      0.039
 ```
 
-FlashAttention + DeepSpeed 性能如下，略有提升：
+`FlashAttention` + `DeepSpeed` 性能如下，略有提升：
 
 ```
 ***** train metrics *****
@@ -225,29 +219,29 @@ FlashAttention + DeepSpeed 性能如下，略有提升：
   train_steps_per_second   =      0.041
 ```
 
-以上方法均可在 transformers 的 Trainer 框架下实现，比较方便，下面的方法则需要更多训练过程理解与开发工作。
+以上方法均可在 `transformers` 的 `Trainer` 框架下实现，比较方便，下面的方法则需要更多训练过程理解与开发工作。
 
-### 05 ColossalAI
+## 05 ColossalAI
 
-在之前 ColossalChat 中曾经使用过部分 ColossalAI 的算法，详情可参考
+在之前 `ColossalChat` 中曾经使用过部分 `ColossalAI` 的算法，详情可参考
 
 [  ](https://zhuanlan.zhihu.com/p/621391363)
 
-在此尝试使用 ColossalAI 的优化算法实现 llama 模型的预训练。
+在此尝试使用 `ColossalAI` 的优化算法实现 `llama` 模型的预训练。
 
-首先尝试 Gemini 算法，这是 ColossalAI 提出的异构内存空间管理器。它通过在 CPU 和 GPU 中容纳模型数据，并仅在必要时将数据移动到当前设备，可以同时利用 GPU 内存、CPU 内存（由 CPU DRAM 或 NVMe SSD内存组成）来突破单GPU内存墙的限制。
+首先尝试 `Gemini` 算法，这是 `ColossalAI` 提出的异构内存空间管理器。它通过在 `CPU` 和 `GPU` 中容纳模型数据，并仅在必要时将数据移动到当前设备，可以同时利用 `GPU` 内存、`CPU` 内存（由 `CPU DRAM` 或 `NVMe SSD` 内存组成）来突破单 `GPU` 内存墙的限制。
 
-[目前 DeepSpeed采](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2101.06840)用的 Zero-offload 在CPU和GPU内存之间静态划分模型数据，并且它们的内存布局对于不同的训练配置是恒定的。如下图左边所示，当 GPU 内存不足以满足其相应的模型数据要求时，即使当时CPU上仍有可用内存，系统也会崩溃。而 ColossalAI 可以通过将一部分模型数据换出到CPU上来完成训练，这就是Gemini。它管理CPU和GPU二者内存空间。它的内存管理器由两部分组成，分别是MemStatsCollector(MSC)和StatefulTensorMgr(STM)，可以让张量在训练过程中动态分布在CPU-GPU的存储空间内。
+[目前 `DeepSpeed` 采用的 `Zero-offload`](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2101.06840) 在 `CPU` 和 `GPU` 内存之间静态划分模型数据，并且它们的内存布局对于不同的训练配置是恒定的。如下图左边所示，当 `GPU` 内存不足以满足其相应的模型数据要求时，即使当时 `CPU` 上仍有可用内存，系统也会崩溃。而 `ColossalAI` 可以通过将一部分模型数据换出到 `CPU` 上来完成训练，这就是 `Gemini`。它管理 `CPU` 和 `GPU` 二者内存空间。它的内存管理器由两部分组成，分别是 `MemStatsCollector(MSC)` 和 `StatefulTensorMgr(STM)`，可以让张量在训练过程中动态分布在 `CPU-GPU` 的存储空间内。
 
 ![](img/9cc60827ee801c391ad862ac53797f73.png)
 
-Gemini 还利用了深度学习网络训练过程的迭代特性，将迭代分为warmup和non-warmup两个阶段，开始时的一个或若干迭代步属于预热阶段，其余的迭代步属于正式阶段。在warmup阶段为MSC收集信息，而在non-warmup阶段STM入去MSC收集的信息来移动tensor，以达到最小化CPU-GPU数据移动volume的目的。
+`Gemini` 还利用了深度学习网络训练过程的迭代特性，将迭代分为 `warmup` 和 `non-warmup` 两个阶段，开始时的一个或若干迭代步属于预热阶段，其余的迭代步属于正式阶段。在 `warmup` 阶段为 `MSC` 收集信息，而在 `non-warmup` 阶段 `STM` 入去 `MSC` 收集的信息来移动 `tensor`，以达到最小化 `CPU-GPU` 数据移动 `volume` 的目的。
 
 ![](img/7d35365e537cfa6b6e57ca14da06c684.png)
 
 下面是该算法的用法：
 
-```
+```bash
 colossalai run --nproc_per_node 8 pretrain_colossalai.py \
     --config ../config/config.json \
     --plugin gemini_cuda \
@@ -261,7 +255,7 @@ colossalai run --nproc_per_node 8 pretrain_colossalai.py \
     --flash_attention
 ```
 
-从日志可以看到该算法对GPU及CPU的内存分配情况：
+从日志可以看到该算法对 `GPU` 及 `CPU` 的内存分配情况：
 
 ```
 Booster init max CUDA memory: 1523.89 MB
@@ -269,31 +263,33 @@ Booster init max CPU memory: 6737.21 MB
 Max CUDA memory usage: 36608.19 MB
 ```
 
-此时可观察到 GPU 及 CPU 的使用情况，可以清楚看到该算法在二者间动态使用的过程
+此时可观察到 `GPU` 及 `CPU` 的使用情况，可以清楚看到该算法在二者间动态使用的过程
 
 ![](img/28f077eb65e5622bff1b8a63e8f00636.png)
 
 ![](img/4f3608b0c12937d9fce1f1066a6ad068.png)
 
-性能如下所示，与原版 DDP 相比性能提升约 50.7%，其中主要的性能提升来源于 FlashAttention：
+性能如下所示，与原版 `DDP` 相比性能提升约 50.7%，其中主要的性能提升来源于 `FlashAttention`：
 
 ```
 train_runtime            = 0:12:42.53
 train_samples_per_second =     40.882
 ```
 
-如果不使能 FlashAttention，性能如下，与原版 DDP 相比性能提升约 8.1 %：
+如果不使能 `FlashAttention`，性能如下，与原版 `DDP` 相比性能提升约 8.1 %：
 
 ```
 train_runtime            = 0:17:42.36
 train_samples_per_second =     29.333
 ```
 
-由此可比较以上5种方法的性能，可以看出性能提升明显的都是由于 FlashAttention-2 的加成
+由此可比较以上 5 种方法的性能，可以看出性能提升明显的都是由于 `FlashAttention-2` 的加成
+
+
 
 ![](img/d2f7ef8ed615692485d1f2b3483a16f5.png)
 
-### 06 Sophia Optimizer
+## 06 Sophia Optimizer
 
 [Sophia ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.14342.pdf)是斯坦福大学研究者提出的二阶优化器。关于优化方法的原理，可参考笔者之前的文章
 
@@ -307,7 +303,7 @@ Sophia 优化器使用随机估计作为 Hessian 矩阵对角线的 pre-conditio
 
 ![](img/4ca13ae9362ebe12f58ddee8f1900c41.png)
 
-### 参考资料
+## 参考资料
 
 [1] [Dao-AILab/flash-attention: Fast and memor](https://link.zhihu.com/?target=https%3A//github.com/Dao-AILab/flash-attention)y-efficient exact attention (github.com)
 

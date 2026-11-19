@@ -1,12 +1,12 @@
-# 12.16-微软推出 14B 参数小语言模型 Phi-4：专攻数学等领域复杂推理
-
-> 来源：[https://agijuejin.feishu.cn/docx/SG5JdqfeIobdCqx6YtKcc5dEnwc](https://agijuejin.feishu.cn/docx/SG5JdqfeIobdCqx6YtKcc5dEnwc)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 16 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/SG5JdqfeIobdCqx6YtKcc5dEnwc](https://agijuejin.feishu.cn/docx/SG5JdqfeIobdCqx6YtKcc5dEnwc)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/91689f6bc51ef3fa1dff8fce24f576ec.png)
+
+## 12.16-微软推出 14B 参数小语言模型 Phi-4：专攻数学等领域复杂推理
 
 ## ⭐ 今日热点
 

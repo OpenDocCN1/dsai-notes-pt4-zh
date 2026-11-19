@@ -1,3 +1,4 @@
+
 # GLM-4.5V GUI Agent 说明
 
 > 来源：[https://ai.feishu.cn/docx/FUgKdgSpHo7fFsxyV9hcxqtfnWd](https://ai.feishu.cn/docx/FUgKdgSpHo7fFsxyV9hcxqtfnWd)
@@ -10,300 +11,321 @@
 
 ### 动作空间
 
-1.  status：表示当前任务已经结束，并给出执行状态。它包含一个参数：
+1. `status`：表示当前任务已经结束，并给出执行状态。它包含一个参数：
+   + `goal_status`。该参数有两个枚举值：`complete` 和 `infeasible`；前者表示任务正常完成，后者表示任务无法完成。
 
-+   goal_status。该参数有两个枚举值：complete 和 infeasible；前者表示任务正常完成，后者表示任务无法完成。
+1. `answer`：表示回答用户的问题。它包含一个参数：
+   + `text`：表示回答的内容。
 
-1.  answer：表示回答用户的问题。它包含一个参数：
+1. `click`：表示单击界面上的某个位置。它包含一个参数：
+   + `box_2d`：以 `[[xmin,ymin,xmax,ymax]]` 的形式表示点击的位置；坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
 
-+   text：表示回答的内容。
+1. `long_press`：表示单击界面上的某个位置。它和 `click` 使用相同的参数。
 
-1.  click：表示单击界面上的某个位置。它包含一个参数：
+1. `input_text`：表示先点击给定位置，然后再输入一段文本。它有如下三个参数：
+   + `text`：表示被输入的文本内容。
+   + `box_2d`：和 `click` 的 `box_2d` 参数有相同的形式和含义。表示文本框的位置。
+   + `override`：布尔类型。这个参数为 `true`，表示应当先清空文本框中的现有内容，然后进行文本输入；这个参数为 `false`，表示会在当前文本框的最后追加新内容。
 
-+   box_2d：以[[xmin,ymin,xmax,ymax]]的形式表示点击的位置；坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
+1. `keyboard_enter`：表示按下回车键。它没有参数。
 
-1.  long_press：表示单击界面上的某个位置。它和click使用相同的参数。
+1. `navigate_home`：表示按下主屏幕键。它没有参数。
 
-1.  input_text：表示先点击给定位置，然后再输入一段文本。它有如下三个参数：
+1. `navigate_back`：表示按下返回键。它没有参数。
 
-+   text：表示被输入的文本内容。
+1. `swipe`：表示手指滑动。它有以下两个参数。
+   + `direction`：该参数有四个枚举值：`up`、`down`、`left`、`right`，表示手指滑动的方向。例如，`up` 表示手指在手机屏幕向上移动，对应于屏幕内容向下滚动。
+   + `box_2d`：表示被滚动的区域。如果没有指明这个参数，表示进行全屏幕的滚动。
 
-+   box_2d：和click的box_2d参数有相同的形式和含义。表示文本框的位置。
-
-+   override：布尔类型。这个参数为true，表示应当先清空文本框中的现有内容，然后进行文本输入；这个参数为false
-
-，表示会在当前文本框的最后追加新内容。
-
-1.  keyboard_enter：表示按下回车键。它没有参数。
-
-1.  navigate_home：表示按下主屏幕键。它没有参数。
-
-1.  navigate_back：表示按下返回键。它没有参数。
-
-1.  swipe：表示手指滑动。它有以下两个参数。
-
-+   direction：该参数有四个枚举值：up、down、left、right，表示手指滑动的方向。例如，up 表示手指在手机屏幕向上移动，对应于屏幕内容向下滚动。
-
-+   box_2d：表示被滚动的区域。如果没有指明这个参数，表示进行全屏幕的滚动。
-
-1.  open_app：根据应用名称启动应用。它有以下一个参数：
-
-+   app_name：表示需要打开的应用名称。我们强烈建议在 prompt 中明确指定需要在哪个（些）应用中执行任务。例如，以下配置为AndroidWorld评测时的支持软件。
+1. `open_app`：根据应用名称启动应用。它有以下一个参数：
+   + `app_name`：表示需要打开的应用名称。我们强烈建议在 `prompt` 中明确指定需要在哪个（些）应用中执行任务。例如，以下配置为AndroidWorld评测时的支持软件。
 
 ```
-app_names = [&quot;Google Chrome&quot;, &quot;Settings&quot;, &quot;YouTube&quot;, &quot;Camera&quot;, &quot;Audio Recorder&quot;,
-             &quot;Clock&quot;, &quot;Contacts&quot;, &quot;Files&quot;, &quot;Markor&quot;, &quot;Simple SMS Messenger&quot;,
-             &quot;Simple Calendar Pro&quot;, &quot;Simple Gallery Pro&quot;, &quot;Simple Draw Pro&quot;,
-             &quot;Pro Expense&quot;, &quot;Broccoli&quot;, &quot;OsmAnd&quot;, &quot;Tasks&quot;, &quot;Open Tracks Sports Tracker&quot;,
-             &quot;Joplin&quot;, &quot;VLC&quot;, &quot;Retro Music&quot;]
+app_names = ["Google Chrome", "Settings", "YouTube", "Camera", "Audio Recorder",
+             "Clock", "Contacts", "Files", "Markor", "Simple SMS Messenger",
+             "Simple Calendar Pro", "Simple Gallery Pro", "Simple Draw Pro",
+             "Pro Expense", "Broccoli", "OsmAnd", "Tasks", "Open Tracks Sports Tracker",
+             "Joplin", "VLC", "Retro Music"]
 ```
 
-1.  wait：表示等待界面加载。它没有参数。
+1. `wait`：表示等待界面加载。它没有参数。
 
 ### Prompt
 
-下面是 prompt 的模板。其中<supported_apps>、<task_description>、<history_and_memory>
+下面是 `prompt` 的模板。其中 `` `<supported_apps>` ``、`` `<task_description>` ``、`` `<history_and_memory>` `` 需要被替换成实际的内容。`` `<additional_notes>` `` 是可选的，用来给模型提供一些额外的建议。在调用模型的时候，你应该同时提供当前的屏幕截图。注意，所有的历史操作应当直接编码进 `prompt` 中，而不是组织成多轮对话的形式。
 
-需要被替换成实际的内容。<additional_notes>是可选的，用来给模型提供一些额外的建议。在调用模型的时候，你应该同时提供当前的屏幕截图。注意，所有的历史操作应当直接编码进 prompt
 
-中，而不是组织成多轮对话的形式。
 
-```
-You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user&#x27;s queries, you can also use tools or perform GUI operations directly until you fulfill the user&#x27;s request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
+You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user's queries, you can also use tools or perform GUI operations directly until you fulfill the user's request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
 
-# Task:
-&lt;task_description&gt;
+# Task
+`<task_description>`
 
-# Task Platform
+## Task Platform
 Mobile
 
 # Action Space
-### status
 
-Calling rule: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;&lt;complete|infeasible&gt;&quot;}`
+## status
+
+Calling rule: `{"action_type": "status", "goal_status": "<complete|infeasible>"}`
+
+```
 {
-    &quot;name&quot;: &quot;status&quot;,
-    &quot;description&quot;: &quot;Finish the task by using the status action with complete or infeasible as goal_status.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;goal_status&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;description&quot;: &quot;The goal status of the task.&quot;,
-                &quot;enum&quot;: [&quot;complete&quot;, &quot;infeasible&quot;]
+    "name": "status",
+    "description": "Finish the task by using the status action with complete or infeasible as goal_status.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "goal_status": {
+                "type": "string",
+                "description": "The goal status of the task.",
+                "enum": ["complete", "infeasible"]
             }
         },
-        &quot;required&quot;: [
-            &quot;goal_status&quot;
+        "required": [
+            "goal_status"
         ]
     }
 }
+```
 
-### answer
+## answer
 
-Calling rule: `{&quot;action_type&quot;: &quot;answer&quot;, &quot;text&quot;: &quot;&lt;answer_text&gt;&quot;}`
+Calling rule: `{"action_type": "answer", "text": "<answer_text>"}`
+
+```
 {
-    &quot;name&quot;: &quot;answer&quot;,
-    &quot;description&quot;: &quot;Answer user&#x27;s question.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;text&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;description&quot;: &quot;The answer text.&quot;
+    "name": "answer",
+    "description": "Answer user's question.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "string",
+                "description": "The answer text."
             }
         },
-        &quot;required&quot;: [
-            &quot;text&quot;
+        "required": [
+            "text"
         ]
     }
 }
+```
 
-### click
+## click
 
-Calling rule: `{&quot;action_type&quot;: &quot;click&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]]}`
+Calling rule: `{"action_type": "click", "box_2d": [[xmin,ymin,xmax,ymax]]}`
+
+```
 {
-    &quot;name&quot;: &quot;click&quot;,
-    &quot;description&quot;: &quot;Click/tap on an element on the screen. Use the box_2d to indicate which element you want to click.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;box_2d&quot;: {
-                &quot;type&quot;: &quot;array&quot;,
-                &quot;description&quot;: &quot;The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element.&quot;
+    "name": "click",
+    "description": "Click/tap on an element on the screen. Use the box_2d to indicate which element you want to click.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "box_2d": {
+                "type": "array",
+                "description": "The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element."
             }
         },
-        &quot;required&quot;: [
-            &quot;box_2d&quot;
+        "required": [
+            "box_2d"
         ]
     }
 }
+```
 
-### long_press
+## long_press
 
-Calling rule: `{&quot;action_type&quot;: &quot;long_press&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]]}`
+Calling rule: `{"action_type": "long_press", "box_2d": [[xmin,ymin,xmax,ymax]]}`
+
+```
 {
-    &quot;name&quot;: &quot;long_press&quot;,
-    &quot;description&quot;: &quot;Long press on an element on the screen, similar with the click action above, use the box_2d to indicate which element you want to long press.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;box_2d&quot;: {
-                &quot;type&quot;: &quot;array&quot;,
-                &quot;description&quot;: &quot;The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element.&quot;
+    "name": "long_press",
+    "description": "Long press on an element on the screen, similar with the click action above, use the box_2d to indicate which element you want to long press.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "box_2d": {
+                "type": "array",
+                "description": "The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element."
             }
         },
-        &quot;required&quot;: [
-            &quot;box_2d&quot;
+        "required": [
+            "box_2d"
         ]
     }
 }
+```
 
-### input_text
+## input_text
 
-Calling rule: `{&quot;action_type&quot;: &quot;input_text&quot;, &quot;text&quot;: &quot;&lt;text_input&gt;&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]], &quot;override&quot;: true/false}`
+Calling rule: `{"action_type": "input_text", "text": "<text_input>", "box_2d": [[xmin,ymin,xmax,ymax]], "override": true/false}`
+
+```
 {
-    &quot;name&quot;: &quot;input_text&quot;,
-    &quot;description&quot;: &quot;Type text into a text field (this action contains clicking the text field, typing in the text and pressing the enter). Use the box_2d to indicate the target text field.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;text&quot;: {
-                &quot;description&quot;: &quot;The text to be input. Can be from the command, the memory, or the current screen.&quot;
+    "name": "input_text",
+    "description": "Type text into a text field (this action contains clicking the text field, typing in the text and pressing the enter). Use the box_2d to indicate the target text field.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "description": "The text to be input. Can be from the command, the memory, or the current screen."
             },
-            &quot;box_2d&quot;: {
-                &quot;description&quot;: &quot;The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element.&quot;
+            "box_2d": {
+                "description": "The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element."
             },
-            &quot;override&quot;: {
-                &quot;description&quot;: &quot;If true, the text field will be cleared before typing. If false, the text will be appended.&quot;
+            "override": {
+                "description": "If true, the text field will be cleared before typing. If false, the text will be appended."
             }
         },
-        &quot;required&quot;: [
-            &quot;text&quot;,
-            &quot;box_2d&quot;,
-            &quot;override&quot;
+        "required": [
+            "text",
+            "box_2d",
+            "override"
         ]
     }
 }
+```
 
-### keyboard_enter
+## keyboard_enter
 
-Calling rule: `{&quot;action_type&quot;: &quot;keyboard_enter&quot;}`
+Calling rule: `{"action_type": "keyboard_enter"}`
+
+```
 {
-    &quot;name&quot;: &quot;keyboard_enter&quot;,
-    &quot;description&quot;: &quot;Press the Enter key.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {},
-        &quot;required&quot;: []
+    "name": "keyboard_enter",
+    "description": "Press the Enter key.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
     }
 }
+```
 
-### navigate_home
+## navigate_home
 
-Calling rule: `{&quot;action_type&quot;: &quot;navigate_home&quot;}`
+Calling rule: `{"action_type": "navigate_home"}`
+
+```
 {
-    &quot;name&quot;: &quot;navigate_home&quot;,
-    &quot;description&quot;: &quot;Navigate to the home screen.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {},
-        &quot;required&quot;: []
+    "name": "navigate_home",
+    "description": "Navigate to the home screen.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
     }
 }
+```
 
-### navigate_back
+## navigate_back
 
-Calling rule: `{&quot;action_type&quot;: &quot;navigate_back&quot;}`
+Calling rule: `{"action_type": "navigate_back"}`
+
+```
 {
-    &quot;name&quot;: &quot;navigate_back&quot;,
-    &quot;description&quot;: &quot;Navigate back.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {},
-        &quot;required&quot;: []
+    "name": "navigate_back",
+    "description": "Navigate back.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
     }
 }
+```
 
-### swipe
+## swipe
 
-Calling rule: `{&quot;action_type&quot;: &quot;swipe&quot;, &quot;direction&quot;: &quot;&lt;up|down|left|right&gt;&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]](optional)}`
+Calling rule: `{"action_type": "swipe", "direction": "<up|down|left|right>", "box_2d": [[xmin,ymin,xmax,ymax]](optional)}`
+
+```
 {
-    &quot;name&quot;: &quot;swipe&quot;,
-    &quot;description&quot;: &quot;Swipe the screen or a scrollable UI element in one of the four directions.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;direction&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;description&quot;: &quot;The direction to swipe.&quot;,
-                &quot;enum&quot;: [&quot;up&quot;, &quot;down&quot;, &quot;left&quot;, &quot;right&quot;]
+    "name": "swipe",
+    "description": "Swipe the screen or a scrollable UI element in one of the four directions.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "direction": {
+                "type": "string",
+                "description": "The direction to swipe.",
+                "enum": ["up", "down", "left", "right"]
             },
-            &quot;box_2d&quot;: {
-                &quot;type&quot;: &quot;array&quot;,
-                &quot;description&quot;: &quot;The box_2d to swipe a specific UI element, leave it empty when swiping the whole screen.&quot;
+            "box_2d": {
+                "type": "array",
+                "description": "The box_2d to swipe a specific UI element, leave it empty when swiping the whole screen."
             }
         },
-        &quot;required&quot;: [
-            &quot;direction&quot;
+        "required": [
+            "direction"
         ]
     }
 }
+```
 
-### open_app
+## open_app
 
-Calling rule: `{&quot;action_type&quot;: &quot;open_app&quot;, &quot;app_name&quot;: &quot;&lt;name&gt;&quot;}`
+Calling rule: `{"action_type": "open_app", "app_name": "<name>"}`
+
+```
 {
-    &quot;name&quot;: &quot;open_app&quot;,
-    &quot;description&quot;: &quot;Open an app (nothing will happen if the app is not installed).&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;app_name&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;description&quot;: &quot;The name of the app to open. Supported apps: &lt;supported_apps&gt;&quot;
+    "name": "open_app",
+    "description": "Open an app (nothing will happen if the app is not installed).",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "app_name": {
+                "type": "string",
+                "description": "The name of the app to open. Supported apps: `<supported_apps>`"
             }
         },
-        &quot;required&quot;: [
-            &quot;app_name&quot;
+        "required": [
+            "app_name"
         ]
     }
 }
+```
 
-### wait
+## wait
 
-Calling rule: `{&quot;action_type&quot;: &quot;wait&quot;}`
+Calling rule: `{"action_type": "wait"}`
+
+```
 {
-    &quot;name&quot;: &quot;wait&quot;,
-    &quot;description&quot;: &quot;Wait for the screen to update.&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {},
-        &quot;required&quot;: []
+    "name": "wait",
+    "description": "Wait for the screen to update.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
     }
 }
+```
 
 # Historical Actions and Current Memory
-&lt;history_and_memory&gt;
+`<history_and_memory>`
 
 # Output Format
-1. Memory: important information you want to remember for the future actions. The memory should be only contents on the screen that will be used in the future actions. It should satisfy that: you cannnot determine one or more future actions without this memory. 
-2. Reason: the reason for the action and the memory. Your reason should include, but not limited to:- the content of the GUI, especially elements that are tightly related to the user goal- the step-by-step thinking process of how you come up with the new action. 
+
+1. Memory: important information you want to remember for the future actions. The memory should be only contents on the screen that will be used in the future actions. It should satisfy that: you cannot determine one or more future actions without this memory.
+2. Reason: the reason for the action and the memory. Your reason should include, but not limited to: the content of the GUI, especially elements that are tightly related to the user goal, the step-by-step thinking process of how you come up with the new action.
 3. Action: the action you want to take, in the correct JSON format. The action should be one of the above list.
 
 Your answer should look like:
 Memory: ...
 Reason: ...
-Action: {&quot;action_type&quot;:...}
+Action: `{"action_type":...}`
 
 # Some Additional Notes
-&lt;additional_notes&gt;
-```
+`<additional_notes>`
+
+
 
 下面是一个实际使用的 prompt 的例子。
 
-```
-You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user&#x27;s queries, you can also use tools or perform GUI operations directly until you fulfill the user&#x27;s request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
+
 
 # Task:
 Delete all but one of any recipes in the Broccoli app that are exact duplicates, ensuring at least one instance of each unique recipe remains. Duplication means that both the title and the description are the same.
@@ -312,9 +334,11 @@ Delete all but one of any recipes in the Broccoli app that are exact duplicates,
 Mobile
 
 # Action Space
-### status
+## status
 
 Calling rule: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;&lt;complete|infeasible&gt;&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;status&quot;,
     &quot;description&quot;: &quot;Finish the task by using the status action with complete or infeasible as goal_status.&quot;,
@@ -332,10 +356,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&q
         ]
     }
 }
+```
 
-### answer
+## answer
 
 Calling rule: `{&quot;action_type&quot;: &quot;answer&quot;, &quot;text&quot;: &quot;&lt;answer_text&gt;&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;answer&quot;,
     &quot;description&quot;: &quot;Answer user&#x27;s question.&quot;,
@@ -352,10 +379,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;answer&quot;, &quot;text&quot;: &
         ]
     }
 }
+```
 
-### click
+## click
 
 Calling rule: `{&quot;action_type&quot;: &quot;click&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]]}`
+
+```json
 {
     &quot;name&quot;: &quot;click&quot;,
     &quot;description&quot;: &quot;Click/tap on an element on the screen. Use the box_2d to indicate which element you want to click.&quot;,
@@ -372,10 +402,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;click&quot;, &quot;box_2d&quot;: 
         ]
     }
 }
+```
 
-### long_press
+## long_press
 
 Calling rule: `{&quot;action_type&quot;: &quot;long_press&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]]}`
+
+```json
 {
     &quot;name&quot;: &quot;long_press&quot;,
     &quot;description&quot;: &quot;Long press on an element on the screen, similar with the click action above, use the box_2d to indicate which element you want to long press.&quot;,
@@ -392,10 +425,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;long_press&quot;, &quot;box_2d&qu
         ]
     }
 }
+```
 
-### input_text
+## input_text
 
 Calling rule: `{&quot;action_type&quot;: &quot;input_text&quot;, &quot;text&quot;: &quot;&lt;text_input&gt;&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]], &quot;override&quot;: true/false}`
+
+```json
 {
     &quot;name&quot;: &quot;input_text&quot;,
     &quot;description&quot;: &quot;Type text into a text field (this action contains clicking the text field, typing in the text and pressing the enter). Use the box_2d to indicate the target text field.&quot;,
@@ -419,10 +455,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;input_text&quot;, &quot;text&quot
         ]
     }
 }
+```
 
-### keyboard_enter
+## keyboard_enter
 
 Calling rule: `{&quot;action_type&quot;: &quot;keyboard_enter&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;keyboard_enter&quot;,
     &quot;description&quot;: &quot;Press the Enter key.&quot;,
@@ -432,10 +471,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;keyboard_enter&quot;}`
         &quot;required&quot;: []
     }
 }
+```
 
-### navigate_home
+## navigate_home
 
 Calling rule: `{&quot;action_type&quot;: &quot;navigate_home&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;navigate_home&quot;,
     &quot;description&quot;: &quot;Navigate to the home screen.&quot;,
@@ -445,10 +487,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;navigate_home&quot;}`
         &quot;required&quot;: []
     }
 }
+```
 
-### navigate_back
+## navigate_back
 
 Calling rule: `{&quot;action_type&quot;: &quot;navigate_back&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;navigate_back&quot;,
     &quot;description&quot;: &quot;Navigate back.&quot;,
@@ -458,10 +503,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;navigate_back&quot;}`
         &quot;required&quot;: []
     }
 }
+```
 
-### swipe
+## swipe
 
 Calling rule: `{&quot;action_type&quot;: &quot;swipe&quot;, &quot;direction&quot;: &quot;&lt;up|down|left|right&gt;&quot;, &quot;box_2d&quot;: [[xmin,ymin,xmax,ymax]](optional)}`
+
+```json
 {
     &quot;name&quot;: &quot;swipe&quot;,
     &quot;description&quot;: &quot;Swipe the screen or a scrollable UI element in one of the four directions.&quot;,
@@ -483,10 +531,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;swipe&quot;, &quot;direction&quot
         ]
     }
 }
+```
 
-### open_app
+## open_app
 
 Calling rule: `{&quot;action_type&quot;: &quot;open_app&quot;, &quot;app_name&quot;: &quot;&lt;name&gt;&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;open_app&quot;,
     &quot;description&quot;: &quot;Open an app (nothing will happen if the app is not installed).&quot;,
@@ -503,10 +554,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;open_app&quot;, &quot;app_name&qu
         ]
     }
 }
+```
 
-### wait
+## wait
 
 Calling rule: `{&quot;action_type&quot;: &quot;wait&quot;}`
+
+```json
 {
     &quot;name&quot;: &quot;wait&quot;,
     &quot;description&quot;: &quot;Wait for the screen to update.&quot;,
@@ -516,12 +570,13 @@ Calling rule: `{&quot;action_type&quot;: &quot;wait&quot;}`
         &quot;required&quot;: []
     }
 }
+```
 
 # Historical Actions and Current Memory
 Step 0:
 Memory: None
 Reason: The user needs to access the Broccoli app to manage recipes. Since the app is not visible on the current home screen, the first step is to open the Broccoli app to proceed with the task of deleting duplicate recipes.
-Action: {&#x27;action_type&#x27;: &#x27;open_app&#x27;, &#x27;app_name&#x27;: &#x27;Broccoli&#x27;}
+Action: `{&#x27;action_type&#x27;: &#x27;open_app&#x27;, &#x27;app_name&#x27;: &#x27;Broccoli&#x27;}`
 
 # Output Format
 1. Memory: important information you want to remember for the future actions. The memory should be only contents on the screen that will be used in the future actions. It should satisfy that: you cannnot determine one or more future actions without this memory. 
@@ -534,26 +589,29 @@ Reason: ...
 Action: {&quot;action_type&quot;:...}
 
 # Some Additional Notes
-General:
+## General
 - Usually there will be multiple ways to complete a task, pick the easiest one. Also when something does not work as expected (due to various reasons), sometimes a simple retry can solve the problem, but if it doesn&#x27;t (you can see that from the history), SWITCH to other solutions.
 - Sometimes you may need to navigate the phone to gather information needed to complete the task, for example if user asks &quot;what is my schedule tomorrow&quot;, then you may want to open the calendar app (using the `open_app` action), look up information there, answer user&#x27;s question (using the `answer` action) and finish (using the `status` action with complete as goal_status).
 - For requests that are questions (or chat messages), remember to use the `answer` action to reply to user explicitly before finish! Merely displaying the answer on the screen is NOT sufficient (unless the goal is something like &quot;show me ...&quot;).
 - If the desired state is already achieved (e.g., enabling Wi-Fi when it&#x27;s already on), you can just complete the task.
 - If we say that two items are duplicated, in most cases we require that all of their attributes are exactly the same, not just the name.
-Text Related Operations:
+
+## Text Related Operations
 - Normally to select certain text on the screen: &lt;i&gt; Enter text selection mode by long pressing the area where the text is, then some of the words near the long press point will be selected (highlighted with two pointers indicating the range) and usually a text selection bar will also appear with options like `copy`, `paste`, `select all`, etc. &lt;ii&gt; Select the exact text you need. Usually the text selected from the previous step is NOT the one you want, you need to adjust the range by dragging the two pointers. If you want to select all text in the text field, simply click the `select all` button in the bar.
 - To delete some text: first select the text you want to delete (if you want to delete all texts, just long press the text field and click the `clear all` button in the text selection bar), then click the backspace button in the keyboard.
 - To copy some text: first select the exact text you want to copy, which usually also brings up the text selection bar, then click the `copy` button in bar.
 - To paste text into a text box, first long press the text box, then usually the text selection bar will appear with a `paste` button in it.
 - When typing into a text field, sometimes an auto-complete dropdown list will appear. This usually indicating this is a enum field and you should try to select the best match by clicking the corresponding one in the list.
-Action Related:
+
+## Action Related
 - Use the `input_text` action whenever you want to type something (including password) instead of clicking characters on the keyboard one by one. Sometimes there is some default text in the text field you want to type in, remember to delete them before typing.
 - Consider exploring the screen by using the `swipe` action with different directions to reveal additional content.
 - The direction parameter for the `swipe` action can be confusing sometimes as it&#x27;s opposite to swipe, for example, to view content at the bottom, the `swipe` direction should be set to &quot;up&quot;. It has been observed that you have difficulties in choosing the correct direction, so if one does not work, try the opposite as well.
 - To open an app if you can not find its icon, you can first press home (if necessary) and swipe up to the app drawer.
 - Swipe up means swiping from bottom to top, swipe down means swiping from top to bottom, swipe left means swiping from right to left, swipe right means swiping from left to right.
 - Use the `navigate_back` action to close/hide the soft keyboard.
-App Related:
+
+## App Related
 - In the Files app, the grid view may cause file names to be displayed incompletely. You can try switching to a different view type or use the search function directly.
 - In the Markor app, the save button is located in the top toolbar and is represented by a floppy disk icon.
 - If there are no additional requirements, when you need to add a recipe, you should include as much known information as possible, rather than only adding a small portion of the information.
@@ -569,13 +627,14 @@ App Related:
 - When adding a bill in Pro Expense, the bill category is a scrollable list. You can scroll through this list to discover more categories.
 - The calendar app does not automatically set the duration of an event. You need to manually adjust the interval between the start time and end time to control the event&#x27;s duration.
 - In certain views (such as the month view), the calendar app may not display the full event title. To see the complete title, you need to switch to the day view or open the event details.
-```
 
-### 建议
 
-1.  建议强制隐藏手机上的软键盘；在软键盘开启的状态下，模型计算滚动区域可能会出现错误。
 
-1.  注意swipe操作和scroll操作在方向上是相反的。
+# 建议
+
+1. 建议强制隐藏手机上的软键盘；在软键盘开启的状态下，模型计算滚动区域可能会出现错误。
+
+1. 注意`swipe`操作和`scroll`操作在方向上是相反的。
 
 ## 电脑环境
 
@@ -583,363 +642,700 @@ App Related:
 
 ### 动作空间
 
-1.  left_click：在x,y位置进行左键单击。它包含以下参数：
+1. `left_click`：在`x,y`位置进行左键单击。它包含以下参数：
 
-+   start_box：格式为 [x,y] 的坐标，用于指定点击位置。坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
++ `start_box`：格式为 `[x,y]` 的坐标，用于指定点击位置。坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
 
-+   element_info：可选，描述相关UI元素的文本信息。
++ `element_info`：可选，描述相关UI元素的文本信息。
 
-1.  right_click：在x,y位置进行右键单击。它与left_click使用相同的参数。
+1. `right_click`：在`x,y`位置进行右键单击。它与`left_click`使用相同的参数。
 
-1.  middle_click：在x,y位置进行中键单击。它与left_click使用相同的参数。
+1. `middle_click`：在`x,y`位置进行中键单击。它与`left_click`使用相同的参数。
 
-1.  hover：将鼠标指针移动到x,y位置。它与left_click使用相同的参数。
+1. `hover`：将鼠标指针移动到`x,y`位置。它与`left_click`使用相同的参数。
 
-1.  left_double_click：在x,y位置进行左键双击。它与left_click使用相同的参数。
+1. `left_double_click`：在`x,y`位置进行左键双击。它与`left_click`使用相同的参数。
 
-1.  left_drag：从一个位置[x1,y1]开始，拖动鼠标到另一个位置[x2,y2]。它包含以下参数：
+1. `left_drag`：从一个位置`[x1,y1]`开始，拖动鼠标到另一个位置`[x2,y2]`。它包含以下参数：
 
-+   start_box：格式为 [x1,y1] 的坐标，指定拖动的起始位置。
++ `start_box`：格式为 `[x1,y1]` 的坐标，指定拖动的起始位置。
 
-+   end_box：格式为 [x2,y2] 的坐标，指定拖动的结束位置。
++ `end_box`：格式为 `[x2,y2]` 的坐标，指定拖动的结束位置。
 
-+   element_info：可选，描述相关UI元素的文本信息。
++ `element_info`：可选，描述相关UI元素的文本信息。
 
-1.  key：模拟键盘按键或组合键。它包含以下参数：
+1. `key`：模拟键盘按键或组合键。它包含以下参数：
 
-+   keys：需要按下的单个按键或组合键的字符串。组合键需使用 + 进行分隔（例如：key(keys='ctrl+c')）。
++ `keys`：需要按下的单个按键或组合键的字符串。组合键需使用 `+` 进行分隔（例如：`key(keys='ctrl+c')`）。
 
-1.  type：向当前激活的文本框中输入文本内容。此操作只执行输入，不负责激活或清空文本框。它包含以下参数：
+1. `type`：向当前激活的文本框中输入文本内容。此操作只执行输入，不负责激活或清空文本框。它包含以下参数：
 
-+   content：需要输入的文本内容。
++ `content`：需要输入的文本内容。
 
-1.  scroll：将指定位置的元素向特定方向滚动指定的滚轮刻度数。它包含以下参数：
+1. `scroll`：将指定位置的元素向特定方向滚动指定的滚轮刻度数。它包含以下参数：
 
-+   start_box：格式为 [x,y] 的坐标，用于指定滚动操作所在的元素或区域。
++ `start_box`：格式为 `[x,y]` 的坐标，用于指定滚动操作所在的元素或区域。
 
-+   direction：滚动的方向。该参数有两个枚举值：down 和 up。
++ `direction`：滚动的方向。该参数有两个枚举值：`down` 和 `up`。
 
-+   step：一个整数，表示滚动的滚轮刻度数，默认值为5。
++ `step`：一个整数，表示滚动的滚轮刻度数，默认值为5。
 
-+   element_info：可选，描述相关UI元素的文本信息。
++ `element_info`：可选，描述相关UI元素的文本信息。
 
-1.  WAIT：等待5秒钟。此操作没有参数。
+1. `WAIT`：等待5秒钟。此操作没有参数。
 
-1.  DONE：表示确定任务达到了完成状态。此操作没有参数。
+1. `DONE`：表示确定任务达到了完成状态。此操作没有参数。
 
-1.  FAIL：表示认为任务不可能被完成。此操作没有参数。
+1. `FAIL`：表示认为任务不可能被完成。此操作没有参数。
 
 ### Prompt
 
-下面是 prompt 的模板，注意所有的历史操作应当直接编码进 prompt 中作为单轮对话的请求调用，而不是组织成多轮对话的形式。
+下面是 `prompt` 的模板，注意所有的历史操作应当直接编码进 `prompt` 中作为单轮对话的请求调用，而不是组织成多轮对话的形式。
 
-为了给模型提供充分的历史信息，我们在电脑环境下支持了在调用的同时选择在最近历史动作相对应的位置按时间顺序插入最多4张历史图片（提供的历史图片应当被缩放为原始截图大小的50%*50%），代表最近历史 4 步的屏幕截图，这意味着需要将user message中的text拆分为多个部分，并在两个text中插入image_url消息。对于历史4步之前的步骤或无法提供图片的历史步骤，推荐在对应位置使用文本(Omitted in context.)进行代替。当前状态的图片则始终应当放置在最后的位置，并保持原始的截图大小。
+为了给模型提供充分的历史信息，我们在电脑环境下支持了在调用的同时选择在最近历史动作相对应的位置按时间顺序插入最多4张历史图片（提供的历史图片应当被缩放为原始截图大小的50%*50%），代表最近历史 4 步的屏幕截图，这意味着需要将`user message`中的`text`拆分为多个部分，并在两个`text`中插入`image_url`消息。对于历史4步之前的步骤或无法提供图片的历史步骤，推荐在对应位置使用文本(Omitted in context.)进行代替。当前状态的图片则始终应当放置在最后的位置，并保持原始的截图大小。
 
-为了支持插入历史图片消息所对应的拼接逻辑，我们将 prompt 整体拆分为了PC_ACTION_SPACE、USER_PROMPT_HEAD、USER_HISTORY以及USER_PROMPT_HEAD四个部分。其中，{task}需要被替换成实际需要执行的任务，{bot_thought}、{action}、以及{memory}是在任务执行过程中，从模型历史动作输出中解析出的对应内容,{step_k+1}是指当前正在构建的历史步骤文本k的下一步k+1的序号。需要说明的是，bot_thought在此处定义为模型的实际明文output content中除action的函数调用以外的内容，而非模型的thinking部分。memory字段只需提供模型最新步骤输出中带有的相关内容即可，剩余的文本历史信息则预期被完整拼接到模型的prompt中，在拼接的过程中，应当给每一步输出的answer去除<|start_of_box|>、<|end_of_box|>两个特殊token。
+为了支持插入历史图片消息所对应的拼接逻辑，我们将 `prompt` 整体拆分为了`PC_ACTION_SPACE`、`USER_PROMPT_HEAD`、`USER_HISTORY`以及`USER_PROMPT_HEAD`四个部分。其中，`{task}`需要被替换成实际需要执行的任务，`{bot_thought}`、`{action}`、以及`{memory}`是在任务执行过程中，从模型历史动作输出中解析出的对应内容，`{step_k+1}`是指当前正在构建的历史步骤文本k的下一步k+1的序号。需要说明的是，`bot_thought`在此处定义为模型的实际明文output content中除`action`的函数调用以外的内容，而非模型的thinking部分。`memory`字段只需提供模型最新步骤输出中带有的相关内容即可，剩余的文本历史信息则预期被完整拼接到模型的prompt中，在拼接的过程中，应当给每一步输出的answer去除`<|start_of_box|>`、`<|end_of_box|>`两个特殊token。
+
+
+
+# `PC_ACTION_SPACE`
+
+## `{left,right,middle}_click`
+
+Call rule: `{left,right,middle}_click(start_box='[x,y]', element_info='')`
 
 ```
-PC_ACTION_SPACE = &quot;&quot;&quot;
-### {left,right,middle}_click
-
-Call rule: `{left,right,middle}_click(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)`
 {
-    &#x27;name&#x27;: [&#x27;left_click&#x27;, &#x27;right_click&#x27;, &#x27;middle_click&#x27;],
-    &#x27;description&#x27;: &#x27;Perform a left/right/middle mouse click at the specified coordinates on the screen.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;start_box&#x27;: {
-                &#x27;type&#x27;: &#x27;array&#x27;,
-                &#x27;items&#x27;: {
-                    &#x27;type&#x27;: &#x27;integer&#x27;
+    'name': ['left_click', 'right_click', 'middle_click'],
+    'description': 'Perform a left/right/middle mouse click at the specified coordinates on the screen.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
                 },
-                &#x27;description&#x27;: &#x27;Coordinates [x,y] where to perform the click, normalized to 0-999 range.&#x27;
+                'description': 'Coordinates [x,y] where to perform the click, normalized to 0-999 range.'
             },
-            &#x27;element_info&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;Optional text description of the UI element being clicked.&#x27;
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being clicked.'
             }
         },
-        &#x27;required&#x27;: [&#x27;start_box&#x27;]
+        'required': ['start_box']
     }
 }
+```
 
-### hover
+## `hover`
 
-Call rule: `hover(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)`
+Call rule: `hover(start_box='[x,y]', element_info='')`
+
+```
 {
-    &#x27;name&#x27;: &#x27;hover&#x27;,
-    &#x27;description&#x27;: &#x27;Move the mouse pointer to the specified coordinates without performing any click action.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;start_box&#x27;: {
-                &#x27;type&#x27;: &#x27;array&#x27;,
-                &#x27;items&#x27;: {
-                    &#x27;type&#x27;: &#x27;integer&#x27;
+    'name': 'hover',
+    'description': 'Move the mouse pointer to the specified coordinates without performing any click action.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
                 },
-                &#x27;description&#x27;: &#x27;Coordinates [x,y] where to move the mouse pointer, normalized to 0-999 range.&#x27;
+                'description': 'Coordinates [x,y] where to move the mouse pointer, normalized to 0-999 range.'
             },
-            &#x27;element_info&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;Optional text description of the UI element being hovered over.&#x27;
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being hovered over.'
             }
         },
-        &#x27;required&#x27;: [&#x27;start_box&#x27;]
+        'required': ['start_box']
     }
 }
+```
 
-### left_double_click
+## `left_double_click`
 
-Call rule: `left_double_click(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)`
+Call rule: `left_double_click(start_box='[x,y]', element_info='')`
+
+```
 {
-    &#x27;name&#x27;: &#x27;left_double_click&#x27;,
-    &#x27;description&#x27;: &#x27;Perform a left mouse double-click at the specified coordinates on the screen.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;start_box&#x27;: {
-                &#x27;type&#x27;: &#x27;array&#x27;,
-                &#x27;items&#x27;: {
-                    &#x27;type&#x27;: &#x27;integer&#x27;
+    'name': 'left_double_click',
+    'description': 'Perform a left mouse double-click at the specified coordinates on the screen.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
                 },
-                &#x27;description&#x27;: &#x27;Coordinates [x,y] where to perform the double-click, normalized to 0-999 range.&#x27;
+                'description': 'Coordinates [x,y] where to perform the double-click, normalized to 0-999 range.'
             },
-            &#x27;element_info&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;Optional text description of the UI element being double-clicked.&#x27;
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being double-clicked.'
             }
         },
-        &#x27;required&#x27;: [&#x27;start_box&#x27;]
+        'required': ['start_box']
     }
 }
+```
 
-### left_drag
+## `left_drag`
 
-Call rule: `left_drag(start_box=&#x27;[x1,y1]&#x27;, end_box=&#x27;[x2,y2]&#x27;, element_info=&#x27;&#x27;)`
+Call rule: `left_drag(start_box='[x1,y1]', end_box='[x2,y2]', element_info='')`
+
+```
 {
-    &#x27;name&#x27;: &#x27;left_drag&#x27;,
-    &#x27;description&#x27;: &#x27;Drag the mouse from starting coordinates to ending coordinates while holding the left mouse button.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;start_box&#x27;: {
-                &#x27;type&#x27;: &#x27;array&#x27;,
-                &#x27;items&#x27;: {
-                    &#x27;type&#x27;: &#x27;integer&#x27;
+    'name': 'left_drag',
+    'description': 'Drag the mouse from starting coordinates to ending coordinates while holding the left mouse button.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
                 },
-                &#x27;description&#x27;: &#x27;Starting coordinates [x1,y1] for the drag operation, normalized to 0-999 range.&#x27;
+                'description': 'Starting coordinates [x1,y1] for the drag operation, normalized to 0-999 range.'
             },
-            &#x27;end_box&#x27;: {
-                &#x27;type&#x27;: &#x27;array&#x27;,
-                &#x27;items&#x27;: {
-                    &#x27;type&#x27;: &#x27;integer&#x27;
+            'end_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
                 },
-                &#x27;description&#x27;: &#x27;Ending coordinates [x2,y2] for the drag operation, normalized to 0-999 range.&#x27;
+                'description': 'Ending coordinates [x2,y2] for the drag operation, normalized to 0-999 range.'
             },
-            &#x27;element_info&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;Optional text description of the UI element being dragged.&#x27;
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being dragged.'
             }
         },
-        &#x27;required&#x27;: [&#x27;start_box&#x27;, &#x27;end_box&#x27;]
+        'required': ['start_box', 'end_box']
     }
 }
+```
 
-### key
+## `key`
 
-Call rule: `key(keys=&#x27;&#x27;)`
+Call rule: `key(keys='')`
+
+```
 {
-    &#x27;name&#x27;: &#x27;key&#x27;,
-    &#x27;description&#x27;: &#x27;Simulate pressing a single key or combination of keys on the keyboard.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;keys&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;The key or key combination to press. Use &#x27;+&#x27; to separate keys in combinations (e.g., &#x27;ctrl+c&#x27;, &#x27;alt+tab&#x27;).&#x27;
+    'name': 'key',
+    'description': 'Simulate pressing a single key or combination of keys on the keyboard.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'keys': {
+                'type': 'string',
+                'description': 'The key or key combination to press. Use + to separate keys in combinations (e.g., ctrl+c, alt+tab).'
             }
         },
-        &#x27;required&#x27;: [&#x27;keys&#x27;]
+        'required': ['keys']
     }
 }
+```
 
-### type
+## `type`
 
-Call rule: `type(content=&#x27;&#x27;)`
+Call rule: `type(content='')`
+
+```
 {
-    &#x27;name&#x27;: &#x27;type&#x27;,
-    &#x27;description&#x27;: &#x27;Type text content into the currently focused text input field. This action only performs typing and does not handle field activation or clearing.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;content&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;The text content to be typed into the active text field.&#x27;
+    'name': 'type',
+    'description': 'Type text content into the currently focused text input field. This action only performs typing and does not handle field activation or clearing.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'content': {
+                'type': 'string',
+                'description': 'The text content to be typed into the active text field.'
             }
         },
-        &#x27;required&#x27;: [&#x27;content&#x27;]
+        'required': ['content']
     }
 }
+```
 
-### scroll
+## `scroll`
 
-Call rule: `scroll(start_box=&#x27;[x,y]&#x27;, direction=&#x27;&#x27;, step=5, element_info=&#x27;&#x27;)`
+Call rule: `scroll(start_box='[x,y]', direction='', step=5, element_info='')`
+
+```
 {
-    &#x27;name&#x27;: &#x27;scroll&#x27;,
-    &#x27;description&#x27;: &#x27;Scroll an element at the specified coordinates in the specified direction by a given number of wheel steps.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {
-            &#x27;start_box&#x27;: {
-                &#x27;type&#x27;: &#x27;array&#x27;,
-                &#x27;items&#x27;: {
-                    &#x27;type&#x27;: &#x27;integer&#x27;
+    'name': 'scroll',
+    'description': 'Scroll an element at the specified coordinates in the specified direction by a given number of wheel steps.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
                 },
-                &#x27;description&#x27;: &#x27;Coordinates [x,y] of the element or area to scroll, normalized to 0-999 range.&#x27;
+                'description': 'Coordinates [x,y] of the element or area to scroll, normalized to 0-999 range.'
             },
-            &#x27;direction&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;enum&#x27;: [&#x27;down&#x27;, &#x27;up&#x27;],
-                &#x27;description&#x27;: &#x27;The direction to scroll: &#x27;down&#x27; or &#x27;up&#x27;.&#x27;
+            'direction': {
+                'type': 'string',
+                'enum': ['down', 'up'],
+                'description': 'The direction to scroll: down or up.'
             },
-            &#x27;step&#x27;: {
-                &#x27;type&#x27;: &#x27;integer&#x27;,
-                &#x27;default&#x27;: 5,
-                &#x27;description&#x27;: &#x27;Number of wheel steps to scroll, default is 5.&#x27;
+            'step': {
+                'type': 'integer',
+                'default': 5,
+                'description': 'Number of wheel steps to scroll, default is 5.'
             },
-            &#x27;element_info&#x27;: {
-                &#x27;type&#x27;: &#x27;string&#x27;,
-                &#x27;description&#x27;: &#x27;Optional text description of the UI element being scrolled.&#x27;
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being scrolled.'
             }
         },
-        &#x27;required&#x27;: [&#x27;start_box&#x27;, &#x27;direction&#x27;]
+        'required': ['start_box', 'direction']
     }
 }
+```
 
-### WAIT
+## `WAIT`
 
 Call rule: `WAIT()`
+
+```
 {
-    &#x27;name&#x27;: &#x27;WAIT&#x27;,
-    &#x27;description&#x27;: &#x27;Wait for 5 seconds before proceeding to the next action.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {},
-        &#x27;required&#x27;: []
+    'name': 'WAIT',
+    'description': 'Wait for 5 seconds before proceeding to the next action.',
+    'parameters': {
+        'type': 'object',
+        'properties': {},
+        'required': []
     }
 }
+```
 
-### DONE
+## `DONE`
 
 Call rule: `DONE()`
+
+```
 {
-    &#x27;name&#x27;: &#x27;DONE&#x27;,
-    &#x27;description&#x27;: &#x27;Indicate that the current task has been completed successfully and no further actions are needed.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {},
-        &#x27;required&#x27;: []
+    'name': 'DONE',
+    'description': 'Indicate that the current task has been completed successfully and no further actions are needed.',
+    'parameters': {
+        'type': 'object',
+        'properties': {},
+        'required': []
     }
 }
+```
 
-### FAIL
+## `FAIL`
 
 Call rule: `FAIL()`
-{
-    &#x27;name&#x27;: &#x27;FAIL&#x27;,
-    &#x27;description&#x27;: &#x27;Indicate that the current task cannot be completed or is impossible to accomplish.&#x27;,
-    &#x27;parameters&#x27;: {
-        &#x27;type&#x27;: &#x27;object&#x27;,
-        &#x27;properties&#x27;: {},
-        &#x27;required&#x27;: []
-    }
-}&quot;&quot;&quot;
 
-USER_PROMPT_HEAD = &quot;&quot;&quot;You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user&#x27;s queries, you can also use tools or perform GUI operations directly until you fulfill the user&#x27;s request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
+```
+{
+    'name': 'FAIL',
+    'description': 'Indicate that the current task cannot be completed or is impossible to accomplish.',
+    'parameters': {
+        'type': 'object',
+        'properties': {},
+        'required': []
+    }
+}
+```
+
+# `USER_PROMPT_HEAD`
+
+You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user's queries, you can also use tools or perform GUI operations directly until you fulfill the user's request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
+
+## Task
+
+`{task}`
+
+## Task Platform
+
+Ubuntu
+
+## Action Space
+
+`{action_space}`
+
+## Historical Actions and Current Memory
+
+History:
+
+# `USER_HISTORY`
+
+```
+ Thought: {bot_thought}
+Action: {action}
+step {step_k+1}: Screenshot:'
+```
+
+# `USER_PROMPT_TAIL`
+
+Memory:
+
+`{memory}`
+
+## Output Format
+
+Plain text explanation with `action(param='...')`
+
+Memory:
+
+`[{"key": "value"}, ...]`
+
+## Some Additional Notes
+
+- I'll give you the most recent 4 history screenshots(shrunked to 50%*50%) along with the historical action steps.
+- You should put the key information you `have to remember` in a seperated memory part and I'll give it to you in the next round. The content in this part should be a dict list. If you no longer need some given information, you should remove it from the memory. Even if you don't need to remember anything, you should also output an empty list.
+- My computer's password is "password", feel free to use it when you need sudo rights.
+- For the thunderbird account "anonym-x2024@outlook.com", the password is "gTCI;;=@y7|QJ0nDa_kN3Sb>&".
+
+Current Screenshot:
+
+
+
+下面是一个在实际使用过程中，在存在历史步骤的条件下发出请求时的 `messages` 组织形式用例。请将`image_url`中的url替换为对应历史或当前步骤截图的base64编码。
+
+
+
+You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user's queries, you can also use tools or perform GUI operations directly until you fulfill the user's request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
 
 # Task:
-{task}
+Please rotate my figure to mirror it horizontally.
 
 # Task Platform
 Ubuntu
 
 # Action Space
-{action_space}
+
+## {left,right,middle}_click
+
+Call rule: `left_click(start_box='[x,y]', element_info='')`
+
+```
+{
+    'name': ['left_click', 'right_click', 'middle_click'],
+    'description': 'Perform a left/right/middle mouse click at the specified coordinates on the screen.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
+                },
+                'description': 'Coordinates [x,y] where to perform the click, normalized to 0-999 range.'
+            },
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being clicked.'
+            }
+        },
+        'required': ['start_box']
+    }
+}
+```
+
+## hover
+
+Call rule: `hover(start_box='[x,y]', element_info='')`
+
+```
+{
+    'name': 'hover',
+    'description': 'Move the mouse pointer to the specified coordinates without performing any click action.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
+                },
+                'description': 'Coordinates [x,y] where to move the mouse pointer, normalized to 0-999 range.'
+            },
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being hovered over.'
+            }
+        },
+        'required': ['start_box']
+    }
+}
+```
+
+## left_double_click
+
+Call rule: `left_double_click(start_box='[x,y]', element_info='')`
+
+```
+{
+    'name': 'left_double_click',
+    'description': 'Perform a left mouse double-click at the specified coordinates on the screen.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
+                },
+                'description': 'Coordinates [x,y] where to perform the double-click, normalized to 0-999 range.'
+            },
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being double-clicked.'
+            }
+        },
+        'required': ['start_box']
+    }
+}
+```
+
+## left_drag
+
+Call rule: `left_drag(start_box='[x1,y1]', end_box='[x2,y2]', element_info='')`
+
+```
+{
+    'name': 'left_drag',
+    'description': 'Drag the mouse from starting coordinates to ending coordinates while holding the left mouse button.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
+                },
+                'description': 'Starting coordinates [x1,y1] for the drag operation, normalized to 0-999 range.'
+            },
+            'end_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
+                },
+                'description': 'Ending coordinates [x2,y2] for the drag operation, normalized to 0-999 range.'
+            },
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being dragged.'
+            }
+        },
+        'required': ['start_box', 'end_box']
+    }
+}
+```
+
+## key
+
+Call rule: `key(keys='')`
+
+```
+{
+    'name': 'key',
+    'description': 'Simulate pressing a single key or combination of keys on the keyboard.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'keys': {
+                'type': 'string',
+                'description': 'The key or key combination to press. Use \'+\' to separate keys in combinations (e.g., \'ctrl+c\', \'alt+tab\').'
+            }
+        },
+        'required': ['keys']
+    }
+}
+```
+
+## type
+
+Call rule: `type(content='')`
+
+```
+{
+    'name': 'type',
+    'description': 'Type text content into the currently focused text input field. This action only performs typing and does not handle field activation or clearing.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'content': {
+                'type': 'string',
+                'description': 'The text content to be typed into the active text field.'
+            }
+        },
+        'required': ['content']
+    }
+}
+```
+
+## scroll
+
+Call rule: `scroll(start_box='[x,y]', direction='', step=5, element_info='')`
+
+```
+{
+    'name': 'scroll',
+    'description': 'Scroll an element at the specified coordinates in the specified direction by a given number of wheel steps.',
+    'parameters': {
+        'type': 'object',
+        'properties': {
+            'start_box': {
+                'type': 'array',
+                'items': {
+                    'type': 'integer'
+                },
+                'description': 'Coordinates [x,y] of the element or area to scroll, normalized to 0-999 range.'
+            },
+            'direction': {
+                'type': 'string',
+                'enum': ['down', 'up'],
+                'description': 'The direction to scroll: \'down\' or \'up\'.'
+            },
+            'step': {
+                'type': 'integer',
+                'default': 5,
+                'description': 'Number of wheel steps to scroll, default is 5.'
+            },
+            'element_info': {
+                'type': 'string',
+                'description': 'Optional text description of the UI element being scrolled.'
+            }
+        },
+        'required': ['start_box', 'direction']
+    }
+}
+```
+
+## WAIT
+
+Call rule: `WAIT()`
+
+```
+{
+    'name': 'WAIT',
+    'description': 'Wait for 5 seconds before proceeding to the next action.',
+    'parameters': {
+        'type': 'object',
+        'properties': {},
+        'required': []
+    }
+}
+```
+
+## DONE
+
+Call rule: `DONE()`
+
+```
+{
+    'name': 'DONE',
+    'description': 'Indicate that the current task has been completed successfully and no further actions are needed.',
+    'parameters': {
+        'type': 'object',
+        'properties': {},
+        'required': []
+    }
+}
+```
+
+## FAIL
+
+Call rule: `FAIL()`
+
+```
+{
+    'name': 'FAIL',
+    'description': 'Indicate that the current task cannot be completed or is impossible to accomplish.',
+    'parameters': {
+        'type': 'object',
+        'properties': {},
+        'required': []
+    }
+}
+```
 
 # Historical Actions and Current Memory
-History:&quot;&quot;&quot;
 
-USER_HISTORY = &quot; Thought: {bot_thought}\nAction: {action}\nstep {step_k+1}: Screenshot:&#x27;&quot;
+History:
 
-USER_PROMPT_TAIL = &quot;&quot;&quot;
+step 1: Screenshot:(Omitted in context.) Thought: I can see that GIMP is open but there's an error message displayed about failing to open a file. I need to dismiss this error message first before I can proceed with rotating an image. I'll click the OK button to close the error dialog.
+
+Action: `left_click(start_box='[586, 446]', element_info='OK button')`
+
+step 2: Screenshot:(Omitted in context.) Thought: I can see that GIMP is now open and displaying a workspace with some gray circular shapes. To rotate/mirror the figure horizontally, I need to access the image transformation tools. I'll click on the "Image" menu in the top menu bar to find the rotation and mirroring options.
+
+Action: `left_click(start_box='[149, 70]', element_info='Image menu')`
+
+step 3: Screenshot: img0
+
+Thought: I can see the Image menu is open and displaying various options. I can see there's a "Transform" option in the menu, which is likely where I'll find the horizontal mirroring functionality. I need to click on "Transform" to access the transformation options that include horizontal flipping.
+
+Action: `left_click(start_box='[162, 212]', element_info='Transform option')`
+
+step 4: Screenshot: img1
+
+Thought: I can see the Transform submenu is open, but I don't see the horizontal flip option that I need. The Transform submenu appears to have more options that aren't currently visible. I need to look for the "Flip Horizontally" option, which is typically found within the Transform menu in GIMP. Let me click on the Transform option to see if there are additional submenu options available.
+
+Action: `left_click(start_box='[168, 213]', element_info='Transform option')`
+
+step 5: Screenshot: img2
+
+Thought: Perfect! I can see the Transform submenu is now open and displaying the transformation options I need. I can clearly see the "Flip Horizontally" option, which is exactly what I need to mirror the figure horizontally as requested. I'll click on this option to apply the horizontal flip to the image.
+
+Action: `left_click(start_box='[320, 211]', element_info='Flip Horizontally option')`
+
+step 6: Screenshot: img3
+
+Thought: I can see the Transform submenu is open in GIMP with the "Flip Horizontally" option visible. The cursor appears to be hovering over this option, but I need to click on it to actually apply the horizontal flip transformation to the image. I'll click on the "Flip Horizontally" option to mirror the figure as requested.
+
+Action: `left_click(start_box='[339, 211]', element_info='Flip Horizontally option')`
+
 Memory:
-{memory}
+`[]`
+
 # Output Format
-Plain text explanation with action(param=&#x27;...&#x27;)
+
+Plain text explanation with `action(param='...')`
+
 Memory:
-[{{&quot;key&quot;: &quot;value&quot;}}, ...]
+`[{"key": "value"}, ...]`
 
 # Some Additional Notes
-- I&#x27;ll give you the most recent 4 history screenshots(shrunked to 50%*50%) along with the historical action steps.
-- You should put the key information you *have to remember* in a seperated memory part and I&#x27;ll give it to you in the next round. The content in this part should be a dict list. If you no longer need some given information, you should remove it from the memory. Even if you don&#x27;t need to remember anything, you should also output an empty list.
-- My computer&#x27;s password is &quot;password&quot;, feel free to use it when you need sudo rights.
-- For the thunderbird account &quot;anonym-x2024@outlook.com&quot;, the password is &quot;gTCI&quot;;=@y7|QJ0nDa_kN3Sb&amp;&gt;&quot;.
 
-Current Screenshot:
-&quot;&quot;&quot;
-```
+- I'll give you the most recent 4 history screenshots(shrunked to 50%*50%) along with the historical action steps.
+- You should put the key information you have to remember in a separated memory part and I'll give it to you in the next round. The content in this part should be a dict list. If you no longer need some given information, you should remove it from the memory. Even if you don't need to remember anything, you should also output an empty list.
+- My computer's password is "password", feel free to use it when you need sudo rights.
+- For the thunderbird account "anonym-x2024@outlook.com", the password is "gTCI";=@y7|QJ0nDa_kN3Sb&>".
 
-下面是一个在实际使用过程中，在存在历史步骤的条件下发出请求时的 messages 组织形式用例。请将image_url中的url替换为对应历史或当前步骤截图的base64编码。
 
-```
-[{&#x27;role&#x27;: &#x27;user&#x27;,
-  &#x27;content&#x27;: [{&#x27;type&#x27;: &#x27;text&#x27;,
-    &#x27;text&#x27;: &#x27;You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user\&#x27;s queries, you can also use tools or perform GUI operations directly until you fulfill the user\&#x27;s request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).\n\n# Task:\nPlease rotate my figure to mirror it horizontally.\n\n# Task Platform\nUbuntu\n\n# Action Space\n\n### {left,right,middle}_click\n\nCall rule: `{left,right,middle}_click(start_box=\&#x27;[x,y]\&#x27;, element_info=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: [\&#x27;left_click\&#x27;, \&#x27;right_click\&#x27;, \&#x27;middle_click\&#x27;],\n    \&#x27;description\&#x27;: \&#x27;Perform a left/right/middle mouse click at the specified coordinates on the screen.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;start_box\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;array\&#x27;,\n                \&#x27;items\&#x27;: {\n                    \&#x27;type\&#x27;: \&#x27;integer\&#x27;\n                },\n                \&#x27;description\&#x27;: \&#x27;Coordinates [x,y] where to perform the click, normalized to 0-999 range.\&#x27;\n            },\n            \&#x27;element_info\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;Optional text description of the UI element being clicked.\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;start_box\&#x27;]\n    }\n}\n\n### hover\n\nCall rule: `hover(start_box=\&#x27;[x,y]\&#x27;, element_info=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: \&#x27;hover\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Move the mouse pointer to the specified coordinates without performing any click action.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;start_box\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;array\&#x27;,\n                \&#x27;items\&#x27;: {\n                    \&#x27;type\&#x27;: \&#x27;integer\&#x27;\n                },\n                \&#x27;description\&#x27;: \&#x27;Coordinates [x,y] where to move the mouse pointer, normalized to 0-999 range.\&#x27;\n            },\n            \&#x27;element_info\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;Optional text description of the UI element being hovered over.\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;start_box\&#x27;]\n    }\n}\n\n### left_double_click\n\nCall rule: `left_double_click(start_box=\&#x27;[x,y]\&#x27;, element_info=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: \&#x27;left_double_click\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Perform a left mouse double-click at the specified coordinates on the screen.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;start_box\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;array\&#x27;,\n                \&#x27;items\&#x27;: {\n                    \&#x27;type\&#x27;: \&#x27;integer\&#x27;\n                },\n                \&#x27;description\&#x27;: \&#x27;Coordinates [x,y] where to perform the double-click, normalized to 0-999 range.\&#x27;\n            },\n            \&#x27;element_info\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;Optional text description of the UI element being double-clicked.\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;start_box\&#x27;]\n    }\n}\n\n### left_drag\n\nCall rule: `left_drag(start_box=\&#x27;[x1,y1]\&#x27;, end_box=\&#x27;[x2,y2]\&#x27;, element_info=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: \&#x27;left_drag\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Drag the mouse from starting coordinates to ending coordinates while holding the left mouse button.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;start_box\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;array\&#x27;,\n                \&#x27;items\&#x27;: {\n                    \&#x27;type\&#x27;: \&#x27;integer\&#x27;\n                },\n                \&#x27;description\&#x27;: \&#x27;Starting coordinates [x1,y1] for the drag operation, normalized to 0-999 range.\&#x27;\n            },\n            \&#x27;end_box\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;array\&#x27;,\n                \&#x27;items\&#x27;: {\n                    \&#x27;type\&#x27;: \&#x27;integer\&#x27;\n                },\n                \&#x27;description\&#x27;: \&#x27;Ending coordinates [x2,y2] for the drag operation, normalized to 0-999 range.\&#x27;\n            },\n            \&#x27;element_info\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;Optional text description of the UI element being dragged.\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;start_box\&#x27;, \&#x27;end_box\&#x27;]\n    }\n}\n\n### key\n\nCall rule: `key(keys=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: \&#x27;key\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Simulate pressing a single key or combination of keys on the keyboard.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;keys\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;The key or key combination to press. Use \&#x27;+\&#x27; to separate keys in combinations (e.g., \&#x27;ctrl+c\&#x27;, \&#x27;alt+tab\&#x27;).\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;keys\&#x27;]\n    }\n}\n\n### type\n\nCall rule: `type(content=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: \&#x27;type\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Type text content into the currently focused text input field. This action only performs typing and does not handle field activation or clearing.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;content\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;The text content to be typed into the active text field.\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;content\&#x27;]\n    }\n}\n\n### scroll\n\nCall rule: `scroll(start_box=\&#x27;[x,y]\&#x27;, direction=\&#x27;\&#x27;, step=5, element_info=\&#x27;\&#x27;)`\n{\n    \&#x27;name\&#x27;: \&#x27;scroll\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Scroll an element at the specified coordinates in the specified direction by a given number of wheel steps.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {\n            \&#x27;start_box\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;array\&#x27;,\n                \&#x27;items\&#x27;: {\n                    \&#x27;type\&#x27;: \&#x27;integer\&#x27;\n                },\n                \&#x27;description\&#x27;: \&#x27;Coordinates [x,y] of the element or area to scroll, normalized to 0-999 range.\&#x27;\n            },\n            \&#x27;direction\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;enum\&#x27;: [\&#x27;down\&#x27;, \&#x27;up\&#x27;],\n                \&#x27;description\&#x27;: \&#x27;The direction to scroll: \&#x27;down\&#x27; or \&#x27;up\&#x27;.\&#x27;\n            },\n            \&#x27;step\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;integer\&#x27;,\n                \&#x27;default\&#x27;: 5,\n                \&#x27;description\&#x27;: \&#x27;Number of wheel steps to scroll, default is 5.\&#x27;\n            },\n            \&#x27;element_info\&#x27;: {\n                \&#x27;type\&#x27;: \&#x27;string\&#x27;,\n                \&#x27;description\&#x27;: \&#x27;Optional text description of the UI element being scrolled.\&#x27;\n            }\n        },\n        \&#x27;required\&#x27;: [\&#x27;start_box\&#x27;, \&#x27;direction\&#x27;]\n    }\n}\n\n### WAIT\n\nCall rule: `WAIT()`\n{\n    \&#x27;name\&#x27;: \&#x27;WAIT\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Wait for 5 seconds before proceeding to the next action.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {},\n        \&#x27;required\&#x27;: []\n    }\n}\n\n### DONE\n\nCall rule: `DONE()`\n{\n    \&#x27;name\&#x27;: \&#x27;DONE\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Indicate that the current task has been completed successfully and no further actions are needed.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {},\n        \&#x27;required\&#x27;: []\n    }\n}\n\n### FAIL\n\nCall rule: `FAIL()`\n{\n    \&#x27;name\&#x27;: \&#x27;FAIL\&#x27;,\n    \&#x27;description\&#x27;: \&#x27;Indicate that the current task cannot be completed or is impossible to accomplish.\&#x27;,\n    \&#x27;parameters\&#x27;: {\n        \&#x27;type\&#x27;: \&#x27;object\&#x27;,\n        \&#x27;properties\&#x27;: {},\n        \&#x27;required\&#x27;: []\n    }\n}\n\n# Historical Actions and Current Memory\nHistory:\nstep 1: Screenshot:(Omitted in context.) Thought: I can see that GIMP is open but there\&#x27;s an error message displayed about failing to open a file. I need to dismiss this error message first before I can proceed with rotating an image. I\&#x27;ll click the OK button to close the error dialog.\nAction: left_click(start_box=\&#x27;[586, 446]\&#x27;, element_info=\&#x27;OK button\&#x27;)\nstep 2: Screenshot:(Omitted in context.) Thought: I can see that GIMP is now open and displaying a workspace with some gray circular shapes. To rotate/mirror the figure horizontally, I need to access the image transformation tools. I\&#x27;ll click on the &quot;Image&quot; menu in the top menu bar to find the rotation and mirroring options.\nAction: left_click(start_box=\&#x27;[149, 70]\&#x27;, element_info=\&#x27;Image menu\&#x27;)\nstep 3: Screenshot:&#x27;},
-   {&#x27;type&#x27;: &#x27;image_url&#x27;, &#x27;image_url&#x27;: {&#x27;url&#x27;: &#x27;img0&#x27;}},
-   {&#x27;type&#x27;: &#x27;text&#x27;,
-    &#x27;text&#x27;: &#x27; Thought: I can see the Image menu is open and displaying various options. I can see there\&#x27;s a &quot;Transform&quot; option in the menu, which is likely where I\&#x27;ll find the horizontal mirroring functionality. I need to click on &quot;Transform&quot; to access the transformation options that include horizontal flipping.\nAction: left_click(start_box=\&#x27;[162, 212]\&#x27;, element_info=\&#x27;Transform option\&#x27;)\nstep 4: Screenshot:&#x27;},
-   {&#x27;type&#x27;: &#x27;image_url&#x27;, &#x27;image_url&#x27;: {&#x27;url&#x27;: &#x27;img1&#x27;}},
-   {&#x27;type&#x27;: &#x27;text&#x27;,
-    &#x27;text&#x27;: &#x27; Thought: I can see the Transform submenu is open, but I don\&#x27;t see the horizontal flip option that I need. The Transform submenu appears to have more options that aren\&#x27;t currently visible. I need to look for the &quot;Flip Horizontally&quot; option, which is typically found within the Transform menu in GIMP. Let me click on the Transform option to see if there are additional submenu options available.\nAction: left_click(start_box=\&#x27;[168, 213]\&#x27;, element_info=\&#x27;Transform option\&#x27;)\nstep 5: Screenshot:&#x27;},
-   {&#x27;type&#x27;: &#x27;image_url&#x27;, &#x27;image_url&#x27;: {&#x27;url&#x27;: &#x27;img2&#x27;}},
-   {&#x27;type&#x27;: &#x27;text&#x27;,
-    &#x27;text&#x27;: &#x27; Thought: Perfect! I can see the Transform submenu is now open and displaying the transformation options I need. I can clearly see the &quot;Flip Horizontally&quot; option, which is exactly what I need to mirror the figure horizontally as requested. I\&#x27;ll click on this option to apply the horizontal flip to the image.\nAction: left_click(start_box=\&#x27;[320, 211]\&#x27;, element_info=\&#x27;Flip Horizontally option\&#x27;)\nstep 6: Screenshot:&#x27;},
-   {&#x27;type&#x27;: &#x27;image_url&#x27;, &#x27;image_url&#x27;: {&#x27;url&#x27;: &#x27;img3&#x27;}},
-   {&#x27;type&#x27;: &#x27;text&#x27;,
-    &#x27;text&#x27;: &#x27; Thought: I can see the Transform submenu is open in GIMP with the &quot;Flip Horizontally&quot; option visible. The cursor appears to be hovering over this option, but I need to click on it to actually apply the horizontal flip transformation to the image. I\&#x27;ll click on the &quot;Flip Horizontally&quot; option to mirror the figure as requested.\nAction: left_click(start_box=\&#x27;[339, 211]\&#x27;, element_info=\&#x27;Flip Horizontally option\&#x27;)\nMemory:\n[]\n# Output Format\nPlain text explanation with action(param=\&#x27;...\&#x27;)\nMemory:\n[{&quot;key&quot;: &quot;value&quot;}, ...]\n\n# Some Additional Notes\n- I\&#x27;ll give you the most recent 4 history screenshots(shrunked to 50%*50%) along with the historical action steps.\n- You should put the key information you *have to remember* in a seperated memory part and I\&#x27;ll give it to you in the next round. The content in this part should be a dict list. If you no longer need some given information, you should remove it from the memory. Even if you don\&#x27;t need to remember anything, you should also output an empty list.\n- My computer\&#x27;s password is &quot;password&quot;, feel free to use it when you need sudo rights.\n- For the thunderbird account &quot;anonym-x2024@outlook.com&quot;, the password is &quot;gTCI&quot;;=@y7|QJ0nDa_kN3Sb&amp;&gt;&quot;.\n\nCurrent Screenshot:\n&#x27;},
-   {&#x27;type&#x27;: &#x27;image_url&#x27;, &#x27;image_url&#x27;: {&#x27;url&#x27;: &#x27;img4&#x27;}}]}]
-```
 
-## 网页环境
+# 网页环境
 
 如果你想要测试GLM-4.5V在榜单WebVoyager上的性能，请遵循这一节的说明。
 
-### 动作空间
+## 动作空间
 
 在网页环境中，我们采用set of marks的方式标注界面上的可交互元素。模型只需要输出元素的编号，无需输出元素的坐标。
 
-1.  Click [Numerical_Label]. ：表示点击给定编号的元素。
+1. `Click [Numerical_Label]`：表示点击给定编号的元素。
+2. `Type [Numerical_Label]; [The input content]`：表示在给定编号的元素中输入指定文本。
+3. `Scroll [Numerical_Label or WINDOW]; [up or down]`：表示滚动给定编号的元素或者窗口。
+4. `Wait`：表示等待界面内容加载。
+5. `GoBack`：表示返回前一个网页。
+6. `Bing`：表示进入必应的首页，后续可以进行搜索工作。
+7. `ANSWER; <content>The content of the answer</content>`：表示用一段文本回答用户的问题；在该动作之后，应当立即结束任务。
+8. `Key; [The key name]`：表示按下某一个按钮。
 
-1.  Type [Numerical_Label]; [The input content]. ：表示在给定编号的元素中输入指定文本。
+## Prompt
 
-1.  Scroll [Numerical_Label or WINDOW]; [up or down]. ：表示滚动给定编号的元素或者窗口。
-
-1.  Wait. ：表示等待界面内容加载。
-
-1.  GoBack. ：表示返回前一个网页。
-
-1.  Bing. ：表示进入必应的首页，后续可以进行搜索工作。
-
-1.  ANSWER; <content>The content of the answer</content>. ：表示用一段文本回答用户的问题；在该动作之后，应当立即结束任务。
-
-1.  Key; [The key name]. ：表示按下某一个按钮。
-
-### Prompt
-
-下面是 prompt 的模板。其中{TASK}、{Web} 、{Time}、{Memory}、{PREVIOUS_ACTIONS}、{web_text}需要被替换成实际的内容。在调用模型的时候，你应该同时一张带有
-
-set of marks的屏幕截图。注意，所有的历史操作应当直接编码进 prompt 中，而不是组织成多轮对话的形式。
+下面是 prompt 的模板。其中`{TASK}`、`{Web}`、`{Time}`、`{Memory}`、`{PREVIOUS_ACTIONS}`、`{web_text}`需要被替换成实际的内容。在调用模型的时候，你应该同时一张带有 set of marks 的屏幕截图。注意，所有的历史操作应当直接编码进 prompt 中，而不是组织成多轮对话的形式。
 
 ```
 You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user&#x27;s queries, you can also use tools or perform GUI operations directly until you fulfill the user&#x27;s request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
@@ -1010,78 +1406,89 @@ D. Key Guidelines You MUST follow:
 
 ![](img/414a0817bbeac01e1c092a869aada8c0.png)
 
-```
-You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user&#x27;s queries, you can also use tools or perform GUI operations directly until you fulfill the user&#x27;s request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
 
-# Task:
-Search for a GitHub repository written in Python that&#x27;s related to machine learning, has received at least 500 stars, and has been updated within the last 7 days. Please interact with https://github.com/ and get the answer.The current time in Beijing is 2025-07-26, 10:00 AM.
 
-# Task Platform
+You are a GUI Agent, and your primary task is to respond accurately to user requests or questions. In addition to directly answering the user's queries, you can also use tools or perform GUI operations directly until you fulfill the user's request or provide a correct answer. You should carefully read and understand the images and questions provided by the user, and engage in thinking and reflection when appropriate. The coordinates involved are all represented in thousandths (0-999).
+
+# Task
+Search for a GitHub repository written in Python that's related to machine learning, has received at least 500 stars, and has been updated within the last 7 days. Please interact with `https://github.com/` and get the answer. The current time in Beijing is 2025-07-26, 10:00 AM.
+
+## Task Platform
 Web
 
-# Action Space
+## Action Space
 Action should STRICTLY follow the format:
-    - Click [Numerical_Label]. For example the Action \&quot;Click [1]\&quot; means clicking on the web element with a Numerical_Label of \&quot;1\&quot;.
-    - Type [Numerical_Label]; [The input content]. For example the Action \&quot;Type [2]; [5$]\&quot; means typing \&quot;5$\&quot; in the web element with a Numerical_Label of \&quot;2\&quot;.
-    - Scroll [Numerical_Label or WINDOW]; [up or down]. For example the Action \&quot;Scroll [6]; [up]\&quot; means scrolling up in the web element with a Numerical_Label of \&quot;6\&quot;.
-    - Wait. For example the Action \&quot;Wait\&quot; means waiting for 5 seconds.
-    - GoBack. For example the Action \&quot;GoBack\&quot; means going back to the previous webpage.
-    - Bing. For example the Action \&quot;Bing\&quot; means jumping to the Bing search page.
-    - ANSWER; &lt;content&gt;The content of the answer&lt;/content&gt;. For example the Action \&quot;ANSWER; &lt;content&gt;Guatemala&lt;/content&gt;\&quot; means answering the task with \&quot;Guatemala\&quot;.
-    - Key; [The key name]. For example the Action \&quot;Key; [Return]\&quot; means pressing the Enter key
+- `Click [Numerical_Label]`. For example the action `Click [1]` means clicking on the web element with a `Numerical_Label` of `1`.
+- `Type [Numerical_Label]; [The input content]`. For example the action `Type [2]; [5$]` means typing `5$` in the web element with a `Numerical_Label` of `2`.
+- `Scroll [Numerical_Label or WINDOW]; [up or down]`. For example the action `Scroll [6]; [up]` means scrolling up in the web element with a `Numerical_Label` of `6`.
+- `Wait`. For example the action `Wait` means waiting for 5 seconds.
+- `GoBack`. For example the action `GoBack` means going back to the previous webpage.
+- `Bing`. For example the action `Bing` means jumping to the Bing search page.
+- `ANSWER; <content>The content of the answer</content>`. For example the action `ANSWER; <content>Guatemala</content>` means answering the task with `Guatemala`.
+- `Key; [The key name]`. For example the action `Key; [Return]` means pressing the Enter key
 
-# Historical Actions and Current Memory
-You have **already performed the following actions** (format: Thought,Action,The Observation after the Action):
-0.Thought:The task is to find a specific GitHub repository. I need to use the search bar to start the search. The search bar is labeled 9.        Action:Click [9]        Observation:Success
+## Historical Actions and Current Memory
+You have already performed the following actions (format: `Thought`, `Action`, `Observation` after the Action):
+0. `Thought`: The task is to find a specific GitHub repository. I need to use the search bar to start the search. The search bar is labeled 9. `Action`: `Click [9]` `Observation`: Success
 
-The \&quot;Memory\&quot; in the current step as follow:
-Memory:{}
+The `Memory` in the current step as follow:
+`Memory`:{}
 
-# Output Format
+## Output Format
 Your reply should strictly follow the format:
-Thought: {Your brief thoughts (briefly summarize the info that will help ANSWER)}
-Action: {One Action format you choose}
-Memory_Updated: {The latest version of memory generated by modifying or supplementing the original memory content based on the visual information in the current screenshot.}
+`Thought`: {Your brief thoughts (briefly summarize the info that will help ANSWER)}
+`Action`: {One Action format you choose}
+`Memory_Updated`: {The latest version of memory generated by modifying or supplementing the original memory content based on the visual information in the current screenshot.}
 
-# Some Additional Notes
-A. The provided image is a screenshot of the webpage you are viewing at this step. This screenshot will feature Numerical Labels placed in the TOP LEFT corner of each Web Element. Carefully analyze the visual information to identify the Numerical Label corresponding to the Web Element that requires interaction, then follow the guidelines and choose one of the following actions:
-    1. Click a Web Element.
-    2. Delete existing content in a textbox and then type content. 
-    3. Scroll up or down. Multiple scrolls are allowed to browse the webpage. Pay attention!! The default scroll is the whole window. If the scroll widget is located in a certain area of the webpage, then you have to specify a Web Element in that area. I would hover the mouse there and then scroll.
-    4. Wait. Typically used to wait for unfinished webpage processes, with a duration of 5 seconds.
-    5. Go back, returning to the previous webpage.
-    6. Bing, directly jump to the Bing search page. When you can&#x27;t find information in some websites, try starting over with Bing.
-    7. Key, press the key, only the &#x27;Return&#x27; key can be pressed.
-    8. Answer. This action should only be chosen when all questions in the task have been solved.
-B. I&#x27;ve provided the tag name of each element and the text it contains (if text exists). Note that &lt;textarea&gt; or &lt;input&gt; may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.
-[0]: \&quot;Learn more\&quot;;        [1]: &lt;button&gt; \&quot;Close\&quot;;        [2]: &lt;input&gt; \&quot;\&quot;;        [3]: \&quot;Enterprise Learn More\&quot;;        [4]: \&quot;Security Learn More\&quot;;        [5]: \&quot;Copilot Learn More\&quot;;        [6]: \&quot;Pricing Learn More\&quot;;        [7]: \&quot;Search syntax tips\&quot;;
-C. The \&quot;Memory\&quot; only stores the information obtained from the web page that is relevant to the task,  and the \&quot;Memory\&quot; is strictly in JSON format. For example: {\&quot;user_email_address\&quot;: \&quot;test@163.com\&quot;, \&quot;user_email_password\&quot;: \&quot;123456\&quot;, \&quot;jack_email_address\&quot;: \&quot;jack@163.com\&quot;}. The \&quot;Memory\&quot; does not include future plans, descriptions of current actions, or other reflective content; it only records visual information that is relevant to the task obtained from the screenshot.
-D. Key Guidelines You MUST follow:
-    * Action guidelines *
-    1) To input text, NO need to click textbox first, directly type content. After typing, the system automatically hits `ENTER` key. Sometimes you should click the search button to apply search filters. Try to use simple language when searching.  
-    2) You must Distinguish between textbox and search button, don&#x27;t type content into the button! If no textbox is found, you may need to click the search button first before the textbox is displayed. 
-    3) Execute only one action per iteration. 
-    4) STRICTLY Avoid repeating the same action if the webpage remains unchanged. You may have selected the wrong web element or numerical label. Continuous use of the Wait is also NOT allowed.
-    5) When a complex Task involves multiple questions or steps, select \&quot;ANSWER\&quot; only at the very end, after addressing all of these questions (steps). Flexibly combine your own abilities with the information in the web page. Double check the formatting requirements in the task when ANSWER. 
-    6) You can only interact with web elements in the screenshot that have s numerical label.Before giving the action, double-check that the numerical label appears on the screen.
-    7) If any web elements with numerical labels in the screenshot have not finished loading, you need to wait for them to load completely.
-    * Web Browsing Guidelines *
-    1) Don&#x27;t interact with useless web elements like Login, Sign-in, donation that appear in Webpages. Pay attention to Key Web Elements like search textbox and menu.
-    2) Vsit video websites like YouTube is allowed BUT you can&#x27;t play videos. Clicking to download PDF is allowed and will be analyzed by the Assistant API.
-    3) Focus on the numerical labels in the TOP LEFT corner of each rectangle (element). Ensure you don&#x27;t mix them up with other numbers (e.g. Calendar) on the page.
-    4) Focus on the date in task, you must look for results that match the date. It may be necessary to find the correct year, month and day at calendar.
-    5）During the process of browsing web page content, to ensure the complete acquisition of the target content, it may be necessary to scroll down the page until confirming the appearance of the end marker for the target content. For example, when new webpage information appears, or the webpage scroll bar has reached the bottom, etc.
-    6) When you work on the github website, use \&quot;Key; [Return]\&quot; to start a search.
-    7) Try your best to find the answer that best fits the task, if any situations that do not meet the task requirements occur during the task, correct the mistakes promptly.
-```
+## Some Additional Notes
+
+### A. The provided image is a screenshot of the webpage you are viewing at this step. This screenshot will feature Numerical Labels placed in the TOP LEFT corner of each Web Element. Carefully analyze the visual information to identify the Numerical Label corresponding to the Web Element that requires interaction, then follow the guidelines and choose one of the following actions:
+1. Click a Web Element.
+2. Delete existing content in a textbox and then type content.
+3. Scroll up or down. Multiple scrolls are allowed to browse the webpage. Pay attention!! The default scroll is the whole window. If the scroll widget is located in a certain area of the webpage, then you have to specify a Web Element in that area. I would hover the mouse there and then scroll.
+4. `Wait`. Typically used to wait for unfinished webpage processes, with a duration of 5 seconds.
+5. Go back, returning to the previous webpage.
+6. `Bing`, directly jump to the Bing search page. When you can't find information in some websites, try starting over with `Bing`.
+7. `Key`, press the key, only the `Return` key can be pressed.
+8. `Answer`. This action should only be chosen when all questions in the task have been solved.
+
+### B. I've provided the tag name of each element and the text it contains (if text exists). Note that `<textarea>` or `<input>` may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.
+[0]: `"Learn more";` [1]: `<button> "Close"`; [2]: `<input> ""`; [3]: `"Enterprise Learn More";` [4]: `"Security Learn More";` [5]: `"Copilot Learn More";` [6]: `"Pricing Learn More";` [7]: `"Search syntax tips";`
+
+### C. The `Memory` only stores the information obtained from the web page that is relevant to the task, and the `Memory` is strictly in JSON format. For example: `{"user_email_address": "test@163.com", "user_email_password": "123456", "jack_email_address": "jack@163.com"}`. The `Memory` does not include future plans, descriptions of current actions, or other reflective content; it only records visual information that is relevant to the task obtained from the screenshot.
+
+### D. Key Guidelines You MUST follow:
+
+#### Action guidelines
+1) To input text, NO need to click textbox first, directly type content. After typing, the system automatically hits `ENTER` key. Sometimes you should click the search button to apply search filters. Try to use simple language when searching.
+2) You must Distinguish between textbox and search button, don't type content into the button! If no textbox is found, you may need to click the search button first before the textbox is displayed.
+3) Execute only one action per iteration.
+4) STRICTLY Avoid repeating the same action if the webpage remains unchanged. You may have selected the wrong web element or numerical label. Continuous use of the `Wait` is also NOT allowed.
+5) When a complex Task involves multiple questions or steps, select `ANSWER` only at the very end, after addressing all of these questions (steps). Flexibly combine your own abilities with the information in the web page. Double check the formatting requirements in the task when `ANSWER`.
+6) You can only interact with web elements in the screenshot that have s numerical label. Before giving the action, double-check that the numerical label appears on the screen.
+7) If any web elements with numerical labels in the screenshot have not finished loading, you need to wait for them to load completely.
+
+#### Web Browsing Guidelines
+1) Don't interact with useless web elements like Login, Sign-in, donation that appear in Webpages. Pay attention to Key Web Elements like search textbox and menu.
+2) Visit video websites like YouTube is allowed BUT you can't play videos. Clicking to download PDF is allowed and will be analyzed by the Assistant API.
+3) Focus on the numerical labels in the TOP LEFT corner of each rectangle (element). Ensure you don't mix them up with other numbers (e.g. Calendar) on the page.
+4) Focus on the date in task, you must look for results that match the date. It may be necessary to find the correct year, month and day at calendar.
+5) During the process of browsing web page content, to ensure the complete acquisition of the target content, it may be necessary to scroll down the page until confirming the appearance of the end marker for the target content. For example, when new webpage information appears, or the webpage scroll bar has reached the bottom, etc.
+6) When you work on the github website, use `Key; [Return]` to start a search.
+7) Try your best to find the answer that best fits the task, if any situations that do not meet the task requirements occur during the task, correct the mistakes promptly.
 
 > Note:
 
-> 在使用Selenium库操作网页时，为了确保select元素的在截图中可见并且可操作，我们执行JavaScript脚本对原生的select网页元素进行了重写。
+
+
+> 在使用Selenium库操作网页时，为了确保`select`元素的在截图中可见并且可操作，我们执行JavaScript脚本对原生的`select`网页元素进行了重写。
 
 js脚本示例：
 
+
+
 ```
+```javascript
 // 为所有 select 元素创建自定义下拉框
 function customizeSelects() {
     var selects = document.querySelectorAll(&#x27;select:not([data-customized])&#x27;);

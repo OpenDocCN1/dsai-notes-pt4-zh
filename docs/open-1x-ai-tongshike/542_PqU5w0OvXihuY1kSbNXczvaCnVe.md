@@ -1,3 +1,4 @@
+
 # 更多上分思路共创
 
 > 来源：[https://datawhaler.feishu.cn/docx/KOHIdizOkoG5gmx3rXwcF2RHnob](https://datawhaler.feishu.cn/docx/KOHIdizOkoG5gmx3rXwcF2RHnob)
@@ -32,10 +33,9 @@
 
 ![](img/6976a762e3a2a2e69a09b36baf292668.png)
 
-哎，0.92727分了，这说明，邮箱这一项有92.727%是空的！同时测试集一共55条数据，55*0.92727=50.99985，这可以说明2件事：
+哎，0.92727分了，这说明，邮箱这一项有92.727%是空的！同时测试集一共55条数据，`55*0.92727=50.99985`，这可以说明2件事：
 
 1.  测试集的数据中只有4条有邮箱。
-
 1.  精度能达到小数点后3位，说明不存在一次聊天抽取出多个样本的情况（这在训练集中出现过）
 
 ### 测试集信息侦查（大家可以一起收集下）
@@ -48,36 +48,36 @@ Tips: 如果你对你的模型在某一项的准确率不放心，可以用同�
 import json
 
 datas = {
-    &quot;基本信息-姓名&quot;: &quot;忽略&quot;,
-    &quot;基本信息-手机号码&quot;: &quot;忽略&quot;,
-    &quot;基本信息-邮箱&quot;: &quot;忽略&quot;,
-    &quot;基本信息-地区&quot;: &quot;忽略&quot;,
-    &quot;基本信息-详细地址&quot;: &quot;忽略&quot;,
-    &quot;基本信息-性别&quot;: &quot;忽略&quot;,
-    &quot;基本信息-年龄&quot;: &quot;忽略&quot;,
-    &quot;基本信息-生日&quot;: &quot;忽略&quot;,
-    &quot;咨询类型&quot;: [&quot;忽略&quot;],
-    &quot;意向产品&quot;: [&quot;忽略&quot;],
-    &quot;购买异议点&quot;: [&quot;忽略&quot;],
-    &quot;客户预算-预算是否充足&quot;: &quot;忽略&quot;,
-    &quot;客户预算-总体预算金额&quot;: &quot;忽略&quot;,
-    &quot;客户预算-预算明细&quot;: &quot;&quot;,
-    &quot;竞品信息&quot;: &quot;忽略&quot;,
-    &quot;客户是否有意向&quot;: &quot;忽略&quot;,
-    &quot;客户是否有卡点&quot;: &quot;忽略&quot;,
-    &quot;客户购买阶段&quot;: &quot;忽略&quot;,
-    &quot;下一步跟进计划-参与人&quot;: [&quot;忽略&quot;],
-    &quot;下一步跟进计划-时间点&quot;: &quot;忽略&quot;,
-    &quot;下一步跟进计划-具体事项&quot;: &quot;忽略&quot;
+    "基本信息-姓名": "忽略",
+    "基本信息-手机号码": "忽略",
+    "基本信息-邮箱": "忽略",
+    "基本信息-地区": "忽略",
+    "基本信息-详细地址": "忽略",
+    "基本信息-性别": "忽略",
+    "基本信息-年龄": "忽略",
+    "基本信息-生日": "忽略",
+    "咨询类型": ["忽略"],
+    "意向产品": ["忽略"],
+    "购买异议点": ["忽略"],
+    "客户预算-预算是否充足": "忽略",
+    "客户预算-总体预算金额": "忽略",
+    "客户预算-预算明细": "",
+    "竞品信息": "忽略",
+    "客户是否有意向": "忽略",
+    "客户是否有卡点": "忽略",
+    "客户购买阶段": "忽略",
+    "下一步跟进计划-参与人": ["忽略"],
+    "下一步跟进计划-时间点": "忽略",
+    "下一步跟进计划-具体事项": "忽略"
 }
 
 data_list = []
 for i in range(55):
     data_list.append({
-        &quot;infos&quot;: [datas],
-        &quot;index&quot;: i + 1
+        "infos": [datas],
+        "index": i + 1
     })
     
-with open(&#x27;预算明细为空.json&#x27;, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+with open('预算明细为空.json', 'w', encoding='utf-8') as f:
     json.dump(data_list, f, ensure_ascii=False, indent=4)
 ```

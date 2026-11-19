@@ -1,3 +1,4 @@
+
 # 🔗友链
 
 > 来源：[https://langgptai.feishu.cn/docx/BFLWdrAUSoN31pxfE6EcNQG5n7o](https://langgptai.feishu.cn/docx/BFLWdrAUSoN31pxfE6EcNQG5n7o)
@@ -52,7 +53,7 @@ AI 高质量知识库，信息源，交流社群，友链推荐
 
 ![](img/520ac8b4eeeb49daecedd71057204b77.png)
 
-###  Fish AI Reader - AI 日报\AI创业观察
+### Fish AI Reader - AI 日报\AI创业观察
 
 > 👸号每日定期更新AI最新资讯，全网唯一一家专注在AI创业观察、全网AI动态的日更行选手。帮助大家在瞬息万变的AI时代，获得更高质量，更高效的信息。
 

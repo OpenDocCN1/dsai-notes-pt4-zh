@@ -1,10 +1,11 @@
+
 # AI绘画商业化落地
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/LmJqdW5R1oSaKrx5RbncAyhVnqg](https://xuqiwei1986.feishu.cn/docx/LmJqdW5R1oSaKrx5RbncAyhVnqg)
 
 > 因为目前还是学生，所以对这一块了解不多；望各位读者见谅···
 
-# 视频领域：
+## 视频领域：
 
 抖音图文赛道
 
@@ -16,7 +17,7 @@
 
 主要是语言和图片的结合···
 
-# 泛娱乐
+## 泛娱乐
 
 商业（样式定制）
 
@@ -28,7 +29,7 @@ PS素材（SD已经向photoshop开放插件）：
 
 SD可以PS提供素材
 
-# 📕方法
+## 📕方法
 
 壁纸头像变现：
 
@@ -42,7 +43,7 @@ SD可以PS提供素材
 
 大家照着做多琢磨琢磨肯定是能悟出门路的；
 
-# 教育产业
+## 教育产业
 
 开设相关SD课程
 
@@ -50,7 +51,7 @@ SD可以PS提供素材
 
 白杨SEO：https://articles.zsxq.com/id_rdbftdjbfifk.html
 
-# 私域流量
+## 私域流量
 
 本质：先获取流量再将流量变现
 

@@ -1,3 +1,4 @@
+
 # 使用 LlamaIndex 和 Neo4j 构建多模态 RAG Pipeline
 
 > 来源：[https://agijuejin.feishu.cn/docx/ASdnd3wTIoSYt4xI0HEceWz4nTh](https://agijuejin.feishu.cn/docx/ASdnd3wTIoSYt4xI0HEceWz4nTh)
@@ -28,50 +29,58 @@ Using ChatGPT to describe images.
 
 Workflow diagram for the blog post. Image by author.
 
-首**先，文章被拆分为**图像和文本两部分。然后，这些部分被转化为向量形式并分别建立索引。对于文本部分，我们使用 ada-002 文本嵌入模型，而对于图像，则使用 dual encoder model CLIP [2]，该模型能够在同一个嵌入空间中同时处理文本和图像。当用户提出一个问题时，系统会进行两次基于向量的相似度搜索：一次搜索相关图像，另一次搜索相关文档。搜索到的结果将被送入一个多模态大语言模型，该模型会为用户生成答案，这展示了一个综合性的方法，通过处理和利用混合媒介来进行信息检索和回答生成。
+首先，文章被拆分为图像和文本两部分。然后，这些部分被转化为向量形式并分别建立索引。对于文本部分，我们使用 ada-002 文本嵌入模型，而对于图像，则使用 dual encoder model CLIP [2]，该模型能够在同一个嵌入空间中同时处理文本和图像。当用户提出一个问题时，系统会进行两次基于向量的相似度搜索：一次搜索相关图像，另一次搜索相关文档。搜索到的结果将被送入一个多模态大语言模型，该模型会为用户生成答案，这展示了一个综合性的方法，通过处理和利用混合媒介来进行信息检索和回答生成。
 
-## ** ****数据预处理 **
+## 数据预处理
 
 我将把我在 2022 和 2023 年发表在 Medium 上的文章作为 RAG 应用的数据基础[3]。这些文章中包含了丰富的信息，涉及 Neo4j 图数据科学库及如何将 Neo4j 与大语言模型框架结合的内容。下载 Medium 上的文章时，文章格式为 HTML。因此，我们需要一些编程操作来分别提取文章中的文本和图像。
 
 ```
 def process_html_file(file_path):
-    with open(file_path, &quot;r&quot;, encoding=&quot;utf-8&quot;) as file:
-        soup = BeautifulSoup(file, &quot;html.parser&quot;)
+    with open(file_path, "r", encoding="utf-8") as file:
+        soup = BeautifulSoup(file, "html.parser")
 
     # Find the required section
-    content_section = soup.find(&quot;section&quot;, {&quot;data-field&quot;: &quot;body&quot;, &quot;class&quot;: &quot;e-content&quot;})
+    content_section = soup.find("section", {"data-field": "body", "class": "e-content"})
 
     if not content_section:
-        return &quot;Section not found.&quot;
+        return "Section not found."
 
     sections = []
-    current_section = {&quot;header&quot;: &quot;&quot;, &quot;content&quot;: &quot;&quot;, &quot;source&quot;: file_path.split(&quot;/&quot;)[-1]}
+    current_section = {"header": "", "content": "", "source": file_path.split("/")[-1]}
     images = []
     header_found = False
 
     for element in content_section.find_all(recursive=True):
-        if element.name in [&quot;h1&quot;, &quot;h2&quot;, &quot;h3&quot;, &quot;h4&quot;]:
-            if header_found and (current_section[&quot;content&quot;].strip()):
+        if element.name in ["h1", "h2", "h3", "h4"]:
+            if header_found and (current_section["content"].strip()):
                 sections.append(current_section)
             current_section = {
-                &quot;header&quot;: element.get_text(),
-                &quot;content&quot;: &quot;&quot;,
-                &quot;source&quot;: file_path.split(&quot;/&quot;)[-1],
+                "header": element.get_text(),
+                "content": "",
+                "source": file_path.split("/")[-1],
             }
             header_found = True
         elif header_found:
-            if element.name == &quot;pre&quot;:
-                current_section[&quot;content&quot;] += f&quot;```{element.get_text().strip()}```\n&quot;
-            elif element.name == &quot;img&quot;:
-                img_src = element.get(&quot;src&quot;)
-                img_caption = element.find_next(&quot;figcaption&quot;)
-                caption_text = img_caption.get_text().strip() if img_caption else &quot;&quot;
-                images.append(ImageDocument(image_url=img_src))
-            elif element.name in [&quot;p&quot;, &quot;span&quot;, &quot;a&quot;]:
-                current_section[&quot;content&quot;] += element.get_text().strip() + &quot;\n&quot;
+            if element.name == "pre":
+                current_section["content"] += f"```{element.get_text().strip()}```\n"
 
-    if current_section[&quot;content&quot;].strip():
+            elif element.name == "img":
+
+                img_src = element.get("src")
+
+                img_caption = element.find_next("figcaption")
+
+                caption_text = img_caption.get_text().strip() if img_caption else ""
+
+                images.append(ImageDocument(image_url=img_src))
+
+            elif element.name in ["p", "span", "a"]:
+
+                current_section["content"] += element.get_text().strip() + "\n"
+
+    if current_section["content"].strip():
+
         sections.append(current_section)
 
     return images, sections
@@ -81,28 +90,39 @@ def process_html_file(file_path):
 
 ```
 all_documents = []
+
 all_images = []
 
 # Directory to search in (current working directory)
+
 directory = os.getcwd()
 
 # Walking through the directory
+
 for root, dirs, files in os.walk(directory):
+
     for file in files:
-        if file.endswith(&quot;.html&quot;):
+
+        if file.endswith(".html"):
+
             # Update the file path to be relative to the current directory
+
             images, documents = process_html_file(os.path.join(root, file))
+
             all_documents.extend(documents)
+
             all_images.extend(images)
 
-text_docs = [Document(text=el.pop(&quot;content&quot;), metadata=el) for el in all_documents]
-print(f&quot;Text document count: {len(text_docs)}&quot;) # Text document count: 252
-print(f&quot;Image document count: {len(all_images)}&quot;) # Image document count: 328
+text_docs = [Document(text=el.pop("content"), metadata=el) for el in all_documents]
+
+print(f"Text document count: {len(text_docs)}") # Text document count: 252
+
+print(f"Image document count: {len(all_images)}") # Image document count: 328
 ```
 
 我们共得到了 252 个文本块和 328 张图像。我创作了这么多照片有些令人惊讶，但我知道其中一些只是表格结果的图像。我们可以使用视觉模型来过滤掉不相关的照片，但我在这里跳过了这一步。
 
-## ** ****创建数据向量索引 **
+## 创建数据向量索引
 
 正如前面提到的，我们需要创建两个向量存储，一个用于图像，另一个用于文本。CLIP 嵌入模型的维度为 512，而 ada-002 的维度为 1536。
 
@@ -111,23 +131,24 @@ text_store = Neo4jVectorStore(
     url=NEO4J_URI,
     username=NEO4J_USERNAME,
     password=NEO4J_PASSWORD,
-    index_name=&quot;text_collection&quot;,
-    node_label=&quot;Chunk&quot;,
+    index_name="text_collection",
+    node_label="Chunk",
     embedding_dimension=1536
 )
+
 image_store = Neo4jVectorStore(
     url=NEO4J_URI,
     username=NEO4J_USERNAME,
     password=NEO4J_PASSWORD,
-    index_name=&quot;image_collection&quot;,
-    node_label=&quot;Image&quot;,
+    index_name="image_collection",
+    node_label="Image",
     embedding_dimension=512
-
 )
+
 storage_context = StorageContext.from_defaults(vector_store=text_store)
 ```
 
-现在向量存储已经初始化，我们使用 MultiModalVectorStoreIndex 来索引我们拥有的两种模态的信息。
+现在向量存储已经初始化，我们使用 `MultiModalVectorStoreIndex` 来索引我们拥有的两种模态的信息。
 
 ```
 # Takes 10 min without GPU / 1 min with GPU on Google collab
@@ -136,27 +157,28 @@ index = MultiModalVectorStoreIndex.from_documents(
 )
 ```
 
-在底层，MultiModalVectorStoreIndex 使用文本和图像嵌入模型来计算 embeddings，并将结果存储和索引在 Neo4j 中。对于图像，只存储 URL，而不是实际的 base64 或其他图像表示形式。
+在底层，`MultiModalVectorStoreIndex` 使用文本和图像嵌入模型来计算 embeddings，并将结果存储和索引在 Neo4j 中。对于图像，只存储 URL，而不是实际的 base64 或其他图像表示形式。
 
-## ** ****多模态 RAG 流程 **
+## 多模态 RAG 流程
 
 这段代码是直接从 LlamaIndex 的多模态 cookbook 中复制的。我们首先定义一个多模态大语言模型和提示模板，然后将所有内容结合起来作为一个查询引擎。
 
 ```
 openai_mm_llm = OpenAIMultiModal(
-    model=&quot;gpt-4-vision-preview&quot;, max_new_tokens=1500
+    model="gpt-4-vision-preview", max_new_tokens=1500
 )
 
 qa_tmpl_str = (
-    &quot;Context information is below.\n&quot;
-    &quot;---------------------\n&quot;
-    &quot;{context_str}\n&quot;
-    &quot;---------------------\n&quot;
-    &quot;Given the context information and not prior knowledge, &quot;
-    &quot;answer the query.\n&quot;
-    &quot;Query: {query_str}\n&quot;
-    &quot;Answer: &quot;
+    "Context information is below.\n"
+    "---------------------\n"
+    "{context_str}\n"
+    "---------------------\n"
+    "Given the context information and not prior knowledge, "
+    "answer the query.\n"
+    "Query: {query_str}\n"
+    "Answer: "
 )
+
 qa_tmpl = PromptTemplate(qa_tmpl_str)
 
 query_engine = index.as_query_engine(
@@ -167,8 +189,10 @@ query_engine = index.as_query_engine(
 现在我们可以继续测试它的表现如何。
 
 ```
-query_str = &quot;How do vector RAG application work?&quot;
+query_str = "How do vector RAG application work?"
+
 response = query_engine.query(query_str)
+
 print(response)  
 ```
 
@@ -186,11 +210,11 @@ Image input to LLM.
 
 大语言模型接收到了两张相同的图像作为输入，这表明我重复使用了一些图表。然而，我对 CLIP 嵌入感到惊喜，因为它们能够从众多图像中检索出最相关的图片。在更接近生产环境的设置中，你可能会想要清理和去重图像，但这已经超出了本文的讨论范围。
 
-## ** ****总结 **
+## 总结
 
 大语言模型的发展速度超出了我们历史上的经验，并且正在跨越多种模态。我坚信，到明年年底，大语言模型很快就能理解视频，并因此能够在与你交谈时捕捉到非言语线索。另一方面，我们可以将图像作为输入传递给 RAG 流程，从而增强传递给大语言模型的信息多样性，使回答更加准确和优质。利用 LlamaIndex 和 Neo4j 实现多模态 RAG 流程就是如此简单。
 
-### ** 相关链接**
+### 相关链接
 
 [1] https://github.com/run-llama/llama_index/blob/main/docs/examples/multi_modal/gpt4v_multi_modal_retrieval.ipynb
 

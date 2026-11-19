@@ -1,16 +1,17 @@
+
 # ChatGPT为啥这么牛？
 
 > 来源：[https://ga67w23t0nn.feishu.cn/docx/Js6LdVrJWoGcyAx9Yoyc55iYnUb](https://ga67w23t0nn.feishu.cn/docx/Js6LdVrJWoGcyAx9Yoyc55iYnUb)
 
 在读这个专栏之前，你一定要了解ChatGPT的发展历史，明白ChatGPT不是一下发展起来了的！
 
-它是从1950年开始，经历漫长发展过程的，这一波人能在这个领域长期坚守这么久，足以说明他们的厉害，而这个产品不是人工”智障“，而是真正的人工”智能“！
+它是从1950年开始，经历漫长发展过程的，这一波人能在这个领域长期坚守这么久，足以说明他们的厉害，而这个产品不是人工“智障”，而是真正的人工“智能”！
 
 ![](img/d6bb2b4e9caa9e7f9237857abce7c3ea.png)
 
 2017年，谷歌发表Transformer论文的第二天，OpenAI的研发团队就豁然开朗了，意识到Transformer神经网络结构可以完全解决机器不断预测文本的问题，最终，造就了GPT-3以及迄今为止的一切。
 
-我们[从O](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)penAI团队于2018年6月发表的论文《Improving Language Understanding by Generative Pre- Training》，参见：https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf，可以发现GPT中的三个字母，每个字母所代表的技术或多或少都是被Google早期探索过的，但是，合起来就是OpenAI的。
+我们[从OpenAI团队](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)于2018年6月发表的论文《Improving Language Understanding by Generative Pre-Training》，参见：https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf，可以发现GPT中的三个字母，每个字母所代表的技术或多或少都是被Google早期探索过的，但是，合起来就是OpenAI的。
 
 ![](img/979ca01f66f4cada7e0b4f70114194f2.png)
 
@@ -26,7 +27,7 @@
 
 ![](img/8f721bceffe608b00048c05d2fa78466.png)
 
-# **ChatGPT知识库有多大？**
+## ChatGPT知识库有多大？
 
 目前来说，ChatGPT不能回答及时的消息，比如：今天的热点新闻有哪些？今天xx股票的涨势如何？
 
@@ -44,7 +45,7 @@
 
 所以，我觉得未来大家用ChatGPT就跟我们现在用电和火一样，随用随取。我们能搞自己的分身；未来，我们只需要对着装有ChatGPT大脑的智能机器人，说一句你的需求，它便能自动调用其它智能设备，帮你把一切全都搞定！
 
-# **ChatGPT不是“傻逼”**
+## ChatGPT不是“傻逼”
 
 有不少人说ChatGPT是傻逼，其实它不傻，是你自己不会提问而已，不了解ChatGPT的思维方式，你接下来需要去研究“提示工程（Prompt Engineering）”，说到底，“提示工程”就是人类与AI对话的技巧。
 
@@ -72,7 +73,7 @@ ChatGPT最擅长的任务很多，比如回答知识性问题，语言翻译，�
 
 我再延伸到其他的场景，比如人工客服，写简历，写文案，写策划，写论文，写代码等，它都能帮你出色的完成。
 
-## **ChatGPT 将重写整个时代**
+## ChatGPT 将重写整个时代
 
 前段时间，ChatGPT 通过了沃顿商学院的MBA考试。还通过了美国医学委员会考试，要知道美国研究生需要四年的学习和两年的临床实践才能通过这个考试。
 
@@ -98,7 +99,7 @@ Windows 11用户将能够从窗口进入Edge浏览器中快速开始必应聊天
 
 ![](img/0dcecc85413dfb0a03f90c472eb011e4.png)
 
-## **课程目录**
+## 课程目录
 
 建议跟着这个课程来学习，一定能带你成为ChatGPT大师！
 

@@ -1,3 +1,4 @@
+
 # 场景8：人物
 
 > 来源：[https://bluefocus.feishu.cn/docx/JXLwdybrdoiVVExqixScKob4nNd](https://bluefocus.feishu.cn/docx/JXLwdybrdoiVVExqixScKob4nNd)
@@ -16,13 +17,11 @@
 
 做衣服类电商的朋友可能会比较需要这个功能：
 
-1.  用 AI 生成一个虚拟人
+1. 用 AI 生成一个虚拟人
+2. 然后将货物照片（比如某件衣服）传给 AI
+3. AI 将虚拟人和货物的照片融合在一起
 
-1.  然后将货物照片（比如某件衣服）传给 AI
-
-1.  AI 将虚拟人和货物的照片融合在一起
-
-坦率说来，我觉得 Midjourney 应该是可以的，但目前的效果还不太好，要想实现这个需求，只需要用到前面介绍的技巧九里提到的 blend 功能，详细方法就不在这赘述了，大致就是我将商品图和人物图用 blend 功能融合了下：
+坦率说来，我觉得 Midjourney 应该是可以的，但目前的效果还不太好，要想实现这个需求，只需要用到前面介绍的技巧九里提到的 `blend` 功能，详细方法就不在这赘述了，大致就是我将商品图和人物图用 `blend` 功能融合了下：
 
 ![](img/ad89d2a0e67c94bdaf7170dfc5a93c57.png)
 
@@ -91,11 +90,8 @@ Plus-sized ginger female dressed in bohemian vest, maxi skirt, espadrilles, walk
 Midjourney 是知道一些多样性的词语的，比如：
 
 +   blind：失明
-
 +   deaf：聋
-
 +   cerebral palsy：小儿麻痹
-
 +   accessibility：行动不便
 
 ![](img/78e60cea80f54948960fe33492c948a1.png)

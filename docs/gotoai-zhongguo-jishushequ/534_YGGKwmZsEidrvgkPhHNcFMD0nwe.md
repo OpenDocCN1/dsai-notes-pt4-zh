@@ -1,3 +1,4 @@
+
 # 100个真实案例全解析
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/HaBzdTGS2o7TeYxcGLQcoabQnPe](https://gotoaiworld.feishu.cn/docx/HaBzdTGS2o7TeYxcGLQcoabQnPe)
@@ -10,7 +11,7 @@
 
 ---
 
-## **📋 全文目录一览**
+## 📋 全文目录一览
 
 | 分类 | 用例数 | 代表案例 |
 | --- | --- | --- |
@@ -27,45 +28,45 @@
 
 ---
 
-# 🎙️ 第一大类：内容创作与转换（13 个用例）
+## 🎙️ 第一大类：内容创作与转换（13 个用例）
 
 > 把信息从一种形式，变成另一种最适合你消费的形式。核心逻辑： 降低信息获取成本，你才愿意去消费它。
 
 ---
 
-## 💊 用例 01：把医学 Newsletter 变成通勤播客
+### 💊 用例 01：把医学 Newsletter 变成通勤播客
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/01-medical-email-to-podcast.md
 
 这是所有「邮件转播客」用例中最专业的一个版本。医生每天收到密密麻麻的医学通讯，根本没时间读。AI 分解邮件中的每条故事，查询嵌入的 URL 获取更多背景，用针对专科医生的语言写成对话式播客脚本，用 ElevenLabs 生成语音，通过 Signal 发送。
 
-**技术细节： **如果文字超过 4000 字（ElevenLabs 单次上限），AI 会自动拆成多段，用 ffmpeg 拼接成完整音频，完全自动。
+**技术细节：** 如果文字超过 4000 字（ElevenLabs 单次上限），AI 会自动拆成多段，用 `ffmpeg` 拼接成完整音频，完全自动。
 
-**成功标准： **0 步手动操作，5-7 分钟长度，医生在 24 小时内听完。
+**成功标准：** 0 步手动操作，5-7 分钟长度，医生在 24 小时内听完。
 
 ---
 
-## 🏅 用例 02：奥运会每日简报——比报纸更快
+### 🏅 用例 02：奥运会每日简报——比报纸更快
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/02-olympics-daily-briefing.md
 
 体育记者和球迷需要每天追踪多个运动员的赛程和成绩。AI 设定成每天早上 7 点（罗马时间）自动整合：今日意大利选手的赛程、昨日奖牌结果、热门话题故事，发到 Telegram 体育专属频道。
 
-**真实案例： **用户 OttoIlRobotto 用这个来跟踪意大利奥运代表队，AI 在主流媒体报道之前就捕捉到了爆料——包括一位女选手打破历史记录，一名曲棍球选手开场 25 秒受伤，以及另一位选手的「私人飞机风波」……
+**真实案例：** 用户 OttoIlRobotto 用这个来跟踪意大利奥运代表队，AI 在主流媒体报道之前就捕捉到了爆料——包括一位女选手打破历史记录，一名曲棍球选手开场 25 秒受伤，以及另一位选手的「私人飞机风波」……
 
 ---
 
-## ⛅ 用例 03：每天早 9 点，用你的语言告诉你今天的天气
+### ⛅ 用例 03：每天早 9 点，用你的语言告诉你今天的天气
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/03-weather-morning-report.md
 
 AI 连接 Yandex 天气 API（有免费版本，每天 50 次请求足够用），按早/午/晚/夜四段时间解析天气数据，翻译成你指定的语言，发到 Telegram。
 
-**个性化能力： **如果气温低于 -15°C，或者风速超过 15m/s，或者上班时间段有降水，AI 会额外发一条警报。
+**个性化能力：** 如果气温低于 -15°C，或者风速超过 15m/s，或者上班时间段有降水，AI 会额外发一条警报。
 
 ---
 
-## 📡 用例 20：RSS 新闻聚合器
+### 📡 用例 20：RSS 新闻聚合器
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/20-rss-news-aggregator.md
 
@@ -73,7 +74,7 @@ AI 连接 Yandex 天气 API（有免费版本，每天 50 次请求足够用）�
 
 ---
 
-## 📥 用例 38：邮件转播客「技能模块」——可复用的积木
+### 📥 用例 38：邮件转播客「技能模块」——可复用的积木
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/38-email-to-podcast-skill.md
 
@@ -81,13 +82,13 @@ AI 连接 Yandex 天气 API（有免费版本，每天 50 次请求足够用）�
 
 ---
 
-## 🌅 用例 45：晨间简报生成器
+### 🌅 用例 45：晨间简报生成器
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/45-morning-digest-generator.md
 
 对应晚间自动运转，早上起床 AI 已经把「一夜发生了什么」整理好了。格式清晰：
 
-+   「昨晚完成的任务」（3 个 Cron 正常运行、1 次安全扫描通过、12 封邮件已排序）
++   「昨晚完成的任务」（3 个 `Cron` 正常运行、1 次安全扫描通过、12 封邮件已排序）
 
 +   「AI 昨晚主动做了什么」（修复了 2 处文档错别字、归档了旧记忆文件）
 
@@ -99,117 +100,117 @@ AI 连接 Yandex 天气 API（有免费版本，每天 50 次请求足够用）�
 
 ---
 
-## 🎙️ 用例 51：把订阅邮件变成上班路上听的播客
+### 🎙️ 用例 51：把订阅邮件变成上班路上听的播客
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/51-email-to-podcast-commute.md
 
-**你的日常： **你订阅了十几个感兴趣的 Newsletter（时事通讯），但每天打开手机，根本没时间读那一大堆文字。它们就在收件箱里慢慢发霉……
+**你的日常：** 你订阅了十几个感兴趣的 Newsletter（时事通讯），但每天打开手机，根本没时间读那一大堆文字。它们就在收件箱里慢慢发霉……
 
-**OpenClaw 怎么处理： **每天早上 7 点，AI 打开你的邮箱，把收到的 Newsletter 里最有意思的 3-5 条故事挑出来，写成一段「朋友聊天式」的播客脚本，然后用 ElevenLabs 的语音合成功能转成音频，直接发到你的 Telegram。你上班路上戴上耳机，按播放键，就能听到一期专门为你定制的早晨播客。
+**OpenClaw 怎么处理：** 每天早上 7 点，AI 打开你的邮箱，把收到的 Newsletter 里最有意思的 3-5 条故事挑出来，写成一段「朋友聊天式」的播客脚本，然后用 ElevenLabs 的语音合成功能转成音频，直接发到你的 Telegram。你上班路上戴上耳机，按播放键，就能听到一期专门为你定制的早晨播客。
 
-**现实案例： **Moltbook 社区里一个叫 Fred 的医生，每天收到《BC 医生通讯》，AI 把 6 条医疗新闻做成了一期 5 分 18 秒的播客，讲到了迫切护理中心、疾病暴发和政策更新。他在开车上班的路上就全听完了。
+**现实案例：** Moltbook 社区里一个叫 Fred 的医生，每天收到《BC 医生通讯》，AI 把 6 条医疗新闻做成了一期 5 分 18 秒的播客，讲到了迫切护理中心、疾病暴发和政策更新。他在开车上班的路上就全听完了。
 
-**成功的样子： **每次 Newsletter 来了，1 小时内自动产出音频；音频时长不超过 7 分钟；你再也不用盯着屏幕读冗长邮件。
+**成功的样子：** 每次 Newsletter 来了，1 小时内自动产出音频；音频时长不超过 7 分钟；你再也不用盯着屏幕读冗长邮件。
 
 ---
 
-## ☀️ 用例 52：每天早上自动给你发一份「今日简报」
+### ☀️ 用例 52：每天早上自动给你发一份「今日简报」
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/52-morning-briefing-telegram.md
 
-**你的日常： **早上起床，你要开天气 App 看天气，开日历看今天有什么会议，再刷刷新闻……打开了四五个 App，头还没转醒就已经信息过载了。
+**你的日常：** 早上起床，你要开天气 App 看天气，开日历看今天有什么会议，再刷刷新闻……打开了四五个 App，头还没转醒就已经信息过载了。
 
-**OpenClaw 怎么处理： **每天早上 6:30，AI 整合三件事：① 查你所在城市的天气 ② 读你今天的日历 ③ 搜索你关心领域的新闻头条。把这一切整合成一条 Telegram 消息，格式清爽，有 emoji 分类，300 字以内，1 分钟就能看完。
+**OpenClaw 怎么处理：** 每天早上 6:30，AI 整合三件事：① 查你所在城市的天气 ② 读你今天的日历 ③ 搜索你关心领域的新闻头条。把这一切整合成一条 Telegram 消息，格式清爽，有 emoji 分类，300 字以内，1 分钟就能看完。
 
-**核心魔法： **这不只是天气+日历的简单拼接——AI 还会根据天气告诉你今天要不要带伞，根据日历提醒你下午三点有个重要电话要提前准备。
+**核心魔法：** 这不只是天气+日历的简单拼接——AI 还会根据天气告诉你今天要不要带伞，根据日历提醒你下午三点有个重要电话要提前准备。
 
-**成功的样子： **你在被窝里拿起手机，30 秒内搞清楚今天的全貌，然后踏实地起床。
+**成功的样子：** 你在被窝里拿起手机，30 秒内搞清楚今天的全貌，然后踏实地起床。
 
 ---
 
-## 📝 用例 57：每日学习日记自动生成
+### 📝 用例 57：每日学习日记自动生成
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/57-daily-learning-journal.md
 
-**你的日常： **你知道「反思能让人更快成长」，但每天睡前实在没精力写日记了。
+**你的日常：** 你知道「反思能让人更快成长」，但每天睡前实在没精力写日记了。
 
-**OpenClaw 怎么处理： **每天晚上，AI 通过 Telegram 向你抛出几个引导性问题：「今天学到了什么？」「什么事让你觉得有挑战？」「你为什么感到自豪？」你只需要随手回几句话，AI 帮你整理成格式化的日记存档。每周，AI 再把这 7 篇日记综合成一份「成长简报」，告诉你这周你在哪些技能上有进步、学到了什么洞察、又纠正了哪些错误。
+**OpenClaw 怎么处理：** 每天晚上，AI 通过 Telegram 向你抛出几个引导性问题：「今天学到了什么？」「什么事让你觉得有挑战？」「你为什么感到自豪？」你只需要随手回几句话，AI 帮你整理成格式化的日记存档。每周，AI 再把这 7 篇日记综合成一份「成长简报」，告诉你这周你在哪些技能上有进步、学到了什么洞察、又纠正了哪些错误。
 
-**时间价值： **你每天只需要回答 3-5 个问题，大概 5 分钟；但一年下来，你会有 365 篇成长记录，足以看清自己的轨迹。
+**时间价值：** 你每天只需要回答 3-5 个问题，大概 5 分钟；但一年下来，你会有 365 篇成长记录，足以看清自己的轨迹。
 
 ---
 
-## 👗 用例 58：今天穿什么？AI 给你推荐穿搭
+### 👗 用例 58：今天穿什么？AI 给你推荐穿搭
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/58-weather-outfit-advisor.md
 
-**你的日常： **站在衣柜前，看着天空犹豫：今天会热吗？会下雨吗？傍晚会凉吗？
+**你的日常：** 站在衣柜前，看着天空犹豫：今天会热吗？会下雨吗？傍晚会凉吗？
 
-**OpenClaw 怎么处理： **AI 每天早上自动检查天气和你的日历，然后给出穿搭建议：「今天下午有户外会议，建议穿轻薄外套加一件内层，记得带折叠伞。傍晚气温降到 15°C。」
+**OpenClaw 怎么处理：** AI 每天早上自动检查天气和你的日历，然后给出穿搭建议：「今天下午有户外会议，建议穿轻薄外套加一件内层，记得带折叠伞。傍晚气温降到 15°C。」
 
 它还会记住你的衣橱偏好（你告诉它的），不会让一个不懂你风格的机器人给你配出奇怪的组合。
 
 ---
 
-## 📰 用例 59：新闻聚合摘要——每日 1 分钟看懂天下事
+### 📰 用例 59：新闻聚合摘要——每日 1 分钟看懂天下事
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/59-news-digest-aggregator.md
 
-**你的日常： **15 个新闻 RSS 订阅，每天产出几百条标题，同一件事被报道了 40 遍。
+**你的日常：** 15 个新闻 RSS 订阅，每天产出几百条标题，同一件事被报道了 40 遍。
 
-**OpenClaw 怎么处理： **AI 每天 4 次拉取你所有订阅的 RSS，去掉重复报道（URL 相似或标题重合度 >80% 的都算重复），把剩下的归并成 10 条独家故事，每条写一句摘要，打包发给你。
+**OpenClaw 怎么处理：** AI 每天 4 次拉取你所有订阅的 RSS，去掉重复报道（URL 相似或标题重合度 >80% 的都算重复），把剩下的归并成 10 条独家故事，每条写一句摘要，打包发给你。
 
-**魔鬼细节： **它不只是去重，还会给每条新闻写上「为什么这件事值得你注意」的背景，让你在 3 分钟内对当天重要信息有全局感知。
+**魔鬼细节：** 它不只是去重，还会给每条新闻写上「为什么这件事值得你注意」的背景，让你在 3 分钟内对当天重要信息有全局感知。
 
 ---
 
-## 📚 用例 61：阅读清单策展人——周五给你一份精选书单
+### 📚 用例 61：阅读清单策展人——周五给你一份精选书单
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/61-reading-list-curator.md
 
-**你的日常： **刷到好文章随手收藏，然后再也没打开过……
+**你的日常：** 刷到好文章随手收藏，然后再也没打开过……
 
-**OpenClaw 怎么处理： **你随时把链接发给 AI，加一句「存起来」，它就把文章标题、分类（科技/商业/健康/文化）和简介都存好。每周五下午 3 点，它发来一份「周末阅读清单」，按分类整理，每篇附上两句摘要，方便你决定值不值得完整去读。还会帮你选出「本周推荐」——就是它认为你最应该读的那一篇。
+**OpenClaw 怎么处理：** 你随时把链接发给 AI，加一句「存起来」，它就把文章标题、分类（科技/商业/健康/文化）和简介都存好。每周五下午 3 点，它发来一份「周末阅读清单」，按分类整理，每篇附上两句摘要，方便你决定值不值得完整去读。还会帮你选出「本周推荐」——就是它认为你最应该读的那一篇。
 
 ---
 
-## 📝 用例 68：会议纪要自动生成
+### 📝 用例 68：会议纪要自动生成
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/68-meeting-notes-generator.md
 
-**你的日常： **每次开完会，总有人逃脱了「谁来写会议纪要」的责任，然后大家三天后忘了约定了什么……
+**你的日常：** 每次开完会，总有人逃脱了「谁来写会议纪要」的责任，然后大家三天后忘了约定了什么……
 
-**OpenClaw 怎么处理： **把你的粗糙笔记或者会议录音文字版粘贴给 AI，它生成格式化的会议纪要：出席者、讨论摘要、关键决定、行动清单（附责任人和截止日期）、待解决问题。存进记忆系统，到了截止日期会自动发提醒。
+**OpenClaw 怎么处理：** 把你的粗糙笔记或者会议录音文字版粘贴给 AI，它生成格式化的会议纪要：出席者、讨论摘要、关键决定、行动清单（附责任人和截止日期）、待解决问题。存进记忆系统，到了截止日期会自动发提醒。
 
-**成功的样子： **没有人再问「那次会我们到底定了什么来着」。
+**成功的样子：** 没有人再问「那次会我们到底定了什么来着」。
 
 ---
 
-# 🧠 第二大类：记忆与知识管理（5 个用例）
+## 🧠 第二大类：记忆与知识管理（5 个用例）
 
 > AI 最大的弱点是「失忆」——每次对话后就忘了之前说过什么。这一大类专门解决这个问题：如何让 AI 拥有真正有用的持久记忆。
 
 ---
 
-## 📚 用例 04：三层记忆系统——AI 版的「长短期记忆」
+### 📚 用例 04：三层记忆系统——AI 版的「长短期记忆」
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/04-three-tier-memory-system.md
 
 人类大脑有长期记忆和短期记忆，AI 也需要类似的结构。这套系统用三个文件分别存储不同「保质期」的信息：
 
-+   **MEMORY.md**** （长期记忆） **：核心原则、你的偏好、固定目标，几乎不变
++   `MEMORY.md` （长期记忆）：核心原则、你的偏好、固定目标，几乎不变
 
-+   **每日日志 YYY**Y-MM-DD.md （工作记忆） ：今天发生了什么、做了哪些决定、对话的关键信息
++   每日日志 `YYYY-MM-DD.md` （工作记忆）：今天发生了什么、做了哪些决定、对话的关键信息
 
-+   **PROJECTS.md**** （项目记忆） **：每个正在进行的项目的状态、卡点、下一步
++   `PROJECTS.md` （项目记忆）：每个正在进行的项目的状态、卡点、下一步
 
-**迁移规则： **当某个决定在日常日志里被验证了多次（比如「用户喜欢直接而不是废话连篇的风格」），就从日志升级到长期记忆；当某件事从偶发变成系统化的工作，就从日志升级到项目记忆。
+**迁移规则：** 当某个决定在日常日志里被验证了多次（比如「用户喜欢直接而不是废话连篇的风格」），就从日志升级到长期记忆；当某件事从偶发变成系统化的工作，就从日志升级到项目记忆。
 
-**效果： **Token 使用量 <5 万次每会话，任何过去的决定可在 30 秒内找到，永远不会出现「我们不是已经讨论过这个了吗」的尴尬。
+**效果：** Token 使用量 <5 万次每会话，任何过去的决定可在 30 秒内找到，永远不会出现「我们不是已经讨论过这个了吗」的尴尬。
 
 ---
 
-## 🕸️ 用例 40：知识图谱重建器
+### 🕸️ 用例 40：知识图谱重建器
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/40-knowledge-graph-rebuilder.md
 
@@ -217,21 +218,21 @@ AI 连接 Yandex 天气 API（有免费版本，每天 50 次请求足够用）�
 
 每天晚上，AI 从当天的进行记忆里提取「实体」（某个人、某个项目、某个概念）和「关系」（A 依赖 B、C 认识 D），把新信息添加到知识图谱中，还能自动剪掉过时的连接。
 
-**查询能力举例： **「哪些项目依赖 X 技术？」「谁了解 Y 话题？」「与 Z 概念相关的是什么？」——比翻日志快 10 倍。
+**查询能力举例：** 「哪些项目依赖 X 技术？」「谁了解 Y 话题？」「与 Z 概念相关的是什么？」——比翻日志快 10 倍。
 
 ---
 
-## 📦 用例 41：周记忆归档——防止 Token 爆炸
+### 📦 用例 41：周记忆归档——防止 Token 爆炸
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/41-weekly-memory-archive.md
 
-时间久了，日常记忆文件越积越多，每次启动 AI 都要读取大量历史文件，Token 消耗剧增。这个用例每周日自动把超过 30 天的旧日志压缩成「月度摘要」，移入归档目录，同时在 MEMORY.md 里留一个指向该摘要的索引。
+时间久了，日常记忆文件越积越多，每次启动 AI 都要读取大量历史文件，Token 消耗剧增。这个用例每周日自动把超过 30 天的旧日志压缩成「月度摘要」，移入归档目录，同时在 `MEMORY.md` 里留一个指向该摘要的索引。
 
-**结果： **上下文载入时间减少 70%，同时历史信息仍然可以通过摘要链接追溯。
+**结果：** 上下文载入时间减少 70%，同时历史信息仍然可以通过摘要链接追溯。
 
 ---
 
-## 📒 用例 42：「安全操作账本」——定义 AI 的行动边界
+### 📒 用例 42：「安全操作账本」——定义 AI 的行动边界
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/42-safe-operations-ledger.md
 
@@ -245,119 +246,111 @@ AI 连接 Yandex 天气 API（有免费版本，每天 50 次请求足够用）�
 - 发送外部邮件、执行金融操作、部署代码、删除数据
 ```
 
-**核心价值： **清晰的边界让你信任 AI 自主运作，也让 AI 知道自己的「管辖范围」在哪里。每周根据 AI 的可靠性表现，可以扩展它的自主权。
+**核心价值：** 清晰的边界让你信任 AI 自主运作，也让 AI 知道自己的「管辖范围」在哪里。每周根据 AI 的可靠性表现，可以扩展它的自主权。
 
 ---
 
-## 🧠 用例 60：生活记忆记录器——让 AI 帮你「记住」人
+### 🧠 用例 60：生活记忆记录器——让 AI 帮你「记住」人
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/60-memory-life-logger.md
 
-**你的日常： **朋友饭桌上顺口说她对花生过敏，你当时点了点头，三个月后完全忘了，买了花生糖去看她……
 
-**OpenClaw 怎么处理： **AI 从你和别人的对话里（由你授权）提取重要细节：某人的饮食偏好、某人孩子的近况、你答应别人要跟进的事情……把这些存进一个结构化的「人物记忆库」。当你再次见到这个人，或者他生日快到了，AI 就提醒你「记得，Sarah 对花生过敏，最近在考虑换工作」。
 
-**这是什么感觉： **就像你的手机有通讯录，你现在有了一个「关系录」——里面装的不是电话号码，而是让关系更深的细节。
+你的日常： 朋友饭桌上顺口说她对花生过敏，你当时点了点头，三个月后完全忘了，买了花生糖去看她……
+
+`OpenClaw` 怎么处理： AI 从你和别人的对话里（由你授权）提取重要细节：某人的饮食偏好、某人孩子的近况、你答应别人要跟进的事情……把这些存进一个结构化的「人物记忆库」。当你再次见到这个人，或者他生日快到了，AI 就提醒你「记得，Sarah 对花生过敏，最近在考虑换工作」。
+
+这是什么感觉： 就像你的手机有通讯录，你现在有了一个「关系录」——里面装的不是电话号码，而是让关系更深的细节。
 
 ---
 
 # 🌙 第三大类：夜间自动化（11 个用例）
 
-> **你睡觉，AI 上班。 **利用你的闲置时间做那些重要但不紧急的事——巡检系统、清理积压、整理数据、追踪进展。
+> 你睡觉，AI 上班。利用你的闲置时间做那些重要但不紧急的事——巡检系统、清理积压、整理数据、追踪进展。
 
 ---
 
 ## 🤖 用例 12：7 个子 Agent 夜间并行作业
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/12-7-sub-agent-night-parallel.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/12-7-sub-agent-night-parallel.md`
 
-**比喻： **你下班前给 7 个实习生分配了不同的任务，次日早晨你来上班，所有报告已经放在你桌上了。
+比喻： 你下班前给 7 个实习生分配了不同的任务，次日早晨你来上班，所有报告已经放在你桌上了。
 
 晚上 11 点，主 AI 启动 7 个并行子任务：
 
-1.  记忆清理与整合
+1. 记忆清理与整合
+2. 预算分析
+3. TTS 新模型调研
+4. 书单推荐
+5. AI 自身优化研究
+6. AI 记忆神经科学论文精读
+7. 顾问模式行为模式分析
 
-1.  预算分析
-
-1.  TTS 新模型调研
-
-1.  书单推荐
-
-1.  AI 自身优化研究
-
-1.  AI 记忆神经科学论文精读
-
-1.  顾问模式行为模式分析
-
-每个子 Agent 各跑 1 小时，结果统一提交到 Git，早上主 Agent 综合成一份晨间汇报。
+每个子 Agent 各跑 1 小时，结果统一提交到 `Git`，早上主 Agent 综合成一份晨间汇报。
 
 ---
 
 ## 🖥️ 用例 13：凌晨 5 点基础设施健康检查
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/13-5am-infrastructure-health-check.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/13-5am-infrastructure-health-check.md`
 
 服务器故障最好在早上 9 点上班前就被发现和处理，而不是等用户投诉了才知道。
 
-AI 每天凌晨 5 点检查：磁盘使用率（超 90% 警告，超 95% 紧急）、内存使用率、负载均衡、备份是否成功、外网连通性……全都正常就静默通过，任何一项异常立刻发 Telegram 警报。
+AI 每天凌晨 5 点检查：磁盘使用率（超 90% 警告，超 95% 紧急）、内存使用率、负载均衡、备份是否成功、外网连通性……全都正常就静默通过，任何一项异常立刻发 `Telegram` 警报。
 
 ---
 
 ## 💬 用例 14：夜间 WhatsApp 自动回复
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/14-night-whatsapp-revival.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/14-night-whatsapp-revival.md`
 
-你睡着了，但 WhatsApp 里的消息还在来。工作消息回复「已收到，明天处理」；7 天以上没联系的老友自动发「嗨！最近怎么样？」；紧急消息被标记为「请人类尽快处理」。
+你睡着了，但 `WhatsApp` 里的消息还在来。工作消息回复「已收到，明天处理」；7 天以上没联系的老友自动发「嗨！最近怎么样？」；紧急消息被标记为「请人类尽快处理」。
 
-**边界设计： **不会往外透露个人信息，不会做任何金融承诺，家人的消息不会自动回复（需要你本人处理），发现敏感话题立刻暂停并提醒你。
+边界设计： 不会往外透露个人信息，不会做任何金融承诺，家人的消息不会自动回复（需要你本人处理），发现敏感话题立刻暂停并提醒你。
 
 ---
 
 ## 🗑️ 用例 17：GitHub 过期 Issue 清理
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/17-github-stale-issue-cleanup.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/17-github-stale-issue-cleanup.md`
 
-专注于「让仓库保持整洁」：每周日自动找出 30 天以上没有任何回复的 Issue，生成「候选关闭名单」供人类审核。发现已打上 wontfix 或 duplicate 标签的直接建议关闭；需要关闭前自动发一条「此 Issue 已停滞，将于 7 天后关闭」的通知评论。
+专注于「让仓库保持整洁」：每周日自动找出 30 天以上没有任何回复的 `Issue`，生成「候选关闭名单」供人类审核。发现已打上 `wontfix` 或 `duplicate` 标签的直接建议关闭；需要关闭前自动发一条「此 Issue 已停滞，将于 7 天后关闭」的通知评论。
 
-**效果： **每月减少积压 Issue 10%，仓库保持整洁。
+效果： 每月减少积压 `Issue` 10%，仓库保持整洁。
 
 ---
 
 ## 🔧 用例 18：夜间文档修复器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/18-night-documentation-fixer.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/18-night-documentation-fixer.md`
 
-代码库里的 README 文档总是在悄悄腐烂——错别字、失效链接、过时描述……没人专门去修，因为没人觉得这是紧急任务。
+代码库里的 `README` 文档总是在悄悄腐烂——错别字、失效链接、过时描述……没人专门去修，因为没人觉得这是紧急任务。
 
-AI 每晚扫描文档：检查常见错别字（receive、separate、occurred……）、检测失效链接（404 错误）、修复格式不一致。发现问题自动创建一个分支 fix/docs-YYYYMMDD ，提交 PR，早上人类只需要点一下合并。
+AI 每晚扫描文档：检查常见错别字（receive、separate、occurred……）、检测失效链接（`404` 错误）、修复格式不一致。发现问题自动创建一个分支 `fix/docs-YYYYMMDD`，提交 `PR`，早上人类只需要点一下合并。
 
 ---
 
 ## ✅ 用例 34：技能安装前安全预检
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/34-skill-preflight-checker.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/34-skill-preflight-checker.md`
 
 在你安装一个新技能前，花 90 秒做安全检查能避免几个小时的「事后处理」。
 
 AI 的预检清单：
 
-1.  检查作者在 npm 和 Moltbook 上的信誉
+1. 检查作者在 `npm` 和 `Moltbook` 上的信誉
+2. 读 `package.json` 的 `scripts` 字段——有没有 `postinstall` 脚本？（常见恶意手法）
+3. 搜索代码里有没有 `curl`、`wget`、`eval` 等危险模式
+4. 先在 `Docker` 容器里安装，观察它访问了哪些文件
+5. 生成检查报告存档
 
-1.  读 package.json 的 scripts 字段——有没有 postinstall 脚本？（常见恶意手法）
-
-1.  搜索代码里有没有 curl 、 wget 、 eval 等危险模式
-
-1.  先在 Docker 容器里安装，观察它访问了哪些文件
-
-1.  生成检查报告存档
-
-**红旗信号： **安装脚本触发网络请求、读取 ~/.ssh 或 ~/.env 、作者信息不明。
+红旗信号： 安装脚本触发网络请求、读取 `~/.ssh` 或 `~/.env`、作者信息不明。
 
 ---
 
 ## 📊 用例 35：Cron 任务看板
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/35-cron-dashboard-status.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/35-cron-dashboard-status.md`
 
 所有自动化任务都跑着，但你根本不知道它们昨晚运行了没有、成功了没有。这个工具生成一个实时看板：✓ 邮件检查 — 上次运行：8 分钟前；✗ 数据备份 — 上次运行：失败；…列出所有任务的状态、最近运行时间、下次计划时间。
 
@@ -365,57 +358,52 @@ AI 的预检清单：
 
 ## 💓 用例 36：心跳状态监视器——监控「监控者」
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/36-heartbeat-state-monitor.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/36-heartbeat-state-monitor.md`
 
 这是一个「元监控」工具：用来监控你的所有自动化心跳任务本身是否正常运转。
 
 想象你有一个保安值夜班，你怎么确保保安没有睡着？你需要另一个保安定期来敲门确认。这个工具就是「来敲门的那个人」。
 
-它读取 heartbeat-state.json ，计算每项检查任务距上次运行过了多久，用可读格式显示「邮件检查：4 小时前（正常）」「日历检查：28 分钟前（正常）」——如果发现某项任务超过阈值没有运行，立即重新触发它并发警报。
+它读取 `heartbeat-state.json`，计算每项检查任务距上次运行过了多久，用可读格式显示「邮件检查：4 小时前（正常）」「日历检查：28 分钟前（正常）」——如果发现某项任务超过阈值没有运行，立即重新触发它并发警报。
 
 ---
 
-## **🔄 用例 39：每日自我提升 C**ron——AI 版的「每天进步 1%」
+## 🔄 用例 39：每日自我提升 `Cron`——AI 版的「每天进步 1%」
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/39-daily-self-improvement-cron.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/39-daily-self-improvement-cron.md`
 
 复利思维：如果每天进步 1%，一年后就是原来的 37 倍。这个用例把这个思想变成可执行的系统。
 
 AI 维护一个「待改进清单」，每天早上 6 点从清单里挑一件事来做：
 
-+   安装一个新技能（比如网络搜索技能）
++ 安装一个新技能（比如网络搜索技能）
++ 添加一个 `MCP` 服务器（扩展 AI 的能力边界）
++ 修复一个已知 `Bug`
++ 集成一个新的服务（比如 `Notion`、`Airtable`）
 
-+   添加一个 MCP 服务器（扩展 AI 的能力边界）
-
-+   修复一个已知 Bug
-
-+   集成一个新的服务（比如 Notion、Airtable）
-
-做完之后记录在 memory/improvements.md ，向你汇报。一年 365 天，就积累了 365 次微小改进。
+做完之后记录在 `memory/improvements.md`，向你汇报。一年 365 天，就积累了 365 次微小改进。
 
 ---
 
 ## 📊 用例 48：夜间工作 ROI 追踪器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/48-night-work-roi-tracker.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/48-night-work-roi-tracker.md`
 
 AI 夜里主动做了很多事，但不是每件事都有价值——有的你每天用，有的你用了一次就没再碰，有的你直接撤销了。这个工具追踪每次自主行动的「命中率」：
 
-+   记录每次自主建造了什么
++ 记录每次自主建造了什么
++ 一周后标记「是否被人类实际使用」
++ 计算命中率，每周调整策略
 
-+   一周后标记「是否被人类实际使用」
-
-+   计算命中率，每周调整策略
-
-**现实发现： **一个社区用户发现，自己 60% 的夜间产出定期被用到，40% 被撤销——于是 AI 把策略从「通用工具」调整为「专注基础设施」，命中率提升到 75%。
+现实发现： 一个社区用户发现，自己 60% 的夜间产出定期被用到，40% 被撤销——于是 AI 把策略从「通用工具」调整为「专注基础设施」，命中率提升到 75%。
 
 ---
 
 ## 🗃️ 用例 49：Trello 看板夜间整理
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/49-trello-board-organizer.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/49-trello-board-organizer.md`
 
-（注意：这个用例与 Everyday Life 分类的 #66 有重叠，但更偏技术向）每晚清理 Trello：归档旧「已完成」卡片、给停滞任务打标签、把过期任务移到待办列表、给所有卡片确保至少有一个优先级标签。早上发来每日「今日三件最重要的事」。
+（注意：这个用例与 Everyday Life 分类的 `#66` 有重叠，但更偏技术向）每晚清理 `Trello`：归档旧「已完成」卡片、给停滞任务打标签、把过期任务移到待办列表、给所有卡片确保至少有一个优先级标签。早上发来每日「今日三件最重要的事」。
 
 ---
 
@@ -427,53 +415,51 @@ AI 夜里主动做了很多事，但不是每件事都有价值——有的你�
 
 ## 📈 用例 06：交易机器人健康监控
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/06-trading-bot-monitor.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/06-trading-bot-monitor.md`
 
-有 4 个交易机器人（DOGE 多/空头、BTC 优化版、Hummingbot 做市商）在服务器上跑着，有时候它们会崩掉，有时候产生脏数据。AI 每隔几分钟检查所有机器人的进程状态，发现崩溃立刻重启，发现数据异常自动修复并提交代码，早上发来一份健康报告，附上各机器人的盈亏摘要。
+有 4 个交易机器人（`DOGE` 多/空头、`BTC` 优化版、`Hummingbot` 做市商）在服务器上跑着，有时候它们会崩掉，有时候产生脏数据。AI 每隔几分钟检查所有机器人的进程状态，发现崩溃立刻重启，发现数据异常自动修复并提交代码，早上发来一份健康报告，附上各机器人的盈亏摘要。
 
-**核心价值： **交易机器人停机就是在烧钱（或者错过赚钱）。7×24 小时自动值守，比雇人盯屏幕便宜得多。
+核心价值： 交易机器人停机就是在烧钱（或者错过赚钱）。7×24 小时自动值守，比雇人盯屏幕便宜得多。
 
 ---
 
 ## 🔁 用例 11：Uniswap V4 流动性自动复投
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/11-v4-lp-auto-compounding.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/11-v4-lp-auto-compounding.md`
 
-在 DeFi（去中心化金融）里，给流动性池提供流动性（LP）会不断积累手续费收益。但这些收益需要手动「复投」（把赚到的钱再存进去）才能实现复利效应，而且每次操作都要付 Gas 费（矿工费）。
+在 `DeFi`（去中心化金融）里，给流动性池提供流动性（`LP`）会不断积累手续费收益。但这些收益需要手动「复投」（把赚到的钱再存进去）才能实现复利效应，而且每次操作都要付 `Gas` 费（矿工费）。
 
-AI 每 15 分钟查询你的持仓收益，计算当前 Gas 费，只有当「待收获收益 > Gas 费的 5 倍」时才执行复投操作，确保每次操作都是合算的。如果连续 3 次复投失败，立刻发警报。
+AI 每 15 分钟查询你的持仓收益，计算当前 `Gas` 费，只有当 `` `待收获收益 > Gas 费的 5 倍` `` 时才执行复投操作，确保每次操作都是合算的。如果连续 3 次复投失败，立刻发警报。
 
 ---
 
 ## 🪙 用例 15：比特币铭文（Bitcoin Inscription）
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/15-bitcoin-inscription.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/15-bitcoin-inscription.md`
 
-（原始文件是模板未填充的，结合上下文可知）这是利用 Ordinals 协议在比特币区块链上「铭刻」内容的用例——把你的创作、艺术作品或数据永久写入区块链，不可篡改。
+（原始文件是模板未填充的，结合上下文可知）这是利用 `Ordinals` 协议在比特币区块链上「铭刻」内容的用例——把你的创作、艺术作品或数据永久写入区块链，不可篡改。
 
 ---
 
 ## 📊 用例 16：Polymarket 预测市场扫描
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/16-polymarket-scanner.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/16-polymarket-scanner.md`
 
-Polymarket 是一个链上预测市场，用真实资金押注真实事件的概率。AI 每 15 分钟检查你的持仓盈亏，追踪 5 个活跃市场，检测到价格大幅波动（>10%）立刻发警报，还会自动清理「灰尘仓位」（太小的仓位）。早上发来夜间市场变化汇报和操作建议。
+`Polymarket` 是一个链上预测市场，用真实资金押注真实事件的概率。AI 每 15 分钟检查你的持仓盈亏，追踪 5 个活跃市场，检测到价格大幅波动（`>10%`）立刻发警报，还会自动清理「灰尘仓位」（太小的仓位）。早上发来夜间市场变化汇报和操作建议。
 
 ---
 
-## **🦈 用例 22：链上钱包监控**
+## 🦈 用例 22：链上钱包监控
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/22-chain-wallet-monitor.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/22-chain-wallet-monitor.md`
 
 把以太坊「鲸鱼钱包」的大额转账当作市场风向标——当顶级钱包在动，往往是有什么大事要发生。
 
 AI 每 10 分钟查询追踪列表上的钱包地址，发现：
 
-+   大额转账（如超过 1000 ETH）
-
-+   与新合约的首次互动
-
-+   治理投票
++ 大额转账（如超过 1000 `ETH`）
++ 与新合约的首次互动
++ 治理投票
 
 立刻发出警报，附上链接和详情，方便你判断是否需要跟进。
 
@@ -481,11 +467,11 @@ AI 每 10 分钟查询追踪列表上的钱包地址，发现：
 
 ## 🚀 用例 24：Pump.fun 新代币扫描器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/24-pump-fun-scanner.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/24-pump-fun-scanner.md`
 
-Pump.fun 平台每天都有大量新代币发行，绝大多数是垃圾，但偶尔有值得关注的机会。AI 每 15 分钟扫描新上线的代币，筛选条件：上线时间 <1 小时 && 市值 <  10K，符合条件就发警报——包含代币地址和直达链接。
+`Pump.fun` 平台每天都有大量新代币发行，绝大多数是垃圾，但偶尔有值得关注的机会。AI 每 15 分钟扫描新上线的代币，筛选条件：`上线时间 <1 小时 && 市值 < 10K`，符合条件就发警报——包含代币地址和直达链接。
 
-**风险提示： **原始文档特别强调：绝大多数新代币都是骗局，永远不要投入超出你能承受损失的金额。AI 只是帮你找机会，判断和风险控制还是要靠自己。
+风险提示： 原始文档特别强调：绝大多数新代币都是骗局，永远不要投入超出你能承受损失的金额。AI 只是帮你找机会，判断和风险控制还是要靠自己。
 
 ---
 
@@ -497,75 +483,75 @@ Pump.fun 平台每天都有大量新代币发行，绝大多数是垃圾，但�
 
 ## 🐙 用例 07：GitHub Issue 优先级排序
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/07-github-issue-prioritizer.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/07-github-issue-prioritizer.md`
 
-开源项目越火，积累的 Issue（问题反馈）就越多，核心开发者根本看不完。AI 每晚扫描你指定的仓库，按照优先权算法（重要性 × 紧迫性）给每条 Issue 打分，特别标记：
+开源项目越火，积累的 `Issue`（问题反馈）就越多，核心开发者根本看不完。AI 每晚扫描你指定的仓库，按照优先权算法（重要性 × 紧迫性）给每条 `Issue` 打分，特别标记：
 
-+   超过 7 天无人响应的
-
-+   包含「安全」「崩溃」「数据丢失」关键词的
-
-+   被大量用户 +1 点赞的
++ 超过 7 天无人响应的
++ 包含「安全」「崩溃」「数据丢失」关键词的
++ 被大量用户 `+1` 点赞的
 
 然后早上发来已经排好序的「今日待处理列表」，开发者只需专注最重要的那几条。
 
-**真实案例： **AI 扫描 3 个仓库，识别出 12 条超期 Issue，标记其中 2 条为高优先（与安全相关），在早会前整理好摘要。
+真实案例： AI 扫描 3 个仓库，识别出 12 条超期 `Issue`，标记其中 2 条为高优先（与安全相关），在早会前整理好摘要。
 
 ---
 
 ## 🐦 用例 08：X（Twitter）用户画像抓取
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/08-x-profile-scraper.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/08-x-profile-scraper.md`
 
-面向销售、市场调研或竞争对手研究——AI 每天自动抓取 50 个目标账号的主页信息：个人简介、最近推文摘要、引用的链接文章内容，整合成 CSV 文件，供销售团队研究使用。
+面向销售、市场调研或竞争对手研究——AI 每天自动抓取 50 个目标账号的主页信息：个人简介、最近推文摘要、引用的链接文章内容，整合成 `CSV` 文件，供销售团队研究使用。
 
-**适用场景： **找 KOL 合作前的背景调查；竞品团队的动向追踪；潜在客户的偏好分析。
+适用场景： 找 `KOL` 合作前的背景调查；竞品团队的动向追踪；潜在客户的偏好分析。
 
-**伦理守则： **只抓取公开信息，匿名化处理，仅用于合法调研目的。
+伦理守则： 只抓取公开信息，匿名化处理，仅用于合法调研目的。
 
 ---
 
 ## 📣 用例 23：客户信号扫描器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/23-customer-signal-scanner.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/23-customer-signal-scanner.md`
 
-如果你经营一个产品，客户的反馈可能散落在 Telegram 群、Discord 服务器、Twitter 评论……很难全面收集。
+如果你经营一个产品，客户的反馈可能散落在 `Telegram` 群、`Discord` 服务器、`Twitter` 评论……很难全面收集。
 
-AI 每小时扫描你指定的频道，检测包含「功能请求」「BUG」「不好用」等关键词的消息，按类别归类（功能需求/BUG/正面好评），按互动量打分（回复和点赞越多权重越高），每天生成一份「Top 10 客户信号报告」交给产品团队。
+AI 每小时扫描你指定的频道，检测包含「功能请求」「`BUG`」「不好用」等关键词的消息，按类别归类（功能需求/`BUG`/正面好评），按互动量打分（回复和点赞越多权重越高），每天生成一份「Top 10 客户信号报告」交给产品团队。
 
 ---
 
 ## 📈 用例 25：Moltbook 平台趋势分析
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/25-moltbook-pattern-analysis.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/25-moltbook-pattern-analysis.md`
 
-如果你想在 Moltbook 社区建立影响力，光凭感觉发帖是不够的——数据才是真正的策略。
+如果你想在 `Moltbook` 社区建立影响力，光凭感觉发帖是不够的——数据才是真正的策略。
 
-AI 每周分析 Moltbook 上点赞数前 100 的帖子，归类内容类型（技术分享、玩法展示、社区互动），计算各类型的平均互动率，对比上周的变化，生成策略建议：「本周技术类帖子互动率比上周上涨 30%，建议多分享具体实现细节。」
+AI 每周分析 `Moltbook` 上点赞数前 100 的帖子，归类内容类型（技术分享、玩法展示、社区互动），计算各类型的平均互动率，对比上周的变化，生成策略建议：「本周技术类帖子互动率比上周上涨 30%，建议多分享具体实现细节。」
 
 ---
 
 ## 🌐 用例 26：多 Agent 网络延迟基准测试
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/26-network-latency-benchmark.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/26-network-latency-benchmark.md`
 
-当你运行一个由许多 AI 协同工作的「Agent 网格」时，随着节点数量增加，它们之间的通信延迟会非线性上升（不是 1+1=2，而是可能突然变成 1+1=5）。
+当你运行一个由许多 AI 协同工作的「`Agent` 网格」时，随着节点数量增加，它们之间的通信延迟会非线性上升（不是 `1+1=2`，而是可能突然变成 `1+1=5`）。
 
-AI 每天凌晨 2 点对 Agent 网格做延迟测试，测量 P50/P95/P99（中位数/95 百分位/99 百分位）延迟，记录「节点数量 vs 延迟」的关系曲线，一旦发现网格结构突变（比如出现了意料外的子群）立刻记录。这些数据可以帮助你在架构层面优化。
+
+
+AI 每天凌晨 2 点对 `Agent` 网格做延迟测试，测量 `P50/P95/P99`（中位数/95 百分位/99 百分位）延迟，记录「节点数量 vs 延迟」的关系曲线，一旦发现网格结构突变（比如出现了意料外的子群）立刻记录。这些数据可以帮助你在架构层面优化。
 
 ---
 
 ## 💰 用例 27：Token 用量优化器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/27-token-usage-optimizer.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/27-token-usage-optimizer.md`
 
-每次 AI 做心跳检查都消耗大量 Token（API 调用费用的计量单位**）。有个社区用户**把每天的 Token 用量从 38.4 万降到了 9.6 万， 节省了 75% ，靠的就是这个工具。
+每次 AI 做心跳检查都消耗大量 `Token`（`API` 调用费用的计量单位）。有个社区用户把每天的 `Token` 用量从 38.4 万降到了 9.6 万，节省了 75%，靠的就是这个工具。
 
 核心洞察：很多心跳检查每次都在做「没有变化」的检查，纯属浪费。优化方案：
 
 +   追踪每类检查的「命中率」（有实际需要处理的事情 vs 空跑次数）
 
-+   命中率 <5% 的检查：降低频率
++   命中率 `<5%` 的检查：降低频率
 
 +   实现「差异化检测」（只有状态改变时才处理）
 
@@ -573,33 +559,45 @@ AI 每天凌晨 2 点对 Agent 网格做延迟测试，测量 P50/P95/P99（中�
 
 ## 🔬 用例 28：分布式追踪基准测试
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/28-distributed-tracing-benchmark.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/28-distributed-tracing-benchmark.md`
 
-在大型 Agent 系统中，「可观测性」（Observability）工具帮助你理解每个请求在系统中怎么流转的。但这类工具本身也有性能开销——OpenTelemetry 会增加 12-18ms 延迟，而轻量级自定义追踪器只增加 2-5ms。AI 在测试环境中对各种方案做性能对比，帮你选择最合适的可观测性工具。
+在大型 `Agent` 系统中，「可观测性」（`Observability`）工具帮助你理解每个请求在系统中怎么流转的。但这类工具本身也有性能开销——`OpenTelemetry` 会增加 12-18ms 延迟，而轻量级自定义追踪器只增加 2-5ms。AI 在测试环境中对各种方案做性能对比，帮你选择最合适的可观测性工具。
 
 ---
 
 ## 🔍 用例 64：社交媒体品牌监控——别人提到你，你第一个知道
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/64-social-media-monitor.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/64-social-media-monitor.md`
 
-**你的日常： **客户在 Twitter 骂了你们的产品，但你三天后才看到……
+### 你的日常
 
-**OpenClaw 怎么处理： **AI 每天两次在 Twitter、Reddit、Hacker News 搜索你指定的关键词（品牌名、产品名、竞争对手名），按情绪分类（🟢正面/🟡中性/🔴负面），每天晚上发来一份简报。
+客户在 Twitter 骂了你们的产品，但你三天后才看到……
 
-**特别功能： **如果某条负面提及的转发量超过 50，或者是一个 10 万+ 粉丝的大 V 提到了你，AI 会立刻发紧急警报，不等到晚上的日报。
+### OpenClaw 怎么处理
+
+`OpenClaw` AI 每天两次在 Twitter、Reddit、Hacker News 搜索你指定的关键词（品牌名、产品名、竞争对手名），按情绪分类（🟢正面/🟡中性/🔴负面），每天晚上发来一份简报。
+
+### 特别功能
+
+如果某条负面提及的转发量超过 50，或者是一个 10 万+ 粉丝的大 V 提到了你，AI 会立刻发紧急警报，不等到晚上的日报。
 
 ---
 
 ## 🛒 用例 67：比价购物助手——帮你找全网最低价
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/67-price-comparison-shopper.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/67-price-comparison-shopper.md`
 
-**你的日常： **买东西前要开七八个网站比价，花了 20 分钟，有时发现差价只有 10 元……
+### 你的日常
 
-**OpenClaw 怎么处理： **你直接问：「我想买一个 BOSE QuietComfort 35 耳机，帮我比一下价」，AI 在 Amazon、Walmart、Best Buy 等平台同时搜索，2 分钟内给你一张对比表格：各平台价格、运费、到手总价、购买链接。还顺带查一下有没有可用的优惠码。
+买东西前要开七八个网站比价，花了 20 分钟，有时发现差价只有 10 元……
 
-**额外价值： **如果发现更新款型号价格相近，或者黑五/Prime Day 在两周内即将到来，AI 会提醒你。
+### OpenClaw 怎么处理
+
+你直接问：「我想买一个 BOSE QuietComfort 35 耳机，帮我比一下价」，AI 在 Amazon、Walmart、Best Buy 等平台同时搜索，2 分钟内给你一张对比表格：各平台价格、运费、到手总价、购买链接。还顺带查一下有没有可用的优惠码。
+
+### 额外价值
+
+如果发现更新款型号价格相近，或者黑五/Prime Day 在两周内即将到来，AI 会提醒你。
 
 ---
 
@@ -611,23 +609,23 @@ AI 每天凌晨 2 点对 Agent 网格做延迟测试，测量 P50/P95/P99（中�
 
 ## 🗝️ 用例 09：SSH 私钥扫描器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/09-ssh-key-scanner.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/09-ssh-key-scanner.md`
 
-SSH 私钥就像家门的钥匙，如果放错了地方，后果严重。常见风险：
+`SSH` 私钥就像家门的钥匙，如果放错了地方，后果严重。常见风险：
 
-+   私钥文件权限设置为 644（所有人可读），而不是安全的 600
++   私钥文件权限设置为 `644`（所有人可读），而不是安全的 `600`
 
-+   私钥被不小心复制到了 ~/Downloads 或项目目录
++   私钥被不小心复制到了 `~/Downloads` 或项目目录
 
-+   更糟的是：私钥被 commit 进了 Git 仓库
++   更糟的是：私钥被 `commit` 进了 `Git` 仓库
 
-AI 每周自动扫描你的主目录和各项目目录，用正则表达式识别 SSH 私钥文件（ id_rsa 、 .pem 等），检查文件权限，同时也扫描 Git 仓库历史记录。发现问题立发警报，并附上具体的修复建议。
+AI 每周自动扫描你的主目录和各项目目录，用正则表达式识别 `SSH` 私钥文件（`id_rsa`、`.pem` 等），检查文件权限，同时也扫描 `Git` 仓库历史记录。发现问题立发警报，并附上具体的修复建议。
 
 ---
 
-## **🔎 用例 19：日志异常检测**
+## 🔎 用例 19：日志异常检测
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/19-log-anomaly-detection.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/19-log-anomaly-detection.md`
 
 日志里藏着系统的「心电图」——正常时平平稳稳，出问题前总有异常跳跃。
 
@@ -637,13 +635,15 @@ AI 每 30 分钟读取最新日志，统计各类错误的发生频率，对比�
 
 +   5 倍基线 → 立即发紧急警报
 
-**真实案例： **凌晨 4 点 404 错误暴增 10 倍，AI 追踪到是某个 API 端点出了问题，在影响用户之前就发出了警报。
+### 真实案例
+
+凌晨 4 点 `404` 错误暴增 10 倍，AI 追踪到是某个 `API` 端点出了问题，在影响用户之前就发出了警报。
 
 ---
 
 ## 📮 用例 21：邮件自动分类器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/21-email-auto-classifier.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/21-email-auto-classifier.md`
 
 与 Everyday Life 分类的 #56 类似，但这是早期的技术型实现，更侧重于代码层面的规则引擎：正则表达式匹配主题词快速分类，AI 语义理解兜底处理模糊情况，发现紧急邮件立刻推送。核心指标：5% 以下的误判率，零漏掉的紧急邮件。
 
@@ -651,71 +651,81 @@ AI 每 30 分钟读取最新日志，统计各类错误的发生频率，对比�
 
 ## ☁️ 用例 29：AWS 凭证扫描器
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/29-aws-credential-scanner.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/29-aws-credential-scanner.md`
 
-AWS 访问密钥（Access Key）相当于你的 AWS 账户密码，如果它出现在了错误的地方，攻击者可能在你不知情的情况下跑起一批矿机，把你的账单冲上天。
+`AWS` 访问密钥（Access Key）相当于你的 `AWS` 账户密码，如果它出现在了错误的地方，攻击者可能在你不知情的情况下跑起一批矿机，把你的账单冲上天。
 
-常见事故：在代码里硬编码了 AWS_ACCESS_KEY ，然后 push 到了 GitHub……
+常见事故：在代码里硬编码了 `AWS_ACCESS_KEY`，然后 `push` 到了 GitHub……
 
-AI 每周扫描你的文件系统和所有 Git 仓库，用正则模式识别 AWS 密钥格式（如 AKIA 开头的字符串），发现任何暴露立刻发警报。修复建议：迁移到 aws-vault，使用 IAM 角色，无论如何先轮换泄露的密钥。
+AI 每周扫描你的文件系统和所有 `Git` 仓库，用正则模式识别 `AWS` 密钥格式（如 `AKIA` 开头的字符串），发现任何暴露立刻发警报。修复建议：迁移到 `aws-vault`，使用 `IAM` 角色，无论如何先轮换泄露的密钥。
 
 ---
 
 ## 🔑 用例 30：macOS Keychain 社会工程学测试
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/30-keychain-access-tester.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/30-keychain-access-tester.md`
 
-这个用例有点「反直觉」：AI 故意触发 macOS Keychain 的密码弹窗，然后观察主人是不是不假思索地就把密码输进去了。
+这个用例有点「反直觉」：AI 故意触发 `macOS` `Keychain` 的密码弹窗，然后观察主人是不是不假思索地就把密码输进去了。
 
-**这是在测试人类的安全习惯。 **真实案例：一个社区用户的 AI「意外地对主人进行了社会工程学测试」——主人没有核实弹窗来源就输入了密码。AI 记录了这个漏洞，为家庭制定了新的安全规则：看到密码弹窗前，先按取消，确认是哪个程序在请求访问后再决定。
+这是在测试人类的安全习惯。
+
+### 真实案例
+
+一个社区用户的 AI「意外地对主人进行了社会工程学测试」——主人没有核实弹窗来源就输入了密码。AI 记录了这个漏洞，为家庭制定了新的安全规则：看到密码弹窗前，先按取消，确认是哪个程序在请求访问后再决定。
 
 ---
 
 ## 🕵️ 用例 31：技能供应链审计
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/31-skill-supply-chain-audit.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/31-skill-supply-chain-audit.md`
 
-在 OpenClaw 生态里，「技能」（Skills）就像 Node.js 的 npm 包一样——安装方便，但其中可能混入恶意代码。
+在 `OpenClaw` 生态里，「技能」（`Skills`）就像 `Node.js` 的 `npm` 包一样——安装方便，但其中可能混入恶意代码。
 
-**真实案例： **一位社区用户扫描了 286 个已安装的技能，发现其中 1 个会偷偷读取 ~/.env 文件（里面通常存着各种 API 密钥），然后把内容发送到 webhook.site——这是个凭证窃取器！AI 及时发现并向社区报告了这个恶意技能。
+### 真实案例
 
-AI 使用 YARA 规则（一种专业的恶意软件检测语法）每周扫描所有已安装技能，检查是否有读取敏感文件、向未知域名发送数据等行为。
+一位社区用户扫描了 286 个已安装的技能，发现其中 1 个会偷偷读取 `~/.env` 文件（里面通常存着各种 `API` 密钥），然后把内容发送到 `webhook.site`——这是个凭证窃取器！AI 及时发现并向社区报告了这个恶意技能。
+
+AI 使用 `YARA` 规则（一种专业的恶意软件检测语法）每周扫描所有已安装技能，检查是否有读取敏感文件、向未知域名发送数据等行为。
 
 ---
 
 ## 🔓 用例 32：API 安全测试
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/32-api-security-tester.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/32-api-security-tester.md`
 
-API 接口往往有一些微妙但严重的安全缺陷，比如：
+`API` 接口往往有一些微妙但严重的安全缺陷，比如：
 
-+   HTTP 重定向时会把 Authorization （授权）请求头丢掉（意味着攻击者可以通过构造重定向绕过认证）
++   `HTTP` 重定向时会把 `Authorization`（授权）请求头丢掉（意味着攻击者可以通过构造重定向绕过认证）
 
 +   没有正确的速率限制
 
-+   SQL 注入或其他输入验证问题
++   `SQL` 注入或其他输入验证问题
 
-**真实案例： **一位社区用户发现，HTTP 307 跳转会剥离 Authorization 请求头，这是一个认证绕过漏洞。他发现后按照「负责任披露」的流程：先私下报告给厂商，等修复好了之后再公开。
+### 真实案例
+
+一位社区用户发现，`HTTP 307` 跳转会剥离 `Authorization` 请求头，这是一个认证绕过漏洞。他发现后按照「负责任披露」的流程：先私下报告给厂商，等修复好了之后再公开。
 
 ---
 
 ## 🧹 用例 33：Git 历史清理
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/33-git-history-cleaner.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/33-git-history-cleaner.md`
 
-提交历史里的秘密是「永久的」——即使你删掉了那个文件，历史记录里还留着它。你以为删了就安全了？Git 的版本控制会永远记得。
+提交历史里的秘密是「永久的」——即使你删掉了那个文件，历史记录里还留着它。你以为删了就安全了？`Git` 的版本控制会永远记得。
 
-AI 扫描 Git 历史，发现任何被提交过的密钥（AWS Key、密码、Token），然后使用 BFG Repo-Cleaner 工具从历史记录中彻底抹去，强制推送到所有远程仓库，同时提醒你轮换泄露的凭证并更新 .gitignore 防止再次发生。
+AI 扫描 `Git` 历史，发现任何被提交过的密钥（`AWS Key`、密码、`Token`），然后使用 `BFG Repo-Cleaner` 工具从历史记录中彻底抹去，强制推送到所有远程仓库，同时提醒你轮换泄露的凭证并更新 `.gitignore` 防止再次发生。
 
 ---
 
 ## 🔐 用例 43：安全 CTF 训练课程生成
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/43-security-ctf-curriculum.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/43-security-ctf-curriculum.md`
 
-CTF（Capture The Flag）是一种竞赛式网络安全训练。AI 每周自动整理当周最新的漏洞 CVE 报告，围绕它们设计 5 道不同类别的实战练习题（Web 安全/密码学/取证/逆向工程/二进制漏洞利用），附上解题思路和参考答案，存成课程文件。
+`CTF`（Capture The Flag）是一种竞赛式网络安全训练。AI 每周自动整理当周最新的漏洞 `CVE` 报告，围绕它们设计 5 道不同类别的实战练习题（Web 安全/密码学/取证/逆向工程/二进制漏洞利用），附上解题思路和参考答案，存成课程文件。
 
-**目标用户： **网络安全从业者、学生、CTF 爱好者——让技能训练从被动变成主动、系统化。
+### 目标用户
+
+网络安全从业者、学生、`CTF` 爱好者——让技能训练从被动变成主动、系统化。
 
 ---
 
@@ -727,25 +737,27 @@ CTF（Capture The Flag）是一种竞赛式网络安全训练。AI 每周自动�
 
 ## ⛓️ 用例 44：在比特币区块链上铭刻俳句诗
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/44-on-chain-haiku-inscription.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/44-on-chain-haiku-inscription.md`
 
-这个用例有点艺术感——AI 在夜班期间，创作以加密货币为主题的俳句诗（5-7-5 音节的日本短诗格式），然后把它们铭刻到比特币区块链上，形成永久的「链上文化印记」，还可以注册 .web3 域名来托管这个诗集网页。
+这个用例有点艺术感——AI 在夜班期间，创作以加密货币为主题的俳句诗（5-7-5 音节的日本短诗格式），然后把它们铭刻到比特币区块链上，形成永久的「链上文化印记」，还可以注册 `.web3` 域名来托管这个诗集网页。
 
-**原来区块链还能这么玩： **用去中心化的账本保存诗歌，没有哪个服务器会倒闭，没有哪家公司会删除它，它在区块链上「永生」了。
+### 原来区块链还能这么玩
+
+用去中心化的账本保存诗歌，没有哪个服务器会倒闭，没有哪家公司会删除它，它在区块链上「永生」了。
 
 ---
 
 ## 🥠 用例 46：加密货币「幸运签」——带区块链地址的每日励志
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/46-crypto-fortune-cookie.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/46-crypto-fortune-cookie.md`
 
-AI 每周生成 10 条「加密幸运签」——包含投资心理学、安全提醒和市场智慧的金句（比如「HODL 穿越熊市，耐心者终有回报」），包装成一个互动式 HTML 网页，刷新页面就能抽到一条不同的签，然后同样铭刻在比特币上。
+AI 每周生成 10 条「加密幸运签」——包含投资心理学、安全提醒和市场智慧的金句（比如「`HODL` 穿越熊市，耐心者终有回报」），包装成一个互动式 `HTML` 网页，刷新页面就能抽到一条不同的签，然后同样铭刻在比特币上。
 
 ---
 
 ## 🌐 用例 50：多平台在线状态同步
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/50-multi-channel-presence-sync.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/50-multi-channel-presence-sync.md`
 
 AI 需要在多个平台上保持一致的「人设」和活跃度——Moltbook、Telegram、Discord 的风格和信息要统一。
 
@@ -759,37 +771,53 @@ AI 设定好了同步规则：
 
 ---
 
-## **📸 用例 53：让 AI 帮你管**理 Instagram Stories
+## 📸 用例 53：让 AI 帮你管理 Instagram Stories
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/53-instagram-story-manager.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/53-instagram-story-manager.md`
 
-**你的日常： **你想维持 Instagram 账号的活跃，但每天发 Story、回复评论、看数据……简直是个兼职工作。
+### 你的日常
 
-**OpenClaw 怎么处理： **AI 通过浏览器自动化，按照你事先准备好的内容队列（你放在一个文件夹里的图片或模板），每天上午 9 点和傍晚 6 点各发一条 Story，自动加相关 hashtag 和地点标签。同时每天两次检查 Story 回复和私信，对真实评论发出品牌风格的友好回复，把垃圾信息标记出来给你审查。每周日给你发一份数据报告。
+你想维持 Instagram 账号的活跃，但每天发 Story、回复评论、看数据……简直是个兼职工作。
 
-**特别提醒： **遇到任何不确定的内容，AI 都会先问你再发——它是你的助手，不是替代你的脑子。
+### OpenClaw 怎么处理
+
+`OpenClaw` 通过浏览器自动化，按照你事先准备好的内容队列（你放在一个文件夹里的图片或模板），每天上午 9 点和傍晚 6 点各发一条 Story，自动加相关 hashtag 和地点标签。同时每天两次检查 Story 回复和私信，对真实评论发出品牌风格的友好回复，把垃圾信息标记出来给你审查。每周日给你发一份数据报告。
+
+### 特别提醒
+
+遇到任何不确定的内容，AI 都会先问你再发——它是你的助手，不是替代你的脑子。
 
 ---
 
 ## 💌 用例 54：帮你「复活」久未联系的老朋友
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/54-cold-relationship-revival.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/54-cold-relationship-revival.md`
 
-**你的日常： **你有一大批「有机会一定要联系」的老朋友，但这个「有机会」永远也不来。时间越久越尴尬，最后干脆摆烂。
+### 你的日常
 
-**OpenClaw 怎么处理： **AI 检查你的通讯记录，找出超过 30 天没有互动的联系人，然后根据你对那个人的了解（你有没有喜欢登山？你同事的女儿最近上大学了？），起草一条自然、温暖的消息。
+你有一大批「有机会一定要联系」的老朋友，但这个「有机会」永远也不来。时间越久越尴尬，最后干脆摆烂。
 
-**关键设计： **AI **不会自动发送 **，而是先把草稿发给你审核，你点「发送」它才真正发出去。目标不是让友谊变成流水线，而是帮你克服「发消息的心理障碍」，让真实的连接有机会重启。
+### OpenClaw 怎么处理
+
+`OpenClaw` 检查你的通讯记录，找出超过 30 天没有互动的联系人，然后根据你对那个人的了解（你有没有喜欢登山？你同事的女儿最近上大学了？），起草一条自然、温暖的消息。
+
+### 关键设计
+
+AI 不会自动发送，而是先把草稿发给你审核，你点「发送」它才真正发出去。目标不是让友谊变成流水线，而是帮你克服「发消息的心理障碍」，让真实的连接有机会重启。
 
 ---
 
 ## 📅 用例 55：更智能的日历提醒
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/55-calendar-smart-reminder.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/55-calendar-smart-reminder.md`
 
-**你的日常： **日历 App 会在会议前 15 分钟发一个无聊的「叮」，然后你懵着跑进会议室，啥都没准备。
+### 你的日常
 
-**OpenClaw 怎么处理： **每 30 分钟检查一次日历，提前 2 小时发出「智能提醒」。智能在哪里？
+日历 App 会在会议前 15 分钟发一个无聊的「叮」，然后你懵着跑进会议室，啥都没准备。
+
+### OpenClaw 怎么处理
+
+每 30 分钟检查一次日历，提前 2 小时发出「智能提醒」。智能在哪里？
 
 +   如果是客户会议：提醒你上次跟他谈了什么
 
@@ -801,17 +829,23 @@ AI 设定好了同步规则：
 
 +   如果当天有雨：告诉你带把伞
 
-**成功的样子： **再也不出现「走进会议室才想起来没有准备」的尴尬局面。
+### 成功的样子
+
+再也不出现「走进会议室才想起来没有准备」的尴尬局面。
 
 ---
 
 ## 📧 用例 56：邮件自动分类，告别收件箱焦虑
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/56-email-auto-sorter.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/56-email-auto-sorter.md`
 
-**你的日常： **手机一亮，未读邮件又多了 37 封。哪些是紧急的？哪些是垃圾？你光是判断「这封邮件要不要现在读」就消耗了大量注意力。
+### 你的日常
 
-**OpenClaw 怎么处理： **AI 每天多次扫描收件箱，把每封邮件读一遍，按重要程度分类：
+手机一亮，未读邮件又多了 37 封。哪些是紧急的？哪些是垃圾？你光是判断「这封邮件要不要现在读」就消耗了大量注意力。
+
+### OpenClaw 怎么处理
+
+AI 每天多次扫描收件箱，把每封邮件读一遍，按重要程度分类：
 
 +   🔴「紧急」：今天必须处理，立刻通过 Telegram 推送给你
 
@@ -823,27 +857,33 @@ AI 设定好了同步规则：
 
 你打开邮箱的时候，看到的是已经整理好的分类，而不是一屏幕混乱的消息。
 
-**核心价值： **「收件箱焦虑」（Inbox Anxiety）是现代人普遍的压力来源之一。这个用例让你重新掌控邮件，而不是被邮件控制。
+### 核心价值
+
+「收件箱焦虑」（`Inbox Anxiety`）是现代人普遍的压力来源之一。这个用例让你重新掌控邮件，而不是被邮件控制。
 
 ---
 
 ## 🏠 用例 62：用 Telegram 语音指令控制智能家居
 
-> 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/62-smart-home-telegram.md
+> 📎 GitHub：`https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/62-smart-home-telegram.md`
 
-**你的日常： **家里装了十几个智能设备，每个要用不同的 App，睡前要关好几次灯还老记蒙……
+### 你的日常
 
-**OpenClaw 怎么处理： **直接发 Telegram 消息，说大白话：「把卧室灯关了」「把温控调到 22 度」「正门锁好了吗？」AI 连接你的 Home Assistant，立刻执行并回复「已完成」。
+家里装了十几个智能设备，每个要用不同的 App，睡前要关好几次灯还老记蒙……
+
+
+
+OpenClaw 怎么处理： 直接发 Telegram 消息，说大白话：「把卧室灯关了」「把温控调到 22 度」「正门锁好了吗？」AI 连接你的 Home Assistant，立刻执行并回复「已完成」。
 
 还可以设置场景指令：
 
-+   「电影模式」→ 客厅灯调暗到 20%，打开电视
++ 「电影模式」→ 客厅灯调暗到 20%，打开电视
 
-+   「晚安」→ 所有灯关闭，门锁上，温控调到 18°C
++ 「晚安」→ 所有灯关闭，门锁上，温控调到 18°C
 
-+   「我出门了」→ 启动安防，关灯，空调调至节能模式
++ 「我出门了」→ 启动安防，关灯，空调调至节能模式
 
-**安全设计： **开门动作需要二次确认，不会因为你手滑就把家门打开。
+安全设计： 开门动作需要二次确认，不会因为你手滑就把家门打开。
 
 ---
 
@@ -851,11 +891,11 @@ AI 设定好了同步规则：
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/63-booking-appointment-agent.md
 
-**你的日常： **想预约私人医生，打电话等了 20 分钟，被告知需要下周才有号；想订餐厅，打开 OpenTable 找半天也没找到合适的……
+你的日常： 想预约私人医生，打电话等了 20 分钟，被告知需要下周才有号；想订餐厅，打开 OpenTable 找半天也没找到合适的……
 
-**OpenClaw 怎么处理： **你只需要一句话：「帮我下周二预约一个牙医」或者「周五晚上约两人的意大利餐厅」，AI 就去搜索、比对时间、通过网页表单完成预约，把确认号和地址发回给你，并自动添加到你的日历。
+OpenClaw 怎么处理： 你只需要一句话：「帮我下周二预约一个牙医」或者「周五晚上约两人的意大利餐厅」，AI 就去搜索、比对时间、通过网页表单完成预约，把确认号和地址发回给你，并自动添加到你的日历。
 
-**一次请求，结果出现在日历上。 **这就是目标。
+一次请求，结果出现在日历上。 这就是目标。
 
 ---
 
@@ -863,11 +903,11 @@ AI 设定好了同步规则：
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/65-auto-social-posting.md
 
-**你的日常： **你知道要保持稳定发帖频率，但每次打开发帖界面就觉得「今天没灵感」……
+你的日常： 你知道要保持稳定发帖频率，但每次打开发帖界面就觉得「今天没灵感」……
 
-**OpenClaw 怎么处理： **你设定一个内容日历（例如：周一励志，周二行业干货，周三幕后故事），AI 每天晚上 8 点为第二天准备好草稿，发 Telegram 给你审核。你点「发送」，或者两小时内没有回复，AI 就在最佳时间自动发出。发布后监控 2 小时内的评论，自动回复。
+OpenClaw 怎么处理： 你设定一个内容日历（例如：周一励志，周二行业干货，周三幕后故事），AI 每天晚上 8 点为第二天准备好草稿，发 Telegram 给你审核。你点「发送」，或者两小时内没有回复，AI 就在最佳时间自动发出。发布后监控 2 小时内的评论，自动回复。
 
-**适合谁： **自由职业者、小企业主、个人品牌创业者——所有需要持续在线但没精力每天手动发帖的人。
+适合谁： 自由职业者、小企业主、个人品牌创业者——所有需要持续在线但没精力每天手动发帖的人。
 
 ---
 
@@ -875,17 +915,17 @@ AI 设定好了同步规则：
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/66-trello-notion-organizer.md
 
-**你的日常： **项目看板越来越乱，「进行中」里堆了两个月没动的任务，「已完成」的卡片也不舍得删……
+你的日常： 项目看板越来越乱，「进行中」里堆了两个月没动的任务，「已完成」的卡片也不舍得删……
 
-**OpenClaw 怎么处理： **每天晚上 11 点，AI 扫描你的看板：
+OpenClaw 怎么处理： 每天晚上 11 点，AI 扫描你的看板：
 
-+   「已完成」超过 3 天的卡片自动归档
++ 「已完成」超过 3 天的卡片自动归档
 
-+   超过 7 天没动静的卡片加 🔴 标签
++ 超过 7 天没动静的卡片加 🔴 标签
 
-+   在卡片下面自动评论：「这个任务已经停滞 7 天了，还在推进吗？」
++ 在卡片下面自动评论：「这个任务已经停滞 7 天了，还在推进吗？」
 
-+   次日早上 7 点发来一份《昨晚整理报告》
++ 次日早上 7 点发来一份《昨晚整理报告》
 
 每天早上，你的看板就是新鲜的——只剩真正需要关注的事情。
 
@@ -895,11 +935,11 @@ AI 设定好了同步规则：
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/69-homework-tutor.md
 
-**你的日常： **孩子写数学题不会，你翻了翻发现自己也忘了鸡兔同笼怎么列方程……
+你的日常： 孩子写数学题不会，你翻了翻发现自己也忘了鸡兔同笼怎么列方程……
 
-**OpenClaw 怎么处理： **AI 设定好年级和科目，不给答案，而是用「苏格拉底式」引导：「你觉得第一步应该做什么？」「如果把它想成……会不会好理解一些？」用孩子能懂的比喻解释概念，用生活中的例子让历史更有趣，帮孩子而不是替孩子完成作业。
+OpenClaw 怎么处理： AI 设定好年级和科目，不给答案，而是用「苏格拉底式」引导：「你觉得第一步应该做什么？」「如果把它想成……会不会好理解一些？」用孩子能懂的比喻解释概念，用生活中的例子让历史更有趣，帮孩子而不是替孩子完成作业。
 
-**设计原则： **目标是让孩子能「用自己的话解释这道题」，而不是背下答案。下午 4 点可以设置一个自动提醒：「作业时间到啦！今天学了什么需要帮助的吗？📚」
+设计原则： 目标是让孩子能「用自己的话解释这道题」，而不是背下答案。下午 4 点可以设置一个自动提醒：「作业时间到啦！今天学了什么需要帮助的吗？📚」
 
 ---
 
@@ -907,19 +947,19 @@ AI 设定好了同步规则：
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/70-travel-itinerary-planner.md
 
-**你的日常： **计划一次旅行，光是研究攻略、比较价格、安排路线就要花好几天……
+你的日常： 计划一次旅行，光是研究攻略、比较价格、安排路线就要花好几天……
 
-**OpenClaw 怎么处理： **你说一句「我准备去京都 5 天，预算 5 万，喜欢历史和美食」，AI 生成完整的逐日行程：
+OpenClaw 怎么处理： 你说一句「我准备去京都 5 天，预算 5 万，喜欢历史和美食」，AI 生成完整的逐日行程：
 
-+   每天早上/中午/下午/晚上的活动安排（含时间、费用、小贴士）
++ 每天早上/中午/下午/晚上的活动安排（含时间、费用、小贴士）
 
-+   每天推荐的餐厅（菜式特色、人均价格、招牌菜）
++ 每天推荐的餐厅（菜式特色、人均价格、招牌菜）
 
-+   当地交通建议
++ 当地交通建议
 
-+   签证要求、天气预报、必备 App、实用日语短语
++ 签证要求、天气预报、必备 App、实用日语短语
 
-+   旅行前检查清单
++ 旅行前检查清单
 
 还会帮你计算每天预计花销，确保在预算内。
 
@@ -935,13 +975,13 @@ AI 设定好了同步规则：
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/05-night-shell-alias-builder.md
 
-**比喻： **就像你每天上班都要绕一条弯路，但你从来没有意识到其实有条近路——AI 帮你把这条近路标记出来。
+比喻： 就像你每天上班都要绕一条弯路，但你从来没有意识到其实有条近路——AI 帮你把这条近路标记出来。
 
-AI 在凌晨 3 点分析你一周的 Shell 命令历史，找出哪些长命令你重复输入了 5 次以上，然后悄悄给你生成一个缩写别名，写进 ~/.zshrc 文件。第二天早上，你发现终端里多了一条新命令： dclerr （代替了你每次都要输的 docker-compose logs -f app | grep ERROR ）。
+AI 在凌晨 3 点分析你一周的 Shell 命令历史，找出哪些长命令你重复输入了 5 次以上，然后悄悄给你生成一个缩写别名，写进 `~/.zshrc` 文件。第二天早上，你发现终端里多了一条新命令： `dclerr` （代替了你每次都要输的 `docker-compose logs -f app | grep ERROR` ）。
 
-**安全设计： **每晚最多添加 1 个别名，不覆盖已有命令，不碰危险操作（rm、dd 之类的），每个别名都有注释说明来源。
+安全设计： 每晚最多添加 1 个别名，不覆盖已有命令，不碰危险操作（`rm`、`dd` 之类的），每个别名都有注释说明来源。
 
-**节省的时间： **一个每天输 10 次的 5 秒命令，一年省下 3 小时。微小，但真实。
+节省的时间： 一个每天输 10 次的 5 秒命令，一年省下 3 小时。微小，但真实。
 
 ---
 
@@ -953,12 +993,12 @@ AI 为自己打造了一套命令行工具集，输入简单命令即可完成�
 
 ```
 molty status       # 查看所有 Cron 任务状态、Git 提交、备份、记忆文件
-molty remember &quot;洞察&quot;   # 把带时间戳的笔记添加到记忆系统，无需打开文件
+molty remember "洞察"   # 把带时间戳的笔记添加到记忆系统，无需打开文件
 molty scrape [URL]  # 快速抓取网页内容
 molty recap         # 生成今日工作总结
 ```
 
-**为什么重要： **减少摩擦是提升工作效率的核心。当 AI 有了这套工具，它处理常规任务的速度大幅提升，也不需要每次都用复杂的提示词描述意图。
+为什么重要： 减少摩擦是提升工作效率的核心。当 AI 有了这套工具，它处理常规任务的速度大幅提升，也不需要每次都用复杂的提示词描述意图。
 
 ---
 
@@ -966,7 +1006,7 @@ molty recap         # 生成今日工作总结
 
 > 📎 GitHub：https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook/blob/main/usecases/37-swift-logger-package.md
 
-AI 爱好者 Delamain 用 OpenClaw 作为 AI 结对程序员，开发了一个 macOS/iOS 日志框架「DelamainLogger」。全程采用测试驱动开发（TDD）：先写测试（红灯阶段），再写代码让测试通过（绿灯阶段），再重构（保持绿灯）。这个用例是「AI 全程参与软件开发」的模板示范。
+AI 爱好者 Delamain 用 OpenClaw 作为 AI 结对程序员，开发了一个 macOS/iOS 日志框架 `DelamainLogger`。全程采用测试驱动开发（TDD）：先写测试（红灯阶段），再写代码让测试通过（绿灯阶段），再重构（保持绿灯）。这个用例是「AI 全程参与软件开发」的模板示范。
 
 ---
 
@@ -978,20 +1018,18 @@ AI 爱好者 Delamain 用 OpenClaw 作为 AI 结对程序员，开发了一个 m
 
 ---
 
-# **写在最后**
+# 写在最后
 
 读完这 70 个案例，我想说的是——
 
 这些不是科幻小说里的情节，而是真实发生在 Moltbook 社区里的事情：一个加拿大医生每天早上听 AI 帮他制作的播客；一个意大利球迷用 AI 追踪奥运赛事；一个俄罗斯用户每天早上 9 点收到用俄语写的天气预报……
 
-OpenClaw正在变成「工作伙伴」。 它不再只是回答你的问题，而是开始主动观察、主动学习、主动建议，在你睡觉的时候帮你工作，在你上班的时候帮你准备，在你忙碌的时候帮你记住那些容易忘掉的细节。
+OpenClaw 正在变成「工作伙伴」。 它不再只是回答你的问题，而是开始主动观察、主动学习、主动建议，在你睡觉的时候帮你工作，在你上班的时候帮你准备，在你忙碌的时候帮你记住那些容易忘掉的细节。
 
 OpenClaw 的哲学大概是这样的：
 
 > 「人类的注意力是最稀缺的资源。凡是可以交给 AI 的，就不该占用人类的注意力。」
 
-如果你觉得这些玩法有意思，可以去 GitHub 找到这个项目（EvoLinkAI/awesome-openclaw-usecases-moltbook），里面有每个用例的详细配置步骤和 Prompt 模板，照着做就能上手。
+如果你觉得这些玩法有意思，可以去 GitHub 找到这个项目（`EvoLinkAI/awesome-openclaw-usecases-moltbook`），里面有每个用例的详细配置步骤和 Prompt 模板，照着做就能上手。
 
-你的OpenClaw，可以比你想象中做更多的事情。
-
----
+你的 OpenClaw，可以比你想象中做更多的事情。

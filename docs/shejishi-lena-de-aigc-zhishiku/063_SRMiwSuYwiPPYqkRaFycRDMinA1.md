@@ -1,8 +1,9 @@
+
 # DeepSeek专区
 
 > 来源：[https://aigclena.feishu.cn/docx/B7fCdsSqqocMtZxSqeDc5D2jn0c](https://aigclena.feishu.cn/docx/B7fCdsSqqocMtZxSqeDc5D2jn0c)
 
-# deepseek+飞书
+## deepseek+飞书
 
 批量处理使用模板
 
@@ -10,15 +11,15 @@
 
 [DS批量处理表格创建方式(4).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YzLgblZBkoOU8HxbdfQcewyvnrd)
 
-# deepseek1分钟做海报
+## deepseek1分钟做海报
 
 > 61 【每天312张 真香 | 怎么用deepseek做海报 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 5fjQreIRd4EStSP 😆 https://www.xiaohongshu.com/discovery/item/67a8f91b000000001902fdd2?source=webshare&xhsshare=pc_web&xsec_token=AB3jcgLEn0urERcjUPMuIrKoDBNsIgD_Zv3aUjYDq97Kk=&xsec_source=pc_share
 
-# deepseek是什么
+## deepseek是什么
 
 > 89 【DeepSeek是谁？如何用？听他自己说说 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 N8tDTYNyBcpgzWG 😆 https://www.xiaohongshu.com/discovery/item/67a09b90000000001800560b?source=webshare&xhsshare=pc_web&xsec_token=AB07SBtMky_7J2FD0JjYnHrBZMsSUO6ac_IX1IF0_xuUs=&xsec_source=pc_share
 
-# deepseek体制内提示词
+## deepseek体制内提示词
 
 ![](img/74d20a05d94be691fe277f74d31f0c01.png)
 
@@ -38,7 +39,7 @@
 
 ![](img/94f34bcd870e334192ea47857d5e78e4.png)
 
-# deepseek15天  从入门到精通
+## deepseek15天 从入门到精通
 
 ![](img/de704dd925a24ed8b132575740a7153a.png)
 
@@ -54,7 +55,7 @@
 
 ![](img/7718e774427a55d1b3b59b6809f5122b.png)
 
-# deepseek资料合集
+## deepseek资料合集
 
 > 31 【12个好用的 deepseek PPT提示词分享 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 tI0ovhuYgro0D2e 😆 https://www.xiaohongshu.com/discovery/item/67c09702000000000302b246?source=webshare&xhsshare=pc_web&xsec_token=ABm78dF1erbhMInh-uYfsn4H5zyEWi95rx-BzdJOzigpA=&xsec_source=pc_share
 
@@ -78,7 +79,7 @@
 
 ![](img/bb705eb22cf63b6b1f0d035278cbcc75.png)
 
-# 提示词锦囊
+## 提示词锦囊
 
 > 69 【最新deepseek提示词锦囊 - AIGC娜娜子 | 📕 - 你的生活指南】 😆 2tc88qiQSClfIHs 😆 https://www.xiaohongshu.com/discovery/item/67a391d3000000001701e281?source=webshare&xhsshare=pc_web&xsec_token=ABPrvnWxGPm2uHZbEc3H9yVLk9_OGmhYMG0VuB8wE2L4Q=&xsec_source=pc_share
 
@@ -86,7 +87,7 @@
 
 ![](img/1af9f50df72bb6b8f986ab4222799bcd.png)
 
-# deepseek三八节海报提示词合集
+## deepseek三八节海报提示词合集
 
 我测评过几段让dp写三八节海报的提示词，出图数量有小几百张，测评出来下面这种提问法输出的提示词到即梦里生成的图片是比较ok的。
 
@@ -102,7 +103,7 @@
 
 > https://www.xiaohongshu.com/discovery/item/67a50546000000001701e3d5?source=webshare&xhsshare=pc_web&xsec_token=ABF357rd3onKGI2QhEOhsq0EdKRJBuTGmSjNmXaoCjcwk=&xsec_source=pc_share
 
-> 如对各平台差异感兴趣的同学请移步：https://zhuanlan.zhihu.com/p/23864143024  案例是以我为例，应对不善言辞的窘境~~
+> 如对各平台差异感兴趣的同学请移步：https://zhuanlan.zhihu.com/p/23864143024 案例是以我为例，应对不善言辞的窘境~~
 
 以下几个版本，在基本提示词框架上，提了不同的要求，比如字数长短/色调，甚至对画面主体提了详细要求，比如肤色，甚至加了形容词描述--“体现女性柔美、有力量、向上的态度”，这种词用处不大。提示词并不是你要求得越具体/写得越多就会越好，太具体有时反而会局限ai，太啰嗦也没必要，ai比你想象的更聪明/或者更傻，这取决于你如何使用。多试，多跟ai沟通，掌握那个提问的度，自然也能写出好提示词。有肤色和语言要求，是昨晚测试时有的平台胡乱输出，要控制控制才行，总体而言，在deepseek的使用上，讲清楚你的需求就可。
 
@@ -176,7 +177,7 @@
 
 ![](img/733b6c1dd07deb1f6e289b688c94bf78.png)
 
-三八节海报，主标题文字“花开时节，致美丽的她”   柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
+三八节海报，主标题文字“花开时节，致美丽的她” 柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
 
 ![](img/b979eb98373383ca4f048a4ec60af31c.png)
 
@@ -184,7 +185,7 @@
 
 ![](img/86466ae4a0aef0b21a5651fd16eb3308.png)
 
-三八节海报：底部标题文字：“三八节，愿你如花般绚烂”   樱花盛开的场景，女性轻笑着驻足，背景是柔和的粉色和白色花瓣，整体风格清新柔美，色彩以粉色为主，简洁而温馨。
+三八节海报：底部标题文字：“三八节，愿你如花般绚烂” 樱花盛开的场景，女性轻笑着驻足，背景是柔和的粉色和白色花瓣，整体风格清新柔美，色彩以粉色为主，简洁而温馨。
 
 ![](img/de32f68e839575b7506d289570f3733d.png)
 
@@ -238,7 +239,7 @@
 
 ![](img/5dc0aef32f71f304cd36ba5e37f15792.png)
 
-三八节海报，主标题：“女性的力量，绽放光彩”   康乃馨花束与女性手持花束的形象，背景是清新淡蓝色的水墨风格，花瓣细腻，女性面容清新自然，色彩以粉色和蓝色为主，简约而不失高级感。
+三八节海报，主标题：“女性的力量，绽放光彩” 康乃馨花束与女性手持花束的形象，背景是清新淡蓝色的水墨风格，花瓣细腻，女性面容清新自然，色彩以粉色和蓝色为主，简约而不失高级感。
 
 ![](img/2f50d6c22afec9b4045d2ad42c935a50.png)
 
@@ -252,11 +253,15 @@
 
 ![](img/e146063302a614f1458f0115c79d22c4.png)
 
-三八节日海报，标题：“ 魅力女神节”。 简洁线条勾勒优雅女性侧影，面带微笑，背景是一大束粉色郁金香，光影柔和，色调以淡粉和米白为主
+
+
+# 三八节海报设计方案
+
+三八节日海报，标题：“魅力女神节”。简洁线条勾勒优雅女性侧影，面带微笑，背景是一大束粉色郁金香，光影柔和，色调以淡粉和米白为主
 
 ![](img/bb809d6e15552bc3b6fe172b466a5a4b.png)
 
-标题： "女神节快乐" 描述: 一朵优雅的粉色玫瑰在清晨阳光下盛开，背景是柔和的白色。玫瑰周围散落着几片小叶子。
+标题："女神节快乐" 描述: 一朵优雅的粉色玫瑰在清晨阳光下盛开，背景是柔和的白色。玫瑰周围散落着几片小叶子。
 
 ![](img/6113d26174aa63b58b3eb70b26a27f68.png)
 
@@ -314,7 +319,7 @@
 
 ![](img/415aeb6d4e460000a9a97ec0a1281f0c.png)
 
-三八节海报，主标题文字“花开时节，致美丽的她”   柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
+三八节海报，主标题文字“花开时节，致美丽的她” 柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
 
 三八节海报，【主标题：织光成诗】 杏色丝绸缠绕现代女性轮廓，经纬线交汇处刺绣木兰花，金丝线编织出隐藏的「Women’s Day」缩写字符。
 
@@ -330,11 +335,11 @@
 
 ![](img/54c280ba418bdaf9c3c940e09718048e.png)
 
-三八节海报：底部标题文字：“三八节，愿你如花般绚烂”   樱花盛开的场景，女性轻笑着驻足，背景是柔和的粉色和白色花瓣，整体风格清新柔美，色彩以粉色为主，简洁而温馨。
+三八节海报：底部标题文字：“三八节，愿你如花般绚烂” 樱花盛开的场景，女性轻笑着驻足，背景是柔和的粉色和白色花瓣，整体风格清新柔美，色彩以粉色为主，简洁而温馨。
 
 ![](img/3eefd1e464a218d0d388b56c85eb8eca.png)
 
-**主标题：花开时节，致美丽的她**   柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
+主标题：花开时节，致美丽的她 柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
 
 ![](img/10b1f2a60d53f4ee12aebe89e301a1b2.png)
 
@@ -384,7 +389,7 @@
 
 ![](img/a83f309f68e5da416879280451812479.png)
 
-三八节海报，主标题文字“花开时节，致美丽的她”   柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
+三八节海报，主标题文字“花开时节，致美丽的她” 柔和的玫瑰花瓣环绕，优雅女性侧身微笑，背景是简约的粉色渐变，整体风格高级优雅，色彩以玫瑰红和白色为主，简洁大方。
 
 ![](img/468268a7d751255e59038b7ee2020363.png)
 
@@ -427,8 +432,6 @@
 ![](img/7c89a3635c5693ac89646fd4f8035f19.png)
 
 ![](img/2059e8866a1b86bdf65245afc47f9a99.png)
-
-##
 
 ## 改服装改发色
 
@@ -512,6 +515,6 @@
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/ab73080aab9030ac340096e3ff2802a0.png)

@@ -1,3 +1,4 @@
+
 # 35张图，直观理解Stable Diffusion - 掘金
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/EEhndK0MDonDkmxFZjOcB7eonCx](https://diwfpqo78m.feishu.cn/docx/EEhndK0MDonDkmxFZjOcB7eonCx)
@@ -22,9 +23,7 @@ Stable Diffusion 用途多样，是一款多功能模型。首先它可以根据
 
 下面是 Stable Diffusion 的内部结构，了解内部结构可以让我们更好地理解 Stable Diffusion 的组成、各组成部分的交互方式、以及各种图像生成选项/参数的含义。
 
-**1**
-
-# Stable Diffusion 的组成
+## 1. Stable Diffusion 的组成
 
 Stable Diffusion 并不是一个单一模型，而是由多个部分和模型一起构成的系统。
 
@@ -40,13 +39,13 @@ Stable Diffusion 并不是一个单一模型，而是由多个部分和模型一
 
 图像生成器两步骤：
 
-**1-图像信息创建器（Image **information creator）
+**1-图像信息创建器（Image information creator）**
 
 图像信息创建器是 Stable Diffusion 特有的关键部分，也是其性能远超其他模型的原因。
 
 图像信息创建器运行多个 step 生成图像信息。Stable Diffusion 接口（interfaces）和库（libraries）的 step 参数一般默认为 50 或 100。
 
-图像信息创建器完全在图像信息空间（亦称潜在空间）上运行，这让 Stable Diffusion 比以前在像素空间（pixel space）上运行的扩散模型速度更快。从技术上讲，图像信息创建器由 UNet 神经网络和调度算法组成。
+图像信息创建器完全在图像信息空间（亦称潜在空间）上运行，这让 Stable Diffusion 比以前在像素空间（pixel space）上运行的扩散模型速度更快。从技术上讲，图像信息创建器由 `UNet` 神经网络和调度算法组成。
 
 “扩散”一词描述了图像信息创建器中发生的事情。因为图像信息创建器对信息作了逐步处理，所以图像解码器（image decoder）才能随后产出高质量图像。
 
@@ -60,17 +59,15 @@ Stable Diffusion 并不是一个单一模型，而是由多个部分和模型一
 
 这样就构成了 Stable Diffusion 的三个主要组成部分，每个部分都有自己的神经网络：
 
-+   ClipText： 用于文本编码。输入: 文本。输出: 77 个 token embeddings 向量，每个向量有 768 维。
++   `ClipText`：用于文本编码。输入: 文本。输出: 77 个 token embeddings 向量，每个向量有 768 维。
 
-+   UNet+调度程序： 在信息（潜在）空间中逐步处理信息。输入: 文本 embeddings 和一个初始化的多维数组（结构化的数字列表，也称为张量）组成的噪声。输出：经过处理的信息数组。
++   `UNet`+调度程序：在信息（潜在）空间中逐步处理信息。输入: 文本 embeddings 和一个初始化的多维数组（结构化的数字列表，也称为张量）组成的噪声。输出：经过处理的信息数组。
 
-+   自动编码解码器（Autoencoder Decoder）： 使用经过处理的信息数组绘制最终图像。输入：经过处理的信息数组（维数：(4,64,64)）输出: 生成的图像（维数：（3,512,512），即（红/绿/蓝；宽，高）)。
++   自动编码解码器（Autoencoder Decoder）：使用经过处理的信息数组绘制最终图像。输入：经过处理的信息数组（维数：(4,64,64)）输出: 生成的图像（维数：（3,512,512），即（红/绿/蓝；宽，高）)。
 
 ![](img/dec409981067198cc75841b8eeeaaae4.png)
 
-**2**
-
-# 到底何为扩散（Diffusion）？
+## 2. 到底何为扩散（Diffusion）？
 
 扩散是发生在粉色区域图像信息创建器组件中的过程。这一部分有一个表示输入文本的 token embeddings 和一个随机初始化的图像信息数组，这些数组也被称为 latents，在这个过程中会产生一个信息数组，图像解码器（Image Decoder）使用这个信息数组生成最终图像。
 
@@ -94,9 +91,7 @@ Stable Diffusion 并不是一个单一模型，而是由多个部分和模型一
 
 [「链接」](https://link.juejin.cn/?target=https%3A%2F%2Foneflow-public.oss-cn-beijing.aliyuncs.com%2Fimages%2FOneTeam%2F20230103-translate-The_Illustrated_Stable_Diffusion%2Fstable-diffusion-steps-2-4%25E8%25A7%2586%25E9%25A2%25912.webm)
 
-**3**
-
-# Diffusion 的工作原理
+## 3. Diffusion 的工作原理
 
 扩散模型图像生成的核心是强大的计算机视觉模型。在足够大的数据集的基础上，这些模型可以学会很多复杂运算。扩散模型通过如下方式建构问题来实现图像生成：
 
@@ -118,9 +113,7 @@ Stable Diffusion 并不是一个单一模型，而是由多个部分和模型一
 
 接下来我们来看看 Stable Diffusion 是如何生成图像的。
 
-**4**
-
-# 通过降噪绘图
+## 4. 通过降噪绘图
 
 经过训练的噪音预测器可以对噪音图像进行降噪处理，并且可以预测噪音。
 
@@ -138,9 +131,7 @@ Stable Diffusion 并不是一个单一模型，而是由多个部分和模型一
 
 值得注意的是，到目前为止我们所描述的扩散过程，没有使用任何文本数据，只需运行模型就能生成精美图像。不过我们无法控制图像的内容，它可能是一座金字塔，也可能是一只猫。接下来，我们将讨论如何将文本信息融入扩散过程以控制图片类型。
 
-**5**
-
-# 速度提升：在压缩（Latent）数据中扩散
+## 5. 速度提升：在压缩（Latent）数据中扩散
 
 为了加快图像生成过程，Stable Diffusion 论文没有在像素图像上进行运行，而是在图像的压缩版本上运行。论文将这称为前往潜在空间(Departure to Latent Space)。
 
@@ -162,11 +153,9 @@ LDM/Stable Diffusion 论文的图 3 中提及了这两个过程：
 
 上图还显示了“conditioning”组件，这个组件在本例中是描述模型生成图像的文本提示词（text prompts）。接下来，我们继续探讨文本组件。
 
-**6**
+## 6. 文本编码器：一种 Transformer 语言模型
 
-# 文本编码器：一种 Transformer 语言模型
-
-Transformer 语言模型作为语言理解组件，能够接受文本提示词，生成 token embeddings。Stable Diffusion 模型使用的是 ClipText（基于 GPT 的模型），而论文中采用的是 BERT。
+Transformer 语言模型作为语言理解组件，能够接受文本提示词，生成 token embeddings。Stable Diffusion 模型使用的是 `ClipText`（基于 GPT 的模型），而论文中采用的是 BERT。
 
 Imagen 论文表明，语言模型的选择相当重要。相较于较大的图像生成组件，较大的语言模型组件对生成图像的质量影响更大。
 
@@ -174,11 +163,9 @@ Imagen 论文表明，语言模型的选择相当重要。相较于较大的图�
 
 较大的/更好的语言模型对图像生成模型的质量有巨大的影响。资料来源：Saharia 等人所著论文 Google Imagen 中的图 A.5。
 
-早期的 Stable Diffusion 模型仅使用了 OpenAI 发布的预训练模型 ClipText。未来模型可能转向新发布的更大的 CLIP 变体 OpenCLIP。（更新于 2022 年 11 月，详情见 Stable Diffusion V2 uses OpenClip。与仅含有 630 万文本模型参数的 ClipText 相比，OpenCLIP 文本模型参数多达 3.54 亿。）
+早期的 Stable Diffusion 模型仅使用了 OpenAI 发布的预训练模型 `ClipText`。未来模型可能转向新发布的更大的 CLIP 变体 OpenCLIP。（更新于 2022 年 11 月，详情见 Stable Diffusion V2 uses OpenClip。与仅含有 630 万文本模型参数的 `ClipText` 相比，OpenCLIP 文本模型参数多达 3.54 亿。）
 
-**7**
-
-# 如何训练 CLIP
+## 7. 如何训练 CLIP
 
 CLIP 模型是在图像和图像说明数据集上训练的。我们可以设想这样一个数据集，它里面有 4 亿张图像以及这些图像说明的材料。
 
@@ -200,9 +187,7 @@ CLIP 模型是在图像和图像说明数据集上训练的。我们可以设想
 
 通过在数据集上重复此操作并使用大的 batch size，最终使编码器能够生成图像和文本说明相似的 embeddings。如 word2vec，训练过程也需要包含不匹配的图像和文本说明作为负样本，以得到较低的相似度分数。
 
-**8**
-
-# 将文本信息融入图像生成过程
+## 8. 将文本信息融入图像生成过程
 
 为了使文本融入图像生成，我们须调整噪声预测器来输入文本。
 
@@ -214,7 +199,7 @@ CLIP 模型是在图像和图像说明数据集上训练的。我们可以设想
 
 为了更好地理解 UNet 中文本 tokens 的使用方式，下面我们将进一步探究 UNet 模型。
 
-Unet 噪声预测器的 Layers(未使用文本)
+### `Unet` 噪声预测器的 Layers(未使用文本)
 
 首先来看没有使用文本的 UNet，其输入和输出如下：
 
@@ -222,7 +207,7 @@ Unet 噪声预测器的 Layers(未使用文本)
 
 可以看到：
 
-+   UNet 是一系列用于转换 latents 数组的 layers
++   `UNet` 是一系列用于转换 latents 数组的 layers
 
 +   每一 layer 都对前一个 layer 的输出进行操作
 
@@ -234,9 +219,9 @@ Unet 噪声预测器的 Layers(未使用文本)
 
 ![](img/733d32a893540813090582beea298b43.png)
 
-Unet 噪声预测器中的 Layers (带文本)
+### `Unet` 噪声预测器中的 Layers (带文本)
 
-现在让我们看看如何改变该系统以增加对文本的关注度。
+现在让我们看看如何改变这个系统以增加对文本的关注度。
 
 ![](img/cee09ed04d96cb89353a711b3aec41d4.png)
 
@@ -246,9 +231,7 @@ Unet 噪声预测器中的 Layers (带文本)
 
 文本信息不直接由 ResNet 处理，而是通过注意力层将这些文本表示融入到 latents 中。这样，下一个 ResNet 就能在处理过程中利用融入的文本信息。
 
-**9**
-
-# 总结
+## 9. 总结
 
 希望本文能帮助你深入了解 Stable Diffusion 的运作机制。虽然还涉及到许多其他概念，但是只要熟悉了以上板块，这些概念就会变得很容易理解。下面是一些我认为很有用的资源。
 
@@ -270,10 +253,12 @@ Unet 噪声预测器中的 Layers (带文本)
 
 +   www.youtube.com/watch?v=_7r…
 
-（本文在遵循 CC BY-NC-SA 4.0 协议的基础上由 OneFlow 编译发布，译文转载请联系获得授权。 原文： Alammar, J (2018). The Illustrated Transformer [Blog post].
+（本文在遵循 CC BY-NC-SA 4.0 协议的基础上由 OneFlow 编译发布，译文转载请联系获得授权。 原文： Alammar, J (2018). The Illustrated Transformer [Blog post].）
 
-jalammar.github.io/illustrated…
+
+
+`jalammar.github.io/illustrated…`
 
 欢迎 Star、试用 OneFlow 最新版本：
 
-github.com/Oneflow-Inc…
+`github.com/Oneflow-Inc…`

@@ -1,44 +1,39 @@
+
 # 拆书成神-《卖大力》拆细岗情节独家Prompt
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/M8vEdaNu4oxtPExclvncuDDBnHf](https://rq547mr4oez.feishu.cn/docx/M8vEdaNu4oxtPExclvncuDDBnHf)
 
-# 一、前言：
+## 一、前言
 
 > 细纲怎么写？情节点怎么做？情绪上下行怎么写~~
 
-> **是每个小伙伴写章节的问题****，so今天拆书《**人在公寓！开局摆摊卖大力》来看看怎么做。
+> 是每个小伙伴写章节的问题，so今天拆书《人在公寓！开局摆摊卖大力》来看看怎么做。
 
 > 作为飞卢曾经的主打选手之一，来看看到底哪里好？
 
 之前的拆书内容~~这个系列也是长期更新~~
 
-1.  [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
-
-1.  [AI写小说-创新？爆火男频又有女频的影子？](https://rq547mr4oez.feishu.cn/wiki/TX2vwm0qTiefe6kBNTdcwMo4nge?from=from_copylink)
-
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
-
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)（韭菜Y日记）
-
-1.  [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)
-
-1.  [女频耽mei拆书，小白也能学会的高级框架](https://rq547mr4oez.feishu.cn/wiki/FCkewRlBYi2E7WkB6NscCG31nBY?from=from_copylink)
-
-1.  [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
+1. [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-创新？爆火男频又有女频的影子？](https://rq547mr4oez.feishu.cn/wiki/TX2vwm0qTiefe6kBNTdcwMo4nge?from=from_copylink)
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)（韭菜Y日记）
+1. [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)
+1. [女频耽mei拆书，小白也能学会的高级框架](https://rq547mr4oez.feishu.cn/wiki/FCkewRlBYi2E7WkB6NscCG31nBY?from=from_copylink)
+1. [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
 
 ---
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+PS：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
-**原始出处：**
+原始出处：
 
-![](img/99b5f24e413670f7b8d052aaad08f3d2.png)
+`img/99b5f24e413670f7b8d052aaad08f3d2.png`
 
 ---
 
-# 二、直接上干货
+## 二、直接上干货
 
 无论是什么作品，只要能给人带来正面，积极情绪，就有其存在的价值。
 
@@ -54,7 +49,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 系统设定也很逗比，整体风格轻松欢快，但也有种族大义。大型纷争让人热血沸腾。
 
-# 三、拆书Prompt
+## 三、拆书Prompt
 
 ```
 # Role：网文章节分析师

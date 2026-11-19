@@ -1,53 +1,54 @@
+
 # 简单 Transformer 模型与文本分类（Keras & PyTorch）
 
 > 来源：[https://agijuejin.feishu.cn/docx/LOEMddyCWoIyZuxX23IccYqYnnf](https://agijuejin.feishu.cn/docx/LOEMddyCWoIyZuxX23IccYqYnnf)
 
 > 作者：王几行XING
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/705334174)hihu.com/p/705334...
+> 原文：[https://zhuanlan.zhihu.com/p/705334174](https://zhuanlan.zhihu.com/p/705334174)
 
 ## 案例简介
 
-此 Kera 官方案例展示了如何使用Transformer模型来进行文本分类任务。Transformer模型是由Vaswani等人在2017年提出的，用于处理自然语言处理任务的强大模型架构。
+此 Keras 官方案例展示了如何使用`Transformer`模型来进行文本分类任务。`Transformer`模型是由Vaswani等人在2017年提出的，用于处理自然语言处理任务的强大模型架构。
 
-案例网址： [K](https://link.zhihu.com/?target=https%3A//keras.io/examples/nlp/text_classification_with_transformer/)eras documentation: Text classification with Transformer
+案例网址：[Keras documentation: Text classification with Transformer](https://link.zhihu.com/?target=https%3A//keras.io/examples/nlp/text_classification_with_transformer/)
 
-**数据集准备 **：
+### 数据集准备
 
-+   使用IMDb数据集进行情感分类任务。该数据集包含50000条电影评论，分别标记为正面或负面情感。
++ 使用IMDb数据集进行情感分类任务。该数据集包含50000条电影评论，分别标记为正面或负面情感。
 
-+   数据集分为训练集和测试集，每个部分包含25000条评论。
++ 数据集分为训练集和测试集，每个部分包含25000条评论。
 
-+   文本数据被分词并转化为整数序列，每个整数表示词汇表中的一个词。
++ 文本数据被分词并转化为整数序列，每个整数表示词汇表中的一个词。
 
-**模型构建 **：
+### 模型构建
 
-+   构建一个包含自定义TransformerBlock的模型，用于处理文本输入并进行分类。
++ 构建一个包含自定义`TransformerBlock`的模型，用于处理文本输入并进行分类。
 
-+   TransformerBlock包括多头注意力层、前馈神经网络层、层归一化和Dropout层。
++ `TransformerBlock`包括多头注意力层、前馈神经网络层、层归一化和`Dropout`层。
 
-+   使用嵌入层将输入文本序列转化为词向量表示。
++ 使用嵌入层将输入文本序列转化为词向量表示。
 
-+   使用全局平均池化层将Transformer的输出转换为固定大小的向量。
++ 使用全局平均池化层将`Transformer`的输出转换为固定大小的向量。
 
-+   添加全连接层和Softmax激活函数进行二分类。
++ 添加全连接层和`Softmax`激活函数进行二分类。
 
-**模型编译和训练 **：
+### 模型编译和训练
 
-+   使用Adam优化器和交叉熵损失函数进行模型编译。
++ 使用`Adam`优化器和交叉熵损失函数进行模型编译。
 
-+   模型在训练集上进行训练，并在验证集上监控性能。
++ 模型在训练集上进行训练，并在验证集上监控性能。
 
-+   使用EarlyStopping回调函数，在验证性能不再提升时提前停止训练。
++ 使用`EarlyStopping`回调函数，在验证性能不再提升时提前停止训练。
 
-**模型评估 **：
+### 模型评估
 
-+   在测试集上评估模型性能，计算准确率等指标。
++ 在测试集上评估模型性能，计算准确率等指标。
 
 ## 第一步，环境准备
 
 ```
-!pip install -q -U keras 
+!pip install -q -U keras
 !pip install -q -U tensorflow
 ## Setup
 import keras
@@ -62,24 +63,24 @@ vocab_size = 20000
 maxlen = 200
 (x_train, y_train), (x_val, y_val) = keras.datasets.imdb.load_data(num_words=vocab_size)
 
-print(len(x_train), &#x27;Training sequences&#x27;)
-print(len(x_val), &#x27;Validation sequences&#x27;)
+print(len(x_train), 'Training sequences')
+print(len(x_val), 'Validation sequences')
 x_train = keras.utils.pad_sequences(x_train, maxlen=maxlen)
 x_val = keras.utils.pad_sequences(x_val, maxlen=maxlen)
 
-#Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/imdb.npz
-#17464789/17464789 ━━━━━━━━━━━━━━━━━━━━ 0s 0us/step
-#25000 Training sequences
-#25000 Validation sequences
+# Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/imdb.npz
+# 17464789/17464789 ━━━━━━━━━━━━━━━━━━━━ 0s 0us/step
+# 25000 Training sequences
+# 25000 Validation sequences
 ```
 
 查看一下数据：
 
 ![](img/65acad91e270c16f984ef34837110c23.png)
 
-说明这里的数据已经完成了 tokenized，而不是原始的文本数据。
+说明这里的数据已经完成了`tokenized`，而不是原始的文本数据。
 
-## 第三步，定义 Transformer 层
+## 第三步，定义`Transformer`层
 
 ```
 # 从 TensorFlow 导入必要的模块
@@ -91,20 +92,20 @@ class TransformerBlock(layers.Layer):
     # 构造函数，用于初始化 TransformerBlock
     def __init__(self, embed_dim, num_heads, ff_dim):
         super(TransformerBlock, self).__init__()  # 调用父类（layers.Layer）的构造函数
-        
+
         # 初始化多头注意力层
         self.att = layers.MultiHeadAttention(num_heads=num_heads, key_dim=embed_dim)
-        
+
         # 初始化前馈神经网络 (FFN) 作为一个顺序模型
         self.ffn = keras.Sequential([
-            layers.Dense(ff_dim, activation=&quot;relu&quot;),  # 第一层 Dense，使用 ReLU 激活函数
+            layers.Dense(ff_dim, activation="relu"),  # 第一层 Dense，使用 ReLU 激活函数
             layers.Dense(embed_dim),  # 第二层 Dense，没有激活函数
         ])
-        
+
         # 初始化两个层归一化层，用于正则化输入
         self.layernorm1 = layers.LayerNormalization(epsilon=1e-6)
         self.layernorm2 = layers.LayerNormalization(epsilon=1e-6)
-        
+
         # 初始化两个 Dropout 层，用于防止过拟合
         self.dropout1 = layers.Dropout(0.1)  # Dropout 比率为 0.1
         self.dropout2 = layers.Dropout(0.1)  # Dropout 比率为 0.1
@@ -113,19 +114,19 @@ class TransformerBlock(layers.Layer):
     def call(self, inputs, training):
         # 应用多头注意力层于输入数据
         attn_output = self.att(inputs, inputs)
-        
+
         # 在注意力输出上应用 Dropout，training 参数用于指示是否在训练模式下运行
         attn_output = self.dropout1(attn_output, training=training)
-        
+
         # 将原始输入与注意力输出相加，然后进行层归一化
         out1 = self.layernorm1(inputs + attn_output)
-        
+
         # 将归一化后的输出传入前馈神经网络
         ffn_output = self.ffn(out1)
-        
+
         # 在前馈网络输出上应用 Dropout
         ffn_output = self.dropout2(ffn_output, training=training)
-        
+
         # 最后将前馈网络的输出与归一化后的中间输出相加，再进行层归一化，得到最终输出
         return self.layernorm2(out1 + ffn_output)
 ```
@@ -143,7 +144,7 @@ maxlen = 100  # 输入序列的最大长度
 vocab_size = 20000  # 词汇表大小
 
 # 定义输入层，输入形状为 (maxlen,)，表示每个输入序列的长度
-inputs = layers.Input(shape=(maxlen,)) #表示输入是一个长度为 maxlen 的整数序列。每个整数通常是一个词在词汇表中的索引 
+inputs = layers.Input(shape=(maxlen,))  # 表示输入是一个长度为 maxlen 的整数序列。每个整数通常是一个词在词汇表中的索引
 
 # 定义自定义的嵌入层和位置嵌入层
 # 假设 TokenAndPositionEmbedding 是一个已定义的类，用于嵌入 tokens 和位置
@@ -163,13 +164,13 @@ x = layers.GlobalAveragePooling1D()(x)
 x = layers.Dropout(0.1)(x)
 
 # 全连接层，使用 ReLU 激活函数
-x = layers.Dense(20, activation=&quot;relu&quot;)(x)
+x = layers.Dense(20, activation="relu")(x)
 
 # 再次使用 Dropout 层
 x = layers.Dropout(0.1)(x)
 
 # 输出层，使用 softmax 激活函数，将输出分类为两个类别
-outputs = layers.Dense(2, activation=&quot;softmax&quot;)(x)
+outputs = layers.Dense(2, activation="softmax")(x)
 
 # 创建 Keras 模型，指定输入和输出
 model = keras.Model(inputs=inputs, outputs=outputs)
@@ -180,70 +181,70 @@ model.summary()
 
 ![](img/c327db9b48ff85e35cf134570c75e206.png)
 
-**代码解释：**
+### 代码解释
 
-**定义超参数 **:
+#### 定义超参数
 
-+   embed_dim = 32 : 每个 token 的嵌入向量的维度。
++ `embed_dim = 32`：每个 `token` 的嵌入向量的维度。
 
-+   num_heads = 2 : 多头注意力机制中的头数。
++ `num_heads = 2`：多头注意力机制中的头数。
 
-+   ff_dim = 32 : 前馈神经网络中的隐藏层维度。
++ `ff_dim = 32`：前馈神经网络中的隐藏层维度。
 
-**定义输入层 **:
+#### 定义输入层
 
-+   inputs = layers.Input(shape=(maxlen,)) : 定义输入层，输入形状为 (maxlen,) ，表示每个输入序列的长度。输入是一个整数序列，每个整数通常是一个词在词汇表中的索引。
++ `inputs = layers.Input(shape=(maxlen,))`：定义输入层，输入形状为 `(maxlen,)`，表示每个输入序列的长度。输入是一个整数序列，每个整数通常是一个词在词汇表中的索引。
 
-**定义嵌入层 **:
+#### 定义嵌入层
 
-+   embedding_layer = TokenAndPositionEmbedding(maxlen, vocab_size, embed_dim) : TokenAndPositionEmbedding 是一个假设已定义的类，用于将 token 和位置进行嵌入。这个层会将整数序列转换为嵌入向量，并添加位置信息。
++ `embedding_layer = TokenAndPositionEmbedding(maxlen, vocab_size, embed_dim)`：`TokenAndPositionEmbedding` 是一个假设已定义的类，用于将 `token` 和位置进行嵌入。这个层会将整数序列转换为嵌入向量，并添加位置信息。
 
-**将输入传递给嵌入层 **:
+#### 将输入传递给嵌入层
 
-+   x = embedding_layer(inputs) : 将输入传递给嵌入层，得到嵌入后的向量表示。
++ `x = embedding_layer(inputs)`：将输入传递给嵌入层，得到嵌入后的向量表示。
 
-定义 TransformerBlock :
+#### 定义 `TransformerBlock`
 
-+   transformer_block = TransformerBlock(embed_dim, num_heads, ff_dim) : 初始化一个 TransformerBlock ，其中包含多头注意力和前馈神经网络。
++ `transformer_block = TransformerBlock(embed_dim, num_heads, ff_dim)`：初始化一个 `TransformerBlock`，其中包含多头注意力和前馈神经网络。
 
-+   x = transformer_block(x, training=True) : 将嵌入后的输入传递给 TransformerBlock ，并指定 training=True 表示在训练模式下运行。
++ `x = transformer_block(x, training=True)`：将嵌入后的输入传递给 `TransformerBlock`，并指定 `training=True` 表示在训练模式下运行。
 
-**全局平均池化层 **:
+#### 全局平均池化层
 
-+   x = layers.GlobalAveragePooling1D()(x) : 应用全局平均池化，将序列的每个时间步的表示取平均值，得到一个固定大小的向量。
++ `x = layers.GlobalAveragePooling1D()(x)`：应用全局平均池化，将序列的每个时间步的表示取平均值，得到一个固定大小的向量。
 
-**Dropout 层 **:
+#### `Dropout` 层
 
-+   x = layers.Dropout(0.1)(x) : 应用 Dropout，防止过拟合。Dropout 比率为 0.1，表示 10% 的节点会随机失活。
++ `x = layers.Dropout(0.1)(x)`：应用 `Dropout`，防止过拟合。`Dropout` 比率为 0.1，表示 10% 的节点会随机失活。
 
-**全连接层 **:
+#### 全连接层
 
-+   x = layers.Dense(20, activation="relu")(x) : 应用一个全连接层，使用 ReLU 激活函数，输出维度为 20。
++ `x = layers.Dense(20, activation="relu")(x)`：应用一个全连接层，使用 `ReLU` 激活函数，输出维度为 20。
 
-**再次应用 Dropout 层 **:
+#### 再次应用 `Dropout` 层
 
-+   x = layers.Dropout(0.1)(x) : 再次应用 Dropout，防止过拟合。
++ `x = layers.Dropout(0.1)(x)`：再次应用 `Dropout`，防止过拟合。
 
-**输出层 **:
+#### 输出层
 
-+   outputs = layers.Dense(2, activation="softmax")(x) : 应用一个全连接层，使用 softmax 激活函数，输出维度为 2。softmax 会将输出转换为两个类别的概率分布。
++ `outputs = layers.Dense(2, activation="softmax")(x)`：应用一个全连接层，使用 `softmax` 激活函数，输出维度为 2。`softmax` 会将输出转换为两个类别的概率分布。
 
-**创建 Keras 模型 **:
+#### 创建 Keras 模型
 
-+   model = keras.Model(inputs=inputs, outputs=outputs) : 使用输入层和输出层创建 Keras 模型。
++ `model = keras.Model(inputs=inputs, outputs=outputs)`：使用输入层和输出层创建 Keras 模型。
 
-**打印模型摘要 **:
+#### 打印模型摘要
 
-+   model.summary() : 打印模型摘要，显示模型的结构和参数数量。
++ `model.summary()`：打印模型摘要，显示模型的结构和参数数量。
 
 ## 第五步，模型训练
 
 ```
 # 编译模型
 model.compile(
-    optimizer=&#x27;adam&#x27;,  # 使用 Adam 优化器
-    loss=&quot;sparse_categorical_crossentropy&quot;,  # 使用稀疏分类交叉熵作为损失函数
-    metrics=[&#x27;accuracy&#x27;]  # 评估指标选择准确率
+    optimizer='adam',  # 使用 Adam 优化器
+    loss="sparse_categorical_crossentropy",  # 使用稀疏分类交叉熵作为损失函数
+    metrics=['accuracy']  # 评估指标选择准确率
 )
 
 # 训练模型
@@ -256,54 +257,59 @@ history = model.fit(
 )
 ```
 
-代码解释：
+### 代码解释
 
-**编译模型 **:
+#### 编译模型
 
-+   optimizer='adam' : 使用 Adam 优化器，它是一种常用的优化算法，能够高效地调整模型的权重以最小化损失函数。
++ `optimizer='adam'`：使用 `Adam` 优化器，它是一种常用的优化算法，能够高效地调整模型的权重以最小化损失函数。
 
-+   loss="sparse_categorical_crossentropy" : 使用稀疏分类交叉熵作为损失函数。适用于标签是整数而不是 one-hot 编码的分类问题。
++ `loss="sparse_categorical_crossentropy"`：使用稀疏分类交叉熵作为损失函数。适用于标签是整数而不是 one-hot 编码的分类问题。
 
-+   metrics=['accuracy'] : 评估模型性能的指标选择准确率，表示模型预测的准确程度。
++ `metrics=['accuracy']`：评估模型性能的指标选择准确率，表示模型预测的准确程度。
 
-**训练模型 **:
+#### 训练模型
 
-+   x_train : 训练数据，假设已经向量化并准备好。
++ `x_train`：训练数据，假设已经向量化并准备好。
 
-+   y_train : 训练标签，表示每个样本的真实分类。
++ `y_train`：训练标签，表示每个样本的真实分类。
 
-+   batch_size=32 : 每个批次的样本数。批量梯度下降法会在每次迭代中使用 32 个样本。
++ `batch_size=32`：每个批次的样本数。批量梯度下降法会在每次迭代中使用 32 个样本。
 
-+   epochs=2 : 训练整个数据集的次数。在每个 epoch 结束时，模型会遍历一次全部训练数据。
++ `epochs=2`：训练整个数据集的次数。在每个 `epoch` 结束时，模型会遍历一次全部训练数据。
 
-+   validation_data=(x_val, y_val) : 验证数据和验证标签。在每个 epoch 结束时，模型会在验证数据上评估其性能，帮助监控模型是否过拟合
++ `validation_data=(x_val, y_val)`：验证数据和验证标签。在每个 `epoch` 结束时，模型会在验证数据上评估其性能，帮助监控模型是否过拟合。
 
-**进一步说明**
+### 进一步说明
 
-+   **Adam 优化器 **:
+#### `Adam` 优化器
 
-+   Adam（Adaptive Moment Estimation）是一种自适应学习率优化算法。它结合了动量梯度下降和 RMSProp 的优点，能高效且稳定地调整学习率。
+`Adam`（Adaptive Moment Estimation）是一种自适应学习率优化算法。它结合了动量梯度下降和 `RMSProp` 的优点，能高效且稳定地调整学习率。
 
-+   **稀疏分类交叉熵损失 **:
+#### 稀疏分类交叉熵损失
 
-+   当标签是整数（例如：类索引 0, 1, 2...）而不是 one-hot 编码时，使用 sparse_categorical_crossentropy 。它比 categorical_crossentropy 更节省内存。
+当标签是整数（例如：类索引 0, 1, 2...）而不是 one-hot 编码时，使用 `sparse_categorical_crossentropy`。它比 `categorical_crossentropy` 更节省内存。
 
-+   **训练过程 **:
+#### 训练过程
 
-+   model.fit 方法将模型应用于训练数据，优化模型参数，使得损失函数最小化。通过验证数据集，可以在训练过程中监控模型的表现，避免过拟合。训练历史（ history ）包含了每个 epoch 的训练和验证损失及准确率，可以用来绘制训练曲线或进一步分析模型的表现。
+`model.fit` 方法将模型应用于训练数据，优化模型参数，使得损失函数最小化。通过验证数据集，可以在训练过程中监控模型的表现，避免过拟合。训练历史（`history`）包含了每个 `epoch` 的训练和验证损失及准确率，可以用来绘制训练曲线或进一步分析模型的表现。
 
 ## 完整代码 (未指定 training 模式)
 
-```
+
+
+```python
 import tensorflow as tf
 from keras import layers
+```
 
+## 1st layer for tokens
+```python
 class TransformerBlock(layers.Layer):
     def __init__(self, embed_dim, num_heads, ff_dim, rate=0.1):
         super().__init__()
         self.att = layers.MultiHeadAttention(num_heads=num_heads, key_dim=embed_dim)
         self.ffn = keras.Sequential(
-            [layers.Dense(ff_dim, activation=&quot;relu&quot;), layers.Dense(embed_dim),]
+            [layers.Dense(ff_dim, activation="relu"), layers.Dense(embed_dim),]
         )
         self.layernorm1 = layers.LayerNormalization(epsilon=1e-6)
         self.layernorm2 = layers.LayerNormalization(epsilon=1e-6)
@@ -317,11 +323,10 @@ class TransformerBlock(layers.Layer):
         ffn_output = self.ffn(out1)
         ffn_output = self.dropout2(ffn_output)
         return self.layernorm2(out1 + ffn_output)
+```
 
-
-## 1st layer for tokens
 ## 2nd layer for positions (index)
-
+```python
 class TokenAndPositionEmbedding(layers.Layer):
   def __init__(self, maxlen, vocab_size, embed_dim):
     super().__init__()
@@ -334,17 +339,21 @@ class TokenAndPositionEmbedding(layers.Layer):
     positions = self.pos_emb(positions)
     x = self.token_emb(x)
     return x+positions 
+```
 
-## Download the data 
+## Download the data
+```python
 vocab_size = 20000  # Only consider the top 20k words
 maxlen = 200  # Only consider the first 200 words of each movie review
 (x_train, y_train), (x_val, y_val) = keras.datasets.imdb.load_data(num_words=vocab_size)
-print(len(x_train), &quot;Training sequences&quot;)
-print(len(x_val), &quot;Validation sequences&quot;)
+print(len(x_train), "Training sequences")
+print(len(x_val), "Validation sequences")
 x_train = keras.utils.pad_sequences(x_train, maxlen=maxlen)
 x_val = keras.utils.pad_sequences(x_val, maxlen=maxlen)
+```
 
-## Define the model 
+## Define the model
+```python
 embed_dim = 32  # Embedding size for each token
 num_heads = 2  # Number of attention heads
 ff_dim = 32  # Hidden layer size in feed forward network inside transformer
@@ -356,16 +365,18 @@ transformer_block = TransformerBlock(embed_dim, num_heads, ff_dim)
 x = transformer_block(x)
 x = layers.GlobalAveragePooling1D()(x)
 x = layers.Dropout(0.1)(x)
-x = layers.Dense(20, activation=&quot;relu&quot;)(x)
+x = layers.Dense(20, activation="relu")(x)
 x = layers.Dropout(0.1)(x)
-outputs = layers.Dense(2, activation=&quot;softmax&quot;)(x)
+outputs = layers.Dense(2, activation="softmax")(x)
 
 model = keras.Model(inputs=inputs, outputs=outputs)
 model.summary()
+```
 
 ## Train and evaluate the model
+```python
 model.compile(
-    optimizer=&quot;adam&quot;, loss=&quot;sparse_categorical_crossentropy&quot;, metrics=[&quot;accuracy&quot;]
+    optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"]
 )
 history = model.fit(
     x_train, y_train, batch_size=32, epochs=2, validation_data=(x_val, y_val)
@@ -373,6 +384,8 @@ history = model.fit(
 ```
 
 ## PyTorch 版
+
+
 
 ```
 import torch
@@ -467,7 +480,7 @@ criterion = nn.CrossEntropyLoss()
 
 # 训练和评估模型
 def train_model(model, train_loader, val_loader, criterion, optimizer, epochs=2):
-    device = torch.device(&#x27;cuda&#x27; if torch.cuda.is_available() else &#x27;cpu&#x27;)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device)
     
     for epoch in range(epochs):
@@ -486,7 +499,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, epochs=2)
             _, predicted = torch.max(outputs, 1)
             total += targets.size(0)
             correct += predicted.eq(targets).sum().item()
-        print(f&#x27;Epoch {epoch + 1}/{epochs}, Loss: {train_loss/len(train_loader)}, Accuracy: {100.*correct/total}%&#x27;)
+        print(f'Epoch {epoch + 1}/{epochs}, Loss: {train_loss/len(train_loader)}, Accuracy: {100.*correct/total}%')
         
         model.eval()
         val_loss = 0
@@ -501,7 +514,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, epochs=2)
                 _, predicted = torch.max(outputs, 1)
                 total += targets.size(0)
                 correct += predicted.eq(targets).sum().item()
-        print(f&#x27;Validation Loss: {val_loss/len(val_loader)}, Accuracy: {100.*correct/total}%&#x27;)
+        print(f'Validation Loss: {val_loss/len(val_loader)}, Accuracy: {100.*correct/total}%')
 
 train_model(model, train_loader, val_loader, criterion, optimizer, epochs=2)
 ```

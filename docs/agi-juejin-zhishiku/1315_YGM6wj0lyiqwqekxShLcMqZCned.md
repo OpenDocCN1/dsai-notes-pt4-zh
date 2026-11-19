@@ -1,8 +1,7 @@
+
 # 风之舞蹈者：空中的华丽畅想
 
 > 来源：[https://agijuejin.feishu.cn/docx/CNDCdXDa9o8673xfo3Jcq2DRnoc](https://agijuejin.feishu.cn/docx/CNDCdXDa9o8673xfo3Jcq2DRnoc)
-
-风之舞蹈者：空中的华丽畅想
 
 ![](img/7645be35c0ff868e05e77444ccd7663b.png)
 
@@ -10,7 +9,7 @@
 Imagine a page from a game art concept book, featuring an anthropomorphic cat character inspired by the element of wind, captured in a dynamic dancing pose. This character, while maintaining its feline features, incorporates wind motifs throughout its appearance and attire, embodying the fluidity and grace of both wind and dance. The character&#x27;s fur is sleek, adorned with swirling wind designs, and it wears lightweight clothing that twirls and flutters as if in rhythm with the dance. Accessories such as feathers and leaves enhance the wind theme, adding to the character&#x27;s affinity with the element. The movement is conveyed through flowing lines, and the color scheme is composed of cool, airy colors, reflecting the essence of wind. Annotations detail these elements, highlighting the character&#x27;s design choices that emphasize its wind theme. The background suggests a lofty, sky-high setting, with a color palette displayed beside the character, showcasing the main colors used in the design. This scene conveys the joy and freedom associated with dance, set against a backdrop that reinforces the character&#x27;s connection to the wind element.
 ```
 
-狐灵舞韵
+## 狐灵舞韵
 
 ![](img/ee63ce0c34d381d37e350f6736d3baed.png)
 
@@ -18,7 +17,7 @@ Imagine a page from a game art concept book, featuring an anthropomorphic cat ch
 In a serene traditional Chinese garden, two women dance gracefully, embodying the mystical allure of &#x27;Huli Jing&#x27; or fox spirits. They wear modernized Hanfu dresses with delicate spaghetti straps and intricate embroidery, which flow and swirl around them, enhancing the fluidity and beauty of their synchronized dance. The scene is set against ancient pavilions and lush bamboo, capturing the essence of their performance. The dresses flutter elegantly, emphasizing the natural grace and poise of their dance. The image seeks to combine the precision of a high-end camera with the ethereal quality of the dance, ensuring every detail from the fluidity of the attire to the expressive joy on their faces is captured with lifelike clarity.
 ```
 
-龙舞新春
+## 龙舞新春
 
 ![](img/ee63ce0c34d381d37e350f6736d3baed.png)
 

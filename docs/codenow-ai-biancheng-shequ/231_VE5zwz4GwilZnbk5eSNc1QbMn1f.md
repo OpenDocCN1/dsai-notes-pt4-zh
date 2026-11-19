@@ -1,10 +1,11 @@
+
 # 语音输入的UI-初稿
 
 > 来源：[https://now.feishu.cn/docx/FBkedQG9eoQZw6xDbH6cNp13nYb](https://now.feishu.cn/docx/FBkedQG9eoQZw6xDbH6cNp13nYb)
 
-https://v0.dev/chat/react-audio-recorder-xoWx53pZgtD
+`https://v0.dev/chat/react-audio-recorder-xoWx53pZgtD`
 
-https://bolt.new/~/sb1-2mqpzuca
+`https://bolt.new/~/sb1-2mqpzuca`
 
 智谱的实时api，暂时还没调通：
 
@@ -80,10 +81,8 @@ function sendAudioData(audioBase64) {
     };
     ws.send(JSON.stringify(message));
   }
-
-
 ```
 
 找到个开源的参考：
 
-https://github.com/pipecat-ai/pipecat-client-web-transports/tree/main
+`https://github.com/pipecat-ai/pipecat-client-web-transports/tree/main`

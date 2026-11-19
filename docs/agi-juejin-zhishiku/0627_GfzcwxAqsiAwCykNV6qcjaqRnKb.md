@@ -1,36 +1,32 @@
+
 # 丝滑，用Trae实现监测特朗普签署了哪些行政令
 
 > 来源：[https://agijuejin.feishu.cn/docx/XVF3dMqWrok9n1xSW5YcCWdInkd](https://agijuejin.feishu.cn/docx/XVF3dMqWrok9n1xSW5YcCWdInkd)
-
 > 作者：周口店程序猿
-
 > 链接：https://juejin.cn/post/7462753999163801641
-
 > 来源：稀土掘金
-
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 > 如有侵权，请联系删除。
 
-**我正在参加Trae「超级体验官」创意实践征文， **本文所使用的 Trae 免费下载链接： www.trae.ai/?utm_source…
+我正在参加Trae「超级体验官」创意实践征文，本文所使用的 Trae 免费下载链接：`www.trae.ai/?utm_source…`
 
-新官上任三把火，美国新总统特朗普也不能免[俗，每天会](https://link.juejin.cn/?target=https%3A%2F%2Fwww.whitehouse.gov%2F)在用WordPress搭建的 白宫官网 ，更新N篇最新签署的行政令，比如1月22日就更新了8篇，堪比他发推文的数量
+新官上任三把火，美国新总统特朗普也不能免[俗，每天会](https://link.juejin.cn/?target=https%3A%2F%2Fwww.whitehouse.gov%2F)在用WordPress搭建的 白宫官网 ，更新`N`篇最新签署的行政令，比如1月22日就更新了8篇，堪比他发推文的数量
 
 今天我们就用字节新发布的Trae IDE来实现一次拿到所有签署的行政令，关注懂王实事动态或满足好奇心
 
-### 下载安装
+## 下载安装
 
-通过文章顶部链接下载Trae IDE安装包，目前支持macOS，且需要自行解决🪜问题，PAC的user-rule规则需要新增 *.trae.ai ，然后就可以正常登录IDE了
+通过文章顶部链接下载Trae IDE安装包，目前支持macOS，且需要自行解决🪜问题，PAC的`user-rule`规则需要新增 `*.trae.ai` ，然后就可以正常登录IDE了
 
-### 需求实现
+## 需求实现
 
 这里说个前提，我是后端开发，所以我只想先体验Trae能不能辅助我更高效的编程，切实提高实际项目开发效率
 
-#### 创建项目和Python虚拟环境
+### 创建项目和Python虚拟环境
 
 其实就是打开一个新的文件夹就可以，用vscode的同学，估计非常麻溜了
 
-然后打开终端用uv创建Python虚拟环境
+然后打开终端用`uv`创建Python虚拟环境
 
 ```
 uv init .
@@ -39,11 +35,11 @@ uv vent --python 3.12.8
 
 PS: 其实完全不懂也没关系，右侧的chat直接问
 
-#### 发需求提示词
+### 发需求提示词
 
-**我的提示词大概如下**
+我的提示词大概如下
 
-我需要获取这个网页 www.whitehouse.gov/presidentia… 的所有文章列表，且标题需要翻译成中文
+我需要获取这个网页 `www.whitehouse.gov/presidentia…` 的所有文章列表，且标题需要翻译成中文
 
 其中一个文章的HTML代码是
 
@@ -77,7 +73,7 @@ PS: 其实完全不懂也没关系，右侧的chat直接问
 
 注意，以上HTML结构还是得自行到网站获取拷贝网页元素，需求明确效率会更高
 
-#### 安装依赖和应用实际代码文件
+### 安装依赖和应用实际代码文件
 
 如图
 
@@ -89,19 +85,21 @@ PS: 其实完全不懂也没关系，右侧的chat直接问
 
 ![](img/f6963905f4b5870aa916e55bc574cbb7.png)
 
-然后就可以运行代码文件 python whitehouse_scraper.py
+然后就可以运行代码文件 `python whitehouse_scraper.py`
 
 实际运行效果，还打印了日志
 
 ![](img/b7d7009b4c4625d783ee4d0e58b130ab.png)
 
-由于没有明确告知需要把数据存储在哪里，自动存储在了一个txt文件中，如图
+由于没有明确告知需要把数据存储在哪里，自动存储在了一个`txt`文件中，如图
 
 ![](img/4d2f5d6172f8f64ff4c4b694956579eb.png)
 
 分享下完整代码，当然还可以进一步优化代码，把他存到数据库
 
-```
+
+
+```python
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -221,7 +219,7 @@ if __name__ == &quot;__main__&quot;:
     scrape_whitehouse_actions()
 ```
 
-### 总结
+## 总结
 
 整体体验下来，相比于之前的marscode插件等还是丝滑不少
 

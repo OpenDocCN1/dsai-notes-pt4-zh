@@ -1,6 +1,7 @@
-# 北京 | 上海 | 深圳  | 人格化城市印象
 
-> 来源：[https://docs.feishu.cn/docx/Jm5ddi7wUot0uGxkptxcH0Tdnxf](https://docs.feishu.cn/docx/Jm5ddi7wUot0uGxkptxcH0Tdnxf)
+# 北京 | 上海 | 深圳 | 人格化城市印象
+
+> 来源：`https://docs.feishu.cn/docx/Jm5ddi7wUot0uGxkptxcH0Tdnxf`
 
 ## 北京
 
@@ -36,7 +37,7 @@
 
 这里众生皆苦，但众生皆苦中作乐。
 
-积极与颓废，热情与冷静这些原本冲突的特质，可以像量子叠加态()一样错落有致地出现在同一个人身上。
+积极与颓废，热情与冷静这些原本冲突的特质，可以像`量子叠加态()`一样错落有致地出现在同一个人身上。
 
 令人叹为观止，也令人叹息。
 

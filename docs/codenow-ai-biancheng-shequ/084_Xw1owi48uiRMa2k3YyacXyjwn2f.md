@@ -1,3 +1,4 @@
+
 # 在Gap Year遇见AI编程：一位金融生的法语学习工具开发笔记
 
 > 来源：[https://now.feishu.cn/docx/OZWfdtymeo0xwhxwyRUcCmtdnce](https://now.feishu.cn/docx/OZWfdtymeo0xwhxwyRUcCmtdnce)
@@ -76,7 +77,7 @@ John的法语学习工具开发经历展现了AI编程的真正价值——它�
 
 当技术的门槛被降低，创造力变得无限大。
 
-**相关训练营**
+### 相关训练营
 
 [0基础2天蜕变全栈开发者#AI编程线下训练营，N16上海场报名](https://qwyofiv4bd3.feishu.cn/wiki/XxgqwY5Kdi2BPdkTHJ3cIaounhe)
 

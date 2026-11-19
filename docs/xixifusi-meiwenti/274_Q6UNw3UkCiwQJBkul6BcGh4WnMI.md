@@ -1,10 +1,11 @@
+
 # UIUX视觉设计
 
 > 来源：[https://docs.feishu.cn/docx/SODvdqgWxoESsfxXWuUcCey6nmh](https://docs.feishu.cn/docx/SODvdqgWxoESsfxXWuUcCey6nmh)
 
-# 案例分析
+## 案例分析
 
-## 以 Perplexity 为例，讲解AI应用的「UX 设计」要达到什么水准
+### 以 Perplexity 为例，讲解AI应用的「UX 设计」要达到什么水准
 
 ![](img/069d22a132a27534913c5ad91569e929.png)
 

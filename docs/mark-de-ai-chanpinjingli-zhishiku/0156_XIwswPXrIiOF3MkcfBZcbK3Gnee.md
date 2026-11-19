@@ -1,3 +1,4 @@
+
 # 03-11集成算法-投票法
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/PvJ0dVTPioRI2Ex1CzgcCfOZnZc](https://qqs7y1hozd1.feishu.cn/docx/PvJ0dVTPioRI2Ex1CzgcCfOZnZc)
@@ -31,9 +32,7 @@
 **理论推导：**
 
 +   每个模型相当于从概率空间中取一个样本（即模型预测）。
-
 +   假设各模型预测独立且准确率均大于随机猜测，多数投票能够放大正确预测的概率。
-
 +   根据大数定律，当  较大时，正确预测的模型数量更可能占多数，从而使得多数投票法具有降低单个模型误差的作用。
 
 #### 软投票（Soft Voting）
@@ -55,9 +54,7 @@
 **理论推导：**
 
 +   软投票法利用了模型输出的概率信息，使得模型之间的信息更为充分地结合。
-
 +   当各个模型的概率分布较为可靠时，累加概率能够提供比单纯投票更精细的决策边界。
-
 +   如果各个模型的输出满足良好的概率校准（calibration），那么加权求和可以近似于计算后验概率，从而达到贝叶斯最优决策的效果。
 
 ### 2. 算法流程
@@ -67,27 +64,20 @@
 #### 数据输入
 
 +   **输入样本：** 获取待分类的样本  。
-
 +   **基分类器模型：** 已经训练好的  个模型  。
 
 #### 模型预测
 
 +   **硬投票：**对每个模型  ，计算预测类别  。
-
 +   **软投票：**对每个模型  ，计算对每个类别的概率分布  。
 
 #### 投票/概率累加
 
 +   **硬投票：**
-
 +   针对每个类别  ，计算票数：
-
 +   找出票数最大的类别：
-
 +   **软投票：**
-
 +   针对每个类别  ，累加概率：
-
 +   选择概率总和最大的类别：
 
 #### 输出结果
@@ -105,7 +95,6 @@
 #### 加权投票的优化
 
 +   当不同模型性能不同时，引入权重  能够使得效果更优。权重通常与模型的准确率或者其他评价指标相关：
-
 +   通过学习方法（如交叉验证）可以确定一组最优权重，从而在集成过程中更好地平衡各个模型的贡献。
 
 总的来说，集成算法中的投票法利用多个基分类器的集体智慧来提高分类的准确性和稳定性。
@@ -146,50 +135,50 @@ X_train, X_test, y_train, y_test = train_test_split(X_reduced, y, test_size=0.3,
 
 # 2. 构建基本分类器与 Voting Classifier
 # 定义三个基本分类器：逻辑回归、决策树、KNN
-clf1 = LogisticRegression(random_state=42, solver=&#x27;liblinear&#x27;, multi_class=&#x27;ovr&#x27;)
+clf1 = LogisticRegression(random_state=42, solver='liblinear', multi_class='ovr')
 clf2 = DecisionTreeClassifier(random_state=42)
 clf3 = KNeighborsClassifier()
 
 # 创建 VotingClassifier
 # 初始设置为 soft voting, 利用各模型的概率信息
 voting_clf = VotingClassifier(estimators=[
-    (&#x27;lr&#x27;, clf1),
-    (&#x27;dt&#x27;, clf2),
-    (&#x27;knn&#x27;, clf3)
-], voting=&#x27;soft&#x27;)  # 可切换为 &#x27;hard&#x27; 进行硬投票
+    ('lr', clf1),
+    ('dt', clf2),
+    ('knn', clf3)
+], voting='soft')  # 可切换为 'hard' 进行硬投票
 
 # 3. 模型训练与评估
 # 分别在单个模型和投票集成上进行交叉验证
 for clf, label in zip([clf1, clf2, clf3, voting_clf],
-                      [&#x27;Logistic Regression&#x27;, &#x27;Decision Tree&#x27;, &#x27;KNN&#x27;, &#x27;Voting&#x27;]):
-    scores = cross_val_score(clf, X_train, y_train, cv=5, scoring=&#x27;accuracy&#x27;)
-    print(f&quot;{label} Accuracy: {scores.mean():.2f} (+/- {scores.std():.2f})&quot;)
+                      ['Logistic Regression', 'Decision Tree', 'KNN', 'Voting']):
+    scores = cross_val_score(clf, X_train, y_train, cv=5, scoring='accuracy')
+    print(f"{label} Accuracy: {scores.mean():.2f} (+/- {scores.std():.2f})")
 
 # 在测试集上训练并评估 VotingClassifier
 voting_clf.fit(X_train, y_train)
-print(&quot;Voting Classifier Test Accuracy:&quot;, voting_clf.score(X_test, y_test))
+print("Voting Classifier Test Accuracy:", voting_clf.score(X_test, y_test))
 
 # 4. 超参数优化 - 优化各个分类器的权重
 # 定义待调节的参数范围：为每个模型设置不同的权重组合
 params = {
-    &#x27;weights&#x27;: [[w1, w2, w3] for w1 in range(1, 5)
+    'weights': [[w1, w2, w3] for w1 in range(1, 5)
                 for w2 in range(1, 5)
                 for w3 in range(1, 5)]
 }
 
-grid = GridSearchCV(estimator=voting_clf, param_grid=params, cv=5, scoring=&#x27;accuracy&#x27;)
+grid = GridSearchCV(estimator=voting_clf, param_grid=params, cv=5, scoring='accuracy')
 grid.fit(X_train, y_train)
-print(&quot;Best Weights:&quot;, grid.best_params_[&#x27;weights&#x27;])
-print(&quot;Best Cross-Validated Accuracy:&quot;, grid.best_score_)
+print("Best Weights:", grid.best_params_['weights'])
+print("Best Cross-Validated Accuracy:", grid.best_score_)
 
 # 使用最佳权重重新构建 VotingClassifier，并评估测试集表现
 voting_clf_opt = VotingClassifier(estimators=[
-    (&#x27;lr&#x27;, clf1),
-    (&#x27;dt&#x27;, clf2),
-    (&#x27;knn&#x27;, clf3)
-], voting=&#x27;soft&#x27;, weights=grid.best_params_[&#x27;weights&#x27;])
+    ('lr', clf1),
+    ('dt', clf2),
+    ('knn', clf3)
+], voting='soft', weights=grid.best_params_['weights'])
 voting_clf_opt.fit(X_train, y_train)
-print(&quot;Optimized Voting Classifier Test Accuracy:&quot;, voting_clf_opt.score(X_test, y_test))
+print("Optimized Voting Classifier Test Accuracy:", voting_clf_opt.score(X_test, y_test))
 
 # 5. 可视化决策边界
 def plot_decision_boundary(clf, X, y, title):
@@ -204,33 +193,33 @@ def plot_decision_boundary(clf, X, y, title):
     Z = Z.reshape(xx.shape)
 
     # 颜色映射
-    cmap_light = ListedColormap([&#x27;#FFAAAA&#x27;, &#x27;#AAFFAA&#x27;, &#x27;#AAAAFF&#x27;])
-    cmap_bold = ListedColormap([&#x27;#FF0000&#x27;, &#x27;#00FF00&#x27;, &#x27;#0000FF&#x27;])
+    cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])
+    cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])
 
     plt.figure(figsize=(8, 6))
     plt.contourf(xx, yy, Z, alpha=0.3, cmap=cmap_light)
-    plt.scatter(X[:, 0], X[:, 1], c=y, s=40, edgecolor=&#x27;k&#x27;, cmap=cmap_bold)
-    plt.xlabel(&quot;Principal Component 1&quot;)
-    plt.ylabel(&quot;Principal Component 2&quot;)
+    plt.scatter(X[:, 0], X[:, 1], c=y, s=40, edgecolor='k', cmap=cmap_bold)
+    plt.xlabel("Principal Component 1")
+    plt.ylabel("Principal Component 2")
     plt.title(title)
     plt.show()
 
 # 可视化原始 VotingClassifier 的决策边界
-plot_decision_boundary(voting_clf, X_train, y_train, &quot;Decision Boundary of Voting Classifier&quot;)
+plot_decision_boundary(voting_clf, X_train, y_train, "Decision Boundary of Voting Classifier")
 
 # 可视化优化后 VotingClassifier 的决策边界
-plot_decision_boundary(voting_clf_opt, X_train, y_train, &quot;Decision Boundary of Optimized Voting Classifier&quot;)
+plot_decision_boundary(voting_clf_opt, X_train, y_train, "Decision Boundary of Optimized Voting Classifier")
 ```
 
-1.  **数据预处理**：利用 PCA 将原始 Iris 数据降至二维，便于可视化决策边界。划分训练集和测试集保证模型评估的可靠性。
+1.  **数据预处理**：利用 `PCA` 将原始 Iris 数据降至二维，便于可视化决策边界。划分训练集和测试集保证模型评估的可靠性。
 
 1.  **模型构建**：构造了三个基本分类器（逻辑回归、决策树和 KNN），并组合成 Voting Classifier。初始采用 soft voting 利用模型的概率信息。
 
 1.  **模型评估**：分别对单个模型和 Voting Classifier 进行交叉验证和测试集评估。通过交叉验证比较了各模型的表现，证明集成方法能提高准确性。
 
-1.  **超参数优化**：通过 GridSearchCV 对 Voting Classifier 的权重进行调优，从而优化集成模型的表现。通过调节不同的权重组合，找到最佳的模型融合方案。
+1.  **超参数优化**：通过 `GridSearchCV` 对 Voting Classifier 的权重进行调优，从而优化集成模型的表现。通过调节不同的权重组合，找到最佳的模型融合方案。
 
-1.  **可视化决策边界**：利用 matplotlib 显示了不同类别的分布和模型决策边界。
+1.  **可视化决策边界**：利用 `matplotlib` 显示了不同类别的分布和模型决策边界。
 
 ![](img/54e2fcf6694e49b1e50f7c972ab86497.png)
 
@@ -268,6 +257,6 @@ plot_decision_boundary(voting_clf_opt, X_train, y_train, &quot;Decision Boundary
 
 当我们拥有多个表现较为均衡且互补的模型时，投票法能通过简单多数决策实现鲁棒性提升，尤其在数据噪声较多或各模型误差不完全相关的场景下，投票法可以更好地平衡各模型的优劣，降低整体风险。此外，对于初学者和工程实现要求简单的场景，投票法更容易上手和调试。
 
-如果基模型之间存在较大偏差或需要对难以预测的样本进行重点处理时，Boosting 方法（如 AdaBoost 或 XGBoost）通常能更好地提升模型性能；而在需要大幅降低模型方差且基模型不稳定的情况下，Bagging（例如随机森林）可能更合适。
+如果基模型之间存在较大偏差或需要对难以预测的样本进行重点处理时，Boosting 方法（如 `AdaBoost` 或 `XGBoost`）通常能更好地提升模型性能；而在需要大幅降低模型方差且基模型不稳定的情况下，Bagging（例如随机森林）可能更合适。
 
 此外，在训练数据非常庞大或对实时性要求高的场景下，模型调参和训练时间也是重要考虑因素，可能需要选择计算复杂度更低或优化更好的算法。

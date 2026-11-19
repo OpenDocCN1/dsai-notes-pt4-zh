@@ -1,8 +1,9 @@
+
 # 《诡秘之主》拆书之爆文框架+Prompt(五万字)上
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/SyICdDHSVo2sGexY9E4ckaYHnsd](https://rq547mr4oez.feishu.cn/docx/SyICdDHSVo2sGexY9E4ckaYHnsd)
+> 来源：[`https://rq547mr4oez.feishu.cn/docx/SyICdDHSVo2sGexY9E4ckaYHnsd`](https://rq547mr4oez.feishu.cn/docx/SyICdDHSVo2sGexY9E4ckaYHnsd)
 
-# 前言
+## 前言
 
 ---
 
@@ -27,24 +28,6 @@
 ✅第二角度：蚂蚁视角🐜，开头分析为什么这样写。
 
 ☢️因为拆书工作量很大，大家多一键三联支持，先感谢🙏🙏🙏~
-
----
-
-# 第一角度：卷毛狒狒的上帝视角
-
-**目录：**
-
-![](img/dd166c296ced4e7c0b9e6512aa8236d8.png)
-
-我是分割线
-
----
-
-我是老杨，一个持续分享AI和写作干货的中年大叔。
-
-![](img/c9326b6ec734dbc1f2dfdf0438283f9c.png)
-
-我是分割线
 
 ---
 
@@ -138,7 +121,7 @@
 
 还有其他的种种
 
-这类设定其实你少写也不影响剧情，但写了，小**说给人的印象分**会获得提升，所以我管这种叫代入感式的设定。
+这类设定其实你少写也不影响剧情，但写了，小说给人的印象分会获得提升，所以我管这种叫代入感式的设定。
 
 #### **第二种：剧情驱动式**
 
@@ -195,8 +178,6 @@
 从正神到国家，再到各个教会和组织，平行之间有矛盾，上下又有联系，并且明显体现出了“上层意志辐射（影响）下层行动”的特征，整体可以说是通过设定织出了一张极其严密的“矛盾网”。
 
 而在这样的设定体系之下，**主角只要是踏入了非凡者领域，哪怕是最**底层，也要选择阵营，并面对该阵营的敌人。
-
-** **
 
 **对**于小说而言，这就相当于迅速确定了“反派”（本阵营敌人）和“目标”（击败对手+防止被对方击败等）。（韭菜Y日记）
 
@@ -302,7 +283,7 @@
 
 （韭菜Y日记）
 
-> 1、二十二条途径的内容根据[塔罗牌](https://www.zhihu.com/search?q=%E5%A1%94%E7%BD%97%E7%89%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)改编，这个很明显（对塔罗牌牌面的解读，比较公认的一种说法就是，一个愚者的旅程，从愚者开始，到世界结束，看书里的章节名感觉乌贼也借鉴了这个设定）
+> 1、二十二条途径的内容根据[塔罗牌](https://www.zhihu.com/search?q=%E5%A1%94%E7%BD%97%E8%91%A1%E7%89%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)改编，这个很明显（对塔罗牌牌面的解读，比较公认的一种说法就是，一个愚者的旅程，从愚者开始，到世界结束，看书里的章节名感觉乌贼也借鉴了这个设定）
 
 >
 
@@ -310,72 +291,41 @@
 
 > （韭菜Y日记）
 
-> 3、[克苏鲁神话](https://www.zhihu.com/search?q=%E5%85%8B%E8%8B%8F%E9%B2%81%E7%A5%9E%E8%AF%9D&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)中[的设定](https://www.zhihu.com/search?q=%E6%98%9F%E4%B9%8B%E5%8C%99&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)[，也很明](https://www.zhihu.com/search?q=%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)显，包括经典的不可直视神，不可逆的污染，也包括外神、旧[日等称呼，](https://www.zhihu.com/search?q=%E5%B0%A4%E6%A0%BC%E7%B4%A2%E6%89%98%E6%96%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)以[及书里提](https://www.zhihu.com/search?q=%E9%98%BF%E6%92%92%E6%89%98%E6%96%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)到过的群星归位之时、星之匙、泡泡、门等等，熟悉克苏鲁的可以在书里找到大量致敬的地方。诡秘之主里面的三支柱就是把克系的三支柱能力排列组合混搭后的产物，堕落母神部分对应莎布尼古拉斯，上帝对应尤格索托斯的全知全视并升级为全知全能。诡秘之主所在的苟三家是混搭得最散的，尤格索托斯掌控时间空间+奈亚拉托提普千面之神和欺骗之神+阿撒托斯的盲目痴愚
 
->
+
+> 3、[克苏鲁神话](https://www.zhihu.com/search?q=%E5%85%8B%E8%8B%8F%E9%B2%81%E7%A5%9E%E8%AF%9D&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)中[的设定](https://www.zhihu.com/search?q=%E6%98%9F%E4%B9%8B%E5%8C%99&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)[，也很明](https://www.zhihu.com/search?q=%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)显，包括经典的不可直视神，不可逆的污染，也包括外神、旧[日等称呼，](https://www.zhihu.com/search?q=%E5%B0%A4%E6%A0%BC%E7%B4%A2%E6%89%98%E6%96%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)以[及书里提](https://www.zhihu.com/search?q=%E9%98%BF%E6%92%92%E6%89%98%E6%96%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)到过的群星归位之时、星之匙、泡泡、门等等，熟悉克苏鲁的可以在书里找到大量致敬的地方。诡秘之主里面的三支柱就是把克系的三支柱能力排列组合混搭后的产物，堕落母神部分对应莎布尼古拉斯，上帝对应尤格索托斯的全知全视并升级为全知全能。诡秘之主所在的苟三家是混搭得最散的，尤格索托斯掌控时间空间+奈亚拉托提普千面之神和欺骗之神+阿撒托斯的盲目痴愚
 
 > 4、参考了以基督教神话为主的各种神话体系，这一条感觉和第2条重复了，但主（韭菜Y日记）[ 要是书里](https://www.zhihu.com/search?q=%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)神之途径这个设定过于重要，就单独说了。按书里的说法就是，远古太阳神是从切尔诺贝利走出的旧文明幸存者，很可能是东正教的毛子，再加上全五家确实很像基督教的上帝，所以照搬了基督教的一些设定来发展自己的信仰
 
->
-
 > 5、主角所处背景参考[维多利亚时代](https://www.zhihu.com/search?q=%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E4%BB%A3&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)，比如1英镑等于20先令，1先令等于12便士这种古怪的兑换比率；谷物法案相关的一系列事件；各种物价以及人民收入；尤其是大雾霾事件，相当于明说了贝克兰德就是伦敦。
-
->
 
 > 6、[赫密斯学派](https://www.zhihu.com/search?q=%E8%B5%AB%E5%AF%86%E6%96%AF%E5%AD%A6%E6%B4%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)，作为现实世界中真实存在的一个学派，主要的思想是人类要回归神性。（韭菜Y日记） 另外这个学派好像还是天启宗教们钦定所谓邪恶之邪恶，异端之异端（恰好对应他们的伟大之伟大，智慧之智慧）。
 
->
-
 > 7、要素黎明参考了[黄金黎明](https://www.zhihu.com/search?q=%E9%BB%84%E9%87%91%E9%BB%8E%E6%98%8E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)[赫密](https://www.zhihu.com/search?q=%E9%9F%A6%E7%89%B9&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)斯学派，而现在最流行的这个版本的塔罗牌，创作者韦特刚好出身于黄金黎明赫密斯学派。
 
->
-
-> 8、灵界七光的原型是现实中的“[神智学](https://www.zhihu.com/search?q=%E7%A5%9E%E6%99%BA%E5%AD%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)”这[一神秘](https://www.zhihu.com/search?q=%E6%B5%B7%E4%BC%A6%E5%A8%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)学组织，所推崇的神秘学理念，七种对应着不同的领域的灵光，象征着神流溢在凡世间的美德与奇迹（也是因为这个，书里的七光设定上对人类友好）。创始人布拉瓦茨基夫人，就是fgo里的海伦娜
-
->
+> 8、灵界七光的原型是现实中的“神智学”这一神秘学组织，所推崇的神秘学理念，七种对应着不同的领域的灵光，象征着神流溢在凡世间的美德与奇迹（也是因为这个，书里的七光设定上对人类友好）。创始人布拉瓦茨基夫人，就是fgo里的海伦娜
 
 > 9、心智体，星灵体，[以太体](https://www.zhihu.com/search?q=%E4%BB%A5%E5%A4%AA%E4%BD%93&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)以及灵界、灵性这些概念都是现实中的神秘学经典概念
 
->
-
 > 10、书里观众途径对应的[集体潜意识](https://www.zhihu.com/search?q=%E9%9B%86%E4%BD%93%E6%BD%9C%E6%84%8F%E8%AF%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)[大海](https://www.zhihu.com/search?q=%E8%8D%A3%E6%A0%BC&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)这个概念现实中也是有相关理论的，提出者是心理学家荣格。
-
->
 
 > 11、主角经常占卜，而书里涉及的一些占卜知识也是现实中比较经典的，如灵数，星象，塔罗，仪式魔法，卡巴拉，卜杖等等。当然要说最经典的还要属抛硬币。
 
->
-
 > 12[、书里](https://www.zhihu.com/search?q=%E5%A4%A7%E9%83%A8%E5%A4%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)的仪式魔法主要借鉴了现实中的仪式魔法，主要是《威卡（韭菜Y日记） 魔法《力量之环》这两本流传较广的现代魔法书。而且这两本魔法书有中文翻译，写西幻题材的作者如果不想啃英文大部头的话可以从这两本里找灵感。
 
->
-
 > 13、封印物的不少设定借鉴了scp基金会，scp相关的设定出过一些游戏，知道的人不少，比如那个眨眼就冲过来拧你脖子的羊驼
-
 > （韭菜Y日记）
 
 > 14、还是上面提到的心理学家荣格（曾任国际心理分析学[会会长、国际心理治](https://www.zhihu.com/search?q=%E3%80%8A%E5%BF%83%E7%90%86%E5%AD%A6%E4%B8%8E%E7%82%BC%E9%87%91%E6%9C%AF%E3%80%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)疗协会主席），有本书叫《心理学与炼金术》，应该是书里心理炼金学会这个组织的理论原型。
 
->
-
 > 15、不少设定以及人物参考了[血源诅咒](https://www.zhihu.com/search?q=%E8%A1%80%E6%BA%90%E8%AF%85%E5%92%92&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)[，比如第一猎](https://www.zhihu.com/search?q=%E3%80%8A%E8%A1%80%E6%BA%90%E8%AF%85%E5%92%92%E3%80%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)人格尔曼等。另外强推《血源诅咒》，如果你是魂系爱好者或者克系爱好者，可以试试。
-
->
 
 > 16、[道恩·唐泰斯](https://www.zhihu.com/search?q=%E9%81%93%E6%81%A9%C2%B7%E5%94%90%E6%B3%B0%E6%96%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)[，这个也很明显](https://www.zhihu.com/search?q=%E7%88%B1%E5%BE%B7%E8%92%99%C2%B7%E5%94%90%E6%B3%B0%E6%96%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)，借鉴的基督山伯爵的主角爱德蒙·唐泰斯，基督山伯爵这本书对现代爽文的影响非常大，不少现在网文用滥了的套路都是出自这本书。
 
->
-
 > 17、战士的序列4猎魔人的能力特点参考了巫师3的猎魔人
 
->
-
 > 18、大侦探[夏洛特·莫里亚蒂](https://www.zhihu.com/search?q=%E5%A4%8F%E6%B4%9B%E7%89%B9%C2%B7%E8%8E%AB%E9%87%8C%E4%BA%9A%E8%92%82&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)，也是经典致敬
-
->
 
 > [19、关](https://www.zhihu.com/search?q=%E4%B8%8A%E5%8F%A4%E5%8D%B7%E8%BD%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A2689891662%7D)于扮演法借鉴的原型，个人倾向于上古卷轴里面的（韭菜Y日记） 披甲，这两个真的是太像了
 
 ---
-
-END

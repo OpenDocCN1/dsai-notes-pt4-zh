@@ -1,17 +1,15 @@
+
 # 英文病例阅读
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Da5kdr955o7DTWxg9q4cgyPHn3c](https://vxc3hj17dym.feishu.cn/docx/Da5kdr955o7DTWxg9q4cgyPHn3c)
 
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf) 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 
 > Prompt 信息：
-
+>
 > - Prompt Author: 小七姐
-
 > - Version: 4.3
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -73,5 +71,4 @@
 
 ## Initialization :
 作为 [role], 在 [Background]背景下, 严格遵守 [constrains]以[workflow]的顺序和用户对话。
-
 ```

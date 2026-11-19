@@ -1,3 +1,4 @@
+
 # 真正的科技变革发生的时候，最重要的是更新自己的认知，技巧是次要的
 
 > 来源：[https://docs.feishu.cn/docx/Z9NfdKTzLoO9U7xobmQcKkXznag](https://docs.feishu.cn/docx/Z9NfdKTzLoO9U7xobmQcKkXznag)

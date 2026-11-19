@@ -1,3 +1,4 @@
+
 # 优秀项目证书制作
 
 > 来源：[https://aicarrier.feishu.cn/docx/SKl8d0ng5oVIRqxy74FcApshnkV](https://aicarrier.feishu.cn/docx/SKl8d0ng5oVIRqxy74FcApshnkV)
@@ -6,7 +7,7 @@
 
 信息请和问卷中保持一致，如更新请问卷也更新一份：
 
-https://aicarrier.feishu.cn/share/base/form/shrcnZAhJeT6PYxhkvRxCnPljkf
+`https://aicarrier.feishu.cn/share/base/form/shrcnZAhJeT6PYxhkvRxCnPljkf`
 
 | 项目 ID | 项目名称 | 团队成员 | 证书类型（优秀项目/人气项目） | 证书领取 |
 | --- | --- | --- | --- | --- |
@@ -24,7 +25,7 @@ https://aicarrier.feishu.cn/share/base/form/shrcnZAhJeT6PYxhkvRxCnPljkf
 |  |  |  |  |  |
 |  |  |  |  |  |
 
-**案例链接：**https://internlm.intern-ai.org.cn/certificate/InternCampHP2451
+**案例链接：** `https://internlm.intern-ai.org.cn/certificate/InternCampHP2451`
 
 ![](img/2adc8949d3ab80b9d1848700c50da7ce.png)
 

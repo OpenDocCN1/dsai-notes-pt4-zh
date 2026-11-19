@@ -1,18 +1,19 @@
+
 # LlamaIndex重大发布：让你在任何LLM-Powered的 ETL、RAG 、agent管道中获得结构化抽取能力
 
 > 来源：[https://agijuejin.feishu.cn/docx/XnmDd3J9aoRGaYxRttHccagQn5e](https://agijuejin.feishu.cn/docx/XnmDd3J9aoRGaYxRttHccagQn5e)
-
+>
 > 作者：lucas大叔
+>
+> 原文：[https://zhuanlan.zhihu.com/p/710855495](https://zhuanlan.zhihu.com/p/710855495)
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/710855495)hihu.com/p/710855...
+只需定义 `Pydantic` 对象，将其[附加到 LLM](https://www.zhihu.com/search?q=%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)（`as_structured_llm(...)`），就能使你通过块级 RAG 或文档级 RAG 进行结构化抽取，支持异步和 流式输出 。
 
-只需定义 Pydantic 对象，将其[附加到 L](https://www.zhihu.com/search?q=%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)LM（ as_structured_llm(...) ），就能使你通过块级 RAG 或文档级 RAG 进行结构化抽取，支持异步和 流式输出 。
-
-下面让我们一起来探索llamaindex这项全新能力。
+下面让我们一起来探索 `llamaindex` 这项全新能力。
 
 ## 环境设置
 
-这里演示使用的是gpt，也可以通过HuggingFaceLLM加载本地模型。
+这里演示使用的是 `gpt`，也可以通过 `HuggingFaceLLM` 加载本地模型。
 
 ```
 import nest_asyncio
@@ -23,17 +24,17 @@ from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core import Settings
 
-llm = OpenAI(model=&quot;gpt-4o&quot;)
-embed_model = OpenAIEmbedding(model=&quot;text-embedding-3-small&quot;)
+llm = OpenAI(model="gpt-4o")
+embed_model = OpenAIEmbedding(model="text-embedding-3-small")
 Settings.llm = llm
 Settings.embed_model = embed_model
 ```
 
 ## 简单结构化抽取
 
-你可以通过 as_structured_[llm ](https://www.zhihu.com/search?q=%E7%BB%93%E6%9E%84%E5%8C%96&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)将任何 LLM 转换为“ 结构化 LLM”，方法是为其附加一个输出类。
+你可以通过 `as_structured_llm` 将任何 LLM 转换为“结构化 LLM”，方法是为其附加一个输出类。
 
-本示例中，传递一个简单的 Album 类，其中包含歌曲列表。然后，我们可以使用像 chat/complete 这样的常规 LLM 端点。
+本示例中，传递一个简单的 `Album` 类，其中包含歌曲列表。然后，我们可以使用像 `chat/complete` 这样的常规 LLM 端点。
 
 ```
 from typing import List
@@ -41,14 +42,14 @@ from pydantic.v1 import BaseModel, Field
 
 
 class Song(BaseModel):
-    &quot;&quot;&quot;Data model for a song.&quot;&quot;&quot;
+    """Data model for a song."""
 
     title: str
     length_seconds: int
 
 
 class Album(BaseModel):
-    &quot;&quot;&quot;Data model for an album.&quot;&quot;&quot;
+    """Data model for an album."""
 
     name: str
     artist: str
@@ -58,7 +59,7 @@ class Album(BaseModel):
 from llama_index.core.llms import ChatMessage
 
 sllm = llm.as_structured_llm(output_cls=Album)
-input_msg = ChatMessage.from_str(&quot;Generate an example album from The Shining&quot;)
+input_msg = ChatMessage.from_str("Generate an example album from The Shining")
 ```
 
 ### sync
@@ -77,7 +78,7 @@ print(str(output))
 print(output_obj)
 ```
 
-> name='The Shining: Original Soundtrack' artist='Various Artists' songs=[Song[(title='Main](https://www.zhihu.com/search?q=seconds%3D210&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D) Title', length_seconds=180), Song(title='Rocky Mountains', length_ seconds=210 ), Song(title='Lontano', length_seconds=720 ), Song(title='Music for Strings, Percussion and Celesta', length_seconds=540 ), Song(title='Utrenja (Excerpt)', length_seconds=300 ), Song(title='The Awakening of Jacob', length_seconds=480 ), Song(title='De Natura Sonoris No. 2', length_seconds=540), Song(title='Home', length_seconds=180 ), Song(title='Midnight, the Stars and You', length_seconds=180), Song(title="It's All Forgotten Now", length_seconds=150), Song(title='Masquerade', length_seconds=180)]
+> name='The Shining: Original Soundtrack' artist='Various Artists' songs=[Song(title='Main Title', length_seconds=180), Song(title='Rocky Mountains', length_seconds=210), Song(title='Lontano', length_seconds=720), Song(title='Music for Strings, Percussion and Celesta', length_seconds=540), Song(title='Utrenja (Excerpt)', length_seconds=300), Song(title='The Awakening of Jacob', length_seconds=480), Song(title='De Natura Sonoris No. 2', length_seconds=540), Song(title='Home', length_seconds=180), Song(title='Midnight, the Stars and You', length_seconds=180), Song(title="It's All Forgotten Now", length_seconds=150), Song(title='Masquerade', length_seconds=180)]
 
 ### async
 
@@ -113,7 +114,7 @@ print(str(output))
 
 > {'length_seconds': 210, 'title': 'Rocky Mountains'},
 
-> {'length_seconds': 240, 'title': 'Lontano'},
+> {'length_seconds': 720, 'title': 'Lontano'},
 
 > {'length_seconds': 540,
 
@@ -177,7 +178,7 @@ async for partial_output in stream_output:
 
 ### 使用查询管道的示例
 
-你可以在查询管道中插入结构化的LLM - 输出将直接是结构化对象。
+你可以在查询管道中插入结构化的 LLM - 输出将直接是结构化对象。
 
 ```
 # use query pipelines
@@ -188,21 +189,23 @@ from llama_index.core.llms import ChatMessage
 chat_prompt_tmpl = ChatPromptTemplate(
     message_templates=[
         ChatMessage.from_str(
-            &quot;Generate an example album from {movie_name}&quot;, role=&quot;user&quot;
+            "Generate an example album from {movie_name}", role="user"
         )
     ]
 )
 
 qp = QP(chain=[chat_prompt_tmpl, sllm])
-response = qp.run(movie_name=&quot;Inside Out&quot;)
+response = qp.run(movie_name="Inside Out")
 response
 ```
 
-> Album(name='Inside Out Soundtrack', artist='Various Artists', songs=[Song(title='Bundle of Joy', length_seconds=150), Song(title='Team Building', length_seconds=120 ), Song(title='Nomanisone Island/National Movers', length_seconds=180), Song(title='Overcoming Sadness', length_seconds=210), Song(title='Free Skating', length_seconds=160), Song(title='First Day of School', length_seconds=140), Song(title='Riled Up', length_seconds=130), Song(title='Goofball No Longer', length_seconds=170), Song(title='Memory Lanes', length_seconds=200), Song(title='The Forgetters', length_seconds=110)])
 
-### 使用 structured_predict 函数
 
-与其明确地执行 llm.as_structured_llm(...) ，每个 LLM 类都有 structured_predict 函数，该函数允许你更方便地使用提示模板 + 模板变量调用 LLM，以便在一行代码中返回结构化输出。
+> `Album`(name='Inside Out Soundtrack', artist='Various Artists', songs=[`Song`(title='Bundle of Joy', length_seconds=150), `Song`(title='Team Building', length_seconds=120), `Song`(title='Nomanisone Island/National Movers', length_seconds=180), `Song`(title='Overcoming Sadness', length_seconds=210), `Song`(title='Free Skating', length_seconds=160), `Song`(title='First Day of School', length_seconds=140), `Song`(title='Riled Up', length_seconds=130), `Song`(title='Goofball No Longer', length_seconds=170), `Song`(title='Memory Lanes', length_seconds=200), `Song`(title='The Forgetters', length_seconds=110)])
+
+# 使用 `structured_predict` 函数
+
+与其明确地执行 `llm.as_structured_llm(...)` ，每个 LLM 类都有 `structured_predict` 函数，该函数允许你更方便地使用提示模板 + 模板变量调用 LLM，以便在一行代码中返回结构化输出。
 
 ```
 # use query pipelines
@@ -213,47 +216,47 @@ from llama_index.llms.openai import OpenAI
 chat_prompt_tmpl = ChatPromptTemplate(
     message_templates=[
         ChatMessage.from_str(
-            &quot;Generate an example album from {movie_name}&quot;, role=&quot;user&quot;
+            "Generate an example album from {movie_name}", role="user"
         )
     ]
 )
 
-llm = OpenAI(model=&quot;gpt-4o&quot;)
+llm = OpenAI(model="gpt-4o")
 album = llm.structured_predict(
-    Album, chat_prompt_tmpl, movie_name=&quot;Lord of the Rings&quot;
+    Album, chat_prompt_tmpl, movie_name="Lord of the Rings"
 )
 album
 ```
 
-> Album(name='Songs of Middle-earth', artist='Various Artists', songs=[Song(title='The Shire', length_seconds=180), Song(title='The Fellowship', length_seconds=240), Song(title="Gollum's Theme", length_seconds=200 ), Song(title="Rohan's Call", length_seconds=220), Song(title="The Battle of Helm's Deep", length_seconds=300), Song(title='Lothlórien', length_seconds=210), Song(title='The Return of the King', length_seconds=250), Song(title='Into the West', length_seconds=260)])
+> `Album`(name='Songs of Middle-earth', artist='Various Artists', songs=[`Song`(title='The Shire', length_seconds=180), `Song`(title='The Fellowship', length_seconds=240), `Song`(title="Gollum's Theme", length_seconds=200), `Song`(title="Rohan's Call", length_seconds=220), `Song`(title="The Battle of Helm's Deep", length_seconds=300), `Song`(title='Lothlórien', length_seconds=210), `Song`(title='The Return of the King', length_seconds=250), `Song`(title='Into the West', length_seconds=260)])
 
 ## 接入 RAG 管道
 
-你也可以将其插入到 RAG 管道中。下面我们展示从Apple 10K 报告中进行结构化抽取。
+你也可以将其插入到 RAG 管道中。下面我们展示从 Apple 10K 报告中进行结构化抽取。
 
 ```
 !mkdir data
-!wget &quot;https://s2.q4cdn.com/470004039/files/doc_financials/2021/q4/_10-K-2021-(As-Filed).pdf&quot; -O data/apple_2021_10k.pdf
+!wget "https://s2.q4cdn.com/470004039/files/doc_financials/2021/q4/_10-K-2021-(As-Filed).pdf" -O data/apple_2021_10k.pdf
 ```
 
-### 选项 1：使用 LlamaParse
+### 选项 1：使用 `LlamaParse`
 
-你需要在 https:// cloud.llamaindex.ai/  拥有账户以及 API 密钥才能使用 LlamaParse，这是我们用于 10K 文件的文档解析器。
+你需要在 https://cloud.llamaindex.ai/ 拥有账户以及 API 密钥才能使用 `LlamaParse`，这是我们用于 10K 文件的文档解析器。
 
 ```
 from llama_parse import LlamaParse
 
-# os.environ[&quot;LLAMA_CLOUD_API_KEY&quot;] = &quot;llx-...&quot;
-orig_docs = LlamaParse(result_type=&quot;text&quot;).load_data(
-    &quot;./data/apple_2021_10k.pdf&quot;
+# os.environ["LLAMA_CLOUD_API_KEY"] = "llx-..."
+orig_docs = LlamaParse(result_type="text").load_data(
+    "./data/apple_2021_10k.pdf"
 )
 
 from copy import deepcopy
 from llama_index.core.schema import TextNode
 
 
-def get_page_nodes(docs, separator=&quot;\n---\n&quot;):
-    &quot;&quot;&quot;Split each document into page node, by separator.&quot;&quot;&quot;
+def get_page_nodes(docs, separator="\n---\n"):
+    """Split each document into page node, by separator."""
     nodes = []
     for doc in docs:
         doc_chunks = doc.text.split(separator)
@@ -271,30 +274,30 @@ docs = get_page_nodes(orig_docs)
 print(docs[0].get_content())
 ```
 
-### 选项 2：使用 SimpleDirectoryReader
+### 选项 2：使用 `SimpleDirectoryReader`
 
-你也可以选择使用捆绑到SimpleDirectoryReader的免费PDF解析器。
+你也可以选择使用捆绑到 `SimpleDirectoryReader` 的免费 PDF 解析器。
 
 ```
 # # OPTION 2: Use SimpleDirectoryReader
 # from llama_index.core import SimpleDirectoryReader
 
-# reader = SimpleDirectoryReader(input_files=[&quot;apple_2021_10k.pdf&quot;])
+# reader = SimpleDirectoryReader(input_files=["apple_2021_10k.pdf"])
 # docs = reader.load_data()
 ```
 
-### 构建 RAG 管道，定义结构化输出schema
+### 构建 RAG 管道，定义结构化输出 `schema`
 
-我们使用可靠的 VectorStoreIndex 和 reranker 模块构建了 RAG 管道。然后，将输出定义为 Pydantic 模型。这使我们能够创建带有附加输出类的结构化 LLM。
+我们使用可靠的 `VectorStoreIndex` 和 `reranker` 模块构建了 RAG 管道。然后，将输出定义为 `Pydantic` 模型。这使我们能够创建带有附加输出类的结构化 LLM。
 
 ```
 from llama_index.core import VectorStoreIndex
 
-# skip chunking since we&#x27;re doing page-level chunking
+# skip chunking since we're doing page-level chunking
 index = VectorStoreIndex(docs)
 ```
 
-加载reranker
+加载 `reranker`
 
 ```
 from llama_index.postprocessor.flag_embedding_reranker import (
@@ -303,31 +306,31 @@ from llama_index.postprocessor.flag_embedding_reranker import (
 
 reranker = FlagEmbeddingReranker(
     top_n=5,
-    model=&quot;BAAI/bge-reranker-large&quot;,
+    model="BAAI/bge-reranker-large",
 )
 ```
 
-定义输出schema，附加到LLM
+定义输出 `schema`，附加到 LLM
 
 ```
-fro[m pydantic](https://www.zhihu.com/search?q=irrelevant&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D).v1 import BaseModel, Field
+from pydantic.v1 import BaseModel, Field
 from typing import List
 
 
 class Output(BaseModel):
-    &quot;&quot;&quot;Output containing the response, page numbers, and confidence.&quot;&quot;&quot;
+    """Output containing the response, page numbers, and confidence."""
 
-    response: str = Field(..., description=&quot;The answer to the question.&quot;)
+    response: str = Field(..., description="The answer to the question.")
     page_numbers: List[int] = Field(
         ...,
-        description=&quot;The page numbers of the sources used to answer this question. Do not include a page number if the context is irrelevant.&quot;,
+        description="The page numbers of the sources used to answer this question. Do not include a page number if the context is irrelevant.",
     )
     confidence: float = Field(
         ...,
-        description=&quot;Confidence value between 0-1 of the correctness of the result.&quot;,
+        description="Confidence value between 0-1 of the correctness of the result.",
     )
     confidence_explanation: str = Field(
-        ..., description=&quot;Explanation for the confidence score&quot;
+        ..., description="Explanation for the confidence score"
     )
 
 
@@ -337,14 +340,14 @@ sllm = llm.as_structured_llm(output_cls=Output)
 ### 运行查询
 
 ```
-[query_engine](https://www.zhihu.com/search?q=query_engine&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)[ = index.as_qu](https://www.zhihu.com/search?q=tree_summarize&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)ery_engine(
+query_engine = index.as_query_engine(
     similarity_top_k=5,
     node_postprocessors=[reranker],
     llm=sllm,
-    response_mode=&quot;tree_summarize&quot;,  # you can also select other modes like `compact`, `refine`
+    response_mode="tree_summarize",  # you can also select other modes like `compact`, `refine`
 )
 
-response = query_engine.query(&quot;Net sales for each product category in 2021&quot;)
+response = query_engine.query("Net sales for each product category in 2021")
 print(str(response))
 ```
 
@@ -354,14 +357,14 @@ print(str(response))
 response.response.dict()
 ```
 
-> {'r[esponse'](https://www.zhihu.com/search?q=million&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)[: 'In 20](https://www.zhihu.com/search?q=figures&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)[21, the n](https://www.zhihu.com/search?q=provided&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A710855495%7D)et sales for each product category were as follows: iPhone: $191,973 million, Mac: $35,190 million, iPad: $31,862 million , Wearables, Home and Accessories: $38,367 million, and Services: $68,425 million.',
-
+> {'response': 'In 2021, the net sales for each product category were as follows: iPhone: $191,973 million, Mac: $35,190 million, iPad: $31,862 million, Wearables, Home and Accessories: $38,367 million, and Services: $68,425 million.',
+>
 > 'page_numbers': [21],
-
+>
 > 'confidence': 1.0,
-
+>
 > 'confidence_explanation': 'The figures are directly taken from the provided data, ensuring high accuracy.'}
 
 ## 参考文档
 
-[https:// github.com/run-llama/ll ama_index/blob/main/doc](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama_index/blob/main/docs/docs/examples/structured_outputs/structured_outputs.ipynb)s/docs/examples/structured_outputs/structured_outputs.ipynb
+[https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/structured_outputs/structured_outputs.ipynb](https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/structured_outputs/structured_outputs.ipynb)

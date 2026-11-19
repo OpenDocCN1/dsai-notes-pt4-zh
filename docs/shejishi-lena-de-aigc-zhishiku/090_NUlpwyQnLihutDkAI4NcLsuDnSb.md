@@ -1,8 +1,9 @@
+
 # 数字人 HeyGen
 
 > 来源：[https://aigclena.feishu.cn/docx/BSoWdauDVoSgc7xDyepcDT8gnGf](https://aigclena.feishu.cn/docx/BSoWdauDVoSgc7xDyepcDT8gnGf)
 
-# 视频本地化
+## 视频本地化
 
 2025.11.6
 
@@ -10,10 +11,9 @@ heygen全球视频本地化工具支持 170+ 语言
 
 heygen新推出的视频本地化工具可将任何视频翻译成 170 多种语言，提供人类级口型同步、视觉感知翻译、音频优化，并智能匹配多说话人和性别。用户可通过上传视频或 YouTube 链接快速实现全球化分发，目前已支持 iOS，Web 与 API 版本即将上线
 
-
 [SaveTwitter.Net_UfInqgNulRk0xB4Z_(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MDbobZL0Eoiyt5xA42ZcZH3anLf)
 
-# UGC广告
+## UGC广告
 
 HeyGen推出产品植入功能，轻松生成超真实UGC广告
 
@@ -25,7 +25,7 @@ HeyGen全新上线产品植入功能，用户只需上传产品照片、选择�
 
 [dc9e686a15e2455607ad1d6ce8ff0444.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qha4byHceoPP9RxJevOc8VYKnOb)
 
-# HeyGen 0227更新
+## HeyGen 0227更新
 
 heygen新功能上线：用文本提示词生成专属声音
 
@@ -35,9 +35,9 @@ HeyGen 携手 @elevenlabsio，现在你只需输入提示词，就能生成与�
 
 [X2Twitter.com_KlGToO7bEs3Sr0zT_540p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KPKFb9hmno9VW2xS7EfcIeuanXd)
 
-=================================================年份分隔线 2025↑  2024↓
+> 年份分隔线 2025↑ 2024↓
 
-# HeyGen 1118更新
+## HeyGen 1118更新
 
 推出全新 AI 视频创作功能
 
@@ -45,17 +45,16 @@ HeyGen 发布多项重磅更新，包括通过文本提示生成个性化视频�
 
 更多：https://www.heygen.com/article/whats-new-in-heygen-november-2024-highlights
 
-
 [X2Twitter.com_cTOpnkUNeG8O7Mo1_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5zabyCabos7RfxaI8McLmthnCb)
 
-# heygen更新1008
+## heygen更新1008
 
 ![](img/64e12cae7f1bc81b7e8c5741c05c90b2.png)
 
 [X2Twitter.com_wk1o4FW_c4kmp0pb_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NEpnb3DUoo3Wqpx4CCOc7P4Vn5g)
 
-### 联系我们
+## 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/f41037ab2677e758ef3faa6d3518443d.png)

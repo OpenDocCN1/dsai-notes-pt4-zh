@@ -1,3 +1,4 @@
+
 # 18-LLMs微调
 
 > 来源：[https://aigcreative.feishu.cn/docx/ZLATdeaiIoj7qIxW28Gctj8ynxh](https://aigcreative.feishu.cn/docx/ZLATdeaiIoj7qIxW28Gctj8ynxh)
@@ -14,22 +15,26 @@ In today's lesson, we discuss a third technique, fine-tuning, which tries to add
 
 This lesson introduces the concept of fine-tuning for pre-trained language models, explores the benefits and challenges of this approach, and provides guidance on when and how to use fine tuning to improve the performance of your generative AI models.
 
-本 节 课 介绍 预 训练 语言 模型 的 微调 概念， 探讨 了 此 方法 的 优点 和 挑战， 并 提供 了 指导 ， 并 指导 了 何时 以及 如何 使用 微调 来 提高 生成 AI 模型 的 性能。
+本节课介绍预训练语言模型的微调概念，探讨了此方法的优点和挑战，并提供了指导，并指导了何时以及如何使用微调来提高生成式 AI 模型的性能。
 
 By the end of this lesson, you should be able to answer the following questions:
 
 在本课结束时，您应该能够回答以下问题：
 
-+   What is fine tuning for language models?
++ What is fine tuning for language models?
+
 什么是语言模型的微调？
 
-+   When, and why, is fine tuning useful?
++ When, and why, is fine tuning useful?
+
 微调何时以及为什么有用？
 
-+   How can I fine-tune a pre-trained model?
++ How can I fine-tune a pre-trained model?
+
 如何微调预训练模型？
 
-+   What are the limitations of fine-tuning?
++ What are the limitations of fine-tuning?
+
 微调的局限性是什么？
 
 Ready? Let's get started.
@@ -38,13 +43,13 @@ Ready? Let's get started.
 
 ## Illustrated Guide 图解指南
 
-Want to ge[t the big](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/RESOURCES?wt.mc_id=academic-105485-koreyst) picture of what we'll cover before we dive in? Check out this illustrated guide that describes the learning journey for this lesson - from learning the core concepts and motivation for fine-tuning, to understanding the process and best practices for executing the fine-tuning task. This is a fascinating topic for exploration, so don't forget to check out the Resources page for additional links to support your self-guided learning journey!
+Want to [get the big picture](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/RESOURCES?wt.mc_id=academic-105485-koreyst) of what we'll cover before we dive in? Check out this illustrated guide that describes the learning journey for this lesson - from learning the core concepts and motivation for fine-tuning, to understanding the process and best practices for executing the fine-tuning task. This is a fascinating topic for exploration, so don't forget to check out the Resources page for additional links to support your self-guided learning journey!
 
 想在深入研究之前了解我们将要涵盖的内容吗？查看此图文并茂的指南，其中描述了本课的学习旅程 - 从学习微调的核心概念和动机，到了解执行微调任务的过程和最佳实践。这是一个引人入胜的探索主题，所以不要忘记查看资源页面以获取更多链接，以支持您的自主学习之旅！
 
 ![](img/a32b4529a4beb1b51cf040cf4ace8ff1.png)
 
-## [What is fine-tuning ](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=what-is-fine-tuning-for-language-models)[for languag](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=what-is-fine-tuning-for-language-models)e models? 什么是语言模型的微调？
+## [What is fine-tuning for language models?](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=what-is-fine-tuning-for-language-models) 什么是语言模型的微调？
 
 By definition, large language models are pre-trained on large quantities of text sourced from diverse sources including the internet. As we've learned in previous lessons, we need techniques like prompt engineering and retrieval-augmented generation to improve the quality of the model's responses to the user's questions ("prompts").
 
@@ -54,17 +59,19 @@ A popular prompt-engineering technique involves giving the model more guidance o
 
 一种流行的提示工程技术涉及通过提供指令（显式指导）或提供一些示例（隐式指导）来为模型提供更多关于响应中预期内容的指导。这被称为小样本学习，但它有两个限制：
 
-+   Model token limits can restrict the number of examples you can give, and limit the effectiveness.
++ Model token limits can restrict the number of examples you can give, and limit the effectiveness.
+
 模型令牌限制可能会限制您可以提供的示例数量，并限制有效性。
 
-+   Model token costs can make it expensive to add examples to every prompt, and limit flexibility.
++ Model token costs can make it expensive to add examples to every prompt, and limit flexibility.
+
 模型令牌成本可能会使向每个提示添加示例的成本高昂，并限制灵活性。
 
 Fine-tuning is a common practice in machine learning systems where we take a pre-trained model and retrain it with new data to improve its performance on a specific task. In the context of language models, we can fine-tune the pre-trained model with a curated set of examples for a given task or application domain to create a custom model that may be more accurate and relevant for that specific task or domain. A side-benefit of fine-tuning is that it can also reduce the number of examples needed for few-shot learning - reducing token usage and related costs.
 
 微调是机器学习系统中的一种常见做法，我们采用预先训练的模型，并使用新数据重新训练它，以提高其在特定任务上的性能。在语言模型的上下文中，我们可以使用一组针对给定任务或应用程序域的精选示例来微调预训练模型，以创建可能更准确且与该特定任务或域相关的自定义模型。微调的一个附带好处是，它还可以减少小样本学习所需的样本数量，从而减少令牌使用和相关成本。
 
-## [When and why should ](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=when-and-why-should-we-fine-tune-models)we fine-tune models? 我们应该何时以及为何对模型进行微调？
+## [When and why should we fine-tune models?](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=when-and-why-should-we-fine-tune-models) 我们应该何时以及为何对模型进行微调？
 
 In this context, when we talk about fine-tuning, we are referring to supervised fine-tuning where the retraining is done by adding new data that was not part of the original training dataset. This is different from an unsupervised fine-tuning approach where the model is retrained on the original data, but with different hyperparameters.
 
@@ -78,43 +85,56 @@ So, before you learn "how" to fine-tune language models, you need to know "why" 
 
 因此，在你学习“如何”微调语言模型之前，你需要知道“为什么”你应该走这条路，以及“何时”开始微调过程。首先问自己以下问题：
 
-+   Use Case: What is your use case for fine-tuning? What aspect of the current pre-trained model do you want to improve upon?
++ Use Case: What is your use case for fine-tuning? What aspect of the current pre-trained model do you want to improve upon?
+
 用例：您的微调用例是什么？您希望在当前预训练模型的哪个方面进行改进？
 
-+   Alternatives: Have you tried other techniques to achieve the desired outcomes? Use them to create a baseline for comparison.
++ Alternatives: Have you tried other techniques to achieve the desired outcomes? Use them to create a baseline for comparison.
+
 替代方案：您是否尝试过其他技术来达到预期的结果？使用它们来创建用于比较的基线。
 
-+   Prompt engineering: Try techniques like few-shot prompting with examples of relevant prompt responses. Evaluate the quality of responses.
++ Prompt engineering: Try techniques like few-shot prompting with examples of relevant prompt responses. Evaluate the quality of responses.
+
 提示工程：尝试使用相关提示响应的示例来尝试少样本提示等技术。评估响应的质量。
 
-+   Retrieval Augmented Generation: Try augmenting prompts with query results retrieved by searching your data. Evaluate the quality of responses.
++ Retrieval Augmented Generation: Try augmenting prompts with query results retrieved by searching your data. Evaluate the quality of responses.
+
 检索增强生成：尝试使用通过搜索数据检索的查询结果来增强提示。评估响应的质量。
 
-+   Costs: Have you identified the costs for fine-tuning?
++ Costs: Have you identified the costs for fine-tuning?
+
 成本：您是否确定了微调的成本？
 
-+   Tunability - is the pre-trained model available for fine-tuning?
++ Tunability - is the pre-trained model available for fine-tuning?
+
 可调性 - 预训练模型是否可用于微调？
 
-+   Effort - for preparing training data, evaluating & refining model.
++ Effort - for preparing training data, evaluating & refining model.
+
 努力 - 用于准备训练数据、评估和优化模型。
 
-+   Compute - for running fine-tuning jobs, and deploying fine-tuned model
++ Compute - for running fine-tuning jobs, and deploying fine-tuned model
+
 计算 - 用于运行微调作业和部署微调模型
 
-+   Data - access to sufficient quality examples for fine-tuning impact
++ Data - access to sufficient quality examples for fine-tuning impact
+
 数据 - 获得足够的质量示例以微调影响
 
-+   Benefits: Have you confirmed the benefits for fine-tuning?
++ Benefits: Have you confirmed the benefits for fine-tuning?
+
 好处：您是否确认了微调的好处？
 
-+   Quality - did fine-tuned model outperform baseline?
++ Quality - did fine-tuned model outperform baseline?
+
 质量 - 微调后的模型是否优于基线？
 
-+   Cost - does it reduce token usage by simplifying prompts?
++ Cost - does it reduce token usage by simplifying prompts?
+
 成本 - 它是否通过简化提示来减少令牌的使用？
 
-+   Extensibility - can you repurpose base model for new domains?
++ Extensibility - can you repurpose base model for new domains?
+
 可扩展性 - 您能否将基础模型重新用于新域？
 
 By answering these questions, you should be able to decide if fine-tuning is the right approach for your use case. Ideally, the approach is valid only if the benefits outweigh the costs. Once you decide to proceed, it's time to think about how you can fine tune the pre-trained model.
@@ -125,45 +145,47 @@ Want to get more insights on the decision-making process? Watch To fine-tune or 
 
 想更深入地了解决策过程吗？观看 微调或不微调
 
-## [How can we fine-tune ](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=how-can-we-fine-tune-a-pre-trained-model)[a pre-traine](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=how-can-we-fine-tune-a-pre-trained-model)d model? 我们如何微调预训练模型？
+
+
+## [How can we fine-tune a pre-trained model? 我们如何微调预训练模型？](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=how-can-we-fine-tune-a-pre-trained-model)
 
 To fine-tune a pre-trained model, you need to have:
 
 要微调预训练模型，您需要具备：
 
-+   a pre-trained model to fine-tune
-用于微调的预训练模型
++ a pre-trained model to fine-tune  
+  用于微调的预训练模型
 
-+   a dataset to use for fine-tuning
-用于微调的数据集
++ a dataset to use for fine-tuning  
+  用于微调的数据集
 
-+   a training environment to run the fine-tuning job
-用于运行微调作业的训练环境
++ a training environment to run the fine-tuning job  
+  用于运行微调作业的训练环境
 
-+   a hosting environment to deploy fine-tuned model
-用于部署微调模型的托管环境
++ a hosting environment to deploy fine-tuned model  
+  用于部署微调模型的托管环境
 
-## Fine-Tuning In Action 微调在行动
+## Fine-Tuning In Action
 
 The following resources provide step-by-step tutorials to walk you through a real example using a selected model with a curated dataset. To work through these tutorials, you need an account on the specific provider, along with access to the relevant model and datasets.
 
 以下资源提供了分步教程，指导您使用具有精选数据集的选定模型完成一个真实示例。要完成这些教程，您需要一个特定提供商的帐户，以及对相关模型和数据集的访问权限。
 
-## [Assignment 分配](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=assignment)
+### [Assignment](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=assignment)
 
 Select one of the tutorials above and walk through them. We may replicate a version of these tutorials in Jupyter Notebooks in this repo for reference only. Please use the original sources directly to get the latest versions.
 
 选择上面的教程之一并逐步完成它们。我们可以在此存储库的 Jupyter Notebooks 中复制这些教程的一个版本，仅供参考。请直接使用原始资源获取最新版本。
 
-## [Great Wor](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=great-work-continue-your-learning)k! Continue Your Learning. 干得好！继续学习。
+### [Great Work! Continue Your Learning.](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/README?wt.mc_id=academic-105485-koreyst&id=great-work-continue-your-learning)
 
 After completing this lesson, check out our Generative AI Learning collection to continue leveling up your Generative AI knowledge!
 
 完成本课后，请查看我们的生成式 AI 学习合集，继续提升您的生成式 AI 知识！
 
-Con[gratulati](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/RESOURCES?wt.mc_id=academic-105485-koreyst)ons!! You have completed the final lesson from the v2 series for this course! Don't stop learning and building. **Check out the RESOURCES page for a list of additional suggestions for just this topic.
+[Congratulations!!](https://microsoft.github.io/generative-ai-for-beginners/#/18-fine-tuning/RESOURCES?wt.mc_id=academic-105485-koreyst) You have completed the final lesson from the v2 series for this course! Don't stop learning and building. **Check out the RESOURCES page for a list of additional suggestions for just this topic.**
 
-祝贺！！您已完成本课程的 v2 系列的最后一课！不要停止学习和建设。**请查看 RESOURCES 页面，了解针对此主题的其他建议列表。
+祝贺！！您已完成本课程的 v2 系列的最后一课！不要停止学习和建设。**请查看 RESOURCES 页面，了解针对此主题的其他建议列表。**
 
 Our v1 series of lessons have also been updated with more assignments and concepts. So take a minute to refresh your knowledge - and please share your questions and feedback to help us improve these lessons for the community.
 

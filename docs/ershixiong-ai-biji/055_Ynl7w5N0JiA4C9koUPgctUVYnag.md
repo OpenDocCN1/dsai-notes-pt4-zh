@@ -1,18 +1,19 @@
+
 # backend_instructions
 
 > 来源：[https://qianniucity.feishu.cn/docx/L65GdCCz5oPKqJxVA7yc5X7znoH](https://qianniucity.feishu.cn/docx/L65GdCCz5oPKqJxVA7yc5X7znoH)
 
-# Project overview
+## Project overview
 
 Use this guide to build backend for the web app
 
-# **Tech stack**
+## Tech stack
 
 +   We will use Next.js, Supabase, Clerk
 
-# Tables & buckets elready created
+## Tables & buckets elready created
 
-Supabase storage Bucket： "emojis"
+Supabase storage Bucket： `emojis`
 
 ```
 CREATE TABLE cmojis(
@@ -36,37 +37,37 @@ CREATE TABLE profiles (
 );
 ```
 
-# **Requirements**
+## Requirements
 
-1.  Create user to user table
+1. Create user to user table
 
-1.  After a user signin via clerk, we should get the userId from clerk, and check if this userId exist in 'profiles' table, matching "user_id"
+2. After a user signin via clerk, we should get the `userId` from clerk, and check if this `userId` exist in `profiles` table, matching `user_id`
 
-1.  if the user doesnt exist, then create a user in 'profiles' table
+3. if the user doesnt exist, then create a user in `profiles` table
 
-1.  if the user exist already, then proceed, and pass on user_id to functions Like generate emojis
+4. if the user exist already, then proceed, and pass on `user_id` to functions Like `generate emojis`
 
-1.  Upload emoji to "emojis" supabase storage bucket;
+5. Upload emoji to `emojis` supabase storage bucket;
 
-1.  When user generating an emoji, upload the emoji image file returned from Replicate to supabase "emojis" storage bucket
+6. When user generating an emoji, upload the emoji image file returned from `Replicate` to supabase `emojis` storage bucket
 
-1.  Add a row to 'emojis' table where the image url to te "emojis" data table as "image_url"， and creator_user_id to be the actual user_id
+7. Add a row to `emojis` table where the image url to te `emojis` data table as `image_url`， and `creator_user_id` to be the actual `user_id`
 
-1.  Display all images in emojigrid
+8. Display all images in `emojigrid`
 
-1.  Emoji grid should fetch and display all images from "emojis" data table
+9. Emoji grid should fetch and display all images from `emojis` data table
 
-1.  when a new emoji is generated, the emojigrid should be updated automatically to add the new emoji to the grid
+10. when a new emoji is generated, the `emojigrid` should be updated automatically to add the new emoji to the grid
 
-1.  Likes interaction
+11. Likes interaction
 
-1.  When user check on '1ike' button, the num_Likes should increase on the 'emojis' table
+12. When user check on `1ike` button, the `num_Likes` should increase on the `emojis` table
 
-1.  when user un-check 'like' button, the num_Likes should decrease on the 'emojis' table
+13. when user un-check `like` button, the `num_Likes` should decrease on the `emojis` table
 
-# **Documentations**
+## Documentations
 
-## **Example of upLoading files** to supabase storage
+### Example of upLoading files to supabase storage
 
 ```
 import { createClient } from &#x27;@supabase/supabase-js&#x27;
@@ -83,16 +84,16 @@ async function uploadFile(file) {
 }
 ```
 
-# **Notes**
+## Notes
 
-1.  Removed deprecated APIs
+1. Removed deprecated APIs
 
 The following deprecated APIs have been removed.
 
-authMiddleware() - Migrate to clerkMiddleware()
+`authMiddleware()` - Migrate to `clerkMiddleware()`
 
-redirectToSignIn() - Migrate to const { redirectToSignIn } = await auth()
+`redirectToSignIn()` - Migrate to `const { redirectToSignIn } = await auth()`
 
-redirectToSignUp() - Migrate to const { redirectToSignUp } = await auth()
+`redirectToSignUp()` - Migrate to `const { redirectToSignUp } = await auth()`
 
-clerkClient - Migrate to await clerkClient()
+`clerkClient` - Migrate to `await clerkClient()`

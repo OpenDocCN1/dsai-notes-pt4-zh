@@ -1,4 +1,5 @@
-# 10.23-💡 Claude3.5更新、微软连发 10 个 AI 智能体、 微软连发10个AI智能体，纳德拉硬刚Salesforce CEO！
+
+# 10.23-💡 Claude3.5更新、微软连发 10 个 AI 智能体、微软连发10个AI智能体，纳德拉硬刚Salesforce CEO！
 
 > 来源：[https://agijuejin.feishu.cn/docx/ICNodKe7Qom0SxxFdPVcS37VnXc](https://agijuejin.feishu.cn/docx/ICNodKe7Qom0SxxFdPVcS37VnXc)
 
@@ -18,19 +19,19 @@ IT之家 | [阅读原文](https://www.ithome.com/0/804/316.htm)
 
 ## 🌟 技术突破
 
-### 💡 微软开源 1.58bit 推理框架：千亿参数模型量化后单 CPU 可跑，速度每秒 5-7 个 token
+### 💡 微软开源 1.58bit 推理框架：千亿参数模型量化后单 CPU 可跑，速度每秒 5 - 7 个 token
 
 IT之家 | [阅读原文](https://www.ithome.com/0/804/323.htm)
 
 ![](img/3f9e376ced1c1340b9017d2a1578598f.png)
 
-微软开源 1.58bit 推理框架，千亿参数模型量化后单 CPU 可跑，速度每秒 5 - 7 个 token。如在苹果 M2 新品上运行 BitNet b1.58 3B 模型，开源不到一周 GitHub 已获 7.9k Star。该框架将模型参数变为三进制{-1,0,1}，显著减少存储空间和计算资源。在 ARM CPU 上可实现 1.37 至 5.07 倍加速，降低能耗 55.4%至 70.0%；在 x86 CPU 上加速 2.37 至 6.17 倍，降低能耗 71.9%至 82.2%。BitNet b1.58 模型权重被量化为三元值，采用 absmean 量化函数，架构借鉴 Llama，与 Llama 相比在矩阵乘法方面节省 71.4 倍计算能耗。Huggingface Transformers 整合了该技术，也有网友指出其局限，但 1 bit LLM 仍有巨大潜力。
+微软开源 1.58bit 推理框架，千亿参数模型量化后单 CPU 可跑，速度每秒 5 - 7 个 token。如在苹果 M2 新品上运行 BitNet b1.58 3B 模型，开源不到一周 GitHub 已获 7.9k Star。该框架将模型参数变为三进制`{-1,0,1}`，显著减少存储空间和计算资源。在 ARM CPU 上可实现 1.37 至 5.07 倍加速，降低能耗 55.4%至 70.0%；在 x86 CPU 上加速 2.37 至 6.17 倍，降低能耗 71.9%至 82.2%。BitNet b1.58 模型权重被量化为三元值，采用 `absmean` 量化函数，架构借鉴 Llama，与 Llama 相比在矩阵乘法方面节省 71.4 倍计算能耗。Huggingface Transformers 整合了该技术，也有网友指出其局限，但 1 bit LLM 仍有巨大潜力。
 
 ### 💡 RAG真能提升LLM推理能力？人大最新研究：数据有噪声，RAG性能不升反降
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JF4E678D0511ABV6.html?spss=dy_author)
 
-2024 年 10 月，中国人民大学研究发现，RAG 能提升 LLM 推理能力但有限，且受文档噪声影响可能性能不升反降。RAG 可减少推理所需层数，但当裂变反应在阈值处停止效果受限。文档噪声会对性能产生负面影响，通过 DPrompt tuning 可提升 LLM 在面对噪声时的性能。
+2024 年 10 月，中国人民大学研究发现，RAG 能提升 LLM 推理能力但有限，且受文档噪声影响可能性能不升反降。RAG 可减少推理所需层数，但当裂变反应在阈值处停止效果受限。文档噪声会对性能产生负面影响，通过 `DPrompt` tuning 可提升 LLM 在面对噪声时的性能。
 
 ### 💡 Project Turntable：将2D矢量图像 像3D对象一样进行旋转 并自动补充缺失部分
 

@@ -1,8 +1,7 @@
-# 01.03-华为昇腾 AI 处理器等 151 个上榜，人工智能赋能新型工业化典型应用案例名单公布
-
-> 来源：[https://agijuejin.feishu.cn/docx/MI99ddBLpo7c1sxxIwecL7benrb](https://agijuejin.feishu.cn/docx/MI99ddBLpo7c1sxxIwecL7benrb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 03 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/MI99ddBLpo7c1sxxIwecL7benrb](https://agijuejin.feishu.cn/docx/MI99ddBLpo7c1sxxIwecL7benrb)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

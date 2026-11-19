@@ -1,3 +1,4 @@
+
 # OpenClaw 完全指南
 
 > 来源：[https://my.feishu.cn/docx/K70ud7P9ao0axgxpmXCccMIJnGc](https://my.feishu.cn/docx/K70ud7P9ao0axgxpmXCccMIJnGc)
@@ -6,39 +7,29 @@
 
 ---
 
-# 一、OpenClaw 是什么？
+## 一、OpenClaw 是什么？
 
 普通的 AI（ChatGPT、Claude 网页版）是问答助手——你问，它答，永远停留在"对话"层面。
 
-**OpenClaw 不一样**：它是一个能动手的 AI Agent，可以：
+OpenClaw 不一样：它是一个能动手的 AI Agent，可以：
 
-+   整理你的文件
+- 整理你的文件
+- 发邮件、查数据、管日程
+- 控制智能家居
+- 执行 `shell` 命令
+- 只要你用电脑能做的事，它基本都能替你做
 
-+   发邮件、查数据、管日程
+核心特点：
 
-+   控制智能家居
-
-+   执行 shell 命令
-
-+   只要你用电脑能做的事，它基本都能替你做
-
-**核心特点**：
-
-+   **开源免费** - 代码在 GitHub 上，随便看
-
-+   **本地部署** - 数据在你自己电脑上，不经过第三方服务器
-
-+   **记忆系统** - 能记住你说过的话，不是每次都从零开始
-
-+   **多渠道接入** - Discord、Telegram、飞书、WhatsApp 都能用
-
-+   **可扩展** - 通过 Skill 系统教它新技能
-
----
+- 开源免费 - 代码在 GitHub 上，随便看
+- 本地部署 - 数据在你自己电脑上，不经过第三方服务器
+- 记忆系统 - 能记住你说过的话，不是每次都从零开始
+- 多渠道接入 - Discord、Telegram、飞书、WhatsApp 都能用
+- 可扩展 - 通过 Skill 系统教它新技能
 
 ## 二、安装教程
 
-# 2.1 环境要求
+### 2.1 环境要求
 
 ### 2.2 Windows 安装
 
@@ -83,19 +74,17 @@ openclaw onboard --install-daemon
 
 OpenClaw 本身免费，但需要连接大模型才能"思考"。
 
-**国内推荐**（不需要🪜）：
+国内推荐（不需要🪜）：
 
-**海外推荐**（需要🪜）：
+海外推荐（需要🪜）：
 
-**获取 API Key 步骤**：
+获取 API Key 步骤：
 
-1.  注册对应平台账号
+1. 注册对应平台账号
+1. 进入 API Keys 页面
+1. 创建新密钥，复制保存
 
-1.  进入 API Keys 页面
-
-1.  创建新密钥，复制保存
-
-**⚠️ 注意**：不要用 OAuth 登录（用你的 ChatGPT Plus/Claude Pro 账号直接登录），有封号风险。
+⚠️ 注意：不要用 OAuth 登录（用你的 ChatGPT Plus/Claude Pro 账号直接登录），有封号风险。
 
 ### 2.6 验证安装
 
@@ -113,17 +102,15 @@ openclaw doctor
 
 ### 2.7 常用命令
 
----
-
 ## 三、核心功能
 
 ### 3.1 记忆系统
 
-OpenClaw 的记忆系统基于 Markdown 文件，存在 ~/.openclaw/workspace/ 目录下。
+OpenClaw 的记忆系统基于 Markdown 文件，存在 `~/.openclaw/workspace/` 目录下。
 
-**最低配置**：只写 SOUL.md + USER.md，5 分钟搞定。
+最低配置：只写 `SOUL.md` + `USER.md`，5 分钟搞定。
 
-**SOUL.md 示例**：
+`SOUL.md` 示例：
 
 ```
 # SOUL.md - 你是谁
@@ -132,12 +119,12 @@ OpenClaw 的记忆系统基于 Markdown 文件，存在 ~/.openclaw/workspace/ �
 
 核心信条：
 - 跳过废话，直接解决问题
-- 不要&quot;这是一个好问题&quot;这种客套
+- 不要"这是一个好问题"这种客套
 - 能做的直接做，不确定的再问
 - 隐私就是隐私，没得商量
 ```
 
-**USER.md 示例**：
+`USER.md` 示例：
 
 ```
 # USER.md
@@ -152,13 +139,13 @@ OpenClaw 的记忆系统基于 Markdown 文件，存在 ~/.openclaw/workspace/ �
 
 Skill 就是一个 Markdown 文件，告诉 AI"遇到什么情况，按什么步骤执行"。不需要编程，任何人都能写。
 
-**新手必装技能**：
+新手必装技能：
 
-**安装方法**：
+安装方法：
 
 ```
 # 方式一：聊天安装
-# 直接对 OpenClaw 说：&quot;安装 self-improving-agent 技能&quot;
+# 直接对 OpenClaw 说："安装 self-improving-agent 技能"
 
 # 方式二：命令行安装
 npx clawhub@latest install self-improving-agent
@@ -175,43 +162,41 @@ OpenClaw 支持同时接入多个聊天渠道，消息不会串。
 
 两种方式：
 
-**Cron 配置示例**（每天早上 9 点发新闻摘要）：
+Cron 配置示例（每天早上 9 点发新闻摘要）：
 
 ```
 {
-  &quot;name&quot;: &quot;每日早报&quot;,
-  &quot;schedule&quot;: { &quot;kind&quot;: &quot;cron&quot;, &quot;expr&quot;: &quot;0 9 * * *&quot;, &quot;tz&quot;: &quot;Asia/Shanghai&quot; },
-  &quot;payload&quot;: {
-    &quot;kind&quot;: &quot;agentTurn&quot;,
-    &quot;message&quot;: &quot;搜索今天的科技和 AI 领域新闻热点，整理成 5 条简报&quot;,
-    &quot;model&quot;: &quot;haiku&quot;
+  "name": "每日早报",
+  "schedule": { "kind": "cron", "expr": "0 9 * * *", "tz": "Asia/Shanghai" },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "搜索今天的科技和 AI 领域新闻热点，整理成 5 条简报",
+    "model": "haiku"
   },
-  &quot;sessionTarget&quot;: &quot;isolated&quot;,
-  &quot;delivery&quot;: { &quot;mode&quot;: &quot;announce&quot; }
+  "sessionTarget": "isolated",
+  "delivery": { "mode": "announce" }
 }
 ```
 
----
-
-# 四、进阶配置
+## 四、进阶配置
 
 ### 4.1 解决 AI "失忆"问题
 
 长对话接近上下文限制时，OpenClaw 会自动压缩旧对话，可能丢失细节。
 
-**解决方案**：开启 memoryFlush，压缩前自动保存关键信息。
+解决方案：开启 `memoryFlush`，压缩前自动保存关键信息。
 
-在 ~/.openclaw/openclaw.json 添加：
+在 `~/.openclaw/openclaw.json` 添加：
 
 ```
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;compaction&quot;: {
-        &quot;reserveTokensFloor&quot;: 20000,
-        &quot;memoryFlush&quot;: {
-          &quot;enabled&quot;: true,
-          &quot;softThresholdTokens&quot;: 4000
+  "agents": {
+    "defaults": {
+      "compaction": {
+        "reserveTokensFloor": 20000,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 4000
         }
       }
     }
@@ -223,21 +208,21 @@ OpenClaw 支持同时接入多个聊天渠道，消息不会串。
 
 让主 AI 派出子进程并行处理任务，完成后自动汇报。
 
-**配置模型分级**（省 60-70% token）：
+配置模型分级（省 60-70% token）：
 
 ```
 {
-  &quot;models&quot;: {
-    &quot;provider/claude-opus-4&quot;: { &quot;alias&quot;: &quot;opus&quot; },
-    &quot;provider/claude-sonnet-4&quot;: { &quot;alias&quot;: &quot;sonnet&quot; },
-    &quot;provider/claude-haiku-4&quot;: { &quot;alias&quot;: &quot;haiku&quot; }
+  "models": {
+    "provider/claude-opus-4": { "alias": "opus" },
+    "provider/claude-sonnet-4": { "alias": "sonnet" },
+    "provider/claude-haiku-4": { "alias": "haiku" }
   }
 }
 ```
 
 ### 4.3 开发自定义 Skill
 
-每个 Skill 是一个目录，必须包含 SKILL.md：
+每个 Skill 是一个目录，必须包含 `SKILL.md`：
 
 ```
 skills/
@@ -246,14 +231,14 @@ skills/
     scripts/    ← 可选
 ```
 
-**SKILL.md 写法**：
+`SKILL.md` 写法：
 
 ```
 ---
 name: ip-lookup
-description: &gt;
+description: >
   IP 地址查询。触发条件：用户问 IP 地址、IP 归属地、
-  &quot;这个 IP 是哪里的&quot;、&quot;帮我查一下 XX.XX.XX.XX&quot;等。
+  "这个 IP 是哪里的"、"帮我查一下 XX.XX.XX.XX"等。
 ---
 
 # IP 地址查询
@@ -268,58 +253,44 @@ description: &gt;
 📍 位置：{country} {regionName} {city}
 
 ## 错误处理
-- 返回 fail → 告诉用户&quot;可能是内网 IP 或无效地址&quot;
+- 返回 fail → 告诉用户"可能是内网 IP 或无效地址"
 ```
 
-**要点**：description 决定触发率，要列出所有可能的触发词。
+要点：`description` 决定触发率，要列出所有可能的触发词。
 
----
-
-# 五、使用场景
+## 五、使用场景
 
 ### 5.1 个人知识管理
 
-+   自动整理笔记、文件
-
-+   日志记录和检索
-
-+   项目状态追踪
+- 自动整理笔记、文件
+- 日志记录和检索
+- 项目状态追踪
 
 ### 5.2 信息雷达
 
-+   每日自动推送新闻摘要
-
-+   监控特定关键词
-
-+   竞品动态追踪
+- 每日自动推送新闻摘要
+- 监控特定关键词
+- 竞品动态追踪
 
 ### 5.3 内容创作辅助
 
-+   素材收集整理
-
-+   大纲生成
-
-+   文案优化
+- 素材收集整理
+- 大纲生成
+- 文案优化
 
 ### 5.4 自动化工作流
 
-+   定时任务提醒
-
-+   服务状态巡检
-
-+   邮件/消息自动处理
+- 定时任务提醒
+- 服务状态巡检
+- 邮件/消息自动处理
 
 ### 5.5 编程辅助
 
-+   代码审查
+- 代码审查
+- 调试帮助
+- 文档生成
 
-+   调试帮助
-
-+   文档生成
-
----
-
-# 六、相关资源
+## 六、相关资源
 
 ### 官方资源
 
@@ -331,52 +302,46 @@ description: &gt;
 
 ### API 提供商
 
----
+## 七、常见问题
 
-# 七、常见问题
+Q: 输入 `openclaw` 提示 `command not found`？
 
-**Q: 输入 ****openclaw**** 提示 ****c**ommand not found？
-
-A: 关掉终端重新打开试试。还不行就检查 npm 全局路径：
+A: 关掉终端重新打开试试。还不行就检查 `npm` 全局路径：
 
 ```
-echo &#x27;export PATH=$(npm config get prefix)/bin:$PATH&#x27; &gt;&gt; ~/.zshrc
+echo 'export PATH=$(npm config get prefix)/bin:$PATH' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-**Q: 网页面板打不开？**
+Q: 网页面板打不开？
 
 A:
 
-1.  确认在运行：openclaw status
+1. 确认在运行：`openclaw status`
+1. 没运行就启动：`openclaw gateway start`
+1. 端口被占用就换端口：`openclaw gateway --port 18790`
 
-1.  没运行就启动：openclaw gateway start
-
-1.  端口被占用就换端口：openclaw gateway --port 18790
-
-**Q: AI 不回复？**
+Q: AI 不回复？
 
 A:
 
-1.  检查 API Key：openclaw doctor
-
-1.  检查账户余额
-
-1.  检查网络（海外模型需要🪜）
+1. 检查 API Key：`openclaw doctor`
+1. 检查账户余额
+1. 检查网络（海外模型需要🪜）
 
 Q: 聊着聊着 AI "失忆"了？
 
-A: 开启 memoryFlush，详见 4.1 节
+A: 开启 `memoryFlush`，详见 4.1 节
 
 Q: Discord Bot 在线但不回复？
 
-A: 几乎肯定是 MESSAGE CONTENT INTENT 没开。去 Discord Developer Portal → Bot → Privileged Gateway Intents → 开启 MESSAGE CONTENT INTENT。
+A: 几乎肯定是 `MESSAGE CONTENT INTENT` 没开。去 Discord Developer Portal → Bot → Privileged Gateway Intents → 开启 `MESSAGE CONTENT INTENT`。
 
-**Q: 想重新配置？**
+Q: 想重新配置？
 
-A: 直接运行 openclaw onboard，会重新进入配置向导。
+A: 直接运行 `openclaw onboard`，会重新进入配置向导。
 
-**Q: 完全卸载重装？**
+Q: 完全卸载重装？
 
 ```
 openclaw gateway stop
@@ -384,27 +349,18 @@ npm uninstall -g openclaw
 rm -rf ~/.openclaw
 ```
 
----
-
-# 八、快速上手 Checklist
+## 八、快速上手 Checklist
 
 按这个顺序来，1 小时内搞定：
 
-+   安装 Node.js（≥22）
-
-+   安装 OpenClaw：npm i -g openclaw
-
-+   运行配置向导：openclaw onboard --install-daemon
-
-+   获取 API Key（推荐智谱 GLM-5）
-
-+   验证安装：openclaw status + openclaw dashboard
-
-+   写 SOUL.md 和 USER.md
-
-+   装第一个技能：self-improving-agent
-
-+   测试对话
+- 安装 Node.js（≥22）
+- 安装 OpenClaw：`npm i -g openclaw`
+- 运行配置向导：`openclaw onboard --install-daemon`
+- 获取 API Key（推荐智谱 GLM-5）
+- 验证安装：`openclaw status` + `openclaw dashboard`
+- 写 `SOUL.md` 和 `USER.md`
+- 装第一个技能：`self-improving-agent`
+- 测试对话
 
 ---
 

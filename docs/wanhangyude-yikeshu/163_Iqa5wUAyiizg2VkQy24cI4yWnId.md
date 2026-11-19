@@ -1,3 +1,4 @@
+
 # 直觉思维模型
 
 > 来源：[https://my.feishu.cn/docx/LWFRdsiTHocWpTxkhyoczhyanZe](https://my.feishu.cn/docx/LWFRdsiTHocWpTxkhyoczhyanZe)

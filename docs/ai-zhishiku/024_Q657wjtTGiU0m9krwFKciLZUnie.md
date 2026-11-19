@@ -1,3 +1,4 @@
+
 # Azure OpenAI API 微软中国区申请
 
 > 来源：[https://my.feishu.cn/docx/CCJFdpcuZo6JtWxfvNRcGHLdnMd](https://my.feishu.cn/docx/CCJFdpcuZo6JtWxfvNRcGHLdnMd)
@@ -8,11 +9,11 @@
 
 因此，在本篇文章中，将简要介绍一下如何申请中国区 Azure OpenAI 服务，并以此代替原本 ChatGPT 的功能，在一些需要使用 OpenAI API 的场景中，可以直接替换。
 
-# 目录
+## 目录
 
-## **注册微软 ****Azure**** 用户**
+## 注册微软 Azure 用户
 
-注[册之前，建议先去注册一下微](https://azure.microsoft.com/zh-cn/)软的邮箱，全球收发邮件都不受阻碍，而且有行业领先反垃圾邮件的系统，建议可以长期使用。邮箱的注册这里不展开。我们直接访问微软 Azure 平台进行申请。
+注册之前，建议先去注册一下[微软](https://azure.microsoft.com/zh-cn/)的邮箱，全球收发邮件都不受阻碍，而且有行业领先反垃圾邮件的系统，建议可以长期使用。邮箱的注册这里不展开。我们直接访问微软 Azure 平台进行申请。
 
 ![](img/7a26023b0e35fad6f505b94ca34e5d7e.png)
 
@@ -24,10 +25,9 @@
 
 我由于已经有 Azure 账号了，就不去申请再多的账号，直接跳到下一步，申请 API 接口。
 
-## **申请 ****OpenAI**** ****API**** 接口权限**
+## 申请 OpenAI API 接口权限
 
 登陆 Azure 之后，直接在顶部搜索关键词“openai”，就可以找到
-
 
 然后点击“Azure OpenAI”进入接口创建页面，在底下有提示，点击“创建 Azure OpenAI”
 
@@ -71,9 +71,9 @@
 
 齐活了，可以开始接下来的配置。
 
-## **配置 Azure OpenAI**
+## 配置 Azure OpenAI
 
-打开这个页面：https://portal.azure.com/?quickstart=true#create/Microsoft.CognitiveServicesOpenAI
+打开这个页面：`https://portal.azure.com/?quickstart=true#create/Microsoft.CognitiveServicesOpenAI`
 
 ![](img/197f9a8096481443f873f3e97accf7a0.png)
 
@@ -86,7 +86,6 @@
 ![](img/6492892252c2773ac4ab4c77d924559d.png)
 
 然后点击这个资源，配置所需的资源版本，目前是 GPT-3.5，如下图所示：
-
 
 Azure OpenAI 目前所使用的版本只有 GPT-3.5，如果需要 GPT-4，只能去申请 ChatGPT，直接开 Plus 订阅就有了。不过 GPT-3.5 已经足够使用啦。
 
@@ -104,8 +103,7 @@ Azure OpenAI 目前所使用的版本只有 GPT-3.5，如果需要 GPT-4，只�
 
 开始调戏一下吧：
 
-
-## **申请 OpenAI API**
+## 申请 OpenAI API
 
 我们最终是需要申请得到 API 的使用权限的，所以回到刚刚的资源页面概览面板
 

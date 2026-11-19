@@ -1,8 +1,7 @@
+
 # 数字人做名人名言类视频如何变现？
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/StHLd4PLno5Xxnxpoe9ciRj8nVc](https://aiyanxishe.feishu.cn/docx/StHLd4PLno5Xxnxpoe9ciRj8nVc)
-
-#
 
 名人名言，思维账号，这个赛道一直以来流量都很大，在 AI 破局俱乐部，也举办过这种账号的快闪活动，很多人都拿到结果，有的几天涨粉过万起号成功，有的通过橱窗带货一个月变现上万的。
 
@@ -24,4 +23,4 @@
 
 如果只是模仿形式，不去思考对标账号的变现逻辑，甚至是自己做这个的目的是什么都不清楚，只是为了去做而做，那么变现将与你无缘。
 
-https://zl49so8lbq.feishu.cn/sync/IaSadpoOOsopKab1ajKcz6z3nAb
+[https://zl49so8lbq.feishu.cn/sync/IaSadpoOOsopKab1ajKcz6z3nAb](https://zl49so8lbq.feishu.cn/sync/IaSadpoOOsopKab1ajKcz6z3nAb)

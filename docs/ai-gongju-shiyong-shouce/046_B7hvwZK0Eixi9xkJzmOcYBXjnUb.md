@@ -1,3 +1,4 @@
+
 # SD教程NO.07👉中文转英文tag
 
 > 来源：[https://my.feishu.cn/docx/CPa2dtwpAoSRKrxOlcTcg4JwnXc](https://my.feishu.cn/docx/CPa2dtwpAoSRKrxOlcTcg4JwnXc)
@@ -26,11 +27,11 @@
 
 ![](img/5c03a123c5e2888b66d731427d5dc820.png)
 
-点击后选择【a1111-sd-webui-tagcomplete】文件夹
+点击后选择【`a1111-sd-webui-tagcomplete`】文件夹
 
 ![](img/364bb8cff18bab0aa9ef387bae298223.png)
 
-然后选择【tags】文件夹
+然后选择【`tags`】文件夹
 
 ![](img/434826c7a702a2fa0d87a1b6ab90a276.png)
 
@@ -38,10 +39,9 @@
 
 ![](img/e6530d763d982d5b9412110076d68575.png)
 
-接下来，启动SD，进入web UI的设置→标签自动补全→**zh_cn**文件（😂文件别选错）
+接下来，启动SD，进入web UI的设置→标签自动补全→`zh_cn`文件（😂文件别选错）
 
-
-**然后往下拉，给这**里的翻译文件名，选择zh_cn_tr
+**然后往下拉，给这里的翻译文件名，选择`zh_cn_tr`**
 
 ![](img/a5ebb7025481ceb6a25e83d19b7bbc36.png)
 
@@ -51,6 +51,6 @@
 
 然后点击右边重载前端就可以了！
 
-**💥💥💥注意：这个文件仅供学习交流****，出现****一些奇怪的翻译雨我无瓜，负面t**ag一定要加nsfw！💥💥💥
+**💥💥💥注意：这个文件仅供学习交流**，出现**一些奇怪的翻译雨我无瓜，负面tag一定要加nsfw！💥💥💥**
 
 > 我是热爱生活的小黑子，热爱当下生活，永远忠于自己。

@@ -1,3 +1,4 @@
+
 # 错误代码
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/CFMYd4Acsof1gnx79D1cbseOnaf](https://v11enp9ok1h.feishu.cn/docx/CFMYd4Acsof1gnx79D1cbseOnaf)
@@ -5,6 +6,8 @@
 <https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie>
 
 调用API时，会返回以下代码。
+
+## 错误码列表
 
 | 状态码 | 描述 |
 | --- | --- |
@@ -22,33 +25,35 @@
 | 435 | 原因：文件大小超过100MB |
 | 500 | 原因：服务器处理请求时发生错误 |
 
-错误码示例400
+## 错误码示例
 
-```
+### 400
+
+```json
 {
-    &quot;error&quot;: {
-        &quot;code&quot;: &quot;1211&quot;,
-        &quot;message&quot;: &quot;模型不存在，请检查模型代码。&quot;
+    "error": {
+        "code": "1211",
+        "message": "模型不存在，请检查模型代码。"
     }
 }
 ```
 
-```
+```json
 {
-    &quot;error&quot;: {
-        &quot;code&quot;: &quot;1214&quot;,
-        &quot;message&quot;: &quot;messages:输入不能为空&quot;
+    "error": {
+        "code": "1214",
+        "message": "messages:输入不能为空"
     }
 }
 ```
 
-错误码示例401
+### 401
 
-```
+```json
 {
-    &quot;error&quot;: {
-        &quot;code&quot;: &quot;1000&quot;,
-        &quot;message&quot;: &quot;身份验证失败&quot;
+    "error": {
+        "code": "1000",
+        "message": "身份验证失败"
     }
 }
 ```

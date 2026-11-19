@@ -1,18 +1,19 @@
+
 # Claude Prompt：矩阵之网
 
 > 来源：[https://aigcreative.feishu.cn/docx/WG7ddD4wCoPDFlxcXKKcvSOon4d](https://aigcreative.feishu.cn/docx/WG7ddD4wCoPDFlxcXKKcvSOon4d)
 
-> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/A0RXygozr0bKph4LQF3sVw)qq.com/s/A0RXygoz...
+> 原文链接：[https://mp.weixin.qq.com/s/A0RXygozr0bKph4LQF3sVw](https://mp.weixin.qq.com/s/A0RXygozr0bKph4LQF3sVw)
 
 > 👸号：李继刚
 
 ## 缘起
 
-当有了 **角度之镜 **的帮助，找到了分析思考的角度之后，虽说了有了方向，但仍需用力思考，尽力深入才有可能突破问题迷雾。
+当有了**角度之镜**的帮助，找到了分析思考的角度之后，虽说了有了方向，但仍需用力思考，尽力深入才有可能突破问题迷雾。
 
 有没有一个东西，可以帮助这个过程，可以快速地阶段性地看清所在地形图，方便有的放矢的发力？
 
-有， **分类法 **。它不是最终答案，但确是一个非常好用的工具，一个思考的便宜法门。
+有，**分类法**。它不是最终答案，但确是一个非常好用的工具，一个思考的便宜法门。
 
 遂有，思考的七把武器之六：矩阵之网。
 

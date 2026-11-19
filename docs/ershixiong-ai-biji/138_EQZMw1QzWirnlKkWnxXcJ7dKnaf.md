@@ -1,10 +1,11 @@
+
 # 文生视频
 
 > 来源：[https://qianniucity.feishu.cn/docx/Su41diBEvondcdxwPdEcmhScn5g](https://qianniucity.feishu.cn/docx/Su41diBEvondcdxwPdEcmhScn5g)
 
 ![](img/f556c1612d14374445e1d1d2d5bfde20.png)
 
-[Futuristic_Trading_Card_Video_Ready.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BrE1bX27IoJ5UIxupORc1R0SnBf)
+[`Futuristic_Trading_Card_Video_Ready.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BrE1bX27IoJ5UIxupORc1R0SnBf)
 
 ```
 A futuristic item/prop trading card, featuring a dark, deep neon aesthetic and soft sci-fi lighting. The card itself is a translucent, rounded rectangle with slightly soft glowing edges, appearing as if made of holographic glass. 

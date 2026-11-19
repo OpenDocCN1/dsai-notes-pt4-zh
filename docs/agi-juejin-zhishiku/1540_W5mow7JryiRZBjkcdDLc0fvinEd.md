@@ -1,3 +1,4 @@
+
 # 构建Agent系统，那些没人会告诉你的经验教训！
 
 > 来源：[https://agijuejin.feishu.cn/docx/YOsKd7dPboHQPWxyexOcrwOVneh](https://agijuejin.feishu.cn/docx/YOsKd7dPboHQPWxyexOcrwOVneh)
@@ -11,7 +12,6 @@
 今天我想聊聊过去一年里，我在构建AI智能体（Agent）方面的一些心得体会。这是一段过山车般的经历，从最初的原型激动人心，到产品上线时的期待，再到面对现实世界各种场景时的挣扎，最后是看到我们的AI智能体在不同数据源和业务中稳定运行时的自豪感。
 
 首先，什么是AI智能体？简单来说，它就是一个可以接受指令、使用多种工具，并能自主推理决定如何使用这些工具来完成任务的智能体。就像OpenAI的GPTs或Assistants，或者是Anthropic的Claude，Cohere的Command R+等，都可以作为构建智能体的模型。
-
 
 构建一个AI智能体其实不需要太多代码，只需要一些能够启动对话、调用模型、处理工具调用，并在完成任务后停止的循环代码。想象一下，你告诉智能体一个目标，它就会开始“思考”，决定下一步该怎么做。
 

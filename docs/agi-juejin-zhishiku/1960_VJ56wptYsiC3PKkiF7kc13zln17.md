@@ -1,8 +1,7 @@
-# 05.19-OpenAI：GPT-5 就是 All in One，集成各种产品
-
-> 来源：[https://agijuejin.feishu.cn/docx/QeMydiD43odrZvxTHiicJIl0nAE](https://agijuejin.feishu.cn/docx/QeMydiD43odrZvxTHiicJIl0nAE)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 05 月 19 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/QeMydiD43odrZvxTHiicJIl0nAE](https://agijuejin.feishu.cn/docx/QeMydiD43odrZvxTHiicJIl0nAE)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

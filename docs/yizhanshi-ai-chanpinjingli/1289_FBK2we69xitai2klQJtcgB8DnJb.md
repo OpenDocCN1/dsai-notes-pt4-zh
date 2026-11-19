@@ -1,4 +1,5 @@
-#  A Unified McP server
+
+# A Unified McP server
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/SBA8dbjmPo2Q9JxAhc2c18KznTf](https://v11enp9ok1h.feishu.cn/docx/SBA8dbjmPo2Q9JxAhc2c18KznTf)
 
@@ -6,23 +7,23 @@
 
 ![](img/b802110e3072886540e7c356c6565cbd.png)
 
-#### 技术栈
+## 技术栈
 
-+   MindsDB 用于驱动我们的统一 MCP 服务器
++ MindsDB 用于驱动我们的统一 MCP 服务器
 
-+   Cursor 作为 MCP 主机
++ Cursor 作为 MCP 主机
 
-+   Docker 用于自托管服务器
++ Docker 用于自托管服务器
 
-#### 工作流程
+## 工作流程
 
-+   用户提交查询
++ 用户提交查询
 
-+   代理连接到 MindsDB MCP 服务器以查找工具
++ 代理连接到 MindsDB MCP 服务器以查找工具
 
-+   根据用户查询选择合适的工具并调用
++ 根据用户查询选择合适的工具并调用
 
-+   最后返回上下文相关的响应
++ 最后返回上下文相关的响应
 
 ## Docker 设置
 
@@ -41,7 +42,7 @@ mindsdb/mindsdb           → Docker镜像
 
 ### 启动 MindsDB GUI
 
-安装 Docker 镜像后，在浏览器中访问 127.0.0.1:47334 以打开 MindsDB 编辑器。通过此界面，您可以连接到 200 多个数据源并对其运行 SQL 查询。
+安装 Docker 镜像后，在浏览器中访问 `127.0.0.1:47334` 以打开 MindsDB 编辑器。通过此界面，您可以连接到 200 多个数据源并对其运行 SQL 查询。
 
 ### 集成数据源
 
@@ -61,9 +62,9 @@ mindsdb/mindsdb           → Docker镜像
 
 MCP 服务器提供两个工具：
 
-+   list_databases：列出所有连接到 MindsDB 的数据源。
++ `list_databases`：列出所有连接到 MindsDB 的数据源。
 
-+   query：回答用户关于联邦数据的查询。
++ `query`：回答用户关于联邦数据的查询。
 
 ![](img/d55123f5b4dca0b26a3a48ab8fb0d5a3.png)
 

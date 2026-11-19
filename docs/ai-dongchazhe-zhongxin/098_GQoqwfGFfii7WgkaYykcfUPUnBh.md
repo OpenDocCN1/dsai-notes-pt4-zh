@@ -1,3 +1,4 @@
+
 # 场景11：其他
 
 > 来源：[https://bluefocus.feishu.cn/docx/XvQhdZaMUoFw3IxPsxccOTu8ndb](https://bluefocus.feishu.cn/docx/XvQhdZaMUoFw3IxPsxccOTu8ndb)
@@ -44,11 +45,11 @@ voilà~ 加上后效果好很多（右边 4 张），太漂亮了，希望某宝
 
 最简单的方法，当然就是直接问。
 
-如果问不到，倒是可以借助一些工具，Midjourney 支持图片转 prompt 功能。方法很简单。第一步在输入框输入 /describe：
+如果问不到，倒是可以借助一些工具，Midjourney 支持图片转 prompt 功能。方法很简单。第一步在输入框输入`/describe`：
 
 ![](img/4b348472e5b81567b83e5c49beacb5a6.png)
 
-点击 describe 后，会弹出一个添加文件的入口，上传文件，并点击回车。
+点击`describe`后，会弹出一个添加文件的入口，上传文件，并点击回车。
 
 ![](img/9e1f5c7c1169f8b1883a042d734ecee9.png)
 

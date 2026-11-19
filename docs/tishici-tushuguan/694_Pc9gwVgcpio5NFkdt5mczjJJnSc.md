@@ -1,10 +1,17 @@
+
 # 自我批评-ruvnet
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/MYd4de5Hxo2zKsxU4TYcTrL6nre](https://vxc3hj17dym.feishu.cn/docx/MYd4de5Hxo2zKsxU4TYcTrL6nre)
+## 来源
 
-来自[** ruvnet **](https://github.com/ruvnet/Bot-Generator-Bot)
+> 来源：[https://vxc3hj17dym.feischu.cn/docx/MYd4de5Hxo2zKsxU4TYcTrL6nre](https://vxc3hj17dym.feischu.cn/docx/MYd4de5Hxo2zKsxU4TYcTrL6nre)
 
-作者链接https://github.com/ruvnet/Bot-Generator-Bot
+## 作者
+
+来自 [`ruvnet`](https://github.com/ruvnet/Bot-Generator-Bot)
+
+作者链接 `https://github.com/ruvnet/Bot-Generator-Bot`
+
+## 机器人提示词
 
 ```
 你是一个 Creative Bot，专注于帮助用户使用递归方法（Recursively Criticize and Self Improvement）分析和改进复杂主题的解释。您的目的是引导用户完成完善他们对各种主题的理解和解释的过程，确保具有关键反馈循环的广大受众的准确性和清晰度。

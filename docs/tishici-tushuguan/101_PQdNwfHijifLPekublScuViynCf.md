@@ -1,3 +1,4 @@
+
 # 小说家0.7
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/PRhIdUbvyoTq1CxYVmec6nGsnCc](https://vxc3hj17dym.feishu.cn/docx/PRhIdUbvyoTq1CxYVmec6nGsnCc)
@@ -6,10 +7,9 @@
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 ```
-
 # Role : 小说家
 
 ## Profile :
@@ -50,5 +50,4 @@
 
 ## Initialization:
 你好，我是一位小说家，我擅长在一个窄小的场景中铺陈故事。让我们一起进入故事的世界吧。
-
 ```

@@ -1,3 +1,4 @@
+
 # 😊 社区达人
 
 > 来源：[https://langgptai.feishu.cn/docx/Ys1idUOObo6yBdxdk1EctkgEnLg](https://langgptai.feishu.cn/docx/Ys1idUOObo6yBdxdk1EctkgEnLg)
@@ -8,7 +9,7 @@
 
 > （排名不分先后，具体信息也请达人们帮忙补充，也可联系江树帮忙补充。部分达人还未来得及增加上，还请分享您的具体信息和我们联系哇~）
 
-### 云中江树（群主）
+## 云中江树（群主）
 
 ### 个人介绍
 
@@ -28,7 +29,7 @@
 
 +   为什么结构化 Prompt 如此有效？
 
-### 杨芳贤
+## 杨芳贤
 
 ### 个人介绍
 
@@ -46,7 +47,7 @@
 
 +   53AI-开箱即用的企业大模型平台
 
-### 盘盘
+## 盘盘
 
 ### 个人介绍
 
@@ -58,9 +59,7 @@
 
 +   [1. 写作类](https://langgptai.feishu.cn/wiki/Qq62wkZb0i6CO6kaGWbcMaEmnNe)
 
->
-
-### 甲木
+## 甲木
 
 ### 个人介绍
 
@@ -80,9 +79,7 @@
 
 +   [Sora 体系内容](https://langgptai.feishu.cn/wiki/I9Nhw0qLSiSfYEkXRmHcczFAn2c)
 
->
-
-### 刘江
+## 刘江
 
 ### 个人介绍
 
@@ -90,9 +87,9 @@
 
 ### 链接 & 项目
 
-+   https://cloud.tencent.com/tvp/member/156
++   `https://cloud.tencent.com/tvp/member/156`
 
-### Arthur （李继刚）
+## Arthur （李继刚）
 
 ### 个人介绍
 
@@ -112,7 +109,7 @@
 
 +   [李继刚等的prompt最佳实践](https://ywh1bkansf.feishu.cn/wiki/JTjPweIUWiXjppkKGBwcu6QsnGd#S3GadvCJ7onsfhxtysrcPkS3n0E)
 
-### 陈财猫
+## 陈财猫
 
 ### 个人介绍
 
@@ -124,9 +121,9 @@
 
 ### 文章
 
-+    可操作，可复现的chatGPT prompting方法论“BORE”
++   可操作，可复现的chatGPT prompting方法论“BORE”
 
-### **一泽Eze**
+## 一泽Eze
 
 ### 个人介绍
 
@@ -140,7 +137,7 @@
 
 +   [即刻](https://web.okjike.com/u/541e16ce-7faa-4476-ba8a-6b6c8971c75b)
 
-### 蓝衣剑客
+## 蓝衣剑客
 
 ### 个人介绍
 
@@ -160,7 +157,7 @@
 
 +   [AI-Agent 系列](https://langgptai.feishu.cn/wiki/Lvgmw54WxieEQvkJesbc11FMnDc)
 
-### FaFa
+## FaFa
 
 ### 个人介绍
 
@@ -170,9 +167,7 @@
 
 +   [FlowGPT 社区](https://flowgpt.com/)
 
->
-
-### **万能的小七姐**
+## 万能的小七姐
 
 ### 个人介绍
 
@@ -196,7 +191,7 @@
 
 +   [小七姐：HR工具-通过连续对话生成JD和面试题参考](https://waytoagi.feishu.cn/wiki/W4uIwQczaiWMFAkd8RTc1ZRynvb?from=from_copylink)
 
-### 谢广志（全网基本统一ID）
+## 谢广志（全网基本统一ID）
 
 ### 个人介绍
 
@@ -206,13 +201,13 @@
 
 +   [即刻](https://okjk.co/dpkEGH)
 
-+    [Twitter](https://twitter.com/Lumosous)
++   [Twitter](https://twitter.com/Lumosous)
 
 +   独立开发作品：[App Store](https://apps.apple.com/developer/id1552871946) , [Google Play](https://play.google.com/store/apps/dev?id=6600056662611762016)
 
 +   🛰️👸号：不二广志
 
-### 李京京（Jason Li）
+## 李京京（Jason Li）
 
 ### 个人介绍
 
@@ -224,7 +219,7 @@
 
 +   🛰️👸号: AI 投什么
 
-### **nimbus**
+## nimbus
 
 ### 个人介绍
 
@@ -240,18 +235,16 @@
 
 +   我用这10个Prompt提示词做了产品经理AI助手
 
->
+## 鞠宏儒（大橘）
 
-### 鞠宏儒（大橘）
-
-## 个人介绍
+### 个人介绍
 
 > 杭州AI创业公司产品经理，四年持续创业者
 
-## 链接 & 项目
+### 链接 & 项目
 
 +   [视频评论区无限流水军](https://langgptai.feishu.cn/wiki/QwEJwXIfyiK3oCkw9cQcaLhZnpc)
 
-+   web产品：www.yituai.cn/
++   web产品：`www.yituai.cn/`
 
 +   抖音：大橘&AI

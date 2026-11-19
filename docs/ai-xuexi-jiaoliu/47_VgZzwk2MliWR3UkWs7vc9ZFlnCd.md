@@ -1,3 +1,4 @@
+
 # 如何3D建模
 
 > 来源：[https://zcareers.feishu.cn/docx/KNhCdTbJTokeNoxx7xac79iYnec](https://zcareers.feishu.cn/docx/KNhCdTbJTokeNoxx7xac79iYnec)
@@ -10,12 +11,12 @@
 
 即梦AI
 
-下载地址https://jimeng.jianying.com/s/iPfaBeDF/?t=-4
+下载地址：<https://jimeng.jianying.com/s/iPfaBeDF/?t=-4>
 
 ![](img/1bf2fa39e6cf63794f8555c3245e08aa.png)
 
 Tripo AI
 
-https://www.tripo3d.ai/app?invite_code=NQ9IUW
+<https://www.tripo3d.ai/app?invite_code=NQ9IUW>
 
 ![](img/2b47c379670f27145fd92a74dd6245a9.png)

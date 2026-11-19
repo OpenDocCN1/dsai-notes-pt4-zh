@@ -1,3 +1,4 @@
+
 # 利用AI展示出你孩子未来的样子
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/W3yOd4xQ0orLxyxSSeqc5Bxnnhb](https://jalicvoygc0.feishu.cn/docx/W3yOd4xQ0orLxyxSSeqc5Bxnnhb)
@@ -6,7 +7,7 @@
 
 ![](img/73305df8c00236542b16abbda37d2ad2.png)
 
-# AI生成的后代
+## AI生成的后代
 
 芝加哥的广播公司ABC7报道称，一款名为Remini的生成AI应用在TikTok上走红，声称可以通过AI技术展示用户未来孩子的模样。
 
@@ -20,7 +21,7 @@
 
 她补充道：“AI可以接受你的照片并生成这个图像，而且非常逼真。”
 
-# 末日螺旋
+## 末日螺旋
 
 然而，安全专家对此持有保留意见。毕竟，任何需要生物识别数据的程序都值得审查，而在这种情况下，至少在理论上，你提供的数据可能特别宝贵。
 
@@ -30,7 +31,7 @@
 
 ![](img/76a575bed0c1763a1ed0849a62e91d3c.png)
 
-# **表现正常**
+## 表现正常
 
 虽然这听起来相当反乌托邦，但我们对于未来如何使用AI生成的数据知之甚少；至少在目前，对于向AI工具提供个人数据要保持谨慎可能是明智之举。
 
@@ -42,7 +43,7 @@ Barton告诉ABC7说：“如果你要使用它，要明白其中存在风险。�
 
 引用：https://futurism.com/the-byte/app-ai-children
 
-##### 继续浏览全站内容：
+### 继续浏览全站内容：
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

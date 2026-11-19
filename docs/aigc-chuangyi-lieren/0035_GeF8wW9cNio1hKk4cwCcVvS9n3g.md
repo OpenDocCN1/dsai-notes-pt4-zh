@@ -1,3 +1,4 @@
+
 # AI每日资讯2024-01
 
 > 来源：[https://aigcreative.feishu.cn/docx/B6eodIaQCo3wvjxHGIJceFsSnLb](https://aigcreative.feishu.cn/docx/B6eodIaQCo3wvjxHGIJceFsSnLb)
@@ -20,13 +21,13 @@ OpenAI今日宣布GPT Mentions功能现已上线。该功能支持用户在ChatG
 
 这样可以实现调用多个机器人的联动操作，完成一个任务
 
-阿里的跳舞视频功能开放了，可支持生成自定义的动作，能转成不同风格，还可以制作新年贺卡视频，功能还蛮多的https://g.alicdn.com/dancing-video-gen/dancing-video-web/1.2.9/sharemodule/index.html?vid=DDER4E
+阿里的跳舞视频功能开放了，可支持生成自定义的动作，能转成不同风格，还可以制作新年贺卡视频，功能还蛮多的 https://g.alicdn.com/dancing-video-gen/dancing-video-web/1.2.9/sharemodule/index.html?vid=DDER4E
 
 ## 【20240126】动态 | 凌晨，OpenAI对ChatGPT做了以下重要更新
 
-1、新文本嵌入模型：发布了小型和大型文本嵌入模型text-embedding-3-small和text-embedding-3-large。这些模型通过将文本转换为数值向量，提高了语义理解能力。在多语言检索和英语任务基准上，性能得到显著提升。大型模型还支持缩短嵌入以节约成本，同时保持优越性能。
+1、新文本嵌入模型：发布了小型和大型文本嵌入模型`text-embedding-3-small`和`text-embedding-3-large`。这些模型通过将文本转换为数值向量，提高了语义理解能力。在多语言检索和英语任务基准上，性能得到显著提升。大型模型还支持缩短嵌入以节约成本，同时保持优越性能。
 
-2、GPT-4 Turbo预览模型：推出新的gpt-4-0125-preview模型，改进了代码生成和修复了懒惰行为及非英语UTF-8生成错误。
+2、GPT-4 Turbo预览模型：推出新的`gpt-4-0125-preview`模型，改进了代码生成和修复了懒惰行为及非英语UTF-8生成错误。
 
 3、免费审核模型：提供免费审核模型API，增强内容安全性。
 

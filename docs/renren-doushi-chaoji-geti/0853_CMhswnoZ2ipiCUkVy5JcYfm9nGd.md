@@ -1,8 +1,9 @@
+
 # 2024-01-20赚钱就是复制，谁赚钱就复制谁
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/EHZPdsPcaoAoyWxrJjncDjbUnBd](https://xuqiwei1986.feishu.cn/docx/EHZPdsPcaoAoyWxrJjncDjbUnBd)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/Xiv8mKhsqtsIYyJDyQCsRg)q.com/s/Xiv8mKhs...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/Xiv8mKhsqtsIYyJDyQCsRg)q.com/s/Xiv8mKhs...
 
 原创 熊猫会长 熊猫会长 2024-01-20 23:22 发表于 四川
 
@@ -10,9 +11,9 @@
 
 ![](img/bfef895a2abcc08e0812bb5080aa1fb2.png)
 
-“ **赚钱就是复制，谁赚钱就复制谁 **”这是盗坤经常讲的一句话。
+“赚钱就是复制，谁赚钱就复制谁”是盗坤经常讲的一句话。
 
-“ **不创新，只打劫 **”某头部mcn的策略。
+“不创新，只打劫”是某头部mcn的策略。
 
 对于普通创业者，暂时放弃情怀，放弃节操，最快活下来的方式就是复制（chao）。
 
@@ -24,7 +25,7 @@
 
 ![](img/9fe3914b74d0006c504232eb80f4ace4.png)
 
-**一、放下 **
+## 一、放下
 
 对于草根，对于一无所有的人，对于第一次创业的人，对于没有钱的人，对于刚出学校的学生。如果想快速赚到钱。那就是复制。复制身边优秀的人，或者复制某个事情。别不好意思，大胆抄作业（能抄到的情况下）。
 
@@ -36,17 +37,15 @@
 
 我在这次创业里并没有放下。
 
-**二、复制谁 **
+## 二、复制谁
 
 复制谁这个问题确实非常重要。是核心的战略选择问题。
 
-**基本上应该满足以下几个条件： **
+### 基本上应该满足以下几个条件：
 
-1、能找到至少5～10个相似的成功案例，并且真实
-
-2、自己的条件和资源能和目标项目高度匹配
-
-3、确认现在项目还有空间，而不是进入了垄断阶段
+1. 能找到至少5～10个相似的成功案例，并且真实
+2. 自己的条件和资源能和目标项目高度匹配
+3. 确认现在项目还有空间，而不是进入了垄断阶段
 
 ![](img/b16bcfadd5a70c0d534b36f7de3d04d2.png)
 
@@ -58,29 +57,24 @@
 
 我当时就抓到了28推牟老师这个人，然后进入了他所在的圈子，看到了新的机会。否则我什么都不是。
 
-作为成熟创业者（老板），他们更是建议 一定要把情报工作列为重点工作去做（这是我们以前不够重视的） 。老板的工作不仅仅是管理内部工作，还应该去外部获取信息，获得情报。
+作为成熟创业者（老板），他们更是建议 一定要把情报工作列为重点工作去做（这是我们以前不够重视的）。老板的工作不仅仅是管理内部工作，还应该去外部获取信息，获得情报。
 
 比如最基本的行业发展趋势，竞争对手详细情况，新机会等等，一定要足够清晰如数家珍。
 
-**最基本的策略可能有几个方面： **
+### 最基本的策略可能有几个方面：
 
-1、加入各种社群、圈子、私董会
-
-2、和各种优秀老师、大佬，做到信息沟通
-
-3、优秀同行的交流、数据分析、调研
-
-4、行业数据平台的分析总结
-
-5、内部的小圈子
-
-6、卧底学习等
+1. 加入各种社群、圈子、私董会
+2. 和各种优秀老师、大佬，做到信息沟通
+3. 优秀同行的交流、数据分析、调研
+4. 行业数据平台的分析总结
+5. 内部的小圈子
+6. 卧底学习等
 
 感觉找到优秀案例并了解清楚，已经成功了一半了。
 
 小到现在我们做账号，依然是先必须找10～30个对标案例。找不到就坚决不去做。这个事儿得贯穿始终。
 
-**四、正确的复制姿势 **
+## 四、正确的复制姿势
 
 这里最容易出现的问题是，复制姿势不对。我们原计划复制a，但是学习了abcdef。最终复制出一个“g”的四不像。
 
@@ -90,7 +84,7 @@
 
 百事可乐是不是曾经抄袭了可口可乐，麦当劳是不是曾经超级了肯德基？不得而知。
 
-**四、什么时候创新 **
+## 四、什么时候创新
 
 并不是说不创新，而是分阶段。
 
@@ -104,18 +98,12 @@
 
 -END-
 
-**推荐阅读：**
+## 推荐阅读
 
-**《 **[**谈长期主义的人是不是傻逼 **](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632589&idx=1&sn=ed9a1df66838001b4cf5ec483caf526d&chksm=beafe12e89d868382c1e53b6b3439d98e45db41ae25dcaba4b64855c3bae5e3bbc17c0a19ca9&scene=21#wechat_redirect)**》****
-
-《**[** 年收入做到五十万已经很不错了**](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632583&idx=1&sn=76433f79c4cf0a26a6029bb7d60dfc6b&chksm=beafe12489d86832e57786291b16cedada23b806058c58cbc757540da824cc9806824da05db0&scene=21#wechat_redirect)** ****》
-
-**[**《 镰刀手的世**](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632519&idx=1&sn=130bfcdf02a402ad99bd6ee48d61d1af&chksm=beafe16489d86872e7578f40e419ecd23d51e1ef5bc6c682aae7741d2198cad3f3b7c6a54d2a&scene=21#wechat_redirect)**界**** 》**[**
-
-《 一个好IP，至少赚五年**](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632612&idx=1&sn=8e4ec76f7f0cbc48993e53eddc37c4ab&chksm=beafe10789d868115db888872394e450e2a4b0fd775be7567e826cac6b7f8e79661ff7d9b133&scene=21#wechat_redirect)**的钱**** 》**[**
-
-《 我最钦佩的两个成都**](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632498&idx=1&sn=3a910d51863520ee3289e6f1cf570bc1&chksm=beafe09189d86987d368fa3c61f6cf7db6a045cc949c1f86f37cf03e17e69f62df0fc3d7ea14&scene=21#wechat_redirect)**餐****饮人**[** 》
-
-《 圈子对了，事**](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632488&idx=1&sn=1a8f8d7784c7909e08550d3f317ef57d&chksm=beafe08b89d8699d8372e722adc159a0a6f2435e7bebc29a5d7e42e9ef41673f908606b43286&scene=21#wechat_redirect)**儿****就成**[**了 》
-
-《 一万月**](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632461&idx=1&sn=1de945828c2ac8fcfe3bc96d822d0702&chksm=beafe0ae89d869b8f1ae6cb7afbf72951df93b27ec74602f896414369435bbf7f5adac1b4872&scene=21#wechat_redirect)**薪**这座大山 》
+- 《[谈长期主义的人是不是傻逼](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632589&idx=1&sn=ed9a1df66838001b4cf5ec483caf526d&chksm=beafe12e89d868382c1e53b6b3439d98e45db41ae25dcaba4b64855c3bae5e3bbc17c0a19ca9&scene=21#wechat_redirect)》
+- 《[ 年收入做到五十万已经很不错了](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632583&idx=1&sn=76433f79c4cf0a26a6029bb7d60dfc6b&chksm=beafe12489d86832e57786291b16cedada23b806058c58cbc757540da824cc9806824da05db0&scene=21#wechat_redirect)》
+- 《[ 镰刀手的世](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632519&idx=1&sn=130bfcdf02a402ad99bd6ee48d61d1af&chksm=beafe16489d86872e7578f40e419ecd23d51e1ef5bc6c682aae7741d2198cad3f3b7c6a54d2a&scene=21#wechat_redirect)界 》
+- 《 一个好IP，至少赚五年[的钱](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632612&idx=1&sn=8e4ec76f7f0cbc48993e53eddc37c4ab&chksm=beafe10789d868115db888872394e450e2a4b0fd775be7567e826cac6b7f8e79661ff7d9b133&scene=21#wechat_redirect) 》
+- 《 我最钦佩的两个成都[餐饮人](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632498&idx=1&sn=3a910d51863520ee3289e6f1cf570bc1&chksm=beafe09189d86987d368fa3c61f6cf7db6a045cc949c1f86f37cf03e17e69f62df0fc3d7ea14&scene=21#wechat_redirect) 》
+- 《 圈子对了，事[儿就成](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632488&idx=1&sn=1a8f8d7784c7909e08550d3f317ef57d&chksm=beafe08b89d8699d8372e722adc159a0a6f2435e7bebc29a5d7e42e9ef41673f908606b43286&scene=21#wechat_redirect)了 》
+- 《 一万月[薪](http://mp.weixin.qq.com/s?__biz=MjM5MTQ0NzgyMA==&mid=2649632461&idx=1&sn=1de945828c2ac8fcfe3bc96d822d0702&chksm=beafe0ae89d869b8f1ae6cb7afbf72951df93b27ec74602f896414369435bbf7f5adac1b4872&scene=21#wechat_redirect)这座大山 》

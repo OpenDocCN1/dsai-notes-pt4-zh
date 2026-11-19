@@ -1,3 +1,4 @@
+
 # 今日热点 | AI 初创公司 Artisan 博眼球口号“停止雇用人类”，这种“愤怒诱饵”的营销策略值得借鉴吗？
 
 > 来源：[https://aithinkup.feishu.cn/docx/JsM4dmrynokzACxeKDRcs0EVnCg](https://aithinkup.feishu.cn/docx/JsM4dmrynokzACxeKDRcs0EVnCg)

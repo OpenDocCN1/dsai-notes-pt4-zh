@@ -1,8 +1,8 @@
+
 # 神器：去除Gemini中生图产生的水印
 
 > 来源：[https://aigcreative.feishu.cn/docx/KKJWdK3MDooC6yxSn1rcVClMn7c](https://aigcreative.feishu.cn/docx/KKJWdK3MDooC6yxSn1rcVClMn7c)
-
-> 网址：https://banana.ovo.re/
+> 网址：`https://banana.ovo.re/`
 
 ![](img/551b57ba6ff397b818c839ea71c7a7c2.png)
 

@@ -1,3 +1,4 @@
+
 # DeepSeek+RagFlow+Dify：本地知识库检索（Windows）
 
 > 来源：[https://datawhaler.feishu.cn/docx/NaywdsIXKoJRkXx1VXRcolG7ngg](https://datawhaler.feishu.cn/docx/NaywdsIXKoJRkXx1VXRcolG7ngg)
@@ -12,19 +13,19 @@
 
 > 阅读时间：10分钟
 
-# 安装dify
+## 安装dify
 
-+   确保电脑上安装了docker，git，vscode三个软件
++   确保电脑上安装了`docker`，`git`，`vscode`三个软件
 
 +   Windows Docker 安装 | 菜鸟教程
 
-+   git：https://cloud.tencent.com/developer/article/2099150
++   `git`：https://cloud.tencent.com/developer/article/2099150
 
-+   vscode：https://zhuanlan.zhihu.com/p/264785441
++   `vscode`：https://zhuanlan.zhihu.com/p/264785441
 
-+   开始安装dify
++   开始安装`dify`
 
-首先在文件夹中点击鼠标右键，open git bash here，之后执行命令：git clone https://github.com/langgenius/dify.git --branch 0.15.3。完成后关闭git bash窗口，可以看到有一个dify的文件夹，打开这个文件夹并进入到docker文件夹下，右键菜单栏点击在终端中打开。
+首先在文件夹中点击鼠标右键，`open git bash here`，之后执行命令：`git clone https://github.com/langgenius/dify.git --branch 0.15.3`。完成后关闭`git bash`窗口，可以看到有一个`dify`的文件夹，打开这个文件夹并进入到`docker`文件夹下，右键菜单栏点击在终端中打开。
 
 ![](img/0a4d776b8111442fd14c8889d2c1684a.png)
 
@@ -43,31 +44,31 @@ docker compose -p dify up -d
 
 ![](img/43b00e07ef89822604d6f54b92d5ed22.png)
 
-看到9个容器都在运行中即是部署成功了。此时打开docker容器可以看到dify后端运行情况：
+看到9个容器都在运行中即是部署成功了。此时打开`docker`容器可以看到`dify`后端运行情况：
 
 ![](img/971eb540dd3cf4b0150cdec38837ddd8.png)
 
-+   解决端口冲突
+### 解决端口冲突
 
-找到上次存放ragflow的文件夹，进入docker中，用vscode打开docker-compose.yml文件，修改其中的端口。
+找到上次存放`ragflow`的文件夹，进入`docker`中，用`vscode`打开`docker-compose.yml`文件，修改其中的端口。
 
 ![](img/9cc3d416aff88804d6e378cadcaa3627.png)
 
 ![](img/69c17b14fe7279eae114462baf18cd41.png)
 
-之后在此文件夹（路径一定要正确，相当于在特定的房间里启动这台机器）下右键打开命令行，输入： docker compose up -d
+之后在此文件夹（路径一定要正确，相当于在特定的房间里启动这台机器）下右键打开命令行，输入：`docker compose up -d`
 
-可以看到ragflow服务也成功启动了，避免了端口冲突。当然这里也可以命名为ragflow服务docker compose -p ragflow up -d
+可以看到`ragflow`服务也成功启动了，避免了端口冲突。当然这里也可以命名为`ragflow`服务`docker compose -p ragflow up -d`
 
 ![](img/14833028d345561d0008ce5a5e13723a.png)
 
-# 搭建本地问答系统
+## 搭建本地问答系统
 
-## 创建ragflow知识库+ragflow api
+### 创建ragflow知识库+ragflow api
 
-这里我们可以继续选择使用deepseek的api来搭建，也可以设置为本地或者其他服务的接口。
+这里我们可以继续选择使用`deepseek`的`api`来搭建，也可以设置为本地或者其他服务的接口。
 
-输入网址：localhost:8080 打开ragflow界面，填入注册的账号和密码登录。
+输入网址：`localhost:8080` 打开`ragflow`界面，填入注册的账号和密码登录。
 
 ![](img/6801bb31586d639cd42628451efd9406.png)
 
@@ -81,9 +82,9 @@ docker compose -p dify up -d
 
 ![](img/879a17228a3be6ff748abb2acb4f72f8.png)
 
-这一步我们创建ragflow的API，以便之后接入dify中。
+这一步我们创建`ragflow`的`API`，以便之后接入`dify`中。
 
-## ragflow进行本地问答
+### ragflow进行本地问答
 
 +   进行检索测试，测试检索命中准确度如何
 
@@ -105,19 +106,19 @@ docker compose -p dify up -d
 
 ![](img/dab5326b2fd1349b24f4cfc03d6732cb.png)
 
-# Dify与ragflow联通
+### Dify与ragflow联通
 
-同样的我们在浏览器地址栏输入：localhost:80 即可打开Dify
+同样的我们在浏览器地址栏输入：`localhost:80` 即可打开`Dify`
 
 ![](img/28b7a533b9695f23fa27677575c3d1fb.png)
 
 ![](img/85906dbd2864c828271aeeb9824ce493.png)
 
-**图中第4步骤需要填本地ip地址，http://本**地IP:8080/api/v1/dify
+图中第4步骤需要填本地`ip`地址，`http://本地IP:8080/api/v1/dify`
 
-apikey为上一步创建的ragflow api，复制填入即可。
+`apikey`为上一步创建的`ragflow api`，复制填入即可。
 
-本地ip 查看方法：打开powershell，输入 ipconfig，找到下图对应的IPv4地址：
+本地`ip` 查看方法：打开`powershell`，输入 `ipconfig`，找到下图对应的`IPv4`地址：
 
 ![](img/f83794fb575d168a1b575ebe6a267b6b.png)
 
@@ -133,7 +134,7 @@ apikey为上一步创建的ragflow api，复制填入即可。
 
 可以看到我们的知识库是调用成功了。
 
-# Dify的使用
+## Dify的使用
 
 ![](img/f8bb8a9e40f35fa078e6bffd4ed7bf50.png)
 
@@ -141,28 +142,31 @@ apikey为上一步创建的ragflow api，复制填入即可。
 
 ![](img/f91dc6615163d1c89563c81c17d8568e.png)
 
-我们可以看到这里有非常多的模型配置选择，在ragflow中有embedding模型和rerank模型，不过它们都没有发布为api，无法调用。这里我们可以去硅基流动平台或者阿里百炼平台或者火山引擎，它们都提供了多种模型的api服务，申请api后填入key即可，个人觉得其中硅基流动的api使用起来比较方便。
+我们可以看到这里有非常多的模型配置选择，在`ragflow`中有`embedding`模型和`rerank`模型，不过它们都没有发布为`api`，无法调用。这里我们可以去硅基流动平台或者阿里百炼平台或者火山引擎，它们都提供了多种模型的`api`服务，申请`api`后填入`key`即可，个人觉得其中硅基流动的`api`使用起来比较方便。
 
 ![](img/4bc8f58d96592c8bbacf3667481eddfe.png)
 
-在探索页面有非常多的应用开发模板提供，按照自己的应用场景选择合适的即可，比如我想要一个社会学领域知识深度搜索的应用，就选择DeepResearch模板。
+在探索页面有非常多的应用开发模板提供，按照自己的应用场景选择合适的即可，比如我想要一个社会学领域知识深度搜索的应用，就选择`DeepResearch`模板。
 
 ![](img/4c671e751143aad4406b2467b667b034.png)
 
-最后我们开发好工作流应用就可以啦，把配置好的应用发布为服务或者API都可以。
+最后我们开发好工作流应用就可以啦，把配置好的应用发布为服务或者`API`都可以。
 
-关于Dify的使用放在后续的教程中哦。Dify与coze非常[微学习17 | Coze：生成书籍推荐卡片](https://datawhaler.feishu.cn/wiki/U2N0w3qNSinGlLkd2o6ckBSTnBc)，想学习的小伙伴可先行移步coze教程
+关于`Dify`的使用放在后续的教程中哦。`Dify`与`coze`非常[微学习17 | Coze：生成书籍推荐卡片](https://datawhaler.feishu.cn/wiki/U2N0w3qNSinGlLkd2o6ckBSTnBc)，想学习的小伙伴可先行移步`coze`教程
 
-# 应用启动与更新
+## 应用启动与更新
 
-1.  应用启动：打开docker界面，把对应的容器服务全部开启。
+### 应用启动
+
+打开`docker`界面，把对应的容器服务全部开启。
 
 ![](img/bec334d67c5f9cfd0c1687c365dbc077.png)
 
-浏览器分别输入：localhost:80 与 localhost:8080 打开dify 和 ragflow。
+浏览器分别输入：`localhost:80` 与 `localhost:8080` 打开`dify` 和 `ragflow`。
 
-1.  应用更新：
-在对应的文件夹位置打开命令行，更新哪个就在哪个文件夹（docker文件夹）下打开，并键入以下命令：
+### 应用更新
+
+在对应的文件夹位置打开命令行，更新哪个就在哪个文件夹（`docker`文件夹）下打开，并键入以下命令：
 
 ```
 docker compose down
@@ -173,8 +177,8 @@ docker compose up -d
 
 同时，请更新环境变量配置：
 
-+   如果 .env.example 文件有更新，请同步更新您本地的 .env 文件。
++   如果 `.env.example` 文件有更新，请同步更新您本地的 `.env` 文件。
 
-+   检查 .env 文件中的所有配置项，确保它们与您的实际运行环境相匹配。您可能需要将 .env.example 文件中的新变量和更新后的值添加到 .env 文件中。
++   检查 `.env` 文件中的所有配置项，确保它们与您的实际运行环境相匹配。您可能需要将 `.env.example` 文件中的新变量和更新后的值添加到 `.env` 文件中。
 
-# To do list
+## To do list

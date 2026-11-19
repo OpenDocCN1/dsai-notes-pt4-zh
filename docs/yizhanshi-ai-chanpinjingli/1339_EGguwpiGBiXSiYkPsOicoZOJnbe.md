@@ -1,14 +1,15 @@
+
 # Langchain —— 工具/函数调用
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/FjTgdszEtome3rxcg7ecqw19nch](https://v11enp9ok1h.feishu.cn/docx/FjTgdszEtome3rxcg7ecqw19nch)
 
 LLM 的一个令人兴奋的用例是为其他“工具”构建自然语言接口，无论是 API、函数、数据库等。LangChain 非常适合构建此类接口，因为它具有：
 
-+   良好的模型输出解析，可以轻松地从模型输出中提取 JSON、XML、OpenAI 函数调用等。
++ 良好的模型输出解析，可以轻松地从模型输出中提取 JSON、XML、OpenAI 函数调用等。
 
-+   大量内置[工具](https://python.langchain.com/v0.1/docs/integrations/tools/)。
++ 大量内置[工具](https://python.langchain.com/v0.1/docs/integrations/tools/)。
 
-+   在调用这些工具的方式上提供了很大的灵活性。
++ 在调用这些工具的方式上提供了很大的灵活性。
 
 使用工具主要有两种方式：[链和](https://python.langchain.com/v0.1/docs/modules/chains/)[代理](https://python.langchain.com/v0.1/docs/modules/agents/)。
 
@@ -20,7 +21,7 @@ LLM 的一个令人兴奋的用例是为其他“工具”构建自然语言接�
 
 ![](img/0ac939e0edb30ffbe90843eed58aef84.png)
 
-# 快速入门
+## 快速入门
 
 我们需要为本指南安装以下软件包：
 
@@ -34,6 +35,6 @@ LLM 的一个令人兴奋的用例是为其他“工具”构建自然语言接�
 import getpass
 import os
 
-# os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
-# os.environ[&quot;LANGCHAIN_API_KEY&quot;] = getpass.getpass()
+# os.environ["LANGCHAIN_TRACING_V2"] = "true"
+# os.environ["LANGCHAIN_API_KEY"] = getpass.getpass()
 ```

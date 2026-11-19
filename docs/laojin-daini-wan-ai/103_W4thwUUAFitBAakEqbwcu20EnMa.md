@@ -1,10 +1,13 @@
+
 # Job Interview Simulator Prompt
 
 > 来源：[https://my.feishu.cn/docx/JQMqdBLcPox0aPxHBybcjnsCn2c](https://my.feishu.cn/docx/JQMqdBLcPox0aPxHBybcjnsCn2c)
 
-**使用场景或用例：**帮助求职者准备面试，通过角色扮演方式获得针对性提问与反馈，提升应答信心与表现。
+## 使用场景或用例：
 
-**提示词：**
+帮助求职者准备面试，通过角色扮演方式获得针对性提问与反馈，提升应答信心与表现。
+
+## 提示词：
 
 ```
 You are my job interview simulator.  

@@ -1,14 +1,15 @@
+
 # TradingAgents：多智能体LLM金融Agent
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/AiaodXIcioiS7Txr0HMcduI6nu3](https://qqs7y1hozd1.feishu.cn/docx/AiaodXIcioiS7Txr0HMcduI6nu3)
 
 ## TradingAgents 框架
 
-TradingAgents 是一个模拟真实交易公司运作模式的多智能体交易框架。TradingAgents 和传统的量化交易或单一 AI 模型的不同在于—“多智能体（Multi-Agent）”的 LLM 金融交易框架。
+`TradingAgents` 是一个模拟真实交易公司运作模式的多智能体交易框架。`TradingAgents` 和传统的量化交易或单一 AI 模型的不同在于—“多智能体（Multi-Agent）”的 LLM 金融交易框架。
 
 ![](img/9da6fe97564c3f17666a764b5e6e71b0.png)
 
-可以把 TradingAgents 想象成一家顶级的投资公司，只不过里面的“员工”全都是由 AI 智能体扮演！每个智能体都拥有特定的专业知识和角色，能够进行动态讨论和协同决策。
+可以把 `TradingAgents` 想象成一家顶级的投资公司，只不过里面的“员工”全都是由 AI 智能体扮演！每个智能体都拥有特定的专业知识和角色，能够进行动态讨论和协同决策。
 
 ### 不同视角的分析师团队
 
@@ -26,19 +27,19 @@ TradingAgents 是一个模拟真实交易公司运作模式的多智能体交易
 
 ### 专门辩论的研究员
 
-让不同观点的**看涨研究员**和**看跌研究员**进行结构化辩论：
+让不同观点的看涨研究员和看跌研究员进行结构化辩论：
 
 ![](img/100400898ec3c707d27458aeb05a8dae.png)
 
-+   **看涨研究员：** 积极寻找市场中的利好因素，例如行业发展机遇、公司创新成果等，构建支持投资的逻辑，并提供论据支持。
++   看涨研究员：积极寻找市场中的利好因素，例如行业发展机遇、公司创新成果等，构建支持投资的逻辑，并提供论据支持。
 
-+   **看跌研究员：** 捕捉潜在的风险信号和不利因素，例如宏观经济下行压力、公司竞争劣势等，并提出反驳意见和风险警示。
++   看跌研究员：捕捉潜在的风险信号和不利因素，例如宏观经济下行压力、公司竞争劣势等，并提出反驳意见和风险警示。
 
 ### 操盘手交易员
 
 ![](img/799545357d6e7241b48a651023d45d75.png)
 
-**交易员智能体会综合考虑：**
+交易员智能体会综合考虑：
 
 > 市场深度和流动性： 决定交易规模，避免对市场造成不必要的冲击。
 
@@ -56,15 +57,15 @@ TradingAgents 是一个模拟真实交易公司运作模式的多智能体交易
 
 ![](img/6b6f36384ca3e952d49f1e4845a6ae04.png)
 
-> 例如，当某只股票的价格出现显著下跌，并接近预设的止损价位时，风险管理团队会及时提醒交易员智能体采取相应的应对措施，以最大限度地减少潜在损失。
+例如，当某只股票的价格出现显著下跌，并接近预设的止损价位时，风险管理团队会及时提醒交易员智能体采取相应的应对措施，以最大限度地减少潜在损失。
 
 ## 核心技术解密
 
-TradingAgents 的论文中详细阐述了几个关键的技术亮点：
+`TradingAgents` 的论文中详细阐述了几个关键的技术亮点：
 
-### LangGraph 驱动的工作流
+### `LangGraph` 驱动的工作流
 
-TradingAgents 采用了先进的“工厂模式（Factory Pattern）”来创建智能体，结合 LangGraph 构建了动态工作流，让不同的 LLM 智能体之间进行有状态的对话和决策路径切换，形成智能体之间的“高速公路”。
+`TradingAgents` 采用了先进的“工厂模式（Factory Pattern）”来创建智能体，结合 `LangGraph` 构建了动态工作流，让不同的 LLM 智能体之间进行有状态的对话和决策路径切换，形成智能体之间的“高速公路”。
 
 这种高度模块化和可配置的设计，使得系统能够：
 
@@ -78,13 +79,13 @@ TradingAgents 采用了先进的“工厂模式（Factory Pattern）”来创建
 
 ### 多模态数据融合：让 AI 看到“全景图”
 
-**TradingAg**ents 具备强大的多模态数据融合能力。它能同时融合：
+`TradingAgents` 具备强大的多模态数据融合能力。它能同时融合：
 
-+   **结构化数据：** 如财务报表、交易数据、宏观经济指标等。
++   结构化数据：如财务报表、交易数据、宏观经济指标等。
 
-+   **非结构化文本数据：** 如新闻报道、社交媒体信息、公司公告等。
++   非结构化文本数据：如新闻报道、社交媒体信息、公司公告等。
 
-从这些复杂且多样化的数据中精准提取关键信息，TradingAgents 能够记那些跨模态的关联分析，提升市场预测的准确性。
+从这些复杂且多样化的数据中精准提取关键信息，`TradingAgents` 能够记那些跨模态的关联分析，提升市场预测的准确性。
 
 ![](img/747c86e0e26227a76b7c60c2ae64168d.png)
 
@@ -92,17 +93,17 @@ TradingAgents 采用了先进的“工厂模式（Factory Pattern）”来创建
 
 通过回测奖励机制可以根据市场的实时变化快速调整策略，实现持续学习进化。
 
-TradingAgents 构建了持续学习的决策链条：
+`TradingAgents` 构建了持续学习的决策链条：
 
-+   **实时反馈：** 根据实际的市场表现，接收到实时反馈。
++   实时反馈：根据实际的市场表现，接收到实时反馈。
 
-+   **奖励信号：** 成功的交易或有效的风险控制会生成正向奖励信号。
++   奖励信号：成功的交易或有效的风险控制会生成正向奖励信号。
 
-+   **模型优化：** 这些奖励信号被用于持续优化 LLM 的提示、智**能体间的交互规则，**以及决策参数，形成一个闭环学习的良性循环。
++   模型优化：这些奖励信号被用于持续优化 LLM 的提示、智能体间的交互规则，以及决策参数，形成一个闭环学习的良性循环。
 
 这就像一个经验丰富的交易员，在每一次交易中不断复盘、学习、成长！
 
-研究团队喂给了 TradingAgents 以下相关内容，包括：
+研究团队喂给了 `TradingAgents` 以下相关内容，包括：
 
 +   实时股价 & 60+ 技术指标（MACD、RSI 等）
 
@@ -114,7 +115,7 @@ TradingAgents 构建了持续学习的决策链条：
 
 +   宏观经济和政府政策更新
 
-**然后将 Tr**adingAgents 的表现与五大传统策略（比如“买入持有”、MACD 均线、KDJ+RSI 组合等）进行了对比。TradingAgents 平均碾压基线策略 6-24 个百分点。
+然后将 `TradingAgents` 的表现与五大传统策略（比如“买入持有”、MACD 均线、KDJ+RSI 组合等）进行了对比。`TradingAgents` 平均碾压基线策略 6-24 个百分点。
 
 ![](img/9edb04f2e352aa9656a6a82e76d6548d.png)
 
@@ -124,7 +125,7 @@ TradingAgents 构建了持续学习的决策链条：
 
 ### 安装
 
-克隆 TradingAgents 仓库：
+克隆 `TradingAgents` 仓库：
 
 使用您偏好的环境管理工具创建虚拟环境：
 
@@ -147,7 +148,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=$YOUR_OPENAI_API_KEYexport ALPHA_VANTAGE_API_KEY=$YOUR_ALPHA_VANTAGE_API_KEY
 ```
 
-或者，您可以在项目根目录中创建一个包含 API 密钥的 .env 文件（请参考 .env.example）：
+或者，您可以在项目根目录中创建一个包含 API 密钥的 `.env` 文件（请参考 `.env.example`）：
 
 ```
 cp .env.example .env# Edit .env with your actual API keys
@@ -163,21 +164,19 @@ python -m cli.main
 
 界面将显示可选参数：股票代码、日期、大语言模型、研究深度等。
 
-
 运行时会实时显示加载结果，可追踪代理执行进度。
-
 
 ![](img/42b6791b5483882ac603cede2ec8f46b.png)
 
-## TradingAgents包
+## `TradingAgents`包
 
 ### 实现细节
 
-采用LangGraph构建TradingAgents以保证灵活性和模块化。实验中使用o1-preview和gpt-4o分别作为深度思考与快速思考的大语言模型。但测试时建议使用o4-mini和gpt-4.1-mini以节省成本，因本框架会发起大量API调用。
+采用`LangGraph`构建`TradingAgents`以保证灵活性和模块化。实验中使用o1-preview和gpt-4o分别作为深度思考与快速思考的大语言模型。但测试时建议使用o4-mini和gpt-4.1-mini以节省成本，因本框架会发起大量API调用。
 
 ### Python调用
 
-在代码中导入tradingagents模块并初始化TradingAgentsGraph()对象。.propagate()函数将返回决策结果。可运行main.py，以下是快速示例：
+在代码中导入`tradingagents`模块并初始化`TradingAgentsGraph()`对象。`.propagate()`函数将返回决策结果。可运行`main.py`，以下是快速示例：
 
 ```
 from tradingagents.graph.trading_graph import TradingAgentsGraph
@@ -186,7 +185,7 @@ from tradingagents.default_config import DEFAULT_CONFIG
 ta = TradingAgentsGraph(debug=True, config=DEFAULT_CONFIG.copy())
 
 # forward propagate
-_, decision = ta.propagate(&quot;NVDA&quot;, &quot;2024-05-10&quot;)
+_, decision = ta.propagate("NVDA", "2024-05-10")
 print(decision)
 
 ```
@@ -199,25 +198,25 @@ from tradingagents.default_config import DEFAULT_CONFIG
 
 # Create a custom config
 config = DEFAULT_CONFIG.copy()
-config[&quot;deep_think_llm&quot;] = &quot;gpt-4.1-nano&quot;  # Use a different model
-config[&quot;quick_think_llm&quot;] = &quot;gpt-4.1-nano&quot;  # Use a different model
-config[&quot;max_debate_rounds&quot;] = 1  # Increase debate rounds
+config["deep_think_llm"] = "gpt-4.1-nano"  # Use a different model
+config["quick_think_llm"] = "gpt-4.1-nano"  # Use a different model
+config["max_debate_rounds"] = 1  # Increase debate rounds
 
 # Configure data vendors (default uses yfinance and Alpha Vantage)
-config[&quot;data_vendors&quot;] = {
-    &quot;core_stock_apis&quot;: &quot;yfinance&quot;,           # Options: yfinance, alpha_vantage, local
-    &quot;technical_indicators&quot;: &quot;yfinance&quot;,      # Options: yfinance, alpha_vantage, local
-    &quot;fundamental_data&quot;: &quot;alpha_vantage&quot;,     # Options: openai, alpha_vantage, local
-    &quot;news_data&quot;: &quot;alpha_vantage&quot;,            # Options: openai, alpha_vantage, google, local
+config["data_vendors"] = {
+    "core_stock_apis": "yfinance",           # Options: yfinance, alpha_vantage, local
+    "technical_indicators": "yfinance",      # Options: yfinance, alpha_vantage, local
+    "fundamental_data": "alpha_vantage",     # Options: openai, alpha_vantage, local
+    "news_data": "alpha_vantage",            # Options: openai, alpha_vantage, google, local
 }
 
 # Initialize with custom config
 ta = TradingAgentsGraph(debug=True, config=config)
 
 # forward propagate
-_, decision = ta.propagate(&quot;NVDA&quot;, &quot;2024-05-10&quot;)
+_, decision = ta.propagate("NVDA", "2024-05-10")
 print(decision)
 
 ```
 
-**【重**要提醒：TradingAgents 框架仅供研究用途哦。它的交易表现可能会因为模型、参数、数据等多种因素而异，而且它不构成财务、投资或交易建议！咱们玩归玩，闹归闹，投资有风险，入市需谨慎！】
+**【重要提醒：`TradingAgents` 框架仅供研究用途哦。它的交易表现可能会因为模型、参数、数据等多种因素而异，而且它不构成财务、投资或交易建议！咱们玩归玩，闹归闹，投资有风险，入市需谨慎！】**

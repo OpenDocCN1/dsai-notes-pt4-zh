@@ -1,3 +1,4 @@
+
 # 15.检索增强生成（RAG）与向量数据库
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/POOEdHPwqo8FWXxiaSGcBhQ1n0q](https://gotoaiworld.feishu.cn/docx/POOEdHPwqo8FWXxiaSGcBhQ1n0q)
@@ -84,8 +85,9 @@ RAG架构基于transformer模型，由编码器和解码器两部分组成。例
 
 我们将嵌入向量存储在向量数据库中，因为LLM对输入的token数量有限制。由于无法将整个嵌入向量直接传入LLM，我们需要将其拆分成块，当用户提问时，最相关的嵌入向量会与提示一起返回。拆分还能降低传入LLM的token数量，从而节省成本。
 
-常见的向量数据库包括Azure Cosmos DB、Clarifyai、Pinecone、Chromadb、ScaNN、Qdrant和DeepLake。您可以使用Azure CLI通过以下命令创建Azure Cosmos DB模型：
+常见的向量数据库包括Azure Cosmos DB、Clarifyai、Pinecone、Chromadb、ScaNN、Qdrant和DeepLake。您可以使用`Azure CLI`通过以下命令创建Azure Cosmos DB模型：
 
+```
 az login
 
 az group create -n <resource-group-name> -l <location>
@@ -93,22 +95,34 @@ az group create -n <resource-group-name> -l <location>
 az cosmosdb create -n <cosmos-db-name> -r <resource-group-name>
 
 az cosmosdb list-keys -n <cosmos-db-name> -g <resource-group-name>
+```
 
 ### 从文本到嵌入向量
 
 在存储数据之前，需要先将其转换为向量嵌入。如果处理的是大型文档或长文本，可以根据预期查询进行拆分。拆分可以在句子级别或段落级别进行。由于拆分依赖于周围词语的含义，您可以为拆分块添加额外上下文，例如文档标题或拆分块前后的文本。拆分示例如下：
 
-def split_text(text, max_length, min_length):words = text.split()chunks = []current_chunk = []
+```
+def split_text(text, max_length, min_length):
+    words = text.split()
+    chunks = []
+    current_chunk = []
 
-for word in words:current_chunk.append(word)if len(' '.join(current_chunk)) < max_length and len(' '.join(current_chunk)) > min_length:chunks.append(' '.join(current_chunk))current_chunk = []
+    for word in words:
+        current_chunk.append(word)
+        if len(' '.join(current_chunk)) < max_length and len(' '.join(current_chunk)) > min_length:
+            chunks.append(' '.join(current_chunk))
+            current_chunk = []
 
-# If the last chunk didn't reach the minimum length, add it anywayif current_chunk:chunks.append(' '.join(current_chunk))
+    # If the last chunk didn't reach the minimum length, add it anyway
+    if current_chunk:
+        chunks.append(' '.join(current_chunk))
 
-return chunks
+    return chunks
+```
 
-拆分后，我们可以使用不同的嵌入模型对文本进行嵌入。一些可用模型包括word2vec、OpenAI的ada-002、Azure计算机视觉等。选择模型时需考虑所用语言、编码内容类型（文本/图像/音频）、可编码的输入大小以及嵌入输出长度。
+拆分后，我们可以使用不同的嵌入模型对文本进行嵌入。一些可用模型包括`word2vec`、`OpenAI`的`ada-002`、`Azure计算机视觉`等。选择模型时需考虑所用语言、编码内容类型（文本/图像/音频）、可编码的输入大小以及嵌入输出长度。
 
-以下是使用OpenAI的text-embedding-ada-002模型嵌入“cat”一词的示例：
+以下是使用OpenAI的`text-embedding-ada-002`模型嵌入“cat”一词的示例：
 
 ## 检索与向量搜索
 
@@ -128,7 +142,7 @@ return chunks
 
 +   混合搜索：结合关键词搜索和向量搜索。
 
-检索的挑战在于当数据库中没有与查询相似的回答时，系统会返回最接近的信息。您可以通过设置最大相关距离或使用结合关键词和向量搜索的混合搜索来优化结果。本课将使用混合搜索，将数据存储在包含拆分块和嵌入向量的dataframe中。
+检索的挑战在于当数据库中没有与查询相似的回答时，系统会返回最接近的信息。您可以通过设置最大相关距离或使用结合关键词和向量搜索的混合搜索来优化结果。本课将使用混合搜索，将数据存储在包含拆分块和嵌入向量的`dataframe`中。
 
 ### 向量相似度
 
@@ -140,43 +154,76 @@ return chunks
 
 进行检索前，需要为知识库构建搜索索引。索引存储嵌入向量，即使在大型数据库中也能快速检索最相似的拆分块。我们可以本地创建索引，示例如下：
 
-from sklearn.neighbors import NearestNeighborsembeddings = flattened_df['embeddings'].to_list()
+```
+from sklearn.neighbors import NearestNeighbors
+embeddings = flattened_df['embeddings'].to_list()
 
-# Create the search indexnbrs = NearestNeighbors(n_neighbors=5, algorithm='ball_tree').fit(embeddings)
+# Create the search index
+nbrs = NearestNeighbors(n_neighbors=5, algorithm='ball_tree').fit(embeddings)
 
-# To query the index, you can use the kneighbors methoddistances, indices = nbrs.kneighbors(embeddings)
+# To query the index, you can use the kneighbors method
+distances, indices = nbrs.kneighbors(embeddings)
+```
 
 ### 重新排序
 
 查询数据库后，可能需要对结果按相关性进行排序。重新排序的LLM利用机器学习提升搜索结果的相关性，将最相关的结果排在前面。使用Azure AI Search时，语义重新排序器会自动完成此操作。以下是基于最近邻的重新排序示例：
 
-# Find the most similar documentsdistances, indices = nbrs.kneighbors([query_vector])  index = [] # Print the most similar documentsfor i in range(3):index = indices[0][i]for index in indices[0]:print(flattened_df['chunks'].iloc[index])print(flattened_df['path'].iloc[index])print(flattened_df['distances'].iloc[index])else:print(f"Index {index} not found in DataFrame")
+```
+# Find the most similar documents
+distances, indices = nbrs.kneighbors([query_vector])
+index = []
+# Print the most similar documents
+for i in range(3):
+    index = indices[0][i]
+    for index in indices[0]:
+        print(flattened_df['chunks'].iloc[index])
+        print(flattened_df['path'].iloc[index])
+        print(flattened_df['distances'].iloc[index])
+    else:
+        print(f"Index {index} not found in DataFrame")
+```
 
 ## 综合应用
 
 最后一步是将LLM加入流程，以便基于我们的数据生成回答。实现示例如下：
 
-user_input = "what is a perceptron?"def chatbot(user_input):# Convert the question to a query vectorquery_vector = create_embeddings(user_input)
+```
+user_input = "what is a perceptron?"
 
-# Find the most similar documentsdistances, indices = nbrs.kneighbors([query_vector])
+def chatbot(user_input):
+    # Convert the question to a query vector
+    query_vector = create_embeddings(user_input)
 
-# add documents to query  to provide contexthistory = []for index in indices[0]:history.append(flattened_df['chunks'].iloc[index])
+    # Find the most similar documents
+    distances, indices = nbrs.kneighbors([query_vector])
 
-# combine the history and the user inputhistory.append(user_input)
+    # add documents to query to provide context
+    history = []
+    for index in indices[0]:
+        history.append(flattened_df['chunks'].iloc[index])
 
-# create a message objectmessages=[
+    # combine the history and the user input
+    history.append(user_input)
 
-{"role": "system", "content": "You are an AI assistant that helps with AI questions."},
+    # create a message object
+    messages = [
+        {"role": "system", "content": "You are an AI assistant that helps with AI questions."},
+        {"role": "user", "content": history[-1]}
+    ]
 
-{"role": "user", "content": history[-1]}
+    # use chat completion to generate a response
+    response = openai.chat.completions.create(
+        model="gpt-4",
+        temperature=0.7,
+        max_tokens=800,
+        messages=messages
+    )
 
-]
+    return response.choices[0].message
 
-# use chat completion to generate a responseresponse = openai.chat.completions.create(model="gpt-4",temperature=0.7,max_tokens=800,messages=messages
-
-)
-
-return response.choices[0].messagechatbot(user_input)
+chatbot(user_input)
+```
 
 ## 评估我们的应用
 

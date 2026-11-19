@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（12月 3日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/DQcwd6oDJoZGHPxOfxxcAbC3nmc](https://miracleplus.feishu.cn/docx/DQcwd6oDJoZGHPxOfxxcAbC3nmc)
 
-# 资讯
+## 资讯
 
 ### 英特尔CEO帕特·盖尔辛格退休，暂时由两位高管接任
 
@@ -52,7 +53,7 @@ https://mp.weixin.qq.com/s/H38mKX4crZK4LJpB1HrJ-A
 
 ![](img/6b48197c4fb5fbda620c83dc6edaaf10.png)
 
-# 推特
+## 推特
 
 ### World Labs分享早期成果：正在开发一套 AI 系统，可以通过一张图片生成 3D 世界
 
@@ -60,11 +61,11 @@ https://x.com/theworldlabs/status/1863617989549109328
 
 我们正在开发一套 AI 系统，可以通过一张图片生成 3D 世界！您可以在我们的网站上查看一些早期成果，并直接在浏览器中与这些场景进行交互！
 
-🌐 访[问我们的博客](https://worldlabs.ai/blog)
+🌐 [访问我们的博客](https://worldlabs.ai/blog)
 
 **World Labs 的目标**
 
-**我们希望**解决许**多创作**者在现有生成式 AI 模型中面临的挑战，例如 缺乏控制 和 一致性。我们的系统能够根据输入的图像：
+**我们希望**解决许多创作者在现有生成式 AI 模型中面临的挑战，例如缺乏控制和一致性。我们的系统能够根据输入的图像：
 
 • **估算 3D 几何**
 
@@ -76,7 +77,7 @@ https://x.com/theworldlabs/status/1863617989549109328
 
 **实时 3D 场景**
 
-我们的输出 3D 场景可以直接在浏览器中实时渲染，支持完全的相机控制。这**意味着**您可以像在电子游戏中一样自由移动摄像机，甚至模拟 3D 摄像机效果，例如 浅景深 或 摇镜头变焦 (dolly zoom)。
+我们的输出 3D 场景可以直接在浏览器中实时渲染，支持完全的相机控制。这意味着您可以像在电子游戏中一样自由移动摄像机，甚至模拟 3D 摄像机效果，例如 浅景深 或 摇镜头变焦 (dolly zoom)。
 
 ![](img/f7906fb44dfd614d05c7deb46d221af6.png)
 
@@ -92,11 +93,11 @@ https://x.com/hume_ai/status/1863602702363639927
 
 我们的语音滑块让您可以直观地调节基础语音的 10 个可解释维度，包括：
 
-👃 鼻**音：**从共鸣到鼻音
+👃 鼻音：从共鸣到鼻音
 
-🎼 性**别感：**从男性化到女性化
+🎼 性别感：从男性化到女性化
 
-🎈 轻**快感：**从低沉到轻快
+🎈 轻快感：从低沉到轻快
 
 在下方线程中查看示例作品 👀
 
@@ -120,7 +121,7 @@ https://x.com/var_epsilon/status/1863645114679062587
 
 https://x.com/kiwicopple/status/1863616764942176668
 
-今天我们发布了 **@supabase** AI 助手 V2
+今天我们发布了 `@supabase` AI 助手 V2
 
 它就像数据库的 Cursor，即使是澳大利亚人也能用得上 ↓↓”
 
@@ -128,7 +129,7 @@ https://x.com/kiwicopple/status/1863616764942176668
 
 [ZSY6WwSpA_D-NgY3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Na0QbhuAHoeLVex4Y1ucDaSbnXf)
 
-# 信号
+## 信号
 
 ### Beyond Examples: High-level Automated Reasoning Paradigm in In-Context Learning via MCTS
 
@@ -146,7 +147,7 @@ https://x.com/kiwicopple/status/1863616764942176668
 
 ![](img/9d8307530b19cea4c5584977dc3eed19.png)
 
-# 产品
+## 产品
 
 ### Vela OS 创业投资者的决策系统
 
@@ -168,7 +169,7 @@ ACE Studio可以利用 MIDI 和歌词生成录音棚级自然歌唱人声。探�
 
 ![](img/81ac853a5082d7ad172dd4b540575953.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### AI TreasureBox
 
@@ -178,7 +179,7 @@ AI百宝箱是一个为研究者、开发者、创业者及对人工智能感兴
 
 ![](img/f98796eacfd6bc836f91e56a66f720d3.png)
 
-# 投融资
+## 投融资
 
 ### 杰夫·贝佐斯投资AI芯片制造商Tenstorrent，融资近7亿美元
 
@@ -210,9 +211,11 @@ Swish Ventures的启动反映了投资者对网络安全和AI领域日益增长�
 
 截至目前，Casspi管理的基金总资产约为1.25亿美元，Sheva基金的投资组合中包括Upwind（确认其市值为9亿美元）和PointFive等初创公司，后者曾将其前公司出售给Rapid7并成功筹集了3600万美元。
 
+
+
 ![](img/42ebb11ad38b7a1d84538812622efc98.png)
 
-### 欧洲AI基础设施公司Nebius获得7亿美元融资
+## 欧洲AI基础设施公司Nebius获得7亿美元融资
 
 https://techcrunch.com/2024/12/02/european-ai-infrastructure-company-nebius-nabs-700m-from-nvidia-accel-others/
 
@@ -230,7 +233,7 @@ Nebius公司计划通过混合模式发展其业务，包括共享数据中心�
 
 # 学习
 
-### CUDA-Reduce算子的实现及优化
+## CUDA-Reduce算子的实现及优化
 
 贡献人：
 
@@ -238,47 +241,47 @@ https://zhuanlan.zhihu.com/p/10110450979
 
 CUDA优化中的reduce算子通过并行化与内存优化显著提升了求和等计算的效率。以下是对其优化过程的总结：
 
-1.  基础版Reduce（base_reduce）： 在GPU中，基础的reduce操作是通过将输入数组中的所有值加起来，最终存入输出数组。这种方法并没有充分利用GPU的并行计算能力，效率较低。
+1. 基础版Reduce（`base_reduce`）： 在GPU中，基础的reduce操作是通过将输入数组中的所有值加起来，最终存入输出数组。这种方法并没有充分利用GPU的并行计算能力，效率较低。
 
-1.  优化一：共享内存与交错寻址（reduce_v1）： 使用共享内存代替全局内存来存储输入数据，并采用交错寻址（即每个线程处理不同步长的元素），使得计算从O(N)降至O(log N)。每个线程加载一个元素到共享内存，并在共享内存中进行树形规约操作。
+1. 优化一：共享内存与交错寻址（`reduce_v1`）： 使用共享内存代替全局内存来存储输入数据，并采用交错寻址（即每个线程处理不同步长的元素），使得计算从O(N)降至O(log N)。每个线程加载一个元素到共享内存，并在共享内存中进行树形规约操作。
 
-1.  **优化二：通过strided inde**x消除warp分化（reduce_v2）： 在reduce_v1中，由于条件判断，存在warp分化问题。通过调整stride，使得所有线程按相同的路径执行，避免了条件分支导致的warp分化，从而提升了性能。
+1. 优化二：通过strided index消除warp分化（`reduce_v2`）： 在`reduce_v1`中，由于条件判断，存在warp分化问题。通过调整stride，使得所有线程按相同的路径执行，避免了条件分支导致的warp分化，从而提升了性能。
 
-1.  优化三：消除共享内存中的bank冲突（reduce_v3）： 在共享内存中，多个线程同时访问同一bank的不同数据时，会发生bank冲突，导致性能下降。通过逆向处理访问顺序，即调整stride，从而消除冲突，进一步提高效率。
+1. 优化三：消除共享内存中的bank冲突（`reduce_v3`）： 在共享内存中，多个线程同时访问同一bank的不同数据时，会发生bank冲突，导致性能下降。通过逆向处理访问顺序，即调整stride，从而消除冲突，进一步提高效率。
 
-1.  优化四：让空闲线程参与计算（reduce_v4）： 在某些迭代阶段，部分线程为空闲状态。通过增加block的线程数并减小block数，使得更多线程参与计算，减少了空闲线程的浪费。
+1. 优化四：让空闲线程参与计算（`reduce_v4`）： 在某些迭代阶段，部分线程为空闲状态。通过增加block的线程数并减小block数，使得更多线程参与计算，减少了空闲线程的浪费。
 
-1.  优化五：最后一个warp不再同步（reduce_v5）： 最后几轮的计算仅涉及一个warp，可以避免不必要的__syncthreads()同步操作，减少资源浪费。
+1. 优化五：最后一个warp不再同步（`reduce_v5`）： 最后几轮的计算仅涉及一个warp，可以避免不必要的`__syncthreads()`同步操作，减少资源浪费。
 
-1.  优化六：展开for循环（reduce_v6）： 通过完全展开for循环，避免了每次迭代中的条件判断和加法指令，从而提高了效率。通过将每个线程处理多个元素，减少了线程管理的开销。
+1. 优化六：展开for循环（`reduce_v6`）： 通过完全展开for循环，避免了每次迭代中的条件判断和加法指令，从而提高了效率。通过将每个线程处理多个元素，减少了线程管理的开销。
 
-1.  **优化七：基于warp level的**shuffle操作（reduce_v7）： 使用__shfl_down_sync指令在warp内进行数据交换，无需共享内存，从而减少了内存访问延迟。每个warp内部使用shuffle操作合并部分和，再通过warp间的合并进一步减少内存带宽需求。
+1. 优化七：基于warp level的shuffle操作（`reduce_v7`）： 使用`__shfl_down_sync`指令在warp内进行数据交换，无需共享内存，从而减少了内存访问延迟。每个warp内部使用shuffle操作合并部分和，再通过warp间的合并进一步减少内存带宽需求。
 
-各个版本的优化效果显著。例如，在数据量为25600000时，reduce_v7通过warp级别的优化将执行时间从基础版本的1214ms降至1.476ms，展现了强大的性能提升。
+各个版本的优化效果显著。例如，在数据量为25600000时，`reduce_v7`通过warp级别的优化将执行时间从基础版本的1214ms降至1.476ms，展现了强大的性能提升。
 
 这些优化手段体现了GPU并行计算中内存访问优化、线程管理和计算精细化调度的重要性，能大幅提升reduce算子的执行效率。
 
 ![](img/b0a785a0f0b15dd3650927ae992bd1ca.png)
 
-### 从StreamingLLM到Massive Outlier、IntactKV和PrefixQuant
+## 从StreamingLLM到Massive Outlier、IntactKV和PrefixQuant
 
 https://zhuanlan.zhihu.com/p/9814639857
 
-自从Tim Dettmers在NeurIPS 2022提出LLM.int8()后，量化技术的研究重点逐渐集中于处理Outlier Activation，尤其是Massive Outlier。这类激活值的存在对模型的精度和量化效果产生了显著影响，催生了包括SmoothQuant、AWQ、RPTQ等一系列优秀量化算法。本文重点探讨了Massive Outlier的处理发展历程及其应用。
+自从Tim Dettmers在NeurIPS 2022提出`LLM.int8()`后，量化技术的研究重点逐渐集中于处理Outlier Activation，尤其是Massive Outlier。这类激活值的存在对模型的精度和量化效果产生了显著影响，催生了包括SmoothQuant、AWQ、RPTQ等一系列优秀量化算法。本文重点探讨了Massive Outlier的处理发展历程及其应用。
 
 最初，StreamingLLM提出了一种优化长文本推理的方法，通过引入window attention减少计算量和存储量。尽管这种方法在精度上有所损失，但发现初始token的KV值对结果影响巨大，被称为attention sink。初始token虽然语义不强，但它们通过自回归模型的特性吸引了大量注意力，成为了模型的偏置项。这一现象为后续对Massive Outlier的研究提供了基础。
 
 随后，CMU和Meta的研究人员在《Massive Activations in Large Language Models》一文中提出了Massive Outlier的概念，指出初始token及低语义token的激活值通常远高于均值，呈现出几个数量级的离群值。通过实验，研究表明Massive Outlier的存在对模型的效果和量化过程有重要影响。为此，研究人员提出将massive activation与普通激活区分开来，并引入可学习的参数k/v来替代Massive Outlier，从而平滑激活值并改善量化效果。
 
-基于这种思路，PrefixQuant应运而生，它通过离线处理Massive Outlier，将异常token放置在KVCache的前缀中，从而避免了推理过程中产生Massive Outlier。PrefixQuant通过结合smooth、rotate、reorder等经典等效操作，将激活量化从per-token转换为per-tensor量化，既能提升推理速度，又能保证精度。
+基于这种思路，PrefixQuant应运而生，它通过离线处理Massive Outlier，将异常token放置在`KVCache`的前缀中，从而避免了推理过程中产生Massive Outlier。PrefixQuant通过结合smooth、rotate、reorder等经典等效操作，将激活量化从per-token转换为per-tensor量化，既能提升推理速度，又能保证精度。
 
-另一种基于这一思想的应用是IntactKV，强调通过保留pivot token（如[BOS]、system prompt等）的KVCache精度，在量化的过程中减少误差积累。通过这种方式，IntactKV结合全精度和量化KVCache，采用混合精度来存储KVCache，从而提升推理精度。
+另一种基于这一思想的应用是IntactKV，强调通过保留pivot token（如`[BOS]`、system prompt等）的`KVCache`精度，在量化的过程中减少误差积累。通过这种方式，IntactKV结合全精度和量化`KVCache`，采用混合精度来存储`KVCache`，从而提升推理精度。
 
 总的来说，近年来在Massive Outlier的研究中，学者们深入理解了离群值对量化过程的影响，并提出了多种有效的处理方法。这些方法通过将激活值的离群特性等价为偏置，极大地减小了推理精度的损耗，同时提升了推理速度，预计将在未来成为各大框架的标准集成方法。
 
 ![](img/d24ca157dbe3a6ff11f29b04a3bd5c41.png)
 
-### 量子技术揭秘：打破谷歌量子计算的能效壁垒
+## 量子技术揭秘：打破谷歌量子计算的能效壁垒
 
 https://zhuanlan.zhihu.com/p/10413667245
 
@@ -300,7 +303,7 @@ https://zhuanlan.zhihu.com/p/10413667245
 
 ![](img/ed4fd949a175979057d3c8a450d18547.png)
 
-### RISC-V小组分享：11月技术动态
+## RISC-V小组分享：11月技术动态
 
 https://zhuanlan.zhihu.com/p/10225062516
 
@@ -334,7 +337,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

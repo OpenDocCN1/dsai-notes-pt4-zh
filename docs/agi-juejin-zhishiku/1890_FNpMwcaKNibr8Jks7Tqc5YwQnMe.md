@@ -1,8 +1,7 @@
-# 02.03-OpenAI 借 Reddit 论坛测试 AI 说服能力，太强可能会带来危险
-
-> 来源：[https://agijuejin.feishu.cn/docx/OS3zdFCBEos6kIx1eZpcHbNEnYE](https://agijuejin.feishu.cn/docx/OS3zdFCBEos6kIx1eZpcHbNEnYE)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 02 月 03 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/OS3zdFCBEos6kIx1eZpcHbNEnYE](https://agijuejin.feishu.cn/docx/OS3zdFCBEos6kIx1eZpcHbNEnYE)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -16,7 +15,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/828/349.htm)
 
 ![](img/e82df92dbe4225e69e73123be88e286d.png)
 
-2月3日消息，OpenAI利用Reddit子论坛r / ChangeMyView测试AI模型说服能力，收集用户帖子让模型写回复并评估比较。虽与Reddit有授权协议，但此次评估与其无关，获取数据方式及结果暂未公布。o3-mini在测试中表现未显著优于或劣于其他模型，但部分模型说服力处人类前80 - 90% 。OpenAI担心模型说服力过强带来危险，正开发应对措施。目前高质量测试数据集获取不易。
+2月3日消息，OpenAI利用Reddit子论坛`r / ChangeMyView`测试AI模型说服能力，收集用户帖子让模型写回复并评估比较。虽与Reddit有授权协议，但此次评估与其无关，获取数据方式及结果暂未公布。`o3-mini`在测试中表现未显著优于或劣于其他模型，但部分模型说服力处人类前80 - 90% 。OpenAI担心模型说服力过强带来危险，正开发应对措施。目前高质量测试数据集获取不易。
 
 ## 🌟 技术突破
 
@@ -34,20 +33,17 @@ IT之家 | [阅读原文](https://www.ithome.com/0/828/349.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/828/346.htm)
 
-
 当地时间2月2日，欧盟人工智能法案首批合规期限生效，可禁“不可接受风险”的AI系统。违规企业面临最高3500万欧元或上一财年年收入7%的罚款 。这些“不可接受风险”应用涵盖多种类型。英国律所技术主管Rob Sumroy称罚款8月生效。部分公司曾签人工智能契约，部分巨头未签。法案有例外情况，更多指导方针未公布，且现行法律与该法案的相互作用待明确。
 
 ### 💡 谷歌 X 实验室孵化 Heritable Agriculture：借 AI 提升农作物产量
 
 IT之家 | [阅读原文](https://www.ithome.com/0/828/344.htm)
 
-
 2月3日消息，谷歌“登月工厂”X孵化的Heritable Agriculture项目毕业。该初创企业利用数据和机器学习改善农作物种植，以减轻农业对地球资源压力，农业约占人为温室气体排放量25%。其创始人是Brad Zamft，公司利用机器学习分析植物基因组。目前专注传统方法，未涉基因编辑。已获种子轮融资，谷歌也有投资。去年谷歌裁员时，X开始积极剥离此类公司 。
 
 ### 💡 中国红客联盟：未收到任何来自 DeepSeek 求助请求，也从未与其有过任何形式合作或关联
 
 IT之家 | [阅读原文](https://www.ithome.com/0/828/342.htm)
-
 
 2月3日消息，中国红客联盟发布关于DeepSeek事件的声明，称未收到DeepSeek的求助请求，也从未与其有过任何合作或关联。提醒冒用其旗号的行为与联盟无关，呼吁公众面对网络信息保持理性，不信谣不传谣，发现冒用行为及时举报。联盟会关注DeepSeek事件动态，维护网络秩序 。
 

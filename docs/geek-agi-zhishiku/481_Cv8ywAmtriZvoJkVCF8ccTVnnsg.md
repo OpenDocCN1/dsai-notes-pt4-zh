@@ -1,12 +1,13 @@
+
 # Midjourney从零基础到落地实践
 
-> 来源：[https://geekbang.feishu.cn/docx/XDfFd4YBGo4RfrxUicQcaLuAn9e](https://geekbang.feishu.cn/docx/XDfFd4YBGo4RfrxUicQcaLuAn9e)
+> 来源：https://geekbang.feishu.cn/docx/XDfFd4YBGo4RfrxUicQcaLuAn9e
 
-> 👨 作者： yaoyao设计师
+> 👨 作者：yaoyao设计师
 
 > 📃 作者介绍：UX设计师
 
-> 🔗 原文链接： h[ttps://www.zcool.c](https://www.zcool.com.cn/work/ZNjUxNDUyMTY=.html)om.cn/work/ZNjUx...
+> 🔗 原文链接：https://www.zcool.com.cn/work/ZNjUxNDUyMTY=.html
 
 > ⏰ 收录时间：2024-06-21 16:57:36 (UTC+8)
 
@@ -29,6 +30,5 @@
 ![](img/13160533436ad4682969fdb1da1c1f35.png)
 
 ![](img/0152e10b2ff57cd826c725d636c4e1b8.png)
-
 
 ![](img/4ff63a819e488582eba793fdc657933b.png)

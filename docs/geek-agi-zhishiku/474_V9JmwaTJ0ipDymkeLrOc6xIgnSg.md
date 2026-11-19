@@ -1,14 +1,15 @@
+
 # 常用的6个AI绘图工具，国内国外都有！
 
 > 来源：[https://geekbang.feishu.cn/docx/GW21dV5vto9pfHx08nYc7yP8nUf](https://geekbang.feishu.cn/docx/GW21dV5vto9pfHx08nYc7yP8nUf)
-
+>
 > 👩 作者：赛博大表姐
-
+>
 > 📃 作者介绍：120万字小说作者，青岛AI企业家联盟导师，青岛市创业者协会人工智能专委会知识创业部副部长，自媒体创业者。
-
+>
 > ⏰ 收录时间：2024-05-31 15:45:58 (UTC+8)
-
-> 🔗 原文链接：  h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247484568&idx=1&sn=fc6752a8c693ba0e9634434275ffa61a&chksm=c1082157f67fa841ff57f48e198b9911ba94e71f4c74fcb059005575af99a43ec6d28f9c6510&token=1230547096&lang=zh_CN#rd)q.com/s?__biz=Mz...
+>
+> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247484568&idx=1&sn=fc6752a8c693ba0e9634434275ffa61a&chksm=c1082157f67fa841ff57f48e198b9911ba94e71f4c74fcb059005575af99a43ec6d28f9c6510&token=1230547096&lang=zh_CN#rd)q.com/s?__biz=Mz...
 
 ![](img/42062bc43d9ff70feb43830724a2391c.png)
 
@@ -16,27 +17,27 @@
 
 考虑到很多新人朋友刚接触AI，最难的就是在NNN多工具中挑一个“最”好用的开始，所以这篇文章非常有必要出现。
 
-**需要注意的是： **
+需要注意的是：
 
 这篇文章提到的是「我常用」的，而不是盲目的推荐。
 
-还**需要提前说一**点，AI本身就是个工具，文生图也好、文生视频也好，更是个工具中的工具，不要在乎哪个“最”好用，我个人觉得没有最好， 只有最适合 。
+还需要提前说一点，AI本身就是个工具，文生图也好、文生视频也好，更是个工具中的工具，不要在乎哪个“最”好用，我个人觉得没有最好， 只有最适合 。
 
-**而且工具太**多了，现在很多，以后会更多，千万 不要纠结 在要把所有工具都学会，那你就累死了……
+而且工具太多了，现在很多，以后会更多，千万 不要纠结 在要把所有工具都学会，那你就累死了……
 
-**学会底层的绘图逻辑 **，然后找1、2个或者2、3个深耕下去才是正事。
+学会底层的绘图逻辑，然后找1、2个或者2、3个深耕下去才是正事。
 
 排名不分先后，按我收藏夹里收藏的顺序
 
 ![](img/2ef443a254d34287c9708199d5b502f2.png)
 
-**一、国内篇**
+## 一、国内篇
 
-1、即梦Dreamina
+### 1、即梦Dreamina
 
 是否免费：免费
 
-网址：https://dreamina.jianying.com/ai-tool/home?subTab=
+网址：`https://dreamina.jianying.com/ai-tool/home?subTab=`
 
 ![](img/c88d2beaa672e1c6d66d8ec1923109e0.png)
 
@@ -48,11 +49,11 @@
 
 再就是它的文生视频每天60点免费额度，相当于你可以生成4次，而且现在还有了对口型的功能，但必须是会员才行（昨天吐槽的就是他们家…… ）
 
-2、奇域
+### 2、奇域
 
 是否免费： 免费
 
-网址：https://www.qiyuai.net/
+网址：`https://www.qiyuai.net/`
 
 ![](img/927e92a04b067c97015eb81626ca9233.png)
 
@@ -62,11 +63,11 @@
 
 每天签到有100点额度，也就是说最多可以生成100张图，真的够用了……
 
-3、通义万相
+### 3、通义万相
 
 是否免费：免费
 
-网址： https://tongyi.aliyun.com/wanxiang/
+网址：`https://tongyi.aliyun.com/wanxiang/`
 
 ![](img/b97aabe8105b690835a188f50b98f9f3.png)
 
@@ -74,21 +75,21 @@
 
 通义万相最大的特色就是艺术字，今年超级符号火了，但不是人人都有能力用SD画一个超级符号，通义万相的艺术字相当于简约版的超级符号，要求不那么高的话，真可以试试。
 
-4、腾讯混元助手
+### 4、腾讯混元助手
 
 是否免费：免费
 
-网址：https://hunyuan.tencent.com/
+网址：`https://hunyuan.tencent.com/`
 
 ![](img/75709814c67b527698f7828c4f4a56bf.png)
 
 有点类似于Chatgpt4.0的DELL-E，可以在对话中画图，而且质量不差，语义理解也挺好，混元是个宝藏啊，发现得晚了一些。
 
-5、智谱清言
+### 5、智谱清言
 
 是否免费：免费
 
-网址：https://chatglm.cn/
+网址：`https://chatglm.cn/`
 
 ![](img/3466dfb2eea906671ff74b80c2261708.png)
 
@@ -96,18 +97,17 @@
 
 大爱无言
 
-
 对于智谱想说的太多，反而不知道该从何说起， 后面安排一篇文吧，给它 一点排面
 
 ![](img/b9e053a1d3e5365dfa0d48c7c75ed3e8.png)
 
-**二、国外篇**
+## 二、国外篇
 
 我只用一个：Midjourney
 
 是否免费：收费
 
-官网网址：https://www.midjourney.com/home
+官网网址：`https://www.midjourney.com/home`
 
 ![](img/91812f270d95f5843022914698f14de2.png)
 

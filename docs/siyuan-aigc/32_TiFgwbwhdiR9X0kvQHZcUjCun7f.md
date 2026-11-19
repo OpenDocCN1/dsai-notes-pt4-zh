@@ -1,61 +1,49 @@
+
 # 10w+ 阅读 高质文章汇总
 
-> 来源：[https://my.feishu.cn/docx/IEJydFDWSoMQfJxZeY6cf8sonBf](https://my.feishu.cn/docx/IEJydFDWSoMQfJxZeY6cf8sonBf)
+> 来源：https://my.feishu.cn/docx/IEJydFDWSoMQfJxZeY6cf8sonBf
 
-+   真·万字长文:可能是全网最晚的chatgpt技术总结
+- 真·万字长文:可能是全网最晚的chatgpt技术总结
+  https://zhuanlan.zhihu.com/p/613698929
 
-https://zhuanlan.zhihu.com/p/613698929
+- ChatGPT的前世今生
+  https://m.huxiu.com/article/803841.html?type=text
 
-+   **ChatGPT的前世今生**
+- 完全由ChatGPT写作的稿件
+  https://mp.weixin.qq.com/s/z4oCpAfYQJo2qeuZ7a8O0A
 
-https://m.huxiu.com/article/803841.html?type=text
+- ChatGPT在县城，时髦年轻人已经用它吊打同事了
+  https://mp.weixin.qq.com/s/zDWD0YkrH6UVXMiXPe6S5A
 
-+   **完全由ChatGPT写作的稿件**
+- ChatGPT全宇宙大爆炸！
+  https://mp.weixin.qq.com/s/Rh1j47aVoAAtd5cLX3hhrA
 
-[https://mp.weixin.qq.com/s/z4](https://mp.weixin.qq.com/s/z4oCpAfYQJo2qeuZ7a8O0A)oCpAfYQJo2qeuZ7a8O0A
+- 想玩好ChatGPT？不妨看看这篇文章
+  https://mp.weixin.qq.com/s/y8NxJnQlaub96357UQz05w
 
-+   ChatGPT在县城，时髦年轻人已经用它吊打同事了
+- 风暴眼中的ChatGPT：世界已经永远改变了
+  https://mp.weixin.qq.com/s/Fkp_lFA1ycdH9tZ4saxdQw
 
-[https://mp.weixin.qq.com/s/zD](https://mp.weixin.qq.com/s/zDWD0YkrH6UVXMiXPe6S5A)WD0YkrH6UVXMiXPe6S5A
+- ChatGPT对人类社会最为根本的改变，将发生在教育领域
+  https://mp.weixin.qq.com/s/qZgHbxjFXWnzseCnrfa3wA
 
-+   **ChatGPT全宇宙大爆炸！**
+- GPT-4发布！ChatGPT大升级！太太太太强了！
+  https://mp.weixin.qq.com/s/QXfDSR1KXZ5k-KQgXwxevA
 
-[https://mp.weixin.qq.com/s/Rh](https://mp.weixin.qq.com/s/Rh1j47aVoAAtd5cLX3hhrA)1j47aVoAAtd5cLX3hhrA
+- 从 ChatGPT 怎么念，到人们为啥害怕它，这篇文章都讲透
+  https://mp.weixin.qq.com/s/wtup0ZhBA2dPZaYiVcjNFg
 
-+   想玩好ChatGPT？不妨看看这篇文章
+- ChatGPT突然爆火！网友称“好用到吓人”
+  https://mp.weixin.qq.com/s/51lnn6rs8YpyxilHatOvmQ
 
-[https://mp.weixin.qq.com/s/y8](https://mp.weixin.qq.com/s/y8NxJnQlaub96357UQz05w)NxJnQlaub96357UQz05w
+- 超速走红的ChatGPT，为什么可能重构我们？
+  https://mp.weixin.qq.com/s/li5njvYDRvBBD4Ch5dtlDQ
 
-+   风暴眼中的ChatGPT：世界已经永远改变了
+- ChatGPT会怎么样改变世界和中国？
+  https://mp.weixin.qq.com/s/Fv_rNZnqQaWURkT-yBDaWA
 
-[https://mp.weixin.qq.com/s/Fk](https://mp.weixin.qq.com/s/Fkp_lFA1ycdH9tZ4saxdQw)p_lFA1ycdH9tZ4saxdQw
+- ChatGPT可能马上取代你，这是它能做的十个工作
+  https://mp.weixin.qq.com/s/Pc7qOrunniOt-UllPO8FTQ
 
-+   ChatGPT对人类社会最为根本的改变，将发生在教育领域
-
-[https://mp.weixin.qq.com/s/qZ](https://mp.weixin.qq.com/s/qZgHbxjFXWnzseCnrfa3wA)gHbxjFXWnzseCnrfa3wA
-
-+   GPT-4发布！ChatGPT大升级！太太太太强了！
-
-[https://mp.weixin.qq.com/s/QX](https://mp.weixin.qq.com/s/QXfDSR1KXZ5k-KQgXwxevA)fDSR1KXZ5k-KQgXwxevA
-
-+   [从 ChatGPT 怎么念，到人们为啥害怕它，这篇文章都讲](https://mp.weixin.qq.com/s/wtup0ZhBA2dPZaYiVcjNFg)透 https://mp.weixin.qq.com/s/wtup0ZhBA2dPZaYiVcjNFg
-
-+   ChatGPT突然爆火！网友称“好用到吓人”
-
-[https://mp.weixin.qq.com/s/51](https://mp.weixin.qq.com/s/51lnn6rs8YpyxilHatOvmQ)lnn6rs8YpyxilHatOvmQ
-
-+   超速走红的ChatGPT，为什么可能重构我们？
-
-[https://mp.weixin.qq.com/s/li](https://mp.weixin.qq.com/s/li5njvYDRvBBD4Ch5dtlDQ)5njvYDRvBBD4Ch5dtlDQ
-
-+   ChatGPT会怎么样改变世界和中国？
-
-[https://mp.weixin.qq.com/s/Fv](https://mp.weixin.qq.com/s/Fv_rNZnqQaWURkT-yBDaWA)_rNZnqQaWURkT-yBDaWA
-
-+   ChatGPT可能马上取代你，这是它能做的十个工作
-
-[https://mp.weixin.qq.com/s/Pc](https://mp.weixin.qq.com/s/Pc7qOrunniOt-UllPO8FTQ)7qOrunniOt-UllPO8FTQ
-
-+   别煽动焦虑了，ChatGPT还抢不动打工人的饭碗
-
-[https://mp.weixin.qq.com/s/pw](https://mp.weixin.qq.com/s/pwyGXPNSywoM1sOsgxXP9Q)yGXPNSywoM1sOsgxXP9Q
+- 别煽动焦虑了，ChatGPT还抢不动打工人的饭碗
+  https://mp.weixin.qq.com/s/pwyGXPNSywoM1sOsgxXP9Q

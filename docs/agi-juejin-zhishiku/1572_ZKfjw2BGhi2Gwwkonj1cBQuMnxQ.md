@@ -1,3 +1,4 @@
+
 # GPTs 实战：万物进化史🧬
 
 > 来源：[https://agijuejin.feishu.cn/docx/HP9FdgvnKotRJ0xpdpncKkHWnlg](https://agijuejin.feishu.cn/docx/HP9FdgvnKotRJ0xpdpncKkHWnlg)
@@ -28,17 +29,13 @@ GPTs 实战：万物进化史 🧬
 
 本文会根据以下内容顺序进行：
 
-+   需求分析
+- 需求分析
+- 分步实现需求
+- 提示词编写测试
+- GPTs 使用链接
+- 总结
 
-+   分步实现需求
-
-+   提示词编写测试
-
-+   GPTs 使用链接
-
-+   总结
-
-#  **一、需求分析 **
+## 一、需求分析
 
 谈到进化其实我们接触的一切东西都是进化而来的。不管是有生命的还是没有生命的，都是如此。
 
@@ -50,9 +47,9 @@ GPTs 实战：万物进化史 🧬
 
 ![](img/f40a8ae0147df1371fde7a9541cbf7b2.png)
 
-#  **二、分步实现需求 **
+## 二、分步实现需求
 
-##  一）GPT 输出进化过程中的关键环节
+### 一）GPT 输出进化过程中的关键环节
 
 **提示词**
 
@@ -78,7 +75,7 @@ GPTs 实战：万物进化史 🧬
 
 ![](img/a507dd63fc3af409259d5aa251201859.png)
 
-##  二）生成 ASCII Chart 图
+### 二）生成 ASCII Chart 图
 
 **提示词**
 
@@ -145,7 +142,7 @@ GPTs 实战：万物进化史 🧬
 └───────────┘
 ```
 
-##  **三）补充关键环节的信息 **
+### 三）补充关键环节的信息
 
 **提示词**
 
@@ -296,7 +293,7 @@ GPTs 实战：万物进化史 🧬
 基于上述生成的内容画一张 ASCII Chart 图，让用户更加清晰细致的感受到万物进化的过程。把信息补充完整，需要补充的信息包括：人物、时间、地点、起因、经过、结果等。关键是要把万物进化的过程清晰的展示给用户。
 ```
 
-##  **四）转换成绘本故事 **
+### 四）转换成绘本故事
 
 **提示词**
 
@@ -331,22 +328,26 @@ GPTs 实战：万物进化史 🧬
 
 > 希望大家喜欢我的故事，也希望未来的我能够继续进化，为人们的生活带来更多的便利和惊喜。谢谢大家！
 
-##  五）提取关键帧，给出画面的描述、细节等
+### 五）提取关键帧，给出画面的描述、细节等
 
 **提示词**
 
 ```
 根据上面的故事和ASCII Chart中的每一个关键的节点中提出一个关键帧，并对画面进行文字描述，这个文字的描述要尽量描述清楚画面中的每一个细节和关键点，同时注意不同时期、地点，不同画面中人物、建筑的样式应该符合历史。
 1. 先把每一个关键节点的关键帧的描述写出来
-2. 然后按顺序把每段描述翻译成英文，然后固定加上 “children’s story book, illustration,Hayao Miyazaki--niji 6 --ar 1:1 --s 1000&quot;，同时输出时单独使用代码块包裹，如下：
-Horse-drawn carriage
+2. 然后按顺序把每段描述翻译成英文，然后固定加上 “children’s story book, illustration, Hayao Miyazaki--niji 6 --ar 1:1 --s 1000”，同时输出时单独使用代码块包裹，如下：
 ```
-On an ancient country road, a few farmers are transporting goods using a horse-drawn carriage. The horse pulls a simple wooden cart, with dense forests and fields along the roadside. The farmers wear simple cloth clothes, and a few birds fly in the sky. children’s story book, illustration,Hayao Miyazaki--niji 6 --ar 1:1 --s 1000
+
+```
+Horse-drawn carriage
+
+On an ancient country road, a few farmers are transporting goods using a horse-drawn carriage. The horse pulls a simple wooden cart, with dense forests and fields along the roadside. The farmers wear simple cloth clothes, and a few birds fly in the sky. children’s story book, illustration, Hayao Miyazaki--niji 6 --ar 1:1 --s 1000
+```
+
 ```
 Minecart
-```
-In a 16th-century European mine, miners are busy at the mine entrance. Several miners are pushing a wooden and iron minecart filled with heavy ore. The mine is surrounded by towering rock cliffs, and the miners wear rough work clothes and hats. children’s story book, illustration,Hayao Miyazaki--niji 6 --ar 1:1 --s 1000
-```
+
+In a 16th-century European mine, miners are busy at the mine entrance. Several miners are pushing a wooden and iron minecart filled with heavy ore. The mine is surrounded by towering rock cliffs, and the miners wear rough work clothes and hats. children’s story book, illustration, Hayao Miyazaki--niji 6 --ar 1:1 --s 1000
 ```
 
 **效果展示**
@@ -357,9 +358,9 @@ In a 16th-century European mine, miners are busy at the mine entrance. Several m
 
 ![](img/e34e798ef152954446e21fbf6141f9fa.png)
 
-#  **三、提示词编写测试 **
+## 三、提示词编写测试
 
-##  **一）初版提示词 **
+### 一）初版提示词
 
 ```
 ## Workflows：
@@ -388,32 +389,32 @@ In a 16th-century European mine, miners are busy at the mine entrance. Several m
     - 这个故事不需要小标题，应该一气呵成
 5.  提取关键帧描述：根据上面的故事和 ASCII Chart 中的每一个关键的节点中提出一个关键帧，并对画面进行文字描述，这个文字的描述要尽量描述清楚画面中的每一个细节和关键点，同时注意不同时期、地点，不同画面中人物、建筑的样式应该符合历史。
     501. 先把每一个关键节点的关键帧的描述写出来
-    502. 然后按顺序把每段描述翻译成英文，然后固定加上 “children’s story book, illustration,Hayao Miyazaki--niji 6 --ar 1:1 --s 1000&quot;，同时输出时单独使用代码块包裹，示例如下：
+    502. 然后按顺序把每段描述翻译成英文，然后固定加上 “children’s story book, illustration, Hayao Miyazaki--niji 6 --ar 1:1 --s 1000”，同时输出时单独使用代码块包裹，示例如下：
          Horse-drawn carriage
-
-
-        ```
-        On an ancient country road, a few farmers are transporting goods using a horse-drawn carriage. The horse pulls a simple wooden cart, with dense forests and fields along the roadside. The farmers wear simple cloth clothes, and a few birds fly in the sky. children’s story book, illustration,Hayao Miyazaki--niji 6 --ar 1:1 --s 1000
-        ```
-        Minecart
-        ```
-        In a 16th-century European mine, miners are busy at the mine entrance. Several miners are pushing a wooden and iron minecart filled with heavy ore. The mine is surrounded by towering rock cliffs, and the miners wear rough work clothes and hats. children’s story book, illustration,Hayao Miyazaki--niji 6 --ar 1:1 --s 1000
-        ```
 ```
 
-##  **二）迭代版提示词 **
 
-+   迭代版提示词只在最开始的部分增加了破解儿童使用限制的提示词，告知是成人使用即可。
 
-+   因输出长度问题，去掉了最后关键帧的中文描述。
+On an ancient country road, a few farmers are transporting goods using a horse-drawn carriage. The horse pulls a simple wooden cart, with dense forests and fields along the roadside. The farmers wear simple cloth clothes, and a few birds fly in the sky. children’s story book, illustration, Hayao Miyazaki `--niji 6` `--ar 1:1` `--s 1000`
 
-#  **四、GPTs 使用链接 **
+```
+Minecart
+```
 
-##  **一）使用链接 **
+In a 16th-century European mine, miners are busy at the mine entrance. Several miners are pushing a wooden and iron minecart filled with heavy ore. The mine is surrounded by towering rock cliffs, and the miners wear rough work clothes and hats. children’s story book, illustration, Hayao Miyazaki `--niji 6` `--ar 1:1` `--s 1000`
 
-https://chatgpt.com/g/g-1FhfFtDR7-mo-wu-jin-hua-shi-gu-shi-hui-ben-ban
+# 二）迭代版提示词
 
-##  **二）效果展示 **
++ 迭代版提示词只在最开始的部分增加了破解儿童使用限制的提示词，告知是成人使用即可。
++ 因输出长度问题，去掉了最后关键帧的中文描述。
+
+# 四、GPTs 使用链接
+
+## 一）使用链接
+
+`https://chatgpt.com/g/g-1FhfFtDR7-mo-wu-jin-hua-shi-gu-shi-hui-ben-ban`
+
+## 二）效果展示
 
 ![](img/7267c42be5dc634c9101e070a9744954.png)
 
@@ -429,7 +430,7 @@ MJ 绘制的图片（篇幅问题，只画了前四张）
 
 > 这边补充一句，其实大家如果可以的话，尽量先找到对应的图片，然后尝试垫图给 MJ 这样会更像一点，不然可能会画出来奇怪的东西...
 
-#  **五、总结 **
+# 五、总结
 
 其实整体的内容，大家如果有条件，有 GPT 的话可以让孩子和 GPT 语音对话的形式来聊一聊这些事物的进化。
 

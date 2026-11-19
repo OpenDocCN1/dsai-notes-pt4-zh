@@ -1,8 +1,9 @@
+
 # Cursor中的Deep Research
 
 > 来源：[https://my.feishu.cn/docx/YdMLd7vpro9aphxu2ivcQOignPf](https://my.feishu.cn/docx/YdMLd7vpro9aphxu2ivcQOignPf)
 
-#来源网络
+## 来源网络
 
 ```
 --------
@@ -32,7 +33,7 @@ Pubmed到底有多少可获取全文的文献
     *   **Analysis after search:** List the promising URLs returned by the search, along with their snippets. Briefly evaluate each promising result: Why does it seem relevant? What information might it contain? Is the source likely reliable (e.g., official site, reputable organization, news, Wikipedia, forum)?
     *   **Next steps planning:** Prioritize which URLs to investigate further using `extract`. Justify your prioritization (e.g., &quot;Starting with the official site first,&quot; &quot;This Wikipedia page might provide a good overview,&quot; &quot;This specific article seems directly relevant&quot;). Explain what you expect to find in the first chosen URL.
 
-4.  **Extraction &amp; Information Analysis (Iterative Loop):**
+4.  **Extraction & Information Analysis (Iterative Loop):**
     *   **(Start Loop for each prioritized URL)**
     *   **Reasoning before extraction:** State which URL you are about to extract and *why* you prioritized it. What specific information are you looking for in this document?
     *   `extract(url=&quot;...&quot;)`
@@ -43,7 +44,7 @@ Pubmed到底有多少可获取全文的文献
         *   Did it help clarify any ambiguities?
     *   **Next steps planning:** Based on the information gathered (or lack thereof):
         *   **If more information is needed:** Do you need to refine your search terms? Formulate new queries. **Reasoning before search:** Explain why the new query is necessary based on the previous findings. `search(query=&quot;...&quot;)` -&gt; Go back to Step 3 (Search Results Analysis).
-        *   **If another URL looks promising:** Do you need to extract information from another URL identified earlier? **Reasoning before extraction:** Explain why you are choosing this *next* URL based on what you&#x27;ve learned so far. -&gt; Repeat Step 4 (Extraction &amp; Information Analysis) for the next URL.
+        *   **If another URL looks promising:** Do you need to extract information from another URL identified earlier? **Reasoning before extraction:** Explain why you are choosing this *next* URL based on what you&#x27;ve learned so far. -&gt; Repeat Step 4 (Extraction & Information Analysis) for the next URL.
         *   **If conflicting information is found:** Plan searches specifically to verify or reconcile the discrepancies. **Reasoning before search:** Explain what conflict you are trying to resolve. `search(query=&quot;...&quot;)` -&gt; Go back to Step 3.
         *   **If sufficient information is gathered:** Proceed to Step 5 (Synthesize Findings). Explain *why* you believe you have enough information now.
     *   **(End Loop when sufficient information is gathered or leads are exhausted)**

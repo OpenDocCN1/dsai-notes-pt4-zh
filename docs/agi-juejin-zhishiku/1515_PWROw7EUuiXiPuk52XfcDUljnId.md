@@ -1,10 +1,11 @@
+
 # 国内智能体（AI Agent）产品、框架试用及综述
 
 > 来源：[https://agijuejin.feishu.cn/docx/CFVgd6JH1oBflPxW6v2c21yOnCE](https://agijuejin.feishu.cn/docx/CFVgd6JH1oBflPxW6v2c21yOnCE)
 
 > 作者：北方的郎
 
-> 原文：https://zhuanlan.zhihu.com/p/688727771
+> 原文：`https://zhuanlan.zhihu.com/p/688727771`
 
 AI Agent（人工智能代理）是一种能够感知环境、进行决策和执行动作的智能实体。它通常被视为通往通用人工智能（AGI）的钥匙。AI Agent的核心功能包括自主实现目标的能力、感知外部环境、以及具备自主性、反馈性、积极性和情感社交属性。
 
@@ -22,7 +23,7 @@ AI Agent是一种超越简单文本生成的人工智能系统。它使用大型
 
 这是我前一段时间整理的智能体综述：
 
-[北方的郎：AI Agent（或者LLM Age](https://zhuanlan.zhihu.com/p/676544930)nt）深度讲解——组成、方法、案例及展望
+[北方的郎：AI Agent（或者LLM Agent）深度讲解——组成、方法、案例及展望](https://zhuanlan.zhihu.com/p/676544930)
 
 以下是我翻译的其他人发表的一些智能体论文：
 
@@ -34,15 +35,15 @@ AI Agent是一种超越简单文本生成的人工智能系统。它使用大型
 
 北方的郎：LLM 支持的自主代理
 
-[北方的郎：Agent AI：多模](https://zhuanlan.zhihu.com/p/677891205)态+智能体，跨模态交互综述 Part 1
+[北方的郎：Agent AI：多模态+智能体，跨模态交互综述 Part 1](https://zhuanlan.zhihu.com/p/677891205)
 
-[北方的郎：Agent AI：多模](https://zhuanlan.zhihu.com/p/677899464)态+智能体，跨模态交互综述 Part 2
+[北方的郎：Agent AI：多模态+智能体，跨模态交互综述 Part 2](https://zhuanlan.zhihu.com/p/677899464)
 
-[北方的郎：Agent AI：多模](https://zhuanlan.zhihu.com/p/677906946)态+智能体，跨模态交互综述 Part 3
+[北方的郎：Agent AI：多模态+智能体，跨模态交互综述 Part 3](https://zhuanlan.zhihu.com/p/677906946)
 
 北方的郎：SpeechAgents：多模态多智能体系统模拟人类交流
 
-[北方的郎：个人LLM助手——来自清华、小米、华为、Vivo、理](https://zhuanlan.zhihu.com/p/679078735)想等多家机构的联合综述、划分5级智能水平
+[北方的郎：个人LLM助手——来自清华、小米、华为、Vivo、理想等多家机构的联合综述、划分5级智能水平](https://zhuanlan.zhihu.com/p/679078735)
 
 北方的郎：智能体（Agent）的定义和分类
 
@@ -52,7 +53,7 @@ AI Agent是一种超越简单文本生成的人工智能系统。它使用大型
 
 商业智能体应用很多，能力差别也很大。这些商业应用我测试的时候一般会构建2个应用。
 
-一个是类RAG的昆曲大师，包括一个昆曲知识库，以及网络搜寻、画图、找图、找视频、播放视频播放（看智能体支持情况）等能力。设定一般为：
+一个是类`RAG`的昆曲大师，包括一个昆曲知识库，以及网络搜寻、画图、找图、找视频、播放视频播放（看智能体支持情况）等能力。设定一般为：
 
 > 你是一个美丽的昆曲演员，你可以用通俗易懂的语言回答关于昆曲的问题，还会唱几句昆曲，也可以根据客户的要求画一些昆曲的场景。
 
@@ -60,9 +61,9 @@ AI Agent是一种超越简单文本生成的人工智能系统。它使用大型
 
 > 你是一个广告大师，可以根据输入的商品或者活动图片，生成非常生动的广告语及广告文案
 
-### 扣子国际 http:// Coze.com
+### 扣子国际 `http:// Coze.com`
 
-Coze（中文名“扣子”）是由字节跳动推出的一款AI聊天机器人构建平台。它分为国内版和国际版，两者使用不同的AI模型，其中国际版使用的模型更为强大。（可以白嫖GPT-4）
+Coze（中文名“扣子”）是由字节跳动推出的一款AI聊天机器人构建平台。它分为国内版和国际版，两者使用不同的AI模型，其中国际版使用的模型更为强大。（可以白嫖`GPT-4`）
 
 Coze的另一个特点是功能非常强大，支持非常复杂的流程设定，可以开发非常强大的智能体应用：
 
@@ -78,7 +79,7 @@ Coze的另一个特点是功能非常强大，支持非常复杂的流程设定�
 
 ![](img/3980b0372e365af33d86cdd3cdba010c.png)
 
-### 国内 http:// Coze.cn
+### 国内 `http:// Coze.cn`
 
 国内版和国际版在功能上存在一些差异，主要是工具和插件等的差异。国内版支持30秒无代码生成AI Bot，并集成了插件工具集，满足了个性化的使用需求。它还提供了Bots商店和插件，用户可以将自己制作的AI Bot发布到商店中。
 
@@ -96,7 +97,7 @@ Coze的另一个特点是功能非常强大，支持非常复杂的流程设定�
 
 北方的郎：Coze创作案例—文案大师，保姆级的教程
 
-### 智谱ChatGlm
+### 智谱`ChatGlm`
 
 平台地址： [智谱AI开放平台](https://link.zhihu.com/?target=https%3A//open.bigmodel.cn/overview)
 
@@ -128,79 +129,79 @@ Coze的另一个特点是功能非常强大，支持非常复杂的流程设定�
 
 ![](img/5b23dcdb8e2bfda08e2c0a2e8aad1009.png)
 
-### 魔搭（ModelScope-Agent）
+### 魔搭（`ModelScope-Agent`）
 
-魔搭（ModelScope）是一个由阿里达摩院推出的AI模型社区。它的主要目标是降低AI应用的开发和使用门槛。魔搭社区汇聚了各领域最先进的机器学习模型，并提供一站式服务，包括模型的探索体验、推理、训练、部署和应用。这个平台支持多种模型及训练方式，如LLaMA、千问、ChatGLM、BaiChuan等，以及LoRA、ResTuning、NEFTune等训练方法。通过这种方式，魔搭为AI爱好者、使用者、开发者和研究者提供了一个易于使用、能够零门槛体验模型的服务平台。
+魔搭（`ModelScope`）是一个由阿里达摩院推出的AI模型社区。它的主要目标是降低AI应用的开发和使用门槛。魔搭社区汇聚了各领域最先进的机器学习模型，并提供一站式服务，包括模型的探索体验、推理、训练、部署和应用。这个平台支持多种模型及训练方式，如`LLaMA`、`千问`、`ChatGLM`、`BaiChuan`等，以及`LoRA`、`ResTuning`、`NEFTune`等训练方法。通过这种方式，魔搭为AI爱好者、使用者、开发者和研究者提供了一个易于使用、能够零门槛体验模型的服务平台。
 
-在Huggingface很难连上，速度很慢的情况下，魔搭真的是给国内的大模型玩家帮了大忙了。我现在几乎所有的模型都是能从魔搭上下载就从魔搭上下载。
+在`Huggingface`很难连上，速度很慢的情况下，魔搭真的是给国内的大模型玩家帮了大忙了。我现在几乎所有的模型都是能从魔搭上下载就从魔搭上下载。
 
-ModelScope-Agent是魔搭社区推出的一种AI智能体（Agent）开发框架。这个框架的核心是基于开源的大语言模型（LLMs），并包含了记忆控制、工具使用等多个模块。它的主要目的是帮助开发者和用户利用开源的LLMs来构建自己的智能体应用，从而充分发挥想象力和创造力。
+`ModelScope-Agent`是魔搭社区推出的一种AI智能体（`Agent`）开发框架。这个框架的核心是基于开源的大语言模型（`LLM`），并包含了记忆控制、工具使用等多个模块。它的主要目的是帮助开发者和用户利用开源的`LLM`来构建自己的智能体应用，从而充分发挥想象力和创造力。
 
-ModelScope-Agent框架的设计具有以下特点：
+`ModelScope-Agent`框架的设计具有以下特点：
 
-1.  **可定制且功能全面的框架 **：提供可定制的引擎设计，涵盖了数据收集、工具检索、工具注册、存储管理、定制模型训练和实际应用等功能，可用于快速实现实际场景中的应用。
+1. 可定制且功能全面的框架：提供可定制的引擎设计，涵盖了数据收集、工具检索、工具注册、存储管理、定制模型训练和实际应用等功能，可用于快速实现实际场景中的应用。
 
-1.  **开源LLMs作为核心组件 **：支持在ModelScope社区的多个开源LLMs上进行模型训练，并开放了大规模中英文工具指令微调数据集。
+1. 开源`LLM`作为核心组件：支持在`ModelScope`社区的多个开源`LLM`上进行模型训练，并开放了大规模中英文工具指令微调数据集。
 
-1.  **多样化且全面的API **：以统一的方式实现AI模型API和常见功能API的无缝集成，并通过调用魔搭社区上开源的文本向量模型，打造API工具检索引擎，直接根据用户指令检索相关的工具，更便捷易用。
+1. 多样化且全面的`API`：以统一的方式实现AI模型`API`和常见功能`API`的无缝集成，并通过调用魔搭社区上开源的文本向量模型，打造`API`工具检索引擎，直接根据用户指令检索相关的工具，更便捷易用。
 
 具体请参考：
 
-[北方的郎：ModelScope-Agent](https://zhuanlan.zhihu.com/p/688714862)：构建基于开源大模型的可定制智能助手系统
+[北方的郎：`ModelScope-Agent`](https://zhuanlan.zhihu.com/p/688714862)：构建基于开源大模型的可定制智能助手系统
 
-北方的郎：ModelScope-Agent简单测试
+北方的郎：`ModelScope-Agent`简单测试
 
-### 百度无代码及Erinebot-Agent
+### 百度无代码及`Erinebot-Agent`
 
 百度应用中心链接： 应用中心-飞桨AI Studio星河社区
 
 ![](img/08aa65b8665bc5647a9977a86b9e1a63.png)
 
-**无代码模式的昆曲大师效果**
+无代码模式的昆曲大师效果
 
 ![](img/e2ee55f0cb721523174abc302d12bfca.png)
 
 ![](img/229792a13092281a19aa0ecd47d03227.png)
 
-应用erniebot-agent编码
+应用`erniebot-agent`编码
 
-Git: [https:// github.com/Padd](https://link.zhihu.com/?target=https%3A//github.com/PaddlePaddle/ERNIE-SDK)lePaddle /ERNIE-SDK
+`Git: https://github.com/PaddlePaddle/ERNIE-SDK`
 
-ERNIE SDK 仓库包含两个项目：ERNIE Bot Agent 和 ERNIE Bot。ERNIE Bot Agent 是百度飞桨推出的基于文心大模型编排能力的大模型智能体开发框架，结合了飞桨星河社区的丰富预置平台功能。ERNIE Bot 则为开发者提供便捷接口，轻松调用文心大模型的文本创作、通用对话、语义向量及AI作图等基础功能。
+`ERNIE SDK` 仓库包含两个项目：`ERNIE Bot Agent` 和 `ERNIE Bot`。`ERNIE Bot Agent` 是百度飞桨推出的基于文心大模型编排能力的大模型智能体开发框架，结合了飞桨星河社区的丰富预置平台功能。`ERNIE Bot` 则为开发者提供便捷接口，轻松调用文心大模型的文本创作、通用对话、语义向量及AI作图等基础功能。
 
 ![](img/69407dc2761a577911539835d013f0a0.png)
 
-**ERNIE Bot Agent**
+`ERNIE Bot Agent`
 
 特性
 
-+   **编排能力 **: ERNIE Bot Agent 基于文心大模型的 Function Calling 能力实现了多工具编排和自动调度功能，并且允许工具、插件、知识库等不同组件的混合编排。除了自动调度，我们未来还将支持更多的编排模式，例如手动编排、半自动编排，为开发者提供更大的灵活性。
++ 编排能力：`ERNIE Bot Agent` 基于文心大模型的 `Function Calling` 能力实现了多工具编排和自动调度功能，并且允许工具、插件、知识库等不同组件的混合编排。除了自动调度，我们未来还将支持更多的编排模式，例如手动编排、半自动编排，为开发者提供更大的灵活性。
 
-+   **组件库 **: ERNIE Bot Agent 为开发者提供了一个丰富的预置组件库：
++ 组件库：`ERNIE Bot Agent` 为开发者提供了一个丰富的预置组件库：
 
-+   **预置工具 **：只需一行代码，即可加载使用星河社区工具中心的30+预置工具。这些工具当前主要来自百度AI开发平台和飞桨特色PP系列模型。后续，我们会持续接入更多预置工具，也欢迎社区贡献。此外，工具模块也支持用户灵活自定义本地和远程工具。
++ 预置工具：只需一行代码，即可加载使用星河社区工具中心的30+预置工具。这些工具当前主要来自百度AI开发平台和飞桨特色PP系列模型。后续，我们会持续接入更多预置工具，也欢迎社区贡献。此外，工具模块也支持用户灵活自定义本地和远程工具。
 
-+   **知识库 **：提供了开箱即用的基于文心百中的平台化知识库[, 并允许开发者在二](https://link.zhihu.com/?target=https%3A//github.com/langchain-ai/langchain)次开[发的场景下使用 lang](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama_index)chain 、 llama_index 等主流开源库作为知识库。
++ 知识库：提供了开箱即用的基于文心百中的平台化知识库[, 并允许开发者在二次开发的场景下使用 `langchain`、`llama_index` 等主流开源库作为知识库。
 
-+   **文心一言插件 **：未来将支持通过调用文心一言插件商城中的插件（开发中）
++ 文心一言插件：未来将支持通过调用文心一言插件商城中的插件（开发中）
 
-+   **低开发门槛**
++ 低开发门槛
 
-+   **零代码界面 **：依托星河社区提供了零代码界面的智能体构建工具，通过简单的点击配置即可开发AI原生应用。
++ 零代码界面：依托星河社区提供了零代码界面的智能体构建工具，通过简单的点击配置即可开发AI原生应用。
 
-+   **简洁的代码 **：10行代码就可以快速开发一个智能体应用。
++ 简洁的代码：10行代码就可以快速开发一个智能体应用。
 
-+   **预置资源与平台支持 **：大量的预置工具、平台级别的知识库，以及后续将推出的平台级别的记忆机制，都旨在加速开发过程。
++ 预置资源与平台支持：大量的预置工具、平台级别的知识库，以及后续将推出的平台级别的记忆机制，都旨在加速开发过程。
 
 可以参考：
 
 文案创作助手 - 飞桨AI Studio星河社区
 
-### 百度智能云千帆AppBuilder
+### 百度智能云千帆`AppBuilder`
 
 ![](img/a8c360ce5bd00b5e7306dc6556e0f4cd.png)
 
-地址： 百度智能云千帆AppBuilder
+地址： 百度智能云千帆`AppBuilder`
 
 开发昆曲大师，设定如下：
 
@@ -216,51 +217,53 @@ ERNIE SDK 仓库包含两个项目：ERNIE Bot Agent 和 ERNIE Bot。ERNIE Bot A
 
 ## 3 开源智能体产品及框架
 
-### DB-GPT
+### `DB-GPT`
 
-DB-GPT由蚂蚁集团、阿里巴巴集团、京东集团、美团等公司的研究人员共同开发，融合了多种功能模块，能够轻松地与数据库进行自然语言交互，极大地提升了数据库的易用性和可访问性。DB-GPT不仅具备强大的知识库问答功能，还能够生成复杂的SQL查询语句，通过多智能体协作，为用户提供专业、高效的数据库操作体验。
+`DB-GPT`由蚂蚁集团、阿里巴巴集团、京东集团、美团等公司的研究人员共同开发，融合了多种功能模块，能够轻松地与数据库进行自然语言交互，极大地提升了数据库的易用性和可访问性。`DB-GPT`不仅具备强大的知识库问答功能，还能够生成复杂的SQL查询语句，通过多智能体协作，为用户提供专业、高效的数据库操作体验。
 
 ![](img/94e3e9a8a40d6e684d85cf348c9bdd6e.png)
 
 详见：
 
-[北方的郎：AI专家的数据库新篇章：DB-G](https://zhuanlan.zhihu.com/p/682500336)PT用LLM技术定义数据库下一代交互方式
+[北方的郎：AI专家的数据库新篇章：`DB-GPT`用`LLM`技术定义数据库下一代交互方式](https://zhuanlan.zhihu.com/p/682500336)
 
-北方的郎：DB-GPT代理模式部署及简单测试，对比了智谱及文心的效果
+北方的郎：`DB-GPT`代理模式部署及简单测试，对比了智谱及文心的效果
 
-### MetaGPT
+### `MetaGPT`
 
-来自DeepWisdom等研究机构的开发者，开源了一种创新的多智能体协作框架——MetaGPT。MetaGPT利用标准操作程序（SOP）对多智能体协作进行规范，从而显著提高了问题解决能力。
+来自`DeepWisdom`等研究机构的开发者，开源了一种创新的多智能体协作框架——`MetaGPT`。`MetaGPT`利用标准操作程序（`SOP`）对多智能体协作进行规范，从而显著提高了问题解决能力。
 
 ![](img/24202100e273f35e2bd5b99323e1aa1a.png)
 
 参考：
 
-北方的郎：MetaGPT：面向大型语言模型的多智能体元编程框架
+北方的郎：`MetaGPT`：面向大型语言模型的多智能体元编程框架
 
-[北方的郎：数据解释器：基于大语言](https://zhuanlan.zhihu.com/p/688370397)模型的AI助手在数据科学领域的突破性应用
+[北方的郎：数据解释器：基于大语言模型的AI助手在数据科学领域的突破性应用](https://zhuanlan.zhihu.com/p/688370397)
 
-[北方的郎：在Jupyter Note](https://zhuanlan.zhihu.com/p/688456642)book中测试MetaGPT进行数据分析
+[北方的郎：在`Jupyter Notebook`中测试`MetaGPT`进行数据分析](https://zhuanlan.zhihu.com/p/688456642)
 
-### AutoGen及AutoGenStudio
+### `AutoGen`及`AutoGenStudio`
 
-微软发布的AutoGen agent是可定制的、可对话的，并能以各种模式运行，这些模式采用 LLM、人类输入和工具的组合。使用 AutoGen，开发人员还可以灵活定义agent交互行为。自然语言和计算机代码都可用于为不同的应用编程灵活的对话模式。AutoGen 可作为一个通用框架，构建具有不同复杂性和 LLM 能力的各种应用。实证研究证明了该框架在许多样本应用中的有效性，应用领域包括数学、编码、问答、运筹学、在线决策、娱乐等。
+微软发布的`AutoGen` agent是可定制的、可对话的，并能以各种模式运行，这些模式采用 `LLM`、人类输入和工具的组合。使用 `AutoGen`，开发人员还可以灵活定义agent交互行为。自然语言和计算机代码都可用于为不同的应用编程灵活的对话模式。`AutoGen` 可作为一个通用框架，构建具有不同复杂性和 `LLM` 能力的各种应用。实证研究证明了该框架在许多样本应用中的有效性，应用领域包括数学、编码、问答、运筹学、在线决策、娱乐等。
 
-[https:// github.com](https://link.zhihu.com/?target=https%3A//github.com/microsoft/autogen)/microsoft/au togen
+`https://github.com/microsoft/autogen`
 
 ![](img/eaa0152ad3d7d07028c2a1bf3122065f.png)
 
 ![](img/a67c4af007f886a3bec35dc5f2a2ee3a.png)
 
-在发布Autogen后，微软后续推出了Autogen Studio
+在发布`Autogen`后，微软后续推出了`Autogen Studio`
 
-[https:// github.com/microsoft/au toge](https://link.zhihu.com/?target=https%3A//github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio)n/tree/main/samples/apps/autogen-studio
+`https://github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio`
 
-### ChatDev
+### `ChatDev`
 
-清华大学 NLP 实验室联合面壁智能等科研机构研发的一个大模型驱动的全流程自动化软件开发框架。ChatDev (Chat-powered Software Development)。ChatDev 拟作一个由多智能体协作运营的虚拟软件公司，在人类“用户”指定一个具体的任务需求后，不同角色的智能体将进行交互式协同，以生产一个完整软件（包括源代码、环境依赖说明书、用户手册等）。这一技术为软件开发自动化提供了新的可能性，支持快捷高效且经济实惠的软件制作，未来将有效地将部分人力从传统软件开发的繁重劳动中解放出来。
+清华大学 NLP 实验室联合面壁智能等科研机构研发的一个大模型驱动的全流程自动化软件开发框架。`ChatDev` (`Chat-powered Software Development`) 。`ChatDev` 拟作一个由多智能体协作运营的虚拟软件公司，在人类“用户”指定一个具体的任务需求后，不同角色的智能体将进行交互式协同，以生产一个完整软件（包括源代码、环境依赖说明书、用户手册等）。这一技术为软件开发自动化提供了新的可能性，支持快捷高效且经济实惠的软件制作，未来将有效地将部分人力从传统软件开发的繁重劳动中解放出来。
 
-[Git](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/ChatDev)Hub - OpenBMB/ChatDev: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)
+
+
+## [GitHub - OpenBMB/ChatDev: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/ChatDev)
 
 ![](img/c2bb36615666db440a6eac97cd926f94.png)
 
@@ -268,37 +271,37 @@ DB-GPT由蚂蚁集团、阿里巴巴集团、京东集团、美团等公司的�
 
 ![](img/1e8c311185fa866570073b47117d4e63.png)
 
-### XAgent
+## XAgent
 
-[GitHub - OpenBMB/XAgent: An Auton](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/XAgent)omous LLM Agent for Complex Task Solving
+[GitHub - OpenBMB/XAgent: An Autonomous LLM Agent for Complex Task Solving](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/XAgent)
 
 ![](img/fcc681661b720855a35dbb64ec796ffd.png)
 
-XAgent是面壁智能联合清华大学 NLP 实验室共同研发开源的基于LLM的自主智能体，可以自动解决各种任务。 它被设计为一个通用的智能体，可以应用于各种任务，终极目标是创建一个可以解决任何给定任务的超级智能体。换句话说，打造的是超级无敌的多边形战士，不是单独为某个任务设计的特定智能体。
+XAgent是面壁智能联合清华大学 NLP 实验室共同研发开源的基于LLM的自主智能体，可以自动解决各种任务。它被设计为一个通用的智能体，可以应用于各种任务，终极目标是创建一个可以解决任何给定任务的超级智能体。换句话说，打造的是超级无敌的多边形战士，不是单独为某个任务设计的特定智能体。
 
 ![](img/44050b24ea124dba749119d4f933ef3c.png)
 
-### GPT-engineer
+## GPT-engineer
 
-[Git](https://link.zhihu.com/?target=https%3A//github.com/gpt-engineer-org/gpt-engineer)Hub - gpt-engineer-org/gpt-engineer: Specify what you want it to build, the AI asks for clarification, and then builds it.
+[GitHub - gpt-engineer-org/gpt-engineer: Specify what you want it to build, the AI asks for clarification, and then builds it.](https://link.zhihu.com/?target=https%3A//github.com/gpt-engineer-org/gpt-engineer)
 
 ![](img/b44ad916d0f00c4b28d74f6ed089d859.png)
 
 ![](img/186b88fb25a7eb15c28ce7c38470862e.png)
 
-### HuggingGPT
+## HuggingGPT
 
 HuggingGPT也是一个老牌的AI Agent项目了，主要思路为利用LLM的框架（例如。ChatGPT）来连接机器学习社区中的各种AI模型（例如huggingface）来解决人工智能任务。
 
-网址： [HuggingGPT - a Hugging Fac](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/microsoft/HuggingGPT)e Space by microsoft
+网址： [HuggingGPT - a Hugging Face Space by microsoft](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/microsoft/HuggingGPT)
 
 ![](img/239898fce42aed2bd23f740303dcfb02.png)
 
-代码： https://github.com/
+代码： `https://github.com/`
 
 ![](img/829ee3588a2cb5218ea3e1beb2a2f550.png)
 
-论文： [HuggingGPT: Solving AI Tasks with](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2303.17580) ChatGPT and its Friends in Hugging Face
+论文： [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2303.17580)
 
 ![](img/a061f1c062b0b02d74d3960cddb8c75b.png)
 
@@ -308,8 +311,6 @@ HuggingGPT也是一个老牌的AI Agent项目了，主要思路为利用LLM的�
 
 Devin 是由 AI 初创公司 Cognition 开发的一款全球首个全自主 AI 软件工程师。它具备多种先进的能力，如自主学习新技术、端到端构建和部署应用、自主查找和修复代码 Bug、训练和微调 AI 模型等。Devin 在 SWE-bench 基准测试中表现出色，超越了其他 AI 模型，能够正确解决实际的编程问题。
 
-![](img/a05d6dea620379d8cc5efbe3c297e823.png)
-
 [北方的郎：全球首位AI软件工程师Devin](https://zhuanlan.zhihu.com/p/687567203)的技术报告：看AI如何应对编码的实战问题
 
 ### AutoDev
@@ -318,13 +319,13 @@ AutoDev 是由微软开发的一款基于人工智能的软件开发框架，旨
 
 ![](img/e0b882f78a945dbc753e19a636bf2483.png)
 
-[北方的郎：AutoDev：来自微](https://zhuanlan.zhihu.com/p/687848594)软、AI自驱动、能解决复杂任务的开发框架
+[北方的郎：AutoDev：来自微软、AI自驱动、能解决复杂任务的开发框架](https://zhuanlan.zhihu.com/p/687848594)
 
 ### Dify
 
 Dify 是一个开源的 LLM 应用开发平台。其直观的界面结合了 AI 工作流、RAG 管道、Agent、模型管理、可观测性功能等，让您可以快速从原型到生产。
 
-Git地址： [https:// github.c](https://link.zhihu.com/?target=https%3A//github.com/langgenius/dify)om/langgenius/d ify
+Git地址： `https://github.com/langgenius/dify`
 
 ![](img/fa5f72d66ac9abedb6a06055cf5d66e5.png)
 
@@ -332,38 +333,47 @@ Git地址： [https:// github.c](https://link.zhihu.com/?target=https%3A//github
 
 以下是其核心功能列表：
 
-**1. 工作流 **: 在画布上构建和测试功能强大的 AI 工作流程，利用以下所有功能以及更多功能。
+**1. 工作流**: 在画布上构建和测试功能强大的 AI 工作流程，利用以下所有功能以及更多功能。
 
-optimized_workflow_intro.mp4
+`optimized_workflow_intro.mp4`
 
-**2. 全面的模型支持 **: [与数百](https://link.zhihu.com/?target=https%3A//docs.dify.ai/getting-started/readme/model-providers)种专有/开源 LLMs 以及数十种推理提供商和自托管解决方案无缝集成，涵盖 GPT、Mistral、Llama3 以及任何与 OpenAI API 兼容的模型。完整的支持模型提供商列表可在 此处 找到。
+**2. 全面的模型支持**: [与数百](https://link.zhihu.com/?target=https%3A//docs.dify.ai/getting-started/readme/model-providers)种专有/开源 LLMs 以及数十种推理提供商和自托管解决方案无缝集成，涵盖 GPT、Mistral、Llama3 以及任何与 OpenAI API 兼容的模型。完整的支持模型提供商列表可在 此处 找到。
 
 ![](img/852adcb17e0ab3789ad778ded95c1e29.png)
 
-**3. Prompt IDE **: 用于制作提示、比较模型性能以及向基于聊天的应用程序添加其他功能（如文本转语音）的直观界面。
+**3. Prompt IDE**: 用于制作提示、比较模型性能以及向基于聊天的应用程序添加其他功能（如文本转语音）的直观界面。
 
 4. RAG Pipeline : 广泛的 RAG 功能，涵盖从文档摄入到检索的所有内容，支持从 PDF、PPT 和其他常见文档格式中提取文本的开箱即用的支持。
 
-**5. Agent 智能体 **: 您可以基于 LLM 函数调用或 ReAct 定义 Agent，并为 Agent 添加预构建或自定义工具。Dify 为 AI Agent 提供了50多种内置工具，如谷歌搜索、DELL·E、Stable Diffusion 和 WolframAlpha 等。
+**5. Agent 智能体**: 您可以基于 LLM 函数调用或 ReAct 定义 Agent，并为 Agent 添加预构建或自定义工具。Dify 为 AI Agent 提供了50多种内置工具，如谷歌搜索、DELL·E、Stable Diffusion 和 WolframAlpha 等。
 
-**6. LLMOps **: 随时间监视和分析应用程序日志和性能。您可以根据生产数据和标注持续改进提示、数据集和模型。
+**6. LLMOps**: 随时间监视和分析应用程序日志和性能。您可以根据生产数据和标注持续改进提示、数据集和模型。
 
-**7. 后端即服务 **: 所有 Dify 的功能都带有相应的 API，因此您可以轻松地将 Dify 集成到自己的业务逻辑中。
+**7. 后端即服务**: 所有 Dify 的功能都带有相应的 API，因此您可以轻松地将 Dify 集成到自己的业务逻辑中。
 
 功能比较
 
 | 功能 | Dify.AI | LangChain | Flowise | OpenAI Assistant API |
+
 | --- | --- | --- | --- | --- |
+
 | 编程方法 | API + 应用程序导向 | Python 代码 | 应用程序导向 | API 导向 |
+
 | 支持的 LLMs | 丰富多样 | 丰富多样 | 丰富多样 | 仅限 OpenAI |
+
 | RAG引擎 | ✅ | ✅ | ✅ | ✅ |
+
 | Agent | ✅ | ✅ | ❌ | ✅ |
+
 | 工作流 | ✅ | ❌ | ✅ | ❌ |
+
 | 可观测性 | ✅ | ✅ | ❌ | ❌ |
+
 | 企业功能（SSO/访问控制） | ✅ | ❌ | ❌ | ❌ |
+
 | 本地部署 | ✅ | ✅ | ✅ | ❌ |
 
-具体使用请参考： 北方的郎：dify+ollama构建本地大模型平台
+具体使用请参考： 北方的郎：`dify`+`ollama`构建本地大模型平台
 
 ## 5，直接手搓智能体
 
@@ -373,7 +383,7 @@ optimized_workflow_intro.mp4
 
 **办公小助手**
 
-[北方的郎：文心大模型为逻辑核心+工](https://zhuanlan.zhihu.com/p/664518057)具模型实现办公小助手，全部代码及Demo
+[北方的郎：文心大模型为逻辑核心+工具模型实现办公小助手，全部代码及Demo](https://zhuanlan.zhihu.com/p/664518057)
 
 ![](img/0d6945dbb7d8093b16c5d49067505e39.png)
 
@@ -381,15 +391,15 @@ optimized_workflow_intro.mp4
 
 北方的郎：基于文心大模型开发的智能编程小助理，全部代码及Demo
 
-[h](https://link.zhihu.com/?target=https%3A//aistudio.baidu.com/application/detail/9473)ttps:// aistudio.baidu.com/appl ication/detail/9473
+`https://aistudio.baidu.com/application/detail/9473`
 
 ![](img/ced3f67f6fecdd63a6da1bd8b093bd3a.png)
 
-在开发智能编程小助手的时候，我曾经在开发员之外，设定质检员角色把出问题代码运行结果自动返回大模型，让大模型优化，并继续运行、检查流程。其效果和metagpt的其实差不多。问题也一样，如果不设置最大交互次数限制（例如要求直到运行返回正确为止）的话，非常容易消耗大量的token，比较费钱。
+在开发智能编程小助手的时候，我曾经在开发员之外，设定质检员角色把出问题代码运行结果自动返回大模型，让大模型优化，并继续运行、检查流程。其效果和`metagpt`的其实差不多。问题也一样，如果不设置最大交互次数限制（例如要求直到运行返回正确为止）的话，非常容易消耗大量的token，比较费钱。
 
 **文案大师（开源版）**
 
-[整合文心一言、OmniLMM及PaddleOCR构建广告文案](https://link.zhihu.com/?target=https%3A//aistudio.baidu.com/projectdetail/7466738)大师 - 飞桨AI Studio星河社区
+[整合文心一言、OmniLMM及`PaddleOCR`构建广告文案大师 - 飞桨AI Studio星河社区](https://link.zhihu.com/?target=https%3A//aistudio.baidu.com/projectdetail/7466738)
 
 ![](img/1b374cda3860f0a2369cf678ba1d3101.png)
 
@@ -401,7 +411,7 @@ optimized_workflow_intro.mp4
 
 对于简单需求、保密要求不高的数据及场景，可以直接使用商业智能体平台，开发效率快，部署容易。其中coze的功能在我用过的平台中感觉是最强的，支持工作流，工具插件也比较多。
 
-开源平台来说，DB-GPT比较适合构建数据应用，而且具备前端界面，用起来比较方便。MetaGPT比较适合开发及数据分析，对国内的大模型支持的也比较好。AutoGen Studio让人感觉惊艳，不过对国内大模型支持的不好。如果用阿里云的话，配合modelscope-agent也是非常不错的。
+开源平台来说，DB-GPT比较适合构建数据应用，而且具备前端界面，用起来比较方便。MetaGPT比较适合开发及数据分析，对国内的大模型支持的也比较好。AutoGen Studio让人感觉惊艳，不过对国内大模型支持的不好。如果用阿里云的话，配合`modelscope-agent`也是非常不错的。
 
 ### 单 vs 多Agent选择
 

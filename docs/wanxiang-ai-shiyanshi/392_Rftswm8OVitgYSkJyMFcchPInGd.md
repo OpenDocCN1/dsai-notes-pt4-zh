@@ -1,34 +1,39 @@
+
 # 大厂 AI 产品内参（国内版）
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Zw6LdXOiroa8GNxXhwScVS62npy](https://yunyinghui.feishu.cn/docx/Zw6LdXOiroa8GNxXhwScVS62npy)
 
-> **适用人群：****关注国内大厂 AI 产品人群**
+> **适用人群：关注国内大厂 AI 产品人群**
 
 > 首发时间：2024 年 3 月 6 日
 
 > 更新时间：2024 年 3 月 11 日
 
-> **内容出品人：**** **
+> **内容出品人：**
 
 > **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 Ctrl +F/Command +F 的形式，搜索关键字/词，查找你想要的内容。
 
-> **持续更新****国内各个大厂的 AI 产品****相关的动态和调研，让用户了解大厂产品，为产品****经理及创业者提供思路，永久免费****在线查看，欢迎收藏转**发支持，文末有惊喜，大国出品，必属精品。
+> **持续更新国内各个大厂的 AI 产品相关的动态和调研，让用户了解大厂产品，为产品经理及创业者提供思路，永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。**
 
-> 🎯全**网最接地气AI知识库： **[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)AI绘画、AI写作、AI视频等应用技能）
+> 🎯全网最接地气AI知识库：[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)AI绘画、AI写作、AI视频等应用技能）
 
-# 更新内容
+## 更新内容
 
 | # 导 航 目 录 |  |  |  |  |
+
 | --- | --- | --- | --- | --- |
-| [**阿里**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-HZh1d5aGpo3w4wxiG0Bc820SnNe) | [**百度**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-XFHMdgxQEoa8WTxHlsYcrCivnKb) | [**字节**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-AlBadvTeao5fsDxrcZxc2O8qnBx) | [**腾讯**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-XvgSdbllyore9ZxfocWcZ6rtnQd) | [**华为**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-ODWdd2yApoB3drxuoKZcD3KSngK) |
-| [**📕**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-IQRod7uOgo08VEx35mHcLnZsnuh) | [**美图秀秀**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-JiSndx1lXoHsCNxt0PucutRrnNf) | [**科大讯飞**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-A90CdBYMKoua7cxu6qhcIFBMndc) | [**网易**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-S45Udic7zoqwWmxthMMckgfznUh) | [**360**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-YWgzddvDYoqGjsxZKMccxYO9nSc) |
-| [**金山**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-QCiSdFb3VoGpUOxOJkwcRIklnpf) | [**美团**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-TVTJdqhv9ohHtLxmQ8ncBZTDnng) | [**快手**](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-PftQdge0coDdD0x6thtcDgFmnEh) |  |  |
 
-# 一、阿里
+| [阿里](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-HZh1d5aGpo3w4wxiG0Bc820SnNe) | [百度](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-XFHMdgxQEoa8WTxHlsYcrCivnKb) | [字节](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-AlBadvTeao5fsDxrcZxc2O8qnBx) | [腾讯](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-XvgSdbllyore9ZxfocWcZ6rtnQd) | [华为](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-ODWdd2yApoB3drxuoKZcD3KSngK) |
 
-## 2024 年 3 月
+| [📕](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-IQRod7uOgo08VEx35mHcLnZsnuh) | [美图秀秀](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-JiSndx1lXoHsCNxt0PucutRrnNf) | [科大讯飞](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-A90CdBYMKoua7cxu6qhcIFBMndc) | [网易](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-S45Udic7zoqwWmxthMMckgfznUh) | [360](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-YWgzddvDYoqGjsxZKMccxYO9nSc) |
 
-### 1）绘蛙
+| [金山](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-QCiSdFb3VoGpUOxOJkwcRIklnpf) | [美团](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-TVTJdqhv9ohHtLxmQ8ncBZTDnng) | [快手](https://yunyinghui.feishu.cn/wiki/Rftswm8OVitgYSkJyMFcchPInGd#part-PftQdge0coDdD0x6thtcDgFmnEh) |  |  |
+
+## 一、阿里
+
+### 2024 年 3 月
+
+#### 1）绘蛙
 
 ![](img/09dc71e368970190c5e59cc8220b6349.png)
 
@@ -40,9 +45,9 @@
 
 **面向人群：**淘宝、天猫商家和电商运营人员。
 
-**体验地址：**https://www.ihuiwa.com/
+**体验地址：`https://www.ihuiwa.com/`**
 
-### 2) EMO
+#### 2) EMO
 
 ![](img/75d706b28f48c228844162df06332071.png)
 
@@ -56,15 +61,15 @@
 
 **体验地址：**
 
-论文地址：https://arxiv.org/pdf/2402.17485.pdf
+论文地址：`https://arxiv.org/pdf/2402.17485.pdf`
 
-项目主页：https://humanaigc.github.io/emote-portrait-alive/
+项目主页：`https://humanaigc.github.io/emote-portrait-alive/`
 
-GitHub 地址：https://github.com/HumanAIGC/EMO
+GitHub 地址：`https://github.com/HumanAIGC/EMO`
 
-## 2024 年 1 月
+### 2024 年 1 月
 
-### 1) **DreamTalk**
+#### 1) DreamTalk
 
 ![](img/c665b823d4df627873f293cceb502fa9.png)
 
@@ -78,13 +83,13 @@ GitHub 地址：https://github.com/HumanAIGC/EMO
 
 **体验地址：**
 
-项目主页：https://dreamtalk-project.github.io/
+项目主页：`https://dreamtalk-project.github.io/`
 
-论文地址：https://arxiv.org/pdf/2312.09767.pdf
+论文地址：`https://arxiv.org/pdf/2312.09767.pdf`
 
-Github 地址：https://github.com/ali-vilab/dreamtalk
+Github 地址：`https://github.com/ali-vilab/dreamtalk`
 
-### 2) **Motionshop**
+#### 2) Motionshop
 
 ![](img/b3cd84e0f929ca2375c647191f2d07ec.png)
 
@@ -98,13 +103,13 @@ Github 地址：https://github.com/ali-vilab/dreamtalk
 
 **体验地址：**
 
-项目主页：https://aigc3d.github.io/motionshop/
+项目主页：`https://aigc3d.github.io/motionshop/`
 
-魔塔社区：https://www.modelscope.cn/studios/Damo_XR_Lab/motionshop/summary
+魔塔社区：`https://www.modelscope.cn/studios/Damo_XR_Lab/motionshop/summary`
 
-## 2023 年 12 月
+### 2023 年 12 月
 
-### 1) **DreaMoving**
+#### 1) DreaMoving
 
 ![](img/bd22dd77b5fee966a7c0f1abed38e1de.png)
 
@@ -118,15 +123,15 @@ Github 地址：https://github.com/ali-vilab/dreamtalk
 
 **体验地址：**
 
-项目地址：https://dreamoving.github.io/dreamoving/
+项目地址：`https://dreamoving.github.io/dreamoving/`
 
-Github 地址：https://github.com/dreamoving/dreamoving-project
+Github 地址：`https://github.com/dreamoving/dreamoving-project`
 
-论文地址：https://arxiv.org/pdf/2312.05107.pdf
+论文地址：`https://arxiv.org/pdf/2312.05107.pdf`
 
-## 2023 年 11 月
+### 2023 年 11 月
 
-### **1) I2VGen-XL**
+#### 1) I2VGen-XL
 
 ![](img/838ee7cb4143486d849625777508c9a3.png)
 
@@ -140,13 +145,13 @@ Github 地址：https://github.com/dreamoving/dreamoving-project
 
 **体验地址：**
 
-项目地址：https://i2vgen-xl.github.io
+项目地址：`https://i2vgen-xl.github.io`
 
-**论文地址：**https://arxiv.org/abs/2311.04145
+**论文地址：**`https://arxiv.org/abs/2311.04145`
 
-Github 地址：https://github.com/damo-vilab/i2vgen-xl
+Github 地址：`https://github.com/damo-vilab/i2vgen-xl`
 
-### 2) **AnimateAnyone**
+#### 2) AnimateAnyone
 
 ![](img/a0c4f505f5695315bd31eec31eecb026.png)
 
@@ -160,15 +165,15 @@ Github 地址：https://github.com/damo-vilab/i2vgen-xl
 
 **体验地址：**
 
-论文链接：https://arxiv.org/pdf/2311.17117.pdf
+论文链接：`https://arxiv.org/pdf/2311.17117.pdf`
 
-项目地址：https://humanaigc.github.io/animate-anyone/
+项目地址：`https://humanaigc.github.io/animate-anyone/`
 
-Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
+Demo：`https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone`
 
-## 2023 年 6 月
+### 2023 年 6 月
 
-### 妙鸭相机
+#### 妙鸭相机
 
 ![](img/04dcb93ca5f0bbf49ce698335e7a6ac0.png)
 
@@ -182,9 +187,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**🛰️小程序搜索妙鸭相机
 
-## 2023 年 4 月
+### 2023 年 4 月
 
-### 1）通义千问
+#### 1）通义千问
 
 ![](img/2ced6086e4faa578f098505cacc88990.png)
 
@@ -196,13 +201,13 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**广泛用户群体，特别是需要快速获取信息和解决方案的用户。
 
-**体验地址：**https://tongyi.aliyun.com/qianwen/
+**体验地址：`https://tongyi.aliyun.com/qianwen/`**
 
-# 二、百度
+## 二、百度
 
-## 2023 年 8 月
+### 2023 年 8 月
 
-### 1）超会写
+#### 1）超会写
 
 ![](img/13de38da00ec792ed07251ac90f4de8e.png)
 
@@ -216,7 +221,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**百度输入法内置功能
 
-### 2）云一朵
+#### 2）云一朵
 
 ![](img/107beb770d71e50199034e8f799c8f25.png)
 
@@ -230,9 +235,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**百度网盘内置功能
 
-## 2023 年 3 月
+### 2023 年 3 月
 
-### 1）文心一言
+#### 1）文心一言
 
 ![](img/e4c8fe58214733e8aa28b03fa12f4125.png)
 
@@ -246,9 +251,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**大众用户
 
-**体验地址：**https://yiyan.baidu.com/
+**体验地址：`https://yiyan.baidu.com/`**
 
-### 2）文心一格
+#### 2）文心一格
 
 ![](img/b79ea60a21adc251eeae5d1c53786cff.png)
 
@@ -258,11 +263,11 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群**：艺术家、设计师、创意工作者及艺术爱好者。
 
-**体验地址：**https://yige.baidu.com/
+**体验地址：`https://yige.baidu.com/`**
 
-## 2023 年 2 月
+### 2023 年 2 月
 
-### 1）度咔剪辑
+#### 1）度咔剪辑
 
 ![](img/f94ddd2c69f919bc97f04103dea3b6cf.png)
 
@@ -272,9 +277,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合自媒体创作者。
 
-**体验地址：**https://ducut.baidu.com/
+**体验地址：`https://ducut.baidu.com/`**
 
-### 2）AI 歌词生成
+#### 2）AI 歌词生成
 
 ![](img/ca4deddda0b1baa8d0264c08def8e30b.png)
 
@@ -284,9 +289,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 面向人群：音乐创作者、词曲作者及歌词爱好者
 
-体验地址：https://wenxin.baidu.com/wenxin/pc/lyrics
+体验地址：`https://wenxin.baidu.com/wenxin/pc/lyrics`
 
-### 3）小侃星球
+#### 3）小侃星球
 
 ![](img/dcc4b2c9a221c2c81cbf6b6f1e27b28e.png)
 
@@ -298,9 +303,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**IOS 及安卓商城
 
-## 2021 年 9 月
+### 2021 年 9 月
 
-### Al 造字
+#### Al 造字
 
 ![](img/098ff63365f7fd04df1cc7498a2f9109.png)
 
@@ -314,25 +319,25 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **体验地址：**需要下载百度输入法 APP，并将其设为默认键盘
 
-# 三、字节
+## 三、字节
 
-## 2024 年 2 月
+### 2024 年 2 月
 
-### 1) **Dreamina**
+#### 1) Dreamina
 
 ![](img/6c6a5a0ce4c9c2b6f0a1ea1920afe312.png)
 
 **上线时间：**2024 年 2 月
 
-**产品介绍：****Drea**mina 是剪映旗下**的一个 **AI 创作平台，目前支持「图片生成」功能，也即将上线「视频生成」功能。在图片生成功能方面，Dreamina 平台提供了立即生成的功能。只需用简单的文案，用户就能够在短时间内生成精彩的图片。这种便捷的创作方式，让更多人能够参与到美图的创作中来，无需复杂的操作和专业的技能，即可享受创作的乐趣。
+**产品介绍：**Dreamina 是剪映旗下的一个 AI 创作平台，目前支持「图片生成」功能，也即将上线「视频生成」功能。在图片生成功能方面，Dreamina 平台提供了立即生成的功能。只需用简单的文案，用户就能够在短时间内生成精彩的图片。这种便捷的创作方式，让更多人能够参与到美图的创作中来，无需复杂的操作和专业的技能，即可享受创作的乐趣。
 
 **主要作用：**AI 内容创作平台
 
 **面向人群：**C 端内容创作者
 
-**体验地址：**https://www.capcut.cn/ai-tool/platform
+**体验地址：`https://www.capcut.cn/ai-tool/platform`**
 
-### 2）扣子
+#### 2）扣子
 
 ![](img/1caf3a60b9e2d03032b55c75854a71a4.png)
 
@@ -344,9 +349,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**国内用户为主。
 
-**体验地址：**https://www.coze.cn/
+**体验地址：`https://www.coze.cn/`**
 
-### 3) Coze
+#### 3) Coze
 
 ![](img/e2f8333c92815165b49db88cfe90a2f7.png)
 
@@ -358,29 +363,31 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**国外用户为主。
 
-**体验地址：**https://www.coze.com/
+**体验地址：`https://www.coze.com/`**
 
-## 2023 年 12 月
+### 2023 年 12 月
 
-### 1) **BagelBell**
+#### 1) BagelBell
 
 ![](img/495f81cb3138cdaad9f258e647c6e288.png)
 
 **上线时间：**2023 年 12 月
 
-**产品介绍：****是一个 AI 剧情互动平台****，**BagelBel 为用户提供了一个充满活力和创造力的虚拟世界，让用户可以在这个世界中探索故事、创作角色，并与 AI 角色进行互动。这种独特的体验不仅可以让用户享受到故事带来的乐趣，还可以激发用户的创造力和想象力。
+**产品介绍：**是一个 AI 剧情互动平台，BagelBel 为用户提供了一个充满活力和创造力的虚拟世界，让用户可以在这个世界中探索故事、创作角色，并与 AI 角色进行互动。这种独特的体验不仅可以让用户享受到故事带来的乐趣，还可以激发用户的创造力和想象力。
 
 **主要作用：**剧情内容生成
 
 **面向人群：**C 端内容创作者
 
-**体验地址：** https://www.anybagel.com/
+**体验地址： `https://www.anybagel.com/`**
+
+
 
 另外 App Store 和 Google Play 均可下载客户端。
 
 ## 2023 年 9 月
 
-### 1) **ChitChop**
+### 1) ChitChop
 
 ![](img/f7a10274980167c15ec2b8d3a08d8e37.png)
 
@@ -392,9 +399,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **适用人群：**海外 C 端用户
 
-**体验地址：**https://www.chitchop.com/tool
+**体验地址：**`https://www.chitchop.com/tool`
 
-### **2）小悟空**
+### 2）小悟空
 
 ![](img/1518fce9eabde8dbfe7dcbc649ed87e5.png)
 
@@ -406,23 +413,23 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**国内 C 端用户。
 
-**体验地址：**https://wukong.com/chat
+**体验地址：**`https://wukong.com/chat`
 
 ## 2023 年 8 月
 
-### **1）豆包**
+### 1）豆包
 
 ![](img/32b4919f809a8728f9edbf7760ee4910.png)
 
 **上线时间：**2023 年 8 月
 
-**产品介绍：**豆包由字节跳动推出的首个 **AI 对话大模型**，具有强大的语音识别和自然语言处理能力，能够理解用户的意图和需求，提供个性化的服务和建议。它支持多种语言交互，并且可以同时处理多个任务。是一款非常实用的个人智能助手软件，对日常生活和工作都有很大的帮助。
+**产品介绍：**豆包由字节跳动推出的首个 AI 对话大模型，具有强大的语音识别和自然语言处理能力，能够理解用户的意图和需求，提供个性化的服务和建议。它支持多种语言交互，并且可以同时处理多个任务。是一款非常实用的个人智能助手软件，对日常生活和工作都有很大的帮助。
 
 **主要作用：**AI 对话工具
 
 **面向人群：**国内 C 端用户为主
 
-**体验地址：**https://www.doubao.com/
+**体验地址：**`https://www.doubao.com/`
 
 豆包 App 可在官网进行下载，也可以在手机应用市场进行下载。
 
@@ -440,7 +447,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**国外 C 端用户为主
 
-**体验地址：**https://www.ciciai.com/chat/
+**体验地址：**`https://www.ciciai.com/chat/`
 
 ---
 
@@ -460,7 +467,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**国内 C 端用户为主
 
-**体验地址：**https://hunyuan.tencent.com/
+**体验地址：**`https://hunyuan.tencent.com/`
 
 🛰️小助手：腾讯混元助手
 
@@ -478,7 +485,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**图片工具用户
 
-**体验地址：****h**ttps://arc.tencent.com/zh/ai-demos/faceRestoration?from=ipkd.cn
+**体验地址：**`https://arc.tencent.com/zh/ai-demos/faceRestoration?from=ipkd.cn`
 
 ## 2022 年 4 月
 
@@ -494,7 +501,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**内容创作者
 
-**体验地址：**https://effidit.qq.com/
+**体验地址：**`https://effidit.qq.com/`
 
 # 五、华为
 
@@ -508,9 +515,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **主要作用：**提供 B 端企业 AI 应用做支持。
 
-**面向人群： **B 端用户
+**面向人群：**B 端用户
 
-**体验地址：**https://pangu.huaweicloud.com/
+**体验地址：**`https://pangu.huaweicloud.com/`
 
 # 六、📕
 
@@ -528,7 +535,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**📕用户
 
-**体验地址**：
+**体验地址：**
 
 ## 2023 年 8 月
 
@@ -544,7 +551,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 绘画爱好者
 
-**体验地址：**https://www.trikai.com/
+**体验地址：**`https://www.trikai.com/`
 
 # 七、美图秀秀
 
@@ -562,7 +569,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 内容创作者
 
-**体验地址：**https://www.whee.com/
+**体验地址：**`https://www.whee.com/`
 
 ### 2）开拍
 
@@ -576,7 +583,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 内容创作者
 
-**体验地址：****h**ttps://www.kaipai.com/home，App 应用商店搜索开拍
+**体验地址：**`https://www.kaipai.com/home`，App 应用商店搜索开拍
 
 ### 3) Winkstudio
 
@@ -590,7 +597,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 内容创作者
 
-**体验地址：**https://wink.meitu.com/
+**体验地址：**`https://wink.meitu.com/`
 
 ### 4）美图设计室
 
@@ -600,13 +607,13 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 产品介绍：这是一款 AI 商业设计工具
 
-**主要作用：图片设计创作**
+**主要作用：**图片设计创作
 
 **面向人群：**AI 内容创作者
 
-**体验地址：**https://www.x-design.com/
+**体验地址：**`https://www.x-design.com/`
 
-### **5) Dream Avatar**
+### 5) Dream Avatar
 
 ![](img/7473cebdb91d25abfff74e0af159e674.png)
 
@@ -618,7 +625,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 内容创作者
 
-**体验地址：**https://www.dreamavatar.com/
+**体验地址：**`https://www.dreamavatar.com/`
 
 ### 6）奇想智能
 
@@ -632,7 +639,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 内容生产者或者企业
 
-**体验地址：**https://www.dreamavatar.com/
+**体验地址：**`https://www.dreamavatar.com/`
 
 ### 7）美图 AI 助手 RoboNeo
 
@@ -652,7 +659,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 ## 2024 年 1 月
 
-### 1）**星火语音大模型 **
+### 1) 星火语音大模型
 
 ![](img/c3175dc1b3b1e014224508ca40d10124.png)
 
@@ -662,7 +669,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适用于需要高效、精准语音识别与合成的行业，如客服、汽车、机器人等。
 
-**体验地址：**https://xinghuo.xfyun.cn/speechllm/?ref=aihub.cn
+**体验地址：**`https://xinghuo.xfyun.cn/speechllm/?ref=aihub.cn`
 
 ## 2023 年 12 月
 
@@ -678,7 +685,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**自媒体创作者、媒体记者、文案策划人员、创作爱好者等，尤其适合需要高效内容创作和运营的用户。
 
-**体验地址：**https://turbodesk.xfyun.cn/home?channelid=gj81
+**体验地址：**`https://turbodesk.xfyun.cn/home?channelid=gj81`
 
 ## 2023 年 11 月
 
@@ -694,11 +701,11 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合需要高效制作 PPT 的用户，如教育工作者、企业员工、内容创作者等。
 
-**体验地址：**https://zhiwen.xfyun.cn/
+**体验地址：**`https://zhiwen.xfyun.cn/`
 
 ## 2023 年 8 月
 
-### 1）星火大模型
+### 1) 星火大模型
 
 ![](img/6df592b6575e78e8f5aeeadc4d9ce3f7.png)
 
@@ -708,9 +715,9 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 面向人群：适用于普通大众
 
-体验地址：https://xinghuo.xfyun.cn/
+体验地址：`https://xinghuo.xfyun.cn/`
 
-### 2）**星火开源 -13B**
+### 2) 星火开源 -13B
 
 ![](img/0af2c014d554ee8634824a24b4e7e92d.png)
 
@@ -720,7 +727,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合需要进行 AI 模型训练和应用开发的企业和研究机构。
 
-**体验地址：**https://gitee.com/iflytekopensource/iFlytekSpark-13B
+**体验地址：**`https://gitee.com/iflytekopensource/iFlytekSpark-13B`
 
 ### 3）讯飞写作
 
@@ -734,7 +741,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**内容创作者
 
-**体验地址：**https://huixie.iflyrec.com/welcome
+**体验地址：**`https://huixie.iflyrec.com/welcome`
 
 ## 2021 年 5 月
 
@@ -750,7 +757,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**科研工作者、新媒体人、商务办公人士等需要高效记录和处理语音信息的用户。
 
-**体验地址：**https://www.iflyjz.com/
+**体验地址：**`https://www.iflyjz.com/`
 
 ## 2019 年 5 月
 
@@ -766,13 +773,13 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适用于小学、初中、高中学生及其家长，特别是需要提高学习效率和培养良好学习习惯的用户。
 
-**体验地址：**https://edu.iflytek.com/solution/family/learning-pad
+**体验地址：**`https://edu.iflytek.com/solution/family/learning-pad`
 
 # 九、网易
 
 ## 2023 年 7 月
 
-### **AI 设计工坊**
+### AI 设计工坊
 
 ![](img/4e598c6e26cbf3bc88560456bde639d2.png)
 
@@ -784,7 +791,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**AI 绘画客户
 
-**体验地址：****h**ttps://sd.study.163.com/artWorks/painting?from=web_sy_ttyc
+**体验地址：**`https://sd.study.163.com/artWorks/painting?from=web_sy_ttyc`
 
 ## 2017 年 9 月
 
@@ -800,7 +807,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**B 端客户
 
-**体验地址：**https://fuxi.163.com/
+**体验地址：**`https://fuxi.163.com/`
 
 # 十、360
 
@@ -816,7 +823,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合需要高效、精准搜索结果的用户，如专业人士、研究人员及普通网民。
 
-**体验地址：**https://so.360.com/?ref=aihub.cn
+**体验地址：**`https://so.360.com/?ref=aihub.cn`
 
 ## 2023 年 9 月
 
@@ -826,13 +833,19 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **产品介绍：**360 人工智能研究院发布 BDM，中文原生 AI 绘画模型，解决中文概念生成与英文社区兼容难题。
 
+
+
+# 十、360
+
+### 1）BDM
+
 **主要作用：**BDM 精确生成中文语义图像，兼容英文社区插件，实现中英双语绘画。
 
 **面向人群：**适合中文内容创作者、设计师及 AI 绘画爱好者使用。
 
-**论文链接：**https://arxiv.org/abs/2309.00952
+**论文链接：**`https://arxiv.org/abs/2309.00952`
 
-**体验入口：**https://ai.360.cn/
+**体验入口：**`https://ai.360.cn/`
 
 ### 2）AI 数字员工
 
@@ -844,7 +857,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**B 端企业
 
-**体验地址：**https://ai.n.cn/home?src=ai_360_com
+**体验地址：**`https://ai.n.cn/home?src=ai_360_com`
 
 ## 2023 年 5 月
 
@@ -860,7 +873,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合 AI 应用开发者、中小微企业以及对 AI 技术感兴趣的普通用户。
 
-**体验地址：**http://360ai-shop.cn/（需要用 360 浏览器访问）
+**体验地址：**`http://360ai-shop.cn/`（需要用 360 浏览器访问）
 
 ## 2023 年 3 月
 
@@ -876,7 +889,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**面向公众开放，适用于需要内容创作、文档处理、多轮对话等智能服务的用户群体。
 
-**体验地址：**https://ai.360.com/
+**体验地址：**`https://ai.360.com/`
 
 # 十一、金山
 
@@ -894,7 +907,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合需要高效信息处理和知识管理的企业用户，如客服、技术支持和知识工作者。
 
-**体验地址：**https://www.ksyun.com/nv/product/QingZhou.html
+**体验地址：**`https://www.ksyun.com/nv/product/QingZhou.html`
 
 ### 2）瀚海大模型平台
 
@@ -906,7 +919,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合企业开发者，尤其是需要大模型训练和推理服务的 AI 应用开发者。
 
-**体验地址：**https://www.ksyun.com/nv/product/HHLMPlatform.html
+**体验地址：**`https://www.ksyun.com/nv/product/HHLMPlatform.html`
 
 ## 2023 年 7 月
 
@@ -916,13 +929,13 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **上线时间：**2023 年 7 月 16 日
 
-**产品介绍：** 金山 WPS AI 提供智能文档处理，包括内容生成、表达优化等。
+**产品介绍：**金山 WPS AI 提供智能文档处理，包括内容生成、表达优化等。
 
-**主要作用： **增强文档编辑效率，提供个性化内容创作辅助。
+**主要作用：**增强文档编辑效率，提供个性化内容创作辅助。
 
-**面向人群： **适合办公人员、内容创作者和需要高效文档处理的用户。
+**面向人群：**适合办公人员、内容创作者和需要高效文档处理的用户。
 
-**体验地址：**https://ai.wps.cn/
+**体验地址：**`https://ai.wps.cn/`
 
 # 十二、美团
 
@@ -940,7 +953,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**C 端用户
 
-**体验地址：** IOS 和安卓平台可下载
+**体验地址：**IOS 和安卓平台可下载
 
 # 十三、快手
 
@@ -958,7 +971,7 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合广告主、主播及商家，特别是需要高效直播运营和降低成本的用户。
 
-**体验地址：**https://virtuallive.kuaishou.com/login
+**体验地址：**`https://virtuallive.kuaishou.com/login`
 
 ## 2023 年 10 月
 
@@ -1002,17 +1015,15 @@ Demo:https://huggingface.co/spaces/xunsong/Moore-AnimateAnyone
 
 **面向人群：**适合开发者、内容创作者、教育工作者及对 AI 语言模型应用感兴趣的专业人士。
 
-**体验地址：**https://github.com/kwai/KwaiYii
-
----
+**体验地址：**`https://github.com/kwai/KwaiYii`
 
 # AI 创业交流社群
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+1. 持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案例**，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2. 已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
-3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
+3. 关于文档负责人大国：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 
 **进群一起学习 AI创业**
 

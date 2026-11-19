@@ -1,14 +1,15 @@
+
 # 直播：AI辅助中考英语学习
 
 > 来源：[https://langgptai.feishu.cn/docx/NE1idsQlKo4MbFxsGkGcE8RGnXR](https://langgptai.feishu.cn/docx/NE1idsQlKo4MbFxsGkGcE8RGnXR)
 
-# 扫描二维码进入本页面：
+## 扫描二维码进入本页面：
 
 ![](img/cf7c3bc36a4bde1b7d4af3d29ec88cb1.png)
 
-**PPT和总结，直播结束后会发布在**[⭐ 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)云中江树」🛰️👸号和 AI 知识库：
+PPT和总结，直播结束后会发布在[⭐ 结构化提示词](https://langgptai.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)云中江树」🛰️👸号和 AI 知识库：
 
-## 单词记忆提示词
+### 单词记忆提示词
 
 ```
 # 角色
@@ -27,7 +28,7 @@
 - 我想学习的单词是：【tenant单词可自行替换】
 ```
 
-## 素材
+### 素材
 
 广东省广州市中考英语试题：
 

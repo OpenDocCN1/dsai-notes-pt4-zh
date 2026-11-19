@@ -1,3 +1,4 @@
+
 # 微学习13 | 原理：智能体(视频)
 
 > 来源：[https://datawhaler.feishu.cn/docx/UygTdlKM1ozDjRx2sYIcAKgjn9d](https://datawhaler.feishu.cn/docx/UygTdlKM1ozDjRx2sYIcAKgjn9d)
@@ -6,9 +7,9 @@
 
 <https://player.bilibili.com/player.html?bvid=1FY9hYcEDT&share_source=copy_web&vd_source=f627a392fcb652be2c675d3786b619c2>
 
-# 一、智能体（agent）的定义
+## 一、智能体（agent）的定义
 
-## 1.1 课前秀：线性回归属于机器学习算法吗？
+### 1.1 课前秀：线性回归属于机器学习算法吗？
 
 思考题：线性回归属于机器学习算法吗？
 
@@ -22,11 +23,11 @@
 
 世界上本没有定义，共识的的声音多了也就成了所谓的“定义”。
 
-## 1.2 一些关于智能体（agent）的定义
+### 1.2 一些关于智能体（agent）的定义
 
 从学术界到产业界，大模型领域仍然处于快速发展的阶段（ChatGPT 2022.11.30 发布也才不到 3 年），大家对于 “什么是 agent”其实没有一个非常详细明确的共识定义，任何一个非单次大模型调用的系统，都有可能被其开发者称为“agent”。
 
-### 1.2.1 OpenAI 在 AGI 五级分类中对于 agent 的定义
+#### 1.2.1 OpenAI 在 AGI 五级分类中对于 agent 的定义
 
 2024 年的时候，OpenAI 曾经提出 AGI 的五级分类
 
@@ -40,21 +41,21 @@
 
 +   Level 5: Organizers。AI可以管理整个组织，协调复杂的过程并超过高价值任务中的人类绩效。
 
-### 1.2.2  前OpenAI研究副总裁  翁荔 （Lilian Weng） 的定义
+#### 1.2.2 前OpenAI研究副总裁 翁荔 （Lilian Weng） 的定义
 
-Agent=大模型+记忆+主动规划+工具使用
+`Agent=大模型+记忆+主动规划+工具使用`
 
 在基于LLM的自主智能体系统中，LLM充当智能体的大脑，需结合以下关键组件：规划模块、记忆系统、工具调用。
 
-### 1.2.3 Langchain 作者 Horrison的定义
+#### 1.2.3 Langchain 作者 Horrison的定义
 
 Langchain 作者 Horrison：Agent是一个使用大语言模型（LLM）决定应用程序控制流的系统。
 
 （这符合我的技术定义，却不符合大众对Agent能力的普遍认知。准确定义Agent确实困难！This fits my technical definition, but not the common perception of what an agent should be capable of. It’s hard to define exactly what an agent is!）
 
-## 1.3 与其讨论 agent，不如讨论 agentic
+### 1.3 与其讨论 agent，不如讨论 agentic
 
-因为大**模型领域**发展的太快， agent 的定义还没有一个统一的说法，所以吴恩达和 Horrison等人非常认同一个观点：与其争论某一个东西 属于 or 不属于 智能体（agent），不如承认这个世界并不是一个非黑即白的世界，系统可以是渐进的，可以具备不同程度的智能体属性，就像自动驾驶汽车有L1-L4不同级别的自主性一样。
+因为大模型领域发展的太快，agent 的定义还没有一个统一的说法，所以吴恩达和 Horrison等人非常认同一个观点：与其争论某一个东西 属于 or 不属于 智能体（agent），不如承认这个世界并不是一个非黑即白的世界，系统可以是渐进的，可以具备不同程度的智能体属性，就像自动驾驶汽车有L1-L4不同级别的自主性一样。
 
 我们也可以将AI Agent 的能力视为一个连续光谱，因此用一个形容词“agentic”更能包容这个蓬勃发展的领域中各种形态的系统，更包容地接纳所有希望参与agent研究的同仁。
 
@@ -70,15 +71,15 @@ Langchain 作者 Horrison：Agent是一个使用大语言模型（LLM）决定�
 
 +   当系统能自主构建工具、记忆工具并在后续步骤中使用，这正是Voyager论文实现的超高代理性系统，属于顶层的"自主Agent"（Autonomous Agent）类别。
 
-# 二、agentic system 在架构上的划分：
+## 二、agentic system 在架构上的划分：
 
-**一个智能体系统（agent**ic systems），在架构上可以划分为工作流（Workflow）和自主智能体（Autonomous Agent）：
+一个智能体系统（agentic systems），在架构上可以划分为工作流（Workflow）和自主智能体（Autonomous Agent）：
 
-+   **工作流（Workflow）**：通过预定义的代码路径来编排 LLM 和工具的系统。
++   工作流（Workflow）：通过预定义的代码路径来编排 LLM 和工具的系统。
 
 +   自主智能体（Autonomous Agent）：LLM 动态地控制自身的过程和工具使用方式，决定如何完成任务。
 
-## 2.1 适用场景
+### 2.1 适用场景
 
 构建LLM应用时，我们建议优先采用最简单方案，仅在必要时增加复杂度。这意味着有些场景可能完全不需要智能体系统。智能体系统往往以延迟和成本为代价换取更好的任务表现，需谨慎权衡利弊。
 
@@ -90,13 +91,13 @@ Langchain 作者 Horrison：Agent是一个使用大语言模型（LLM）决定�
 
 对很多场景，通过 RAG（检索增强生成） 和 prompt 优化可能已足够。增加系统复杂度往往伴随延迟和成本，需权衡利弊！
 
-## 2.2 构建智能体系统的一些框架
+### 2.2 构建智能体系统的一些框架
 
 现有框架可简化智能体系统实现，例如：
 
-+   LangChain、LangGraph
++   `LangChain`、`LangGraph`
 
-+   LlamaIndex
++   `LlamaIndex`
 
 +   可视化低代码构建平台：
 
@@ -110,18 +111,17 @@ Langchain 作者 Horrison：Agent是一个使用大语言模型（LLM）决定�
 
 1.  抽象层遮蔽底层提示与响应，增加调试难度
 
-1.  诱导过度设计简单问题
+2.  诱导过度设计简单问题
 
-# 三、agentic system 中的组成模块
+## 三、agentic system 中的组成模块
 
-## 3.0 基础构建模块：增强型 LLM
+### 3.0 基础构建模块：增强型 LLM
 
-[强](https://platform.openai.com/docs/guides/text-generation)烈建议所有想入门大模型领域的同学，认真学习 openAI 的这篇接口文档，很多复杂的应用，其中的大模型能力都是这么同一个接口，其他都是工程架构上的事情：
+[强烈建议](https://platform.openai.com/docs/guides/text-generation)所有想入门大模型领域的同学，认真学习 OpenAI 的这篇接口文档，很多复杂的应用，其中的大模型能力都是这么同一个接口，其他都是工程架构上的事情：
 
-https://platform.openai.com/docs/guides/text-generation
+`https://platform.openai.com/docs/guides/text-generation`
 
-
-## 3.1 自主智能体（Autonomous Agent）
+### 3.1 自主智能体（Autonomous Agent）
 
 随着LLM在复杂输入理解、规划、工具使用和错误恢复能力的成熟，自主智能体开始在生产中得到应用。自主智能体的工作可能以用户的一次指令或与用户的互动开始。一旦任务明确，自主智能体便会独立规划并执行，关键特征包括：
 
@@ -153,12 +153,11 @@ https://platform.openai.com/docs/guides/text-generation
 
 ![](img/c6910836a5551acbf540b5027f788e8e.png)
 
-## 3.2 工作流
+### 3.2 工作流
 
-### 3.2.1 工作流：提示链 Prompt Chaining
+#### 3.2.1 工作流：提示链 Prompt Chaining
 
 Prompt Chaining 将任务分解为顺序执行的子步骤，每一步都由一个 LLM 调用来处理上一步骤的输出。你可以在任意中间步骤添加程序检查（见下图中的“gate”）以确保整个过程依然按计划执行。
-
 
 Prompt Chaining 工作流
 
@@ -170,10 +169,9 @@ Prompt Chaining 工作流
 
 +   编写文档提纲、检验提纲是否符合某些标准，然后再根据提纲写出完整文档。
 
-### 3.2.2 工作流：路由 Routing
+#### 3.2.2 工作流：路由 Routing
 
 Routing 先对输入进行分类，再将其分配到专门的后续任务中。这让我们能更好地实现任务分工，以及针对不同类型的输入构建更为专门化的提示（prompt）。若没有这种路由机制，针对某类输入的优化可能会损害其他输入的性能。
-
 
 Routing 工作流
 
@@ -185,14 +183,13 @@ Routing 工作流
 
 +   将简单/常见问题路由给较小的模型（如 Claude 3.5 Haiku），将困难/罕见问题路由给更强大的模型（如 Claude 3.5 Sonnet），以优化成本与速度。
 
-### 3.2.3 工作流：并行 Parallelization
+#### 3.2.3 工作流：并行 Parallelization
 
 有时，LLM 可以同时执行多个任务，然后将它们的输出以编程方式聚合在一起，这就是并行化（Parallelization）工作流。它有两个主要变体：
 
-+   分段**Sectioning**：将任务划分为可以并行运行的独立子任务。
++   分段 Sectioning：将任务划分为可以并行运行的独立子任务。
 
-+   投票**Voting**：对同一任务进行多次执行，从而获得多样化的输出，以进行对比或投票。
-
++   投票 Voting：对同一任务进行多次执行，从而获得多样化的输出，以进行对比或投票。
 
 Parallelization 工作流
 
@@ -200,22 +197,21 @@ Parallelization 工作流
 
 **示例：**
 
-+   **Sectioning**：
++   Sectioning：
 
 +   并行内容审核与主任务处理：一个模型实例负责处理用户查询，另一个模型实例同时对查询进行不恰当内容或非法请求筛查。相比让一个 LLM 同时处理主要回复及安全防护，这种做法表现更优。
 
 +   自动化多维度模型评估：自动化评估（evals）LLM 的性能，每次调用一个 LLM 来评估模型在某个方面的表现。
 
-+   **Voting**：
++   Voting：
 
 +   审查代码是否存在漏洞：多个不同提示审查代码，发现问题时进行标记。
 
 +   评估某段内容是否不当：多个提示从不同角度评估，或设定不同的投票阈值以平衡误报与漏报。
 
-### 3.2.4 工作流：协调者-工作者 Orchestrator-Workers
+#### 3.2.4 工作流：协调者-工作者 Orchestrator-Workers
 
 在 Orchestrator-Workers 工作流中，“协调者”LLM 会动态拆解任务、将其分配给“工作者”LLM，然后再将结果综合起来。
-
 
 Orchestrator-Workers 工作流
 
@@ -227,7 +223,7 @@ Orchestrator-Workers 工作流
 
 +   多源信息搜索分析：在多源信息中搜索并分析可能相关的信息来完成搜索任务。
 
-### 3.2.5 工作流：评估-优化循环 Evaluator-Optimizer
+#### 3.2.5 工作流：评估-优化循环 Evaluator-Optimizer
 
 在 Evaluator-Optimizer 工作流中，一个 LLM 用于生成响应，另一个 LLM 用于对该响应进行评估并给出反馈，二者循环往复。
 
@@ -239,7 +235,8 @@ Evaluator-Optimizer 工作流
 
 1.  当人类给出反馈时，LLM 的输出能明显改进；
 
-1.  LLM 本身也有能力生成这类反馈。
+2.  LLM 本身也有能力生成这类反馈。
+
 这类似于一个人编写文档时反复修改、润色的过程。
 
 **示例：**

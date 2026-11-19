@@ -1,6 +1,7 @@
+
 # Prompt 高级技巧：借助伪代码精准的控制 LLM 的输出结果和定义其执行逻辑
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/Bb2IdeDpUoxYeBxWX4vcPbDWnXP](https://v11enp9ok1h.feishu.cn/docx/Bb2IdeDpUoxYeBxWX4vcPbDWnXP)
+> 来源：`https://v11enp9ok1h.feishu.cn/docx/Bb2IdeDpUoxYeBxWX4vcPbDWnXP`
 
 众所周知，当我们需要让大语言模型执行任务，需要输入 Prompt 来指导其执行，而 Prompt 是使用自然语言描述的。对于简单的任务，自然语言能描述的很清楚，比如：“请翻译以下内容为简体中文：”、“请生成以下内容的摘要：”等。
 
@@ -10,7 +11,7 @@
 
 在继续阅读之前，这里有两道思考题可以先试试看：
 
-1.  有多个长句子，需要将每一个都拆分成不超过 80 个字符的短句子，然后输出成一个 JSON 格式，清晰的描述长句子和短句子之间的对应关系。
+1. 有多个长句子，需要将每一个都拆分成不超过 80 个字符的短句子，然后输出成一个 JSON 格式，清晰的描述长句子和短句子之间的对应关系。
 
 比如：
 
@@ -35,7 +36,7 @@
 ]
 ```
 
-1.  一段原始字幕文稿，只有对话信息，现在需要从中提取章节、发言人，然后按照章节和段落列出对话内容。如果是多个发言[人，每段对话前需要标](https://chatgpt.com/g/g-pnXgeR4g4-shi-pin-wen-gao-zheng-li)明发言人，如果是同一个发言人连续发言，则不需要。(实际上这就是我自己用的一个整理视频文稿的 GPT 视频文稿整理 GPT)
+1. 一段原始字幕文稿，只有对话信息，现在需要从中提取章节、发言人，然后按照章节和段落列出对话内容。如果是多个发言人，每段对话前需要标明发言人，如果是同一个发言人连续发言，则不需要。(实际上这就是我自己用的一个整理视频文稿的 GPT 视频文稿整理 GPT)
 
 示例输入：
 
@@ -105,43 +106,29 @@ Prompt 的本质是一种对 LLM 的控制指令，用自然语言描述，让 L
 
 因为 LLM 不能准确的理解我们的要求，这里面一方面局限于 LLM 理解和跟随指令的能力，另一方面局限于我们的 Prompt 描述的是否清晰和准确。
 
-##
-
 ## 如何借助伪代码精准的控制 LLM 的输出结果和定义其执行逻辑
 
 既然 Prompt 的本质是一种对 LLM 的控制指令，那么我们可以不必局限于传统自然语言描述的方式写 Prompt，还可以借助伪代码（pseudocode）来精准的控制 LLM 的输出结果和定义其执行逻辑。
 
-###
-
 ### 什么是伪代码？
 
-实际上伪代码已经有很长的历史了，伪代码是一种用于描述算法的一种形式化描述方法，它是一种介于自然语言和编程语言之间的一种描述方法，用于描述算法的步骤和流程。在各种算法书籍和论文中，我们经常看到伪代码的描述，甚至于你不需要懂变成语言，也能通过伪代码理解算法的执行流程。
+实际上伪代码已经有很长的历史了，伪代码是一种用于描述算法的一种形式化描述方法，它是一种介于自然语言和编程语言之间的一种描述方法，用于描述算法的步骤和流程。在各种算法书籍和论文中，我们经常看到伪代码的描述，甚至于你不需要懂编程语言，也能通过伪代码理解算法的执行流程。
 
 那么 LLM 对于伪代码的理解能力如何呢？实际上 LLM 对于伪代码的理解能力是相当强的，LLM 在训练的时候，已经训练过大量的优质代码，可以轻易的理解伪代码的含义。
-
-###
 
 ### 如何写伪代码 Prompt？
 
 伪代码对于程序员来说是非常熟悉的，对于非程序员，只需要记住一些基本的规则，就可以写出简单的伪代码。举几个例子：
 
 +   变量，用来存储数据，比如用一些特定符号表示输入或者中间结果
-
 +   类型，用来定义数据的类型，比如字符串、数字、数组等
-
 +   函数，用来定义某个子任务的执行逻辑
-
 +   控制流，用来控制程序的执行流程，比如循环、条件判断等
-
-+   if-else 语句，如果满足条件 A，执行任务 A，否则执行任务 B
-
-+   for 循环，对于数组中的每一个元素，执行某个任务
-
-+   while 循环，当满足条件 A，持续执行任务 B
++   `if-else` 语句，如果满足条件 `A`，执行任务 `A`，否则执行任务 `B`
++   `for` 循环，对于数组中的每一个元素，执行某个任务
++   `while` 循环，当满足条件 `A`，持续执行任务 `B`
 
 现在以前面的两个思考题为例，我们来写一下伪代码 Prompt。
-
-####
 
 #### 用伪代码输出特定的 JSON 格式
 
@@ -156,19 +143,19 @@ Input is an array of strings.
 
 Output should be a valid json array of objects, each object contains a sentence and its segments.
 
-Array&lt;{
+Array<{
   sentence: string;
   segments: string[]
-}&gt;
+}>
 ```
 
 #### 用伪代码整理字幕文稿
 
 整理字幕文稿这个任务相对比较复杂，如果想象一下要写一个程序来完成这个任务，可能会有很多步骤，比如先提取章节，再提取发言人，最后按照章节和发言人整理对话内容。我们可以借助伪代码，将这个任务分解成几个子任务，对于子任务，甚至不必写出具体的代码，只需要描述清楚子任务的执行逻辑即可。然后一步步执行这些子任务，最后整合结果输出。
 
-我们可以用一些变量来存储中，比如 subject、speakers、chapters、paragraphs 等。
+我们可以用一些变量来存储中，比如 `subject`、`speakers`、`chapters`、`paragraphs` 等。
 
-在输出的时候，我们还可以用 For 循环来遍历章节和段落，用 If-else 语句来判断是否需要输出发言人的名字。
+在输出的时候，我们还可以用 `for` 循环来遍历章节和段落，用 `if-else` 语句来判断是否需要输出发言人的名字。
 
 ---
 
@@ -192,25 +179,25 @@ def find_paragraphs_and_speakers_in_chapter(chapter):
 def format_transcript(transcript):
   # extract the subject, speakers, chapters and print them
   subject = extract_subject(transcript)
-  print(&quot;Subject:&quot;, subject)
+  print("Subject:", subject)
   speakers = extract_speakers(transcript)
-  print(&quot;Speakers:&quot;, speakers)
+  print("Speakers:", speakers)
   chapters = extract_chapters(transcript)
-  print(&quot;Chapters:&quot;, chapters)
+  print("Chapters:", chapters)
 
   # format the transcript
-  formatted_transcript = f&quot;# {subject}\n\n&quot;
+  formatted_transcript = f"# {subject}\n\n"
   for chapter in chapters:
-    formatted_transcript += f&quot;## {chapter}\n\n&quot;
+    formatted_transcript += f"## {chapter}\n\n"
     paragraphs_and_speakers = find_paragraphs_and_speakers_in_chapter(chapter)
     for speaker, paragraphs in paragraphs_and_speakers:
       # if there are multiple speakers, print the speaker&#x27;s name before each paragraph
-      if speakers.size() &gt; 1:
-        formatted_transcript += f&quot;{speaker}:&quot;
-      formatted_transcript += f&quot;{speaker}:&quot;
+      if speakers.size() > 1:
+        formatted_transcript += f"{speaker}:"
+      formatted_transcript += f"{speaker}:"
       for paragraph in paragraphs:
-        formatted_transcript += f&quot; {paragraph}\n\n&quot;
-      formatted_transcript += &quot;\n\n&quot;
+        formatted_transcript += f" {paragraph}\n\n"
+      formatted_transcript += "\n\n"
 
   return formatted_transcript
 
@@ -221,12 +208,9 @@ print(format_transcript($user_input))
 
 ![](img/7412a8a403b8008a6b9d40cc53e780d5.png)
 
-
 ![](img/b2d2f61fe96cd966b63a5db9b633e805.png)
 
 你也可以直接使用我用这个 Prompt 生成的 GPT：Transcript organization 视频文稿整理 GPT
-
-####
 
 #### 借助伪代码让 ChatGPT 一次画多张图片
 
@@ -239,19 +223,19 @@ print(format_transcript($user_input))
 
 images_prompts = [
   {
-    style: &quot;Kawaii&quot;,
-    prompt: &quot;Draw a cute dog&quot;,
-    aspectRatio: &quot;Wide&quot;
+    style: "Kawaii",
+    prompt: "Draw a cute dog",
+    aspectRatio: "Wide"
   },
   {
-    style: &quot;Realistic&quot;,
-    prompt: &quot;Draw a realistic dog&quot;,
-    aspectRatio: &quot;Square&quot;
+    style: "Realistic",
+    prompt: "Draw a realistic dog",
+    aspectRatio: "Square"
   }
 ]
 
 images_prompts.forEach((image_prompt) =&gt;{
-  print(&quot;Generating image with style: &quot; + image_prompt.style + &quot; and prompt: &quot; + image_prompt.prompt + &quot; and aspect ratio: &quot; + image_prompt.aspectRatio)
+  print("Generating image with style: " + image_prompt.style + " and prompt: " + image_prompt.prompt + " and aspect ratio: " + image_prompt.aspectRatio)
   image_generation(image_prompt.style, image_prompt.prompt, image_prompt.aspectRatio);
 })
 

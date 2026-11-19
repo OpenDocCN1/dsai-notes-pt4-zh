@@ -1,10 +1,9 @@
+
 # LLM在中文Text2SQL领域的应用
 
 > 来源：[https://agijuejin.feishu.cn/docx/IzWLdhvLsofeypxCcpacVgYInNb](https://agijuejin.feishu.cn/docx/IzWLdhvLsofeypxCcpacVgYInNb)
-
 > 作者：王大锤
-
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/674827776)hihu.com/p/674827...
+> 原文：[https://zhuanlan.zhihu.com/p/674827776](https://zhuanlan.zhihu.com/p/674827776)
 
 ## 一. 前言
 
@@ -14,29 +13,21 @@
 
 ### 1.2 技术实现
 
-> **作者基于DIN-SQL的实践 **:https://zhuanlan.zhihu.com/p/670509396
-
-[  ](https://zhuanlan.zhihu.com/p/670509396)
-
-> **作者基于DIN-SQL做的一期优化:**https://zhuanlan.zhihu.com/p/670913902
-
-[  ](https://zhuanlan.zhihu.com/p/670913902)
-
-> **作者基于DIN-SQL做的二期优化:**https://zhuanlan.zhihu.com/p/673474672
-
-[  ](https://zhuanlan.zhihu.com/p/673474672)
+> **作者基于DIN-SQL的实践**: [https://zhuanlan.zhihu.com/p/670509396](https://zhuanlan.zhihu.com/p/670509396)
+> **作者基于DIN-SQL做的一期优化**: [https://zhuanlan.zhihu.com/p/670913902](https://zhuanlan.zhihu.com/p/670913902)
+> **作者基于DIN-SQL做的二期优化**: [https://zhuanlan.zhihu.com/p/673474672](https://zhuanlan.zhihu.com/p/673474672)
 
 ![](img/83990f83a91e170918a48f7f9ca5cd34.png)
 
-## 二.相关工作
+## 二. 相关工作
 
-对[比作者在](https://www.zhihu.com/search?q=%E6%B5%81%E7%A8%8B%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)二期做的优化工作，这里主要增加了数据库的IO查询，然后加入了数据的可视化智能分类，并以对应的图表结构形式实现了数据的可视化，简要的 流程图 如下:
+对[比作者在](https://www.zhihu.com/search?q=%E6%B5%81%E7%A8%8B%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)二期做的优化工作，这里主要增加了数据库的IO查询，然后加入了数据的可视化智能分类，并以对应的图表结构形式实现了数据的可视化，简要的流程图如下:
 
 ![](img/cfff42ec07cff5ef2a87119dac616d9d.png)
 
-## 三.功能描述
+## 三. 功能描述
 
-[作者本期总共](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)支持了9个类别的图表 数据可视化 ，主要包括以下类型:
+[作者本期总共](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)支持了9个类别的图表数据可视化，主要包括以下类型:
 
 ### 3.1 [折线图](https://www.zhihu.com/search?q=%E6%8A%98%E7%BA%BF%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)
 
@@ -66,10 +57,11 @@
 
 > 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称月销量信息，并以产品名称进行分组。
 
+![](img/71f08081692b5256f5640f1d74b164c3.png)
 
 ### 3.6 面积图
 
-示例: 查询近一年内月销量大于一万的电动牙刷名称和销量信息。
+> 示例: 查询近一年内月销量大于一万的电动牙刷名称和销量信息。
 
 ![](img/a3efb018c6b082c86db90d7b25d10ad2.png)
 
@@ -77,15 +69,17 @@
 
 > 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称月销量信息，并散点图进行结果展示。
 
+![](img/24080d530b44576cf9bec3598a535147.png)
 
 ### 3.8 饼图
 
 > 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称和符合该条件的销量占比。
 
+![](img/0464fc7dea423cd26faa2df61e6cd464.png)
 
 ### 3.9 [环形图](https://www.zhihu.com/search?q=%E7%8E%AF%E5%BD%A2%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A674827776%7D)
 
-示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称和符合该条件的销量占比，并以环形图进行展示。
+> 示例: 查询近一年内电动牙刷类目月销量大于一万的产品名称和符合该条件的销量占比，并以环形图进行展示。
 
 ![](img/e01ac7435646c1127176b1802bca5869.png)
 
@@ -116,6 +110,6 @@
 | 图表分类 | No | No | No | Yes |
 | 自动绘图 | No | No | No | Yes |
 
-## 五.合作声明
+## 五. 合作声明
 
 上述业务功能为作者团队原创，有合作需求，可以留言联系。转载请注明出处，谢谢！

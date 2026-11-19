@@ -1,3 +1,4 @@
+
 # 卡尔的AI沃茨｜vidu 多图参考
 
 > 来源：[https://aiwarts101.feishu.cn/docx/RtIldeH1DoL5PJxpbjTcrDcjn5m](https://aiwarts101.feishu.cn/docx/RtIldeH1DoL5PJxpbjTcrDcjn5m)
@@ -74,7 +75,6 @@
 
 ![](img/e3d0ddb276d255aeafc97d0af96b2e03.png)
 
-
 [vidu-video-2850679173617170.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CW3Gbqc5Do2HMfxageGccK0qnAg)
 
 ![](img/91c2350d5d08532c1f71a52ba9fd47a1.png)
@@ -107,9 +107,7 @@
 
 [vidu-video-2851248841020587.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SB8Zb7yR6ooHzHxcAFqc6jJAnkb)
 
-
 [vidu-video-2851249785860952.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L7XCbngaPohMKOxRZbAcfv2WnOc)
-
 
 [vidu-video-2851250046760183.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MO7wbLjXdoFUqIxgCpGcAatInnf)
 
@@ -123,7 +121,6 @@
 
 [vidu-video-2851415444830271.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KHFzbQeBkoWadWxjYnocrgbqnfb)
 
-
 [vidu-video-2851318992075325.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XIOeb8bLLorUmaxqDxacpXsVnLb)
 
 ![](img/843c33fd75f017bace49c32049f91101.png)
@@ -136,12 +133,9 @@
 
 ![](img/0bd43a163065d1b36d24e9fae456b505.png)
 
-
 [vidu-video-2851336513244452.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BuAcbjsRvoQhnYxvHnmctnFbnBh)
 
-
 [vidu-video-2851331315916262.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MGFcbbI1AoCxL9xW7ihcSFXFnNk)
-
 
 [vidu-video-2851352741673735.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G3PWbTa2Co3jeFxoRtUc3UXwnCb)
 

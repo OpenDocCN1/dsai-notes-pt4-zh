@@ -1,17 +1,12 @@
+
 # 莫尔索随笔【LLM】
 
 > 来源：[https://agispace.feishu.cn/docx/VIaUdO9mMo1la2xjC0rcFka8nBe](https://agispace.feishu.cn/docx/VIaUdO9mMo1la2xjC0rcFka8nBe)
-
 > 👸号：莫尔索随笔
-
 >
-
 > 跟踪LLM(大语言模型)最新动态，分享第一手LLM 实践经验，致力于打造个人LLM 应用开发全栈指南!
-
 >
-
 > 欢迎加入会员计划，获取优质内容推送：https://mp.weixin.qq.com/s/wpqMOPhrh73YAAPpH3WHKA
-
 > 我的新书《LangChain编程从入门到实践》已经开售，推荐正在学习AI应用开发的朋友购买阅读：https://u.jd.com/V8pkqFY
 
 ![](img/376dec0146ac9bd927aa38694e98fd45.png)

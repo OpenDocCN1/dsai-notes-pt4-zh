@@ -1,8 +1,7 @@
-# 01.13-ChatGPT，取代工作or生产力神器？清华校友联手发文：AI时代怎么选工作
-
-> 来源：[https://agijuejin.feishu.cn/docx/HTaZd4r9WojTlbxPne2cl476nXf](https://agijuejin.feishu.cn/docx/HTaZd4r9WojTlbxPne2cl476nXf)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 13 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/HTaZd4r9WojTlbxPne2cl476nXf](https://agijuejin.feishu.cn/docx/HTaZd4r9WojTlbxPne2cl476nXf)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -10,7 +9,7 @@
 
 ## ⭐ 今日热点
 
-### 💡 ChatGPT，取代工作or生产力神器？清华校友联手发文：AI时代怎么选工作
+### 💡 01.13-ChatGPT，取代工作or生产力神器？清华校友联手发文：AI时代怎么选工作
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JLN38NUA0511ABV6.html?spss=dy_author)
 

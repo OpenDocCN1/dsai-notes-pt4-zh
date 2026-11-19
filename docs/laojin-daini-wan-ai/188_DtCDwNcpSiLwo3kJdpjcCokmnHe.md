@@ -1,3 +1,4 @@
+
 # MCP吃掉Claude 7%脑容量？手把手教你用Skill神器省90%，2小时测试变10分钟
 
 > 来源：[https://my.feishu.cn/docx/DHjgdCbeuoI8qxxAwmPcIg6JnRd](https://my.feishu.cn/docx/DHjgdCbeuoI8qxxAwmPcIg6JnRd)
@@ -22,7 +23,7 @@
 
 ## Playwright MCP大家都熟，Skill和它有什么区别？
 
-众所周知，playwright-mcp是让AI控制浏览器的神器。
+众所周知，`playwright-mcp`是让AI控制浏览器的神器。
 
 微软官方出品，GitHub上火得一塌糊涂。
 
@@ -36,15 +37,13 @@
 
 ![](img/5782d9ab6f2f168eb921b5421cb97bdf.png)
 
----
-
 **这要从AI的"脑容量"说起。**
 
 Claude有200k tokens的"脑容量"。
 
 你和它聊天、发代码、看截图，都在消耗这个容量。用完了，对话就中断。
 
-而playwright-mcp有21个功能，光是让C**laude"记住"这些功能**定义，就要吃掉13,678个tokens。
+而`playwright-mcp`有21个功能，光是让Claude"记住"这些功能定义，就要吃掉13,678个tokens。
 
 还没开始干活，7%的脑容量就没了。
 
@@ -56,7 +55,7 @@ Claude有200k tokens的"脑容量"。
 
 **Skill版本完全不一样。**
 
-playwright-skill只有314行说明，相当于给Claude一个"目录索引"。
+`playwright-skill`只有314行说明，相当于给Claude一个"目录索引"。
 
 需要什么功能，再去翻具体那一页。
 
@@ -68,7 +67,7 @@ playwright-skill只有314行说明，相当于给Claude一个"目录索引"。
 
 同样的功能，Skill版本能让你和Claude聊更久，做更多事。
 
-这就是我今天要介绍的playwright-skill。
+这就是我今天要介绍的`playwright-skill`。
 
 ## 它能干什么？
 
@@ -118,7 +117,7 @@ GitHub上1054个人收藏，每天都在更新。
 
 ## 说说真实体验
 
-**场景1：测试一键分发功能**
+### 场景1：测试一键分发功能
 
 我的插件要同时发布到5个平台。
 
@@ -130,19 +129,19 @@ GitHub上1054个人收藏，每天都在更新。
 
 Claude会：
 
-+   自己打开5个平台
++ 自己打开5个平台
 
-+   自己登录账号
++ 自己登录账号
 
-+   自己发布文章
++ 自己发布文章
 
-+   失败了自己重试
++ 失败了自己重试
 
-+   最后给我截图和报告
++ 最后给我截图和报告
 
 20分钟搞定以前2小时的活。
 
-**场景2：批量检查已发布的文章**
+### 场景2：批量检查已发布的文章
 
 插件更新后，要确保之前发的文章没被影响。
 
@@ -160,7 +159,7 @@ Claude会：
 
 ![](img/bd7906016d2f75c3249c5aba304f88ab.png)
 
-**场景3：多账号测试**
+### 场景3：多账号测试
 
 我有3个👸号账号，都要测试。
 
@@ -184,7 +183,7 @@ Github地址：https://github.com/lackeyjb/playwright-skill
 
 打开Claude Code，说一句：
 
-"帮我安装playwright-skill插件"
+"帮我安装`playwright-skill`插件"
 
 Claude会自己下载、安装、配置。
 
@@ -214,7 +213,7 @@ npm run setup
 
 ## 踩过的坑，提前告诉你
 
-**坑1：复杂任务可能需要多轮对话**
+### 坑1：复杂任务可能需要多轮对话
 
 如果你的要求很复杂，Claude第一次可能做不对。
 
@@ -222,7 +221,7 @@ npm run setup
 
 比如："登录按钮在页面右上角，不是中间那个"
 
-**坑2：网页加载慢的时候容易出错**
+### 坑2：网页加载慢的时候容易出错
 
 有些网站打开很慢。
 
@@ -230,7 +229,7 @@ Claude可能还没等页面加载完就去点了，然后报错。
 
 解决办法：告诉它"等2秒再操作"或者"等页面完全加载再点"。
 
-**坑3：偶尔会判断错误**
+### 坑3：偶尔会判断错误
 
 有时候会把正常的当成错误。
 
@@ -238,7 +237,7 @@ Claude可能还没等页面加载完就去点了，然后报错。
 
 所以结果还是要自己看一眼。
 
-**坑4：浏览器默认是打开的**
+### 坑4：浏览器默认是打开的
 
 这个其实是优点，你能看到它在干什么。
 
@@ -252,7 +251,7 @@ Claude可能还没等页面加载完就去点了，然后报错。
 
 现在做完功能，顺手就说一句：
 
-**"帮我测试一下刚做的XX功能"**
+"帮我测试一下刚做的XX功能"
 
 它自己打开浏览器，自己操作，告诉你结果。
 
@@ -294,12 +293,12 @@ Claude可能还没等页面加载完就去点了，然后报错。
 
 ## 参考来源
 
-+   playwright-skill项目：https://github.com/lackeyjb/playwright-skill
++ `playwright-skill`项目：https://github.com/lackeyjb/playwright-skill
 
-+   Playwright MCP Token消耗问题：https://github.com/microsoft/playwright-mcp/issues/889
++ Playwright MCP Token消耗问题：https://github.com/microsoft/playwright-mcp/issues/889
 
-+   Armin Ronacher《Skills vs MCP》：https://lucumr.pocoo.org/2025/12/13/skills-vs-mcp/
++ Armin Ronacher《Skills vs MCP》：https://lucumr.pocoo.org/2025/12/13/skills-vs-mcp/
 
-+   HN讨论帖（作者亲述）：https://news.ycombinator.com/item?id=45642911
++ HN讨论帖（作者亲述）：https://news.ycombinator.com/item?id=45642911
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

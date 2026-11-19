@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230717）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/XL7jdYoYEown5ExAVkGcH4stnCd](https://jlqyxzzvbk.feishu.cn/docx/XL7jdYoYEown5ExAVkGcH4stnCd)
@@ -12,7 +13,7 @@
 
 # AI资讯精选
 
-## **Stability ****AI**新推出的Stable Doodle
+## Stability AI新推出的Stable Doodle
 
 ![](img/2870baae6376613c85f8588754a4d7d1.png)
 
@@ -52,17 +53,17 @@ Stability AI 在一篇博客文章中透露，Stable Doodle 面向专业人士�
 
 # AI软件精选
 
-## **stable doodle（****AI****绘画）**
+## stable doodle（AI绘画）
 
 Stability AI 推出了 Stable Doodle，这是一款草图到图像工具，可将简单的绘图转换为动态图像，为一系列专业人士和爱好者提供无限的成像可能性。
 
-将绘画变为现实从未如此简单。 Stability AI 推出的 Clipdrop 的这款新工具能够显着增强从教育到创意设计，再到时尚和艺术等一系列行业的能力。 Stable Doodle 以及最新的 Stable 扩散模型 SDXL 0.9 均可在 Clipdrop by Stability AI 网站上免费试用。
+将绘画变为现实从未如此简单。 Stability AI 推出的 Clipdrop 的这款新工具能够显著增强从教育到创意设计，再到时尚和艺术等一系列行业的能力。 Stable Doodle 以及最新的 Stable 扩散模型 SDXL 0.9 均可在 Clipdrop by Stability AI 网站上免费试用。
 
 ![](img/0bf799be46d6840dee17df8958fcb25c.png)
 
 链接：https://clipdrop.co/stable-doodle
 
-## **sk****etc**h metademolab（AI绘画）
+## sketch metademolab（AI绘画）
 
 当你上传完绘画作品之后，即可在线编辑作品人物的身体节点，调整不同动作，生成动图，让画作中的人物 "活" 起来
 
@@ -72,13 +73,13 @@ Stability AI 推出了 Stable Doodle，这是一款草图到图像工具，可�
 
 链接：https://sketch.metademolab.com/canvas
 
-## Photoshop AI**（AI修图/绘画）**
+## Photoshop AI（AI修图/绘画）
 
 ![](img/4af1abd190898b50f6ce56668adc1957.png)
 
 链接：https://www.adobe.com/products/photoshop/generative-fill.html
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+**更多AI工具请访问：**http://ai.kcodez.com/
 
 # AI课程精选
 
@@ -98,8 +99,6 @@ AI绘画基础课Midjourney
 
 ![](img/33749e8a492103d5fb0599111fbb0144.png)
 
-#
-
 ![](img/d708c1491b8b69c7355a2f5c108c2aac.png)
 
 ![](img/447f8399416eff64db6dc733ac155392.png)
@@ -118,7 +117,7 @@ AI绘画基础课Midjourney
 
 ![](img/4ce19715200f2e47d8d9ee2a7ad3bd6f.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像GPT，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/40c3a6072a5918ab6754beb7fa360da3.png)
 

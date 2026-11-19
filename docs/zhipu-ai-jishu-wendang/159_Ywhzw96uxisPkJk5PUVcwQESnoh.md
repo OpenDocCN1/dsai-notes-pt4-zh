@@ -1,3 +1,4 @@
+
 # 错误代码
 
 > 来源：[https://ai.feishu.cn/docx/OfOSdkIiaowBoKxbtw2cdwMXnUc](https://ai.feishu.cn/docx/OfOSdkIiaowBoKxbtw2cdwMXnUc)
@@ -20,7 +21,7 @@
 | 435 | 原因：文件大小超过100MB |
 | 500 | 原因：服务器处理请求时发生错误 |
 
-错误码示例400
+### 错误码示例400
 
 ```
 {
@@ -40,7 +41,7 @@
 }
 ```
 
-错误码示例401
+### 错误码示例401
 
 ```
 {

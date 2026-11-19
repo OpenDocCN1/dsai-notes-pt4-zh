@@ -1,9 +1,7 @@
-# 12.18-谷歌：只要有人工监督，客户即可在“高风险”领域使用其 AI 作出决策
-
-> 来源：[https://agijuejin.feishu.cn/docx/LghQddQhXoSdQnxZFbRc4UtpnUh](https://agijuejin.feishu.cn/docx/LghQddQhXoSdQnxZFbRc4UtpnUh)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 18 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/LghQddQhXoSdQnxZFbRc4UtpnUh](https://agijuejin.feishu.cn/docx/LghQddQhXoSdQnxZFbRc4UtpnUh)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/7c47b8f64224f09b73a5bc5221f66fa6.png)
@@ -108,7 +106,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/818/158.htm)
 
 ![](img/7bb2750a52afa7ca202b80f193644635.png)
 
-2024 年 12 月马斯克与台积电董事长魏哲家见面，强调台积电为特斯拉生产 Dojo 芯片的重要性。马斯克透露特斯拉未来重心是 Optimus 人形机器人，魏哲家表示多功能机器人是 AI 应用最佳代表。业内人士澄清 Dojo 芯片主要用于神经网络训练，推动完全自动驾驶技术发展。美国银行分析师预测，2025 年底特斯拉工厂将部署约 1000 台 Optimus 机器人。德意志银行预计，到 2035 年，20 万台销量、5 万美元平均售价的 Optimus 机器人将为特斯拉带来 100 亿美元年收入。
+2024 年 12 月 马斯克与台积电董事长魏哲家见面，强调台积电为特斯拉生产 Dojo 芯片的重要性。马斯克透露特斯拉未来重心是 Optimus 人形机器人，魏哲家表示多功能机器人是 AI 应用最佳代表。业内人士澄清 Dojo 芯片主要用于神经网络训练，推动完全自动驾驶技术发展。美国银行分析师预测，2025 年底特斯拉工厂将部署约 1000 台 Optimus 机器人。德意志银行预计，到 2035 年，20 万台销量、5 万美元平均售价的 Optimus 机器人将为特斯拉带来 100 亿美元年收入。
 
 ## ✨ 行业观点
 

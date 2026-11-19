@@ -1,3 +1,4 @@
+
 # Freeflo：免费的AI绘画提示词灵感库，适用于Midjourney、SD等多个平台
 
 > 来源：[https://docs.feishu.cn/docx/HeeGdodwXo56rCxp1sycv2TNned](https://docs.feishu.cn/docx/HeeGdodwXo56rCxp1sycv2TNned)
@@ -12,7 +13,7 @@
 
 ## 一、工具介绍 🛠️
 
-Freeflo 是一个免费的 AI 绘画提示词灵感库，可用于 Midjourney、Adobe Firefly、Stable Diffusion 等多个平台，能让我们迅速复刻特定风格或图像效果。它收录了多种 Midjourney 的 --sref 风格代码，并且有丰富的应用效果展示。整个网页交互精致，体验非常不错。
+Freeflo 是一个免费的 AI 绘画提示词灵感库，可用于 Midjourney、Adobe Firefly、Stable Diffusion 等多个平台，能让我们迅速复刻特定风格或图像效果。它收录了多种 Midjourney 的 `--sref` 风格代码，并且有丰富的应用效果展示。整个网页交互精致，体验非常不错。
 
 ![](img/1cb345d80896cac25815c9b63911db96.png)
 
@@ -26,7 +27,7 @@ Freeflo 是一个免费的 AI 绘画提示词灵感库，可用于 Midjourney、
 
 ![](img/af98d959dff8366866b8ccda540f826b.png)
 
-Chris 以 ChatGPT DALL·E 为例，将提示**词粘贴**到输入框后，替换 {object}内容为你需要创建的主题即可，比如 Chris 创建机器人主题：
+Chris 以 ChatGPT DALL·E 为例，将提示词粘贴到输入框后，替换 `{object}`内容为你需要创建的主题即可，比如 Chris 创建机器人主题：
 
 ![](img/675feea5abc9025a9ff54f4c980be2a6.png)
 
@@ -42,13 +43,10 @@ Chris 以 ChatGPT DALL·E 为例，将提示**词粘贴**到输入框后，替�
 
 Freeflo 目前主要支持以下 4 类功能：
 
-1.  Styles：可重复的风格提示词；
-
-1.  SREF：为 Midjourney 添加 --sref 参数；
-
-1.  Photos：创意项目的免费、精选 AI 图像和提示词；
-
-1.  Illustration：更有创意 AI 艺术插图的提示词。
+1. Styles：可重复的风格提示词；
+2. SREF：为 Midjourney 添加 `--sref` 参数；
+3. Photos：创意项目的免费、精选 AI 图像和提示词；
+4. Illustration：更有创意 AI 艺术插图的提示词。
 
 ![](img/bc9e6e3c771c1d1540b3c431faeedc62.png)
 

@@ -1,10 +1,9 @@
+
 # 关于定制收费角色卡的问题
 
-> 来源：[https://docs.feishu.cn/docx/Xbn3delUUo7bBVxoRxvcFIUmnrh](https://docs.feishu.cn/docx/Xbn3delUUo7bBVxoRxvcFIUmnrh)
+> 来源：`https://docs.feishu.cn/docx/Xbn3delUUo7bBVxoRxvcFIUmnrh`
 
-# 关于定制收费角色卡的问题。
-
-> 本社区已经十分强调，不能在dc宣传有关定制收费性质的群聊
+> 本社区已经十分强调，不能在`dc`宣传有关定制收费性质的群聊
 
 包括网站链接。AI宇宙，AC等等平台，不都是因为这种角色卡定制盈利的模式，这种非法的市场交易进去了吗?这里是开源社区
 

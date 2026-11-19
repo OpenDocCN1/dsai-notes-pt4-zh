@@ -1,14 +1,15 @@
+
 # 📕数据爬虫+分析
 
-> 来源：[https://my.feishu.cn/docx/VelQdkn5bouUJgxN5IWcdTBbnFe](https://my.feishu.cn/docx/VelQdkn5bouUJgxN5IWcdTBbnFe)
+> 来源：`https://my.feishu.cn/docx/VelQdkn5bouUJgxN5IWcdTBbnFe`
 
 > 来源：即刻@ChampionCheung
 
 ## 一、📕数据爬虫
 
-https://web.okjike.com/originalPost/65f83ee383317577a5a46ae1
+`https://web.okjike.com/originalPost/65f83ee383317577a5a46ae1`
 
-一个chrome浏览器的 爬虫插件，用来爬📕帖子的评论区非常好用，也可以爬博主主页帖子，插件名字叫做“Instant Data Scraper”：
+一个chrome浏览器的爬虫插件，用来爬📕帖子的评论区非常好用，也可以爬博主主页帖子，插件名字叫做“Instant Data Scraper”：
 
 反手把数据丢给kimi分析
 
@@ -20,7 +21,7 @@ https://web.okjike.com/originalPost/65f83ee383317577a5a46ae1
 
 ## 二、📕数据分析
 
-一个分析📕爬虫数据的 prompt：https://web.okjike.com/originalPost/66062d91de5f2873487edd65
+一个分析📕爬虫数据的 prompt：`https://web.okjike.com/originalPost/66062d91de5f2873487edd65`
 
 ```
 角色名称

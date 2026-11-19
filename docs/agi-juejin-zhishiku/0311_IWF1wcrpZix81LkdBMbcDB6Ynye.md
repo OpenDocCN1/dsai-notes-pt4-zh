@@ -1,3 +1,4 @@
+
 # Claude 3.5 把 OpenAI 藏藏掖掖的 GPT-4o 功能免费公开了出来，瞬间写完整个网页！
 
 > 来源：[https://agijuejin.feishu.cn/docx/DRl9dEsrtoXfSCxP7fMcTDPRnfh](https://agijuejin.feishu.cn/docx/DRl9dEsrtoXfSCxP7fMcTDPRnfh)
@@ -28,13 +29,13 @@ Claude 3.5 Sonnet 作为 Claude 3.5 系列的首个模型版本，在行业智�
 
 性能涨了，但价格方面还是之前 Sonnet 的“大杯”水平
 
-和藏藏掖掖的 GPT-4o 完整版不同，海外用户现在就可以在 claude.ai 官网和 Claude iOS 应用上使用 Claude 3.5 Sonnet，目前开放了 5 天免费试用 —— 这点相当值得一提，因为 Claude 3 发布的时候 Anthropic 还没开发完 iOS 应用，而这一次则是直接同步上线了，苹果用户狂喜。
+和藏藏掖掖的 GPT-4o 完整版不同，海外用户现在就可以在 `claude.ai` 官网和 Claude iOS 应用上使用 Claude 3.5 Sonnet，目前开放了 5 天免费试用 —— 这点相当值得一提，因为 Claude 3 发布的时候 Anthropic 还没开发完 iOS 应用，而这一次则是直接同步上线了，苹果用户狂喜。
 
 此外，订阅了 Claude Pro 和 Team 计划的用户还可以在更高的速率限制下访问。Claude 3.5 Sonnet 还通过 Anthropic API、Amazon Bedrock 和 Google Cloud 的 Vertex AI 提供，其成本为每百万输入 tokens / 3 美元和每百万输出 tokens / 15 美元，并支持 200K tokens 的上下文窗口。
 
 ## “我把前端和程序员一起塞到了这款 AI 里面”
 
-首先，直接进入标题的重点。Claude.ai 这次最劲爆的发布当属全新的 Artifacts 功能，它扩展了用户与 Claude 互动的方式。
+首先，直接进入标题的重点。`Claude.ai` 这次最劲爆的发布当属全新的 Artifacts 功能，它扩展了用户与 Claude 互动的方式。
 
 ![](img/6ff618eeb08090e8de119936018f76e2.png)
 
@@ -52,15 +53,15 @@ Source：Twitter user @op7418
 
 ![](img/f435f56962f7538d58eeb60e3a63dc7a.png)
 
-[0bc3pyaa4aaadqap7zluzvtfa7wdbz7aadqa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ok6vbglipoNrMrxDRcVcGgcznKe)
+[`0bc3pyaa4aaadqap7zluzvtfa7wdbz7aadqa.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ok6vbglipoNrMrxDRcVcGgcznKe)
 
-这个预览功能标志着 Claude 从「对话式 AI」向「协作工作环境」的转变。这只是 Claude.ai 更广阔愿景的开始，很快将扩展到支持团队协作。未来，整个团队甚至整个组织都能在一个共享空间中安全地集中他们的知识、文档和正在进行的工作，而 Claude 也将成为一个按需的团队成员。
+这个预览功能标志着 Claude 从「对话式 AI」向「协作工作环境」的转变。这只是 `Claude.ai` 更广阔愿景的开始，很快将扩展到支持团队协作。未来，整个团队甚至整个组织都能在一个共享空间中安全地集中他们的知识、文档和正在进行的工作，而 Claude 也将成为一个按需的团队成员。
 
 如果你还没看过瘾，以下还有更直观的视频，体现了 Claude 瞬间写完网页的速度：
 
 ![](img/4ac1d66f44fefc53c780df644e3a147e.png)
 
-[0bc3suaa4aaadiap6gluyrtfbfodb2kqadqa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YMZRbabToolQzaxioOvcWwNlnce)
+[`0bc3suaa4aaadiap6gluyrtfbfodb2kqadqa.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YMZRbabToolQzaxioOvcWwNlnce)
 
 Source：Twitter user @genie0309
 
@@ -94,7 +95,7 @@ OpenAI 的 Romain Huet 在演示中只用一张嘴指挥 4o 写完代码
 
 ![](img/bcd591d4b183fb2ecf264d1e7ddaf229.png)
 
-[0bc3huaa6aaaiiap54tuzrtfapodb46qadya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DotHbhWI5oWmJJxsSaZctBRNn7c)
+[`0bc3huaa6aaaiiap54tuzrtfapodb46qadya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DotHbhWI5oWmJJxsSaZctBRNn7c)
 
 这一代显著的改进在需要视觉推理的任务中尤为明显，例如解释图表和图形。Claude 3.5 Sonnet 还能准确地从不完美的图像中转录文本，这在零售、物流和金融服务领域尤为重要，因为 AI 能从图像、图表或插图中获取比单纯文本更多的见解。
 

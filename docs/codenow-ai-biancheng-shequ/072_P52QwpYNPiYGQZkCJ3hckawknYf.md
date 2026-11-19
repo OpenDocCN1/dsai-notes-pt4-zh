@@ -1,4 +1,7 @@
-# 再见996！产品经理用AI编程做数据分析，辅助决策#AI编程线下训练营 - 产品经理回访
+
+# 再见996！产品经理用AI编程做数据分析，辅助决策
+
+## AI编程线下训练营 - 产品经理回访
 
 > 来源：[https://now.feishu.cn/docx/XxYLdwtOHoPHC2xUSmIcZnDJnHK](https://now.feishu.cn/docx/XxYLdwtOHoPHC2xUSmIcZnDJnHK)
 

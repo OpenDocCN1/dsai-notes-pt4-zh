@@ -1,4 +1,5 @@
-# Claude Code  x OpenClaw 双顶流中文教程
+
+# Claude Code x OpenClaw 双顶流中文教程
 
 > 来源：[https://my.feishu.cn/docx/Ss2kdoRKmonzBExshc3csHsQn9M](https://my.feishu.cn/docx/Ss2kdoRKmonzBExshc3csHsQn9M)
 
@@ -16,7 +17,7 @@
 
 老金我说："我不会，但我有武器和助理。"
 
-武器是 **Claude Code**，助理是 **OpenClaw**。
+武器是 Claude Code，助理是 OpenClaw。
 
 这两个工具，老金我之前分别写过教程。
 
@@ -34,7 +35,7 @@
 
 所以老金我做了一个决定：把两个教程合并成一个。
 
-原来的 Claude-Code-Guide-Zh，现在更名为 Claude-Code-x-OpenClaw-Guide-Zh。
+原来的 `Claude-Code-Guide-Zh`，现在更名为 `Claude-Code-x-OpenClaw-Guide-Zh`。
 
 10万字教程全面升级，Claude Code版本更新到最新，新增OpenClaw完整中文教程。
 
@@ -44,29 +45,29 @@
 
 先说数据，这次不是小修小补。
 
-**Claude Code部分**
+### Claude Code部分
 
 版本从19一路更新到了现在最新版，中间经历了好几个大版本。
 
-新增的功能包括Worktree支持、远程控制、插件市场、Sonnet 4.6的100万上下文窗口。
+新增的功能包括`Worktree`支持、远程控制、插件市场、Sonnet 4.6的100万上下文窗口。
 
 这些内容老金我全部补进了教程，每个功能都有详细说明和代码示例。
 
 ![](img/0348d116b5c6c534728b1f3ec6b968c8.png)
 
-**新增OpenClaw完整教程**
+### 新增OpenClaw完整教程
 
 这是这次最大的更新。
 
-从OpenClaw的安装配置，到Agent编排，到多平台部署（WhatsApp、Telegram、Slack、Discord），老金我写了完整的中文教程。
+从OpenClaw的安装配置，到`Agent`编排，到多平台部署（WhatsApp、Telegram、Slack、Discord），老金我写了完整的中文教程。
 
 目前中文社区几乎没有系统化的OpenClaw教程，老金我应该是第一个。
 
 ![](img/c750b7650c5ec5faf66736536b0da57a.png)
 
-**GitHub地址更名**
+### GitHub地址更名
 
-原来叫 Claude-Code-Guide-Zh，现在改成了 Claude-Code-x-OpenClaw-Guide-Zh。
+原来叫 `Claude-Code-Guide-Zh`，现在改成了 `Claude-Code-x-OpenClaw-Guide-Zh`。
 
 一个仓库，两套顶级工具的中文教程，全部免费开源。
 
@@ -92,7 +93,7 @@ OpenClaw是"调度器"，是你指挥轮子干活的中枢。
 
 老金我打个比方。
 
-刚开始你手里轮子少，可能就几个Skill、几个Hook、几个自动化脚本。
+刚开始你手里轮子少，可能就几个`Skill`、几个`Hook`、几个自动化脚本。
 
 这个阶段，Claude Code在提效方面占比80%，OpenClaw可能只有20%不到。
 
@@ -100,11 +101,11 @@ OpenClaw是"调度器"，是你指挥轮子干活的中枢。
 
 但随着你的轮子越来越多，这个比例会反过来。
 
-当你积累了几十个Skill、上百个自动化流程的时候，OpenClaw的价值就爆发了。
+当你积累了几十个`Skill`、上百个自动化流程的时候，OpenClaw的价值就爆发了。
 
 你可以一声令下，千军万马。
 
-一个指令，十几个Agent同时干活，每个Agent调用不同的轮子。
+一个指令，十几个`Agent`同时干活，每个`Agent`调用不同的轮子。
 
 这才是两个工具合并的真正原因——它们是一条完整的成长路径。
 
@@ -120,9 +121,9 @@ Claude Code帮老金我写代码、调试、部署。
 
 遇到不会的功能，描述一下需求，它直接帮你实现。
 
-OpenClaw帮老金我把各种Agent串起来。
+OpenClaw帮老金我把各种`Agent`串起来。
 
-飞书知识库的实时同步、内容自动化处理、数据分析，全是Agent在跑。
+飞书知识库的实时同步、内容自动化处理、数据分析，全是`Agent`在跑。
 
 老金我还把小龙虾（OpenClaw）内嵌进了网站，让大家能直接看到它的使用场景。
 
@@ -140,21 +141,21 @@ Claude Code负责执行，OpenClaw负责调度。
 
 老金我挑几个最重要的说。
 
-**Worktree支持**
+### Worktree支持
 
 这个功能老金我等了很久。
 
 以前想同时开两个分支干活，得手动切来切去，烦得要死。
 
-现在一个参数就搞定，Claude Code官方内置了Worktree支持。
+现在一个参数就搞定，Claude Code官方内置了`Worktree`支持。
 
-**100万上下文窗口**
+### 100万上下文窗口
 
 Sonnet 4.6带来的100万token上下文，对长代码文件的处理能力直接起飞。
 
 老金我测试过，以前处理大项目经常超出上下文限制，现在基本不会了。
 
-**插件市场**
+### 插件市场
 
 Claude Code现在有官方插件市场了。
 
@@ -166,29 +167,29 @@ Claude Code现在有官方插件市场了。
 
 老金我把OpenClaw教程分成了几个部分。
 
-**基础入门**
+### 基础入门
 
 从零开始安装配置OpenClaw，Windows和Mac都覆盖了。
 
 老金我知道很多人卡在环境配置这一步，所以这部分写得特别细。
 
-**Agent编排**
+### Agent编排
 
-怎么用OpenClaw创建自定义Agent，怎么配置多Agent协作。
+怎么用OpenClaw创建自定义`Agent`，怎么配置多`Agent`协作。
 
 这部分是核心，老金我写了大量代码示例。
 
-**多平台部署**
+### 多平台部署
 
 OpenClaw支持WhatsApp、Telegram、Slack、Discord、Signal、iMessage。
 
 每个平台的接入方式都不一样，老金我逐个写了教程。
 
-**实战案例**
+### 实战案例
 
 老金我自己用OpenClaw搭建的几个实际项目，完整代码和配置都开源了。
 
-包括一个客服Agent、一个内容生成Agent、一个数据分析Agent。
+包括一个客服`Agent`、一个内容生成`Agent`、一个数据分析`Agent`。
 
 ## 一个仓库两套教程怎么组织的
 
@@ -208,11 +209,11 @@ Claude Code部分保留了原来的4种学习路径。
 
 OpenClaw部分老金我新设计了3种学习路径。
 
-**最重要的是什么？**
+### 最重要的是什么？
 
 后续我将增加两个板块之间有一个"联合实战"章节。
 
-教你怎么用Claude Code写OpenClaw的Agent代码，怎么调试，怎么部署。
+教你怎么用Claude Code写OpenClaw的`Agent`代码，怎么调试，怎么部署。
 
 这个章节是老金我觉得最有价值的部分，因为市面上没有人写过这个。
 
@@ -220,27 +221,27 @@ OpenClaw部分老金我新设计了3种学习路径。
 
 ## 老金我的建议
 
-如果你之前已经Star过 Claude-Code-Guide-Zh，GitHub会自动跳转到新地址，不用担心。
+如果你之前已经Star过 `Claude-Code-Guide-Zh`，GitHub会自动跳转到新地址，不用担心。
 
 如果你是第一次看到这个项目，老金我建议按这个顺序来。
 
-**第一阶段：先磨武器**
+### 第一阶段：先磨武器
 
 从Claude Code基础教程开始，把造轮子的能力练扎实。
 
 这个阶段你会感觉Claude Code占了你80%的效率提升，这是正常的。
 
-**第二阶段：开始造轮子**
+### 第二阶段：开始造轮子
 
-学会Skill、Hooks、MCP这些进阶功能，开始积累自己的自动化工具库。
+学会`Skill`、`Hooks`、`MCP`这些进阶功能，开始积累自己的自动化工具库。
 
 轮子越多，你后面的爆发力越强。
 
-**第三阶段：指挥千军万马**
+### 第三阶段：指挥千军万马
 
 轮子够多了，再学OpenClaw。
 
-这时候你会发现，一个指令就能调度十几个Agent同时干活。
+这时候你会发现，一个指令就能调度十几个`Agent`同时干活。
 
 Claude Code和OpenClaw的比例会反过来，OpenClaw的价值开始爆发。
 
@@ -264,7 +265,7 @@ GitHub主页：https://github.com/KimYx0207
 
 X（Twitter）：https://x.com/KimYx0207
 
-觉得有用的话，帮老金点个Star，也欢迎提Issue和PR。
+觉得有用的话，帮老金点个Star，也欢迎提`Issue`和`PR`。
 
 有问题评论区聊，老金我看到都会回。
 

@@ -1,12 +1,13 @@
+
 # 阿里通义结构化提示词
 
 > 来源：[https://langgptai.feishu.cn/docx/WsoLdsNcGoKexcxpgGicRlbTn6O](https://langgptai.feishu.cn/docx/WsoLdsNcGoKexcxpgGicRlbTn6O)
 
-# 通义千问——通情达意的全能 AI 助手
+## 通义千问——通情达意的全能 AI 助手
 
 有过大模型落地应用经验的一定都知道，通义千问系列模型的能力有多能打~ 私有化部署扛把子一哥！
 
-+   https://tongyi.aliyun.com/qianwen
++ https://tongyi.aliyun.com/qianwen
 
 ![](img/f7dbd9a2dba114a827da05a7d93e9f84.png)
 

@@ -1,3 +1,4 @@
+
 # Coze应用+多维表格=数据分析
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/KnJadipgToOJHPxG1Hxcouf8n4b](https://v11enp9ok1h.feishu.cn/docx/KnJadipgToOJHPxG1Hxcouf8n4b)
@@ -5,7 +6,6 @@
 ## 一、效果演示
 
 ### 账号分析
-
 
 ### 赛道分析
 
@@ -31,29 +31,27 @@
 
 ### Coze 应用
 
-#### **创建应用**
+#### 创建应用
 
 打开Coze，创建应用，选择PC模式。
 
 设计应用界面：
 
-##### 配置管理页面
+#### 配置管理页面
 
+#### 账号分析页面
 
-##### 账号分析页面
-
-
-##### 赛道分析页面
+#### 赛道分析页面
 
 ![](img/3f329f0b53edd5d9ad72d9cc899d66af.png)
 
-##### **简化版界面**
+#### 简化版界面
 
 ![](img/c221bc0056d6b6e0400b90dfeb032643.png)
 
-界面整体用来做三个任务，1. **设置参数****，包含你****的多维表格地址、**需要同步的表名、浏览器Cookie。2. 查询账号数据，并同步账号的基础信息和作品列表到多维表格。3.查询赛道或关键词，同步查询到的博主和相关作品，到到多维表格。
+界面整体用来做三个任务，1. 设置参数，包含你的多维表格地址、需要同步的表名、浏览器Cookie。2. 查询账号数据，并同步账号的基础信息和作品列表到多维表格。3.查询赛道或关键词，同步查询到的博主和相关作品，到到多维表格。
 
-#### **配置工作流**
+#### 配置工作流
 
 ##### 工作流-配置管理
 
@@ -67,19 +65,19 @@
 
 ![](img/af315192812ef2e8e5b592cee9cd2f4f.png)
 
-返**回到UI部分，将工作流关联**到“更新配置”按钮的事件上，并分别取4个输入框的值，传给工作流对应的4个参数。注意，要一一对应起来，不要弄错咯。
+返回到UI部分，将工作流关联到“更新配置”按钮的事件上，并分别取4个输入框的值，传给工作流对应的4个参数。注意，要一一对应起来，不要弄错咯。
 
 ![](img/5c71acba542dfdf4bd3cd13e379f84bb.png)
 
 ##### 工作流-账号分析
 
-**基础工作流**
+###### 基础工作流
 
-做一个基础的查询功能，用来确保正确读取信息，开始节点添加一个参数，user_link，用来接收界面上的输入地址，并传值给第二个节点。在第二个节点中（在插件商场找一个读取用户信息的📕插件），然后选用户变量cookie赋值到第一个参数中，第二个参数用开始节点的参数，即可。
+做一个基础的查询功能，用来确保正确读取信息，开始节点添加一个参数，`user_link`，用来接收界面上的输入地址，并传值给第二个节点。在第二个节点中（在插件商场找一个读取用户信息的📕插件），然后选用户变量`cookie`赋值到第一个参数中，第二个参数用开始节点的参数，即可。
 
 ![](img/9c1103b7f704f2308a25e19b4777611e.png)
 
-**数据同步工作流**
+###### 数据同步工作流
 
 ![](img/fc876db869cc94b781c2bd869c258679.png)
 
@@ -90,9 +88,7 @@
 两个核心节点的代码：
 
 ```
-
-//以下代码是将一条数据发送到多维表格
-async function main({ params }: Args): Promise&lt;Output&gt; {
+async function main({ params }: Args): Promise<Output> {
     //一行
     class records {
         fields: string
@@ -128,9 +124,8 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 ![](img/d70547aee512c7f9ec293deac1197185.png)
 
 ```
-
-/**/以下代码是****将多****条数据发送到多维表**格
-async function main({ params }: Args): Promise&lt;Output&gt; {
+/**/以下代码是将多条数据发送到多维表格
+async function main({ params }: Args): Promise<Output> {
     //一行
     class records {
         fields: string
@@ -149,7 +144,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
     //循环每一行数据，逐步处理成适合多维表格可以使用的数据
 
     //与上面的代码不同的在这里，读取的是一个列表,使用了map函数
-    params.notes.map(item =&gt; {
+    params.notes.map(item => {
         //创建一列数据
         let newitem = new fields();
         newitem.details = JSON.stringify(item);
@@ -171,11 +166,11 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ##### 工作流-关键词/赛道分析
 
-**基础工作流**,**查询关键词**
+###### 基础工作流, 查询关键词
 
 ![](img/c6846e4393ba159116f43734ac489b15.png)
 
-**同步数据工作流**
+###### 同步数据工作流
 
 ![](img/eac0c0de9689bf904672a626250b8850.png)
 
@@ -183,17 +178,17 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 最后参考，配置管理的界面，把按钮与工作流对应的调用关系设置好，即可。
 
-**同步账号**
+###### 同步账号
 
 ![](img/5c95aa2eda2b8bd66e428b503fd5333c.png)
 
-**同步赛道**
+###### 同步赛道
 
 ![](img/1efe1e63c3c69ddda0c521310f512941.png)
 
 #### 多维表格
 
-**复制多维表格模版，把对应的多维表格地址、表明**、Cookie设置进去。如果你改了表名或需要同步数据的列明，需要在代码你修改列名称，以及更新配置对应的表明。
+复制多维表格模版，把对应的多维表格地址、表明、Cookie设置进去。如果你改了表名或需要同步数据的列明，需要在代码你修改列名称，以及更新配置对应的表明。
 
 一切就绪后，即可同步数据了。
 
@@ -201,23 +196,23 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ## 应用的背景说明
 
-1.  解决的问题
+### 解决的问题
 
-1.  使用Coze、飞书多维表格、自定义AI字段捷径（这个名字不如改成叫Agent），来实现数据的高效抓取与批量AI化处理。
+使用Coze、飞书多维表格、自定义AI字段捷径（这个名字不如改成叫Agent），来实现数据的高效抓取与批量AI化处理。
 
-1.  技术场景
+### 技术场景
 
-1.  Coze定义智能体，发布到飞书多维表格字段捷径。
+Coze定义智能体，发布到飞书多维表格字段捷径。
 
-1.  多维表格中使用和配置自定义的AI字段捷径。
+多维表格中使用和配置自定义的AI字段捷径。
 
-1.  Coze应用，采用交互式界面将数据导入到飞书多维表格，并驱动多维表格自动运行。
+Coze应用，采用交互式界面将数据导入到飞书多维表格，并驱动多维表格自动运行。
 
-1.  多维表格仪表盘对数据的可视化。
+多维表格仪表盘对数据的可视化。
 
-1.  期望达到的目的
+### 期望达到的目的
 
-1.  这个应用的目的，实际上是更多的是希望大家能看“如何最高效率使用AI”。抛砖引玉，让大家能将方案泛化到自己的实际工作中！同时，也选择了最适合的技术路线（不懂代码即可完成）！
+这个应用的目的，实际上是更多的是希望大家能看“如何最高效率使用AI”。抛砖引玉，让大家能将方案泛化到自己的实际工作中！同时，也选择了最适合的技术路线（不懂代码即可完成）！
 
 ## 动手实践
 
@@ -239,7 +234,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ![](img/e98e3e37d3a15d505c8e32895083146e.png)
 
-这个工作流没有什么特别需要注意的地方，两个📕插件，大家可以在插件市场找到。按着配置，（cookie如何找？教程暴多），在获取笔记详情节点和笔记评论节点，分别配置cookie，note_link使用开始节点的USER_INPUT
+这个工作流没有什么特别需要注意的地方，两个📕插件，大家可以在插件市场找到。按着配置，（cookie如何找？教程暴多），在获取笔记详情节点和笔记评论节点，分别配置`cookie`，`note_link`使用开始节点的`USER_INPUT`
 
 然后，我们会使用代码节点，将两个插件获取的结果进行一次数据处理（代码节点通常都会在这个场景下出现）。
 
@@ -250,8 +245,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 在这里要注意代码节点输出的配置格式。
 
 ```
-
-async function main({ params }: Args): Promise&lt;Output&gt; {
+async function main({ params }: Args): Promise<Output> {
     // 构建输出对象
     class article {
         title: string;
@@ -269,7 +263,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
     // 返回对象
     const ret = {
-        &quot;article&quot;: {}
+        "article": {}
     };
 
     let newitem = new article();
@@ -285,12 +279,12 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
     //读取笔记评论列表
     let commentstemp = [{}];
     commentstemp.length = 0;
-    params.comments.map(item =&gt; {
+    params.comments.map(item => {
         commentstemp.push({
             //评论用户的首页链接
-            &quot;user_link&quot;: item.user_link,
+            "user_link": item.user_link,
             //评论内容
-            &quot;content&quot;: item.content
+            "content": item.content
         })
     })
 
@@ -309,9 +303,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 最后一步，测试。找到一篇📕笔记，然后，试运行对话流，直接在对话窗口输入地址，当你看到数据，那就是成功了。
 
-
 回到智能体的编排页面，同样的方式，也测试一下。确保对话流执行成功。
-
 
 #### 发布
 
@@ -319,18 +311,17 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 点发布后，只选择多维表格，然后，点配置
 
-
 点击后，会打开配置页面。
 
 ![](img/371161654c4a808753e546032619ff9b.png)
 
-1.  是输出类型（选文本就行了）
+1. 是输出类型（选文本就行了）
 
-1.  是输入类型，切记要选择字段选择器
+2. 是输入类型，切记要选择字段选择器
 
 ![](img/1911805372dd2d0b9e3a2803711fe9b8.png)
 
-1.  要去完善上架信息。填个表格。表格本身没什么特点，在选发布范围的时候，可以选仅自己可用，否则审核时间就比较慢！
+3. 要去完善上架信息。填个表格。表格本身没什么特点，在选发布范围的时候，可以选仅自己可用，否则审核时间就比较慢！
 
 ![](img/6b4c9c6f90ffb14fd128e9419aa69845.png)
 
@@ -350,7 +341,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ![](img/300fd578264983019019f9d85ff22870.png)
 
-配置完，然后，打开自动更新，这里如果note_url如果有赋值，那么模型分析就会自动触发（trigger）。
+配置完，然后，打开自动更新，这里如果`note_url`如果有赋值，那么模型分析就会自动触发（trigger）。
 
 我们可以测试一下。
 
@@ -368,13 +359,13 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ### Coze 应用
 
-现在，才到好玩的时候，因为我们不可能每**次都去复制一个链接贴进去，我们的需求是：根**据一个博主的链接，获取他的笔记，并全部自动写入到多维表格，多维表格再进行批量分析。
+现在，才到好玩的时候，因为我们不可能每次都去复制一个链接贴进去，我们的需求是：根据一个博主的链接，获取他的笔记，并全部自动写入到多维表格，多维表格再进行批量分析。
 
-在前面两步中，我们已经完成了后端的准备工作。那么，接下来我们只需要完成找到博主的地址，批量读取笔记，并写入多维表格的note_url列，即可。
+在前面两步中，我们已经完成了后端的准备工作。那么，接下来我们只需要完成找到博主的地址，批量读取笔记，并写入多维表格的`note_url`列，即可。
 
 在我演示的应用中，这部分的UI比较复杂，因此，我们做一个简单版的：
 
-#### **创建应用**
+#### 创建应用
 
 打开Coze，创建应用，可以选择PC模式。
 
@@ -402,7 +393,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 第一步就不讲了，与字段捷径里面的配置是一样的。只是要选读取作者笔记的插件。
 
-将开始节点的auth_link关联到userProfileUrl，即可。
+将开始节点的`auth_link`关联到`userProfileUrl`，即可。
 
 第二步的节点需要把数据转换为符合多维表格插件接收的数据格式。因此需要一个代码转换。
 
@@ -412,9 +403,12 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 代码如下
 
-```
 
-async function main({ params }: Args): Promise&lt;Output&gt; {
+
+## 代码实现
+
+```
+async function main({ params }: Args): Promise<Output> {
 
     //理解为，用来包装一行数据
     class records {
@@ -431,7 +425,7 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
     ret.records.length = 0;
     //逐条读取笔记地址，并保存到列表中。
-    params.input.forEach(item =&gt; {
+    params.input.forEach(item => {
         let newitem = new fields();
         newitem.note_url = item.note_url;
         let newrecords = new records();
@@ -446,10 +440,11 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 }
 ```
 
+## 工作流配置
+
 最后，在插件市场，搜索官方的多维表格插件
 
-
-然后，选择 add_records，添加到工作流中。并分配配置参数，第一个参数，使用多维表格的url就行，第二个参数要使用我们代码转换后的数据，第三个参数一定要和你的表名称一致。
+然后，选择 `add_records`，添加到工作流中。并分配配置参数，第一个参数，使用多维表格的`url`就行，第二个参数要使用我们代码转换后的数据，第三个参数一定要和你的表名称一致。
 
 ![](img/51cc2fb3ab070bbe99325884c0537f50.png)
 
@@ -457,13 +452,13 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ![](img/7eaa9c6fad29a1a005fdb5d6e853fdbf.png)
 
-#### 测试工作流
+### 测试工作流
 
 我们需要先去多维表格复制链接和表明。按着我的设置来调整即可。
 
 ![](img/5a3a3e12950dd0338d143e431e0c89a8.png)
 
-#### 注意授权
+### 注意授权
 
 直接点击试运行，第一次运行，需要进行授权。
 
@@ -475,12 +470,11 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 ![](img/dcda1e6771325c555fb9ea693a4becdd.png)
 
-#### UI调用工作流
+### UI调用工作流
 
 我们切换到UI部分，点击按钮，在右侧的属性面板中，选择事件，并选择点击时调用工作流。分别把三个输入框的值给到对应的参数。然后点击确定。
 
-
-#### 预览测试
+### 预览测试
 
 ![](img/d0a3f0d16728a83d502d376c56f3951b.png)
 
@@ -504,20 +498,20 @@ async function main({ params }: Args): Promise&lt;Output&gt; {
 
 > 扩展思维
 
-1.  Coze智能体+工作流，以及发布为字段捷径，与相关配置。
+1. Coze智能体+工作流，以及发布为字段捷径，与相关配置。
 
-1.  插件与代码结合的方式。
+1. 插件与代码结合的方式。
 
-1.  多维表格字段捷径简单用法。
+1. 多维表格字段捷径简单用法。
 
-1.  如何向多维表格写入数据。
+1. 如何向多维表格写入数据。
 
-1.  如何做一个简单的UI，并关联工作流。
+1. 如何做一个简单的UI，并关联工作流。
 
-+   这是我目前AI服务企业客户快速MVP基本方法，大家可以参考。最终交付形式多样，会根据客户需求选择最合适的高效、低成本技术栈。
++ 这是我目前AI服务企业客户快速MVP基本方法，大家可以参考。最终交付形式多样，会根据客户需求选择最合适的高效、低成本技术栈。
 
-+   需要为自己设计一套可交付的UI，提高用户体验。
++ 需要为自己设计一套可交付的UI，提高用户体验。
 
-+   要善于将多个技术进行组合使用，有奇效。
++ 要善于将多个技术进行组合使用，有奇效。
 
-+   业务拆解能力非常重要，善于洞察核心问题。
++ 业务拆解能力非常重要，善于洞察核心问题。

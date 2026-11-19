@@ -1,16 +1,14 @@
-# 02.17-AI 新突破：扭矩聚类算法亮相，无需人工标注、自主学习准确率高达 97.7%
-
-> 来源：[https://agijuejin.feishu.cn/docx/LboxdOnaho5zA4xGsGYce8LPncb](https://agijuejin.feishu.cn/docx/LboxdOnaho5zA4xGsGYce8LPncb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 02 月 17 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/LboxdOnaho5zA4xGsGYce8LPncb](https://agijuejin.feishu.cn/docx/LboxdOnaho5zA4xGsGYce8LPncb)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/b4b057478faf5ec51a939f8b529bd05d.png)
 
 ## ⭐ 今日热点
 
-## 💡Trae Windows版本发布，欢迎下载使用👏 #Trae
+### 💡 Trae Windows版本发布，欢迎下载使用👏
 
 [下载地址：](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=web_banner)
 
@@ -19,13 +17,9 @@
 Trae 是一款全新的智能协作AI IDE，灵活适配你在不同场景下的需求：
 
 - 全新 Bulider模式，快速从 0 到 1
-
 - 代码仓库级理解，准确解决需求
-
 - 图片多模态输入，沟通更高效
-
 - 实时代码续写，极致提速
-
 - 智能AI协作，畅享丝滑体验
 
 ### 💡 AI 新突破：扭矩聚类算法亮相，无需人工标注、自主学习准确率高达 97.7%
@@ -41,7 +35,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/831/384.htm)
 ### 💡 DeepSeek 等秒变操控电脑 AI 智能体，微软开源工具 OmniParser V2.0 发布
 
 IT之家 | [阅读原文](https://www.ithome.com/0/831/376.htm)
-
 
 2月12日微软发布AI工具OmniParser V2.0，它能将OpenAI、DeepSeek等模型变成操控计算机的智能体。与V1版相比，V2.0用更多数据训练，检测小UI元素时准确率更高、推理更快，延迟降60%。在高分辨率测试中，V2+GPT-4o准确率达39.6% ，远超GPT-4o原始的0.8%。此外，微软还开源OmniTool，它集成基本工具，是将大模型变智能体的关键工具。
 

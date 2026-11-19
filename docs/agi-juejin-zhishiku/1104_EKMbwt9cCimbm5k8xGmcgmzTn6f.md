@@ -1,3 +1,4 @@
+
 # LLM代理应用实战：构建Plotly数据可视化代理
 
 > 来源：[https://agijuejin.feishu.cn/docx/F2wndtpTJoWxjaxNQ0Wcsdsdnoc](https://agijuejin.feishu.cn/docx/F2wndtpTJoWxjaxNQ0Wcsdsdnoc)
@@ -16,15 +17,15 @@
 
 ![](img/e4c4635e7d542cccbc1a3974db4e3f4e.png)
 
-## **可视化库的选择**
+## 可视化库的选择
 
-在构建一个数据可视化的AI代理时，选择合适的可视化工具是至关重要的。虽然存在多种工具可以用于数据可视化，但Plotly和Matplotlib是最为常用的两种。为了构建一个既功能丰富又用户友好的可视化界面，我们决定使用Plotly作为主要的可视化库。
+在构建一个数据可视化的AI代理时，选择合适的可视化工具是至关重要的。虽然存在多种工具可以用于数据可视化，但`Plotly`和`Matplotlib`是最为常用的两种。为了构建一个既功能丰富又用户友好的可视化界面，我们决定使用`Plotly`作为主要的可视化库。
 
-与Matplotlib相比，Plotly提供了更加丰富的交互性功能。它支持直接在Web浏览器中的动态渲染，使得用户能够通过缩放、平移、悬停来互动式地探索数据。这种高度的交互性是Plotly的一大优势，尤其是在需要展示复杂数据集或进行深入数据分析的应用场景中。
+与`Matplotlib`相比，`Plotly`提供了更加丰富的交互性功能。它支持直接在Web浏览器中的动态渲染，使得用户能够通过缩放、平移、悬停来互动式地探索数据。这种高度的交互性是`Plotly`的一大优势，尤其是在需要展示复杂数据集或进行深入数据分析的应用场景中。
 
-虽然Matplotlib在科学研究和学术出版物中有广泛的应用，特别是在生成高质量的静态图像方面具有极高的灵活性和精确度，但其在交互性和Web集成方面的限制使得它在构建现代、交互式的数据可视化解决方案时可能不如Plotly那么吸引人。
+虽然`Matplotlib`在科学研究和学术出版物中有广泛的应用，特别是在生成高质量的静态图像方面具有极高的灵活性和精确度，但其在交互性和Web集成方面的限制使得它在构建现代、交互式的数据可视化解决方案时可能不如`Plotly`那么吸引人。
 
-所以我们选择Plotly作为构建数据可视化AI代理的工具，不仅能够满足用户对交互性的需求，还能够提供强大的数据处理能力和优秀的用户体验。这将极大地提高数据可视化的效率和效果，使得数据分析更加直观和易于理解。
+所以我们选择`Plotly`作为构建数据可视化AI代理的工具，不仅能够满足用户对交互性的需求，还能够提供强大的数据处理能力和优秀的用户体验。这将极大地提高数据可视化的效率和效果，使得数据分析更加直观和易于理解。
 
 下面是我使用Llama3 70B构建可视化基线。
 
@@ -36,11 +37,11 @@
 
 要构建这个应用程序，我们需要为LLM代理配备两个工具：一个工具提供关于数据集的信息，另一个工具包含关于样式的信息。
 
-## **代理提供的信息**
+## 代理提供的信息
 
-**1、DataFrame信息**
+### DataFrame 信息
 
-这个工具目的是分析DataFrame并将其内容信息存储到索引中。要索引的数据包括列名、数据类型以及值的最小值、最大值和平均值范围。这有助于代理理解它们正在处理的变量类型。
+这个工具目的是分析`DataFrame`并将其内容信息存储到索引中。要索引的数据包括列名、数据类型以及值的最小值、最大值和平均值范围。这有助于代理理解它们正在处理的变量类型。
 
 这里我们使用layoff.fyi 的数据来进行分析。
 
@@ -107,7 +108,7 @@ from llama_index.core.readers.json import JSONReader
 
 这样第一步就完成了。
 
-**2、自定义样式信息**
+### 自定义样式信息
 
 表样式主要包括关于如何在plot中设置不同图表样式的自然语言说明。这里需要使用自然语言描述样式，所以可能需要进行尝试，下面是我如何创建折线图和条形图的说明!
 
@@ -141,7 +142,7 @@ from llama_index.core import Document
           always use plotly_white template, reduce x &amp; y axes line to 0.2 &amp; x &amp; y grid width to 1.
         Always give a title and make bold using html tag axis label
         Always display numbers in thousand(K) or Million(M) if larger than 1000/100000. Add annotations x values
-        If variable is a percentage show in 2 decimal points with &#x27;%&#x27;&quot;&quot;&quot;)
+        If variable is a percentage show in 2 decimal points with &#x27;%&quot;&quot;&quot;)
           ]
  # Creating an Index
  style_index = VectorStoreIndex.from_documents(styling_instructions)
@@ -149,11 +150,11 @@ from llama_index.core import Document
 
 或者直接将部分样式的代码作为示例输入给模型，这样对于固定的样式是非常好的一个方式
 
-## **构建AI代理**
+## 构建 AI 代理
 
-我们上面已经构建了2个索引：DataFrame信息（元数据），表格自定义样式信息
+我们上面已经构建了2个索引：`DataFrame`信息（元数据），表格自定义样式信息
 
-下面就可以使用lama- index从索引构建查询引擎并将其用作代理工具使用。
+下面就可以使用`llama-index`从索引构建查询引擎并将其用作代理工具使用。
 
 ![](img/d915d180864dd7756367d707c02c78af.png)
 
@@ -211,68 +212,84 @@ from llama_index.core import Document
 
 ![](img/551a3e79b63682cb8e3f2a2f3b4bbb70.png)
 
-```
+
+
+```python
 from llama_index.core import PromptTemplate
- 
- new_prompt_txt= &quot;&quot;&quot;You are designed to help with building data visualizations in Plotly. You may do all sorts of analyses and actions using Python
- 
- ## Tools
- 
- You have access to a wide variety of tools. You are responsible for using the tools in any sequence you deem appropriate to complete the task at hand.
- This may require breaking the task into subtasks and using different tools to complete each subtask.
- 
- You have access to the following tools, use these tools to find information about the data and styling:
- {tool_desc}
- 
- 
- ## Output Format
- 
- Please answer in the same language as the question and use the following format:
- 
- ```
- Thought: The current language of the user is: (user&#x27;s language). I need to use a tool to help me answer the question.
- Action: tool name (one of {tool_names}) if using a tool.
- Action Input: the input to the tool, in a JSON format representing the kwargs (e.g. {{&quot;input&quot;: &quot;hello world&quot;, &quot;num_beams&quot;: 5}})
- ```
- 
- Please ALWAYS start with a Thought.
- 
- Please use a valid JSON format for the Action Input. Do NOT do this {{&#x27;input&#x27;: &#x27;hello world&#x27;, &#x27;num_beams&#x27;: 5}}.
- 
- If this format is used, the user will respond in the following format:
- 
- ```
- Observation: tool response
- ```
- 
- You should keep repeating the above format till you have enough information to answer the question without using any more tools. At that point, you MUST respond in the one of the following two formats:
- 
- ```
- Thought: I can answer without using any more tools. I&#x27;ll use the user&#x27;s language to answer
- Answer: [your answer here (In the same language as the user&#x27;s question)]
- ```
- 
- ```
- Thought: I cannot answer the question with the provided tools.
- Answer: [your answer here (In the same language as the user&#x27;s question)]
- ```
- 
- ## Current Conversation
- 
- Below is the current conversation consisting of interleaving human and assistant messages.&quot;&quot;&quot;
- 
- # Adding the prompt text into PromptTemplate object
- new_prompt = PromptTemplate(new_prompt_txt)
- 
- # Updating the prompt
- agent.update_prompts({&#x27;agent_worker:system_prompt&#x27;:new_prompt})
+
+new_prompt_txt = """You are designed to help with building data visualizations in Plotly. You may do all sorts of analyses and actions using Python
+
+## Tools
+
+You have access to a wide variety of tools. You are responsible for using the tools in any sequence you deem appropriate to complete the task at hand.
+This may require breaking the task into subtasks and using different tools to complete each subtask.
+
+You have access to the following tools, use these tools to find information about the data and styling:
+{tool_desc}
+
+
+## Output Format
+
+Please answer in the same language as the question and use the following format:
+
 ```
 
-## **可视化**
+Thought: The current language of the user is: (user's language). I need to use a tool to help me answer the question.
 
-现在让就可以向我们构建的代理发起请求了
+Action: tool name (one of {tool_names}) if using a tool.
 
+Action Input: the input to the tool, in a JSON format representing the kwargs (e.g. {"input": "hello world", "num_beams": 5})
+
+```
+
+Please ALWAYS start with a Thought.
+
+Please use a valid JSON format for the Action Input. Do NOT do this {'input': 'hello world', 'num_beams': 5}.
+
+If this format is used, the user will respond in the following format:
+
+```
+
+Observation: tool response
+
+```
+
+You should keep repeating the above format till you have enough information to answer the question without using any more tools. At that point, you MUST respond in the one of the following two formats:
+
+```
+
+Thought: I can answer without using any more tools. I'll use the user's language to answer
+
+Answer: [your answer here (In the same language as the user's question)]
+
+```
+
+```
+
+Thought: I cannot answer the question with the provided tools.
+
+Answer: [your answer here (In the same language as the user's question)]
+
+```
+
+## Current Conversation
+
+Below is the current conversation consisting of interleaving human and assistant messages."""
+
+# Adding the prompt text into PromptTemplate object
+new_prompt = PromptTemplate(new_prompt_txt)
+
+# Updating the prompt
+agent.update_prompts({'agent_worker:system_prompt':new_prompt})
+```
+
+## 可视化
+
+现在就可以向我们构建的代理发起请求了
+
+```python
 response = agent.chat("Give Plotly code for a line chart for Number of Workers get information from the dataframe about the correct column names and make sure to style the plot properly and also give a title")
+```
 
 ![](img/0b18fd434ae73b09713cf4b6b621f56d.png)
 
@@ -290,7 +307,7 @@ response = agent.chat("Give Plotly code for a line chart for Number of Workers g
 
 ![](img/654ec41d97ad860d6a64787fed079a74.png)
 
-## **总结**
+## 总结
 
 AI代理可以自动化从多个数据源收集、清洗和整合数据的过程。这意味着可以减少手动处理错误，提高数据处理速度，让分析师有更多时间专注于解读数据而不是处理数据。使用AI代理进行数据可视化能够显著提升数据分析的深度和广度，同时提高效率和用户体验，帮助企业和组织更好地利用他们的数据资产。
 
@@ -300,7 +317,7 @@ AI代理可以自动化从多个数据源收集、清洗和整合数据的过程
 
 ---
 
-**MORE**
+### MORE
 
 kaggle比赛交流和组队
 

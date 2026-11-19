@@ -1,16 +1,17 @@
+
 # 安装部署指南
 
 > 来源：[https://my.feishu.cn/docx/Fw4fdp0IdosaCoxrHEicBz5cnyZ](https://my.feishu.cn/docx/Fw4fdp0IdosaCoxrHEicBz5cnyZ)
 
-# 02. 安装部署指南
+## 02. 安装部署指南
 
-> 🟢 难**度：入门 **| ⏱️ 阅读时间：20 分钟 | 📋 前置知识：会用命令行（终端）
+> 🟢 难度：入门 | ⏱️ 阅读时间：20 分钟 | 📋 前置知识：会用命令行（终端）
 
 > **本篇你将学会：** 在 macOS/Linux/Windows 上安装 OpenClaw，配置运行环境，完成首次启动
 
 > **小白速通：** 直接跳到"快速安装"章节（第 3 节），跟着复制粘贴命令就行。遇到问题看第 12-13 节的故障排查
 
-## 概述
+### 概述
 
 这篇指南覆盖 OpenClaw 在所有主流平台上的安装、配置、升级和故障排查。不管你是 macOS 用户、Linux 服务器管理员还是 Windows 开发者，都能找到适合自己的安装方式。
 
@@ -26,15 +27,20 @@
 
 ---
 
-## 1. 系统要求
+### 1. 系统要求
 
-### 1.1 硬件要求
+#### 1.1 硬件要求
 
 | 项目 | 最低要求 | 推荐配置 | 说明 |
+
 | --- | --- | --- | --- |
+
 | CPU | 1 核 | 2 核+ | Gateway 守护进程常驻运行 |
+
 | 内存 | 512 MB | 2 GB+ | 多平台连接时内存消耗线性增长 |
-| 磁盘 | 500 MB 可用空间 | 2 GB+ | 包含 node_modules 和日志文件 |
+
+| 磁盘 | 500 MB 可用空间 | 2 GB+ | 包含 `node_modules` 和日志文件 |
+
 | 网络 | 能访问 AI 模型 API | 稳定的宽带连接 | WebSocket 长连接需要稳定网络 |
 
 > **名词解释**：Gateway（OpenClaw 的核心服务进程）以守护进程（daemon，在后台持续运行的服务）方式运行，负责管理所有消息平台连接和 Agent 调度。
@@ -44,32 +50,49 @@
 如果使用本地模型（Ollama），硬件要求会大幅提升：
 
 | 模型规模 | 最低内存 | 推荐 GPU | 推荐磁盘空间 |
+
 | --- | --- | --- | --- |
+
 | 7B 参数 | 8 GB RAM | 6 GB VRAM | 10 GB |
+
 | 13B 参数 | 16 GB RAM | 12 GB VRAM | 20 GB |
+
 | 70B 参数 | 64 GB RAM | 24 GB+ VRAM | 50 GB |
 
 > **提示**：如果你只用云端 API（OpenAI、Anthropic、Google），不需要 GPU，一台普通的云服务器就够了。
 
-### 1.2 操作系统要求
+#### 1.2 操作系统要求
 
 | 操作系统 | 支持版本 | 备注 |
+
 | --- | --- | --- |
+
 | macOS | 12 (Monterey) 及以上 | Intel 和 Apple Silicon 均支持 |
+
 | Ubuntu/Debian | 20.04 LTS 及以上 | 推荐 22.04 LTS |
+
 | CentOS/RHEL | 8 及以上 | 需要 EPEL 仓库 |
+
 | Arch Linux | Rolling Release | 社区维护 AUR 包 |
+
 | Windows | 10 (1903+) / 11 | 强烈推荐通过 WSL2 安装 |
+
 | Alpine Linux | 3.18+ | Docker 镜像常用基础系统 |
 
-### 1.3 软件依赖
+#### 1.3 软件依赖
 
 | 软件 | 最低版本 | 推荐版本 | 用途 |
+
 | --- | --- | --- | --- |
+
 | Node.js | 22.16.0 | 22.x LTS | 运行时环境 |
+
 | npm（Node Package Manager，Node.js 的包管理器） | 10.0.0 | 10.x（随 Node.js 附带） | 包管理器 |
+
 | Git | 2.30+ | 最新版 | 源码安装、版本管理 |
+
 | Python | 3.10+（可选） | 3.12 | 部分 Agent 工具依赖 |
+
 | Docker | 24.0+（可选） | 最新版 | 容器化部署 |
 
 检查当前环境是否满足要求：
@@ -89,13 +112,13 @@ git --version
 
 ---
 
-## 2. Node.js 环境安装
+### 2. Node.js 环境安装
 
 OpenClaw 需要 Node.js 22 或更高版本。如果你已经有了，跳过这一节。
 
-### 2.1 使用 nvm 安装（推荐）
+#### 2.1 使用 `nvm` 安装（推荐）
 
-nvm（Node Version Manager）是管理 Node.js 版本的最佳方式，可以在多个版本之间自由切换。
+`nvm`（Node Version Manager）是管理 Node.js 版本的最佳方式，可以在多个版本之间自由切换。
 
 **macOS / Linux：**
 
@@ -118,13 +141,13 @@ node --version  # v22.x.x
 
 **Windows：**
 
-Windows 用户使用 nvm-windows：
+Windows 用户使用 `nvm-windows`：
 
-1.  从 nvm-windows releases 下载最新安装包
+1. 从 `nvm-windows` releases 下载最新安装包
 
-1.  运行安装程序
+2. 运行安装程序
 
-1.  打开新的命令行窗口：
+3. 打开新的命令行窗口：
 
 ```
 nvm install 22
@@ -132,15 +155,15 @@ nvm use 22
 node --version
 ```
 
-### 2.2 使用官方安装包
+#### 2.2 使用官方安装包
 
 直接从 [Node.js 官网](https://nodejs.org/) 下载 LTS 版本安装包：
 
-+   macOS：下载 .pkg 文件，双击安装
++ macOS：下载 .pkg 文件，双击安装
 
-+   Windows：下载 .msi 文件，双击安装
++ Windows：下载 .msi 文件，双击安装
 
-+   Linux：使用 NodeSource 仓库
++ Linux：使用 NodeSource 仓库
 
 ```
 # Ubuntu/Debian - 使用 NodeSource 仓库
@@ -155,26 +178,31 @@ sudo yum install -y nodejs
 sudo pacman -S nodejs npm
 ```
 
-### 2.3 使用 Homebrew（macOS）
+#### 2.3 使用 Homebrew（macOS）
 
 ```
 brew install node@22
 ```
 
-### 2.4 安装方式对比
+#### 2.4 安装方式对比
 
 | 方式 | 优点 | 缺点 | 适用场景 |
+
 | --- | --- | --- | --- |
-| nvm | 多版本管理、不需要 sudo | 需要额外安装 | 开发环境（推荐） |
+
+| `nvm` | 多版本管理、不需要 sudo | 需要额外安装 | 开发环境（推荐） |
+
 | 官方安装包 | 简单直接 | 升级麻烦、可能需要 sudo | 新手、单版本需求 |
+
 | Homebrew | macOS 生态集成好 | 仅限 macOS | macOS 用户 |
+
 | NodeSource | 系统包管理器集成 | 版本更新可能滞后 | 服务器部署 |
 
 ---
 
-## 3. 安装 OpenClaw CLI
+### 3. 安装 OpenClaw CLI
 
-### 3.1 npm 全局安装（推荐）
+#### 3.1 `npm` 全局安装（推荐）
 
 ```
 npm install -g openclaw@latest
@@ -183,21 +211,21 @@ npm install -g openclaw@latest
 openclaw --version
 ```
 
-### 3.2 使用 yarn
+#### 3.2 使用 `yarn`
 
 ```
 yarn global add openclaw
 openclaw --version
 ```
 
-### 3.3 使用 pnpm（高性能的 npm 替代品）
+#### 3.3 使用 `pnpm`（高性能的 `npm` 替代品）
 
 ```
 pnpm add -g openclaw
 openclaw --version
 ```
 
-### 3.4 使用 npx（免安装体验）
+#### 3.4 使用 `npx`（免安装体验）
 
 如果你只是想试试，不想全局安装：
 
@@ -206,20 +234,25 @@ npx openclaw --version
 npx openclaw onboard --install-daemon
 ```
 
-> **注意**：npx 每次运行都会检查最新版本，适合体验，不适合生产环境。
+> **注意**：`npx` 每次运行都会检查最新版本，适合体验，不适合生产环境。
 
-### 3.5 安装方式对比
+#### 3.5 安装方式对比
 
 | 方式 | 命令 | 优点 | 缺点 |
+
 | --- | --- | --- | --- |
-| npm | npm i -g openclaw@latest | 最通用、文档最多 | 全局安装可能需要权限 |
-| yarn | yarn global add openclaw | 速度快、缓存好 | 需要额外安装 yarn |
-| pnpm | pnpm add -g openclaw | 磁盘占用小 | 需要额外安装 pnpm |
-| npx | npx openclaw | 免安装 | 每次启动慢 |
+
+| npm | `npm i -g openclaw@latest` | 最通用、文档最多 | 全局安装可能需要权限 |
+
+| yarn | `yarn global add openclaw` | 速度快、缓存好 | 需要额外安装 yarn |
+
+| pnpm | `pnpm add -g openclaw` | 磁盘占用小 | 需要额外安装 pnpm |
+
+| npx | `npx openclaw` | 免安装 | 每次启动慢 |
 
 ---
 
-## 4. 引导向导（openclaw onboard）
+### 4. 引导向导（`openclaw onboard`）
 
 安装完 CLI 后，运行引导向导完成初始配置：
 
@@ -229,7 +262,7 @@ openclaw onboard --install-daemon
 
 向导会引导你完成以下步骤：
 
-### 4.1 选择 AI 模型提供商
+#### 4.1 选择 AI 模型提供商
 
 ```
 ? 选择你的 AI 模型提供商:
@@ -240,7 +273,7 @@ openclaw onboard --install-daemon
     自定义 API (OpenAI 兼容)
 ```
 
-### 4.2 配置 API Key
+#### 4.2 配置 API Key
 
 ```
 ? 输入你的 OpenAI API Key: sk-proj-xxxxxxxxxxxxx
@@ -248,7 +281,7 @@ openclaw onboard --install-daemon
 ✓ 可用模型: gpt-5.4, gpt-5.2-mini
 ```
 
-### 4.3 选择消息平台
+#### 4.3 选择消息平台
 
 ```
 ? 你想连接哪些消息平台？（可多选）
@@ -261,7 +294,7 @@ openclaw onboard --install-daemon
     ◯ Web Chat（内置网页界面）
 ```
 
-### 4.4 配置 Gateway
+#### 4.4 配置 Gateway
 
 ```
 ? Gateway 监听端口: (18789)
@@ -269,7 +302,7 @@ openclaw onboard --install-daemon
 ? Control UI 访问密码: ********
 ```
 
-### 4.5 完成配置
+#### 4.5 完成配置
 
 ```
 ✓ 配置文件已生成: ~/.openclaw/openclaw.json
@@ -284,17 +317,17 @@ OpenClaw 安装完成！
   openclaw models list      查看可用模型
 ```
 
-> **提示**：引导向导生成的配置文件在 ~/.openclaw/openclaw.json（JSON5 格式），你可以随时手动编辑。
+> **提示**：引导向导生成的配置文件在 `~/.openclaw/openclaw.json`（JSON5 格式），你可以随时手动编辑。
 
 ---
 
-## 5. macOS 安装完整流程
+### 5. macOS 安装完整流程
 
-### 5.1 使用 Homebrew（最简单）
+#### 5.1 使用 Homebrew（最简单）
 
 ```
 # 安装 Homebrew（如果没有）
-/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 安装 Node.js
 brew install node@22
@@ -306,7 +339,7 @@ npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-### 5.2 使用 nvm
+#### 5.2 使用 nvm
 
 ```
 # 安装 nvm
@@ -324,7 +357,7 @@ npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-### 5.3 Apple Silicon 注意事项
+#### 5.3 Apple Silicon 注意事项
 
 M1/M2/M3/M4 芯片的 Mac 完全支持，不需要 Rosetta。如果遇到原生模块编译问题：
 
@@ -332,19 +365,19 @@ M1/M2/M3/M4 芯片的 Mac 完全支持，不需要 Rosetta。如果遇到原生�
 # 确保 Xcode Command Line Tools 已安装
 xcode-select --install
 
-# 如果 node-gyp 编译失败
+# 如果 `node-gyp` 编译失败
 brew install python-setuptools
 ```
 
 ---
 
-## 6. Linux 安装完整流程
+### 6. Linux 安装完整流程
 
-### 6.1 Ubuntu / Debian
+#### 6.1 Ubuntu / Debian
 
 ```
 # 更新系统
-sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 
 # 安装必要工具
 sudo apt install -y curl git build-essential
@@ -364,11 +397,11 @@ npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-### 6.2 CentOS / RHEL
+#### 6.2 CentOS / RHEL
 
 ```
 # 安装必要工具
-sudo yum groupinstall -y &quot;Development Tools&quot;
+sudo yum groupinstall -y "Development Tools"
 sudo yum install -y curl git
 
 # 安装 Node.js 22
@@ -382,7 +415,7 @@ npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-### 6.3 Arch Linux
+#### 6.3 Arch Linux
 
 ```
 # 安装 Node.js
@@ -395,13 +428,13 @@ npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-### 6.4 权限问题处理
+#### 6.4 权限问题处理
 
 Linux 上全局安装 npm 包可能遇到权限问题。推荐方案：
 
-**方案一：使用 nvm（推荐）**
+**方案一：使用 `nvm`（推荐）**
 
-nvm 安装的 Node.js 在用户目录下，不需要 sudo：
+`nvm` 安装的 Node.js 在用户目录下，不需要 sudo：
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -410,12 +443,12 @@ nvm install 22
 npm install -g openclaw@latest  # 不需要 sudo
 ```
 
-**方案二：修改 npm 全局目录**
+**方案二：修改 `npm` 全局目录**
 
 ```
 mkdir -p ~/.npm-global
-npm config set prefix &#x27;~/.npm-global&#x27;
-echo &#x27;export PATH=~/.npm-global/bin:$PATH&#x27; &gt;&gt; ~/.bashrc
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 npm install -g openclaw@latest  # 不需要 sudo
 ```
@@ -429,9 +462,9 @@ npm install -g openclaw@latest
 
 ---
 
-## 7. Windows 安装完整流程
+### 7. Windows 安装完整流程
 
-### 7.1 WSL2 安装（强烈推荐）
+#### 7.1 WSL2 安装（强烈推荐）
 
 Windows 上运行 OpenClaw 最稳定的方式是通过 WSL2：
 
@@ -442,22 +475,26 @@ wsl --install
 # 2. 重启电脑后，打开 Ubuntu 终端
 
 # 3. 在 WSL2 Ubuntu 中安装
-sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-### 7.2 原生 Windows 安装
+#### 7.2 原生 Windows 安装
 
 如果不想用 WSL2，也可以原生安装：
+
+
+
+## 7. Windows 原生安装
 
 1.  从 [Node.js 官网](https://nodejs.org/) 下载 Windows 安装包
 
 1.  运行安装程序，勾选 "Automatically install the necessary tools"
 
-1.  打开新的 PowerShell 或 CMD：
+1.  打开新的 `PowerShell` 或 `CMD`：
 
 ```
 node --version
@@ -468,12 +505,19 @@ openclaw onboard --install-daemon
 ### 7.3 WSL2 vs 原生安装对比
 
 | 特性 | WSL2 | 原生 Windows |
+
 | --- | --- | --- |
+
 | 稳定性 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+
 | 性能 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+
 | 兼容性 | 完全兼容 Linux 生态 | 部分原生模块可能有问题 |
+
 | 文件系统 | Linux 文件系统 | NTFS |
+
 | 网络 | 需要端口转发 | 直接访问 |
+
 | 推荐度 | ✅ 强烈推荐 | ⚠️ 可用但可能遇到问题 |
 
 ---
@@ -498,16 +542,16 @@ docker logs openclaw
 # http://localhost:18789
 ```
 
-使用 docker-compose：
+使用 `docker-compose`：
 
 ```
 # docker-compose.yml
-version: &#x27;3.8&#x27;
+version: '3.8'
 services:
   openclaw:
     image: openclaw/openclaw:latest
     ports:
-      - &quot;18789:18789&quot;
+      - "18789:18789"
     volumes:
       - openclaw-data:/data
       - ./openclaw.json:/app/openclaw.json
@@ -523,7 +567,7 @@ volumes:
 docker-compose up -d
 ```
 
-> **详细的 Docker 部署指南**请参考 09-Docker部署指南，包含生产环境配置、多服务编排、SSL/TLS、备份恢复等内容。
+> **详细的 Docker 部署指南**请参考 `09-Docker部署指南`，包含生产环境配置、多服务编排、SSL/TLS、备份恢复等内容。
 
 ---
 
@@ -542,7 +586,7 @@ cd openclaw
 pnpm install
 
 # 编译 UI 和主项目
-pnpm ui:build &amp;&amp; pnpm build
+pnpm ui:build && pnpm build
 
 # 链接到全局
 pnpm link --global
@@ -587,9 +631,13 @@ openclaw --version
 ### 10.2 版本通道说明
 
 | 通道 | 说明 | npm dist-tag |
+
 | --- | --- | --- |
+
 | stable | 标签发布（vYYYY.M.D） | latest |
+
 | beta | 预发布（vYYYY.M.D-beta.N） | beta |
+
 | dev | main 分支头 | dev |
 
 ```
@@ -628,13 +676,13 @@ npm install -g openclaw@2026.2.20
 
 升级前建议：
 
-1.  **备份配置文件**：cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak
+1. **备份配置文件**：`cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak`
 
-1.  **查看 Changelog**：了解新版本的破坏性变更
+1. **查看 Changelog**：了解新版本的破坏性变更
 
-1.  **升级**：openclaw update --channel stable
+1. **升级**：`openclaw update --channel stable`
 
-1.  **验证**：openclaw status
+1. **验证**：`openclaw status`
 
 ---
 
@@ -652,11 +700,11 @@ npm install -g openclaw@2026.2.20
   },
   agents: {
     defaults: {
-      model: &quot;openai/gpt-5.2-mini&quot;,  // 开发用便宜模型
+      model: "openai/gpt-5.2-mini",  // 开发用便宜模型
     },
   },
   logging: {
-    level: &quot;debug&quot;,
+    level: "debug",
   },
 }
 ```
@@ -670,11 +718,11 @@ npm install -g openclaw@2026.2.20
   },
   agents: {
     defaults: {
-      model: &quot;openai/gpt-5.4&quot;,
+      model: "openai/gpt-5.4",
     },
   },
   logging: {
-    level: &quot;info&quot;,
+    level: "info",
   },
 }
 ```
@@ -688,21 +736,21 @@ npm install -g openclaw@2026.2.20
   gateway: {
     port: 18789,
     auth: {
-      token: &quot;${OPENCLAW_GATEWAY_TOKEN}&quot;,
+      token: "${OPENCLAW_GATEWAY_TOKEN}",
     },
   },
   agents: {
     defaults: {
-      model: &quot;openai/gpt-5.4&quot;,
+      model: "openai/gpt-5.4",
     },
   },
   logging: {
-    level: &quot;warn&quot;,
+    level: "warn",
   },
 }
 ```
 
-> **注意：** environment、debug、logLevel（在 gateway 下）、rateLimit、security 等字段并非 OpenClaw 配置模式中的真实字段。Gateway 认证通过 gateway.auth.token 配置，日志级别通过顶层 logging 配置。
+> **注意：** `environment`、`debug`、`logLevel`（在 `gateway` 下）、`rateLimit`、`security` 等字段并非 OpenClaw 配置模式中的真实字段。Gateway 认证通过 `gateway.auth.token` 配置，日志级别通过顶层 `logging` 配置。
 
 ### 11.4 使用不同配置文件
 
@@ -762,7 +810,7 @@ openclaw health
 
 ### 12.4 Control UI 访问
 
-Gateway 启动后，Control UI 通过 Gateway WebSocket 提供，访问 http://localhost:18789，你应该能看到：
+Gateway 启动后，Control UI 通过 Gateway WebSocket 提供，访问 `http://localhost:18789`，你应该能看到：
 
 +   Gateway 运行状态
 
@@ -774,13 +822,13 @@ Gateway 启动后，Control UI 通过 Gateway WebSocket 提供，访问 http://l
 
 ---
 
-> 💡 遇**到问题？ **直接来这里找答案，大部分安装问题都能在这里解决
+> 💡 遇到问题？直接来这里找答案，大部分安装问题都能在这里解决
 
 ## 13. 常见安装问题排查
 
 ### 13.1 权限问题
 
-**症状**：EACCES: permission denied
+**症状**：`EACCES: permission denied`
 
 ```
 # 方案一：使用 nvm（推荐）
@@ -790,14 +838,14 @@ npm install -g openclaw@latest
 
 # 方案二：修改 npm 目录权限
 mkdir -p ~/.npm-global
-npm config set prefix &#x27;~/.npm-global&#x27;
-echo &#x27;export PATH=~/.npm-global/bin:$PATH&#x27; &gt;&gt; ~/.bashrc
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
 ### 13.2 网络问题
 
-**症状**：npm ERR! network timeout
+**症状**：`npm ERR! network timeout`
 
 ```
 # 使用淘宝镜像
@@ -817,7 +865,7 @@ npm config set registry https://registry.npmjs.org
 
 ### 13.3 Node.js 版本过低
 
-**症状**：Error: OpenClaw requires Node.js 22 or higher
+**症状**：`Error: OpenClaw requires Node.js 22 or higher`
 
 ```
 # 检查当前版本
@@ -834,7 +882,7 @@ sudo apt install -y nodejs
 
 ### 13.4 原生模块编译失败
 
-**症状**：node-gyp rebuild failed
+**症状**：`node-gyp rebuild failed`
 
 ```
 # macOS
@@ -844,13 +892,13 @@ xcode-select --install
 sudo apt install -y build-essential python3
 
 # CentOS/RHEL
-sudo yum groupinstall -y &quot;Development Tools&quot;
+sudo yum groupinstall -y "Development Tools"
 sudo yum install -y python3
 ```
 
 ### 13.5 端口被占用
 
-**症状**：Error: listen EADDRINUSE: address already in use :::18789
+**症状**：`Error: listen EADDRINUSE: address already in use :::18789`
 
 ```
 # 查看占用端口的进程
@@ -858,7 +906,7 @@ lsof -i :18789  # macOS/Linux
 netstat -ano | findstr :18789  # Windows
 
 # 杀掉占用进程
-kill -9 &lt;PID&gt;
+kill -9 <PID>
 
 # 或者修改 OpenClaw 端口
 openclaw config set gateway.port 18790
@@ -866,7 +914,7 @@ openclaw config set gateway.port 18790
 
 ### 13.6 API Key 无效
 
-**症状**：Error: Invalid API key
+**症状**：`Error: Invalid API key`
 
 ```
 # 检查 API Key 是否正确设置
@@ -888,7 +936,7 @@ openclaw models list
 cat /etc/resolv.conf
 
 # 如果 DNS 有问题，手动设置
-sudo bash -c &#x27;echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf&#x27;
+sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
 
 # 检查网络连通性
 ping google.com
@@ -926,7 +974,7 @@ rm -rf ~/.openclaw/logs
 
 ```
 # 停止并删除容器
-docker stop openclaw &amp;&amp; docker rm openclaw
+docker stop openclaw && docker rm openclaw
 
 # 删除数据卷（注意：这会删除所有数据）
 docker volume rm openclaw-data
@@ -942,9 +990,15 @@ docker rmi openclaw/openclaw:latest
 安装完成后，建议按以下顺序继续：
 
 | 下一步 | 文档 | 说明 |
+
 | --- | --- | --- |
-| 快速体验 | 03-快速开始指南 | 5 分钟上手 |
-| 配置模型 | 04-模型配置指南 | 详细的模型配置 |
-| 接入平台 | 05-消息平台接入指南 | 连接 Telegram、WhatsApp 等 |
-| Docker 部署 | 09-Docker部署指南 | 生产环境容器化部署 |
-| 安全配置 | 10-安全配置指南 | API Key 安全、网络安全 |
+
+| 快速体验 | `03-快速开始指南` | 5 分钟上手 |
+
+| 配置模型 | `04-模型配置指南` | 详细的模型配置 |
+
+| 接入平台 | `05-消息平台接入指南` | 连接 Telegram、WhatsApp 等 |
+
+| Docker 部署 | `09-Docker部署指南` | 生产环境容器化部署 |
+
+| 安全配置 | `10-安全配置指南` | API Key 安全、网络安全 |

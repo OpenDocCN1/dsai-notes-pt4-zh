@@ -1,3 +1,4 @@
+
 # 简易 Reflection 实现，看看 Agent 强化效果如何
 
 > 来源：[https://geekbang.feishu.cn/docx/R9yjdIaYfoWLgUx7qcuc5EoNnqc](https://geekbang.feishu.cn/docx/R9yjdIaYfoWLgUx7qcuc5EoNnqc)
@@ -8,21 +9,17 @@
 
 > ⏰ 收录时间：2024-06-03 18:04:02 (UTC+8)
 
-> 🔗 原文链接：   h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/yS2ZSY97Cl-4iIcdy9jZ6w)q.com/s/yS2ZSY97...
+> 🔗 原文链接：https://mp.weixin.qq.com/s/yS2ZSY97Cl-4iIcdy9jZ6w
 
 ![](img/cef1a1d2c678084fe348b7ce697cbdd9.png)
-
-▉
 
 吴恩达老师提出的 4 种 Agent 设计策略，以帮助 LLM 达到更好的效果，估计大家最近都已经看过了。
 
 ![](img/29a0e95eaacd14d0854d05d89e2adcdb.png)
 
-这 4[ 种策](https://mp.weixin.qq.com/s?__biz=Mzk0NTYzNDQ5NQ==&mid=2247488311&idx=1&sn=7dd2c61032eb1eda7fe35017fe690d25&scene=21#wechat_redirect)略 是 Reflection（让 LLM 反思输出的结果并反馈修改）、Tool use（使用工具）、Planning（使用工作流拆解任务步骤）、Multi-agent collaboration（多 Agent 协作）。想要了解更详细的可查看特工 这篇 。
+这 [4 种策略](https://mp.weixin.qq.com/s?__biz=Mzk0NTYzNDQ5NQ==&mid=2247488311&idx=1&sn=7dd2c61032eb1eda7fe35017fe690d25&scene=21#wechat_redirect) 是 Reflection（让 LLM 反思输出的结果并反馈修改）、Tool use（使用工具）、Planning（使用工作流拆解任务步骤）、Multi-agent collaboration（多 Agent 协作）。想要了解更详细的可查看特工 这篇 。
 
 实际上，在通过 Agent 工具制作 bot 的时候，已经运用了当中工具和工作流两种策略。而目前还没有什么 Agent 工具能比较方便有效地实现 多 Agent 协作 ，所以这篇我主要实测如何简单地给 bot 加上反思这一步，强化它的输出效果。
-
-▌
 
 在实测之前，分享一些 吴恩达老师所提及的论文中，我个人关注的要点。主要来自 SELF-REFINE: Iterative Refinement with Self-Feedback.
 
@@ -30,31 +27,31 @@
 
 无反馈迭代：只进行二次迭代，但不提供具体反馈内容。
 
-通用型反馈（ generic feedback ）：例如“提高代码效率”这种一般性准则。
+通用型反馈（`generic feedback`）：例如“提高代码效率”这种一般性准则。
 
-特定、可操作的反馈 （ specific, actionable feedback ）：能够精确地帮助发现问题，并提供明确改进方向的反馈。例如“避免在for循环中重复计算”。
+特定、可操作的反馈（`specific, actionable feedback`）：能够精确地帮助发现问题，并提供明确改进方向的反馈。例如“避免在`for`循环中重复计算”。
 
 2. 自我反思比单纯让 LLM 一次性输出多个结果再进行比较更好。（ This shows the importance of refinement according to feedback over the alternative of just generating multiple initial outputs. ）
 
 3. 自我反思的一个关键挑战是能否提出准确反馈。以及这种方式在强大的模型上表现出色，但在较弱的模型上可能需要额外的改进或调整才能实现类似的效果。
 
-▌ **测试 takeaway**
+## 测试 takeaway
 
 非一般性结论，就这次测试的单个 bot 来说：
 
-对于可以凭借简单常识进行反馈的流程，单次反思提升的效果就可以比较好。但是我并没有特别感觉到 GPT 3.5 + GPT 3.5 > GPT 4. 🤔 如果是更为复 杂的反思，其效果要结合大模型能力、反馈规则 来看 。 这个过程同样也是不断迭代的。
+对于可以凭借简单常识进行反馈的流程，单次反思提升的效果就可以比较好。但是我并没有特别感觉到 GPT 3.5 + GPT 3.5 > GPT 4. 🤔 如果是更为复杂的反思，其效果要结合大模型能力、反馈规则 来看 。 这个过程同样也是不断迭代的。
 
-*欢迎大家分享自己的 bot 实测效果。
+*欢迎大家分享自己的 bot 实测效果。*
 
-▉ **门修斯 pro 版**** **
+## 门修斯 pro 版
 
-我以之前测试过输出不够稳定的门修斯 p[ro ](http://mp.weixin.qq.com/s?__biz=MzkyMTY1ODk3OQ==&mid=2247484571&idx=1&sn=50cf695ff2be9b6bed1267ff8ebe6db6&chksm=c1817797f6f6fe8132635a5411aaed9a7e2cde9fbdd260c93c323874324ff73b9afd2f1aa17d&scene=21#wechat_redirect)版为例。 这个 bot 比之前在 这篇 中提到的更复杂，它需要根据用户设定的环境，识别用户输入并实现以下主要功能：
+我以之前测试过输出不够稳定的门修斯 [pro](http://mp.weixin.qq.com/s?__biz=MzkyMTY1ODk3OQ==&mid=2247484571&idx=1&sn=50cf695ff2be9b6bed1267ff8ebe6db6&chksm=c1817797f6f6fe8132635a5411aaed9a7e2cde9fbdd260c93c323874324ff73b9afd2f1aa17d&scene=21#wechat_redirect) 版为例。 这个 bot 比之前在 这篇 中提到的更复杂，它需要根据用户设定的环境，识别用户输入并实现以下主要功能：
 
-1. 用户可设置交流语言{main_language}和希望学习的语言{target_language};
+1. 用户可设置交流语言`{main_language}`和希望学习的语言`{target_language}`;
 
-2. 将所有不是 {main_language} 的语言段落逐字翻译成 {main_language} ，并提供详细的语法和词义解释；
+2. 将所有不是 `{main_language}` 的语言段落逐字翻译成 `{main_language}` ，并提供详细的语法和词义解释；
 
-3. 对 {main_language} 文本进行赏析，并翻译成 {target_language} ；
+3. 对 `{main_language}` 文本进行赏析，并翻译成 `{target_language}` ；
 
 4. 对给出两种语言的文本段落，前一种默认为原文，后一种为译文，进行译文准确性评估和分析；
 
@@ -62,13 +59,13 @@
 
 6. 除上述以外，提供任何关于语言和翻译相关问题的解答。
 
-▌ **此前的问题**
+## 此前的问题
 
-在之前的测试中，无论我是写了超长 prompt 并告诉它“Let's think step by step”，还是用 workflow 将任务拆解为先识别意图，再进入对应流程，bot 都无法准确回复，不时出现：
+在之前的测试中，无论我是写了超长 prompt 并告诉它 `Let's think step by step`，还是用 workflow 将任务拆解为先识别意图，再进入对应流程，bot 都无法准确回复，不时出现：
 
 A. 意图识别错误
 
-B. 无法用{main_language}与用户交流
+B. 无法用`{main_language}`与用户交流
 
 C. 回复有误
 
@@ -76,7 +73,7 @@ C. 回复有误
 
 GPT 4 识别出错，我输入了完整英文句子，它却认为我是要跟 bot 直接聊天
 
-▉ **强化意图识别**
+## 强化意图识别
 
 我在意图识别的节点后加上一个反思节点，并将 规则、用户输入和上一轮输出结果传递给它 ：
 
@@ -96,7 +93,7 @@ GPT 4 识别出错，我输入了完整英文句子，它却认为我是要跟 b
 
 GPT 3.5
 
-GPT 3.5 的反思逻辑让我哭笑不得，它只判断了上一步的意图结果跟返回的instruction值能否对上，却没有考虑 上一步的意图结果可能本身就是错的。也就是上文说的， 反思的一个关键挑战是能否提出准确反馈。
+GPT 3.5 的反思逻辑让我哭笑不得，它只判断了上一步的意图结果跟返回的`instruction`值能否对上，却没有考虑 上一步的意图结果可能本身就是错的。也就是上文说的， 反思的一个关键挑战是能否提出准确反馈。
 
 ![](img/8d6bf1b0b4ad109d3131911944136d34.png)
 
@@ -110,7 +107,7 @@ GPT 4
 
 在不断的测试中，我发现了新的问题，LLM 总是不能判断出我输入了 2 种语言文本的情况。可能是因为分类的情况比较多，每次它识别出第一个句子的语言后，就给出了结论。
 
-对于这种情况，我在反思节点的 prompt 中加了一句“尤其注意判断{{instruction}}值为4的情况”，问题完美解决。
+对于这种情况，我在反思节点的 prompt 中加了一句“尤其注意判断`{{instruction}}`值为4的情况”，问题完美解决。
 
 ![](img/1853e3f1b3af3d9b5be74843d9d87938.png)
 
@@ -120,7 +117,7 @@ GPT 4
 
 这时候我意识到原先的 prompt 写得不够清楚，对 bot 来说，一个日语句子确实属于“文本中包含 2 种语言”这种情况，但事实上它可以判断出来这是一个日文句子。
 
-所以我把对应的 prompt 改成了， “如果用户输入的{{input}}有多个句子，且每个句子使用的语言不一样，返回{{instruction}}值为4”。完美解决。
+所以我把对应的 prompt 改成了， “如果用户输入的`{{input}}`有多个句子，且每个句子使用的语言不一样，返回`{{instruction}}`值为4”。完美解决。
 
 ![](img/fe0ba5e2aa3afd962e3eafed87821565.png)
 
@@ -132,7 +129,7 @@ GPT 4
 
 更改 prompt 之后的 GPT 4 依然有可能犯错
 
-▉ **强化回复**
+## 强化回复
 
 在bot 能够进入正确的对应流程后，我又给每一个回复节点加上了反思节点。反思节点 使用的是上文说的特定、可操作的反馈，并要求它根据反馈修改上一步的结果。
 
@@ -158,7 +155,7 @@ GPT 4
 
 ![](img/451c003fe39cd4ede7a6961badab4337.png)
 
-一个比较明显的提升是，回复终于可以完全按照用户设置的 {main_language} 执行了。
+一个比较明显的提升是，回复终于可以完全按照用户设置的 `{main_language}` 执行了。
 
 其次是确实在某些例子中，它纠正了一些回答。比如在下文翻译名句“生存还是毁灭，这是一个问题”的时候，第一次回答中它将“一个”翻译成了德语定冠词“die”，反思节点中纠正为“eine”。
 

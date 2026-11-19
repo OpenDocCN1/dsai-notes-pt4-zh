@@ -1,9 +1,7 @@
-# 10.10-云深处科技发布全球首款行业级全天候人形机器人
-
-> 来源：[https://agijuejin.feishu.cn/docx/RJe2dTStxo2NFtxijdBcwCYWnvd](https://agijuejin.feishu.cn/docx/RJe2dTStxo2NFtxijdBcwCYWnvd)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 10 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/RJe2dTStxo2NFtxijdBcwCYWnvd](https://agijuejin.feishu.cn/docx/RJe2dTStxo2NFtxijdBcwCYWnvd)
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 
 ## ⭐ 今日热点
@@ -40,13 +38,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/311.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/888/363.htm)
 
-
 据《商业内幕》报道，OpenAI、杜克大学和哈佛大学研究人员论文指出，ChatGPT 7月的月活用户达7亿，占全球成年人口约10%。目前数字可能更高，OpenAI CEO称其周活用户已增至8亿。截至7月，ChatGPT每日处理超25亿条消息。自2023年11月其活跃用户增长700%，远超同类。如xAI的Grok月活6500万，Claude和Perplexity AI月活各3000万。凸显其在人工智能和大语言模型领域的领先地位。
 
 ### 💡 宇树双足人形机器人 Unitree R1 入选《时代》杂志 2025 最佳机器人发明榜单
 
 IT之家 | [阅读原文](https://www.ithome.com/0/888/360.htm)
-
 
 10月9日，《时代》杂志公布2025年度最佳发明榜单，宇树双足人形机器人Unitree R1入选机器人类目。该机器人今年7月上市，起售价3.99万元，面向科研、教育等人员。它重约23公斤，内置AI，能完成复杂动作。《时代》每年评选有影响力的发明等，今年榜单扩至300项。同属机器人分类上榜的还有Figure 03等产品。
 
@@ -118,7 +114,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/210.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/888/203.htm)
 
-
 据第一财经报道，小鹏汽车将在今年 AI 科技日宣布物理 AI 领域“重大突破”，其世界基座模型推演能力有“关键进展”。小鹏 AI 团队已投入一年多研发物理世界 AI 基座模型，用最大数据量打造“国内最领先”模型，这是攻克大规模 L4 的关键一步，利好“AI + 出行”生态。目前官方未披露 AI 科技日具体时间，此前已连续五年举办 1024 科技日，2024 年升级为“小鹏 AI 科技日” 。
 
 ### 💡 特斯拉被曝停产 Optimus 机器人，手部设计成最大难题
@@ -140,7 +135,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/186.htm)
 ### 💡 中国宇树 G1 人形机器人上架美国沃尔玛，基本款售价 21600 美元
 
 IT之家 | [阅读原文](https://www.ithome.com/0/888/161.htm)
-
 
 10 月 9 日消息，中国宇树 G1 人形机器人上架美国沃尔玛，基本款售价 21600 美元。知名机器人研究员克里斯・帕克森认为廉价机器人部署能解决核心问题。宇树 G1 已是高校和研究机构常客，宇树科技追求规模化普及化，明年将推更亲民的 R1。此次上架降低采购壁垒，宇树或为 IPO 做准备，这表明机器人技术正走向成熟 。
 
@@ -165,7 +159,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/888/193.htm)
 ### 💡 英伟达 CEO 黄仁勋：AI 数据中心应建设配套离网发电能力
 
 IT之家 | [阅读原文](https://www.ithome.com/0/888/181.htm)
-
 
 美国当地时间10月8日，英伟达CEO黄仁勋做客节目时称，AI数据中心应建设配套离网发电能力。他认为AI行业应丰富能源生产投资形式，自建电力基础设施更灵活，不影响居民用电。现阶段离网电力系统可用燃气轮机，未来可能转向核能。此外，他提到中国电力系统是AI竞赛长板，且近六个月全球AI算力需求大增，Blackwell GPU需求高 。
 

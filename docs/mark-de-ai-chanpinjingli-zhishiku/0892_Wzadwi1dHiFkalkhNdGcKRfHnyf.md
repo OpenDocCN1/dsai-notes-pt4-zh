@@ -1,3 +1,4 @@
+
 # Claude实战：TradingAgents金融分析系统
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/YHhmdhl6boFO2IxawN9ci2CenZe](https://qqs7y1hozd1.feishu.cn/docx/YHhmdhl6boFO2IxawN9ci2CenZe)
@@ -12,46 +13,45 @@
 
 ## 二、安装codex插件
 
-点击扩展功能，在搜索框输入codex，选择第一个由openai开发的插件，点击"Install"安装
+点击扩展功能，在搜索框输入 codex，选择第一个由 openai 开发的插件，点击 "Install" 安装
 
 ![](img/5f99c4bef758bfe0aa32f4cf06784bf9.png)
 
-安装后，codex就出现在菜单栏中，直接点击这个图标，进入codex对话界面
-
+安装后，codex 就出现在菜单栏中，直接点击这个图标，进入 codex 对话界面
 
 ## 三、导入GitHub项目文件
 
 ### 两种方式任选其一：
 
-1）直接从github将对应项目打包下载，然后在cursor中选择file->open folder打开
+1. 直接从 github 将对应项目打包下载，然后在 cursor 中选择 `file->open folder` 打开
 
 ![](img/45972b3820517e8b4b4db0664042f718.png)
 
-2）直接开启vibecoding模式，在对话框给出指令「帮我本地部署github项项目：xxxx地址」，让大模型自主完成项目部署
+2. 直接开启 vibecoding 模式，在对话框给出指令「帮我本地部署 github 项目：xxxx 地址」，让大模型自主完成项目部署
 
 ![](img/808e5b78f221bca820a224a10e48a466.png)
 
-(建议选择第一种，把codex的额度留给正式项目使用)
+（建议选择第一种，把 codex 的额度留给正式项目使用）
 
-## 四、项目部署后，进入vibecoding阶段
+## 四、项目部署后，进入 vibecoding 阶段
 
-选择最强模型GPT-5.3-Codex和高级推理Extra High
+选择最强模型 GPT-5.3-Codex 和高级推理 Extra High
 
 ![](img/2833379960dcddb9aa395a7269d978ee.png)
 
-让Codex扫描项目结构，加载所有文件，并完成初始配置，这里模型会一步步引导你完成项目配置
+让 Codex 扫描项目结构，加载所有文件，并完成初始配置，这里模型会一步步引导你完成项目配置
 
 ![](img/3fbcdf9be64b8a1fdbb5939fa4ace967.png)
 
 ## 五、对该项目的数据源和大模型进行替换
 
-为了降低项目运行成本，需要将该项目的海外金融数据来源替换成免费数据源finnhub，所以我做了如下指令：
+为了降低项目运行成本，需要将该项目的海外金融数据来源替换成免费数据源 finnhub，所以我做了如下指令：
 
 ```
-帮我将finnhub的API密钥配置好，后续金融数据主要从该平台获取，密钥：XXXXXXX
+帮我将 finnhub 的 API 密钥配置好，后续金融数据主要从该平台获取，密钥：XXXXXXX
 ```
 
-finnhub个人密钥获取地址如下，直接注册后点击get free API key 获取
+finnhub 个人密钥获取地址如下，直接注册后点击 get free API key 获取
 
 ```
 https://finnhub.io/
@@ -62,39 +62,38 @@ https://finnhub.io/
 然后对大模型来源进行替换，我这里选阿里云，因为阿里云是一个大模型提供平台，能集合大部分开源模型，方便后续替换更高性能模型。平台地址和密钥地址如下，先注册再获取密钥地址：
 
 ```
-平台地址：https://dashscope.aliyun.com/密钥地址：https://dashscope.console.aliyun.com/apiKey
+平台地址：https://dashscope.aliyun.com/ 密钥地址：https://dashscope.console.aliyun.com/apiKey
 ```
 
 ![](img/f4c3c2f7f01af84bfd6aee1891269ed6.png)
 
-配置好后，也可以直接在codex给出指令，让codex进行大模型替换
+配置好后，也可以直接在 codex 给出指令，让 codex 进行大模型替换
 
 ![](img/6f7e1bf873b005fec7c6c1cbdd599030.png)
 
-## 六、优化前端框架(可以跳过这步)
+## 六、优化前端框架（可以跳过这步）
 
-我这里因为对前端设计比较有要求，同时我看到项目的前端框架是streamlit，所以要求codex帮我改一下前端框架，从streamlit调整为Vue3，如果大家对前端没特殊要求，可以跳过这步，因为Vue3还需要依赖云数据库MongoDB和Redis的配置，对非技术用户来说有点麻烦
-
+我这里因为对前端设计比较有要求，同时我看到项目的前端框架是 streamlit，所以要求 codex 帮我改一下前端框架，从 streamlit 调整为 Vue3，如果大家对前端没特殊要求，可以跳过这步，因为 Vue3 还需要依赖云数据库 MongoDB 和 Redis 的配置，对非技术用户来说有点麻烦
 
 云服务配置地址：
 
 ```
-MongoDB云服务：https://www.mongodb.com/cloud/atlasRedis云服务：https://redis.com/ 
+MongoDB 云服务：https://www.mongodb.com/cloud/atlas Redis 云服务：https://redis.com/
 ```
 
-需要从以上服务中进行注册，并将账户密码给到codex，让codex完成配置。如果大家不知道怎么获取，直接告诉codex，让它教你
+需要从以上服务中进行注册，并将账户密码给到 codex，让 codex 完成配置。如果大家不知道怎么获取，直接告诉 codex，让它教你
 
 ![](img/3dc8681a522c7633a05a25bf15cd608e.png)
 
 ## 七、运行测试，验证部署
 
-完成前六步，就可以尝试本地运行项目，看下目前项目效果，这里codex告诉我怎么运行该项目，先打开终端，然后将以下代码直接复制到终端，让项目启动
+完成前六步，就可以尝试本地运行项目，看下目前项目效果，这里 codex 告诉我怎么运行该项目，先打开终端，然后将以下代码直接复制到终端，让项目启动
 
 ![](img/6c8e47620818ce00b4d81c859414e376.png)
 
 ![](img/c88ef60b8158ff67fb187730f4148d31.png)
 
-终端运行后，会给一个地址，直接复制放到浏览器中打开，就能体验个人部署开发的项目了～如有问题，直接将终端的报错复制给Codex，继续优化
+终端运行后，会给一个地址，直接复制放到浏览器中打开，就能体验个人部署开发的项目了～如有问题，直接将终端的报错复制给 Codex，继续优化
 
 ![](img/e43e135bf88ef6aef4cd0b29e6f20fb6.png)
 
@@ -102,13 +101,13 @@ MongoDB云服务：https://www.mongodb.com/cloud/atlasRedis云服务：https://r
 
 ### 专门辩论的研究员
 
-让不同观点的**看涨研究员**和**看跌研究员**进行结构化辩论：
+让不同观点的 **看涨研究员** 和 **看跌研究员** 进行结构化辩论：
 
 ![](img/97aadc4bae094d79c15603bf2e234f37.png)
 
-+   **看涨研究员：** 积极寻找市场中的利好因素，例如行业发展机遇、公司创新成果等，构建支持投资的逻辑，并提供论据支持。
++ **看涨研究员：** 积极寻找市场中的利好因素，例如行业发展机遇、公司创新成果等，构建支持投资的逻辑，并提供论据支持。
 
-+   **看跌研究员：** 捕捉潜在的风险信号和不利因素，例如宏观经济下行压力、公司竞争劣势等，并提出反驳意见和风险警示。
++ **看跌研究员：** 捕捉潜在的风险信号和不利因素，例如宏观经济下行压力、公司竞争劣势等，并提出反驳意见和风险警示。
 
 这种“正反方辩论”模式，强制智能体从两个方面进行深入思考，有效避免了单一视角可能带来的局限性，让决策更加全面和客观。
 
@@ -159,23 +158,25 @@ conda activate tradingagents
 pip install -r requirements.txt
 ```
 
-### 所需API
+### 所需 API
 
 所有智能体都需要 OpenAI API，基本面数据和新闻数据（默认配置）需要 Alpha Vantage API。
 
 ```
-export OPENAI_API_KEY=$YOUR_OPENAI_API_KEYexport ALPHA_VANTAGE_API_KEY=$YOUR_ALPHA_VANTAGE_API_KEY
+export OPENAI_API_KEY=$YOUR_OPENAI_API_KEY
+export ALPHA_VANTAGE_API_KEY=$YOUR_ALPHA_VANTAGE_API_KEY
 ```
 
-或者，您可以在项目根目录中创建一个包含 API 密钥的 .env 文件（请参考 .env.example）：
+或者，您可以在项目根目录中创建一个包含 API 密钥的 `.env` 文件（请参考 `.env.example`）：
 
 ```
-cp .env.example .env# Edit .env with your actual API keys
+cp .env.example .env
+# Edit .env with your actual API keys
 ```
 
 ### 命令行使用
 
-可直接运行CLI：
+可直接运行 CLI：
 
 ```
 python -m cli.main
@@ -183,21 +184,19 @@ python -m cli.main
 
 界面将显示可选参数：股票代码、日期、大语言模型、研究深度等。
 
-
 运行时会实时显示加载结果，可追踪代理执行进度。
-
 
 ![](img/9b8330958d1f0ed052d415418d23007b.png)
 
-## 十、TradingAgents包
+## 十、TradingAgents 包
 
 ### 实现细节
 
-采用LangGraph构建TradingAgents以保证灵活性和模块化。实验中使用o1-preview和gpt-4o分别作为深度思考与快速思考的大语言模型。但测试时建议使用o4-mini和gpt-4.1-mini以节省成本，因本框架会发起大量API调用。
+采用 LangGraph 构建 TradingAgents 以保证灵活性和模块化。实验中使用 o1-preview 和 gpt-4o 分别作为深度思考与快速思考的大语言模型。但测试时建议使用 o4-mini 和 gpt-4.1-mini 以节省成本，因本框架会发起大量 API 调用。
 
-### Python调用
+### Python 调用
 
-在代码中导入tradingagents模块并初始化TradingAgentsGraph()对象。.propagate()函数将返回决策结果。可运行main.py，以下是快速示例：
+在代码中导入 `tradingagents` 模块并初始化 `TradingAgentsGraph()` 对象。`.propagate()` 函数将返回决策结果。可运行 `main.py`，以下是快速示例：
 
 ```
 from tradingagents.graph.trading_graph import TradingAgentsGraph
@@ -206,9 +205,8 @@ from tradingagents.default_config import DEFAULT_CONFIG
 ta = TradingAgentsGraph(debug=True, config=DEFAULT_CONFIG.copy())
 
 # forward propagate
-_, decision = ta.propagate(&quot;NVDA&quot;, &quot;2024-05-10&quot;)
+_, decision = ta.propagate("NVDA", "2024-05-10")
 print(decision)
-
 ```
 
 也可以调整默认配置，设置您偏好的大语言模型（LLMs）、辩论轮次等参数。
@@ -219,25 +217,24 @@ from tradingagents.default_config import DEFAULT_CONFIG
 
 # Create a custom config
 config = DEFAULT_CONFIG.copy()
-config[&quot;deep_think_llm&quot;] = &quot;gpt-4.1-nano&quot;  # Use a different model
-config[&quot;quick_think_llm&quot;] = &quot;gpt-4.1-nano&quot;  # Use a different model
-config[&quot;max_debate_rounds&quot;] = 1  # Increase debate rounds
+config["deep_think_llm"] = "gpt-4.1-nano"  # Use a different model
+config["quick_think_llm"] = "gpt-4.1-nano"  # Use a different model
+config["max_debate_rounds"] = 1  # Increase debate rounds
 
 # Configure data vendors (default uses yfinance and Alpha Vantage)
-config[&quot;data_vendors&quot;] = {
-    &quot;core_stock_apis&quot;: &quot;yfinance&quot;,           # Options: yfinance, alpha_vantage, local
-    &quot;technical_indicators&quot;: &quot;yfinance&quot;,      # Options: yfinance, alpha_vantage, local
-    &quot;fundamental_data&quot;: &quot;alpha_vantage&quot;,     # Options: openai, alpha_vantage, local
-    &quot;news_data&quot;: &quot;alpha_vantage&quot;,            # Options: openai, alpha_vantage, google, local
+config["data_vendors"] = {
+    "core_stock_apis": "yfinance",           # Options: yfinance, alpha_vantage, local
+    "technical_indicators": "yfinance",      # Options: yfinance, alpha_vantage, local
+    "fundamental_data": "alpha_vantage",     # Options: openai, alpha_vantage, local
+    "news_data": "alpha_vantage",            # Options: openai, alpha_vantage, google, local
 }
 
 # Initialize with custom config
 ta = TradingAgentsGraph(debug=True, config=config)
 
 # forward propagate
-_, decision = ta.propagate(&quot;NVDA&quot;, &quot;2024-05-10&quot;)
+_, decision = ta.propagate("NVDA", "2024-05-10")
 print(decision)
-
 ```
 
-> 提醒：TradingAgents 框架仅供研究用途。交易表现可能会因为模型、参数、数据等多种因素而异，不构成财务、投资或交易建议
+> 提醒：`TradingAgents` 框架仅供研究用途。交易表现可能会因为模型、参数、数据等多种因素而异，不构成财务、投资或交易建议

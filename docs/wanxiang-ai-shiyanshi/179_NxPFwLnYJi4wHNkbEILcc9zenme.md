@@ -1,8 +1,7 @@
+
 # 精品爆款模板打磨秘籍｜飞书多维表格官方出品
 
 > 来源：[https://yunyinghui.feishu.cn/docx/CPctd7eyxo8PD9xgRifcGknPn1d](https://yunyinghui.feishu.cn/docx/CPctd7eyxo8PD9xgRifcGknPn1d)
-
-** **** **
 
 > 致每一位用飞书多维表格「造世界」的人：
 
@@ -10,78 +9,66 @@
 
 > 我们称这样的你为「Maker」——擅长用飞书多维表格搭建业务系统的人。
 
->
-
 > 过去三五年，超过百万用户和我们共同验证了一件事：真正推动业务进化的，往往不是庞大的 IT 系统，而是像你这样既懂业务、又擅用工具的「Maker」。你可能是：
 
 +   用飞书多维表格撑起敏捷项目的产品经理
-
 +   为全公司搭建报销流程的财务负责人
-
 +   将客户管理打造为丝滑流程的销冠主管
-
 +   一人就是一支军队的超级个体……
 
 > 利用飞书多维表格的领先能力，Maker 们创造出了各种各样强大的系统与产品，并将它们开源为人人都能用的「模板」。
-
->
 
 > 但我们发现，在这些模板中，真正意义上的「爆款」却没有那么多。
 
 > 通过分析 500 个被自然传播 500 次以上的爆款模板，飞书官方提炼了几条黄金标准以及 1 套经过广泛验证的爆款方法论，铸就了这篇「精品爆款模板打磨秘籍」，让更多 Maker 都能做出人人用，甚至能卖钱的「爆款模板」。
 
->
-
 > 一个人可以走很快，一群 Maker 能够造星辰。是时候用你的创造力，点亮更多组织的进化之路了。
 
-# 一、爆款模板典型案例
+## 一、爆款模板典型案例
 
 **飞书模板中心中最爆的模板：**
 
 ![](img/7b2d65eb144abbd383eb4028a9efcf2e.png)
 
 +   [✅任务管理](https://www.feishu.cn/base/PJA0b2qrsapxYbs5axyc0TI6njd)
-
 +   [OKR 制定与复盘](https://www.feishu.cn/base/EfqPbXhHeaYsSBsozdRcvooknxb)
-
 +   [电商售后管理（AI词云）](https://www.feishu.cn/base/Og8eb69bwaFEv4sX0k0cwpdznWI)
 
-**基于****仪表盘****最爆的模板：**
+**基于仪表盘最爆的模板：**
 
 +   [订单&库存管理系统](https://bytedance.larkoffice.com/base/ECOsbLH1Ia8qA0s4zdcc6FBQn7c?from=from_copylink)（多数据源分析）
-
 +   [项目管理](https://bytedance.larkoffice.com/base/KvrabalbiaIbwhsatxoca91fnzc?table=blkKzNift1hsOnzA)
-
 +   [销售管理](https://bytedance.larkoffice.com/base/Xe8TbP6ARaud9asRWv4cAmNVnYu?table=blkwN9BmoC6aixWR)
-
 +   [库存管理](https://bytedance.larkoffice.com/base/BMBubU0IwawgkNsoDlKc3CZYnDg?table=blkN8RpWxCQrfIg1)
-
 +   [电商订单看板 ](https://bytedance.larkoffice.com/base/BREvboF74aWCsisRxE3cPe94nwd?table=blkLEPVD43PiSlF8)
 
-**基于**** AI ****最爆的模板：**
+**基于 AI 最爆的模板：**
 
 +   [AI文献速读神器](https://jih7kdah80b.feishu.cn/wiki/BpSIwQSyritC1eko1OKcIvDknKb?from=from_copylink)
-
 +   [Deepseek 投资｜投资第二大脑](https://bytedance.larkoffice.com/base/Wjb4bXty3ajOhKsex3Vc1sd0nWf?from=from_copylink)
-
 +   [用正确的方式，打开更强大的豆包大模型——](https://larkcommunity.feishu.cn/wiki/ZV6Nw2KjUiJHxfkNmNNc5JIWngd?from=from_copylink)
-
 +   [超级直播团队](https://ncnrabhrd9se.feishu.cn/base/MwJbbeCGAayjQMsO9MIc8FfOnmc?from=from_copylink)
-
 +   [电商行业一张表管公司（DeepSeek 2.0 版）](https://larkcommunity.feishu.cn/base/O4SKbxN1Fa71CLsIHTucatOCn3e?table=tblWntsxSAXRMQMG&view=vewerCl8hq)
 
-# 二、爆款模板判定清单
+## 二、爆款模板判定清单
 
 | **爆款级别** | **判定项** | **分值** | **是否具备** |
+
 | --- | --- | --- | --- |
+
 | 🔥 | 用关联、引用与公式字段实现**数据跨表联动** | 20 分 |  |
+
 |  | 用公式配合多视图让数据充分可视化 | 10 分 |  |
+
 |  | 至少有一张实用又好看的仪表盘 | 30 分 |  |
+
 | 🔥🔥 | 用文档撰写模板使用说明书 | 10 分 |  |
+
 |  | 用 AI 字段捷径打造 AI 工作流 | 20 分 |  |
+
 | 🔥🔥🔥 | 真正解决用户问题 | 10 分 |  |
 
-## 📡 标准一：用关联、引用与公式字段实现数据跨表联动
+### 📡 标准一：用关联、引用与公式字段实现数据跨表联动
 
 飞书多维表格的核心价值在于能通过简单的「先关联再引用」2 步操作实现数据的跨表联动，如将目标关联到项目、任务、执行人，将订单关联到商机、销售、客户等，因此一份爆款模板一定不能只是机械地将数据搬到线上，而是需要让数据通过飞书多维表格有机地联动起来。
 
@@ -89,11 +76,11 @@
 
 ![](img/62d261e3b7a2cde03efe6e437ee06b7e.png)
 
-## 🍗 标准二：用公式配合多视图让数据充分可视化
+### 🍗 标准二：用公式配合多视图让数据充分可视化
 
 飞书多维表格中的数据表，一定不止有一张面孔——看板、表格、甘特图等不同的视图，各司其职，满足不同类型的数据分析诉求，比如要看项目周期就用甘特图，要看人员分工就用看板，要看项目物料就用画册。同时，项目进度用公式完成计算后，选择输出形式为「进度条」，让数据自己说话。
 
-## 🚀 标准三：至少有一张实用又好看的仪表盘
+### 🚀 标准三：至少有一张实用又好看的仪表盘
 
 飞书多维表格中的数据，只有可视化呈现为仪表盘，才能让它的价值最大化，因此一个爆款模板，必须具备至少一张仪表盘。对于仪表盘，有 2 条衡量标准：
 
@@ -105,7 +92,7 @@
 
 [final-11-18.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PQwKbHPfPoqcrhxhwKpcqH7Anfc)
 
-## 📖 标准四：用文档撰写模板使用说明书
+### 📖 标准四：用文档撰写模板使用说明书
 
 我们采访飞书多维表格 Maker 时发现大多数人会把时间、精力放在如何把多维表格表结构做好、把界面美化好、把功能做好，但忽略了“模板说明书”。模板说明书可以让模板用户更好的理解产品，更快速的上手模板。
 
@@ -119,7 +106,6 @@ Sunkim 的模板说明书清晰的阐述了模板的功能介绍、使用方法�
 
 Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少了用户的上手理解成本，因此这个模板成为使用量前几的模板。
 
-
 **案例三：**[Deepseek 投资｜投资第二大脑](https://bytedance.larkoffice.com/base/Wjb4bXty3ajOhKsex3Vc1sd0nWf?table=ldxnn3Hr8cMfhNNH)
 
 模板说明书还可以用作飞书多维表格更新日志，让模板用户了解模板的前世今生。
@@ -128,7 +114,7 @@ Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少
 
 ![](img/091aeb1ec4da25deb16e6ed7e3b0fe8b.png)
 
-## 🤖 标准五：用 AI 字段捷径打造 AI 工作流
+### 🤖 标准五：用 AI 字段捷径打造 AI 工作流
 
 飞书多维表格在 2025 年上架了 100+ AI 字段捷径，如今的飞书多维表格每一列都是一个 AI 节点、每一行都是一条 AI 工作流。基于 Kimi 的 AI 字段捷径擅长长文本阅读，附件信息的提取可以交给它；基于豆包大模型的图片理解 AI 字段捷径擅长视觉识别，拍照巡检、物品识别可以交给它；基于 DeepSeek 的 AI 字段捷径擅长逻辑推理，复杂文案、报告的输出可以交给它。
 
@@ -152,7 +138,7 @@ Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少
 
 ![](img/dc0a689e00cac97d3b36c4c8db420ee4.png)
 
-## ⚒️ 标准六：真正解决用户问题
+### ⚒️ 标准六：真正解决用户问题
 
 我们在查看数据量前十的模板时，发现它们都有个共性，就是真正解决了、减轻了用户的问题，且这个问题足够普适。
 
@@ -176,33 +162,31 @@ Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少
 
 ![](img/2a86ea88ab8d3c51fe78c1a29f35ef9c.png)
 
-# 三、爆款模板制作清单
+## 三、爆款模板制作清单
 
 > 所有的模板统一命名为：**【模板】XXXX 系统**，参考：
 
-+   [【模板】餐饮行业一张表管公司 ](https://larkcommunity.feishu.cn/base/XyZNbCL1OaMOBAsRNBYcsiQbnH7?from=from_copylink)
-
-+   [【模板】SaaS 行业一张表管公司](https://larkcommunity.feishu.cn/base/YgG5bIifuaxDjHsvcc3ciYlwnzc?table=blkmc7Vt10HiovEO)
-
-+   [【模板】客户关系管理系统](https://larkcommunity.feishu.cn/base/JhJeb1hTba1128sE2xQc0gXNnTe?from=from_copylink)
+> +   [【模板】餐饮行业一张表管公司 ](https://larkcommunity.feishu.cn/base/XyZNbCL1OaMOBAsRNBYcsiQbnH7?from=from_copylink)
+> +   [【模板】SaaS 行业一张表管公司](https://larkcommunity.feishu.cn/base/YgG5bIifuaxDjHsvcc3ciYlwnzc?table=blkmc7Vt10HiovEO)
+> +   [【模板】客户关系管理系统](https://larkcommunity.feishu.cn/base/JhJeb1hTba1128sE2xQc0gXNnTe?from=from_copylink)
 
 > 如果需要署名，署名规范为：【模板】XXXX 系统 - 作者：（你的称呼），参考：
 
-+   [催办自动化追踪管理系统 - 作者：海底捞【骆星宇】](https://bytedance.larkoffice.com/wiki/T1UawWYp7iNi2PkXcclchUUInFe)
+> +   [催办自动化追踪管理系统 - 作者：海底捞【骆星宇】](https://bytedance.larkoffice.com/wiki/T1UawWYp7iNi2PkXcclchUUInFe)
 
 > 不符合以上命名规范的模板，一律不收录。
 
-## 🧮 Step I - 搞定数据
+### 🧮 Step I - 搞定数据
 
 ![](img/b99c0d21f080b66a17e4d59e3a4b61ca.png)
 
-## ⛓️ Step II - 搭建流程
+### ⛓️ Step II - 搭建流程
 
 ![](img/c66cb1a4c98ab67180aceaa382a10f6c.png)
 
 ![](img/38b826a31068b12f1e3cb5e9fd243ea1.png)
 
-## 🪞 Step III - 完善交互
+### 🪞 Step III - 完善交互
 
 ![](img/5636280ce9033ef649be79efea2e9d70.png)
 
@@ -210,9 +194,9 @@ Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少
 
 ![](img/40dabdfcd1769fbccd56ea1b8188ad44.png)
 
-## 🤖 Step IV - 注入 AI（AI 相关模板）
+### 🤖 Step IV - 注入 AI（AI 相关模板）
 
-## 👊 加分项：一张表管所有
+### 👊 加分项：一张表管所有
 
 **案例一：**[影视飓风｜一份多维表格表管公司](https://larkcommunity.feishu.cn/wiki/YLIWw7pmMicsulkbz49cbmf1nud?table=blkPS0zzXaLD5Rk1)
 
@@ -232,13 +216,17 @@ Cynthia 的模板说明书通过在文档里面穿插视频的形式极大减少
 
 ![](img/173117afd05af8a7992c1faffb5e4483.png)
 
-# 四、爆款模板运营指南
+## 四、爆款模板运营指南
 
-1.  引导大家在模板说明书评论互动，这样你能收到更多用户声音和真实反馈，用于后续模板迭代
 
-1.  在模板说明书添加飞书群聊入口，增强模板的互通性，对于模板不懂的用户也可以第一时间进群寻解
 
-1.  进入 Maker 社区，跟志同道合的飞书多维表格超级用户充分交流、讨论：
+# 爆款模板 SOP 秘籍
+
+1. 引导大家在模板说明书评论互动，这样你能收到更多用户声音和真实反馈，用于后续模板迭代
+
+2. 在模板说明书添加飞书群聊入口，增强模板的互通性，对于模板不懂的用户也可以第一时间进群寻解
+
+3. 进入 Maker 社区，跟志同道合的飞书多维表格超级用户充分交流、讨论：
 
 ---
 

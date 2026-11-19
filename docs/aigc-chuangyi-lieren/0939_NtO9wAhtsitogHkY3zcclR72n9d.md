@@ -1,3 +1,4 @@
+
 # GPT Search
 
 > 来源：[https://aigcreative.feishu.cn/docx/SKuRdus2CoRimBxDQbhcKNJvnNc](https://aigcreative.feishu.cn/docx/SKuRdus2CoRimBxDQbhcKNJvnNc)
@@ -24,4 +25,4 @@ OpenAI还计划在本地信息和商业等领域不断改进体验，并计划�
 
 SearchGPT的推出标志着搜索技术的一次重大飞跃。它不仅提高了搜索的效率和准确性，还为发布者和创作者提供了新的机遇。随着技术的不断进步，我们可以期待一个更加智能、更加个性化的搜索未来。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

@@ -1,3 +1,4 @@
+
 # 第19期 AI行业周报（2024-10.21-27）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/C9tEdfeSxougiIxvdnGc9hs8nCd](https://v11enp9ok1h.feishu.cn/docx/C9tEdfeSxougiIxvdnGc9hs8nCd)
@@ -25,8 +26,6 @@ Llama 3.2在架构上采用了标准的Transformer结构，并针对线性层进
 Meta公布的测试数据还显示，量化后的Llama 3.2在多个主流基准测试中，性能与Llama 3 8B相当。
 
 它的开源地址如下，大家感兴趣的可以试着去体验一番！
-
-+
 
 ```
 https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf

@@ -1,3 +1,4 @@
+
 # NextJS 15降级使用React 18
 
 > 来源：[https://now.feishu.cn/docx/Wue3dCXbUofRt6xEspJcMoYznye](https://now.feishu.cn/docx/Wue3dCXbUofRt6xEspJcMoYznye)
@@ -9,4 +10,4 @@ npm uninstall react react-dom
 npm install react@18.2.0 react-dom@18.2.0
 ```
 
-先卸载react再npm 安装React 18，OK，let's build!
+先卸载`react`再`npm`安装React 18，OK，let's build!

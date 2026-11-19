@@ -1,6 +1,7 @@
+
 # 不要创立“邪恶”的公司
 
-> 来源：[https://docs.feishu.cn/docx/LqQ0dgUNNomXLux5pLVc0XXEnof](https://docs.feishu.cn/docx/LqQ0dgUNNomXLux5pLVc0XXEnof)
+> 来源：[`https://docs.feishu.cn/docx/LqQ0dgUNNomXLux5pLVc0XXEnof`](https://docs.feishu.cn/docx/LqQ0dgUNNomXLux5pLVc0XXEnof)
 
 我第一次听“邪恶”这个形容词用在公司上，是陈伟星在怒斥抖音。
 
@@ -18,4 +19,4 @@
 
 Don't be evil
 
-**不要创立“邪恶”的公司**
+## 不要创立“邪恶”的公司

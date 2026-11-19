@@ -1,10 +1,11 @@
+
 # 成峰：Claude code 保姆入门级教程（2025.12 月更新）
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/P8grdqUc7oHnS6x3IcOcJxzrnFc](https://xatc0v8uz5m.feishu.cn/docx/P8grdqUc7oHnS6x3IcOcJxzrnFc)
 
 Claude code 保姆入门级教程（2025.12 月更新）
 
-## **一个 11 岁小女孩的故事**
+## 一个 11 岁小女孩的故事
 
 上个月在北京的一场活动上，我遇到了一个 11 岁的小女孩。
 
@@ -22,31 +23,29 @@ Claude code 保姆入门级教程（2025.12 月更新）
 
 不管你是运营、设计师、产品经理，还是纯粹的好奇者，跟着走一遍，你也能做出自己的第一个作品。
 
-## **第一步：准备工作**
+## 第一步：准备工作
 
 ### 1.1 安装 Claude Code
 
-### 方案一（Claude code 官方推荐方式）
+#### 方案一（官方推荐方式）
 
-如果你按照我下面推荐的安装方式（Mac 的 curl 命令或 Windows 的 PowerShell 命令），不需要提前安装 Node.js。
+如果你按照下面推荐的安装方式（Mac 的 `curl` 命令或 Windows 的 `PowerShell` 命令），不需要提前安装 Node.js。
 
-之前很多教程让你先装 Node.js，很多人就卡在这一步了。现在 Claude Code 提供了更简单的一键安装方式，跳过了这个坑。（2025年12月1日更新：这里 Claude code 增加了地区检测，需要🪜才能执行，在命令行里配置代理）
+之前很多教程让你先装 Node.js，很多人就卡在这一步了。现在 Claude Code 提供了更简单的一键安装方式，跳过了这个坑。（2025年12月1日更新：这里 Claude Code 增加了地区检测，需要🪜才能执行，在命令行里配置代理）
 
-**Mac 用户**：
+Mac 用户：
 
-1.  打开「终端」（Terminal）- 在启动台里搜索就能找到。终端是一个使用命令让电脑干活的方式，只需要会复制粘贴，按回车，就可以用。
-
-1.  复制这行命令，粘贴进去，回车：
+1. 打开「终端」（Terminal）- 在启动台里搜索就能找到。终端是一个使用命令让电脑干活的方式，只需要会复制粘贴，按回车，就可以用。
+2. 复制这行命令，粘贴进去，回车：
 
 ```
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-**Windows 用户**：
+Windows 用户：
 
-1.  点击开始菜单，搜索「PowerShell」，右键选择「以管理员身份运行」
-
-1.  复制这行命令，粘贴进去，回车：
+1. 点击开始菜单，搜索「PowerShell」，右键选择「以管理员身份运行」
+2. 复制这行命令，粘贴进去，回车：
 
 ```
 irm https://claude.ai/install.ps1 | iex
@@ -54,30 +53,29 @@ irm https://claude.ai/install.ps1 | iex
 
 安装过程会自动下载，等个 1-2 分钟就好。
 
-**安装完成的标志**：会提示「Claude Code installed successfully」。
+安装完成的标志：会提示「Claude Code installed successfully」。
 
 ---
 
-### 方案二（NodeJS 方案）
+#### 方案二（Node.js 方式）
 
-1.  安装 Node.js
+1. 安装 Node.js
 
 https://nodejs.org/zh-cn/download
 
-+   Mac：点击「macOS 安装程序(.pkg)」
-
-+   Windows：点击「Windows 安装[程序(.](https://blog.csdn.net/Little_Carter/article/details/155107677?fromshare=blogdetail&sharetype=blogdetail&sharerId=155107677&sharerefer=PC&sharesource=Little_Carter&sharefrom=from_link&login=from_csdn)msi)」，更完整的教程，可参考详细步骤
++ Mac：点击「macOS 安装程序(.pkg)」
++ Windows：点击「Windows 安装程序(.msi)」，更完整的教程，可参考详细步骤
 
 验证安装：
 
 Mac
 
 ```
-在Finder「应用程序-&gt;工具文件夹-&gt;终端」，打开终端
-输入node -v，按回车
-如果显示版本号，说明 Node.js 安装成功
+在Finder「应用程序 -> 工具文件夹 -> 终端」，打开终端
+输入`node -v`，按回车
+如果显示版本号，说明 `Node.js` 安装成功
 再输入：，按回车
-如果显示版本号，说明 npm 也安装成功
+如果显示版本号，说明 `npm` 也安装成功
 ```
 
 ![](img/15bf718af1c7ffeb80e2a8820b83eae6.png)
@@ -85,16 +83,18 @@ Mac
 Windows
 
 ```
-按下键盘上的 Win + R 键，输入 &quot;cmd&quot;，然后按回车，打开命令提示符，在命令提示符窗口中输入：
-node -v，按回车
-如果显示版本号，说明 Node.js 安装成功
-再输入：npm -v，按回车
-如果显示版本号，说明 npm 也安装成功
+按下键盘上的 Win + R 键，输入 "cmd"，然后按回车，打开命令提示符，在命令提示符窗口中输入：
+`node -v`，按回车
+如果显示版本号，说明 `Node.js` 安装成功
+再输入：`npm -v`，按回车
+如果显示版本号，说明 `npm` 也安装成功
 ```
 
-1.  安装 Claude code
+![](img/f9670287075c961b6daafca97a02c6af.png)
 
-Claude code 官方（Windows 和 Mac，安装方式都一样）
+1. 安装 Claude Code
+
+Claude Code 官方（Windows 和 Mac，安装方式都一样）
 
 ```
 npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
@@ -102,17 +102,17 @@ npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.c
 
 复制以上内容，粘贴到终端，按回车安装。
 
-安装完，输入 claude --version ，按回车，如果看到版本号，则说明安装成功。
+安装完，输入 `claude --version` ，按回车，如果看到版本号，则说明安装成功。
 
 ![](img/f9670287075c961b6daafca97a02c6af.png)
 
-[Claude code 保姆入门级教程（2025.12 月更新）](https://waytoagi.feishu.cn/docx/DKp0dhZ5foPMg2xrDYKcO0rtnxd)
+[Claude Code 保姆入门级教程（2025.12 月更新）](https://waytoagi.feishu.cn/docx/DKp0dhZ5foPMg2xrDYKcO0rtnxd)
 
-### 1.2你需要一个 Claude 账号
+### 1.2 你需要一个 Claude 账号
 
-唯一的门槛，就是搞定一个能在 Claude code 里用的账号。
+唯一的门槛，就是搞定一个能在 Claude Code 里用的账号。
 
-可以这样理解 Claude code：它是一个工具，Claude code 和大模型的关系，就像手机和运营商的关系。你的手机可以选电信、联通、移动，都能打电话上网， Claude code 就相当于手机，大模型就相当于运营商，你可以在 Claude code 使用各种模型，你只需要为大模型付费。
+可以这样理解 Claude Code：它是一个工具，Claude Code 和大模型的关系，就像手机和运营商的关系。你的手机可以选电信、联通、移动，都能打电话上网，Claude Code 就相当于手机，大模型就相当于运营商，你可以在 Claude Code 使用各种模型，你只需要为大模型付费。
 
 Claude 官方会直接封中国用户的账号，所以使用官方账号门槛很高。
 
@@ -123,7 +123,7 @@ Claude 官方会直接封中国用户的账号，所以使用官方账号门槛�
 | 方案类型 | 名称 | 链接 |
 | --- | --- | --- |
 | 中转 | GACcode | [购买 Claude Code 账号-手把手教程](https://larkcommunity.feishu.cn/docx/Trszd77MEoEM9lxcnJKcf4Gxn3c) |
-|  | Lion CC | Claude code、codex 拼车：https://codecodex.ai （下单备注 ben 即可） |
+|  | Lion CC | Claude Code、Codex 拼车：https://codecodex.ai （下单备注 ben 即可） |
 |  | AIcodewith | https://aicodewith.com/?invitation=Q71I6P |
 | 国产大模型 | DeepSeek | Deepseek 官方教程：https://api-docs.deepseek.com/zh-cn/guides/anthropic_api |
 |  | 智谱 GLM | 智谱 AI 编程套餐： https://www.bigmodel.cn/claude-code?ic=U5NGPIMKRG |
@@ -134,87 +134,80 @@ Claude 官方会直接封中国用户的账号，所以使用官方账号门槛�
 
 | 步骤 | 描述 | 截图 |
 | --- | --- | --- |
-| 第一步 | +   打开 DeepSeek 开放平台：https://platform.deepseek.com | ![](img/13f2ac14c690abbafd3821bc5b2a7cff.png) |
-| 第二步 | +   获取 API：https://platform.deepseek.com/api_keys | ![](img/12155e390574710a0fe44dffbd606f30.png) |
-| 第三步 | 在 Claude code 里使用： | ![](img/354fff43a3b3f6823cf15c95528ff663.png) |
+| 第一步 | 打开 DeepSeek 开放平台：https://platform.deepseek.com | ![](img/13f2ac14c690abbafd3821bc5b2a7cff.png) |
+| 第二步 | 获取 API：https://platform.deepseek.com/api_keys | ![](img/12155e390574710a0fe44dffbd606f30.png) |
+| 第三步 | 在 Claude Code 里使用： | ![](img/354fff43a3b3f6823cf15c95528ff663.png) |
 
 其他大模型，也是类似于这样的流程去获取 API key 使用。
 
-然后，如果需要多个大模型来回切换，可以使用 cc Switch：https://github.com/farion1231/cc-switch
+然后，如果需要多个大模型来回切换，可以使用 `cc Switch`：https://github.com/farion1231/cc-switch
 
 安装教程：https://github.com/farion1231/cc-goo.gle/freepro
 
 > [Cc Switch 说明文档 README_ZH](https://waytoagi.feishu.cn/wiki/IHzswMJkMiLIuYkj8MxcqAEMn4f)
 
-> Windows 版本：[CC-Switch-v3.8.2-Windows.msi](https://waytoagi.feishu.cn/wiki/ZKg8wikjzi3SKLkvAXPcavHlnDb)
+> Windows 版本：[`CC-Switch-v3.8.2-Windows.msi`](https://waytoagi.feishu.cn/wiki/ZKg8wikjzi3SKLkvAXPcavHlnDb)
 
-> Mac 版本：[CC-Switch-v3.8.2-macOS.zip](https://waytoagi.feishu.cn/wiki/MRQPwLrFUivnVMkoh31cjX2qncf)
+> Mac 版本：[`CC-Switch-v3.8.2-macOS.zip`](https://waytoagi.feishu.cn/wiki/MRQPwLrFUivnVMkoh31cjX2qncf)
 
-### 1.3 降低上手门槛：安装 Claude code for vs code 插件
+### 1.3 降低上手门槛：安装 Claude Code for VS Code 插件
 
 使用终端、命令行还是挡住了非常多的朋友，这个时候，有个界面很重要！
 
-Claude code、Codex 官方也都推出了插件，安装即可使用。
+Claude Code、Codex 官方也都推出了插件，安装即可使用。
 
-#### 第一步：安装 vs code
+#### 第一步：安装 VS Code
 
 https://code.visualstudio.com/
 
-在 vs vode 官网下载安装，免费的
+在 VS Code 官网下载安装，免费的
 
 #### 第二步：安装插件
 
-点击链接：https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code，会自动跳转到 vs code 安装。
+点击链接：https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code，会自动跳转到 VS Code 安装。
 
-或者在 vs code 插件市场搜索「Claude code」，即可安装
-
+或者在 VS Code 插件市场搜索「Claude Code」，即可安装
 
 #### 如何使用
 
-安装完之后，点击 Claude code 图标，即可使用。
+安装完之后，点击 Claude Code 图标，即可使用。
 
 ![](img/d385eb9f599acdaec75db718b1870435.png)
 
-这个时候配置base url 和 [api ke](https://waytoagi.feishu.cn/wiki/WZZRwjxAbiNow5ki0s6clQNLnsb#share-HJv3dKW7Co1mMcx1tp4cNA75nme)y 比较麻烦，可以用 cc Switch 去配置：
+这时候配置 `base url` 和 `api key` 比较麻烦，可以用 `cc Switch` 去配置：
 
-+   在 cc Switch 里勾选应用到 Claude code 插件，然后重新启动 vs code。
-
++ 在 `cc Switch` 里勾选应用到 Claude Code 插件，然后重新启动 VS Code。
 
 ![](img/87ff8746ccf8709cbbd33274e38ab949.png)
 
-#### 开启 Claude code 全自动模式
+#### 开启 Claude Code 全自动模式
 
-默认状态下，Claude code 只能在 plan、手动确认、自动编辑三种模式选择，可以在 cc 插件里开启「Allow Dangerously Skip Permissions」，这样能开启全自动模式，cc 能自动运行命令，无需二次确认。下面的选项里，也可以把全自动模式配置为默认模式。
+默认状态下，Claude Code 只能在 plan、手动确认、自动编辑三种模式选择，可以在 cc 插件里开启 `Allow Dangerously Skip Permissions`，这样能开启全自动模式，cc 能自动运行命令，无需二次确认。下面的选项里，也可以把全自动模式配置为默认模式。
 
 ![](img/cabd217c77c28439e1af372d4813a529.png)
 
-## **第二步：做你的第一个作品**
+## 第二步：做你的第一个作品
 
-### **2.1 我们要做什么？**
+### 2.1 我们要做什么？
 
 我建议第一个项目做「待办清单」。
 
 为什么？
 
-+   够简单，15 分钟能完成
++ 够简单，15 分钟能完成
++ 够实用，做完了真的能用
++ 够完整，该有的功能都有（增删改查）
 
-+   够实用，做完了真的能用
-
-+   够完整，该有的功能都有（增删改查）
-
-**最终效果是什么样？**
+最终效果是什么样？
 
 一个网页，你可以：
 
-+   添加任务
++ 添加任务
++ 标记任务完成
++ 删除任务
++ 界面干净好看
 
-+   标记任务完成
-
-+   删除任务
-
-+   界面干净好看
-
-### **2.2 创建项目文件夹**
+### 2.2 创建项目文件夹
 
 还是在刚才的终端里，输入：
 
@@ -226,11 +219,9 @@ claude
 
 解释一下：
 
-+   mkdir my-todo-app：创建一个叫「my-todo-app」的文件夹
-
-+   cd my-todo-app：进入这个文件夹
-
-+   claude：启动 Claude Code
++ `mkdir my-todo-app`：创建一个叫「my-todo-app」的文件夹
++ `cd my-todo-app`：进入这个文件夹
++ `claude`：启动 Claude Code
 
 现在你在 Claude Code 里了，可以开始对话。
 
@@ -240,7 +231,7 @@ claude
 
 聪明的做法是先让它给你一个计划，看清楚要做什么，再开始写代码。
 
-**复制这段话，发给 Claude**：
+复制这段话，发给 Claude：
 
 ```
 我想做一个待办清单网页，要求：
@@ -252,7 +243,7 @@ claude
 请先给我一个实现计划，包括用什么技术、分几个文件、大概的实现步骤，等我确认后再开始写代码。
 ```
 
-**Claude 会回复类似这样**：
+Claude 会回复类似这样：
 
 ```
 好的，我来规划这个待办清单应用：
@@ -276,25 +267,20 @@ claude
 准备好了吗？我可以开始实现。
 ```
 
-**你只需要回复**：「好的，开始吧」
+你只需要回复：「好的，开始吧」
 
-### **2.4 看着代码自己写出来**
+### 2.4 看着代码自己写出来
 
 这是最神奇的部分。
 
 你会看到 Claude 开始自己工作：
 
-+   创建 index.html 文件
-
-+   写入 HTML 代码
-
-+   创建 style.css 文件
-
-+   写入样式代码
-
-+   创建 script.js 文件
-
-+   写入交互逻辑
++ 创建 `index.html` 文件
++ 写入 HTML 代码
++ 创建 `style.css` 文件
++ 写入样式代码
++ 创建 `script.js` 文件
++ 写入交互逻辑
 
 整个过程你什么都不用做。就像看着一个程序员在你的电脑上工作。
 
@@ -313,7 +299,7 @@ claude
 
 大概 2-3 分钟，所有代码就写完了。
 
-### **2.5 打开浏览器看效果**
+### 2.5 打开浏览器看效果
 
 代码写完后，Claude 会告诉你怎么运行。通常会说：
 
@@ -326,17 +312,15 @@ python3 -m http.server 8000
 然后在浏览器访问 http://localhost:8000
 ```
 
-**Mac 用户**：直接在 Finder 里找到 `my-todo-app` 文件夹，双击 `index.html`
+Mac 用户：直接在 Finder 里找到 `my-todo-app` 文件夹，双击 `index.html`
 
-**Windows 用户**：在文件资源管理器里找到这个文件夹，双击 `index.html`
+Windows 用户：在文件资源管理器里找到这个文件夹，双击 `index.html`
 
-**浏览器会打开，你会看到**：
+浏览器会打开，你会看到：
 
-+   顶部有个大标题「我的待办清单」
-
-+   一个输入框，旁边有「添加」按钮
-
-+   下面是任务列表区域
++ 顶部有个大标题「我的待办清单」
++ 一个输入框，旁边有「添加」按钮
++ 下面是任务列表区域
 
 试试添加一个任务：「学会用 Claude Code」，点击添加。
 
@@ -346,13 +330,13 @@ python3 -m http.server 8000
 
 恭喜，这就是你用 AI 做出的第一个作品。
 
-## **第三步：加一个新功能**
+## 第三步：加一个新功能
 
 现在你可能会想：能不能改改？
 
 当然可以，而且超级简单。
 
-### **3.1 提一个新需求**
+### 3.1 提一个新需求
 
 假设你想给每个任务加上时间戳，显示是什么时候添加的。
 
@@ -366,43 +350,39 @@ python3 -m http.server 8000
 
 Claude 会：
 
-1.  告诉你需要改哪些地方
+1. 告诉你需要改哪些地方
+1. 自动修改 `script.js` 添加时间记录逻辑
+1. 自动修改 `style.css` 添加时间显示的样式
 
-1.  自动修改 script.js 添加时间记录逻辑
-
-1.  自动修改 style.css 添加时间显示的样式
-
-**你只需要刷新浏览器**，新功能就生效了。
+你只需要刷新浏览器，新功能就生效了。
 
 这就是 AI 协作的感觉：你提需求，它写代码，你验收效果。
 
 不满意？继续对话调整。
 
-### **3.3 试试其他功能**
+### 3.3 试试其他功能
 
 你还可以尝试：
 
-+   「加一个优先级标签，重要的任务显示红色」
-
-+   「加一个全部删除按钮」
-
-+   「换一个配色方案，我想要蓝色系」
++ 「加一个优先级标签，重要的任务显示红色」
++ 「加一个全部删除按钮」
++ 「换一个配色方案，我想要蓝色系」
 
 每次 Claude 都会理解你的意思，自动改代码。
 
-## **第四步：新手常见问题**
+## 第四步：新手常见问题
 
 在过去半年教学员用 Claude Code 的过程中，我发现新手最常问这些问题：
 
-### **Q1：改错了怎么办？**
+### Q1：改错了怎么办？
 
 别慌，Claude Code 有「时光机」功能。
 
-**方法一：按 ESC 两次**
+方法一：按 `ESC` 两次
 
 快速回退到上一个版本
 
-**方法二：输入命令**
+方法二：输入命令
 
 ```
 /rewind
@@ -410,7 +390,7 @@ Claude 会：
 
 Claude 会列出历史版本，你可以选择回到哪个时间点
 
-**方法三：直接说**
+方法三：直接说
 
 「刚才那个改动我不喜欢，还原回去」
 
@@ -420,15 +400,12 @@ Claude 会列出历史版本，你可以选择回到哪个时间点
 
 就像你不需要懂汽车发动机，也能知道车能不能开。
 
-+   添加任务试试，能加上吗？
++ 添加任务试试，能加上吗？
++ 标记完成试试，有划线吗？
++ 删除试试，真的删掉了吗？
++ 刷新页面，数据还在吗？
 
-+   标记完成试试，有划线吗？
-
-+   删除试试，真的删掉了吗？
-
-+   刷新页面，数据还在吗？
-
-**功能对了，代码就是对的。**
+功能对了，代码就是对的。
 
 有问题？直接告诉 Claude：「删除按钮点了没反应」，它会自己检查和修复。
 
@@ -436,35 +413,37 @@ Claude 会列出历史版本，你可以选择回到哪个时间点
 
 这是个好问题，说明你真的在学习。
 
-**简单回答**：如果你用的是我推荐的安装方式（curl 或 PowerShell 一键安装），就不需要 Node.js。
+简单回答：如果你用的是推荐的安装方式（`curl` 或 `PowerShell` 一键安装），就不需要 `Node.js`。
 
-**完整解释**：Claude Code 有多种安装方式。如果用 NPM 方式（`npm install -g @anthropic-ai/claude-code`），需要先装 Node.js。但一键安装方式（curl/PowerShell）已经把所有依赖打包好了，直接用就行。
+完整解释：Claude Code 有多种安装方式。如果用 NPM 方式（`npm install -g @anthropic-ai/claude-code`），需要先装 `Node.js`。但一键安装方式（`curl`/`PowerShell`）已经把所有依赖打包好了，直接用就行。
 
-**对新手来说**：跟着我这篇教程的步骤走，别去碰 NPM 安装，就不会遇到 Node.js 的问题。
 
-### Q4：我应该从这个开始学编程吗？
+
+**对新手来说**：跟着我这篇教程的步骤走，别去碰 `NPM` 安装，就不会遇到 `Node.js` 的问题。
+
+## Q4：我应该从这个开始学编程吗？
 
 这取决于你的目标。
 
 **如果你想快速做出东西**（做个工具、验证个想法、自动化工作）：
 
-+   从 Claude Code 开始是对的
++   从 `Claude Code` 开始是对的
 
-+   边做边学，有问题就问 Claude
++   边做边学，有问题就问 `Claude`
 
-+   遇到不懂的概念，让 Claude 解释
++   遇到不懂的概念，让 `Claude` 解释
 
 **如果你想成为专业开发者**：
 
-+   Claude Code 是很好的辅助，但不能替代系统学习
++   `Claude Code` 是很好的辅助，但不能替代系统学习
 
 +   建议路径：用 AI 做出第一个项目（建立信心）→ 系统学习基础（CS50、FreeCodeCamp）→ 再用 AI 加速开发
 
-我在 WaytoAGI 社区的观察：很多人就是通过 Claude Code 找到了编程的乐趣，然后主动去学了 JavaScript、Python。
+我在 WaytoAGI 社区的观察：很多人就是通过 `Claude Code` 找到了编程的乐趣，然后主动去学了 JavaScript、Python。
 
 因为当你做出东西的时候，学习的动力完全不一样。
 
-### Q5：使用 cc Switch 配置后，API 和 base url 都正确，为什么还是报错？
+## Q5：使用 `cc Switch` 配置后，API 和 `base url` 都正确，为什么还是报错？
 
 报错图：
 
@@ -476,17 +455,17 @@ Claude 会列出历史版本，你可以选择回到哪个时间点
 
 ![](img/ab48cd604ebf8e34d35c8e785ecfda21.png)
 
-配置里，需要正确使用 ANTHROPIC_API_KEY 或 ANTHROPIC_AUTH_TOKEN，取决于你使用的服务商。
+配置里，需要正确使用 `ANTHROPIC_API_KEY` 或 `ANTHROPIC_AUTH_TOKEN`，取决于你使用的服务商。
 
 ![](img/8ee2e2a02035b4dcce7d9c50290d3b31.png)
 
-export https_proxy=http://127.0.0.1:1235 http_proxy=http://127.0.0.1:1235 all_proxy=socks5://127.0.0.1:1234
+`export https_proxy=http://127.0.0.1:1235 http_proxy=http://127.0.0.1:1235 all_proxy=socks5://127.0.0.1:1234`
 
-## **下一步：你可以做什么？**
+## 下一步：你可以做什么？
 
 完成了这 15 分钟的教程，你已经掌握了：
 
-+   ✅ 安装和认证 Claude Code
++   ✅ 安装和认证 `Claude Code`
 
 +   ✅ 先规划再动手的方法
 
@@ -522,7 +501,7 @@ export https_proxy=http://127.0.0.1:1235 http_proxy=http://127.0.0.1:1235 all_pr
 
 +   把你的作品发出来，我们一起交流
 
-## **最后说两句**
+## 最后说两句
 
 那个 11 岁小女孩最后跟我说：「原来编程没那么难，就像跟一个很厉害的朋友聊天。」
 
@@ -540,47 +519,46 @@ export https_proxy=http://127.0.0.1:1235 http_proxy=http://127.0.0.1:1235 all_pr
 
 所以，别担心自己「不会编程」。
 
-打开 Claude Code，用 15 分钟试一试，你可能会发现一个新世界。
+打开 `Claude Code`，用 15 分钟试一试，你可能会发现一个新世界。
 
 ---
 
-**关于作者**：Ben，WaytoAGI AI 编程区主理人，前飞书多维表格产品经理。帮助了数百位非技术背景的朋友用 AI 做出了第一个作品。
+### 关于作者
+
+Ben，WaytoAGI AI 编程区主理人，前飞书多维表格产品经理。帮助了数百位非技术背景的朋友用 AI 做出了第一个作品。
 
 👸号：AI 工具进化论
 
 ---
 
-## **附录：快速命令清单**
+## 附录：快速命令清单
 
 +   [AI 编程：提示词修炼（附12 个常见提示词库）](https://waytoagi.feishu.cn/wiki/QmWvwgtyPi9s7WkexTbcIfCBn3V)
 
-# 启动
+### 启动
 
+```
 claude
+```
 
-# 创建项目
+### 创建项目
 
+```
 mkdir project-name
-
 cd project-name
-
 claude
+```
 
-# 常用命令
+### 常用命令
 
+```
 /help        # 查看帮助
-
 /rewind      # 回退版本
-
 /clear       # 清空对话
-
 /exit        # 退出
-
 ```
 
-```
-
-## **推荐提示词模板**
+### 推荐提示词模板
 
 ```
 做一个[项目类型]，需要：

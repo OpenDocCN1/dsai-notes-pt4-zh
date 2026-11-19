@@ -1,3 +1,4 @@
+
 # 产品介绍-山雨
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/IPENdj8JloyqwMx23o9cfVRLnBd](https://vxc3hj17dym.feishu.cn/docx/IPENdj8JloyqwMx23o9cfVRLnBd)
@@ -113,5 +114,5 @@
 &lt;Example&gt;
 {在此提供一个简短但有代表性的示例，展示如何应用上述指令创建产品介绍场景}
 &lt;/Example&gt;
-&lt;/OptimizedInstructions&gt;​​​​​​​​​​​​​​​​
+&lt;/OptimizedInstructions&gt;
 ```

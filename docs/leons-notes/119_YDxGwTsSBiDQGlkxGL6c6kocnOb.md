@@ -1,14 +1,15 @@
+
 # 202508｜不确定性才是常态
 
 > 来源：[https://leonzhang.feishu.cn/docx/Sg6MdYBYPopx64xvLZWchDfLnhe](https://leonzhang.feishu.cn/docx/Sg6MdYBYPopx64xvLZWchDfLnhe)
 
-### 最近工作
+## 最近工作
 
 1.  [AI CLI 工具激增探究 - Gemini ](https://leonzhang.feishu.cn/wiki/SDWZw8LAAiYBazkTemSc4Wcznxd)
 
 1.  [RLHF模型性能下降之谜 - Gemini](https://leonzhang.feishu.cn/wiki/EDAnwD4HLijamJkD9kZcazwanig)
 
-### 最近观察和思考
+## 最近观察和思考
 
 **1**
 
@@ -50,9 +51,9 @@
 
 人生要走到下一个阶段，被新的挑战和憧憬占有，才能真的把过去很在乎的东西放下。—— 詹青云
 
-### 最近在听、在看
+## 最近在听、在看
 
-#### 播客
+### 播客
 
 **1**
 
@@ -68,7 +69,7 @@
 
 “永远在有技术变革的时候才有十倍百倍以上的机会。”
 
-#### 文章
+### 文章
 
 **1**
 
@@ -94,7 +95,7 @@
 
 也许海明威赞成**尼采"杀不死我的使我更强大"**的哲学，所以他笔下的老人才会说：
 
-**"生活总是让我们遍体鳞伤，但到后来，那些**受伤的地方一定会变成我们最强壮的地方"。
+**"生活总是让我们遍体鳞伤，但到后来，那些受伤的地方一定会变成我们最强壮的地方"**。
 
 可我从来不同意两位大师对挫败与伤痕的赞美。
 
@@ -122,7 +123,7 @@ Anthropic CEO Dario Amodei 预言：五年内 50% 入门白领岗位被 AI 淘�
 
 1.  例子：旅行计划出错怪交通、约会迟到怪对方、找不到工作怪环境——本质上都是“世界错了，我没错”的逻辑闭环。
 
-1.  ** 不确定性才是常态**
+1.  **不确定性才是常态**
 
 1.  过度依赖确定性，会让人对变化产生抵触，甚至陷入自我设限。
 
@@ -138,7 +139,7 @@ Anthropic CEO Dario Amodei 预言：五年内 50% 入门白领岗位被 AI 淘�
 
 +   升级：像升级操作系统一样，定期检视和优化自己的思维模型。
 
-**执着于确定性会让人陷入自我设限，真正的**成长来自于拥抱不确定性、主动升级自我认知。
+**执着于确定性会让人陷入自我设限，真正的成长来自于拥抱不确定性、主动升级自我认知。**
 
 **5**
 
@@ -160,16 +161,17 @@ Anthropic CEO Dario Amodei 预言：五年内 50% 入门白领岗位被 AI 淘�
 
 一个人在你身上“浪费”钱，你可以用钱回报他。但是一个在你身上“浪费”时间，你唯有用时间回报他。 ——刘润
 
-#### 视频
+### 视频
 
 **1**
 
 > 【糖果果的未来要发光｜聊聊爱情中最难的几个问题：恐婚、彩礼、浪漫、仪式感…【视频播客】】 https://www.bilibili.com/video/BV1pXvwzEEcj/
 
 | ![](img/b1d13f03337668278665c4219f335bcc.png) |
+
 | --- |
 
-爱情三角理论：爱情由 **亲密（情感联结与关怀）、激情（生理吸**引与浪漫）、承诺（维持关系的决心与责任）三个核心成分构成。
+爱情三角理论：爱情由 **亲密（情感联结与关怀）、激情（生理吸引与浪漫）、承诺（维持关系的决心与责任）**三个核心成分构成。
 
 **幸福的原则**
 
@@ -211,7 +213,7 @@ Anthropic CEO Dario Amodei 预言：五年内 50% 入门白领岗位被 AI 淘�
 
 “**正确的事情、长周期、高频迭代**”
 
-** 3**
+**3**
 
 > 【8.6 分！孩子看乐子，大人照镜子，《浪浪山小妖怪》太好看了！】 https://www.bilibili.com/video/BV1SWttzmEN1/
 
@@ -227,9 +229,9 @@ Anthropic CEO Dario Amodei 预言：五年内 50% 入门白领岗位被 AI 淘�
 
 1.  [RLHF模型性能下降之谜 - Gemini](https://leonzhang.feishu.cn/wiki/EDAnwD4HLijamJkD9kZcazwanig)
 
-陈茜 @Qian_Journalist 在视频提到，“GPT-o3 的 teacher model 能力很强，但做 RL 后的 student model 性能大幅下降，甚至不如 o1 teacher model”，这点确实之前没有关注过，于是请教了下 ChatGPT（GPT-5），当然视频也解释了。
+陈茜 @`Qian_Journalist` 在视频提到，“GPT-o3 的 teacher model 能力很强，但做 RL 后的 student model 性能大幅下降，甚至不如 o1 teacher model”，这点确实之前没有关注过，于是请教了下 ChatGPT（GPT-5），当然视频也解释了。
 
-简单说就是：**模型 “**高效化” 与 “人类需求对齐化” 的代价。Teacher model **通过知识**蒸馏得到 Student model，Student model 经过 RLHF 训练时，因为压缩损失（比如模型更小，能力可能被压缩），加上 RLHF 的对齐约束（让模型符合人类偏好），最终导致性能退化。
+简单说就是：**模型 “高效化”与“人类需求对齐化”的代价**。Teacher model **通过知识**蒸馏得到 Student model，Student model 经过 RLHF 训练时，因为压缩损失（比如模型更小，能力可能被压缩），加上 RLHF 的对齐约束（让模型符合人类偏好），最终导致性能退化。
 
 ChatGPT 告诉我，这是一个很典型的「Teacher → Student 退化」问题，是 模型容量限制 + 蒸馏信号不完整 + RL 对齐目标冲突 三方面共同作用的结果。
 
@@ -237,7 +239,7 @@ ChatGPT 告诉我，这是一个很典型的「Teacher → Student 退化」问�
 
 1.  **Teacher model**（比如 GPT-o3 的内部版本）本身非常大、能力极强，但运行成本高、延迟大，不适合直接商用。
 
-1.  **用 Teacher 生成大**量数据，或者直接作为监督信号，让一个更小的 Student model 学习它的输出（Distillation / Imitation Learning）。
+1.  **用 Teacher 生成大量数据**，或者直接作为监督信号，让一个更小的 Student model 学习它的输出（Distillation / Imitation Learning）。
 
 1.  在 Student 基础上做 **RLHF 或 RLAIF** 调优，使其更符合安全、易用、可控等产品要求。
 
@@ -253,7 +255,7 @@ ChatGPT 告诉我，这是一个很典型的「Teacher → Student 退化」问�
 
 1.  RLHF 带来的能力收敛
 
-1.  RLHF 需要根据人类偏好（安全、简洁**、礼貌等）对**模型输出进行奖励，会导致模型探索空间收缩。
+1.  RLHF 需要根据人类偏好（安全、**简洁**、**礼貌**等）对**模型输出**进行奖励，会导致模型探索空间收缩。
 
 1.  奖励模型的设计不完美，也会导致模型的模板化回答，或误把冗长推理当成“啰嗦”，结果就有可能惩罚了高质量推理链，导致 reasoning 能力下降。
 
@@ -282,6 +284,7 @@ ChatGPT 告诉我，这是一个很典型的「Teacher → Student 退化」问�
 Teacher → Student 能力退化机制图（附图）
 
 | ![](img/3bf9f59ce0e926be0810da500eb793c2.png) |
+
 | --- |
 
 **5**
@@ -296,7 +299,7 @@ Teacher → Student 能力退化机制图（附图）
 
 爱情是美好的，希望大家都能勇敢去爱！
 
-### 相关
+## 相关
 
 1.  转载｜[伟大的起点无法被计划](https://leonzhang.feishu.cn/wiki/L73gw24Q1iOwAFksWtwcu1Tynbe)
 

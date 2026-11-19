@@ -1,38 +1,28 @@
+
 # Al 行业资讯 2.02
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/RQecdsN9OoA7b9xHq1ZcFKmVnhh](https://qqs7y1hozd1.feishu.cn/docx/RQecdsN9OoA7b9xHq1ZcFKmVnhh)
 
-1.  [**OpenAI上线o3-mini**](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-B8ikdQ4kcoWWQ9xfDPCcMb4PnOA)
-
-1.  Qwen开源首个1M长度长文本新模型
-
-1.  [**阿里除夕发布Qwen2.5-Ma**](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-N68SdDZl4ocSFDxT6dnc120gnRb)x，多基准测试反超DeepSeek V3
-
-1.  [**DeepSeek开源新模型**](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-PUXRdEd9ToT0mDx2CUMcZVb2nxb)
-
-1.  DeepSeek超越ChatGPT登顶中美AppStore
-
-1.  [**字节开源首款10分钟级长视频深度估计模型——**](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-QvRxdMQt9o3ljoxfielclj4Gnxf)Video Depth Anything
-
-1.  微软推出针对NPU优化的DeepSeek-R1
+1. [OpenAI上线o3-mini](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-B8ikdQ4kcoWWQ9xfDPCcMb4PnOA)
+1. Qwen开源首个1M长度长文本新模型
+1. [阿里除夕发布Qwen2.5-Max，多基准测试反超DeepSeek V3](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-N68SdDZl4ocSFDxT6dnc120gnRb)
+1. [DeepSeek开源新模型](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-PUXRdEd9ToT0mDx2CUMcZVb2nxb)
+1. DeepSeek超越ChatGPT登顶中美AppStore
+1. [字节开源首款10分钟级长视频深度估计模型——Video Depth Anything](https://qqs7y1hozd1.feishu.cn/wiki/KCv2wjj9uiBUmBkbYPqcjxSTnRh#share-QvRxdMQt9o3ljoxfielclj4Gnxf)
+1. 微软推出针对NPU优化的DeepSeek-R1
 
 ---
 
-# OpenAI上线o3-mini
+## OpenAI上线o3-mini
 
 2月1日凌晨，OpenAI正式上线了o3-mini系列模型。o3-mini是o1-mini模型的继任者，主打快速推理，具有更高的性价比。OpenAI研究科学家Noam Brown表示，o3-mini在多项评估中性能优于o1，能够彻底改变成本与智能之间的关系。
 
 o3-mini系列模型的亮点包括：
 
-+   快速推理能力，平均响应时间为7.7秒，较o1-mini的10.16秒快了24%。
-
-+   支持联网搜索，能够实时获取最新答案并附带相关网页链接。
-
-+   支持函数调用、结构化输出和开发者消息等高级功能。
-
-+   提供低、中、高三种推理强度选项，用户可根据需求选择。
-
-+
++ 快速推理能力，平均响应时间为7.7秒，较o1-mini的10.16秒快了24%。
++ 支持联网搜索，能够实时获取最新答案并附带相关网页链接。
++ 支持函数调用、结构化输出和开发者消息等高级功能。
++ 提供低、中、高三种推理强度选项，用户可根据需求选择。
 
 此外，o3-mini还首次向免费用户开放推理模型的使用权限，用户在ChatGPT消息输入框下方选择“Reason”按钮即可使用。付费用户方面，ChatGPT Plus、Team和Pro用户现已可以使用o3-mini，企业版将在一周后开放访问。OpenAI还提升了Plus和Team用户的每日消息限制，从o1-mini的50条提升至150条。Pro用户可享受o3-mini以及o3-mini-high的无限次访问。
 
@@ -42,7 +32,7 @@ o3-mini采用思维链推理训练方法，提升了安全性和防越狱测试�
 
 ![](img/289d163ae9d40059b7f481c1d97a58ad.png)
 
-# Qwen开源首个1M长度长文本新模型
+## Qwen开源首个1M长度长文本新模型
 
 1月27日，阿里云Qwen开源了一个长文本新模型，首次将上下文扩展到1M长度。此次发布的新模型包括Qwen2.5-7B-Instruct-1M和Qwen2.5-14B-Instruct-1M，它们在处理长文本任务中已实现稳定超越GPT-4o-mini，并且在处理百万级别长文本输入时可实现近7倍的提速。
 
@@ -56,15 +46,11 @@ Qwen新模型背后的关键技术主要包括长上下文训练、长度外推�
 
 HuggingFace体验地址：
 
-+
-
 ```
 https://huggingface.co/spaces/Qwen/Qwen2.5-1M-Demo
 ```
 
 魔塔社区体验地址：
-
-+
 
 ```
 https://www.modelscope.cn/studios/Qwen/Qwen2.5-1M-Demo
@@ -72,15 +58,13 @@ https://www.modelscope.cn/studios/Qwen/Qwen2.5-1M-Demo
 
 技术报告：
 
-+
-
 ```
 https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/Qwen2_5_1M_Technical_Report.pdf
 ```
 
 ![](img/10f5616fcba1c99bd799f5e20d57ea23.png)
 
-# 阿里除夕发布Qwen2.5-Max，多基准测试反超DeepSeek V3
+## 阿里除夕发布Qwen2.5-Max，多基准测试反超DeepSeek V3
 
 1月29日，阿里通义Qwen在除夕夜发布了Qwen2.5-Max模型，
 
@@ -92,7 +76,7 @@ Qwen2.5-Max是一个超大规模的MoE模型，经过超过20万亿token的预�
 
 ![](img/ebf3896a0ed81c5bf0e7dc0b480b11b2.png)
 
-# DeepSeek开源新模型
+## DeepSeek开源新模型
 
 本周，DeepSeek又开源了两个新模型。它们是视觉模型Janus-Pro和多模态理解模型JanusFlow-1.3B。
 
@@ -104,7 +88,7 @@ DeepSeek的开源行动不仅提升了市场焦虑，也加剧了全球AI竞争�
 
 ![](img/aa4c8c2b64ff457712f3372b2d27e60b.png)
 
-# DeepSeek超越ChatGPT登顶中美AppStore
+## DeepSeek超越ChatGPT登顶中美AppStore
 
 1月27日，DeepSeek发布的iOS应用超越了ChatGPT的官方应用，直接登顶中美AppStore。这一成就不仅标志着DeepSeek在市场上的巨大影响力，也反映了其超强的技术实力和极高的用户认可度。
 
@@ -112,7 +96,7 @@ DeepSeek的开源不仅推动了AI技术的发展，也加剧了全球AI市场�
 
 ![](img/1a315daa67bcb8229b280e45ddaa4299.png)
 
-# 字节开源首款10分钟级长视频深度估计模型——Video Depth Anything
+## 字节开源首款10分钟级长视频深度估计模型——Video Depth Anything
 
 1月27日，字节跳动智能创作AR团队联合豆包大模型团队开源了Video Depth Anything（VDA），这是首款10分钟级长视频深度估计模型，性能达到SOTA。
 
@@ -122,21 +106,16 @@ VDA在视频数据集的精度和稳定性指标上均取得SOTA，精度提升�
 
 VDA的设计包括：
 
-+   使用Depth Anything V2模型作为编码器，固定编码器参数，降低训练成本并保留已学习到的特征。
-
-+   设计轻量级时空头，包含四个时间注意力层，独立进行时间维度信息融合。
-
-+   提出时序梯度匹配损失，直接使用相邻帧中相同坐标深度来计算损失，约束时序一致性。
-
-+   采用关键帧对齐和重叠区域插值方法，处理任意视频长度，减少累积的尺度漂移。
-
-+
++ 使用Depth Anything V2模型作为编码器，固定编码器参数，降低训练成本并保留已学习到的特征。
++ 设计轻量级时空头，包含四个时间注意力层，独立进行时间维度信息融合。
++ 提出时序梯度匹配损失，直接使用相邻帧中相同坐标深度来计算损失，约束时序一致性。
++ 采用关键帧对齐和重叠区域插值方法，处理任意视频长度，减少累积的尺度漂移。
 
 此外，豆包大模型团队还开源了Prompt Depth Anything技术，实现了4K分辨率下的高精绝对深度估计，具备广泛的下游应用空间。
 
 ![](img/4843a70fa13b2d6a975c7370a7faf699.png)
 
-# 微软推出针对NPU优化的DeepSeek-R1
+## 微软推出针对NPU优化的DeepSeek-R1
 
 1月30日，微软宣布推出针对NPU优化的DeepSeek-R1，首批将面向搭载高通骁龙X芯片的Copilot+ PC推出，随后扩展到英特尔酷睿Ultra 200V等平台。首个版本DeepSeek-R1-Distill-Qwen-1.5B将在AI Toolkit中提供，7B和14B版本也将很快推出，助力开发者充分利用Copilot+ PC中的强大NPU配置。
 

@@ -1,3 +1,4 @@
+
 # 20240516-争夺AI文生图“铁王座”？谷歌Imagen 3与Midjourney V6效果超强对比
 
 > 来源：[https://aigcreative.feishu.cn/docx/VfZ9dtfStorla5xrrGLcF1gGnsb](https://aigcreative.feishu.cn/docx/VfZ9dtfStorla5xrrGLcF1gGnsb)
@@ -10,7 +11,7 @@
 
 该模型在安全性和责任性方面进行了创新，包括使用先进的隐私和安全技术以及水印工具，以确保生成的图像内容安全、可靠。
 
-目前，Imagen 3 可以在： https://aitestkitchen.withgoogle.com/zh/tools/image-fx 平台上进行试用，waitlist。
+目前，Imagen 3 可以在：`https://aitestkitchen.withgoogle.com/zh/tools/image-fx` 平台上进行试用，waitlist。
 
 X上艺术家Dogan Ural拿到了内测资格，我们来看看他的一些测试，
 
@@ -76,4 +77,4 @@ Imagen 3 的推出标志着文本到图像生成技术的又一进步，它不�
 
 ![](img/10103dbea7cfb7858ee86df996264b15.png)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

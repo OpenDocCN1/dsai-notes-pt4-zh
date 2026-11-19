@@ -1,3 +1,4 @@
+
 # 测评 · Relay Diffusion：级联扩散模型，无需从白噪声开始
 
 > 来源：[https://ai.feishu.cn/docx/Ft1edqSh3oqtmfxgvMcc2JlKnBf](https://ai.feishu.cn/docx/Ft1edqSh3oqtmfxgvMcc2JlKnBf)
@@ -8,17 +9,17 @@
 
 论文链接：
 
-https://arxiv.org/abs/2309.03350
+`https://arxiv.org/abs/2309.03350`
 
 GitHub地址：
 
-https://github.com/THUDM/RelayDiffusion
+`https://github.com/THUDM/RelayDiffusion`
 
 近些年来，扩散模型（Diffusion）在图像合成方面取得了巨大的成功，显著提升了图片合成的质量。然而，扩散模型在合成高分辨率图片时仍面临较大挑战，
 
-+   一，低分辨率的噪声调度很难直接用于高分辨率，研究者们需要为高分辨的场景谨慎地调节噪声调度表，且仍难以获得良好的结果；
++ 一，低分辨率的噪声调度很难直接用于高分辨率，研究者们需要为高分辨的场景谨慎地调节噪声调度表，且仍难以获得良好的结果；
 
-+   二，高分辨的训练过程需要大量资源，计算成本较高。
++ 二，高分辨的训练过程需要大量资源，计算成本较高。
 
 目前，一种普遍采用的解决方案是 latent (stable) diffusion 提出的在隐空间内训练，再映射回像素空间，但这种方法不可避免地会受到底层伪影（low-level artifacts）的影响。
 
@@ -48,4 +49,6 @@ https://github.com/THUDM/RelayDiffusion
 
 ![](img/d94ea86c70766dab8d57c5079d8cfe11.png)
 
-**研究心路：**Relay Diffusion（中继扩散）想法源自在一次实验中突然意识到不同分辨率图像和视频对噪音的敏感程度不同的原因在于其各像素分布完全不能看成独立的，而之前的扩散模型信噪比分析都没怎么考虑。最终在现有的pipeline之间权衡后，选择了从优化层次生成的角度入手，终于狠狠刷了一把纯图像生成模型的SOTA。
+## 研究心路
+
+Relay Diffusion（中继扩散）想法源自在一次实验中突然意识到不同分辨率图像和视频对噪音的敏感程度不同的原因在于其各像素分布完全不能看成独立的，而之前的扩散模型信噪比分析都没怎么考虑。最终在现有的pipeline之间权衡后，选择了从优化层次生成的角度入手，终于狠狠刷了一把纯图像生成模型的SOTA。

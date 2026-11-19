@@ -1,18 +1,19 @@
+
 # Hermes-agent WIN整合包
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/MuRWd68mqoePMixwS8rco3YonJe](https://yunyingmenghai.feishu.cn/docx/MuRWd68mqoePMixwS8rco3YonJe)
 
-# Hermes-agent整合包下载
+## Hermes-agent整合包下载
 
 链接：https://pan.quark.cn/s/34d70bcb9b01
 
-# 使用说明:
+## 使用说明
 
-1.  运行:hermes ui  页面配置模型/代理
+1. 运行: `hermes ui` 页面配置模型/代理
 
-1.  start-webui.bat  # 启动 Web UI
+1. `start-webui.bat` # 启动 Web UI
 
-1.  start-hermes.bat # 启动 Cli命令行对话框
+1. `start-hermes.bat` # 启动 Cli命令行对话框
 
 ```
 model:
@@ -21,7 +22,7 @@ model:
   api_mode: anthropic_messages
 ```
 
-# 配置文件路径:
+## 配置文件路径
 
 ```
 C:\Users\替换自己的用户名\.hermes
@@ -29,9 +30,9 @@ C:\Users\替换自己的用户名\.hermes
 config.yaml
 ```
 
-# 常见问题:
+## 常见问题
 
-## 附件上传后无法读取或本地文件路径无法读取
+### 附件上传后无法读取或本地文件路径无法读取
 
 ```
 wsl-windows-path-conversion
@@ -60,7 +61,7 @@ Replace the Windows drive letter with the WSL mount path:
   E:\Project             →  /mnt/host/e/Project
 
 General formula:
-  &lt;X&gt;:\&lt;path&gt;  →  /mnt/host/&lt;lowercase_x&gt;/&lt;path_with_forward_slashes&gt;
+  <X>:\<path>  →  /mnt/host/<lowercase_x>/<path_with_forward_slashes>
 
 Verification
 ------------
@@ -89,12 +90,12 @@ Environment Note
 
 The current WSL environment shows:
 - Working directory: /mnt/host/d/Hermes/Hermes-Agent-Portable
-- Windows drives mounted under: /mnt/host/&lt;drive&gt;/
+- Windows drives mounted under: /mnt/host/<drive>/
 
 Common Pitfalls
 ---------------
 
-1. Do NOT use /mnt/c/... — use /mnt/host/c/... (the &quot;host&quot; prefix is required in this WSL setup)
+1. Do NOT use /mnt/c/... — use /mnt/host/c/... (the "host" prefix is required in this WSL setup)
 2. Backslashes in Windows paths must become forward slashes in Linux
 3. Drive letters must be lowercase in the WSL path
 4. Spaces in paths should be escaped or quoted in terminal commands
@@ -104,7 +105,7 @@ Hermes 配置中的 Windows 绝对路径必须转换为 Linux 能识别的格式
 
 ![](img/c71bb27d43abaa303cb5d3033b931029.png)
 
-## AI 工具的 WSL 集成层在尝试启动 shell 时失败了—它默认要找 /bin/bash， WSL 里没有装 bash
+### AI 工具的 WSL 集成层在尝试启动 shell 时失败了—它默认要找 `/bin/bash`， WSL 里没有装 `bash`
 
 ```
 #打开终端
@@ -113,10 +114,10 @@ wsl
 apk add bash
 ```
 
-# 相关使用教程:
+## 相关使用教程
 
 https://hermes-agent.nousresearch.com/docs/getting-started/quickstart
 
-# 原项目地址:
+## 原项目地址
 
 多维表格（RWesbCUiLaxjKXsorlPc61Hqn3g_tblfeogASD0DBsfe）

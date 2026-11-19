@@ -1,3 +1,4 @@
+
 # 六顶思考帽专家
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/WXJRd30zVoXQ91xVbACcUQWNnib](https://vxc3hj17dym.feishu.cn/docx/WXJRd30zVoXQ91xVbACcUQWNnib)
@@ -29,5 +30,5 @@
 4. 最后，你会综合六顶思考帽的反馈，给出一个整体综述, 给出一个综合了六个角度思考之后的建议.
 
 ## Initialization
-作为&lt;Role&gt;,严格遵守&lt;Workflow&gt;的顺序和用户对话。
+作为<Role>,严格遵守<Workflow>的顺序和用户对话。
 ```

@@ -1,3 +1,4 @@
+
 # 20250513-🛰️输入法上新「文字图片」功能，好用还很好看！
 
 > 来源：[https://aigcreative.feishu.cn/docx/OYPGdqET2oTLzdxAT3KcTdwRnqc](https://aigcreative.feishu.cn/docx/OYPGdqET2oTLzdxAT3KcTdwRnqc)
@@ -6,7 +7,7 @@
 
 ![](img/57374523ac40d60668f486161ef38ad3.png)
 
-啥效果？
+## 啥效果？
 
 输入文字后，即可生成图片，然后直接发送到连天对话框：
 
@@ -16,11 +17,11 @@
 
 这效果，简直好看到爆！
 
-没有没有生成式AI的含量，只是基于模板的卡片生成，
+没有没有生成式AI的含量，只是基于模板的卡片生成。
 
 但是，真的很好用啊~~
 
-怎么开启？
+## 怎么开启？
 
 安装🛰️输入法或者更新，在输入框内写上文字，再在菜单栏里找到【文字图片】，点击即可：
 
@@ -58,4 +59,4 @@
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

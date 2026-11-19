@@ -1,3 +1,4 @@
+
 # 2024 AIGC应用层十大趋势
 
 > 来源：[https://agijuejin.feishu.cn/docx/ERLEdn0XBo5IXkxZECKcdzJ3n8b](https://agijuejin.feishu.cn/docx/ERLEdn0XBo5IXkxZECKcdzJ3n8b)

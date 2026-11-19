@@ -1,38 +1,39 @@
+
 # Prompt Learning Notes
 
 > 来源：[https://leonzhang.feishu.cn/docx/Vv7idalNVohC3AxPjiXczBTzntf](https://leonzhang.feishu.cn/docx/Vv7idalNVohC3AxPjiXczBTzntf)
 
-#Prompt  #ChatGPT #AI
+#Prompt #ChatGPT #AI
 
 > 如何写出最好的提示词没有黄金标准，试验和错误是最好的学习方法！
 
 ## Prompt 入门
 
-+   **明确且具体**
++ **明确且具体**
 
-+   条件判断（if...else）
++ 条件判断（`if...else`）
 
-+   提供任务执行的正确示例（请参考以上示例风格回答问题）
++ 提供任务执行的正确示例（请参考以上示例风格回答问题）
 
-+   让模型按要求输出结构化的内容（如表格请用 Mackdown 语法表示）
++ 让模型按要求输出结构化的内容（如表格请用 `Mackdown` 语法表示）
 
-+   **给模型思考的时间**
++ **给模型思考的时间**
 
-+   指定完成任务的步骤（有序列表）
++ 指定完成任务的步骤（有序列表）
 
-+   指示模型先思考再作答（请用逻辑推导，为什么 xx，就 xx）
++ 指示模型先思考再作答（请用逻辑推导，为什么 xx，就 xx）
 
-+   **用迭代思维撰写**
++ **用迭代思维撰写**
 
-+   重复这个步骤：idea ==>> 输入 Prompt  ==>> 优化 Prompt
++ 重复这个步骤：`idea` ==>> 输入 Prompt ==>> 优化 Prompt
 
-+   **总结/提取摘要内容**
++ **总结/提取摘要内容**
 
-> Prompt 温度值（0-2）是 ChatGPT API 参数。数值越小，准确度越高；数值越大，创造力越好。
+> Prompt 温度值（`0-2`）是 ChatGPT API 参数。数值越小，准确度越高；数值越大，创造力越好。
 
-+   「提取」 + 「 [温度值：0] 」
++ 「提取」 + 「 [温度值：`0`] 」
 
-+   推断和标签提取、转化语言/风格、改写
++ 推断和标签提取、转化语言/风格、改写
 
 ## 基础应用
 
@@ -89,21 +90,21 @@ Write in the style and quality of an expert in [field] with 20+ years of experie
 
 ## Prompt 进阶
 
-> **R**ole, Profile, Goals, Constrains, Skill, Workflows, Initialization
+> `Role`, `Profile`, `Goals`, `Constrains`, `Skill`, `Workflows`, `Initialization`
 
-+   Role：角色，用于指定 ChatGPT 扮演的角色；
++ `Role`：角色，用于指定 ChatGPT 扮演的角色；
 
-+   Profile：配置信息，包括作者、版本号、语言和描述；
++ `Profile`：配置信息，包括作者、版本号、语言和描述；
 
-+   Goals：目标，你希望 ChatGPT 帮你完成什么目标任务；
++ `Goals`：目标，你希望 ChatGPT 帮你完成什么目标任务；
 
-+   Constrains：限制条件，用于限制 ChatGPT 输出不当内容；
++ `Constrains`：限制条件，用于限制 ChatGPT 输出不当内容；
 
-+   Skill：技能，你希望 ChatGPT 拥有的技能；
++ `Skill`：技能，你希望 ChatGPT 拥有的技能；
 
-+   Workflows：工作流程，你希望 ChatGPT 工作的整体流程；
++ `Workflows`：工作流程，你希望 ChatGPT 工作的整体流程；
 
-+   Initialization：初始化提示信息，用于告诉用户当前 Bot 的功能和用途；
++ `Initialization`：初始化提示信息，用于告诉用户当前 Bot 的功能和用途；
 
 ## 附录：优质 Prompt
 
@@ -196,7 +197,7 @@ Write in the style and quality of an expert in [field] with 20+ years of experie
 
 ### 文本摘要助手
 
-> Role, Profile, Goals,  Constrains, Skill, Workflows, Initialization
+> Role, Profile, Goals, Constrains, Skill, Workflows, Initialization
 
 ```
 # Role: 文本摘要助手
@@ -219,7 +220,7 @@ Write in the style and quality of an expert in [field] with 20+ years of experie
 - 具备理解和分析复杂文章的能力
 ## Workflows:
 1. 用户输入原始文本。
-2. 文本分析：你会利用自然语言处理技术对用户输入的文本进行分析，提取关键信息和核心要点。
+2. 文本分析：你会利用自然语言处理技术对用户输入的文本进行分析，执行关键信息和核心要点。
 3. 生成摘要：基于文本分析结果，你将生成简洁准确的文本摘要，突出文章的核心内容。
 4. 观点表达：在摘要的基础上，你会给出自己的观点和看法，帮助用户更好地理解文本内容。
 ## Initialization:
@@ -291,7 +292,7 @@ Write in the style and quality of an expert in [field] with 20+ years of experie
 - 判断用户输入的内容是问题还是题干，并根据题干解答问题
 ## Skill
 - 精通 Python 编程语言及相关工具和框架
-- 擅长解释和呈现复杂概念和代码示例
+- 擅长解释和呈现复杂概念和代示例
 - 具备耐心和敏锐的洞察力，能够理解用户的需求和难点
 ## Python 教学指导框架
 1. 知识传授

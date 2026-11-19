@@ -1,4 +1,5 @@
-# LLM101n-CN 共建共学计划
+
+# `LLM101n-CN` 共建共学计划
 
 > 来源：[https://aicarrier.feishu.cn/docx/HjurdIe3AoibEexVfQ0cke9PnUj](https://aicarrier.feishu.cn/docx/HjurdIe3AoibEexVfQ0cke9PnUj)
 
@@ -6,15 +7,15 @@
 
 ---
 
-# 序
+## 序
 
 相信很多朋友今天听说了 OpenAI 联合创始人、“计算机视觉教母”李飞飞教授的高徒—— Andrej Karpathy（卡帕西）——官宣创业并入局 AI 原生教育的消息。
 
-**这家初创公司 **Eureka Labs 推出的首门课程叫 LLM101n。
+这家初创公司 Eureka Labs 推出的首门课程叫 `LLM101n`。
 
-在此机智流联合书生·浦语兴趣小组发起 LLM101n-CN 中文版共建，旨在将 LLM101n 中优质的 AI 内容带给中文社区的小伙伴们，👸号回复 “101n”加入 LLM101n-CN 共建！！！
+在此机智流联合书生·浦语兴趣小组发起 `LLM101n-CN` 中文版共建，旨在将 `LLM101n` 中优质的 AI 内容带给中文社区的小伙伴们，👸号回复 “`101n`”加入 `LLM101n-CN` 共建！！！
 
-Repo 地址：https://github.com/SmartFlowAI/LLM101n-CN
+Repo 地址：`https://github.com/SmartFlowAI/LLM101n-CN`
 
 ---
 
@@ -28,27 +29,24 @@ Repo 地址：https://github.com/SmartFlowAI/LLM101n-CN
 
 ![](img/6f13aa824206dd2c345cef4eba08fd58.png)
 
-为了更好地促进中文社区的小伙们学习这门课程，我们“机智流”联合人均大佬的“书生·浦语”兴趣小组发起 LLM101n-CN 中文版共建，旨在将 LLM101n 中优质的 AI 内容带给中文社区的小伙伴们！
+为了更好地促进中文社区的小伙们学习这门课程，我们“机智流”联合人均大佬的“书生·浦语”兴趣小组发起 `LLM101n-CN` 中文版共建，旨在将 `LLM101n` 中优质的 AI 内容带给中文社区的小伙伴们！
 
 加入我们的共建计划，你将获得：
 
-+   共建证书
-
-+   丰厚的 A100 算力支持
-
-+   同社区大佬交流、分享经验的宝贵机会
-
-+   ...
++ 共建证书
++ 丰厚的 A100 算力支持
++ 同社区大佬交流、分享经验的宝贵机会
++ ...
 
 心动不如行动，快来加入我们吧！
 
-LLM101n-CN 中文版 Repo 地址：https://github.com/SmartFlowAI/LLM101n-CN
+`LLM101n-CN` 中文版 Repo 地址：`https://github.com/SmartFlowAI/LLM101n-CN`
 
-👸号回复 “101n” 加入 LLM101n-CN 共建计划！
+👸号回复 “`101n`” 加入 `LLM101n-CN` 共建计划！
 
 ---
 
-# 知识库共建计划往期回顾
+## 知识库共建计划往期回顾
 
 书生·浦语×机智流社区共建计划来啦！
 

@@ -1,12 +1,11 @@
+
 # 第二节 多模态嵌入
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/MijhdoEdyoyLJXx1VJ4cBWjSnRD](https://gotoaiworld.feishu.cn/docx/MijhdoEdyoyLJXx1VJ4cBWjSnRD)
 
-# [第二节 多模态嵌入](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=%e7%ac%ac%e4%ba%8c%e8%8a%82-%e5%a4%9a%e6%a8%a1%e6%80%81%e5%b5%8c%e5%85%a5)
-
 现代 AI 的一项重要突破，是将简单的词向量发展成了能统一理解图文、音视频的复杂系统。这一发展建立在注意力机制、Transformer 架构和对比学习等关键技术之上，它们解决了在共享向量空间中对齐不同数据模态的核心挑战。其发展环环相扣：Word2Vec 为 BERT 的上下文理解铺路，而 BERT 又为 CLIP 等模型的跨模态能力奠定了基础。
 
-## [一、为什么需要多模态嵌入？](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=%e4%b8%80%e3%80%81%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%a4%9a%e6%a8%a1%e6%80%81%e5%b5%8c%e5%85%a5%ef%bc%9f)
+## 一、为什么需要多模态嵌入？
 
 前面的章节介绍了如何为文本创建向量嵌入。然而，仅有文本的世界是不完整的。现实世界的信息是多模态的，包含图像、音频、视频等。传统的文本嵌入无法理解“那张有红色汽车的图片”这样的查询，因为文本向量和图像向量处于相互隔离的空间，存在一堵“模态墙”。
 
@@ -14,11 +13,11 @@
 
 实现这一目标的关键，在于解决 跨模态对齐 (Cross-modal Alignment) 的挑战。以对比学习、视觉 Transformer (ViT) 等技术为代表的突破，让模型能够学习到不同模态数据之间的语义关联，最终催生了像 CLIP 这样的模型。
 
-## [二、CLIP 模型浅析](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=%e4%ba%8c%e3%80%81clip-%e6%a8%a1%e5%9e%8b%e6%b5%85%e6%9e%90)
+## 二、CLIP 模型浅析
 
 在图文多模态领域，OpenAI 的 CLIP (Contrastive Language-Image Pre-training) 是一个很有影响力的模型，它为多模态嵌入定义了一个有效的范式。
 
-CLIP 的架构清晰简洁。它采用**双编码器架构 (Dual-Encoder Architecture)**，包含一个图像编码器和一个文本编码器，分别将图像和文本映射到同一个共享的向量空间中。
+CLIP 的架构清晰简洁。它采用 **双编码器架构 (Dual-Encoder Architecture)**，包含一个图像编码器和一个文本编码器，分别将图像和文本映射到同一个共享的向量空间中。
 
 ![](img/43e696f56d316b7ad25ab3e3aaa4550d.png)
 
@@ -28,13 +27,13 @@ CLIP 的架构清晰简洁。它采用**双编码器架构 (Dual-Encoder Archite
 
 这种大规模的对比学习赋予了 CLIP 有效的零样本（Zero-shot）识别能力。它能将一个传统的分类任务，转化为一个“图文检索”问题——例如，要判断一张图片是不是猫，只需计算图片向量与“a photo of a cat”文本向量的相似度即可。这使得 CLIP 无需针对特定任务进行微调，就能实现对视觉概念的泛化理解。
 
-## 三、常用多模态嵌入模型(以bge-visualized-m3为例)
+## 三、常用多模态嵌入模型（以 `bge-visualized-m3` 为例）
 
 虽然 CLIP 为图文预训练提供了重要基础，但多模态领域的研究迅速发展，涌现了许多针对不同目标和场景进行优化的模型。例如，BLIP 系列专注于提升细粒度的图文理解与生成能力，而 ALIGN 则证明了利用海量噪声数据进行大规模训练的有效性。
 
-在众多优秀的模型中，由北京智源人工智能研究院（BAAI）开发的 BGE-M3 是一个很有代表性的现代多模态嵌入模型。它在多语言、多功能和多粒度处理上都表现出色，体现了当前技术向“更统一、更全面”发展的趋势。
+在众多优秀的模型中，由北京智源人工智能研究院（BAAI）开发的 `BGE-M3` 是一个很有代表性的现代多模态嵌入模型。它在多语言、多功能和多粒度处理上都表现出色，体现了当前技术向“更统一、更全面”发展的趋势。
 
-BGE-M3 的核心特性可以概括为“M3”：
+`BGE-M3` 的核心特性可以概括为“M3”：
 
 +   多语言性 (Multi-Linguality)：原生支持超过 100 种语言的文本与图像处理，能够轻松实现跨语言的图文检索。
 
@@ -42,70 +41,76 @@ BGE-M3 的核心特性可以概括为“M3”：
 
 +   多粒度性 (Multi-Granularity)：能够有效处理从短句到长达 8192 个 token 的长文档，覆盖了更广泛的应用需求。
 
-在技术架构上，BGE-M3 采用了基于 XLM-RoBERTa 优化的联合编码器，并对视觉处理机制进行了创新。它不同于 CLIP 对整张图进行编码的方式，而是采用**网格嵌入 (Grid-Based Embeddings)**，将图像分割为多个网格单元并独立编码。这种设计显著提升了模型对图像局部细节的捕捉能力，在处理多物体重叠等复杂场景时更具优势。
+在技术架构上，`BGE-M3` 采用了基于 `XLM-RoBERTa` 优化的联合编码器，并对视觉处理机制进行了创新。它不同于 CLIP 对整张图进行编码的方式，而是采用 **网格嵌入 (Grid-Based Embeddings)**，将图像分割为多个网格单元并独立编码。这种设计显著提升了模型对图像局部细节的捕捉能力，在处理多物体重叠等复杂场景时更具优势。
 
-## [四、代码示例](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=%e5%9b%9b%e3%80%81%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b)
+## 四、代码示例
 
-### [4.1 环境准备](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=_41-%e7%8e%af%e5%a2%83%e5%87%86%e5%a4%87)
+### 4.1 环境准备
 
-步骤1：安装 visual_bge 模块
+步骤1：安装 `visual_bge` 模块
 
-```
-# 进入 visual_bge 目录cd code/C3/visual_bge
+```bash
+# 进入 visual_bge 目录
+cd code/C3/visual_bge
 
 # 安装 visual_bge 模块及其依赖
-pip install -e .# 返回上级目录cd ..Copy to clipboardErrorCopied
+pip install -e .
+
+# 返回上级目录
+cd ..
 ```
 
 步骤2：下载模型权重
 
-```
+```bash
 # 运行模型下载脚本
-python download_model.pyCopy to clipboardErrorCopied
+python download_model.py
 ```
 
-模型下载脚本会自动检查 ../../models/bge/ 目录下是否存在模型文件，如果不存在则从 Hugging Face 镜像站下载。
+模型下载脚本会自动检查 `../../models/bge/` 目录下是否存在模型文件，如果不存在则从 Hugging Face 镜像站下载。
 
-### [4.2 基础示例](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=_42-%e5%9f%ba%e7%a1%80%e7%a4%ba%e4%be%8b)
+### 4.2 基础示例
 
-```
+```python
 import os
-os.environ[&quot;HF_ENDPOINT&quot;] = &quot;https://hf-mirror.com&quot;import torch
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+import torch
 from visual_bge.visual_bge.modeling import Visualized_BGE
 
-model = Visualized_BGE(model_name_bge=&quot;BAAI/bge-base-en-v1.5&quot;,
-                      model_weight=&quot;../../models/bge/Visualized_base_en_v1.5.pth&quot;)
-model.eval()with torch.no_grad():
-    text_emb = model.encode(text=&quot;datawhale开源组织的logo&quot;)
-    img_emb_1 = model.encode(image=&quot;../../data/C3/imgs/datawhale01.png&quot;)
-    multi_emb_1 = model.encode(image=&quot;../../data/C3/imgs/datawhale01.png&quot;, text=&quot;datawhale开源组织的logo&quot;)
-    img_emb_2 = model.encode(image=&quot;../../data/C3/imgs/datawhale02.png&quot;)
-    multi_emb_2 = model.encode(image=&quot;../../data/C3/imgs/datawhale02.png&quot;, text=&quot;datawhale开源组织的logo&quot;)# 计算相似度
+model = Visualized_BGE(model_name_bge="BAAI/bge-base-en-v1.5",
+                      model_weight="../../models/bge/Visualized_base_en_v1.5.pth")
+model.eval()
+with torch.no_grad():
+    text_emb = model.encode(text="datawhale开源组织的logo")
+    img_emb_1 = model.encode(image="../../data/C3/imgs/datawhale01.png")
+    multi_emb_1 = model.encode(image="../../data/C3/imgs/datawhale01.png", text="datawhale开源组织的logo")
+    img_emb_2 = model.encode(image="../../data/C3/imgs/datawhale02.png")
+    multi_emb_2 = model.encode(image="../../data/C3/imgs/datawhale02.png", text="datawhale开源组织的logo")
+# 计算相似度
 sim_1 = img_emb_1 @ img_emb_2.T
 sim_2 = img_emb_1 @ multi_emb_1.T
 sim_3 = text_emb @ multi_emb_1.T
 sim_4 = multi_emb_1 @ multi_emb_2.T
 
-print(&quot;=== 相似度计算结果 ===&quot;)print(f&quot;纯图像 vs 纯图像: {sim_1}&quot;)print(f&quot;图文结合1 vs 纯图像: {sim_2}&quot;)print(f&quot;图文结合1 vs 纯文本: {sim_3}&quot;)print(f&quot;图文结合1 vs 图文结合2: {sim_4}&quot;)Copy to clipboardErrorCopied
+print("=== 相似度计算结果 ===")
+print(f"纯图像 vs 纯图像: {sim_1}")
+print(f"图文结合1 vs 纯图像: {sim_2}")
+print(f"图文结合1 vs 纯文本: {sim_3}")
+print(f"图文结合1 vs 图文结合2: {sim_4}")
 ```
 
 代码解读：
 
-+   模型架构: Visualized_BGE 是通过将图像token嵌入集成到BGE文本嵌入框架中构建的通用多模态嵌入模型，具备处理超越纯文本的多模态数据的灵活性。
++   模型架构: `Visualized_BGE` 是通过将图像 token 嵌入集成到 `BGE` 文本嵌入框架中构建的通用多模态嵌入模型，具备处理超越纯文本的多模态数据的灵活性。
 
 +   模型参数:
+    +   `model_name_bge`: 指定底层 `BGE` 文本嵌入模型，继承其强大的文本表示能力。
+    +   `model_weight`: `Visual BGE` 的预训练权重文件，包含视觉编码器参数。
 
-+   model_name_bge: 指定底层BGE文本嵌入模型，继承其强大的文本表示能力。
-
-+   model_weight: Visual BGE的预训练权重文件，包含视觉编码器参数。
-
-+   多模态编码能力: Visual BGE提供了编码多模态数据的多样性，支持纯文本、纯图像或图文组合的格式：
-
-+   纯文本编码: 保持原始BGE模型的强大文本嵌入能力。
-
-+   纯图像编码: 使用基于EVA-CLIP的视觉编码器处理图像。
-
-+   图文联合编码: 将图像和文本特征融合到统一的向量空间。
++   多模态编码能力: `Visual BGE` 提供了编码多模态数据的多样性，支持纯文本、纯图像或图文组合的格式：
+    +   纯文本编码: 保持原始 `BGE` 模型的强大文本嵌入能力。
+    +   纯图像编码: 使用基于 `EVA-CLIP` 的视觉编码器处理图像。
+    +   图文联合编码: 将图像和文本特征融合到统一的向量空间。
 
 +   应用场景: 主要用于混合模态检索任务，包括多模态知识检索、组合图像检索、多模态查询的知识检索等。
 
@@ -118,11 +123,11 @@ print(&quot;=== 相似度计算结果 ===&quot;)print(f&quot;纯图像 vs 纯图
 纯图像 vs 纯图像: tensor([[0.8318]])
 图文结合1 vs 纯图像: tensor([[0.8291]])
 图文结合1 vs 纯文本: tensor([[0.7627]])
-图文结合1 vs 图文结合2: tensor([[0.9058]])Copy to clipboardErrorCopied
+图文结合1 vs 图文结合2: tensor([[0.9058]])
 ```
 
 > [完整代码](https://github.com/datawhalechina/all-in-rag/blob/main/code/C3/01_bge_visualized.py)
 
-## [练习](https://datawhalechina.github.io/all-in-rag/#/chapter3/07_multimodal_embedding?id=%e7%bb%83%e4%b9%a0)
+## 练习
 
-尝试把代码中的部分文本替换一下，比如将datawhale开源组织的logo替换为blue whale看看结果有什么不同。
+尝试把代码中的部分文本替换一下，比如将 `datawhale开源组织的logo` 替换为 `blue whale` 看看结果有什么不同。

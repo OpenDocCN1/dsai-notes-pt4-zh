@@ -1,18 +1,19 @@
+
 # 国内AI绘画设计新纪元——美图MV4.0视觉大模型发布
 
 > 来源：[https://agijuejin.feishu.cn/docx/EKRkdD78MolfApxzowNcBxyEnKh](https://agijuejin.feishu.cn/docx/EKRkdD78MolfApxzowNcBxyEnKh)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/670580216)hihu.com/p/670580...
+> 原文：[https://zhuanlan.zhihu.com/p/670580216](https://zhuanlan.zhihu.com/p/670580216)
 
 在对中国大众的审美把控上，你永远可以相信美图秀秀的眼光。
 
 ![](img/218a1594486e890613e6a013c460ce81.png)
 
-[202](https://www.zhihu.com/search?q=%E7%AB%99%E9%85%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)3年12月5日，在风景如画的厦门，美图公司与 站酷 携手，举办了一场关于“未来AI设计”的盛会。
+2023年12月5日，在风景如画的厦门，美图公司与 站酷 携手，举办了一场关于“未来AI设计”的盛会。
 
-这一场专注于国内的 [设计师 ](https://www.zhihu.com/search?q=%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)群体的发布会，聚焦于设计师生态和未来AI设计趋势，现场发布了《2023年度AI设[计实践报告](https://www.zhihu.com/search?q=%E5%A5%87%E6%83%B3%E6%99%BA%E8%83%BD&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)》，同时，美图公司发布自研AI视觉大模型MiracleVision( 奇想智能 )4.0版本，为设计师们带来了全新的AI设计与AI视频体验。
+这一场专注于国内的 [设计师](https://www.zhihu.com/search?q=%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)群体的发布会，聚焦于设计师生态和未来AI设计趋势，现场发布了《[2023年度AI设计实践报告](https://www.zhihu.com/search?q=%E5%A5%87%E6%83%B3%E6%99%BA%E8%83%BD&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)》，同时，美图公司发布自研AI视觉大模型MiracleVision（奇想智能）4.0版本，为设计师们带来了全新的AI设计与AI视频体验。
 
 ![](img/30c0aa765c4901ee4df4ff65a999b86f.png)
 
@@ -20,7 +21,7 @@
 
 ![](img/a68c997490d798757c5590f00e8b3d22.png)
 
-[首先我来带](https://www.zhihu.com/search?q=%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)大家解读下具有参考意义的 调研报告 。
+[首先我来带大家解读下具有参考意义的调研报告](https://www.zhihu.com/search?q=%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)。
 
 ## 一、2023年度AI设计实践报告
 
@@ -30,7 +31,7 @@
 
 报告显示，虽然AI设计工具在中国的个人普及速度超预期，但仍有3成受访者因付费、操作、效果等问题放弃使用。企业层面普及度较差，仅有8%的企业用上了AI工具。
 
-从行业看，互联网行业对AI设计工具最为热情，其次是利用AI设计[工具助力商](https://www.zhihu.com/search?q=%E7%BE%8E%E5%AE%B9%E7%BE%8E%E5%A6%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)业转化的食品饮料、鞋履服饰、 美容美妆 等行业。目前海外AI工具的使用率远高于国产AI工具，但报告认为，国产AI工具有着巨大的潜力。门槛较低、支持中文、亚洲审美是当下国产AI工具的重要优势。
+从行业看，互联网行业对AI设计工具最为热情，其次是利用AI设计工具助力商业转化的食品饮料、鞋履服饰、美容美妆等行业。目前海外AI工具的使用率远高于国产AI工具，但报告认为，国产AI工具有着巨大的潜力。门槛较低、支持中文、亚洲审美是当下国产AI工具的重要优势。
 
 ### 1.调研基本情况
 
@@ -40,7 +41,7 @@
 
 ### 2.AI设计在中国的普及程度
 
-[**一句话总结**](https://www.zhihu.com/search?q=%E4%BC%A0%E6%92%AD%E9%80%94%E5%BE%84&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)：社媒传播是本次AI设计的主要 传播途径 ，AI设计工具企业应用处于早期，上海、北京、浙江地区使用率高。
+**[一句话总结](https://www.zhihu.com/search?q=%E4%BC%A0%E6%92%AD%E9%80%94%E5%BE%84&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)**：社媒传播是本次AI设计的主要传播途径，AI设计工具企业应用处于早期，上海、北京、浙江地区使用率高。
 
 ![](img/32253ca3e7ecaf6849f6859ac1e9b460.png)
 
@@ -56,7 +57,7 @@
 
 ### 3.大家用AI设计什么
 
-**一**句话总结：插画、概念图片、海报、人像、动漫是AI设计的主要使用场景。目前海外AI工具使用率远高于国产，但是国产AI潜力巨大。
+**一句话总结**：插画、概念图片、海报、人像、动漫是AI设计的主要使用场景。目前海外AI工具使用率远高于国产，但是国产AI潜力巨大。
 
 ![](img/a7fa72ab99e85ab13cca1cb15d0a113d.png)
 
@@ -72,7 +73,7 @@
 
 ### 4.AI设计工具痛点
 
-**一句话总结：精准可控、解决AI生成瑕疵、解决版权争**议是目前AI设计工具亟待解决的三大痛点。
+**一句话总结**：精准可控、解决AI生成瑕疵、解决版权争议是目前AI设计工具亟待解决的三大痛点。
 
 ![](img/73344a7ae6b0b9f50d0956767f093bb0.png)
 
@@ -84,7 +85,7 @@
 
 ### 5.实际案例应用
 
-**一句话总结：产品设计，插画，模特**图片，专辑封面，电商出图都可以快捷生成。
+**一句话总结**：产品设计，插画，模特图片，专辑封面，电商出图都可以快捷生成。
 
 ![](img/594516c4ab532c0ac6be06a8440e245b.png)
 
@@ -98,7 +99,7 @@
 
 ### 6.AI设计未来趋势预测
 
-一句话总结：AI视频即将进入群雄逐鹿时代，国产工具潜力巨大。
+**一句话总结**：AI视频即将进入群雄逐鹿时代，国产工具潜力巨大。
 
 ![](img/d6c143687a9fb50f460dc459a3359301.png)
 
@@ -122,7 +123,7 @@
 
 ![](img/cbda0969268c2712b56c4f8869acaa47.png)
 
-这[个新版本主](https://www.zhihu.com/search?q=%E7%9F%A2%E9%87%8F%E5%9B%BE%E5%BD%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)打AI设计和AI视频，为[设计师们带](https://www.zhihu.com/search?q=%E6%99%BA%E8%83%BD%E6%8E%92%E7%89%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)来了更多的可能性。MiracleVision 4.0新增了 矢量图形 、文字特效、智能分层、 智能排版 四大能力。同时上线全新的视觉模型商店，支持创建个人视觉模型，助力设计师群体实现独特的艺术追求。
+这个新版本主打AI设计和AI视频，为设计师们带来了更多的可能性。MiracleVision 4.0新增了矢量图形、文字特效、智能分层、智能排版四大能力。同时上线全新的视觉模型商店，支持创建个人视觉模型，助力设计师群体实现独特的艺术追求。
 
 在AI视频方面，新增了文生视频、图生视频、视频运镜、视频生视频四大能力。目前，MiracleVision的AI视频能力已能融入行业工作流，尤其是电商和广告行业。
 
@@ -144,13 +145,13 @@
 
 ![](img/1290940be51dd7bafb6c28cffdc14e3c.png)
 
-智能排版功能则通过 [自然语言 ](https://www.zhihu.com/search?q=%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)交互，帮助我轻松实现文字的布局、图像和元素的组合设计。完成后，还可以通过自然语言进行局部修改，并选择多种设计风格，让设计更加多样化。
+智能排版功能则通过自然语言交互，帮助我轻松实现文字的布局、图像和元素的组合设计。完成后，还可以通过自然语言进行局部修改，并选择多种设计风格，让设计更加多样化。
 
 ![](img/02c16ba1494dedcb6491c9d12a17e762.png)
 
 ### 2.视觉模型商店
 
-除了这四大功能外， MiracleVision4.0 还推出[了全新的视觉](https://www.zhihu.com/search?q=%E8%B6%85%E7%8E%B0%E5%AE%9E%E5%B9%BB%E6%83%B3&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)模型商店，提供了丰富多样的视觉效果，从经典复古到现代潮流，从 超现实幻想 到极简抽象，应有尽有。这一创新使得用户可以创造出前所未有的视觉效果，提升了设计的创造力。
+除了这四大功能外，MiracleVision4.0还推出了全新的视觉模型商店，提供了丰富多样的视觉效果，从经典复古到现代潮流，从超现实幻想到极简抽象，应有尽有。这一创新使得用户可以创造出前所未有的视觉效果，提升了设计的创造力。
 
 ![](img/ced89c2874962585f9eb765df4cb759c.png)
 
@@ -160,7 +161,7 @@
 
 ### 3.AI视频功能
 
-[Mir](https://www.zhihu.com/search?q=%E8%A7%86%E9%A2%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)acleVision4.0的AI 视频 能力也是本次让我非常惊喜的部分。前一段Pika的火热让普罗大众也注意到人工智能AI生成视频，最近AI视频领域更是几天一个新软件，美图居然也加入战团。
+MiracleVision4.0的AI视频能力也是本次让我非常惊喜的部分。前一段Pika的火热让普罗大众也注意到人工智能AI生成视频，最近AI视频领域更是几天一个新软件，美图居然也加入战团。
 
 通过文生视频、图生视频、视频运镜和视频生视频四大功能，我可以让图片动起来。
 
@@ -182,7 +183,7 @@
 
 ![](img/758b93524b9f0555e0dbf16a3278f476.png)
 
-[输入提示词](https://www.zhihu.com/search?q=%E9%95%9C%E5%A4%B4%E8%BF%90%E5%8A%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)即可生成一段视频，让图片动起来，轻松模拟专业的 镜头运动 ，演绎更加丰富的镜头语言，以及为视频添加不同的艺术风格。美图展示这些功能为视频创作带来了更多的创意和可能性。
+[输入提示词](https://www.zhihu.com/search?q=%E9%95%9C%E5%A4%B4%E8%BF%90%E5%8A%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)即可生成一段视频，让图片动起来，轻松模拟专业的镜头运动，演绎更加丰富的镜头语言，以及为视频添加不同的艺术风格。美图展示这些功能为视频创作带来了更多的创意和可能性。
 
 ![](img/2d84d690baf926ade552a9ccd15b922b.png)
 
@@ -190,13 +191,15 @@
 
 ![](img/615335c3a7c9c050feba9ebe625195be.png)
 
-[在广告行业](https://www.zhihu.com/search?q=%E5%88%9B%E6%84%8F%E8%A7%86%E9%A2%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)中，可以制作符合产品特性的 创意视频 ，跳出套路，让品牌理念深入人心。
+
+
+[在广告行业](https://www.zhihu.com/search?q=%E5%88%9B%E6%84%8F%E8%A7%86%E9%A2%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)中，可以制作符合产品特性的创意视频，跳出套路，让品牌理念深入人心。
 
 ### 4.美图Whee移动端
 
 ![](img/7e97277c1dd23a55031590cbbb8aba08.png)
 
-最后，美图WHEE还 [上线了 ](https://www.zhihu.com/search?q=%E4%B8%8A%E7%BA%BF%E4%BA%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)移动手机端，这下创作更加方便了！
+最后，美图WHEE还[上线了](https://www.zhihu.com/search?q=%E4%B8%8A%E7%BA%BF%E4%BA%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)移动手机端，这下创作更加方便了！
 
 ## 结语
 
@@ -206,4 +209,4 @@
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3098715893%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是[德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3098715893%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A670580216%7D)绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

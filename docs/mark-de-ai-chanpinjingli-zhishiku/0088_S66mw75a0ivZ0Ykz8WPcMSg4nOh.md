@@ -1,43 +1,29 @@
+
 # 使用FP-growth算法来高效发现频繁项集
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/CV9qdwqosoEApNxCAaTcHJ2LnvK](https://qqs7y1hozd1.feishu.cn/docx/CV9qdwqosoEApNxCAaTcHJ2LnvK)
 
-# **前言**
+## 前言
 
 在前面我们已经介绍了用 Apriori 算法发现 频繁项集 与 关联规则
 
 本章将继续关注发现 频繁项集 这一任务，并使用 FP-growth 算法更有效的挖掘 频繁项集
 
-# **FP-growth 算法简介**
+## FP-growth 算法简介
 
-+   一种非常好的发现频繁项集算法
++ 一种非常好的发现频繁项集算法
 
-+   基于Apriori算法构建,但是数据结构不同，使用叫做 FP树 的数据结构结构来存储集合。下面我们会介绍这种数据结构
++ 基于 Apriori 算法构建,但是数据结构不同，使用叫做 FP树 的数据结构结构来存储集合。下面我们会介绍这种数据结构
 
-# **FP-growth 算法步骤**
+## FP-growth 算法步骤
 
-+   基于数据构建FP树
++ 基于数据构建FP树
 
-+   从FP树种挖掘频繁项集
++ 从FP树种挖掘频繁项集
 
-# **FP树 介绍**
+## FP树 介绍
 
-+   FP树的节点结构如下:
-
-```
-class treeNode:
-    def __init__(self, nameValue, numOccur, parentNode):
-        self.name = nameValue     # 节点名称
-        self.count = numOccur     # 节点出现次数
-        self.nodeLink = None      # 不同项集的相同项通过nodeLink连接在一起
-        # needs to be updated
-        self.parent = parentNode  # 指向父节点
-        self.children = {}        # 存储叶子节点
-```
-
-# **FP-growth 原理**
-
-+   FP树的节点结构如下:
++ FP树的节点结构如下:
 
 ```
 class treeNode:
@@ -50,80 +36,94 @@ class treeNode:
         self.children = {}        # 存储叶子节点
 ```
 
-# **FP-growth 原理**
+## FP-growth 原理
 
-基于数据构建FP树
++ FP树的节点结构如下:
 
-步骤1:
+```
+class treeNode:
+    def __init__(self, nameValue, numOccur, parentNode):
+        self.name = nameValue     # 节点名称
+        self.count = numOccur     # 节点出现次数
+        self.nodeLink = None      # 不同项集的相同项通过nodeLink连接在一起
+        # needs to be updated
+        self.parent = parentNode  # 指向父节点
+        self.children = {}        # 存储叶子节点
+```
 
-1.  遍历所有的数据集合，计算所有项的支持度
+### 基于数据构建 FP树
 
-1.  丢弃非频繁的项
+#### 步骤1
 
-1.  基于 支持度 降序排序所有的项
+1. 遍历所有的数据集合，计算所有项的支持度
+
+1. 丢弃非频繁的项
+
+1. 基于 支持度 降序排序所有的项
 
 ![](img/f61e7f2e90378b2c17ddf97552a27699.png)
 
-1.  所有数据集合按照得到的顺序重新整理
+1. 所有数据集合按照得到的顺序重新整理
 
-1.  重新整理完成后，丢弃每个集合末尾非频繁的项
+1. 重新整理完成后，丢弃每个集合末尾非频繁的项
 
 ![](img/659761da76900ef9690661694f295b8e.png)
 
-步骤2: 6. 读取每个集合插入FP树中，同时用一个头部链表数据结构维护不同集合的相同项
+#### 步骤2
+
+6. 读取每个集合插入FP树中，同时用一个头部链表数据结构维护不同集合的相同项
 
 ![](img/41382a2e151e7c17ac3208252b172ac3.png)
 
 最终得到下面这样一棵FP树
 
+### 从 FP树 中挖掘出频繁项集
 
-从FP树中挖掘出频繁项集
+#### 步骤3
 
-步骤3:
+1. 对头部链表进行降序排序
 
-1.  对头部链表进行降序排序
-
-1.  对头部链表节点从小到大遍历，得到条件模式基，同时获得一个频繁项集
+1. 对头部链表节点从小到大遍历，得到条件模式基，同时获得一个频繁项集
 
 ![](img/f453879e5a42b29d032b7b9cf045353e.png)
 
-如上图，从头部链表 t 节点开始遍历，t 节点加入到频繁项集。找到以 t 节点为结尾的路径如下:
+如上图，从头部链表 `t` 节点开始遍历，`t` 节点加入到频繁项集。找到以 `t` 节点为结尾的路径如下:
 
 ![](img/274def5d72681b95c78cef9a25e3ab07.png)
 
-1.  去掉FP树中的t节点，得到条件模式基<左边路径, 右边是值>[z,x,y,s,t]:2，[z,x,y,r,t]:1 。条件模式基的值取决于末尾节点 t ，因为 t 的出现次数最小，一个频繁项集的支持度由支持度最小的项决定。所以 t 节点的条件模式基的值可以理解为对于以 t 节点为末尾的前缀路径出现次数。
+1. 去掉FP树中的 `t` 节点，得到条件模式基 `<左边路径, 右边是值>` `[z,x,y,s,t]:2`，`[z,x,y,r,t]:1` 。条件模式基的值取决于末尾节点 `t` ，因为 `t` 的出现次数最小，一个频繁项集的支持度由支持度最小的项决定。所以 `t` 节点的条件模式基的值可以理解为对于以 `t` 节点为末尾的前缀路径出现次数。
 
-1.  条件模式基继续构造条件 FP树， 得到频繁项集，和之前的频繁项组合起来，这是一个递归遍历头部链表生成FP树的过程，递归截止条件是生成的FP树的头部链表为空。 根据步骤 2 得到的条件模式基 [z,x,y,s,t]:2，[z,x,y,r,t]:1 作为数据集继续构造出一棵FP树，计算支持度，去除非频繁项，集合按照支持度降序排序，重复上面构造FP树的步骤。最后得到下面 t-条件FP树 :
+1. 条件模式基继续构造条件 FP树 ，得到频繁项集，和之前的频繁项组合起来，这是一个递归遍历头部链表生成 FP树 的过程，递归截止条件是生成的 FP树 的头部链表为空。 根据步骤 2 得到的条件模式基 `[z,x,y,s,t]:2，[z,x,y,r,t]:1` 作为数据集继续构造出一棵 FP树 ，计算支持度，去除非频繁项，集合按照支持度降序排序，重复上面构造 FP树 的步骤。最后得到下面 `t`-条件FP树 :
 
 ![](img/ae4b50a498cfe0bcdbe6cb1e798c39f9.png)
 
-1.  然后根据 t-条件FP树 的头部链表进行遍历，从 y 开始。得到频繁项集 ty 。然后又得到 y 的条件模式基，构造出 ty的条件FP树，即 ty-条件FP树。继续遍历ty-条件FP树的头部链表，得到频繁项集 tyx，然后又得到频繁项集 tyxz. 然后得到构造tyxz-条件FP树的头部链表是空的，终止遍历。我们得到的频繁项集有 t->ty->tyx->tyxz，这只是一小部分。
+1. 然后根据 `t`-条件FP树 的头部链表进行遍历，从 `y` 开始。得到频繁项集 `ty` 。然后又得到 `y` 的条件模式基，构造出 `ty` 的条件 FP树 ，即 `ty`-条件 FP树 。继续遍历 `ty`-条件 FP树 的头部链表，得到频繁项集 `tyx`，然后又得到频繁项集 `tyxz`。 然后得到构造 `tyxz`-条件 FP树 的头部链表是空的，终止遍历。我们得到的频繁项集有 `t`->`ty`->`tyx`->`tyxz`，这只是一小部分。
 
-+   条件模式基:头部链表中的某一点的前缀路径组合就是条件模式基，条件模式基的值取决于末尾节点的值。
++ 条件模式基:头部链表中的某一点的前缀路径组合就是条件模式基，条件模式基的值取决于末尾节点的值。
 
-+   条件FP树:以条件模式基为数据集构造的FP树叫做条件FP树。
++ 条件FP树:以条件模式基为数据集构造的FP树叫做条件FP树。
 
-FP-growth 算法优缺点:
+## FP-growth 算法优缺点
 
-```
-* 优点:  1. 因为 FP-growth 算法只需要对数据集遍历两次，所以速度更快。
-        2. FP树将集合按照支持度降序排序，不同路径如果有相同前缀路径共用存储空间，使得数据得到了压缩。
-        3. 不需要生成候选集。
-        4. 比Apriori更快。
-* 缺点:  1. FP-Tree第二次遍历会存储很多中间过程的值，会占用很多内存。
-        2. 构建FP-Tree是比较昂贵的。
+* 优点: 1. 因为 FP-growth 算法只需要对数据集遍历两次，所以速度更快。
+    2. FP树将集合按照支持度降序排序，不同路径如果有相同前缀路径共用存储空间，使得数据得到了压缩。
+    3. 不需要生成候选集。
+    4. 比 Apriori 更快。
+* 缺点: 1. FP-Tree 第二次遍历会存储很多中间过程的值，会占用很多内存。
+    2. 构建 FP-Tree 是比较昂贵的。
 * 适用数据类型: 标称型数据(离散型数据)。
-```
 
-# **FP-growth 代码讲解**
+## FP-growth 代码讲解
 
 完整代码：
 
-```
+
+
+```python
 #!/usr/bin/python
 # coding:utf8
 
-&#x27;&#x27;&#x27;
+'''
 Created on Jun 14, 2011
 Update  on 2017-05-18
 FP-Growth FP means frequent pattern
@@ -133,7 +133,7 @@ the FP-Growth algorithm needs:
 This finds frequent itemsets similar to apriori but does not find association rules.
 Author: Peter/片刻
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+'''
 from __future__ import print_function
 print(__doc__)
 
@@ -148,27 +148,27 @@ class treeNode:
         self.children = {}
 
     def inc(self, numOccur):
-        &quot;&quot;&quot;inc(对count变量增加给定值)
-        &quot;&quot;&quot;
+        """inc(对count变量增加给定值)
+        """
         self.count += numOccur
 
     def disp(self, ind=1):
-        &quot;&quot;&quot;disp(用于将树以文本形式显示)
+        """disp(用于将树以文本形式显示)
 
-        &quot;&quot;&quot;
-        print(&#x27;  &#x27;*ind, self.name, &#x27; &#x27;, self.count)
+        """
+        print('  '*ind, self.name, ' ', self.count)
         for child in self.children.values():
             child.disp(ind+1)
 
 
 def loadSimpDat():
-    simpDat = [[&#x27;r&#x27;, &#x27;z&#x27;, &#x27;h&#x27;, &#x27;j&#x27;, &#x27;p&#x27;],
-               [&#x27;z&#x27;, &#x27;y&#x27;, &#x27;x&#x27;, &#x27;w&#x27;, &#x27;v&#x27;, &#x27;u&#x27;, &#x27;t&#x27;, &#x27;s&#x27;],
-               [&#x27;z&#x27;],
-               [&#x27;r&#x27;, &#x27;x&#x27;, &#x27;n&#x27;, &#x27;o&#x27;, &#x27;s&#x27;],
-            #    [&#x27;r&#x27;, &#x27;x&#x27;, &#x27;n&#x27;, &#x27;o&#x27;, &#x27;s&#x27;],
-               [&#x27;y&#x27;, &#x27;r&#x27;, &#x27;x&#x27;, &#x27;z&#x27;, &#x27;q&#x27;, &#x27;t&#x27;, &#x27;p&#x27;],
-               [&#x27;y&#x27;, &#x27;z&#x27;, &#x27;x&#x27;, &#x27;e&#x27;, &#x27;q&#x27;, &#x27;s&#x27;, &#x27;t&#x27;, &#x27;m&#x27;]]
+    simpDat = [['r', 'z', 'h', 'j', 'p'],
+               ['z', 'y', 'x', 'w', 'v', 'u', 't', 's'],
+               ['z'],
+               ['r', 'x', 'n', 'o', 's'],
+            #    ['r', 'x', 'n', 'o', 's'],
+               ['y', 'r', 'x', 'z', 'q', 't', 'p'],
+               ['y', 'z', 'x', 'e', 'q', 's', 't', 'm']]
     return simpDat
 
 
@@ -184,7 +184,7 @@ def createInitSet(dataSet):
 
 # this version does not use recursion
 def updateHeader(nodeToTest, targetNode):
-    &quot;&quot;&quot;updateHeader(更新头指针，建立相同元素之间的关系，例如:  左边的r指向右边的r值，就是后出现的相同元素 指向 已经出现的元素)
+    """updateHeader(更新头指针，建立相同元素之间的关系，例如:  左边的r指向右边的r值，就是后出现的相同元素 指向 已经出现的元素)
 
     从头指针的nodeLink开始，一直沿着nodeLink直到到达链表末尾。这就是链表。
     性能: 如果链表很长可能会遇到迭代调用的次数限制。
@@ -192,7 +192,7 @@ def updateHeader(nodeToTest, targetNode):
     Args:
         nodeToTest  满足minSup {所有的元素+(value, treeNode)}
         targetNode  Tree对象的子节点
-    &quot;&quot;&quot;
+    """
     # 建立相同元素之间的关系，例如:  左边的r指向右边的r值
     while (nodeToTest.nodeLink is not None):
         nodeToTest = nodeToTest.nodeLink
@@ -200,7 +200,7 @@ def updateHeader(nodeToTest, targetNode):
 
 
 def updateTree(items, inTree, headerTable, count):
-    &quot;&quot;&quot;updateTree(更新FP-tree，第二次遍历)
+    """updateTree(更新FP-tree，第二次遍历)
 
     # 针对每一行的数据
     # 最大的key,  添加
@@ -209,7 +209,7 @@ def updateTree(items, inTree, headerTable, count):
         inTree      空的Tree对象
         headerTable 满足minSup {所有的元素+(value, treeNode)}
         count       原数据集中每一组Kay出现的次数
-    &quot;&quot;&quot;
+    """
     # 取出 元素 出现次数最高的
     # 如果该元素在 inTree.children 这个字典中，就进行累加
     # 如果该元素不存在 就 inTree.children 字典中新增key，value为初始化的 treeNode 对象
@@ -227,13 +227,13 @@ def updateTree(items, inTree, headerTable, count):
         else:
             # 本质上是修改headerTable的key对应的Tree，的nodeLink值
             updateHeader(headerTable[items[0]][1], inTree.children[items[0]])
-    if len(items) &gt; 1:
+    if len(items) > 1:
         # 递归的调用，在items[0]的基础上，添加item0[1]做子节点， count只要循环的进行累计加和而已，统计出节点的最后的统计值。
         updateTree(items[1:], inTree.children[items[0]], headerTable, count)
 
 
 def createTree(dataSet, minSup=1):
-    &quot;&quot;&quot;createTree(生成FP-tree)
+    """createTree(生成FP-tree)
 
     Args:
         dataSet  dist{行: 出现次数}的样本数据
@@ -241,19 +241,19 @@ def createTree(dataSet, minSup=1):
     Returns:
         retTree  FP-tree
         headerTable 满足minSup {所有的元素+(value, treeNode)}
-    &quot;&quot;&quot;
-    # 支持度&gt;=minSup的dist{所有元素: 出现的次数}
+    """
+    # 支持度>=minSup的dist{所有元素: 出现的次数}
     headerTable = {}
     # 循环 dist{行: 出现次数}的样本数据
     for trans in dataSet:
         # 对所有的行进行循环，得到行里面的所有元素
         # 统计每一行中，每个元素出现的总次数
         for item in trans:
-            # 例如:  {&#x27;ababa&#x27;: 3}  count(a)=3+3+3=9   count(b)=3+3=6
+            # 例如:  {'ababa': 3}  count(a)=3+3+3=9   count(b)=3+3=6
             headerTable[item] = headerTable.get(item, 0) + dataSet[trans]
-    # 删除 headerTable中，元素次数&lt;最小支持度的元素
+    # 删除 headerTable中，元素次数<最小支持度的元素
     for k in headerTable.keys():
-        if headerTable[k] &lt; minSup:
+        if headerTable[k] < minSup:
             del(headerTable[k])
 
     # 满足minSup: set(各元素集合)
@@ -266,23 +266,23 @@ def createTree(dataSet, minSup=1):
         headerTable[k] = [headerTable[k], None]
 
     # create tree
-    retTree = treeNode(&#x27;Null Set&#x27;, 1, None)
+    retTree = treeNode('Null Set', 1, None)
     # 循环 dist{行: 出现次数}的样本数据
     for tranSet, count in dataSet.items():
-        # print &#x27;tranSet, count=&#x27;, tranSet, count
+        # print 'tranSet, count=', tranSet, count
         # localD = dist{元素key: 元素总出现次数}
         localD = {}
         for item in tranSet:
             # 判断是否在满足minSup的集合中
             if item in freqItemSet:
-                # print &#x27;headerTable[item][0]=&#x27;, headerTable[item][0], headerTable[item]
+                # print 'headerTable[item][0]=', headerTable[item][0], headerTable[item]
                 localD[item] = headerTable[item][0]
-        # print &#x27;localD=&#x27;, localD
-        if len(localD) &gt; 0:
+        # print 'localD=', localD
+        if len(localD) > 0:
             # p=key,value; 所以是通过value值的大小，进行从大到小进行排序
             # orderedItems 表示取出元组的key值，也就是字母本身，但是字母本身是大到小的顺序
             orderedItems = [v[0] for v in sorted(localD.items(), key=lambda p: p[1], reverse=True)]
-            # print &#x27;orderedItems=&#x27;, orderedItems, &#x27;headerTable&#x27;, headerTable, &#x27;\n\n\n&#x27;
+            # print 'orderedItems=', orderedItems, 'headerTable', headerTable, '\n\n\n'
             # 填充树，通过有序的orderedItems的第一位，进行顺序填充 第一层的子节点。
             updateTree(orderedItems, retTree, headerTable, count)
 
@@ -290,26 +290,26 @@ def createTree(dataSet, minSup=1):
 
 
 def ascendTree(leafNode, prefixPath):
-    &quot;&quot;&quot;ascendTree(如果存在父节点，就记录当前节点的name值)
+    """ascendTree(如果存在父节点，就记录当前节点的name值)
 
     Args:
         leafNode   查询的节点对于的nodeTree
         prefixPath 要查询的节点值
-    &quot;&quot;&quot;
+    """
     if leafNode.parent is not None:
         prefixPath.append(leafNode.name)
         ascendTree(leafNode.parent, prefixPath)
 
 
 def findPrefixPath(basePat, treeNode):
-    &quot;&quot;&quot;findPrefixPath 基础数据集
+    """findPrefixPath 基础数据集
 
     Args:
         basePat  要查询的节点值
         treeNode 查询的节点所在的当前nodeTree
     Returns:
         condPats 对非basePat的倒叙值作为key,赋值为count数
-    &quot;&quot;&quot;
+    """
     condPats = {}
     # 对 treeNode的link进行循环
     while treeNode is not None:
@@ -317,7 +317,7 @@ def findPrefixPath(basePat, treeNode):
         # 寻找改节点的父节点，相当于找到了该节点的频繁项集
         ascendTree(treeNode, prefixPath)
         # 避免 单独`Z`一个元素，添加了空节点
-        if len(prefixPath) &gt; 1:
+        if len(prefixPath) > 1:
             # 对非basePat的倒叙值作为key,赋值为count数
             # prefixPath[1:] 变frozenset后，字母就变无序了
             # condPats[frozenset(prefixPath)] = treeNode.count
@@ -329,7 +329,7 @@ def findPrefixPath(basePat, treeNode):
 
 
 def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
-    &quot;&quot;&quot;mineTree(创建条件FP树)
+    """mineTree(创建条件FP树)
 
     Args:
         inTree       myFPtree
@@ -337,34 +337,34 @@ def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
         minSup       最小支持项集
         preFix       preFix为newFreqSet上一次的存储记录，一旦没有myHead，就不会更新
         freqItemList 用来存储频繁子项的列表
-    &quot;&quot;&quot;
+    """
     # 通过value进行从小到大的排序， 得到频繁项集的key
     # 最小支持项集的key的list集合
     bigL = [v[0] for v in sorted(headerTable.items(), key=lambda p: p[1])]
-    print(&#x27;-----&#x27;, sorted(headerTable.items(), key=lambda p: p[1]))
-    print(&#x27;bigL=&#x27;, bigL)
+    print('-----', sorted(headerTable.items(), key=lambda p: p[1]))
+    print('bigL=', bigL)
     # 循环遍历 最频繁项集的key，从小到大的递归寻找对应的频繁项集
     for basePat in bigL:
         # preFix为newFreqSet上一次的存储记录，一旦没有myHead，就不会更新
         newFreqSet = preFix.copy()
         newFreqSet.add(basePat)
-        print(&#x27;newFreqSet=&#x27;, newFreqSet, preFix)
+        print('newFreqSet=', newFreqSet, preFix)
 
         freqItemList.append(newFreqSet)
-        print(&#x27;freqItemList=&#x27;, freqItemList)
+        print('freqItemList=', freqItemList)
         condPattBases = findPrefixPath(basePat, headerTable[basePat][1])
-        print(&#x27;condPattBases=&#x27;, basePat, condPattBases)
+        print('condPattBases=', basePat, condPattBases)
 
         # 构建FP-tree
         myCondTree, myHead = createTree(condPattBases, minSup)
-        print(&#x27;myHead=&#x27;, myHead)
+        print('myHead=', myHead)
         # 挖掘条件 FP-tree, 如果myHead不为空，表示满足minSup {所有的元素+(value, treeNode)}
         if myHead is not None:
             myCondTree.disp(1)
-            print(&#x27;\n\n\n&#x27;)
+            print('\n\n\n')
             # 递归 myHead 找出频繁项集
             mineTree(myCondTree, myHead, minSup, newFreqSet, freqItemList)
-        print(&#x27;\n\n\n&#x27;)
+        print('\n\n\n')
 
 
 # import twitter
@@ -373,19 +373,19 @@ def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
 
 
 # def getLotsOfTweets(searchStr):
-#     &quot;&quot;&quot;
+#     """
 #     获取 100个搜索结果页面
-#     &quot;&quot;&quot;
-#     CONSUMER_KEY = &#x27;&#x27;
-#     CONSUMER_SECRET = &#x27;&#x27;
-#     ACCESS_TOKEN_KEY = &#x27;&#x27;
-#     ACCESS_TOKEN_SECRET = &#x27;&#x27;
+#     """
+#     CONSUMER_KEY = ''
+#     CONSUMER_SECRET = ''
+#     ACCESS_TOKEN_KEY = ''
+#     ACCESS_TOKEN_SECRET = ''
 #     api = twitter.Api(consumer_key=CONSUMER_KEY, consumer_secret=CONSUMER_SECRET, access_token_key=ACCESS_TOKEN_KEY, access_token_secret=ACCESS_TOKEN_SECRET)
 
 #     # you can get 1500 results 15 pages * 100 per page
 #     resultsPages = []
 #     for i in range(1, 15):
-#         print &quot;fetching page %d&quot; % i
+#         print "fetching page %d" % i
 #         searchResults = api.GetSearch(searchStr, per_page=100, page=i)
 #         resultsPages.append(searchResults)
 #         sleep(6)
@@ -393,18 +393,18 @@ def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
 
 
 # def textParse(bigString):
-#     &quot;&quot;&quot;
+#     """
 #     解析页面内容
-#     &quot;&quot;&quot;
-#     urlsRemoved = re.sub(&#x27;(http:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/.]|[~])*&#x27;, &#x27;&#x27;, bigString)    
-#     listOfTokens = re.split(r&#x27;\W*&#x27;, urlsRemoved)
-#     return [tok.lower() for tok in listOfTokens if len(tok) &gt; 2]
+#     """
+#     urlsRemoved = re.sub('(http:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/.]|[~])*', '', bigString)    
+#     listOfTokens = re.split(r'\W*', urlsRemoved)
+#     return [tok.lower() for tok in listOfTokens if len(tok) > 2]
 
 
 # def mineTweets(tweetArr, minSup=5):
-#     &quot;&quot;&quot;
+#     """
 #     获取频繁项集
-#     &quot;&quot;&quot;
+#     """
 #     parsedList = []
 #     for i in range(14):
 #         for j in range(100):
@@ -416,16 +416,16 @@ def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
 #     return myFreqList
 
 
-if __name__ == &quot;__main__&quot;:
-    # rootNode = treeNode(&#x27;pyramid&#x27;, 9, None)
-    # rootNode.children[&#x27;eye&#x27;] = treeNode(&#x27;eye&#x27;, 13, None)
-    # rootNode.children[&#x27;phoenix&#x27;] = treeNode(&#x27;phoenix&#x27;, 3, None)
+if __name__ == "__main__":
+    # rootNode = treeNode('pyramid', 9, None)
+    # rootNode.children['eye'] = treeNode('eye', 13, None)
+    # rootNode.children['phoenix'] = treeNode('phoenix', 3, None)
     # # 将树以文本形式显示
     # # print rootNode.disp()
 
     # load样本数据
     simpDat = loadSimpDat()
-    # print simpDat, &#x27;\n&#x27;
+    # print simpDat, '\n'
     # frozen set 格式化 并 重新装载 样本数据，对所有的行进行统计求和，格式: {行: 出现次数}
     initSet = createInitSet(simpDat)
     print(initSet)
@@ -438,9 +438,9 @@ if __name__ == &quot;__main__&quot;:
 
     # 抽取条件模式基
     # 查询树节点的，频繁子项
-    print(&#x27;x ---&gt;&#x27;, findPrefixPath(&#x27;x&#x27;, myHeaderTab[&#x27;x&#x27;][1]))
-    print(&#x27;z ---&gt;&#x27;, findPrefixPath(&#x27;z&#x27;, myHeaderTab[&#x27;z&#x27;][1]))
-    print(&#x27;r ---&gt;&#x27;, findPrefixPath(&#x27;r&#x27;, myHeaderTab[&#x27;r&#x27;][1]))
+    print('x --->', findPrefixPath('x', myHeaderTab['x'][1]))
+    print('z --->', findPrefixPath('z', myHeaderTab['z'][1]))
+    print('r --->', findPrefixPath('r', myHeaderTab['r'][1]))
 
     # 创建条件模式基
     freqItemList = []
@@ -450,14 +450,14 @@ if __name__ == &quot;__main__&quot;:
     # # 项目实战
     # # 1.twitter项目案例
     # # 无法运行，因为没发链接twitter
-    # lotsOtweets = getLotsOfTweets(&#x27;RIMM&#x27;)
+    # lotsOtweets = getLotsOfTweets('RIMM')
     # listOfTerms = mineTweets(lotsOtweets, 20)
     # print len(listOfTerms)
     # for t in listOfTerms:
     #     print t
 
     # # 2.新闻网站点击流中挖掘，例如: 文章1阅读过的人，还阅读过什么？
-    # parsedDat = [line.split() for line in open(&#x27;data/12.FPGrowth/kosarak.dat&#x27;).readlines()]
+    # parsedDat = [line.split() for line in open('data/12.FPGrowth/kosarak.dat').readlines()]
     # initSet = createInitSet(parsedDat)
     # myFPtree, myHeaderTab = createTree(initSet, 100000)
 
@@ -466,7 +466,9 @@ if __name__ == &quot;__main__&quot;:
     # print myFreList
 ```
 
-**main 方法大致步骤:**
+
+
+## `main` 方法大致步骤:
 
 ```
 if __name__ == &quot;__main__&quot;:

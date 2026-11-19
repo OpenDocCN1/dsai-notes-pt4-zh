@@ -1,10 +1,11 @@
+
 # Qwen-3本地部署与调用详解（下）
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/Ed1ldsK4qo2nV0xLMdwcgm8InYb](https://kq4b3vgg5b.feishu.cn/docx/Ed1ldsK4qo2nV0xLMdwcgm8InYb)
 
-## 课程说明：
+## 课程说明
 
-+   体验课内容节选自《2025大模型Agent智能体开发实战》(5月班)完整版付费课程
++ 体验课内容节选自《2025大模型Agent智能体开发实战》(5月班)完整版付费课程
 
 体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》(5月班)
 
@@ -20,74 +21,72 @@
 
 ---
 
-部分项目成果演示
+## 部分项目成果演示
 
 ```
 from IPython.display import Video
 ```
 
-+   **MateGen项目演示**
++ `MateGen` 项目演示
 
 ```
-Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/4.MateGen%20Pro%20%E9%A1%B9%E7%9B%AE%E5%8A%9F%E8%83%BD%E6%BC%94%E7%A4%BA.mp4&quot;, width=800, height=400)
-```
-
-Your browser does not support the video element.
-
-+   **智能客服项目演示**
-
-```
-Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/%E6%99%BA%E8%83%BD%E5%AE%A2%E6%9C%8D%E6%A1%88%E4%BE%8B%E6%BC%94%E7%A4%BA.mp4&quot;, width=800, height=400)
+Video("https://ml2022.oss-cn-hangzhou.aliyuncs.com/4.MateGen%20Pro%20%E9%A1%B9%E7%9B%AE%E5%8A%9F%E8%83%BD%E6%BC%94%E7%A4%BA.mp4", width=800, height=400)
 ```
 
 Your browser does not support the video element.
 
-+   **Dify项目演示**
++ `智能客服` 项目演示
 
 ```
-Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/2f1b47f42c65fd59e8d3a83e6cb9f13b_raw.mp4&quot;, width=800, height=400)
+Video("https://ml2022.oss-cn-hangzhou.aliyuncs.com/%E6%99%BA%E8%83%BD%E5%AE%A2%E6%9C%8D%E6%A1%88%E4%BE%8B%E6%BC%94%E7%A4%BA.mp4", width=800, height=400)
 ```
 
 Your browser does not support the video element.
 
-+   LangChain&LangGraph搭建Multi-Agnet
++ `Dify` 项目演示
 
 ```
-Video(&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90Multi-Agent%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA%E6%95%88%E6%9E%9C.mp4&quot;, width=800, height=400)
+Video("https://ml2022.oss-cn-hangzhou.aliyuncs.com/2f1b47f42c65fd59e8d3a83e6cb9f13b_raw.mp4", width=800, height=400)
+```
+
+Your browser does not support the video element.
+
++ `LangChain&LangGraph` 搭建 `Multi-Agnet`
+
+```
+Video("https://ml2022.oss-cn-hangzhou.aliyuncs.com/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90Multi-Agent%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA%E6%95%88%E6%9E%9C.mp4", width=800, height=400)
 ```
 
 Your browser does not support the video element.
 
 ---
 
-# Qwen-3本地部署与调用详解（下）
+## 3. ollama API本地调用Qwen3
 
-### 3. ollama API本地调用Qwen3
+在部署完`ollama`之后，即可借助`ollama API`（也就是`OpenAI`风格`API`）在代码环境中调用模型。
 
-在部署完ollama之后，即可借助ollama API（也就是OpenAI风格API）在代码环境中调用模型。
-
-+   导入OpenAI库及实例化OpenAI客户端
++ 导入`OpenAI`库及实例化`OpenAI`客户端
 
 ```
 from openai import OpenAI
 
 client = OpenAI(
-    base_url=&#x27;http://192.168.110.131:11434/v1/&#x27;,
-    api_key=&#x27;ollama&#x27;,  # 必须传递该参数
+    base_url='http://192.168.110.131:11434/v1/',
+    api_key='ollama',  # 必须传递该参数
 )
 
-prompt = &quot;在单词\&quot;strawberry\&quot;中，总共有几个R？&quot;
+prompt = "在单词\"strawberry\"中，总共有几个R？"
 messages = [
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+    {"role": "user", "content": prompt}
 ]
 ```
 
-+   创建消息并获得回复
++ 创建消息并获得回复
 
 ```
 response = client.chat.completions.create(
     messages=messages,
-    model=&#x27;qwen3:14b&#x27;,
+    model='qwen3:14b',
 )
 
 print(response.choices[0].message.content)
@@ -155,13 +154,13 @@ y → 不是
 
 “strawberry”正确的拼写是：s-t-r-a-w-b-e-r-r-y？还是s-t-r-a-w-b-e-r-y？
 
-这时候，我需要确认“strawberry”是否正确拼写为有三个r还是两个r。因为“berry”通常有两个r，对吗？比如“berry”是b-e-r-r-y，所以有两个r。那加上“straw”中的一个r（在s-t-r-a-w），所以总共有三个r？或者是不是这样？
+这时候，我需要确认“strawberry”是否正确拼写为有三个r还是两个r。因为“berry”通常有两个r，对吗？比如“berry”是b-e-r-r-y，所以有两个r。那加上“straw”中的一个r（在s-t-r-a-w），所以总共有三个r？或者不是这样？
 
 例如，如果整个单词是s-t-r-a-w-b-e-r-r-y，那么就是三个r？或者是不是s-t-r-a-w-b-e-r-y，只有两个r？
 
 这时候，我需要确认正确的英文拼写。这时候，我应该回忆或者查找正确的拼写。不过，可能有时候在记忆中会混淆，所以需要确认。
 
-举个例子，比如“strawberry”这个单词的正确拼写。例如，“strawberry”在词典中的拼写是s-t-r-a-w-b-e-r-r-y，对吗？也就是说，中间的部分是s-t-r-a-w-b-e-r-r-y，所以确实有三个r？或者是不是b-e-r-r-y，也就是两个r？
+举个例子，比如“strawberry”这个单词的正确拼写。例如，“strawberry”在词典中的拼写是s-t-r-a-w-b-e-r-r-y，对吗？也就是说，中间的部分是s-t-r-a-w-b-e-r-r-y，所以确实有三个r？或者不是b-e-r-r-y，也就是两个r？
 
 此时，我可能需要更仔细地分析。比如，分解单词：
 
@@ -217,13 +216,13 @@ s (1), t (2), r (3), a (4), w (5), b (6), e (7), r (8), r (9), y (10)
 
 因此，正确的答案应该是三个r。
 
-不过，可能有些人会错误地认为“berry”只有两个r，但实际上“berry”是三个r？不，不，实际上“berry”是两个r。因为“berry”是b-e-r-r-y，所以是两个r。
+不过，可能有些学习者会错误地认为“berry”只有两个r，但实际上“berry”是三个r？不，不，实际上“berry”是两个r。因为“berry”是b-e-r-r-y，所以是两个r。
 
 所以，如果这样的话，整个单词“strawberry”中的r数目应该是1（来自straw） + 2（来自berry） = 3个r。对吗？是的。
 
 因此，正确的答案应该是三个。
 
-但可能有些学习者会错误地在拼写时重复r两次，导致错误地认为有三个r？或者是否正确拼写？
+但可能有些人会错误地在拼写时重复r两次，导致错误地认为有三个r？或者是否正确拼写？
 
 这个时候，我需要查阅一下或者回忆正确的拼写。
 
@@ -278,18 +277,18 @@ s (1), t (2), r (3), a (4), w (5), b (6), e (7), r (8), r (9), y (10)
 **3**
 ```
 
-因为Qwen3刚刚发布，所以Ollama目前还不支持在API调用时通过enable_thinking参数禁用思考过程，这里有一种策略是先用/no_think 提示不要进入思考过程。如下所示：
+因为`Qwen3`刚刚发布，所以`Ollama`目前还不支持在`API`调用时通过`enable_thinking`参数禁用思考过程，这里有一种策略是先用`/no_think`提示不要进入思考过程。如下所示：
 
 ```
-prompt = &quot;/no_think 在单词\&quot;strawberry\&quot;中，总共有几个R？&quot;
+prompt = "/no_think 在单词\"strawberry\"中，总共有几个R？"
 messages = [
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+    {"role": "user", "content": prompt}
 ]
 
 
 response = client.chat.completions.create(
     messages=messages,
-    model=&#x27;qwen3:14b&#x27;,
+    model='qwen3:14b',
 )
 
 print(response.choices[0].message.content)
@@ -300,7 +299,7 @@ print(response.choices[0].message.content)
 
 &lt;/think&gt;
 
-我们来一步一步分析单词 **&quot;strawberry&quot;** 中的字母 **R** 的数量。
+我们来一步一步分析单词 **"strawberry"** 中的字母 **R** 的数量。
 
 ---
 
@@ -322,7 +321,7 @@ print(response.choices[0].message.content)
 ---
 
 ### 最终答案：
-**&quot;strawberry&quot;** 中有 **3** 个 **R**。
+**"strawberry"** 中有 **3** 个 **R**。
 ```
 
 而此时显存占用约22G左右（14B Q4量化模型）：
@@ -331,87 +330,89 @@ print(response.choices[0].message.content)
 
 ## 四、Qwen3模型接入vLLM与推理流程
 
-接下来继续介绍Qwen3-14B模型借助vLLM进行推理的完整流程。相比ollama，vLLM更加适合企业级高并发应用场景，但对应的，显存占用也会更高，vLLM项目主页：https://github.com/vllm-project/vllmVllm 底层是基于Pytorch 构建，其Gtihub 开源地址为：https://github.com/vllm-project/vllm
+接下来继续介绍`Qwen3-14B`模型借助`vLLM`进行推理的完整流程。相比`ollama`，`vLLM`更加适合企业级高并发应用场景，但对应的，显存占用也会更高，`vLLM`项目主页：https://github.com/vllm-project/vllm`Vllm`底层是基于`Pytorch`构建，其`Github`开源地址为：https://github.com/vllm-project/vllm
 
 ![](img/175c4a9560c287eba145dfc0ec7fd4ce.png)
 
-从各种基准测试数据来看，同等配置下，使用 vLLM 框架与 Transformer 等传统推理库相比，其吞吐量可以提高一个数量级，这归功于以下几个特性：
+从各种基准测试数据来看，同等配置下，使用`vLLM`框架与`Transformer`等传统推理库相比，其吞吐量可以提高一个数量级，这归功于以下几个特性：
 
-+   **高级 GPU 优化**：利用 CUDA 和 PyTorch 最大限度地提高 GPU 利用率，从而实现更快的推理速度。Ollama其实是对CPU-GPU的混合应用，但vllm是针对纯GPU的优化。
++ **高级GPU优化**：利用`CUDA`和`PyTorch`最大限度地提高`GPU`利用率，从而实现更快的推理速度。`Ollama`其实是对`CPU-GPU`的混合应用，但`vllm`是针对纯`GPU`的优化。
 
-+   **高级内存管理**：通过PagedAttention算法实现对 KV cache的高效管理，减少内存浪费，从而优化大模型的运行效率。
++ **高级内存管理**：通过`PagedAttention`算法实现对`KV cache`的高效管理，减少内存浪费，从而优化大模型的运行效率。
 
-+   **批处理功能**：支持连续批处理和异步处理，从而提高多个并发请求的吞吐量。
++ **批处理功能**：支持连续批处理和异步处理，从而提高多个并发请求的吞吐量。
 
-+   **安全特性**：内置 API 密钥支持和适当的请求验证，不像其他完全跳过身份验证的框架。
++ **安全特性**：内置`API`密钥支持和适当的请求验证，不像其他完全跳过身份验证的框架。
 
-+   **易用性**：vLLM 与 HuggingFace 模型无缝集成，支持多种流行的大型语言模型，并兼容 OpenAI 的 API 服务器。
++ **易用性**：`vLLM`与`HuggingFace`模型无缝集成，支持多种流行的大型语言模型，并兼容`OpenAI`的`API`服务器。
 
 ### 4.1 vLLM安装与启动
 
-使用vllm框架部署Qwen3模型，同样需要先安装Python运行环境，这里我们可以复用之前安装的Anaconda环境，具体执行命令如下：
+使用`vllm`框架部署`Qwen3`模型，同样需要先安装`Python`运行环境，这里我们可以复用之前安装的`Anaconda`环境，具体执行命令如下：
 
 ```
     conda activate qwen3
 ```
 
-注意：vllm官方要求的是Python 3.9 ~ Python 3.12 之间的版本，所以如果Anaconda环境版本不在此范围内，请务必重新创建符合要求的Anaconda环境。
+注意：`vllm`官方要求的是`Python 3.9` ~ `Python 3.12`之间的版本，所以如果`Anaconda`环境版本不在此范围内，请务必重新创建符合要求的`Anaconda`环境。
+
+
 
 ![](img/ad9a9dfa59d35086fbe7b6047b706c0d.png)
 
-然后，安装vLLM框架，具体执行命令如下：
+然后，安装`vLLM`框架，具体执行命令如下：
 
 ```
-    pip install vllm
+pip install vllm
 ```
 
 ![](img/ca3ae9520f1f55ca3cbca943703a0a1b.png)
 
-此时耐心等待安装完成即可。待安装完成后，可以使用pip show vllm 命令查看vllm 框架的安装信息，可以明确看到当前安装的vllm 版本号。如下图所示：
+此时耐心等待安装完成即可。待安装完成后，可以使用`pip show vllm`命令查看`vllm`框架的安装信息，可以明确看到当前安装的`vllm`版本号。如下图所示：
 
 ![](img/e6a1371df22462488dc448e466e2a024.png)
 
-目前vLLM已支持Qwen3模型调用，可以在模型支持列表中查看模型关键字：https://docs.vllm.ai/en/latest/models/supported_models.html
+目前`vLLM`已支持`Qwen3`模型调用，可以在模型支持列表中查看模型关键字：https://docs.vllm.ai/en/latest/models/supported_models.html
 
 ![](img/71e2035141457a3cc87b394eccda2bbe.png)
 
 接下来即可按照如下流程进行调用。
 
-### 4.2 OpenAI风格API响应模式
+## 4.2 OpenAI风格API响应模式
 
 需要注意的是，随着模型上下文越长，所需要占用的显存也越大。根据测试，14B模型在32K上下文时，运行需要约30G显存。实际运行命令类似如下形式：
 
 ```
-    vllm serve Qwen3-8B --max-model-len 32768 --host 192.168.110.131 --port 8000
+vllm serve Qwen3-8B --max-model-len 32768 --host 192.168.110.131 --port 8000
 ```
 
 ![](img/90c2d9c0faa46eef1d68afc7b7aba6ad.png)
 
-启动vLLM时候需要谨慎的设置最大上下文和对应的运行GPU数量。
+启动`vLLM`时候需要谨慎的设置最大上下文和对应的运行GPU数量。
 
 +   单GPU运行命令
 
 ```
-    cd /root/autodl-tmp
-    vllm serve ./qwen3-8B --max-model-len 32768
+cd /root/autodl-tmp
+vllm serve ./qwen3-8B --max-model-len 32768
 ```
 
 +   双GPU运行命令
 
 ```
-    cd /root/autodl-tmp
-    CUDA_VISIBLE_DEVICES=0,1 vllm serve ./qwen3-8B --tensor-parallel-size 2
+cd /root/autodl-tmp
+CUDA_VISIBLE_DEVICES=0,1 vllm serve ./qwen3-8B --tensor-parallel-size 2
 ```
 
-启动成功后，即可在Jupyter中进行调用。
+启动成功后，即可在`Jupyter`中进行调用。
 
-+   导入OpenAI库并实例化OpenAI客户端
++   导入`OpenAI`库并实例化`OpenAI`客户端
 
 ```
 from openai import OpenAI
 
-openai_api_key = &quot;EMPTY&quot;
-openai_api_base = &quot;http://192.168.110.131:8000/v1&quot;
+openai_api_key = "EMPTY"
+openai_api_base = "http://192.168.110.131:8000/v1"
 
 client = OpenAI(
     api_key=openai_api_key,
@@ -422,15 +423,15 @@ client = OpenAI(
 +   创建消息获得回复
 
 ```
-prompt = &quot;在单词\&quot;strawberry\&quot;中，总共有几个R？&quot;
+prompt = "在单词\"strawberry\"中，总共有几个R？"
 messages = [
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+    {"role": "user", "content": prompt}
 ]
 ```
 
 ```
 response = client.chat.completions.create(
-    model=&quot;Qwen3:8B&quot;,
+    model="Qwen3:8B",
     messages=messages,
 )
 
@@ -438,7 +439,7 @@ print(response.choices[0].message.content)
 ```
 
 ```
-&lt;think&gt;
+<think>
 嗯，用户问的是在单词“strawberry”中有几个字母R。首先，我需要确认单词的正确拼写，可能有时候会有拼写错误或者变体，但“strawberry”应该是正确的拼写。
 
 接下来，我应该把单词分解开来，逐个字母检查。先写下单词：S-T-R-A-W-B-E-R-R-Y。或者可能我记错了，应该再仔细拼一遍。S-T-R-A-W-B-E-R-R-Y？或者是不是中间有其他字母？比如，strawberry的正确拼写是S-T-R-A-W-B-E-R-R-Y，对吗？是的，没错，正确的拼写是S-T-R-A-W-B-E-R-R-Y，也就是“strawberry”。
@@ -479,30 +480,30 @@ Y - 不是
 或者可能用户的问题有其他陷阱？比如，是否在单词中有其他R？或者是否在拼写中存在错误？
 
 比如，strawberry的正确拼写是S-T-R-A-W-B-E-R-R-Y，对吗？是的。所以R的位置是第三个、第八个和第九个字母，也就是三个R。因此，正确的答案应该是3个R。
-&lt;/think&gt;
+</think>
+```
 
-在单词 &quot;strawberry&quot; 中，字母 **R** 出现了 **3 次**。具体位置如下：
+在单词`"strawberry"`中，字母`R`出现了 **3 次**。具体位置如下：
 
-1. 第3个字母：**R**（strawberry → S-T-R-A-W-B-E-R-R-Y）  
-2. 第8个字母：**R**  
-3. 第9个字母：**R**  
+1. 第3个字母：`R`（strawberry → S-T-R-A-W-B-E-R-R-Y）  
+2. 第8个字母：`R`  
+3. 第9个字母：`R`  
 
 因此，总共有 **3 个 R**。
-```
 
 ![](img/4912db1dc93ea2a6ce79da6cba738475.png)
 
 ## 五、基于llama.cpp的Qwen3模型CPU推理
 
-Qwen3系列模型目前也是可以使用llama.cpp进行纯CPU推理或者CPU+GPU混合推理的。接下来介绍如何使用llama.cpp调用模型权重进行推理和对话。
+Qwen3系列模型目前也是可以使用`llama.cpp`进行纯CPU推理或者CPU+GPU混合推理的。接下来介绍如何使用`llama.cpp`调用模型权重进行推理和对话。
 
 ### 1. llama.cpp下载与编译
 
-+   llama.cpp项目主页：https://github.com/ggml-org/llama.cpp
++   `llama.cpp`项目主页：https://github.com/ggml-org/llama.cpp
 
 ![](img/ef5f96fd3280cfb041f8ee376cfbc15a.png)
 
-由于llama.cpp是个C语言项目，因此实际调用过程需要先构建项目，然后设置参数进行编译，然后最终创建可执行文件（类似于脚本），再运行本地大模型。借助llama.cpp可以实现纯CPU推理、纯GPU推理和CPU+GPU混合推理。
+由于`llama.cpp`是个C语言项目，因此实际调用过程需要先构建项目，然后设置参数进行编译，然后最终创建可执行文件（类似于脚本），再运行本地大模型。借助`llama.cpp`可以实现纯CPU推理、纯GPU推理和CPU+GPU混合推理。
 
 +   依赖下载
 
@@ -515,32 +516,32 @@ apt-get install build-essential cmake curl libcurl4-openssl-dev -y
 
 这条命令安装了一些常用的构建和开发工具，具体的每个部分的含义如下：
 
-+   **build-essential**：安装一组构建必需的工具和库，包括：
++   `build-essential`：安装一组构建必需的工具和库，包括：
 
-+   编译器（如 GCC）
++   编译器（如`GCC`）
 
-+   make 工具
++   `make` 工具
 
 +   其他一些常见的构建工具，确保你的系统能进行编译。
 
-+   **cmake**：安装 **CMake** 工具，它是一个跨平台的构建系统，允许你管理项目的编译过程。
++   `cmake`：安装`CMake`工具，它是一个跨平台的构建系统，允许你管理项目的编译过程。
 
-+   **curl**：安装 **cURL** 工具，它是一个命令行工具，用于通过 URL 发送和接收数据。它在很多开发场景中都很有用，尤其是与网络交互时。
++   `curl`：安装`cURL`工具，它是一个命令行工具，用于通过 URL 发送和接收数据。它在很多开发场景中都很有用，尤其是与网络交互时。
 
-+   libc**url4-op**enssl-dev：安装 libcurl 库的开发版本。它是 cU**RL 的一个库**文件，允许你在编程中通过 cURL 发送 HTTP 请求。libcurl4-openssl-dev 是与 OpenSSL 配合使用的版本，提供了 SSL/TLS 加密支持，用于安全的 HTTP 请求。
++   `libcurl4-openssl-dev`：安装 libcurl 库的开发版本。它是`cURL`的一个库文件，允许你在编程中通过`cURL`发送 HTTP 请求。`libcurl4-openssl-dev` 是与 OpenSSL 配合使用的版本，提供了 SSL/TLS 加密支持，用于安全的 HTTP 请求。
 
-+   llama.cpp源码下载
++   `llama.cpp`源码下载
 
 若是AutoDL服务器，可以先开启学术加速：
 
 ```
-    source /etc/network_turbo
+source /etc/network_turbo
 ```
 
 如果是其他服务器或者本地服务器，则可以直接进行源码下载：
 
 ```
- git clone https://github.com/ggerganov/llama.cpp
+git clone https://github.com/ggerganov/llama.cpp
 ```
 
 也可以直接在课件网盘中找到代码文件，直接上传服务器并解压缩：
@@ -549,7 +550,7 @@ apt-get install build-essential cmake curl libcurl4-openssl-dev -y
 
 ![](img/7d5c5575ca7f9c778134a18a0aa183e2.png)
 
-准备好后，即可在服务器中看到llama.cpp项目文件夹：
+准备好后，即可在服务器中看到`llama.cpp`项目文件夹：
 
 ![](img/59048bde205c5fdd148005b408f732e1.png)
 
@@ -562,55 +563,55 @@ cmake llama.cpp -B llama.cpp/build \
     -DBUILD_SHARED_LIBS=OFF -DGGML_CUDA=ON -DLLAMA_CURL=ON
 ```
 
-+   **cmake**：运行 CMake 工具，用于配置和生成构建文件。
++   `cmake`：运行 CMake 工具，用于配置和生成构建文件。
 
-+   **llama.cpp**：指定项目的源代码所在的目录。在这个例子中，llama.cpp 是项目的根目录。
++   `llama.cpp`：指定项目的源代码所在的目录。在这个例子中，`llama.cpp` 是项目的根目录。
 
-+   -B llama.cpp/build：指**定生成构**建文件的目录。-B 参数表示构建目录，llama.cpp/build 是生成的构建目录。这是 CMake 将生成的文件存放的地方（例如 Makefile 或 Ninja 构建文件）。
++   `-B llama.cpp/build`：指定生成构建文件的目录。`-B` 参数表示构建目录，`llama.cpp/build` 是生成的构建目录。这是 CMake 将生成的文件存放的地方（例如 Makefile 或 Ninja 构建文件）。
 
 +   同时还指定了一些编译选项：
 
-+   **禁用共享库**（-DBUI**LD_**SHARED_LIBS=OFF），生成 静态库。
++   禁用共享库（`-DBUILD_SHARED_LIBS=OFF`），生成静态库。
 
-+   **启用 CUDA 支持**（-DGGML_CUDA=ON），以便在有 GPU 的情况下使用 GPU 加速。
++   启用 CUDA 支持（`-DGGML_CUDA=ON`），以便在有 GPU 的情况下使用 GPU 加速。
 
-+   **启用 CURL 库支持**（-DLLAMA_CURL=ON），以便支持网络请求。
++   启用 CURL 库支持（`-DLLAMA_CURL=ON`），以便支持网络请求。
 
 ![](img/d6f54e70cbbebd25260d3c7538f5d4f4.png)
 
 然后需要进一步进行编译：
 
 ```
-  cmake --build llama.cpp/build --config Release -j --clean-first --target llama-quantize llama-cli llama-gguf-split
+cmake --build llama.cpp/build --config Release -j --clean-first --target llama-quantize llama-cli llama-gguf-split
 ```
 
-+   --build llama.cpp/build：告诉 CMake 使用 llama.cpp/build 目录中的构建文件来执行构建过程。这个目录是在之前运行 cmake llama.cpp -B llama.cpp/build 命令时生成的，包含了所有构建所需的文件（例如 Makefile 或 Ninja 构建文件）。
++   `--build llama.cpp/build`：告诉 CMake 使用 `llama.cpp/build` 目录中的构建文件来执行构建过程。这个目录是在之前运行 `cmake llama.cpp -B llama.cpp/build` 命令时生成的，包含了所有构建所需的文件（例如 Makefile 或 Ninja 构建文件）。
 
-+   --config R**elease：**指定构建的配置为 Release 配置。
++   `--config Release`：指定构建的配置为 `Release` 配置。
 
-+   **Release** 配置通常意味着启用更多的 **优化**，生成的程序运行速度较快，适合发布。
++   `Release` 配置通常意味着启用更多的 **优化**，生成的程序运行速度较快，适合发布。
 
 +   在 CMake 中，通常有两种常见的构建配置：
 
-+   **Debug**：用于调试版本，包含调试信息且没有做过多优化。
++   `Debug`：用于调试版本，包含调试信息且没有做过多优化。
 
-+   **Release**：优化后的发布版本，去除调试信息，运行时性能更高。
++   `Release`：优化后的发布版本，去除调试信息，运行时性能更高。
 
-+   **-j**：表示并行构建，允许 CMake 使用多个 CPU 核心来加速构建过程。
++   `-j`：表示并行构建，允许 CMake 使用多个 CPU 核心来加速构建过程。
 
-+   如果没有指定数字，CMake 会使用默认的并行级别，通常是可用的所有 CPU 核心。你也可以指定并行的作业数，例如 -j 8 表示使用 8 个并行作业进行编译。
++   如果没有指定数字，CMake 会使用默认的并行级别，通常是可用的所有 CPU 核心。你也可以指定并行的作业数，例如 `-j 8` 表示使用 8 个并行作业进行编译。
 
-+   **--clean-first**：表示在构建之前先清理掉之前的构建结果。这可以确保每次构建时都是从一个干净的状态开始，避免由于缓存或中间文件引起的编译错误。
++   `--clean-first`：表示在构建之前先清理掉之前的构建结果。这可以确保每次构建时都是从一个干净的状态开始，避免由于缓存或中间文件引起的编译错误。
 
 +   如果你之前运行过构建并且有问题，或者希望重新构建而不使用任何缓存文件，这个选项非常有用。
 
-+   **--target**：指定构建的目标（target）。通常，一个项目会定义多个目标（比如库、可执行文件等），通过这个参数可以告诉 CMake 只编译特定的目标。
++   `--target`：指定构建的目标（target）。通常，一个项目会定义多个目标（比如库、可执行文件等），通过这个参数可以告诉 CMake 只编译特定的目标。
 
-+   **llama-quantize**：可能是与模型量化相关的目标。量化（quantization）是将模型的精度从浮点数降低到整数，从而减少内存占用和提高推理速度。
++   `llama-quantize`：可能是与模型量化相关的目标。量化（quantization）是将模型的精度从浮点数降低到整数，从而减少内存占用和提高推理速度。
 
-+   **llama-cli**：可能是一个命令行工具，用于运行模型或与用户交互。
++   `llama-cli`：可能是一个命令行工具，用于运行模型或与用户交互。
 
-+   llama-gguf-split：可能是一个用于拆分模型文件的目标，通常用于将一个大模型文件拆分成多个小文件，方便存储和加载。
++   `llama-gguf-split`：可能是一个用于拆分模型文件的目标，通常用于将一个大模型文件拆分成多个小文件，方便存储和加载。
 
 ![](img/b61f7b10fd3f0d96c48b1f3be2a769a3.png)
 
@@ -620,13 +621,13 @@ cmake llama.cpp -B llama.cpp/build \
 cp llama.cpp/build/bin/llama-* llama.cpp
 ```
 
-+   将 **所有生成的可执行文件** 从构建目录 llama.cpp/build/bin/ 复制到项目的根目录 llama.cpp 下。这样可以更方便地在项目根目录下执行这些可执行文件，而无需每次都进入构建目录。
++   将 **所有生成的可执行文件** 从构建目录 `llama.cpp/build/bin/` 复制到项目的根目录 `llama.cpp` 下。这样可以更方便地在项目根目录下执行这些可执行文件，而无需每次都进入构建目录。
 
 ![](img/5e0aadd3ab070b4378c4db6a9ff33b4f.png)
 
 在准备完成后，接下来即可进行调用和推理测试了。
 
-### 2.借助llama.cpp运行Qwen3模型
+### 2. 借助llama.cpp运行Qwen3模型
 
 +   纯CPU推理流程【1token/s】
 
@@ -637,28 +638,28 @@ cp llama.cpp/build/bin/llama-* llama.cpp
 此时模型运行门槛很低，但运行速度非常慢，只有不到1tokens/s。具体推理代码实现流程如下：
 
 ```
-    cd ./llama.cpp
+cd ./llama.cpp
 
-    ./llama-cli --model /home/08_vllm/Qwen3-14B-GGUF/Qwen3-14B-Q4_K_M.gguf --cache-type-k q4_0 --threads 64 --prio 2 --temp 0.6 --ctx-size 512 --seed 3407 --n-gpu-layers 0 -no-cnv --prompt &quot;&lt;｜User｜&gt;你好，好久不见，请介绍下你自己。&lt;｜Assistant｜&gt;&quot;
+./llama-cli --model /home/08_vllm/Qwen3-14B-GGUF/Qwen3-14B-Q4_K_M.gguf --cache-type-k q4_0 --threads 64 --prio 2 --temp 0.6 --ctx-size 512 --seed 3407 --n-gpu-layers 0 -no-cnv --prompt "<｜User｜>你好，好久不见，请介绍下你自己。<｜Assistant｜>"
 ```
 
 ![](img/f944774212e49d7197973dabd9bacb4a.png)
 
 其中命令行核心参数说明：
 
-+   --threads：CPU 核心数;
++   `--threads`：CPU 核心数；
 
-+   --ctx-size：输出的上下文长度；
++   `--ctx-size`：输出的上下文长度；
 
-+   --n-gpu-layers ：需要卸载到 GPU 的层数，设置为0时代表完全使用CPU进行推理；
++   `--n-gpu-layers`：需要卸载到 GPU 的层数，设置为 0 时代表完全使用 CPU 进行推理；
 
-+   --temp：模型温度参数；
++   `--temp`：模型温度参数；
 
-+   -no-cnv：不进行多轮对话；
++   `-no-cnv`：不进行多轮对话；
 
-+   --cache-type-k：K 缓存量化为 4bit；
++   `--cache-type-k`：K 缓存量化为 4bit；
 
-+   --seed：随机数种子；
++   `--seed`：随机数种子；
 
 实际运行效果如下所示：
 
@@ -666,7 +667,7 @@ cp llama.cpp/build/bin/llama-* llama.cpp
 
 +   CPU+GPU混合推理
 
-接下来进一步尝试CPU+GPU混合推理，我们只需要合理的设置--n-gpu-layers参数，即可灵活的将模型的部分层加载到GPU上进行运行。并且无需手动设置，llama.cpp会自动识别当前GPU数量以及可以分配的显存，自动将模型权重加载到各个不同的GPU上。例如，我们这里考虑将30层加载到GPU上，运行效果如下所示：
+接下来进一步尝试CPU+GPU混合推理，我们只需要合理的设置`--n-gpu-layers`参数，即可灵活的将模型的部分层加载到GPU上进行运行。并且无需手动设置，`llama.cpp`会自动识别当前GPU数量以及可以分配的显存，自动将模型权重加载到各个不同的GPU上。例如，我们这里考虑将30层加载到GPU上，运行效果如下所示：
 
 ```
 ./llama-cli \
@@ -679,7 +680,7 @@ cp llama.cpp/build/bin/llama-* llama.cpp
     --seed 3407 \
     --n-gpu-layers 30 \
     -no-cnv \
-    --prompt &quot;&lt;｜User｜&gt;你好，好久不见，请介绍下你自己。&lt;｜Assistant｜&gt;&quot; 
+    --prompt "<｜User｜>你好，好久不见，请介绍下你自己。<｜Assistant｜>"
 ```
 
 ![](img/efd92ff69a6fcecee66e074940a11c90.png)
@@ -705,10 +706,12 @@ cp llama.cpp/build/bin/llama-* llama.cpp
     --seed 3407 \
     --n-gpu-layers 64 \
     -no-cnv \
-    --prompt &quot;&lt;｜User｜&gt;你好，好久不见，请介绍下你自己。&lt;｜Assistant｜&gt;&quot; 
+    --prompt "<｜User｜>你好，好久不见，请介绍下你自己。<｜Assistant｜>"
 ```
 
 此时GPU占用约11G：
+
+
 
 ![](img/f1953c24e8e3b53427e56d65eba798d3.png)
 
@@ -716,13 +719,13 @@ cp llama.cpp/build/bin/llama-* llama.cpp
 
 ## 六、Qwen3 接入OpenWeb-UI
 
-### 1.Open-WebUI部署流程
+### 1. Open-WebUI部署流程
 
-首先需要安装Open-WebUI，官网地址如下：https://github.com/open-webui/open-webui。
+首先需要安装Open-WebUI，官网地址如下：`https://github.com/open-webui/open-webui`。
 
 ![](img/ed8521da59a8cee87e961f41fe5ed6f4.png)
 
-我们可以直接使用pip命令快速完成安装：
+我们可以直接使用`pip`命令快速完成安装：
 
 ```
     pip install open-webui
@@ -740,7 +743,7 @@ cp llama.cpp/build/bin/llama-* llama.cpp
 
 ![](img/05c7aa98a7b3aa52daf8a9220388140e.png)
 
-在确保ollama正常运行的情况下，进行后续操作。
+在确保`ollama`正常运行的情况下，进行后续操作。
 
 ### 2. Open-WebUI启动与对话流程
 
@@ -780,7 +783,7 @@ cp llama.cpp/build/bin/llama-* llama.cpp
 
 ![](img/f59cd0d92764ecb55f28930c715d4bbf.png)
 
-然后点击登录即可。需要注意的是，此时Open-WebUI会自动检测后台是否启动了ollama服务，并列举当前可用的模型。稍等片刻，即可进入到如下页面：
+然后点击登录即可。需要注意的是，此时Open-WebUI会自动检测后台是否启动了`ollama`服务，并列举当前可用的模型。稍等片刻，即可进入到如下页面：
 
 ![](img/3876f89f7e8559529600666d29d0ddb0.png)
 
@@ -893,7 +896,7 @@ Qwen3全系列支持Function calling，因此我们可以基于此完成Open-Web
                 )
 
                 # 返回格式化后的天气数据作为字符串
-                return f&quot;{loc} 的天气信息: {weather_info}&quot;
+                return f&quot;{loc} 的天气信息: {weather_info}&quot;;
 
             except Exception as e:
                 # Step 8. 如果发生错误，通知用户
@@ -905,7 +908,7 @@ Qwen3全系列支持Function calling，因此我们可以基于此完成Open-Web
                 )
 
                 # 返回错误信息
-                return f&quot;获取天气数据时发生错误：{str(e)}&quot;
+                return f&quot;获取天气数据时发生错误：{str(e)}&quot;;
 ```
 
 并将函数进行写入：

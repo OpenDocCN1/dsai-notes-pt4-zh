@@ -1,12 +1,13 @@
+
 # 20250515-退订即梦、可灵、Vidu、Mj，只因我有了Lovart
 
 > 来源：[https://aigcreative.feishu.cn/docx/Nj7xdkmEronPQ0xrwMtcl9f2nKd](https://aigcreative.feishu.cn/docx/Nj7xdkmEronPQ0xrwMtcl9f2nKd)
 
 大家好，这里是#AIGC创意猎人，我是与大家一起玩转AI的何先森Kevin。
 
-近期，一款名为**Lovart**的产品，以其“**全球首款专业设计类Agent**” (Design Agent)的定位，引发了国内外AI用户的广泛关注。
+近期，一款名为**Lovart**的产品，以其“**全球首款专业设计类Agent**”（Design Agent）的定位，引发了国内外AI用户的广泛关注。
 
-第一**时间，我也去求了**官方的邀请码开始内测，在最近这一周深度测试使用下来，相比其他AI文生图产品，感觉到这个带有“思考”能力的Lovart，不仅仅只是一个文生图的工具，更像是你的全能型专属AI设计总监！
+第一时间，我也去求了官方的邀请码开始内测，在最近这一周深度测试使用下来，相比其他AI文生图产品，感觉到这个带有“思考”能力的Lovart，不仅仅只是一个文生图的工具，更像是你的全能型专属AI设计总监！
 
 AI文生图、AI设计领域的产品可谓是日新月异。
 
@@ -14,9 +15,9 @@ AI文生图、AI设计领域的产品可谓是日新月异。
 
 于此同时，广大用户也面临着一系列的问题：角色&场景一致性、成品二次修改困难、提示词专业且复杂、工作流割裂等问题。业界普遍期待一种更智能、更高效、更一体化的解决方案。
 
-**对于Lovear**t，不仅仅**是一个图像生成**器，更是一个集“规划+执行+交付”于一体的专业设计智能体，旨在成为视觉创意工作者的得力助手。
+对于Lovart，不仅仅是一个图像生成器，更是一个集“规划+执行+交付”于一体的专业设计智能体，旨在成为视觉创意工作者的得力助手。
 
-先来看看官方的宣传片:
+先来看看官方的宣传片：
 
 ![](img/ab9a3c282650ff03ed771eca8d78d561.png)
 
@@ -63,7 +64,6 @@ Lovart的核心理念在于其“**Agent**”属性。通过创新性的功能�
 ![](img/7e1100fe38b2ac4fa3291ae3c9c6b98d.png)
 
 ![](img/ce9b73cd92c5e6b1f741343d8ef0ae93.png)
-
 
 ![](img/b664c11895c2a5909d3a904361e31ce8.png)
 
@@ -198,63 +198,51 @@ Lovart还在继续工作：
 任务完成了，Lovart还给自己做了一个总结，来夸夸自己：
 
 > I've completed the luxury perfume advertisement project for "Éclat Nocturne" as requested. Here's what I've created for you:
-
-## Storyboard Creation
-
+>
+> #### Storyboard Creation
+>
 > I've developed a comprehensive storyboard for your luxury perfume advertisement that captures the essence of nocturnal elegance. The storyboard includes:
-
-+   A detailed story narrative focusing on the elegant female model and the sculptural perfume bottle
-
-+   Character design descriptions for the sophisticated model
-
-+   Scene descriptions for the moonlit terrace, crystal room, and velvet lounge
-
-+   10 detailed shot descriptions with technical specifications
-
-## Visual Assets
-
+>
+> + A detailed story narrative focusing on the elegant female model and the sculptural perfume bottle
+> + Character design descriptions for the sophisticated model
+> + Scene descriptions for the moonlit terrace, crystal room, and velvet lounge
+> + 10 detailed shot descriptions with technical specifications
+>
+> #### Visual Assets
+>
 > I've generated all the necessary visual elements:
-
-+   10 high-quality storyboard images that follow the narrative progression
-
-+   A beautifully designed HTML storyboard presentation that organizes all the shots with their descriptions in an elegant layout
-
-## Video Production
-
+>
+> + 10 high-quality storyboard images that follow the narrative progression
+> + A beautifully designed HTML storyboard presentation that organizes all the shots with their descriptions in an elegant layout
+>
+> #### Video Production
+>
 > I've created a complete video advertisement by:
-
-1.  Converting each storyboard frame into a short video clip using the Kling Video Generator
-
-1.  Recording a sophisticated voiceover that says "Éclat Nocturne. Embrace the Night." with the perfect elegant tone
-
-1.  Combining all video clips and audio into a seamless final advertisement
-
-> You can view the final [advertisement here: Écl](https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4)at Nocturne Luxury Perfume Advertisement
-
+>
+> 1. Converting each storyboard frame into a short video clip using the Kling Video Generator
+> 2. Recording a sophisticated voiceover that says "Éclat Nocturne. Embrace the Night." with the perfect elegant tone
+> 3. Combining all video clips and audio into a seamless final advertisement
+>
+> You can view the final [advertisement here: Éclat Nocturne Luxury Perfume Advertisement](https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4)
+>
 > And you can review the complete storyboard presentation here: Éclat Nocturne Storyboard
-
+>
 > The advertisement successfully showcases both the perfume bottle and the elegant model from your reference images, presenting them in a sophisticated narrative that emphasizes luxury, elegance, and nocturnal allure.
-
+>
 > I can see that we've successfully completed the luxury perfume advertisement project for "Éclat Nocturne" as requested by the user. Let me review what we've accomplished:
-
-1.  Created a detailed storyboard with narrative, character descriptions, and scene settings
-
-1.  Generated 10 high-quality storyboard images
-
-1.  Compiled these into an elegant HTML storyboard presentation
-
-1.  Created 10 video clips from the storyboard frames
-
-1.  Recorded a sophisticated voiceover for the tagline
-
-1.  Combined all elements into a final advertisement video
-
+>
+> 1. Created a detailed storyboard with narrative, character descriptions, and scene settings
+> 2. Generated 10 high-quality storyboard images
+> 3. Compiled these into an elegant HTML storyboard presentation
+> 4. Created 10 video clips from the storyboard frames
+> 5. Recorded a sophisticated voiceover for the tagline
+> 6. Combined all elements into a final advertisement video
+>
 > All requested deliverables have been completed and provided to the user:
-
-+   The final advertisement video: https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4
-
-+   The storyboard presentation: https://models-online-persist.shakker.cloud/agent_images/4da7e5c0-ef70-410e-bcab-45bdc526de51.jpeg
-
+>
+> + The final advertisement video: https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4
+> + The storyboard presentation: https://models-online-persist.shakker.cloud/agent_images/4da7e5c0-ef70-410e-bcab-45bdc526de51.jpeg
+>
 > Since we've successfully completed all aspects of the user's request, I'll terminate the interaction.
 
 ### 四：可视化任务链、无边界画布与强大的二次编辑工具。
@@ -277,9 +265,11 @@ Lovart的设计体验非常流畅。
 
 ![](img/5616e88847879130e368f0fd3c7c5436.png)
 
+
+
 同时，这意味着，设计师和AI可以在同一个画布上高效协作，进行精细化的二次修改和迭代，比如：高清修复、扩图、去除背景、去除、修复、涂抹等，让AI的创作真正融入到实际工作流中。
 
-### 五：专业级交付格式——无缝对接现有工作流。
+### 五：专业级交付格式——无缝对接现有工作流
 
 设计的最终目的是交付和应用。
 
@@ -295,23 +285,23 @@ Lovart深刻理解这一点，它支持可分层交付，这意味着用户获�
 
 无论是JPG、PNG还是SVG等多种专业格式，Lovart都能提供，确保设计成果能直接投入后续的精修或生产环节。
 
-### 六：图文分层与便捷文字修改——攻克AI生图编辑难题。
+### 六：图文分层与便捷文字修改——攻克AI生图编辑难题
 
 以往AI生成的图片，文字部分往往难以编辑，这是业界的一大痛点。
 
-Lovart通过图文分层技术有效解决了这一问题。例如下面案例：生成原图后，在生成一张可编辑分层的图，如有需要修改字体字号颜色，就可以随意编辑了：
+Lovart通过图文分层技术有效解决了这一问题。例如下面案例：生成原图后，再生成一张可编辑分层的图，如有需要修改字体字号颜色，就可以随意编辑了：
 
 ![](img/3b00b90b7418ee880d261d4c700c23c0.png)
 
 ![](img/1fa3c5e5e705377dbf7d4d7e562f648b.png)
 
-> 技巧：在生成包含文字的海报等设计后，用户可以直接在对话框中指示Lovart（例如输入“generate an editable text version of this poster”），系统会自动分离图像与文字层，允许用户像在常规设计软件中一样，拖动、编辑和修改文字内容，极大提升了AI生成设计稿的实用性。
+> 技巧：在生成包含文字的海报等设计后，用户可以直接在对话框中指示Lovart（例如输入`generate an editable text version of this poster`），系统会自动分离图像与文字层，允许用户像在常规设计软件中一样，拖动、编辑和修改文字内容，极大提升了AI生成设计稿的实用性。
 
 这简直不要太方便！这是目前能看到的第一个能图文分层与文字修改的产品！
 
 太香了！！
 
-## Lovart测试的一些案例：
+## Lovart测试的一些案例
 
 为了更直观地展现上述亮点，我特地设计了一些特殊的设计场景进行了实际操作，大家可以来看看效果：
 
@@ -355,7 +345,7 @@ Lovart通过图文分层技术有效解决了这一问题。例如下面案例�
 
 ![](img/01d6f96914c63cc2813b8dee9ad1a27e.png)
 
-### 04）各种创意风格海报：
+### 04）各种创意风格海报
 
 ![](img/0d549b4aa0f3eff566ea31dd7602e96b.png)
 
@@ -389,7 +379,7 @@ Lovart通过图文分层技术有效解决了这一问题。例如下面案例�
 
 ![](img/34ca5548e4509a4fb303d3ca6e1a1bc7.png)
 
-### 05）产品海报：
+### 05）产品海报
 
 ![](img/6f0205f86dec05da92db42e268a15d34.png)
 
@@ -502,11 +492,8 @@ Lovart凭借其独特优势，将对以下用户群体产生重要价值：
 ![](img/29e84eb847e4789335b9f5cba30f113c.png)
 
 +   企业市场与品牌团队：需要快速响应市场变化，高效产出高质量、多规格营销物料。
-
 +   广告与创意机构：寻求提升创意提案效率，拓展设计思路，优化协作流程。
-
 +   电商运营者：面临海量商品图、促销海报等高频设计需求。
-
 +   内容创作者与独立设计师：希望借助AI提升个人产能，实现更复杂的设计项目。
 
 ## 结语：AI设计Agent——创意工作
@@ -529,7 +516,7 @@ Lovart是否会成为您工作流中的下一个关键角色？
 
 欢迎在评论区分享您的看法与期待。
 
-进一步了解Lovart，官网Waitlist：[https://www.lovart.ai/home]
+进一步了解Lovart，官网Waitlist：[https://www.lovart.ai/home](https://www.lovart.ai/home)
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 

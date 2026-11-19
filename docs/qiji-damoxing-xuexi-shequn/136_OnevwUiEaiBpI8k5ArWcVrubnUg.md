@@ -1,28 +1,29 @@
+
 # 奇绩大模型日报（8月 29日）
 
-> 来源：[https://miracleplus.feishu.cn/docx/KFbodFFLNouIuGxCd5rctHpKn1e](https://miracleplus.feishu.cn/docx/KFbodFFLNouIuGxCd5rctHpKn1e)
+> 来源：`https://miracleplus.feishu.cn/docx/KFbodFFLNouIuGxCd5rctHpKn1e`
 
-# 📡潜空间活动报名
+## 📡潜空间活动报名
 
-> **潜空间系列活动重磅回归！**
-
-> 本期活动将在**9月6日** **14:00**开始，我们邀请到的嘉宾是**闫俊杰。**他**是MiniMax 创始人兼 CEO，是中国第一梯**队的大模型创业者，目前 MiniMax 估值超 25 亿美元。他将和大家探讨Intelligence with everyone ：对 AGI 0-1 的探索与实践。
-
-> 本次**仅开放北京线下活动**，望理解。我们将在会后48h内，整理会议纪要的精彩内容第一时间分享。
-
+> 潜空间系列活动重磅回归！
+>
+> 本期活动将在9月6日 14:00开始，我们邀请到的嘉宾是闫俊杰。他是MiniMax 创始人兼 CEO，是中国第一梯队的大模型创业者，目前 MiniMax 估值超 25 亿美元。他将和大家探讨Intelligence with everyone ：对 AGI 0-1 的探索与实践。
+>
+> 本次仅开放北京线下活动，望理解。我们将在会后48h内，整理会议纪要的精彩内容第一时间分享。
+>
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
-
+>
 > 报名通道已开启，欢迎扫描下方二维码报名。
 
 ![](img/6c75cb1150bcd4a6826f4cce5872701a.png)
 
-# 资讯
+## 资讯
 
 ### OpenAI即将完成新一轮融资！估值超过1000亿美元
 
-https://techcrunch.com/2024/08/28/openai-reportedly-in-talks-to-close-new-funding-round-at-100b-valuation/
+`https://techcrunch.com/2024/08/28/openai-reportedly-in-talks-to-close-new-funding-round-at-100b-valuation/`
 
-**据彭博**社报道，OpenAI即将完成新一轮融资，由Thrive Capital领投，估值超过 1000 亿美元。Thrive 将在本轮融资中投资约 10 亿美元。OpenAI 首席财务官Sarah Friar周三在一份备忘录中告诉员工，公司正在寻求新资本，但没有透露细节。
+据彭博社报道，OpenAI即将完成新一轮融资，由Thrive Capital领投，估值超过 1000 亿美元。Thrive 将在本轮融资中投资约 10 亿美元。OpenAI 首席财务官Sarah Friar周三在一份备忘录中告诉员工，公司正在寻求新资本，但没有透露细节。
 
 知情人士去年年底向彭博新闻社透露，OpenAI 至少从 12 月就开始接触投资人，预期以 1000 亿美元或以上的估值进行融资。
 
@@ -30,17 +31,17 @@ https://techcrunch.com/2024/08/28/openai-reportedly-in-talks-to-close-new-fundin
 
 Thrive Capital 是一家成立于2009年的风投公司，总部位于纽约。该公司专注于投资互联网、软件和技术赋能领域的公司。据PitchBook的数据，Thrive Capital至今已经进行了393项投资 。
 
-**20**24年8月18日的报道显示，Thrive Capital最近完成了其第九期旗舰基金的募集，募集金额超过50亿美元，这将是当年募集金额最高的风险投资基金之一，仅次于a16z上半年募集的72亿美元基金 。
+2024年8月18日的报道显示，Thrive Capital最近完成了其第九期旗舰基金的募集，募集金额超过50亿美元，这将是当年募集金额最高的风险投资基金之一，仅次于a16z上半年募集的72亿美元基金 。
 
 此外，Thrive Capital的创始人约书亚·库什纳（Joshua Kushner）是一位85后新生代投资人，他也是亿万富翁家族库什纳家族的一员，家族拥有大型房地产开发商库什纳集团。
 
 2023年10月，Thrive Capital曾牵头从OpenAI的员工处购买老股，估值为800亿美元。
 
-相关链接：https://www.bloomberg.com/news/articles/2024-08-28/openai-nears-funding-round-at-more-than-100-billion-valuation?srnd=phx-technology
+相关链接：`https://www.bloomberg.com/news/articles/2024-08-28/openai-nears-funding-round-at-more-than-100-billion-valuation?srnd=phx-technology`
 
 ### MidJourney进军硬件市场，引发业界关注
 
-https://techcrunch.com/2024/08/28/midjourney-says-its-getting-into-hardware/
+`https://techcrunch.com/2024/08/28/midjourney-says-its-getting-into-hardware/`
 
 MidJourney，这家以AI图像生成平台闻名的公司，近日宣布将进军硬件领域。据报道，该公司在没有接受任何风险投资的情况下，年收入已超过2亿美元。MidJourney的新硬件团队将设立在旧金山，这一消息在社交平台X上公布。
 
@@ -52,23 +53,22 @@ MidJourney，这家以AI图像生成平台闻名的公司，近日宣布将进�
 
 ### NVIDIA发布2025财年第二季度财报
 
-https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025
+`https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025`
 
 2024年8月28日，NVIDIA公布了截至2024年7月28日的2025财年第二季度财报，报告显示该公司在多个方面创下新纪录。本季度总收入达到300亿美元，较上一季度增长15%，同比增长122%。数据中心业务收入达到263亿美元，同比增长154%。此外，NVIDIA的GAAP和非GAAP稀释每股收益分别为0.67美元和0.68美元，同比分别增长168%和152%。
 
-**主要业绩亮点**
+#### 主要业绩亮点
 
-+   **数据中心业务**：数据中心收入创纪录，达到263亿美元，同比增长154%。NVIDIA的H200 Tensor Core和Blackwell架构在MLPerf基准测试中表现出色，进一步提升了公司的技术领先地位。
++ 数据中心业务：数据中心收入创纪录，达到263亿美元，同比增长154%。NVIDIA的H200 Tensor Core和Blackwell架构在MLPerf基准测试中表现出色，进一步提升了公司的技术领先地位。
++ 游戏和AI PC：本季度游戏收入为29亿美元，同比增长16%。NVIDIA还推出了ACE和Project G-Assist等AI技术，进一步增强了游戏体验。
++ 专业可视化：收入为4.54亿美元，同比增长20%，推出了用于OpenUSD的生成式AI模型，以加速工业数字孪生和机器人开发。
++ 汽车与机器人：汽车业务收入达到3.46亿美元，同比增长37%。NVIDIA还展示了Isaac机器人平台在全球领先企业中的应用。
 
-+   **游戏和AI PC**：本季度游戏收入为29亿美元，同比增长16%。NVIDIA还推出了ACE和Project G-Assist等AI技术，进一步增强了游戏体验。
+#### 股东回报与展望
 
-+   **专业可视化**：收入为4.54亿美元，同比增长20%，推出了用于OpenUSD的生成式AI模型，以加速工业数字孪生和机器人开发。
+NVIDIA在上半年通过股票回购和现金分红向股东返还了154亿美元。公司董事会批准了额外500亿美元的股票回购授权。本季度，NVIDIA的现金股息为每股0.01美元。此外，公司预计2025财年第三季度收入将达到325亿美元，并继续保持强劲的利润率。
 
-+   **汽车与机器人**：汽车业务收入达到3.46亿美元，同比增长37%。NVIDIA还展示了Isaac机器人平台在全球领先企业中的应用。
-
-**股东回报与展望** NVIDIA在上半年通过股票回购和现金分红向股东返还了154亿美元。公司董事会批准了额外500亿美元的股票回购授权。本季度，NVIDIA的现金股息为每股0.01美元。此外，公司预计2025财年第三季度收入将达到325亿美元，并继续保持强劲的利润率。
-
-**新产品与技术**
+#### 新产品与技术
 
 NVIDIA推出了包括Blackwell系统和Spectrum-X以太网平台在内的多项新产品，并宣布与Hugging Face合作推出推理服务，加速生成式AI的应用。
 
@@ -76,7 +76,7 @@ NVIDIA推出了包括Blackwell系统和Spectrum-X以太网平台在内的多项�
 
 ### AI推理竞争白热化：Nvidia Blackwell、AMD、Google及新兴公司首秀MLPerf基准测试
 
-https://mp.weixin.qq.com/s/cx-otFn6orFeEEZZqEt3kw
+`https://mp.weixin.qq.com/s/cx-otFn6orFeEEZZqEt3kw`
 
 近日，ML Commons发布了最新一轮的AI推理竞赛MLPerf Inference v4.1结果。此次比赛首次包含了Nvidia全新Blackwell芯片、AMD Instinct加速器、Google Trillium加速器以及初创公司UntetherAI的产品。尽管Nvidia在AI训练领域仍然占据主导地位，但在推理方面，其他公司尤其是在能效方面正在逐步赶上。
 
@@ -86,13 +86,13 @@ Untether AI凭借其speedAI240 Preview芯片在能效方面表现尤为出色。
 
 虽然Cerebras和FuriosaAI未参与此次MLPerf竞赛，但两家公司分别在IEEE Hot Chips会议上推出了新的推理芯片。Cerebras的新服务CS3在LLM生成速度上自称超越Nvidia H100七倍。而FuriosaAI则展示了其第二代芯片RNGD，采用独特的张量收缩处理器（TCP）架构，在推理过程中更高效地利用张量的并行性和数据重用能力。
 
-链接：https://spectrum.ieee.org/new-inference-chips
+链接：`https://spectrum.ieee.org/new-inference-chips`
 
 ![](img/3de0e01f4dc2f566b223e413a21a1df9.png)
 
 ### RL教父Sutton持续反向传播算法登Nature
 
-https://mp.weixin.qq.com/s/jeqXj3ez5DbItS7RpoVaSg
+`https://mp.weixin.qq.com/s/jeqXj3ez5DbItS7RpoVaSg`
 
 这篇《Nature》发表的研究论文《Loss of plasticity in deep continual learning》探讨了深度学习在持续学习环境中的可塑性丧失问题。传统深度学习方法通常在训练阶段更新网络权重，而在使用或评估阶段则保持权重不变，这与许多需要持续学习的应用程序不符。研究发现，标准的深度学习方法在持续学习环境中逐渐失去可塑性，最终表现与浅层网络无异。通过实验，研究表明，只有通过持续向网络注入多样性的算法，才能维持可塑性。
 
@@ -104,7 +104,7 @@ https://mp.weixin.qq.com/s/jeqXj3ez5DbItS7RpoVaSg
 
 ### 陶哲轩IMO演讲全文
 
-https://mp.weixin.qq.com/s/GjJgHnl6tBBN1cRzDLXYag
+`https://mp.weixin.qq.com/s/GjJgHnl6tBBN1cRzDLXYag`
 
 陶哲轩在IMO 2024演讲中，回顾了计算机和人工智能在数学研究中的应用历程，并展望了未来的发展。他强调，虽然AI在数学领域的作用日益显著，但人类的洞察力和创造力依然不可替代。演讲内容涵盖了从早期机械计算到现代AI辅助的演变过程。
 
@@ -114,11 +114,11 @@ https://mp.weixin.qq.com/s/GjJgHnl6tBBN1cRzDLXYag
 
 ![](img/ee5cf20ffda16bebafb22ad9688a3abf.png)
 
-# 推特
+## 推特
 
-### 24小时内自动申请了1000份工作并获得了50次面试机会：LinkedIn_AIHawk，批量申请的同时保证质量
+### 24小时内自动申请了1000份工作并获得了50次面试机会：`LinkedIn_AIHawk`，批量申请的同时保证质量
 
-https://x.com/rohanpaul_ai/status/1828598009673683347
+`https://x.com/rohanpaul_ai/status/1828598009673683347`
 
 有人使用AI机器人在24小时内自动申请了1000份工作，并获得了50次面试机会！🤯
 
@@ -126,23 +126,18 @@ https://x.com/rohanpaul_ai/status/1828598009673683347
 
 这个工具可以自动化你的LinkedIn求职和申请流程。
 
-+   扫描符合你条件的职位空缺，
-
-+   使用LinkedIn的“Easy Apply”功能进行职位申请，
-
-+   生成定制的简历，
-
-+   使用大语言模型（LLM）个性化回应雇主问题，
-
-+   可以批量申请，同时保持质量控制，
-
-+   安全管理你的数据，并与OpenAI的API集成，提供AI驱动的功能。
++ 扫描符合你条件的职位空缺，
++ 使用LinkedIn的“Easy Apply”功能进行职位申请，
++ 生成定制的简历，
++ 使用大语言模型（LLM）个性化回应雇主问题，
++ 可以批量申请，同时保持质量控制，
++ 安全管理你的数据，并与OpenAI的API集成，提供AI驱动的功能。
 
 ![](img/024306c11acdb99723b1ee637a9761ac.png)
 
 ### 利用Gemini进行大型多模态模型提示
 
-https://x.com/AndrewYNg/status/1828844538712224137
+`https://x.com/AndrewYNg/status/1828844538712224137`
 
 探索我们全新短课程《利用Gemini进行大型多模态模型提示》，由Erwin Huizenga与@googlecloud合作授课，了解最先进的多模态提示技术。
 
@@ -150,65 +145,59 @@ https://x.com/AndrewYNg/status/1828844538712224137
 
 Gemini的多模态功能还使AI应用开发有了新的方法，例如：
 
-+   Gemini库支持各种视频格式（MP4、MOV、MPEG），简化了这些格式的应用程序开发。
-
-+   大上下文窗口（可达100万个token）使得处理大量内容成为可能，例如同时分析多个50分钟的视频。
-
-+   函数调用功能将实时数据（如当前汇率）集成到模型的响应中。
++ Gemini库支持各种视频格式（MP4、MOV、MPEG），简化了这些格式的应用程序开发。
++ 大上下文窗口（可达100万个token）使得处理大量内容成为可能，例如同时分析多个50分钟的视频。
++ 函数调用功能将实时数据（如当前汇率）集成到模型的响应中。
 
 本课程通过实际案例展示了如何构建多模态应用，包括能够同时分析文本和图表的文档分析器、从多个小时的视频中提取并标记特定信息的视频内容提取器、以及自动化处理收据图像并核对公司政策的费用报告系统。
 
 ![](img/c437cb3cf50dc8bc58335e383eaace77.png)
 
-[ssstwitter.com_1724919122334.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SzHvbM9pDo9D1qx76SscHkcKnvg)
+[ssstwitter.com_1724919122334.mp4](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SzHvbM9pDo9D1qx76SscHkcKnvg`)
 
-### 发布TB-OCR-preview：端到端OCR模型，能够同时处理文本、数学LaTeX和Markdown格式
+### 发布`TB-OCR-preview`：端到端OCR模型，能够同时处理文本、数学LaTeX和Markdown格式
 
-https://x.com/hu_yifei/status/1828870309857915341
+`https://x.com/hu_yifei/status/1828870309857915341`
 
-发布TB-OCR-preview：一个端到端OCR模型，能够同时处理文本、数学LaTeX和Markdown格式。它可能是学术论文OCR的最新顶尖模型（MIT许可证下发布）。
+发布`TB-OCR-preview`：一个端到端OCR模型，能够同时处理文本、数学LaTeX和Markdown格式。它可能是学术论文OCR的最新顶尖模型（MIT许可证下发布）。
 
 运行该模型仅需4-bit，约需~2.8GB的VRAM，且几乎没有性能下降。
 
-+   针对学术论文的内部基准测试结果：WER = 0.04，MER = 0.04，CER = 0.01
-
-+   模型以一段文本作为输入，返回干净的Markdown输出。
-
-+   标题以##标记。
-
-+   数学表达式保证被括号\(...\) \[...\]包裹，便于解析。
-
-+   该模型不需要行检测或数学公式检测。
++ 针对学术论文的内部基准测试结果：`WER = 0.04`，`MER = 0.04`，`CER = 0.01`
++ 模型以一段文本作为输入，返回干净的Markdown输出。
++ 标题以 `##` 标记。
++ 数学表达式保证被括号`\(...\)` `\[...\]`包裹，便于解析。
++ 该模型不需要行检测或数学公式检测。
 
 这是一个预览模型，用于验证从合成数据管道生成的数据集的质量。预览模型仅使用了~25万对图文配对数据（约5000万tokens）。
 
-当前模型基于Phi-3.5-vision。性能更强的小型模型目前正在训练或测试中。
+当前模型基于`Phi-3.5-vision`。性能更强的小型模型目前正在训练或测试中。
 
-HF模型页面：https://huggingface.co/yifeihu/TB-OCR-preview-0.1
+HF模型页面：`https://huggingface.co/yifeihu/TB-OCR-preview-0.1`
 
 ![](img/44e443235dbce6166b34cf940e316c07.png)
 
 ### Cartesia AI：我们的团队率先开发了一种极为高效的AI架构——状态空间模型
 
-https://x.com/cartesia_ai/status/1828500784033735156
+`https://x.com/cartesia_ai/status/1828500784033735156`
 
-今天，我们揭开了迈向普及人工智能旅程中的一个重要里程碑：**AI On-Device**。
+今天，我们揭开了迈向普及人工智能旅程中的一个重要里程碑：AI On-Device。
 
 我们的团队率先开发了一种极为高效的AI架构——状态空间模型（SSMs）。现在，我们已经在边缘设备上进行了优化和部署。我们相信，AI的未来将在您的设备上运行，这样它可以持续处理，同时保证可靠性、隐私性和安全性。
 
-阅读我们的完整博客文章：http://cartesia.ai/blog/on-device
+阅读我们的完整博客文章：`http://cartesia.ai/blog/on-device`
 
 ![](img/68591f459bc5f5d59df047eac61beebc.png)
 
-# 论文
+## 论文
 
 ### 高效的大语言模型调度：通过学习排序实现
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.15792v1
+链接：`http://arxiv.org/abs/2408.15792v1`
 
-摘要：在大语言模型（LLM）推断中，通常将LLM请求的输出长度视为先验未知。因此，大多数LLM服务系统采用简单的先来先服务（FCFS）调度策略，导致头阻塞（HOL）和降低吞吐量和服务质量。本文重新审视这一假设--尽管预测每个请求的确切生成长度是不可行的，但可以使用学习排名预测批量请求中输出长度的相对等级。排名信息为调度请求提供了有价值的指导。基于这一洞见，我们开发了一种新颖的LLM推断和服务调度器，可以更好地逼近最短作业优先（SJF）调度比现有方法更好。我们将这个调度器与最先进的LLM服务系统集成，并在几个重要应用中显示出显著的性能提升：聊天机器人服务延迟降低了2.8倍，合成数据生成吞吐量提高了6.5倍。我们的代码可在https://github.com/hao-ai-lab/vllm-ltr.git获取。
+摘要：在大语言模型（LLM）推断中，通常将LLM请求的输出长度视为先验未知。因此，大多数LLM服务系统采用简单的先来先服务（FCFS）调度策略，导致头阻塞（HOL）和降低吞吐量和服务质量。本文重新审视这一假设--尽管预测每个请求的确切生成长度是不可行的，但可以使用学习排名预测批量请求中输出长度的相对等级。排名信息为调度请求提供了有价值的指导。基于这一洞见，我们开发了一种新颖的LLM推断和服务调度器，可以更好地逼近最短作业优先（SJF）调度比现有方法更好。我们将这个调度器与最先进的LLM服务系统集成，并在几个重要应用中显示出显著的性能提升：聊天机器人服务延迟降低了2.8倍，合成数据生成吞吐量提高了6.5倍。我们的代码可在`https://github.com/hao-ai-lab/vllm-ltr.git`获取。
 
 ![](img/dd891b62f1ac845cd6d03e9fb043eb8d.png)
 
@@ -218,7 +207,11 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 贡献人：
 
-链接：http://arxiv.org/abs/2408.15715v1
+链接：`http://arxiv.org/abs/2408.15715v1`
+
+
+
+# 研究论文
 
 自回归模型是一类生成模型，根据先前的输入概率地预测序列的下一个输出。自回归序列在本质上是一维的，这对于语言任务来说很自然，因此是现代架构（如循环神经网络（RNN）和Transformer）的重要组成部分。然而，当语言模型用于预测不是本质上一维的物理系统的输出时，就会出现哪种自回归序列选择最优的问题。本文研究了在二维（2D）Ising模型中重建关键相关性，使用在热相变附近获取的二进制自旋数据训练的RNN和Transformer。我们比较了对有限大小2D格点强加了多种不同1D自回归序列的训练性能。我们发现，具有长1D段的路径比更好保留2D局部性的填充曲线更有效地训练自回归模型。我们的结果说明，在训练物理任务的现代语言模型时，选择最佳自回归序列顺序可能非常重要。
 
@@ -226,7 +219,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/fe486ea5b9f12e53faa45964adb6dba6.png)
 
-### 避免生成模型作家停滞问题的方法：通过嵌入微调进行涌现
+## 避免生成模型作家停滞问题的方法：通过嵌入微调进行涌现
 
 贡献人：
 
@@ -236,7 +229,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/2a500f36cc9321ce2158e763a93d7e7b.png)
 
-### Eagle：探索带有多种编码器的多模态大语言模型设计空间
+## Eagle：探索带有多种编码器的多模态大语言模型设计空间
 
 贡献人：
 
@@ -248,7 +241,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/038a80c94b5383d44303d18a3cb2142f.png)
 
-### CoGen: 结合理解和生成学习反馈
+## CoGen: 结合理解和生成学习反馈
 
 贡献人：
 
@@ -258,7 +251,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/56c8ab86e62354747e203487d7ef413f.png)
 
-### WILDFEEDBACK：将LLMs与现场用户互动和反馈对齐
+## WILDFEEDBACK：将LLMs与现场用户互动和反馈对齐
 
 贡献人：
 
@@ -270,7 +263,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/ef4c54125278ecaf8bcac6f527118e07.png)
 
-### ReMamba：为Mamba装备有效的长序列建模
+## ReMamba：为Mamba装备有效的长序列建模
 
 贡献人：
 
@@ -280,7 +273,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/1aca1b5359da198423955bb6acaf909e.png)
 
-### 下一个token预测的隐式几何：从语言稀疏模式到模型表示
+## 下一个token预测的隐式几何：从语言稀疏模式到模型表示
 
 贡献人：
 
@@ -292,7 +285,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/7cf0a60cbc79c3c6b53d657dcaf7da20.png)
 
-### 当代LLM研究中的奇迹、规律和缺陷
+## 当代LLM研究中的奇迹、规律和缺陷
 
 贡献人：
 
@@ -302,7 +295,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 ![](img/4b45d5597bf9ace0379422192354ecce.png)
 
-### LOGICGAME：大语言模型基于规则推理能力的基准测试
+## LOGICGAME：大语言模型基于规则推理能力的基准测试
 
 贡献人：
 
@@ -316,7 +309,7 @@ https://x.com/cartesia_ai/status/1828500784033735156
 
 # 产品
 
-### GoMarble
+## GoMarble
 
 贡献人：
 
@@ -326,7 +319,7 @@ GoMarble 的 AI 广告分析工具可以快速分析视频和静态广告，帮�
 
 ![](img/7e5cc40441df2eb9fa6305e6b7ce061d.png)
 
-### GPTEngineer
+## GPTEngineer
 
 贡献人：
 
@@ -336,7 +329,7 @@ gptengineer.app 是一个快速原型设计工具，允许用户通过自然语�
 
 ![](img/4b212327e557714070ebdc7e83b1ad28.png)
 
-### Hyper-SD
+## Hyper-SD
 
 贡献人：
 
@@ -346,7 +339,7 @@ Hyper-SD 是一种新型的扩散模型加速技术，提高图像合成的效�
 
 ![](img/eb114dbf6c43cdf359c6167d58df9f61.png)
 
-### GameNGen
+## GameNGen
 
 贡献人：
 
@@ -356,7 +349,7 @@ GameNGen是一个全新的游戏引擎，完全由神经模型驱动，能够在
 
 ![](img/1ac294cae92c2cbfe433b10a164ce4dd.png)
 
-### K-Sort-Arena
+## K-Sort-Arena
 
 贡献人：
 
@@ -366,7 +359,7 @@ https://huggingface.co/spaces/ksort/K-Sort-Arena
 
 # 投融资
 
-### Scale Venture Partners宣布对Bland的投资，支持语音AI自动化领域的领先者
+## Scale Venture Partners宣布对Bland的投资，支持语音AI自动化领域的领先者
 
 https://www.scalevp.com/insights/announcing-our-investment-in-bland/
 
@@ -378,7 +371,7 @@ Bland的独特之处在于其Zapier风格的工作流程构建器Pathways，使�
 
 ![](img/60508950c37c6948044652e27510c387.png)
 
-### Attio成功融资3300万美元，加速下一代CRM的构建
+## Attio成功融资3300万美元，加速下一代CRM的构建
 
 https://attio.com/blog/attio-raises-33-million-in-funding
 
@@ -390,7 +383,7 @@ Attio的创始人Nicolas Sharp表示，CRM市场正处于变革的关键时刻�
 
 ![](img/95c07af74c3371a598d0bab95ad13781.png)
 
-### 旧金山AI黑客马拉松催生的创业公司Agency完成260万美元融资
+## 旧金山AI黑客马拉松催生的创业公司Agency完成260万美元融资
 
 https://techcrunch.com/2024/08/28/san-franciscos-ai-hackathons-agency-lets-you-see-what-your-ai-agents-do/
 
@@ -402,23 +395,25 @@ https://techcrunch.com/2024/08/28/san-franciscos-ai-hackathons-agency-lets-you-s
 
 # 学习
 
-### 为什么 RoPE 在长序列中难以维持长期衰减
+## 为什么 `RoPE` 在长序列中难以维持长期衰减
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/717174366?utm_psn=1812506558237638656
 
-在这篇博客中，我们探讨了 RoPE 存在的一个潜在限制原因：它在超出其训练长度的长序列中难以维持长期衰减。这一问题可能源于在复数平面上 \( W_Q x \) 和 \( W_K y \) 之间钝角的比例较高（POCP）。为了验证这一假设，我们进行了实验，使用了随机初始化的 \( W_Q x \) 和 \( W_K y \)，以及从不同模型中随机选择的 \( W_Q x \) 和 \( W_K y \)。实验结果表明，POCP 显著影响了模型在长上下文中维持长期衰减的能力。此外，针对长上下文的训练后处理主要降低了模型的 POCP。我们还讨论了模型的高 POCP 如何导致 RoPE 难以维持长期衰减，以及其对 RoPE 在训练过程中观察到的上下文窗口之外进行泛化的困难的影响。
+在这篇博客中，我们探讨了 `RoPE` 存在的一个潜在限制原因：它在超出其训练长度的长序列中难以维持长期衰减。这一问题可能源于在复数平面上 `W_Q x` 和 `W_K y` 之间钝角的比例较高（`POCP`）。为了验证这一假设，我们进行了实验，使用了随机初始化的 `W_Q x` 和 `W_K y`，以及从不同模型中随机选择的 `W_Q x` 和 `W_K y`。实验结果表明，`POCP` 显著影响了模型在长上下文中维持长期衰减的能力。此外，针对长上下文的训练后处理主要降低了模型的 `POCP`。我们还讨论了模型的高 `POCP` 如何导致 `RoPE` 难以维持长期衰减，以及其对 `RoPE` 在训练过程中观察到的上下文窗口之外进行泛化的困难的影响。
 
 原链接： https://difficult-link-dd7.notion.site/a40396b3205849fe84f9810c8a175856?v=f4e0c4586d3247ed8bea3dd00f044bad
 
 ![](img/4c9fd4d791d249579f36705588cccd47.png)
 
-### 阿里PAI-ChatLearn：大规模 Alignment高效训练框架正式开源
+## 阿里`PAI-ChatLearn`：大规模 `Alignment`高效训练框架正式开源
 
 https://zhuanlan.zhihu.com/p/717112741?utm_psn=1812473435542122496
 
-阿里云PAI团队推出了PAI-ChatLearn，一种高效的大规模Alignment训练框架，并已开源。PAI-ChatLearn旨在解决多模型计算和数据交互所带来的挑战，特别是在强化学习从人类反馈（RLHF）等新兴训练范式中的应用。它通过抽象和解耦模型计算逻辑，实现灵活的资源分配和并行调度策略。
+阿里云PAI团队推出了`PAI-ChatLearn`，一种高效的大规模`Alignment`训练框架，并已开源。`PAI-ChatLearn`旨在解决多模型计算和数据交互所带来的挑战，特别是在强化学习从人类反馈（`RLHF`）等新兴训练范式中的应用。它通过抽象和解耦模型计算逻辑，实现灵活的资源分配和并行调度策略。
+
+
 
 ChatLearn支持多种训练方法，包括RLHF、DPO、OnlineDPO、GRPO等，并允许用户自定义训练流程。它集成了多种分布式加速引擎，如Megatron-LM和DeepSpeed，支持高效的模型并行计算和资源管理。与现有的SOTA系统相比，ChatLearn在7B+7B和70B+70B规模的模型训练中分别实现了115%和208%的性能提升，并且能够支持300B+300B的更大规模训练。
 
@@ -430,33 +425,33 @@ ChatLearn支持多种训练方法，包括RLHF、DPO、OnlineDPO、GRPO等，并
 
 https://zhuanlan.zhihu.com/p/717118974?utm_psn=1812468728161525763
 
-本文介绍了如何利用 KTransformers 框架，通过优化 attention 稀疏性加速长文本推理。主要使用 InternLM2.5-7B-Chat-1M 模型进行实验，展示了如何在单张 24GB 显卡 + CPU/DRAM 环境下实现 128K 乃至 1M 上下文的高效推理，并在性能上显著超越 llama.cpp。
+本文介绍了如何利用 KTransformers 框架，通过优化 attention 稀疏性加速长文本推理。主要使用 InternLM2.5-7B-Chat-1M 模型进行实验，展示了如何在单张 24GB 显卡 + CPU/DRAM 环境下实现 128K 乃至 1M 上下文的高效推理，并在性能上显著超越 `llama.cpp`。
 
-关键技术在于利用注意力机制中的稀疏性，仅关注少数高分的 token，从而减少计算量并提高效率。KTransformers 实现了稀疏 attention 算子框架，能在保持精度的同时大幅降低计算开销。实验表明，该框架在 128K 场景下的生成速度是 llama.cpp 的 7.1 倍，1M 场景下达到了 10 倍。此外，还在多个基准测试上取得了几乎全绿的高分表现，证明了其有效性。
+关键技术在于利用注意力机制中的稀疏性，仅关注少数高分的 token，从而减少计算量并提高效率。KTransformers 实现了稀疏 attention 算子框架，能在保持精度的同时大幅降低计算开销。实验表明，该框架在 128K 场景下的生成速度是 `llama.cpp` 的 7.1 倍，1M 场景下达到了 10 倍。此外，还在多个基准测试上取得了几乎全绿的高分表现，证明了其有效性。
 
-论文调研部分提到了多种稀疏 attention 方法，例如 H2O、InfLLM、Quest、SnapKV 等。KTransformers 结合这些方法，通过分块管理 KVCache 并选取代表 token，进一步优化了推理速度和精度。例如，InfLLM 采用外部记忆模块和语义块管理，而 Quest 则通过块内 token 的最大值和最小值进行关键 token 的检索。SnapKV 进一步优化了注意力分布，使推理过程更高效。
+论文调研部分提到了多种稀疏 attention 方法，例如 H2O、InfLLM、Quest、SnapKV 等。KTransformers 结合这些方法，通过分块管理 `KVCache` 并选取代表 token，进一步优化了推理速度和精度。例如，InfLLM 采用外部记忆模块和语义块管理，而 Quest 则通过块内 token 的最大值和最小值进行关键 token 的检索。SnapKV 进一步优化了注意力分布，使推理过程更高效。
 
 通过实验，KTransformers 展示了其在 128K 和 1M 长文本推理中的优势，尤其是在处理复杂任务时，通过灵活配置不同的代表 token 选择策略，使得推理速度和精度达到了更高的水平。总之，KTransformers 提供了一套在本地设备上有效加速长文本推理的解决方案，并且未来还有进一步优化的潜力。
 
 ![](img/e3602fe65ce1eb30c3ca5e6a7ef51cb4.png)
 
-### tensor core实现矩阵乘法和C=AB.T
+### tensor core实现矩阵乘法和`C=AB.T`
 
 https://zhuanlan.zhihu.com/p/717067259?utm_psn=1812474525012590592
 
 Tensor Core 是 NVIDIA GPU 中用于加速矩阵乘法的硬件单元，专为小矩阵（例如16×8×16）乘法设计。每个 Warp 可以并行处理一个 M-K-N 为 16×8×16 的小矩阵乘法。对于更大矩阵的计算，Tensor Core 会将其分块为多个小矩阵，并通过循环累积子矩阵的计算结果。例如，计算 M-K-N 为 32×16×64 的矩阵乘法需要多个 Warp 同时进行，Warp 通过读取不连续的内存区域，执行小矩阵乘法，并累加结果。
 
-**线程簇（Warp）分工**
+### 线程簇（Warp）分工
 
-在矩阵乘法中，每个线程块包含多个 Warp，Warp 是处理的最小单元。Warp 通过二维索引重排（例如 warpIdx, warpIdy）负责特定行和列的计算。Warp 专门处理矩阵 A 的行和矩阵 B 的列，一个线程簇负责16行或16列的计算。通过重排线程簇的索引，可以有效地分配计算任务，确保每个线程块能够处理整个矩阵的一部分。最终，所有线程块的结果汇总，得到完整的矩阵乘法结果。
+在矩阵乘法中，每个线程块包含多个 Warp，Warp 是处理的最小单元。Warp 通过二维索引重排（例如 `warpIdx`, `warpIdy`）负责特定行和列的计算。Warp 专门处理矩阵 `A` 的行和矩阵 `B` 的列，一个线程簇负责16行或16列的计算。通过重排线程簇的索引，可以有效地分配计算任务，确保每个线程块能够处理整个矩阵的一部分。最终，所有线程块的结果汇总，得到完整的矩阵乘法结果。
 
-Share Memory 的使用
+### Share Memory 的使用
 
-为了优化性能，可以利用 Share Memory 存储小矩阵片段。线程首先将 A 和 B 的子矩阵加载到 Share Memory 中，再通过 Tensor Core 进行矩阵乘法。每个 Warp 内的32个线程处理 [16,8] 的子矩阵，通过提前将子矩阵数据存入 Share Memory，提高了数据读取效率。这个过程中，数据存取与矩阵乘法同步进行，确保计算结果的准确性。
+为了优化性能，可以利用 Share Memory 存储小矩阵片段。线程首先将 `A` 和 `B` 的子矩阵加载到 Share Memory 中，再通过 Tensor Core 进行矩阵乘法。每个 Warp 内的32个线程处理 [16,8] 的子矩阵，通过提前将子矩阵数据存入 Share Memory，提高了数据读取效率。这个过程中，数据存取与矩阵乘法同步进行，确保计算结果的准确性。
 
-Tensor Core 实现 C=AB.T
+### Tensor Core 实现 `C=AB.T`
 
-实现 C=AB.T 的最简单方法是将矩阵 B 先转置，再利用 Tensor Core 进行标准矩阵乘法。然而，更高效的方式是利用 Tensor Core 的列优先读取原则，这相当于在计算过程中自动完成转置。这样，在计算 A@B.T 时，矩阵 B 的数据按列优先加载，无需显式转置。这个技巧充分利用了硬件特性，提高了计算效率。
+实现 `C=AB.T` 的最简单方法是将矩阵 `B` 先转置，再利用 Tensor Core 进行标准矩阵乘法。然而，更高效的方式是利用 Tensor Core 的列优先读取原则，这相当于在计算过程中自动完成转置。这样，在计算 `A@B.T` 时，矩阵 `B` 的数据按列优先加载，无需显式转置。这个技巧充分利用了硬件特性，提高了计算效率。
 
 ![](img/b3a0b18f832781efc465980a8c330354.png)
 
@@ -476,19 +471,24 @@ NanoFlow通过参数搜索算法自动设置流水线，这使得NanoFlow能够�
 
 https://zhuanlan.zhihu.com/p/717190801?utm_psn=1812507162808815617
 
-1.  **金融数据生产现状：**
+### 金融数据生产现状
+
 当前金融数据生产存在人工成本高、数据时效性差、数据质量控制难等问题。生产流程包括数据采集、解析、NLP域抽取等环节，虽然引入了AI辅助，但整体仍以人工为中心。
 
-1.  **AI原生下的金融数据生产：**
+### AI原生下的金融数据生产
+
 AI原生数据生产方式转变为以AI为核心，AI在数据管理业务中起主导作用。关键改变包括：输入输出内容从简单预测转变为复杂问答，交互方式从UI交互转变为自然语言交互，prompt知识输入重新定义了人工价值。大模型应用下，增强检索（RAG）和Agent编排成为关键技术，前者放大模型能力，后者丰富模型功能，适用于多种场景。
 
-1.  **数据治理领域的AI应用：**
+### 数据治理领域的AI应用
+
 AI时代，数据治理与大模型互为促进，治理好数据能提升模型效果，进而催生更多应用场景。数据治理的挑战包括缺乏全局视野、忽视实际应用、安全性不足等。基于AI大模型的数据治理架构强调全域风控、隐私保护，并采用“湖仓一体”的数据存储模式，适应多种类型数据的统一管理。企业级私域大模型的数据治理应用关注合规性、模型透明性和一致性，并通过以数据为中心构造AI应用，提高生产力和风控水平。
 
-1.  **多模态文档理解：**
+### 多模态文档理解
+
 基于OCR的多模态文档理解结合了图表、文本的向量化，采用交叉注意力机制提升理解能力，对清晰文档效果显著，但对低质量文档仍需改进。
 
-1.  Multi-Agent智能投顾应用：
+### Multi-Agent智能投顾应用
+
 通过数据工程与Multi-Agent结合，智能投顾系统实现了从AI原子能力向系统能力的突破，能够在复杂金融场景中提供高价值的投资建议，提升了AI的实际应用效能。
 
 ![](img/fdd24408145792ae020b52fe3a460282.png)
@@ -499,35 +499,27 @@ AI时代，数据治理与大模型互为促进，治理好数据能提升模型
 
 ![](img/c367eacdc011bdea04a2554f154d9876.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+- [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+- 行研-GenAI研究岗位-战略分析（偏产品）
+- Web / AI 全栈开发工程师实习生
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+## 火热开放中🚀
 
-##### Web / AI 全栈开发工程师实习生
+- 行研-GenAI研究岗位-前沿学术探索
+- 行研-GenAI研究岗位-战略分析（偏咨询）
+- 创新活动产品运营 （大模型系列活动产品运营）
 
-## **火热开放中🚀**
-
-##### 行研-GenAI研究岗位-前沿学术探索
-
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
-
-##### 创新活动产品运营 （大模型系列活动产品运营）
-
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**添加🛰️💻【**sunjiajunspace】
-
-> ‼️欢迎**推荐/自荐**，期待在**奇绩创坛**遇见更好的你‼️
-
----
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请添加🛰️💻【sunjiajunspace】
+>
+> ‼️欢迎推荐/自荐，期待在奇绩创坛遇见更好的你‼️
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -539,14 +531,11 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
-
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
-
 > 欢迎大家多多帮我们分享,转发~~
-
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 
 ![](img/a490ced788673a224566bb1651e5c9d5.png)

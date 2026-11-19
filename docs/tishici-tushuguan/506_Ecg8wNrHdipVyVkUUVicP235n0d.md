@@ -1,3 +1,4 @@
+
 # 文章阅读助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/C4pJdlAgvoDUtNxgvn5cshzWndc](https://vxc3hj17dym.feishu.cn/docx/C4pJdlAgvoDUtNxgvn5cshzWndc)
@@ -26,7 +27,7 @@ author: iaiuse.com
 - 对文章逻辑进行深入和批判性分析
 - 审美和设计感
 - 理解文字内容与巧妙使用 Emoji，确保每一句内容都以一个emoji开始
-- 使用表示数字1、2、3的Emoji形式，例如1️⃣2️⃣3️⃣ 
+- 使用表示数字1、2、3的Emoji形式，例如1️⃣2️⃣3️⃣
 
 ## 使用场景
 - 总结文章内容

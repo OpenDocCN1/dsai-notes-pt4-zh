@@ -1,12 +1,13 @@
+
 # The-human-side-of-generative-ai
 
-> 来源：[https://aithinkup.feishu.cn/docx/U2HOdAoyAoJadRx2ZqEcL9HKnme](https://aithinkup.feishu.cn/docx/U2HOdAoyAoJadRx2ZqEcL9HKnme)
+> 来源：`https://aithinkup.feishu.cn/docx/U2HOdAoyAoJadRx2ZqEcL9HKnme`
 
-## **基础文档分析：**
+## 基础文档分析：
 
-1.  📄 文件名: The-human-side-of-generative-ai.pdf
+1.  📄 文件名：`The-human-side-of-generative-ai.pdf`
 
-源文件下载地址：https://sat2tjmapq6.feishu.cn/record/L13HrJWf9eshJHcNegTcXyvJnR4
+源文件下载地址：`https://sat2tjmapq6.feishu.cn/record/L13HrJWf9eshJHcNegTcXyvJnR4`
 
 1.  📚 主题: 生成性人工智能在提升人类工作体验和生产力方面的人文关怀
 
@@ -60,25 +61,25 @@
 
 在PDF文件《The human side of generative AI: Creating a path to productivity》中，对不同类型员工对生成性人工智能（gen AI）的使用情况进行了详细的分类和描述。以下是对这些使用情况的详细陈述：
 
-1.  **创造者 (Creators)**:
+1.  创造者 (`Creators`):
 
 +   这类员工负责构建组织的gen AI模型，并开发大多数人与这些模型交互的工具和界面。
 
 +   主要由软件工程师、程序员和机器学习科学家组成，他们开发我们与gen AI互动的工具和界面。
 
-1.  重度用户 (Heavy users):
+1.  重度用户 (`Heavy users`):
 
 +   这类员工使用gen AI来帮助他们执行大部分核心任务或增强他们的工作职能。
 
 +   包括设计师、数据科学家等，他们使用gen AI来加速3D建模或验证代码语言语义的准确性。
 
-1.  轻度用户 (Light users):
+1.  轻度用户 (`Light users`):
 
 +   这类员工使用gen AI来执行不到50%的主要任务。
 
 +   包括中层管理者、教育工作者和通信专业人员，他们可能使用gen AI来创建会议记录或帮助分配任务。
 
-1.  **非用户 (Nonusers)**:
+1.  非用户 (`Nonusers`):
 
 +   这些个体要么未受到gen AI影响，要么未意识到gen AI对他们工作的影响。
 
@@ -118,7 +119,7 @@
 
 +   员工希望感受到领导的关怀和支持，这包括领导者的可靠性、鼓励性和启发性。
 
-1.  **健康和福祉支持 (Support for he**alth and well-being):
+1.  健康和福祉支持 (Support for health and well-being):
 
 +   员工越来越重视工作中的健康和福祉支持，这涉及到身体和心理健康的关怀。
 
@@ -130,19 +131,19 @@
 
 +   员工需要能够轻松获取完成任务所需的资源。
 
-1.  **包**容性、欢迎和连通的社区 (Inclusive, welcoming, and connected community):
+1.  包容性、欢迎和连通的社区 (Inclusive, welcoming, and connected community):
 
 +   员工倾向于在一个包容性强、相互欢迎和联系紧密的工作环境中工作。
 
-1.  **可**持续的工作绩效期望 (Sustainable work performance expectations):
+1.  可持续的工作绩效期望 (Sustainable work performance expectations):
 
 +   员工希望工作绩效的期望是可持续的，不会对他们的个人生活造成不利影响。
 
-1.  **职**业发展和晋升潜力 (Career development and advancement potential):
+1.  职业发展和晋升潜力 (Career development and advancement potential):
 
 +   尽管对于gen AI的创造者和重度用户来说，职业发展机会的重要性可能不如其他因素，但它仍然是一个考虑因素。
 
-1.  **安全的工作场所环境 (Safe wo**rkplace environment):
+1.  安全的工作场所环境 (Safe workplace environment):
 
 +   一个安全的工作场所对所有员工来说都是重要的。
 

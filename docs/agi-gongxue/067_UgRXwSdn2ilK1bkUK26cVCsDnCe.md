@@ -1,12 +1,11 @@
+
 # 1.0 AI 入门
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/MoFmdNuDAoK7ZAxDItOcQ2l2n5Q](https://vcn0zlxse9ua.feishu.cn/docx/MoFmdNuDAoK7ZAxDItOcQ2l2n5Q)
 
-+   应用者
-
-+   产品经理
-
-+   开发应用
++ 应用者
++ 产品经理
++ 开发应用
 
 ## AI艺术评价
 

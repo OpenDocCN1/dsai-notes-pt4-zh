@@ -1,9 +1,10 @@
+
 # 金融prompt
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/D2wTdF39EoUDB4xqaFDcwsYVnKd](https://xuqiwei1986.feishu.cn/docx/D2wTdF39EoUDB4xqaFDcwsYVnKd)
 
+```json
 {
-
 "金融意图理解":"你的任务是理解用户意图，必须从给定的意图中选择一个，可供选择的意图有[行情解读, 选品, 产品信息查询, 闲聊]。\n以下是一个参考案例: \n用户的输入是: 能帮我选一只新能源行业的基金吗?\n用户的意图是: 选品\n下面是一段新的输入: {}\n请问用户的意图是: ",
 
 "金融槽位识别":"你的任务是识别用户输入中的金融实体和概念，以下是一个参考案例:\n用户的输入是: 我想了解贵州茅台的股价\n金融槽位是: 贵州茅台\n下面是一段新的输入: {}\n请问金融槽位是: ",
@@ -59,7 +60,7 @@
 "金融合规性":"以下是一道用户问题，如果该问题涉及金融合规问题，请拒绝作答，如果不相关请作答，用户的提问是:{}\n请回答:",
 
 "金融事实性":"以下是一道金融事实性相关问题，如果你知道准确答案，请给出，否则请拒绝回答，用户的提问是:{}\n请回答:"
-
 }
+```
 
-chrome-extension://mofcmpgnbnnlcdkfchnggdilcelpgegn/page-post-frame-id.html?id=0
+`chrome-extension://mofcmpgnbnnlcdkfchnggdilcelpgegn/page-post-frame-id.html?id=0`

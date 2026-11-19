@@ -1,26 +1,27 @@
+
 # OpenAI又出新招！两款模型开源， Claude 4.1 Opus登场，编程领域AI新神器。GPT-5还要等多久？
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/No61do8iWoeipcxjWe9c3SyznGd](https://xatc0v8uz5m.feishu.cn/docx/No61do8iWoeipcxjWe9c3SyznGd)
 
 哈喽，好久不见（粤）
 
-# openAI发布两款开源模型
+## openAI发布两款开源模型
 
-Gpt-oss-120b 模型在核心推理基准测试中与 OpenAI o4-mini 模型几乎持平，能在单个 80GB GPU 上高效运行。Gpt-oss-20b 模型在常见基准测试中与 OpenAI o3‑mini 模型效果上差不多，且可在仅配备 16GB 内存的设备上运行。也就意味着这两个模型的能够在设备端应用、本地推理或无需昂贵基础设施。
+`Gpt-oss-120b` 模型在核心推理基准测试中与 OpenAI `o4-mini` 模型几乎持平，能在单个 80GB GPU 上高效运行。`Gpt-oss-20b` 模型在常见基准测试中与 OpenAI `o3‑mini` 模型效果上差不多，且可在仅配备 16GB 内存的设备上运行。也就意味着这两个模型的能够在设备端应用、本地推理或无需昂贵基础设施。
 
-openAI,发布了gpt-oss-120b 和 gpt-oss-20b——两款开放轻量级语言模型。
+openAI,发布了 `gpt-oss-120b` 和 `gpt-oss-20b`——两款开放轻量级语言模型。
 
 废话不多说，直接上链接，大家可以自己上手体验，考考它
 
-https://gpt-oss.com/
+`https://gpt-oss.com/`
 
 我直接做了几个测试项目，大家一起来看看效果
 
-## 3D 太空飞船射击游戏
+### 3D 太空飞船射击游戏
 
 ![](img/3882f75d6ae7dbc3e84900f8ff9ba0f9.png)
 
-[屏幕录制 2025-08-06 225912.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RCytbSgzIozrTXx1Pmhc84wbnUd)
+[`屏幕录制 2025-08-06 225912.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RCytbSgzIozrTXx1Pmhc84wbnUd)
 
 ![](img/e8ef84fb96dc1ff6a4afaa025d560a70.png)
 
@@ -52,16 +53,22 @@ https://gpt-oss.com/
 
 大家也可以直接复制原代码直接去上手体验
 
-    const nebulaTexture = new THREE.TextureLoader().load(&#x27;https://threejs.org/examples/textures/lensflare/lensflare0.png&#x27;);
-
+```javascript
+const nebulaTexture = new THREE.TextureLoader().load('https://threejs.org/examples/textures/lensflare/lensflare0.png');
 ```
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;3D 太空射击游戏&lt;/title&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
-&lt;style&gt;
+
+
+
+# 3D 太空射击游戏
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>3D 太空射击游戏</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
 /* -------------------- 基础样式 -------------------- */
 html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#000;font-family:Arial,Helvetica,sans-serif;}
 canvas{display:block;}
@@ -100,29 +107,29 @@ button:hover{background:#0b5ed7;}
     #score{font-size:14px;}
     button{font-size:16px;padding:10px 20px;}
 }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+</style>
+</head>
+<body>
 
-&lt;!-- UI 叠层：分数、血条 --&gt;
-&lt;div id=&quot;ui&quot;&gt;
-    &lt;div id=&quot;score&quot;&gt;得分：0&lt;/div&gt;
-    &lt;div id=&quot;healthContainer&quot;&gt;&lt;div id=&quot;healthBar&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
+<!-- UI 叠层：分数、血条 -->
+<div id="ui">
+    <div id="score">得分：0</div>
+    <div id="healthContainer"><div id="healthBar"></div></div>
+</div>
 
-&lt;!-- 开始 / 结束遮罩层 --&gt;
-&lt;div id=&quot;overlay&quot;&gt;
-    &lt;div id=&quot;title&quot;&gt;星际射击&lt;/div&gt;
-    &lt;button id=&quot;startBtn&quot;&gt;开始游戏&lt;/button&gt;
-&lt;/div&gt;
+<!-- 开始 / 结束遮罩层 -->
+<div id="overlay">
+    <div id="title">星际射击</div>
+    <button id="startBtn">开始游戏</button>
+</div>
 
-&lt;!-- Three.js 渲染器会自动插入到 body 中 --&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
+<!-- Three.js 渲染器会自动插入到 body 中 -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script>
 /* ==============================================================
    3D 太空射击游戏 – 入口
    ============================================================== */
-(() =&gt; {
+(() => {
     // ---------- 基础变量 ----------
     const canvasWidth = window.innerWidth;
     const canvasHeight = window.innerHeight;
@@ -150,7 +157,7 @@ button:hover{background:#0b5ed7;}
     const starCount = 2000;
     const positions = new Float32Array(starCount * 3);
     const colors = new Float32Array(starCount * 3);
-    for (let i = 0; i &lt; starCount; i++) {
+    for (let i = 0; i < starCount; i++) {
         const radius = THREE.MathUtils.randFloat(150, 300);
         const phi = THREE.MathUtils.randFloat(0, Math.PI * 2);
         const theta = THREE.MathUtils.randFloat(0, Math.PI);
@@ -167,8 +174,8 @@ button:hover{background:#0b5ed7;}
         colors[i * 3 + 1] = c.g;
         colors[i * 3 + 2] = c.b;
     }
-    starGeometry.setAttribute(&#x27;position&#x27;, new THREE.BufferAttribute(positions, 3));
-    starGeometry.setAttribute(&#x27;color&#x27;, new THREE.BufferAttribute(colors, 3));
+    starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    starGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
     const starMaterial = new THREE.PointsMaterial({ size: 0.8, vertexColors: true });
     const stars = new THREE.Points(starGeometry, starMaterial);
     scene.add(stars);
@@ -191,7 +198,7 @@ button:hover{background:#0b5ed7;}
     scene.add(nebulaMesh);
 
     // ---------- 游戏对象容器 ----------
-    const playerGroup = new THREE.Group(); // 玩家模型 &amp; 子对象
+    const playerGroup = new THREE.Group(); // 玩家模型 & 子对象
     const enemyGroup = new THREE.Group();  // 所有敌机
     const playerLaserGroup = new THREE.Group(); // 玩家激光
     const enemyLaserGroup = new THREE.Group(); // 敌机激光（可选）
@@ -207,14 +214,14 @@ button:hover{background:#0b5ed7;}
         PLAYER_MAX_HP: 100,
         ENEMY_SPAWN_INTERVAL: 2.0,     // 秒
         ENEMY_TYPES: [
-            { name: &quot;小型&quot;, speed: 20, hp: 1, scale: 0.8, color: 0xff5555 },
-            { name: &quot;中型&quot;, speed: 15, hp: 3, scale: 1.2, color: 0xff3333 },
-            { name: &quot;大型&quot;, speed: 10, hp: 6, scale: 1.8, color: 0xff1111 }
+            { name: "小型", speed: 20, hp: 1, scale: 0.8, color: 0xff5555 },
+            { name: "中型", speed: 15, hp: 3, scale: 1.2, color: 0xff3333 },
+            { name: "大型", speed: 10, hp: 6, scale: 1.8, color: 0xff1111 }
         ],
         LASER_SPEED: 80,
         LASER_DAMAGE: 1,
         POWERUP_DROP_RATE: 0.3,          // 30%
-        POWERUP_TYPES: [&quot;HEALTH&quot;, &quot;UPGRADE&quot;], // 血包、武器升级
+        POWERUP_TYPES: ["HEALTH", "UPGRADE"], // 血包、武器升级
         HEALTH_PACK_VALUE: 30,
         UPGRADE_DURATION: 10,            // 秒
         CAMERA_OFFSET: new THREE.Vector3(0, 5, 12), // 相机相对玩家的偏移
@@ -222,21 +229,21 @@ button:hover{background:#0b5ed7;}
     };
 
     // ---------- UI 引用 ----------
-    const scoreEl = document.getElementById(&#x27;score&#x27;);
-    const healthBarEl = document.getElementById(&#x27;healthBar&#x27;);
-    const overlayEl = document.getElementById(&#x27;overlay&#x27;);
-    const startBtn = document.getElementById(&#x27;startBtn&#x27;);
+    const scoreEl = document.getElementById('score');
+    const healthBarEl = document.getElementById('healthBar');
+    const overlayEl = document.getElementById('overlay');
+    const startBtn = document.getElementById('startBtn');
 
     // ---------- 音效 ----------
     // 1) 背景音乐（循环）
-    const bgMusic = new Audio(&#x27;data:audio/mp3;base64,//uQxAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAACAAACABAAZGF0YQAAAAA=&#x27;);
+    const bgMusic = new Audio('data:audio/mp3;base64,//uQxAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAACAAACABAAZGF0YQAAAAA=');
     bgMusic.loop = true;
     bgMusic.volume = 0.3;
     // 2) 激光音效
-    const laserSound = new Audio(&#x27;data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA=&#x27;);
+    const laserSound = new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA=');
     laserSound.volume = 0.5;
     // 3) 爆炸音效
-    const explosionSound = new Audio(&#x27;data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA=&#x27;);
+    const explosionSound = new Audio('data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA=');
     explosionSound.volume = 0.7;
 
     // ---------- 游戏状态 ----------
@@ -298,7 +305,7 @@ button:hover{background:#0b5ed7;}
     // ---------- 激光 ----------
     function createLaser(owner, origin, direction) {
         const geometry = new THREE.CylinderGeometry(0.08, 0.08, 3, 6);
-        const material = new THREE.MeshBasicMaterial({ color: owner === &#x27;player&#x27; ? 0x00ffdd : 0xff2200 });
+        const material = new THREE.MeshBasicMaterial({ color: owner === 'player' ? 0x00ffdd : 0xff2200 });
         const laser = new THREE.Mesh(geometry, material);
         // 默认模型是沿 Y 轴，这里旋转到 Z 轴并对齐方向
         laser.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.clone().normalize());
@@ -310,7 +317,7 @@ button:hover{background:#0b5ed7;}
             owner,
         };
         // 根据所属放入相应组
-        if (owner === &#x27;player&#x27;) playerLaserGroup.add(laser);
+        if (owner === 'player') playerLaserGroup.add(laser);
         else enemyLaserGroup.add(laser);
         return laserObj;
     }
@@ -321,11 +328,11 @@ button:hover{background:#0b5ed7;}
         const geometry = new THREE.BufferGeometry();
         const positions = new Float32Array(particleCount * 3);
         const velocities = new Float32Array(particleCount * 3);
-        for (let i = 0; i &lt; particleCount; i++) {
+        for (let i = 0; i < particleCount; i++) {
             positions[i * 3] = position.x;
             positions[i * 3 + 1] = position.y;
             positions[i * 3 + 2] = position.z;
-            // 随机方向 &amp; 初速度
+            // 随机方向 & 初速度
             const theta = Math.random() * Math.PI * 2;
             const phi = Math.random() * Math.PI;
             const speed = THREE.MathUtils.randFloat(5, 20);
@@ -333,8 +340,8 @@ button:hover{background:#0b5ed7;}
             velocities[i * 3 + 1] = Math.sin(phi) * Math.sin(theta) * speed;
             velocities[i * 3 + 2] = Math.cos(phi) * speed;
         }
-        geometry.setAttribute(&#x27;position&#x27;, new THREE.BufferAttribute(positions, 3));
-        geometry.setAttribute(&#x27;velocity&#x27;, new THREE.BufferAttribute(velocities, 3));
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        geometry.setAttribute('velocity', new THREE.BufferAttribute(velocities, 3));
         const material = new THREE.PointsMaterial({ size: 0.5, color: 0xffaa33, transparent: true, opacity: 0.9 });
         const particles = new THREE.Points(geometry, material);
         particles.userData = { age: 0, maxAge: 0.8 };
@@ -347,10 +354,10 @@ button:hover{background:#0b5ed7;}
     // ---------- 道具 ----------
     function createPowerup(type, position) {
         let geometry, material, radius = 0.8;
-        if (type === &#x27;HEALTH&#x27;) {
+        if (type === 'HEALTH') {
             geometry = new THREE.SphereGeometry(radius, 12, 12);
             material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
-        } else if (type === &#x27;UPGRADE&#x27;) {
+        } else if (type === 'UPGRADE') {
             geometry = new THREE.OctahedronGeometry(radius);
             material = new THREE.MeshStandardMaterial({ color: 0xffff00 });
         }
@@ -366,33 +373,33 @@ button:hover{background:#0b5ed7;}
         scoreEl.textContent = `得分：${score}`;
         const hpPercent = Math.max(0, playerHP / CONFIG.PLAYER_MAX_HP);
         healthBarEl.style.width = `${hpPercent * 100}%`;
-        healthBarEl.style.background = hpPercent &gt; 0.5 ? &#x27;#0f0&#x27; : (hpPercent &gt; 0.2 ? &#x27;#ff0&#x27; : &#x27;#f00&#x27;);
+        healthBarEl.style.background = hpPercent > 0.5 ? '#0f0' : (hpPercent > 0.2 ? '#ff0' : '#f00');
     }
 
     // ---------- 输入 ----------
-    window.addEventListener(&#x27;keydown&#x27;, e =&gt; {
+    window.addEventListener('keydown', e => {
         keysPressed[e.code] = true;
         // 触发射击（空格）
-        if (e.code === &#x27;Space&#x27;) fireLaser();
+        if (e.code === 'Space') fireLaser();
     });
-    window.addEventListener(&#x27;keyup&#x27;, e =&gt; keysPressed[e.code] = false);
-    window.addEventListener(&#x27;mousedown&#x27;, e =&gt; {
+    window.addEventListener('keyup', e => keysPressed[e.code] = false);
+    window.addEventListener('mousedown', e => {
         if (e.button === 0) fireLaser(); // 左键
     });
     // 防止页面滚动
-    window.addEventListener(&#x27;keydown&#x27;, (e) =&gt; { if ([&#x27;ArrowUp&#x27;,&#x27;ArrowDown&#x27;,&#x27;ArrowLeft&#x27;,&#x27;ArrowRight&#x27;,&#x27;Space&#x27;].includes(e.code)) e.preventDefault(); });
+    window.addEventListener('keydown', (e) => { if (['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code)) e.preventDefault(); });
 
     // ---------- 射击 ----------
     function fireLaser() {
         const now = performance.now() / 1000;
         const cd = upgradeActive ? CONFIG.PLAYER_FIRE_COOLDOWN / 2 : CONFIG.PLAYER_FIRE_COOLDOWN;
-        if (now - lastFireTime &lt; cd) return;
+        if (now - lastFireTime < cd) return;
         lastFireTime = now;
         // 前端位置（略微前移）
         const origin = playerGroup.position.clone();
         origin.z -= 1.2;
         const dir = new THREE.Vector3(0, 0, -1);
-        createLaser(&#x27;player&#x27;, origin, dir);
+        createLaser('player', origin, dir);
         // 声音
         laserSound.currentTime = 0;
         laserSound.play();
@@ -425,17 +432,17 @@ button:hover{background:#0b5ed7;}
         updateUI();
         renderer.render(scene, camera);
         // 检查游戏结束
-        if (playerHP &lt;= 0) gameOver();
+        if (playerHP <= 0) gameOver();
     }
 
     // ---------- 玩家移动 ----------
     function updatePlayer(delta) {
         const move = new THREE.Vector3();
-        if (keysPressed[&#x27;KeyW&#x27;] || keysPressed[&#x27;ArrowUp&#x27;]) move.y += 1;
-        if (keysPressed[&#x27;KeyS&#x27;] || keysPressed[&#x27;ArrowDown&#x27;]) move.y -= 1;
-        if (keysPressed[&#x27;KeyA&#x27;] || keysPressed[&#x27;ArrowLeft&#x27;]) move.x -= 1;
-        if (keysPressed[&#x27;KeyD&#x27;] || keysPressed[&#x27;ArrowRight&#x27;]) move.x += 1;
-        if (move.lengthSq() &gt; 0) move.normalize().multiplyScalar(CONFIG.PLAYER_SPEED * delta);
+        if (keysPressed['KeyW'] || keysPressed['ArrowUp']) move.y += 1;
+        if (keysPressed['KeyS'] || keysPressed['ArrowDown']) move.y -= 1;
+        if (keysPressed['KeyA'] || keysPressed['ArrowLeft']) move.x -= 1;
+        if (keysPressed['KeyD'] || keysPressed['ArrowRight']) move.x += 1;
+        if (move.lengthSq() > 0) move.normalize().multiplyScalar(CONFIG.PLAYER_SPEED * delta);
         playerGroup.position.add(move);
         // 限制移动范围
         playerGroup.position.x = THREE.MathUtils.clamp(playerGroup.position.x, -25, 25);
@@ -446,13 +453,13 @@ button:hover{background:#0b5ed7;}
     function updateLasers(delta) {
         const toRemove = [];
         // 玩家激光
-        playerLaserGroup.children.forEach(laser =&gt; {
+        playerLaserGroup.children.forEach(laser => {
             laser.position.addScaledVector(new THREE.Vector3(0, 0, -1), CONFIG.LASER_SPEED * delta);
-            if (laser.position.z &lt; -300) toRemove.push(laser);
+            if (laser.position.z < -300) toRemove.push(laser);
             // 与敌机碰撞检测
-            enemyGroup.children.forEach(enemyMesh =&gt; {
+            enemyGroup.children.forEach(enemyMesh => {
                 const distSq = laser.position.distanceToSquared(enemyMesh.position);
-                if (distSq &lt; 1.5 * 1.5) {
+                if (distSq < 1.5 * 1.5) {
                     // 找到对应的敌人对象
                     const enemy = enemyMesh.userData?.ref;
                     if (enemy) {
@@ -461,14 +468,14 @@ button:hover{background:#0b5ed7;}
                         if (!toRemove.includes(laser)) toRemove.push(laser);
                         // 击中产生小爆炸
                         createExplosion(laser.position.clone());
-                        if (enemy.hp &lt;= 0) {
+                        if (enemy.hp <= 0) {
                             // 敌机死亡
                             enemyGroup.remove(enemy.mesh);
                             createExplosion(enemy.mesh.position.clone());
                             score += 100;
                             // 随机掉落道具
-                            if (Math.random() &lt; CONFIG.POWERUP_DROP_RATE) {
-                                const puType = Math.random() &lt; 0.5 ? &#x27;HEALTH&#x27; : &#x27;UPGRADE&#x27;;
+                            if (Math.random() < CONFIG.POWERUP_DROP_RATE) {
+                                const puType = Math.random() < 0.5 ? 'HEALTH' : 'UPGRADE';
                                 createPowerup(puType, enemy.mesh.position.clone());
                             }
                         }
@@ -477,7 +484,7 @@ button:hover{background:#0b5ed7;}
             });
         });
         // 删除标记的激光
-        toRemove.forEach(l =&gt; {
+        toRemove.forEach(l => {
             if (l.parent) l.parent.remove(l);
         });
 
@@ -489,7 +496,7 @@ button:hover{background:#0b5ed7;}
     function spawnEnemies(delta) {
         // 计时
         lastEnemySpawn += delta;
-        if (lastEnemySpawn &gt;= CONFIG.ENEMY_SPAWN_INTERVAL &amp;&amp; enemyGroup.children.length &lt; CONFIG.MAX_ENEMIES) {
+        if (lastEnemySpawn >= CONFIG.ENEMY_SPAWN_INTERVAL && enemyGroup.children.length < CONFIG.MAX_ENEMIES) {
             lastEnemySpawn = 0;
             // 随机选取一种敌人类型
             const typeIdx = Math.floor(Math.random() * CONFIG.ENEMY_TYPES.length);
@@ -501,14 +508,14 @@ button:hover{background:#0b5ed7;}
     }
     function updateEnemies(delta) {
         const toRemove = [];
-        enemyList.forEach(enemy =&gt; {
+        enemyList.forEach(enemy => {
             const dir = playerGroup.position.clone().sub(enemy.mesh.position).normalize();
             enemy.mesh.position.addScaledVector(dir, enemy.speed * delta);
             // 简单的自旋效果，让敌机看起来更加活泼
             enemy.mesh.rotation.z += delta * 1.5;
             // 检测与玩家碰撞
             const distSq = enemy.mesh.position.distanceToSquared(playerGroup.position);
-            if (distSq &lt; 2.0 * 2.0) {
+            if (distSq < 2.0 * 2.0) {
                 // 玩家受伤
                 playerHP -= 15;
                 // 敌机消失
@@ -518,14 +525,14 @@ button:hover{background:#0b5ed7;}
                 createExplosion(enemy.mesh.position.clone());
             }
             // 超出视野（太靠后）自动删除
-            if (enemy.mesh.position.z &gt; 10) {
+            if (enemy.mesh.position.z > 10) {
                 toRemove.push(enemy);
             }
         });
         // 删除死亡/超出范围的敌机
-        toRemove.forEach(e =&gt; {
+        toRemove.forEach(e => {
             const idx = enemyList.indexOf(e);
-            if (idx &gt; -1) enemyList.splice(idx, 1);
+            if (idx > -1) enemyList.splice(idx, 1);
             if (e.mesh.parent) e.mesh.parent.remove(e.mesh);
         });
     }
@@ -533,11 +540,11 @@ button:hover{background:#0b5ed7;}
     // ---------- 粒子更新 ----------
     function updateParticles(delta) {
         const toRemove = [];
-        particleGroup.children.forEach(particle =&gt; {
+        particleGroup.children.forEach(particle => {
             const positions = particle.geometry.attributes.position.array;
             const velocities = particle.geometry.attributes.velocity.array;
             const count = positions.length / 3;
-            for (let i = 0; i &lt; count; i++) {
+            for (let i = 0; i < count; i++) {
                 positions[i * 3] += velocities[i * 3] * delta;
                 positions[i * 3 + 1] += velocities[i * 3 + 1] * delta;
                 positions[i * 3 + 2] += velocities[i * 3 + 2] * delta;
@@ -549,9 +556,9 @@ button:hover{background:#0b5ed7;}
             particle.userData.age += delta;
             const t = particle.userData.age / particle.userData.maxAge;
             particle.material.opacity = THREE.MathUtils.lerp(0.9, 0, t);
-            if (t &gt;= 1) toRemove.push(particle);
+            if (t >= 1) toRemove.push(particle);
         });
-        toRemove.forEach(p =&gt; {
+        toRemove.forEach(p => {
             particleGroup.remove(p);
             if (p.geometry) p.geometry.dispose();
             if (p.material) p.material.dispose();
@@ -562,14 +569,14 @@ button:hover{background:#0b5ed7;}
     function updatePowerups(delta) {
         const now = performance.now() / 1000;
         // 检测玩家收集
-        powerupGroup.children.forEach(pu =&gt; {
+        powerupGroup.children.forEach(pu => {
             const distSq = pu.position.distanceToSquared(playerGroup.position);
-            if (distSq &lt; 2.0 * 2.0) {
+            if (distSq < 2.0 * 2.0) {
                 // 读取类型
-                const type = pu.userData?.type || (pu.geometry.type === &#x27;SphereGeometry&#x27; ? &#x27;HEALTH&#x27; : &#x27;UPGRADE&#x27;);
-                if (type === &#x27;HEALTH&#x27;) {
+                const type = pu.userData?.type || (pu.geometry.type === 'SphereGeometry' ? 'HEALTH' : 'UPGRADE');
+                if (type === 'HEALTH') {
                     playerHP = Math.min(CONFIG.PLAYER_MAX_HP, playerHP + CONFIG.HEALTH_PACK_VALUE);
-                } else if (type === &#x27;UPGRADE&#x27;) {
+                } else if (type === 'UPGRADE') {
                     upgradeActive = true;
                     upgradeEndTime = now + CONFIG.UPGRADE_DURATION;
                 }
@@ -584,7 +591,7 @@ button:hover{background:#0b5ed7;}
             }
         });
         // 升级计时结束恢复
-        if (upgradeActive &amp;&amp; now &gt;= upgradeEndTime) upgradeActive = false;
+        if (upgradeActive && now >= upgradeEndTime) upgradeActive = false;
     }
 
     // ---------- 游戏结束 ----------
@@ -592,9 +599,9 @@ button:hover{background:#0b5ed7;}
         // 停止所有动画
         cancelAnimationFrame(animate);
         // 显示游戏结束 UI
-        overlayEl.innerHTML = `&lt;div&gt;游戏结束&lt;/div&gt;&lt;div style=&quot;margin-top:12px;&quot;&gt;最终得分：${score}&lt;/div&gt;&lt;button id=&quot;restartBtn&quot;&gt;重新开始&lt;/button&gt;`;
-        overlayEl.classList.remove(&#x27;hidden&#x27;);
-        document.getElementById(&#x27;restartBtn&#x27;).addEventListener(&#x27;click&#x27;, restartGame);
+        overlayEl.innerHTML = `<div>游戏结束</div><div style="margin-top:12px;">最终得分：${score}</div><button id="restartBtn">重新开始</button>`;
+        overlayEl.classList.remove('hidden');
+        document.getElementById('restartBtn').addEventListener('click', restartGame);
     }
 
     // ---------- 重新开始 ----------
@@ -615,7 +622,7 @@ button:hover{background:#0b5ed7;}
         upgradeActive = false;
         upgradeEndTime = 0;
         // 隐藏 UI
-        overlayEl.classList.add(&#x27;hidden&#x27;);
+        overlayEl.classList.add('hidden');
         // 重置背景音乐（若已暂停）
         bgMusic.currentTime = 0;
         bgMusic.play();
@@ -626,7 +633,7 @@ button:hover{background:#0b5ed7;}
 
     // ---------- 游戏启动 ----------
     function startGame() {
-        overlayEl.classList.add(&#x27;hidden&#x27;);
+        overlayEl.classList.add('hidden');
         // 初始化玩家
         if (playerGroup.children.length === 0) createPlayer();
         // 开启背景音乐（需要用户交互）
@@ -637,20 +644,22 @@ button:hover{background:#0b5ed7;}
     }
 
     // ---------- 监听开始按钮 ----------
-    startBtn.addEventListener(&#x27;click&#x27;, startGame);
+    startBtn.addEventListener('click', startGame);
 
     // ---------- 窗口尺寸变化 ----------
-    window.addEventListener(&#x27;resize&#x27;, () =&gt; {
+    window.addEventListener('resize', () => {
         const w = window.innerWidth, h = window.innerHeight;
         renderer.setSize(w, h);
         camera.aspect = w / h;
         camera.updateProjectionMatrix();
     });
 })();
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+</script>
+</body>
+</html>
 ```
+
+
 
 小白同学看这里，复制代码到新建的TXT文档里面，然后保存更改txt后缀名为html，运行即可
 
@@ -660,7 +669,7 @@ button:hover{background:#0b5ed7;}
 
 ![](img/07b24c4a8be271075df028730ec98119.png)
 
-## 能力测试指标
+# 能力测试指标
 
 编程能力
 
@@ -670,7 +679,7 @@ button:hover{background:#0b5ed7;}
 
 ![](img/8a431c7512e05f706c0be690762e428f.png)
 
-最后总的来说，这两个模型水平和o4-mini 、o3-mini 差不多，还有一点就是openAI，居然开源了，确实比较意外。可能来自与国内的大模型不少开源动作的压力吧。AI卷起来卷起来！
+最后总的来说，这两个模型水平和`o4-mini`、`o3-mini` 差不多，还有一点就是openAI，居然开源了，确实比较意外。可能来自与国内的大模型不少开源动作的压力吧。AI卷起来卷起来！
 
 不过，奥特曼虚晃一枪没有把传说中的GTP5发布出来。希望他说的GPT5在他的这个月的计划之内。来看看他的原话
 
@@ -680,15 +689,15 @@ button:hover{background:#0b5ed7;}
 
 这两个开源现在均可以在 Hugging Face 上免费下载
 
-https://huggingface.co/openai/gpt-oss-120b
+`https://huggingface.co/openai/gpt-oss-120b`
 
-# Claude 4.1 Opus发布
+## Claude 4.1 Opus发布
 
 ![](img/59bdc7d8f456c92815778fa1378ddd79.png)
 
 Claude，编程领域的真神。
 
-## 编程能力再上一个台阶
+### 编程能力再上一个台阶
 
 ![](img/6aba48af5a1985d66da003fb642d7877.png)
 
@@ -698,7 +707,7 @@ Claude，编程领域的真神。
 
 ![](img/34c55d41616dda9b157ee4ff4bff5eb1.png)
 
-现在推出的新版本已经在官网发布了，感兴趣的小伙伴可以去体验一下.开发者只需通过 API 使用 claude-opus-4-1-20250805 即可
+现在推出的新版本已经在官网发布了，感兴趣的小伙伴可以去体验一下.开发者只需通过 API 使用 `claude-opus-4-1-20250805` 即可
 
 8月初真的是热闹，这两天的发布的三款模型，你最为哪个大模型心动，留在评论区
 

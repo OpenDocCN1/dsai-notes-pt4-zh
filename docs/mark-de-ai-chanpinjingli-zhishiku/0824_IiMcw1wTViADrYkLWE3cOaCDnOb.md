@@ -1,8 +1,7 @@
-# Attention Is All You Need
+
+# Attention Is All You Need / 注意力是你所需要的一切
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/W9TLdcrtWosLoAxHl93ckjZ6n8c](https://qqs7y1hozd1.feishu.cn/docx/W9TLdcrtWosLoAxHl93ckjZ6n8c)
-
-# **Attention I**s All You Need 注意力是你所需要的一切
 
 ## 摘要
 
@@ -16,7 +15,7 @@ Recurrent neural networks, long short-term memory [12] and gated recurrent [7] n
 
 循环神经网络，特别是长短时记忆[12]和门控递归[7]神经网络，已经被牢固地确立为序列建模和转换问题的最先进方法，如语言建模和机器翻译[29, 2, 5]。此后，大量的努力继续推动着递归语言模型和编码器-解码器架构的边界[31, 21, 13]。
 
-Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states  ，as a function of the previous hidden state   and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples. Recent work has achieved significant improvements in computational efficiency through factorization tricks [18] and conditional computation [26], while also improving model performance in case of the latter. The fundamental constraint of sequential computation, however, remains.
+Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states ，as a function of the previous hidden state   and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples. Recent work has achieved significant improvements in computational efficiency through factorization tricks [18] and conditional computation [26], while also improving model performance in case of the latter. The fundamental constraint of sequential computation, however, remains.
 
 循环模型通常沿着输入和输出序列的符号位置进行计算。将位置与计算时间的步骤相一致，它们产生一连串的隐藏状态 ，作为前一个隐藏状态 和位置t的输入的函数。这种固有的顺序性排除了训练实例内的并行化，这在较长的序列长度上变得至关重要，因为内存限制了跨实例的批处理。最近的工作通过因式分解技巧[18]和条件计算[26]在计算效率方面取得了重大改进，同时在后者的情况下也提高了模型性能。然而，顺序计算的基本约束仍然存在。
 
@@ -48,9 +47,9 @@ To the best of our knowledge, however, the Transformer is the first transduction
 
 ## 3 模型架构
 
-Most competitive neural sequence transduction models have an encoder-decoder structure [5, 2, 29]. Here, the encoder maps an input sequence of symbol representations  to a sequence of continuous representations  . Given z, the decoder then generates an output sequence   of symbols one element at a time. At each step, the model is auto-regressive [9], consuming the previously generated symbols as additional input when generating the next.
+Most competitive neural sequence transduction models have an encoder-decoder structure [5, 2, 29]. Here, the encoder maps an input sequence of symbol representations to a sequence of continuous representations. Given `z`, the decoder then generates an output sequence of symbols one element at a time. At each step, the model is auto-regressive [9], consuming the previously generated symbols as additional input when generating the next.
 
-大多数有竞争力的神经序列转导模型有一个编码器-解码器结构[5, 2, 29]。这里，编码器将输入的符号表示序列 映射为连续表示序列 。给定z后，解码器产生一个输出序列 的符号，每次一个元素。在每一步，该模型都是自动循环的[9]，在生成下一步时，消耗先前生成的符号作为额外的输入。
+大多数有竞争力的神经序列转导模型有一个编码器-解码器结构[5, 2, 29]。这里，编码器将输入的符号表示序列映射为连续表示序列。给定`z`后，解码器产生一个输出序列的符号，每次一个元素。在每一步，该模型都是自动循环的[9]，在生成下一步时，消耗先前生成的符号作为额外的输入。
 
 The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, shown in the left and right halves of Figure 1, respectively.
 
@@ -58,43 +57,49 @@ Transformer遵循这一整体架构，在编码器和解码器中都使用了堆
 
 ### 3.1 编码器和解码器堆栈
 
-**Encoder**: The encoder is composed of a stack of N = 6 identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network. We employ a residual connection [10] around each of the two sub-layers, followed by layer normalization [1]. That is, the output of each sub-layer is LayerNorm(x + Sublayer(x)), where Sublayer(x) is the function implemented by the sub-layer itself. To facilitate these residual connections, all sub-layers in the model, as well as the embedding layers, produce outputs of dimension
+**Encoder**: The encoder is composed of a stack of `N = 6` identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network. We employ a residual connection [10] around each of the two sub-layers, followed by layer normalization [1]. That is, the output of each sub-layer is `LayerNorm(x + Sublayer(x))`, where `Sublayer(x)` is the function implemented by the sub-layer itself. To facilitate these residual connections, all sub-layers in the model, as well as the embedding layers, produce outputs of dimension
 
-**编码器**。编码器是由N=6个相同的层堆叠而成。每层有两个子层。第一层是一个多头的自注意力机制，第二层是一个简单的、位置上的全连接前馈网络。我们在两个子层的每一个周围采用一个残差连接[10]，然后进行层的正常化[1]。也就是说，每个子层的输出是LayerNorm(x + Sublayer(x))，其中Sublayer(x)是由子层本身实现的函数。为了方便这些剩余连接，模型中的所有子层以及嵌入层都会产生尺寸为 的输出。
+**Encoder**: 编码器由 `N = 6` 个相同层堆叠组成。每个层有两个子层。第一个是多头自注意力机制，第二个是简单的按位置全连接前馈网络。我们在两个子层的每个周围都使用残差连接 [10]，后跟层归一化 [1]。也就是说，每个子层的输出是 `LayerNorm(x + Sublayer(x))`，其中 `Sublayer(x)` 是子层本身实现的函数。为了便于这些残差连接，模型中的所有子层以及嵌入层都生成维度为
 
-**Decoder**: The decoder is also composed of a stack of N = 6 identical layers. In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack. Similar to the encoder, we employ residual connections around each of the sub-layers, followed by layer normalization. We also modify the self-attention sub-layer in the decoder stack to prevent positions from attending to subsequent positions. This masking, combined with fact that the output embeddings are offset by one position, ensures that the predictions for position i can depend only on the known outputs at positions less than i.
 
-**解码器**。解码器也是由N=6个相同层的堆栈组成。除了每个编码器层的两个子层之外，解码器还插入了第三个子层，它对编码器堆栈的输出进行多头注意力。与编码器类似，我们在每个子层周围采用剩余连接，然后进行层的归一化。我们还修改了解码器堆栈中的自注意力子层，以防止位置关注后续位置。这种屏蔽，再加上输出嵌入偏移一个位置的事实，确保对位置i的预测只取决于小于i的位置的已知输出。
 
-### 3.2 注意力
+## 3.1 编码器与解码器
 
-An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key.
+编码器。编码器是由`N=6`个相同的层堆叠而成。每层有两个子层。第一层是一个多头的自注意力机制，第二层是一个简单的、位置上的全连接前馈网络。我们在两个子层的每一个周围采用一个残差连接[10]，然后进行层的正常化[1]。也就是说，每个子层的输出是`LayerNorm(x + Sublayer(x))`，其中`Sublayer(x)`是由子层本身实现的函数。为了方便这些剩余连接，模型中的所有子层以及嵌入层都会产生尺寸为 的输出。
 
-注意力函数可以被描述为将一个queries和一组keys、values对映射到一个输出，其中queries、keys、values和输出都是向量。输出被计算为数值的加权和，其中分配给每个数值的权重是由查询与相应的键的兼容性函数计算的。
+Decoder: The decoder is also composed of a stack of `N = 6` identical layers. In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack. Similar to the encoder, we employ residual connections around each of the sub-layers, followed by layer normalization. We also modify the self-attention sub-layer in the decoder stack to prevent positions from attending to subsequent positions. This masking, combined with fact that the output embeddings are offset by one position, ensures that the predictions for position `i` can depend only on the known outputs at positions less than `i`.
 
-#### 3.2.1 缩放点积注意力
+解码器。解码器也是由`N=6`个相同层的堆栈组成。除了每个编码器层的两个子层之外，解码器还插入了第三个子层，它对编码器堆栈的输出进行多头注意力。与编码器类似，我们在每个子层周围采用剩余连接，然后进行层的归一化。我们还修改了解码器堆栈中的自注意力子层，以防止位置关注后续位置。这种屏蔽，再加上输出嵌入偏移一个位置的事实，确保对位置`i`的预测只取决于小于`i`的位置的已知输出。
 
-We call our particular attention “Scaled Dot-Product Attention” (Figure 2). The input consists of queries and keys of dimension  , and values of dimension  . We compute the dot products of the query with all keys, divide each by  , and apply a softmax function to obtain the weights on the values.
+## 3.2 注意力
 
-我们把我们的特殊关注称为 “缩放点积关注”（图2）。输入包括维度为 的values。我们计算queries与所有keys的点积，将每个keys除以 ，并应用softmax函数来获得数值的权重。
+An attention function can be described as mapping a `query` and a set of key-value pairs to an output, where the `query`, `keys`, `values`, and `output` are all vectors. The `output` is computed as a weighted sum of the `values`, where the weight assigned to each value is computed by a compatibility function of the `query` with the corresponding key.
 
-In practice, we compute the attention function on a set of queries simultaneously, packed together into a matrix Q. The keys and values are also packed together into matrices K and V . We compute the matrix of outputs as:
+注意力函数可以被描述为将一个`queries`和一组`keys`、`values`对映射到一个输出，其中`queries`、`keys`、`values`和输出都是向量。输出被计算为数值的加权和，其中分配给每个数值的权重是由查询与相应的键的兼容性函数计算的。
 
-在实践中，我们同时计算一组queries的注意函数，并将其打包成矩阵Q，keys和values也被打包成矩阵K和V。我们计算输出的矩阵为:
+### 3.2.1 缩放点积注意力
+
+We call our particular attention “Scaled Dot-Product Attention” (Figure 2). The input consists of `queries` and `keys` of dimension  , and `values` of dimension  . We compute the dot products of the `query` with all `keys`, divide each by  , and apply a `softmax` function to obtain the weights on the `values`.
+
+我们把我们的特殊关注称为 “缩放点积关注”（图2）。输入包括维度为 的`values`。我们计算`queries`与所有`keys`的点积，将每个`keys`除以 ，并应用`softmax`函数来获得数值的权重。
+
+In practice, we compute the attention function on a set of `queries` simultaneously, packed together into a matrix `Q`. The `keys` and `values` are also packed together into matrices `K` and `V`. We compute the matrix of `outputs` as:
+
+在实践中，我们同时计算一组`queries`的注意函数，并将其打包成矩阵`Q`，`keys`和`values`也被打包成矩阵`K`和`V`。我们计算输出的矩阵为:
 
 The two most commonly used attention functions are additive attention [2], and dot-product (multiplicative) attention. Dot-product attention is identical to our algorithm, except for the scaling factor of  . Additive attention computes the compatibility function using a feed-forward network with a single hidden layer. While the two are similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code.
 
 两种最常用的注意力函数是加法注意力[2]，和点乘法（乘法）注意力。除了 个比例因子外，点乘法注意力与我们的算法相同。加法注意力使用具有单个隐藏层的前馈网络来计算兼容性函数。虽然两者在理论上的复杂性相似，但点积式注意力在实践中要快得多，而且空间效率更高，因为它可以用高度优化的矩阵乘法代码来实现。
 
-While for small values of   the two mechanisms perform similarly, additive attention outperforms dot product attention without scaling for larger values of  [3]. We suspect that for large values of  , the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients. To counteract this effect, we scale the dot products by  .
+While for small values of   the two mechanisms perform similarly, additive attention outperforms dot product attention without scaling for larger values of  [3]. We suspect that for large values of  , the dot products grow large in magnitude, pushing the `softmax` function into regions where it has extremely small gradients. To counteract this effect, we scale the dot products by  .
 
-虽然对于 的小值来说，这两种机制的表现相似，但对于 的大值来说，加法注意力优于点积注意力，且不存在扩展性[3]。我们怀疑对于大的 值来说，点积的幅度很大，把softmax函数推到它的梯度极小的区域。为了抵消这种影响，我们将点积的比例定为 。
+虽然对于 的小值来说，这两种机制的表现相似，但对于 的大值来说，加法注意力优于点积注意力，且不存在扩展性[3]。我们怀疑对于大的 值来说，点积的幅度很大，把`softmax`函数推到它的梯度极小的区域。为了抵消这种影响，我们将点积的比例定为 。
 
-#### 3.2.2 多头注意力
+### 3.2.2 多头注意力
 
-Instead of performing a single attention function with  -dimensional keys, values and queries, we found it beneficial to linearly project the queries, keys and values h times with different, learned linear projections to  ,  and  dimensions, respectively. On each of these projected versions of queries, keys and values, we then perform the attention function in parallel, yielding  -dimensional output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2.
+Instead of performing a single attention function with  -dimensional `keys`, `values` and `queries`, we found it beneficial to linearly project the `queries`, `keys` and `values` h times with different, learned linear projections to  ,  and  dimensions, respectively. On each of these projected versions of `queries`, `keys` and `values`, we then perform the attention function in parallel, yielding  -dimensional output `values`. These are concatenated and once again projected, resulting in the final `values`, as depicted in Figure 2.
 
-我们发现，与其用 维的keys、values和queries来执行一个单一的注意函数，不如用不同的、学习过的线性投影将queries、keys和values分别投影到 ,  和 维，这样做是有益的。在这些投射的查询、键和值的每个版本上，我们再平行地执行注意函数，产生d v d_vdv维的输出值。这些值被串联起来，并再次进行投影，得到最终的数值，如图2所示。
+我们发现，与其用 维的`keys`、`values`和`queries`来执行一个单一的注意函数，不如用不同的、学习过的线性投影将`queries`、`keys`和`values`分别投影到 ,  和 维，这样做是有益的。在这些投射的查询、键和值的每个版本上，我们再平行地执行注意函数，产生`d v d_vdv`维的输出值。这些值被串联起来，并再次进行投影，得到最终的数值，如图2所示。
 
 Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. With a single attention head, averaging inhibits this.
 
@@ -108,53 +113,57 @@ In this work we employ   parallel attention layers, or heads. For each of these 
 
 由于每个头的维度减少，总的计算成本与全维度的单头注意相似。
 
-#### 3.2.3 注意力在我们模型中的应用
+### 3.2.3 注意力在我们模型中的应用
 
-The Transformer uses multi-head attention in three different ways:
+`Transformer` uses multi-head attention in three different ways:
 
-• In “encoder-decoder attention” layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder. This allows every position in the decoder to attend over all positions in the input sequence. This mimics the typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [31, 2, 8].
+• In “encoder-decoder attention” layers, the `queries` come from the previous decoder layer, and the memory `keys` and `values` come from the output of the encoder. This allows every position in the decoder to attend over all positions in the input sequence. This mimics the typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [31, 2, 8].
 
-• The encoder contains self-attention layers. In a self-attention layer all of the keys, values and queries come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder.
+• The encoder contains self-attention layers. In a self-attention layer all of the `keys`, `values` and `queries` come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder.
 
-• Similarly, self-attention layers in the decoder allow each position in the decoder to attend to all positions in the decoder up to and including that position. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot-product attention by masking out (setting to −∞) all values in the input of the softmax which correspond to illegal connections. See Figure 2.
+• Similarly, self-attention layers in the decoder allow each position in the decoder to attend to all positions in the decoder up to and including that position. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot-product attention by masking out (setting to −∞) all `values` in the input of the `softmax` which correspond to illegal connections. See Figure 2.
 
-Transformer 以三种不同的方式使用多头关注。
+`Transformer` 以三种不同的方式使用多头关注。
 
-- 在 "编码器-解码器注意 "层中，queries来自前一个解码器层，而keys和values来自编码器的输出。这允许解码器中的每个位置都关注输入序列中的所有位置。这模仿了序列到序列模型中典型的编码器-解码器注意力机制，如[31, 2, 8]。
+- 在 "编码器-解码器注意 "层中，`queries`来自前一个解码器层，而`keys`和`values`来自编码器的输出。这允许解码器中的每个位置都关注输入序列中的所有位置。这模仿了序列到序列模型中典型的编码器-解码器注意力机制，如[31, 2, 8]。
 
-- 编码器包含自注意力层。在自注意力层中，所有的keys、values和queries都来自同一个地方，在这种情况下，就是编码器中前一层的输出。编码器中的每个位置都可以关注到编码器前一层的所有位置。
+- 编码器包含自注意力层。在自注意力层中，所有的`keys`、`values`和`queries`都来自同一个地方，在这种情况下，就是编码器中前一层的输出。编码器中的每个位置都可以关注到编码器前一层的所有位置。
 
-- 同样，解码器中的自注意力允许解码器中的每个位置关注解码器中的所有位置，直到并包括该位置。我们需要防止解码器中的信息向左流动，以保持自动回归的特性。我们通过掩盖（设置为-∞）softmax输入中对应于非法连接的所有值，在缩放点积注意力内部实现这一点。见图2。
+- 同样，解码器中的自注意力允许解码器中的每个位置关注解码器中的所有位置，直到并包括该位置。我们需要防止解码器中的信息向左流动，以保持自动回归的特性。我们通过掩盖（设置为-∞）`softmax`输入中对应于非法连接的所有值，在缩放点积注意力内部实现这一点。见图2。
 
-### 3.3 定位前馈网络
+## 3.3 定位前馈网络
 
-In addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully connected feed-forward network, which is applied to each position separately and identically. This consists of two linear transformations with a ReLU activation in between.
+In addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully connected feed-forward network, which is applied to each position separately and identically. This consists of two linear transformations with a `ReLU` activation in between.
 
-除了注意子层之外，我们的编码器和解码器中的每一层都包含一个全连接的前馈网络，该网络分别适用于每个位置，并且完全相同。这包括两个线性变换，中间有一个ReLU激活。
+除了注意子层之外，我们的编码器和解码器中的每一层都包含一个全连接的前馈网络，该网络分别适用于每个位置，并且完全相同。这包括两个线性变换，中间有一个`ReLU`激活。
 
-While the linear transformations are the same across different positions, they use different parameters from layer to layer. Another way of describing this is as two convolutions with kernel size 1. The dimensionality of input and output is  , and the inner-layer has dimensionality  .
+While the linear transformations are the same across different positions, they use different parameters from layer to layer. Another way of describing this is as two convolutions with kernel size 1. The dimensionality of `input` and `output` is  , and the inner-layer has dimensionality  .
 
 虽然线性变换在不同的位置上是相同的，但它们在不同的层上使用不同的参数。另一种描述方式是将其作为两个内核大小为1的卷积。输入和输出的维度为 ，内层的维度为 。
 
-### 3.4 嵌入和Softmax
+## 3.4 嵌入和Softmax
 
-Similarly to other sequence transduction models, we use learned embeddings to convert the input tokens and output tokens to vectors of dimension  . We also use the usual learned linear transformation and softmax function to convert the decoder output to predicted next-token probabilities. In our model, we share the same weight matrix between the two embedding layers and the pre-softmax linear transformation, similar to [24]. In the embedding layers, we multiply those weights by  .
+Similarly to other sequence transduction models, we use learned embeddings to convert the `input` tokens and `output` tokens to vectors of dimension  . We also use the usual learned linear transformation and `softmax` function to convert the decoder `output` to predicted next-token probabilities. In our model, we share the same weight matrix between the two embedding layers and the pre-`softmax` linear transformation, similar to [24]. In the embedding layers, we multiply those `weights` by  .
 
-与其他序列转换模型类似，我们使用学习的嵌入将输入标记和输出标记转换为维度为 的向量。我们还使用通常的学习线性变换和softmax函数将解码器输出转换为预测的下一个标记概率。在我们的模型中，我们在两个嵌入层和pre-softmax线性变换之间共享相同的权重矩阵，与[24]相似。在嵌入层中，我们将这些权重乘以 。
+与其他序列转换模型类似，我们使用学习的嵌入将输入标记和输出标记转换为维度为 的向量。我们还使用通常的学习线性变换和`softmax`函数将解码器输出转换为预测的下一个标记概率。在我们的模型中，我们在两个嵌入层和pre-`softmax`线性变换之间共享相同的权重矩阵，与[24]相似。在嵌入层中，我们将这些`weights`乘以 。
 
-### 3.5 位置编码
+## 3.5 位置编码
 
-Since our model contains no recurrence and no convolution, in order for the model to make use of the order of the sequence, we must inject some information about the relative or absolute position of the tokens in the sequence. To this end, we add “positional encodings” to the input embeddings at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension model as the embeddings, so that the two can be summed. There are many choices of positional encodings, learned and fixed [8].
 
-由于我们的模型不包含递归和卷积，为了使模型能够利用序列的顺序，我们必须注入一些关于序列中标记的相对或绝对位置的信息。为此，我们在编码器和解码器堆栈的底部为输入嵌入添加 “位置编码”。位置编码与嵌入具有相同的维度dmodel，因此这两者可以相加。有很多位置编码的选择，有学习的，也有固定的[8]。
+
+## 位置编码
+
+Since our model contains no recurrence and no convolution, in order for the model to make use of the order of the sequence, we must inject some information about the relative or absolute position of the tokens in the sequence. To this end, we add “positional encodings” to the input embeddings at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension `dmodel` as the embeddings, so that the two can be summed. There are many choices of positional encodings, learned and fixed [8].
+
+由于我们的模型不包含递归和卷积，为了使模型能够利用序列的顺序，我们必须注入一些关于序列中标记的相对或绝对位置的信息。为此，我们在编码器和解码器堆栈的底部为输入嵌入添加 “位置编码”。位置编码与嵌入具有相同的维度`dmodel`，因此这两者可以相加。有很多位置编码的选择，有学习的，也有固定的[8]。
 
 In this work, we use sine and cosine functions of different frequencies:
 
 在这项工作中，我们使用不同频率的正弦和余弦函数。
 
-where pos is the position and i is the dimension. That is, each dimension of the positional encoding corresponds to a sinusoid. The wavelengths form a geometric progression from 2π to 10000 · 2π. We chose this function because we hypothesized it would allow the model to easily learn to attend by relative positions, since for any fixed offset k,  can be represented as a linear function of  .
+where `pos` is the position and `i` is the dimension. That is, each dimension of the positional encoding corresponds to a sinusoid. The wavelengths form a geometric progression from 2π to 10000 · 2π. We chose this function because we hypothesized it would allow the model to easily learn to attend by relative positions, since for any fixed offset `k`,  can be represented as a linear function of  .
 
-其中pos是位置，i是维度。也就是说，位置编码的每个维度对应于一个正弦波。波长形成一个从2π到10000·2π的几何级数。我们选择这个函数是因为我们假设它能使模型很容易地学会通过相对位置参加，因为对于任何固定的偏移量k， 可以被表示为 的线性函数。
+其中`pos`是位置，`i`是维度。也就是说，位置编码的每个维度对应于一个正弦波。波长形成一个从2π到10000·2π的几何级数。我们选择这个函数是因为我们假设它能使模型很容易地学会通过相对位置参加，因为对于任何固定的偏移量`k`， 可以被表示为 的线性函数。
 
 We also experimented with using learned positional embeddings [8] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.
 
@@ -174,13 +183,13 @@ The third is the path length between long-range dependencies in the network. Lea
 
 第三是网络中长距离依赖关系之间的路径长度。学习长距离的依赖关系是许多序列转导任务中的一个关键挑战。影响学习这种依赖关系能力的一个关键因素是前向和后向信号在网络中必须穿越的路径的长度。在输入和输出序列的任何位置组合之间的这些路径越短，就越容易学习长距离的依赖关系[11]。因此，我们也比较了由不同层类型组成的网络中任何两个输入和输出位置之间的最大路径长度。
 
-As noted in Table 1, a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations. In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length n is smaller than the representation dimensionality d, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece [31] and byte-pair [25] representations. To improve computational performance for tasks involving very long sequences, self-attention could be restricted to considering only a neighborhood of size r in the input sequence centered around the respective output position. This would increase the maximum path length to O(n/r). We plan to investigate this approach further in future work.
+As noted in Table 1, a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires `O(n)` sequential operations. In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length `n` is smaller than the representation dimensionality `d`, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece [31] and byte-pair [25] representations. To improve computational performance for tasks involving very long sequences, self-attention could be restricted to considering only a neighborhood of size `r` in the input sequence centered around the respective output position. This would increase the maximum path length to `O(n/r)`. We plan to investigate this approach further in future work.
 
-如表1所示，自注意力层以恒定数量的顺序执行操作连接所有位置，而递归层需要O(n)顺序操作。就计算复杂度而言，当序列长度n小于表示维度d时，自注意层比递归层更快，这在机器翻译中最先进的模型所使用的句子表示中是最常见的情况，如词片[31]和字节对[25]表示。为了提高涉及超长序列的任务的计算性能，自我关注可以被限制为只考虑输入序列中以各自输出位置为中心的大小为r的邻域。这将使最大路径长度增加到O(n/r)。我们计划在未来的工作中进一步研究这种方法。
+如表1所示，自注意力层以恒定数量的顺序执行操作连接所有位置，而递归层需要`O(n)`顺序操作。就计算复杂度而言，当序列长度`n`小于表示维度`d`时，自注意层比递归层更快，这在机器翻译中最先进的模型所使用的句子表示中是最常见的情况，如词片[31]和字节对[25]表示。为了提高涉及超长序列的任务的计算性能，自我关注可以被限制为只考虑输入序列中以各自输出位置为中心的大小为`r`的邻域。这将使最大路径长度增加到`O(n/r)`。我们计划在未来的工作中进一步研究这种方法。
 
-A single convolutional layer with kernel width k < n does not connect all pairs of input and output positions. Doing so requires a stack of O(n/k) convolutional layers in the case of contiguous kernels, or   in the case of dilated convolutions [15], increasing the length of the longest paths between any two positions in the network. Convolutional layers are generally more expensive than recurrent layers, by a factor of k. Separable convolutions [6], however, decrease the complexity considerably, to  . Even with   , however, the complexity of a separable convolution is equal to the combination of a self-attention layer and a point-wise feed-forward layer, the approach we take in our model.
+A single convolutional layer with kernel width `k < n` does not connect all pairs of input and output positions. Doing so requires a stack of `O(n/k)` convolutional layers in the case of contiguous kernels, or   in the case of dilated convolutions [15], increasing the length of the longest paths between any two positions in the network. Convolutional layers are generally more expensive than recurrent layers, by a factor of `k`. Separable convolutions [6], however, decrease the complexity considerably, to  . Even with   , however, the complexity of a separable convolution is equal to the combination of a self-attention layer and a point-wise feed-forward layer, the approach we take in our model.
 
-一个内核宽度为k<n的单一卷积层并不能连接所有的输入和输出位置对。在连续核的情况下，这样做需要堆叠 O(n/k)个卷积层，或者在扩张卷积的情况下需要堆叠  ，增加网络中任何两个位置之间最长路径的长度。卷积层通常比递归层更昂贵，是k的倍数。然而，可分离卷积[6]大大降低了复杂性，达到 。然而，即使在k=n的情况下，可分离卷积的复杂度也等于自注意力层和点状前馈层的组合，也就是我们模型中采用的方法。
+一个内核宽度为`k < n`的单一卷积层并不能连接所有的输入和输出位置对。在连续核的情况下，这样做需要堆叠 `O(n/k)`个卷积层，或者在扩张卷积的情况下需要堆叠  ，增加网络中任何两个位置之间最长路径的长度。卷积层通常比递归层更昂贵，是`k`的倍数。然而，可分离卷积[6]大大降低了复杂性，达到 。然而，即使在`k = n`的情况下，可分离卷积的复杂度也等于自注意力层和点状前馈层的组合，也就是我们模型中采用的方法。
 
 As side benefit, self-attention could yield more interpretable models. We inspect attention distributions from our models and present and discuss examples in the appendix. Not only do individual attention heads clearly learn to perform different tasks, many appear to exhibit behavior related to the syntactic and semantic structure of the sentences.
 
@@ -210,9 +219,9 @@ We used the Adam optimizer [17] with  ，  and  . We varied the learning rate ov
 
 我们使用亚当优化器[17]，  ， 且 。在训练过程中，我们改变了学习率，根据公式：
 
-This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used   .
+This corresponds to increasing the learning rate linearly for the first `warmup_steps` training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used   .
 
-这相当于在第一个warmup_steps训练步骤中线性增加学习率，此后按步骤数的反平方根比例减少。我们使用 。
+这相当于在第一个`warmup_steps`训练步骤中线性增加学习率，此后按步骤数的反平方根比例减少。我们使用 。
 
 ### 5.4 正则化
 
@@ -220,13 +229,20 @@ We employ three types of regularization during training:
 
 Residual Dropout We apply dropout [27] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of  .
 
-**Label Smoothing** During training, we employed label smoothing of value   [30]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
+
+
+## 训练与正则化
+
+### Label Smoothing
+During training, we employed label smoothing of value   [30]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
 
 我们在训练过程中采用了三种类型的正则化。
 
-Residual Dropout 我们对每个子层的输出应用了dropout[27]，然后再将其添加到子层的输入并进行规范化处理。此外，我们对编码器和解码器堆栈中的嵌入和位置编码的总和进行剔除。对于基础模型，我们使用 的比率。
+### Residual Dropout
+我们对每个子层的输出应用了dropout[27]，然后再将其添加到子层的输入并进行规范化处理。此外，我们对编码器和解码器堆栈中的嵌入和位置编码的总和进行剔除。对于基础模型，我们使用 的比率。
 
-**标签平滑**在训练中，我们采用了标签平滑值 [30]。这损害了迷惑性，因为模型学会了更多的不确定性，但提高了准确率和BLEU得分。
+### 标签平滑
+在训练中，我们采用了标签平滑值 [30]。这损害了迷惑性，因为模型学会了更多的不确定性，但提高了准确率和BLEU得分。
 
 ## 7 结论
 

@@ -1,3 +1,4 @@
+
 # Kimi K2.5来了！老金用了一天发现这玩意儿要逆天！
 
 > 来源：[https://my.feishu.cn/docx/Tn3sdqPPRo0SIzxepBycHTd3nDc](https://my.feishu.cn/docx/Tn3sdqPPRo0SIzxepBycHTd3nDc)
@@ -22,7 +23,7 @@ Kimi K2.5用的是MoE（混合专家）架构，总参数1.04万亿。
 
 ## 原生多模态，不是后期拼凑
 
-**Kimi **K2.5最牛逼的地方是原生多模态。
+**Kimi K2.5最牛逼的地方是原生多模态。**
 
 什么叫原生？
 
@@ -36,7 +37,7 @@ Kimi K2.5用的是MoE（混合专家）架构，总参数1.04万亿。
 
 ## Agent Swarm集群协作
 
-**Kimi K2.5还有**个杀手锏：Agent Swarm。
+**Kimi K2.5**还有个杀手锏：Agent Swarm。
 
 简单说就是多个AI智能体协同工作。
 
@@ -96,7 +97,7 @@ Kimi K2.5：
 
 ![](img/f2c15f006599cfa8bf76ad739efb381a.png)
 
-直接使用官网：https://www.kimi.com/
+直接使用官网：`https://www.kimi.com/`
 
 老金我先来测试个 **PPT** 看看。
 
@@ -124,11 +125,11 @@ PPT版，不像以前会串行串内容了:
 
 ![](img/ab713f3c894ab52bb48a76517e4ab0c2.png)
 
-[测试.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjypbJWMQo3J0Rx9OWhcrIXOnud)
+[`测试.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjypbJWMQo3J0Rx9OWhcrIXOnud)
 
 ## 开源意味着什么
 
-**Kimi **K2.5开源，对开发者来说是真正的福音。
+**Kimi K2.5开源，对开发者来说是真正的福音。**
 
 本地部署：下载模型，本地跑，想怎么用就怎么用。
 

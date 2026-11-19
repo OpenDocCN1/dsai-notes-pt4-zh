@@ -1,11 +1,9 @@
+
 # 🧣：商业化主视觉设计全流程
 
 > 来源：[https://aigcreative.feishu.cn/docx/HrdgdH6uVoybcfx3ZAIcCPl8n4e](https://aigcreative.feishu.cn/docx/HrdgdH6uVoybcfx3ZAIcCPl8n4e)
-
 > AI 创意：@大鹏
-
 > 后期合成：@大鹏
-
 > 设计指导：@原叔
 
 ![](img/727a5c7ea56556b14aea445fcf3b4d9c.png)
@@ -26,4 +24,4 @@
 
 ![](img/0a3909c2fadcf784e6e434737ec9062f.png)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

@@ -1,3 +1,4 @@
+
 # MindSearch 彩蛋关卡
 
 > 来源：[https://aicarrier.feishu.cn/docx/LXnodtKDEoUZyvxFcRpcqYgqncf](https://aicarrier.feishu.cn/docx/LXnodtKDEoUZyvxFcRpcqYgqncf)
@@ -11,6 +12,6 @@
 | 3 | MindSearch 短视频（B 站或者视频号）及文章流量量超过 1w 阅读量 | 3600算力点 |
 | 4 | MindSearch 短视频和推文被官方收录 | 3600 算力点 |
 
-文档：https://github.com/InternLM/Tutorial/tree/camp3/docs/EasterEgg/MindSearch
+文档：`https://github.com/InternLM/Tutorial/tree/camp3/docs/EasterEgg/MindSearch`
 
 ![](img/63413b4e0b64d4cbc4aae01f7ee1b459.png)

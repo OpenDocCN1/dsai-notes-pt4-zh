@@ -1,12 +1,13 @@
+
 # 从Sora2到TapNow：AI视频创作，差的是这套专业流程
 
-> 来源：[https://xatc0v8uz5m.feishu.cn/docx/BXfGdIgmqoAKaPxmFXnc2OrlnXg](https://xatc0v8uz5m.feishu.cn/docx/BXfGdIgmqoAKaPxmFXnc2OrlnXg)
+> 来源：https://xatc0v8uz5m.feishu.cn/docx/BXfGdIgmqoAKaPxmFXnc2OrlnXg
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/EXh_dticR6T948FongIGAg)q.com/s/EXh_dtic...
+> 🔗 原文链接：https://mp.weixin.qq.com/s/EXh_dticR6T948FongIGAg
 
 > ⏰ 剪存时间：2025-11-07 12:11:43 (UTC+8)
 
-> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+> ✂️ 本文档由 [飞书剪存](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
 
 原创 花叔 花叔2025年11月7日 08:04
 
@@ -18,7 +19,7 @@
 
 更有趣的是，TapNow把这个项目创作的所有AI流程都在社区公开了。你可以直接到他们的官网上完整查看，甚至复制这个TVC用AI制作的全流程（非常适合用来学习）。
 
-你可以直接通过这个链接去看看导演是怎么把这个百万级的TVC搭出来的：https://app.tapnow.ai/#/home/taptv/1/6c455902-0822-48c1-9a68-4c2f3da1754e?tap_referral=huas
+你可以直接通过这个链接去看看导演是怎么把这个百万级的TVC搭出来的：`https://app.tapnow.ai/#/home/taptv/1/6c455902-0822-48c1-9a68-4c2f3da1754e?tap_referral=huas`
 
 并且，不止于此。
 
@@ -56,15 +57,15 @@ AI已经能做视觉生成、基础运镜、声音生成。Sora2、Veo3.1，以�
 
 但AI还做不好的是：
 
-+   不知道该拍什么镜头
++ 不知道该拍什么镜头
 
-+   不知道该用什么运镜
++ 不知道该用什么运镜
 
-+   不知道该怎么把控节奏
++ 不知道该怎么把控节奏
 
-+   不知道该怎么优化质感
++ 不知道该怎么优化质感
 
-问题本质：不是工具不行，是 **不懂专业流程 **。
+问题本质：不是工具不行，是 `不懂专业流程`。
 
 Sora2/Veo3.1给了你画笔，但没教你怎么画画。
 
@@ -82,7 +83,7 @@ TapNow不只是生成工具，而是"专业流程的工具化"。
 
 五大核心功能，对应 TVC 制作流程 ：
 
-**1、找灵感**
+### 1、找灵感
 
 TapNow收集了人类历史上大量的广告视频和电影镜头，让你可以用自然语言去找寻灵感。
 
@@ -91,7 +92,7 @@ TapNow收集了人类历史上大量的广告视频和电影镜头，让你可�
 | ![](img/1f896c768f903071fa657155f26c82d7.png) | ![](img/09f396bcb85164cb55c6d80017a216cc.png) |
 | --- | --- |
 
-**2、一键拉片（分镜头解析）**
+### 2、一键拉片（分镜头解析）
 
 在TapNow找到合适的广告片，或者你自己上传广告片之后，可以让TapNow自动分析分镜/文案/节奏，再自动倒推提示词。
 
@@ -101,8 +102,7 @@ TapNow收集了人类历史上大量的广告视频和电影镜头，让你可�
 
 相当于把导演的脑子翻译成了AI能理解的语言。
 
-
-**3、Storyboard**
+### 3、Storyboard
 
 你可以在TapNow上管理分镜，可视化整理创意思路。
 
@@ -110,7 +110,7 @@ TVC不是生成一个镜头就完事了，而是很多镜头的组合。Storyboa
 
 ![](img/3c8e5247e6fb733a771d62199bc5ad4a.png)
 
-**4、All in one画布**
+### 4、All in one画布
 
 文字 → 图片 → 视频 → 声音，一站式完成。
 
@@ -124,7 +124,7 @@ TVC不是生成一个镜头就完事了，而是很多镜头的组合。Storyboa
 
 ![](img/154f04209cb8ed8743e85bffd9e1264a.png)
 
-**5、开源创作社区**
+### 5、开源创作社区
 
 相比Sora2做了个类抖音的AI内容信息流，我觉得TapNow的开源社区对我而言更有价值。从TapTV频道你不止可以看到社区精选出来的其他人用AI创作的TVC广告，你甚至还能查看其他人完整的创作流程，也可以去复制使用其他人的工作流模板，从案例中学习专业流程。
 
@@ -134,21 +134,21 @@ TVC不是生成一个镜头就完事了，而是很多镜头的组合。Storyboa
 
 这里再给大家推荐几个风格迥异，但我觉得做得非常出色的视频短片（不止是TVC！）：
 
-百事可乐TVC广告：https://app.tapnow.ai/#/home/taptv/1/160d2306-d788-4925-8981-f3639c99bd5a?tap_referral=huas
+百事可乐TVC广告：`https://app.tapnow.ai/#/home/taptv/1/160d2306-d788-4925-8981-f3639c99bd5a?tap_referral=huas`
 
-Rick&Morty风格的动画：https://app.tapnow.ai/#/home/taptv/1/de1c9c5e-008e-40d1-9629-6c680dcfe8aa?tap_referral=huas
+Rick&Morty风格的动画：`https://app.tapnow.ai/#/home/taptv/1/de1c9c5e-008e-40d1-9629-6c680dcfe8aa?tap_referral=huas`
 
-真假难辨的KPOP MV：https://app.tapnow.ai/#/home/taptv/1/6c6f2c40-509f-4a09-a5ef-68522997762d?tap_referral=huas
+真假难辨的KPOP MV：`https://app.tapnow.ai/#/home/taptv/1/6c6f2c40-509f-4a09-a5ef-68522997762d?tap_referral=huas`
 
 你可以看到导演是怎么设计分镜的、用了什么运镜、怎么把控节奏的。不只是看，还能复制工作流模板，直接用在自己的项目里。
 
 ![](img/2286f8af9012ee40c698b42ca527a67f.png)
 
-## **TapNow适合谁用？**
+## TapNow适合谁用？
 
 我觉得它覆盖了三种层次的创作者，每个人的使用方式不太一样。
 
-如果你是专业创作者，想做影视级TVC ：
+如果你是专业创作者，想做影视级TVC：
 
 你可能已经有导演思维了，知道该怎么设计分镜、怎么把控节奏。TapNow对你的价值是：大幅提升效率。
 
@@ -156,7 +156,7 @@ Rick&Morty风格的动画：https://app.tapnow.ai/#/home/taptv/1/de1c9c5e-008e-4
 
 你可以用"一键拉片"学习其他导演的案例，用Storyboard管理整个项目的分镜，用运镜控制实现你想要的镜头效果。省下的是执行时间，专注的是创意本身。
 
-如果你是品牌营销人员，需要快速产出内容 ：
+如果你是品牌营销人员，需要快速产出内容：
 
 你可能不懂专业的TVC制作流程，但需要定期产出品牌视频。以前要么外包（成本高、周期长），要么用模板（千篇一律、没特色）。
 
@@ -164,7 +164,7 @@ TapNow的社区案例和工作流模板，相当于给了你一套"半成品"。
 
 这种"零专业门槛也能出片"，降低的是学习成本。
 
-如果你是小企业主或个人创作者，想做电商短视频 ：
+如果你是小企业主或个人创作者，想做电商短视频：
 
 你可能连什么是"分镜"都不太清楚，就是想快速做个产品介绍视频，或者日常品宣内容。
 
@@ -188,12 +188,12 @@ Sora2/Veo3.1火了，但你还是做不好TVC——差的不是工具，是专�
 
 TapNow通过工具化降低门槛，把导演的思维拆解成可学习、可复用的流程。
 
-**创造力仍是人的 **。
+`创造力仍是人的`。
 
 AI是放大器，不是替代品。
 
-**相关链接 **：
+`相关链接`：
 
-TapNow产品官网：https://app.tapnow.ai/?tap_referral=huas
+TapNow产品官网：`https://app.tapnow.ai/?tap_referral=huas`
 
-TapNow文档：https://docs.tapnow.ai/zh
+TapNow文档：`https://docs.tapnow.ai/zh`

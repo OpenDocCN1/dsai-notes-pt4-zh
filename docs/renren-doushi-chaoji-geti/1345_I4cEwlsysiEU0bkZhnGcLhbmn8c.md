@@ -1,12 +1,13 @@
+
 # 2023-06-27【日本第二大银行瑞惠】与微软合作，为45000名员工提供ChatGPT等
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/OMl8dHI82oiMDwx4i3BcQnb9nUh](https://xuqiwei1986.feishu.cn/docx/OMl8dHI82oiMDwx4i3BcQnb9nUh)
 
-https://www.163.com/dy/article/I8AU56CS055240KW.html
+`https://www.163.com/dy/article/I8AU56CS055240KW.html`
 
 6月27日，日本第二大银行瑞穗（Mizuho）宣布与微软Azure OpenAI达成技术合作，为日本地区的45,000名员工提供ChatGPT等生成式AI服务。
 
-早在今年4月14日，瑞穗就在官网发布消息，考虑使用微软**Azure**** OpenAI**来加速数字化转型实现降本增效。例如，使用ChatGPT起草金融合同、审查法律文件、自动生成金融报告摘要等。
+早在今年4月14日，瑞穗就在官网发布消息，考虑使用微软Azure OpenAI来加速数字化转型实现降本增效。例如，使用ChatGPT起草金融合同、审查法律文件、自动生成金融报告摘要等。
 
 瑞穗数字化负责人牛笃君刚表示，贷款业务部门将首先接入微软Azure OpenAI服务，这使得瑞穗成为日本首批将生成式AI，应用在实际业务中的金融机构之一。
 
@@ -36,7 +37,7 @@ https://www.163.com/dy/article/I8AU56CS055240KW.html
 
 宫川润一说：“孙正义（软银创始人）长期以来非常看好通过AI的力量改变世界。最近他召集了很多工程师来讨论ChatGPT的发展潜力。”
 
-**关于瑞穗金融集团**
+## 关于瑞穗金融集团
 
 日本瑞穗金融集团是2000年9月29日由第一劝业银行、富士银行和日本兴业银行组成，这是日本历史上最大的银行合并案例。
 

@@ -1,3 +1,4 @@
+
 # Coze+玄门正念视频制作
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/ZLL2dnmjyoXDAExSWwxcUBg2nVh](https://zinxkclpk97.feishu.cn/docx/ZLL2dnmjyoXDAExSWwxcUBg2nVh)
@@ -18,7 +19,7 @@
 
 [风水视频.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RPbubkq7folHnexxGIkc23uJnfg)
 
-制作拆解
+## 制作拆解
 
 视频有两句开场白，字幕包含动画特效，需要单独设计
 
@@ -28,19 +29,25 @@
 
 布局相对简单，文字居中，左右两侧搭配logo字样
 
-看下工作流设计
+## 工作流设计
 
 ![](img/93420adcea644a612333586fcb0e88c1.png)
 
 ![](img/f79411656b76c13b6fc258d72ccb0d3a.png)
 
+## 输入参数
+
 输入参数，我们将主题、关键词、背景图等单独拎出来，动态传入
 
 ![](img/181defeb59029f3c7c3176b3e47b89bf.png)
 
+## 大模型文案生成
+
 由大模型根据主题生成相关文案，这里选择的是DeepSeek模型，模型输出标题、开场白、文案。
 
 ![](img/471bed1773aa385ba8f9ab48a3dc4c69.png)
+
+## 提示词参考
 
 生文提示词参考如下：
 
@@ -67,11 +74,13 @@
 关键字
 ```
 
-封面配图
+## 封面配图
 
 封面配图包括左上角两个文字、logo、背景图，我们使用画板来实现。排版、设置字体大小、图片尺寸，比较简单就不展开细节了。
 
 ![](img/97e3b3319b8d9b4de954ef69ddff8c52.png)
+
+## 开场白处理
 
 开场白
 
@@ -83,25 +92,25 @@
 
 ![](img/00652ea82b1050add3a1556b6fee9ece.png)
 
-字符分割
+### 字符分割
 
 ![](img/6bad6e7927d4d70f9546ab8ad6dc1165.png)
 
-剔除空白符
+### 剔除空白符
 
 ![](img/2ddef32fc4c80b5cff65817d72df0ba8.png)
 
 继续利用文字转音频插件，批量生成配音，搭配获取音频时间插件，批量获取每段音频的时长。
 
-批处理转音频
+### 批处理转音频
 
 ![](img/d3b2193b788abef40ff8f7b84ea8f6c3.png)
 
-获取音频时长
+### 获取音频时长
 
 ![](img/a2dba0a5efa9fde04b72be176c547392.png)
 
-正文配音
+## 正文配音
 
 同样的步骤，处理模型输出的正文内容，将文案进行分句处理后，批量转音频并获取音频时长。
 
@@ -113,148 +122,156 @@
 
 代码组合环节，需要关注几点，按照拆解，将开场白（字幕、配音、特效、转场），正文（字幕、配音、背景图、左右logo、背景音乐）的数据构造出来，其中重点关注需要计算每个元素的轨道时间线。
 
+## 素材组合
+
 ![](img/0e2cc7abfc0f37b46c578a8b586d31da.png)
 
 ![](img/a66abc3d256cb136ea1b462104ff93a4.png)
 
 ![](img/ffac98478913780b258aec122cda7686.png)
 
-代码示例
+## 代码示例
+
+
+
+# 视频素材处理与关键帧实现
+
+## 素材处理与代码节点
 
 ```
 import json
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    audio_list = params[&#x27;audio_list&#x27;]
-    duration_list = params[&#x27;duration_list&#x27;]
-    text_list = params[&#x27;caption_list&#x27;]
+    audio_list = params['audio_list']
+    duration_list = params['duration_list']
+    text_list = params['caption_list']
     
     captions1 = []
     audios = []
     captions2 = []
     #处理字幕音频时间线
-    if text_list and len(text_list)&gt;=2:
+    if text_list and len(text_list)>=2:
         captions1.append({
-                &#x27;text&#x27;: text_list[0],
-                &#x27;start&#x27;: 0,
-                &#x27;end&#x27;: int(duration_list[0][&#x27;duration&#x27;]*1000000)+int(duration_list[1][&#x27;duration&#x27;]*1000000),
-                &quot;in_animation&quot;:&quot;激光雕刻&quot;,&quot;out_animation&quot;:&quot;&quot;,
-                &quot;in_animation_duration&quot;:int(duration_list[0][&#x27;duration&#x27;]*1000000)
+                'text': text_list[0],
+                'start': 0,
+                'end': int(duration_list[0]['duration']*1000000)+int(duration_list[1]['duration']*1000000),
+                "in_animation":"激光雕刻","out_animation":"",
+                "in_animation_duration":int(duration_list[0]['duration']*1000000)
             })
         audios.append({
-            &quot;audio_url&quot;: audio_list[0][&#x27;data&#x27;][&quot;link&quot;],
-            &quot;duration&quot;: int(duration_list[0][&#x27;duration&#x27;]*1000000),
-            &quot;start&quot;: 0,
-            &quot;end&quot;: int(duration_list[0][&#x27;duration&#x27;]*1000000),
-            &quot;audio_effect&quot;:&quot;环绕回声&quot;
+            "audio_url": audio_list[0]['data']["link"],
+            "duration": int(duration_list[0]['duration']*1000000),
+            "start": 0,
+            "end": int(duration_list[0]['duration']*1000000),
+            "audio_effect":"环绕回声"
         })
         captions2.append({
-                &#x27;text&#x27;: text_list[1],
-                &#x27;start&#x27;: int(duration_list[0][&#x27;duration&#x27;]*1000000),
-                &#x27;end&#x27;: int(duration_list[0][&#x27;duration&#x27;]*1000000)+int(duration_list[1][&#x27;duration&#x27;]*1000000),
-                &quot;in_animation&quot;:&quot;电光&quot;,&quot;out_animation&quot;:&quot;&quot;,
-                &quot;in_animation_duration&quot;:int(duration_list[1][&#x27;duration&#x27;]*1000000)
+                'text': text_list[1],
+                'start': int(duration_list[0]['duration']*1000000),
+                'end': int(duration_list[0]['duration']*1000000)+int(duration_list[1]['duration']*1000000),
+                "in_animation":"电光","out_animation":"",
+                "in_animation_duration":int(duration_list[1]['duration']*1000000)
             })
         audios.append({
-            &quot;audio_url&quot;: audio_list[1][&#x27;data&#x27;][&quot;link&quot;],
-            &quot;duration&quot;: int(duration_list[1][&#x27;duration&#x27;]*1000000),
-            &quot;start&quot;: int(duration_list[0][&#x27;duration&#x27;]*1000000),
-            &quot;end&quot;: int(duration_list[0][&#x27;duration&#x27;]*1000000)+int(duration_list[1][&#x27;duration&#x27;]*1000000),
-            &quot;audio_effect&quot;:&quot;环绕回声&quot;
+            "audio_url": audio_list[1]['data']["link"],
+            "duration": int(duration_list[1]['duration']*1000000),
+            "start": int(duration_list[0]['duration']*1000000),
+            "end": int(duration_list[0]['duration']*1000000)+int(duration_list[1]['duration']*1000000),
+            "audio_effect":"环绕回声"
         })
-    pre_endtime = int(duration_list[0][&#x27;duration&#x27;]*1000000)+int(duration_list[1][&#x27;duration&#x27;]*1000000)
+    pre_endtime = int(duration_list[0]['duration']*1000000)+int(duration_list[1]['duration']*1000000)
     # 第二段字幕
-    audio_list2 = params[&#x27;audio_list_2&#x27;]
-    duration_list2 = params[&#x27;duration_list_2&#x27;]
-    caption_list2 = params[&#x27;caption_list_2&#x27;]
+    audio_list2 = params['audio_list_2']
+    duration_list2 = params['duration_list_2']
+    caption_list2 = params['caption_list_2']
     caption3 = []
     start = pre_endtime
     end = 0
     for index,item in enumerate(caption_list2):
-        duration = (duration_list2[index][&#x27;duration&#x27;]*1000000)
+        duration = (duration_list2[index]['duration']*1000000)
         end = start+duration
         caption3.append({
-                &#x27;text&#x27;: item,
-                &#x27;start&#x27;: start,
-                &#x27;end&#x27;: end,
-                &quot;in_animation&quot;:&quot;激光雕刻&quot;,&quot;out_animation&quot;:&quot;&quot;,
-                &quot;in_animation_duration&quot;:duration
+                'text': item,
+                'start': start,
+                'end': end,
+                "in_animation":"激光雕刻","out_animation":"",
+                "in_animation_duration":duration
             })
         audios.append({
-            &quot;audio_url&quot;: audio_list2[index][&#x27;data&#x27;][&quot;link&quot;],
-            &quot;duration&quot;: duration,
-            &quot;start&quot;: start,
-            &quot;end&quot;: end,
-            &quot;audio_effect&quot;:&quot;环绕回声&quot;
+            "audio_url": audio_list2[index]['data']["link"],
+            "duration": duration,
+            "start": start,
+            "end": end,
+            "audio_effect":"环绕回声"
         })
         start = end
 
     #固定右侧文字，未使用暂时保留
     # rightCaption = [{
-    #             &#x27;text&#x27;: &quot;xxx&quot;,
-    #             &#x27;start&#x27;: pre_endtime,
-    #             &#x27;end&#x27;: end,
-    #             &quot;in_animation&quot;:&quot;&quot;,&quot;out_animation&quot;:&quot;&quot;
+    #             'text': "xxx",
+    #             'start': pre_endtime,
+    #             'end': end,
+    #             "in_animation":"","out_animation":""
     #         }]
     rightLogo = [{
-        &quot;image_url&quot;: params[&#x27;right_logo&#x27;],
-        &quot;width&quot;: 100,
-        &quot;height&quot;: 600,
-        &quot;start&quot;: pre_endtime,
-        &quot;end&quot;: end,
-        &quot;in_animation&quot;: &quot;&quot;, 
-        &quot;out_animation&quot;: &quot;&quot;
+        "image_url": params['right_logo'],
+        "width": 100,
+        "height": 600,
+        "start": pre_endtime,
+        "end": end,
+        "in_animation": "", 
+        "out_animation": ""
     }]
     
     leftCaption = [{
-                &#x27;text&#x27;: params[&#x27;left_text&#x27;],
-                &#x27;start&#x27;: pre_endtime,
-                &#x27;end&#x27;: end,
-                &quot;in_animation&quot;:&quot;电光&quot;,
-                &quot;in_animation_duration&quot;:2000000,
-                &quot;out_animation&quot;:&quot;&quot;
+                'text': params['left_text'],
+                'start': pre_endtime,
+                'end': end,
+                "in_animation":"电光",
+                "in_animation_duration":2000000,
+                "out_animation":""
             }]
     
 
     # bgm音乐开始时间，结束时间，为第一段音频结束时间
     bgmAudio = [{
-        &quot;audio_url&quot;: &quot;https://ve-template-0920.oss-cn-shanghai.aliyuncs.com/uploads/1747499991352_d9xbyb9q7vm.mp3&quot;,
-        &quot;duration&quot;: end,
-        &quot;start&quot;: int(duration_list[0][&#x27;duration&#x27;]*1000000),
-        &quot;end&quot;: end,
-        &quot;volume&quot;:0.5,
+        "audio_url": "https://ve-template-0920.oss-cn-shanghai.aliyuncs.com/uploads/1747499991352_d9xbyb9q7vm.mp3",
+        "duration": end,
+        "start": int(duration_list[0]['duration']*1000000),
+        "end": end,
+        "volume":0.5,
     }]
 
     bgImage = [{
-        &quot;image_url&quot;: params[&#x27;bgImage_black&#x27;],
-        &quot;width&quot;: 1920,
-        &quot;height&quot;: 1080,
-        &quot;start&quot;: 0,
-        &quot;end&quot;: pre_endtime,
-        &quot;in_animation&quot;: &quot;&quot;, 
-        &quot;out_animation&quot;: &quot;&quot;,
-        &quot;transition&quot;: &quot;白色烟雾&quot;, 
-        &quot;transition_duration&quot;: 1.5*1000000
+        "image_url": params['bgImage_black'],
+        "width": 1920,
+        "height": 1080,
+        "start": 0,
+        "end": pre_endtime,
+        "in_animation": "", 
+        "out_animation": "",
+        "transition": "白色烟雾", 
+        "transition_duration": 1.5*1000000
     },{
-        &quot;image_url&quot;: params[&#x27;bgImage&#x27;],
-        &quot;width&quot;: 1920,
-        &quot;height&quot;: 1080,
-        &quot;start&quot;: pre_endtime,
-        &quot;end&quot;: end,
-        &quot;in_animation&quot;: &quot;&quot;,
-        &quot;out_animation&quot;: &quot;&quot;,
+        "image_url": params['bgImage'],
+        "width": 1920,
+        "height": 1080,
+        "start": pre_endtime,
+        "end": end,
+        "in_animation": "",
+        "out_animation": "",
     }]
     
     # 构建输出对象
     ret: Output = {
-        &quot;captions1&quot;: json.dumps(captions1),
-        &quot;captions2&quot;: json.dumps(captions2),
-        &quot;caption3&quot;: json.dumps(caption3),
-        &quot;audios&quot;: json.dumps(audios),
-        &quot;bgmAudio&quot;:json.dumps(bgmAudio),
-        &quot;bgImage&quot;:json.dumps(bgImage),
-        &quot;leftCaption&quot;:json.dumps(leftCaption),
-        &quot;rightLogo&quot;:json.dumps(rightLogo)
+        "captions1": json.dumps(captions1),
+        "captions2": json.dumps(captions2),
+        "caption3": json.dumps(caption3),
+        "audios": json.dumps(audios),
+        "bgmAudio":json.dumps(bgmAudio),
+        "bgImage":json.dumps(bgImage),
+        "leftCaption":json.dumps(leftCaption),
+        "rightLogo":json.dumps(rightLogo)
     }
     return ret
 ```
@@ -263,7 +280,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/f786ecb7a607b232063eb99444eb572b.png)
 
-关键帧特效
+## 关键帧特效
 
 为背景图设置关键帧，实现缩放和移动的效果。
 
@@ -273,46 +290,46 @@ async def main(args: Args) -&gt; Output:
 
 ```
 import json
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    segment_infos = params[&#x27;segment_infos&#x27;]
+    segment_infos = params['segment_infos']
     # 为第二张图打关键帧
     segment = segment_infos[1]
-    id = segment[&#x27;id&#x27;]
-    start = segment[&#x27;start&#x27;]
-    end = segment[&#x27;end&#x27;]
+    id = segment['id']
+    start = segment['start']
+    end = segment['end']
 
     # 缩放关键帧
     # 上移关键帧
     keyframes = [
         {
-        &quot;offset&quot;: start,
-        &quot;property&quot;: &quot;UNIFORM_SCALE&quot;,
-        &quot;segment_id&quot;: id,
-        &quot;value&quot;: 5  
+        "offset": start,
+        "property": "UNIFORM_SCALE",
+        "segment_id": id,
+        "value": 5  
         },
         {
-        &quot;offset&quot;: int(end/2),
-        &quot;property&quot;: &quot;UNIFORM_SCALE&quot;,
-        &quot;segment_id&quot;: id,
-        &quot;value&quot;: 2.8
+        "offset": int(end/2),
+        "property": "UNIFORM_SCALE",
+        "segment_id": id,
+        "value": 2.8
         },{
-        &quot;offset&quot;: int(end/2)+1000000,
-        &quot;property&quot;: &quot;KFTypePositionY&quot;,
-        &quot;segment_id&quot;: id,
-        &quot;value&quot;: 0
+        "offset": int(end/2)+1000000,
+        "property": "KFTypePositionY",
+        "segment_id": id,
+        "value": 0
         },
         {
-        &quot;offset&quot;: end-1000000,
-        &quot;property&quot;: &quot;KFTypePositionY&quot;,
-        &quot;segment_id&quot;: id,
-        &quot;value&quot;: -0.8
+        "offset": end-1000000,
+        "property": "KFTypePositionY",
+        "segment_id": id,
+        "value": -0.8
         }
         ]
 
     # 构建输出对象
     ret: Output = {
-        &quot;keyframes&quot;: json.dumps(keyframes)
+        "keyframes": json.dumps(keyframes)
     }
     return ret
 ```
@@ -325,9 +342,11 @@ async def main(args: Args) -&gt; Output:
 
 以上。
 
-涉及剪映插件地址：https://ts.fyshark.com/#/home?user_id=7358
+## 相关链接
 
-扣子体验地址：https://www.coze.cn/store/agent/7505804789767929895?bot_id=true
+涉及剪映插件地址：`https://ts.fyshark.com/#/home?user_id=7358`
+
+扣子体验地址：`https://www.coze.cn/store/agent/7505804789767929895?bot_id=true`
 
 我们在设计智能体或工作流时，同样的需求，每个人的解题思路是不同的，上述案例也仅是我个人的设计视角，如有更好的想法可以品论区留言讨论。同时有需要实现的案例也可以留言，点点关注，后续更新。
 

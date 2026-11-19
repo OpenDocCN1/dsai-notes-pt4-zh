@@ -1,26 +1,16 @@
+
 # AI 语音合成应用方案
 
-> 来源：[https://xmgtoagi.feishu.cn/docx/XsQEdkY03oNxPFxTl6Fckrxlnec](https://xmgtoagi.feishu.cn/docx/XsQEdkY03oNxPFxTl6Fckrxlnec)
+> 来源：https://xmgtoagi.feishu.cn/docx/XsQEdkY03oNxPFxTl6Fckrxlnec
 
-## **异步变声**
+## 异步变声
 
-[可以在 bilibili 看教程部署 https:](https://www.bilibili.com/video/BV1pm4y1z7Gm/?spm_id_from=333.1007.top_right_bar_window_history.content.click)//www.bilibili.com/video/BV1pm4y1z7Gm/
+可以在 [bilibili 看教程部署](https://www.bilibili.com/video/BV1pm4y1z7Gm/)。
 
-> [开](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)[源 github 发布地址
-
-> https://github.com/RV](https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/RVC-beta.7z)C-P[roject/Retrieval-based-Voic](https://pan.baidu.com/s/1vhksr0Eoii1jMMYgl0JAUg)e-Conversion-WebUI
-
-> 一键训练包地址：
-
-> https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/RVC-beta.7z
-
-> （如果下载慢，掐掉多试几次，应该能试到速度快的）
-
-> 有度盘超级会员的可以用度盘
-
-> 链接：https://pan.baidu.com/s/1vhksr0Eoii1jMMYgl0JAUg
-
-> 提取码：psrs
+> 开源 github 发布地址：https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
+> 一键训练包地址：https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/RVC-beta.7z
+> 如果下载慢，掐掉多试几次，应该能试到速度快的。
+> 有度盘超级会员的可以用度盘，链接：https://pan.baidu.com/s/1vhksr0Eoii1jMMYgl0JAUg，提取码：psrs
 
 ![](img/2c51bf420f2eb7fa8d593165b072912e.png)
 
@@ -38,7 +28,7 @@
 
 后续更新大家可以关注 up 主：花儿不哭
 
-## **实时变声**
+## 实时变声
 
 实时变声的 sovits 一键包！基于 sovits4.0
 
@@ -46,7 +36,7 @@
 
 链接：https://pan.baidu.com/s/1Vx0BnpkmPIRziQtORFv-Jg?pwd=INT8 提取码：INT8
 
-不需要安装 python 和 cuda，双击运行
+不需要安装 `python` 和 `cuda`，双击运行
 
 Hugging face 可以直接测试的模型
 
@@ -62,7 +52,7 @@ https://github.com/w-okada/voice-changer
 
 ## 语言声音 AI 模型
 
-使用 AI 的实时语音转换器 （Trainer）
+使用 AI 的实时语音转换器（Trainer）
 
 https://github.com/isletennos/MMVC_Trainer
 

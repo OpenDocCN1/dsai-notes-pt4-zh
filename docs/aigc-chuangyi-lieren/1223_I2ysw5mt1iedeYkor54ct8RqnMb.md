@@ -1,8 +1,9 @@
+
 # 20230330-巨头野心：微软联手OpenAI打造"星际之门"，1000亿美元能否开启AI新纪元？
 
-> 来源：[https://aigcreative.feishu.cn/docx/IjzhdBRQEoSs4nx1e3hcxAfSnJg](https://aigcreative.feishu.cn/docx/IjzhdBRQEoSs4nx1e3hcxAfSnJg)
+> 来源：`https://aigcreative.feishu.cn/docx/IjzhdBRQEoSs4nx1e3hcxAfSnJg`
 
-> 链接：https://mp.weixin.qq.com/s/xfpa5mHwIo9H3hVzChmggw
+> 链接：`https://mp.weixin.qq.com/s/xfpa5mHwIo9H3hVzChmggw`
 
 近日，科技巨头微软与人工智能研究机构OpenAI正在谋划一个宏伟的计划，他们打算共同打造一台前所未有的人工智能超级计算机，名为“星际之门（Stargate）”。这个项目不仅是技术上的一次飞跃，更是对未来计算能力的一次大胆预测。
 
@@ -34,4 +35,4 @@
 
 在这个充满未知的科技发现进程中，微软和OpenAI正携手前行，他们的目标是打造一个更加智能的未来。而“星际之门”项目，就是他们向这个目标迈出的坚实一步。让我们拭目以待，看看这个项目将如何改变我们的世界。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

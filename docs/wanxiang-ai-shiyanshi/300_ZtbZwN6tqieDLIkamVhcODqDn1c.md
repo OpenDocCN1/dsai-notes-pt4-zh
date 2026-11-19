@@ -1,3 +1,4 @@
+
 # 社区共学课件：用智能体搭建爆款 AI 短视频工作流
 
 > 来源：[https://yunyinghui.feishu.cn/docx/MUHZd2BERoSlCAxoqcqcQcj6nqV](https://yunyinghui.feishu.cn/docx/MUHZd2BERoSlCAxoqcqcQcj6nqV)
@@ -12,15 +13,15 @@
 
 [AI智能体变现：教你搭建爆款AI视频工作流.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TEiObZ5dkosyG1xL9VuciYhtn3c)
 
-# 自我介绍
+## 自我介绍
 
 **里兔 Litu**
 
-+   万象 AI 实验室内容创作者
++ 万象 AI 实验室内容创作者
 
-+   扣子平台活跃开发者
++ 扣子平台活跃开发者
 
-+   多平台认证 AIGC 训练师
++ 多平台认证 AIGC 训练师
 
 ![](img/419c50afff643d688e8be6fae78eb6da.png)
 
@@ -34,14 +35,13 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ⼈⼯智能训练师
 
-
 讯飞×Datawhale 「prompt engineer」
 
 ![](img/70703e8854a6187f933fb827931d9eb8.png)
 
 魔塔社区×Datawhale 「agent engineer」
 
-# AI 智能体变现：教你搭建爆款 AI 视频自动化工作流
+## AI 智能体变现：教你搭建爆款 AI 视频自动化工作流
 
 ![](img/480bb32d81faf3fdca2207cbf51b3292.png)
 
@@ -71,16 +71,13 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 **育儿视频工作流**
 
-
 [动物运动会.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DCbrbrvKSojslUxdtKzcOZFanzc)
 
 **动物运动会视频工作流**
 
-
 [裸眼3D.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ic3bbRZjao9vQKxEwoHc1MQIn4e)
 
 **卡通裸眼 3D 视频工作流**
-
 
 [第一人称.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LjNIbX0oDoa7G2x0XiEc8aWPn6f)
 
@@ -110,7 +107,7 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 **橘猫视频**
 
-**课程大纲**
+### 课程大纲
 
 1、认知篇：AI 智能体红利趋势解读
 
@@ -120,11 +117,11 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 4、入局篇：把握 AI 智能体红利的 3 个核心要点
 
-# 1.认知篇：AI 智能体红利趋势解读
+## 1. 认知篇：AI 智能体红利趋势解读
+
+### 国内 AI 智能体风向标
 
 ![](img/2d2657090538b67fab05001f13e5ef8b.png)
-
-## 国内 AI 智能体风向标
 
 ![](img/210abf2c9de208a20d221f286c014b68.png)
 
@@ -138,7 +135,7 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/e48cca8e234db03f07aa448a365f535b.png)
 
-## 国际 AI 智能体风向标
+### 国际 AI 智能体风向标
 
 ![](img/d68375037e121c0e1bc1b84139f4193c.png)
 
@@ -162,7 +159,7 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/f7981a1717f0eb4fc500e18eaba77efd.png)
 
-# 2.变现篇：AI 智能体变现方式和应用场景
+## 2. 变现篇：AI 智能体变现方式和应用场景
 
 ![](img/c68b32f06a955eedbe693d9c31143454.png)
 
@@ -186,12 +183,9 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/62d30ec836eba352c2eb030f29a28967.png)
 
-# 3. 实操篇：用 AI 智能体搭建爆款视频工作流
+## 3. 实操篇：用 AI 智能体搭建爆款视频工作流
 
-![](img/023ea155a5329635deae325e907dab91.png)
-
-## 3.1 首先看下成品
-
+### 3.1 首先看下成品
 
 [348c8513e6c3462c943227f002ce0054.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EOsTbYKKloMzOdxBhr6cMIALnnb)
 
@@ -201,15 +195,15 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/49e57c831131c57fb4eb7375ec46b3a5.png)
 
-## 3.2、搭建自动化视频的 Coze 工作流
+### 3.2 搭建自动化视频的 Coze 工作流
 
 首先看下整体的工作流大图
 
 ![](img/91927af9ae15a96e2e1170c150797328.png)
 
-### 3.2.1.创建工作流
+#### 3.2.1 创建工作流
 
-1.登录 Coze 平台，点击自己的工作空间
+1. 登录 Coze 平台，点击自己的工作空间
 
 打开 coze 官网 https://www.coze.cn/home 注册
 
@@ -219,19 +213,19 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 创建一个工作流，并命名
 
-工作流名称：必须是英文符号，这里输入 makeVideo
+工作流名称：必须是英文符号，这里输入 `makeVideo`
 
 工作流描述：输入中文。这里输入爆款短视频
 
 ![](img/eb2806c8384205790f970cd3362c7061.png)
 
-### 3.2.2. 开始节点设置
+#### 3.2.2 开始节点设置
 
 进入工作流界面后，默认会有两个节点，开始和结束
 
 首先在开始节点配置：
 
-输入的变量名 input，
+输入的变量名 `input`，
 
 然后在默认值和描述里按图配置，当然也可以不写，主要是为了测试时提醒用的。
 
@@ -239,7 +233,7 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/7b621035a63097ca672f8b890374a430.png)
 
-### 3.2.3. 接下来要添加两个大模型节点
+#### 3.2.3 接下来要添加两个大模型节点
 
 一个用于角色形象提示词，一个用于视频的相关说明。大模型都选 Deepseek-V3
 
@@ -263,13 +257,13 @@ Microsoft × LinkedIn -「Career Essentials in Generative AI」
 
 ![](img/9afcd91f849c64e07b906deb5c56dd94.png)
 
-输入：开始-input
+输入：开始-`input`
 
 输出按照提示词来进行配置
 
-输出：新增变量 shot\description\text\style
+输出：新增变量 `shot`、`description`、`text`、`style`
 
-output、变量类型选 Array-Object
+`output`、变量类型选 `Array-Object`
 
 shot:
 
@@ -301,27 +295,27 @@ description:
 - 需确保分镜风格保持一致。
 ```
 
-### 3.2.4 配置提示词优化和视频分镜描述
+#### 3.2.4 配置提示词优化和视频分镜描述
 
 具体看工作流
 
 ![](img/59140da7969897f1a1c0e4636dd5dc68.png)
 
-### 3.3.5 批量生图
+#### 3.3.5 批量生图
 
 ![](img/6e5f0cd49233e7034795c4a4c3783ee2.png)
 
-### 3.3.6 批量图生视频
+#### 3.3.6 批量图生视频
 
 ![](img/ef7933038ca6a03d48f2b73aeffd75b2.png)
 
-### 3.3.7 合并拼接视频+字幕合成
+#### 3.3.7 合并拼接视频+字幕合成
 
 ![](img/0626e361cba9e56c7c3b854b9e2da4a7.png)
 
 ---
 
-### 3.3.8 结束节点
+#### 3.3.8 结束节点
 
 ![](img/da8f9bfe784f18685f4be4bdfff7ecbc.png)
 
@@ -343,11 +337,14 @@ description:
 
 [Coze智能体-视频工作流可复制](https://nqpqwr8lk3j.feishu.cn/wiki/IArGwGxM6irqwxkVW3Sc24HPneV?from=from_copylink)
 
-## 即将上线的一些工作流：
+### 即将上线的一些工作流：
 
 | Nano Banana 卡通手办 | **视频自动人物替换** | **机甲变身实验室** |
+
 | --- | --- | --- |
+
 | **经典 IP 螺旋海报** | **视频风格转绘** | **和自己的卡通互动** |
+
 | **万物合影** | **数字人视频** | **打破次元，和视频的人物互动** |
 
 ![](img/d15719e1ed6af2a63fb9250c3b9394ac.png)
@@ -372,7 +369,9 @@ Nano Banana 卡通手办
 
 ![](img/3661ad3fd4b0e40455828e5f9cd88672.png)
 
-Nano Banana 卡通手办
+
+
+# Nano Banana 卡通手办
 
 ![](img/fa919487b379b4a9de4191ec2d4ef465.png)
 
@@ -384,92 +383,89 @@ Nano Banana 卡通手办
 
 [8ee1fcff38a61d3cb1d6fb6404def575.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UBz7brdCboLT2ExUCmHct8EEnph)
 
-**视频自动人物替换**
+### 视频自动人物替换
 
 ![](img/61492495044cf8358f8c0eb53a6154c8.png)
 
 [wan2.2_00001-audio_visfb_1756201736.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UJZzbAgfJohkuYxWskGcm59enwb)
 
-**机甲变身实验室**
+### 机甲变身实验室
 
 ![](img/68b3f974174776992b49047df04c6638.png)
 
 [wan2.2_00001-audio_xfnnh_1755935756.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cb68bbsu2oeeHhxE1bHcXkw5n6g)
 
-**机甲变身实验室**
+### 机甲变身实验室
 
-
-**视频风格转绘**
+### 视频风格转绘
 
 ![](img/abfc1bd6e55182befe18b7692370e542.png)
 
-**视频风格转绘**
+### 视频风格转绘
 
 ![](img/3f54201ba7d4d926dd6e83ac1b010ebc.png)
 
 [WanVideo2_2_I2V_00001_gjljm_1755326973.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JIoQbcDK3oCQwWxgKhtcVWTAnfw)
 
-**和自己的卡通互动**
+### 和自己的卡通互动
 
 ![](img/75b2097bbd65be872cfadda7c466614e.png)
 
 [WanVideo2_2_I2V_00001_pafdf_1755329606.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GXn9bmjRModSVRxDf9ucTyKFnqe)
 
-**和自己的卡通互动**
+### 和自己的卡通互动
 
 ![](img/49a2a2fad5a81eecb90b9e30c2dd1079.png)
 
 [WanVideo2_2_I2V_00001_crkgy_1755754845.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PksobVEcPoqbcyxih6Qcjapunid)
 
-**和自己的卡通互动**
+### 和自己的卡通互动
 
 ![](img/0b88f030535a8070a6a1e3ed3f767c34.png)
 
 [万物合影.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TWT6b9jl7oQt4vxWSktcX0zNnim)
 
-**万物合影**
+### 万物合影
 
 ![](img/0dc3fbf1c933ffa7af405765032f8623.png)
 
 [512e6967e5670e5025efcaf1410c7c30.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CMKCbgNSVouTKnx6ZijcgbRknDR)
 
-**数字人视频**
+### 数字人视频
 
 ![](img/a0589c376b6f6e89d13eceb3bcb9b58e.png)
 
 [f6897438d468792e224b1c06b798fe20.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YKyxbTwKUoKPB1xlwWZc3Ggvnie)
 
-**数字人视频**
+### 数字人视频
 
 ![](img/c8505077a3e0de263a22bb15e934d513.png)
 
 [040c11f0a0ab58ab1329e8946cc7215a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N2JqbV2UYojL29xp2kucy6b0ndd)
 
-**打破次元，和视频的人物互动**
+### 打破次元，和视频的人物互动
 
 ![](img/f07b841138b2087635d2c93eb83604ea.png)
 
 [AnimateDiff_00001_rzzfj_1756021182 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WnBxb1i0Eo9MUcxMhgrcfEWAnAc)
 
-**打破次元，和视频的人物互动**
+### 打破次元，和视频的人物互动
 
 ---
 
-# 4. 入局篇：把握 AI 智能体红利的 3 个核心要点
+## 4. 入局篇：把握 AI 智能体红利的 3 个核心要点
 
 ![](img/20412c0843a34a1dc64fdec3edab5631.png)
 
 ![](img/94b77109443742546c9e788ddfcde897.png)
 
-## 1）改变认知
+### 1）改变认知
 
 ![](img/1d38f15a5d4bf18eac7bd905d4a4c516.png)
 
-## 2）融入圈子
+### 2）融入圈子
 
 ![](img/f7e9d83443a0253c6bd623a22099ca44.png)
-
-##
 
 ![](img/33d3a1dd4e5b0cb19fedfff9f4870d51.png)
 
@@ -493,9 +489,7 @@ Nano Banana 卡通手办
 
 ![](img/e02f2c8a4a1a291a4ff55eb1f0e0b099.png)
 
-
 ![](img/1278f457633f67bec02f10ee0e72ab85.png)
-
 
 ![](img/25429bdeb564f5b86e6021d5dcde75ca.png)
 
@@ -519,7 +513,7 @@ Nano Banana 卡通手办
 
 ---
 
-## 3）行动拿结果
+### 3）行动拿结果
 
 ![](img/b89af39255ab43a205ee6efee3cc5792.png)
 
@@ -535,21 +529,21 @@ Nano Banana 卡通手办
 
 ---
 
-# 智能体学习交流社群
+## 智能体学习交流社群
 
-1.持续关注并更新** A**I 智能体的相**关**资讯动态，研究报告，赚钱案例，常见问题，已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入。
+1.持续关注并更新 AI 智能体的相关资讯动态，研究报告，赚钱案例，常见问题，已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入。
 
 2.**关于文档负责人大国**：7 年老运营，互联网流量观察家，曾就职于互联网大厂，现研究 AI 实战应用，努力成为最懂 AI 的运营人。
 
-**5000 人飞书学习交流群**
+### 5000 人飞书学习交流群
 
 ![](img/734560b24a1ded36df114bdb3c5a24a7.png)
 
-**5000 人飞书学习交流群**
+### 5000 人飞书学习交流群
 
 ![](img/2fbf1a6dc253dbadc42ffba0128dc6fa.png)
 
-**🛰️入群渠道**
+### 🛰️入群渠道
 
 进群或者加好友了解更多 AI 智能体实战案例
 

@@ -1,10 +1,11 @@
+
 # PyTorch Conf talks backup
 
 > 来源：[https://learning.feishu.cn/docx/PWOQdLh2Rok1QlxXCrocKY7unRg](https://learning.feishu.cn/docx/PWOQdLh2Rok1QlxXCrocKY7unRg)
 
 # Python & Torch Compiler
 
-https://www.youtube.com/watch?v=98enl3C3fps  Part 2
+https://www.youtube.com/watch?v=98enl3C3fps Part 2
 
 PyTorch 2.1 Technical Deep Dive
 
@@ -38,7 +39,7 @@ PyTorch / XLA Dynamo & Triton
 
 Yeounoh Chung & Jiewen Tan, google
 
-cover PyTorch/XLA distributed API in relation with Torch.Dynamo.
+cover `Torch.Dynamo` in relation with PyTorch/XLA distributed API.
 
 we discuss the new PyTorch/XLA SPMD API for automatic parallelization and our latest LLaMA2 training results. PyTorch/XLA SPMD makes it simple for PyTorch developers to distribute their ML workloads (e.g., training & inference with Dynamo) with easy-to-use API, and uses XLA GSPMD, high-performance automatic parallelization system. Under the hood, it transforms the user single-device program into a partitioned one. We will share how we enabled advanced 2D sharding strategies for LLaMA2 using PyTorch/XLA SPMD.
 
@@ -82,7 +83,7 @@ Oct 25, 2023
 
 ![](img/838732f536fa7bcbf31eb99d48803ae4.png)
 
-TTM: Time To Market
+### TTM: Time To Market
 
 ![](img/44490e16c7fe46679048d20ec0da8570.png)
 
@@ -122,7 +123,7 @@ control knob: 控制旋钮：一种旋转设备，用于由人类操作员握住
 
 ![](img/34390c8efd47c0d5412f0192327b1717.png)
 
-![](img/9c068b045ae9ab8201749b362df46448.png)
+![](img/9c068b045ae9ab82019749b362df46448.png)
 
 ## PyTorch History | Major Moments
 
@@ -130,7 +131,7 @@ control knob: 控制旋钮：一种旋转设备，用于由人类操作员握住
 
 ![](img/3b825888e922003a21ffad241f98473e.png)
 
-PyTorch 2.0 is all about compiler
+### PyTorch 2.0 is all about compiler
 
 ![](img/bfd156a9cfbd7a63c38b0b48930ce50e.png)
 

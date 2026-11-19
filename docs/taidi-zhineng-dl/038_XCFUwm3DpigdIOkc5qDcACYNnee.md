@@ -1,3 +1,4 @@
+
 # Linker & Unix ELF
 
 > 来源：[https://learning.feishu.cn/docx/OaDwdj809ooYT9x0vBEcUQmfnVh](https://learning.feishu.cn/docx/OaDwdj809ooYT9x0vBEcUQmfnVh)
@@ -20,15 +21,15 @@ Linker 处在 compiler, architecture & OS 的交叉点上，恰好不落在某�
 
 c/c++ 编译的目标文件类型，有 3 种：
 
-1.  Relocatable Files: .o 文件。compiler or assembly compiler 的输出。
+1.  Relocatable Files: `.o` 文件。compiler or assembly compiler 的输出。
 
 1.  Executable Files: 可以直接 load (copy) 到存储器并执行。Linker 的输出。
 
-1.  Shared Libraries: .so 文件。被动态的加载到存储器并 linking。
+1.  Shared Libraries: `.so` 文件。被动态的加载到存储器并 linking。
 
 目标文件的格式，比较丰富：
 
-1.  贝尔实验室的 Unix 系统使用 a.out
+1.  贝尔实验室的 Unix 系统使用 `a.out`
 
 1.  System V Unix 早期版本用 COFE (Common Object File format，一般目标文件格式）
 
@@ -50,7 +51,7 @@ ELF 是一种封装格式，支持的文件类型很多，除了 3 种目标文�
 
 结构上，包括 1 header + sections。
 
-In 1999, it was chosen as[ the s](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format#86open)tandard binary file format for Unix and Unix-like systems on x86 processors by the 86open project.
+In 1999, it was chosen as [the standard binary file format for Unix and Unix-like systems on x86 processors by the 86open project.](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format#86open)
 
 ![](img/0acb89d4f4a2a855bf492add56d702a1.png)
 
@@ -72,19 +73,18 @@ Linker 是文献不是很好。因为，Linker 处在 compiler, architecture & O
 
 ## demo code
 
-test.cpp
+`test.cpp`
 
 ```
-// cat test.cpp
-#include &lt;iostream&gt;
+#include <iostream>
 
 int main() {
-    std::cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; std::endl;
+    std::cout << "Hello World!" << std::endl;
     return 0;
 }
 ```
 
-run.sh
+`run.sh`
 
 ```
 # cat run.sh
@@ -109,9 +109,9 @@ ELF header 的解释，详见 https://en.wikipedia.org/wiki/Executable_and_Linka
 
 比如，
 
-1.  **前** 4 b**i**t 声明**了****是 **ELF 文件 (45=E,4c=L,46=F), prefixed with the 7f value.
+1.  前 4 bit 声明是 ELF 文件 (45=E, 4c=L, 46=F), prefixed with the 7f value.
 
-1.  然后是 Class field. determine**s the **architectu**re. 32**-bit (=01) or 64-bit (=02)
+1.  然后是 Class field. determine the architecture. 32-bit (=01) or 64-bit (=02)
 
 ![](img/18133fdef43e4a5a277a1093592ede46.png)
 

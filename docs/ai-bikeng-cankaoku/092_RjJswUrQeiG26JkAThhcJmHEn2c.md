@@ -1,3 +1,4 @@
+
 # Antigravity Tools教程
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/QoKzdeK9OoNCOQxXgXrcGDeKneh](https://xodnytdcaw.feishu.cn/docx/QoKzdeK9OoNCOQxXgXrcGDeKneh)
@@ -6,18 +7,14 @@ Antigravity Tool是一个把 Antigravity 里面的模型转成标准 API，给 C
 
 ## 安装客户端
 
-https://github.com/lbjlaq/Antigrav[ity-Ma](https://github.com/nguyenphutrong/quotio)nager   类似的项目：quotio
+https://github.com/lbjlaq/Antigrav[ity-Ma](https://github.com/nguyenphutrong/quotio)nager 类似的项目：quotio
 
 在 Antigravity Tools 桌面软件添加账号，打开浏览器通过谷歌账号登录 Antigravity
 
 > 1. 打开“Accounts / 账号” → “添加账号” → “OAuth”。
-
 > 2. 弹窗会在点击按钮前预生成授权链接；点击链接即可复制到系统剪贴板，然后用你希望的浏览器打开并完成授权。
-
 > 3. 授权完成后浏览器会打开本地回调页并显示“✅ 授权成功!”。
-
 > ⚠️：授权登录不了的话，可以使用开启了“TUN模式"或“虚拟网卡模式”，或者切换魔法新加坡
-
 
 ## 配置环境变量
 
@@ -27,11 +24,11 @@ https://github.com/lbjlaq/Antigrav[ity-Ma](https://github.com/nguyenphutrong/quo
 
 ## 接入使用
 
-> OpcnAI 协议  可以接入Codex
-
-> Anthropic 协议  可以接入Claude Code
-
-> Gcmini 协议  可以接入Cherry Studio
+> OpcnAI 协议 可以接入Codex
+>
+> Anthropic 协议 可以接入Claude Code
+>
+> Gcmini 协议 可以接入Cherry Studio
 
 ![](img/de873dbb9783dd4cb8662e41a574bcd0.png)
 
@@ -41,7 +38,7 @@ https://github.com/lbjlaq/Antigrav[ity-Ma](https://github.com/nguyenphutrong/quo
 
 ### Claude Code
 
-#### 启动CC-switch托管Antigravity Tools反代API
+#### 启动`CC-switch`托管Antigravity Tools反代API
 
 ![](img/61c0e561251fece35fc3dead2703fcea.png)
 

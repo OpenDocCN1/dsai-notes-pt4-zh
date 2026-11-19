@@ -1,6 +1,7 @@
+
 # AlphaFold 3 向解码分子行为和生物计算迈出重要一步，Nature 子刊锐评
 
-> 来源：[https://agijuejin.feishu.cn/docx/OPSUd82SPoxo5ixOWGuciPL3nIg](https://agijuejin.feishu.cn/docx/OPSUd82SPoxo5ixOWGuciPL3nIg)
+> 来源：[`https://agijuejin.feishu.cn/docx/OPSUd82SPoxo5ixOWGuciPL3nIg`](https://agijuejin.feishu.cn/docx/OPSUd82SPoxo5ixOWGuciPL3nIg)
 
 > 机器之心 ScienceAI｜[阅读原文](https://www.jiqizhixin.com/articles/2024-07-10-14)
 
@@ -78,4 +79,4 @@ DeepMind 推出了 AlphaFold 服务器，它为非商业研究人员提供了一
 
 因此，尽管利用 AlphaFold 3 根据生物分子序列预测其自由和相互复合的 3D 结构，是理解分子行为和生物计算的重要一步，但实验人员不必担心被淘汰。结构生物学领域即将变得更加充满活力。
 
-论文链接： https://www.nature.com/articles/s41594-024-01350-2
+论文链接：`https://www.nature.com/articles/s41594-024-01350-2`

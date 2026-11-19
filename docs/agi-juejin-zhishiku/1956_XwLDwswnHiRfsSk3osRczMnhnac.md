@@ -1,8 +1,9 @@
+
 # 05.12-黄仁勋放话：英伟达全员拥抱智能体！
 
-> 来源：[https://agijuejin.feishu.cn/docx/SM0Odns1FoT2NLxy5wYcRvzzntb](https://agijuejin.feishu.cn/docx/SM0Odns1FoT2NLxy5wYcRvzzntb)
+> 来源：[`https://agijuejin.feishu.cn/docx/SM0Odns1FoT2NLxy5wYcRvzzntb`](https://agijuejin.feishu.cn/docx/SM0Odns1FoT2NLxy5wYcRvzzntb)
 
-# AGI 掘金日报 - AI 新闻推送 (2025 年 05 月 12 日)
+## AGI 掘金日报 - AI 新闻推送 (2025 年 05 月 12 日)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -12,7 +13,7 @@
 
 ### 💡 黄仁勋放话：英伟达全员拥抱智能体！
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JV9EEN3S0511ABV6.html?spss=dy_author)
+新智元 | [`https://www.163.com/dy/article/JV9EEN3S0511ABV6.html?spss=dy_author`](https://www.163.com/dy/article/JV9EEN3S0511ABV6.html?spss=dy_author)
 
 ![](img/7f23c1bf4cab3793b3d7edb4187a2ea7.png)
 
@@ -22,7 +23,7 @@
 
 ### 💡 全网惊了！陶哲轩带AI下场，33分钟「盲证」数学
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JV9MHHHD0511ABV6.html?spss=dy_author)
+新智元 | [`https://www.163.com/dy/article/JV9MHHHD0511ABV6.html?spss=dy_author`](https://www.163.com/dy/article/JV9MHHHD0511ABV6.html?spss=dy_author)
 
 ![](img/849c146e0f843c940276e176c07cd746.png)
 
@@ -30,25 +31,25 @@
 
 ### 💡 谷歌发76页智能体白皮书！你的「AI替身」已上线
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JV9EGL7T0511ABV6.html?spss=dy_author)
+新智元 | [`https://www.163.com/dy/article/JV9EGL7T0511ABV6.html?spss=dy_author`](https://www.163.com/dy/article/JV9EGL7T0511ABV6.html?spss=dy_author)
 
 ![](img/f3b38ad5834339d8e487bcd9573461b8.png)
 
-谷歌发布76页AI智能体白皮书。智能体融合多种能力，可自主运行完成复杂任务。白皮书探讨评估方法与实际应用，介绍智能体运维（AgentOps），其继承DevOps和MLOps经验。还阐述智能体成功指标、评估方式，包括能力、行动轨迹等评估。此外，介绍多智能体架构及应用，以及智能体在企业中的应用，如助手型和自动化智能体，还有相关工具企业版。
+谷歌发布76页AI智能体白皮书。智能体融合多种能力，可自主运行完成复杂任务。白皮书探讨评估方法与实际应用，介绍智能体运维（`AgentOps`），其继承`DevOps`和`MLOps`经验。还阐述智能体成功指标、评估方式，包括能力、行动轨迹等评估。此外，介绍多智能体架构及应用，以及智能体在企业中的应用，如助手型和自动化智能体，还有相关工具企业版。
 
 ## 💫 企业动态
 
 ### 💡 谷歌搜索再迎新挑战：Anthropic 为其 API 引入网页搜索功能
 
-IT之家 | [阅读原文](https://www.ithome.com/0/852/230.htm)
+IT之家 | [`https://www.ithome.com/0/852/230.htm`](https://www.ithome.com/0/852/230.htm)
 
 ![](img/ef8da04f0647293b23e1819438ba1f82.png)
 
-5月8日，明星AI企业Anthropic为其API推出网页搜索功能，Claude AI能访问最新网络信息，给谷歌搜索引擎带来新压力。开发人员可启用该工具拓宽Claude知识面，打造相关AI应用。Claude会用推理能力判断是否搜索，还能进行智能体操作。Anthropic给出此功能在金融服务、法律研究、开发者工具、生产力方面的四大应用场景 。
+5月8日，明星AI企业Anthropic为其API推出网页搜索功能，Claude AI能访问最新网络信息，给谷歌搜索引擎带来新压力。开发人员可启用该工具拓宽Claude知识面，打造相关AI应用。Claude会用推理能力判断是否搜索，还能进行智能体操作。Anthropic给出此功能在金融服务、法律研究、开发者工具、生产力方面的四大应用场景。
 
 ### 💡 OpenAI ChatGPT 更新后过度讨好用户，两周过去问题仍未解决
 
-IT之家 | [阅读原文](https://www.ithome.com/0/852/204.htm)
+IT之家 | [`https://www.ithome.com/0/852/204.htm`](https://www.ithome.com/0/852/204.htm)
 
 ![](img/dbd91a5e769e566f5e7d7121e69ce0e4.png)
 
@@ -56,7 +57,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/852/204.htm)
 
 ### 💡 ICCV 2025万篇投稿破纪录，作者被逼全员审稿！网友痛批不如GPT
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JV9VFFV70511ABV6.html?spss=dy_author)
+新智元 | [`https://www.163.com/dy/article/JV9VFFV70511ABV6.html?spss=dy_author`](https://www.163.com/dy/article/JV9VFFV70511ABV6.html?spss=dy_author)
 
 ![](img/b08622998dc34112127cf4b26ac06e54.png)
 
@@ -64,7 +65,7 @@ ICCV 2025投稿量达11,152篇创历史新高，评审结果已公布。约36%�
 
 ### 💡 AI逼疯七巨头，马斯克们深陷中年危机！
 
-新智元 | [阅读原文](https://www.163.com/dy/article/JV9EK3890511ABV6.html?spss=dy_author)
+新智元 | [`https://www.163.com/dy/article/JV9EK3890511ABV6.html?spss=dy_author`](https://www.163.com/dy/article/JV9EK3890511ABV6.html?spss=dy_author)
 
 ![](img/f67204761733fefc0397ab92c2235c86.png)
 
@@ -74,8 +75,8 @@ AI 浪潮下科技巨头面临「中年危机」。谷歌股票 5 月 7 号暴�
 
 ### 💡 马斯克：Grok 3.5“仍太粗糙”，需一周左右打磨
 
-IT之家 | [阅读原文](https://www.ithome.com/0/852/223.htm)
+IT之家 | [`https://www.ithome.com/0/852/223.htm`](https://www.ithome.com/0/852/223.htm)
 
 ![](img/27e8fa8c09464e29a8d2814b6773482e.png)
 
-5月12日，针对网友提问，马斯克回复称Grok 3.5“仍太粗糙”，还需一周左右打磨。4月底他曾表示，Grok 3.5能准确回答火箭发动机等问题，能从第一原理推理得出网上没有的答案。此外，马斯克在X平台更改昵称和头像，大力推广Grok 。
+5月12日，针对网友提问，马斯克回复称Grok 3.5“仍太粗糙”，还需一周左右打磨。4月底他曾表示，Grok 3.5能准确回答火箭发动机等问题，能从第一原理推理得出网上没有的答案。此外，马斯克在X平台更改昵称和头像，大力推广Grok。

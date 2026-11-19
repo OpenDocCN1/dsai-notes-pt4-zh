@@ -1,12 +1,9 @@
-# 2023-05-17前哈工大教授开发的ChatALL火了！可同时提问17个聊天模型-今日头条
+
+# 2023-05-17前哈工大教授开发的ChatALL火了！可同时提问17个聊天模型
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Vhoid6BoSo6g6wxRR5ccLEmvnXA](https://xuqiwei1986.feishu.cn/docx/Vhoid6BoSo6g6wxRR5ccLEmvnXA)
 
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7233994135865213479/?log_from=43bf78a9127a4_1691463392117).com/article/723...
-
->
-
-# 前哈工大教授开发的ChatALL火了！可同时提问17个聊天模型
+> 🔗 原文链接：https://www.toutiao.com/article/7233994135865213479/?log_from=43bf78a9127a4_1691463392117
 
 2023-05-17 11:54 · 量子位
 
@@ -20,7 +17,7 @@
 
 现在，不用这么麻烦了。
 
-有人开发了一个名叫 **“ChatALL” **的应用， 可以将你的提问同时发送给10多个市面上常见的聊天机器人 ，比如ChatGPT、GPT4、Bing、Bard、Claude、文心一言、讯飞星火等等，并一一展现出来。
+有人开发了一个名叫 ChatALL 的应用，可以将你的提问同时发送给10多个市面上常见的聊天机器人，比如ChatGPT、GPT4、Bing、Bard、Claude、文心一言、讯飞星火等等，并一一展现出来。
 
 ![](img/3bd6c85808d00c0e219f249b8b8d1757.png)
 
@@ -34,7 +31,7 @@
 
 一起来瞧瞧。
 
-# 一次可同10+聊天机器人“齐叨叨”的“ChatALL”
+## 一次可同10+聊天机器人“齐叨叨”的“ChatALL”
 
 “ChatALL”的中文名字叫“齐叨”。
 
@@ -66,13 +63,13 @@
 
 ![](img/aaaddb7a246cee381f64d9950192910a.png)
 
-其中，特别包括一个 本地Gradio，它可以对接你自己部署的模型 。
+其中，特别包括一个 本地`Gradio`，它可以对接你自己部署的模型。
 
 而在应用程序界面中，一共显示了17个图标，证明目前最多已可支持17种聊天机器人。
 
 ![](img/f931f5ff92eb1d1b8ac3a1e0c63ee77d.png)
 
-**需要注意的是，这只是一个集中**了所有聊天AI的程序，不是代理，所以 每个都需要你登录自己的账号 ，当然，API token也可以。
+需要注意的是，这只是一个集中了所有聊天AI的程序，不是代理，所以 每个都需要你登录自己的账号，当然，API token也可以。
 
 登录之后，想一次询问哪些机器人就点亮对应的图标，就可以开始玩耍了。
 
@@ -86,19 +83,19 @@
 
 （对于这个问题，ChatGPT最佳，原因包括只有它提到了另外俩都没有提到的点：“本书涉及一些较为复杂的概念和理论，因此读者最好具备一定的阅读和理解科学著作的能力”，这是一条非常实用的建议。）
 
-# 大部分代码由GPT-4贡献
+## 大部分代码由GPT-4贡献
 
 ChatALL的主要作者名叫孙志岗，他是开课吧合伙人，哈工大计算机专业毕业，曾是该校计算机学院副教授。
 
 根据他本人介绍：
 
-ChatALL的 **大部分代码 **其实都是用GPT-4生成的。
+ChatALL的大部分代码其实都是用GPT-4生成的。
 
 > 早期提交记录，凡是“by GPT-4”的，就是本次提交代码都由GPT-4写成；凡是“with GPT-4”的，就是GPT-4写了核心，我做了一些加工修改。
 
-除了代码， **logo和主色 **也是AI帮忙设计的。
+除了代码，logo和主色也是AI帮忙设计的。
 
-在整个开发过程中，ChatGPT、Bing和Google也都帮了他不少忙 （排名分先后） 。
+在整个开发过程中，ChatGPT、Bing和Google也都帮了他不少忙（排名分先后）。
 
 另外，关于开发动机，他表示，由于：
 
@@ -112,11 +109,11 @@ ChatALL的 **大部分代码 **其实都是用GPT-4生成的。
 
 所以这才有了ChatALL。
 
-不过，ChatALL是受 **ChatHub **启发而完成的。
+不过，ChatALL是受 ChatHub 启发而完成的。
 
 对于后者，或许一些人并不陌生，它是谷歌和Edge浏览器的插件，也是主打所有聊天机器人“all in”一个入口。
 
-只不过相比起来，还是ChatALL支持的模型更多一些。
+不过相比之下，还是ChatALL支持的模型更多一些。
 
 ![](img/3edb726ad5aefde5e9289efe88613b70.png)
 
@@ -124,15 +121,15 @@ ChatALL的 **大部分代码 **其实都是用GPT-4生成的。
 
 ChatALL传送门：
 
-https://github.com/sunner/ChatALL
+`https://github.com/sunner/ChatALL`
 
 安装包下载地址：
 
-https://github.com/sunner/ChatALL/releases
+`https://github.com/sunner/ChatALL/releases`
 
 ChatHub传送门：
 
-https://chathub.gg/
+`https://chathub.gg/`
 
 — 完 —
 

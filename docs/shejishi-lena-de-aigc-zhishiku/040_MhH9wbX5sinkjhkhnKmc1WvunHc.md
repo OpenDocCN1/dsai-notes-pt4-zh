@@ -1,14 +1,15 @@
+
 # 绘画 | 谷歌香蕉(含提示词)
 
 > 来源：[https://aigclena.feishu.cn/docx/VFVcdSZmsozas6xXqhrctNBBnRb](https://aigclena.feishu.cn/docx/VFVcdSZmsozas6xXqhrctNBBnRb)
 
-# Nano **banana** **2更新 你需要知道的**
+## Nano banana 2更新 你需要知道的
 
 2026.2.26
 
 ![](img/79f5c55caa653e664680636c49c17494.png)
 
-**N**ano Banana 2 是你全新的主力图像模型 ⚡️ 我们这款当前最优的图像生成模型现在速度更快、成本更低。
+Nano Banana 2 是你全新的主力图像模型 ⚡️ 我们这款当前最优的图像生成模型现在速度更快、成本更低。
 
 立即开始构建，体验这些升级功能：
 
@@ -18,7 +19,7 @@
 
 🍌 更强的复杂指令遵循能力、新增多种长宽比以及可配置的推理层级，让开发者能够精准控制高保真输出效果。
 
-## 一、官方更新
+### 一、官方更新
 
 官方文档说明：https://deepmind.google/models/gemini-image/flash/
 
@@ -26,25 +27,19 @@
 
 ![](img/04f3f8e9b82e6ece4425d8d428496790.png)
 
-### ✅1. 运用现实世界知识
+#### ✅1. 运用现实世界知识
 
 借助 Gemini 模型的现实世界知识库，以及来自网络搜索的实时信息与图片，为特定主体生成更精准的渲染效果、创建信息图表，或将笔记转化为示意图。
 
-
 > Prompt: The Layers of the Earth, depicted as a clean, isometric cutaway illustration. Showcase the distinct layers—Crust, Mantle, Outer Core, and Inner Core—with clear labels and texture variations. Include small icons on the crust representing mountains and oceans. The Inner Core should have a subtle, radiant glow. The style is Modern Isometric Infographic, characterized by clean lines, sharp angles, and a minimalist feel. A powerful color scheme of deep earth tones, fiery oranges, and molten yellows, contrasted with a cool blue for the surface.
-
 
 > Prompt: High-quality flat lay photography creating a DIY infographic that simply explains how the water cycle works, arranged on a clean, light gray textured background. The visual story flows from left to right in clear steps. Simple, clean black arrows are hand-drawn onto the background to guide the viewer's eye. The overall mood is educational, modern, and easy to understand. The image is shot from a top-down, bird's-eye view with soft, even lighting that minimizes shadows and keeps the focus on the process.
 
-
 > Prompt: Create an image of Museum Clos Lucé. In the style of bright colored Synthetic Cubism. No text. Your plan is to first search for visual references, and generate after. Aspect ratio 16:9.
-
 
 > Prompt: Create an image of Museum Clos Lucé. In the style of a color chalk sketch, no text. Your plan is to first search for visual references, and generate after. Aspect ratio 16:9.
 
-
 > Prompt: The Layers of the Earth, depicted as a clean, isometric cutaway illustration. Showcase the distinct layers—Crust, Mantle, Outer Core, and Inner Core—with clear labels and texture variations. Include small icons on the crust representing mountains and oceans. The Inner Core should have a subtle, radiant glow. The style is Modern Isometric Infographic, characterized by clean lines, sharp angles, and a minimalist feel. A powerful color scheme of deep earth tones, fiery oranges, and molten yellows, contrasted with a cool blue for the surface.
-
 
 > Prompt: A baker's guide to different types of flour (e.g., All-Purpose, Bread, Cake, Whole Wheat). A rustic, hand-drawn style comparing the protein content, best uses, and texture of each flour, displayed as sacks of flour.
 
@@ -52,7 +47,7 @@
 
 > Prompt: Kitchen scraps sprouting on a magical kitchen counter, presented as a charming educational whimsical cartoon/illustrated storybook infographic on how to regrow vegetables from leftovers. A main central illustration features a whimsical cartoon of a ginger root with tiny, expressive arms and legs excitedly sprouting green shoots, surrounded by magical sparkles and a soft glow, surrounded by smaller, labeled playful illustrations of an onion bottom growing new green tops in a cup, celery stalks regrowing in water, and sweet potato vines emerging from a tuber. Informational boxes detail 'Easy Re-grow Examples', 'Simple Water & Light Needs', and 'The Joy of Zero-Waste Gardening'. Include a close-up of a tiny, smiling cartoon sprout emerging from a potato eye, and whimsical icons for 'Magic Seed', 'Heartfelt Growth', and 'Smiling Sun'. The style is whimsical cartoon illustration with soft lines, expressive characters, and a joyful, imaginative quality. Bright greens, cheerful yellows, rosy pinks, and warm browns color palette. Informative and aesthetic layout.
 
-### ✅2. 生成精准文字
+#### ✅2. 生成精准文字
 
 直接在图像中渲染清晰可辨的文字。灵活运用字体、样式和大小，制作带有文字的贺卡、营销样机和海报。
 
@@ -64,11 +59,10 @@
 
 > Prompt: This warm friendship card is artfully placed on a soft, textured fabric surface, perhaps a chunky knit sweater, suggesting comfort and closeness. The design is heartfelt and approachable, with a cozy color palette of warm mustard yellow, soft denim blue, and creamy beige. The central graphic is a simple, hand-drawn illustration of two intertwining hands or a stylized heart, rendered with a slightly imperfect, charming quality. The typography for “So grateful for your wonderful friendship. You bring so much joy and laughter into my life” is in a friendly, flowing script font that feels personal and sincere. The “Thank you!” is in a slightly bolder, complementary sans-serif font. The card stock has a subtle, tactile linen texture, enhancing the feeling of authenticity and warmth. The overall impression is one of genuine appreciation and the comforting bond of friendship.
 
->
-
 ![](img/db4b7e5255c433ded499f162fd72b2e2.png)
 
 > Prompt: A sophisticated ‘New Job’ card is laid flat on a sleek, minimalist surface, perhaps black glass, with a subtle reflection. The design is elegant and empowering, featuring a distinguished color palette of deep navy blue, shimmering gold, and crisp white. The central graphic is a minimalist icon of a mountain peak or an upward-growing graph, subtly debossed into the card with gold foil accents, symbolizing achievement and growth. The text, “Congratulations on your exciting new adventure!” is inscribed in a refined, classic serif font, printed in gold ink. The message, “Wishing you success, fulfillment, and happiness in your new role,” is in a complementary, elegant sans-serif font. The card stock is thick and features a luxurious, smooth matte finish, providing a premium feel. The overall aesthetic is one of understated excellence and aspiration, celebrating a career milestone with grace and professionalism.
+
 
 
 > Prompt: A bright and cheerful thank you card is set against a sunny yellow background, casting a soft shadow. The design is playful and modern, featuring a vibrant color palette of fuchsia, sky blue, and white. The main graphic is a whimsical pattern of small, overlapping polka dots in fuchsia and blue, creating a confetti-like effect. “Thank You!” is boldly written in a chunky, friendly sans-serif font, with a slight 3D shadow effect, making it pop. The message, “So grateful for your kindness and generosity. Your thoughtfulness truly brightened my day,” is presented in a clean, straightforward sans-serif font. The card has a glossy finish, enhancing the vividness of the colors. The overall impression is one of enthusiastic and heartfelt appreciation, delivered with a burst of joyful energy.
@@ -76,7 +70,6 @@
 ### ✅3. 本地化创作
 
 将文本翻译成不同语言，或对图片内的现有内容进行本地化处理。你甚至可以修改照片的环境与场景，例如把孟买海岸替换为东京天际线。
-
 
 Prompt 1: An intimate, naturalistic cinematic close-up reveals a small, intricately illustrated sign made of recycled material, showing drawings of local birds and flowers. Delicate script below reads: "Native Wildlife: Please Observe from a Distance." Soft, diffused light filters through the leaves of a nearby fern, casting gentle shadows. The background is a soft blur of vibrant green foliage, emphasizing respect for the delicate ecosystem.
 
@@ -120,14 +113,11 @@ Prompt 1: This vibrant new baby card, perfect for a gender reveal or gender-neut
 
 ### ✅6. 保持主体一致性
 
-在单个工作流程中，保持最多 **5 个角色**** 的形象统一**与相似度，同时保持最多 14 个物体 的还原度。角色与物体在不同场景中始终清晰可辨，让叙事拥有更流畅的视觉连贯性。
-
-
-> Prompt: Create an image of these 14 characters and items having fun at the farm. The overall atmosphere is fun, silly and joyful. It is strictly important to keep identity consistent of all the 14 characters and items.
-
+在单个工作流程中，保持最多 **5 个角色** 的形象统一与相似度，同时保持最多 14 个物体 的还原度。角色与物体在不同场景中始终清晰可辨，让叙事拥有更流畅的视觉连贯性。
 
 > Prompt: Create an image of these 14 characters and items having fun at the farm. The overall atmosphere is fun, silly and joyful. It is strictly important to keep identity consistent of all the 14 characters and items.
 
+> Prompt: Create an image of these 14 characters and items having fun at the farm. The overall atmosphere is fun, silly and joyful. It is strictly important to keep identity consistent of all the 14 characters and items.
 
 > Prompt: A medium shot of the 14 fluffy characters are on the bleachers, completely captivated by the end of a figure skating performance. The overall atmosphere is fun and cheerful. It is strictly important to keep identity and attire consistent of all the 14 characters.
 
@@ -153,11 +143,11 @@ Prompt: Create a funny 6 part story with these 3 fluffy friends building a tree 
 
 ![](img/af1b17b8f37497b7ae80442cde180c27.png)
 
+
+
 > Prompt: Cinematic still in the style of a dreamlike portrait, illuminated by the warm hues of a setting sun filtering through tall grasses. The subject, a person with sleek dark hair, is positioned amongst the golden stalks, their face catching the soft, glowing light. They are adorned with an intricately embellished collar and large, ornate earrings that add a touch of opulence to the natural setting. The background is a blurred expanse of field and sky, creating a sense of depth and isolating the subject in a moment of serene beauty. The lighting is the key element, casting a warm, almost ethereal glow on the skin and highlighting the textures of the grasses and the jewelry. The composition is a close-up, focusing on the subject's face and upper body, reminiscent of the evocative and painterly portraits captured by a visually sensitive filmmaker. The ambiance is one of magical realism and tranquil beauty, where the natural and the ornate blend seamlessly in the soft light.
 
-
 > Prompt: Cinematic still in the style of a surreal dream sequence with a full shot of a woman standing in a field. The camera captures her from a slightly low angle, emphasizing the dramatic flow and volume of her fantastical garment. The dress is a multi-layered creation of sheer fabrics in pastel shades of lime green, pale pink, and soft yellow, billowing around her as if caught in a gentle breeze, creating abstract shapes and a sense of weightlessness. The woman has short, light pink-toned hair and a delicate expression. The background consists of a vast, golden grassland stretching towards distant, softly rendered mountains under a clear, light sky. The lighting is soft and diffused, contributing to the ethereal and dreamlike quality of the scene. The composition is carefully balanced, with the woman positioned centrally yet surrounded by the expansive landscape and the dynamic movement of her clothing. The overall ambiance is one of quiet fantasy and poetic motion, reminiscent of scenes that blur the lines between reality and imagination, with a focus on visual fluidity and gentle color transitions.
-
 
 > Prompt: This cinematic still, crafted with a wide-angle lens from an extremely low perspective, dramatically captures a young, slender man standing confidently. The camera is angled sharply upwards, making him appear towering and powerful, with his entire body filling the frame from his bell-bottomed trousers to his shaggy, sun-kissed hair. He's dressed in a light blue suit with subtle vertical stripes and a vibrant, gold-toned floral patterned shirt and tie, radiating a distinct retro vibe. The low angle distorts his legs, making them appear elongated and creating a dynamic sense of depth. His expression is obscured by circular, wire-rimmed glasses and the bright, golden sunlight flaring intensely from behind his right shoulder, creating significant lens flares and a hazy, dreamlike ambiance. His left hand is casually slipped into his trouser pocket, while his right hand loosely clutches a worn, reddish-brown leather briefcase. The background hints at a grand, somewhat opulent interior with arched windows reflecting the bright sky and a pale blue ceiling, typical of an elegant, older building. The lighting is bold and expressive, reminiscent of a highly stylized period drama, with a color palette dominated by cool blues and warm amber tones from the sunlight, lending the image a nostalgic, slightly surreal quality, characteristic of a classic art house aesthetic.
 
@@ -177,21 +167,23 @@ Prompt: Create a funny 6 part story with these 3 fluffy friends building a tree 
 
 官方使用地址：
 
-1. https://aistudio.google.com/
+1. `https://aistudio.google.com/`
 
 ![](img/9a6fef4b6cc4845e859595276cde7eed.png)
 
-2. https://labs.google/fx/tools/flow
+2. `https://labs.google/fx/tools/flow`
 
 ![](img/5af58e30dafc61f2a8cacf357b128124.png)
 
-3.https://gemini.google.com/app
+3. `https://gemini.google.com/app`
 
 ![](img/36cf39d0a13a10e3c1c7577c83d69635.png)
 
 其余可使用平台：
 
 Figma、Krea、Lovart、flowith.io、Higgsfield
+
+
 
 https://fal.ai/models/fal-ai/nano-banana-2
 
@@ -208,9 +200,6 @@ https://higgsfield.ai/image/nano_banana_flash
 ![](img/1ae60a74790f1731da12166b64ec4ad9.png)
 
 ## 三、网友案例提示词
-
-
-
 
 ![](img/771b50064430152774a473b3d65bbd7e.png)
 
@@ -242,11 +231,9 @@ with/without "same aesthetic"
 
 > Cinematic portrait of a Black woman in a 1940s burgundy suit, fox fur stole, and red hat with netting, holding a patterned clutch. She is backlit by a harsh, cool blue light from behind, creating a glowing halo around her silhouette. Her face is partially in shadow, with only the highlights of her cheekbones and lips catching the light. The background is a dark, moody rural town at dusk, with silhouetted telephone poles. Noir, high contrast, moody, 8K, hyper-detailed.
 
-
 ![](img/900aefb3fe9aa0544ddb9e00c48f0443.png)
 
 > Make a photo of a cute ball-shaped version of a [animal], with big adorable over-sized eyes, it has no head, instead its face is part of the ball, its head and body are one. They are in their usual habitat. Must be almost spherical and cartoonishly cute. Its eyes are looking up in the most adorable cheeky fashion.
-
 
 > Create step-by-step recipe infographic for creamy garlic mushroom pasta, top-down view, minimal style on white background, ingredient photos labeled: "200g spaghetti", "150g mushrooms", "3 garlic cloves", "200ml cream", "1 tbsp olive oil", "parmesan", "parsley", dotted lines showing process steps with icons sauté pan, final plated pasta shot at the bottom
 
@@ -266,7 +253,7 @@ with/without "same aesthetic"
 
 ![](img/be40f7bc982d062728be017efd847e9e.png)
 
-This device is called the "Ominous Dream Machine",create a 9:16 advertisement photo for this device, with neonvibes, and highlight the retro futuristic, dystopianaesthetic of the device. Change the on screen game tolook like a retro futuristic racing game, and includecatchy statements and specs of the hardware runningthe game.
+> This device is called the "Ominous Dream Machine",create a 9:16 advertisement photo for this device, with neonvibes, and highlight the retro futuristic, dystopianaesthetic of the device. Change the on screen game tolook like a retro futuristic racing game, and includecatchy statements and specs of the hardware runningthe game.
 
 ![](img/40225773fce718e944a3d0574e1e3451.png)
 
@@ -279,8 +266,6 @@ This device is called the "Ominous Dream Machine",create a 9:16 advertisement ph
 ![](img/442dd8bf83835f77072d6796b4f6c092.png)
 
 ![](img/4a8d80b13258051c9497cff74eca53d7.png)
-
-
 
 ![](img/b3912a509ba960a57a9d1cdfb84c435f.png)
 
@@ -302,8 +287,6 @@ This device is called the "Ominous Dream Machine",create a 9:16 advertisement ph
 
 ![](img/9ac6b5910de41626900b55f8b02a44f5.png)
 
-
-
 ![](img/1b4c236d043236640b5ad09871a14572.png)
 
 ![](img/4048bb1ba900331645b236c35cb3cb67.png)
@@ -323,6 +306,8 @@ This device is called the "Ominous Dream Machine",create a 9:16 advertisement ph
 ![](img/034a735cc12404d8d4c012cb6ab23f34.png)
 
 ![](img/ad2e479daca7405f84176c765c50333d.png)
+
+
 
 > Photorealistic candid street photography portrait of an elderly woman, expressive eyes looking directly at the camera, covering her mouth and nose with a tissue. She stands on a sun drenched coastal promenade with a wide angle lens distortion. Sharp foreground detail on her textured skin, windswept short blonde hair, and gold rings on her fingers, with a subtle zebra-patterned strap visible. A slightly blurred crowd of people walks behind her, creating a sense of spontaneous urban movement. Natural daylight illuminates her with cool sky tones contrasting with warm skin tones, at f/4, ISO 320. The composition captures raw emotional realism, an intimate human moment in a gritty documentary style, shot with a 28mm lens. Masterpiece candid composition with high clarity and natural color grading.
 
@@ -346,17 +331,17 @@ This device is called the "Ominous Dream Machine",create a 9:16 advertisement ph
 
 > Image of one-sixth of the year ending
 
-# Banana pro更新
+# Banana pro 更新
 
-## 一、官方指南10个专业技巧
+## 一、官方指南 10 个专业技巧
 
-官方pro指南：https://x.com/GoogleAIStudio/status/1994480371061469306
+官方 pro 指南：https://x.com/GoogleAIStudio/status/1994480371061469306
 
 2025.11.24
 
 译文：lena、豆包、gpt
 
-N**ano-Banana Pro 相较于上**一代模型实现了重大飞跃，从“好玩”的图像生成工具，进化为“可用”的专业级资产生产工具。它在文字渲染、角色一致性、视觉合成、世界知识（Search）、高分辨率（4K）输出等方面表现出色。
+Nano-Banana Pro 相较于上一代模型实现了重大飞跃，从“好玩”的图像生成工具，进化为“可用”的专业级资产生产工具。它在文字渲染、角色一致性、视觉合成、世界知识（Search）、高分辨率（4K）输出等方面表现出色。
 
 在开发者指南介绍了如何通过 AI Studio 和 API 入门之后，本指南将系统讲解核心能力，以及如何高效撰写提示词。
 
@@ -364,35 +349,25 @@ N**ano-Banana Pro 相较于上**一代模型实现了重大飞跃，从“好玩
 
 作者：纪尧姆・韦尔纳德（Guillaume Vernade）谷歌 DeepMind Gemini 开发者推广专员
 
-本文目录
+### 本文目录
 
-1.  提示词黄金法则
+1. 提示词黄金法则
+2. 文字渲染、信息图与视觉合成
+3. 角色一致性与爆款封面图
+4. 基于谷歌搜索的真实知识生成
+5. 高级编辑、修复与上色
+6. 维度转换（2D ↔ 3D）
+7. 高分辨率与材质纹理
+8. 思考与推理能力
+9. 一键分镜脚本与概念艺术
+10. 结构控制与布局引导
+11. 下一步怎么做？
 
-1.  文字渲染、信息图与视觉合成
+### 🛑 第 1 节：提示词黄金法则
 
-1.  角色一致性与爆款封面图
+Nano-Banana Pro 是一款会思考的模型。它不只是匹配关键词，还能理解意图、物理规则与构图。想要最佳效果，请停止堆砌标签（如：狗、公园、4K、写实），开始像创意总监一样描述。
 
-1.  基于谷歌搜索的真实知识生成
-
-1.  高级编辑、修复与上色
-
-1.  维度转换（2D ↔ 3D）
-
-1.  6. 高分辨率与材质纹理
-
-1.  思考与推理能力
-
-1.  一键分镜脚本与概念艺术
-
-1.  结构控制与布局引导
-
-1.  10.下一步怎么做？
-
-###  🛑 第 1 节：提示词黄金法则
-
-**Nan**o**‑Ban**ana Pro 是一款会思考的模型。它不只是匹配关键词，还能理解意图、物理规则与构图。想要最佳效果，请停止堆砌标签（如：狗、公园、4K、写实），开始像创意总监一样描述。
-
-+   **修改，而不是重新生成**
+#### 修改，而不是重新生成
 
 模型非常擅长理解对话式修改。如果图片已经 80% 正确，不要重新生成。
 
@@ -402,7 +377,7 @@ N**ano-Banana Pro 相较于上**一代模型实现了重大飞跃，从“好玩
 
 > “很好，但把光线改成日落氛围，文字改成霓虹蓝色。”
 
-+   **使用自然语言与完整句子**
+#### 使用自然语言与完整句子
 
 像给人类设计师写 Brief 一样说话。
 
@@ -414,15 +389,13 @@ N**ano-Banana Pro 相较于上**一代模型实现了重大飞跃，从“好玩
 
 > “一个电影感广角镜头，一辆未来感跑车在夜晚的东京雨街飞驰。霓虹灯倒映在湿漉漉的路面和金属车身上。”
 
-+   **具体且细节化**
+#### 具体且细节化
 
 模糊提示 = 普通结果。请明确：主体、场景、光线、氛围。
 
-+   主体：不说 “一个女人”，而说 “一位穿着复古香奈儿风套装的优雅老年女性”。
-
-+   材质：描述纹理，如 “哑光质感”“拉丝金属”“柔软丝绒”“褶皱纸张”。
-
-+   提供上下文（“为什么”/“为谁”）
+- 主体：不说 “一个女人”，而说 “一位穿着复古香奈儿风套装的优雅老年女性”。
+- 材质：描述纹理，如 “哑光质感”“拉丝金属”“柔软丝绒”“褶皱纸张”。
+- 提供上下文（“为什么”/“为谁”）
 
 因为模型会“思考”，所以提供背景有助于它做出合乎逻辑的艺术决策。
 
@@ -432,11 +405,11 @@ N**ano-Banana Pro 相较于上**一代模型实现了重大飞跃，从“好玩
 
 （模型会推断出专业的摆盘、浅景深和完美的灯光）
 
-###  🛑 第 2 节：文字渲染、信息图与视觉合成
+### 🛑 第 2 节：文字渲染、信息图与视觉合成
 
-Nano‑Banana Pro 拥有业界顶尖的清晰文字渲染能力，可将复杂信息转为可视化内容。
+Nano-Banana Pro 拥有业界顶尖的清晰文字渲染能力，可将复杂信息转为可视化内容。
 
-最佳实践
+#### 最佳实践
 
 压缩：要求模型将密集的文本或 PDF 压缩成视觉辅助工具。
 
@@ -450,7 +423,7 @@ Nano‑Banana Pro 拥有业界顶尖的清晰文字渲染能力，可将复杂�
 
 ![](img/e279dad482cf2010273eba2d07861d2b.png)
 
-**财报信息图（数据输入）**
+#### 财报信息图（数据输入）
 
 > 上传 Google 最新财报 PDF
 
@@ -458,39 +431,33 @@ Nano‑Banana Pro 拥有业界顶尖的清晰文字渲染能力，可将复杂�
 
 ![](img/b8784ea5645d374145d0df4d4372243b.png)
 
-**技术蓝图**
+#### 技术蓝图
 
 > “制作该建筑的正交蓝图，包含平面图、立面图和剖面图。用专业建筑字体标注‘北立面’和‘主入口’。16:9 比例。”
 
-
-**复古信息图**
+#### 复古信息图
 
 > “制作一个关于美国餐厅历史的 1950 年代复古风格信息图表。包括‘食物’、‘点唱机’和‘装饰’等不同板块。确保所有文本清晰可读，并符合该时期的风格。”
 
-
-**白板教学图**
+#### 白板教学图
 
 > “将‘Transformer 神经网络架构’的概念总结为一个适合大学讲座的手绘白板图。对编码器和解码器模块使用不同颜色的记号笔，并为‘自注意力’和‘前馈’添加清晰的标签。”
 
-###  🛑 第 3节：角色一致性与爆款封面图
+### 🛑 第 3 节：角色一致性与爆款封面图
 
-Nano‑Banana Pro 支持最多** 14 **张参考图（6 张高保真），可实现角色锁定，将特定人物或角色放入新场景中，而不会出现面部变形。
+Nano-Banana Pro 支持最多 14 张参考图（6 张高保真），可实现角色锁定，将特定人物或角色放入新场景中，而不会出现面部变形。
 
-最佳实践
+#### 最佳实践
 
-+   身份锁定：明确写
-
-+   “保持人物面部特征与图 1 完全一致。”
-
-+   表情 / 动作：在保持身份不变的前提下描述情绪与动作变化
-
-+   爆款构图：一次生成主体 + 文字 + 图形元素
+- 身份锁定：明确写“保持人物面部特征与图 1 完全一致。”
+- 表情 / 动作：在保持身份不变的前提下描述情绪与动作变化
+- 爆款构图：一次生成主体 + 文字 + 图形元素
 
 ---
 
 ![](img/e762682ec1420a8e5a60741f9d729c07.png)
 
-> “用图1的人物制作爆款视频封面。
+> “用图 1 的人物制作爆款视频封面。
 
 > 面部一致性：保持人物面部特征与图 1 完全相同，但改变表情，使其看起来兴奋和惊讶。
 
@@ -512,53 +479,46 @@ Nano‑Banana Pro 支持最多** 14 **张参考图（6 张高保真），可实�
 
 ![](img/ebb01e16d4c10b16767840da873bba89.png)
 
-###
-
-毛茸茸小伙伴（多角色一致性）
+#### 毛茸茸小伙伴（多角色一致性）
 
 [输入 3 张不同毛绒玩偶的图片]
 
 > “为这 3 个毛绒朋友创作一个有趣的 10 部分故事，讲述他们去热带度假。故事要充满惊险，有情感起伏，最后以一个快乐的时刻结束。在所有 10 张图片中保持 3 个角色的服装和身份一致，但他们的表情和角度应该有所不同。确保每张图片中每个角色只出现一次。”
 
-###  🛑 第 4 节：基于 Google 搜索的数据支撑
+### 🛑 第 4 节：基于 Google 搜索的数据支撑
 
-Nano‑Banana Pro 可调用谷歌搜索，基于实时数据、时事与事实生成图像，减少时效性内容的幻觉。
+Nano-Banana Pro 可调用谷歌搜索，基于实时数据、时事与事实生成图像，减少时效性内容的幻觉。
 
-最佳实践：
+#### 最佳实践
 
-+   适合请求动态数据可视化（如天气、股市、新闻趋势等）。
-
-+   模型会先对搜索结果进行“思考”（推理分析），再生成最终图像。
+- 适合请求动态数据可视化（如天气、股市、新闻趋势等）。
+- 模型会先对搜索结果进行“思考”（推理分析），再生成最终图像。
 
 ![](img/59630f1a371287469f2f5f1a36946e7a.png)
 
 > “根据当前旅行趋势，生成一张 2025 年美国国家公园最佳旅行时间的信息图。”
 
-###  🛑 第 5 节：高级编辑、修复与上色
+### 🛑 第 5 节：高级编辑、修复与上色
 
 该模型在通过对话式提示进行复杂编辑方面表现出色，包括：
 
-+   In-painting（局部重绘）：移除或添加画面中的物体
+- In-painting（局部重绘）：移除或添加画面中的物体
+- Restoration（修复）：修复老照片、破损图像
+- Colorization（上色）：为漫画或黑白照片上色
+- Style Swapping（风格替换）：更换整体视觉风格
 
-+   Restoration（修复）：修复老照片、破损图像
+#### 最佳实践
 
-+   Colorization（上色）：为漫画或黑白照片上色
-
-+   Style Swapping（风格替换）：更换整体视觉风格
-
-最佳实践：
-
-+   语义化指令：无需手动做蒙版或选区，只需用自然语言清楚说明要修改的内容即可。
-
-+   物理理解能力：你可以要求更复杂的变化，例如“把这个玻璃杯装满液体”，以测试模型对物理结构与光影逻辑的理解与生成能力。
+- 语义化指令：无需手动做蒙版或选区，只需用自然语言清楚说明要修改的内容即可。
+- 物理理解能力：你可以要求更复杂的变化，例如“把这个玻璃杯装满液体”，以测试模型对物理结构与光影逻辑的理解与生成能力。
 
 ![](img/a91de4c1e86c5486a143e5d0f93c0ff2.png)
 
-**1.物体移除与智能补全**
+#### 1. 物体移除与智能补全
 
 > “移除这张照片背景中的游客，并用与周围环境相匹配的合理纹理进行填充（例如石板路与店铺立面），确保整体光影、透视和材质过渡自然统一。”
 
-**4.光线/季节变化**
+#### 4. 光线/季节变化
 
 [输入一张夏天房子的图片]
 
@@ -566,7 +526,7 @@ Nano‑Banana Pro 可调用谷歌搜索，基于实时数据、时事与事实�
 
 > “将这个场景变成冬天。房屋建筑结构完全相不变，在屋顶和院子里加上雪，并将灯光改为寒冷的阴天下午。”
 
-**2.漫画上色**
+#### 2. 漫画上色
 
 [输入黑白漫画格]
 
@@ -574,7 +534,7 @@ Nano‑Banana Pro 可调用谷歌搜索，基于实时数据、时事与事实�
 
 > “为这张漫画分镜进行上色。采用鲜艳的动漫风格配色方案。确保能量光束的光效呈现霓虹蓝发光效果，同时角色的服装颜色与其官方设定配色保持一致。”
 
-3.本地化（文本翻译 + 文化适配）：
+#### 3. 本地化（文本翻译 + 文化适配）
 
 [输入一张伦敦公交站广告的图片]
 
@@ -582,11 +542,11 @@ Nano‑Banana Pro 可调用谷歌搜索，基于实时数据、时事与事实�
 
 > “保留这个广告创意概念，并将其本地化为东京场景，包括将广告标语翻译为日语。并将背景改为夜晚热闹的涩谷街头氛围。”
 
-###  🛑 第 6 节：维度转换（2D ↔ 3D）
+### 🛑 第 6 节：维度转换（2D ↔ 3D）
 
-这是一项强大的新能力，可以将 2D 平面图或示意图转换为 3D 可视化效果，或反向将 3D 场景还原为 2D 结构图。这对于室内设计师、建筑师，以及创作表情包或视觉创意内容的创作者来说尤为实用。
+这是一项强大的新能力，可以将 2D 平面图或示意图转换为 3D 可视化效果，或反向将 3D 场景还原为 2D 结构图。这对于室内设计师、建筑师，以及创作表情包或视觉创意内容的创作者来说尤其实用。
 
-示例：
+#### 示例
 
 ![](img/6e8cd2bcaac0474efb4d44ee3d1a7969.png)
 
@@ -598,19 +558,21 @@ Nano‑Banana Pro 可调用谷歌搜索，基于实时数据、时事与事实�
 
 ![](img/d99118fe38f891602f915c34b5e7c024.png)
 
-**2D  → 3D 表情转换**
+
+
+# 2D → 3D 表情转换
 
 > “把‘这挺好’狗狗表情包做成照片级 3D 渲染。构图完全不变，狗改成毛绒玩具质感，火焰做成真实火焰。”
 
-###  🛑 第 7 节：高分辨率与材质表现
+## 🛑 第 7 节：高分辨率与材质表现
 
 Nano-Banana Pro 支持原生 1K 至 4K 图像生成。这对于需要精细纹理表现或用于大尺寸印刷的场景尤为实用。
 
 **最佳实践：**
 
-+   如果你的 API 或界面支持，请明确指定高分辨率（如 2K 或 4K）。
++ 如果你的 API 或界面支持，请明确指定高分辨率（如 2K 或 4K）。
 
-+   详细描述高保真细节，例如材质瑕疵、表面纹理、细微颗粒感等，以提升真实感与画面质感。
++ 详细描述高保真细节，例如材质瑕疵、表面纹理、细微颗粒感等，以提升真实感与画面质感。
 
 示例：
 
@@ -622,11 +584,11 @@ Nano-Banana Pro 支持原生 1K 至 4K 图像生成。这对于需要精细纹�
 
 ![](img/7e96ee7a66b1545f66aee5c27d0bc771.png)
 
-复杂逻辑（思考模式）
+**复杂逻辑（思考模式）**
 
 > “制作一张超写实美食信息图，解构豪华芝士汉堡，展示烤布里欧修面包的纹理、肉饼焦壳、芝士融化光泽。每层标注风味特点。”
 
-###  🛑 第 8 节：思考与推理
+## 🛑 第 8 节：思考与推理
 
 Nano‑Banana Pro 默认开启 “思考” 流程，会先生成中间思考图（不计费）以优化构图，再渲染最终输出，支持数据分析与解决视觉问题。
 
@@ -634,16 +596,15 @@ Nano‑Banana Pro 默认开启 “思考” 流程，会先生成中间思考图
 
 ![](img/28fc549ee3907dc871d997bd43b52ad6.png)
 
-> “在白板上解方程 log_{x^2+1}(x^4-1)=2，并清晰展示解题步骤。”
+> “在白板上解方程 `log_{x^2+1}(x^4-1)=2`，并清晰展示解题步骤。”
 
 ![](img/137e8ab252be6b5cb08804d8326e614c.png)
 
 > “分析这张房间照片，并生成一张‘施工前’的图像，展示框架结构与未完工墙面。”
 
-###  🛑 第 9 节：一次生成分镜与概念艺术
+## 🛑 第 9 节：一次生成分镜与概念艺术
 
 可一次性生成连续故事画面或分镜，无需网格，叙事流畅。也常用于 “电影概念图”（如伪泄露图）。
-
 
 示例：
 
@@ -651,17 +612,17 @@ Nano‑Banana Pro 默认开启 “思考” 流程，会先生成中间思考图
 
 ---
 
-###  🛑 第 10 节：结构控制与版式引导
+## 🛑 第 10 节：结构控制与版式引导
 
 输入的图片并不仅限于角色参考或待编辑的主体。你还可以利用它们来严格控制最终输出的构图与布局。对于需要将随手涂鸦的草图、线框图或特定网格布局转化为精美成品的设计师而言，这无疑是一场具有革命性意义的变化。
 
-最佳实践
+**最佳实践**
 
-+   草图与素描：上传手绘草图，以精确定义文本和物体的摆放位置。
++ 草图与素描：上传手绘草图，以精确定义文本和物体的摆放位置。
 
-+   线框图：利用现有布局或线框图的截图，生成高保真度的用户界面（UI）模型。
++ 线框图：利用现有布局或线框图的截图，生成高保真度的用户界面（UI）模型。
 
-+   网格图：使用网格图片，强制模型为基于图块的游戏或LED显示屏生成相应素材。
++ 网格图：使用网格图片，强制模型为基于图块的游戏或LED显示屏生成相应素材。
 
 示例：
 
@@ -673,7 +634,7 @@ Nano‑Banana Pro 默认开启 “思考” 流程，会先生成中间思考图
 
 ![](img/8fbf5ba5b404d5c3471ffdf4d4dd997a.png)
 
-像素艺术与 LED 显示屏：
+**像素艺术与 LED 显示屏：**
 
 > “生成一张独角兽的像素艺术精灵图，完美适配这张 64x64 的网格图像。使用高对比度的色彩。”
 
@@ -693,25 +654,23 @@ Nano‑Banana Pro 默认开启 “思考” 流程，会先生成中间思考图
 
 （tips：你可以随后提取每个格子，制作成一张动图。）
 
-#
-
-###  🛑 第 11 节：下一步是什么？
+## 🛑 第 11 节：下一步是什么？
 
 既然你已经掌握了提示词的基础，不妨尝试以下方式来进一步探索：
 
-+   在界面中实验：Google AI Studio 是测试提示词与参数最快方式。
++ 在界面中实验：Google AI Studio 是测试提示词与参数最快方式。
 
-+   在应用画廊体验酷炫的 Nano Banana 应用。
++ 在应用画廊体验酷炫的 Nano Banana 应用。
 
-+   轻松编码：在 AI Studio Build 中，将你最棒的提示词转化为一款可以轻松与朋友分享的应用。
++ 轻松编码：在 AI Studio Build 中，将你最棒的提示词转化为一款可以轻松与朋友分享的应用。
 
-+   构建应用：查看开发者指南或 Gemini API 食谱获取教程与代码片段。
++ 构建应用：查看开发者指南或 Gemini API 食谱获取教程与代码片段。
 
-+   技术深入：阅读完整 Gemini API 文档，了解速率限制、定价与集成细节。
++ 技术深入：阅读完整 Gemini API 文档，了解速率限制、定价与集成细节。
 
 # 二、白嫖谷歌全家桶
 
-Google 这两天是真·开挂！😱 这一**波更新直接把** AI 圈**炸翻了！ 🚀 ****重磅三连击： 1****️⃣ Veo 3.1** 全面铺开，视频生成强到离谱！ 2️⃣ Gemini 3 半夜突袭，代码能力还没测完，新东西又来了！ 3️⃣ Banana Pro 紧随其后暴击上线！🍌
+Google 这两天是真·开挂！😱 这一波更新直接把 AI 圈炸翻了！🚀 重磅三连击：1️⃣ Veo 3.1 全面铺开，视频生成强到离谱！ 2️⃣ Gemini 3 半夜突袭，代码能力还没测完，新东西又来了！ 3️⃣ Banana Pro 紧随其后暴击上线！🍌
 
 👉 Banana Pro 生图能力史诗级加强！懂中文，更懂中国名著，出图质感直逼甚至超越即梦豆包！
 
@@ -721,15 +680,15 @@ Google 这两天是真·开挂！😱 这一**波更新直接把** AI 圈**炸�
 
 你可以在gemini或者flow里体验最新的视频模型Veo3.1，可以在whisk里使用veo3，及所有谷歌产品更多的使用额度，最关键的是能体验官方最新发布的模型，地址见文末。
 
-👇 【**保姆级教程已备好】 **教你一步步申请教育权益，0成本解锁最强 AI 生产力！ 🏃‍♂️ 趁还没和谐，手慢无！能薅一分是一分！
+👇 **保姆级教程已备好**：教你一步步申请教育权益，0成本解锁最强 AI 生产力！🏃‍♂️ 趁还没和谐，手慢无！能薅一分是一分！
 
 ⚠️ **避坑指南（必看）：**
 
-+   **没资格？不能享受优惠**？ 检查你的**魔法节点** 🪄
++ 没资格？不能享受优惠？ 检查你的魔法节点 🪄
 
-+   **没通过？** 试着同步一下登录账号和教育邮箱的个人信息 🔞
++ 没通过？ 试着同步一下登录账号和教育邮箱的个人信息 🔞
 
-🕒 耗**时参考： **网络稳定的话，几分钟到半小时搞定！
+🕒 **耗时参考：** 网络稳定的话，几分钟到半小时搞定！
 
 一共分两步，申请注册学生身份和在官方申请。
 
@@ -737,7 +696,7 @@ Google 这两天是真·开挂！😱 这一**波更新直接把** AI 圈**炸�
 
 1、注册学生身份
 
-地址：https://accounts.psu.edu/create/new
+地址：`https://accounts.psu.edu/create/new`
 
 ![](img/a800c43c9123a296789e8169927dd50c.png)
 
@@ -745,7 +704,7 @@ Google 这两天是真·开挂！😱 这一**波更新直接把** AI 圈**炸�
 
 ![](img/57be9b792c6be1239e618cb483c4b8b4.png)
 
-![](img/9b3e3073efca913a5ff48ad396bbd185.png)
+![](img/9b3e3073efca913a1ff48ad396bbd185.png)
 
 ![](img/4a2e266f34ab1b3300599850d2d12adf.png)
 
@@ -763,7 +722,7 @@ Google 这两天是真·开挂！😱 这一**波更新直接把** AI 圈**炸�
 
 2、谷歌里申请
 
-地址：http://goo.gle/freepro
+地址：`http://goo.gle/freepro`
 
 ![](img/fb3902a447b8acc221c199f0af4ad353.png)
 
@@ -777,49 +736,49 @@ Google 这两天是真·开挂！😱 这一**波更新直接把** AI 圈**炸�
 
 好啦，恭喜你，成功订阅后，不管谷歌的哪个平台，以下这些平台的使用配额，比如：生图、生视频、写代码等都是更多的，而且是官方最新的模型。
 
-+   谷歌产品链接：
++ 谷歌产品链接：
 
-https://aistudio.google.com/apps
+`https://aistudio.google.com/apps`
 
-https://gemini.google.com/
+`https://gemini.google.com/`
 
-https://labs.google/fx/tools/whisk
+`https://labs.google/fx/tools/whisk`
 
-+   关于香蕉2(Banana Pro)或者谷歌产品的更多信息，点击这里查看
++ 关于香蕉2(Banana Pro)或者谷歌产品的更多信息，点击这里查看
 
-https://deepmind.google/models/gemini-image/
+`https://deepmind.google/models/gemini-image/`
 
-+   关于账号等级与使用额度问题，点击这里查看：
++ 关于账号等级与使用额度问题，点击这里查看：
 
-https://support.google.com/gemini/answer/16275805
+`https://support.google.com/gemini/answer/16275805`
 
 除了最地道的体验方式之外，以下这些平台也连夜接入了bananapro，不过限免的，其实是平台的常见拉新方式，如果你很在意注册新平台的话，可以不用考虑...
 
-1.https://labs.envato.com/image-edit
+1. `https://labs.envato.com/image-edit`
 
 ![](img/609348f9e80c3aa49887d51210401546.png)
 
-1.  https://banana.listenhub.ai
+1. `https://banana.listenhub.ai`
 
 ![](img/821a4f6fed3a9a10fc1ab638d6cd855c.png)
 
-1.  lovart.ai
+1. `lovart.ai`
 
 ![](img/381a05dfebac0a4ff1edd6f972cf4731.png)
 
-1.  flowith.io
+1. `flowith.io`
 
 ![](img/a32c0ab57d2a427770b3cc6fb00fa6a0.png)
 
-5. [app.tapnow.ai ](https://app.tapnow.ai/)
+5. [`app.tapnow.ai`](https://app.tapnow.ai/)
 
 ![](img/ee694b2231ad8ef90b26159d0ec57692.png)
 
-6. [https://higgsfield.ai](https://higgsfield.ai/nano-banana-2-intro)/nano-banana-2-intro
+6. [`https://higgsfield.ai`](https://higgsfield.ai/nano-banana-2-intro)/nano-banana-2-intro
 
 ![](img/c6e0bd1ecefd3eaf81ec0ce1089f65de.png)
 
-7.[https://fal.ai/models/fal-ai/](https://fal.ai/models/fal-ai/nano-banana-pro/edit)nano-banana-pro/edit
+7.[`https://fal.ai/models/fal-ai/`](https://fal.ai/models/fal-ai/nano-banana-pro/edit)nano-banana-pro/edit
 
 ![](img/1dbb1b594a6b4856d24256d3def7b2a9.png)
 
@@ -869,11 +828,11 @@ Google 发布 Gemini 3，在多项 AI 基准测试中获得高分，同时发�
 
 from[@GitHub_Daily](https://x.com/GitHub_Daily) [Sep 7](https://x.com/GitHub_Daily/status/1964614630111694943)
 
-https://github.com/PicoTrex/Awesome-Nano-Banana-images
+`https://github.com/PicoTrex/Awesome-Nano-Banana-images`
 
 ![](img/1d3f847d2a7d4a13b948151042af68bc.png)
 
-Pr**o**m**p**t:
+**Prompt:**
 
 A 2×2 instructional pose comparison grid, designed to teach how to pose vs. how not to pose. The image is divided into four equal panels, each panel containing a vertically oriented portrait photo (3:4 ratio) of the same slim female model, photographed in the same location, lighting, and outfit for direct comparison.
 
@@ -893,7 +852,7 @@ Top-Left Panel
 
 Not to Do):
 
-Awkward pose with poor posture: shoulders down, slouched, hips squared to the camera, limbs stiff, body flattened,  legs uneven. Red “X” symbol placed clearly in the corner to indicate incorrect posing,.
+Awkward pose with poor posture: shoulders down, slouched, hips squared to the camera, limbs stiff, body flattened, legs uneven. Red “X” symbol placed clearly in the corner to indicate incorrect posing,.
 
 Top-Right Panel
 
@@ -909,15 +868,19 @@ Bottom-Left Panel
 
 Not to Do):
 
+
+
+## 图像生成提示词与姿势示例
+
 Flat, unflattering pose: squared stance, no movement in hips or shoulders, arms hanging stiffly. Red “X” symbol to show incorrect posing.
 
-Bottom-Right Panel
+### Bottom-Right Panel
 
-How to Pose):
+### How to Pose
 
 Correct pose with dynamic posture: slight hip pop, torso angle, relaxed shoulders, natural arm placement, confident body language. Green check mark indicating proper posing technique.
 
-Instructional Elements:
+### Instructional Elements
 
 Red “X” icons clearly mark incorrect poses
 
@@ -927,21 +890,21 @@ Consistent framing, distance, lighting, and camera angle across all images
 
 Clean, educational layout focused on body positioning
 
-Photography Style:
+### Photography Style
 
 Neutral editorial photography, realistic proportions, no glamour retouching, no dramatic lighting. Clear instructional clarity. Sharp focus, natural colors.
 
-Aspect Ratios:
+### Aspect Ratios
 
 Each photo: 3:4 portrait
 
 Overall image: 2×2 grid layout
 
-Mood & Purpose:
+### Mood & Purpose
 
 Educational, instructional, confident, professional pose-guidance visual.
 
-Optional Negative Prompt:
+### Optional Negative Prompt
 
 distorted anatomy, exaggerated curves, inconsistent lighting, different models, busy background, text overlays, clutter, watermark, cartoon style, low resolution
 
@@ -953,11 +916,11 @@ distorted anatomy, exaggerated curves, inconsistent lighting, different models, 
 
 一款先进的 AI 图像模型，支持自然语言驱动的精细图像编辑，能保持人脸与动物等细节一致性。从本周二起在 Gemini 应用、Gemini API、Google AI Studio 和 Vertex AI 平台全面开放。该工具月初在众包评测平台 LMArena 上引发热议，以 “nano-banana” 的匿名身份出现，表现优异。谷歌随后确认，这正是其 Gemini 2.5 Flash AI 模型的原生图像能力，并在多个基准测试中表现为最先进水平。
 
-最近大火的Nano-banana还有哪些实用有趣玩儿法？怎么用呢？简单的案例你肯定都见过了，这里汇总了最新的国外网友有意思的案例，有结合n8n批量处理电商图、有结合视频平台视频换脸、换背景、有照片变手办视频、也有普通人也能用上的证件照的教程，不论你是哪类人群，一定可以给你有所启发哦，让我们一起来看看吧。
+最近大火的 Nano-banana 还有哪些实用有趣玩儿法？怎么用呢？简单的案例你肯定都见过了，这里汇总了最新的国外网友有意思的案例，有结合 `n8n` 批量处理电商图、有结合视频平台视频换脸、换背景、有照片变手办视频、也有普通人也能用上的证件照的教程，不论你是哪类人群，一定可以给你有所启发哦，让我们一起来看看吧。
 
 ## 官方介绍
 
-https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn#template_6，官方详细介绍了这款产品和提示词指南，比如：逼真场景、风格化插画和贴纸、图片中的文字准确无误、商业摄影等
+`https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn#template_6`，官方详细介绍了这款产品和提示词指南，比如：逼真场景、风格化插画和贴纸、图片中的文字准确无误、商业摄影等
 
 ![](img/fc6de09755dd964c40d2d1ca1e42412e.png)
 
@@ -967,23 +930,23 @@ https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn#template_6，官
 
 除了谷歌自身产品可以用以外，还有很多大的平台也集成了这一模型
 
-1、https://gemini.google.com/ 这里出图可以设置图像比例尺寸，方法是ar#:#，有常见的几种比例，如： 1:1、16:9、9:16、3:4 和 4:3。我常用的写法是后面加：横/竖图尺寸
+1. `https://gemini.google.com/` 这里出图可以设置图像比例尺寸，方法是 `ar#:#`，有常见的几种比例，如： 1:1、16:9、9:16、3:4 和 4:3。我常用的写法是后面加：横/竖图尺寸
 
 ![](img/32817c738a9e720ca07454a0505ff69c.png)
 
 ![](img/c90b8120084a4b1426ee0ea9e02d0d88.png)
 
-2、https://aistudio.google.com/gen-media 这里的质量比gemini要好，个人感受
+2. `https://aistudio.google.com/gen-media` 这里的质量比 gemini 要好，个人感受
 
-效果可以去这里查看https://mp.weixin.qq.com/s/e4hae_Vn_L-jEEudTFB50g
+效果可以去这里查看 `https://mp.weixin.qq.com/s/e4hae_Vn_L-jEEudTFB50g`
 
 ![](img/9398a3f1575df1448870ac81c9ac7629.png)
 
 ![](img/8732af21ec0c54dd39781247e2bea718.png)
 
-3、 Vertex AI https://cloud.google.com/vertex-ai?hl=en
+3. Vertex AI `https://cloud.google.com/vertex-ai?hl=en`
 
-4、这个是最先能使用香蕉的平台，香蕉在8月初就以匿名身份出现在这里。
+4. 这个是最先能使用香蕉的平台，香蕉在 8 月初就以匿名身份出现在这里。
 
 [ht](https://lmarena.ai/?chat-modality=image)[tps://lmarena.ai/](https://lmarena.ai/?chat-modality=image)?chat-modality=image
 
@@ -991,27 +954,27 @@ https://ai.google.dev/gemini-api/docs/image-generation?hl=zh-cn#template_6，官
 
 添加图片注释，不超过 140 字（可选）
 
-5、freepik 老牌设计素材网站，最先上线ai板块的平台  https://www.freepik.com/pikaso/ai-image-generator#from_element=mainmenu
+5. freepik 老牌设计素材网站，最先上线 ai 板块的平台  `https://www.freepik.com/pikaso/ai-image-generator#from_element=mainmenu`
 
 ![](img/9861f9368da5f58c9be0e35d27486eee.png)
 
-6、lovart  https://www.lovart.ai/home
+6. lovart  `https://www.lovart.ai/home`
 
-图像类agent，这个平台限时免费使用3天，9月2号截止
+图像类 agent，这个平台限时免费使用 3 天，9 月 2 号截止
 
 ![](img/6258f1b76d12e4dc972fae2c613e422a.png)
 
-7、集成多个模型的优质平台 https://www.krea.ai/image
+7. 集成多个模型的优质平台 `https://www.krea.ai/image`
 
 ![](img/c33c998dd410651b114f9e0044992a0e.png)
 
-8、集成多个优质模型的平台 [ht](https://poe.com/Gemini-2.5-Flash-Image)[tps://poe.com/Ge](https://poe.com/Gemini-2.5-Flash-Image)mini-2.5-Flash-Image
+8. 集成多个优质模型的平台 [ht](https://poe.com/Gemini-2.5-Flash-Image)[tps://poe.com/Ge](https://poe.com/Gemini-2.5-Flash-Image)mini-2.5-Flash-Image
 
 ![](img/03becbbca14600c36e6737356e291816.png)
 
 添加图片注释，不超过 140 字（可选）
 
-9、heygen、Adobe Firefly 、fal、liblib、Higgsfield's、trickle等，市面上ai生图网站基本都集成了这个模型，大部分需要付费使用，毕竟官方目前免费使用，就不一一推荐了。
+9. heygen、Adobe Firefly 、fal、liblib、Higgsfield's、trickle 等，市面上 AI 生图网站基本都集成了这个模型，大部分需要付费使用，毕竟官方目前免费使用，就不一一推荐了。
 
 ## 人像类
 
@@ -1023,7 +986,7 @@ Upper body, in a sitting pose, showing teasing attitude with fingers lightly tou
 
 ## 网友案例
 
-过**于简单的案例，比如换背景、换**表情、风格迁移等这些就不放过多**了，在3月初Ge**min[绘画 | Chatgpt 4o](https://aigclena.feishu.cn/wiki/D75yw0kfWiUzZikeME6c3zwvnid) 2.0的时候就已经实现了，往下拉到【gemini2.0基本介绍】处有案例，只是当时4o太强了（4o案例点击跳转 -  ），盖过了genimi flash2.0的风头，上周二发布的是genimi flash2.5，又名Nano-banana，因为太火了，谷歌还将生图按钮换成了黄色。接下来，我们来看下最新来自X上网友的牛逼案例吧，其中也有几个我们国内的大佬。
+过于简单的案例，比如换背景、换表情、风格迁移等这些就不放过多了，在 3 月初 Ge min[绘画 | Chatgpt 4o](https://aigclena.feishu.cn/wiki/D75yw0kfWiUzZikeME6c3zwvnid) 2.0 的时候就已经实现了，往下拉到【gemini2.0基本介绍】处有案例，只是当时 4o 太强了（4o 案例点击跳转 - ），盖过了 genimi flash2.0 的风头，上周二发布的是 genimi flash2.5，又名 Nano-banana，因为太火了，谷歌还将生图按钮换成了黄色。接下来，我们来看下最新来自 X 上网友的牛逼案例吧，其中也有几个我们国内的大佬。
 
 ![](img/881d47eba0a5f5ab4ee5ec02cd4ea3de.png)
 
@@ -1043,13 +1006,13 @@ from [@dev_valladares](https://x.com/dev_valladares) [@trudypainter](https://x.c
 
 [twitter-video-1996x1080-video1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PtcNbumSOoYDc5xtZFIcnHJunne)
 
-使用工作流将图片转3d图
+使用工作流将图片转 3d 图
 
 ![](img/b9076b6a07a78616b90583623afd72d1.png)
 
 [twitter-video-1468x1080-video1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BKPxblZEvoPtrCx8udzcDahnnqc)
 
-香蕉+Seedance 1.0 2个小时不到完成的动画
+香蕉 + Seedance 1.0 2 个小时不到完成的动画
 
 ![](img/3a1e03167fb79b4f380fa951d7efa756.png)
 
@@ -1061,7 +1024,7 @@ Banana + Runway Act 2
 
 [twitter-video-1316x720-video1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ShjrbZhFzo6mW9xHOp6cjRfBnMe)
 
-动画产业新纪元 from[@tapehead_Lab](https://x.com/tapehead_Lab)
+动画产业新纪元 from [@tapehead_Lab](https://x.com/tapehead_Lab)
 
 ![](img/091d4d5c5cdbc9c372cdbcb9caad3cec.png)
 
@@ -1071,7 +1034,7 @@ Banana + Runway Act 2
 
 ![](img/4652abdaa705162745f7db48f075b00b.png)
 
-13种物品合成到一张图里
+13 种物品合成到一张图里
 
 ![](img/bcb86e4e6c37a340a761e5544d1bde2f.png)
 
@@ -1109,7 +1072,6 @@ From zho
 
 根据简笔画改变人物姿势
 
-
 ![](img/bf807811b79dad51cc9748f3c3d1df35.png)
 
 ![](img/df69fd2aa297c1a42404de78059e2a5a.png)
@@ -1132,7 +1094,7 @@ From zho
 
 ![](img/304a42799f27a60282add2ff0f455ba1.png)
 
-提示词：This girl is cosplaying as the character in the picture. She's having her photo taken outdoors at Comic Market.japanese cute girl.
+提示词：This girl is cosplaying as the character in the picture. She's having her photo taken outdoors at Comic Market. japanese cute girl.
 
 ![](img/5d176095844430ebc9d062b96b020d10.png)
 
@@ -1147,6 +1109,12 @@ Put the subject into a scene from the movie "Batman Begins" with matching lighti
 Make it so the subject is holding a bottle of Coca-Cola in a natural way.
 
 ![](img/d1c71e634ce20af74d6a5bcd139502ea.png)
+
+
+
+# AI图像与视频编辑案例合集
+
+## 图像编辑示例
 
 Change my appearance to make me look like a professional
 
@@ -1206,15 +1174,13 @@ Color grade the photo to make it more cinematic.
 
 ![](img/02d8c44e248ca3a5d81e9c2cd7755723.png)
 
-
-
 ![](img/7464491544fa91f13760f8e5221c5301.png)
 
 上传图片，谷歌对其标注
 
 提示词：
 
-you are a location-based AR experience generator. highlight [point of interest] in this image and annotate relevant information about it.
+you are a location-based AR experience generator. highlight `[point of interest]` in this image and annotate relevant information about it.
 
 ![](img/122fb26805f93a4fc09ebcd8fb838d51.png)
 
@@ -1237,7 +1203,6 @@ you are a location-based AR experience generator. highlight [point of interest] 
 from [@oran_ge](https://x.com/oran_ge)
 
 ![](img/cb98c84727a960eb1c8b220857249e1f.png)
-
 
 ![](img/d73eadd524649e0b3918818cb1b28bf9.png)
 
@@ -1325,7 +1290,7 @@ replace the brush area with a chanel bag
 
 [@egeberkin](https://x.com/egeberkina)
 
-以下来自：[@msjiaozhu](https://x.com/msjiaozhu)  通过姿势控制人物动作，像sd里openpose一样实现姿势控制，比较擦边，不过后续估计这类NSFW提示词也会被禁掉，这或许是比较有钱途或者众多网友喜闻乐见的玩法。
+以下来自：[@msjiaozhu](https://x.com/msjiaozhu)  通过姿势控制人物动作，像sd里`openpose`一样实现姿势控制，比较擦边，不过后续估计这类NSFW提示词也会被禁掉，这或许是比较有钱途或者众多网友喜闻乐见的玩法。
 
 ![](img/855bb453b3376697e013c339f4550649.png)
 
@@ -1347,7 +1312,7 @@ From [@techhalla](https://x.com/techhalla)
 
 看起来像是在演唱这首歌，不需要真唱，看起来像就可以
 
-第二步： runway-Gen 3 Alpha
+第二步：runway-Gen 3 Alpha
 
 将录制好的视频传到gen3，将第一帧图片下载下来
 
@@ -1393,21 +1358,21 @@ From [@Ror_Fly](https://x.com/Ror_Fly)
 
 无需提示词也能实现产品流程一致性
 
-+   输入：1 张图像
++ 输入：1 张图像
 
-+   输出：20 张图像
++ 输出：20 张图像
 
 操作流程：
 
-1.  上传基础图像
+1. 上传基础图像
 
-1.  生成不同的图像角度
+2. 生成不同的图像角度
 
-1.  为每个角度创建新提示词
+3. 为每个角度创建新提示词
 
-1.  生成图像
+4. 生成图像
 
-1.  结合 Kling 2.1 关键帧
+5. 结合 Kling 2.1 关键帧
 
 ![](img/11c3a0dc1ad3130b7174a7e688456acc.png)
 
@@ -1415,7 +1380,7 @@ From [@Ror_Fly](https://x.com/Ror_Fly)
 
 ### 案例2 提效电商行业n8n
 
-from[@mikefutia](https://x.com/mikefutia)
+from [@mikefutia](https://x.com/mikefutia)
 
 Nano Banana 搭配 n8n，效果简直离谱到爆🤯
 
@@ -1457,7 +1422,6 @@ lovart3天免费可用，截至9月2号
 
 from [@minchoi](https://x.com/minchoi)
 
-
 [twitter-video-1280x720-video1 (12).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WcKObSG2joxVRSxLL4ochhein3f)
 
 ### 案例二
@@ -1480,7 +1444,7 @@ From 大聪明
 
 你需要生成一个长笔记，给中国的中学生解释清楚一件事情：
 
-{主题}
+`{主题}`
 
 这个长笔记的背景风格为笔记本/手帐，适合手机阅读
 
@@ -1496,13 +1460,11 @@ From 大聪明
 
 以下为你要生成的内容
 
-{
-
-内容和图片描述
-
-}
+`{ 内容和图片描述 }`
 
 请生成这个笔记，并在最后给出信息“这篇文章，完全由 lovart & nano-banana 生成，带来直观的信息表达”
+
+
 
 ![](img/1b7d50deb732a09ee7123931c780ed97.png)
 

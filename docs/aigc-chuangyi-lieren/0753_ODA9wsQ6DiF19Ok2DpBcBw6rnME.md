@@ -1,12 +1,13 @@
+
 # 20250628-谷歌的这个小众产品，能白Piao视频生成工具Veo3
 
 > 来源：[https://aigcreative.feishu.cn/docx/W0n4dMsumoFcCux3KEAc5ZhQnuh](https://aigcreative.feishu.cn/docx/W0n4dMsumoFcCux3KEAc5ZhQnuh)
 
 目前，能使用谷歌Veo 3视频生成模型的官方渠道只有两个：
 
-> Google Flow官网：https://labs.google/flow/about
+> Google Flow官网：`https://labs.google/flow/about`
 
-> Google Gemini官网：https://gemini.google.com/app
+> Google Gemini官网：`https://gemini.google.com/app`
 
 再有就是一些使用API的第三方平台了，如FreePik等。
 
@@ -30,7 +31,7 @@ Vids，这个也是谷歌的产品。
 
 > 它通过与 Google Workspace 的深度整合，简化了从现有文档到视频的转换过程，适合非专业用户。
 
-> 直接上链接：https://docs.google.com/videos/u/0/
+> 直接上链接：`https://docs.google.com/videos/u/0/`
 
 ![](img/a1df33c88a7372c9de2cca9790e82288.png)
 
@@ -38,11 +39,11 @@ Vids，这个也是谷歌的产品。
 
 ![](img/b1d1ba7b90063630d76d6796c6c570f0.png)
 
-进入工作界面，在右侧找到“**Generate**”视频生成按钮，选择“**Veo 3**”模型，输入文生视频的**提示词**即可！
+进入工作界面，在右侧找到`Generate`视频生成按钮，选择Veo 3模型，输入文生视频的提示词即可！
 
 ![](img/269b813878534cddaa88f1b7e57dd0cd.png)
 
-例如Prompt：
+例如`Prompt`：
 
 > Dynamic FPV: high-speed drone races through foggy forest. Motion blur, sleek vehicle, dramatic lighting, low camera angle.
 
@@ -56,7 +57,7 @@ Vids，这个也是谷歌的产品。
 
 【方式2】前面提到，Vids，本身就是一个轻量化的视频剪辑制作工具，那接下来的操作就很愉快了。
 
-鼠标移到视频上方，直接点击“insert”，这个视频就直接作为素材添加到了剪辑的时间线上，真是太方便了！
+鼠标移到视频上方，直接点击`insert`，这个视频就直接作为素材添加到了剪辑的时间线上，真是太方便了！
 
 ![](img/d56f7fedcaf834d484d5065b6069817a.png)
 
@@ -78,7 +79,7 @@ Vids，这个也是谷歌的产品。
 
 可以说，Vids就是简化版的剪映吧！
 
-**对于**视频剪辑要求不高的朋友，是个很不错的平替方案~~能省下剪映会员，差不多两顿火锅。
+对于视频剪辑要求不高的朋友，是个很不错的平替方案~~能省下剪映会员，差不多两顿火锅。
 
 总体用下来，还得是谷歌啊，人家的生态家底在这里，AI大模型一赋能，就完全变成了生产力工具。
 
@@ -92,6 +93,6 @@ AI视频生成出来，直出直用！
 
 能使用谷歌，有一个谷歌账号。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

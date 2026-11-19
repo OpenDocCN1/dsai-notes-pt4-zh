@@ -1,3 +1,4 @@
+
 # Coze+DeepSeek联网版，打造IP专属口播视频工作流
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/OIpfdPGenoUP6yxxLMCcPogRnxc](https://zinxkclpk97.feishu.cn/docx/OIpfdPGenoUP6yxxLMCcPogRnxc)
@@ -98,7 +99,7 @@
 
 ![](img/a88d64aa7816b448d50a30c87b73e0c1.png)
 
-[2月19日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Car9bsFz5oTjj9xJQ7ZcckbDngf)
+[`2月19日.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Car9bsFz5oTjj9xJQ7ZcckbDngf)
 
 剪映草稿这种模式的好处，就是你可以随意调整素材和特效，进行二次创作。
 
@@ -106,7 +107,7 @@
 
 ![](img/e8f70d8bd5359465f471e69dfa5fd9c8.png)
 
-[coze-1739952747594.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZXIabNi2Co2JpmxnHgTcxZxsnxL)
+[`coze-1739952747594.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZXIabNi2Co2JpmxnHgTcxZxsnxL)
 
 好了，以上就是这次分享的全部内容，如果觉得有用欢迎点赞、关注支持。
 

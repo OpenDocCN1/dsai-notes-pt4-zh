@@ -1,34 +1,28 @@
+
 # Datawhale 动手学深度学习（Pytorch版）
 
 > 来源：[https://datawhaler.feishu.cn/docx/WmerdAIBRopWrnx3juOcTmbXnjg](https://datawhaler.feishu.cn/docx/WmerdAIBRopWrnx3juOcTmbXnjg)
 
 ## 面向人员
 
-+   有Python基础
-
-+   有高数，线代，概率论基础
-
-+   本科大二左右，或者研一
++ 有Python基础
++ 有高数，线代，概率论基础
++ 本科大二左右，或者研一
 
 ## 学习资源
 
-+   教材：https://zh-v2.d2l.ai/
-
-+   纸质书： https://j.youzan.com/2E82KT（最低折扣五折购买地址）
-
-+   视频： https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497
-
-+   笔记：https://github.com/MLNLP-World/DeepLearning-MuLi-Notes/tree/main/notes
-
-+   竞赛：https://tianchi.aliyun.com/competition/entrance/231784/introduction?spm=5176.12281973.0.0.7c47106baWMBl3
-
-+   OpenI云环境（可直接运行）：https://openi.pcl.ac.cn/Datawhale/d2l
++ 教材：`https://zh-v2.d2l.ai/`
++ 纸质书：`https://j.youzan.com/2E82KT`（最低折扣五折购买地址）
++ 视频：`https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497`
++ 笔记：`https://github.com/MLNLP-World/DeepLearning-MuLi-Notes/tree/main/notes`
++ 竞赛：`https://tianchi.aliyun.com/competition/entrance/231784/introduction?spm=5176.12281973.0.0.7c47106baWMBl3`
++ OpenI云环境（可直接运行）：`https://openi.pcl.ac.cn/Datawhale/d2l`
 
 ## 课程大纲
 
 ### 整体排期
 
-| **学习安排** | **学习****时间** | **学习时长** | **分享嘉宾** |
+| **学习安排** | **学习时间** | **学习时长** | **分享嘉宾** |
 | --- | --- | --- | --- |
 | 开营：《动手学深度学习》开场分享 | 3月18日 | 10分钟 | **李沐** |
 | 开营：如何学深度学习 | 3月18日 | 30分钟 | **杨毅远** |

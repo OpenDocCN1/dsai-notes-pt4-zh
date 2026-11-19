@@ -1,3 +1,4 @@
+
 # 第十二章：评估与基准测试
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/P1z1dhgIpoQuItxBeL2cZmbdnff](https://qqs7y1hozd1.feishu.cn/docx/P1z1dhgIpoQuItxBeL2cZmbdnff)
@@ -12,13 +13,13 @@
 
 这是最直观、最普遍的评估形式。各大模型发布时，都会在一系列标准化基准上报告其得分。例如：
 
-[https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/ch](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-1-Deepseek-R1%E7%9A%84%E5%9F%BA%E5%87%86%E6%80%A7%E8%83%BD.png)apter12/images/12-1-Deepseek-R1%E7%9A%84%E5%9F%BA%E5%87%86%E6%80%A7%E8%83%BD.png
+![图12.1 Deepseek-R1的基准性能](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-1-Deepseek-R1%E7%9A%84%E5%9F%BA%E5%87%86%E6%80%A7%E8%83%BD.png)
 
 图12.1 Deepseek-R1的基准性能
 
 Deepseek-R1论文 Figure 1 报告的基准性能，展示了 Deepseek-R1 在AIME 2024、Codeforces、GPQA Diamond、MATH 500等基准上的性能
 
-[https://raw.githubusercontent.com/datawhalechina/diy-llm/main/do](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-2-llama4%E7%9A%84%E5%9F%BA%E5%87%86%E6%80%A7%E8%83%BD.png)cs/chapter12/images/12-2-llama4%E7%9A%84%E5%9F%BA%E5%87%86%E6%80%A7%E8%83%BD.png
+![图12.2 llama4的基准性能](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-2-llama4%E7%9A%84%E5%9F%BA%E5%87%86%E6%80%A7%E8%83%BD.png)
 
 图12.2 llama4的基准性能
 
@@ -60,13 +61,13 @@ Llama 4 Behemoth 指令微调版本的基准性能，在其技术报告里展示
 
 ### 用户选择与市场反馈
 
-[另一种“评估”是看用](https://openrouter.ai/rankings)户实际选择了谁。OpenRouter 网站通过路由流量到不同的模型，积累了大量关于用户偏好的数据。根据发送到每个模型的 token 数量，可以生成一个“使用量”排行榜。这个榜单显示，OpenAI、Anthropic、Google 以及国内的 Deepseek 和 Qwen 模型目前占据主导地位。这表明，在真实世界中，“被广泛使用”本身就是一个强有力的“好”的指标。
+[另一种“评估”是看用户实际选择了谁](https://openrouter.ai/rankings)。OpenRouter 网站通过路由流量到不同的模型，积累了大量关于用户偏好的数据。根据发送到每个模型的 token 数量，可以生成一个“使用量”排行榜。这个榜单显示，OpenAI、Anthropic、Google 以及国内的 Deepseek 和 Qwen 模型目前占据主导地位。这表明，在真实世界中，“被广泛使用”本身就是一个强有力的“好”的指标。
 
 ![](img/9b5e70fcdebb828d1fd6c23ba8b3093c.png)
 
 图12.9 不同厂商token使用排行榜
 
-[除以上之外，还有一个很受欢](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard)迎的评测榜单是Chatbot Arena。它是由国际开放研究组织 LMSYS Org 推出的大模型竞技评测平台，最大特点是采用匿名盲测机制随机配对模型，通过用户投票结合 Elo 评分系统量化模型能力。
+[除以上之外，还有一个很受欢迎的评测榜单是Chatbot Arena](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard)。它是由国际开放研究组织 LMSYS Org 推出的大模型竞技评测平台，最大特点是采用匿名盲测机制随机配对模型，通过用户投票结合 Elo 评分系统量化模型能力。
 
 ![](img/df2909abb595a79035784b11f178d77e.png)
 
@@ -80,11 +81,9 @@ Llama 4 Behemoth 指令微调版本的基准性能，在其技术报告里展示
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.png)
 
-[](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/)
-
 然而，正如 [Andrej Karpathy](https://x.com/karpathy/status/1896266683301659068?s=20) 所指出的，当前我们正面临一场“评估危机”。
 
-![](img/f470199203a4ea6ba944bcf38d29caf0.pngCGZ2bAfmHoPoBIxDPfkc4YMpnJT/)
+![](img/f470199203a4ea6ba944bcf38d29caf0.png)
 
 图12.11 Andrej Karpathy关于当前评估问题在x平台上发表的看法
 
@@ -102,59 +101,59 @@ Llama 4 Behemoth 指令微调版本的基准性能，在其技术报告里展示
 
 评估的意义取决于你想回答的问题：
 
-+   对于终端用户/企业：我应该采购哪个模型来满足我的具体需求（如客户服务聊天机器人）？
++ 对于终端用户/企业：我应该采购哪个模型来满足我的具体需求（如客户服务聊天机器人）？
 
-+   对于研究人员：我们是否在模型的原始能力（如“智能”）上取得了科学进步？
++ 对于研究人员：我们是否在模型的原始能力（如“智能”）上取得了科学进步？
 
-+   对于政策制定者/安全机构：当前模型带来的益处和风险分别是什么？现状如何？
++ 对于政策制定者/安全机构：当前模型带来的益处和风险分别是什么？现状如何？
 
-+   对于模型开发者：我该如何改进我的模型？哪些干预措施有效？
++ 对于模型开发者：我该如何改进我的模型？哪些干预措施有效？
 
 为了将抽象目标转化为具体评估方案，我们需要思考四个关键环节：
 
 #### 输入是什么？
 
-+   提示词从何而来？覆盖了哪些使用场景？
++ 提示词从何而来？覆盖了哪些使用场景？
 
-+   我们是否在长尾分布（即那些出现频率很低、不常见但真实存在的输入情况，如在语言模型中，可能包括罕见领域的问题、复杂推理任务、边缘语言现象、对抗性或歧义性较强的语句等）中包含了具有代表性的困难输入样本？
++ 我们是否在长尾分布（即那些出现频率很低、不常见但真实存在的输入情况，如在语言模型中，可能包括罕见领域的问题、复杂推理任务、边缘语言现象、对抗性或歧义性较强的语句等）中包含了具有代表性的困难输入样本？
 
-+   输入是否需要适配模型？例如，在多轮对话中，用户的下一条输入依赖于模型的上一条回复，这使得评估变得动态化。
++ 输入是否需要适配模型？例如，在多轮对话中，用户的下一条输入依赖于模型的上一条回复，这使得评估变得动态化。
 
 #### 如何调用模型？
 
-+   如何提示模型？是零样本、少样本还是思维链（CoT）？
++ 如何提示模型？是零样本、少样本还是思维链（CoT）？
 
-+   是否允许模型使用外部工具（如代码解释器、RAG 检索增强生成）？
++ 是否允许模型使用外部工具（如代码解释器、RAG 检索增强生成）？
 
-+   我们是在评估语言模型本身，还是评估一个由模型和代理框架（agent scaffolding）组成的完整系统？开发者关心前者，而用户关心后者。
++ 我们是在评估语言模型本身，还是评估一个由模型和代理框架（agent scaffolding）组成的完整系统？开发者关心前者，而用户关心后者。
 
 #### 如何评估输出？
 
-+   参考答案是否准确无误？
++ 参考答案是否准确无误？
 
-+   使用什么指标？对于代码生成，是 pass@1（模型生成一个回答，输出回答和标准答案一样即为正确）还是 pass@10（模型一次生成十个回答，只要十个输出回答里有一个和标准答案一样即为正确））？
++ 使用什么指标？对于代码生成，是 `pass@1`（模型生成一个回答，输出回答和标准答案一样即为正确）还是 `pass@10`（模型一次生成十个回答，只要十个输出回答里有一个和标准答案一样即为正确）？
 
-+   如何考量成本？模型性能不应只看准确率，还要考虑计算成本。例如：一个更大但仅略优的模型，是否值得其高推理延迟或训练开销？在资源受限场景（如移动端、低延迟服务），成本是关键约束。
++ 如何考量成本？模型性能不应只看准确率，还要考虑计算成本。例如：一个更大但仅略优的模型，是否值得其高推理延迟或训练开销？在资源受限场景（如移动端、低延迟服务），成本是关键约束。
 
-+   如何处理不对称错误？某些错误的代价远高于其他错误。在医疗、金融、法律等高风险领域中，幻觉（hallucination）的代价远高于其他错误。
++ 如何处理不对称错误？某些错误的代价远高于其他错误。在医疗、金融、法律等高风险领域中，幻觉（hallucination）的代价远高于其他错误。
 
-+   如何评估开放域生成任务？当没有标准答案时（如“写一个关于斯坦福的精彩故事”），评估变得极其困难。常见做法：
++ 如何评估开放域生成任务？当没有标准答案时（如“写一个关于斯坦福的精彩故事”），评估变得极其困难。常见做法：
 
-+   使用人工评估（成本高但可靠）；
++ 使用人工评估（成本高但可靠）；
 
-+   用 LLM-as-a-judge（让另一个大模型打分）；
++ 用 LLM-as-a-judge（让另一个大模型打分）；
 
-+   基于多样性、流畅性、相关性等维度设计 Proxy metrics（代理指标，是指在无法直接测量目标量（target quantity）时，用来间接反映或近似该目标的可测量指标）；
++ 基于多样性、流畅性、相关性等维度设计 Proxy metrics（代理指标，是指在无法直接测量目标量（target quantity）时，用来间接反映或近似该目标的可测量指标）；
 
-+   通过用户反馈或 A/B 测试衡量实际效用。
++ 通过用户反馈或 A/B 测试衡量实际效用。
 
 #### 如何解读结果？
 
-+   一个 91% 的分数意味着什么？它是否足够好，可以部署给真实用户？
++ 一个 91% 的分数意味着什么？它是否足够好，可以部署给真实用户？
 
-+   如何判断模型是否真正掌握了某种泛化能力，而不是仅仅记住了训练数据？
++ 如何判断模型是否真正掌握了某种泛化能力，而不是仅仅记住了训练数据？
 
-+   最重要的是，我们到底在评估什么？是最终的产品模型、一个完整的系统，还是底层的研究方法？
++ 最重要的是，我们到底在评估什么？是最终的产品模型、一个完整的系统，还是底层的研究方法？
 
 忽略这些问题，仅凭一个分数做判断，是评估中最大的误区。
 
@@ -164,11 +163,11 @@ Llama 4 Behemoth 指令微调版本的基准性能，在其技术报告里展示
 
 在深入具体的下游任务基准之前，我们必须理解一个基础且重要的度量标准：困惑度（Perplexity）。
 
-语言模型的本质是一个概率分布 p(x)，它对任意一段 token 序列 x 给出一个概率值 —— 即这个序列“有多大概率被模型生成”。困惑度衡量了模型对某个数据集分配高概率的能力。在预训练阶段，模型的目标就是最小化训练集上的困惑度。数值越小越好 —— 表示模型认为这些数据“很自然”，预测能力强。
+语言模型的本质是一个概率分布 `p(x)`，它对任意一段 token 序列 `x` 给出一个概率值 —— 即这个序列“有多大概率被模型生成”。困惑度衡量了模型对某个数据集分配高概率的能力。在预训练阶段，模型的目标就是最小化训练集上的困惑度。数值越小越好 —— 表示模型认为这些数据“很自然”，预测能力强。
 
 Perplexity=(1p(D))1/NPerplexity=(p(D)1)1/N
 
-其中 p(D)p(D) 是模型给整个数据集 DD 中所有句子联合概率的乘积（通常取 log 求和再指数还原）；∣D∣∣D∣ 是数据集中 token 的总数量。
+其中 `p(D)` 是模型给整个数据集 `D` 中所有句子联合概率的乘积（通常取 log 求和再指数还原）；`∣D∣` 是数据集中 token 的总数量。
 
 ### 12.3.2 什么要用测试集？
 
@@ -184,15 +183,15 @@ Perplexity=(1p(D))1/NPerplexity=(p(D)1)1/N
 
 ### 12.3.2 历史与演变
 
-[2016 年，Jozefowicz 等人在《E](https://arxiv.org/abs/1602.02410)xploring the Limits of Language Modeling》 论文里，用纯 CNN + LSTM 架构，在 十亿（1B） Word Benchmark 上把困惑度从 51.3 降到 30.0 —— 当时是非常大的突破。
+[2016 年，Jozefowicz 等人在《Exploring the Limits of Language Modeling》](https://arxiv.org/abs/1602.02410) 论文里，用纯 CNN + LSTM 架构，在 十亿（1B） Word Benchmark 上把困惑度从 51.3 降到 30.0 —— 当时是非常大的突破。
 
-[https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-12-CNN+LSTM%20%E6%9E%B6%E6%9E%84%E6%98%BE%E8%91%97%E9%99%8D%E4%BD%8E%E5%9B%B0%E6%83%91%E5%BA%A6.png)-12-CNN+LSTM%20%E6%9E%B6%E6%9E%84%E6%98%BE%E8%91%97%E9%99%8D%E4%BD%8E%E5%9B%B0%E6%83%91%E5%BA%A6.png
+![图12.12 CNN+LSTM 架构显著降低困惑度](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-12-CNN+LSTM%20%E6%9E%B6%E6%9E%84%E6%98%BE%E8%91%97%E9%99%8D%E4%BD%8E%E5%9B%B0%E6%83%91%E5%BA%A6.png)
 
 图12.12 CNN+LSTM 架构显著降低困惑度
 
-OpenAI 在 [《](https://cdn.openai.com/better-language-models/)Language Models are Unsupervised Multitask Learners》 论文中发布的 GPT-2，在 WebText（来自 Reddit 链接的网页文本，约 40GB）上训练，然后直接在标准数据集上做 zero-shot（零样本）评估。 这属于“分布外评估”（out-of-distribution），因为训练数据和测试数据来源不同。但它表现很好，说明大规模、多样化的训练数据能带来强大的泛化能力。
+OpenAI 在 [《Language Models are Unsupervised Multitask Learners》](https://cdn.openai.com/better-language-models/) 论文中发布的 GPT-2，在 WebText（来自 Reddit 链接的网页文本，约 40GB）上训练，然后直接在标准数据集上做 zero-shot（零样本）评估。 这属于“分布外评估”（out-of-distribution），因为训练数据和测试数据来源不同。但它表现很好，说明大规模、多样化的训练数据能带来强大的泛化能力。
 
-[https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/ima](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-13-GPT-2%E7%9A%84zero-shot%EF%BC%88%E9%9B%B6%E6%A0%B7%E6%9C%AC%EF%BC%89%E8%AF%84%E4%BC%B0.png)ges/12-13-GPT-2%E7%9A%84zero-shot%EF%BC%88%E9%9B%B6%E6%A0%B7%E6%9C%AC%EF%BC%89%E8%AF%84%E4%BC%B0.png
+![图12.13 GPT-2的zero-shot（零样本）评估](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-13-GPT-2%E7%9A%84zero-shot%EF%BC%88%E9%9B%B6%E6%A0%B7%E6%9C%AC%EF%BC%89%E8%AF%84%E4%BC%B0.png)
 
 图12.13 GPT-2的zero-shot（零样本）评估
 
@@ -200,21 +199,21 @@ OpenAI 在 [《](https://cdn.openai.com/better-language-models/)Language Models 
 
 🔍 发现：
 
-+   随着模型变大，困惑度持续下降 → 表明更大的模型能更好地拟合语言分布。
++ 随着模型变大，困惑度持续下降 → 表明更大的模型能更好地拟合语言分布。
 
-+   在某些任务上（如 LAMBADA），准确率也随模型增大而提高 → 说明语言建模能力迁移到下游任务是有益的。
++ 在某些任务上（如 LAMBADA），准确率也随模型增大而提高 → 说明语言建模能力迁移到下游任务是有益的。
 
-+   但在 1BW 上，大模型改进幅度较小 → 说明该数据集难度更高或已接近极限。
++ 但在 1BW 上，大模型改进幅度较小 → 说明该数据集难度更高或已接近极限。
 
 ### 12.3.3 为什么困惑度仍重要？
 
 自 GPT-2 和 GPT-3 以来，语言建模论文的研究方向已经更多地转向下游任务的准确性。但困惑仍然有用的原因如下：
 
-+   更平滑，适合拟合缩放定律（scaling laws）.下游任务准确率往往波动大、有天花板，而困惑度变化连续，便于研究模型性能如何随参数量/数据量增长。
++ 更平滑，适合拟合缩放定律（scaling laws）.下游任务准确率往往波动大、有天花板，而困惑度变化连续，便于研究模型性能如何随参数量/数据量增长。
 
-+   通用性强，适用于任何文本.不像特定任务需要标注数据，困惑度可以在任何文本上计算 —— 更适合作为“基础能力”的度量。
++ 通用性强，适用于任何文本.不像特定任务需要标注数据，困惑度可以在任何文本上计算 —— 更适合作为“基础能力”的度量。
 
-+   可扩展到条件困惑度（conditional perplexity）.比如在问答任务中，固定问题部分，只计算答案部分的困惑度 —— 也能反映模型在该任务上的语言建模能力。
++ 可扩展到条件困惑度（conditional perplexity）.比如在问答任务中，固定问题部分，只计算答案部分的困惑度 —— 也能反映模型在该任务上的语言建模能力。
 
 📌 所以，困惑度不仅是训练目标，也是分析模型内在能力的重要工具。
 
@@ -222,31 +221,33 @@ OpenAI 在 [《](https://cdn.openai.com/better-language-models/)Language Models 
 
 如果你要做一个排行榜（leaderboard），评估任务准确率很容易：只需要模型输出结果，人工或自动打分即可。但评估困惑度则要求模型必须输出每个 token 的概率分布，并且这些概率加起来必须等于 1（归一化）。这依赖于模型内部机制，存在信任问题：
 
-+   如果模型偷偷作弊（比如输出虚假概率），你就无法检测。
++ 如果模型偷偷作弊（比如输出虚假概率），你就无法检测。
 
-+   早期模型遇到未知词（UNK）时处理不当，也会导致概率不准确。
++ 早期模型遇到未知词（`UNK`）时处理不当，也会导致概率不准确。
 
 🧩 所以，困惑度更适合研究者自己控制模型架构和训练过程的场景，不适合完全黑盒的公开评测。
 
 ### 12.3.5 “困惑度最大主义者”的哲学观点
 
-这是一种理想主义/理论派的观点，他们假设真实世界语言分布是 t，你的模型是 p。最优困惑度就是真实分布的熵 H(t) —— 只有当 p = t 时才能达到。如果你完美建模了真实分布 t，那你就能解决所有语言相关任务（因为任务只是分布的一部分）。因此，不断降低困惑度 → 最终逼近真实分布 → 实现通用人工智能（AGI）。
+
+
+这是一种理想主义/理论派的观点，他们假设真实世界语言分布是 `t`，你的模型是 `p`。最优困惑度就是真实分布的熵 `H(t)` —— 只有当 `p = t` 时才能达到。如果你完美建模了真实分布 `t`，那你就能解决所有语言相关任务（因为任务只是分布的一部分）。因此，不断降低困惑度 → 最终逼近真实分布 → 实现通用人工智能（AGI）。
 
 这听起来很酷，但值得注意的是，现实中，我们并不需要完美建模整个语言分布，很多“边缘”或“无关紧要”的部分对人类任务没用。一味追求最低困惑度可能是资源浪费。
 
-### 12.3.6 一些能够反映模型是否真正‘理解’了语言的下游任务
+## 12.3.6 一些能够反映模型是否真正‘理解’了语言的下游任务
 
 既然困惑度衡量的是模型对语言分布的拟合能力，那么有没有一些具体的、有挑战性的下游任务，能反映模型是否真正‘理解’了语言？
 
-#### 完形填空类任务
+### 完形填空类任务
 
-完形填空类任务就是给定一段上下文（context），让模型预测其中一个被遮盖的词（target word）。这个任务要求模型不仅要理解局部语法，还要捕捉长距离依赖、语义连贯性、世界知识等。只关注某个关键位置的预测质量，而不是整个句子。
+完形填空类任务就是给定一段上下文（`context`），让模型预测其中一个被遮盖的词（`target word`）。这个任务要求模型不仅要理解局部语法，还要捕捉长距离依赖、语义连贯性、世界知识等。只关注某个关键位置的预测质量，而不是整个句子。
 
 因此，完形填空类任务可以看作是“局部困惑度”。
 
 来自 [LAMBADA](https://arxiv.org/abs/1606.06031) 数据集的三个具体例子
 
-[https](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-14-LAMBADA%E5%AE%8C%E5%BD%A2%E5%A1%AB%E7%A9%BA%E4%BB%BB%E5%8A%A1%E7%9A%84%E4%B8%89%E4%B8%AA%E6%A0%B7%E4%BE%8B.png)://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-14-LAMBADA%E5%AE%8C%E5%BD%A2%E5%A1%AB%E7%A9%BA%E4%BB%BB%E5%8A%A1%E7%9A%84%E4%B8%89%E4%B8%AA%E6%A0%B7%E4%BE%8B.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-14-LAMBADA%E5%AE%8C%E5%BD%A2%E5%A1%AB%E7%A9%BA%E4%BB%BB%E5%8A%A1%E7%9A%84%E4%B8%89%E4%B8%AA%E6%A0%B7%E4%BE%8B.png)
 
 图12.14 LAMBADA完形填空任务的三个样例
 
@@ -268,9 +269,9 @@ OpenAI 在 [《](https://cdn.openai.com/better-language-models/)Language Models 
 
 > 中文翻译与理解：普雷斯顿是最后一个戴上那些锁链的人…… 目标句：谢尔盖看着我，对我那低沉沙哑的恳求感到惊讶，但他还是放下了那条 _____。 正确答案：锁链
 
-#### 常识推理任务
+### 常识推理任务
 
-[HellaSwag](https://arxiv.org/pdf/1905.07830)是一个常识推理任务。通常是给定一个视频片段或一段文字描述（premise），然后给出四个选项（A, B, C, D），要求选出最符合常识、最自然、最可能发生的后续动作。它强调的是日常生活的常识推理（commonsense reasoning）和行为合理性判断。
+[HellaSwag](https://arxiv.org/pdf/1905.07830)是一个常识推理任务。通常是给定一个视频片段或一段文字描述（`premise`），然后给出四个选项（A, B, C, D），要求选出最符合常识、最自然、最可能发生的后续动作。它强调的是日常生活的常识推理（commonsense reasoning）和行为合理性判断。
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngIOOgbIfaPo0NpFxsixAc8EKRnce/)
 
@@ -302,9 +303,9 @@ HellaSwag 可以看作是“情境下的困惑度”，模型不需要输出概�
 
 [MMLU](https://arxiv.org/pdf/2009.03300.pdf) 包含 57 个学科（从数学、历史到法律、伦理）的多项选择题。问题源自网络，由学生收集。它更侧重于知识而非语言理解。
 
-最初用 GPT-3 的少样本提示进行评估，最大型号的 X-Large 只能取得不到 0.5 的分数，现在最强的 LLM 在 MMLU 上最高分已达90+。
+最初用 GPT-3 的少样本提示进行评估，最大型号的 `X-Large` 只能取得不到 0.5 的分数，现在最强的 LLM 在 MMLU 上最高分已达90+。
 
-[http](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-16-GPT-3%E5%9C%A8MMLU%E4%B8%8A%E7%9A%84%E5%B0%91%E6%A0%B7%E6%9C%AC%E6%8F%90%E7%A4%BA.png)s://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-16-GPT-3%E5%9C%A8MMLU%E4%B8%8A%E7%9A%84%E5%B0%91%E6%A0%B7%E6%9C%AC%E6%8F%90%E7%A4%BA.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-16-GPT-3%E5%9C%A8MMLU%E4%B8%8A%E7%9A%84%E5%B0%91%E6%A0%B7%E6%9C%AC%E6%8F%90%E7%A4%BA.png)
 
 图12.16 GPT-3在MMLU上的少样本提示
 
@@ -312,9 +313,9 @@ HellaSwag 可以看作是“情境下的困惑度”，模型不需要输出概�
 
 ### MMLU-Pro
 
-[MMLU-Pro](https://arxiv.org/abs/2406.01574) 是对 MMLU 的改进版，移除了噪声大或过于简单的问题，并将选项从 4 个增加到 10 个。模型准确率显著下降，缓解了饱和问题。通常结合思维链（CoT）进行评估。
+[MMLU-Pro](https://arxiv.org/abs/2406.01574) 是对 MMLU 的改进版，移除了噪声大或过于简单的问题，并将选项从 4 个增加到 10 个。模型准确率显著下降，缓解了饱和问题。通常结合思维链（`CoT`）进行评估。
 
-[htt](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-17-MMLU-pro%E5%AF%B9%E6%AF%94MMLU.png)ps://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-17-MMLU-pro%E5%AF%B9%E6%AF%94MMLU.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-17-MMLU-pro%E5%AF%B9%E6%AF%94MMLU.png)
 
 图12.17 MMLU-pro对比MMLU
 
@@ -322,10 +323,8 @@ HellaSwag 可以看作是“情境下的困惑度”，模型不需要输出概�
 
 [GPQA](https://arxiv.org/abs/2311.12022) 由 61 名 PhD 通过 Upwork 平台设计的高难度问题。目标是创建“防谷歌”问题，即非专家即使花 30 分钟用谷歌搜索也难以解答。
 
-+   博士级专家实现了 65% 的 accuracy
-
-+   非专家在可访问谷歌的条件下，在 30 分钟内达到了 34% 的accuracy
-
++   博士级专家实现了 65% 的 `accuracy`
++   非专家在可访问谷歌的条件下，在 30 分钟内达到了 34% 的 `accuracy`
 +   GPT-4 实现了 39%
 
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngHT5zbF3EKoLoHhxJrKccORt4nfe/)
@@ -342,7 +341,7 @@ Humanity's Last Exam 是一个雄心勃勃的项目，包含 2500 道多模态�
 
 图12.19 Humanity's Last Exam 收集筛选流程
 
-当前顶尖模型（如 Geimini 3 Pro Preview）在 https://agi.safe.ai/ 上可以看到，已达到 38.3% 的准确率。
+当前顶尖模型（如 Geimini 3 Pro Preview）在 `https://agi.safe.ai/` 上可以看到，已达到 38.3% 的准确率。
 
 ## 12.5 指令遵循基准
 
@@ -368,7 +367,7 @@ Humanity's Last Exam 是一个雄心勃勃的项目，包含 2500 道多模态�
 
 在 HELM 的 Leaderboard IFEval 上我们可以看到，当前前沿模型在IFEval 能达到 0.951 的准确度。
 
-[https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-22-HELM](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-22-HELM%E4%B8%8A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8IFEval%E7%9A%84%E6%8E%92%E8%A1%8C%E6%A6%9C.png)%E4%B8%8A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8IFEval%E7%9A%84%E6%8E%92%E8%A1%8C%E6%A6%9C.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-22-HELM%E4%B8%8A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8IFEval%E7%9A%84%E6%8E%92%E8%A1%8C%E6%A6%9C.png)
 
 图12.22 HELM上不同模型在IFEval的排行榜
 
@@ -382,21 +381,21 @@ Humanity's Last Exam 是一个雄心勃勃的项目，包含 2500 道多模态�
 
 ### WildBench
 
-[WildBench](https://arxiv.org/pdf/2406.04770) 从100多万条真实人机对话中采样构建评估集，并使用 GPT-4-Turbo 作为裁判，配合检查清单确保评估维度的全面性。其结果与 Chatbot Arena 高度相关（相关系数 0.95），被视为新基准有效性的“事实上的”检验标准。
+[WildBench](https://arxiv.org/pdf/2406.04770) 从100多万条真实人机对话中采样构建评估集，并使用 `GPT-4-Turbo` 作为裁判，配合检查清单确保评估维度的全面性。其结果与 Chatbot Arena 高度相关（相关系数 0.95），被视为新基准有效性的“事实上的”检验标准。
 
-[htt](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-24-WildBench%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B.png)ps://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-24-WildBench%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-24-WildBench%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B.png)
 
 图12.24 WildBench构建流程
 
 在 HELM 的 Leaderboard WildBench 上我们可以看到，当前前沿模型在IFEval 能达到 0.866 的准确度。
 
-[https](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-25-HELM%E4%B8%8A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8WildBench%E7%9A%84%E6%8E%92%E8%A1%8C%E6%A6%9C.png)://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-25-HELM%E4%B8%8A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8WildBench%E7%9A%84%E6%8E%92%E8%A1%8C%E6%A6%9C.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-25-HELM%E4%B8%8A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8WildBench%E7%9A%84%E6%8E%92%E8%A1%8C%E6%A6%9C.png)
 
 图12.25 HELM上不同模型在WildBench的排行榜
 
 ## 12.6 智能体基准
 
-这类基准评估模型作为智能体（Agent） 的能力，即在复杂环境中通过工具调用和迭代规划完成任务。
+这类基准评估模型作为智能体（`Agent`） 的能力，即在复杂环境中通过工具调用和迭代规划完成任务。
 
 ### SWEBench
 
@@ -422,6 +421,8 @@ Humanity's Last Exam 是一个雄心勃勃的项目，包含 2500 道多模态�
 
 [MLEBench](https://arxiv.org/abs/2410.07095) 自动化参与 75 个 Kaggle 机器学习竞赛，包括数据处理、模型训练、超参调优和结果提交。当前最佳模型获得任何奖牌的准确率也低于20%。
 
+
+
 ![](img/f470199203a4ea6ba944bcf38d29caf0.pngCs7yb5YV7oMjbvxOaEjckVgTnGc/)
 
 图12.29 MLEBench评测流程示意图
@@ -442,7 +443,7 @@ Humanity's Last Exam 是一个雄心勃勃的项目，包含 2500 道多模态�
 
 ARC-AGI-1:
 
-[https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/c](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-31-ARC-AGI-1%E8%AF%84%E6%B5%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png)hapter12/images/12-31-ARC-AGI-1%E8%AF%84%E6%B5%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-31-ARC-AGI-1%E8%AF%84%E6%B5%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 图12.31 ARC-AGI-1评测示意图
 
@@ -462,7 +463,7 @@ ARC-AGI-1:
 
 对于 AI 来说，安全意味着什么？
 
-[htt](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-34-%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%89%E5%85%A8.png)ps://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-34-%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%89%E5%85%A8.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-34-%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%89%E5%85%A8.png)
 
 图12.34 什么是安全
 
@@ -566,7 +567,7 @@ ARC-AGI-1:
 
 [许多基准存在标注错误或噪声](https://arxiv.org/abs/2502.03461)。例如，修正后的 SWE-Bench Verified 版本显示，原始分数可能因错误而被低估。
 
-[https](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-44-%E8%AE%B8%E5%A4%9A%E5%9F%BA%E5%87%86%E5%AD%98%E5%9C%A8%E6%A0%87%E6%B3%A8%E9%94%99%E8%AF%AF%E6%88%96%E5%99%AA%E5%A3%B0.png)://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-44-%E8%AE%B8%E5%A4%9A%E5%9F%BA%E5%87%86%E5%AD%98%E5%9C%A8%E6%A0%87%E6%B3%A8%E9%94%99%E8%AF%AF%E6%88%96%E5%99%AA%E5%A3%B0.png
+![](https://raw.githubusercontent.com/datawhalechina/diy-llm/main/docs/chapter12/images/12-44-%E8%AE%B8%E5%A4%9A%E5%9F%BA%E5%87%86%E5%AD%98%E5%9C%A8%E6%A0%87%E6%B3%A8%E9%94%99%E8%AF%AF%E6%88%96%E5%99%AA%E5%A3%B0.png)
 
 图12.44 许多基准存在标注错误或噪声
 

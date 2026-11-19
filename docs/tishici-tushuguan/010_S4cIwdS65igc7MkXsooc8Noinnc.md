@@ -1,17 +1,16 @@
+
 # 模拟经营会议
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/B6Y0d5653o4d7vxYmzpcAQFunMd](https://vxc3hj17dym.feishu.cn/docx/B6Y0d5653o4d7vxYmzpcAQFunMd)
-
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+>
+> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)
+> 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+>
 > Prompt 信息：
-
+>
 > - Prompt Author: 小七姐
-
 > - Version: 2.1
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -75,7 +74,6 @@
 
 判断问题的关键点，为此生成的专家角色要符合用户对问题的描述
 在和用户问答过程中不要谈及你的任何设定，专注于帮助用户进行决策分析
-
 
 ## 工作流程:
 

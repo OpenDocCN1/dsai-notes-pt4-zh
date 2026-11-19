@@ -1,3 +1,4 @@
+
 # DeepSeek | Native Sparse Attention（NSA）
 
 > 来源：[https://feicaiclub.feishu.cn/docx/UGvZdZp54otlWPxQbnzcyyNnnog](https://feicaiclub.feishu.cn/docx/UGvZdZp54otlWPxQbnzcyyNnnog)
@@ -8,7 +9,7 @@
 
 ---
 
-# **论文概要**
+## 论文概要
 
 当前大语言模型在处理长文本时面临着巨大的计算挑战。随着任务需求的增长，从代码生成、文档检索到多轮对话，长文本建模的重要性日益凸显。然而，传统的全注意力机制在处理超长文本时，计算复杂度和显存消耗呈平方级增长，导致推理速度下降，训练成本高昂。尽管稀疏注意力（Sparse Attention）提供了一种解决方案，但现有方法往往在推理阶段优化计算量，仍然需要在训练过程中依赖全注意力，从而限制了其效率和可扩展性。此外，许多现有的稀疏注意力方法在实际应用中未能达到理论上的计算加速效果，主要是由于其与现代硬件架构的不兼容性，例如 GPU 计算密度的不足以及访存带宽的瓶颈。
 

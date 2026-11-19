@@ -1,3 +1,4 @@
+
 # 《1个晚上3个账号各跑出1W粉，同时引流👸号1000+，我的网易小蜜蜂平台涨粉思路分享》
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/UiRfdc3uFoKkoHxEJ4Fc05mPnJf](https://xuqiwei1986.feishu.cn/docx/UiRfdc3uFoKkoHxEJ4Fc05mPnJf)
@@ -10,7 +11,7 @@
 
 ![](img/02ae5d37980f83629e9d3c6085fa6682.png)
 
-# **一、项目背景**
+## 一、项目背景
 
 项目起于12月初刷风向标的时候发现了网易新推出了一款对标📕的软件。其界面和功能与📕，从频道标签的布局到个人主页的展示，再到消息中心的图标，“感觉相似度95%，哦不能说相似，只能能说简直一模一样”。
 
@@ -34,9 +35,7 @@
 
 ---
 
----
-
-# 二、项目流程
+## 二、项目流程
 
 > 查了下发现这个是11月下旬，才悄然上线的一款APP，基于赚钱里面📕，小绿书的火爆，这款网易的“小黄书”的突然出现，本能觉得应该有一定的红利期机会，哦不，一定有
 
@@ -160,16 +159,13 @@
 
 其实还是挺好的
 
-# 三、项目成果和回报
-
-
-
+## 三、项目成果和回报
 
 ![](img/9cd49c18397be77e7370c5f643d3d676.png)
 
 ![](img/1e6f6854d8031505bae1a586f59806c1.png)
 
-# 四、后续风向标思路
+## 四、后续风向标思路
 
 截止目前这篇文章,小蜜蜂里面的涨粉还在继续,已经开始出现了付费帮忙涨粉的玩法了,下面截图是我刚刚(2024.12.08.21:02分)刷到的
 
@@ -181,40 +177,37 @@
 
 ### 所以后续思路我这边总结有三个:
 
-### 1.发贴引导到🛰️私域,关注👸号涨粉
-
-### 2.👸号里面发夸克网盘分享软件包(夸克网盘拉新)
-
-### **3.直接操作工具帮忙涨粉变现**
-
-### 4.待大家补充
+1. 发贴引导到🛰️私域,关注👸号涨粉
+2. 👸号里面发夸克网盘分享软件包(夸克网盘拉新)
+3. 直接操作工具帮忙涨粉变现
+4. 待大家补充
 
 最后,祝大家龙哥盟!
 
-# 五、自动关注安装包分享和具体操作步骤
+## 五、自动关注安装包分享和具体操作步骤
 
 安卓用户:直接下载BeeAssist到手机上,然后打开网易小蜜蜂,找一个关注量大一点的列表,然后打开BeeAssists,根据提示设置即可.具体看下方视频
 
 ![](img/6526c23abfddbd625fdd2f3e4ae64bd4.png)
 
-[WeChat_20241208222806.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nsmtbf4qTo5haBx4pNAcC1H5n4f)
+[`WeChat_20241208222806.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nsmtbf4qTo5haBx4pNAcC1H5n4f)
 
 iOS用户:建议在电脑上装个网易mumu模拟器,然后将小蜜蜂安装包和BeeAssists安装包装上.操作步骤看视频
 
 ![](img/be75d906e2f731d2452f534635a39368.png)
 
-[WeChat_20241208223046.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QSQ1bFLJ3ozFQExsZlEcHXMNnLe)
+[`WeChat_20241208223046.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QSQ1bFLJ3ozFQExsZlEcHXMNnLe)
 
 ![](img/7704eeece9347654d875d56ed854a618.png)
 
-[163_apk_bee_bee_bee_sps.apk](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QEYWbhmg1oa8PlxNNMlcTYj8ngd)
+[`163_apk_bee_bee_bee_sps.apk`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QEYWbhmg1oa8PlxNNMlcTYj8ngd)
 
 ![](img/66cf494557a485c8d6e75945b1f162a9.png)
 
-[MuMuInstaller_3.1.12.0_nochannel-mumu12_zh-Hans_1727595601.exe](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kh2mbjHCkozoHVxDjLRc2hmGnZp)
+[`MuMuInstaller_3.1.12.0_nochannel-mumu12_zh-Hans_1727595601.exe`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kh2mbjHCkozoHVxDjLRc2hmGnZp)
 
 ![](img/8c360df88e91ae86233d65d97f22da70.png)
 
-[BeeAssist.apk](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UTYfboRlqo5t6Jx2ODbcGaQmnNc)
+[`BeeAssist.apk`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UTYfboRlqo5t6Jx2ODbcGaQmnNc)
 
 若有操作问题直接留言，我会来解答

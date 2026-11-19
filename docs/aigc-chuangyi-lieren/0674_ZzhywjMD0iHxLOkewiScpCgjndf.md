@@ -1,24 +1,25 @@
+
 # Embedding
 
 > 来源：[https://aigcreative.feishu.cn/docx/I03Nd6IAGo0DzpxyhESc1Uy8n2r](https://aigcreative.feishu.cn/docx/I03Nd6IAGo0DzpxyhESc1Uy8n2r)
 
 在 Stable Diffusion 基础一章中，我有介绍过为何机器能知道 Cat 是长什么样子的。关键是 Text Encoder 将自然语意的 Prompt 转成了词特征向量 Embedding。比如 Cat 转为词特征向量后就有可能包含：
 
-+   形态特征：向量表示可能会捕捉到 Cat 的形态特征，比如它的体型、头部的形状、四肢的位置等。这些特征可以帮助区分 Cat 与其他动物或物体。
++ 形态特征：向量表示可能会捕捉到 Cat 的形态特征，比如它的体型、头部的形状、四肢的位置等。这些特征可以帮助区分 Cat 与其他动物或物体。
 
-+   视觉特征：向量表示可能会包含 Cat 的视觉特征，比如它的颜色、斑纹、眼睛的形状等。这些特征可以帮助识别 Cat 的外观特点。
++ 视觉特征：向量表示可能会包含 Cat 的视觉特征，比如它的颜色、斑纹、眼睛的形状等。这些特征可以帮助识别 Cat 的外观特点。
 
-+   语义含义：向量表示可能会包含与 Cat 相关的语义含义，比如它是一种宠物、一种独立的动物、与人类有亲密关系等。这些含义可以帮助理解 Cat 在人类文化和社会中的角色和意义。
++ 语义含义：向量表示可能会包含与 Cat 相关的语义含义，比如它是一种宠物、一种独立的动物、与人类有亲密关系等。这些含义可以帮助理解 Cat 在人类文化和社会中的角色和意义。
 
 那如果按照这个原理，我们是否能通过调整这种映射方式，从而通过输入某个特殊词让模型生成特殊的内容呢？
 
-比如说，我们可以将 S* 映射到一只加菲猫的视觉特征，那么以后我们在 Prompt 里输入 O_Cat 时，生成的图片就会是加菲猫了。
+比如说，我们可以将 `S*` 映射到一只加菲猫的视觉特征，那么以后我们在 Prompt 里输入 `O_Cat` 时，生成的图片就会是加菲猫了。
 
 > 正式开始学习本章前，请先下载以下模型，并将模型文件放到对应的文件夹内：
 
-+   [Tom Cruise embedding](https://civitai.com/models/6019/tom-cruise-embedding)(opens in a new tab)：将其放到 ComfyUI 里的 models/embeddings 文件夹内。
++ [Tom Cruise embedding](https://civitai.com/models/6019/tom-cruise-embedding)(opens in a new tab)：将其放到 ComfyUI 里的 `models/embeddings` 文件夹内。
 
-+   BadDream(opens in a new tab)：将其放到 ComfyUI 里的 models/embeddings 文件夹内。
++ BadDream(opens in a new tab)：将其放到 ComfyUI 里的 `models/embeddings` 文件夹内。
 
 ## 原理介绍
 
@@ -28,9 +29,9 @@
 
 ![](img/274921dcd7450078c88a21c23115609c.png)
 
-当用户输入 A photo of S* 时，各个词语会被分成特定的词向量，即图中灰色的方块。一些基础词对图片并没有影响，那我们就可以不管（锁住的部分），然后我们可以训练一个新词出来，然后映射出特殊的词向量。
+当用户输入 `A photo of S*` 时，各个词语会被分成特定的词向量，即图中灰色的方块。一些基础词对图片并没有影响，那我们就可以不管（锁住的部分），然后我们可以训练一个新词出来，然后映射出特殊的词向量。
 
-这些向量里的元素可能包含了加菲猫的各种视觉特征。这样以后我们在 Prompt 里输入 S* 时，生成的图片就会是加菲猫了。
+这些向量里的元素可能包含了加菲猫的各种视觉特征。这样以后我们在 Prompt 里输入 `S*` 时，生成的图片就会是加菲猫了。
 
 这就是为何我们能通过在 prompt 里输入 Style 词来改变图片风格，甚至输入人名就能生成特定人物图的原因（当然这并不仅仅是 CLIP 的功劳，也有 Diffusion 模型的功劳）。
 
@@ -48,11 +49,11 @@
 
 ### 下载 Embedding 模型
 
-[第一步是下载你需要的 Embedding](https://civitai.com/models/6019/tom-cruise-embedding) 模型，你可以在 Civitai(opens in a new tab) 上找到各种各样的 Embedding 模型。我这使用的时是 Tom Cruise embedding(opens in a new tab)。下载后将其放到 ComfyUI 里的 models/embeddings 文件夹内。
+[第一步是下载你需要的 Embedding](https://civitai.com/models/6019/tom-cruise-embedding) 模型，你可以在 Civitai(opens in a new tab) 上找到各种各样的 Embedding 模型。我这使用的时是 Tom Cruise embedding(opens in a new tab)。下载后将其放到 ComfyUI 里的 `models/embeddings` 文件夹内。
 
 ### 在 Positive Prompt 里使用 Embedding
 
-点击右侧面板的 load default 按钮。加载完成后，在 positive prompt 里输入以下 prompt：
+点击右侧面板的 `load default` 按钮。加载完成后，在 positive prompt 里输入以下 prompt：
 
 ```
 embedding:ToCru69
@@ -60,9 +61,9 @@ embedding:ToCru69
 
 > 需要注意：
 
-+   第一步导入完之后，最好点一下右侧面板的 refresh 按钮，这样可以确保模型已经加载成功。
++ 第一步导入完之后，最好点一下右侧面板的 `refresh` 按钮，这样可以确保模型已经加载成功。
 
-+   另外，Embedding 应该如何写，一般你在下载 Embedding 模型的时候，会有一个说明文档，里面会告诉你应该如何写 Embedding。比如这个 Tom Cruise embedding 的说明文档里就写要使用 embedding:ToCru69 这样的格式。
++ 另外，Embedding 应该如何写，一般你在下载 Embedding 模型的时候，会有一个说明文档，里面会告诉你应该如何写 Embedding。比如这个 Tom Cruise embedding 的说明文档里就写要使用 `embedding:ToCru69` 这样的格式。
 
 ![](img/db2c22692de72f089cb6b0c5f547d0b0.png)
 

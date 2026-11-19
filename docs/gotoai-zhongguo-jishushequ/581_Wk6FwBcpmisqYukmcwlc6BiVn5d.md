@@ -1,10 +1,11 @@
+
 # Fine-Tuning LLMs: A Guide With Examples
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/IHssdA8Xiof1HOxujN0cisvcnrd](https://gotoaiworld.feishu.cn/docx/IHssdA8Xiof1HOxujN0cisvcnrd)
 
 Learn how fine-tuning large language models (LLMs) improves their performance in tasks like language translation, sentiment analysis, and text generation.
 
-https://www.datacamp.com/tutorial/fine-tuning-large-language-models
+[https://www.datacamp.com/tutorial/fine-tuning-large-language-models](https://www.datacamp.com/tutorial/fine-tuning-large-language-models)
 
 Fine-tuning large language models (LLMs) is important for tailoring these advanced algorithms to specific tasks or domains.
 
@@ -14,7 +15,7 @@ In this tutorial, I’ll explain the concept of pre-trained language models and 
 
 ## Develop AI Applications
 
-**L**earn to build AI applications using the OpenAI API.
+Learn to build AI applications using the OpenAI API.
 
 ## Understanding How Pre-trained Language Models Work
 
@@ -30,7 +31,7 @@ The most important part is that these models are not only good at understanding 
 
 And the best part of it all?
 
-These models are already open to the masses using APIs. If you want to learn how to take ad[**vantage of Op**](https://www.datacamp.com/cheat-sheet/the-open-ai-api-in-python)enAI’s most powerful LLMs, you can learn how to do it by following this cheat sheet on OpenAI’s API.
+These models are already open to the masses using APIs. If you want to learn how to take advantage of OpenAI’s most powerful LLMs, you can learn how to do it by following this cheat sheet on [OpenAI’s API](https://www.datacamp.com/cheat-sheet/the-open-ai-api-in-python).
 
 ## What is Fine-tuning, and Why is it Important?
 
@@ -74,7 +75,7 @@ For instance, to generate a chatbot for a medical app, the model would be traine
 
 ## A Step-by-Step Guide to Fine-tuning a LLM
 
-**Run and edit the code from **this tutorial online
+Run and edit the code from this tutorial online
 
 We already know that Fine-tuning is the process of taking a pre-trained model and updating its parameters by training on a dataset specific to your task. So, let’s exemplify this concept by fine-tuning a real model.
 
@@ -96,19 +97,21 @@ Always keep in mind to select a model architecture suitable for your task.
 
 ### Step 2: Load the data to use
 
-Now that we have our model, we need some good-quality data to work with, and this is precisely where the datasets library kicks in.
+Now that we have our model, we need some good-quality data to work with, and this is precisely where the `datasets` library kicks in.
 
-In my case, I will use the Hugging Face datasets library to import a dataset containing tweets segmented by their sentiment (Positive, Neutral or Negative).
+In my case, I will use the Hugging Face `datasets` library to import a dataset containing tweets segmented by their sentiment (Positive, Neutral or Negative).
 
+```python
 from datasets import load_dataset
 
 dataset = load_dataset("mteb/tweet_sentiment_extraction")
 
 df = pd.DataFrame(dataset['train'])
+```
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+[Powered By](https://www.datacamp.com/datalab)
 
 If we check the dataset we just downloaded, it is a dataset containing a subset for training and a subset for testing. If we convert the training subset to a dataframe, it looks as follows.
 
@@ -118,18 +121,23 @@ The data set to be used.
 
 ### Step 3: Tokenizer
 
-Now that we already have our dataset, we need a tokenizer to prepare it to be parsed by our model.
+Now that we already have our dataset, we need a `Tokenizer` to prepare it to be parsed by our model.
 
-As LLMs work with tokens, we require a tokenizer to process the dataset. To process your dataset in one step, use the Datasets map method to apply a preprocessing function over the entire dataset.
+As LLMs work with tokens, we require a `Tokenizer` to process the dataset. To process your dataset in one step, use the `Datasets` `map` method to apply a preprocessing function over the entire dataset.
 
-This is why the second step is to load a pre-trained Tokenizer and tokenize our dataset so it can be used for fine-tuning.
+This is why the second step is to load a pre-trained `Tokenizer` and tokenize our dataset so it can be used for fine-tuning.
 
+```python
 from transformers import GPT2Tokenizer
 
 # Loading the dataset to train our model
 
 dataset = load_dataset("mteb/tweet_sentiment_extraction")
+```
 
+
+
+```
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 
 tokenizer.pad_token = tokenizer.eos_token
@@ -137,92 +145,97 @@ tokenizer.pad_token = tokenizer.eos_token
 def tokenize_function(examples):return tokenizer(examples["text"], padding="max_length", truncation=True)
 
 tokenized_datasets = dataset.map(tokenize_function, batched=True)
+```
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+[Powered By](https://www.datacamp.com/datalab)
 
-**BONUS: **To improve our processing requirements, we can create a smaller subset of the full dataset to fine-tune our model. The training set will be used to fine-tune our model, while the testing set will be used to evaluate it.
+**BONUS:** To improve our processing requirements, we can create a smaller subset of the full dataset to fine-tune our model. The training set will be used to fine-tune our model, while the testing set will be used to evaluate it.
 
+```
 small_train_dataset = tokenized_datasets["train"].shuffle(seed=42).select(range(1000))
 
 small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(1000))
+```
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+[Powered By](https://www.datacamp.com/datalab)
 
-### Step 4: Initialize our base model
+## Step 4: Initialize our base model
 
 Start by loading your model and specify the number of expected labels. From the Tweet’s sentiment dataset card, you know there are three labels:
 
+```
 from transformers import GPT2ForSequenceClassification
 
 model = GPT2ForSequenceClassification.from_pretrained("gpt2", num_labels=3)
+```
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+[Powered By](https://www.datacamp.com/datalab)
 
-### Step 5: Evaluate method
+## Step 5: Evaluate method
 
-Transformers provides a Trainer class optimized for training. However, this method does not include how to evaluate the model. This is why, before starting our training, we will need to pass Trainer a function to evaluate our model performance.
+Transformers provides a `Trainer` class optimized for training. However, this method does not include how to evaluate the model. This is why, before starting our training, we will need to pass `Trainer` a function to evaluate our model performance.
 
+```
 import evaluate
 
-metric = evaluate.load("accuracy")def compute_metrics(eval_pred):
+metric = evaluate.load("accuracy")
 
-logits, labels = eval_pred
+def compute_metrics(eval_pred):
+    logits, labels = eval_pred
+    predictions = np.argmax(logits, axis=-1)
+    return metric.compute(predictions=predictions, references=labels)
+```
 
-predictions = np.argmax(logits, axis=-1)return metric.compute(predictions=predictions, references=labels)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Powered By](https://www.datacamp.com/datalab)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+## Step 6: Fine-tune using the Trainer Method
 
-### Step 6: Fine-tune using the Trainer Method
+Our final step is to set up the training arguments and start the training process. The Transformers library contains the `Trainer` class, which supports a wide range of training options and features such as logging, gradient accumulation, and mixed precision. We first define the training arguments together with the evaluation strategy. Once everything is defined, we can easily train the model simply using the `train()` command.
 
-Our final step is to set up the training arguments and start the training process. The Transformers library contains the Trainer class, which supports a wide range of training options and features such as logging, gradient accumulation, and mixed precision. We first define the training arguments together with the evaluation strategy. Once everything is defined, we can easily train the model simply using the train() command.
-
+```
 from transformers import TrainingArguments, Trainer
 
 training_args = TrainingArguments(
-
-output_dir="test_trainer",#evaluation_strategy="epoch",
-
-per_device_train_batch_size=1,  # Reduce batch size here
-
-per_device_eval_batch_size=1,    # Optionally, reduce for evaluation as well
-
-gradient_accumulation_steps=4)
+    output_dir="test_trainer",#evaluation_strategy="epoch",
+    per_device_train_batch_size=1,  # Reduce batch size here
+    per_device_eval_batch_size=1,    # Optionally, reduce for evaluation as well
+    gradient_accumulation_steps=4
+)
 
 trainer = Trainer(
-
-model=model,
-
-args=training_args,
-
-train_dataset=small_train_dataset,
-
-eval_dataset=small_eval_dataset,
-
-compute_metrics=compute_metrics,)
+    model=model,
+    args=training_args,
+    train_dataset=small_train_dataset,
+    eval_dataset=small_eval_dataset,
+    compute_metrics=compute_metrics,
+)
 
 trainer.train()
+```
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+[Powered By](https://www.datacamp.com/datalab)
 
-After training, evaluate the model's performance on a validation or test set. Again, the trainer class already contains an evaluate method that takes care of this.
+After training, evaluate the model's performance on a validation or test set. Again, the `trainer` class already contains an `evaluate` method that takes care of this.
 
+```
 import evaluate
 
 trainer.evaluate()
+```
 
-[**Run code **](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
+[Run code](https://www.datacamp.com/datalab/new?templateKey=community-python-fine-tuning-large-language-models&openIfExists=true&utm_source=community&utm_medium=in_product&utm_term=fine-tuning-large-language-models&utm_content=top_button)
 
-[**Powered By **](https://www.datacamp.com/datalab)
+[Powered By](https://www.datacamp.com/datalab)
 
 These are the most basic steps to perform a fine-tuning of any LLM. Remember to fine-tune a LLM is highly computationally demanding, and your local computer might not have enough power to do so.
 
@@ -274,25 +287,33 @@ Always make sure that training and validation datasets are separate and that the
 
 ## Fine-tuning vs. RAG
 
-[**RAG**](https://www.datacamp.com/blog/what-is-retrieval-augmented-generation-rag) combines the strengths of retrieval-based models and generative models. In RAG, a retriever component searches a large database or knowledge base to find relevant information based on the input query. This retrieved information is then used by a generative model to produce a more accurate and contextually relevant response. Key benefits of RAG include:
+[RAG](https://www.datacamp.com/blog/what-is-retrieval-augmented-generation-rag) combines the strengths of retrieval-based models and generative models. In RAG, a retriever component searches a large database or knowledge base to find relevant information based on the input query. This retrieved information is then used by a generative model to produce a more accurate and contextually relevant response. Key benefits of RAG include:
 
-+   Dynamic knowledge integration: Incorporates real-time information from external sources, making it suitable for tasks requiring up-to-date or specific knowledge.
++ Dynamic knowledge integration: Incorporates real-time information from external sources, making it suitable for tasks requiring up-to-date or specific knowledge.
 
-+   Contextual relevance: Enhances the generative model’s responses by providing additional context from the retrieved documents.
++ Contextual relevance: Enhances the generative model’s responses by providing additional context from the retrieved documents.
 
-+   **Versatility**: Can handle a wider range of queries, including those requiring specific or rare information that the model may not have been trained on.
++ **Versatility**: Can handle a wider range of queries, including those requiring specific or rare information that the model may not have been trained on.
+
+
 
 ![](img/76c5e15f4cae1c3e7bfc770099f1794b.png)
 
-### Choosing between fine-tuning and RAG
+# Choosing between fine-tuning and RAG
 
 When deciding whether to use fine-tuning or RAG, consider the following factors:
 
-+   Nature of the task: For tasks that benefit from highly specialized models (e.g., domain-specific applications), fine-tuning is often the preferred approach. RAG is ideal for tasks that require integration of external knowledge or real-time information retrieval.
+## Nature of the task
 
-+   Data availability: Fine-tuning requires a substantial amount of labeled data specific to the task. If such data is scarce, RAG’s retrieval component can compensate by providing relevant information from external sources.
+For tasks that benefit from highly specialized models (e.g., domain-specific applications), fine-tuning is often the preferred approach. RAG is ideal for tasks that require integration of external knowledge or real-time information retrieval.
 
-+   Resource constraints: Fine-tuning can be computationally intensive, whereas RAG leverages existing databases to supplement the generative model, potentially reducing the need for extensive training.
+## Data availability
+
+Fine-tuning requires a substantial amount of labeled data specific to the task. If such data is scarce, RAG’s retrieval component can compensate by providing relevant information from external sources.
+
+## Resource constraints
+
+Fine-tuning can be computationally intensive, whereas RAG leverages existing databases to supplement the generative model, potentially reducing the need for extensive training.
 
 ## Conclusion
 
@@ -302,10 +323,7 @@ By understanding and applying the concepts, practices, and precautions outlined,
 
 To keep learning about fine-tuning, I strongly encourage you to perform some more advanced fine-tuning. You can start with DataCamp’s LLM Concepts course, which covers many of the key training methodologies and the latest research. Some other good resources to follow are:
 
-+   [**A**](https://www.datacamp.com/tutorial/mistral-7b-tutorial) Step-by-Step Guide to Using and Fine-Tuning Mistral 7B.
-
-+   [**Fine-Tuning LLaMA 2: A Step-by-Step Guide**](https://www.datacamp.com/tutorial/fine-tuning-llama-2) to Customizing the Large Language Model
-
-+   [**Fine-Tuning Your Own Llama**](https://www.datacamp.com/code-along/fine-tuning-your-own-llama-2-model) 2 Model Code- Along
-
-+   [**F**](https://www.datacamp.com/tutorial/fine-tuning-stable-diffusion-xl-with-dreambooth-and-lora)ine-tuning Stable Diffusion XL with DreamBooth and LoRA
++ [`A Step-by-Step Guide to Using and Fine-Tuning Mistral 7B`](https://www.datacamp.com/tutorial/mistral-7b-tutorial)
++ [`Fine-Tuning LLaMA 2: A Step-by-Step Guide to Customizing the Large Language Model`](https://www.datacamp.com/tutorial/fine-tuning-llama-2)
++ [`Fine-Tuning Your Own Llama 2 Model Code-Along`](https://www.datacamp.com/code-along/fine-tuning-your-own-llama-2-model)
++ [`Fine-Tuning Stable Diffusion XL with DreamBooth and LoRA`](https://www.datacamp.com/tutorial/fine-tuning-stable-diffusion-xl-with-dreambooth-and-lora)

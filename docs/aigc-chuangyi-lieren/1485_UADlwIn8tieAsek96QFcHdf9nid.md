@@ -1,3 +1,4 @@
+
 # 20241018-Google这次玩大的，NotebookLM即将杀入企业市场，音频生成新功能引爆期待
 
 > 来源：[https://aigcreative.feishu.cn/docx/ULRjdCdhcowQOCxpxNychlz1nRf](https://aigcreative.feishu.cn/docx/ULRjdCdhcowQOCxpxNychlz1nRf)

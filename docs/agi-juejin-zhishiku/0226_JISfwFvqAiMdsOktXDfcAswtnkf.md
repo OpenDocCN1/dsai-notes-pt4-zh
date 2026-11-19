@@ -1,8 +1,9 @@
+
 # 登 Nature，超越 GPT-4V，MIT、哈佛开发人类病理学多模态 AI「副驾驶」
 
 > 来源：[https://agijuejin.feishu.cn/docx/PvfedJueEoqBe9xw9xAcp46Hnwh](https://agijuejin.feishu.cn/docx/PvfedJueEoqBe9xw9xAcp46Hnwh)
 
-> [ 机器之](https://www.jiqizhixin.com/articles/2024-06-20-27)心 ScienceAI｜阅读原文
+> [ 机器之心 ScienceAI｜阅读原文](https://www.jiqizhixin.com/articles/2024-06-20-27)
 
 > 转载请联系原作者取得授权
 
@@ -24,7 +25,7 @@
 
 ![](img/34b3ae2de4e21448c4b9ace6eee79fb1.png)
 
-论文链接： https://www.nature.com/articles/s41586-024-07618-3
+论文链接：`https://www.nature.com/articles/s41586-024-07618-3`
 
 近年来，计算病理学领域经历了显著的变革，这得益于数字切片扫描、AI、大型数据集以及大量高性能计算资源的融合发展。
 
@@ -46,7 +47,7 @@
 
 图示：指令遵循数据集管理和 PathChat 概述。（来源：论文）
 
-## **规模更小、成本更低**
+## 规模更小、成本更低
 
 研究展示了 PathChat 在各种应用中的功能，包括分析来自不同器官部位和实践的病理病例。
 

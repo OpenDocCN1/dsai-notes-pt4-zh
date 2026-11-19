@@ -1,54 +1,51 @@
+
 # 2024 年 8 月法律科技月刊
 
-> 来源：[https://docs.feishu.cn/docx/Mr1yd6rssoWSH2x9xSyc7DhXntb](https://docs.feishu.cn/docx/Mr1yd6rssoWSH2x9xSyc7DhXntb)
+> 来源：`https://docs.feishu.cn/docx/Mr1yd6rssoWSH2x9xSyc7DhXntb`
 
----
+## 一、法律科技融资动态
 
-# **一、法律科技融资动态**
+### 法律 AI 监管合规工具 Graceview 完成 150 万美元新一轮融资
 
-## 法律 AI 监管合规工具 Graceview 完成 150 万美元新一轮融资
-
-[8 月 5 日，澳](https://graceview.ai)大利亚 AI 监管合规平台 Graceview 宣布完成 150 万美元新一轮融资，新加坡企业家 Patrick Linton 领投，一群科技创始人和投资者跟投。Graceview 利用 AI、机器学习、法律知识集成和数据分析提供关于合规威胁的见解。该平台将生成式 AI 的速度和效率与高级律师监督相结合，以简化监管合规性，并保持持续合规的环境。
+8 月 5 日，澳大利亚 AI 监管合规平台 Graceview 宣布完成 150 万美元新一轮融资，新加坡企业家 Patrick Linton 领投，一群科技创始人和投资者跟投。Graceview 利用 AI、机器学习、法律知识集成和数据分析提供关于合规威胁的见解。该平台将生成式 AI 的速度和效率与高级律师监督相结合，以简化监管合规性，并保持持续合规的环境。
 
 > 拓展阅读：
+> `https://graceview.ai/blog/graceview-raises-1-5m-to-fuel-growth`
+> `https://www.thesaasnews.com/news/graceview-raises-1-5-million-in-funding`
 
-> https://graceview.ai/blog/graceview-raises-1-5m-to-fuel-growth
+### 德勤内部孵化项目 Moonlit 宣布独立，提供 AI 加持的法律研究和监测
 
-> https://www.thesaasnews.com/news/graceview-raises-1-5-million-in-funding
+8 月 20 日，德勤内部开发自用的法律研究和监测平台 [Moonlit.ai](https://www.moonlit.ai) 宣布获得 [Curiosity VC](https://www.linkedin.com/company/curiosityvc/) 的投资，并从德勤分拆，原因是非服务于公司的核心业务。该平台由荷兰德勤的 AI 负责人 Roderick Lucas 于 2018 年至 2024 年开发。
 
-## 德勤内部孵化项目 Moonlit 宣布独立，提供 AI 加持的法律研究和监测
-
-[8 月 20 日，德](https://www.moonlit.ai)勤内部开发自[用的法律研究和监测平台 ](https://www.linkedin.com/company/curiosityvc/)Moonlit.ai 宣布获得 Curiosity VC 的投资，并从德勤分拆，原因是非服务于公司的核心业务。该平台由荷兰德勤的 AI 负责人 Roderick Lucas 于 2018 年至 2024 年开发。
-
-**项目简介**
+### 项目简介
 
 Moonlit 提供直接从欧盟官方渠道获取的法律数据集，持续监控和跟踪欧洲国家的法律动态，并提供即时的翻译、摘要和见解，可以实现跨多个国家和语言的无缝搜索，旨在改变法律专业人士驾驭复杂的欧盟法律，提高跨境法律工作的效率和准确性。同时，借助生成式 AI 助理，用户可以询问任何法律问题，并获得有权威法律来源的答案。
 
-**工作原理**
+### 工作原理
 
 用户可以搜索想要的法律法规和案例，然后进行总结、翻译等操作。
 
-**市场需求**
+### 市场需求
 
 目前，整个欧盟的判例法还没有标准化，而在一个日益相互关联的欧洲，一个国家的法律先例可以显著影响另一个国家的决策，因此这样一个工具是需要的，以帮助律师找到关联的法律法规和案例。
 
-**市场竞争**
+### 市场竞争
 
 目前，很多法律研究公司都支持跟踪和掌握欧盟法律，比如 vLex、Wolters Kluwer、LexisNexis 和汤森路透等，而 Moonlit 可能是唯一一家专门关注欧盟判例法的公司。
 
-> Demo 视频：https://www.youtube.com/watch?v=oHB4ZzLRmn8
+> Demo 视频：`https://www.youtube.com/watch?v=oHB4ZzLRmn8`
 
-> 拓展阅读：https://www.curiosityvc.com/post/moonlit-secures-funding-from-curiosity-vc-to-transform-legal-research-in-europe
+> 拓展阅读：`https://www.curiosityvc.com/post/moonlit-secures-funding-from-curiosity-vc-to-transform-legal-research-in-europe`
 
-## 香港版“法天使”？法律文件模板服务商 DocPro 完成 50 万美元预种子轮融资
+### 香港版“法天使”？法律文件模板服务商 DocPro 完成 50 万美元预种子轮融资
 
-[8 月 19](https://docpro.com) 日，总部位于香港的法律文件模板服务商 DocPro 宣布完成 50 万美元预种子轮融资，用于 AI 产品开发、人员配备和营销等。
+8 月 19 日，总部位于香港的法律文件模板服务商 [DocPro](https://docpro.com) 宣布完成 50 万美元预种子轮融资，用于 AI 产品开发、人员配备和营销等。
 
-> 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1871216/legal-tech-co-docpro-raises-500k-in-pre-seed-funding
+> 拓展阅读：`https://www.law360.com/pulse/legal-tech/articles/1871216/legal-tech-co-docpro-raises-500k-in-pre-seed-funding`
 
-## 人身伤害法律 AI 工具 Supio 完成 2500 万美元 A 轮融资
+### 人身伤害法律 AI 工具 Supio 完成 2500 万美元 A 轮融资
 
-[8 月 2](https://www.supio.com)7 日，法律 AI 初创公司 Supio 宣布完成 2500 万美元 A 轮融资，Sapphire Ventures 领投，现有投资者 Bonfire Ventures 和 Foothill Ventures 跟投。
+8 月 27 日，法律 AI 初创公司 [Supio](https://www.supio.com) 宣布完成 2500 万美元 A 轮融资，Sapphire Ventures 领投，现有投资者 Bonfire Ventures 和 Foothill Ventures 跟投。
 
 Supio 是一款 AI 工具，专为律师事务所分析复杂记录、总结证词、深入研究证人证词或专家报告，为审判做准备。目前，Supio 提供一个专注于人身伤害和大规模侵权的法律 AI 工具，可以为律师提供关键洞察，并赢得更多案件。
 
@@ -58,79 +55,77 @@ Supio 是一款 AI 工具，专为律师事务所分析复杂记录、总结证�
 
 Supio 由前微软工程师 Jerry Zhou 和 Kyle Lam 于 2021 年创立，与领先的人身伤害和大规模侵权律师事务所合作构建解决方案，并提供这些律师所需的工具、资源和见解。在过去的一年里，Supio 帮助大中型律师事务所处理了 3000 多起案件。客户根据案例数量支付订阅费。许多客户表示，Supio 帮助他们消除了积压的案件，并认为他们在平台上发现事实或证据的能力，对赢得和提供客户应得的正义至关重要。
 
-> 拓展阅读：https://www.supio.com/pressrelease-series-a
+> 拓展阅读：`https://www.supio.com/pressrelease-series-a`
 
-# **二、法律科技并购动态**
+## 二、法律科技并购动态
 
-## 企业法律管理平台 Bre BriefBox 收购法律科技招聘公司 DealTechno
+### 企业法律管理平台 Bre BriefBox 收购法律科技招聘公司 DealTechno
 
-8 月 14 日，企业法律管理平台 Bre BriefBox 宣布收购法律科技招聘公司 DealTechno，以补充招聘资源、技术专业知识以及内部支持等人才获取能力，DealTechno 的创始人 Johnson 将加入 BreewBox，担任 CRO。
+8 月 14 日，企业法律管理平台 Bre BriefBox 宣布收购法律科技招聘公司 DealTechno，以补充招聘资源、技术专业知识以及内部支持等人才获取能力，DealTechno 的创始人 Johnson 将加入 Bre BriefBox，担任 CRO。
 
-> 拓展阅读：https://briefbox.com/blog/briefbox-acquires-dealtechno-to-bolster-talent-led-legal-management-approach
+> 拓展阅读：`https://briefbox.com/blog/briefbox-acquires-dealtechno-to-bolster-talent-led-legal-management-approach`
 
-## 汤森路透收购英国法律大模型公司 Safe Sign
+### 汤森路透收购英国法律大模型公司 Safe Sign
 
 8 月 20 日，汤森路透宣布收购总部位于英国的初创公司 Safe Sign，以“加速其 AI 战略”。这是汤森路透的第二次重大 AI 收购，该公司此前于 2023 年以 6.5 亿美元的现金收购了 Casetext。
 
 Safe Sign 专注于开发法律大模型的公司，由 A&O Shearman 的见习律师 Alexander Kardos-Nyheim 和剑桥大学法学 AI 教授和研究员 Jonathan R. Schwart 于 2022 年 2 月创立，后者也是该公司的首席科学家。
 
-自 2023 年以来，[垂直领域的大模型](https://www.law.com/legaltechnews/2023/04/19/codex-futurelaw-2023-focuses-on-fine-tuning-ai-for-legal-access-to-justice-and-more/)一直[收到很高的关注，Safe Sign 并](https://www.law.com/legaltechnews/2024/03/26/in-a-gen-ai-first-273-ventures-introduces-kl3m-a-built-from-scratch-legal-llm/)不是唯一一家专注于开发法律大模型的初创公司。2024 年 3 月，273 Ventures 也推出了一个完全由法律大数据训练的法律垂直大模型 Kelvin Legal Large Language Model（KL3M）。
+自 2023 年以来，垂直领域的大模型一直收到很高的关注，Safe Sign 并不是唯一一家专注于开发法律大模型的初创公司。2024 年 3 月，273 Ventures 也推出了一个完全由法律大数据训练的法律垂直大模型 Kelvin Legal Large Language Model（KL3M）。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/08/21/thomson-reuters-acquires-uk-startup-safe-sign-technologies-developer-of-legal-specific-llms/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/08/21/thomson-reuters-acquires-uk-startup-safe-sign-technologies-developer-of-legal-specific-llms/`
 
-# **三、律师行业如何拥抱法律科技**
+## 三、律师行业如何拥抱法律科技
 
-## Akin 律所推出 AI 法律和法规信息跟踪器
+### Akin 律所推出 AI 法律和法规信息跟踪器
 
 8 月 1 日，Big Law 律师事务所 Akin Gump Strauss Hauer & Feld 宣布推出 AI Law & Regulation Tracker（AI 法律和法规信息跟踪器），可以监测各个领域与 AI 相关的政策，包括知识产权、数据隐私等。该跟踪器由一个跨学科团队领导，包括政策、国家安全、知识产权、数据隐私和健康领域的团队。
 
-> 拓展阅读：https://www.akingump.com/en/insights/ai-law-and-regulation-tracker
+> 拓展阅读：`https://www.akingump.com/en/insights/ai-law-and-regulation-tracker`
 
-## 英国 Tunbridge-Wells 律师事务所获得 53 万英镑资金，用于开发 AI 合同软件
+### 英国 Tunbridge-Wells 律师事务所获得 53 万英镑资金，用于开发 AI 合同软件
 
 8 月 5 日，英国 Tunbridge-Wells 律师事务所宣布获得 Reward Finance Group 53 万英镑的资金，用于开发新的 AI 合同软件，其功能涵盖创建、审查、管理和以电子方式签署合同。
 
-> 拓展阅读：https://www.rewardfinancegroup.com/530000-cash-injection-helps-tunbridge-wells-law-firm-continue-ai-product-development/
+> 拓展阅读：`https://www.rewardfinancegroup.com/530000-cash-injection-helps-tunbridge-wells-law-firm-continue-ai-product-development/`
 
-## 新泽西州律协敦促最高法院：购买其他律师姓名作为搜索关键词，违反道德准则
+### 新泽西州律协敦促最高法院：购买其他律师姓名作为搜索关键词，违反道德准则
 
 8 月 9 日，美国新泽西州律师协会向最高法院提交一份简报，再次敦促最高法院与其他六个州的法院系统宣布一项规定：律师购买其他律师姓名用作关键词搜索，从而将网络流量导向到他们自己网站的做法，是不道德的。
 
-> 拓展阅读：https://community.njsba.com/blogs/njsba-staff/2024/08/08/capitol-report-attorneys-who-purchase-other-attorn
+> 拓展阅读：`https://community.njsba.com/blogs/njsba-staff/2024/08/08/capitol-report-attorneys-who-purchase-other-attorn`
 
-## 欧华（DLA Piper）律师事务所推出最新版本欧盟 AI 法案 APP
+### 欧华（DLA Piper）律师事务所推出最新版本欧盟 AI 法案 APP
 
 近日，欧华（DLA Piper）律师事务所推出专为欧盟 AI 法案设计的最新版 App。最新版本的欧盟 AI 法案 App 汇总了欧盟议会和欧洲理事会批准的最终法案文本，不仅将每项条款与相关序言进行精准对接，同时也是所有关键 AI 工具和最新动态的一站式信息平台。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/bLu4O3ZB6Mft4FSBklOroQ
+> 拓展阅读：`https://mp.weixin.qq.com/s/bLu4O3ZB6Mft4FSBklOroQ`
 
-## ALSP Morae 推出一系列 AI 工具，并与 CLM 服务商 ContractPodAi 建立合作
+### ALSP Morae 推出一系列 AI 工具，并与 CLM 服务商 ContractPodAi 建立合作
 
 近日，替代性法律服务商（ALSP）Morae Global Corporation 推出一系列 AI 功能，具体包括：
 
-+   MorAI 评估：为组织提供量身定制的 AI 成功路线图，包括当前状态分析、机会识别、战略路线图、风险评估和 AI 解决方案建议。
+- MorAI 评估：为组织提供量身定制的 AI 成功路线图，包括当前状态分析、机会识别、战略路线图、风险评估和 AI 解决方案建议。
 
-+   MorAI 合同分析：将合同存储从单次存储转变为战略资产，可以利用这些存储库更深入地了解组织义务、风险和机会，进而改善决策，以推动更好的业务成果。
+- MorAI 合同分析：将合同存储从单次存储转变为战略资产，可以利用这些存储库更深入地了解组织义务、风险和机会，进而改善决策，以推动更好的业务成果。
 
-+   MorAI 合同起草：通过 AI 驱动的工作流改进合同流程，旨在提高效率、降低风险、提高价值、增加竞争优势，并在起草和审查期间通过有价值的合同见解促进决策。
+- MorAI 合同起草：通过 AI 驱动的工作流改进合同流程，旨在提高效率、降低风险、提高价值、增加竞争优势，并在起草和审查期间通过有价值的合同见解促进决策。
 
-+   MorAI 电子发现分析：通过智能集成、综合仪表板分析、预测案例管理和每个特定项目，甚至多个事项的卓越客户服务，来推动 eDiscovery 的卓越表现。
+- MorAI 电子发现分析：通过智能集成、综合仪表板分析、预测案例管理和每个特定项目，甚至多个事项的卓越客户服务，来推动 eDiscovery 的卓越表现。
 
-+   MorAI 成本洞察：提供关于法律部门支出的实时预测见解和趋势数据，帮助法律领导层能够更好地确定和证明由谁、如何、何时、何地、以何代价，进行法律工作是合理的。
+- MorAI 成本洞察：提供关于法律部门支出的实时预测见解和趋势数据，帮助法律领导层能够更好地确定和证明由谁、如何、何时、何地、以何代价，进行法律工作是合理的。
 
 同时，Morae 还与 CLM 服务商 ContractPodAi 合作，使用 ContractPodAi 的法律 AI 助手 Leah 加强其 AI 工具。
 
 > 拓展阅读：
+> `https://www.moraeglobal.com/news/morae-and-contractpodai-announce-partnership-to-transform-legal-work-with-generative-ai-powered-by-leah/`
+> `https://www.moraeglobal.com/news/morae-launches-morai-generative-ai-powered-legal-solutions/`
 
-> https://www.moraeglobal.com/news/morae-and-contractpodai-announce-partnership-to-transform-legal-work-with-generative-ai-powered-by-leah/
+## 四、法院和法学界如何拥抱 AI
 
-> https://www.moraeglobal.com/news/morae-launches-morai-generative-ai-powered-legal-solutions/
+### 首尔国立大学与宾夕法尼亚大学合作，为安全地使用 AI 设定标准
 
-# **四、法院和法学界如何拥抱 AI**
-
-## 首尔国立大学与宾夕法尼亚大学合作，为安全地使用 AI 设定标准
-
-8 月 7 日，首尔国立[大学（SNU）](https://www.upenn.edu)可信人工智能中心（CTAI）宣布选定宾夕法尼亚大学的技术、创新和竞争中心（CTIC）作为海外合作研究机构。CTIC 项目由韩国国家研究基金会资助，旨在为安全使用 AI 设定标准，即可信 AI 标准的情境驱动设计，去探索可转化为量化指标的实用和可操作标准，以在实际的 AI 应用中实施。
+8 月 7 日，首尔国立大学可信人工智能中心（CTAI）宣布选定宾夕法尼亚大学的技术、创新和竞争中心（CTIC）作为海外合作研究机构。CTIC 项目由韩国国家研究基金会资助，旨在为安全使用 AI 设定标准，即可信 AI 标准的情境驱动设计，去探索可转化为量化指标的实用和可操作标准，以在实际的 AI 应用中实施。
 
 其中，CTIC 将领导一个子计划，最初专注于自动驾驶汽车、医疗保健和刑事司法领域的 AI 标准原则的研究。双方的合作，将有助于创建符合社会和法律要求的可信 AI 框架和标准。
 
@@ -150,29 +145,31 @@ CTAI 的研究课题将分为三个阶段：
 
 CTAI 计划通过这次全球研究合作，掌握特定领域和特定用例相关的社会危害，并建立适当的法律框架和指标，来衡量和解决这些危害。
 
-> 拓展阅读：https://www.snu.ac.kr/snunow/press?md=v&bbsidx=148562
+> 拓展阅读：`https://www.snu.ac.kr/snunow/press?md=v&bbsidx=148562`
 
-## 如无必要，勿增实体：又一家地方法院撤销 AI 披露命令，放弃额外监管
+### 如无必要，勿增实体：又一家地方法院撤销 AI 披露命令，放弃额外监管
 
 2023 年 5 月，纽约律师 Steven Schwartz 用 ChatGPT 写了一份法律简报并提交给纽约联邦法院，其中引用了不存在的案件。随后，纽约联邦法官制裁了这名律师，并发布一项规定，要求在该法庭上出庭的律师，明确披露是否使用了生成式 AI 工具。随后，越来越多的美国地方法官相继发布了类似规定，要求律师披露生成式 AI 的使用情况。
 
-例[如，](https://www.ilnd.uscourts.gov/_assets/_documents/_forms/_judges/Fuentes/Standing%20Order%20For%20Civil%20Cases%20Before%20Judge%20Fuentes%20rev'd%205-31-23%20(002).pdf)2023 年 5 月 31 日，美国伊利诺伊州北区法院的治安法官 Gabriel A. Fuentes 也发布了一项规定，要求出庭的各方披露是否在文件中使用的如何使用生成式 AI 工具。同时，该法官还表示：“《联邦民事诉讼规则》第 11 条继续适用，而且法庭继续将所有文件解释为由签署提交文件的人在进行合理调查后对规则中所述事项的证明。各方不应假设仅仅使用 AI 工具就会被认为构成了合理的调查。”
+例如，2023 年 5 月 31 日，美国伊利诺伊州北区法院的治安法官 Gabriel A. Fuentes 也发布了一项规定，要求出庭的各方披露是否在文件中使用的如何使用生成式 AI 工具。同时，该法官还表示：“《联邦民事诉讼规则》第 11 条继续适用，而且法庭继续将所有文件解释为由签署提交文件的人在进行合理调查后对规则中所述事项的证明。各方不应假设仅仅使用 AI 工具就会被认为构成了合理的调查。”
 
 然而，今年 6 月，美国第五巡回法院宣布，放弃推出一项要求律师披露是否在起草案情摘要时使用了生成式 AI 的规定。原因在于，现有的程序规则和律师道德规则，已经要求律师证明其引用的事实和法律是真实的，并负责支持其所提出的论点。如果违反这些规则，律师就将会面临足够的制裁，因此不需要额外的 AI 监管规则。
 
-**最**近，伊利诺伊州的 Gabriel A. Fuentes 法官也表示撤销了此前的命令，认为该命令不再必要，而且略带负担。
+最近，伊利诺伊州的 Gabriel A. Fuentes 法官也表示撤销了此前的命令，认为该命令不再必要，而且略带负担。
 
 这两个决定充分体现了「奥卡姆剃刀定律」，即如无必要，勿增实体。这个解决问题的哲学原则主张，在没有必要增加更多假设的情况下，应该采用最简单或最少的解释。
 
 但是，鉴于生成式 AI 的数据安全和“幻觉”等风险，其在法律行业应用并非不需要监管，而第五巡回法院放弃要求律师披露 AI 使用，也反映出监管生成式 AI 的挑战。
 
-**这是因为，监管一个事物的前提是对它进行清晰地定义，否则监管范**围就可能非常广泛，导致阻碍新事物的发展。
+这是因为，监管一个事物的前提是对它进行清晰地定义，否则监管范围就可能非常广泛，导致阻碍新事物的发展。
 
 同时，除了以 ChatGPT 为代表的通用型 AI 工具，目前很多法律科技工具也纳入了生成式 AI 技术，传统意义上的 AI 工具和法律类 AI 工具之间的界限，正在变得越来越模糊。如果对需要监管的 AI 技术没有明确定义，实践中律师就很难知道何时会触发披露规则。因此，要想对 AI 在法律行业的应用施加合理的监管，司法监管系统就需要跟上「AI+法律」实践的最新进展，而这就要与市场充分合作了。
 
-> 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1866059/ill-magistrate-judge-fuentes-talks-pulling-back-ai-order
+> 拓展阅读：`https://www.law360.com/pulse/legal-tech/articles/1866059/ill-magistrate-judge-fuentes-talks-pulling-back-ai-order`
 
-## 荷兰法官使用 ChatGPT 辅助判决，引起了行业的质疑
+### 荷兰法官使用 ChatGPT 辅助判决，引起了行业的质疑
+
+
 
 近日，荷兰海尔德兰区法院的 René van Achter 法官，在一个案件中使用 ChatGPT 辅助判决，在两个邻国之间的争端中确定太阳能电池板的效率损失。这似乎是荷兰法官第一次使用生成式 AI 作为推理的一部分。
 
@@ -188,15 +185,15 @@ Eversheds Sutherland 律所的合伙人 Annieck van Eck 表示，根据 ECLI:NL:
 
 荷兰半导体设备制造商 ASML 的副总裁兼副总法律顾问 Douwe Groenevelt 在 LinkedIn 评论中赞扬了法官试用了 AI 工具，但他也补充说：“这不太适合 ChatGPT 的应用程序。”
 
-**这与此前美国第十一巡回上诉法院的凯文·纽森法官用 AI 工具辅**助判决，受到行业普遍支持形成鲜明的对比。
+这与此前美国第十一巡回上诉法院的凯文·纽森法官用 AI 工具辅助判决，受到行业普遍支持形成鲜明的对比。
 
 这其中的区别在于，凯文·纽森法官没有用 AI 生成法律答案，只是用 AI 来确认他自己的分析倾向，而且这起案件最终的判决理由与 AI 无关，而是其他法律规定，但荷兰 René van Achter 法官则把 AI 的输出写到了判决里。
 
 这是因为，荷兰还未发布规范法官使用 AI 的规则，那么在这种情况下，法官使用 AI 辅助判决应该遵循现有的法律法规，否则可能存在伦理道德的风险。
 
-> 裁决原文：https://linkeddata.overheid.nl/front/portal/document-viewer?ext-id=ECLI:NL:RBGEL:2024:3636
+> 裁决原文：`https://linkeddata.overheid.nl/front/portal/document-viewer?ext-id=ECLI:NL:RBGEL:2024:3636`
 
-> 拓展阅读：https://www.eversheds-sutherland.com/nl/netherlands/insights/chat-gpt-als-raadgever-van-de-rechter
+> 拓展阅读：`https://www.eversheds-sutherland.com/nl/netherlands/insights/chat-gpt-als-raadgever-van-de-rechter`
 
 ## 引领潮流！伯克利法学院推出首个 AI 法律学位，将于 2025 年开启
 
@@ -208,7 +205,7 @@ Eversheds Sutherland 律所的合伙人 Annieck van Eck 表示，根据 ECLI:NL:
 
 助理院长 Adam Sterling 表示：“这个新学位课程非常适合那些，寻求面向未来的国际法律从业人员和美国律师。学生将从教师、从业者讲师和演讲嘉宾那里学习 AI 伦理、AI 技术的基础知识，以及当前和未来监管 AI 的努力等主题，包括关注欧盟 AI 法案。”
 
-**这个新学位的课程，是与行业领导者**咨询小组协商设计的。这些行业领导者包括：
+这个新学位的课程，是与行业领导者咨询小组协商设计的。这些行业领导者包括：
 
 Wei Chen，Infoblox 政府事务执行副总裁兼首席法律官
 
@@ -248,7 +245,7 @@ Sterling 补充说：“该计划将使学生深入了解 AI 带来的道德、�
 
 此外，伯克利法学院还推出专为在职专业人士设计的 LL.M. 兼职在线课程。
 
-**当下**，随着 AI 加速在法律行业落地应用，全世界的法律生态系统都在积极拥抱 AI，开展「AI+法律」的市场教育和法学教育。法律修音机也在积极参与和推动这个时代进程，让我们一起参与进来，让一部分法律人先看到未来。
+当下，随着 AI 加速在法律行业落地应用，全世界的法律生态系统都在积极拥抱 AI，开展「AI+法律」的市场教育和法学教育。法律修音机也在积极参与和推动这个时代进程，让我们一起参与进来，让一部分法律人先看到未来。
 
 > 拓展阅读：
 
@@ -280,19 +277,19 @@ David Freeman Engstrom 表示：“我们很荣幸获得斯坦福影响实验室
 
 共同领导罗德中心的 Nora Freeman Engstrom 教授补充说：“这个项目代表了斯坦福法学院最好的一面。David、Margaret 和他们的合作者将提出最严格的证据来解决一个具体而紧迫的问题。这非常令人兴奋。”
 
-**关于斯坦福影响实验室**
+### 关于斯坦福影响实验室
 
 斯坦福影响实验室是一个新的大学模式，与政府、企业和社区的领导人合作，为研究人员团队提供培训和赠款，以设计、测试和扩大干预措施，旨在在应对世界上一些最紧迫和持续的社[会挑](https://impact.stanford.edu/investments/investment-strategy)战方面取得进展。通过支持斯坦福法学院团队领导的以解决方案为重点的研究项目，斯坦福影响实验室提供赠款，期望回报 —— 不是金钱，而是改善人们生活的结果。有关斯坦福影响实验室赠款战略的更多信息，请参阅此处。
 
-> 拓展阅读：https://law.stanford.edu/press/stanford-impact-labs-awards-grant-to-stanford-law-school-researchers-to-foster-innovative-partnership-with-superior-court-of-los-angeles-county/
+> 拓展阅读：`https://law.stanford.edu/press/stanford-impact-labs-awards-grant-to-stanford-law-school-researchers-to-foster-innovative-partnership-with-superior-court-of-los-angeles-county/`
 
 ## 中科院深圳先进院得理法律 AI 联合实验室发布首个 AI 模拟法庭，一周打完 1000 场官司
 
 最近，中科院深圳先进研究院和深圳得理科技的研究团队联合开发了一个名为 Agent Court 的模拟智能法庭，这是一个基于大语言模型的法庭模拟系统，旨在通过 AI 驱动的虚拟法庭来革新法律教育、案例分析和法律研究。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/ZbanjLDt9k-2EgyTAPJ2WQ
+> 拓展阅读：`https://mp.weixin.qq.com/s/ZbanjLDt9k-2EgyTAPJ2WQ`
 
-# **五、法律 AI 新产品**
+# 五、法律 AI 新产品
 
 ## 律师业务开发平台 Darrow，推出大规模仲裁案源服务
 
@@ -302,15 +299,15 @@ David Freeman Engstrom 表示：“我们很荣幸获得斯坦福影响实验室
 
 除了 Darrow，市场上还有一些公[司帮助律](https://www.law.com/legaltechnews/2024/07/11/as-class-action-settlement-fraud-explodes-legal-tech-sees-an-opportunity/)师解决[诉讼案源方面的痛点，](https://www.law.com/legaltechnews/2024/04/17/claimscore-ai-powered-claim-validation-software-provider-announces-3-15-million-in-funding/)比如 Epiq 和 Claimscore，帮助索赔管理员检测集体诉讼或和解中的欺诈行为，从而更有效地管理索赔。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/08/14/justice-intelligence-startup-darrow-expands-plaintiff-finding-service-to-mass-arbitrations/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/08/14/justice-intelligence-startup-darrow-expands-plaintiff-finding-service-to-mass-arbitrations/`
 
 ## CLM 头部厂商 Icertis 集成 Harvey 法律模型，增强合同起草审查
 
 8 月 27 日，Harvey 宣布[与 CLM（合](http://www.icertis.com/)同生命周期管理）头部公司 Icertis 合作，Harvey 的法律模型将集成到 Icertis 的合同管理系统中，辅助用户进行合同起草审查工作。
 
-> 拓展阅读：https://www.harvey.ai/blog/harvey-and-icertis-partner-for-enterprise-contracting
+> 拓展阅读：`https://www.harvey.ai/blog/harvey-and-icertis-partner-for-enterprise-contracting`
 
-# **六、法律科技市场教育**
+# 六、法律科技市场教育
 
 ## ILTACON 2024 会议闭幕，这里是三个法律 AI 的最新洞察
 
@@ -322,11 +319,11 @@ David Freeman Engstrom 表示：“我们很荣幸获得斯坦福影响实验室
 
 ILTACON 2024 已结束，法律修音机整理了这场会议关于「AI+法律」的三个洞察：
 
-**一、酷律师喜欢实验 AI。**
+### 一、酷律师喜欢实验 AI。
 
 在技术使用上，律师通常是保守的，但在过去两年里，生成式 AI 的爆发让律所和律师渴望脱颖而出，使其比以往任何时候都更加开放地拥抱技术，开始购买和实验各类 AI 产品 —— 事实上，这也是成功部署新技术的关键。
 
-**二、AI 的性能仍然有限。**
+### 二、AI 的性能仍然有限。
 
 越来越多法律人表示，各类 AI 工具可以处理一些基础的法律工作，但对于复杂的工作表现不佳，这意味着需要人工干预
 
@@ -334,18 +331,20 @@ ILTACON 2024 已结束，法律修音机整理了这场会议关于「AI+法律�
 
 对于用户来说，当涉及复杂的法律工作时，也需要调整自己的预期，接受 AI 还不完美。
 
-**三、AI 人才竞争即将打响。**
+### 三、AI 人才竞争即将打响。
+
+
 
 在理解和部署 AI 方面，律所的合伙人和 IT 负责人首当其冲。但是，有效地应用 AI 还需要解决组织、数据和推广等问题，这就需要合适的 AI 人才 —— 国外已经有一些大型律所招聘了相关人才，AI 人才竞争即将打响。
 
-**ILTACON 2024 作为全球法律科技较为前沿的会议，以上观点在一定程度上代表了 **AI 在法律行业应用落地的现状，可以说有很长一段路要走，而现在加入的时机刚刚好。
+**ILTACON 2024 作为全球法律科技较为前沿的会议，以上观点在一定程度上代表了 AI 在法律行业应用落地的现状，可以说有很长一段路要走，而现在加入的时机刚刚好。**
 
 > 拓展阅读：
-
+>
 > https://www.law.com/legaltechnews/2024/08/16/iltacon-day-4-data-scientists-are-in-demand-and-lawyers-are-daredevils/
-
+>
 > https://www.law.com/legaltechnews/2024/08/14/iltacon-2024-news-roundup-intapps-gen-ai-app-imanages-new-ai-services-and-more/
-
+>
 > https://www.law.com/legaltechnews/2024/08/13/iltacon-2024-day-1-gen-ai-chatbots-are-more-complex-than-they-look/
 
 ## 法律 AI 公司 Harvey 公布产品使用数据，并推出三个增强功能
@@ -356,33 +355,30 @@ ILTACON 2024 已结束，法律修音机整理了这场会议关于「AI+法律�
 
 自 2023 年 8 月以来，Harvey 在所有用户中的使用率持续且显著地提高。数据呈现了一个清晰的上升轨迹：
 
-
 关键亮点：
 
-+   **快速增长**：使用率翻了一番多，从 2023 年 8 月的 33% 增加到 2024 年 8 月的 69%。
++ **快速增长**：使用率翻了一番多，从 2023 年 8 月的 33% 增加到 2024 年 8 月的 69%。
 
-+   **一致采用**：尽管有轻微波动，但总体趋势显示出采用的持续和加速。
++ **一致采用**：尽管有轻微波动，但总体趋势显示出采用的持续和加速。
 
-+   **行业标准**：与典型的企业 SaaS 采用率相比，这些数字尤为显著，凸显了 Harvey 在满足法律专业人士复杂需求方面的有效性和相关性。
++ **行业标准**：与典型的企业 SaaS 采用率相比，这些数字尤为显著，凸显了 Harvey 在满足法律专业人士复杂需求方面的有效性和相关性。
 
 这种稳步上升的数据反映了两个趋势：
 
-1.  对 Harvey 能力的信任和依赖不断增加，用户越来越多地将该平台集成到他们常规工作流程中，以简化流程，并提高生产力；
-
-1.  Harvey 不断扩展的能力，支持用户在平台上实施更多工作流程。
+1. 对 Harvey 能力的信任和依赖不断增加，用户越来越多地将该平台集成到他们常规工作流程中，以简化流程，并提高生产力；
+2. Harvey 不断扩展的能力，支持用户在平台上实施更多工作流程。
 
 ### 卓越的用户留存率
 
 用户留存，是平台价值和可用性的关键指标。过去 13 个月，Harvey 的用户留存率保持在一个很高的水平：
 
-
 关键亮点：
 
-+   **持续使用**：留存率保持强劲，一年之后还维持在 70% 左右或以上。
++ **持续使用**：留存率保持强劲，一年之后还维持在 70% 左右或以上。
 
-+   **成功的重新使用**：第 7、第 11 和 12 个月的显著增长，反映了重新吸引用户和加强平台价值主张的有效策略。
++ **成功的重新使用**：第 7、第 11 和 12 个月的显著增长，反映了重新吸引用户和加强平台价值主张的有效策略。
 
-+   **比较卓越**：在企业 SaaS 的背景下，特别是在法律科技领域中，在较长时间内保持如此高的留存率是非常特殊的，表明用户满意度很高，产品具有持久的实用性。
++ **比较卓越**：在企业 SaaS 的背景下，特别是在法律科技领域中，在较长时间内保持如此高的留存率是非常特殊的，表明用户满意度很高，产品具有持久的实用性。
 
 这些数据表明，一旦客户将 Harvey 整合到其工作流程中，他们就会继续在这个平台上找到实质性和持续的价值。
 
@@ -396,66 +392,66 @@ ILTACON 2024 已结束，法律修音机整理了这场会议关于「AI+法律�
 
 关键亮点：
 
-+   **高初始采用率**：从 71% 开始，表明 Harvey 的价值立即得到认可。
++ **高初始采用率**：从 71% 开始，表明 Harvey 的价值立即得到认可。
 
-+   **持续增长**：到第 12 个月，使用率达到 93% 的峰值，表明了对平台的深度集成和依赖。
++ **持续增长**：到第 12 个月，使用率达到 93% 的峰值，表明了对平台的深度集成和依赖。
 
-+   **运营转型**：持续的高使用率表明，通过 Harvey，律所的效率和服务交付有了显著提高。
++ **运营转型**：持续的高使用率表明，通过 Harvey，律所的效率和服务交付有了显著提高。
 
 **BigLaw Firm #2**
 
 关键亮点：
 
-+   **快速扩展**：在 0 个月到 1 个月之间，利用率从 19% 明显跃升到 97%，表明了快速上线和采用。
++ **快速扩展**：在 0 个月到 1 个月之间，利用率从 19% 明显跃升到 97%，表明了快速上线和采用。
 
-+   **稳定使用**：在接下来的几个月里，使用率保持在 63% 至 80% 之间，表明了产品使用稳定和可靠。
++ **稳定使用**：在接下来的几个月里，使用率保持在 63% 至 80% 之间，表明了产品使用稳定和可靠。
 
-+   **高适应性**：这家律所快速扩大使用规模，表明 Harvey 友好的用户界面、易于采用和对各种法律工作流程的适应性。
++ **高适应性**：这家律所快速扩大使用规模，表明 Harvey 友好的用户界面、易于采用和对各种法律工作流程的适应性。
 
 **BigLaw Firm #3**
 
 关键亮点：
 
-+   **超额配置**：从第 4 个月开始，利用率超过 100%，表明使用率超过了初始席位分配，凸显 Harvey 在律所内部的病毒式传播。
++ **超额配置**：从第 4 个月开始，利用率超过 100%，表明使用率超过了初始席位分配，凸显 Harvey 在律所内部的病毒式传播。
 
-+   **峰值性能**：到第 10 个月达到 128% 的使用率，显示了对 Harvey 能力的高度使用和依赖。
++ **峰值性能**：到第 10 个月达到 128% 的使用率，显示了对 Harvey 能力的高度使用和依赖。
 
-+   **创新应用**：如此高的使用率表明，该律所不仅将 Harvey 用于日常任务，还创新地使用，突破了法律科技的边界。
++ **创新应用**：如此高的使用率表明，该律所不仅将 Harvey 用于日常任务，还创新地使用，突破了法律科技的边界。
 
 根据以上数据，Harvey 得出以下几个判断：
 
 **关于生成式 AI**
 
-+   **能力得到证明**：高使用率和留存率，证明了生成式 AI 在法律等复杂、专业领域的实用性。
++ **能力得到证明**：高使用率和留存率，证明了生成式 AI 在法律等复杂、专业领域的实用性。
 
-+   **信任和可靠性**：持续的参与，表明法律人对 AI 在关键、高风险任务上的产出越来越信任。
++ **信任和可靠性**：持续的参与，表明法律人对 AI 在关键、高风险任务上的产出越来越信任。
 
 **关于商业化 SaaS**
 
-+   **快速地上线**：快速的采用率，表明 Harvey 在提供即时价值和易于集成到现有系统中的有效性。
++ **快速地上线**：快速的采用率，表明 Harvey 在提供即时价值和易于集成到现有系统中的有效性。
 
-+   **用户参与度**：随着时间推移，用户持续的使用突出了成功的用户体验设计和持续的支持。
++ **用户参与度**：随着时间推移，用户持续的使用突出了成功的用户体验设计和持续的支持。
 
 **关于法律科技**
 
-+   **行业转型**：Harvey 的成功标志着采用法律科技的转折点 —— 从辅助工具转向法律实践的核心组成部分。
++ **行业转型**：Harvey 的成功标志着采用法律科技的转折点 —— 从辅助工具转向法律实践的核心组成部分。
 
-+   **竞争优势**：使用 Harvey 的律所可能会获得效率和洞察力，在服务交付和客户满意度方面获得竞争优势。
++ **竞争优势**：使用 Harvey 的律所可能会获得效率和洞察力，在服务交付和客户满意度方面获得竞争优势。
 
 同时，既然自家产品在法律行业表现优秀，而法律又属于典型的专业服务业，于是 Harvey 就把公司的叙事逻辑，从法律 AI 平台，转变为「专业服务行业的 AI 服务商」。
 
 就在前两天，Harvey 还[推出](https://www.harvey.ai/blog/introducing-the-next-version-of-assistant)了三个 AI 增强功能，虽然是以法律场景举例，但其实也可以复用到其他专业服务业：
 
-+   为不同的用例量身定制的专业模式
++ 为不同的用例量身定制的专业模式
 
-+   用于完善和扩展 AI 输出的优化功能
++ 用于完善和扩展 AI 输出的优化功能
 
-+   更快的处理，更高质量的输出以及增强的文档处理能力
++ 更快的处理，更高质量的输出以及增强的文档处理能力
 
 > 拓展阅读：
-
+>
 > https://www.harvey.ai/blog/a-new-era-for-technology-adoption-in-professional-services
-
+>
 > https://www.harvey.ai/blog/introducing-the-next-version-of-assistant
 
 ## Harvey 发布 AI 基准评估报告，用于评估大模型的性能
@@ -500,16 +496,16 @@ Mary O'Carroll 认为，法律生态系统转型的核心正在律师事务所�
 
 💰 费用：3999 元/人/场，2 人同行 3499 元/人/场，更多组团优惠，请咨询法律修音机主理人（🛰️：18825075686）
 
-👉 了解更多：#[律所 AI 共创营、](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3422598826815406082&scene=142#wechat_redirect)#[活动后续](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3435805156338319364&scene=142#wechat_redirect)
+👉 了解更多：[律所 AI 共创营、](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3422598826815406082&scene=142#wechat_redirect) [活动后续](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3435805156338319364&scene=142#wechat_redirect)
 
 > 拓展阅读：
-
+>
 > 🤗8 月底，杭州和厦门，两场前沿的法律 AI 活动，欢迎一起参与——
-
-> [与北上深 100 位先锋法律人碰](https://mp.weixin.qq.com/s/uT3fZl8N4y2qdClH1-xncg)撞后，我们辨明了法律 AI 的现状和未来
-
+>
+> [与北上深 100 位先锋法律人碰撞后，我们辨明了法律 AI 的现状和未来](https://mp.weixin.qq.com/s/uT3fZl8N4y2qdClH1-xncg)
+>
 > 法律 AI 共创行·杭州站：走进蚂蚁和钉钉
-
+>
 > 律所面对AI：不能不跟，也不可太激进
 
 ## 厦门律协：法律 AI 共创大赛

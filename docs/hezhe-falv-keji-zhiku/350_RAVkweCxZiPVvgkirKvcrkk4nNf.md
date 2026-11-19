@@ -1,3 +1,4 @@
+
 # 法律科技博主：2022 年 4 大法律科技新闻
 
 > 来源：[https://docs.feishu.cn/docx/BVGcdP2PVo2xLSxeUGVcuabGnzb](https://docs.feishu.cn/docx/BVGcdP2PVo2xLSxeUGVcuabGnzb)
@@ -28,67 +29,45 @@
 
 2023 年第一季度将会说明问题。与此同时，回顾过去一年关键的法律科技新闻，是识别趋势的好方法，这些趋势暗示了律师及其客户在 2023 年及以后会发生什么。
 
-# **法律科技融资和收购持续加速**
+## 法律科技融资和收购持续加速
 
 2022 年，对法律技术行业的投资并没有放缓的迹象。全年持续整合和增长，法律科技领域宣布了大量融资和许多值得注意的合并和收购。
 
 以下是一些值得注意的收购事件：
 
-+   NetDocs 于 10 月收购了 Worldox。
-
-+   Relativity 于 8 月收购了 Heretik。
-
-+   Litera于 8月收购了 Big Square 和 Micron Systems，并于 1 月收购了 PS/Ship 和 Prosperoware。
-
-+   AffiniPay 于 6 月收购了 MyCase。
-
-+   MyCase 于 5 月收购了 Docketwise。
-
-+   LexisNexis 于 5 月收购了 ParleyPro。
-
-+   Paradigm 于 4 月收购了 Lollylaw，并于 2 月收购了 Trustbooks。
-
-+   LEAP 于 4 月收购了 WealthCounsel 和 ElderCounsel。
-
-+   Big Hand 于 8 月收购了 Digitory Legal，并于 2 月收购了 Iridium Technology。
-
-+   Onit 于 1 月收购了 SecureDocs。
-
-+   Alt Legal 于 1 月收购了 Towergate Informatics’ §2(d) Citation Watch。
-
-+   Aderant 于 1 月收购了 American LegalNet。
++ NetDocs 于 10 月收购了 Worldox。
++ Relativity 于 8 月收购了 Heretik。
++ Litera于 8月收购了 Big Square 和 Micron Systems，并于 1 月收购了 PS/Ship 和 Prosperoware。
++ AffiniPay 于 6 月收购了 MyCase。
++ MyCase 于 5 月收购了 Docketwise。
++ LexisNexis 于 5 月收购了 ParleyPro。
++ Paradigm 于 4 月收购了 Lollylaw，并于 2 月收购了 Trustbooks。
++ LEAP 于 4 月收购了 WealthCounsel 和 ElderCounsel。
++ Big Hand 于 8 月收购了 Digitory Legal，并于 2 月收购了 Iridium Technology。
++ Onit 于 1 月收购了 SecureDocs。
++ Alt Legal 于 1 月收购了 Towergate Informatics’ §2(d) Citation Watch。
++ Aderant 于 1 月收购了 American LegalNet。
 
 融资也在继续，其中部分融资的规模值得注意：
 
-+   Case Status 于 12 月完成 500 万美元 B 轮融资。
-
-+   Hello Divorce 于 10 月完成 325 万美元种子轮融资。
-
-+   JusticeText 于 9 月完成 220 万美元种子轮融资。
-
-+   Priori 于 7 月完成 1500 万美元 A 轮融资。
-
-+   Paladin 于 5 月 800 万美元 A 轮融资。
-
-+   SirionLabs 于 5 月完成 8500 万美元 D 轮融资。
-
-+   LinkSquares 于 4 月完成 1 亿美元 C 轮融资。
-
-+   LexCheck 于 12 月完成 1700 万美元 A 轮融资，3 月完成 500 万美元种子轮融资。
-
-+   Zero Systems 于 3 月 完成 1200 万美元 A 轮融资。
-
-+   Time by Ping 于 3 月完成 3650 万美元 B 轮融资。
-
-+   Casetext 于 1 月完成 2500 万美元 C 轮融资。
-
-+   Ironclad 于 1 月完成 1.5 亿美元 E 轮融资。
++ Case Status 于 12 月完成 500 万美元 B 轮融资。
++ Hello Divorce 于 10 月完成 325 万美元种子轮融资。
++ JusticeText 于 9 月完成 220 万美元种子轮融资。
++ Priori 于 7 月完成 1500 万美元 A 轮融资。
++ Paladin 于 5 月 800 万美元 A 轮融资。
++ SirionLabs 于 5 月完成 8500 万美元 D 轮融资。
++ LinkSquares 于 4 月完成 1 亿美元 C 轮融资。
++ LexCheck 于 12 月完成 1700 万美元 A 轮融资，3 月完成 500 万美元种子轮融资。
++ Zero Systems 于 3 月 完成 1200 万美元 A 轮融资。
++ Time by Ping 于 3 月完成 3650 万美元 B 轮融资。
++ Casetext 于 1 月完成 2500 万美元 C 轮融资。
++ Ironclad 于 1 月完成 1.5 亿美元 E 轮融资。
 
 收购和融资的增加，将呈现下降趋势还是成为新常态，还有待观察。这种速度会持续到未来，还是会在 2023 年突然放缓？
 
 这还很难说。正如下一节所讨论的，所有人都在关注预计在明年一季度可能会出现的经济衰退，以及经济放缓将如何影响法律科技部门的投资。
 
-# 裁员和转变，以抵御迫在眉睫的经济衰退
+## 裁员和转变，以抵御迫在眉睫的经济衰退
 
 尽管资金有所增加，但一些法律科技公司在 2022 年还是遇到了挑战。
 
@@ -98,17 +77,14 @@
 
 同样值得关注的是，几家法律科技公司在 2022 年下半年宣布裁员，包括：
 
-+   Relativity 于 12 月裁员 150 人。
-
-+   Reynen Court 于 11 月裁员，人数未公布。
-
-+   Lawgeex 于 9 月裁员 30 人。
-
-+   Notarize 于 9 月裁员 110 人。
++ Relativity 于 12 月裁员 150 人。
++ Reynen Court 于 11 月裁员，人数未公布。
++ Lawgeex 于 9 月裁员 30 人。
++ Notarize 于 9 月裁员 110 人。
 
 虽然值得注意，但法律科技行业的裁员和转变并不出乎意料。Meta、Twitter 和 Lyft 等领先科技公司的大规模裁员，也在 2022 年下半年进行。随着我们进入经济不稳定的新年，更多的全行业裁员很可能即将到来。
 
-# **更加重视法律技术道德和能力**
+## 更加重视法律技术道德和能力
 
 新冠疫情带来的一个积极影响是，美国全国各地的律师协会增加了与技术相关的道德指导。
 
@@ -118,7 +94,7 @@
 
 2022 年 6 月，纽约州通过要求纽约律师完成一小时的网络安全继续法律教育，来解决这一知识差距问题，作为其两年一次注册要求的一部分，自 2023 年 1 月 1 日起生效。这样，纽约加入了包括佛罗里达和北卡罗来纳州在内的少数要求与技术相关的教育设施的司法管辖区。
 
-# **机器人来了**
+## 机器人来了
 
 最后，2022 年 12 月早些时候，随着反应灵敏的人工智能聊天机器人 ChatGPT 的发布，机器人对律师的威胁变得更加紧迫 —— ChatGPT 3.5 是 OpenAI 的创意，它采用先进的神经网络机器学习模型，可以根据简单的提示创建文本。
 

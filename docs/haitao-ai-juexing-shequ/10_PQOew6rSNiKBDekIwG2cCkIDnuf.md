@@ -1,3 +1,4 @@
+
 # Coze+剪映打造认知觉醒视频工作流-剪映草稿版
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/EM0Gdo81qokHtQxagI9cOfzinEd](https://zinxkclpk97.feishu.cn/docx/EM0Gdo81qokHtQxagI9cOfzinEd)
@@ -14,23 +15,19 @@
 
 自己只需要做好选题、内容文案部分工作。
 
-**工作流总体流程如下**
+## 工作流总体流程
 
 涉及核心节点及插件：
 
-+   大模型节点：生成文案
-
-+   画板节点：制作封面、背景图
-
-+   语音合成：火山的语音合成插件，用来转换字幕对应的音频
-
-+   获取音频时长：用来获取每段音频的时间长度，为了计算剪映草稿的时间线。
-
-+   剪映小助手：插件，用来拼接剪映素材，生成剪映草稿文件链接。
++ 大模型节点：生成文案
++ 画板节点：制作封面、背景图
++ 语音合成：火山的语音合成插件，用来转换字幕对应的音频
++ 获取音频时长：用来获取每段音频的时间长度，为了计算剪映草稿的时间线。
++ 剪映小助手：插件，用来拼接剪映素材，生成剪映草稿文件链接。
 
 另涉及的其它软件获取方式放到文末了。
 
-下面重点介绍流程中涉及到的细节内容：
+## 流程细节介绍
 
 此类视频思路，重点是将文本拆分后处理为图片和音频，再将背景图、音频、文本重组为剪映所需的数据结构，最终生成剪映草稿。
 
@@ -40,6 +37,8 @@
 
 ![](img/762167ea0f6180cce3190c1685f4e07f.png)
 
+### 大模型节点
+
 大模型节点用于对用户输入的文案进一步调整。
 
 大模型节点，则可以根据自己需要咨询调整处理方式，不局限模型类型、串接方式、文案风格等。
@@ -48,16 +47,18 @@
 
 ![](img/050c8355f73928d60a4f2635b3359993.png)
 
+### 代码节点（文案拆分）
+
 代码节点，将文案内容进行拆分为短句，后续会在短句转为音频和图片配文时使用到
 
 ![](img/8c5a4e99125dced0c9cf022f73a0647d.png)
 
 ```
 import re
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    content = params[&#x27;content&#x27;]
-    pattern = r&#x27;[，。！？；]\s*&#x27;
+    content = params['content']
+    pattern = r'[，。！？；]\s*'
 
     # 使用re.split()函数根据正则表达式切割文本
     # re.split()会将匹配到的分隔符从结果中移除
@@ -67,7 +68,7 @@ async def main(args: Args) -&gt; Output:
     texts = [t for t in texts if t]
     # 构建输出对象
     ret: Output = {
-        &quot;textList&quot;: texts
+        "textList": texts
     }
     return ret
 ```
@@ -84,9 +85,11 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/48e1be70f729c34b37392f7c049d7fd5.png)
 
+### 音频生成
+
 下一环节是将分段的短句转换为音频文件mp3格式。
 
-我们借助coze官方的文本转语音的插件，对文本进行批量转换。输入参数为前面的分割后的文本数组textList，
+我们借助coze官方的文本转语音的插件，对文本进行批量转换。输入参数为前面的分割后的文本数组`textList`，
 
 输出结果为批处理后的音频文件数组。
 
@@ -97,6 +100,8 @@ async def main(args: Args) -&gt; Output:
 代码节点做一次数据格式转换，然后接插件批量获取音频的时长。
 
 ![](img/32e9c7f8110b83d3c7fc4001630ecd33.png)
+
+### 剪映草稿素材重组
 
 接下来这一环节就是剪映草稿的关键，我们需要将前置准备好的文本、图片、音频等素材，进行重组，再使用剪映插件进行逐一合并（类似剪映里面的添加视频素材轨道的动作，有先后层级次序）
 
@@ -110,14 +115,14 @@ async def main(args: Args) -&gt; Output:
 
 ```
 import json
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    times = params[&#x27;times&#x27;]
-    image = params[&#x27;image&#x27;]
-    texts = params[&#x27;texts&#x27;]
-    aduio_urls = params[&#x27;aduio_urls&#x27;]
-    width = params[&#x27;width&#x27;]
-    height = params[&#x27;height&#x27;]
+    times = params['times']
+    image = params['image']
+    texts = params['texts']
+    aduio_urls = params['aduio_urls']
+    width = params['width']
+    height = params['height']
 
     captions = []
     imgs = []
@@ -128,42 +133,44 @@ async def main(args: Args) -&gt; Output:
     draft_end = 0
     for index, element in enumerate(texts):
         start = img_start
-        end = int(img_start + int(times[index][&#x27;duration&#x27;] * 1000000))
+        end = int(img_start + int(times[index]['duration'] * 1000000))
 
         audios.append({
-            &quot;audio_url&quot;: aduio_urls[index][&#x27;data&#x27;][&#x27;link&#x27;],  #音频
-            &quot;duration&quot;: int(times[index][&#x27;duration&#x27;] * 1000000),
-            &quot;start&quot;: start,
-            &quot;end&quot;: end
+            "audio_url": aduio_urls[index]['data']['link'],  #音频
+            "duration": int(times[index]['duration'] * 1000000),
+            "start": start,
+            "end": end
         })
 
         captions.append({
-            &#x27;text&#x27;: element,
-            &#x27;start&#x27;: start,
-            &#x27;end&#x27;: end,
-            &quot;in_animation&quot;:&quot;渐显&quot;
+            'text': element,
+            'start': start,
+            'end': end,
+            "in_animation": "渐显"
         })
-        if start &gt; img_start:
+        if start > img_start:
             start = img_start
         img_start = end
         draft_end = end
     #固定背景图
     imgs.append({
-            &quot;image_url&quot;: image,
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: draft_end
+            "image_url": image,
+            "width": width,
+            "height": height,
+            "start": 0,
+            "end": draft_end
         })
     # 构建输出对象
     ret = {
-        &quot;captions&quot;: json.dumps(captions),
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audios&quot;: json.dumps(audios)
+        "captions": json.dumps(captions),
+        "imgs": json.dumps(imgs),
+        "audios": json.dumps(audios)
     }
 
     return ret
 ```
+
+### 剪映小助手插件
 
 下面使用到的是“剪映小助手”插件，可在插件商城搜索获取，由速推AIGC大佬开发。
 
@@ -173,7 +180,9 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/d581804bde9b6156c3dcfc82ef6c28cd.png)
 
-先说创建草稿的节点，添加尺寸即可，user_id可不填
+#### 创建草稿节点
+
+先说创建草稿的节点，添加尺寸即可，`user_id`可不填
 
 ![](img/5d5214d513a128985bd1cc19776f8ac3.png)
 
@@ -181,29 +190,39 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/c6d3a3fbb9fd9987639e323e461ba149.png)
 
-然后是串联添加音频的节点，这里的draft_url为create_draft的输出参
+#### 添加音频节点
+
+然后是串联添加音频的节点，这里的`draft_url`为`create_draft`的输出参
 
 ![](img/ca25d52222da1662f668711d11ac3a91.png)
 
-然后是链接添加图片的节点，同样draft_url为create_draft节点的输出参数。图片参数为前置代码处理后的输出结果。
+#### 添加图片节点
+
+然后是链接添加图片的节点，同样`draft_url`为`create_draft`节点的输出参数。图片参数为前置代码处理后的输出结果。
 
 ![](img/58fb10992cdadb6f2e6a9c6c0ec13116.png)
+
+#### 字幕设置
 
 后是字幕设置，具体字幕的大小、缩放的数值，可先生成导出一版草稿后在剪映中二次调整后获取。
 
 ![](img/e025f12392ca1b873974b4be5dcec490.png)
 
-最后是保存草稿，返回参数有草稿的draft_url，最终我们使用的也是draft_url，记得保存下来
+#### 保存草稿
+
+最后是保存草稿，返回参数有草稿的`draft_url`，最终我们使用的也是`draft_url`，记得保存下来
 
 ![](img/c785c4073b0740835b15de99ac0c7def.png)
 
-结束节点，可以输出草稿地址draft_url和其它所需信息。
+结束节点，可以输出草稿地址`draft_url`和其它所需信息。
 
 ![](img/2194edfcefb6958ad9ae2742c114120b.png)
 
+## 工作流运行与使用
+
 以上是我们剪映草稿工作流的完成搭建过程与细节说明。
 
-试运行完成之后我们会获得draft_url，剪映草稿链接地址，复制下来即可。
+试运行完成之后我们会获得`draft_url`，剪映草稿链接地址，复制下来即可。
 
 文章用到的剪映小助手下载地址：[剪映小助手](https://ts.fyshark.com/#/login?user_id=7358)
 

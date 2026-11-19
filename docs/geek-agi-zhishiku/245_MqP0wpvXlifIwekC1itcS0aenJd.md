@@ -1,10 +1,11 @@
+
 # 文生视频｜Sora
 
 > 来源：[https://geekbang.feishu.cn/docx/Q2SHd8FPjoj9fwxYpfBcLPSin5e](https://geekbang.feishu.cn/docx/Q2SHd8FPjoj9fwxYpfBcLPSin5e)
 
-# 基本介绍
+## 基本介绍
 
-## Sora 是什么
+### Sora 是什么
 
 2月16日，openAI发布文生视频模型sora。它可以根据用户输入的提示词、文本指令或静态图像，生成长达一分钟的视频。其中既能实现多角度镜头的自然切换，还包含复杂的场景和生动的角色表情，且故事的逻辑性和连贯性极佳。
 
@@ -12,13 +13,13 @@
 
 Sora 官方地址：https://openai.com/sora
 
-> Sora 在日语中是**“天空”**的意思，引申含义还有**“自由”**。
+> Sora 在日语中是“天空”的意思，引申含义还有“自由”。
 
 ![](img/91f84b101b7f9c2aef2105bf0be6480c.png)
 
 Sora 介绍页丨OpenAI
 
-## Sora 会带来哪些影响
+### Sora 会带来哪些影响
 
 Sora模式的提出，必将对未来的视频制作模式产生巨大的影响，并为各行各业带来新的机遇。但sora带来的影响，无论从宽度和深度来说，都将远超这些。
 
@@ -28,7 +29,7 @@ Sora模式的提出，必将对未来的视频制作模式产生巨大的影响�
 
 3、数实融合驱动精神境界提升sora的出现，未来可以依据价值体 (如组织、企业、个人、群体的标签画像、行为为记录，可以方便地生成和还原完整现实世界的一切原始模型和轨迹。
 
-## Sora 模型的应用场景
+### Sora 模型的应用场景
 
 Sora模型的应用领域非常广泛，包括但不限于:
 
@@ -36,13 +37,13 @@ Sora模型的应用领域非常广泛，包括但不限于:
 
 **教育和培训**:创建教学视频，模拟复杂场景，帮助学生和专业人士学习新技能。娱乐和艺术:为艺术家和设计师提供工具，以探索新的创意表达方式
 
-**模拟和预测****:** 在科学研究和工程领域，模拟实验和预测结果。
+**模拟和预测**: 在科学研究和工程领域，模拟实验和预测结果。
 
 **虚拟现实和增强现实**: 为 VR 和 AR 应用生成逼真的虚拟环境和交互体验。社交媒体和内容创作:帮助内容创作者快速生成吸引人的视频内容，增加社交媒体互动,新闻和媒体:制作新闻报道的模拟场景，增强报道的视觉效果。
 
 Sora 的这些应用场景展示了其在多个领域的潜力，尤其是在需要视觉内容创新和快速生成的场合。
 
-## Sora 六大优势
+### Sora 六大优势
 
 > Sora 的三个特点: 60 秒超长视频、单视频多角度镜头、世界模型。
 
@@ -72,11 +73,11 @@ Sora 的这些应用场景展示了其在多个领域的潜力，尤其是在需
 
 (6)场景和物体的一致性和连续性:Sora 可以生成带有动态视角变化的视频，人物和场景元素在三维空间中的移动会显得更加自然。Sora 能够很好地处理遮挡问题。现有模型的一个问题是，当物体离开视野时,它们可能无法对其进行追踪。而通过一次性提供多顿预测，Sora 可确保画面主体即使暂时离开视野也能保持不变。
 
-## 正式发布时间预测
+### 正式发布时间预测
 
 ![](img/248e98bbd2fc8f181385c66509d5fff1.png)
 
-## 中国首部 AI动画片《千秋诗颂》
+### 中国首部 AI动画片《千秋诗颂》
 
 2 月 23日晚上举行的中国首部 AI动画片《千秋诗颂》启播暨中央广播电视总台人工智能工作室揭牌仪式上，上海人工智能实验室研发的文生视频大模型“书生·筑梦”亮相。这个 AI 模型已经开源，授权用户单位免费商用。它的参数量超过 30 亿，可根据输入的提示词生成有故事性、含多镜头的分钟级视频，具有转场流畅、故事连贯、画质高清等特点。
 
@@ -86,7 +87,7 @@ Sora 的这些应用场景展示了其在多个领域的潜力，尤其是在需
 
 由于数据、算力等资源限制，"筑梦’在视频生成能力、时长、质量上与 Sora 还存在差距。”上海人工智能实验室领军科学家林达华博士说，“但另一方面，随着同总台的深度合作，实验室研发的型在对中华文化的理解表现，以及与媒体编创实际生产流程的融合上，逐渐显露出特色优势。这类产研结合的新技术发展模式将使我国 AI 技术发展走出差异化道路，并形成我们的文化特色。
 
-## 国内部分公司布局文生视频大模型相关进展
+### 国内部分公司布局文生视频大模型相关进展
 
 ![](img/4267aa616867f7991baa38c17c02bf85.png)
 
@@ -112,7 +113,7 @@ Sora 的这些应用场景展示了其在多个领域的潜力，尤其是在需
 
 ### 前阿里副总裁贾扬清
 
-评价简单粗暴:“真的非常牛。”他认为“对标 OpenAl 的公司有一波被其他大厂 fomo (害怕错过)收购的机会”，“开源还需要一段时间才能 catch up”，算法小厂“要不就算法上媲美 OpenAl，要不就垂直领域深耕应用，要不就开源”，并预言“infra 的需求继续会猛增”
+评价简单粗暴:"真的非常牛。”他认为“对标 OpenAl 的公司有一波被其他大厂 fomo (害怕错过)收购的机会”，“开源还需要一段时间才能 catch up”，算法小厂“要不就算法上媲美 OpenAl，要不就垂直领域深耕应用，要不就开源”，并预言“infra 的需求继续会猛增”
 
 ## 媒体报道
 
@@ -208,11 +209,11 @@ Sora时代稀缺的小众电影提示词
 
 ## 原理
 
-(一)视频压缩网络技术
+### (一)视频压缩网络技术
 
 首先，Sora 通过一个叫做“视频压缩网络”的技术，将输入的图片或视频压缩成一个更低维度的表示形式，这一过程类似于将不同尺寸和分辨率的照片“标准化”，便于处理和存储。这并不意味着忽略原始数据的独特性，而是将它们转换成一个对 Sora 来说更容易理解和操作的格式。
 
-(二)空间时间补丁
+### (二)空间时间补丁
 
 接下来，Sora 将这些压缩后的数据进一步分解为所谓的“空间时间补丁”(Spacetime Patches)，这些补丁可以看作是视觉内容的基本构建块，就像是我们前面相册中的每一张照片都能分解为包含独特景观、颜色和纹理的小片段。这样，不管原始视频的长度、分辨率或风格如何，Sora 都可以将它们处理成一致的格式。
 
@@ -252,7 +253,7 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 # 演示案例
 
-### Tokyo Walk
+## Tokyo Walk
 
 提示词：
 
@@ -262,7 +263,7 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 [1029_1711074856.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GEDmb6ExNoZObRxDHwDcpDqin8e)
 
-### Wooly Mammoth
+## Wooly Mammoth
 
 提示词：
 
@@ -272,7 +273,7 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 [wooly-mammoth.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IFUmbIjwkov7I7xqjSoccasXnHb)
 
-### Mitten Astronaut
+## Mitten Astronaut
 
 提示词：
 
@@ -282,7 +283,7 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 [mitten-astronaut.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YBfzbGxBGoC5TFxJoJQcG0EonLe)
 
-### Big Sur
+## Big Sur
 
 提示词：
 
@@ -292,7 +293,7 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 [big-sur.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XGJRb5lnTocfg7xlP5xcqrLxnMe)
 
-### Monster with Melting Candle
+## Monster with Melting Candle
 
 提示词：
 
@@ -302,7 +303,7 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 [monster-with-melting-candle.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EJj9b4BbzoiBxgxe5trc0WSinlX)
 
-### Origami Undersea
+## Origami Undersea
 
 提示词：
 
@@ -310,7 +311,9 @@ Sora：大型视觉模型的背景、技术、局限性和机遇综述 【官方
 
 ![](img/c972a43476827c99e56de516c4198532.png)
 
-[origami-undersea.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BIAwbPmsHo0ZunxOjKxcGBZynKb)
+
+
+[`origami-undersea.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BIAwbPmsHo0ZunxOjKxcGBZynKb)
 
 # Sora 带来的影响和机会
 
@@ -338,9 +341,9 @@ Sora 的视频生成需要大量的计算资源，因此 OpenAI 不太可能提�
 
 AI 领域的新产品一经推出，往往能够在各种短视频平台上引起广泛关注，并获得大量流量。就像去年 GPT-4 的语音对话和 DALLE 绘画功能火爆一样，许多人轻松地积累了 10 万粉丝，并通过售卖账号来实现变现。
 
-### 贩售创意 prompt
+### 贩售创意 `prompt`
 
-每一个创意的 prompt 都可能值钱！如果你对 AI 有深入的了解，那么将你的灵感转化为 prompt，通过平台如 PromptBase、PromptHero 售卖，轻松赚钱。
+每一个创意的 `prompt` 都可能值钱！如果你对 AI 有深入的了解，那么将你的灵感转化为 `prompt`，通过平台如 PromptBase、PromptHero 售卖，轻松赚钱。
 
 ### 视频代生成
 
@@ -350,7 +353,7 @@ AI 领域的新产品一经推出，往往能够在各种短视频平台上引�
 
 这个需要一定的网络技术基础，你得知道服务器域名是个啥东西。
 
-1⃣️套壳网站，众所周知因为网络原因，国内各种gpt套壳网站层出不穷，这种网站前期赠送试用次数，后期靠会员续费盈利。opena如果开放了sora的API接口，只要网上搞套源码，会员定价只要不贵，靠每月的续费还是能赚的。
+1⃣️套壳网站，周知因为网络原因，国内各种gpt套壳网站层出不穷，这种网站前期赠送试用次数，后期靠会员续费盈利。opena如果开放了sora的API接口，只要网上搞套源码，会员定价只要不贵，靠每月的续费还是能赚的。
 
 2⃣️导航资讯站，整合sora的教程、网址、咨询的网站，免费提供给用户浏览，导航资讯站主要靠广告和推荐网站分成盈利。一般用的最多是免费开源的wordpress，弄套模版就行了。
 

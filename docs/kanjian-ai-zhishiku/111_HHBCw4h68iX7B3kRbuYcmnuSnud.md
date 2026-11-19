@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230816）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/CIS4dO0L9owvJ9xyq1NcUT1lnWb](https://jlqyxzzvbk.feishu.cn/docx/CIS4dO0L9owvJ9xyq1NcUT1lnWb)
@@ -62,7 +63,7 @@
 
 # AI软件精选
 
-# Phind**（****AI****代码）**
+## Phind（AI代码）
 
 使用自然语言搜索任何与开发相关的查询并获得相关结果。
 
@@ -70,7 +71,7 @@
 
 链接：https://phind.com/
 
-# Codeium**（****AI****代码）**
+## Codeium（AI代码）
 
 Codeium是现代编码超级工具，是基于尖端人工智能技术构建的代码加速工具包。通过轻松地集成到编辑器中，您可以专注于成为最好的软件开发人员，而不是最好的码农。
 
@@ -78,7 +79,7 @@ Codeium是现代编码超级工具，是基于尖端人工智能技术构建的�
 
 链接：https://www.codeium.com/
 
-# SourceAI**（****AI****语音）**
+## SourceAI（AI语音）
 
 SourceAI是一个人工智能驱动的工具，可以从任何人类语言描述中生成任何编程语言的代码。它还可以简化、发现错误并修复它们以及调试代码。
 
@@ -86,7 +87,7 @@ SourceAI是一个人工智能驱动的工具，可以从任何人类语言描述
 
 链接：https://sourceai.dev/
 
-**更多****AI****工具请访问：**https://www.ainavpro.com/
+**更多AI工具请访问：**https://www.ainavpro.com/
 
 # AI课程精选
 
@@ -106,17 +107,11 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/04f8829ba770f30941545c973345ff7e.png)
 
-#
-
-![](img/906edc0e8e9b8eb294bc48da16c1a9be.png)
-
-![](img/3828ca77642d98b6bb9f1e68b116893e.png)
-
 **欢迎进群交流**
 
 # 4.会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：`kanAI` 九五折优惠，或者直接二维码访问
 
 ![](img/7f3a7c19af22702ddcfcc3f67487a2d2.png)
 
@@ -126,7 +121,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/ad49ed1519067846085c14b127dff8f3.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像GPT**，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/e5f45e782c44a927f2290d86ea8a2abf.png)
 

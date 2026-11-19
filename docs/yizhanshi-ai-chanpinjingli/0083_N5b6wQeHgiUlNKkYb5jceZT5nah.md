@@ -1,3 +1,4 @@
+
 # 用 Streamlit 网页应用生成视频
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/TVbkdSB0EorjHTx28AacsXBenHh](https://v11enp9ok1h.feishu.cn/docx/TVbkdSB0EorjHTx28AacsXBenHh)
@@ -6,7 +7,7 @@
 
 ## 用 Streamlit 运行
 
-设置 OPENAI_API_KEY 的环境变量。您应使用 OpenAI 或 ZhiupAI 的实际 API 密钥替换 OpenAI 密钥或 ZhiupAI 密钥。然后，设置 OPENAI_BASE_URL 的环境变量，从而指定 API 的基本 URL。在本例中，提供的 URL 是 ZhiupAI，如果使用的是 OpenAI，则无需设置此变量或将其设置为 OpenAI 的基本 URL。最后，运行 Streamlit 应用程序。
+设置 `OPENAI_API_KEY` 的环境变量。您应使用 OpenAI 或 ZhiupAI 的实际 API 密钥替换 OpenAI 密钥或 ZhiupAI 密钥。然后，设置 `OPENAI_BASE_URL` 的环境变量，从而指定 API 的基本 URL。在本例中，提供的 URL 是 ZhiupAI，如果使用的是 OpenAI，则无需设置此变量或将其设置为 OpenAI 的基本 URL。最后，运行 Streamlit 应用程序。
 
 ```
 $ export OPENAI_API_KEY=your OpenAI Key or ZhiupAI Key
@@ -16,17 +17,17 @@ $ streamlit run streamlit_web_demo.py
 
 ## 加载模型
 
-从 CogVideoXPipeline 加载本地的 CogVideoX 模型。
+从 `CogVideoXPipeline` 加载本地的 CogVideoX 模型。
 
-**参数：**
+参数：
 
-model_path： 预训练 VAE 模型的文件路径。
+`model_path`：预训练 VAE 模型的文件路径。
 
-dtype： 计算数据类型，默认使用 torch.float16（半精度），可以减少内存使用并加快计算速度。
+`dtype`：计算数据类型，默认使用 `torch.float16`（半精度），可以减少内存使用并加快计算速度。
 
-device： 计算设备，GPU 为 "cuda"，CPU 为 "cpu"。
+`device`：计算设备，GPU 为 "cuda"，CPU 为 "cpu"。
 
-**返回值：**CogVideoXPipeline
+返回值：`CogVideoXPipeline`
 
 ```
 import base64
@@ -43,13 +44,11 @@ import torch
 from convert_demo import convert_prompt
 from diffusers import CogVideoXPipeline
 
-
-model_path: str = &quot;THUDM/CogVideoX-5b&quot;
-
+model_path: str = "THUDM/CogVideoX-5b"
 
 @st.cache_resource
-def load_model(model_path: str, dtype: torch.dtype, device: str) -&gt; CogVideoXPipeline:
-    &quot;&quot;&quot;
+def load_model(model_path: str, dtype: torch.dtype, device: str) -> CogVideoXPipeline:
+    """
     Load the CogVideoX model.
 
     Args:
@@ -59,33 +58,33 @@ def load_model(model_path: str, dtype: torch.dtype, device: str) -&gt; CogVideoX
 
     Returns:
     - CogVideoXPipeline: Loaded model pipeline.
-    &quot;&quot;&quot;
+    """
     pipe = CogVideoXPipeline.from_pretrained(model_path, torch_dtype=dtype)
     pipe.enable_model_cpu_offload()
     return pipe
 ```
 
-请注意，您需要在这将THUDM/CogVideoX-5b 替换您自己的本地路径。
+请注意，您需要在这将 `THUDM/CogVideoX-5b` 替换您自己的本地路径。
 
 ## 生成视频
 
 根据给定的文本提示生成视频帧。
 
-**参数：**
+参数：
 
-Pipeline： 生成视频的模型Pipeline。
+`Pipeline`：生成视频的模型Pipeline。
 
-prompt： 生成视频的文本提示。
+`prompt`：生成视频的文本提示。
 
-num_inference_steps： 模型推理的步数。
+`num_inference_steps`：模型推理的步数。
 
-guidance_scale： 生成过程中用于引导的刻度。
+`guidance_scale`：生成过程中用于引导的刻度。
 
-num_videos_per_prompt： 为每个提示生成的视频数量。
+`num_videos_per_prompt`：为每个提示生成的视频数量。
 
-device and dtype： 用于处理的设备和数据类型。
+`device` and `dtype`：用于处理的设备和数据类型。
 
-**返回值 ：**NumPy 数组形式的视频帧列表。
+返回值：`NumPy` 数组形式的视频帧列表。
 
 ```
 def generate_video(
@@ -94,10 +93,10 @@ def generate_video(
     num_inference_steps: int = 50,
     guidance_scale: float = 6.0,
     num_videos_per_prompt: int = 1,
-    device: str = &quot;cuda&quot;,
+    device: str = "cuda",
     dtype: torch.dtype = torch.float16,
-) -&gt; List[np.ndarray]:
-    &quot;&quot;&quot;
+) -> List[np.ndarray]:
+    """
     Generate a video based on the provided prompt and model path.
 
     Args:
@@ -108,10 +107,7 @@ def generate_video(
     - num_videos_per_prompt (int): Number of videos to generate per prompt.
     - device (str): Device to run the generation on.
     - dtype (torch.dtype): Data type for the model.
-
-    Returns:
-    - List[np.ndarray]: Generated video frames.
-    &quot;&quot;&quot;
+    """
     prompt_embeds, _ = pipe.encode_prompt(
         prompt=prompt,
         negative_prompt=None,
@@ -137,19 +133,19 @@ def generate_video(
 将视频帧序列保存为视频文件。从列表中移除第一帧，使用指定的文件路径、帧频和编解码器初始化视频写入器，然后在关闭写入器之前将每一帧写入视频文件以最终完成。
 
 ```
-def save_video(video: List[np.ndarray], path: str, fps: int = 8) -&gt; None:
-    &quot;&quot;&quot;
+def save_video(video: List[np.ndarray], path: str, fps: int = 8) -> None:
+    """
     Save the generated video to a file.
 
     Args:
     - video (List[np.ndarray]): Video frames.
     - path (str): Path to save the video.
     - fps (int): Frames per second for the video.
-    &quot;&quot;&quot;
+    """
     # Remove the first frame
     video = video[1:]
 
-    writer = imageio.get_writer(path, fps=fps, codec=&quot;libx264&quot;)
+    writer = imageio.get_writer(path, fps=fps, codec="libx264")
     for frame in video:
         np_frame = np.array(frame)
         writer.append_data(np_frame)
@@ -167,11 +163,10 @@ def save_metadata(
     guidance_scale: float,
     num_videos_per_prompt: int,
     path: str,
-) -&gt; None:
-    &quot;&quot;&quot;
+) -> None:
+    """
     Save metadata to a JSON file.
-    
-    
+
     Args:
     - prompt (str): Original prompt.
     - converted_prompt (str): Converted prompt.
@@ -179,21 +174,23 @@ def save_metadata(
     - guidance_scale (float): Guidance scale.
     - num_videos_per_prompt (int): Number of videos per prompt.
     - path (str): Path to save the metadata.
-    &quot;&quot;&quot;
+    """
     metadata = {
-        &quot;prompt&quot;: prompt,
-        &quot;converted_prompt&quot;: converted_prompt,
-        &quot;num_inference_steps&quot;: num_inference_steps,
-        &quot;guidance_scale&quot;: guidance_scale,
-        &quot;num_videos_per_prompt&quot;: num_videos_per_prompt,
+        "prompt": prompt,
+        "converted_prompt": converted_prompt,
+        "num_inference_steps": num_inference_steps,
+        "guidance_scale": guidance_scale,
+        "num_videos_per_prompt": num_videos_per_prompt,
     }
-    with open(path, &quot;w&quot;) as f:
+    with open(path, "w") as f:
         json.dump(metadata, f, indent=4)
 ```
 
 ## 用 Streamlit 调用函数并执行
 
-配置界面，加载 CogVideoX 模型，并在侧边栏设置用户输入的视频生成参数。处理提示输入、完善输入并根据用户设置生成视频。生成的视频显示在应用程序中，并在侧边栏提供下载链接，方便用户访问。
+配置界面，加载 `CogVideoX` 模型，并在侧边栏设置用户输入的视频生成参数。处理提示输入、完善输入并根据用户设置生成视频。生成的视频显示在应用程序中，并在侧边栏提供下载链接，方便用户访问。
+
+
 
 ```
 def main() -&gt; None:

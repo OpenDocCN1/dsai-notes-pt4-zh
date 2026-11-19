@@ -1,12 +1,13 @@
+
 # OpenAI国内中转专线使用方法
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/OC0Yd8whPoSCGtxUNYXc30b9ngg](https://kq4b3vgg5b.feishu.cn/docx/OC0Yd8whPoSCGtxUNYXc30b9ngg)
 
-# OpenAI反向代理专线使用方法
+## OpenAI反向代理专线使用方法
 
 国内反向代理专线是专为学员和粉丝准备的一条直连OpenAI官方服务器的专线。和国内其他中转服务不同，反向代理专线连接的不是中转服务器，而是官方服务器，因此能100%确保是官方提供的模型服务，而非中转服务。并且由于是国内反向代理专线，因此不受网络因素影响，在不借助任何网络工具的情况下，也能直连OpenAI官方服务器。
 
-+   准备工作
+### 准备工作
 
 既然是直连OpenAI官方服务器，因此会需要提前准备OpenAI官方API-KEY（注意是官方API-KEY，而不是中转API-KEY），具体获取方法，可以在网盘文件中查看官方账号注册及API获取方法：
 
@@ -14,9 +15,9 @@
 
 此外，也可以直接在某宝上购买OpenAI API Key，不过需要甄别，需要购买官方API-KEY，而非中转API-KEY。
 
-+   国内反向代理地址使用方法
+### 国内反向代理地址使用方法
 
-当准备好API-KEY之后，即可在代码环境中测试连接，此时并不需要任何工具，仅需在base_url字段中填入'https://ai.devtool.tech/proxy/v1', ，即可直连OpenAI服务：
+当准备好API-KEY之后，即可在代码环境中测试连接，此时并不需要任何工具，仅需在`base_url`字段中填入`https://ai.devtool.tech/proxy/v1`，即可直连OpenAI服务：
 
 ```
 # !pip install openai
@@ -27,23 +28,19 @@ import os
 from dotenv import load_dotenv
 load_dotenv(override=True)
 from openai import OpenAI
-```
 
-```
 client = OpenAI(
-  base_url=&quot;https://ai.devtool.tech/proxy/v1&quot;,
-  api_key=os.getenv(&quot;OPENAI_API_KEY&quot;),
+    base_url="https://ai.devtool.tech/proxy/v1",
+    api_key=os.getenv("OPENAI_API_KEY"),
 )
-```
 
-```
 # 查看模型列表
 model_list = client.models.list()
-```
 
-```
 model_list.data
 ```
+
+
 
 ```
 [Model(id=&#x27;gpt-4-0613&#x27;, created=1686588896, object=&#x27;model&#x27;, owned_by=&#x27;openai&#x27;),
@@ -123,6 +120,8 @@ model_list.data
  Model(id=&#x27;text-embedding-ada-002&#x27;, created=1671217299, object=&#x27;model&#x27;, owned_by=&#x27;openai-internal&#x27;)]
 ```
 
+
+
 然后即可测试调用模型：
 
 ```
@@ -133,8 +132,8 @@ reponse = client.chat.completions.create(
       &quot;role&quot;: &quot;user&quot;,
       &quot;content&quot;: [
         {
-          &quot;type&quot;: &quot;text&quot;,
-          &quot;text&quot;: &quot;你好，好久不见，请介绍下你自己。&quot;
+          &quot;type&quot;: "text",
+          "text": "你好，好久不见，请介绍下你自己。"
         }
       ]
     }

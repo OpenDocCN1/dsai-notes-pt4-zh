@@ -1,20 +1,14 @@
+
 # Codex 写代码效率翻倍保姆级教程
 
-> 来源：[https://yunyinghui.feishu.cn/docx/YAP3dR0Aso8czXxaNuAcUXbRnyf](https://yunyinghui.feishu.cn/docx/YAP3dR0Aso8czXxaNuAcUXbRnyf)
+> 来源：https://yunyinghui.feishu.cn/docx/YAP3dR0Aso8czXxaNuAcUXbRnyf  
+> 适用人群：互联网 AI 编程学习人群  
+> 首发时间：2025 年 10 月 14 日  
+> 社区创作者：  
+> 内容发布方：[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)  
+> 使用建议：如果需要快速定位到精确内容，可以使用快捷键 `Ctrl +F`/`Command +F` 的形式，搜索关键字/词，查找你想要的内容。
 
-> 适用人群：互联网 AI 编程学习人群
-
-> 首发时间：2025 年 10 月 14 日
-
-> **社区创作者：**** **
-
-> **内容发布方：**[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
-
-> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 Ctrl +F/Command +F 的形式，搜索关键字/词，查找你想要的内容。
-
->
-
-> 云舒在使用 Codex 两周后，用这篇文章主要跟大家分享一下如何使用 Codex 去进行高效率的 AI 编程开发！
+云舒在使用 Codex 两周后，用这篇文章主要跟大家分享一下如何使用 Codex 去进行高效率的 AI 编程开发！
 
 最近 Codex 升级了新模型，我正好在写一个前后端还带数据库项目，我就在改 bug 的时候去用 Codex 和 claude code 做了同步测试。
 
@@ -22,25 +16,23 @@
 
 跑了一个里边差不多形成了自己新的开发习惯：
 
-1.  1. Gemini2.5pro 写 PRD 文档
-
-1.  2. Codex 处理后端及数据库逻辑
-
-1.  3. claude code 写前端接口和样式
+1. Gemini2.5pro 写 PRD 文档  
+2. Codex 处理后端及数据库逻辑  
+3. claude code 写前端接口和样式  
 
 整体效率感觉又提升了不少，Codex 这次真的做的很不错，于是写了这篇文章来跟大家分享一下如何使用 Codex 去进行高效率的 AI 编程开发。
 
 让我们先从 Codex 的安装开始吧～
 
-# 🛠️ 1.Codex 安装及基础使用
+## 🛠️ 1. Codex 安装及基础使用
 
 🍉
 
 如果你是第一次接触 Codex，这里有一份快速的‘武器库’指南，帮你搞定 Codex 在终端和 Cursor 插件中的安装和基础命令。老手可以快速跳过～
 
-## **1.1 安装 Codex**
+### 1.1 安装 Codex
 
-1.  1. **终端安装 Codex**
+#### 终端安装 Codex
 
 ```
 npm install -g @openai/codex
@@ -50,7 +42,7 @@ npm install -g @openai/codex
 
 ![](img/31daa6a576a08c210789b049407fd77f.png)
 
-执行完后在终端输入 codex，即可进入 Codex 进行作业。
+执行完后在终端输入 `codex`，即可进入 Codex 进行作业。
 
 ```
 codex
@@ -58,7 +50,7 @@ codex
 
 ![](img/3a3ecdc185d1ff9aedb60c1a5c7b5968.png)
 
-1.  2. **cursor 插件安装命令行**
+#### cursor 插件安装命令行
 
 在插件中搜索 codex，关键词为 Codex 或 ChatGPT。搜索完成后进行安装。
 
@@ -72,69 +64,65 @@ cursor 插件的对话框和 cursor 的 agent 使用逻辑一致。
 
 ![](img/f73a64331e4a5298c19a9360e45d9122.png)
 
-## **1.2 常用命令**
+### 1.2 常用命令
 
-1.  1. **终端命令汇总**
+#### 终端命令汇总
 
-按/可以选择各种指令，我和大家分享几个常用指令。
+按 `/` 可以选择各种指令，我和大家分享几个常用指令。
 
 ![](img/596a7b43837670832c432461e7b2b8d4.png)
 
-modle ：切换模型，一般用 medium 或者 high。
+`modle`：切换模型，一般用 `medium` 或者 `high`。
 
 ![](img/df735ca3797a1c836c0029659e298a98.png)
 
-approval ：选择 Codex 的作业模式，我一般用 Full Access。
+`approval`：选择 Codex 的作业模式，我一般用 `Full Access`。
 
-+   **Read Only **：Codex 只能读取文件和回答问题，任何修改、运行命令或访问网络都需要你逐一批准。
-
-+   **Auto **：Codex 可以在当前工作区里读取文件、编辑代码、运行命令，不需要你每次手动批准。但如果它要访问网络或跳出当前工作区，依然需要你确认。
-
-+   **Full Access **：Codex 可以直接读取文件、编辑、运行命令，还能访问网络，全程无需审批
++ `Read Only`：Codex 只能读取文件和回答问题，任何修改、运行命令或访问网络都需要你逐一批准。  
++ `Auto`：Codex 可以在当前工作区里读取文件、编辑代码、运行命令，不需要你每次手动批准。但如果它要访问网络或跳出当前工作区，依然需要你确认。  
++ `Full Access`：Codex 可以直接读取文件、编辑、运行命令，还能访问网络，全程无需审批  
 
 ![](img/ca831cecb9116f80ad65d85dc1c9d86e.png)
 
-new ：新建对话，可以开启一个新的对话窗口。
+`new`：新建对话，可以开启一个新的对话窗口。
 
 ![](img/550a28f46aa6b5a3e889bb4ab0166dc3.png)
 
-resume ：历史对话功能，但是不能在 Codex 内使用，必须退出在终端使用。
+`resume`：历史对话功能，但是不能在 Codex 内使用，必须退出在终端使用。
 
 使用流程如下：
 
-+   通过/quit 指令退出终端
++ 通过 `/quit` 指令退出终端  
 
 ![](img/4a5c261e04a83b14f3f20323d40e2d6f.png)
 
-+   输入 codex resume 指令
++ 输入 `codex resume` 指令  
 
 ![](img/0a68bafa97761b686214d57bec1f2e57.png)
 
-+   选择要继续的对话内容即可。
++ 选择要继续的对话内容即可。  
 
 ![](img/2e71f95b3e36757db5871bfde78ed31f.png)
 
-init ：生成项目说明文件，方便 AI 了解项目。
+`init`：生成项目说明文件，方便 AI 了解项目。
 
 ![](img/743dce863fb7cf1839c8eb9eabf6298e.png)
 
-1.  2. cursor 插件模式及模型选择
+#### cursor 插件模式及模型选择
 
-左下角可以切换 Codex 的作业模型和模型，以下为作业模式，我一般用 Agent（Full Access）。
+左下角可以切换 Codex 的作业模型和模型，以下为作业模式，我一般用 `Agent`（`Full Access`）。
 
-+   **Chat or Plan **：Codex 只能读取文件和回答问题，任何修改、运行命令或访问网络都需要你逐一批准。
-
-+   **Agent **：Codex 可以在当前工作区里读取文件、编辑代码、运行命令，不需要你每次手动批准。但如果它要访问网络或跳出当前工作区，依然需要你确认。
-
-+   Agent（Full Access） ：Codex 可以直接读取文件、编辑、运行命令，还能访问网络，全程无需审批
++ `Chat or Plan`：Codex 只能读取文件和回答问题，任何修改、运行命令或访问网络都需要你逐一批准。  
++ `Agent`：Codex 可以在当前工作区里读取文件、编辑代码、运行命令，不需要你每次手动批准。但如果它要访问网络或跳出当前工作区，依然需要你确认。  
++ `Agent`（`Full Access`）：Codex 可以直接读取文件、编辑、运行命令，还能访问网络，全程无需审批  
 
 ![](img/d94cf3e521a6cdc1ffb30ec109c5cc9a.png)
 
-模型的话用 Codex 的 mdeium 或者 high。
+模型的话用 Codex 的 `medium` 或者 `high`。
 
 ![](img/ea0c54d7e40ce3bd331fada38117789a.png)
 
-# 📝2.从 0-1 用 Codex 做一个项目
+## 📝 2. 从 0-1 用 Codex 做一个项目
 
 🍉
 
@@ -142,7 +130,7 @@ init ：生成项目说明文件，方便 AI 了解项目。
 
 我最近想把写提示词这个事情封装成一个工具，所以我准备开发一个专门写提示词的产品出来，以下是产品开发的全流程：
 
-这次产品开发完后，我把它部署到了 Vercel 上，项目地址： https://promptpal-delta.vercel.app/
+这次产品开发完后，我把它部署到了 Vercel 上，项目地址：https://promptpal-delta.vercel.app/
 
 ![](img/751c7e40a7232d2c1a01b5fabdbede1b.png)
 
@@ -150,17 +138,15 @@ init ：生成项目说明文件，方便 AI 了解项目。
 
 整体开发中用的工具及负责内容如下：
 
-+   Gemini 2.5pro：PRD 文档撰写
-
-+   Codex：整体产品开发及测试优化
-
-+   Claude Code：前端页面样式优化
++ Gemini 2.5pro：PRD 文档撰写  
++ Codex：整体产品开发及测试优化  
++ Claude Code：前端页面样式优化  
 
 让我们先从 PRD 文档撰写开始说起。
 
-## **2.1 PRD 文档撰写**
+### 2.1 PRD 文档撰写
 
-PRD 文档梳理提示词： https://t16jzwqrzjx.feishu.cn/wiki/NABlwmL9si2vhWkqtgJcbTxknbe #DNe3dX601o5tF2x3oiIcyouZnqc
+PRD 文档梳理提示词：https://t16jzwqrzjx.feishu.cn/wiki/NABlwmL9si2vhWkqtgJcbTxknbe #DNe3dX601o5tF2x3oiIcyouZnqc
 
 这次开发之前，我还特意把 PRD 撰写提示词升了级，加入了 ASCII 图，方便前端项目更好的人和 AI 达成一致。
 
@@ -178,15 +164,15 @@ AI 会一个场景一个场景来和我们确认，这个场景有哪些功能�
 
 可以看到 PRD 文档详细说明了每一个场景，AI 可以清晰的知道我们到底要做一个什么项目。
 
-## 2.2 Codex 进行项目开发及测试
+### 2.2 Codex 进行项目开发及测试
 
 首先我们需要让 Codex 阅读 PRD 文档，告诉我们它对 PRD 文档的理解。
 
 ![](img/cc9af99324b7f47145065f9711b255ec.png)
 
-然后让它给一个场景 US-01 的开发计划，同时要考虑架构。
+然后让它给一个场景 `US-01` 的开发计划，同时要考虑架构。
 
-**这里一定要注意， **每次只让 AI 开发一个场景！！！
+这里一定要注意，每次只让 AI 开发一个场景！！！
 
 一个场景开发完了，如果自己验收通过了觉得没问题。那就让 AI 开发下一个场景。
 
@@ -208,9 +194,9 @@ bug 都修复完了，我们的产品也算做完啦。
 
 ![](img/01191d6f2e3fbf521b2ae97a349520ea.png)
 
-## **2.3 开发过程中注意事项**
+### 2.3 开发过程中注意事项
 
-### **2.3.1 语料补充**
+#### 2.3.1 语料补充
 
 有一点我们需要注意，虽然我们 PRD 讲清楚了要如何和 DeepSeek 模型做对接，但 Codex 并没有对应的语料库，所以它开发的代码是有很多 bug 的。
 
@@ -220,7 +206,7 @@ bug 都修复完了，我们的产品也算做完啦。
 
 我建议大家如果开发涉及到掉 API，最好把对方 API 文档相关的文件提前下载好，然后开发时候喂给模型，这样可以减少修 bug 的时间。
 
-### **2.3.2 更新 PRD 文档**
+#### 2.3.2 更新 PRD 文档
 
 在开发过程中我们会发现 PRD 文档有的时候存在遗漏或者和自己预期不对的情况，这种情况下我们可以让 Codex 和自己通过对话达成想要的效果。
 
@@ -234,13 +220,13 @@ bug 都修复完了，我们的产品也算做完啦。
 
 做好项目管理，这样当项目逐渐变大的时候，bug 率会更低。
 
-### **2.3.3 创建说明文件**
+#### 2.3.3 创建说明文件
 
-项目每更新完一个版本，我们可以运行一次 init 指令，由它来生成项目说明文件，方便后续 AI 了解项目。
+项目每更新完一个版本，我们可以运行一次 `init` 指令，由它来生成项目说明文件，方便后续 AI 了解项目。
 
 ![](img/a46a1ebc76b002c65b5e4a338e8d4ff6.png)
 
-## **2.4 部署到 vercel**
+### 2.4 部署到 vercel
 
 开发完成后我想看看 Codex 对 vervel 平台的部署掌握的怎么样，于是我让它给我写了个一个教程出来。
 
@@ -252,14 +238,13 @@ bug 都修复完了，我们的产品也算做完啦。
 
 ![](img/47f105107b9d034bcb2e393262130c9c.png)
 
-最后修了几轮 bug 在 vervel 成功部署上了： https://promptpal-delta.vercel.app/
-
+最后修了几轮 bug 在 vervel 成功部署上了：https://promptpal-delta.vercel.app/
 
 Codex 对 vervel 的理解还是蛮不错的，模型对网站的信息理解的越全，对于我们这群开发者来说是越方便的。
 
 期待后续 Codex 接入联网功能，这样之后语料补充都可以让模型自己去找了，哈哈哈哈哈～
 
-## 2.5 用 claude code 优化前端样式
+### 2.5 用 claude code 优化前端样式
 
 我们其实可以看到 Codex 其实并不擅长前端页面设计，它生成的页面倒也没啥太大问题，但很多细节其实做的一般。
 
@@ -291,7 +276,7 @@ Claude code 我能够给到 80 分，整体的样式一看就是有精心设计�
 
 这样它们一起可以协作效率变得很高。
 
-## 3.对 AI 编程的新思考：三个感悟和一个暴论
+## 3. 对 AI 编程的新思考：三个感悟和一个暴论
 
 截止到写完这篇文章我用了小两周 Codex，基本上每天都在各种写代码的过程中，我有几个非常直观的感受。
 
@@ -333,7 +318,7 @@ cursor、windsurf、trae、claude code、Gemini cli、Codex，这都属于这一
 
 为什么说只属于模型厂商？
 
-因为它的效果取决于两个事情： **模型能力、token 成本。**
+因为它的效果取决于两个事情：模型能力、token 成本。
 
 为什么都是调 claude 模型，cursor 的效果不如 claude code；它没办法把工程做到和 claude code 一样疯狂塞 token 的地步，它工程上只能去做压缩而不是给更多的上下文。
 
@@ -345,27 +330,25 @@ cursor、windsurf、trae、claude code、Gemini cli、Codex，这都属于这一
 
 这篇文章写到这里就结束啦，强烈推荐大家去试试 Gemini+Codex+claude code 一起编程干活，效率真的太棒了！
 
----
+## 编程学习交流群
 
-# 编程学习交流群
+1. 持续关注并更新 AI 的相关资讯动态，研究报告，赚钱案例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+2. 已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+3. 关于文档负责人大国：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
 
-3.**关于文档负责人大国**：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
-
-**飞书学习群**
+飞书学习群
 
 ![](img/d80bb88c66d7336b725b8be820f78879.png)
 
-**飞书扫码进群学习**
+飞书扫码进群学习
 
 ![](img/83c687d2e2a3e4050d62544d7241a713.png)
 
 好友（ID：zhangyuguo94s）
 
-**扫码加🛰️入🛰️群**
+扫码加🛰️入🛰️群
 
 ---
 

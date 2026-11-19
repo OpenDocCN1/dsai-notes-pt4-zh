@@ -1,3 +1,4 @@
+
 # 数据合成方法-让模型自己说出用了哪些指令对齐数据
 
 > 来源：[https://agijuejin.feishu.cn/docx/Me6HdvQpfojTK7xcVkzc7NHcnBb](https://agijuejin.feishu.cn/docx/Me6HdvQpfojTK7xcVkzc7NHcnBb)
@@ -19,7 +20,7 @@ paper: https://arxiv.org/abs/2406.08464
 github: https://github.com/magpie-align/magpie
 ```
 
-核心思想：对齐过的大模型本身是经过大量指令数据对齐得来，往往这些对齐后的模型接受的输入通常由“前置查询模板”、“查询内容”、“后置查询模板”组成（例如：Llama2-Chat模型接受的输入是"[INST] Hi! [/INST]"，[INST] 是前置查询模板”，[/INST]则是后置查询模板）当对模型仅输入前置模板时，模型会自回归的合成“查询内容”；并且当组合完全时，开源获得模型的回复结果。
+核心思想：对齐过的大模型本身是经过大量指令数据对齐得来，往往这些对齐后的模型接受的输入通常由“前置查询模板”、“查询内容”、“后置查询模板”组成（例如：Llama2-Chat模型接受的输入是` Hi! '`，`` 是前置查询模板”，`'`则是后置查询模板）当对模型仅输入前置模板时，模型会自回归的合成“查询内容”；并且当组合完全时，开源获得模型的回复结果。
 
 这样就变相地挖掘出对齐模型的指令数据，你以为只开了模型，我直接挖向
 
@@ -29,11 +30,11 @@ github: https://github.com/magpie-align/magpie
 
 如上图所示，合成数据主要涉及两个步骤：
 
-+   指令合成：仅给大模型输入前置查询模板“<|start_header_id|>user<|end_header_id|>”，大模型会自动续写出指令内容“What materials should I use to build a nest?”
++   指令合成：仅给大模型输入前置查询模板“`<|start_header_id|>user<|end_header_id|>`”，大模型会自动续写出指令内容“What materials should I use to build a nest?”
 
-+   回复合成：将生成的指令内容与前置查询模板、后置查询模板拼接“<|start_header_id|>user<|end_header_id|>What materials should I use to build a nest?<|start_header_id|>assistant<|end_header_id|>”输入到大模型中，大模型给出回复结果“Other birds collect twigs for their nests. Magpies acquire jewels for theirs.”
++   回复合成：将生成的指令内容与前置查询模板、后置查询模板拼接“`<|start_header_id|>user<|end_header_id|>What materials should I use to build a nest?<|start_header_id|>assistant<|end_header_id|>`”输入到大模型中，大模型给出回复结果“Other birds collect twigs for their nests. Magpies acquire jewels for theirs.”
 
-注意：在指令合成过程中，Temperature和Top-p都需要开得比较大，保证指令的多样性；在回复合成过程中，采用贪婪解码，默认概率最高的Token可能来自模型的训练语料。
+注意：在指令合成过程中，`Temperature`和`Top-p`都需要开得比较大，保证指令的多样性；在回复合成过程中，采用贪婪解码，默认概率最高的Token可能来自模型的训练语料。
 
 当然直接生成的指令是涉及的场景是广泛、随机的，如果需要针对限定任务进行数据生成，可以通过增加系统提示词来限定场景，比如：增加对数学任务进行指令数据生成，
 
@@ -47,7 +48,7 @@ github: https://github.com/magpie-align/magpie
 
 多轮任务
 
-还可以构造偏好数据，额外利用模型基座生成回复，再通过奖励模型FsfairX-LLaMA3-RM-v0.1进行打分，保留合成回复分数大于基座回复分数的数据。
+还可以构造偏好数据，额外利用模型基座生成回复，再通过奖励模型`FsfairX-LLaMA3-RM-v0.1`进行打分，保留合成回复分数大于基座回复分数的数据。
 
 ## 数据分析
 
@@ -79,11 +80,11 @@ Pro数据训练的模型优于Air数据训练的模型，主要是Llama3-70B-Ins
 
 +   指令难度：根据指令中描述的任务所需的知识水平，分为“非常容易”、“容易”、“中等”、“困难”和“非常困难”5个等级。
 
-+   指令相似度：采用all-mpnet-base-v2模型对指令进行向量化表征，计算指令之间的相似程度，筛选出重复或相似的样本。
++   指令相似度：采用`all-mpnet-base-v2`模型对指令进行向量化表征，计算指令之间的相似程度，筛选出重复或相似的样本。
 
-+   奖励值：采用FsfairX-LLaMA3-RM-v0.1模型对回复内容进行评分$r^{*}$，通过$r^{*}$过滤低质量的样本。
++   奖励值：采用`FsfairX-LLaMA3-RM-v0.1`模型对回复内容进行评分`r*`，通过`r*`过滤低质量的样本。
 
-+   奖励差：利用奖励模型对基模生成的回复评分$r_{base}$，通过$r^{*}-r_{base} > 0$获得更高质量的样本。
++   奖励差：利用奖励模型对基模生成的回复评分`r_base`，通过`r* - r_base > 0`获得更高质量的样本。
 
 上面每个过滤数据的详细过滤规则如下表所示，
 
@@ -101,7 +102,7 @@ Pro数据训练的模型优于Air数据训练的模型，主要是Llama3-70B-Ins
 
 ![](img/33cc7d0349c557a83275c903e759351c.png)
 
-对MAGPIE数据进行安全性分析，利用Llama-Guard-2模型进行预测，有害指令少于1%。
+对MAGPIE数据进行安全性分析，利用`Llama-Guard-2`模型进行预测，有害指令少于1%。
 
 ![](img/1bec0fcf67e897a6f5f23a09886951f2.png)
 

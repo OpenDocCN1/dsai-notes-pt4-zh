@@ -1,13 +1,13 @@
+
 # PyTorch从零开始实现Transformer
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/D5JPd5euto1GC6xSNhTcWilznel](https://qqs7y1hozd1.feishu.cn/docx/D5JPd5euto1GC6xSNhTcWilznel)
 
-# 自注意力
+## 自注意力
 
-## 计算公式
+### 计算公式
 
-```
-
+```python
 class SelfAttention(nn.Module):
     def __init__(self, embed_size, heads):
         super(SelfAttention, self).__init__()
@@ -15,11 +15,11 @@ class SelfAttention(nn.Module):
         self.heads = heads
         self.head_dim = embed_size // heads
 
-        assert (self.head_dim * heads == embed_size),  &quot;Embed size needs  to  be div by heads&quot;
+        assert (self.head_dim * heads == embed_size), "Embed size needs to be div by heads"
         self.values = nn.Linear(self.head_dim, self.head_dim, bias=False)
         self.keys = nn.Linear(self.head_dim, self.head_dim, bias=False)
         self.queries = nn.Linear(self.head_dim, self.head_dim, bias=False)
-        self.fc_out = nn.Linear(heads*self.head_dim, embed_size)
+        self.fc_out = nn.Linear(heads * self.head_dim, embed_size)
 
     def forward(self, values, keys, query, mask):
         N = query.shape[0] # the number of training examples
@@ -34,18 +34,18 @@ class SelfAttention(nn.Module):
         keys = self.keys(keys)
         queries = self.queries(queries)
 
-        energy = torch.einsum(&quot;nqhd,nkhd-&gt;nhqk&quot;, [queries, keys]) # 矩阵乘法，使用爱因斯坦标记法
+        energy = torch.einsum("nqhd,nkhd->nhqk", [queries, keys]) # 矩阵乘法，使用爱因斯坦标记法
         # queries shape: (N, query_len, heads, heads_dim)
         # keys shape: (N, key_len, heads, heads_dim)
         # energy shape: (N, heads, query_len, key_len)
 
         if mask is not None:
-            energy = energy.masked_fill(mask==0, float(&quot;-1e20&quot;)) 
-            #Fills elements of self tensor with value where mask is True
+            energy = energy.masked_fill(mask == 0, float("-1e20")) 
+            # Fills elements of self tensor with value where mask is True
 
-        attention = torch.softmax(energy / (self.embed_size ** (1/2)), dim=3)
-        out = torch.einsum(&quot;nhql, nlhd-&gt;nqhd&quot;, [attention, values]).reshape(
-            N, query_len, self.heads*self.head_dim
+        attention = torch.softmax(energy / (self.embed_size ** (1 / 2)), dim=3)
+        out = torch.einsum("nhql, nlhd->nqhd", [attention, values]).reshape(
+            N, query_len, self.heads * self.head_dim
         ) # 矩阵乘法，使用爱因斯坦标记法einsum
         # attention shape: (N, heads, query_len, key_len)
         # values shape: (N, value_len, heads, head_dim)
@@ -53,20 +53,19 @@ class SelfAttention(nn.Module):
 
         out = self.fc_out(out)
         return out
-
 ```
 
-# Transformer块
+## Transformer块
 
-+   我们把[Transfomer](https://qqs7y1hozd1.feishu.cn/wiki/Xi6ewDFzwiVdxdkS7gtcrxL9n9c?from=from_copylink)块定义为如下图所示的结构
+我们把`Transformer`块定义为如下图所示的结构
 
-+   这个Transformer块在编码器和解码器中都有出现过
+这个`Transformer`块在编码器和解码器中都有出现过
 
 ![](img/09bba94c345d700cd1e10a971e9eee55.png)
 
-**代码实现**
+### 代码实现
 
-```
+```python
 class TransformerBlock(nn.Module):
     def __init__(self, embed_size, heads, dropout, forward_expansion):
         super(TransformerBlock, self).__init__()
@@ -74,9 +73,9 @@ class TransformerBlock(nn.Module):
         self.norm1 = nn.LayerNorm(embed_size)
         self.norm2 = nn.LayerNorm(embed_size)
         self.feed_forward = nn.Sequential(
-            nn.Linear(embed_size, forward_expansion*embed_size),
+            nn.Linear(embed_size, forward_expansion * embed_size),
             nn.ReLU(),
-            nn.Linear(forward_expansion*embed_size, embed_size)
+            nn.Linear(forward_expansion * embed_size, embed_size)
         )
         self.dropout = nn.Dropout(dropout)
 
@@ -89,17 +88,17 @@ class TransformerBlock(nn.Module):
         return out
 ```
 
-# 编码器
+## 编码器
 
 编码器结构如图所示
 
-Inputs经过Input Embedding 和Positional Encoding之后，通过多个Transformer块
+Inputs经过Input Embedding 和Positional Encoding之后，通过多个`Transformer`块
 
 ![](img/fbca901b903b6b3995a93e7cf5dafd9b.png)
 
-**代码实现**
+### 代码实现
 
-```
+```python
 class Encoder(nn.Module):
     def __init__(self, 
                  src_vocab_size,
@@ -140,14 +139,13 @@ class Encoder(nn.Module):
         return out
 ```
 
-# 解码器块
+## 解码器块
 
 解码器块结构如图所示
 
+### 代码实现
 
-**代码实现**
-
-```
+```python
 class DecoderBlock(nn.Module):
     def __init__(self, embed_size, heads, forward_expansion, dropout, device):
         super(DecoderBlock, self).__init__()
@@ -163,15 +161,15 @@ class DecoderBlock(nn.Module):
         return out
 ```
 
-# 解码器
+## 解码器
 
-解码器块加上**word embedding**和positional embedding之后构成解码器
+解码器块加上word embedding和positional embedding之后构成解码器
 
 ![](img/b9a44d728f106c30e7b066be6ceeb3c4.png)
 
-**代码实现**
+### 代码实现
 
-```
+```python
 class Decoder(nn.Module):
     def __init__(self, 
                  trg_vocab_size, 
@@ -206,16 +204,18 @@ class Decoder(nn.Module):
         return out
 ```
 
-# 整个Transformer
+## 整个Transformer
 
 ![](img/b8000159e4005871c7cb6e50753ebea7.png)
 
-**代码实现**
+### 代码实现
 
-```
+
+
+```python
 class Transformer(nn.Module):
     def __init__(self,
-                 src_vocab_size, 
+                 src_vocab_size,
                  trg_vocab_size,
                  src_pad_idx,
                  trg_pad_idx,
@@ -224,7 +224,7 @@ class Transformer(nn.Module):
                  forward_expansion=4,
                  heads=8,
                  dropout=0,
-                 device=&quot;cuda&quot;,
+                 device="cuda",
                  max_length=100
                  ):
         super(Transformer, self).__init__()
@@ -275,7 +275,9 @@ class Transformer(nn.Module):
 
 # 全部代码（可直接运行）
 
-```
+
+
+```python
 import torch
 import torch.nn as nn
 
@@ -286,7 +288,7 @@ class SelfAttention(nn.Module):
         self.heads = heads
         self.head_dim = embed_size // heads
 
-        assert (self.head_dim * heads == embed_size),  &quot;Embed size needs  to  be div by heads&quot;
+        assert (self.head_dim * heads == embed_size), "Embed size needs to be div by heads"
         self.values = nn.Linear(self.head_dim, self.head_dim, bias=False)
         self.keys = nn.Linear(self.head_dim, self.head_dim, bias=False)
         self.queries = nn.Linear(self.head_dim, self.head_dim, bias=False)
@@ -305,17 +307,17 @@ class SelfAttention(nn.Module):
         keys = self.keys(keys)
         queries = self.queries(queries)
 
-        energy = torch.einsum(&quot;nqhd,nkhd-&gt;nhqk&quot;, [queries, keys])
+        energy = torch.einsum("nqhd,nkhd->nhqk", [queries, keys])
         # queries shape: (N, query_len, heads, heads_dim)
         # keys shape: (N, key_len, heads, heads_dim)
         # energy shape: (N, heads, query_len, key_len)
 
         if mask is not None:
-            energy = energy.masked_fill(mask==0, float(&quot;-1e20&quot;)) 
+            energy = energy.masked_fill(mask==0, float("-1e20"))
             #Fills elements of self tensor with value where mask is True
 
         attention = torch.softmax(energy / (self.embed_size ** (1/2)), dim=3)
-        out = torch.einsum(&quot;nhql, nlhd-&gt;nqhd&quot;, [attention, values]).reshape(
+        out = torch.einsum("nhql, nlhd->nqhd", [attention, values]).reshape(
             N, query_len, self.heads*self.head_dim
         )
         # attention shape: (N, heads, query_len, key_len)
@@ -444,7 +446,7 @@ class Transformer(nn.Module):
                  forward_expansion=4,
                  heads=8,
                  dropout=0,
-                 device=&quot;cuda&quot;,
+                 device="cuda",
                  max_length=100
                  ):
         super(Transformer, self).__init__()
@@ -492,8 +494,8 @@ class Transformer(nn.Module):
         out = self.decoder(trg, enc_src, src_mask,  trg_mask)
         return out
     
-if __name__ == &quot;__main__&quot;:
-    device = torch.device(&quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;)
+if __name__ == "__main__":
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(device)
 
     x = torch.tensor([[1, 5, 6, 4, 3, 9, 5, 2, 0], [1, 8, 7, 3, 4, 5, 6, 7, 2]]).to(

@@ -1,33 +1,20 @@
+
 # 外卖推客新人入场保姆教程
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AG84dd2GNoK8GFxQkoGcg14znBd](https://xuqiwei1986.feishu.cn/docx/AG84dd2GNoK8GFxQkoGcg14znBd)
-
 > 现在龙哥大大的超级标也已经出来了，
-
 > 很多人想入场这个外卖推客也不太了解。
-
 > 在超级标出来之前，其实已经和好朋友先明一起也在测这个项目，
-
 > 所以来分享下一些玩法。
-
 >
-
 > 数据方面：
-
 > 在直播的话一天少的话1-2000很容易
-
 > 多的话大几千
-
 > 赶上周六一天基本上万
-
 > 主要就是激励补贴给的多，所以推广前一定要记得报名激励计划
-
-> **日常社群**的话
-
+> 日常社群的话
 > 10个群的标准
-
 > 大概正常的话佣金在400-1000
-
 > 赶上活动在2000-6000
 
 ![](img/eaa342e6ac5d28c12e4f19bb2ffa2af1.png)
@@ -40,13 +27,12 @@
 
 ![](img/cf4c9bbeba3b25094e5c12e955ab0842.png)
 
-# 佣金活动链接获取：
+## 佣金活动链接获取：
 
 > 👸号搜索「美团联盟」、「美团圈圈」「饿了么联盟」
-
 > 京东外卖推广在「京粉APP」
 
-## 饿了么联盟
+### 饿了么联盟
 
 小程序叫「一起赚」
 
@@ -74,7 +60,7 @@
 
 ![](img/e7e61ecde3341b251cf055daf1af3339.png)
 
-### 「一起赚」小程序授权淘宝联盟（非必须）
+#### 「一起赚」小程序授权淘宝联盟（非必须）
 
 ```
 一起赚小程序可以授权淘宝联盟，
@@ -88,13 +74,13 @@
 
 登录电脑版饿了么联盟。
 
-https://union.ele.me/index#/alliance-child-account-management/account
+`https://union.ele.me/index#/alliance-child-account-management/account`
 
 ![](img/5be5a964606c8eda3f587362cea274ef.png)
 
 ![](img/1b6aae1d5f396a3d70ca3f1ff85b98bf.png)
 
-### 口令防折叠技巧
+#### 口令防折叠技巧
 
 > 有些🛰️号权重不够，或者发的多，就算发一行口令也会被折叠展示。
 
@@ -110,7 +96,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 [f22cd95ee9f77184626b6d3b8b55cc4e.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BJ5NboJNMoc34rxM2ACcgBepnVc)
 
-## 美团联盟
+### 美团联盟
 
 美团联盟推广的时候注意先报名下激励的活动。
 
@@ -138,7 +124,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/b3dc9b95b185e2878c71a7e9ed9b4bfd.png)
 
-## **美团圈圈**
+### 美团圈圈
 
 美团圈圈和美团联盟一样都是属于官方的，但是允许推广者自购、并且支持收徒适合代理模式
 
@@ -146,7 +132,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/f97b4dc121f55f1148ab4ecdf7f36a7d.png)
 
-## 京东外卖
+### 京东外卖
 
 应用商店下载官方的「京粉app」
 
@@ -156,7 +142,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/40229638cc6ca20717ba5c8206d0af65.png)
 
-## 云瞻平台
+### 云瞻平台
 
 圈内大佬黄老板的平台也对接的非常齐全
 
@@ -166,15 +152,15 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/1259e1d4a72268705c050f9066eb233d.png)
 
-# 活动玩法（陆续补充中，很多活动时效太短就没往上写）
+## 活动玩法（陆续补充中，很多活动时效太短就没往上写）
 
-## 1.美团时效较长的免单活动
+### 1.美团时效较长的免单活动
 
 ![](img/1bdd4b3ffcdee2fe40b8e6226efc21c8.png)
 
-### 玩法教程：
+#### 玩法教程：
 
-#### 入口：
+##### 入口：
 
 ![](img/c613b2227416756fcaa56c03c97d6e41.png)
 
@@ -242,19 +228,19 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 > ✅一定要先领了倦再去盘
 
-> 👉http://dpurl.cn/g7ALEGvz
+> 👉`http://dpurl.cn/g7ALEGvz`
 
 > 去津贴页面参与就行，不懂爬楼
 
-## 2.美团9.9年卡活动
+### 2.美团9.9年卡活动
 
 9.9用户下单年卡，佣金35%
 
-### 推广文案参考：
+#### 推广文案参考：
 
 ![](img/b5df8efa09a6bef548815a659be33492.png)
 
-> 1 %复制信息#% 打开团App http:/💰bqMzNjOWMzMGU💰一起领
+> 1 %复制信息#% 打开团App `http:/💰bqMzNjOWMzMGU💰一起领`
 
 > 这个9.9💰年卡120张5膨胀卷
 
@@ -268,23 +254,23 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/e3d219edf86985af4c242dfe25a23f04.png)
 
-## 3. 超级星期六
+### 3. 超级星期六
 
-### 美团0元购，用于维护社群
+#### 美团0元购，用于维护社群
 
 ![](img/4e6229020b81ee005dc2426c881578e6.png)
 
-### 美团0.01自提
+#### 美团0.01自提
 
 ![](img/c41dc3c36f891fd8e329e5160c8ce9e5.png)
 
-### 美团闪购抽免单
+#### 美团闪购抽免单
 
 ![](img/f390341c46a019f9f991fab6ef0a8bf1.png)
 
 ![](img/a348fca058f2bb2ca52b0e45dab4021e.png)
 
-### 美团，肯德基麦当劳大牌低价高佣金活动
+#### 美团，肯德基麦当劳大牌低价高佣金活动
 
 > 佣金一单6-8元，非常可观
 
@@ -296,7 +282,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/175ad4c790a732957d31d427ffb8aeea.png)
 
-### 淘宝闪购16-16，25-18
+#### 淘宝闪购16-16，25-18
 
 ![](img/fd8ed2666e80a16cd212e96a6c38ba23.png)
 
@@ -304,13 +290,13 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/cca6ab32db4428658be42bd209547060.png)
 
-### 饿了么18-18
+#### 饿了么18-18
 
 ![](img/ca88ec89540f398148fe89b0efc1952c.png)
 
 ![](img/6244e807605423b94006026902d26e0e.png)
 
-## 4.更多活动来源
+### 4.更多活动来源
 
 > 全网同行都是互相抄，
 
@@ -318,7 +304,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 > 及时跟进
 
-## 京东华莱士，塔斯汀0吃玩法
+### 京东华莱士，塔斯汀0吃玩法
 
 > 原理是叠加🛰️支付的金币兑换券，搭配华莱士店铺的20-16
 
@@ -338,13 +324,13 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 > 搜“塔斯汀”或“华莱士”点顶部
 
-> 👉https://u.jd.com/n674DZU
+> 👉`https://u.jd.com/n674DZU`
 
 >
 
 > 2⃣️3金币綐换4亓外卖叠加券
 
-> 👉 mp://ZbN8wAxj7BA0VIG
+> 👉`mp://ZbN8wAxj7BA0VIG`
 
 > 叠加使用！做到20-20亓哈！
 
@@ -352,11 +338,11 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 > 新的5-4叠加倦，用这个
 
-> mp://aEnqXu0NsNu5p0q
+> `mp://aEnqXu0NsNu5p0q`
 
-# 引流篇
+## 引流篇
 
-## 📕发帖
+### 📕发帖
 
 铺量发📕笔记
 
@@ -370,9 +356,9 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/0018d9e5ef0f5ebe39dc83e5b6c09b4f.png)
 
-## 抖音直播讲解活动引流
+### 抖音直播讲解活动引流
 
-### 开播前视频预热
+#### 开播前视频预热
 
 最佳节点就是在活动开始前几天甚至个把月就持续发布相关的活动视频。
 
@@ -382,7 +368,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 平时开播的话也是发条视频预热下再播。
 
-### 直播内容
+#### 直播内容
 
 参考同行直播间
 
@@ -396,9 +382,9 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/411f3b35803f0d2865dd28e72d1178b1.png)
 
-### 引流私域主要2种方式
+#### 引流私域主要2种方式
 
-#### 方式一：
+##### 方式一：
 
 创建抖音群，群里发公告里
 
@@ -406,7 +392,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 然后底下放个群里或者👸号二维码
 
-#### 方式二：
+##### 方式二：
 
 参考同行
 
@@ -414,7 +400,7 @@ https://union.ele.me/index#/alliance-child-account-management/account
 
 ![](img/bd67eaa7e44d841dc4ebf01641ad0fca.png)
 
-## 社群裂变
+### 社群裂变
 
 发布好活动的时候，可以引导用户邀请好朋友进群玩
 

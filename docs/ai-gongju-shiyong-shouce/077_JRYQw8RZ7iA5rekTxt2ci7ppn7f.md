@@ -1,10 +1,11 @@
+
 # NO.02图生图（让你指鹿为马）
 
 > 来源：[https://my.feishu.cn/docx/NVgodPWthohRPvxjCwtcjhorn0c](https://my.feishu.cn/docx/NVgodPWthohRPvxjCwtcjhorn0c)
 
-👉建议先看完第一篇文章（ [NO.01文生图与工作区](https://yw55ojhusnq.feishu.cn/wiki/WPDjweuYOitfWEkOH92caboLnDX)），然后再看本篇教程！
+👉建议先看完第一篇文章（[NO.01文生图与工作区](https://yw55ojhusnq.feishu.cn/wiki/WPDjweuYOitfWEkOH92caboLnDX)），然后再看本篇教程！
 
-完整教程🎨： [最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
+完整教程🎨：[最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
 
 地址：[Vega AI 创作平台](https://applet.rightbrainai.cn/phone)
 
@@ -14,9 +15,8 @@
 
 ### **图生图和文生图的区别**
 
-+   文生图：以文字的形式生成图片；
-
-+   图生图：**以一张图片为基准**，配合文字描述，生成另外一张图片；
++ 文生图：以文字的形式生成图片；
++ 图生图：**以一张图片为基准**，配合文字描述，生成另外一张图片；
 
 与文生图的区别就是，图生图需要上传基础图片！
 
@@ -104,7 +104,7 @@
 
 [NO.06风格定制（炼丹）](https://yw55ojhusnq.feishu.cn/wiki/GI49wGek6i53fvkysryc1Zb1ndf)
 
-完整教程🎨： [最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
+完整教程🎨：[最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
 
 手机端体验：[Vega AI 创作平台](https://rightbrain.art/phone/other/login?inviteCode=CISRNIA4)
 

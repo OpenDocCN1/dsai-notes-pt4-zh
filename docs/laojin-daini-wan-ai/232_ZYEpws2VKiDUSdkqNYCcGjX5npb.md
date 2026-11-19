@@ -1,3 +1,5 @@
+
+
 # 这个Skill能自动学会你的所有习惯，踩过的坑！
 
 > 来源：[https://my.feishu.cn/docx/FoEadPgTToaQ05x3VpDcHQUknZH](https://my.feishu.cn/docx/FoEadPgTToaQ05x3VpDcHQUknZH)
@@ -16,7 +18,7 @@
 
 ![](img/ed35d85098be1d8a5de6abfbad8ffdd5.png)
 
-GitHub上1660星，叫 **Claudeception**。
+GitHub上1660星，叫 Claudeception。
 
 作者是blader，就是做Humanizer那位大神，两个项目加起来7800多星。
 
@@ -28,7 +30,7 @@ GitHub上1660星，叫 **Claudeception**。
 
 第一次看到这个功能的时候，心想——自动学习？能学啥？
 
-**结果老金我完全想错了。**
+结果老金我完全想错了。
 
 它学的不是简单的操作偏好，而是你的工作模式。
 
@@ -62,7 +64,7 @@ Claudeception做的事情就是：当它发现你工作中产生了有价值的�
 
 写"帮助解决数据库问题"这种模糊描述，什么场景都匹配不上。
 
-写"Fix for PrismaClientKnownRequestError in serverless"，下次遇到同样的报错就能精准命中。
+写`Fix for PrismaClientKnownRequestError in serverless`，下次遇到同样的报错就能精准命中。
 
 Claudeception自动生成的描述，就是按这个标准来的。
 
@@ -72,7 +74,7 @@ Claudeception自动生成的描述，就是按这个标准来的。
 
 Claudeception有自动、手动、查看三种用法。
 
-**自动模式（推荐）**
+### 自动模式（推荐）
 
 装上hook之后，它会在你每次发送消息时自动评估当前工作。
 
@@ -90,7 +92,7 @@ Claudeception有自动、手动、查看三种用法。
 
 你什么都不用做，它会自动把有价值的知识写成新的Skill文件。
 
-**手动模式**
+### 手动模式
 
 如果你觉得刚才的工作特别有价值，想确保被记录下来，有两种方式：
 
@@ -108,7 +110,7 @@ Save what we just learned as a skill
 
 它就会对当前会话做一次"学习总结"，把有价值的知识提取出来。
 
-**查看已学技能**
+### 查看已学技能
 
 想看Claudeception到底学会了什么？直接去看它生成的Skill文件就行。
 
@@ -128,7 +130,7 @@ ls .claude/skills/claudeception/
 
 打开就能看到它学了什么、什么时候触发、怎么解决。
 
-**什么知识会被提取？**
+### 什么知识会被提取？
 
 不是什么都学，它有严格的质量门控。
 
@@ -146,7 +148,7 @@ ls .claude/skills/claudeception/
 
 ## 老金我的真实体验：从怀疑到服气
 
-**第一周：完全没感觉**
+### 第一周：完全没感觉
 
 老金我装上Claudeception的第一周，完全没感觉到任何变化。
 
@@ -154,7 +156,7 @@ ls .claude/skills/claudeception/
 
 老金我当时就在想——这玩意儿是不是坏了？
 
-**第二周：还是没啥变化**
+### 第二周：还是没啥变化
 
 第二周继续用，还是没啥明显变化。
 
@@ -162,7 +164,7 @@ ls .claude/skills/claudeception/
 
 老金我差点把它卸了。
 
-**第三周：突然顿悟**
+### 第三周：突然顿悟
 
 第三周的某一天，老金我开了个新会话，说"帮我写篇AI工具测评"。
 
@@ -186,7 +188,7 @@ Claude Code直接给我生成了：
 
 老金我后来仔细观察了一下，Claudeception学会了这些东西：
 
-**写作流程习惯**
+### 写作流程习惯
 
 老金我每次写👸号都是这个顺序：
 
@@ -198,23 +200,23 @@ Claude Code直接给我生成了：
 
 现在Claude Code自己就知道这个流程，不用老金我再说一遍。
 
-**文件命名风格**
+### 文件命名风格
 
 老金我喜欢用具体的文件名，按固定格式命名。
 
-比如 2026-02-16_AI工具_常青_Claude_标题.md 而不是随便起个 文章1.md。
+比如 `2026-02-16_AI工具_常青_Claude_标题.md` 而不是随便起个 `文章1.md`。
 
 Claudeception学会了这个习惯，现在生成的文件名都很规范。
 
-**问题排查模式**
+### 问题排查模式
 
 老金我遇到工具出问题时，习惯先搜索错误信息，再检查配置，最后才问AI。
 
 Claudeception学会了这个模式，现在遇到问题它会按这个顺序给方案。
 
-**文件管理习惯**
+### 文件管理习惯
 
-老金我喜欢把不同类型的文件分到不同目录——文章放drafts、图片放images、数据放data。
+老金我喜欢把不同类型的文件分到不同目录——文章放 `drafts`、图片放 `images`、数据放 `data`。
 
 Claudeception学会了这个习惯，现在生成文件的时候会自动放到对应目录。
 
@@ -248,7 +250,7 @@ Claudeception学会了这个习惯，现在生成文件的时候会自动放到�
 
 ## 这个思路其实不是凭空冒出来的
 
-Claudeception的作者在README里引用了好几篇论文。
+Claudeception的作者在`README`里引用了好几篇论文。
 
 2023年有个叫 **Voyager** 的研究，让AI在游戏里自动积累技能库。
 
@@ -305,29 +307,37 @@ Serverless环境下数据库连接数爆了
 压测确认连接数稳定在配置上限内
 ```
 
-最关键的是 description 那段——这决定了未来什么场景能匹配到这个Skill。
+最关键的是 `description` 那段——这决定了未来什么场景能匹配到这个Skill。
 
-作者特别强调：写"Helps with database problems"没用，写"Fix for PrismaClientKnownRequestError in serverless"才能精准匹配。
+作者特别强调：写"Helps with database problems"没用，写`Fix for PrismaClientKnownRequestError in serverless`才能精准匹配。
 
 README里列了3个示例Skill，可以参考：
 
-nextjs-server-side-error-debugging：浏览器控制台看不到的服务端报错
+`nextjs-server-side-error-debugging`：浏览器控制台看不到的服务端报错
 
-prisma-connection-pool-exhaustion：Serverless环境"连接数太多"的问题
+`prisma-connection-pool-exhaustion`：Serverless环境"连接数太多"的问题
 
-typescript-circular-dependency：检测和修复循环依赖
+`typescript-circular-dependency`：检测和修复循环依赖
 
 ## 适合哪些人用？
 
 这个Skill适合重度用户，偶尔用一下的人体感不明显。
 
-**Claude Code重度用户**：每天用超过2小时的，这个Skill必装。用得越久效果越好，因为它积累的模式越多。
+### Claude Code重度用户
 
-**有固定工作流程的人**：如果你有自己的工作流程和文件管理习惯，它能帮你省掉大量重复沟通的时间。
+每天用超过2小时的，这个Skill必装。用得越久效果越好，因为它积累的模式越多。
 
-**带团队的负责人**：可以让团队成员都装上。它会学习团队的协作规范，保持工作风格一致。
+### 有固定工作流程的人
 
-**不适合偶尔用一下的人**：体感不明显。因为它需要时间积累你的工作模式。
+如果你有自己的工作流程和文件管理习惯，它能帮你省掉大量重复沟通的时间。
+
+### 带团队的负责人
+
+可以让团队成员都装上。它会学习团队的协作规范，保持工作风格一致。
+
+### 不适合偶尔用一下的人
+
+体感不明显。因为它需要时间积累你的工作模式。
 
 ## 怎么安装？
 
@@ -337,9 +347,9 @@ GitHub地址：https://github.com/blader/Claudeception
 
 每一步都有 **用户级别** 和 **项目级别** 两种选择。
 
-**第一步：克隆仓库**
+### 第一步：克隆仓库
 
-**用户级别（推荐）**
+#### 用户级别（推荐）
 
 装一次，所有项目都能用：
 
@@ -347,7 +357,7 @@ GitHub地址：https://github.com/blader/Claudeception
 git clone https://github.com/blader/Claudeception.git ~/.claude/skills/claudeception
 ```
 
-**项目级别**
+#### 项目级别
 
 只对当前项目生效，适合团队协作（可以提交到Git）：
 
@@ -355,15 +365,15 @@ git clone https://github.com/blader/Claudeception.git ~/.claude/skills/claudecep
 git clone https://github.com/blader/Claudeception.git .claude/skills/claudeception
 ```
 
-**第二步：配置激活Hook**
+### 第二步：配置激活Hook
 
 Skill本身可以通过语义匹配自动激活，但配了Hook能确保每次会话都评估是否有可提取的知识。
 
 激活率更高，强烈推荐配上。
 
-**用户级别Hook（推荐）**
+#### 用户级别Hook（推荐）
 
-1、创建hooks目录并复制脚本：
+1、创建`hooks`目录并复制脚本：
 
 ```
 mkdir -p ~/.claude/hooks
@@ -371,17 +381,17 @@ cp ~/.claude/skills/claudeception/scripts/claudeception-activator.sh ~/.claude/h
 chmod +x ~/.claude/hooks/claudeception-activator.sh
 ```
 
-2、在 ~/.claude/settings.json 里加上hook配置：
+2、在 `~/.claude/settings.json` 里加上hook配置：
 
 ```
 {
   &quot;hooks&quot;: {
     &quot;UserPromptSubmit&quot;: [
       {
-        &quot;hooks&quot;: [
+        "hooks": [
           {
-            &quot;type&quot;: &quot;command&quot;,
-            &quot;command&quot;: &quot;~/.claude/hooks/claudeception-activator.sh&quot;
+            "type": "command",
+            "command": "~/.claude/hooks/claudeception-activator.sh"
           }
         ]
       }
@@ -390,9 +400,9 @@ chmod +x ~/.claude/hooks/claudeception-activator.sh
 }
 ```
 
-**项目级别Hook**
+#### 项目级别Hook
 
-1、在项目目录下创建hooks目录并复制脚本：
+1、在项目目录下创建`hooks`目录并复制脚本：
 
 ```
 mkdir -p .claude/hooks
@@ -400,17 +410,17 @@ cp .claude/skills/claudeception/scripts/claudeception-activator.sh .claude/hooks
 chmod +x .claude/hooks/claudeception-activator.sh
 ```
 
-2、在项目目录的 .claude/settings.json 里加上hook配置：
+2、在项目目录的 `.claude/settings.json` 里加上hook配置：
 
 ```
-
+{
   &quot;hooks&quot;: {
     &quot;UserPromptSubmit&quot;: [
       {
-        &quot;hooks&quot;: [
+        "hooks": [
           {
-            &quot;type&quot;: &quot;command&quot;,
-            &quot;command&quot;: &quot;.claude/hooks/claudeception-activator.sh&quot;
+            "type": "command",
+            "command": ".claude/hooks/claudeception-activator.sh"
           }
         ]
       }
@@ -419,23 +429,23 @@ chmod +x .claude/hooks/claudeception-activator.sh
 }
 ```
 
-如果你已经有 settings.json 文件，把 hooks 配置合并进去就行，不要覆盖原有内容。
+如果你已经有 `settings.json` 文件，把 hooks 配置合并进去就行，不要覆盖原有内容。
 
-**安装注意事项**
+### 安装注意事项
 
-**关于耐心**
+#### 关于耐心
 
 这个Skill是"慢热型"，装上不会立马有效果。
 
 至少用2周才能感觉到明显变化，用得越久效果越好。
 
-**关于Windows**
+#### 关于Windows
 
 自带的激活脚本是给Mac和Linux写的，Windows上可能跑不通。
 
 需要转换成Node.js版本，详见下方踩坑章节。
 
-**关于验证**
+#### 关于验证
 
 装完之后可以测试一下hook是否正常工作：
 
@@ -447,7 +457,7 @@ cat ~/.claude/hooks/claudeception-activator.sh
 
 ## 老金我踩过的坑
 
-**坑1：装上就想看效果**
+### 坑1：装上就想看效果
 
 老金我第一次装上的时候，迫不及待地想看效果。
 
@@ -463,7 +473,7 @@ cat ~/.claude/hooks/claudeception-activator.sh
 
 不用做任何特殊设置，它会自动在后台学习
 
-**坑2：以为它只能学简单偏好**
+### 坑2：以为它只能学简单偏好
 
 老金我一开始以为Claudeception只能学一些简单偏好，比如文件放哪个目录。
 
@@ -477,7 +487,7 @@ cat ~/.claude/hooks/claudeception-activator.sh
 
 它能学的东西远比你想象的多
 
-**坑3：频繁切换工作内容**
+### 坑3：频繁切换工作内容
 
 有一次老金我在做两个不同的项目，一个写👸号，一个做数据整理。
 
@@ -489,7 +499,7 @@ cat ~/.claude/hooks/claudeception-activator.sh
 
 这样Claudeception可以为每个项目学习不同的模式
 
-坑4：Windows上脚本不兼容
+### 坑4：Windows上脚本不兼容
 
 老金我在Windows上装的时候，发现它自带的脚本是给Mac和Linux写的。
 
@@ -507,15 +517,15 @@ cat ~/.claude/hooks/claudeception-activator.sh
 
 ## 老金我的使用建议
 
-**给它足够的学习时间**
+### 给它足够的学习时间
 
 不要装上就期待立马有效果。至少用2-3周，让它充分学习你的习惯。
 
-**保持工作流程的一致性**
+### 保持工作流程的一致性
 
 如果你的工作流程经常变，Claudeception可能学不到稳定的模式。尽量保持一致。
 
-**定期检查它学到了什么**
+### 定期检查它学到了什么
 
 可以偶尔去看看它生成了哪些Skill文件：
 
@@ -523,11 +533,11 @@ cat ~/.claude/hooks/claudeception-activator.sh
 ls ~/.claude/skills/claudeception/
 ```
 
-打开任意一个 .md 文件就能看到它学了什么知识、什么场景触发。
+打开任意一个 `.md` 文件就能看到它学了什么知识、什么场景触发。
 
 如果发现它学错了，直接删掉那个文件或者手动修改就行。
 
-**结合其他Skill使用**
+### 结合其他Skill使用
 
 Claudeception可以和其他Skill一起用。比如配合Humanizer去AI味，让生成的内容更自然。
 
@@ -555,10 +565,13 @@ Claude Code重度用户（每天2小时以上）
 
 带团队的负责人
 
-GitHub地址：https://github.com/blader/Claudeception
+
+
+
+GitHub地址：`https://github.com/blader/Claudeception`
 
 这个Skill需要2-3周才能看到明显效果，别装上就卸了。
 
 你们用过这个Skill吗？有什么发现评论区聊聊，老金我很好奇它都学会了你们什么习惯。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

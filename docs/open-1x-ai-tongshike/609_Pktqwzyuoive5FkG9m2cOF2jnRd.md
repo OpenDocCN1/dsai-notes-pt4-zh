@@ -1,66 +1,56 @@
+
 # AI + 游戏
 
 > 来源：[https://datawhaler.feishu.cn/docx/K28SdCzswoEV46xpexucIxj6nEc](https://datawhaler.feishu.cn/docx/K28SdCzswoEV46xpexucIxj6nEc)
 
 > 本文档原为 **寻找游戏大模王** 比赛收集的参考资料
 
-> 原**学习手册（学习&赛事已结束）**： [大模型游戏应用开发（学习手册）](https://datawhaler.feishu.cn/docx/QVqddVgeKo0F2Rxk1WbcPemmnHb)
+> 原学习手册（学习&赛事已结束）： [大模型游戏应用开发（学习手册）](https://datawhaler.feishu.cn/docx/QVqddVgeKo0F2Rxk1WbcPemmnHb)
 
 # 🎮 从零开始制作一个属于你自己的游戏
 
-## **建立游戏开发基本认知：**
+## 建立游戏开发基本认知
 
-1.  【游戏行业科普 · 四】有哪些游戏品类，如何划分
+1. 【游戏行业科普 · 四】有哪些游戏品类，如何划分
+2. 如何从0开始准备一个游戏设计项目
+3. 游戏开发如何入门？零基础想学做游戏从什么地方开始？附学习路线和教程
 
-1.  如何从0开始准备一个游戏设计项目
+## 学习基础的实操演示
 
-1.  游戏开发如何入门？零基础想学做游戏从什么地方开始？附学习路线和教程
-
-## **学习基础的实操演示：**
-
-1.  用unity复现Flappy bird 【如何不写代码却能制作你人生中的第一个游戏】
-
-1.  动手开发一个RPG游戏： [RPG maker mz入门教程](https://datawhaler.feishu.cn/wiki/MqGDwigXhimGALkuGAccOGxrnkf)
-
-1.  用python接入千帆大模型 public-note/用Python接入千帆大模型
+1. 用`unity`复现Flappy bird 【如何不写代码却能制作你人生中的第一个游戏】
+2. 动手开发一个RPG游戏： [`RPG maker mz`入门教程](https://datawhaler.feishu.cn/wiki/MqGDwigXhimGALkuGAccOGxrnkf)
+3. 用`python`接入千帆大模型 `public-note/用Python接入千帆大模型`
 
 ![](img/fe00dbb1c5ac0c9cca27dcd71d3e1513.png)
 
 [用Python接入千帆大模型.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BGRIbkDr3o0cnvx8CbIc4reKnjf)
 
-1.  unity接入千帆：https://github.com/zhangliwei7758/unity-AI-Chat-Toolkit
+4. `unity`接入千帆：https://github.com/zhangliwei7758/unity-AI-Chat-Toolkit
+5. `Unity`+百度文心大模型驱动AI小姐姐数字人
 
-1.  Unity+百度文心大模型驱动AI小姐姐数字人
+## 借鉴和可做对标的作品集
 
-## **借鉴和可做对标的作品集：**
-
-1.  【十款游戏】[书籍：](https://webgamedeveloperscookbook.com/)[《网页游戏开发秘籍》](https://webgamedeveloperscookbook.com/)
-
-1.  FUNPLUSer Game Jam作品展
+1. 【十款游戏】[书籍：](https://webgamedeveloperscookbook.com/)[《网页游戏开发秘籍》](https://webgamedeveloperscookbook.com/)
+2. FUNPLUSer Game Jam作品展
 
 # 完成游戏开发的参考流程
 
-1.  分析需要，组队调研&确定大致分工：入门游戏开发入门，出demo，感知游戏设计与开发的流程
-
-1.  [【寻找游戏大模王】开营仪式](https://www.bilibili.com/video/BV1qw411p7f3)
-
-1.  [大模型游戏应用开发（学习手册）](https://datawhaler.feishu.cn/docx/QVqddVgeKo0F2Rxk1WbcPemmnHb)
-
-1.  核心关注截止时间 & 比赛要求
+1. 分析需要，组队调研&确定大致分工：入门游戏开发入门，出demo，感知游戏设计与开发的流程
+2. [【寻找游戏大模王】开营仪式](https://www.bilibili.com/video/BV1qw411p7f3)
+3. [大模型游戏应用开发（学习手册）](https://datawhaler.feishu.cn/docx/QVqddVgeKo0F2Rxk1WbcPemmnHb)
+4. 核心关注截止时间 & 比赛要求
 
 ![](img/8cbfdbfec6d4cd80745ef235cf2ff986.png)
 
-1.  确定目标(对标游戏)，产出【游戏立项文件】：确定对标游戏
+5. 确定目标(对标游戏)，产出【游戏立项文件】：确定对标游戏
 
 想开发什么样的游戏、能开发什么样的游戏、要开发什么样的游戏；是设计一个船新的游戏，还是复现已有的经典游戏？
 
-1.  拆解目标，拆分实现工作量，产出【规划甘特图】：机制、背景 + 玩法 + 技术栈
+6. 拆解目标，拆分实现工作量，产出【规划甘特图】：机制、背景 + 玩法 + 技术栈
+7. 执行目标，定期会议，产出【阶段性成果】：会议对齐 + 近期分工 + 定期追踪 + 迭代推进
+8. 提交作品，享受成功的喜悦
 
-1.  执行目标，定期会议，产出【阶段性成果】：会议对齐 + 近期分工 + 定期追踪 + 迭代推进
-
-1.  提交作品，享受成功的喜悦
-
-## 最终作品数：**31**
+## 最终作品数：31
 
 > 按照 Datawhale选送作品收录表单 填写顺序排序
 
@@ -106,37 +96,24 @@
 
 ## 游戏开发入门基础认知：【术语、工具、分工】
 
-1.  想要自己做一款游戏，需要学习哪些知识？
-
-1.  如何开发一款游戏：游戏开发流程及所需工具
-
-1.  游戏开发如何入门？零基础想学做游戏从什么地方开始？附学习路线和教程
-
-1.  【全、面向需要制作作品集的受众】如何从0开始准备一个游戏设计项目？
-
-1.  【题材、玩法、终端、单机与否】【游戏行业科普 · 四】有哪些游戏品类，如何划分
-
-1.  【策划、美术、项管、技术】【游戏行业科普 · 二】研发一款游戏具体需要做什么，需要哪些人
-
-1.  [必须收藏|全网最全游戏分类](https://mp.weixin.qq.com/s/lS2bZfg624S6dBBLxn4vag)
-
-1.  【有图有真相】[【知识普及】游戏的分类](https://mp.weixin.qq.com/s/GmYHg3S5RCa66Rv3VRzf2g)
-
-1.  【详细制作的SOP，太复杂了，可以先不看，直接硬钢就好了】一个游戏是如何被设计和开发出来的
+1. 想要自己做一款游戏，需要学习哪些知识？
+2. 如何开发一款游戏：游戏开发流程及所需工具
+3. 游戏开发如何入门？零基础想学做游戏从什么地方开始？附学习路线和教程
+4. 【全、面向需要制作作品集的受众】如何从0开始准备一个游戏设计项目？
+5. 【题材、玩法、终端、单机与否】【游戏行业科普 · 四】有哪些游戏品类，如何划分
+6. 【策划、美术、项管、技术】【游戏行业科普 · 二】研发一款游戏具体需要做什么，需要哪些人
+7. [必须收藏|全网最全游戏分类](https://mp.weixin.qq.com/s/lS2bZfg624S6dBBLxn4vag)
+8. 【有图有真相】[【知识普及】游戏的分类](https://mp.weixin.qq.com/s/GmYHg3S5RCa66Rv3VRzf2g)
+9. 【详细制作的SOP，太复杂了，可以先不看，直接硬钢就好了】一个游戏是如何被设计和开发出来的
 
 ## 📦 游戏开发经验包：【加载大佬经验buff】
 
-1.  【通往AGI之路收录的文章】[目录：AI+游戏](https://waytoagi.feishu.cn/wiki/YcwXwOjc2iGSTpkSIM3c4wP7nLd)
-
-1.  10.1 总结 - 第一次制作独立游戏的5点收获 – 上篇
-
-1.  【发烧期间随笔】第一次游戏开发经历的总结与反思
-
-1.  [如何入门独立游戏开发？](https://mp.weixin.qq.com/s/5_xbVmfMIRwypN3Oj5VRug)
-
-1.  【不再逃避，互相学习，结交伙伴】 GameJam攻略手册--新手入门
-
-1.  AI大模型接入游戏NPC：《挑战十句话说服宿管阿姨开门》
+1. 【通往AGI之路收录的文章】[目录：AI+游戏](https://waytoagi.feishu.cn/wiki/YcwXwOjc2iGSTpkSIM3c4wP7nLd)
+2. 10.1 总结 - 第一次制作独立游戏的5点收获 – 上篇
+3. 【发烧期间随笔】第一次游戏开发经历的总结与反思
+4. [如何入门独立游戏开发？](https://mp.weixin.qq.com/s/5_xbVmfMIRwypN3Oj5VRug)
+5. 【不再逃避，互相学习，结交伙伴】 GameJam攻略手册--新手入门
+6. AI大模型接入游戏NPC：《挑战十句话说服宿管阿姨开门》
 
 +   相关github仓库：
 
@@ -144,11 +121,11 @@ https://github.com/TommyZihao/LLM_Dormitory
 
 https://github.com/zhangliwei7758/unity-AI-Chat-Toolkit
 
-1.  4天4个大学生能做出什么样的游戏？
+7. 4天4个大学生能做出什么样的游戏？
 
 ## 🧱 建立游戏开发体感：【复现游戏教程】
 
-1.  【AI + Unity flappy bird，视频内容34分钟】如何不写代码却能制作你人生中的第一个游戏
+1. 【AI + `Unity` flappy bird，视频内容34分钟】如何不写代码却能制作你人生中的第一个游戏
 
 +   **类型**：视频(时长：34 min 43 s)
 
@@ -156,15 +133,15 @@ https://github.com/zhangliwei7758/unity-AI-Chat-Toolkit
 
 这期视频用到的人工智能工具：
 
-代码：ChatGPT
+代码：`ChatGPT`
 
-绘画：Leonardo.ai
+绘画：`Leonardo.ai`
 
-音效：jsfxr
+音效：`jsfxr`
 
 发布游戏网址：
 
-itch.io ： https://itch.io/games
+`itch.io` ： https://itch.io/games
 
 体验我的游戏：
 
@@ -182,41 +159,38 @@ Free download: https://filmmusic.io/song/3988-local-forecast-slower
 
 License (CC BY 4.0): https://filmmusic.io/standard-license
 
-+   **推荐理由**：使用Unity和AI编程制作简单空格飞行类游戏，根据提供资料可直接复现，且符合比赛规则(使用AI辅助编程，把这个细节录制进去即可)
++   **推荐理由**：使用`Unity`和AI编程制作简单空格飞行类游戏，根据提供资料可直接复现，且符合比赛规则(使用AI辅助编程，把这个细节录制进去即可)
 
-+   **内容标签**：Unity，AI编程，制作经验分享
++   **内容标签**：`Unity`，AI编程，制作经验分享
 
-1.  [【十款](https://webgamedeveloperscookbook.com/)[游戏，🛰️读书上有，](https://webgamedeveloperscookbook.com/)还有游戏源代码】书籍：《网页游戏开发秘籍》
+2. [【十款游戏，🛰️读书上有，还有游戏源代码】书籍：《网页游戏开发秘籍》](https://webgamedeveloperscookbook.com/)
 
-1.  【react、网页MOBA、Entity Component System 思想】爆肝万字，一文让你入门游戏开发的所有概念！「做一个游戏，其实很简单」
+3. 【react、网页MOBA、Entity Component System 思想】爆肝万字，一文让你入门游戏开发的所有概念！「做一个游戏，其实很简单」
 
-1.  【网易雷火比赛】手把手教你做游戏 | 从0-1打造MiniGame（程序篇）
+4. 【网易雷火比赛】手把手教你做游戏 | 从0-1打造MiniGame（程序篇）
 
-1.  【视频内容70分钟左右】[从零开始制作自走棋](https://b23.tv/nNTHCT4)
+5. 【视频内容70分钟左右】[从零开始制作自走棋](https://b23.tv/nNTHCT4)
 
 ## 🧠 游戏策划思路学习：【拆解经典作品：策略设计、技术】
 
-1.  【十几份game jam游戏介绍，一个公司的校招生内部活动】FUNPLUSer Game Jam作品展
-
-1.  【简单拆解游戏，分析受众市场】STEAM独立游戏该怎么做？我们调研了100款游戏
-
-1.  【详细拆解游戏】从0开始做个Brotato（1）：拆解游戏篇
-
-1.  【方法论】[如何动手做游戏拆解——方法论](https://zhuanlan.zhihu.com/p/618671501)
+1. 【十几份game jam游戏介绍，一个公司的校招生内部活动】FUNPLUSer Game Jam作品展
+2. 【简单拆解游戏，分析受众市场】STEAM独立游戏该怎么做？我们调研了100款游戏
+3. 【详细拆解游戏】从0开始做个`Brotato`（1）：拆解游戏篇
+4. 【方法论】[如何动手做游戏拆解——方法论](https://zhuanlan.zhihu.com/p/618671501)
 
 ## 🔧 游戏开发工具学习文档：【大型专项教学，当字典用，但可能直接问AI更快】
 
-1.  【特邀大佬写作，还有直播】[Unity入门使用说明](https://gu32jk6rq1.feishu.cn/docx/IrPed4W3uoycl3xvivWcwOaBnNd)
+1. [`Unity`入门使用说明](https://gu32jk6rq1.feishu.cn/docx/IrPed4W3uoycl3xvivWcwOaBnNd)
 
-**直播**：【寻找游戏大模王】Unity入门讲解
+**直播**：【寻找游戏大模王】`Unity`入门讲解
 
-1.  【很多需要付费】[Unity官方进阶路径](https://ac.csdn.net/unity/#content-item-1)
+2. [`Unity`官方进阶路径](https://ac.csdn.net/unity/#content-item-1)
 
-1.  【RPG】第1课：地图绘制_哔哩哔哩_bilibili
+3. 【RPG】第1课：地图绘制_哔哩哔哩_bilibili
 
-1.  【做独立游戏难点清单】5.做独立游戏正确的立项方法_哔哩哔哩_bilibili
+4. 【做独立游戏难点清单】5.做独立游戏正确的立项方法_哔哩哔哩_bilibili
 
-1.  [我的世界开发者官网](https://mc.163.com/dev/list.html)
+5. [我的世界开发者官网](https://mc.163.com/dev/list.html)
 
 ### B站互动视频
 
@@ -224,13 +198,13 @@ License (CC BY 4.0): https://filmmusic.io/standard-license
 
 ## ⚙ 千帆工具平台使用
 
-用python接入千帆大模型 public-note/用Python接入千帆大模型
+用`python`接入千帆大模型 `public-note/用Python接入千帆大模型`
 
 ### 千帆社区课程
 
-千帆文心4.0 API文档https://cloud.baidu.com/doc/WENXINWORKSHOP/s/clntwmv7t
+千帆文心4.0 `API`文档 https://cloud.baidu.com/doc/WENXINWORKSHOP/s/clntwmv7t
 
-新手入门可以来千帆社区看实践案例https://cloud.baidu.com/qianfandev
+新手入门可以来千帆社区看实践案例 https://cloud.baidu.com/qianfandev
 
 ### 官方群教程
 
@@ -242,40 +216,32 @@ https://cloud.baidu.com/qianfandev/topic/267170
 
 https://cloud.baidu.com/qianfandev/topic/267178
 
-【教程】SFT调优快速手册
+【教程】`SFT`调优快速手册
 
 https://cloud.baidu.com/qianfandev/topic/267277
 
-【Prompt系列】大白话的大模型Prompt调教指南
+【`Prompt`系列】大白话的大模型`Prompt`调教指南
 
-https://cloud.baidu.com/qianfandev/topic/267171
 
-## 🚩 游戏开发项目管理：【给出一些模板】
+
+`https://cloud.baidu.com/qianfandev/topic/267171`
+
+# 🚩 游戏开发项目管理：【给出一些模板】
 
 [👾《游戏大模王》-【立项】会议文档](https://zaiwen-chattests.feishu.cn/wiki/DgjqwWvWvioS5dkMA8zcMlyFnJD)
 
-1.  会议文档模板和会议方式
-
-1.  每次会议前提前预备好议程，要求大家做一定的思考
-
-1.  每次会议中要有主持人做时间把控和引导
+1. 会议文档模板和会议方式
+1. 每次会议前提前预备好议程，要求大家做一定的思考
+1. 每次会议中要有主持人做时间把控和引导
 
 ## 其他资料：闲来无事找点激情
 
-1.  从零开始独立游戏开发学习笔记（一） --Getting Started
-
-1.  如何从零开始制作一个游戏? - 知乎
-
-1.  书籍：《妙趣横生的游戏制作之旅》
-
-1.  【线下简易游戏赋能呢？】[好玩的自制游戏第三弹](https://mp.weixin.qq.com/s/L1hE2IQY3c_G9B-eFJlCXg)
-
-1.  【理解游戏本质与基本原理，前提：有好的创意】书籍：《体验引擎：游戏设计全景探秘》
-
-1.  【🛰️读书无】书籍：《全景探秘：游戏设计艺术》
-
-1.  【🛰️读书无】书籍：《游戏设计梦工厂》
-
-1.  【🛰️读书无】书籍：《游戏设计、原型与开发》
-
-1.  【🛰️读书无】书籍：《游戏情感设计》
+1. 从零开始独立游戏开发学习笔记（一） --Getting Started
+1. 如何从零开始制作一个游戏? - 知乎
+1. 书籍：《妙趣横生的游戏制作之旅》
+1. 【线下简易游戏赋能呢？】[好玩的自制游戏第三弹](https://mp.weixin.qq.com/s/L1hE2IQY3c_G9B-eFJlCXg)
+1. 【理解游戏本质与基本原理，前提：有好的创意】书籍：《体验引擎：游戏设计全景探秘》
+1. 【🛰️读书无】书籍：《全景探秘：游戏设计艺术》
+1. 【🛰️读书无】书籍：《游戏设计梦工厂》
+1. 【🛰️读书无】书籍：《游戏设计、原型与开发》
+1. 【🛰️读书无】书籍：《游戏情感设计》

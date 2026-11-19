@@ -1,3 +1,4 @@
+
 # AI每日资讯-202411
 
 > 来源：[https://aigcreative.feishu.cn/docx/GMSHd0zdioaTNnxisHLc6oXknld](https://aigcreative.feishu.cn/docx/GMSHd0zdioaTNnxisHLc6oXknld)
@@ -114,13 +115,13 @@ OpenAI宣布，适用于Windows系统的ChatGPT桌面应用现已向所有用户
 
 ![](img/4eb6661ffaadb909ebb325cb9d19400f.png)
 
-## 【20241111】动态 | Midjourney+Runway高级相机控制：对于静态拍摄来说非常稳定。.
+## 【20241111】动态 | Midjourney+Runway高级相机控制：对于静态拍摄来说非常稳定。
 
-Midjourney prompt: drone aerial shot, futuristic 5-star treehouse hotel exterior, nestled among the trees, eco-architecture luxury, sustainable, early morning shadows, bold, high-contrast, dramatic shadows, nature's symphony --ar 5:3 --p --s 200 --q 2
+`Midjourney prompt: drone aerial shot, futuristic 5-star treehouse hotel exterior, nestled among the trees, eco-architecture luxury, sustainable, early morning shadows, bold, high-contrast, dramatic shadows, nature's symphony --ar 5:3 --p --s 200 --q 2`
 
-Runway prompt结构: The camera [motion] [direction], revealing [details]
+`Runway prompt结构: The camera [motion] [direction], revealing [details]`
 
-Runway prompt例子: The camera pans left revealing an immaculate Yucatan jungle canopy, white sand beaches, crystal teal water, epic scenery
+`Runway prompt例子: The camera pans left revealing an immaculate Yucatan jungle canopy, white sand beaches, crystal teal water, epic scenery`
 
 ![](img/c83021787b4ad71e67dbfdd00441f74a.png)
 
@@ -138,7 +139,6 @@ Google正式发布的Vids工具，可通过简单提示或Google Drive中文档�
 
 设计师X@Everett World在X上分享了其使用Gen-3 Alpha Turbo的高级相机控制功能来制作室内设计视频的经验，表示这一工具极大地提升了其工作流程的效率。使用的资源包括Udio V1.5的音乐、Capcut的编辑、Midjourney V6.1的图片以及RunwayML的Gen-3 Alpha Turbo视频制作。整体效果很不错~~
 
-
 [a53a3f19eef19dd57b65cf74a28219b8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Za1GbSq8qoJBEvxvqFZcK5BUnMg)
 
 ## 【20241109】动态 | 利用Gen-3 Alpha Turbo提升室内设计视频制作效率
@@ -149,7 +149,7 @@ Google正式发布的Vids工具，可通过简单提示或Google Drive中文档�
 
 [1418d5c93fde8be1a17581574b766934.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CiNtb92StovfrPxko6icwgx2nPf)
 
-## 【20241109】动态 |Suno音乐生成平台V4版本即将发布，音乐创作体验全面升级
+## 【20241109】动态 | Suno音乐生成平台V4版本即将发布，音乐创作体验全面升级
 
 音乐生成平台Suno即将推出的V4版本备受期待，这次更新将为音乐创作带来重大突破。V4版本的主要亮点包括提升音质，支持对已生成音乐进行“升级”处理，实现更高质量的音效和更清晰的人声；多元化风格，特别是在Hip-Hop/Rap等特定风格上更加自然；以及强化用户体验，通过频繁更新和优化生成效果，使用户能够快速创作出高质量的音乐作品。Suno V4将为音乐创作者提供更多的创作空间，无论是日常使用还是专业应用，都将提升平台的创作能力和用户满意度。
 
@@ -169,11 +169,13 @@ Google正式发布的Vids工具，可通过简单提示或Google Drive中文档�
 
 ## 【20241107】动态 | 数字艺术家Jon Uriarte与OpenAI Sora合作，探索创意新境界
 
-伦敦的数字艺术家Jon Uriarte，拥有超过15年的电影和电视行业经验，与OpenAI的Sora合作，创造出令人惊叹的视觉作品。Sora在创作过程中提供了意想不到的惊喜，帮助Uriarte实现了他对于“塑料椅子上飞翔的人”这一主题的想象。Sora的强大之处在于它能够在艺术家对具体外观有明确要求的同时，带来超出预期的创意。Uriarte表示，Sora的使用体验类似于写作或白日梦，能够流畅地发展创意，创造出既有机又精确的图像。
+
+
+伦敦的数字艺术家`Jon Uriarte`，拥有超过15年的电影和电视行业经验，与`OpenAI`的`Sora`合作，创造出令人惊叹的视觉作品。`Sora`在创作过程中提供了意想不到的惊喜，帮助`Uriarte`实现了他对于“塑料椅子上飞翔的人”这一主题的想象。`Sora`的强大之处在于它能够在艺术家对具体外观有明确要求的同时，带来超出预期的创意。`Uriarte`表示，`Sora`的使用体验类似于写作或白日梦，能够流畅地发展创意，创造出既有机又精确的图像。
 
 ![](img/c0e0975cdff091a7f1a737ebb63da53f.png)
 
-[6ca1e46f6ab73c50647281f4b06ba756(3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LiCwbbHP9o4KWixSGZGcnfhBndc)
+[`6ca1e46f6ab73c50647281f4b06ba756(3).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LiCwbbHP9o4KWixSGZGcnfhBndc)
 
 ## 【20241107】动态 | 腾讯发布混元-3D：首个支持文本与图像生成的3D开源模型
 
@@ -193,22 +195,22 @@ Google正式发布的Vids工具，可通过简单提示或Google Drive中文档�
 
 ## 【20241104】市场 | ChatGPT等AI工具的查询量远不及搜索引擎，AI大规模用户应用仍面临挑战。
 
-即使是人气最高的ChatGPT，每月查询量也不到Google的6%，用户黏性较低。过去两年中，Perplexity通过其套壳应用成功实现5000万美元ARR，年增速高达1600%，但整体查询量仍远低于传统搜索引擎。相比之下，Google等搜索巨头在覆盖日常需求和用户习惯上仍然具有明显优势。尽管ChatGPT积极发展“搜索”功能，Perplexity优化其API，但AI工具的应用规模化落地仍需克服移动时代用户习惯的挑战。
+即使是人气最高的`ChatGPT`，每月查询量也不到`Google`的6%，用户黏性较低。过去两年中，`Perplexity`通过其套壳应用成功实现5000万美元`ARR`，年增速高达1600%，但整体查询量仍远低于传统搜索引擎。相比之下，`Google`等搜索巨头在覆盖日常需求和用户习惯上仍然具有明显优势。尽管`ChatGPT`积极发展“搜索”功能，`Perplexity`优化其`API`，但AI工具的应用规模化落地仍需克服移动时代用户习惯的挑战。
 
 ![](img/06da3fc4585e2cb7606bdf8d734d16a5.png)
 
 ## 【20241103】洞察 | ChatGPT以59.4%市场份额领先美国AI聊天软件市场
 
-最新数据显示，ChatGPT凭借59.4%的市场份额，在美国AI聊天软件市场占据主导地位，稳居第一。紧随其后的是微软的Copilot（14.4%）和谷歌Gemini（13.6%），后者作为谷歌新一代通用AI助手，展示了强劲的增长势头。另一些专注于不同垂直领域的AI产品也逐渐崭露头角，如精确搜索导向的Perplexity和以隐私为重点的Brave Leo AI，分别占据5.5%和1.5%的份额。在季度用户增长方面，Phind增长率最高（20%），其次是以商务为导向的Claude AI（16%）。整体来看，美国AI聊天市场格局中，通用型助手与垂直领域应用逐渐分化，各显优势。
+最新数据显示，`ChatGPT`凭借59.4%的市场份额，在美国AI聊天软件市场占据主导地位，稳居第一。紧随其后的是微软的`Copilot`（14.4%）和谷歌`Gemini`（13.6%），后者作为谷歌新一代通用AI助手，展示了强劲的增长势头。另一些专注于不同垂直领域的AI产品也逐渐崭露头角，如精确搜索导向的`Perplexity`和以隐私为重点的`Brave Leo AI`，分别占据5.5%和1.5%的份额。在季度用户增长方面，`Phind`增长率最高（20%），其次是以商务为导向的`Claude AI`（16%）。整体来看，美国AI聊天市场格局中，通用型助手与垂直领域应用逐渐分化，各显优势。
 
 ![](img/96c14b696a83de64bcc4e965fd446b80.png)
 
 ## 【20241101】产品 | Runway发布Gen-3 Alpha Turbo版本“高级相机控制”功能，提升视频生成创意掌控
 
-生成式AI平台Runway发布了Gen-3 Alpha Turbo的“高级相机控制”功能，允许用户选择拍摄的方向和移动强度，增强视频场景表现的细节控制。此功能使用户能够在生成的视频中进行水平移动、环绕主体或探索场景等复杂的相机操作，并可结合不同的速度和相机运动实现流畅循环效果。这一升级赋予创作者更多自定义操作空间，使生成式AI视频更具专业表现力和艺术表达。
+生成式AI平台`Runway`发布了`Gen-3 Alpha Turbo`的“高级相机控制”功能，允许用户选择拍摄的方向和移动强度，增强视频场景表现的细节控制。此功能使用户能够在生成的视频中进行水平移动、环绕主体或探索场景等复杂的相机操作，并可结合不同的速度和相机运动实现流畅循环效果。这一升级赋予创作者更多自定义操作空间，使生成式AI视频更具专业表现力和艺术表达。
 
 ![](img/10639e4f37a54d430e6c903beedee07f.png)
 
-[04a09a504115d185bd0291a0d544fe6d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EJ62b4aIporkWOxZ3jQcgZbynRc)
+[`04a09a504115d185bd0291a0d544fe6d.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EJ62b4aIporkWOxZ3jQcgZbynRc)
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

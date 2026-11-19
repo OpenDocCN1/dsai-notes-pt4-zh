@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230724）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/SBLwdcCgcoUPZ4xLxfycE9JVnrc](https://jlqyxzzvbk.feishu.cn/docx/SBLwdcCgcoUPZ4xLxfycE9JVnrc)
@@ -8,21 +9,21 @@
 
 ![](img/e1199769c1926c09a2dd7f9d5d1206fd.png)
 
-**欢迎进群交流**
+欢迎进群交流
 
-# AI资讯精选
+## AI资讯精选
 
-## 马斯克宣布推特即将更名为“X”
+### 马斯克宣布推特即将更名为“X”
 
 ![](img/143462cb76a9f62cc4a46d21b3196bca.png)
 
-马斯克在推特上发文称，推特即将更名为X，网址也迁移到X.com。对于更名的原因，马斯克表示仅仅因为他个人喜欢字母“X”。
+马斯克在推特上发文称，推特即将更名为X，网址也迁移到`X.com`。对于更名的原因，马斯克表示仅仅因为他个人喜欢字母“X”。
 
 随后，推特新任CEO Linda Yaccarino也发文称：X是无限交互的未来形态——以音频、视频、消息、支付/银行为中心，创建一个充满创意、商品、服务和机会的全球市场。在人工智能支持下，X将会连接所有人。在这方面，我们才刚刚处于想象的起点。
 
-更多信息请访问：https://www.gamereactor.cn/twitter-rebranded-will-now-be-called-x-557233/
+更多信息请访问：`https://www.gamereactor.cn/twitter-rebranded-will-now-be-called-x-557233/`
 
-## **美七大****AI****巨头**在白宫“画押”：承诺为AI生成内容添加水印
+### 美七大AI巨头在白宫“画押”：承诺为AI生成内容添加水印
 
 ![](img/78cb4fa01d3fc8cdcd194f7fbf5dd00c.png)
 
@@ -32,71 +33,71 @@ AI生成内容带来的混乱，越发成为公众需要面对的现实问题。
 
 这“七巨头”分别是谷歌、亚马逊、脸书母公司Meta、微软、AI企业Anthropic、Inflection和ChatGPT母公司OpenAI。上述企业高层当天在白宫与总统拜登会面，《华尔街日报》称，在此之前，其中大多数公司已发表声明宣布将与白宫合作，并强调系自愿设置“护栏”。
 
-更多信息请访问：https://news.sina.com.cn/w/2023-07-23/doc-imzcseuv9989267.shtml?cre=tianyi&mod=pchp&loc=27&r=0&rfunc=13&tj=cxvertical_pc_hp&tr=12
+更多信息请访问：`https://news.sina.com.cn/w/2023-07-23/doc-imzcseuv9989267.shtml?cre=tianyi&mod=pchp&loc=27&r=0&rfunc=13&tj=cxvertical_pc_hp&tr=12`
 
-## 美国推出会呼吸、会出汗的机器人！用于研究极端环境下人体反应
+### 美国推出会呼吸、会出汗的机器人！用于研究极端环境下人体反应
 
 ![](img/5787524a7f2a402b64c46101f456e402.png)
 
 在美国亚利桑那州立大学的一栋大楼内，工作人员正在对机器人“安迪”进行组装，随后，“安迪”被放置在户外，用来测试人体对高温的承受能力。据介绍，“安迪”的身体被分为35个独立的感应区，遍布温度和热量等感应器，同时，一套内部冷却系统和遍布在碳纤维皮肤上的毛孔能让它像真人一样产生热量、呼吸、出汗，甚至颤抖。研究人员还可以通过编程，让“安迪”模仿不同年龄段人群的身体条件，比如老年人、运动员，以及抵抗力较差的人等。不同的温度、辐射和风力条件下，“安迪”身体的表现不同，相关数据都会传输到电脑上，形成一幅完整的人体热力图。
 
-更多信息请访问：http://www.sznews.com/news/content/mb/2023-07/24/content_30355753.htm
+更多信息请访问：`http://www.sznews.com/news/content/mb/2023-07/24/content_30355753.htm`
 
-# AI软件精选
+## AI软件精选
 
-## **Ebsynth（****AI****视频）**
+### Ebsynth（AI视频）
 
-**EbSynth**是一种基于人工智能的[视频](https://nav.6aiq.com/favorites/video_ai)编辑工具，旨在通过在单个帧上[绘画](https://nav.6aiq.com/favorites/art-generator)来转换素材。主要特点和优势包括：
+EbSynth是一种基于人工智能的视频编辑工具，旨在通过在单个帧上绘画来转换素材。主要特点和优势包括：
 
-**高效编辑**[：快](https://nav.6aiq.com/favorites/video_ai)速将绘画作品传输到任意长度的视频片段
+高效编辑：快速将绘画作品传输到任意长度的视频片段
 
-**自动传播**：该工具会自动在整个视频上应用绘制的帧
+自动传播：该工具会自动在整个视频上应用绘制的帧
 
-**免费且易于访问**：可免费下载，并提供即将发布的更新
+免费且易于访问：可免费下载，并提供即将发布的更新
 
-EbSynth 的**用例**非常适合不同的人：
+EbSynth 的用例非常适合不同的人：
 
-**视频编辑**寻求一种有效的方式将艺术效果应用于镜头
+视频编辑寻求一种有效的方式将艺术效果应用于镜头
 
-**希望通过独**特的视觉效果增强视频的内容创作者
+希望通过独特的视觉效果增强视频的内容创作者
 
-**旨在尝**试将视频作为其艺术作品媒介的艺术家
+旨在尝试将视频作为其艺术作品媒介的艺术家
 
 总的来说，EbSynth 提供了一种快速、强大且易于使用的解决方案，用于转换带有彩绘帧的视频素材。
 
 ![](img/d3baf847fffdc3c0c199471fc99486c3.png)
 
-链接：https://ebsynth.com/
+链接：`https://ebsynth.com/`
 
-## Genmo AI**（AI视频）**
+### Genmo AI（AI视频）
 
-**Genmo**是一种基于人工智能的[视频](https://nav.6aiq.com/favorites/video_ai)生成工具，可将文本转换为引人入胜的视频。主要特点和优势包括：
+Genmo是一种基于人工智能的视频生成工具，可将文本转换为引人入胜的视频。主要特点和优势包括：
 
-**基于文本的视频创建**：使用自然语言处理、[图像](https://nav.6aiq.com/favorites/image_ai)识别和机器学习算法从文本生成视频
+基于文本的视频创建：使用自然语言处理、图像识别和机器学习算法从文本生成视频
 
-**自定义**：为背景颜色、字符、音乐等提供各种选项
+自定义：为背景颜色、字符、音乐等提供各种选项
 
-**多种格式**：在 YouTube、Facebook、Twitter 和其他社交媒体平台上发布视频
+多种格式：在 YouTube、Facebook、Twitter 和其他社交媒体平台上发布视频
 
-**多功能应用**：营销活动、教育材料、讲解视频等的理想选择
+多功能应用：营销活动、教育材料、讲解视频等的理想选择
 
-Genmo 的**用例**可满足各种需求：
+Genmo 的用例可满足各种需求：
 
-**寻求创建具**有成本效益且引人入胜的视频内容的企业和组织
+寻求创建具有成本效益且引人入胜的视频内容的企业和组织
 
-**想要开发具有视觉吸**引力的教育材料的教育工作者和培训师
+想要开发具有视觉吸引力的教育材料的教育工作者和培训师
 
-**寻找一种快**速有效的方式从文本制作视频的内容创作者
+寻找一种快速有效的方式从文本制作视频的内容创作者
 
 总体而言，Genmo 为希望以快速且经济高效的方式从文本创建引人入胜的视频的个人和组织提供了一个强大的解决方案。
 
 ![](img/25ead27024367f20f85a287566674fbb.png)
 
-链接：https://alpha.genmo.ai/
+链接：`https://alpha.genmo.ai/`
 
-# Lumiere 3D**（****AI****视频）**
+### Lumiere 3D（AI视频）
 
-Lumiere[3D](https://nav.6aiq.com/favorites/3d-generator) 是一个最先进的 AI[ 平台，](https://nav.6aiq.com/favorites/e-commerce)旨在帮助企业在短短几分钟[内为](https://nav.6aiq.com/favorites/video_ai)**电子商务和**营销创建引人入胜的电影视频。
+Lumiere 3D 是一个最先进的 AI 平台，旨在帮助企业在短短几分钟内为电子商务和营销创建引人入胜的电影视频。
 
 主要特征：
 
@@ -108,7 +109,7 @@ AI Music：轻松生成专业品质、免版税的音乐
 
 3D 场景：通过令人叹为观止的电影视频提升产品展示效果
 
-**用例：**
+用例：
 
 为 YouTube Shorts、Instagram Reels 和 TikTok 等平台制作独特的电影鞋视频
 
@@ -120,43 +121,35 @@ AI Music：轻松生成专业品质、免版税的音乐
 
 通过视觉效果惊人的视频促进您的鞋子销售
 
-[体验 L](https://nav.6aiq.com/favorites/e-commerce)umiere3D 尖端平台的优势，为您的电子商务和营销需求创建令人惊叹的电影视频，提高客户参与度并推动销售。
+体验 Lumiere3D 尖端平台的优势，为您的电子商务和营销需求创建令人惊叹的电影视频，提高客户参与度并推动销售。
 
 ![](img/077879ff704acda84ca03352cda87237.png)
 
-链接：https://www.lumiere3d.ai/
+链接：`https://www.lumiere3d.ai/`
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+更多AI工具请访问：`http://ai.kcodez.com/`
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
-https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
+`https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279`
 
 GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸张的授课风格，讲述GPT的各种用法，以及如何讲自身结合
 
 ![](img/9c9d54d73d23e5ec90488f793fdfae9b.png)
 
-## 付费课程（ai绘画）
+### 付费课程（ai绘画）
 
 AI绘画基础课Midjourney
 
-优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         https://v.douyin.com/ixcenrM/
+优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         `https://v.douyin.com/ixcenrM/`
 
 ![](img/3ca83222c1118cfbba66dadd2e378a3a.png)
 
-#
+## 4.会员精选
 
-![](img/f558547cdf0221be87b3fed47b971e6c.png)
-
-![](img/59c5f211588c059380bc273b2de0cdfa.png)
-
-**欢迎进群交流**
-
-# 4.会员精选
-
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：`https://nf.video/kkF8Y` 下单时输入：`kanAI` 九五折优惠，或者直接二维码访问
 
 ![](img/762dbbf90ee84f671b75a12396513646.png)
 
@@ -166,7 +159,7 @@ AI绘画基础课Midjourney
 
 ![](img/4c46e73d818bc88bf7ef452e5b84cb39.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+国内镜像 GPT，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/1b764c2541e3e2df2e8f02a948b3c48a.png)
 

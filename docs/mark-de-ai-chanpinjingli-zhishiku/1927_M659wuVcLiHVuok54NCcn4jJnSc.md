@@ -1,28 +1,22 @@
+
 # AI行业资讯12.23
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/PhghdpduOoTUyexbmnPcAPR7nTf](https://qqs7y1hozd1.feishu.cn/docx/PhghdpduOoTUyexbmnPcAPR7nTf)
 
-# **本周亮点：**
+## 本周亮点
 
-1.  OpenAI推出性能飞跃的o3系列模型
-
-1.  月之暗面发布Kimi视觉思考模型k1
-
-1.  **OpenAI开放o1模型API**
-
-1.  OpenAI推出ChatGPT电话功能，拓展AI应用边界
-
-1.  苹果就国行 iPhone AI 与腾讯、字节接洽
-
-1.  **谷歌发布Gemini 2.0 Flas**h Thinking模型，展示深度思维链
-
-1.  **GitHub Copilot Fr**ee发布，全球开发者免费享受AI辅助编程
-
-1.  **豆包发布视觉理解大模型**
+1. OpenAI推出性能飞跃的o3系列模型
+2. 月之暗面发布Kimi视觉思考模型k1
+3. OpenAI开放o1模型API
+4. OpenAI推出ChatGPT电话功能，拓展AI应用边界
+5. 苹果就国行 iPhone AI 与腾讯、字节接洽
+6. 谷歌发布Gemini 2.0 Flash Thinking模型，展示深度思维链
+7. GitHub Copilot Free发布，全球开发者免费享受AI辅助编程
+8. 豆包发布视觉理解大模型
 
 ---
 
-# OpenAI推出性能飞跃的o3系列模型
+## OpenAI推出性能飞跃的o3系列模型
 
 本周，在最新发布会上，OpenAI宣布了o3系列模型的问世。o3系列包括两款模型：性能卓越的OpenAI o3和性价比突出的OpenAI o3 mini。这两款模型在多个关键领域实现了显著的性能提升，包括准确率和处理速度。
 
@@ -34,7 +28,7 @@ o3系列目前仅对安全测试申请者开放，o3 mini预计将于1月向所�
 
 ![](img/fe260cc8ca98c4fe6642009db1918eaa.png)
 
-# 月之暗面发布Kimi视觉思考模型k1
+## 月之暗面发布Kimi视觉思考模型k1
 
 月之暗面发布了其最新的视觉思考模型k1。k1模型基于强化学习技术构建，支持端到端图像理解和思维链技术，并将能力扩展到数学之外的更多基础科学领域。
 
@@ -46,7 +40,7 @@ k1还展现出了一些涌现能力，包括古代文献分析、梗图理解、
 
 ![](img/08830dece5f6e59ce1033b2f4a0ad0df.png)
 
-# OpenAI开放o1模型API
+## OpenAI开放o1模型API
 
 本周，OpenAI宣布了o1模型API的正式发布，并对其进行了重大升级。包括支持WebRTC。与之前的预览版本相比，o1模型的思考成本降低了60%，并且增加了高级视觉功能。同时，GPT-4o的音频成本也降低了60%，而mini版本价格更是降低了10倍。
 
@@ -60,7 +54,7 @@ OpenAI还展示了基于高级视觉功能的应用案例，如检测错误表�
 
 ![](img/fbea05b5cbba194d1b3960eb0fb25e1f.png)
 
-# OpenAI推出ChatGPT电话功能，拓展AI应用边界
+## OpenAI推出ChatGPT电话功能，拓展AI应用边界
 
 本周，OpenAI宣布，ChatGPT新增电话功能，用户现在可以通过拨打专属电话号码与ChatGPT进行交流。这一新功能的推出，极大地降低了ChatGPT的使用门槛，尤其是对于那些不熟悉互联网的老年人来说，提供了极大的便利。
 
@@ -72,7 +66,7 @@ OpenAI为用户提供了每月15分钟的免费通话时长，让用户在不产
 
 ![](img/357a99f867d1adb02adcf7e5fcd33832.png)
 
-# 苹果就国行 iPhone AI 与腾讯、字节接洽
+## 苹果就国行 iPhone AI 与腾讯、字节接洽
 
 据路透社报道，苹果公司正在与中国科技公司腾讯和字节跳动就国行iPhone整合AI模型进行谈判。尽管苹果已在海外市场推出Apple Intelligence，但中国市场的推出时间仍需等待监管部门的审批。
 
@@ -84,7 +78,7 @@ OpenAI为用户提供了每月15分钟的免费通话时长，让用户在不产
 
 ![](img/1a3486bff7dd788212ac5afdda38b5a8.png)
 
-# 谷歌发布Gemini 2.0 Flash Thinking模型，展示深度思维链
+## 谷歌发布Gemini 2.0 Flash Thinking模型，展示深度思维链
 
 谷歌DeepMind首席科学家近日宣布推出全新测试模型——Gemini 2.0 Flash Thinking。这款新模型基于2.0 Flash版本，采用了类似o1模型的慢思维思考方式，能够深度可视化展示整个思维链过程，尤其在执行数学、编程等复杂问题方面，能持续输出全部推理过程，而非直接给出答案。
 
@@ -96,7 +90,7 @@ Gemini 2.0 Flash Thinking的推出标志着谷歌在AI领域的重大进展。�
 
 ![](img/d3e970778188ae52d8d64e03fe49dfb2.png)
 
-# GitHub Copilot Free发布，全球开发者免费享受AI辅助编程
+## GitHub Copilot Free发布，全球开发者免费享受AI辅助编程
 
 GitHub于12月19日宣布推出GitHub Copilot Free免费订阅服务，允许开发者在Visual Studio Code代码编辑器中免费使用GitHub Copilot AI服务。这一举措意味着全球1.5亿GitHub平台开发者现在可以在VS Code中体验AI辅助编程的强大功能。
 
@@ -106,7 +100,7 @@ GitHub Copilot Free的发布，不仅为开发者提供了便利，也进一步�
 
 ![](img/edef542d64bafe57f62b3f1c9be3ff6c.png)
 
-# 豆包发布视觉理解大模型
+## 豆包发布视觉理解大模型
 
 豆包近日发布了其视觉理解大模型，这一重磅更新进一步巩固了其在全球AI应用领域的地位。
 

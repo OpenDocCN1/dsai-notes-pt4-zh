@@ -1,8 +1,9 @@
+
 # GPT and Attention Mechanisms
 
-> 来源：[https://learning.feishu.cn/docx/MdT9dOFBXoNg02xpQ4EcVf3wnGX](https://learning.feishu.cn/docx/MdT9dOFBXoNg02xpQ4EcVf3wnGX)
+> 来源：`https://learning.feishu.cn/docx/MdT9dOFBXoNg02xpQ4EcVf3wnGX`
 
-https://www.youtube.com/watch?v=kCc8FmEb1nY
+`https://www.youtube.com/watch?v=kCc8FmEb1nY`
 
 Let's build GPT: from scratch, in code, spelled out
 
@@ -14,21 +15,16 @@ Jan 18, 2023
 
 从头搭建 1 个 transformer，需要 5 个步骤
 
-+   词向量层
-
-+   位置编码
-
-+   创建 Masks
-
-+   多头注意层（The Multi-Head Attention layer）
-
-+   Feed Forward层
++ 词向量层
++ 位置编码
++ 创建 Masks
++ 多头注意层（The Multi-Head Attention layer）
++ Feed Forward层
 
 模型理解一个句子有两个要素：
 
-1.  单词的含义 - 词向量层
-
-1.  单词在句中所处的位置 - 位置编码
+1. 单词的含义 - 词向量层
+1. 单词在句中所处的位置 - 位置编码
 
 ```
 # word embedding
@@ -69,75 +65,64 @@ positional embedding 的公式
 
 ![](img/716ed35de1390f0e2cf75ae5d6181689.png)
 
-Pos代表了句子的顺序，i代表了嵌入向量所处的维度位置。
+`Pos` 代表了句子的顺序，`i` 代表了嵌入向量所处的维度位置。
 
 ![](img/1a8e23823d6a891f6d8667820fa08125.png)
 
-# Writing notes
+## Writing notes
 
-1.  Introduction to Attention Mechanisms
+### Introduction to Attention Mechanisms
 
-+   Motivation and importance of attention
++ Motivation and importance of attention
++ Attention as a weighted sum
 
-+   Attention as a weighted sum
+### GPT Model Architecture
 
-1.  GPT Model Architecture
++ Transformer-based architecture
++ Encoder-decoder structure
++ Positional encoding
 
-+   Transformer-based architecture
+### Attention Mechanisms in GPT
 
-+   Encoder-decoder structure
++ Self-attention
++ Cross-attention
++ Scaled dot-product attention
 
-+   Positional encoding
+### Mathematical Formulation of Attention
 
-1.  Attention Mechanisms in GPT
++ `Query`, `key`, and `value` matrices
++ `Softmax` and normalization (`Softmax`-weighted sum of values)
++ Multi-head attention
 
-+   Self-attention
+### Conclusion
 
-+   Cross-attention
++ Summarize the key architectural and mathematical concepts
++ Emphasize the importance of attention in GPT's performance
 
-+   Scaled dot-product attention
-
-1.  Mathematical Formulation of Attention
-
-+   Query, key, and value matrices
-
-+   Softmax and normalization (Softmax-weighted sum of values)
-
-+   Multi-head attention
-
-1.  Conclusion
-
-+   Summarize the key architectural and mathematical concepts
-
-+   Emphasize the importance of attention in GPT's performance
-
-# backlogs
+## backlogs
 
 | prompts |
+
 | --- |
+
 | I&#x27;m writing a summary article about the key aspects of GPT and attention mechanisms, focusing on the model architecture and mathematical aspects, ignoring their background, importance, integration, and applications. please give me 3 different outline scripts to choose. |
+
 | I&#x27;m writing a summary article about the key aspects of GPT and attention mechanisms, focusing on the model architecture and mathematical aspects. please generate 3 versions of Mathematical Formulation of Attention&quot; for me to choose from. |
 
-1.  GPT-specific Attention Innovations
+### GPT-specific Attention Innovations
 
-+   Causal masking
++ Causal masking
++ Sparse attention
++ Efficient memory management
 
-+   Sparse attention
+### Benefits of Attention in GPT
 
-+   Efficient memory management
++ Improved context modeling
++ Enhanced long-range dependencies
++ Increased interpretability
 
-1.  Benefits of Attention in GPT
+### Limitations and Considerations
 
-+   Improved context modeling
-
-+   Enhanced long-range dependencies
-
-+   Increased interpretability
-
-1.  Limitations and Considerations
-
-+   Computational complexity of attention
-
-+   Potential biases in attention-based models
-
-+   Ongoing research and developments
++ Computational complexity of attention
++ Potential biases in attention-based models
++ Ongoing research and developments

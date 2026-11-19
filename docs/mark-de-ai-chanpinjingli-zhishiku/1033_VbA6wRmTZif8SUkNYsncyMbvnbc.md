@@ -1,3 +1,4 @@
+
 # Dify连接Claude 3.5, Azure OpenAI
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/NodldWRpqoceEnxovrOchXFEnOe](https://qqs7y1hozd1.feishu.cn/docx/NodldWRpqoceEnxovrOchXFEnOe)
@@ -26,4 +27,4 @@ export http_proxy=&quot;http://127.0.0.1:8001&quot;;export https_proxy=&quot;htt
 
 ## Dify
 
-本机Dify是Docker部署的，Docker设置了代理，代理到了🪜，所以🪜必须开着。🪜一旦关了，Docker代理到了一个127.0.0.1的地址，是无法访问网络的。
+本机Dify是Docker部署的，Docker设置了代理，代理到了🪜，所以🪜必须开着。🪜一旦关了，Docker代理到了一个`127.0.0.1`的地址，是无法访问网络的。

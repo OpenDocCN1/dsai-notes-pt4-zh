@@ -1,12 +1,13 @@
+
 # 1. Sora 官方文档翻译解读
 
-> 来源：[https://langgptai.feishu.cn/docx/O3qfdxgvSoIX3txIg9acmO2EnWj](https://langgptai.feishu.cn/docx/O3qfdxgvSoIX3txIg9acmO2EnWj)
+> 来源：`https://langgptai.feishu.cn/docx/O3qfdxgvSoIX3txIg9acmO2EnWj`
 
-**声明：本文由 LangGPT 社区 云**中江树 翻译，未经授权禁止转载，侵权必究
+**声明：本文由 LangGPT 社区 云中江树 翻译，未经授权禁止转载，侵权必究**
 
 原文：
 
-> https://openai.com/research/video-generation-models-as-world-simulators
+> `https://openai.com/research/video-generation-models-as-world-simulators`
 
 我们探索在视频数据上对生成模型进行大规模训练。具体来说，我们在不同时长、分辨率和长宽比的视频和图像上联合训练文本条件扩散模型。我们利用转换器架构，对视频和图像潜码的时空片段进行操作。我们最大的模型 Sora 能够生成一分钟的高保真视频。我们的研究结果表明，扩展视频生成模型是构建物理世界通用模拟器的一条可行之路。
 
@@ -28,7 +29,7 @@
 
 ## 视频压缩网络
 
-我们训练了一个可以降低视觉数据的维度的网络20。 该网络将原始视频作为输入，并输出经过时间和空间压缩的潜在表示。Sora 在此压缩潜空间内进行训练并生成视频。我们还训练了一个相应的解码器模型，将生成的潜像映射回像素空间。
+我们训练了一个可以降低视觉数据的维度的网络20。该网络将原始视频作为输入，并输出经过时间和空间压缩的潜在表示。Sora 在此压缩潜空间内进行训练并生成视频。我们还训练了一个相应的解码器模型，将生成的潜像映射回像素空间。
 
 ## 时空潜（空间）patches
 
@@ -42,9 +43,7 @@ Sora 是一个扩散模型21,22,23,24,25；给定输入的噪声 patches（以�
 
 在这项工作中，我们发现扩散变换器作为视频模型也能有效扩展。下面，我们展示了固定种子和输入的视频样本在训练过程中的对比。随着训练计算量的增加，样本质量明显提高。
 
-
 [scaling_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GDhebQ12Do5jhWxvAHqcDDUJn2b)
-
 
 [scaling_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EnYQbQrrxonVV5xFYGYc1fKanMe)
 
@@ -76,7 +75,6 @@ Sora 可以采样宽屏 1920x1080p 视频、竖屏 1080x1920 视频以及介于�
 
 我们根据经验发现，在原始长宽比的视频上进行训练可以改善构图和取景。我们将 Sora 与将所有训练视频裁剪成正方形的模型版本进行了比较，这是训练生成模型时的常见做法。在正方形裁剪下训练的模型（左图）有时生成的视频只能看到主体的一部分。相比之下，Sora（右）生成的视频取景更好。
 
-
 [sampling_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DpJBbYkTVoY0HCxzt0DcN5rDn4f)
 
 ![](img/9e4328117db28949cd3b425442812bc9.png)
@@ -85,7 +83,7 @@ Sora 可以采样宽屏 1920x1080p 视频、竖屏 1080x1920 视频以及介于�
 
 ## 语言理解
 
-训练文本到视频生成系统需要大量带有相应文字说明的视频。我们将 DALL-E 3 中引入的重新字幕技术应用于视频。我们首先训练一个高度描述性的字幕模型，然后用它为训练集中的所有视频制作文本字幕。我们发现，在高度描述性的视频字幕上进行训练可提高文本的保真度以及视频的整体质量。
+训练文本到视频生成系统需要大量带有相应文字说明的视频。我们将 DALL-E 3 中引入的重新字幕技术应用于视频。我们首先训练一个高度描述性的字幕模型，然后用它为训练集中的所有视频制作文本字幕。我们发现，在高度描述性的视频字幕上进行培训可提高文本的保真度以及视频的整体质量。
 
 与 DALL-E 3 类似，我们也利用 GPT 将简短的用户提示转化为较长的详细字幕，并发送给视频模型。这使得 Sora 能够准确地按照用户提示生成高质量的视频。
 
@@ -147,10 +145,9 @@ Sora 还能生成图像。我们通过在空间网格中排列高斯噪声斑块
 
 我们发现，视频模型在经过大规模训练后，会表现出许多有趣的新兴能力。这些能力使 Sora 能够模拟物理世界中的人、动物和环境的某些方面。这些特性的出现并没有对三维、物体等产生任何明确的归纳偏差--它们纯粹是规模现象。
 
-### **三维一致性**。
+### 三维一致性。
 
 Sora 可以生成动态摄像机运动的视频。随着摄像机的移动和旋转，人物和场景元素会在三维空间中持续移动。
-
 
 [simulation_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CRndb5AXxopx69xWYFMc8ywinOd)
 
@@ -158,7 +155,7 @@ Sora 可以生成动态摄像机运动的视频。随着摄像机的移动和旋
 
 [simulation_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CZMVbWJCzoFzfaxYD0rcStj9ngh)
 
-### **长距离一致性和对象持久性。**
+### 长距离一致性和对象持久性。
 
 视频生成系统面临的一个重大挑战是在对长视频采样时保持时间一致性。我们发现，Sora 经常（但并非总是）能够有效地模拟短距离和长距离依赖关系。例如，即使人、动物和物体被遮挡或离开画面，我们的模型也能保持它们的存在。同样，它还能在单个样本中生成同一人物的多个镜头，并在整个视频中保持其外观。
 
@@ -185,7 +182,6 @@ Sora 有时可以模拟一些影响世界状态的简单动作。例如，画家
 ### 模拟数字世界
 
 Sora 还能模拟人工进程，视频游戏就是一个例子。Sora 可以通过基本策略同时控制 Minecraft 中的玩家，同时高保真地呈现世界及其动态。只需在 Sora 的提示字幕中提及 "Minecraft"，就能零距离激发这些功能。
-
 
 [simulation_6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HpCqbcARJolrLxx8Zh2ccEMtnDh)
 

@@ -1,10 +1,11 @@
+
 # 利用AI一步到位高效高质量完成🛰️红包封面设计，附详细教程
 
-> 来源：[https://agispace.feishu.cn/docx/NRlGdTtDtoFJS9xoq1ZcDN38n9g](https://agispace.feishu.cn/docx/NRlGdTtDtoFJS9xoq1ZcDN38n9g)
-
+> 来源：`https://agispace.feishu.cn/docx/NRlGdTtDtoFJS9xoq1ZcDN38n9g`
 > 原创：AI 洞察笔记
+> 原文：`https://mp.weixin.qq.com/s/CtCmSQ-FxjyOnptkoX4aRw`
 
-> 原文：https://mp.weixin.qq.com/s/CtCmSQ-FxjyOnptkoX4aRw
+## 背景
 
 临近过年这段时间，连续几年🛰️红包封面都一直深受年轻人的青睐，我也不例外，近段时间，连续看到很多很好看的🛰️红包封面。
 
@@ -12,9 +13,13 @@
 
 但今年不一样，今年AI风靡全球，在图片生成领域也毫不例外，以Midjourney、DALL.E3为代表的AI绘画平台独占鳌头，只要提供不错的提示词，就能够生成唯美的各类图片。
 
+## 设计困境与 AI 契机
+
 我一直都有一个能够自己设计一款属于自己的🛰️红包封面，到时候发红包的时候，可以炫耀一下，尽快可能比不上专业设计的那么好看，但是好歹是自己设计的，会有一种莫名的自豪感。但是无奈不会设计，不太懂PS技术，这个遗憾一直都在。
 
 但是今年AI绘画这么火，随便在哪个平台上面，都可以生成好看的图片出来，通过登陆🛰️红包封面平台，会发现就算有好看的图片好像也不行，得会自己切图才行，这又阻碍了我。
+
+## GPTs 解决方案
 
 近段时间，我想到了不是可以自己创建GPTs嘛，于是我把这些难题全部交给AI去处理，封装了一个生成🛰️红包封面图片的GPTs，效果如下所示：
 
@@ -22,7 +27,7 @@
 
 ![](img/6bff84bf632c89676c1b2c4e688d0e72.png)
 
-GPTs使用地址：https://chat.openai.com/g/g-OfYAqOiYS-wei-xin-hong-bao-feng-mian-sheng-cheng-shen-qi
+GPTs使用地址：`https://chat.openai.com/g/g-OfYAqOiYS-wei-xin-hong-bao-feng-mian-sheng-cheng-shen-qi`
 
 这个GPTs做了什么事情呢？1、根据你的要求，生成纯原创你想要的AI图片；
 
@@ -36,9 +41,11 @@ GPTs使用地址：https://chat.openai.com/g/g-OfYAqOiYS-wei-xin-hong-bao-feng-m
 
 ![](img/b696f232f0a38c4724ff40039d3e9c75.png)
 
+## 红包封面申请教程
+
 有了好看图片后，剩下的就是到🛰️红包封面开放平台进行申请，下面是详细的申请教程。
 
-1、前往🛰️红包封面开放平台（https://cover.weixin.qq.com），使用前需注册，建议使用个人认证（视频号👸号大于100粉即可）
+1、前往🛰️红包封面开放平台（`https://cover.weixin.qq.com`），使用前需注册，建议使用个人认证（视频号👸号大于100粉即可）
 
 ![](img/d3a012b2d9a1248814a4b82f911179ca.png)
 
@@ -49,5 +56,7 @@ GPTs使用地址：https://chat.openai.com/g/g-OfYAqOiYS-wei-xin-hong-bao-feng-m
 ![](img/a07bb185b89f71751406ec9e0e64ee74.png)
 
 3、上传完毕后，点击右下的【提交】按钮即可提交审核，等待🛰️审核通过后，即可分发使用。
+
+## 结语
 
 以上分享，希望对你有所帮助，欢迎转发、分享，也欢迎与我联系交流。

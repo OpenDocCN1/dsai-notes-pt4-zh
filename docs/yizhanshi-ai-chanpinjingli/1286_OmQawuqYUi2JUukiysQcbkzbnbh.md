@@ -1,28 +1,29 @@
-#  Agent 智能检索增强工作流
+
+# MCP 驱动的智能 RAG 技术文档
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/EQ2Udf0tgoeuJjx1BWZcDyvMn8c](https://v11enp9ok1h.feishu.cn/docx/EQ2Udf0tgoeuJjx1BWZcDyvMn8c)
 
-# MCP 驱动的智能 RAG 技术文档
+## Agent 智能检索增强工作流
 
 了解如何创建一个 MCP 驱动的智能 RAG 系统，它可以搜索向量数据库，并在需要时回退到网络搜索。
 
 ![](img/cbc137978acd7953970e277cd5f9b06d.png)
 
-### 技术栈：
+### 技术栈
 
-+   Bright Data：用于大规模网页数据抓取
++ Bright Data：用于大规模网页数据抓取
 
-+   Qdrant：作为向量数据库
++ Qdrant：作为向量数据库
 
-+   Cursor：作为 MCP 客户端
++ Cursor：作为 MCP 客户端
 
-### 工作流程：
+### 工作流程
 
-+   开发者通过 MCP 客户端（Cursor）输入查询
++ 开发者通过 MCP 客户端（Cursor）输入查询
 
-+   客户端联系 MCP 服务器以选择相关工具
++ 客户端联系 MCP 服务器以选择相关工具
 
-+   工具输出返回给客户端以生成响应
++ 工具输出返回给客户端以生成响应
 
 ## 第 1 步：启动 MCP 服务器
 
@@ -34,8 +35,8 @@
 from mcp.server.fastmcp import FastMCP
 
 # 创建MCP服务器
-mcp = FastMCP(&quot;MCP-RAG-app&quot;,
-              host=&quot;127.0.0.1&quot;,
+mcp = FastMCP("MCP-RAG-app",
+              host="127.0.0.1",
               port=8080,
               timeout=30)
 ```
@@ -44,9 +45,9 @@ mcp = FastMCP(&quot;MCP-RAG-app&quot;,
 
 通过 MCP 服务器公开的工具需要满足两个要求：
 
-+   必须使用 "tool" 装饰器进行装饰
++ 必须使用 `tool` 装饰器进行装饰
 
-+   必须有清晰的文档字符串
++ 必须有清晰的文档字符串
 
 下面是一个用于查询向量数据库的 MCP 工具，它存储了与机器学习相关的常见问题。
 
@@ -56,20 +57,20 @@ mcp = FastMCP(&quot;MCP-RAG-app&quot;,
 from rag.app import Retriever, QdrantDB, EmbedData
 
 @mcp.tool()  # 添加工具装饰器
-def machine_learning_faq_retrieval_tool(query: str) -&gt; str:
-    &quot;&quot;&quot;从机器学习常见问题收集中检索最相关的文档。当用户询问有关机器学习的问题时使用此工具。
+def machine_learning_faq_retrieval_tool(query: str) -> str:
+    """从机器学习常见问题收集中检索最相关的文档。当用户询问有关机器学习的问题时使用此工具。
     
     输入：
-        query: str -&gt; 用于检索最相关文档的用户查询
+        query: str -> 用于检索最相关文档的用户查询
         
     输出：
-        response: str -&gt; 从向量数据库检索到的最相关文档
-    &quot;&quot;&quot;
+        response: str -> 从向量数据库检索到的最相关文档
+    """
     # 检查文本类型
     if not isinstance(query, str):
-        raise ValueError(&quot;查询必须是字符串类型&quot;)
+        raise ValueError("查询必须是字符串类型")
         
-    retriever = Retriever(QdrantDB(&quot;ml_faq_collection&quot;), EmbedData())
+    retriever = Retriever(QdrantDB("ml_faq_collection"), EmbedData())
     return retriever.search(query)
 ```
 
@@ -83,28 +84,28 @@ def machine_learning_faq_retrieval_tool(query: str) -&gt; str:
 from rag.app import Retriever, QdrantDB, EmbedData
 
 @mcp.tool()  # 添加工具装饰器
-def bright_data_web_search_tool(query: str) -&gt; list[str]:
-    &quot;&quot;&quot;使用Bright Data搜索给定主题的信息。
+def bright_data_web_search_tool(query: str) -> list[str]:
+    """使用Bright Data搜索给定主题的信息。
     
     输入：
-        query: str -&gt; 用于搜索信息的用户查询
+        query: str -> 用于搜索信息的用户查询
         
     输出：
-        context: list[str] -&gt; 最相关的网络搜索结果列表
-    &quot;&quot;&quot;
-    host = &#x27;bd.superproxy.io&#x27;
+        context: list[str] -> 最相关的网络搜索结果列表
+    """
+    host = 'bd.superproxy.io'
     port = 33335
     
-    username = os.getenv(&quot;BRIGHT_DATA_USERNAME&quot;)  # 来自.env文件
-    password = os.getenv(&quot;BRIGHT_DATA_PASSWORD&quot;)
+    username = os.getenv("BRIGHT_DATA_USERNAME")  # 来自.env文件
+    password = os.getenv("BRIGHT_DATA_PASSWORD")
     
-    proxy_url = f&quot;http://{username}:{password}@{host}:{port}&quot;
+    proxy_url = f"http://{username}:{password}@{host}:{port}"
     
-    formatted_query = &quot;+&quot;.join(query.split(&quot; &quot;))
-    url = f&quot;https://www.google.com/search?q={formatted_query}&amp;brd.json=1&amp;num=50&quot;
+    formatted_query = "+".join(query.split(" "))
+    url = f"https://www.google.com/search?q={formatted_query}&brd.json=1&num=50"
     response = requests.get(url, verify=False)
     
-    return response.json()[&#x27;organic&#x27;]
+    return response.json()['organic']
 ```
 
 ## 第 4 步：将 MCP 服务器与 Cursor 集成
@@ -115,13 +116,13 @@ def bright_data_web_search_tool(query: str) -&gt; list[str]:
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;mcp-rag-app&quot;: {
-      &quot;command&quot;: &quot;python&quot;,
-      &quot;args&quot;: [&quot;./path/to/server.py&quot;],
-      &quot;host&quot;: &quot;127.0.0.1&quot;,
-      &quot;port&quot;: 8080,
-      &quot;timeout&quot;: 36000
+  "mcpServers": {
+    "mcp-rag-app": {
+      "command": "python",
+      "args": ["./path/to/server.py"],
+      "host": "127.0.0.1",
+      "port": 8080,
+      "timeout": 36000
     }
   }
 }
@@ -129,12 +130,12 @@ def bright_data_web_search_tool(query: str) -&gt; list[str]:
 
 您的本地 MCP 服务器已启动并连接到 Cursor。它有两个 MCP 工具：
 
-+   Bright Data 网络搜索工具，用于大规模抓取数据
++ Bright Data 网络搜索工具，用于大规模抓取数据
 
-+   向量数据库搜索工具，用于查询相关文档
++ 向量数据库搜索工具，用于查询相关文档
 
 接下来，我们与 MCP 服务器进行交互：
 
-+   当我们提出与机器学习相关的查询时，它会调用向量数据库工具
++ 当我们提出与机器学习相关的查询时，它会调用向量数据库工具
 
-+   但当我们提出一般查询时，它会调用 Bright Data 网络搜索工具，从各种来源大规模收集网络数据
++ 但当我们提出一般查询时，它会调用 Bright Data 网络搜索工具，从各种来源大规模收集网络数据

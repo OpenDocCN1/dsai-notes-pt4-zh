@@ -1,16 +1,17 @@
+
 # Agent的10个最佳应用项目
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/InxudfUBeoA2ODxEi8AcPPiknJd](https://qqs7y1hozd1.feishu.cn/docx/InxudfUBeoA2ODxEi8AcPPiknJd)
 
 ## AutoGPT
 
-是一个基于ChatGPT完成多目标复杂任务的应用。是综合网络搜索、大语言模型调用、文件读写、python和shell脚本执行等功能框架，综合这些功能，可以自动帮我们完成多目标复杂的任务。
+是一个基于ChatGPT完成多目标复杂任务的应用。是综合网络搜索、大语言模型调用、文件读写、`python`和`shell`脚本执行等功能框架，综合这些功能，可以自动帮我们完成多目标复杂的任务。
 
 ### 工作流程
 
 ![](img/8c2a7cacce428cadd423e2118ed90b1c.png)
 
-### **分解任务**
+### 分解任务
 
 用户输入任务后，AutoGPT会和大模型交互，请求一个AI名、一个AI角色描述和至多5个目标
 
@@ -44,7 +45,7 @@ Goals:
 },
 ```
 
-### **历史对话摘要**
+### 历史对话摘要
 
 ```
 {
@@ -66,7 +67,7 @@ Latest Development:
 }
 ```
 
-### **询问下一步动作**
+### 询问下一步动作
 
 ```
 &quot;system&quot;: &quot;&quot;&quot;You are WeatherGPT_CN, 一个智能气象助手，为您提供准确、实时的天气信息，帮助您更好地规划活动和出行。
@@ -83,66 +84,13 @@ GOALS:
 
 Constraints:
 1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.
-2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.
-3. No user assistance
-4. Exclusively use the commands listed in double quotes e.g. &quot;command name&quot;
-
-Commands:
-1. analyze_code: Analyze Code, args: &quot;code&quot;: &quot;&lt;full_code_string&gt;&quot;
-2. execute_python_file: Execute Python File, args: &quot;filename&quot;: &quot;&lt;filename&gt;&quot;
-3. append_to_file: Append to file, args: &quot;filename&quot;: &quot;&lt;filename&gt;&quot;, &quot;text&quot;: &quot;&lt;text&gt;&quot;
-4. delete_file: Delete file, args: &quot;filename&quot;: &quot;&lt;filename&gt;&quot;
-5. list_files: List Files in Directory, args: &quot;directory&quot;: &quot;&lt;directory&gt;&quot;
-6. read_file: Read file, args: &quot;filename&quot;: &quot;&lt;filename&gt;&quot;
-7. write_to_file: Write to file, args: &quot;filename&quot;: &quot;&lt;filename&gt;&quot;, &quot;text&quot;: &quot;&lt;text&gt;&quot;
-8. google: Google Search, args: &quot;query&quot;: &quot;&lt;query&gt;&quot;
-9. improve_code: Get Improved Code, args: &quot;suggestions&quot;: &quot;&lt;list_of_suggestions&gt;&quot;, &quot;code&quot;: &quot;&lt;full_code_string&gt;&quot;
-10. send_tweet: Send Tweet, args: &quot;tweet_text&quot;: &quot;&lt;tweet_text&gt;&quot;
-11. browse_website: Browse Website, args: &quot;url&quot;: &quot;&lt;url&gt;&quot;, &quot;question&quot;: &quot;&lt;what_you_want_to_find_on_website&gt;&quot;
-12. write_tests: Write Tests, args: &quot;code&quot;: &quot;&lt;full_code_string&gt;&quot;, &quot;focus&quot;: &quot;&lt;list_of_focus_areas&gt;&quot;
-13. delete_agent: Delete GPT Agent, args: &quot;key&quot;: &quot;&lt;key&gt;&quot;
-14. get_hyperlinks: Get text summary, args: &quot;url&quot;: &quot;&lt;url&gt;&quot;
-15. get_text_summary: Get text summary, args: &quot;url&quot;: &quot;&lt;url&gt;&quot;, &quot;question&quot;: &quot;&lt;question&gt;&quot;
-16. list_agents: List GPT Agents, args: () -&gt; str
-17. message_agent: Message GPT Agent, args: &quot;key&quot;: &quot;&lt;key&gt;&quot;, &quot;message&quot;: &quot;&lt;message&gt;&quot;
-18. start_agent: Start GPT Agent, args: &quot;name&quot;: &quot;&lt;name&gt;&quot;, &quot;task&quot;: &quot;&lt;short_task_desc&gt;&quot;, &quot;prompt&quot;: &quot;&lt;prompt&gt;&quot;
-19. Task Complete (Shutdown): &quot;task_complete&quot;, args: &quot;reason&quot;: &quot;&lt;reason&gt;&quot;
-
-Resources:
-1. Internet access for searches and information gathering.
-2. Long Term memory management.
-3. GPT-3.5 powered Agents for delegation of simple tasks.
-4. File output.
-
-Performance Evaluation:
-1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.
-2. Constructively self-criticize your big-picture behavior constantly.
-3. Reflect on past decisions and strategies to refine your approach.
-4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.
-5. Write all code to a file.
-
-You should only respond in JSON format as described below 
-Response Format: 
-{
-    &quot;thoughts&quot;: {
-        &quot;text&quot;: &quot;thought&quot;,
-        &quot;reasoning&quot;: &quot;reasoning&quot;,
-        &quot;plan&quot;: &quot;- short bulleted\n- list that conveys\n- long-term plan&quot;,
-        &quot;criticism&quot;: &quot;constructive self-criticism&quot;,
-        &quot;speak&quot;: &quot;thoughts summary to say to user&quot;
-    },
-    &quot;command&quot;: {
-        &quot;name&quot;: &quot;command name&quot;,
-        &quot;args&quot;: {
-            &quot;arg name&quot;: &quot;value&quot;
-        }
-    }
-} 
-Ensure the response can be parsed by Python json.loads
+2. If you are unsure how you previously did something or want to recall past events, can be parsed by Python `json.loads`
 &quot;&quot;&quot;
 ```
 
-### **context prompt**
+### context prompt
+
+
 
 ```
 {
@@ -170,23 +118,25 @@ I was created and googled the real-time weather in Shanghai. I found several web
 }
 ```
 
-### **trigger prompt**
+## trigger prompt
 
 ```
-    &quot;user&quot;: &quot;Determine which next command to use, and respond using the format specified above:&quot;
+    "user": "Determine which next command to use, and respond using the format specified above:"
 ```
 
-## BabyAGI
+# BabyAGI
 
 是一个 AI 支持的任务管理系统示例，它根据初始任务或目标，利用OpenAI创建任务列表，并对任务进行优先级排序和执行任务。其背后的主要思想是基于先前任务的结果和预定义的目标创建任务，然后使用 OpenAI 的能力根据目标创建新任务。这是原始的任务驱动的自驱Agent（2023 年 3 月 28 日）的简化版本。
 
-### 数据流图
+## 数据流图
 
 ![](img/ca5c1cf3ee850ca39b8e25e3681acde7.png)
 
-代码示例
+## 代码示例
 
-```
+
+
+```python
 #!/usr/bin/env python3
 from dotenv import load_dotenv
 
@@ -215,27 +165,27 @@ client = chromadb.Client(Settings(anonymized_telemetry=False))
 # Engine configuration
 
 # Model: GPT, LLAMA, HUMAN, etc.
-LLM_MODEL = os.getenv(&quot;LLM_MODEL&quot;, os.getenv(&quot;OPENAI_API_MODEL&quot;, &quot;gpt-3.5-turbo&quot;)).lower()
-OPENAI_API_KEY = os.getenv(&quot;OPENAI_API_KEY&quot;, &quot;&quot;)
+LLM_MODEL = os.getenv("LLM_MODEL", os.getenv("OPENAI_API_MODEL", "gpt-3.5-turbo")).lower()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 # API Keys
-if not (LLM_MODEL.startswith(&quot;llama&quot;) or LLM_MODEL.startswith(&quot;human&quot;)):
-    assert OPENAI_API_KEY, &quot;\033[91m\033[1m&quot; + &quot;OPENAI_API_KEY environment variable is missing from .env&quot; + &quot;\033[0m\033[0m&quot;
+if not (LLM_MODEL.startswith("llama") or LLM_MODEL.startswith("human")):
+    assert OPENAI_API_KEY, "\033[91m\033[1m" + "OPENAI_API_KEY environment variable is missing from .env" + "\033[0m\033[0m"
 
 # Table config
-RESULTS_STORE_NAME = os.getenv(&quot;RESULTS_STORE_NAME&quot;, os.getenv(&quot;TABLE_NAME&quot;, &quot;&quot;))
-assert RESULTS_STORE_NAME, &quot;\033[91m\033[1m&quot; + &quot;RESULTS_STORE_NAME environment variable is missing from .env&quot; + &quot;\033[0m\033[0m&quot;
+RESULTS_STORE_NAME = os.getenv("RESULTS_STORE_NAME", os.getenv("TABLE_NAME", ""))
+assert RESULTS_STORE_NAME, "\033[91m\033[1m" + "RESULTS_STORE_NAME environment variable is missing from .env" + "\033[0m\033[0m"
 
 # Run configuration
-INSTANCE_NAME = os.getenv(&quot;INSTANCE_NAME&quot;, os.getenv(&quot;BABY_NAME&quot;, &quot;BabyAGI&quot;))
-COOPERATIVE_MODE = &quot;none&quot;
+INSTANCE_NAME = os.getenv("INSTANCE_NAME", os.getenv("BABY_NAME", "BabyAGI"))
+COOPERATIVE_MODE = "none"
 JOIN_EXISTING_OBJECTIVE = False
 
 # Goal configuration
-OBJECTIVE = os.getenv(&quot;OBJECTIVE&quot;, &quot;&quot;)
-INITIAL_TASK = os.getenv(&quot;INITIAL_TASK&quot;, os.getenv(&quot;FIRST_TASK&quot;, &quot;&quot;))
+OBJECTIVE = os.getenv("OBJECTIVE", "")
+INITIAL_TASK = os.getenv("INITIAL_TASK", os.getenv("FIRST_TASK", ""))
 
 # Model configuration
-OPENAI_TEMPERATURE = float(os.getenv(&quot;OPENAI_TEMPERATURE&quot;, 0.0))
+OPENAI_TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", 0.0))
 
 
 # Extensions support begin
@@ -248,119 +198,119 @@ def can_import(module_name):
         return False
 
 
-DOTENV_EXTENSIONS = os.getenv(&quot;DOTENV_EXTENSIONS&quot;, &quot;&quot;).split(&quot; &quot;)
+DOTENV_EXTENSIONS = os.getenv("DOTENV_EXTENSIONS", "").split(" ")
 
 # Command line arguments extension
 # Can override any of the above environment variables
 ENABLE_COMMAND_LINE_ARGS = (
-        os.getenv(&quot;ENABLE_COMMAND_LINE_ARGS&quot;, &quot;false&quot;).lower() == &quot;true&quot;
+        os.getenv("ENABLE_COMMAND_LINE_ARGS", "false").lower() == "true"
 )
 if ENABLE_COMMAND_LINE_ARGS:
-    if can_import(&quot;extensions.argparseext&quot;):
+    if can_import("extensions.argparseext"):
         from extensions.argparseext import parse_arguments
 
         OBJECTIVE, INITIAL_TASK, LLM_MODEL, DOTENV_EXTENSIONS, INSTANCE_NAME, COOPERATIVE_MODE, JOIN_EXISTING_OBJECTIVE = parse_arguments()
 
 # Human mode extension
 # Gives human input to babyagi
-if LLM_MODEL.startswith(&quot;human&quot;):
-    if can_import(&quot;extensions.human_mode&quot;):
+if LLM_MODEL.startswith("human"):
+    if can_import("extensions.human_mode"):
         from extensions.human_mode import user_input_await
 
 # Load additional environment variables for enabled extensions
 # TODO: This might override the following command line arguments as well:
 #    OBJECTIVE, INITIAL_TASK, LLM_MODEL, INSTANCE_NAME, COOPERATIVE_MODE, JOIN_EXISTING_OBJECTIVE
 if DOTENV_EXTENSIONS:
-    if can_import(&quot;extensions.dotenvext&quot;):
+    if can_import("extensions.dotenvext"):
         from extensions.dotenvext import load_dotenv_extensions
 
         load_dotenv_extensions(DOTENV_EXTENSIONS)
 
-# TODO: There&#x27;s still work to be done here to enable people to get
+# TODO: There's still work to be done here to enable people to get
 # defaults from dotenv extensions, but also provide command line
 # arguments to override them
 
 # Extensions support end
 
-print(&quot;\033[95m\033[1m&quot; + &quot;\n*****CONFIGURATION*****\n&quot; + &quot;\033[0m\033[0m&quot;)
-print(f&quot;Name  : {INSTANCE_NAME}&quot;)
-print(f&quot;Mode  : {&#x27;alone&#x27; if COOPERATIVE_MODE in [&#x27;n&#x27;, &#x27;none&#x27;] else &#x27;local&#x27; if COOPERATIVE_MODE in [&#x27;l&#x27;, &#x27;local&#x27;] else &#x27;distributed&#x27; if COOPERATIVE_MODE in [&#x27;d&#x27;, &#x27;distributed&#x27;] else &#x27;undefined&#x27;}&quot;)
-print(f&quot;LLM   : {LLM_MODEL}&quot;)
+print("\033[95m\033[1m" + "\n*****CONFIGURATION*****\n" + "\033[0m\033[0m")
+print(f"Name  : {INSTANCE_NAME}")
+print(f"Mode  : {'alone' if COOPERATIVE_MODE in ['n', 'none'] else 'local' if COOPERATIVE_MODE in ['l', 'local'] else 'distributed' if COOPERATIVE_MODE in ['d', 'distributed'] else 'undefined'}")
+print(f"LLM   : {LLM_MODEL}")
 
 
 # Check if we know what we are doing
-assert OBJECTIVE, &quot;\033[91m\033[1m&quot; + &quot;OBJECTIVE environment variable is missing from .env&quot; + &quot;\033[0m\033[0m&quot;
-assert INITIAL_TASK, &quot;\033[91m\033[1m&quot; + &quot;INITIAL_TASK environment variable is missing from .env&quot; + &quot;\033[0m\033[0m&quot;
+assert OBJECTIVE, "\033[91m\033[1m" + "OBJECTIVE environment variable is missing from .env" + "\033[0m\033[0m"
+assert INITIAL_TASK, "\033[91m\033[1m" + "INITIAL_TASK environment variable is missing from .env" + "\033[0m\033[0m"
 
-print(&quot;\033[94m\033[1m&quot; + &quot;\n*****OBJECTIVE*****\n&quot; + &quot;\033[0m\033[0m&quot;)
-print(f&quot;{OBJECTIVE}&quot;)
+print("\033[94m\033[1m" + "\n*****OBJECTIVE*****\n" + "\033[0m\033[0m")
+print(f"{OBJECTIVE}")
 
 if not JOIN_EXISTING_OBJECTIVE:
-    print(&quot;\033[93m\033[1m&quot; + &quot;\nInitial task:&quot; + &quot;\033[0m\033[0m&quot; + f&quot; {INITIAL_TASK}&quot;)
+    print("\033[93m\033[1m" + "\nInitial task:" + "\033[0m\033[0m" + f" {INITIAL_TASK}")
 else:
-    print(&quot;\033[93m\033[1m&quot; + f&quot;\nJoining to help the objective&quot; + &quot;\033[0m\033[0m&quot;)
+    print("\033[93m\033[1m" + f"\nJoining to help the objective" + "\033[0m\033[0m")
 
 
 # Results storage using local ChromaDB
 class DefaultResultsStorage:
     def __init__(self):
-        logging.getLogger(&#x27;chromadb&#x27;).setLevel(logging.ERROR)
+        logging.getLogger('chromadb').setLevel(logging.ERROR)
         # Create Chroma collection
-        chroma_persist_dir = &quot;chroma&quot;
+        chroma_persist_dir = "chroma"
         chroma_client = chromadb.PersistentClient(
             settings=chromadb.config.Settings(
                 persist_directory=chroma_persist_dir,
             )
         )
 
-        metric = &quot;cosine&quot;
+        metric = "cosine"
         embedding_function = OpenAIEmbeddingFunction(api_key=OPENAI_API_KEY)
         self.collection = chroma_client.get_or_create_collection(
             name=RESULTS_STORE_NAME,
-            metadata={&quot;hnsw:space&quot;: metric},
+            metadata={"hnsw:space": metric},
             embedding_function=embedding_function,
         )
 
     def add(self, task: Dict, result: str, result_id: str):
 
-        # Break the function if LLM_MODEL starts with &quot;human&quot; (case-insensitive)
-        if LLM_MODEL.startswith(&quot;human&quot;):
+        # Break the function if LLM_MODEL starts with "human" (case-insensitive)
+        if LLM_MODEL.startswith("human"):
             return
         # Continue with the rest of the function
 
-        embeddings = llm_embed.embed(result) if LLM_MODEL.startswith(&quot;llama&quot;) else None
+        embeddings = llm_embed.embed(result) if LLM_MODEL.startswith("llama") else None
         if (
-                len(self.collection.get(ids=[result_id], include=[])[&quot;ids&quot;]) &gt; 0
+                len(self.collection.get(ids=[result_id], include=[])["ids"]) > 0
         ):  # Check if the result already exists
             self.collection.update(
                 ids=result_id,
                 embeddings=embeddings,
                 documents=result,
-                metadatas={&quot;task&quot;: task[&quot;task_name&quot;], &quot;result&quot;: result},
+                metadatas={"task": task["task_name"], "result": result},
             )
         else:
             self.collection.add(
                 ids=result_id,
                 embeddings=embeddings,
                 documents=result,
-                metadatas={&quot;task&quot;: task[&quot;task_name&quot;], &quot;result&quot;: result},
+                metadatas={"task": task["task_name"], "result": result},
             )
 
-    def query(self, query: str, top_results_num: int) -&gt; List[dict]:
+    def query(self, query: str, top_results_num: int) -> List[dict]:
         count: int = self.collection.count()
         if count == 0:
             return []
         results = self.collection.query(
             query_texts=query,
             n_results=min(top_results_num, count),
-            include=[&quot;metadatas&quot;]
+            include=["metadatas"]
         )
-        return [item[&quot;task&quot;] for item in results[&quot;metadatas&quot;][0]]
+        return [item["task"] for item in results["metadatas"][0]]
 
 
 # Initialize results storage
 def use_chroma():
-    print(&quot;\nUsing results storage: &quot; + &quot;\033[93m\033[1m&quot; + &quot;Chroma (Default)&quot; + &quot;\033[0m\033[0m&quot;)
+    print("\nUsing results storage: " + "\033[93m\033[1m" + "Chroma (Default)" + "\033[0m\033[0m")
     return DefaultResultsStorage()
 
 results_storage = use_chroma()
@@ -388,13 +338,13 @@ class SingleTaskListStorage:
         return self.task_id_counter
 
     def get_task_names(self):
-        return [t[&quot;task_name&quot;] for t in self.tasks]
+        return [t["task_name"] for t in self.tasks]
 
 
 # Initialize tasks storage
 tasks_storage = SingleTaskListStorage()
-if COOPERATIVE_MODE in [&#x27;l&#x27;, &#x27;local&#x27;]:
-    if can_import(&quot;extensions.ray_tasks&quot;):
+if COOPERATIVE_MODE in ['l', 'local']:
+    if can_import("extensions.ray_tasks"):
         import sys
         from pathlib import Path
 
@@ -402,18 +352,18 @@ if COOPERATIVE_MODE in [&#x27;l&#x27;, &#x27;local&#x27;]:
         from extensions.ray_tasks import CooperativeTaskListStorage
 
         tasks_storage = CooperativeTaskListStorage(OBJECTIVE)
-        print(&quot;\nReplacing tasks storage: &quot; + &quot;\033[93m\033[1m&quot; + &quot;Ray&quot; + &quot;\033[0m\033[0m&quot;)
-elif COOPERATIVE_MODE in [&#x27;d&#x27;, &#x27;distributed&#x27;]:
+        print("\nReplacing tasks storage: " + "\033[93m\033[1m" + "Ray" + "\033[0m\033[0m")
+elif COOPERATIVE_MODE in ['d', 'distributed']:
     pass
 
 
-def limit_tokens_from_string(string: str, model: str, limit: int) -&gt; str:
-    &quot;&quot;&quot;Limits the string to a number of tokens (estimated).&quot;&quot;&quot;
+def limit_tokens_from_string(string: str, model: str, limit: int) -> str:
+    """Limits the string to a number of tokens (estimated)."""
 
     try:
         encoding = tiktoken.encoding_for_model(model)
     except:
-        encoding = tiktoken.encoding_for_model(&#x27;gpt2&#x27;)  # Fallback for others.
+        encoding = tiktoken.encoding_for_model('gpt2')  # Fallback for others.
 
     encoded = encoding.encode(string)
 
@@ -431,7 +381,7 @@ def openai_call(
     trimmed_prompt = limit_tokens_from_string(prompt, model, 4000 - max_tokens)
 
     # Use chat completion API
-    messages = [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: trimmed_prompt}]
+    messages = [{"role": "system", "content": trimmed_prompt}]
     response = client.chat.completions.create(
         model=model,
         messages=messages,
@@ -441,55 +391,54 @@ def openai_call(
         stop=None,
     )
     return response.choices[0].message.content.strip()
-       
 
 
 def task_creation_agent(
         objective: str, result: Dict, task_description: str, task_list: List[str]
 ):
-    prompt = f&quot;&quot;&quot;
+    prompt = f"""
 You are to use the result from an execution agent to create new tasks with the following objective: {objective}.
-The last completed task has the result: \n{result[&quot;data&quot;]}
-This result was based on this task description: {task_description}.\n&quot;&quot;&quot;
+The last completed task has the result: \n{result["data"]}
+This result was based on this task description: {task_description}.\n"""
 
     if task_list:
-        prompt += f&quot;These are incomplete tasks: {&#x27;, &#x27;.join(task_list)}\n&quot;
-    prompt += &quot;Based on the result, return a list of tasks to be completed in order to meet the objective. &quot;
+        prompt += f"These are incomplete tasks: {', '.join(task_list)}\n"
+    prompt += "Based on the result, return a list of tasks to be completed in order to meet the objective. "
     if task_list:
-        prompt += &quot;These new tasks must not overlap with incomplete tasks. &quot;
+        prompt += "These new tasks must not overlap with incomplete tasks. "
 
-    prompt += &quot;&quot;&quot;
+    prompt += """
 Return one task per line in your response. The result must be a numbered list in the format:
 
 #. First task
 #. Second task
 
-The number of each entry must be followed by a period. If your list is empty, write &quot;There are no tasks to add at this time.&quot;
-Unless your list is empty, do not include any headers before your numbered list or follow your numbered list with any other output. OUTPUT IN CHINESE&quot;&quot;&quot;
+The number of each entry must be followed by a period. If your list is empty, write "There are no tasks to add at this time."
+Unless your list is empty, do not include any headers before your numbered list or follow your numbered list with any other output. OUTPUT IN CHINESE"""
 
-    print(f&#x27;\n*****TASK CREATION AGENT PROMPT****\n{prompt}\n&#x27;)
+    print(f'\n*****TASK CREATION AGENT PROMPT****\n{prompt}\n')
     response = openai_call(prompt, max_tokens=2000)
-    print(f&#x27;\n****TASK CREATION AGENT RESPONSE****\n{response}\n&#x27;)
-    new_tasks = response.split(&#x27;\n&#x27;)
+    print(f'\n****TASK CREATION AGENT RESPONSE****\n{response}\n')
+    new_tasks = response.split('\n')
     new_tasks_list = []
     for task_string in new_tasks:
-        task_parts = task_string.strip().split(&quot;.&quot;, 1)
+        task_parts = task_string.strip().split(".", 1)
         if len(task_parts) == 2:
-            task_id = &#x27;&#x27;.join(s for s in task_parts[0] if s.isnumeric())
-            task_name = re.sub(r&#x27;[^\w\s_]+&#x27;, &#x27;&#x27;, task_parts[1]).strip()
+            task_id = ''.join(s for s in task_parts[0] if s.isnumeric())
+            task_name = re.sub(r'[^\w\s_]+', '', task_parts[1]).strip()
             if task_name.strip() and task_id.isnumeric():
                 new_tasks_list.append(task_name)
-            # print(&#x27;New task created: &#x27; + task_name)
+            # print('New task created: ' + task_name)
 
-    out = [{&quot;task_name&quot;: task_name} for task_name in new_tasks_list]
+    out = [{"task_name": task_name} for task_name in new_tasks_list]
     return out
 
 
 def prioritization_agent():
     task_names = tasks_storage.get_task_names()
-    bullet_string = &#x27;\n&#x27;
+    bullet_string = '\n'
 
-    prompt = f&quot;&quot;&quot;
+    prompt = f"""
 You are tasked with prioritizing the following tasks: {bullet_string + bullet_string.join(task_names)}
 Consider the ultimate objective of your team: {OBJECTIVE}.
 Tasks should be sorted from highest to lowest priority, where higher-priority tasks are those that act as pre-requisites or are more essential for meeting the objective.
@@ -499,30 +448,30 @@ Do not remove any tasks. Return the ranked tasks as a numbered list in the forma
 #. Second task
 
 The entries must be consecutively numbered, starting with 1. The number of each entry must be followed by a period.
-Do not include any headers before your ranked list or follow your list with any other output. OUTPUT IN CHINESE&quot;&quot;&quot;
+Do not include any headers before your ranked list or follow your list with any other output. OUTPUT IN CHINESE"""
 
-    print(f&#x27;\n****TASK PRIORITIZATION AGENT PROMPT****\n{prompt}\n&#x27;)
+    print(f'\n****TASK PRIORITIZATION AGENT PROMPT****\n{prompt}\n')
     response = openai_call(prompt, max_tokens=2000)
-    print(f&#x27;\n****TASK PRIORITIZATION AGENT RESPONSE****\n{response}\n&#x27;)
+    print(f'\n****TASK PRIORITIZATION AGENT RESPONSE****\n{response}\n')
     if not response:
-        print(&#x27;Received empty response from priotritization agent. Keeping task list unchanged.&#x27;)
+        print('Received empty response from priotritization agent. Keeping task list unchanged.')
         return
-    new_tasks = response.split(&quot;\n&quot;) if &quot;\n&quot; in response else [response]
+    new_tasks = response.split("\n") if "\n" in response else [response]
     new_tasks_list = []
     for task_string in new_tasks:
-        task_parts = task_string.strip().split(&quot;.&quot;, 1)
+        task_parts = task_string.strip().split(".", 1)
         if len(task_parts) == 2:
-            task_id = &#x27;&#x27;.join(s for s in task_parts[0] if s.isnumeric())
-            task_name = re.sub(r&#x27;[^\w\s_]+&#x27;, &#x27;&#x27;, task_parts[1]).strip()
+            task_id = ''.join(s for s in task_parts[0] if s.isnumeric())
+            task_name = re.sub(r'[^\w\s_]+', '', task_parts[1]).strip()
             if task_name.strip():
-                new_tasks_list.append({&quot;task_id&quot;: task_id, &quot;task_name&quot;: task_name})
+                new_tasks_list.append({"task_id": task_id, "task_name": task_name})
 
     return new_tasks_list
 
 
 # Execute a task based on the objective and five previous tasks
-def execution_agent(objective: str, task: str) -&gt; str:
-    &quot;&quot;&quot;
+def execution_agent(objective: str, task: str) -> str:
+    """
     Executes a task based on the given objective and previous context.
 
     Args:
@@ -532,22 +481,22 @@ def execution_agent(objective: str, task: str) -&gt; str:
     Returns:
         str: The response generated by the AI for the given task.
 
-    &quot;&quot;&quot;
+    """
 
     context = context_agent(query=objective, top_results_num=5)
-    # print(&quot;\n****RELEVANT CONTEXT****\n&quot;)
+    # print("\n****RELEVANT CONTEXT****\n")
     # print(context)
-    # print(&#x27;&#x27;)
-    prompt = f&#x27;OUTPUT IN CHINESE. Perform one task based on the following objective: {objective}.\n&#x27;
+    # print('')
+    prompt = f'OUTPUT IN CHINESE. Perform one task based on the following objective: {objective}.\n'
     if context:
-        prompt += &#x27;Take into account these previously completed tasks:&#x27; + &#x27;\n&#x27;.join(context)
-    prompt += f&#x27;\nYour task: {task}\nResponse:&#x27;
+        prompt += 'Take into account these previously completed tasks:' + '\n'.join(context)
+    prompt += f'\nYour task: {task}\nResponse:'
     return openai_call(prompt, max_tokens=2000)
 
 
 # Get the top n completed tasks for the objective
 def context_agent(query: str, top_results_num: int):
-    &quot;&quot;&quot;
+    """
     Retrieves context for a given query from an index of tasks.
 
     Args:
@@ -557,9 +506,9 @@ def context_agent(query: str, top_results_num: int):
     Returns:
         list: A list of tasks as context for the given query, sorted by relevance.
 
-    &quot;&quot;&quot;
+    """
     results = results_storage.query(query=query, top_results_num=top_results_num)
-    print(&quot;****RESULTS****&quot;)
+    print("****RESULTS****")
     print(results)
     return results
 
@@ -567,8 +516,8 @@ def context_agent(query: str, top_results_num: int):
 # Add the initial task if starting new objective
 if not JOIN_EXISTING_OBJECTIVE:
     initial_task = {
-        &quot;task_id&quot;: tasks_storage.next_task_id(),
-        &quot;task_name&quot;: INITIAL_TASK
+        "task_id": tasks_storage.next_task_id(),
+        "task_name": INITIAL_TASK
     }
     tasks_storage.append(initial_task)
 
@@ -579,30 +528,30 @@ def main():
         # As long as there are tasks in the storage...
         if not tasks_storage.is_empty():
             # Print the task list
-            print(&quot;\033[95m\033[1m&quot; + &quot;\n*****TASK LIST*****\n&quot; + &quot;\033[0m\033[0m&quot;)
+            print("\033[95m\033[1m" + "\n*****TASK LIST*****\n" + "\033[0m\033[0m")
             for t in tasks_storage.get_task_names():
-                print(&quot; • &quot; + str(t))
+                print(" • " + str(t))
 
             # Step 1: Pull the first incomplete task
             task = tasks_storage.popleft()
-            print(&quot;\033[92m\033[1m&quot; + &quot;\n*****NEXT TASK*****\n&quot; + &quot;\033[0m\033[0m&quot;)
-            print(str(task[&quot;task_name&quot;]))
+            print("\033[92m\033[1m" + "\n*****NEXT TASK*****\n" + "\033[0m\033[0m")
+            print(str(task["task_name"]))
 
             # Send to execution function to complete the task based on the context
-            result = execution_agent(OBJECTIVE, str(task[&quot;task_name&quot;]))
-            print(&quot;\033[93m\033[1m&quot; + &quot;\n*****TASK RESULT*****\n&quot; + &quot;\033[0m\033[0m&quot;)
+            result = execution_agent(OBJECTIVE, str(task["task_name"]))
+            print("\033[93m\033[1m" + "\n*****TASK RESULT*****\n" + "\033[0m\033[0m")
             print(result)
 
             # Step 2: Enrich result and store in the results storage
             # This is where you should enrich the result if needed
             enriched_result = {
-                &quot;data&quot;: result
+                "data": result
             }
             # extract the actual result from the dictionary
-            # since we don&#x27;t do enrichment currently
-            # vector = enriched_result[&quot;data&quot;]
+            # since we don't do enrichment currently
+            # vector = enriched_result["data"]
 
-            result_id = f&quot;result_{task[&#x27;task_id&#x27;]}&quot;
+            result_id = f"result_{task['task_id']}"
 
             results_storage.add(task, result, result_id)
 
@@ -611,13 +560,13 @@ def main():
             new_tasks = task_creation_agent(
                 OBJECTIVE,
                 enriched_result,
-                task[&quot;task_name&quot;],
+                task["task_name"],
                 tasks_storage.get_task_names(),
             )
 
-            print(&#x27;Adding new tasks to task_storage&#x27;)
+            print('Adding new tasks to task_storage')
             for new_task in new_tasks:
-                new_task.update({&quot;task_id&quot;: tasks_storage.next_task_id()})
+                new_task.update({"task_id": tasks_storage.next_task_id()})
                 print(str(new_task))
                 tasks_storage.append(new_task)
 
@@ -629,17 +578,17 @@ def main():
             # Sleep a bit before checking the task list again
             time.sleep(5)
         else:
-            print(&#x27;Done.&#x27;)
+            print('Done.')
             loop = False
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
-
-
 ```
 
-## SuperAGI
+
+
+# SuperAGI
 
 一个开发优先的开源自主人工智能代理框架。使开发人员能够快速可靠地构建、管理和运行有用的代理。
 
@@ -653,11 +602,11 @@ if __name__ == &quot;__main__&quot;:
 
 ![](img/8cd953ce0962255c8fa93dc50369f885.png)
 
-### Python SDK使用
+## Python SDK 使用
 
-#### 1)安装SDK
+### 1) 安装 SDK
 
-SuperAGI客户端库旨在帮助您与SuperAGI平台无缝交互。
+SuperAGI 客户端库旨在帮助您与 SuperAGI 平台无缝交互。
 
 首先，首先安装库：
 
@@ -665,53 +614,53 @@ SuperAGI客户端库旨在帮助您与SuperAGI平台无缝交互。
 pip install superagi-client
 ```
 
-安装完成之后，初始化SuperAGI-Client
+安装完成之后，初始化 `SuperAGI-Client`：
 
 ```
 from superagi_client import Client
 
-client = Client(api_key=&quot;YOUR_API_KEY&quot;, url=&quot;YOUR_OPTIONAL_URL&quot;)
+client = Client(api_key="YOUR_API_KEY", url="YOUR_OPTIONAL_URL")
 ```
 
-#### 2)创建Agent
+### 2) 创建 Agent
 
-智能体是SuperAGI中执行任务的主要实体。要创建一个：
+智能体是 SuperAGI 中执行任务的主要实体。要创建一个：
 
 ```
 from superagi_client import AgentConfig
 
 agent_config = AgentConfig(
-    name=&quot;Sample Agent&quot;,
-    description=&quot;A descriptive purpose of the agent.&quot;,
-    goal=[&quot;Define a specific task for the agent&quot;],
-    instruction=[&quot;Provide additional guiding instructions&quot;],
-    agent_workflow=&quot;Goal Based Workflow&quot;,
+    name="Sample Agent",
+    description="A descriptive purpose of the agent.",
+    goal=["Define a specific task for the agent"],
+    instruction=["Provide additional guiding instructions"],
+    agent_workflow="Goal Based Workflow",
     constraints=[],
-    tools=[{&quot;name&quot;: &quot;ToolName&quot;}],
+    tools=[{"name": "ToolName"}],
     iteration_interval=500,
     max_iterations=10,
-    model=&quot;gpt-4&quot;
+    model="gpt-4"
 )
 
 agent = client.create_agent(agent_config=agent_config)
 ```
 
-#### 3)运行Agent
+### 3) 运行 Agent
 
 ```
-agent_id = agent[&#x27;agent_id&#x27;]
+agent_id = agent['agent_id']
 run_agent = client.create_agent_run(agent_id=agent_id)
 ```
 
-智能体启动成功之后，会返回一个执行ID:run_id
+智能体启动成功之后，会返回一个执行 ID: `run_id`
 
-#### 4)检查Agent
+### 4) 检查 Agent
 
 ```
 run_status = client.get_agent_run_status(agent_id=agent_id)
 ```
 
-这将检索与指定agent_id关联的运行的状态。若要筛选特定的运行或状态，可以使用 AgentRunFilter 类型。例如，要获取具有特定run_ids的运行状态：
+这将检索与指定 `agent_id` 关联的运行的状态。若要筛选特定的运行或状态，可以使用 `AgentRunFilter` 类型。例如，要获取具有特定 `run_ids` 的运行状态：
 
 ```
 from superagi_client import AgentRunFilter
@@ -720,28 +669,28 @@ filter_config = AgentRunFilter(run_ids=[run_id_1, run_id_2])
 run_status = client.get_agent_run_status(agent_id=agent_id, agent_run_filter=filter_config)
 ```
 
-#### 5)暂停Agent
+### 5) 暂停 Agent
 
 ```
 client.pause_agent(agent_id=agent_id, agent_run_ids=[run_id])
 client.resume_agent(agent_id=agent_id, agent_run_ids=[run_id])
 ```
 
-## ShortGPT
+# ShortGPT
 
-ShortGPT 是一个由开发者 RayVentura 创建的开源项目，致力于在有限的字数内生成高质量、连贯的文本。该项目基于 OpenAI 的 GPT-2 模型，通过微调和优化，能够在极短的文本序列中产生令人印象深刻的结果。
+ShortGPT 是一个由开发者 RayVentura 创建的开源项目，致力于在有限的字数内生成高质量、连贯的文本。该项目基于 OpenAI 的 `GPT-2` 模型，通过微调和优化，能够在极短的文本序列中产生令人印象深刻的结果。
 
-### 技术分析
+## 技术分析
 
-#### 基础模型：GPT-2
+### 基础模型：GPT-2
 
-GPT-2（Generative Pre-trained Transformer 2）是 OpenAI 在2019年发布的预训练语言模型。它使用自注意力机制，能够理解整个输入序列的信息，并生成与上下文相关的响应。在 ShortGPT 中，GPT-2 的强大语义理解和生成能力被进一步利用，以适应更紧凑的文本生成任务。
+`GPT-2`（Generative Pre-trained Transformer 2）是 OpenAI 在 2019 年发布的预训练语言模型。它使用自注意力机制，能够理解整个输入序列的信息，并生成与上下文相关的响应。在 ShortGPT 中，`GPT-2` 的强大语义理解和生成能力被进一步利用，以适应更紧凑的文本生成任务。
 
-#### 微调与优化
+### 微调与优化
 
-RayVentura 对原始的 GPT-2 进行了特定场景的数据集微调，使其更适合处理短文本任务。这包括对数据集的选择、训练策略的调整以及可能的参数优化，以确保在有限字符数量下也能保持良好的语义准确性和流畅性。
+RayVentura 对原始的 `GPT-2` 进行了特定场景的数据集微调，使其更适合处理短文本任务。这包括对数据集的选择、训练策略的调整以及可能的参数优化，以确保在有限字符数量下也能保持良好的语义准确性和流畅性。
 
-### 应用场景
+## 应用场景
 
 > **创意写作：**为作家和创意人员提供灵感，快速生成故事开头、诗歌片段或新闻标题。
 
@@ -753,23 +702,23 @@ RayVentura 对原始的 GPT-2 进行了特定场景的数据集微调，使其�
 
 > **教育工具：**帮助学生理解概念，通过简短的例子或解释来阐述复杂的知识点。
 
-### 特点
+## 特点
 
-> **高      效 -** 能在短短几句话内传达关键信息。
+> **高效 -** 能在短短几句话内传达关键信息。
 
-> **适应性强 - **可以根据不同的主题和风格进行微调，满足不同应用场景的需求。
+> **适应性强 -** 可以根据不同的主题和风格进行微调，满足不同应用场景的需求。
 
-> **开放源码 - **开放社区的持续贡献和支持，使得模型不断改进。
+> **开放源码 -** 开放社区的持续贡献和支持，使得模型不断改进。
 
-> **易于集成 - **提供清晰的文档和示例代码，便于其他开发人员将其整合到自己的项目中。
+> **易于集成 -** 提供清晰的文档和示例代码，便于其他开发人员将其整合到自己的项目中。
 
-### 开源代码使用示例
+## 开源代码使用示例
 
 ![](img/1f43302760a45b7d5d517153886beb4d.png)
 
-以下是一个简单的Python示例，使用了openai库来调用GPT-4模型：
+以下是一个简单的 Python 示例，使用了 `openai` 库来调用 `GPT-4` 模型：
 
-首先，安装openai库（确保你已经安装了Python，并且有一个有效的OpenAI API密钥）：
+首先，安装 `openai` 库（确保你已经安装了 Python，并且有一个有效的 OpenAI API 密钥）：
 
 ```
 pip install openai
@@ -779,145 +728,145 @@ pip install openai
 
 ```
 import openai
- 
-# 设置你的OpenAI API密钥
-openai.api_key = &quot;YOUR_OPENAI_API_KEY&quot;
- 
-def get_short_gpt_answer(question, model=&quot;gpt-4&quot;):
+
+# 设置你的 OpenAI API 密钥
+openai.api_key = "YOUR_OPENAI_API_KEY"
+
+def get_short_gpt_answer(question, model="gpt-4"):
     response = openai.Completion.create(
         engine=model,
         prompt=question,
-        max_tokens=7,  # 设置生成的最大token数，7 tokens大约对应3个单词
-        n=1,  # 生成1个可能的回答
-        stop=None,  # 可以设置停止符，例如&quot;.&quot;, &quot;!&quot;等，根据需要使用
-        temperature=0.5,  # 设置生成的文本的随机性，0.0为完全随机，1.0为完全按概率分布
+        max_tokens=7,  # 设置生成的最大 token 数，7 tokens 大约对应 3 个单词
+        n=1,  # 生成 1 个可能的回答
+        stop=None,  # 可以设置停止符，例如 "."、 "!" 等，根据需要使用
+        temperature=0.5,  # 设置生成的文本的随机性，0.0 为完全随机，1.0 为完全按概率分布
     )
-    return response.get(&quot;choices&quot;)[0].get(&quot;text&quot;)
- 
+    return response.get("choices")[0].get("text")
+
 # 示例问题和使用
-question = &quot;What is the capital of the United States?&quot;
+question = "What is the capital of the United States?"
 answer = get_short_gpt_answer(question)
 print(answer)
 ```
 
-## ChatDev
+# ChatDev
 
 是一个基于大型语言模型（LLMs）的框架，旨在通过多智能体协作创建定制化软件，使用自然语言概念来革新数字世界。
 
 ![](img/dd884908198ebee95d7b372cc425937f.png)
 
-### 库的特性和优势
+## 库的特性和优势
 
-1.  高度定制化和扩展性：ChatDev 提供了一个易于使用的框架，可以高度定制和扩展，适合研究集体智能。
+1. 高度定制化和扩展性：ChatDev 提供了一个易于使用的框架，可以高度定制和扩展，适合研究集体智能。
 
-1.  多智能体组织结构：它通过不同角色的智能代理（如 CEO、CTO、程序员等）形成多智能体组织结构，参与设计、编码、测试和文档化等专业功能研讨会。
+1. 多智能体组织结构：它通过不同角色的智能代理（如 CEO、CTO、程序员等）形成多智能体组织结构，参与设计、编码、测试和文档化等专业功能研讨会。
 
-1.  实验共学模块：2024年1月，ChatDev集成了体验式共学模块，采用创新方法让指导者和助手代理积累面向快捷方式的经验，有效解决新任务，减少重复错误，提高效率。
+1. 实验共学模块：2024 年 1 月，ChatDev 集成了体验式共学模块，采用创新方法让指导者和助手代理积累面向快捷方式的经验，有效解决新任务，减少重复错误，提高效率。
 
-### 库应用场景
+## 库应用场景
 
-1.  软件开发：ChatDev 作为一个 SaaS 平台，使得软件开发人员和创新企业家能够高效、低成本、低门槛地构建软件。
+1. 软件开发：ChatDev 作为一个 SaaS 平台，使得软件开发人员和创新企业家能够高效、低成本、低门槛地构建软件。
 
-1.  增量开发：支持在现有代码上进行开发的增量开发功能，允许代理在现有代码基础上进行进一步开发。
+1. 增量开发：支持在现有代码上进行开发的增量开发功能，允许代理在现有代码基础上进行进一步开发。
 
-1.  人机交互：通过“人机交互”模式，用户可以扮演审阅者的角色，对程序员的工作提出建议，促进人机协作。
+1. 人机交互：通过“人机交互”模式，用户可以扮演审阅者的角色，对程序员的工作提出建议，促进人机协作。
 
-以下是一个简单的Python示例，展示如何使用random模块生成一个随机的聊天机器人回复。
+以下是一个简单的 Python 示例，展示如何使用 `random` 模块生成一个随机的聊天机器人回复。
 
 ```
 import random
- 
+
 # 定义一个包含不同回复的列表
 responses = [
-    &quot;当然可以&quot;,
-    &quot;我能做到&quot;,
-    &quot;我正在尝试&quot;,
-    &quot;我不能这么做&quot;,
-    &quot;对不起，我不明白&quot;,
-    &quot;请再重复一次&quot;,
-    &quot;请问具体问题是什么？&quot;,
-    &quot;你好，我现在正在线上&quot;
+    "当然可以",
+    "我能做到",
+    "我正在尝试",
+    "我不能这么做",
+    "对不起，我不明白",
+    "请再重复一次",
+    "请问具体问题是什么？",
+    "你好，我现在正在线上"
 ]
- 
+
 # 定义一个函数，返回随机的回复
 def get_random_response():
     return random.choice(responses)
- 
+
 # 测试函数
 print(get_random_response())
 ```
 
-## MetaGPT
+# MetaGPT
 
-是一个基于AI Agent的大模型框架，专注于软件开发，从需求分析到代码实现等实现了全流程的覆盖。
+是一个基于 AI Agent 的大模型框架，专注于软件开发，从需求分析到代码实现等实现了全流程的覆盖。
 
-### 优劣势
+## 优劣势
 
-#### 优势
+### 优势
 
-+   多Agent组成协作处理更复杂的任务。
++ 多 Agent 组成协作处理更复杂的任务。
 
-+   通过将SOP融入到多智能体协作中，解决了现有方法在处理复杂任务时存在的幻觉问题。
++ 通过将 SOP 融入到多智能体协作中，解决了现有方法在处理复杂任务时存在的幻觉问题。
 
-+   通过结构化协调和模块化输出，能够有效地解决复杂的多智能体协作问题。
++ 通过结构化协调和模块化输出，能够有效地解决复杂的多智能体协作问题。
 
-+   智能体可以主动从环境中获取相关知识，而不是简单地通过对话获取信息。这种设计更符合人类组织的运作模式。
++ 智能体可以主动从环境中获取相关知识，而不是简单地通过对话获取信息。这种设计更符合人类组织的运作模式。
 
-#### 劣势
+### 劣势
 
-+   偶尔会引用不存在的资源文件，如图像和音频。
++ 偶尔会引用不存在的资源文件，如图像和音频。
 
-+   在执行复杂任务时，它容易调用未定义或未导入的类或变量。
++ 在执行复杂任务时，它容易调用未定义或未导入的类或变量。
 
-+   角色和流程还比较固定，无法实现动态扩展，如扩展UI设计角色。
++ 角色和流程还比较固定，无法实现动态扩展，如扩展 UI 设计角色。
 
 以下是一个简单的使用示例
 
 ```
 git clone https://github.com/geekan/MetaGPT.git
 cd MetaGPT
-pip3 install -e. # 或者 pip3 install metagpt # 安装稳定版本
+pip3 install -e . # 或者 pip3 install metagpt # 安装稳定版本
 ```
 
 ```
-# 拷贝配置文件config.yaml为key.yaml并进行如下修改
+# 拷贝配置文件 config.yaml 为 key.yaml 并进行如下修改
 cp config/config.yaml config/key.yaml
 ```
 
 ```
-# 如果执行，确保您的系统上安装了 NPM。并使用npm安装mermaid-js。
+# 如果执行，确保您的系统上安装了 NPM。并使用 npm 安装 mermaid-js。
 npm --version
 sudo npm install -g @mermaid-js/mermaid-cli
 ```
 
 ```
-python startup.py &quot;写一个命令行贪吃蛇&quot;
- 
-# 开启code review模式会花费更多的金钱, 但是会提升代码质量和成功率
-python startup.py &quot;写一个命令行贪吃蛇&quot; --code_review True`
+python startup.py "写一个命令行贪吃蛇"
+
+# 开启 code review 模式会花费更多的金钱，但是会提升代码质量和成功率
+python startup.py "写一个命令行贪吃蛇" --code_review True
 ```
 
-## Camel
+# Camel
 
-是Communicative Agents for “Mind” Exploration of Large Scale Language Model Society的缩写，大意为大规模语言模型社会的“心智”探索通讯智能体。
+是 Communicative Agents for “Mind” Exploration of Large Scale Language Model Society 的缩写，大意为大规模语言模型社会的“心智”探索通讯智能体。
 
-### 贡献点：
+## 贡献点：
 
 > 1）引入了一种新的沟通式智能体（通过角色扮演实现），让智能体在最少的人工干预下通过自主合作，共同完成任务；
 
 > 2）提供了一种为研究多智能体合作行为和能力的可扩展方法，阐述了实现自主合作的挑战，并提供了应对这些挑战的策略。
 
-> 3）开源了CAMEL智能体，其中包含各种智能体的实现、数据生成流程、数据分析工具和收集的数据集，以支持沟通时智能体等领域的研究及更多其他相关领域的研究。
+> 3）开源了 CAMEL 智能体，其中包含各种智能体的实现、数据生成流程、数据分析工具和收集的数据集，以支持沟通时智能体等领域的研究及更多其他相关领域的研究。
 
-### 实现原理
+## 实现原理
 
-#### 角色扮演框架
+### 角色扮演框架
 
-CAMEL专注于以任务为导向的角色扮演，包含一个AI助理（AI Assistant）和一个AI用户（AI User）。在多智能体系统接收到人类用户的初步想法和角色分配后，任务指定智能体将提供详细的描述，使想法更加具体化。然后，AI助理和AI用户将通过多轮对话合作完成指定的任务，直到AI用户确定任务完成为止。一方面，AI用户负责向AI助理提供指令，并引导对话朝着任务完成的方向进行；另一方面，AI助理则需要遵循AI用户的指示，做出回答并提供具体的解决方案。
+CAMEL 专注于以任务为导向的角色扮演，包含一个 AI 助理（AI Assistant）和一个 AI 用户（AI User）。在多智能体系统接收到人类用户的初步想法和角色分配后，任务指定智能体将提供详细的描述，使想法更加具体化。然后，AI 助理和 AI 用户将通过多轮对话合作完成指定的任务，直到 AI 用户确定任务完成为止。一方面，AI 用户负责向 AI 助理提供指令，并引导对话朝着任务完成的方向进行；另一方面，AI 助理则需要遵循 AI 用户的指示，做出回答并提供具体的解决方案。
 
-#### 人类输入和任务说明
+### 人类输入和任务说明
 
-角色扮演会话将从人类的想法和选择的角色开始。想开发一个用于股市的交易机器人，然后选择了一个Python程序员和一个股票交易员两个角色。在确定了想法和角色之后，任务指定智能体将根据输入的想法，为AI助理角色提出一个具体的任务，以帮助AI用户角色完成任务。引入任务指定智能体主要原因为对话智能体通常需要一个具体的任务提示来实现任务，而对于非领域专家来说，这可能具有挑战性或费时。
+角色扮演会话将从人类的想法和选择的角色开始。想开发一个用于股市的交易机器人，然后选择了一个 Python 程序员和一个股票交易员两个角色。在确定了想法和角色之后，任务指定智能体将根据输入的想法，为 AI 助理角色提出一个具体的任务，以帮助 AI 用户角色完成任务。引入任务指定智能体主要原因为对话智能体通常需要一个具体的任务提示来实现任务，而对于非领域专家来说，这可能具有挑战性或费时。
 
 以下是简单的代码使用示例
 
@@ -929,63 +878,65 @@ cd camel
 pip install -e .
 ```
 
-## JARVIS
+# JARVIS
 
-处理任务规划、模型选择、任务执行和内容生成。通过访问HuggingFace中心中的数十个专用模型，利用ChatGPT的推理能力将最佳模型应用于给定任务。
+处理任务规划、模型选择、任务执行和内容生成。通过访问 HuggingFace 中心中的数十个专用模型，利用 ChatGPT 的推理能力将最佳模型应用于给定任务。
 
 > **系统的工作流程由四个阶段组成：**
 
-+   任务规划：使用ChatGPT分析用户的请求，了解他们的意图，并将其分解为可能的可解决的任务。
++ 任务规划：使用 ChatGPT 分析用户的请求，了解他们的意图，并将其分解为可能的可解决的任务。
 
-+   模型选择：为了解决计划的任务，ChatGPT根据描述选择Hugging Face上托管的专家模型。
++ 模型选择：为了解决计划的任务，ChatGPT 根据描述选择 Hugging Face 上托管的专家模型。
 
-+   任务执行：调用并执行每个选定的模型，并将结果返回给ChatGPT。
++ 任务执行：调用并执行每个选定的模型，并将结果返回给 ChatGPT。
 
-+   响应生成：最后，使用ChatGPT整合所有模型的预测，并生成响应。
++ 响应生成：最后，使用 ChatGPT 整合所有模型的预测，并生成响应。
 
 以下是一个简单的代码运用示例
 
-```
+
+
+```python
 import nltk
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 import random
- 
+
 ps = PorterStemmer()
-stops = set(stopwords.words(&#x27;english&#x27;))
- 
+stops = set(stopwords.words('english'))
+
 responses = {
-    &quot;hello&quot;: [&quot;Hello there!&quot;, &quot;Hi!&quot;, &quot;Nice to see you!&quot;],
-    &quot;how are you&quot;: [&quot;I&#x27;m doing great!&quot;, &quot;I&#x27;m good, thanks!&quot;, &quot;I&#x27;m okay.&quot;],
-    &quot;what is your name&quot;: [&quot;My name is JARVIS!&quot;],
-    &quot;bye&quot;: [&quot;Bye!&quot;, &quot;See you later!&quot;]
+    "hello": ["Hello there!", "Hi!", "Nice to see you!"],
+    "how are you": ["I'm doing great!", "I'm good, thanks!", "I'm okay."],
+    "what is your name": ["My name is JARVIS!"],
+    "bye": ["Bye!", "See you later!"]
 }
- 
+
 def strip_punctuation(text):
-    return text.translate(text.maketrans(&quot;&quot;, &quot;&quot;, string.punctuation)).lower()
- 
+    return text.translate(text.maketrans("", "", string.punctuation)).lower()
+
 def tokenize(text):
     return nltk.word_tokenize(text)
- 
+
 def stem_tokens(tokens):
     return [ps.stem(token) for token in tokens if token not in stops]
- 
+
 def process_command(command):
     command_words = strip_punctuation(command)
     command_words = tokenize(command_words)
     command_words = stem_tokens(command_words)
-    return &#x27; &#x27;.join(command_words)
- 
+    return ' '.join(command_words)
+
 def get_response(command):
     processed_command = process_command(command)
     for key in responses:
         if key in processed_command:
             return random.choice(responses[key])
-    return &quot;I don&#x27;t understand...&quot;
- 
+    return "I don't understand..."
+
 # Example usage:
-print(get_response(&quot;What is your name?&quot;))
-print(get_response(&quot;How are you?&quot;))
+print(get_response("What is your name?"))
+print(get_response("How are you?"))
 ```
 
 ## OpenAGI
@@ -996,38 +947,38 @@ AGI 研究平台专门设计提供复杂的多步任务以及相应的数据集�
 
 以下是一个简单的代码示例
 
-```
+```python
 class SimpleEnvironment:
     def __init__(self):
         self.agents = []
         self.state = {}
- 
+
     def add_agent(self, agent):
         self.agents.append(agent)
- 
+
     def step(self):
         for agent in self.agents:
             action = agent.act(self.state)
             self.state = self.apply_action(action)
- 
+
     def apply_action(self, action):
         # 这里应该包含对环境状态的更新逻辑
         # 例如，移动Agent的位置，或是触发某些效果
         return self.state  # 这里简化地返回当前状态
- 
+
 class SimpleAgent:
     def __init__(self):
         pass
- 
+
     def act(self, state):
         # 这里应该包含Agent的决策逻辑
         # 例如，基于当前状态选择一个随机动作
-        return &quot;action&quot;  # 返回一个动作
- 
+        return "action"  # 返回一个动作
+
 # 创建环境和Agent
 env = SimpleEnvironment()
 agent = SimpleAgent()
- 
+
 # 将Agent添加到环境中并开始交互
 env.add_agent(agent)
 env.step()
@@ -1037,65 +988,61 @@ env.step()
 
 是一个开源的基于大型语言模型（LLM）的自主智能体，能够自动解决各种任务。它旨在成为一个通用的智能体，应用于各种任务。
 
-> **XAgent的特性:**
+### XAgent的特性
 
-+   自主/自治: XAgent可以无须人工干预自动完成各种任务.
++ 自主/自治: `XAgent`可以无须人工干预自动完成各种任务.
++ 安全: `XAgent`旨在安全运行，所有的`action`约束在`docker`容器中执行.
++ 可扩展性: `XAgent` 做了可扩展性设计，可以容易地增加新工具加强`agent`的能力，甚至可以增加新的`agenti`.
++ 界面化: `XAgent` 为用户提供友好的`agent`交互界面，当然也可以使用命令行接口与`agent`交互。
++ 人机协作: `XAgent` 可以与人协作处理任务，不仅是在解决复杂任务遵循人类的指导，当`agent`遇到挑战时也能够寻求人类的帮助。
 
-+   安全: XAgent旨在安全运行，所有的action约束在docker容器中执行.
+### XAgent的构成
 
-+   可扩展性: XAgent 做了可扩展性设计，可以容易地增加新工具加强agent的能力，甚至可以增加新的agenti.
+#### `Dispatcher`
 
-+   界面化: XAgent 为用户提供友好的agent交互界面，当然也可以使用命令行接口与agent交互。
+负责动态实例化和派发任务给不同的`agent`，允许用户新增`agent`并改善它们的能力
 
-+   人机协作: XAgent 可以与人协作处理任务，不仅是在解决复杂任务遵循人类的指导，当agent遇到挑战时也能够寻求人类的帮助。
+#### `Planner`
 
-> **XAgent的构成：**
+负责生成和修正任务计划。将任务拆分为子任务并为它们生成里程碑，允许`agent`一步一步地完成任务
 
-+   Dispatcher
+#### `Actor`
 
-> 负责动态实例化和派发任务给不同的agent，允许用户新增agent并改善它们的能力
-
-+   Planner
-
-> 负责生成和修正任务计划。将任务拆分为子任务并为它们生成里程碑，允许agent一步一步地完成任务
-
-+   Actor
-
-> 负责采取行动达成目标和完成子任务。actor使用各式各样的工具处理子任务，同时也可以与人类合作完成任务
+负责采取行动达成目标和完成子任务。`actor`使用各式各样的工具处理子任务，同时也可以与人类合作完成任务
 
 以下是简单的代码示例
 
-```
+```java
 // 引入XAgent库
 import com.xagent.XAgent;
 import com.xagent.plugin.ComponentInfo;
 import com.xagent.plugin.IComponent;
- 
+
 // 定义一个XAgent任务
 public class ClickButtonAgent implements Runnable {
- 
+
     // 定义需要点击的按钮的文本
-    private String buttonText = &quot;Click Me&quot;;
- 
+    private String buttonText = "Click Me";
+
     public void run() {
         // 初始化XAgent
         XAgent.init();
- 
+
         // 查找按钮组件
         IComponent component = XAgent.findComponent(buttonText, ComponentInfo.Type.TEXT);
- 
+
         // 如果找到按钮，执行点击操作
         if (component != null) {
             component.click();
-            System.out.println(&quot;Button clicked successfully.&quot;);
+            System.out.println("Button clicked successfully.");
         } else {
-            System.out.println(&quot;Button not found.&quot;);
+            System.out.println("Button not found.");
         }
- 
+
         // 关闭XAgent
         XAgent.release();
     }
- 
+
     // 主函数，用于启动XAgent任务
     public static void main(String[] args) {
         ClickButtonAgent agent = new ClickButtonAgent();

@@ -1,18 +1,19 @@
+
 # Trae开箱AI IDE编程初体验：不手写一行代码用SpringBoot3+Elements-Plus开发一个简单留言本
 
 > 来源：[https://agijuejin.feishu.cn/docx/ASHBdebUwohRo2xm67NcITaSnP8](https://agijuejin.feishu.cn/docx/ASHBdebUwohRo2xm67NcITaSnP8)
-
+>
 > 作者：九卷技术录
-
+>
 > 链接：https://juejin.cn/post/7472678890277273626
-
+>
 > 来源：稀土掘金
-
+>
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
+>
 > 如有侵权，请联系删除。
 
-[**本文所使用的 Trae**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接：www.trae.ai
+[本文所使用的 Trae](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接：`www.trae.ai`
 
 ## Trae 简介
 
@@ -20,49 +21,49 @@
 
 Trae 与 AI 深度集成，提供智能问答、代码自动补全以及基于 Agent 的 AI 自动编程能力。使用 Trae 开发项目时，你可以与 AI 灵活协作，提升开发效率
 
-文档地址： docs.trae.ai/docs/what-i…
+文档地址：`docs.trae.ai/docs/what-i…`
 
 ## Trae 功能特性
 
-**1、智能问答**
+### 1、智能问答
 
 在编写代码时，随时可以与 AI 助手对话，获取代码解释、代码注释和错误修复等帮助。
 
-《 [侧边对话 ](https://docs.trae.ai/docs/side-chat)》 Chat 模式：
+《 [侧边对话](https://docs.trae.ai/docs/side-chat)》 Chat 模式：
 
 ![](img/665ee393c0f7899f10e79f82d54c5a21.png)
 
-《 [内嵌对话 ](https://docs.trae.ai/docs/inline-chat)》模式：
+《 [内嵌对话](https://docs.trae.ai/docs/inline-chat)》模式：
 
 ![](img/66c23481beb98587125127233ce6e0db.png)
 
-**2、代码自动补全**
+### 2、代码自动补全
 
 AI 助手能够理解当前代码并在代码编辑器中实时提供建议，提升编程效率。
 
-文档： docs.trae.ai/docs/comple…
+文档：`docs.trae.ai/docs/comple…`
 
-**3、代码片段生成**
+### 3、代码片段生成
 
 你可以通过自然语言描述需求，AI 助手将生成相应的代码片段，甚至能够编写完成整个文件代码。
 
-4、从 0 到 1 生成项目所有代码
+### 4、从 0 到 1 生成项目所有代码
 
 这个就是 Builder 模式：
 
 ![](img/d5dbe4fd5e4f69bdf9287bea64405b4c.png)
 
-AI 助手将根据你的描述提供相关代码或自动创建所有文件。 文档： docs.trae.ai/docs/builde…
+AI 助手将根据你的描述提供相关代码或自动创建所有文件。 文档：`docs.trae.ai/docs/builde…`
 
 ## Trae 实战留言本
 
 ### 下载安装 Trae
 
-到官网 [www.trae.ai/ ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)直接下载你需要的版本，Trae 提供 Mac 和 Win 版本，我的是 Win ，所以我下载 Win 版本。
+到官网 [`www.trae.ai/`](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 直接下载你需要的版本，Trae 提供 Mac 和 Win 版本，我的是 Win ，所以我下载 Win 版本。
 
 ![](img/48ced868d2eacc420a3cafb81bbbe8a4.png)
 
-下载完成后，直接点击 exe 进行安装。
+下载完成后，直接点击 `exe` 进行安装。
 
 ![](img/1e26d7131fdde5fc0f4d9358618eb3ce.png)
 
@@ -74,7 +75,7 @@ AI 助手将根据你的描述提供相关代码或自动创建所有文件。 �
 
 #### 开始实战
 
-用 Chat 模式，直接在对话框中输**入 “创建一个留言本**应用，功能有：”， 这里我误点击回车键 ，然后没想到，Trae 自动规划了留言本的基本功能：
+用 Chat 模式，直接在对话框中输入“创建一个留言本应用，功能有：”，这里我误点击回车键，然后没想到，Trae 自动规划了留言本的基本功能：
 
 ![](img/d5379b0b2c744f8b01ee3c183dd262e8.png)
 
@@ -86,9 +87,9 @@ AI 助手将根据你的描述提供相关代码或自动创建所有文件。 �
 
 下面是 Trae 创建代码文件和代码、配置等的步骤。
 
-#### 1、首先创建实体类 Message：
+#### 1、首先创建实体类 `Message`：
 
-创建实体类 Message.java，然后把里面的代码写的很完整，
+创建实体类 `Message.java`，然后把里面的代码写的很完整，
 
 ![](img/a69771dd1fa771a7d9c4d4a36b3627ba.png)
 
@@ -145,9 +146,9 @@ public class Message {
 }
 ```
 
-#### 2、创建 Repository 接口
+#### 2、创建 `Repository` 接口
 
-MessageRepository.java 接口代码：
+`MessageRepository.java` 接口代码：
 
 ![](img/d672b78504e32adec9f2943a08a3c5e3.png)
 
@@ -157,13 +158,13 @@ package com.example.guestbook.repository;
 import com.example.guestbook.model.Message;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MessageRepository extends JpaRepository&lt;Message, Long&gt; {
+public interface MessageRepository extends JpaRepository<Message, Long> {
 }
 ```
 
-#### 3、创建 Controller
+#### 3、创建 `Controller`
 
-MessageController.java 控制器代码
+`MessageController.java` 控制器代码
 
 ![](img/29ea14d50067127b31c1c4a4fdc0db3e.png)
 
@@ -180,14 +181,14 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
-@RequestMapping(&quot;/api/messages&quot;)
+@RequestMapping("/api/messages")
 public class MessageController {
 
     @Autowired
     private MessageRepository messageRepository;
 
     @GetMapping
-    public List&lt;Message&gt; getAllMessages() {
+    public List<Message> getAllMessages() {
         return messageRepository.findAll();
     }
 
@@ -197,10 +198,10 @@ public class MessageController {
         return messageRepository.save(message);
     }
 
-    @PutMapping(&quot;/{id}&quot;)
-    public ResponseEntity&lt;Message&gt; updateMessage(@PathVariable Long id, @RequestBody Message messageDetails) {
+    @PutMapping("/{id}")
+    public ResponseEntity<Message> updateMessage(@PathVariable Long id, @RequestBody Message messageDetails) {
         Message message = messageRepository.findById(id)
-                .orElseThrow(() -&gt; new RuntimeException(&quot;Message not found&quot;));
+                .orElseThrow(() -> new RuntimeException("Message not found"));
 
         message.setContent(messageDetails.getContent());
         message.setAuthor(messageDetails.getAuthor());
@@ -209,10 +210,10 @@ public class MessageController {
         return ResponseEntity.ok(updatedMessage);
     }
 
-    @DeleteMapping(&quot;/{id}&quot;)
-    public ResponseEntity&lt;?&gt; deleteMessage(@PathVariable Long id) {
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteMessage(@PathVariable Long id) {
         Message message = messageRepository.findById(id)
-                .orElseThrow(() -&gt; new RuntimeException(&quot;Message not found&quot;));
+                .orElseThrow(() -> new RuntimeException("Message not found"));
 
         messageRepository.delete(message);
         return ResponseEntity.ok().build();
@@ -222,7 +223,7 @@ public class MessageController {
 
 #### 4、配置文件
 
-application.properties 文件里配置：
+`application.properties` 文件里配置：
 
 ![](img/2331d096a1586725def2e425306e900a.png)
 
@@ -237,7 +238,7 @@ spring.h2.console.enabled=true
 
 #### 5、主应用类
 
-GuestbookApplication.java 文件：
+`GuestbookApplication.java` 文件：
 
 ![](img/95d3baff49601dc12b9afdb1cf237cff.png)
 
@@ -255,9 +256,9 @@ public class GuestbookApplication {
 }
 ```
 
-#### 6、pom.xml 依赖配置
+#### 6、`pom.xml` 依赖配置
 
-pom.xml 依赖配置
+`pom.xml` 依赖配置
 
 ![](img/162f53faa06b970d30cf2113d38293ac.png)
 
@@ -277,7 +278,7 @@ pom.xml 依赖配置
 
 #### 开始实战
 
-开始对话：“继续完善留言本，用 vue3 来构建前端界面”
+开始对话：“继续完善留言本，用 `vue3` 来构建前端界面”
 
 Trae 的回答是用 Vue3 + Element Plus 来构建。
 
@@ -292,7 +293,7 @@ cd frontend
 npm init vite . -- --template vue
 ```
 
-> ⚠️注意：这里需要有 nodejs。如果没有请自行安装nodejs。
+> ⚠️注意：这里需要有 `nodejs`。如果没有请自行安装`nodejs`。
 
 安装必要的依赖：
 
@@ -305,25 +306,25 @@ npm install element-plus axios
 
 #### 1、首先创建一个留言组件
 
-MessageList.vue
+`MessageList.vue`
 
 ![](img/627f664dca8b1be15c617748380e3831.png)
 
 #### 2、修改主要文件
 
-App.vue
+`App.vue`
 
 ![](img/35ff56b72b5a7a8657f25ba0c066f3e1.png)
 
-#### 3、修改 main.js
+#### 3、修改 `main.js`
 
-main.js
+`main.js`
 
 ![](img/eff2840e53a6d8f42e8dcb13e5dbca7f.png)
 
 #### 4、在后端添加跨域配置，创建新的配置类
 
-WebConfig.java
+`WebConfig.java`
 
 ![](img/0aaa92e60e343be348256c393664c216.png)
 
@@ -347,15 +348,12 @@ npm run dev
 
 #### 浏览器运行留言本
 
-访问 http://localhost:5173 即可看到留言本应用。主要功能包括：
+访问 `http://localhost:5173` 即可看到留言本应用。主要功能包括：
 
-1.  发布新留言
-
-1.  查看所有留言
-
-1.  编辑留言
-
-1.  删除留言
+1. 发布新留言
+1. 查看所有留言
+1. 编辑留言
+1. 删除留言
 
 界面使用了 Element Plus 组件库，提供了美观的 UI 界面。每条留言都显示作者、内容和发布时间，并且可以进行编辑和删除操作。
 
@@ -365,6 +363,6 @@ npm run dev
 
 ## 完整代码地址
 
-GitHub 地址： github.com/jiujuan/jav…
+GitHub 地址：`github.com/jiujuan/jav…`
 
-[**本文所使用的 Trae**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接：www.trae.ai
+[本文所使用的 Trae](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接：`www.trae.ai`

@@ -1,20 +1,21 @@
+
 # 云养虾必装的X个Skill
 
 > 来源：[https://aiwarts101.feishu.cn/docx/MEvKdZDhqoPZJnx0ZhlcwG98n1g](https://aiwarts101.feishu.cn/docx/MEvKdZDhqoPZJnx0ZhlcwG98n1g)
 
 > 帮我安装这几个Skill，并配置好环境
 
-> github.com/mvanhorn/last30days-skill
+> `github.com/mvanhorn/last30days-skill`
 
-> github.com/jackwener/opencli
+> `github.com/jackwener/opencli`
 
-> github.com/zarazhangrui/follow-builders
+> `github.com/zarazhangrui/follow-builders`
 
-## 痛点调研：mvanhorn/last30days-skill
+## 痛点调研：`mvanhorn/last30days-skill`
 
-github.com/mvanhorn/last30days-skill
+`github.com/mvanhorn/last30days-skill`
 
-github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-research-product-factory.md
+`github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-research-product-factory.md`
 
 ```
 使用&quot;最近 30 天&quot;技能在过去 30 天内研究 Reddit 和 X 上的任何话题
@@ -24,9 +25,9 @@ github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-resea
 创建一个完整的研究到产品的流程，无需你编写任何代码
 ```
 
-## 热点挖掘：jackwener/opencli
+## 热点挖掘：`jackwener/opencli`
 
-github.com/jackwener/opencli
+`github.com/jackwener/opencli`
 
 ```
 可将任何网站、Electron 应用或本地 CLI 工具转变为命令行界面
@@ -35,9 +36,9 @@ github.com/jackwener/opencli
 
 ![](img/e427ddd20d8fb4a07bf8ed1c1fd921a6.png)
 
-## 追踪顶级的AI产品建设者：zarazhangrui/follow-builders
+## 追踪顶级的AI产品建设者：`zarazhangrui/follow-builders`
 
-github.com/zarazhangrui/follow-builders?tab=readme-ov-file
+`github.com/zarazhangrui/follow-builders?tab=readme-ov-file`
 
 ```
 1. 顶级 AI 播客新节目的精华摘要

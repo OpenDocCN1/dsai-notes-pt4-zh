@@ -1,3 +1,4 @@
+
 # AI Agent案例介绍（上）
 
 > 来源：[https://agijuejin.feishu.cn/docx/WwwjdOz9YoriyjxSgnSc3rbcnuc](https://agijuejin.feishu.cn/docx/WwwjdOz9YoriyjxSgnSc3rbcnuc)
@@ -12,11 +13,11 @@
 
 爱吃牛油果的璐璐：细说AI-Agent（二更）
 
-## 数据处理Agent: Adala
+## 数据处理Agent: `Adala`
 
-Adala是一个专注于数据处理的自动化代理框架，尤其擅长多样化的数据标记任务。这些代理能够通过迭代学习独立获得技能，学习过程受到操作环境、观察和反思的影响。
+`Adala`是一个专注于数据处理的自动化代理框架，尤其擅长多样化的数据标记任务。这些代理能够通过迭代学习独立获得技能，学习过程受到操作环境、观察和反思的影响。
 
-### Adala的优势：
+### `Adala`的优势：
 
 +   可靠性：代理基于基准数据构建，提供一致且可信的结果。
 
@@ -40,11 +41,11 @@ Adala是一个专注于数据处理的自动化代理框架，尤其擅长多样
 
 ### 安装和配置：
 
-+   方法1: pip install adala。
++   `pip install adala`。
 
-+   方法2: pip install git+https://github.com/HumanSignal/Adala.git。
++   `pip install git+https://github.com/HumanSignal/Adala.git`。
 
-+   设置OPENAI_API_KEY。
++   设置`OPENAI_API_KEY`。
 
 ### 可用功能：
 
@@ -54,15 +55,15 @@ Adala是一个专注于数据处理的自动化代理框架，尤其擅长多样
 
 在Google Colab上运行笔记本示例、多任务学习、计算和存储顶级代理指标、创建命名实体识别技能、命令行工具、REST API交互以及视觉和多模式代理技能。
 
-> 项目地址：[https://github.c](https://link.zhihu.com/?target=https%3A//github.com/HumanSignal/Adala)om/HumanSignal/Adala
+> 项目地址：[https://github.com/HumanSignal/Adala](https://github.com/HumanSignal/Adala)
 
-## 自动化工作流程: Questflow
+## 自动化工作流程: `Questflow`
 
-Questflow 是一个面向无代码的自主人工智能工作者的市场。他们帮助团队和个人发现和部署跨平台自动化的人工智能工作流程，且用户无需编码或 ML 经验。
+`Questflow` 是一个面向无代码的自主人工智能工作者的市场。他们帮助团队和个人发现和部署跨平台自动化的人工智能工作流程，且用户无需编码或 ML 经验。
 
 ### 特点
 
-• 与 Upwork 类似，Questflow 提供了一个市场，用户可以利用人工智能代理跨各种数字工作空间完成任务。
+• 与 Upwork 类似，`Questflow` 提供了一个市场，用户可以利用人工智能代理跨各种数字工作空间完成任务。
 
 ![](img/2d093a91dd2698594eba94e21b88657a.png)
 
@@ -72,25 +73,25 @@ Questflow 是一个面向无代码的自主人工智能工作者的市场。他�
 
 ### 使用方法
 
-使用起来确实很方便，整个流程的搭建类似Figma的卡片拖拽。可选的卡片有例如：什么情况下trigger（触发）该动作。以及配置邮箱。运行后可在后台看到该pipeline。
+使用起来确实很方便，整个流程的搭建类似Figma的卡片拖拽。可选的卡片有例如：什么情况下`trigger`（触发）该动作。以及配置邮箱。运行后可在后台看到该`pipeline`。
 
 > 项目地址：https://v1.questflow.ai/
 
-## Sweep 代码批量重构
+## `Sweep` 代码批量重构
 
 这是一个 Github 内置助手，在code review时相当有用，可帮助修复小错误并实现功能。其作者对该应用的定位是AI初级开发工具，可重构和编写Python的单元测试。
 
 ### 使用
 
-安装并使用Sweep非常简单，首先根据项目地址，直接在Github上安装。
+安装并使用`Sweep`非常简单，首先根据项目地址，直接在Github上安装。
 
 ![](img/a65f193eec910a8129b79c56d1c369b5.png)
 
-打开一个Github Issue，例如：Sweep: 在Python代码app.py中新加一个feature：
+打开一个Github Issue，例如：`Sweep: 在Python代码app.py中新加一个feature`：
 
 ![](img/394d17f7afbbd105f541f317e28a26a4.png)
 
-然后Sweep将对代码进行修改，运行，并最后发起一个pull request：
+然后`Sweep`将对代码进行修改，运行，并最后发起一个pull request：
 
 ![](img/8a91c9716c63e0d12c4563b107066036.png)
 
@@ -106,7 +107,7 @@ Questflow 是一个面向无代码的自主人工智能工作者的市场。他�
 
 +   自动运行单元测试和自动格式化程序以验证生成的代码。
 
-### Sweep提示技巧：
+### `Sweep`提示技巧：
 
 +   使用时，可以提及文件名或函数名来获取特定的帮助。
 
@@ -114,23 +115,23 @@ Questflow 是一个面向无代码的自主人工智能工作者的市场。他�
 
 +   提供额外的背景信息，以帮助理解需求，例如参考特定文件中的单元测试示例。
 
-### Sweep的限制：
+### `Sweep`的限制：
 
-+   对于超过5000个文件的巨大仓库，Sweep可能无法完全排除所有不相关的文件和目录。在这种情况下，可能需要手动屏蔽一些目录。
++   对于超过5000个文件的巨大仓库，`Sweep`可能无法完全排除所有不相关的文件和目录。在这种情况下，可能需要手动屏蔽一些目录。
 
-+   Sweep不支持大规模的重构工作，例如超过5个文件或300行代码的更改。
++   `Sweep`不支持大规模的重构工作，例如超过5个文件或300行代码的更改。
 
-+   Sweep不能将整个代码库从Tensorflow重构为PyTorch。
++   `Sweep`不能将整个代码库从`Tensorflow`重构为`PyTorch`。
 
-+   Sweep不支持编辑图片和其他非文本资产，例如不能使用标志创建网页的收藏图标。
++   `Sweep`不支持编辑图片和其他非文本资产，例如不能使用标志创建网页的收藏图标。
 
-+   Sweep无法访问外部API，包括获取API令牌。
++   `Sweep`无法访问外部API，包括获取API令牌。
 
 ### 支持：
 
 +   所有用户都有无限制的GPT3.5来发起issue。每个用户每月开始时获得5个GPT4发起issue，每天可以使用2个GPT-4发起issue。
 
-> 项目地址：[https://github.com/swe](https://link.zhihu.com/?target=https%3A//github.com/sweepai/sweep/tree/main)epai/sweep/tree/main
+> 项目地址：[https://github.com/sweepai/sweep/tree/main](https://github.com/sweepai/sweep/tree/main)
 
 ## 参考资料：
 

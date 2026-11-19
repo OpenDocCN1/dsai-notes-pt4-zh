@@ -1,26 +1,27 @@
+
 # Coze+剪映 认知觉醒爆款视频工作流新方案
 
-> 来源：[https://zinxkclpk97.feishu.cn/docx/P7krdnrOXoa9UEx0abkcWX1Bnvh](https://zinxkclpk97.feishu.cn/docx/P7krdnrOXoa9UEx0abkcWX1Bnvh)
+> 来源：`https://zinxkclpk97.feishu.cn/docx/P7krdnrOXoa9UEx0abkcWX1Bnvh`
 
 > 大家好我是海涛，在此之前我们已经完成了认知觉醒类视频-云渲染生视频的版本，先说下剪映草稿版本与之前云渲染版本的区别：
 
-> 云渲染版本：由云端直接渲染视频，生成视频的mp4地址给到我们，制作时间比较长。
+> 云渲染版本：由云端直接渲染视频，生成视频的`mp4`地址给到我们，制作时间比较长。
 
 > 剪映草稿：则是由工作流执行后，生成剪映素材草稿链接给到我们，我们通过工具下载到本地后，再使用剪映打开进行二次编辑渲染。这种方式更灵活，可以加更多的剪映特效内容，但制作难度也更大。
 
 ![](img/c1dcf4de7984a035ac91fe1d9ab93317.png)
 
-我们搭建这套高效的Coze视频工作流，来完成此类视频的制作过程。
+我们搭建这套高效的`Coze`视频工作流，来完成此类视频的制作过程。
 
 先放体验链接：
 
-Coze Bot：https://www.coze.cn/store/agent/7473805695402901543?bot_id=true&bid=6feuev4ak900r
+`Coze Bot`：`https://www.coze.cn/store/agent/7473805695402901543?bot_id=true&bid=6feuev4ak900r`
 
-Coze 应用：https://www.coze.cn/s/i5JCwJ6r/
+`Coze 应用`：`https://www.coze.cn/s/i5JCwJ6r/`
 
 ![](img/98b789bc70d52779d9962241a439e93c.png)
 
-**工作流总体流程如下**
+## 工作流总体流程
 
 涉及核心节点及插件：
 
@@ -38,6 +39,8 @@ Coze 应用：https://www.coze.cn/s/i5JCwJ6r/
 
 另涉及的其它软件获取方式放到文末了。
 
+## 流程细节介绍
+
 下面重点介绍流程中涉及到的细节内容：
 
 此类视频思路，重点是将文本拆分后处理为图片和音频，再将背景图、音频、文本重组为剪映所需的数据结构，最终生成剪映草稿。
@@ -52,7 +55,7 @@ Coze 应用：https://www.coze.cn/s/i5JCwJ6r/
 
 大模型节点，则可以根据自己需要咨询调整处理方式，不局限模型类型、串接方式、文案风格等。
 
-这里我们使用的是DeepSeek R1模型，我在火山引擎搭建的专用版本。在文案创作方面效果非常不错，根据标题直出文案，而且质量非常高。感兴趣的可以关注后续，会分享搭建教程。
+这里我们使用的是`DeepSeek R1`模型，我在火山引擎搭建的专用版本。在文案创作方面效果非常不错，根据标题直出文案，而且质量非常高。感兴趣的可以关注后续，会分享搭建教程。
 
 ![](img/1284380f2f9293ac4dd6c594e49ee66a.png)
 
@@ -62,10 +65,10 @@ Coze 应用：https://www.coze.cn/s/i5JCwJ6r/
 
 ```
 import re
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    content = params[&#x27;content&#x27;]
-    pattern = r&#x27;[，。！？；]\s*&#x27;
+    content = params['content']
+    pattern = r'[，。！？；]\s*'
 
     # 使用re.split()函数根据正则表达式切割文本
     # re.split()会将匹配到的分隔符从结果中移除
@@ -75,7 +78,7 @@ async def main(args: Args) -&gt; Output:
     texts = [t for t in texts if t]
     # 构建输出对象
     ret: Output = {
-        &quot;textList&quot;: texts
+        "textList": texts
     }
     return ret
 ```
@@ -92,13 +95,13 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/87aba3125f8ebc339349c4f4d11f6786.png)
 
-下一环节是将分段的短句转换为音频文件mp3格式。
+下一环节是将分段的短句转换为音频文件`mp3`格式。
 
-我们借助coze官方的文本转语音的插件，对文本进行批量转换。输入参数为前面的分割后的文本数组textList，
+我们借助`coze`官方的文本转语音的插件，对文本进行批量转换。输入参数为前面的分割后的文本数组`textList`，
 
 输出结果为批处理后的音频文件数组。
 
-注意这个节点的批处理并行参数也设置小于2，避免并发高导致报错。
+注意这个节点的批处理并行参数也设置小于`2`，避免并发高导致报错。
 
 ![](img/02f92e7a2a1b31b1967da6fad5daf5b4.png)
 
@@ -118,14 +121,14 @@ async def main(args: Args) -&gt; Output:
 
 ```
 import json
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    times = params[&#x27;times&#x27;]
-    image = params[&#x27;image&#x27;]
-    texts = params[&#x27;texts&#x27;]
-    aduio_urls = params[&#x27;aduio_urls&#x27;]
-    width = params[&#x27;width&#x27;]
-    height = params[&#x27;height&#x27;]
+    times = params['times']
+    image = params['image']
+    texts = params['texts']
+    aduio_urls = params['aduio_urls']
+    width = params['width']
+    height = params['height']
 
     captions = []
     imgs = []
@@ -136,38 +139,38 @@ async def main(args: Args) -&gt; Output:
     draft_end = 0
     for index, element in enumerate(texts):
         start = img_start
-        end = int(img_start + int(times[index][&#x27;duration&#x27;] * 1000000))
+        end = int(img_start + int(times[index]['duration'] * 1000000))
 
         audios.append({
-            &quot;audio_url&quot;: aduio_urls[index][&#x27;data&#x27;][&#x27;link&#x27;],  #音频
-            &quot;duration&quot;: int(times[index][&#x27;duration&#x27;] * 1000000),
-            &quot;start&quot;: start,
-            &quot;end&quot;: end
+            "audio_url": aduio_urls[index]['data']['link'],  #音频
+            "duration": int(times[index]['duration'] * 1000000),
+            "start": start,
+            "end": end
         })
 
         captions.append({
-            &#x27;text&#x27;: element,
-            &#x27;start&#x27;: start,
-            &#x27;end&#x27;: end,
-            &quot;in_animation&quot;:&quot;渐显&quot;
+            'text': element,
+            'start': start,
+            'end': end,
+            "in_animation":"渐显"
         })
-        if start &gt; img_start:
+        if start > img_start:
             start = img_start
         img_start = end
         draft_end = end
     #固定背景图
     imgs.append({
-            &quot;image_url&quot;: image,
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: draft_end
+            "image_url": image,
+            "width": width,
+            "height": height,
+            "start": 0,
+            "end": draft_end
         })
     # 构建输出对象
     ret = {
-        &quot;captions&quot;: json.dumps(captions),
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audios&quot;: json.dumps(audios)
+        "captions": json.dumps(captions),
+        "imgs": json.dumps(imgs),
+        "audios": json.dumps(audios)
     }
 
     return ret
@@ -181,7 +184,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/f95a2d58e3c2e7dc66bd4ba30aa2eea5.png)
 
-先说创建草稿的节点，添加尺寸即可，user_id可不填
+先说创建草稿的节点，添加尺寸即可，`user_id`可不填
 
 ![](img/520bb934cb23bf317c87cb1dbfac7ec0.png)
 
@@ -189,11 +192,11 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/1e42a6953db013413be55393a543dfdf.png)
 
-然后是串联添加音频的节点，这里的draft_url为create_draft的输出参
+然后是串联添加音频的节点，这里的`draft_url`为`create_draft`的输出参
 
 ![](img/92d1bec00ebf98969c59f82b3f270807.png)
 
-然后是链接添加图片的节点，同样draft_url为create_draft节点的输出参数。图片参数为前置代码处理后的输出结果。
+然后是链接添加图片的节点，同样`draft_url`为`create_draft`节点的输出参数。图片参数为前置代码处理后的输出结果。
 
 ![](img/8a29903ed4e866193cf9a8694933f7f7.png)
 
@@ -201,17 +204,17 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/1a33b9285e45e0cf21a09258272a441a.png)
 
-最后是保存草稿，返回参数有草稿的draft_url，最终我们使用的也是draft_url，记得保存下来
+最后是保存草稿，返回参数有草稿的`draft_url`，最终我们使用的也是`draft_url`，记得保存下来
 
 ![](img/f70a4cad82bf01d505901167bc1db7db.png)
 
-结束节点，可以输出草稿地址draft_url和其它所需信息。
+结束节点，可以输出草稿地址`draft_url`和其它所需信息。
 
 ![](img/e46707568fbdc7ce1506eb9a9827cc59.png)
 
 以上是我们剪映草稿工作流的完成搭建过程与细节说明。
 
-试运行完成之后我们会获得draft_url，剪映草稿链接地址，复制下来即可。
+试运行完成之后我们会获得`draft_url`，剪映草稿链接地址，复制下来即可。
 
 文章用到的剪映小助手下载地址：[剪映小助手](https://ts.fyshark.com/#/login?user_id=7358)
 
@@ -249,7 +252,7 @@ async def main(args: Args) -&gt; Output:
 
 **你如果对这套视频制作的方案感兴趣、有意向学习了解，也可关注**👸号“海涛AI智能体”。👏欢迎交流。
 
-附：
+## 附录
 
 自动鹿注册地址：[注册地址](https://ts.fyshark.com/#/login?user_id=7358)
 

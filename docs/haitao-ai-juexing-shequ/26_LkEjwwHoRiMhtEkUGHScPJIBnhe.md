@@ -1,3 +1,4 @@
+
 # Coze制作AI口播数字人
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/KCkJdEhufob7W5xDbNVcOa77nhg](https://zinxkclpk97.feishu.cn/docx/KCkJdEhufob7W5xDbNVcOa77nhg)
@@ -16,15 +17,15 @@ Coze官方是没有提供数字人插件，我们就要在三方插件中进行�
 
 ![](img/8265a1b508251c03e04d272e84369d1e.png)
 
-使用前，先熟悉下插件的参数说明，重点关注hifly_id和speaker_id
+使用前，先熟悉下插件的参数说明，重点关注`hifly_id`和`speaker_id`
 
 ![](img/44fb1a7c598894b1574e8cc7157fa114.png)
 
-其中hifly_id是注册飞影后，在个人中心查看获得，对于的是hifly_agent_token
+其中`hifly_id`是注册飞影后，在个人中心查看获得，对于的是`hifly_agent_token`
 
 ![](img/34a57fc20c28344714a58a3b704e8f69.png)
 
-speaker_id是在声音克隆中查看获得，这里我们默认使用官方的音色。
+`speaker_id`是在声音克隆中查看获得，这里我们默认使用官方的音色。
 
 如何克隆自己的音色，可以继续往后看。
 
@@ -44,39 +45,39 @@ speaker_id是在声音克隆中查看获得，这里我们默认使用官方的�
 
 补充视频示例
 
-### Coze搭建工作流
+## Coze搭建工作流
 
 先看下整体内容，这里演示了文案驱动和音频驱动两种方式，也是这款数字人插件目前所支持的。
 
 ![](img/952916e83a837ceac15d4567dc0c734b.png)
 
-[c3_meta_human - 工作流 -智能体平台.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WFWVboRzNoptx3xQxKKcScpun6c)
+[`c3_meta_human - 工作流 -智能体平台.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WFWVboRzNoptx3xQxKKcScpun6c)
 
 ![](img/8d3dcc62e518b9f24f704087a1ed822d.png)
 
-开始节点参数的设定，hifly_id和speaker_id我们前面已经提前准备好了，直接复制使用即可。
+开始节点参数的设定，`hifly_id`和`speaker_id`我们前面已经提前准备好了，直接复制使用即可。
 
-text和audio参数，分别代表文本驱动和音频驱动，我们在实际使用时二选一。
+`text`和`audio`参数，分别代表文本驱动和音频驱动，我们在实际使用时二选一。
 
-video则是我们自己提前录制好的一段口播视频素材
+`video`则是我们自己提前录制好的一段口播视频素材
 
 ![](img/6fc941e8bfc7b0e69f8db6cb9cf1d990.png)
 
 下一步，创建数字人制作的任务。
 
-这里的设计技巧，根据audio参数来判断是使用音频驱动还是文本驱动，最后将插件输出的结果进行变量聚合，二选一。
+这里的设计技巧，根据`audio`参数来判断是使用音频驱动还是文本驱动，最后将插件输出的结果进行变量聚合，二选一。
 
 如果你只使用文本驱动，则可以把选择器和变量聚合阶段省略掉，保留一个数字人插件节点即可。
 
 ![](img/94556259692ce232fa83f21c24229a9f.png)
 
-两个分支数字人插件参数设置如下，注意audio_url和text的参数区分。
+两个分支数字人插件参数设置如下，注意`audio_url`和`text`的参数区分。
 
 ![](img/4d25b83c732690e5a7386768d092013d.png)
 
 ![](img/1759646e0144627148a8011def450d85.png)
 
-继续，数字人任务创建完成后，我们会拿到一个job_id参数，所以后续对上述两个节点进行了聚合操作。
+继续，数字人任务创建完成后，我们会拿到一个`job_id`参数，所以后续对上述两个节点进行了聚合操作。
 
 因为数字人制作时间较长，采用的是云端异步生成，所以我们需要使用任务查询插件，查看任务状态。
 
@@ -84,7 +85,7 @@ video则是我们自己提前录制好的一段口播视频素材
 
 ![](img/c2412c9742cc7b6f06e44bd0ae10c610.png)
 
-循环节点，添加中间变量video_url，用于接收最后生成的数字人视频。
+循环节点，添加中间变量`video_url`，用于接收最后生成的数字人视频。
 
 ![](img/717ce3c1abb0bcda87b8cdc82bcb5b57.png)
 
@@ -94,7 +95,7 @@ video则是我们自己提前录制好的一段口播视频素材
 
 添加判断节点，判断任务状态，任务结束则终止循环，任务未结束则继续等待下次循环。
 
-如果status等于2（2代表进行中、3代表结束）则表示任务尚未结束。
+如果`status`等于2（2代表进行中、3代表结束）则表示任务尚未结束。
 
 几个节点也比较简单，细节就不展开了。
 
@@ -110,7 +111,7 @@ video则是我们自己提前录制好的一段口播视频素材
 
 ![](img/0325139d20737139abfc121a19c27ccc.png)
 
-### 克隆自己的声音
+## 克隆自己的声音
 
 点击声音克隆
 
@@ -124,11 +125,11 @@ video则是我们自己提前录制好的一段口播视频素材
 
 ![](img/319cbd6dfec9bffb7d3379d9cae2e396.png)
 
-克隆完成后即可查看和复制自己的音色speaker_id
+克隆完成后即可查看和复制自己的音色`speaker_id`
 
 ![](img/783292bc50b79bf6460c6fc92cce8c7e.png)
 
-最后再说一下注册方式，点击邀请链接：https://hifly.cc/?code=5gkEi9hp94Q
+最后再说一下注册方式，点击邀请链接：`https://hifly.cc/?code=5gkEi9hp94Q`
 
 默认新用户会有1000积分，使用完之后可以选择开通合适的套餐
 
@@ -138,4 +139,4 @@ video则是我们自己提前录制好的一段口播视频素材
 
 ![](img/73e93f3c32512830d487b06a3b84b7c8.png)
 
-[c3_meta_human - 工作流 -智能体平台.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B5Jjb5HGmoL27pxdoyycxZiBnxb)
+[`c3_meta_human - 工作流 -智能体平台.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B5Jjb5HGmoL27pxdoyycxZiBnxb)

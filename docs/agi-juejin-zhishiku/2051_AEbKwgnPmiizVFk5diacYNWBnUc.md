@@ -1,6 +1,3 @@
-# 11.03-OpenAI Atlas等AI浏览器暴露Web Agent安全风险！南洋理工破解底层机制
-
-> 来源：[https://agijuejin.feishu.cn/docx/JyphdR0Iio41sVxRgbdcOoYNnjb](https://agijuejin.feishu.cn/docx/JyphdR0Iio41sVxRgbdcOoYNnjb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 11 月 03 日)
 
@@ -8,7 +5,9 @@
 
 ## 🌟 技术突破
 
-### 💡 OpenAI Atlas等AI浏览器暴露Web Agent安全风险！南洋理工破解底层机制
+### 💡 11.03-OpenAI Atlas等AI浏览器暴露Web Agent安全风险！南洋理工破解底层机制
+
+> 来源：[https://agijuejin.feishu.cn/docx/JyphdR0Iio41sVxRgbdcOoYNnjb](https://agijuejin.feishu.cn/docx/JyphdR0Iio41sVxRgbdcOoYNnjb)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KDCGNEJO0511ABV6.html?spss=dy_author)
 

@@ -1,14 +1,15 @@
+
 # 通往AGI之路
 
 > 来源：[https://docs.feishu.cn/docx/NDsAdX4spozsglxgqm7caJqdnVf](https://docs.feishu.cn/docx/NDsAdX4spozsglxgqm7caJqdnVf)
 
-# 🎯  愿景和目标
+## 🎯 愿景和目标
 
 > 要实现通用人工智能（AGI）也许有很长的路要走，
-
+>
 > 我们的目标是让每个人的学习过程少走弯路，让更多的人因 AI 而强大。
 
-# 🔖  简介  |  W[aytoAGI.com](http://waytoAGI.com)
+## 🔖 简介 | W[aytoAGI.com](http://waytoAGI.com)
 
 欢迎来到通往 AGI 之路 / WaytoAGI社区是致力于人工智能学习的知识库与社区平台，提供系统全面的 AI 学习路径，整合资源、组织实践活动。覆盖近 900 万学习者，知识库访问量超 8000 万次，联动 180 所高校及 100 + 企业，举办 500 + 场活动。
 
@@ -20,7 +21,7 @@
 
 [Bilibili](https://space.bilibili.com/259768893)｜[📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)｜[Twitter](https://twitter.com/WaytoAGI)
 
-## **🥳加入飞书知识问答**
+## 🥳加入飞书知识问答
 
 WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加原文链接！
 
@@ -36,13 +37,13 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 » [通往AGI之路](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
 
-» 2️⃣ 日常共学：每天晚 8 点共学直播（必订！）：
+» 2️⃣ 日常共学：每天晚 8 点共学直播（必订！）
 
 一键订阅直播日历，每天上新知识不漏看！
 
 或关注 #通往AGI之路视频号
 
-»  [订阅日程](https://www.feishu.cn/calendar/share?token=e2b16267282604efa375f8829e3d2cc7)
+» [订阅日程](https://www.feishu.cn/calendar/share?token=e2b16267282604efa375f8829e3d2cc7)
 
 » 3️⃣ 加入群聊：获取最新动态，参与交流共建
 
@@ -50,7 +51,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 ## 📝 欢迎投稿
 
-**不错的教程见解等欢迎投稿：**
+不错的教程见解等欢迎投稿：
 
 🔬 AI技术探讨与分析
 
@@ -60,7 +61,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 💻 开发心得与技术教程
 
-**投稿要求：                          **                    ✅ 原创、严谨、有深度
+投稿要求：✅ 原创、严谨、有深度
 
 📊 配图说明更佳
 
@@ -68,7 +69,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 📏 建议字数1500-5000字
 
-**审核流程：**
+审核流程：
 
 📬 提交后2-3工作日反馈
 
@@ -76,7 +77,7 @@ WaytoAGI知识库内10000+篇内容，现在一句话即可出现精准答案加
 
 »»»[立即投稿](https://waytoagi.feishu.cn/share/base/form/shrcndlVeIpGvhhWvnsVfMhuFbf?iframeFrom=docx&ccm_open=iframe)
 
-## 🫐社区最新栏目：
+## 🫐社区最新栏目
 
 ### [Mini Camp](https://waytoagi.feishu.cn/wiki/W3k8wQJQviH6PbkFL5mcCYe2nmd?from=from_copylink)训练营进行中：[OPC创造营](https://waytoagi.feishu.cn/wiki/PzkNwVQ1yiTpFskoAPmcjaS5nme)
 
@@ -84,7 +85,7 @@ WaytoAGI Mini Camp 是 WaytoAGI 推出的轻量化 AI 系列活动品牌。
 
 你有没有想过，脑海中计划了那么久的创业计划，什么时候才能落地？
 
-WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1yiTpFskoAPmcjaS5nme)Mini Camp 第二期「OPC创造营」，用一周时间，带你从 0 到赚取一个真实产品的第一桶金。
+WaytoAGI 和 Enter.pro 联合发起 Mini Camp 第二期「OPC创造营」，用一周时间，带你从 0 到赚取一个真实产品的第一桶金。
 
 不需要有任何编程基础，只需要有一个想法。
 
@@ -100,77 +101,71 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 4月1[9日 直](https://waytoagi.feishu.cn/minutes/obcn49ktsag4vc3414np876f)播回放
 
-# 🎡近期活动
+## 🎡近期活动
 
 [WaytoAGI近期活动](https://waytoagi.feishu.cn/wiki/So9cwfj9yiuZJ8kSfLZce7a8nrf)鼓励大家以赛代练，多参加活动，和社区小伙伴一起动手实操
 
-# 🎏 近 7 日更新日志
+## 🎏 近 7 日更新日志
 
 查看所有更新日志：[4.3 历史更新](https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc)
 
-###  4 月 27 日
+### 4 月 27 日
 
-+   《[AI音乐周刊 W.A 025](https://waytoagi.feishu.cn/wiki/Jw0xwNk0EiFkqWk75p9clxfSnBc?from=from_copylink)》AI音乐行业正迎来高速变革，本周资讯整合了产业数据、平台政策、工具更新与前沿学术成果，带你快速拆解核心趋势。主流流媒体纷纷出台差异化管控策略，完善AI音乐标注、反刷量与版权监管体系。多款音频大模型、编曲工作站全新升级，降低专业创作门槛，版权方也布局智能维权技术。多篇顶会论文，覆盖音乐生成、音频分离、乐谱识别等技术突破。
++ 《[AI音乐周刊 W.A 025](https://waytoagi.feishu.cn/wiki/Jw0xwNk0EiFkqWk75p9clxfSnBc?from=from_copylink)》AI音乐行业正迎来高速变革，本周资讯整合了产业数据、平台政策、工具更新与前沿学术成果，带你快速拆解核心趋势。主流流媒体纷纷出台差异化管控策略，完善AI音乐标注、反刷量与版权监管体系。多款音频大模型、编曲工作站全新升级，降低专业创作门槛，版权方也布局智能维权技术。多篇顶会论文，覆盖音乐生成、音频分离、乐谱识别等技术突破。
 
-+   《[4.19-4.26｜本周 AI 论文精选](https://waytoagi.feishu.cn/wiki/PYyKweMx0ikbK2kqILrcuCy1nhd?from=from_copylink)》本期AI精选论文速递，集中拆解了十大重磅研究与模型革新。DeepSeek V4凭借原生百万超长上下文架构，以开源成本比肩闭源顶尖模型。自我进化Agent、轻量化模型蒸馏、按需检索等创新方案接连落地，高效解决传统架构高耗能、检索冗余、扩展受限等痛点。同时，研究深挖多智能体同质化、RAG落地短板等关键问题，结合无状态记忆设计、自主知识生成与EDA工具迭代实践，搭配深度学习理论新探索为模型部署、Agent开发、技术优化提供了前沿解法！
++ 《[4.19-4.26｜本周 AI 论文精选](https://waytoagi.feishu.cn/wiki/PYyKweMx0ikbK2kqILrcuCy1nhd?from=from_copylink)》本期AI精选论文速递，集中拆解了十大重磅研究与模型革新。DeepSeek V4凭借原生百万超长上下文架构，以开源成本比肩闭源顶尖模型。自我进化Agent、轻量化模型蒸馏、按需检索等创新方案接连落地，高效解决传统架构高耗能、检索冗余、扩展受限等痛点。同时，研究深挖多智能体同质化、RAG落地短板等关键问题，结合无状态记忆设计、自主知识生成与EDA工具迭代实践，搭配深度学习理论新探索为模型部署、Agent开发、技术优化提供了前沿解法！
 
++ 《[用 Subagents 保持 Claude Code 上下文干净（译）](https://waytoagi.feishu.cn/wiki/Fq5lw2ZDVi0oNeku7ZCcaMk5nxb?from=from_copylink)》长时间使用 Claude Code 时，上下文会很快变得一团乱。每一次 `grep`、`find`、`ls` 都会留在你的上下文里，占掉大量你之后根本不会再读的空间。Subagents 就是为了解决这个问题：它们会在自己的窗口里完成工作，最后只把结果带回来。这篇文章会直接切入重点：subagents 是什么、如何创建一个、Claude Code 自带了哪些内置 subagents，以及如何通过 `CLAUDE_CODE_FORK_SUBAGENT=1` 来 fork 上下文。
 
-+   《[用 Subagents 保持 Claude Code 上下文干净（译）](https://waytoagi.feishu.cn/wiki/Fq5lw2ZDVi0oNeku7ZCcaMk5nxb?from=from_copylink)》长时间使用 Claude Code 时，上下文会很快变得一团乱。每一次 grep、find、ls 都会留在你的上下文里，占掉大量你之后根本不会再读的空间。Subagents 就是为了解决这个问题：它们会在自己的窗口里完成工作，最后只把结果带回来。这篇文章会直接切入重点：subagents 是什么、如何创建一个、Claude Code 自带了哪些内置 subagents，以及如何通过 CLAUDE_CODE_FORK_SUBAGENT=1 来 fork 上下文。
++ 《[AI Engineer 学习路径（译）](https://waytoagi.feishu.cn/wiki/LCSHw5fXqi0UbIkfFXec4H7OnQc?from=from_copylink)》这是一份非常实用的路线图，告诉你该学什么、按什么顺序学，它基于大约 2000 份真实岗位描述中的需求总结而来。如果你想进入 AI engineering，而不只是停留在 ML 理论层面，这条路径更贴近生产环境中的真实系统构建方式。
 
-
-+   《[AI Engineer 学习路径（译）](https://waytoagi.feishu.cn/wiki/LCSHw5fXqi0UbIkfFXec4H7OnQc?from=from_copylink)》这是一份非常实用的路线图，告诉你该学什么、按什么顺序学，它基于大约 2000 份真实岗位描述中的需求总结而来。如果你想进入 AI engineering，而不只是停留在 ML 理论层面，这条路径更贴近生产环境中的真实系统构建方式。
-
-
-+   《[喝点VC｜a16z联合创始人：真正危险的不是投错项目，而是错过下一个Google](https://waytoagi.feishu.cn/wiki/ZSZCwzGsEigPFBkpqSmcvENunlb?from=from_copylink)》 a16z (Andreessen Horowitz) 是一家风险投资公司，以其多元化的投资领域著称，被投资公司包括 Airbnb 、 Meta 和 Twitter 等。本次访谈，20VC with Harry Stebbings和 a16z 围绕风险投资、创业者判断、AI、宏观环境与个人心智展开。
++ 《[喝点VC｜a16z联合创始人：真正危险的不是投错项目，而是错过下一个Google](https://waytoagi.feishu.cn/wiki/ZSZCwzGsEigPFBkpqSmcvENunlb?from=from_copylink)》 a16z (Andreessen Horowitz) 是一家风险投资公司，以其多元化的投资领域著称，被投资公司包括 Airbnb 、 Meta 和 Twitter 等。本次访谈，20VC with Harry Stebbings和 a16z 围绕风险投资、创业者判断、AI、宏观环境与个人心智展开。
 
 ![](img/82fe47fd0adbab94b8c38f81272d33d2.png)
 
-+   《[YC CEO：如何让 Claude 为你的 AI 工程团队编写代码？丨Y Combinator](https://waytoagi.feishu.cn/wiki/Kv8xwMDDGiGKkvkhcOJcUGeSnCd?from=from_copylink)》YC总裁兼CEO Gary Tan早年在 Palantir 做过工程师、设计师和产品经理，后来联合创办 Posterous，也写过 YC 内部社交平台和知识库 Bookface 的第一版。本期对话试图回答一个更具体的问题：当 Claude Code 这类 agent 已经能写大量代码时，人应该怎样组织它，才不只是得到一堆看起来合理、实际会坏掉的代码？
++ 《[YC CEO：如何让 Claude 为你的 AI 工程团队编写代码？丨Y Combinator](https://waytoagi.feishu.cn/wiki/Kv8xwMDDGiGKkvkhcOJcUGeSnCd?from=from_copylink)》YC总裁兼CEO Gary Tan早年在 Palantir 做过工程师、设计师和产品经理，后来联合创办 Posterous，也写过 YC 内部社交平台和知识库 Bookface 的第一版。本期对话试图回答一个更具体的问题：当 Claude Code 这类 agent 已经能写大量代码时，人应该怎样组织它，才不只是得到一堆看起来合理、实际会坏掉的代码？
 
 ![](img/5ff3322dce5598dd65db1cfa1630d1d4.png)
 
-###  4 月 26 日
+### 4 月 26 日
 
-+   《[你不知道的 AI Coding：非技术人的上手、场景与实战](https://waytoagi.feishu.cn/wiki/Nl2Xwa1vSifcCzkYMz2c4EitnDd?from=from_copylink)》这篇实用指南面向产品、运营等非技术人群，拆解了Claude Code零门槛落地玩法。本篇文章分享了需求精准描述、项目规范配置、Skill工作流沉淀等核心技巧。无需深厚的编程基础，就能搭建高效AI工作流，将重复繁琐工作自动化，全面提升日常办公与内容产出效率。
++ 《[你不知道的 AI Coding：非技术人的上手、场景与实战](https://waytoagi.feishu.cn/wiki/Nl2Xwa1vSifcCzkYMz2c4EitnDd?from=from_copylink)》这篇实用指南面向产品、运营等非技术人群，拆解了Claude Code零门槛落地玩法。本篇文章分享了需求精准描述、项目规范配置、Skill工作流沉淀等核心技巧。无需深厚的编程基础，就能搭建高效AI工作流，将重复繁琐工作自动化，全面提升日常办公与内容产出效率。
 
-
-+   《[为 Agent 设计产品【译】](https://waytoagi.feishu.cn/wiki/C01kwFKSEiRRZkkYGXVc2XIHnwd?from=from_copylink)》人机交互正在迎来颠覆性转折，传统图形界面不再是软件的核心入口。企业软件正全面向Agent适配升级，依托MCP等协议实现无界面自动化操作。本篇文章结合真实产品案例，拆解了Agent时代的产品设计关键：主动提供规范标准、搭建反馈机制、补齐信息缺口，为产品研发与企业数字化升级提供全新设计逻辑与落地方向。
++ 《[为 Agent 设计产品【译】](https://waytoagi.feishu.cn/wiki/C01kwFKSEiRRZkkYGXVc2XIHnwd?from=from_copylink)》人机交互正在迎来颠覆性转折，传统图形界面不再是软件的核心入口。企业软件正全面向Agent适配升级，依托MCP等协议实现无界面自动化操作。本篇文章结合真实产品案例，拆解了Agent时代的产品设计关键：主动提供规范标准、搭建反馈机制、补齐信息缺口，为产品研发与企业数字化升级提供全新设计逻辑与落地方向。
 
 ![](img/a8e1054cc8f20694ff1df2c7c7c29d5e.png)
 
-+   《[记忆，是 Agent 基建｜对话 Calvin@Vida](https://waytoagi.feishu.cn/wiki/KuLiwf9cAiobk7kZjhechzaYnOb?from=from_copylink)》随着大模型性能趋近同质化，专属记忆能力已成为AI体验突围的关键。对标OpenAI付费封闭的Chronicle，开源项目OpenChronicle横空出世，以本地优先方案夺回用户记忆所有权。它搭建跨应用统一记忆池，借助MCP协议打通各类AI工具，实现工作行为与项目上下文无缝衔接。跳出单一对话记忆，深耕行为习惯沉淀，为主动式Agent筑牢底层基建，打破大厂生态绑定，给用户自由、连贯、无束缚的AI全新交互体验！
++ 《[记忆，是 Agent 基建｜对话 Calvin@Vida](https://waytoagi.feishu.cn/wiki/KuLiwf9cAiobk7kZjhechzaYnOb?from=from_copylink)》随着大模型性能趋近同质化，专属记忆能力已成为AI体验突围的关键。对标OpenAI付费封闭的Chronicle，开源项目OpenChronicle横空出世，以本地优先方案夺回用户记忆所有权。它搭建跨应用统一记忆池，借助MCP协议打通各类AI工具，实现工作行为与项目上下文无缝衔接。跳出单一对话记忆，深耕行为习惯沉淀，为主动式Agent筑牢底层基建，打破大厂生态绑定，给用户自由、连贯、无束缚的AI全新交互体验！
 
-###  4 月 24 日
+### 4 月 24 日
 
-+   《[顶级孵化器YC的最新指南：如何构建AI Native的团队，为什么传统管理层正在消失？](https://waytoagi.feishu.cn/wiki/Pm0wwLzpxikm2mknS4acxkpin0h?from=from_copylink)》
++ 《[顶级孵化器YC的最新指南：如何构建AI Native的团队，为什么传统管理层正在消失？](https://waytoagi.feishu.cn/wiki/Pm0wwLzpxikm2mknS4acxkpin0h?from=from_copylink)》
 
 ![](img/c18bc4040ac063efbed886a36e403844.png)
 
-+   《[子智能体 vs 智能体团队：颠覆全局的架构抉择](https://waytoagi.feishu.cn/wiki/TAx1wE2XbiQ0dpkbZxFc0SOOn3e?from=from_copylink)》大多数的AI架构设计都存在核心误区，复杂任务盲目堆砌多智能体，反而加剧了协作混乱与信息损耗。本篇文章带你厘清sub-agent与agent teams的底层区别，可以帮助你规避上下文断层、协调成本过高的问题，高效搭建轻量化、高稳定、易维护的智能体系统！
++ 《[子智能体 vs 智能体团队：颠覆全局的架构抉择](https://waytoagi.feishu.cn/wiki/TAx1wE2XbiQ0dpkbZxFc0SOOn3e?from=from_copylink)》大多数的AI架构设计都存在核心误区，复杂任务盲目堆砌多智能体，反而加剧了协作混乱与信息损耗。本篇文章带你厘清sub-agent与agent teams的底层区别，可以帮助你规避上下文断层、协调成本过高的问题，高效搭建轻量化、高稳定、易维护的智能体系统！
 
-
-+   《[AI / ML 所需线性代数知识（完整路线图）](https://waytoagi.feishu.cn/wiki/UTSCw2RD5i9W55kMiLZcM6HJnZF?from=from_copylink)》做 AI / ML 并不需要数学博士学位。你只需要掌握足够的线性代数，这样在打开论文或 PyTorch 文档时，不会总觉得自己在迷雾里打转。这份路线图会按正确顺序告诉你该学什么，以及为什么它重要。
++ 《[AI / ML 所需线性代数知识（完整路线图）](https://waytoagi.feishu.cn/wiki/UTSCw2RD5i9W55kMiLZcM6HJnZF?from=from_copylink)》做 AI / ML 并不需要数学博士学位。你只需要掌握足够的线性代数，这样在打开论文或 PyTorch 文档时，不会总觉得自己在迷雾里打转。这份路线图会按正确顺序告诉你该学什么，以及为什么它重要。
 
 ![](img/972fb3350f11bf84ebba0402d7141a6f.png)
 
-+   《[Z Tech｜对话王子涵：离开DeepSeek，我人生的逆向思考](https://waytoagi.feishu.cn/wiki/FsT1wvukii49sVkZrrQcE2binof?from=from_copylink)》本篇深度对话对话顶尖青年AI学者王子涵，介绍了他的学术成长与DeepSeek实战经历。结合一线研发经验，他拆解了MoE模型优化、强化学习训练缺陷，剖析推理坍塌、环境噪声等行业共性难题，还给出了可落地的过滤优化方案。快来一探究竟！
++ 《[Z Tech｜对话王子涵：离开DeepSeek，我人生的逆向思考](https://waytoagi.feishu.cn/wiki/FsT1wvukii49sVkZrrQcE2binof?from=from_copylink)》本篇深度对话对话顶尖青年AI学者王子涵，介绍了他的学术成长与DeepSeek实战经历。结合一线研发经验，他拆解了MoE模型优化、强化学习训练缺陷，剖析推理坍塌、环境噪声等行业共性难题，还给出了可落地的过滤优化方案。快来一探究竟！
 
 ![](img/db2eeb628388f313a66cfd14316f10a9.png)
 
-+   《[如何构建一个 Deep Researcher（译文）](https://waytoagi.feishu.cn/wiki/QVjbwk5bYiAT9Jk5cDlcC7g0nBd?from=from_copylink)》本篇文章带来一套百分百开源、支持本地自托管的深度研究技术栈。整合Onyx检索、CrewAI流程编排与Voxtral语音能力，通过分层隔离、迭代反思、多维度检索规避幻觉。整套方案代码完全开放、可以自由定制搭建，既能保障数据主权与合规性，又能低成本搭建高质量私有化AI研究工作流，快来上手试试！
++ 《[如何构建一个 Deep Researcher（译文）](https://waytoagi.feishu.cn/wiki/QVjbwk5bYiAT9Jk5cDlcC7g0nBd?from=from_copylink)》本篇文章带来一套百分百开源、支持本地自托管的深度研究技术栈。整合Onyx检索、CrewAI流程编排与Voxtral语音能力，通过分层隔离、迭代反思、多维度检索规避幻觉。整套方案代码完全开放、可以自由定制搭建，既能保障数据主权与合规性，又能低成本搭建高质量私有化AI研究工作流，快来上手试试！
 
++ 《[DeekSeekV4发布](https://waytoagi.feishu.cn/wiki/Cz3fwvWcVieOMxkePAtcQs41n6O?from=from_copylink)》4月24日，备受期待的DeepSeek全新系列模型——DeepSeek-V4预览版，终于正式上线并同步开源。在业界长达数月的猜测与等待后，DeepSeek没有让大家失望：它带来了1M（百万）超长上下文的普惠标配、Agent能力的全面跃升，以及一次引人瞩目的国产化转身。
 
-+   《[DeekSeekV4发布](https://waytoagi.feishu.cn/wiki/Cz3fwvWcVieOMxkePAtcQs41n6O?from=from_copylink)》4月24日，备受期待的DeepSeek全新系列模型——DeepSeek-V4预览版，终于正式上线并同步开源。在业界长达数月的猜测与等待后，DeepSeek没有让大家失望：它带来了1M（百万）超长上下文的普惠标配、Agent能力的全面跃升，以及一次引人瞩目的国产化转身。
++ 《[Cat Wu 面试了几百个 PM 候选人，几乎没人答对一个问题：AI 产品经理到底应该干什么？](https://waytoagi.feishu.cn/wiki/Vn35wYDOeiaVWmk2jIxcORTVnXg?from=from_copylink)》Anthropic Claude Code和Cowork的产品负责人Cat Wu和Boris Cherny搭档，带着团队把产品功能的交付周期从半年压到了一天 。在Lenny's Podcast最新一期中，Cat 聊了Anthropic内部的速度文化、PM 角色的剧变、源代码泄露的善后，以及那个让开源社区炸锅的OpenClaw封堵决定。
 
+### 4 月 23 日
 
-+   《[Cat Wu 面试了几百个 PM 候选人，几乎没人答对一个问题：AI 产品经理到底应该干什么？](https://waytoagi.feishu.cn/wiki/Vn35wYDOeiaVWmk2jIxcORTVnXg?from=from_copylink)》Anthropic Claude Code和Cowork的产品负责人Cat Wu和Boris Cherny搭档，带着团队把产品功能的交付周期从半年压到了一天 。在Lenny's Podcast最新一期中，Cat 聊了Anthropic内部的速度文化、PM 角色的剧变、源代码泄露的善后，以及那个让开源社区炸锅的OpenClaw封堵决定。
-
-
-###  4 月 23 日
-
-+   《[🧠✨ChatGPT 5.5 有了判断力](https://waytoagi.feishu.cn/wiki/MOTwwBN2oiHYo9kq5kvc9zZQnQd?from=from_copylink)》GPT-5.5 的核心意义，不是“更会答题”，而是更像一个能把复杂工作真正往前推进的执行型智能体。代码、知识工作、科研分析、网络安全全面进阶，400K 上下文支撑复杂任务，延迟不变、生成效率提升 20%，还助力数学难题取得新突破。今天已经开始向 ChatGPT 的 Plus、Pro、Business、Enterprise 用户滚动开放！
++ 《[🧠✨ChatGPT 5.5 有了判断力](https://waytoagi.feishu.cn/wiki/MOTwwBN2oiHYo9kq5kvc9zZQnQd?from=from_copylink)》GPT-5.5 的核心意义，不是“更会答题”，而是更像一个能把复杂工作真正往前推进的执行型智能体。代码、知识工作、科研分析、网络安全全面进阶，400K 上下文支撑复杂任务，延迟不变、生成效率提升 20%，还助力数学难题取得新突破。今天已经开始向 ChatGPT 的 Plus、Pro、Business、Enterprise 用户滚动开放！
 
 ![](img/a342ee50e96b56f533274ab3b836ecb7.png)
+
+
 
 +   《[Kora产品负责人：如果Agent负责中间 80% 的工作，人还剩什么价值？丨Every](https://waytoagi.feishu.cn/wiki/QBFcwFdwsiwfIUkxSO7cVsVHnBf?from=from_copylink)》Kieran 是 Kora 的产品负责人，他在这期对话里，和 Dan Shipper 讨论了一个越来越紧迫的问题：当 AI 能做的事越来越多，人类的位置在哪？Kieran 的答案是：人类不是被挤出去，而是变成"三明治两端的面包"——在最开始定义问题，在最后打磨作品，中间的执行让 AI 去填。整个对话的核心，就是在帮你找到你在 AI 时代的具体位置。
 
@@ -178,11 +173,9 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[斯坦福经济学家：职业阶梯正在失效，年轻人该怎么在 AI 时代往上走？丨EO](https://waytoagi.feishu.cn/wiki/FS2zwmVVdiH0hykH93acCJ5bnqb?from=from_copylink)》斯坦福学者通过海量职场数据，揭示了AI冲击职场的残酷真相。AI精准取代了入门级标准化执行工作，而资深从业者却凭借经验与综合能力站稳脚跟。未来职场或许将是人统筹方向、AI落地执行的全新模式。如果你关心的不只是“会不会被替代”，而是“职业的起点还在不在”，这期几乎每一句都值得划线。
 
-
 +   《[OpenAI 发布 Workspace Agents，接替 GPTs](https://waytoagi.feishu.cn/wiki/GXK5wDOd4iyN3skNzWQcTyyVncO?from=from_copylink)》OpenAI重磅上线Workspace Agents，依托Codex底层架构，可以快速搭建智能体，联动Slack、办公软件等多类工具，可以自动承接IT审核、产品反馈、周报统计、销售运维、风控排查等高频重复的工作。非技术人员也能自主搭建团队专属Agent。现阶段限时免费体验，快来试试！
 
-
-###  4 月 22 日
+## 4 月 22 日
 
 +   《[可以优化生图提示词 的 提示词](https://waytoagi.feishu.cn/wiki/DvkYw6iagiAhz3kQ44BcEQAUnod?from=from_copylink)》猫叔这个针对GPT Image 2优化的提示词引擎，可以把你的模糊想法一键转为专业可用的绘图指令。系统自动识别角色、场景、叙事等五大类型，按主体、环境、光影、镜头、风格结构化输出，拒绝空泛描述，可以精准匹配画面逻辑与质感，减少试错成本与token消耗。新手也能稳定生成高质量图像，提升AI生图效率与成品率。
 
@@ -202,7 +195,7 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 ![](img/83aa3aee5c177c5c42faa82a91a2dd55.png)
 
-###  4 月 21 日
+## 4 月 21 日
 
 +   《[我逆向了Claude Design！免费开源！](https://waytoagi.feishu.cn/wiki/NF5uwRFuriAnpYkHMKTcERHpnbg?from=from_copylink)》花叔依托 Claude Design 精髓重构了工作流，打造了一个适配终端的设计 Skill。在终端一句话即可完成 PPT、可交互原型、动画等设计产出。还支持多风格并行生成，成本与效率远超传统工具。这篇文章讲三件事：为什么做这个skill、它能做什么（带一堆案例）、以及它和Claude Design的差异在哪里。
 
@@ -212,15 +205,13 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[GPT-Image-2 全量上线，中文顶到爆，50+ Case 生图实测](https://waytoagi.feishu.cn/wiki/Vkv5wJzJuiRUsok0c6HcR2rInyd?from=from_copylink)》GPT-Image-2已经全量上线，在中文排版、复杂版式与长图文呈现上实现了跨越式升级。短短几句提示词，就能一键生成杂志封面、信息长图、复古海报、UI界面、古风印刷品等专业级内容，风格迁移精准、细节质感拉满。作者实测了五十张作品，覆盖实用设计与趣味创作，快来看看效果如何！
 
-
 +   《[前 Google PM：从 PRD 到原型，Claude Code 正在重写 PM 工作流丨Aakash Gupta](https://waytoagi.feishu.cn/wiki/BEWpwdZZtitMKXksJYXcpHHOnNh?from=from_copylink)》Mahesh Yadav，一个做过 Microsoft、Amazon、Meta、Google 的产品经理。本期谈话他将带我们一起拆解下：PM 的价值到底会变大，还是会被边缘化？ 他没有在讲一套空中楼阁的方法论，而是在用自己从大厂到独立 Builder 的切换，解释 PM 为什么必须重新定义自己的工作边界。
 
-
-###  4 月 20 日
+## 4 月 20 日
 
 +   《[最值得安装的20个Skills](https://waytoagi.feishu.cn/wiki/MX8KwirLMiBSTpkUm26cCldVn4e?from=from_copylink)》冷逸这篇文章精选了日常高频使用的20个实用Skill，专为Claude Code、Codex等AI Agent打造，省去你自行筛选测试的麻烦。安装方式特别简单，只需要复制指令或链接即可一键部署，上手零门槛。
 
-+   《[从0开始，在国内用上Claude Code的终极保姆教程来了。](https://waytoagi.feishu.cn/wiki/XEJXwgpsFiTxk6kVmNPcNkXgnYe?from=from_copylink)》卡兹克这份Claude Code小白教程专为国内用户打造，无需魔法和海外账号即可上手，覆盖Mac与Windows双系统完整安装流程，还能通过CC Switch灵活接入GLM等国产模型。文章中详细讲解了启动方式、目录规范，还提供了精简实用的CLAUDE.md模板，可以帮你建立高效的AI协作约束。快来上手试试！
++   《[从0开始，在国内用上Claude Code的终极保姆教程来了。](https://waytoagi.feishu.cn/wiki/XEJXwgpsFiTxk6kVmNPcNkXgnYe?from=from_copylink)》卡兹克这份Claude Code小白教程专为国内用户打造，无需魔法和海外账号即可上手，覆盖Mac与Windows双系统完整安装流程，还能通过CC Switch灵活接入GLM等国产模型。文章中详细讲解了启动方式、目录规范，还提供了精简实用的`CLAUDE.md`模板，可以帮你建立高效的AI协作约束。快来上手试试！
 
 +   《[听说让Figma、Adobe股价大跌的Claude Design提示词泄露了，我深挖了7个提示词技巧给你们抄作业](https://waytoagi.feishu.cn/wiki/OC01ww09Kixf7AkgqxCcLbcTnyh?from=from_copylink)》小歪这篇文章深度拆解了Claude Design的系统提示词，提炼出7条高效Prompt核心法则，从专家角色精准定义、杜绝幻觉编造，到细化禁用项摆脱AI腔，再到引导AI反问、提供多维度方案与可调参数。搭配真实对比案例，可直接迁移到写作、设计等各类场景，大幅减少无效返工，降低沟通成本，让AI输出更贴合需求。
 
@@ -234,16 +225,13 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 +   《[Meta产品高管：旧版产品经理已死，取而代之的是AI-first建造者 | Lenny's Podcast](https://waytoagi.feishu.cn/wiki/Nh79wmWR9ivbbpk9AVXcN4H7nuh?from=from_copylink)》Nikhyl Singhal 曾在 Meta、Google、Credit Karma 做产品高管，也是 The Skip 社群的创始人，长期和一线产品负责人、创业者一起工作。这期最值得读的地方，不是再问一遍“AI 会不会替代 PM”，而是把岗位变化拆得很具体：哪些工作已经开始被吃掉，哪些能力正在被重新定价，为什么很多人明明很焦虑，却还没真正开始转向。
 
-
-###  4 月 19 日
+## 4 月 19 日
 
 +   《[【译】关于 Claude Design 的一些想法和感受 · Sam Henri Gold](https://waytoagi.feishu.cn/wiki/TSgSwe3HSibLtlkRUr8cWp3Bn4f?from=from_copylink)》Claude Design依托原生代码结构，可以与开发很好地无缝协同，重构设计工作流。未来工具或许将分化为代码原生与纯创意探索两条路径，对设计师、产品团队而言，这不仅是工具更迭，更是效率与工作流的彻底升级！
 
 +   《[大语言模型中的提示词缓存技术详解](https://waytoagi.feishu.cn/wiki/IXL0wgX6sivJegk9oJ3cyxUdn3b?from=from_copylink)》长时程Agent工作流中，固定的超长系统提示词在多轮对话里会被重复计算，会产生大量无价值token消耗。Prompt caching正是破解这一浪费的关键方案，能显著降低使用成本。但如果你想把它真正用好，就得先理解它在底层到底是怎么工作的，让我们来一起一探究竟！
 
-
 +   《[4.13- 4.19｜本周 AI 论文精选](https://waytoagi.feishu.cn/wiki/IVMywh0nni420vkt7E5csxrmnoh?from=from_copylink)》本周AI论文精选汇聚十大前沿突破，直指Agent科研、长时程协作、产业评测等核心方向。从全自动AI科研团队高效攻克对齐难题，到文件驱动的长时程研究框架，再到贴合真实生产的Agent评测体系，同时覆盖高性能开源模型、记忆迁移、日志自动诊断等落地技术，清晰展现了AI Agent从实验室走向产业的关键进化，极具参考与落地价值。
-
 
 +   《[Hermes Memory系统协议P链：让AI Agent永不遗忘的隐形纽带](https://waytoagi.feishu.cn/wiki/SuUEwKVnbiLoYWk2nqVc93gwnCc?from=from_copylink)》Hermes Agent独创的P链协议，打破了AI会话遗忘困境，让跨天、跨平台的连续协作成为现实。依托会话血缘链与全文检索，AI能完整追溯历史对话、自动沉淀经验技能，还能智能压缩上下文，高效又省Token。相比传统框架与RAG，AI从一次性工具升级为懂你的长期协作伙伴，大幅提升了复杂任务的执行效率。
 
@@ -257,15 +245,15 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 ![](img/935facf639a10543f4dd2377fbd5a9d5.png)
 
-###
+## 阅读更多
 
-阅读更多：[4.4 历史更新](https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc)
+[4.4 历史更新](https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc)
 
 ---
 
-#   💬 飞书 & 🛰️交流群
+## 💬 飞书 & 🛰️交流群
 
-#### **说明：**
+### 说明：
 
 1.  请填写下面问卷进群，群内会分享最新 AI 信息、社区活动；
 
@@ -273,13 +261,13 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 
 1.  飞书群内置 AI 智能机器人，可以回复任何与 AI 相关的问题，欢迎加入。
 
-# 🏠加入WaytoAGI-填写后加入飞书/🛰️群
+## 🏠加入WaytoAGI-填写后加入飞书/🛰️群
 
 <https://waytoagi.feishu.cn/share/base/form/shrcnlIVMcuAn2jFHfJ2Bez7RWe?iframeFrom=docx&ccm_open=iframe>
 
 ---
 
-# 🙏 友情推荐
+## 🙏 友情推荐
 
 1.  如果您对「飞书」这款效率工具感兴趣，或者您希望结交各行各业志同道合的朋友和他们交流企业/个人效率的提升，诚邀您访问「飞书官方社区——飞行社」
 
@@ -292,6 +280,8 @@ WaytoAGI 和 Enter.pro[ 联合发起 ](https://waytoagi.feishu.cn/wiki/PzkNwVQ1y
 +   自 2023 年上半年建立以来，保持长期活跃更新
 
 +   扫码右侧二维码，加入知识星球
+
+
 
 ![](img/c60c7d0fb6bd78eaa3ced041d143a374.png)
 
@@ -531,7 +521,7 @@ AI春晚导演
 
 ---
 
-# 😊 我应该从哪里开始？
+## 😊 我应该从哪里开始？
 
 ![](img/9cdc55fee82a6760572b86965cd6e1ac.png)
 
@@ -539,21 +529,21 @@ AI春晚导演
 
 ### 推荐布鲁姆分类法学习路径
 
-1.  **记忆**：先从[ AI 的历史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)、[基本术语](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)、[重要人物](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd)、[方法和原理](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblolGx2mprs1EQz&view=vewx5ROYtl)等开始了解，看看[入门课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)
+1. **记忆**：先从[ AI 的历史](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl1tOC3ZKbrcHVn&view=vewTtypUZc)、[基本术语](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbltvr7KExCt7Jpw&view=vewjxk9tDu)、[重要人物](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblLtN12KuvP5reO&view=vewuvGBXhd)、[方法和原理](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblolGx2mprs1EQz&view=vewx5ROYtl)等开始了解，看看[入门课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)
 
-1.  **理解**：进一步了解 AI 领域的[主要思想和概念](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)，将[精选 AI 网站](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblrU3QwceYkyu5Y&view=vewhpVxSzR)和[ APP 产品](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblLFKWXaBNu2RC8&view=vewDRCDZJH)都试一试
+1. **理解**：进一步了解 AI 领域的[主要思想和概念](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblC69kVi8xZMQ4B&view=vewFgR7hhS)，将[精选 AI 网站](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblrU3QwceYkyu5Y&view=vewhpVxSzR)和[ APP 产品](https://ywh1bkansf.feishu.cn/wiki/BVmWwpSJGioFyJkfAI3crXWTnyb?table=tblLFKWXaBNu2RC8&view=vewDRCDZJH)都试一试
 
-1.  **应用**：深入[了解 Prompt](https://ywh1bkansf.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbldSgFt2xNUDNAz&view=vewo2g2ktO)，选择适合自己的[ AI 对话](https://ywh1bkansf.feishu.cn/wiki/QddLw0teKi7nUCkDRIecskn3nuc)、[绘画](https://ywh1bkansf.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb)和[语音](https://ywh1bkansf.feishu.cn/wiki/ZXPiw2OuLi2YsxkkmaLcPTyInrc)产品，每天都用它，并使用[它们来解决实际问题或提升效率](https://waytoagi.feishu.cn/wiki/A0Y0wpBOcig7HLkSFNcceTA6nwb)
+1. **应用**：深入[了解 Prompt](https://ywh1bkansf.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbldSgFt2xNUDNAz&view=vewo2g2ktO)，选择适合自己的[ AI 对话](https://ywh1bkansf.feishu.cn/wiki/QddLw0teKi7nUCkDRIecskn3nuc)、[绘画](https://ywh1bkansf.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb)和[语音](https://ywh1bkansf.feishu.cn/wiki/ZXPiw2OuLi2YsxkkmaLcPTyInrc)产品，每天都用它，并使用[它们来解决实际问题或提升效率](https://waytoagi.feishu.cn/wiki/A0Y0wpBOcig7HLkSFNcceTA6nwb)
 
-1.  **分析**：大量阅读[各类文章](https://ywh1bkansf.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tblsQKR3a22uFqsp)、[视频](https://ywh1bkansf.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&view=vew68BlUHo)以及[行业报告](https://ywh1bkansf.feishu.cn/wiki/FnXcwGrwSimQxnkNo1kcJzPYn7f)，理解各知识之间的关系
+1. **分析**：大量阅读[各类文章](https://ywh1bkansf.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tblsQKR3a22uFqsp)、[视频](https://ywh1bkansf.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&view=vew68BlUHo)以及[行业报告](https://ywh1bkansf.feishu.cn/wiki/FnXcwGrwSimQxnkNo1kcJzPYn7f)，理解各知识之间的关系
 
-1.  **评价**：通过[各类课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)与[书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)更深入学习，判断信息的价值、提出自己的观点和论证
+1. **评价**：通过[各类课程](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w)与[书籍](https://ywh1bkansf.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ)更深入学习，判断信息的价值、提出自己的观点和论证
 
-1.  **创造**：积极参与[社区共创项目](https://waytoagi.feishu.cn/wiki/KexVwLKhYiHm7bk2IL9cym0WnTb)，创造你自己的新想法或产品
+1. **创造**：积极参与[社区共创项目](https://waytoagi.feishu.cn/wiki/KexVwLKhYiHm7bk2IL9cym0WnTb)，创造你自己的新想法或产品
 
 ---
 
-# 🧭 快速导航
+## 🧭 快速导航
 
 ### 0. 起点
 
@@ -607,46 +597,45 @@ AI春晚导演
 
 📻 A[I 播客精选](https://ywh1bkansf.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tblj6NXbS3ftRrCM&view=vew1fNFZic)
 
+
+
 ⚖ [全球 AI 法规手册](https://waytoagi.feishu.cn/wiki/ZvMawDHnUik6TIk10HXccVpdnac)
 
-📃 A[I 资讯与论文精选](https://waytoagi.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tbltxLmczQ0fdHaN&view=vewuqMbDMU)
+📃 [AI 资讯与论文精选](https://waytoagi.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tbltxLmczQ0fdHaN&view=vewuqMbDMU)
 
-📔 A[I 研究报告精选](https://waytoagi.feishu.cn/wiki/WvhZwk16WiEnSvk8AcpcdZetnMe?table=ldxthSdnltXbtSvg)
+📔 [AI 研究报告精选](https://waytoagi.feishu.cn/wiki/WvhZwk16WiEnSvk8AcpcdZetnMe?table=ldxthSdnltXbtSvg)
 
 [🎓 教程与学习手册精选](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblenNiaJkoTiQDQ&view=vewZ12GaXz)
 
-🛠 资[源与项目精选](https://waytoagi.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tblMw78mOVBQs22X&view=vewU1XdpuK)
+🛠 [资源与项目精选](https://waytoagi.feishu.cn/wiki/YjJgwbKnriZBZ0kVn6Kc1gSKnsf?table=tblMw78mOVBQs22X&view=vewU1XdpuK)
 
-### 3. AI 应用与前沿
+## 3. AI 应用与前沿
 
 > Sam Altman：不要小打小闹，要干就干大事，满怀希望地去行动
 
 🛠 AI 实际应用的案例（工作/学习/生活...)
 
-🧰 辅[助学习工具精选](https://waytoagi.feishu.cn/wiki/FVGfwjMtriTDUvkwqvwcYisongh?table=tblp81WDObH3I20H&view=vewM2PB3Iu)
+🧰 [辅助学习工具精选](https://waytoagi.feishu.cn/wiki/FVGfwjMtriTDUvkwqvwcYisongh?table=tblp81WDObH3I20H&view=vewM2PB3Iu)
 
-🤩 小[互每日观察动态](https://waytoagi.feishu.cn/wiki/T2fUwmHBSiHU6Ukq9Imcu7n7nMh)
+🤩 [小互每日观察动态](https://waytoagi.feishu.cn/wiki/T2fUwmHBSiHU6Ukq9Imcu7n7nMh)
 
-🤹 A[I Agents 入门文章 ](https://waytoagi.feishu.cn/wiki/XGEzwjiJTiAr83kbHlgceRHxnwc?table=tbl3t7DVsBk7zOxV&view=vewBk3R2Jb)& 精[选项目](https://waytoagi.feishu.cn/wiki/KdN2wM9fSiw6RBkTcyWcFrfJnOf?table=tblMk8RPhVaSzmSF&view=vewrtQbBai)
+🤹 [AI Agents 入门文章](https://waytoagi.feishu.cn/wiki/XGEzwjiJTiAr83kbHlgceRHxnwc?table=tbl3t7DVsBk7zOxV&view=vewBk3R2Jb) & [精选项目](https://waytoagi.feishu.cn/wiki/KdN2wM9fSiw6RBkTcyWcFrfJnOf?table=tblMk8RPhVaSzmSF&view=vewrtQbBai)
 
-[🤖 A](https://waytoagi.feishu.cn/wiki/XGEzwjiJTiAr83kbHlgceRHxnwc?table=tbl3t7DVsBk7zOxV&view=vewBk3R2Jb)[I 与机器人相关文章](https://waytoagi.feishu.cn/wiki/HvinwkBD3ii0rkkUazVcfaGqnZc?table=tblADfqTsdQoEpel&view=vewBQjDoAv)
+[🤖 AI](https://waytoagi.feishu.cn/wiki/XGEzwjiJTiAr83kbHlgceRHxnwc?table=tbl3t7DVsBk7zOxV&view=vewBk3R2Jb) 与 [机器人相关文章](https://waytoagi.feishu.cn/wiki/HvinwkBD3ii0rkkUazVcfaGqnZc?table=tblADfqTsdQoEpel&view=vewBQjDoAv)
 
-💰 中[国 AI 生态投资地图](https://waytoagi.feishu.cn/wiki/ZcRRwwkXvia2TPk29PGcO5cEnkf)
+💰 [中国 AI 生态投资地图](https://waytoagi.feishu.cn/wiki/ZcRRwwkXvia2TPk29PGcO5cEnkf)
 
 ---
 
-# 📅 周刊与兴趣小组
-
+## 周刊与兴趣小组
 
 [WaytoAGI.com 网站](http://www.waytoagi.com)
 
 内置知识库 AI 助手
 
-
 [B 站｜Bilibili](https://space.bilibili.com/259768893)
 
 以视频普及 AI 知识
-
 
 [📕](https://www.xiaohongshu.com/user/profile/6457d2e4000000001f030dbe)
 
@@ -654,7 +643,7 @@ AI 消息及时传递
 
 ![](img/4a61cd6a65d535ed4a4367502deb1c95.png)
 
-[ X ｜ Twitter](https://twitter.com/WaytoAGI)
+[X ｜ Twitter](https://twitter.com/WaytoAGI)
 
 知识库精选内容同步
 
@@ -672,7 +661,7 @@ AI 消息及时传递
 
 [💬Prompt（提示词）](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbldSgFt2xNUDNAz&view=vewo2g2ktO)
 
-🧠A[I Agents（智能体）](https://waytoagi.feishu.cn/wiki/GFS0wJB78izVBmk3LVgcCn2MnCh)
+🧠[AI Agents（智能体）](https://waytoagi.feishu.cn/wiki/GFS0wJB78izVBmk3LVgcCn2MnCh)
 
 [🎨AI 绘画](https://waytoagi.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb)
 
@@ -692,12 +681,12 @@ AI 消息及时传递
 
 [🐻社区共创项目](https://waytoagi.feishu.cn/wiki/KexVwLKhYiHm7bk2IL9cym0WnTb?table=tblHgpm6a5ric3KB&view=vewxxF51yJ)
 
-# 🎯  愿景和目标
+## 愿景和目标
 
 > 要实现通用人工智能（AGI）也许有很长的路要走，
 
 > 我们的目标是让每个人的学习过程少走弯路，让更多的人因 AI 而强大。
 
-# [🌈  去官网 ](https://www.waytoagi.com/zh)
+### [🌈 去官网](https://www.waytoagi.com/zh)
 
-# [📖  返回知识库 ](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
+### [📖 返回知识库](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)

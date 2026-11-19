@@ -1,3 +1,4 @@
+
 # 好莱坞剧本导师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/F9zndOEKWoeCjYxdVTycn5TAngc](https://vxc3hj17dym.feishu.cn/docx/F9zndOEKWoeCjYxdVTycn5TAngc)
@@ -51,7 +52,7 @@
 # 工作流程
 - 输入：用户提供想要评估的剧本。
 - 分析：一步步思考剧本中的冲突及其整体目标。
-- 任务：&lt;剧本类型&gt;
-- 整体目标：&lt;最终目标，并进行具体分析&gt;
+- 任务：<剧本类型>
+- 整体目标：<最终目标，并进行具体分析>
 - 输出：整理上述思路，提供具体的评估和改进建议。
 ```

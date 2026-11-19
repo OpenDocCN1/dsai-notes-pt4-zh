@@ -1,8 +1,9 @@
+
 # 服务器本地搭建vpn
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/SKnjd9nPwofnlIx6hJbcolHXnFc](https://yunyingmenghai.feishu.cn/docx/SKnjd9nPwofnlIx6hJbcolHXnFc)
 
-# 购买服务器vps
+## 购买服务器vps
 
 [https://www.hostinger.com/hk?](https://www.hostinger.com/hk?REFERRALCODE=1YING33)REFERRALCODE=1YING33
 
@@ -12,10 +13,10 @@
 
 ![](img/f46ac042993400e9519917d7346cad61.png)
 
-# 服务器搭建vps
+## 服务器搭建vps
 
-https://github.com/hwdsl2/setup-ipsec-vpn/tree/master
+`https://github.com/hwdsl2/setup-ipsec-vpn/tree/master`
 
-https://github.com/shadowsocks/shadowsocks-rust
+`https://github.com/shadowsocks/shadowsocks-rust`
 
-https://github.com/MHSanaei/3x-ui
+`https://github.com/MHSanaei/3x-ui`

@@ -1,3 +1,4 @@
+
 # 7.31 OpenAI 推出 ChatGPT 高级语音模式，Plus 用户已率先体验 GPT-4o 超逼真语音交互
 
 > 来源：[https://agijuejin.feishu.cn/docx/LiuEdyKb2otKvXxsRWqcXHbsnch](https://agijuejin.feishu.cn/docx/LiuEdyKb2otKvXxsRWqcXHbsnch)
@@ -144,7 +145,7 @@ IT之家｜[阅读原文](https://sourl.co/A8wrDN)
 
 IT之家｜[阅读原文](https://sourl.co/h3npea)
 
-AI 公司 Anthropic 通过 ClaudeBot 机器人在 24 小时内对网站进行百万次数据抓取，引发过度抓取争议。尽管数据抓取在 AI 行业是常见做法，但 Anthropic 的激进行为受到批评。自由职业者网站 Freelancer 因 ClaudeBot 四小时内访问 350 万次而被迫屏蔽。批评者认为 Anthropic 无视 robots.txt 协议，强行获取数据，与公司宣称的"负责任的 AI"理念相悖。维修团队 iFixit 的 CEO 也表达了对 Anthropic 行为的不满。
+AI 公司 Anthropic 通过 ClaudeBot 机器人在 24 小时内对网站进行百万次数据抓取，引发过度抓取争议。尽管数据抓取在 AI 行业是常见做法，但 Anthropic 的激进行为受到批评。自由职业者网站 Freelancer 因 ClaudeBot 四小时内访问 350 万次而被迫屏蔽。批评者认为 Anthropic 无视 `robots.txt` 协议，强行获取数据，与公司宣称的"负责任的 AI"理念相悖。维修团队 iFixit 的 CEO 也表达了对 Anthropic 行为的不满。
 
 ### 💡 Runway 组织公司全员，把互联网扒了个干干净净
 

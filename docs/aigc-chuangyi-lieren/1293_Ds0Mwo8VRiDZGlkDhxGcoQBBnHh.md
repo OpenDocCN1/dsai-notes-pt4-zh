@@ -1,3 +1,4 @@
+
 # 20240426-这是哪位鬼才想出的Prompt，一步把英文翻译成《诗经》风格？！
 
 > 来源：[https://aigcreative.feishu.cn/docx/JeLfdM3AaoAaZXxPRlpcLNTfnKY](https://aigcreative.feishu.cn/docx/JeLfdM3AaoAaZXxPRlpcLNTfnKY)
@@ -74,4 +75,4 @@ nothing for nothing. 哲理部分，可以引申到诗句“世上本无事，�
 请严格遵守以上工作流程， 对以下文字进行翻译：
 ```
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

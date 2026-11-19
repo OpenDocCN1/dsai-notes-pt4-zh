@@ -1,6 +1,7 @@
-# requirements.txt
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/R2LbdqczOodm5QxSXU3cb3vYnRB](https://qqs7y1hozd1.feishu.cn/docx/R2LbdqczOodm5QxSXU3cb3vYnRB)
+# `requirements.txt`
+
+> 来源：[`https://qqs7y1hozd1.feishu.cn/docx/R2LbdqczOodm5QxSXU3cb3vYnRB`](https://qqs7y1hozd1.feishu.cn/docx/R2LbdqczOodm5QxSXU3cb3vYnRB)
 
 ```
 openai==1.68.2

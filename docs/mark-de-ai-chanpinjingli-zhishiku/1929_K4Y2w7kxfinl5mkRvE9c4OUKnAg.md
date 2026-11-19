@@ -1,26 +1,21 @@
+
 # AI行业资讯 12.9
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/MUqFdWptKoFi0bxtcYQcOC0enTg](https://qqs7y1hozd1.feishu.cn/docx/MUqFdWptKoFi0bxtcYQcOC0enTg)
 
-# **本周亮点：**
+## 本周亮点：
 
-1.  OpenAI发布全新o1模型及ChatGPT Pro订阅服务
-
-1.  Meta重磅开源Llama 3.3-70B
-
-1.  腾讯混元大模型推出「文生视频」功能
-
-1.  字节跳动挖角阿里AI技术负责人周畅，引发行业关注
-
-1.  xAI公司计划扩张Colossus AI超级计算机系统
-
-1.  苹果与百度深化合作，文心大模型4.0将赋能苹果设备
-
-1.  LiblibAI联合星流推出Star-3 Alpha
+1. OpenAI发布全新o1模型及ChatGPT Pro订阅服务
+2. Meta重磅开源Llama 3.3-70B
+3. 腾讯混元大模型推出「文生视频」功能
+4. 字节跳动挖角阿里AI技术负责人周畅，引发行业关注
+5. xAI公司计划扩张Colossus AI超级计算机系统
+6. 苹果与百度深化合作，文心大模型4.0将赋能苹果设备
+7. LiblibAI联合星流推出Star-3 Alpha
 
 ---
 
-# OpenAI发布全新o1模型及ChatGPT Pro订阅服务
+## OpenAI发布全新o1模型及ChatGPT Pro订阅服务
 
 本周，OpenAI在一场仅持续15分钟的史上最短发布会上，推出了两项新功能：满血版o1模型和ChatGPT Pro订阅计划。
 
@@ -34,7 +29,7 @@ ChatGPT Pro订阅计划每月费用为200美元，提供无限使用和更智能
 
 ![](img/7c8a17f077d8a39b219d263992dbc756.png)
 
-# Meta重磅开源Llama 3.3-70B
+## Meta重磅开源Llama 3.3-70B
 
 本周，Meta宣布开源其最新的大模型——Llama 3.3-70B。尽管Llama 3.3只有700亿参数，但其性能与之前开源的Llama 3.1 4050亿参数模型相当，同时推理和部署成本大幅降低，输入成本降低了10倍，输出成本降低了近5倍。
 
@@ -48,7 +43,7 @@ Llama 3.3-70B的开源地址如下，大家有兴趣的话可以体验一下
 https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 ```
 
-# 腾讯混元大模型推出「文生视频」功能
+## 腾讯混元大模型推出「文生视频」功能
 
 腾讯混元大模型最新功能「文生视频」已正式上线，这是一个拥有130亿参数的视频生成大模型，能够根据简单的句子描述生成视频内容。
 
@@ -60,7 +55,7 @@ https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 
 ![](img/244fcc3f8efc3f4bc05858bf8ed07020.png)
 
-# 字节跳动挖角阿里AI技术负责人周畅，引发行业关注
+## 字节跳动挖角阿里AI技术负责人周畅，引发行业关注
 
 近日，阿里巴巴通义千问大模型技术负责人周畅被字节跳动以八位数年薪及4-2职级的条件挖角，这一跳槽事件不仅涉及周畅个人，还包括其团队十多名成员。他们一同从阿里转投字节跳动，这一变动在人工智能领域引起了广泛关注。
 
@@ -70,7 +65,7 @@ https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 
 ![](img/28ce823755d9c4ef21adf1c4ace899de.png)
 
-# xAI公司计划扩张Colossus AI超级计算机系统
+## xAI公司计划扩张Colossus AI超级计算机系统
 
 埃隆·马斯克旗下的xAI公司正计划大幅扩展其Colossus AI超级计算机系统，目标是将GPU集群从10万个增加到100万个，以超越谷歌、OpenAI和Anthropic等竞争对手。这一雄心勃勃的扩建计划已经开始实施，并得到了英伟达、戴尔和美超微等业界巨头的支持。
 
@@ -80,7 +75,7 @@ xAI已向英伟达订购了价值10.8亿美元的GB200 AI服务器，并获得�
 
 ![](img/66bc2b06b19fe35fa7b5571e3a40a812.png)
 
-# 苹果与百度深化合作，文心大模型4.0将赋能苹果设备
+## 苹果与百度深化合作，文心大模型4.0将赋能苹果设备
 
 据报道，苹果公司已与百度达成合作，计划利用百度的文心大模型4.0为其旗下的iPhone、Mac和iPad等设备提供生成式人工智能服务。此次合作标志着两家公司在人工智能领域的合作关系进一步加深。
 
@@ -90,7 +85,7 @@ xAI已向英伟达订购了价值10.8亿美元的GB200 AI服务器，并获得�
 
 ![](img/c3d7216e5998afaaf0b64ff34157195e.png)
 
-# LiblibAI联合星流推出Star-3 Alpha
+## LiblibAI联合星流推出Star-3 Alpha
 
 LiblibAI与星流合作推出了自研图像大模型Star-3 Alpha。它能够精准响应复杂提示词，创造出接近真实照片质感的图像，赋予图像更多的情绪和生命力。
 

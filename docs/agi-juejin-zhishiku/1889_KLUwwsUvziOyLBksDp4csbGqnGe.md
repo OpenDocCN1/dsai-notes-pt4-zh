@@ -1,9 +1,7 @@
-# 02.01-OpenAI 小钢炮 o3-mini 推理模型登场：性能提升 24%，首次向免费 ChatGPT AI 用户开放
-
-> 来源：[https://agijuejin.feishu.cn/docx/JQGnd4RuJoJx33xQ5j6cNc09n1c](https://agijuejin.feishu.cn/docx/JQGnd4RuJoJx33xQ5j6cNc09n1c)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 02 月 01 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/JQGnd4RuJoJx33xQ5j6cNc09n1c](https://agijuejin.feishu.cn/docx/JQGnd4RuJoJx33xQ5j6cNc09n1c)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/4c3a020cbd0fb88670ffc4dd4f270ddd.png)
@@ -26,7 +24,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/828/132.htm)
 
 ![](img/c82f97dc6a9ac8bc88b47f142404c0ae.png)
 
-牛津大学的本·格林和哥伦比亚大学的梅塔布·索尼在素数问题上取得新进展。素数分布规律研究已久，此次他们针对 Friedlander 和 Iwaniec 提出的「是否存在无限多个 p^2 + 4q^2 形式的素数（p、q 为素数）」猜想展开研究。通过先证明两个“近似素数”平方和可得无限多个素数，借助 Gowers 范数等工具，最终证明了该猜想，并进行推广，此成果是素数研究领域重要突破 。
+牛津大学的本·格林和哥伦比亚大学的梅塔布·索尼在素数问题上取得新进展。素数分布规律研究已久，此次他们针对 Friedlander 和 Iwaniec 提出的「是否存在无限多个 `p^2 + 4q^2` 形式的素数（`p`、`q` 为素数）」猜想展开研究。通过先证明两个“近似素数”平方和可得无限多个素数，借助 Gowers 范数等工具，最终证明了该猜想，并进行推广，此成果是素数研究领域重要突破 。
 
 ### 💡 斯坦福揭秘 o1-preview 软肋：数学竞赛题稍作修改，准确率骤降 30%
 

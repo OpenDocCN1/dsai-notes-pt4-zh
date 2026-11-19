@@ -1,3 +1,4 @@
+
 # 【厦门大学】大模型概念，技术与应用实践
 
 > 来源：[https://kcn9ut4m7icc.feishu.cn/docx/LhJMdyTFcoKV6Px2IQsc3P8An4f](https://kcn9ut4m7icc.feishu.cn/docx/LhJMdyTFcoKV6Px2IQsc3P8An4f)

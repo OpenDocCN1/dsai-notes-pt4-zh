@@ -1,3 +1,4 @@
+
 # 20241228-深度：2024年AI行业全景回顾，多元竞争与技术革新塑造新格局
 
 > 来源：[https://aigcreative.feishu.cn/docx/Z6OQdPddCoD11nxYwqAcj00Ungd](https://aigcreative.feishu.cn/docx/Z6OQdPddCoD11nxYwqAcj00Ungd)
@@ -54,7 +55,7 @@
 
 ### 图像生成的高质量追求
 
-图像生成领域同样见证了显著的技术进步，AI生成图像的质量，肉眼可见的提升~~
+图像生成领域同样见证了显著的技术进步，AI生成图像的质量，肉眼可见的提升。
 
 ![](img/8c796f3cb1c11e4edc7c85966ca03143.png)
 
@@ -106,7 +107,7 @@ OpenAI的HD TTS和ElevenLabs的Multilingual v2及Turbo v2.5版本，均在ELO评
 
 ### 多模型策略成为主流
 
-多模型策略成为主流2024年，开发者在构建AI应用时，越来越倾向于使用多款模型以应对不同的任务需求。
+2024年，开发者在构建AI应用时，越来越倾向于使用多款模型以应对不同的任务需求。
 
 ![](img/06b912e028ac8ee1ba0a616f3d825cce.png)
 

@@ -1,16 +1,14 @@
+
 # 【Gemini 3.0Pro】学生认证白嫖教程
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/GdhpdQvtDouyzvx6kY5c7iVinte](https://v11enp9ok1h.feishu.cn/docx/GdhpdQvtDouyzvx6kY5c7iVinte)
 
 ## 一、要求
 
-1.  谷歌账号，这是谷歌的AI，不用多说
-
-1.  学生身份，学生优惠，肯定要给“学生”嘛
-
-1.  visa、mastercard等支付方式，他只是给你一年免费试用，到期后就是原价了，跟我们平常的自动续费类似
-
-1.  网络，这个就是废话了
+1. 谷歌账号，这是谷歌的AI，不用多说
+2. 学生身份，学生优惠，肯定要给“学生”嘛
+3. visa、mastercard等支付方式，他只是给你一年免费试用，到期后就是原价了，跟我们平常的自动续费类似
+4. 网络，这个就是废话了
 
 ## 二、教程
 
@@ -26,7 +24,7 @@
 
 ![](img/b533899c274f663a01eaad2088d0d30b.png)
 
-### **学生身份**
+### 学生身份
 
 自己去申请一个即可：[大学申请](https://accounts.psu.edu/create/new?redirectUrl=https://mypennstate.psu.edu/index.cfm/accounts/createreturnnew&referrerName=mpscreate)
 
@@ -62,7 +60,7 @@
 
 ### 可能的问题
 
-验证身份的时候可能让你上传在读证明，这个问题一般是前面说的年龄问题，而且一旦出现这个界面，你刷新、清除cookie都会是这个界面。
+验证身份的时候可能让你上传在读证明，这个问题一般是前面说的年龄问题，而且一旦出现这个界面，你刷新、清除`cookie`都会是这个界面。
 
 ![](img/764cd5269d60b46d4a171825427a8cfe.png)
 

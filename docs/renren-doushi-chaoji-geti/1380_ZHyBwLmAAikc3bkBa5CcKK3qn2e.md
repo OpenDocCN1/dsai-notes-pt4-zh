@@ -1,4 +1,5 @@
-# 2023-11-03Chat Completion 模型的 Function Calling 功能实战，多函数结合调用
+
+# 2023-11-03 Chat Completion 模型的 Function Calling 功能实战，多函数结合调用
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MYfWdHAvIodf8lxz6jVcQTjKnlh](https://xuqiwei1986.feishu.cn/docx/MYfWdHAvIodf8lxz6jVcQTjKnlh)
 
@@ -8,10 +9,11 @@
 
 OpenAI 的 Chat Completion 模型是一种基于人工智能的自然语言处理技术，可以根据用户的输入生成相应的回答。而 Function Calling 使得 Chat Completion 模型可以调用外部函数获取信息再针对输出进行格式化。本文将详细介绍 Function Calling 的特点和应用。
 
-# 一、Function Calling 做什么用？
+## 一、Function Calling 做什么用？
 
 这里先简单说一下 OpenAI 的 Chat Completion，我们可以执行程序简单调用该 API 完成一轮与 ChatGPT 的对话。
 
+```python
 importopenai
 
 importjson
@@ -35,19 +37,16 @@ messages=[
 )
 
 print("response="+json.dumps(response))
+```
 
-在 Python 中直接通过 OpenAI 的 ChatCompletion API 可以快速完成对话，打印出的结果如下：
+在 Python 中直接通过 OpenAI 的 `ChatCompletion` API 可以快速完成对话，打印出的结果如下：
 
+```
 {
-
 "id":"chatcmpl-7zflIIBlF7fNVYI1NHKdlLSZDBxHw",
-
 "object":"chat.completion",
-
 "created":1694932896,
-
 "model":"gpt-3.5-turbo-0613",
-
 "choices":[
 
 {
@@ -77,24 +76,22 @@ print("response="+json.dumps(response))
 "total_tokens":81
 
 }
-
 }
+```
 
-返回的信息中我们可以通过 response['choices'][0]['message']['content'] 只提取回答的内容，其他都是辅助信息，告诉我们本次回答结束原因、花费的 token 数等。
+返回的信息中我们可以通过 `response['choices'][0]['message']['content']` 只提取回答的内容，其他都是辅助信息，告诉我们本次回答结束原因、花费的 token 数等。
 
 相信大家都知道 ChatGPT 的训练数据只到2021年9月份，所以无法获取目前的最新信息。ChatGPT 其本身的能力强大，但由于信息受限导致其使用价值大打折扣。
 
-如果我们可以将最新信息输入给 ChatGPT 让它来帮我们进**行**进一步的分析或处理，是不是就能满足？ 于是 OpenAI 在 6月份推出了 Function Calling 功能，让 GPT 模型拥有调用外部接口的能力。
+如果我们可以将最新信息输入给 ChatGPT 让它来帮我们进行进一步的分析或处理，是不是就能满足？ 于是 OpenAI 在 6月份推出了 Function Calling 功能，让 GPT 模型拥有调用外部接口的能力。
 
 就相当于给 AI 模型加了一双翅膀，可以真正的翱翔了。我们可以基于 Function Calling 能力自定义各种函数，并结合起来使用。
 
 ![](img/8b86ed08b8c5245d429c6ba7eba52269.png)
 
-# 二、如何使用 Function Calling？
+## 二、如何使用 Function Calling？
 
-##
-
-## 1、Function Calling 的特点
+### 1、Function Calling 的特点
 
 Function Calling 是一种让 Chat Completion 模型调用外部函数的能力，可以让模型不仅仅根据自身的数据库知识进行回答，而是可以额外挂载一个函数库，然后根据用户提问去函数库检索，按照实际需求调用外部函数并获取函数运行结果，再基于函数运行结果进行回答。
 
@@ -106,11 +103,11 @@ Function Calling 可以被应用于各种场景，例如：
 
 自动点餐：输入想吃啥 -> 美团外卖上搜索对应商品函数 -> 由 ChatGPT 抉择定哪家 -> 美团外卖下单函数
 
-**只**要能够定义出函数并结合 ChatGPT 的语义理解能力，通过分析用户的输入信息并自动匹配函数进行调用，最终达成用户的目的。
+只要能够定义出函数并结合 ChatGPT 的语义理解能力，通过分析用户的输入信息并自动匹配函数进行调用，最终达成用户的目的。
 
-## 2.Function Calling 的使用
+### 2、Function Calling 的使用
 
-首先需要说明的是， **目前 OpenAI 仅支持 gpt-3.5-turbo-0613 和 **gpt-4-0613 两个语言模型使用 Function Calling 功能 。这两个模型经过微调既可以检测何时应该调用函数（取决于输入），也可以使用符合函数签名的 JSON 进行响应。
+首先需要说明的是，目前 OpenAI 仅支持 gpt-3.5-turbo-0613 和 gpt-4-0613 两个语言模型使用 Function Calling 功能。这两个模型经过微调既可以检测何时应该调用函数（取决于输入），也可以使用符合函数签名的 JSON 进行响应。
 
 使用 Function Calling 需要先设定 Chat Completion 模型的输出格式。在没有任何 Prompt 的情况下，Chat Completion 模型会返回一个 JSON 格式的数据。我们需要对这个数据进行包装，并设定具体的格式化逻辑来让我们更好使用。
 
@@ -124,20 +121,21 @@ Function Calling 可以被应用于各种场景，例如：
 
 通过将函数响应追加为新消息来再次调用模型，并让模型将结果汇总返回给用户。
 
-### 2.1 外部函数编写规范
+#### 2.1 外部函数编写规范
 
 在使用前需要我们先对外部函数进行定义和实现，实现就不多说就是一个具体函数。而定义需要我们包含以下几部分内容：
 
-name：清晰的函数名称
+`name`：清晰的函数名称
 
-description：函数功能的具体描述，尽量对输入参数和输出信息有明确的说明
+`description`：函数功能的具体描述，尽量对输入参数和输出信息有明确的说明
 
-parameters：对函数的每个输入参数进行类型定义及其描述
+`parameters`：对函数的每个输入参数进行类型定义及其描述
 
-required：指定哪些参数必填
+`required`：指定哪些参数必填
 
 示例如下：
 
+```python
 defget_location_by_ip(ip:str=None):
 
 ifipisNone:
@@ -187,25 +185,27 @@ get_location_by_ip_func={
 }
 
 }
+```
 
 这里需要注意，根据官网的 API 描述 外部函数返回信息需要是标准的 JSON 格式 ，所以需要特殊处理。
 
-### 2.2 Function Calling 使用规范
+#### 2.2 Function Calling 使用规范
 
-在** Chat Completion 模型中新增两个参数：functio**n_call 和 functions。 其中 function_call 是一个开关，控制模型是否要调用函数对输出进行处理，functions 是一个用来对输出结果进行处理的函数描述列表 。
+在 Chat Completion 模型中新增两个参数：`function_call` 和 `functions`。其中 `function_call` 是一个开关，控制模型是否要调用函数对输出进行处理，`functions` 是一个用来对输出结果进行处理的函数描述列表 。
 
-function_call 存在三种使用方式：
+`function_call` 存在三种使用方式：
 
-none：不调用外部函数，直接与 ChatGPT 进行沟通
+`none`：不调用外部函数，直接与 ChatGPT 进行沟通
 
-auto：由模型根据语义分析判断是否是否调用外部函数，匹配具体函数
+`auto`：由模型根据语义分析判断是否是否调用外部函数，匹配具体函数
 
-{"name":"外部函数名"}：指定模型强制调用哪个外部函数
+`{"name":"外部函数名"}`：指定模型强制调用哪个外部函数
 
-而 functions 就是具体的外部函数列表，我们只需将前面定义好的函数名称通过列表的信息写入即可。
+而 `functions` 就是具体的外部函数列表，我们只需将前面定义好的函数名称通过列表的信息写入即可。
 
-还有最关键的一步，需要我们根据 ChatCompletion 返回的信息判断是否调用了外部函数，从而触发二次调用 ChatGPT 附带外部函数的返回结果信息。
+还有最关键的一步，需要我们根据 `ChatCompletion` 返回的信息判断是否调用了外部函数，从而触发二次调用 ChatGPT 附带外部函数的返回结果信息。
 
+```python
 messages=[
 
 {"role":"system","content":"你可以回答所有内容"},
@@ -293,12 +293,13 @@ print("second_response="+json.dumps(second_response))
 else:
 
 print("response="+json.dumps(response))
+```
 
-看看第二次调用请求时的 messages ,很明显已经执行了外部函数获取到当前地址信息并组装到 messages 中请求给 ChatGPT。
+看看第二次调用请求时的 `messages` ,很明显已经执行了外部函数获取到当前地址信息并组装到 `messages` 中请求给 ChatGPT。
 
 ![](img/1ce09dc82281d935e42c107504ac3883.png)
 
-### 2.3 Function Calling 组合使用
+#### 2.3 Function Calling 组合使用
 
 在上面的示例中，我们只保持了一个外部函数的调用。在实际使用中，一定是存在多个函数组合使用的情况。
 
@@ -310,8 +311,9 @@ print("response="+json.dumps(response))
 
 由 ChatGPT 对结果进行处理并返回
 
-根据上面调用规范将整体封装到 complete 函数中，并根据每次返回的结果角色判断上次调用是否触发外部函数调用，若触发外部函数调用需要再次请求 ChatGPT 以获取最终结果。代码如下：
+根据上面调用规范将整体封装到 `complete` 函数中，并根据每次返回的结果角色判断上次调用是否触发外部函数调用，若触发外部函数调用需要再次请求 ChatGPT 以获取最终结果。代码如下：
 
+```python
 defcomplete(messages,function_call:str="auto"):
 
 messages.append({"role":"system","content":llm_system_prompt})
@@ -417,8 +419,9 @@ complete(messages)
 whilemessages[-1]['role']=="function":
 
 complete(messages)
+```
 
-查看最后一次发送的 messages，也能看出两次外部函数调用结果都包含进行来了。
+查看最后一次发送的 `messages`，也能看出两次外部函数调用结果都包含进行来了。
 
 ![](img/4aff707e9616817125ef965ad2b38c40.png)
 
@@ -448,7 +451,7 @@ complete(messages)
 
 请注意，以上新闻是来自不同的娱乐新闻来源，您可以点击相应的链接获取更多详细信息。
 
-# 结尾
+## 结尾
 
 实战代码通过阿里网盘获取： [实战代码](https://www.aliyundrive.com/s/WnJ5wuHMPX6)
 

@@ -1,18 +1,16 @@
+
 # 🛰️上能用的MJ及教程
 
 > 来源：[https://my.feishu.cn/docx/PeKOdOTtdodwarxc3WEccebkn2d](https://my.feishu.cn/docx/PeKOdOTtdodwarxc3WEccebkn2d)
 
-首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
+首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：[https://ai.qixinba.com/auth?type=register&invite=NTE](https://ai.qixinba.com/auth?type=register&invite=NTE)
 
 家人们 这么好用的MJ你拥有了没
 
-✅免登陆，打开🛰️就能用
-
-✅官方正版midjourney，所有功能都有
-
-✅不用翻译器，中英提示词都能出图
-
-✅支持所有midjourney指令
+- ✅免登陆，打开🛰️就能用
+- ✅官方正版midjourney，所有功能都有
+- ✅不用翻译器，中英提示词都能出图
+- ✅支持所有midjourney指令
 
 效果见图👇
 

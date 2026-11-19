@@ -1,3 +1,4 @@
+
 # 3分钟让Chrome变聪明！Google AI保姆级激活教程！
 
 > 来源：[https://my.feishu.cn/docx/BiHDdgwfxoTvQ3x4k1gclOUGnpt](https://my.feishu.cn/docx/BiHDdgwfxoTvQ3x4k1gclOUGnpt)
@@ -16,7 +17,6 @@
 
 像这样，它能给你直接做总结和画图。
 
-
 ## 这到底是什么
 
 想象一下，给Chrome装了个 AI大脑。
@@ -31,19 +31,27 @@
 
 ## 4个核心功能
 
-Auto Browse = 自动帮你逛网页。
+### Auto Browse
+
+自动帮你逛网页。
 
 比如查3天内的机票酒店，它能自动打开多个网页比价。
 
-侧边栏 = 像聊天窗口一样常驻。
+### 侧边栏
+
+像聊天窗口一样常驻。
 
 不用每次点弹窗，AI助手一直在右边等着。
 
-图片修改 = 直接改网页上的图。
+### 图片修改
+
+直接改网页上的图。
 
 看到想保存的图，能让AI换个风格、加个字。
 
-关联应用 = 能看你的邮箱日历。
+### 关联应用
+
+能看你的邮箱日历。
 
 从邮件里提取会议时间，自动帮你查航班。
 
@@ -51,13 +59,13 @@ Auto Browse = 自动帮你逛网页。
 
 别急着动手，花1分钟自测。
 
-点击 **Chrome右上角头像**，点 **服务条款**，看国家或地区是不是 **漂亮国**。
+点击 Chrome右上角头像，点 服务条款，看国家或地区是不是 漂亮国。
 
-是不是 **Gemini Pro及以上用户**。
+是不是 Gemini Pro及以上用户。
 
 Google这个功能目前只对漂亮国开放，因为涉及隐私和法律，不同国家规则不一样。
 
-**简单说：不是歧视，是合规要求。**
+简单说：不是歧视，是合规要求。
 
 如果你是美区账号，以及语言调整成漂亮国英语，那么大概率你会直接出来Gemini图标。
 
@@ -81,7 +89,7 @@ Google这个功能目前只对漂亮国开放，因为涉及隐私和法律，�
 
 右键属性。
 
-在目标最后加个 空格。
+在目标最后加个空格。
 
 粘贴：
 
@@ -92,21 +100,21 @@ Google这个功能目前只对漂亮国开放，因为涉及隐私和法律，�
 改完像这样：
 
 ```
-&quot;C:\Program Files\Google\Chrome\Application\chrome.exe&quot; --variations-override-country=us
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --variations-override-country=us
 ```
 
 ![](img/eed61bc4adef8517329330ad55670148.png)
 
-点 确定。
+点确定。
 
 双击打开。
 
-打开 终端。
+打开终端。
 
 粘贴这行：
 
 ```
-open -n -a &quot;Google Chrome&quot; --args --variations-override-country=us
+open -n -a "Google Chrome" --args --variations-override-country=us
 ```
 
 这个方法只能用修改过的快捷方式打开才有效，点🛰️链接自动打开的Chrome没用，换电脑得重新弄。
@@ -125,29 +133,29 @@ open -n -a &quot;Google Chrome&quot; --args --variations-override-country=us
 
 先检查电脑有没有Python。
 
-按 Win+R键。
+按 Win+R 键。
 
-输入 cmd，按 回车。
+输入 `cmd`，按回车。
 
-输入python --version，出现版本号就OK，没有就去Python官网下载一个。
+输入 `python --version`，出现版本号就OK，没有就去Python官网下载一个。
 
-下载时记得勾选 Add Python to PATH，不然会报错。
+下载时记得勾选 Add Python to `PATH`，不然会报错。
 
-这个叫 uv，帮我们省去很多麻烦。
+这个叫 `uv`，帮我们省去很多麻烦。
 
-在电脑搜索框搜 PowerShell。
+在电脑搜索框搜 `PowerShell`。
 
 右键以管理员身份运行。
 
 粘贴这行代码：
 
 ```
-powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-按 回车，等它下载完。
+按回车，等它下载完。
 
-输入 uv --version确认成功。
+输入 `uv --version` 确认成功。
 
 打开这个网址：https://github.com/lcandy2/enable-chrome-ai。
 
@@ -159,7 +167,7 @@ powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1
 
 打开解压的文件夹。
 
-在 地址栏输入 cmd，按 回车。
+在地址栏输入 `cmd`，按回车。
 
 输入以下两行命令：
 
@@ -184,7 +192,7 @@ Chrome完全关闭了吗？任务管理器看看。
 
 Chrome语言是英文吗？设置 → 语言 → 英语置顶。
 
-实验功能开了吗？地址栏输入 chrome://flags，搜索 Glic，改成 Enabled。
+实验功能开了吗？地址栏输入 `chrome://flags`，搜索 `Glic`，改成 `Enabled`。
 
 说明Google账号地区不是漂亮国，要么找客服改地区、要么重新注册一个漂亮国账号、要么用上面方法骗过浏览器。
 

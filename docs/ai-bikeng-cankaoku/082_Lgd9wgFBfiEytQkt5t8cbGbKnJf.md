@@ -1,3 +1,4 @@
+
 # RustDesk编译自动配置工具
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/X9DadoZPNoqgMExqAO2caIiqnXC](https://xodnytdcaw.feishu.cn/docx/X9DadoZPNoqgMExqAO2caIiqnXC)
@@ -24,31 +25,29 @@
 
 ### 路径地址
 
-```
-flutter\lib\desktop\pages\connection_page.dart 
-```
+`flutter\lib\desktop\pages\connection_page.dart`
 
 自行修改找到81-110行，使用如下代码替换。
 
 ⚠️从81行代码最左边选择
 
 ```
-    Widget setupServerWidget() =&gt; Flexible(
-       child: Offstage(
-         offstage: !(!_svcStopped.value &amp;&amp;
-             stateGlobal.svcStatus.value == SvcStatus.ready &amp;&amp;
-             _svcIsUsingPublicServer.value),
-         child: Row(
-           crossAxisAlignment: CrossAxisAlignment.center,
-           children: [], 
-         ),
-       ),
-     );
+Widget setupServerWidget() => Flexible(
+   child: Offstage(
+     offstage: !(!_svcStopped.value &&
+         stateGlobal.svcStatus.value == SvcStatus.ready &&
+         _svcIsUsingPublicServer.value),
+     child: Row(
+       crossAxisAlignment: CrossAxisAlignment.center,
+       children: [], 
+     ),
+   ),
+ );
 ```
 
 ![](img/68424a072f91802416fece9375ccc70d.png)
 
-出来的效果**80**与**92**行代码空， **w**与**b**为同一垂直线
+出来的效果`80`与`92`行代码空，`w`与`b`为同一垂直线
 
 ![](img/d349c9db5b7730af82f361bef75e2c19.png)
 

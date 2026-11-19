@@ -1,28 +1,29 @@
+
 # Claude 3.5 API调用方法介绍
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/NnhLdjuoZofbW6xfuK1cNQo4n8c](https://kq4b3vgg5b.feishu.cn/docx/NnhLdjuoZofbW6xfuK1cNQo4n8c)
 
-# Claude 3.5快速入门教程
+## Claude 3.5快速入门教程
 
-### 1.Claude-3.5模型调用流程
+### 1. Claude-3.5模型调用流程
 
 #### 1.1 Claude-3.5文字调用流程
 
-+   Claude 3.5模型库安装
+- Claude 3.5模型库安装
 
 ```
 !pip install anthropic
 ```
+
+- Claude 3.5文字调用流程
 
 ```
 import anthropic
 ```
 
 ```
-ANTHROPIC_API_KEY=&#x27;YOUR_API_KEY&#x27;
+ANTHROPIC_API_KEY = 'YOUR_API_KEY'
 ```
-
-+   Claude 3.5文字调用流程
 
 ```
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
@@ -30,17 +31,17 @@ client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 ```
 message = client.messages.create(
-    model=&quot;claude-3-5-sonnet-20240620&quot;,
+    model="claude-3-5-sonnet-20240620",
     max_tokens=1000,
     temperature=0,
-    system=&quot;你是一位助人为乐的助手。&quot;,
+    system="你是一位助人为乐的助手。",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
+            "role": "user",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: &quot;你好。&quot;
+                    "type": "text",
+                    "text": "你好。"
                 }
             ]
         }
@@ -53,7 +54,7 @@ message
 ```
 
 ```
-Message(id=&#x27;msg_01JPUKo3FZtQz7fFQLuRCJmC&#x27;, content=[TextBlock(text=&#x27;您好!很高兴能和您交流。我是一位AI助手,随时准备为您提供帮助。您有什么我可以协助您的吗?无论是回答问题、提供信息,还是讨论某个话题,我都很乐意效劳。请随意告诉我您想聊些什么吧。&#x27;, type=&#x27;text&#x27;)], model=&#x27;claude-3-5-sonnet-20240620&#x27;, role=&#x27;assistant&#x27;, stop_reason=&#x27;end_turn&#x27;, stop_sequence=None, type=&#x27;message&#x27;, usage=Usage(input_tokens=24, output_tokens=101))
+Message(id='msg_01JPUKo3FZtQz7fFQLuRCJmC', content=[TextBlock(text='您好!很高兴能和您交流。我是一位AI助手,随时准备为您提供帮助。您有什么我可以协助您的吗?无论是回答问题、提供信息,还是讨论某个话题,我都很乐意效劳。请随意告诉我您想聊些什么吧。', type='text')], model='claude-3-5-sonnet-20240620', role='assistant', stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(input_tokens=24, output_tokens=101))
 ```
 
 ```
@@ -61,48 +62,48 @@ message.content[0].text
 ```
 
 ```
-&#x27;您好!很高兴能和您交流。我是一位AI助手,随时准备为您提供帮助。您有什么我可以协助您的吗?无论是回答问题、提供信息,还是讨论某个话题,我都很乐意效劳。请随意告诉我您想聊些什么吧。&#x27;
+'您好!很高兴能和您交流。我是一位AI助手,随时准备为您提供帮助。您有什么我可以协助您的吗?无论是回答问题、提供信息,还是讨论某个话题,我都很乐意效劳。请随意告诉我您想聊些什么吧。'
 ```
 
-+   多轮对话函数
+- 多轮对话函数
 
 ```
 def chat_with_claude(client):
     conversation = []
 
     while True:
-        user_input = input(&quot;你: &quot;)
-        if user_input.lower() == &quot;exit&quot;:
-            print(&quot;结束对话。&quot;)
+        user_input = input("你: ")
+        if user_input.lower() == "exit":
+            print("结束对话。")
             break
 
         conversation.append({
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
+            "role": "user",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: user_input
+                    "type": "text",
+                    "text": user_input
                 }
             ]
         })
 
         message = client.messages.create(
-            model=&quot;claude-3-5-sonnet-20240620&quot;,
+            model="claude-3-5-sonnet-20240620",
             max_tokens=1000,
             temperature=0,
-            system=&quot;你是一位助人为乐的助手。&quot;,
+            system="你是一位助人为乐的助手。",
             messages=conversation
         )
 
         assistant_response = message.content[0].text
-        print(f&quot;Claude: {assistant_response}&quot;)
+        print(f"Claude: {assistant_response}")
 
         conversation.append({
-            &quot;role&quot;: &quot;assistant&quot;,
-            &quot;content&quot;: [
+            "role": "assistant",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: assistant_response
+                    "type": "text",
+                    "text": assistant_response
                 }
             ]
         })
@@ -152,13 +153,13 @@ Claude: 机器学习是人工智能(AI)的一个分支,它专注于开发能够�
 
 7. 挑战: 需要大量高质量的数据,可能存在偏见,解释性有时较差。
 
-机器学习正在快速发展,并在许多领域产生重大影响,推动了人工智能技术的进步。
+机器学习正在快速发展,并在许多领域产生重大影响,推动了人工智能技术的进步.
 
 
 你:  好的，你还记得我上一个问你的问题是什么嘛？
 
 
-Claude: 当然记得。您上一个问题是让我介绍自己。您说：&quot;你好，请介绍下你自己&quot;。然后我向您介绍了我是谁以及我的一些基本特点和能力。
+Claude: 当然记得。您上一个问题是让我介绍自己。您说："你好，请介绍下你自己"。然后我向您介绍了我是谁以及我的一些基本特点和能力.
 
 
 你:  exit
@@ -181,7 +182,7 @@ Claude: 您好!我是Claude,一位AI助手。我的目标是帮助人们解决�
 你:  请问我的上一个问题是什么
 
 
-Claude: 您的上一个问题是&quot;你好，请介绍下你自己&quot;。这是我们对话的开始,您向我问好并要求我做自我介绍。
+Claude: 您的上一个问题是"你好，请介绍下你自己"。这是我们对话的开始,您向我问好并要求我做自我介绍.
 
 
 你:  exit
@@ -192,7 +193,7 @@ Claude: 您的上一个问题是&quot;你好，请介绍下你自己&quot;。这
 
 #### 1.2 多模态调用方法
 
-+   Claude 3.5多模态调用流程
+- Claude 3.5多模态调用流程
 
 ```
 import base64
@@ -203,32 +204,34 @@ import httpx
 
 ![](img/256448f2959f04e80251cfb9c17cbd9e.png)
 
-image_url = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;
+```
+image_url = "https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png"
+```
 
 ```
-image_media_type = &quot;image/png&quot;
-image_data = base64.b64encode(httpx.get(image_url).content).decode(&quot;utf-8&quot;)
+image_media_type = "image/png"
+image_data = base64.b64encode(httpx.get(image_url).content).decode("utf-8")
 ```
 
 ```
 image_message = client.messages.create(
-    model=&quot;claude-3-5-sonnet-20240620&quot;,
+    model="claude-3-5-sonnet-20240620",
     max_tokens=1024,
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
+            "role": "user",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;image&quot;,
-                    &quot;source&quot;: {
-                        &quot;type&quot;: &quot;base64&quot;,
-                        &quot;media_type&quot;: image_media_type,
-                        &quot;data&quot;: image_data,
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": image_media_type,
+                        "data": image_data,
                     },
                 },
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: &quot;请帮我描绘下图片上的内容。&quot;
+                    "type": "text",
+                    "text": "请帮我描绘下图片上的内容。"
                 }
             ],
         }
@@ -241,7 +244,7 @@ image_message
 ```
 
 ```
-Message(id=&#x27;msg_01P9RNhSLwu5C8MgXmWGSVz7&#x27;, content=[TextBlock(text=&#x27;这张图片展示了一个名为&quot;AI模型发布和能力时间线&quot;的图表。它显示了从2023年2月到2024年7月期间不同AI模型的发展和性能变化。\n\n图表中包含三条线，分别代表三个主要的AI模型系列：Claude（红色）、GPT（棕色）和Gemini（蓝色）。纵轴表示&quot;基准分数&quot;，范围从50到80多分。\n\n从图中可以看出：\n\n1. GPT模型在整个时期内保持相对稳定的高分，只在后期有小幅提升。\n2. Claude模型开始时分数较低，但在2023年7月和2024年初有两次显著的性能跃升。\n3. Gemini模型是最后加入竞争的，但很快达到了与其他两个模型相当的水平。\n\n图表还标注了各个模型的不同版本，如Claude 1、Claude 2、GPT-4、GPT-4 Turbo等。\n\n整体趋势显示，所有三个AI模型系列都在这段时间内有了显著的进步，到2024年中期，它们的性能水平趋于接近。\n\n这个图表清晰地展示了AI技术在短时间内的快速发展，以及主要AI公司之间的激烈竞争。&#x27;, type=&#x27;text&#x27;)], model=&#x27;claude-3-5-sonnet-20240620&#x27;, role=&#x27;assistant&#x27;, stop_reason=&#x27;end_turn&#x27;, stop_sequence=None, type=&#x27;message&#x27;, usage=Usage(input_tokens=972, output_tokens=391))
+Message(id='msg_01P9RNhSLwu5C8MgXmWGSVz7', content=[TextBlock(text='这张图片展示了一个名为"AI模型发布和能力时间线"的图表。它显示了从2023年2月到2024年7月期间不同AI模型的发展和性能变化。\n\n图表中包含三条线，分别代表三个主要的AI模型系列：Claude（红色）、GPT（棕色）和Gemini（蓝色）。纵轴表示"基准分数"，范围从50到80多分。\n\n从图中可以看出：\n\n1. GPT模型在整个时期内保持相对稳定的高分，只在后期有小幅提升。\n2. Claude模型开始时分数较低，但在2023年7月和2024年初有两次显著的性能跃升。\n3. Gemini模型是最后加入竞争的，但很快达到了与其他两个模型相当的水平。\n\n图表还标注了各个模型的不同版本，如Claude 1、Claude 2、GPT-4、GPT-4 Turbo等。\n\n整体趋势显示，所有三个AI模型系列都在这段时间内有了显著的进步，到2024年中期，它们的性能水平趋于接近。\n\n这个图表清晰地展示了AI技术在短时间内的快速发展，以及主要AI公司之间的激烈竞争。', type='text')], model='claude-3-5-sonnet-20240620', role='assistant', stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(input_tokens=972, output_tokens=391))
 ```
 
 ```
@@ -249,7 +252,7 @@ image_message.content[0].text
 ```
 
 ```
-&#x27;这张图片展示了一个名为&quot;AI模型发布和能力时间线&quot;的图表。它显示了从2023年2月到2024年7月期间不同AI模型的发展和性能变化。\n\n图表中包含三条线，分别代表三个主要的AI模型系列：Claude（红色）、GPT（棕色）和Gemini（蓝色）。纵轴表示&quot;基准分数&quot;，范围从50到80多分。\n\n从图中可以看出：\n\n1. GPT模型在整个时期内保持相对稳定的高分，只在后期有小幅提升。\n2. Claude模型开始时分数较低，但在2023年7月和2024年初有两次显著的性能跃升。\n3. Gemini模型是最后加入竞争的，但很快达到了与其他两个模型相当的水平。\n\n图表还标注了各个模型的不同版本，如Claude 1、Claude 2、GPT-4、GPT-4 Turbo等。\n\n整体趋势显示，所有三个AI模型系列都在这段时间内有了显著的进步，到2024年中期，它们的性能水平趋于接近。\n\n这个图表清晰地展示了AI技术在短时间内的快速发展，以及主要AI公司之间的激烈竞争。&#x27;
+'这张图片展示了一个名为"AI模型发布和能力时间线"的图表。它显示了从2023年2月到2024年7月期间不同AI模型的发展和性能变化。\n\n图表中包含三条线，分别代表三个主要的AI模型系列：Claude（红色）、GPT（棕色）和Gemini（蓝色）。纵轴表示"基准分数"，范围从50到80多分。\n\n从图中可以看出：\n\n1. GPT模型在整个时期内保持相对稳定的高分，只在后期有小幅提升。\n2. Claude模型开始时分数较低，但在2023年7月和2024年初有两次显著的性能跃升。\n3. Gemini模型是最后加入竞争的，但很快达到了与其他两个模型相当的水平。\n\n图表还标注了各个模型的不同版本，如Claude 1、Claude 2、GPT-4、GPT-4 Turbo等。\n\n整体趋势显示，所有三个AI模型系列都在这段时间内有了显著的进步，到2024年中期，它们的性能水平趋于接近。\n\n这个图表清晰地展示了AI技术在短时间内的快速发展，以及主要AI公司之间的激烈竞争。'
 ```
 
 ```
@@ -257,9 +260,9 @@ print(image_message.content[0].text)
 ```
 
 ```
-这张图片展示了一个名为&quot;AI模型发布和能力时间线&quot;的图表。它显示了从2023年2月到2024年7月期间不同AI模型的发展和性能变化。
+这张图片展示了一个名为"AI模型发布和能力时间线"的图表。它显示了从2023年2月到2024年7月期间不同AI模型的发展和性能变化。
 
-图表中包含三条线，分别代表三个主要的AI模型系列：Claude（红色）、GPT（棕色）和Gemini（蓝色）。纵轴表示&quot;基准分数&quot;，范围从50到80多分。
+图表中包含三条线，分别代表三个主要的AI模型系列：Claude（红色）、GPT（棕色）和Gemini（蓝色）。纵轴表示"基准分数"，范围从50到80多分。
 
 从图中可以看出：
 
@@ -278,32 +281,34 @@ print(image_message.content[0].text)
 
 ![](img/ba582b2c5c643d5f37623cdd8de5ca5b.png)
 
-image_url1 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202310292019679.png&quot;
+```
+image_url1 = "https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202310292019679.png"
+```
 
 ```
-image_media_type = &quot;image/png&quot;
-image_data1 = base64.b64encode(httpx.get(image_url1).content).decode(&quot;utf-8&quot;)
+image_media_type = "image/png"
+image_data1 = base64.b64encode(httpx.get(image_url1).content).decode("utf-8")
 ```
 
 ```
 image_message1 = client.messages.create(
-    model=&quot;claude-3-5-sonnet-20240620&quot;,
+    model="claude-3-5-sonnet-20240620",
     max_tokens=1024,
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
+            "role": "user",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;image&quot;,
-                    &quot;source&quot;: {
-                        &quot;type&quot;: &quot;base64&quot;,
-                        &quot;media_type&quot;: image_media_type,
-                        &quot;data&quot;: image_data1,
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": image_media_type,
+                        "data": image_data1,
                     },
                 },
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: &quot;请帮我描绘下图片上的内容。&quot;
+                    "type": "text",
+                    "text": "请帮我描绘下图片上的内容。"
                 }
             ],
         }
@@ -315,66 +320,65 @@ image_message1 = client.messages.create(
 image_message1
 ```
 
+
+
+# 图像消息处理与多轮对话
+
+## 初始图像消息示例
+
 ```
-Message(id=&#x27;msg_01AamtSvFzxSJ5kzajDFvkDt&#x27;, content=[TextBlock(text=&#x27;这张图片是一个复杂的系统架构图或流程图,主要描述了一个名为&quot;chat task decomposition&quot;的系统或项目。图中包含了多个模块和组件,以及它们之间的关系和数据流向。\n\n主要部分包括:\n\n1. 左上角的主模块,标注为&quot;chat task decomposition&quot;。\n\n2. 右上方的一系列功能模块,包括&quot;基础功能层&quot;、&quot;外部调教层&quot;和&quot;可调用函数&quot;等。\n\n3. 中央的几个核心模块,如&quot;Function calling&quot;、&quot;Planing模块&quot;、&quot;Code AI Agent&quot;等。\n\n4. 右侧的&quot;InterProject类&quot;模块,包含了多个方法和属性。\n\n5. 底部的&quot;Action模块&quot;和&quot;MateGen类&quot;。\n\n6. 右下角的&quot;ChatMessages类&quot;模块,包含了消息处理相关的方法。\n\n整个图表通过箭头和线条展示了各个模块之间的交互和数据流向。图中还包含了大量的中文和英文注释,解释了各个模块的功能和作用。\n\n这个图表似乎是描述了一个复杂的聊天系统或AI助手系统的架构,涉及了自然语言处理、函数调用、代码生成、内存管理等多个方面。它展示了系统的整体结构、各个组件的功能以及它们之间的关系,可能用于开发团队的系统设计和文档说明。&#x27;, type=&#x27;text&#x27;)], model=&#x27;claude-3-5-sonnet-20240620&#x27;, role=&#x27;assistant&#x27;, stop_reason=&#x27;end_turn&#x27;, stop_sequence=None, type=&#x27;message&#x27;, usage=Usage(input_tokens=1566, output_tokens=433))
+Message(id='msg_01AamtSvFzxSJ5kzajDFvkDt', content=[TextBlock(text='这张图片是一个复杂的系统架构图或流程图,主要描述了一个名为"chat task decomposition"的系统或项目。图中包含了多个模块和组件,以及它们之间的关系和数据流向。\n\n主要部分包括:\n\n1. 左上角的主模块,标注为"chat task decomposition"。\n\n2. 右上方的一系列功能模块,包括"基础功能层"、"外部调教层"和"可调用函数"等。\n\n3. 中央的几个核心模块,如"Function calling"、"Planing模块"、"Code AI Agent"等。\n\n4. 右侧的"InterProject类"模块,包含了多个方法和属性。\n\n5. 底部的"Action模块"和"MateGen类"。\n\n6. 右下角的"ChatMessages类"模块,包含了消息处理相关的方法。\n\n整个图表通过箭头和线条展示了各个模块之间的交互和数据流向。图中还包含了大量的中文和英文注释,解释了各个模块的功能和作用。\n\n这个图表似乎是描述了一个复杂的聊天系统或AI助手系统的架构,涉及了自然语言处理、函数调用、代码生成、内存管理等多个方面。它展示了系统的整体结构、各个组件的功能以及它们之间的关系,可能用于开发团队的系统设计和文档说明。', type='text')], model='claude-3-5-sonnet-20240620', role='assistant', stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(input_tokens=1566, output_tokens=433))
 ```
 
 ```
 print(image_message1.content[0].text)
 ```
 
-```
-这张图片是一个复杂的系统架构图或流程图,主要描述了一个名为&quot;chat task decomposition&quot;的系统或项目。图中包含了多个模块和组件,以及它们之间的关系和数据流向。
+这张图片是一个复杂的系统架构图或流程图,主要描述了一个名为`chat task decomposition`的系统或项目。图中包含了多个模块和组件,以及它们之间的关系和数据流向。
 
 主要部分包括:
 
-1. 左上角的主模块,标注为&quot;chat task decomposition&quot;。
-
-2. 右上方的一系列功能模块,包括&quot;基础功能层&quot;、&quot;外部调教层&quot;和&quot;可调用函数&quot;等。
-
-3. 中央的几个核心模块,如&quot;Function calling&quot;、&quot;Planing模块&quot;、&quot;Code AI Agent&quot;等。
-
-4. 右侧的&quot;InterProject类&quot;模块,包含了多个方法和属性。
-
-5. 底部的&quot;Action模块&quot;和&quot;MateGen类&quot;。
-
-6. 右下角的&quot;ChatMessages类&quot;模块,包含了消息处理相关的方法。
+1. 左上角的主模块,标注为`chat task decomposition`。
+2. 右上方的一系列功能模块,包括`基础功能层`、`外部调教层`和`可调用函数`等。
+3. 中央的几个核心模块,如`Function calling`、`Planing`模块、`Code AI Agent`等。
+4. 右侧的`InterProject`类模块,包含了多个方法和属性。
+5. 底部的`Action`模块和`MateGen`类。
+6. 右下角的`ChatMessages`类模块,包含了消息处理相关的方法。
 
 整个图表通过箭头和线条展示了各个模块之间的交互和数据流向。图中还包含了大量的中文和英文注释,解释了各个模块的功能和作用。
 
 这个图表似乎是描述了一个复杂的聊天系统或AI助手系统的架构,涉及了自然语言处理、函数调用、代码生成、内存管理等多个方面。它展示了系统的整体结构、各个组件的功能以及它们之间的关系,可能用于开发团队的系统设计和文档说明。
-```
-
-接下来是代码阅读：
 
 ![](img/174c45ca976eccede630ea65ea7725e4.png)
 
-image_url2 = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406212243833.png&quot;
+## 图像 URL 处理与消息构建
+
+`image_url2 = "https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406212243833.png"`
 
 ```
-image_media_type = &quot;image/png&quot;
-image_data2 = base64.b64encode(httpx.get(image_url2).content).decode(&quot;utf-8&quot;)
+image_media_type = "image/png"
+image_data2 = base64.b64encode(httpx.get(image_url2).content).decode("utf-8")
 ```
 
 ```
 image_message2 = client.messages.create(
-    model=&quot;claude-3-5-sonnet-20240620&quot;,
+    model="claude-3-5-sonnet-20240620",
     max_tokens=1024,
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
+            "role": "user",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;image&quot;,
-                    &quot;source&quot;: {
-                        &quot;type&quot;: &quot;base64&quot;,
-                        &quot;media_type&quot;: image_media_type,
-                        &quot;data&quot;: image_data2,
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": image_media_type,
+                        "data": image_data2,
                     },
                 },
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: &quot;请帮我描绘下图片上的内容。&quot;
+                    "type": "text",
+                    "text": "请帮我描绘下图片上的内容。"
                 }
             ],
         }
@@ -382,33 +386,29 @@ image_message2 = client.messages.create(
 )
 ```
 
-```
-image_message2
-```
+`image_message2`
 
 ```
-Message(id=&#x27;msg_01289eoPmkTYUeXYfvukmjLN&#x27;, content=[TextBlock(text=&#x27;这张图片展示了一段Python代码片段。代码似乎是在设置和配置一个用于处理图像的API请求。以下是代码的主要内容：\n\n1. 定义了一个图像URL，指向阿里云OSS存储服务。\n2. 指定了图像的媒体类型为&quot;image/png&quot;。\n3. 使用base64编码处理从URL获取的图像数据。\n4. 创建了一个消息对象，使用&quot;claude-3-5-sonnet-20240620&quot;模型。\n5. 设置了最大令牌数为1024。\n6. 在消息内容中包含了图像数据和一个文本提示。\n7. 文本提示是中文，内容为&quot;请帮我描绘下图片上的内容。&quot;\n\n这段代码看起来是为了准备一个包含图像的API请求，可能是用于图像分析或描述任务。代码使用了一些Python库，如httpx和base64，以及可能是自定义的client对象来创建消息。&#x27;, type=&#x27;text&#x27;)], model=&#x27;claude-3-5-sonnet-20240620&#x27;, role=&#x27;assistant&#x27;, stop_reason=&#x27;end_turn&#x27;, stop_sequence=None, type=&#x27;message&#x27;, usage=Usage(input_tokens=1574, output_tokens=306))
+Message(id='msg_01289eoPmkTYUeXYfvukmjLN', content=[TextBlock(text='这张图片展示了一段Python代码片段。代码似乎是在设置和配置一个用于处理图像的API请求。以下是代码的主要内容：\n\n1. 定义了一个图像URL，指向阿里云OSS存储服务。\n2. 指定了图像的媒体类型为"image/png"。\n3. 使用base64编码处理从URL获取的图像数据。\n4. 创建了一个消息对象，使用"claude-3-5-sonnet-20240620"模型。\n5. 设置了最大令牌数为1024。\n6. 在消息内容中包含了图像数据和一个文本提示。\n7. 文本提示是中文，内容为"请帮我描绘下图片上的内容。"。\n\n这段代码看起来是为了准备一个包含图像的API请求，可能是用于图像分析或描述任务。代码使用了一些Python库，如httpx和base64，以及可能是自定义的client对象来创建消息。', type='text')], model='claude-3-5-sonnet-20240620', role='assistant', stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(input_tokens=1574, output_tokens=306))
 ```
 
 ```
 print(image_message2.content[0].text)
 ```
 
-```
 这张图片展示了一段Python代码片段。代码似乎是在设置和配置一个用于处理图像的API请求。以下是代码的主要内容：
 
 1. 定义了一个图像URL，指向阿里云OSS存储服务。
-2. 指定了图像的媒体类型为&quot;image/png&quot;。
-3. 使用base64编码处理从URL获取的图像数据。
-4. 创建了一个消息对象，使用&quot;claude-3-5-sonnet-20240620&quot;模型。
+2. 指定了图像的媒体类型为`image/png`。
+3. 使用`base64`编码处理从URL获取的图像数据。
+4. 创建了一个消息对象，使用`claude-3-5-sonnet-20240620`模型。
 5. 设置了最大令牌数为1024。
 6. 在消息内容中包含了图像数据和一个文本提示。
-7. 文本提示是中文，内容为&quot;请帮我描绘下图片上的内容。&quot;
+7. 文本提示是中文，内容为`请帮我描绘下图片上的内容。`。
 
-这段代码看起来是为了准备一个包含图像的API请求，可能是用于图像分析或描述任务。代码使用了一些Python库，如httpx和base64，以及可能是自定义的client对象来创建消息。
-```
+这段代码看起来是为了准备一个包含图像的API请求，可能是用于图像分析或描述任务。代码使用了一些Python库，如`httpx`和`base64`，以及可能是自定义的`client`对象来创建消息。
 
-+   多轮自动对话函数封装
+## 多轮自动对话函数封装
 
 ```
 import base64
@@ -416,123 +416,105 @@ import httpx
 
 def get_image_data(image_url):
     # 根据图片URL的文件扩展名来确定media_type
-    if image_url.endswith(&quot;.png&quot;):
-        image_media_type = &quot;image/png&quot;
-    elif image_url.endswith(&quot;.jpg&quot;) or image_url.endswith(&quot;.jpeg&quot;):
-        image_media_type = &quot;image/jpeg&quot;
+    if image_url.endswith(".png"):
+        image_media_type = "image/png"
+    elif image_url.endswith(".jpg") or image_url.endswith(".jpeg"):
+        image_media_type = "image/jpeg"
     else:
-        raise ValueError(&quot;Unsupported image format. Only PNG and JPEG are supported.&quot;)
+        raise ValueError("Unsupported image format. Only PNG and JPEG are supported.")
     
-    image_data = base64.b64encode(httpx.get(image_url).content).decode(&quot;utf-8&quot;)
+    image_data = base64.b64encode(httpx.get(image_url).content).decode("utf-8")
     return {
-        &quot;type&quot;: &quot;image&quot;,
-        &quot;source&quot;: {
-            &quot;type&quot;: &quot;base64&quot;,
-            &quot;media_type&quot;: image_media_type,
-            &quot;data&quot;: image_data,
+        "type": "image",
+        "source": {
+            "type": "base64",
+            "media_type": image_media_type,
+            "data": image_data,
         }
     }
 ```
 
-temp_url = &quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;
+`temp_url = "https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png"`
 
-```
-```
+`image_content = get_image_data(temp_url)`
 
-```
-image_content = get_image_data(temp_url)
-```
-
-```
-# image_content
-```
+`# image_content`
 
 ```
 import re
 
 def extract_image_url(user_input):
     # 使用正则表达式提取URL
-    url_pattern = r&#x27;(https?://[^\s]+(?:\.png|\.jpg|\.jpeg))&#x27;
+    url_pattern = r'(https?://[^\s]+(?:\.png|\.jpg|\.jpeg))'
     match = re.search(url_pattern, user_input)
     if match:
         return match.group(0)
     return None
 ```
 
-user_input = &#x27;你能帮我介绍下这这张图片上的内容么：&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;&#x27;
+`user_input = '你能帮我介绍下这这张图片上的内容么："https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png"'`
 
-```
-```
+`extract_image_url(user_input)`
 
-```
-extract_image_url(user_input)
-```
-
-&#x27;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&#x27;
-
-```
-```
+`'https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png'`
 
 ```
 def chat_with_claude(client):
     conversation = []
 
     while True:
-        user_input = input(&quot;你: &quot;)
-        if user_input.lower() == &quot;exit&quot;:
-            print(&quot;结束对话。&quot;)
+        user_input = input("你: ")
+        if user_input.lower() == "exit":
+            print("结束对话。")
             break
 
         image_url = extract_image_url(user_input)
         if image_url:
             image_content = get_image_data(image_url)
-            text_content = user_input.replace(image_url, &quot;&quot;).strip()
-            if text_content == &quot;&quot;:
-                text_content = &quot;请帮我描绘下图片上的内容。&quot;
+            text_content = user_input.replace(image_url, "").strip()
+            if text_content == "":
+                text_content = "请帮我描绘下图片上的内容。"
             conversation.append({
-                &quot;role&quot;: &quot;user&quot;,
-                &quot;content&quot;: [image_content, {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: text_content}]
+                "role": "user",
+                "content": [image_content, {"type": "text", "text": text_content}]
             })
         else:
             conversation.append({
-                &quot;role&quot;: &quot;user&quot;,
-                &quot;content&quot;: [
+                "role": "user",
+                "content": [
                     {
-                        &quot;type&quot;: &quot;text&quot;,
-                        &quot;text&quot;: user_input
+                        "type": "text",
+                        "text": user_input
                     }
                 ]
             })
 
         message = client.messages.create(
-            model=&quot;claude-3-5-sonnet-20240620&quot;,
+            model="claude-3-5-sonnet-20240620",
             max_tokens=1024,
             temperature=0,
-            system=&quot;你是一位助人为乐的助手。&quot;,
+            system="你是一位助人为乐的助手。",
             messages=conversation
         )
 
         assistant_response = message.content[0].text
-        print(f&quot;Claude: {assistant_response}&quot;)
+        print(f"Claude: {assistant_response}")
 
         conversation.append({
-            &quot;role&quot;: &quot;assistant&quot;,
-            &quot;content&quot;: [
+            "role": "assistant",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: assistant_response
+                    "type": "text",
+                    "text": assistant_response
                 }
             ]
         })
 ```
 
-```
-chat_with_claude(client)
-```
+`chat_with_claude(client)`
 
+你: 你能帮我介绍下这这张图片上的内容么：`https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png`
 
-
-你:  你能帮我介绍下这这张图片上的内容么：&quot;https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png&quot;
 
 
 ```
@@ -574,37 +556,35 @@ Claude: 根据图表显示，Claude 3.5 Sonnet 的性能表现非常出色：
 结束对话。
 ```
 
-### 2.Claude 3.5 Function Calling调用
+## 2. Claude 3.5 Function Calling 调用
 
-#### 2.1 获取天气调用API
+### 2.1 获取天气调用API
 
 为了能够调用OpenWeather服务，和OpenAI的API使用过程类似，我们首先需要先注册OpenWeather账号，并获取OpenWeather API Key。这里需要注意的是，对于大多数在线服务的API来说，都需要通过API key来进行身份验证，尽管OpenWeather相对更加Open，有非常多的免费使用的次数，但身份验证仍然是必要的防止API被滥用的有效手段。OpenWeather API key获取流程如下：
 
 +   Step 1.登录OpenWeather官网并点击Sign—>create account完成注册。该网站无需魔法即可直接登录，可以使用国内邮箱或者🐧邮箱均可进行注册，官网地址为：https://openweathermap.org/
 
-
 ![](img/804d5646dfc7f661b9a382670ebb140a.png)
 
 +   Step 2.获取API-key：注册完成后，即可在API keys页面查看当前账户的API key：
-
 
 ![](img/f2c5bf7efb37472cf43dea8a759faeac.png)
 
 一般来说完成注册后，就会有一个已经激活的API-key。和OpenAI一样，OpenWeather的API key也创建多个。
 
-+   Step 3.将其设置为环境变量：和OpenAI API key类似，为了方便后续调用，我们也可以直接将OpenWeather API key设置为环境变量，变量名为OPENWEATHER_API_KEY。具体设置环境变量的方法参考Ch.1中OpenAI APkey设置环境变量流程，此处不再赘述。
++   Step 3.将其设置为环境变量：和OpenAI API key类似，为了方便后续调用，我们也可以直接将OpenWeather API key设置为环境变量，变量名为`OPENWEATHER_API_KEY`。具体设置环境变量的方法参考Ch.1中OpenAI APkey设置环境变量流程，此处不再赘述。
 
 ![](img/b1912ed0379777a4d8cf241392822ea1.png)
 
 设置完了环境变量之后，接下来即可按照如下方式创建OpenWeather API key变量：
 
 ```
-open_weather_key = os.getenv(&quot;OPENWEATHER_API_KEY&quot;)
+open_weather_key = os.getenv("OPENWEATHER_API_KEY")
 ```
 
 需要注意的是，一般来说首次注册用户，首个API key需要等待2-5小时才会被激活，在此期间使用该API key会返回401错误。
 
-#### 2.2 创建天气调用函数
+### 2.2 创建天气调用函数
 
 ```
 import os
@@ -613,27 +593,27 @@ import json
 ```
 
 ```
-open_weather_key = os.getenv(&quot;OPENWEATHER_API_KEY&quot;)
+open_weather_key = os.getenv("OPENWEATHER_API_KEY")
 ```
 
 ```
 def get_weather(loc):
-    &quot;&quot;&quot;
+    """
     查询即时天气函数
     :param loc: 必要参数，字符串类型，用于表示查询天气的具体城市名称，\
-    注意，中国的城市需要用对应城市的英文名称代替，例如如果需要查询北京市天气，则loc参数需要输入&#x27;Beijing&#x27;；
+    注意，中国的城市需要用对应城市的英文名称代替，例如如果需要查询北京市天气，则loc参数需要输入'Beijing'；
     :return：OpenWeather API查询即时天气的结果，具体URL请求地址为：https://api.openweathermap.org/data/2.5/weather\
     返回结果对象类型为解析之后的JSON格式对象，并用字符串形式进行表示，其中包含了全部重要的天气信息
-    &quot;&quot;&quot;
+    """
     # Step 1.构建请求
-    url = &quot;https://api.openweathermap.org/data/2.5/weather&quot;
+    url = "https://api.openweathermap.org/data/2.5/weather"
 
     # Step 2.设置查询参数
     params = {
-        &quot;q&quot;: loc,               
-        &quot;appid&quot;: open_weather_key,    # 输入API key
-        &quot;units&quot;: &quot;metric&quot;,            # 使用摄氏度而不是华氏度
-        &quot;lang&quot;:&quot;zh_cn&quot;                # 输出语言为简体中文
+        "q": loc,               
+        "appid": open_weather_key,    # 输入API key
+        "units": "metric",            # 使用摄氏度而不是华氏度
+        "lang":"zh_cn"                # 输出语言为简体中文
     }
 
     # Step 3.发送GET请求
@@ -645,44 +625,44 @@ def get_weather(loc):
 ```
 
 ```
-get_weather(&#x27;Beijing&#x27;)
+get_weather('Beijing')
 ```
 
 ```
-&#x27;{&quot;coord&quot;: {&quot;lon&quot;: 116.3972, &quot;lat&quot;: 39.9075}, &quot;weather&quot;: [{&quot;id&quot;: 804, &quot;main&quot;: &quot;Clouds&quot;, &quot;description&quot;: &quot;\\u9634\\uff0c\\u591a\\u4e91&quot;, &quot;icon&quot;: &quot;04d&quot;}], &quot;base&quot;: &quot;stations&quot;, &quot;main&quot;: {&quot;temp&quot;: 23.94, &quot;feels_like&quot;: 23.75, &quot;temp_min&quot;: 23.94, &quot;temp_max&quot;: 23.94, &quot;pressure&quot;: 998, &quot;humidity&quot;: 52, &quot;sea_level&quot;: 998, &quot;grnd_level&quot;: 994}, &quot;visibility&quot;: 10000, &quot;wind&quot;: {&quot;speed&quot;: 1.65, &quot;deg&quot;: 283, &quot;gust&quot;: 3.3}, &quot;clouds&quot;: {&quot;all&quot;: 97}, &quot;dt&quot;: 1718963284, &quot;sys&quot;: {&quot;type&quot;: 1, &quot;id&quot;: 9609, &quot;country&quot;: &quot;CN&quot;, &quot;sunrise&quot;: 1718916362, &quot;sunset&quot;: 1718970378}, &quot;timezone&quot;: 28800, &quot;id&quot;: 1816670, &quot;name&quot;: &quot;Beijing&quot;, &quot;cod&quot;: 200}&#x27;
+'{"coord": {"lon": 116.3972, "lat": 39.9075}, "weather": [{"id": 804, "main": "Clouds", "description": "\\u9634\\uff0c\\u591a\\u4e91", "icon": "04d"}], "base": "stations", "main": {"temp": 23.94, "feels_like": 23.75, "temp_min": 23.94, "temp_max": 23.94, "pressure": 998, "humidity": 52, "sea_level": 998, "grnd_level": 994}, "visibility": 10000, "wind": {"speed": 1.65, "deg": 283, "gust": 3.3}, "clouds": {"all": 97}, "dt": 1718963284, "sys": {"type": 1, "id": 9609, "country": "CN", "sunrise": 1718916362, "sunset": 1718970378}, "timezone": 28800, "id": 1816670, "name": "Beijing", "cod": 200}'
 ```
 
-#### 2.3 借助Function calling实现天气信息获取
+### 2.3 借助Function calling实现天气信息获取
 
-+   创建tools外部函数集说明文字
++   创建`tools`外部函数集说明文字
 
 ```
 get_weather_tool = [
     {
-        &#x27;name&#x27;: &#x27;get_weather&#x27;,
-        &#x27;description&#x27;: &#x27;查询即时天气函数，使用OpenWeather的API，中国的城市需要使用英文名称&#x27;,
-        &#x27;input_schema&#x27;: {
-            &#x27;type&#x27;: &#x27;object&#x27;,
-            &#x27;properties&#x27;: {
-                &#x27;loc&#x27;: {
-                    &#x27;type&#x27;: &#x27;string&#x27;, 
-                    &#x27;description&#x27;: &#x27;需要查询天气的城市的英文名称&#x27;,
+        'name': 'get_weather',
+        'description': '查询即时天气函数，使用OpenWeather的API，中国的城市需要使用英文名称',
+        'input_schema': {
+            'type': 'object',
+            'properties': {
+                'loc': {
+                    'type': 'string', 
+                    'description': '需要查询天气的城市的英文名称',
                 }
             },
-            &#x27;required&#x27;: [&#x27;loc&#x27;],
+            'required': ['loc'],
         }
     }
 ]
 ```
 
-+   创建首次回复first_response消息
++   创建首次回复`first_response`消息
 
 ```
 func_call_response = client.messages.create(
-    model=&quot;claude-3-5-sonnet-20240620&quot;,
+    model="claude-3-5-sonnet-20240620",
     max_tokens=1024,
     tools=get_weather_tool,
-    messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请问今天北京天气如何？&quot;}],
+    messages=[{"role": "user", "content": "请问今天北京天气如何？"}],
 )
 ```
 
@@ -691,7 +671,7 @@ func_call_response
 ```
 
 ```
-Message(id=&#x27;msg_01FsAdtJcqAZNTbAibVs9HDs&#x27;, content=[TextBlock(text=&#x27;好的,我可以帮您查询北京的天气情况。为了获取准确的天气信息,我需要使用天气查询工具。请允许我为您查询。&#x27;, type=&#x27;text&#x27;), ToolUseBlock(id=&#x27;toolu_018aBKVYTfuiiw7KLDKwRbwc&#x27;, input={&#x27;loc&#x27;: &#x27;Beijing&#x27;}, name=&#x27;get_weather&#x27;, type=&#x27;tool_use&#x27;)], model=&#x27;claude-3-5-sonnet-20240620&#x27;, role=&#x27;assistant&#x27;, stop_reason=&#x27;tool_use&#x27;, stop_sequence=None, type=&#x27;message&#x27;, usage=Usage(input_tokens=549, output_tokens=107))
+Message(id='msg_01FsAdtJcqAZNTbAibVs9HDs', content=[TextBlock(text='好的,我可以帮您查询北京的天气情况。为了获取准确的天气信息,我需要使用天气查询工具。请允许我为您查询。', type='text'), ToolUseBlock(id='toolu_018aBKVYTfuiiw7KLDKwRbwc', input={'loc': 'Beijing'}, name='get_weather', type='tool_use')], model='claude-3-5-sonnet-20240620', role='assistant', stop_reason='tool_use', stop_sequence=None, type='message', usage=Usage(input_tokens=549, output_tokens=107))
 ```
 
 ```
@@ -700,7 +680,7 @@ func_call_response.stop_reason
 ```
 
 ```
-&#x27;tool_use&#x27;
+'tool_use'
 ```
 
 ```
@@ -709,7 +689,7 @@ func_call_response.content[0].text
 ```
 
 ```
-&#x27;好的,我可以帮您查询北京的天气情况。为了获取准确的天气信息,我需要使用天气查询工具。请允许我为您查询。&#x27;
+'好的,我可以帮您查询北京的天气情况。为了获取准确的天气信息,我需要使用天气查询工具。请允许我为您查询。'
 ```
 
 ```
@@ -718,7 +698,7 @@ func_call_response.content[1]
 ```
 
 ```
-ToolUseBlock(id=&#x27;toolu_018aBKVYTfuiiw7KLDKwRbwc&#x27;, input={&#x27;loc&#x27;: &#x27;Beijing&#x27;}, name=&#x27;get_weather&#x27;, type=&#x27;tool_use&#x27;)
+ToolUseBlock(id='toolu_018aBKVYTfuiiw7KLDKwRbwc', input={'loc': 'Beijing'}, name='get_weather', type='tool_use')
 ```
 
 ```
@@ -727,7 +707,7 @@ func_call_response.content[1].input
 ```
 
 ```
-{&#x27;loc&#x27;: &#x27;Beijing&#x27;}
+{'loc': 'Beijing'}
 ```
 
 ```
@@ -736,14 +716,14 @@ func_call_response.content[1].name
 ```
 
 ```
-&#x27;get_weather&#x27;
+'get_weather'
 ```
 
 ```
 # 创建外部函数工具集
 available_functions = {
-            &quot;get_weather&quot;: get_weather,
-        }
+    "get_weather": get_weather,
+}
 ```
 
 ```
@@ -753,7 +733,7 @@ function_name
 ```
 
 ```
-&#x27;get_weather&#x27;
+'get_weather'
 ```
 
 ```
@@ -763,7 +743,7 @@ fuction_to_call
 ```
 
 ```
-&lt;function __main__.get_weather(loc)&gt;
+<function __main__.get_weather(loc)>
 ```
 
 ```
@@ -773,13 +753,13 @@ function_args
 ```
 
 ```
-{&#x27;loc&#x27;: &#x27;Beijing&#x27;}
+{'loc': 'Beijing'}
 ```
 
-然后将用户输入信息和模型调用外部函数信息添加至messages列表中：
+然后将用户输入信息和模型调用外部函数信息添加至`messages`列表中：
 
 ```
-messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请问今天北京天气如何？&quot;}]
+messages = [{"role": "user", "content": "请问今天北京天气如何？"}]
 ```
 
 ```
@@ -787,22 +767,22 @@ messages
 ```
 
 ```
-[{&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: &#x27;请问今天北京天气如何？&#x27;}]
+[{'role': 'user', 'content': '请问今天北京天气如何？'}]
 ```
 
 ```
 ss = {
-    &quot;role&quot;: &quot;assistant&quot;,
-    &quot;content&quot;: [
+    "role": "assistant",
+    "content": [
         {
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;text&quot;: func_call_response.content[0].text
+            "type": "text",
+            "text": func_call_response.content[0].text
         },
         {
-            &quot;type&quot;: &quot;tool_use&quot;,
-            &quot;id&quot;: func_call_response.content[1].id,
-            &quot;name&quot;: func_call_response.content[1].name,
-            &quot;input&quot;: func_call_response.content[1].input
+            "type": "tool_use",
+            "id": func_call_response.content[1].id,
+            "name": func_call_response.content[1].name,
+            "input": func_call_response.content[1].input
         }
     ]
 }
@@ -812,7 +792,7 @@ ss = {
 messages.append(ss)
 ```
 
-+   创建function_response_message
++   创建`function_response_message`
 
 ```
 function_response = fuction_to_call(**function_args)
@@ -822,8 +802,9 @@ function_response = fuction_to_call(**function_args)
 function_response
 ```
 
-```
-&#x27;{&quot;coord&quot;: {&quot;lon&quot;: 116.3972, &quot;lat&quot;: 39.9075}, &quot;weather&quot;: [{&quot;id&quot;: 804, &quot;main&quot;: &quot;Clouds&quot;, &quot;description&quot;: &quot;\\u9634\\uff0c\\u591a\\u4e91&quot;, &quot;icon&quot;: &quot;04d&quot;}], &quot;base&quot;: &quot;stations&quot;, &quot;main&quot;: {&quot;temp&quot;: 23.94, &quot;feels_like&quot;: 23.75, &quot;temp_min&quot;: 23.94, &quot;temp_max&quot;: 23.94, &quot;pressure&quot;: 998, &quot;humidity&quot;: 52, &quot;sea_level&quot;: 998, &quot;grnd_level&quot;: 994}, &quot;visibility&quot;: 10000, &quot;wind&quot;: {&quot;speed&quot;: 1.65, &quot;deg&quot;: 283, &quot;gust&quot;: 3.3}, &quot;clouds&quot;: {&quot;all&quot;: 97}, &quot;dt&quot;: 1718964106, &quot;sys&quot;: {&quot;type&quot;: 1, &quot;id&quot;: 9609, &quot;country&quot;: &quot;CN&quot;, &quot;sunrise&quot;: 1718916362, &quot;sunset&quot;: 1718970378}, &quot;timezone&quot;: 28800, &quot;id&quot;: 1816670, &quot;name&quot;: &quot;Beijing&quot;, &quot;cod&quot;: 200}&#x27;
+
+
+```&#x27;{&quot;coord&quot;: {&quot;lon&quot;: 116.3972, &quot;lat&quot;: 39.9075}, &quot;weather&quot;: [{&quot;id&quot;: 804, &quot;main&quot;: &quot;Clouds&quot;, &quot;description&quot;: &quot;\\u9634\\uff0c\\u591a\\u4e91&quot;, &quot;icon&quot;: &quot;04d&quot;}], &quot;base&quot;: &quot;stations&quot;, &quot;main&quot;: {&quot;temp&quot;: 23.94, &quot;feels_like&quot;: 23.75, &quot;temp_min&quot;: 23.94, &quot;temp_max&quot;: 23.94, &quot;pressure&quot;: 998, &quot;humidity&quot;: 52, &quot;sea_level&quot;: 998, &quot;grnd_level&quot;: 994}, &quot;visibility&quot;: 10000, &quot;wind&quot;: {&quot;speed&quot;: 1.65, &quot;deg&quot;: 283, &quot;gust&quot;: 3.3}, &quot;clouds&quot;: {&quot;all&quot;: 97}, &quot;dt&quot;: 1718964106, &quot;sys&quot;: {&quot;type&quot;: 1, &quot;id&quot;: 9609, &quot;country&quot;: &quot;CN&quot;, &quot;sunrise&quot;: 1718916362, &quot;sunset&quot;: 1718970378}, &quot;timezone&quot;: 28800, &quot;id&quot;: 1816670, &quot;name&quot;: &quot;Beijing&quot;, &quot;cod&quot;: 200}&#x27;
 ```
 
 并将其添加至原始消息列表中：
@@ -849,14 +830,9 @@ function_response_message = {
 }
 ```
 
-```
-# 追加function返回消息
-messages.append(function_response_message)
-```
++ 创建`second_response_message`
 
-+   创建second_response_message
-
-接下来，再次调用Chat模型来围绕messages进行回答。需要注意的是，此时我们不再需要向模型重复提问，只需要简单的将我们已经准备好的messages传入Chat模型即可：
+接下来，再次调用Chat模型来围绕`messages`进行回答。需要注意的是，此时我们不再需要向模型重复提问，只需要简单的将我们已经准备好的`messages`传入Chat模型即可：
 
 ```
 messages
@@ -902,7 +878,7 @@ final_response.content[0].text
 &#x27;根据查询结果，我可以为您提供北京今天的天气情况：\n\n1. 天气状况：多云（阴天）\n2. 温度：目前气温为23.94°C（约24°C）\n3. 体感温度：23.75°C\n4. 湿度：52%\n5. 风速：1.65米/秒，大约是微风\n6. 能见度：10公里，属于良好\n7. 气压：998百帕\n\n总的来说，今天北京的天气是多云的，温度适中，湿度适宜，风力较小。虽然天空较为阴沉，但能见度良好。建议您外出时可能需要带一件薄外套，以防温度变化。如果您有户外活动计划，目前的天气状况还是比较适宜的，但要注意随时关注天气变化。\n\n您还有其他关于天气的问题吗？或者需要了解其他方面的信息吗？&#x27;
 ```
 
-+   定义可调用外部工具的对话函数
++ 定义可调用外部工具的对话函数
 
 ```
 def run_conv(question, 
@@ -1008,92 +984,98 @@ def run_conv(question,
     return final_response
 ```
 
-```
+
+
+# 工具定义与函数调用示例
+
+## 工具定义
+
+```python
 tools = [
     {
-        &#x27;name&#x27;: &#x27;get_weather&#x27;,
-        &#x27;description&#x27;: &#x27;查询即时天气函数，使用OpenWeather的API，中国的城市需要使用英文名称&#x27;,
-        &#x27;input_schema&#x27;: {
-            &#x27;type&#x27;: &#x27;object&#x27;,
-            &#x27;properties&#x27;: {
-                &#x27;loc&#x27;: {
-                    &#x27;type&#x27;: &#x27;string&#x27;, 
-                    &#x27;description&#x27;: &#x27;需要查询天气的城市的英文名称&#x27;,
+        'name': 'get_weather',
+        'description': '查询即时天气函数，使用OpenWeather的API，中国的城市需要使用英文名称',
+        'input_schema': {
+            'type': 'object',
+            'properties': {
+                'loc': {
+                    'type': 'string', 
+                    'description': '需要查询天气的城市的英文名称',
                 }
             },
-            &#x27;required&#x27;: [&#x27;loc&#x27;],
+            'required': ['loc'],
         }
     }
 ]
 ```
 
-```
+```python
 functions_list = [get_weather]
 ```
 
-+   不开启外部函数对话
+## 不开启外部函数对话
 
-```
-run_conv(question=&#x27;你好&#x27;, 
+```python
+run_conv(question='你好', 
          tools=None, 
          functions_list=functions_list)
 ```
 
 ```
-&#x27;你好!很高兴见到你。我是Claude,一位AI助手。我可以用中文和你交谈。你今天过得怎么样?有什么我可以帮助你的吗?&#x27;
+'你好!很高兴见到你。我是Claude,一位AI助手。我可以用中文和你交谈。你今天过得怎么样?有什么我可以帮助你的吗?'
 ```
 
-+   开启外部函数对话
+## 开启外部函数对话
 
-```
-run_conv(question=&#x27;请问今天杭州什么天气？&#x27;, 
+```python
+run_conv(question='请问今天杭州什么天气？', 
          tools=tools, 
          functions_list=functions_list)
 ```
 
 ```
-&#x27;根据查询结果，我可以告诉您杭州今天的天气情况如下：\n\n1. 温度：当前温度为31.95°C（约89.5°F）。\n2. 天气状况：小雨。\n3. 湿度：93%。\n4. 风速：1.76米/秒（约6.3公里/小时）。\n5. 能见度：10公里。\n6. 气压：1000百帕。\n\n总体来说，杭州今天的天气炎热潮湿，有小雨。温度很高，体感温度可能会更高，达到38.95°C（约102°F）。建议您外出时带伞，注意防暑降温，多喝水，避免长时间在户外活动。如果需要外出，最好穿轻薄、透气的衣物，并做好防晒措施。\n\n您还有其他关于天气的问题吗？或者需要了解其他城市的天气情况吗？&#x27;
+'根据查询结果，我可以告诉您杭州今天的天气情况如下：\n\n1. 温度：当前温度为31.95°C（约89.5°F）。\n2. 天气状况：小雨。\n3. 湿度：93%。\n4. 风速：1.76米/秒（约6.3公里/小时）。\n5. 能见度：10公里。\n6. 气压：1000百帕。\n\n总体来说，杭州今天的天气炎热潮湿，有小雨。温度很高，体感温度可能会更高，达到38.95°C（约102°F）。建议您外出时带伞，注意防暑降温，多喝水，避免长时间在户外活动。如果需要外出，最好穿轻薄、透气的衣物，并做好防晒措施。\n\n您还有其他关于天气的问题吗？或者需要了解其他城市的天气情况吗？'
 ```
 
-+   综合多轮对话机器人&多模态对话机器人&调用Function calling对话机器人
+## 综合多轮对话机器人&多模态对话机器人&调用Function calling对话机器人
 
-```
+```python
 import base64
 import re
 import httpx
 from some_claude_api_library import ClaudeClient  # 替换为实际的Claude大模型API库名
 
 def get_image_data(image_url):
-    if image_url.endswith(&quot;.png&quot;):
-        image_media_type = &quot;image/png&quot;
-    elif image_url.endswith(&quot;.jpg&quot;) or image_url.endswith(&quot;.jpeg&quot;):
-        image_media_type = &quot;image/jpeg&quot;
+    if image_url.endswith(".png"):
+        image_media_type = "image/png"
+    elif image_url.endswith(".jpg") or image_url.endswith(".jpeg"):
+        image_media_type = "image/jpeg"
     else:
-        raise ValueError(&quot;Unsupported image format. Only PNG and JPEG are supported.&quot;)
+        raise ValueError("Unsupported image format. Only PNG and JPEG are supported.")
     
-    image_data = base64.b64encode(httpx.get(image_url).content).decode(&quot;utf-8&quot;)
+    image_data = base64.b64encode(httpx.get(image_url).content).decode("utf-8")
     return {
-        &quot;type&quot;: &quot;image&quot;,
-        &quot;source&quot;: {
-            &quot;type&quot;: &quot;base64&quot;,
-            &quot;media_type&quot;: image_media_type,
-            &quot;data&quot;: image_data,
+        "type": "image",
+        "source": {
+            "type": "base64",
+            "media_type": image_media_type,
+            "data": image_data,
         }
     }
 
 def extract_image_url(user_input):
-    url_pattern = r&#x27;(https?://[^\s]+(?:\.png|\.jpg|\.jpeg))&#x27;
+    url_pattern = r'(https?://[^\s]+(?:\.png|\.jpg|\.jpeg))'
     match = re.search(url_pattern, user_input)
     if match:
         return match.group(0)
     return None
 
-def run_conv(question, tools=None, functions_list=None, model=&quot;claude-3-5-sonnet-20240620&quot;):
-    &quot;&quot;&quot;
+def run_conv(question, tools=None, functions_list=None, model="claude-3-5-sonnet-20240620"):
+    """
     能够自动执行外部函数调用的Chat对话模型，并支持多轮对话
     :return：Chat模型输出结果
-    &quot;&quot;&quot;
-    client = ClaudeClient(api_key=&quot;your_api_key_here&quot;)  # 替换为实际的API key
+    """
+    client = ClaudeClient(api_key="your_api_key_here")  # 替换为实际的API key
     conversation = []
 
     def chat_with_claude(conversation, user_messages):
@@ -1107,9 +1089,9 @@ def run_conv(question, tools=None, functions_list=None, model=&quot;claude-3-5-s
         return response
 
     while True:
-        user_input = input(&quot;你: &quot;)
-        if user_input.lower() == &quot;exit&quot;:
-            print(&quot;结束对话。&quot;)
+        user_input = input("你: ")
+        if user_input.lower() == "exit":
+            print("结束对话。")
             break
 
         user_messages = []
@@ -1117,20 +1099,20 @@ def run_conv(question, tools=None, functions_list=None, model=&quot;claude-3-5-s
         image_url = extract_image_url(user_input)
         if image_url:
             image_content = get_image_data(image_url)
-            text_content = user_input.replace(image_url, &quot;&quot;).strip()
+            text_content = user_input.replace(image_url, "").strip()
             if not text_content:
-                text_content = &quot;请帮我描绘下图片上的内容。&quot;
+                text_content = "请帮我描绘下图片上的内容。"
             user_messages.append({
-                &quot;role&quot;: &quot;user&quot;,
-                &quot;content&quot;: [image_content, {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: text_content}]
+                "role": "user",
+                "content": [image_content, {"type": "text", "text": text_content}]
             })
         else:
             user_messages.append({
-                &quot;role&quot;: &quot;user&quot;,
-                &quot;content&quot;: [
+                "role": "user",
+                "content": [
                     {
-                        &quot;type&quot;: &quot;text&quot;,
-                        &quot;text&quot;: user_input
+                        "type": "text",
+                        "text": user_input
                     }
                 ]
             })
@@ -1138,7 +1120,7 @@ def run_conv(question, tools=None, functions_list=None, model=&quot;claude-3-5-s
         response = chat_with_claude(conversation, user_messages)
         response_message = response.content
 
-        if response.stop_reason == &#x27;tool_use&#x27; and functions_list is not None:
+        if response.stop_reason == 'tool_use' and functions_list is not None:
             available_functions = {func.__name__: func for func in functions_list}
             function_name = response_message[1].name
             function_to_call = available_functions.get(function_name)
@@ -1147,57 +1129,63 @@ def run_conv(question, tools=None, functions_list=None, model=&quot;claude-3-5-s
             if function_to_call:
                 function_response = function_to_call(**function_args)
                 conversation.append({
-                    &quot;role&quot;: &quot;assistant&quot;,
-                    &quot;content&quot;: [
+                    "role": "assistant",
+                    "content": [
                         {
-                            &quot;type&quot;: &quot;text&quot;,
-                            &quot;text&quot;: response_message[0].text
+                            "type": "text",
+                            "text": response_message[0].text
                         },
                         {
-                            &quot;type&quot;: &quot;tool_use&quot;,
-                            &quot;id&quot;: response_message[1].id,
-                            &quot;name&quot;: function_name,
-                            &quot;input&quot;: function_args
+                            "type": "tool_use",
+                            "id": response_message[1].id,
+                            "name": function_name,
+                            "input": function_args
                         }
                     ]
                 })
                 conversation.append({
-                    &quot;role&quot;: &quot;user&quot;,
-                    &quot;content&quot;: [
+                    "role": "user",
+                    "content": [
                         {
-                            &quot;type&quot;: &quot;tool_result&quot;,
-                            &quot;tool_use_id&quot;: response_message[1].id,
-                            &quot;content&quot;: function_response
+                            "type": "tool_result",
+                            "tool_use_id": response_message[1].id,
+                            "content": function_response
                         }
                     ]
                 })
                 second_response = chat_with_claude(conversation, [])
                 final_response = second_response.content[0].text
             else:
-                final_response = &quot;Function not found.&quot;
+                final_response = "Function not found."
         else:
             conversation.append({
-                &quot;role&quot;: &quot;assistant&quot;,
-                &quot;content&quot;: response_message
+                "role": "assistant",
+                "content": response_message
             })
             final_response = response_message[0].text
 
-        print(f&quot;Claude: {final_response}&quot;)
+        print(f"Claude: {final_response}")
 
-if __name__ == &quot;__main__&quot;:
-    run_conv(question=&quot;初始问题&quot;, tools=None, functions_list=None)
+if __name__ == "__main__":
+    run_conv(question="初始问题", tools=None, functions_list=None)
 ```
+
+
+
+# 代码示例
+
+## 函数定义
 
 ```
 def run_conv(question, 
              client,
              tools=None, 
              functions_list=None, 
-             model=&quot;claude-3-5-sonnet-20240620&quot;):
-    &quot;&quot;&quot;
+             model="claude-3-5-sonnet-20240620"):
+    """
     能够自动执行外部函数调用的Chat对话模型，并支持多轮对话
     :return：Chat模型输出结果
-    &quot;&quot;&quot;
+    """
     conversation = []
 
     def chat_with_claude(conversation, user_messages):
@@ -1211,9 +1199,9 @@ def run_conv(question,
         return response
 
     while True:
-        user_input = input(&quot;你: &quot;)
-        if user_input.lower() == &quot;exit&quot;:
-            print(&quot;结束对话。&quot;)
+        user_input = input("你: ")
+        if user_input.lower() == "exit":
+            print("结束对话。")
             break
 
         user_messages = []
@@ -1221,20 +1209,20 @@ def run_conv(question,
         image_url = extract_image_url(user_input)
         if image_url:
             image_content = get_image_data(image_url)
-            text_content = user_input.replace(image_url, &quot;&quot;).strip()
+            text_content = user_input.replace(image_url, "").strip()
             if not text_content:
-                text_content = &quot;请帮我描绘下图片上的内容。&quot;
+                text_content = "请帮我描绘下图片上的内容。"
             user_messages.append({
-                &quot;role&quot;: &quot;user&quot;,
-                &quot;content&quot;: [image_content, {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: text_content}]
+                "role": "user",
+                "content": [image_content, {"type": "text", "text": text_content}]
             })
         else:
             user_messages.append({
-                &quot;role&quot;: &quot;user&quot;,
-                &quot;content&quot;: [
+                "role": "user",
+                "content": [
                     {
-                        &quot;type&quot;: &quot;text&quot;,
-                        &quot;text&quot;: user_input
+                        "type": "text",
+                        "text": user_input
                     }
                 ]
             })
@@ -1242,7 +1230,7 @@ def run_conv(question,
         response = chat_with_claude(conversation, user_messages)
         response_message = response.content
 
-        if response.stop_reason == &#x27;tool_use&#x27; and functions_list is not None:
+        if response.stop_reason == 'tool_use' and functions_list is not None:
             available_functions = {func.__name__: func for func in functions_list}
             function_name = response_message[1].name
             function_to_call = available_functions.get(function_name)
@@ -1251,55 +1239,62 @@ def run_conv(question,
             if function_to_call:
                 function_response = function_to_call(**function_args)
                 conversation.append({
-                    &quot;role&quot;: &quot;assistant&quot;,
-                    &quot;content&quot;: [
+                    "role": "assistant",
+                    "content": [
                         {
-                            &quot;type&quot;: &quot;text&quot;,
-                            &quot;text&quot;: response_message[0].text
+                            "type": "text",
+                            "text": response_message[0].text
                         },
                         {
-                            &quot;type&quot;: &quot;tool_use&quot;,
-                            &quot;id&quot;: response_message[1].id,
-                            &quot;name&quot;: function_name,
-                            &quot;input&quot;: function_args
+                            "type": "tool_use",
+                            "id": response_message[1].id,
+                            "name": function_name,
+                            "input": function_args
                         }
                     ]
                 })
                 conversation.append({
-                    &quot;role&quot;: &quot;user&quot;,
-                    &quot;content&quot;: [
+                    "role": "user",
+                    "content": [
                         {
-                            &quot;type&quot;: &quot;tool_result&quot;,
-                            &quot;tool_use_id&quot;: response_message[1].id,
-                            &quot;content&quot;: function_response
+                            "type": "tool_result",
+                            "tool_use_id": response_message[1].id,
+                            "content": function_response
                         }
                     ]
                 })
                 second_response = chat_with_claude(conversation, [])
                 final_response = second_response.content[0].text
             else:
-                final_response = &quot;Function not found.&quot;
+                final_response = "Function not found."
         else:
             conversation.append({
-                &quot;role&quot;: &quot;assistant&quot;,
-                &quot;content&quot;: response_message
+                "role": "assistant",
+                "content": response_message
             })
             final_response = response_message[0].text
 
-        print(f&quot;Claude: {final_response}&quot;)
+        print(f"Claude: {final_response}")
 ```
 
+## 函数调用
+
 ```
-run_conv(question=&#x27;你好&#x27;, 
+run_conv(question='你好', 
          client=client,
          tools=tools, 
          functions_list=functions_list)
 ```
 
+# 对话演示
 
+## 图片识别对话
 
+```
 你:  好的，这张图上最佳性能的模型是哪个呢？图片地址：https://ml2022.oss-cn-hangzhou.aliyuncs.com/img/202406211740876.png
+```
 
+## 自我介绍与模型性能对话
 
 ```
 你:  你好，请介绍下你自己
@@ -1329,7 +1324,7 @@ Claude: 是的,我知道。Claude的母公司是Anthropic。
 
 Anthropic是一家美国人工智能公司,成立于2021年。它专注于开发安全和道德的AI系统,其中最著名的产品就是Claude AI助手。
 
-Anthropic的创始团队包括一些前OpenAI的研究人员,他们致力于发展&quot;宪法AI&quot;(Constitutional AI)的理念,旨在创建更安全、更可控、更符合道德标准的AI系统。
+Anthropic的创始团队包括一些前OpenAI的研究人员,他们致力于发展"宪法AI"(Constitutional AI)的理念,旨在创建更安全、更可控、更符合道德标准的AI系统。
 
 作为Anthropic开发的AI助手,我对公司的具体运营细节并不了解,但我知道Anthropic一直在努力推进AI技术的发展,同时也非常重视AI的安全性和道德性。
 
@@ -1352,19 +1347,21 @@ Claude: 根据查询结果,旧金山(San Francisco)今天的天气情况如下:
 结束对话。
 ```
 
----
+# 课程推广
 
-+   体验课内容节选自《2024大模型技术实战》（夏季班）完整版付费课程
+## 体验课介绍
+
++ 体验课内容节选自《2024大模型技术实战》（夏季班）完整版付费课程
 
 体验课时间有限，若想深度学习大模型技术，欢迎大家报名有我主讲的《2024大模型技术实战课》(夏季班)：
 
 ![](img/ac8d8533b939062c97f71547eae19aa6.png)
 
-[**《大模型技术实战课》（夏季班）**](https://whakv.xetslk.com/s/4eSM8L)**为【100+小时】体系大课，总共十八大模**块精讲精析，零基础直达大模型企业级应用！
+[**《大模型技术实战课》（夏季班）**](https://whakv.xetslk.com/s/4eSM8L)为【100+小时】体系大课，总共十八大模块精讲精析，零基础直达大模型企业级应用！
 
 ![](img/6dde537a8959781d3ee897b1be0ee68c.png)
 
-**此外为持续保证学员大模型技术竞争力，课程实时追更最新大模型技术进展，近期额外新增增了GPT-4o、Qwen2系列模型和GLM-4-9B，以及RAG企业级**项目实战最新前沿技术内容！课程大纲获取、领取体验课学员专享优惠券，扫码添加客服小可爱(🛰️：littlecat_1207)，回复“大模型”，即咨询课程信息哦👇
+此外为持续保证学员大模型技术竞争力，课程实时追更最新大模型技术进展，近期额外新增了GPT-4o、Qwen2系列模型和GLM-4-9B，以及RAG企业级项目实战最新前沿技术内容！课程大纲获取、领取体验课学员专享优惠券，扫码添加客服小可爱(🛰️：littlecat_1207)，回复“大模型”，即咨询课程信息哦👇
 
 ![](img/ccafe43a0d219247bde15998ef2ccdc3.png)
 

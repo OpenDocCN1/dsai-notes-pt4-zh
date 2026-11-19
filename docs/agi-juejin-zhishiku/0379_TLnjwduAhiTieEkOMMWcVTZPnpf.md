@@ -1,6 +1,7 @@
+
 # LeCun转发，首个半导体设计开源大模型SemiKong问世，重塑芯片制造流程
 
-> 来源：[https://agijuejin.feishu.cn/docx/XLj6dZWhboLJCzxonjXcaUrEn2e](https://agijuejin.feishu.cn/docx/XLj6dZWhboLJCzxonjXcaUrEn2e)
+> 来源：`https://agijuejin.feishu.cn/docx/XLj6dZWhboLJCzxonjXcaUrEn2e`
 
 > 机器之心 ScienceAI｜[阅读原文](https://www.jiqizhixin.com/articles/2024-07-10-13)
 
@@ -52,7 +53,7 @@ SemiKong 于 2024 年 7 月 9 日起在 HuggingFace 和 GitHub 上提供下载�
 
 该团队致力于持续研发，旨在构建一个 人工智能 工具生态系统，推动半导体行业进入创新和高效的新时代。
 
-**关于 ** **Aitomatic**
+## 关于 Aitomatic
 
 Aitomatic 工业 AI 智能体可帮助工业公司进行高效诊断并简化运营，同时保留其宝贵的领域知识。
 
@@ -60,21 +61,21 @@ Aitomatic 工业 AI 智能体可帮助工业公司进行高效诊断并简化运
 
 曾被《FastCompany》评选为「十大最具创新力团队」。该团队是「Knowledge-First Symposium」的组织者。
 
-公司官网： https://www.aitomatic.com/
+公司官网：`https://www.aitomatic.com/`
 
-项目地址： https://www.semikong.ai/
+项目地址：`https://www.semikong.ai/`
 
-API 地址： http://semikong.aitomatic.com/
+API 地址：`http://semikong.aitomatic.com/`
 
 开源地址：
 
-https://huggingface.co/pentagoniac/SEMIKONG-8b-GPTQ
+`https://huggingface.co/pentagoniac/SEMIKONG-8b-GPTQ`
 
-https://github.com/aitomatic/semikong
+`https://github.com/aitomatic/semikong`
 
 相关内容：
 
-https://venturebeat.com/ai/aitomatics-semikong-uses-ai-to-reshape-chipmaking-processes/
+`https://venturebeat.com/ai/aitomatics-semikong-uses-ai-to-reshape-chipmaking-processes/`
 
 [https://x.com/ylecun/status](https://x.com/ylecun/status/1810820150637248670)/1810820150637248670
 

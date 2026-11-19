@@ -1,20 +1,16 @@
+
 # Trae——慧码速造——完整项目开发体验
 
 > 来源：[https://agijuejin.feishu.cn/docx/Q7D5dWcPnopWmCxJVvLcZmWVnde](https://agijuejin.feishu.cn/docx/Q7D5dWcPnopWmCxJVvLcZmWVnde)
-
 > 作者：红目香薰
-
 > 链接：https://juejin.cn/post/7474427694630338610
-
 > 来源：稀土掘金
-
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 > 如有侵权，请联系删除。
 
-“ **慧 **” 突出智慧，说明本工具以智慧的方式迅速生成代码，实现软件构建。
+“`慧`” 突出智慧，说明本工具以智慧的方式迅速生成代码，实现软件构建。
 
-**Trae快速访问地址： **[**www.trae.ai/**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)
+**Trae快速访问地址：** [`www.trae.ai/`](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)
 
 ## 引言
 
@@ -24,7 +20,7 @@
 
 ## 项目需求
 
-这里先通过一张图来说一下要完成的项目，需要前后端分离的写，后端用Python，前端使用H5+CSS3+JS来完成，这样前后端两个服务，运维起来也方便。
+这里先通过一张图来说一下要完成的项目，需要前后端分离的写，后端用`Python`，前端使用`H5`+`CSS3`+`JS`来完成，这样前后端两个服务，运维起来也方便。
 
 ![](img/01441e504a414433d64c0cdde6855f64.png)
 
@@ -90,11 +86,9 @@
 
 在第一次返回的时候已经给了具体的提问步骤：
 
-+   1、具体的路由实现（auth.py, history.py, network.py）
-
-+   2、前端页面实现
-
-+   3、Swagger API文档配置
++ 1、具体的路由实现（`auth.py`, `history.py`, `network.py`）
++ 2、前端页面实现
++ 3、Swagger API文档配置
 
 提示操作步骤：
 
@@ -108,26 +102,26 @@
 
 | 类别 | 详情 | 数量 | 备注 |
 | --- | --- | --- | --- |
-| 目录结构 | 一级目录 | 3 | backend、frontend、uploads |
-|  | 二级目录 | 7 | app/、scripts/、static/、uploads/、css/、js/、pages/ |
-| 文件统计 | Python 文件 (.py) | 12 | 主要在 backend/app 目录下 |
-|  | HTML 文件 (.html) | 4 | frontend 目录下 |
-|  | CSS 文件 (.css) | 4 | frontend/css 目录下 |
-|  | JavaScript 文件 (.js) | 5 | frontend/js 目录下 |
-|  | JSON 文件 (.json) | 1 | swagger.json |
-|  | 配置文件 | 1 | config.py |
+| 目录结构 | 一级目录 | 3 | `backend`、`frontend`、`uploads` |
+| | 二级目录 | 7 | `app/`、`scripts/`、`static/`、`uploads/`、`css/`、`js/`、`pages/` |
+| 文件统计 | Python 文件 (`.py`) | 12 | 主要在 `backend/app` 目录下 |
+| | HTML 文件 (`.html`) | 4 | `frontend` 目录下 |
+| | CSS 文件 (`.css`) | 4 | `frontend/css` 目录下 |
+| | JavaScript 文件 (`.js`) | 5 | `frontend/js` 目录下 |
+| | JSON 文件 (`.json`) | 1 | `swagger.json` |
+| | 配置文件 | 1 | `config.py` |
 | 代码行数 | 后端代码 | ~850 | Python 文件总行数 |
-|  | 前端代码 | ~600 | HTML、CSS、JS 文件总行数 |
-|  | 配置文件 | ~50 | 包括 config.py 和 swagger.json |
+| | 前端代码 | ~600 | HTML、CSS、JS 文件总行数 |
+| | 配置文件 | ~50 | 包括 `config.py` 和 `swagger.json` |
 | 总计 | 总文件数 | 27 | 所有类型文件总数 |
-|  | 总代码行数 | ~1500 | 所有代码文件的总行数 |
+| | 总代码行数 | ~1500 | 所有代码文件的总行数 |
 | 主要模块分布 | 后端 | - | 用户认证、历史记录、网络测试 |
-|  | 前端 | - | 用户管理、历史查询、登录界面 |
-|  | 配置 | - | 数据库、文件路径、API 文档 |
+| | 前端 | - | 用户管理、历史查询、登录界面 |
+| | 配置 | - | 数据库、文件路径、API 文档 |
 
 ### 代码持续生成过程描述
 
-基本所有的功能都可以直接给出 **提示 **代码，看好，这里是提示代码，并非是现成的代码，无法保障可以正常运行或者完成我们需要的功能，所以需要我们来持续的提问，持续的测试，在测试过程中解决各类的问题，过程中我们还能不断的来完善我们的项目。
+基本所有的功能都可以直接给出 **提示** 代码，看好，这里是提示代码，并非是现成的代码，无法保障可以正常运行或者完成我们需要的功能，所以需要我们来持续的提问，持续的测试，在测试过程中解决各类的问题，过程中我们还能不断的来完善我们的项目。
 
 ![](img/5048c73ac2cb07fc52b764b15ce0ed1f.png)
 
@@ -143,33 +137,33 @@
 
 ![](img/c23fd5394a73a29ebb2f51b8c314f938.png)
 
-**跨域问题： **跨域问题前后我至少提问10次以上，每次给出的结果都是在修改CORS()这个函数，但是一直没有解决，最后我是自己来写的，直接写成了CORS(app)，通过注解的方式处理静态页面Ajax访问时的OPTIONS验证问题。所以这里的训练数据应该不是很足，还需要进化。
+**跨域问题：** 跨域问题前后我至少提问10次以上，每次给出的结果都是在修改`CORS()`这个函数，但是一直没有解决，最后我是自己来写的，直接写成了`CORS(app)`，通过注解的方式处理静态页面Ajax访问时的OPTIONS验证问题。所以这里的训练数据应该不是很足，还需要进化。
 
-![](img/989387ddb9cedb878f1c16154b8cf62e.png)
+![](img/989387ddb9cedb878f16154b8cf62e.png)
 
-**系统差异性问题： **这里我也卡住了好一会，特别是刚开始将win上的代码放到Linux跑起来的时候，基础的swagger页面的访问不到，就是说路径不符，各种路径都尝试了，最后还是想到了17年的套路，使用反射的方式来获取路径。只有这种方式是最靠谱的，这里的提示希望能给大家带来一定的帮助。
+**系统差异性问题：** 这里我也卡住了好一会，特别是刚开始将win上的代码放到Linux跑起来的时候，基础的swagger页面的访问不到，就是说路径不符，各种路径都尝试了，最后还是想到了17年的套路，使用反射的方式来获取路径。只有这种方式是最靠谱的，这里的提示希望能给大家带来一定的帮助。
 
 ```
-if platform.system().lower() == &#x27;linux&#x27;:
-    backend_dir = &#x27;/opt/trae/backend&#x27;
+if platform.system().lower() == 'linux':
+    backend_dir = '/opt/trae/backend'
 else:
     current_file = inspect.getfile(inspect.currentframe())
     backend_dir = os.path.dirname(os.path.abspath(current_file))
     
-static_dir = os.path.join(backend_dir, &#x27;static&#x27;)
+static_dir = os.path.join(backend_dir, 'static')
         
-if platform.system().lower() == &#x27;linux&#x27;:
-    static_dir = static_dir.replace(&#x27;\\&#x27;, &#x27;/&#x27;)
+if platform.system().lower() == 'linux':
+    static_dir = static_dir.replace('\\', '/')
         
 response = send_from_directory(static_dir, path)
 # 更新 CORS 头
-response.headers.add(&#x27;Access-Control-Allow-Origin&#x27;, &#x27;*&#x27;)
-response.headers.add(&#x27;Access-Control-Allow-Methods&#x27;, &#x27;GET, POST, OPTIONS&#x27;)
-response.headers.add(&#x27;Access-Control-Allow-Headers&#x27;, &#x27;Content-Type, Authorization&#x27;)
-response.headers.add(&#x27;Access-Control-Max-Age&#x27;, &#x27;600&#x27;)
+response.headers.add('Access-Control-Allow-Origin', '*')
+response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+response.headers.add('Access-Control-Max-Age', '600')
 ```
 
-**路由中文问题： **对于路由这里我也是煞费苦心，这种写法就是路径拼接呗，默认给的提示是有问题的，无法正常访问，我测试了好多次，都是给的Object显示，并且路由文件并不会在后续的文件中主动继承。
+**路由中文问题：** 对于路由这里我也是煞费苦心，这种写法就是路径拼接呗，默认给的提示是有问题的，无法正常访问，我测试了好多次，都是给的Object显示，并且路由文件并不会在后续的文件中主动继承。
 
 ![](img/d5013b37f40e6199dbad93020f283c44.png)
 
@@ -185,7 +179,7 @@ response.headers.add(&#x27;Access-Control-Max-Age&#x27;, &#x27;600&#x27;)
 
 ## 服务器上架
 
-访问swagger页面。
+访问`swagger`页面。
 
 ![](img/e9304054ce29bfaa160aee6de2e6847e.png)
 
@@ -207,89 +201,72 @@ response.headers.add(&#x27;Access-Control-Max-Age&#x27;, &#x27;600&#x27;)
 
 ## WiFi速度测试系统项目总结
 
-### 一、项目概述 项目指标 内容说明 项目名称
+### 一、项目概述
 
-WiFi速度测试系统 开发周期
+| 项目指标 | 内容说明 |
+| --- | --- |
+| 项目名称 | WiFi速度测试系统 |
+| 开发周期 | 约27小时 |
+| 技术架构 | 前后端分离 |
+| 主要功能 | 用户管理、历史记录查询 |
 
-约27小时 技术架构
+### 二、技术栈
 
-前后端分离 主要功能
-
-用户管理、历史记录查询
-
-### 二、技术栈 层级 技术选型 说明 前端
-
-HTML/CSS/JS： 原生开发，轻量级实现 后端
-
-Flask/Python： RESTful API 设计 数据库
-
-MySQL： 数据持久化存储 文档
-
-Swagger： API 文档自动生成
+| 层级 | 技术选型 | 说明 |
+| --- | --- | --- |
+| 前端 | `HTML/CSS/JS` | 原生开发，轻量级实现 |
+| 后端 | `Flask`/`Python` | RESTful API 设计 |
+| 数据库 | `MySQL` | 数据持久化存储 |
+| 文档 | `Swagger` | API 文档自动生成 |
 
 ### 三、主要成果
 
-1.  系统功能
+1. 系统功能
 
-+   完整的用户管理系统
++ 完整的用户管理系统
++ 历史记录查询与统计
++ 跨平台兼容支持
 
-+   历史记录查询与统计
+2. 技术亮点
 
-+   跨平台兼容支持
-
-1.  技术亮点
-
-+   前后端完全分离
-
-+   RESTful API 设计
-
-+   自动化API文档
-
-+   跨域问题解决方案
++ 前后端完全分离
++ RESTful API 设计
++ 自动化API文档
++ 跨域问题解决方案
 
 ### 四、经验总结
 
-1.  成功经验
+1. 成功经验
 
-+   模块化设计有效
++ 模块化设计有效
++ 配置集中管理
++ 错误处理规范化
 
-+   配置集中管理
+2. 待改进点
 
-+   错误处理规范化
-
-1.  待改进点
-
-+   环境适配方案优化
-
-+   测试用例完善
-
-+   部署流程优化
++ 环境适配方案优化
++ 测试用例完善
++ 部署流程优化
 
 ### 五、后续建议
 
-1.  技术优化
+1. 技术优化
 
-+   添加日志系统
++ 添加日志系统
++ 引入缓存机制
++ 完善单元测试
 
-+   引入缓存机制
+2. 功能扩展
 
-+   完善单元测试
++ 数据可视化
++ 用户权限细分
++ 批量数据处理
 
-1.  功能扩展
+3. 运维支持
 
-+   数据可视化
-
-+   用户权限细分
-
-+   批量数据处理
-
-1.  运维支持
-
-+   监控系统集成
-
-+   自动化部署
-
-+   性能优化方案
++ 监控系统集成
++ 自动化部署
++ 性能优化方案
 
 ## Trae使用总结
 
@@ -297,4 +274,4 @@ Swagger： API 文档自动生成
 
 ![](img/b8fab6dbfc9de439aa323edd5940d8ce.png)
 
-**Trae快速访问地址： **[**www.trae.ai/**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)
+**Trae快速访问地址：** [`www.trae.ai/`](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)

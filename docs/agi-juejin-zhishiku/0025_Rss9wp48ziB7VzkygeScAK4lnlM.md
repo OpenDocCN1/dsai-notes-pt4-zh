@@ -1,3 +1,4 @@
+
 # 山姆·奥特曼传（二）：OpenAI的第一次内斗
 
 > 来源：[https://agijuejin.feishu.cn/docx/ChSgdfa9oo55yPxJPrRc91LMn8g](https://agijuejin.feishu.cn/docx/ChSgdfa9oo55yPxJPrRc91LMn8g)
@@ -10,7 +11,7 @@
 
 ![](img/75fae6e641ae0041e82bec026690b6e5.png)
 
-# 一、斯是陋室，为吾德馨
+## 一、斯是陋室，为吾德馨
 
 正如第一章所讲到的，在硅谷的创业浪潮中，OpenAI 如一股清流般崛起，他们承诺 "自由合作"，公开所有专利和研究成果。这在当时远超常规的 "改变世界" 口号，以其宏大的愿景和鲜明的利他主义色彩，甚至让一些员工将其比作现代版的曼哈顿计划。然而，与其说这是夸大其词，不如说是对他们使命的深刻理解和坚定信念。
 
@@ -30,7 +31,7 @@
 
 这看上去似乎有点疯狂，但这就是改变世界的初始之地。
 
-# 二、摸不着头脑的工作
+## 二、摸不着头脑的工作
 
 可能你会想：成立时那10亿美金呢？为什么不用它们置办场地？ 现实是，直到 2019 年，那10亿美金才兑现了1.3亿。这个数字虽然看似可观，却远不及其他科技巨头的投入。而且不要谈这是持续兑现和持续支出了。当然，这在很大程度上也与OpenAI早期那些令人摸不着头脑的工作有莫大关系。
 
@@ -58,7 +59,7 @@ OpenAI Gym，顾名思义，就像是为 AI 设立的一个健身房。在这个
 
 但....仅凭这些成绩真的能支持OpenAI的伟大使命吗？
 
-# 三、出路
+## 三、出路
 
 回顾 2015 年，AI 技术与今天相比还相对简单。那时的 AI 系统都是非常狭窄和专门化的，能下围棋的系统甚至不能下国际象棋，更不用说理解语言或引导行人过马路了。每次你需要开发一个新的应用，都必须训练一个全新的模型，这需要大量时间和标记数据。
 
@@ -76,7 +77,7 @@ OpenAI Gym，顾名思义，就像是为 AI 设立的一个健身房。在这个
 
 不过，这种一次次的技术飞跃，也让祸根一点点种下....
 
-# 四、OpenAI 还是CloseAI？
+## 四、OpenAI 还是CloseAI？
 
 在OpenAI高歌猛进时，山姆则经常强调 AI 可能带来的潜在灾难（尤其是在谈到OpenAI的工作时）。在接受 ABC 记者采访时，他表示："我特别担心这些模型可能被用于大规模的虚假信息传播。我也担心随着这些系统在编写计算机代码方面变得越来越强大，它们可能被用于进行网络攻击。"与此同时，他还表达了对威权政府可能滥用 AI 技术的担忧。当被问及俄罗斯总统普京关于 "谁赢得 AI 竞赛，谁就能控制世界" 的言论时，他称之为 "令人不寒而栗的声明"。
 
@@ -96,7 +97,7 @@ OpenAI Gym，顾名思义，就像是为 AI 设立的一个健身房。在这个
 
 话虽这么说，但对于在学术研究上，OpenAI逐渐变为CloseAI这一事实，到了今天应该是广为人知的事情了。不过，让OpenAI越来越“背离初心"还有另外一剂猛药。
 
-# 五、釜底抽薪
+## 五、釜底抽薪
 
 让我们把目光移回到OpenAI成立之初。
 
@@ -130,16 +131,16 @@ OpenAI Gym，顾名思义，就像是为 AI 设立的一个健身房。在这个
 
 资料来源：
 
-1.  Greg Brockman blog ( https://blog.gregbrockman.com/)
+1. Greg Brockman blog ( https://blog.gregbrockman.com/)
 
-1.  https://www.britannica.com/money/OpenAI
+1. https://www.britannica.com/money/OpenAI
 
-1.  Open AI Wiki(https://en.wikipedia.org/wiki/OpenAI)
+1. Open AI Wiki(https://en.wikipedia.org/wiki/OpenAI)
 
-1.  https://openai.com/index/introducing-openai/
+1. https://openai.com/index/introducing-openai/
 
-1.  https://www.internetsearchinc.com/ultimate-guide-to-openai/
+1. https://www.internetsearchinc.com/ultimate-guide-to-openai/
 
-1.  Lex对话山姆2.8万字实录：是马斯克选择分道扬镳 想掌控OpenAI(https://news.qq.com/rain/a/20240319A00TMA00)
+1. Lex对话山姆2.8万字实录：是马斯克选择分道扬镳 想掌控OpenAI(https://news.qq.com/rain/a/20240319A00TMA00)
 
-1.  OpenAI and Elon Musk（https://openai.com/index/openai-elon-musk/）
+1. OpenAI and Elon Musk（https://openai.com/index/openai-elon-musk/）

@@ -1,3 +1,4 @@
+
 # 如何零成本生成一本 AI 中英对照翻译的电子书（2023 版）
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/N4GqdmI9Voh3AUxBLHzc9dZ1nAh](https://jalicvoygc0.feishu.cn/docx/N4GqdmI9Voh3AUxBLHzc9dZ1nAh)
@@ -22,17 +23,12 @@
 
 我读书通常会想各种方法来加速提效、提升吸收率。之前也做过各种分享，比如：
 
-+   《我如何用打游戏的思维读书+做笔记（2小时直播视频+图文回顾）》
-
-+   《我如何用 Claude.AI 三分钟读完一本英语书》
-
-+   [《我的信息分级管理规则》](http://mp.weixin.qq.com/s?__biz=MzA4NDk5OTgzMg==&mid=2650590456&idx=1&sn=c2496d5b81d301f6e0ea86c0e9c9c389&chksm=87d6c70fb0a14e19a50104563111d27a7a0252a9ca9664c30c47a80127085e8afeeeae46852c&scene=21#wechat_redirect)
-
-+   [《分享我的信息筛选管道》](http://mp.weixin.qq.com/s?__biz=MzA4NDk5OTgzMg==&mid=2650590272&idx=1&sn=775f5caee66737899ebbde4b67e8c9df&chksm=87d6c7b7b0a14ea1852ee4d95003693a187d1658e12dab9c2636b553e8dc706c1e0ee7eb356f&scene=21#wechat_redirect)
-
-+   《一年阅读 196 本：我的高效阅读技巧 20 条》
-
-+   更多私下日常的经验窍门、心得感悟，可以添加我的🛰️，围观朋友圈：
++ 《我如何用打游戏的思维读书+做笔记（2小时直播视频+图文回顾）》
++ 《我如何用 Claude.AI 三分钟读完一本英语书》
++ [《我的信息分级管理规则》](http://mp.weixin.qq.com/s?__biz=MzA4NDk5OTgzMg==&mid=2650590456&idx=1&sn=c2496d5b81d301f6e0ea86c0e9c9c389&chksm=87d6c70fb0a14e19a50104563111d27a7a0252a9ca9664c30c47a80127085e8afeeeae46852c&scene=21#wechat_redirect)
++ [《分享我的信息筛选管道》](http://mp.weixin.qq.com/s?__biz=MzA4NDk5OTgzMg==&mid=2650590272&idx=1&sn=775f5caee66737899ebbde4b67e8c9df&chksm=87d6c7b7b0a14ea1852ee4d95003693a187d1658e12dab9c2636b553e8dc706c1e0ee7eb356f&scene=21#wechat_redirect)
++ 《一年阅读 196 本：我的高效阅读技巧 20 条》
++ 更多私下日常的经验窍门、心得感悟，可以添加我的🛰️，围观朋友圈：
 
 ![](img/16f7950c44dd3b69c3025827b9ff202f.png)
 
@@ -98,7 +94,7 @@
 
 Enjoy it!
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

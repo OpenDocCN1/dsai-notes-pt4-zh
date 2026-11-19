@@ -1,3 +1,4 @@
+
 # 快速使用（推理部署）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/MWnvd4ZIYowt9HxIcQZc9icAnQe](https://v11enp9ok1h.feishu.cn/docx/MWnvd4ZIYowt9HxIcQZc9icAnQe)
@@ -86,7 +87,7 @@ python trans_batch_demo.py
 
 ## 压力测试
 
-用户可以在自己的设备上使用本代码测试模型在 transformers后端的生成速度:
+用户可以在自己的设备上使用本代码测试模型在 `transformers` 后端的生成速度:
 
 ```
 python trans_stress_test.py

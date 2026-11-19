@@ -1,3 +1,4 @@
+
 # 月度总结
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/JtdhdsMYVo6UpWxApKBcWJKinfc](https://xatc0v8uz5m.feishu.cn/docx/JtdhdsMYVo6UpWxApKBcWJKinfc)
@@ -22,29 +23,43 @@ SVG图表中需要包含图表标题（显示公司名称和时间范围）、�
 整个页面应该极简设计，不要有任何body样式、button样式或其他CSS装饰。除了SVG图表本身和一个复制按钮之外，不要有其他HTML元素。复制按钮应该放置在页面最底部，使用以下代码实现复制功能：
 
 ```javascript
+
 async function copySVG() {
+
   const svgElement = document.getElementById(&#x27;Chart&#x27;);
+
   const svgData = new XMLSerializer().serializeToString(svgElement);
 
   try {
+
     const clipboardItem = new ClipboardItem({
+
       &#x27;image/svg+xml&#x27;: new Blob([svgData], { type: &#x27;image/svg+xml&#x27; }),
+
       &#x27;text/html&#x27;: new Blob([svgData], { type: &#x27;text/html&#x27; })
+
     });
-    
+
     await navigator.clipboard.write([clipboardItem]);
+
     alert(&#x27;SVG已成功复制到剪贴板！&#x27;);
+
   } catch (err) {
+
     console.error(&#x27;复制失败:&#x27;, err);
+
     alert(&#x27;复制失败&#x27;);
+
   }
+
 }
+
 ```
 
 关键要求总结：页面加载时JavaScript自动生成包含真实数据和SVG原生动画的完整SVG，生成后这个SVG是完全自包含的。复制功能只需简单序列化这个已生成的SVG元素。复制出去的SVG可以独立使用，包含真实的市值数据标注和循环播放的动画效果，无需任何外部JavaScript支持。
 ```
 
-月度总结
+## 月度总结
 
 ```
 # Skill description

@@ -1,3 +1,4 @@
+
 # Claude配置切换5分钟？这个工具让我5秒搞定
 
 > 来源：[https://my.feishu.cn/docx/SCAPdf3ZQo4lDexlnlFcUiSpnwg](https://my.feishu.cn/docx/SCAPdf3ZQo4lDexlnlFcUiSpnwg)
@@ -10,15 +11,11 @@
 
 **每次切换都是一场噩梦**：
 
-1、打开配置文件（Claude Code的.claude/settings.json，或Codex的~/.codex/auth.json）
-
-2、手动改API地址和Key
-
-3、保存文件（Codex还得同时改config.toml）
-
-4、重启工具
-
-5、祈祷配置没写错
+1. 打开配置文件（`~/.claude/settings.json`，或`~/.codex/auth.json`）
+2. 手动改API地址和Key
+3. 保存文件（Codex还得同时改`config.toml`）
+4. 重启工具
+5. 祈祷配置没写错
 
 这一套流程下来，3-5分钟就没了。一天切个5次，半小时就浪费了。
 
@@ -40,13 +37,10 @@ CC Switch 就是一个 **智能衣柜** ，你提前把10套西装都挂好，�
 
 说白了：
 
-1、配置集中管理：所有API配置统一保存在一个地方
-
-2、一键切换：点击目标配置，自动写入工具的配置文件
-
-3、支持多工具：Claude Code、Codex都能管
-
-4、MCP服务器管理：连MCP服务器都能统一管理
+1. 配置集中管理：所有API配置统一保存在一个地方
+2. 一键切换：点击目标配置，自动写入工具的配置文件
+3. 支持多工具：Claude Code、Codex都能管
+4. MCP服务器管理：连MCP服务器都能统一管理
 
 ## 为啥老金我说这是神器
 
@@ -56,21 +50,16 @@ CC Switch 就是一个 **智能衣柜** ，你提前把10套西装都挂好，�
 
 以前的做法：每次想切换，就得：
 
-1、记住每个API的地址和Key
-
-2、打开配置文件手动改
-
-3、小心翼翼保证格式正确
-
-4、重启工具测试
+1. 记住每个API的地址和Key
+2. 打开配置文件手动改
+3. 小心翼翼保证格式正确
+4. 重启工具测试
 
 **有了CC Switch之后**：
 
-1、打开CC Switch桌面应用
-
-2、从列表里点击目标配置
-
-3、完事
+1. 打开CC Switch桌面应用
+2. 从列表里点击目标配置
+3. 完事
 
 **从5分钟缩短到5秒**，而且不会出错。
 
@@ -80,55 +69,47 @@ CC Switch 就是一个 **智能衣柜** ，你提前把10套西装都挂好，�
 
 老金我从产品经理视角，给你拆解一下CC Switch的几个杀手级功能。
 
-### 1、Provider配置管理
+### 1、`Provider`配置管理
 
 这是CC Switch的核心。
 
-**什么是Provider？**
+**什么是`Provider`？**
 
 就是API提供商配置。包含：
 
-1、API地址（BaseURL）
-
-2、API密钥（Key/Token）
-
-3、默认模型
-
-4、自定义参数
+1. API地址（`BaseURL`）
+2. API密钥（Key/Token）
+3. 默认模型
+4. 自定义参数
 
 ![](img/7b98224af0351a98eaf9e94699617298.png)
 
 **传统方式的痛点**：
 
-每个Provider的配置分散在不同地方：
+每个`Provider`的配置分散在不同地方：
 
-1、Claude Code的配置在 ~/.claude/settings.json
-
-2、Codex的配置在 ~/.codex/auth.json 和 config.toml
+1. Claude Code的配置在 `~/.claude/settings.json`
+2. Codex的配置在 `~/.codex/auth.json` 和 `config.toml`
 
 想用哪个，就得去对应文件里手动改。
 
 **CC Switch的解决方案**：
 
-所有Provider配置统一保存在 ~/.cc-switch/config.json。
+所有`Provider`配置统一保存在 `~/.cc-switch/config.json`。
 
-你可以添加无限个Provider。
+你可以添加无限个`Provider`。
 
-每个Provider都有：
+每个`Provider`都有：
 
-1、名称：方便识别
-
-2、图标和颜色：视觉区分
-
-3、完整配置：API地址、密钥、模型等
+1. 名称：方便识别
+2. 图标和颜色：视觉区分
+3. 完整配置：API地址、密钥、模型等
 
 **切换时**，CC Switch会：
 
-1、从 ~/.cc-switch/config.json 读取目标Provider配置
-
-2、自动写入 Claude Code 或 Codex 的配置文件
-
-3、完成切换
+1. 从 `~/.cc-switch/config.json` 读取目标`Provider`配置
+2. 自动写入 Claude Code 或 Codex 的配置文件
+3. 完成切换
 
 **你完全不用碰配置文件**，所有操作都在图形界面完成。
 
@@ -138,23 +119,17 @@ CC Switch从一开始就同时支持Claude Code和Codex两个工具。
 
 **Claude Code配置**：
 
-1、配置目录：~/.claude/
-
-2、主配置文件：settings.json（优先）或 claude.json（兼容老版本）
-
-3、API Key字段：env.ANTHROPIC_AUTH_TOKEN
-
-4、支持4个模型配置：Haiku、Sonnet、Opus、默认模型
+1. 配置目录：`~/.claude/`
+2. 主配置文件：`settings.json`（优先）或 `claude.json`（兼容老版本）
+3. API Key字段：`env.ANTHROPIC_AUTH_TOKEN`
+4. 支持4个模型配置：Haiku、Sonnet、Opus、默认模型
 
 **Codex配置**：
 
-1、配置目录：~/.codex/
-
-2、主配置文件：auth.json（必需）+ config.toml（可选）
-
-3、API Key字段：OPENAI_API_KEY
-
-4、切换时同时写入两个文件
+1. 配置目录：`~/.codex/`
+2. 主配置文件：`auth.json`（必需）+ `config.toml`（可选）
+3. API Key字段：`OPENAI_API_KEY`
+4. 切换时同时写入两个文件
 
 ![](img/07f4814386e31c6e9e6aca9358780617.png)
 
@@ -162,21 +137,17 @@ CC Switch从一开始就同时支持Claude Code和Codex两个工具。
 
 不管你用的是Claude Code还是Codex，切换流程完全一样：
 
-1、在CC Switch里选择目标Provider
-
-2、点击Switch
-
-3、CC Switch自动识别工具类型，写入对应配置文件
+1. 在CC Switch里选择目标`Provider`
+2. 点击Switch
+3. CC Switch自动识别工具类型，写入对应配置文件
 
 **官方登录切换**：
 
 如果你想从第三方API切回官方账号：
 
-1、选择预设里的"Claude Official Login"或"Codex Official Login"
-
-2、切换后重启工具
-
-3、按照官方流程登录（Claude用/login命令，Codex按提示操作）
+1. 选择预设里的"Claude Official Login"或"Codex Official Login"
+2. 切换后重启工具
+3. 按照官方流程登录（Claude用`/login`命令，Codex按提示操作）
 
 ![](img/07673ed43c7fcc81075021ca0d3eb4cf.png)
 
@@ -186,27 +157,23 @@ CC Switch从一开始就同时支持Claude Code和Codex两个工具。
 
 **使用场景**：
 
-假设你要添加10个Provider，它们都有一些相同的配置：
+假设你要添加10个`Provider`，它们都有一些相同的配置：
 
-1、相同的BaseURL前缀
-
-2、相同的某些参数
-
-3、相同的模型设置
+1. 相同的`BaseURL`前缀
+2. 相同的某些参数
+3. 相同的模型设置
 
 **传统方式**：
 
-每添加一个Provider，都要重新输入这些相同信息，累死人。
+每添加一个`Provider`，都要重新输入这些相同信息，累死人。
 
 **通用配置模板的解决方案**：
 
 CC Switch支持创建"通用模板"（Common Template）：
 
-1、创建模板：把常用的配置保存成模板
-
-2、添加Provider时选择模板：自动继承模板里的配置
-
-3、只需填写不同的部分：比如API Key
+1. 创建模板：把常用的配置保存成模板
+2. 添加`Provider`时选择模板：自动继承模板里的配置
+3. 只需填写不同的部分：比如API Key
 
 ![](img/236337fc0848537e3caef8e84c95d5b7.png)
 
@@ -214,25 +181,22 @@ CC Switch支持创建"通用模板"（Common Template）：
 
 **举个例子**：
 
-你的公司用自建API转发服务，所有同事的BaseURL都是 https://api.company.com。
+你的公司用自建API转发服务，所有同事的`BaseURL`都是 `https://api.company.com`。
 
 **设置通用模板**：
 
-1、BaseURL: https://api.company.com
+1. `BaseURL`: `https://api.company.com`
+2. 默认模型: XXXX模型名字
 
-2、默认模型: XXXX模型名字
+**添加新`Provider`时**：
 
-**添加新Provider时**：
-
-1、选择"使用通用模板"
-
-2、只需要填写：Provider名称、API Key
-
-3、其他字段自动填充
+1. 选择"使用通用模板"
+2. 只需要填写：`Provider`名称、API Key
+3. 其他字段自动填充
 
 **省掉了90%的重复输入**。
 
-而且改模板时，基于该模板创建的Provider可以选择是否同步更新，非常灵活。
+而且改模板时，基于该模板创建的`Provider`可以选择是否同步更新，非常灵活。
 
 ### 3、MCP服务器管理
 
@@ -244,23 +208,20 @@ MCP（Model Context Protocol）是让AI工具连接外部服务的协议。
 
 比如：
 
-1、filesystem - 读写文件
-
-2、github - 拉取仓库
-
-3、brave-search - 网页搜索
-
-4、postgres - 数据库查询
+1. `filesystem` - 读写文件
+2. `github` - 拉取仓库
+3. `brave-search` - 网页搜索
+4. `postgres` - 数据库查询
 
 **传统方式的痛点**：
 
-Claude Code的MCP配置在 ~/.claude.json，Codex的在 ~/.codex/config.toml。
+Claude Code的MCP配置在 `~/.claude.json`，Codex的在 `~/.codex/config.toml`。
 
 想开关某个MCP服务器，得手动编辑这些文件。
 
 **CC Switch的解决方案**：
 
-所有MCP服务器定义集中保存在 ~/.cc-switch/config.json。
+所有MCP服务器定义集中保存在 `~/.cc-switch/config.json`。
 
 ![](img/42e5acc0d8049facbbabc9d67521fb82.png)
 
@@ -268,31 +229,25 @@ Claude Code的MCP配置在 ~/.claude.json，Codex的在 ~/.codex/config.toml。
 
 你可以：
 
-1、添加MCP服务器：支持stdio和http两种类型
-
-2、启用/禁用：点击开关即可
-
-3、从模板添加：内置常用MCP服务器模板（比如mcp-fetch）
-
-4、导入现有配置：从 ~/.claude.json 或 ~/.codex/config.toml 导入
+1. 添加MCP服务器：支持`stdio`和`http`两种类型
+2. 启用/禁用：点击开关即可
+3. 从模板添加：内置常用MCP服务器模板（比如`mcp-fetch`）
+4. 导入现有配置：从 `~/.claude.json` 或 `~/.codex/config.toml` 导入
 
 ![](img/fb9667c1e72eb491b5e0c273fa0defd4.png)
 
-**切换Provider时**，CC Switch会：
+**切换`Provider`时**，CC Switch会：
 
-1、将启用的Claude MCP服务器同步到 ~/.claude.json
-
-2、将启用的Codex MCP服务器同步到 ~/.codex/config.toml
+1. 将启用的Claude MCP服务器同步到 `~/.claude.json`
+2. 将启用的Codex MCP服务器同步到 `~/.codex/config.toml`
 
 这样你就能根据不同项目启用不同的MCP服务器组合。
 
 比如：
 
-1、开发项目A：启用 github + filesystem
-
-2、开发项目B：启用 postgres + memory
-
-3、写文档：启用 brave-search + filesystem
+1. 开发项目A：启用 `github` + `filesystem`
+2. 开发项目B：启用 `postgres` + `memory`
+3. 写文档：启用 `brave-search` + `filesystem`
 
 ### 4、配置导入导出
 
@@ -300,31 +255,24 @@ Claude Code的MCP配置在 ~/.claude.json，Codex的在 ~/.codex/config.toml。
 
 **使用场景**：
 
-1、团队协作：把配置导出给同事，大家用统一的API
-
-2、备份恢复：定期导出配置，防止丢失
-
-3、跨设备同步：在多台电脑间同步配置
+1. 团队协作：把配置导出给同事，大家用统一的API
+2. 备份恢复：定期导出配置，防止丢失
+3. 跨设备同步：在多台电脑间同步配置
 
 **怎么用**：
 
 **导出**：
 
-1、点击"Export Config"
-
-2、选择保存位置
-
-3、生成JSON文件
+1. 点击"Export Config"
+2. 选择保存位置
+3. 生成JSON文件
 
 **导入**：
 
-1、点击"Import Config"
-
-2、选择JSON文件
-
-3、自动验证格式
-
-4、导入成功后自动备份旧配置（保留最近10个备份）
+1. 点击"Import Config"
+2. 选择JSON文件
+3. 自动验证格式
+4. 导入成功后自动备份旧配置（保留最近10个备份）
 
 **导入后会立即同步到当前工具**，不用重启。
 
@@ -340,13 +288,11 @@ Claude Code的MCP配置在 ~/.claude.json，Codex的在 ~/.codex/config.toml。
 
 **怎么用**：
 
-1、在Provider列表里点击"Test Speed"
+1. 在`Provider`列表里点击"Test Speed"
+2. CC Switch会测试API端点的响应时间
+3. 显示延迟和连接质量指标
 
-2、CC Switch会测试API端点的响应时间
-
-3、显示延迟和连接质量指标
-
-根据测试结果选择最快的Provider，体验更流畅。
+根据测试结果选择最快的`Provider`，体验更流畅。
 
 ![](img/d11bf502f9e1bedf4ddb7f1037b3e6a7.png)
 
@@ -358,29 +304,25 @@ Claude Code的MCP配置在 ~/.claude.json，Codex的在 ~/.codex/config.toml。
 
 一些API服务商（比如AnyRouter、AiHubMix、DMXAPI）会提供多个不同的API端点，每个端点可能：
 
-1、部署在不同地理位置（国内/海外）
-
-2、速度和稳定性不同
-
-3、支持的模型略有差异
+1. 部署在不同地理位置（国内/海外）
+2. 速度和稳定性不同
+3. 支持的模型略有差异
 
 **传统方式的痛点**：
 
-想切换端点？得手动修改Provider的BaseURL，麻烦还容易出错。
+想切换端点？得手动修改`Provider`的`BaseURL`，麻烦还容易出错。
 
 **v3.6的解决方案**：
 
-CC Switch支持为单个Provider配置多个端点候选列表：
+CC Switch支持为单个`Provider`配置多个端点候选列表：
 
-1、Endpoint Candidates List（端点候选列表）：在Provider配置里添加多个备选API地址
-
-2、结合速度测试：测试所有候选端点的响应时间
-
-3、灵活切换：根据测试结果选择最快的端点使用
+1. Endpoint Candidates List（端点候选列表）：在`Provider`配置里添加多个备选API地址
+2. 结合速度测试：测试所有候选端点的响应时间
+3. 灵活切换：根据测试结果选择最快的端点使用
 
 **好处**：
 
-不用为同一个API服务创建多个Provider，一个Provider管理所有端点变体。
+不用为同一个API服务创建多个`Provider`，一个`Provider`管理所有端点变体。
 
 比如用AnyRouter时，可以把国内节点、海外节点、备用节点都配置成候选端点，测速后选最快的。
 
@@ -398,7 +340,7 @@ CC Switch支持为单个Provider配置多个端点候选列表：
 
 CC Switch可以最小化到系统托盘（Windows）或菜单栏（macOS）。
 
-**右键托盘图标**，直接从菜单选择目标Provider，立即生效。
+**右键托盘图标**，直接从菜单选择目标`Provider`，立即生效。
 
 **不用打开主窗口，一键切换**。
 
@@ -406,7 +348,7 @@ CC Switch可以最小化到系统托盘（Windows）或菜单栏（macOS）。
 
 ![](img/8ba1c38df980bdf4cac915377726b2f2.png)
 
-### 8、Provider复制和手动排序（v3.6新增）
+### 8、`Provider`复制和手动排序（v3.6新增）
 
 这两个功能特别实用，是v3.6刚加的。
 
@@ -414,27 +356,23 @@ Provider Duplication（快速复制）：
 
 **使用场景**：
 
-你已经配置好一个Provider，想基于它创建一个类似的变体。
+你已经配置好一个`Provider`，想基于它创建一个类似的变体。
 
 比如：
 
-1、已有"DeepSeek-官方"配置
-
-2、想再加一个"DeepSeek-备用"，只是API Key不同
+1. 已有"DeepSeek-官方"配置
+2. 想再加一个"DeepSeek-备用"，只是API Key不同
 
 **传统方式**：
 
-重新添加一个Provider，所有字段从头填写。
+重新添加一个`Provider`，所有字段从头填写。
 
 **用Duplication功能**：
 
-1、点击现有Provider旁边的"Duplicate"按钮
-
-2、自动复制所有配置
-
-3、只需要修改不同的部分（比如名称、API Key）
-
-4、保存
+1. 点击现有`Provider`旁边的"Duplicate"按钮
+2. 自动复制所有配置
+3. 只需要修改不同的部分（比如名称、API Key）
+4. 保存
 
 **省掉80%的重复填写**。
 
@@ -442,11 +380,11 @@ Manual Sorting（手动排序）：
 
 **使用场景**：
 
-你有10个Provider，想把常用的排在前面。
+你有10个`Provider`，想把常用的排在前面。
 
 **怎么用**：
 
-直接拖拽Provider卡片，拖到想要的位置。
+直接拖拽`Provider`卡片，拖到想要的位置。
 
 **排序会保存**，下次打开CC Switch，顺序还在。
 
@@ -460,15 +398,13 @@ Manual Sorting（手动排序）：
 
 **传统方式的痛点**：
 
-CC Switch的配置默认保存在 ~/.cc-switch/config.json。
+CC Switch的配置默认保存在 `~/.cc-switch/config.json`。
 
 如果你有多台电脑：
 
-1、公司电脑配了10个Provider
-
-2、回家想用，得手动导出导入
-
-3、麻烦，而且容易忘记
+1. 公司电脑配了10个`Provider`
+2. 回家想用，得手动导出导入
+3. 麻烦，而且容易忘记
 
 **自定义配置目录的解决方案**：
 
@@ -476,25 +412,20 @@ CC Switch支持把配置目录指向云盘文件夹！
 
 **设置步骤**：
 
-1、在Dropbox/OneDrive/iCloud等云盘创建文件夹
-
-2、在CC Switch的Settings里设置"Custom Config Directory"
-
-3、指向云盘文件夹
-
-4、完成
+1. 在Dropbox/OneDrive/iCloud等云盘创建文件夹
+2. 在CC Switch的Settings里设置"Custom Config Directory"
+3. 指向云盘文件夹
+4. 完成
 
 ![](img/bc8c044bf8921cd05405d97ae57e041a.png)
 
 **之后**：
 
-1、所有配置自动保存到云盘
+1. 所有配置自动保存到云盘
+2. 其他电脑上也指向同一个云盘文件夹
+3. 配置自动同步，无需手动导入导出
 
-2、其他电脑上也指向同一个云盘文件夹
-
-3、 配置自动同步，无需手动导入导出
-
-公司电脑添加新Provider → 云盘自动同步 → 家里电脑立即可用。
+公司电脑添加新`Provider` → 云盘自动同步 → 家里电脑立即可用。
 
 这才是真正的"无缝体验"。
 
@@ -514,17 +445,15 @@ Claude Code支持一些插件扩展，需要特定的配置。
 
 CC Switch内置了"Apply Claude Plugin"按钮：
 
-1、点击按钮
-
-2、自动应用插件配置
-
-3、立即生效
+1. 点击按钮
+2. 自动应用插件配置
+3. 立即生效
 
 **恢复也很简单**：
 
 点击"Restore"按钮，自动恢复到无插件状态。
 
-切换Provider时自动同步插件状态，确保一致性。
+切换`Provider`时自动同步插件状态，确保一致性。
 
 ### 11、VS Code Codex插件同步（v3.3功能）
 
@@ -532,19 +461,16 @@ CC Switch内置了"Apply Claude Plugin"按钮：
 
 **使用场景**：
 
-你在CC Switch里配置了Codex的Provider，希望VS Code Codex插件也用同样的配置。
+你在CC Switch里配置了Codex的`Provider`，希望VS Code Codex插件也用同样的配置。
 
 **一键同步功能**（v3.3引入，v3.4默认开启）：
 
-1、在CC Switch里配置好Codex Provider
+1. 在CC Switch里配置好Codex `Provider`
+2. 点击"Sync to VS Code Codex Plugin"
+3. 自动写入VS Code Codex插件的配置文件
+4. 重启VS Code，插件立即生效
 
-2、点击"Sync to VS Code Codex Plugin"
-
-3、自动写入VS Code Codex插件的配置文件
-
-4、重启VS Code，插件立即生效
-
-切换Codex Provider时，自动同步到VS Code插件。
+切换Codex `Provider`时，自动同步到VS Code插件。
 
 不用在两个地方分别配置，省心。
 
@@ -556,27 +482,21 @@ CC Switch内置了"Apply Claude Plugin"按钮：
 
 **功能特点**：
 
-1、自动刷新：支持定时自动查询使用量
-
-2、脚本测试API：验证JavaScript脚本是否正确
-
-3、模板系统：支持自定义查询模板
+1. 自动刷新：支持定时自动查询使用量
+2. 脚本测试API：验证JavaScript脚本是否正确
+3. 模板系统：支持自定义查询模板
 
 **使用场景**：
 
-1、监控API额度使用情况
-
-2、定期检查费用
-
-3、避免超额
+1. 监控API额度使用情况
+2. 定期检查费用
+3. 避免超额
 
 **怎么用**：
 
-1、在Settings里配置查询脚本
-
-2、设置自动刷新间隔
-
-3、CC Switch定时查询并显示使用量
+1. 在Settings里配置查询脚本
+2. 设置自动刷新间隔
+3. CC Switch定时查询并显示使用量
 
 对于有额度限制的API特别有用。
 
@@ -588,17 +508,14 @@ CC Switch从v3.4开始支持完整的国际化。
 
 **支持语言**：
 
-1、中文
-
-2、English
+1. 中文
+2. English
 
 **覆盖范围**：
 
-1、所有UI组件
-
-2、错误消息
-
-3、托盘菜单
+1. 所有UI组件
+2. 错误消息
+3. 托盘菜单
 
 **怎么切换**：
 
@@ -620,11 +537,9 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 **CC Switch的解决方案**：
 
-1、 **自动检测WSL环境**
-
-2、切换配置目录时自动同步：切换到WSL路径，自动把当前Provider同步过去
-
-3、 **避免配置冲突**
+1. **自动检测WSL环境**
+2. 切换配置目录时自动同步：切换到WSL路径，自动把当前`Provider`同步过去
+3. **避免配置冲突**
 
 完美支持Windows + WSL混合开发环境。
 
@@ -636,21 +551,21 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 **切换Claude Code配置**：
 
-1、打开 ~/.claude/settings.json
-
-2、手动修改API地址和Key
-
-3、保存文件，格式容易出错
-
-4、重启Claude Code
+1. 打开 `~/.claude/settings.json`
+2. 手动修改API地址和Key
+3. 保存文件，格式容易出错
+4. 重启Claude Code
 
 **切换Codex配置**：
 
-1、打开 ~/.codex/auth.json
+1. 打开 `~/.codex/auth.json`
+2. 修改API Key
 
-2、修改API Key
 
-3、再打开 ~/.codex/config.toml
+
+## 使用前（手动切换）
+
+3、再打开 `~/.codex/config.toml`
 
 4、修改其他配置
 
@@ -658,11 +573,11 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 6、重启Codex
 
-**切换MCP服务器**：
+### 切换MCP服务器
 
-1、Claude Code：打开 ~/.claude.json
+1、Claude Code：打开 `~/.claude.json`
 
-2、Codex：打开 ~/.codex/config.toml
+2、Codex：打开 `~/.codex/config.toml`
 
 3、手动修改MCP服务器列表
 
@@ -670,7 +585,7 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 5、重启工具
 
-**团队协作**：
+### 团队协作
 
 1、口头或文档方式分享配置
 
@@ -678,23 +593,23 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 3、容易配错
 
-### 使用后（CC Switch）
+## 使用后（CC Switch）
 
-**切换API配置**（Claude Code和Codex通用）：
+### 切换API配置（Claude Code和Codex通用）
 
 1、打开CC Switch
 
-2、点击目标Provider
+2、点击目标`Provider`
 
 3、完事（自动识别工具类型，写入对应配置文件）
 
-**切换MCP服务器**：
+### 切换MCP服务器
 
 1、在CC Switch的MCP面板里点击开关
 
 2、立即生效
 
-**团队协作**：
+### 团队协作
 
 1、导出配置文件
 
@@ -702,7 +617,7 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 3、所有配置一致
 
-**效率提升**：
+### 效率提升
 
 1、切换时间：从5分钟降到5秒
 
@@ -720,15 +635,15 @@ Claude Code在WSL里运行，配置文件在WSL的路径下。
 
 去GitHub Releases页面下载：
 
-https://github.com/farion1231/cc-switch/releases
+<https://github.com/farion1231/cc-switch/releases>
 
-**Windows用户**：
+#### Windows用户
 
-1、下载 CC-Switch-v{version}-Windows.msi 安装包
+1、下载 `CC-Switch-v{version}-Windows.msi` 安装包
 
-2、或下载 CC-Switch-v{version}-Windows-Portable.zip 便携版
+2、或下载 `CC-Switch-v{version}-Windows-Portable.zip` 便携版
 
-**macOS用户**：
+#### macOS用户
 
 方法1（推荐）：用Homebrew安装
 
@@ -739,57 +654,57 @@ brew install --cask cc-switch
 
 方法2：手动下载
 
-1、下载 CC-Switch-v{version}-macOS.zip
+1、下载 `CC-Switch-v{version}-macOS.zip`
 
 2、解压使用
 
 macOS首次打开可能提示"无法验证开发者"，去"系统设置" → "隐私与安全性" → 点击"仍要打开"即可。
 
-**Linux用户**：
+#### Linux用户
 
-1、下载 .deb 包或 .AppImage
+1、下载 `.deb` 包或 `.AppImage`
 
 ### 第2步：添加Provider配置
 
-打开CC Switch，点击"Add Provider"。
+打开CC Switch，点击`Add Provider`。
 
 ![](img/e37133dc941a0cfdb833cbfe8cedf2d3.png)
 
-**内置预设（推荐）**：
+#### 内置预设（推荐）
 
-CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
+CC Switch内置了很多常用`Provider`模板（v3.6新增更多预设）：
 
-1、Claude Official Login（官方登录）
+1、`Claude Official Login`（官方登录）
 
-2、Codex Official Login（Codex官方登录）
+2、`Codex Official Login`（Codex官方登录）
 
-3、Zhipu GLM Coding Plan
+3、`Zhipu GLM Coding Plan`
 
-4、DeepSeek
+4、`DeepSeek`
 
-5、Azure Claude
+5、`Azure Claude`
 
-6、Azure Codex（v3.6新增）
+6、`Azure Codex`（v3.6新增）
 
-7、AnyRouter
+7、`AnyRouter`
 
-8、AiHubMix
+8、`AiHubMix`
 
-9、MiniMax
+9、`MiniMax`
 
-10、DMXAPI（v3.6新增）
+10、`DMXAPI`（v3.6新增）
 
-选择一个预设，填入你的API Key，保存。
+选择一个预设，填入你的`API Key`，保存。
 
-**自定义配置**：
+#### 自定义配置
 
-如果你的API提供商不在预设里，选择"Custom"：
+如果你的API提供商不在预设里，选择`Custom`：
 
-1、填写Provider名称（比如"公司内网API"）
+1、填写`Provider`名称（比如"公司内网API"）
 
-2、填写API BaseURL
+2、填写`API BaseURL`
 
-3、填写API Key
+3、填写`API Key`
 
 4、选择默认模型
 
@@ -797,49 +712,49 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 ### 第3步：切换配置
 
-**方法1：主界面切换**
+#### 方法1：主界面切换
 
-1、在Provider列表里找到目标配置
+1、在`Provider`列表里找到目标配置
 
-2、点击"Switch"按钮
+2、点击`Switch`按钮
 
 3、等待提示"切换成功"
 
 ![](img/9631ab9853f71781be7117caac5e8724.png)
 
-**方法2：系统托盘切换（更快）**
+#### 方法2：系统托盘切换（更快）
 
 1、右键点击系统托盘/菜单栏的CC Switch图标
 
-2、从菜单里选择目标Provider
+2、从菜单里选择目标`Provider`
 
 3、立即生效
 
 ### 第4步：管理MCP服务器（可选）
 
-点击"MCP"标签页。
+点击`MCP`标签页。
 
-**添加MCP服务器**：
+#### 添加MCP服务器
 
-1、点击"Add MCP Server"
+1、点击`Add MCP Server`
 
-2、选择类型（stdio或http）
+2、选择类型（`stdio`或`http`）
 
 3、填写服务器信息
 
 4、保存
 
-**或者从模板添加**：
+#### 或者从模板添加
 
-1、点击"From Template"
+1、点击`From Template`
 
-2、选择内置模板（比如mcp-fetch）
+2、选择内置模板（比如`mcp-fetch`）
 
 3、自动填充配置
 
 4、保存
 
-**启用/禁用MCP服务器**：
+#### 启用/禁用MCP服务器
 
 直接点击服务器旁边的开关。
 
@@ -847,13 +762,13 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 为了防止配置丢失，定期导出备份：
 
-1、点击"Settings" → "Import/Export"
+1、点击`Settings` → `Import/Export`
 
-2、点击"Export Config"
+2、点击`Export Config`
 
-3、保存JSON文件到安全位置（比如云盘）
+3、保存`JSON`文件到安全位置（比如云盘）
 
-**团队协作时**，把导出的JSON文件发给同事，他们导入即可获得相同配置。
+团队协作时，把导出的`JSON`文件发给同事，他们导入即可获得相同配置。
 
 ## 常见问题和坑
 
@@ -861,15 +776,15 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 ### 坑1：切换后工具没生效
 
-**症状**：在CC Switch里切换了Provider，但Claude Code还用旧配置。
+**症状**：在CC Switch里切换了`Provider`，但Claude Code还用旧配置。
 
-**原因**：
+#### 原因
 
-1、Claude Code缓存了旧配置
+1、`Claude Code`缓存了旧配置
 
 2、需要重启工具
 
-**解决**：
+#### 解决
 
 1、切换后重启Claude Code或Codex
 
@@ -879,13 +794,13 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 **症状**：macOS双击CC Switch提示"无法打开"。
 
-**原因**：
+#### 原因
 
 1、开发者没有Apple Developer账号签名
 
 2、macOS安全机制阻止
 
-**解决**：
+#### 解决
 
 1、关闭错误提示
 
@@ -899,21 +814,21 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 ### 坑3：导入配置失败
 
-**症状**：导入JSON文件时提示格式错误。
+**症状**：导入`JSON`文件时提示格式错误。
 
-**原因**：
+#### 原因
 
-1、JSON文件格式不对
+1、`JSON`文件格式不对
 
 2、不是CC Switch导出的文件
 
 3、文件损坏
 
-**解决**：
+#### 解决
 
 1、确保导入的是CC Switch导出的文件
 
-2、用JSON验证工具检查格式
+2、用`JSON`验证工具检查格式
 
 3、重新导出一份
 
@@ -921,13 +836,13 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 **症状**：在CC Switch里启用了MCP服务器，但工具里用不了。
 
-**原因**：
+#### 原因
 
 1、需要重启工具
 
 2、MCP服务器配置有误
 
-**解决**：
+#### 解决
 
 1、启用MCP后重启Claude Code/Codex
 
@@ -941,11 +856,11 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 ### 1、从Electron迁移到Tauri
 
-**什么是Tauri？**
+#### 什么是Tauri？
 
-一个用Rust写的跨平台桌面应用框架，比Electron更轻量。
+一个用`Rust`写的跨平台桌面应用框架，比`Electron`更轻量。
 
-**迁移效果**：
+#### 迁移效果
 
 1、应用体积：从几十MB降到几MB
 
@@ -953,21 +868,21 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 3、内存占用：更低
 
-**这对用户意味着什么？**
+#### 这对用户意味着什么？
 
 下载更快、安装更快、运行更流畅。
 
 ### 2、Single Source of Truth（SSOT）
 
-**什么意思？**
+#### 什么意思？
 
-所有Provider配置只保存在一个地方：~/.cc-switch/config.json。
+所有`Provider`配置只保存在一个地方：`~/.cc-switch/config.json`。
 
-**为啥重要？**
+#### 为啥重要？
 
-以前CC Switch会把每个Provider的配置都复制一份到Claude Code目录下（~/.claude/settings-xxx.json）。
+以前CC Switch会把每个`Provider`的配置都复制一份到Claude Code目录下（`~/.claude/settings-xxx.json`）。
 
-**问题**：
+#### 问题
 
 1、配置分散，难管理
 
@@ -975,17 +890,17 @@ CC Switch内置了很多常用Provider模板（v3.6新增更多预设）：
 
 3、容易不一致
 
-**现在的做法**：
+#### 现在的做法
 
-1、所有Provider配置统一保存在 ~/.cc-switch/config.json
+1、所有`Provider`配置统一保存在`~/.cc-switch/config.json`
 
 2、切换时才写入Claude Code/Codex的配置文件
 
-3、 **单一数据源，永不冲突**
+3、单一数据源，永不冲突
 
 ### 3、原子写入 + 回滚机制
 
-**什么意思？**
+#### 什么意思？
 
 CC Switch在写配置文件时：
 
@@ -995,7 +910,7 @@ CC Switch在写配置文件时：
 
 3、重命名临时文件为正式文件
 
-**如果中途出错**：
+#### 如果中途出错
 
 1、保留原配置文件
 
@@ -1003,9 +918,9 @@ CC Switch在写配置文件时：
 
 3、回滚到切换前状态
 
-**这对用户意味着什么？**
+#### 这对用户意味着什么？
 
-**切换永远不会把配置文件搞坏**。
+切换永远不会把配置文件搞坏。
 
 就算切换到一半断电，原配置还在，不会丢失。
 
@@ -1017,17 +932,17 @@ CC Switch会自动备份配置：
 
 2、保留最近10个备份（自动轮换）
 
-3、备份位置：~/.cc-switch/backups/backup_YYYYMMDD_HHMMSS.json
+3、备份位置：`~/.cc-switch/backups/backup_YYYYMMDD_HHMMSS.json`
 
-**万一配置搞乱了**，随时能从备份恢复。
+万一配置搞乱了，随时能从备份恢复。
 
 ### 5、单实例机制
 
-**什么意思？**
+#### 什么意思？
 
 CC Switch确保同一时间只能运行一个实例。
 
-**为啥重要？**
+#### 为啥重要？
 
 如果同时打开多个CC Switch窗口：
 
@@ -1037,13 +952,13 @@ CC Switch确保同一时间只能运行一个实例。
 
 3、数据可能损坏
 
-**单实例机制**：
+#### 单实例机制
 
 1、打开第二个CC Switch时，自动激活已有窗口
 
 2、不会启动新实例
 
-3、 **避免多实例冲突**
+3、避免多实例冲突
 
 这是底层的安全保障，用户感知不到，但很重要。
 
@@ -1053,11 +968,11 @@ CC Switch内置了自动更新功能。
 
 ![](img/9971bd3447c449438aaa4eacfd20771d.png)
 
-**怎么用**：
+#### 怎么用
 
-Settings → "Check for Updates"
+`Settings` → `Check for Updates`
 
-**如果有新版本**：
+#### 如果有新版本
 
 1、自动检测
 
@@ -1065,13 +980,13 @@ Settings → "Check for Updates"
 
 3、一键下载安装
 
-**如果更新器配置不可用**：
+#### 如果更新器配置不可用
 
 1、自动打开GitHub Releases页面
 
 2、手动下载最新版
 
-**保持最新版本**，享受最新功能和bug修复。
+保持最新版本，享受最新功能和bug修复。
 
 ## 老金有话说
 
@@ -1079,11 +994,11 @@ Settings → "Check for Updates"
 
 人一旦被来回切换打断，专注力就像被刀割开，缝不上。
 
-CC Switch给了我一个启发：**不是去卷单个工具，而是把“切换”本身工程化**。
+CC Switch给了我一个启发：不是去卷单个工具，而是把“切换”本身工程化。
 
-把地址、Key、模型、MCP都标准化，点一下就能落地，注意力就回来了。
+把地址、`Key`、模型、`MCP`都标准化，点一下就能落地，注意力就回来了。
 
-**真正的效率是把复杂关进笼子**。
+真正的效率是把复杂关进笼子。
 
 让工具去适配我，而不是我去迁就工具。
 
@@ -1091,7 +1006,7 @@ CC Switch给了我一个启发：**不是去卷单个工具，而是把“切换
 
 当选择变成预设，脑子里只剩“当下要做什么”。
 
-老金提醒：**别把时间花在重复确认上。**
+老金提醒：别把时间花在重复确认上。
 
 把该定的都定死，给自己留出思考问题的空白。
 
@@ -1099,7 +1014,7 @@ CC Switch给了我一个启发：**不是去卷单个工具，而是把“切换
 
 别人忙着修配置，你已经在推进结果。
 
-今晚就做一件小事：**把最常用的三套配置建成模板。**
+今晚就做一件小事：把最常用的三套配置建成模板。
 
 明天开始，你会明显感到大脑更安静。
 
@@ -1107,6 +1022,6 @@ CC Switch给了我一个启发：**不是去卷单个工具，而是把“切换
 
 当手和脑都顺了，效率这件事就不再靠意志力。
 
-**折磨到此为止，把时间还给创造。**
+折磨到此为止，把时间还给创造。
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

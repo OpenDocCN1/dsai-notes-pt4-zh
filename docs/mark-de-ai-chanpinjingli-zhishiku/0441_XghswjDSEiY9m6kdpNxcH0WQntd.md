@@ -1,3 +1,4 @@
+
 # 项目-RAG智能体工作流
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/J2M5dTdHJoNSZuxRjP7c8Ri4nYt](https://qqs7y1hozd1.feishu.cn/docx/J2M5dTdHJoNSZuxRjP7c8Ri4nYt)
@@ -30,7 +31,7 @@ os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
 _set_env(&quot;LANGCHAIN_API_KEY&quot;)
 ```
 
-### 检索器
+## 检索器
 
 首先，我们索引3篇博客文章。
 
@@ -77,7 +78,7 @@ retriever_tool = create_retriever_tool(
 tools = [retriever_tool]
 ```
 
-### 代理状态
+## 代理状态
 
 我们将定义一个图。
 
@@ -101,15 +102,15 @@ class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
 ```
 
-节点和边
+### 节点和边
 
 我们可以像这样布置一个代理型 RAG 图：
 
-+   状态是一组消息
++ 状态是一组消息
 
-+   每个节点都会更新（附加到）状态
++ 每个节点都会更新（附加到）状态
 
-+   条件边决定下一个访问的节点
++ 条件边决定下一个访问的节点
 
 ![](img/6c38353832ffbaf3808a2d707fdf3e29.png)
 
@@ -282,7 +283,13 @@ print(&quot;*&quot; * 20 + &quot;Prompt[rlm/rag-prompt]&quot; + &quot;*&quot; * 
 prompt = hub.pull(&quot;rlm/rag-prompt&quot;).pretty_print()  # Show what the prompt looks like
 ```
 
-```
+
+
+# LangGraph RAG Agent 工作流
+
+## Prompt 模板
+
+```text
 ********************Prompt[rlm/rag-prompt]********************
 ================================ Human Message =================================
 
@@ -292,17 +299,18 @@ Context: {context}
 Answer:
 ```
 
+## 工作流图
+
 ### 图
 
-+   从一个代理开始，调用模型
+- 从一个代理开始，调用模型
+- 代理决定是否调用一个函数
+- 如果是，那么执行调用工具（检索器）的操作
+- 然后将工具的输出添加到消息（状态）中，并调用代理
 
-+   代理决定是否调用一个函数
+### 状态图定义
 
-+   如果是，那么执行调用工具（检索器）的操作
-
-+   然后将工具的输出添加到消息（状态）中，并调用代理
-
-```
+```python
 from langgraph.graph import END, StateGraph
 from langgraph.prebuilt import ToolNode
 
@@ -345,7 +353,9 @@ workflow.add_edge(&quot;rewrite&quot;, &quot;agent&quot;)
 graph = workflow.compile()
 ```
 
-```
+### 图像可视化
+
+```python
 from IPython.display import Image, display
 
 try:
@@ -355,9 +365,13 @@ except Exception:
     pass
 ```
 
-![](img/a332bf682dfbfc945fa95103b6ef0ecb.png)
+![Agent 工作流图](img/a332bf682dfbfc945fa95103b6ef0ecb.png)
 
-```
+## 执行示例
+
+### 输入与流式输出
+
+```python
 import pprint
 
 inputs = {
@@ -372,6 +386,8 @@ for output in graph.stream(inputs):
         pprint.pprint(value, indent=2, width=80, depth=None)
     pprint.pprint(&quot;\n---\n&quot;)
 ```
+
+### 输出结果
 
 ```
 ---CALL AGENT---

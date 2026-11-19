@@ -1,8 +1,9 @@
+
 # 漫剧《末世开超市》拆解(附原剧本)
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/Fclqd1jZHoaUmixXpzocW31jnMe](https://rq547mr4oez.feishu.cn/docx/Fclqd1jZHoaUmixXpzocW31jnMe)
 
-# 一、前言
+## 一、前言
 
 > 作为 2026 年首部现象级 AI 漫剧（48 小时播放破亿、多平台霸榜），该剧的爆火并非偶然！
 
@@ -14,7 +15,7 @@
 
 ![](img/beaa53a23e1c4e352edaa420e24596ac.png)
 
-# 二、上干货（原剧本找老杨要吧）
+## 二、上干货（原剧本找老杨要吧）
 
 ```
 **1-1 日 外 废弃城市废墟 - 边缘 人物：陈默**

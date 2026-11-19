@@ -1,24 +1,22 @@
+
 # PyTorch 实例 - 文本情感分析项目
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/HjDhdSNoNohUujx6NA6cYQ1tnmf](https://v11enp9ok1h.feishu.cn/docx/HjDhdSNoNohUujx6NA6cYQ1tnmf)
 
-文本情感分析是自然语言处理(NLP)中的一项基础任务，旨在判断一段文本表达的情感倾向(正面/负面)。本项目将使用PyTorch构建一个深度学习模型，实现对电影评论的情感分类。
+文本情感分析是自然语言处理(NLP)中的一项基础任务，旨在判断一段文本表达的情感倾向(正面/负面)。本项目将使用`PyTorch`构建一个深度学习模型，实现对电影评论的情感分类。
 
-### 情感分析的应用场景
+## 情感分析的应用场景
 
-+   产品评论分析
-
-+   社交媒体舆情监控
-
-+   客户服务反馈分类
-
-+   市场趋势预测
+- 产品评论分析
+- 社交媒体舆情监控
+- 客户服务反馈分类
+- 市场趋势预测
 
 ## 环境准备
 
 ### 所需工具和库
 
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -29,7 +27,7 @@ import numpy as np
 
 ### 安装依赖
 
-```
+```bash
 pip install torch torchtext spacy
 python -m spacy download en_core_web_sm
 ```
@@ -40,30 +38,28 @@ python -m spacy download en_core_web_sm
 
 使用IMDB电影评论数据集，包含50,000条带有情感标签(正面/负面)的评论。
 
-### 数据预处理
+### 数据预处理示例
 
-## 实例
-
-```
+```python
 # 定义字段处理
-TEXT = Field(tokenize=&#x27;spacy&#x27;, 
-            tokenizer_language=&#x27;en_core_web_sm&#x27;,
+TEXT = Field(tokenize='spacy', 
+            tokenizer_language='en_core_web_sm',
             include_lengths=True)
 LABEL = Field(sequential=False, use_vocab=False)
 
 # 加载数据集
 train_data, test_data = TabularDataset.splits(
-    path=&#x27;./data&#x27;,
-    train=&#x27;train.csv&#x27;,
-    test=&#x27;test.csv&#x27;,
-    format=&#x27;csv&#x27;,
-    fields=[(&#x27;text&#x27;, TEXT), (&#x27;label&#x27;, LABEL)]
+    path='./data',
+    train='train.csv',
+    test='test.csv',
+    format='csv',
+    fields=[('text', TEXT), ('label', LABEL)]
 )
 
 # 构建词汇表
 TEXT.build_vocab(train_data, 
                 max_size=25000,
-                vectors=&quot;glove.6B.100d&quot;)
+                vectors="glove.6B.100d")
 ```
 
 ## 模型构建
@@ -72,11 +68,9 @@ TEXT.build_vocab(train_data,
 
 ![](img/e09a97ca79ad4ed333a34eea62c26f44.png)
 
-### 4.2 模型实现代码
+### 模型实现
 
-## 实例
-
-```
+```python
 class SentimentLSTM(nn.Module):
     def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers):
         super().__init__()
@@ -91,7 +85,7 @@ class SentimentLSTM(nn.Module):
     def forward(self, text, text_lengths):
         embedded = self.dropout(self.embedding(text))
         packed_embedded = nn.utils.rnn.pack_padded_sequence(
-            embedded, text_lengths.to(&#x27;cpu&#x27;))
+            embedded, text_lengths.to('cpu'))
         packed_output, (hidden, cell) = self.lstm(packed_embedded)
         hidden = self.dropout(torch.cat((hidden[-2,:,:], hidden[-1,:,:]), dim=1))
         return self.fc(hidden)
@@ -101,7 +95,7 @@ class SentimentLSTM(nn.Module):
 
 ### 训练参数设置
 
-```
+```python
 # 模型参数
 INPUT_DIM = len(TEXT.vocab)
 EMBEDDING_DIM = 100
@@ -119,9 +113,7 @@ criterion = nn.BCEWithLogitsLoss()
 
 ### 训练循环
 
-## 实例
-
-```
+```python
 def train(model, iterator, optimizer, criterion):
     epoch_loss = 0
     epoch_acc = 0
@@ -147,7 +139,7 @@ def train(model, iterator, optimizer, criterion):
 
 ### 评估函数
 
-```
+```python
 def evaluate(model, iterator, criterion):
     epoch_loss = 0
     epoch_acc = 0
@@ -167,9 +159,7 @@ def evaluate(model, iterator, criterion):
 
 ### 准确率计算
 
-## 实例
-
-```
+```python
 def accuracy(preds, y):
     rounded_preds = torch.round(torch.sigmoid(preds))
     correct = (rounded_preds == y).float()
@@ -181,7 +171,7 @@ def accuracy(preds, y):
 
 ### 预测新文本
 
-```
+```python
 def predict_sentiment(model, sentence):
     tokenized = [tok.text for tok in nlp.tokenizer(sentence)]
     indexed = [TEXT.vocab.stoi[t] for t in tokenized]
@@ -195,10 +185,10 @@ def predict_sentiment(model, sentence):
 
 ### 示例预测
 
-```
-positive_review = &quot;This movie was fantastic! I really enjoyed it.&quot;
-negative_review = &quot;The film was terrible and boring.&quot;
+```python
+positive_review = "This movie was fantastic! I really enjoyed it."
+negative_review = "The film was terrible and boring."
 
-print(f&quot;Positive review score: {predict_sentiment(model, positive_review):.4f}&quot;)
-print(f&quot;Negative review score: {predict_sentiment(model, negative_review):.4f}&quot;)
+print(f"Positive review score: {predict_sentiment(model, positive_review):.4f}")
+print(f"Negative review score: {predict_sentiment(model, negative_review):.4f}")
 ```

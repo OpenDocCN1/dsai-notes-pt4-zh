@@ -1,8 +1,9 @@
+
 # 大佬 Ilya Sutskever 的神级论文清单
 
 > 来源：[https://docs.feishu.cn/docx/EtpRdiri4o0zAPxfGYVcRwhVnzd](https://docs.feishu.cn/docx/EtpRdiri4o0zAPxfGYVcRwhVnzd)
 
-**Ilya Sutskever**，作为深度学习领域的领航者，不仅在学术界树立了里程碑，更通过在谷歌大脑、OpenAI及DeepMind的领导角色，引领着人工智能技术向更加智能、安全的方向迈进。
+Ilya Sutskever，作为深度学习领域的领航者，不仅在学术界树立了里程碑，更通过在谷歌大脑、OpenAI及DeepMind的领导角色，引领着人工智能技术向更加智能、安全的方向迈进。
 
 Sutskever 相信，如果 Carmack 能够深入理解并吸收这些论文的精髓，他将掌握当今科技界（人工智能领域）最为关键的90%的知识。
 
@@ -14,7 +15,7 @@ Sutskever 相信，如果 Carmack 能够深入理解并吸收这些论文的精�
 
 我们一睹为快。
 
-# **01****Transformer 架构**
+## 01 Transformer 架构
 
 在 Transformer 架构方面，Ilya 推荐谷歌在 2017 年发表的经典论文《Attention Is All You Need》，这是 Transformer 架构的问世之作。Transformer 架构今天已经成为人工智能领域的主流基础架构，特别是它是生成式 AI 模型的核心架构。
 
@@ -38,7 +39,7 @@ GitHub地址：https://github.com/harvardnlp/annotated-transformer/
 
 图注：Transformer模型架构
 
-# **02****循环神经网络（RNN）**
+## 02 循环神经网络（RNN）
 
 在 RNN 方面，Ilya 首先推荐阅读 AI 大牛 Andrej Karpathy于 2015 年撰写的一篇博客，强调「RNN 惊人的有效性」。
 
@@ -48,7 +49,7 @@ GitHub地址：https://github.com/harvardnlp/annotated-transformer/
 
 论文地址：https://karpathy.github.io/2015/05/21/rnn-effectiveness/
 
-Ilya 还推荐了由纽约大学 Wojciech Zaremba（OpenA**I创始团队成员）和 Ilya Suts**kever 本人 2015 年发表的论文《Recurrent Neural Network Regularization。当时，Ilya 还是谷歌大脑的研究科学家。
+Ilya 还推荐了由纽约大学 Wojciech Zaremba（OpenAI创始团队成员）和 Ilya Sutskever 本人 2015 年发表的论文《Recurrent Neural Network Regularization。当时，Ilya 还是谷歌大脑的研究科学家。
 
 这篇论文为 RNN 提出了一种简单的正则化技术，阐述了如何正确地将 dropout 应用于 LSTM，大大减少了各种任务的过拟合，包括语言建模、语音识别、图像字幕生成、机器翻译等等。
 
@@ -56,19 +57,19 @@ Ilya 还推荐了由纽约大学 Wojciech Zaremba（OpenA**I创始团队成员�
 
 论文地址：https://arxiv.org/pdf/1409.2329
 
-此外，Ilya 还推荐了 DeepMind、伦敦大学学院Co**MPLEX 2018 年联合发表**的论文《Relational recurrent neural networks。
+此外，Ilya 还推荐了 DeepMind、伦敦大学学院COMPLEX 2018 年联合发表的论文《Relational recurrent neural networks。
 
 论文提出一种关系循环神经网络，该网络利用一种新型记忆模块 RMC 解决标准记忆架构难以执行关系推理任务的问题。该方法在强化学习领域（如 Mini PacMan）、程序评估和语言建模上获得了很大进步，在 WikiText-103、Project Gutenberg和 GigaWord 数据集上获得了当前最优的结果。
 
 论文链接：https://arxiv.org/abs/1806.01822
 
-另一篇，文章《**ORDER MATTERS: SEQUENCE **TO SEQUENCE FOR SETS由Oriol Vinyals、Samy Bengio和Manjunath Kudlur（来自Google Brain团队）共同撰写，并在ICLR 2016会议上发表。该文探讨了在监督学习中，序列因其能够利用循环神经网络（RNN）高效处理而成为重要对象。
+另一篇，文章《ORDER MATTERS: SEQUENCE TO SEQUENCE FOR SETS由Oriol Vinyals、Samy Bengio和Manjunath Kudlur（来自Google Brain团队）共同撰写，并在ICLR 2016会议上发表。该文探讨了在监督学习中，序列因其能够利用循环神经网络（RNN）高效处理而成为重要对象。
 
 ![](img/b651ab46b1d7d8ae2fc0b0a6b08164ac.png)
 
 论文地址：https://arxiv.org/pdf/1511.06391
 
-# **03****长短期记忆网络（LSTM）**
+## 03 长短期记忆网络（LSTM）
 
 在 LSTM 方面，Ilya 推荐了 Anthropic 联合创始人、前 OpenAI 可解释性团队技术负责人 Christopher Olah 2015 年撰写的博客文章《Understanding LSTM Networks，这篇文章全面细致地讲解了 LSTM 的基本知识，并阐明 RNN 取得的显著成果本质上是依靠 LSTM 实现的。
 
@@ -78,9 +79,9 @@ Ilya 还推荐了由纽约大学 Wojciech Zaremba（OpenA**I创始团队成员�
 
 总的来说，《Understanding LSTM Networks》是一篇面向广泛读者群体的科普文章，旨在降低理解LSTM这一复杂深度学习模型的门槛，无论你是初学者还是有一定基础的研究人员，都能从中获益，加深对LSTM及其背后原理的认识。
 
-# **04****神经网络的复杂度**
+## 04 神经网络的复杂度
 
-**在「复杂度」方面，Ilya 重点推荐了《Kolmogor**ov Complexity and Algorithmic Randomness一书中讲解「算法统计」的部分。
+在「复杂度」方面，Ilya 重点推荐了《Kolmogorov Complexity and Algorithmic Randomness一书中讲解「算法统计」的部分。
 
 ![](img/010b4b8dd69d91dbb7a298940d6dfa8d.png)
 
@@ -90,9 +91,9 @@ Ilya 还推荐了由纽约大学 Wojciech Zaremba（OpenA**I创始团队成员�
 
 论文地址：https://scottaaronson.blog/?p=762
 
-# **05****计算机视觉**
+## 05 计算机视觉
 
-在**计**算机视觉方面，Ilya 推荐了 2012 年 ImageNet 图像识别大赛中图灵奖得主 Geoffrey Hinton 组的论文《ImageNet Classification with Deep Convolutional Neural Networks，这篇论文提出了 AlexNet()，引入了全新的深层结构和 dropout 方法，颠覆了图像识别领域，甚至被认为开启了深度学习革命。Ilya 也是这篇论文的三位作者之一。
+在计算机视觉方面，Ilya 推荐了 2012 年 ImageNet 图像识别大赛中图灵奖得主 Geoffrey Hinton 组的论文《ImageNet Classification with Deep Convolutional Neural Networks，这篇论文提出了 `AlexNet()`，引入了全新的深层结构和 dropout 方法，颠覆了图像识别领域，甚至被认为开启了深度学习革命。Ilya 也是这篇论文的三位作者之一。
 
 ![](img/876a26a2566976691345d90dd0831931.png)
 
@@ -104,7 +105,7 @@ Ilya 还推荐了由纽约大学 Wojciech Zaremba（OpenA**I创始团队成员�
 
 课程地址：https://cs231n.github.io/
 
-在这份推荐清单中，我们还看到了很多著名 AI 学者的经典论**文，比**如一些神经网络架构 Pointer Networks（Ptr-Nets）、神经图灵机（NTM），还有神经网络训练优化相关的《GPipe: Easy Scaling with Micro-Batch Pipeline Parallelism》。
+在这份推荐清单中，我们还看到了很多著名 AI 学者的经典论文，比如一些神经网络架构 Pointer Networks（Ptr-Nets）、神经图灵机（NTM），还有神经网络训练优化相关的《GPipe: Easy Scaling with Micro-Batch Pipeline Parallelism》。
 
 ![](img/34c437d6be7d6a429821e4825f188e0a.png)
 

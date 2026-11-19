@@ -1,8 +1,9 @@
+
 # 11🈷️14日
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/BirAdPobfo9IWoxoYu5cNnqon5e](https://v11enp9ok1h.feishu.cn/docx/BirAdPobfo9IWoxoYu5cNnqon5e)
+## AMD大刀阔斧裁员：押注AI芯片，剑指NVIDIA霸主地位
 
-# AMD大刀阔斧裁员：押注AI芯片，剑指NVIDIA霸主地位
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/BirAdPobfo9IWoxoYu5cNnqon5e](https://v11enp9ok1h.feishu.cn/docx/BirAdPobfo9IWoxoYu5cNnqon5e)
 
 近日，AMD宣布将裁减约1，000名员工，约占其全球员工总数的4%。此次裁员主要涉及游戏和消费级PC部门的销售和营销岗位，标志着这家芯片巨头正全力转向人工智能芯片领域。
 

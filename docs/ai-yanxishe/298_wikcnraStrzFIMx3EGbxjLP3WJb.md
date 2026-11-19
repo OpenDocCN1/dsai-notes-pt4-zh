@@ -1,3 +1,4 @@
+
 # Ai视频生成教程
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/KUzudwvSvo7DJPxngy0c47O6nod](https://aiyanxishe.feishu.cn/docx/KUzudwvSvo7DJPxngy0c47O6nod)
@@ -38,7 +39,7 @@
 
 ![](img/5d57e628fbe3d921c2d5f84f18ea78f7.png)
 
-第六步：点击提交后可以在个人作品页看到对应的视频内容。等待生成完成后下载即可成功
+第六步：点击提交后可以在个人作品页看到对应的视频内容。等待生成完成后下载即可成功。
 
 ![](img/e11b79dfda230b31e5de5b3f3c0ec195.png)
 

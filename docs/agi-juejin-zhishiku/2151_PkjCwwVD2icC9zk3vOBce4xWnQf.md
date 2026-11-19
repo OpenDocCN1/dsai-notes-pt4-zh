@@ -1,3 +1,4 @@
+
 # 10.22-英伟达新 nGPT 架构撬动 AI 未来、马斯克的 xAI 正式发布 API
 
 > 来源：[https://agijuejin.feishu.cn/docx/Y98Wd0HuLor7JNxakvickajpnQd](https://agijuejin.feishu.cn/docx/Y98Wd0HuLor7JNxakvickajpnQd)
@@ -56,8 +57,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/804/079.htm)
 
 2024 年 10 月 22 日，Meta 宣布重启面部识别技术以打击‘假名人’诈骗。将招募约 50000 名公众人物参与试验，从 12 月开始在全球推出，但部分地区除外。2021 年 Meta 曾因‘日益增长的社会担忧’关闭该系统。Meta 还面临诉讼，新试验中会立即删除比较生成的面部数据。
 
-###
-
 ### 💡 因在 Cybercab 发布会中使用 AI“致敬”《银翼杀手》，马斯克遭制作公司起诉
 
 IT之家 | [阅读原文](https://www.ithome.com/0/804/067.htm)
@@ -95,8 +94,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/803/882.htm)
 ![](img/ac9facee43ba432e13c0c89460115260.png)
 
 泰山文旅集团物业公司正在测试机器狗，目前处于测试阶段，可搬运货物、清运垃圾，已在泰山景区台阶和山地路况测试，设计最多可承载 120kg，未来有望大规模在泰山投放，用于货物运输和垃圾清运。
-
-###
 
 ### 💡 把 AI 放进《我的世界》服务器：GPT-4o 杀牛宰羊，Claude3.5 把家拆了
 

@@ -1,6 +1,7 @@
+
 # 保姆级教程 | 利用AI制作3D动画版甄嬛传文字教程
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/QOoxd6vQpoSylbxlXjkccNDTnHg](https://xuqiwei1986.feishu.cn/docx/QOoxd6vQpoSylbxlXjkccNDTnHg)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/QOoxd6vQpoSylbxlXjkccNDTnHg`
 
 最近不管是刷📕还是抖音，发现魔改版甄嬛传火了，有3D动画版，有吉卜力版，还有蜡笔小新版。例如这个博主发的作品
 
@@ -34,13 +35,13 @@
 
 ChatGPT官网：（国内无法访问）
 
-https://chatgpt.com/
+`https://chatgpt.com/`
 
 当然如果你不能访问ChatGPT官网，也可以使用一些AI镜像网站，也是一样的效果，我这里就是利用这个镜像网站制作的。
 
 AI镜像网站：（国内可以访问，🐧邮箱注册即可）
 
-https://chendandan.ai1.bar/
+`https://chendandan.ai1.bar/`
 
 ![](img/5c9d0fe570e645dc17413234c3919c8d.png)
 
@@ -72,21 +73,21 @@ https://chendandan.ai1.bar/
 
 上述或许看的还不够明显，但是你多试几次不同的画面，就会发现还是可灵AI好一点，其次是海螺AI，当然即梦AI胜在免费。
 
-（在网页版即梦AI生成视频以后，利用idm下载工具下载视频，就可以无水印了）
+（在网页版即梦AI生成视频以后，利用`idm`下载工具下载视频，就可以无水印了）
 
 （听说即梦AI3.0视频模型也在内测了，比较期待）
 
 可灵AI：
 
-https://app.klingai.com/cn/
+`https://app.klingai.com/cn/`
 
 即梦AI：
 
-https://jimeng.jianying.com/
+`https://jimeng.jianying.com/`
 
 海螺AI:
 
-https://hailuoai.com/
+`https://hailuoai.com/`
 
 这里蛋蛋氪金了45元，充值了可灵AI月会员。
 
@@ -114,7 +115,7 @@ https://hailuoai.com/
 
 可灵AI充值成为黄金会员以后，会送660灵感值，而生成一条5秒的视频就需要35灵感值，对口型又需要5灵感值，所以在可灵AI里面，生成Q版甄嬛传一个简单的镜头，就需要40灵感值，真的很耗钱。
 
-### 5️⃣重新剪辑
+## 5️⃣重新剪辑
 
 按照上述步骤，我们可以生成不同的场景镜头，然后将这些镜头视频导入剪映重新拼接剪辑，添加字幕等，最后导出即可。至此，动画版甄嬛传就算完成了。
 

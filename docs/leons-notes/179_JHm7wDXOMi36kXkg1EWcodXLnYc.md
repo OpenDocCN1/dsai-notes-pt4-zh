@@ -1,25 +1,24 @@
+
 # 聊聊这台 2023 款 M3 Pro 的 MacBook Pro
 
 > 来源：[https://leonzhang.feishu.cn/docx/ZfRcdmOOkouSSyxRxjCczVYenfe](https://leonzhang.feishu.cn/docx/ZfRcdmOOkouSSyxRxjCczVYenfe)
-
+>
 > #Tech #Apple #Mac
 
-### 目录
+目录
 
 两年前的双十一，我下单了一台 13 寸 M1 芯片的 MacBook Pro，基础配置 8G+256G，到手之后，嗯，确实是我理想中的电脑，I like it，甚至爱不释手。
 
-而就在几天前， 2023 款 M3 Pro 的 MacBook Pro 到手了，从拆箱到使用，对 Mac 的喜欢又增加了。以下是我选购设备时的一些想法和思考。
+而就在几天前，2023 款 M3 Pro 的 MacBook Pro 到手了，从拆箱到使用，对 Mac 的喜欢又增加了。以下是我选购设备时的一些想法和思考。
 
-| ![](img/7dc752bc41c5ff052881eb6ce9d03cef.png) |
-| --- |
+![](img/7dc752bc41c5ff052881eb6ce9d03cef.png)
 
 ## 上台设备的基本情况
 
 其实当时在购买前，也有过纠结，当时问了自己几个问题：
 
-+   为什么一定要选择支持 macOS 的 Mac？
-
-+   为什么不选择 14 寸/16 寸的 M1 Pro 或者 M1 Max 呢？
++ 为什么一定要选择支持 macOS 的 Mac？
++ 为什么不选择 14 寸/16 寸的 M1 Pro 或者 M1 Max 呢？
 
 ### 首先，为什么一定要选择支持 macOS 的 Mac？
 
@@ -29,11 +28,9 @@
 
 第三，**续航**，当时我手里的笔电，基本续航时长为 4 个小时左右，几乎随时需要充电，而当时仅采用 Apple Silicon 的 13 寸 MacBook Pro，最长续航是 20 个小时，而当时回看一年前录播发布会的我，晚上激动的睡不着觉。
 
-| --- |
+### 其次，那当时为什么不选择 14 寸/16 寸的 M1 Pro 或者 M1 Max 呢？
 
-### **其次，那当时为什么不选择 14 寸/16 寸的** M1 Pro 或者 M1 Max 呢？
-
-原因有二，第一，**配置够用**。关于 Soc，对比之前 x86 的 intel 芯片， i5（还是 i7）的低压处理器，NVIDIA 的独显也不高，换做 ARM 架构的 Apple Silicon，可预见的性能增加；关于内存和硬盘配置，而且我很清楚当时自己就是拿来轻办公，8G 内存够用了（其实当时还不怎么了解 Mac 统一内存架构的优势）；至于选 256G 硬盘嘛，当时的想法就是，如果不够用就开 iCloud，还能与 iPhone、iPad 同步，2T 的 iCloud 也够用了（实际也确实如此）。
+原因有二，第一，**配置够用**。关于 Soc，对比之前 x86 的 intel 芯片，i5（还是 i7）的低压处理器，NVIDIA 的独显也不高，换做 ARM 架构的 Apple Silicon，可预见的性能增加；关于内存和硬盘配置，而且我很清楚当时自己就是拿来轻办公，8G 内存够用了（其实当时还不怎么了解 Mac 统一内存架构的优势）；至于选 256G 硬盘嘛，当时的想法就是，如果不够用就开 iCloud，还能与 iPhone、iPad 同步，2T 的 iCloud 也够用了（实际也确实如此）。
 
 第二，**费用问题**。够用的前提下，我几乎不会再多花至少五六千的价格去购买一台更高配置（14 寸/16 寸的 M1 Pro 或者 M1 Max）的设备。当然，其中也有口袋余粮的考虑，但更多考虑的是够不够用，因为我很清楚自己要什么，什么就能满足我，若能满足，就够了。
 
@@ -51,13 +48,10 @@
 
 也有几个问题：
 
-+   是否要切换 Apple 生态？
-
-+   当前设备的配置或性能是否真的不够用了？
-
-+   是否有些新的技术或功能，让你产生了购买欲望？
-
-+   升级了新的设备，是否会有些新的、向好的变化？
++ 是否要切换 Apple 生态？
++ 当前设备的配置或性能是否真的不够用了？
++ 是否有些新的技术或功能，让你产生了购买欲望？
++ 升级了新的设备，是否会有些新的、向好的变化？
 
 ### 第一个问题，是否要切换 Apple 生态？
 
@@ -71,7 +65,7 @@
 
 ### 第二个问题，当前设备的配置或性能是否真的不够用了？
 
-是的，**主要是内存**。[我有个不好的习惯，就是 C](https://chromewebstore.google.com/detail/tab-suspender/laameccjpleogmfhilmffpdbiibgbekf?pli=1)hrome 会开很多个 Tag，会导致内存爆掉。我也知道自己短时间很难改掉，所以在配合着插件（现在用的是 Tab Suspender）一起用，效果还不错。但有一次更新 macOS 之后，多少就有点不太够了，所以不要轻易更新系统。
+是的，**主要是内存**。我有个不好的习惯，就是 Chrome 会开很多个 Tag，会导致内存爆掉。我也知道自己短时间很难改掉，所以在配合着插件（现在用的是 [Tab Suspender](https://chromewebstore.google.com/detail/tab-suspender/laameccjpleogmfhilmffpdbiibgbekf?pli=1)）一起用，效果还不错。但有一次更新 macOS 之后，多少就有点不太够了，所以不要轻易更新系统。
 
 但硬盘还好，才用 180G 左右，可能只是因为有些文件而已。不过内存和硬盘这些，多多益善嘛，主要看有没有整理的习惯。
 
@@ -87,7 +81,7 @@
 
 ## 总结
 
-### 关于 Apple Silicon M3 的“减配”操作。
+### 关于 Apple Silicon M3 的“减配”操作
 
 这里主要说我买到的 M3 Pro 版本。
 
@@ -95,16 +89,13 @@
 
 第二，内存带宽，往年 M1、M2 的 Pro 系列，内存带宽都是同一对待，而今年，M3 Pro 的内存带宽，不增反降。哪怕说你不升级也行啊，还降了 50GB/s，不得不佩服 Tim 的精准刀法。
 
-| --- |
-
-### 关于 M3 Pro 的 MacBook Pro 16 寸的售价。
+### 关于 M3 Pro 的 MacBook Pro 16 寸的售价
 
 今年内存和硬盘如此大降价，再看 Apple 的内存和硬盘，额，丝毫没有打算降价的意思。再看看别家，内存和硬盘就像不要钱的一样。
 
 害，没办法，喜欢的话，只能忍痛了。
 
-| ![](img/0556cd3e4294cc79a203fd3f7e50e659.png) |
-| --- |
+![](img/0556cd3e4294cc79a203fd3f7e50e659.png)
 
 ### 又贵又减配，那为什么就是它呢？
 
@@ -118,24 +109,19 @@
 
 ## Related content
 
-+   [大白话聊 Apple Silicon（苹果芯片）](https://sm84lfdag7.feishu.cn/wiki/QfffwdAQ3ipzuIkYqnrcgWwNnqg)
++ [大白话聊 Apple Silicon（苹果芯片）](https://sm84lfdag7.feishu.cn/wiki/QfffwdAQ3ipzuIkYqnrcgWwNnqg)
 
 ## Further reading
 
-+   Tab Suspender 官网：https://tabssuspender.com/
-
-+   Tab Suspender Chrome 插件：https://chromewebstore.google.com/detail/tab-suspender/laameccjpleogmfhilmffpdbiibgbekf?pli=1
-
-+   【苹果 M3 系列首发评测：Max 早该如此】 https://www.bilibili.com/video/BV19N4y1S7Uz/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
-
-+   【苹果 M2 Pro/Max 深度评测：旧身体里的新灵魂】 https://www.bilibili.com/video/BV1gT411d7bD/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++ Tab Suspender 官网：`https://tabssuspender.com/`
++ Tab Suspender Chrome 插件：`https://chromewebstore.google.com/detail/tab-suspender/laameccjpleogmfhilmffpdbiibgbekf?pli=1`
++ 【苹果 M3 系列首发评测：Max 早该如此】 `https://www.bilibili.com/video/BV19N4y1S7Uz/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
++ 【苹果 M2 Pro/Max 深度评测：旧身体里的新灵魂】 `https://www.bilibili.com/video/BV1gT411d7bD/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
 ---
 
 一个 PM 看到的、听到的和想到的，欢迎交流～
 
-+   WeChat ID: thinkinghunt
-
-+   Email: thinkinghunt@163.com
-
-+   Lark Homepage: [张帅的个人说明书（对外）](https://sm84lfdag7.feishu.cn/wiki/wikcnvVUZ7NmWg31mUgnpvXwsie)
++ WeChat ID: thinkinghunt
++ Email: thinkinghunt@163.com
++ Lark Homepage: [张帅的个人说明书（对外）](https://sm84lfdag7.feishu.cn/wiki/wikcnvVUZ7NmWg31mUgnpvXwsie)

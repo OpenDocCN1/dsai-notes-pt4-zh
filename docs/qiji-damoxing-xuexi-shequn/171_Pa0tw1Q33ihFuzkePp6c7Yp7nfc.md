@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（6月 24日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/GXKUdp977oFDc7xtAFGcaCOonLg](https://miracleplus.feishu.cn/docx/GXKUdp977oFDc7xtAFGcaCOonLg)
 
-# 推特
+## 推特
 
 ### 自动营销的AI助手：Reddit上搜索相关帖子，给用户提供有价值的回复，以一种自然巧妙的方式推广我的产品
 
@@ -24,13 +25,10 @@ https://x.com/emollick/status/1804928079048946157?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
 使用Claude 3.5来构建有趣项目的一些小技巧：
 
-1.  **首先让它创建设计文档**：这可以起到思维链（CoT）功能，帮助理清思路和步骤。
-
-1.  **与它交谈并请求改进**：不断与Claude 3.5互动，询问如何改进项目。
-
-1.  **展示截图**：通过展示项目的截图来提供更多上下文，让Claude 3.5更好地理解和提供建议。
-
-1.  **注意到达限制点**：在某些时候，您可能会遇到上下文或能力的限制，导致进展停滞。
+1. 首先让它创建设计文档：这可以起到思维链（CoT）功能，帮助理清思路和步骤。
+2. 与它交谈并请求改进：不断与Claude 3.5互动，询问如何改进项目。
+3. 展示截图：通过展示项目的截图来提供更多上下文，让Claude 3.5更好地理解和提供建议。
+4. 注意到达限制点：在某些时候，您可能会遇到上下文或能力的限制，导致进展停滞。
 
 ![](img/a33eb9877d0a1c88df4501d568ebe3b7.png)
 
@@ -38,7 +36,7 @@ https://x.com/emollick/status/1804928079048946157?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
 https://x.com/satvikps/status/1804773768188870734?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
-当我们忙于使用Claude 3.5 Sonnet时， @GroqInc 推出了一个用于OpenAI的Whisper-large-v3模型的API。这是一个🚀超级快速的语音转文本解决方案。
+当我们忙于使用Claude 3.5 Sonnet时，@GroqInc 推出了一个用于OpenAI的Whisper-large-v3模型的API。这是一个🚀超级快速的语音转文本解决方案。
 
 🤯并且每小时的转录成本仅为$0.03！
 
@@ -52,7 +50,7 @@ https://x.com/BonesaiDev/status/1804941703431991473
 
 今天实现了一个神经网络的可视化工具。这是一个在终端中训练神经网络学习贪吃蛇游戏的项目。
 
-这个项目使用 Rust 编写，并使用了 @ratatui_rs 库。
+这个项目使用 Rust 编写，并使用了 `@ratatui_rs` 库。
 
 更多输入细节如下：
 
@@ -60,7 +58,7 @@ https://x.com/BonesaiDev/status/1804941703431991473
 
 以下是各符号的含义：
 
-+   S - 固体；F - 食物；LF/L - 左；RT/R - 右；BT/B - 下；TP/T - 上；TL - 左上；TR - 右上；BR - 右下；BL - 左下；HE - 头；TA - 尾
++ `S` - 固体；`F` - 食物；`LF/L` - 左；`RT/R` - 右；`BT/B` - 下；`TP/T` - 上；`TL` - 左上；`TR` - 右上；`BR` - 右下；`BL` - 左下；`HE` - 头；`TA` - 尾
 
 这个神经网络的可视化工具可以帮助我们更好地理解和调试训练过程。
 
@@ -78,7 +76,7 @@ https://x.com/mortenjust/status/1805190952358650251
 
 [ssstwitter.com_1719234599609.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CDxsbosnqoVG5HxBruQcYYsWnjh)
 
-# 资讯
+## 资讯
 
 ### 语言≠思维，大模型学不了推理：一篇Nature让AI社区炸锅了
 
@@ -116,11 +114,11 @@ https://mp.weixin.qq.com/s/S4lR1Ll9LhP_tkZH8lh0tg
 
 https://mp.weixin.qq.com/s/E0p-qrJXrsXy8q-hxi1j-w
 
-具身智能机器人公司**推行科技**（Infermove）最近放出来的一段视频。从中可以看出，在无人机到达指定地点后，送货机器人可以把货「拿」过来，放到自己的「肚子」里，然后再送到指定小区、写字楼的指定楼层，实现无缝接驳。其实，除了帮无人机送剩下的路程，它还能自己 cover 全程。在过去的 18 个月里，推行科技的机器人已经帮山姆会员店等商家送了几万单货。要知道，这些店铺和目的地之间往往隔了几条街，因此机器人需要在非机动车道上和人、自行车、电动车一起穿行、过马路，还要自己进小区、坐电梯，把外卖、商品送到用户手里。为了适应接驳无人机等更复杂的工作，推行科技给这些机器人安上了手臂，这样它们就能完成拿取包装袋、按电梯、推拉门等需要上肢才能完成的任务。
+具身智能机器人公司推行科技（Infermove）最近放出来的一段视频。从中可以看出，在无人机到达指定地点后，送货机器人可以把货「拿」过来，放到自己的「肚子」里，然后再送到指定小区、写字楼的指定楼层，实现无缝接驳。其实，除了帮无人机送剩下的路程，它还能自己 cover 全程。在过去的 18 个月里，推行科技的机器人已经帮山姆会员店等商家送了几万单货。要知道，这些店铺和目的地之间往往隔了几条街，因此机器人需要在非机动车道上和人、自行车、电动车一起穿行、过马路，还要自己进小区、坐电梯，把外卖、商品送到用户手里。为了适应接驳无人机等更复杂的工作，推行科技给这些机器人安上了手臂，这样它们就能完成拿取包装袋、按电梯、推拉门等需要上肢才能完成的任务。
 
 ![](img/c215f40d493ac9d36c68b186b267897e.png)
 
-# 产品
+## 产品
 
 ### Sherloq
 
@@ -142,7 +140,7 @@ Intentional 是一款专注于提高工作效率的应用程序。它允许用�
 
 ![](img/56992c79082ee8e89a08576d1edac125.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### RTranslator
 
@@ -162,7 +160,7 @@ https://huggingface.co/microsoft/kosmos-2.5
 
 Kosmos-2.5 是一个强大的多模态文字模型，能够有效处理大量文本的图像数据。它不仅可以生成包含空间信息的文本块，还能产生结构化的 Markdown 格式输出，展现出统一的多模态文字理解能力。这种能力源于其创新的模型架构和训练方法。此外，Kosmos-2.5 还可以通过微调适应不同的文本图像理解任务，成为一个通用的工具。
 
-# 投融资
+## 投融资
 
 ### 高中生成功筹集50万美元种子轮融资的故事
 
@@ -188,7 +186,7 @@ https://www.36kr.com/p/2829310300834304
 
 ![](img/2f870daab99f96ae479630bf69ab92b3.png)
 
-# 学习
+## 学习
 
 ### 华泰 | 机械：核裂变 - 从原型堆到第四代的征程
 
@@ -216,7 +214,7 @@ https://zhuanlan.zhihu.com/p/704424342?utm_psn=1787295492960505856
 
 https://www.zhihu.com/question/279973696/answer/3535722816?utm_psn=1787453630393139200
 
-机器人运动规划技术目前已进入智能化阶段，通过采样规划算法如 RRT（快速随机树）及其改进版 RRT*，能够在复杂环境中高效搜索路径。同时，优化方法被用于寻找最优解，尽管面临计算效率和实时性挑战。深度学习尤其是深度强化学习，通过学习环境与任务特性，显著提升了机器人在动态环境中的适应性和规划效率。未来发展趋势是这些技术的综合应用，以实现更高级的多机器人协同规划和解决实际应用中的实时性与鲁棒性问题。
+机器人运动规划技术目前已进入智能化阶段，通过采样规划算法如 `RRT`（快速随机树）及其改进版 `RRT*`，能够在复杂环境中高效搜索路径。同时，优化方法被用于寻找最优解，尽管面临计算效率和实时性挑战。深度学习尤其是深度强化学习，通过学习环境与任务特性，显著提升了机器人在动态环境中的适应性和规划效率。未来发展趋势是这些技术的综合应用，以实现更高级的多机器人协同规划和解决实际应用中的实时性与鲁棒性问题。
 
 ![](img/922908ced9c3fa83ca34768d6839520e.png)
 
@@ -236,21 +234,21 @@ https://zhuanlan.zhihu.com/p/704550807?utm_psn=1787454198503313408
 
 https://mp.weixin.qq.com/s/oI5OjGt4FRQVk_SYFONWWw
 
+
+
 MLPerf 训练 4.0 测试新增了能耗指标和大语言模型（LLM）微调基准，NVIDIA 再次证明了其在 AI 领域的领导地位，赢得了所有工作流的冠军。新的基准测试包括了图神经网络（GNN）和 LoRA 技术的 LLM 微调，后者是一种参数高效的微调方法，能显著降低训练时间和计算资源需求。在这次测试中，NVIDIA 的 GPU 展现了卓越的性能，特别是 H200 GPU 在性能上 relatively to H100 GPU 的提升。此外，Intel 的 Habana Gaudi2、Google 的 TPU v-5P 和 AMD 的 Radeon RX 7900 XTX GPU 也显示了强劲的竞争力。MLCommons 通过 MLPerf 基准测试推动了 AI 性能的提升，并为行业提供了评估和比较不同系统性能的工具。多家公司，如 Intel、Juniper Networks、Google、HPE、Fujitsu、Giga Computing、Dell Technologies、联想、NVIDIA、Oracle、Quanta Cloud Technology、Supermicro、Sustainable Metal Cloud (SMC) 和 Tiny Corp，都提交了他们的基准测试结果，这些结果不仅展示了技术进步，也强调了在 AI 训练中能效的重要性。特别是，Sustainable Metal Cloud (SMC) 通过其自主研发的 “Sustainable AI Factories” 平台，实现了在保持世界级性能的同时显著减少能源消耗。这些进展和优化措施为 AI 技术的未来发展奠定了基础，并在推动 AI 技术向更高效、可持续的方向发展中发挥了关键作用。
 
 ![](img/c0ac21b467ad404736acc1f805e50ac5.png)
 
 ### 重温SSM（二）：HiPPO的一些遗留问题
 
-https://kexue.fm/archives/10137
+`https://kexue.fm/archives/10137`
 
 文章深入探讨了HiPPO矩阵在离散化和实际应用中的技术细节。文章详细介绍了两种线性ODE系统HiPPO-LegT和HiPPO-LegS的离散化方法，强调了前向欧拉和后向欧拉方法在数值稳定性和精度上的差异。此外，文章分析了LegS型ODE的优良性质，如步长无关性和多项式衰减特性，确保了长尾记忆能力和计算高效性。最后，通过傅立叶基推导，对比了不同基下的记忆效果，进一步深化对HiPPO的理解。
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -262,11 +260,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

@@ -1,8 +1,11 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/BxDPdRqBtoLiASxs23FcGnKXnne](https://qqs7y1hozd1.feishu.cn/docx/BxDPdRqBtoLiASxs23FcGnKXnne)
 
-```
+
+
+```python
 from typing import List, Dict, Optional, Tuple
 import os
 import tempfile
@@ -25,64 +28,64 @@ from agents import Agent, Runner
 load_dotenv()
 
 # Constants
-COLLECTION_NAME = &quot;voice-rag-agent&quot;
+COLLECTION_NAME = "voice-rag-agent"
 
-def init_session_state() -&gt; None:
-    &quot;&quot;&quot;Initialize Streamlit session state with default values.&quot;&quot;&quot;
+def init_session_state() -> None:
+    """Initialize Streamlit session state with default values."""
     defaults = {
-        &quot;initialized&quot;: False,
-        &quot;qdrant_url&quot;: &quot;&quot;,
-        &quot;qdrant_api_key&quot;: &quot;&quot;,
-        &quot;openai_api_key&quot;: &quot;&quot;,
-        &quot;setup_complete&quot;: False,
-        &quot;client&quot;: None,
-        &quot;embedding_model&quot;: None,
-        &quot;processor_agent&quot;: None,
-        &quot;tts_agent&quot;: None,
-        &quot;selected_voice&quot;: &quot;coral&quot;,
-        &quot;processed_documents&quot;: []
+        "initialized": False,
+        "qdrant_url": "",
+        "qdrant_api_key": "",
+        "openai_api_key": "",
+        "setup_complete": False,
+        "client": None,
+        "embedding_model": None,
+        "processor_agent": None,
+        "tts_agent": None,
+        "selected_voice": "coral",
+        "processed_documents": []
     }
     
     for key, value in defaults.items():
         if key not in st.session_state:
             st.session_state[key] = value
 
-def setup_sidebar() -&gt; None:
-    &quot;&quot;&quot;Configure sidebar with API settings and voice options.&quot;&quot;&quot;
+def setup_sidebar() -> None:
+    """Configure sidebar with API settings and voice options."""
     with st.sidebar:
-        st.title(&quot;🔑 Configuration&quot;)
-        st.markdown(&quot;---&quot;)
+        st.title("🔑 Configuration")
+        st.markdown("---")
         
         st.session_state.qdrant_url = st.text_input(
-            &quot;Qdrant URL&quot;,
+            "Qdrant URL",
             value=st.session_state.qdrant_url,
-            type=&quot;password&quot;
+            type="password"
         )
         st.session_state.qdrant_api_key = st.text_input(
-            &quot;Qdrant API Key&quot;,
+            "Qdrant API Key",
             value=st.session_state.qdrant_api_key,
-            type=&quot;password&quot;
+            type="password"
         )
         st.session_state.openai_api_key = st.text_input(
-            &quot;OpenAI API Key&quot;,
+            "OpenAI API Key",
             value=st.session_state.openai_api_key,
-            type=&quot;password&quot;
+            type="password"
         )
         
-        st.markdown(&quot;---&quot;)
-        st.markdown(&quot;### 🎤 Voice Settings&quot;)
-        voices = [&quot;alloy&quot;, &quot;ash&quot;, &quot;ballad&quot;, &quot;coral&quot;, &quot;echo&quot;, &quot;fable&quot;, &quot;onyx&quot;, &quot;nova&quot;, &quot;sage&quot;, &quot;shimmer&quot;, &quot;verse&quot;]
+        st.markdown("---")
+        st.markdown("### 🎤 Voice Settings")
+        voices = ["alloy", "ash", "ballad", "coral", "echo", "fable", "onyx", "nova", "sage", "shimmer", "verse"]
         st.session_state.selected_voice = st.selectbox(
-            &quot;Select Voice&quot;,
+            "Select Voice",
             options=voices,
             index=voices.index(st.session_state.selected_voice),
-            help=&quot;Choose the voice for the audio response&quot;
+            help="Choose the voice for the audio response"
         )
 
-def setup_qdrant() -&gt; Tuple[QdrantClient, TextEmbedding]:
-    &quot;&quot;&quot;Initialize Qdrant client and embedding model.&quot;&quot;&quot;
+def setup_qdrant() -> Tuple[QdrantClient, TextEmbedding]:
+    """Initialize Qdrant client and embedding model."""
     if not all([st.session_state.qdrant_url, st.session_state.qdrant_api_key]):
-        raise ValueError(&quot;Qdrant credentials not provided&quot;)
+        raise ValueError("Qdrant credentials not provided")
     
     client = QdrantClient(
         url=st.session_state.qdrant_url,
@@ -90,7 +93,7 @@ def setup_qdrant() -&gt; Tuple[QdrantClient, TextEmbedding]:
     )
     
     embedding_model = TextEmbedding()
-    test_embedding = list(embedding_model.embed([&quot;test&quot;]))[0]
+    test_embedding = list(embedding_model.embed(["test"]))[0]
     embedding_dim = len(test_embedding)
     
     try:
@@ -102,15 +105,15 @@ def setup_qdrant() -&gt; Tuple[QdrantClient, TextEmbedding]:
             )
         )
     except Exception as e:
-        if &quot;already exists&quot; not in str(e):
+        if "already exists" not in str(e):
             raise e
     
     return client, embedding_model
 
-def process_pdf(file) -&gt; List:
-    &quot;&quot;&quot;Process PDF file and split into chunks with metadata.&quot;&quot;&quot;
+def process_pdf(file) -> List:
+    """Process PDF file and split into chunks with metadata."""
     try:
-        with tempfile.NamedTemporaryFile(delete=False, suffix=&#x27;.pdf&#x27;) as tmp_file:
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
             tmp_file.write(file.getvalue())
             loader = PyPDFLoader(tmp_file.name)
             documents = loader.load()
@@ -118,9 +121,9 @@ def process_pdf(file) -&gt; List:
             # Add source metadata
             for doc in documents:
                 doc.metadata.update({
-                    &quot;source_type&quot;: &quot;pdf&quot;,
-                    &quot;file_name&quot;: file.name,
-                    &quot;timestamp&quot;: datetime.now().isoformat()
+                    "source_type": "pdf",
+                    "file_name": file.name,
+                    "timestamp": datetime.now().isoformat()
                 })
             
             text_splitter = RecursiveCharacterTextSplitter(
@@ -129,7 +132,7 @@ def process_pdf(file) -&gt; List:
             )
             return text_splitter.split_documents(documents)
     except Exception as e:
-        st.error(f&quot;📄 PDF processing error: {str(e)}&quot;)
+        st.error(f"📄 PDF processing error: {str(e)}")
         return []
 
 def store_embeddings(
@@ -137,8 +140,8 @@ def store_embeddings(
     embedding_model: TextEmbedding,
     documents: List,
     collection_name: str
-) -&gt; None:
-    &quot;&quot;&quot;Store document embeddings in Qdrant.&quot;&quot;&quot;
+) -> None:
+    """Store document embeddings in Qdrant."""
     for doc in documents:
         embedding = list(embedding_model.embed([doc.page_content]))[0]
         client.upsert(
@@ -148,39 +151,39 @@ def store_embeddings(
                     id=str(uuid.uuid4()),
                     vector=embedding.tolist(),
                     payload={
-                        &quot;content&quot;: doc.page_content,
+                        "content": doc.page_content,
                         **doc.metadata
                     }
                 )
             ]
         )
 
-def setup_agents(openai_api_key: str) -&gt; Tuple[Agent, Agent]:
-    &quot;&quot;&quot;Initialize the processor and TTS agents.&quot;&quot;&quot;
-    os.environ[&quot;OPENAI_API_KEY&quot;] = openai_api_key
+def setup_agents(openai_api_key: str) -> Tuple[Agent, Agent]:
+    """Initialize the processor and TTS agents."""
+    os.environ["OPENAI_API_KEY"] = openai_api_key
     
     processor_agent = Agent(
-        name=&quot;Documentation Processor&quot;,
-        instructions=&quot;&quot;&quot;You are a helpful documentation assistant. Your task is to:
+        name="Documentation Processor",
+        instructions="""You are a helpful documentation assistant. Your task is to:
         1. Analyze the provided documentation content
-        2. Answer the user&#x27;s question clearly and concisely
+        2. Answer the user's question clearly and concisely
         3. Include relevant examples when available
         4. Cite the source files when referencing specific content
         5. Keep responses natural and conversational
-        6. Format your response in a way that&#x27;s easy to speak out loud&quot;&quot;&quot;,
-        model=&quot;gpt-4o&quot;
+        6. Format your response in a way that's easy to speak out loud""",
+        model="gpt-4o"
     )
 
     tts_agent = Agent(
-        name=&quot;Text-to-Speech Agent&quot;,
-        instructions=&quot;&quot;&quot;You are a text-to-speech agent. Your task is to:
+        name="Text-to-Speech Agent",
+        instructions="""You are a text-to-speech agent. Your task is to:
         1. Convert the processed documentation response into natural speech
         2. Maintain proper pacing and emphasis
         3. Handle technical terms clearly
         4. Keep the tone professional but friendly
         5. Use appropriate pauses for better comprehension
-        6. Ensure the speech is clear and well-articulated&quot;&quot;&quot;,
-        model=&quot;gpt-4o&quot;
+        6. Ensure the speech is clear and well-articulated""",
+        model="gpt-4o"
     )
     
     return processor_agent, tts_agent
@@ -192,13 +195,13 @@ async def process_query(
     collection_name: str,
     openai_api_key: str,
     voice: str
-) -&gt; Dict:
-    &quot;&quot;&quot;Process user query and generate voice response.&quot;&quot;&quot;
+) -> Dict:
+    """Process user query and generate voice response."""
     try:
-        st.info(&quot;🔄 Step 1: Generating query embedding and searching documents...&quot;)
+        st.info("🔄 Step 1: Generating query embedding and searching documents...")
         # Get query embedding and search
         query_embedding = list(embedding_model.embed([query]))[0]
-        st.write(f&quot;Generated embedding of size: {len(query_embedding)}&quot;)
+        st.write(f"Generated embedding of size: {len(query_embedding)}")
         
         search_response = client.query_points(
             collection_name=collection_name,
@@ -207,121 +210,121 @@ async def process_query(
             with_payload=True
         )
         
-        search_results = search_response.points if hasattr(search_response, &#x27;points&#x27;) else []
-        st.write(f&quot;Found {len(search_results)} relevant documents&quot;)
+        search_results = search_response.points if hasattr(search_response, 'points') else []
+        st.write(f"Found {len(search_results)} relevant documents")
         
         if not search_results:
-            raise Exception(&quot;No relevant documents found in the vector database&quot;)
+            raise Exception("No relevant documents found in the vector database")
         
-        st.info(&quot;🔄 Step 2: Preparing context from search results...&quot;)
+        st.info("🔄 Step 2: Preparing context from search results...")
         # Prepare context from search results
-        context = &quot;Based on the following documentation:\n\n&quot;
+        context = "Based on the following documentation:\n\n"
         for i, result in enumerate(search_results, 1):
             payload = result.payload
             if not payload:
                 continue
-            content = payload.get(&#x27;content&#x27;, &#x27;&#x27;)
-            source = payload.get(&#x27;file_name&#x27;, &#x27;Unknown Source&#x27;)
-            context += f&quot;From {source}:\n{content}\n\n&quot;
-            st.write(f&quot;Document {i} from: {source}&quot;)
+            content = payload.get('content', '')
+            source = payload.get('file_name', 'Unknown Source')
+            context += f"From {source}:\n{content}\n\n"
+            st.write(f"Document {i} from: {source}")
         
-        context += f&quot;\nUser Question: {query}\n\n&quot;
-        context += &quot;Please provide a clear, concise answer that can be easily spoken out loud.&quot;
+        context += f"\nUser Question: {query}\n\n"
+        context += "Please provide a clear, concise answer that can be easily spoken out loud."
         
-        st.info(&quot;🔄 Step 3: Setting up agents...&quot;)
+        st.info("🔄 Step 3: Setting up agents...")
         # Setup agents if not already done
         if not st.session_state.processor_agent or not st.session_state.tts_agent:
             processor_agent, tts_agent = setup_agents(openai_api_key)
             st.session_state.processor_agent = processor_agent
             st.session_state.tts_agent = tts_agent
-            st.write(&quot;Initialized new processor and TTS agents&quot;)
+            st.write("Initialized new processor and TTS agents")
         else:
-            st.write(&quot;Using existing agents&quot;)
+            st.write("Using existing agents")
         
-        st.info(&quot;🔄 Step 4: Generating text response...&quot;)
+        st.info("🔄 Step 4: Generating text response...")
         # Generate text response using processor agent
         processor_result = await Runner.run(st.session_state.processor_agent, context)
         text_response = processor_result.final_output
-        st.write(f&quot;Generated text response of length: {len(text_response)}&quot;)
+        st.write(f"Generated text response of length: {len(text_response)}")
         
-        st.info(&quot;🔄 Step 5: Generating voice instructions...&quot;)
+        st.info("🔄 Step 5: Generating voice instructions...")
         # Generate voice instructions using TTS agent
         tts_result = await Runner.run(st.session_state.tts_agent, text_response)
         voice_instructions = tts_result.final_output
-        st.write(f&quot;Generated voice instructions of length: {len(voice_instructions)}&quot;)
+        st.write(f"Generated voice instructions of length: {len(voice_instructions)}")
         
-        st.info(&quot;🔄 Step 6: Generating and playing audio...&quot;)
+        st.info("🔄 Step 6: Generating and playing audio...")
         # Generate and play audio with streaming
         async_openai = AsyncOpenAI(api_key=openai_api_key)
         
         # First create streaming response
         async with async_openai.audio.speech.with_streaming_response.create(
-            model=&quot;gpt-4o-mini-tts&quot;,
+            model="gpt-4o-mini-tts",
             voice=voice,
             input=text_response,
             instructions=voice_instructions,
-            response_format=&quot;pcm&quot;,
+            response_format="pcm",
         ) as stream_response:
-            st.write(&quot;Starting audio playback...&quot;)
+            st.write("Starting audio playback...")
             # Play audio directly using LocalAudioPlayer
             await LocalAudioPlayer().play(stream_response)
-            st.write(&quot;Audio playback complete&quot;)
+            st.write("Audio playback complete")
             
-            st.write(&quot;Generating downloadable MP3 version...&quot;)
+            st.write("Generating downloadable MP3 version...")
             # Also save as MP3 for download
             audio_response = await async_openai.audio.speech.create(
-                model=&quot;gpt-4o-mini-tts&quot;,
+                model="gpt-4o-mini-tts",
                 voice=voice,
                 input=text_response,
                 instructions=voice_instructions,
-                response_format=&quot;mp3&quot;
+                response_format="mp3"
             )
             
             temp_dir = tempfile.gettempdir()
-            audio_path = os.path.join(temp_dir, f&quot;response_{uuid.uuid4()}.mp3&quot;)
+            audio_path = os.path.join(temp_dir, f"response_{uuid.uuid4()}.mp3")
             
-            with open(audio_path, &quot;wb&quot;) as f:
+            with open(audio_path, "wb") as f:
                 f.write(audio_response.content)
-            st.write(f&quot;Saved MP3 file to: {audio_path}&quot;)
+            st.write(f"Saved MP3 file to: {audio_path}")
         
-        st.success(&quot;✅ Query processing complete!&quot;)
+        st.success("✅ Query processing complete!")
         return {
-            &quot;status&quot;: &quot;success&quot;,
-            &quot;text_response&quot;: text_response,
-            &quot;voice_instructions&quot;: voice_instructions,
-            &quot;audio_path&quot;: audio_path,
-            &quot;sources&quot;: [r.payload.get(&#x27;file_name&#x27;, &#x27;Unknown Source&#x27;) for r in search_results if r.payload]
+            "status": "success",
+            "text_response": text_response,
+            "voice_instructions": voice_instructions,
+            "audio_path": audio_path,
+            "sources": [r.payload.get('file_name', 'Unknown Source') for r in search_results if r.payload]
         }
     
     except Exception as e:
-        st.error(f&quot;❌ Error during query processing: {str(e)}&quot;)
+        st.error(f"❌ Error during query processing: {str(e)}")
         return {
-            &quot;status&quot;: &quot;error&quot;,
-            &quot;error&quot;: str(e),
-            &quot;query&quot;: query
+            "status": "error",
+            "error": str(e),
+            "query": query
         }
 
-def main() -&gt; None:
-    &quot;&quot;&quot;Main application function.&quot;&quot;&quot;
+def main() -> None:
+    """Main application function."""
     st.set_page_config(
-        page_title=&quot;Voice RAG Agent&quot;,
-        page_icon=&quot;🎙️&quot;,
-        layout=&quot;wide&quot;
+        page_title="Voice RAG Agent",
+        page_icon="🎙️",
+        layout="wide"
     )
     
     init_session_state()
     setup_sidebar()
     
-    st.title(&quot;🎙️ Voice RAG Agent&quot;)
-    st.info(&quot;Get voice-powered answers to your documentation questions by configuring your API keys and uploading PDF documents. Then, simply ask questions to receive both text and voice responses!&quot;)
+    st.title("🎙️ Voice RAG Agent")
+    st.info("Get voice-powered answers to your documentation questions by configuring your API keys and uploading PDF documents. Then, simply ask questions to receive both text and voice responses!")
     
     # File upload section
-    uploaded_file = st.file_uploader(&quot;Upload PDF&quot;, type=[&quot;pdf&quot;])
+    uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
     
     if uploaded_file:
         file_name = uploaded_file.name
         if file_name not in st.session_state.processed_documents:
-            with st.spinner(&#x27;Processing PDF...&#x27;):
+            with st.spinner('Processing PDF...'):
                 try:
                     # Setup Qdrant if not already done
                     if not st.session_state.client:
@@ -339,26 +342,26 @@ def main() -&gt; None:
                             COLLECTION_NAME
                         )
                         st.session_state.processed_documents.append(file_name)
-                        st.success(f&quot;✅ Added PDF: {file_name}&quot;)
+                        st.success(f"✅ Added PDF: {file_name}")
                         st.session_state.setup_complete = True
                 except Exception as e:
-                    st.error(f&quot;Error processing document: {str(e)}&quot;)
+                    st.error(f"Error processing document: {str(e)}")
     
     # Display processed documents
     if st.session_state.processed_documents:
-        st.sidebar.header(&quot;📚 Processed Documents&quot;)
+        st.sidebar.header("📚 Processed Documents")
         for doc in st.session_state.processed_documents:
-            st.sidebar.text(f&quot;📄 {doc}&quot;)
+            st.sidebar.text(f"📄 {doc}")
     
     # Query interface
     query = st.text_input(
-        &quot;What would you like to know about the documentation?&quot;,
-        placeholder=&quot;e.g., How do I authenticate API requests?&quot;,
+        "What would you like to know about the documentation?",
+        placeholder="e.g., How do I authenticate API requests?",
         disabled=not st.session_state.setup_complete
     )
     
     if query and st.session_state.setup_complete:
-        with st.status(&quot;Processing your query...&quot;, expanded=True) as status:
+        with st.status("Processing your query...", expanded=True) as status:
             try:
                 result = asyncio.run(process_query(
                     query,
@@ -369,39 +372,39 @@ def main() -&gt; None:
                     st.session_state.selected_voice
                 ))
                 
-                if result[&quot;status&quot;] == &quot;success&quot;:
-                    status.update(label=&quot;✅ Query processed!&quot;, state=&quot;complete&quot;)
+                if result["status"] == "success":
+                    status.update(label="✅ Query processed!", state="complete")
                     
-                    st.markdown(&quot;### Response:&quot;)
-                    st.write(result[&quot;text_response&quot;])
+                    st.markdown("### Response:")
+                    st.write(result["text_response"])
                     
-                    if &quot;audio_path&quot; in result:
-                        st.markdown(f&quot;### 🔊 Audio Response (Voice: {st.session_state.selected_voice})&quot;)
-                        st.audio(result[&quot;audio_path&quot;], format=&quot;audio/mp3&quot;, start_time=0)
+                    if "audio_path" in result:
+                        st.markdown(f"### 🔊 Audio Response (Voice: {st.session_state.selected_voice})")
+                        st.audio(result["audio_path"], format="audio/mp3", start_time=0)
                         
-                        with open(result[&quot;audio_path&quot;], &quot;rb&quot;) as audio_file:
+                        with open(result["audio_path"], "rb") as audio_file:
                             audio_bytes = audio_file.read()
                             st.download_button(
-                                label=&quot;📥 Download Audio Response&quot;,
+                                label="📥 Download Audio Response",
                                 data=audio_bytes,
-                                file_name=f&quot;voice_response_{st.session_state.selected_voice}.mp3&quot;,
-                                mime=&quot;audio/mp3&quot;
+                                file_name=f"voice_response_{st.session_state.selected_voice}.mp3",
+                                mime="audio/mp3"
                             )
                     
-                    st.markdown(&quot;### Sources:&quot;)
-                    for source in result[&quot;sources&quot;]:
-                        st.markdown(f&quot;- {source}&quot;)
+                    st.markdown("### Sources:")
+                    for source in result["sources"]:
+                        st.markdown(f"- {source}")
                 else:
-                    status.update(label=&quot;❌ Error processing query&quot;, state=&quot;error&quot;)
-                    st.error(f&quot;Error: {result.get(&#x27;error&#x27;, &#x27;Unknown error occurred&#x27;)}&quot;)
+                    status.update(label="❌ Error processing query", state="error")
+                    st.error(f"Error: {result.get('error', 'Unknown error occurred')}")
             
             except Exception as e:
-                status.update(label=&quot;❌ Error processing query&quot;, state=&quot;error&quot;)
-                st.error(f&quot;Error processing query: {str(e)}&quot;)
+                status.update(label="❌ Error processing query", state="error")
+                st.error(f"Error processing query: {str(e)}")
     
     elif not st.session_state.setup_complete:
-        st.info(&quot;👈 Please configure the system and upload documents first!&quot;)
+        st.info("👈 Please configure the system and upload documents first!")
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```

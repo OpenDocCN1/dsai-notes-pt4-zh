@@ -1,3 +1,4 @@
+
 # FigmaMCP实现代码⇄设计稿实时双向同步（实测）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/HkJ1dzyFeovOglxPhMUck2UznJg](https://qqs7y1hozd1.feishu.cn/docx/HkJ1dzyFeovOglxPhMUck2UznJg)
@@ -36,13 +37,13 @@ MCP安装完成后会看到“进行身份验证”提示，点击后会打开�
 claude mcp add --transport http figma https://mcp.figma.com/mcp
 ```
 
-想全局生效加个--scope user:
+想全局生效加个`--scope user`:
 
 ```
 claude mcp add --scope user --transport http figma https://mcp.figma.com/mcp
 ```
 
-启动Claude Code后输入/mcp，选择figma进行身份验证即可。
+启动Claude Code后输入`/mcp`，选择figma进行身份验证即可。
 
 ### Codex CLI
 
@@ -68,11 +69,11 @@ codex mcp add figma --url https://mcp.figma.com/mcp
 
 > 然后启动本地服务，打开浏览器，界面上会出现一个Figma捕获工具栏，有三个按钮:
 
-+   **Entire screen**：推送整个页面
++ `Entire screen`：推送整个页面
 
-+   **Select element**：选中某个元素单独推送
++ `Select element`：选中某个元素单独推送
 
-+   **Open file**：跳转到Figma查看推送的文件
++ `Open file`：跳转到Figma查看推送的文件
 
 ![](img/d8daf800396291a955e4258fcfc284ea.png)
 
@@ -104,7 +105,7 @@ Figma里立刻就有了：
 
 回到Codex，输入“更新UI”加上刚复制的链接：
 
-Codex会调用Figma MCP的get_design_context工具读取修改，然后自动调整代码。
+Codex会调用Figma MCP的`get_design_context`工具读取修改，然后自动调整代码。
 
 **支持选中元素单独推送**。
 
@@ -122,4 +123,4 @@ Codex会调用Figma MCP的get_design_context工具读取修改，然后自动调
 
 ## 关于调用次数限制
 
-需要注意的是，generate_figma_design(UI推送)、add_code_connect_map、whoami这几个工具不受速率限制。也就是说推送UI和确认身份这些核心操作不占用配额。
+需要注意的是，`generate_figma_design`(UI推送)、`add_code_connect_map`、`whoami`这几个工具不受速率限制。也就是说推送UI和确认身份这些核心操作不占用配额。

@@ -1,3 +1,4 @@
+
 # 7.29 OpenAI 计划推出GPT-4o 语音模式，开启无缝 AI 语音聊天
 
 > 来源：[https://agijuejin.feishu.cn/docx/H2vYdUcnsof5stxu2YLcOGganMb](https://agijuejin.feishu.cn/docx/H2vYdUcnsof5stxu2YLcOGganMb)

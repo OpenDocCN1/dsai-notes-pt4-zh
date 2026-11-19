@@ -1,83 +1,97 @@
+
 # 深度学习核心要点-数据增强
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/N6fed63D3oo6Y0xezjtcuT8gnOb](https://qqs7y1hozd1.feishu.cn/docx/N6fed63D3oo6Y0xezjtcuT8gnOb)
+> 来源：https://qqs7y1hozd1.feishu.cn/docx/N6fed63D3oo6Y0xezjtcuT8gnOb
 
-# **数据增强****概述**
+## 数据增强概述
 
-**数据增强（也叫数据扩增）**的目的是为了扩充数据和提升模型的泛化能力。有效的数据扩充不仅能扩充训练样本数量，还能增加训练样本的多样性。
+数据增强（也叫数据扩增）的目的是为了扩充数据和提升模型的泛化能力。有效的数据扩充不仅能扩充训练样本数量，还能增加训练样本的多样性。
 
-+   **一方面可避免过拟合**
++ 一方面可避免过拟合
 
-+   **另一方面又会带来模型性能的提升**
++ 另一方面又会带来模型性能的提升
 
-**数据增强几种常用方法有:**
+数据增强几种常用方法有：
 
 图像水平/竖直翻转、随机抠取、尺度变换和旋转
 
-其中尺度变换（scaling）、旋转（rotating）等方法用来**增加卷积卷积神经网络**对物体尺度和方向上的鲁棒性（Robust）
+其中尺度变换（`scaling`）、旋转（`rotating`）等方法用来增加卷积卷积神经网络对物体尺度和方向上的鲁棒性（Robust）
 
-在此基础上，**对原图或已变换的图像(或图像块****)进行色彩抖动(color **jittering)也是一种常用的数据扩充手段
+在此基础上，对原图或已变换的图像（或图像块）进行色彩抖动（`color jittering`）也是一种常用的数据扩充手段
 
-**即改变图像颜色的四个方面: **
+即改变图像颜色的四个方面：
 
-**亮度、对比度、饱和度和色调**
+亮度、对比度、饱和度和色调
 
-**色彩抖动**是在 RGB 颜色空间对原有 RGB 色彩分布进行轻微的扰动，也可在 HSV 颜色空间尝试随机改变图像原有的饱和度和明度(即改变 S 和 V 通道的值)或对色调进行微调(小范围改变 该通道的值)
+色彩抖动是在 RGB 颜色空间对原有 RGB 色彩分布进行轻微的扰动，也可在 HSV 颜色空间尝试随机改变图像原有的饱和度和明度（即改变 S 和 V 通道的值）或对色调进行微调（小范围改变该通道的值）
 
-> H**SV 表达彩色图像的方式由三个部分组成： H**ue（色调、色相） Saturation（饱和度、色彩纯净度） Value（明度）
+> HSV 表达彩色图像的方式由三个部分组成：`Hue`（色调、色相）`Saturation`（饱和度、色彩纯净度）`Value`（明度）
 
-在机器学习管道（pipeline**）框架中，我们需要在**送入模型之前，进行数据增强，一般有两种处理方式:
+在机器学习管道（`pipeline`）框架中，我们需要在送入模型之前，进行数据增强，一般有两种处理方式：
 
-+   **线下增强**（offline augmentation）: 适用于较小的数据集（smaller dataset）
++ 线下增强（`offline augmentation`）：适用于较小的数据集（`smaller dataset`）
 
-+   **线上增强**（online augmentation）: 适用于较大的数据集（larger datasets）
++ 线上增强（`online augmentation`）：适用于较大的数据集（`larger datasets`）
 
-# **opencv**** 图像增强-几何变换**
+## OpenCV 图像增强-几何变换
 
-OpenCV 提供的几何变换函数如下所示:
+OpenCV 提供的几何变换函数如下所示：
 
-## **拓展缩放:** 拓展缩放，改变图像的尺寸大小
+### 拓展缩放
 
-cv2.resize(): 常用的参数有设定图像尺寸、缩放因子和插值方法。
+拓展缩放，改变图像的尺寸大小
 
-## **平移:** 将对象换一个位置
+`cv2.resize()`：常用的参数有设定图像尺寸、缩放因子和插值方法。
 
-cv2.warpAffine():
+### 平移
 
-> **函数第一个参数是原图像**
+将对象换一个位置
 
-> **第二个参数是移动矩阵**
+`cv2.warpAffine()`：
 
-> 第三个参数是输出图像大小 (width, height)
+> 函数第一个参数是原图像
+> 第二个参数是移动矩阵
+> 第三个参数是输出图像大小（`width`，`height`）
 
-> 举例，如果要沿 ， 方向移动，移动的距离是 ， ，则以下面的方式构建移动矩阵:  \begin{bmatrix} 1 & 0 & t_x\ 0 & 1 & t_y \end{bmatrix}
-
-## **旋转:** 对一个图像旋转角度
-
-先使用 cv2.g**etRotat**ionMatrix**2D 函数构**建旋转矩阵 𝑀，再使用 cv2.warpAffine() 函数将对象移动位置。getRotationMatrix2D 函数第一个参数为旋转中心，第二个为旋转角度，第三个为旋转后的缩放因子
-
-## 放射变换（也叫平面变换/径向变换）: 在仿射变换中，原图中所有的平行线在结果图像中依旧平行
-
-为了找到变换矩阵，我们需要从**输入图像中得到三个点**，以及它们在**输出图像中的对应位置**。然后使用 cv2. **getAffineTransf**orm 先构建一个 2x3 变换矩阵，最后该矩阵将传递给 cv2.warpAffine 函数。
-
-## **透视变换（也叫空间变换）:** 转换之后，直线仍是直线。
-
-> 原理: 透视变换（Perspective Transformation)是指利用透视中心、像点、目标点三点共线的条件，按透视旋转定律使承影面（透视面）绕迹线（透视轴）旋转某一角度，破坏原有的投影光线束，仍能保持承影面上投影几何图形不变的变换。-来源百度百科。
-
-**对于透视变换，****需要先构建一个**** ****变换矩阵**。要找到此变换矩阵，需要在输入图像上找 4 个点，以及它们在输出图像中的对应位置。在这 4 个点中，其中任意 3 个不共线。然后可以通过函数cv2.getPerspectiveTransform 找到变换矩阵，将 cv2.warpPerspective 应用于此 变换矩阵。
-
-**图像几何变换的实例代码如下:**
+举例，如果要沿 `x`、`y` 方向移动，移动的距离是 `t_x`、`t_y`，则以下面的方式构建移动矩阵：
 
 ```
+\begin{bmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \end{bmatrix}
+```
+
+### 旋转
+
+对一个图像旋转角度
+
+先使用 `cv2.getRotationMatrix2D` 函数构建旋转矩阵 `M`，再使用 `cv2.warpAffine()` 函数将对象移动位置。`getRotationMatrix2D` 函数第一个参数为旋转中心，第二个为旋转角度，第三个为旋转后的缩放因子
+
+### 放射变换（也叫平面变换/径向变换）
+
+在仿射变换中，原图中所有的平行线在结果图像中依旧平行
+
+为了找到变换矩阵，我们需要从输入图像中得到三个点，以及它们在输出图像中的对应位置。然后使用 `cv2.getAffineTransform` 先构建一个 2x3 变换矩阵，最后该矩阵将传递给 `cv2.warpAffine` 函数。
+
+### 透视变换（也叫空间变换）
+
+转换之后，直线仍是直线。
+
+> 原理：透视变换（Perspective Transformation）是指利用透视中心、像点、目标点三点共线的条件，按透视旋转定律使承影面（透视面）绕迹线（透视轴）旋转某一角度，破坏原有的投影光线束，仍能保持承影面上投影几何图形不变的变换。-来源百度百科。
+
+对于透视变换，需要先构建一个变换矩阵。要找到此变换矩阵，需要在输入图像上找 4 个点，以及它们在输出图像中的对应位置。在这 4 个点中，其中任意 3 个不共线。然后可以通过函数 `cv2.getPerspectiveTransform` 找到变换矩阵，将 `cv2.warpPerspective` 应用于此变换矩阵。
+
+图像几何变换的实例代码如下：
+
+```python
 import cv2
 import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 
 def show_images(imgs, num_rows, num_cols, titles=None, scale=8.5):
-    &quot;&quot;&quot;Plot a list of images.
+    """Plot a list of images.
 
-    Defined in :numref:`sec_utils`&quot;&quot;&quot;
+    Defined in :numref:`sec_utils`
+    """
     figsize = (num_cols * scale, num_rows * scale)
     _, axes = plt.subplots(num_rows, num_cols, figsize=figsize)
     axes = axes.flatten()
@@ -92,7 +106,7 @@ def show_images(imgs, num_rows, num_cols, titles=None, scale=8.5):
         if titles:
             ax.set_title(titles[i])
     return axes
-  
+
 # Some Geometric Transformation of Images
 class GeometricTransAug(object):
     def __init__(self, image_path):
@@ -147,88 +161,88 @@ class GeometricTransAug(object):
         res4 = self.radial_trans_aug(img_np)
         res5 = self.perspective_trans_aug(img_np)
         imgs = [res1, res2, res3, res4, res5]
-        aug_titles = [&quot;resize_aug&quot;, &quot;warpAffine_aug&quot;, &quot;rotation_aug&quot;, &quot;radial_trans_aug&quot;, &quot;perspective_trans_aug&quot;]
+        aug_titles = ["resize_aug", "warpAffine_aug", "rotation_aug", "radial_trans_aug", "perspective_trans_aug"]
         # show_images 函数前文已经给出，这里不再复制过来
         axes = show_images(imgs, 2, 3, titles=aug_titles, scale=8.5)
             
-if __name__ == &#x27;__main__&#x27;: 
-    img_path = &#x27;Koalainputimage.jpeg&#x27;
+if __name__ == '__main__': 
+    img_path = 'Koalainputimage.jpeg'
     geometry_trans_aug = GeometricTransAug(img_path)
     img_np2 = geometry_trans_aug.img_np
     print(img_np2.shape)
 ```
 
-程序运行后输出的几何变换增强效果如下所示:
+程序运行后输出的几何变换增强效果如下所示：
 
 ![](img/8ff497ccb85e31be87538de23ae05797.png)
 
-# **pytorch**** 图像增强**
+## PyTorch 图像增强
 
-在 **pytorch** 框架中，**transforms** 类提供了 **22**个**数据增强方法**，对应代码在 **transforms.py** 文件中，它们既可以对 **PIL Image** 也能对 **torch.*Tensor**数据类型进行增强。
+在 `pytorch` 框架中，`transforms` 类提供了 22 个数据增强方法，对应代码在 `transforms.py` 文件中，它们既可以对 `PIL Image` 也能对 `torch.*Tensor` 数据类型进行增强。
 
-api 全称Application Pr**ogramming Inte**rface，简单来说就是应用程序编程接口。
+`api` 全称 Application Programming Interface，简单来说就是应用程序编程接口。
 
-**本文****只对 transforms** 的 22 个方法进行简要介绍和总结
+本文只对 `transforms` 的 22 个方法进行简要介绍和总结
 
-总的来说**transforms.py** 中的各个预处理方法可以归纳为**四大类**:
+总的来说 `transforms.py` 中的各个预处理方法可以归纳为四大类：
 
-## **裁剪**-Crop
+### 裁剪-Crop
 
-+   **中心裁剪:** transforms.CenterCrop
++ 中心裁剪：`transforms.CenterCrop`
 
-+   **随机裁剪: **transforms.RandomCrop
++ 随机裁剪：`transforms.RandomCrop`
 
-+   **随机长宽比裁剪:** transforms.RandomResizedCrop
++ 随机长宽比裁剪：`transforms.RandomResizedCrop`
 
-+   **上下左右中心裁剪: **transforms.FiveCrop
++ 上下左右中心裁剪：`transforms.FiveCrop`
 
-+   **上下左右中心裁剪后翻转:** transforms.TenCrop
++ 上下左右中心裁剪后翻转：`transforms.TenCrop`
 
-## **翻转和变换—**Flip and Rotations
+### 翻转和变换—Flip and Rotations
 
-+   **依概率 p 水平翻转:**transforms.RandomHorizontalFlip(p=0.5)
++ 依概率 `p` 水平翻转：`transforms.RandomHorizontalFlip(p=0.5)`
 
-+   **依概率 p 垂直翻转:**transforms.RandomVerticalFlip(p=0.5)
++ 依概率 `p` 垂直翻转：`transforms.RandomVerticalFlip(p=0.5)`
 
-+   **随机旋转:**transforms.RandomRotation
++ 随机旋转：`transforms.RandomRotation`
 
-## **图像变换**
+### 图像变换
 
-+   **resize: **transforms.Resize
++ `resize`：`transforms.Resize`
 
-+   **m**in-max Normalization: 对应 torchvision.transforms.ToTensor() 方法
++ min-max Normalization：对应 `torchvision.transforms.ToTensor()` 方法
 
-+   **ze**ro-mean Normalization: 对应 torchvision.transforms.Normalize() 方法
++ zero-mean Normalization：对应 `torchvision.transforms.Normalize()` 方法
 
-+   **填充:** transforms.Pad
++ 填充：`transforms.Pad`
 
-+   **修改亮度、对比度和饱和度:**transforms.ColorJitter
++ 修改亮度、对比度和饱和度：`transforms.ColorJitter`
 
-+   **转灰度图:** transforms.Grayscale
++ 转灰度图：`transforms.Grayscale`
 
-+   **线性变换: **transforms.LinearTransformation()
++ 线性变换：`transforms.LinearTransformation()`
 
-+   **仿射变换:** transforms.RandomAffine
++ 仿射变换：`transforms.RandomAffine`
 
-+   **依概率 ****p**** 转为灰度图:** transforms.RandomGrayscale
++ 依概率 `p` 转为灰度图：`transforms.RandomGrayscale`
 
-+   **将数据转换为 ****PILImage****: **transforms.ToPILImage
++ 将数据转换为 `PILImage`：`transforms.ToPILImage`
 
-+   transforms.Lambda: Apply a user-defined lambda as a transform.
++ `transforms.Lambda`: Apply a user-defined lambda as a transform.
 
-## 对 transforms 操作，使数据增强更灵活
+### 对 transforms 操作，使数据增强更灵活
 
-+   **tr**ansforms.RandomChoice(transforms): 从给定的一系列 transforms 中选一个进行操作
++ `transforms.RandomChoice(transforms)`: 从给定的一系列 `transforms` 中选一个进行操作
 
-+   **transforms.RandomAppl****y(**transforms, p=0.5): 给一个 transform 加上概率，依概率进行操作
++ `transforms.RandomApply(transforms, p=0.5)`: 给一个 `transform` 加上概率，依概率进行操作
 
-+   **tr**ansforms.RandomOrder: 将 transforms 中的操作随机打乱
++ `transforms.RandomOrder`: 将 `transforms` 中的操作随机打乱
 
-**这里 ****resize** 图像增强方法为例，可视化其调整输入图像大小的效果：
+这里 `resize` 图像增强方法为例，可视化其调整输入图像大小的效果：
 
-```
+```python
 # 为了节省空间，这里不再列出导入相应库的代码和show_images函数
-img_PIL = Image.open(&#x27;astronaut.jpeg&#x27;)
+img_PIL = Image.open('astronaut.jpeg')
 print(img_PIL.size)
 # if you change the seed, make sure that the randomly-applied transforms
 # properly show that the image can be both transformed and *not* transformed!
@@ -238,34 +252,34 @@ resized_imgs = [transforms.Resize(size=size)(orig_img) for size in (30, 50, 100,
 show_images(resized_imgs, 1, 4)
 ```
 
-**程序运行后的输出图如下：**
+程序运行后的输出图如下：
 
 ![](img/f1f83c623c864d2577d6d9855d39389c.png)
 
-# **imgaug**** 图像增强**
+## ImgAug 图像增强
 
-imgaug 是一个用于机器学习实验中图像增强的库。
+`imgaug` 是一个用于机器学习实验中图像增强的库。
 
-它支持广泛的增强技术，允许轻松组合这些技术并以随机顺序或在多个 CPU 内核上执行它们，具有简单而强大的随机接口，不仅可以增强图像，还可以增强关键点/地标、边界框、 热图和分割图。
+它支持广泛的增强技术，允许轻松组合这些技术并以随机顺序或在多个 CPU 内核上执行它们，具有简单而强大的随机接口，不仅可以增强图像，还可以增强关键点/地标、边界框、热图和分割图。
 
 单个输入图像的示例增强如下所示：
 
 ![](img/e0c1980a45ddbeeb11c1d5a03fb0e1a6.png)
 
-imgaug 的图像增强方法如下所示：
+`imgaug` 的图像增强方法如下所示：
 
-+   **Basics**
++ Basics
 
-+   **Keypoints**
++ Keypoints
 
-+   **Bounding Boxes**
++ Bounding Boxes
 
-+   **Heatmaps**
++ Heatmaps
 
-+   Segmentation Maps and Masks
++ Segmentation Maps and Masks
 
-+   Stochastic Parameters: 随机参数
++ Stochastic Parameters：随机参数
 
-+   Blending/Overlaying images: 混合/叠加图像
++ Blending/Overlaying images：混合/叠加图像
 
-+   Augmenters: 增强器概述
++ Augmenters：增强器概述

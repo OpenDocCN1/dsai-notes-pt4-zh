@@ -1,3 +1,4 @@
+
 # 用DeepSeek自动处理Excel表格，拆分、合并一秒完成！
 
 > 来源：[https://geekbang.feishu.cn/docx/KFzhdaRn5oQKXmxe7xycGQhPnWc](https://geekbang.feishu.cn/docx/KFzhdaRn5oQKXmxe7xycGQhPnWc)
@@ -16,11 +17,11 @@
 
 ![](img/78e7af2d90e8de0747c1a4644d69503d.png)
 
-**具体操作步骤：**
+## 具体操作步骤
 
-**1、让DeepSeek生成代码**
+### 1、让DeepSeek生成代码
 
-打开https://www.deepseek.com/，点别针先把表格文件上传（上传表格截图也可以）
+打开`https://www.deepseek.com/`，点别针先把表格文件上传（上传表格截图也可以）
 
 ![](img/eecc4b5e922949551a10d9165aa30e1b.png)
 
@@ -48,9 +49,9 @@ Sub SplitDataByProject()    Dim dict As Object    Dim wsSource As Worksheet    D
 
 ![](img/ce86c7d46a5bde2fb1d3ad7d5a935e4e.png)
 
-**2、按上面说明执行代码**
+### 2、按上面说明执行代码
 
-按Alt+f11打开VBE编程器（WPS需要安装WPS VBA插件）
+按`Alt+f11`打开VBE编程器（WPS需要安装WPS VBA插件）
 
 插入菜单-添加模块后，把代码粘贴的右侧空白处中，点三角运行
 

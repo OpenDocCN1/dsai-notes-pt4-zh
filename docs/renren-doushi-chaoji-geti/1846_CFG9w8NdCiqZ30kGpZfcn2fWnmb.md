@@ -1,3 +1,4 @@
+
 # AI赛博训练营手册
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/DaS4dGu5novJxNxmQvdcwli6nrh](https://xuqiwei1986.feishu.cn/docx/DaS4dGu5novJxNxmQvdcwli6nrh)
@@ -8,22 +9,21 @@
 
 # 学习部分
 
-## 1.**资料**
+## 1.资料
 
 SD基础：[《Stable Diffusion终极宝典》](https://ry5hwpuf7b.feishu.cn/docx/HYrZdLBMRorB0qxKqFFcQ075nWf)
 
-ControlNet基础：[《ControlNet终极攻略》](https://ry5hwpuf7b.feishu.cn/docx/NeqIdWC9PovqQ6xruAJcErqHnxc)
+`ControlNet`基础：[《`ControlNet`终极攻略》](https://ry5hwpuf7b.feishu.cn/docx/NeqIdWC9PovqQ6xruAJcErqHnxc)
 
 AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hwpuf7b.feishu.cn/docx/WZxLdRYwZoX7kpxtH7qcCmMFnne)
 
-## 2.**视频教程**
+## 2.视频教程
 
 ![](img/117b50cf13e2a6d5a603ab71c91a6673.png)
 
 [AI赛博教程第一课.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bo36bSfHboq1fyxRyTVcEKaKnSe)
 
 第一课内容：完整跑一遍流程 + 宽高比插件安装 + 图片高清讲解（图片高清很重要，没看的这部分要看一下）
-
 
 [AI赛博教程第二课.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I4I7bL5sXoeLqaxJ4rwcO8t2nsh)
 
@@ -35,11 +35,11 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 第三课内容：如何做出200分内容！（这节课把现有的出图风格迭代了，一定要看！）
 
-**后续待更新**
+后续待更新
 
-## 3.**网盘链接**
+## 3.网盘链接
 
-百度云大模型、ControlNet模型：https://pan.baidu.com/s/1baNTCe9wGEN0sHYPvRabmA?pwd=wdz6
+百度云大模型、`ControlNet`模型：`https://pan.baidu.com/s/1baNTCe9wGEN0sHYPvRabmA?pwd=wdz6`
 
 提取码：wdz6
 
@@ -51,7 +51,7 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 一句话回答完：只要账号没有违规过，不管什么账号都可以发，绝大概率情况下不会出问题，万一出问题了你换个新号发不就解决了嘛
 
-**因为你不是做**1-2天，是做半个月以上，意味着至少10-20期视频。在内容质量是好的情况下，一个账号不可能一点效果都看不到。如果看不到，内容又没问题，就是账号问题了。这时候再换个新号，原账号视频删掉，换新账号再发即可
+因为你不是做1-2天，是做半个月以上，意味着至少10-20期视频。在内容质量是好的情况下，一个账号不可能一点效果都看不到。如果看不到，内容又没问题，就是账号问题了。这时候再换个新号，原账号视频删掉，换新账号再发即可
 
 绝大多数数据不行都不是账号问题，而是内容问题（得从观众视角去判断，这个内容是不是他们真的会看的）
 
@@ -95,25 +95,25 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 # 二、出图问题
 
-## 1.是关键词、大模型、ControlNet完全照抄就可以了吗？
+## 1.是关键词、大模型、`ControlNet`完全照抄就可以了吗？
 
 不是，现有提供的只是为了给大家快速的入门，至少你能实现出AI赛博的风格出来了
 
 因为每一张原图的不一样的，如果想做出真正好看，适配的AI赛博图，需要自己去多多测试
 
-不同的关键词、大模型、ControlNet都会出来不一样的效果，自己多去试一下，才能更深刻感受到每一种的区别在哪里，之后才能更好的迭代
+不同的关键词、大模型、`ControlNet`都会出来不一样的效果，自己多去试一下，才能更深刻感受到每一种的区别在哪里，之后才能更好的迭代
 
 ## 2.用文生图还是图生图？
 
 都可以，最好的答案是都试试
 
-## 3.出来的图片和上传的没有半毛钱关系，以及用不了ControlNet
+## 3.出来的图片和上传的没有半毛钱关系，以及用不了`ControlNet`
 
 ![](img/4bcb4af68ccacdd61a0cf942939a17d0.png)
 
-虽然有ControlNet，但是没有装ControlNet的模型，需要把模型和预处理器都装上
+虽然有`ControlNet`，但是没有装`ControlNet`的模型，需要把模型和预处理器都装上
 
-## 4.Lora使用方法
+## 4.`Lora`使用方法
 
 ![](img/7f37175dfafbddb5d63b76ac699cb86a.png)
 
@@ -123,13 +123,13 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 ![](img/f1dff426035e5228e2eae66fee489c26.png)
 
-③点击刷新，就可以用Lora了
+③点击刷新，就可以用`Lora`了
 
 ![](img/f990f76ae1fa7c7add27b5d4ecbe2587.png)
 
-提示词里：<lora:GlowingRunesAIv4:1>
+提示词里：`<lora:GlowingRunesAIv4:1>`
 
-注意最后这个1的参数可以调节，过强了就调成0.5，弱了就1.3，<lora:GlowingRunesAIv4:1.3>
+注意最后这个1的参数可以调节，过强了就调成0.5，弱了就1.3，`<lora:GlowingRunesAIv4:1.3>`
 
 ## 5.出的头盔图露脸怎么办？
 
@@ -163,19 +163,19 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 ①一秒出镜全框版
 
-> 剪映，轻而易剪新的故事 夏天和你｜#玩法 #界面 https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7249025953911950604&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY 复制此链接，打开【剪映】，热门视频抢先剪
+> 剪映，轻而易剪新的故事 夏天和你｜#玩法 #界面 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7249025953911950604&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY` 复制此链接，打开【剪映】，热门视频抢先剪
 
 ②一秒出镜小框版
 
-> 剪映，轻而易剪导入两张同场景照片，第一张可以是一个人，第二张两个人｜#一秒出镜挑战 #卡点 https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7053036033767640331&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY 复制此链接，打开【剪映】，热门视频抢先剪
+> 剪映，轻而易剪导入两张同场景照片，第一张可以是一个人，第二张两个人｜#一秒出镜挑战 #卡点 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7053036033767640331&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY` 复制此链接，打开【剪映】，热门视频抢先剪
 
 ③压迫感拉镜横屏版
 
-> 剪映，轻而易剪女子桀骜起来 亦可扫六合 主天下 | 犯我中华者虽远必诛#压迫感 #关键帧 #卡点 #滤镜 https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235896419435957564&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY 复制此链接，打开【剪映】，热门视频抢先剪
+> 剪映，轻而易剪女子桀骜起来 亦可扫六合 主天下 | 犯我中华者虽远必诛#压迫感 #关键帧 #卡点 #滤镜 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235896419435957564&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY` 复制此链接，打开【剪映】，热门视频抢先剪
 
 ④压迫感拉镜竖屏版
 
-> 剪映，轻而易剪可惜梅花各心事 南枝向暖北枝寒 | 关键帧拉镜#王者 #滤镜 #王者荣耀 #关键帧 #压迫感 https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235264616488553785&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY 复制此链接，打开【剪映】，热门视频抢先剪
+> 剪映，轻而易剪可惜梅花各心事 南枝向暖北枝寒 | 关键帧拉镜#王者 #滤镜 #王者荣耀 #关键帧 #压迫感 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235264616488553785&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY` 复制此链接，打开【剪映】，热门视频抢先剪
 
 ## 6.抖音📕如何无水印下载视频或者图文
 
@@ -189,7 +189,7 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 注意！
 
-### **1）群聊引流**
+### 1）群聊引流
 
 抖音或者📕都可以建群聊，通过群公告、群消息、小卡片来引流
 
@@ -199,7 +199,7 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 ![](img/0b4e441d03cc67ce423a75f5923ce367.png)
 
-### **2）简介小号引流**
+### 2）简介小号引流
 
 主页艾特小号账号，小号置顶图文联系方式
 
@@ -207,7 +207,7 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 ![](img/046557c9fee48cc749b8697e5458281f.png)
 
-### **3）直播引流**
+### 3）直播引流
 
 通过直播现场做图片，有观众的话可以让他们加粉丝群发图，你现场做
 
@@ -265,13 +265,13 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 所以我就想我们的AI赛博机车项目如何做到超预期，对客户来说超预期了，他可能还会复购，还会把你推荐给他的朋友，1个公域流量转进来，就可能会带来2-3个私域潜在客户，让大家慢慢感受商业的魅力
 
-这里可以用到的工具是Midjoueny，因为MJ的特点就是简单高效，只需要输入提示词就能输出很精美的图片，不需要像SD搞这个大模型，那个ControlNet之类的
+这里可以用到的工具是Midjoueny，因为MJ的特点就是简单高效，只需要输入提示词就能输出很精美的图片，不需要像SD搞这个大模型，那个`ControlNet`之类的
 
 试想这样一个场景：
 
-**你**给客户定制完SD图片，她本身很满意的收货了，这时你再给她一张专属的MJ二次元画风机车头像，又可爱又酷，她肯定就超开心了。
+你给客户定制完SD图片，她本身很满意的收货了，这时你再给她一张专属的MJ二次元画风机车头像，又可爱又酷，她肯定就超开心了。
 
-**即便你之前定制的SD图她如果没有特别满意，你这一通操作下来**，她也会觉得你很真诚，也会把口碑打出来！
+即便你之前定制的SD图她如果没有特别满意，你这一通操作下来，她也会觉得你很真诚，也会把口碑打出来！
 
 具体怎么使用MJ这里我就不多说了，大家看我之前的文章或者网上搜一搜都有
 
@@ -279,23 +279,17 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 ### 关键词拆解：
 
-**A** little boy wears a helmet on his head and rides a motorcycle,Cute,handsome,full body, anime style, chibi,motion blur, cyberpunk,the best quality --niji 5 --s 200
+`A little boy wears a helmet on his head and rides a motorcycle,Cute,handsome,full body, anime style, chibi,motion blur, cyberpunk,the best quality --niji 5 --s 200`
 
-> 一个小男孩头上戴着头盔，骑着摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的质量--niji 5 --s 200
+> 一个小男孩头上戴着头盔，骑着摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的质量`--niji 5 --s 200`
 
 加粗字体可以随意更换
 
-
-
-
 ### 横向思考：
 
-**A** girl in a black jacket and a helmet rides a pink motorcycle,cute,handsome,full body, anime style, chibi,motion blur, cyberpunk,the best quality --niji 5 --s 200
+`A girl in a black jacket and a helmet rides a pink motorcycle,cute,handsome,full body, anime style, chibi,motion blur, cyberpunk,the best quality --niji 5 --s 200`
 
-> 穿着黑色夹克和头盔的女孩骑着粉色摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的品质--niji 5 --s 200
-
-
-
+> 穿着黑色夹克和头盔的女孩骑着粉色摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的品质`--niji 5 --s 200`
 
 ![](img/716289705fd7862f7611ccd8eaca4dfc.png)
 
@@ -303,15 +297,15 @@ AI赛博机车图文字教程：[《AI赛博机车图异常值》](https://ry5hw
 
 ## 1.A卡、Mac系统、配置低如何用云部署安装SD？
 
-https://articles.zsxq.com/id_k49zpbq9db5v.html小潘老师的最新文章——用AutoDL镜像配置AI赛博朋克出图环境
+`https://articles.zsxq.com/id_k49zpbq9db5v.html`小潘老师的最新文章——用AutoDL镜像配置AI赛博朋克出图环境
 
 > 云平台的用户全部可以看小潘老师这篇文章
 
 破局俱乐部【小潘】的零基础搭建Stable Diffusion云平台教程
 
-https://articles.zsxq.com/id_hctce3ujh0rv.html
+`https://articles.zsxq.com/id_hctce3ujh0rv.html`
 
-https://articles.zsxq.com/id_5lugofq6vaua.html
+`https://articles.zsxq.com/id_5lugofq6vaua.html`
 
 ## 2.Stable Diffusion怎么安装
 
@@ -339,31 +333,31 @@ https://articles.zsxq.com/id_5lugofq6vaua.html
 
 云平台用户也可自行安装
 
-https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git
+`https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git`
 
-## 5.ControlNet怎么安装？
+## 5.`ControlNet`怎么安装？
 
-> [《ControlNet终极攻略》](https://ry5hwpuf7b.feishu.cn/docx/NeqIdWC9PovqQ6xruAJcErqHnxc)**o**ntrolNet的教程可以看这篇文章：
+> [`ControlNet`终极攻略](https://ry5hwpuf7b.feishu.cn/docx/NeqIdWC9PovqQ6xruAJcErqHnxc)`ControlNet`的教程可以看这篇文章：
 
-**①下载预处理器**
+### ①下载预处理器
 
 下载网盘里的《1.预处理器》文件夹
 
 里面有一个“downloads”文件夹
 
-把**整个文件夹**复制到SD的文件夹里面
+把整个文件夹复制到SD的文件夹里面
 
-**具**体位置：SD文件 > extensions > sd-webui-controlnet > annotator
+具体位置：SD文件 > `extensions` > `sd-webui-controlnet` > `annotator`
 
 ![](img/f70fd6478e25ce5428eb429c4f601b01.png)
 
-**②下载模型**
+### ②下载模型
 
 下载网盘里的《2.模型》文件夹
 
 里面有14个模型，把这些模型复制到SD文件夹里
 
-具体位置：SD文件 > models > ControlNet
+具体位置：SD文件 > `models` > `ControlNet`
 
 ![](img/975141ad26484893be642815b7aa5307.png)
 

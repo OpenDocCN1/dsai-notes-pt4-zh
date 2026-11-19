@@ -1,3 +1,4 @@
+
 # 利用Trae编辑器高效快速实现高可用扫描工具
 
 > 来源：[https://agijuejin.feishu.cn/docx/HqELdqjPJov0RCxSL30cENhCndg](https://agijuejin.feishu.cn/docx/HqELdqjPJov0RCxSL30cENhCndg)
@@ -12,35 +13,35 @@
 
 > 如有侵权，请联系删除。
 
-[本文所使用的 Trae ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)免费下载链接： www.trae.ai/
+[本文所使用的 Trae ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)免费下载链接： `www.trae.ai/`
 
 ## 前言
 
-这段时间，运维同事离职，接触运维工作一段时间了，为了了解项目的k8s服务是否具备高可用能力，我们需要进行高可用测试，整个过程需要使用到 Go 编程，由于笔者之前一直接触的是 Python 语言， Go 语言正在学习中，为了更快实现高可用测试脚本，所以我们借用 Trae 编译器进行开发。
+这段时间，运维同事离职，接触运维工作一段时间了，为了了解项目的`k8s`服务是否具备高可用能力，我们需要进行高可用测试，整个过程需要使用到 `Go` 编程，由于笔者之前一直接触的是 `Python` 语言，`Go` 语言正在学习中，为了更快实现高可用测试脚本，所以我们借用 Trae 编译器进行开发。
 
 ## Trae 是啥呢？
 
-Trae 是有用的编码伙伴。它提供了AI问答、代码自动完成和基于代[理的AI编程功能等功能。](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)在使用 Trae 开发项目时，可以与AI协作，提高开发效率。详细介绍可以参考官网： www.trae.ai/
+Trae 是有用的编码伙伴。它提供了AI问答、代码自动完成和基于代理的AI编程功能等功能。在使用 Trae 开发项目时，可以与AI协作，提高开发效率。详细介绍可以参考官网：`www.trae.ai/`
 
 ## 准备条件
 
-开发之前，需要先下载 Trae ，访问官网，下载安装包安装即可，还是比较简单的。需要注意的是，在笔者写文章的时候，还没有 windows 版本，只能使用 Mac 版本， windows 用户可能需要等待一段时间，大概在节后会推出吧。
+开发之前，需要先下载 Trae ，访问官网，下载安装包安装即可，还是比较简单的。需要注意的是，在笔者写文章的时候，还没有 `windows` 版本，只能使用 `Mac` 版本，`windows` 用户可能需要等待一段时间，大概在节后会推出吧。
 
 ## 项目背景
 
-开发脚本快速扫描 K8s 中的所有服务，找出哪些服务是不符合高可用设计的。
+开发脚本快速扫描 `K8s` 中的所有服务，找出哪些服务是不符合高可用设计的。
 
 ### 实现原理
 
-在正式开发Kubernetes扫描工具时，需要遵循以下规则：
+在正式开发`Kubernetes`扫描工具时，需要遵循以下规则：
 
-+   **Pod生命周期对象 **：DaemonSet、Deployment和StatefulSet需要关注副本数量和Pod反亲和性，尤其是Deployment和StatefulSet。DaemonSet保证每个节点上有且只有一个Pod。
++   `Pod`生命周期对象：`DaemonSet`、`Deployment`和`StatefulSet`需要关注副本数量和`Pod`反亲和性，尤其是`Deployment`和`StatefulSet`。`DaemonSet`保证每个节点上有且只有一个`Pod`。
 
-+   **探针设置 **：readiness探针必须设置，未设置时为错误（error）；liveness探针未设置时可视为警告（warning），因为旧版本K8s可能因缺少探针导致重启问题。启动探针可选，视项目需求决定是否扫描。
++   探针设置：`readiness`探针必须设置，未设置时为错误（`error`）；`liveness`探针未设置时可视为警告（`warning`），因为旧版本`K8s`可能因缺少探针导致重启问题。启动探针可选，视项目需求决定是否扫描。
 
-+   **探针恢复时间 **：需要计算Pod异常状态的恢复时间，因为探针有检测延迟，高可用性测试中恢复时间是关键指标。
++   探针恢复时间：需要计算`Pod`异常状态的恢复时间，因为探针有检测延迟，高可用性测试中恢复时间是关键指标。
 
-+   **Job和CronJob **：一般不在扫描范围内，因为它们属于离线业务。但需要扫描Pod是否配置了节点亲和性或选择器，防止Pod被随机调度到不适合的节点，保证集群稳定性。
++   `Job`和`CronJob`：一般不在扫描范围内，因为它们属于离线业务。但需要扫描`Pod`是否配置了节点亲和性或选择器，防止`Pod`被随机调度到不适合的节点，保证集群稳定性。
 
 ### 新建项目
 
@@ -48,7 +49,7 @@ Trae 是有用的编码伙伴。它提供了AI问答、代码自动完成和基�
 
 ![](img/505e047699df6b9f53d9df820bb0272d.png)
 
-这里提供了三种方式，笔者这里选择打开文件夹，我预先新建了一个文件夹 KubeWatch ，这里直接打开即可。
+这里提供了三种方式，笔者这里选择打开文件夹，我预先新建了一个文件夹 `KubeWatch` ，这里直接打开即可。
 
 打开时，还有一个提示，如下图
 
@@ -68,11 +69,11 @@ Trae 是有用的编码伙伴。它提供了AI问答、代码自动完成和基�
 
 #### 客户端的初始化
 
-首先需要使用 go 实现k8s客户端的初始化，这里直接借助 ai 生成。如下图所示
+首先需要使用 `go` 实现`k8s`客户端的初始化，这里直接借助 ai 生成。如下图所示
 
 ![](img/bbdf3962b27c009815cc742903955507.png)
 
-点击应用，就直接帮我生成 client.go 文件，如下图所示
+点击应用，就直接帮我生成 `client.go` 文件，如下图所示
 
 ![](img/19af8ce4f38f59568e9b7c5a5df36050.png)
 
@@ -80,7 +81,7 @@ Trae 是有用的编码伙伴。它提供了AI问答、代码自动完成和基�
 
 #### mod 管理依赖
 
-我想要使用mod来管理依赖项，直接将问题抛给 ai ，如下图所示
+我想要使用`mod`来管理依赖项，直接将问题抛给 ai ，如下图所示
 
 ![](img/9d34c00ee6b88d7be8fdc3422752aed4.png)
 
@@ -88,7 +89,7 @@ Trae 是有用的编码伙伴。它提供了AI问答、代码自动完成和基�
 
 ![](img/74e1be78fb4b6d93d0e4679a855a9544.png)
 
-看到没有，运行之后，直接就生成了 go.mod 文件，这效率贼快。
+看到没有，运行之后，直接就生成了 `go.mod` 文件，这效率贼快。
 
 #### 遍历 pod 进行扫描
 
@@ -207,37 +208,38 @@ func (ha *HAScanner) Scan(pod *v1.Pod) (*HAAnalyzeResult, error) {
 
 当然，也对这段代码给出了合理的解释，下面是 ai 给的解释：
 
-1.  工作负载分析 ：
+1. 工作负载分析 ：
 
-+   检查 Pod 的所属控制器（Deployment、ReplicaSet、StatefulSet、DaemonSet）
++   检查 `Pod` 的所属控制器（`Deployment`、`ReplicaSet`、`StatefulSet`、`DaemonSet`）
 
 +   获取工作负载的基本信息（名称、命名空间、副本数等）
 
-+   检查是否配置了 Pod 反亲和性（用于保证 Pod 分散部署）
++   检查是否配置了 `Pod` 反亲和性（用于保证 `Pod` 分散部署）
 
-1.  健康检查分析 ：
+2. 健康检查分析 ：
 
-+   检查容器是否配置了就绪探针（Readiness Probe）
++   检查容器是否配置了就绪探针（`Readiness Probe`）
 
-+   检查容器是否配置了存活探针（Liveness Probe）
++   检查容器是否配置了存活探针（`Liveness Probe`）
 
 +   计算探针的检查总时间（失败阈值 × 超时时间 + 失败阈值 × 周期时间）
 
-1.  调度策略分析 ：
+3. 调度策略分析 ：
 
-+   检查是否配置了节点选择器（NodeSelector）
++   检查是否配置了节点选择器（`NodeSelector`）
 
 +   记录扫描时间戳
 
-这个函数主要用于评估 Pod 的高可用性配置，包括：
+这个函数主要用于评估 `Pod` 的高可用性配置，包括：
 
 +   副本数量（确保服务可用性）
 
-+   反亲和性（确保 Pod 分散部署）
++   反亲和性（确保 `Pod` 分散部署）
 
 +   健康检查（确保服务健康状态）
 
-+   调度策略（确保合理的 Pod 分布）
++   调度策略（确保合理的 `Pod` 分布）
+
 这些信息可以用来评估工作负载的高可用性水平，帮助运维人员识别潜在的可用性风险。
 
 解释的与我们项目预期实现效果是一样的， perfect
@@ -246,4 +248,4 @@ func (ha *HAScanner) Scan(pod *v1.Pod) (*HAAnalyzeResult, error) {
 
 在这篇文章中，我们深入探讨了如何利用Trae编辑器高效、快速地实现一个高可用的扫描工具。在实现过程中，我们见证了Trae在简化复杂任务、提高开发效率方面的出色表现。无论是对于新手还是有经验的开发者，Trae都是一个值得依赖的工具，能够帮助我们更快速地构建出更具稳定性和高效性的解决方案。通过这次实现，我对Trae的功能有了更深刻的理解，并且相信它会在未来的开发中持续发挥重要作用。
 
-[本文所使用的 Trae ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)免费下载链接： www.trae.ai/
+[本文所使用的 Trae ](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)免费下载链接： `www.trae.ai/`

@@ -1,24 +1,25 @@
+
 # 9.3k星Skill Seekers：一键把文档变成Claude技能，文档党狂喜
 
 > 来源：[https://my.feishu.cn/docx/R6l5dUsJ3ogmtTxwVdscjSdtnXf](https://my.feishu.cn/docx/R6l5dUsJ3ogmtTxwVdscjSdtnXf)
 
-**在GitHub刷到一个Py**thon项目，叫 Skill Seekers。
+在GitHub刷到一个Python项目，叫 Skill Seekers。
 
 9300多颗星，MIT开源。
 
-**核心功能：把文档网站、GitHub仓库**、PDF一键转成Claude AI技能。
+核心功能：把文档网站、GitHub仓库、PDF一键转成Claude AI技能。
 
 老金我第一反应：这不就是文档党的救星吗？
 
 先说个背景。
 
-Claude Code有个 **技能系统**，简单说就是你可以给Claude装"外挂"。
+Claude Code有个技能系统，简单说就是你可以给Claude装"外挂"。
 
 装了技能的Claude，就像一个背了参考书的助手——你说"帮我写个Next.js页面"，它不用瞎猜，直接按官方文档的最佳实践来。
 
 但问题是：这个"外挂"得你自己做。
 
-官方文档几十页，要自己提炼、格式化、写成一个叫SKILL.md的配置文件。
+官方文档几十页，要自己提炼、格式化、写成一个叫`SKILL.md`的配置文件。
 
 手动整理一个技能，老金我至少要2-3小时。
 
@@ -36,29 +37,29 @@ Claude就像一个聪明但啥都不记的实习生。
 
 装上之后，它就知道：哦，Tailwind v4要用@theme不用@apply了。
 
-技术上说，技能就是一个文本文件（SKILL.md），放在你项目的 .claude/skills/ 文件夹里。
+技术上说，技能就是一个文本文件（`SKILL.md`），放在你项目的`.claude/skills/`文件夹里。
 
 Claude每次干活前会自动读取这些文件，相当于"考前复习"。
 
-Skill Seekers干的事情就是：帮你自动生成这个SKILL.md文件。
+Skill Seekers干的事情就是：帮你自动生成这个`SKILL.md`文件。
 
 ## 三种输入源全覆盖
 
 Skill Seekers支持三种输入：
 
-**第一种：文档网站**
+### 第一种：文档网站
 
 比如你想让Claude学会用某个框架。
 
-直接丢官方文档URL或者md文件进去，它自动爬取、提炼、生成技能文件。
+直接丢官方文档URL或者`md`文件进去，它自动爬取、提炼、生成技能文件。
 
-**第二种：GitHub仓库**
+### 第二种：GitHub仓库
 
-开源项目的README、docs文件夹、代码注释。
+开源项目的`README`、`docs`文件夹、代码注释。
 
 全部自动解析，变成结构化的Claude技能。
 
-**第三种：PDF文件**
+### 第三种：PDF文件
 
 技术白皮书、API文档、产品手册。
 
@@ -72,13 +73,13 @@ Skill Seekers支持三种输入：
 
 ## 自动冲突检测是亮点
 
-**用过Cl**aude Code技能系统的都知道一个坑：技能冲突。
+用过Claude Code技能系统的都知道一个坑：技能冲突。
 
 比如你装了两个技能，都会在你说"写代码"的时候被触发。
 
 Claude就懵了，不知道该听哪个。
 
-**Skil**l Seekers内置了 冲突检测。
+Skill Seekers内置了冲突检测。
 
 生成技能前，它会扫描你现有的技能库。
 
@@ -100,9 +101,9 @@ Claude就懵了，不知道该听哪个。
 帮我安装 https://github.com/yusufkaraaslan/Skill_Seekers ， 我是 win11 系统 &lt;- 自行修改OS
 ```
 
-Claude Code会自动执行 pip install skill-seekers，装好后告诉你结果。
+Claude Code会自动执行`pip install skill-seekers`，装好后告诉你结果。
 
-中间遇到PATH问题、依赖冲突，它都帮你处理。
+中间遇到`PATH`问题、依赖冲突，它都帮你处理。
 
 你只管等结果就行。
 
@@ -114,11 +115,11 @@ Claude Code会自动执行 pip install skill-seekers，装好后告诉你结果�
 pip install skill-seekers
 ```
 
-看到 Successfully installed skill-seekers-x.x.x 就是装好了。
+看到`Successfully installed skill-seekers-x.x.x`就是装好了。
 
-如果提示pip不是命令，试试 python -m pip install skill-seekers。
+如果提示`pip`不是命令，试试`python -m pip install skill-seekers`。
 
-如果装完后 skill-seekers 命令找不到，大概率是Python Scripts目录没在系统PATH里，用 python -m skill_seekers 代替就行。
+如果装完后`skill-seekers`命令找不到，大概率是`Python Scripts`目录没在系统`PATH`里，用`python -m skill_seekers`代替就行。
 
 ## 装好了，怎么用它生成技能
 
@@ -140,7 +141,7 @@ Skill Seekers装好之后，就可以用它把文档转成Claude技能了。
 用skill-seekers把这个项目的文档转成技能：https://github.com/shadcn-ui/ui
 ```
 
-Claude Code会调用Skill Seekers，生成SKILL.md，放到 .claude/skills/ 目录里。
+Claude Code会调用Skill Seekers，生成`SKILL.md`，放到`.claude/skills/`目录里。
 
 全程一句话搞定。
 
@@ -157,7 +158,7 @@ skill-seekers --repo shadcn-ui/ui
 skill-seekers --pdf ./api-handbook.pdf
 ```
 
-生成的技能文件，手动复制到项目的 .claude/skills/ 目录下。
+生成的技能文件，手动复制到项目的`.claude/skills/`目录下。
 
 找不到这个目录？在项目根目录下创建一个：
 
@@ -165,13 +166,13 @@ skill-seekers --pdf ./api-handbook.pdf
 mkdir -p .claude/skills/tailwind-v4
 ```
 
-把生成的SKILL.md丢进去就行。
+把生成的`SKILL.md`丢进去就行。
 
 ## 装好之后怎么用：自然语言触发
 
 技能装好了，怎么让Claude用起来？
 
-答案是：**正常说话就行，技能会自动触发**。
+答案是：正常说话就行，技能会自动触发。
 
 Claude Code会根据你说的内容，自动匹配对应的技能。比如你装了Tailwind v4的技能：
 
@@ -189,7 +190,7 @@ Claude看到"Tailwind"，自动加载你的Tailwind技能，按v4的写法来。
 
 Claude自动按Next.js最新的App Router规范来写，不会给你整出Pages Router的老写法。
 
-关键点：技能的触发是自动的，靠的是SKILL.md里定义的触发词。
+关键点：技能的触发是自动的，靠的是`SKILL.md`里定义的触发词。
 
 Skill Seekers生成的技能文件已经帮你配好了触发词，你直接用自然语言描述需求就行。
 
@@ -203,7 +204,7 @@ Skill Seekers生成的技能文件已经帮你配好了触发词，你直接用�
 
 ## 实际使用场景
 
-**场景1：学新框架**
+### 场景1：学新框架
 
 想让Claude帮你写Next.js代码。
 
@@ -213,7 +214,7 @@ Skill Seekers生成的技能文件已经帮你配好了触发词，你直接用�
 
 之后你说"写个Next.js页面"，Claude直接按最新文档来。
 
-**场景2：公司内部工具**
+### 场景2：公司内部工具
 
 公司有个内部SDK，文档是PDF。
 
@@ -221,7 +222,7 @@ Skill Seekers生成的技能文件已经帮你配好了触发词，你直接用�
 
 比翻文档快10倍。
 
-**场景3：参与开源项目**
+### 场景3：参与开源项目
 
 想给某个开源项目提代码，但不熟悉项目规范。
 
@@ -239,7 +240,7 @@ Claude就能按照项目的代码风格帮你写了。
 
 ## 几个注意点
 
-**1、文档质量决定技能质量**
+### 1、文档质量决定技能质量
 
 垃圾进垃圾出。
 
@@ -247,19 +248,19 @@ Claude就能按照项目的代码风格帮你写了。
 
 选文档质量高的源头。
 
-**2、大型文档要分批处理**
+### 2、大型文档要分批处理
 
 几百页的PDF，建议拆成章节分别处理。
 
 不然生成的技能文件太大，Claude加载慢，反而影响效率。
 
-**3、定期更新技能**
+### 3、定期更新技能
 
 框架升级了，技能也要重新生成。
 
 不然Claude用的是过时信息，写出来的代码跑不起来。
 
-**4、生成后一定要检查**
+### 4、生成后一定要检查
 
 自动生成的东西不可能100%准确。
 
@@ -269,7 +270,7 @@ Claude就能按照项目的代码风格帮你写了。
 
 ## 老金我的看法
 
-**Skill Seek**ers解决了一个真实痛点：文档到技能的转换成本。
+Skill Seekers解决了一个真实痛点：文档到技能的转换成本。
 
 之前老金我写一个技能，光整理文档就要2-3小时。
 
@@ -285,8 +286,8 @@ MIT开源，代码质量也不错。
 
 最后提醒：切记！需要审核！大概率需要微调！
 
-GitHub：https://github.com/yusufkaraaslan/Skill_Seekers
+GitHub：`https://github.com/yusufkaraaslan/Skill_Seekers`
 
 有问题评论区聊。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

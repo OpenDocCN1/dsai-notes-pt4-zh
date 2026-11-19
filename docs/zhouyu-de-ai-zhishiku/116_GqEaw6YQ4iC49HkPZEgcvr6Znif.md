@@ -1,14 +1,15 @@
-# 最终的指导如何排名第1月的产品打猎Ultimate guide on how to rank #1 on Product Hunt
+
+# 最终指南：如何在 Product Hunt 上排名第 1 (Ultimate guide on how to rank #1 on Product Hunt)
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/VwAqdrrFcop1JOxUo40c1DcHnOb](https://xatc0v8uz5m.feishu.cn/docx/VwAqdrrFcop1JOxUo40c1DcHnOb)
 
-> 🔗 原文链接： h[ttps://tibo-maker.](https://tibo-maker.notion.site/Ultimate-guide-on-how-to-rank-1-on-Product-Hunt-589c000cd56f4baf9c64988a52eb4b4e)notion.site/Ulti...
+> 🔗 原文链接：[https://tibo-maker.notion.site/Ultimate-guide-on-how-to-rank-1-on-Product-Hunt-589c000cd56f4baf9c64988a52eb4b4e](https://tibo-maker.notion.site/Ultimate-guide-on-how-to-rank-1-on-Product-Hunt-589c000cd56f4baf9c64988a52eb4b4e)
 
 > ⏰ 剪存时间：2026-01-05 17:28:37 (UTC+8)
 
-> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+> ✂️ 本文档由 [飞书剪存](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
 
-By [Tibo ](https://tibo-maker.notion.site/53fdef364d29428aafe3df43324ff388?pvs=25)- Maker of the year 2022 , Maker of multiple #1 products & several top 10 spots!
+By [Tibo](https://tibo-maker.notion.site/53fdef364d29428aafe3df43324ff388?pvs=25) - Maker of the year 2022, Maker of multiple #1 products & several top 10 spots!
 
 Product Hunt is a gold mine for getting new customers. If you rank high, you can even generate about 10,000 unique visits and 1000-3000 genuine leads for your business.
 
@@ -20,29 +21,29 @@ Know NOTHING about Product Hunt? You may want to read this section first.
 
 But if you already know what PH is, you can skip it.
 
-Understanding Product Hunt
+## Understanding Product Hunt
 
-Who exactly uses product hunt and how can you capitalize it?
+### Who exactly uses product hunt and how can you capitalize it?
 
-Product Hunt's user base primarily consists of tech enthusiasts, early adopters, investors, journalists, and fellow entrepreneurs . This can help you get reach, test your product easily and get feedback quickly.
+Product Hunt's user base primarily consists of tech enthusiasts, early adopters, investors, journalists, and fellow entrepreneurs. This can help you get reach, test your product easily and get feedback quickly.
 
-Product Hunt can provide you with these incredible benefits:
+### Product Hunt can provide you with these incredible benefits:
 
 By ranking high on Product Hunt, your product will be exposed to a large audience of tech enthusiasts, early adopters, and potential customers. This exposure can lead to an increase in signups, downloads, and sales.
 
 Product Hunt ranking can indirectly boost SEO by increasing visibility and traffic, generating high-quality backlinks, enhancing social signals, encouraging user-generated content, and building brand authority and trust. These factors can lead to improved search engine performance for your website.
 
-A successful Product Hunt launch can catch the attention of angel investors, venture capitalists, and other funding sources . A high rank serves as social proof that your product is innovative and has market potential.
+A successful Product Hunt launch can catch the attention of angel investors, venture capitalists, and other funding sources. A high rank serves as social proof that your product is innovative and has market potential.
 
 The buzz also demonstrates that your product resonates with users and industry experts, providing validation of your product's value proposition and market fit.
 
-Social Proof on your website to build trust of potential prospects:
+### Social Proof on your website to build trust of potential prospects:
 
 You get to add a Product Hunt widget on your website about your rank which makes your potential users trust it more.
 
 Ranking high on Product Hunt will generate traction towards your product and brand, leading to increased media coverage, mentions on social media, and word-of-mouth referrals.
 
-Product Hunt's active community can provide invaluable feedback on your product, helping you identify strengths, weaknesses, and areas for improvement
+Product Hunt's active community can provide invaluable feedback on your product, helping you identify strengths, weaknesses, and areas for improvement.
 
 Ranking high on Product Hunt can unlock additional opportunities such as being featured in the Product Hunt newsletter, winning a Golden Kitty Award, and more.
 
@@ -52,7 +53,7 @@ Though these numbers may not appear extraordinary, keep in mind the conversion r
 
 If you rank high, expect around 1,000-3,000 genuine leads for your business from ten thousand website visits.
 
-The platform awards the following rankings:
+### The platform awards the following rankings:
 
 Product of the Day: The highest-ranked product of a specific day.
 
@@ -72,7 +73,7 @@ We’ll break down how we’ll reach this goal in section #8. Before that, let�
 
 ![](img/77fb6250d55ab956f861e06eb358e6d9.png)
 
-Plan and execute your Product Hunt launch strategy according to the following timeline:
+## Plan and execute your Product Hunt launch strategy according to the following timeline:
 
 Focus on building momentum, preparing promotional materials, and building a community of people interested in your product. They will be your first supporters.
 
@@ -80,7 +81,7 @@ Submit your product early in the day (ideally at 12:01 AM PST), promote it acros
 
 Analyze the results of your launch, thank your supporters, work on their feedback, and continue to engage with your new users to foster long-term relationships.
 
-Let’s take 3 examples to study:
+## Let’s take 3 examples to study:
 
 1) Carrd: A launch driven by strong community
 
@@ -88,9 +89,13 @@ Let’s take 3 examples to study:
 
 3) Whereby: A launch driven by an awesome product
 
+### Carrd: A launch driven by strong community
+
 Carrd was founded in 2016 by AJ, a solo developer with a vision to create a straightforward and affordable platform for building responsive one-page sites. Carrd aimed to cater to individuals, freelancers, and small businesses looking for a user-friendly way to establish an online presence.
 
 ![](img/3fb15fe31e99c677cfba9844e024a933.png)
+
+### Pre-launch strategy
 
 Before launching on Product Hunt, AJ focused on developing a product that met users' needs while ensuring that the tool was intuitive and efficient. The pre-launch strategy included:
 
@@ -102,6 +107,8 @@ Engaging with potential users in online forums, social media, and communities re
 
 Sharing Carrd's development progress and updates on Twitter, creating a sense of anticipation among followers.
 
+### Launch strategies
+
 When Carrd was ready for its Product Hunt debut, AJ had already built a strong community of supporters and potential users. Key strategies during the launch included:
 
 Announcing the launch on Twitter and other social media platforms, urging followers to upvote and share Carrd on Product Hunt.
@@ -111,6 +118,8 @@ Actively participating in the Product Hunt discussion section, addressing questi
 Offering a limited-time discount on Carrd Pro, the premium version, to incentivize new users and early adopters.
 
 Garnering support from friends and colleagues in the tech and design communities, encouraging them to share Carrd with their networks.
+
+### Key outcomes
 
 Carrd's launch on Product Hunt was a major success. The key outcomes were:
 
@@ -122,78 +131,79 @@ Gaining media coverage from several tech publications and blogs, increasing Carr
 
 Attracting a dedicated user base that continued to provide feedback, leading to ongoing product improvements.
 
+
+
+# Product Hunt Launch Strategies and Case Studies
+
+## Visme
+
+### Company Background
 Visme was founded in 2013 by Payman Taei, who recognized the need for an easy-to-use design tool that would empower users to create visually appealing content without requiring professional design skills. Visme aimed to cater to businesses, educators, and individuals seeking an effective way to communicate their ideas visually.
 
 ![](img/7069c470fbc21832625bf1882947c3f5.png)
 
+### Pre-Launch Strategy
 Before launching on Product Hunt, Visme focused on refining its product and building awareness through strategic marketing initiatives. The pre-launch strategy included:
 
-Developing a polished, feature-rich version of Visme that addressed users' design needs.
+- Developing a polished, feature-rich version of Visme that addressed users' design needs.
+- Creating an extensive library of templates, icons, and visuals to facilitate users' content creation.
+- Building brand awareness through content marketing, including blog posts, guest articles, and social media posts.
+- Establishing partnerships with influencers, bloggers, and thought leaders in the design and marketing industries to expand Visme's reach.
 
-Creating an extensive library of templates, icons, and visuals to facilitate users' content creation.
-
-Building brand awareness through content marketing, including blog posts, guest articles, and social media posts.
-
-Establishing partnerships with influencers, bloggers, and thought leaders in the design and marketing industries to expand Visme's reach.
-
+### Launch Strategies
 With a solid product and marketing foundation in place, Visme was well-prepared for its Product Hunt launch. Key strategies employed during the launch included:
 
-Announcing the launch via email campaigns targeting existing users and newsletter subscribers, encouraging them to upvote and share Visme on Product Hunt.
+- Announcing the launch via email campaigns targeting existing users and newsletter subscribers, encouraging them to upvote and share Visme on Product Hunt.
+- Leveraging influencer partnerships to amplify the launch, asking them to share Visme with their audiences on social media and other platforms.
+- Running a limited-time promotion offering a discount on Visme's premium plans, incentivizing new users to sign up.
+- Actively engaging with users on Product Hunt, answering questions, and providing support to address any concerns.
 
-Leveraging influencer partnerships to amplify the launch, asking them to share Visme with their audiences on social media and other platforms.
-
-Running a limited-time promotion offering a discount on Visme's premium plans, incentivizing new users to sign up.
-
-Actively engaging with users on Product Hunt, answering questions, and providing support to address any concerns.
-
+### Key Outcomes
 Visme's launch on Product Hunt was a resounding success. The key outcomes included:
 
-Ranking among the top products of the day, with over 1,500 upvotes.
+- Ranking among the top products of the day, with over 1,500 upvotes.
+- Experiencing a surge in new user sign-ups and conversions to premium plans.
+- Gaining coverage from various tech publications and blogs, further boosting Visme's visibility and credibility.
+- Attracting interest from potential investors, paving the way for future funding rounds.
 
-Experiencing a surge in new user sign-ups and conversions to premium plans.
+## Whereby
 
-Gaining coverage from various tech publications and blogs, further boosting Visme's visibility and credibility.
-
-Attracting interest from potential investors, paving the way for future funding rounds.
-
+### Company Background
 Whereby was founded in 2013 by Ingrid Ødegaard, originally under the name "appear.in". The platform aimed to simplify video conferencing by offering a browser-based solution without the need to install software or create user accounts. Whereby was designed to serve small businesses, remote teams, and individuals looking for a hassle-free video conferencing tool.
 
 ![](img/3052f0459bce855bd97bede3af1fd554.png)
 
+### Pre-Launch Strategy
 Before launching on Product Hunt, the Whereby team concentrated on developing a reliable and easy-to-use product that would meet the needs of their target audience. The pre-launch strategy included:
 
-Building a browser-based, no-download video conferencing solution that allows users to create and join meetings with just a few clicks.
+- Building a browser-based, no-download video conferencing solution that allows users to create and join meetings with just a few clicks.
+- Ensuring compatibility with multiple devices and browsers to provide a seamless user experience.
+- Beta testing the platform with a select group of users, gathering feedback, and making necessary improvements.
+- Promoting Whereby on social media, relevant online forums, and industry-related communities.
 
-Ensuring compatibility with multiple devices and browsers to provide a seamless user experience.
-
-Beta testing the platform with a select group of users, gathering feedback, and making necessary improvements.
-
-Promoting Whereby on social media, relevant online forums, and industry-related communities.
-
+### Launch Strategies
 With a solid product offering in place, Whereby was ready for its Product Hunt debut. Key strategies employed during the launch included:
 
-Announcing the launch on social media channels and newsletters, urging followers to upvote and share Whereby on Product Hunt.
+- Announcing the launch on social media channels and newsletters, urging followers to upvote and share Whereby on Product Hunt.
+- Actively engaging with users on Product Hunt, answering questions, and providing support to address any concerns.
+- Offering a limited-time discount on Whereby's premium plans to incentivize new users to sign up and try the service.
+- Encouraging satisfied beta users to share their positive experiences on Product Hunt and social media.
 
-Actively engaging with users on Product Hunt, answering questions, and providing support to address any concerns.
-
-Offering a limited-time discount on Whereby's premium plans to incentivize new users to sign up and try the service.
-
-Encouraging satisfied beta users to share their positive experiences on Product Hunt and social media.
-
+### Key Outcomes
 Whereby's launch on Product Hunt was a significant success. The key outcomes were:
 
-Ranking among the top products of the day, with several hundred upvotes.
+- Ranking among the top products of the day, with several hundred upvotes.
+- Experiencing a surge in new user sign-ups and conversions to premium plans.
+- Gaining exposure and credibility through positive user reviews and recommendations.
+- Attracting the attention of potential investors and partners, leading to further growth opportunities.
 
-Experiencing a surge in new user sign-ups and conversions to premium plans.
-
-Gaining exposure and credibility through positive user reviews and recommendations.
-
-Attracting the attention of potential investors and partners, leading to further growth opportunities.
+## Launching with a Hunter on Product Hunt
 
 To launch on Product Hunt with a hunter, consider the following steps:
 
 A hunter is a trusted user who will submit your product to Product Hunt. Collaborating with a well-known hunter can increase your chances of getting featured.
 
+### Do You Need a Hunter?
 But do you really need a hunter?
 
 It's important to note that anyone, including product makers, can submit a product on Product Hunt. In fact,
@@ -202,25 +212,26 @@ It's important to note that anyone, including product makers, can submit a produ
 
 60% of #1 Product of the Day winners were self-hunted
 
-On top, while launching, multiple tasks are at hand and not having a hunter frees you from managing the collaborative tasks. Don’t underestimate this advantage as you will already have 100 things to think about.
+On top, while launching, multiple tasks are at hand and not having a hunter frees you from managing the collaborative tasks. Don't underestimate this advantage as you will already have 100 things to think about.
 
 While you don't necessarily need a hunter for your Product Hunt launch, collaborating with one can provide a few benefits.
 
+### Advantages of Working with a Hunter
 Advantages of working with a hunter includes:
 
-Experienced hunters are familiar with Product Hunt's dynamics and know what works best on the platform. They can provide valuable insights and guidance to optimize your launch strategy.
-
-Hunters might have connections with influencers, journalists, or other prominent figures in your industry. These connections can be leveraged to promote your product and generate buzz around your launch. Make sure the hunter is comfortable with helping you out here.
-
-Hunters can help facilitate engagement within the Product Hunt community by sharing your product with their followers, participating in discussions, and generating interest.
+- Experienced hunters are familiar with Product Hunt's dynamics and know what works best on the platform. They can provide valuable insights and guidance to optimize your launch strategy.
+- Hunters might have connections with influencers, journalists, or other prominent figures in your industry. These connections can be leveraged to promote your product and generate buzz around your launch. Make sure the hunter is comfortable with helping you out here.
+- Hunters can help facilitate engagement within the Product Hunt community by sharing your product with their followers, participating in discussions, and generating interest.
 
 Although collaborating with a hunter can provide these benefits, it's not a requirement for launching on Product Hunt. If you decide to submit your product without a hunter, ensure that you familiarize yourself with the platform, engage with the community, and carefully plan your launch strategy to maximize your chances of success.
 
-If I get a chance to start over, I wouldn’t go with a hunter .
+If I get a chance to start over, I wouldn't go with a hunter.
+
+## Selecting a Strategic Launch Date and Time
 
 Select a strategic date & time to maximize engagement and visibility. Numerous variables affect your launch, many of which are uncontrollable, so there's no guaranteed formula for success.
 
-Although, weekends usually have less competition which makes it easier to rank #1 but it also gets less traffic.
+Although weekends usually have less competition which makes it easier to rank #1 but it also gets less traffic.
 
 Weekdays (especially Tuesday & Thursday) on the other hand has highest competition which gives you high traffic with 15% more "Visit" button clicks.
 
@@ -230,19 +241,32 @@ As a rule of thumb, schedule your launch for 12:01 am PST to maximize visibility
 
 Make sure to activate a few promotion tactics early in the day to increase your chances to grab the 1st spot early on. This will then increase organic votes on your project as the 1st product of the day is the one you see the most.
 
-Product Hunt has recently started hiding the voted and showing all products for the first 4 hours. This gives all the products, equal opportunity to get the traction who can test out the product. If your product is really good, the organic traffic itself will drive the upvotes and your chances of being first will be increased.
+Product Hunt has recently started hiding the voted and showing all products for the first 4 hours. This gives all the products equal opportunity to get the traction who can test out the product. If your product is really good, the organic traffic itself will drive the upvotes and your chances of being first will be increased.
 
 Adapt your launch timing based on your target audience, press coverage, team availability, or other factors.
 
 Choose a launch time that aligns with your goals and maximizes your product's visibility and engagement.
 
-ONE THING TO TAKE CARE OF: Don't Overthink It! While it's essential to be prepared for your Product Hunt launch, avoid overthinking every detail. Instead, focus on the key aspects that matter most. It’s okay if you didn’t get it right in the first go. You can launch multiple times!
+### Don't Overthink It
+ONE THING TO TAKE CARE OF: Don't Overthink It! While it's essential to be prepared for your Product Hunt launch, avoid overthinking every detail. Instead, focus on the key aspects that matter most. It's okay if you didn't get it right in the first go. You can launch multiple times!
 
-At the end of the document, I’ve shared a library of really cool taglines, thumbnails & images for you. Check it out!
+At the end of the document, I've shared a library of really cool taglines, thumbnails & images for you. Check it out!
+
+
+
+# Product Hunt Launch Guide
+
+## Register a Personal Account
 
 Firstly to start off, sign up for a personal account—no branded or business account.
 
+## Create Product Assets
+
+### Target the PH Audience
+
 While creating your assets, make sure you are keeping PH audience in mind who are makers, indiehackers, entrepreneurs etc. Create your assets in such a way that it addresses this audience directly.
+
+### Title and Description
 
 Now let’s breakdown how you can create eye-catching visuals, descriptions, and a compelling tagline for your product listing.
 
@@ -266,6 +290,10 @@ This space is perfect for elaborating on your product's purpose and functionalit
 
 > Figma is a collaborative design tool for creating user interfaces, mobile apps, and websites. It offers a wide range of features, including vector editing tools, prototyping, and version control, all in a cloud-based platform.
 
+## Design Visual Assets
+
+### Images and GIFs
+
 Consider using a captivating 240x240 image that catches the eye. Animated GIFs can make for engaging visuals, but be wary of making them too busy. Alternatively, you can never go wrong with showcasing your standard logo, as it is a simple yet effective way to grab viewers' attention.
 
 Images/GIFs can be incredibly powerful. They catch the eye of potential users and present an opportunity to showcase what your product can offer them. Sometimes, a single image can tell the whole story.
@@ -280,6 +308,8 @@ Make sure you show benefits not features.
 
 Keep in mind that many users will view your visuals on mobile devices. Ensure that your images and GIFs are legible and look good on smaller screens.
 
+### Video Demonstrations
+
 Two types of assets work best:
 
 Video demonstrations showing a product's capabilities
@@ -288,11 +318,17 @@ A product walk-through by the maker
 
 While it’s more authentic when you present the product as a founder, it can also prevent people from actually going to your website since they have seen it all in the video. Find a good balance between both which can maximize conversions to your website.
 
+## Launch Interaction Strategy
+
+### Post the First Comment
+
 Be sure to kick off the conversation with a comment about the product. Ask for feedback, thoughts about it or simply just questions they might have. This is a very important part of your launch — 70% of products who achieved Product of the Day, Week, or Month had a first comment by the maker.
 
 ![](img/718e66dbf6e5ebf72e127a6009afa8b5.png)
 
 ![](img/06b23bebbabcc196ab27ac2c41bf6dfe.png)
+
+### 'Coming Soon' Page
 
 You can secure early exposure by featuring your product on the 'Coming Soon' section.
 
@@ -304,6 +340,10 @@ To get featured on this page, submit a teaser of your product, including a brief
 
 This early exposure can help generate interest, gather feedback, and build a subscriber list before your official launch.
 
+## Pre-Launch Warm-Up
+
+### Leverage Existing Audience
+
 N[ow, if you al](https://tweethunter.io/)re[ady hav](https://taplio.com/)e an audience built, this’ll become way easier. Tweet Hunter & Taplio are great tools to help you out here. It helps you build an audience, gather a list of people who were interested in previous Product Hunt launches and reaching out to them on launch day.
 
 A lot of makers hang-out on twitter. Building an audience there can really help having a successful launch. If you already have an audience, make sure you leverage it.
@@ -312,9 +352,13 @@ You can generate momentum through your network and Implement pre-launch marketin
 
 Focus on upvotes from hunters and active Product Hunt members, as they carry more weight and influence. Engage with them to gain credibility and traction for your product. (Twitter can be a great leverage here)
 
+### Warm Accounts vs Cold Accounts
+
 Warm accounts vs cold accounts:
 
 Focus on warming up leads by engaging with them before launch. Warm accounts carry more weight in upvotes and are more likely to be considered by Product Hunt.
+
+### Build a Supporter List
 
 Let’s start with the most important thing!
 
@@ -334,6 +378,8 @@ Accounts from the ‘coming soon’ page
 
 [You can chec](https://upvote-bell.com/)k out upvote-bell . It allows you to download the list of people who upvoted a project and retrieve their Twitter usernames. Use case: find a project in the same space as yours that was successful. Download the upvoters. DM them on your launch day.
 
+### Community Engagement
+
 Participate in Slack groups, WhatsApp groups, and Facebook groups related to your product niche or industry to build relationships and gain insights from fellow makers and entrepreneurs.
 
 Here are a few groups you can start off with
@@ -343,6 +389,10 @@ Add these leads in another sheet in your doc
 Prepare the assets you want to send
 
 You don’t want to spend any time on the day of the launch on anything you could have prepared beforehand!
+
+## Launch Day Preparation
+
+### Asset and Copy Preparation
 
 Prepare the following (You probably won’t get enough time to do it on the day of launch)
 
@@ -356,6 +406,8 @@ Write your maker comment and keep it ready
 
 Write a detailed and thoughtful message to provide context, express gratitude, and answer potential questions from users and tell your story.
 
+## Launch Day Execution
+
 Now, Drink some coffee, get ready in the war room and start following this list step by step:
 
 Send individual DMs to your Tweet Hunter Contact list.
@@ -364,41 +416,42 @@ Start with the highest potential conversions with warm accounts
 
 Then send it to cold accounts
 
+
+
+# Product Hunt Launch and Promotion Guide
+
+## Launch Day Promotion
+
 (Make sure you send DMs little by little and not all at once to avoid spamming)
 
-Send a message in the Slack, Whatsapp, Facebook groups you joined initially
-
-Add a Product Hunt widget on your website to encourage visitors to upvote and engage with your product.
-
-Engage with users by replying to comments and addressing feedback.
-
-Post on all your social media accounts
-
-Reach out to influencers you know
-
-Send emails to your user base
-
-And then start responding to the comments and feedback and hype up the social media buzz by interacting more.
+- Send a message in the Slack, Whatsapp, Facebook groups you joined initially
+- Add a Product Hunt widget on your website to encourage visitors to upvote and engage with your product.
+- Engage with users by replying to comments and addressing feedback.
+- Post on all your social media accounts
+- Reach out to influencers you know
+- Send emails to your user base
+- And then start responding to the comments and feedback and hype up the social media buzz by interacting more.
 
 People are interested about your struggles and wins. Post/tweet 10 times during the day to share every step of your journey.
 
 You can keep an eye on your stats page:
 
+## Practices to Avoid
+
 There are certain practices that can harm your Product Hunt ranking and overall launch success:
 
-Spamming or artificially inflating upvotes: Product Hunt has measures in place to detect and penalize vote manipulation. Focus on providing genuine value and engaging with your audience to earn upvotes.
+- Spamming or artificially inflating upvotes: Product Hunt has measures in place to detect and penalize vote manipulation. Focus on providing genuine value and engaging with your audience to earn upvotes.
+- Don’t ask for upvotes blatantly
 
-Don’t ask for upvotes blatantly
+## Post-Launch Actions
 
-Analyze results, thank supporters, and address any outstanding feedback after the launch.
+- Analyze results, thank supporters, and address any outstanding feedback after the launch.
+- If you manage to do all of the things mentioned above, you’ll probably hit the top five products of the day. This’ll give you a feature in the next day's Product Hunt digest email.
+- Use feedback from users to iterate and improve your product.
+- Add Product Hunt badges and embeds to your website and marketing materials to showcase your success and credibility.
+- A lot of people will reach out to you on social media and other channels, make sure you either convert them to users or followers.
 
-If you manage to do all of the things mentioned above, you’ll probably hit the top five products of the day. This’ll give you a feature in the next day's Product Hunt digest email.
-
-Use feedback from users to iterate and improve your product.
-
-Add Product Hunt badges and embeds to your website and marketing materials to showcase your success and credibility.
-
-A lot of people will reach out to you on social media and other channels, make sure you either convert them to users or followers.
+## Long-Term Perspective
 
 While achieving the #1 spot on Product Hunt can provide significant benefits, it's essential not to lose sight of your long-term goals.
 
@@ -408,58 +461,43 @@ Till then, keep building!
 
 Hey, liking this? Find out about all my other projects and free resources
 
-Here’s the checklist: Your ultimate guide to launching on Product Hunt
+## Product Hunt Launch Checklist: Your Ultimate Guide
 
-Explore product hunt’s platform
+### Explore the Platform
 
-Participate in discussions
+- Explore product hunt’s platform
+- Participate in discussions
+- Upvote and comment on products you like
+- Closely follow and understand the everyday rankings
 
-Upvote and comment on products you like
+### Pre-Launch Preparation
 
-Closely follow and understand the everyday rankings
+- Finalize a hunter (or don’t)
+- Start creating your assets
+- Create a teaser page and be in the coming soon page
+- Implement pre-launch marketing strategy
 
-Finalize a hunter (or don’t)
+### Outreach Channels
 
-Start creating your assets
+- Friends and family (Ask them to start using their product hunt account regularly to warm up their accounts if needed)
+- People who upvoted similar products
+- Influencers you might know
+- Whatsapp, Slack, discord, Facebook groups (& more)
+- Accounts from the ‘coming soon’ page
+- Join communities and groups, and engage
 
-Create a teaser page and be in the coming soon page
+### Launch Day Execution
 
-Implement pre-launch marketing strategy
-
-Friends and family (Ask them to start using their product hunt account regularly to warm up their accounts if needed)
-
-People who upvoted similar products
-
-Influencers you might know
-
-Whatsapp, Slack, discord, Facebook groups (& more)
-
-Accounts from the ‘coming soon’ page
-
-Join communities and groups, and engage
-
-Prepare messages and images you’ll need to reach out on the day of launch
-
-Send individual DMs to your google sheet leads
-
-Start with the highest potential conversions with warm accounts
-
-Then send it to cold accounts
-
-Send a message in the Slack, Whatsapp, Facebook groups you joined initially
-
-Add a Product Hunt widget on your website to encourage visitors to upvote and engage with your product.
-
-Engage with users by replying to comments and addressing feedback.
-
-Post on all your social media accounts
-
-Reach out to influencers you know
-
-Send emails to your user base
-
-Start responding to comments
-
-Use feedback to improve the product
-
-Add product hunt badges and embeds to your website
+- Prepare messages and images you’ll need to reach out on the day of launch
+- Send individual DMs to your google sheet leads
+- Start with the highest potential conversions with warm accounts
+- Then send it to cold accounts
+- Send a message in the Slack, Whatsapp, Facebook groups you joined initially
+- Add a Product Hunt widget on your website to encourage visitors to upvote and engage with your product.
+- Engage with users by replying to comments and addressing feedback.
+- Post on all your social media accounts
+- Reach out to influencers you know
+- Send emails to your user base
+- Start responding to comments
+- Use feedback to improve the product
+- Add product hunt badges and embeds to your website

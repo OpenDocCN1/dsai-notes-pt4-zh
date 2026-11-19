@@ -1,16 +1,17 @@
+
 # 社群资料库
 
 > 来源：[https://feicaiclub.feishu.cn/docx/OfYGdrc9nosJ8lxIbizcPyB5nof](https://feicaiclub.feishu.cn/docx/OfYGdrc9nosJ8lxIbizcPyB5nof)
 
 ![](img/159352f00772095fb211c6337651b64e.png)
 
-> **建议使用电脑端浏览器访问。否则部分页面会遇到“该内容不支持显示 或 **Sorry, the item is not availiable yet”情况
+> 建议使用电脑端浏览器访问。否则部分页面会遇到“该内容不支持显示 或 Sorry, the item is not availiable yet”情况
 
 ![](img/d138c51db50837bebe1a921cc0c3bffc.png)
 
 ---
 
-# **热门内容推荐**
+## 热门内容推荐
 
 ![](img/6a6f1b1a67a617697e860c690c798e49.png)
 
@@ -44,7 +45,6 @@
 
 [漫剧 | 网文改编漫剧 Claude Agent+Skill方法](https://feicaiclub.feishu.cn/wiki/KP4OwdAsyiON2MkeVFXclVybn2d?from=from_copylink)
 
-
 [漫剧 | 玄幻类 漫剧剧本创作 Claude Skill](https://feicaiclub.feishu.cn/wiki/GqVLwFcx0iOghhkKZvIcI3dJnBh?from=from_copylink)
 
 ![](img/aceca3c02e4bde160e956fdbfe198ac2.png)
@@ -67,13 +67,15 @@
 
 [AI Agent | 如何用 Claude Code 搭建 Sub Agent 员工团队](https://feicaiclub.feishu.cn/wiki/QGCzwTt8nipBXAk0VaWcwh0pnxh?from=from_copylink)
 
---- **更多内容，浏览内容分类目录**---
+---
+
+> 更多内容，浏览内容分类目录
 
 ---
 
-# **内容分类目录**
+## 内容分类目录
 
-> **点击分类目录，跳转指定分类页面**
+> 点击分类目录，跳转指定分类页面
 
 > [AI 漫剧](https://feicaiclub.feishu.cn/wiki/C08aweTiHiGoF9kDJNJcQ800nab?from=from_copylink)
 
@@ -111,19 +113,19 @@
 
 ---
 
-# **👑 立即订阅，加入废才俱乐部**
+## 👑 立即订阅，加入废才俱乐部
 
 学AI，你是不是也遇到过这些问题？
 
-+   看了很多教程，但到自己用的时候就卡住了
++ 看了很多教程，但到自己用的时候就卡住了
 
-+   遇到具体问题，网上找不到答案
++ 遇到具体问题，网上找不到答案
 
-+   不确定自己的理解对不对，没人帮忙看一眼
++ 不确定自己的理解对不对，没人帮忙看一眼
 
-+   AI模型那么多，不知道该用哪个、怎么选
++ AI模型那么多，不知道该用哪个、怎么选
 
-+   自己摸索太慢，别人可能早就踩过这个坑了
++ 自己摸索太慢，别人可能早就踩过这个坑了
 
 真正有效的学习方式是交流和提问。
 
@@ -133,8 +135,8 @@
 
 ![](img/db0276bc9f72b6c848279b7dd297a492.png)
 
-> **立即订阅，加入废才俱乐部社群**
+> 立即订阅，加入废才俱乐部社群
 
-> **请谨慎购买，不退不换。**如您没有看到下方支付按钮，请使用桌面端网页浏览器访问。付费成功后，你将看到🛰️群入群二维码。
+> 请谨慎购买，不退不换。如您没有看到下方支付按钮，请使用桌面端网页浏览器访问。付费成功后，你将看到🛰️群入群二维码。
 
-> **订阅年度会员后可见会员群二维码**
+> 订阅年度会员后可见会员群二维码

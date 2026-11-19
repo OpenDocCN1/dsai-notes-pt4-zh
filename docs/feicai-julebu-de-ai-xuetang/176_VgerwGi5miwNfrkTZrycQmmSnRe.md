@@ -1,3 +1,4 @@
+
 # OpenAI针对AI模型和系统的外部红队测试方法
 
 > 来源：[https://feicaiclub.feishu.cn/docx/I5wCdzr9goEO84xA0j3cXDoYnte](https://feicaiclub.feishu.cn/docx/I5wCdzr9goEO84xA0j3cXDoYnte)
@@ -10,7 +11,7 @@
 
 2024年11月21日 by OpenAI
 
-OpenAI的外部红队测试:保障AI系统安全的重要实践
+## OpenAI的外部红队测试:保障AI系统安全的重要实践
 
 随着GPT-4、DALL-E 3等大型AI模型的不断涌现,如何确保这些模型的安全性和可控性成为了一个重要课题。在这种背景下,OpenAI发布了一篇重要论文,详细阐述了他们在外部红队测试方面的方法论和实践经验。这种方法不仅帮助发现了模型中潜在的风险,还为整个AI行业的安全评估提供了有益借鉴。
 

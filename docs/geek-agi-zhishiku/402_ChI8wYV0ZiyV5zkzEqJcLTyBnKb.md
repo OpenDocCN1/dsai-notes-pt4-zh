@@ -1,3 +1,4 @@
+
 # 云原生时代：学会使用Docker容器运维命令，轻松管理应用
 
 > 来源：[https://geekbang.feishu.cn/docx/ZVBMdNkXeov1kjx9QXKc5KDbnub](https://geekbang.feishu.cn/docx/ZVBMdNkXeov1kjx9QXKc5KDbnub)
@@ -10,69 +11,55 @@
 
 > ⏰ 收录时间：2024-05-27 11:15:56 (UTC+8)
 
-> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=Mzk0ODUzNDc2Mw==&mid=2247485285&idx=1&sn=abb317990ab4d97445bfb80b45036225&scene=19#wechat_redirect)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=Mzk0ODUzNDc2Mw==&mid=2247485285&idx=1&sn=abb317990ab4d97445bfb80b45036225&scene=19#wechat_redirect
 
 ![](img/9c168551ae3c44add79ca87d98ef2c2c.png)
 
 关注作者，获取更多相关知识
 
-# docker ps
+## docker ps
 
 列出容器。
 
-```
-docker ps [OPTIONS]
-```
+`docker ps [OPTIONS]`
 
 OPTIONS说明：
 
--a :显示所有的容器，包括未运行的。
-
--f :根据条件过滤显示的内容。
-
-–format :指定返回值的模板文件。
-
--l :显示最近创建的容器。
-
--n :列出最近创建的n个容器。
-
-–no-trunc :不截断输出。
-
--q :静默模式，只显示容器编号。
-
--s :显示总的文件大小。
+- `-a`：显示所有的容器，包括未运行的。
+- `-f`：根据条件过滤显示的内容。
+- `--format`：指定返回值的模板文件。
+- `-l`：显示最近创建的容器。
+- `-n`：列出最近创建的 n 个容器。
+- `--no-trunc`：不截断输出。
+- `-q`：静默模式，只显示容器编号。
+- `-s`：显示总的文件大小。
 
 示例：
 
 ```
-fly@fly:~$ docker ps 
+fly@fly:~$ docker ps
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
-d948ec8c92a2   nginx     &quot;/docker-entrypoint.…&quot;   24 seconds ago   Up 22 seconds   80/tcp    mynginx
+d948ec8c92a2   nginx     "/docker-entrypoint.…"   24 seconds ago   Up 22 seconds   80/tcp    mynginx
 fly@fly:~$ docker ps -a
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
-d948ec8c92a2   nginx     &quot;/docker-entrypoint.…&quot;   25 seconds ago   Up 23 seconds   80/tcp    mynginx
-ae61ef82b947   nginx     &quot;/docker-entrypoint.…&quot;   39 hours ago     Created                   pedantic_poincare
+d948ec8c92a2   nginx     "/docker-entrypoint.…"   25 seconds ago   Up 23 seconds   80/tcp    mynginx
+ae61ef82b947   nginx     "/docker-entrypoint.…"   39 hours ago     Created                   pedantic_poincare
 fly@fly:~$ docker ps -f status=running
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
-d948ec8c92a2   nginx     &quot;/docker-entrypoint.…&quot;   59 seconds ago   Up 57 seconds   80/tcp    mynginx
-
+d948ec8c92a2   nginx     "/docker-entrypoint.…"   59 seconds ago   Up 57 seconds   80/tcp    mynginx
 ```
 
-# docker exec
+## docker exec
 
 在运行的容器中执行命令。
 
-```
-docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
-```
+`docker exec [OPTIONS] CONTAINER COMMAND [ARG...]`
 
 OPTIONS说明：
 
--d :分离模式: 在后台运行
-
--i :即使没有附加也保持STDIN 打开
-
--t :分配一个伪终端
+- `-d`：分离模式，在后台运行
+- `-i`：即使没有附加也保持 STDIN 打开
+- `-t`：分配一个伪终端
 
 示例：
 
@@ -107,47 +94,40 @@ root@d948ec8c92a2:/# ls
 bin  boot  dev        docker-entrypoint.d  docker-entrypoint.sh  etc        home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 root@d948ec8c92a2:/# exit
 exit
-
 ```
 
-# docker inspect  docker 检查
+## docker inspect
 
 获取容器/镜像的元数据。
 
-```
-docker inspect [OPTIONS] NAME|ID [NAME|ID...]
-```
+`docker inspect [OPTIONS] NAME|ID [NAME|ID...]`
 
 OPTIONS说明：
 
--f :指定返回值的模板文件。
-
--s :显示总的文件大小。
-
-–type :为指定类型返回JSON
+- `-f`：指定返回值的模板文件。
+- `-s`：显示总的文件大小。
+- `--type`：为指定类型返回 JSON
 
 示例：
 
 ```
-# 查看容器的示例id
-docker inspect -f &#x27;{{.Id}}&#x27; &lt;id&gt;
+# 查看容器的示例 id
+docker inspect -f '{{.Id}}' <id>
 # 检查镜像或者容器的参数，默认返回 JSON 格式
-docker inspect &lt;id&gt;
+docker inspect <id>
 ```
 
-# docker top  docker 顶部
+## docker top
 
 查看容器中运行的进程信息，支持 ps 命令参数。
 
-```
-docker top [OPTIONS] CONTAINER [ps OPTIONS]
-```
+`docker top [OPTIONS] CONTAINER [ps OPTIONS]`
 
 示例：
 
 ```
 # 查看所有运行容器的进程信息。
-for i in `docker ps |grep Up|awk &#x27;{print $1}&#x27;`;do echo \ &amp;&amp;docker top $i; done
+for i in `docker ps | grep Up | awk '{print $1}'`; do echo && docker top $i; done
 ```
 
 ```
@@ -157,29 +137,24 @@ UID                 PID                 PPID                C                   
 165637              1899                1835                0                   05:35               ?                   00:00:00            nginx: worker process
 ```
 
-# docker attach  docker 附加
+## docker attach
 
 连接到正在运行中的容器。
 
-```
-docker attach [OPTIONS] CONTAINER
+`docker attach [OPTIONS] CONTAINER`
 
-```
+`docker exec` 与 `docker attach` 的区别：
 
-docker exec 与 docker attach 的区别：
+1. `exec` 在容器中执行命令，并且可以通过 `-i` `-t` 创建虚拟终端的方式与容器交互。
+2. `attach` 进入容器某个正在执行的命令终端，不能交互操作。但是如果该容器的命令终端是一个可以交互的终端，那么也可以交互。
 
-1.  exec 在容器中执行命令，并且可以通过-i -t 创建虚拟终端的方式与容器交互。
+### 退出 attach 模式
 
-1.  attach 进入容器某个正在执行的命令终端，不能交互操作。但是如果该容器的命令终端是一个可以
-交互的终端，那么也可以交互。
-
-**退出attach模式：**
-
-1.  运行容器时指定 -i -t 参数，那么attach容器后可通过Ctrl + P + Ctrl + Q 退出attach状态。
+1. 运行容器时指定 `-i` `-t` 参数，那么 `attach` 容器后可通过 Ctrl + P + Ctrl + Q 退出 attach 状态。
 
 ```
 docker run -d -it -P nginx
-docker attach &lt;containerID&gt;
+docker attach <containerID>
 ```
 
 ```
@@ -195,57 +170,50 @@ fly@fly:~$ docker attach fe4450ec046e9423194c5f22b2dfdef242539b0fa4cc62d1698d96d
 read escape sequence
 ```
 
-1.  仅指定-t参数，可以通过Ctrl + C 退出attach状态。
+2. 仅指定 `-t` 参数，可以通过 Ctrl + C 退出 attach 状态。
 
 ```
 docker run -d -t -P nginx
-docker attach &lt;containerID&gt;
+docker attach <containerID>
 ```
 
-1.  不指定-t参数，在attach的时候指定 --sig-proxy=false ，可以通过 Ctrl + C 退出attach状态。–sig-proxy 仅在没有指定-t参数的情况下生效。于–sig-proxy 默认值为true，默认将所有接收信号代理给了容器中的进程，所以Ctrl + C 的时候会将sigint (signal interrupt)终止信号发送到attach进程，从而转发到被attach的进程，导致容器中进程中断，从而退出容器。
+3. 不指定 `-t` 参数，在 `attach` 的时候指定 `--sig-proxy=false`，可以通过 Ctrl + C 退出 attach 状态。`--sig-proxy` 仅在没有指定 `-t` 参数的情况下生效。`--sig-proxy` 默认值为 true，默认将所有接收信号代理给了容器中的进程，所以 Ctrl + C 的时候会将 sigint (signal interrupt) 终止信号发送到 attach 进程，从而转发到被 attach 的进程，导致容器中进程中断，从而退出容器。
 
 ```
 docker run -d -i -P nginx
 docker run -d -P nginx
-docker attach --sig-proxy=false &lt;containerID&gt;
+docker attach --sig-proxy=false <containerID>
 ```
 
-# docker wait  docker 等待
+## docker wait
 
 阻塞运行直到容器停止，然后打印出它的退出代码。
 
-```
-docker wait [OPTIONS] CONTAINER [CONTAINER...]
-```
+`docker wait [OPTIONS] CONTAINER [CONTAINER...]`
 
-# docker export  docker 导出
+## docker export
 
-将文件系统作为一个tar归档文件导出到STDOUT。
+将文件系统作为一个 `tar` 归档文件导出到 `STDOUT`。
 
-```
-docker export [OPTIONS] CONTAINER
-```
+`docker export [OPTIONS] CONTAINER`
 
 OPTIONS说明：
 
--o :将输入内容写到文件。
+- `-o`：将输入内容写到文件。
 
 ```
 docker export mynginx -o mynginx.tar
 # 解压归档文件，查看内容
 tar vxf mynginx.tar -c mynginx
-
 ```
 
 当容器出现问题时，可以将文件导出，保留现场。
 
-# docker import  docker 导入
+## docker import
 
 将文件系统导入指定容器。
 
-```
-docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
-```
+`docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]`
 
 ```
 Import the contents from a tarball to create a filesystem image
@@ -254,37 +222,32 @@ Options:
   -c, --change list       Apply Dockerfile instruction to the created image
   -m, --message string    Set commit message for imported image
       --platform string   Set platform if server is multi-platform capable
-
 ```
 
-# docker port  docker 端口
+## docker port
 
-列出指定的容器的端口映射，或者查找将PRIVATE_PORT NAT到面向公众的端口。
+列出指定的容器的端口映射，或者查找将 `PRIVATE_PORT` NAT 到面向公众的端口。
 
-```
-docker port [OPTIONS] CONTAINER [PRIVATE_PORT[/PROTO]]
-```
+`docker port [OPTIONS] CONTAINER [PRIVATE_PORT[/PROTO]]`
 
 示例：
 
 ```
-fly@fly:~$ docker port mynginx1 
-80/tcp -&gt; 0.0.0.0:49154
-80/tcp -&gt; :::49154
+fly@fly:~$ docker port mynginx1
+80/tcp -> 0.0.0.0:49154
+80/tcp -> :::49154
 ```
 
-# docker cp
+## docker cp
 
 用于容器与主机之间的数据拷贝。
 
-```
-docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
-docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
-```
+`docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-`
+`docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH`
 
 OPTIONS说明：
 
--L :保持源目标中的链接
+- `-L`：保持源目标中的链接
 
 示例，将容器的文件拷贝到主机：
 
@@ -294,13 +257,11 @@ fly@fly:~$ ls
 docker-entrypoint.sh
 ```
 
-# docker diff  docker 差异
+## docker diff
 
-检查容器里文件结构的更改。docker diff命令会列出 3 种容器内文件状态变化（A - Add, D - Delete, C - Change ）的列表清单。
+检查容器里文件结构的更改。`docker diff` 命令会列出 3 种容器内文件状态变化（`A` - Add, `D` - Delete, `C` - Change）的列表清单。
 
-```
-docker diff [OPTIONS] CONTAINER
-```
+`docker diff [OPTIONS] CONTAINER`
 
 示例：
 
@@ -322,13 +283,11 @@ A /var/cache/nginx/client_temp
 A /var/cache/nginx/fastcgi_temp
 ```
 
-# docker rename  docker 重命名
+## docker rename
 
 重命名容器名。
 
-```
-docker rename CONTAINER NEW_NAME
-```
+`docker rename CONTAINER NEW_NAME`
 
 示例：
 
@@ -336,12 +295,12 @@ docker rename CONTAINER NEW_NAME
 fly@fly:~$ docker rename mynginx1 mynginx2
 fly@fly:~$ docker ps
 CONTAINER ID   IMAGE     COMMAND                  CREATED             STATUS             PORTS                                     NAMES
-b6ccc26e22e6   nginx     &quot;/docker-entrypoint.…&quot;   15 minutes ago      Up 15 minutes      0.0.0.0:49154-&gt;80/tcp, :::49154-&gt;80/tcp   mynginx2
-fe4450ec046e   nginx     &quot;/docker-entrypoint.…&quot;   33 minutes ago      Up 33 minutes      0.0.0.0:49153-&gt;80/tcp, :::49153-&gt;80/tcp   inspiring_hypatia
-d948ec8c92a2   nginx     &quot;/docker-entrypoint.…&quot;   About an hour ago   Up About an hour   80/tcp                                    mynginx
+b6ccc26e22e6   nginx     "/docker-entrypoint.…"   15 minutes ago      Up 15 minutes      0.0.0.0:49154->80/tcp, :::49154->80/tcp   mynginx2
+fe4450ec046e   nginx     "/docker-entrypoint.…"   33 minutes ago      Up 33 minutes      0.0.0.0:49153->80/tcp, :::49153->80/tcp   inspiring_hypatia
+d948ec8c92a2   nginx     "/docker-entrypoint.…"   About an hour ago   Up About an hour   80/tcp                                    mynginx
 ```
 
-# docker stats  docker 统计信息
+## docker stats
 
 容器监控，示例：
 
@@ -350,9 +309,9 @@ CONTAINER ID   NAME       CPU %     MEM USAGE / LIMIT     MEM %     NET I/O     
 b6ccc26e22e6   mynginx2   0.00%     4.344MiB / 1.907GiB   0.22%     1.01kB / 0B   0B / 16.4kB   3
 ```
 
-# docker update  docker 更新
+## docker update
 
-出docker update 是用来修改docker run 指定的运行参数。
+`docker update` 是用来修改 `docker run` 指定的运行参数。
 
 示例：
 
@@ -361,8 +320,8 @@ docker update --restart always myubuntu3
 docker update --restart no myubuntu3
 ```
 
-# 总结
+## 总结
 
-容器遵循最小原则，会尽可能不打包 非必须的程序进去。
+容器遵循最小原则，会尽可能不打包非必须的程序进去。
 
-docker attach如果没有指定-i -t或者–sig-proxy=false，那么使用CTL+C的方式会把容器也退出。
+`docker attach` 如果没有指定 `-i` `-t` 或者 `--sig-proxy=false`，那么使用 Ctrl + C 的方式会把容器也退出。

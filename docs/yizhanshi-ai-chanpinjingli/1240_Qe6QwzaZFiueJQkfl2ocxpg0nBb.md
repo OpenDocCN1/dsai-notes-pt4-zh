@@ -1,12 +1,13 @@
+
 # 第五章 动手搭建大模型
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/ATo3dGfjyorXXCxrJNKcSO03nzc](https://v11enp9ok1h.feishu.cn/docx/ATo3dGfjyorXXCxrJNKcSO03nzc)
 
-## 5.1 动手实现一个 LLaMA2 大模型
+## 5.1 动手实现一个 `LLaMA2` 大模型
 
-> Meta（原Facebook）于2023年2月发布第一款基于Transformer结构的大型语言模型LLaMA，并于同年7月发布同系列模型LLaMA2。我们在第四章已经学习和了解了LLM，以及如何训练LLM等内容。本小节我们就来学习如何动手实现一个LLaMA2模型。
+> Meta（原Facebook）于2023年2月发布第一款基于`Transformer`结构的大型语言模型`LLaMA`，并于同年7月发布同系列模型`LLaMA2`。我们在第四章已经学习和了解了`LLM`，以及如何训练`LLM`等内容。本小节我们就来学习如何动手实现一个`LLaMA2`模型。
 
-LLaMA2 模型结构如下图5.1所示：
+`LLaMA2` 模型结构如下图5.1所示：
 
 ![](img/384767c2a1342fa37312158e0e688f88.png)
 
@@ -14,13 +15,13 @@ LLaMA2 模型结构如下图5.1所示：
 
 首先我们需要定义一些超参数，这些超参数包括模型的大小、层数、头数、词嵌入维度、隐藏层维度等等。这些超参数可以根据实际情况进行调整。
 
-这里我们自定义一个ModelConfig类，来存储和记录我们的超参数，这里我们继承了PretrainedConfig类，这是transformers库中的参数类，我们可以通过继承这个类来方便的使用transformers库中的一些功能，也方便在后续导出Hugging Face模型。
+这里我们自定义一个`ModelConfig`类，来存储和记录我们的超参数，这里我们继承了`PretrainedConfig`类，这是`transformers`库中的参数类，我们可以通过继承这个类来方便的使用`transformers`库中的一些功能，也方便在后续导出`Hugging Face`模型。
 
 ```
 from transformers import PretrainedConfig
 
 class ModelConfig(PretrainedConfig):
-    model_type = &quot;Tiny-K&quot;
+    model_type = "Tiny-K"
     def __init__(
             self,
             dim: int = 768, # 模型维度
@@ -50,27 +51,25 @@ class ModelConfig(PretrainedConfig):
         super().__init__(**kwargs)
 ```
 
-> 在以下代码中出现 args 时，即默认为以上 ModelConfig 参数配置。
+> 在以下代码中出现 `args` 时，即默认为以上 `ModelConfig` 参数配置。
 
-我们来看一下其中的一些超参数的含义，比如dim是模型维度，n_layers是Transformer的层数，n_heads是注意力机制的头数，vocab_size是词汇表大小，max_seq_len是输入的最大序列长度等等。上面的代码中也对每一个参数做了详细的注释，在后面的代码中我们会根据这些超参数来构建我们的模型。
+我们来看一下其中的一些超参数的含义，比如`dim`是模型维度，`n_layers`是`Transformer`的层数，`n_heads`是注意力机制的头数，`vocab_size`是词汇表大小，`max_seq_len`是输入的最大序列长度等等。上面的代码中也对每一个参数做了详细的注释，在后面的代码中我们会根据这些超参数来构建我们的模型。
 
 ### 5.1.2 构建 RMSNorm
 
-RMSNorm可以用如下的数学公式表示：
+`RMSNorm`可以用如下的数学公式表示：
 
-其中：
++   `x_i` 是输入向量的第 `i` 个元素
 
-+   x_i 是输入向量的第 i 个元素
++   `\gamma` 是可学习的缩放参数（对应代码中的 `self.weight`）
 
-+   \gamma 是可学习的缩放参数（对应代码中的 self.weight）
++   `n` 是输入向量的维度数量
 
-+   n 是输入向量的维度数量
-
-+   \epsilon 是一个小常数，用于数值稳定性（以避免除以零的情况）
++   `\epsilon` 是一个小常数，用于数值稳定性（以避免除以零的情况）
 
 这种归一化有助于通过确保权重的规模不会变得过大或过小来稳定学习过程，这在具有许多层的深度学习模型中特别有用。
 
-我们可以通过如下代码实现RMSNorm：
+我们可以通过如下代码实现`RMSNorm`：
 
 ```
 class RMSNorm(nn.Module):
@@ -96,7 +95,7 @@ class RMSNorm(nn.Module):
         return output * self.weight
 ```
 
-并且，我们可以用下面的代码来对RMSNorm模块进行测试，可以看到代码最终输出的形状为torch.Size([1, 50, 288])，与我们输入的形状一致，说明模块的实现是正确的，归一化并不会改变输入的形状。
+并且，我们可以用下面的代码来对`RMSNorm`模块进行测试，可以看到代码最终输出的形状为`torch.Size([1, 50, 288])`，与我们输入的形状一致，说明模块的实现是正确的，归一化并不会改变输入的形状。
 
 ```
 norm = RMSNorm(args.dim, args.norm_eps)
@@ -108,18 +107,18 @@ out:
 torch.Size([1, 50, 768])
 ```
 
-### 5.1.3 构建 LLaMA2 Attention
+### 5.1.3 构建 `LLaMA2` `Attention`
 
-在 LLaMA2 模型中，虽然只有 LLaMA2-70B模型使用了分组查询注意力机制（Grouped-Query Attention，GQA），但我们依然选择使用 GQA 来构建我们的 LLaMA Attention 模块，它可以提高模型的效率，并节省一些显存占用。
+在 `LLaMA2` 模型中，虽然只有 `LLaMA2-70B`模型使用了分组查询注意力机制（Grouped-Query Attention，GQA），但我们依然选择使用 `GQA` 来构建我们的 `LLaMA` `Attention` 模块，它可以提高模型的效率，并节省一些显存占用。
 
 ![](img/1cba2e78102a5d3b5f52cdaaae23b13d.png)
 
 #### 5.1.3.1 repeat_kv
 
-在 LLaMA2 模型中，我们需要将键和值的维度扩展到和查询的维度一样，这样才能进行注意力计算。我们可以通过如下代码实现repeat_kv：
+在 `LLaMA2` 模型中，我们需要将键和值的维度扩展到和查询的维度一样，这样才能进行注意力计算。我们可以通过如下代码实现`repeat_kv`：
 
 ```
-def repeat_kv(x: torch.Tensor, n_rep: int) -&gt; torch.Tensor:
+def repeat_kv(x: torch.Tensor, n_rep: int) -> torch.Tensor:
     # 获取输入张量的形状：批量大小、序列长度、键/值对头的数量、每个头的维度大小
     bs, slen, n_kv_heads, head_dim = x.shape
     
@@ -137,21 +136,21 @@ def repeat_kv(x: torch.Tensor, n_rep: int) -&gt; torch.Tensor:
 
 在上述代码中：
 
-+   首先，获取输入张量的形状：首先，代码通过 x.shape 获取输入张量的形状，包括批量大小（bs）、序列长度（slen）、键/值对头的数量（n_kv_heads）以及每个头的维度大小（head_dim）。
++   首先，获取输入张量的形状：首先，代码通过 `x.shape` 获取输入张量的形状，包括批量大小（`bs`）、序列长度（`slen`）、键/值对头的数量（`n_kv_heads`）以及每个头的维度大小（`head_dim`）。
 
-+   然后，检查重复次数：接着，代码检查重复次数 n_rep 是否为1。如果是1，则说明不需要对键和值进行重复，直接返回原始张量 x。
++   然后，检查重复次数：接着，代码检查重复次数 `n_rep` 是否为1。如果是1，则说明不需要对键和值进行重复，直接返回原始张量 `x`。
 
 +   最后，扩展和重塑张量：
 
-+   在第三个维度（即键/值对头的维度）之后添加一个新的维度，形成 x[:, :, :, None, :]。
++   在第三个维度（即键/值对头的维度）之后添加一个新的维度，形成 `x[:, :, :, None, :]`。
 
-+   使用 expand 方法将新添加的维度扩展到 n_rep 大小，实现键/值对的重复效果。
++   使用 `expand` 方法将新添加的维度扩展到 `n_rep` 大小，实现键/值对的重复效果。
 
-+   最后，通过 reshape 方法重新塑形，将扩展后的维度合并回键/值对头的数量中，即 x.reshape(bs, slen, n_kv_heads * n_rep, head_dim)，这样最终的张量形状就达到了与查询维度一致的效果。
++   最后，通过 `reshape` 方法重新塑形，将扩展后的维度合并回键/值对头的数量中，即 `x.reshape(bs, slen, n_kv_heads * n_rep, head_dim)`，这样最终的张量形状就达到了与查询维度一致的效果。
 
 #### 5.1.3.2 旋转嵌入
 
-接着我们来实现旋转嵌入，旋转嵌入是 LLaMA2 模型中的一个重要组件，它可以为注意力机制提供更强的上下文信息，从而提高模型的性能。
+接着我们来实现旋转嵌入，旋转嵌入是 `LLaMA2` 模型中的一个重要组件，它可以为注意力机制提供更强的上下文信息，从而提高模型的性能。
 
 首先，我们要构造获得旋转嵌入的实部和虚部的函数：
 
@@ -174,27 +173,27 @@ def precompute_freqs_cis(dim: int, end: int, theta: float = 10000.0):
 
 +   计算频率序列：
 
-+   torch.arange(0, dim, 2)[: (dim // 2)].float() 生成了一个从0开始，步长为2的序列，其长度为dim的一半。
++   `torch.arange(0, dim, 2)[: (dim // 2)].float()` 生成了一个从0开始，步长为2的序列，其长度为`dim`的一半。
 
-+   每个元素除以dim后取theta的倒数，得到一个频率序列 freqs。这一步是为了生成适合旋转嵌入的频率。
++   每个元素除以`dim`后取`theta`的倒数，得到一个频率序列 `freqs`。这一步是为了生成适合旋转嵌入的频率。
 
 +   生成时间序列：
 
-+   t = torch.arange(end, device=freqs.device) 生成一个从0到end的序列，长度为end。end通常是序列的最大长度。
++   `t = torch.arange(end, device=freqs.device)` 生成一个从0到`end`的序列，长度为`end`。`end`通常是序列的最大长度。
 
 +   计算频率的外积
 
-+   freqs = torch.outer(t, freqs).float() 计算时间序列 t 和频率序列 freqs 的外积，得到一个二维矩阵 freqs。每一行是时间序列 t 的元素乘以频率序列 freqs 的元素。
++   `freqs = torch.outer(t, freqs).float()` 计算时间序列 `t` 和频率序列 `freqs` 的外积，得到一个二维矩阵 `freqs`。每一行是时间序列 `t` 的元素乘以频率序列 `freqs` 的元素。
 
 +   计算实部和虚部
 
-+   freqs_cos = torch.cos(freqs) 计算频率矩阵 freqs 的余弦值，得到旋转嵌入的实部。
++   `freqs_cos = torch.cos(freqs)` 计算频率矩阵 `freqs` 的余弦值，得到旋转嵌入的实部。
 
-+   freqs_sin = torch.sin(freqs) 计算频率矩阵 freqs 的正弦值，得到旋转嵌入的虚部。
++   `freqs_sin = torch.sin(freqs)` 计算频率矩阵 `freqs` 的正弦值，得到旋转嵌入的虚部。
 
-最终，该函数返回两个矩阵 freqs_cos 和 freqs_sin，分别表示旋转嵌入的实部和虚部，用于后续的计算。
+最终，该函数返回两个矩阵 `freqs_cos` 和 `freqs_sin`，分别表示旋转嵌入的实部和虚部，用于后续的计算。
 
-接着，我们来构造调整张量形状的reshape_for_broadcast函数，这个函数的主要目的是调整 freqs_cis 的形状，使其在进行广播操作时与 x 的维度对齐，从而能够进行正确的张量运算。
+接着，我们来构造调整张量形状的`reshape_for_broadcast`函数，这个函数的主要目的是调整 `freqs_cis` 的形状，使其在进行广播操作时与 `x` 的维度对齐，从而能够进行正确的张量运算。
 
 ```
 def reshape_for_broadcast(freqs_cis: torch.Tensor, x: torch.Tensor):
@@ -202,7 +201,7 @@ def reshape_for_broadcast(freqs_cis: torch.Tensor, x: torch.Tensor):
     ndim = x.ndim
     
     # 断言，确保1在x的维度范围内
-    assert 0 &lt;= 1 &lt; ndim
+    assert 0 <= 1 < ndim
     
     # 断言，确保freqs_cis的形状与x的第二维和最后一维相同
     assert freqs_cis.shape == (x.shape[1], x.shape[-1])
@@ -222,7 +221,7 @@ def apply_rotary_emb(
     xk: torch.Tensor,
     freqs_cos: torch.Tensor,
     freqs_sin: torch.Tensor
-) -&gt; Tuple[torch.Tensor, torch.Tensor]:
+) -> Tuple[torch.Tensor, torch.Tensor]:
 
     # 将查询和键张量转换为浮点数，并重塑形状以分离实部和虚部
     xq_r, xq_i = xq.float().reshape(xq.shape[:-1] + (-1, 2)).unbind(-1)
@@ -245,7 +244,7 @@ def apply_rotary_emb(
     return xq_out.type_as(xq), xk_out.type_as(xk)
 ```
 
-这里我们给出可以测试apply_rotary_emb函数的代码，大家也可以尝试在代码中添加断点，来查看每一步的计算结果。
+这里我们给出可以测试`apply_rotary_emb`函数的代码，大家也可以尝试在代码中添加断点，来查看每一步的计算结果。
 
 ```
 xq = torch.randn(1, 50, 6, 48) # bs, seq_len, dim//n_head, n_head_dim
@@ -267,11 +266,15 @@ torch.Size([50, 24]) torch.Size([50, 24])
 (torch.Size([1, 50, 6, 48]), torch.Size([1, 50, 6, 48]))
 ```
 
-#### 5.1.3.3 组装 LLaMA2 Attention
+#### 5.1.3.3 组装 `LLaMA2` `Attention`
 
-在上面我们已经完成了旋转嵌入的实现，接下来我们就可以构建 LLaMA2 Attention 模块了。
+在上面我们已经完成了旋转嵌入的实现，接下来我们就可以构建 `LLaMA2` `Attention` 模块了。
 
-```
+
+
+### 5.1.3 构建 `LLaMA2` `Attention` 模块
+
+```python
 class Attention(nn.Module):
     def __init__(self, args: ModelConfig):
         super().__init__()
@@ -304,16 +307,16 @@ class Attention(nn.Module):
         # 保存dropout概率。
         self.dropout = args.dropout
 
-        # 检查是否使用Flash Attention（需要PyTorch &gt;= 2.0）。
-        self.flash = hasattr(torch.nn.functional, &#x27;scaled_dot_product_attention&#x27;)
+        # 检查是否使用Flash Attention（需要PyTorch >= 2.0）。
+        self.flash = hasattr(torch.nn.functional, 'scaled_dot_product_attention')
         if not self.flash:
             # 若不支持Flash Attention，则使用手动实现的注意力机制，并设置mask。
-            print(&quot;WARNING: using slow attention. Flash Attention requires PyTorch &gt;= 2.0&quot;)
+            print("WARNING: using slow attention. Flash Attention requires PyTorch >= 2.0")
             # 创建一个上三角矩阵，用于遮蔽未来信息。
-            mask = torch.full((1, 1, args.max_seq_len, args.max_seq_len), float(&quot;-inf&quot;))
+            mask = torch.full((1, 1, args.max_seq_len, args.max_seq_len), float("-inf"))
             mask = torch.triu(mask, diagonal=1)
             # 注册为模型的缓冲区
-            self.register_buffer(&quot;mask&quot;, mask)
+            self.register_buffer("mask", mask)
 
     def forward(self, x: torch.Tensor, freqs_cos: torch.Tensor, freqs_sin: torch.Tensor):
         # 获取批次大小和序列长度，[batch_size, seq_len, dim]
@@ -345,7 +348,7 @@ class Attention(nn.Module):
         else:
             # 使用手动实现的注意力机制。
             scores = torch.matmul(xq, xk.transpose(2, 3)) / math.sqrt(self.head_dim)
-            assert hasattr(self, &#x27;mask&#x27;)
+            assert hasattr(self, 'mask')
             scores = scores + self.mask[:, :, :seqlen, :seqlen]
             scores = F.softmax(scores.float(), dim=-1).type_as(xq)
             scores = self.attn_dropout(scores)
@@ -360,9 +363,9 @@ class Attention(nn.Module):
         return output
 ```
 
-同样大家可以使用下面的代码来对注意力模块进行测试，可以看到代码最终输出的形状为torch.Size([1, 50, 768])，与我们输入的形状一致，说明模块的实现是正确的。
+同样大家可以使用下面的代码来对注意力模块进行测试，可以看到代码最终输出的形状为 `torch.Size([1, 50, 768])`，与我们输入的形状一致，说明模块的实现是正确的。
 
-```
+```python
 # 创建Attention实例
 attention_model = Attention(args)
 
@@ -380,20 +383,20 @@ freqs_cos, freqs_sin = precompute_freqs_cis(dim//args.n_heads, seq_len)
 output = attention_model(x, freqs_cos, freqs_sin)
 
 # attention出来之后的形状 依然是[batch_size, seq_len, dim]
-print(&quot;Output shape:&quot;, output.shape)
+print("Output shape:", output.shape)
 ```
 
 OUT:
 
-```
+```text
 Output shape: torch.Size([1, 50, 768])
 ```
 
-### 5.1.4 构建 LLaMA2 MLP模块
+### 5.1.4 构建 `LLaMA2` `MLP` 模块
 
-相对于前面我们实现的LLaMA2 Attention模块，LLaMA2 MLP模块的实现要简单一些。我们可以通过如下代码实现MLP：
+相对于前面我们实现的 `LLaMA2` `Attention` 模块，`LLaMA2` `MLP` 模块的实现要简单一些。我们可以通过如下代码实现 `MLP`：
 
-```
+```python
 class MLP(nn.Module):
     def __init__(self, dim: int, hidden_dim: int, multiple_of: int, dropout: float):
         super().__init__()
@@ -420,11 +423,11 @@ class MLP(nn.Module):
         return self.dropout(self.w2(F.silu(self.w1(x)) * self.w3(x)))
 ```
 
-我们着重观察一下forward函数的实现，首先，输入 x 通过第一层线性变换 self.w1 和 SILU 激活函数，然后，结果乘以输入 x 通过第三层线性变换 self.w3 的结果，最后，通过第二层线性变换 self.w2 和 dropout 层，得到最终输出。
+我们着重观察一下 `forward` 函数的实现，首先，输入 `x` 通过第一层线性变换 `self.w1` 和 `SILU` 激活函数，然后，结果乘以输入 `x` 通过第三层线性变换 `self.w3` 的结果，最后，通过第二层线性变换 `self.w2` 和 `dropout` 层，得到最终输出。
 
-同样大家可以使用下面的代码来对LLaMAMLP模块进行测试，可以看到代码最终输出的形状为torch.Size([1, 50, 768])，与我们输入的形状一致，说明模块的实现是正确的。
+同样大家可以使用下面的代码来对 `LLaMAMLP` 模块进行测试，可以看到代码最终输出的形状为 `torch.Size([1, 50, 768])`，与我们输入的形状一致，说明模块的实现是正确的。
 
-```
+```python
 # 创建MLP实例
 mlp = MLP(args.dim, args.hidden_dim, args.multiple_of, args.dropout)
 # 随机生成数据
@@ -436,15 +439,15 @@ print(output.shape)
 
 OUT:
 
-```
+```text
 torch.Size([1, 50, 768])
 ```
 
-### 5.1.5 LLaMA2 Decoder Layer
+### 5.1.5 `LLaMA2` `Decoder Layer`
 
-到这里，我们已经实现了LLaMA2模型的Attention模块和MLP模块，接下来我们就可以构建LLaMA2的Decoder Layer了。
+到这里，我们已经实现了 `LLaMA2` 模型的 `Attention` 模块和 `MLP` 模块，接下来我们就可以构建 `LLaMA2` 的 `Decoder Layer` 了。
 
-```
+```python
 class DecoderLayer(nn.Module):
     def __init__(self, layer_id: int, args: ModelConfig):
         super().__init__()
@@ -479,11 +482,11 @@ class DecoderLayer(nn.Module):
         return out
 ```
 
-DecoderLayer就是把我们上面完成的Attention模块和MLP模块组合在一起，实现了一个完整的Transformer模块。
+`DecoderLayer` 就是把我们上面完成的 `Attention` 模块和 `MLP` 模块组合在一起，实现了一个完整的 `Transformer` 模块。
 
-同样大家可以使用下面的代码来对DecoderLayer模块进行测试，可以看到代码最终输出的形状为torch.Size([1, 50, 768])，与我们输入的形状一致，说明模块的实现是正确的。
+同样大家可以使用下面的代码来对 `DecoderLayer` 模块进行测试，可以看到代码最终输出的形状为 `torch.Size([1, 50, 768])`，与我们输入的形状一致，说明模块的实现是正确的。
 
-```
+```python
 # 创建LLaMADecoderLayer实例
 decoderlayer = DecoderLayer(0, args)
 
@@ -502,18 +505,20 @@ print(out.shape) # 形状和输入的x一样 [batch_size, seq_len, dim]
 
 OUT:
 
-```
+```text
 torch.Size([1, 50, 768])
 ```
 
-### 5.1.6 构建 LLaMA2 模型
+### 5.1.6 构建 `LLaMA2` 模型
 
-好了，我们已经完了上述所有的模块的实现，接下来就是激动人心的时刻，我们可以构建LLaMA2模型了。，LLaMA2模型就是将DecoderLayer模块堆叠起来，构成一个完整的Transformer模型。
+好了，我们已经完了上述所有的模块的实现，接下来就是激动人心的时刻，我们可以构建 `LLaMA2` 模型了。，`LLaMA2` 模型就是将 `DecoderLayer` 模块堆叠起来，构成一个完整的 `Transformer` 模型。
+
+
 
 ```
 class Transformer(PreTrainedModel):
     config_class = ModelConfig  # 配置类
-    last_loss: Optional[torch.Tensor] # 记录最后一次计算的损失
+    last_loss: Optional[torch.Tensor]  # 记录最后一次计算的损失
 
     def __init__(self, args: ModelConfig = None):
         super().__init__(args)
@@ -538,19 +543,19 @@ class Transformer(PreTrainedModel):
         self.output = nn.Linear(args.dim, args.vocab_size, bias=False)
 
         # 将词嵌入层的权重与输出层的权重共享
-        self.tok_embeddings.weight = self.output.weight 
+        self.tok_embeddings.weight = self.output.weight
 
         # 预计算相对位置嵌入的频率
         freqs_cos, freqs_sin = precompute_freqs_cis(self.args.dim // self.args.n_heads, self.args.max_seq_len)
-        self.register_buffer(&quot;freqs_cos&quot;, freqs_cos, persistent=False)
-        self.register_buffer(&quot;freqs_sin&quot;, freqs_sin, persistent=False)
+        self.register_buffer("freqs_cos", freqs_cos, persistent=False)
+        self.register_buffer("freqs_sin", freqs_sin, persistent=False)
 
         # 初始化所有权重
         self.apply(self._init_weights)
         # 对残差投影进行特殊的缩放初始化
         for pn, p in self.named_parameters():
-            if pn.endswith(&#x27;w3.weight&#x27;) or pn.endswith(&#x27;wo.weight&#x27;):
-                torch.nn.init.normal_(p, mean=0.0, std=0.02/math.sqrt(2 * args.n_layers))
+            if pn.endswith('w3.weight') or pn.endswith('wo.weight'):
+                torch.nn.init.normal_(p, mean=0.0, std=0.02 / math.sqrt(2 * args.n_layers))
 
         # 初始化最后一次前向传播的损失属性
         self.last_loss = None
@@ -565,21 +570,21 @@ class Transformer(PreTrainedModel):
                 torch.nn.init.zeros_(module.bias)
         elif isinstance(module, nn.Embedding):
             torch.nn.init.normal_(module.weight, mean=0.0, std=0.02)
-    
-    def forward(self, tokens: torch.Tensor, targets: Optional[torch.Tensor] = None, **keyargs) -&gt; torch.Tensor:
-        &quot;&quot;&quot;
+
+    def forward(self, tokens: torch.Tensor, targets: Optional[torch.Tensor] = None, **keyargs) -> torch.Tensor:
+        """
         - tokens: Optional[torch.Tensor], 输入 token 张量。
         - targets: Optional[torch.Tensor], 目标 token 张量。
         - kv_cache: bool, 是否使用键值缓存。
         - keyargs: 其他关键字参数。
 
         - self.OUT: CausalLMOutputWithPast, 包含 logits 和损失。
-        &quot;&quot;&quot;
+        """
 
-        if &#x27;input_ids&#x27; in keyargs:
-            tokens = keyargs[&#x27;input_ids&#x27;]
-        if &#x27;attention_mask&#x27; in keyargs:
-            targets = keyargs[&#x27;attention_mask&#x27;]
+        if 'input_ids' in keyargs:
+            tokens = keyargs['input_ids']
+        if 'attention_mask' in keyargs:
+            targets = keyargs['attention_mask']
 
         # 前向传播函数
         _bsz, seqlen = tokens.shape
@@ -599,33 +604,32 @@ class Transformer(PreTrainedModel):
         if targets is not None:
             # 如果给定了目标，计算损失
             logits = self.output(h)
-            self.last_loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=0, reduction=&#x27;none&#x27;)
+            self.last_loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=0, reduction='none')
         else:
             # 推理时的小优化：只对最后一个位置的输出进行前向传播
-            logits = self.output(h[:, [-1], :]) 
+            logits = self.output(h[:, [-1], :])
             self.last_loss = None
 
         # 设置输出
-        self.OUT.__setitem__(&#x27;logits&#x27;, logits)
-        self.OUT.__setitem__(&#x27;last_loss&#x27;, self.last_loss)
+        self.OUT.__setitem__('logits', logits)
+        self.OUT.__setitem__('last_loss', self.last_loss)
         return self.OUT
 
-    
     @torch.inference_mode()
     def generate(self, idx, stop_id=None, max_new_tokens=256, temperature=1.0, top_k=None):
-        &quot;&quot;&quot;
+        """
         给定输入序列 idx（形状为 (bz,seq_len) 的长整型张量），通过多次生成新 token 来完成序列。
         在 model.eval() 模式下运行。效率较低的采样版本，没有使用键k/v cache。
-        &quot;&quot;&quot;
+        """
         index = idx.shape[1]
         for _ in range(max_new_tokens):
             # 如果序列上下文过长，截断它到最大长度
-            idx_cond = idx if idx.size(1) &lt;= self.args.max_seq_len else idx[:, -self.args.max_seq_len:]
-            
+            idx_cond = idx if idx.size(1) <= self.args.max_seq_len else idx[:, -self.args.max_seq_len:]
+
             # 前向传播获取序列中最后一个位置的 logits
             logits = self(idx_cond).logits
-            logits = logits[:, -1, :] # 只保留最后一个时间步的输出
-            
+            logits = logits[:, -1, :]  # 只保留最后一个时间步的输出
+
             if temperature == 0.0:
                 # 选择最有可能的索引
                 _, idx_next = torch.topk(logits, k=1, dim=-1)
@@ -634,10 +638,9 @@ class Transformer(PreTrainedModel):
                 logits = logits / temperature
                 if top_k is not None:
                     v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
-                    logits[logits &lt; v[:, [-1]]] = -float(&#x27;Inf&#x27;)
+                    logits[logits < v[:, [-1]]] = -float('Inf')
                 probs = F.softmax(logits, dim=-1)
                 idx_next = torch.multinomial(probs, num_samples=1)
-            
 
             if idx_next == stop_id:
                 break
@@ -645,10 +648,10 @@ class Transformer(PreTrainedModel):
             # 将采样的索引添加到序列中并继续
             idx = torch.cat((idx, idx_next), dim=1)
 
-        return idx[:, index:] # 只返回生成的token
+        return idx[:, index:]  # 只返回生成的token
 ```
 
-同样大家可以使用下面的代码来对Transformer模块进行测试，可以看到代码最终输出的形状为torch.Size([1, 1, 6144])，与我们输入的形状一致，说明模块的实现是正确的。
+同样大家可以使用下面的代码来对`Transformer`模块进行测试，可以看到代码最终输出的形状为`torch.Size([1, 1, 6144])`，与我们输入的形状一致，说明模块的实现是正确的。
 
 ```
 # LLaMA2Model.forward 接受两个参数，tokens和targets，其中tokens是输入的张量, 应为int类型
@@ -657,13 +660,11 @@ x = torch.randint(0, 6144, (1, 50)) # [bs, seq_len]
 model = Transformer(args=args)
 # 计算model的全部参数
 num_params = sum(p.numel() for p in model.parameters())
-print(&#x27;Number of parameters:&#x27;, num_params)
+print('Number of parameters:', num_params)
 
 out = model(x)
 print(out.logits.shape) # [batch_size, 1, vocab_size]
 ```
-
-OUT:
 
 ```
 Number of parameters: 82594560
@@ -672,100 +673,100 @@ torch.Size([1, 1, 6144])
 
 ## 5.2 训练 Tokenizer
 
-在自然语言处理 (NLP) 中，Tokenizer 是一种将文本分解为较小单位（称为 token）的工具。这些 token 可以是词、子词、字符，甚至是特定的符号。Tokenization 是 NLP 中的第一步，直接影响后续处理和分析的效果。不同类型的 tokenizer 适用于不同的应用场景，以下是几种常见的 tokenizer 及其特点。
+在自然语言处理 (NLP) 中，`Tokenizer` 是一种将文本分解为较小单位（称为 `token`）的工具。这些 `token` 可以是词、子词、字符，甚至是特定的符号。`Tokenization` 是 NLP 中的第一步，直接影响后续处理和分析的效果。不同类型的 `tokenizer` 适用于不同的应用场景，以下是几种常见的 `tokenizer` 及其特点。
 
 ### 5.2.1 Word-based Tokenizer
 
-Word-based Tokenizer 是最简单和直观的一种分词方法。它将文本按空格和标点符号分割成单词。这种方法的优点在于其简单和直接，易于实现，且与人类对语言的直觉相符。然而，它也存在一些明显的缺点，如无法处理未登录词（OOV，out-of-vocabulary）和罕见词，对复合词（如“New York”）或缩略词（如“don't”）的处理也不够精细。此外，Word-based Tokenizer 在处理不同语言时也会遇到挑战，因为一些语言（如中文、日文）没有显式的单词分隔符。
+`Word-based Tokenizer` 是最简单和直观的一种分词方法。它将文本按空格和标点符号分割成单词。这种方法的优点在于其简单和直接，易于实现，且与人类对语言的直觉相符。然而，它也存在一些明显的缺点，如无法处理未登录词（`OOV`，out-of-vocabulary）和罕见词，对复合词（如“New York”）或缩略词（如“don't”）的处理也不够精细。此外，`Word-based Tokenizer` 在处理不同语言时也会遇到挑战，因为一些语言（如中文、日文）没有显式的单词分隔符。
 
 示例：
 
 ```
-Input: &quot;Hello, world! There is Datawhale.&quot;
-Output: [&quot;Hello&quot;, &quot;,&quot;, &quot;world&quot;, &quot;!&quot;, &quot;There&quot;, &quot;is&quot;, &quot;Datawhale&quot;, &quot;.&quot;]
+Input: "Hello, world! There is Datawhale."
+Output: ["Hello", ",", "world", "!", "There", "is", "Datawhale", "."]
 ```
 
-在这个例子中，输入的句子被分割成一系列单词和标点符号，每个单词或标点符号都作为一个独立的 token。
+在这个例子中，输入的句子被分割成一系列单词和标点符号，每个单词或标点符号都作为一个独立的 `token`。
 
 ### 5.2.2 Character-based Tokenizer
 
-Character-based Tokenizer 将文本中的每个字符视为一个独立的 token。这种方法能非常精细地处理文本，适用于处理拼写错误、未登录词或新词。由于每个字符都是一个独立的 token，因此这种方法可以捕捉到非常细微的语言特征。这对于一些特定的应用场景，如生成式任务或需要处理大量未登录词的任务，特别有用。但是，这种方法也会导致 token 序列变得非常长，增加了模型的计算复杂度和训练时间。此外，字符级的分割可能会丢失一些词级别的语义信息，使得模型难以理解上下文。
+`Character-based Tokenizer` 将文本中的每个字符视为一个独立的 `token`。这种方法能非常精细地处理文本，适用于处理拼写错误、未登录词或新词。由于每个字符都是一个独立的 `token`，因此这种方法可以捕捉到非常细微的语言特征。这对于一些特定的应用场景，如生成式任务或需要处理大量未登录词的任务，特别有用。但是，这种方法也会导致 `token` 序列变得非常长，增加了模型的计算复杂度和训练时间。此外，字符级的分割可能会丢失一些词级别的语义信息，使得模型难以理解上下文。
 
 示例：
 
 ```
-Input: &quot;Hello&quot;
-Output: [&quot;H&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]
+Input: "Hello"
+Output: ["H", "e", "l", "l", "o"]
 ```
 
-在这个例子中，单词“Hello”被分割成单个字符，每个字符作为一个独立的 token。这种方法能够处理任何语言和字符集，具有极大的灵活性。
+在这个例子中，单词“Hello”被分割成单个字符，每个字符作为一个独立的 `token`。这种方法能够处理任何语言和字符集，具有极大的灵活性。
 
 ### 5.2.3 Subword Tokenizer
 
-Subword Tokenizer 介于词和字符之间，能够更好地平衡分词的细粒度和处理未登录词的能力。Subword Tokenizer 的关键思想是将文本分割成比单词更小的单位，但又比字符更大，这样既能处理未知词，又能保持一定的语义信息。常见的子词分词方法包括 BPE、WordPiece 和 Unigram。
+`Subword Tokenizer` 介于词和字符之间，能够更好地平衡分词的细粒度和处理未登录词的能力。`Subword Tokenizer` 的关键思想是将文本分割成比单词更小的单位，但又比字符更大，这样既能处理未知词，又能保持一定的语义信息。常见的子词分词方法包括 `BPE`、`WordPiece` 和 `Unigram`。
 
 #### （1）Byte Pair Encoding (BPE)
 
-**BPE** 是一种基于统计方法，通过反复合并频率最高的字符或字符序列对来生成子词词典。这种方法的优点在于其简单和高效，能够有效地处理未知词和罕见词，同时保持较低的词典大小。BPE 的合并过程是自底向上的，逐步将频率最高的字符对合并成新的子词，直到达到预定的词典大小或不再有高频的字符对。
+`BPE` 是一种基于统计方法，通过反复合并频率最高的字符或字符序列对来生成子词词典。这种方法的优点在于其简单和高效，能够有效地处理未知词和罕见词，同时保持较低的词典大小。`BPE` 的合并过程是自底向上的，逐步将频率最高的字符对合并成新的子词，直到达到预定的词典大小或不再有高频的字符对。
 
 示例：
 
 ```
-Input: &quot;lower&quot;
-Output: [&quot;low&quot;, &quot;er&quot;]
+Input: "lower"
+Output: ["low", "er"]
 
-Input: &quot;newest&quot;
-Output: [&quot;new&quot;, &quot;est&quot;]
+Input: "newest"
+Output: ["new", "est"]
 ```
 
 在这个例子中，单词“lower”被分割成子词“low”和“er”，而“newest”被分割成“new”和“est”。这种方法有效地处理了词干和词缀，保持了单词的基本语义结构。
 
 #### （2）WordPiece
 
-**WordPiece** 是另一种基于子词的分词方法，最初用于谷歌的 BERT 模型。与 BPE 类似，WordPiece 通过最大化子词序列的似然函数来生成词典，但在合并子词时更注重语言模型的优化。WordPiece 会优先选择能够最大化整体句子概率的子词，使得分词结果在语言模型中具有更高的概率。
+`WordPiece` 是另一种基于子词的分词方法，最初用于谷歌的 `BERT` 模型。与 `BPE` 类似，`WordPiece` 通过最大化子词序列的似然函数来生成词典，但在合并子词时更注重语言模型的优化。`WordPiece` 会优先选择能够最大化整体句子概率的子词，使得分词结果在语言模型中具有更高的概率。
 
 示例：
 
 ```
-Input: &quot;unhappiness&quot;
-Output: [&quot;un&quot;, &quot;##happiness&quot;]
+Input: "unhappiness"
+Output: ["un", "##happiness"]
 ```
 
-在这个例子中，单词“unhappiness”被分割成子词“un”和“##happiness”，其中“##”表示这是一个后缀子词。通过这种方式，WordPiece 能够更好地处理复合词和派生词，保留更多的语义信息。
+在这个例子中，单词“unhappiness”被分割成子词“un”和“##happiness”，其中“##”表示这是一个后缀子词。通过这种方式，`WordPiece` 能够更好地处理复合词和派生词，保留更多的语义信息。
 
 #### （3）Unigram
 
-**Unigram** 分词方法基于概率模型，通过选择具有最高概率的子词来分割文本。Unigram 词典是通过训练语言模型生成的，可以处理多种语言和不同类型的文本。Unigram 模型会为每个子词分配一个概率，然后根据这些概率进行最优分割。
+`Unigram` 分词方法基于概率模型，通过选择具有最高概率的子词来分割文本。`Unigram` 词典是通过训练语言模型生成的，可以处理多种语言和不同类型的文本。`Unigram` 模型会为每个子词分配一个概率，然后根据这些概率进行最优分割。
 
-示例：
+
 
 ```
-Input: &quot;unhappiness&quot;
-Output: [&quot;un&quot;, &quot;happiness&quot;]
+Input: "unhappiness"
+Output: ["un", "happiness"]
 
-Input: &quot;newest&quot;
-Output: [&quot;new&quot;, &quot;est&quot;]
+Input: "newest"
+Output: ["new", "est"]
 ```
 
 在这个例子中，单词“unhappiness”被分割成子词“un”和“happiness”，而“newest”被分割成“new”和“est”。这种方法通过概率模型有效地处理了子词分割，使得分割结果更符合语言使用习惯。
 
-每种 Tokenizer 方法都有其特定的应用场景和优缺点，选择适合的 Tokenizer 对于自然语言处理任务的成功至关重要。
+每种 `Tokenizer` 方法都有其特定的应用场景和优缺点，选择适合的 `Tokenizer` 对于自然语言处理任务的成功至关重要。
 
-### 5.2.4 训练一个 Tokenizer
+## 5.2.4 训练一个 Tokenizer
 
-这里我们选择使用 BPE 算法来训练一个 Subword Tokenizer。BPE 是一种简单而有效的分词方法，能够处理未登录词和罕见词，同时保持较小的词典大小。我们将使用 Hugging Face 的 tokenizers 库来训练一个 BPE Tokenizer。
+这里我们选择使用 `BPE` 算法来训练一个 `Subword Tokenizer`。`BPE` 是一种简单而有效的分词方法，能够处理未登录词和罕见词，同时保持较小的词典大小。我们将使用 Hugging Face 的 `tokenizers` 库来训练一个 `BPE Tokenizer`。
 
-#### Step 1: 安装和导入依赖库
+### Step 1: 安装和导入依赖库
 
-首先，我们需要安装 tokenizers 库，除此之外还需要安装 datasets 和 transformers 库，用于加载训练数据和加载训练完成后的 Tokenizer。
+首先，我们需要安装 `tokenizers` 库，除此之外还需要安装 `datasets` 和 `transformers` 库，用于加载训练数据和加载训练完成后的 `Tokenizer`。
 
-```
+```bash
 pip install tokenizers datasets transformers
 ```
 
 然后，导入所需的库。
 
-```
+```python
 import random
 import json
 import os
@@ -781,104 +782,104 @@ from tokenizers.normalizers import NFKC
 from typing import Generator
 ```
 
-#### Step 2: 加载训练数据
+### Step 2: 加载训练数据
 
-这里我们使用与预训练相同的数据集（出门问问序列猴子开源数据集）训练tokenizer，可使用code/download_dataset.sh 和 code/deal_dataset.py 下载和预处理数据集。
+这里我们使用与预训练相同的数据集（出门问问序列猴子开源数据集）训练 `tokenizer`，可使用 `code/download_dataset.sh` 和 `code/deal_dataset.py` 下载和预处理数据集。
 
-> 注：由于数据集过大，可能会导致在训练过程中内存不足。因为本项目为学习目的，建议学习者手动分割小部分数据集用于训练验证，笔者也在 Github 仓库中存放了训练好的 tokenizer，可以直接使用。
+> 注：由于数据集过大，可能会导致在训练过程中内存不足。因为本项目为学习目的，建议学习者手动分割小部分数据集用于训练验证，笔者也在 Github 仓库中存放了训练好的 `tokenizer`，可以直接使用。
 
-```
-def read_texts_from_jsonl(file_path: str) -&gt; Generator[str, None, None]:
-    &quot;&quot;&quot;读取JSONL文件并安全提取文本数据&quot;&quot;&quot;
-    with open(file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+```python
+def read_texts_from_jsonl(file_path: str) -> Generator[str, None, None]:
+    """读取JSONL文件并安全提取文本数据"""
+    with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
             try:
                 data = json.loads(line)
-                if &#x27;text&#x27; not in data:
-                    raise KeyError(f&quot;Missing &#x27;text&#x27; field in line {line_num}&quot;)
-                yield data[&#x27;text&#x27;]
+                if 'text' not in data:
+                    raise KeyError(f"Missing 'text' field in line {line_num}")
+                yield data['text']
             except json.JSONDecodeError:
-                print(f&quot;Error decoding JSON in line {line_num}&quot;)
+                print(f"Error decoding JSON in line {line_num}")
                 continue
             except KeyError as e:
                 print(e)
                 continue
 ```
 
-#### Step 3: 创建配置文件
+### Step 3: 创建配置文件
 
-在训练 BPE Tokenizer 之前，我们需要创建一个完整的 Tokenizer 配置文件，包括 tokenizer_config.json 和 special_tokens_map.json。这些配置文件定义了 Tokenizer 的参数和特殊标记，用于训练和加载 Tokenizer。此处的chat_template我们与Qwen2.5模型保持一致。
+在训练 `BPE Tokenizer` 之前，我们需要创建一个完整的 `Tokenizer` 配置文件，包括 `tokenizer_config.json` 和 `special_tokens_map.json`。这些配置文件定义了 `Tokenizer` 的参数和特殊标记，用于训练和加载 `Tokenizer`。此处的 `chat_template` 我们与 Qwen2.5 模型保持一致。
 
-```
-def create_tokenizer_config(save_dir: str) -&gt; None:
-    &quot;&quot;&quot;创建完整的tokenizer配置文件&quot;&quot;&quot;
+```python
+def create_tokenizer_config(save_dir: str) -> None:
+    """创建完整的tokenizer配置文件"""
     config = {
-        &quot;add_bos_token&quot;: False,
-        &quot;add_eos_token&quot;: False,
-        &quot;add_prefix_space&quot;: False,
-        &quot;bos_token&quot;: &quot;&lt;|im_start|&gt;&quot;,
-        &quot;eos_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;pad_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;unk_token&quot;: &quot;&lt;unk&gt;&quot;,
-        &quot;model_max_length&quot;: 1000000000000000019884624838656,
-        &quot;clean_up_tokenization_spaces&quot;: False,
-        &quot;tokenizer_class&quot;: &quot;PreTrainedTokenizerFast&quot;,
-        &quot;chat_template&quot;: (
-            &quot;{% for message in messages %}&quot;
-            &quot;{% if message[&#x27;role&#x27;] == &#x27;system&#x27; %}&quot;
-            &quot;&lt;|im_start|&gt;system\n{{ message[&#x27;content&#x27;] }}&lt;|im_end|&gt;\n&quot;
-            &quot;{% elif message[&#x27;role&#x27;] == &#x27;user&#x27; %}&quot;
-            &quot;&lt;|im_start|&gt;user\n{{ message[&#x27;content&#x27;] }}&lt;|im_end|&gt;\n&quot;
-            &quot;{% elif message[&#x27;role&#x27;] == &#x27;assistant&#x27; %}&quot;
-            &quot;&lt;|im_start|&gt;assistant\n{{ message[&#x27;content&#x27;] }}&lt;|im_end|&gt;\n&quot;
-            &quot;{% endif %}&quot;
-            &quot;{% endfor %}&quot;
-            &quot;{% if add_generation_prompt %}&quot;
-            &quot;{{ &#x27;&lt;|im_start|&gt;assistant\n&#x27; }}&quot;
-            &quot;{% endif %}&quot;
+        "add_bos_token": False,
+        "add_eos_token": False,
+        "add_prefix_space": False,
+        "bos_token": "<|im_start|>",
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|im_end|>",
+        "unk_token": "<unk>",
+        "model_max_length": 1000000000000000019884624838656,
+        "clean_up_tokenization_spaces": False,
+        "tokenizer_class": "PreTrainedTokenizerFast",
+        "chat_template": (
+            "{% for message in messages %}"
+            "{% if message['role'] == 'system' %}"
+            "<|im_start|>system\n{{ message['content'] }}<|im_end|>\n"
+            "{% elif message['role'] == 'user' %}"
+            "<|im_start|>user\n{{ message['content'] }}<|im_end|>\n"
+            "{% elif message['role'] == 'assistant' %}"
+            "<|im_start|>assistant\n{{ message['content'] }}<|im_end|>\n"
+            "{% endif %}"
+            "{% endfor %}"
+            "{% if add_generation_prompt %}"
+            "{{ '<|im_start|>assistant\n' }}"
+            "{% endif %}"
         )
     }
 
     # 保存主配置文件
-    with open(os.path.join(save_dir, &quot;tokenizer_config.json&quot;), &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(os.path.join(save_dir, "tokenizer_config.json"), "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=4)
 
     # 创建special_tokens_map.json
     special_tokens_map = {
-        &quot;bos_token&quot;: &quot;&lt;|im_start|&gt;&quot;,
-        &quot;eos_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;unk_token&quot;: &quot;&lt;unk&gt;&quot;,
-        &quot;pad_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;additional_special_tokens&quot;: [&quot;&lt;s&gt;&quot;, &quot;&lt;/s&gt;&quot;]
+        "bos_token": "<|im_start|>",
+        "eos_token": "<|im_end|>",
+        "unk_token": "<unk>",
+        "pad_token": "<|im_end|>",
+        "additional_special_tokens": ["<s>", "</s>"]
     }
-    with open(os.path.join(save_dir, &quot;special_tokens_map.json&quot;), &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(os.path.join(save_dir, "special_tokens_map.json"), "w", encoding="utf-8") as f:
         json.dump(special_tokens_map, f, ensure_ascii=False, indent=4)
 ```
 
-#### Step 4: 训练 BPE Tokenizer
+### Step 4: 训练 `BPE Tokenizer`
 
-在训练 BPE Tokenizer 之前，我们需要定义一个训练函数，用于训练 Tokenizer 并保存训练好的 Tokenizer 文件。这里我们使用 tokenizers 库中的 Tokenizer 类来训练 BPE Tokenizer。
+在训练 `BPE Tokenizer` 之前，我们需要定义一个训练函数，用于训练 `Tokenizer` 并保存训练好的 `Tokenizer` 文件。这里我们使用 `tokenizers` 库中的 `Tokenizer` 类来训练 `BPE Tokenizer`。
 
-可以看到我们在训练 Tokenizer 时，配置了一些特殊的 token，如 <unk>、<s>、</s>、<|im_start|> 和 <|im_end|>。这些 token 用于标记未知词、句子的开始和结束，以及对话的开始和结束。这些特殊 token 可以帮助模型更好地理解文本数据，提高模型的泛化能力和效果。
+可以看到我们在训练 `Tokenizer` 时，配置了一些特殊的 token，如 `<unk>`、`<s>`、`</s>`、`<|im_start|>` 和 `<|im_end|>`。这些 token 用于标记未知词、句子的开始和结束，以及对话的开始和结束。这些特殊 token 可以帮助模型更好地理解文本数据，提高模型的泛化能力和效果。
 
-```
-def train_tokenizer(data_path: str, save_dir: str, vocab_size: int = 8192) -&gt; None:
-    &quot;&quot;&quot;训练并保存自定义tokenizer&quot;&quot;&quot;
+```python
+def train_tokenizer(data_path: str, save_dir: str, vocab_size: int = 8192) -> None:
+    """训练并保存自定义tokenizer"""
     os.makedirs(save_dir, exist_ok=True)
     
     # 初始化tokenizer
-    tokenizer = Tokenizer(models.BPE(unk_token=&quot;&lt;unk&gt;&quot;))
+    tokenizer = Tokenizer(models.BPE(unk_token="<unk>"))
     tokenizer.normalizer = NFKC()  # 添加文本规范化
     tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
     tokenizer.decoder = decoders.ByteLevel()
 
     # 配置特殊token
     special_tokens = [
-        &quot;&lt;unk&gt;&quot;, 
-        &quot;&lt;s&gt;&quot;, 
-        &quot;&lt;/s&gt;&quot;, 
-        &quot;&lt;|im_start|&gt;&quot;, 
-        &quot;&lt;|im_end|&gt;&quot;
+        "<unk>", 
+        "<s>", 
+        "</s>", 
+        "<|im_start|>", 
+        "<|im_end|>"
     ]
 
     # 配置训练器
@@ -891,194 +892,197 @@ def train_tokenizer(data_path: str, save_dir: str, vocab_size: int = 8192) -&gt;
     )
 
     # 训练tokenizer
-    print(f&quot;Training tokenizer with data from {data_path}&quot;)
+    print(f"Training tokenizer with data from {data_path}")
     texts = read_texts_from_jsonl(data_path)
     tokenizer.train_from_iterator(texts, trainer=trainer, length=os.path.getsize(data_path))
 
     # 验证特殊token映射
     try:
-        assert tokenizer.token_to_id(&quot;&lt;unk&gt;&quot;) == 0
-        assert tokenizer.token_to_id(&quot;&lt;s&gt;&quot;) == 1
-        assert tokenizer.token_to_id(&quot;&lt;/s&gt;&quot;) == 2
-        assert tokenizer.token_to_id(&quot;&lt;|im_start|&gt;&quot;) == 3
-        assert tokenizer.token_to_id(&quot;&lt;|im_end|&gt;&quot;) == 4
+        assert tokenizer.token_to_id("<unk>") == 0
+        assert tokenizer.token_to_id("<s>") == 1
+        assert tokenizer.token_to_id("</s>") == 2
+        assert tokenizer.token_to_id("<|im_start|>") == 3
+        assert tokenizer.token_to_id("<|im_end|>") == 4
     except AssertionError as e:
-        print(&quot;Special tokens mapping error:&quot;, e)
+        print("Special tokens mapping error:", e)
         raise
 
     # 保存tokenizer文件
-    tokenizer.save(os.path.join(save_dir, &quot;tokenizer.json&quot;))
+    tokenizer.save(os.path.join(save_dir, "tokenizer.json"))
     
     # 创建配置文件
     create_tokenizer_config(save_dir)
-    print(f&quot;Tokenizer saved to {save_dir}&quot;)
+    print(f"Tokenizer saved to {save_dir}")
 ```
 
-#### Step 5: 使用训练好的 Tokenizer
+### Step 5: 使用训练好的 `Tokenizer`
 
-我们可以使用训练好的 Tokenizer 来处理文本数据，如编码、解码、生成对话等。下面是一个简单的示例，展示了如何使用训练好的 Tokenizer 来处理文本数据。
+我们可以使用训练好的 `Tokenizer` 来处理文本数据，如编码、解码、生成对话等。下面是一个简单的示例，展示了如何使用训练好的 `Tokenizer` 来处理文本数据。
 
-```
-def eval_tokenizer(tokenizer_path: str) -&gt; None:
-    &quot;&quot;&quot;评估tokenizer功能&quot;&quot;&quot;
+
+
+```python
+def eval_tokenizer(tokenizer_path: str) -> None:
+    """评估tokenizer功能"""
     try:
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     except Exception as e:
-        print(f&quot;Error loading tokenizer: {e}&quot;)
+        print(f"Error loading tokenizer: {e}")
         return
 
     # 测试基本属性
-    print(&quot;\n=== Tokenizer基本信息 ===&quot;)
-    print(f&quot;Vocab size: {len(tokenizer)}&quot;)
-    print(f&quot;Special tokens: {tokenizer.all_special_tokens}&quot;)
-    print(f&quot;Special token IDs: {tokenizer.all_special_ids}&quot;)
+    print("\n=== Tokenizer基本信息 ===")
+    print(f"Vocab size: {len(tokenizer)}")
+    print(f"Special tokens: {tokenizer.all_special_tokens}")
+    print(f"Special token IDs: {tokenizer.all_special_ids}")
 
     # 测试聊天模板
     messages = [
-        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个AI助手。&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;How are you?&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;I&#x27;m fine, thank you. and you?&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;I&#x27;m good too.&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;That&#x27;s great to hear!&quot;},
+        {"role": "system", "content": "你是一个AI助手。"},
+        {"role": "user", "content": "How are you?"},
+        {"role": "assistant", "content": "I'm fine, thank you. and you?"},
+        {"role": "user", "content": "I'm good too."},
+        {"role": "assistant", "content": "That's great to hear!"},
     ]
-    
-    print(&quot;\n=== 聊天模板测试 ===&quot;)
+
+    print("\n=== 聊天模板测试 ===")
     prompt = tokenizer.apply_chat_template(
-        messages, 
-        tokenize=False, 
+        messages,
+        tokenize=False,
         # add_generation_prompt=True
     )
-    print(&quot;Generated prompt:\n&quot;, prompt, sep=&quot;&quot;)
+    print("Generated prompt:\n", prompt, sep="")
 
     # 测试编码解码
-    print(&quot;\n=== 编码解码测试 ===&quot;)
+    print("\n=== 编码解码测试 ===")
     encoded = tokenizer(prompt, truncation=True, max_length=256)
-    decoded = tokenizer.decode(encoded[&quot;input_ids&quot;], skip_special_tokens=False)
-    print(&quot;Decoded text matches original:&quot;, decoded == prompt)
+    decoded = tokenizer.decode(encoded["input_ids"], skip_special_tokens=False)
+    print("Decoded text matches original:", decoded == prompt)
 
     # 测试特殊token处理
-    print(&quot;\n=== 特殊token处理 ===&quot;)
-    test_text = &quot;&lt;|im_start|&gt;user\nHello&lt;|im_end|&gt;&quot;
+    print("\n=== 特殊token处理 ===")
+    test_text = "<|im_start|>user\nHello<|im_end|>"
     encoded = tokenizer(test_text).input_ids
     decoded = tokenizer.decode(encoded)
-    print(f&quot;Original: {test_text}&quot;)
-    print(f&quot;Decoded:  {decoded}&quot;)
-    print(&quot;Special tokens preserved:&quot;, decoded == test_text)
+    print(f"Original: {test_text}")
+    print(f"Decoded:  {decoded}")
+    print("Special tokens preserved:", decoded == test_text)
 ```
 
+```python
+eval_tokenizer('your tokenizer path')
 ```
-eval_tokenizer(&#x27;your tokenizer path&#x27;)
-```
-
-OUT:
 
 ```
 === Tokenizer基本信息 ===
 Vocab size: 6144
-Special tokens: [&#x27;&lt;|im_start|&gt;&#x27;, &#x27;&lt;|im_end|&gt;&#x27;, &#x27;&lt;unk&gt;&#x27;, &#x27;&lt;s&gt;&#x27;, &#x27;&lt;/s&gt;&#x27;]
+Special tokens: ['<|im_start|>', '<|im_end|>', '<unk>', '<s>', '</s>']
 Special token IDs: [3, 4, 0, 1, 2]
 
 === 聊天模板测试 ===
 Generated prompt:
-&lt;|im_start|&gt;system
-你是一个AI助手。&lt;|im_end|&gt;
-&lt;|im_start|&gt;user
-How are you?&lt;|im_end|&gt;
-&lt;|im_start|&gt;assistant
-I&#x27;m fine, thank you. and you?&lt;|im_end|&gt;
-&lt;|im_start|&gt;user
-I&#x27;m good too.&lt;|im_end|&gt;
-&lt;|im_start|&gt;assistant
-That&#x27;s great to hear!&lt;|im_end|&gt;
-
+<|im_start|>system
+你是一个AI助手。<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+I'm fine, thank you. and you?<|im_end|>
+<|im_start|>user
+I'm good too.<|im_end|>
+<|im_start|>assistant
+That's great to hear!<|im_end|>
 
 === 编码解码测试 ===
 Decoded text matches original: False
 
 === 特殊token处理 ===
-Original: &lt;|im_start|&gt;user
-Hello&lt;|im_end|&gt;
-Decoded:  &lt;|im_start|&gt; user
-Hello&lt;|im_end|&gt;
+Original: <|im_start|>user
+Hello<|im_end|>
+Decoded:  <|im_start|> user
+Hello<|im_end|>
 Special tokens preserved: False
 ```
 
 ## 5.3 预训练一个小型LLM
 
-在前面的章节中，我们熟悉了各种大模型的模型结构，以及如如何训练Tokenizer。在本节中，我们将动手训练一个八千万参数的LLM。
+在前面的章节中，我们熟悉了各种大模型的模型结构，以及如何训练`Tokenizer`。在本节中，我们将动手训练一个八千万参数的LLM。
 
 ### 5.3.1 数据下载
 
 首先，我们需要下载预训练数据集。在这里，我们使用两个开源的数据集，包含了大量的中文对话数据，可以用于训练对话生成模型。
 
-+   出门问问序列猴子开源数据集：出门问问序列猴子通用文本数据集由来自网页、百科、博客、问答、开源代码、书籍、报刊、专利、教材、考题等多种公开可获取的数据进行汇总清洗之后而形成的大语言模型预训练语料。总量大概在 10B Token。
++ 出门问问序列猴子开源数据集：出门问问序列猴子通用文本数据集由来自网页、百科、博客、问答、开源代码、书籍、报刊、专利、教材、考题等多种公开可获取的数据进行汇总清洗之后而形成的大语言模型预训练语料。总量大概在 10B Token。
 
-+   BelleGroup：350万条中文对话数据集，包含了人机对话、人人对话、人物对话等多种对话数据，可以用于训练对话生成模型。
++ BelleGroup：350万条中文对话数据集，包含了人机对话、人人对话、人物对话等多种对话数据，可以用于训练对话生成模型。
 
-```
+```python
 # 下载预训练数据集
-os.system(&quot;modelscope download --dataset ddzhu123/seq-monkey mobvoi_seq_monkey_general_open_corpus.jsonl.tar.bz2 --local_dir your_local_dir&quot;)
+os.system("modelscope download --dataset ddzhu123/seq-monkey mobvoi_seq_monkey_general_open_corpus.jsonl.tar.bz2 --local_dir your_local_dir")
 # 解压预训练数据集
-os.system(&quot;tar -xvf your_local_dir/mobvoi_seq_monkey_general_open_corpus.jsonl.tar.bz2&quot;)
+os.system("tar -xvf your_local_dir/mobvoi_seq_monkey_general_open_corpus.jsonl.tar.bz2")
 
 # 下载SFT数据集
-os.system(f&#x27;huggingface-cli download --repo-type dataset --resume-download BelleGroup/train_3.5M_CN --local-dir BelleGroup&#x27;)
-
-
+os.system(f'huggingface-cli download --repo-type dataset --resume-download BelleGroup/train_3.5M_CN --local-dir BelleGroup')
 
 # 1 处理预训练数据
 def split_text(text, chunk_size=512):
-    &quot;&quot;&quot;将文本按指定长度切分成块&quot;&quot;&quot;
+    """将文本按指定长度切分成块"""
     return [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
 
-input_file = &#x27;mobvoi_seq_monkey_general_open_corpus.jsonl&#x27;
+input_file = 'mobvoi_seq_monkey_general_open_corpus.jsonl'
 
-with open(&#x27;seq_monkey_datawhale.jsonl&#x27;, &#x27;a&#x27;, encoding=&#x27;utf-8&#x27;) as pretrain:
-    with open(input_file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+with open('seq_monkey_datawhale.jsonl', 'a', encoding='utf-8') as pretrain:
+    with open(input_file, 'r', encoding='utf-8') as f:
         data = f.readlines()
-        for line in tqdm(data, desc=f&quot;Processing lines in {input_file}&quot;, leave=False):  # 添加行级别的进度条
+        for line in tqdm(data, desc=f"Processing lines in {input_file}", leave=False):  # 添加行级别的进度条
             line = json.loads(line)
-            text = line[&#x27;text&#x27;]
+            text = line['text']
             chunks = split_text(text)
             for chunk in chunks:
-                pretrain.write(json.dumps({&#x27;text&#x27;: chunk}, ensure_ascii=False) + &#x27;\n&#x27;)
+                pretrain.write(json.dumps({'text': chunk}, ensure_ascii=False) + '\n')
 
 # 2 处理SFT数据
 
 def convert_message(data):
-    &quot;&quot;&quot;
+    """
     将原始数据转换为标准格式
-    &quot;&quot;&quot;
+    """
     message = [
-        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个AI助手&quot;},
+        {"role": "system", "content": "你是一个AI助手"},
     ]
     for item in data:
-        if item[&#x27;from&#x27;] == &#x27;human&#x27;:
-            message.append({&#x27;role&#x27;: &#x27;user&#x27;, &#x27;content&#x27;: item[&#x27;value&#x27;]})
-        elif item[&#x27;from&#x27;] == &#x27;assistant&#x27;:
-            message.append({&#x27;role&#x27;: &#x27;assistant&#x27;, &#x27;content&#x27;: item[&#x27;value&#x27;]})
+        if item['from'] == 'human':
+            message.append({'role': 'user', 'content': item['value']})
+        elif item['from'] == 'assistant':
+            message.append({'role': 'assistant', 'content': item['value']})
     return message
 
-with open(&#x27;BelleGroup_sft.jsonl&#x27;, &#x27;a&#x27;, encoding=&#x27;utf-8&#x27;) as sft:
-    with open(&#x27;BelleGroup/train_3.5M_CN.json&#x27;, &#x27;r&#x27;) as f:
+with open('BelleGroup_sft.jsonl', 'a', encoding='utf-8') as sft:
+    with open('BelleGroup/train_3.5M_CN.json', 'r') as f:
         data = f.readlines()
-        for item in tqdm(data, desc=&quot;Processing&quot;, unit=&quot;lines&quot;):
+        for item in tqdm(data, desc="Processing", unit="lines"):
             item = json.loads(item)
-            message = convert_message(item[&#x27;conversations&#x27;])
-            sft.write(json.dumps(message, ensure_ascii=False) + &#x27;\n&#x27;)
+            message = convert_message(item['conversations'])
+            sft.write(json.dumps(message, ensure_ascii=False) + '\n')
 ```
 
-### 5.3.2 训练 Tokenizer
+### 5.3.2 训练 `Tokenizer`
 
-首先，我们需要为文本处理训练一个Tokenizer。Tokeni[zer的作用是将文本转换为](https://www.modelscope.cn/datasets/ddzhu123/seq-monkey/files)数字序列，以便模型能够理解和处理。我们使用的数据集是 出门问问序列猴子开源数据集 ，这个数据集包含了大量的中文文本数据，可以用于训练Tokenizer。
+首先，我们需要为文本处理训练一个`Tokenizer`。`Tokenizer`的作用是将文本转换为数字序列，以便模型能够理解和处理。我们使用的数据集是 [出门问问序列猴子开源数据集](https://www.modelscope.cn/datasets/ddzhu123/seq-monkey/files)，这个数据集包含了大量的中文文本数据，可以用于训练`Tokenizer`。
 
-> 注：由于数据集较大，如果大家在自己本地电脑训练的话进度比较慢，所以在这里我们提供了一个已经训练好的Tokenizer，大家可以直接使用。如果大家想要自己训练的话，可以参考下面的代码。
+> 注：由于数据集较大，如果大家在自己本地电脑训练的话进度比较慢，所以在这里我们提供了一个已经训练好的`Tokenizer`，大家可以直接使用。如果大家想要自己训练的话，可以参考下面的代码。
 
-```
+```python
 python code/train_tokenizer.py
 ```
 
-```
+
+
+# 自定义 Tokenizer 训练与评估
+
+## 代码实现
+
+```python
 import random
 import json
 import os
@@ -1095,83 +1099,83 @@ from typing import Generator
 
 random.seed(42)
 
-def read_texts_from_jsonl(file_path: str) -&gt; Generator[str, None, None]:
-    &quot;&quot;&quot;读取JSONL文件并安全提取文本数据&quot;&quot;&quot;
-    with open(file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+def read_texts_from_jsonl(file_path: str) -> Generator[str, None, None]:
+    """读取JSONL文件并安全提取文本数据"""
+    with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
             try:
                 data = json.loads(line)
-                if &#x27;text&#x27; not in data:
-                    raise KeyError(f&quot;Missing &#x27;text&#x27; field in line {line_num}&quot;)
-                yield data[&#x27;text&#x27;]
+                if 'text' not in data:
+                    raise KeyError(f"Missing 'text' field in line {line_num}")
+                yield data['text']
             except json.JSONDecodeError:
-                print(f&quot;Error decoding JSON in line {line_num}&quot;)
+                print(f"Error decoding JSON in line {line_num}")
                 continue
             except KeyError as e:
                 print(e)
                 continue
 
-def create_tokenizer_config(save_dir: str) -&gt; None:
-    &quot;&quot;&quot;创建完整的tokenizer配置文件&quot;&quot;&quot;
+def create_tokenizer_config(save_dir: str) -> None:
+    """创建完整的tokenizer配置文件"""
     config = {
-        &quot;add_bos_token&quot;: False,
-        &quot;add_eos_token&quot;: False,
-        &quot;add_prefix_space&quot;: True,
-        &quot;bos_token&quot;: &quot;&lt;|im_start|&gt;&quot;,
-        &quot;eos_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;pad_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;unk_token&quot;: &quot;&lt;unk&gt;&quot;,
-        &quot;model_max_length&quot;: 1000000000000000019884624838656,
-        &quot;clean_up_tokenization_spaces&quot;: False,
-        &quot;tokenizer_class&quot;: &quot;PreTrainedTokenizerFast&quot;,
-        &quot;chat_template&quot;: (
-            &quot;{% for message in messages %}&quot;
-            &quot;{% if message[&#x27;role&#x27;] == &#x27;system&#x27; %}&quot;
-            &quot;&lt;|im_start|&gt;system\n{{ message[&#x27;content&#x27;] }}&lt;|im_end|&gt;\n&quot;
-            &quot;{% elif message[&#x27;role&#x27;] == &#x27;user&#x27; %}&quot;
-            &quot;&lt;|im_start|&gt;user\n{{ message[&#x27;content&#x27;] }}&lt;|im_end|&gt;\n&quot;
-            &quot;{% elif message[&#x27;role&#x27;] == &#x27;assistant&#x27; %}&quot;
-            &quot;&lt;|im_start|&gt;assistant\n{{ message[&#x27;content&#x27;] }}&lt;|im_end|&gt;\n&quot;
-            &quot;{% endif %}&quot;
-            &quot;{% endfor %}&quot;
-            &quot;{% if add_generation_prompt %}&quot;
-            &quot;{{ &#x27;&lt;|im_start|&gt;assistant\n&#x27; }}&quot;
-            &quot;{% endif %}&quot;
+        "add_bos_token": False,
+        "add_eos_token": False,
+        "add_prefix_space": True,
+        "bos_token": "<|im_start|>",
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|im_end|>",
+        "unk_token": "<unk>",
+        "model_max_length": 1000000000000000019884624838656,
+        "clean_up_tokenization_spaces": False,
+        "tokenizer_class": "PreTrainedTokenizerFast",
+        "chat_template": (
+            "{% for message in messages %}"
+            "{% if message['role'] == 'system' %}"
+            "<|im_start|>system\n{{ message['content'] }}<|im_end|>\n"
+            "{% elif message['role'] == 'user' %}"
+            "<|im_start|>user\n{{ message['content'] }}<|im_end|>\n"
+            "{% elif message['role'] == 'assistant' %}"
+            "<|im_start|>assistant\n{{ message['content'] }}<|im_end|>\n"
+            "{% endif %}"
+            "{% endfor %}"
+            "{% if add_generation_prompt %}"
+            "{{ '<|im_start|>assistant\n' }}"
+            "{% endif %}"
         )
     }
 
     # 保存主配置文件
-    with open(os.path.join(save_dir, &quot;tokenizer_config.json&quot;), &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(os.path.join(save_dir, "tokenizer_config.json"), "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=4)
 
     # 创建special_tokens_map.json
     special_tokens_map = {
-        &quot;bos_token&quot;: &quot;&lt;|im_start|&gt;&quot;,
-        &quot;eos_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;unk_token&quot;: &quot;&lt;unk&gt;&quot;,
-        &quot;pad_token&quot;: &quot;&lt;|im_end|&gt;&quot;,
-        &quot;additional_special_tokens&quot;: [&quot;&lt;s&gt;&quot;, &quot;&lt;/s&gt;&quot;]
+        "bos_token": "<|im_start|>",
+        "eos_token": "<|im_end|>",
+        "unk_token": "<unk>",
+        "pad_token": "<|im_end|>",
+        "additional_special_tokens": ["<s>", "</s>"]
     }
-    with open(os.path.join(save_dir, &quot;special_tokens_map.json&quot;), &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(os.path.join(save_dir, "special_tokens_map.json"), "w", encoding="utf-8") as f:
         json.dump(special_tokens_map, f, ensure_ascii=False, indent=4)
 
-def train_tokenizer(data_path: str, save_dir: str, vocab_size: int = 8192) -&gt; None:
-    &quot;&quot;&quot;训练并保存自定义tokenizer&quot;&quot;&quot;
+def train_tokenizer(data_path: str, save_dir: str, vocab_size: int = 8192) -> None:
+    """训练并保存自定义tokenizer"""
     os.makedirs(save_dir, exist_ok=True)
     
     # 初始化tokenizer
-    tokenizer = Tokenizer(models.BPE(unk_token=&quot;&lt;unk&gt;&quot;))
+    tokenizer = Tokenizer(models.BPE(unk_token="<unk>"))
     tokenizer.normalizer = NFKC()  # 添加文本规范化
     tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
     tokenizer.decoder = decoders.ByteLevel()
 
     # 配置特殊token
     special_tokens = [
-        &quot;&lt;unk&gt;&quot;, 
-        &quot;&lt;s&gt;&quot;, 
-        &quot;&lt;/s&gt;&quot;, 
-        &quot;&lt;|im_start|&gt;&quot;, 
-        &quot;&lt;|im_end|&gt;&quot;
+        "<unk>", 
+        "<s>", 
+        "</s>", 
+        "<|im_start|>", 
+        "<|im_end|>"
     ]
 
     # 配置训练器
@@ -1184,78 +1188,78 @@ def train_tokenizer(data_path: str, save_dir: str, vocab_size: int = 8192) -&gt;
     )
 
     # 训练tokenizer
-    print(f&quot;Training tokenizer with data from {data_path}&quot;)
+    print(f"Training tokenizer with data from {data_path}")
     texts = read_texts_from_jsonl(data_path)
     tokenizer.train_from_iterator(texts, trainer=trainer, length=os.path.getsize(data_path))
 
     # 验证特殊token映射
     try:
-        assert tokenizer.token_to_id(&quot;&lt;unk&gt;&quot;) == 0
-        assert tokenizer.token_to_id(&quot;&lt;s&gt;&quot;) == 1
-        assert tokenizer.token_to_id(&quot;&lt;/s&gt;&quot;) == 2
-        assert tokenizer.token_to_id(&quot;&lt;|im_start|&gt;&quot;) == 3
-        assert tokenizer.token_to_id(&quot;&lt;|im_end|&gt;&quot;) == 4
+        assert tokenizer.token_to_id("<unk>") == 0
+        assert tokenizer.token_to_id("<s>") == 1
+        assert tokenizer.token_to_id("</s>") == 2
+        assert tokenizer.token_to_id("<|im_start|>") == 3
+        assert tokenizer.token_to_id("<|im_end|>") == 4
     except AssertionError as e:
-        print(&quot;Special tokens mapping error:&quot;, e)
+        print("Special tokens mapping error:", e)
         raise
 
     # 保存tokenizer文件
-    tokenizer.save(os.path.join(save_dir, &quot;tokenizer.json&quot;))
+    tokenizer.save(os.path.join(save_dir, "tokenizer.json"))
     
     # 创建配置文件
     create_tokenizer_config(save_dir)
-    print(f&quot;Tokenizer saved to {save_dir}&quot;)
+    print(f"Tokenizer saved to {save_dir}")
 
-def eval_tokenizer(tokenizer_path: str) -&gt; None:
-    &quot;&quot;&quot;评估tokenizer功能&quot;&quot;&quot;
+def eval_tokenizer(tokenizer_path: str) -> None:
+    """评估tokenizer功能"""
     try:
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     except Exception as e:
-        print(f&quot;Error loading tokenizer: {e}&quot;)
+        print(f"Error loading tokenizer: {e}")
         return
 
     # 测试基本属性
-    print(&quot;\n=== Tokenizer基本信息 ===&quot;)
-    print(f&quot;Vocab size: {len(tokenizer)}&quot;)
-    print(f&quot;Special tokens: {tokenizer.all_special_tokens}&quot;)
-    print(f&quot;Special token IDs: {tokenizer.all_special_ids}&quot;)
+    print("\n=== Tokenizer基本信息 ===")
+    print(f"Vocab size: {len(tokenizer)}")
+    print(f"Special tokens: {tokenizer.all_special_tokens}")
+    print(f"Special token IDs: {tokenizer.all_special_ids}")
 
     # 测试聊天模板
     messages = [
-        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个AI助手。&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;How are you?&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;I&#x27;m fine, thank you. and you?&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;I&#x27;m good too.&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;That&#x27;s great to hear!&quot;},
+        {"role": "system", "content": "你是一个AI助手。"},
+        {"role": "user", "content": "How are you?"},
+        {"role": "assistant", "content": "I'm fine, thank you. and you?"},
+        {"role": "user", "content": "I'm good too."},
+        {"role": "assistant", "content": "That's great to hear!"},
     ]
     
-    print(&quot;\n=== 聊天模板测试 ===&quot;)
+    print("\n=== 聊天模板测试 ===")
     prompt = tokenizer.apply_chat_template(
         messages, 
         tokenize=False, 
         # add_generation_prompt=True
     )
-    print(&quot;Generated prompt:\n&quot;, prompt, sep=&quot;&quot;)
+    print("Generated prompt:\n", prompt, sep="")
 
     # 测试编码解码
-    print(&quot;\n=== 编码解码测试 ===&quot;)
+    print("\n=== 编码解码测试 ===")
     encoded = tokenizer(prompt, truncation=True, max_length=256)
-    decoded = tokenizer.decode(encoded[&quot;input_ids&quot;], skip_special_tokens=False)
-    print(&quot;Decoded text matches original:&quot;, decoded == prompt)
+    decoded = tokenizer.decode(encoded["input_ids"], skip_special_tokens=False)
+    print("Decoded text matches original:", decoded == prompt)
 
     # 测试特殊token处理
-    print(&quot;\n=== 特殊token处理 ===&quot;)
-    test_text = &quot;&lt;|im_start|&gt;user\nHello&lt;|im_end|&gt;&quot;
+    print("\n=== 特殊token处理 ===")
+    test_text = "<|im_start|>user\nHello<|im_end|>"
     encoded = tokenizer(test_text).input_ids
     decoded = tokenizer.decode(encoded)
-    print(f&quot;Original: {test_text}&quot;)
-    print(f&quot;Decoded:  {decoded}&quot;)
-    print(&quot;Special tokens preserved:&quot;, decoded == test_text)
+    print(f"Original: {test_text}")
+    print(f"Decoded:  {decoded}")
+    print("Special tokens preserved:", decoded == test_text)
 
 def main():
     # 配置路径
-    data_path = &quot;your data path&quot;
-    save_dir = &quot;tokenizer_k&quot;
+    data_path = "your data path"
+    save_dir = "tokenizer_k"
 
     # 训练tokenizer
     train_tokenizer(
@@ -1267,50 +1271,55 @@ def main():
     # 评估tokenizer
     eval_tokenizer(save_dir)
 
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     main()
 ```
 
-训练完成之后可以可以使用 eval_tokenizer() 测试 Tokenizer 的功能，确保 Tokenizer 正常工作。在这个函数中，我们首先加载训练好的 Tokenizer，然后测试了 Tokenizer 的基本属性、聊天模板、编码解码等功能。这些测试可以帮助我们验证 Tokenizer 的正确性，确保它能够正常工作。正确的输出为：
+## 使用说明
+
+训练完成之后可以可以使用 `eval_tokenizer()` 测试 `Tokenizer` 的功能，确保 `Tokenizer` 正常工作。在这个函数中，我们首先加载训练好的 `Tokenizer`，然后测试了 `Tokenizer` 的基本属性、聊天模板、编码解码等功能。这些测试可以帮助我们验证 `Tokenizer` 的正确性，确保它能够正常工作。正确的输出为：
 
 OUT:
+
+
+
+### Tokenizer 测试
 
 ```
 === Tokenizer基本信息 ===
 Vocab size: 6144
-Special tokens: [&#x27;&lt;|im_start|&gt;&#x27;, &#x27;&lt;|im_end|&gt;&#x27;, &#x27;&lt;unk&gt;&#x27;, &#x27;&lt;s&gt;&#x27;, &#x27;&lt;/s&gt;&#x27;]
+Special tokens: [<|im_start|>, <|im_end|>, <|unk|>, <s>, </s>]
 Special token IDs: [3, 4, 0, 1, 2]
 
 === 聊天模板测试 ===
 Generated prompt:
-&lt;|im_start|&gt;system
-你是一个AI助手。&lt;|im_end|&gt;
-&lt;|im_start|&gt;user
-How are you?&lt;|im_end|&gt;
-&lt;|im_start|&gt;assistant
-I&#x27;m fine, thank you. and you?&lt;|im_end|&gt;
-&lt;|im_start|&gt;user
-I&#x27;m good too.&lt;|im_end|&gt;
-&lt;|im_start|&gt;assistant
-That&#x27;s great to hear!&lt;|im_end|&gt;
-
+<|im_start|>system
+你是一个AI助手。<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+I'm fine, thank you. and you?<|im_end|>
+<|im_start|>user
+I'm good too.<|im_end|>
+<|im_start|>assistant
+That's great to hear!<|im_end|>
 
 === 编码解码测试 ===
 Decoded text matches original: False
 
 === 特殊token处理 ===
-Original: &lt;|im_start|&gt;user
-Hello&lt;|im_end|&gt;
-Decoded:  &lt;|im_start|&gt; user
-Hello&lt;|im_end|&gt;
+Original: <|im_start|>user
+Hello<|im_end|>
+Decoded:  <|im_start|> user
+Hello<|im_end|>
 Special tokens preserved: False
 ```
 
 ### 5.3.3 Dataset
 
-#### PretrainDataset
+在将数据送入到模型之前，我们还需要进行一些处理用于将文本数据转化为模型能够理解的Token。在这里我们使用的是`Pytorch`的`Dataset`类，用于加载数据集。我们定义了一个`PretrainDataset`类，用于加载已预处理好的数据集。我们继承了`torch.utils.data.IterableDataset`来定义该数据集，这使得我们可以更灵活、高效地处理数据。
 
-在将数据送入到模型之前，我们还需要进行一些处理用于将文本数据转化为模型能够理解的Token。在这里我们使用的是Pytorch的Dataset类，用于加载数据集。我们定义了一个PretrainDataset类，用于加载已预处理好的数据集。我们继承了torch.utils.data.IterableDataset来定义该数据集，这使得我们可以更灵活、高效地处理数据。
+#### PretrainDataset
 
 ```
 from torch.utils.data import Dataset
@@ -1322,7 +1331,7 @@ class PretrainDataset(Dataset):
         self.tokenizer = tokenizer
         self.max_length = max_length
         self.padding = 0
-        with open(data_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        with open(data_path, 'r', encoding='utf-8') as f:
             self.data = f.readlines()
 
     def __len__(self):
@@ -1330,8 +1339,8 @@ class PretrainDataset(Dataset):
 
     def __getitem__(self, index: int):
         sample = json.loads(self.data[index])
-        text = f&quot;{self.tokenizer.bos_token}{sample[&#x27;text&#x27;]}&quot;
-        input_id = self.tokenizer(text).data[&#x27;input_ids&#x27;][:self.max_length]
+        text = f"{self.tokenizer.bos_token}{sample['text']}"
+        input_id = self.tokenizer(text).data['input_ids'][:self.max_length]
         text_len = len(input_id)
         # 没满最大长度的剩余部分
         padding_len = self.max_length - text_len
@@ -1346,27 +1355,27 @@ class PretrainDataset(Dataset):
         return torch.from_numpy(X), torch.from_numpy(Y), torch.from_numpy(loss_mask)
 ```
 
-在以上代码和图5.3可以看出，Pretrain Dataset 主要是将 text 通过 tokenizer 转换成 input_id，然后将 input_id 拆分成 X 和 Y，其中 X 为 input_id 的前 n-1 个元素，Y 为 input_id 的后 n-1 个元素。loss_mask 主要是用来标记哪些位置需要计算损失，哪些位置不需要计算损失。
+在以上代码和图5.3可以看出，`PretrainDataset` 主要是将 `text` 通过 `tokenizer` 转换成 `input_id`，然后将 `input_id` 拆分成 `X` 和 `Y`，其中 `X` 为 `input_id` 的前 `n-1` 个元素，`Y` 为 `input_id` 的后 `n-1` 个元素。`loss_mask` 主要是用来标记哪些位置需要计算损失，哪些位置不需要计算损失。
 
 ![](img/abd8b63cac1b3f8eadd906b21e2d9e5c.png)
 
-图中示例展示了当max_length=9时的处理过程：
+图中示例展示了当 `max_length=9` 时的处理过程：
 
-+   **输入序列**：[BOS, T1, T2, T3, T4, T5, T6, T7, EOS]
++   输入序列：`[BOS, T1, T2, T3, T4, T5, T6, T7, EOS]`
 
-+   **样本拆分**：
++   样本拆分：
 
-+   X：[BOS, T1, T2, T3, T4, T5, T6, T7] → 模型输入上下文
++   `X`：`[BOS, T1, T2, T3, T4, T5, T6, T7]` → 模型输入上下文
 
-+   Y：[T1, T2, T3, T4, T5, T6, T7, EOS] → 模型预测目标
++   `Y`：`[T1, T2, T3, T4, T5, T6, T7, EOS]` → 模型预测目标
 
-+   **损失掩码**：
++   损失掩码：
 
-+   有效位置：[0, 1, 1, 1, 1, 1, 1, 1, 1] → 仅对T1-EOS计算损失
++   有效位置：`[0, 1, 1, 1, 1, 1, 1, 1, 1]` → 仅对 `T1-EOS` 计算损失
 
 #### SFTDataset
 
-SFTDataset 其实是一个多轮对话数据集，我们的目标是让模型学会如何进行多轮对话。在这个阶段我们的输入是上一轮的对话内容，输出是当前轮的对话内容。
+`SFTDataset` 其实是一个多轮对话数据集，我们的目标是让模型学会如何进行多轮对话。在这个阶段我们的输入是上一轮的对话内容，输出是当前轮的对话内容。
 
 ```
 class SFTDataset(Dataset):
@@ -1376,7 +1385,7 @@ class SFTDataset(Dataset):
         self.tokenizer = tokenizer
         self.max_length = max_length
         self.padding = 0
-        with open(data_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        with open(data_path, 'r', encoding='utf-8') as f:
             self.data = f.readlines()
 
     def __len__(self):
@@ -1385,12 +1394,12 @@ class SFTDataset(Dataset):
     def generate_loss_mask(self, input_ids):
         # 生成 loss mask, 0 表示不计算损失, 1 表示计算损失
         mask = [0] * len(input_ids)
-        a_sequence = [3, 1074, 537, 500, 203]  # &lt;|im_start|&gt;assistant\n
+        a_sequence = [3, 1074, 537, 500, 203]  # <|im_start|>assistant\n
         a_length = len(a_sequence)
         n = len(input_ids)
         i = 0
         
-        while i &lt;= n - a_length:
+        while i <= n - a_length:
             # 检查当前位置是否匹配目标子序列
             match = True
             for k in range(a_length):
@@ -1398,7 +1407,7 @@ class SFTDataset(Dataset):
                     match = False
                     break
             if match:
-                # 从子序列结束的位置开始查找第一个4, 4 为 &lt;|im_end|&gt; EOS id
+                # 从子序列结束的位置开始查找第一个4, 4 为 <|im_end|> EOS id
                 j = None
                 for idx in range(i + a_length, n):
                     if input_ids[idx] == 4:
@@ -1408,9 +1417,9 @@ class SFTDataset(Dataset):
                     start = i + a_length
                     end = j  # 结束位置设为j（包含4）
                     # 标记区间为1（包括start到end）
-                    if start &lt;= end:
+                    if start <= end:
                         for pos in range(start, end + 1):
-                            if pos &lt; len(mask):
+                            if pos < len(mask):
                                 mask[pos] = 1
                 # 跳过当前子序列，避免重叠匹配
                 i += a_length
@@ -1421,7 +1430,7 @@ class SFTDataset(Dataset):
     def __getitem__(self, index: int):
         sample = json.loads(self.data[index])
         text = self.tokenizer.apply_chat_template(sample, tokenize=False, add_generation_prompt=False)
-        input_id = self.tokenizer(text).data[&#x27;input_ids&#x27;][:self.max_length]
+        input_id = self.tokenizer(text).data['input_ids'][:self.max_length]
         text_len = len(input_id)
         # 没满最大长度的剩余部分
         padding_len = self.max_length - text_len
@@ -1436,29 +1445,29 @@ class SFTDataset(Dataset):
         return torch.from_numpy(X), torch.from_numpy(Y), torch.from_numpy(loss_mask)
 ```
 
-在 SFT 阶段，这里使用的是多轮对话数据集，所以就需要区分哪些位置需要计算损失，哪些位置不需要计算损失。在上面的代码中，我使用了一个 generate_loss_mask 函数来生成 loss_mask。这个函数主要是用来生成 loss_mask，其中 loss_mask 的生成规则是：当遇到 |<im_start|>assistant\n 时，就开始计算损失，直到遇到 |<im_end|> 为止。这样就可以保证我们的模型在 SFT 阶段只计算当前轮的对话内容，如图5.4所示。
+在 `SFT` 阶段，这里使用的是多轮对话数据集，所以就需要区分哪些位置需要计算损失，哪些位置不需要计算损失。在上面的代码中，我使用了一个 `generate_loss_mask` 函数来生成 `loss_mask`。这个函数主要是用来生成 `loss_mask`，其中 `loss_mask` 的生成规则是：当遇到 `<|im_start|>assistant\n` 时，就开始计算损失，直到遇到 `<|im_end|>` 为止。这样就可以保证我们的模型在 `SFT` 阶段只计算当前轮的对话内容，如图5.4所示。
 
 ![](img/47509acaa5a20500b3e3e12b9aa1b5c0.png)
 
-可以看到，其实 SFT Dataset 和 Pretrain Dataset 的 X 和 Y 是一样的，只是在 SFT Dataset 中我们需要生成一个 loss_mask 来标记哪些位置需要计算损失，哪些位置不需要计算损失。 图中 Input ids 中的蓝色小方格就是AI的回答，所以是需要模型学习的地方。所以在 loss_mask 中，蓝色小方格对应的位置是黄色，其他位置是灰色。在代码 loss_mask 中的 1 对应的位置计算损失，0 对应的位置不计算损失。
+可以看到，其实 `SFTDataset` 和 `PretrainDataset` 的 `X` 和 `Y` 是一样的，只是在 `SFTDataset` 中我们需要生成一个 `loss_mask` 来标记哪些位置需要计算损失，哪些位置不需要计算损失。 图中 `Input ids` 中的蓝色小方格就是AI的回答，所以是需要模型学习的地方。所以在 `loss_mask` 中，蓝色小方格对应的位置是黄色，其他位置是灰色。在代码 `loss_mask` 中的 `1` 对应的位置计算损失，`0` 对应的位置不计算损失。
 
 ### 5.3.4 预训练
 
-在数据预处理完成后，我们就可以开始训练模型了。我们使用的模型是一个和LLama2结构一样的 Decoder only Transformer模型，使用Pytorch实现。相关代码在code/k_model.py文件中。此处不再赘述，源码中有详细的中文注释，且我们在之前的文章中也有详细的介绍。
+在数据预处理完成后，我们就可以开始训练模型了。我们使用的模型是一个和`LLama2`结构一样的 `Decoder only Transformer`模型，使用`Pytorch`实现。相关代码在`code/k_model.py`文件中。此处不再赘述，源码中有详细的中文注释，且我们在之前的文章中也有详细的介绍。
 
-在模型这一部分可以重点看一下生成式模型是如何实现生成token的，可以查看k_model.py文件中的Transforerm类中的generate方法。
+在模型这一部分可以重点看一下生成式模型是如何实现生成`token`的，可以查看`k_model.py`文件中的`Transforerm`类中的`generate`方法。
 
 ```
 @torch.inference_mode()
     def generate(self, idx, stop_id=None, max_new_tokens=256, temperature=1.0, top_k=None):
-        &quot;&quot;&quot;
+        """
         给定输入序列 idx（形状为 (bz,seq_len) 的长整型张量），通过多次生成新 token 来完成序列。
         在 model.eval() 模式下运行。效率较低的采样版本，没有使用键k/v cache。
-        &quot;&quot;&quot;
+        """
         index = idx.shape[1]
         for _ in range(max_new_tokens):
             # 如果序列上下文过长，截断它到最大长度
-            idx_cond = idx if idx.size(1) &lt;= self.args.max_seq_len else idx[:, -self.args.max_seq_len:]
+            idx_cond = idx if idx.size(1) <= self.args.max_seq_len else idx[:, -self.args.max_seq_len:]
             
             # 前向传播获取序列中最后一个位置的 logits
             logits = self(idx_cond).logits
@@ -1472,7 +1481,7 @@ class SFTDataset(Dataset):
                 logits = logits / temperature
                 if top_k is not None:
                     v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
-                    logits[logits &lt; v[:, [-1]]] = -float(&#x27;Inf&#x27;)
+                    logits[logits < v[:, [-1]]] = -float('Inf')
                 probs = F.softmax(logits, dim=-1)
                 idx_next = torch.multinomial(probs, num_samples=1)
             
@@ -1486,15 +1495,17 @@ class SFTDataset(Dataset):
         return idx[:, index:] # 只返回生成的token
 ```
 
-在 generate 方法中，我们首先获取序列中最后一个位置的 logits，然后基于这些 logits 生成新的 token。接着，生成的新 token 会被添加到序列中，模型随后会继续生成下一个 token。通过这种迭代过程，我们能够生成完整的文本。
+在 `generate` 方法中，我们首先获取序列中最后一个位置的 `logits`，然后基于这些 `logits` 生成新的 `token`。接着，生成的新 `token` 会被添加到序列中，模型随后会继续生成下一个 `token`。通过这种迭代过程，我们能够生成完整的文本。
 
 接下来就是最重要的部分，训练模型!
 
-> 注：在使用下面代码进行模型训练时，需要指定 --data_path 参数为预处理好的数据集路径，例如 --data_path seq_monkey_datawhale.jsonl，也需要指定要用哪几张GPU进行训练，例如 --gpus 0,1。
+> 注：在使用下面代码进行模型训练时，需要指定 `--data_path` 参数为预处理好的数据集路径，例如 `--data_path seq_monkey_datawhale.jsonl`，也需要指定要用哪几张GPU进行训练，例如 `--gpus 0,1`。
 
-```
+
+
+```python
 def get_lr(it, all):
-    &quot;&quot;&quot;
+    """
     计算当前迭代的学习率，使用余弦退火调度策略
     
     学习率调度策略：
@@ -1508,27 +1519,27 @@ def get_lr(it, all):
         
     Returns:
         float: 当前步数对应的学习率
-    &quot;&quot;&quot;
+    """
     warmup_iters = args.warmup_iters  # 预热迭代次数
     lr_decay_iters = all  # 学习率衰减的总迭代次数
     min_lr = args.learning_rate / 10  # 最小学习率，为初始学习率的1/10
 
     # Warmup阶段：线性增长
-    if it &lt; warmup_iters:
+    if it < warmup_iters:
         return args.learning_rate * it / warmup_iters
     
     # 超出训练步数：保持最小学习率
-    if it &gt; lr_decay_iters:
+    if it > lr_decay_iters:
         return min_lr
     
     # 余弦退火阶段
     decay_ratio = (it - warmup_iters) / (lr_decay_iters - warmup_iters)
-    assert 0 &lt;= decay_ratio &lt;= 1
+    assert 0 <= decay_ratio <= 1
     coeff = 0.5 * (1.0 + math.cos(math.pi * decay_ratio))  # 余弦系数
     return min_lr + coeff * (args.learning_rate - min_lr)
 
 def train_epoch(epoch):
-    &quot;&quot;&quot;
+    """
     训练一个epoch的函数
     
     实现了完整的训练循环，包括：
@@ -1541,7 +1552,7 @@ def train_epoch(epoch):
     
     Args:
         epoch (int): 当前epoch编号
-    &quot;&quot;&quot;
+    """
     start_time = time.time()  # 记录开始时间
     
     # 遍历数据加载器中的每个batch
@@ -1555,7 +1566,7 @@ def train_epoch(epoch):
         lr = get_lr(epoch * iter_per_epoch + step, args.epochs * iter_per_epoch)
         # 更新优化器中所有参数组的学习率
         for param_group in optimizer.param_groups:
-            param_group[&#x27;lr&#x27;] = lr
+            param_group['lr'] = lr
 
         # 使用混合精度训练上下文
         with ctx:
@@ -1591,27 +1602,27 @@ def train_epoch(epoch):
             spend_time = time.time() - start_time
             # 打印训练进度信息
             Logger(
-                &#x27;Epoch:[{}/{}]({}/{}) loss:{:.3f} lr:{:.7f} epoch_Time:{}min;&#x27;.format(
+                'Epoch:[{}/{}]({}/{}) loss:{:.3f} lr:{:.7f} epoch_Time:{}min;'.format(
                     epoch + 1,
                     args.epochs,
                     step,
                     iter_per_epoch,
                     loss.item() * args.accumulation_steps,  # 恢复真实的loss值
-                    optimizer.param_groups[-1][&#x27;lr&#x27;],
+                    optimizer.param_groups[-1]['lr'],
                     spend_time / (step + 1) * iter_per_epoch // 60 - spend_time // 60))
             
             # 如果启用SwanLab，记录训练指标
             if args.use_swanlab:
                 swanlab.log({
-                    &quot;loss&quot;: loss.item() * args.accumulation_steps,
-                    &quot;lr&quot;: optimizer.param_groups[-1][&#x27;lr&#x27;]
+                    "loss": loss.item() * args.accumulation_steps,
+                    "lr": optimizer.param_groups[-1]['lr']
                 })
 
         # 每save_interval步保存一次模型
         if (step + 1) % args.save_interval == 0:
             model.eval()  # 切换到评估模式
             # 构建检查点文件名
-            ckp = f&#x27;{args.save_dir}/pretrain_{lm_config.dim}_{lm_config.n_layers}_{lm_config.vocab_size}.pth&#x27;
+            ckp = f'{args.save_dir}/pretrain_{lm_config.dim}_{lm_config.n_layers}_{lm_config.vocab_size}.pth'
 
             # 处理多卡保存：如果是DataParallel模型，需要访问.module属性
             state_dict = model.module.state_dict() if isinstance(model, torch.nn.DataParallel) else model.state_dict()
@@ -1622,7 +1633,7 @@ def train_epoch(epoch):
         if (step + 1) % 20000 == 0:
             model.eval()
             # 构建带步数的检查点文件名
-            ckp = f&#x27;{args.save_dir}/pretrain_{lm_config.dim}_{lm_config.n_layers}_{lm_config.vocab_size}_step{step+1}.pth&#x27;
+            ckp = f'{args.save_dir}/pretrain_{lm_config.dim}_{lm_config.n_layers}_{lm_config.vocab_size}_step{step+1}.pth'
 
             # 保存模型状态字典
             state_dict = model.module.state_dict() if isinstance(model, torch.nn.DataParallel) else model.state_dict()
@@ -1631,7 +1642,7 @@ def train_epoch(epoch):
 
 
 def init_model():
-    &quot;&quot;&quot;
+    """
     初始化模型和分词器
     
     功能包括：
@@ -1643,9 +1654,9 @@ def init_model():
     
     Returns:
         tuple: (model, tokenizer) 初始化后的模型和分词器
-    &quot;&quot;&quot;
+    """
     def count_parameters(model):
-        &quot;&quot;&quot;
+        """
         统计模型中可训练参数的数量
         
         Args:
@@ -1653,19 +1664,19 @@ def init_model():
             
         Returns:
             int: 可训练参数总数
-        &quot;&quot;&quot;
+        """
         return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
     # 从本地路径加载预训练的分词器
-    tokenizer = AutoTokenizer.from_pretrained(&#x27;./tokenizer_k/&#x27;)
+    tokenizer = AutoTokenizer.from_pretrained('./tokenizer_k/')
 
     # 根据配置创建Transformer模型
     model = Transformer(lm_config)
     
     # 多卡初始化：检查可用GPU数量并设置DataParallel
     num_gpus = torch.cuda.device_count()
-    if num_gpus &gt; 1:
-        Logger(f&quot;Using {num_gpus} GPUs with DataParallel!&quot;)
+    if num_gpus > 1:
+        Logger(f"Using {num_gpus} GPUs with DataParallel!")
         # 使用DataParallel包装模型以支持多GPU训练
         model = torch.nn.DataParallel(model)
     
@@ -1673,57 +1684,57 @@ def init_model():
     model = model.to(args.device)
     
     # 计算并打印模型参数量（以百万为单位）
-    Logger(f&#x27;LLM总参数量：{count_parameters(model) / 1e6:.3f} 百万&#x27;)
+    Logger(f'LLM总参数量：{count_parameters(model) / 1e6:.3f} 百万')
     return model, tokenizer
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     # ==================== 命令行参数解析 ====================
-    parser = argparse.ArgumentParser(description=&quot;Tiny-LLM Pretraining&quot;)
+    parser = argparse.ArgumentParser(description="Tiny-LLM Pretraining")
     
     # 基础训练参数
-    parser.add_argument(&quot;--out_dir&quot;, type=str, default=&quot;base_model_215M&quot;, help=&quot;模型输出目录&quot;)
-    parser.add_argument(&quot;--epochs&quot;, type=int, default=1, help=&quot;训练轮数&quot;)
-    parser.add_argument(&quot;--batch_size&quot;, type=int, default=64, help=&quot;批次大小&quot;)
-    parser.add_argument(&quot;--learning_rate&quot;, type=float, default=2e-4, help=&quot;学习率&quot;)
-    parser.add_argument(&quot;--device&quot;, type=str, default=&quot;cuda:0&quot; if torch.cuda.is_available() else &quot;cpu&quot;, help=&quot;训练设备&quot;)
-    parser.add_argument(&quot;--dtype&quot;, type=str, default=&quot;bfloat16&quot;, help=&quot;数据类型&quot;)
+    parser.add_argument("--out_dir", type=str, default="base_model_215M", help="模型输出目录")
+    parser.add_argument("--epochs", type=int, default=1, help="训练轮数")
+    parser.add_argument("--batch_size", type=int, default=64, help="批次大小")
+    parser.add_argument("--learning_rate", type=float, default=2e-4, help="学习率")
+    parser.add_argument("--device", type=str, default="cuda:0" if torch.cuda.is_available() else "cpu", help="训练设备")
+    parser.add_argument("--dtype", type=str, default="bfloat16", help="数据类型")
     
     # 实验跟踪和数据加载参数
-    parser.add_argument(&quot;--use_swanlab&quot;, action=&quot;store_true&quot;, help=&quot;是否使用SwanLab进行实验跟踪&quot;)
-    parser.add_argument(&quot;--num_workers&quot;, type=int, default=8, help=&quot;数据加载的工作进程数&quot;)
-    parser.add_argument(&quot;--data_path&quot;, type=str, default=&quot;./seq_monkey_datawhale.jsonl&quot;, help=&quot;训练数据路径&quot;)
+    parser.add_argument("--use_swanlab", action="store_true", help="是否使用SwanLab进行实验跟踪")
+    parser.add_argument("--num_workers", type=int, default=8, help="数据加载的工作进程数")
+    parser.add_argument("--data_path", type=str, default="./seq_monkey_datawhale.jsonl", help="训练数据路径")
     
     # 训练优化参数
-    parser.add_argument(&quot;--accumulation_steps&quot;, type=int, default=8, help=&quot;梯度累积步数&quot;)
-    parser.add_argument(&quot;--grad_clip&quot;, type=float, default=1.0, help=&quot;梯度裁剪阈值&quot;)
-    parser.add_argument(&quot;--warmup_iters&quot;, type=int, default=0, help=&quot;学习率预热迭代次数&quot;)
+    parser.add_argument("--accumulation_steps", type=int, default=8, help="梯度累积步数")
+    parser.add_argument("--grad_clip", type=float, default=1.0, help="梯度裁剪阈值")
+    parser.add_argument("--warmup_iters", type=int, default=0, help="学习率预热迭代次数")
     
     # 日志和保存参数
-    parser.add_argument(&quot;--log_interval&quot;, type=int, default=100, help=&quot;日志记录间隔&quot;)
-    parser.add_argument(&quot;--save_interval&quot;, type=int, default=1000, help=&quot;模型保存间隔&quot;)
+    parser.add_argument("--log_interval", type=int, default=100, help="日志记录间隔")
+    parser.add_argument("--save_interval", type=int, default=1000, help="模型保存间隔")
     
     # 多GPU训练参数
-    parser.add_argument(&quot;--gpus&quot;, type=str, default=&#x27;0,1,2,3,4,5,6,7&#x27;, help=&quot;使用的GPU ID，用逗号分隔 (例如: &#x27;0,1,2&#x27;)&quot;)
+    parser.add_argument("--gpus", type=str, default='0,1,2,3,4,5,6,7', help="使用的GPU ID，用逗号分隔 (例如: '0,1,2')")
 
     args = parser.parse_args()
 
     # ==================== GPU环境设置 ====================
     # 设置可见的GPU设备
     if args.gpus is not None:
-        os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = args.gpus
+        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpus
         # 自动设置主设备为第一个可用GPU
         if torch.cuda.is_available():
-            args.device = &quot;cuda:0&quot;
+            args.device = "cuda:0"
         else:
-            args.device = &quot;cpu&quot;
+            args.device = "cpu"
 
     # ==================== 实验跟踪初始化 ====================
     if args.use_swanlab:
-        # 注意：使用前需要先登录 swanlab.login(api_key=&#x27;your key&#x27;)
+        # 注意：使用前需要先登录 swanlab.login(api_key='your key')
         run = swanlab.init(
-            project=&quot;Happy-LLM&quot;,  # 项目名称
-            experiment_name=&quot;Pretrain-215M&quot;,  # 实验名称
+            project="Happy-LLM",  # 项目名称
+            experiment_name="Pretrain-215M",  # 实验名称
             config=args,  # 保存所有超参数
         )
 
@@ -1746,11 +1757,11 @@ if __name__ == &quot;__main__&quot;:
     torch.manual_seed(42)
     
     # 确定设备类型（用于选择合适的上下文管理器）
-    device_type = &quot;cuda&quot; if &quot;cuda&quot; in args.device else &quot;cpu&quot;
+    device_type = "cuda" if "cuda" in args.device else "cpu"
 
     # 设置混合精度训练的上下文管理器
     # CPU训练时使用nullcontext，GPU训练时使用autocast
-    ctx = nullcontext() if device_type == &quot;cpu&quot; else torch.cuda.amp.autocast()
+    ctx = nullcontext() if device_type == "cpu" else torch.cuda.amp.autocast()
 
     # ==================== 模型和数据初始化 ====================
     # 初始化模型和分词器
@@ -1772,7 +1783,7 @@ if __name__ == &quot;__main__&quot;:
     # ==================== 优化器和训练组件初始化 ====================
     # 初始化混合精度训练的梯度缩放器
     # 只有在使用float16或bfloat16时才启用
-    scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype in [&#x27;float16&#x27;, &#x27;bfloat16&#x27;]))
+    scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype in ['float16', 'bfloat16']))
     
     # 初始化Adam优化器
     optimizer = optim.Adam(model.parameters(), lr=args.learning_rate)
@@ -1786,11 +1797,15 @@ if __name__ == &quot;__main__&quot;:
         train_epoch(epoch)
 ```
 
+
+
 ### 5.3.5 SFT 训练
 
-SFT 训练和预训练的代码基本一样，只是导入的 Dataset 不一样。在这里我们使用的是 SFTDataset，用于多轮对话的训练。
+SFT 训练和预训练的代码基本一样，只是导入的 `Dataset` 不一样。在这里我们使用的是 `SFTDataset`，用于多轮对话的训练。
 
-```
+
+
+```python
 import os
 import platform
 import argparse
@@ -1811,38 +1826,38 @@ from dataset import SFTDataset
 import swanlab
 
 # 忽略警告
-warnings.filterwarnings(&#x27;ignore&#x27;)
+warnings.filterwarnings('ignore')
 
 
 def Logger(content):
-    &quot;&quot;&quot;日志记录器&quot;&quot;&quot;
+    """日志记录器"""
     print(content)
 
 def get_lr(it, all):
-    &quot;&quot;&quot;获取学习率&quot;&quot;&quot;
+    """获取学习率"""
     # 1) linear warmup for warmup_iters steps
     # 1) 预热迭代的线性预热
     warmup_iters = args.warmup_iters
     lr_decay_iters = all
     min_lr = args.learning_rate / 10
 
-    if it &lt; warmup_iters:
+    if it < warmup_iters:
         return args.learning_rate * it / warmup_iters
     
-    # 2) if it &gt; lr_decay_iters, return min learning rate
+    # 2) if it > lr_decay_iters, return min learning rate
     # 2) 如果迭代次数超过学习率衰减迭代次数，则返回最小学习率
-    if it &gt; lr_decay_iters:
+    if it > lr_decay_iters:
         return min_lr
     
     # 3) in between, use cosine decay down to min learning rate
     # 3) 在两者之间，使用余弦衰减至最小学习率
     decay_ratio = (it - warmup_iters) / (lr_decay_iters - warmup_iters)
-    assert 0 &lt;= decay_ratio &lt;= 1
+    assert 0 <= decay_ratio <= 1
     coeff = 0.5 * (1.0 + math.cos(math.pi * decay_ratio))
     return min_lr + coeff * (args.learning_rate - min_lr)
 
 def train_epoch(epoch):
-    &quot;&quot;&quot;训练一个epoch&quot;&quot;&quot;
+    """训练一个epoch"""
     start_time = time.time()
     for step, (X, Y, loss_mask) in enumerate(train_loader):
         X = X.to(args.device)
@@ -1852,7 +1867,7 @@ def train_epoch(epoch):
         # 获取学习率并更新优化器
         lr = get_lr(epoch * iter_per_epoch + step, args.epochs * iter_per_epoch)
         for param_group in optimizer.param_groups:
-            param_group[&#x27;lr&#x27;] = lr
+            param_group['lr'] = lr
 
         # 前向传播
         with ctx:
@@ -1878,24 +1893,24 @@ def train_epoch(epoch):
         if step % args.log_interval == 0:
             spend_time = time.time() - start_time
             Logger(
-                &#x27;Epoch:[{}/{}]({}/{}) loss:{:.3f} lr:{:.7f} epoch_Time:{}min:&#x27;.format(
+                'Epoch:[{}/{}]({}/{}) loss:{:.3f} lr:{:.7f} epoch_Time:{}min:'.format(
                     epoch + 1,
                     args.epochs,
                     step,
                     iter_per_epoch,
                     loss.item() * args.accumulation_steps,
-                    optimizer.param_groups[-1][&#x27;lr&#x27;],
+                    optimizer.param_groups[-1]['lr'],
                     spend_time / (step + 1) * iter_per_epoch // 60 - spend_time // 60))
             if args.use_swanlab:
                 swanlab.log({
-                    &quot;loss&quot;: loss.item() * args.accumulation_steps,
-                    &quot;lr&quot;: optimizer.param_groups[-1][&#x27;lr&#x27;]
+                    "loss": loss.item() * args.accumulation_steps,
+                    "lr": optimizer.param_groups[-1]['lr']
                 })
 
         # 保存模型
         if (step + 1) % args.save_interval == 0:
             model.eval()
-            ckp = f&#x27;{args.save_dir}/sft_dim{lm_config.dim}_layers{lm_config.n_layers}_vocab_size{lm_config.vocab_size}.pth&#x27;
+            ckp = f'{args.save_dir}/sft_dim{lm_config.dim}_layers{lm_config.n_layers}_vocab_size{lm_config.vocab_size}.pth'
 
             # 处理多卡保存
             state_dict = model.module.state_dict() if isinstance(model, torch.nn.DataParallel) else model.state_dict()
@@ -1905,7 +1920,7 @@ def train_epoch(epoch):
         # 定期保存模型
         if (step + 1) % 20000 == 0:
             model.eval()
-            ckp = f&#x27;{args.save_dir}/sft_dim{lm_config.dim}_layers{lm_config.n_layers}_vocab_size{lm_config.vocab_size}_step{step+1}.pth&#x27;
+            ckp = f'{args.save_dir}/sft_dim{lm_config.dim}_layers{lm_config.n_layers}_vocab_size{lm_config.vocab_size}_step{step+1}.pth'
 
             state_dict = model.module.state_dict() if isinstance(model, torch.nn.DataParallel) else model.state_dict()
             torch.save(state_dict, ckp)
@@ -1913,21 +1928,21 @@ def train_epoch(epoch):
 
 
 def init_model():
-    &quot;&quot;&quot;初始化模型&quot;&quot;&quot;
+    """初始化模型"""
     def count_parameters(model):
-        &quot;&quot;&quot;计算模型参数量&quot;&quot;&quot;
+        """计算模型参数量"""
         return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
     # 加载分词器
-    tokenizer = AutoTokenizer.from_pretrained(&#x27;./tokenizer_k/&#x27;)
+    tokenizer = AutoTokenizer.from_pretrained('./tokenizer_k/')
 
     # 初始化模型
     model = Transformer(lm_config)
 
     # 加载预训练权重
-    ckp = &#x27;./base_model_215M/pretrain_1024_18_6144.pth&#x27;
+    ckp = './base_model_215M/pretrain_1024_18_6144.pth'
     state_dict = torch.load(ckp, map_location=args.device)
-    unwanted_prefix = &#x27;_orig_mod.&#x27;
+    unwanted_prefix = '_orig_mod.'
     for k, v in list(state_dict.items()):
         if k.startswith(unwanted_prefix):
             state_dict[k[len(unwanted_prefix):]] = state_dict.pop(k)
@@ -1935,50 +1950,50 @@ def init_model():
     
     # 多卡初始化
     num_gpus = torch.cuda.device_count()
-    if num_gpus &gt; 1:
-        Logger(f&quot;Using {num_gpus} GPUs with DataParallel!&quot;)
+    if num_gpus > 1:
+        Logger(f"Using {num_gpus} GPUs with DataParallel!")
         model = torch.nn.DataParallel(model)
     
     model = model.to(args.device)
-    Logger(f&#x27;LLM总参数量：{count_parameters(model) / 1e6:.3f} 百万&#x27;)
+    Logger(f'LLM总参数量：{count_parameters(model) / 1e6:.3f} 百万')
     return model, tokenizer
 
 
-if __name__ == &quot;__main__&quot;:
-    parser = argparse.ArgumentParser(description=&quot;Tiny-LLM Pretraining&quot;)
-    parser.add_argument(&quot;--out_dir&quot;, type=str, default=&quot;sft_model_215M&quot;, help=&quot;输出目录&quot;)
-    parser.add_argument(&quot;--epochs&quot;, type=int, default=1, help=&quot;训练轮数&quot;)
-    parser.add_argument(&quot;--batch_size&quot;, type=int, default=64, help=&quot;批处理大小&quot;)
-    parser.add_argument(&quot;--learning_rate&quot;, type=float, default=2e-4, help=&quot;学习率&quot;)
-    parser.add_argument(&quot;--device&quot;, type=str, default=&quot;cuda:0&quot; if torch.cuda.is_available() else &quot;cpu&quot;, help=&quot;使用的设备&quot;)
-    parser.add_argument(&quot;--dtype&quot;, type=str, default=&quot;bfloat16&quot;, help=&quot;数据类型&quot;)
-    parser.add_argument(&quot;--use_swanlab&quot;, action=&quot;store_true&quot;, help=&quot;是否使用SwanLab进行实验跟踪&quot;)
-    parser.add_argument(&quot;--num_workers&quot;, type=int, default=8, help=&quot;数据加载的工作进程数&quot;)
-    parser.add_argument(&quot;--data_path&quot;, type=str, default=&quot;./BelleGroup_sft.jsonl&quot;, help=&quot;训练数据路径&quot;)
-    parser.add_argument(&quot;--accumulation_steps&quot;, type=int, default=8, help=&quot;梯度累积步数&quot;)
-    parser.add_argument(&quot;--grad_clip&quot;, type=float, default=1.0, help=&quot;梯度裁剪阈值&quot;)
-    parser.add_argument(&quot;--warmup_iters&quot;, type=int, default=0, help=&quot;预热迭代次数&quot;)
-    parser.add_argument(&quot;--log_interval&quot;, type=int, default=100, help=&quot;日志记录间隔&quot;)
-    parser.add_argument(&quot;--save_interval&quot;, type=int, default=1000, help=&quot;模型保存间隔&quot;)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Tiny-LLM Pretraining")
+    parser.add_argument("--out_dir", type=str, default="sft_model_215M", help="输出目录")
+    parser.add_argument("--epochs", type=int, default=1, help="训练轮数")
+    parser.add_argument("--batch_size", type=int, default=64, help="批处理大小")
+    parser.add_argument("--learning_rate", type=float, default=2e-4, help="学习率")
+    parser.add_argument("--device", type=str, default="cuda:0" if torch.cuda.is_available() else "cpu", help="使用的设备")
+    parser.add_argument("--dtype", type=str, default="bfloat16", help="数据类型")
+    parser.add_argument("--use_swanlab", action="store_true", help="是否使用SwanLab进行实验跟踪")
+    parser.add_argument("--num_workers", type=int, default=8, help="数据加载的工作进程数")
+    parser.add_argument("--data_path", type=str, default="./BelleGroup_sft.jsonl", help="训练数据路径")
+    parser.add_argument("--accumulation_steps", type=int, default=8, help="梯度累积步数")
+    parser.add_argument("--grad_clip", type=float, default=1.0, help="梯度裁剪阈值")
+    parser.add_argument("--warmup_iters", type=int, default=0, help="预热迭代次数")
+    parser.add_argument("--log_interval", type=int, default=100, help="日志记录间隔")
+    parser.add_argument("--save_interval", type=int, default=1000, help="模型保存间隔")
     # 添加多卡参数
-    parser.add_argument(&quot;--gpus&quot;, type=str, default=&#x27;0,1,2,3,4,5,6,7&#x27;, help=&quot;逗号分隔的GPU ID (例如 &#x27;0,1,2&#x27;)&quot;)
+    parser.add_argument("--gpus", type=str, default='0,1,2,3,4,5,6,7', help="逗号分隔的GPU ID (例如 '0,1,2')")
 
     args = parser.parse_args()
 
     # 设置可见GPU
     if args.gpus is not None:
-        os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = args.gpus
+        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpus
         # 自动设置主设备为第一个GPU
         if torch.cuda.is_available():
-            args.device = &quot;cuda:0&quot;
+            args.device = "cuda:0"
         else:
-            args.device = &quot;cpu&quot;
+            args.device = "cpu"
 
     # 初始化swanlab
     if args.use_swanlab:
         run = swanlab.init(
-            project=&quot;Happy-LLM&quot;,
-            experiment_name=&quot;SFT-215M&quot;,
+            project="Happy-LLM",
+            experiment_name="SFT-215M",
             config=args,
         )
 
@@ -1992,10 +2007,10 @@ if __name__ == &quot;__main__&quot;:
     os.makedirs(args.save_dir, exist_ok=True)
     os.makedirs(args.out_dir, exist_ok=True)
     torch.manual_seed(42)
-    device_type = &quot;cuda&quot; if &quot;cuda&quot; in args.device else &quot;cpu&quot;
+    device_type = "cuda" if "cuda" in args.device else "cpu"
 
     # 上下文管理器
-    ctx = nullcontext() if device_type == &quot;cpu&quot; else torch.cuda.amp.autocast()
+    ctx = nullcontext() if device_type == "cpu" else torch.cuda.amp.autocast()
 
     # 初始化模型和分词器
     model, tokenizer = init_model()
@@ -2012,7 +2027,7 @@ if __name__ == &quot;__main__&quot;:
     )
 
     # 缩放器和优化器
-    scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype in [&#x27;float16&#x27;, &#x27;bfloat16&#x27;]))
+    scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype in ['float16', 'bfloat16']))
     optimizer = optim.AdamW(model.parameters(), lr=args.learning_rate)
 
     # 开始训练
@@ -2021,17 +2036,19 @@ if __name__ == &quot;__main__&quot;:
         train_epoch(epoch)
 ```
 
-### 5.3.6 使用模型生成文本
 
-在模型训练完成后，会在output目录下生成模型文件，这个文件就是我们训练好的模型。我们可以使用以下命令生成文本。
+
+## 5.3.6 使用模型生成文本
+
+在模型训练完成后，会在`output`目录下生成模型文件，这个文件就是我们训练好的模型。我们可以使用以下命令生成文本。
 
 ```
 python model_sample.py
 ```
 
-我们来看下model_sample.py文件中的代码，这个文件中定义了一个TextGenerator类，用于生成文本。
+我们来看下`model_sample.py`文件中的代码，这个文件中定义了一个`TextGenerator`类，用于生成文本。
 
-```
+```python
 import os
 import pickle
 from contextlib import nullcontext
@@ -2042,21 +2059,21 @@ import argparse
 
 class TextGenerator:
     def __init__(self, 
-                 checkpoint=&#x27;./base_model_215M/pretrain_1024_18_6144.pth&#x27;,  # 模型检查点路径
-                 tokenizer_model_path=&#x27;./tokenizer_k/&#x27;,  # 分词器模型路径
+                 checkpoint='./base_model_215M/pretrain_1024_18_6144.pth',  # 模型检查点路径
+                 tokenizer_model_path='./tokenizer_k/',  # 分词器模型路径
                  seed=42,  # 随机种子，确保可重复性
                  device=None,  # 设备，优先使用 CUDA，如果没有可用的 CUDA，则使用 CPU
-                 dtype=&quot;bfloat16&quot;):  # 数据类型，默认为 float32，可以选择 float16 或 bfloat16
-        &quot;&quot;&quot;
+                 dtype="bfloat16"):  # 数据类型，默认为 float32，可以选择 float16 或 bfloat16
+        """
         初始化 TextGenerator 类，加载模型、设置设备和分词器等。
-        &quot;&quot;&quot;
+        """
         # 模型加载配置
         self.checkpoint = checkpoint  # 保存的模型检查点路径
         self.tokenizer_model_path = tokenizer_model_path  # 分词器模型文件路径
         self.seed = seed  # 随机数种子，用于生成的可重复性
-        self.device = device or (&#x27;cuda:0&#x27; if torch.cuda.is_available() else &#x27;cpu&#x27;)  # 根据硬件条件选择设备
+        self.device = device or ('cuda:0' if torch.cuda.is_available() else 'cpu')  # 根据硬件条件选择设备
         self.dtype = dtype  # 模型的浮点数类型
-        self.device_type = &#x27;cuda&#x27; if &#x27;cuda&#x27; in self.device else &#x27;cpu&#x27;  # 判断当前设备是否为 CUDA
+        self.device_type = 'cuda' if 'cuda' in self.device else 'cpu'  # 判断当前设备是否为 CUDA
         
         # 设置随机种子，确保生成的可重复性
         torch.manual_seed(seed)  # 设置 CPU 随机种子
@@ -2065,13 +2082,13 @@ class TextGenerator:
         torch.backends.cudnn.allow_tf32 = True  # 允许 cuDNN 使用 TF32 精度加速
         
         # 根据 dtype 选择适当的自动混合精度上下文
-        ptdtype = {&#x27;float32&#x27;: torch.float32, &#x27;bfloat16&#x27;: torch.bfloat16, &#x27;float16&#x27;: torch.float16}[self.dtype]
-        self.ctx = nullcontext() if self.device_type == &#x27;cpu&#x27; else torch.amp.autocast(device_type=self.device_type, dtype=ptdtype)
+        ptdtype = {'float32': torch.float32, 'bfloat16': torch.bfloat16, 'float16': torch.float16}[self.dtype]
+        self.ctx = nullcontext() if self.device_type == 'cpu' else torch.amp.autocast(device_type=self.device_type, dtype=ptdtype)
         
         # 加载模型检查点文件
         checkpoint_dict = torch.load(self.checkpoint, map_location=self.device)  # 加载模型参数 # 初始化模型参数
         self.model = Transformer(ModelConfig(dim=1024, n_layers=18))  # 实例化 Transformer 模型
-        sunwanted_prefix = &#x27;_orig_mod.&#x27;
+        sunwanted_prefix = '_orig_mod.'
         for k, v in list(checkpoint_dict.items()):
             if k.startswith(sunwanted_prefix):
                 checkpoint_dict[k[len(sunwanted_prefix):]] = checkpoint_dict.pop(k)
@@ -2079,7 +2096,7 @@ class TextGenerator:
         
         # 计算模型参数量
         num_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
-        print(f&quot;Model has {num_params / 1e6:.3f} M parameters.&quot;)
+        print(f"Model has {num_params / 1e6:.3f} M parameters.")
         # 设置模型为评估模式（evaluation mode），防止训练模式下的 dropout 等操作影响结果
         self.model.eval()
         # 将模型放置到正确的设备上（GPU 或 CPU）
@@ -2089,18 +2106,18 @@ class TextGenerator:
 
     def chat_template(self, prompt):
         message = [
-            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个AI助手，你的名字叫小明。&quot;},
-            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+            {"role": "system", "content": "你是一个AI助手，你的名字叫小明。"},
+            {"role": "user", "content": prompt}
         ]
         return self.tokenizer.apply_chat_template(message, tokenize=False, add_generation_prompt=True)
 
     def sft_sample(self, 
-               start=&quot;Hello!&quot;,  # 生成文本的起始提示词，可以是任意字符串
+               start="Hello!",  # 生成文本的起始提示词，可以是任意字符串
                num_samples=3,  # 生成样本的数量，默认生成 3 个样本
                max_new_tokens=256,  # 每个样本生成的最大 token 数，默认最多生成 256 个 token
                temperature=0.7,  # 控制生成的随机性，1.0 为标准，值越大越随机
                top_k=300):  # 保留概率最高的 top_k 个 token，限制生成时的选择范围
-        &quot;&quot;&quot;
+        """
         根据给定的起始文本生成样本。
         
         :param start: 生成文本的起始提示词
@@ -2109,11 +2126,11 @@ class TextGenerator:
         :param temperature: 控制生成的随机性，值越小生成越确定，值越大生成越随机
         :param top_k: 限制生成时选择的 token 范围
         :return: 生成的文本样本列表
-        &quot;&quot;&quot;
+        """
         start = self.chat_template(start)
         # 将起始文本编码为 token id 序列
-        start_ids = self.tokenizer(start).data[&#x27;input_ids&#x27;]
-        # print(&#x27;start_ids:&#x27;, start_ids)
+        start_ids = self.tokenizer(start).data['input_ids']
+        # print('start_ids:', start_ids)
         x = (torch.tensor(start_ids, dtype=torch.long, device=self.device)[None, ...])  # 将编码后的 token id 转为 PyTorch 张量
         generated_texts = []  # 用于保存生成的文本样本
         with torch.no_grad():  # 禁用梯度计算，提升效率
@@ -2125,12 +2142,12 @@ class TextGenerator:
 
 
     def pretrain_sample(self, 
-               start=&quot;Hello!&quot;,  # 生成文本的起始提示词，可以是任意字符串
+               start="Hello!",  # 生成文本的起始提示词，可以是任意字符串
                num_samples=3,  # 生成样本的数量，默认生成 3 个样本
                max_new_tokens=256,  # 每个样本生成的最大 token 数，默认最多生成 256 个 token
                temperature=0.7,  # 控制生成的随机性，1.0 为标准，值越大越随机
                top_k=300):  # 保留概率最高的 top_k 个 token，限制生成时的选择范围
-        &quot;&quot;&quot;
+        """
         根据给定的起始文本生成样本。
         
         :param start: 生成文本的起始提示词
@@ -2139,15 +2156,15 @@ class TextGenerator:
         :param temperature: 控制生成的随机性，值越小生成越确定，值越大生成越随机
         :param top_k: 限制生成时选择的 token 范围
         :return: 生成的文本样本列表
-        &quot;&quot;&quot;
-        # 如果 start 是以 &#x27;FILE:&#x27; 开头，表示从文件中读取起始文本
-        if start.startswith(&#x27;FILE:&#x27;):
-            with open(start[5:], &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        """
+        # 如果 start 是以 'FILE:' 开头，表示从文件中读取起始文本
+        if start.startswith('FILE:'):
+            with open(start[5:], 'r', encoding='utf-8') as f:
                 start = f.read()  # 读取文件内容作为起始文本
         
         # 将起始文本编码为 token id 序列
-        start_ids = self.tokenizer(start).data[&#x27;input_ids&#x27;]
-        # print(&#x27;start_ids:&#x27;, start_ids)
+        start_ids = self.tokenizer(start).data['input_ids']
+        # print('start_ids:', start_ids)
         x = (torch.tensor(start_ids, dtype=torch.long, device=self.device)[None, ...])  # 将编码后的 token id 转为 PyTorch 张量
         # print(x.shape)
         generated_texts = []  # 用于保存生成的文本样本
@@ -2159,34 +2176,40 @@ class TextGenerator:
         
         return generated_texts  # 返回生成的文本样本
     
-if __name__ == &quot;__main__&quot;:
-    print(&quot;------------------- Pretrain Sample ------------------- \n&quot;)
+if __name__ == "__main__":
+    print("------------------- Pretrain Sample ------------------- \n")
 
     pretrain_prompt_datas = [
-        &#x27;&lt;|im_start|&gt;北京大学是&#x27;,
-        &#x27;&lt;|im_start|&gt;中国矿业大学（北京）地球科学与测绘工程学院&#x27;,
+        '<|im_start|>北京大学是',
+        '<|im_start|>中国矿业大学（北京）地球科学与测绘工程学院',
     ]
 
-    generator = TextGenerator(checkpoint=&#x27;./base_model_215M/pretrain_1024_18_6144.pth&#x27;)  # 初始化生成器
+    generator = TextGenerator(checkpoint='./base_model_215M/pretrain_1024_18_6144.pth')  # 初始化生成器
     for i in range(len(pretrain_prompt_datas)):
         samples = generator.pretrain_sample(start=pretrain_prompt_datas[i], num_samples=1, max_new_tokens=120, temperature=0.75)
-        print(f&quot;\nSample {i+1}:\n{pretrain_prompt_datas[i]}{samples[0]}\n{&#x27;-&#x27;*20}&quot;)  # 打印生成的样本并用分隔线分割
+        print(f"\nSample {i+1}:\n{pretrain_prompt_datas[i]}{samples[0]}\n{'-'*20}")  # 打印生成的样本并用分隔线分割
 
-    print(&quot;\n ------------------- SFT Sample ------------------- \n&quot;)
+    print("\n ------------------- SFT Sample ------------------- \n")
 
     sft_prompt_datas = [
-        &#x27;你好呀&#x27;,
-        &quot;中国的首都是哪里？&quot;,
-        &quot;1+12等于多少？&quot;,
-        &quot;你是谁？&quot;
+        '你好呀',
+        "中国的首都是哪里？",
+        "1+12等于多少？",
+        "你是谁？"
     ]
-    generator = TextGenerator(checkpoint=&#x27;./sft_model_215M/sft_dim1024_layers18_vocab_size6144.pth&#x27;)  # 初始化生成器
+    generator = TextGenerator(checkpoint='./sft_model_215M/sft_dim1024_layers18_vocab_size6144.pth')  # 初始化生成器
     for i in range(len(sft_prompt_datas)):
         samples = generator.sft_sample(start=sft_prompt_datas[i], num_samples=1, max_new_tokens=128, temperature=0.6)
-        print(f&quot;\nSample {i+1}:\nQuestion: {sft_prompt_datas[i]} \nAI answer: {samples[0]}\n{&#x27;-&#x27;*20}&quot;)  # 打印生成的样本并用分隔线分割
+        print(f"\nSample {i+1}:\nQuestion: {sft_prompt_datas[i]} \nAI answer: {samples[0]}\n{'-'*20}")  # 打印生成的样本并用分隔线分割
 ```
 
 最后我们来看一下模型输出的结果：
+
+
+
+# 训练样本展示
+
+## SFT 与 Pretrain 样本
 
 ```
 ------------------- SFT Sample ------------------- 
@@ -2223,12 +2246,14 @@ Sample 2:
 --------------------
 ```
 
+# 训练完成与模型下载
+
 到这里，我们的模型就训绽完成了，恭喜你训练了一个属于你自己的大模型。
 
-> 大家在训练的时候可以将 batch 调的低一些，这样可以减少显存的占用，避免显存不足的问题。当然这样会增加训练时间，可以根据自己的显卡显存大小来调整 batch 的大小。实测 Pretrain batch 为 4 的情况下只需要 7G 显存，训练时长预计 533 小时。作者是在 8卡4090 上进行训练的，预训练一共耗时 46 小时，SFT 阶段在 BelleGroup 350万条中文指令训练 24 小时。
+> 大家在训练的时候可以将 `batch` 调的低一些，这样可以减少显存的占用，避免显存不足的问题。当然这样会增加训练时间，可以根据自己的显卡显存大小来调整 `batch` 的大小。实测 Pretrain `batch` 为 4 的情况下只需要 7G 显存，训练时长预计 533 小时。作者是在 8卡4090 上进行训练的，预训练一共耗时 46 小时，SFT 阶段在 BelleGroup 350万条中文指令训练 24 小时。
 
 作者也在魔搭平台上传了本章节训来的模型，如果大家的设备不足以训练大模型，大家也可以在魔搭平台下载模型进行调试和模型体验。模型下载地址如下：
 
 > [ModelScope 模型](https://www.modelscope.cn/collections/Happy-LLM-e98b91b10b684a)下载地址：🤖 ModelScope
 
-> [ModelS](https://www.modelscope.cn/studios/kmno4zx/happy_llm_215M_sft)cope 创空间体验地址：🤖 创空间
+> [ModelScope](https://www.modelscope.cn/studios/kmno4zx/happy_llm_215M_sft) 创空间体验地址：🤖 创空间

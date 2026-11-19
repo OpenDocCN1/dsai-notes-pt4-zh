@@ -1,3 +1,4 @@
+
 # 15-检索增强生成 （RAG） 和向量数据库
 
 > 来源：[https://aigcreative.feishu.cn/docx/Z8I4dQfA6o0CYMxXByecmyIynhe](https://aigcreative.feishu.cn/docx/Z8I4dQfA6o0CYMxXByecmyIynhe)
@@ -14,13 +15,16 @@ In this lesson we will cover the following:
 
 在本课中，我们将介绍以下内容：
 
-+   An introduction to RAG, what it is and why it is used in AI (artificial intelligence).
++ An introduction to RAG, what it is and why it is used in AI (artificial intelligence).
+
 介绍 RAG，它是什么以及为什么在 AI（人工智能）中使用它。
 
-+   Understanding what vector databases are and creating one for our application.
++ Understanding what vector databases are and creating one for our application.
+
 了解什么是向量数据库，并为我们的应用程序创建一个。
 
-+   A practical example of how to integrate RAG into an application.
++ A practical example of how to integrate RAG into an application.
+
 有关如何将 RAG 集成到应用程序中的实际示例。
 
 ## Learning Goals 学习目标
@@ -29,41 +33,47 @@ After completing this lesson, you will be able to:
 
 学完本课后，您将能够：
 
-+   Explain the significance of RAG in data retrieval and processing.
++ Explain the significance of RAG in data retrieval and processing.
+
 解释RAG在数据检索和处理中的重要性。
 
-+   Setup RAG application and ground your data to an LLM
++ Setup RAG application and ground your data to an LLM
+
 设置 RAG 应用程序并将您的数据接地到LLM
 
-+   Effective integration of RAG and Vector Databases in LLM Applications.
++ Effective integration of RAG and Vector Databases in LLM Applications.
+
 在应用程序中有效集成 RAG 和矢量数据库LLM。
 
-## [Our Scenario: enhancing our LL](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=our-scenario-enhancing-our-llms-with-our-own-data)Ms with our own data 我们的方案：用我们自己的数据增强我们的LLMs方案
+## [Our Scenario: enhancing our LLMs with our own data 我们的方案：用我们自己的数据增强我们的LLMs方案](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=our-scenario-enhancing-our-llms-with-our-own-data)
 
 For this lesson, we want to add our own notes into the education startup, which allows the chatbot to get more information on the different subjects. Using the notes that we have, learners will be able to study better and understand the different topics, making it easier to revise for their examinations. To create our scenario, we will use:
 
 在本课中，我们希望将我们自己的笔记添加到教育初创公司中，这使聊天机器人能够获取有关不同主题的更多信息。使用我们拥有的笔记，学习者将能够更好地学习并理解不同的主题，从而更容易为考试复习。为了创建我们的方案，我们将使用：
 
-+   Azure OpenAI: the LLM we will use to create our chatbot
++ Azure OpenAI: the LLM we will use to create our chatbot
+
 Azure OpenAI: LLM我们将用来创建我们的聊天机器人
 
-+   AI for beginners' lesson on Neural Networks: this will be the data we ground our LLM on
++ AI for beginners' lesson on Neural Networks: this will be the data we ground our LLM on
+
 AI for beginners' lesson on Neural Networks ：这将是我们赖以依据LLM的数据
 
-+   Azure AI Search and Azure Cosmos DB: vector database to store our data and create a search index
++ Azure AI Search and Azure Cosmos DB: vector database to store our data and create a search index
+
 Azure AI Search 和 Azure Cosmos DB: 矢量数据库来存储我们的数据并创建搜索索引
 
 Users will be able to create practice quizzes from their notes, revision flash cards and summarize it to concise overviews. To get started, let us look at what is RAG and how works:
 
 用户将能够从他们的笔记、复习抽卡中创建练习测验，并将其总结为简洁的概述。首先，让我们看看什么是 RAG 以及它是如何工作的：
 
-## [Retrieval Augmen](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=retrieval-augmented-generation-rag)[ted Generati](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=retrieval-augmented-generation-rag)on (RAG) 检索增强生成 （RAG）
+## [Retrieval Augmented Generation (RAG) 检索增强生成 （RAG）](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=retrieval-augmented-generation-rag)
 
 An LLM powered chatbot processes user prompts to generate responses. It is designed to be interactive and engages with users on a wide array of topics. However, its responses are limited to the context provided and its foundational training data. For instance, GPT-4 knowledge cutoff is September 2021, meaning, it lacks knowledge of events that have occurred after this period. In addition, the data used to train LLMs excludes confidential information such as personal notes or a company's product manual.
 
 一个LLM强大的聊天机器人处理用户提示以生成响应。它的设计是交互式的，并在广泛的主题上与用户互动。但是，其响应仅限于所提供的背景及其基础培训数据。例如，GPT-4 的知识截止时间是 2021 年 9 月，这意味着它缺乏对这段时间之后发生的事件的知识。此外，用于培训LLMs的数据不包括机密信息，例如个人笔记或公司的产品手册。
 
-### [How RAGs (Retrieval Augmen](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=how-rags-retrieval-augmented-generation-work)ted Generation) work RAG（检索增强生成）的工作原理
+### [How RAGs (Retrieval Augmented Generation) work RAG（检索增强生成）的工作原理](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=how-rags-retrieval-augmented-generation-work)
 
 ![](img/d352f796345093cd2c2aa875b2f3638c.png)
 
@@ -71,16 +81,20 @@ Suppose you want to deploy a chatbot that creates quizzes from your notes, you w
 
 假设您想部署一个聊天机器人，该聊天机器人从您的笔记中创建测验，您将需要连接到知识库。这就是RAG的用武之地。RAG 的操作方式如下：
 
-+   Knowledge base: Before retrieval, these documents need to be ingested and preprocessed, typically breaking down large documents into smaller chunks, transforming them to text embedding and storing them in a database.
++ Knowledge base: Before retrieval, these documents need to be ingested and preprocessed, typically breaking down large documents into smaller chunks, transforming them to text embedding and storing them in a database.
+
 知识库：在检索之前，需要对这些文档进行摄取和预处理，通常将大型文档分解为较小的块，将它们转换为文本嵌入并将它们存储在数据库中。
 
-+   User Query: the user asks a question
++ User Query: the user asks a question
+
 用户查询：用户提出问题
 
-+   Retrieval: When a user asks a question, the embedding model retrieves relevant information from our knowledge base to provide more context that will be incorporated into the prompt.
++ Retrieval: When a user asks a question, the embedding model retrieves relevant information from our knowledge base to provide more context that will be incorporated into the prompt.
+
 检索：当用户提出问题时，嵌入模型会从我们的知识库中检索相关信息，以提供更多上下文，这些信息将被合并到提示中。
 
-+   Augmented Generation: the LLM enhances its response based on the data retrieved. It allows the response generated to be not only based on pre-trained data but also relevant information from the added context. The retrieved data is used to augment the LLM's responses. The LLM then returns an answer to the user's question.
++ Augmented Generation: the LLM enhances its response based on the data retrieved. It allows the response generated to be not only based on pre-trained data but also relevant information from the added context. The retrieved data is used to augment the LLM's responses. The LLM then returns an answer to the user's question.
+
 增强生成：根据检索到的数据LLM增强其响应。它允许生成的响应不仅基于预先训练的数据，还基于来自添加上下文的相关信息。检索到的数据用于增强 LLM的响应。然后返回LLM用户问题的答案。
 
 ![](img/fee0af8577e53aa93fc7f4e48f3ae4b4.png)
@@ -89,34 +103,41 @@ The architecture for RAGs is implemented using transformers consisting of two pa
 
 RAG 的架构是使用转换器实现的，转换器由两部分组成：编码器和解码器。例如，当用户提出问题时，输入文本被“编码”为捕获单词含义的向量，而向量被“解码”到我们的文档索引中，并根据用户查询生成新文本。两者都LLM使用编码器-解码器模型来生成输出。
 
-T[wo](https://arxiv.org/pdf/2005.11401.pdf?WT.mc_id=academic-105485-koreyst) approaches when implementing RAG according to the proposed paper: Retrieval-Augmented Generation for Knowledge intensive NLP (natural language processing software) Tasks are:
+[Two](https://arxiv.org/pdf/2005.11401.pdf?WT.mc_id=academic-105485-koreyst) approaches when implementing RAG according to the proposed paper: Retrieval-Augmented Generation for Knowledge intensive NLP (natural language processing software) Tasks are:
 
 根据所提出的论文，在实施 RAG 时有两种方法： 知识密集型 NLP（自然语言处理软件）的检索增强生成 任务是：
 
-+   RAG-Sequence using retrieved documents to predict the best possible answer to a user query
++ RAG-Sequence using retrieved documents to predict the best possible answer to a user query
+
 RAG-Sequence 使用检索到的文档来预测用户查询的最佳可能答案
 
-+   RAG-Token using documents to generate the next token, then retrieve them to answer the user's query
++ RAG-Token using documents to generate the next token, then retrieve them to answer the user's query
+
 RAG-Token 使用文档生成下一个令牌，然后检索它们以回答用户的查询
 
-### [Why would y](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=why-would-you-use-rags)ou use RAGs? 为什么要使用 RAG？
+### [Why would you use RAGs? 为什么要使用 RAG？](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=why-would-you-use-rags)
 
-+   Information richness: ensures text responses are up to date and current. It, therefore, enhances performance on domain specific tasks by accessing the internal knowledge base.
++ Information richness: ensures text responses are up to date and current. It, therefore, enhances performance on domain specific tasks by accessing the internal knowledge base.
+
 信息丰富性：确保文本响应是最新的和最新的。因此，它通过访问内部知识库来提高特定领域任务的性能。
 
-+   Reduces fabrication by utilizing verifiable data in the knowledge base to provide context to the user queries.
++ Reduces fabrication by utilizing verifiable data in the knowledge base to provide context to the user queries.
+
 通过利用知识库中的可验证数据为用户查询提供上下文，减少捏造。
 
-+   It is cost effective as they are more economical compared to fine-tuning an LLM
++ It is cost effective as they are more economical compared to fine-tuning an LLM
+
 这是具有成本效益的，因为与微调相比，它们更经济。LLM
 
-## [Creat](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=creating-a-knowledge-base)ing a knowledge base 创建知识库
+## [Creating a knowledge base 创建知识库](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=creating-a-knowledge-base)
 
 Our application is based on our personal data i.e., the Neural Network lesson on AI For Beginners curriculum.
 
 我们的应用程序基于我们的个人数据，即关于初学者 AI 课程的神经网络课程。
 
 ### Vector Databases 向量数据库
+
+
 
 A vector database, unlike traditional databases, is a specialized database designed to store, manage and search embedded vectors. It stores numerical representations of documents. Breaking down data to numerical embeddings makes it easier for our AI system to understand and process the data.
 
@@ -132,9 +153,9 @@ Some popular vector databases include Azure Cosmos DB, Clarifyai, Pinecone, Chro
 
 ```
 az login
-az group create -n &lt;resource-group-name&gt; -l &lt;location&gt;
-az cosmosdb create -n &lt;cosmos-db-name&gt; -r &lt;resource-group-name&gt;
-az cosmosdb list-keys -n &lt;cosmos-db-name&gt; -g &lt;resource-group-name&gt;
+az group create -n <resource-group-name> -l <location>
+az cosmosdb create -n <cosmos-db-name> -r <resource-group-name>
+az cosmosdb list-keys -n <cosmos-db-name> -g <resource-group-name>
 ```
 
 ### From text to embeddings 从文本到嵌入
@@ -150,22 +171,22 @@ def split_text(text, max_length, min_length):
     current_chunk = []
     for word in words:
         current_chunk.append(word)
-        if len(&#x27; &#x27;.join(current_chunk)) &lt; max_length and len(&#x27; &#x27;.join(current_chunk)) &gt; min_length:
-            chunks.append(&#x27; &#x27;.join(current_chunk))
+        if len(' '.join(current_chunk)) < max_length and len(' '.join(current_chunk)) > min_length:
+            chunks.append(' '.join(current_chunk))
             current_chunk = []
-    # If the last chunk didn&#x27;t reach the minimum length, add it anyway
+    # If the last chunk didn't reach the minimum length, add it anyway
     if current_chunk:
-        chunks.append(&#x27; &#x27;.join(current_chunk))
+        chunks.append(' '.join(current_chunk))
     return chunks
 ```
 
-Once chunked, we can then embed our text using different embedding models. Some models you can use include: word2vec, ada-002 by OpenAI, Azure Computer Vision and many more. Selecting a model to use will depend on the languages you're using, the type of content encoded (text/images/audio), the size of input it can encode and length of the embedding output.
+Once chunked, we can then embed our text using different embedding models. Some models you can use include: `word2vec`, `ada-002` by OpenAI, Azure Computer Vision and many more. Selecting a model to use will depend on the languages you're using, the type of content encoded (text/images/audio), the size of input it can encode and length of the embedding output.
 
-一旦被分块，我们就可以使用不同的嵌入模型来嵌入我们的文本。您可以使用的一些模型包括：word2vec、OpenAI 的 ada-002、Azure Computer Vision 等等。选择要使用的模型将取决于您使用的语言、编码的内容类型（文本/图像/音频）、它可以编码的输入大小以及嵌入输出的长度。
+一旦被分块，我们就可以使用不同的嵌入模型来嵌入我们的文本。您可以使用的一些模型包括：`word2vec`、OpenAI 的 `ada-002`、Azure Computer Vision 等等。选择要使用的模型将取决于您使用的语言、编码的内容类型（文本/图像/音频）、它可以编码的输入大小以及嵌入输出的长度。
 
-An example of embedded text using OpenAI's text-embedding-ada-002 model is:
+An example of embedded text using OpenAI's `text-embedding-ada-002` model is:
 
-使用 OpenAI text-embedding-ada-002 模型的嵌入文本示例如下：
+使用 OpenAI `text-embedding-ada-002` 模型的嵌入文本示例如下：
 
 ![](img/ade14311770a3cfa338ad8fff9896326.png)
 
@@ -186,20 +207,24 @@ There are several ways to perform search within our database such as:
 有几种方法可以在我们的数据库中执行搜索，例如：
 
 +   Keyword search used for text searches
-关键字搜索 - 用于文本搜索
+
+    关键字搜索 - 用于文本搜索
 
 +   Semantic search uses the semantic meaning of words
-语义搜索 - 使用单词的语义含义
+
+    语义搜索 - 使用单词的语义含义
 
 +   Vector search converts documents from text to vector representations using embedding models. Retrieval will be done by querying the documents whose vector representations are closest to the user question.
-矢量搜索 - 使用嵌入模型将文档从文本转换为矢量表示。检索将通过查询其向量表示最接近用户问题的文档来完成。
+
+    矢量搜索 - 使用嵌入模型将文档从文本转换为矢量表示。检索将通过查询其向量表示最接近用户问题的文档来完成。
 
 +   Hybrid a combination of both keyword and vector search.
-混合 - 关键字和向量搜索的组合。
 
-A challenge with retrieval comes in when there is no similar response to the query in the database, the system will then return the best information they can get, however, you can use tactics like set up the maximum distance for relevance or use hybrid search that combines both keywords and vector search. In this lesson we will use hybrid search, a combination of both vector and keyword search. We will store our data into a dataframe with columns containing the chunks as well as embeddings.
+    混合 - 关键字和向量搜索的组合。
 
-当数据库中的查询没有类似的响应时，检索就会面临挑战，然后系统将返回他们可以获得的最佳信息，但是，您可以使用诸如设置相关性最大距离之类的策略或使用混合搜索，将关键字和向量搜索结合起来。在本课中，我们将使用混合搜索，即向量搜索和关键字搜索的组合。我们将数据存储到一个 DataFrame 中，该 DataFrame 的列包含块和嵌入。
+A challenge with retrieval comes in when there is no similar response to the query in the database, the system will then return the best information they can get, however, you can use tactics like set up the maximum distance for relevance or use hybrid search that combines both keywords and vector search. In this lesson we will use hybrid search, a combination of both vector and keyword search. We will store our data into a `dataframe` with columns containing the chunks as well as embeddings.
+
+当数据库中的查询没有类似的响应时，检索就会面临挑战，然后系统将返回他们可以获得的最佳信息，但是，您可以使用诸如设置相关性最大距离之类的策略或使用混合搜索，将关键字和向量搜索结合起来。在本课中，我们将使用混合搜索，即向量搜索和关键字搜索的组合。我们将数据存储到一个 `DataFrame` 中，该 `DataFrame` 的列包含块和嵌入。
 
 ### Vector Similarity 向量相似性
 
@@ -220,10 +245,10 @@ When doing retrieval, we will need to build a search index for our knowledge bas
 ```
 from sklearn.neighbors import NearestNeighbors
 
-embeddings = flattened_df[&#x27;embeddings&#x27;].to_list()
+embeddings = flattened_df['embeddings'].to_list()
 
 # Create the search index
-nbrs = NearestNeighbors(n_neighbors=5, algorithm=&#x27;ball_tree&#x27;).fit(embeddings)
+nbrs = NearestNeighbors(n_neighbors=5, algorithm='ball_tree').fit(embeddings)
 
 # To query the index, you can use the kneighbors method
 distances, indices = nbrs.kneighbors(embeddings)
@@ -235,6 +260,8 @@ Once you have queried the database, you might need to sort the results from the 
 
 查询数据库后，可能需要从最相关的结果中对结果进行排序。重新排名LLM利用机器学习通过从最相关的位置排序来提高搜索结果的相关性。使用 Azure AI 搜索时，系统会自动使用语义重排器进行重新排名。如何使用最近邻进行重新排名的示例：
 
+
+
 ```
 # Find the most similar documents
 distances, indices = nbrs.kneighbors([query_vector])
@@ -244,11 +271,11 @@ index = []
 for i in range(3):
     index = indices[0][i]
     for index in indices[0]:
-        print(flattened_df[&#x27;chunks&#x27;].iloc[index])
-        print(flattened_df[&#x27;path&#x27;].iloc[index])
-        print(flattened_df[&#x27;distances&#x27;].iloc[index])
+        print(flattened_df['chunks'].iloc[index])
+        print(flattened_df['path'].iloc[index])
+        print(flattened_df['distances'].iloc[index])
     else:
-        print(f&quot;Index {index} not found in DataFrame&quot;)
+        print(f"Index {index} not found in DataFrame")
 ```
 
 ## Bringing it all together 将所有内容整合在一起
@@ -258,7 +285,7 @@ The last step is adding our LLM into the mix to be able to get responses that ar
 最后一步是将我们的LLM添加到组合中，以便能够获得基于我们数据的响应。我们可以按照以下方式实现它：
 
 ```
-user_input = &quot;what is a perceptron?&quot;
+user_input = "what is a perceptron?"
 def chatbot(user_input):
     # Convert the question to a query vector
     query_vector = create_embeddings(user_input)
@@ -267,17 +294,17 @@ def chatbot(user_input):
     # add documents to query  to provide context
     history = []
     for index in indices[0]:
-        history.append(flattened_df[&#x27;chunks&#x27;].iloc[index])
+        history.append(flattened_df['chunks'].iloc[index])
     # combine the history and the user input
     history.append(user_input)
     # create a message object
     messages=[
-        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are an AI assiatant that helps with AI questions.&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: history[-1]}
+        {"role": "system", "content": "You are an AI assiatant that helps with AI questions."},
+        {"role": "user", "content": history[-1]}
     ]
     # use chat completion to generate a response
     response = openai.chat.completions.create(
-        model=&quot;gpt-4&quot;,
+        model="gpt-4",
         temperature=0.7,
         max_tokens=800,
         messages=messages
@@ -286,38 +313,46 @@ def chatbot(user_input):
 chatbot(user_input)
 ```
 
-## [Evaluatin](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=evaluating-our-application)g our application 评估我们的应用程序
+## [Evaluating our application 评估我们的应用程序](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=evaluating-our-application)
 
 ### Evaluation Metrics 评估指标
 
-+   Quality of responses supplied ensuring it sounds natural, fluent and human-like
++ Quality of responses supplied ensuring it sounds natural, fluent and human-like
+
 提供的回复质量确保它听起来自然、流畅和像人一样
 
-+   Groundedness of the data: evaluating whether the response that came from supplied docs
++ Groundedness of the data: evaluating whether the response that came from supplied docs
+
 数据的接地性：评估是否来自提供的文档的响应
 
-+   Relevance: evaluating the response matches and is related to the question asked
++ Relevance: evaluating the response matches and is related to the question asked
+
 相关性：评估响应是否匹配并与所提出的问题相关
 
-+   Fluency - whether the response makes sense grammatically
++ Fluency - whether the response makes sense grammatically
+
 流利度 - 响应在语法上是否有意义
 
-## [Use Cases for using RAG (Retervival Au](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=use-cases-for-using-rag-retervival-augmented-generation-and-vector-databases)[gmented Generation) and vect](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=use-cases-for-using-rag-retervival-augmented-generation-and-vector-databases)or databases 使用 RAG（Retervival Augmented Generation）和矢量数据库的用例
+## [Use Cases for using RAG (Retervival Augmented Generation) and vector databases 使用 RAG（Retervival Augmented Generation）和矢量数据库的用例](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=use-cases-for-using-rag-retervival-augmented-generation-and-vector-databases)
 
 There are many different use cases where function calls can improve your app like:
 
 在许多不同的用例中，函数调用可以改进您的应用程序，例如：
 
-+   Question and Answering: grounding your company data to a chat that can be used by employees to ask questions.
++ Question and Answering: grounding your company data to a chat that can be used by employees to ask questions.
+
 问答：将您的公司数据为基础，以供员工使用来提问。
 
-+   Recommendation Systems: where you can create a system that matches the most similar values e.g. movies, restaurants and many more.
++ Recommendation Systems: where you can create a system that matches the most similar values e.g. movies, restaurants and many more.
+
 推荐系统：您可以在其中创建一个与最相似的值匹配的系统，例如电影、餐厅等等。
 
-+   Chatbot services: you can store chat history and personalize the conversation based on the user data.
++ Chatbot services: you can store chat history and personalize the conversation based on the user data.
+
 聊天机器人服务：您可以存储聊天记录并根据用户数据对对话进行个性化设置。
 
-+   Image search based on vector embeddings, useful when doing image recognition and anomaly detection.
++ Image search based on vector embeddings, useful when doing image recognition and anomaly detection.
+
 基于向量嵌入的图像搜索，在进行图像识别和异常检测时很有用。
 
 ## [Summary 总结](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=summary)
@@ -332,17 +367,19 @@ To continue your learning of Retrieval Augmented Generation (RAG) you can build:
 
 要继续学习检索增强生成 （RAG），您可以构建：
 
-+   Build a front-end for the application using the framework of your choice
++ Build a front-end for the application using the framework of your choice
+
 使用您选择的框架为应用程序构建前端
 
-+   Utilize a framework, either LangChain or Semantic Kernel, and recreate your application.
++ Utilize a framework, either LangChain or Semantic Kernel, and recreate your application.
+
 利用框架，LangChain或Semantic Kernel，并重新创建您的应用程序。
 
 Congratulations for completing the lesson 👏.
 
 恭喜您完成了这节课👏。
 
-## [Learning does not stop here, ](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=learning-does-not-stop-here-continue-the-journey)[continue the](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=learning-does-not-stop-here-continue-the-journey) Journey 学习并不止于此，继续旅程
+## [Learning does not stop here, continue the Journey 学习并不止于此，继续旅程](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst&id=learning-does-not-stop-here-continue-the-journey)
 
 After completing this lesson, check out our Generative AI Learning collection to continue leveling up your Generative AI knowledge!
 

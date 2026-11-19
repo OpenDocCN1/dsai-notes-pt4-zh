@@ -1,3 +1,4 @@
+
 # Day 5: 解锁技能树
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/CKPpdBfNao3XMyxV432cUjARnPh](https://rq547mr4oez.feishu.cn/docx/CKPpdBfNao3XMyxV432cUjARnPh)
@@ -26,13 +27,13 @@ OpenClaw 的 Skills 系统就是你 AI 助手的 App Store。
 
 每个 Skill 是一组文件，通常包括：
 
-+   SKILL.md — 技能说明书（告诉 AI 这个技能做什么、怎么用）
++   `SKILL.md` — 技能说明书（告诉 AI 这个技能做什么、怎么用）
 
 +   配置文件 — API Key、连接参数等
 
 +   脚本文件 — 具体的执行逻辑（如果需要的话）
 
-安装一个 Skill，就是把这些文件放到 ~/clawd/skills/ 目录下。助手启动时会自动加载它们，就像手机开机自动加载已安装的 App 一样。
+安装一个 Skill，就是把这些文件放到 `~/clawd/skills/` 目录下。助手启动时会自动加载它们，就像手机开机自动加载已安装的 App 一样。
 
 > 💡 核心思想：AI 的「脑子」已经够聪明了，它缺的是「工具」。Skills 就是那些工具。
 
@@ -40,7 +41,7 @@ OpenClaw 的 Skills 系统就是你 AI 助手的 App Store。
 
 ## 技能市场
 
-[OpenClaw 社区维](https://clawdhub.com/)护了一个不断增长的技能仓库：clawdhub.com
+[OpenClaw 社区维](https://clawdhub.com/)护了一个不断增长的技能仓库：`clawdhub.com`
 
 按类别浏览：
 
@@ -48,7 +49,7 @@ OpenClaw 的 Skills 系统就是你 AI 助手的 App Store。
 
 ## 安装你的第一个技能
 
-我们以 remind-me（提醒）技能为例——这是对小白最友好的第一个技能：装完立刻就能用。
+我们以 `remind-me`（提醒）技能为例——这是对小白最友好的第一个技能：装完立刻就能用。
 
 ### 方式一：从 ClawHub 安装（推荐）
 
@@ -58,9 +59,9 @@ clawdhub install remind-me
 
 它会从 ClawHub 下载 skill，并安装到你的技能目录里：
 
-+   默认：<workspace>/skills/（通常就是当前目录下的 ./skills）
++   默认：`<workspace>/skills/`（通常就是当前目录下的 `./skills`）
 
-+   共享安装：~/.openclaw/skills（同一台机器上的多个 agent/工作区可复用）
++   共享安装：`~/.openclaw/skills`（同一台机器上的多个 agent/工作区可复用）
 
 ### 方式二：手动安装
 
@@ -73,11 +74,11 @@ git clone https://github.com/openclaw/skill-remind-me remind-me
 
 ### 方式三：自己写（Day 7 会讲）
 
-创建 <workspace>/skills/my-skill/SKILL.md（或 ~/.openclaw/skills/my-skill/SKILL.md），写好说明，助手就会自动使用它。
+创建 `<workspace>/skills/my-skill/SKILL.md`（或 `~/.openclaw/skills/my-skill/SKILL.md`），写好 `SKILL.md` 说明，助手就会自动使用它。
 
 ### 方式四：从 GitHub 清单挑选（替代 ClawHub）
 
-如果你觉得 ClawHub 网站不好用，我[更](https://github.com/VoltAgent/awesome-openclaw-skills)推荐直接在 GitHub 清单里挑： https://github.com/VoltAgent/awesome-openclaw-skills
+如果你觉得 ClawHub 网站不好用，我[更](https://github.com/VoltAgent/awesome-openclaw-skills)推荐直接在 GitHub 清单里挑：`https://github.com/VoltAgent/awesome-openclaw-skills`
 
 用法：
 
@@ -97,29 +98,29 @@ git clone https://github.com/openclaw/skill-remind-me remind-me
 
 ### 🥇 必装级
 
-1.  remind-me — 提醒/定时 日使用频率：随你而定（但一旦用上就离不开）。把聊天里的事变成准时提醒：会议、缴费、复盘、喝水、早睡。
+1.  `remind-me` — 提醒/定时 日使用频率：随你而定（但一旦用上就离不开）。把聊天里的事变成准时提醒：会议、缴费、复盘、喝水、早睡。
 
-1.  todo-tracker — 待办清单 把你随口说的事收进 TODO，随时查看、标记完成。特别适合「事情多、脑子装不下」的阶段。
+1.  `todo-tracker` — 待办清单 把你随口说的事收进 TODO，随时查看、标记完成。特别适合「事情多、脑子装不下」的阶段。
 
-1.  Gmail（或 imap-email）— 邮件摘要 让助手帮你盯重要邮件、提炼要点、草拟回复。邮箱里往往藏着合作机会、系统告警和客户反馈。
+1.  `Gmail`（或 `imap-email`）— 邮件摘要 让助手帮你盯重要邮件、提炼要点、草拟回复。邮箱里往往藏着合作机会、系统告警和客户反馈。
 
-1.  Web Search — 联网搜索 任何需要实时信息的场景都离不开它。没有搜索能力的 AI 助手，就像断网的手机。
+1.  `Web Search` — 联网搜索 任何需要实时信息的场景都离不开它。没有搜索能力的 AI 助手，就像断网的手机。
 
 ### 🥈 强烈推荐
 
-1.  Browser — 网页操作/信息提取 让助手打开页面、抓取信息、对比竞品、验证网站是否正常（配合 Browser Relay 更强，但注意安全）。
+1.  `Browser` — 网页操作/信息提取 让助手打开页面、抓取信息、对比竞品、验证网站是否正常（配合 `Browser Relay` 更强，但注意安全）。
 
-1.  weather（或 weather-nws）— 天气/出行 一句话查天气、提醒带伞/添衣。最适合做成「每天早报」的一部分。
+1.  `weather`（或 `weather-nws`）— 天气/出行 一句话查天气、提醒带伞/添衣。最适合做成「每天早报」的一部分。
 
-1.  newsletter-digest / youtube-watcher — 信息摄取 把长文章/视频转成要点和行动清单。小白最容易卡在"信息太多"，这个技能直接解决。
+1.  `newsletter-digest` / `youtube-watcher` — 信息摄取 把长文章/视频转成要点和行动清单。小白最容易卡在"信息太多"，这个技能直接解决。
 
 ### 🥉 锦上添花
 
-1.  GitHub — 代码相关（开发者向） 查 Issue、看 PR、读代码、跟进 CI。只要你写代码或用开源，就值得装。
+1.  `GitHub` — 代码相关（开发者向） 查 Issue、看 PR、读代码、跟进 CI。只要你写代码或用开源，就值得装。
 
-1.  GSC / GA4 — 站长增长（有网站再装） 有网站的人必备：查搜索词、索引状态、流量来源。没有网站可以先跳过。
+1.  `GSC` / `GA4` — 站长增长（有网站再装） 有网站的人必备：查搜索词、索引状态、流量来源。没有网站可以先跳过。
 
-1.  PDF Parser（markitdown）— 文档解析 把 PDF/Word/PPT 转成文本让 AI 秒读并总结。收到几十页材料时非常省命。
+1.  `PDF Parser`（`markitdown`）— 文档解析 把 PDF/Word/PPT 转成文本让 AI 秒读并总结。收到几十页材料时非常省命。
 
 ---
 
@@ -131,7 +132,7 @@ git clone https://github.com/openclaw/skill-remind-me remind-me
 
 > 帮我看看明天有什么会议，然后在邮件里搜一下相关的背景信息
 
-助手会先查日历，发现明天有个"合作方讨论"，然后自动在 Gmail 里搜索相关邮件往来，整理出一份会前简报。
+助手会先查日历，发现明天有个"合作方讨论"，然后自动在 `Gmail` 里搜索相关邮件往来，整理出一份会前简报。
 
 以前你要：打开日历 → 查看会议 → 打开 Gmail → 搜索关键词 → 自己整理。现在：一句话。
 
@@ -141,15 +142,15 @@ git clone https://github.com/openclaw/skill-remind-me remind-me
 
 助手先搜索，找到文章链接，用浏览器打开每篇文章，提取关键信息，最后整理成结构化的对比。
 
-### 组合 3：GSC + GA4 + 浏览器
+### 组合 3：`GSC` + `GA4` + 浏览器
 
-> 分析一下 kirkify.net 的 /generator 页面——搜索表现怎么样、用户行为怎么样、页面现在长什么样
+> 分析一下 `kirkify.net` 的 `/generator` 页面——搜索表现怎么样、用户行为怎么样、页面现在长什么样
 
 助手分别调用三个技能：
 
-+   GSC 查搜索表现（排名、点击、CTR）
++   `GSC` 查搜索表现（排名、点击、CTR）
 
-+   GA4 查用户行为（页面停留、跳出率）
++   `GA4` 查用户行为（页面停留、跳出率）
 
 +   浏览器打开页面看当前状态
 
@@ -157,7 +158,7 @@ git clone https://github.com/openclaw/skill-remind-me remind-me
 
 单个工具是刀，多个工具组合是厨房。AI 助手是厨师。
 
-> 🐱 小墨碎碎念：我最得意的一次技能组合是这样的——孟健说"帮我看看最近哪个页面可以优化"。我先查了 GSC 找到高曝光低点击的页面，再查 GA4 看用户行为，然后用浏览器打开这些页面分析内容质量，最后给出了一份带优先级的优化清单。整个过程 30 秒。孟健花了一下午把排在第一的那个页面改了，第二周点击率提升了 23%。
+> 🐱 小墨碎碎念：我最得意的一次技能组合是这样的——孟健说"帮我看看最近哪个页面可以优化"。我先查了 `GSC` 找到高曝光低点击的页面，再查 `GA4` 看用户行为，然后用浏览器打开这些页面分析内容质量，最后给出了一份带优先级的优化清单。整个过程 30 秒。孟健花了一下午把排在第一的那个页面改了，第二周点击率提升了 23%。
 
 ---
 
@@ -185,7 +186,7 @@ clawdhub search &lt;keyword&gt;
 
 技能配置
 
-每个技能的配置通常写在 SKILL.md（以及 openclaw.json 的 skills.entries.* 覆盖）里。技能目录一般在：<workspace>/skills/<skill-name>/ 或 ~/.openclaw/skills/<skill-name>/。
+每个技能的配置通常写在 `SKILL.md`（以及 `openclaw.json` 的 `skills.entries.*` 覆盖）里。技能目录一般在：`<workspace>/skills/<skill-name>/` 或 `~/.openclaw/skills/<skill-name>/`。
 
 ---
 
@@ -193,7 +194,7 @@ clawdhub search &lt;keyword&gt;
 
 最后提醒一点：技能不是装越多越好。
 
-每个技能都会增加助手的"认知负担"——它需要读更多的 SKILL.md 来理解自己能做什么。技能太多，反而可能导致：
+每个技能都会增加助手的"认知负担"——它需要读更多的 `SKILL.md` 来理解自己能做什么。技能太多，反而可能导致：
 
 +   响应变慢（要处理更多上下文）
 
@@ -217,7 +218,7 @@ clawdhub search &lt;keyword&gt;
 
 +   技能组合才是王道：多个技能配合 = 自动化工作流
 
-+   可以自己开发：一个 SKILL.md + 脚本，就是一个新技能
++   可以自己开发：一个 `SKILL.md` + 脚本，就是一个新技能
 
 ---
 

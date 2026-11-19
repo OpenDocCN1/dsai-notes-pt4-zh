@@ -1,24 +1,19 @@
+
 # Al 行业资讯 2.10
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/ZDlNdr6IRoUlNKxz9W7c0ES8nib](https://qqs7y1hozd1.feishu.cn/docx/ZDlNdr6IRoUlNKxz9W7c0ES8nib)
 
-1.  [**ChatGPT搜索功能全面开放，D**](https://qqs7y1hozd1.feishu.cn/docx/ZDlNdr6IRoUlNKxz9W7c0ES8nib#doxcn6rl17du3vkEeL3qnkX1c1g)eep Research向Pro用户开放
-
-1.  [**OpenAI公开o3思维链**](https://qqs7y1hozd1.feishu.cn/docx/ZDlNdr6IRoUlNKxz9W7c0ES8nib#doxcn4pWv7DsdHIqQjGmLeqRAue)
-
-1.  阿里云Qwen2.5-Max进入全球第七
-
-1.  DeepSeek-V3 GitHub点星数超7万
-
-1.  三家基础电信企业均全面接入 DeepSeek 开源大模型
-
-1.  李飞飞团队用不到50美元云计算积分训练出推理模型s1
-
-1.  GitHub Copilot全面接入智能体
+1. [ChatGPT搜索功能全面开放，Deep Research向Pro用户开放](https://qqs7y1hozd1.feishu.cn/docx/ZDlNdr6IRoUlNKxz9W7c0ES8nib#doxcn6rl17du3vkEeL3qnkX1c1g)
+1. [OpenAI公开o3思维链](https://qqs7y1hozd1.feishu.cn/docx/ZDlNdr6IRoUlNKxz9W7c0ES8nib#doxcn4pWv7DsdHIqQjGmLeqRAue)
+1. 阿里云Qwen2.5-Max进入全球第七
+1. DeepSeek-V3 GitHub点星数超7万
+1. 三家基础电信企业均全面接入 DeepSeek 开源大模型
+1. 李飞飞团队用不到50美元云计算积分训练出推理模型s1
+1. GitHub Copilot全面接入智能体
 
 ---
 
-# ChatGPT搜索功能全面开放，Deep Research向Pro用户开放
+## ChatGPT搜索功能全面开放，Deep Research向Pro用户开放
 
 本周，OpenAI宣布ChatGPT的搜索功能现已向所有用户开放，无需注册即可使用。此外，Deep Research功能也向所有Pro用户全面开放。
 
@@ -28,7 +23,7 @@ Deep Research的底层模型是由尚未发布的OpenAI o3模型的特定版本�
 
 ![](img/a14b136430d1e630c9a782f5ea04bef7.png)
 
-# OpenAI公开o3思维链
+## OpenAI公开o3思维链
 
 2月7日，OpenAI宣布向所有用户（包括免费用户）公开o3-mini模型的推理思维链。这一举措让AI的决策过程更加透明，用户可以看到模型的思考过程，包括如何分析问题、生成解决方案以及进行自我修正。例如，在回答“为什么今天不是星期五”这一问题时，o3-mini展示了其详细的思考过程，甚至使用了表情包来增加回答的趣味性。
 
@@ -38,7 +33,7 @@ Deep Research的底层模型是由尚未发布的OpenAI o3模型的特定版本�
 
 ![](img/7fad34d80d8b67b11c24dcedffdea8cb.png)
 
-# 阿里云Qwen2.5-Max进入全球第七
+## 阿里云Qwen2.5-Max进入全球第七
 
 根据Chatbot Arena LLM Leaderboard最新一期榜单，阿里云发布的Qwen2.5-Max进入榜单前十，超越DeepSeek V3、o1-mini和Claude-3.5-Sonnet等模型，以1332分位列全球第七。阿里云表示，Qwen2.5-Max模型是阿里云通义团队对MoE模型的最新探索成果，预训练数据超过20万亿tokens。
 
@@ -48,7 +43,7 @@ Deep Research的底层模型是由尚未发布的OpenAI o3模型的特定版本�
 
 ![](img/0708d2d8646427e9b0e0be6b0fb400df.png)
 
-# DeepSeek-V3 GitHub点星数超7万
+## DeepSeek-V3 GitHub点星数超7万
 
 截至2月7日下午，DeepSeek在GitHub平台的热门项目「DeepSeek-V3」的点星数已达到7万加，超过了GitHub上OpenAI最热门项目。
 
@@ -58,7 +53,7 @@ Deep Research的底层模型是由尚未发布的OpenAI o3模型的特定版本�
 
 ![](img/332f1c3eee9d84f536b0b2eada3910f3.png)
 
-# 三家基础电信企业均全面接入 DeepSeek 开源大模型
+## 三家基础电信企业均全面接入 DeepSeek 开源大模型
 
 2月8日，工业和信息化部运行监测协调局发布了2025年春节通信业务相关情况。报告显示，2025年春节期间，基础电信企业积极利用AI开展创新服务，融合5G、云平台、大数据等技术，拓展AI应用场景，丰富AI应用供给。
 
@@ -66,7 +61,7 @@ Deep Research的底层模型是由尚未发布的OpenAI o3模型的特定版本�
 
 ![](img/4d1f2c17bb0bfafc5f5eac42b19b00da.png)
 
-# 李飞飞团队用不到50美元云计算积分训练出推理模型s1
+## 李飞飞团队用不到50美元云计算积分训练出推理模型s1
 
 据TechCrunch报道，李飞飞团队以不到50美元的云计算积分，训练出了具备“推理”能力的人工智能模型s1。该模型在数学和编程能力测试中表现出与OpenAI的o1和DeepSeek的R1等顶尖推理模型相似的水平。
 
@@ -76,7 +71,7 @@ Deep Research的底层模型是由尚未发布的OpenAI o3模型的特定版本�
 
 ![](img/799c3d773a161ca7cc8c6a3091abf150.png)
 
-# GitHub Copilot全面接入智能体
+## GitHub Copilot全面接入智能体
 
 微软CEO Satya Nadella昨日在X平台宣布，GitHub Copilot全面接入智能体，微软自主的SWE智能体也首次亮相。
 

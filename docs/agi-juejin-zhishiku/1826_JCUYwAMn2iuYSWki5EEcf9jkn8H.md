@@ -1,40 +1,37 @@
+
 # “音乐版Sora”首批演示泄露，网友：比写《宫保鸡丁》的Suno好10倍
 
-> 来源：[https://agijuejin.feishu.cn/docx/NCCpd7j5oouxWUxsNWycZ9KKnId](https://agijuejin.feishu.cn/docx/NCCpd7j5oouxWUxsNWycZ9KKnId)
-
-2024年也是AI音乐生成的元年吗？
+> 来源：`https://agijuejin.feishu.cn/docx/NCCpd7j5oouxWUxsNWycZ9KKnId`
 
 > 丰色 发自 凹非寺
 
 > 量子位 | 👸号 QbitAI
 
-这两天，一个神秘的 **“音乐版Sora”** 产品被盛传即将发布，**Suno和它比起来都不算什么**。
+2024年也是AI音乐生成的元年吗？
+
+这两天，一个神秘的“音乐版Sora”产品被盛传即将发布，Suno和它比起来都不算什么。
 
 知情者评价be like：
 
 > 比Suno强两倍。
-
 > 模型相当强悍。
-
 > 人工智能音乐很快就会席卷全球。
 
 ![](img/0eafcb9b382e98e12a350f174e93390f.png)
 
 （Suno：刚刚火爆的一款AI音乐创作工具，火到200多名音乐人联名签公开信抗议）
 
-**正当大家的胃**口被吊得十足之时，这个神秘产品的首批演示泄露了。
+正当大家的胃口被吊得十足之时，这个神秘产品的首批演示泄露了。
 
-一首赞颂XGboost算法的Hip Hop风：
-
-weibo.com/tv/show/103…
+一首赞颂`XGboost`算法的Hip Hop风：
+`weibo.com/tv/show/103…`
 
 一首带着年代感的女声独唱，时长达1分37秒，歌词还在嘲讽Suno：
+`weibo.com/tv/show/103…`
 
-weibo.com/tv/show/103…
+第一个demo由英伟达工程师Bojan Tunguz发布，随后很快删除，但手快的网友早已存档。
 
-第一个demo由**英伟达工程师**Bojan Tunguz发布，随后很快删除，但手快的网友早已存档。
-
-第二个则来自**匿名用户**投稿。
+第二个则来自匿名用户投稿。
 
 不得不说，两首曲子咱这“肉耳”听着都相当带感，让人忍不住跟着嗨起来～
 
@@ -46,11 +43,11 @@ weibo.com/tv/show/103…
 
 ![](img/d349a67b0877794c7c7654cf23b14f41.png)
 
-# “音乐版Sora”初揭秘
+## “音乐版Sora”初揭秘
 
 随着第一批demo的泄露，这款“音乐版Sora”的真身也被神通广大的网友扒出：
 
-可能是一个叫做**Udio**的产品。
+可能是一个叫做Udio的产品。
 
 ![](img/ba2d5d5b94bcc565bea6955a2ea8e667.png)
 
@@ -72,7 +69,7 @@ Udio支持文字描述生成音乐，比如“一首关于纽约的爵士”；
 
 ![](img/c7ad77236c94469db39ea7e2e6fe5586.png)
 
-产品本身还未公开发布，目前采取**邀请测试**的方式：
+产品本身还未公开发布，目前采取邀请测试的方式：
 
 Udio官网一打开就只有登陆界面，需要验证资格。
 
@@ -98,7 +95,7 @@ Udio官网一打开就只有登陆界面，需要验证资格。
 
 ![](img/9fc2d1c3026e3203d108e0e125751aed.png)
 
-**有人甚至称它比Suno好10倍**。但对此，有网友立马站出来反对：
+有人甚至称它比Suno好10倍。但对此，有网友立马站出来反对：
 
 也许是炒作宣传。比Suno好，但应该没有那么强。大家理性吃瓜。
 
@@ -112,13 +109,13 @@ Udio官网一打开就只有登陆界面，需要验证资格。
 
 ![](img/f8fd4f5169c92bd09775d62205c9fb5b.png)
 
-# One More Thing
+## One More Thing
 
 今年的AI音乐圈似乎真有来势汹汹之势：
 
-**除了横空出世、备受好评的S**uno，几天前Stability AI也卷起来了。
+除了横空出世、备受好评的Suno，几天前Stability AI也卷起来了。
 
-**他们发布的**新模型Stable Audio 2.0，直接可以创作长达3分钟的音频。
+他们发布的新模型Stable Audio 2.0，直接可以创作长达3分钟的音频。
 
 相比之下，Suno目前也只支持2分钟。
 
@@ -132,14 +129,9 @@ AI在音乐生成上的“造诣”，咱们就且拭目以待。
 
 参考链接：
 
-[1]twitter.com/kimmonismus…
-
-[2]x.com/Rom_creatin…
-
-[3]x.com/Legit4K/sta…
-
-[4]twitter.com/maxescu/sta…
-
-[5]twitter.com/Legit4K/sta…
-
-[6]x.com/mckaywrigle…
+[1]`twitter.com/kimmonismus…`
+[2]`x.com/Rom_creatin…`
+[3]`x.com/Legit4K/sta…`
+[4]`twitter.com/maxescu/sta…`
+[5]`twitter.com/Legit4K/sta…`
+[6]`x.com/mckaywrigle…`

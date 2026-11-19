@@ -1,12 +1,13 @@
+
 # 【补充资料】Windows安装Docker
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/EvyudfIzyo2tyoxUKfxc2mQCnid](https://kq4b3vgg5b.feishu.cn/docx/EvyudfIzyo2tyoxUKfxc2mQCnid)
 
-## 课程说明：
+## 课程说明
 
-+   体验课内容节选⾃《2025大模型Agent智能体开发实战》完整版付费课程
+体验课内容节选自《2025大模型Agent智能体开发实战》完整版付费课程
 
-体验课时间有限，若想深度学习⼤模型技术，欢迎⼤家报名由我主讲的《2025大模型Agent智能体开发实战》：
+体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》：
 
 ![](img/aa1fe7220854008de5ce11570e7af324.png)
 
@@ -14,23 +15,23 @@
 
 此外，公开课全部课件，以及项目代码、数据等学习资料，扫码⬆️联系助教即可领取～
 
----
+## 1. 安装Git
 
-# 1. 安装Git
+### Step 1. 进入Git官网
 
-+   **Step 1. 进入Git官网：**https://git-scm.com/
+https://git-scm.com/
 
 ![](img/ee83bd92bd5af3245d7f446e3cf34fc6.png)
 
-+   Step 2. 下载Windwos版本的Git安装程序
+### Step 2. 下载Windows版本的Git安装程序
 
 ![](img/37955a58a873b5ec283d02c359c196aa.png)
 
-这里选择Windwos版本进行下载。
+这里选择Windows版本进行下载。
 
 ![](img/bcef9ba62fe68fa51a28a87d8b966bfc.png)
 
-根据自己的Windwos系统情况，选择32-bit或者64bit。
+根据自己的Windows系统情况，选择32-bit或者64bit。
 
 ![](img/d3e1b824626399edcae7e81244c85d94.png)
 
@@ -38,7 +39,7 @@
 
 ![](img/8b2ed22d22aff239f9e39fe5b5541261.png)
 
-+   **Step 3. 安装Git**
+### Step 3. 安装Git
 
 ![](img/e973c03d8cd6f5444d87f0574f5e14aa.png)
 
@@ -84,45 +85,45 @@
 
 ![](img/a215d9b29b576f0997ea30d19b16aa19.png)
 
-+   Step 4. 验证Git安装是否成功
+### Step 4. 验证Git安装是否成功
 
 在桌面上鼠标右键，如能看到如下两个快捷方式，说明已经正常安装Git。
 
 ![](img/790823be366861860d59b49c61882299.png)
 
-点击Git Bash 后，进入命令行终端，可以输入git --version 查看当前的Git版本。
+点击Git Bash后，进入命令行终端，可以输入`git --version`查看当前的Git版本。
 
 ![](img/1f4793ad97bd31e4fd6ad9d5e7901295.png)
 
-# 2. 安装 FFmpeg
+## 2. 安装 FFmpeg
 
 下面是如何在Windows系统上安装和配置ffmpeg的步骤：
 
-1.  **下载FFmpeg**：访问BtbN's Windows builds on GitHub，下载适用于Windows的FFmpeg压缩文件。
+1. 下载FFmpeg：访问BtbN's Windows builds on GitHub，下载适用于Windows的FFmpeg压缩文件。
 
 ![](img/ae6b660bf155f6619f4100ef19619dfd.png)
 
-1.  **解压FFmpeg**：将下载的文件解压到你选择的目录，比如C:\FFmpeg。
+1. 解压FFmpeg：将下载的文件解压到你选择的目录，比如`C:\FFmpeg`。
 
-1.  **配置环境变量**：
+1. 配置环境变量：
 
-+   右键点击“此电脑”或“我的电脑”，选择“属性”。
+   + 右键点击“此电脑”或“我的电脑”，选择“属性”。
 
-+   点击“高级系统设置”，然后选择“环境变量”。
+   + 点击“高级系统设置”，然后选择“环境变量”。
 
-+   在“系统变量”部分，找到并选择Path变量，然后点击“编辑”。
+   + 在“系统变量”部分，找到并选择`Path`变量，然后点击“编辑”。
 
-+   点击“新建”，然后添加FFmpeg的bin目录的路径，比如C:\FFmpeg\bin。
+   + 点击“新建”，然后添加FFmpeg的bin目录的路径，比如`C:\FFmpeg\bin`。
 
-+   点击“确定”保存你的设置。
+   + 点击“确定”保存你的设置。
 
-1.  **验证安装**：
+1. 验证安装：
 
-+   打开命令提示符（CMD），输入ffmpeg -version并回车。如果系统返回了FFmpeg的版本信息，说明FFmpeg已经成功安装和配置。
+   + 打开命令提示符（`CMD`），输入`ffmpeg -version`并回车。如果系统返回了FFmpeg的版本信息，说明FFmpeg已经成功安装和配置。
 
 ![](img/01b0a59b08628dbd6fb6fb6e222e5573.png)
 
-# 3. Window 安装 Docker
+## 3. Windows 安装 Docker
 
 Docker 是一个开源的平台，它可以使软件开发和部署变得更加简便和高效。通过使用 Docker，开发者可以将应用程序及其所有依赖项打包到一个被称为“容器”的轻量级、可移植的、自给自足的单元中。这样，无论在哪种操作系统或环境下，这个容器都能保证以相同的方式运行。
 
@@ -132,7 +133,7 @@ Docker 是一个开源的平台，它可以使软件开发和部署变得更加�
 
 Windows Desktop桌面版官方下载地址：https://www.docker.com/products/docker-desktop/
 
-+   Step 1. 下载Windwos安装程序
+### Step 1. 下载Windows安装程序
 
 ![](img/398a0ac25b15ceeaeebfa2b1c240a01c.png)
 
@@ -144,29 +145,29 @@ Windows Desktop桌面版官方下载地址：https://www.docker.com/products/doc
 
 ![](img/c6d3ce2d19c01ccf4ef0100e268cdbcf.png)
 
-+   Step 2. 安装完双击打开Docker
+### Step 2. 安装完双击打开Docker
 
 ![](img/1e40aa5cdb0c8566d4364b2d0fab3594.png)
 
-+   **Step 3. 执行安装过程**
+### Step 3. 执行安装过程
 
 ![](img/617375c7bbb5f40ad6c34a76cfddf925.png)
 
 ![](img/69d7fd7241d6782d1e47c4c26668ecb0.png)
 
-+   Step 4. 安装完成后，需要重启电脑才能加载Docker应用
+### Step 4. 安装完成后，需要重启电脑才能加载Docker应用
 
 ![](img/9f6be66c15f0f5a38586fb0c3b11d8f5.png)
 
-+   **Step 5. 重启完电脑后，打开Docker Des**ktop客户端，首次使用需要接受服务协议
+### Step 5. 重启完电脑后，打开Docker Desktop客户端，首次使用需要接受服务协议
 
 ![](img/456a82b48cfa6c4bb573b26daf8ea32d.png)
 
-+   Step 6. 这里选择默认配置即可
+### Step 6. 这里选择默认配置即可
 
 ![](img/4506e44ab227c7a85b3dbc87a7df26e7.png)
 
-+   Step 7. 在使用前，需要登陆账户，可以免费注册
+### Step 7. 在使用前，需要登陆账户，可以免费注册
 
 ![](img/b435370d68e28a4fd9fe607cde519542.png)
 

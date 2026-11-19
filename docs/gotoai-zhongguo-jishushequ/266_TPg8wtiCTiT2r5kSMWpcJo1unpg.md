@@ -1,3 +1,4 @@
+
 # IBM:人工智能的历史
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/Cse9dn2zloJ4Tixuem2cSv9Fnzg](https://gotoaiworld.feishu.cn/docx/Cse9dn2zloJ4Tixuem2cSv9Fnzg)
@@ -6,7 +7,7 @@
 
 ## 人工智能的历史
 
-人类[自古以](https://www.ibm.com/cn-zh/think/topics/gpt)来就梦想着制造会思考的机器。民间故事中和历史上打造可编程设备的尝试反映了这种长期以来的雄心壮志，而虚构的故事充满了智能机器的可能性，设想着它们的优点和危险。也难怪当 OpenAI 发布第一个版本的GPT（Generative Pretrained Transformer，生成式预训练转换器）时，迅速获得了广泛关注，标志着向实现这一古老梦想迈出了重要一步。
+人类自古以来就梦想着制造会思考的机器。民间故事中和历史上打造可编程设备的尝试反映了这种长期以来的雄心壮志，而虚构的故事充满了智能机器的可能性，设想着它们的优点和危险。也难怪当 OpenAI 发布第一个版本的GPT（Generative Pretrained Transformer，生成式预训练转换器）时，迅速获得了广泛关注，标志着向实现这一古老梦想迈出了重要一步。
 
 GPT-3 是 [AI](https://www.ibm.com/cn-zh/topics/artificial-intelligence) 领域具有里程碑意义的时刻，因为它具有前所未有的规模，具有 1,750 亿个参数，这使其无需进行大量微调即可执行各种自然语言任务。该模型使用大数据进行训练，使其能够生成类似人类的文本并参与对话。它还能够进行小样本学习，显著提高了其泛用性，并在聊天机器人和虚拟助理等商业 AI 应用中表现出了实用性。
 
@@ -48,7 +49,7 @@ ABC 采用大约 300 个真空电子管进行逻辑运行，使其比早期的�
 
 ### 1943 年
 
-Warren S. McCulloch 和 Walter Pitts 在 Bulletin of Mathematical Biophysics 上发表了《A Logical Calculus [of t](https://www.ibm.com/cn-zh/topics/neural-networks)h[e Id](https://www.ibm.com/cn-zh/topics/deep-learning)eas Immanent in Nervous Activity》。((1))这是神经科学和 AI 史上影响深远的著作之一。这篇论文奠定了大脑可以被理解为一个计算系统的思想基础，并引入了人工神经网络的概念，而人工神经网络现已成为现代 AI 的一项关键技术。这一思想启发了计算机系统，特别是通过神经网络和深度学习来模拟类似大脑的功能和过程。
+Warren S. McCulloch 和 Walter Pitts 在 Bulletin of Mathematical Biophysics 上发表了《A Logical Calculus of Ideas Immanent in Nervous Activity》。((1))这是神经科学和 AI 史上影响深远的著作之一。这篇论文奠定了大脑可以被理解为一个计算系统的思想基础，并引入了人工神经网络的概念，而人工神经网络现已成为现代 AI 的一项关键技术。这一思想启发了计算机系统，特别是通过神经网络和深度学习来模拟类似大脑的功能和过程。
 
 ### 1950
 
@@ -60,7 +61,7 @@ Warren S. McCulloch 和 Walter Pitts 在 Bulletin of Mathematical Biophysics 上
 
 ### 1951
 
-Marvin Minsky 和 Dean Edmunds 构建了第一个人工神经网络。[随机神经](https://www.ibm.com/cn-zh/topics/reinforcement-learning)模拟强化计算器 (SNARC) 是模拟人脑学习过程的早期尝试，特别是通过强化学习。
+Marvin Minsky 和 Dean Edmunds 构建了第一个人工神经网络。随机神经模拟强化计算器 (SNARC) 是模拟人脑学习过程的早期尝试，特别是通过强化学习。
 
 SNARC 的设计目的是模拟老鼠在迷宫中的行为。其想法是让机器模仿动物通过奖惩进行学习的方式，即随时间推移根据反馈调整自己的行为。它是一台模拟计算机，使用 3,000 个真空电子管组成的网络和突触权重来模拟 40 个类似神经元的单元。
 
@@ -70,13 +71,13 @@ SNARC 的设计目的是模拟老鼠在迷宫中的行为。其想法是让机�
 
 ### 1955
 
-“人工智能”一词最初出现在一份名为《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》((3))的研讨会提案中，由达特茅斯学院的 John McCarthy、哈佛大学的 Marvin Minsky、IBM 的 Nathaniel Rochest 以及贝尔电话实验室的 Claude Shannon 共同提交。
+“人工智能”一词最初出现在一份名为《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》((3))的研讨会提案中，由达特茅斯学院的 John McCarthy、哈佛大学的 Marvin Minsky、IBM 的 Nathaniel Rochester 以及贝尔电话实验室的 Claude Shannon 共同提交。
 
 一年后，即 1956 年 7 月和 8 月举行的这次研讨会被普遍认为是新兴 AI 领域的正式诞生之时。
 
 ### 1957 年
 
-Frank Rosenblatt 是一位心理学家兼计算机科学家，他开发了 Perceptron，这是一种早期的人[工神](https://www.ibm.com/cn-zh/topics/machine-learning-algorithms)经网络，可以实现基于两层计算机学习网络的模式识[别。Pe](https://www.ibm.com/cn-zh/topics/machine-learning)rceptron 引入了二元分类器的概念，二元分类器可通过学习算法调整其输入的权重，从而从数据中学习。虽然仅限于解决线性可分离问题，但它为未来神经网络和机器学习的发展奠定了基础。
+Frank Rosenblatt 是一位心理学家兼计算机科学家，他开发了 Perceptron，这是一种早期的人工神经网络，可以实现基于两层计算机学习网络的模式识别。Perceptron 引入了二元分类器的概念，二元分类器可通过学习算法调整其输入的权重，从而从数据中学习。虽然仅限于解决线性可分离问题，但它为未来神经网络和机器学习的发展奠定了基础。
 
 ### 1958
 
@@ -88,7 +89,7 @@ Arthur Samuel 率先提出了机器学习的概念，他开发了一个计算机
 
 Oliver Selfridge 发表了他的论文“Pandemonium: A paradigm for learning”。((5))他的“魔都”模型提出了一种系统，在该系统中，各种“恶魔”（处理单元）共同识别模式。恶魔们竞相识别未经预编程的数据中的特征，模拟无监督学习。Selfridge 的模型是对模式识别的早期贡献，影响了机器视觉和 AI 的未来发展。
 
-John McCarthy 在他的论文《具有常识的程序》中提出了"建议接受者"的概念。6(())该程序旨在通过处理形式逻辑中的句子来解决问题，为 AI 的推理奠定基础。McCarthy 设想的系统可以理解指令，利用常识性知识进行推理，并从经验中学习，其长远目标是开发出能像人类一样有效适应和学习的 AI。这一概念有助于形成早期的知识表示和自动推理研究。
+John McCarthy 在他的论文《具有常识的程序》中提出了"建议接受者"的概念。((6))该程序旨在通过处理形式逻辑中的句子来解决问题，为 AI 的推理奠定基础。McCarthy 设想的系统可以理解指令，利用常识性知识进行推理，并从经验中学习，其长远目标是开发出能像人类一样有效适应和学习的 AI。这一概念有助于形成早期的知识表示和自动推理研究。
 
 ### 1965
 
@@ -106,13 +107,13 @@ Shakey 于 20 世纪 60 年代末在 SRI 研发，是第一个能够对自己的
 
 ### 1969
 
-Arthur Bryson 和 Yu-Chi Ho[ 介绍了](https://www.ibm.com/cn-zh/think/topics/backpropagation)一种优化多级动态系统的方法 - 反向传播。虽然该算法最初是为控制系统开发的，但在训练多层神经网络时却变得至关重要。。随着计算能力的进步，反向传播在 2000 和 2010 年代才开始崭露头角，从而促成了深度学习的兴起。
+Arthur Bryson 和 Yu-Chi Ho 介绍了一种优化多级动态系统的方法 - 反向传播。虽然该算法最初是为控制系统开发的，但在训练多层神经网络时却变得至关重要。随着计算能力的进步，反向传播在 2000 和 2010 年代才开始崭露头角，从而促成了深度学习的兴起。
 
 Marvin Minsky 和 Seymour Papert 出版了《Perceptrons: An Introduction to Computational Geometry》，((12))，该书批判性地分析了单层神经网络的局限性。他们的工作经常被指责为降低了人们对神经网络的兴趣。在 1988 年版中，他们认为，尽管到 20 世纪 60 年代中期，对感知机进行了大量实验，但由于缺乏理论理解，相关进展已经停滞。
 
 ### 1970
 
-Te[rry Wi](https://www.ibm.com/cn-zh/topics/natural-language-processing)nograd 创建了 SHRDLU，这是一款开创性的自然语言理解程序。((13))SHRDLU 可以用简单的英语与用户交互，操作虚拟积木世界中的对象，这展示了计算机理解和响应复杂指令的潜力。这是自然语言处理领域的一项早期成果，但其成功仅限于特定的高度结构化环境。SHRDLU 的功能凸显了实现更广泛的 AI 语言理解的前景和挑战。
+Terry Winograd 创建了 SHRDLU，这是一款开创性的自然语言理解程序。((13))SHRDLU 可以用简单的英语与用户交互，操作虚拟积木世界中的对象，这展示了计算机理解和响应复杂指令的潜力。这是自然语言处理领域的一项早期成果，但其成功仅限于特定的高度结构化环境。SHRDLU 的功能凸显了实现更广泛的 AI 语言理解的前景和挑战。
 
 ### 1972 年
 
@@ -152,15 +153,21 @@ David Rumelhart、Geoffrey Hinton 和 Ronald Williams 发表了开创性的论�
 
 Judea Pearl 出版了《Probabilistic Reasoning in Intelligent Systems》，彻底改变了 AI 在不确定情况下处理信息的方式。((20))该工作引入了贝叶斯网络，一种表示复杂概率模型的形式主义，以及在其中执行推理的算法。Pearl 的方法使 AI 系统能够在不确定的环境中做出合理的决策，影响到 AI 以外的领域，包括工程和自然科学。他的贡献得到了 2011 年图灵奖的认可，该奖表彰了他在为 AI 中的现代概率推理创建“表示和计算基础”方面的作用。((21))
 
-Rollo Carpenter 开发了 Jbbe[rwack](https://www.ibm.com/cn-zh/topics/chatbots)y((22))，这是一个早期的聊天机器人，旨在模拟像人类一般的有趣、娱乐性和有幽默感的对话。与基于规则的系统不同，Jbberwacky 从人类交互中学习以生成更自然的对话，为后来的会话式 AI 模型铺平了道路。该聊天机器人是创建通过从与用户的交互中不断学习来模仿自发的日常人类对话的首批 AI 尝试之一。
+
+
+# 人工智能发展简史
+
+## 早期探索（1989 年以前）
+
+Rollo Carpenter 开发了 [Jabberwacky](https://www.ibm.com/cn-zh/topics/chatbots)((22))，这是一个早期的聊天机器人，旨在模拟像人类一般的有趣、娱乐性和有幽默感的对话。与基于规则的系统不同，Jabberwacky 从人类交互中学习以生成更自然的对话，为后来的会话式 AI 模型铺平了道路。该聊天机器人是创建通过从与用户的交互中不断学习来模仿自发的日常人类对话的首批 AI 尝试之一。
 
 IBM T.J. Watson 研究中心的研究人员发表了《A Statistical Approach to Language Translation》，标志着机器翻译从基于规则的方法向概率方法的关键转变。((23))这种方法以 IBM 的 Candide 项目为例 24，使用了 220 万个英法句子对，主要来自加拿大议会的会议记录。这种新方法强调从数据中的统计模式中学习，而不是试图理解或“懂得”语言，这反映了依赖于分析已知示例的机器学习的更广泛趋势。这种概率模型为自然语言处理和机器翻译的许多未来进步铺平了道路。
 
 Marvin Minsky 和 Seymour Papert 发布了他们 1969 年出版的《Perceptrons》一书的扩展版，这是对早期神经网络意义深远的批评。在题为“A View from 1988”的新序言中，他们反思了 AI 领域的缓慢进展，并指出由于不熟悉早期的挑战，许多研究人员继续重复过去的错误。((12))他们强调了对更深入理论理解的需求，这在早期的神经网络研究中是缺乏的。他们强调了最初的批评，同时认可了后来导致现代深度学习进步的新兴方法。
 
-### 1989 年
+### 1989
 
-Yann LeCun 和 AT&T 贝尔实验室的研究团队取得了突破性进展，成功[地将反向传播](https://www.ibm.com/cn-zh/topics/convolutional-neural-networks)算法应用于多层神经网络，以识别手写邮政编码图像。((24))这是利用卷积神经网络进行深度学习的首批实际应用之一。尽管当时的硬件条件有限，但神经网络的培训大约需要三天时间，与之前的尝试相比有了显著改进。该系统在手写数字识别（邮政服务自动化的一项关键任务）方面的成功，展示了神经网络在图像识别任务方面的潜力，并为深度学习在随后几十年的爆炸式增长奠定了基础。
+Yann LeCun 和 AT&T 贝尔实验室的研究团队取得了突破性进展，成功将[反向传播](https://www.ibm.com/cn-zh/topics/convolutional-neural-networks)算法应用于多层神经网络，以识别手写邮政编码图像。((24))这是利用卷积神经网络进行深度学习的首批实际应用之一。尽管当时的硬件条件有限，但神经网络的培训大约需要三天时间，与之前的尝试相比有了显著改进。该系统在手写数字识别（邮政服务自动化的一项关键任务）方面的成功，展示了神经网络在图像识别任务方面的潜力，并为深度学习在随后几十年的爆炸式增长奠定了基础。
 
 ### 1993
 
@@ -174,7 +181,7 @@ Richard Wallace 在 Joseph Weizenbaum 的 ELIZA 计划基础上开发了聊天�
 
 ### 1997
 
-Sepp Hochreiter 和 Jü[rgen ](https://video.ibm.com/recorded/131507960)Schmidhube[r 推出了长](https://www.ibm.com/cn-zh/topics/recurrent-neural-networks)短期记忆 (LSTM)，这种循环神经网络 (RNN) 旨在克服传统 RNN 的局限性，尤其是它们无法有效捕获数据中的长期依赖关系。LSTM 网络广泛用于手写识别、语音识别、自然语言处理和时间序列预测等应用。
+Sepp Hochreiter 和 [Jürgen Schmidhuber](https://video.ibm.com/recorded/131507960) 推出了长短期记忆 (LSTM)，这种[循环神经网络](https://www.ibm.com/cn-zh/topics/recurrent-neural-networks) (RNN) 旨在克服传统 RNN 的局限性，尤其是它们无法有效捕获数据中的长期依赖关系。LSTM 网络广泛用于手写识别、语音识别、自然语言处理和时间序列预测等应用。
 
 IBM 的 Deep Blue 在六局制比赛中击败了卫冕的国际象棋世界冠军 Garry Kasparov，创造了历史。((27))这是计算机国际象棋程序首次在标准国际象棋比赛时间控制下击败世界冠军。Deep Blue 的胜利表明，计算机可以在高度战略性的游戏中胜过人类，长期以来，这被认为是人类智能的标志。这台机器每秒计算数百万步的能力，再加上博弈论和启发式的进步，使其能够战胜 Kasparov，巩固了 Deep Blue 在 AI 历史上的地位。
 
@@ -206,11 +213,11 @@ Rajat Raina、Anand Madhavan 和 Andrew Ng 发表了"使用图形处理器的大
 
 西北大学智能信息实验室的计算机科学家开发了 Stats Monkey，该程序能在无需人工干预的情况下自动生成体育新闻报道。((34))利用比赛统计数据，Stats Monkey 可以制作关于棒球比赛的连贯叙述，包括回顾、球员表现和分析。
 
-### 2011 年
+### 2011
 
 IBM 的 Watson 是一款先进的自然语言问答计算机，因为参加游戏节目《Jeopardy！》，对阵该节目中最成功的两位冠军 Ken Jennings 和 Brad Rutter，并击败了他们成为头条新闻。((35))Watson 处理和解释自然语言的能力及其庞大的知识库使其能够快速准确地回答复杂的问题。这场胜利凸显了 AI 在复杂层面上理解人类语言和与人互动能力的进步。
 
-App[le 推](https://www.ibm.com/cn-zh/topics/speech-recognition)出集成到 iOS 操作系统中的虚拟助理 Siri。Siri 提供自然语言用户界面，允许用户通过语音命令与其设备交互。Siri 可以利用机器学习执行发送消息、设置提醒、提供建议和回答问题等任务，以适应每个用户的偏好和语音模式。这种个性化自适应的语音识别系统可为用户提供个性化体验，对于日常消费者来说，标志着人工智能驱动助手的可用性和可访问性方面实现了飞跃。
+[Apple](https://www.ibm.com/cn-zh/topics/speech-recognition) 推出集成到 iOS 操作系统中的虚拟助理 Siri。Siri 提供自然语言用户界面，允许用户通过语音命令与其设备交互。Siri 可以利用机器学习执行发送消息、设置提醒、提供建议和回答问题等任务，以适应每个用户的偏好和语音模式。这种个性化自适应的语音识别系统可为用户提供个性化体验，对于日常消费者来说，标志着人工智能驱动助手的可用性和可访问性方面实现了飞跃。
 
 ### 2012
 
@@ -218,11 +225,11 @@ Jeff Dean 和 Andrew Ng 利用大型神经网络以及源自 YouTube 视频的 1
 
 多伦多大学的研究人员在 Geoffrey Hinton 的带领下，设计了一种卷积神经网络，在 ImageNet 大规模视觉识别挑战赛中取得了突破性的结果。((37))他们的卷积神经网络（即 AlexNet）实现了 16% 的错误率，比前一年 25% 的最佳结果有了大幅提升。这一成果标志着计算机视觉领域深度学习的转折点，证明在大型数据集上进行训练时，卷积神经网络可以超越传统的图像分类方法。
 
-### 2016 年
+### 2016
 
 Google DeepMind 的 AlphaGo 击败了世界顶级围棋选手之一李世石。围棋是一种复杂的棋盘游戏，其可能的招法比宇宙中的原子还多；长期以来，围棋一直被认为是对 AI 的一个挑战。((38))AlphaGo 4–1 战胜李世石是 AI 领域的一个开创性时刻，展示了深度学习技术的强大，足以处理以前超出 AI 能力的高度复杂的战略任务。
 
-Hanson Robotics 推出了一款非常先进的仿人机器人 -Sophia。((39))Sophia 可以通过图像识别和自然语言处理相结合的方式识别人脸、进行眼神交流并进行对话。
+Hanson Robotics 推出了一款非常先进的仿人机器人 - Sophia。((39))Sophia 可以通过图像识别和自然语言处理相结合的方式识别人脸、进行眼神交流并进行对话。
 
 ### 2017
 
@@ -230,11 +237,11 @@ Facebook 人工智能研究 (FAIR) 实验室的研究人员训练两个聊天机
 
 ### 2020
 
-OpenAI 推出 GPT-3，这是一种拥有 1,750 亿个参数的语言模型，使其成为迄今为止最大、最复杂的 AI [模型之一。G](https://www.ibm.com/cn-zh/topics/large-language-models)PT-3 展示了生成类似人类撰写文本、进行对话、编写代码、翻译语言和基于自然语言提示进行创意写作的能力。作为大型语言模型 (LLM) 最早的范例之一，GPT 庞大的尺寸和规模使其能够执行各种语言任务，几乎不需要进行特定任务的训练。此示例展示了 AI 在理解和生成高度连贯语言方面的潜力。
+OpenAI 推出 GPT-3，这是一种拥有 1,750 亿个参数的语言模型，使其成为迄今为止最大、最复杂的 AI 模型之一。[GPT-3](https://www.ibm.com/cn-zh/topics/large-language-models) 展示了生成类似人类撰写文本、进行对话、编写代码、翻译语言和基于自然语言提示进行创意写作的能力。作为大型语言模型 (LLM) 最早的范例之一，GPT 庞大的尺寸和规模使其能够执行各种语言任务，几乎不需要进行特定任务的训练。此示例展示了 AI 在理解和生成高度连贯语言方面的潜力。
 
 DeepMind 的 AlphaFold 2 通过氨基酸序列准确预测了蛋白质的三维结构，在生物学领域取得了突破性进展。这一成果解决了困扰科学家数十年的难题，即了解蛋白质如何折叠成其独特的三维形状。AlphaFold 2 在蛋白质结构预测方面的高准确性对疾病研究和药物开发具有重要意义，为了解疾病背后的分子机制和更有效地设计新型疗法提供了新途径。
 
-## 2021-至今
+## 2021–至今
 
 ### 2021
 
@@ -244,11 +251,11 @@ Tesla 推出全自动驾驶 (FSD) Beta 版，这是一种旨在实现完全自�
 
 ### 2021–2023
 
-OpenAI 推出 DAL-E，随后推出 D[AL-E 2](https://www.ibm.com/cn-zh/topics/generative-ai) 和 DAL-E 3，此系列生成式 AI 模型能够从文本描述生成非常详细的图像。这些模型使用先进的深度学习和转换器架构，根据用户输入创建复杂、逼真和艺术化的图像。DAL-E 2 和 3 扩展了 AI 在视觉内容创建中的使用，允许用户在没有传统图形设计技能的情况下将想法转化为图像。
+OpenAI 推出 DALL-E，随后推出 [DALL-E 2](https://www.ibm.com/cn-zh/topics/generative-ai) 和 DALL-E 3，此系列生成式 AI 模型能够从文本描述生成非常详细的图像。这些模型使用先进的深度学习和转换器架构，根据用户输入创建复杂、逼真和艺术化的图像。DALL-E 2 和 3 扩展了 AI 在视觉内容创建中的使用，允许用户在没有传统图形设计技能的情况下将想法转化为图像。
 
 ### 2024
 
-2 月
+#### 2 月
 
 Google 推出有限 beta 版的 Gemini 1.5，这是一种高级语言模型，能够处理长达 1 百万个词元的上下文长度。((42))该模型可以处理和理解单次提示中的大量信息，提高了在复杂对话和任务中针对较长文本维护上下文的能力。Gemini 1.5 针对长输入提供了增强的记忆功能和上下文理解，代表了自然语言处理领域的显著飞跃。
 
@@ -256,114 +263,116 @@ OpenAI 公开发布 Sora，这是一种文本转视频模型，能够根据文�
 
 StabilityAI 宣布推出最新的文本转图像模型 Stable Diffusion 3。与 Sora 一样，Stable Diffusion 3 使用类似的架构，从文本提示生成详细的创意内容。((44))
 
-5 月
+#### 5 月
 
 Google DeepMind 推出 AlphaFold 的新扩展，有助于识别癌症和遗传病，为遗传诊断和个性化医疗提供了强大的工具。((45))
 
-IBM 推出 [Granite](https://www.ibm.com/cn-zh/granite)[ 系列生成式 ](https://www.ibm.com/cn-zh/watsonx)AI 模型，作为其 watsonx 平台的一部分。Granite 模型包含 30 亿至 340 亿个参数，专为代码生成、时间序列预测和文档处理等任务而设计。这些模型是开源的，可在 Apache 2.0 许可证下使用，属于轻量级模型，经济高效且可定制，是各种业务应用程序的理想选择。
+IBM 推出 [Granite](https://www.ibm.com/cn-zh/granite) 系列生成式 AI 模型，作为其 [watsonx 平台](https://www.ibm.com/cn-zh/watsonx) 的一部分。Granite 模型包含 30 亿至 340 亿个参数，专为代码生成、时间序列预测和文档处理等任务而设计。这些模型是开源的，可在 Apache 2.0 许可证下使用，属于轻量级模型，经济高效且可定制，是各种业务应用程序的理想选择。
 
-6 月
+#### 6 月
 
 Apple 宣布推出 Apple Intelligence，它可将 ChatGPT 整合至全新 iPhone 和 Siri。((46))这种整合使 Siri 能够执行更复杂的任务，进行更自然的对话，更好地理解和执行精细的命令。
 
-9 月
+#### 9 月
 
 NotebookLM 引入了 DeepDive，这是一种新型多模态 AI，能够将源资料转换为播客结构的引人入胜的音频演示。((47))DeepDive 能够分析和汇总来自不同格式（包括网页、文本、音频和视频）的信息，从而为跨各种平台创建个性化和自动化内容开辟了新的机会。此功能使其成为媒体制作和教育的全能工具。
 
-[当前的 AI 趋势](https://www.ibm.com/cn-zh/think/insights/artificial-intelligence-trends)表[明，生成式](https://www.ibm.com/cn-zh/think/insights/artificial-intelligence-future) AI 将会以更小、更高效的基础模型为基础，并会出现代理式 AI，其中特定 AI 模型协同工作以更快地完成用户请求。更远的未来，自动驾驶汽车将在高速公路上行驶，多模态 AI 将在单一平台上创建音频、视频、文本和图像，AI 助手将帮助用户规划个人生活和职业生涯。
+[当前的 AI 趋势](https://www.ibm.com/cn-zh/think/insights/artificial-intelligence-trends) 表明，[生成式 AI](https://www.ibm.com/cn-zh/think/insights/artificial-intelligence-future) 将会以更小、更高效的基础模型为基础，并会出现代理式 AI，其中特定 AI 模型协同工作以更快地完成用户请求。更远的未来，自动驾驶汽车将在高速公路上行驶，多模态 AI 将在单一平台上创建音频、视频、文本和图像，AI 助手将帮助用户规划个人生活和职业生涯。
 
 ##### 脚注
 
-1.  [A](https://link.springer.com/article/10.1007/BF02478259) logical calculus of the ideas immanent in nervous activity，springer.com，1943 年 12 月
+1. [A logical calculus of the ideas immanent in nervous activity](https://link.springer.com/article/10.1007/BF02478259)，springer.com，1943 年 12 月
 
-1.  [Computing machin](https://academic.oup.com/mind/article/LIX/236/433/986238)ery and intelligence，Mind，1950 年 10 月
+2. [Computing machinery and intelligence](https://academic.oup.com/mind/article/LIX/236/433/986238)，Mind，1950 年 10 月
 
-1.  [A proposal for the Dartmouth summer res](https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html)earch project on artificial intelligence，Stanford.edu，1955 年 8 月 31 日
+3. [A proposal for the Dartmouth summer research project on artificial intelligence](https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html)，Stanford.edu，1955 年 8 月 31 日
 
-1.  Lisp (progamming language)，wikipedia.org
+4. `Lisp` (programming language)，wikipedia.org
 
-1.  [Pandemonium: a p](https://aitopics.org/download/classics:504E1BAC)aradigm for learning，aitopics.org
+5. [Pandemonium: a paradigm for learning](https://aitopics.org/download/classics:504E1BAC)，aitopics.org
 
-1.  Programs with common sense，stanford.edu
+6. Programs with common sense，stanford.edu
 
-1.  Alchemy and artifical intelligence，rand.org，1965 年 12 月
+7. Alchemy and artificial intelligence，rand.org，1965 年 12 月
 
-1.  [S](https://www.sciencedirect.com/science/article/abs/pii/S0065245808604180)peculations concerning the first ultraintelligent machine，sciencedirect.com
 
-1.  [ELIZA](https://en.wikipedia.org/wiki/ELIZA)，wikipedia.org
 
-1.  [Dendral](https://en.wikipedia.org/wiki/Dendral)，wikipedia.org
+1. [Speculations concerning the first ultraintelligent machine](https://www.sciencedirect.com/science/article/abs/pii/S0065245808604180)，`sciencedirect.com`
 
-1.  Shakey the robot，sri.com
+1. [ELIZA](https://en.wikipedia.org/wiki/ELIZA)，`wikipedia.org`
 
-1.  [P](https://direct.mit.edu/books/monograph/3132/PerceptronsAn-Introduction-to-Computational)erceptrons: an introduction to computational geometry，MIT.edu
+1. [Dendral](https://en.wikipedia.org/wiki/Dendral)，`wikipedia.org`
 
-1.  [SHRDLU](https://hci.stanford.edu/winograd/shrdlu/)，stanford.edu
+1. Shakey the robot，`sri.com`
 
-1.  [M](https://www.sciencedirect.com/science/article/abs/pii/S0020737378800492)YCIN: a knowledge-based program for infectious disease diagnosis，science.direct.com
+1. [Perceptrons: an introduction to computational geometry](https://direct.mit.edu/books/monograph/3132/PerceptronsAn-Introduction-to-Computational)，`MIT.edu`
 
-1.  [Artificial Intelligen](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm)ce: a general survey，chilton-computing.org.uk，1972 年 7 月
+1. [SHRDLU](https://hci.stanford.edu/winograd/shrdlu/)，`stanford.edu`
 
-1.  [AI winter](https://en.wikipedia.org/wiki/AI_winter)，wikipedia.org
+1. [MYCIN: a knowledge-based program for infectious disease diagnosis](https://www.sciencedirect.com/science/article/abs/pii/S0020737378800492)，`science.direct.com`
 
-1.  [WABOT](https://www.humanoid.waseda.ac.jp/booklet/kato_2.html)，humanoid.waseda.ac.jp
+1. [Artificial Intelligence: a general survey](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm)，`chilton-computing.org.uk`，1972 年 7 月
 
-1.  [Learning representations by bac](https://www.nature.com/articles/323533a0)k-propagating errors，nature.com，1986 年 10 月 9 日
+1. [AI winter](https://en.wikipedia.org/wiki/AI_winter)，`wikipedia.org`
 
-1.  Knowledge navigator，youtube.com，2008 年 4 月 29 日
+1. [WABOT](https://www.humanoid.waseda.ac.jp/booklet/kato_2.html)，`humanoid.waseda.ac.jp`
 
-1.  [Probabilistic reasoning in intelligent ](https://www.sciencedirect.com/book/9780080514895/probabilistic-reasoning-in-intelligent-systems)systems: networks of plausible inference，sciencedirect.com，1988 年
+1. [Learning representations by back-propagating errors](https://www.nature.com/articles/323533a0)，`nature.com`，1986 年 10 月 9 日
 
-1.  Judea Pearl Turing Award，amturing.amc.org
+1. Knowledge navigator，`youtube.com`，2008 年 4 月 29 日
 
-1.  [Jabberwacky](https://en.wikipedia.org/wiki/Jabberwacky)，wikipedia.org
+1. [Probabilistic reasoning in intelligent systems: networks of plausible inference](https://www.sciencedirect.com/book/9780080514895/probabilistic-reasoning-in-intelligent-systems)，`sciencedirect.com`，1988 年
 
-1.  [A statistical approach to ](https://dl.acm.org/doi/10.3115/991635.991651)language translation，acm.org，1988 年 8 月 22 日
+1. Judea Pearl Turing Award，`amturing.amc.org`
 
-1.  [Candide: a statistical machin](https://aclanthology.org/H94-1100.pdf)e translation system，aclanthology.org
+1. [Jabberwacky](https://en.wikipedia.org/wiki/Jabberwacky)，`wikipedia.org`
 
-1.  [The coming technological singulari](https://edoras.sdsu.edu/~vinge/misc/singularity.html)ty: how to survive in the post-human era，edoras.sdsu.edu，1993
+1. [A statistical approach to language translation](https://dl.acm.org/doi/10.3115/991635.991651)，`acm.org`，1988 年 8 月 22 日
 
-1.  [A](https://en.wikipedia.org/wiki/Artificial_Linguistic_Internet_Computer_Entity).L.I.C.E. (Artificial Linguistic Internet Computer Entity)，wikipedia.org
+1. [Candide: a statistical machine translation system](https://aclanthology.org/H94-1100.pdf)，`aclanthology.org`
 
-1.  Deep blue (chess computer)，wikipedia.org
+1. [The coming technological singularity: how to survive in the post-human era](https://edoras.sdsu.edu/~vinge/misc/singularity.html)，`edoras.sdsu.edu`，1993
 
-1.  [Furby](https://en.wikipedia.org/wiki/Furby)，wikipedia.org
+1. [A.L.I.C.E. (Artificial Linguistic Internet Computer Entity)](https://en.wikipedia.org/wiki/Artificial_Linguistic_Internet_Computer_Entity)，`wikipedia.org`
 
-1.  [G](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)radient-based learning applied to document recognition，Stanford.edu，1998 年 11 月
+1. Deep blue (chess computer)，`wikipedia.org`
 
-1.  [Kismet](https://web.media.mit.edu/~cynthiab/research/robots/kismet/overview/overview.html)，mit.edu
+1. [Furby](https://en.wikipedia.org/wiki/Furby)，`wikipedia.org`
 
-1.  [Learning multiple laye](https://www.cs.toronto.edu/~hinton/absps/tics.pdf)rs of representation，toronto.edu
+1. [Gradient-based learning applied to document recognition](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)，`Stanford.edu`，1998 年 11 月
 
-1.  [ImageNet](https://en.wikipedia.org/wiki/ImageNet)，wikipedia.org
+1. [Kismet](https://web.media.mit.edu/~cynthiab/research/robots/kismet/overview/overview.html)，`mit.edu`
 
-1.  [L](https://robotics.stanford.edu/~ang/papers/icml09-LargeScaleUnsupervisedDeepLearningGPU.pdf)arge-scale deep unsupervised learning using graphic processors，stanford.edu
+1. [Learning multiple layers of representation](https://www.cs.toronto.edu/~hinton/absps/tics.pdf)，`toronto.edu`
 
-1.  [The robots are comi](https://archive.nytimes.com/mediadecoder.blogs.nytimes.com/2009/10/19/the-robots-are-coming-oh-theyre-here/?_r=0)ng! Oh, they're here，nytimes.com，2009 年 10 月 19 日
+1. [ImageNet](https://en.wikipedia.org/wiki/ImageNet)，`wikipedia.org`
 
-1.  Watson IBM invitational，jeopardy.com，2015 年 6 月 22 日
+1. [Large-scale deep unsupervised learning using graphic processors](https://robotics.stanford.edu/~ang/papers/icml09-LargeScaleUnsupervisedDeepLearningGPU.pdf)，`stanford.edu`
 
-1.  [U](https://blog.google/technology/ai/using-large-scale-brain-simulations-for/)sing large-scale brain simulations for machine learning and A.I.，blog.google，2012 年 6 月 26 日
+1. [The robots are coming! Oh, they're here](https://archive.nytimes.com/mediadecoder.blogs.nytimes.com/2009/10/19/the-robots-are-coming-oh-theyre-here/?_r=0)，`nytimes.com`，2009 年 10 月 19 日
 
-1.  [I](https://image-net.org/challenges/LSVRC/2012/)mageNet large scale visual recognition challenge 2012，image-net.org
+1. Watson IBM invitational，`jeopardy.com`，2015 年 6 月 22 日
 
-1.  [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)，wikipedia.org
+1. [Using large-scale brain simulations for machine learning and A.I.](https://blog.google/technology/ai/using-large-scale-brain-simulations-for/)，`blog.google`，2012 年 6 月 26 日
 
-1.  We talked to Sophia，youtube.com，2017 年 12 月 28 日
+1. [ImageNet large scale visual recognition challenge 2012](https://image-net.org/challenges/LSVRC/2012/)，`image-net.org`
 
-1.  [Facebook's artificial intelligence robots shut down ](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html)after they start talking to each other in their own language，independent.co.uk，2017 年 7 月 31 日
+1. [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)，`wikipedia.org`
 
-1.  [H](https://learn.g2.com/google-mum)ow will Google MUM affect your search ranking in 2024?，learn.g2.com，2023 年 8 月 7 日
+1. We talked to Sophia，`youtube.com`，2017 年 12 月 28 日
 
-1.  [Our next-generati](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/)on model: Gemini 1.5，blog.google，2024 年 2 月 15 日
+1. [Facebook's artificial intelligence robots shut down after they start talking to each other in their own language](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html)，`independent.co.uk`，2017 年 7 月 31 日
 
-1.  [Sora](https://openai.com/index/sora/)，openai.com
+1. [How will Google MUM affect your search ranking in 2024?](https://learn.g2.com/google-mum)，`learn.g2.com`，2023 年 8 月 7 日
 
-1.  Stable diffusion 3，stability.ai，2024 年 2 月 22 日
+1. [Our next-generation model: Gemini 1.5](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/)，`blog.google`，2024 年 2 月 15 日
 
-1.  [AlphaFold 3 predicts the structure and](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) interactions of all of life’s molecules，blog.google，2024 年 5 月 8 日
+1. [Sora](https://openai.com/index/sora/)，`openai.com`
 
-1.  Apple intelligence，apple.com，2024 年 6 月 10 日
+1. Stable diffusion 3，`stability.ai`，2024 年 2 月 22 日
 
-1.  [N](https://blog.google/technology/ai/notebooklm-audio-overviews/)otebookLM now lets you listen to a conversation about your sources，blog.google，2024 年 9 月 11 日
+1. [AlphaFold 3 predicts the structure and interactions of all of life’s molecules](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/)，`blog.google`，2024 年 5 月 8 日
+
+1. Apple intelligence，`apple.com`，2024 年 6 月 10 日
+
+1. [NotebookLM now lets you listen to a conversation about your sources](https://blog.google/technology/ai/notebooklm-audio-overviews/)，`blog.google`，2024 年 9 月 11 日

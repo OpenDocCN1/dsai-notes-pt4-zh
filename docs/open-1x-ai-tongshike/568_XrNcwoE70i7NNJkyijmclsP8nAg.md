@@ -1,3 +1,4 @@
+
 # 应用 | AI + 千行百业
 
 > 来源：[https://datawhaler.feishu.cn/docx/D2HLdXZRWounkHxckRqcJEo7n9c](https://datawhaler.feishu.cn/docx/D2HLdXZRWounkHxckRqcJEo7n9c)
@@ -6,13 +7,13 @@
 
 ![](img/9b809746f39d42d2ef7fb2305b18e451.png)
 
-> **AI + 千行百业** 知识库为[**奇想星球**](https://1aigc.cn/)平台 x [**Datawhale**](https://datawhale.club/)** **共建。
+> AI + 千行百业 知识库为[奇想星球](https://1aigc.cn/)平台 x [Datawhale](https://datawhale.club/)共建。
 
-> **我们的愿景是，通过开**源开放共建的方式，让更多的人了解并使用AI工具，做AI时代的智能个体。
+> 我们的愿景是，通过开源开放共建的方式，让更多的人了解并使用AI工具，做AI时代的智能个体。
 
 > 我们为大家定制了几种学习方式，包含自学、快速共[AI x 千行百业学习指南（必看）](https://datawhaler.feishu.cn/wiki/En7EwN339iwIpdk4xsocdaztnTd)、组队学习等，纯看不如一起动手学起来！
 
-> **每个行业 场景案例+工作流学习**，让你快速上手AI，创造更美好的生活！
+> 每个行业 场景案例+工作流学习，让你快速上手AI，创造更美好的生活！
 
 ## 当前AI+行业内容
 
@@ -78,21 +79,21 @@ AI+程序员 2024-05-20
 
 ## Datawhale介绍
 
-> **Datawhale** 成立于2018年——是国内AI领域最大的开源学习组织，汇聚了众多有开源精神和探索精神的开源贡献者，致力于构建开源学习社区，和学习者一起成长。
+> Datawhale 成立于2018年——是国内AI领域最大的开源学习组织，汇聚了众多有开源精神和探索精神的开源贡献者，致力于构建开源学习社区，和学习者一起成长。
 
 >
 
 ![](img/8cd16274e512b8110157b1b072b531c4.png)
 
-**👸号：Datawhale**
+👸号：Datawhale
 
 ## 奇想星球介绍
 
-> [**奇想星球**](https://www.1aigc.cn)** **是一个**通过项目****链接开发者与开发者、**链接开发者与使用者的AIGC共创社区平台。
+> [奇想星球](https://www.1aigc.cn) 是一个通过项目链接开发者与开发者、链接开发者与使用者的AIGC共创社区平台。
 
 ![](img/6630b8b24b1d82649fbd0625902ad63c.png)
 
-**👸号：奇想星球平台**
+👸号：奇想星球平台
 
 ## 当前知识库维护者
 

@@ -1,18 +1,18 @@
+
 # Ghost Painter
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/QVj0d60CzoToXcxB7IxcPo3wnQg](https://vxc3hj17dym.feishu.cn/docx/QVj0d60CzoToXcxB7IxcPo3wnQg)
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/QVj0d60CzoToXcxB7IxcPo3wnQg`](https://vxc3hj17dym.feishu.cn/docx/QVj0d60CzoToXcxB7IxcPo3wnQg)
 
 > 基于DALL·E美学体系抽象，自动将自然语言描述转译为高审美黑白图像，降低用户风格表达门槛，适配美学与提示词双盲创作者。
 
 > Prompt 信息：
 
 > - Prompt Author: 三亿
-
 > - Version: 1.0
-
 > - Language: 英文
-
 > - LLM: GPT4o & DALL• E3
+
+## System Prompt
 
 ```
 # Profile

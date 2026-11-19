@@ -1,14 +1,15 @@
+
 # 算力平台算力点激励草案征集（意见征集）
 
 > 来源：[https://aicarrier.feishu.cn/docx/UUlbdVfQ8oaYxLxpYykcv9shnib](https://aicarrier.feishu.cn/docx/UUlbdVfQ8oaYxLxpYykcv9shnib)
 
-为了更好的给大家服务，请大家提出建议
+为了更好的给大家服务，请大家提出建议。
 
-**一个月资源**
+## 一个月资源
 
 一个月可以发放 23w 的算力点投融到课程学习和项目中。
 
-**算力点激励参考起草：**
+## 算力点激励参考起草
 
 | 项目 | 描述 | 参考算力值（可根据实际情况上下浮动） | 备注 |
 | --- | --- | --- | --- |

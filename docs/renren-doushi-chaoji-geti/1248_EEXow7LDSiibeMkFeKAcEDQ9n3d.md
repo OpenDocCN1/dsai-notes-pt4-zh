@@ -1,48 +1,38 @@
+
 # 2023-05-26🔴 度小满【轩辕】大模型正式开源 参数超过千亿
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/DQiTdlCYgoeD6MxaAujcSQdPngf](https://xuqiwei1986.feishu.cn/docx/DQiTdlCYgoeD6MxaAujcSQdPngf)
 
-> 🔗 原文链接： h[ttps://baijiahao.b](https://baijiahao.baidu.com/s?id=1767948538464516915&wfr=spider&for=pc)aidu.com/s?id=17...
-
->
+> 🔗 原文链接：[https://baijiahao.baidu.com/s?id=1767948538464516915&wfr=spider&for=pc](https://baijiahao.baidu.com/s?id=1767948538464516915&wfr=spider&for=pc)
 
 度小满轩辕大模型正式开源 参数超过千亿
 
-2023-05-26首个开源中文金融大模型来了！解释授信额度、计算收益率、决策参考样样通，来自度小满｜附下载
+2023-05-26 首个开源中文金融大模型来了！解释授信额度、计算收益率、决策参考样样通，来自度小满｜附下载
 
-[https://mp.weixin.qq.com/s/cQ](https://mp.weixin.qq.com/s/cQ72KvOhYf6Cojzn2l35dQ)72KvOhYf6Cojzn2l35dQ
+[https://mp.weixin.qq.com/s/cQ72KvOhYf6Cojzn2l35dQ](https://mp.weixin.qq.com/s/cQ72KvOhYf6Cojzn2l35dQ)
 
-相关
+## 相关
 
-https://github.com/Duxiaoman-DI
-
-https://github.com/Duxiaoman-DI/Duxiaoman-talk/tree/main
+- `https://github.com/Duxiaoman-DI`
+- `https://github.com/Duxiaoman-DI/Duxiaoman-talk/tree/main`
 
 ![](img/fc06c4d3af5dabeab7018c69a23a4dee.png)
 
-# 轩辕：首个千亿级中文金融对话模型
+## 轩辕：首个千亿级中文金融对话模型
 
 XuanYuan: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters
 
-##
-
-## **1. 模型简介**
+### 1. 模型简介
 
 轩辕是国内首个开源的千亿级中文对话大模型，同时也是首个针对中文金融领域优化的千亿级开源对话大模型。轩辕在BLOOM-176B的基础上针对中文通用领域和金融领域进行了针对性的预训练与微调，它不仅可以应对通用领域的问题，也可以解答与金融相关的各类问题，为用户提供准确、全面的金融信息和建议。
 
-##
-
-## **2. 模型下载**
+### 2. 模型下载
 
 千亿级的轩辕模型已可以在[Huggingface](https://huggingface.co/xyz-nlp/XuanYuan2.0)中申请下载。
 
-##
+### 3. 模型评测
 
-## **3. 模型评测**
-
-###
-
-### **3.1. 金融领域效果评测**
+#### 3.1. 金融领域效果评测
 
 为了深入评估轩辕对话大模型在金融领域的专业性，我们构建了一套针对金融领域的详细评测体系。该评测体系涉及金融名词理解、金融市场评论、金融数据分析和金融新闻理解等四大领域，从多角度全面考察模型的金融处理能力。评测结果表明，轩辕在主流的四种开源大模型的比较中，赢得了150次回答中63.33%的胜率，凸显出其在金融领域的显著优势。
 
@@ -50,17 +40,16 @@ XuanYuan: A Large Chinese Financial Chat Model with Hundreds of Billions Paramet
 
 点击显示轩辕回答示例
 
-###
-
-### **3.2. 通用领域效果评测**
+#### 3.2. 通用领域效果评测
 
 除了在金融领域的突出表现，轩辕还在通用处理能力方面表现优秀。我们利用由200道多元化问题构成的通用评测集，对轩辕在数学计算、场景写作、逻辑推理、文本摘要等13个主要维度的表现进行了评估，并将其与ChatGPT进行了对比。结果显示，轩辕在这个评测集上，有71%的问题表现不亚于ChatGPT，验证了其全方面能力。
 
 ![](img/cae79bb5509ac224d492f669f59ec97b.png)
 
-#  GitHub主页： https://github.com/Duxiaoman-DI/XuanYuan
+## 4. 相关资源
 
-# 轩辕模型申请下载地址： https://huggingface.co/xyz-nlp/XuanYuan2.0
+- GitHub 主页：`https://github.com/Duxiaoman-DI/XuanYuan`
+- 轩辕模型申请下载地址：`https://huggingface.co/xyz-nlp/XuanYuan2.0`
 
 近日，度小满在人工智能领域动作频频。6月1日，度小满与哈尔滨工业大学宣布共同成立“哈尔滨工业大学-度小满人工智能（大模型）联合研究中心”；5月26日，度小满正式开源中文金融大模型轩辕大模型。
 
@@ -76,4 +65,4 @@ XuanYuan: A Large Chinese Financial Chat Model with Hundreds of Billions Paramet
 
 据了解，2018年4月，百度宣布旗下金融服务事业群组正式完成拆分融资协议签署，拆分后百度金融启用全新品牌“度小满”，实现独立运营。2018年5月21日，度小满正式成立，延承百度技术基因，探索人工智能在金融领域的应用，先后布局信贷、财富管理、支付、保险、个人金融科技和供应链金融科技六大业务板块。
 
-近日，又有消息程度小满将要启动上市计划，对此度小满回应称有关上市的传闻不实，目前公司没有明确的上市计划。
+近日，又有消息称度小满将要启动上市计划，对此度小满回应称有关上市的传闻不实，目前公司没有明确的上市计划。

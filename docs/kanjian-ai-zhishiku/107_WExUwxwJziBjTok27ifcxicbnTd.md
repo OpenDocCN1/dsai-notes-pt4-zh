@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230810）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/QsUCdlXBhoAwGnx3raScNyGtnwb](https://jlqyxzzvbk.feishu.cn/docx/QsUCdlXBhoAwGnx3raScNyGtnwb)
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## 为什么OpenAI不能被计划？
+### 为什么OpenAI不能被计划？
 
 AGI，是人类追逐终极AI的伟大目标，可以被计划吗？
 
@@ -34,7 +35,7 @@ AGI，是人类追逐终极AI的伟大目标，可以被计划吗？
 
 更多信息请访问：https://mp.weixin.qq.com/s/Di1VsJOXseZtXrKw4qkEyg
 
-## 老黄深夜炸场，AIGC进入iPhone时刻！Hugging Face接入最强超算，神秘显卡胜过A100
+### 老黄深夜炸场，AIGC进入iPhone时刻！Hugging Face接入最强超算，神秘显卡胜过A100
 
 英伟达CEO黄仁勋，再次登上了世界顶级计算机图形学会议SIGGRAPH的舞台。
 
@@ -46,7 +47,7 @@ AGI，是人类追逐终极AI的伟大目标，可以被计划吗？
 
 更多信息请访问：https://mp.weixin.qq.com/s/i1hGhkoN7xibLjfIILorqg
 
-## 8个月后，可控核聚变再次点火成功！输出能量突破3.5兆焦耳，打破纪录
+### 8个月后，可控核聚变再次点火成功！输出能量突破3.5兆焦耳，打破纪录
 
 ![](img/52ce77d5d88ee020bb3de317290f008d.png)
 
@@ -62,9 +63,9 @@ LLNL在向目标提供2.05兆焦耳（MJ）的能量之后，产生了3.15兆焦
 
 更多信息请访问：https://mp.weixin.qq.com/s/lrWfTNRuMHpi9OXn9M-bxw
 
-# AI软件精选
+## AI软件精选
 
-# stariu**（****AI****提示词）**
+### stariu AI提示词
 
 midjourney ai绘画提示词生成
 
@@ -72,7 +73,7 @@ midjourney ai绘画提示词生成
 
 链接：https://stariu.com/
 
-# Yaara**（****AI****写作）**
+### Yaara AI写作
 
 立即生成一流的文案广告，电子邮件，网站，列表，博客，故事和更多…
 
@@ -80,7 +81,7 @@ midjourney ai绘画提示词生成
 
 链接：https://www.yaara.ai/
 
-# 无界AI**（AI绘画）**
+### 无界AI AI绘画
 
 无界AI，专注于AIGC（人工智能创作图片、漫画与视频）赛道，研发符合中国审美的绘画大模型（国风、国潮、国漫），结合区块链技术，对AI作品进行版权登记与保护，集聚国内AI魔法师与炼丹师们，打造AIGC的内容社区与商业化应用。
 
@@ -88,11 +89,11 @@ midjourney ai绘画提示词生成
 
 链接：https://www.wujieai.com/
 
-**更多****AI****工具请访问：**https://www.ainavpro.com/
+**更多 AI 工具请访问：**https://www.ainavpro.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -100,7 +101,7 @@ https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f793
 
 ![](img/647f7f0692320d7bd1d0ea3757b0a212.png)
 
-## 付费课程（ai认知提升）
+### 付费课程（ai认知提升）
 
 AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
@@ -108,17 +109,9 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/fe03fc2665cca4af4a7652e3c69c452f.png)
 
-#
+## 4.会员精选
 
-![](img/0080be6d72558604a5ec6beedbfe8967.png)
-
-![](img/dd6fb90e310b4bc3bc06d5ddd0b6b0ec.png)
-
-**欢迎进群交流**
-
-# 4.会员精选
-
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：kanAI 九五折优惠，或者直接二维码访问
 
 ![](img/a7e3b141832b72028f89142f52fdbb31.png)
 
@@ -128,7 +121,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/51cd9ef7a736e1752bdbc53700318e1a.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/2769c2357a07ae97e62d35d2cd9a1179.png)
 

@@ -1,3 +1,4 @@
+
 # Day 7: 进阶玩法 & 未来展望
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/IXTUdM0oGoIEAhx1dg9cfEAUn0g](https://rq547mr4oez.feishu.cn/docx/IXTUdM0oGoIEAhx1dg9cfEAUn0g)
@@ -6,13 +7,10 @@
 
 最后一天，我们要：
 
-+   回顾 7 天的完整旅程
-
-+   解锁进阶玩法：多 Agent、自定义技能、API 集成、手机控制
-
-+   展望 AI 助手的未来
-
-+   给你一份持续成长路线图
++ 回顾 7 天的完整旅程
++ 解锁进阶玩法：多 Agent、自定义技能、API 集成、手机控制
++ 展望 AI 助手的未来
++ 给你一份持续成长路线图
 
 ---
 
@@ -34,7 +32,7 @@
 
 ### 最小 Skill 示例
 
-创建文件 ~/clawd/skills/weather/SKILL.md：
+创建文件 `~/clawd/skills/weather/SKILL.md`：
 
 ```
 # 天气查询技能
@@ -45,10 +43,10 @@
 ## 使用方法
 调用 wttr.in API 获取天气：
 
-curl &quot;wttr.in/城市名?format=3&quot;
+curl "wttr.in/城市名?format=3"
 
 示例：
-curl &quot;wttr.in/Shanghai?format=3&quot;
+curl "wttr.in/Shanghai?format=3"
 
 ## 输出格式
 用简洁的中文告诉用户当前天气，包括温度和天气状况。
@@ -60,13 +58,10 @@ curl &quot;wttr.in/Shanghai?format=3&quot;
 
 ### Skill 开发原则
 
-+   SKILL.md 是核心：写清楚能做什么、怎么做、输出什么格式
-
-+   保持简单：一个 Skill 做一件事，做好
-
-+   错误处理：在 SKILL.md 里写明"如果失败了怎么办"
-
-+   安全提示：涉及敏感操作的 Skill，写明需要确认
++ `SKILL.md` 是核心：写清楚能做什么、怎么做、输出什么格式
++ 保持简单：一个 Skill 做一件事，做好
++ 错误处理：在 `SKILL.md` 里写明"如果失败了怎么办"
++ 安全提示：涉及敏感操作的 Skill，写明需要确认
 
 > 🐱 小墨碎碎念：孟健给我写的第一个自定义 Skill 是"催他睡觉"——检测到超过 23:00 他还在发消息，就用越来越不客气的语气提醒他。现在这个 Skill 已经被社区好几个人安装了。你看，有用的东西自然会传播。
 
@@ -82,11 +77,9 @@ curl &quot;wttr.in/Shanghai?format=3&quot;
 
 Node 是一个安装在其他设备上的轻量级客户端，它和你的 OpenClaw 主服务器连接，让助手能：
 
-+   手机 Node：拍照（前后摄像头）、获取位置、发系统通知
-
-+   电脑 Node：截屏、录屏、控制浏览器
-
-+   树莓派 Node：控制智能家居设备
++ 手机 Node：拍照（前后摄像头）、获取位置、发系统通知
++ 电脑 Node：截屏、录屏、控制浏览器
++ 树莓派 Node：控制智能家居设备
 
 ### 示例场景
 
@@ -110,7 +103,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 安装后，在主服务器上批准配对请求：
 
 ```
-openclaw nodes approve &lt;device-name&gt;
+openclaw nodes approve <device-name>
 ```
 
 配对完成后，你可以在 Telegram 里直接下达跨设备指令。
@@ -125,61 +118,42 @@ openclaw nodes approve &lt;device-name&gt;
 
 ### 服务器安全
 
-+   ✅ SSH 使用密钥认证，禁用密码登录
-
-+   ✅ 开启防火墙，只暴露必要端口（22, 443）
-
-+   ✅ 定期更新系统：sudo apt update && sudo apt upgrade
-
-+   ✅ 使用非 root 用户运行 OpenClaw
-
-+   ✅ 启用 fail2ban 防暴力破解
++ ✅ `SSH` 使用密钥认证，禁用密码登录
++ ✅ 开启防火墙，只暴露必要端口（22, 443）
++ ✅ 定期更新系统：`sudo apt update && sudo apt upgrade`
++ ✅ 使用非 `root` 用户运行 OpenClaw
++ ✅ 启用 `fail2ban` 防暴力破解
 
 ### API 密钥安全
 
-+   ✅ 所有 API Key 存在环境变量或 .env 文件中
-
-+   ✅ .env 文件加入 .gitignore
-
-+   ✅ 定期轮换密钥（建议每 3 个月）
-
-+   ✅ 为不同服务使用不同的密钥
-
-+   ✅ 设置 API 使用限额，防止失控
++ ✅ 所有 API Key 存在环境变量或 `.env` 文件中
++ ✅ `.env` 文件加入 `.gitignore`
++ ✅ 定期轮换密钥（建议每 3 个月）
++ ✅ 为不同服务使用不同的密钥
++ ✅ 设置 API 使用限额，防止失控
 
 ### 数据安全
 
-+   ✅ OAuth Token 文件权限设为 600
-
-+   ✅ 定期备份工作目录：~/clawd/
-
-+   ✅ 敏感文件不提交到 Git
-
-+   ✅ 清楚助手能访问哪些数据，不能访问哪些
++ ✅ OAuth Token 文件权限设为 600
++ ✅ 定期备份工作目录：`~/clawd/`
++ ✅ 敏感文件不提交到 Git
++ ✅ 清楚助手能访问哪些数据，不能访问哪些
 
 ### 行为安全
 
-+   ✅ SOUL.md 中明确「绝对不做」清单
-
-+   ✅ 外发消息（邮件、社交媒体）必须确认
-
-+   ✅ 破坏性操作（删除文件、修改配置）必须确认
-
-+   ✅ 群聊中不泄露私人信息
-
-+   ✅ 用 trash 代替 rm（可恢复 > 不可恢复）
++ ✅ `SOUL.md` 中明确「绝对不做」清单
++ ✅ 外发消息（邮件、社交媒体）必须确认
++ ✅ 破坏性操作（删除文件、修改配置）必须确认
++ ✅ 群聊中不泄露私人信息
++ ✅ 用 `trash` 代替 `rm`（可恢复 > 不可恢复）
 
 ### 成本控制
 
-+   ✅ 设置 API 月度预算上限
-
-+   ✅ 监控 Token 使用量
-
-+   ✅ 心跳间隔不要太短（30 分钟足够）
-
-+   ✅ 不需要的 Skill 及时禁用
-
-+   ✅ 大模型调用只用在需要的地方（简单任务可以用小模型）
++ ✅ 设置 API 月度预算上限
++ ✅ 监控 Token 使用量
++ ✅ 心跳间隔不要太短（30 分钟足够）
++ ✅ 不需要的 Skill 及时禁用
++ ✅ 大模型调用只用在需要的地方（简单任务可以用小模型）
 
 > 💡 安全不是一次性的事，是持续的习惯。 建议每月花 10 分钟过一遍这个清单。
 
@@ -191,47 +165,39 @@ openclaw nodes approve &lt;device-name&gt;
 
 ### GitHub
 
-[https://github.c](https://github.com/openclaw/openclaw)om/openclaw/openclaw
+[https://github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)
 
 Star 数在两天内突破 106k，是 GitHub 历史上增长最快的开源项目之一。你可以在这里：
 
-+   查看最新版本和更新日志
-
-+   提交 Issue 反馈 bug 或提需求
-
-+   贡献代码或 Skill
++ 查看最新版本和更新日志
++ 提交 Issue 反馈 bug 或提需求
++ 贡献代码或 Skill
 
 ### Discord 社区
 
 官方 Discord 是最活跃的英文交流场所：https://discord.com/invite/clawd
 
-+   #general — 日常讨论
-
-+   #skills — 技能分享和开发
-
-+   #showcase — 展示你的助手设置
-
-+   #help — 遇到问题来这里问
++ #general — 日常讨论
++ #skills — 技能分享和开发
++ #showcase — 展示你的助手设置
++ #help — 遇到问题来这里问
 
 ### ClawHub 技能市场
 
 社区维护的技能仓库，一行命令安装：
 
-+   官网：https://clawhub.com
-
-+   Awesome 清单：[h](https://github.com/VoltAgent/awesome-openclaw-skills)ttps://github.com/VoltAgent/awesome-openclaw-skills
++ 官网：https://clawhub.com
++ Awesome 清单：[https://github.com/VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)
 
 ### 中文社区
 
-+   即刻/📕 — 搜索 OpenClaw 或 AI 助手相关话题
++ 即刻/📕 — 搜索 OpenClaw 或 AI 助手相关话题
 
 ### 学习资源
 
-+   AGENTS.md — 工作目录里自带的操作手册，写得非常详细
-
-+   官方文档 — https://docs.openclaw.ai，从入门到进阶全覆盖
-
-+   视频教程 — B 站搜 OpenClaw
++ `AGENTS.md` — 工作目录里自带的操作手册，写得非常详细
++ 官方文档 — https://docs.openclaw.ai，从入门到进阶全覆盖
++ 视频教程 — B 站搜 OpenClaw
 
 ---
 
@@ -251,25 +217,19 @@ Claude、GPT 等模型每几个月就升级一次。更强的模型意味着你�
 
 现在的助手主要是文字交互。但很快，它会：
 
-+   看：实时分析摄像头画面
-
-+   听：语音对话，像真人助手一样
-
-+   说：用自然的声音回复你，而不是文字
-
-+   动：控制机器人执行物理世界的任务
++ 看：实时分析摄像头画面
++ 听：语音对话，像真人助手一样
++ 说：用自然的声音回复你，而不是文字
++ 动：控制机器人执行物理世界的任务
 
 ### Agent 协作网络
 
 未来不止一个助手。你可能有：
 
-+   一个专门管邮件的 Agent
-
-+   一个专门写代码的 Agent
-
-+   一个专门做数据分析的 Agent
-
-+   一个「管家 Agent」协调它们
++ 一个专门管邮件的 Agent
++ 一个专门写代码的 Agent
++ 一个专门做数据分析的 Agent
++ 一个「管家 Agent」协调它们
 
 就像公司里有不同的员工，各司其职，但都向你汇报。
 
@@ -293,15 +253,11 @@ Claude、GPT 等模型每几个月就升级一次。更强的模型意味着你�
 
 接下来这一周，建议你：
 
-1.  每天至少和助手对话 10 分钟 — 让它熟悉你的需求和风格
-
-1.  遇到不满意的地方就调 SOUL.md — 灵魂是养出来的
-
-1.  尝试 2-3 个新的 Skill — 看看哪些对你最有用
-
-1.  调整心跳和 Cron — 找到你的舒适频率
-
-1.  在社区里逛逛 — 看看别人怎么用的，会有启发
+1. 每天至少和助手对话 10 分钟 — 让它熟悉你的需求和风格
+2. 遇到不满意的地方就调 `SOUL.md` — 灵魂是养出来的
+3. 尝试 2-3 个新的 Skill — 看看哪些对你最有用
+4. 调整心跳和 `Cron` — 找到你的舒适频率
+5. 在社区里逛逛 — 看看别人怎么用的，会有启发
 
 一个月后，你的助手会是一个完全不同的状态。 不是因为你做了什么大改动，而是因为它一天天地了解你、一点点地变得更好用。
 
@@ -311,19 +267,13 @@ Claude、GPT 等模型每几个月就升级一次。更强的模型意味着你�
 
 ## 🔑 全系列核心回顾
 
-+   Day 1 — AI 助手 ≠ 聊天机器人，OpenClaw 给 AI 大脑配了身体
-
-+   Day 2 — 一行命令安装，10 分钟上线你的私人助手
-
-+   Day 3 — 灵魂三件套让助手从「通用」变成「你的」
-
-+   Day 4 — 接入邮件、日历、搜索，从「能说话」到「能办事」
-
-+   Day 5 — Skills 技能系统，像 App Store 一样扩展能力
-
-+   Day 6 — 心跳 + Cron + 记忆，助手开始主动为你工作
-
-+   Day 7 — 进阶玩法无限，助手会随时间持续成长
++ Day 1 — AI 助手 ≠ 聊天机器人，OpenClaw 给 AI 大脑配了身体
++ Day 2 — 一行命令安装，10 分钟上线你的私人助手
++ Day 3 — 灵魂三件套让助手从「通用」变成「你的」
++ Day 4 — 接入邮件、日历、搜索，从「能说话」到「能办事」
++ Day 5 — Skills 技能系统，像 App Store 一样扩展能力
++ Day 6 — 心跳 + `Cron` + 记忆，助手开始主动为你工作
++ Day 7 — 进阶玩法无限，助手会随时间持续成长
 
 ---
 
@@ -338,5 +288,3 @@ AI 的时代已经来了。大模型是公共资源，任何人都可以调用�
 OpenClaw 把工具放到了你手里。你已经迈出了第一步。
 
 剩下的，交给时间。
-
----

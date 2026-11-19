@@ -1,3 +1,4 @@
+
 # 实践篇 | SSG：基于 Next.js 的仿 Trae AI 静态官网
 
 > 来源：[https://agijuejin.feishu.cn/docx/PVYSds2jNoz3WCxjPnociqjDn6b](https://agijuejin.feishu.cn/docx/PVYSds2jNoz3WCxjPnociqjDn6b)
@@ -10,7 +11,7 @@
 
 这节我们就来使用 Trae Builder 搭建一个 SSG 的应用， 做一个仿 Trae AI 首页的静态的官网。
 
-# 项目初始化（10分钟）
+## 项目初始化（10分钟）
 
 老规矩，我们还是使用 Builder 先生成一版初稿，描述清楚希望使用的技术栈、项目背景，补充适当的语境以及截图来扩充效果。
 
@@ -22,7 +23,7 @@
 
 ![](img/1d6c0a249dd10552f48461b12d4caace.png)
 
-# 交互优化（40分钟）
+## 交互优化（40分钟）
 
 虽然交互大部分都完成了，但是还是有很多小细节需要优化的，比如：
 

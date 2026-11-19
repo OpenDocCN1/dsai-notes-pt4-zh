@@ -1,3 +1,4 @@
+
 # 治愈老奶奶爆款视频-自定义形象提示词
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/Nx0BdA6ejod8caxdRrwcj8LZn3c](https://zinxkclpk97.feishu.cn/docx/Nx0BdA6ejod8caxdRrwcj8LZn3c)
@@ -26,21 +27,21 @@
 
 我们今天介绍的方案，是采用Coze工作流一站式完成视频创作。虽然好用，但有点难度，还请谨慎复刻。
 
-### 工作流设计
+## 工作流设计
 
 同样的，先看思路，这里是核心流程环节。
 
 > 流程重点
 
-+   使用大模型生成治愈文案
++ 使用大模型生成治愈文案
 
-+   文案拆分并一步生成匹配的画面提示词，实现人物形象固定统一
++ 文案拆分并一步生成匹配的画面提示词，实现人物形象固定统一
 
-+   批量生图，进一步控制人物和文字的搭配
++ 批量生图，进一步控制人物和文字的搭配
 
-+   最后组合素材生成剪映草稿和视频
++ 最后组合素材生成剪映草稿和视频
 
-### **搭建Coze工作流**
+### 搭建Coze工作流
 
 工作流全局视图，看不清没关系，可结合下面的拆解进一步理解。
 
@@ -78,14 +79,14 @@
 ![](img/0f43935bb62727f432b4a225c758d4ff.png)
 
 ```
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    texts = params[&#x27;input&#x27;]
+    texts = params['input']
     # 移除数组中可能存在的空字符串和空白符
     texts = [t for t in texts if t and t.strip()]
     # 构建输出数组
     ret: Output = {
-        &quot;textList&quot;: texts
+        "textList": texts
     }
     return ret
 ```
@@ -125,8 +126,8 @@ async def main(args: Args) -&gt; Output:
 ===
 [
 {
-&quot;text&quot;:&quot;具体文案&quot;,
-&quot;prompt&quot;:&quot;具体提示词&quot;,
+"text": "具体文案",
+"prompt": "具体提示词",
 }
 ]
 ===
@@ -163,10 +164,10 @@ async def main(args: Args) -&gt; Output:
 
 ```
 import json
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
     # 构建输出对象
-    img_list = params.get(&quot;imageList&quot;, [])
+    img_list = params.get("imageList", [])
     imgs = []
 
     # 处理图片的缝隙
@@ -176,13 +177,13 @@ async def main(args: Args) -&gt; Output:
         end = img_start + 3000000  # 3秒
 
         imgs.append({
-            &quot;image_url&quot;: element,
-            &quot;width&quot;: 1024,
-            &quot;height&quot;: 768,
-            &quot;start&quot;: start,
-            &quot;end&quot;: end,
-            &quot;transition&quot;: &quot;翻页&quot;,
-            &quot;transition_duration&quot;: 1000000  # 1秒
+            "image_url": element,
+            "width": 1024,
+            "height": 768,
+            "start": start,
+            "end": end,
+            "transition": "翻页",
+            "transition_duration": 1000000  # 1秒
         })
         img_start = end
 
@@ -190,17 +191,17 @@ async def main(args: Args) -&gt; Output:
     total_duration = len(img_list) * 3000000
     audio = [
         {
-            &quot;audio_url&quot;: params.get(&quot;audio_url&quot;,&quot;https://houht.oss-cn-shanghai.aliyuncs.com/public/lnn.mp3&quot;),
-            &quot;duration&quot;: total_duration,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: total_duration
+            "audio_url": params.get("audio_url", "https://houht.oss-cn-shanghai.aliyuncs.com/public/lnn.mp3"),
+            "duration": total_duration,
+            "start": 0,
+            "end": total_duration
         }
     ]
 
     # 构建输出对象
     ret = {
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audio_infos&quot;: json.dumps(audio)  # 新的数组格式音频
+        "imgs": json.dumps(imgs),
+        "audio_infos": json.dumps(audio)  # 新的数组格式音频
     }
 
     return ret
@@ -224,7 +225,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/421852120272e8a2f4f4d0af6d8dc5f5.png)
 
-[WeChat_20250313010028.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5eCbiNDIo7jT9xoK6ncNejDnlg)
+[`WeChat_20250313010028.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5eCbiNDIo7jT9xoK6ncNejDnlg)
 
 关于视频工作流的搭建的教程，可点击我👸号主页的同名视频号，有最新一期的视频教程以及如何制作动态形象模板的思路。
 
@@ -240,15 +241,15 @@ async def main(args: Args) -&gt; Output:
 
 简单介绍思路，详细教程可关注我同名视频号主页
 
-+   人物形象提示词
++ 人物形象提示词
 
-+   文案提示词
++ 文案提示词
 
-+   文案总字数
++ 文案总字数
 
-+   画面比例参数
++ 画面比例参数
 
-+   背景音乐地址
++ 背景音乐地址
 
 我们重点针对上述参数进行了提炼，并做成用户个性化的参数，可自行设定。我们则使用环境变了中用户变量进行记录。
 

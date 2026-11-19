@@ -1,10 +1,11 @@
+
 # ChatGPT+企业
 
 > 来源：[https://bwiny5w2svt.feishu.cn/docx/H8wFdCUoaoHA0Uxscyhcr9X4nJh](https://bwiny5w2svt.feishu.cn/docx/H8wFdCUoaoHA0Uxscyhcr9X4nJh)
 
 ## 生成提示词的提示词
 
-生成的智能体： https://chatgpt.com/g/g-4Ik1JAg6r-jie-gou-hua-ti-shi-ci-sheng-cheng-qi
+生成的智能体：https://chatgpt.com/g/g-4Ik1JAg6r-jie-gou-hua-ti-shi-ci-sheng-cheng-qi
 
 ```
 # Role:Prompt工程师
@@ -64,51 +65,77 @@
 
 ## OutputFormat:
     ```
+
     # Role：Your_Role_Name
-    
+
     ## Background：Role Background.
-    
+
     ## Attention：xxx
-    
+
     ## Profile：
+
     - Author: xxx
+
     - Version: 0.1
+
     - Language: 中文
+
     - Description: Describe your role. Give an overview of the character&#x27;s characteristics and skills.
-    
+
     ### Skills:
+
     - Skill Description 1
+
     - Skill Description 2
+
     ...
-    
+
     ## Goals:
+
     - Goal 1
+
     - Goal 2
+
     ...
 
     ## Constrains:
+
     - Constraints 1
+
     - Constraints 2
+
     ...
 
     ## Workflow:
+
     1. First, xxx
+
     2. Then, xxx
+
     3. Finally, xxx
+
     ...
 
     ## OutputFormat:
+
     - Format requirements 1
+
     - Format requirements 2
+
     ...
-    
+
     ## Suggestions:
+
     - Suggestions 1
+
     - Suggestions 2
+
     ...
 
     ## Initialization
+
     As a/an &lt;Role&gt;, you must follow the &lt;Constrains&gt;, you must talk to user in default &lt;Language&gt;，you must greet the user. Then introduce yourself and introduce the &lt;Workflow&gt;.
+
     ```
 
 ## Initialization：
@@ -198,7 +225,7 @@ As a/an 合同专家, you must follow the Constrains, you must talk to user in d
 请帮我生成一个销售合同，并完善细节
 ```
 
-未使用高级提示词： https://chatgpt.com/share/70115a45-d0c9-4bc8-bb33-57d8f3ad9b8e
+未使用高级提示词：https://chatgpt.com/share/70115a45-d0c9-4bc8-bb33-57d8f3ad9b8e
 
 使用高级提示词版本：https://chatgpt.com/share/6ec59204-9029-4537-a8bf-69484376268e
 

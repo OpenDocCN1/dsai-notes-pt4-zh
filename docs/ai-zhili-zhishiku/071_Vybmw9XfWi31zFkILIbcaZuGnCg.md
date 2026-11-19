@@ -1,3 +1,4 @@
+
 # 大模型评测
 
 > 来源：[https://docs.feishu.cn/docx/AzCxdrKUeoWs3yxsKNNcgCzbnQe](https://docs.feishu.cn/docx/AzCxdrKUeoWs3yxsKNNcgCzbnQe)
@@ -6,7 +7,7 @@
 
 SuperCLUE发布《中文大模型基准测评2023年度报告》
 
-## **官方评测：**
+## 官方评测：
 
 ### 大模型标准符合性评测
 
@@ -24,24 +25,18 @@ SuperCLUE发布《中文大模型基准测评2023年度报告》
 
 其中3.0版本研究抓取了2023年10月25日-2023年11月6日的数据，通过人机互动提问等形式，对国内主流大模型进行使用体验评测。在评测过程中，不仅考虑模型产品的实际表现，还深入评估了厂商的技术实力和未来发展潜力。此外，评测题库扩充到了1000道，并精选其中的400道进行实际问答测试。这大大提升了评测的广度和深度，能更准确地反映大模型在不同场景和问题下的实际表现。报告显示，科大讯飞星火继续保持领先优势，商汤商量、智谱AI-ChatGLM等厂商整体表现优秀。针对各维度能力测评，该报告还给出了相应的案例展示和分析。
 
-## **机构评测**
+## 机构评测
 
 目前评测机构很多，按照机构背景大体可以分为两类：
 
-+   **学术界、国家支持的科研机构**
+- **学术界、国家支持的科研机构**
 
-【详细：https://zhuanlan.zhihu.com/p/664055600】
+  【详细：`https://zhuanlan.zhihu.com/p/664055600`】
 
-+   上海人工智能研究所的open Compass：shlab.org.cn/news/5443498
-
-+   斯坦福的HELM 评测体系：Holistic Evaluation of Language Models (HELM)
-
-+   斯坦福的Alpaca 评测体系：https://tatsu-lab.github.io/alpaca_eval/
-
-+   开源，专为中文大模型的评测工具SuperCLUE： https://www.cluebenchmarks.com/introduce.html
-
-+   Hugging face 开源评测工具：Open LLM Leaderboard - a Hugging Face Space by HuggingFaceH4
-
-+   **开源评测机构**
-
-+   **商业机构**
+- 上海人工智能研究所的 open Compass：`shlab.org.cn/news/5443498`
+- 斯坦福的 HELM 评测体系：Holistic Evaluation of Language Models (HELM)
+- 斯坦福的 Alpaca 评测体系：`https://tatsu-lab.github.io/alpaca_eval/`
+- 开源，专为中文大模型的评测工具 SuperCLUE：`https://www.cluebenchmarks.com/introduce.html`
+- Hugging face 开源评测工具：Open LLM Leaderboard - a Hugging Face Space by HuggingFaceH4
+- **开源评测机构**
+- **商业机构**

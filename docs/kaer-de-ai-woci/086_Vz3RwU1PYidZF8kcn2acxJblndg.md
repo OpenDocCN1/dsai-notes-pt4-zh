@@ -1,38 +1,31 @@
+
 # NanoBananaPro使用案例
 
 > 来源：[https://aiwarts101.feishu.cn/docx/KUtedrphMouc2QxUF58cwkKSnHb](https://aiwarts101.feishu.cn/docx/KUtedrphMouc2QxUF58cwkKSnHb)
 
 原文：
 
-正在施工
+## 正在施工
 
 ---
 
-> 在**画面上方有一张长长的画**卷上用潇洒的书法写着一整首白居易的《琵琶行》内容是“浔阳江头夜送客，枫叶荻花秋瑟瑟【这里写好琵琶行全文】座中泣下谁最多？江州司马青衫湿。“，同时下方用中国水墨画风格画上这首诗对应的画面
+> 在画面上方有一张长长的画卷上用潇洒的书法写着一整首白居易的《琵琶行》内容是“浔阳江头夜送客，枫叶荻花秋瑟瑟【这里写好琵琶行全文】座中泣下谁最多？江州司马青衫湿。”，同时下方用中国水墨画风格画上这首诗对应的画面
 
 ![](img/6f9610e1a5e7ef2074856fdae2e8cf2d.png)
 
 > 生成一张🛰️手机聊天界面截图，严格按照🛰️的界面UI和排版方式，左侧对话气泡是灰色，右侧对话气泡是绿色，右侧是甄嬛的角色在讲话
 
->
-
 > 群聊名称：紫禁城吃瓜群
 
 > 聊天内容：
 
-1.  (头像：华妃经典剧照翻白眼表情包) 年世兰：本宫刚听说皇上新得了个会唱昆曲的鹦鹉？@安陵容 妹妹，是你教的吧？😏
-
-1.  (头像：流泪猫猫头) 安陵容：姐姐说笑了...嫔妾只会唱曲儿，教鸟儿说话，还得是🐦⬛苏公公...😢
-
-1.  (头像：甄嬛端庄剧照) 甄嬛：陵容妹妹的嗓子，连黄鹂都自愧不如。倒是那鹦鹉，学舌的本事，怕不是跟🤐某些人学的？
-
-1.  (头像：皇后端庄微笑但眼神犀利的表情包) 皇后：好了好了，姐妹和睦要紧。@华妃 妹妹，你宫里的蟹粉酥不错，本宫让剪秋去取些？🍰
-
-1.  (头像：华妃经典剧照翻白眼表情包) 年世兰：呵，皇后娘娘想吃？可惜啊，刚被颂芝“不小心”全打翻了！🤷‍♀️（配图：一碟点心扣地上的表情包）
-
-1.  (头像：叶澜依抱猫剧照) 叶澜依：...无聊。有这功夫不如去喂🐯我的大猫。
-
-1.  (头像：敬妃数砖表情包) 敬妃：@叶澜依 妹妹的猫...今天又挠坏了我宫里三块金砖！🧱🧱🧱 这个月第三回了！
+1. (头像：华妃经典剧照翻白眼表情包) 年世兰：本宫刚听说皇上新得了个会唱昆曲的鹦鹉？@安陵容 妹妹，是你教的吧？😏
+1. (头像：流泪猫猫头) 安陵容：姐姐说笑了...嫔妾只会唱曲儿，教鸟儿说话，还得是🐦⬛苏公公...😢
+1. (头像：甄嬛端庄剧照) 甄嬛：陵容妹妹的嗓子，连黄鹂都自愧不如。倒是那鹦鹉，学舌的本事，怕不是跟🤐某些人学的？
+1. (头像：皇后端庄微笑但眼神犀利的表情包) 皇后：好了好了，姐妹和睦要紧。@华妃 妹妹，你宫里的蟹粉酥不错，本宫让剪秋去取些？🍰
+1. (头像：华妃经典剧照翻白眼表情包) 年世兰：呵，皇后娘娘想吃？可惜啊，刚被颂芝“不小心”全打翻了！🤷‍♀️（配图：一碟点心扣地上的表情包）
+1. (头像：叶澜依抱猫剧照) 叶澜依：...无聊。有这功夫不如去喂🐯我的大猫。
+1. (头像：敬妃数砖表情包) 敬妃：@叶澜依 妹妹的猫...今天又挠坏了我宫里三块金砖！🧱🧱🧱 这个月第三回了！
 
 ![](img/dd15f8a869be9ad0697cf47cc9da811a.png)
 
@@ -48,11 +41,11 @@
 
 ![](img/32f7fb105ba5d0b2d782344b4bcdc26f.png)
 
-> 设计「经典光学实验：牛顿三棱镜分光」分镜式科普海报：左侧画入射白光，中间为玻璃三棱镜，右侧准确依波长顺序散出七色光带；下方小框再现“光的色散”公式 n = c/v；整体为 4:3 比例高清矢量，背景深灰，文字用无衬线体。
+> 设计「经典光学实验：牛顿三棱镜分光」分镜式科普海报：左侧画入射白光，中间为玻璃三棱镜，右侧准确依波长顺序散出七色光带；下方小框再现“光的色散”公式 `n = c/v`；整体为 4:3 比例高清矢量，背景深灰，文字用无衬线体。
 
 ![](img/9d467fba4764eea15e7f3f5d1ce6422f.png)
 
-> 用中文绘一张「人类基因组 23 对染色体概览」信息图：按实际长度比例竖排染色体条，使用不同渐变色区分常染色体与性染色体，侧边列出每对染色体与已知疾病/特征相关的代表基因（如 HBB、BRCA1）；
+> 用中文绘一张「人类基因组 23 对染色体概览」信息图：按实际长度比例竖排染色体条，使用不同渐变色区分常染色体与性染色体，侧边列出每对染色体与已知疾病/特征相关的代表基因（如 `HBB`、`BRCA1`）；
 
 ![](img/aa730fe9d93235e9e43fcba9917b5f82.png)
 
@@ -70,52 +63,53 @@
 
 > **左侧控制面板：**
 
-+   顶部项目名称：“Apartment 1202 – Concept A”，副标题：“AI Assisted Layout”。
+> + 顶部项目名称：“Apartment 1202 – Concept A”，副标题：“AI Assisted Layout”。
 
-+   标签页：“Rooms”、“Furniture”、“Materials”（当前选中“Rooms”）。
+> + 标签页：“Rooms”、“Furniture”、“Materials”（当前选中“Rooms”）。
 
-+   “Rooms” 列表中包括：“Living Room”（当前高亮）、“Dining Area”、“Bedroom”、“Study Corner”、“Balcony”。
+> + “Rooms” 列表中包括：“Living Room”（当前高亮）、“Dining Area”、“Bedroom”、“Study Corner”、“Balcony”。
 
-+   切换到“Furniture”时，以图标+文字列表呈现家具库分类：“Sofas”、“Chairs”、“Tables”、“Storages”、“Lighting”、“Decor”，每项有物件数量标记。
+> + 切换到“Furniture”时，以图标+文字列表呈现家具库分类：“Sofas”、“Chairs”、“Tables”、“Storages”、“Lighting”、“Decor”，每项有物件数量标记。
 
-+   在“Furniture”下选中“Sofas”后，弹出一个小浮层网格，展示 4 个不同风格沙发缩略图，每张图下有名称：“Cloud Sofa”、“Minimalist Sofa”、“Scandi Sofa”、“Japandi Sofa”，当前选中“Japandi Sofa”。
+> + 在“Furniture”下选中“Sofas”后，弹出一个小浮层网格，展示 4 个不同风格沙发缩略图，每张图下有名称：“Cloud Sofa”、“Minimalist Sofa”、“Scandi Sofa”、“Japandi Sofa”，当前选中“Japandi Sofa”。
 
 > **右侧控制面板：**
 
-+   顶部为用户头像，“Share Proposal”按钮。
+> + 顶部为用户头像，“Share Proposal”按钮。
 
-+   标签页：“Layout”、“Style”、“Lighting”（当前为“Style”）。
+> + 标签页：“Layout”、“Style”、“Lighting”（当前为“Style”）。
 
-+   “Style” 面板内有“Style Presets” 卡片行，包括：“Minimal Japandi”、“Modern Luxury”、“Nordic Light”、“Urban Loft”，当前选中“Minimal Japandi”。
+> + “Style” 面板内有“Style Presets” 卡片行，包括：“Minimal Japandi”、“Modern Luxury”、“Nordic Light”、“Urban Loft”，当前选中“Minimal Japandi”。
 
-+   下方“Color Palette” 区域以 5 个圆形色点展示当前方案配色：米白、暖灰、浅木色、墨绿、铜金，旁边注释“Primary / Secondary / Accent”。
+> + 下方“Color Palette” 区域以 5 个圆形色点展示当前方案配色：米白、暖灰、浅木色、墨绿、铜金，旁边注释“Primary / Secondary / Accent”。
 
-+   再下方是“AI Suggestions” 文本区，列出几条建议：
+> + 再下方是“AI Suggestions” 文本区，列出几条建议：
 
-+   “Reduce clutter around the TV wall for a cleaner focal point”
+> + “Reduce clutter around the TV wall for a cleaner focal point”
 
-+   “Add a subtle textured rug to separate living and dining zones”
+> + “Add a subtle textured rug to separate living and dining zones”
 
-+   “Consider a floor lamp near the reading corner”。
- 每条有小灯泡图标与“Apply”按钮。
+> + “Consider a floor lamp near the reading corner”。
+
+> 每条有小灯泡图标与“Apply”按钮。
 
 > **顶部工具栏：**
 
-+   包含：应用 Logo、项目切换下拉菜单、撤销、重做、保存、预览按钮。
+> + 包含：应用 Logo、项目切换下拉菜单、撤销、重做、保存、预览按钮。
 
-+   中央是视图切换：“3D View”、“2D Plan”、“Split View”，当前为“3D View”。
+> + 中央是视图切换：“3D View”、“2D Plan”、“Split View”，当前为“3D View”。
 
-+   右侧有“Measure Tool”、“AR View”、“Export PDF” 按钮。
+> + 右侧有“Measure Tool”、“AR View”、“Export PDF” 按钮。
 
-+   将鼠标悬停在“AR View”时出现提示框：“View this layout in your real room”。
+> + 将鼠标悬停在“AR View”时出现提示框：“View this layout in your real room”。
 
 > **底部输入区：**
 
-+   底部为自然语言文本输入栏，提示文字：“Describe how you want this living room to feel (e.g. ‘calm, bright, good for reading and small gatherings’)...”。
+> + 底部为自然语言文本输入栏，提示文字：“Describe how you want this living room to feel (e.g. ‘calm, bright, good for reading and small gatherings’)…”。
 
-+   左侧“+”号按钮展开“Inspiration” 下拉，含有：“Family with kids”、“Home office focus”、“Pet friendly”、“Minimal & easy to clean”等选项。
+> + 左侧“+”号按钮展开“Inspiration” 下拉，含有：“Family with kids”、“Home office focus”、“Pet friendly”、“Minimal & easy to clean”等选项。
 
-+   右侧显示当前 AI 模型：“HomeSense 3.2”，并有麦克风语音输入图标与“Upload Floorplan” 上传按钮（平面图图标）。
+> + 右侧显示当前 AI 模型：“HomeSense 3.2”，并有麦克风语音输入图标与“Upload Floorplan” 上传按钮（平面图图标）。
 
 > **背景与构图：**
 
@@ -159,19 +153,11 @@
 
 > 画幅比例16:9，一幅令人叹为观止的插画地图学杰作，描绘了清代京师（北京城）的帝都气象。整个画面以清代宫廷画的工整风格呈现，令人联想到《京师生春诗意图》的精细。媒材是在陈旧、细腻的绢本上使用工笔重彩，要求所有地名和和建筑外观和地理位置都能一一对应上
 
->
-
 > **构图与透视：**地图采用"散点透视"的长卷形式。中轴线从永定门直达钟鼓楼，彰显皇权威严。城市布局严谨对称，内外城分明。
-
->
 
 > 插画与字体细节：
 
->
-
 > 作为微型场景的地标：
-
->
 
 > **紫禁城：**金銮殿上皇帝临朝
 
@@ -189,13 +175,9 @@
 
 > **什刹海：**画舫游弋，酒肆茶楼
 
-> **作为地图元素的人物：**旗人、汉民、商贾、僧道等不同身份人物点缀画面。
-
->
+> 作为地图元素的人物：旗人、汉民、商贾、僧道等不同身份人物点缀画面。
 
 > 内外城坊区 - 高级指令：
-
->
 
 > 内城坊名样本集："东华坊"、"西华坊"、"东长安坊"、"西长安坊"、"正阳坊"、"崇文坊"、"宣武坊"、"德胜坊"、"安定坊"
 
@@ -211,15 +193,11 @@
 
 > 主标题与标签：
 
->
-
 > 主标题："京师全图"以端庄的柳体楷书，竖排书写在右上角
 
 > **标签：**满汉双语标注，汉字用工整的馆阁体
 
 > **美学与氛围：**调色板庄重华贵（赭红、群青、石绿、金粉）。线条工整精细。整体氛围体现清代帝都的森严秩序与繁华景象。
-
->
 
 > **负面提示词：**英文, 罗马字母, 3D, 现代地图, 网格布局, 几何形状, 电脑字体, 西方艺术风格, 卡通, 简单, 极简, 空白区域, 水印, 糟糕的书法, 乱码。
 
@@ -277,7 +255,7 @@
 
 ![](img/db04c0bb318fcc9245ee292ce21aae4f.png)
 
-![](img/5a98dd5c7c2c24c9c9b40a09846cfea4.png)
+![](img/5a98dd5c7c24c9c9b40a09846cfea4.png)
 
 ![](img/9c120fddfc6b557a41ab286bd4bc42e3.png)
 

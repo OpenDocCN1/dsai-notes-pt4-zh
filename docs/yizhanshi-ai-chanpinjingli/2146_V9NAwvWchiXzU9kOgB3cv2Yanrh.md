@@ -1,3 +1,4 @@
+
 # 第2期 AI行业周报（2024-6.17-23）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Q97edHo1qo195axmyefcORX5nUd](https://v11enp9ok1h.feishu.cn/docx/Q97edHo1qo195axmyefcORX5nUd)
@@ -62,6 +63,6 @@ AI模型在高考中的表现，不仅是技术实力的展现，更是教育革
 
 ## AI界的不速之客Perplexity惊现抄袭丑闻
 
-美国《连线》杂志深度调查揭露：Perplexity AI工具无视"机器人排除协议"，潜入《连线》等媒体网站，悄无声息地抓取并"借鉴"内容。即使在robots.txt中明确屏蔽，Perplexity仍狡猾绕过限制，其生成的文本与原创高度雷同。《连线》通过新网站监控，捕捉到Perplexity的可疑IP踪迹。《福布斯》等媒体也纷纷声援，共同揭露这一AI侵权行为。这不仅是对版权的侵犯，更是对AI伦理的挑战。
+美国《连线》杂志深度调查揭露：Perplexity AI工具无视"机器人排除协议"，潜入《连线》等媒体网站，悄无声息地抓取并"借鉴"内容。即使在`robots.txt`中明确屏蔽，Perplexity仍狡猾绕过限制，其生成的文本与原创高度雷同。《连线》通过新网站监控，捕捉到Perplexity的可疑IP踪迹。《福布斯》等媒体也纷纷声援，共同揭露这一AI侵权行为。这不仅是对版权的侵犯，更是对AI伦理的挑战。
 
 ![](img/775c70310350e2f5a889fd3e9f41092c.png)

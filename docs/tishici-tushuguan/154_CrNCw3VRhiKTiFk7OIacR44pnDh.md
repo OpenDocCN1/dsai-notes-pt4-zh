@@ -1,3 +1,4 @@
+
 # Claude Prompt：不可能三角
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/XupCdF3EuoC9g9xoTPpc4B66nEf](https://vxc3hj17dym.feishu.cn/docx/XupCdF3EuoC9g9xoTPpc4B66nEf)
@@ -6,7 +7,7 @@
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 ```
 ;; 作者: 李继刚

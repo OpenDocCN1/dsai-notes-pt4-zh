@@ -1,12 +1,13 @@
+
 # 用 8 年功力做成的 GPTs：看 AI 如何把《纳瓦尔宝典》拆成一套文献笔记
 
-> 来源：[https://docs.feishu.cn/docx/MIaLdvqyKon2D5xyQnLcWmGenRd](https://docs.feishu.cn/docx/MIaLdvqyKon2D5xyQnLcWmGenRd)
+> 来源：`https://docs.feishu.cn/docx/MIaLdvqyKon2D5xyQnLcWmGenRd`
 
 > 订阅了 ChatGPT Plus 的小伙伴，可以直接访问使用：
 
-> https://chat.openai.com/g/g-f9K5ogLcs-wen-xian-bi-ji-da-shi
+> `https://chat.openai.com/g/g-f9K5ogLcs-wen-xian-bi-ji-da-shi`
 
-# **拆书痛点：为什么在意文献笔记**
+## 拆书痛点：为什么在意文献笔记
 
 熟悉卢曼卡片笔记法的小伙伴们都知道，文献笔记的关键性。
 
@@ -30,7 +31,7 @@
 
 就豆哥手动拆书的体会，一下午能拆出十篇合格的文献笔记，就已经非常厉害了。这位学员已经非常了得！
 
-# **解决思路：半自动拆书**
+## 解决思路：半自动拆书
 
 把自己的阅读划线和想法内容，拆成承载知识单元的文献笔记，特别痛。
 
@@ -48,11 +49,11 @@
 
 ![](img/cf7237546bdb327af285e1d86d536cad.png)
 
-# 压箱底的私货 GPTs：文献笔记大师
+## 压箱底的私货 GPTs：文献笔记大师
 
 > 是 ChatGPT Plus 的小伙伴，可以直接访问使用：
 
-> https://chat.openai.com/g/g-f9K5ogLcs-wen-xian-bi-ji-da-shi
+> `https://chat.openai.com/g/g-f9K5ogLcs-wen-xian-bi-ji-da-shi`
 
 ![](img/660c532b6f9bd56ccee38ae29dd28654.png)
 
@@ -96,7 +97,7 @@
 
 这样算下来，一篇文献笔记大概需要 1 分钟的时间生成。10 篇的话，考虑到交互对话和思考时间，半个小时应该是搞得定的。
 
-# **结语**
+## 结语
 
 使用 AI 全面、独立地拆解文献笔记，是我一直以来最关注的拆书环节。
 

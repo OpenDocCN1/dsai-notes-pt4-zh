@@ -1,3 +1,4 @@
+
 # 3.4 生态 · 走进智谱
 
 > 来源：[https://ai.feishu.cn/docx/RIETdC2QToIJ0Ax9mG4crVZZn0V](https://ai.feishu.cn/docx/RIETdC2QToIJ0Ax9mG4crVZZn0V)
@@ -8,4 +9,4 @@
 
 这里详细记录了目前我们举办的活动：
 
-<https://zhipu-ai.feishu.cn/sync/I447dldoQsFFP6bcGUYcAaOVnQc>
+`https://zhipu-ai.feishu.cn/sync/I447dldoQsFFP6bcGUYcAaOVnQc`

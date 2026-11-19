@@ -1,20 +1,19 @@
+
 # 四、Midjourney 基础设置
 
 > 来源：[https://docs.feishu.cn/docx/FQkidNJ8xobY9Rx7oODcJc55n8d](https://docs.feishu.cn/docx/FQkidNJ8xobY9Rx7oODcJc55n8d)
 
 ## 打开设置
 
-你可以在 Midjourney 的服务器，或者 Midjourney Bot 聊天窗口，输入 /setting，然后按下回车：
+你可以在 Midjourney 的服务器，或者 Midjourney Bot 聊天窗口，输入 `/setting`，然后按下回车：
 
 ![](img/297439db698e47ad978c3c50b4693e89.png)
 
 接着你就能看到这样的 Bot 消息：
 
-
 ## 版本设置
 
 第一二行是版本切换，你可以根据自己的需要切换不同的版本，MJ Version 1-5 分别表示 Midjourney 的不同版本，切换后，输出的所有图，默认都会用该版本生成，各个版本区别请查阅 Midjourney 各版本差异。 2023 年 4 月 5 日，Midjourney 上线了其 Niji 5，所以版本设置截图里会有 Niji 4 和 Niji 5 Mode 按钮，请知悉：
-
 
 ## 图像质量设置
 
@@ -22,16 +21,13 @@
 
 基本上保持默认的就可以了，即图中的 Base quality：
 
-
 ## 风格设置
 
 第四行风格设置，风格设置简单理解，这个值越低会更符合 prompt 的描述，数值越高艺术性就会越强，但跟 prompt 关联性就会比较弱。详细的介绍可以查阅 Midjourney Prompt 常用参数 这一章。
 
-
 ## 隐私设置
 
 这个设置默认是 Public（公开），只有付费的 Pro 用户可以将其设置为 Stealth Mode（隐私），Basic 和 Standard 都没法设置为 Stealth，对 Midjourney 付费感兴趣的可以看看 订阅 Midjourney 会员 这一章。
-
 
 ## Remix 设置
 

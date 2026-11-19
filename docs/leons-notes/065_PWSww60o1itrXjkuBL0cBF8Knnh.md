@@ -1,3 +1,4 @@
+
 # 240121 - 0115｜扎克伯格宣战 AGI，Llama 3 投入近百亿；Stability AI 发布 Stable Code 3B 模型，没有 GPU 也能本地运行；机器人领域首个开源视觉大模型；微软 TaskWeaver 开源框架，打造顶级 Agent 解决方案；微软发布 Copilot Pro：可自定义 GPT、访问 GPT-4 Turbo 等；智谱 AI 发布 GLM-4，配备多模态、长文本和智能体；谷歌 AI 通过图灵测试，大模型医生来了？; Rokid 拿下近五亿元融资；RWKV 元始智能已完成种子轮融资
 
 > 来源：[https://leonzhang.feishu.cn/docx/D0s8dxOwwobS48xqORFc7JZjnZc](https://leonzhang.feishu.cn/docx/D0s8dxOwwobS48xqORFc7JZjnZc)
@@ -20,13 +21,13 @@ Meta 首席执行官扎克伯格为通用人工智能（AGI）目标大幅重组
 
 > https://mp.weixin.qq.com/s/K8eiK6ygHfJpWUBiRyKFZw
 
-Stability AI 宣布推出 2024 年首个 AI 模型 Stable Code 3B，专注于代码补全任务。该模型具有 30 亿参数，性能优越，可在笔记本电脑上本地运行。相比 CodeLLaMA 7B，Stable Code 3B 大小减小 60%，但在编程任务上性能相媲美。基于 Stable LM 3B 训练，支持多语言，具备 Fil in the Middle（FIM）功能和扩展上下文大小。模型使用 256 个 NVIDIA A100 40GB GPU 进行训练，采用 gpt-neox 分支和 ZeRO-1。
+Stability AI 宣布推出 2024 年首个 AI 模型 Stable Code 3B，专注于代码补全任务。该模型具有 30 亿参数，性能优越，可在笔记本电脑上本地运行。相比 CodeLLaMA 7B，Stable Code 3B 大小减小 60%，但在编程任务上性能相媲美。基于 Stable LM 3B 训练，支持多语言，具备 Fil in the Middle（FIM）功能和扩展上下文大小。模型使用 256 个 NVIDIA A100 40GB GPU 进行训练，采用 `gpt-neox` 分支和 `ZeRO-1`。
 
 ### [机器人领域首个开源视觉-语言操作大模型，RoboFla](https://www.sohu.com/a/752424819_129720?scm=1102.xchannel:676:110036.0.1.0~9010.8000.0.5.1829&spm=smpc.channel_218.block7_109_O66XV8_2_fd.5.1705474800010DA5oXoZ_499)mingo 激发开源 VLMs 更大潜能
 
 > https://www.sohu.com/a/752424819_129720?scm=1102.xchannel:676:110036.0.1.0~9010.8000.0.5.1829&spm=smpc.channel_218.block7_109_O66XV8_2_fd.5.1705474800010DA5oXoZ_499
 
-ByteDance Research 基于开源多模态语言视觉大模型 OpenFlaming。 开发的 RoboFlaming。 机器人操作模型。该模型通过简单微调，将视觉语言基础模型迁移到机器人领域，在机器人操作任务上取得了 SOTA 性能。实验结果表明，RoboFlaming。 仅利用 1%带语言标注的数据即可完成多任务学习，并在 CALVIN 数据集上展现出强大的模仿、视觉泛化和语言泛化能力。模型的设计包括 vision encoder、feature fusion decoder 和 policy head 等模块，通过预训练和微调实现机器人每一步的相对动作生成。
+ByteDance Research 基于开源多模态语言视觉大模型 OpenFlaming。开发的 RoboFlaming。机器人操作模型。该模型通过简单微调，将视觉语言基础模型迁移到机器人领域，在机器人操作任务上取得了 SOTA 性能。实验结果表明，RoboFlaming。仅利用 1%带语言标注的数据即可完成多任务学习，并在 CALVIN 数据集上展现出强大的模仿、视觉泛化和语言泛化能力。模型的设计包括 vision encoder、feature fusion decoder 和 policy head 等模块，通过预训练和微调实现机器人每一步的相对动作生成。
 
 ### 微软 TaskWeaver 开源框架：携手数据分析与行业定制，打造顶级 Agent 解决方案
 
@@ -78,9 +79,7 @@ Plaiday Al 是一款强大的 AI 视频生成工具，根据文本提示制作�
 
 > https://36kr.com/p/2609979307079174
 
-号称 AR“四小龙”之一的 Rokid 最近完成 C+轮融资，融资规模近 5 亿元，由合肥市政府牵头。Rokid 致力于工业领域，推出防爆 AR 智能头盔和 AR 眼镜，以提高工作效率和安全性。公司还进入消费级空间计算领域，推出 Rokid AR Studio。尽管面临竞争和技术挑战，Rokid 在工业领域取得初步成功，但仍需解決内容生态和技术成熟度方面的
-
-困难。
+号称 AR“四小龙”之一的 Rokid 最近完成 C+轮融资，融资规模近 5 亿元，由合肥市政府牵头。Rokid 致力于工业领域，推出防爆 AR 智能头盔和 AR 眼镜，以提高工作效率和安全性。公司还进入消费级空间计算领域，推出 Rokid AR Studio。尽管面临竞争和技术挑战，Rokid 在工业领域取得初步成功，但仍需解決内容生态和技术成熟度方面的困难。
 
 ### 独家｜非 Transformer 开源大模型 RWKV 元始智能已完成种子轮融资
 

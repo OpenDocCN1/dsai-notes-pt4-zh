@@ -1,22 +1,21 @@
+
 # 虚拟信用卡FOMEPay开通GPT-4
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Gcmpdxw3XoFjs0xL48HcYLBznhf](https://xuqiwei1986.feishu.cn/docx/Gcmpdxw3XoFjs0xL48HcYLBznhf)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/Gcmpdxw3XoFjs0xL48HcYLBznhf`
 
-# 第一步：复制链接到google浏览器
+## 第一步：复制链接到google浏览器
 
-[h](https://gpt.fomepay.com/#/pages/login/index?d=373039)ttps://gpt.fomepay.com/#/pages/login/index?d=373039
+`https://gpt.fomepay.com/#/pages/login/index?d=373039`
 
 FOMEPay 目前支持国内手机，所以，我们用自己的手机号注册就行。（如下图）
 
 ![](img/e0f6eef50608f4b642a805fc5fae3d7d.png)
 
-# 第二步：进入首页，点击第一张卡
+## 第二步：进入首页，点击第一张卡
 
-|  |
-| --- |
-| ![](img/e493556b422c621d1afa0ff517d6687a.png) |
-|  |
-| ![](img/721f29dbec3fe44b7ad2529f1b024f6f.png) |
+![](img/e493556b422c621d1afa0ff517d6687a.png)
+
+![](img/721f29dbec3fe44b7ad2529f1b024f6f.png)
 
 ### 1、开卡
 
@@ -25,7 +24,6 @@ FOMEPay 目前支持国内手机，所以，我们用自己的手机号注册就
 （这里要注意的是，要在“美元虚拟卡”页面申请卡，不要右滑到香港虚拟卡了，不然后续可能充不上）
 
 接着你会进入到充值和填写基础信息页面（如下图）
-
 
 ### 2、确定金额
 
@@ -37,17 +35,15 @@ Plus 帐号每次充值需要20刀，但保险起见可以尽量多充1～2刀�
 
 ### 3、填写资料
 
-**或用自己名字的拼音**
+或用自己名字的拼音
 
-**或**持卡人姓名随便填就可以，优先用英文名字。如果实在想不出来，给大家一个随机生成英文名的入口
-
-在线英文名随机生成器 - UU在线工具uutool.cn/english-name/
+或持卡人姓名随便填就可以，优先用英文名字。如果实在想不出来，给大家一个随机生成英文名的入口：在线英文名随机生成器 - UU在线工具 `uutool.cn/english-name/`
 
 ![](img/534b388243b3b4cdf918eba22ba3dce4.png)
 
 ![](img/9472563a4fc1f1bbef3a99757d758ce2.png)
 
-4、充值
+### 4、充值
 
 点击“确认开卡”，会弹出一个付款二维码。
 
@@ -55,7 +51,7 @@ Plus 帐号每次充值需要20刀，但保险起见可以尽量多充1～2刀�
 
 ![](img/3aa4515ec120ab8275f8bdf2b860afa1.png)
 
-# 第三步：设置密码
+## 第三步：设置密码
 
 充值成功后，回到首页。
 
@@ -79,7 +75,7 @@ Alaska（阿拉斯加）Oregon（俄勒冈）Delaware（特拉华）Montana（�
 
 如果FOMEPay给你的地址不在免税州，点进首页的“账单地址”就可以直接修改。
 
-# 第四步：升级 Plus
+## 第四步：升级 Plus
 
 完成了上面三步，FOMEPay 这边的操作，就全部完成了。
 
@@ -107,10 +103,8 @@ Alaska（阿拉斯加）Oregon（俄勒冈）Delaware（特拉华）Montana（�
 
 嗯，就这些吧，有需要的小伙伴赶紧试试去。
 
-# 可以在“我的”先找【客服咨询】
+## 可以在“我的”先找【客服咨询】
 
-| ![](img/88d30ce8787591054a589ef6ac10f994.png) |
-| --- |
-| ![](img/ee630fb70afe0058dec0450595b39362.png) |
-|  |
-|  |
+![](img/88d30ce8787591054a589ef6ac10f994.png)
+
+![](img/ee630fb70afe0058dec0450595b39362.png)

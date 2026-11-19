@@ -1,26 +1,23 @@
+
 # 【非公开】 NanoBanana使用手册- AI先生
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/OUARd4yNGonoK4xvGnZc6MNmn4e](https://xuqiwei1986.feishu.cn/docx/OUARd4yNGonoK4xvGnZc6MNmn4e)
 
-# 🍌推荐网站
+## 🍌推荐网站
 
 官网：https://gemini.google.com/app
 
 NanoBanana中文站：
-
 https://nanobanana-ai.cn/
 
 用法手册网站：
-
 [https://youmind.com/zh-CN/nan](https://youmind.com/zh-CN/nano-banana-pro-prompts)o-banana-pro-prompts
-
 [https://www.aiwind.org/?ut](https://www.aiwind.org/?utm_source=web-note.cn)m_source=web-note.cn
 
 反推提示词：
-
 https://imagetoprompt.org/zhni
 
-# 1️⃣第一层：基础用法
+## 1️⃣第一层：基础用法
 
 | 类型 | 提示词 | 附件 | 即梦对比 | 生成效果 |
 | --- | --- | --- | --- | --- |
@@ -30,7 +27,7 @@ https://imagetoprompt.org/zhni
 | 证件照 | 截取图片人像头部，帮我做成2寸证件照，要求: | ![](img/c357f91905d11b7464aff1bfd1e82ef8.png) | ![](img/08dbaa379cc69e8257dbfee69a0f39b3.png) | ![](img/6b8c4b0563818340dfd0f16c6b0b3790.png) |
 | 婚纱照 | 超精细、逼真的美丽女人肖像，高级时装社论，深白色 V 领蕾丝亮片晚礼服，优雅的低发髻，柔和的工作室灯光，浅灰色背景，戏剧性的光影，超现实主义，8K | ![](img/59152346f466ba540aed517ad538d502.png) | ![](img/644f2392e559c151981ad73e2d3e45cc.png) | ![](img/5f3360d588432f321446c9f9c27d70d1.png) |
 
-# 2️⃣第二层：高阶用法-复制
+## 2️⃣第二层：高阶用法-复制
 
 | 类型 | 提示词 | 附件 | 参考图 | 生成效果 |
 | --- | --- | --- | --- | --- |
@@ -42,7 +39,7 @@ https://imagetoprompt.org/zhni
 |  | 帮我根据下面这个文章做一套普通人都能理解的PPT，主题是：2026年春节档电影分析。PPT需要12页，先写1个PPT大纲，规划出每一页的PPT的内容。然后将每一页的PPT内容分别扔给Nana Banana pro生成对应页面的PPT，需要确保风格一致。PPT的具体风格是国漫卡通风。文字和图像都由 Nano BananaPro 生成，另外不要将PPT 变成一整张图，一页一张生成。 |  |  |  |
 |  |  |  |  |  |
 
-# 3️⃣第三层：终极用法+其他软件
+## 3️⃣第三层：终极用法+其他软件
 
 | 类型 | 提示词 | 附件 | 备注 | 生成效果 |
 | --- | --- | --- | --- | --- |

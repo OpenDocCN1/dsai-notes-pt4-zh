@@ -1,16 +1,17 @@
-# **四、可视化分析与呈现 (Visual Anal**ysis & Presentation)
 
-> 来源：[https://my.feishu.cn/docx/Fi3ed4lVYoJ7WCxzacCcYsHpng4](https://my.feishu.cn/docx/Fi3ed4lVYoJ7WCxzacCcYsHpng4)
+# 四、可视化分析与呈现 (Visual Analysis & Presentation)
 
-这类 Prompt 有独特功能，能将分析过程或结果以图表形式呈现，非常直观。
+> 来源：`https://my.feishu.cn/docx/Fi3ed4lVYoJ7WCxzacCcYsHpng4`
+
+这类 `Prompt` 有独特功能，能将分析过程或结果以图表形式呈现，非常直观。
 
 ## 菲利普·科特勒5A营销模型分析器
 
-> **功能：根据用户描述的任意产品，进行菲利普·科特勒5A营销模型**策略分析，并能以SVG卡片形式输出结果。
+> 功能：根据用户描述的任意产品，进行菲利普·科特勒5A营销模型策略分析，并能以`SVG`卡片形式输出结果。
 
 > 测试效果及使用指南，看这里(･ω･)👇
 
-> [一个Prompt一键生成「5A营](https://mp.weixin.qq.com/s/uCKRLcHfS4js-Kb-9KKtOw)销策略」，AI做可视化市场分析就是这么6
+> [一个`Prompt`一键生成「5A营销策略」](https://mp.weixin.qq.com/s/uCKRLcHfS4js-Kb-9KKtOw)，AI做可视化市场分析就是这么6
 
 ```
 ;; 作者: 文森策
@@ -117,7 +118,7 @@
 
 ## “三层洞察法” (Lisp 结构形式)
 
-> 运用“哦-啊-哇”三层洞察法分析产品或服务，并创建信息丰富的可视化SVG卡片。
+> 运用“哦-啊-哇”三层洞察法分析产品或服务，并创建信息丰富的可视化`SVG`卡片。
 
 > 更多资料详见：[「三层洞察法」洞察小灵通](https://dye87dshnj.feishu.cn/wiki/KvlrwrcDRiRRHYkR80pczaYsn8W?from=from_copylink)
 
@@ -235,7 +236,7 @@
 
 现阶段热衷于AI辅助内容营销探索，欢迎交流分享AI辅助创作思考/技法/实用工作流，一起用AI打开更多创作可能。
 
-⭐ **提交反馈与交流合作请直接戳我**👇
+⭐ 提交反馈与交流合作请直接戳我👇
 
 ![](img/2ffab8910300f4f9ed034b04c7e25f0b.png)
 

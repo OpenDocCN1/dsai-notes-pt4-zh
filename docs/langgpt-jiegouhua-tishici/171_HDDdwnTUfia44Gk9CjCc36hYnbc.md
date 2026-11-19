@@ -1,155 +1,156 @@
+
 # 高德天气插件的YAML描述
 
 > 来源：[https://langgptai.feishu.cn/docx/EfgMdUr2yoLSjgx8MBccEBDxnEb](https://langgptai.feishu.cn/docx/EfgMdUr2yoLSjgx8MBccEBDxnEb)
 
 腾讯元器高德天气YAML的完整描述：
 
-```
-openapi: &quot;3.0.0&quot;
+```yaml
+openapi: "3.0.0"
 info:
-  title: &quot;高德天气API&quot;
-  version: &quot;1.0.0&quot;
-  description: &quot;根据用户输入的adcode，查询目标区域当前/未来的天气情况，数据来源是中国气象局。&quot;
+  title: "高德天气API"
+  version: "1.0.0"
+  description: "根据用户输入的adcode，查询目标区域当前/未来的天气情况，数据来源是中国气象局。"
 servers:
-  - url: &quot;https://restapi.amap.com/v3/weather&quot;
-    description: &quot;高德天气API服务地址&quot;
+  - url: "https://restapi.amap.com/v3/weather"
+    description: "高德天气API服务地址"
 paths:
-  &quot;/weatherInfo&quot;:
+  "/weatherInfo":
     get:
-      summary: &quot;天气查询&quot;
-      description: &quot;根据城市编码查询天气信息&quot;
-      operationId: &quot;getWeatherInfo&quot;
+      summary: "天气查询"
+      description: "根据城市编码查询天气信息"
+      operationId: "getWeatherInfo"
       parameters:
-        - name: &quot;city&quot;
-          in: &quot;query&quot;
-          description: &quot;城市编码&quot;
+        - name: "city"
+          in: "query"
+          description: "城市编码"
           required: true
           schema:
-            type: &quot;string&quot;
-        - name: &quot;extensions&quot;
-          in: &quot;query&quot;
-          description: &quot;气象类型&quot;
+            type: "string"
+        - name: "extensions"
+          in: "query"
+          description: "气象类型"
           required: false
           schema:
-            type: &quot;string&quot;
-            enum: [&quot;base&quot;, &quot;all&quot;]
-        - name: &quot;output&quot;
-          in: &quot;query&quot;
-          description: &quot;返回格式&quot;
+            type: "string"
+            enum: ["base", "all"]
+        - name: "output"
+          in: "query"
+          description: "返回格式"
           required: false
           schema:
-            type: &quot;string&quot;
-            default: &quot;JSON&quot;
-            enum: [&quot;JSON&quot;, &quot;XML&quot;]
+            type: "string"
+            default: "JSON"
+            enum: ["JSON", "XML"]
       responses:
-        &quot;200&quot;:
-          description: &quot;成功的响应&quot;
+        "200":
+          description: "成功的响应"
           content:
             application/json:
               schema:
-                type: &quot;object&quot;
+                type: "object"
                 properties:
                   status:
-                    type: &quot;integer&quot;
-                    description: &quot;返回状态&quot;
+                    type: "integer"
+                    description: "返回状态"
                     enum: [0, 1]
                   count:
-                    type: &quot;integer&quot;
-                    description: &quot;返回结果总数目&quot;
+                    type: "integer"
+                    description: "返回结果总数目"
                   info:
-                    type: &quot;string&quot;
-                    description: &quot;返回的状态信息&quot;
+                    type: "string"
+                    description: "返回的状态信息"
                   infocode:
-                    type: &quot;string&quot;
-                    description: &quot;返回状态说明, 10000代表正确&quot;
+                    type: "string"
+                    description: "返回状态说明, 10000代表正确"
                   lives:
-                    type: &quot;array&quot;
-                    description: &quot;实况天气数据信息&quot;
+                    type: "array"
+                    description: "实况天气数据信息"
                     items:
-                      type: &quot;object&quot;
+                      type: "object"
                       properties:
                         province:
-                          type: &quot;string&quot;
-                          description: &quot;省份名&quot;
+                          type: "string"
+                          description: "省份名"
                         city:
-                          type: &quot;string&quot;
-                          description: &quot;城市名&quot;
+                          type: "string"
+                          description: "城市名"
                         adcode:
-                          type: &quot;string&quot;
-                          description: &quot;区域编码&quot;
+                          type: "string"
+                          description: "区域编码"
                         weather:
-                          type: &quot;string&quot;
-                          description: &quot;天气现象（汉字描述）&quot;
+                          type: "string"
+                          description: "天气现象（汉字描述）"
                         temperature:
-                          type: &quot;number&quot;
-                          description: &quot;实时气温，单位：摄氏度&quot;
+                          type: "number"
+                          description: "实时气温，单位：摄氏度"
                         winddirection:
-                          type: &quot;string&quot;
-                          description: &quot;风向描述&quot;
+                          type: "string"
+                          description: "风向描述"
                         windpower:
-                          type: &quot;integer&quot;
-                          description: &quot;风力级别，单位：级&quot;
+                          type: "integer"
+                          description: "风力级别，单位：级"
                         humidity:
-                          type: &quot;number&quot;
-                          description: &quot;空气湿度&quot;
+                          type: "number"
+                          description: "空气湿度"
                         reporttime:
-                          type: &quot;string&quot;
-                          description: &quot;数据发布的时间&quot;
+                          type: "string"
+                          description: "数据发布的时间"
                   forecast:
-                    type: &quot;object&quot;
+                    type: "object"
                     properties:
                       city:
-                        type: &quot;string&quot;
-                        description: &quot;城市名称&quot;
+                        type: "string"
+                        description: "城市名称"
                       adcode:
-                        type: &quot;string&quot;
-                        description: &quot;城市编码&quot;
+                        type: "string"
+                        description: "城市编码"
                       province:
-                        type: &quot;string&quot;
-                        description: &quot;省份名称&quot;
+                        type: "string"
+                        description: "省份名称"
                       reporttime:
-                        type: &quot;string&quot;
-                        description: &quot;预报发布时间&quot;
+                        type: "string"
+                        description: "预报发布时间"
                       casts:
-                        type: &quot;array&quot;
-                        description: &quot;预报数据list结构，元素cast,按顺序为当天、第二天、第三天的预报数据&quot;
+                        type: "array"
+                        description: "预报数据list结构，元素cast,按顺序为当天、第二天、第三天的预报数据"
                         items:
-                          type: &quot;object&quot;
+                          type: "object"
                           properties:
                             date:
-                              type: &quot;string&quot;
-                              description: &quot;日期&quot;
+                              type: "string"
+                              description: "日期"
                             week:
-                              type: &quot;string&quot;
-                              description: &quot;星期几&quot;
+                              type: "string"
+                              description: "星期几"
                             dayweather:
-                              type: &quot;string&quot;
-                              description: &quot;白天天气现象&quot;
+                              type: "string"
+                              description: "白天天气现象"
                             nightweather:
-                              type: &quot;string&quot;
-                              description: &quot;晚上天气现象&quot;
+                              type: "string"
+                              description: "晚上天气现象"
                             daytemp:
-                              type: &quot;number&quot;
-                              description: &quot;白天温度&quot;
+                              type: "number"
+                              description: "白天温度"
                             nighttemp:
-                              type: &quot;number&quot;
-                              description: &quot;晚上温度&quot;
+                              type: "number"
+                              description: "晚上温度"
                             daywind:
-                              type: &quot;string&quot;
-                              description: &quot;白天风向&quot;
+                              type: "string"
+                              description: "白天风向"
                             nightwind:
-                              type: &quot;string&quot;
-                              description: &quot;晚上风向&quot;
+                              type: "string"
+                              description: "晚上风向"
                             daypower:
-                              type: &quot;integer&quot;
-                              description: &quot;白天风力&quot;
+                              type: "integer"
+                              description: "白天风力"
                             nightpower:
-                              type: &quot;integer&quot;
-                              description: &quot;晚上风力&quot;
-        &quot;400&quot;:
-          description: &quot;错误的请求&quot;
-        &quot;401&quot;:
-          description: &quot;未授权&quot;
-        &quot;500&quot;:
-          description: &quot;服务器内部错误&quot;
+                              type: "integer"
+                              description: "晚上风力"
+        "400":
+          description: "错误的请求"
+        "401":
+          description: "未授权"
+        "500":
+          description: "服务器内部错误"
 ```

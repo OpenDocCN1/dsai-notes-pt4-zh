@@ -1,10 +1,10 @@
-# 11.04-斯坦福7B智能体全面超越GPT-4o，推理流登顶HF
-
-> 来源：[https://agijuejin.feishu.cn/docx/K828db5pYoVPkUxC1gXcdi7Cndd](https://agijuejin.feishu.cn/docx/K828db5pYoVPkUxC1gXcdi7Cndd)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 11 月 04 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/K828db5pYoVPkUxC1gXcdi7Cndd](https://agijuejin.feishu.cn/docx/K828db5pYoVPkUxC1gXcdi7Cndd)
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
+
+## 11.04-斯坦福7B智能体全面超越GPT-4o，推理流登顶HF
 
 ## ⭐ 今日热点
 

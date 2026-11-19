@@ -1,3 +1,4 @@
+
 # Sam Altman: GPT-4o
 
 > 来源：[https://leonzhang.feishu.cn/docx/DIntdViAFosHxxxY2iHclFj0nub](https://leonzhang.feishu.cn/docx/DIntdViAFosHxxxY2iHclFj0nub)

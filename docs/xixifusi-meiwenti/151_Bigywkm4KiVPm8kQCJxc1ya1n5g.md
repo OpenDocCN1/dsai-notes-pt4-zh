@@ -1,10 +1,11 @@
+
 # 三行代码
 
 > 来源：[https://docs.feishu.cn/docx/RksrdOsszowRUsxqxYrcvwwxnFc](https://docs.feishu.cn/docx/RksrdOsszowRUsxqxYrcvwwxnFc)
 
 > [来源](https://m.okjike.com/originalPosts/64dafc6cd8f8e55bd911e816?s=eyJ1IjoiNjI1ZmQzNzdmNzU0NTMwMDEwYzc2MjcwIiwiZCI6Mn0%3D)
 
-#今日思考：三行代码。
+## 今日思考：三行代码。
 
 在梅拉妮·米歇尔的《复杂》中，有一段有趣的对话。
 

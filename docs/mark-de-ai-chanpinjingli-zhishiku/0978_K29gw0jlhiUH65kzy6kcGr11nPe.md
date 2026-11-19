@@ -1,3 +1,4 @@
+
 # Openclaw 如何记住一切 / 解析🦞的记忆系统
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/PjjOdQ9gkoserMxZ4FhcP7j9n7b](https://qqs7y1hozd1.feishu.cn/docx/PjjOdQ9gkoserMxZ4FhcP7j9n7b)
@@ -37,11 +38,9 @@ Clawdbot采用了一种截然不同的方法：它不是基于云端、由公司
 
 上下文的特性：
 
-+   • **临时的**——只存在于本次请求期间
-
-+   • **有限的**——受限于模型的上下文窗口（例如20万token）
-
-+   • **昂贵的**——每个token都计入API成本和速度
+- **临时的**——只存在于本次请求期间
+- **有限的**——受限于模型的上下文窗口（例如20万token）
+- **昂贵的**——每个token都计入API成本和速度
 
 **记忆**是存储在磁盘上的内容：
 
@@ -51,31 +50,28 @@ Clawdbot采用了一种截然不同的方法：它不是基于云端、由公司
 
 记忆的特性：
 
-+   • **持久的**——在重启、日复一日、月复一月后依然存在
-
-+   • **无限的**——可以无限增长
-
-+   • **低成本的**——存储不产生API费用
-
-+   • **可搜索的**——建立索引以支持语义检索
+- **持久的**——在重启、日复一日、月复一月后依然存在
+- **无限的**——可以无限增长
+- **低成本的**——存储不产生API费用
+- **可搜索的**——建立索引以支持语义检索
 
 ## 记忆工具
 
 Agent通过两个专用工具来访问记忆：
 
-### memory_search
+### `memory_search`
 
 **用途**：在所有文件中查找相关的记忆
 
 ```
 {
-  &quot;name&quot;:&quot;memory_search&quot;,
-&quot;description&quot;:&quot;强制性回忆步骤：在回答关于之前工作、决策、日期、人员、偏好或待办事项的问题之前，对MEMORY.md和memory/*.md进行语义搜索&quot;,
-&quot;parameters&quot;:{
-    &quot;query&quot;:&quot;我们对API做了什么决定？&quot;,
-    &quot;maxResults&quot;:6,
-    &quot;minScore&quot;:0.35
-}
+  "name":"memory_search",
+  "description":"强制性回忆步骤：在回答关于之前工作、决策、日期、人员、偏好或待办事项的问题之前，对MEMORY.md和memory/*.md进行语义搜索",
+  "parameters":{
+    "query":"我们对API做了什么决定？",
+    "maxResults":6,
+    "minScore":0.35
+  }
 }
 ```
 
@@ -83,34 +79,34 @@ Agent通过两个专用工具来访问记忆：
 
 ```
 {
-  &quot;results&quot;:[
+  "results":[
     {
-      &quot;path&quot;:&quot;memory/2026-01-20.md&quot;,
-      &quot;startLine&quot;:45,
-      &quot;endLine&quot;:52,
-      &quot;score&quot;:0.87,
-      &quot;snippet&quot;:&quot;## API 讨论\n决定为了简单起见使用REST而不是GraphQL...&quot;,
-      &quot;source&quot;:&quot;memory&quot;
+      "path":"memory/2026-01-20.md",
+      "startLine":45,
+      "endLine":52,
+      "score":0.87,
+      "snippet":"## API 讨论\n决定为了简单起见使用REST而不是GraphQL...",
+      "source":"memory"
     }
-],
-&quot;provider&quot;:&quot;openai&quot;,
-&quot;model&quot;:&quot;text-embedding-3-small&quot;
+  ],
+  "provider":"openai",
+  "model":"text-embedding-3-small"
 }
 ```
 
-### memory_get
+### `memory_get`
 
 **用途**：在找到内容后读取具体内容
 
 ```
 {
-  &quot;name&quot;:&quot;memory_get&quot;,
-&quot;description&quot;:&quot;在使用memory_search后，从记忆文件中读取特定行&quot;,
-&quot;parameters&quot;:{
-    &quot;path&quot;:&quot;memory/2026-01-20.md&quot;,
-    &quot;from&quot;:45,
-    &quot;lines&quot;:15
-}
+  "name":"memory_get",
+  "description":"在使用memory_search后，从记忆文件中读取特定行",
+  "parameters":{
+    "path":"memory/2026-01-20.md",
+    "from":45,
+    "lines":15
+  }
 }
 ```
 
@@ -118,16 +114,16 @@ Agent通过两个专用工具来访问记忆：
 
 ```
 {
-  &quot;path&quot;: &quot;memory/2026-01-20.md&quot;,
-  &quot;text&quot;: &quot;## API 讨论\n\n与团队讨论API架构。\n\n### 决策\n我们选择REST而非GraphQL，原因如下：\n1. 实现更简单\n2. 更好的缓存支持\n3. 团队更熟悉\n\n### 端点\n- GET /users\n- POST /auth/login\n- GET /projects/:id&quot;
+  "path": "memory/2026-01-20.md",
+  "text": "## API 讨论\n\n与团队讨论API架构。\n\n### 决策\n我们选择REST而非GraphQL，原因如下：\n1. 实现更简单\n2. 更好的缓存支持\n3. 团队更熟悉\n\n### 端点\n- GET /users\n- POST /auth/login\n- GET /projects/:id"
 }
 ```
 
 ### 写入记忆
 
-并没有专门的memory_write工具。Agent使用标准的写入和编辑工具来写入记忆——这些工具它本来就在用于处理任何文件。由于记忆就是普通的Markdown，你也可以手动编辑这些文件（它们会被自动重新索引）。
+并没有专门的`memory_write`工具。Agent使用标准的写入和编辑工具来写入记忆——这些工具它本来就在用于处理任何文件。由于记忆就是普通的Markdown，你也可以手动编辑这些文件（它们会被自动重新索引）。
 
-写入位置的决策是通过AGENTS.md中的提示来驱动的：
+写入位置的决策是通过`AGENTS.md`中的提示来驱动的：
 
 在预压缩刷新和会话结束时，也会自动进行写入（后续章节会介绍）。
 
@@ -137,7 +133,7 @@ Clawdbot的记忆系统建立在"记忆就是Agent工作空间中的纯Markdown"
 
 ### 双层记忆系统
 
-记忆位于Agent的工作空间中（默认：~/clawd/）：
+记忆位于Agent的工作空间中（默认：`~/clawd/`）：
 
 ```
 ~/clawd/
@@ -149,14 +145,14 @@ Clawdbot的记忆系统建立在"记忆就是Agent工作空间中的纯Markdown"
     └── ...
 ```
 
-第一层：每日日志（memory/YYYY-MM-DD.md）
+### 第一层：每日日志（`memory/YYYY-MM-DD.md`）
 
 这些是仅追加的每日笔记，Agent会在一天中随时写入。当Agent想要记住某事，或被明确告知要记住某事时，就会写入这里。
 
 ```
-**# 2026-01-26****
+# 2026-01-26
 
-## 10:30 AM -** API 讨论
+## 10:30 AM - API 讨论
 与用户讨论REST vs GraphQL。决策：为了简单使用REST。
 关键端点：/users、/auth、/projects。
 
@@ -167,17 +163,17 @@ Clawdbot的记忆系统建立在"记忆就是Agent工作空间中的纯Markdown"
 用户提到他们喜欢TypeScript胜过JavaScript。
 ```
 
-第二层：长期记忆（MEMORY.md）
+### 第二层：长期记忆（`MEMORY.md`）
 
 这是经过策划的、持久的知识。当发生重大事件、想法、决策、观点和学到的教训时，Agent会写入这里。
 
 ```
-**# 长期记忆****
+# 长期记忆
 
-## 用户**偏好
-- 喜欢Type**Script胜**过Ja**vaScript**
+## 用户偏好
+- 喜欢TypeScript胜过JavaScript
 - 喜欢简洁的解释
-- 正在做&quot;Acme Dashboard&quot;项目
+- 正在做"Acme Dashboard"项目
 
 ## 重要决策
 - 2026-01-15：选择PostgreSQL作为数据库
@@ -191,7 +187,7 @@ Clawdbot的记忆系统建立在"记忆就是Agent工作空间中的纯Markdown"
 
 ### Agent如何知道要读取记忆
 
-AGENTS.md文件（会自动加载）包含以下指令：
+`AGENTS.md`文件（会自动加载）包含以下指令：
 
 ```
 ## 每次会话
@@ -248,29 +244,29 @@ AGENTS.md文件（会自动加载）包含以下指令：
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  4. 嵌入                                                    │
-│     每个块 -&gt; 嵌入提供商 -&gt; 向量                            │
+│     每个块 -> 嵌入提供商 -> 向量                            │
 │                                                             │
-│     &quot;讨论REST vs GraphQL&quot; -&gt;                                │
-│         OpenAI/Gemini/Local -&gt;                              │
+│     "讨论REST vs GraphQL" ->                                │
+│         OpenAI/Gemini/Local ->                              │
 │         [0.12, -0.34, 0.56, ...]  (1536 维)                 │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  5. 存储                                                    │
-│     ~/.clawdbot/memory/&lt;agentId&gt;.sqlite                     │
+│     ~/.clawdbot/memory/<agentId>.sqlite                     │
 │                                                             │
 │     表：                                                    │
 │     - chunks (id, path, start_line, end_line, text, hash)   │
-│     - chunks_vec (id, embedding)      -&gt; sqlite-vec         │
-│     - chunks_fts (text)               -&gt; FTS5 全文搜索      │
-│     - embedding_cache (hash, vector)  -&gt; 避免重复嵌入       │
+│     - chunks_vec (id, embedding)      -> sqlite-vec         │
+│     - chunks_fts (text)               -> FTS5 全文搜索      │
+│     - embedding_cache (hash, vector)  -> 避免重复嵌入       │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-> **sqlite-vec** 是一个SQLite扩展，它直接在SQLite中实现向量相似度搜索，无需外部向量数据库。
+> `sqlite-vec` 是一个SQLite扩展，它直接在SQLite中实现向量相似度搜索，无需外部向量数据库。
 
-> **FTS5** 是SQLite内置的全文搜索引擎，为BM25关键词匹配提供支持。两者结合，使Clawdbot能够从一个轻量级数据库文件中运行混合搜索（语义 + 关键词）。
+> `FTS5` 是SQLite内置的全文搜索引擎，为BM25关键词匹配提供支持。两者结合，使Clawdbot能够从一个轻量级数据库文件中运行混合搜索（语义 + 关键词）。
 
 ## 记忆如何被搜索
 
@@ -282,9 +278,9 @@ AGENTS.md文件（会自动加载）包含以下指令：
 最终得分 = (0.7 * 向量得分) + (0.3 * 文本得分)
 ```
 
-为什么是70/30？语义相似性是记忆回忆的主要信号，但BM25关键词匹配能捕捉向量可能遗漏的确切术语（名称、ID、日期）。低于minScore阈值（默认0.35）的结果会被过滤掉。所有这些值都是可配置的。
+为什么是70/30？语义相似性是记忆回忆的主要信号，但BM25关键词匹配能捕捉向量可能遗漏的确切术语（名称、ID、日期）。低于`minScore`阈值（默认0.35）的结果会被过滤掉。所有这些值都是可配置的。
 
-这确保无论你是在搜索概念（"那个数据库的事情"）还是具体内容（"POSTGRES_URL"），都能获得良好的结果。
+这确保无论你是在搜索概念（"那个数据库的事情"）还是具体内容（`POSTGRES_URL`），都能获得良好的结果。
 
 ## 多Agent记忆
 
@@ -292,27 +288,31 @@ Clawdbot支持多个Agent，每个Agent都有完全独立的记忆：
 
 ```
 ~/.clawdbot/memory/              # 状态目录（索引）
-├── main.sqlite                  # &quot;main&quot; Agent的向量索引
-└── work.sqlite                  # &quot;work&quot; Agent的向量索引
+├── main.sqlite                  # "main" Agent的向量索引
+└── work.sqlite                  # "work" Agent的向量索引
 
-~/clawd/                         # &quot;main&quot; Agent工作空间（源文件）
+~/clawd/                         # "main" Agent工作空间（源文件）
 ├── MEMORY.md
 └── memory/
     └── 2026-01-26.md
 
-~/clawd-work/                    # &quot;work&quot; Agent工作空间（源文件）
+~/clawd-work/                    # "work" Agent工作空间（源文件）
 ├── MEMORY.md
 └── memory/
     └── 2026-01-26.md
 ```
 
-Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（派生数据）位于状态目录中。每个Agent都有自己的工作空间和索引。记忆管理器通过agentId + workspaceDir来区分，因此不会自动发生跨Agent记忆搜索。
+
+
+# Clawdbot 记忆系统
+
+Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（派生数据）位于状态目录中。每个Agent都有自己的工作空间和索引。记忆管理器通过`agentId` + `workspaceDir`来区分，因此不会自动发生跨Agent记忆搜索。
 
 **Agent能读取彼此的记忆吗？** 默认不能。每个Agent只能看到自己的工作空间。但是，工作空间是一个软沙盒（默认工作目录），而不是硬边界。除非启用严格的沙盒机制，否则Agent理论上可以使用绝对路径访问另一个工作空间。
 
-这种隔离对于分离上下文很有用。一个用于WhatsApp的"个人"Agent和一个用于Slack()的"工作"Agent，各自拥有独立的记忆和个性。
+这种隔离对于分离上下文很有用。一个用于WhatsApp的"个人"Agent和一个用于`Slack()`的"工作"Agent，各自拥有独立的记忆和个性。
 
-### 压缩
+## 压缩
 
 每个AI模型都有上下文窗口限制。Claude有20万token，GPT-5.1有100万。长对话最终会触及这个上限。
 
@@ -323,14 +323,14 @@ Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（
 │  压缩前                                                     │
 │  上下文：180,000 / 200,000 token                            │
 │                                                             │
-│  [第1轮] 用户：&quot;我们建个API吧&quot;                              │
-│  [第2轮] Agent：&quot;好的！你需要什么端点？&quot;                    │
-│  [第3轮] 用户：&quot;用户和认证相关的&quot;                           │
+│  [第1轮] 用户："我们建个API吧"                              │
+│  [第2轮] Agent："好的！你需要什么端点？"                    │
+│  [第3轮] 用户："用户和认证相关的"                           │
 │  [第4轮] Agent：*创建了500行模式定义*                       │
-│  [第5轮] 用户：&quot;加上限流功能&quot;                               │
+│  [第5轮] 用户："加上限流功能"                               │
 │  [第6轮] Agent：*修改代码*                                  │
 │  ...（还有100多轮）...                                      │
-│  [第150轮] 用户：&quot;状态怎么样了？&quot;                           │
+│  [第150轮] 用户："状态怎么样了？"                           │
 │                                                             │
 │  ⚠️ 接近限制                                                │
 └─────────────────────────────────────────────────────────────┘
@@ -349,25 +349,24 @@ Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（
 │  压缩后                                                     │
 │  上下文：45,000 / 200,000 token                             │
 │                                                             │
-│  [摘要] &quot;构建了带/users、/auth端点的REST API。              │
+│  [摘要] "构建了带/users、/auth端点的REST API。              │
 │   实现了JWT认证、限流（100次/分钟）、PostgreSQL数据库。      │
 │   已部署到预发布环境v2.4.0。                                 │
-│   当前重点：生产环境部署准备。&quot;                              │
+│   当前重点：生产环境部署准备。"                              │
 │                                                             │
 │  [第141-150轮原样保留]                                      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 自动 vs 手动压缩
+## 自动 vs 手动压缩
 
 **自动**：当接近上下文限制时触发
 
-+   • 在详细模式下你会看到：🧹 自动压缩完成
+- 在详细模式下你会看到：🧹 自动压缩完成
+- 原始请求会用压缩后的上下文重试
 
-+   • 原始请求会用压缩后的上下文重试
-
-**手动**：使用 /compact 命令
+**手动**：使用 `/compact` 命令
 
 ```
 /compact 重点关注决策和未解决的问题
@@ -383,7 +382,7 @@ Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（
 ┌─────────────────────────────────────────────────────────────┐
 │  上下文接近限制                                             │
 │                                                             │
-│  ████████████████████████████░░░░░░░░  上下文的75%         │
+│  ███████████████████████████░░░░░░░░  上下文的75%         │
 │                              ↑                              │
 │                    超过软阈值                               │
 │                    (contextWindow - reserve - softThreshold)│
@@ -393,13 +392,13 @@ Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（
 ┌─────────────────────────────────────────────────────────────┐
 │  静默记忆刷新轮次                                           │
 │                                                             │
-│  系统：&quot;预压缩记忆刷新。现在存储持久的                      │
-│          记忆（使用 memory/YYYY-MM-DD.md）。                │
-│          如果没有要存储的，回复 NO_REPLY。&quot;                 │
+│  系统："预压缩记忆刷新。现在存储持久的                      │
+│          记忆（使用 `memory/YYYY-MM-DD.md`）。                │
+│          如果没有要存储的，回复 `NO_REPLY`。"                 │
 │                                                             │
 │  Agent：审查对话中的重要信息                                │
 │         将关键决策/事实写入记忆文件                         │
-│         -&gt; NO_REPLY（用户看不到任何内容）                   │
+│         -> NO_REPLY（用户看不到任何内容）                   │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -411,29 +410,29 @@ Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（
 └─────────────────────────────────────────────────────────────┘
 ```
 
-记忆刷新可以在clawdbot.yaml文件或clawdbot.json文件中配置。
+记忆刷新可以在`clawdbot.yaml`文件或`clawdbot.json`文件中配置。
 
 ```
 {
-  &quot;agents&quot;:{
-    &quot;defaults&quot;:{
-      &quot;compaction&quot;:{
-        &quot;reserveTokensFloor&quot;:20000,
-        &quot;memoryFlush&quot;:{
-          &quot;enabled&quot;:true,
-          &quot;softThresholdTokens&quot;:4000,
-          &quot;systemPrompt&quot;:&quot;会话接近压缩。现在存储持久的记忆。&quot;,
-          &quot;prompt&quot;:&quot;将持久的笔记写入 memory/YYYY-MM-DD.md；如果没有要存储的，回复 NO_REPLY。&quot;
+  "agents":{
+    "defaults":{
+      "compaction":{
+        "reserveTokensFloor":20000,
+        "memoryFlush":{
+          "enabled":true,
+          "softThresholdTokens":4000,
+          "systemPrompt":"会话接近压缩。现在存储持久的记忆。",
+          "prompt":"将持久的笔记写入 `memory/YYYY-MM-DD.md`；如果没有要存储的，回复 `NO_REPLY`。"
         }
       }
     }
-}
+  }
 }
 ```
 
 ## 剪枝
 
-工具结果可能非常庞大。单个exec命令可能输出5万个字符的日志。剪枝会修剪这些旧输出，而不重写历史。这是一个有损过程，旧输出无法恢复。
+工具结果可能非常庞大。单个`exec`命令可能输出5万个字符的日志。剪枝会修剪这些旧输出，而不重写历史。这是一个有损过程，旧输出无法恢复。
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -442,18 +441,18 @@ Markdown文件（事实来源）位于每个工作空间中，而SQLite索引（
 │  工具结果（exec）：[5万个字符的npm install输出]               │
 │  工具结果（read）：[大型配置文件，1万个字符]                  │
 │  工具结果（exec）：[构建日志，3万个字符]                      │
-│  用户：&quot;构建成功了吗？&quot;                                      │
+│  用户："构建成功了吗？"                                      │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼ （软修剪 + 硬清除）
 ┌─────────────────────────────────────────────────────────────┐
 │  剪枝后（发送给模型）                                       │
 │                                                             │
-│  工具结果（exec）：&quot;npm WARN deprecated...[已截断]           │
-│                       ...成功安装。&quot;                        │
-│  工具结果（read）：&quot;[旧工具结果内容已清除]&quot;                   │
+│  工具结果（exec）："npm WARN deprecated...[已截断]           │
+│                       ...成功安装。"                        │
+│  工具结果（read）："[旧工具结果内容已清除]"                   │
 │  工具结果（exec）：[保留 - 太新，不适合剪枝]                  │
-│  用户：&quot;构建成功了吗？&quot;                                      │
+│  用户："构建成功了吗？"                                      │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -469,22 +468,22 @@ Anthropic会对提示词前缀进行最多5分钟的缓存，以减少重复调�
 
 ```
 {
-  &quot;agent&quot;:{
-    &quot;contextPruning&quot;:{
-      &quot;mode&quot;:&quot;cache-ttl&quot;,
-      &quot;ttl&quot;:&quot;600&quot;,
-      &quot;keepLastAssistants&quot;:3,
-      &quot;softTrim&quot;:{
-        &quot;maxChars&quot;:4000,
-        &quot;headChars&quot;:1500,
-        &quot;tailChars&quot;:1500
+  "agent":{
+    "contextPruning":{
+      "mode":"cache-ttl",
+      "ttl":"600",
+      "keepLastAssistants":3,
+      "softTrim":{
+        "maxChars":4000,
+        "headChars":1500,
+        "tailChars":1500
       },
-      &quot;hardClear&quot;:{
-        &quot;enabled&quot;:true,
-        &quot;placeholder&quot;:&quot;[旧工具结果内容已清除]&quot;
+      "hardClear":{
+        "enabled":true,
+        "placeholder":"[旧工具结果内容已清除]"
       }
     }
-}
+  }
 }
 ```
 
@@ -494,7 +493,7 @@ Anthropic会对提示词前缀进行最多5分钟的缓存，以减少重复调�
 
 ### 会话记忆钩子
 
-当你运行 /new 开始一个新会话时，会话记忆钩子可以自动保存上下文：
+当你运行 `/new` 开始一个新会话时，会话记忆钩子可以自动保存上下文：
 
 ```
 /new
@@ -505,14 +504,14 @@ Anthropic会对提示词前缀进行最多5分钟的缓存，以减少重复调�
 │                                                             │
 │  1. 从结束会话中提取最后15条消息                            │
 │  2. 通过LLM生成描述性slug                                   │
-│  3. 保存到 ~/clawd/memory/2026-01-26-api-design.md          │
+│  3. 保存到 `~/clawd/memory/2026-01-26-api-design.md`          │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  新会话开始                                                 │
 │                                                             │
-│  之前的上下文现在可以通过 memory_search 搜索                │
+│  之前的上下文现在可以通过 `memory_search` 搜索                │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -520,18 +519,22 @@ Anthropic会对提示词前缀进行最多5分钟的缓存，以减少重复调�
 
 Clawdbot的记忆系统之所以成功，是因为它遵循了几个关键原则：
 
-1.  **透明优于黑盒**
+1. 透明优于黑盒
 
 记忆是纯Markdown。你可以阅读、编辑、版本控制它。没有不透明数据库或专有格式。
 
-1.  **搜索优于注入**
+2. 搜索优于注入
 
-与其用所有内容塞满上下文，不如让Agent搜索相关内容。这保持上下文聚焦并降低成本。
 
-1.  **持久优于会话**
+
+# 优化 Agent 上下文检索策略
+
+与其用所有内容塞满上下文，不如让 Agent 搜索相关内容。这保持上下文聚焦并降低成本。
+
+## 持久优于会话
 
 重要信息作为文件保存在磁盘上，而不仅仅存在于对话历史中。压缩无法摧毁已经保存的内容。
 
-1.  **混合优于单一**
+## 混合优于单一
 
 纯向量搜索会漏掉精确匹配。纯关键词搜索会漏掉语义。混合搜索两者兼得。

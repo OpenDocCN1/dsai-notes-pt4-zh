@@ -1,3 +1,4 @@
+
 # GPT和即梦尝试像素风格提示词
 
 > 来源：[https://huchegames.feishu.cn/docx/T5CrdYd2LoSzkIxLOxpchcXmnpd](https://huchegames.feishu.cn/docx/T5CrdYd2LoSzkIxLOxpchcXmnpd)
@@ -10,9 +11,9 @@
 Create THREE cohesive sprite sheets.
 
 -ROW1-8-View Base Model-
-* If 2DTO3D=yes -&gt; T-pose in 8 rotations(front, 45°, side, 135°, back, 225°, other side,
+* If 2DTO3D=yes -> T-pose in 8 rotations(front, 45°, side, 135°, back, 225°, other side,
 315°).
-* If 2DTO3D=no -&gt; Natural idle pose in the same 8 rotations
+* If 2DTO3D=no -> Natural idle pose in the same 8 rotations
 * Match the chosen STYLE exactly.
 
 -ROW 2- Adaptive Equipment Grid-
@@ -22,29 +23,23 @@ Create THREE cohesive sprite sheets.
 
 -Global Constraints-
 * Keep all three sheets visually and stylisticallyconsistent (palette, light direction, line weight).
-* Use power-of-two canvases &lt; 2048x2048 px; leave padding for atlas packing.
+* Use power-of-two canvases < 2048x2048 px; leave padding for atlas packing.
 * Output **only** the finished sprite sheets - no explanatory text.
 ```
 
-# ChatGPT
+## ChatGPT
 
 ![](img/33ef18424d96a4d6443695b6bafc0f78.png)
 
-# 即梦
+## 即梦
 
 > 曾老师用即梦试了试，由于即梦的提示词有 800 字数限制，无法完整使用上面的所有内容。
 
-
-
-
 ![](img/839c85de66bb54b4f8e84eb3fbc0763e.png)
 
-# ImageFX
+## ImageFX
 
 > https://labs.google/fx/tools/image-fx
-
-
-
 
 ![](img/6a19d548bf3c9be5acba9f4a1b69a925.png)
 

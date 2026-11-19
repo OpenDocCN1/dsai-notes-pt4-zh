@@ -1,3 +1,4 @@
+
 # DeepSeek V3.1 模型问题测试【提示词模板】
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/HNdydrXBtohC1Nx8tjZcLUYinf9](https://kq4b3vgg5b.feishu.cn/docx/HNdydrXBtohC1Nx8tjZcLUYinf9)
@@ -37,7 +38,7 @@
 使用HTML作为基本结构。
 使用CSS进行基本布局、背景、按钮和行星的样式设置。
 核心模拟功能必须使用JavaScript实现，包括：
-绘制太阳、行星和轨道（推荐使用 &lt;canvas&gt; 元素进行绘制）。
+绘制太阳、行星和轨道（推荐使用 <canvas> 元素进行绘制）。
 计算行星的实时位置以模拟公转。
 处理“Start”、“Pause”、“Reset”按钮的点击事件。
 根据“Speed”滑块的值调整模拟的帧率或步长。
@@ -47,7 +48,6 @@
 两个模型都能完成行星运行轨迹的模拟和展示：
 
 **DeepSeek V3.1**
-
 
 [2025-08-19 19-54-09.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KkrXbxcXgo8mLcxzenjcQJwxnxb)
 
@@ -66,8 +66,8 @@
 **提示词：**
 
 ```
-**请生成一个****独立****的H****TM****L文件，****其中包含一个可交****互的粒子漩涡模拟器**。
-所**有代码应包含在** &lt;h**tml&gt;** 文件内，不要引用外部库或文件。
+**请生成一个独立的HTML文件，其中包含一个可交互的粒子漩涡模拟器**。
+所有代码应包含在 <html> 文件内，不要引用外部库或文件。
 该模拟器应具备以下功能：
 视觉与动画
 背景：深色（接近黑色）的背景。
@@ -80,19 +80,19 @@
 底部提示：页面左下角显示交互提示文字：“Click and hold to create black hole - Release to free particles”。
 交互效果（重点）
 “黑洞”创建与吸引：
-当用户*点击并按住鼠标左键**时：
+当用户点击并按住鼠标左键时：
 在鼠标指针位置应创建一个视觉上的“黑洞”效果（例如，一个小的、可能带有吸入动画的中心点）。
 屏幕上所有可见粒子应开始被这个“黑洞”吸引，以线条状轨迹快速向“黑洞”中心汇聚。粒子在被吸引过程中应保持其颜色和发光效果。
 粒子被吸引的速度和强度应随着粒子与“黑洞”的距离而变化，距离越近吸引力越大。
 粒子释放与散射：
-当用户*松开鼠标左键**时：
+当用户松开鼠标左键时：
 “黑洞”效果消失。
 被吸引的粒子应从“黑洞”中心向外高速散射，回归到无吸引力的自由运动状态，但散射后仍受重力或随机漂浮效果影响，逐渐恢复到初始的随机移动状态。散射轨迹应带有明显的拖尾。
 技术考量
 使用HTML作为基本结构。
 使用CSS进行基本布局和背景样式。
 核心模拟和交互功能必须使用JavaScript实现，包括：
-使用 &lt;canvas&gt; 元素绘制粒子及其轨迹。
+使用 <canvas> 元素绘制粒子及其轨迹。
 粒子对象的管理（位置、速度、颜色、大小等属性）。
 实现粒子的随机漂浮运动。
 监听鼠标的 mousedown 和 mouseup 事件。
@@ -105,7 +105,6 @@
 同样，两个模型都很好地完成了编程工作：
 
 **DeepSeek V3.1**
-
 
 [2025-08-19 19-58-36.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HiPJbr3ySo8jU0xT1iPcU8uEnfe)
 
@@ -151,7 +150,6 @@
 
 在以往**的测试中**，只有GPT-5模型和Claude 4.1 Opus能够全自动自主处理复杂问题而没有bug，而当我们将基座模型切换为DeepSeek V3.1模型之后，无论是用户意图识别准确率、还是检索关键词提取的准确率，无论是调用Agent的准确率，还是长文档编写性能，都得到了显著提升。可以说DeepSeek V3.1模型的Agent性能也同样是和Claude 4.1 Opus相差无几。
 
-
 [2025-07-28 19-22-37.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EhVobUxz1oIPQjxXFE8crbFQnVg)
 
 ![](img/12f878839bb66aa35be715fe17f60eaf.png)
@@ -171,7 +169,7 @@
 **提示词：**
 
 ```
-**创建****一个****单一****HTML**文件的单页应用，要求如下：
+创建一个单一HTML文件的单页应用，要求如下：
 名称：数据可视化游乐场 (Data Visualization Playground)
 目标：上传 CSV 文件并生成图表。
 功能：图表类型选择器、颜色自定义、保存为图片。
@@ -187,7 +185,6 @@
 
 **Claude 4.1**
 
-
 [2025-08-08 14-08-59.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HpNGbLSM3oOpaSxDTwBcWk7qnah)
 
 ### 2️⃣ 创建儿童益智小游戏-云朵画家
@@ -197,7 +194,7 @@
 **提示词：**
 
 ```
-**创建****一个****单一****HTML**文件的单页应用，要求如下：
+创建一个单一HTML文件的单页应用，要求如下：
 名称：云朵画家 (Cloud Painter)
 目标：使用画笔工具绘制云朵来“描绘”天空；对孩子们来说应该很有趣。
 功能：多种画笔形状、云朵动画漂移、在天空中飞行的飞机、保存图片。
@@ -207,7 +204,6 @@
 
 **GPT-5**
 
-
 [2025-08-08 14-14-02.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GeHBbhB06oedwqx2X4GcyVWZnXe)
 
 **Claude 4.1**
@@ -216,14 +212,14 @@
 
 [2025-08-08 14-14-45.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZXM3bnDf5oSExJxjtDGcjiIbnfc)
 
-### 3️⃣创建音频步进音序器
+### 3️⃣ 创建音频步进音序器
 
 用于模拟创建各种音频，提示词如下所示
 
 **提示词：**
 
 ```
-**创建****一个单****一H****TM****L文件的**单页应用，要求如下：
+创建一个单一HTML文件的单页应用，要求如下：
 名称：音频步进音序器 (Audio Step Sequencer)
 技术栈：Web Audio API
 目标：一个16步的鼓点网格。
@@ -248,7 +244,7 @@
 
 [2025-08-08 13-09-24.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M0FxbjAdHoKz8CxVMy9cEGJunLe)
 
-### 4️⃣模拟烟囱爆破
+### 4️⃣ 模拟烟囱爆破
 
 **提示词：**
 
@@ -298,12 +294,14 @@
 
 ---
 
-## **💌 赋**范社区交流群
+## 💌 赋范社区交流群
 
-海量硬核独家技术**干货内容**+无门槛**技术交流**~
+海量硬核独家技术干货内容+无门槛技术交流～
+
+
 
 ![](img/72988a549cb590e875972c021a82dd10.png)
 
-上图**扫码**👆即刻入群！
+上图扫码👆即刻入群！
 
-📍 社群技术交**流氛围浓厚，**不定期开设硬**核干货&前沿技术公开课噢**~
+📍 社群技术交流氛围浓厚，不定期开设硬核干货&前沿技术公开课噢~

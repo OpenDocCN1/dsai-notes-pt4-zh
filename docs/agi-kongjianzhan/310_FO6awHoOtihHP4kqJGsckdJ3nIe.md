@@ -1,3 +1,4 @@
+
 # 就在刚刚，OpenAI 正式发布 GPT-4o mini，免费且强大，ChatGPT 全面进入 4 时代
 
 > 来源：[https://agispace.feishu.cn/docx/PBlVd5m6loHAp4xIZvIcZsAWnJg](https://agispace.feishu.cn/docx/PBlVd5m6loHAp4xIZvIcZsAWnJg)
@@ -8,13 +9,11 @@
 
 > 原文链接：https://mp.weixin.qq.com/s/rW5Z7g6JuLH6OnVESyVldA
 
-关注 “**AI 工具派****”**
+关注 “AI 工具派”
 
 探索最新 AI 工具，发现 AI 带来的无限可能性！
 
-**
-
-近**期推荐
+## 近期推荐
 
 +   PPT：[Tome](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651422220&idx=1&sn=53c877ebc4ae8bb93680cd616e46d7ea&chksm=8b96aef7bce127e14a1f0427e7bdaf65813c5f56ad28b6c41df869a9d86aed4ffba8af4717c2&scene=21#wechat_redirect)｜[美图PPT](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651422061&idx=1&sn=b63315fcf9f8be34d1d28a0d76824bfb&chksm=8b96ad96bce12480b6cd01e9fdbf91a1d8bfc975afb33b5f13086e06e8b1327a480b8ff8f755&scene=21#wechat_redirect)｜[AiPPT](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651421536&idx=1&sn=14a3424fc4f5dd8636686ccccdfb1bde&chksm=8b96ab9bbce1228d94e3ac0d5f5f8609fb3b0b67f8b6a89c647081de79822314ea7b896a9184&scene=21#wechat_redirect)｜[Gamma](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651421496&idx=1&sn=e67161b6699514f1f986bb20e5ce83d3&chksm=8b96abc3bce122d565165a2628de0644f8e37ad9a4c721fd735331ed4176b95b9c08a9153c81&scene=21#wechat_redirect)
 
@@ -36,46 +35,39 @@ AI工具派
 
 探索最新AI工具，发现AI带来的无限可能性！
 
-一大早又被 OpenAI 、ChatGPT() 刷屏了。
+一大早又被 OpenAI 、`ChatGPT()` 刷屏了。
 
 ![](img/7e36b2fa12aedc096dd3aa5bde3a464f.png)
 
 从今天开始，ChatGPT 将全面进入 4 时代，OpenAI 最新发布的 GPT-4o mini，将替换现有 GPT-3.5 Turbo。
 
-即日起，**“ChatGPT 的免费用户、Plus 用户和 Team **用户都能够使用 GPT-4o mini”。下周，企业版客户也将获得使用 GPT-4o mini 的权限。
+即日起，ChatGPT 的免费用户、Plus 用户和 Team 用户都能够使用 GPT-4o mini。下周，企业版客户也将获得使用 GPT-4o mini 的权限。
 
 > 接下来 GPT-4 全系列包括：
 
 +   GPT-4o：更适合复杂任务
-
 +   GPT-4o mini：更快完成日常任务
-
 +   GPT-4：传统模式
 
 GPT-4o mini 作为 ChatGPT 中最智能最实惠的小型模型，比 GPT-3.5 Turbo 更便宜，更智能。
 
 ## 亮点功能简介
 
-+   **“价格更低”**：GPT-4o mini 定价为输入令牌每百万 0.6，比 GPT-3.5 Turbo 便宜 60%，大大降低了使用成本。
-
-+   **“性能优势”**：在学术基准上，GPT-4o mini 在文本智能和多模态推理方面超越了 GPT-3.5 Turbo 和其他小型模型，在推理任务、数学和编码能力以及多模态推理方面表现出色。
-
-+   **“支持任务”**：凭借低成本和低延迟，**“支持多种任务”**，如模型调用的链化或并行化、处理大量上下文、与客户的快速实时文本交互等。
-
-+   **“多模态支持”**：目前**“支持文本和视觉的 API”**，未来将支持文本、图像、视频和音频的输入输出。
-
-+   **“内置安全措施”**：从开发之初就注重安全，过滤不良信息，采用强化学习等技术，使其在 API 中的安全性得到提升。
-
-+   **“可用性和定价”**：已在 Assistants API、Chat Completions API 和 Batch API 中可用，计划在未来几天推出微调，ChatGPT 的部分用户可立即使用，企业用户下周可用。
++   “价格更低”：GPT-4o mini 定价为输入令牌每百万 0.6，比 GPT-3.5 Turbo 便宜 60%，大大降低了使用成本。
++   “性能优势”：在学术基准上，GPT-4o mini 在文本智能和多模态推理方面超越了 GPT-3.5 Turbo 和其他小型模型，在推理任务、数学和编码能力以及多模态推理方面表现出色。
++   “支持任务”：凭借低成本和低延迟，“支持多种任务”，如模型调用的链化或并行化、处理大量上下文、与客户的快速实时文本交互等。
++   “多模态支持”：目前“支持文本和视觉的 API”，未来将支持文本、图像、视频和音频的输入输出。
++   “内置安全措施”：从开发之初就注重安全，过滤不良信息，采用强化学习等技术，使其在 API 中的安全性得到提升。
++   “可用性和定价”：已在 Assistants API、Chat Completions API 和 Batch API 中可用，计划在未来几天推出微调，ChatGPT 的部分用户可立即使用，企业用户下周可用。
 
 ## 一句话总结
 
-OpenAI 最新发布的 GPT-4o mini，即日起ChatGPT 的免费用户、Plus 用户和 Team 用户可使用，它是最智能实惠的小型模型，具有价格更低、性能优势多、支持多种任务、多模态支持、内置安全措施以及可用性和定价合理等亮点。
+OpenAI 最新发布的 GPT-4o mini，即日起 ChatGPT 的免费用户、Plus 用户和 Team 用户可使用，它是最智能实惠的小型模型，具有价格更低、性能优势多、支持多种任务、多模态支持、内置安全措施以及可用性和定价合理等亮点。
 
-**最**后，对于此次更新的全部内容，大家可以阅读官方原文《GPT-4o mini: advancing cost-efficient intelligence》([1])。
+最后，对于此次更新的全部内容，大家可以阅读官方原文《GPT-4o mini: advancing cost-efficient intelligence》（[1]）。
 
 ### 参考资料
 
 [1]
 
-**《**GPT-4o mini: advancing cost-efficient intelligence》:https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+《GPT-4o mini: advancing cost-efficient intelligence》:`https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/`

@@ -1,8 +1,9 @@
+
 # 赞助支持
 
 > 来源：[https://my.feishu.cn/docx/XesvdISxbogbGlxj0PZclEYinth](https://my.feishu.cn/docx/XesvdISxbogbGlxj0PZclEYinth)
 
-如果想请我喝☕️的话，可以直接扫码，哈哈。感谢支持和认可。~~
+如果想请我喝☕️的话，可以直接扫码，哈哈。感谢支持和认可。
 
 感谢帅哥美女们的打赏！😂
 

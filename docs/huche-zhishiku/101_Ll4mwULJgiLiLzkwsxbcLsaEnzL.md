@@ -1,18 +1,19 @@
+
 # 利用 Riffusion AI 生成游戏背景音乐
 
 > 来源：[https://huchegames.feishu.cn/docx/GHNOds0fNojKjExU2thcfUXonjg](https://huchegames.feishu.cn/docx/GHNOds0fNojKjExU2thcfUXonjg)
 
 上周二，我在 星光城市武汉站沙龙圆满落幕，深度解码AI 合规、AI研发、游戏出海 活动中做了《将 AI 引入游戏研发工作流》的分享，演讲内容仍在整理中，整理完毕后会发布在👸号。
 
-将[AI嵌入研发工作流](https://huchegames.feishu.cn/wiki/YR4lwCNaciw0bukbKYdcGllinje)**，** 是个大工程。 在正常的游戏研发过程中，不仅需要制作人有全局思维，也需要执行者的坚决和主动性。
+将[AI嵌入研发工作流](https://huchegames.feishu.cn/wiki/YR4lwCNaciw0bukbKYdcGllinje)，是个大工程。在正常的游戏研发过程中，不仅需要制作人有全局思维，也需要执行者的坚决和主动性。
 
 本篇开始，曾老师会将自己在研发过程中的执行操作分享出来，和读者一起学习 AI 嵌入工作流的操作细节。
 
 ---
 
-背景音乐是游戏美学中的重要元素。 尽管我听过许多人说， 「我玩手游从来不开声音！」 但主动不听，和没有选择，是两码事。曾老师自己玩游戏是绝对无法接受没有声音的。
+背景音乐是游戏美学中的重要元素。尽管我听过许多人说，「我玩手游从来不开声音！」但主动不听，和没有选择，是两码事。曾老师自己玩游戏是绝对无法接受没有声音的。
 
-标准的游戏研发流程中，**音乐和音效的制作，** 和美术、程序、策划工作有较大差距。尤其是对于休闲游戏，许多团队不太可能有专职的音乐人岗位。我接触过的一些团队，主要还是让策划或者其他岗位来寻找免费的素材搞定音乐，这会有一些侵权风险。拥有专职音乐人的团队比较少，由于岗位设置不多，不利于音乐人才在工作中成长，这也导致小团队中的音乐人更加难招。
+标准的游戏研发流程中，音乐和音效的制作，和美术、程序、策划工作有较大差距。尤其是对于休闲游戏，许多团队不太可能有专职的音乐人岗位。我接触过的一些团队，主要还是让策划或者其他岗位来寻找免费的素材搞定音乐，这会有一些侵权风险。拥有专职音乐人的团队比较少，由于岗位设置不多，不利于音乐人才在工作中成长，这也导致小团队中的音乐人更加难招。
 
 个人开发者和微型团队，除了制作人自己成为音乐人之外，还有一个选择，就是 AI 音乐。
 
@@ -22,19 +23,16 @@ Riffusion 是一个基于 Stable Diffusion 的实时音乐生成工具，其原�
 
 其 V1 版本是开源的，最后更新停留在两年前。
 
-+   https://github.com/riffusion/riffusion
++ `https://github.com/riffusion/riffusion`
++ `https://huggingface.co/riffusion/riffusion-model-v1`
 
-+   https://huggingface.co/riffusion/riffusion-model-v1
-
-目前官方网站依然处于 BETA 阶段，采用 V2 版本模型，生成速度挺不错，可以使用曾老师的邀请链接来注册（就当看这篇文章后的支持吧）：
-
-https://riffusion.com?r=Jackynoz
+目前官方网站依然处于 BETA 阶段，采用 V2 版本模型，生成速度挺不错，可以使用曾老师的邀请链接来注册（就当看这篇文章后的支持吧）：`https://riffusion.com?r=Jackynoz`
 
 ![](img/1f8ff601e42c94e5cf86d9dc5898cba8.png)
 
 ## 使用技巧
 
-直接输入提示词即可生成音乐，由于我们要的是背景音乐，所以记得选择 Instrumental 选项要求纯音乐。
+直接输入提示词即可生成音乐，由于我们要的是背景音乐，所以记得选择 `Instrumental` 选项要求纯音乐。
 
 > Looping background music featuring electric piano and bass as main instruments, with intense percussive elements, electronic influences, synthesized sounds, expansive atmosphere, and fast tempo.
 
@@ -42,7 +40,7 @@ https://riffusion.com?r=Jackynoz
 
 这段提示词生成的音乐如下：
 
-https://www.riffusion.com/riff/b7b1fafa-1f17-4f5b-ada7-3c8d14d47276
+`https://www.riffusion.com/riff/b7b1fafa-1f17-4f5b-ada7-3c8d14d47276`
 
 原文可以使用中文描述，交给 DeepSeek 翻译就好：
 
@@ -52,9 +50,8 @@ https://www.riffusion.com/riff/b7b1fafa-1f17-4f5b-ada7-3c8d14d47276
 
 如果DeepSeek 访问不了，可以参考下面两篇：
 
-+   [DeepSeek 服务器繁忙？这里有免费解决方案](https://huchegames.feishu.cn/wiki/UKGZwAxKuiPsCukaDOhcuIi9nMc)
-
-+   [DeepSeek 不卡了，满血联网，还能搜索🛰️👸号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
++ [DeepSeek 服务器繁忙？这里有免费解决方案](https://huchegames.feishu.cn/wiki/UKGZwAxKuiPsCukaDOhcuIi9nMc)
++ [DeepSeek 不卡了，满血联网，还能搜索🛰️👸号内容](https://huchegames.feishu.cn/wiki/PmXmwNchBiRykDkxtcTcupK9nzH)
 
 ## 提示词技巧
 
@@ -70,23 +67,16 @@ https://www.riffusion.com/riff/b7b1fafa-1f17-4f5b-ada7-3c8d14d47276
 
 还可以在提示词中加入清晰的指导，例如：
 
-+   流派：古典、爵士、电子、低音
++ 流派：古典、爵士、电子、低音
++ Genre: Classical, jazz, techno, lo-fi
++ 心情/情绪：快乐，忧郁，充满活力，平和
++ Mood/Emotion: Happy, melancholic, energetic, peaceful
++ 乐器或声音：钢琴，吉他，合成器，弦乐器
++ Instruments or Sounds: Piano, guitar, synths, strings
++ 节奏与风格：慢板民谣，快节奏，动感节奏
++ Tempo and Style: Slow ballad, fast-paced, groovy rhythm
 
-+   Genre: Classical, jazz, techno, lo-fi
-
-+   心情/情绪：快乐，忧郁，充满活力，平和
-
-+   Mood/Emotion: Happy, melancholic, energetic, peaceful
-
-+   乐器或声音：钢琴，吉他，合成器，弦乐器
-
-+   Instruments or Sounds: Piano, guitar, synths, strings
-
-+   节奏与风格：慢板民谣，快节奏，动感节奏
-
-+   Tempo and Style: Slow ballad, fast-paced, groovy rhythm
-
-你还可以为不同的提示词设定不同的 Strength 值：
+你还可以为不同的提示词设定不同的 `Strength` 值：
 
 ![](img/096a66c04a444b3908dfbd9c40ec70f4.png)
 
@@ -94,9 +84,9 @@ https://www.riffusion.com/riff/b7b1fafa-1f17-4f5b-ada7-3c8d14d47276
 
 Riffusion AI 支持对已有音乐进行重建。
 
-它支持 Cover、Extend、Replace 三种模式，下图是我对一个已有音乐的进行重建的例子。
+它支持 `Cover`、`Extend`、`Replace` 三种模式，下图是我对一个已有音乐的进行重建的例子。
 
-注意 Strength 可以控制重建音乐基于原始音乐的变化程度。
+注意 `Strength` 可以控制重建音乐基于原始音乐的变化程度。
 
 ![](img/397541307eb8d4a8004df53e4be80314.png)
 
@@ -104,7 +94,7 @@ Riffusion AI 支持对已有音乐进行重建。
 
 就如同 Stable Diffusion 生图经常有瑕疵一样，Riffusion 创建的音乐也并非完美。你需要使用编辑软件对瑕疵进行处理。
 
-对于图像，你可能会使用 Photoshop （太贵买不起，我用 Kirta）；对于音频，我建议使用 Audacity 这个开源软件，免费，UI  对新手友好，功能也足够。
+对于图像，你可能会使用 Photoshop （太贵买不起，我用 Kirta）；对于音频，我建议使用 Audacity 这个开源软件，免费，UI 对新手友好，功能也足够。
 
 如下图所示，红色方框波形是不正常的，实际听起来节奏也不对，将其删除或者重新生成即可。
 
@@ -114,7 +104,7 @@ Riffusion AI 支持对已有音乐进行重建。
 
 ## 一点惊喜
 
-对于创建好的音乐，可以使用 Get stems 功能获取分乐器的音频，还真是让我小惊喜了一把。
+对于创建好的音乐，可以使用 `Get stems` 功能获取分乐器的音频，还真是让我小惊喜了一把。
 
 ![](img/9361a19ca548275f9933893e53d4fcd0.png)
 

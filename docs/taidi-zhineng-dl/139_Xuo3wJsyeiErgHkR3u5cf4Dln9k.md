@@ -1,3 +1,4 @@
+
 # PyTorch Libs
 
 > 来源：[https://learning.feishu.cn/docx/Gyxcdh5aGoe3MMxMlymcfA47nEc](https://learning.feishu.cn/docx/Gyxcdh5aGoe3MMxMlymcfA47nEc)
@@ -6,13 +7,13 @@ PyTorch Conference 2022 的 4 个 topics，感觉都没什么用。
 
 xFormers 有一点影响力，但，感觉也不大，看完也感觉前景一般。
 
-# PyTorchLinear Operator
+## PyTorch Linear Operator
 
 感觉用不上
 
 https://www.youtube.com/watch?v=HE85_4AQqzQ
 
-linear_operator - Structured Linear Algebra in PyTorchLinear Operator Poster
+`linear_operator` - Structured Linear Algebra in PyTorchLinear Operator Poster
 
 PyTorch Conference 2022
 
@@ -36,7 +37,7 @@ https://github.com/cornellius-gp/linear_operator
 
 ![](img/11be492aa18c9994155cf505e37cd70c.png)
 
-# Better Transformer
+## Better Transformer
 
 感觉也是个没什么 follow up 和影响力的工作。
 
@@ -54,7 +55,7 @@ PyTorch Conference 2022
 
 ![](img/ae7ff861562c7eef6e436b317da16105.png)
 
-# xFormers
+## xFormers
 
 https://www.youtube.com/watch?v=NJyZCdxnGe4
 
@@ -64,9 +65,9 @@ PyTorch Conference 2022
 
 作为芯片厂，感觉没什么用。
 
-fused MHA 应该可以用 compiler 自动解决。
+`fused MHA` 应该可以用 compiler 自动解决。
 
--- 目前，xformers 好像也确实影响力不大？
+-- 目前，`xformers` 好像也确实影响力不大？
 
 ![](img/e20be694290d0ec1ae54059db0e13748.png)
 
@@ -80,7 +81,7 @@ fused MHA 应该可以用 compiler 自动解决。
 
 ![](img/f640dd698d0eedf61c2fef7d557cfadf.png)
 
-# Functorch
+## Functorch
 
 https://www.youtube.com/watch?v=lFHPHZF12Jg
 
@@ -102,7 +103,7 @@ composable: can nest arbitrarily
 
 ![](img/d622d05c7b555cf45050a56c4d53bbc3.png)
 
-# Introduction to TorchMultimodal
+## Introduction to TorchMultimodal
 
 https://www.youtube.com/watch?v=VrAd44sjvVU
 
@@ -130,7 +131,7 @@ Dec 13, 2022
 
 ![](img/01b39fb8f0fca4cd51df2c5e51e1ac52.png)
 
-# Memory Debugging Tools for GPUs
+## Memory Debugging Tools for GPUs
 
 https://www.youtube.com/watch?v=r🐧3yStAOGQ
 

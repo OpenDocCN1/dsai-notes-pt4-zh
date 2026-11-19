@@ -1,10 +1,11 @@
+
 # 采购基础知识库
 
 > 来源：[https://rxq0zfnkm77.feishu.cn/docx/D0IQdCjsSoLgdGxrDuEcccmonPh](https://rxq0zfnkm77.feishu.cn/docx/D0IQdCjsSoLgdGxrDuEcccmonPh)
 
-> 温馨提示:您可以通过右上角的 放大镜或快捷键【ctrl + j 】检索任意知识点，【ctrl+D】快速收藏本页至浏览器。建议使用电脑PC浏览器或iPad飞书客户端体验更佳，应用市场搜索飞书，即可下载APP。
+> 温馨提示:您可以通过右上角的 放大镜或快捷键【`ctrl + j`】检索任意知识点，【`ctrl+D`】快速收藏本页至浏览器。建议使用电脑PC浏览器或iPad飞书客户端体验更佳，应用市场搜索飞书，即可下载APP。
 
-# 简介
+## 简介
 
 正在搭建原创采购通用的知识库中~
 

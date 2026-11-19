@@ -1,8 +1,9 @@
+
 # 清华 AIR 等提出 ESM-AA，首个从氨基酸到原子尺度的蛋白质语言模型
 
-> 来源：[https://agijuejin.feishu.cn/docx/B56jd8jYjo0v1dxuMzUcMR2Knqd](https://agijuejin.feishu.cn/docx/B56jd8jYjo0v1dxuMzUcMR2Knqd)
+> 来源：`https://agijuejin.feishu.cn/docx/B56jd8jYjo0v1dxuMzUcMR2Knqd`
 
-> 机器之心 ScienceAI｜[阅读原文](https://www.jiqizhixin.com/articles/2024-06-28-2)
+> 机器之心 ScienceAI｜阅读原文：`https://www.jiqizhixin.com/articles/2024-06-28-2`
 
 > 转载请联系原作者取得授权
 
@@ -18,7 +19,7 @@
 
 ![](img/4ccc581c0bb69b314a469e55b95efb5d.png)
 
-## **研究背景**
+## 研究背景
 
 蛋白质是各种生命活动的关键执行者。深入理解蛋白质及其与其他生物结构的相互作用是生物科学中的核心议题，这对靶向药物筛选、酶工程等领域具有显著的实际意义。
 
@@ -58,7 +59,7 @@ RoseTTAFold All-Atom 和 AlphaFold3 对多尺度概念的成功应用启发了�
 
 图 2：多尺度位置编码
 
-### **多尺度预训练目标**
+### 多尺度预训练目标
 
 为了帮助模型学习多尺度信息，该团队为 ESM-AA 模型设计了多种预训练目标。ESM-AA 的多尺度预训练目标包括掩码语言建模（MLM）和成对距离恢复（PDR）。如图 3(a) 所示，MLM 通过遮盖氨基酸和原子，要求模型根据周围的上下文进行预测，这一训练任务可以在氨基酸和原子两个尺度上进行。而 PDR 则要求模型准确预测不同原子之间的欧几里得距离，以训练模型理解原子级的结构信息（如图 3(b) 所示）。
 
@@ -66,9 +67,9 @@ RoseTTAFold All-Atom 和 AlphaFold3 对多尺度概念的成功应用启发了�
 
 图 3：多尺度预训练任务
 
-## **实验验证**
+## 实验验证
 
-### **性能评估**
+### 性能评估
 
 ESM-AA 模型在多种蛋白-小分子基准任务上进行微调和评估，包括酶-底物亲和力回归任务（结果展示于图 4）、酶-底物对分类任务（结果展示于图 4）和药物-靶标亲和力回归任务（结果展示于图 5）。
 
@@ -88,7 +89,7 @@ ESM-AA 模型在多种蛋白-小分子基准任务上进行微调和评估，包
 
 这表明，ESM-AA 在获取强大分子知识的过程中并未牺牲对蛋白质的理解能力，也进一步说明了 ESM-AA 模型成功复用了 ESM-2 模型的知识，而无需被从头开始重新开发，显著降低了模型训练成本。
 
-### **可视化分析**
+### 可视化分析
 
 为了进一步分析 ESM-AA 在蛋白-小分子基准任务上表现优异的原因，该论文展示了 ESM-AA 模型以及 ESM-2+Uni-Mol 模型组合在该任务中抽取的样本表征分布的可视化结果。
 
@@ -98,7 +99,7 @@ ESM-AA 模型在多种蛋白-小分子基准任务上进行微调和评估，包
 
 图 6：蛋白/分子表示的可视化分析
 
-## **结语**
+## 结语
 
 清华 AIR 团队开发的 ESM-AA 是首个融合氨基酸与原子信息处理的蛋白质预训练语言模型。模型通过整合多尺度信息，展现出稳健且卓越的性能，为解决生物结构间相互作用难题提供了新途径。
 
@@ -106,6 +107,6 @@ ESM-AA不仅促进了对蛋白质更深层次的理解，还在多项生物分�
 
 论文标题：ESM All-Atom: Multi-Scale Protein Language Model for Unified Molecular Modeling
 
-Github开源地址： https://github.com/zhengkangjie/ESM-AA
+Github开源地址：`https://github.com/zhengkangjie/ESM-AA`
 
-论文链接： https://arxiv.org/abs/2403.12995
+论文链接：`https://arxiv.org/abs/2403.12995`

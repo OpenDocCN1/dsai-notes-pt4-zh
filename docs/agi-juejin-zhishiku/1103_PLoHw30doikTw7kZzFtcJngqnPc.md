@@ -1,3 +1,4 @@
+
 # LLM大语言模型能力与开源框架选型
 
 > 来源：[https://agijuejin.feishu.cn/docx/HezLdjx8Co58UIx79JScc0m2nFg](https://agijuejin.feishu.cn/docx/HezLdjx8Co58UIx79JScc0m2nFg)
@@ -8,7 +9,7 @@
 
 ## 大语言模型能力
 
-LM的核心能力大致分为：生成（Generate）、总结（Summarize）、提取（Extract）、分类（Classify）、检索（Search）与改写（Rewrite）六部分。如果你对大语言模型已经有一定了解，可以看以下这篇文章，结合LangChain让你的LLM变得更强大：爱吃牛油果的璐璐：（万字长文）手把手教你认识学会LangChain
+LM的核心能力大致分为：生成（Generate）、总结（Summarize）、提取（Extract）、分类（Classify）、检索（Search）与改写（Rewrite）六部分。如果你对大语言模型已经有一定了解，可以看以下这篇文章，结合`LangChain`让你的LLM变得更强大：爱吃牛油果的璐璐：（万字长文）手把手教你认识学会LangChain
 
 ### 1、生成能力（Generate）
 
@@ -74,57 +75,55 @@ https://github.com/togethercomputer/RedPajama-Data
 
 4、Lit-LLaMA
 
-️参考LLaMA，在Apache 2.0 license下的只有代码的重新实现。同时支持加载原始LLaMA和OpenLLaMA的权重。https://github.com/Lightning-AI
+参考LLaMA，在Apache 2.0 license下的只有代码的重新实现。同时支持加载原始LLaMA和OpenLLaMA的权重。https://github.com/Lightning-AI
 
 ### Stage2 监督微调
 
-因为预训练模型本质上还是个续写模型，所以并不能很好的满足人们的需求，所以监督微调的作用就是微调模型产生理想的回复。有钱可以全参数微调，没钱就只能使用一些低成本的方法，英文叫PEFT(Parameter-Efficient Fine-Tuning)。PEFT确实是像我这种平民玩家的首选，但是有钱也可以用PEFT，它可以让你微调更大的模型。
+因为预训练模型本质上还是个续写模型，所以并不能很好的满足人们的需求，所以监督微调的作用就是微调模型产生理想的回复。有钱可以全参数微调，没钱就只能使用一些低成本的方法，英文叫`PEFT`(Parameter-Efficient Fine-Tuning)。`PEFT`确实是像我这种平民玩家的首选，但是有钱也可以用`PEFT`，它可以让你微调更大的模型。
 
-（1）LLaMA + Instruction Finetuning(全量参数)
+#### （1）`LLaMA + Instruction Finetuning`(全量参数)
 
-小羊驼Alpacal：lama7b + self-instruct数据指令微调。算是最早迈出LLaMA+SFT这一步的模型。Alpaca模型是基于LLaMA模型的微调版本，其主要特点是使用了层次化的结构，以及针对特定任务进行了优化。Alpaca模型在LLaMA模型的基础上，增加了更多的层次，从而能够更好地处理长序列。同时，Alpaca模型还引入了任务特定的层，能够针对不同的任务进行优化。这些优化使得Alpaca模型在多项NLP任务中取得了优异的性能。最开始并没有提供权重，后来通过diff的方式给出，需要LLaMA原始模型才能恢复，github上有教程。当时他们采用1张8卡A100(80G显存)，52k的数据，训练了3个小时。训练成本大概是100刀。https://github.com/tatsu-lab/st
+小羊驼Alpacal：`lama7b` + `self-instruct`数据指令微调。算是最早迈出`LLaMA+SFT`这一步的模型。Alpaca模型是基于LLaMA模型的微调版本，其主要特点是使用了层次化的结构，以及针对特定任务进行了优化。Alpaca模型在LLaMA模型的基础上，增加了更多的层次，从而能够更好地处理长序列。同时，Alpaca模型还引入了任务特定的层，能够针对不同的任务进行优化。这些优化使得Alpaca模型在多项NLP任务中取得了优异的性能。最开始并没有提供权重，后来通过`diff`的方式给出，需要LLaMA原始模型才能恢复，github上有教程。当时他们采用1张8卡A100(80G显存)，52k的数据，训练了3个小时。训练成本大概是100刀。https://github.com/tatsu-lab/st
 
-Vicunal：lama13b + ShareGPT对话数据，微调研发团队基于Vicuna发布了FastChat对话机器人。和Alpaca一样，受协议限制，vicuna模型公布的权重也是个delta，每个参数要加上llama原来的权重才是模型权重。Build software better, together
+Vicunal：`lama13b` + `ShareGPT`对话数据，微调研发团队基于Vicuna发布了`FastChat`对话机器人。和Alpaca一样，受协议限制，vicuna模型公布的权重也是个delta，每个参数要加上llama原来的权重才是模型权重。Build software better, together
 
-WizardLM：采用了Evol-Instruct来构造指令，可以产生一些很难的指令.深度演化包括五种操作：添加约束、深化、具体化、增加推理步骤并使输入复杂化。In-breadth Evolving 是突变，即根据给定的指令生成全新的指令进化是通过提示+LLM来实现的。https://github.com/nlpxucan/Wiz
+WizardLM：采用了`Evol-Instruct`来构造指令，可以产生一些很难的指令.深度演化包括五种操作：添加约束、深化、具体化、增加推理步骤并使输入复杂化。In-breadth Evolving 是突变，即根据给定的指令生成全新的指令进化是通过提示+LLM来实现的。https://github.com/nlpxucan/Wiz
 
 GPT4ALL：LLaMA用80w的GPT3.5的数据(code, story, conversation)微调而来。https://github.com/nomic-ai/gpt
 
 Pygmalion 7B：基于LLaMA微调，使用了不同来源的56MB 的对话数据，包含了人工和机器。https://huggingface.co/Pygmalio
 
-（2）LLaMA + PEFT（参数高效的Fine-tuning）
+#### （2）LLaMA + `PEFT`（参数高效的Fine-tuning）
 
-PEFT目前最流行的是LoRA，低秩自适应（LoRA）是一种参数有效的训练方法——保留预训练的模型权重，引入可训练的秩分解矩阵。这种方法显著减少了可训练参数的数量。LoRA的公式如下所示，r表示预先确定的秩，d是隐含层大小，A和B是可训练的分解矩阵：
+`PEFT`目前最流行的是`LoRA`，低秩自适应（`LoRA`）是一种参数有效的训练方法——保留预训练的模型权重，引入可训练的秩分解矩阵。这种方法显著减少了可训练参数的数量。`LoRA`的公式如下所示，`r`表示预先确定的秩，`d`是隐含层大小，`A`和`B`是可训练的分解矩阵：
 
-![](img/18693db060626011c83d4661e8a27667.png)
+`LoRA`挺巧妙的架构，可以看看 https://arxiv.org/abs/2106.09685 。AIGC的头部网站 http://civitai.com 上很多模型也都是基于`lora`的。最近还出了`QLoRA`，在`LoRA`的基础上加入了量化，进一步降低显存的使用。https://arxiv.org/abs/2305.14314。
 
-LoRA挺巧妙的架构，可以看看 https://arxiv.org/abs/2106.09685 。AIGC的头部网站 http://civitai.com 上很多模型也都是基于lora的。最近还出了QLoRA，在LoRA的基础上加入了量化，进一步降低显存的使用。https://arxiv.org/abs/2305.14314。
+Baize：`LLaMA + Lora`； https://github.com/project-baize/baize-chatbot
 
-[Baize：LLaMA + Lora； https:](https://link.zhihu.com/?target=https%3A//github.com/project-baize/baize-chatbot)//github.com/project-baize/baize-chatbot
+LLaMA-Adapter：LLaMA + Adapter Layer； https://github.com/OpenGVLab/LLaMA-Adapter
 
-LLaMA-Adapter：LLa[MA + Adapter Layer； ht](https://link.zhihu.com/?target=https%3A//github.com/OpenGVLab/LLaMA-Adapter)tps://github.com/OpenGVLab/LLaMA-Adapter
+CalderaAI/30B-Lazarus：似乎是多个`LoRA`的merge，但是没太公布太多细节。在huggingface的leaderboard上排名还挺靠前。https://huggingface.co/CalderaAI/30B-Lazarus
 
-CalderaAI/30B-Lazarus：似乎是多个LoRA的merge，但是没太公布太多细节。在huggingface的leaderboard上排名还挺靠前。https://huggingface.co/CalderaAI/30B-Lazarus
-
-[Chinese-LLaMA-Al](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2304.08177.pdf)paca(支持中文)：https://arxiv.org/pdf/2304.08177.pdf
+[Chinese-LLaMA-Alpaca](https://arxiv.org/pdf/2304.08177.pdf)
 
 Chinese-Vicuna(支持中文)：基于：https://github.com/tloen/alpaca
 
-### Stage3 对齐(LLaMA + FT + RHLF)
+### Stage3 对齐(`LLaMA + FT + RHLF`)
 
 这部分可以说是把ChatGPT的路径完整走了一遍。
 
-S[tableVicuna：Vicuna =](https://link.zhihu.com/?target=https%3A//github.com/Stability-AI/StableLM) LLaMA + FT；StableVicuna = Vicuna + RLHF；https://github.com/Stability-AI/StableLM
+StableVicuna：`Vicuna = LLaMA + FT`；`StableVicuna = Vicuna + RLHF`；https://github.com/Stability-AI/StableLM
 
-StackLLaMA：SFT: LLaMA + Lora；RM[: LLaMA + Lora + 分类；h](https://link.zhihu.com/?target=https%3A//huggingface.co/blog/zh/stackllama)ttps://huggingface.co/blog/zh/stackllama
+StackLLaMA：`SFT: LLaMA + Lora`；`RM: LLaMA + Lora + 分类`；https://huggingface.co/blog/zh/stackllama
 
-llama.cpp
+`llama.cpp`
 
 +   用C/C++实现的推理，不依赖显卡。
 
-+   [https://github.com](https://link.zhihu.com/?target=https%3A//github.com/ggerganov/llama.cpp)/ggerganov/llama.cpp
++   https://github.com/ggerganov/llama.cpp
 
-GPTQ-for-LLaMA
+`GPTQ-for-LLaMA`
 
 +   4 bits [quantization](https://www.zhihu.com/search?q=quantization&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3091336166%7D) of LLaMA using GPTQ.
 

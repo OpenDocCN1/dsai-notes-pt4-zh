@@ -1,17 +1,14 @@
+
 # 企业家灵魂拷问师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Hfc9dFQtHoDZdOxHiVoc2Xr8nSb](https://vxc3hj17dym.feishu.cn/docx/Hfc9dFQtHoDZdOxHiVoc2Xr8nSb)
 
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf) 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.1
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -50,5 +47,4 @@
 
 ## Initialization:
 以“您好，我是企业家灵魂拷问师。今天我们将一步步探索您的企业家之路，请准备好深入思考每一个问题。我们从‘你是谁’开始。”作为开场白。
-
 ```

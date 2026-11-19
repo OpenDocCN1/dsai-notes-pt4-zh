@@ -1,3 +1,4 @@
+
 # Fooocus（SDXL硬件友好）
 
 > 来源：[https://seigy6zzam.feishu.cn/docx/DNfsdme7MoaWRQxtVUdcuN5TnUc](https://seigy6zzam.feishu.cn/docx/DNfsdme7MoaWRQxtVUdcuN5TnUc)
@@ -6,27 +7,27 @@
 
 ![](img/cd42874a8e72c5f9f7c5cf0ff427e9da.png)
 
-# 说明
+## 说明
 
-## 后续方向
+### 后续方向
 
-+   ContolNet会有吗？：https://github.com/lllyasviel/Fooocus/issues/46 根据下面图生图看算是反悔了一半😂
++   `ContolNet`会有吗？：https://github.com/lllyasviel/Fooocus/issues/46 根据下面图生图看算是反悔了一半😂
 
 ![](img/888ca188cdc1b853fc1d7ad6057c8965.png)
 
-+   [**Fooocus-MRE**](https://github.com/MoonRide303/Fooocus-MRE)**：**[在](https://github.com/lllyasviel/Fooocus/discussions/689)Fooocus进化成完全体之前的最强增强，但是鉴于这个讨论 Porting any of Fooocus-MRE features into original code base? Fooocus-MRE跟Fooocus走向合并？
++   [`Fooocus-MRE`](https://github.com/MoonRide303/Fooocus-MRE)：[在](https://github.com/lllyasviel/Fooocus/discussions/689)`Fooocus`进化成完全体之前的最强增强，但是鉴于这个讨论 Porting any of `Fooocus-MRE` features into original code base? `Fooocus-MRE`跟`Fooocus`走向合并？
 
 ![](img/0de35b1a899fa7e7324030fad82c7192.png)
 
-+   特殊特性：思路上更多是对齐了Stable Diffusion的高级配置，所以感觉理念上跟原作者就是有一定分歧的
++   特殊特性：思路上更多是对齐了`Stable Diffusion`的高级配置，所以感觉理念上跟原作者就是有一定分歧的
 
-+   最突出的当属对于[ControlNet的支持](https://huggingface.co/stabilityai/control-lora)（其实Fooocus在2.1的版本中Image Prompt也变相支持了controlnet）
++   最突出的当属对于[`ControlNet`的支持](https://huggingface.co/stabilityai/control-lora)（其实`Fooocus`在2.1的版本中`Image Prompt`也变相支持了controlnet）
 
 +   图片生成的参数支持保存在生成的图片中
 
-+   优化了很多小细节的体验，比如分辨率是x:x的形式，图片提示词风格可以搜索添加，给所有图片固定种子等等
++   优化了很多小细节的体验，比如分辨率是`x:x`的形式，图片提示词风格可以搜索添加，给所有图片固定种子等等
 
-## 风格参考
+### 风格参考
 
 +   [风格整理](https://seigy6zzam.feishu.cn/wiki/M3M8wAlkziPeHNkcxgYc22lCnxe)荐本文档参考整理最新风格👉
 
@@ -62,7 +63,7 @@
 &quot;Style: Texture&quot;,&quot;texture {prompt} top down close-up&quot;,&quot;ugly, deformed, noisy, blurry&quot;
 ```
 
-# 基本信息
+## 基本信息
 
 +   项目地址：https://github.com/lllyasviel/Fooocus
 
@@ -90,11 +91,11 @@
 
 +   更多请访问C站
 
-+   Fooocus为了对齐Midjourney功能训练了很多小模型，所以这些小模型都可以在这里找到：https://huggingface.co/lllyasviel/misc/tree/main，如果网络不好可以单独下载下来，但是要放到models对应的文件夹下面 Fooocus2\Fooocus\models\
++   `Fooocus`为了对齐`Midjourney`功能训练了很多小模型，所以这些小模型都可以在这里找到：https://huggingface.co/lllyasviel/misc/tree/main，如果网络不好可以单独下载下来，但是要放到`models`对应的文件夹下面 `Fooocus2\Fooocus\models\`
 
-# 汉化方法
+## 汉化方法
 
-> 将下面的文件下载下来，放到你的项目 Fooocus 代码项目文件夹的 language 子目录下，比如 Fooocus2\Fooocus\language其中的Fooocus2是我放启动脚本 run.bat 和 Fooocus 代码放库文件夹的地方，language 文件夹就在代码库文件夹下面
+> 将下面的文件下载下来，放到你的项目 `Fooocus` 代码项目文件夹的 `language` 子目录下，比如 `Fooocus2\Fooocus\language`其中的`Fooocus2`是我放启动脚本 `run.bat` 和 `Fooocus` 代码放库文件夹的地方，`language` 文件夹就在代码库文件夹下面
 
 ![](img/037b1ff9a9f2304071874a673002e75f.png)
 
@@ -102,33 +103,35 @@
 
 ![](img/a03e85b3d141f8a427976023319aaa3c.png)
 
-[cn.json](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PWmjbf90ioSs1vxqnx4ckiV0n4c)
+[`cn.json`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PWmjbf90ioSs1vxqnx4ckiV0n4c)
 
-> 编辑启动脚本，比如通用的 run.bat 文件，增加 --language cn 的启动参数，如下图所示
+> 编辑启动脚本，比如通用的 `run.bat` 文件，增加 `--language cn` 的启动参数，如下图所示
 
 ![](img/70c2eac2e341788dc39c2d00071d40af.png)
 
-# 文生图
+## 文生图
 
-+   Fooocus Advanced
++   `Fooocus Advanced`
 
 > 如果网络不好可以自行通过迅雷下载下面的模型放到相应的文件夹下面
 
-+   Base模型（6.46G）：https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors 下载到 Fooocus2\Fooocus\models\checkpoints
++   `Base`模型（6.46G）：`sd_xl_base_1.0_0.9vae.safetensors` 下载到 `Fooocus2\Fooocus\models\checkpoints`
 
-+   Refiner模型（5.66G）：https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0_0.9vae.safetensors 下载到 Fooocus2\Fooocus\models\checkpoints
++   `Refiner`模型（5.66G）：`sd_xl_refiner_1.0_0.9vae.safetensors` 下载到 `Fooocus2\Fooocus\models\checkpoints`
 
-+   Lora模型（47.3M）：https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors 下载到 Fooocus2\Fooocus\models\loras
++   `Lora`模型（47.3M）：`sd_xl_offset_example-lora_1.0.safetensors` 下载到 `Fooocus2\Fooocus\models\loras`
 
-+   VAE APPROX模型（209k）：https://huggingface.co/lllyasviel/misc/resolve/main/xlvaeapp.pth 下载到 Fooocus2\Fooocus\models\vae_approx
++   `VAE APPROX`模型（209k）：`xlvaeapp.pth` 下载到 `Fooocus2\Fooocus\models\vae_approx`
 
-## 提示词扩写
+### 提示词扩写
+
+
 
 > “Fooocus V2”风格可以看作是一种智能提示扩展。您可能会在控制台中看到一些由扩展生成的文本。这些文本以独特的方式处理，与您的书面提示不同。在大多数情况下，您无需担心这些生成的关键字会影响您的主要提示，你只要关注你的提示词是否包含关键信息
 
-> 如果网络不好可以自行通过迅雷下载下面的expansion模型(335M左右) 放到相应的文件夹下面
+> 如果网络不好可以自行通过迅雷下载下面的`expansion`模型（335M左右）放到相应的文件夹下面。
 
-+   https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_expansion.bin 下载到 Fooocus2\Fooocus\models\prompt_expansion\fooocus_expansion
++   `https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_expansion.bin` 下载到 `Fooocus2\Fooocus\models\prompt_expansion\fooocus_expansion`
 
 ![](img/544e7e07dabf3fdc2e429a289c1f917b.png)
 
@@ -138,20 +141,20 @@
 
 ![](img/3ed8c3284da4a386999f841f880a3744.png)
 
-|  | Sharpness = 2 | Sharpness = 10 | Sharpness = 20 |
+|  | `Sharpness = 2` | `Sharpness = 10` | `Sharpness = 20` |
 | --- | --- | --- | --- |
 | 对比1 | ![](img/714c17adea0a332e10b2df8ff78a2ee9.png) | ![](img/2ba5ac07021c674f3b819524df9fdade.png) | ![](img/1ae8e520b1717fad053af2a95a0dc5d5.png) |
 | 对比2 | ![](img/2a75098702df77b591ee565d0b89e0e4.png) | ![](img/cbb5c5e1b5fdffcd4ac79c9a038d0ab9.png) | ![](img/acdcf36d0cc59585f3309b14a272768d.png) |
 
 ## 提示词强度
 
-> 来自Stable Diffusion社区的 CFG scale。不同之处在于，Fooocus实施了自适应TSNR重新标度，以便在scale 较高（如大于15）时，结果不会被完全毁掉。
+> 来自Stable Diffusion社区的 `CFG scale`。不同之处在于，Fooocus实施了自适应`TSNR`重新标度，以便在`scale` 较高（如大于15）时，结果不会被完全毁掉。
 
 ![](img/b06bce0a82dfa69de48a088a80d00518.png)
 
 ## 风格选项
 
-> Fooocus V2 Style允许用户同时组合多种样式。样式的组合算法经过精心准备，因此添加多种样式不会降低画质。用户通常可以通过组合多种样式来获得非常高质量的图像。
+> `Fooocus V2 Style`允许用户同时组合多种样式。样式的组合算法经过精心准备，因此添加多种样式不会降低画质。用户通常可以通过组合多种样式来获得非常高质量的图像。
 
 ![](img/db4bff58be5e7fe4271970182a925b59.png)
 
@@ -163,17 +166,17 @@
 
 # 图生图
 
-+   [[](https://github.com/lllyasviel/Fooocus/discussions/390)Fooocus 2.0.50] Variation/Upscale (Midjourney Toolbar)
++   [`Fooocus 2.0.50`](https://github.com/lllyasviel/Fooocus/discussions/390) Variation/Upscale (Midjourney Toolbar)
 
-+   [[Fooocus 2.0.60] Fooocus Inpaint or Out](https://github.com/lllyasviel/Fooocus/discussions/414)paint (Midjourney Left/Right/Top/Bottom)
++   [`Fooocus 2.0.60`](https://github.com/lllyasviel/Fooocus/discussions/414) Fooocus Inpaint or Outpaint (Midjourney Left/Right/Top/Bottom)
 
-+   [[](https://github.com/lllyasviel/Fooocus/discussions/557)Fooocus 2.1.0] Image Prompts (Midjourney Image Prompts)
++   [`Fooocus 2.1.0`](https://github.com/lllyasviel/Fooocus/discussions/557) Image Prompts (Midjourney Image Prompts)
 
 ## 图片变化和高清化
 
-> 如果网络不好可以自行通过迅雷下载下面的upscale模型(32M左右) 放到相应的文件夹下面
+> 如果网络不好可以自行通过迅雷下载下面的`upscale`模型（32M左右）放到相应的文件夹下面。
 
-+   https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_upscaler_s409985e5.bin 下载到 Fooocus2\Fooocus\models\upscale_models
++   `https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_upscaler_s409985e5.bin` 下载到 `Fooocus2\Fooocus\models\upscale_models`
 
 ![](img/580fd3f23e2677a24561de3de62ec0a5.png)
 
@@ -194,7 +197,7 @@
 | 操作 | ![](img/dc5ccde5c5f43a602fbb48cf2278b4ee.png) | ![](img/c09bc621b451bdba8f7944667390cbf9.png) |
 | 效果 | ![](img/56dfa4133383112fb47f97d2cbd74efb.png) | ![](img/549c8f59051af8972beddaa56c5b05db.png) |
 
-快速2倍高清化（Fast 2X）
+`Fast 2X`
 
 ![](img/68e8d7abcdecf5d0f867029cb74f124a.png)
 
@@ -205,11 +208,11 @@
 
 ## 局部重绘和扩图
 
-> 如果网络不好可以自行通过迅雷下载下面的head模型(52k左右)和inpaint path(1.22G左右) 放到相应的文件夹下面
+> 如果网络不好可以自行通过迅雷下载下面的`head`模型（52k左右）和`inpaint path`（1.22G左右）放到相应的文件夹下面。
 
-+   https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/fooocus_inpaint_head.pth 下载到 Fooocus2\Fooocus\models\inpaint
++   `https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/fooocus_inpaint_head.pth` 下载到 `Fooocus2\Fooocus\models\inpaint`
 
-+   https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint.fooocus.patch 下载到Fooocus2\Fooocus\models\inpaint
++   `https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint.fooocus.patch` 下载到 `Fooocus2\Fooocus\models\inpaint`
 
 ![](img/fc3c5d06967f2991fe09a7704c30d6b7.png)
 
@@ -264,13 +267,13 @@
 
 ## 风格迁移和图片融合
 
-> 如果网络不好可以自行通过迅雷下载下面的clip [vision模型(1](https://github.com/tencent-ailab/IP-Adapter).84G左右)，ip negative(65k左右)和ip adapter(966M左右) 放到相应的文件夹下面
+> 如果网络不好可以自行通过迅雷下载下面的`clip vision`模型（1.84G左右）、`ip negative`（65k左右）和`ip adapter`（966M左右）放到相应的文件夹下面。
 
-+   https://huggingface.co/lllyasviel/misc/resolve/main/clip_vision_vit_h.safetensors 下载到 Fooocus2\Fooocus\models\clip_vision
++   `https://huggingface.co/lllyasviel/misc/resolve/main/clip_vision_vit_h.safetensors` 下载到 `Fooocus2\Fooocus\models\clip_vision`
 
-+   [https://huggingface.co/lllyasviel/misc/reso](https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_ip_negative.safetensors)lve/main/fooocus_ip_negative.safetensors 下载到Fooocus2\Fooocus\models\controlnet
++   `https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_ip_negative.safetensors` 下载到 `Fooocus2\Fooocus\models\controlnet`
 
-+   "https://huggingface.co/lllyasviel/misc/resolve/main/ip-adapter-plus_sdxl_vit-h.bin 下载到Fooocus2\Fooocus\models\controlnet
++   `https://huggingface.co/lllyasviel/misc/resolve/main/ip-adapter-plus_sdxl_vit-h.bin` 下载到 `Fooocus2\Fooocus\models\controlnet`
 
 ![](img/8488372479e15ffa08e241e5dec32474.png)
 
@@ -303,17 +306,17 @@
 
 ## 图片结构参考
 
-> 如果网络不好可以自行通过迅雷下载下面的controlnet模型(400M左右) 放到相应的文件夹下面
+> 如果网络不好可以自行通过迅雷下载下面的`controlnet`模型（400M左右）放到相应的文件夹下面。
 
-+   [ht](https://huggingface.co/lllyasviel/misc/resolve/main/control-lora-canny-rank128.safetensors)tps://huggingface.co/lllyasviel/misc/resolve/main/control-lora-canny-rank128.safetensors 下载到 Fooocus2\Fooocus\models\controlnet
++   `https://huggingface.co/lllyasviel/misc/resolve/main/control-lora-canny-rank128.safetensors` 下载到 `Fooocus2\Fooocus\models\controlnet`
 
-+   [https://huggingface.co/lllyasviel/misc/reso](https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_xl_cpds_128.safetensors)lve/main/fooocus_xl_cpds_128.safetensors 下载到 Fooocus2\Fooocus\models\controlnet
++   `https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_xl_cpds_128.safetensors` 下载到 `Fooocus2\Fooocus\models\controlnet`
 
 ![](img/8ba44a13abaed42f3b601284b0d394b5.png)
 
 ### Canny边缘
 
-> 基于金字塔的Canny边缘控制。原因是SDXL使用1024px图像，标准Canny在如此高的分辨率下，往往会时不时地遗漏一些图像细节。这种方法使用多种分辨率来检测canny边缘，然后将它们软组合，从而捕获更多的结构（比canny）。金字塔部分来自“Edge Drawing：一种结合的实时边缘和段检测器”。使用时您将下载350MB的控件模型。
+> 基于金字塔的`Canny`边缘控制。原因是`SDXL`使用`1024px`图像，标准`Canny`在如此高的分辨率下，往往会时不时地遗漏一些图像细节。这种方法使用多种分辨率来检测`canny`边缘，然后将它们软组合，从而捕获更多的结构（比`canny`）。金字塔部分来自“Edge Drawing：一种结合的实时边缘和段检测器”。使用时您将下载350MB的控件模型。
 
 ![](img/8af760c5a8dd4916463f06473d47e0d1.png)
 
@@ -321,9 +324,9 @@
 
 ![](img/106249a30c67dab2084c46bf8ca950a1.png)
 
-### **CPDS结构提取**
+### `CPDS`结构提取
 
-> 来自“[对比度保留脱色（CPD）](http://www.cse.cuhk.edu.hk/leojia/projects/color2gray/index.html)”的结构提取算法。“CPDS”意味着CPD结构。控制模型由Fooocus团队修改——它从SAI的深度控制-lora开始。使用这种方法的原因是速度快，免下载预处理器。请注意，我们只使用图像的结构部分，它并不是真正的“脱色”。使用它时，您将下载350MB的控制模型。
+> 来自“对比度保留脱色（`CPD`）”的结构提取算法。“`CPDS`”意味着`CPD`结构。控制模型由Fooocus团队修改——它从`SAI`的深度控制-`lora`开始。使用这种方法的原因是速度快，免下载预处理器。请注意，我们只使用图像的结构部分，它并不是真正的“脱色”。使用它时，您将下载350MB的控制模型。
 
 |  | **保持**提示词姿势不变 | **改变**提示词姿势不变 |
 | --- | --- | --- |
@@ -331,15 +334,15 @@
 
 # 图片描述
 
-+   [F](https://github.com/lllyasviel/Fooocus/discussions/1363)ooocus 2.1.831: Fooocus Describe (in line with Midjourney Describe)
++   [`Fooocus 2.1.831`](https://github.com/lllyasviel/Fooocus/discussions/1363): `Fooocus Describe` (in line with `Midjourney Describe`)
 
-> 如果网络不好可以自行通过迅雷下载下面的controlnet模型(400M左右) 放到相应的文件夹下面
+> 如果网络不好可以自行通过迅雷下载下面的`controlnet`模型（400M左右）放到相应的文件夹下面。
 
-+   [https://huggingface.co/lllyasviel/misc/](https://huggingface.co/11lyasviel/misc/resolve/main/wd-v1-4-moat-tagger-v2.onnx)resolve/main/wd-v1-4-moat-tagger-v2.onnx 下载到 Fooocus2\Fooocus\models\clip_vision
++   `https://huggingface.co/lllyasviel/misc/resolve/main/wd-v1-4-moat-tagger-v2.onnx` 下载到 `Fooocus2\Fooocus\models\clip_vision`
 
-+   [https://huggingface.co/lllyasviel/misc](https://huggingface.co/11lyasviel/misc/resolve/main/wd-v1-4-moat-tagger-v2.csv)/resolve/main/wd-v1-4-moat-tagger-v2.csv 下载到 Fooocus2\Fooocus\models\clip_vision
++   `https://huggingface.co/lllyasviel/misc/resolve/main/wd-v1-4-moat-tagger-v2.csv` 下载到 `Fooocus2\Fooocus\models\clip_vision`
 
-+   [ht](https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_xl_cpds_128.safetensors)tps://huggingface.co/lllyasviel/misc/resolve/main/model_base_caption_capfilt_large.pth 下载到 Fooocus2\Fooocus\models\clip_vision
++   `https://huggingface.co/lllyasviel/misc/resolve/main/model_base_caption_capfilt_large.pth` 下载到 `Fooocus2\Fooocus\models\clip_vision`
 
 ![](img/b40a0a8afb1b9ce3a5a708f983dd2a19.png)
 
@@ -353,13 +356,15 @@
 
 +   视频演示
 
+
+
 ![](img/6192f82a75a140121899ee6f2401b0db.png)
 
 [290128299-f207188f-8469-4c98-93a4-37f8d33689a5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZSBxbwe3NoJHj6xjVtTcR1icnTf)
 
 # Preset配置
 
-+   [F](https://github.com/lllyasviel/Fooocus/discussions/679)ooocus 2.1.60: Official Anime and Realistic Support
++ [Fooocus](https://github.com/lllyasviel/Fooocus/discussions/679) 2.1.60: Official Anime and Realistic Support
 
 作者特别增加了动漫和真实风单独的启动脚本，调整启动参数，自动下载调优验证后的预设模型们
 
@@ -367,33 +372,29 @@
 
 > 如果网络不好可以自行通过迅雷下载在这里下载新的大模型 https://huggingface.co/lllyasviel/fav_models/tree/main/fav，下载后放到相应的文件夹下面
 
-+   动漫风大模型：
++ 动漫风大模型：`https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/bluePencilXL_v050.safetensors` 下载到 `Fooocus2\Fooocus\models\checkpoints`
 
-+   https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/bluePencilXL_v050.safetensors 下载到 Fooocus2\Fooocus\models\checkpoints
++ `https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/DreamShaper_8_pruned.safetensors` 下载到 `Fooocus2\Fooocus\models\checkpoints`
 
-+   https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/DreamShaper_8_pruned.safetensors 下载到 Fooocus2\Fooocus\models\checkpoints
++ 动漫风embedding：`https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/unaestheticXLv31.safetensors` 下载到 `Fooocus2\Fooocus\models\embeddings`
 
-+   动漫风embedding：https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/unaestheticXLv31.safetensors 下载到 Fooocus2\Fooocus\models\embeddings
++ 真实风大模型：`https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/realisticStockPhoto_v10.safetensors` 下载到 `Fooocus2\Fooocus\models\checkpoints`
 
-+   真实风大模型：https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/realisticStockPhoto_v10.safetensors 下载到Fooocus2\Fooocus\models\checkpoints
-
-+   真实风lora：https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/SDXL_FILM_PHOTOGRAPHY_STYLE_BetaV0.4.safetensors 下载到Fooocus2\Fooocus\models\loras
++ 真实风lora：`https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/SDXL_FILM_PHOTOGRAPHY_STYLE_BetaV0.4.safetensors` 下载到 `Fooocus2\Fooocus\models\loras`
 
 ## 动漫风预设
 
-> https://github.com/lllyasviel/Fooocus/blob/main/presets/anime.json
+> `https://github.com/lllyasviel/Fooocus/blob/main/presets/anime.json`
 
-> 使用SD1.5（DreamShaper_8）来细化SDXL（BluePencilXL），注意“sd1.5-as-xl-细化器算法”不同于所有其他软件——它只适用于Foocus，对应C站的地址：
+> 使用SD1.5（`DreamShaper_8`）来细化SDXL（`BluePencilXL`），注意“sd1.5-as-xl-细化器算法”不同于所有其他软件——它只适用于`Fooocus`，对应C站的地址：
 
-> base XL：[https://civitai.com/models/](https://civitai.com/models/119012/bluepencil-xl)119012/bluep[encil-xl
+> base XL：`https://civitai.com/models/119012/bluepencil-xl`
 
-> refiner 1.5：ht](https://civitai.com/models/4384/dreamshaper)tps://civit[a](https://civitai.com/models/119032/unaestheticxl-or-negative-ti)i.com/models/4384/dreamshaper
+> refiner 1.5：`https://civitai.com/models/4384/dreamshaper`
 
-> embeddings：https://civitai.com/models/119032/unaestheticxl-or-negative-ti
-
+> embeddings：`https://civitai.com/models/119032/unaestheticxl-or-negative-ti`
 
 ![](img/8eac049ade54f3c5d6a61ddade19a47f.png)
-
 
 ![](img/f374a2f3aa69c05146937e84cb13fdf6.png)
 
@@ -403,16 +404,15 @@
 
 ## 真实风预设
 
-> https://github.com/lllyasviel/Fooocus/blob/main/presets/realistic.json
+> `https://github.com/lllyasviel/Fooocus/blob/main/presets/realistic.json`
 
-> 使用Foocus锐化度（sharpness）来增强SDXL（realessStockPhoto），对应C站的地址：
+> 使用`Fooocus`锐化度（sharpness）来增强SDXL（`realessStockPhoto`），对应C站的地址：
 
-> base XL：[h](https://civitai.com/models/139565/realistic-stock-photo)ttps:[/](https://civitai.com/models/158945/sdxl-film-photography-style)/civitai.com/models/139565/realistic-stock-photo
+> base XL：`https://civitai.com/models/139565/realistic-stock-photo`
 
-> LORA：https://civitai.com/models/158945/sdxl-film-photography-style
+> LORA：`https://civitai.com/models/158945/sdxl-film-photography-style`
 
 ![](img/7a34128d25099639623832a4d27d62e5.png)
-
 
 ![](img/aff6bd695523a36d77925009bf3665de.png)
 
@@ -420,9 +420,13 @@
 
 ## 自定义预设
 
-> 参考 https://github.com/lllyasviel/Fooocus/tree/main/presets 中其他预设的配置，然后在启动脚本 run.bat 里面调整启动参数，比如下面这个（其实动漫风和真实风启动脚本 run-xxx.bat 也是使用 preset的参数）
+> 参考 `https://github.com/lllyasviel/Fooocus/tree/main/presets` 中其他预设的配置，然后在启动脚本 `run.bat` 里面调整启动参数，比如下面这个（其实动漫风和真实风启动脚本 `run-xxx.bat` 也是使用 preset 的参数）
 
-> python entry_with_update.py --preset name_of_your_preset，如果你不清楚如何使用建议不要自己尝试。
+> ```
+> python entry_with_update.py --preset name_of_your_preset
+> ```
+>
+> 如果你不清楚如何使用建议不要自己尝试。
 
 # 功能对照参考
 
@@ -430,28 +434,28 @@
 
 |  | Midjourney | Fooocus |
 | --- | --- | --- |
-| 特点综述 | 高质量的文本到图像，无需太多的提示工程或参数调整。  （未知方法） | 高质量的文本到图像，无需太多的提示工程或参数调整。 |
-| 图片变化 | V1 V2 V3 V4 | 输入图片 -&gt; Upscale or Variation -&gt; Vary (Subtle) / Vary (Strong) |
-| 高清化 | U1 U2 U3 U4 | 输入图片 -&gt; Upscale or Variation -&gt; Upscale (1.5x) / Upscale (2x) |
-| 局部重绘和扩充图像 | Inpaint / Up / Down / Left / Right (Pan) | 输入图片 -&gt; Inpaint or Outpaint -&gt; Inpaint / Up / Down / Left / Right |
-| 图生图 | Image Prompt | 输入图片 -&gt; Image Prompt |
-| 风格设置 | --style | Advanced -&gt; Style |
-| 提示词强度 | --stylize | Advanced -&gt; Advanced -&gt; Guidance |
-| 动漫风 | --niji | Fooocus supports SDXL models on Civitai  (如果您不知道，可以谷歌搜索“Civitai”) |
-| 质量优先 | --quality | Advanced -&gt; Setting -&gt; Performance -&gt; Quality |
-| 单次生图数量 | --repeat | Advanced -&gt; Image Number |
-| 多条提示词 | Multi Prompts (::) | Just use multiple lines of prompts |
-| 提示词权重 | Prompt Weights | You can use &quot; I am (happy:1.5)&quot;. |
-| 负向提示词 | --no | Advanced -&gt; Negative Prompt |
-| 分辨率 | --ar --aspect | Advanced -&gt; Aspect Ratios |
-| 生成图片提示词 | /describe | Input Image -&gt; Describe |
-| 混乱程度 | --chaos | ？？？ |
-| 其他命令 | /ask  对话问答  /info.查看账号  /docs 查文档 | ？？？ |
+| 特点综述 | 高质量的文本到图像，无需太多的提示工程或参数调整。 （未知方法） | 高质量的文本到图像，无需太多的提示工程或参数调整。 |
+| 图片变化 | V1 V2 V3 V4 | 输入图片 -> Upscale or Variation -> Vary (Subtle) / Vary (Strong) |
+| 高清化 | U1 U2 U3 U4 | 输入图片 -> Upscale or Variation -> Upscale (1.5x) / Upscale (2x) |
+| 局部重绘和扩充图像 | Inpaint / Up / Down / Left / Right (Pan) | 输入图片 -> Inpaint or Outpaint -> Inpaint / Up / Down / Left / Right |
+| 图生图 | Image Prompt | 输入图片 -> Image Prompt |
+| 风格设置 | `--style` | Advanced -> Style |
+| 提示词强度 | `--stylize` | Advanced -> Advanced -> Guidance |
+| 动漫风 | `--niji` | Fooocus supports SDXL models on Civitai （如果您不知道，可以谷歌搜索“Civitai”） |
+| 质量优先 | `--quality` | Advanced -> Setting -> Performance -> Quality |
+| 单次生图数量 | `--repeat` | Advanced -> Image Number |
+| 多条提示词 | Multi Prompts (`::`) | Just use multiple lines of prompts |
+| 提示词权重 | Prompt Weights | You can use " I am (`happy:1.5`)". |
+| 负向提示词 | `--no` | Advanced -> Negative Prompt |
+| 分辨率 | `--ar` `--aspect` | Advanced -> Aspect Ratios |
+| 生成图片提示词 | `/describe` | Input Image -> Describe |
+| 混乱程度 | `--chaos` | ？？？ |
+| 其他命令 | `/ask` 对话问答 `/info.` 查看账号 `/docs` 查文档 | ？？？ |
 
 ## LeonardoAI
 
 |  | Midjourney | Fooocus |
 | --- | --- | --- |
-| 提示词扩写 | Prompt Magic | Advanced -&gt; Style -&gt; Fooocus V2 |
-| 高级参数 | Advanced Sampler Parameters (like Contrast/Sharpness/etc) | Advanced -&gt; Advanced -&gt; Sampling Sharpness / etc |
-| 图片控制方法 | User-friendly ControlNets | Input Image -&gt; Image Prompt -&gt; Advanced |
+| 提示词扩写 | Prompt Magic | Advanced -> Style -> Fooocus V2 |
+| 高级参数 | Advanced Sampler Parameters (like Contrast/Sharpness/etc) | Advanced -> Advanced -> Sampling Sharpness / etc |
+| 图片控制方法 | User-friendly ControlNets | Input Image -> Image Prompt -> Advanced |

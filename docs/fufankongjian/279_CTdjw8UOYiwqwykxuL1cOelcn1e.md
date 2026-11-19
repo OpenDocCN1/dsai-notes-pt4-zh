@@ -1,8 +1,7 @@
-# 02-Bridge-Pipeline规范-v1.0
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/LU8YdWVOAo1MIexHQnxcY8ZFnvb](https://kq4b3vgg5b.feishu.cn/docx/LU8YdWVOAo1MIexHQnxcY8ZFnvb)
 
 # Bridge Pipeline 规范 v1.0
+
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/LU8YdWVOAo1MIexHQnxcY8ZFnvb](https://kq4b3vgg5b.feishu.cn/docx/LU8YdWVOAo1MIexHQnxcY8ZFnvb)
 
 > 适用场景：企业内部知识库 / 客服智能问答 / 技术文档检索 / 行业资料分析
 
@@ -12,25 +11,25 @@
 
 > 更新日期：2026-04
 
-> 来源：赋范大模型技术社区 · 多模态 RAG 项目实战课
+> 来源：赋范大模型技术社区 · 多模态 `RAG` 项目实战课
 
 ---
 
 ## 一、Pipeline 职责定义
 
-Bridge Pipeline 是多模态数据从原始文件进入可检索状态的完整处理链路。
+`Bridge Pipeline` 是多模态数据从原始文件进入可检索状态的完整处理链路。
 
 **输入**：原始文档（PDF、图片、纯文本）
 
 **输出**：
 
-+   向量存储里的 Embedding 记录（文本块 + 图片）
++ 向量存储里的 `Embedding` 记录（文本块 + 图片）
 
-+   知识图谱存储里的节点和关系（通过 LangExtract 抽取）
++ 知识图谱存储里的节点和关系（通过 `LangExtract` 抽取）
 
-+   元数据索引（文件信息、处理状态、分块映射）
++ 元数据索引（文件信息、处理状态、分块映射）
 
-**核心原则**：Bridge Pipeline 不执行检索，不做问答。它只负责数据进来、索引建好。数据质量在这里决定，后续所有 RAG 的上限在这里锁定。
+**核心原则**：`Bridge Pipeline` 不执行检索，不做问答。它只负责数据进来、索引建好。数据质量在这里决定，后续所有 RAG 的上限在这里锁定。
 
 ---
 
@@ -89,45 +88,51 @@ Bridge Pipeline 是多模态数据从原始文件进入可检索状态的完整�
 
 ```
 CHUNK_CONFIG = {
-    &quot;chunk_size&quot;: 512,          # tokens，不是字符数
-    &quot;chunk_overlap&quot;: 64,        # 相邻块的重叠 tokens
-    &quot;separators&quot;: [             # 优先按以下分隔符切分
-        &quot;\n\n&quot;,                 # 段落间
-        &quot;\n&quot;,                   # 行间
-        &quot;。&quot;,                   # 中文句号
-        &quot;.&quot;,                    # 英文句号
-        &quot; &quot;,                    # 空格
+    "chunk_size": 512,          # tokens，不是字符数
+    "chunk_overlap": 64,        # 相邻块的重叠 tokens
+    "separators": [             # 优先按以下分隔符切分
+        "\n\n",                 # 段落间
+        "\n",                   # 行间
+        "。",                   # 中文句号
+        ".",                    # 英文句号
+        " ",                    # 空格
     ],
-    &quot;add_start_index&quot;: True,    # 记录块在原文中的位置
+    "add_start_index": True,    # 记录块在原文中的位置
 }
 ```
 
 ### 3.2 特殊内容处理
 
 | 内容类型 | 处理方式 |
+
 | --- | --- |
-| 表格 | 转换为 Markdown 表格格式后整块存储，不拆分 |
+
+| 表格 | 转换为 `Markdown` 表格格式后整块存储，不拆分 |
+
 | 代码块 | 保持完整，不按 token 数强制截断 |
-| 图片（PDF 内嵌） | 提取为独立图片文件，生成独立 Embedding |
+
+| 图片（PDF 内嵌） | 提取为独立图片文件，生成独立 `Embedding` |
+
 | 页眉 / 页脚 | 正则过滤，不进入分块 |
-| 超长段落（&gt; 1024 tokens） | 强制按 512 token 滑动窗口拆分 |
+
+| 超长段落（> 1024 tokens） | 强制按 512 token 滑动窗口拆分 |
 
 ### 3.3 Chunk 元数据结构
 
 ```
 {
-  &quot;chunk_id&quot;: &quot;doc_001_chunk_003&quot;,
-  &quot;file_id&quot;: &quot;doc_001&quot;,
-  &quot;content&quot;: &quot;...&quot;,
-  &quot;start_index&quot;: 1024,
-  &quot;end_index&quot;: 1536,
-  &quot;chunk_type&quot;: &quot;text&quot;,
-  &quot;page_number&quot;: 2,
-  &quot;metadata&quot;: {
-    &quot;source_file&quot;: &quot;architecture_spec.pdf&quot;,
-    &quot;section_title&quot;: &quot;系统架构设计&quot;,
-    &quot;has_table&quot;: false,
-    &quot;has_code&quot;: true
+  "chunk_id": "doc_001_chunk_003",
+  "file_id": "doc_001",
+  "content": "...",
+  "start_index": 1024,
+  "end_index": 1536,
+  "chunk_type": "text",
+  "page_number": 2,
+  "metadata": {
+    "source_file": "architecture_spec.pdf",
+    "section_title": "系统架构设计",
+    "has_table": false,
+    "has_code": true
   }
 }
 ```
@@ -136,31 +141,31 @@ CHUNK_CONFIG = {
 
 ## 四、Embedding 规范
 
-### 4.1 文本 Embedding（BGE-M3）
+### 4.1 文本 `Embedding`（`BGE-M3`）
 
 ```
 TEXT_EMBEDDING_CONFIG = {
-    &quot;model&quot;: &quot;BAAI/bge-m3&quot;,
-    &quot;device&quot;: &quot;cuda&quot;,           # GPU 推理，CPU 备选
-    &quot;batch_size&quot;: 32,
-    &quot;max_length&quot;: 512,
-    &quot;output&quot;: {
-        &quot;dense_vector&quot;: True,   # 1024 维稠密向量
-        &quot;sparse_vector&quot;: True,  # BM25 稀疏权重
-        &quot;colbert_vector&quot;: False # 多粒度向量（可选，资源较重）
+    "model": "BAAI/bge-m3",
+    "device": "cuda",           # GPU 推理，CPU 备选
+    "batch_size": 32,
+    "max_length": 512,
+    "output": {
+        "dense_vector": True,   # 1024 维稠密向量
+        "sparse_vector": True,  # BM25 稀疏权重
+        "colbert_vector": False # 多粒度向量（可选，资源较重）
     }
 }
 ```
 
-### 4.2 图片 Embedding（OpenCLIP）
+### 4.2 图片 `Embedding`（`OpenCLIP`）
 
 ```
 IMAGE_EMBEDDING_CONFIG = {
-    &quot;model&quot;: &quot;ViT-B-32&quot;,
-    &quot;pretrained&quot;: &quot;openai&quot;,
-    &quot;device&quot;: &quot;cuda&quot;,
-    &quot;output_dim&quot;: 512,
-    &quot;normalize&quot;: True
+    "model": "ViT-B-32",
+    "pretrained": "openai",
+    "device": "cuda",
+    "output_dim": 512,
+    "normalize": True
 }
 ```
 
@@ -169,18 +174,18 @@ IMAGE_EMBEDDING_CONFIG = {
 ```
 # 文本 Collection
 TEXT_COLLECTION = {
-    &quot;name&quot;: &quot;text_chunks&quot;,
-    &quot;vectors&quot;: {
-        &quot;dense&quot;: {&quot;size&quot;: 1024, &quot;distance&quot;: &quot;Cosine&quot;},
-        &quot;sparse&quot;: {&quot;index&quot;: {&quot;type&quot;: &quot;sparse&quot;}}
+    "name": "text_chunks",
+    "vectors": {
+        "dense": {"size": 1024, "distance": "Cosine"},
+        "sparse": {"index": {"type": "sparse"}}
     }
 }
 
 # 图片 Collection
 IMAGE_COLLECTION = {
-    &quot;name&quot;: &quot;image_chunks&quot;,
-    &quot;vectors&quot;: {
-        &quot;image&quot;: {&quot;size&quot;: 512, &quot;distance&quot;: &quot;Cosine&quot;}
+    "name": "image_chunks",
+    "vectors": {
+        "image": {"size": 512, "distance": "Cosine"}
     }
 }
 ```
@@ -189,27 +194,27 @@ IMAGE_COLLECTION = {
 
 ## 五、知识图谱抽取规范
 
-### 5.1 LangExtract 配置
+### 5.1 `LangExtract` 配置
 
 ```
 KG_EXTRACTION_CONFIG = {
-    &quot;llm&quot;: &quot;deepseek-chat&quot;,
-    &quot;entity_types&quot;: [
-        &quot;PERSON&quot;,       # 人名
-        &quot;ORG&quot;,          # 组织机构
-        &quot;TECH&quot;,         # 技术术语
-        &quot;CONCEPT&quot;,      # 抽象概念
-        &quot;PRODUCT&quot;,      # 产品名称
+    "llm": "deepseek-chat",
+    "entity_types": [
+        "PERSON",       # 人名
+        "ORG",          # 组织机构
+        "TECH",         # 技术术语
+        "CONCEPT",      # 抽象概念
+        "PRODUCT",      # 产品名称
     ],
-    &quot;relation_types&quot;: [
-        &quot;USES&quot;,         # A 使用 B
-        &quot;PART_OF&quot;,      # A 属于 B
-        &quot;RELATED_TO&quot;,   # A 与 B 相关
-        &quot;IMPLEMENTS&quot;,   # A 实现 B
-        &quot;DEPENDS_ON&quot;,   # A 依赖 B
+    "relation_types": [
+        "USES",         # A 使用 B
+        "PART_OF",      # A 属于 B
+        "RELATED_TO",   # A 与 B 相关
+        "IMPLEMENTS",   # A 实现 B
+        "DEPENDS_ON",   # A 依赖 B
     ],
-    &quot;max_entities_per_chunk&quot;: 10,
-    &quot;min_confidence&quot;: 0.7
+    "max_entities_per_chunk": 10,
+    "min_confidence": 0.7
 }
 ```
 
@@ -217,13 +222,13 @@ KG_EXTRACTION_CONFIG = {
 
 ```
 {
-  &quot;node_id&quot;: &quot;entity_tech_qdrant_001&quot;,
-  &quot;label&quot;: &quot;TECH&quot;,
-  &quot;name&quot;: &quot;Qdrant&quot;,
-  &quot;properties&quot;: {
-    &quot;description&quot;: &quot;向量数据库，支持多向量存储和元数据过滤&quot;,
-    &quot;source_chunk_ids&quot;: [&quot;doc_001_chunk_003&quot;, &quot;doc_001_chunk_007&quot;],
-    &quot;confidence&quot;: 0.95
+  "node_id": "entity_tech_qdrant_001",
+  "label": "TECH",
+  "name": "Qdrant",
+  "properties": {
+    "description": "向量数据库，支持多向量存储和元数据过滤",
+    "source_chunk_ids": ["doc_001_chunk_003", "doc_001_chunk_007"],
+    "confidence": 0.95
   }
 }
 ```
@@ -232,14 +237,14 @@ KG_EXTRACTION_CONFIG = {
 
 ```
 {
-  &quot;edge_id&quot;: &quot;rel_001&quot;,
-  &quot;source_node&quot;: &quot;entity_tech_langchain_001&quot;,
-  &quot;target_node&quot;: &quot;entity_tech_qdrant_001&quot;,
-  &quot;relation&quot;: &quot;USES&quot;,
-  &quot;properties&quot;: {
-    &quot;context&quot;: &quot;LangChain 通过 QdrantVectorStore 接入 Qdrant&quot;,
-    &quot;source_chunk_id&quot;: &quot;doc_001_chunk_005&quot;,
-    &quot;confidence&quot;: 0.88
+  "edge_id": "rel_001",
+  "source_node": "entity_tech_langchain_001",
+  "target_node": "entity_tech_qdrant_001",
+  "relation": "USES",
+  "properties": {
+    "context": "LangChain 通过 QdrantVectorStore 接入 Qdrant",
+    "source_chunk_id": "doc_001_chunk_005",
+    "confidence": 0.88
   }
 }
 ```
@@ -248,7 +253,7 @@ KG_EXTRACTION_CONFIG = {
 
 ## 六、状态机设计
 
-Pipeline 每次处理任务都绑定一个状态机：
+`Pipeline` 每次处理任务都绑定一个状态机：
 
 ```
 PENDING
@@ -275,38 +280,44 @@ COMPLETED        ← 处理成功
 FAILED           ← 处理失败，记录错误信息
 ```
 
-**幂等性保证**：同一个文件（相同 MD5）重复上传不重新处理，直接返回已有结果。
+**幂等性保证**：同一个文件（相同 `MD5`）重复上传不重新处理，直接返回已有结果。
 
 ---
 
 ## 七、错误处理
 
 | 错误类型 | 处理策略 |
+
 | --- | --- |
-| 解析失败（PDF 损坏、格式不支持） | 标记 FAILED，返回具体错误原因 |
-| Embedding 超时 | 自动重试 3 次，指数退避，超过后标记 FAILED |
-| KG 抽取失败 | 降级处理：跳过 KG 抽取，仅保存 Embedding，标记为 PARTIAL |
-| 存储写入失败 | 事务回滚，清理已写入数据，标记 FAILED |
+
+| 解析失败（PDF 损坏、格式不支持） | 标记 `FAILED`，返回具体错误原因 |
+
+| `Embedding` 超时 | 自动重试 3 次，指数退避，超过后标记 `FAILED` |
+
+| `KG` 抽取失败 | 降级处理：跳过 `KG` 抽取，仅保存 `Embedding`，标记为 `PARTIAL` |
+
+| 存储写入失败 | 事务回滚，清理已写入数据，标记 `FAILED` |
+
 | 文件过大 | 在接入层拒绝，返回 413 错误，不进入处理流程 |
 
 ---
 
-## 八、与 AgenticRAG 规范的接口
+## 八、与 `AgenticRAG` 规范的接口
 
-Bridge Pipeline 处理完成后，AgenticRAG 通过以下接口读取数据：
+`Bridge Pipeline` 处理完成后，`AgenticRAG` 通过以下接口读取数据：
 
 ```
 # 文本检索接口（由 AgenticRAG 调用）
-def search_text(query: str, top_k: int = 10, filters: dict = None) -&gt; List[Chunk]
+def search_text(query: str, top_k: int = 10, filters: dict = None) -> List[Chunk]
 
 # 图片检索接口
-def search_image(query_image: bytes, top_k: int = 5) -&gt; List[ImageChunk]
+def search_image(query_image: bytes, top_k: int = 5) -> List[ImageChunk]
 
 # 图谱查询接口
-def query_graph(entity_name: str, depth: int = 2) -&gt; SubGraph
+def query_graph(entity_name: str, depth: int = 2) -> SubGraph
 
 # 文件信息接口
-def get_document_status(file_id: str) -&gt; DocumentStatus
+def get_document_status(file_id: str) -> DocumentStatus
 ```
 
-**约定**：AgenticRAG 只通过上述接口访问数据，不直接操作存储层。
+**约定**：`AgenticRAG` 只通过上述接口访问数据，不直接操作存储层。

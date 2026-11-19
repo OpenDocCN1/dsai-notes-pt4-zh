@@ -1,10 +1,11 @@
+
 # DeepSeek 代理律师
 
 > 来源：[https://geekbang.feishu.cn/docx/OiYNdoxdVoVclXxujsncuLd4nwd](https://geekbang.feishu.cn/docx/OiYNdoxdVoVclXxujsncuLd4nwd)
 
 📕：[刘律师在长春](https://www.xiaohongshu.com/user/profile/602a40c90000000001007043?channel_type=web_search_result_notes&parent_page_channel_type=web_user_board&xsec_token=AB-wlLeggTLD7ci9EZDhRGbSdL92_aZd28GBT4hY7Deko=&xsec_source=pc_search)
 
-背景：
+## 背景
 
 大年初三，我再次试用了Dc，测试了一个简单案例，Dc的回答让人害怕，我们的职业很快要被取代了吗
 
@@ -17,12 +18,5 @@
 说句实在话，这样的诉状和答辩状，恐怕有些实习律师都不一定能做到非常全面。透过这样的分析，我觉得我也没必要让他写判决书了，他一定能够写好！这是不是意味着，它已经能够直接解决一些简单案件，只要输入事实，双方律师，法官恐怕都没有必要亲手工作了。
 
 我感觉解决复杂的诉讼问题，恐怕也在路上，非诉讼问题更不在话下。
-
-
-
-
-
-
-
 
 ![](img/cf717365bbf57e6661fee5694e185761.png)

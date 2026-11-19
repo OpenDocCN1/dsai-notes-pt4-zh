@@ -1,249 +1,285 @@
-# GLM-4.1V-9B-Thinking GUI Agent 说明
+
+# `GLM-4.1V-9B-Thinking` GUI Agent 说明
 
 > 来源：[https://ai.feishu.cn/docx/FjuDdGmyUoiYTPxbaPLc5ZxFnPd](https://ai.feishu.cn/docx/FjuDdGmyUoiYTPxbaPLc5ZxFnPd)
 
-在这个文档中，我们说明在 GLM-4.1V-9B-Thinking 在手机、电脑和网页中发挥 GUI Agent 能力的最佳实践。遵循以下设定可以有效保证模型在对应榜单和环境下的表现。
+在这个文档中，我们说明在 `GLM-4.1V-9B-Thinking` 在手机、电脑和网页中发挥 `GUI Agent` 能力的最佳实践。遵循以下设定可以有效保证模型在对应榜单和环境下的表现。
 
 ## 手机环境
 
-如果你想要测试GLM-4.1V-9B-Thinking在榜单AndroidWorld上的性能，请遵循这一节的说明。
+如果你想要测试 `GLM-4.1V-9B-Thinking` 在榜单 `AndroidWorld` 上的性能，请遵循这一节的说明。
 
 ### 动作空间
 
-1.  status：表示当前任务已经结束，并给出执行状态。它包含一个参数：
+1. `status`：表示当前任务已经结束，并给出执行状态。它包含一个参数：
 
-+   goal_status。该参数有两个枚举值：complete 和 infeasible；前者表示任务正常完成，后者表示任务无法完成。
++ `goal_status`。该参数有两个枚举值：`complete` 和 `infeasible`；前者表示任务正常完成，后者表示任务无法完成。
 
-1.  answer：表示回答用户的问题。它包含一个参数：
+1. `answer`：表示回答用户的问题。它包含一个参数：
 
-+   text：表示回答的内容。
++ `text`：表示回答的内容。
 
-1.  click：表示单击界面上的某个位置。它包含一个参数：
+1. `click`：表示单击界面上的某个位置。它包含一个参数：
 
-+   box_2d：以[[xmin,ymin,xmax,ymax]]的形式表示点击的位置；坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
++ `box_2d`：以 `[[xmin,ymin,xmax,ymax]]` 的形式表示点击的位置；坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
 
-1.  long_press：表示单击界面上的某个位置。它和click使用相同的参数。
+1. `long_press`：表示单击界面上的某个位置。它和 `click` 使用相同的参数。
 
-1.  input_text：表示先点击给定位置，然后再输入一段文本。它有如下三个参数：
+1. `input_text`：表示先点击给定位置，然后再输入一段文本。它有如下三个参数：
 
-+   text：表示被输入的文本内容。
++ `text`：表示被输入的文本内容。
 
-+   box_2d：和click的box_2d参数有相同的形式和含义。表示文本框的位置。
++ `box_2d`：和 `click` 的 `box_2d` 参数有相同的形式和含义。表示文本框的位置。
 
-+   override：布尔类型。这个参数为true，表示应当先清空文本框中的现有内容，然后进行文本输入；这个参数为false ，表示会在当前文本框的最后追加新内容。
++ `override`：布尔类型。这个参数为 `true`，表示应当先清空文本框中的现有内容，然后进行文本输入；这个参数为 `false` ，表示会在当前文本框的最后追加新内容。
 
-1.  keyboard_enter：表示按下回车键。它没有参数。
+1. `keyboard_enter`：表示按下回车键。它没有参数。
 
-1.  navigate_home：表示按下主屏幕键。它没有参数。
+1. `navigate_home`：表示按下主屏幕键。它没有参数。
 
-1.  navigate_back：表示按下返回键。它没有参数。
+1. `navigate_back`：表示按下返回键。它没有参数。
 
-1.  swipe：表示手指滑动。它有以下两个参数。
+1. `swipe`：表示手指滑动。它有以下两个参数。
 
-+   direction：该参数有四个枚举值：up、down、left、right，表示手指滑动的方向。例如，up 表示手指在手机屏幕向上移动，对应于屏幕内容向下滚动。
++ `direction`：该参数有四个枚举值：`up`、`down`、`left`、`right`，表示手指滑动的方向。例如，`up` 表示手指在手机屏幕向上移动，对应于屏幕内容向下滚动。
 
-+   box_2d：表示被滚动的区域。如果没有指明这个参数，表示进行全屏幕的滚动。
++ `box_2d`：表示被滚动的区域。如果没有指明这个参数，表示进行全屏幕的滚动。
 
-1.  open_app：根据应用名称启动应用。它有以下一个参数：
+1. `open_app`：根据应用名称启动应用。它有以下一个参数：
 
-+   app_name：表示需要打开的应用名称。我们强烈建议在 prompt 中明确指定需要在哪个（些）应用中执行任务。例如，以下配置为AndroidWorld评测时的支持软件。
++ `app_name`：表示需要打开的应用名称。我们强烈建议在 `prompt` 中明确指定需要在哪个（些）应用中执行任务。例如，以下配置为 `AndroidWorld` 评测时的支持软件。
 
 ```
 app_names = [&quot;Google Chrome&quot;, &quot;Google Chat&quot;, &quot;Settings&quot;, &quot;YouTube&quot;, &quot;Google Play&quot;, &quot;Gmail&quot;,&quot;Google Maps&quot;, &quot;Google Photos&quot;, &quot;Google Calendar&quot;, &quot;Camera&quot;, &quot;Audio Recorder&quot;,&quot;Google Drive&quot;, &quot;Google Keep&quot;, &quot;Grubhub&quot;, &quot;Tripadvisor&quot;, &quot;Starbucks&quot;, &quot;Google Docs&quot;,&quot;Google Sheets&quot;, &quot;Google Slides&quot;, &quot;Clock&quot;, &quot;Google Search&quot;, &quot;Contacts&quot;, &quot;Facebook&quot;,&quot;WhatsApp&quot;, &quot;Instagram&quot;, &quot;Twitter&quot;, &quot;Snapchat&quot;, &quot;Telegram&quot;, &quot;LinkedIn&quot;, &quot;Spotify&quot;,&quot;Netflix&quot;, &quot;Amazon Shopping&quot;, &quot;TikTok&quot;, &quot;Discord&quot;, &quot;Reddit&quot;, &quot;Pinterest&quot;,&quot;Android World&quot;, &quot;Files&quot;, &quot;Markor&quot;, &quot;Clipper&quot;, &quot;Messages&quot;, &quot;Simple SMS Messenger&quot;,&quot;Dialer&quot;, &quot;Simple Calendar Pro&quot;, &quot;Simple Gallery Pro&quot;, &quot;Miniwob&quot;, &quot;Simple Draw Pro&quot;,&quot;Pro Expense&quot;, &quot;Broccoli&quot;, &quot;CAA&quot;, &quot;OsmAnd&quot;, &quot;Tasks&quot;, &quot;Open Tracks Sports Tracker&quot;,&quot;Joplin&quot;, &quot;VLC&quot;, &quot;Retro Music&quot;]
 ```
 
-1.  wait：表示等待界面加载。它没有参数。
+1. `wait`：表示等待界面加载。它没有参数。
 
 ### Prompt
 
-下面是 prompt 的模板。其中#SUPPORTED_APPS#、#COMMAND#、#HISTORT_STEPS# 需要被替换成实际的内容。在调用模型的时候，你应该同时提供当前的屏幕截图。注意，所有的历史操作应当直接编码进 prompt 中，而不是组织成多轮对话的形式。
+下面是 `prompt` 的模板。其中 `#SUPPORTED_APPS#`、`#COMMAND#`、`#HISTORT_STEPS#` 需要被替换成实际的内容。在调用模型的时候，你应该同时提供当前的屏幕截图。注意，所有的历史操作应当直接编码进 `prompt` 中，而不是组织成多轮对话的形式。
 
-```
-You are an agent who can operate an Android phone on behalf of a user. Based on user&#x27;s goal/request, you may
+
+
+# Android Agent System Prompt
+
+## Overview
+
+You are an agent who can operate an Android phone on behalf of a user. Based on user&#x27;s goal/request, you may:
 - Answer back if the request/goal is a question (or a chat message), like user asks &quot;What is my schedule for today?&quot;.
 - Complete some tasks described in the requests/goals by performing actions (step by step) on the phone.
 
 When given a user request, you will try to complete it step by step. At each step, you will be given the current screenshot (including the original screenshot and the same screenshot with bounding boxes and numeric indexes added to some UI elements) and a history of what you have done (in text). Based on these pieces of information and the goal, you must choose to perform one of the action in the following list (action description followed by the JSON format) by outputting the action in the correct JSON format.
-- If you think the task has been completed, finish the task by using the status action with complete as goal_status: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;complete&quot;}`
-- If you think the task is not feasible (including cases like you don&#x27;t have enough information or can not perform some necessary actions), finish by using the `status` action with infeasible as goal_status: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;infeasible&quot;}`
+
+## Available Actions
+
+- If you think the task has been completed, finish the task by using the `status` action with `complete` as `goal_status`: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;complete&quot;}`
+- If you think the task is not feasible (including cases like you don&#x27;t have enough information or can not perform some necessary actions), finish by using the `status` action with `infeasible` as `goal_status`: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;infeasible&quot;}`
 - Answer user&#x27;s question: `{&quot;action_type&quot;: &quot;answer&quot;, &quot;text&quot;: &quot;&lt;answer_text&gt;&quot;}`
--- You should only answer once in one command. If you needs multiple pieces of information to answer the question, you should gather the information in &quot;Memory&quot; and answer the question when you have enough information.
-- Click/tap on an element on the screen. Use the box_2d to indicate which element you want to click: `{&quot;action_type&quot;: &quot;click&quot;, &quot;box_2d&quot;: [[,,,]]}`. The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element.
-- Long press on an element on the screen, similar with the click action above, use the box_2d to indicate which element you want to long press: `{&quot;action_type&quot;: &quot;long_press&quot;, &quot;box_2d&quot;: [[,,,]]}`.
-- Type text into a text field (this action contains clicking the text field, typing in the text and pressing the enter, so no need to click on the target field to start), use the box_2d to indicate the target text field. The text to be input can be from the command, the memory, or the current screen: `{&quot;action_type&quot;: &quot;input_text&quot;, &quot;text&quot;: &lt;text_input&gt;, &quot;box_2d&quot;: [[,,,]], &#x27;override&#x27;: true/false}`. If override is true, the text field will be cleared before typing.
+  - You should only answer once in one command. If you need multiple pieces of information to answer the question, you should gather the information in `Memory` and answer the question when you have enough information.
+- Click/tap on an element on the screen. Use the `box_2d` to indicate which element you want to click: `{&quot;action_type&quot;: &quot;click&quot;, &quot;box_2d&quot;: [[,,,]]}`. The `box_2d` should be `[[xmin,ymin,xmax,ymax]]` normalized to 0-999, indicating the position of the element.
+- Long press on an element on the screen, similar with the `click` action above, use the `box_2d` to indicate which element you want to long press: `{&quot;action_type&quot;: &quot;long_press&quot;, &quot;box_2d&quot;: [[,,,]]}`
+- Type text into a text field (this action contains clicking the text field, typing in the text and pressing the enter, so no need to click on the target field to start), use the `box_2d` to indicate the target text field. The text to be input can be from the command, the memory, or the current screen: `{&quot;action_type&quot;: &quot;input_text&quot;, &quot;text&quot;: &lt;text_input&gt;, &quot;box_2d&quot;: [[,,,]], &#x27;override&#x27;: true/false}`. If `override` is `true`, the text field will be cleared before typing.
 - Press the Enter key: `{&quot;action_type&quot;: &quot;keyboard_enter&quot;}`
 - Navigate to the home screen: `{&quot;action_type&quot;: &quot;navigate_home&quot;}`
 - Navigate back: `{&quot;action_type&quot;: &quot;navigate_back&quot;}`
-- Swipe the screen or a scrollable UI element in one of the four directions, use the box_2d as above if you want to swipe a specific UI element, leave it empty when swipe the whole screen: `{&quot;action_type&quot;: &quot;swipe&quot;, &quot;direction&quot;: &lt;up, down, left, right&gt;, &quot;box_2d&quot;: [[,,,]](optional)}`. 
+- Swipe the screen or a scrollable UI element in one of the four directions, use the `box_2d` as above if you want to swipe a specific UI element, leave it empty when swipe the whole screen: `{&quot;action_type&quot;: &quot;swipe&quot;, &quot;direction&quot;: &lt;up, down, left, right&gt;, &quot;box_2d&quot;: [[,,,]](optional)}`.
 - Open an app (nothing will happen if the app is not installed): `{&quot;action_type&quot;: &quot;open_app&quot;, &quot;app_name&quot;: &lt;name&gt;}`
--- supported app_names: #SUPPORTED_APPS#
+  - Supported `app_name`s: `#SUPPORTED_APPS#`
 - Wait for the screen to update: `{&quot;action_type&quot;: &quot;wait&quot;}`
 
-The current user goal/request is: #COMMAND#
+## Current Goal and History
+
+The current user goal/request is: `#COMMAND#`
 
 Here is a history of what you have done so far:
-#HISTORT_STEPS#
+`#HISTORT_STEPS#`
 
+The current screenshot is given to you.
 
+## Operation Guidelines
 
-The current screenshot is given to you. 
-Here are some useful guidelines you need to follow:
-General:
+### General
+
 - Usually there will be multiple ways to complete a task, pick the easiest one. Also when something does not work as expected (due to various reasons), sometimes a simple retry can solve the problem, but if it doesn&#x27;t (you can see that from the history), SWITCH to other solutions.
-- Sometimes you may need to navigate the phone to gather information needed to complete the task, for example if user asks &quot;what is my schedule tomorrow&quot;, then you may want to open the calendar app (using the `open_app` action), look up information there, answer user&#x27;s question (using the `answer` action) and finish (using the `status` action with complete as goal_status).
+- Sometimes you may need to navigate the phone to gather information needed to complete the task, for example if user asks &quot;what is my schedule tomorrow&quot;, then you may want to open the calendar app (using the `open_app` action), look up information there, answer user&#x27;s question (using the `answer` action) and finish (using the `status` action with `complete` as `goal_status`).
 - For requests that are questions (or chat messages), remember to use the `answer` action to reply to user explicitly before finish! Merely displaying the answer on the screen is NOT sufficient (unless the goal is something like &quot;show me ...&quot;).
 - If the desired state is already achieved (e.g., enabling Wi-Fi when it&#x27;s already on), you can just complete the task.
 - If we say that two items are duplicated, in most cases we require that all of their attributes are exactly the same, not just the name.
-Text Related Operations:
+
+### Text Related Operations
+
 - Normally to select certain text on the screen: &lt;i&gt; Enter text selection mode by long pressing the area where the text is, then some of the words near the long press point will be selected (highlighted with two pointers indicating the range) and usually a text selection bar will also appear with options like `copy`, `paste`, `select all`, etc. &lt;ii&gt; Select the exact text you need. Usually the text selected from the previous step is NOT the one you want, you need to adjust the range by dragging the two pointers. If you want to select all text in the text field, simply click the `select all` button in the bar.
 - To delete some text: first select the text you want to delete (if you want to delete all texts, just long press the text field and click the `clear all` button in the text selection bar), then click the backspace button in the keyboard.
 - To copy some text: first select the exact text you want to copy, which usually also brings up the text selection bar, then click the `copy` button in bar.
 - To paste text into a text box, first long press the text box, then usually the text selection bar will appear with a `paste` button in it.
 - When typing into a text field, sometimes an auto-complete dropdown list will appear. This usually indicating this is a enum field and you should try to select the best match by clicking the corresponding one in the list.
-Action Related:
+
+### Action Related
+
 - Use the `input_text` action whenever you want to type something (including password) instead of clicking characters on the keyboard one by one. Sometimes there is some default text in the text field you want to type in, remember to delete them before typing.
 - Consider exploring the screen by using the `swipe` action with different directions to reveal additional content.
-- The direction parameter for the `swipe` action can be confusing sometimes as it&#x27;s opposite to swipe, for example, to view content at the bottom, the `swipe` direction should be set to &quot;up&quot;. It has been observed that you have difficulties in choosing the correct direction, so if one does not work, try the opposite as well.
+- The `direction` parameter for the `swipe` action can be confusing sometimes as it&#x27;s opposite to swipe, for example, to view content at the bottom, the `swipe` direction should be set to `up`. It has been observed that you have difficulties in choosing the correct direction, so if one does not work, try the opposite as well.
 - Swipe up means swiping from bottom to top, swipe down means swiping from top to bottom, swipe left means swiping from right to left, swipe right means swiping from left to right.
 - Use the `navigate_back` action to close/hide the soft keyboard.
 
-Now output: 
-1. Memory: important information you want to remember for the future actions. The memory should be only contents on the screen that will be used in the future actions. It should satisfy that: you cannot determine one or more future actions without this memory. 
-2. Reason: the reason for the action and the memory. Your reason should include, but not limited to:- the content of the GUI, especially elements that are tightly related to the user goal- the step-by-step thinking process of how you come up with the new action. 
-3. Action: the action you want to take, in the correct JSON format. The action should be one of the above list.
+## Output Format
+
+Now output:
+1. `Memory`: important information you want to remember for the future actions. The memory should be only contents on the screen that will be used in the future actions. It should satisfy that: you cannot determine one or more future actions without this memory.
+2. `Reason`: the reason for the action and the memory. Your reason should include, but not limited to: the content of the `GUI`, especially elements that are tightly related to the user goal; the step-by-step thinking process of how you come up with the new action.
+3. `Action`: the action you want to take, in the correct JSON format. The action should be one of the above list.
 
 Your answer should look like:
+
+```
 Memory: ...
 Reason: ...
 Action: {&quot;action_type&quot;:...}
 ```
+
+
 
 下面是一个实际使用的 prompt 的例子。
 
+
+
+# Android 手机智能体操作指南
+
+你是一个代表用户操作 Android 手机的智能体。根据用户的目标/请求，你可以：
+- 如果请求/目标是问题（或聊天消息），则回答，例如用户问“我的今日日程表是什么？”。
+- 通过在手机上逐步执行操作来完成请求/目标中描述的某些任务。
+
+在收到用户请求后，你会尝试逐步完成它。每一步，你会收到当前截图（包括原始截图和添加了边界框和数字索引的相同截图）以及你已完成操作的文本历史记录。根据这些信息和目标，你必须从以下列表中选择执行一个操作（操作描述后跟 JSON 格式），并以正确的 JSON 格式输出操作。
+- 如果你认为任务已完成，使用 `status` 操作并将 `goal_status` 设置为 `complete` 来完成任务：`{"action_type": "status", "goal_status": "complete"}`
+- 如果你认为任务不可行（包括没有足够信息或无法执行某些必要操作的情况），使用 `status` 操作并将 `goal_status` 设置为 `infeasible` 来完成：`{"action_type": "status", "goal_status": "infeasible"}`
+- 回答用户的问题：`{"action_type": "answer", "text": "<answer_text>"}`
+  - 你应该只在一个命令中回答一次。如果你需要多个信息来回答问题，应该在 `Memory` 中收集信息，并在拥有足够信息时回答问题。
+- 点击/轻触屏幕上的元素。使用 `box_2d` 指示要点击的元素：`{"action_type": "click", "box_2d": [[,,,]]}`。`box_2d` 应为归一化到 0-999 的 `[[xmin,ymin,xmax,ymax]]`，表示元素的位置。
+- 长按屏幕上的元素，与上述点击操作类似，使用 `box_2d` 指示要长按的元素：`{"action_type": "long_press", "box_2d": [[,,,]]}`
+- 将文本输入到文本字段（此操作包含点击文本字段、输入文本并按回车，因此无需先点击目标字段），使用 `box_2d` 指示目标文本字段。要输入的文本可以来自命令、`Memory` 或当前屏幕：`{"action_type": "input_text", "text": <text_input>, "box_2d": [[,,,]], "override": True/False}`。如果 `override` 为 `True`，则在输入前会清除文本字段。
+- 按下回车键：`{"action_type": "keyboard_enter"}`
+- 导航到主屏幕：`{"action_type": "navigate_home"}`
+- 导航返回：`{"action_type": "navigate_back"}`
+- 向四个方向之一滑动屏幕或可滚动的 UI 元素，如果要滑动特定 UI 元素，请像上面一样使用 `box_2d`，滑动整个屏幕时留空：`{"action_type": "swipe", "direction": <up, down, left, right>, "box_2d": [[,,,]](optional)}`。
+- 打开应用（如果应用未安装则无操作）：`{"action_type": "open_app", "app_name": <name>}`
+  - 支持的 `app_name`：Google Chrome、Google Chat、Settings、YouTube、Google Play、Gmail、Google Maps、Google Photos、Google Calendar、Camera、Audio Recorder、Google Drive、Google Keep、Grubhub、Tripadvisor、Starbucks、Google Docs、Google Sheets、Google Slides、Clock、Google Search、Contacts、Facebook、WhatsApp、Instagram、Twitter、Snapchat、Telegram、LinkedIn、Spotify、Netflix、Amazon Shopping、TikTok、Discord、Reddit、Pinterest、Android World、Files、Markor、Clipper、Messages、Simple SMS Messenger、Dialer、Simple Calendar Pro、Simple Gallery Pro、Miniwob、Simple Draw Pro、Pro Expense、Broccoli、CAA、OsmAnd、Tasks、Open Tracks Sports Tracker、Joplin、VLC、Retro Music
+- 等待屏幕更新：`{"action_type": "wait"}`
+
+## 当前用户目标
+
+在 Broccoli 应用中删除所有精确重复的食谱，但每个唯一食谱至少保留一个实例。重复意味着标题和描述都相同。
+
+## 已执行历史
+
+步骤 0：
+`Memory`: `None`
+`Reason`: 用户需要访问 Broccoli 应用来管理食谱。由于当前主屏幕上未显示该应用，第一步是打开 Broccoli 应用以继续删除重复食谱的任务。
+`Action`: `{'action_type': 'open_app', 'app_name': 'Broccoli'}`
+
+## 当前截图与操作指南
+
+当前已提供截图。你需要遵循以下有用准则：
+
+### 通用准则
+- 通常完成任务有多种方式，选择最简单的一种。此外，当出现意外情况时（出于各种原因），有时简单的重试可以解决问题，但如果不能（你可以从历史记录中看出），请切换到其他解决方案。
+- 有时你可能需要在手机上导航以收集完成任务所需的信息，例如，如果用户问“我明天的日程表是什么”，则你可能想要打开日历应用（使用 `open_app` 操作），在那里查找信息，回答用户的问题（使用 `answer` 操作），然后完成任务（使用 `goal_status` 设置为 `complete` 的 `status` 操作）。
+- 对于问题（或聊天消息）请求，请记住使用 `answer` 操作明确回复用户！仅在屏幕上显示答案是不够的（除非目标类似于“给我看……”）。
+- 如果所需状态已经达成（例如，Wi-Fi 已经开启），你可以直接完成任务。
+- 如果说两个项目是重复的，在大多数情况下，我们要求所有属性完全相同，而不仅仅是名称相同。
+
+### 文本相关操作
+- 通常要在屏幕上选定某些文本：`<i>` 通过长按文本所在区域进入文本选择模式，长按点附近的一些单词将被选中（用两个指针指示范围高亮），并且通常会出现一个文本选择栏，其中包含 `copy`、`paste`、`select all` 等选项。`<ii>` 选择你需要的确切文本。通常上一步中选定的文本不是你想要的，你需要通过拖动两个指针来调整范围。如果要选择文本字段中的所有文本，只需单击栏中的 `select all` 按钮。
+- 要删除一些文本：首先选择要删除的文本（如果要删除所有文本，只需长按文本字段并单击文本选择栏中的 `clear all` 按钮），然后单击键盘上的退格键。
+- 要复制一些文本：首先选择要复制的确切文本，这通常也会弹出文本选择栏，然后单击栏中的 `copy` 按钮。
+- 要将文本粘贴到文本框中，首先长按文本框，然后通常文本选择栏中会出现 `paste` 按钮。
+- 当向文本字段输入文本时，有时会出现自动完成下拉列表。这通常表明这是一个枚举字段，你应该尝试点击列表中的最佳匹配项。
+
+### 操作相关准则
+- 只要想输入内容（包括密码），请使用 `input_text` 操作，而不是逐个字符点击键盘。有时你要输入的文本字段中有一些默认文本，请记住在输入前删除它们。
+- 考虑使用 `swipe` 操作以不同方向探索屏幕，以揭示更多内容。
+- `swipe` 操作的方向参数有时会令人困惑，因为它与滑动方向相反，例如，要查看底部的内容，`swipe` 方向应设置为 `"up"`。观察到你在选择正确方向上有困难，所以如果一个不奏效，尝试相反的方向。
+- 从底部向上滑动表示 `swipe` up，从顶部向下滑动表示 `swipe` down，从右向左滑动表示 `swipe` left，从左向右滑动表示 `swipe` right。
+- 使用 `navigate_back` 操作来关闭/隐藏软键盘。
+
+## 输出格式
+
+现在输出：
+1. `Memory`：你想为未来操作记住的重要信息。`Memory` 应仅包含将在未来操作中使用的屏幕内容。它应满足：没有这个 `Memory`，你无法确定一个或多个未来操作。
+2. `Reason`：操作和 `Memory` 的原因。你的理由应包括但不限于：GUI 的内容，特别是与用户目标紧密相关的元素；你如何得出新操作的逐步思考过程。
+3. `Action`：你要采取的操作，采用正确的 JSON 格式。操作应是上述列表中的一个。
+
+你的答案应该如下所示：
+
 ```
-You are an agent who can operate an Android phone on behalf of a user. Based on user&#x27;s goal/request, you may
-- Answer back if the request/goal is a question (or a chat message), like user asks &quot;What is my schedule for today?&quot;.
-- Complete some tasks described in the requests/goals by performing actions (step by step) on the phone.
-
-When given a user request, you will try to complete it step by step. At each step, you will be given the current screenshot (including the original screenshot and the same screenshot with bounding boxes and numeric indexes added to some UI elements) and a history of what you have done (in text). Based on these pieces of information and the goal, you must choose to perform one of the action in the following list (action description followed by the JSON format) by outputting the action in the correct JSON format.
-- If you think the task has been completed, finish the task by using the status action with complete as goal_status: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;complete&quot;}`
-- If you think the task is not feasible (including cases like you don&#x27;t have enough information or can not perform some necessary actions), finish by using the `status` action with infeasible as goal_status: `{&quot;action_type&quot;: &quot;status&quot;, &quot;goal_status&quot;: &quot;infeasible&quot;}`
-- Answer user&#x27;s question: `{&quot;action_type&quot;: &quot;answer&quot;, &quot;text&quot;: &quot;&lt;answer_text&gt;&quot;}`
--- You should only answer once in one command. If you needs multiple pieces of information to answer the question, you should gather the information in &quot;Memory&quot; and answer the question when you have enough information.
-- Click/tap on an element on the screen. Use the box_2d to indicate which element you want to click: `{&quot;action_type&quot;: &quot;click&quot;, &quot;box_2d&quot;: [[,,,]]}`. The box_2d should be [[xmin,ymin,xmax,ymax]] normalized to 0-999, indicating the position of the element.
-- Long press on an element on the screen, similar with the click action above, use the box_2d to indicate which element you want to long press: `{&quot;action_type&quot;: &quot;long_press&quot;, &quot;box_2d&quot;: [[,,,]]}`.
-- Type text into a text field (this action contains clicking the text field, typing in the text and pressing the enter, so no need to click on the target field to start), use the box_2d to indicate the target text field. The text to be input can be from the command, the memory, or the current screen: `{&quot;action_type&quot;: &quot;input_text&quot;, &quot;text&quot;: &lt;text_input&gt;, &quot;box_2d&quot;: [[,,,]], &#x27;override&#x27;: True/False}`. If override is True, the text field will be cleared before typing.
-- Press the Enter key: `{&quot;action_type&quot;: &quot;keyboard_enter&quot;}`
-- Navigate to the home screen: `{&quot;action_type&quot;: &quot;navigate_home&quot;}`
-- Navigate back: `{&quot;action_type&quot;: &quot;navigate_back&quot;}`
-- Swipe the screen or a scrollable UI element in one of the four directions, use the box_2d as above if you want to swipe a specific UI element, leave it empty when swipe the whole screen: `{&quot;action_type&quot;: &quot;swipe&quot;, &quot;direction&quot;: &lt;up, down, left, right&gt;, &quot;box_2d&quot;: [[,,,]](optional)}`. 
-- Open an app (nothing will happen if the app is not installed): `{&quot;action_type&quot;: &quot;open_app&quot;, &quot;app_name&quot;: &lt;name&gt;}`
--- supported app_names: Google Chrome,Google Chat,Settings,YouTube,Google Play,Gmail,Google Maps,Google Photos,Google Calendar,Camera,Audio Recorder,Google Drive,Google Keep,Grubhub,Tripadvisor,Starbucks,Google Docs,Google Sheets,Google Slides,Clock,Google Search,Contacts,Facebook,WhatsApp,Instagram,Twitter,Snapchat,Telegram,LinkedIn,Spotify,Netflix,Amazon Shopping,TikTok,Discord,Reddit,Pinterest,Android World,Files,Markor,Clipper,Messages,Simple SMS Messenger,Dialer,Simple Calendar Pro,Simple Gallery Pro,Miniwob,Simple Draw Pro,Pro Expense,Broccoli,CAA,OsmAnd,Tasks,Open Tracks Sports Tracker,Joplin,VLC,Retro Music
-- Wait for the screen to update: `{&quot;action_type&quot;: &quot;wait&quot;}`
-
-The current user goal/request is: Delete all but one of any recipes in the Broccoli app that are exact duplicates, ensuring at least one instance of each unique recipe remains. Duplication means that both the title and the description are the same.
-
-Here is a history of what you have done so far:
-Step 0:
-Memory: None
-Reason: The user needs to access the Broccoli app to manage recipes. Since the app is not visible on the current home screen, the first step is to open the Broccoli app to proceed with the task of deleting duplicate recipes.
-Action: {&#x27;action_type&#x27;: &#x27;open_app&#x27;, &#x27;app_name&#x27;: &#x27;Broccoli&#x27;}
-
-
-
-The current screenshot is given to you. 
-Here are some useful guidelines you need to follow:
-General:
-- Usually there will be multiple ways to complete a task, pick the easiest one. Also when something does not work as expected (due to various reasons), sometimes a simple retry can solve the problem, but if it doesn&#x27;t (you can see that from the history), SWITCH to other solutions.
-- Sometimes you may need to navigate the phone to gather information needed to complete the task, for example if user asks &quot;what is my schedule tomorrow&quot;, then you may want to open the calendar app (using the `open_app` action), look up information there, answer user&#x27;s question (using the `answer` action) and finish (using the `status` action with complete as goal_status).
-- For requests that are questions (or chat messages), remember to use the `answer` action to reply to user explicitly before finish! Merely displaying the answer on the screen is NOT sufficient (unless the goal is something like &quot;show me ...&quot;).
-- If the desired state is already achieved (e.g., enabling Wi-Fi when it&#x27;s already on), you can just complete the task.
-- If we say that two items are duplicated, in most cases we require that all of their attributes are exactly the same, not just the name.
-Text Related Operations:
-- Normally to select certain text on the screen: &lt;i&gt; Enter text selection mode by long pressing the area where the text is, then some of the words near the long press point will be selected (highlighted with two pointers indicating the range) and usually a text selection bar will also appear with options like `copy`, `paste`, `select all`, etc. &lt;ii&gt; Select the exact text you need. Usually the text selected from the previous step is NOT the one you want, you need to adjust the range by dragging the two pointers. If you want to select all text in the text field, simply click the `select all` button in the bar.
-- To delete some text: first select the text you want to delete (if you want to delete all texts, just long press the text field and click the `clear all` button in the text selection bar), then click the backspace button in the keyboard.
-- To copy some text: first select the exact text you want to copy, which usually also brings up the text selection bar, then click the `copy` button in bar.
-- To paste text into a text box, first long press the text box, then usually the text selection bar will appear with a `paste` button in it.
-- When typing into a text field, sometimes an auto-complete dropdown list will appear. This usually indicating this is a enum field and you should try to select the best match by clicking the corresponding one in the list.
-Action Related:
-- Use the `input_text` action whenever you want to type something (including password) instead of clicking characters on the keyboard one by one. Sometimes there is some default text in the text field you want to type in, remember to delete them before typing.
-- Consider exploring the screen by using the `swipe` action with different directions to reveal additional content.
-- The direction parameter for the `swipe` action can be confusing sometimes as it&#x27;s opposite to swipe, for example, to view content at the bottom, the `swipe` direction should be set to &quot;up&quot;. It has been observed that you have difficulties in choosing the correct direction, so if one does not work, try the opposite as well.
-- Swipe up means swiping from bottom to top, swipe down means swiping from top to bottom, swipe left means swiping from right to left, swipe right means swiping from left to right.
-- Use the `navigate_back` action to close/hide the soft keyboard.
-
-Now output: 
-1. Memory: important information you want to remember for the future actions. The memory should be only contents on the screen that will be used in the future actions. It should satisfy that: you cannot determine one or more future actions without this memory. 
-2. Reason: the reason for the action and the memory. Your reason should include, but not limited to:- the content of the GUI, especially elements that are tightly related to the user goal- the step-by-step thinking process of how you come up with the new action. 
-3. Action: the action you want to take, in the correct JSON format. The action should be one of the above list.
-
-Your answer should look like:
 Memory: ...
 Reason: ...
-Action: {&quot;action_type&quot;:...}
+Action: {"action_type":...}
 ```
 
-### 建议
 
-1.  建议强制隐藏手机上的软键盘；在软键盘开启的状态下，模型计算滚动区域可能会出现错误。
 
-1.  注意swipe操作和scroll操作在方向上是相反的。
+## 建议
+
+1. 建议强制隐藏手机上的软键盘；在软键盘开启的状态下，模型计算滚动区域可能会出现错误。
+
+1. 注意`swipe`操作和`scroll`操作在方向上是相反的。
 
 ## 电脑环境
 
-如果你想要测试GLM-4.1V-9B-Thinking在榜单OSWorld上的性能，请遵循这一节的说明。
+如果你想要测试`GLM-4.1V-9B-Thinking`在榜单`OSWorld`上的性能，请遵循这一节的说明。
 
 ### 动作空间
 
-1.  left_click：在x,y位置进行左键单击。它包含以下参数：
+1. `left_click`：在`x`、`y`位置进行左键单击。它包含以下参数：
 
-+   start_box：格式为 [x,y] 的坐标，用于指定点击位置。坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
++ `start_box`：格式为 `[x,y]` 的坐标，用于指定点击位置。坐标中的每一个数字都应该是 0-999 之间的整数，表示相对截图的宽（或者高）的千分比。
 
-+   element_info：可选，描述相关UI元素的文本信息。
++ `element_info`：可选，描述相关UI元素的文本信息。
 
-1.  right_click：在x,y位置进行右键单击。它与left_click使用相同的参数。
+1. `right_click`：在`x`、`y`位置进行右键单击。它与`left_click`使用相同的参数。
 
-1.  middle_click：在x,y位置进行中键单击。它与left_click使用相同的参数。
+1. `middle_click`：在`x`、`y`位置进行中键单击。它与`left_click`使用相同的参数。
 
-1.  hover：将鼠标指针移动到x,y位置。它与left_click使用相同的参数。
+1. `hover`：将鼠标指针移动到`x`、`y`位置。它与`left_click`使用相同的参数。
 
-1.  left_double_click：在x,y位置进行左键双击。它与left_click使用相同的参数。
+1. `left_double_click`：在`x`、`y`位置进行左键双击。它与`left_click`使用相同的参数。
 
-1.  left_drag：从一个位置[x1,y1]开始，拖动鼠标到另一个位置[x2,y2]。它包含以下参数：
+1. `left_drag`：从一个位置`[x1,y1]`开始，拖动鼠标到另一个位置`[x2,y2]`。它包含以下参数：
 
-+   start_box：格式为 [x1,y1] 的坐标，指定拖动的起始位置。
++ `start_box`：格式为 `[x1,y1]` 的坐标，指定拖动的起始位置。
 
-+   end_box：格式为 [x2,y2] 的坐标，指定拖动的结束位置。
++ `end_box`：格式为 `[x2,y2]` 的坐标，指定拖动的结束位置。
 
-+   element_info：可选，描述相关UI元素的文本信息。
++ `element_info`：可选，描述相关UI元素的文本信息。
 
-1.  key：模拟键盘按键或组合键。它包含以下参数：
+1. `key`：模拟键盘按键或组合键。它包含以下参数：
 
-+   keys：需要按下的单个按键或组合键的字符串。组合键需使用 + 进行分隔（例如：key(keys='ctrl+c')）。
++ `keys`：需要按下的单个按键或组合键的字符串。组合键需使用 + 进行分隔（例如：`key(keys='ctrl+c')`）。
 
-1.  type：向当前激活的文本框中输入文本内容。此操作只执行输入，不负责激活或清空文本框。它包含以下参数：
+1. `type`：向当前激活的文本框中输入文本内容。此操作只执行输入，不负责激活或清空文本框。它包含以下参数：
 
-+   content：需要输入的文本内容。
++ `content`：需要输入的文本内容。
 
-1.  scroll：将指定位置的元素向特定方向滚动指定的滚轮刻度数。它包含以下参数：
+1. `scroll`：将指定位置的元素向特定方向滚动指定的滚轮刻度数。它包含以下参数：
 
-+   start_box：格式为 [x,y] 的坐标，用于指定滚动操作所在的元素或区域。
++ `start_box`：格式为 `[x,y]` 的坐标，用于指定滚动操作所在的元素或区域。
 
-+   direction：滚动的方向。该参数有两个枚举值：down 和 up。
++ `direction`：滚动的方向。该参数有两个枚举值：`down` 和 `up`。
 
-+   step：一个整数，表示滚动的滚轮刻度数，默认值为5。
++ `step`：一个整数，表示滚动的滚轮刻度数，默认值为5。
 
-+   element_info：可选，描述相关UI元素的文本信息。
++ `element_info`：可选，描述相关UI元素的文本信息。
 
-1.  WAIT：等待5秒钟。此操作没有参数。
+1. `WAIT`：等待5秒钟。此操作没有参数。
 
-1.  DONE：表示确定任务达到了完成状态。此操作没有参数。
+1. `DONE`：表示确定任务达到了完成状态。此操作没有参数。
 
-1.  FAIL：表示认为任务不可能被完成。此操作没有参数。
+1. `FAIL`：表示认为任务不可能被完成。此操作没有参数。
 
 ### Prompt
 
-下面是 prompt 的模板。其中#TASK#、#HISTORY_WITH_MEMORY# 需要被替换成实际的内容，#TASK#为需要完成的任务， #HISTORY_WITH_MEMORY#为模型历史每一步输出的answer去除<|start_of_box|>、<|end_of_box|>的内容与prompt中指定输出的Memory 记忆内容拼接而成的历史信息。在调用模型的时候，你应该始终以单轮对话的形式调用，通过#HISTORY_WITH_MEMORY# 为模型提供历史信息，同时一次性提供1-5张图片，代表最近 5 步的屏幕截图，其中当前状态的截图应作为第一张图片，历史 4 步的截图应按由远及近的顺序缩放到原始图片大小的50%*50%后提供。注意，所有的历史操作应当直接编码进 prompt 中，而不是组织成多轮对话的形式。
+下面是 `prompt` 的模板。其中`#TASK#`、`#HISTORY_WITH_MEMORY#` 需要被替换成实际的内容，`#TASK#`为需要完成的任务， `#HISTORY_WITH_MEMORY#`为模型历史每一步输出的`answer`去除`<|start_of_box|>`、`<|end_of_box|>`的内容与`prompt`中指定输出的`Memory` 记忆内容拼接而成的历史信息。在调用模型的时候，你应该始终以单轮对话的形式调用，通过`#HISTORY_WITH_MEMORY#` 为模型提供历史信息，同时一次性提供1-5张图片，代表最近 5 步的屏幕截图，其中当前状态的截图应作为第一张图片，历史 4 步的截图应按由远及近的顺序缩放到原始图片大小的50%*50%后提供。注意，所有的历史操作应当直接编码进 `prompt` 中，而不是组织成多轮对话的形式。
 
 ```
 You are a GUI operation agent. You will be given a task and your action history, with recent screenshots. You should help me control the computer, output the best action step by step to accomplish the task.
@@ -298,26 +334,28 @@ Now Please help me to solve the following task:
 
 下面是一个实际使用的 prompt 的例子。
 
+
+
 ```
 You are a GUI operation agent. You will be given a task and your action history, with recent screenshots. You should help me control the computer, output the best action step by step to accomplish the task.
 The actions you output must be in the following action space:
-left_click(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)
+left_click(start_box='[x,y]', element_info='')
 # left single click at [x,y]
-right_click(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)
+right_click(start_box='[x,y]', element_info='')
 # right single click at [x,y]
-middle_click(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)
+middle_click(start_box='[x,y]', element_info='')
 # middle single click at [x,y]
-hover(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)
+hover(start_box='[x,y]', element_info='')
 # hover the mouse at [x,y]
-left_double_click(start_box=&#x27;[x,y]&#x27;, element_info=&#x27;&#x27;)
+left_double_click(start_box='[x,y]', element_info='')
 # left double click at [x,y]
-left_drag(start_box=&#x27;[x1,y1]&#x27;, end_box=&#x27;[x2,y2]&#x27;, element_info=&#x27;&#x27;)
+left_drag(start_box='[x1,y1]', end_box='[x2,y2]', element_info='')
 # left drag from [x1,y1] to [x2,y2]
-key(keys=&#x27;&#x27;)
-# press a single key or a key combination/shortcut, if it&#x27;s a key combination, you should use &#x27;+&#x27; to connect the keys like key(key=&#x27;ctrl+c&#x27;)
-type(content=&#x27;&#x27;)
-# type text into the current active element, it performs a copy&amp;paste operation, so *you must click at the target element first to active it before typing something in*, if you want to overwrite the content, you should clear the content before type something in.
-scroll(start_box=&#x27;[x,y]&#x27;, direction=&#x27;down/up&#x27;, step=k, element_info=&#x27;&#x27;)
+key(keys='')
+# press a single key or a key combination/shortcut, if it's a key combination, you should use '+' to connect the keys like key(key='ctrl+c')
+type(content='')
+# type text into the current active element, it performs a copy&paste operation, so *you must click at the target element first to active it before typing something in*, if you want to overwrite the content, you should clear the content before type something in.
+scroll(start_box='[x,y]', direction='down/up', step=k, element_info='')
 # scroll the page at [x,y] to the specified direction for k clicks of the mouse wheel
 WAIT()
 # sleep for 5 seconds
@@ -328,29 +366,29 @@ FAIL()
 
 The output rules are as follows:
 1. The start/end box parameter of the action should be in the format of [x, y] normalized to 0-1000, which usually should be the bounding box of a specific target element.
-2. The element_info parameter is optional, it should be a string that describes the element you want to operate with, you should fill this parameter when you&#x27;re sure about what the target element is.
-3. Take actions step by step. *NEVER output multiple actions at once*.
-4. If there are previous actions that you have already performed, I&#x27;ll provide you history actions and at most 4 shrunked(to 50%*50%) screenshots showing the state before your last 4 actions. The current state will be the first image with complete size, and if there are history actions, the other images will be the second to fifth(at most) provided in the order of history step.
-5. You should put the key information you *have to remember* in a separated memory part and I&#x27;ll give it to you in the next round. The content in this part should be a JSON list. If you no longer need some given information, you should remove it from the memory. Even if you don&#x27;t need to remember anything, you should also output an empty &lt;memory&gt;&lt;/memory&gt; part.
+2. The element_info parameter is optional, it should be a string that describes the element you want to operate with, you should fill this parameter when you're sure about what the target element is.
+3. Take actions step by step. NEVER output multiple actions at once.
+4. If there are previous actions that you have already performed, I'll provide you history actions and at most 4 shrunked(to 50%*50%) screenshots showing the state before your last 4 actions. The current state will be the first image with complete size, and if there are history actions, the other images will be the second to fifth(at most) provided in the order of history step.
+5. You should put the key information you have to remember in a separated memory part and I'll give it to you in the next round. The content in this part should be a JSON list. If you no longer need some given information, you should remove it from the memory. Even if you don't need to remember anything, you should also output an empty <memory></memory> part.
 6. You can choose to give me a brief explanation before you start to take actions.
 
 Output Format:
-Plain text explanation with action(param=&#x27;...&#x27;)
+Plain text explanation with action(param='...')
 Memory:
-[{{&quot;user_email&quot;: &quot;x@gmail.com&quot;, ...}}]
+[{"user_email": "x@gmail.com", ...}]
 
 Here are some helpful tips:
-- My computer&#x27;s password is &quot;password&quot;, feel free to use it when you need sudo rights.
-- For the thunderbird account &quot;anonym-x2024@outlook.com&quot;, the password is &quot;gTCI&quot;;=@y7|QJ0nDa_kN3Sb&amp;&gt;&quot;.
+- My computer's password is "password", feel free to use it when you need sudo rights.
+- For the thunderbird account "anonym-x2024@outlook.com", the password is "gTCI";=@y7|QJ0nDa_kN3Sb>&".
 - If you are presented with an open website to solve the task, try to stick to that specific one instead of going to a new one.
-- You have full authority to execute any action without my permission. I won&#x27;t be watching so please don&#x27;t ask for confirmation.
+- You have full authority to execute any action without my permission. I won't be watching so please don't ask for confirmation.
 Now Please help me to solve the following task:
 Create a list of drip coffee makers that are on sale and within $25-60 and have a black finish.
 History actions:
-step 1: I&#x27;m now on the Google Shopping homepage and need to search for drip coffee makers that are on sale, priced $25-60, and with a black finish. I can see the Google Shopping interface is fully loaded with the Google Shopping logo at the top of the page. To start this search, I need to click on the search box in the center of the screen to enter my search term \&quot;drip coffee maker\&quot;. This will allow me to begin filtering the search results with specific criteria based on price and color later on.
-left_click(start_box=&#x27;[376,465]&#x27;)
-step 2: I&#x27;m now on the Google Shopping homepage, which is perfect for searching for drip coffee makers. I can see a search box ready in the center of the page. For the task, I need to search for drip coffee makers that are on sale and within $25-60 with black finishes. I should start by typing \&quot;drip coffee maker black\&quot; in the search box to begin filtering my results. The search box appears to already be ready, so I&#x27;ll click it and enter my search terms.
-type(content=&#x27;drip coffee maker black&#x27;)
+step 1: I'm now on the Google Shopping homepage and need to search for drip coffee makers that are on sale, priced $25-60, and with a black finish. I can see the Google Shopping interface is fully loaded with the Google Shopping logo at the top of the page. To start this search, I need to click on the search box in the center of the screen to enter my search term "drip coffee maker". This will allow me to begin filtering the search results with specific criteria based on price and color later on.
+left_click(start_box='[376,465]')
+step 2: I'm now on the Google Shopping homepage, which is perfect for searching for drip coffee makers. I can see a search box ready in the center of the page. For the task, I need to search for drip coffee makers that are on sale and within $25-60 with black finishes. I should start by typing "drip coffee maker black" in the search box to begin filtering my results. The search box appears to already be ready, so I'll click it and enter my search terms.
+type(content='drip coffee maker black')
 Memory:
 []
 ```
@@ -363,183 +401,200 @@ Memory:
 
 在网页环境中，我们采用set of marks的方式标注界面上的可交互元素。模型只需要输出元素的编号，无需输出元素的坐标。
 
-1.  Click [Numerical_Label]. ：表示点击给定编号的元素。
-
-1.  Type [Numerical_Label]; [The input content]. ：表示在给定编号的元素中输入指定文本。
-
-1.  Scroll [Numerical_Label or WINDOW]; [up or down]. ：表示滚动给定编号的元素或者窗口。
-
-1.  Wait. ：表示等待界面内容加载。
-
-1.  GoBack. ：表示返回前一个网页。
-
-1.  Bing. ：表示进入必应的首页，后续可以进行搜索工作。
-
-1.  ANSWER; <content>The content of the answer</content>. ：表示用一段文本回答用户的问题；在该动作之后，应当立即结束任务。
-
-1.  Key; [The key name]. ：表示按下某一个按钮。
+1. `Click [Numerical_Label]` ：表示点击给定编号的元素。
+1. `Type [Numerical_Label]; [The input content]` ：表示在给定编号的元素中输入指定文本。
+1. `Scroll [Numerical_Label or WINDOW]; [up or down]` ：表示滚动给定编号的元素或者窗口。
+1. `Wait` ：表示等待界面内容加载。
+1. `GoBack` ：表示返回前一个网页。
+1. `Bing` ：表示进入必应的首页，后续可以进行搜索工作。
+1. `ANSWER; <content>The content of the answer</content>` ：表示用一段文本回答用户的问题；在该动作之后，应当立即结束任务。
+1. `Key; [The key name]` ：表示按下某一个按钮。
 
 ### Prompt
 
-下面是 prompt 的模板。其中#TASK#、#PREVIOUS_ACTIONS# 需要被替换成实际的内容。在调用模型的时候，你应该同时一张带有 set of marks的屏幕截图。注意，所有的历史操作应当直接编码进 prompt 中，而不是组织成多轮对话的形式。
+下面是 prompt 的模板。其中`#TASK#`、`#PREVIOUS_ACTIONS#` 需要被替换成实际的内容。在调用模型的时候，你应该同时一张带有 set of marks的屏幕截图。注意，所有的历史操作应当直接编码进 prompt 中，而不是组织成多轮对话的形式。
 
-```
-Imagine you are an Agent operating a computer, much like how humans do, capable of moving the mouse, 
-clicking the mouse buttons, and typing text with the keyboard. 
-You can also perform a special action called &#x27;ANSWER&#x27; if the task&#x27;s answer has been found. 
-You are tasked with completing a final mission: &quot;{TASK}&quot;, Please interact with {Web} and get the answer. Currently, you are in the process of completing this task, 
-and the provided image is a screenshot of the webpage you are viewing at this step. This screenshot will feature Numerical Labels placed in the TOP LEFT corner of each Web Element.
-Carefully analyze the visual information to identify the Numerical Label corresponding to the Web Element that requires interaction, then follow the guidelines and choose one of the following actions:
-1. Click a Web Element.
-2. Delete existing content in a textbox and then type content. 
-3. Scroll up or down. Multiple scrolls are allowed to browse the webpage. Pay attention!! The default scroll is the whole window. If the scroll widget is located in a certain area of the webpage, then you have to specify a Web Element in that area. I would hover the mouse there and then scroll.
-4. Wait. Typically used to wait for unfinished webpage processes, with a duration of 5 seconds.
+
+
+# 智能体网页交互操作指南
+
+## 角色说明
+
+Imagine you are an `Agent` operating a computer, much like how humans do, capable of moving the mouse, clicking the mouse buttons, and typing text with the keyboard. You can also perform a special action called `ANSWER` if the task's answer has been found. You are tasked with completing a final mission: `"{TASK}"`, Please interact with `{Web}` and get the answer. Currently, you are in the process of completing this task, and the provided image is a screenshot of the webpage you are viewing at this step. This screenshot will feature Numerical Labels placed in the TOP LEFT corner of each Web Element. Carefully analyze the visual information to identify the Numerical Label corresponding to the Web Element that requires interaction, then follow the guidelines and choose one of the following actions:
+
+1. `Click` a Web Element.
+2. Delete existing content in a textbox and then type content.
+3. `Scroll` up or down. Multiple scrolls are allowed to browse the webpage. Pay attention!! The default scroll is the whole window. If the scroll widget is located in a certain area of the webpage, then you have to specify a Web Element in that area. I would hover the mouse there and then scroll.
+4. `Wait`. Typically used to wait for unfinished webpage processes, with a duration of 5 seconds.
 5. Go back, returning to the previous webpage.
-6. Bing, directly jump to the Bing search page. When you can&#x27;t find information in some websites, try starting over with Bing.
-7. Key, press the key, only the &#x27;Return&#x27; key can be pressed.
-8. Answer. This action should only be chosen when all questions in the task have been solved.
+6. `Bing`, directly jump to the Bing search page. When you can't find information in some websites, try starting over with Bing.
+7. `Key`, press the key, only the `Return` key can be pressed.
+8. `Answer`. This action should only be chosen when all questions in the task have been solved.
 
+## 补充信息
 
-Here&#x27;s some additional information:
-A. Your final task is #TASK#.
-B. Correspondingly, Action should STRICTLY follow the format:
-    - Click [Numerical_Label]. For example the Action &quot;Click [1]&quot; means clicking on the web element with a Numerical_Label of &quot;1&quot;.
-    - Type [Numerical_Label]; [The input content]. For example the Action &quot;Type [2]; [5$]&quot; means typing &quot;5$&quot; in the web element with a Numerical_Label of &quot;2&quot;.
-    - Scroll [Numerical_Label or WINDOW]; [up or down]. For example the Action &quot;Scroll [6]; [up]&quot; means scrolling up in the web element with a Numerical_Label of &quot;6&quot;.
-    - Wait. For example the Action &quot;Wait&quot; means waiting for 5 seconds.
-    - GoBack. For example the Action &quot;GoBack&quot; means going back to the previous webpage.
-    - Bing. For example the Action &quot;Bing&quot; means jumping to the Bing search page.
-    - ANSWER; &lt;content&gt;The content of the answer&lt;/content&gt;. For example the Action &quot;ANSWER; &lt;content&gt;Guatemala&lt;/content&gt;&quot; means answering the task with &quot;Guatemala&quot;.
-    - Key; [The key name]. For example the Action &quot;Key; [Return]&quot; means pressing the Enter key
-C. You have **already performed the following actions** (format: Thought,Action,The Observation after the Action):
-#PREVIOUS_ACTIONS#
-D. The &quot;Memory&quot; only stores the information obtained from the web page that is relevant to the task,  and the &quot;Memory&quot; is strictly in JSON format. For example: {\&quot;user_email_address\&quot;: \&quot;test@163.com\&quot;, \&quot;user_email_password\&quot;: \&quot;123456\&quot;, \&quot;jack_email_address\&quot;: \&quot;jack@163.com\&quot;}. 
-The &quot;Memory&quot; does not include future plans, descriptions of current actions, or other reflective content; it only records visual information that is relevant to the task obtained from the screenshot. The &quot;Memory&quot; in the current step as follow:
-Memory:{Memory}
-E. I&#x27;ve provided the tag name of each element and the text it contains (if text exists). Note that &lt;textarea&gt; or &lt;input&gt; may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.
-{web_text}
+A. Your final task is `#TASK#`.
 
-Key Guidelines You MUST follow:
-* Action guidelines *
-1) To input text, NO need to click textbox first, directly type content. After typing, the system automatically hits `ENTER` key. Sometimes you should click the search button to apply search filters. Try to use simple language when searching.  
-2) You must Distinguish between textbox and search button, don&#x27;t type content into the button! If no textbox is found, you may need to click the search button first before the textbox is displayed. 
-3) Execute only one action per iteration. 
-4) STRICTLY Avoid repeating the same action if the webpage remains unchanged. You may have selected the wrong web element or numerical label. Continuous use of the Wait is also NOT allowed.
-5) When a complex Task involves multiple questions or steps, select &quot;ANSWER&quot; only at the very end, after addressing all of these questions (steps). Flexibly combine your own abilities with the information in the web page. Double check the formatting requirements in the task when ANSWER. 
-6) You can only interact with web elements in the screenshot that have s numerical label.Before giving the action, double-check that the numerical label appears on the screen.
+B. Correspondingly, `Action` should STRICTLY follow the format:
+   - `Click [Numerical_Label]`. For example the Action `"Click [1]"` means clicking on the web element with a `Numerical_Label` of `"1"`.
+   - `Type [Numerical_Label]; [The input content]`. For example the Action `"Type [2]; [5$]"` means typing `"5$"` in the web element with a `Numerical_Label` of `"2"`.
+   - `Scroll [Numerical_Label or WINDOW]; [up or down]`. For example the Action `"Scroll [6]; [up]"` means scrolling up in the web element with a `Numerical_Label` of `"6"`.
+   - `Wait`. For example the Action `"Wait"` means waiting for 5 seconds.
+   - `GoBack`. For example the Action `"GoBack"` means going back to the previous webpage.
+   - `Bing`. For example the Action `"Bing"` means jumping to the Bing search page.
+   - `ANSWER; <content>The content of the answer</content>`. For example the Action `"ANSWER; <content>Guatemala</content>"` means answering the task with `"Guatemala"`.
+   - `Key; [The key name]`. For example the Action `"Key; [Return]"` means pressing the `Enter` key
+
+C. You have **already performed the following actions** (format: `Thought`, `Action`, `Observation` after the Action): `#PREVIOUS_ACTIONS#`
+
+D. The `Memory` only stores the information obtained from the web page that is relevant to the task, and the `Memory` is strictly in `JSON` format. For example: `{"user_email_address": "test@163.com", "user_email_password": "123456", "jack_email_address": "jack@163.com"}`.
+The `Memory` does not include future plans, descriptions of current actions, or other reflective content; it only records visual information that is relevant to the task obtained from the screenshot. The `Memory` in the current step as follow: `Memory:{Memory}`
+
+E. I've provided the tag name of each element and the text it contains (if text exists). Note that `<textarea>` or `<input>` may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information. `{web_text}`
+
+## 关键准则
+
+### 操作准则
+
+1) To input text, NO need to click textbox first, directly type content. After typing, the system automatically hits `ENTER` key. Sometimes you should click the search button to apply search filters. Try to use simple language when searching.
+2) You must Distinguish between textbox and search button, don't type content into the button! If no textbox is found, you may need to click the search button first before the textbox is displayed.
+3) Execute only one action per iteration.
+4) STRICTLY Avoid repeating the same action if the webpage remains unchanged. You may have selected the wrong web element or numerical label. Continuous use of the `Wait` is also NOT allowed.
+5) When a complex Task involves multiple questions or steps, select `ANSWER` only at the very end, after addressing all of these questions (steps). Flexibly combine your own abilities with the information in the web page. Double check the formatting requirements in the task when `ANSWER`.
+6) You can only interact with web elements in the screenshot that have s numerical label. Before giving the action, double-check that the numerical label appears on the screen.
 7) If any web elements with numerical labels in the screenshot have not finished loading, you need to wait for them to load completely.
-* Web Browsing Guidelines *
-1) Don&#x27;t interact with useless web elements like Login, Sign-in, donation that appear in Webpages. Pay attention to Key Web Elements like search textbox and menu.
-2) Vsit video websites like YouTube is allowed BUT you can&#x27;t play videos. Clicking to download PDF is allowed and will be analyzed by the Assistant API.
-3) Focus on the numerical labels in the TOP LEFT corner of each rectangle (element). Ensure you don&#x27;t mix them up with other numbers (e.g. Calendar) on the page.
+
+### 网页浏览准则
+
+1) Don't interact with useless web elements like Login, Sign-in, donation that appear in Webpages. Pay attention to Key Web Elements like search textbox and menu.
+2) Vsit video websites like YouTube is allowed BUT you can't play videos. Clicking to download PDF is allowed and will be analyzed by the Assistant API.
+3) Focus on the numerical labels in the TOP LEFT corner of each rectangle (element). Ensure you don't mix them up with other numbers (e.g. Calendar) on the page.
 4) Focus on the date in task, you must look for results that match the date. It may be necessary to find the correct year, month and day at calendar.
-5）During the process of browsing web page content, to ensure the complete acquisition of the target content, it may be necessary to scroll down the page until confirming the appearance of the end marker for the target content. For example, when new webpage information appears, or the webpage scroll bar has reached the bottom, etc.
-6) When you work on the github website, use &quot;Key; [Return]&quot; to start a search.
+5) During the process of browsing web page content, to ensure the complete acquisition of the target content, it may be necessary to scroll down the page until confirming the appearance of the end marker for the target content. For example, when new webpage information appears, or the webpage scroll bar has reached the bottom, etc.
+6) When you work on the github website, use `"Key; [Return]"` to start a search.
 7) Try your best to find the answer that best fits the task, if any situations that do not meet the task requirements occur during the task, correct the mistakes promptly.
 
+## 回复格式
 
 Your reply should strictly follow the format:
-Thought: {Your brief thoughts (briefly summarize the info that will help ANSWER)}
-Action: {One Action format you choose}
-Memory_Updated: {The latest version of memory generated by modifying or supplementing the original memory content based on the visual information in the current screenshot.}
-
+`Thought`: {Your brief thoughts (briefly summarize the info that will help `ANSWER`)}
+`Action`: {One Action format you choose}
+`Memory_Updated`: {The latest version of memory generated by modifying or supplementing the original memory content based on the visual information in the current screenshot.}
 
 Then the User will provide:
-Observation: {A labeled screenshot Given by User}
-```
+`Observation`: {A labeled screenshot Given by User}
+
+## 示例
 
 下面是一个实际使用的 prompt 的例子。
 
 ![](img/cc579ae34a881b187239e7e17e9452a3.png)
 
-```
-Imagine you are an Agent operating a computer, much like how humans do, capable of moving the mouse, 
-clicking the mouse buttons, and typing text with the keyboard. 
-You can also perform a special action called &#x27;ANSWER&#x27; if the task&#x27;s answer has been found. 
-You are tasked with completing a final mission: &quot;Provide a recipe for vegetarian lasagna with more than 100 reviews and a rating of at least 4.5 stars suitable for 6 people.&quot;, Please interact with https://www.allrecipes.com/ and get the answer. Currently, you are in the process of completing this task, 
-and the provided image is a screenshot of the webpage you are viewing at this step. This screenshot will feature Numerical Labels placed in the TOP LEFT corner of each Web Element.
+
+
+# AI Agent Web Operation Guide
+
+## Role and Task
+
+Imagine you are an Agent operating a computer, much like how humans do, capable of moving the mouse, clicking the mouse buttons, and typing text with the keyboard. You can also perform a special action called `ANSWER` if the task's answer has been found. You are tasked with completing a final mission: "Provide a recipe for vegetarian lasagna with more than 100 reviews and a rating of at least 4.5 stars suitable for 6 people.", Please interact with `https://www.allrecipes.com/` and get the answer. Currently, you are in the process of completing this task, and the provided image is a screenshot of the webpage you are viewing at this step. This screenshot will feature Numerical Labels placed in the TOP LEFT corner of each Web Element.
+
 Carefully analyze the visual information to identify the Numerical Label corresponding to the Web Element that requires interaction, then follow the guidelines and choose one of the following actions:
 1. Click a Web Element.
-2. Delete existing content in a textbox and then type content. 
+2. Delete existing content in a textbox and then type content.
 3. Scroll up or down. Multiple scrolls are allowed to browse the webpage. Pay attention!! The default scroll is the whole window. If the scroll widget is located in a certain area of the webpage, then you have to specify a Web Element in that area. I would hover the mouse there and then scroll.
-4. Wait. Typically used to wait for unfinished webpage processes, with a duration of 5 seconds.
+4. `Wait`. Typically used to wait for unfinished webpage processes, with a duration of 5 seconds.
 5. Go back, returning to the previous webpage.
-6. Bing, directly jump to the Bing search page. When you can&#x27;t find information in some websites, try starting over with Bing.
-7. Key, press the key, only the &#x27;Return&#x27; key can be pressed.
+6. `Bing`, directly jump to the Bing search page. When you can't find information in some websites, try starting over with Bing.
+7. Key, press the key, only the `Return` key can be pressed.
 8. Answer. This action should only be chosen when all questions in the task have been solved.
 
+## Additional Information
 
-Here&#x27;s some additional information:
+Here's some additional information:
 A. Your final task is Provide a recipe for vegetarian lasagna with more than 100 reviews and a rating of at least 4.5 stars suitable for 6 people..
-B. Correspondingly, Action should STRICTLY follow the format:
-    - Click [Numerical_Label]. For example the Action &quot;Click [1]&quot; means clicking on the web element with a Numerical_Label of &quot;1&quot;.
-    - Type [Numerical_Label]; [The input content]. For example the Action &quot;Type [2]; [5$]&quot; means typing &quot;5$&quot; in the web element with a Numerical_Label of &quot;2&quot;.
-    - Scroll [Numerical_Label or WINDOW]; [up or down]. For example the Action &quot;Scroll [6]; [up]&quot; means scrolling up in the web element with a Numerical_Label of &quot;6&quot;.
-    - Wait. For example the Action &quot;Wait&quot; means waiting for 5 seconds.
-    - GoBack. For example the Action &quot;GoBack&quot; means going back to the previous webpage.
-    - Bing. For example the Action &quot;Bing&quot; means jumping to the Bing search page.
-    - ANSWER; &lt;content&gt;The content of the answer&lt;/content&gt;. For example the Action &quot;ANSWER; &lt;content&gt;Guatemala&lt;/content&gt;&quot; means answering the task with &quot;Guatemala&quot;.
-    - Key; [The key name]. For example the Action &quot;Key; [Return]&quot; means pressing the Enter key
-C. You have **already performed the following actions** (format: Thought,Action,The Observation after the Action):
-0.Thought:I&#x27;m on the homepage of Allrecipes.com. I need to search for &quot;vegetarian lasagna&quot; to find recipes that meet my criteria. I&#x27;ll start by typing the search query directly into the search box since element [1] is a textbox.        Action:Type [1]; [Vegetarian Lasagna]        Observation:Success
-D. The &quot;Memory&quot; only stores the information obtained from the web page that is relevant to the task,  and the &quot;Memory&quot; is strictly in JSON format. For example: {&quot;user_email_address&quot;: &quot;test@163.com&quot;, &quot;user_email_password&quot;: &quot;123456&quot;, &quot;jack_email_address&quot;: &quot;jack@163.com&quot;}. 
-The &quot;Memory&quot; does not include future plans, descriptions of current actions, or other reflective content; it only records visual information that is relevant to the task obtained from the screenshot. The &quot;Memory&quot; in the current step as follow:
-Memory:{}
-E. I&#x27;ve provided the tag name of each element and the text it contains (if text exists). Note that &lt;textarea&gt; or &lt;input&gt; may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.
-[0]: &quot;Allrecipes&quot;, &quot;Visit Allrecipes&#x27; homepage&quot;;        [1]: &lt;input&gt; &quot;&quot;;        [2]: &lt;button&gt; &quot;Click to search&quot;;        [3]: &quot;Log In&quot;;        [4]: &lt;button&gt; &quot;Magazine&quot;;        [5]: &quot;Newsletters&quot;;        [6]: &quot;Sweepstakes&quot;;        [8]: &quot;Dinners&quot;;        [9]: &quot;Meals&quot;;        [10]: &quot;Ingredients&quot;;        [11]: &quot;Occasions&quot;;        [12]: &quot;Cuisines&quot;;        [13]: &quot;Kitchen Tips&quot;;        [14]: &quot;News&quot;;        [15]: &quot;Features&quot;;        [16]: &quot;About Us&quot;;        [17]: &quot;GET THE MAGAZINE&quot;;        [18]: &quot;America&#x27;s
-#1 Trusted Recipe Resource
-since 1997&quot;;        [19]: &quot;51K
-Original Recipes&quot;;        [20]: &quot;7M+
-Ratings &amp; Reviews&quot;;        [21]: &quot;67M
-Home Cooks&quot;;        [28]: &quot;See More&quot;;
 
-Key Guidelines You MUST follow:
-* Action guidelines *
-1) To input text, NO need to click textbox first, directly type content. After typing, the system automatically hits `ENTER` key. Sometimes you should click the search button to apply search filters. Try to use simple language when searching.  
-2) You must Distinguish between textbox and search button, don&#x27;t type content into the button! If no textbox is found, you may need to click the search button first before the textbox is displayed. 
-3) Execute only one action per iteration. 
-4) STRICTLY Avoid repeating the same action if the webpage remains unchanged. You may have selected the wrong web element or numerical label. Continuous use of the Wait is also NOT allowed.
-5) When a complex Task involves multiple questions or steps, select &quot;ANSWER&quot; only at the very end, after addressing all of these questions (steps). Flexibly combine your own abilities with the information in the web page. Double check the formatting requirements in the task when ANSWER. 
-6) You can only interact with web elements in the screenshot that have s numerical label.Before giving the action, double-check that the numerical label appears on the screen.
+B. Correspondingly, Action should STRICTLY follow the format:
+- `Click [Numerical_Label]`. For example the Action `Click [1]` means clicking on the web element with a Numerical_Label of `1`.
+- `Type [Numerical_Label]; [The input content]`. For example the Action `Type [2]; [5$]` means typing `5$` in the web element with a Numerical_Label of `2`.
+- `Scroll [Numerical_Label or WINDOW]; [up or down]`. For example the Action `Scroll [6]; [up]` means scrolling up in the web element with a Numerical_Label of `6`.
+- `Wait`. For example the Action `Wait` means waiting for 5 seconds.
+- `GoBack`. For example the Action `GoBack` means going back to the previous webpage.
+- `Bing`. For example the Action `Bing` means jumping to the Bing search page.
+- `ANSWER; <content>The content of the answer</content>`. For example the Action `ANSWER; <content>Guatemala</content>` means answering the task with `Guatemala`.
+- `Key; [The key name]`. For example the Action `Key; [Return]` means pressing the `Enter` key
+
+C. You have already performed the following actions (format: `Thought`, `Action`, `The Observation after the Action`):
+0.`Thought`:I'm on the homepage of Allrecipes.com. I need to search for "vegetarian lasagna" to find recipes that meet my criteria. I'll start by typing the search query directly into the search box since element `[1]` is a textbox.        `Action`: `Type [1]; [Vegetarian Lasagna]`        `Observation`:Success
+
+D. The `Memory` only stores the information obtained from the web page that is relevant to the task, and the `Memory` is strictly in JSON format. For example: `{"user_email_address": "test@163.com", "user_email_password": "123456", "jack_email_address": "jack@163.com"}`.
+The `Memory` does not include future plans, descriptions of current actions, or other reflective content; it only records visual information that is relevant to the task obtained from the screenshot. The `Memory` in the current step as follow:
+`Memory:{}`
+
+E. I've provided the tag name of each element and the text it contains (if text exists). Note that `<textarea>` or `<input>` may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.
+
+```
+[0]: "Allrecipes", "Visit Allrecipes's homepage"; [1]: <input> ""; [2]: <button> "Click to search"; [3]: "Log In"; [4]: <button> "Magazine"; [5]: "Newsletters"; [6]: "Sweepstakes"; [8]: "Dinners"; [9]: "Meals"; [10]: "Ingredients"; [11]: "Occasions"; [12]: "Cuisines"; [13]: "Kitchen Tips"; [14]: "News"; [15]: "Features"; [16]: "About Us"; [17]: "GET THE MAGAZINE"; [18]: "America's
+#1 Trusted Recipe Resource
+since 1997"; [19]: "51K
+Original Recipes"; [20]: "7M+
+Ratings & Reviews"; [21]: "67M
+Home Cooks"; [28]: "See More";
+```
+
+## Key Guidelines You MUST follow
+
+### Action Guidelines
+1) To input text, NO need to click textbox first, directly type content. After typing, the system automatically hits `ENTER` key. Sometimes you should click the search button to apply search filters. Try to use simple language when searching.
+2) You must Distinguish between textbox and search button, don't type content into the button! If no textbox is found, you may need to click the search button first before the textbox is displayed.
+3) Execute only one action per iteration.
+4) STRICTLY Avoid repeating the same action if the webpage remains unchanged. You may have selected the wrong web element or numerical label. Continuous use of the `Wait` is also NOT allowed.
+5) When a complex Task involves multiple questions or steps, select `ANSWER` only at the very end, after addressing all of these questions (steps). Flexibly combine your own abilities with the information in the web page. Double check the formatting requirements in the task when `ANSWER`.
+6) You can only interact with web elements in the screenshot that have a numerical label. Before giving the action, double-check that the numerical label appears on the screen.
 7) If any web elements with numerical labels in the screenshot have not finished loading, you need to wait for them to load completely.
-* Web Browsing Guidelines *
-1) Don&#x27;t interact with useless web elements like Login, Sign-in, donation that appear in Webpages. Pay attention to Key Web Elements like search textbox and menu.
-2) Vsit video websites like YouTube is allowed BUT you can&#x27;t play videos. Clicking to download PDF is allowed and will be analyzed by the Assistant API.
-3) Focus on the numerical labels in the TOP LEFT corner of each rectangle (element). Ensure you don&#x27;t mix them up with other numbers (e.g. Calendar) on the page.
+
+### Web Browsing Guidelines
+1) Don't interact with useless web elements like Login, Sign-in, donation that appear in Webpages. Pay attention to Key Web Elements like search textbox and menu.
+2) Visit video websites like YouTube is allowed BUT you can't play videos. Clicking to download PDF is allowed and will be analyzed by the Assistant API.
+3) Focus on the numerical labels in the TOP LEFT corner of each rectangle (element). Ensure you don't mix them up with other numbers (e.g. Calendar) on the page.
 4) Focus on the date in task, you must look for results that match the date. It may be necessary to find the correct year, month and day at calendar.
-5）During the process of browsing web page content, to ensure the complete acquisition of the target content, it may be necessary to scroll down the page until confirming the appearance of the end marker for the target content. For example, when new webpage information appears, or the webpage scroll bar has reached the bottom, etc.
-6) When you work on the github website, use &quot;Key; [Return]&quot; to start a search.
+5) During the process of browsing web page content, to ensure the complete acquisition of the target content, it may be necessary to scroll down the page until confirming the appearance of the end marker for the target content. For example, when new webpage information appears, or the webpage scroll bar has reached the bottom, etc.
+6) When you work on the github website, use `Key; [Return]` to start a search.
 7) Try your best to find the answer that best fits the task, if any situations that do not meet the task requirements occur during the task, correct the mistakes promptly.
 
+## Reply Format
 
 Your reply should strictly follow the format:
+
+```
 Thought: {Your brief thoughts (briefly summarize the info that will help ANSWER)}
 Action: {One Action format you choose}
 Memory_Updated: {The latest version of memory generated by modifying or supplementing the original memory content based on the visual information in the current screenshot.}
-
+```
 
 Then the User will provide:
-Observation: {A labeled screenshot Given by User}
-```
+`Observation`: {A labeled screenshot Given by User}
 
-> Note: 在使用Selenium库操作网页时，为了确保select元素的在截图中可见并且可操作，我们执行JavaScript脚本对原生的select网页元素进行了重写。
 
-js脚本示例：
 
-```
+> Note: 在使用`Selenium`库操作网页时，为了确保`select`元素的在截图中可见并且可操作，我们执行JavaScript脚本对原生的`select`网页元素进行了重写。
+
+## js脚本示例
+
+
+
+```javascript
 // 为所有 select 元素创建自定义下拉框
 function customizeSelects() {
-    var selects = document.querySelectorAll(&#x27;select:not([data-customized])&#x27;);
+    var selects = document.querySelectorAll('select:not([data-customized])');
 
-
-    for (var i = 0; i &lt; selects.length; i++) {
+    for (var i = 0; i < selects.length; i++) {
         (function (originalSelect, index) {
             // 标记为已自定义
-            if (originalSelect.hasAttribute(&#x27;data-customized&#x27;)) {
+            if (originalSelect.hasAttribute('data-customized')) {
                 return;
             }
-            originalSelect.setAttribute(&#x27;data-customized&#x27;, &#x27;true&#x27;);
-            originalSelect.setAttribute(&#x27;data-custom-id&#x27;, &#x27;custom-select-&#x27; + index);
+            originalSelect.setAttribute('data-customized', 'true');
+            originalSelect.setAttribute('data-custom-id', 'custom-select-' + index);
 
             var originalStyle = window.getComputedStyle(originalSelect);
             // 保存原始select的尺寸和样式信息
@@ -555,18 +610,18 @@ function customizeSelects() {
             var originalBorderRadius = originalStyle.borderRadius;
             var originalBackgroundColor = originalStyle.backgroundColor;
             // 创建自定义下拉列表 - 直接添加到 body 最后，避免被容器的 overflow 属性截断
-            var dropdown = document.createElement(&#x27;div&#x27;);
-            dropdown.className = &#x27;custom-select-dropdown&#x27;;
-            dropdown.setAttribute(&#x27;data-for-select&#x27;, &#x27;custom-select-&#x27; + index);
-            dropdown.style.display = &#x27;none&#x27;;
-            dropdown.style.position = &#x27;absolute&#x27;; // 使用绝对定位
-            dropdown.style.width = originalSelect.offsetWidth + &#x27;px&#x27;;
-            dropdown.style.overflowY = &#x27;auto&#x27;;
-            dropdown.style.backgroundColor = &#x27;#fff&#x27;;
-            dropdown.style.border = &#x27;1px solid #ddd&#x27;;
-            dropdown.style.borderRadius = &#x27;4px&#x27;;
-            dropdown.style.boxShadow = &#x27;0 2px 5px rgba(0,0,0,0.2)&#x27;;
-            dropdown.style.zIndex = &#x27;9999&#x27;; // 使用较高的 z-index 确保在顶层
+            var dropdown = document.createElement('div');
+            dropdown.className = 'custom-select-dropdown';
+            dropdown.setAttribute('data-for-select', 'custom-select-' + index);
+            dropdown.style.display = 'none';
+            dropdown.style.position = 'absolute'; // 使用绝对定位
+            dropdown.style.width = originalSelect.offsetWidth + 'px';
+            dropdown.style.overflowY = 'auto';
+            dropdown.style.backgroundColor = '#fff';
+            dropdown.style.border = '1px solid #ddd';
+            dropdown.style.borderRadius = '4px';
+            dropdown.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+            dropdown.style.zIndex = '9999'; // 使用较高的 z-index 确保在顶层
             document.body.appendChild(dropdown); // 添加到 body
 
             // 记录 select 和 dropdown 的关联
@@ -577,19 +632,19 @@ function customizeSelects() {
             populateDropdown(originalSelect, dropdown);
 
             // 拦截原生的下拉框行为
-            originalSelect.addEventListener(&#x27;mousedown&#x27;, function (e) {
+            originalSelect.addEventListener('mousedown', function (e) {
                 e.preventDefault(); // 阻止原生下拉框
                 e.stopPropagation();
             });
 
             // 使用click事件来显示下拉框
-            originalSelect.addEventListener(&#x27;click&#x27;, function (e) {
+            originalSelect.addEventListener('click', function (e) {
                 e.stopPropagation();
                 var dropdown = this._customDropdown;
 
                 // 如果下拉框已经显示，则隐藏它
-                if (dropdown.style.display === &#x27;block&#x27;) {
-                    dropdown.style.display = &#x27;none&#x27;;
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
                     return;
                 }
 
@@ -603,31 +658,31 @@ function customizeSelects() {
                 positionDropdown(this, dropdown);
 
                 // 显示当前下拉列表
-                dropdown.style.display = &#x27;block&#x27;;
+                dropdown.style.display = 'block';
             });
 
             // 当select值改变时
-            originalSelect.addEventListener(&#x27;change&#x27;, function () {
+            originalSelect.addEventListener('change', function () {
                 // 如果下拉列表可见，更新选中状态
                 var dropdown = this._customDropdown;
-                if (dropdown.style.display === &#x27;block&#x27;) {
+                if (dropdown.style.display === 'block') {
                     updateSelectedOption(this, dropdown);
                 }
             });
 
             // 当窗口大小改变时重新定位所有可见的下拉框
-            window.addEventListener(&#x27;resize&#x27;, function () {
-                var visibleDropdowns = document.querySelectorAll(&#x27;.custom-select-dropdown[style*=&quot;display: block&quot;]&#x27;);
-                for (var j = 0; j &lt; visibleDropdowns.length; j++) {
+            window.addEventListener('resize', function () {
+                var visibleDropdowns = document.querySelectorAll('.custom-select-dropdown[style*="display: block"]');
+                for (var j = 0; j < visibleDropdowns.length; j++) {
                     var select = visibleDropdowns[j]._originalSelect;
                     positionDropdown(select, visibleDropdowns[j]);
                 }
             });
 
             // 当页面滚动时重新定位所有可见的下拉框
-            document.addEventListener(&#x27;scroll&#x27;, function () {
-                var visibleDropdowns = document.querySelectorAll(&#x27;.custom-select-dropdown[style*=&quot;display: block&quot;]&#x27;);
-                for (var j = 0; j &lt; visibleDropdowns.length; j++) {
+            document.addEventListener('scroll', function () {
+                var visibleDropdowns = document.querySelectorAll('.custom-select-dropdown[style*="display: block"]');
+                for (var j = 0; j < visibleDropdowns.length; j++) {
                     var select = visibleDropdowns[j]._originalSelect;
                     positionDropdown(select, visibleDropdowns[j]);
                 }
@@ -637,7 +692,7 @@ function customizeSelects() {
     }
 
     // 点击页面其他区域时隐藏所有下拉列表
-    document.addEventListener(&#x27;click&#x27;, closeAllDropdowns);
+    document.addEventListener('click', closeAllDropdowns);
 }
 
 // 定位下拉框，确保其不会被屏幕边缘截断
@@ -658,47 +713,47 @@ function positionDropdown(select, dropdown) {
     var viewportWidth = window.innerWidth + scrollLeft;
 
     // 如果会超出右边界，则向左调整
-    if (rightEdge &gt; viewportWidth) {
+    if (rightEdge > viewportWidth) {
         left = Math.max(scrollLeft, viewportWidth - dropdownWidth);
     }
 
     // 设置下拉框的位置
-    dropdown.style.top = top + &#x27;px&#x27;;
-    dropdown.style.left = left + &#x27;px&#x27;;
+    dropdown.style.top = top + 'px';
+    dropdown.style.left = left + 'px';
 }
 
 // 关闭所有下拉列表
 function closeAllDropdowns() {
-    var dropdowns = document.querySelectorAll(&#x27;.custom-select-dropdown&#x27;);
-    for (var i = 0; i &lt; dropdowns.length; i++) {
-        dropdowns[i].style.display = &#x27;none&#x27;;
+    var dropdowns = document.querySelectorAll('.custom-select-dropdown');
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = 'none';
     }
 }
 
 // 填充下拉列表
 function populateDropdown(select, dropdown) {
-// 清空下拉列表
-    dropdown.innerHTML = &#x27;&#x27;;
+    // 清空下拉列表
+    dropdown.innerHTML = '';
 
-// 获取原始select元素的计算样式
+    // 获取原始select元素的计算样式
     var selectStyle = window.getComputedStyle(select);
 
-// 将字体相关样式应用到下拉框本身
+    // 将字体相关样式应用到下拉框本身
     dropdown.style.fontSize = selectStyle.fontSize;
     dropdown.style.fontFamily = selectStyle.fontFamily;
     dropdown.style.fontWeight = selectStyle.fontWeight;
     dropdown.style.lineHeight = selectStyle.lineHeight;
     dropdown.style.color = selectStyle.color;
 
-// 重新填充选项
-    for (var j = 0; j &lt; select.options.length; j++) {
+    // 重新填充选项
+    for (var j = 0; j < select.options.length; j++) {
         (function (optionIndex) {
-            var option = document.createElement(&#x27;div&#x27;);
-            option.className = &#x27;custom-select-option&#x27;;
+            var option = document.createElement('div');
+            option.className = 'custom-select-option';
             option.textContent = select.options[optionIndex].text;
             option.dataset.value = select.options[optionIndex].value;
-            option.style.padding = &#x27;0px 2px&#x27;;
-            option.style.cursor = &#x27;pointer&#x27;;
+            option.style.padding = '0px 2px';
+            option.style.cursor = 'pointer';
 
             // 应用与原始select相同的字体样式
             option.style.fontSize = selectStyle.fontSize;
@@ -708,18 +763,18 @@ function populateDropdown(select, dropdown) {
 
             // 设置悬停效果
             option.onmouseover = function () {
-                this.style.backgroundColor = &#x27;#f0f0f0&#x27;;
+                this.style.backgroundColor = '#f0f0f0';
             };
 
             option.onmouseout = function () {
                 if (optionIndex !== select.selectedIndex) {
-                    this.style.backgroundColor = &#x27;#fff&#x27;;
+                    this.style.backgroundColor = '#fff';
                 }
             };
 
             // 将当前选中项标记为活动状态
             if (optionIndex === select.selectedIndex) {
-                option.style.backgroundColor = &#x27;#f0f0f0&#x27;;
+                option.style.backgroundColor = '#f0f0f0';
             }
 
             // 设置点击事件
@@ -728,10 +783,10 @@ function populateDropdown(select, dropdown) {
                 select.selectedIndex = optionIndex;
 
                 // 触发原始select的change事件
-                var event = new Event(&#x27;change&#x27;, {bubbles: true});
+                var event = new Event('change', {bubbles: true});
                 select.dispatchEvent(event);
 
-                dropdown.style.display = &#x27;none&#x27;;
+                dropdown.style.display = 'none';
             };
 
             dropdown.appendChild(option);
@@ -741,23 +796,23 @@ function populateDropdown(select, dropdown) {
 
 // 更新下拉列表选中状态
 function updateSelectedOption(select, dropdown) {
-    var options = dropdown.querySelectorAll(&#x27;.custom-select-option&#x27;);
-    for (var i = 0; i &lt; options.length; i++) {
+    var options = dropdown.querySelectorAll('.custom-select-option');
+    for (var i = 0; i < options.length; i++) {
         if (i === select.selectedIndex) {
-            options[i].style.backgroundColor = &#x27;#f0f0f0&#x27;;
+            options[i].style.backgroundColor = '#f0f0f0';
         } else {
-            options[i].style.backgroundColor = &#x27;#fff&#x27;;
+            options[i].style.backgroundColor = '#fff';
         }
     }
 }
 
 // 清理函数 - 用于当元素从DOM中移除时清理对应的下拉框
 function cleanupDropdowns() {
-    var allDropdowns = document.querySelectorAll(&#x27;.custom-select-dropdown&#x27;);
-    for (var i = 0; i &lt; allDropdowns.length; i++) {
+    var allDropdowns = document.querySelectorAll('.custom-select-dropdown');
+    for (var i = 0; i < allDropdowns.length; i++) {
         var dropdown = allDropdowns[i];
-        var selectId = dropdown.getAttribute(&#x27;data-for-select&#x27;);
-        var select = document.querySelector(&#x27;select[data-custom-id=&quot;&#x27; + selectId + &#x27;&quot;]&#x27;);
+        var selectId = dropdown.getAttribute('data-for-select');
+        var select = document.querySelector('select[data-custom-id="' + selectId + '"]');
 
         // 如果找不到对应的select元素，则移除下拉框
         if (!select) {
@@ -777,7 +832,7 @@ var observer = new MutationObserver(function (mutations) {
     var needsUpdate = false;
 
     mutations.forEach(function (mutation) {
-        if (mutation.type === &#x27;childList&#x27;) {
+        if (mutation.type === 'childList') {
             needsUpdate = true;
         }
     });

@@ -1,3 +1,4 @@
+
 # 文章风格提取器（文风抽取）
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/M9d8d9yxvoYEQ0xou6zcQONfnme](https://vxc3hj17dym.feishu.cn/docx/M9d8d9yxvoYEQ0xou6zcQONfnme)
@@ -23,7 +24,7 @@ tag：文风 抽取
 &quot;&quot;&quot;
 ```
 
-**在抽取到所需要的文章风格后，输入提示词，在**末尾加你的写作要求，生成该风格的新文章：
+**在抽取到所需要的文章风格后，输入提示词，在末尾加你的写作要求，生成该风格的新文章**：
 
 ```
 基于上述风格为我生成一篇（这里提供你要创作的内容主题）文章。
@@ -37,7 +38,7 @@ tag：文风 抽取
 
 ## 文章风格提取（核心提示词）
 
-https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
+https://monica.im/share/bot?botId=1eOLOpnm Monica智能体
 
 ```
 # 文章风格分析器 v1.0
@@ -55,57 +56,102 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 ## 输出格式
 你将以下列结构化格式以代码块输出分析结果：
 ```json
+
 {
+
     &quot;style_summary&quot;: &quot;风格一句话概括&quot;,
+
     &quot;language&quot;: {
+
         &quot;sentence_pattern&quot;: [&quot;主要句式特征&quot;, &quot;次要句式特征&quot;],
+
         &quot;word_choice&quot;: {
+
             &quot;formality_level&quot;: &quot;正式度 1-5&quot;,
+
             &quot;preferred_words&quot;: [&quot;高频特征词1&quot;, &quot;特征词2&quot;],
+
             &quot;avoided_words&quot;: [&quot;规避词类1&quot;, &quot;规避词类2&quot;]
+
         },
+
         &quot;rhetoric&quot;: [&quot;主要修辞手法1&quot;, &quot;修辞手法2&quot;]
+
     },
+
     &quot;structure&quot;: {
+
         &quot;transition_style&quot;: &quot;过渡特征&quot;,
+
         &quot;hierarchy_pattern&quot;: &quot;层次展开方式&quot;
+
     },
+
     &quot;narrative&quot;: {
+
         &quot;perspective&quot;: &quot;叙事视角&quot;,
+
         &quot;time_sequence&quot;: &quot;时间处理方式&quot;,
+
         &quot;narrator_attitude&quot;: &quot;叙事态度&quot;
+
     },
+
     &quot;emotion&quot;: {
+
         &quot;intensity&quot;: &quot;情感强度 1-5&quot;,
+
         &quot;expression_style&quot;: &quot;表达方式&quot;,
+
         &quot;tone&quot;: &quot;情感基调&quot;
+
     },
+
     &quot;thinking&quot;: {
+
         &quot;logic_pattern&quot;: &quot;思维推进方式&quot;,
+
         &quot;depth&quot;: &quot;思维深度 1-5&quot;,
+
         &quot;rhythm&quot;: &quot;思维节奏特征&quot;
+
     },
+
     &quot;uniqueness&quot;: {
+
         &quot;signature_phrases&quot;: [&quot;标志性表达1&quot;, &quot;表达2&quot;],
+
         &quot;imagery_system&quot;: [&quot;核心意象1&quot;, &quot;意象2&quot;]
+
     },
+
     &quot;cultural&quot;: {
+
         &quot;allusions&quot;: [&quot;典故类型&quot;, &quot;使用频率&quot;],
+
         &quot;knowledge_domains&quot;: [&quot;涉及领域1&quot;, &quot;领域2&quot;]
+
     },
+
     &quot;rhythm&quot;: {
+
         &quot;syllable_pattern&quot;: &quot;音节特征&quot;,
+
         &quot;pause_pattern&quot;: &quot;停顿规律&quot;,
+
         &quot;tempo&quot;: &quot;节奏特征&quot;
+
     }
+
 }
+
 ```
 ## 注意：
 1. 绝不提取文中提及的特殊要素，例如书名、作者姓名、特定地理位置等。
 2. 风格提取的目的在于基于该风格生成其他指定主题的文章，提取要素应当基于这一任务进行。
 ```
 
-# 抽取效果：
+## 抽取效果
 
 ![](img/0328d7f9b7b61c0851c2bebe239ef5e5.png)
 
@@ -113,9 +159,9 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 
 ![](img/f6ae86b66753701d4e5106c69460385e.png)
 
-# 已抽取的一些风格参考：
+## 已抽取的一些风格参考
 
-## 万维钢风格
+### 万维钢风格
 
 ```
 {
@@ -167,7 +213,7 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 注意：确保生成内容和原文主旨的一致性，不要乱用举例以至于失去原文本意，注意概念映射的正确性。
 ```
 
-## 文风抽取 - **史铁生 -《我与地坛》**
+### 文风抽取 - 史铁生 -《我与地坛》
 
 ```
 {
@@ -217,7 +263,9 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 }
 ```
 
-## 文风抽取 - 李娟 - 《我的阿勒泰》
+### 文风抽取 - 李娟 - 《我的阿勒泰》
+
+
 
 ```
 {
@@ -267,7 +315,7 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 }
 ```
 
-## 文风抽取 - **许倬云 -《说中国》**
+## 文风抽取 - 许倬云 -《说中国》
 
 ```
 {
@@ -317,7 +365,7 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 }
 ```
 
-## 文风抽取 - **鲁迅 -《狂人日记》**
+## 文风抽取 - 鲁迅 -《狂人日记》
 
 ```
 {
@@ -367,7 +415,7 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 }
 ```
 
-## 文风抽取 - **王小波 -《万寿寺》**
+## 文风抽取 - 王小波 -《万寿寺》
 
 ```
 {
@@ -419,9 +467,11 @@ https://monica.im/share/bot?botId=1eOLOpnm  Monica智能体
 
 ## 飞书多维表格工作流自动化抽取
 
-使用方法：把你需要抽取的文章截图贴到第3列，由deepseek自动分析一切。
+使用方法：把你需要抽取的文章截图贴到第3列，由`deepseek`自动分析一切。
 
-[文学风格抽取](https://vxc3hj17dym.feishu.cn/wiki/Dqbbwi8g8i6gc1kBkc1cL9hrntg?from=from_copylink)
+
+
+# [文学风格抽取](https://vxc3hj17dym.feishu.cn/wiki/Dqbbwi8g8i6gc1kBkc1cL9hrntg?from=from_copylink)
 
 ## 中文推理大模型测试——基于该方法的系统测评
 

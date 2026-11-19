@@ -1,18 +1,19 @@
+
 # 20250615-🛰️一键提取视频号文案+视频号下载方法，超实用！
 
-> 来源：[https://aigcreative.feishu.cn/docx/BFEpdJkD9oXtfwxTDOmcUaRun3e](https://aigcreative.feishu.cn/docx/BFEpdJkD9oXtfwxTDOmcUaRun3e)
+> 来源：`https://aigcreative.feishu.cn/docx/BFEpdJkD9oXtfwxTDOmcUaRun3e`
 
 经常会被很多朋友、社群小伙伴问到：有看到喜欢的视频号视频文案很好，想学习，视频里的文案怎么语音转文字提取出来？
 
 搁以前，也是有方法能满足这个需求，只是工作流拉的很长，很麻烦~~就不赘述了。
 
-**现在好了**，🛰️官方自己下场了——元宝AI，一键提取视频号文案。
+现在好了，🛰️官方自己下场了——元宝AI，一键提取视频号文案。
 
 使用方法也很简单：
 
 ## 1、第一步：
 
-🛰️里搜索“**元宝**”，点击“**聊天**”，添加“**元宝AI**”为好友。
+🛰️里搜索“元宝”，点击“聊天”，添加“元宝AI”为好友。
 
 ![](img/427b5bc9cb4940799f2973d938f0b07b.png)
 
@@ -58,21 +59,21 @@
 
 > 注：后续可以发给它👸号文章链接或者其它概念（例如：鲁迅的《长明灯》）
 
-**刚才的视频号深度解读：**
+刚才的视频号深度解读：
 
 ![](img/14ee1859d62b5d1dfb2b25fc5ffed3ef.png)
 
-**【创意猎人】往期推文深度解读：**
+【创意猎人】往期推文深度解读：
 
 ![](img/dd47cab36a1e24be42eb504769c5d521.png)
 
-# Part 2
+## Part 2
 
 关于视频号，还有个不大不小的问题，平时被问的最多的就是🛰️视频号里视频怎么能下载下来？
 
 鉴于🛰️这个特殊的“生态”，很多常规爬取下载的方法无计可施，难度也很大。
 
-**再尝试了各种各样的方法、工具**之后，终于找到这个工具“res-downloader”。
+再尝试了各种各样的方法、工具之后，终于找到这个工具`res-downloader`。
 
 一句话：很可靠，很稳定，很方便。
 
@@ -82,7 +83,7 @@
 
 哈哈。
 
-1、直接上Github链接：https://github.com/putyy/res-downloader，可自行下载软件安装包。
+1、直接上Github链接：`https://github.com/putyy/res-downloader`，可自行下载软件安装包。
 
 ![](img/af4e5c6c9c4a8a5db34c9cde9a70f89d.png)
 
@@ -106,12 +107,12 @@
 
 ![](img/8df2eeee60d49c2e1b0006a8b6329e67.png)
 
-可添加何先森🛰️（hyk411616）领取。
+可添加何先森🛰️（`hyk411616`）领取。
 
 或者进去【创意猎人】社群领取，见文章底部二维码。
 
 今天就这样，以上工具希望能对你有用。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

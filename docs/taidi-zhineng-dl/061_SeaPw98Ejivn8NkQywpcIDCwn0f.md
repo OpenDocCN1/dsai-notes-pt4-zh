@@ -1,38 +1,44 @@
+
 # AMD GPGPU uArch
 
-> 来源：[https://learning.feishu.cn/docx/Hns5dadqGofdRnxCAiDcdirqn8c](https://learning.feishu.cn/docx/Hns5dadqGofdRnxCAiDcdirqn8c)
+> 来源：`https://learning.feishu.cn/docx/Hns5dadqGofdRnxCAiDcdirqn8c`
 
 看 2 个架构：
 
-1.  最经典的 GCN 第 1 代。2012 年。对标的应该是 2010 年的 Nvidia Fermi。
-
-1.  最新的。当前是 MI300X 的 CNDA3
+1. 最经典的 GCN 第 1 代。2012 年。对标的应该是 2010 年的 Nvidia Fermi。
+1. 最新的。当前是 MI300X 的 CNDA3
 
 # Summary
 
-1.  从GCN1-CDNA3，CU 整体结构基本没变，包含1个SALU，四个SIMD，1个LDS，1个L1 RW Vector DCache，自CDNA1 时代增加了四个Matrix Unit，和四个SIMD单元应该是匹配的；
+1. 从GCN1-CDNA3，CU 整体结构基本没变，包含1个SALU，四个SIMD，1个LDS，1个L1 RW Vector DCache，自CDNA1 时代增加了四个Matrix Unit，和四个SIMD单元应该是匹配的；
 
-1.  L1 Vector DCache 16KiB 64B lines, 4 sets x 64-way 64B/CLK由一个CU独享，从GCN1保持到CDNA2，在2023年的CDNA3改成了32KiB 128B lines，带宽增大一倍至128B/CLK；
+1. L1 Vector DCache 16KiB 64B lines, 4 sets x 64-way 64B/CLK由一个CU独享，从GCN1保持到CDNA2，在2023年的CDNA3改成了32KiB 128B lines，带宽增大一倍至128B/CLK；
 
-1.  L1 Scalar DCache 16 KiB 4 way，4个CU共享， 16B/CLK，整体应该是一直保持不变（但至少在CDNA2时期，翻倍至32B/CLK），也许和ICache一样，在CDNA3改为两个CU共享了。
+1. L1 Scalar DCache 16 KiB 4 way，4个CU共享， 16B/CLK，整体应该是一直保持不变（但至少在CDNA2时期，翻倍至32B/CLK），也许和ICache一样，在CDNA3改为两个CU共享了。
 
-1.  L1 ICache 32KiB 32B/CLK由四个CU共享，从GCN1保持到CDNA2（至少在CDNA2时期，翻倍至64B/CLK），在2023年的CDNA3改成了64KiB 8-way set-associative，2个CU共享；
+1. L1 ICache 32KiB 32B/CLK由四个CU共享，从GCN1保持到CDNA2（至少在CDNA2时期，翻倍至64B/CLK），在2023年的CDNA3改成了64KiB 8-way set-associative，2个CU共享；
 
-1.  LDS 64KiB 32 bank 512 entries 4B 128B/CLK，一直保持没变，但是根据一些指令做优化，比如原子指令啥的；
+1. LDS 64KiB 32 bank 512 entries 4B 128B/CLK，一直保持没变，但是根据一些指令做优化，比如原子指令啥的；
 
-1.  GDS 64KiB，只在GCN里面有，在CDNA1基本就去掉了，变为4KiB，主要服务于同步啥的；
+1. GDS 64KiB，只在GCN里面有，在CDNA1基本就去掉了，变为4KiB，主要服务于同步啥的；
 
 ## uArch
 
 重点关心 2 代: GCN，CDNA
 
 | uArch | Notes |
+
 | --- | --- |
-| TeraScale | 1.  3rd. 2008 - 2011 |
-| GCN | 1.  第 4 代。2012 - 2017。全称 Graphics Core Next。面向图形 + GPGPU。 |
+
+| TeraScale | 1. 3rd. 2008 - 2011 |
+
+| GCN | 1. 第 4 代。2012 - 2017。全称 Graphics Core Next。面向图形 + GPGPU。 |
+
 |  |  |
-| RDNA (Navi) | 1.  第 5 代，2018-2019 |
-| CDNA | 1.  第 6 代。2020-2023 |
+
+| RDNA (Navi) | 1. 第 5 代，2018-2019 |
+
+| CDNA | 1. 第 6 代。2020-2023 |
 
 完整 5 代图 by AMD
 
@@ -42,25 +48,25 @@
 
 ## 软件
 
-ROCm软件自 2016 年推出以来一直是开源的，但是固件的开源也很重要，AMD GPU 上的MES固件AMD 单独开发的，不是开源的。
+`ROCm`软件自 2016 年推出以来一直是开源的，但是固件的开源也很重要，AMD GPU 上的`MES`固件AMD 单独开发的，不是开源的。
 
-整个 AMD 硬件堆栈缺乏近乎普遍的 ROCm 支持。
+整个 AMD 硬件堆栈缺乏近乎普遍的 `ROCm` 支持。
 
 Lisa 还对 AMD 的软件堆栈发表了评论：
 
-“最近的大问题是软件。我们在软件方面取得了巨大进步。ROCm 6 软件堆栈是一个重大进步。在软件方面还有很多工作要做……我们希望抓住巨大的机遇。”
+“最近的大问题是软件。我们在软件方面取得了巨大进步。`ROCm` 6 软件堆栈是一个重大进步。在软件方面还有很多工作要做……我们希望抓住巨大的机遇。”
 
--- 无他，AMD 刚刚发布 rocm 6
+-- 无他，AMD 刚刚发布 `rocm 6`
 
 ## 开源
 
-https://github.com/VerticalResearchGroup/miaow/wiki
+`https://github.com/VerticalResearchGroup/miaow/wiki`
 
 GCN1 的 RTL 开源实现。
 
-https://www.gem5.org/events/isca-2018
+`https://www.gem5.org/events/isca-2018`
 
-AMD gem5 APU Simulator: Modeling GPUs Using the Machine ISA
+AMD `gem5` APU Simulator: Modeling GPUs Using the Machine ISA
 
 [Held in c](http://iscaconf.org/isca2018/)onjunction with ISCA 2018. June 2nd, 2018.
 
@@ -70,17 +76,17 @@ GCN 的 CL 级别的模拟器实现
 
 GCN 的时代，AMD 没火起来。几个原因：
 
-1.  只有好的 GCN 硬件设计，没有配套的 cuda + tensorrt 软件栈。CUDA 比 OpenCL 成熟的更早。
+1. 只有好的 GCN 硬件设计，没有配套的 `cuda` + `tensorrt` 软件栈。`CUDA` 比 `OpenCL` 成熟的更早。
 
-1.  消费领域，游戏仍然是最重要的。GCN compute 设计，也发挥不出价值。
+1. 消费领域，游戏仍然是最重要的。GCN compute 设计，也发挥不出价值。
 
 苏姿丰 (Lisa Su) 10 年扭转 AMD 局面的 3 大战略
 
-1.  数据中心 GPU，Instinct 系列：MI300。
+1. 数据中心 GPU，`Instinct` 系列：`MI300`。
 
-1.  客户端系列。Radeon 独立显卡 (GPU) 及其 APU。
+1. 客户端系列。`Radeon` 独立显卡 (`GPU`) 及其 `APU`。
 
-1.  XDNA AI 引擎。技术来自 Xilinx。将作为微软 AIPC 计划的 NPU 呈现，以与英特尔和高通的产品竞争。这些 AI 引擎专为低功耗推理而设计。
+1. `XDNA` AI 引擎。技术来自 `Xilinx`。将作为微软 `AIPC` 计划的 `NPU` 呈现，以与英特尔和高通的产品竞争。这些 AI 引擎专为低功耗推理而设计。
 
 2022 年，AMD内部估计全球数据中心AI加速器市场在2023年的规模可达约300亿美元，今后每年的复合增长率都能超过50％，到2027年将形成超过1500亿美元的价值，不可限量。
 
@@ -90,15 +96,15 @@ GCN 的时代，AMD 没火起来。几个原因：
 
 AMD 拥有最全解决方案。
 
-CPU 有 EPYC 处理器，GPU 有 Instinct 加速器，网络方面有 Alveo、Pensando等技术，
+CPU 有 `EPYC` 处理器，GPU 有 `Instinct` 加速器，网络方面有 `Alveo`、`Pensando`等技术，
 
-软件有 ROCm 开发平台。
+软件有 `ROCm` 开发平台。
 
 # GCN 架构
 
 ## Summary
 
-https://chipsandcheese.com/2023/12/04/gcn-amds-gpu-architecture-modernization/
+`https://chipsandcheese.com/2023/12/04/gcn-amds-gpu-architecture-modernization/`
 
 Graphics Core Next (GCN) throws out the Terascale playbook,
 
@@ -106,17 +112,17 @@ focus on predictable performance for general purpose compute.
 
 从 Terascale 架构到标准 GPU 的 2 个要点：
 
-1.  调度全给了 hardware 去做。Explicit scheduling information is gone, shifting those responsibilities to hardware.
+1. 调度全给了 hardware 去做。Explicit scheduling information is gone, shifting those responsibilities to hardware.
 
-1.  Execution within a thread is strictly scalar. 不再支持 issue multiple operations per cycle from a single thread.
+1. Execution within a thread is strictly scalar. 不再支持 issue multiple operations per cycle from a single thread.
 
 GCN 基本是现在 GPGPU 的架构了。特别是：
 
-+   scheduling
++ scheduling
 
-+   execution unit layout
++ execution unit layout
 
-+   cache
++ cache
 
 compute density and high memory bandwidth 是 2 大优势 feature。
 
@@ -138,21 +144,21 @@ Nvidia added a scalar path (called the uniform datapath) to their Turing archite
 
 command processor 的 2 个功能：
 
-1.  communicates with the host
+1. communicates with the host
 
-1.  schedule on chip workloads
+1. schedule on chip workloads
 
-ultra-threaded dispatch processor，接收 CP 的 command 并分发给 CU。
+ultra-threaded dispatch processor，接收 `CP` 的 command 并分发给 `CU`。
 
 ![](img/ab3a92d93995683bb839aa598c14eef7.png)
 
 ![](img/7f7df679ff7b7c15f40d413439fbd0eb.png)
 
-basic building block is the Compute Unit (CU)
+basic building block is the Compute Unit (`CU`)
 
-Tahiti’s shader array consists of 32 CUs
+Tahiti’s shader array consists of 32 `CU`s
 
-Each CU has a private 16 KB vector cache and 64 KB local data share, but shares an instruction cache and scalar cache with up to four neighboring CUs.
+Each `CU` has a private 16 KB vector cache and 64 KB local data share, but shares an instruction cache and scalar cache with up to four neighboring `CU`s.
 
 L2 cache 是 chip 内共享的。
 
@@ -160,11 +166,11 @@ L2 cache 是 chip 内共享的。
 
 图形和 HPC 的 command processor & execution pattern 还是不一样的。
 
-The array of compute units can be fed by the Graphics Command Processor or Asynchronous Compute Engines (ACEs) depending on whether work is being submitted on the graphics or compute queue.
+The array of compute units can be fed by the Graphics Command Processor or Asynchronous Compute Engines (`ACEs`) depending on whether work is being submitted on the graphics or compute queue.
 
-GCN1 竟然有 1 个 command processor + 2 个 ACE。
+`GCN1` 竟然有 1 个 command processor + 2 个 `ACE`。
 
-For compute workloads, each ACE can launch one wavefront per cycle.
+For compute workloads, each `ACE` can launch one wavefront per cycle.
 
 letting it launch two wavefronts per cycle across the GPU.
 
@@ -184,7 +190,7 @@ GCN’s Compute Unit is roughly analogous to Terascale’s SIMD
 
 ### Compute Unit Frontend
 
-Instead of one big SIMD capable of quad-issuing instructions, a compute unit consists of four smaller SIMDs. Each SIMD gets its own 64 KB vector register file and 10 entry scheduler partition. Execution within a thread is now completely scalar, which means the CU can’t issue multiple instructions per cycle from the same thread. However, a CU can issue up to five instructions per cycle if multiple threads in a SIMD’s scheduler partition are ready, and each thread’s ready instruction goes to a separate functional unit.
+Instead of one big SIMD capable of quad-issuing instructions, a compute unit consists of four smaller SIMDs. Each SIMD gets its own 64 KB vector register file and 10 entry scheduler partition. Execution within a thread is now completely scalar, which means the `CU` can’t issue multiple instructions per cycle from the same thread. However, a `CU` can issue up to five instructions per cycle if multiple threads in a SIMD’s scheduler partition are ready, and each thread’s ready instruction goes to a separate functional unit.
 
 ![](img/dbcefa7151d1735403552aa8d022d67d.png)
 
@@ -200,13 +206,15 @@ Nvidia’s Kepler uses a 8 KB instruction cache private to each SMX. A private c
 
 Once instructions have been fetched, they’re held in a set of instruction buffers.
 
-Each of the CU’s four SIMDs has a 10 entry buffer, letting it track instructions from up to 10 separate threads. The entire CU can thus track 40 threads (or wavefronts). With 64-wide wavefronts, a CU can have 2560 32-bit operations in flight.
+Each of the `CU`’s four SIMDs has a 10 entry buffer, letting it track instructions from up to 10 separate threads. The entire `CU` can thus track 40 threads (or wavefronts). With 64-wide wavefronts, a `CU` can have 2560 32-bit operations in flight.
 
-Every cycle, the CU selects a SIMD and scans its 10 threads to see if any are ready for execution. GCN can achieve limited multi-issue capability by selecting multiple threads and co-issuing instructions of different categories. For example, a scalar ALU instruction from one thread can co-issue alongside a vector ALU instruction from another. In theory, a compute unit can issue 5 instructions per cycle. But such high issue rates should be rare because workloads are unlikely to have an even mix of instructions from different categories. High occupancy is essential to making most of this multi-issue strategy. If a SIMD has more threads to choose from, it has a better chance of finding multiple threads with the right mix of instructions to enable multi-issue.
+Every cycle, the `CU` selects a SIMD and scans its 10 threads to see if any are ready for execution. GCN can achieve limited multi-issue capability by selecting multiple threads and co-issuing instructions of different categories. For example, a scalar ALU instruction from one thread can co-issue alongside a vector ALU instruction from another. In theory, a compute unit can issue 5 instructions per cycle. But such high issue rates should be rare because workloads are unlikely to have an even mix of instructions from different categories. High occupancy is essential to making most of this multi-issue strategy. If a SIMD has more threads to choose from, it has a better chance of finding multiple threads with the right mix of instructions to enable multi-issue.
 
 ![](img/9d2e6043973d8a7ec70fe882f524d7dd.png)
 
 GCN’s strategy contrasts with Terascale’s, which emphasizes multi-issue from a single thread with a huge burden on the compiler.
+
+
 
 The compiler had to find instructions that were both independent and didn’t oversubscribe register file ports when packed into a bundle. GCN’s move to using thread level parallelism means the compiler can be mostly oblivious to those hardware details. Nvidia’s Kepler takes a middle ground. Register bank conflicts are handled by a hardware operand collector. The compiler was responsible for marking pairs of instructions for dual issue in the instruction stream, but dual issue was really a cherry on top. Kepler could maintain much better throughput than Terascale without having to multi-issue.
 
@@ -222,9 +230,7 @@ Kepler meanwhile can blaze through a single thread. It uses 32-wide waves and 32
 
 A selected instruction reads its inputs from the register files.
 
-In GCN, a Terascale SIMD’s giant 256 KB register file is split into four 64 KB register files,
-
-one for each GCN SIMD.
+In GCN, a Terascale SIMD’s giant 256 KB register file is split into four 64 KB register files, one for each GCN SIMD.
 
 GCN’s register files are almost certainly banked structures, but should suffer less from register bank conflicts than Terascale. Assuming its still a quad banked register file, GCN would have four inputs available to feed an instruction that potentially needs up to three inputs (for a fused multiply-add). Bandwidth demands on the vector register file can be lower if an instruction takes an input from the scalar registers or an immediate value in the instruction stream. On top of that, GCN likely has an operand collector that can smooth out demands for register file bandwidth in case of occasional bank conflicts.
 
@@ -276,13 +282,13 @@ AMD hopes to mitigate this by optimizing some memory accesses to use the scalar 
 
 optimized for low latency, under 50 ns
 
-**faster th**an any of Kepler’s caches except for its tiny 2 KB constant cache.
+faster than any of Kepler’s caches except for its tiny 2 KB constant cache.
 
 每次谈到 AMD 比 NV 更好的时候，都要加个 except。被拿捏的死死的。
 
 constant cache 不知道现在效果如何，直觉上，可能非常精髓。
 
-"unlike Fermi, Nvidia’s compiler no longer tries to use the constant cache for memory accesses that are constant across a wave. You have to explicitly mark memory with __constant qualifier to use the constant cache hierarchy." -- 看起来，constant cache 可能效果不大。
+"unlike Fermi, Nvidia’s compiler no longer tries to use the constant cache for memory accesses that are constant across a wave. You have to explicitly mark memory with `__constant` qualifier to use the constant cache hierarchy." -- 看起来，constant cache 可能效果不大。
 
 ![](img/bea8c4d3234524a8e2b777ec8684e499.png)
 
@@ -299,10 +305,15 @@ Kepler 有独立的 L1 data cache, 与 scratchpad memory 使用相同 SRAM。逻
 A SMX has 146 KB of caches and scratchpad memory.
 
 |  | AMD Graphics Core Next | AMD Terascale 3 | Nvidia Kepler |
+
 | --- | --- | --- | --- |
+
 | Global Memory | 16 KB L1 Vector Cache or | 8 KB L1 Texture Cache | 16/32/48 KB L1 Data Cache |
+
 | Constant Memory | 16 KB Scalar Cache | 8 KB L1 Texture Cache | 4 KB Constant Cache  32 KB Mid-Level Constant Cache |
+
 | Texture | L1 Vector Cache | 8 KB L1 Texture Cache | 12 KB Texture/Read Only Cache Per SM Sub Partition |
+
 | Local Memory | 64 KB Local Data Share | 32 KB Local Data Share | 16/32/48 KB Shared Memory on GK104 (Shared with L1 Data Cache) |
 
 For comparison, a GCN Compute Unit has 80 KB of private data caches and scratchpad memory. That figure goes up to 84 KB if you divide the 16 KB L1 scalar cache across 4 CUs.
@@ -387,13 +398,14 @@ command processor 的 2 个功能：
 
 The CDNA memory controller has direct access to all CDNA device memory and the host-specified areas of system memory.
 
+
+
 To satisfy read and write requests, the memory controller performs the functions of a direct-memory access (DMA) controller, including computing memory-address offsets based on the format of the requested data in memory.
 
 In the CDNA environment, a complete application includes two parts:
 
-+   a program running on the host processor,
-
-+   programs, called kernels, running on the CDNA processor.
++ a program running on the host processor,
++ programs, called kernels, running on the CDNA processor.
 
 ## Arch History
 
@@ -415,7 +427,7 @@ https://mp.weixin.qq.com/s/NprEgCn_nmvm5Im0jUBktQ
 
 2023.12.07，AMD Advancing AI大会，正式公布了Instinct MI300 系列加速器的详细规格与性能，以及众多的应用部署案例。
 
-MI300** **对标英伟达H100。
+MI300对标英伟达H100。
 
 包含1530亿个晶体管，AI任务推理性能比H100快1.6倍，内存容量足足192GB，是H100的两倍以上（2.4x）。
 
@@ -429,7 +441,7 @@ MI300X 1920亿晶体管怪兽 完胜NVIDIA H100.
 
 其中3D堆叠GPU和I/O芯片通过“3.5D”封装技术进行连接。
 
-最终成品**功耗750W**，包含304个计算单元、**5.3TB/s带宽**，以及高达192GB的HBM3内存（相比之下，H100仅80GB）。
+最终成品功耗750W，包含304个计算单元、5.3TB/s带宽，以及高达192GB的HBM3内存（相比之下，H100仅80GB）。
 
 通过 Infinity Fabri 进行互联，各GPU之间的吞吐量为896 GB/s。
 
@@ -441,7 +453,7 @@ MI300X 1920亿晶体管怪兽 完胜NVIDIA H100.
 
 分为数据中心APU、专用GPU两条路线，重点提升了统一内存、AI性能、节点网络等方面的表现，再加上先进封装、更高能效，以满足生成式AI的强劲需求。
 
-# Command Processor
+## Command Processor
 
 https://old.gem5.org/wiki/images/1/19/AMD_gem5_APU_simulator_isca_2018_gem5_wiki.pdf
 
@@ -457,17 +469,13 @@ When an application passes compute workloads to the SI-GPU, it first must compil
 
 The minimum set of commands to execute a kernel on the SI-GPU are:
 
-+   Load the kernel onto the SI-GPU by providing a pointer to the kernel’s binary image in memory and inform the SI-GPU of the resource requirements for this kernel.
++ Load the kernel onto the SI-GPU by providing a pointer to the kernel’s binary image in memory and inform the SI-GPU of the resource requirements for this kernel.
++ Provide pointers to the data domain on which the kernel is to operate.
++ Provide pointers to constant data and resources in memory.
++ Provide pointers to the output buffer(s).
++ Invalidate the caches, and execute the kernel.
 
-+   Provide pointers to the data domain on which the kernel is to operate.
-
-+   Provide pointers to constant data and resources in memory.
-
-+   Provide pointers to the output buffer(s).
-
-+   Invalidate the caches, and execute the kernel.
-
-# Intel
+## Intel
 
 Intel的Xe HPC GPU，Ponte Vecchio （PVC），是真正实现计算核心胶水化的GPU。PVC通过大量的3D和2.5D互联技术将计算核心胶水在一起。因此，在过去的一段时间里，我一直将Intel的Ponte Vecchio称为GPU胶水的天花板。
 
@@ -481,8 +489,6 @@ AMD只需要设计一个AID、一个SED和一个MID，就能胶水组合出非�
 
 为什么RDNA4“问题不断”的话题。就像Intel的Ponte Vecchio一样，RDNA4的激进封装设计必然存在许多麻烦事。
 
-+   首先，如此多的Die封装结合在一起对于良品率的要求非常高，每一个封装都必须非常精准，否则一切前功尽弃。
-
-+   其次，与Intel的Ponte Vecchio不同，AMD的RDNA4底层的AID本身就有显存控制器和Infinity Cache两个发热源。再加上上面3D封装覆盖的计算核心SED，整体的散热要求非常高。这也是为什么我说RDNA4是又一个天花板，而不是新的天花板。在高性能领域，过于先进的3D封装技术并不一定是更好的技术。因为这种过于理想的3D设计非常不利于散热。
-
-+   最后，虽然RDNA4一定采用了各种高级的胶水封装技术，但是SED和SED之间的互联一定比单一芯片要差。因此，必须对芯片架构和软件设计进行大刀阔斧的修改才能避免被互联卡住。否则，即使封装技术已经完美就绪，最终性能可能也难以发挥。
++ 首先，如此多的Die封装结合在一起对于良品率的要求非常高，每一个封装都必须非常精准，否则一切前功尽弃。
++ 其次，与Intel的Ponte Vecchio不同，AMD的RDNA4底层的AID本身就有显存控制器和Infinity Cache两个发热源。再加上上面3D封装覆盖的计算核心SED，整体的散热要求非常高。这也是为什么我说RDNA4是又一个天花板，而不是新的天花板。在高性能领域，过于先进的3D封装技术并不一定是更好的技术。因为这种过于理想的3D设计非常不利于散热。
++ 最后，虽然RDNA4一定采用了各种高级的胶水封装技术，但是SED和SED之间的互联一定比单一芯片要差。因此，必须对芯片架构和软件设计进行大刀阔斧的修改才能避免被互联卡住。否则，即使封装技术已经完美就绪，最终性能可能也难以发挥。

@@ -1,10 +1,11 @@
+
 # 技巧九：神秘的 blend 功能
 
 > 来源：[https://my.feishu.cn/docx/WEPtdsdQyou57Mx9kKicKQqTnOd](https://my.feishu.cn/docx/WEPtdsdQyou57Mx9kKicKQqTnOd)
 
 这个技巧，说实话，我感觉不能称其为技巧，但这又是一个 Midjourney 非常重要的 feature，所以在这里着重介绍一下。
 
-这个功能使用起来非常简单，在 Discord 输入框里 /blend，然后点击这个菜单：
+这个功能使用起来非常简单，在 Discord 输入框里 `/blend`，然后点击这个菜单：
 
 ![](img/c90d56aafcef9d9f999c020a3e7d81f3.png)
 

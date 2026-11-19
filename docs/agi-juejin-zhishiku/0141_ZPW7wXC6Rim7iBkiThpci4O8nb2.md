@@ -1,3 +1,4 @@
+
 # CCTC：面向中文母语使用者的跨句子文本纠错数据集
 
 > 来源：[https://agijuejin.feishu.cn/docx/WSYKdOI1xo5qp0xjEsHcnsHrnkf](https://agijuejin.feishu.cn/docx/WSYKdOI1xo5qp0xjEsHcnsHrnkf)
@@ -16,11 +17,11 @@
 
 > 转载须标注出处：哈工大 SCIR
 
-## **摘要**
+## 摘要
 
-中文文本纠错（Chinese Text Correction, CTC）主要针对中文拼写错误和语法错误进行检测和纠正。目前大部分中文拼写纠错和语法纠错的测试集都是单句级别的，并且是由外国的汉语学习者撰写的。我们发现中文母语使用者犯的错误和非母语使用者犯的错误有很大的不同，直接使用目前已有的一些数据集作为测试集来为面向中文母语使用者准备的校对系统进行评测并不合适。此外，一些错误通常还需要上下文信息来进行检测和纠正。在本文中，我们提出了一个基于中文母语使用者撰写文本的跨句子中文文本纠错测试集CCTC。具体来说，我们人工标注了1500篇文章，包含3万多个句子，超过一百万的中文汉字。数据集主要包含拼写、冗余、缺失和乱序四种错误类型。在该数据集上，我们测试了一系列文本纠错的最新模型。实验结果表明，目前效果最好的模型距离人类表现依然相差20个百分点，这说明文本纠错任务仍然有很大的提升空间。我们希望新的数据集可以推动基于中文母语使用者的文本纠错和跨句子级文本纠错的发展。CCTC数据集开源至https://github.com/destwang/CTCResources。
+中文文本纠错（Chinese Text Correction, `CTC`）主要针对中文拼写错误和语法错误进行检测和纠正。目前大部分中文拼写纠错和语法纠错的测试集都是单句级别的，并且是由外国的汉语学习者撰写的。我们发现中文母语使用者犯的错误和非母语使用者犯的错误有很大的不同，直接使用目前已有的一些数据集作为测试集来为面向中文母语使用者准备的校对系统进行评测并不合适。此外，一些错误通常还需要上下文信息来进行检测和纠正。在本文中，我们提出了一个基于中文母语使用者撰写文本的跨句子中文文本纠错测试集`CCTC`。具体来说，我们人工标注了1500篇文章，包含3万多个句子，超过一百万的中文汉字。数据集主要包含拼写、冗余、缺失和乱序四种错误类型。在该数据集上，我们测试了一系列文本纠错的最新模型。实验结果表明，目前效果最好的模型距离人类表现依然相差20个百分点，这说明文本纠错任务仍然有很大的提升空间。我们希望新的数据集可以推动基于中文母语使用者的文本纠错和跨句子级文本纠错的发展。`CCTC`数据集开源至`https://github.com/destwang/CTCResources`。
 
-## **1. 背景**
+## 1. 背景
 
 目前大部分中文文本纠错数据集都是在外国学生撰写的文本上构建的，这些外国学生写的文章犯的错误与中文母语使用者犯的错误差别很大。外国学生写的中文通常包含更高比例的错误，并且更容易犯词语误用的错误，而中文母语使用者犯的错误更多是因为疏忽等原因导致的错误。这两者之间的不同，导致现有的测试集无法很好地去评价面向中文母语使用者的文本校对系统。
 
@@ -36,15 +37,15 @@
 
 图2 跨句子文本纠错示例
 
-## **2. 数据集构建**
+## 2. 数据集构建
 
-针对上述问题，我们提出了一个新的中文文本纠错数据集CCTC (Cross-Sentence Chinese Text Correction)，从互联网收集并筛选了1500篇文本，人工对母语使用者的文本进行检测并纠正。由于中文母语使用者撰写的文本通常错误更加低频，因此即便是人类，也很难找全母语使用者犯的错误。为了找到更多母语使用者犯的错误，我们使用了三个不同类型的中文文本纠错模型来提供候选，辅助人工进行标注。
+针对上述问题，我们提出了一个新的中文文本纠错数据集`CCTC` (`Cross-Sentence Chinese Text Correction`)，从互联网收集并筛选了1500篇文本，人工对母语使用者的文本进行检测并纠正。由于中文母语使用者撰写的文本通常错误更加低频，因此即便是人类，也很难找全母语使用者犯的错误。为了找到更多母语使用者犯的错误，我们使用了三个不同类型的中文文本纠错模型来提供候选，辅助人工进行标注。
 
-具体来说，CCTC数据集共包含三部分，训练集CCTC-train、测试集CCTC-W和CCTC-H。我们发现超过90%的错误都出现在纠错模型提供的候选中，所以为了尽可能覆盖更多的数据和错误类型，CCTC-train和CCTC-W只针对包含错误候选的句子进行标注，而CCTC-H则是人工对所有的句子进行标注。其中CCTC-train和CCTC-W各包含650篇，CCTC-H包含200篇文章。
+具体来说，`CCTC`数据集共包含三部分，训练集`CCTC-train`、测试集`CCTC-W`和`CCTC-H`。我们发现超过90%的错误都出现在纠错模型提供的候选中，所以为了尽可能覆盖更多的数据和错误类型，`CCTC-train`和`CCTC-W`只针对包含错误候选的句子进行标注，而`CCTC-H`则是人工对所有的句子进行标注。其中`CCTC-train`和`CCTC-W`各包含650篇，`CCTC-H`包含200篇文章。
 
-## **3. 数据集分析**
+## 3. 数据集分析
 
-我们提出的数据集因为是母语使用者撰写的，其中错误密度很低，只有11%左右。整个数据集包括100万字以上，平均一句话有40个汉字，一个篇章有800个字左右。中文文本的错误类型从形式上包括替换、冗余、缺失、乱序四种，图3是我们提出的CCTC数据集四种错误占比和CGED 2018数据集的错误占比。从中可以看出，中文母语使用者犯的错误更多是拼写错误，而乱序错误则相对比较低频。
+我们提出的数据集因为是母语使用者撰写的，其中错误密度很低，只有11%左右。整个数据集包括100万字以上，平均一句话有40个汉字，一个篇章有800个字左右。中文文本的错误类型从形式上包括替换、冗余、缺失、乱序四种，图3是我们提出的`CCTC`数据集四种错误占比和`CGED` 2018数据集的错误占比。从中可以看出，中文母语使用者犯的错误更多是拼写错误，而乱序错误则相对比较低频。
 
 ![](img/fdad3dbaa8f6d7e21b307c990cc1fbdb.png)
 
@@ -58,25 +59,25 @@
 
 我们随机分析了100个错误，发现68%的错误是由于疏忽导致的误输入错误。例如“接触”可能因为拼音输入法的原因导致错误输入“结出”，也可能错误输入成“基础”等。因为疏忽导致的错误具有多样性，这使得这类错误更加难以纠正。剩下的错误主要是因为词语的误用导致的，例如“作出”、“做出”等。
 
-## **4. 实验结果**
+## 4. 实验结果
 
-我们尝试使用四种不同类型SOTA模型在我们的CCTC数据集上进行测试，分别是SpellGCN[1]、ResBERT[2]、GECToR[3]和CopyNet[4]。因为precision对于外语学习者来说更加重要，所以通常的GEC系统使用F0.5作为评价指标。而对于中文母语使用者来说，大部分错误都是由于疏忽导致，母语使用者有很强的判别能力，所以recall要比precision更重要一些，因此本文主要使用F2作为任务的评价指标。
+我们尝试使用四种不同类型SOTA模型在我们的`CCTC`数据集上进行测试，分别是`SpellGCN`[1]、`ResBERT`[2]、`GECToR`[3]和`CopyNet`[4]。因为`precision`对于外语学习者来说更加重要，所以通常的`GEC`系统使用`F0.5`作为评价指标。而对于中文母语使用者来说，大部分错误都是由于疏忽导致，母语使用者有很强的判别能力，所以`recall`要比`precision`更重要一些，因此本文主要使用`F2`作为任务的评价指标。
 
-我们分别在SIGHAN[5]、CGED[6]、NLPCC[7]以及伪数据上训练我们的模型，实验结果如下表所示。从实验结果中我们可以看到，使用CCTC训练集进行精调后的模型表现比使用其他公开训练数据集的效果提升更加明显。并且因为SpellGCN引入了字音、字形信息，其在拼写纠错上的表现更好，甚至在整个测试集上的表现也要高于其他模型。
+我们分别在`SIGHAN`[5]、`CGED`[6]、`NLPCC`[7]以及伪数据上训练我们的模型，实验结果如下表所示。从实验结果中我们可以看到，使用`CCTC`训练集进行精调后的模型表现比使用其他公开训练数据集的效果提升更加明显。并且因为`SpellGCN`引入了字音、字形信息，其在拼写纠错上的表现更好，甚至在整个测试集上的表现也要高于其他模型。
 
 表1 实验结果
 
 ![](img/f0ce91c41f592361231d194f37e0cb92.png)
 
-为了更好地评价这些模型，我们从CCTC-H中抽取了两百个句子来比较人类和模型的表现。因为过低的错误密度使人类都很容易忽略句子中的错误，所以我们调整了错误的密度，使200句测试集中约50%的句子含有错误。最终结果如下表所示，我们可以看到，人类表现要比最好的模型都高20%以上。
+为了更好地评价这些模型，我们从`CCTC-H`中抽取了两百个句子来比较人类和模型的表现。因为过低的错误密度使人类都很容易忽略句子中的错误，所以我们调整了错误的密度，使200句测试集中约50%的句子含有错误。最终结果如下表所示，我们可以看到，人类表现要比最好的模型都高20%以上。
 
 表2 与人类比较的实验结果
 
 ![](img/b38f2243fe54fa966df0514ae62902eb.png)
 
-## **5. 跨句子错误**
+## 5. 跨句子错误
 
-我们随机对100个错误进行了分析，发现只有11%的错误是直接需要使用篇章信息的，但是篇章信息却对38%的错误纠正有帮助。为了验证篇章信息在中文文本纠错任务上的效果，我们尝试采用ResBERT进行多句预测。即分别输入1到5句相邻句，对当前句子中的错误进行预测，实验结果如下图所示。从图中我们可以看到，随着模型输入的句子数目增多，整体的F值也在提高。这说明跨句子的信息对中文拼写纠错有较大的帮助。
+我们随机对100个错误进行了分析，发现只有11%的错误是直接需要使用篇章信息的，但是篇章信息却对38%的错误纠正有帮助。为了验证篇章信息在中文文本纠错任务上的效果，我们尝试采用`ResBERT`进行多句预测。即分别输入1到5句相邻句，对当前句子中的错误进行预测，实验结果如下图所示。从图中我们可以看到，随着模型输入的句子数目增多，整体的`F`值也在提高。这说明跨句子的信息对中文拼写纠错有较大的帮助。
 
 ![](img/190b4198afe2109acead6be3b2cb72ea.png)
 
@@ -86,27 +87,27 @@
 
 ![](img/4ec0a8d2c1c2634b94a5a55e519db05d.png)
 
-图6 CCTC样例分析
+图6 `CCTC`样例分析
 
-## **6. 结论**
+## 6. 结论
 
-本文提出了一个全新的面向中文母语使用者的跨句子中文文本纠错数据集CCTC。具体来说，我们人工标注了1500篇由母语使用者撰写的文章。这些文章共包含30811句话，超过一百万汉字。数据集包括拼写错误、冗余错误、缺失错误和乱序错误。为中文母语使用者开发的文本纠错系统可以使用CCTC获得更准确的评价效果。我们还在一些SOTA模型上测试了我们的数据集，在高密度的错误情况下，模型最好的表现仍然比人类低了20个点，这说明文本纠错任务仍有很大的提升空间。
+本文提出了一个全新的面向中文母语使用者的跨句子中文文本纠错数据集`CCTC`。具体来说，我们人工标注了1500篇由母语使用者撰写的文章。这些文章共包含30811句话，超过一百万汉字。数据集包括拼写错误、冗余错误、缺失错误和乱序错误。为中文母语使用者开发的文本纠错系统可以使用`CCTC`获得更准确的评价效果。我们还在一些SOTA模型上测试了我们的数据集，在高密度的错误情况下，模型最好的表现仍然比人类低了20个点，这说明文本纠错任务仍有很大的提升空间。
 
-## **参考文献**
+## 参考文献
 
-[1] Cheng X, Xu W, Chen K, et al. SpellGCN: Incorporating Phonological and Visual Similarities into Language Models for Chinese Spelling Check. ACL 2020.
+[1] Cheng X, Xu W, Chen K, et al. `SpellGCN`: Incorporating Phonological and Visual Similarities into Language Models for Chinese Spelling Check. ACL 2020.
 
-[2] Wang S, Wang B, Gong J, et al. Combining ResNet and Transformer for Chinese Grammatical Error Diagnosis. NLPTEA 2020.
+[2] Wang S, Wang B, Gong J, et al. Combining `ResNet` and `Transformer` for Chinese Grammatical Error Diagnosis. NLPTEA 2020.
 
-[3] Omelianchuk K, Atrasevych V, Chernodub A, et al. GECToR–Grammatical Error Correction: Tag, Not Rewrite. BEA 2020.
+[3] Omelianchuk K, Atrasevych V, Chernodub A, et al. `GECToR`–Grammatical Error Correction: Tag, Not Rewrite. BEA 2020.
 
 [4] Zhao W, Wang L, Shen K, et al. Improving Grammatical Error Correction via Pre-Training a Copy-Augmented Architecture with Unlabeled Data. NAACL 2019.
 
-[5] Tseng Y H, Lee L H, Chang L P, et al. Introduction to SIGHAN 2015 Bake-off for Chinese Spelling Check. SIGHAN 2015.
+[5] Tseng Y H, Lee L H, Chang L P, et al. Introduction to `SIGHAN` 2015 Bake-off for Chinese Spelling Check. SIGHAN 2015.
 
-[6] Rao G, Gong Q, Zhang B, et al. Overview of NLPTEA-2018 Share Task Chinese Grammatical Error Diagnosis. NLPTEA 2018.
+[6] Rao G, Gong Q, Zhang B, et al. Overview of `NLPTEA`-2018 Share Task Chinese Grammatical Error Diagnosis. NLPTEA 2018.
 
-[7] Zhao Y, Jiang N, Sun W, et al. Overview of the NLPCC 2018 Shared Task: Grammatical Error Correction. NLPCC 2018.
+[7] Zhao Y, Jiang N, Sun W, et al. Overview of the `NLPCC` 2018 Shared Task: Grammatical Error Correction. NLPCC 2018.
 
 本 期 责 任 编 辑 ：  赵森栋
 

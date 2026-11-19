@@ -1,34 +1,31 @@
+
 # Qwen3-7B-Instruct Windows LMStudio 部署
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/SHkQd9oryoGs1GxU7L6cgKKWnNg](https://v11enp9ok1h.feishu.cn/docx/SHkQd9oryoGs1GxU7L6cgKKWnNg)
 
-## 1.引言
+## 1. 引言
 
-**  在本地运行大型**语言模型（LLMs）已成为许多开发者和爱好者的热门选择，它提供了隐私性、定制化和离线使用的可能性。虽然像 Ollama 这样的工具提供了强大的命令行界面来管理和运行本地模型，但 LM Studio 则为寻求更图形化、更直观交互体验的用户提供了一个极具吸引力的替代方案。
+在本地运行大型语言模型（LLMs）已成为许多开发者和爱好者的热门选择，它提供了隐私性、定制化和离线使用的可能性。虽然像 Ollama 这样的工具提供了强大的命令行界面来管理和运行本地模型，但 LM Studio 则为寻求更图形化、更直观交互体验的用户提供了一个极具吸引力的替代方案。
 
-相比于 Ollama，LM Studio 拥有更加**丰富的用户界面**，同样**强大的模型生态系统支持**，以及**更易于上手的交互体验**。其突出的优势之一在于它非常适合在**无网络环境下部署和使用**大模型，使其成为一个出色的本地 LLM 应用产品。
+相比于 Ollama，LM Studio 拥有更加丰富的用户界面，同样强大的模型生态系统支持，以及更易于上手的交互体验。其突出的优势之一在于它非常适合在无网络环境下部署和使用大模型，使其成为一个出色的本地 LLM 应用产品。
 
 本教程将带您一步步了解如何开始使用 LM Studio。我们将涵盖：
 
-1.  **下载与安装**：快速获取并安装 LM Studio 应用程序。
-
-1.  **模型下载（在线）**：学习如何在 LM Studio 界面内搜索、选择（根据硬件推荐）并下载模型，以 Qwen3-8B 为例。
-
-1.  **模型安装（离线）**：针对网络不佳或希望手动管理模型文件的用户，展示如何从魔搭社区等来源下载模型文件，并将其正确放置到 LM Studio 的模型库中。
-
-1.  **模型测试**：通过 LM Studio 内建的聊天界面与下载好的 Qwen3-8B 模型进行交互。
-
-1.  **本地 API 调用**：设置 LM Studio 的本地服务器，并使用 Python 和 OpenAI 库通过 API 调用已加载的 Qwen3-8B 模型，实现程序化交互。
+1. 下载与安装：快速获取并安装 LM Studio 应用程序。
+1. 模型下载（在线）：学习如何在 LM Studio 界面内搜索、选择（根据硬件推荐）并下载模型，以 Qwen3-8B 为例。
+1. 模型安装（离线）：针对网络不佳或希望手动管理模型文件的用户，展示如何从魔搭社区等来源下载模型文件，并将其正确放置到 LM Studio 的模型库中。
+1. 模型测试：通过 LM Studio 内建的聊天界面与下载好的 Qwen3-8B 模型进行交互。
+1. 本地 API 调用：设置 LM Studio 的本地服务器，并使用 Python 和 OpenAI 库通过 API 调用已加载的 Qwen3-8B 模型，实现程序化交互。
 
 无论您是想探索本地 LLM 的新手，还是在寻找一个界面友好、支持离线运行的工具，本指南都将帮助您轻松上手 LM Studio，并成功部署和调用 Qwen3-8B 这样强大的模型。让我们开始吧！
 
-## 2. LM Studio启动
+## 2. LM Studio 启动
 
-相比于ollama，LM Studio拥有更加丰富的界面，一样强大的模型生态，更易用的交互体验。在无网路环境是一个很好的本地部署大模型应用产品。
+相比于 Ollama，LM Studio 拥有更加丰富的界面，一样强大的模型生态，更易用的交互体验。在无网路环境是一个很好的本地部署大模型应用产品。
 
-### 2.1 下载LM Studio
+### 2.1 下载 LM Studio
 
-进入LM Studio官网https://lmstudio.ai/，点击download即可。
+进入 LM Studio 官网 `https://lmstudio.ai/`，点击 `download` 即可。
 
 ![](img/e32e44ce45b62989246f2c71d0a5d49a.png)
 
@@ -36,94 +33,89 @@
 
 ### 2.2 下载模型
 
-这里我们以Qwen3-8B为例，安装并使用。
+这里我们以 Qwen3-8B 为例，安装并使用。
 
-1.  打开左下角这个放大镜，查找模型。
-
-1.  输入deepseek，找到Qwen3-8B版本，选择绿色小火箭模型即可。（简单介绍一下，LM Studio会根据你电脑配置推荐模型，如果是绿色火箭用起来体验会非常丝滑，没有火箭体验就比较缓慢，如果是红色说明完全没法运行）
-
-1.  选择好后点击右下角下载即可
+1. 打开左下角这个放大镜，查找模型。
+1. 输入 `deepseek`，找到 Qwen3-8B 版本，选择绿色小火箭模型即可。（简单介绍一下，LM Studio 会根据你电脑配置推荐模型，如果是绿色火箭用起来体验会非常丝滑，没有火箭体验就比较缓慢，如果是红色说明完全没法运行）
+1. 选择好后点击右下角下载即可
 
 ![](img/2f5190bd0ab32d0545bc9cdc19ae273b.png)
-
 
 ### 2.3 离线安装
 
 有些小伙伴网络不佳，下载速度较慢。我们可以考虑使用魔搭社区的对应版本。
 
-1.  按下图找到LM Studio的模型存储地址
+1. 按下图找到 LM Studio 的模型存储地址
 
 ![](img/dd5b233c8185a0f7fda00995ce12d5ac.png)
 
-1.  在\lmstudio-community目录下创建Qwen3-8B-GGUF文件夹
+1. 在 `\lmstudio-community` 目录下创建 `Qwen3-8B-GGUF` 文件夹
 
 ![](img/083f65b67c16b0fc1ad357962dbf6cba.png)
 
-1.  进入魔搭社区下载对应的模型文件，下面是跳转链接：
+1. 进入魔搭社区下载对应的模型文件，下面是跳转链接：
 
-https://www.modelscope.cn/models/unsloth/Qwen3-8B-GGUF/files
+`https://www.modelscope.cn/models/unsloth/Qwen3-8B-GGUF/files`
 
-因为我电脑是4070ti可以运行所有模型，我选择Q8量化的对应文件：Qwen3-8B-Q8_0.gguf，大家如果是8G显存推荐使用Q4（Qwen3-8B-Q4_K_M.gguf）或Q3（Qwen3-8B-Q3_K_M.gguf）对应的模型。
+因为我电脑是 4070ti 可以运行所有模型，我选择 Q8 量化的对应文件：`Qwen3-8B-Q8_0.gguf`，大家如果是 8G 显存推荐使用 Q4（`Qwen3-8B-Q4_K_M.gguf`）或 Q3（`Qwen3-8B-Q3_K_M.gguf`）对应的模型。
 
 ![](img/a139475252d13f58d1f6c9aa5b914fa3.png)
 
-1.  下载文件并存入Qwen3-8B-GGUF文件夹之下
+1. 下载文件并存入 `Qwen3-8B-GGUF` 文件夹之下
 
 ![](img/ccb43b4ef81f4e79ab3df2170c2c53cb.png)
 
-1.  打开刚才的LM Studio界面能看到模型已经成功上传
+1. 打开刚才的 LM Studio 界面能看到模型已经成功上传
 
 ![](img/f110f1f80c06881fcf272a62fdb98575.png)
 
 ### 2.4 模型测试
 
-1.  先点击黄色对话标签，然后点击“Select a model to load”（选择一个模型启动），下拉使用Qwen3-8b。
+1. 先点击黄色对话标签，然后点击 "Select a model to load"（选择一个模型启动），下拉使用 Qwen3-8b。
 
 ![](img/ffb70fc3b8945d4c144076335cc512aa.png)
 
-1.  当然你可以通过这样对话的方式快速使用Qwen3模型啦~
+1. 当然你可以通过这样对话的方式快速使用 Qwen3 模型啦~
 
 ![](img/42a73933c063647f7f9c033cf4c4c810.png)
 
-## 3. 调用本地Qwen3 api
+## 3. 调用本地 Qwen3 api
 
-### 3.1 首先准备好python环境及 Openai环境
+### 3.1 首先准备好 Python 环境及 OpenAI 环境
 
-保证python版本大于3.7及安装openai库
+保证 `python` 版本大于 3.7 及安装 `openai` 库
 
-> python>=3.7
+`python>=3.7`
 
->
+`pip install Openai`
 
-> pip install Openai
+### 3.2 配置 LM Studio
 
-### 3.2 配置lmstudio
-
-1.  打开绿色的terminal模块，然后点击Setting开始设置，打开Serve on Local Network即可。
+1. 打开绿色的 `terminal` 模块，然后点击 `Setting` 开始设置，打开 `Serve on Local Network` 即可。
 
 ![](img/d8de2be11308d38c48145d1dcbda80c6.png)
 
-1.  然后选择并启动模型。
+1. 然后选择并启动模型。
 
 ![](img/98dd59d5e8c27b2475f5c8f520c2cdec.png)
 
-1.  查看右侧区域中，可以看到当前的模型名称和地址，划重点等会要用哦~
+1. 查看右侧区域中，可以看到当前的模型名称和地址，划重点等会要用哦~
 
 ![](img/5e22f540873cf115097398d094c906c3.png)
 
-### 3.3 打开python代码编辑器测试qwen3 api调用
+### 3.3 打开 Python 代码编辑器测试 Qwen3 API 调用
 
 ```
 from openai import OpenAI
 
 # Point to the local server
-client = OpenAI(base_url=&quot;http://localhost:1234/v1&quot;, api_key=&quot;lm-studio&quot;)
+client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 
 completion = client.chat.completions.create(
-  model=&quot;qwen3-8b&quot;,
+  model="qwen3-8b",
   messages=[
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个回答我日常问题的ai辅助机器人&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;如何做宫保鸡丁。&quot;}
+    {"role": "system", "content": "你是一个回答我日常问题的ai辅助机器人"},
+    {"role": "user", "content": "如何做宫保鸡丁。"}
   ],
   temperature=0.7,
 )
@@ -131,12 +123,12 @@ completion = client.chat.completions.create(
 print(completion.choices[0].message.content)
 ```
 
-上面是代码内容，我们主要模型使用qwen3-8b，接着lmstudio的部署在刚才的地址里。由于是本机部署可以是localhost中，如果是局域网的小伙伴们可以使用局域网ip即可，也就是刚才的ip~
+上面是代码内容，我们主要模型使用 `qwen3-8b`，接着 `lmstudio` 的部署在刚才的地址里。由于是本机部署可以是 `localhost` 中，如果是局域网的小伙伴们可以使用局域网 `ip` 即可，也就是刚才的 ip~
 
-运行结果如下到这里我们就完成了目前的Qwen3本地部署及调用的任务啦
+运行结果如下：这里我们就完成了目前的 Qwen3 本地部署及调用的任务啦
 
 ```
-&lt;think&gt;
+<גthink>
 
 好的，用户问的是“如何做宫保鸡丁”。首先，我需要确认用户的需求是什么。可能他们想尝试在家做这道菜，或者对烹饪感兴趣。 接下来，我要考虑用户的背景，可能是初学者，所以步骤要详细易懂。
 
@@ -148,7 +140,7 @@ print(completion.choices[0].message.content)
 
 检查是否有遗漏的步骤或材料，确保所有必要的信息都包含在内。还要注意语言简洁明了，结构清晰，分点列出方便用户操作。最 后，确认回答是否符合用户的期望，是否需要进一步的帮助，比如视频教程链接或其他资源。
 
-&lt;/think&gt;
+<ג/think>
 
 以下是制作宫保鸡丁的详细步骤：
 

@@ -1,3 +1,4 @@
+
 # 爆款视频工作流：火柴人心理知识视频
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/AUUWd7H9HoavPLxLNaNcYSt5nGe](https://zinxkclpk97.feishu.cn/docx/AUUWd7H9HoavPLxLNaNcYSt5nGe)
@@ -26,7 +27,7 @@ https://www.coze.cn/store/project/7473850926064091188?entity_id=1
 
 ## 工作流设计
 
-先说思路，这类视频涵盖的元素有  心理知识文案、字幕、火柴人图片，这些内容均可以使用coze工作流来生成。
+先说思路，这类视频涵盖的元素有 心理知识文案、字幕、火柴人图片，这些内容均可以使用coze工作流来生成。
 
 同时其视频中涉及到分镜文案配图，并不是一句话对应一张图，这个问题是总体流程中的一个小难点。
 
@@ -132,13 +133,13 @@ https://www.coze.cn/store/project/7473850926064091188?entity_id=1
 ```
 import json
 import random
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    imageList = params[&#x27;imageList&#x27;]
-    bgImage = params[&#x27;bgImage&#x27;]
-    materialList = params[&#x27;materialList&#x27;]
-    width = params[&#x27;width&#x27;]
-    height = params[&#x27;height&#x27;]
+    imageList = params['imageList']
+    bgImage = params['bgImage']
+    materialList = params['materialList']
+    width = params['width']
+    height = params['height']
     captions = []
     imgs = []
     audios = []
@@ -150,34 +151,34 @@ async def main(args: Args) -&gt; Output:
     in_image_start = 0
     in_image_end = 0
     for index, item in enumerate(materialList):
-        textList = item[&#x27;textList&#x27;]
-        audioList = item[&#x27;audioList&#x27;]
-        durationList = item[&#x27;durationList&#x27;]
+        textList = item['textList']
+        audioList = item['audioList']
+        durationList = item['durationList']
         image = imageList[index]
         
         #计算时长，设置插图出现的时长
         for index2 , obj in enumerate(durationList):
-            in_image_end = int(in_image_start + int(obj[&#x27;duration&#x27;]*1000000))
+            in_image_end = int(in_image_start + int(obj['duration']*1000000))
             captions.append({
-                &#x27;text&#x27;: textList[index2],
-                &#x27;start&#x27;: in_image_start,
-                &#x27;end&#x27;: in_image_end,
-                &quot;in_animation&quot;:&quot;渐显&quot;,&quot;out_animation&quot;:&quot;渐隐&quot;
+                'text': textList[index2],
+                'start': in_image_start,
+                'end': in_image_end,
+                "in_animation":"渐显","out_animation":"渐隐"
             })
             audios.append({
-                &quot;audio_url&quot;: audioList[index2][&#x27;data&#x27;][&#x27;link&#x27;],
-                &quot;duration&quot;: int(obj[&#x27;duration&#x27;] * 1000000),
-                &quot;start&quot;: in_image_start,
-                &quot;end&quot;: in_image_end
+                "audio_url": audioList[index2]['data']['link'],
+                "duration": int(obj['duration'] * 1000000),
+                "start": in_image_start,
+                "end": in_image_end
             })
             in_image_start = in_image_end
         imgs.append({
-            &quot;image_url&quot;: image,
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: image_start,
-            &quot;end&quot;: in_image_start,
-            &quot;in_animation&quot;: random.choice([&#x27;向右下甩入&#x27;,&#x27;钟摆&#x27;,&#x27;向左转入&#x27;,&#x27;轻微抖动&#x27;,&#x27;分屏横移&#x27;,&#x27;斜切&#x27;,&#x27;向上滑动&#x27;])
+            "image_url": image,
+            "width": width,
+            "height": height,
+            "start": image_start,
+            "end": in_image_start,
+            "in_animation": random.choice(['向右下甩入','钟摆','向左转入','轻微抖动','分屏横移','斜切','向上滑动'])
         })
         image_start = in_image_end
         image_end  = in_image_end
@@ -185,18 +186,18 @@ async def main(args: Args) -&gt; Output:
     #背景图
     bgImages = []
     bgImages.append({
-            &quot;image_url&quot;: bgImage,
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: image_end
+            "image_url": bgImage,
+            "width": width,
+            "height": height,
+            "start": 0,
+            "end": image_end
         })
     # 构建输出对象
     ret = {
-        &quot;captions&quot;: json.dumps(captions),
-        &quot;bgimgs&quot;: json.dumps(bgImages),
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audios&quot;: json.dumps(audios)
+        "captions": json.dumps(captions),
+        "bgimgs": json.dumps(bgImages),
+        "imgs": json.dumps(imgs),
+        "audios": json.dumps(audios)
     }
 
     return ret

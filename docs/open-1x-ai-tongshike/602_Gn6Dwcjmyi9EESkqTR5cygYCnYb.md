@@ -1,14 +1,11 @@
+
 # 【QA文档】AI + 电商
 
-> 来源：[https://datawhaler.feishu.cn/docx/TcUTdcua8oX2blxlf0cctiTBnae](https://datawhaler.feishu.cn/docx/TcUTdcua8oX2blxlf0cctiTBnae)
+> 来源：[`https://datawhaler.feishu.cn/docx/TcUTdcua8oX2blxlf0cctiTBnae`](https://datawhaler.feishu.cn/docx/TcUTdcua8oX2blxlf0cctiTBnae)
 
 > 欢迎来到《AI + 电商》的互助QA文档！👏👏
 
->
-
 > 我们推荐大家通过**「自驱学习 + 分享讨论」**的方式，与更多有想法、有学习积极性的小伙伴，共同学习制作AI视频，分享学习心得解答彼此的疑问。请随时提出问题、发表观点，让我们共同进步，携手共创更优质的学习教程！
-
->
 
 > **温馨提示：**欢迎在文档中随时**提出问题、建议或评论**，我们会关注并据此优化QA文档。
 

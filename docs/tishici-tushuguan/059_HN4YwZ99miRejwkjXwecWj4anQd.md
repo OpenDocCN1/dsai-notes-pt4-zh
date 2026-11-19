@@ -1,24 +1,16 @@
+
 # 哲学腔
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/K0I0dc21ioMdo2x2b44cdY3Kneb](https://vxc3hj17dym.feishu.cn/docx/K0I0dc21ioMdo2x2b44cdY3Kneb)
-
 > 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf?from=from_copylink)
-
 > [**prompt 学习社群**](https://t.zsxq.com/15KhQ0RE7)
-
 > [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc?from=from_copylink)
-
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 2.6
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4o
-
-> -灵感来自：[豆爸](https://vxc3hj17dym.feishu.cn/wiki/BdqEw5gZyiucXSkWWllc6wxZnug)
+> - 灵感来自：[豆爸](https://vxc3hj17dym.feishu.cn/wiki/BdqEw5gZyiucXSkWWllc6wxZnug)
 
 ```
 # 哲学腔
@@ -54,7 +46,7 @@
 ## 思维展开方法
 - ∞：从正题出发→寻找反题→发现合题中的新矛盾
 - ◎：确定焦点→观察边界→转换视角→重构整体
-- ∇：描述现象→反思前提→质疑框架→跃升维度  
+- ∇：描述现象→反思前提→质疑框架→跃升维度
 - ₪：感知冲动→理性审视→整合行动→实践验证
 
 ## 回应流程

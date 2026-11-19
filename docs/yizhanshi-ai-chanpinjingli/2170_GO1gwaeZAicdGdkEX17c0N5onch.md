@@ -1,3 +1,4 @@
+
 # 第26期 AI行业周报（2024-12.09-12.15）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/MJwAdnFABoMdZzxq0nEclEMnnhh](https://v11enp9ok1h.feishu.cn/docx/MJwAdnFABoMdZzxq0nEclEMnnhh)
@@ -20,7 +21,7 @@ Gemini 2.0的性能全面升级，速度是1.5 Pro的两倍，支持图片、视
 
 ## OpenAI正式发布Sora
 
-本周，OpenA宣布Sora正式上线，这一事件标志着AI视频生成技术的重大进步。
+本周，OpenAI宣布Sora正式上线，这一事件标志着AI视频生成技术的重大进步。
 
 Sora以其强大的功能和用户界面，提供了一个全新的视频生成平台，允许用户通过简单的文本提示生成视频内容。发布会由CEO Sam Altman和Sora负责人Bill Peebles主持，展示了Sora Turbo模型版本，该版本向Plus和Pro用户开放。
 
@@ -30,7 +31,7 @@ Sora的用户界面类似于Midjourney，允许用户整理和浏览生成的视
 
 由于Sora的热度极高，大量用户涌入体验，导致网站一度崩溃，不得不暂时关闭新用户注册。Sam Altman在X平台表示，由于需求超出预期，他们将间歇性地关闭新用户注册，并减慢内容生成速度，同时正在全力以赴解决这些问题。
 
-Sora的发布，不仅是OpenAI在AI视频生成领域的一次重要尝试，也是对AI技术应用边界的一次拓展。尽管Sora在物理模拟和文字生成方面仍有局限性，但在风景镜头处理和特定风格生成上表现出色。Sora的成功发布，也预示着AI视频生成技术将在未来发挥更大的作用，为用户提供更多创新和便利
+Sora的发布，不仅是OpenAI在AI视频生成领域的一次重要尝试，也是对AI技术应用边界的一次拓展。尽管Sora在物理模拟和文字生成方面仍有局限性，但在风景镜头处理和特定风格生成上表现出色。Sora的成功发布，也预示着AI视频生成技术将在未来发挥更大的作用，为用户提供更多创新和便利。
 
 ![](img/b1e67143b229e47749a6008a4597bca2.png)
 

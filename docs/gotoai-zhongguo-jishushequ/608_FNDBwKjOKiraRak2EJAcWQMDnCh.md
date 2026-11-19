@@ -1,136 +1,134 @@
+
 # LMSYS-FastChat-轻量级单机多模型推理框架（开箱即用）
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/MLBzdYtoQolaCxxjkZ8cvauvnNb](https://gotoaiworld.feishu.cn/docx/MLBzdYtoQolaCxxjkZ8cvauvnNb)
 
-###
-
 An open platform for training, serving, and evaluating large language models. Release repo for Vicuna and Chatbot Arena.
 
-https://github.com/lm-sys/FastChat
+[FastChat](https://github.com/lm-sys/FastChat)
 
 「具备基本的显存动态分配、自动释放、多模型共享」的核心逻辑，用户只需：
 
-1.  配置模型路径 / 显存限制；
+1. 配置`模型路径` / `显存限制`；
+1. 启动服务 / 加载模型；
+1. 关闭模型 / 服务时，项目自动释放显存（无需手动调用`empty_cache()`等）。
 
-1.  启动服务 / 加载模型；
-
-1.  关闭模型 / 服务时，项目自动释放显存（无需手动调用empty_cache()等）。
-
-# FastChat
+## FastChat
 
 | [Demo](https://lmarena.ai/) | [Discord](https://discord.gg/6GXcFg3TH8) | [X](https://x.com/lmsysorg) |
 
 FastChat is an open platform for training, serving, and evaluating large language model based chatbots.
 
-+   [FastChat p](https://lmarena.ai/)owers Chatbot Arena (lmarena.ai), serving over 10 million chat requests for 70+ LLMs.
++ [FastChat](https://lmarena.ai/) powers Chatbot Arena (lmarena.ai), serving over 10 million chat requests for 70+ LLMs.
 
-+   Chatbot Arena has collected over 1.5M human votes from side-by-side LLM battles to compile an online LLM Elo leaderboard.
++ Chatbot Arena has collected over 1.5M human votes from side-by-side LLM battles to compile an online LLM Elo leaderboard.
 
 FastChat's core features include:
 
-+   The training and evaluation code for state-of-the-art models (e.g., Vicuna, MT-Bench).
++ The training and evaluation code for state-of-the-art models (e.g., Vicuna, MT-Bench).
 
-+   A distributed multi-model serving system with web UI and OpenAI-compatible RESTful APIs.
++ A distributed multi-model serving system with web UI and OpenAI-compatible RESTful APIs.
 
-## News
+### News
 
-+   [2024/03] 🔥 We released Chatb[ot Are](https://arxiv.org/abs/2403.04132)na technical report.
++ [2024/03] 🔥 We released [Chatbot Arena technical report](https://arxiv.org/abs/2403.04132).
 
-+   [2[023/09](https://arxiv.org/abs/2309.11998)] We released LMSYS-Chat-1M, a large-scale real-world LLM conversation dataset. Read the report.
++ [2023/09] We released [LMSYS-Chat-1M](https://arxiv.org/abs/2309.11998), a large-scale real-world LLM conversation dataset. Read the report.
 
-+   [2[023/08]](https://github.com/lm-sys/FastChat#vicuna-weights) We released Vicuna v1.5 based on Llama 2 with 4K and 16K context lengths. Download weights.
++ [2023/08] We released [Vicuna v1.5](https://github.com/lm-sys/FastChat#vicuna-weights) based on Llama 2 with 4K and 16K context lengths. Download weights.
 
-+   [20[23/0](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations)7] We released Chatbot Arena Conversations, a dataset containing 33k conversations with human preferences. Download it here.
++ [2023/07] We released [Chatbot Arena Conversations](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations), a dataset containing 33k conversations with human preferences. Download it here.
 
 More
 
-+   [2[023/08]](https://github.com/lm-sys/FastChat#longchat) We released LongChat v1.5 based on Llama 2 with 32K context lengths. Download weights.
++ [2023/08] We released [LongChat v1.5](https://github.com/lm-sys/FastChat#longchat) based on Llama 2 with 32K context lengths. Download weights.
 
-+   [2023/06] We introduced MT-bench, a challenging multi-tu[rn q](https://lmsys.org/blog/2023-06-22-leaderboard/)uestion set for evaluating chatbots. Check out the blog post.
++ [2023/06] We introduced [MT-bench](https://lmsys.org/blog/2023-06-22-leaderboard/), a challenging multi-turn question set for evaluating chatbots. Check out the blog post.
 
-+   [2[023/](https://lmsys.org/blog/2023-06-29-longchat/)06] We introduced LongChat, our long-context chatbots and evaluation tools. Check out the blog post.
++ [2023/06] We introduced [LongChat](https://lmsys.org/blog/2023-06-29-longchat/), our long-context chatbots and evaluation tools. Check out the blog post.
 
-+   [2023/05] We introduced Chatbot Arena for[ bat](https://lmsys.org/blog/2023-05-03-arena)tles among LLMs. Check out the blog post.
++ [2023/05] We introduced [Chatbot Arena](https://lmsys.org/blog/2023-05-03-arena) for battles among LLMs. Check out the blog post.
 
-+   [2023/03] We released Vicuna: An Open-Source Chatbot Im[pres](https://vicuna.lmsys.org/)sing GPT-4 with 90% ChatGPT Quality. Check out the blog post.
++ [2023/03] We released [Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality](https://vicuna.lmsys.org/). Check out the blog post.
 
-[h](https://github.com/lm-sys/FastChat/raw/main/assets/demo_narrow.gif)ttps://github.com/lm-sys/FastChat/raw/main/assets/demo_narrow.gif
+![demo](https://github.com/lm-sys/FastChat/raw/main/assets/demo_narrow.gif)
 
-## Contents
+### Contents
 
-+   [Install](https://github.com/lm-sys/FastChat#install)
++ [Install](#install)
 
-+   [Model Weights](https://github.com/lm-sys/FastChat#model-weights)
++ [Model Weights](#model-weights)
 
-+   [Inference with Co](https://github.com/lm-sys/FastChat#inference-with-command-line-interface)mmand Line Interface
++ [Inference with Command Line Interface](#inference-with-command-line-interface)
 
-+   Serving with Web GUI
++ Serving with Web GUI
 
-+   [API](https://github.com/lm-sys/FastChat#api)
++ [API](#api)
 
-+   [Evaluation](https://github.com/lm-sys/FastChat#evaluation)
++ [Evaluation](#evaluation)
 
-+   [Fine-tuning](https://github.com/lm-sys/FastChat#fine-tuning)
++ [Fine-tuning](#fine-tuning)
 
-+   [Citation](https://github.com/lm-sys/FastChat#citation)
++ [Citation](#citation)
 
-## Install
+### Install
 
-### Method 1: With pip
+#### Method 1: With pip
 
-pip3 install "fschat[model_worker,webui]"
+`pip3 install "fschat[model_worker,webui]"`
 
-### Method 2: From source
+#### Method 2: From source
 
-1.  Clone this repository and navigate to the FastChat folder
+1. Clone this repository and navigate to the FastChat folder
 
+```
 git clone https://github.com/lm-sys/FastChat.git
-
 cd FastChat
+```
 
 If you are running on Mac:
 
-brew install rust cmake
+`brew install rust cmake`
 
-1.  Install Package
+1. Install Package
 
-pip3 install --upgrade pip  # enable PEP 660 support
+`pip3 install --upgrade pip`  # enable PEP 660 support
 
-pip3 install -e ".[model_worker,webui]"
+`pip3 install -e ".[model_worker,webui]"`
 
-## Model Weights
+### Model Weights
 
-### Vicuna Weights
+#### Vicuna Weights
 
-[Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/) [is based on L](https://github.com/facebookresearch/llama/blob/main/LICENSE)lama 2 and should be used under Llama's model license.
+[Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/) is based on [Llama 2](https://github.com/facebookresearch/llama/blob/main/LICENSE) and should be used under Llama's model license.
 
-You can use the commands below to start chatting. It will automatically download the weights from Hugging Face repos. Downloaded weights are stored in a .cache folder in the user's home folder (e.g., ~/.cache/huggingface/hub/<model_name>).
+You can use the commands below to start chatting. It will automatically download the weights from Hugging Face repos. Downloaded weights are stored in a `.cache` folder in the user's home folder (e.g., `~/.cache/huggingface/hub/<model_name>`).
 
 See more command options and how to handle out-of-memory in the "Inference with Command Line Interface" section below.
 
-NOTE: transformers>=4.31 is required for 16K versions.
+NOTE: `transformers>=4.31` is required for 16K versions.
 
-Old weights: see docs/vicuna_weights_version.md for all versions of weights and their differences.
+Old weights: see `docs/vicuna_weights_version.md` for all versions of weights and their differences.
 
-### Other Models
+#### Other Models
 
-B[esides V](https://lmsys.org/blog/2023-06-29-longchat/)icuna, we also released two additional models: LongChat and FastChat-T5. You can use the commands below to chat with them. They will automatically download the weights from Hugging Face repos.
+Besides Vicuna, we also released two additional models: LongChat and FastChat-T5. You can use the commands below to chat with them. They will automatically download the weights from Hugging Face repos.
 
-## Inference with Command Line Interface
+### Inference with Command Line Interface
 
-[h](https://github.com/lm-sys/FastChat/raw/main/assets/screenshot_cli.png)ttps://github.com/lm-sys/FastChat/raw/main/assets/screenshot_cli.png
+![screenshot](https://github.com/lm-sys/FastChat/raw/main/assets/screenshot_cli.png)
 
-(Experimental Feature: You can specify --style rich to enable rich text output and better text streaming quality for some non-ASCII content. This may not work properly on certain terminals.)
+(Experimental Feature: You can specify `--style rich` to enable rich text output and better text streaming quality for some non-ASCII content. This may not work properly on certain terminals.)
 
 #### Supported Models
 
 FastChat supports a wide range of models, including LLama 2, Vicuna, Alpaca, Baize, ChatGLM, Dolly, Falcon, FastChat-T5, GPT4ALL, Guanaco, MTP, OpenAssistant, OpenChat, RedPajama, StableLM, WizardLM, xDAN-AI and more.
 
-See a complete list of supported mod[els ](https://github.com/lm-sys/FastChat/blob/main/docs/model_support.md)and instructions to add a new model here.
+See a complete list of supported models and instructions to add a new model [here](https://github.com/lm-sys/FastChat/blob/main/docs/model_support.md).
 
 #### Single GPU
 
-The command below requires around 14GB of GPU memory for Vicuna-7B and 28GB of GPU memory for Vicuna-13B. See the "Not Enough Memory" section below if you do not have enough memory. --model-path can be a local folder or a Hugging Face repo name.
+The command below requires around 14GB of GPU memory for Vicuna-7B and 28GB of GPU memory for Vicuna-13B. See the "Not Enough Memory" section below if you do not have enough memory. `--model-path` can be a local folder or a Hugging Face repo name.
 
 ```
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5
@@ -144,7 +142,7 @@ You can use model parallelism to aggregate GPU memory from multiple GPUs on the 
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --num-gpus 2
 ```
 
-Tips: Sometimes the "auto" device mapping strategy in huggingface/transformers does not perfectly balance the memory allocation across multiple GPUs. You can use --max-gpu-memory to specify the maximum memory per GPU for storing model weights. This allows it to allocate more memory for activations, so you can use longer context lengths or larger batch sizes. For example,
+Tips: Sometimes the "auto" device mapping strategy in `huggingface/transformers` does not perfectly balance the memory allocation across multiple GPUs. You can use `--max-gpu-memory` to specify the maximum memory per GPU for storing model weights. This allows it to allocate more memory for activations, so you can use longer context lengths or larger batch sizes. For example,
 
 ```
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --num-gpus 2 --max-gpu-memory 8GiB
@@ -166,7 +164,7 @@ CPU_ISA=amx python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --de
 
 #### Metal Backend (Mac Computers with Apple Silicon or AMD GPUs)
 
-Use --device mps to enable GPU acceleration on Mac computers (requires torch >= 2.0). Use --load-8bit to turn on 8-bit compression.
+Use `--device mps` to enable GPU acceleration on Mac computers (requires `torch >= 2.0`). Use `--load-8bit` to turn on 8-bit compression.
 
 ```
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --device mps --load-8bit
@@ -182,7 +180,7 @@ Install the Intel Extension for PyTorch. Set the OneAPI environment variables:
 source /opt/intel/oneapi/setvars.sh
 ```
 
-Use --device xpu to enable XPU/GPU acceleration.
+Use `--device xpu` to enable XPU/GPU acceleration.
 
 ```
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --device xpu
@@ -198,7 +196,7 @@ Install the Ascend PyTorch Adapter. Set the CANN environment variables:
 source /usr/local/Ascend/ascend-toolkit/set_env.sh
 ```
 
-Use --device npu to enable NPU acceleration.
+Use `--device npu` to enable NPU acceleration.
 
 ```
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --device npu
@@ -208,7 +206,13 @@ Vicuna-7B/13B can run on an Ascend NPU.
 
 #### Not Enough Memory
 
-If you do not have enough memory, you can enable 8-bit compression by adding --load-8bit to commands above. This can reduce memory usage by around half with slightly degraded model quality. It is compatible with the CPU, GPU, and Metal backend.
+
+
+# Model Deployment and Optimization
+
+## 8-bit Compression
+
+If you do not have enough memory, you can enable 8-bit compression by adding `--load-8bit` to commands above. This can reduce memory usage by around half with slightly degraded model quality. It is compatible with the CPU, GPU, and Metal backend.
 
 Vicuna-13B with 8-bit compression can run on a single GPU with 16 GB of VRAM, like an Nvidia RTX 3090, RTX 4080, T4, V100 (16GB), or an AMD RX 6800 XT.
 
@@ -216,22 +220,24 @@ Vicuna-13B with 8-bit compression can run on a single GPU with 16 GB of VRAM, li
 python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --load-8bit
 ```
 
-In addition to that, you can add --cpu-offloading to commands above to offload weights that don't fit on your GPU onto the CPU memory. This requires 8-bit compression to be enabled and the bitsandbytes package to be installed, which is only available on linux operating systems.
+In addition to that, you can add `--cpu-offloading` to commands above to offload weights that don't fit on your GPU onto the CPU memory. This requires 8-bit compression to be enabled and the `bitsandbytes` package to be installed, which is only available on linux operating systems.
 
-#### More Platforms and Quantization
+## More Platforms and Quantization
 
-+   For AMD GPU users, please install ROCm and the [ROCm](https://github.com/lm-sys/FastChat/issues/104#issuecomment-1613791563) version of PyTorch before you install FastChat. See also this post.
++ For AMD GPU users, please install ROCm and the [ROCm](https://github.com/lm-sys/FastChat/issues/104#issuecomment-1613791563) version of PyTorch before you install FastChat. See also this post.
 
-+   FastChat supports ExLlama V2. See docs/exllama_v2.md.
++ FastChat supports ExLlama V2. See `docs/exllama_v2.md`.
 
-+   FastChat supports GPTQ [4bit inference](https://github.com/qwopqwop200/GPTQ-for-LLaMa) with [GPTQ-for-LLa](https://github.com/lm-sys/FastChat/blob/main/docs/gptq.md)Ma. See docs/gptq.md.
++ FastChat supports GPTQ [4bit inference](https://github.com/qwopqwop200/GPTQ-for-LLaMa) with [GPTQ-for-LLa](https://github.com/lm-sys/FastChat/blob/main/docs/gptq.md)Ma. See `docs/gptq.md`.
 
-+   FastChat supports AWQ 4bit i[nference wi](https://github.com/lm-sys/FastChat/blob/main/docs/awq.md)th mit-han-lab/llm-awq. See docs/awq.md.
++ FastChat supports AWQ 4bit i[nference wi](https://github.com/lm-sys/FastChat/blob/main/docs/awq.md)th `mit-han-lab/llm-awq`. See `docs/awq.md`.
 
-+   [MLC LLM](https://mlc.ai/mlc-llm/), backed by [TVM Unity](https://github.com/apache/tvm/tree/unity) compiler, deploys Vicuna natively on phones, consumer-class GPUs and web browsers via Vulkan, Metal, CUDA and WebGPU.
++ [MLC LLM](https://mlc.ai/mlc-llm/), backed by [TVM Unity](https://github.com/apache/tvm/tree/unity) compiler, deploys Vicuna natively on phones, consumer-class GPUs and web browsers via Vulkan, Metal, CUDA and WebGPU.
 
-#### Use models from modelscope
+## Use models from modelscope
 
-For Chinese users, you can use models from www.modelscope.cn via specify the following environment variables.
+For Chinese users, you can use models from `www.modelscope.cn` via specify the following environment variables.
 
+```
 export FASTCHAT_USE_MODELSCOPE=True
+```

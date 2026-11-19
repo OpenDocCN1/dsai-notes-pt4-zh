@@ -1,3 +1,4 @@
+
 # 6🈷️19日
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/VUahdmZ31oAXZ8xWlmncmydynvb](https://v11enp9ok1h.feishu.cn/docx/VUahdmZ31oAXZ8xWlmncmydynvb)
@@ -30,13 +31,13 @@
 
 > 🔗 文中引用的链接
 
-+   [https://www.theinformation.com/articles/meta-ag](https://www.theinformation.com/articles/meta-agreed-pay-scale-ai-wanted-money?rc=o6xpry)reed-pay-scale-ai-wanted-money?rc=o6xpry
++   [https://www.theinformation.com/articles/meta-agreed-pay-scale-ai-wanted-money?rc=o6xpry](https://www.theinformation.com/articles/meta-agreed-pay-scale-ai-wanted-money?rc=o6xpry)
 
 > 2️⃣
 
 > 🤖
 
-> [Nature子刊 | 显著提升生物医学中蛋白质](https://mp.weixin.qq.com/s/w4itwZFtVhVuvQKLIWuM3Q)递送能力，生成式AI扩展线粒体靶向工具包
+> [Nature子刊 | 显著提升生物医学中蛋白质递送能力，生成式AI扩展线粒体靶向工具包](https://mp.weixin.qq.com/s/w4itwZFtVhVuvQKLIWuM3Q)
 
 >
 
@@ -96,7 +97,7 @@
 
 > 🤖
 
-> 摩尔线程副总裁王华：基于FP8的国产万卡...
+> 摩尔线程副总裁王华：基于FP8的国产万卡集群训练...
 
 >
 
@@ -174,7 +175,7 @@
 
 +   Gemini和Claude在模型能力方面各有优势。
 
-+   MiniMax和DeepSeek在开源模型中处于头部，优于Qwen3 。
++   MiniMax和DeepSeek在开源模型中处于头部，优于Qwen3。
 
 +   通过对比图可清晰看到各家模型能力强弱。
 

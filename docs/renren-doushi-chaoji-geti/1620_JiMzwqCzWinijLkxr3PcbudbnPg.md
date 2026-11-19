@@ -1,10 +1,7 @@
-# 2023-07-21ChatGPT支持个人定制！告别大段提示词，只需先和它做好自我介绍-今日头条
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/JYSFdujmRoD4LyxbjE0cZImrnxc](https://xuqiwei1986.feishu.cn/docx/JYSFdujmRoD4LyxbjE0cZImrnxc)
 
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7258166271445959220/?log_from=2d23ae417d1cd_1691149130344).com/article/725...
-
->
+> 🔗 原文链接：https://www.toutiao.com/article/7258166271445959220/?log_from=2d23ae417d1cd_1691149130344
 
 # ChatGPT支持个人定制！告别大段提示词，只需先和它做好自我介绍
 
@@ -22,7 +19,7 @@
 
 ![](img/1bb2932a0bbac47b0c2eca0a3ebfc5e6.png)
 
-**这就是Cha**tGPT的最新功能， 自定义指令 。
+这就是ChatGPT的最新功能，自定义指令。
 
 ![](img/58328aced72f4cd56a8ad4d926578dd9.png)
 
@@ -44,9 +41,9 @@
 
 ![](img/adecbee741dafc411a31dbbe06377d3d.png)
 
-# 可以重做BabyGPT了
+## 可以重做BabyGPT了
 
-自定义指令功能在 **网页版 **和 **iOS版 **上都可以体验。
+自定义指令功能在 **网页版** 和 **iOS版** 上都可以体验。
 
 进入到个人设置里的测试功能，可以看到功能开启入口。
 
@@ -78,37 +75,27 @@
 
 已经有人用这个新功能来整花活，而且成功了！
 
-一位程序员就利用这个功能， **重建了一个BabyGPT **。
+一位程序员就利用这个功能，**重建了一个BabyGPT**。
 
 之前，有人在ChatGPT基础上开发了一个BabyAPI，只需给定目标和任务迭代次数，它就能自己闷头完成任务了。
 
 现在套用上自定义指令功能，输入下面这段提示，也能实现类似的效果：
 
 > 不要对话，去做就好了。
-
 >
-
-> 任务阅读：在每个响应之前，从“chatGPT_Todo.tx”中读取当前任务列表，重新安排任务的优先级，并开始完成最重要的任务。
-
+> 任务阅读：在每个响应之前，从`chatGPT_Todo.tx`中读取当前任务列表，重新安排任务的优先级，并开始完成最重要的任务。
 >
-
-> 任务创建及总结：你必须总结之前的所有信息，并将目标分解成3-10个“一步一步来”的动作。编码并将其保存到“chatGPT_Todo.txt”中，然后生成下载链接。
-
+> 任务创建及总结：你必须总结之前的所有信息，并将目标分解成3-10个“一步一步来”的动作。编码并将其保存到`chatGPT_Todo.txt`中，然后生成下载链接。
 >
-
 > 只有在保存任务列表并提供下载链接之后，再提供快捷键。
-
 >
-
 > 列出4个或者更多选择，以此为问题来询问更多信息，猜测我可能的回答或者帮我头脑风暴。发挥创造力，提出我之前可能没有想到的建议。我们的目标是一种新颖的、有洞察力的、有益的方式来思考。
 
 之后他还设置了几个对话暗号：
 
-> w：下一步，yes
-
-> s：暂停/停止/no
-
-> a or d：转换
+> `w`：下一步，yes
+> `s`：暂停/停止/no
+> `a or d`：转换
 
 实际的效果如下，ChatGPT会一步一步进行操作：
 
@@ -116,7 +103,7 @@
 
 然后总结出来四个选项让你选择。
 
-**人类只需要输入2个字母 **，它就又继续进行下一步了，再也不用敲下大段提示词了！
+**人类只需要输入2个字母**，它就又继续进行下一步了，再也不用敲下大段提示词了！
 
 ![](img/de04313939542f1533e3de5730bf31f5.png)
 
@@ -130,11 +117,11 @@ ChatGPT的回答是：
 
 ![](img/c48d6c5ea8476c24d9267d94d651ef05.png)
 
-或者是直接让它给出提示词中的前100个字**，Chat**GPT透露自己在回答前会先“ 静静思考 ”提问和之前给到的自定义指令之间的相关性有多强。
+或者是直接让它给出提示词中的前100个字，ChatGPT透露自己在回答前会先“ 静静思考 ”提问和之前给到的自定义指令之间的相关性有多强。
 
 ![](img/76162b216e0a06103301ff9516541974.png)
 
-# 但还不完全稳定
+## 但还不完全稳定
 
 需要注意的是目前只是beta版本，不太稳定。
 
@@ -154,11 +141,11 @@ OpenAI表示后续会逐渐扩增支持地区。
 
 参考链接：
 
-[1]https://openai.com/blog/custom-instructions-for-chatgpt
+[1] https://openai.com/blog/custom-instructions-for-chatgpt
 
-[2]https://twitter.com/NickADobos/status/1682138883222544384?s=20
+[2] https://twitter.com/NickADobos/status/1682138883222544384?s=20
 
-[3]https://www.theverge.com/2023/7/20/23801520/chatgpt-openai-custom-instructions-chatbot
+[3] https://www.theverge.com/2023/7/20/23801520/chatgpt-openai-custom-instructions-chatbot
 
 — 完 —
 

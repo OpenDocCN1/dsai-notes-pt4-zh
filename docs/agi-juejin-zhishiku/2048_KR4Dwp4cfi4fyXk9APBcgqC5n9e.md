@@ -1,8 +1,7 @@
-# 10.28-万亿美金赛道，迎中国破局者！AI重构新材料，「智造」时代开启
-
-> 来源：[https://agijuejin.feishu.cn/docx/OWh3dqt0Qoo0tWxynCJc3m36nbe](https://agijuejin.feishu.cn/docx/OWh3dqt0Qoo0tWxynCJc3m36nbe)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 28 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/OWh3dqt0Qoo0tWxynCJc3m36nbe](https://agijuejin.feishu.cn/docx/OWh3dqt0Qoo0tWxynCJc3m36nbe)
 
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 

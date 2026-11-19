@@ -1,8 +1,9 @@
+
 # Lora_style_3
 
 > 来源：[https://ai.feishu.cn/docx/QgmOdSCUlogjqixmLnrcHYlVned](https://ai.feishu.cn/docx/QgmOdSCUlogjqixmLnrcHYlVned)
 
-### 实验信息
+## 实验信息
 
 训练数据来源猫和老鼠
 
@@ -12,27 +13,26 @@
 
 ![](img/879c6c139a24a6e6693cae2318a2aff3.png)
 
-[sft.yaml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fv5FbVNYLoIlWnxRpV1cy9RsnMh)
+[`sft.yaml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fv5FbVNYLoIlWnxRpV1cy9RsnMh)
 
 ![](img/dab3c34e1a78a3f2ae4024a05807631c.png)
 
-[cogvideox_2b_lora.yaml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IcYubv9hAoyXxYxBRhocD7hTnSf)
+[`cogvideox_2b_lora.yaml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IcYubv9hAoyXxYxBRhocD7hTnSf)
 
-#### Huggingface Diffusers  Lora权重
+### Huggingface Diffusers Lora权重
 
-#### 结果评价
+### 结果评价
 
 这次从训练评测上看，基于[Lora_style_2](https://zhipu-ai.feishu.cn/wiki/OdvMwvXoQilYM8kjkFPcJFa3npf)最后一次检查点继续训练，人物形象并没有很好的生成，甚至其它任务都无法生成，不放测试示例了
 
-#### 新的任务
+### 新的任务
 
 为了让提示词中只包含人物信息，而不会存在其它关于嘈杂环境的描述，设计了下面几个COT思维链过程
 
-caption_chunk_gpt_compare用于判断视频描述与视频内容是否符合，筛选掉一些明显不存在人物信息的数据
+`caption_chunk_gpt_compare`用于判断视频描述与视频内容是否符合，筛选掉一些明显不存在人物信息的数据
 
 ```
-
-    video_description_prompt = f&quot;&quot;&quot;视频描述：\&quot;{caption_summary_text}\&quot;
+video_description_prompt = f&quot;&quot;&quot;视频描述：\&quot;{caption_summary_text}\&quot;
 
 请执行以下任务：
 
@@ -48,7 +48,7 @@ caption_chunk_gpt_compare用于判断视频描述与视频内容是否符合，�
 Step by Step Decomposition&quot;&quot;&quot;
 ```
 
-check_gpt_compare由于caption_chunk_gpt_compare使用了Step by Step Decomposition ，我们需要将描述任务转换成分类任务，输出是或者否
+`check_gpt_compare`由于`caption_chunk_gpt_compare`使用了Step by Step Decomposition ，我们需要将描述任务转换成分类任务，输出是或者否
 
 ```
 video_description_prompt = f&quot;&quot;&quot;任务描述：
@@ -68,11 +68,10 @@ video_description_prompt = f&quot;&quot;&quot;任务描述：
 请直接输出结果，不要包含额外的解释或信息。&quot;&quot;&quot;
 ```
 
-caption_chunk_gpt_role_insert最后判断分类为是的内容，根据最佳的聚类镜头描述修改视频描述，使其带上角色信息
+`caption_chunk_gpt_role_insert`最后判断分类为是的内容，根据最佳的聚类镜头描述修改视频描述，使其带上角色信息
 
 ```
-
-    video_description_prompt = f&quot;&quot;&quot;Script Information: {features_caption}
+video_description_prompt = f&quot;&quot;&quot;Script Information: {features_caption}
 
 Video Description: &quot;{caption_summary_text}&quot;
 
@@ -101,6 +100,6 @@ Please describe the content of the video and the changes that occur, in chronolo
 Please keep the description within 100 English words.&quot;&quot;&quot;
 ```
 
-#### 关联任务
+### 关联任务
 
 [Lora_style_2](https://zhipu-ai.feishu.cn/wiki/OdvMwvXoQilYM8kjkFPcJFa3npf)

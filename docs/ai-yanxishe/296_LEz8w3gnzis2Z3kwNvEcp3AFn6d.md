@@ -1,3 +1,4 @@
+
 # AI“入侵”CG？制作全流程一键搞定
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/Bppad7eUhofbnWxfUiqcc00HnLh](https://aiyanxishe.feishu.cn/docx/Bppad7eUhofbnWxfUiqcc00HnLh)
@@ -22,7 +23,7 @@
 
 源：Wonder Dynamics
 
-▍一键生成高质量CG，AI又杀疯了
+## 一键生成高质量CG，AI又杀疯了
 
 这款AI工具来自Wonder Dynamics推出的Wonder Studio，据说一经面世就成为爆款。那么这款点亮新技能的 AI 创作工具有多强大？
 
@@ -72,7 +73,7 @@
 
 况且，这才刚刚开始。
 
-▍幕后团队揭秘，大咖加持果然不同凡响！
+## 幕后团队揭秘，大咖加持果然不同凡响！
 
 作为一家人工智能电影公司，Wonder Dynamic公司的创始团队里可谓是卧虎藏龙、人才济济。
 

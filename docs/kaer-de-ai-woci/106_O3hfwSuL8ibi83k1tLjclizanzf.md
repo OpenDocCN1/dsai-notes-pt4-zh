@@ -1,3 +1,4 @@
+
 # 新装的OpenClaw不知道要安什么Skills和怎么用？看这篇就够了
 
 > 来源：[https://aiwarts101.feishu.cn/docx/Ei0VdkmtZovfspxmqP3cDFa8nYe](https://aiwarts101.feishu.cn/docx/Ei0VdkmtZovfspxmqP3cDFa8nYe)
@@ -8,50 +9,50 @@
 
 ---
 
-### skill-vetter
+## skill-vetter
 
 https://github.com/openclaw/skills/blob/main/skills/fatfingererr/azhua-skill-vetter/SKILL.md
 
-### Gog
+## Gog
 
 https://github.com/openclaw/skills/blob/main/skills/steipete/gog/SKILL.md
 
-### self-improving
+## self-improving
 
 https://clawhub.ai/pskoett/self-improving-agent
 
-### memory-setup
+## memory-setup
 
-~/.openclaw/skills/memory-setup/
+`~/.openclaw/skills/memory-setup/`
 
-### summarize
+## summarize
 
 https://clawhub.ai/steipete/summarize
 
-### proactive-agent
+## proactive-agent
 
 https://github.com/openclaw/skills/blob/main/skills/halthelobster/proactive-agent/SKILL.md
 
-### find-skills
+## find-skills
 
 https://clawhub.ai/JimLiuxinghai/find-skills
 
-### Qmd
+## Qmd
 
 https://clawhub.ai/steipete/qmd
 
-### automation-workflows
+## automation-workflows
 
 https://clawhub.ai/JK-0001/automation-workflows
 
-### Obsidian
+## Obsidian
 
 https://clawhub.ai/steipete/obsidian
 
-### agent-browser
+## agent-browser
 
 https://clawhub.ai/TheSethRose/agent-browser
 
-### tavily-search
+## tavily-search
 
 https://clawhub.ai/arun-8687/tavily-search

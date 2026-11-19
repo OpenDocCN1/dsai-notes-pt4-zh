@@ -1,8 +1,11 @@
+
 # 知识闪卡生成 AI
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/EqD3dMHuaoDSRQx7F6gcMj05nId](https://vxc3hj17dym.feishu.cn/docx/EqD3dMHuaoDSRQx7F6gcMj05nId)
 
-**关于作者：**[一泽 Eze 的个人说明书｜知识库 Index](https://zkv549gmz8.feishu.cn/wiki/PzUsw69neimLuakaz4Wc85mwnBe?from=from_copylink)
+### 关于作者
+
+[一泽 Eze 的个人说明书｜知识库 Index](https://zkv549gmz8.feishu.cn/wiki/PzUsw69neimLuakaz4Wc85mwnBe?from=from_copylink)
 
 ```
 # Role: 知识闪卡生成 AI

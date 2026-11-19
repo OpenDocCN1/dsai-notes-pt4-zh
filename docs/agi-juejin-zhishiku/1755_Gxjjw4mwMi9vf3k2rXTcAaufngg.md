@@ -1,14 +1,15 @@
+
 # AI 人工智能未来能够替代写真摄影吗？
 
 > 来源：[https://agijuejin.feishu.cn/docx/VDFfdMU0zoTplLxlDARcLa4fnCd](https://agijuejin.feishu.cn/docx/VDFfdMU0zoTplLxlDARcLa4fnCd)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/676949023)hihu.com/p/676949...
+> 原文：[https://zhuanlan.zhihu.com/p/676949023](https://zhuanlan.zhihu.com/p/676949023)
 
-**用 **[**AI人工智能 **](https://www.zhihu.com/search?q=AI%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D)拍写真，正在越来越从幻想变成未来现实的可能。
+用 [AI人工智能](https://www.zhihu.com/search?q=AI%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D) 拍写真，正在越来越从幻想变成未来现实的可能。
 
-## 一、阿里 FaceChain-FACT （一张照片制作多个写真照）
+## 一、阿里 FaceChain-FACT（一张照片制作多个写真照）
 
 [阿里系在人](https://www.zhihu.com/search?q=%E5%A6%99%E9%B8%AD%E7%9B%B8%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D)工[智能上频](https://www.zhihu.com/search?q=%E5%86%99%E7%9C%9F%E7%85%A7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D)出高能应用，之前阿里的 妙鸭相机 还需要上传20张照片，而现在已经有阿里新出的FaceChain-FACT论文，只需要一张照片就可以出多张 写真照 ，快来看看效果吧！
 
@@ -40,20 +41,15 @@ FaceChain-Fact可以根据一张照片，生成不同角度的写真照片。我
 
 ## 二、美图WHEE（根据文字生成相关写真照）
 
-前几天，美图WHEE [上线了 ](https://www.zhihu.com/search?q=%E4%B8%8A%E7%BA%BF%E4%BA%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D)AI模特图功能，能够通过你输入指定的性别、年龄、肤色、场景等信息，来生成AI模特的写真照。
+前几天，美图WHEE [上线了](https://www.zhihu.com/search?q=%E4%B8%8A%E7%BA%BF%E4%BA%86&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D) AI模特图功能，能够通过你输入指定的性别、年龄、肤色、场景等信息，来生成AI模特的写真照。
 
 ![](img/c78acf9d0a99e2f201d192fb23383c78.png)
 
 来看看我用这个新功能生成的效果把，可以看到生成的图片各自有各自的特点，不再是千篇一律的脸，稍微进行PS修改就可以用在电商图片中。
 
-
-
-
-
 ![](img/e2ddb615e95b74fa7353905f1206b67d.png)
 
 ![](img/828ba97b0de1f5b98410ba876a7676e4.png)
-
 
 ![](img/d090e645938e0445a705ab660dc0191e.png)
 
@@ -62,8 +58,6 @@ FaceChain-Fact可以根据一张照片，生成不同角度的写真照片。我
 ![](img/5c102f2197720688dd6732a95186f390.png)
 
 ![](img/17848841a2986137c0b64e7b3359733c.png)
-
-
 
 ![](img/aa32ea91b6fac49410ce5be595d791ce.png)
 
@@ -81,6 +75,6 @@ FaceChain-Fact可以根据一张照片，生成不同角度的写真照片。我
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676949023%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
 
 发布于 2024-01-09 23:46 ・IP 属地福建

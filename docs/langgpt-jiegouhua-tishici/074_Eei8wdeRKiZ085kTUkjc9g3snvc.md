@@ -1,14 +1,13 @@
+
 # custom instructions
 
-> 来源：[https://langgptai.feishu.cn/docx/X13fdeVXroVTwFxtwyCcPlben2e](https://langgptai.feishu.cn/docx/X13fdeVXroVTwFxtwyCcPlben2e)
+> 来源：[`https://langgptai.feishu.cn/docx/X13fdeVXroVTwFxtwyCcPlben2e`](https://langgptai.feishu.cn/docx/X13fdeVXroVTwFxtwyCcPlben2e)
 
 ## 万事通
 
 > 来自
-
-> chatGPT 自解释专家角色 放置在Custom Instrucions 中生效  主要用于根据用户提问自行判断和生成行业专家，提供建议，省去前期编写不熟悉的领域 Prompt 的负担，使用记录：
-
-> https://chat.openai.com/share/0dd491cc-427f-418f-8bc7-da77db850ef8
+> chatGPT 自解释专家角色 放置在Custom Instrucions 中生效 主要用于根据用户提问自行判断和生成行业专家，提供建议，省去前期编写不熟悉的领域 Prompt 的负担，使用记录：
+> `https://chat.openai.com/share/0dd491cc-427f-418f-8bc7-da77db850ef8`
 
 ```
 # 万事通

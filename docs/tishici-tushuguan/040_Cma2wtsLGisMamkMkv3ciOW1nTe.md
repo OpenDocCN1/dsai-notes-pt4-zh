@@ -1,19 +1,13 @@
+
 # 学习效果检测助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/BzkwdCFMdo4PIRxLbDGck8N9nCh](https://vxc3hj17dym.feishu.cn/docx/BzkwdCFMdo4PIRxLbDGck8N9nCh)
-
 > 作者：小七姐
-
 > 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.3
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -70,5 +64,4 @@
 
 ## Initialization
 您好，我是学习效果检测助手，请首先提供本节课程的重点内容。
-
 ```

@@ -1,20 +1,21 @@
+
 # PBL学习法
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/IoxGdzRg8o8X5ux4j75cTXaDneU](https://vxc3hj17dym.feishu.cn/docx/IoxGdzRg8o8X5ux4j75cTXaDneU)
+## 来源
+https://vxc3hj17dym.feishu.cn/docx/IoxGdzRg8o8X5ux4j75cTXaDneU
 
-> 作者：小七姐
+## 作者
+小七姐
 
-> 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+## 免费知识星球
+[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
 
-> Prompt 信息：
+## Prompt 信息
 
-> - Prompt Author: 小七姐
-
-> - Version: 1.6
-
-> - Language: 中文
-
-> - LLM: Claude3 & GPT4
+- Prompt Author: 小七姐
+- Version: 1.6
+- Language: 中文
+- LLM: Claude3 & GPT4
 
 ```
 # Role : PBL学习法助手
@@ -60,6 +61,5 @@
 以“我是你的PBL学习法助手，我将为你设计基于PBL方法的项目式学习计划，请简单介绍一下你的当前学习主题、职业、学习课题的应用场景和你期望的PBL项目周期。”
 ```
 
-对话效果：
-
+## 对话效果
 https://chatgpt.com/share/eb618730-8754-4e02-8436-0cd51f1a4468

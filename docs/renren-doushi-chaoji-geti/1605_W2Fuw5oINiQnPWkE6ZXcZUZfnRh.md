@@ -1,14 +1,11 @@
+
 # 2023-07-30星球midjourney Prompt库
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/T9wvd5Abgo3VzIxE9onc3wcKnrc](https://xuqiwei1986.feishu.cn/docx/T9wvd5Abgo3VzIxE9onc3wcKnrc)
 
-> 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_774ef7dclr43.html)xq.com/id_774ef7...
+> 🔗 原文链接：https://articles.zsxq.com/id_774ef7dclr43.html
 
->
-
-一直在星球里，感觉大家交流 midjourney Prompt很不方便，没有很好的形式展示及交流，
-
-研究了一段时间，找到一种展示方案，基于语雀知识库，把以前搜集的Mj咒语放了进去，作为一个 Prompt库，整个 midjourney Prompt库 26200 字，整理收集不易，为了防止被泄露，会有访问密码，密码更换会及时在这个帖子更新，希望能帮到大家，给大家提供灵感
+一直在星球里，感觉大家交流 midjourney Prompt 很不方便，没有很好的形式展示及交流，研究了一段时间，找到一种展示方案，基于语雀知识库，把以前搜集的 Mj 咒语放了进去，作为一个 Prompt 库，整个 midjourney Prompt 库 26200 字，整理收集不易，为了防止被泄露，会有访问密码，密码更换会及时在这个帖子更新，希望能帮到大家，给大家提供灵感。
 
 PC端使用效果：
 
@@ -24,12 +21,10 @@ PC端使用效果：
 
 移动端使用效果：
 
-
-
 ![](img/858a6d78df56c59001e7346cc21e97a2.png)
 
 链接地址：
 
-[https://www.yuque.co](https://www.yuque.com/salad-z3jji/blnq1b)m/salad-z3jji/blnq1b
+[https://www.yuque.com/salad-z3jji/blnq1b](https://www.yuque.com/salad-z3jji/blnq1b)
 
 密码：ldg1

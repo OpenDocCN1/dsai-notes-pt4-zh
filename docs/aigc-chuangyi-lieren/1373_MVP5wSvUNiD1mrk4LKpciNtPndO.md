@@ -1,10 +1,11 @@
+
 # 20251114-最最最喜欢的AI产品，谷歌NotebookLM终于放大招，Deep Research上线！
 
 > 来源：[https://aigcreative.feishu.cn/docx/CxMedgCIGoUdmVx7e4icDmAqnMc](https://aigcreative.feishu.cn/docx/CxMedgCIGoUdmVx7e4icDmAqnMc)
 
 大家好。
 
-**今天终于能写一写我最**最最喜欢、平时用的最多的AI产品了——谷歌的NotebookLM。
+今天终于能写一写我最最最喜欢、平时用的最多的AI产品了——谷歌的NotebookLM。
 
 没有之一。
 
@@ -12,7 +13,7 @@
 
 我喜欢它的原因很简单：它不花哨，是个很正经帮你处理信息和学习的AI工具。
 
-**最近，它又更新了一个重量级**功能，叫Deep Research（深度研究）。
+最近，它又更新了一个重量级功能，叫Deep Research（深度研究）。
 
 ![](img/529778b6915d7bd3efa2dbe099e55797.png)
 
@@ -54,7 +55,7 @@
 
 ![](img/008ab7d91f2da1f210aa1656869700f5.png)
 
-## **首先，海量信息的处理能力。**
+## 首先，海量信息的处理能力。
 
 它现在能支持到 2500 万 token 的上下文。
 
@@ -106,7 +107,7 @@ NotebookLM 对音视频的支持就很好。你可以直接把 YouTube 视频链
 
 所以你看，从最开始的“只基于你给的资料回答”，到后来的“支持思维导图、音视频”，再到现在的“Deep Research”。
 
-**NotebookLM 一直在做一件事：帮你把海量的、杂**乱的信息，变成你自己的、结构化的、可查询、可对话、甚至可收听的“个人知识库”。
+NotebookLM 一直在做一件事：帮你把海量的、杂乱的信息，变成你自己的、结构化的、可查询、可对话、甚至可收听的“个人知识库”。
 
 哦对，还有个很重要的点：隐私。
 

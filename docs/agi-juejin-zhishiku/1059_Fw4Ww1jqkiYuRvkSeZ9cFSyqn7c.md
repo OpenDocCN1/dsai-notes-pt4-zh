@@ -1,10 +1,11 @@
+
 # RAG能帮助LLM更靠谱吗？
 
-> 来源：[https://agijuejin.feishu.cn/docx/HL8JdrsUeo8BjexSm3QcWVennwp](https://agijuejin.feishu.cn/docx/HL8JdrsUeo8BjexSm3QcWVennwp)
+> 来源：`https://agijuejin.feishu.cn/docx/HL8JdrsUeo8BjexSm3QcWVennwp`
 
 > 作者：新智元
 
-> 原文：https://mp.weixin.qq.com/s/0o6VQ6ISWLlDvbgHJaNdbg
+> 原文：`https://mp.weixin.qq.com/s/0o6VQ6ISWLlDvbgHJaNdbg`
 
 ![](img/35add3eb725de8eabd441a71a264beca.png)
 
@@ -60,8 +61,6 @@
 
 此外，模型的良好训练先前知识有助于识别和忽略不切实际的信息。
 
-** **
-
 ## RAG提示强度和模型先验知识之间的博弈
 
 另外遵守参考信息的提示强度也产生了影响：更强烈的提示导致模型更有可能遵循参考信息。
@@ -90,6 +89,6 @@ RAG系统相对于传统搜索引擎具有独特的吸引力，它们可以结�
 
 参考资料：
 
-https://arxiv.org/pdf/2404.10198
+`https://arxiv.org/pdf/2404.10198`
 
-https://the-decoder.com/study-shows-tension-between-llm-prior-knowledge-and-reference-data/
+`https://the-decoder.com/study-shows-tension-between-llm-prior-knowledge-and-reference-data/`

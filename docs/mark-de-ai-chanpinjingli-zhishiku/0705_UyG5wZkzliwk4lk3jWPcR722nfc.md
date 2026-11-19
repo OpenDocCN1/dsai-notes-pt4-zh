@@ -1,133 +1,134 @@
+
 # Transformer架构：解锁自然语言处理的无限可能
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/W1oYdhDJEo5nY2x99YscpxcInMe](https://qqs7y1hozd1.feishu.cn/docx/W1oYdhDJEo5nY2x99YscpxcInMe)
 
-# Transformer各个模块的作用
+## Transformer各个模块的作用
 
 ![](img/622a208eee6b1030c56b70d12dfe74cf.png)
 
-## **（1）Encoder模块**
+### (1) Encoder模块
 
-+   **经典的Transformer架**构中的Encoder模块包含6个Encoder Block
+经典的Transformer架构中的Encoder模块包含6个Encoder Block
 
-+   **每个Encoder Bloc**k包含两个⼦模块, 分别是：多头⾃注意⼒层和前馈全连接层
+每个Encoder Block包含两个子模块，分别是：多头自注意力层和前馈全连接层
 
-+   多头⾃注意⼒层采⽤的是⼀种Scaled Dot-Product Attention的计算⽅式, 实验结果表 明, Multi-head可以在更细致的层⾯上提取不同head的特征, ⽐单⼀head提取特征的 效果更佳
+多头自注意力层采用的是一种`Scaled Dot-Product Attention`的计算方式，实验结果表明，`Multi-head`可以在更细致的层面上提取不同`head`的特征，比单一`head`提取特征的效果更佳
 
-+   前馈全连接层是由两个全连接层组成, 线性变换中间增添⼀个Relu激活函数, 具体的 维度采⽤4倍关系, 即多头⾃注意⼒的d_model=512, 则层内的变换维度d_ff=2048
+前馈全连接层是由两个全连接层组成，线性变换中间增添一个`Relu`激活函数，具体的维度采用4倍关系，即多头自注意力的`d_model=512`，则层内的变换维度`d_ff=2048`
 
 ![](img/c77a790d4fcfa4f0df13e28d6c5f7f25.png)
 
-## **（2）Decoder模块**
+### (2) Decoder模块
 
-+   **经典的Transformer架**构中的Decoder模块包含6个Decoder Block
+经典的Transformer架构中的Decoder模块包含6个`Decoder Block`
 
-+   **每个Decoder Block包含3个⼦模块**, 分别是多头⾃注意⼒层、Encoder-Decoder Attention 层、前馈全连接层
+每个`Decoder Block`包含3个子模块，分别是多头自注意力层、`Encoder-Decoder Attention`层、前馈全连接层
 
-+   多头⾃注意⼒层采⽤和Encoder模块⼀样的Scaled Dot-Product Attention的计算⽅ 式, 最⼤的区别在于需要添加look-ahead-mask, 即遮掩"未来的信息"
+多头自注意力层采用和Encoder模块一样的`Scaled Dot-Product Attention`的计算方式，最大的区别在于需要添加`look-ahead-mask`，即遮掩"未来的信息"
 
-+   Encoder-Decoder Attention层和上⼀层多头⾃注意⼒层最主要的区别在于Q != K = V, 矩阵Q来源于上⼀层Decoder Block的输出, 同时K, V来源于Encoder端的输出
+`Encoder-Decoder Attention`层和上一层多头自注意力层最主要的区别在于`Q != K = V`，矩阵`Q`来源于上一层`Decoder Block`的输出，同时`K`、`V`来源于`Encoder`端的输出
 
-+   前馈全连接层和Encoder中完全⼀样
+前馈全连接层和`Encoder`中完全一样
 
-## **（3）Add & Norm模块**
+### (3) Add & Norm模块
 
-+   Add & Norm模块接在每⼀个Encoder Block和Decoder Block中的每⼀个⼦层的后⾯
+`Add & Norm`模块接在每一个`Encoder Block`和`Decoder Block`中的每一个子层的后面
 
-+   **对于每⼀个Encoder Block, ⾥**⾯的两个⼦层后⾯都有Add & Norm
+对于每一个`Encoder Block`，里面的两个子层后面都有`Add & Norm`
 
-+   **对于每⼀个Decoder Block, ⾥**⾯的三个⼦层后⾯都有Add & Norm
+对于每一个`Decoder Block`，里面的三个子层后面都有`Add & Norm`
 
-+   Add表示残差连接, 作⽤是为了将信息⽆损耗的传递的更深, 来增强模型的拟合能⼒
+`Add`表示残差连接，作用是为了将信息无损耗的传递的更深，来增强模型的拟合能力
 
-+   Norm表示LayerNorm, 层级别的数值标准化操作, 作⽤是防⽌参数过⼤过⼩导致的学习过程异常 , 模型收敛特别慢的问题
+`Norm`表示`LayerNorm`，层级别的数值标准化操作，作用是防止参数过大过小导致的学习过程异常，模型收敛特别慢的问题
 
-## （4）位置编码器Positional Encoding
+### (4) 位置编码器`Positional Encoding`
 
-+   Transformer中采⽤三⻆函数来计算位置编码
+Transformer中采用三角函数来计算位置编码
 
-+   因为三⻆函数是周期性函数, 不受序列⻓度的限制, ⽽且这种计算⽅式可以对序列中不同位置的编码的重要程度同等看待
+因为三角函数是周期性函数，不受序列长度的限制，而且这种计算方式可以对序列中不同位置的编码的重要程度同等看待
 
-# Decoder端训练和预测的输入
+## Decoder端训练和预测的输入
 
-1.  在Transformer结构中的Decoder模块的输⼊, 区分于不同的Block, 最底层的Block输⼊有其特殊的地⽅。第⼆层到第六层的输⼊⼀致, 都是上⼀层的输出和Encoder的输出
+在Transformer结构中的Decoder模块的输入，区分于不同的Block，最底层的Block输入有其特殊的地方。第二层到第六层的输入一致，都是上一层的输出和Encoder的输出
 
-1.  最底层的Block在**训练阶段**, 每⼀个time step的输⼊是上⼀个time step的输⼊加上真实标 签序列向后移⼀位. 具体来看, 就是每⼀个time step的输⼊序列会越来越⻓, 不断的将之前的 输⼊融合进来
+最底层的Block在**训练阶段**，每一个`time step`的输入是上一个`time step`的输入加上真实标签序列向后移一位。具体来看，就是每一个`time step`的输入序列会越来越长，不断的将之前的输入融合进来
 
 ```
-假设现在的真实标签序列等于&quot;How are you?&quot;, 
-当time step=1时, 输⼊张量为⼀个特殊的token, ⽐如&quot;SOS&quot;; 
-当time step=2时, 输⼊张量为&quot;SOS How&quot;; 
-当time step=3时, 输⼊张量为&quot;SOS How are&quot;;
+假设现在的真实标签序列等于"How are you?", 
+当`time step=1`时, 输入张量为一个特殊的token, 比如"SOS"; 
+当`time step=2`时, 输入张量为"SOS How"; 
+当`time step=3`时, 输入张量为"SOS How are";
 以此类推...
 ```
 
-1.  最底层的Block在**训练阶段****, 真实的代**码实现中, 采⽤的是MASK机制来模拟输⼊序列不断添 加的过程
+最底层的Block在**训练阶段**, 真实的代码实现中, 采用的是`MASK`机制来模拟输入序列不断添加的过程
 
-1.  最底层的Block在**预测阶段**, 每⼀个time step的输⼊是从time step=0开始, ⼀直到上⼀个 time step的预测值的累积拼接张量. 具体来看, 也是随着每⼀个time step的输⼊序列会越来越长. 相⽐于训练阶段最⼤的不同是这⾥不断拼接进来的token是每⼀个time step的预测值, ⽽不是训练阶段每⼀个time step取得的groud truth值
+最底层的Block在**预测阶段**, 每一个`time step`的输入是从`time step=0`开始, 一直到上一个`time step`的预测值的累积拼接张量。具体来看, 也是随着每一个`time step`的输入序列会越来越长。相较于训练阶段最大的不同是这里不断拼接进来的`token`是每一个`time step`的预测值, 而不是训练阶段每一个`time step`取得的`groud truth`值
 
 ```
-当time step=1时, 输⼊的input_tensor=&quot;SOS&quot;, 预测出来的输出值是output_tensor=&quot;What&quot;;
-当time step=2时, 输⼊的input_tensor=&quot;SOS What&quot;, 预测出来的输出值是output_tensor=&quot;is&quot;;
-当time step=3时, 输⼊的input_tensor=&quot;SOS What is&quot;, 预测出来的输出值是output_tensor=&quot;the&quot;;
-当time step=4时, 输⼊的input_tensor=&quot;SOS What is the&quot;, 预测出来的输出值是output_tensor=&quot;matter&quot;;
-当time step=5时, 输⼊的input_tensor=&quot;SOS What is the matter&quot;, 预测出来的输出值是output_tensor=&quot;?&quot;;
-当time step=6时, 输⼊的input_tensor=&quot;SOS What is the matter ?&quot;, 预测出来的输出值是output_tensor=&quot;EOS&quot;, 代表句⼦的结束符, 说明解码结束, 预测结束.
+当`time step=1`时, 输入的`input_tensor="SOS"`, 预测出来的输出值是`output_tensor="What"`;
+当`time step=2`时, 输入的`input_tensor="SOS What"`, 预测出来的输出值是`output_tensor="is"`;
+当`time step=3`时, 输入的`input_tensor="SOS What is"`, 预测出来的输出值是`output_tensor="the"`;
+当`time step=4`时, 输入的`input_tensor="SOS What is the"`, 预测出来的输出值是`output_tensor="matter"`;
+当`time step=5`时, 输入的`input_tensor="SOS What is the matter"`, 预测出来的输出值是`output_tensor="?"`;
+当`time step=6`时, 输入的`input_tensor="SOS What is the matter ?"`, 预测出来的输出值是`output_tensor="EOS"`, 代表句子的结束符, 说明解码结束, 预测结束.
 ```
 
-# **Self-attention**
+## Self-attention
 
-> Transformer中⼀直强调的self-attention是什么?
+Transformer中一直强调的`self-attention`是什么?
 
-> ** 为什么能发挥如此⼤的作⽤? **
+为什么能发挥如此大的作用?
 
-> **计**算的时候如果不使⽤三元组(Q, K, V), ⽽ 仅仅使⽤(Q, V)或者(K, V)或者(V)⾏不⾏?
+计算的时候如果不使用三元组`(Q, K, V)`, 而仅仅使用`(Q, V)`或者`(K, V)`或者`(V)`行不行?
 
-## （1）self-attention的机制和原理
+### (1) self-attention的机制和原理
 
-+   self-attention是⼀种通过⾃身和⾃身进⾏关联的attention机制, 从⽽得到更好的 representation来表达⾃身
+`self-attention`是一种通过自身和自身进行关联的`attention`机制，从而得到更好的`representation`来表达自身
 
-+   s**e**lf-attention是attention机制的⼀种特殊情况: 在self-attention中, Q=K=V, 序列中的每个单词(token)都和该序列中的其他所有单词 (token)进⾏attention规则的计算
+`self-attention`是`attention`机制的一种特殊情况：在`self-attention`中，`Q=K=V`，序列中的每个单词(`token`)都和该序列中的其他所有单词(`token`)进行`attention`规则的计算
 
-+   **attention机制计算的特点在于, 可**以直接跨越⼀句话中不同距离的token, 可以远距离的学习到序列的知识依赖和语序结构
+`attention`机制计算的特点在于，可以直接跨越一句话中不同距离的`token`，可以远距离的学习到序列的知识依赖和语序结构
 
 ![](img/1a95c3fe06c2fa327aedb323eb33cf61.png)
 
-+   从上图中可以看到, self-attention可以远距离的捕捉到语义层⾯的特征(it的指代对象是 animal)
+从上图中可以看到，`self-attention`可以远距离的捕捉到语义层面的特征(`it`的指代对象是`animal`)
 
-+   应**⽤传统的RNN, LSTM, 在获取⻓距离语义特**征和结构特征的时候, 需要按照序列顺序依次 计算, 距离越远的联系信息的损耗越⼤, 有效提取和捕获的可能性越⼩
+应用传统的`RNN`, `LSTM`, 在获取长距离语义特征和结构特征的时候，需要按照序列顺序依次计算，距离越远的联系信息的损耗越大，有效提取和捕获的可能性越小
 
-+   但是应⽤self-attention时, 计算过程中会直接将句⼦中任意两个token的联系通过⼀个计算 步骤直接联系起来
+但是应用`self-attention`时，计算过程中会直接将句子中任意两个`token`的联系通过一个计算步骤直接联系起来
 
-## **（2）关于self-attention为什么要使**⽤(Q, K, V)三元组⽽不是其他形式
+### (2) 关于self-attention为什么要使用(Q, K, V)三元组而不是其他形式
 
-⾸先⼀条就是从分析的⻆度看, 查询Query是⼀条独⽴的序列信息, 通过关键词Key的提示作⽤, 得到最终语义的真实值Value表达, 数学意义更充分, 完备
+首先一条就是从分析的角度看，查询`Query`是一条独立的序列信息，通过关键词`Key`的提示作用，得到最终语义的真实值`Value`表达，数学意义更充分，完备
 
-这⾥不使用(K, V)或者(V)没有什么必须的理由, 也没有相关的论⽂来严格阐述⽐较试验的结果差异, 所以可以作为开放性问题未来去探索, 只要明确在经典self-attention实现中⽤的是三元组就好
+这里不使用`(K, V)`或者`(V)`没有什么必须的理由，也没有相关的论文来严格阐述比较试验的结果差异，所以可以作为开放性问题未来去探索，只要明确在经典`self-attention`实现中用的是三元组就好
 
-# Self-attention归一化和放缩
+## Self-attention归一化和放缩
 
-## （1）self-attention中的归⼀化概述
+### (1) self-attention中的归一化概述
 
-+   **训练上的意义**
+#### 训练上的意义
 
-随着词嵌⼊维度 的增⼤,  点积后的结果也会增⼤, 在训练时会将 softmax函数推入梯度⾮常⼩的区域, 可能出现梯度消失的现象, 造成模型收敛困难
+随着词嵌入维度的增大，点积后的结果也会增大，在训练时会将`softmax`函数推入梯度非常小的区域，可能出现梯度消失的现象，造成模型收敛困难
 
-+   **数学上的意义**
+#### 数学上的意义
 
-假设q和**k的统计变量是满⾜标准正态****分布的**独⽴随机变量, 意味着q和k满⾜均 值为0, ⽅差为1。 那么q和k的点积结果就是均值为0, ⽅差为d_k, 为了抵消这种⽅差被放⼤d_k倍的影响, 在计算中主动将点积缩放 , 这样点积后的结果依然满⾜均值为0, ⽅差为 1
+假设`q`和`k`的统计变量是满足标准正态分布的独立随机变量，意味着`q`和`k`满足均值为0，方差为1。那么`q`和`k`的点积结果就是均值为0，方差为`d_k`，为了抵消这种方差被放大`d_k`倍的影响，在计算中主动将点积缩放，这样点积后的结果依然满足均值为0，方差为1
 
-## **（2）softmax的梯度变化**
+### (2) `softmax`的梯度变化
 
-### 第⼀步: softmax函数的输⼊分布是如何影响输出的
+#### 第一步：`softmax`函数的输入分布是如何影响输出的
 
-对于⼀个输⼊向量x, softmax函数将其做了⼀个归⼀化的映射, ⾸**先通过⾃然底数e将输⼊元素之间的差距先"拉⼤", 然后再归⼀化为⼀个**新的分布。 在这个过程中假设某个输⼊x 中最⼤的元素下标是k, 如果输⼊的数量级变⼤(就是x中的每个分量绝对值都很⼤), 那么在数学上会造成y_k的值⾮常接近1
+对于一个输入向量`x`，`softmax`函数将其做了一个归一化的映射，首先通过自然底数`e`将输入元素之间的差距先"拉大", 然后再归一化为一个新的分布。在这个过程中假设某个输入`x`中最大的元素下标是`k`, 如果输入的数量级变大(就是`x`中的每个分量绝对值都很大), 那么在数学上会造成`y_k`的值非常接近1
 
-具体⽤⼀个例⼦来演示, 假设输⼊的向量 , 那么随便给⼏个不同数量级的值来看看对y3产⽣的影响
+具体用一个例子来演示, 假设输入的向量, 那么随便给几个不同数量级的值来看看对`y3`产生的影响
 
 ![](img/4b3f90244ced3a8e296b8f17bc30e013.png)
 
-从上图可以很清楚的看到输⼊元素的数量级对softmax最终的分布影响⾮常之⼤
+从上图可以很清楚的看到输入元素的数量级对`softmax`最终的分布影响非常之大
 
 ```
 a = 1时,   y3 = 0.5761168847658291
@@ -135,7 +136,7 @@ a = 10时,  y3 = 0.9999092083843412
 a = 100时, y3 = 1.0
 ```
 
-**采⽤⼀段实例代码将a在不同取值下, 对**应的y3全部画出来, 以曲线的形式展示:
+采用一段实例代码将`a`在不同取值下, 对应的`y3`全部画出来, 以曲线的形式展示:
 
 ```
 from math import exp
@@ -148,19 +149,19 @@ plt.plot(x, y_3)
 plt.show()
 ```
 
-**结论**： **在输⼊元素的数量级较⼤时, softmax函数⼏乎将全部的**概率分布都分配给了最⼤值分量所对应的标签
+结论：在输入元素的数量级较大时, `softmax`函数几乎将全部的概率分布都分配给了最大值分量所对应的标签
 
-### 第⼆步: softmax函数在反向传播的过程中是如何梯度求导的
+#### 第二步：`softmax`函数在反向传播的过程中是如何梯度求导的
 
 首先，定义神经网络的输入和输出
 
 ![](img/896678362286887330a10670b5e734ea.png)
 
-反向传播就是输出端的损失函数对输⼊端求偏导的过程, 这⾥要分两种情况：
+反向传播就是输出端的损失函数对输入端求偏导的过程，这里要分两种情况：
 
-+   **当****i=j****时：**
+- 当`i=j`时：
 
-+   **当**** i ≠ j****时：**
+- 当`i ≠ j`时：
 
 经过对两种情况分别的求导计算, 可以得出最终的结论如下:
 
@@ -168,15 +169,15 @@ plt.show()
 
 所以：
 
-### 第三步: softmax函数出现梯度消失现象的原因
+#### 第三步：`softmax`函数出现梯度消失现象的原因
 
-根据第二步中softmax函数的求导结果, 可以将最终的结果以矩阵形式展开如下:
+根据第二步中`softmax`函数的求导结果, 可以将最终的结果以矩阵形式展开如下:
 
-根据第一步中的讨论结果, 当输入x的分量值较大时, softmax函数会将大部分概率分配给最大的元素, 假设最大元素是x1, 那么softmax的输出分布将产生一个接近one-hot的结果张量y_ = [1, 0, 0,..., 0], 此时结果矩阵变为:
+根据第一步中的讨论结果, 当输入`x`的分量值较大时, `softmax`函数会将大部分概率分配给最大的元素, 假设最大元素是`x1`, 那么`softmax`的输出分布将产生一个接近`one-hot`的结果张量`y_ = [1, 0, 0,..., 0]`, 此时结果矩阵变为:
 
-**结论：综上可以得出,所有的梯度都消失为0(接近于**0), 参数几乎无法更新, 模型收敛困难
+结论：综上可以得出, 所有的梯度都消失为0(接近于0), 参数几乎无法更新, 模型收敛困难
 
-## （**3）维度与点积大小的关系**
+### (3) 维度与点积大小的关系
 
 针对为什么维度会影响点积的大小, 原始论文中有这样的一点解释如下:
 
@@ -184,108 +185,112 @@ plt.show()
 To illustrate why the dot products get large, assume that the components of q and k are independent random variables with mean 0 and variance 1. Then their doct product,q*k = (q1k1+q2k2+......+q(d_k)k(d_k)), has mean 0 and variance d_k.
 ```
 
-分两步对其进行一个推导, 首先就是假设向量q和k的各个分量是相互独立的随机变量,  , , 和 各自有 个分量, 也就是向量的维度等于 , 有 , 以及
+分两步对其进行一个推导, 首先就是假设向量`q`和`k`的各个分量是相互独立的随机变量, , , 和 各自有 个分量, 也就是向量的维度等于 , 有 , 以及
 
-可以得到：E(XY) = E(X)E(Y) = 0 * 0 = 0
+可以得到：`E(XY) = E(X)E(Y) = 0 * 0 = 0`
 
 同理, 对于 推导如下:
 
 根据期望和方差的性质, 对于互相独立的变量满足下式：
 
-根据上面的公式, 可以很轻松的得出** 的均值为 , 。所以方差越大, 对应的**qk的点积就越大, 这样softmax的输出分布就会更偏向最大值所在的分量。一个技巧就是将点积除以 将方差在数学上重新"拉回1", 如下所示
+根据上面的公式, 可以很轻松的得出 的均值为 , 。所以方差越大, 对应的`qk`的点积就越大, 这样`softmax`的输出分布就会更偏向最大值所在的分量。一个技巧就是将点积除以 将方差在数学上重新"拉回1", 如下所示
 
-最终的结论：**通过数学上的技巧将方差控制在1, 也就有效的控制了点积结果的**发散, 也就控制了对应的梯度消失的问题!
+最终的结论：通过数学上的技巧将方差控制在1, 也就有效的控制了点积结果的发散, 也就控制了对应的梯度消失的问题!
 
-# Multi-head Attention
+## Multi-head Attention
 
-## （1）采⽤Multi-head Attention的原因
+### (1) 采用Multi-head Attention的原因
 
-1.  原始论⽂中提到进⾏Multi-head Attention的原因是将模型分为多个头, 可以形成多个子空间间, 让模型去关注不同方面的信息, 最后再将各个⽅⾯的信息综合起来得到更好的效果
+原始论文中提到进行`Multi-head Attention`的原因是将模型分为多个头，可以形成多个子空间间，让模型去关注不同方面的信息，最后再将各个方面的信息综合起来得到更好的效果
 
-1.  多个头进⾏attention计算最后再综合起来, 类似于CNN中采⽤多个卷积核的作⽤, 不同的卷 积核提取不同的特征, 关注不同的部分, 最后再进行融合
+多个头进行`attention`计算最后再综合起来，类似于`CNN`中采用多个卷积核的作用，不同的卷积核提取不同的特征，关注不同的部分，最后再进行融合
 
-1.  直观上讲, 多头注意力有助于神经网络捕捉到更丰富的特征信息
+直观上讲，多头注意力有助于神经网络捕捉到更丰富的特征信息
 
-## （2）Multi-head Attention的计算⽅式
+### (2) Multi-head Attention的计算方式
 
-1.  Multi-head Attention和单⼀head的Attention唯⼀的区别就在于,其对特征张量的最后⼀个维度进行了分割, ⼀般是对词嵌入的embedding_dim=512进⾏切割成head=8, 这样每⼀个head的嵌⼊维度就是512/8=64, 后续的Attention计算公式完全⼀致, 只不过是在64这个维度上进⾏⼀系列的矩阵运算⽽已
+`Multi-head Attention`和单一`head`的`Attention`唯一的区别就在于,其对特征张量的最后一个维度进行了分割，一般是对词嵌入的`embedding_dim=512`进行切割成`head=8`, 这样每一个`head`的嵌入维度就是`512/8=64`, 后续的`Attention`计算公式完全一致, 只不过是在`64`这个维度上进行一系列的矩阵运算而已
 
-1.  **在head=**8个头上分别进⾏注意⼒规则的运算后, 简单采用拼接concat的⽅式对结果张量进 ⾏融合就得到了Multi-head Attention的计算结果
+在`head=8`个头上分别进行注意力规则的运算后, 简单采用拼接`concat`的方式对结果张量进行融合就得到了`Multi-head Attention`的计算结果
 
-# **Transformer和RNN**
+## Transformer和RNN
 
-## （1）Transformer的并行计算
+### (1) Transformer的并行计算
 
-对于Transformer⽐传统序列模型RNN/LSTM具备优势的第⼀⼤原因就是强⼤的并⾏计算能力
+对于Transformer比传统序列模型`RNN/LSTM`具备优势的第一大原因就是强大的并行计算能力
 
-对于RNN来说, 任意时刻t的输⼊是时刻t的输⼊x(t)和上⼀时刻的隐藏层输出h(t-1), 经过运算后得到当前时刻隐藏层的输出h(t), **这个h(t)也即将作为下⼀时刻t+1的输⼊的⼀部分. 这个计算过程是RNN的本质特**征, RNN的历史信息是需要通过这个时间步⼀步⼀步向后传递的. 而这就意味着RNN序列后⾯的信息只能等到前⾯的计算结束后, 将历史信息通过hidden state传递给后⾯才能开始计算, 形成链式的序列依赖关系, 无法实现并行
+对于`RNN`来说, 任意时刻`t`的输入是时刻`t`的输入`x(t)`和上一时刻的隐藏层输出`h(t-1)`, 经过运算后得到当前时刻隐藏层的输出`h(t)`, 这个`h(t)`也即将作为下一时刻`t+1`的输入的一部分. 这个计算过程是`RNN`的本质特征, `RNN`的历史信息是需要通过这个时间步一步一步向后传递的. 而这就意味着`RNN`序列后面的信息只能等到前面的计算结束后, 将历史信息通过`hidden state`传递给后面才能开始计算, 形成链式的序列依赖关系, 无法实现并行
 
-对于Transformer结构来说, 在self-attention层, ⽆论序列的⻓度是多少, 都可以⼀次性计算所有单词之间的注意⼒关系, 这个attention的计算是同步的, 可以实现并⾏
+对于`Transformer`结构来说, 在`self-attention`层, 无论序列的长度是多少, 都可以一次性计算所有单词之间的注意力关系, 这个`attention`的计算是同步的, 可以实现并行
 
-## （2）Transformer的特征抽取能力
+### (2) Transformer的特征抽取能力
 
-对于Transformer⽐传统序列模型**RNN/LSTM具**备优势的第⼆⼤原因就是强⼤的特征抽取能力
+对于Transformer比传统序列模型`RNN/LSTM`具备优势的第二大原因就是强大的特征抽取能力
 
-Transformer因为采⽤了Multi-head Attention结构和计算机制, 拥有⽐RNN/LSTM更强⼤的特征抽取能⼒, 这⾥并不仅仅由理论分析得来, 而是⼤量的试验数据和对⽐结果, 清楚的展示了Transformer的特征抽取能⼒远远胜于RNN/LSTM
+`Transformer`因为采用了`Multi-head Attention`结构和计算机制, 拥有比`RNN/LSTM`更强大的特征抽取能力, 这里并不仅仅由理论分析得来, 而是大量的试验数据和对比结果, 清楚的展示了`Transformer`的特征抽取能力远远胜于`RNN/LSTM`
 
-**注意**: **不是越先进的模型就越无敌, 在很多具体的应⽤中RNN/LST**M依然⼤有⽤武之地, 要具体问题具体分析
+注意：不是越先进的模型就越无敌, 在很多具体的应用中`RNN/LSTM`依然大有用武之地, 要具体问题具体分析
 
-# Transformer代替seq2seq？
+## Transformer代替seq2seq？
 
-## **（1）seq2seq的两大缺陷**
+### (1) seq2seq的两大缺陷
 
-1.  **seq2seq架构的第⼀⼤缺陷是将Encoder端的所有信息**压缩成⼀个固定⻓度的语义向量中, ⽤这个固定的向量来代表编码器端的全部信息. 这样既会造成信息的损耗, 也⽆法让Decoder 端在解码的时候去⽤注意⼒聚焦哪些是更重要的信息.
+`seq2seq`架构的第一大缺陷是将`Encoder`端的所有信息压缩成一个固定长度的语义向量中, 用这个固定的向量来代表编码器端的全部信息. 这样既会造成信息的损耗, 也无法让`Decoder`端在解码的时候去用注意力聚焦哪些是更重要的信息.
 
-1.  **seq2**seq架构的第二大缺陷是无法并行, 本质上和RNN/LSTM无法并行的原因⼀样.
+`seq2seq`架构的第二大缺陷是无法并行, 本质上和`RNN/LSTM`无法并行的原因一样.
 
-## （2）Transformer的改进
+### (2) Transformer的改进
 
-Transformer架构同时解决了seq2seq的两⼤缺陷, 既可以并⾏计算, ⼜应⽤Multi-head Attention机制来解决Encoder固定编码的问题, 让Decoder在解码的每⼀步可以通过注意⼒去 关注编码器输出中最重要的那些部分.
+`Transformer`架构同时解决了`seq2seq`的两大缺陷, 既可以并行计算, 又应用`Multi-head Attention`机制来解决`Encoder`固定编码的问题, 让`Decoder`在解码的每一步可以通过注意力去关注编码器输出中最重要的那些部分.
 
-# **Transformer并行化**
+## Transformer并行化
 
-## **1）Encoder并行化**
+### 1) Encoder并行化
 
-1.  上图最底层绿⾊的部分, 整个序列所有的token可以并⾏的进⾏Embedding操作, 这⼀层的处理是没有依赖关系的
+上图最底层绿色的部分, 整个序列所有的`token`可以并行的进行`Embedding`操作, 这一层的处理是没有依赖关系的
 
-1.  上图第⼆层⼟⻩⾊的部分, 也就是Transformer中最重要的self-attention部分, 这⾥对于任意⼀个单词⽐如x1, 要计算x1对于其他所有token的注意⼒分布, 得到z1. 这个过程是具有依赖性的, 必须等到序列中所有的单词完成Embedding才可以进⾏。因此这⼀步是不能并⾏处理的。 但是从另⼀个⻆度看, 我们真实计算注意⼒分布的时候, 采⽤的都是矩阵运算, 也就是可以⼀次性的计算出所有token的注意⼒张量, 从这个⻆度看也算是实现了并行, 只是矩阵运算的"并行"和词嵌⼊的"并行"概念上不同⽽已
+上图第二层土黄色的部分, 也就是`Transformer`中最重要的`self-attention`部分, 这里对于任意一个单词比如`x1`, 要计算`x1`对于其他所有`token`的注意力分布, 得到`z1`. 这个过程是具有依赖性的, 必须等到序列中所有的单词完成`Embedding`才可以进行。因此这一步是不能并行处理的。 但是从另一个角度看, 我们真实计算注意力分布的时候, 采用的都是矩阵运算, 也就是可以一次性的计算出所有`token`的注意力张量, 从这个角度看也算是实现了并行, 只是矩阵运算的"并行"和词嵌入的"并行"概念上不同而已
 
 ![](img/6e19bcd146d2c56e0b2b62db7d05ff96.png)
 
-1.  上图第三层蓝⾊的部分, 也就是前馈全连接层, 对于不同的向量z之间也是没有依赖关系的, 所以这⼀层是可以实现并行化处理的，也就是所有的向量z输⼊Feed Forward⽹络的计算可以同步进⾏, 互不⼲扰
 
-## **（2）Decoder的并行化**
 
-1.  Decoder模块在训练阶段采用了并行化处理。 其中Self-Attention和Encoder-Decoder Attention两个子层的并行化也是在进行矩阵乘法, 和Encoder的理解是一致的. 在进行Embedding和Feed Forward的处理时, 因为各个token之间没有依赖关系, 所以也是可以完全并行化处理的, 这里和Encoder的理解也是一致的
+## （1）Encoder的并行化
 
-1.  Decoder模块在预测阶段基本上不认为采用了并行化处理. 因为第一个time step的输入只是一个"SOS", 后续每一个time step的输入也只是依次添加之前所有的预测token
+1. 上图第三层蓝色的部分，也就是前馈全连接层，对于不同的向量`z`之间也是没有依赖关系的，所以这一层是可以实现并行化处理的，也就是所有的向量`z`输入`Feed Forward`网络的计算可以同步进行，互不干扰
 
-1.  **注意:** 最重要的区别是训练阶段目标文本如果有20个token, 在训练过程中是一次性的输入给Decoder端, 可以做到一些子层的并行化处理. 但是在预测阶段, 如果预测的结果语句总共有20个token, 则需要重复处理20次循环的过程, 每次的输入添加进去一个token, 每次的输入序列比上一次多一个token, 所以不认为是并行处理
+## （2）Decoder的并行化
+
+1. `Decoder`模块在训练阶段采用了并行化处理。其中`Self-Attention`和`Encoder-Decoder Attention`两个子层的并行化也是在进行矩阵乘法，和`Encoder`的理解是一致的。在进行`Embedding`和`Feed Forward`的处理时，因为各个token之间没有依赖关系，所以也是可以完全并行化处理的，这里和`Encoder`的理解也是一致的
+
+1. `Decoder`模块在预测阶段基本上不认为采用了并行化处理。因为第一个time step的输入只是一个SOS，后续每一个time step的输入也只是依次添加之前所有的预测token
+
+1. 注意：最重要的区别是训练阶段目标文本如果有20个token，在训练过程中是一次性的输入给`Decoder`端，可以做到一些子层的并行化处理。但是在预测阶段，如果预测的结果语句总共有20个token，则需要重复处理20次循环的过程，每次的输入添加进去一个token，每次的输入序列比上一次多一个token，所以不认为是并行处理
 
 ![](img/d57d087c11cfc77e788511dcc04206c4.png)
 
-## （**3）总结**
+## （3）总结
 
-> Transformer架构中Encoder模块的并行化机制
+> Transformer架构中`Encoder`模块的并行化机制
 
-+   Encoder模块在训练阶段和测试阶段都可以实现完全相同的并行化
++ `Encoder`模块在训练阶段和测试阶段都可以实现完全相同的并行化
 
-+   Encoder模块在Embedding层, Feed Forward层, Add & Norm层都是可以并行化的
++ `Encoder`模块在`Embedding`层，`Feed Forward`层，`Add & Norm`层都是可以并行化的
 
-+   Encoder模块在self-attention层, 因为各个token之间存在依赖关系, 无法独立计算, 不是真正意义上的并行化
++ `Encoder`模块在`self-attention`层，因为各个token之间存在依赖关系，无法独立计算，不是真正意义上的并行化
 
-+   Encoder模块在self-attention层, 因为采用了矩阵运算的实现方式, 可以一次性的完成所有注意力张量的计算, 也是另一种"并行化"的体现
++ `Encoder`模块在`self-attention`层，因为采用了矩阵运算的实现方式，可以一次性的完成所有注意力张量的计算，也是另一种"并行化"的体现
 
 > -
 
-> Transformer架构中Decoder模块的并行化机制
+> Transformer架构中`Decoder`模块的并行化机制
 
-+   Decoder模块在训练阶段可以实现并行化
++ `Decoder`模块在训练阶段可以实现并行化
 
-+   Decoder模块在训练阶段的Embedding层, Feed Forward层, Add & Norm层都是可以并行化的
++ `Decoder`模块在训练阶段的`Embedding`层，`Feed Forward`层，`Add & Norm`层都是可以并行化的
 
-+   Decoder模块在self-attention层, 以及Encoder-Decoder Attention层, 因为各个token之间存在依赖关系, 无法独立计算, 不是真正意义上的并行化
++ `Decoder`模块在`self-attention`层，以及`Encoder-Decoder Attention`层，因为各个token之间存在依赖关系，无法独立计算，不是真正意义上的并行化
 
-+   Decoder模块在self-attention层, 以及Encoder-Decoder Attention层, 因为采用了矩阵运算的实现方式, 可以一次性的完成所有注意力张量的计算, 也是另一种"并行化"的体现
++ `Decoder`模块在`self-attention`层，以及`Encoder-Decoder Attention`层，因为采用了矩阵运算的实现方式，可以一次性的完成所有注意力张量的计算，也是另一种"并行化"的体现
 
-+   Decoder模块在预测计算不能并行化处理
++ `Decoder`模块在预测计算不能并行化处理

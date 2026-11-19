@@ -1,6 +1,7 @@
+
 # MiniMax M2.5的自我迭代能力：108天迭代3次，内部80%代码AI写的
 
-> 来源：[https://my.feishu.cn/docx/SrWsdwUl8oXumaxvKoacDELFnfg](https://my.feishu.cn/docx/SrWsdwUl8oXumaxvKoacDELFnfg)
+> 来源：`https://my.feishu.cn/docx/SrWsdwUl8oXumaxvKoacDELFnfg`
 
 今天（2月13日）早上MiniMax发布M2.5，老金我看完官方公告直接傻了。
 
@@ -14,33 +15,30 @@ MiniMax内部编程场景，80%的新代码是M2.5写的。
 
 **老金我也实打实的用**了一天，感觉是评价就是 很顺畅！很便宜！
 
-**它有个充****值邀请，使用我分**享的可以 9折购 ，先看完老金我的介绍，有兴趣的 文末老金放了链接。
+**它有个充值邀请，使用我分享的可以 9折购**，先看完老金我的介绍，有兴趣的 文末老金放了链接。
 
 ![](img/2df4fbb1d11982b9699cb317f82cacd0.png)
 
 主页还有专家模式，能干很多事儿。
 
-地址：https://agent.minimaxi.com/
+地址：`https://agent.minimaxi.com/`
 
 ![](img/30384da8b8d7cf0e9647c536eb8e6617.png)
 
 言归正传，看看他们这次做了什么。
 
-## 第一个震撼：Forge RL框架自我学习
+## 第一个震撼：`Forge RL框架`自我学习
 
 M2.5为什么能在108天内迭代3次？
 
-官方给出的答案是：**Forge RL框架**。
+官方给出的答案是：`Forge RL框架`。
 
 这是MiniMax自研的Agent强化学习框架，核心特点：
 
-**数十万真实环境训练** - 不是模拟环境，是真实业务场景
-
-**40倍训练加速** - 通过树状合并训练样本实现
-
-**任意Agent接入** - 支持任意脚手架和工具
-
-**过程奖励机制** - 全链路监控完成质量
+- 数十万真实环境训练 - 不是模拟环境，是真实业务场景
+- 40倍训练加速 - 通过树状合并训练样本实现
+- 任意Agent接入 - 支持任意脚手架和工具
+- 过程奖励机制 - 全链路监控完成质量
 
 老金我解释一下什么叫"数十万真实环境训练"。
 
@@ -54,7 +52,7 @@ MiniMax训练：在MiniMax内部真实项目上训练 → 在客户真实业务�
 
 传统强化学习训练一个模型，可能要几个月。
 
-MiniMax用Forge框架，几天就能训练完。
+MiniMax用`Forge`框架，几天就能训练完。
 
 速度快40倍，成本降到1/40。
 
@@ -64,23 +62,18 @@ MiniMax用Forge框架，几天就能训练完。
 
 老金我做了个时间线：
 
-2025年10月27日：M2发布，SWE-Bench Verified 74%
-
-2026年1月：M2.1发布，SWE-Bench Verified 76%
-
-2026年2月12日：M2.5发布，SWE-Bench Verified 80.2%
+- 2025年10月27日：M2发布，SWE-Bench Verified 74%
+- 2026年1月：M2.1发布，SWE-Bench Verified 76%
+- 2026年2月12日：M2.5发布，SWE-Bench Verified 80.2%
 
 108天，三次迭代，提升6.2个百分点。
 
 老金我再看看其他公司：
 
-Claude Opus 4.5：2025年10月发布，80.8%
-
-Claude Opus 4.6：2026年2月发布，80.8%（4个月没进步）
-
-GPT-5.1：2026年1月发布，78%
-
-Gemini 3 Pro：2025年12月发布，76%
+- Claude Opus 4.5：2025年10月发布，80.8%
+- Claude Opus 4.6：2026年2月发布，80.8%（4个月没进步）
+- GPT-5.1：2026年1月发布，78%
+- Gemini 3 Pro：2025年12月发布，76%
 
 看到没？
 
@@ -96,15 +89,15 @@ MiniMax从74%到80.2%，只用了108天。
 
 什么是专家？
 
-专家 = Office Skills + 行业经验。
+专家 = `Office Skills` + 行业经验。
 
 举个例子：
 
-行业研究专家：Word Skills + 研究框架SOP = 自动生成研报
+行业研究专家：`Word Skills` + 研究框架SOP = 自动生成研报
 
-金融建模专家：Excel Skills + 机构建模规范 = 自动生成财务模型
+金融建模专家：`Excel Skills` + 机构建模规范 = 自动生成财务模型
 
-代码审查专家：编程能力 + Code Review规范 = 自动审查代码
+代码审查专家：编程能力 + `Code Review`规范 = 自动审查代码
 
 **1万+专家，24小时内创建。**
 
@@ -138,17 +131,17 @@ MiniMax官方公告写得很清楚：
 
 不是实验室数据，不是benchmark，是真实生产环境。
 
-## 第四个震撼：原生Spec能力+Office Skills
+## 第四个震撼：原生`Spec`能力+`Office Skills`
 
 M2.5最牛的地方不是写代码快，而是会思考。
 
-官方说法是：模型演化出了原生Spec行为。
+官方说法是：模型演化出了原生`Spec`行为。
 
 什么意思？
 
 传统AI写代码：你给需求 → AI直接写代码 → 你发现不对 → 改需求 → AI重新写
 
-M2.5写代码：你给需求 → **M2.5先做架构设计**（拆解功能、结构、UI设计）→ 你确认架构 → M2.5再写代码
+M2.5写代码：你给需求 → `M2.5`先做架构设计（拆解功能、结构、UI设计）→ 你确认架构 → `M2.5`再写代码
 
 **这就是架构师的工作方式。**
 
@@ -162,7 +155,7 @@ M2.5写代码：你给需求 → **M2.5先做架构设计**（拆解功能、结
 
 更牛的是，M2.5不只是编程强，办公场景也强。
 
-官方说法是：**Word、PPT、Excel金融建**模等办公高阶场景中取得了显著的能力提升。
+官方说法是：`Word`、`PPT`、`Excel`金融建模等办公高阶场景中取得了显著的能力提升。
 
 老金我看了官方给的案例：
 
@@ -206,13 +199,13 @@ Claude Opus 4.6：输入$5.00/M，输出$25.00/M
 
 最牛的地方是：
 
-Forge RL框架自我学习 - 数十万真实环境训练
+`Forge RL框架`自我学习 - 数十万真实环境训练
 
 108天三次迭代 - 行业最快成长速度
 
 内部80%新代码AI写的 - 真实生产力革命
 
-原生Spec能力+Office Skills - 像架构师一样思考
+原生`Spec`能力+`Office Skills` - 像架构师一样思考
 
 这四个才是M2.5的核心竞争力。
 
@@ -232,9 +225,9 @@ MiniMax M2.5适合谁？
 
 MiniMax M2.5现在有三个入口：
 
-**MiniMax Agent**（推荐）：agent.minimaxi.com
+**MiniMax Agent**（推荐）：`agent.minimaxi.com`
 
-可以直接用Office Skills，创建专家。免费额度够你测试了。
+可以直接用`Office Skills`，创建专家。免费额度够你测试了。
 
 老金我直接充了一波，然后大家拿我这个充可以有9折优惠！
 
@@ -242,7 +235,7 @@ MiniMax M2.5现在有三个入口：
 
 好友立享 9折 专属优惠 + Builder 权益，你赢返利 + 社区特权！
 
-👉 立即参与：https://platform.minimaxi.com/subscribe/coding-plan?code=3nUJXdOpHs&source=link
+👉 立即参与：`https://platform.minimaxi.com/subscribe/coding-plan?code=3nUJXdOpHs&source=link`
 
 老金我建议：先用MiniMax Agent测试，确认效果后再上API或订阅。
 
@@ -256,13 +249,13 @@ MiniMax M2.5这次发布，老金我给95分。
 
 但就目前来看，MiniMax M2.5已经是国产大模型的天花板了。
 
-Forge RL框架自我学习，数十万真实环境训练。
+`Forge RL框架`自我学习，数十万真实环境训练。
 
 108天三次迭代，行业最快成长速度。
 
 内部80%新代码AI写的，真实生产力革命。
 
-原生Spec能力+Office Skills，像架构师一样思考。
+原生`Spec`能力+`Office Skills`，像架构师一样思考。
 
 这四个优势加起来，就是降维打击。
 
@@ -272,8 +265,8 @@ Forge RL框架自我学习，数十万真实环境训练。
 
 最后老金我说一句：
 
-**如果你还在用Claude Opus 4.6跑Agen**t任务，赶紧换MiniMax M2.5。
+**如果你还在用Claude Opus 4.6跑Agent任务，赶紧换MiniMax M2.5。**
 
 不是因为便宜，是因为它真的更强。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

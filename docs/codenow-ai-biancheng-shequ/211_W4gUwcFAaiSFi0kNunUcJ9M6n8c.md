@@ -1,3 +1,4 @@
+
 # 社区案例/自制软件的便利店
 
 > 来源：[https://now.feishu.cn/docx/KLQldpKLcoWI7oxz1KocOOQCnpt](https://now.feishu.cn/docx/KLQldpKLcoWI7oxz1KocOOQCnpt)
@@ -6,9 +7,9 @@
 
 ![](img/c8d9f20dfb709b0206337733ca6b2158.png)
 
-# 自制软件的便利店 Home-Cooked APP Store
+## 自制软件的便利店 Home-Cooked APP Store
 
-**Home C**ooked APP Store 是一个专门收集和展示由 赤脚开发者 使用AI编程工具开发的“便利店”。这些应用致力于解决各种实际问题，便利店不仅集中展示这些应用，还负责推广和分享，帮助开发者获得更多曝光和用户。
+Home Cooked APP Store 是一个专门收集和展示由 赤脚开发者 使用AI编程工具开发的“便利店”。这些应用致力于解决各种实际问题，便利店不仅集中展示这些应用，还负责推广和分享，帮助开发者获得更多曝光和用户。
 
 供货商HappyEater：推出了一款AI饭搭子应用，根据用户的饮食习惯和健康目标，自动推荐每日餐单并提供营养分析。
 

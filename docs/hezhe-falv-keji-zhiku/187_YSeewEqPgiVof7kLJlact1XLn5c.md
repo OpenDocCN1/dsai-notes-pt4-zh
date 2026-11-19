@@ -1,3 +1,4 @@
+
 # 【贝恩】AI 落地应用进入新的阶段，但没有达到法律行业的预期
 
 > 来源：[https://docs.feishu.cn/docx/HRPJdjrZUoXkfmxWwAEcIVqTn5g](https://docs.feishu.cn/docx/HRPJdjrZUoXkfmxWwAEcIVqTn5g)

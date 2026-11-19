@@ -1,3 +1,4 @@
+
 # 花一天研究了 565 个 Skills，我的 Clawdbot 比 ChatGPT 更懂我！
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DwRSdlQjaouUWIx0L4wcf31inmh](https://qqs7y1hozd1.feishu.cn/docx/DwRSdlQjaouUWIx0L4wcf31inmh)
@@ -26,13 +27,13 @@
 
 ![](img/bf138c68bc6289bce4b2d48808d4d16a.png)
 
-## 01 邮件管理：gog
+## 01 邮件管理：`gog`
 
-第一个装的 skill 是 gog，用来连接 Gmail。
+第一个装的 skill 是 `gog`，用来连接 Gmail。
 
-[只需要通过 Googl](https://zhida.zhihu.com/search?content_id=269739142&content_type=Article&match_order=1&q=OAuth+token&zhida_source=entity)e Cloud Console 生成一个 OAuth token 给它就行，不会操作的话可以让 AI 一步步教你。
+[只需要通过 Google Cloud Console](https://zhida.zhihu.com/search?content_id=269739142&content_type=Article&match_order=1&q=OAuth+token&zhida_source=entity) 生成一个 OAuth token 给它就行，不会操作的话可以让 AI 一步步教你。
 
-[https://github.com/moltbot/skill](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/steipete/gog/SKILL.md)s/tree/main/skills/steipete/gog/SKILL.md
+[https://github.com/moltbot/skills/tree/main/skills/steipete/gog/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/steipete/gog/SKILL.md)
 
 ```
 # 1. 获取 Google OAuth credentials（从 Google Cloud Console）
@@ -48,17 +49,17 @@ gog auth list
 
 ## 02 自动更新 & 文档同步
 
-接着装了两个基础 skill：：
+接着装了两个基础 skill：
 
 自动更新——让它能定时自己更新版本，不用我操心：
 
-[https://github.com/moltbot/skills/tree/main/s](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/maximeprades/auto-updater/SKILL.md)kills/maximeprades/auto-updater/SKILL.md
+[https://github.com/moltbot/skills/tree/main/skills/maximeprades/auto-updater/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/maximeprades/auto-updater/SKILL.md)
 
 ![](img/664c9c94209032fcd51a8eec59136247.png)
 
-文档同步——让它更了解自己的能力边界，后续你可以用它来操控 Clawdbot 本身：
+文档同步——让它更了解自己的能力边界，后续你可以用它来操控 Clawbot 本身：
 
-[https://github.com/moltbot/skills/tree/m](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/aranej/clawd-docs-v2/SKILL.md)ain/skills/aranej/clawd-docs-v2/SKILL.md
+[https://github.com/moltbot/skills/tree/main/skills/aranej/clawd-docs-v2/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/aranej/clawd-docs-v2/SKILL.md)
 
 ![](img/c03c53d3f2bfcace757ab9a7c50f0635.png)
 
@@ -70,7 +71,7 @@ gog auth list
 
 结果它告诉我看不了 PDF。行吧，那就让它自己装一个 PDF 解析的 skill：
 
-[https://github.com/moltbot/skills/blob/main/ski](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/markdown-converter/SKILL.md)lls/steipete/markdown-converter/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/steipete/markdown-converter/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/markdown-converter/SKILL.md)
 
 ![](img/d03c76925d74fb2da7a27dac71a019de.png)
 
@@ -80,13 +81,13 @@ gog auth list
 
 每日回顾这个 skill 我觉得挺有意思，每天自动生成一张回顾卡片：
 
-[https://github.com/moltbot/skills/blob/m](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/dbhurley/daily-recap/SKILL.md)ain/skills/dbhurley/daily-recap/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/dbhurley/daily-recap/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/dbhurley/daily-recap/SKILL.md)
 
 ![](img/04cd539bdfbc26ae53a9e68560381c46.png)
 
 因为它依赖图片生成能力，所以又顺带装了 Nano Banana Pro：
 
-[https://github.com/moltbot/skills/blob/main/](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/nano-banana-pro/SKILL.md)skills/steipete/nano-banana-pro/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/steipete/nano-banana-pro/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/nano-banana-pro/SKILL.md)
 
 最终效果如下，还是很不错的：
 
@@ -94,9 +95,9 @@ gog auth list
 
 另外还装了邮件晨报和定时提醒，让它每天主动给我推关键信息：
 
-[ht](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/am-will/morning-email-rollup/SKILL.md)tps://github.com/moltbot/skills/blob/main/skills/am-will/morning-email-rollup/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/am-will/morning-email-rollup/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/am-will/morning-email-rollup/SKILL.md)
 
-[https://github.com/moltbot/skills/blob/ma](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/julianengel/remind-me/SKILL.md)in/skills/julianengel/remind-me/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/julianengel/remind-me/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/julianengel/remind-me/SKILL.md)
 
 ![](img/e03977b9b0ad63beeaa90deab398ce4f.png)
 
@@ -104,7 +105,7 @@ gog auth list
 
 装了 [Bird](https://zhida.zhihu.com/search?content_id=269739142&content_type=Article&match_order=1&q=Bird&zhida_source=entity) 这个 skill，可以直接读取我 Twitter 上的信息流：
 
-[https://github.com/moltbot/skills](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/bird/SKILL.md)/blob/main/skills/steipete/bird/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/steipete/bird/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/bird/SKILL.md)
 
 ![](img/8f3693742e1de23c5926fdd032871b0a.png)
 
@@ -112,9 +113,9 @@ gog auth list
 
 这两个 skill 我觉得特别实用——专门用来消除 AI 生成文本的痕迹：
 
-[https://github.com/moltbot/skills/blo](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/itsflow/de-ai-ify/SKILL.md)b/main/skills/itsflow/de-ai-ify/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/itsflow/de-ai-ify/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/itsflow/de-ai-ify/SKILL.md)
 
-[https://github.com/moltbot/skills/blob/main/ski](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/biostartechnology/humanizer/SKILL.md)lls/biostartechnology/humanizer/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/biostartechnology/humanizer/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/biostartechnology/humanizer/SKILL.md)
 
 ![](img/7161d56fbbba9d7c4a0ce92a7fc25e25.png)
 
@@ -125,20 +126,17 @@ gog auth list
 这几个 skill 是我个人比较喜欢的：
 
 • 芒格观察者：用[查理·芒格](https://zhida.zhihu.com/search?content_id=269739142&content_type=Article&match_order=1&q=%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC&zhida_source=entity)的多元思维模型来审视你的决策
-
 • 自信与自爱：帮你记录小成就、建立正向反馈
-
 • 心理疏导模式：CBT、ACT 等专业心理框架
-
 • 每周复盘：自动生成一周的工作与思考总结
 
-[https://github.com/moltbot/skills/blob/main](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/jdrhyne/munger-observer/SKILL.md)/skills/jdrhyne/munger-observer/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/jdrhyne/munger-observer/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/jdrhyne/munger-observer/SKILL.md)
 
-[ht](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/jhillin8/self-love-confidence/SKILL.md)tps://github.com/moltbot/skills/blob/main/skills/jhillin8/self-love-confidence/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/jhillin8/self-love-confidence/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/jhillin8/self-love-confidence/SKILL.md)
 
-[https://github.com/moltbot/skills/blob/main/](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/thesethrose/therapy-mode/SKILL.md)skills/thesethrose/therapy-mode/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/thesethrose/therapy-mode/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/thesethrose/therapy-mode/SKILL.md)
 
-[https://github.com/moltbot/skills/blob/main/](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/itsflow/weekly-synthesis/SKILL.md)skills/itsflow/weekly-synthesis/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/itsflow/weekly-synthesis/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/itsflow/weekly-synthesis/SKILL.md)
 
 ![](img/ff586505c4b77b5deafcdeb7eed46fe2.png)
 
@@ -146,9 +144,9 @@ gog auth list
 
 装了两个 YouTube 相关的 skill，可以直接读取视频字幕和内容：
 
-[ht](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/video-transcript-downloader/SKILL.md)tps://github.com/moltbot/skills/blob/main/skills/steipete/video-transcript-downloader/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/steipete/video-transcript-downloader/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/steipete/video-transcript-downloader/SKILL.md)
 
-[ht](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/michaelgathara/youtube-watcher/SKILL.md)tps://github.com/moltbot/skills/blob/main/skills/michaelgathara/youtube-watcher/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/michaelgathara/youtube-watcher/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/michaelgathara/youtube-watcher/SKILL.md)
 
 ![](img/6caab5a10056e82a67143750f3226200.png)
 
@@ -156,9 +154,9 @@ gog auth list
 
 ## 09 流程图绘制
 
-[发现了一个画流程图的](https://zhida.zhihu.com/search?content_id=269739142&content_type=Article&match_order=1&q=Excalidraw&zhida_source=entity) skill，基于 Excalidraw，直接用文字描述就能生成专业的流程图：
+[发现了一个画流程图的 skill](https://zhida.zhihu.com/search?content_id=269739142&content_type=Article&match_order=1&q=Excalidraw&zhida_source=entity)，基于 Excalidraw，直接用文字描述就能生成专业的流程图：
 
-[ht](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/swiftlysingh/excalidraw-flowchart/SKILL.md)tps://github.com/moltbot/skills/blob/main/skills/swiftlysingh/excalidraw-flowchart/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/swiftlysingh/excalidraw-flowchart/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/swiftlysingh/excalidraw-flowchart/SKILL.md)
 
 ![](img/6899a76c46c2969aa0350641b3e4d2e1.png)
 
@@ -166,9 +164,9 @@ gog auth list
 
 这个 skill 我强烈推荐给所有做海外产品的朋友——营销专家模块，里面包含 23 个子模块，覆盖 SEO、文案、转化率优化、付费投放、定价策略等等：
 
-[https://github.com/moltbot/skills/blob/main/ski](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/jchopard69/marketing-skills/SKILL.md)lls/jchopard69/marketing-skills/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/jchopard69/marketing-skills/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/jchopard69/marketing-skills/SKILL.md)
 
-[https://github.com/moltbot/skills/blob/main/sk](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/thesethrose/marketing-mode/SKILL.md)ills/thesethrose/marketing-mode/SKILL.md
+[https://github.com/moltbot/skills/blob/main/skills/thesethrose/marketing-mode/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/blob/main/skills/thesethrose/marketing-mode/SKILL.md)
 
 ![](img/7848b0e09c0e6b634abccb24211573f6.png)
 
@@ -178,6 +176,6 @@ gog auth list
 
 最后装了一个 Todo 管理的 skill：
 
-[https://github.com/moltbot/skills/tree/m](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/jdrhyne/todo-tracker/SKILL.md)ain/skills/jdrhyne/todo-tracker/SKILL.md
+[https://github.com/moltbot/skills/tree/main/skills/jdrhyne/todo-tracker/SKILL.md](https://link.zhihu.com/?target=https%3A//github.com/moltbot/skills/tree/main/skills/jdrhyne/todo-tracker/SKILL.md)
 
 ![](img/49908c146efde38a9b7c93aa39d1543f.png)

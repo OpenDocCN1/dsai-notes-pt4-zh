@@ -1,14 +1,10 @@
-# 2023-09-05AI实景自动直播：本地生活创业者的新机遇_系统_观众_实体
+
+# AI实景自动直播：本地生活创业者的新机遇（系统、观众、实体）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZLsld0IcWo6oGKxBJb1craf5nQf](https://xuqiwei1986.feishu.cn/docx/ZLsld0IcWo6oGKxBJb1craf5nQf)
+> 🔗 原文链接：https://www.sohu.com/a/717827750_121664065...
 
-> 🔗 原文链接： h[ttps://www.sohu.co](https://www.sohu.com/a/717827750_121664065)m/a/717827750_12...
-
->
-
-# AI实景自动直播：本地生活创业者的新机遇
-
-[2023-](https://www.sohu.com/a/717827750_121664065?spm=smpc.content.content.1.1693911184851hQd0UOR)09-05 11:01 来源: 娟姐聊项目
+## [2023-09-05 11:01](https://www.sohu.com/a/717827750_121664065?spm=smpc.content.content.1.1693911184851hQd0UOR) 来源：娟姐聊项目
 
 龙兵科技，自主研发，源码交付，专注软件研发10年，各行业源码齐全。
 
@@ -30,6 +26,6 @@
 
 ![](img/87dc390c30d2da924fd6986716c1f7d4.png)
 
-[ 返回搜狐，查看更多](https://www.sohu.com/?strategyid=00001&spm=smpc.content.content.2.1693911184851hQd0UOR)
+[返回搜狐，查看更多](https://www.sohu.com/?strategyid=00001&spm=smpc.content.content.2.1693911184851hQd0UOR)
 
 责任编辑：

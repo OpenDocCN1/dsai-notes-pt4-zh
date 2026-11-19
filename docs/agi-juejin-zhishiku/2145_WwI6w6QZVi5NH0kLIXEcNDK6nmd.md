@@ -1,3 +1,4 @@
+
 # 10.11-vivo 宣布开放无障碍产品安卓公版，全栈 AI 能力免费用、Meta 推出革命性 AI 视频工具、ChatGPT o1 推理模型幕后大佬离职
 
 > 来源：[https://agijuejin.feishu.cn/docx/CDMcdZ0kCoCPTExxdZ5cASGun5b](https://agijuejin.feishu.cn/docx/CDMcdZ0kCoCPTExxdZ5cASGun5b)
@@ -74,10 +75,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/801/030.htm)
 
 ## 💫 企业动态
 
-###
-
-###
-
 ### 💡 诺贝尔文学奖要颁给ChatGPT？奥特曼得奖呼声高，Hinton怒斥：他不配！
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JE51JBFB0511ABV6.html?spss=dy_author)
@@ -141,9 +138,3 @@ IT之家 | [阅读原文](https://www.ithome.com/0/801/032.htm)
 ![](img/b78d12d26b71141d2153ab41b9c9a0f7.png)
 
 国产 AI 大模型 Kimi 的开发团队月之暗面有团队国庆加班 7 天拿 3 倍工资赶进度，准备上线深度推理功能。月之暗面 2023 年 3 月创立，10 月推出 Kimi，核心成员参与多个大模型研发。今年估值曾达 30 亿美元，阿里投资约 8 亿美元购入 36%股权，腾讯也参与 3 亿美元融资使其估值提升至 33 亿美元。
-
-###
-
-###
-
-###

@@ -1,6 +1,7 @@
+
 # DeepSeek最强使用攻略，放弃复杂提示词，直接提问效果反而更好？
 
-> 来源：[https://zinxkclpk97.feishu.cn/docx/IyUjditFSoiv5kxJ9S5cUVy7nIh](https://zinxkclpk97.feishu.cn/docx/IyUjditFSoiv5kxJ9S5cUVy7nIh)
+> 来源：[`https://zinxkclpk97.feishu.cn/docx/IyUjditFSoiv5kxJ9S5cUVy7nIh`](https://zinxkclpk97.feishu.cn/docx/IyUjditFSoiv5kxJ9S5cUVy7nIh)
 
 **这几天，**DeepSeek-R1可谓是火遍全球了。
 
@@ -18,21 +19,16 @@
 
 本文介绍的DeepSeek使用方法，确实和其他AI很不一样！
 
-##
-
-## **DeepSeek如何使用？**
-
-##
+## DeepSeek如何使用？
 
 小霍之前写过如何下载、注册使用DeepSeek的文章 👉⌈点击跳转⌋
 
 只需几分钟即可上手。
 
-+   网页版：https://chat.deepseek.com/
++   网页版：`https://chat.deepseek.com/`
++   客户端：`https://download.deepseek.com/app/`
 
-+   客户端：https://download.deepseek.com/app/
-
-## **必学的三个对话模板**
+## 必学的三个对话模板
 
 由于DeepSeek-R1是推理模型，和以前其他的通用模型不一样。
 
@@ -52,7 +48,7 @@
 
 以下三个对话模板，是AI小白快速上手DeepSeek的“葵花宝典”。
 
-### **提问技巧一：场景化模板**
+### 提问技巧一：场景化模板
 
 “我要【目标】，给【对象】用，希望达到【效果】，但担心【问题】...”
 
@@ -76,7 +72,7 @@
 
 ![](img/39b03617591e146b9fb0d529bc733147.png)
 
-### **提问技巧二：术语破解模板**
+### 提问技巧二：术语破解模板
 
 “用小学生能听懂的话解释【专业术语】”
 
@@ -92,7 +88,7 @@
 
 ![](img/cb79126c60f2b84e37490acb317bb423.png)
 
-### **提问技巧三：风格迁移模板**
+### 提问技巧三：风格迁移模板
 
 “模仿【作家名】的【文体】写关于【主题】的【内容类型】”
 
@@ -112,7 +108,7 @@
 
 ![](img/ca976185e395828f8c3c83ab4d51779f.png)
 
-## **解决90%问题的急救包**
+## 解决90%问题的急救包
 
 DeepSeek虽好用，但使用过程中难免会遇到一些小“bug”。
 

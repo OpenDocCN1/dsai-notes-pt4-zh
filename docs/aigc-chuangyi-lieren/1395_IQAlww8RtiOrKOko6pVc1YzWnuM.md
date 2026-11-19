@@ -1,3 +1,4 @@
+
 # 20260204-N多新玩法！谷歌Chrome接入Gemini，王炸合体秒变AI浏览器，附激活教程
 
 > 来源：[https://aigcreative.feishu.cn/docx/PO9HdvWWRoPmcKxJwrxcVaYqnJd](https://aigcreative.feishu.cn/docx/PO9HdvWWRoPmcKxJwrxcVaYqnJd)
@@ -10,7 +11,7 @@
 
 ![](img/0999cd2a5d3f727ac369a53d05335fee.png)
 
-[1770135464176.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QxibbR6ago6kRmxEwNicoInNn8d)
+[`1770135464176.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QxibbR6ago6kRmxEwNicoInNn8d)
 
 虽然说对于美国的用户很早就已经开放了这个功能，但是由于众所周知的原因，一直没有用上。
 
@@ -26,29 +27,21 @@
 
 看看官方介绍的，都有哪些功能：
 
-#### 1）全能侧边栏
-
 +   **多任务中心：** 无需切换标签页即可唤起 Gemini。
 
 +   **跨页对比：** 支持同时读取多个标签页的信息进行对比分析。
 
 +   **即时交互：** 能根据当前浏览的网页内容直接回答问题，例如在旅游网站自动筛选出符合你要求的路线。
 
-#### 2）Nano Banana 图像重绘
-
 +   **原位改图：** 浏览网页时，可以直接通过指令修改页面上的图片。
 
 +   **场景演示：** 比如在看租房网站时，能实时把照片里的家具换个款式，预览不同的装修效果。
-
-#### 3）AI 智能体
 
 +   **生态打通：** 直接调用 Gmail、日历、地图等应用，在侧边栏就能草拟邮件或安排日程。
 
 +   自动浏览 (Auto Browse)： 这是最核心的升级。AI 能模拟真人点击网页、查找隐藏的航班经停信息，甚至代跑餐厅预订流程。
 
 +   **安全机制：** 所有涉及支付或最终确认的操作，都会强制暂停，必须由人工点击确认。
-
-#### 4）门槛与限制
 
 +   **平台：** 支持 Windows、macOS 和 Chromebook Plus。
 
@@ -60,38 +53,38 @@
 
 首先大家最关心的是，Chrome里面如何开启？
 
-# 01.开启指南
+## 01.开启指南
 
-方法来自👸号@**老金带你玩AI**，硬核AI博主，推荐关注。
+方法来自👸号@老金带你玩AI，硬核AI博主，推荐关注。
 
 一种利用Python脚本激活的方式。
 
 **原理：** 利用脚本模拟美国地区环境，欺骗 Chrome 的验证机制。
 
-步骤0：设置
+### 步骤0：设置
 
 Chrome浏览器 → 设置 → 语言 → 英语置顶，设置为主语言。
 
 ![](img/ea7cc4020afd7b4f6bc432dc3b8f66b8.png)
 
-步骤 1：环境准备
+### 步骤 1：环境准备
 
-按**Win+R**，输入 cmd 并回车。
+按`Win+R`，输入 `cmd` 并回车。
 
-输入 python --version 检查是否安装了Python。
+输入 `python --version` 检查是否安装了Python。
 
 ![](img/cb90071ab6a276da8aa733746cc5fcad.png)
 
-若无 Python，请前往官网下载并安装（安装时务必勾选 Add Python to PATH）。
+若无 Python，请前往官网下载并安装（安装时务必勾选 `Add Python to PATH`）。
 
-步骤 2：部署工具 uv
+### 步骤 2：部署工具 `uv`
 
-电脑里搜索 **PowerShell**，右键选择**以管理员身份运行**。
+电脑里搜索 `PowerShell`，右键选择以管理员身份运行。
 
-执行以下命令安装 uv 管理工具：
+执行以下命令安装 `uv` 管理工具：
 
 ```
- powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 ![](img/cd28909443f5edbefedd237b7748a55f.png)
@@ -104,15 +97,15 @@ uv --version
 
 确认安装成功。
 
-步骤 3：执行激活脚本
+### 步骤 3：执行激活脚本
 
 下载项目文件：
 
-访问 GitHub：https://github.com/lcandy2/enable-chrome-ai 项目，点击Code，下载ZIP压缩包并解压。
+访问 GitHub：`https://github.com/lcandy2/enable-chrome-ai` 项目，点击Code，下载ZIP压缩包并解压。
 
 ![](img/8465e00c75a63cc6da2b2415a6359f56.png)
 
-进入解压后的文件夹，在地址栏输入cmd 并回车，进入当前路径的命令行。
+进入解压后的文件夹，在地址栏输入`cmd` 并回车，进入当前路径的命令行。
 
 依次执行以下两条指令：
 
@@ -127,27 +120,27 @@ run main.py
 
 +   图标出来但点不动 → 把Chrome语言改成英文。
 
-补充：故障排查清单
+### 补充：故障排查清单
 
 如果操作后仍未出现图标，请按以下顺序检查：
 
 **进程残留：** 确保 Chrome 已在任务管理器中完全关闭，无后台残留进程。
 
-**语言设置：** 再次确认 Chrome 语言设置中，English (United States) 处于列表第一位。
+**语言设置：** 再次确认 Chrome 语言设置中，`English (United States)` 处于列表第一位。
 
 **功能标记 (Flags)：**
 
-+   在地址栏输入 chrome://flags
++   在地址栏输入 `chrome://flags`
 
-+   搜索关键词 Glic
++   搜索关键词 `Glic`
 
-+   将其状态手动更改为**Enabled**
++   将其状态手动更改为 `Enabled`
 
 **账号归属：** 若以上皆无效，大概率是 Google 账号本身的区域属性未成功判定为美国，建议直接更换原生美区账号。
 
-# 02.开启后，有哪些玩法？
+## 02.开启后，有哪些玩法？
 
-用法0）首先是开启方式
+### 用法0）首先是开启方式
 
 可以通过点击浏览器右上角Gemini的按钮，可以点开侧边栏，开头有提过。
 
@@ -161,13 +154,13 @@ run main.py
 
 ![](img/a12d0f921d07067214781f54729d1eb1.png)
 
-这就好比你上网的时候，旁边永远坐着个懂行的朋友。以前我们用 AI，得专**门切到**一个对话页面，问完再切回来，思路很容易被打断。现在这个侧边栏最大的意义就是不打断。
+这就好比你上网的时候，旁边永远坐着个懂行的朋友。以前我们用 AI，得专门切到一个对话页面，问完再切回来，思路很容易被打断。现在这个侧边栏最大的意义就是不打断。
 
 举个特别真实的场景。你在看一篇长得要命的产品评测，全是专业术语，看得云里雾里。这时候直接在侧边栏敲一下，让它把当前页面的核心优缺点给我列出来，几秒钟搞定。或者你在好几个电商网站之间反复横跳比价，以前得自己拿个小本本记，现在直接让侧边栏帮你汇总对比。
 
 ![](img/9d59f85378eacb0efb0bacff1f6dcdb9.png)
 
-玩法1）基操：总结网页。
+### 玩法1）基操：总结网页。
 
 ![](img/230dddce90f8f720862c27763a13a556.png)
 
@@ -175,7 +168,7 @@ run main.py
 
 ![](img/76b93d3b4d8851b86262e1ef477e3e14.png)
 
-玩法2）不想看长篇的文字或者看英文有些吃力，可以调用Nano Banana Pro的能力，直接将页面文字内容生成信息图！
+### 玩法2）不想看长篇的文字或者看英文有些吃力，可以调用Nano Banana Pro的能力，直接将页面文字内容生成信息图！
 
 ![](img/e5effe580b97177cf5fad591eba29b23.png)
 
@@ -183,11 +176,11 @@ run main.py
 
 ![](img/19b4b33d746c715533197b75c2640152.png)
 
-提醒：需要调用Nano Banana Pro的时候，这里模型选择：Gemini 3 Pro。
+提醒：需要调用Nano Banana Pro的时候，这里模型选择：`Gemini 3 Pro`。
 
 ![](img/8d17d0820f5955d28e3ae0d512cdfd87.png)
 
-玩法3）总结Youtube视频：这也很实用，Youtube也是谷歌一家的，这种系统层面的能力打通，也就谷歌一家了。
+### 玩法3）总结Youtube视频：这也很实用，Youtube也是谷歌一家的，这种系统层面的能力打通，也就谷歌一家了。
 
 ![](img/84374f0e350045169dafe207d413c62a.png)
 
@@ -195,7 +188,7 @@ run main.py
 
 ![](img/2b40bc42ceabe098efef60edb329094a.png)
 
-玩法4）Chrome浏览器直接调用Nano Banana Pro改图：
+### 玩法4）Chrome浏览器直接调用Nano Banana Pro改图：
 
 直接拖入一张图片到浏览器，改一下图片上的文字：把图中的“PASSION”改为“HAPPY”
 
@@ -205,13 +198,13 @@ run main.py
 
 ![](img/d4386707d8fd01bcffe75bb40670660b.png)
 
-玩法5）自动浏览 (Auto Browse)： 这是最核心的升级，AI 能模拟真人点击网页、查找隐藏的航班经停信息，甚至代跑餐厅预订流程。
+### 玩法5）自动浏览 (Auto Browse)： 这是最核心的升级，AI 能模拟真人点击网页、查找隐藏的航班经停信息，甚至代跑餐厅预订流程。
 
 但目前我这里还用不了。。。再等等。
 
 ![](img/e2af26db929241e45d315c86b143c92c.png)
 
-玩法6）Go Live，直接口喷与AI对话：
+### 玩法6）Go Live，直接口喷与AI对话：
 
 ![](img/0633c76879fdb757ed8a7c3ea80fa1c7.png)
 
@@ -223,7 +216,7 @@ run main.py
 
 ![](img/564993727ab704dfa4b3fa6a01d9e1b2.png)
 
-玩法7）Google 全家桶深度打通
+### 玩法7）Google 全家桶深度打通
 
 侧边栏只是开胃菜。真正让我觉得 Google 这次“杀疯了”的，是它把自家的全家桶给串起来了。
 
@@ -237,7 +230,7 @@ run main.py
 
 这种体验怎么说呢，这才是智能助手该有的样子。而且 Google 也没把这事儿做绝，它给了个开关，你可以自己决定要不要把这些应用连进来，隐私这块儿的选择权还是在你手里。
 
-# 03.AI浏览器的未来
+## 03.AI浏览器的未来
 
 回过头来看，Chrome 这次更新不仅仅是加了几个功能那么简单。它其实是在重塑我们和互联网的交互关系。
 
@@ -265,4 +258,4 @@ run main.py
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

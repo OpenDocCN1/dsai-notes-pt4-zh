@@ -1,4 +1,5 @@
-# 10.14-苹果多模态模型大升级:文本密集、多图理解，全能小钢炮、智谱开源文生图模型 CogView3-Plus、 OpenAI 多智能体 Swarm 陷争议
+
+# 10.14-苹果多模态模型大升级:文本密集、多图理解，全能小钢炮、智谱开源文生图模型 CogView3-Plus、OpenAI 多智能体 Swarm 陷争议
 
 > 来源：[https://agijuejin.feishu.cn/docx/UySBdm3hUokqJ5xUMYNcYQfVnQb](https://agijuejin.feishu.cn/docx/UySBdm3hUokqJ5xUMYNcYQfVnQb)
 
@@ -21,8 +22,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/802/017.htm)
 ![](img/fc8668b39c8529fd02aadddc55c95e9a.png)
 
 2024 年 10 月 14 日，智谱技术团队开源文生图模型 CogView3 及 CogView3-Plus-3B，相关功能上线‘智谱清言’App。CogView3 分三个阶段生成图像，在人工评估中比 SDXL 高出 77.0%且推理时间仅为其 1/10。CogView3-Plus 在 CogView3 基础上引入 DiT 框架，采用 Zero-SNR 扩散噪声调度和文本 - 图像联合注意力机制，降低训练和推理成本，使用潜在维度为 16 的 VAE。开源仓库地址见文中。
-
-###
 
 ### 💡 OpenAI 多智能体 Swarm 陷争议，20 岁创始人自曝代码结构被抄袭
 
@@ -73,8 +72,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/801/846.htm)
 ![](img/1cf722d2d7b9cb87eda8a66c449b0e60.png)
 
 2024 年 10 月，特斯拉在自动驾驶出租车活动上展示人形机器人 Optimus，它现场做饮料等，但员工证实有人在远程控制。技术传播者罗伯特·斯考伯指出这并非纯粹人工智能。马斯克的展示被指像上世纪 50 年代的‘奇迹厨房’，有误导观众之嫌，一些投资者对此次特斯拉发布会评价为‘令人失望’。
-
-###
 
 ## ✨ 行业观点
 

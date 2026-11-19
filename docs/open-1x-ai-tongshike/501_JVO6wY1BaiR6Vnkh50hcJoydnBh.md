@@ -1,8 +1,9 @@
+
 # AI夏令营-电力需求预测赛学习者手册
 
 > 来源：[https://datawhaler.feishu.cn/docx/Vsludb2hyoHHgFxpciVcA1KcnHg](https://datawhaler.feishu.cn/docx/Vsludb2hyoHHgFxpciVcA1KcnHg)
 
-# 一、重要链接
+## 一、重要链接
 
 **赛事官网**：https://challenge.xfyun.cn/h5/detail?type=electricity-demand&ch=dw24_uGS8Gs
 
@@ -12,7 +13,7 @@
 
 **学习相关QA汇总文档**：[ QA & 其他彩蛋](https://datawhaler.feishu.cn/wiki/ZDnFwgX0riyIXkkFRAjcJhvqnqf?from=from_copylink)
 
-# 二、学习规划
+## 二、学习规划
 
 每个任务的教程可直接点击链接跳转
 
@@ -20,19 +21,19 @@
 
 <https://datawhaler.feishu.cn/sync/KeQvdtCR6sr0nIb8UTRc1dmfneb>
 
-# 三、夏令营学习者奖励
+## 三、夏令营学习者奖励
 
 <https://datawhaler.feishu.cn/sync/L1v7dArxGsIPCubgKn1ck6Wpnzg>
 
-# 四、常见问题Q&A
+## 四、常见问题Q&A
 
-## 如何打卡？
+### 如何打卡？
 
 **打卡说明**：大家每次打卡都是同一个链接，只需要在右上角修改记录，修改分数和笔记链接 即可
 
 ![](img/286c88be143e2b841370e55d898e6574.png)
 
-## 如何撰写笔记？
+### 如何撰写笔记？
 
 **第一期优秀笔记合集：**[夏令营优秀笔记](https://exn8g66dnwu.feishu.cn/sheets/M4LFsR8oAhnFKZtGdZHcDJn4ncg?from=from_copylink)
 
@@ -48,7 +49,7 @@
 
 打卡时提交标题带“Datawhale AI夏令营”的可公开查看的笔记链接，不限笔记平台，CSDN、知乎、📕、👸号、掘金等
 
-## 如何获得实习证明？
+### 如何获得实习证明？
 
 学习者仅能获得实践证明，详见【三、夏令营学习者奖励】
 

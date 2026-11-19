@@ -1,10 +1,11 @@
+
 # Sora学习手册
 
 > 来源：[https://zcareers.feishu.cn/docx/M6E7dnenmoKlIvxZYOjcnWU3nuf](https://zcareers.feishu.cn/docx/M6E7dnenmoKlIvxZYOjcnWU3nuf)
 
 ![](img/01318dd2082805d2b15b34c9ffa273ec.png)
 
-> **注：请继续****关注本文档****，支持转发，我们将****持续提供****关于如何使用Sora的****最新信息和更新****。**
+> **注：请继续关注本文档，支持转发，我们将持续提供关于如何使用Sora的最新信息和更新。**
 
 # 基本介绍
 
@@ -36,81 +37,81 @@ OpenAI认为，Sora不仅是一个视频生成工具，更是向通用人工智�
 
 有关Sora的优势和不足，其实官网已经给出了具体的答案。
 
-1.物理世界的交互
+1. 物理世界的交互
 
-教授人工智能理解和模拟运动中的物理世界，目标是训练模型来帮助人们解决需要现实世界交互的问题。目前Sora是个支持文本转视频模型，可以生成长达-一分钟的视频，同时保持视觉质量并遵守用户的提示
+   教授人工智能理解和模拟运动中的物理世界，目标是训练模型来帮助人们解决需要现实世界交互的问题。目前Sora是个支持文本转视频模型，可以生成长达一分钟的视频，同时保持视觉质量并遵守用户的提示。
 
-2.创意世界的绽放
+2. 创意世界的绽放
 
-今天，红队可以使用Sora来评估关键区域的危害或风险。我们也允许一些视觉艺术家、设计师和电影制作人访问以获得关于如何推进该模型以对创意专业人士最有帮助的反馈。我们正在尽早分享我们的研究进展，以便开始与OpenAI之外的人合作，并从他们那里获得反馈，让公众了解即将出现的AI功能。
+   今天，红队可以使用Sora来评估关键区域的危害或风险。我们也允许一些视觉艺术家、设计师和电影制作人访问以获得关于如何推进该模型以对创意专业人士最有帮助的反馈。我们正在尽早分享我们的研究进展，以便开始与OpenAI之外的人合作，并从他们那里获得反馈，让公众了解即将出现的AI功能。
 
-3.多角色、更精准、更细节Sora能够生成具有多个角色、特定类型的运动以及精确的主题和背景细节的复杂场景。该模型不仅了解用户在提示中要求什么，还了解这些东西在物理世界中的存在方式,
+3. 多角色、更精准、更细节
 
-4.情感注入、多视觉
+   Sora能够生成具有多个角色、特定类型的运动以及精确的主题和背景细节的复杂场景。该模型不仅了解用户在提示中要求什么，还了解这些东西在物理世界中的存在方式。
 
-Sora对语言有深刻的理解，使其能够准确地解释提示，并生成表达充满活力的情感的引人注目的角色。Sora还可以在一个生成的视频中创建多个镜头，准确地保留角色和视觉风格。
+4. 情感注入、多视觉
 
-5.复杂场的物理现象、混淆空间细节(弱点)
+   Sora对语言有深刻的理解，使其能够准确地解释提示，并生成表达充满活力的情感的引人注目的角色。Sora还可以在一个生成的视频中创建多个镜头，准确地保留角色和视觉风格。
 
-Sora当前的模式存在弱点。它可能难以准确地模拟复杂场景的物理，也可能无法理解因果关系的具体实例。例如-个人可能咬了一口饼干，但之后，饼干上可能没有咬痕。该模型还可能混淆提示的空间细节，例如，混淆左和右，并且可能难以精确描述随时间发生的事件，例如跟随特定的摄像机轨迹。
+5. 复杂场的物理现象、混淆空间细节（弱点）
 
-6.对抗测试、检测误导内容、安全问题保证
+   Sora当前的模式存在弱点。它可能难以准确地模拟复杂场景的物理，也可能无法理解因果关系的具体实例。例如，一个人可能咬了一口饼干，但之后，饼干上可能没有咬痕。该模型还可能混淆提示的空间细节，例如，混淆左和右，并且可能难以精确描述随时间发生的事件，例如跟随特定的摄像机轨迹。
 
-在 OpenAI 产品中使用 Sora 之前，我们将采取几个重要的安全措施。我们正在与红队成员(错误信息、仇恨内容和偏见等领域的领域专家)合作，他们将以对抗性方式测试该模型。我们还在构建工具来帮助检测误导性内容，例如检测分类器，可以判断 Sora 何时生成视频。如果我们在OpenAI 产品中部署模型，我们计划将来包含C2PA 元数据。除了开发新技术来准备部署之外，我们还利用为使用 DALL·E3 的产品构建的现有安全方法，这些方法也适用于Sora。
+6. 对抗测试、检测误导内容、安全问题保证
 
-例如，在 OpenAI 产品中，我们的文本分类器将检査并拒绝违反我们的使用政策的文本输入提示，例如要求极端暴力、性内容、仇恨图像、名人肖像或他人 IP 的文本输入提示。我们还开发了强大的图像分类器，用于检查生成的每个视频的帧，以帮助确保它在向用户显示之前符合我们的使用政策。我们将与世界各地的政策制定者、教育工作者和艺术家合作，了解他们的担忧并确定这项新技术的积极用例。尽管进行了广泛的研究和测试，我们仍无法预测人们使用我们的技术的所有有益方式，也无法预测人们滥用我们的技术的所有方式。这就是为什么我们相信，随着时间的推移，从现实世界的使用中学习是创建和发布越来越安全的人工智能系统的关键组成部分。
+   在OpenAI产品中使用Sora之前，我们将采取几个重要的安全措施。我们正在与红队成员（错误信息、仇恨内容和偏见等领域的领域专家）合作，他们将以对抗性方式测试该模型。我们还在构建工具来帮助检测误导性内容，例如检测分类器，可以判断Sora何时生成视频。如果我们在OpenAI产品中部署模型，我们计划将来包含C2PA元数据。除了开发新技术来准备部署之外，我们还利用为使用DALL·E 3的产品构建的现有安全方法，这些方法也适用于Sora。
+
+   例如，在OpenAI产品中，我们的文本分类器将检查并拒绝违反我们的使用政策的文本输入提示，例如要求极端暴力、性内容、仇恨图像、名人肖像或他人IP的文本输入提示。我们还开发了强大的图像分类器，用于检查生成的每个视频的帧，以帮助确保它在向用户显示之前符合我们的使用政策。我们将与世界各地的政策制定者、教育工作者和艺术家合作，了解他们的担忧并确定这项新技术的积极用例。尽管进行了广泛的研究和测试，我们仍无法预测人们使用我们的技术的所有有益方式，也无法预测人们滥用我们的技术的所有方式。这就是为什么我们相信，随着时间的推移，从现实世界的使用中学习是创建和发布越来越安全的人工智能系统的关键组成部分。
 
 ## Sora功能特点
 
-1.文生视频
+1. 文生视频
 
-你提供文本提示词，Sora根据文字，自动语言理解并扩充提示词生产1分钟视频。
+   你提供文本提示词，Sora根据文字，自动语言理解并扩充提示词生产1分钟视频。
 
-对比其他AI生成视频软件也可以文生视频，但是基本只能生产4秒左右的视频。
+   对比其他AI生成视频软件也可以文生视频，但是基本只能生产4秒左右的视频。
 
-2.图生视频
+2. 图生视频
 
-你提供参考图，Sora根据参考图，自动以参考图为核心内容生成1分钟视频对比其他AI生成视频软件也可以图生视频，但是基本也只能生产4秒左右的视频，而且可能和参考图内容有偏差
+   你提供参考图，Sora根据参考图，自动以参考图为核心内容生成1分钟视频。对比其他AI生成视频软件也可以图生视频，但是基本也只能生产4秒左右的视频，而且可能和参考图内容有偏差。
 
-3.视频生成视频
+3. 视频生成视频
 
-你提供参考视频，Sora根据参考视频和你需要的风格文本提示词，自动以参考视频为核心内容+特定风格要求生成1分钟视频。你可以更换视频风格也可以更换视频环境，比如原始视频是在森林中，你可以修改视频背景环境为水
+   你提供参考视频，Sora根据参考视频和你需要的风格文本提示词，自动以参考视频为核心内容+特定风格要求生成1分钟视频。你可以更换视频风格也可以更换视频环境，比如原始视频是在森林中，你可以修改视频背景环境为水下、街景、雪地等。
 
-下，街景，雪地等。
+   对比其他AI生成视频软件也可以视频生视频，但是基本也只能生产4秒左右的视频，但是风格变化的效果不是很逼真。
 
-对比其他AI生成视频软件也可以视频生视频，但是基本也只能生产4秒左右的视频，但是风格变化的效果不是很逼真
+4. 时间层面扩展视频
 
-4.时间层面扩展视频
+   你提供参考视频，Sora能够在时间层面向前或向后扩展视频，简单说就是人工智能可以通过原始视频猜测出这个视频的过去和未来，扩展出这个视频的过去和将来。我们先展示向前扩展时间功能，虽然这四个视频的开头都并不相同，但所有四个视频的结局都是相同的。
 
-你提供参考视频，Sora能够在时间层面向前或向后扩展视频，简单说就是人工智能可以通过原始视频猜测出这个视频的过去和未来，扩展出这个视频的过去和将来。我们先展示向前扩展时间功能，虽然这四个视频的开头都并不相同，但所有四个视频的结局都是相同的。
+5. 视频拼接
 
-5.视频拼接
+   你提供多个不同内容或风格的参考视频，Sora能够把完全不同主题或场景构成的视频无缝拼接成1个完整的视频。
 
-你提供多个不同内容或风格的参考视频，Sora能够把完全不同主题或场景构成的视频无缝拼接成1个完整的视频。
+6. 3D一致性
 
-6.3D-致性
+   Sora可以生成带有动态摄像机运动的视频。
 
-Sora 可以生成带有动态摄像机运动的视频。
+   例如，画面中虽然是3D的移动和旋转，人和场景元素在三维空间中保持一致性的移动。Sora的大杀器之三，对比其他AI生成视频软件还不具备这个功能。因为其他AI生成视频软件画面移动基本都是基于2D世界层面做的，只能实现简单的一些左右移动，上下移动，曲线移动等，为了确保生产视频画面不抖动，我们用这些软件必须尽量减少镜头的移动和旋转。
 
-例如，画面中虽然是3D的移动和旋转，人和场景元素在三维空间中保持一致性的移动。Sora的大杀器之三，对比其他AI生成视频软件还不具备这个功能。因为其他AI生成视频软件画面移动基本都是基于2D世界层面做的，只能实现简单的一些左右移动，上下移动，曲线移动等，为了确保生产视频画面不抖动，我们用这些软件必须尽量减少镜头的移动和旋转。
+   这点在Sora中就不需要担心了，他是基于3D世界的动态摄像机移动的，而且人物在3D世界中的运动会保持高度的一致性。
 
-这点在Sora中就不需要担心了，他是基于3D世界的动态摄像机移动的，而且人物在3D世界中的运动会保持高度的致性。
+7. 长时间主体一致性
 
-7.长时间主体一致性
+   Sora可以保持主体长时间的外观一致性。
 
-Sora可以保持主体长时间的外观一致性。
+   例如，我们的模型可以保留人、动物和物体，即使被遮挡或离开画面，并能在整个视频中保持其主体的外观一致性，比如画面中的斑点狗不受人物遮挡的影响，也能保持斑点狗在整段视频中的外观一致性。比如你不断的切换画面镜头，比如让主体离开画面再回到画面中，也能保持机器人在整段视频中的外观一致性。Sora的大杀器之四，现阶段其他AI生成视频软件还不具备这个功能，毕竟能生成的视频都很短才4秒钟。
 
-例如，我们的模型可以保留人动物和物体，即使被遮挡或离开画面，并能在整个视频中保持其主体的外观一致性，比如画面中的斑点狗不受人物遮挡的影响，也能保持斑点狗在整段视频中的外观一致性。比如你不断的切换画面镜头，比如让主体离开画面再回到画面中，也能保持机器人在整段视频中的外观一致性。Sora的大杀器之四，现阶段其他AI生成视频软件还不具备这个功能，毕竟能生成的视频都很短才4秒钟。
+8. 模拟真实世界交互
 
-8.模拟真实世界交互
+   Sora用简单的方式模拟真实世界状况物理交互。
 
-Sora用简单的方式模拟真实世界状况物理交互。
-
-例如，画家可以在画布上留下每一步新的笔触，或者一个人可以吃汉堡并留下咬痕并且只吃掉一部分的食物，虽然这在真实世界是时时刻刻发生的事情，这在Sora中都尽可能的去模拟真实世界。不过现在Sora的也是有一定局限性，并不能完全准确地模拟许多真实世界的基本相互作用的物理过程，例如玻璃破碎，投篮等。其他交豆(例如吃食物，多个主体)又是会出错。
+   例如，画家可以在画布上留下每一步新的笔触，或者一个人可以吃汉堡并留下咬痕并且只吃掉一部分的食物，虽然这在真实世界是时时刻刻发生的事情，这在Sora中都尽可能的去模拟真实世界。不过现在Sora的也是有一定局限性，并不能完全准确地模拟许多真实世界的基本相互作用的物理过程，例如玻璃破碎，投篮等。其他交互（例如吃食物，多个主体）有时会出错。
 
 # 技术解读
 
-魔搭社区的开发者也针对Sora的技术报告展开了热烈的讨论，并根据技术报告的内容，推测了Sora的技术架构图如下
+魔搭社区的开发者也针对Sora的技术报告展开了热烈的讨论，并根据技术报告的内容，推测了Sora的技术架构图如下：
 
 ![](img/f38b52b4a16f3b007f577f3f913087ce.png)
 
@@ -120,15 +121,15 @@ Sora模型的核心技术点（图中红色标注）：
 
 ## 视频压缩网络
 
-OpenAI训练了一个降低视觉数据维度的网络。这个网络接受原始视频作为输入，并输出在时间和空间上都被压缩的潜在表示。Sora在这个压缩的潜在空间上进行训练，并随后生成视频。同时还训练了一个相应的解码器模型，将生成的潜在表示映射回像素空间（源自Sora技术报告）。这部分内容为图中的红色部分，核心工作为将视觉数据转化为patches，patches是从大语言模型中获得的灵感，大语言模型范式的成功部分得益于使用优雅统一各种文本模态（代码、数学和各种自然语言）的token。大语言模型拥有文本token，而Sora拥有视觉分块（patches）。OpenAI在之前的Clip等工作中，充分实践了分块是视觉数据模型的一种有效表示（参考论文：An image is worth 16x16 words: Transformers for image recognition at scale.）这一技术路线。而视频压缩网络的工作就是将高维度的视频数据转换为patches，首先讲视频压缩到一个低纬的latent space，然后分解为spacetime patches。
+OpenAI训练了一个降低视觉数据维度的网络。这个网络接受原始视频作为输入，并输出在时间和空间上都被压缩的潜在表示。Sora在这个压缩的潜在空间上进行训练，并随后生成视频。同时还训练了一个相应的解码器模型，将生成的潜在表示映射回像素空间（源自Sora技术报告）。这部分内容为图中的红色部分，核心工作为将视觉数据转化为patches，patches是从大语言模型中获得的灵感，大语言模型范式的成功部分得益于使用优雅统一各种文本模态（代码、数学和各种自然语言）的token。大语言模型拥有文本token，而Sora拥有视觉分块（patches）。OpenAI在之前的Clip等工作中，充分实践了分块是视觉数据模型的一种有效表示（参考论文：An image is worth 16x16 words: Transformers for image recognition at scale.）这一技术路线。而视频压缩网络的工作就是将高维度的视频数据转换为patches，首先将视频压缩到一个低纬的latent space，然后分解为spacetime patches。
 
 ![](img/2bb33e40badef1acf933998c094b8e5a.png)
 
 图片来源：Sora技术报告
 
-这个方法同样适用于图像（将图像作为单一帧视频处理），基于Patches的表示使得Sora能够训练具有不同分辨率，持续时间和纵横比的视频和图像，而在推理过程中，只需要在适当大小的grid中随机初始化patches即可控制视频生成的大小。
+这个方法同样适用于图像（将图像作为单一帧视频处理），基于Patches的表示使得Sora能够训练具有不同分辨率、持续时间和纵横比的视频和图像，而在推理过程中，只需要在适当大小的grid中随机初始化patches即可控制视频生成的大小。
 
-技术难点：视频压缩网络类比与latent diffusion model中的VAE，但是压缩率是多少，如何保证视频特征被更好的保留，还需要进一步的研究。
+技术难点：视频压缩网络类比于latent diffusion model中的VAE，但是压缩率是多少，如何保证视频特征被更好的保留，还需要进一步的研究。
 
 ## 用于视频生成的Scaling Transformers
 
@@ -148,31 +149,28 @@ OpenAI发现训练文本到视频生成系统需要大量带有相应文本标�
 
 ## 世界模型，涌现的模拟能力
 
-大规模训练时，sora同样也出现了有趣的“涌现的模拟能力”，这些能力使Sora能够模拟物理世界中的人、动物和环境的某些方面。这些属性没有任何明确的三维、物体等归纳特征信息——可以理解为由于模型参数足够大而产生的涌现现象。
+大规模训练时，Sora同样也出现了有趣的“涌现的模拟能力”，这些能力使Sora能够模拟物理世界中的人、动物和环境的某些方面。这些属性没有任何明确的三维、物体等归纳特征信息——可以理解为由于模型参数足够大而产生的涌现现象。
 
 这些能力包括：
 
-+   三维一致性。Sora可以生成具有动态摄像机移动的视频。随着摄像机的移动和旋转，人物和场景元素在三维空间中一致地移动。
++ 三维一致性。Sora可以生成具有动态摄像机移动的视频。随着摄像机的移动和旋转，人物和场景元素在三维空间中一致地移动。
++ 长距离连贯性和物体持久性。对于视频生成系统来说，一个重大挑战一直是在采样长视频时保持时间上的连续性。研究发现，Sora通常能够有效地模拟短距离和长距离依赖关系（不稳定）。例如，Sora可以在人物、动物和物体被遮挡或离开画面时仍然保持它们的存在。同样，它可以在单个样本中生成同一角色的多个镜头，贯穿视频始终保持他们的外观。
++ 与世界互动。Sora可以模拟以简单方式影响世界状态的行为。例如，画家可以在画布上留下新的笔触，这些笔触随着时间的推移而持续存在，或者一个人可以吃汉堡并留下咬痕。
++ 模拟数字世界。Sora还能够模拟人工过程，一个例子是视频游戏。Sora可以通过基本策略控制《Minecraft》中的玩家，同时以高保真度渲染世界及其动态。这些能力可以通过prompt包含“Minecraft”，零样本激活这样的能力。
 
-+   长距离连贯性和物体持久性。对于视频生成系统来说，一个重大挑战一直是在采样长视频时保持时间上的连续性。研究发现，Sora通常能够有效地模拟短距离和长距离依赖关系（不稳定）。例如，Sora可以在人物、动物和物体被遮挡或离开画面时仍然保持它们的存在。同样，它可以在单个样本中生成同一角色的多个镜头，贯穿视频始终保持他们的外观。
+而这些能力都表明，顺着这个方向发展（持续扩大规模），Sora真的可能成为世界模型（能够高度模拟物理和数字世界的模拟器）。也许头部玩家、黑客帝国这些科幻片，就在不太遥远的未来。
 
-+   与世界互动。 Sora可以模拟以简单方式影响世界状态的行为。例如，画家可以在画布上留下新的笔触，这些笔触随着时间的推移而持续存在，或者一个人可以吃汉堡并留下咬痕。
-
-+   模拟数字世界。 Sora还能够模拟人工过程，一个例子是视频游戏。Sora可以通过基本策略控制《Minecraft》中的玩家，同时以高保真度渲染世界及其动态。这些能力可以通过prompt包含“Minecraft”，零样本激活这样的能力。
-
-而这些能力都表明，顺着这个方向发展（持续扩大规模），Sora真的可能成为世界模型（能够高度模拟物理和数字世界的模拟器）。也许头部玩家，黑客帝国这些科幻片，就在不太遥远的未来。
-
-技术难点：“大”模型，“高”算力，“海量”数据
+技术难点：“大”模型，“高”算力，“海量”数据。
 
 # 技术原理
 
 ## 基于Transformer架构
 
-Sora模型在其核心构造上与GPT模型颇为相似，均是基于先进的Transformer架构，从而赋予了Sora卓越的扩展能力。Transformer架构采用的是一种革命性的自注意力机制的神经网络，它能够高效地处理输入文本中各个位置的信息。这种机制使得模型能夾捉到更广泛的全局上下文信息，极大地增强了对文本的理解深度。正是得益于这样的架构，Sora在将文本转化为视频的过程中，能够更加精准地把握并表现出文本中的细节和含义。
+Sora模型在其核心构造上与GPT模型颇为相似，均是基于先进的Transformer架构，从而赋予了Sora卓越的扩展能力。Transformer架构采用的是一种革命性的自注意力机制的神经网络，它能够高效地处理输入文本中各个位置的信息。这种机制使得模型能捕捉到更广泛的全局上下文信息，极大地增强了对文本的理解深度。正是得益于这样的架构，Sora在将文本转化为视频的过程中，能够更加精准地把握并表现出文本中的细节和含义。
 
 ## 扩散模型和训练稳定性
 
-Sora模型引入了创新的扩散模型方法，这与传统的生成对抗网络(GAN)模型相比，展现出了更加卓越的生成多样性和训练稳定性。扩散模型的核心在于逐步消除噪声的过程，以此逐渐构建和完善视频内容。这种方法不仅有效提升了生成视频的质量，而且还确保了视频场景的真实感和细节丰富度。通过采用这种先进的扩散模型，Sora能够创造出更加逼真、细腻的视频环境，为用户带来更为生动和丰富的视觉体验。
+Sora模型引入了创新的扩散模型方法，这与传统的生成对抗网络（GAN）模型相比，展现出了更加卓越的生成多样性和训练稳定性。扩散模型的核心在于逐步消除噪声的过程，以此逐渐构建和完善视频内容。这种方法不仅有效提升了生成视频的质量，而且还确保了视频场景的真实感和细节丰富度。通过采用这种先进的扩散模型，Sora能够创造出更加逼真、细腻的视频环境，为用户带来更为生动和丰富的视觉体验。
 
 ## 生成视频的数据处理和压缩
 
@@ -180,9 +178,9 @@ Sora模型引入了创新的扩散模型方法，这与传统的生成对抗网�
 
 ## 视频质量和逼真度
 
-Sora模型在生成视频的过程中，注重保持视频质量和逼真度。通过采用Tansformer架构和扩散模型的方法，Sora能够生成更加连贯、且具有很高逼真度的视频场景。这使得Sora在应用领域具有广泛的潜力，比如可以用于影视制作、游戏开发等方面。
+Sora模型在生成视频的过程中，注重保持视频质量和逼真度。通过采用Transformer架构和扩散模型的方法，Sora能够生成更加连贯、且具有很高逼真度的视频场景。这使得Sora在应用领域具有广泛的潜力，比如可以用于影视制作、游戏开发等方面。
 
-更多内容，大家也可以查看官方技术文档链接:https://openai.com/research/video-generation-models-as-worldsimulators
+更多内容，大家也可以查看官方技术文档链接：https://openai.com/research/video-generation-models-as-worldsimulators
 
 # Sora提示词学习
 
@@ -199,7 +197,9 @@ Prompt: Animated scene features a close-up of a short fluffy monster kneeling be
 
 ![](img/87fb9a515da73db58285a7fc05d95533.png)
 
-[suv-in-the-dust.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PBcybn6CZokC61xlyKhcCsfUnkg)
+
+
+[`suv-in-the-dust.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PBcybn6CZokC61xlyKhcCsfUnkg)
 
 ```
 Prompt: The camera follows behind a white vintage SUV with a black roof rack as it speeds up a steep dirt road surrounded by pine trees on a steep mountain slope, dust kicks up from it’s tires, the sunlight shines on the SUV as it speeds along the dirt road, casting a warm glow over the scene. The dirt road curves gently into the distance, with no other cars or vehicles in sight. The trees on either side of the road are redwoods, with patches of greenery scattered throughout. The car is seen from the rear following the curve with ease, making it seem as if it is on a rugged drive through the rugged terrain. The dirt road itself is surrounded by steep hills and mountains, with a clear blue sky above with wispy clouds.
@@ -208,7 +208,7 @@ Prompt: The camera follows behind a white vintage SUV with a black roof rack as 
 
 ![](img/29ff0ecc679ee85532ad55665c195d29.png)
 
-[wooly-mammoth.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XDvSbOgv2oR2WIx2nRkcZyoknSe)
+[`wooly-mammoth.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XDvSbOgv2oR2WIx2nRkcZyoknSe)
 
 ```
 Prompt: Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.
@@ -217,7 +217,7 @@ Prompt: Several giant wooly mammoths approach treading through a snowy meadow, t
 
 ![](img/8f887c137c4ebe13408dd328ab7ce5cf.png)
 
-[mitten-astronaut.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/We19bX3DNoi371xBObWcWfZ5nSc)
+[`mitten-astronaut.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/We19bX3DNoi371xBObWcWfZ5nSc)
 
 ```
 Prompt: A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style, shot on 35mm film, vivid colors.
@@ -226,7 +226,7 @@ Prompt: A movie trailer featuring the adventures of the 30 year old space man we
 
 ![](img/c26966c590f4403c29d700df7dc6c7a6.png)
 
-[big-sur.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Say1byMT1owxWXxU5ykc1qH7nId)
+[`big-sur.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Say1byMT1owxWXxU5ykc1qH7nId)
 
 ```
 Prompt: Drone view of waves crashing against the rugged cliffs along Big Sur’s garay point beach. The crashing blue waters create white-tipped waves, while the golden light of the setting sun illuminates the rocky shore. A small island with a lighthouse sits in the distance, and green shrubbery covers the cliff’s edge. The steep drop from the road down to the beach is a dramatic feat, with the cliff’s edges jutting out over the sea. This is a view that captures the raw beauty of the coast and the rugged landscape of the Pacific Coast Highway.

@@ -1,34 +1,35 @@
+
 # 微学习20 | DeepSeek+dify：期末复习助手Agent
 
-> 来源：[https://datawhaler.feishu.cn/docx/NkIid2tBVoJteSxNVx9cvC99nlb](https://datawhaler.feishu.cn/docx/NkIid2tBVoJteSxNVx9cvC99nlb)
+> 来源：`https://datawhaler.feishu.cn/docx/NkIid2tBVoJteSxNVx9cvC99nlb`
 
 ## 一、前言
 
-[复习陪伴者](https://j1mbx7va0zr.feishu.cn/wiki/IYM0wXcLdiCZXPkv7VTcIXlwnMf?from=from_copylink)前我曾经在coze上创建过一个agent，名为 ，但是仍然有不足之处，它无法出题目，今天我们将在之前的基础上去迭代。
+[复习陪伴者](https://j1mbx7va0zr.feishu.cn/wiki/IYM0wXcLdiCZXPkv7VTcIXlwnMf?from=from_copylink)前我曾经在`coze`上创建过一个`agent`，名为 ，但是仍然有不足之处，它无法出题目，今天我们将在之前的基础上去迭代。
 
 ## 二、主要功能
 
 出现场景：一般期末复习阶段老师，会发许多的复习资料，我们就要从中去找出考点，还有加以复习并掌握，往往在复习中会遇到这么几个问题，不知道考点是什么，不知道题目会怎么出，不确定是否掌握老师给的资料（题库）
 
-2.1考点提取功能
+### 2.1 考点提取功能
 
-2.2出题功能
+### 2.2 出题功能
 
 ## 三、项目创建
 
-我们这个项目以dify+工作流模式运行
+我们这个项目以`dify`+工作流模式运行
 
-### 3.1安装dify
+### 3.1 安装 `dify`
 
-首先要安装dify，具体教程可以去网上搜索
+首先要安装`dify`，具体教程可以去网上搜索
 
-https://blog.csdn.net/qq_49035156/article/details/143264534
+`https://blog.csdn.net/qq_49035156/article/details/143264534`
 
-### 3.2创建应用
+### 3.2 创建应用
 
-选择Chatflow，
+选择`Chatflow`，
 
-为什么不选择agent模式呢，因为agent模式无法上传文档
+为什么不选择`agent`模式呢，因为`agent`模式无法上传文档
 
 ![](img/d37aac5888c437c3a97870b3e4874bb3.png)
 
@@ -36,13 +37,11 @@ https://blog.csdn.net/qq_49035156/article/details/143264534
 
 ![](img/44556d82220fc5e548b862332c702986.png)
 
-### 3.3申请api
+### 3.3 申请 `api`
 
-去火山引擎官网申请免费的deepseek的api
+去火山引擎官网申请免费的`deepseek`的`api`
 
-https://www.volcengine.com/
-
-![](img/a46903d0a9a9e9a32986756ed1e23795.png)
+`https://www.volcengine.com/`
 
 点击立即使用
 
@@ -60,7 +59,7 @@ https://www.volcengine.com/
 
 ![](img/e1f3c0d18133738bae9a01b7e4e72742.png)
 
-创建api
+创建 `api`
 
 ![](img/875edf1827967117fde32f92e8339b9e.png)
 
@@ -68,11 +67,11 @@ https://www.volcengine.com/
 
 ![](img/6a5f449e708d06dc9aa32a3d534bc39b.png)
 
-查看api key，切记要保密
+查看`api key`，切记要保密
 
 ![](img/e725f2ccb9a65144b0caa1827a7dfd19.png)
 
-### 3.4添加模型
+### 3.4 添加模型
 
 ![](img/a8004737d54b90dd2726ed0cf4030376.png)
 
@@ -82,17 +81,17 @@ https://www.volcengine.com/
 
 填入对应信息
 
-**选择api接入**
+选择`api`接入
 
 ![](img/4fcedbf1729c3078aecbe46f9d631ded.png)
 
 模型名称——》名称
 
-API Key——》API Key
+`API Key`——》`API Key`
 
 ![](img/f3829c398e19dea722b622fac8de13cc.png)
 
-Endpoint lD如下
+`Endpoint lD`如下
 
 ![](img/5193d4da573db972f355f82da6b3d466.png)
 
@@ -114,16 +113,16 @@ Endpoint lD如下
 
 ![](img/acef7a18ab0482b5d7584ec666a3f486.png)
 
-### 4.1**添加文档提取器**
+### 4.1 添加文档提取器
 
 ![](img/6f006f750c0a2416b779c14b4321cee2.png)
 
-### 4.2在第一个llm中添加提示词
+### 4.2 在第一个 `llm` 中添加提示词
 
 ![](img/4358acd5c03d8fc71d73dbb82d021c40.png)
 
 ```
-prompt = &quot;&quot;&quot;
+prompt = """
 请从以下教学材料中提取核心考点，按以下格式输出：
 [考点名称]: 
 - 考查频率: (高频/中频/低频)
@@ -132,12 +131,11 @@ prompt = &quot;&quot;&quot;
 - 关键步骤: (解题思路摘要)
 
 材料内容：{
-}}
-
-&quot;&quot;&quot;
+}
+"""
 ```
 
-### 4.3打开文档上传功能
+### 4.3 打开文档上传功能
 
 ![](img/f653f4dbf55db86461b1bea81a7eff7c.png)
 
@@ -147,16 +145,16 @@ prompt = &quot;&quot;&quot;
 
 ![](img/9e84024bc29625a7078028f52f167993.png)
 
-### 4.4在第2个llm上添加提示词
+### 4.4 在第 2 个 `llm` 上添加提示词
 
 ![](img/501c60220ecec530cd37cb64803adc66.png)
 
-```
-prompt_v2 = &quot;&quot;&quot;
+````
+prompt_v2 = """
 你是一位经验丰富的试题命制专家，请根据给定的考点分析结果完成以下任务：
 
 # 输入数据格式
-{{#llm.text#}}
+`{{#llm.text#}}`
 [考点名称]: 
 - 考查频率: {高/中/低频}
 - 关联公式: {公式列表}
@@ -164,30 +162,38 @@ prompt_v2 = &quot;&quot;&quot;
 - 关键步骤: {解题思路摘要}
 
 # 生成要求
-1. **原题再现**：生成1道完全匹配该考点的典型例题，需包含：
+1. 原题再现：生成1道完全匹配该考点的典型例题，需包含：
    - 题干描述（标注对应教材章节）
    - 完整解题过程（使用公式块）
    - 易错点提示
 
-2. **变式拓展**：基于原题生成2种变式类型：
+2. 变式拓展：基于原题生成2种变式类型：
    - 基础变式：修改参数/数值（保持相同解法）
    - 进阶变式：改变条件/增加限制（需要方法迁移）
 
-3. **跨题关联**：生成1道结合其他考点的综合应用题（需标注关联考点）
+3. 跨题关联：生成1道结合其他考点的综合应用题（需标注关联考点）
 
 # 输出格式
 ```markdown
-## 考点名称: {{考点名称}}
+
+## 考点名称: `{{考点名称}}`
 
 ### 原型例题
-📘 **题目** (教材P{{页码}}):  
-{{题干描述}}  
-✅ **解答**:  
-```math
-{{解题过程}}
-```
 
-### 4.5简化流程
+📘 **题目** (教材P`{{页码}}`):  
+
+`{{题干描述}}`  
+
+✅ **解答**:  
+
+```math
+`{{解题过程}}`
+```
+```
+"""
+````
+
+### 4.5 简化流程
 
 ![](img/b9e42b8fbf6408a92f34a83a90dff72a.png)
 
@@ -203,4 +209,4 @@ prompt_v2 = &quot;&quot;&quot;
 
 参考链接
 
-https://docs.dify.ai/zh-hans/guides/workflow/node/doc-extractor
+`https://docs.dify.ai/zh-hans/guides/workflow/node/doc-extractor`

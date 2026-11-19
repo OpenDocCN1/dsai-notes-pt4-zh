@@ -1,3 +1,4 @@
+
 # 胡扯社群指南
 
 > 来源：[https://huchegames.feishu.cn/docx/EOKudvKnRoNqLyxoGt5cl4Ftndg](https://huchegames.feishu.cn/docx/EOKudvKnRoNqLyxoGt5cl4Ftndg)
@@ -12,13 +13,13 @@
 
 ---
 
-# 胡扯社群（🛰️）
+## 胡扯社群（🛰️）
 
 胡扯社群包括「胡扯漫剧」、[「胡扯游戏」](https://huchegames.feishu.cn/wiki/Ea9mwwMgliqy4fk7At3cvaPgndW)、[「胡扯行业」](https://huchegames.feishu.cn/wiki/CIsLwWc5Bi9h46kL21HcdU6ynkf)、[「胡扯AI」](https://huchegames.feishu.cn/wiki/MCqXw959OiHOsRkHQP2cnC23nqd)三类社群，请先确定要加入哪个社群。
 
 每个社群的要求不同，具体请看下方的文档。
 
-## 胡扯漫剧
+### 胡扯漫剧
 
 胡扯漫剧初创期，欢迎关注👸号，直接扫码进群。若已满，可加曾老师🛰️入群。（🛰️参考下方内容）
 
@@ -26,15 +27,15 @@
 
 ![](img/67471e8b541da3101eb12cdfd83240f0.png)
 
-## 胡扯游戏
+### 胡扯游戏
 
 「胡扯游戏」群的要求最高，**入群比例仅 5.83%**。[加入「胡扯游戏」群](https://huchegames.feishu.cn/wiki/Ea9mwwMgliqy4fk7At3cvaPgndW)。
 
-## 胡扯 AI
+### 胡扯 AI
 
 [加入「胡扯AI」群](https://huchegames.feishu.cn/wiki/MCqXw959OiHOsRkHQP2cnC23nqd)胡扯AI」群讨论将 AI 深度整合进入游戏研发工作流： 。
 
-## 胡扯行业
+### 胡扯行业
 
 「胡扯行业」群不局限于游戏行业，游戏、电[加入「胡扯行业」群](https://huchegames.feishu.cn/wiki/CIsLwWc5Bi9h46kL21HcdU6ynkf)、工具、视频、泛互联网行业都可以加入： 。
 

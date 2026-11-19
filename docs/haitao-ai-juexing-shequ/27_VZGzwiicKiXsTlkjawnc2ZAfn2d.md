@@ -1,3 +1,4 @@
+
 # Coze视频生成插件使用说明
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/EaHXdNeZWoMPtFxxZBHcntoYnzf](https://zinxkclpk97.feishu.cn/docx/EaHXdNeZWoMPtFxxZBHcntoYnzf)
@@ -6,33 +7,37 @@
 
 [20250412210930_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YIofbYNftoDsuexOl7rc8P8Hnjh)
 
-插件地址：https://www.coze.cn/store/plugin/7432231425165852699
+插件地址：`https://www.coze.cn/store/plugin/7432231425165852699`
 
 ![](img/702db1babe97253f04f409a1851cc3a6.png)
 
-创建视频任务，参数如下
+## 创建视频任务
+
+参数如下
 
 ![](img/4c755e9a3c277e98aead0462e1599ca5.png)
 
-token需要先到这个地址进行注册：http://chat.fyshark.com/public/#/accountList
+`token`需要先到这个地址进行注册：`http://chat.fyshark.com/public/#/accountList`
 
-点击主页获取使用教程：http://chat.fyshark.com/public/#/
+点击主页获取使用教程：`http://chat.fyshark.com/public/#/`
 
 ![](img/cf555a374286ee3d4e01102b9a648814.png)
 
-首先是在海螺Ai官网，国际版，登录你的账户。
+## 获取海螺AI Token
 
-+   [使用google](https://hailuoai.video/)游览器，前往海螺AI官网（推荐使用国际版）-> 前往海螺AI官网
+首先是在海螺AI官网，国际版，登录你的账户。
 
-+   点击F12，打开浏览器调试模式,找到Newwork点击
++ [使用google](https://hailuoai.video/)游览器，前往海螺AI官网（推荐使用国际版）-> 前往海螺AI官网
 
-+   随便上传一张图片点击绘制，然后在Newwork中找到video?device_.....点击它
++ 点击F12，打开浏览器调试模式,找到Newwork点击
 
-+   随后点击Headers往下滑找到Token,随后复制整个token
++ 随便上传一张图片点击绘制，然后在Newwork中找到`video?device_.....`点击它
 
-+   将token复制到输入框中，点击保存
++ 随后点击`Headers`往下滑找到`Token`，随后复制整个`token`
 
-+   最后打开账号列表，点击添加账号，将token粘贴到输入框中，点击添加等待即可（注意：等待时间较长）
++ 将`token`复制到输入框中，点击保存
+
++ 最后打开账号列表，点击添加账号，将`token`粘贴到输入框中，点击添加等待即可（注意：等待时间较长）
 
 ![](img/47b9ecc4686c9c211ff7e9a667f55efc.png)
 
@@ -44,9 +49,9 @@ token需要先到这个地址进行注册：http://chat.fyshark.com/public/#/acc
 
 路径原理：Coze插件-->挂机平台-->海螺AI
 
-Coze插件配置的是挂机平台的token，获取方式如下。
+Coze插件配置的是挂机平台的`token`，获取方式如下。
 
-http://chat.fyshark.com/public/#/accountList
+`http://chat.fyshark.com/public/#/accountList`
 
 在挂机平台，打开F12，也是在network页面获取。
 
@@ -54,7 +59,7 @@ http://chat.fyshark.com/public/#/accountList
 
 ![](img/036c5afb24c91991afb53318f7ce402e.png)
 
-model_id，目前也与海螺AI官网支持的模型相对。(I2V-01-Director、I2V-01-live)
+`model_id`，目前也与海螺AI官网支持的模型相对。(`I2V-01-Director`、`I2V-01-live`)
 
 ![](img/5c7d339800cfba337fbb43641da3c5a6.png)
 

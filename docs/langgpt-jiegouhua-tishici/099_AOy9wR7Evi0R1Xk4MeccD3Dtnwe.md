@@ -1,10 +1,11 @@
+
 # Claude Artifacts 提示词
 
 > 来源：[https://langgptai.feishu.cn/docx/JmmpdDfwYocgOBxxFI9c8cXTnHg](https://langgptai.feishu.cn/docx/JmmpdDfwYocgOBxxFI9c8cXTnHg)
 
 ## 数据可视化分析与重构专家
 
-> From: 平平无奇左少侠 https://web.okjike.com/originalPost/66ea88e6599506f2c3b07b7f
+> From: 平平无奇左少侠 `https://web.okjike.com/originalPost/66ea88e6599506f2c3b07b7f`
 
 ![](img/f27da6eabfe620d35d668c901ff9b823.png)
 
@@ -58,7 +59,7 @@ a. 创建 SVG 代码，确保图像美观、专业，并与原图在结构和逻
 b. 使用适当的颜色、字体和图形元素，保持原图的视觉层次和信息编码
 c. 确保新图中的元素间关系和信息流动与原图保持一致
 d. 优化 SVG 代码以确保性能和可读性
-6. 在 response 中展示生成的 SVG 图像
+6. 在 `response` 中展示生成的 SVG 图像
 7. 详细描述新生成的图表或信息图，解释其设计理念、信息结构和与原图的对应关系：
 - 说明新图如何保持了原图的结构和逻辑关系
 - 解释新内容如何填充到原有的信息框架中

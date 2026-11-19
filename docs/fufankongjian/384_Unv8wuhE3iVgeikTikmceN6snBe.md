@@ -1,10 +1,11 @@
+
 # 最热门MCP工具快速部署与智能体开发实战
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/LRU3d5yGHofZWQxtdNucPh5TnVd](https://kq4b3vgg5b.feishu.cn/docx/LRU3d5yGHofZWQxtdNucPh5TnVd)
+> 来源：`https://kq4b3vgg5b.feishu.cn/docx/LRU3d5yGHofZWQxtdNucPh5TnVd`
 
-## 课程说明：
+## 课程说明
 
-+   体验课内容节选自《2025大模型Agent智能体开发实战》(春季班)完整版付费课程
+体验课内容节选自《2025大模型Agent智能体开发实战》(春季班)完整版付费课程
 
 体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》(春季班)
 
@@ -14,11 +15,9 @@
 
 此外，公开课全套学习资料，已上传至网盘
 
-（链接: https://pan.baidu.com/s/1xzxrEdc1Rh-mImsFNCxxAw?pwd=5kus  ）
+（链接: `https://pan.baidu.com/s/1xzxrEdc1Rh-mImsFNCxxAw?pwd=5kus`）
 
 需要更系统深入学习大模型可扫码⬆️添加助教咨询喔～
-
----
 
 ## 一、MCP基础技术回顾
 
@@ -28,15 +27,15 @@ MCP，全称是Model Context Protocol，模型上下文协议，由Claude母公�
 
 ![](img/802ff04916260543c9fea326321ec7bb.png)
 
-MCP**刚发布的时候不**温不火，直到今年Agent**大爆发才被广泛关注。**而在今**年2月，Cursor正式宣布加**入MCP功能支持，一举将MCP推到了全体开发人员面前。从本质上来说，MCP是一种技术协议，一种智能体Agent开发过程中共同约定的一种规范。这就好比秦始皇的“书同文、车同轨”，在统一的规范下，大家的协作效率就能大幅提高，最终提升智能体Agent的开发效率。截止目前，已上千种MCP工具诞生，在强悍的MCP生态加持下， 人人手搓Manus的时代即将到来。
+MCP刚发布的时候不温不火，直到今年Agent大爆发才被广泛关注。而在今年2月，Cursor正式宣布加入MCP功能支持，一举将MCP推到了全体开发人员面前。从本质上来说，MCP是一种技术协议，一种智能体Agent开发过程中共同约定的一种规范。这就好比秦始皇的“书同文、车同轨”，在统一的规范下，大家的协作效率就能大幅提高，最终提升智能体Agent的开发效率。截止目前，已上千种MCP工具诞生，在强悍的MCP生态加持下，人人手搓Manus的时代即将到来。
 
-> 7分钟讲清楚MCP是什么？https://www.bilibili.com/video/BV1uXQzYaEpJ/
+> 7分钟讲清楚MCP是什么？`https://www.bilibili.com/video/BV1uXQzYaEpJ/`
 
 ![](img/def3f990d36c726bd0dc95e54da4e4f3.png)
 
-总的来说**，**MCP**解决的最大痛点，就是Agent开发中调用外部工具的技术门槛过高的问题。**
+总的来说，MCP解决的最大痛点，就是Agent开发中调用外部工具的技术门槛过高的问题。
 
-我们都知道，能调用外部工具，是大模型进化为智能体Agent的关键，如果不能使用外部工具，大模型就只能是个简单的聊天机器人，甚至连查询天气都做不到。由于底层技术限制啊，大模型本身是无法和外部工具直接通信的，因此Function calling的思路，就是创建一个外部函数（function）作为中介，一边传递大模型的请求，另一边调用外部工具，最终让大模型能够间接的调用外部工具。
+我们都知道，能调用外部工具，是大模型进化为智能体Agent的关键，如果不能使用外部工具，大模型就只能是个简单的聊天机器人，甚至连查询天气都做不到。由于底层技术限制，大模型本身是无法和外部工具直接通信的，因此Function calling的思路，就是创建一个外部函数（function）作为中介，一边传递大模型的请求，另一边调用外部工具，最终让大模型能够间接的调用外部工具。
 
 ![](img/7d17d7fa235ccca584a650b485062c93.png)
 
@@ -46,7 +45,7 @@ MCP**刚发布的时候不**温不火，直到今年Agent**大爆发才被广泛
 
 Function calling是个非常不错的技术设计，自诞生以来，一直被业内奉为圭臬。但唯一的问题就是，编写这个外部函数的工作量太大了，一个简单的外部函数往往就得上百行代码，而且，为了让大模型“认识”这些外部函数，我们还要额外为每个外部函数编写一个JSON Schema格式的功能说明，此外，我们还需要精心设计一个提示词模版，才能提高Function calling响应的准确率。
 
-而**MCP的目标，**就是能在Agent开发过程中，让大模型更加便捷的调用外部工具。为此，MCP提出了两个方案，其一，“车同轨、书同文”，统一Function calling的运行规范。
+而MCP的目标，就是能在Agent开发过程中，让大模型更加便捷的调用外部工具。为此，MCP提出了两个方案，其一，“车同轨、书同文”，统一Function calling的运行规范。
 
 首先是先统一名称，MCP把大模型运行环境称作 MCP Client，也就是MCP客户端，同时，把外部函数运行环境称作MCP Server，也就是MCP服务器，
 
@@ -56,7 +55,7 @@ Function calling是个非常不错的技术设计，自诞生以来，一直被�
 
 现在，只要你本地运行的大模型支持MCP协议，也就是只要安装了相关的库，仅需几行代码即可接入这些海量的外部工具，是不是感觉Agent开发门槛瞬间降低了呢。
 
-这**种“车同轨、书同文”的规范，在**技术领域就被称作协议，例如http就是网络信息交换的技术协议。各类技术协议的目标，都是希望通过提高协作效率来提升开发效率，而MCP，Model Context Protocol，就是一种旨在提高大模型Agent开发效率的技术协议。
+这种“车同轨、书同文”的规范，在技术领域就被称作协议，例如http就是网络信息交换的技术协议。各类技术协议的目标，都是希望通过提高协作效率来提升开发效率，而MCP，Model Context Protocol，就是一种旨在提高大模型Agent开发效率的技术协议。
 
 那既然是协议，必然是使用的人越多才越有用。因此，为了进一普及MCP协议，Anthropic还提供了一整套MCP客户端、服务器开发的SDK，也就是开发工具，并且支持Python、TS和Java等多种语言，借助SDK，仅需几行代码，就可以快速开发一个MCP服务器。
 
@@ -68,50 +67,47 @@ Function calling是个非常不错的技术设计，自诞生以来，一直被�
 
 ![](img/20996d2dbe8a9c2f77ecf0d843afc383.png)
 
-+
-
 ![](img/a536b18889b0c29003ec3f466aee542e.png)
 
 ![](img/4b3fe40e09c2b2aa3585bd67c7ffb149.png)
 
 ![](img/649a45a644d742cc90dc5af33336b6b9.png)
 
-> 7分钟讲清楚MCP是什么？https://www.bilibili.com/video/BV1uXQzYaEpJ/
+> 7分钟讲清楚MCP是什么？`https://www.bilibili.com/video/BV1uXQzYaEpJ/`
 
 ![](img/21b3e88fc1c20e77e82efe89eb08005b.png)
 
-> MCP技术开发入门实战！https://www.bilibili.com/video/BV1NLXCYTEbj/
+> MCP技术开发入门实战！`https://www.bilibili.com/video/BV1NLXCYTEbj/`
 
 ![](img/d233a5d07fd5fb4c58753f8f93c4cbc1.png)
 
-> MCP企业级智能体开发实战！https://www.bilibili.com/video/BV1n1ZuYjEzf
+> MCP企业级智能体开发实战！`https://www.bilibili.com/video/BV1n1ZuYjEzf`
 
 ![](img/9996e38a2f34778fa6c2ed82ad3552c9.png)
 
-### 2.MCP服务器Server合集
+### 2. MCP服务器Server合集
 
-+   MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
+- MCP官方服务器合集：`https://github.com/modelcontextprotocol/servers`
 
+- MCP Github热门导航：`https://github.com/punkpeye/awesome-mcp-servers`
 
-+   MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
+![](img/8414a9a540c22378f9a540c22378f9.png)
 
-![](img/8414a9a540c22378f1a31ebc9d0504ad.png)
-
-+   MCP工具注册平台：https://github.com/ahujasid/blender-mcp
+- MCP工具注册平台：`https://github.com/ahujasid/blender-mcp`
 
 ![](img/e0936d3b635b5248b102faaa51c08908.png)
 
-+   MCP导航：https://mcp.so/
+- MCP导航：`https://mcp.so/`
 
 ![](img/1e24f38d3598b7ad6657ba004dbed98b.png)
 
-+   阿里云百炼：https://bailian.console.aliyun.com/?tab=mcp
+- 阿里云百炼：`https://bailian.console.aliyun.com/?tab=mcp`
 
 ![](img/7cc91caa85f769ff4e96f9d26db27b97.png)
 
 ### 3. MCP热门客户端Client
 
-除了能在命令行中创建MCP客户端外，还支持各类客户端的调用：https://modelcontextprotocol.io/clients
+除了能在命令行中创建MCP客户端外，还支持各类客户端的调用：`https://modelcontextprotocol.io/clients`
 
 ![](img/bdd83979ca774ff8425371db1634b2e7.png)
 
@@ -125,15 +121,15 @@ Cursor是一款集成了人工智能功能的现代化代码编辑器，旨在�
 
 总之，Cursor结合MCP协议，为开发者打造了一个功能强大且高度可扩展的智能编码环境，使AI助手不仅能理解和生成代码，还能与广泛的外部工具和服务协同工作，真正实现了智能化的开发体验。
 
-+   cursor中国区官网：https://www.cursor.com/cn
+- cursor中国区官网：`https://www.cursor.com/cn`
 
 ![](img/bb39d313a040c8d90dc5cfcad1553a07.png)
 
-+   cursor 0219加入MCP功能更新公告：https://www.cursor.com/cn/changelog/agent-is-ready-and-ui-refresh?utm_source=chatgpt.com
+- cursor 0219加入MCP功能更新公告：`https://www.cursor.com/cn/changelog/agent-is-ready-and-ui-refresh?utm_source=chatgpt.com`
 
 ![](img/e6cff557fbcfe8811996f5a986366862.png)
 
-### 1.Cursor安装与Agent模式开启
+### 1. Cursor安装与Agent模式开启
 
 #### 1.1 Cursor安装流程
 
@@ -153,15 +149,15 @@ Cursor的Agent功能是其编辑器中的一项核心特性，旨在通过深度
 
 **Agent模式的主要功能包括：**
 
-+   **自动上下文提取**：Agent会自动从代码库中提取相关上下文信息，帮助开发者快速定位问题或生成代码。 citeturn0search0
+- **自动上下文提取**：Agent会自动从代码库中提取相关上下文信息，帮助开发者快速定位问题或生成代码。
 
-+   **运行终端命令**：无需离开编辑器，即可直接运行命令行操作。
+- **运行终端命令**：无需离开编辑器，即可直接运行命令行操作。
 
-+   **文件操作**：支持文件创建、修改、删除等操作，简化开发流程。
+- **文件操作**：支持文件创建、修改、删除等操作，简化开发流程。
 
-+   **语义搜索**：通过代码语义搜索功能，快速找到关键代码片段。
+- **语义搜索**：通过代码语义搜索功能，快速找到关键代码片段。
 
-启用Agent模式非常简单，只需使用快捷键 ⌘.（Mac）或 Ctrl + .（Windows/Linux），即可激活Agent功能。在Agent模式下，你可以通过命令行或快捷键执行上下文管理、终端操作和文件交互等操作。
+启用Agent模式非常简单，只需使用快捷键 `⌘.`（Mac）或 `Ctrl + .`（Windows/Linux），即可激活Agent功能。在Agent模式下，你可以通过命令行或快捷键执行上下文管理、终端操作和文件交互等操作。
 
 例如，在代码重构场景中，Agent会根据代码库上下文提供优化建议，并自动生成替代代码。当代码出现错误时，Agent不仅会标注问题，还会提供详细的修复建议，并自动修复。通过Agent模式，Cursor旨在为开发者提供一个智能、高效的编程环境，减少手动操作，提高开发效率。
 
@@ -187,49 +183,49 @@ Cursor 编辑器提供三种对话模式：Ask、Agent 和 Manual，每种模式
 
 **3. Manual 模式**： 此模式允许开发者手动控制 AI 对代码的修改。开发者可以选择特定的代码片段，描述希望进行的更改，AI 将根据描述提供修改建议，开发者可以选择是否应用这些更改。该模式适用于需要精确控制代码修改的场景。
 
-### 2.将新版Cursor接入MCP
+### 2. 将新版Cursor接入MCP
 
 Cursor接入MCP的方法有很多种，我们首先尝试将更加规范、维护更好的Smithery平台上的MCP工具接入Cursor，然后再接入GitHub MCP工具。
 
-+   https://smithery.ai/
+- `https://smithery.ai/`
 
 ![](img/ef2c988c2d4996c4ae19f81fdaffddd3.png)
 
-Sm**ithery 是一个专门用于管理和分发 MC**P（Model Context Protocol）服务器的平台，旨在帮助开发者和 AI 模型轻松发现、安装和管理各种 MCP 服务器。Smithery 平台上的 MCP 工具与 GitHub 上的 MCP 工具的对比：
+Smithery 是一个专门用于管理和分发 MCP（Model Context Protocol）服务器的平台，旨在帮助开发者和 AI 模型轻松发现、安装和管理各种 MCP 服务器。Smithery 平台上的 MCP 工具与 GitHub 上的 MCP 工具的对比：
 
-1.  **托管方式：**
+1. **托管方式：**
 
-+   **Smithery 平台：**提供两种模式的 MCP 服务器：
+   - **Smithery 平台：**提供两种模式的 MCP 服务器：
 
-+   **远程（Remote）/ 托管（Hosted）：**这些服务器由 Smithery 在其基础设施上运行，用户通过网络访问。
+     - **远程（Remote）/ 托管（Hosted）：**这些服务器由 Smithery 在其基础设施上运行，用户通过网络访问。
 
-+   **本地（Local）：**用户可以通过 Smithery 的 CLI 工具将 MCP 服务器安装并运行在本地环境中。
+     - **本地（Local）：**用户可以通过 Smithery 的 CLI 工具将 MCP 服务器安装并运行在本地环境中。
 
-+   **GitHub：**主要提供 MCP 服务器的源代码，开发者需要自行下载、配置并在本地或自有服务器上运行。
+   - **GitHub：**主要提供 MCP 服务器的源代码，开发者需要自行下载、配置并在本地或自有服务器上运行。
 
-1.  **安装与管理：**
+1. **安装与管理：**
 
-+   **Smithery 平台：**提供统一的界面和 CLI 工具，简化了 MCP 服务器的发现、安装和管理过程。用户可以通过简单的命令或界面操作完成服务器的部署和配置。
+   - **Smithery 平台：**提供统一的界面和 CLI 工具，简化了 MCP 服务器的发现、安装和管理过程。用户可以通过简单的命令或界面操作完成服务器的部署和配置。
 
-+   **GitHub：**开发者需要手动克隆仓库、安装依赖项，并根据提供的文档进行配置和运行，过程相对繁琐，需要更多的技术背景知识。
+   - **GitHub：**开发者需要手动克隆仓库、安装依赖项，并根据提供的文档进行配置和运行，过程相对繁琐，需要更多的技术背景知识。
 
-1.  **安全性与控制：**
+1. **安全性与控制：**
 
-+   **Smithery 平台：**对于托管的 MCP 服务器，Smithery 声明其配置参数（如访问令牌）是临时的，不会长期存储在其服务器上。 然而，用户需信任 Smithery 的数据处理政策。
+   - **Smithery 平台：**对于托管的 MCP 服务器，Smithery 声明其配置参数（如访问令牌）是临时的，不会长期存储在其服务器上。 然而，用户需信任 Smithery 的数据处理政策。
 
-+   **GitHub：**开发者完全控制 MCP 服务器的代码和运行环境，可以自行审查代码，确保安全性和隐私性。
+   - **GitHub：**开发者完全控制 MCP 服务器的代码和运行环境，可以自行审查代码，确保安全性和隐私性。
 
-1.  **社区与支持：**
+1. **社区与支持：**
 
-+   **Smithery 平台：**作为 MCP 服务器的集中管理平台，Smithery 聚集了大量的 MCP 服务器，方便开发者查找和使用。
+   - **Smithery 平台：**作为 MCP 服务器的集中管理平台，Smithery 聚集了大量的 MCP 服务器，方便开发者查找和使用。
 
-+   **GitHub：**作为全球最大的开源平台，拥有广泛的社区支持，开发者可以在相关仓库的 issue 区域提出问题或贡献代码。
+   - **GitHub：**作为全球最大的开源平台，拥有广泛的社区支持，开发者可以在相关仓库的 issue 区域提出问题或贡献代码。
 
 #### 2.1 安装基础依赖
 
-MCP 工具依赖于 Node.js 和 npm，我们需要先对其进行安装。Windows下可以在官网上进行下载安装：https://nodejs.org/zh-cn
+MCP 工具依赖于 Node.js 和 `npm`，我们需要先对其进行安装。Windows下可以在官网上进行下载安装：`https://nodejs.org/zh-cn`
 
-在使用 Model Context Protocol（MCP）时，是否需要安装 Node.js 取决于您所选择的 MCP 服务器的实现方式。MCP 是一个开放协议，允许大型语言模型（LLM）与外部工具和数据源进行标准化交互。不同的 MCP 服务器可以使用多种编程语言实现，包括但不限于 Node.js、Python 和 Java。而目前Node.js 实现的 MCP 服务器：许多开发者选择使用 Node.js 来实现 MCP 服务器，主要因为其拥有丰富的包管理生态系统（如 npm），以及在处理异步操作和 I/O 密集型任务方面的高效性。例如，开发者可以使用 Node.js 快速搭建一个 MCP 服务器，以提供特定的功能或工具。
+在使用 Model Context Protocol（MCP）时，是否需要安装 Node.js 取决于您所选择的 MCP 服务器的实现方式。MCP 是一个开放协议，允许大型语言模型（LLM）与外部工具和数据源进行标准化交互。不同的 MCP 服务器可以使用多种编程语言实现，包括但不限于 Node.js、Python 和 Java。而目前Node.js 实现的 MCP 服务器：许多开发者选择使用 Node.js 来实现 MCP 服务器，主要因为其拥有丰富的包管理生态系统（如 `npm`），以及在处理异步操作和 I/O 密集型任务方面的高效性。例如，开发者可以使用 Node.js 快速搭建一个 MCP 服务器，以提供特定的功能或工具。
 
 ![](img/6b21bf64deb7228171a7190f1ac35747.png)
 
@@ -241,10 +237,10 @@ MCP 工具依赖于 Node.js 和 npm，我们需要先对其进行安装。Window
 
 ![](img/464e7f1fbc2d4a54240b037168229f6f.png)
 
-然后使用pip安装uv：
+然后使用`pip`安装`uv`：
 
 ```
- pip install uv
+pip install uv
 ```
 
 安装完成后即可在cursor中查看安装结果：
@@ -252,14 +248,18 @@ MCP 工具依赖于 Node.js 和 npm，我们需要先对其进行安装。Window
 ```
 node -v
 npm -v
- pip show uv
+pip show uv
 ```
 
 ![](img/f8fa2a541a0df10548b977bb9c003162.png)
 
 #### 2.2 尝试为Cursor添加MCP工具
 
-Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器工具，旨在通过结构化的思维流程，帮助用户动态、反思性地解决复杂问题。 该工具将问题拆解为可管理的步骤，每个步骤都可以建立在先前的见解之上，或对其进行质疑和修正，从而逐步深化对问题的理解，最终形成全面的解决方案。
+
+
+## 一、Sequential Thinking 接入 MCP
+
+Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器工具，旨在通过结构化的思维流程，帮助用户动态、反思性地解决复杂问题。该工具将问题拆解为可管理的步骤，每个步骤都可以建立在先前的见解之上，或对其进行质疑和修正，从而逐步深化对问题的理解，最终形成全面的解决方案。
 
 ![](img/e4fd7e23419f112ceab29dc6a386a1bc.png)
 
@@ -267,8 +267,7 @@ Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器�
 
 ![](img/d38fb91e2bd01ce4c7b28a3efa2d1f91.png)
 
-然后打开cursor：
-
+然后打开 cursor：
 
 并写入如下内容：
 
@@ -288,12 +287,9 @@ Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器�
     }
 ```
 
-
-然后回到MCP Servers页面，等待验证：
-
+然后回到 MCP Servers 页面，等待验证：
 
 验证通过后，即可开启自动调用工具选项：
-
 
 点击确认：
 
@@ -307,22 +303,21 @@ Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器�
 
 ![](img/770fcbf669755d365f8a6c313826c9d1.png)
 
-#### 2.4 添加Playwright MCP
+### 2.4 添加 Playwright MCP
 
-P[laywright ](https://playwright.dev/)Automation 是一个基于 Model Context Protocol（MCP）的服务器工具，利用 Microsoft 开发的开源浏览器自动化库 Playwright，为大型语言模型（LLMs）和 AI 助手提供与网页交互的能力。
+[Playwright](https://playwright.dev/) Automation 是一个基于 Model Context Protocol（MCP）的服务器工具，利用 Microsoft 开发的开源浏览器自动化库 Playwright，为大型语言模型（LLMs）和 AI 助手提供与网页交互的能力。
 
 **主要功能：**
 
-+   **网页导航与交互**：自动执行网页导航、点击、表单填写等操作，支持复杂的用户行为模拟。
++ **网页导航与交互**：自动执行网页导航、点击、表单填写等操作，支持复杂的用户行为模拟。
 
-+   **内容提取与网页抓取**：从网页中提取结构化数据，适用于信息检索和内容分析。
++ **内容提取与网页抓取**：从网页中提取结构化数据，适用于信息检索和内容分析。
 
-+   **截图与可视化**：捕获网页或特定元素的截图，便于调试和结果展示。
++ **截图与可视化**：捕获网页或特定元素的截图，便于调试和结果展示。
 
-+   **JavaScript 执行**：在浏览器环境中执行自定义 JavaScript 代码，满足特定的交互需求。
++ **JavaScript 执行**：在浏览器环境中执行自定义 JavaScript 代码，满足特定的交互需求。
 
-Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-mcp
-
+Playwright Automation 主页：`https://smithery.ai/server/@microsoft/playwright-mcp`
 
 ![](img/a2cb9f3967671fa5a5723e764bd2cdb2.png)
 
@@ -344,7 +339,6 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
     }
 ```
 
-
 ![](img/86b376a9f5289b1b097797b009ac65cf.png)
 
 然后输入如下问题：
@@ -353,13 +347,13 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 你好，请帮我查找MCP（Model Context Protocol）技术的相关内容，并制作一份简易的入门级调研报告，MCP官网地址在@https://github.com/modelcontextprotocol 。你可以使用server-sequential-thinking进行思考，并使用playwright-mcp进行网络信息获取。
 ```
 
-此时MCP工具会自动打开网页进行浏览，然后梳理总结报告内容：
+此时 MCP 工具会自动打开网页进行浏览，然后梳理总结报告内容：
 
 ![](img/4c20abd865ecbd98151a9d09cbf1dc48.png)
 
-#### 2.4 添加FileSystem工具
+### 2.5 添加 FileSystem 工具
 
-+   FileSystem工具：https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+`FileSystem` 工具：`https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem`
 
 ![](img/86cda13c1cd4c2771308357fa407d96e.png)
 
@@ -367,13 +361,13 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 **主要功能：**
 
-+   **文件读写**：允许读取和写入文件内容，支持创建新文件或覆盖现有文件。
++ **文件读写**：允许读取和写入文件内容，支持创建新文件或覆盖现有文件。
 
-+   **目录管理**：支持创建、列出和删除目录，以及移动文件或目录。
++ **目录管理**：支持创建、列出和删除目录，以及移动文件或目录。
 
-+   **文件搜索**：能够在指定路径中搜索匹配特定模式的文件或目录。
++ **文件搜索**：能够在指定路径中搜索匹配特定模式的文件或目录。
 
-+   **元数据获取**：提供获取文件或目录的详细元数据，包括大小、创建时间、修改时间、访问时间、类型和权限等信息。
++ **元数据获取**：提供获取文件或目录的详细元数据，包括大小、创建时间、修改时间、访问时间、类型和权限等信息。
 
 调用过程如下，需要写入如下配置：
 
@@ -391,30 +385,27 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
     }
 ```
 
-
-
 然后进行测试：
 
 ```
 非常好，接下来请把你的这份调研报告，调用filesystem工具，以md格式写入本地文件，并取名为MCP技术初级调研报告
 ```
 
-
 ![](img/2c2243d1667dafe0ba7a409bdd05c8e5.png)
 
-## 三、个人助理Cherry Studio接入MCP实现流程
+## 三、个人助理 Cherry Studio 接入 MCP 实现流程
 
-**Cherry Studio** 是一款功能强大的桌面客户端，支持与多种大型语言模型（LLM）服务商的无缝集成，包括 OpenAI、Gemini、Anthropic 等，同时兼容本地模型，如通过 Ollama 和 LM Studio 部署的模型。该应用适用于 Windows、Mac 和 Linux 操作系统，提供了丰富的个性化选项和先进的功能，旨在帮助用户在各种场景下提升工作效率。
+Cherry Studio 是一款功能强大的桌面客户端，支持与多种大型语言模型（LLM）服务商的无缝集成，包括 OpenAI、Gemini、Anthropic 等，同时兼容本地模型，如通过 Ollama 和 LM Studio 部署的模型。该应用适用于 Windows、Mac 和 Linux 操作系统，提供了丰富的个性化选项和先进的功能，旨在帮助用户在各种场景下提升工作效率。
 
 **主要功能：**
 
-+   **多模型支持**：用户可以快速在不同的 LLM 之间切换，以满足不同的需求。
++ **多模型支持**：用户可以快速在不同的 LLM 之间切换，以满足不同的需求。
 
-+   **AI 助手与对话**：内置超过 300 个预配置的 AI 助手，并支持自定义助手创建，方便用户根据具体任务定制个性化助手。
++ **AI 助手与对话**：内置超过 300 个预配置的 AI 助手，并支持自定义助手创建，方便用户根据具体任务定制个性化助手。
 
-+   **文档与数据处理**：支持处理多种文件格式，包括文本、图像、Office 文档和 PDF 等，内置 WebDAV 文件管理和备份功能，方便用户管理和备份文件。
++ **文档与数据处理**：支持处理多种文件格式，包括文本、图像、Office 文档和 PDF 等，内置 WebDAV 文件管理和备份功能，方便用户管理和备份文件。
 
-+   **实用工具集成**：提供全局搜索、主题管理、AI 驱动的翻译等实用工具，增强用户体验。
++ **实用工具集成**：提供全局搜索、主题管理、AI 驱动的翻译等实用工具，增强用户体验。
 
 **接入 MCP 的优势：**
 
@@ -422,13 +413,13 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 例如，用户可以在 Cherry Studio 中通过自然语言指令，直接让 AI 助手访问本地文件系统、调用浏览器进行网页搜索，甚至控制其他专业软件进行特定操作。这种深度集成使得用户无需离开 Cherry Studio，就能完成以往需要在多个工具之间切换才能完成的任务，大大提升了工作效率和工作流的连贯性。
 
-+   CherryStudio主页：https://github.com/CherryHQ/cherry-studio
+CherryStudio 主页：`https://github.com/CherryHQ/cherry-studio`
 
 ![](img/8efb7070b6a773b9125478f4bdff8f1f.png)
 
-### 1.Cherry Studio安装流程
+### 1. Cherry Studio 安装流程
 
-+   CherryStudio文档页：https://docs.cherry-ai.com/cherry-studio/download
+CherryStudio 文档页：`https://docs.cherry-ai.com/cherry-studio/download`
 
 ![](img/908f05a0c940efe578771603360c5d26.png)
 
@@ -442,17 +433,13 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 ![](img/2aacedae256a10a97ca714a467c9181a.png)
 
-然后我们可以将模型切换为DeepSeek官方的模型API：
-
+然后我们可以将模型切换为 DeepSeek 官方的模型 API：
 
 然后开启：
 
-
 并尝试进行使用：
 
-
-
-同时，为了能顺利调用MCP工具，我们还需要安装uv和bun文件：
+同时，为了能顺利调用 MCP 工具，我们还需要安装 `uv` 和 `bun` 文件：
 
 ![](img/8dde9364f0831c5ad42b2a6ce64d6229.png)
 
@@ -462,17 +449,17 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 
 ![](img/6dbca5248e79ea25fafca8e0a8b1fe02.png)
 
-然后在C:\Users{用户名}下创建.cherrystudio\bin目录，并将上面三个.exe文件移入即可。
+然后在 `C:\Users{用户名}` 下创建 `.cherrystudio\bin` 目录，并将上面三个 `.exe` 文件移入即可。
 
 ![](img/eabd29cfbd376499d407d29e445553a1.png)
 
-其他操作系统配置详见：https://docs.cherry-ai.com/advanced-basic/mcp/install
+其他操作系统配置详见：`https://docs.cherry-ai.com/advanced-basic/mcp/install`
 
-### 2. Cherry Studio接入MCP流程
+### 2. Cherry Studio 接入 MCP 流程
 
-接下来尝试接入filesystem MCP工具：https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem 。
+接下来尝试接入 `filesystem` MCP 工具：`https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem` 。
 
-需要在编辑MCP配置页面输入如下内容：
+需要在编辑 MCP 配置页面输入如下内容：
 
 ```
 {
@@ -491,31 +478,27 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
 }
 ```
 
-
 然后点击开启：
 
-
-然后在对话中开启MCP工具，这里可选一个或者多个工具：
-
-
+然后在对话中开启 MCP 工具，这里可选一个或者多个工具：
 
 ![](img/9f1605057c4f9b1c2485fbb83f29d83b.png)
 
-同时再尝试接入fetch MCP工具，https://github.com/modelcontextprotocol/servers/tree/main/src/fetch：
+同时再尝试接入 `fetch` MCP 工具，`https://github.com/modelcontextprotocol/servers/tree/main/src/fetch`：
 
 ![](img/8d0920c9351792f33dbf24899f8723c4.png)
 
-**Fetch MCP 服务器**是一个遵循模型上下文协议（Model Context Protocol，MCP）的服务器工具，旨在为大型语言模型（LLMs）提供从互联网检索和处理网页内容的能力。通过将网页的 HTML 内容转换为 Markdown 格式，Fetch MCP 使得 LLMs 能够更高效地理解和利用网页信息。
+Fetch MCP 服务器是一个遵循模型上下文协议（Model Context Protocol，MCP）的服务器工具，旨在为大型语言模型（LLMs）提供从互联网检索和处理网页内容的能力。通过将网页的 HTML 内容转换为 Markdown 格式，Fetch MCP 使得 LLMs 能够更高效地理解和利用网页信息。
 
 **主要功能：**
 
-+   **网页内容获取与转换**：Fetch MCP 提供了 fetch 工具，可从指定的 URL 获取网页内容，并将其提取为 Markdown 格式，方便 LLMs 消化和处理。
++ **网页内容获取与转换**：Fetch MCP 提供了 `fetch` 工具，可从指定的 URL 获取网页内容，并将其提取为 Markdown 格式，方便 LLMs 消化和处理。
 
-+   **支持多种内容格式**：除了 Markdown，Fetch MCP 还支持获取网页的 HTML、JSON 和纯文本格式，满足不同应用场景的需求。
++ **支持多种内容格式**：除了 Markdown，Fetch MCP 还支持获取网页的 HTML、JSON 和纯文本格式，满足不同应用场景的需求。
 
-+   **内容截取与分页**：通过 start_index 参数，用户可以指定从网页内容的特定位置开始提取，允许模型分段读取网页，直到找到所需信息。
++ **内容截取与分页**：通过 `start_index` 参数，用户可以指定从网页内容的特定位置开始提取，允许模型分段读取网页，直到找到所需信息。
 
-同样我们需要在MCP配置页面写入如下内容
+同样我们需要在 MCP 配置页面写入如下内容
 
 ```
   &quot;fetch&quot;: {
@@ -524,127 +507,115 @@ Playwright Automation主页：https://smithery.ai/server/@microsoft/playwright-m
   }
 ```
 
-
 然后开启工具：
-
 
 并尝试进行调用：
 
 ![](img/b47634b0b0b0caec9f6e7e3c560ae4c8.png)
 
-## 四、阿里云百炼平台接入MCP
+## 四、阿里云百炼平台接入 MCP
 
-+   阿里云百炼平台：https://bailian.console.aliyun.com/#/home
-
+阿里云百炼平台：`https://bailian.console.aliyun.com/#/home`
 
 ### 1. 阿里云百炼平台介绍
 
-**阿里云百炼平台**是一款一站式的大模型开发及应用构建平台，旨在帮助开发者和业务人员快速设计和构建大模型应用。用户可以通过简洁的界面操作，在短时间内开发出大模型应用或训练专属模型，从而将更多精力专注于应用创新。
+阿里云百炼平台是一款一站式的大模型开发及应用构建平台，旨在帮助开发者和业务人员快速设计和构建大模型应用。用户可以通过简洁的界面操作，在短时间内开发出大模型应用或训练专属模型，从而将更多精力专注于应用创新。
 
-近期，阿里云百炼平台正式推出了全生命周期的MCP（Model-Connect-Protocol）服务，实现了从资源管理到部署运维的全流程自动化。用户仅需5分钟即可快速创建连接MCP服务的智能体（Agent），将大模型技术转化为生产力工具。首批集成了包括高德地图、无影、Fetch、Notion等50余款阿里巴巴集团及第三方MCP服务，覆盖生活服务、办公协同、内容创作等多个领域。
+近期，阿里云百炼平台正式推出了全生命周期的 MCP（Model-Connect-Protocol）服务，实现了从资源管理到部署运维的全流程自动化。用户仅需 5 分钟即可快速创建连接 MCP 服务的智能体（Agent），将大模型技术转化为生产力工具。首批集成了包括高德地图、无影、Fetch、Notion 等 50 余款阿里巴巴集团及第三方 MCP 服务，覆盖生活服务、办公协同、内容创作等多个领域。
 
-**接入MCP的优势：**
+**接入 MCP 的优势：**
 
-1.  **快速开发与部署**：通过MCP服务，用户无需管理资源、开发部署和工程运维等复杂工作，可在短时间内搭建并上线智能体应用。
+1. **快速开发与部署**：通过 MCP 服务，用户无需管理资源、开发部署和工程运维等复杂工作，可在短时间内搭建并上线智能体应用。
 
-1.  **丰富的生态系统**：百炼平台整合了200多款业界领先的大模型和阿里云函数计算资源，以及众多MCP服务，提供一站式智能体开发解决方案，满足不同场景的应用需求。
+2. **丰富的生态系统**：百炼平台整合了 200 多款业界领先的大模型和阿里云函数计算资源，以及众多 MCP 服务，提供一站式智能体开发解决方案，满足不同场景的应用需求。
 
-1.  **深度场景化定制**：与市场上通用的Agent应用不同，百炼MCP服务支持深度场景化定制。用户无需编写代码，通过简单的可视化配置即可打造具备自主思考、任务拆解和决策执行等能力的专属智能体。
+3. **深度场景化定制**：与市场上通用的 Agent 应用不同，百炼 MCP 服务支持深度场景化定制。用户无需编写代码，通过简单的可视化配置即可打造具备自主思考、任务拆解和决策执行等能力的专属智能体。
 
-1.  **持续扩展的应用边界**：随着MCP协议生态的不断扩展，百炼平台将持续引入更多阿里巴巴集团及第三方应用服务，进一步拓宽智能体的应用边界，推动大模型技术在各行业的落地应用。
+4. **持续扩展的应用边界**：随着 MCP 协议生态的不断扩展，百炼平台将持续引入更多阿里巴巴集团及第三方应用服务，进一步拓宽智能体的应用边界，推动大模型技术在各行业的落地应用。
 
-通过接入MCP服务，阿里云百炼平台为用户提供了高效、便捷的大模型应用开发环境，降低了开发门槛，加速了大模型技术的产业化应用进程。
+通过接入 MCP 服务，阿里云百炼平台为用户提供了高效、便捷的大模型应用开发环境，降低了开发门槛，加速了大模型技术的产业化应用进程。
 
-### 2. 阿里云百炼接入MCP流程
+### 2. 阿里云百炼接入 MCP 流程
 
-然后我们进入MCP服务中心，先选择高德MCP工具进行测试：
-
+然后我们进入 MCP 服务中心，先选择高德 MCP 工具进行测试：
 
 点击开启服务：
 
-
 ![](img/f1ffeba6d6ae4700145db373bec01f03.png)
 
-**高德地图 MCP 工具**是高德地图基于 MCP 协议构建的服务器，整合了高德开放平台的地图服务与智能算法，为企业及开发者提供全场景的地图服务解决方案。 其 12 项核心功能涵盖了地图服务的方方面面，满足企业开发的多样化需求。
+高德地图 MCP 工具是高德地图基于 MCP 协议构建的服务器，整合了高德开放平台的地图服务与智能算法，为企业及开发者提供全场景的地图服务解决方案。其 12 项核心功能涵盖了地图服务的方方面面，满足企业开发的多样化需求。
 
 **主要功能：**
 
-+   **POI 智能提取**：能够从文字中精准提取 POI（兴趣点）信息，涵盖位置、详情、打卡点、价格等多维度内容。
++ **POI 智能提取**：能够从文字中精准提取 POI（兴趣点）信息，涵盖位置、详情、打卡点、价格等多维度内容。
 
-+   **路径规划**：提供驾车、步行、骑行等多种出行方式的路径规划服务，帮助用户选择最优路线。
++ **路径规划**：提供驾车、步行、骑行等多种出行方式的路径规划服务，帮助用户选择最优路线。
 
-+   **实时路况查询**：实时查询特定道路或区域的拥堵状况及趋势，为出行提供及时参考。
++ **实时路况查询**：实时查询特定道路或区域的拥堵状况及趋势，为出行提供及时参考。
 
-+   **天气查询**：通过经纬度信息，获取实时天气情况及未来天气预报，为用户出行计划提供支持。
++ **天气查询**：通过经纬度信息，获取实时天气情况及未来天气预报，为用户出行计划提供支持。
 
 通过高德地图 MCP 工具，AI 智能体可以直接调用高德地图的各项服务，实现如位置查询、路线规划、实时路况查询等功能，提升用户体验和服务效率。
 
-然后进入应用管理，即可看到当前开启的MCP服务：
+然后进入应用管理，即可看到当前开启的 MCP 服务：
 
-
-然后点击创建新的应用，其实也就是新的Agent：
-
+然后点击创建新的应用，其实也就是新的 Agent：
 
 点击创建
 
-
-然后即可进行模型和MCP工具配置了：
-
-
-
-
+然后即可进行模型和 MCP 工具配置了：
 
 然后输入系统提示词：你是一名经验丰富的导游，请耐心认真的为用户规划出游行程。
 
-
 然后测试进行出游路线规划：
 
+能够看到规划结果和 MCP 工具调用流程：
 
-能够看到规划结果和MCP工具调用流程：
-
-
-### 2. Firecrawl MCP工具
+### 3. Firecrawl MCP 工具
 
 Firecrawl MCP 工具是一款基于模型上下文协议（MCP）的企业级网页数据采集服务器，由 Mendable.ai 开发，专门针对复杂网页场景设计。它支持 JavaScript 动态渲染、批量数据处理、智能内容搜索和深度网页爬取等高级功能，能够为大型语言模型（LLM）提供强大的网页抓取能力。
 
 **主要功能：**
 
-+   **JavaScript 渲染**：能够处理动态网页内容，突破传统抓取工具的局限，获取更全面的数据。
++ **JavaScript 渲染**：能够处理动态网页内容，突破传统抓取工具的局限，获取更全面的数据。
 
-+   **批量处理**：支持并行处理和队列管理，提高数据抓取效率。
 
-+   **智能限速**：根据网络状况和任务需求智能调整抓取速度，避免对目标网站造成过大压力。
 
-+   多种输出格式*：支持将抓取的内容转换为 Markdown、HTML 等格式，满足不同场景的需求。
+# 大模型工具集成与 MCP 配置指南
+
+## Firecrawl 工具介绍与 API 配置
+
++ **批量处理**：支持并行处理和队列管理，提高数据抓取效率。
+
++ **智能限速**：根据网络状况和任务需求智能调整抓取速度，避免对目标网站造成过大压力。
+
++ 多种输出格式：支持将抓取的内容转换为 Markdown、HTML 等格式，满足不同场景的需求。
 
 通过 Firecrawl MCP 工具，开发者可以高效地从网页提取结构化数据，增强 LLM 在信息检索和内容生成方面的能力。
 
 > **Firecrawl**和**Fetch**都是基于模型上下文协议（MCP）的服务器工具，旨在增强大型语言模型（LLMs）对网页内容的获取和处理能力，但它们在功能和适用场景上存在显著差异。
 
-> Firecrawl MCP 工具：
+> **Firecrawl MCP 工具：**
 
-+   **高级网页抓取**：Firecrawl 专为复杂的网页抓取任务设计，支持 JavaScript 渲染，能够处理动态内容丰富的网站。
++ **高级网页抓取**：Firecrawl 专为复杂的网页抓取任务设计，支持 JavaScript 渲染，能够处理动态内容丰富的网站。
 
-+   **批量处理与深度爬取**：具备批量数据处理、URL 发现和深度爬取能力，适用于大规模数据采集任务。
++ **批量处理与深度爬取**：具备批量数据处理、URL 发现和深度爬取能力，适用于大规模数据采集任务。
 
-+   **智能内容搜索**：内置智能内容搜索和提取功能，能够高效地从网页中提取结构化数据。
++ **智能内容搜索**：内置智能内容搜索和提取功能，能够高效地从网页中提取结构化数据。
 
 > **Fetch MCP 工具：**
 
-+   **网页内容获取与转换**：Fetch 主要用于从指定的 URL 获取网页内容，并将 HTML 转换为 Markdown 格式，便于 LLMs 理解和处理。
++ **网页内容获取与转换**：Fetch 主要用于从指定的 URL 获取网页内容，并将 HTML 转换为 Markdown 格式，便于 LLMs 理解和处理。
 
-+   **轻量级设计**：Fetch 注重简洁和易用，适合需要快速获取和转换网页内容的场景。
++ **轻量级设计**：Fetch 注重简洁和易用，适合需要快速获取和转换网页内容的场景。
 
 ![](img/2b30208f5a1c7d090689a71704e356f9.png)
 
-然后需要创建Firecrawl API：
-
-
+然后需要创建 Firecrawl API：
 
 点击复制即可：
 
-
-然后开启Firecrawl MCP工具：
+然后开启 Firecrawl MCP 工具：
 
 ![](img/a34cf22ff0e26b42c57636bf05594098.png)
 
@@ -670,11 +641,9 @@ Firecrawl MCP 工具是一款基于模型上下文协议（MCP）的企业级网
 
 ### 3. 百炼应用API获取与调用
 
-
-
 ![](img/736218e5607191935b03f2b072692f1f.png)
 
-然后我们即可使用API来调用已经创建好的应用：
+然后我们即可使用 API 来调用已经创建好的应用：
 
 ![](img/30822c2a45e0d97a1f66d682c424831b.png)
 
@@ -714,25 +683,25 @@ print(response.output.text)
 
 **主要功能：**
 
-+   **多模型支持**：兼容多种 LLM 运行环境，用户可以根据需求选择适合的模型进行部署和交互。
++ **多模型支持**：兼容多种 LLM 运行环境，用户可以根据需求选择适合的模型进行部署和交互。
 
-+   **离线运行**：设计上支持完全离线操作，确保数据隐私和安全，适合对数据敏感的应用场景。
++ **离线运行**：设计上支持完全离线操作，确保数据隐私和安全，适合对数据敏感的应用场景。
 
-+   **用户友好界面**：提供类似 ChatGPT 的交互界面，方便用户与本地或远程部署的语言模型进行对话。
++ **用户友好界面**：提供类似 ChatGPT 的交互界面，方便用户与本地或远程部署的语言模型进行对话。
 
-+   **自托管部署**：支持通过 Docker 等方式进行自托管部署，方便用户在本地环境中运行和管理。
++ **自托管部署**：支持通过 Docker 等方式进行自托管部署，方便用户在本地环境中运行和管理。
 
-### 1. 【可选】借助ollama拉取模型
+### 1. 【可选】借助 `ollama` 拉取模型
 
-#### 1.1 ollama安装与部署
+#### 1.1 `ollama` 安装与部署
 
-Open-WebUI原生支持使用Ollama调用本地模型进行推理，Ollama是一款大模型下载、管理、推理、优化集一体的强大工具，可以快速调用各类离线部署的大模型。Ollama官网：https://ollama.com/
+Open-WebUI 原生支持使用 Ollama 调用本地模型进行推理，Ollama 是一款大模型下载、管理、推理、优化集一体的强大工具，可以快速调用各类离线部署的大模型。Ollama 官网：https://ollama.com/
 
 ![](img/01ad930039cc4b88c4b71a3fec1c4ea1.png)
 
-+   【安装方案一】Ollama在线安装
++   【安装方案一】Ollama 在线安装
 
-+   在Linux系统中，可以使用如下命令快速安装Ollama
++   在 Linux 系统中，可以使用如下命令快速安装 Ollama
 
 ```
 curl -fsSL https://ollama.com/install.sh | sh
@@ -740,25 +709,21 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ![](img/8f159b7a5dc5d229e74f1b3c71721ae5.png)
 
-+
-
 ![](img/43a0ec7542a5f3da9a494a4f0beb3cb9.png)
 
 +   但该下载流程会受限于国内网络环境，下载过程并不稳定。
 
-+   【安装方案二】Ollama离线安装
++   【安装方案二】Ollama 离线安装
 
-+   因此，在更为一般的情况下，推荐使用Ollama离线部署。我们可以在Ollama Github主页查看目前Ollama支持的各操作系统安装包：https://github.com/ollama/ollama/releases
++   因此，在更为一般的情况下，推荐使用 Ollama 离线部署。我们可以在 Ollama Github 主页查看目前 Ollama 支持的各操作系统安装包：https://github.com/ollama/ollama/releases
 
 ![](img/223d4b492fd099d59e1011159c427585.png)
 
-+   若是Ubuntu操作系统，选择其中ollama-linux-amd64.tgz下载和安装即可。
++   若是 Ubuntu 操作系统，选择其中 `ollama-linux-amd64.tgz` 下载和安装即可。
 
 +   此外，安装包也可从网盘中下载：
 
 ![](img/6740607c1488e09f2bdf18c87ccba32d.png)
-
-+
 
 ![](img/320ee0f40c43470c1944e06bf5e20fd1.png)
 
@@ -777,11 +742,11 @@ tar -zxvf ollama-linux-amd64.tgz -C ./ollama
 
 ![](img/e46cb0ca6103407eccce4f4b6b924137.png)
 
-+   而在bin中，可以找到ollama命令的可执行文件。
++   而在 `bin` 中，可以找到 `ollama` 命令的可执行文件。
 
 ![](img/b7b857755ee8d6e4d1771f65ec8dcc8a.png)
 
-+   此时，我们可以使用如下方式使用ollama：
++   此时，我们可以使用如下方式使用 `ollama`：
 
 ```
 cd ./bin
@@ -796,11 +761,11 @@ cd ./bin
 chmod +x ollama
 ```
 
-+   而为了使用命令方便，我们也可以将脚本文件写入环境变量中。我们可以在主目录（root）下找到.bashrc文件：
++   而为了使用命令方便，我们也可以将脚本文件写入环境变量中。我们可以在主目录（root）下找到 `.bashrc` 文件：
 
 ![](img/c3f472d1f863cfc443c3d420eb16e356.png)
 
-+   然后在.bashrc文件结尾写入ollama/bin文件路径：
++   然后在 `.bashrc` 文件结尾写入 `ollama/bin` 文件路径：
 
 ![](img/dbda5b6a3fd297baaef3a3f4062a319a.png)
 
@@ -814,7 +779,7 @@ export PATH=$PATH:/root/autodl-tmp/ollama/bin
 source ~/.bashrc
 ```
 
-+   然后在任意路径下输入如下命令，测试ollama环境变量是否生效
++   然后在任意路径下输入如下命令，测试 `ollama` 环境变量是否生效
 
 ```
 ollama help
@@ -822,11 +787,11 @@ ollama help
 
 ![](img/0a8bc12315f22bd43d763a4bdbe6bf7c.png)
 
-+   【可选】更换Ollama默认模型权重下载地址
++   【可选】更换 Ollama 默认模型权重下载地址
 
-+   接下来我们需要使用ollama来下载模型，但默认情况下，ollama会将模型下载到/root/.ollama文件夹中，会占用系统盘空间，因此，若有需要，可以按照如下方法更换模型权重下载地址。
++   接下来我们需要使用 `ollama` 来下载模型，但默认情况下，`ollama` 会将模型下载到 `/root/.ollama` 文件夹中，会占用系统盘空间，因此，若有需要，可以按照如下方法更换模型权重下载地址。
 
-+   此外无论是在线还是离线安装的ollama，都可以按照如下方法更换模型权重下载地址。还是需要打开/root/.bashrc文件，写入如下代码：
++   此外无论是在线还是离线安装的 `ollama`，都可以按照如下方法更换模型权重下载地址。还是需要打开 `/root/.bashrc` 文件，写入如下代码：
 
 ```
 export OLLAMA_MODELS=/root/autodl-tmp/models
@@ -850,9 +815,9 @@ echo $OLLAMA_MODELS
 
 ![](img/adb0fad8c624fcf99bf29c69e8a1f91e.png)
 
-+   启动ollama
++   启动 `ollama`
 
-+   接下来即可启动ollama，为后续下载模型做准备：
++   接下来即可启动 `ollama`，为后续下载模型做准备：
 
 ```
 ollama start
@@ -860,9 +825,9 @@ ollama start
 
 ![](img/97c41c380285c4a5bac401ea70f757ba.png)
 
-+   注意，在整个应用使用期间，需要持续开启Ollama。
++   注意，在整个应用使用期间，需要持续开启 Ollama。
 
-#### 1.2 下载Gemma-27B模型
+#### 1.2 下载 Gemma-27B 模型
 
 ```
 ollama run gemma3:27b
@@ -880,39 +845,39 @@ ollama list
 
 ![](img/b7303529653b4975e8169a12eb451640.png)
 
-### 2. Open-WebUI安装与调用
+### 2. Open-WebUI 安装与调用
 
 ```
 pip isntall open-webui
 ```
 
-在准备好了Open-WebUI和一系列模型权重后，接下来我们尝试启动Open-WebUI，并借助本地模型进行问答。
+在准备好了 Open-WebUI 和一系列模型权重后，接下来我们尝试启动 Open-WebUI，并借助本地模型进行问答。
 
-首先需要设置离线环境，避免Open-WebUI启动时自动进行模型下载：
+首先需要设置离线环境，避免 Open-WebUI 启动时自动进行模型下载：
 
 ```
 export HF_HUB_OFFLINE=1
 ```
 
-然后启动Open-WebUI
+然后启动 Open-WebUI
 
 ```
 open-webui serve
 ```
 
-需要注意的是，如果启动的时候仍然报错显示无法下载模型，是Open-WebUI试图从huggingface上下载embedding模型，之后我们会手动将其切换为本地运行的Embedding模型。
+需要注意的是，如果启动的时候仍然报错显示无法下载模型，是 Open-WebUI 试图从 huggingface 上下载 embedding 模型，之后我们会手动将其切换为本地运行的 Embedding 模型。
 
 ![](img/80c0cb48b76fc91c65abd17eceabfd66.png)
 
-然后在本地浏览器输入地址:8080端口即可访问：
+然后在本地浏览器输入地址:8080 端口即可访问：
 
 ![](img/7a0ae677904de7523796704d999cdc7b.png)
 
-> 若使用AutoDL，则需要使用SSH隧道工具进行地址代理
+> 若使用 AutoDL，则需要使用 SSH 隧道工具进行地址代理
 
 ![](img/421d70182ed935b913114b91258c9bc4.png)
 
-> 更多AutoDL相关操作详见公开课：《AutoDL快速入门与GPU租赁使用指南》|https://www.bilibili.com/video/BV1bxB7YYEST/
+> 更多 AutoDL 相关操作详见公开课：《AutoDL 快速入门与 GPU 租赁使用指南》|https://www.bilibili.com/video/BV1bxB7YYEST/
 
 ![](img/551fed921d57312cf861de67d824958b.png)
 
@@ -920,7 +885,7 @@ open-webui serve
 
 ![](img/b1224ae9b4100f87dfc5963fc2fb97bf.png)
 
-然后点击登录即可。需要注意的是，此时Open-WebUI会自动检测后台是否启动了ollama服务，并列举当前可用的模型。稍等片刻，即可进入到如下页面：
+然后点击登录即可。需要注意的是，此时 Open-WebUI 会自动检测后台是否启动了 `ollama` 服务，并列举当前可用的模型。稍等片刻，即可进入到如下页面：
 
 ![](img/94d83100afaaf0eb9bc600a3d819c074.png)
 
@@ -928,15 +893,15 @@ open-webui serve
 
 ![](img/d80cf4f71e6347c9fa042ea5108bda3a.png)
 
-### 3. Open-WebUI接入MCP流程
+### 3. Open-WebUI 接入 MCP 流程
 
 +   MCP Support：https://docs.openwebui.com/openapi-servers/mcp
 
 ![](img/5e29a8860af381f13335421051a75a7b.png)
 
-最新Open WebUI 提供的 MCP（Model Context Protocol）到 OpenAPI 的代理服务器（mcpo）MCP 到 OpenAPI 的代理服务器让你可以通过标准的 REST/OpenAPI API 来直接使用基于 MCP（模型上下文协议）实现的工具服务器——无需学习或处理任何复杂的自定义协议。
+最新 Open WebUI 提供的 MCP（Model Context Protocol）到 OpenAPI 的代理服务器（mcpo）MCP 到 OpenAPI 的代理服务器让你可以通过标准的 REST/OpenAPI API 来直接使用基于 MCP（模型上下文协议）实现的工具服务器——无需学习或处理任何复杂的自定义协议。
 
-💡 为什么使用 mcpo？
+💡 为什么使用 `mcpo`？
 
 尽管 MCP 工具服务器功能强大、灵活，但它们通常通过标准输入/输出（stdio）进行通信——这意味着它们通常运行在本地，可以方便地访问文件系统、环境变量及其他系统资源。这既是优势，也是一种限制。
 
@@ -954,11 +919,11 @@ open-webui serve
 
 +   🛡 将你的工具包裹为安全、可扩展、基于标准的 HTTP 接口
 
-+   **🧠 自动为每**个工具生成交互式 OpenAPI 文档，无需任何配置
++   **🧠 自动为每个工具生成交互式 OpenAPI 文档，无需任何配置**
 
 +   🔌 使用纯 HTTP——无需配置 socket、不用管理后台服务或编写平台相关代码
 
-因此，虽然引入 mcpo 表面上看像是“又多了一层”，但实际上它：
+因此，虽然引入 `mcpo` 表面上看像是“又多了一层”，但实际上它：
 
 ✅ 简化了集成流程
 
@@ -968,7 +933,7 @@ open-webui serve
 
 ✅ 让开发者和用户更满意
 
-✨ 有了 mcpo，你本地运行的 AI 工具可以立刻支持云端部署、适配各种 UI，并实现无缝交互——无需修改工具服务器代码中的任何一行。
+✨ 有了 `mcpo`，你本地运行的 AI 工具可以立刻支持云端部署、适配各种 UI，并实现无缝交互——无需修改工具服务器代码中的任何一行。
 
 ✅ 快速开始：本地运行代理服务器
 
@@ -977,7 +942,7 @@ pip install uv
 pip install mcpo
 ```
 
-接下来我们可以通过以下命令运行推荐的 MCP 服务器（如 mcp-server-time）并同时通过 mcpo 代理进行开放：
+接下来我们可以通过以下命令运行推荐的 MCP 服务器（如 `mcp-server-time`）并同时通过 `mcpo` 代理进行开放：
 
 ```
 uvx mcpo --port 8000 -- uvx mcp-server-time --local-timezone=Asia/Shanghai
@@ -987,7 +952,6 @@ uvx mcpo --port 8000 -- uvx mcp-server-time --local-timezone=Asia/Shanghai
 
 ![](img/5047cc5297636f8408c6077488438fad.png)
 
-
 ![](img/ea8e3ddc582459f982d7d76f0a402f08.png)
 
 ![](img/d79cc28e388087df3dd761d565265ead.png)
@@ -995,7 +959,6 @@ uvx mcpo --port 8000 -- uvx mcp-server-time --local-timezone=Asia/Shanghai
 ![](img/a46ac64f39ebef40b098bff30027d353.png)
 
 ![](img/a57e485dc9094a5043f382c1e3df1fb0.png)
-
 
 ![](img/432eba0ab8b5f3c2bbff3828159020eb.png)
 

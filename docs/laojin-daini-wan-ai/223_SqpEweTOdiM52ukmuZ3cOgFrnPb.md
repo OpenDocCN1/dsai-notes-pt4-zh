@@ -1,3 +1,4 @@
+
 # 蹭上150k Star的热点，从clawdbot学会了给AI加自动记忆！
 
 > 来源：[https://my.feishu.cn/docx/JRVhdDilBoG5AqxNOAGcJjcEncf](https://my.feishu.cn/docx/JRVhdDilBoG5AqxNOAGcJjcEncf)
@@ -78,9 +79,9 @@
 
 咱们换个说法，就能用在日常AI使用上。
 
-**这里老金我要插一个更牛的**概念——Agent Skills。
+**这里老金我要插一个更牛的**概念——`Agent Skills`。
 
-那篇openclaw文章下面还有一篇，讲的是用"Skills"管理项目知识库。
+那篇openclaw文章下面还有一篇，讲的是用`Skills`管理项目知识库。
 
 老金我一看，这不就是给AI建了一个"随时能调用的档案室"吗？
 
@@ -191,15 +192,13 @@ AI可以追溯老金我的偏好是怎么变化的。
 
 哪些公式曾经有效、为什么被替代、什么时候被替代——全都有记录。
 
-动态摘要（summary.md）
+动态摘要（`summary.md`）
 
 AI不会每次都加载几百条原始数据，而是每次生成一个快照。
 
-
 ### 第二层：每日笔记
 
-memory/2026-01-31.md —— 当天的写作记录。
-
+`memory/2026-01-31.md` —— 当天的写作记录。
 
 这是"时间线"层。
 
@@ -207,9 +206,9 @@ memory/2026-01-31.md —— 当天的写作记录。
 
 ### 第三层：隐性知识
 
-MEMORY.md记录老金我的写作风格和避坑经验。
+`MEMORY.md`记录老金我的写作风格和避坑经验。
 
-这里老金我结合了Skill制作，符合单一源规则。
+这里老金我结合了`Skill`制作，符合单一源规则。
 
 ![](img/57804c58e21cd849154a32eba77a3129.png)
 
@@ -221,7 +220,7 @@ MEMORY.md记录老金我的写作风格和避坑经验。
 
 这才是这套系统厉害的地方。
 
-自动记录（每次写作后HOOK触发）
+自动记录（每次写作后`HOOK`触发）
 
 每次写完文章，AI自动提取关键信息：
 
@@ -239,7 +238,7 @@ MEMORY.md记录老金我的写作风格和避坑经验。
 
 **飞轮效应**
 
-写作 - 自动提取数据（选题/公式/阅读，这个老金是拿SKILL做的，不算记忆内）- 更新知识图谱 - 统计分析 - 下次写作自动应用最佳策略 - 更好的效果 - 更多数据积累。
+写作 - 自动提取数据（选题/公式/阅读，这个老金是拿`SKILL`做的，不算记忆内）- 更新知识图谱 - 统计分析 - 下次写作自动应用最佳策略 - 更好的效果 - 更多数据积累。
 
 **这就是复利。**
 
@@ -273,7 +272,7 @@ MEMORY.md记录老金我的写作风格和避坑经验。
 
 ## 老金的实战：用👸号写作复刻三层架构
 
-老金我研究了半天，发现用Claude Code的Skills + Hooks功能，就能完整复刻这套三层架构！
+老金我研究了半天，发现用`Claude Code`的`Skills` + `Hooks`功能，就能完整复刻这套三层架构！
 
 老金我拿自己的👸号写作给你们演示——看看这套复利引擎是怎么跑起来的。
 
@@ -411,38 +410,38 @@ mkdir -p .claude/memory/memory
 touch .claude/memory/MEMORY.md
 ```
 
-#### 【环节2】事实提取（Hooks自动触发）
+#### 【环节2】事实提取（`Hooks`自动触发）
 
-写作完成后，PostToolUse Hook自动触发：
+写作完成后，`PostToolUse` `Hook`自动触发：
 
 ```
 # .claude/hooks/post_tool_use.py
 
 def extract_writing_facts(conversation):
-    &quot;&quot;&quot;写作完成后自动提取事实&quot;&quot;&quot;
+    """写作完成后自动提取事实"""
 
     facts = []
 
     # 提取主题
-    if &quot;写公众号&quot; in conversation:
+    if "写公众号" in conversation:
         topic = extract_topic(conversation)
         facts.append({
-            &quot;id&quot;: f&quot;topic-{generate_id()}&quot;,
-            &quot;fact&quot;: f&quot;写了{topic}主题文章&quot;,
-            &quot;category&quot;: &quot;topic&quot;,
-            &quot;timestamp&quot;: get_today(),
-            &quot;status&quot;: &quot;active&quot;
+            "id": f"topic-{generate_id()}",
+            "fact": f"写了{topic}主题文章",
+            "category": "topic",
+            "timestamp": get_today(),
+            "status": "active"
         })
 
     # 提取用户反馈
-    if &quot;阅读&quot; in conversation or &quot;效果&quot; in conversation:
+    if "阅读" in conversation or "效果" in conversation:
         feedback = extract_feedback(conversation)
         facts.append({
-            &quot;id&quot;: f&quot;feedback-{generate_id()}&quot;,
-            &quot;fact&quot;: feedback,
-            &quot;category&quot;: &quot;feedback&quot;,
-            &quot;timestamp&quot;: get_today(),
-            &quot;status&quot;: &quot;active&quot;
+            "id": f"feedback-{generate_id()}",
+            "fact": feedback,
+            "category": "feedback",
+            "timestamp": get_today(),
+            "status": "active"
         })
 
     # 写入items.json
@@ -452,35 +451,37 @@ def extract_writing_facts(conversation):
     update_summary()
 ```
 
-#### 【环节3】配置SessionStart Hook
+#### 【环节3】配置`SessionStart` `Hook`
 
-```
+
+
 # .claude/hooks/session_start.py
 
+```python
 def load_context():
-    &quot;&quot;&quot;会话开始时自动加载记忆&quot;&quot;&quot;
+    """会话开始时自动加载记忆"""
 
     # 加载隐性知识
-    memory = read_file(&quot;.claude/memory/MEMORY.md&quot;)
+    memory = read_file(".claude/memory/MEMORY.md")
 
     # 加载昨日的笔记
     yesterday = get_yesterday()
-    daily_note = read_file(f&quot;.claude/memory/memory/{yesterday}.md&quot;)
+    daily_note = read_file(f".claude/memory/memory/{yesterday}.md")
 
     # 加载相关主题的知识图谱
     topics = scan_topics()
     relevant = find_relevant_topics(topics)
 
     return {
-        &quot;memory&quot;: memory,
-        &quot;daily_note&quot;: daily_note,
-        &quot;topics&quot;: relevant
+        "memory": memory,
+        "daily_note": daily_note,
+        "topics": relevant
     }
 ```
 
-#### 【环节4】编写MEMORY.md
+## 【环节4】编写`MEMORY.md`
 
-```
+```markdown
 # 公众号写作记忆
 
 ## 写作风格
@@ -492,19 +493,27 @@ def load_context():
 1、利益前置型：降40%、白嫖
 2、人设验证型：老金实测
 3、官方权威型：官方发布
+```
 
-#### 第五步：测试复利引擎
+## 第五步：测试复利引擎
 
 ```bash
 # 第一次写作
+
 写👸号 AI记忆系统
+
 # → Hook自动提取事实
+
 # → 更新知识图谱
 
 # 第二次写作（同一主题）
+
 写👸号 AI新功能
+
 # → 自动加载历史数据
+
 # → 自动应用最佳公式
+
 # → 自动避开所有坑
 ```
 
@@ -512,23 +521,29 @@ def load_context():
 
 **用户输入**：
 
-```
+```text
 写👸号文章，主题：AI记忆系统
 ```
 
-**Claude Code自动处理**：
+**`Claude Code`自动处理**：
 
-```
-[SessionStart Hook触发]  &lt;- ## 可以修改代码让他显性显示，直接甩给claude code
-→ 加载 MEMORY.md（隐性知识）
-→ 加载 memory/2026-01-30.md（昨日的笔记）
-→ 加载 topics/ai-tools/summary.md（相关知识图谱）
+```text
+[SessionStart Hook触发] <- ## 可以修改代码让他显性显示，直接甩给claude code
+
+→ 加载 `MEMORY.md`（隐性知识）
+
+→ 加载 `memory/2026-01-30.md`（昨日的笔记）
+
+→ 加载 `topics/ai-tools/summary.md`（相关知识图谱）
 
 好的，我来帮你写AI记忆系统的文章。
 
 根据历史记录：
+
 - 你写过Claude Code系列，阅读量不错
-- 标题用&quot;利益+数字+品牌&quot;效果最好
+
+- 标题用"利益+数字+品牌"效果最好
+
 - 风格要老金式大白话
 ```
 
@@ -536,129 +551,169 @@ def load_context():
 
 AI在对话开始前，**自动加载**了三层记忆！
 
-#### 知识图谱增长（Layer 1）
+## 知识图谱增长（Layer 1）
 
-自动写入 topics/ai-tools/items.json：
+自动写入 `topics/ai-tools/items.json`：
 
-```
+```json
 {
-  &quot;id&quot;: &quot;ai-tools-001&quot;,
-  &quot;fact&quot;: &quot;AI记忆系统文章，用AI三个月才发现&quot;,
-  &quot;category&quot;: &quot;topic&quot;,
-  &quot;formula&quot;: &quot;利益前置型&quot;,
-  &quot;timestamp&quot;: &quot;2026-01-31&quot;,
-  &quot;status&quot;: &quot;active&quot;
+  "id": "ai-tools-001",
+  "fact": "AI记忆系统文章，用AI三个月才发现",
+  "category": "topic",
+  "formula": "利益前置型",
+  "timestamp": "2026-01-31",
+  "status": "active"
 }
 ```
 
-更新 topics/ai-tools/summary.md：
+更新 `topics/ai-tools/summary.md`：
 
-```
+```markdown
 # AI工具选题
 
 ## 概况
+
 - 总文章数：12篇
+
 - 平均阅读：1.8万
+
 - 最佳表现：2.1万（AI记忆系统）
 
 ## 爆款公式
+
 - 利益前置型：效果最好（2.1万阅读）
+
 - 人设验证型：1.5万阅读
+
 - 官方权威型：1.2万阅读
 
 ## 最新文章（2026-01-31）
+
 - 标题：用AI三个月才发现给它加个记忆有多重要
+
 - 公式：利益前置
+
 - 状态：active
 ```
 
-#### 每日笔记（Layer 2）
+## 每日笔记（Layer 2）
 
-自动写入 memory/2026-01-31.md：
+自动写入 `memory/2026-01-31.md`：
 
-```
+```markdown
 # 2026-01-31
 
 ## 10:30 AM - 写作
+
 主题：AI记忆系统
+
 标题：用AI三个月才发现给它加个记忆有多重要
+
 公式：利益前置型
 
 ## 3:00 PM - 用户反馈
+
 文章发布，阅读2.1万，效果不错
+
 用户评论：标题很吸引人
 
 ## 决策
-利益前置型公式继续用，下次尝试加上&quot;老金实测&quot;
+
+利益前置型公式继续用，下次尝试加上"老金实测"
 ```
 
-#### 隐性知识（Layer 3）
+## 隐性知识（Layer 3）
 
-**自动更新 MEMORY.md**：
+**自动更新** `MEMORY.md`：
 
-```
+```markdown
 # 👸号写作记忆
 
 ## 写作风格（老金风格）
+
 - 人设：产品经理，接地气
+
 - 语言：大白话，像朋友聊天
+
 - 口语：卧槽、真香、哈哈哈
 
 ## 爆款公式（验证有效）
+
 1、利益前置型：降40%、白嫖、赚更多（★★★★★）
+
 2、人设验证型：老金实测、帮你发现（★★★）
+
 3、官方权威型：30k+星、官方发布（★★）
 
 ## 避坑指南
+
 - 标题不要超过28字
+
 - 禁止用FOMO词（99%不知道）
+
 - 禁止用纯情绪词（惊了、麻了）
 
 ## 对标作者
-- openclaw系列：技术深度好，可以借鉴架构
+
+- `openclaw`系列：技术深度好，可以借鉴架构
+
 - 老金风格：自己，保持一致性
 ```
 
 ---
 
-### 下次写作：自动应用记忆
+## 下次写作：自动应用记忆
 
 比如一周后，老金我又要写文章了。
 
 **用户输入**：
 
-```
+```text
 写👸号文章，主题：Claude Code新功能
 ```
 
 **看AI怎么自动应用记忆**：
 
-```
+```text
 [SessionStart Hook触发]
-→ 加载 MEMORY.md
-→ 加载 memory/2026-01-31.md
-→ 加载 topics/ai-tools/summary.md
+
+→ 加载 `MEMORY.md`
+
+→ 加载 `memory/2026-01-31.md`
+
+→ 加载 `topics/ai-tools/summary.md`
 
 [知识图谱匹配]
+
 → 检测到主题：Claude Code（AI工具类别）
+
 → 加载历史数据：写过12篇，平均1.8万阅读
+
 → 最佳公式：利益前置型（2.1万）
 
 [自动生成标题]
+
 → 候选1：老金用Claude Code才知道，这个神器让效率提升10倍
+
 → 候选2：蹭上100k Star的热点，老金从openclaw学会了给AI加自动记忆
+
 → 选择：候选2（蹭热点 + 利益前置）
 
 [自动应用避坑指南]
+
 → 标题长度：29字（略超28字建议，但可接受）
+
 → 无FOMO词，无纯情绪词
 
 [写作完成]
 
 [PostToolUse Hook触发]
+
 → 提取新事实
-→ 更新 items.json
-→ 更新 summary.md
+
+→ 更新 `items.json`
+
+→ 更新 `summary.md`
 ```
 
 **看出区别了吗？**
@@ -679,43 +734,44 @@ AI在对话开始前，**自动加载**了三层记忆！
 
 ---
 
-### 关键技术：原子事实的替代机制
+## 关键技术：原子事实的替代机制
 
-**老金我研究了**openclaw的源码，发现它最牛的是替代而非删除。
+老金我研究了`openclaw`的源码，发现它最牛的是替代而非删除。
 
 举个例子：
 
-```
-// 1月15日，老金认为&quot;利益前置型&quot;公式最好
+```json
+// 1月15日，老金认为"利益前置型"公式最好
+
 {
-  &quot;id&quot;: &quot;formula-001&quot;,
-  &quot;fact&quot;: &quot;利益前置型公式效果最好&quot;,
-  &quot;evidence&quot;: &quot;AI记忆系统文章2.1万阅读&quot;,
-  &quot;timestamp&quot;: &quot;2026-01-15&quot;,
-  &quot;status&quot;: &quot;active&quot;
+  "id": "formula-001",
+  "fact": "利益前置型公式效果最好",
+  "evidence": "AI记忆系统文章2.1万阅读",
+  "timestamp": "2026-01-15",
+  "status": "active"
 }
 
-// 2月1日，老金发现&quot;人设验证型&quot;效果更好
+// 2月1日，老金发现"人设验证型"效果更好
+
 {
-  &quot;id&quot;: &quot;formula-001&quot;,
-  &quot;status&quot;: &quot;superseded&quot;,
-  &quot;supersededBy&quot;: &quot;formula-002&quot;,
-  &quot;supersededAt&quot;: &quot;2026-02-01&quot;
+  "id": "formula-001",
+  "status": "superseded",
+  "supersededBy": "formula-002",
+  "supersededAt": "2026-02-01"
 },
+
 {
-  &quot;id&quot;: &quot;formula-002&quot;,
-  &quot;fact&quot;: &quot;人设验证型公式效果最好&quot;,
-  &quot;evidence&quot;: &quot;老金实测系列2.5万阅读&quot;,
-  &quot;timestamp&quot;: &quot;2026-02-01&quot;,
-  &quot;status&quot;: &quot;active&quot;
+  "id": "formula-002",
+  "fact": "人设验证型公式效果最好",
+  "evidence": "老金实测系列2.5万阅读",
+  "timestamp": "2026-02-01",
+  "status": "active"
 }
 ```
 
 **没有被删除的记忆。**
 
 AI可以追溯老金的偏好是如何随时间演变的。
-
----
 
 ## 效果怎么样
 

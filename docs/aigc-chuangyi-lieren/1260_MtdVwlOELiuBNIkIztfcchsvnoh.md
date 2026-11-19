@@ -1,6 +1,7 @@
+
 # 20250821-刚刚，谷歌凭借Gemini抢先苹果，建立了通用AI助理硬件生态
 
-> 来源：[https://aigcreative.feishu.cn/docx/KG7odB3ZfomIHCx07Yict4f3nze](https://aigcreative.feishu.cn/docx/KG7odB3ZfomIHCx07Yict4f3nze)
+> 来源：`https://aigcreative.feishu.cn/docx/KG7odB3ZfomIHCx07Yict4f3nze`
 
 刚刚补完课，看完今天凌晨的谷歌Pixel系列新品发布会——Made by Google 2025，信息量有点大。
 
@@ -14,9 +15,9 @@
 
 可谷歌今天这场发布会，给我感觉是直接把“硬件全家桶”和AI的灵魂——Gemini，完全的融合在了一起，活生生把苹果的未来剧本给提前演了一遍。
 
-# 01.
+## 01.
 
-#### 核心不是发布了多少硬件，而是Gemini“无处不在”
+### 核心不是发布了多少硬件，而是Gemini“无处不在”
 
 咱们先别急着看那几款新手机新设备，先看看重点。
 
@@ -46,9 +47,9 @@
 
 这格局，感觉又大了一层。
 
-# 02.
+## 02.
 
-#### 硬件，是Gemini落地的“身体”
+### 硬件，是Gemini落地的“身体”
 
 当然，光有灵魂没用，还得有能打的身体。
 
@@ -90,9 +91,9 @@ Pixel Watch 4 和 Pixel Buds：这两个小东西，我觉得是Gemini最贴身�
 
 你都不需要喊“Hey Google”，抬起手腕就能直接跟手表说话，这感觉就对了。
 
-# 03.
+## 03.
 
-#### 那些让你“哇”一声的AI功能，才是真功夫
+### 那些让你“哇”一声的AI功能，才是真功夫
 
 如果说硬件是骨架，Gemini是灵魂，那这次发布会上展示的那些新功能，就是让这个AI生态活起来的血肉。
 
@@ -132,9 +133,9 @@ Pixel Watch 4 和 Pixel Buds：这两个小东西，我觉得是Gemini最贴身�
 
 这种“授人以渔”的AI，想法很高级。
 
-# 04.
+## 04.
 
-#### 谷歌的“阳谋”：用开放打破苹果的“围墙花园”
+### 谷歌的“阳谋”：用开放打破苹果的“围墙花园”
 
 整场发布会看下来，我还闻到了一股浓浓的“火药味”。
 
@@ -170,6 +171,6 @@ Pixel Watch 4 和 Pixel Buds：这两个小东西，我觉得是Gemini最贴身�
 
 接下来，就看库克那边怎么接招了。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

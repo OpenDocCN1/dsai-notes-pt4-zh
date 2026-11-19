@@ -1,3 +1,4 @@
+
 # 2、扣子空间内测-字节通用型 Agent-对标 Manus
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/KknQdTbVUo4aBpxI2Owc4T2onIq](https://vcn0zlxse9ua.feishu.cn/docx/KknQdTbVUo4aBpxI2Owc4T2onIq)
@@ -10,8 +11,6 @@
 
 ## 先看看能做什么
 
-### 自动生成好看的调研报告？
-
 
 ### 一键生成PPT?
 
@@ -23,19 +22,16 @@
 
 ## 扣子空间是什么？
 
-> 入口：https://space.coze.cn/
+> 入口：`https://space.coze.cn/`
 
 扣子空间是字节跳动推出的通用型 AI Agent 开发平台
 
 ![](img/29c2bd4a32a9ed5a5052d5bafa3bbdde.png)
 
-+   回答问题——》解决问题，生成网页、PPT、文档、操作浏览器等
-
-+   专家能力：如股票早报定制等
-
-+   协作模式：可以 Agent 自动执行，也可以和 AI 交互协作
-
-+   集成 MCP 扩展，无限扩展 Agent 能力，如飞书多维表操作等
++ 回答问题——》解决问题，生成网页、PPT、文档、操作浏览器等
++ 专家能力：如股票早报定制等
++ 协作模式：可以 Agent 自动执行，也可以和 AI 交互协作
++ 集成 MCP 扩展，无限扩展 Agent 能力，如飞书多维表操作等
 
 ## 扣子空间功能特点
 
@@ -43,9 +39,8 @@
 
 可以 Agent 自动执行，也可以和 AI 交互协作
 
-+   探索模式：AI 自主思考
-
-+   规划模式：AI 规划步骤，分布协助你执行
++ 探索模式：AI 自主思考
++ 规划模式：AI 规划步骤，分布协助你执行
 
 ![](img/d6f582d9ecf799678fe537880b2260b5.png)
 
@@ -55,25 +50,19 @@
 
 ### 工作空间
 
-+   实时跟随
-
-+   任务
-
-+   终端
-
-+   浏览器
-
-+   文件
++ 实时跟随
++ 任务
++ 终端
++ 浏览器
++ 文件
 
 ![](img/10464e73d726f0ca2097cc1fb93e2ae3.png)
-
-###
 
 ## 如何使用？
 
 目前还在内测，需要邀请码才能使用，文后有部分的邀请码分享
 
-入口：https://coze.cn/
+入口：`https://coze.cn/`
 
 ![](img/953cef628b12a3304cab31a5d24aed6d.png)
 

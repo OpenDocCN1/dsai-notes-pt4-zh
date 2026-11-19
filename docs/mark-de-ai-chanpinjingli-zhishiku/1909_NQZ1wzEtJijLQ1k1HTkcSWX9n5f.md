@@ -1,34 +1,33 @@
-# 谷歌Willow量子芯片逆天出世，5分钟颠覆10亿亿亿计算极限，马斯克奥特曼惊叹
-
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/Ro09disVfoYwfGxlKfnc6SXSnGd](https://qqs7y1hozd1.feishu.cn/docx/Ro09disVfoYwfGxlKfnc6SXSnGd)
 
 # 【光年日报】2024.12.11周三
 
-# Mark的AI产品经理知识库——互联网前沿资讯推送！
+> 来源：https://qqs7y1hozd1.feishu.cn/docx/Ro09disVfoYwfGxlKfnc6SXSnGd
 
-######### [谷歌Willow量子芯片逆天出世，5分钟](https://qqs7y1hozd1.feishu.cn/wiki/NQZ1wzEtJijLQ1k1HTkcSWX9n5f#share-IVcDd1NnVoz0rlxAMgLcJBaDnYm)颠覆10亿亿亿计算极限，马斯克奥特曼惊叹
+## Mark的AI产品经理知识库——互联网前沿资讯推送！
 
-######### [产品经理的领导力与影响力](https://qqs7y1hozd1.feishu.cn/wiki/NQZ1wzEtJijLQ1k1HTkcSWX9n5f#share-Y0eNdvtmLojRfPxh7EIckXFKnXe)
+### [谷歌Willow量子芯片逆天出世，5分钟颠覆10亿亿亿计算极限，马斯克奥特曼惊叹](https://qqs7y1hozd1.feishu.cn/wiki/NQZ1wzEtJijLQ1k1HTkcSWX9n5f#share-IVcDd1NnVoz0rlxAMgLcJBaDnYm)
 
-######### 雷军：小米首款 SUV 车型 YU7 名称直接读 Y-U-7
+### [产品经理的领导力与影响力](https://qqs7y1hozd1.feishu.cn/wiki/NQZ1wzEtJijLQ1k1HTkcSWX9n5f#share-Y0eNdvtmLojRfPxh7EIckXFKnXe)
 
-######### 小米系首家具身大模型公司「小雨智造」获北京市投资，已在工业化场景落地
+### 雷军：小米首款 SUV 车型 YU7 名称直接读 Y-U-7
 
-######### 一位全网用户150万的独立开发者，又做了一款高评价AI搜索引擎
+### 小米系首家具身大模型公司「小雨智造」获北京市投资，已在工业化场景落地
+
+### 一位全网用户150万的独立开发者，又做了一款高评价AI搜索引擎
 
 > 欢迎加入社群
 
 ![](img/2ffca60a3724291ae41977bc61866914.png)
 
-# 今日热点 💎
+## 今日热点 💎
 
-## 💡谷歌Willow量子芯片逆天出世，5分钟颠覆10亿亿亿计算极限，马斯克奥特曼惊叹
+### 💡谷歌Willow量子芯片逆天出世，5分钟颠覆10亿亿亿计算极限，马斯克奥特曼惊叹
 
 新智元 | 谷歌Willow量子芯片逆天出世（⬅️原文直达）
 
 ![](img/b01f64d35138e8ba5cf8edf2809dae3d.png)
 
-谷歌团队再创量子计算里程碑！全新量子芯片Willow，仅用不到5分就完成了当今最强超算，需要10^25年这个天文数字般的计算。困扰人类近30年量子计算纠错问题，终于被攻克了！
+谷歌团队再创量子计算里程碑！全新量子芯片Willow，仅用不到5分就完成了当今最强超算，需要`10^25`年这个天文数字般的计算。困扰人类近30年量子计算纠错问题，终于被攻克了！
 
 这一刻，注定将被载入史册！
 
@@ -38,9 +37,9 @@
 
 而如今，世界上最快超算Frontier要完成同样任务，则需要10亿亿亿年，也就是10,000,000,000,000,000,000,000,000年。
 
-## 💡产品经理的领导力与影响力
+### 💡产品经理的领导力与影响力
 
-人人都是产品经理 |[产品经理的领导力与影响力](https://www.woshipm.com/share/6152663.html)（⬅️原文直达）
+人人都是产品经理 | [产品经理的领导力与影响力](https://www.woshipm.com/share/6152663.html)（⬅️原文直达）
 
 ![](img/a92dd0bf8fb3fe2aa3d84fa182973c06.png)
 
@@ -50,9 +49,9 @@
 
 想要做好这些事一件很难的事情，需要的是一套成熟的领导力和影响力技巧。
 
-## 💡雷军：小米首款 SUV 车型 YU7 名称直接读 Y-U-7
+### 💡雷军：小米首款 SUV 车型 YU7 名称直接读 `Y-U-7`
 
-IT之家 |雷军:小米首款 SUV 车型 YU7 名称直接读 Y-U-7（⬅️原文直达）
+IT之家 |雷军:小米首款 SUV 车型 YU7 名称直接读 `Y-U-7`（⬅️原文直达）
 
 ![](img/5cf035d2bb88c1b1931761fe54bc0801.png)
 
@@ -62,11 +61,11 @@ IT之家 |雷军:小米首款 SUV 车型 YU7 名称直接读 Y-U-7（⬅️原�
 
 很多人问 YU7 如何读？
 
-就直接读 **Y-U-7**。
+就直接读 `Y-U-7`。
 
 等发布的时候，我们再详细解释为什么这样命名。
 
-## 💡OpenAI 发布「代码神器」；苹果 MacBook Pro 或变「打孔屏」；保时捷：中国车主平均年收 300 万元
+### 💡OpenAI 发布「代码神器」；苹果 MacBook Pro 或变「打孔屏」；保时捷：中国车主平均年收 300 万元
 
 极客公园| [OpenAI 发布「代码神器](https://www.geekpark.net/news/344060)（⬅️原文直达）
 
@@ -78,7 +77,7 @@ OpenAI Canvas 是 ChatGPT 的一个新界面，用于处理需要编辑和修改
 
 Canvas 入口位于 ChatGPT 聊天机器人的旁边，点击按钮进入；用户也可以在提示词中加入「使用 Canvas……」，或在网页版 ChatGPT 中输入「打开 Canvas」或「打开代码 Canvas」来打开一个空白 Canvas。
 
-## 💡朋友圈被领导点赞成认定加班证据，公司赔了1.8万！
+### 💡朋友圈被领导点赞成认定加班证据，公司赔了1.8万！
 
 百度 | [点赞成为加班证据](https://baijiahao.baidu.com/s?id=1818103053209795196&wfr=spider&for=pc)（⬅️原文直达）
 

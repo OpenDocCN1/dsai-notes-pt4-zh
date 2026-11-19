@@ -1,8 +1,9 @@
+
 # 新加坡最高法院大法官：AI 时代下，初级律师必要具备的法律技能
 
-> 来源：[https://docs.feishu.cn/docx/MzaKdNl7poluUXxwnSBcEgBmnee](https://docs.feishu.cn/docx/MzaKdNl7poluUXxwnSBcEgBmnee)
+## 引言
 
----
+> 来源：`https://docs.feishu.cn/docx/MzaKdNl7poluUXxwnSBcEgBmnee`
 
 > 2024 年 10 月，新加坡最高法院的 Goh Yihan 法官，面向新加坡管理大学法学生发表了《AI 时代初级律师的必要法律技能》的演讲。
 
@@ -24,11 +25,11 @@ Goh Yihan 大法官：
 
 我认为，一名优秀律师需要的技能可以归纳为以下三点：
 
-+   进行高水平的批判性分析
++ 进行高水平的批判性分析
 
-+   为复杂问题提供创造性的解决方案
++ 为复杂问题提供创造性的解决方案
 
-+   提供以客户为中心、富有情感的代理
++ 提供以客户为中心、富有情感的代理
 
 从根本上说，律师是解决问题的人，但这里有个重要的注意事项 —— 他或她根据法律解决问题，但要有适当的常识和务实性。法律必须始终优先，因为我们是律师行业。
 

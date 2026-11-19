@@ -1,3 +1,4 @@
+
 # 清爽快捷 Deepseek+LM Studio 本地部署
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/IiDgdznA7oViaxx7xLlcSN6mnhg](https://vcn0zlxse9ua.feishu.cn/docx/IiDgdznA7oViaxx7xLlcSN6mnhg)
@@ -26,9 +27,9 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 🔭 • 在应用的发现页面中直接发现新的和值得关注的 LLM
 
-## LM Stuidio 部署
+## LM Studio 部署
 
-> 官网：https://lmstudio.ai/
+> 官网：`https://lmstudio.ai/`
 
 ### 下载
 
@@ -74,7 +75,7 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 #### 方式 1：在 LM Studio 工具中下载开源模型（推荐）
 
-模型界面，选择标签 **放大镜** 搜索
+模型界面，选择标签 放大镜 搜索
 
 
 搜索模型名称进行下载，右边会有介绍，
@@ -91,22 +92,22 @@ LM Studio 可用于 macOS、Windows 和 Linux。
 
 #### 方式 2：从 Hugging Face 下载开源模型
 
-> 入口：https://huggingface.co/
+> 入口：`https://huggingface.co/`
 
 需要开魔法才能访问
 
-+   说明：LM Studio 需要加载的模型文件要为 gguf 结尾的文件
++   说明：LM Studio 需要加载的模型文件要为 `gguf` 结尾的文件
 
-##### **GGUF 模型**
+##### GGUF 模型
 
 GGUF，全称 GPT-Generated Unified Format，是一种新型的文件格式，专门用于存储和交换大型机器学习模型的数据。这种格式针对模型的快速加载和保存进行了优化，使其在推理方面更加高效。GGUF 可以有多种不同版本的量化，Q2、Q3、Q4、Q5、Q6、Q8，这些数字表示模型权重的位数，位数越高，模型的精度通常越高，但所需的存储空间和计算资源也越多。
 
-> 不是所有 gguf 格式的模型都能用 LM Studio 运行，你可以打开下面这个链接，这里所有模型都可以用 LM Studio 运行：https://hf-mirror.com/lmstudio-community。量化是指将模型中的高精度数字转换为低精度数字，以减少模型的存储空间和计算需求。
+> 不是所有 `gguf` 格式的模型都能用 LM Studio 运行，你可以打开下面这个链接，这里所有模型都可以用 LM Studio 运行：`https://hf-mirror.com/lmstudio-community`。量化是指将模型中的高精度数字转换为低精度数字，以减少模型的存储空间和计算需求。
 
 
 ##### 搜索模型
 
-选择模块 **模型**，搜索 Deepseek R1 gguf
+选择模块 模型，搜索 Deepseek R1 gguf
 
 
 查看更多
@@ -117,13 +118,13 @@ GGUF，全称 GPT-Generated Unified Format，是一种新型的文件格式，�
 
 ##### 下载模型
 
-这里选择 lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+这里选择 `lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF`
 
 
 选择 Files and versions，看到模型文件
 
 
-[选择一个模型下载即可，这里我选择 Deep](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/blob/main/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf)Seek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf
+[选择一个模型下载即可，这里我选择 `DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf`](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/blob/main/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf)
 
 ![](img/fa3a80027b3d80ba4156937dc304cdf5.png)
 
@@ -131,16 +132,15 @@ GGUF，全称 GPT-Generated Unified Format，是一种新型的文件格式，�
 
 ###### 步骤
 
-在模型的安装目录下，如我的是 D:\data\LM_models
+在模型的安装目录下，如我的是 `D:\data\LM_models`
 
 在下面建立文件夹：【发布者】/【模型名称】
 
-模板：D:\data\LM_models\【发布者】/【模型名称】
+模板：`D:\data\LM_models\【发布者】/【模型名称】`
 
 层级
 
 ```
-
 ~/.lmstudio/models/
 └── publisher/
     └── model/
@@ -149,16 +149,15 @@ GGUF，全称 GPT-Generated Unified Format，是一种新型的文件格式，�
 
 ###### 案例
 
-如我现在安装模型 lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+如我现在安装模型 `lmstudio-community/DeepSeek-R1-Distill-Qwen-1.5B-GGUF`
 
 发布者：lmstudio-community
 
 模型名称：DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 
-完整路径：D:\data\LM_models\lmstudio-community\DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+完整路径：`D:\data\LM_models\lmstudio-community\DeepSeek-R1-Distill-Qwen-1.5B-GGUF`
 
 ```
-
 D:\data\LM_models/
 └── lmstudio-community/
     └── DeepSeek-R1-Distill-Qwen-1.5B-GGUF/

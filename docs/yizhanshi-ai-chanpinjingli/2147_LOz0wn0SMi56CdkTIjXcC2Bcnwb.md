@@ -1,3 +1,4 @@
+
 # 第3期 AI行业周报（2024-6.24-30）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/W1Lzdr9MpooAx3xQCeQcXIYmnre](https://v11enp9ok1h.feishu.cn/docx/W1Lzdr9MpooAx3xQCeQcXIYmnre)
@@ -34,7 +35,7 @@ Meta在AI领域再下一城，推出革命性的LLM Compiler，为开发者带�
 
 ![](img/2659490128dad32fe7ecab7d363734ff.png)
 
-### OpenAI发布CriticGPT，AI自我纠错技术引领新潮流！
+## OpenAI发布CriticGPT，AI自我纠错技术引领新潮流！
 
 OpenAI创新突破，CriticGPT模型诞生！CriticGPT基于GPT-4构建，专门审查和识别AI生成代码中的错误，通过人类反馈强化学习技术，显著提升了代码审查的准确性。它不仅能识别逻辑错误和安全漏洞，还提供具体反馈帮助修复问题，同时自我学习和优化，减少人工审查的工作量。
 

@@ -1,10 +1,11 @@
+
 # 俄罗斯跨境传输白名单
 
-> 来源：[https://docs.feishu.cn/docx/WEnOdPKQIoZIsQx4rlKcFDMvnwc](https://docs.feishu.cn/docx/WEnOdPKQIoZIsQx4rlKcFDMvnwc)
+> 来源：https://docs.feishu.cn/docx/WEnOdPKQIoZIsQx4rlKcFDMvnwc
 
 **-问：**有哪位大佬知道俄罗斯对于个人数据跨境 中国已经被认定为充分保护国家了吗？我只看到了俄罗斯联邦通信局的一个草案。
 
-**-答1：**去年9月，新增了中国。KHP这里是应该是中国了。
+**-答1：**去年9月，新增了中国。`KHP`这里是应该是中国了。
 
 ![](img/91ef5e06ff7864800752fbc93654bd59.png)
 

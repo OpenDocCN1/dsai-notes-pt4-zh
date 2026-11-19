@@ -1,10 +1,11 @@
+
 # AI每日资讯-202503
 
 > 来源：[https://aigcreative.feishu.cn/docx/Bebhd0LNCor2b3xaR4Wc83OLnzf](https://aigcreative.feishu.cn/docx/Bebhd0LNCor2b3xaR4Wc83OLnzf)
-
+>
 > **动态 | 观点 | 人物 | 产品 | 体验** | 应用 | 公司 | 融资 | 产业
 
-## 【20250331】动态 |Runway推出Gen-4 AI模型，革新媒体生成技术
+## 【20250331】动态 | Runway推出Gen-4 AI模型，革新媒体生成技术
 
 Runway公司发布Gen-4系列AI模型，显著提升了媒体生成的质量与控制力，超越前代Gen-3 Alpha。新模型在视频生成中展现出更高的真实感、动态效果及风格一致性，支持用户通过图像参考和指令创建连贯的故事内容。Gen-4的图像转视频功能已向付费及企业用户开放，并通过短片《The Lonely Little Flame》等作品展示其叙事能力。Runway致力于通过AI技术推动艺术与娱乐创新，其Runway Studios已利用该技术制作多部影片与音乐视频，为创作者提供强大工具。
 
@@ -12,13 +13,13 @@ Runway公司发布Gen-4系列AI模型，显著提升了媒体生成的质量与�
 
 ![](img/deb564811727320afc4430341601337e.png)
 
-# 【20250330】动态 | AWPortrait CN2正式发布，升级模型聚焦东方美学表达！
+## 【20250330】动态 | AWPortrait CN2正式发布，升级模型聚焦东方美学表达！
 
 由DynamicWang发布的AWPortrait CN2模型正式上线，这是对AWPortrait CN的全新升级版本。该模型深入探索东方美学，支持更多年龄段、服饰、场景等多样化主题，适用于食物、建筑、环境等图像生成需求，展现更细腻的视觉风格。该模型无需额外关键词，推荐LoRA权重为0.9-1，用户可免费在HuggingFace平台下载体验，使用Flux-1-dev-non-commercial-license VEL授权，进一步拓展AIGC在人物肖像生成领域的创造力边界。
 
 ![](img/5e9aae8f221a5fc9ee9a9afd71a5f024.png)
 
-# 【20250330】动态 | 谷歌火力全开！Gemini 2.5 Pro 实验版全面开放，支持多模态输入与百万Token上下文！
+## 【20250330】动态 | 谷歌火力全开！Gemini 2.5 Pro 实验版全面开放，支持多模态输入与百万Token上下文！
 
 Google 正式向所有 Gemini 用户开放 Gemini 2.5 Pro（实验版），无需付费即可体验。该版本拥有更强的推理理解能力、更快更准确的代码生成能力，并支持文本、图片、音频、视频等多模态输入，最大支持上下文长度达100万token。TPU算力全面开动，Google团队全力加速推广，只为让这款更智能的模型尽早触达用户。
 
@@ -26,7 +27,7 @@ Google 正式向所有 Gemini 用户开放 Gemini 2.5 Pro（实验版），无�
 
 ![](img/d5d3d3edd7f57d769717e7a741efca96.png)
 
-# 【20250328】动态 | PixVerse API推出首尾帧魔术功能，极简操作实现丝滑转场！
+## 【20250328】动态 | PixVerse API推出首尾帧魔术功能，极简操作实现丝滑转场！
 
 PixVerse最新发布的API功能“First & Last Frame Magic”，只需上传2张图片和文字，即可生成自然流畅的视频转场动画，助力内容创作者以极高效率打造视觉作品。该功能具备极简操作界面与高速渲染能力，适合日程繁忙的创作人群使用。全流程用户掌控，释放创意不设限。PixVerse再次展现其在AI视频编辑领域的领先实力。
 
@@ -34,7 +35,7 @@ PixVerse最新发布的API功能“First & Last Frame Magic”，只需上传2�
 
 [94886936c4062b5d3d92166bacbb7216.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NWGdbfFQcoPdoNxK3ohcCwbYnYc)
 
-# 【20250327】动态 | 对抗GPT-4o，Ideogram 3.0发布，AI图像生成再升级
+## 【20250327】动态 | 对抗GPT-4o，Ideogram 3.0发布，AI图像生成再升级
 
 Ideogram AI推出Ideogram 3.0模型，以其惊艳的真实感、创意设计和一致的风格受到关注。新模型在图像-提示对齐、照片级真实感和文本渲染质量上取得重大突破，支持复杂空间构图和艺术化文本生成，适用于广告、设计等专业场景。Ideogram 3.0还引入了风格参考功能，用户可上传至多三张图像引导生成风格，并提供43亿预设风格库供探索。
 
@@ -62,7 +63,7 @@ MidJourney 官方正在考虑在其平台上推出 视频生成功能，并向�
 
 ## 【20250321】动态 | OpenAI发布新一代音频模型，提升语音识别与TTS合成能力
 
-OpenAI近日推出三款全新音频模型API，包括两款语音转文字（Speech-to-Text）模型——gpt-4o-transcribe（精准版）和gpt-4o-mini-transcribe（轻量版），以及一款文本转语音（Text-to-Speech）模型——gpt-4o-mini-tts。新版本在语音识别准确性上有明显提升，尤其在嘈杂环境下的抗干扰能力更强。同时，TTS模型支持语气风格调整，开发者可以生成更具个性化的语音内容。这些改进让音频AI技术更具实用价值，为客服、导航、语音助手等应用带来更智能、更人性化的体验。
+OpenAI近日推出三款全新音频模型API，包括两款语音转文字（Speech-to-Text）模型——`gpt-4o-transcribe`（精准版）和`gpt-4o-mini-transcribe`（轻量版），以及一款文本转语音（Text-to-Speech）模型——`gpt-4o-mini-tts`。新版本在语音识别准确性上有明显提升，尤其在嘈杂环境下的抗干扰能力更强。同时，TTS模型支持语气风格调整，开发者可以生成更具个性化的语音内容。这些改进让音频AI技术更具实用价值，为客服、导航、语音助手等应用带来更智能、更人性化的体验。
 
 网址：https://www.openai.fm/
 
@@ -154,4 +155,4 @@ Anthropic的研究数据显示，人工智能（AI）在计算机与数学（37.
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

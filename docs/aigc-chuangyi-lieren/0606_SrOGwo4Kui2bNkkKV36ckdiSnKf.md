@@ -1,3 +1,4 @@
+
 # 光的艺术3：AI绘画如何用“光”？-艺术光效
 
 > 来源：[https://aigcreative.feishu.cn/docx/PeJsd7QNToQx18xbyGgccjDZnrc](https://aigcreative.feishu.cn/docx/PeJsd7QNToQx18xbyGgccjDZnrc)
@@ -24,7 +25,7 @@
 
 ![](img/7bafd5d5a78ebf4f1f50dcc16e90bfa0.png)
 
-## Double exposure:  Blending two images for a surreal effect.
+## Double exposure: Blending two images for a surreal effect.
 
 双重曝光：混合两个图像以获得超现实的效果。
 

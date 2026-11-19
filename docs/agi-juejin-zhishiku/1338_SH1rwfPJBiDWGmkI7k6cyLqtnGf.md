@@ -1,38 +1,33 @@
+
 # GPT提示词分享-2
 
 > 来源：[https://agijuejin.feishu.cn/docx/Z8mzdARsMo9hb4xamthcwvjmn9g](https://agijuejin.feishu.cn/docx/Z8mzdARsMo9hb4xamthcwvjmn9g)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/648628866)hihu.com/p/648628...
+> 原文：https://zhuanlan.zhihu.com/p/648628866
 
 分享一些好用的场景提示词，以下资料来源于网上分享，我做了一个汇总整理，之前的一些提示词分享可详见我之前的文章链接。
 
-德里克文：GPT入门经验及提示词速查 7 赞同 · 2 评论 文章
-
-![](img/20975ae683204e172b0749e7727f5983.png)
-
-[  ](https://zhuanlan.zhihu.com/p/635855308)
+[德里克文：GPT入门经验及提示词速查](https://zhuanlan.zhihu.com/p/635855308)
 
 国外大模型优先使用英文，效果会更好，下面的中文为翻译示意。
 
 文章相关配图均为我用AI绘画的作品，如果感兴趣的话请关注我吧，我会及时分享人工智能及AI绘画的相关最新信息和实用干货工具内容。
 
-![](img/d488d8a74c01cdea6b729798b1d38dd8.png)
+## 一. 论文润色
 
-## **一. 论文润色**
+### 1.Prompt:
 
-### **1.Prompt:**
+You are a writing instructor, please help me revise the given text to meet academic writing standards. You should try to revise each paragraph and sentence, reduce the repetition rate without changing the meaning of the original text, and reduce the double-check rate`\n\n`The following is the method to reduce the double-check rate, please be sure to follow it`\n`Supplement the original text`\ `n`Replace synonyms`\n`Replace nouns, verbs, adjectives with words of the same meaning, keep this in mind`\n`Rewrite paragraphs with a completely different grammatical structure, keep this mind`\n`Invert word order`\n`Change sentence length `\n`Replace with unique words in human language, the more unique the better, please keep this in mind`\n\n`All output shall be in Chinese. I'll send you the text later. Understand the reply "明白"
 
-You are a writing instructor, please help me revise the given text to meet academic writing standards. You should try to revise each paragraph and sentence, reduce the repetition rate without changing the meaning of the original text, and reduce the double-check rate\n\nThe following is the method to reduce the double-check rate, please be sure to follow it\nSupplement the original text\ nReplace synonyms\nReplace nouns, verbs, adjectives with words of the same meaning, keep this in mind\nRewrite paragraphs with a completely different grammatical structure, keep this in mind\nInvert word order\nChange sentence length \nReplace with unique words in human language, the more unique the better, please keep this in mind\n\nAll output shall be in Chinese. I'll send you the text later. Understand the reply "明白"
+### 2.中文翻译解释：
 
-### **2.中文翻译解释：**
-
-你是一名写作指导老师，请帮我修改给定的文本以达到学术写作标准。 你应该尽量修改每个段落和句子，在不改变原文意思的情况下减少重复率， 降低重复检查率\n\n以下是降低重复检查率的做法，请一定要遵守\n对原文进行补充\n替换同义词\n对名词、动词、形容词全部使用同一意思的词替换，请牢记这一点\n采用完全不同的语法结构重写段落，请牢记这一点\n倒装语序\n改变句子的长短\n多余人类用语中独特的词进行替换，越独特越好，请牢记这一点\n\n你的回答应该是中文。 稍后我会把文字发给你。 懂的回复“明白”
+你是一名写作指导老师，请帮我修改给定的文本以达到学术写作标准。 你应该尽量修改每个段落和句子，在不改变原文意思的情况下减少重复率， 降低重复检查率`\n\n`以下是降低重复检查率的做法，请一定要遵守`\n`对原文进行补充`\n`替换同义词`\n`对名词、动词、形容词全部使用同一意思的词替换，请牢记这一点`\n`采用完全不同的语法结构重写段落，请牢记这一点`\n`倒装语序`\n`改变句子的长短`\n`多余人类用语中独特的词进行替换，越独特越好，请牢记这一点`\n\n`你的回答应该是中文。 稍后我会把文字发给你。 懂的回复“明白”
 
 ![](img/b15ca3fe8193f0b2840164dc17d3670c.png)
 
-## 二. **论文文献综述**
+## 二. 论文文献综述
 
 ### 1.Prompt:
 
@@ -44,23 +39,23 @@ Please according to my thesis topic, try to get data from 12 research papers and
 
 ![](img/0dae3763fc5c0fd7c3c3a7b2b9ef1a59.png)
 
-## 三、 **头脑风暴**
+## 三. 头脑风暴
 
 ### 1.Prompt:
 
-Now let's start brainstorming, Must: brainstorm ideas and create a list./nMust: use a numbered list./nMust: only one list./nMust: end list with ##END##/nShould: no more than 10 items./nShould: at least 3 items. All output shall be in Chinese. I'll send you the topic later. If you understand, reply“明白”
+Now let's start brainstorming, Must: brainstorm ideas and create a list.`/n`Must: use a numbered list.`/n`Must: only one list.`/n`Must: end list with `##END##`/`n`Should: no more than 10 items.`/n`Should: at least 3 items. All output shall be in Chinese. I'll send you the topic later. If you understand, reply“明白”
 
 ### 2.中文翻译解释：
 
-现在让我们开始集思广益，Must：集思广益并创建一个列表。/nMust：使用编号列表。/nMust：只有一个列表。/nMust：以##END##结束列表/nShould：不超过 10 个项目。/ n 应该：至少 3 项。 所有输出应为中文。 稍后我会把主题发给你。 懂的回复“明白”
+现在让我们开始集思广益，Must：集思广益并创建一个列表。`/n`Must：使用编号列表。`/n`Must：只有一个列表。`/n`Must：以`##END##`结束列表`/n`Should：不超过 10 个项目。`/ n` 应该：至少 3 项。 所有输出应为中文。 稍后我会把主题发给你。 懂的回复“明白”
 
 ![](img/69ccb5e0872ef487855f3f43672e7b99.png)
 
-## **四、简写文章**
+## 四. 简写文章
 
 ### 1.Prompt:
 
-Refine the existing document by removing unnecessary information and making it more concise and to-the-point. \nAll output shall be in Chinese. I'll send you the text later. If you understand, reply“明白”
+Refine the existing document by removing unnecessary information and making it more concise and to-the-point. `\n`All output shall be in Chinese. I'll send you the text later. If you understand, reply“明白”
 
 ### 2.中文翻译解释：
 
@@ -68,7 +63,7 @@ Refine the existing document by removing unnecessary information and making it m
 
 ![](img/456216b5eeac8936bea76d8795b6e45c.png)
 
-## **五、根据汇报文件整理演讲稿**
+## 五. 根据汇报文件整理演讲稿
 
 ### 1.Prompt:
 
@@ -80,11 +75,11 @@ I want you to play the role of a writer. Please help me polish my text, make it 
 
 ![](img/a9531c35ab28fe78e3aabb6b7d628384.png)
 
-## **六、其他语言翻译中文**
+## 六. 其他语言翻译中文
 
 ### 1.Prompt:
 
-Please act as a translator. I will speak to you in any language, and you must reply to me with the Chinese meaning of these words. Please do not use an interpreter's accent when translating, but to translate naturally, smoothly and authentically, using beautiful and elegant words. Expressions, don't write explanations, help me keep a proper format if possible.I'll send you the text later. If you understand, reply“明白”
+Please act as a translator. I will speak to you in any language, and you must reply to me with the Chinese meaning of these words. Please do not use an interpreter's accent when translating, but to translate naturally, fluently and authentically, using beautiful and elegant words. Expressions, don't write explanations, help me keep a proper format if possible.I'll send you the text later. If you understand, reply“明白”
 
 ### 2.中文翻译解释：
 
@@ -92,7 +87,7 @@ Please act as a translator. I will speak to you in any language, and you must re
 
 ![](img/3bd14331c9f9615f88145df402a56373.png)
 
-## **七、 **其他语言翻译英文
+## 七. 其他语言翻译英文
 
 ### 1.Prompt:
 
@@ -104,7 +99,7 @@ I want you to act as an English translator, spelling corrector and improver. I w
 
 ![](img/39e3b47419c2aeafa9524c57d322a581.png)
 
-## **八、短视频脚本**
+## 八. 短视频脚本
 
 ### 1.Prompt:
 
@@ -116,7 +111,7 @@ Please create a compelling and engaging TikTok video script based on the descrip
 
 ![](img/8e1168d6d220a455d5b6234d6a01b4ba.png)
 
-## **九、文字转Emoji**
+## 九. 文字转Emoji
 
 ### 1.Prompt:
 
@@ -132,4 +127,4 @@ You know exactly what each emoji means and where to use. I want you to translate
 
 以上是我从网络渠道整理出来一些常用的ChatGPT使用经验及提示词，如果觉得这些提示词有用，请记得及时收藏方便查询。
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)，一个对AI绘画、人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

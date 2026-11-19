@@ -1,3 +1,4 @@
+
 # 12‑Factor Agents
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/SmG1dl5jZo9D4VxvuGicDv6InQd](https://qqs7y1hozd1.feishu.cn/docx/SmG1dl5jZo9D4VxvuGicDv6InQd)
@@ -8,7 +9,6 @@
 
 **核心思想**：将自然语言转换为结构化工具调用，这是智能体最基础但也是最重要的能力。
 
-
 **例如**：
 
 用户输入："能为赞助二月份AI聚会的Terri创建一个750美元的付款链接吗？"
@@ -17,17 +17,17 @@
 
 ```
 {
-  &quot;function&quot;:{
-    &quot;name&quot;:&quot;create_payment_link&quot;,
-    &quot;parameters&quot;:{
-      &quot;amount&quot;:750,
-      &quot;customer&quot;:&quot;cust_128934ddasf9&quot;,
-      &quot;product&quot;:&quot;prod_8675309&quot;,
-      &quot;price&quot;:&quot;prc_09874329fds&quot;,
-      &quot;quantity&quot;:1,
-      &quot;memo&quot;:&quot;二月份AI聚会赞助费用&quot;
+  "function":{
+    "name":"create_payment_link",
+    "parameters":{
+      "amount":750,
+      "customer":"cust_128934ddasf9",
+      "product":"prod_8675309",
+      "price":"prc_09874329fds",
+      "quantity":1,
+      "memo":"二月份AI聚会赞助费用"
     }
-}
+  }
 }
 ```
 
@@ -36,42 +36,41 @@
 ```
 # LLM将自然语言转换为结构化对象
 nextStep = await llm.determineNextStep(
-  &quot;为赞助二月份AI聚会的Jeff创建750美元付款链接&quot;
+  "为赞助二月份AI聚会的Jeff创建750美元付款链接"
 )
 
 # 基于结构化输出处理
-if nextStep.function == &#x27;create_payment_link&#x27;:
+if nextStep.function == 'create_payment_link':
     stripe.paymentlinks.create(nextStep.parameters)
     return
-elif nextStep.function == &#x27;something_else&#x27;:
+elif nextStep.function == 'something_else':
     pass
 else:
     # 模型调用了未知函数
     pass
 ```
 
-这个原则看似简单，实际上是整个智能**体架构的基础。它的深**层价值在于创建了一个语言与行动之间的桥梁。
+这个原则看似简单，实际上是整个智能体架构的基础。它的深层价值在于创建了一个语言与行动之间的桥梁。
 
 > 传统的软件需要用户学习特定的操作界面和命令，而这个原则让用户可以用自然语言描述意图，由智能体理解并转换为工具调用。
 
 更重要的是，这种转换不是简单的关键词匹配，而是基于语义理解的结构化输出。
 
-LLM能够理解上下文，推断出用户没有明确说出的信息（比如从"Terri"推断出对应的customer_id），这是传统自然语言处理技术难以达到的。
+LLM能够理解上下文，推断出用户没有明确说出的信息（比如从"Terri"推断出对应的`customer_id`），这是传统自然语言处理技术难以达到的。
 
 这个原则的技术难点在于如何确保输出的结构化数据既准确又完整。在实际应用中，我们需要精心设计提示词来引导LLM输出符合预期格式的JSON，同时处理各种边界情况和异常输入。
 
 ### 第2原则：完全掌控你的提示词
 
-**核心思想**：不要把提示词工程交给开发框架，例如Agent框架CrewAI，提示词是你与LLM的主要接口，必须完全掌控。
-
+**核心思想**：不要把提示词工程交给开发框架，例如`Agent`框架`CrewAI`，提示词是你与LLM的主要接口，必须完全掌控。
 
 **示例**（框架黑盒模式）：
 
 ```
 agent = Agent(
-  role=&quot;部署助手&quot;,
-  goal=&quot;安全管理部署&quot;,
-  personality=&quot;谨慎细致&quot;,
+  role="部署助手",
+  goal="安全管理部署",
+  personality="谨慎细致",
   tools=[tool1, tool2, tool3]
 )
 ```
@@ -81,8 +80,8 @@ agent = Agent(
 **推荐做法**（完全掌控）：
 
 ```
-function DetermineNextStep(thread: string) -&gt; DoneForNow | ListGitTags | DeployBackend {
-  prompt = &quot;&quot;&quot;
+function DetermineNextStep(thread: string) -> DoneForNow | ListGitTags | DeployBackend {
+  prompt = """
     你是一个管理前后端系统部署的助手。
     你致力于遵循最佳实践，确保安全成功的部署。
     
@@ -104,11 +103,11 @@ function DetermineNextStep(thread: string) -&gt; DoneForNow | ListGitTags | Depl
     {thread}
     
     下一步应该做什么？
-  &quot;&quot;&quot;
+  """
 }
 ```
 
-**这个原则体**现了开发智能体的一个矛盾点：效率与控制。
+这个原则体现了开发智能体的一个矛盾点：效率与控制。
 
 技术框架能让我们快速上手，但当我们需要精准调优时，框架的封装使得我们无法触达底层。
 
@@ -118,13 +117,13 @@ function DetermineNextStep(thread: string) -&gt; DoneForNow | ListGitTags | Depl
 
 更深层的洞察是：**每个业务场景都有其独特性**。通用的提示词模板无法涵盖所有的业务细节、异常情况和特殊需求。只有完全掌控提示词，你才能：
 
-1.  **精确调优**：根据实际反馈精确调整每一个词汇
+1. **精确调优**：根据实际反馈精确调整每一个词汇
 
-1.  **业务适配**：加入特定的业务规则和约束
+1. **业务适配**：加入特定的业务规则和约束
 
-1.  **性能优化**：优化API调用次数，提高响应速度
+1. **性能优化**：优化API调用次数，提高响应速度
 
-1.  **安全控制**：确保智能体不会越界执行越界操作
+1. **安全控制**：确保智能体不会越界执行越界操作
 
 这个原则的本质是要求开发者把提示词当作代码来管理——版本控制、测试、文档化、代码审查。
 
@@ -132,29 +131,28 @@ function DetermineNextStep(thread: string) -&gt; DoneForNow | ListGitTags | Depl
 
 **核心思想**：不必使用标准消息格式传递上下文，要针对你的场景优化上下文结构。
 
-
 **传统标准格式**：
 
 ```
 [
   {
-    &quot;role&quot;:&quot;system&quot;,
-    &quot;content&quot;:&quot;你是一个有用的助手...&quot;
+    "role":"system",
+    "content":"你是一个有用的助手..."
   },
   {
-    &quot;role&quot;:&quot;user&quot;, 
-    &quot;content&quot;:&quot;能部署后端吗？&quot;
+    "role":"user", 
+    "content":"能部署后端吗？"
   },
   {
-    &quot;role&quot;:&quot;assistant&quot;,
-    &quot;content&quot;:null,
-    &quot;tool_calls&quot;: [{&quot;id&quot;:&quot;1&quot;, &quot;name&quot;:&quot;list_git_tags&quot;, &quot;arguments&quot;:&quot;{}&quot;}]
+    "role":"assistant",
+    "content":null,
+    "tool_calls": [{"id":"1", "name":"list_git_tags", "arguments":"{}"}]
   },
   {
-    &quot;role&quot;:&quot;tool&quot;,
-    &quot;name&quot;:&quot;list_git_tags&quot;, 
-    &quot;content&quot;:&quot;{\&quot;tags\&quot;: [...]}&quot;,
-    &quot;tool_call_id&quot;:&quot;1&quot;
+    "role":"tool",
+    "name":"list_git_tags", 
+    "content":"{\"tags\": [...]}",
+    "tool_call_id":"1"
   }
 ]
 ```
@@ -162,25 +160,25 @@ function DetermineNextStep(thread: string) -&gt; DoneForNow | ListGitTags | Depl
 **自定义优化格式**：
 
 ```
-&lt;slack_message&gt;
+<slack_message>
     From: @alex
     Channel: #deployments  
     Text: 能部署最新后端到生产环境吗？
-&lt;/slack_message&gt;
+</slack_message>
 
-&lt;list_git_tags&gt;
-    intent: &quot;list_git_tags&quot;
-&lt;/list_git_tags&gt;
+<list_git_tags>
+    intent: "list_git_tags"
+</list_git_tags>
 
-&lt;list_git_tags_result&gt;
+<list_git_tags_result>
     tags:
-      - name: &quot;v1.2.3&quot;
-        commit: &quot;abc123&quot; 
-        date: &quot;2024-03-15T10:00:00Z&quot;
-      - name: &quot;v1.2.2&quot;
-        commit: &quot;def456&quot;
-        date: &quot;2024-03-14T15:30:00Z&quot;
-&lt;/list_git_tags_result&gt;
+      - name: "v1.2.3"
+        commit: "abc123" 
+        date: "2024-03-15T10:00:00Z"
+      - name: "v1.2.2"
+        commit: "def456"
+        date: "2024-03-14T15:30:00Z"
+</list_git_tags_result>
 ```
 
 **技术实现**：
@@ -189,36 +187,36 @@ function DetermineNextStep(thread: string) -&gt; DoneForNow | ListGitTags | Depl
 class Thread:
   events: List[Event]
 
-classEvent:
-type: str# &quot;list_git_tags&quot;, &quot;deploy_backend&quot;, &quot;error&quot;等
-  data: Any# 对应的数据
+class Event:
+  type: str # "list_git_tags", "deploy_backend", "error"等
+  data: Any # 对应的数据
 
-defevent_to_prompt(event: Event) -&gt; str:
-    data = event.data ifisinstance(event.data, str) \
+def event_to_prompt(event: Event) -> str:
+    data = event.data if isinstance(event.data, str) \
            else stringify_to_yaml(event.data)
-    returnf&quot;&lt;{event.type}&gt;\n{data}\n&lt;/{event.type}&gt;&quot;
+    return f"<{event.type}>\n{data}\n</{event.type}>"
 
-defthread_to_prompt(thread: Thread) -&gt; str:
-    return&#x27;\n\n&#x27;.join(event_to_prompt(event) for event in thread.events)
+def thread_to_prompt(thread: Thread) -> str:
+    return '\n\n'.join(event_to_prompt(event) for event in thread.events)
 ```
 
-这个原则挑战了我们对API标准化的固有认知。OpenAI等厂商提供的标准消息格式看似是"最佳实践"，但实际上它们是为通用场景设计的方案。
+这个原则挑战了我们对API标准化的固有认知。`OpenAI`等厂商提供的标准消息格式看似是"最佳实践"，但实际上它们是为通用场景设计的方案。
 
 上下文工程的本质是信息架构设计，就像数据库设计一样，不同的业务场景需要不同的信息组织方式，标准格式往往存在以下问题：
 
-1.  **信息冗余**：很多元数据（如role、tool_call_id）对实际推理没有帮助
+1. **信息冗余**：很多元数据（如`role`、`tool_call_id`）对实际推理没有帮助
 
-1.  **结构僵化**：无法灵活表达复杂的业务关系
+1. **结构僵化**：无法灵活表达复杂的业务关系
 
-1.  **API调用浪费**：JSON格式的冗余字符消耗成本高昂的API调用次数
+1. **API调用浪费**：JSON格式的冗余字符消耗成本高昂的API调用次数
 
-1.  **语义模糊**：标准格式无法传递业务特定的语义信息
+1. **语义模糊**：标准格式无法传递业务特定的语义信息
 
 通过自定义上下文格式，你获得了几个关键优势：
 
 **信息密度优化**：同样的API调用能传递更多有效信息。比如用XML标签可以清晰表达信息层次，用YAML可以减少冗余字符。
 
-**语义增强**：可以在格式中编码业务逻辑。比如用<error>标签不仅表示这是错误信息，还隐含地告诉LLM需要错误修复。
+**语义增强**：可以在格式中编码业务逻辑。比如用`<error>`标签不仅表示这是错误信息，还隐含地告诉LLM需要错误修复。
 
 **注意力引导**：通过结构化的信息布局，引导LLM关注最重要的信息。比如把最新的事件放在最显眼的位置。
 
@@ -230,8 +228,7 @@ defthread_to_prompt(thread: Thread) -&gt; str:
 
 很多人都认为工具调用是一个复杂的过程：LLM 需要理解工具的功能，然后"调用"这个工具，工具执行后返回结果。
 
-
-但实际上，**工**具调用的本质就是让 LLM 输出一个结构化的 JSON，然后我们的代码根据这个 JSON 来执行对应的操作。
+但实际上，工具调用的本质就是让 LLM 输出一个结构化的 JSON，然后我们的代码根据这个 JSON 来执行对应的操作。
 
 这就像是：
 
@@ -250,29 +247,29 @@ class Issue:
     team_id: str
     assignee_id: str
 
-classCreateIssue:
-    intent: &quot;create_issue&quot;
+class CreateIssue:
+    intent: "create_issue"
     issue: Issue
 
-classSearchIssues:
-    intent: &quot;search_issues&quot;
+class SearchIssues:
+    intent: "search_issues"
     query: str
     what_youre_looking_for: str
 ```
 
-**传统思路**：定义两个函数 create_issue() 和 search_issues()，让 LLM 选择调用哪个。
+**传统思路**：定义两个函数`create_issue()`和`search_issues()`，让 LLM 选择调用哪个。
 
-**新思路**：让 LLM 输出一个 JSON，我们根据 JSON 的 intent 字段来决定执行什么操作。
+**新思路**：让 LLM 输出一个 JSON，我们根据 JSON 的 `intent` 字段来决定执行什么操作。
 
 ```
 # LLM 输出的 JSON 可能是这样的：
 {
-    &quot;intent&quot;: &quot;create_issue&quot;,
-    &quot;issue&quot;: {
-        &quot;title&quot;: &quot;用户无法登录&quot;,
-        &quot;description&quot;: &quot;用户反馈登录页面一直转圈&quot;,
-        &quot;team_id&quot;: &quot;tech_support&quot;,
-        &quot;assignee_id&quot;: &quot;zhang_san&quot;
+    "intent": "create_issue",
+    "issue": {
+        "title": "用户无法登录",
+        "description": "用户反馈登录页面一直转圈",
+        "team_id": "tech_support",
+        "assignee_id": "zhang_san"
     }
 }
 ```
@@ -280,21 +277,22 @@ classSearchIssues:
 然后我们的代码这样处理：
 
 ```
-if next_step.intent == &#x27;create_issue&#x27;:
+if next_step.intent == 'create_issue':
     # 调用真正的工单系统 API
     jira_api.create_issue(next_step.issue)
-    return &quot;工单创建成功&quot;
-elif next_step.intent == &#x27;search_issues&#x27;:
+    return "工单创建成功"
+elif next_step.intent == 'search_issues':
     # 调用搜索 API
     results = jira_api.search(next_step.query)
-    return f&quot;找到 {len(results)} 个相关工单&quot;
+    return f"找到 {len(results)} 个相关工单"
 else:
-    return &quot;无法识别的操作&quot;
+    return "无法识别的操作"
 ```
 
 这样做有什么好处？
 
-1.  **控制权在你手里**
+1. **控制权在你手里**
+
 LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 +   你可以决定是否真的执行这个操作
@@ -303,14 +301,16 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 +   你可以根据上下文动态调整执行逻辑
 
-1.  **更大的灵活性**
+1. **更大的灵活性**
+
 不是每个"工具调用"都要对应一个固定的函数。比如：
 
 +   同样是"发送邮件"，VIP 客户和普通客户可能走不同的发送逻辑
 
 +   同样是"查询数据"，不同的用户角色可能查询不同的数据源
 
-1.  **更容易调试和监控**
+1. **更容易调试和监控**
+
 因为所有的决策都以 JSON 形式明确表达，你可以：
 
 +   记录每次 LLM 的决策过程
@@ -322,7 +322,6 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 ### 第5原则：统一执行状态和业务状态
 
 **核心思想**：不要分离"执行状态"和"业务状态"，尽可能统一管理。
-
 
 很多基础设施系统习惯把这两种状态分开管理，设计复杂的抽象来跟踪各种状态信息。
 
@@ -336,7 +335,7 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 +   重试次数等
 
-**业务状态**：系统到目前为止发生了什么
+**业务状态**：系统目前为止发生了什么
 
 +   OpenAI消息列表
 
@@ -356,34 +355,33 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 统一管理的好处：
 
-1.  **简洁性** - 所有状态信息来自同一个地方
+1. **简洁性** - 所有状态信息来自同一个地方
 
-1.  **序列化** - 整个对话线程很容易保存和加载
+1. **序列化** - 整个对话线程很容易保存和加载
 
-1.  **调试** - 所有历史记录集中查看，问题一目了然
+1. **调试** - 所有历史记录集中查看，问题一目了然
 
-1.  **灵活性** - 添加新功能只需增加新的事件类型
+1. **灵活性** - 添加新功能只需增加新的事件类型
 
-1.  **恢复** - 系统崩溃后可以从任何节点恢复
+1. **恢复** - 系统崩溃后可以从任何节点恢复
 
-1.  **分叉** - 可以在任意时间点创建对话分支
+1. **分叉** - 可以在任意时间点创建对话分支
 
-1.  **人性化** - 容易转换成可读的文档或者web界面
+1. **人性化** - 容易转换成可读的文档或者web界面
 
 ### 第6原则：API的启动/暂停/恢复
 
 **核心思想**：智能体应该支持启动、暂停、恢复操作。
 
-
 **关键特性**：能够在函数选择和函数执行之间暂停，这对需要人工审核的核心业务操作至关重要。
 
 大多数框架将智能体开发为同步的、一次性执行。一旦执行，就必须运行到完成或失败。这种模式忽略了现实业务场景的复杂性：
 
-1.  **人机协作的异步性**：人类的响应时间是不可预测的，可能是几分钟，也可能是几小时
+1. **人机协作的异步性**：人类的响应时间是不可预测的，可能是几分钟，也可能是几小时
 
-1.  **外部依赖的不确定性**：很多操作需要等待外部系统的响应
+1. **外部依赖的不确定性**：很多操作需要等待外部系统的响应
 
-1.  **风险控制的必要性**：核心业务操作需要在执行前暂停进行人工审核
+1. **风险控制的必要性**：核心业务操作需要在执行前暂停进行人工审核
 
 **暂停/恢复机制**：
 
@@ -397,8 +395,7 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 ### 第7原则：用函数调用与人类交互
 
-**在传统的AI** Agent实现中，存在一个关键的决策点：LLM 需要在每次响应时做出选择——返回纯文本内容还是结构化数据？
-
+**在传统的AI Agent实现中**，存在一个关键的决策点：LLM 需要在每次响应时做出选择——返回纯文本内容还是结构化数据？
 
 比如当用户问"东京的天气如何"时：
 
@@ -408,31 +405,33 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 这种设计让AI Agent在交互的灵活性上受到很大限制。
 
-**与其让AI Agen**t在纯文本和结构化数据之间纠结，不如让它始终输出JSON格式，然后通过自然语言标记来表达意图。
+**与其让AI Agent在纯文本和结构化数据之间纠结**，不如让它始终输出JSON格式，然后通过自然语言标记来表达意图。
+
+
 
 这就像是给AI Agent制定了一套"内部语言"，让它能够更清晰地表达自己的想法和需求。
 
 这样的好处是：
 
-1.  指令更加清晰
+1. 指令更加清晰
 
 不同类型的人类交互工具让LLM能够给出更具体、更精准的回应。
 
-1.  内外循环灵活切换
+2. 内外循环灵活切换
 
-**这是最重要的一点**：传统的AI Agent都是被动响应（Human->Agent），而这种设计支持主动发起（Agent->Human）。
+这是最重要的一点：传统的AI Agent都是被动响应（`Human->Agent`），而这种设计支持主动发起（`Agent->Human`）。
 
 想象一下：你的AI Agent可以在每天早上9点主动给你发送昨日数据分析报告，或者在检测到异常时主动联系相关人员。
 
-1.  多人协作支持
+3. 多人协作支持
 
 通过结构化事件，可以轻松追踪和协调不同人员的输入。比如在审批流程中，AI Agent可以同时联系多个审批人。
 
-1.  多智能体扩展
+4. 多智能体扩展
 
-这套抽象设计可以很容易扩展为Agent->Agent的请求和响应。想象一下多个AI Agent之间的协作场景。
+这套抽象设计可以很容易扩展为`Agent->Agent`的请求和响应。想象一下多个AI Agent之间的协作场景。
 
-1.  持久性和可靠性
+5. 持久性和可靠性
 
 结合状态管理，整个工作流变得持久、可靠且易于监控。即使系统重启，也能从上次的状态继续执行。
 
@@ -440,18 +439,17 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 **核心思想**：构建适合特定场景的工作流，不同类型的工具调用可能需要不同的工作流程处理。
 
-
 这个原则涉及智能体架构的最核心问题：谁来控制执行流程？
 
 大多数框架选择了"LLM控制一切"的模式，但这种选择隐含着很大的风险和限制。
 
-1.  **LLM并不擅长控制流程**：LLM是为内容生成而设计的，而不是为流程控制。让它同时负责"决定做什么"和"如何控制执行"是发生混乱。
+1. **LLM并不擅长控制流程**：LLM是为内容生成而设计的，而不是为流程控制。让它同时负责"决定做什么"和"如何控制执行"是发生混乱。
 
-1.  **缺乏业务逻辑的表达能力**：复杂的业务规则（如审批流程、权限控制、异常处理）很难仅通过提示词来精确表达。
+2. **缺乏业务逻辑的表达能力**：复杂的业务规则（如审批流程、权限控制、异常处理）很难仅通过提示词来精确表达。
 
-1.  **不可预测的执行路径**：当LLM控制流程时，你无法确保系统按照预期的路径执行，这在生产环境中是不可接受的。
+3. **不可预测的执行路径**：当LLM控制流程时，你无法确保系统按照预期的路径执行，这在生产环境中是不可接受的。
 
-**自定义工作流的重要性**：
+#### 自定义工作流的重要性
 
 **精确的业务逻辑表达**：通过代码而不是提示词来表达业务规则，可以实现精确的条件判断、循环、异常处理等复杂逻辑。
 
@@ -463,9 +461,9 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 因此智能体系统应该采用**混合控制模式**：
 
-+   LLM负责"智能决策"（what to do）
++ 负责"智能决策"（what to do）
 
-+   代码或者原先系统负责"流程控制"（how to do it）
++ 代码或者原先系统负责"流程控制"（how to do it）
 
 这种分离带来了几个重要好处：
 
@@ -479,79 +477,78 @@ LLM 只负责"决策"，具体"执行"由你的代码控制。这意味着：
 
 **核心思想**：利用智能体的"自我修复"能力，让LLM读取错误信息并在后续工具调用中修正问题。
 
-
-**基础实现**：
+#### 基础实现
 
 ```
-thread = {&quot;events&quot;: [initial_message]}
+thread = {"events": [initial_message]}
 
-whileTrue:
+while True:
     next_step = await determine_next_step(thread_to_prompt(thread))
-    thread[&quot;events&quot;].append({
-        &quot;type&quot;: next_step.intent,
-        &quot;data&quot;: next_step,
+    thread["events"].append({
+        "type": next_step.intent,
+        "data": next_step,
     })
     
     try:
         result = await handle_next_step(thread, next_step)
-        thread[&quot;events&quot;].append({
-            &quot;type&quot;: next_step.intent + &#x27;_result&#x27;,
-            &quot;data&quot;: result,
+        thread["events"].append({
+            "type": next_step.intent + '_result',
+            "data": result,
         })
     except Exception as e:
         # 错误添加到会话上下文，让LLM尝试修复
-        thread[&quot;events&quot;].append({
-            &quot;type&quot;: &#x27;error&#x27;,
-            &quot;data&quot;: format_error(e),
+        thread["events"].append({
+            "type": 'error',
+            "data": format_error(e),
         })
         # 循环重试
 ```
 
-**错误计数和限制**：
+#### 错误计数和限制
 
 ```
 consecutive_errors = 0
 
-whileTrue:
+while True:
     try:
         result = await handle_next_step(thread, next_step)
-        thread[&quot;events&quot;].append({
-            &quot;type&quot;: next_step.intent + &#x27;_result&#x27;, 
-            &quot;data&quot;: result,
+        thread["events"].append({
+            "type": next_step.intent + '_result', 
+            "data": result,
         })
         # 成功！重置错误计数
         consecutive_errors = 0
         
     except Exception as e:
         consecutive_errors += 1
-        if consecutive_errors &lt; 3:
+        if consecutive_errors < 3:
             # 循环重试
-            thread[&quot;events&quot;].append({
-                &quot;type&quot;: &#x27;error&#x27;,
-                &quot;data&quot;: format_error(e),
+            thread["events"].append({
+                "type": 'error',
+                "data": format_error(e),
             })
         else:
             # 跳出循环，重置上下文，升级给人类等
             break
 ```
 
-**这个原则展现了AI系统相**对于传统软件的一个独特优势：错误理解和自适应修复能力。
+**这个原则展现了AI系统相对于传统软件的一个独特优势：错误理解和自适应修复能力。**
 
 但更重要的是，它揭示了错误处理在AI系统中的全新范式。
 
-**传统错误处理的局限性**：
+#### 传统错误处理的局限性
 
 传统软件中，错误处理主要依赖于：
 
-1.  **预定义的异常类型**：程序员预先考虑可能的错误情况
+1. **预定义的异常类型**：程序员预先考虑可能的错误情况
 
-1.  **静态的处理逻辑**：每种错误对应固定的处理方式
+2. **静态的处理逻辑**：每种错误对应固定的处理方式
 
-1.  **人工干预**：复杂错误需要人工分析和修复
+3. **人工干预**：复杂错误需要人工分析和修复
 
 这种模式在面对LLM系统时显得力不从心，因为LLM可能产生各种意料之外的错误。
 
-**AI错误处理的新范式**：
+#### AI错误处理的新范式
 
 **语义错误理解**：LLM不仅能识别错误的类型，还能理解错误的语义含义，比如"权限不足"意味着需要更高权限的凭证。
 
@@ -559,42 +556,41 @@ whileTrue:
 
 **增量学习能力**：每次错误处理都会增加系统的"经验"，虽然单次会话中LLM不会记住，但可以通过上下文累积来改善处理策略。
 
-**错误处理的分层策略**：
+#### 错误处理的分层策略
 
-1.  **自动重试层**：LLM尝试理解和修复错误
+1. **自动重试层**：LLM尝试理解和修复错误
 
-1.  **上下文重构层**：如果重试失败，重新组织上下文信息
+2. **上下文重构层**：如果重试失败，重新组织上下文信息
 
-1.  **人工干预层**：如果自动修复失败，升级给人类处理
+3. **人工干预层**：如果自动修复失败，升级给人类处理
 
-1.  **系统级回退层**：如果人工干预也无效，回退到安全状态
+4. **系统级回退层**：如果人工干预也无效，回退到安全状态
 
 这种分层策略确保了系统既能充分利用AI的自我修复能力，又不会因为过度依赖而失控。
 
-**最重要的是****：错误不再是系统**的异常状态，而是学习和改进的机会。这种思维转变对于构建真正智能体系统至关重要。
+**最重要的是**：错误不再是系统的异常状态，而是学习和改进的机会。这种思维转变对于构建真正智能体系统至关重要。
 
 ### 第10原则：专业化智能体
 
-**核心思想**：构建小而专注、做好一件事的智能体，而不是试图做所有事情的单体智体手。
-
+**核心思想**：构建小而专注、做好一件事的智能体，而不是试图做所有事情的单体智能体。
 
 **核心洞察**：任务越大越复杂，需要的步骤就越多，意味着更长的会话上下文，随着上下文增长，LLM更容易迷糊。
 
 **推荐范围**：保持智能体专注于特定领域的3-10个步骤，最多20个步骤，确保会话上下文可管理，LLM性能高。
 
-**这个原则挑战了软件**工程中的一个常见误区：大而全的系统更强大。在传统软件开发中，我们确实倾向于构建功能丰富的大型系统，但在AI智能助手领域，这种思路是有害的。
+**这个原则挑战了软件工程中的一个常见误区**：大而全的系统更强大。在传统软件开发中，我们确实倾向于构建功能丰富的大型系统，但在AI智能助手领域，这种思路是有害的。
 
-**认知负荷理论在AI中的应用**：
+#### 认知负荷理论在AI中的应用
 
-人**类认知科学研究**表明，人类的工作记忆有限，一次只能处理7±2个信息单元。LLM虽然没有相同的认知限制，但存在类似的注意力分散问题：
+人类认知科学研究表明，人类的工作记忆有限，一次只能处理7±2个信息单元。LLM虽然没有相同的认知限制，但存在类似的注意力分散问题：
 
-1.  **上下文稀释**：信息量越大，每个信息单元获得的"注意力"越少
+1. **上下文稀释**：信息量越大，每个信息单元获得的"注意力"越少
 
-1.  **目标漂移**：长任务中容易偏离原始目标
+2. **目标漂移**：长任务中容易偏离原始目标
 
-1.  **决策疲劳**：连续的决策制定会降低决策质量
+3. **决策疲劳**：连续的决策制定会降低决策质量
 
-**专业化智能体的深层优势**：
+#### 专业化智能体的深层优势
 
 **注意力集中**：有限的任务范围让LLM能够集中所有"注意力"在关键决策上。
 
@@ -604,68 +600,65 @@ whileTrue:
 
 **测试简化**：小智能体的行为空间有限，更容易进行全面测试。
 
-**智能体网络的新架构模式**：
+#### 智能体网络的新架构模式
 
-**专业化小智**能体原则实际上指向了一种新的系统架构：智能体网络，而不是单一的超级智能体。
+专业化小智能体原则实际上指向了一种新的系统架构：智能体网络，而不是单一的超级智能体。
 
 这类似于微服务架构相对于单体应用的优势：
 
-+   **独立部署**：每个智能助手可以独立更新
++ 独立部署：每个智能助手可以独立更新
 
-+   **技术多样性**：不同智能助手可以使用最适合的技术栈
++ 技术多样性：不同智能助手可以使用最适合的技术栈
 
-+   **水平扩展**：可以根据需求扩展特定功能的智能体
++ 水平扩展：可以根据需求扩展特定功能的智能体
 
-+   **团队分工**：不同团队可以负责不同的智能体
++ 团队分工：不同团队可以负责不同的智能体
 
-**
-
-智能不等于复**杂。真正的智能体现在能够精确、可靠地完成特定任务，而不是试图解决所有问题。
+智能不等于复杂。真正的智能体现在能够精确、可靠地完成特定任务，而不是试图解决所有问题。
 
 ### 第11原则：多渠道触发，用户在哪里就在哪里服务
 
 **核心思想**：让用户能够从Slack、邮件、短信等任何渠道触发智能体，智能体也能通过相同渠道响应。
 
+**这个原则解决了AI应用面临的一个根本性用户体验问题**：上下文切换的认知成本。
 
-**这个原则解决了AI应用面临的一个**根本性用户体验问题：上下文切换的认知成本。
-
-**用户体验的深层洞察**：
+#### 用户体验的深层洞察
 
 当用户需要使用AI智能体时，传统方式要求他们：
 
-1.  停止当前工作
+1. 停止当前工作
 
-1.  打开专门的AI智能体
+2. 打开专门的AI智能体
 
-1.  输入请求
+3. 输入请求
 
-1.  等待响应
+4. 等待响应
 
-1.  将结果带回到原工作环境
+5. 将结果带回到原工作环境
 
-这种**上下文切换**造成了巨大的认知成本和工作流程中断。
+这种上下文切换造成了巨大的认知成本和工作流程中断。
 
 ![](img/90410fdcdc48d41458cbe2737b6efa99.png)
 
-**优势：**
+#### 优势
 
-+   • **在用户习惯的地方找到用户**：让AI应用能够像真人一样自然交流，或者至少像靠谱的数字同事一样工作
++ **在用户习惯的地方找到用户**：让AI应用能够像真人一样自然交流，或者至少像靠谱的数字同事一样工作
 
-+   • **AI主动工作模式**：AI不需要人来启动，可以被系统事件、定时任务、故障报警等自动触发。AI可能会工作5分钟、20分钟或90分钟，但遇到重要决策时，会主动联系人类请求帮助、获取反馈或寻求批准
++ **AI主动工作模式**：AI不需要人来启动，可以被系统事件、定时任务、故障报警等自动触发。AI可能会工作5分钟、20分钟或90分钟，但遇到重要决策时，会主动联系人类请求帮助、获取反馈或寻求批准
 
-+   • **处理重要任务的能力**：当你能快速让合适的人参与进来时，就可以放心让AI处理重要操作，比如发送对外邮件、更新生产环境数据等。有了清晰的操作规范，你就能追踪AI的行为，对AI处理重大任务更放心
++ **处理重要任务的能力**：当你能快速让合适的人参与进来时，就可以放心让AI处理重要操作，比如发送对外邮件、更新生产环境数据等。有了清晰的操作规范，你就能追踪AI的行为，对AI处理重大任务更放心
 
 ## 总结
 
 这12个原则不是孤立的，而是相互联系的。它们共同指向一个核心理念：在AI的不确定性之上构建确定性的系统。
 
-**核心思想的三个层次**：
+#### 核心思想的三个层次
 
-1.  **控制权层次**：完全掌控提示词、会话上下文、控制流程等关键组件
+1. **控制权层次**：完全掌控提示词、会话上下文、控制流程等关键组件
 
-1.  **架构层次**：采用专业化智能体、状态统一、可暂停恢复的设计
+2. **架构层次**：采用专业化智能体、状态统一、可暂停恢复的设计
 
-1.  **交互层次**：支持多渠道、人机协作、主动式的交互模式
+3. **交互层次**：支持多渠道、人机协作、主动式的交互模式
 
 不要试图构建万能的AI智能体，而要构建专业的AI同事。每个智能体都应该在特定领域内表现卓越，需要帮助时能够寻求协作。
 

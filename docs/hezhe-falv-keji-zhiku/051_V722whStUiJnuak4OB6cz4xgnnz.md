@@ -1,3 +1,4 @@
+
 # 2025 年 11 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/T1YldeMe5oaTX1xNgG5ceef7nwd](https://docs.feishu.cn/docx/T1YldeMe5oaTX1xNgG5ceef7nwd)
@@ -5,28 +6,21 @@
 ---
 
 > 你好，欢迎收看何者社区法律科技日报！
-
 >
-
-> **这是何者社**区**推出的一**个**资讯专**栏**，每天都会收**集、整理与 法律 AI、法律科技、大模型、生成式 AI 相关的前沿资讯，并在【法律 AI 交流群｜何者 Hezher】🛰️群集合发送。
-
+> 这是何者社区推出的一个资讯专栏，每天都会收集、整理与 法律 AI、法律科技、大模型、生成式 AI 相关的前沿资讯，并在【法律 AI 交流群｜何者 Hezher】🛰️群集合发送。
 >
-
 > 💙 温馨提示：
+>
+> 1. 电脑端点击本文档左侧目录，或者移动端滑动右侧目录，即可快速跳转到不同内容的相应位置。
+> 2. 由于信息搜集存在一定滞后性，同时何者社区将本日报视为一个迭代过程，我们将不定期将值得关注的资讯补充更新到文档中，随着时间推移，本文档就变成了法律科技周报、月报。
+> 3. 受限于我们关注的范围，以及对一件事情是否「重要」的理解不同，可能还有值得记录的资讯没有被我们观察到，欢迎私信交流，也欢迎各界人士参与共建。
+> 4. [订阅会员](https://legalstudio.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)文档仅收录快讯，如需阅读完整内容：
 
-1.  电脑端点击本文档左侧目录，或者移动端滑动右侧目录，即可快速跳转到不同内容的相应位置。
-
-1.  由于信息搜集存在一定滞后性，同时何者社区将本日报视为一个迭代过程，我们将不定期将值得关注的资讯补充更新到文档中，随着时间推移，本文档就变成了法律科技周报、月报。
-
-1.  受限于我们关注的范围，以及对一件事情是否「重要」的理解不同，可能还有值得记录的资讯没有被我们观察到，欢迎私信交流，也欢迎各界人士参与共建。
-
-1.  [订阅会员](https://legalstudio.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)文档仅收录快讯，如需阅读完整内容：
-
-# 📑 法**律 AI 行业研究**
+# 📑 法律 AI 行业研究
 
 > 报告详情：[法律科技行业研究汇总](https://legalstudio.feishu.cn/wiki/Q3qmwkxpdiRdR5kZLo7cpwY8n3b?from=from_copylink)
 
-## 新南威尔士大学最新研究：AI 生成虚假内容的案件已超过  500 起
+## 新南威尔士大学最新研究：AI 生成虚假内容的案件已超过 500 起
 
 11 月 28 日，新南威尔士大学法律职业未来中心（简称“CFLP”）发布《GenAI, Fake Law & Fallout》研究报告。
 
@@ -58,7 +52,7 @@
 
 报告显示，各种类型的法律组织都在积极采用 AI，但企业法务部门面临的压力比外部律师中更大，而这种压力主要来自于组织的高层领导者，对内希望降本增效，对外希望塑造创新竞争优势。然而，所有受访者都普遍认为，数据安全和隐私是采用 AI 技术的主要障碍，70% 的律所受访者和 68% 的企业法务认为数据安全和隐私是其关注点。
 
-# 🤖 法**律 AI 行业实践**
+# 🤖 法律 AI 行业实践
 
 ## 魔圈所对 AI 的又一重大投资：年利达 Linklaters 成立「AI 律师」专职团队
 
@@ -88,12 +82,12 @@
 
 完成该项目的毕业生将获得正式证书，向未来的雇主证明自己具备在 AI 赋能的法律环境中执业的能力。
 
-# 💰 法**律科技资本市场**
+# 💰 法律科技资本市场
 
 > 资讯详情：
-
+>
 > [2025 年法律科技融资新闻汇总](https://legalstudio.feishu.cn/wiki/RwrTw2ohkiYBMSktAs6cxR4rn9F)
-
+>
 > [2025 年法律科技并购新闻汇总](https://legalstudio.feishu.cn/wiki/UQ6qwKd2Vijll6kc56JcpBmPnBb)
 
 ## 法律工作流程服务商 Onit 收购案件管理和事务管理平台 LawBase
@@ -108,7 +102,7 @@
 
 这是全球法律服务行业的一个标志性事件 —— 法律科技公司与全球顶尖投资机构联合创办专业律所，这一跨界组合不仅打破了法律行业的传统边界，更是揭开了 AI 公司与资本深度渗透法律服务领域的新篇章。同时，这起新闻并非偶然，而是市场需求、技术迭代、与资本加持共同作用的必然结果，背后蕴含着清晰的行业演进脉络。
 
-> 拓展阅读：[时代变了！全球资产管理机构黑石集团与](https://mp.weixin.qq.com/s/GQFYOSut8sG1p2o1k4pjvQ)法律 AI 公司，合作推出「AI 律所」
+> 拓展阅读：[时代变了！全球资产管理机构黑石集团与法律 AI 公司，合作推出「AI 律所」](https://mp.weixin.qq.com/s/GQFYOSut8sG1p2o1k4pjvQ)
 
 ## 专利分析服务商 Juristat 获得新一轮增长投资
 
@@ -138,13 +132,13 @@ LegalTech Fund 成立于 2021 年，是一支专注于投资 A 轮及之前阶�
 
 ## 瑞士软件公司 Trifork Group AG 投资丹麦律所 Replik A/S
 
-11 月 13 日，瑞士软件公[司 ](https://investor.trifork.com/announcements-2/trifork-invests-in-legaltech-company-replik-to-support-growth-technology-and-internationalization/)Trifork[ Group AG（](https://replik.dk/)以下简称“Trifork”）宣布收购丹麦律所 Replik A/S 的 10% 股份，与该律所合作打造 AI 驱动的法律服务产品。
+11 月 13 日，瑞士软件公司 Trifork Group AG（以下简称“Trifork”）宣布收购丹麦律所 Replik A/S 的 10% 股份，与该律所合作打造 AI 驱动的法律服务产品。
 
 Trifork 成立于 1996 年，是一家在哥本哈根纳斯达克上市的科技公司，专注于为公共行政、医疗健康、金融服务、制造业、能源、航空和零售业设计、构建和运营先进软件。该集团的研发部门 Trifork Labs，通过投资和培育具有协同效应、潜力巨大的科技公司来推动创新。目前，Trifork Labs 的投资组合包含 23 家活跃企业，营收超过 1 亿欧元。
 
 Replik 是丹麦最大的家庭法和继承法律师事务所之一，每年为成千上万人提供遗嘱、委托书、婚姻合同和共有协议等法律文件方面的服务，其渠道合作方涵盖多家丹麦大型银行，在丹麦法律服务领域具备一定的行业资源和影响力。
 
-**T**rifork 此次入股 Replik 显然是为了拓展法律科技版图，强化自身 AI 技术在专业服务场景的落地能力。
+Trifork 此次入股 Replik 显然是为了拓展法律科技版图，强化自身 AI 技术在专业服务场景的落地能力。
 
 具体来说，Trifork 可以依托自身软件技术实力，协助 Replik 搭建和优化适配法律场景的 AI 工具，比如用于案件资料整理、法律咨询初步应答、遗产继承流程简化等场景的智能系统；同时，借助 Replik 在法律行业的专业经验和客户资源，可以让合作开发的 AI 产品更贴合实际业务需求，避免技术与场景脱节。对于 Trifork 自身而言，此次合作也能丰富其产品组合，进一步开拓法律科技市场，强化 AI 技术在专业服务领域的影响力。
 
@@ -158,7 +152,7 @@ Replik 是丹麦最大的家庭法和继承法律师事务所之一，每年为�
 
 ## 企业法务 AI 平台 General Counsel AI 完成 6000 万美元 B 轮融资
 
-11 月 12 日， 企业法务 AI 平台 General Counsel AI 宣布完成 6000 万美元 B 轮融资，Scale Venture Partners 和 Northzone 领投，Sound Ventures、Aglaé Ventures、SilverCircle Partners、News Corp、The Council，以及 Vercel 首席执行官 Guillermo Rauch 等个人跟投。GC AI 提供一个 AI 驱动的合同审查工具。
+11 月 12 日，企业法务 AI 平台 General Counsel AI 宣布完成 6000 万美元 B 轮融资，Scale Venture Partners 和 Northzone 领投，Sound Ventures、Aglaé Ventures、SilverCircle Partners、News Corp、The Council，以及 Vercel 首席执行官 Guillermo Rauch 等个人跟投。GC AI 提供一个 AI 驱动的合同审查工具。
 
 ## 诉讼初创公司 Theo AI 完成 340 万美元种子轮融资
 
@@ -191,6 +185,8 @@ Omnilex 基于免费的法律数据及其合成数据，利用 AI 生成的法�
 ## 开源合同模板库初创公司 GitLaw 完成 300 万美元预种子轮融资
 
 11 月 5 日，开源合同模板初创公司 GitLaw 宣布完成 300 万美元预种子轮融资，Jackson Square Ventures 领投，Flex Capital 、Background Capital 和几位天使投资人跟投。
+
+
 
 GitLaw 提供一个免费的合同模板库，以及一个 AI 起草审查工具 GitLaw Agent。
 

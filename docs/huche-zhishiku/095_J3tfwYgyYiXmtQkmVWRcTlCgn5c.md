@@ -1,3 +1,4 @@
+
 # 羊毛党：腾讯云免费 DeepSeek-R1 671B 满血版模型调用
 
 > 来源：[https://huchegames.feishu.cn/docx/MGA4dDS3IoESh4xWDe4cK9J5nMe](https://huchegames.feishu.cn/docx/MGA4dDS3IoESh4xWDe4cK9J5nMe)
@@ -12,7 +13,7 @@ https://cloud.tencent.com/document/product/1772/111120
 
 ![](img/d0c383ec499ab0e7acdb5b576f8a19f8.png)
 
-本文介绍**如何薅腾讯云的 DeepSeek 羊毛，以及腾讯云部署的** DeepSeek 模型和官方版的区别。
+本文介绍如何薅腾讯云的 DeepSeek 羊毛，以及腾讯云部署的 DeepSeek 模型和官方版的区别。
 
 ## 腾讯云创建 API KEY
 
@@ -20,7 +21,7 @@ https://cloud.tencent.com/document/product/1772/111120
 
 https://console.cloud.tencent.com/lkeap
 
-选择 「使用 OpenAI SDK 方式接入」，创建一个 API KEY。
+选择「使用 OpenAI SDK 方式接入」，创建一个 API KEY。
 
 ![](img/79b117bc44f766eaceda82874fdda6ad.png)
 
@@ -44,15 +45,11 @@ https://cloud.tencent.com/document/product/1772/115969
 
 根据文档中的描述，我们对 Chatbox 进行配置：
 
-1.  添加一个自定义模型提供方 Tencent；
-
-1.  按照文档中的设置，填写 API 域名和 API 路径；
-
-1.  填写上一步生成的 API 密钥；
-
-1.  模型填写 deepseek-r1；
-
-1.  上下文消息数量上限填写 64（不限制）。
+1. 添加一个自定义模型提供方 Tencent；
+1. 按照文档中的设置，填写 API 域名和 API 路径；
+1. 填写上一步生成的 API 密钥；
+1. 模型填写 `deepseek-r1`；
+1. 上下文消息数量上限填写 64（不限制）。
 
 ![](img/6ddcc0962b591bc4a52ecca523aa9789.png)
 
@@ -66,8 +63,8 @@ https://cloud.tencent.com/document/product/1772/115969
 
 ![](img/6515e406ccd540430a5dce6680f513c3.png)
 
-# 但是免费啊！不卡啊！还要啥自行车！
+## 但是免费啊！不卡啊！还要啥自行车！
 
-**赶紧薅起来！**
+赶紧薅起来！
 
 <https://huchegames.feishu.cn/sync/Hzv6dRSGJsmHgOb4eSHcN1BHntg>

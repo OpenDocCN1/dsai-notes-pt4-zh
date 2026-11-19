@@ -1,16 +1,17 @@
+
 # 决策树
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Aq0AdhatzoPhIZxAZQIcpxxynRb](https://qqs7y1hozd1.feishu.cn/docx/Aq0AdhatzoPhIZxAZQIcpxxynRb)
 
-# **决策树「概述」**
+## 决策树「概述」
 
 决策树（Decision Tree）算法是一种基本的分类与回归方法，是最经常使用的数据挖掘算法之一。我们这章节只讨论用于分类的决策树
 
-决策树模型呈树形结构，在分类问题中，表示基于特征对实例进行分类的过程。它可以认为是 if-then 规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布
+决策树模型呈树形结构，在分类问题中，表示基于特征对实例进行分类的过程。它可以认为是 `if-then` 规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布
 
 决策树学习通常包括 3 个步骤: 特征选择、决策树的生成和决策树的修剪
 
-# **决策树「场景」**
+## 决策树「场景」
 
 一个叫做 "二十个问题" 的游戏，游戏的规则很简单: 参与游戏的一方在脑海中想某个事物，其他参与者向他提问，只允许提 20 个问题，问题的答案也只能用对或错回答。问问题的人通过推断分解，逐步缩小待猜测事物的范围，最后得到游戏的答案。
 
@@ -24,17 +25,17 @@
 如果不包含则将邮件归类到 &quot;无需阅读的垃圾邮件&quot; 
 ```
 
-##### 决策树
+### 决策树
 
 分类决策树模型是一种描述对实例进行分类的树形结构。决策树由结点（node）和有向边（directed edge）组成。结点有两种类型: 内部结点（internal node）和叶结点（leaf node）。内部结点表示一个特征或属性(features)，叶结点表示一个类(labels)
 
 用决策树对需要测试的实例进行分类: 从根节点开始，对实例的某一特征进行测试，根据测试结果，将实例分配到其子结点；这时，每一个子结点对应着该特征的一个取值。如此递归地对实例进行测试并分配，直至达到叶结点。最后将实例分配到叶结点的类中
 
-# **决策树「原理」**
+## 决策树「原理」
 
-## **决策树 须知概念**
+### 决策树 须知概念
 
-### **信息熵 & 信息增益**
+#### 信息熵 & 信息增益
 
 熵（entropy）: 熵指的是体系的混乱的程度，在不同的学科中也有引申出的更为具体的定义，是各领域十分重要的参量
 
@@ -42,11 +43,11 @@
 
 信息增益（information gain）: 在划分数据集前后信息发生的变化称为信息增益
 
-### **决策树 工作原理**
+#### 决策树 工作原理
 
 如何构造一个决策树?
 
-我们使用 createBranch() 方法，如下所示:
+我们使用 `createBranch()` 方法，如下所示:
 
 ```
 def createBranch():
@@ -64,7 +65,7 @@ def createBranch():
             return 分支节点
 ```
 
-### **决策树 ****算法****流程**
+#### 决策树 算法流程
 
 ```
 收集数据: 可以使用任何方法。
@@ -75,7 +76,7 @@ def createBranch():
 使用算法: 此步骤可以适用于任何监督学习任务，而使用决策树可以更好地理解数据的内在含义。
 ```
 
-### **决策树 算法特点**
+#### 决策树 算法特点
 
 ```
 优点: 计算复杂度不高，输出结果易于理解，数据有缺失也能跑，可以处理不相关特征。
@@ -83,32 +84,33 @@ def createBranch():
 适用数据类型: 数值型和标称型。
 ```
 
-# **决策树「项目案例」**
+## 决策树「项目案例」
 
-## **项目案例1: 判定鱼类和非鱼类**
+### 项目案例1: 判定鱼类和非鱼类
 
-### **项目概述**
+#### 项目概述
 
 根据以下 2 个特征，将动物分成两类: 鱼类和非鱼类。
 
 特征:
 
-1.  不浮出水面是否可以生存
+1. 不浮出水面是否可以生存
+2. 是否有脚蹼
 
-1.  是否有脚蹼
+#### 开发流程
 
-### **开发流程**
 
-```
+
+```python
 #!/usr/bin/python
 # coding:utf-8
-&#x27;&#x27;&#x27;
+'''
 Created on Oct 12, 2010
 Update on 2017-05-18
 Decision Tree Source Code for Machine Learning in Action Ch. 3
 Author: Peter Harrington/片刻
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+'''
 from __future__ import print_function
 print(__doc__)
 import operator
@@ -118,43 +120,43 @@ from collections import Counter
 
 
 def createDataSet():
-    &quot;&quot;&quot;DateSet 基础数据集
+    """DateSet 基础数据集
 
     Args:
         无需传入参数
     Returns:
         返回数据集和对应的label标签
-    &quot;&quot;&quot;
-    dataSet = [[1, 1, &#x27;yes&#x27;],
-               [1, 1, &#x27;yes&#x27;],
-               [1, 0, &#x27;no&#x27;],
-               [0, 1, &#x27;no&#x27;],
-               [0, 1, &#x27;no&#x27;]]
-    # dataSet = [[&#x27;yes&#x27;],
-    #         [&#x27;yes&#x27;],
-    #         [&#x27;no&#x27;],
-    #         [&#x27;no&#x27;],
-    #         [&#x27;no&#x27;]]
+    """
+    dataSet = [[1, 1, 'yes'],
+               [1, 1, 'yes'],
+               [1, 0, 'no'],
+               [0, 1, 'no'],
+               [0, 1, 'no']]
+    # dataSet = [['yes'],
+    #         ['yes'],
+    #         ['no'],
+    #         ['no'],
+    #         ['no']]
     # labels  露出水面   脚蹼
-    labels = [&#x27;no surfacing&#x27;, &#x27;flippers&#x27;]
+    labels = ['no surfacing', 'flippers']
     # change to discrete values
     return dataSet, labels
 
 
 def calcShannonEnt(dataSet):
-    &quot;&quot;&quot;calcShannonEnt(calculate Shannon entropy 计算给定数据集的香农熵)
+    """calcShannonEnt(calculate Shannon entropy 计算给定数据集的香农熵)
 
     Args:
         dataSet 数据集
     Returns:
         返回 每一组feature下的某个分类下，香农熵的信息期望
-    &quot;&quot;&quot;
+    """
     # -----------计算香农熵的第一种实现方式start--------------------------------------------------------------------------------
     # 求list的长度，表示计算参与训练的数据量
     numEntries = len(dataSet)
     # 下面输出我们测试的数据集的一些信息
-    # 例如: &lt;type &#x27;list&#x27;&gt; numEntries:  5 是下面的代码的输出
-    # print type(dataSet), &#x27;numEntries: &#x27;, numEntries
+    # 例如: <type 'list'> numEntries:  5 是下面的代码的输出
+    # print type(dataSet), 'numEntries: ', numEntries
 
     # 计算分类标签label出现的次数
     labelCounts = {}
@@ -166,7 +168,7 @@ def calcShannonEnt(dataSet):
         if currentLabel not in labelCounts.keys():
             labelCounts[currentLabel] = 0
         labelCounts[currentLabel] += 1
-        # print &#x27;-----&#x27;, featVec, labelCounts
+        # print '-----', featVec, labelCounts
 
     # 对于label标签的占比，求出label标签的香农熵
     shannonEnt = 0.0
@@ -176,7 +178,7 @@ def calcShannonEnt(dataSet):
         # log base 2 
         # 计算香农熵，以 2 为底求对数
         shannonEnt -= prob * log(prob, 2)
-        # print &#x27;---&#x27;, prob, prob * log(prob, 2), shannonEnt
+        # print '---', prob, prob * log(prob, 2), shannonEnt
     # -----------计算香农熵的第一种实现方式end--------------------------------------------------------------------------------
 
     # # -----------计算香农熵的第二种实现方式start--------------------------------------------------------------------------------
@@ -191,7 +193,7 @@ def calcShannonEnt(dataSet):
 
 
 def splitDataSet(dataSet, index, value):
-    &quot;&quot;&quot;splitDataSet(通过遍历dataSet数据集，求出index对应的colnum列的值为value的行)
+    """splitDataSet(通过遍历dataSet数据集，求出index对应的colnum列的值为value的行)
         就是依据index列进行分类，如果index列的数据等于 value的时候，就要将 index 划分到我们创建的新的数据集中
     Args:
         dataSet 数据集                 待划分的数据集
@@ -199,7 +201,7 @@ def splitDataSet(dataSet, index, value):
         value 表示index列对应的value值   需要返回的特征的值。
     Returns:
         index列为value的数据集【该数据集需要排除index列】
-    &quot;&quot;&quot;
+    """
     # -----------切分数据集的第一种方式 start------------------------------------
     retDataSet = []
     for featVec in dataSet: 
@@ -209,7 +211,7 @@ def splitDataSet(dataSet, index, value):
             # chop out index used for splitting
             # [:index]表示前index行，即若 index 为2，就是取 featVec 的前 index 行
             reducedFeatVec = featVec[:index]
-            &#x27;&#x27;&#x27;
+            '''
             请百度查询一下:  extend和append的区别
             list.append(object) 向列表中添加一个对象object
             list.extend(sequence) 把一个序列seq的内容添加到列表中
@@ -226,7 +228,7 @@ def splitDataSet(dataSet, index, value):
             [1, 2, 3]
             [1, 2, 3, [4, 5, 6]]
             [1, 2, 3, [4, 5, 6], 7, 8, 9]
-            &#x27;&#x27;&#x27;
+            '''
             reducedFeatVec.extend(featVec[index+1:])
             # [index+1:]表示从跳过 index 的 index+1行，取接下来的数据
             # 收集结果值 index列为value的行【该行需要排除index列】
@@ -240,13 +242,13 @@ def splitDataSet(dataSet, index, value):
 
 
 def chooseBestFeatureToSplit(dataSet):
-    &quot;&quot;&quot;chooseBestFeatureToSplit(选择最好的特征)
+    """chooseBestFeatureToSplit(选择最好的特征)
 
     Args:
         dataSet 数据集
     Returns:
         bestFeature 最优的特征列
-    &quot;&quot;&quot;
+    """
 
     # -----------选择最优特征的第一种方式 start------------------------------------
     # 求第一行有多少列的 Feature, 最后一列是label列嘛
@@ -274,8 +276,8 @@ def chooseBestFeatureToSplit(dataSet):
         # gain[信息增益]: 划分数据集前后的信息变化， 获取信息熵最大的值
         # 信息增益是熵的减少或者是数据无序度的减少。最后，比较所有特征中的信息增益，返回最好特征划分的索引值。
         infoGain = baseEntropy - newEntropy
-        print(&#x27;infoGain=&#x27;, infoGain, &#x27;bestFeature=&#x27;, i, baseEntropy, newEntropy)
-        if (infoGain &gt; bestInfoGain):
+        print('infoGain=', infoGain, 'bestFeature=', i, baseEntropy, newEntropy)
+        if (infoGain > bestInfoGain):
             bestInfoGain = infoGain
             bestFeature = i
     return bestFeature
@@ -295,8 +297,8 @@ def chooseBestFeatureToSplit(dataSet):
     #                    for feature in feature_count.items())
     #     # 更新值
     #     info_gain = base_entropy - new_entropy
-    #     print(&#x27;No. {0} feature info gain is {1:.3f}&#x27;.format(i, info_gain))
-    #     if info_gain &gt; best_info_gain:
+    #     print('No. {0} feature info gain is {1:.3f}'.format(i, info_gain))
+    #     if info_gain > best_info_gain:
     #         best_info_gain = info_gain
     #         best_feature = i
     # return best_feature
@@ -304,13 +306,13 @@ def chooseBestFeatureToSplit(dataSet):
 
 
 def majorityCnt(classList):
-    &quot;&quot;&quot;majorityCnt(选择出现次数最多的一个结果)
+    """majorityCnt(选择出现次数最多的一个结果)
 
     Args:
         classList label列的集合
     Returns:
         bestFeature 最优的特征列
-    &quot;&quot;&quot;
+    """
     # -----------majorityCnt的第一种方式 start------------------------------------
     classCount = {}
     for vote in classList:
@@ -319,7 +321,7 @@ def majorityCnt(classList):
         classCount[vote] += 1
     # 倒叙排列classCount得到一个字典集合，然后取出第一个就是结果（yes/no），即出现次数最多的结果
     sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
-    # print &#x27;sortedClassCount:&#x27;, sortedClassCount
+    # print 'sortedClassCount:', sortedClassCount
     return sortedClassCount[0][0]
     # -----------majorityCnt的第一种方式 end------------------------------------
 
@@ -348,7 +350,7 @@ def createTree(dataSet, labels):
     # 初始化myTree
     myTree = {bestFeatLabel: {}}
     # 注: labels列表是可变对象，在PYTHON函数中作为参数时传址引用，能够被全局修改
-    # 所以这行代码导致函数外的同名变量被删除了元素，造成例句无法执行，提示&#x27;no surfacing&#x27; is not in list
+    # 所以这行代码导致函数外的同名变量被删除了元素，造成例句无法执行，提示'no surfacing' is not in list
     del(labels[bestFeat])
     # 取出最优列，然后它的branch做分类
     featValues = [example[bestFeat] for example in dataSet]
@@ -358,12 +360,12 @@ def createTree(dataSet, labels):
         subLabels = labels[:]
         # 遍历当前选择特征包含的所有属性值，在每个数据集划分上递归调用函数createTree()
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value), subLabels)
-        # print &#x27;myTree&#x27;, value, myTree
+        # print 'myTree', value, myTree
     return myTree
 
 
 def classify(inputTree, featLabels, testVec):
-    &quot;&quot;&quot;classify(给输入的节点，进行分类)
+    """classify(给输入的节点，进行分类)
 
     Args:
         inputTree  决策树模型
@@ -371,7 +373,7 @@ def classify(inputTree, featLabels, testVec):
         testVec    测试输入的数据
     Returns:
         classLabel 分类的结果值，需要映射label才能知道名称
-    &quot;&quot;&quot;
+    """
     # 获取tree的根节点对于的key值
     firstStr = inputTree.keys()[0]
     # 通过key得到根节点对应的value
@@ -381,7 +383,7 @@ def classify(inputTree, featLabels, testVec):
     # 测试数据，找到根节点对应的label位置，也就知道从输入的数据的第几位来开始分类
     key = testVec[featIndex]
     valueOfFeat = secondDict[key]
-    print(&#x27;+++&#x27;, firstStr, &#x27;xxx&#x27;, secondDict, &#x27;---&#x27;, key, &#x27;&gt;&gt;&gt;&#x27;, valueOfFeat)
+    print('+++', firstStr, 'xxx', secondDict, '---', key, '>>>', valueOfFeat)
     # 判断分枝是否结束: 判断valueOfFeat是否是dict类型
     if isinstance(valueOfFeat, dict):
         classLabel = classify(valueOfFeat, featLabels, testVec)
@@ -393,20 +395,20 @@ def classify(inputTree, featLabels, testVec):
 def storeTree(inputTree, filename):
     import pickle
     # -------------- 第一种方法 start --------------
-    fw = open(filename, &#x27;wb&#x27;)
+    fw = open(filename, 'wb')
     pickle.dump(inputTree, fw)
     fw.close()
     # -------------- 第一种方法 end --------------
 
     # -------------- 第二种方法 start --------------
-    with open(filename, &#x27;wb&#x27;) as fw:
+    with open(filename, 'wb') as fw:
         pickle.dump(inputTree, fw)
     # -------------- 第二种方法 start --------------
 
 
 def grabTree(filename):
     import pickle
-    fr = open(filename,&#x27;rb&#x27;)
+    fr = open(filename, 'rb')
     return pickle.load(fr)
 
 
@@ -419,8 +421,8 @@ def fishTest():
     # calcShannonEnt(myDat)
 
     # # 求第0列 为 1/0的列的数据集【排除第0列】
-    # print &#x27;1---&#x27;, splitDataSet(myDat, 0, 1)
-    # print &#x27;0---&#x27;, splitDataSet(myDat, 0, 0)
+    # print '1---', splitDataSet(myDat, 0, 1)
+    # print '0---', splitDataSet(myDat, 0, 0)
 
     # # 计算最好的信息增益的列
     # print chooseBestFeatureToSplit(myDat)
@@ -439,21 +441,21 @@ def fishTest():
 
 
 def ContactLensesTest():
-    &quot;&quot;&quot;
+    """
     Desc:
         预测隐形眼镜的测试代码
     Args:
         none
     Returns:
         none
-    &quot;&quot;&quot;
+    """
 
     # 加载隐形眼镜相关的 文本文件 数据
-    fr = open(&#x27;data/3.DecisionTree/lenses.txt&#x27;)
+    fr = open('data/3.DecisionTree/lenses.txt')
     # 解析数据，获得 features 数据
-    lenses = [inst.strip().split(&#x27;\t&#x27;) for inst in fr.readlines()]
+    lenses = [inst.strip().split('\t') for inst in fr.readlines()]
     # 得到数据的对应的 Labels
-    lensesLabels = [&#x27;age&#x27;, &#x27;prescript&#x27;, &#x27;astigmatic&#x27;, &#x27;tearRate&#x27;]
+    lensesLabels = ['age', 'prescript', 'astigmatic', 'tearRate']
     # 使用上面的创建决策树的代码，构造预测隐形眼镜的决策树
     lensesTree = createTree(lenses, lensesLabels)
     print(lensesTree)
@@ -462,14 +464,14 @@ def ContactLensesTest():
     
     
 def get_tree_height(tree):
-    &quot;&quot;&quot;
+    """
      Desc:
         递归获得决策树的高度
     Args:
         tree
     Returns:
         树高
-    &quot;&quot;&quot;
+    """
 
     if not isinstance(tree, dict):
         return 1
@@ -481,50 +483,62 @@ def get_tree_height(tree):
     for child_tree in child_trees:
         child_tree_height = get_tree_height(child_tree)
 
-        if child_tree_height &gt; max_height:
+        if child_tree_height > max_height:
             max_height = child_tree_height
 
     return max_height + 1
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     fishTest()
     # ContactLensesTest()
 ```
 
-```
-收集数据: 可以使用任何方法
-准备数据: 树构造算法（这里使用的是ID3算法，因此数值型数据必须离散化。）
-分析数据: 可以使用任何方法，构造树完成之后，我们可以将树画出来
-训练算法: 构造树结构
-测试算法: 使用习得的决策树执行分类
-使用算法: 此步骤可以适用于任何监督学习任务，而使用决策树可以更好地理解数据的内在含义
-```
 
-> 收集数据: 可以使用任何方法
+
+# 决策树算法实现与应用
+
+## 算法流程概述
+
+- 收集数据: 可以使用任何方法
+- 准备数据: 树构造算法（这里使用的是ID3算法，因此数值型数据必须离散化。）
+- 分析数据: 可以使用任何方法，构造树完成之后，我们可以将树画出来
+- 训练算法: 构造树结构
+- 测试算法: 使用习得的决策树执行分类
+- 使用算法: 此步骤可以适用于任何监督学习任务，而使用决策树可以更好地理解数据的内在含义
+
+## 收集数据
+
+可以使用任何方法
 
 ![](img/0271fa90e6fe8c9628f1517c52e8306e.png)
 
-我们利用 createDataSet() 函数输入数据
+我们利用 `createDataSet()` 函数输入数据
 
 ```
 def createDataSet():
-    dataSet = [[1, 1, &#x27;yes&#x27;],
-            [1, 1, &#x27;yes&#x27;],
-            [1, 0, &#x27;no&#x27;],
-            [0, 1, &#x27;no&#x27;],
-            [0, 1, &#x27;no&#x27;]]
-    labels = [&#x27;no surfacing&#x27;, &#x27;flippers&#x27;]
+    dataSet = [[1, 1, 'yes'],
+            [1, 1, 'yes'],
+            [1, 0, 'no'],
+            [0, 1, 'no'],
+            [0, 1, 'no']]
+    labels = ['no surfacing', 'flippers']
     return dataSet, labels
 ```
 
-> 准备数据: 树构造算法
+## 准备数据
+
+树构造算法（这里使用的是ID3算法，因此数值型数据必须离散化。）
 
 此处，由于我们输入的数据本身就是离散化数据，所以这一步就省略了
 
-> 分析数据: 可以使用任何方法，构造树完成之后，我们可以将树画出来
+## 分析数据
+
+可以使用任何方法，构造树完成之后，我们可以将树画出来
 
 ![](img/6b8a80679c4a6322251731bcde1a4342.png)
+
+### 计算香农熵
 
 计算给定数据集的香农熵的函数
 
@@ -553,13 +567,13 @@ def calcShannonEnt(dataSet):
     return shannonEnt
 ```
 
-按照给定特征划分数据集
+### 按照给定特征划分数据集
 
-将指定特征的特征值等于 value 的行剩下列作为子数据集
+将指定特征的特征值等于 `value` 的行剩下列作为子数据集
 
 ```
 def splitDataSet(dataSet, index, value):
-    &quot;&quot;&quot;splitDataSet(通过遍历dataSet数据集，求出index对应的colnum列的值为value的行)
+    """splitDataSet(通过遍历dataSet数据集，求出index对应的colnum列的值为value的行)
         就是依据index列进行分类，如果index列的数据等于 value的时候，就要将 index 划分到我们创建的新的数据集中
     Args:
         dataSet 数据集                 待划分的数据集
@@ -567,7 +581,7 @@ def splitDataSet(dataSet, index, value):
         value 表示index列对应的value值   需要返回的特征的值。
     Returns:
         index列为value的数据集【该数据集需要排除index列】
-    &quot;&quot;&quot;
+    """
     retDataSet = []
     for featVec in dataSet: 
         # index列为value的数据集【该数据集需要排除index列】
@@ -576,28 +590,28 @@ def splitDataSet(dataSet, index, value):
             # chop out index used for splitting
             # [:index]表示前index行，即若 index 为2，就是取 featVec 的前 index 行
             reducedFeatVec = featVec[:index]
-            &#x27;&#x27;&#x27;
+            '''
             请百度查询一下:  extend和append的区别
             music_media.append(object) 向列表中添加一个对象object
-            music_media.extend(sequence) 把一个序列seq的内容添加到列表中 (跟 += 在list运用类似， music_media += sequence)
-            1、使用append的时候，是将object看作一个对象，整体打包添加到music_media对象中。
+            music_media.extend(sequence) 把一个序列seq的内容添加到列表中 (跟 += 在list运用类似， music_media += sequence)
+            1、使用append的时候，是将object看作一个对象，整体打包添加到music_media对象中。
             2、使用extend的时候，是将sequence看作一个序列，将这个序列和music_media序列合并，并放在其后面。
             music_media = []
             music_media.extend([1,2,3])
             print music_media
-            #结果: 
-            #[1, 2, 3]
+            #结果: 
+            #[1, 2, 3]
             
             music_media.append([4,5,6])
             print music_media
             #结果: 
-            #[1, 2, 3, [4, 5, 6]]
+            #[1, 2, 3, [4, 5, 6]]
             
             music_media.extend([7,8,9])
             print music_media
             #结果: 
-            #[1, 2, 3, [4, 5, 6], 7, 8, 9]
-            &#x27;&#x27;&#x27;
+            #[1, 2, 3, [4, 5, 6], 7, 8, 9]
+            '''
             reducedFeatVec.extend(featVec[index+1:])
             # [index+1:]表示从跳过 index 的 index+1行，取接下来的数据
             # 收集结果值 index列为value的行【该行需要排除index列】
@@ -605,17 +619,17 @@ def splitDataSet(dataSet, index, value):
     return retDataSet
 ```
 
-选择最好的数据集划分方式
+### 选择最好的数据集划分方式
 
 ```
 def chooseBestFeatureToSplit(dataSet):
-    &quot;&quot;&quot;chooseBestFeatureToSplit(选择最好的特征)
+    """chooseBestFeatureToSplit(选择最好的特征)
 
     Args:
         dataSet 数据集
     Returns:
         bestFeature 最优的特征列
-    &quot;&quot;&quot;
+    """
     # 求第一行有多少列的 Feature, 最后一列是label列嘛
     numFeatures = len(dataSet[0]) - 1
     # 数据集的原始信息熵
@@ -643,20 +657,18 @@ def chooseBestFeatureToSplit(dataSet):
         # gain[信息增益]: 划分数据集前后的信息变化， 获取信息熵最大的值
         # 信息增益是熵的减少或者是数据无序度的减少。最后，比较所有特征中的信息增益，返回最好特征划分的索引值。
         infoGain = baseEntropy - newEntropy
-        print &#x27;infoGain=&#x27;, infoGain, &#x27;bestFeature=&#x27;, i, baseEntropy, newEntropy
-        if (infoGain &gt; bestInfoGain):
+        print 'infoGain=', infoGain, 'bestFeature=', i, baseEntropy, newEntropy
+        if (infoGain > bestInfoGain):
             bestInfoGain = infoGain
             bestFeature = i
     return bestFeature
 ```
 
-```
-问: 上面的 newEntropy 为什么是根据子集计算的呢？
+问: 上面的 `newEntropy` 为什么是根据子集计算的呢？
 答: 因为我们在根据一个特征计算香农熵的时候，该特征的分类值是相同，这个特征这个分类的香农熵为 0；
 这就是为什么计算新的香农熵的时候使用的是子集。
-```
 
-> 训练算法: 构造树的数据结构
+## 训练算法: 构造树的数据结构
 
 创建树的函数代码如下:
 
@@ -680,7 +692,7 @@ def createTree(dataSet, labels):
     # 初始化myTree
     myTree = {bestFeatLabel: {}}
     # 注: labels列表是可变对象，在PYTHON函数中作为参数时传址引用，能够被全局修改
-    # 所以这行代码导致函数外的同名变量被删除了元素，造成例句无法执行，提示&#x27;no surfacing&#x27; is not in list
+    # 所以这行代码导致函数外的同名变量被删除了元素，造成例句无法执行，提示'no surfacing' is not in list
     del(labels[bestFeat])
     # 取出最优列，然后它的branch做分类
     featValues = [example[bestFeat] for example in dataSet]
@@ -690,15 +702,15 @@ def createTree(dataSet, labels):
         subLabels = labels[:]
         # 遍历当前选择特征包含的所有属性值，在每个数据集划分上递归调用函数createTree()
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value), subLabels)
-        # print &#x27;myTree&#x27;, value, myTree
+        # print 'myTree', value, myTree
     return myTree
 ```
 
-> 测试算法: 使用决策树执行分类
+## 测试算法: 使用决策树执行分类
 
 ```
 def classify(inputTree, featLabels, testVec):
-    &quot;&quot;&quot;classify(给输入的节点，进行分类)
+    """classify(给输入的节点，进行分类)
 
     Args:
         inputTree  决策树模型
@@ -706,7 +718,7 @@ def classify(inputTree, featLabels, testVec):
         testVec    测试输入的数据
     Returns:
         classLabel 分类的结果值，需要映射label才能知道名称
-    &quot;&quot;&quot;
+    """
     # 获取tree的根节点对于的key值
     firstStr = list(inputTree.keys())[0]
     # 通过key得到根节点对应的value
@@ -716,7 +728,7 @@ def classify(inputTree, featLabels, testVec):
     # 测试数据，找到根节点对应的label位置，也就知道从输入的数据的第几位来开始分类
     key = testVec[featIndex]
     valueOfFeat = secondDict[key]
-    print &#x27;+++&#x27;, firstStr, &#x27;xxx&#x27;, secondDict, &#x27;---&#x27;, key, &#x27;&gt;&gt;&gt;&#x27;, valueOfFeat
+    print '+++', firstStr, 'xxx', secondDict, '---', key, '>>>', valueOfFeat
     # 判断分枝是否结束: 判断valueOfFeat是否是dict类型
     if isinstance(valueOfFeat, dict):
         classLabel = classify(valueOfFeat, featLabels, testVec)
@@ -725,13 +737,17 @@ def classify(inputTree, featLabels, testVec):
     return classLabel
 ```
 
-> 使用算法: 此步骤可以适用于任何监督学习任务，而使用决策树可以更好地理解数据的内在含义
+## 使用算法
+
+此步骤可以适用于任何监督学习任务，而使用决策树可以更好地理解数据的内在含义
 
 ## 项目案例2: 使用决策树预测隐形眼镜类型
 
 ### **开发流程**
 
-```
+
+
+```python
 #!/usr/bin/python
 # coding:utf-8
 &#x27;&#x27;&#x27;
@@ -1124,25 +1140,22 @@ if __name__ == &quot;__main__&quot;:
     # ContactLensesTest()
 ```
 
-#### **项目概述**
+
+
+# 项目概述
 
 隐形眼镜类型包括硬材质、软材质以及不适合佩戴隐形眼镜。我们需要使用决策树预测患者需要佩戴的隐形眼镜类型
 
-#### **开发流程**
+## 开发流程
 
-1.  收集数据: 提供的文本文件
+1. 收集数据: 提供的文本文件
+2. 解析数据: 解析 `tab` 键分隔的数据行
+3. 分析数据: 快速检查数据，确保正确地解析数据内容，使用 `createPlot()` 函数绘制最终的树形图
+4. 训练算法: 使用 `createTree()` 函数
+5. 测试算法: 编写测试函数验证决策树可以正确分类给定的数据实例
+6. 使用算法: 存储树的数据结构，以便下次使用时无需重新构造树
 
-1.  解析数据: 解析 tab 键分隔的数据行
-
-1.  分析数据: 快速检查数据，确保正确地解析数据内容，使用 createPlot() 函数绘制最终的树形图
-
-1.  训练算法: 使用 createTree() 函数
-
-1.  测试算法: 编写测试函数验证决策树可以正确分类给定的数据实例
-
-1.  使用算法: 存储树的数据结构，以便下次使用时无需重新构造树
-
-> 收集数据: 提供的文本文件
+### 收集数据: 提供的文本文件
 
 文本文件数据格式如下:
 
@@ -1152,46 +1165,46 @@ pre        myope        no        reduced        no lenses
 presbyopic        myope        no        reduced        no lenses
 ```
 
-> 解析数据: 解析 tab 键分隔的数据行
+### 解析数据: 解析 `tab` 键分隔的数据行
 
 ```
-lecses = [inst.strip().split(&#x27;\t&#x27;) for inst in fr.readlines()]
-lensesLabels = [&#x27;age&#x27;, &#x27;prescript&#x27;, &#x27;astigmatic&#x27;, &#x27;tearRate&#x27;]
+lecses = [inst.strip().split('\t') for inst in fr.readlines()]
+lensesLabels = ['age', 'prescript', 'astigmatic', 'tearRate']
 ```
 
-> 分析数据: 快速检查数据，确保正确地解析数据内容，使用 createPlot() 函数绘制最终的树形图
+### 分析数据: 快速检查数据，确保正确地解析数据内容，使用 `createPlot()` 函数绘制最终的树形图
 
 ```
-&gt;&gt;&gt; treePlotter.createPlot(lensesTree)
+>>> treePlotter.createPlot(lensesTree)
 ```
 
-> 训练算法: 使用 createTree() 函数
+### 训练算法: 使用 `createTree()` 函数
 
 ```
-&gt;&gt;&gt; lensesTree = trees.createTree(lenses, lensesLabels)
-&gt;&gt;&gt; lensesTree
-{&#x27;tearRate&#x27;: {&#x27;reduced&#x27;: &#x27;no lenses&#x27;, &#x27;normal&#x27;: {&#x27;astigmatic&#x27;:{&#x27;yes&#x27;:
-{&#x27;prescript&#x27;:{&#x27;hyper&#x27;:{&#x27;age&#x27;:{&#x27;pre&#x27;:&#x27;no lenses&#x27;, &#x27;presbyopic&#x27;:
-&#x27;no lenses&#x27;, &#x27;young&#x27;:&#x27;hard&#x27;}}, &#x27;myope&#x27;:&#x27;hard&#x27;}}, &#x27;no&#x27;:{&#x27;age&#x27;:{&#x27;pre&#x27;:
-&#x27;soft&#x27;, &#x27;presbyopic&#x27;:{&#x27;prescript&#x27;: {&#x27;hyper&#x27;:&#x27;soft&#x27;, &#x27;myope&#x27;:
-&#x27;no lenses&#x27;}}, &#x27;young&#x27;:&#x27;soft&#x27;}}}}}
+>>> lensesTree = trees.createTree(lenses, lensesLabels)
+>>> lensesTree
+{'tearRate': {'reduced': 'no lenses', 'normal': {'astigmatic':{'yes': {
+'prescript':{'hyper':{'age':{'pre':'no lenses', 'presbyopic':
+'no lenses', 'young':'hard'}}, 'myope':'hard'}}, 'no':{'age':{'pre':
+'soft', 'presbyopic':{'prescript': {'hyper':'soft', 'myope':
+'no lenses'}}, 'young':'soft'}}}}}
 ```
 
-> 测试算法: 编写测试函数验证决策树可以正确分类给定的数据实例
+### 测试算法: 编写测试函数验证决策树可以正确分类给定的数据实例
 
-> 使用算法: 存储树的数据结构，以便下次使用时无需重新构造树
+### 使用算法: 存储树的数据结构，以便下次使用时无需重新构造树
 
-使用 pickle 模块存储决策树
+使用 `pickle` 模块存储决策树
 
 ```
 def storeTree(inputTree, filename):
     import pickle
-    fw = open(filename, &#x27;wb&#x27;)
+    fw = open(filename, 'wb')
     pickle.dump(inputTree, fw)
     fw.close()
 
 def grabTree(filename):
     import pickle
-    fr = open(filename, &#x27;rb&#x27;)
+    fr = open(filename, 'rb')
     return pickle.load(fr)
 ```

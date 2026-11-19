@@ -1,12 +1,13 @@
+
 # ChatGPT 接入飞书教程，创建自己的聊天机器人（保姆级教程）
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/RsgMdvKYfozGLNxNcQScDJ2cnRg](https://xmgtoagi.feishu.cn/docx/RsgMdvKYfozGLNxNcQScDJ2cnRg)
 
 首先，准备三个账号：ChatGPT账号、飞书账号和Aircode账号。
 
-飞书账号请自行注册，访问链接 https://www.feishu.cn/ 即可登录。
+飞书账号请自行注册，访问链接 `https://www.feishu.cn/` 即可登录。
 
-Aircode账号注册方式如下：访问网站 https://aircode.io/ ，点击页面上的“免费注册”按钮，填写表单并选择相应的选项即可。
+Aircode账号注册方式如下：访问网站 `https://aircode.io/` ，点击页面上的“免费注册”按钮，填写表单并选择相应的选项即可。
 
 ![](img/4e9969c581687d2b7804032eede164b8.png)
 
@@ -20,7 +21,7 @@ Aircode账号注册方式如下：访问网站 https://aircode.io/ ，点击页�
 
 重点来了！接下来讲搭建教程。
 
-# 第一步，飞书进入开发者平台。点击创建应用。
+## 第一步，飞书进入开发者平台。点击创建应用。
 
 ![](img/58318e20892560df40b24d708e572eb1.png)
 
@@ -34,13 +35,13 @@ Aircode账号注册方式如下：访问网站 https://aircode.io/ ，点击页�
 
 ![](img/1e42670cb79ad9c025033f5f7b647c19.png)
 
-# 第二步，打开Aircode，点击创建应用，上面输入名字，下面选择Node.js v16.
+## 第二步，打开Aircode，点击创建应用，上面输入名字，下面选择`Node.js` v16.
 
 ![](img/9e5ea6a856f1cdeddd4955dbaafe75c5.png)
 
 创建后页面会有一些代码，我们全选，然后把他删除掉，然后打开下面的源码地址，进去复制代码。
 
-源码地址：[https://github.com/be](https://github.com/bestony/ChatGPT-Feishu)stony/ChatGPT-Feishu
+源码地址：`https://github.com/bestony/ChatGPT-Feishu`
 
 ![](img/54f787f6e3582dfad605c8c2006864a6.png)
 
@@ -56,7 +57,7 @@ Aircode账号注册方式如下：访问网站 https://aircode.io/ ，点击页�
 
 ![](img/c689a51fb1897da536a5bd68b59f14f5.png)
 
-然后在左下角这里搜索 axios和 @larksuiteoapi/node-sdk   然后进行安装，等一会安装完成后再点击Deploy进行布署。
+然后在左下角这里搜索 `axios` 和 `@larksuiteoapi/node-sdk` 然后进行安装，等一会安装完成后再点击Deploy进行布署。
 
 ![](img/e429d7574a3d9999c835f38ad2639d61.png)
 
@@ -64,15 +65,13 @@ Aircode账号注册方式如下：访问网站 https://aircode.io/ ，点击页�
 
 ![](img/191c058a1231275014c68fab66eda92b.png)
 
-#  第三步，配置环境，点击Environments，创建四个变量，全部要大写。
+## 第三步，配置环境，点击Environments，创建四个变量，全部要大写。
 
-APPID 、SECRET 、 BOTNAME、KEY
+`APPID`、`SECRET`、`BOTNAME`、`KEY`
 
-![](img/52854691986efe3c58613190cc5d293c.png)
+`KEY`，是 OpenAI 的 KEY
 
-KEY，是 OpenAI 的 KEY
-
-[打开这个链接，然后登陆你ChatGPT账号  h](https://platform.openai.com/account/api-keys)ttps://platform.openai.com/account/api-keys
+[打开这个链接，然后登陆你ChatGPT账号](https://platform.openai.com/account/api-keys)
 
 登陆后点击这里创建，然后复制回去Aircode粘贴。
 
@@ -92,17 +91,17 @@ KEY，是 OpenAI 的 KEY
 
 成功之后，打开飞书，配置一下权限，以下6个都要开，有些人账号不一样，某些权限要审核。
 
-im:message
+`im:message`
 
-im:message.group_at_msg
+`im:message.group_at_msg`
 
-im:message.group_at_msg:readonly
+`im:message.group_at_msg:readonly`
 
-im:message.p2p_msg
+`im:message.p2p_msg`
 
-im:message.p2p_msg:readonly
+`im:message.p2p_msg:readonly`
 
-im:message:send_as_bot
+`im:message:send_as_bot`
 
 ![](img/61d74181bc3fc65115915efcb2f1c9ca.png)
 

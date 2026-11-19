@@ -1,40 +1,41 @@
-# Intern-S1  API 文档
+
+# Intern-S1 API 文档
 
 > 来源：[https://aicarrier.feishu.cn/docx/N9FidkEwoo3WORxRFTBcRtDdnJd](https://aicarrier.feishu.cn/docx/N9FidkEwoo3WORxRFTBcRtDdnJd)
 
-# 获取 API KEY
+## 获取 API KEY
 
-InternLM 系列模型提供了免费的 OpenAI 兼容格式 API，我们首先需要获取 API Key，可以从 https://internlm.intern-ai.org.cn/api/tokens 获取。
+InternLM 系列模型提供了免费的 `OpenAI` 兼容格式 API，我们首先需要获取 API Key，可以从 https://internlm.intern-ai.org.cn/api/tokens 获取。
 
 请确保您拥有一个正常注册且可使用的账户。要生成您的私有 API KEY可以参考我们的图示。
 
 ![](img/b7db431118d9b53f50c5dfb589f0901f.png)
 
-# 快速开始
+## 快速开始
 
-环境安装
+### 环境安装
 
 ```
 pip install openai
 ```
 
-## 文本生成
+### 文本生成
 
-Intern API [兼容 Ope](https://chat.intern-ai.org.cn/)nAI API，为最新的Intern-S1 模型提供了一个简单的接口，用于文本生成、自然语言处理、计算机视觉等。本示例是文生文，根据提示生成文本输出——像您在使用网页端 Intern 一样。
+Intern API 兼容 `OpenAI` API，为最新的 Intern-S1 模型提供了一个简单的接口，用于文本生成、自然语言处理、计算机视觉等。本示例是文生文，根据提示生成文本输出——像您在使用网页端 Intern 一样。
 
 ```
 from openai import OpenAI
 client = OpenAI(
-      api_key=&quot;eyJ0eXxx&quot;,  # 此处传token，不带Bearer
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+    api_key="eyJ0eXxx",  # 此处传token，不带Bearer
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 
 completion = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
+    model="intern-s1",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;写一个关于独角兽的睡前故事，一句话就够了。&quot;
+            "role": "user",
+            "content": "写一个关于独角兽的睡前故事，一句话就够了。"
         }
     ]
 )
@@ -46,38 +47,36 @@ print(completion.choices[0].message.content)
 
 ![](img/2b330d94dc49b48394427ce66a9be0e4.png)
 
-## 分析图像输入
+### 分析图像输入
 
 你也可以向模型提供图像输入。扫描收据、分析截图，或使用计算机视觉技术在现实世界中寻找物体。
 
-### 输入图像为 url
-
-                        &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;,
+#### 输入图像为 url
 
 ```
 from openai import OpenAI
 
 client = OpenAI(
-      api_key=&quot;eyJ0eXxx&quot;,  # 此处传token，不带Bearer
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+    api_key="eyJ0eXxx",  # 此处传token，不带Bearer
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 
 response = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
+    model="intern-s1",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
-                {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;图片里有什么？&quot;},
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "图片里有什么？"},
                 {
-                    &quot;type&quot;: &quot;image_url&quot;,
-                    &quot;image_url&quot;: {
+                    "type": "image_url",
+                    "image_url": {
                     },
                 },
             ],
         }
     ],
-    extra_body={&quot;thinking_mode&quot;: True,},
+    extra_body={"thinking_mode": True,},
 )
 
 print(response.choices[0].message.content)
@@ -85,7 +84,7 @@ print(response.choices[0].message.content)
 
 ![](img/73d6da665aea47236130f7042a750072.png)
 
-### 输入图像为文件
+#### 输入图像为文件
 
 ![](img/92678ba42e4fef04d76852d70463b442.png)
 
@@ -94,32 +93,32 @@ import base64
 from openai import OpenAI
 
 client = OpenAI(
-      api_key=&quot;eyJ0eXxx&quot;,  # 此处传token，不带Bearer
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+    api_key="eyJ0eXxx",  # 此处传token，不带Bearer
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 # Function to encode the image
 def encode_image(image_path):
-    with open(image_path, &quot;rb&quot;) as image_file:
-        return base64.b64encode(image_file.read()).decode(&quot;utf-8&quot;)
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
 
 
 # Path to your image
-image_path = &quot;/root/share/intern.jpg&quot;
+image_path = "/root/share/intern.jpg"
 
 # Getting the Base64 string
 base64_image = encode_image(image_path)
 
 completion = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
+    model="intern-s1",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
-                { &quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;图片里有什么?&quot; },
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "图片里有什么?"},
                 {
-                    &quot;type&quot;: &quot;image_url&quot;,
-                    &quot;image_url&quot;: {
-                        &quot;url&quot;: f&quot;data:image/jpeg;base64,{base64_image}&quot;,
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/jpeg;base64,{base64_image}",
                     },
                 },
             ],
@@ -132,42 +131,42 @@ print(completion.choices[0].message.content)
 
 ![](img/705624a5a6db5c8dea9c0b3113f55cfa.png)
 
-## 模型使用工具
+### 模型使用工具
 
-Openai 格式
+#### Openai 格式
 
 ```
 from openai import OpenAI
 
-
-client = OpenAI(     api_key=&quot;sk-lYQQ6Qxx，不带Bearer
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+client = OpenAI(
+    api_key="sk-lYQQ6Qxx",  # 不带Bearer
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 tools = [{
-    &quot;type&quot;: &quot;function&quot;,
-    &quot;function&quot;: {
-        &quot;name&quot;: &quot;get_weather&quot;,
-        &quot;description&quot;: &quot;Get current temperature for a given location.&quot;,
-        &quot;parameters&quot;: {
-            &quot;type&quot;: &quot;object&quot;,
-            &quot;properties&quot;: {
-                &quot;location&quot;: {
-                    &quot;type&quot;: &quot;string&quot;,
-                    &quot;description&quot;: &quot;City and country e.g. Bogotá, Colombia&quot;
+    "type": "function",
+    "function": {
+        "name": "get_weather",
+        "description": "Get current temperature for a given location.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string",
+                    "description": "City and country e.g. Bogotá, Colombia"
                 }
             },
-            &quot;required&quot;: [
-                &quot;location&quot;
+            "required": [
+                "location"
             ],
-            &quot;additionalProperties&quot;: False
+            "additionalProperties": False
         },
-        &quot;strict&quot;: True
+        "strict": True
     }
 }]
 
 completion = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
-    messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is the weather like in Paris today?&quot;}],
+    model="intern-s1",
+    messages=[{"role": "user", "content": "What is the weather like in Paris today?"}],
     tools=tools
 )
 
@@ -176,38 +175,40 @@ print(completion.choices[0].message.tool_calls)
 
 ![](img/eb90275bf2efc628aa971f8aca177c53.png)
 
-Python 原生调用
+#### Python 原生调用
 
-```
+
+
+```python
 import requests
 import json
 
 # API 配置
-API_KEY = &quot;eyJ0exxxxQ&quot;
-BASE_URL = &quot;https://chat.intern-ai.org.cn/api/v1/&quot;
-ENDPOINT = f&quot;{BASE_URL}chat/completions&quot;
+API_KEY = "eyJ0exxxxQ"
+BASE_URL = "https://chat.intern-ai.org.cn/api/v1/"
+ENDPOINT = f"{BASE_URL}chat/completions"
 
 # 定义天气查询工具
 WEATHER_TOOLS = [{
-    &quot;type&quot;: &quot;function&quot;,
-    &quot;function&quot;: {
-        &quot;name&quot;: &quot;get_weather&quot;,
-        &quot;description&quot;: &quot;获取指定城市或坐标的当前温度（摄氏度）&quot;,
-        &quot;parameters&quot;: {
-            &quot;type&quot;: &quot;object&quot;,
-            &quot;properties&quot;: {
-                &quot;latitude&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;description&quot;: &quot;纬度&quot;},
-                &quot;longitude&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;description&quot;: &quot;经度&quot;}
+    "type": "function",
+    "function": {
+        "name": "get_weather",
+        "description": "获取指定城市或坐标的当前温度（摄氏度）",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "latitude": {"type": "number", "description": "纬度"},
+                "longitude": {"type": "number", "description": "经度"}
             },
-            &quot;required&quot;: [&quot;latitude&quot;, &quot;longitude&quot;],
-            &quot;additionalProperties&quot;: False
+            "required": ["latitude", "longitude"],
+            "additionalProperties": False
         },
-        &quot;strict&quot;: True
+        "strict": True
     }
 }]
 
 def get_weather(latitude, longitude):
-    &quot;&quot;&quot;
+    """
     获取指定坐标的天气信息
     
     Args:
@@ -216,79 +217,79 @@ def get_weather(latitude, longitude):
     
     Returns:
         当前温度（摄氏度）
-    &quot;&quot;&quot;
+    """
     try:
         # 调用开放气象API
         response = requests.get(
-            f&quot;https://api.open-meteo.com/v1/forecast?latitude={latitude}&amp;longitude={longitude}&amp;current=temperature_2m,wind_speed_10m&amp;hourly=temperature_2m,relative_humidity_2m,wind_speed_10m&quot;
+            f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m"
         )
         data = response.json()
-        temperature = data[&#x27;current&#x27;][&#x27;temperature_2m&#x27;]
-        return f&quot;{temperature}&quot;
+        temperature = data['current']['temperature_2m']
+        return f"{temperature}"
     except Exception as e:
-        return f&quot;获取天气信息时出错: {str(e)}&quot;
+        return f"获取天气信息时出错: {str(e)}"
 
 def make_api_request(messages, tools=None):
-    &quot;&quot;&quot;发送API请求&quot;&quot;&quot;
+    """发送API请求"""
     headers = {
-        &quot;Content-Type&quot;: &quot;application/json&quot;,
-        &quot;Authorization&quot;: f&quot;Bearer {API_KEY}&quot;
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {API_KEY}"
     }
     
     payload = {
-        &quot;model&quot;: &quot;intern-s1&quot;,
-        &quot;messages&quot;: messages,
-        &quot;temperature&quot;: 0.7
+        "model": "intern-s1",
+        "messages": messages,
+        "temperature": 0.7
     }
     
     if tools:
-        payload[&quot;tools&quot;] = tools
-        payload[&quot;tool_choice&quot;] = &quot;auto&quot;
+        payload["tools"] = tools
+        payload["tool_choice"] = "auto"
     
     try:
         response = requests.post(ENDPOINT, headers=headers, json=payload, timeout=30)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.RequestException as e:
-        print(f&quot;API请求失败: {e}&quot;)
+        print(f"API请求失败: {e}")
         return None
 
 def main():
     # 初始消息 - 巴黎的坐标
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请查询当前北京的温度&quot;}]
+    messages = [{"role": "user", "content": "请查询当前北京的温度"}]
     
-    print(&quot;🌤️ 正在查询天气...&quot;)
+    print("🌤️ 正在查询天气...")
     
     # 第一轮API调用
     response = make_api_request(messages, WEATHER_TOOLS)
     if not response:
         return
     
-    assistant_message = response[&quot;choices&quot;][0][&quot;message&quot;]
+    assistant_message = response["choices"][0]["message"]
     
     # 检查工具调用
-    if assistant_message.get(&quot;tool_calls&quot;):
-        print(&quot;🔧 执行工具调用...&quot;)
-        print(&quot;tool_calls:&quot;,assistant_message.get(&quot;tool_calls&quot;))
+    if assistant_message.get("tool_calls"):
+        print("🔧 执行工具调用...")
+        print("tool_calls:", assistant_message.get("tool_calls"))
         messages.append(assistant_message)
         
         # 处理工具调用
-        for tool_call in assistant_message[&quot;tool_calls&quot;]:
-            function_name = tool_call[&quot;function&quot;][&quot;name&quot;]
-            function_args = json.loads(tool_call[&quot;function&quot;][&quot;arguments&quot;])
-            tool_call_id = tool_call[&quot;id&quot;]
+        for tool_call in assistant_message["tool_calls"]:
+            function_name = tool_call["function"]["name"]
+            function_args = json.loads(tool_call["function"]["arguments"])
+            tool_call_id = tool_call["id"]
             
-            if function_name == &quot;get_weather&quot;:
-                latitude = function_args[&quot;latitude&quot;]
-                longitude = function_args[&quot;longitude&quot;]
+            if function_name == "get_weather":
+                latitude = function_args["latitude"]
+                longitude = function_args["longitude"]
                 weather_result = get_weather(latitude, longitude)
-                print(f&quot;温度查询结果: {weather_result}°C&quot;)
+                print(f"温度查询结果: {weather_result}°C")
                 
                 # 添加工具结果
                 tool_message = {
-                    &quot;role&quot;: &quot;tool&quot;, 
-                    &quot;content&quot;: weather_result,
-                    &quot;tool_call_id&quot;: tool_call_id
+                    "role": "tool", 
+                    "content": weather_result,
+                    "tool_call_id": tool_call_id
                 }
                 messages.append(tool_message)
         
@@ -296,12 +297,12 @@ def main():
         final_response = make_api_request(messages)
         
         if final_response:
-            final_message = final_response[&quot;choices&quot;][0][&quot;message&quot;]
-            print(f&quot;✅ 最终回答: {final_message[&#x27;content&#x27;]}&quot;)
+            final_message = final_response["choices"][0]["message"]
+            print(f"✅ 最终回答: {final_message['content']}")
     else:
-        print(f&quot;直接回答: {assistant_message.get(&#x27;content&#x27;, &#x27;No content&#x27;)}&quot;)
+        print(f"直接回答: {assistant_message.get('content', 'No content')}")
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
@@ -309,22 +310,22 @@ if __name__ == &quot;__main__&quot;:
 
 ## 使用流式传输
 
-stream=True[,打开流式传](https://chat.intern-ai.org.cn/)输，体验如同网页端 Intern 吐字的感觉。
+将`stream=True`[,打开流式传输](https://chat.intern-ai.org.cn/)，体验如同网页端 Intern 吐字的感觉。
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(
-    api_key=&quot;eyxxxx&quot;,
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+    api_key="eyxxxx",
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 
 stream = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
+    model="intern-s1",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;Say &#x27;1 2 3 4 5 6 7&#x27; ten times fast.&quot;,
+            "role": "user",
+            "content": "Say '1 2 3 4 5 6 7' ten times fast.",
         },
     ],
     stream=True,
@@ -333,75 +334,74 @@ stream = client.chat.completions.create(
 # 只打印逐字输出的内容
 for chunk in stream:
     if chunk.choices[0].delta.content:
-        print(chunk.choices[0].delta.content, end=&quot;&quot;, flush=True)  # 逐字输出，不换行
+        print(chunk.choices[0].delta.content, end="", flush=True)  # 逐字输出，不换行
 ```
 
 ![](img/7ef16ce2dd4435e2a837a962d62911df.png)
 
 ## 开关think 模式
 
-通过extra_body={"thinking_mode": True}打开思考模式
+通过`extra_body={"thinking_mode": True}`打开思考模式
 
-```
+```python
 from openai import OpenAI
 client = OpenAI(
-      api_key=&quot;eyxxA&quot;,  # 此处传token，不带Bearer
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+      api_key="eyxxA",  # 此处传token，不带Bearer
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 
 completion = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
+    model="intern-s1",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;写一个关于独角兽的睡前故事，一句话就够了。&quot;
+            "role": "user",
+            "content": "写一个关于独角兽的睡前故事，一句话就够了。"
         }
     ],
-    extra_body={&quot;thinking_mode&quot;: True,},
+    extra_body={"thinking_mode": True,},
 )
 
 print(completion.choices[0].message)
 ```
 
-```
+```python
 from openai import OpenAI
 client = OpenAI(
-      api_key=&quot;eyJ0xxxmA&quot;,  # 此处传token，不带Bearer
-    base_url=&quot;https://chat.intern-ai.org.cn/api/v1/&quot;,
+      api_key="eyJ0xxxmA",  # 此处传token，不带Bearer
+    base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 
 completion = client.chat.completions.create(
-    model=&quot;intern-s1&quot;,
+    model="intern-s1",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;写一个关于独角兽的睡前故事，一句话就够了。&quot;
+            "role": "user",
+            "content": "写一个关于独角兽的睡前故事，一句话就够了。"
         }
     ],
-    extra_body={&quot;thinking_mode&quot;: False,},
+    extra_body={"thinking_mode": False,},
 )
 
 print(completion.choices[0].message)
 ```
 
-# 参考
+## 参考
 
-1.   https://platform.openai.com/
+1. `https://platform.openai.com/`
+1. `https://internlm.intern-ai.org.cn/api/document`
 
-1.  https://internlm.intern-ai.org.cn/api/document
+### QA：怎么兑换活动API token
 
-# QA：怎么兑换活动API token
-
-1.  登录网页获取用户 id（算力 id）：https://studio.intern-ai.org.cn/user/info
+1. 登录网页获取用户 `id`（算力 `id`）：`https://studio.intern-ai.org.cn/user/info`
 
 ![](img/87d7eb5d11b56a46f58cc84b904ca716.png)
 
-1.  入群联系小助手私发用户 id（算力 id）
+1. 入群联系小助手私发用户 `id`（算力 `id`）
 
-1.  获取 API Key，可以从 https://internlm.intern-ai.org.cn/api/tokens 获取。
+1. 获取 `API Key`，可以从 `https://internlm.intern-ai.org.cn/api/tokens` 获取。
 
-1.  等小助手发完，API token 到账。
+1. 等小助手发完，API token 到账。
 
-查收链接：https://internlm.intern-ai.org.cn/api/strategy
+查收链接：`https://internlm.intern-ai.org.cn/api/strategy`
 
 ![](img/abe323ab0e7464157c369900b74b9e3f.png)

@@ -1,3 +1,4 @@
+
 # 编剧提示词02 —— 角色塑造
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/ALnjdCnqnoLJRNxMmZtck2qMnuh](https://vxc3hj17dym.feishu.cn/docx/ALnjdCnqnoLJRNxMmZtck2qMnuh)
@@ -55,7 +56,7 @@
                      ;; - 设定重要关系角色
                      ;; - 规划互动发展
                      ;; - 思考: 关系如何影响成长?
-                     ;; ━━━━━━━━━━━━━━
+                     ;; ━━━━━━#1━━━━━━━━━━━━━━
                      人际关系构建
                      ;; ━━━━━━━━━━━━━━
                      ;; 确立动机与目标

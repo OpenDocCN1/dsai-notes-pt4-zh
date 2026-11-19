@@ -1,3 +1,4 @@
+
 # Midjourney Prompt分析第四期-电影海报、矢量插画、LOGO
 
 > 来源：[https://bluefocus.feishu.cn/docx/VyypdSteuoZ2RlxeqjgcRyNgnUh](https://bluefocus.feishu.cn/docx/VyypdSteuoZ2RlxeqjgcRyNgnUh)
@@ -20,9 +21,11 @@
 
 ![](img/ad895ed0a53e827bb10d805e8eb60f05.png)
 
+```
 back shot,overshoulder shot,POV,up view , foucs on Armani's tube lipstick products,A girl takes out a lipstick from her handbag，black hair, chanel suit，the bed room,close-up，DOF ,cinestill 50 film, master photography, cinematic lighting，best quality,realitic,HDR,16K --ar 3:4
+```
 
-背后拍摄、过肩拍、POV、仰视、 镜头聚焦在阿玛尼的口红产品上、一个女孩从她的手提包里拿出一支口红，黑色的头发，香奈儿的套装，在卧室里、特写，背景虚化 ,cinestill 50 电影级镜头、 大师级摄影、电影灯光，最好的质量，写实，HDR,16K --ar 3：4
+背后拍摄、过肩拍、POV、仰视、 镜头聚焦在阿玛尼的口红产品上、一个女孩从她的手提包里拿出一支口红，黑色的头发，香奈儿的套装，在卧室里、特写，背景虚化 ,cinestill 50 电影级镜头、 大师级摄影、电影灯光，最好的质量，写实，HDR,16K `--ar 3：4`
 
 ![](img/911669bd9a1c942f0b1049bfd9b25dc4.png)
 
@@ -66,21 +69,31 @@ Claude可以，ChatGPT可以，文心一言也可以，自己拍脑瓜写也可�
 
 ![](img/2a75fd5246b8d77c273f2297218d737d.png)
 
-> 叠图1, sketch,close-up, back shot overshoulder shot POV, A girl takes out a( Armani's tube lipstick products) from her handbag, black hair, chanel suit, the bed room, --ar 3:4
+```
+叠图1, sketch,close-up, back shot overshoulder shot POV, A girl takes out a( Armani's tube lipstick products) from her handbag, black hair, chanel suit, the bed room, --ar 3:4
+```
 
-> 叠图2, sketch,POV, Shot focused on invitation paper , close-up, Michelin restaurant glass window,brightly lit night --ar 3:4 --v 5.1 --iw 1.5
+```
+叠图2, sketch,POV, Shot focused on invitation paper , close-up, Michelin restaurant glass window,brightly lit night --ar 3:4 --v 5.1 --iw 1.5
+```
 
-> 叠图3, sketch, close-up, back shot overshoulder shot POV, A handsome man, looking at a piece of paper, smiling, black hair, suit, background of Michelin restaurant --ar 3:4 --iw 0.5
+```
+叠图3, sketch, close-up, back shot overshoulder shot POV, A handsome man, looking at a piece of paper, smiling, black hair, suit, background of Michelin restaurant --ar 3:4 --iw 0.5
+```
 
-> 叠图4, sketch, Symmetrical composition, woman and man having dinner, Michelin restaurant --ar 3:4
+```
+叠图4, sketch, Symmetrical composition, woman and man having dinner, Michelin restaurant --ar 3:4
+```
 
-> 叠图5, sketch, Symmetrical composition,Shot focused on Armani Lipstick, Spotlight(效果不好,pass)
+```
+叠图5, sketch, Symmetrical composition,Shot focused on Armani Lipstick, Spotlight(效果不好,pass)
+```
 
 ![](img/a3f826f137243a16aa98a6d09040516a.png)
 
 > 这组Prompt的关键词是“SKetch”，草图。
 
-> 描述的话只需要表达清楚画面就可以，大家可能注意到我在用iw控制权重，数值都不太一样，这个需要尝试，自行调整，不是绝对值。
+> 描述的话只需要表达清楚画面就可以，大家可能注意到我在用`iw`控制权重，数值都不太一样，这个需要尝试，自行调整，不是绝对值。
 
 ### 4， Prompt叠图输出
 
@@ -88,9 +101,11 @@ Claude可以，ChatGPT可以，文心一言也可以，自己拍脑瓜写也可�
 
 > 注意:直接由草稿生成的画面在画面的细节，光影各方面都会显得略有单薄，不过无需担心，我们可以再来一遍，把生成的图再叠进去，用关键词重新生成一遍。
 
+```
 (叠图) close-up, back shot overshoulder shot POV,A girl takes out a ( Armani's tube lipstick products) fromher handbag, black hair, Chanel suit, the bedroom,DOF ,cinestill 50 film, master photography, cinematic lighting, best quality,realitic, HDR,16K --ar 3:4
+```
 
-(叠图)特写，仰拍、过肩拍、POV、一个女孩从她的手提包里拿出一支(阿玛尼的口红产品)，黑色的头发，香奈儿的套装，在卧室里、特写，背景虚化,cinestil 50 电影级镜头、大师级摄影、电影灯光，最好的质量，写实HDR16K--ar3:4
+(叠图)特写，仰拍、过肩拍、POV、一个女孩从她的手提包里拿出一支(阿玛尼的口红产品)，黑色的头发，香奈儿的套装，在卧室里、特写，背景虚化,cinestil 50 电影级镜头、大师级摄影、电影灯光，最好的质量，写实HDR16K`--ar3:4`
 
 ![](img/a7d4dc8101352edad47be6fae8b29bf1.png)
 
@@ -102,13 +117,21 @@ Claude可以，ChatGPT可以，文心一言也可以，自己拍脑瓜写也可�
 
 > 其他的几组关键词也分享出来:
 
-> 2, (叠图) POV. Shot focused on an invitation card on a Michelin restaurant glass, A lipstick imprint on,paper, brightly lit night, DOF ,cinestill 50 film, master photography, cinematic lighting, bestquality,realitic,HDR,16K --ar 3:4
+```
+2, (叠图) POV. Shot focused on an invitation card on a Michelin restaurant glass, A lipstick imprint on,paper, brightly lit night, DOF ,cinestill 50 film, master photography, cinematic lighting, bestquality,realitic,HDR,16K --ar 3:4
+```
 
-> 3, (叠图) close-up, back shot POV,A handsome man, looking at a piece of paper, smiling, black hair, suit, backaround of Michelin restaurant, DOF fashion, master photography, cinematic lighting. bestquality,realitic,HDR,16K --ar 3:4 --iw 0.5
+```
+3, (叠图) close-up, back shot POV,A handsome man, looking at a piece of paper, smiling, black hair, suit, backaround of Michelin restaurant, DOF fashion, master photography, cinematic lighting. bestquality,realitic,HDR,16K --ar 3:4 --iw 0.5
+```
 
-> 4, (叠图)Symmetrical composition, young woman and man having dinner, Michelin restaurant, romantic atmosphere, smile, happiness, black hair, suit, background of Michelin restaurant, DOF .fashion, master photography, cinematic lighting, cinestill 50 film,, best quality,realitic,HDR,16K --ar 3:4 --iw 0.5
+```
+4, (叠图)Symmetrical composition, young woman and man having dinner, Michelin restaurant, romantic atmosphere, smile, happiness, black hair, suit, background of Michelin restaurant, DOF .fashion, master photography, cinematic lighting, cinestill 50 film,, best quality,realitic,HDR,16K --ar 3:4 --iw 0.5
+```
 
-> 5,(无叠图) Symmetrical composition,Shot focused on Armani Lipstick, Spotlight,Armani lipstick, spotlights，couple snuggling background, DOF .fashion, master photography, cinematic lighting, cinestill 50 film, best quality,realitic,HDR.16K --ar 3:4
+```
+5,(无叠图) Symmetrical composition,Shot focused on Armani Lipstick, Spotlight,Armani lipstick, spotlights，couple snuggling background, DOF .fashion, master photography, cinematic lighting, cinestill 50 film, best quality,realitic,HDR.16K --ar 3:4
+```
 
 ### 5，Photoshop(或其他软件排版)
 
@@ -122,9 +145,11 @@ Claude可以，ChatGPT可以，文心一言也可以，自己拍脑瓜写也可�
 
 > 类型+插画师+镜头+主体描述+输出定量(增强权重范式)
 
+```
 Memphis style illustration by Dan Hipp ,low angle shot, a girl happily skateboarding, flowers, cats and dogs, happy, bright colors, clean background, children's illustrations, trendy illustration, partial geometric line draft, behance, pinterest, simple line draft --ar 3:4 --niji5 --s 25 --style expressive
+```
 
-孟菲斯插画风格，插画师Dan Hipp、低角度拍摄、一个女孩开心地滑着滑板，花，猫和狗，快乐、儿童的插画、潮流插画，部分几何线稿，behance，pinterest，简单线稿 --ar 3：4 --niji5 --s 25 --style expressive
+孟菲斯插画风格，插画师Dan Hipp、低角度拍摄、一个女孩开心地滑着滑板，花，猫和狗，快乐、儿童的插画、潮流插画，部分几何线稿，behance，pinterest，简单线稿 `--ar 3：4 --niji5 --s 25 --style expressive`
 
 ## Prompt解读
 
@@ -140,29 +165,33 @@ Memphis style illustration by Dan Hipp ,low angle shot, a girl happily skateboar
 
 格的定义不是特别严谨，另一种可能是MJ并没有学习到这种风格。我们就只能尝试去测词。
 
--开始我用的是V5模式，是可以出来一些风格的，但是过于传统，是老派孟菲斯风格，那作为潮流方向的话，我们需要去尝试Nii风格,事实证明nii会好很多。
+-开始我用的是`V5`模式，是可以出来一些风格的，但是过于传统，是老派孟菲斯风格，那作为潮流方向的话，我们需要去尝试`Nii`风格,事实证明`nii`会好很多。
 
-## 测风格，Nii优于V5，色彩和造型都会更加的潮流。
+## 测风格，`Nii`优于`V5`，色彩和造型都会更加的潮流。
 
-Memphis style flat illustration-V5
+`Memphis style flat illustration-V5`
 
 ![](img/cad7c497b1be6cb2db08b898e3e9fe2e.png)
 
-Memphis style flat illustration-Nii5
+`Memphis style flat illustration-Nii5`
 
 ![](img/0c3fe121a76be7f42f078a04c769f245.png)
 
+```
 Memphis style flat illustrations, children's illustration, simplicity, geometry, children are running happily, minimalist lines, bright color blocks -- V5
+```
 
 ![](img/5bbf8d28e71ff3c40e07afaa719074c6.png)
 
+```
 Memphis style flat illustrations, children illustrations, simplicity, geometry, children are running happily, minimalist lines, bright color blocks -- niji5
+```
 
 ![](img/e040fa372da676d8d29e67e0d316f624.png)
 
-## **测插画师，首先我们可以去艺术家库选择画风还**不错的比较接近的插画师前来测试，还不错。
+## 测插画师，首先我们可以去艺术家库选择画风还不错的比较接近的插画师前来测试，还不错。
 
-> 艺术家入口:https://www.midlibrary.io/categories
+> 艺术家入口:`https://www.midlibrary.io/categories`
 
 > 我们准备的一些辅助的工具或者网站还是比较有用的，可以帮我们去拓展一下词汇量。比如我就挑了三位擅长画潮流涂鸦类的艺术家，风格上也有可取之处，当然也有不行的，比如Seii Matsumoto，当下极简线稿风的开创者，MJ居然没有他的痕迹，📕上这类风格还是挺火的，不过我发现大家基本用的都是常规的细节描述关键词，这也给我们证明一点，有些代表性风格是需要我们定义的。
 
@@ -180,7 +209,11 @@ illustration by Dan Hipp
 
 ## 测Prompt，风格有谱了，目测是可以刷的出自己想要的结果的。
 
-> 大方向有了，就可以通过调整优化关键词，以及部分关键词的前后关系，来控制画面的产出。不过，风格关键词描述多了，设计师自己的风格就会弱化，甚至趋同。所以我们可以理解为插画师的风格标签是可以框风格的，但是如果混淆风格的词汇比较多，就会弱化标签风格。其实我在后面加了很多关于极简，线描，几何，扁平之类的属性词，所呈现出来的就是下面这个样子。ilustration by(插画师), Memphis style illustration, trendy illustration, low angle shot, perspective composition, children happily skateboarding, flowers, cats and dogs, happy, bright colors, partial geometric line draft, Behance, Pinterest, flat illustration, simple line draft, clean background --ar 3:4 -style expressive
+> 大方向有了，就可以通过调整优化关键词，以及部分关键词的前后关系，来控制画面的产出。不过，风格关键词描述多了，设计师自己的风格就会弱化，甚至趋同。所以我们可以理解为插画师的风格标签是可以框风格的，但是如果混淆风格的词汇比较多，就会弱化标签风格。其实我在后面加了很多关于极简，线描，几何，扁平之类的属性词，所呈现出来的就是下面这个样子。
+
+```
+ilustration by(插画师), Memphis style illustration, trendy illustration, low angle shot, perspective composition, children happily skateboarding, flowers, cats and dogs, happy, bright colors, partial geometric line draft, Behance, Pinterest, flat illustration, simple line draft, clean background --ar 3:4 -style expressive
+```
 
 illustration by Jon Burgerman
 
@@ -202,7 +235,11 @@ illustration by Dan Hipp
 
 ![](img/3bf9ccc0cb5db699f5804a66bd73830c.png)
 
+```
 Simple line logo, flat logo, minimalist logo, minimalist logo of Skateboard boy, in rough klein blue outline style,cartoon man avatar icon vector design, Koji Morimoto style, Adrian Tomi, childlike innocence, 1970 , cute avatar, single continuous doodle, simple line art, clean lines, logo, icon, trend --style expressive
+```
+
+
 
 简单的线条标志，平面标志，极简主义标志，滑板男孩的极简主义标志，粗旷的克莱因蓝色轮廓风格，卡通人头像图标矢量设计，Koji Morimoto 风格，Adrian Tomi，童心，1970，可爱的头像，单个连续涂鸦，简单线条艺术，简洁的线条，标志，图标，趋势
 
@@ -220,7 +257,7 @@ Simple line logo, flat logo, minimalist logo, minimalist logo of Skateboard boy,
 
 ![](img/740877a6fde64356a4bece438be6c8b2.png)
 
-Simple line logo, flat logo, minimalist logo, minimalist logo of Skateboard pouting boy,cartoon man Avatar iconvector design, Koji Morimoto style, Adrian Tomi, childlike innocence, white and black,1970 , cute avatar, singlecontinuous doodle, simple line art, clean lines, logo, icon, trend --style expressive
+Simple line logo, flat logo, minimalist logo of Skateboard pouting boy,cartoon man Avatar iconvector design, Koji Morimoto style, Adrian Tomi, childlike innocence, white and black,1970 , cute avatar, singlecontinuous doodle, simple line art, clean lines, logo, icon, trend --style expressive
 
 ### Prompt解读
 

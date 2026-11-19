@@ -1,10 +1,11 @@
+
 # 第九节：使用 Claude Agent SDK 构建实战级研究智能体
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DBEcdJUAuoaXssx3unocXzNZnOg](https://qqs7y1hozd1.feishu.cn/docx/DBEcdJUAuoaXssx3unocXzNZnOg)
 
 该智能体模拟了一个高效的工程团队：
 
-> 由一个“指挥官”利用标准流程 (Skills) 制定计划，并行调度三个“专家” (Sub-agents) 进行分工协作，最终通过 MCP 将成果交付到外部系统 (Notion)。
+> 由一个“指挥官”利用标准流程 (`Skills`) 制定计划，并行调度三个“专家” (`Sub-agents`) 进行分工协作，最终通过 MCP 将成果交付到外部系统 (Notion)。
 
 ---
 
@@ -14,7 +15,7 @@
 
 ![](img/3fe9d6c592605c56f4bfdfce2a5caab6.png)
 
-> 关键区别：在本案例中，技能 (Skill) 是专门给主智能体用的，作为其规划的指导手册；而子智能体 (Sub-agents) 则是去执行具体脏活累活的。
+> 关键区别：在本案例中，技能 (`Skill`) 是专门给主智能体用的，作为其规划的指导手册；而子智能体 (`Sub-agents`) 则是去执行具体脏活累活的。
 
 ---
 
@@ -35,7 +36,7 @@ research-agent/
 │   ├── repo_analyzer.md
 │   └── web_researcher.md
 └── .claude/              # 📚 技能库 (Infrastructure)
-    └── skills/           # ⚠️ 必须命名为 &#x27;skills&#x27; (复数)
+    └── skills/           # ⚠️ 必须命名为 'skills' (复数)
         └── learning-a-tool/
             ├── SKILL.md  # 技能入口文件
             └── progressive_learning.md # 渐进式加载的详细内容
@@ -57,11 +58,11 @@ uv add claude-agent-sdk python-dotenv asyncio
 
 ## 3. 代码实现核心逻辑 (agent.py Anatomy)
 
-agent.py 是整个系统的控制中心。以下是基于视频脚本的代码构建步骤解析：
+`agent.py` 是整个系统的控制中心。以下是基于视频脚本的代码构建步骤解析：
 
 ### 第一步：导入与辅助函数
 
-视频中使用了 display_message 来美化终端输出，这对于调试智能体的思考过程非常重要。
+视频中使用了 `display_message` 来美化终端输出，这对于调试智能体的思考过程非常重要。
 
 ```
 import asyncio
@@ -92,30 +93,29 @@ allowed_tools = [
 通过代码连接 Notion MCP 服务器，赋予智能体操作外部笔记系统的能力。
 
 ```
-# 定义 MCP Server 配置
 mcp_servers = {
-    &quot;notion&quot;: {
-        &quot;command&quot;: &quot;uv&quot;,
-        &quot;args&quot;: [&quot;run&quot;, &quot;mcp-server-notion&quot;], # 运行 Notion MCP
-        &quot;env&quot;: {&quot;NOTION_API_TOKEN&quot;: os.getenv(&quot;NOTION_API_TOKEN&quot;)}
+    "notion": {
+        "command": "uv",
+        "args": ["run", "mcp-server-notion"], # 运行 Notion MCP
+        "env": {"NOTION_API_TOKEN": os.getenv("NOTION_API_TOKEN")}
     }
 }
 
 # ⚠️ 关键：必须将 MCP 工具加入允许列表
 # 使用通配符允许所有 Notion 相关操作
-allowed_tools.append(&quot;mcp_notion_*&quot;)
+allowed_tools.append("mcp_notion_*")
 ```
 
 ### 第四步：加载技能与任务调度 (Skills & Orchestration)
 
-这是让“大脑”能运作的关键。必须添加 SkillTool 来读取技能，添加 TaskTool 来调度子智能体。
+这是让“大脑”能运作的关键。必须添加 `SkillTool` 来读取技能，添加 `TaskTool` 来调度子智能体。
 
 ```
 from claude_agent_sdk.tools import SkillTool, TaskTool
 
 # 1. 配置 SkillTool
-# setting_sources=[&quot;project&quot;] 告诉 SDK 在当前项目的 .claude/skills 中查找
-skill_tool = SkillTool(setting_sources=[&quot;project&quot;, &quot;user&quot;])
+# setting_sources=["project", "user"] 告诉 SDK 在当前项目的 .claude/skills 中查找
+skill_tool = SkillTool(setting_sources=["project", "user"])
 
 # 2. 配置 TaskTool (需要先加载子智能体定义)
 # 加载 prompts/defs ... (此处省略加载过程)
@@ -129,9 +129,9 @@ allowed_tools.extend([skill_tool, task_tool])
 
 ## 4. 角色定义与分工 (Defining Roles)
 
-在代码中，我们需要通过 AgentDefinition 类来定义每个子智能体的职责边界。
+在代码中，我们需要通过 `AgentDefinition` 类来定义每个子智能体的职责边界。
 
-> 注意：子智能体的 allowed_tools 是独立的。例如，只有 Repo Analyzer 需要 Bash 权限，其他研究员不需要，这体现了最小权限原则。
+> 注意：子智能体的 `allowed_tools` 是独立的。例如，只有 `Repo Analyzer` 需要 `Bash` 权限，其他研究员不需要，这体现了最小权限原则。
 
 ---
 
@@ -141,43 +141,43 @@ allowed_tools.extend([skill_tool, task_tool])
 
 ### 阶段 1：规划 (Planning) & 渐进式披露
 
-+   用户指令："Create a learning guide for MinerU, show me the plan first."
++ 用户指令："Create a learning guide for MinerU, show me the plan first."
 
-+   动作：主智能体加载 learning-a-tool 技能。
++ 动作：主智能体加载 `learning-a-tool` 技能。
 
-+   技术细节 (Progressive Disclosure)：SDK 最初只加载技能的名称。当技能被触发时，它加载底层的 SKILL.md，并在需要时进一步加载引用的 progressive_learning.md。这保护了上下文窗口，避免一次性加载过多 Token。
++ 技术细节 (`Progressive Disclosure`)：SDK 最初只加载技能的名称。当技能被触发时，它加载底层的 `SKILL.md`，并在需要时进一步加载引用的 `progressive_learning.md`。这保护了上下文窗口，避免一次性加载过多 Token。
 
 ### 阶段 2：并行执行 (Parallel Execution)
 
-+   动作：主智能体根据计划，使用 TaskTool 同时调度三个子智能体。
++ 动作：主智能体根据计划，使用 `TaskTool` 同时调度三个子智能体。
 
-+   并行处理：
++ 并行处理：
 
-+   Docs Researcher -> 阅读官方文档。
++ `Docs Researcher` -> 阅读官方文档。
 
-+   Repo Analyzer -> 执行 git clone 拉取代码并分析结构。
++ `Repo Analyzer` -> 执行 `git clone` 拉取代码并分析结构。
 
-+   Web Researcher -> 在 YouTube 搜索视频教程。
++ `Web Researcher` -> 在 YouTube 搜索视频教程。
 
-+   优势：互不阻塞，极大提高了复杂任务的执行效率。
++ 优势：互不阻塞，极大提高了复杂任务的执行效率。
 
 ### 阶段 3：合成 (Synthesis)
 
-+   动作：子智能体返回结果后，主智能体在本地文件系统生成标准化的目录结构：
++ 动作：子智能体返回结果后，主智能体在本地文件系统生成标准化的目录结构：
 
-+   README.md: 包含学习路径和时间预估。
++ `README.md`: 包含学习路径和时间预估。
 
-+   resources.md: 整理好的链接和参考文献。
++ `resources.md`: 整理好的链接和参考文献。
 
-+   examples/: 生成 Hello World 代码示例。
++ `examples/`: 生成 Hello World 代码示例。
 
 ### 阶段 4：交付 (Delivery via MCP)
 
-+   用户指令："Write the resources file to Notion."
++ 用户指令："Write the resources file to Notion."
 
-+   动作：主智能体调用 Notion MCP 工具 (mcp_notion_append_block_children)。
++ 动作：主智能体调用 Notion MCP 工具 (`mcp_notion_append_block_children`)。
 
-+   结果：它读取本地的 resources.md，将其转换为 Notion 的 Rich Blocks（富文本块），并自动写入到云端的 Notion 页面中。
++ 结果：它读取本地的 `resources.md`，将其转换为 Notion 的 Rich Blocks（富文本块），并自动写入到云端的 Notion 页面中。
 
 ---
 
@@ -189,12 +189,12 @@ allowed_tools.extend([skill_tool, task_tool])
 
 ### 6.2 安全性警告 (Security Note)
 
-⚠️ Human-in-the-loop (人机回环) 在课程的演示代码中，为了流程顺畅，我们直接允许了 Bash 和 Write 的自动执行。
+⚠️ Human-in-the-loop (人机回环) 在课程的演示代码中，为了流程顺畅，我们直接允许了 `Bash` 和 `Write` 的自动执行。
 
-+   生产环境风险：Agent 可能会执行危险命令（如删除文件）或覆盖重要数据。
++ 生产环境风险：Agent 可能会执行危险命令（如删除文件）或覆盖重要数据。
 
-+   最佳实践：在构建生产级应用时，必须实现拦截机制。当模型请求使用高风险工具时，暂停执行并向用户展示确认框（Permission Request），用户批准后方可继续。
++ 最佳实践：在构建生产级应用时，必须实现拦截机制。当模型请求使用高风险工具时，暂停执行并向用户展示确认框（Permission Request），用户批准后方可继续。
 
 ### 6.3 技能的可移植性 (Portability)
 
-我们在 .claude/skills 中编写的技能文件是符合 Open Standard 的。这意味着你在 Python SDK 中编写的技能，可以直接拖入 Claude Desktop 使用，也可以被其他支持该标准的 Agent 框架复用，无需修改代码。
+我们在 `.claude/skills` 中编写的技能文件是符合 Open Standard 的。这意味着你在 Python SDK 中编写的技能，可以直接拖入 Claude Desktop 使用，也可以被其他支持该标准的 Agent 框架复用，无需修改代码。

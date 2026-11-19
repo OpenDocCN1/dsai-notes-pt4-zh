@@ -1,10 +1,11 @@
+
 # AI+英语
 
 > 来源：[https://docs.feishu.cn/docx/P4ugdTAcVogiWPxtHD8crMrOnPJ](https://docs.feishu.cn/docx/P4ugdTAcVogiWPxtHD8crMrOnPJ)
 
-# 如何用ChatGPT学英语
+## 如何用ChatGPT学英语
 
-## 字典
+### 字典
 
 > 击败所有字典的搜词功能
 
@@ -18,19 +19,19 @@
 
 ![](img/e19938c8bee42b54d4e76aadbefd7163.png)
 
-### 询问某些词的区别
+#### 询问某些词的区别
 
 在英语语境中，某些词的词义有细微的差别，可以问chatGPT两个词的词义区别在哪，可以各举三个例句吗？
 
-### 同义词
+#### 同义词
 
 Can you provide synonyms for the word "happy"?
 
-## 托福作文语料库
+### 托福作文语料库
 
-用ChatGPT准备口语task1，随时随地有个托福语料库
+用ChatGPT准备口语`task1`，随时随地有个托福语料库
 
-### 直接生成
+#### 直接生成
 
 From now on, you are my TOEFL oral teaching assistant. I will give you a theme. You can imitate me and use authentic and fluent English to elaborate a paragraph on this topic.
 
@@ -50,7 +51,7 @@ The content can not exceed 300 words.
 # 输出要求: 
 请使用专业的语气.增加更多的细节，比如使用“For example”。Add emotional language and sensory details to make output more relatable and engaging.请输出英文。请你把输出字数限制在200字以内。
 # 其他要求: 
-请你模仿我给出的例子来输出正确的回复。{
+请你模仿我给出的例子来输出正确的回复.{
 教授：As cities continue to grow, the allocation and utilization of land become increasingly complex. The limited availability of land poses a challenge for urban planners. Given the constraints of limited land in cities, should open spaces be reserved for greenery or used for buildings with other functions? Share your perspective on this matter and provide reasons to support your stance.
 
 Claire：As cities continue to grow, the allocation and utilization of land become increasingly complex. The limited availability of land poses a challenge for urban planners. Given the constraints of limited land in cities, should open spaces be reserved for greenery or used for buildings with other functions? Share your perspective on this matter and provide reasons to support your stance.
@@ -62,7 +63,6 @@ Support whom：Claire
 Output: Claire&#x27;s perspective holds merit, as keeping / maintaining / preserving urban green spaces benefits the health of residents. Moreover, green zones also assume a vital / crucial / pivotal role in environmental protection. If urban growth continues aggressively, soaring / skyrocketing / surging energy consumption will become inevitable. For example, in most downtown areas, excessive urban expansion with the shortage of green areas has intensified the urban heat island effect, resulting in higher / increased / elevated temperatures and electricity demand due to air-conditioning utilization. On the other hand, regions retaining substantial greenbelts have noticed / observed / witnessed reduced power consumption. According to research by environmental agencies, during the summer, temperatures in suburban areas have been found / discovered / observed to be three to five degrees lower than their urban counterparts, reducing air conditioning time and conserving tremendous amounts of energy. Therefore, it becomes imperative to safeguard the remaining green spaces within cities to achieve environmental conservation and reduce / lessen / minimize carbon emissions.
 }
 {你会依次向我询问教授、Claire、Andrew的话是什么，以及我赞成的同学是哪个，等我告诉你全部消息之后，你再输出我要求你写的作文}
-
 ```
 
 ![](img/93281caa25e85cd2f4623507158feeed.png)
@@ -75,35 +75,27 @@ Output: Claire&#x27;s perspective holds merit, as keeping / maintaining / preser
 
 Please use TOEFL writing standards to rate my essay, the question is....and my answer is....The essay should be one paragraph with about 200 words. list all my grammatical errors and awkward phasing then tell me how to correct them. maintain my idea and use better phrasing to refine my essay.
 
-### 观点
+#### 观点
 
 托福Task 1需要你准备一些观点，我是按语料话题来准备的，每个问题基本上都可以用其他的理由，同时理由需要足够具体细节，可以用自己或者朋友的经历来举例，通过chatGPT来生成类似的语料作为积累
 
 分别有几个大类
 
-+   环境
-
-+   效率
-
-+   快乐
-
-+   身体健康
-
-+   公平
-
-+   赚钱
-
-+   人际关系
-
-+   个人职业发展
-
-+   安全
++ 环境
++ 效率
++ 快乐
++ 身体健康
++ 公平
++ 赚钱
++ 人际关系
++ 个人职业发展
++ 安全
 
 ![](img/fb78ca1af5fdfaa60333794f835046dc.png)
 
 ![](img/a50ed885b9dc6c0cf2fb7e69df5fa5df.png)
 
-## 托福独立口语素材生成
+### 托福独立口语素材生成
 
 ```
 # 背景: 
@@ -116,50 +108,46 @@ Please use TOEFL writing standards to rate my essay, the question is....and my a
 请输出英文。请你把输出字数限制在100字以内。
 # 其他要求: 
 Let&#x27;s work this out in a step by step way to be sure we have the right answer.You are honest and admit when you are unsure of something. If a query is unclear or ambiguous, you ask follow-up questions to better understand the user&#x27;s intent.
-
 ```
 
-## 雅思的口语练习
+### 雅思的口语练习
 
 I want you to act as an IELTS expert exammer, assess my answers and tell me what band I can get?
 
-+   Modify my answer
++ Modify my answer
++ Give me band 9 answer
 
-+   Give me band 9 answer
-
-## 英文字数统计
+### 英文字数统计
 
 此外，可以用chatGPT来做字数统计
 
 ![](img/e26810782b229f89f15ab116dc29a575.png)
 
-## **充当英语改进者**
+### 充当英语改进者
 
 我希望你能担任英语翻译、拼写校对和修辞改进的角色。我会用任何语言和你交流，你会识别语言，将其翻译并用更为优美和精炼的英语回答我。请将我简单的词汇和句子替换成更为优美和高雅的表达方式，确保意思不变，但使其更具文学性。请仅回答更正和改进的部分，不要写解释。
 
 I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. Keep the meaning the same, but make them more coherent and cohesive. I want you to only reply to the correction, and the improvements and nothing else, do not write explanations.
 
-## 语法检查
+### 语法检查
 
-+   Could you point out how you improve my answer on grammar, cohesion, coherence and vocabulary, and explain the main problems of this sentence, and suggest improvements?
++ Could you point out how you improve my answer on grammar, cohesion, coherence and vocabulary, and explain the main problems of this sentence, and suggest improvements?
 
-**twitter助手**
+#### twitter助手
 
-+   Please help me to improve my grammar, cohesion, coherence and vocabulary to make this tweet like an English-speaking native writer.
++ Please help me to improve my grammar, cohesion, coherence and vocabulary to make this tweet like an English-speaking native writer.
 
-## 角色扮演对话
+### 角色扮演对话
 
-+   从现在开始你扮演疯狂动物城里的兔子警官，我想和疯狂动物城里的兔子警官进行英文对话。接下来我会提出一个问题或话题，让兔子警官参与讨论。我可以问关于她的工作、生活、爱好或其他任何话题。
++ 从现在开始你扮演疯狂动物城里的兔子警官，我想和疯狂动物城里的兔子警官进行英文对话。接下来我会提出一个问题或话题，让兔子警官参与讨论。我可以问关于她的工作、生活、爱好或其他任何话题。
 
-+   From now on you are the character Nick in the movie "Zotopia' . Chat with me in his way
++ From now on you are the character Nick in the movie "Zotopia' . Chat with me in his way
 
-## ChatGPT移动端练口语Prompt
+### ChatGPT移动端练口语Prompt
 
-+   注册美区id，下载移动端ChatGPT app
-
-+   成为Plus
-
-+   我自己平时就是很随意的和他聊天，下面是一个学习单词的prompt
++ 注册美区id，下载移动端ChatGPT app
++ 成为Plus
++ 我自己平时就是很随意的和他聊天，下面是一个学习单词的prompt
 
 > https://m.okjike.com/originalPosts/652a2723aa7d4f2b304e851a?s=eyJ1IjoiNWY2YWUyNzY1NDMyZGIwMDE4YjFhODU5IiwiZCI6MX0%3D
 
@@ -193,11 +181,11 @@ I want you to act as an English translator, spelling corrector and improver. I w
 
 > 2、如果我的当前单词的发音指向另一个单词，你只需要纠正就行，不需要帮我解释另一个
 
-## 改写作文 1
+### 改写作文 1
 
-+   Please act as an English teacher and give me feedback on my writing sample, including suggestions for improvement and corrections of any mistakes.
++ Please act as an English teacher and give me feedback on my writing sample, including suggestions for improvement and corrections of any mistakes.
 
-+   Can you provide me with a revised version of this writing sample?
++ Can you provide me with a revised version of this writing sample?
 
 简单改写：
 
@@ -211,7 +199,7 @@ Rewrite and expand on the passage in the style of an established scholar. Use co
 
 Rewrite the passage in the style of Steven Pinker.
 
-## 改写作文 2
+### 改写作文 2
 
 假如你是一个托福的英语写作老师，你出一个高水平的英文作文命题，并说明题目要求，我提交完成的作文之后你给我打分，指出我的语法错误，并提出可以润色提高的部分，进行点评
 
@@ -221,21 +209,25 @@ Rewrite the passage in the style of Steven Pinker.
 
 现在不用我写的内容，请按照你给的作文题，用英语母语人士的水平写一篇优美的范文
 
-#
+### 雅思考官
 
-## 雅思考官
+
+
+# 英语学习与雅思写作资源指南
+
+## 雅思写作评分与反馈提示词
 
 "我希望你假定自己是雅思写作考官，根据雅思评判标准，按我给你的雅思考题和对应答案给我评分，并且按照雅思写作评分细则给出打分依据。此外，请给我详细的修改意见并写出满分范文。第一个问题是：It is sometimes argued that too many students go to university, while others claim that a university education should be a universal right.Discuss both sides of the argument and give your own opinion.对于这个问题，我的答案是：In some advanced countries, it is not unusual for more than 50% of young adults to attend college or university. Critics, however, claim that many university courses are worthless and young people would be better off gaining skills in the workplace. In this essay, I will examine both sides of this argument and try to reach a conclusion.There are several reasons why young people today believe they have the right to a university education. First, growing prosperity in many parts of the world has increased the number of families with money to invest in their children’s future. At the same time, falling birthrates mean that one- or two-child families have become common, increasing the level of investment in each child. It is hardly surprising, therefore, that young people are willing to let their families support them until the age of 21 or 22. Furthermore, millions of new jobs have been created in knowledge industries, and these jobs are typically open only to university graduates.However, it often appears that graduates end up in occupations unrelated to their university studies. It is not uncommon for an English literature major to end up working in sales, or an engineering graduate to retrain as a teacher, for example. Some critics have suggested that young people are just delaying their entry into the workplace, rather than developing professional skills.请依次给到我以下内容：具体分数及其评分依据、文章修改意见、满分范文。"
 
-As an IELTS Academic writing instructor, your task is to provide detailed feedback on a submitted essay. You will be given the writing topic and the student's answer, and you should evaluate their response based on the overall band scores and sub-scores for task achievement, coherence and cohesion, lexical resource, grammatical range, and accuracy. In addition, you will point out all specific errors in my writing to justify the assigned scores, as well as suggest relevant topic vocabulary, expressions, synonyms, and grammar. (You can copy my writing and modify it). In addition to providing feedback on the student's essay, please summarize key takeaways or tips that they should remember when approaching similar topics in future exams. Finally, please provide a band 9 example response to the same writing topic closely aligned with the student's viewpoint. If a band 9 example is unavailable, you may share the highest-scoring response available along with its corresponding band score.  """ {task and answer input here} """
+As an IELTS Academic writing instructor, your task is to provide detailed feedback on a submitted essay. You will be given the writing topic and the student's answer, and you should evaluate their response based on the overall band scores and sub-scores for task achievement, coherence and cohesion, lexical resource, grammatical range, and accuracy. In addition, you will point out all specific errors in my writing to justify the assigned scores, as well as suggest relevant topic vocabulary, expressions, synonyms, and grammar. (You can copy my writing and modify it). In addition to providing feedback on the student's essay, please summarize key takeaways or tips that they should remember when approaching similar topics in future exams. Finally, please provide a band 9 example response to the same writing topic closely aligned with the student's viewpoint. If a band 9 example is unavailable, you may share the highest-scoring response available along with its corresponding band score.  """ `{task and answer input here}` """
 
 ## 分析语法
 
 I want you to act as an English teacher. I will send you some English sentences and you will analyze them carefully as linguists. Reply to me in Chinese. Here are the sentences"""……"""
 
-## 终极：用chatGPT自己调教自己
+## 终极：用 ChatGPT 自己调教自己
 
-> https://mp.weixin.qq.com/s/U-tGtYFohS2CCbe5Ulz21g
+> `https://mp.weixin.qq.com/s/U-tGtYFohS2CCbe5Ulz21g`
 
 How can we use chatGPT to improve English learning?
 
@@ -243,51 +235,51 @@ Can you give me a list of example prompts that can be used by English learners?
 
 ![](img/267eef2e367ad2efb903bfbfb99d4810.png)
 
-# 推荐工具
+## 推荐工具
 
-## 留学all-in-one工具 | 写作口语评分软件
+### 留学 All-in-One 工具 | 写作口语评分软件
 
 ---
 
-网站：https://sensei.borderless.so/
+网站：`https://sensei.borderless.so/`
 
 ![](img/520600a553a6903f60eeee8a33c98360.png)
 
 为想要出国留学的学生提供Al驱动的咨询服务。Sensei 可以帮助学生完成申请到录取过程中的许多步骤，包括但不限于提供学校和奖学金建议，所有申请步骤，论文反馈。
 
-## 翻译插件
+### 翻译插件
 
-1.  bob+popclip
+1. bob+popclip
 
-划词AI翻译
+划词 AI 翻译
 
-网站：https://github.com/yetone/bob-plugin-openai-translator
+网站：`https://github.com/yetone/bob-plugin-openai-translator`
 
-1.  Openai translator
+1. Openai translator
 
-网站：https://github.com/yetone/openai-translator
+网站：`https://github.com/yetone/openai-translator`
 
-## 口语练习助手
+### 口语练习助手
 
-### voice control for chatgpt
+#### Voice Control for ChatGPT
 
-### Myshell
+#### Myshell
 
-网站：https://app.myshell.ai/zh/chat
+网站：`https://app.myshell.ai/zh/chat`
 
-### Gliglish
+#### Gliglish
 
-网站：https://www.gliglish.com/
+网站：`https://www.gliglish.com/`
 
 一款锻炼口语工具。与首个基于 AI 的语言老师一起提高您的语言流利程度并自信地说话。
 
 支持多种语言与口音，并且还在不断增加中。
 
-### Speechy
+#### Speechy
 
 ![](img/52ac8bc5e28eeac4a9daeafe84784e6c.png)
 
-## 沉浸式翻译插件
+### 沉浸式翻译插件
 
 沉浸式翻译插件，非常好用
 
@@ -295,13 +287,13 @@ Can you give me a list of example prompts that can be used by English learners?
 
 效果如下：
 
-![](img/7807d06b80e0241263cc72cd7976fd30.png)
+![](img/7807d06b806b80241263cc72cd7976fd30.png)
 
 ![](img/8a46778c2d5cf92a6911b33a95e8f955.png)
 
-## Trancy
+### Trancy
 
-https://www.trancy.org/zh-cn
+`https://www.trancy.org/zh-cn`
 
 Trancy 可帮助您将 YouTube 和 Netflix 变成个性化的学习材料。你可以建立你的词汇和语法技能，提高你的听力和口语能力。
 
@@ -313,7 +305,7 @@ Trancy 可帮助您将 YouTube 和 Netflix 变成个性化的学习材料。你�
 
 📺 剧场模式
 
-沉浸式观看Youtube 和 Netflix
+沉浸式观看 Youtube 和 Netflix
 
 - 双语字幕
 
@@ -345,7 +337,7 @@ Trancy 可帮助您将 YouTube 和 Netflix 变成个性化的学习材料。你�
 
 特殊模式：你可以进行影子跟读，也可以进行填空练习，通过键盘肌肉记忆，更高效的掌握新单词，练习掌握长句、难句
 
-- open AI 语法分析
+- Open AI 语法分析
 
 - 口语训练
 
@@ -369,17 +361,17 @@ Trancy 可帮助您将 YouTube 和 Netflix 变成个性化的学习材料。你�
 
 ![](img/e6589fb585a09563aa251876cd6b5315.png)
 
-## Text to Audio
+### Text to Audio
 
-> 用于你有一段口语素材，你想纠正你的发言，可以让AI帮你读一遍
+> 用于你有一段口语素材，你想纠正你的发言，可以让 AI 帮你读一遍
 
-https://www.naturalreaders.com/online/
+`https://www.naturalreaders.com/online/`
 
-# 翻译全流程
+## 翻译全流程
 
-> 参考https://wiki.decohack.com/docs/guide/quanpingtaifanyigongjushiyong.html
+> 参考 `https://wiki.decohack.com/docs/guide/quanpingtaifanyigongjushiyong.html`
 
-一共包括下面5个分类：
+一共包括下面 5 个分类：
 
 1️⃣ 电脑端全局快捷翻译工具
 
@@ -389,50 +381,50 @@ https://www.naturalreaders.com/online/
 
 4️⃣ 手机端翻译插件
 
-5️⃣ AI翻译自制电子书
+5️⃣ AI 翻译自制电子书
 
-👇🏻这篇文章具体内容我放在我的开源项目《Decohack-Wiki》中，也可以移步这里查看👇🏻
+👇🏻 这篇文章具体内容我放在我的开源项目《Decohack-Wiki》中，也可以移步这里查看👇🏻
 
-wiki.decohack.com
+`wiki.decohack.com`
 
 1️⃣ 电脑端全局快捷翻译工具
 
-MacOS截图翻译工具Bob: bobtranslate.com
+MacOS 截图翻译工具 Bob: `bobtranslate.com`
 
-Bob自定义 OpenAI 翻译 Prompt
+Bob 自定义 OpenAI 翻译 Prompt
 
-Windows/Linux 端翻译工具 - 比译: biyidev.com
+Windows/Linux 端翻译工具 - 比译: `biyidev.com`
 
 2️⃣ 浏览器网页翻译插件
 
-沉浸式翻译双语对照: immersivetranslate.com
+沉浸式翻译双语对照: `immersivetranslate.com`
 
-Glarity - 用ChatGPT网页摘要: glarity.app
+Glarity - 用 ChatGPT 网页摘要: `glarity.app`
 
 3️⃣ Youtube 和 Netflix 英语学习插件
 
-Language Reactor: languagereactor.com
+Language Reactor: `languagereactor.com`
 
-Relingo - 通过看文章和视频，无压力积累英语单词: relingo.net
+Relingo - 通过看文章和视频，无压力积累英语单词: `relingo.net`
 
 4️⃣ 手机端翻译插件
 
-手机网页翻译插件: immersivetranslate.com
+手机网页翻译插件: `immersivetranslate.com`
 
-手机截图OCR翻译捷径: www.icloud.com
+手机截图 OCR 翻译捷径: `www.icloud.com`
 
-5️⃣ AI翻译自制电子书
+5️⃣ AI 翻译自制电子书
 
-沉浸式翻译(可免费使用): immersivetranslate.com
+沉浸式翻译(可免费使用): `immersivetranslate.com`
 
-书译 - 助力轻松阅读全球书籍(付费): booktranslator.app
+书译 - 助力轻松阅读全球书籍(付费): `booktranslator.app`
 
-bilingual_book_maker: github.com/yihong0618/bilingual_book_maker
+`bilingual_book_maker`: `github.com/yihong0618/bilingual_book_maker`
 
-风声雨声 | 用 AI 解放生产力 | GPT 文本处理服务(付费): fsys.app
+风声雨声 | 用 AI 解放生产力 | GPT 文本处理服务(付费): `fsys.app`
 
-# 英语进阶学习指南
+## 英语进阶学习指南
 
 让你受益匪浅的英语进阶指南。
 
-https://github.com/byoungd/English-level-up-tips
+`https://github.com/byoungd/English-level-up-tips`

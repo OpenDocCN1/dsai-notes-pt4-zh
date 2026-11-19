@@ -1,3 +1,4 @@
+
 # GPT生图案例库
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/Wj6jd3YQeowWWqxBQ9ccZRbxnih](https://xodnytdcaw.feishu.cn/docx/Wj6jd3YQeowWWqxBQ9ccZRbxnih)
@@ -28,7 +29,7 @@
 
 ![](img/25a51a6e1faaf95858bd2689d4b67ac3.png)
 
-gpt生成（文字有问题）
+`gpt`生成（文字有问题）
 
 豆包重新生成文字，其他不变
 
@@ -46,7 +47,7 @@ gpt生成（文字有问题）
 手指上的灯光反射看起来富有电影感和氛围感，营造出一种高科技的全息氛围。
 ```
 
-附件：
+### 附件
 
 > 原文：[点此查看](http://x.com/dotey/status/1983941654680641984)    使用Sora 或者 ChatGPT
 
@@ -92,7 +93,7 @@ gpt生成（文字有问题）
 }
 ```
 
-注意：提示信息使用类似 JSON 的结构来描述卡片元素。您可以修改 parameters 对象中的值（例如 logo、ticker、company_name、colors 等）来自定义卡片。对于自定义 logo，请在 parameters.logo 中指定（例如，“Framer logo（附图）”），然后上传图片。
+注意：提示信息使用类似 JSON 的结构来描述卡片元素。您可以修改 `parameters` 对象中的值（例如 `logo`、`ticker`、`company_name`、`colors` 等）来自定义卡片。对于自定义 logo，请在 `parameters.logo` 中指定（例如，“Framer logo（附图）”），然后上传图片。
 
 参考图片（可选）： 上传自定义徽标图片。
 

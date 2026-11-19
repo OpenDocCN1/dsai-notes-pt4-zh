@@ -1,22 +1,23 @@
+
 # 【甄选】秘塔 AI 搜索 - 专题库
 
 > 来源：[https://docs.feishu.cn/docx/CqZKdAMoeoWBfOxyIV7cv5o9noe](https://docs.feishu.cn/docx/CqZKdAMoeoWBfOxyIV7cv5o9noe)
 
 ---
 
-1.  公司：**秘塔**
+1. 公司：**秘塔**
 
-1.  产品矩阵：
+1. 产品矩阵：
 
-+   秘塔 AI 搜索：https://metaso.cn
++ 秘塔 AI 搜索：`https://metaso.cn`
 
-+   秘塔写作猫：https://xiezuocat.com/#/
++ 秘塔写作猫：`https://xiezuocat.com/#/`
 
-+   秘塔翻译：https://fanyi.metaso.cn/#/
++ 秘塔翻译：`https://fanyi.metaso.cn/#/`
 
-+   MetaLaw（类案检索）：https://meta.law
++ MetaLaw（类案检索）：`https://meta.law`
 
-随[着 AI 技](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3527497267156107272#wechat_redirect)术[浪潮](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3521007419251507205#wechat_redirect)席卷各[行各业，越来越多的律所和律](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488789&idx=1&sn=cbe7c41732361616b383e2141bf2e33a&chksm=fac52fb5cdb2a6a3382ef0661150c79c458dc5d8571118f9f988ef75e32339f12d9ec380d0cf&token=865870229&lang=zh_CN&scene=21#wechat_redirect)师[朋友，希望了解如](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488730&idx=1&sn=4bb2cd2422d18786c98c627ce5864b5a&chksm=fac52e7acdb2a76c92d9c7aa5f02669e5dc1cdd9e0662887aaac72758df8bf20f4660b6e88ad&token=865870229&lang=zh_CN&scene=21#wechat_redirect)何拥抱 AI。2023 年以来，我们通过组建法律科技社区、智库，组织法律 AI 共创培训和比赛、参访 AI 大厂等活动，和一部分法律人先 AI 起来了。
+随着 AI 技术浪潮席卷各行各业，越来越多的律所和律师朋友，希望了解如何拥抱 AI。2023 年以来，我们通过组建法律科技社区、智库，组织法律 AI 共创培训和比赛、参访 AI 大厂等活动，和一部分法律人先 AI 起来了。
 
 前段时间，腾讯的 AI 智能体平台「元器」上线了一个新功能：支持授权使用👸号文章作为训练智能体的语料，打造专属 AI 助手，律师可以用于提高工作效率、拓展案源等。
 
@@ -30,7 +31,7 @@
 
 也就是说，对于像法律这样的严肃领域，AI 搜索的效率和准确性，二者同样重要。
 
-**在 AI 搜索领域，「秘塔」是个扛****把子选手**，尤其是在学术研究领域好评颇高。最近，秘塔上线了一个新功能：在秘塔首页的左侧边栏，新增了一个「专题」入口。
+**在 AI 搜索领域，「秘塔」是个扛把子选手**，尤其是在学术研究领域好评颇高。最近，秘塔上线了一个新功能：在秘塔首页的左侧边栏，新增了一个「专题」入口。
 
 ![](img/44701277c6bc9619d10d43c068de6266.png)
 
@@ -100,7 +101,7 @@
 
 同时，因为这些信息都是我们自己上传和筛选过的，所以非常干净，用的越多，知识库质量也会越提高，下次想找什么资料，直接在这个专题里问就完事了，效率🆙🆙🆙
 
-**另外，秘塔这个专题功能还可以被分享、协同编**辑、开放 API 接口，未来还支持收费。
+**另外，秘塔这个专题功能还可以被分享、协同编辑、开放 API 接口，未来还支持收费。**
 
 也就是说，这些专题知识库，未来可能会变成一个个可以流通的「数据」。
 

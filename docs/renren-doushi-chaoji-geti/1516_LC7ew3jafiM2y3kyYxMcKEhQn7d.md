@@ -1,12 +1,11 @@
+
 # 2023-08-31谷歌推出 AlloyDB AI，帮助开发者创建生成式 AI 应用
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/CIQRdf7w2odxY3xcYNUcDLg1nze](https://xuqiwei1986.feishu.cn/docx/CIQRdf7w2odxY3xcYNUcDLg1nze)
-
-> 🔗 原文链接： h[ttps://www.ithom](https://www.ithome.com/0/715/950.htm)e.com/0/715/950.htm
-
+> 来源：https://xuqiwei1986.feishu.cn/docx/CIQRdf7w2odxY3xcYNUcDLg1nze
 >
+> 原文链接：https://www.ithome.com/0/715/950.htm
 
-[IT之家 ](https://www.ithome.com/)**8 月 3**[**1 日消息，谷歌今天发**](https://cloud.google.com/alloydb/ai)**布新闻**稿， 宣布推出 AlloyDB AI 服务 ，进一步扩充现有 AlloyDB 服务的功能，主要帮助开发者充分利用运营数据，创建生成式 AI 应用程序。
+[IT之家](https://www.ithome.com/) 8 月 31 日消息，谷歌今天发布新闻稿，宣布推出 AlloyDB AI 服务，进一步扩充现有 AlloyDB 服务的功能，主要帮助开发者充分利用运营数据，创建生成式 AI 应用程序。
 
 ![](img/4ae4848d9edb2f546b7009cf86740839.png)
 

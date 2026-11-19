@@ -1,8 +1,9 @@
+
 # AI出海报，文生图4张5s超能打
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/UlOddvxi2oNzPAx6YxPcUfwUn0g](https://jalicvoygc0.feishu.cn/docx/UlOddvxi2oNzPAx6YxPcUfwUn0g)
 
-**产品&连接：**https://ideogram.ai/login
+**产品&连接：** <https://ideogram.ai/login>
 
 目前产品公测中，不限次数，YYDS！
 
@@ -34,17 +35,14 @@
 
 不上班可以玩一天，欸嘿嘿。
 
-btw顺便安利一个Prompt提示词大全网站，没灵感的可以去搜搜：https://prompthero.com/
+btw顺便安利一个Prompt提示词大全网站，没灵感的可以去搜搜：<https://prompthero.com/>
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容：
 
-[🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
-
-[🤔学习AI工作流](https://jalicvoygc0.feishu.cn/wiki/W15IwochvimsqvkkuCPcZuBxnqg)
-
-[🤖查找AI工具](https://jalicvoygc0.feishu.cn/wiki/Bu8GwqYu8i5LBRkyVKocUvX5n97)
-
-[📊阅读AI文章](https://jalicvoygc0.feishu.cn/wiki/SIywwqrVji2lZkkqFFpcEHZ8nNc)
+- [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
+- [🤔学习AI工作流](https://jalicvoygc0.feishu.cn/wiki/W15IwochvimsqvkkuCPcZuBxnqg)
+- [🤖查找AI工具](https://jalicvoygc0.feishu.cn/wiki/Bu8GwqYu8i5LBRkyVKocUvX5n97)
+- [📊阅读AI文章](https://jalicvoygc0.feishu.cn/wiki/SIywwqrVji2lZkkqFFpcEHZ8nNc)
 
 扫码加入AI Flow Genius社群，探讨使用AI来提升生产力的方法，成为超级个体
 

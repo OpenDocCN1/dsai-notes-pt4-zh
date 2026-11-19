@@ -1,3 +1,4 @@
+
 # 探索GPT的Mention艾特功能，ChatGPT 进化中的下一代重要特性及其未来潜力
 
 > 来源：[https://agispace.feishu.cn/docx/IzcadY8khouZo6xAGjpcPpDhnFf](https://agispace.feishu.cn/docx/IzcadY8khouZo6xAGjpcPpDhnFf)
@@ -10,7 +11,7 @@
 
 ![](img/d650bd0672b35ababce5ac73b0f006fa.png)
 
-想象一下可能性
+## 想象一下可能性
 
 借助 GPT 艾特唤起功能，可以在同一次聊天中执行更多操作。假设你正在开发一个项目。一个 GPT 可以帮助您编写代码，另一个可以设计一个很酷的图标，第三个可以帮助您部署所有内容。这就像拥有一个专家团队，一切只需艾特一下即可。
 

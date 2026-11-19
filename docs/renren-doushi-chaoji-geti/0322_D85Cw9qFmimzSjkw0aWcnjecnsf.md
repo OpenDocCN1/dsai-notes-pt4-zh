@@ -1,3 +1,4 @@
+
 # 不启动本地 n8n，不用官网 n8n，也能很丝滑使用n8n的姿势
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/G5Yydm16joWhlqxHlBUc2bEqnXf](https://xuqiwei1986.feishu.cn/docx/G5Yydm16joWhlqxHlBUc2bEqnXf)
@@ -38,15 +39,15 @@ No！No！No！都不选择。
 
 那么我们就正式进入主题
 
-# 准备工作
+## 准备工作
 
 这里要做些准备工作
 
-1.  就是**服务器的购买**
+1. 就是服务器的购买
 
-1.  二就是**域名的购买**，不购买也可以，如果你是国内服务器，域名要使用的话还需要备案。
+1. 二就是域名的购买，不购买也可以，如果你是国内服务器，域名要使用的话还需要备案。
 
-## 服务器购买
+### 服务器购买
 
 > 这里我只列举哪些还觉得性价比不错的，大家可以自由选择，链接也没有任何
 
@@ -60,15 +61,15 @@ No！No！No！都不选择。
 
 当然如果你能搞定备案，国内访问速度会快很多
 
-### raksmart
+#### raksmart
 
-网址：https://cn.raksmart.com/
+网址：`https://cn.raksmart.com/`
 
 使用场景：购买服务器、购买域名
 
 优点：支持支付宝和银联卡支付
 
-#### 注册账号
+##### 注册账号
 
 ![](img/d70c726702aa2d343d6ec81a163a7082.png)
 
@@ -84,11 +85,11 @@ No！No！No！都不选择。
 
 ![](img/43554453e97afd06b8a7331f0f9edae5.png)
 
-#### 新用户活动
+##### 新用户活动
 
 ![](img/3c1e7a2573bb1919147303643d99b567.png)
 
-网址：https://cn.raksmart.com/activity/index/page/activitypage_7.html
+网址：`https://cn.raksmart.com/activity/index/page/activitypage_7.html`
 
 推荐 20 刀一年的
 
@@ -100,7 +101,7 @@ No！No！No！都不选择。
 
 ![](img/e61736faa3b126cb3ef49896a5c25ca2.png)
 
-#### 机器维护
+##### 机器维护
 
 首页的右上角的控制台进入
 
@@ -110,21 +111,21 @@ No！No！No！都不选择。
 
 ![](img/db9a228318f8e0f8c696e9a942661283.png)
 
-#### 机器的信息
+##### 机器的信息
 
 重要的接个信息
 
-> 1、机器的 IP（ip）
+> 1、机器的 IP（`ip`）
 
-> 2、机器登录的密码（password）
+> 2、机器登录的密码（`password`）
 
-> 3、机器登录的用户名（一般 root）
+> 3、机器登录的用户名（一般 `root`）
 
-> 4、机器登录的端口（port）
+> 4、机器登录的端口（`port`）
 
 ![](img/19991e4939ebb41b49e7b40a6b467a00.png)
 
-#### 安全组管理
+##### 安全组管理
 
 ![](img/555f94556dedd89d31dbbde94c64db46.png)
 
@@ -136,7 +137,7 @@ No！No！No！都不选择。
 
 比如：我要放开别人能够访问我这个机器的 443 端口，那么配置如下
 
-> 1、远程 IP，一般就设置为了所有的 IP，0.0.0.0/0
+> 1、远程 IP，一般就设置为了所有的 IP，`0.0.0.0/0`
 
 > 2、方向，这里就选择进
 
@@ -152,9 +153,9 @@ No！No！No！都不选择。
 
 ![](img/aaf462ccaeb33b109ab6371846f31e28.png)
 
-### 阿里云
+#### 阿里云
 
-https://www.aliyunvip.com/fuwuqi99.asp
+`https://www.aliyunvip.com/fuwuqi99.asp`
 
 ![](img/b2aefff366bd82b57882cbff762da099.png)
 
@@ -166,13 +167,13 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/0eef8cac52f9a786ac0fbe02c54785af.png)
 
-## 域名
+### 域名
 
 这个可以购买的地方就多了
 
 这里我们还是用上面的 raksmart 购买，一个地方也方便。
 
-### raksmart域名购买
+#### raksmart域名购买
 
 ![](img/327a8c44f9d3f7b64bfae663bbce5033.png)
 
@@ -208,9 +209,9 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 这样我们的域名就购买成功了。
 
-### 腾讯云域名购买
+#### 腾讯云域名购买
 
-地址：https://buy.cloud.tencent.com/domain
+地址：`https://buy.cloud.tencent.com/domain`
 
 ![](img/dc7f0db4b774f52d16bdec46d91ce2af.png)
 
@@ -220,9 +221,9 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/5745eb3e5cf0b6069fea271bf124f7d1.png)
 
-### cloudflare 管理
+#### cloudflare 管理
 
-地址：https://dash.cloudflare.com/
+地址：`https://dash.cloudflare.com/`
 
 一般我们买了域名后，都是在 cloudflare 进行管理。
 
@@ -258,7 +259,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 进入到腾讯的域名管理的页面
 
-访问地址：https://console.cloud.tencent.com/domain
+访问地址：`https://console.cloud.tencent.com/domain`
 
 > 注意：这里已经到了你已经购买域名的网站，每家可能的地方不一样
 
@@ -294,7 +295,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/b7e675c88f365bfcc3171cd8f0334ba1.png)
 
-# 开始配置
+## 开始配置
 
 其实到这里基本就很简单了。
 
@@ -302,11 +303,11 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 这里我们使用的是 zeabur 服务，也就是部署的服务，如果大家用过 vercel 的话，这种类似的差不多。
 
-网址：https://zeabur.cn/
+网址：`https://zeabur.cn/`
 
 优点：支持自定义添加服务器，支持中文，支持模板部署（比如 n8n）
 
-## 注册
+### 注册
 
 使用场景：服务部署
 
@@ -332,7 +333,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/6b35aea0f24b9fb2537fab60162553d4.png)
 
-## 添加服务器
+### 添加服务器
 
 选择顶部菜单的「服务器」
 
@@ -378,7 +379,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/45a84c2b7262f6c9713c9948c57230d8.png)
 
-## 部署n8n服务
+### 部署 n8n 服务
 
 直接点击「创建项目」也可以
 
@@ -388,7 +389,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 这里的部署服务也是按项目维度来看的。因为一个项目有可能会有多个服务
 
-这里选择「**模板**」就可以了。关键的一步
+这里选择「模板」就可以了。关键的一步
 
 ![](img/d1677fc0a1aab4f91e6f75319fe38425.png)
 
@@ -404,7 +405,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/367c0772227620b3ae71e498ff475c04.png)
 
-## 配置域名
+### 配置域名
 
 这里还有一步就是要配置域名。
 
@@ -416,7 +417,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/a7ecb314fb03bc89b4c176b39564f885.png)
 
-### 生成域名
+#### 生成域名
 
 这个很简单了。
 
@@ -428,7 +429,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/a23f7789d42bcecc6d735a56e419ba98.png)
 
-### 自定域名
+#### 自定域名
 
 这个会稍微复杂点，会需要在你的域名管理服务那里新增 DNS 的记录。
 
@@ -446,7 +447,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 > 1、类型选择 A
 
-> 2、名称就写个单词，比如: n8n，是需要英文的哦
+> 2、名称就写个单词，比如: `n8n`，是需要英文的哦
 
 > 3、IP 地址，填写我们刚部署的服务的 IP 地址
 
@@ -466,7 +467,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 ![](img/2a21bf2335b5f1dcca1d3e6a2e64b488.png)
 
-# n8n 使用
+## n8n 使用
 
 到这里服务就启动了。
 
@@ -480,7 +481,7 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 这里就大功告成了。
 
-# 总结
+## 总结
 
 先来个总结吧
 
@@ -506,4 +507,4 @@ https://www.aliyunvip.com/fuwuqi99.asp
 
 如果你有疑问或者星球，欢迎跟我一起来讨论。
 
-**加油！加油！加油！**💪
+加油！加油！加油！💪

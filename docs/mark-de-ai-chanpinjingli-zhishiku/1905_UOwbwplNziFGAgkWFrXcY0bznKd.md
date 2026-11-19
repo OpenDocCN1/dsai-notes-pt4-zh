@@ -1,38 +1,37 @@
-# 极越CEO夏一平称自己没有跑路；东京都将启动上四休三工作制以扭转低出生率；小米否认小米空调专利侵权赔了50万
-
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/I2V4dCN52oRv2jx2MwkcgUaInxe](https://qqs7y1hozd1.feishu.cn/docx/I2V4dCN52oRv2jx2MwkcgUaInxe)
 
 # 【光年日报】2024.12.17周二
 
-# Mark的AI产品经理知识库——互联网前沿资讯推送！
+> 来源：[https://qqs7y1hozd1.feishu.cn/docx/I2V4dCN52oRv2jx2MwkcgUaInxe](https://qqs7y1hozd1.feishu.cn/docx/I2V4dCN52oRv2jx2MwkcgUaInxe)
+
+## Mark的AI产品经理知识库——互联网前沿资讯推送！
 
 > Kimi推出新视觉思考模型k1 数理化测试成绩超OpenAI o1模型
 
-######### [极](https://qqs7y1hozd1.feishu.cn/wiki/UOwbwplNziFGAgkWFrXcY0bznKd#share-HpZxdnRfYoXAG9xx5cscjiL7nAy)越CEO夏一平称自己没有跑路；东京都将启动上四休三工作制以扭转低出生率；小米否认小米空调专利侵权赔了50万
+### [极](https://qqs7y1hozd1.feishu.cn/wiki/UOwbwplNziFGAgkWFrXcY0bznKd#share-HpZxdnRfYoXAG9xx5cscjiL7nAy)越CEO夏一平称自己没有跑路；东京都将启动上四休三工作制以扭转低出生率；小米否认小米空调专利侵权赔了50万
 
-######### 史上最大AI独角兽诞生，25000亿
+### 史上最大AI独角兽诞生，25000亿
 
-######### 英伟达Thor芯片延迟量产，小鹏考虑搁置搭载
+### 英伟达Thor芯片延迟量产，小鹏考虑搁置搭载
 
-######### [Sora带飞剪映?](https://qqs7y1hozd1.feishu.cn/wiki/UOwbwplNziFGAgkWFrXcY0bznKd#share-M7A6dapjqoO3mMxxi2mcUy5Fneh)
+### [Sora带飞剪映?](https://qqs7y1hozd1.feishu.cn/wiki/UOwbwplNziFGAgkWFrXcY0bznKd#share-M7A6dapjqoO3mMxxi2mcUy5Fneh)
 
 > 欢迎加入社群
 
 ![](img/11c7d98a6627a7f70da75449113460dd.png)
 
-# 今日热点 💎
+## 今日热点 💎
 
-## 💡Kimi推出新视觉思考模型k1 数理化测试成绩超OpenAI o1模型
+### 💡Kimi推出新视觉思考模型k1 数理化测试成绩超OpenAI o1模型
 
-腾讯网 | https://news.qq.com/rain/a/20241216A08W8Q00（⬅️原文直达）
+腾讯网 | `https://news.qq.com/rain/a/20241216A08W8Q00`（⬅️原文直达）
 
 ![](img/de89e484ddec5721dfabd660f6e6c262.png)
 
 12月16日，月之暗面旗下的人工智能助手Kimi发布了全新视觉思考模型k1。这一模型基于先进的强化学习技术，能够实现端到端的图像理解和思维链技术，为用户带来更深入的视觉分析体验。k1模型的应用范围不仅限于数学领域，还成功扩展到了物理、化学等多个基础科学领域，展现了其在多学科领域的强大潜力。
 
-## 💡极越CEO夏一平称自己没有跑路；东京都将启动上四休三工作制以扭转低出生率；小米否认小米空调专利侵权赔了50万
+### 💡极越CEO夏一平称自己没有跑路；东京都将启动上四休三工作制以扭转低出生率；小米否认小米空调专利侵权赔了50万
 
-8点1氪 | https://www.36kr.com/p/3082194011879560（⬅️原文直达）
+8点1氪 | `https://www.36kr.com/p/3082194011879560`（⬅️原文直达）
 
 ![](img/5beae105c291044376627190d74ad1b4.png)
 
@@ -52,9 +51,9 @@
 
 对此，随后小米公关部负责人王化发文回应称：“侵权相关新闻，经过再次核查，信息不实。第一：小米空调没有专利侵权行为；第二：小米没有因为专利侵权赔偿50万的情况。”（新浪财经）
 
-## 💡史上最大AI独角兽诞生，25000亿
+### 💡史上最大AI独角兽诞生，25000亿
 
-投资界 | https://www.36kr.com/p/3081222383483012（⬅️原文直达）
+投资界 | `https://www.36kr.com/p/3081222383483012`（⬅️原文直达）
 
 ![](img/cdc0d5131fb2ae9e9ca6b624d2cca14a.png)
 
@@ -66,9 +65,9 @@ SpaceX，无疑是狂人马斯克又一传奇。这家由他成立于2002年的�
 
 放眼望去，中国商业航天同样上演着火爆一幕，一笔笔重磅融资相继诞生——星际荣耀、深蓝航天、天兵科技、垣信卫星……热闹背后，属于中国的大航天时代拉开序幕。
 
-## 💡英伟达Thor芯片延迟量产，小鹏考虑搁置搭载
+### 💡英伟达Thor芯片延迟量产，小鹏考虑搁置搭载
 
-36氪| https://www.36kr.com/p/3081224356624515（⬅️原文直达）
+36氪| `https://www.36kr.com/p/3081224356624515`（⬅️原文直达）
 
 ![](img/9654e8ac8ed8d7e115f67268d2d2fa48.png)
 
@@ -80,9 +79,9 @@ SpaceX，无疑是狂人马斯克又一传奇。这家由他成立于2002年的�
 
 此前，今年3月英伟达GTC全球技术大会上，小鹏宣布将使用Thor芯片作为其即将推出的电动汽车的“人工智能大脑”。包括小鹏新近上市的车型P7+原本也考虑搭载Thor，但由于延期，P7+最终采用的是英伟达第二代智驾芯片Orin。
 
-## 💡Sora带飞剪映?
+### 💡Sora带飞剪映？
 
-字母榜 |https://www.36kr.com/p/3081621760784771（⬅️原文直达）
+字母榜 | `https://www.36kr.com/p/3081621760784771`（⬅️原文直达）
 
 ![](img/c7df6c9ca6e62a432992e91e2146e259.png)
 

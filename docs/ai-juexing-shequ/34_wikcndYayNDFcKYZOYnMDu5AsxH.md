@@ -1,3 +1,4 @@
+
 # ChatGPT保姆级部署教程
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/DUK9dpNJ4oMiyUx5gpYco6hNnnf](https://diwfpqo78m.feishu.cn/docx/DUK9dpNJ4oMiyUx5gpYco6hNnnf)
@@ -8,7 +9,7 @@
 
 # 预览
 
-首先来看最终的效果图，可以实现不用🪜，既可正常访问与沟通交流，免费额度10万次，然后账号的AppKey，我会定时替换，大家可以无压力来使用！再也不用🪜了！
+首先来看最终的效果图，可以实现不用🪜，既可正常访问与沟通交流，免费额度10万次，然后账号的`AppKey`，我会定时替换，大家可以无压力来使用！再也不用🪜了！
 
 ![](img/9aa9736820b13878cf927f4dfc85ad52.png)
 
@@ -28,7 +29,7 @@
 
 ![](img/9cc2dc04371538ed203ed109635039f0.png)
 
-然后点击** new repository**
+然后点击**new repository**
 
 ![](img/c8b864909c2feea59ec8e501dfbcfde5.png)
 
@@ -90,11 +91,11 @@
 
 ![](img/32d4c11b39d7db92318889f08d981e9d.png)
 
-点击右上角“Continue to Dashboard”，然后点击下图“Visit” ，即可访问：
+点击右上角“Continue to Dashboard”，然后点击下图“Visit”，即可访问：
 
 ![](img/f474e902abca0ad2ba4ddd052ba2c754.png)
 
-然后就大功告成了，这个时候，你输入自己的AppKey，就可以进行正常的操作了。
+然后就大功告成了，这个时候，你输入自己的`AppKey`，就可以进行正常的操作了。
 
 ![](img/6fa549dc5901d459092765c50b91cb45.png)
 
@@ -152,12 +153,11 @@
 
 ![](img/85860c2c0ec851c9463520d8ae439ef5.png)
 
-###  5、设置全局变量
+### 5、设置全局变量
 
-到上面之后，我们的基础内容就弄完，但是现在需要大家每个人来手动输入AppKey 进行访问，我们可以设置全局变量，让大家免费使用。
+到上面之后，我们的基础内容就弄完，但是现在需要大家每个人来手动输入`AppKey` 进行访问，我们可以设置全局变量，让大家免费使用。
 
 点击这里的Environment Variables，进行全局变量的设置：
-
 
 修改环境变量需要Redeploy
 
@@ -167,6 +167,6 @@
 
 至此，第一种部署方式就完全搞定！
 
-6、修改信息
+### 6、修改信息
 
 大家拿到代码之后，就可以在GitHub上进行实时的更新和修改，替换掉我的👸号信息，替换成为自己的，剩下的就是自己操作了。

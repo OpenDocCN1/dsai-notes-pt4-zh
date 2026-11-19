@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230824）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/AdXTdwmKVomf07x0QyhcvRgynYf](https://jlqyxzzvbk.feishu.cn/docx/AdXTdwmKVomf07x0QyhcvRgynYf)
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## 英伟达利润暴涨843%，股价突破500美元！H100成AI黄金，订单排到明年
+### 英伟达利润暴涨843%，股价突破500美元！H100成AI黄金，订单排到明年
 
 英伟达在周三收盘后一公布2季度财报，股价盘后大涨6.6%，一度跨过了500美元大关，最高达到517美元。
 
@@ -20,7 +21,7 @@
 
 ![](img/460a8baaf59bd20b594308b1d0becebd.png)
 
-**英伟达财报出炉**
+### 英伟达财报出炉
 
 自5月份以来，英伟达的收入已经达到了135亿美元。
 
@@ -34,13 +35,13 @@
 
 更多信息请访问：https://mp.weixin.qq.com/s/3nk62P3xHeDSWihm6NkUEQ
 
-## GPT-4生图未解禁？CMU华人博士新作，大模型GILL能生图能检索，人人可玩
+### GPT-4生图未解禁？CMU华人博士新作，大模型GILL能生图能检索，人人可玩
 
 近日，来自CMU的研究人员全新提出了一种多模态模型GILL。
 
 ![](img/c37284b99edc51e0a85371bb80750581.png)
 
-论文地址：https://arxiv.org/pdf/2305.17216.pdf它可以将文本或图像作为prompt，完成多模态对话。具体来说，可以实现生成文本、检索图像、生成新图像。
+论文地址：https://arxiv.org/pdf/2305.17216.pdf 它可以将文本或图像作为`prompt`，完成多模态对话。具体来说，可以实现生成文本、检索图像、生成新图像。
 
 ![](img/5646ee307f286da29ec39af1883c1144.png)
 
@@ -48,17 +49,17 @@
 
 更多信息请访问：https://mp.weixin.qq.com/s/TjqUH2SuUHNKvyMOmRAJAw
 
-## Midjourney新功能上线，对图片内容修改
+### Midjourney新功能上线，对图片内容修改
 
-Midjourney 今天宣布更新，增加了新的Vary (Region) 功能，可对已生成的图片内容进行修改。
+Midjourney 今天宣布更新，增加了新的`Vary (Region)` 功能，可对已生成的图片内容进行修改。
 
 这个功能允许用户对画面中的选定区域进行修改，在不影响画面大部分内容的情况下，重新绘制选定区域的内容。目前该功能一次只能选择一个区域进行修改，不过用户可以通过多次操作来获得想要的内容。
 
 更多信息请访问：https://www.uisdc.com/group/527923.html
 
-# AI软件精选
+## AI软件精选
 
-# RoomGPT**（AI3D）**
+### RoomGPT（AI3D）
 
 建筑ai，给你的房间拍张照片，看看你的房间在不同的主题下看起来如何。改造您的房间。
 
@@ -66,7 +67,7 @@ Midjourney 今天宣布更新，增加了新的Vary (Region) 功能，可对已�
 
 链接：https://www.reimaginehome.ai/
 
-# RE**imagine **Home: AI（AI3D建模）
+### REimagine Home: AI（AI3D建模）
 
 用人工智能的室内设计和虚拟舞台重新想象你的家。产生个性化的设计概念和灵感来重新设计您的家。
 
@@ -74,7 +75,7 @@ Midjourney 今天宣布更新，增加了新的Vary (Region) 功能，可对已�
 
 链接：https://www.reimaginehome.ai/
 
-# Krikey AI**（AI3D建模）**
+### Krikey AI（AI3D建模）
 
 Krikey是一家AI工具公司，其产品包括AI文本到动画工具，自定义3D Avatar工具，AR游戏工具包等。
 
@@ -82,11 +83,11 @@ Krikey是一家AI工具公司，其产品包括AI文本到动画工具，自定�
 
 链接：https://www.krikey.ai/
 
-**更多****AI****工具请访问：**https://www.ainavpro.com/
+**更多 AI 工具请访问：** https://www.ainavpro.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -94,7 +95,7 @@ https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f793
 
 ![](img/58e2174ca454a1d515ad497fd33e8bb3.png)
 
-## 付费课程（ai认知提升）
+### 付费课程（ai认知提升）
 
 AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
@@ -102,17 +103,9 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/5e46a4c074f3c3bb6072da9fbba17bf1.png)
 
-#
+## 4.会员精选
 
-![](img/d8cf60356150ca930794d09ad28a4db9.png)
-
-![](img/e2c095d8211d056c627112a99c468398.png)
-
-**欢迎进群交流**
-
-# 4.会员精选
-
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：`kanAI` 九五折优惠，或者直接二维码访问
 
 ![](img/4c5760300484f84aa1b8107b5a14dc3c.png)
 
@@ -122,7 +115,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/d88541bb8795700e4a8fdc76fea84b73.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT**，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/423093139b69c06dc4d07d17b7995544.png)
 

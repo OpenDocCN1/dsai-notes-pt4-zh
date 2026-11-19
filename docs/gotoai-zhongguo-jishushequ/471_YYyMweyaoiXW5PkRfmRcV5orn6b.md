@@ -1,3 +1,4 @@
+
 # OpenClaw Hardware 硬件选型
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/ZY1Hd134YocyVVxQbmpctlTHnTf](https://gotoaiworld.feishu.cn/docx/ZY1Hd134YocyVVxQbmpctlTHnTf)
@@ -8,13 +9,13 @@ https://advenboost.com/en/openclaw-hardware-best-7-options/
 
 ![](img/0ecd569b4742215cf2a660831b1cd513.png)
 
-# OpenClaw on a $100 Budget — Complete Home Lab Hardware List (2026)
+## OpenClaw on a $100 Budget — Complete Home Lab Hardware List (2026)
 
 There is a persistent myth in the home lab community that running agent orchestration frameworks requires expensive hardware. OpenClaw on a $100 Budget challenges that assumption directly. However, the challenge demands honesty. You will not run a 70-billion-parameter local model on a Raspberry Pi. You will not achieve sub-100ms inference on a $30 ARM board. What you can do is build a fully functional, always-on automation node that handles agent workflows, messaging sync, Docker containers, and API orchestration reliably, for under one hundred dollars in 2026.
 
 This guide is written for engineers who want to understand the real constraints. Specifically, it targets automation builders, DevOps practitioners, and agent developers who need a low-cost infrastructure node and not a workstation replacement. Every piece of hardware listed here is realistically available on Amazon and priced under one hundred dollars at the time of writing. Prices shift, so always verify current listings before purchasing.
 
-## OpenClaw on a $100 Budget — Is It Actually Possible?
+### OpenClaw on a $100 Budget — Is It Actually Possible?
 
 The short answer is yes, with clearly defined scope. However, the longer answer requires dismantling some unrealistic expectations that circulate in budget homelab discussions.
 
@@ -26,7 +27,7 @@ Realistic use cases for a sub-$100 OpenClaw node include single-agent workflow e
 
 The OpenClaw Setup Guide covers the full software installation process separately. This article focuses exclusively on hardware selection and optimization.
 
-## What Can OpenClaw on a $100 Budget Realistically Run?
+### What Can OpenClaw on a $100 Budget Realistically Run?
 
 Understanding capability boundaries before purchasing hardware is essential. Specifically, the following workloads are well-suited to sub-$100 hardware in 2026.
 
@@ -40,9 +41,9 @@ API-based automation, including calling OpenAI, Anthropic, or MiniMax M2.5 APIs 
 
 What this budget hardware genuinely cannot handle includes running large local language models even at aggressive quantization, hosting production vector databases with millions of embeddings, real-time audio or video processing pipelines, and multi-tenant agent environments serving more than a handful of concurrent users.
 
-## Complete Hardware List — Amazon Picks Under $100
+### Complete Hardware List — Amazon Picks Under $100
 
-### 1-Raspberry Pi Zero 2 W
+#### 1-Raspberry Pi Zero 2 W
 
 Typical Amazon price range sits between $15 and $20 for the board alone, though availability fluctuates. The CPU is a quad-core ARM Cortex-A53 running at 1GHz. RAM is 512MB LPDDR2, which is the primary constraint. Storage is handled via microSD, with 32GB Class 10 cards being the practical minimum for OpenClaw workloads.
 
@@ -52,7 +53,7 @@ Realistic performance expectations include roughly 60 to 90 seconds cold boot to
 
 Limitations include the 512MB RAM ceiling, MicroUSB power dependency, the absence of onboard Ethernet requiring a USB adapter, and microSD reliability concerns for write-heavy workloads. Best use case is an ultra-low-power always-on messaging sync node or lightweight automation endpoint.
 
-### 2- Orange Pi Zero2
+#### 2- Orange Pi Zero2
 
 The Orange Pi Zero2 typically lists on Amazon between $25 and $35. It uses an Allwinner H616 quad-core ARM Cortex-A53 at 1.5GHz with 512MB or 1GB LPDDR3 RAM depending on variant. Storage is via microSD, and crucially it includes onboard 100Mbps Ethernet, which removes a common pain point.
 
@@ -60,15 +61,17 @@ This board works for OpenClaw because the 1GB variant provides enough headroom f
 
 Power consumption is approximately 1 to 3 watts under typical agent workloads. Limitations include community support that lags behind Raspberry Pi, occasional kernel driver issues on certain Linux distributions, and storage limited to microSD. Best use case is a step up from Pi Zero 2 W for users who need Ethernet and slightly more RAM headroom.
 
-### 3- Sipeed Lichee Pi 4A
+#### 3- Sipeed Lichee Pi 4A
 
 The Lichee Pi 4A represents a significant architectural departure. It uses a T-Head TH1520 RISC-V processor, a quad-core chip running at up to 1.85GHz with integrated 2GB or 4GB LPDDR4X RAM. Amazon pricing varies between $60 and $90 depending on configuration and seller.
 
 This board works for OpenClaw because RISC-V is increasingly well-supported in mainstream Linux distributions, and the 4GB variant provides genuine multi-container headroom. Consequently, you can run Redis, a small FastAPI server, and an OpenClaw agent simultaneously without constant memory pressure.
 
+
+
 However, RISC-V software compatibility still has edge cases in 2026. Specifically, some Python packages with native extensions require compilation from source, which adds setup complexity. Realistic performance is comparable to a mid-range ARM board for pure orchestration workloads. Power consumption is around 3 to 6 watts under load. Best use case is the most capable pure-board option in this budget for multi-service OpenClaw deployments.
 
-### 4- Beelink U57 Mini PC
+## 4- Beelink U57 Mini PC
 
 The Beelink U57 and comparable Mini PCs using Intel Core i5 fifth-generation processors appear on Amazon regularly between $70 and $95 in refurbished condition. These units include 8GB DDR3 RAM and either a 128GB or 256GB SSD depending on the listing. They use standard x86-64 architecture.
 
@@ -76,7 +79,7 @@ This is the most practically capable hardware in the list. The x86 architecture 
 
 Realistic performance includes sub-10 second service startup times and the ability to handle several concurrent agent tasks without degradation. Power consumption is 15 to 25 watts under load, making it the least efficient option on the list but still modest for 24/7 operation. Limitations include age, fan noise, and larger physical footprint. Best use case is a development and production hybrid node where software compatibility and RAM headroom matter most.
 
-### 5- Intel Atom or Celeron Refurbished Mini PC
+## 5- Intel Atom or Celeron Refurbished Mini PC
 
 Numerous Mini PCs using Intel Atom Z8350, Celeron N3350, or Celeron N4100 processors appear on Amazon between $40 and $75 refurbished. These typically include 4GB LPDDR4 RAM and 64GB eMMC storage. All run x86-64 and accept standard Linux distributions without driver complications.
 
@@ -84,7 +87,7 @@ These work for OpenClaw because 4GB RAM on x86 is a practical sweet spot for the
 
 Limitations include slower single-core performance compared to modern ARM chips and modest eMMC write speeds that can become bottlenecks under heavy logging. Best use case is a cost-optimized always-on OpenClaw node with good software compatibility and acceptable RAM headroom.
 
-### 6- ESP32 Boards as Automation Endpoints
+## 6- ESP32 Boards as Automation Endpoints
 
 ESP32 development boards list on Amazon between $8 and $15. They are not OpenClaw host machines. However, they serve a specific and valuable role as sensor endpoints, MQTT publishers, and hardware automation triggers within a broader OpenClaw environment.
 
@@ -116,9 +119,13 @@ For x86 users, the Beelink U57 refurb units often accept RAM upgrades to 16GB wi
 
 Starting with a minimal Linux installation is non-negotiable on constrained hardware. Raspberry Pi OS Lite, DietPi, or Armbian Minimal removes graphical interfaces, audio subsystems, Bluetooth stacks, and dozens of background services that consume RAM and CPU without contributing to OpenClaw workflows. A stripped DietPi installation can reach an idle RAM usage below 80MB, leaving the overwhelming majority of available memory for your actual workloads.
 
-Disabling unnecessary systemd services comes next. Specifically, services like ModemManager, avahi-daemon, and triggerhappy have no function in a headless server context. Consequently, removing or masking them recovers CPU cycles and reduces memory pressure incrementally. Every megabyte recovered on a 512MB system matters operationally.
+Disabling unnecessary systemd services comes next. Specifically, services like `ModemManager`, `avahi-daemon`, and `triggerhappy` have no function in a headless server context. Consequently, removing or masking them recovers CPU cycles and reduces memory pressure incrementally. Every megabyte recovered on a 512MB system matters operationally.
 
-Swap memory tuning requires careful thought on microSD-based systems. A swapfile on microSD works but accelerates card wear significantly. Therefore, using zram swap, which compresses inactive memory pages in RAM itself, is preferable on boards with 512MB to 1GB RAM. Zram provides effective swap capacity without touching storage, and it works well for the bursty memory patterns common in agent orchestration workflows.
+Swap memory tuning requires careful thought on microSD-based systems. A swapfile on microSD works but accelerates card wear significantly. Therefore, using `zram` swap, which compresses inactive memory pages in RAM itself, is preferable on boards with 512MB to 1GB RAM. `Zram` provides effective swap capacity without touching storage, and it works well for the bursty memory patterns common in agent orchestration workflows.
+
+
+
+# OpenClaw on a $100 Budget
 
 Docker container limits prevent any single container from consuming available memory catastrophically. Setting explicit memory limits on each container using Docker’s resource constraint flags ensures that a misbehaving container cannot OOM-kill the entire system. The OpenClaw Docker Hardening guide covers specific configuration patterns for this, and those practices become genuinely critical on hardware with 1GB or less total RAM.
 

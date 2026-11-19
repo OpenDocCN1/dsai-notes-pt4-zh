@@ -1,7 +1,7 @@
+
 # ✏GPT示例
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/YbIrdLBMfovVzexwPfHcyOpmneb](https://xuqiwei1986.feishu.cn/docx/YbIrdLBMfovVzexwPfHcyOpmneb)
-
 
 ![](img/1359d9b1a1597f8086247cf4c4adf586.png)
 
@@ -69,14 +69,6 @@
 
 ![](img/dee98bf9f1a7da4c8899a47080da2c87.png)
 
-#
-
-#
-
-#
-
-#
-
 # 联网实时信息查询
 
 Web Browsing
@@ -103,7 +95,7 @@ Advanced data analysis
 
 ![](img/3625c28a4cc38ab27ac15ca71ff0ecdd.png)
 
-[亚运会成绩表.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PG5VbyLwmoXPglxI5T6cSeqVn4b)
+[`亚运会成绩表.xlsx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PG5VbyLwmoXPglxI5T6cSeqVn4b)
 
 ![](img/8a24a41eac6bc1cd6d96a17ede06ab45.png)
 
@@ -121,8 +113,6 @@ Advanced data analysis
 
 ![](img/b769abc9684e78df49d91cbc5a8d1a42.png)
 
-#
-
 |  |  |
 | --- | --- |
 | ![](img/b421f1c7aa4c302e7e437bd4953d7061.png) | ![](img/97d253f741702c4f63af42b7e30aaa78.png) |
@@ -131,7 +121,7 @@ Advanced data analysis
 
 ![](img/141d931530590ec2e101396c5ae96385.png)
 
-[马斯克传.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HsrRb7NHpoQoncxewr1cKJF7nEh)
+[`马斯克传.docx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HsrRb7NHpoQoncxewr1cKJF7nEh)
 
 ![](img/5205afc25ed40f5c975cd2737e046d4a.png)
 

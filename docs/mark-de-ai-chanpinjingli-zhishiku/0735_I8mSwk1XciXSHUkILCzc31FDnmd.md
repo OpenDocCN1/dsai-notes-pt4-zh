@@ -1,25 +1,21 @@
+
 # Claude Skills完全指南：从概念到实战
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/NvCndUkGVoGIwUxpFKkco8lznfb](https://qqs7y1hozd1.feishu.cn/docx/NvCndUkGVoGIwUxpFKkco8lznfb)
 
 这篇文章会回答这些问题：
 
-1.  Skills到底是什么？和MCP、Subagent有什么区别？
-
-1.  为什么Simon Willison说它可能比MCP更重要？
-
-1.  怎么创建自己的第一个Skill？
-
-1.  怎么设计一个Skill库？我自己是怎么做的？
-
-1.  有哪些值得关注的资源和仓库？
-
+1. Skills到底是什么？和MCP、Subagent有什么区别？
+2. 为什么Simon Willison说它可能比MCP更重要？
+3. 怎么创建自己的第一个Skill？
+4. 怎么设计一个Skill库？我自己是怎么做的？
+5. 有哪些值得关注的资源和仓库？
 
 ---
 
-# Part 1：理解Skills
+## Part 1：理解Skills
 
-## Skills是什么？一句话说清
+### Skills是什么？一句话说清
 
 Skills是模块化的能力包，包含指令、脚本和资源，让Claude在需要时自动加载和使用。
 
@@ -31,13 +27,10 @@ Skills是模块化的能力包，包含指令、脚本和资源，让Claude在�
 
 "能力包"：每个Skill文件夹里可以包含：
 
-+   SKILL.md（核心指令文件，必需）
-
-+   scripts/（可执行脚本，可选）
-
-+   references/（参考文档，可选）
-
-+   assets/（模板和资源，可选）
++ `SKILL.md`（核心指令文件，必需）
++ `scripts/`（可执行脚本，可选）
++ `references/`（参考文档，可选）
++ `assets/`（模板和资源，可选）
 
 "自动加载"：你不需要手动告诉Claude"现在用XX Skill"。Claude会根据你的任务描述，自动判断需要哪个Skill，然后加载。
 
@@ -57,13 +50,13 @@ Claude自动识别到需要审校能力，加载"AI味审校"Skill，按照我�
 
 这就是Skills的核心价值：把重复的指令打包，按需加载。
 
-## 渐进式披露：这个设计是真的聪明
+### 渐进式披露：这个设计是真的聪明
 
 用Skills之前，我一直有个疑问：如果我装了50个Skill，Claude启动时全部加载，那Token不是照样爆炸？
 
 研究了一圈才发现，Anthropic用了一个很聪明的设计：渐进式披露（Progressive Disclosure）。
 
-### 什么是渐进式披露？
+#### 什么是渐进式披露？
 
 简单说，就是分阶段、按需加载。
 
@@ -71,7 +64,7 @@ Claude自动识别到需要审校能力，加载"AI味审校"Skill，按照我�
 
 第一层：元数据（Metadata）—— 总是加载
 
-内容：SKILL.md文件开头的YAML部分，就两个字段：name和description。
+内容：`SKILL.md`文件开头的YAML部分，就两个字段：`name`和`description`。
 
 ```
 ---
@@ -88,9 +81,9 @@ Token成本：每个Skill大约100 tokens。就算你装了50个Skills，也就5
 
 第二层：指令（Instructions）—— 触发时加载
 
-内容：SKILL.md的主体部分，详细的操作指南。
+内容：`SKILL.md`的主体部分，详细的操作指南。
 
-加载时机：当用户请求匹配某个Skill的description时，Claude才加载这个Skill的完整内容。
+加载时机：当用户请求匹配某个Skill的`description`时，Claude才加载这个Skill的完整内容。
 
 Token成本：通常在3000-5000 tokens。
 
@@ -98,45 +91,40 @@ Token成本：通常在3000-5000 tokens。
 
 第三层：资源（Resources）—— 引用时加载
 
-内容：scripts/目录里的脚本、references/目录里的参考文档、assets/目录里的模板。
+内容：`scripts/`目录里的脚本、`references/`目录里的参考文档、`assets/`目录里的模板。
 
-加载时机：只有当SKILL.md中的指令引用这些文件时才加载。
+加载时机：只有当`SKILL.md`中的指令引用这些文件时才加载。
 
 Token成本：几乎无限——脚本执行后只有输出进入上下文，代码本身不占Token。
 
 作用：提供确定性的执行能力和详细的参考资料。
 
-### 算一笔账
+#### 算一笔账
 
 说这个设计聪明，是有数据支撑的。
 
-传统方式：所有规则写在CLAUDE.md里，每次对话都加载。我之前的写作CLAUDE.md有3000多行，大约4万tokens。每次对话都烧4万tokens，不管需不需要。
+传统方式：所有规则写在`CLAUDE.md`里，每次对话都加载。我之前的写作`CLAUDE.md`有3000多行，大约4万tokens。每次对话都烧4万tokens，不管需不需要。
 
 Skills方式：
 
-+   平时只加载元数据：50个Skills × 100 tokens = 5000 tokens
-
-+   需要审校时，额外加载审校Skill：+3000 tokens
-
-+   需要配图时，额外加载配图Skill：+2000 tokens
-
-+   一次对话通常只用1-2个Skills：总共约10000 tokens
++ 平时只加载元数据：50个Skills × 100 tokens = 5000 tokens
++ 需要审校时，额外加载审校Skill：+3000 tokens
++ 需要配图时，额外加载配图Skill：+2000 tokens
++ 一次对话通常只用1-2个Skills：总共约10000 tokens
 
 节省了75%的Token消耗。
 
 而且，这还没算脚本的优势。
 
-### 脚本的魔法
+#### 脚本的魔法
 
 Skills可以包含可执行脚本。比如我的"图片配图与上传"Skill里有一个Python脚本，负责把图片上传到图床。
 
 当Claude执行这个脚本时：
 
-1.  Claude生成一条bash命令：python scripts/upload_image.py image.png
-
-1.  脚本在本地执行
-
-1.  只有执行结果（图床URL）返回给Claude
+1. Claude生成一条bash命令：`python scripts/upload_image.py image.png`
+1. 脚本在本地执行
+1. 只有执行结果（图床URL）返回给Claude
 
 脚本代码本身不进入上下文。
 
@@ -144,21 +132,19 @@ Skills可以包含可执行脚本。比如我的"图片配图与上传"Skill里�
 
 这是Skills比传统Prompt方式更强的地方：可以封装确定性的执行能力。
 
----
-
-## Skills vs MCP vs Subagent：终于搞清楚了
+### Skills vs MCP vs Subagent：终于搞清楚了
 
 这个问题被问过很多次。MCP、Skills、Subagent，看起来都是"扩展Claude能力"的东西，到底有什么区别？
 
 我研究了一圈，终于理顺了。
 
-### 一句话区分
+#### 一句话区分
 
 MCP让Claude能碰到外部系统。Skills告诉Claude碰到之后怎么用。Subagent是派一个人出去干活。
 
-### 详细解释
+#### 详细解释
 
-MCP（Model Context Protocol）
+##### MCP（Model Context Protocol）
 
 MCP是什么？一个连接协议。它让Claude能够访问外部系统：数据库、API、文件系统、各种SaaS服务。
 
@@ -168,7 +154,7 @@ MCP是什么？一个连接协议。它让Claude能够访问外部系统：数�
 
 MCP的核心价值是连接。它解决的问题是"Claude能访问什么数据"。
 
-Skills
+##### Skills
 
 Skills是什么？使用手册。它告诉Claude拿到数据之后怎么用。
 
@@ -178,7 +164,7 @@ Skills是什么？使用手册。它告诉Claude拿到数据之后怎么用。
 
 Skills的核心价值是程序化知识。它解决的问题是"Claude应该怎么做"。
 
-Subagent
+##### Subagent
 
 Subagent是什么？派出去干活的人。
 
@@ -188,59 +174,46 @@ Subagent是什么？派出去干活的人。
 
 Subagent的核心价值是并行执行和上下文隔离。它解决的问题是"怎么处理复杂的多步骤任务"。
 
-### 对比表
+#### 对比表
 
-### 什么时候用哪个？
+#### 什么时候用哪个？
 
 用MCP：当你需要连接外部系统。
 
-+   查询数据库
-
-+   调用第三方API
-
-+   读写Notion、Jira、GitHub等
++ 查询数据库
++ 调用第三方API
++ 读写Notion、Jira、GitHub等
 
 用Skills：当你有重复性的工作流程。
 
-+   代码审查流程
-
-+   文章审校流程
-
-+   报告生成流程
-
-+   任何"每次都要说一遍"的规则
++ 代码审查流程
++ 文章审校流程
++ 报告生成流程
++ 任何"每次都要说一遍"的规则
 
 用Subagent：当任务复杂、需要并行执行。
 
-+   审查整个代码仓库（耗时长）
++ 审查整个代码仓库（耗时长）
++ 同时处理多个独立任务
++ 需要防止上下文污染
 
-+   同时处理多个独立任务
-
-+   需要防止上下文污染
-
-### 它们可以组合使用
+#### 它们可以组合使用
 
 这三个不是竞争关系，是互补关系。
 
 一个复杂的工作流可能同时用到三者：
 
-1.  MCP连接Salesforce，拉取销售数据
-
-1.  Skills定义数据分析流程：怎么计算增长率、怎么生成报告
-
-1.  Subagent并行处理不同区域的数据分析
+1. MCP连接Salesforce，拉取销售数据
+1. Skills定义数据分析流程：怎么计算增长率、怎么生成报告
+1. Subagent并行处理不同区域的数据分析
 
 我自己的写作场景：
 
-+   用Skills定义审校流程
++ 用Skills定义审校流程
++ 用脚本（在Skills里）上传图片到图床
++ 未来可能用MCP连接我的素材库数据库
 
-+   用脚本（在Skills里）上传图片到图床
-
-+   未来可能用MCP连接我的素材库数据库
-
----
-
-## 为什么Simon Willison说Skills比MCP更重要？
+### 为什么Simon Willison说Skills比MCP更重要？
 
 Simon Willison是一个在AI圈很有影响力的技术博主。他写过很多关于LLM的深度分析文章。
 
@@ -252,7 +225,7 @@ Simon Willison是一个在AI圈很有影响力的技术博主。他写过很多�
 
 为什么？
 
-### 理由1：Token效率
+#### 理由1：Token效率
 
 这是最直接的理由。
 
@@ -266,17 +239,14 @@ Skills不一样。平时只加载元数据（100 tokens/Skill），需要时才�
 
 > "Skills通过让LLM自行探索工具，优雅地避免了这一问题。"
 
-### 理由2：简洁即优势
+#### 理由2：简洁即优势
 
 MCP是一个完整的协议规范。要实现一个MCP服务器，你需要：
 
-+   理解协议结构
-
-+   写服务端代码
-
-+   配置JSON
-
-+   处理通信
++ 理解协议结构
++ 写服务端代码
++ 配置JSON
++ 处理通信
 
 Skills呢？
 
@@ -284,17 +254,17 @@ Skills呢？
 
 会写文档就能写Skills。这个门槛差距太大了。
 
-### 理由3：跨平台兼容
+#### 理由3：跨平台兼容
 
 MCP服务器是特定于宿主的。你为Claude Code写的MCP服务器，不一定能直接用在其他地方。
 
 Skills不一样。它就是文件夹，里面是Markdown和脚本。
 
-> "Skills不依赖Anthropic专有技术。你可以把同一个Skill文件夹指向Codex CLI、Gemini CLI，两者虽然没有Skills系统的原生支持，但仍可正常运作。"
+> "Skills不依赖Anthropic专有技术。你可以把同一个Skill文件夹指向`Codex CLI`、`Gemini CLI`，两者虽然没有Skills系统的原生支持，但仍可正常运作。"
 
-事实上，OpenAI已经在Codex CLI里采用了相同的架构。Skills正在成为事实标准。
+事实上，OpenAI已经在`Codex CLI`里采用了相同的架构。Skills正在成为事实标准。
 
-### 理由4：生态预测
+#### 理由4：生态预测
 
 Simon Willison预测：
 
@@ -306,7 +276,7 @@ Simon Willison预测：
 
 当创作门槛足够低，社区贡献就会爆发式增长。
 
-### 我的观察
+#### 我的观察
 
 用了三个月Skills，我认同Simon Willison的判断。
 
@@ -322,31 +292,23 @@ Skills更像是LLM原生的思路：写清楚怎么做，让模型自己去做�
 
 用了三个月，我觉得Simon Willison的判断是对的。
 
----
+### 谁在用Skills？适合谁？
 
-## 谁在用Skills？适合谁？
-
-### 企业采用情况
+#### 企业采用情况
 
 2025年12月18日，Anthropic发布了Skills开放标准，同时公布了一批企业合作伙伴：
 
-+   Atlassian：Jira工作流自动化
-
-+   Canva：设计模板生成
-
-+   Cloudflare：安全配置审查
-
-+   Figma：设计系统规范
-
-+   Notion：文档模板和工作流
-
-+   Ramp：财务报告生成
-
-+   Sentry：错误分析流程
++ Atlassian：Jira工作流自动化
++ Canva：设计模板生成
++ Cloudflare：安全配置审查
++ Figma：设计系统规范
++ Notion：文档模板和工作流
++ Ramp：财务报告生成
++ Sentry：错误分析流程
 
 这些公司都在用Skills来封装他们的专业知识和工作流程。
 
-### 真实案例：Sionic AI
+#### 真实案例：Sionic AI
 
 Sionic AI每天运行1000+个ML实验。他们遇到一个问题：知识流失。
 
@@ -358,19 +320,16 @@ Sionic AI每天运行1000+个ML实验。他们遇到一个问题：知识流失�
 
 两个命令的知识管理系统：
 
-1.  /advise - 实验前咨询。搜索过往实验记录，找到相关的参数配置和失败案例。
-
-1.  /retrospective - 实验后沉淀。自动从对话历史中提取核心发现，生成结构化的Skill文件。
+1. `/advise` - 实验前咨询。搜索过往实验记录，找到相关的参数配置和失败案例。
+1. `/retrospective` - 实验后沉淀。自动从对话历史中提取核心发现，生成结构化的Skill文件。
 
 效果：
 
-+   重复实验率：40% → 5%
++ 重复实验率：40% → 5%
++ 参数调优时间：3天 → 1小时
++ 知识沉淀耗时：30分钟 → 30秒
 
-+   参数调优时间：3天 → 1小时
-
-+   知识沉淀耗时：30分钟 → 30秒
-
-### 三类适合用Skills的人
+#### 三类适合用Skills的人
 
 第一类：有固定工作流的人
 
@@ -378,11 +337,9 @@ Sionic AI每天运行1000+个ML实验。他们遇到一个问题：知识流失�
 
 比如：
 
-+   写代码要遵循特定的代码规范
-
-+   写文章要遵循特定的风格指南
-
-+   生成报告要遵循特定的格式
++ 写代码要遵循特定的代码规范
++ 写文章要遵循特定的风格指南
++ 生成报告要遵循特定的格式
 
 这些规则打包成Skill，一次创建，反复使用。
 
@@ -394,46 +351,42 @@ Skills可以分享。团队共用一套Skills，就意味着共用一套工作�
 
 第三类：Token烧得多的人
 
-如果你的CLAUDE.md已经很长了，每次对话都加载大量上下文，Skills可以帮你节省Token。
+如果你的`CLAUDE.md`已经很长了，每次对话都加载大量上下文，Skills可以帮你节省Token。
 
 按需加载，只加载需要的部分。
 
-### 不适合用Skills的情况
+#### 不适合用Skills的情况
 
-+   一次性任务（直接写Prompt就行）
-
-+   需要实时外部数据（用MCP）
-
-+   复杂的多步骤并行任务（用Subagent）
++ 一次性任务（直接写Prompt就行）
++ 需要实时外部数据（用MCP）
++ 复杂的多步骤并行任务（用Subagent）
 
 ---
 
-# Part 2：实战Skills
+## Part 2：实战Skills
 
-## 如何创建第一个Skill
+### 如何创建第一个Skill
 
 先说一个核心观点：你不需要自己写Skill。
 
-但把这些东西写成SKILL.md文件？这事让AI干就行。
+但把这些东西写成`SKILL.md`文件？这事让AI干就行。
 
 > **你要做的是：**
 
-1.  想清楚你要解决什么问题
+1. 想清楚你要解决什么问题
+1. 把你的工作流程说清楚
+1. 提供足够的context和参考资料
 
-1.  把你的工作流程说清楚
+#### Skill的基本结构
 
-1.  提供足够的context和参考资料
-
-### Skill的基本结构
-
-一个Skill就是一个文件夹，里面至少有一个SKILL.md文件：
+一个Skill就是一个文件夹，里面至少有一个`SKILL.md`文件：
 
 ```
 my-skill/
 └── SKILL.md
 ```
 
-SKILL.md长这样：
+`SKILL.md`长这样：
 
 ```
 ---
@@ -454,9 +407,9 @@ When user greets you, respond with a warm, personalized greeting.
 
 就这么简单。Claude Code会自动发现并加载这个Skill（2.1版本支持热重载）。
 
-### SKILL.md的关键字段
+#### SKILL.md的关键字段
 
-让我解释一下SKILL.md的结构。
+让我解释一下`SKILL.md`的结构。
 
 YAML Frontmatter（必需）
 
@@ -469,29 +422,24 @@ description: What this skill does and when to use it.
 ---
 ```
 
-name：Skill的唯一标识。
+`name`：Skill的唯一标识。
 
-+   最多64个字符
++ 最多64个字符
++ 只能用小写字母、数字、连字符
++ 不能以连字符开头或结尾
++ 不能有连续的连字符
 
-+   只能用小写字母、数字、连字符
+好的例子：`ai-proofreading`、`code-review`、`report-generator`
 
-+   不能以连字符开头或结尾
+坏的例子：`AI-Proofreading`（大写）、`-my-skill`（连字符开头）
 
-+   不能有连续的连字符
+`description`：告诉Claude什么时候用这个Skill。
 
-好的例子：ai-proofreading、code-review、report-generator
++ 最多1024个字符
++ 要包含"做什么"和"什么时候用"
++ 触发关键词很重要
 
-坏的例子：AI-Proofreading（大写）、-my-skill（连字符开头）
-
-description：告诉Claude什么时候用这个Skill。
-
-+   最多1024个字符
-
-+   要包含"做什么"和"什么时候用"
-
-+   触发关键词很重要
-
-好的description：
+好的`description`：
 
 ```
 description: |
@@ -499,7 +447,7 @@ description: |
   使用场景：审校文章、降低AI味、初稿完成后、用户说&quot;太AI了&quot;。
 ```
 
-坏的description：
+坏的`description`：
 
 ```
 description: 审校文章
@@ -513,17 +461,14 @@ Frontmatter之后是Markdown内容，也就是Skill的详细指令。
 
 这部分没有格式限制，但建议包含：
 
-+   核心目标
++ 核心目标
++ 执行步骤
++ 示例输入/输出
++ 注意事项
 
-+   执行步骤
+官方建议：主体部分控制在500行以内。如果需要更多内容，放到`references/`目录下。
 
-+   示例输入/输出
-
-+   注意事项
-
-官方建议：主体部分控制在500行以内。如果需要更多内容，放到references/目录下。
-
-### 进阶：添加脚本和参考文档
+#### 进阶：添加脚本和参考文档
 
 一个更完整的Skill结构：
 
@@ -538,21 +483,23 @@ my-skill/
     └── template.md          # 模板资源
 ```
 
-scripts/ ：可执行脚本。
+`scripts/` ：可执行脚本。
 
-当SKILL.md中引用脚本时，Claude会执行它。脚本代码不进入上下文，只有执行结果进入。
+当`SKILL.md`中引用脚本时，Claude会执行它。脚本代码不进入上下文，只有执行结果进入。
 
 这意味着你可以写复杂的脚本来处理确定性任务，而不占用Token。
 
-references/ ：参考文档。
+`references/` ：参考文档。
 
 当任务需要更多信息时，Claude会读取这些文档。采用渐进式披露，平时不加载。
 
-assets/ ：模板和资源。
+
+
+`assets/` ：模板和资源。
 
 比如报告模板、配置文件、样例数据。
 
-### 实际操作
+## 实际操作
 
 回到开头说的：你不需要记住这些格式细节。
 
@@ -574,7 +521,7 @@ assets/ ：模板和资源。
 
 答案是：不行。原因有三：
 
-原因1：按需加载，省Token
+### 原因1：按需加载，省Token
 
 一篇文章的创作流程包括：选题 → 搜集素材 → 写初稿 → 审校 → 配图 → 发布。
 
@@ -590,15 +537,15 @@ assets/ ：模板和资源。
 
 拆成多个小Skill，只加载当前需要的那个。
 
-原因2：触发更精准
+### 原因2：触发更精准
 
-一个Skill的description决定了它什么时候被触发。
+一个Skill的`description`决定了它什么时候被触发。
 
-大而全的Skill，description很难写得准确。"用于写作"——什么时候是写作？选题算吗？改错别字算吗？
+大而全的Skill，`description`很难写得准确。"用于写作"——什么时候是写作？选题算吗？改错别字算吗？
 
-小而专的Skill，description可以写得很精准：
+小而专的Skill，`description`可以写得很精准：
 
-+   选题生成：用户提供写作要求，或者提供brief信息后生成3-4个选题方向，用户说"给几个选题"时触发
++   选题生成：用户提供写作要求，或者提供`brief`信息后生成3-4个选题方向，用户说"给几个选题"时触发
 
 +   AI味审校：审校文章、降低AI味、初稿完成后、用户说"太AI了"时触发
 
@@ -606,7 +553,7 @@ assets/ ：模板和资源。
 
 Claude更容易判断什么时候该用哪个Skill。
 
-原因3：可组合
+### 原因3：可组合
 
 小Skill可以组合使用。
 
@@ -681,11 +628,11 @@ description: |
 
 1.  规则具体：直接列出6大类AI腔的具体表现和改写方法
 
-1.  有示例：每种AI腔都有"错误示例"和"正确示例"
+2.  有示例：每种AI腔都有"错误示例"和"正确示例"
 
-1.  有检查清单：可以逐项核对
+3.  有检查清单：可以逐项核对
 
-1.  集成素材库：可以调用"个人素材库搜索"Skill，加入真实案例
+4.  集成素材库：可以调用"个人素材库搜索"Skill，加入真实案例
 
 ### Skill之间的协作
 
@@ -721,13 +668,13 @@ AI味审校 Skill → 三遍审校
 
 ### 实践1：Description决定一切
 
-description是Skill最重要的字段。它决定了：
+`description`是Skill最重要的字段。它决定了：
 
 +   Claude什么时候会想到这个Skill
 
 +   Claude能否准确匹配用户意图
 
-写好description的公式：
+写好`description`的公式：
 
 ```
 做什么（核心功能）+ 什么时候用（触发场景）+ 触发关键词
@@ -762,11 +709,11 @@ description: Process PDF files
 
 原因：
 
-1.  description难写。功能越多，触发越不准确
+1.  `description`难写。功能越多，触发越不准确
 
-1.  Token浪费。用户只需要其中一个功能，却加载全部内容
+2.  Token浪费。用户只需要其中一个功能，却加载全部内容
 
-1.  难维护。改一个功能可能影响其他功能
+3.  难维护。改一个功能可能影响其他功能
 
 我的做法：
 
@@ -784,11 +731,11 @@ description: Process PDF files
 
 +   文章创作全流程（太大了）
 
-### 实践3：渐进式披露，核心内容放SKILL.md，详细内容放references/
+### 实践3：渐进式披露，核心内容放`SKILL.md`，详细内容放`references/`
 
-SKILL.md应该简洁，包含核心流程和最常用的指令。
+`SKILL.md`应该简洁，包含核心流程和最常用的指令。
 
-详细的参考资料、边界情况、深入解释，放到references/目录下。
+详细的参考资料、边界情况、深入解释，放到`references/`目录下。
 
 结构示例：
 
@@ -809,9 +756,9 @@ SKILL.md应该简洁，包含核心流程和最常用的指令。
 - 边界情况见：[EDGE_CASES.md](references/EDGE_CASES.md)
 ```
 
-这样，基础任务只加载SKILL.md（3000 tokens）。
+这样，基础任务只加载`SKILL.md`（3000 tokens）。
 
-只有遇到复杂情况，才加载references/（额外5000 tokens）。
+只有遇到复杂情况，才加载`references/`（额外5000 tokens）。
 
 ### 实践4：脚本优于生成代码
 
@@ -821,15 +768,15 @@ SKILL.md应该简洁，包含核心流程和最常用的指令。
 
 1.  确定性：脚本是测试过的，每次执行结果一致。让Claude现场生成代码，可能有bug。
 
-1.  Token效率：脚本代码不进入上下文，只有执行结果进入。
+2.  Token效率：脚本代码不进入上下文，只有执行结果进入。
 
-1.  可复用：脚本写一次，到处可用。
+3.  可复用：脚本写一次，到处可用。
 
 我的做法：
 
 "图片配图与上传"Skill里，上传图片到图床的逻辑写成了Python脚本。
 
-Claude只需要执行：python scripts/upload_image.py image.png
+Claude只需要执行：`python scripts/upload_image.py image.png`
 
 不需要每次都生成上传代码。
 
@@ -839,15 +786,15 @@ Claude只需要执行：python scripts/upload_image.py image.png
 
 从最小可行版本开始：
 
-1.  写一个简单的SKILL.md
+1.  写一个简单的`SKILL.md`
 
-1.  用几次，发现问题
+2.  用几次，发现问题
 
-1.  添加遗漏的规则
+3.  添加遗漏的规则
 
-1.  添加常见错误的处理
+4.  添加常见错误的处理
 
-1.  逐步完善
+5.  逐步完善
 
 我的"AI味审校"Skill，最初只有20行。用了一个月，根据实际遇到的问题，逐步扩展到300行。
 
@@ -865,13 +812,13 @@ Skills可以在多个平台使用：Claude Code、Claude API、Claude.ai。
 
 个人级Skills：
 
-放在 ~/.claude/skills/ 目录下。所有项目都可以用。
+放在 `~/.claude/skills/` 目录下。所有项目都可以用。
 
 适合：通用能力，比如代码审查、文档生成。
 
 项目级Skills：
 
-放在项目目录的 .claude/skills/ 下。只有当前项目可以用。
+放在项目目录的 `.claude/skills/` 下。只有当前项目可以用。
 
 适合：项目特定的规则，比如这个项目的代码规范、这个团队的工作流。
 
@@ -927,9 +874,9 @@ Claude.ai也支持Skills，但功能较受限。
 
 1.  进入Settings > Features
 
-1.  上传Skill的zip文件
+2.  上传Skill的zip文件
 
-1.  需要Pro/Max/Team/Enterprise计划
+3.  需要Pro/Max/Team/Enterprise计划
 
 限制：
 
@@ -943,11 +890,11 @@ Claude.ai也支持Skills，但功能较受限。
 
 1.  路径问题：不要在Skill里写绝对路径。用相对路径，或者变量。
 
-1.  脚本依赖：确保目标平台有脚本需要的依赖（Python包等）。
+2.  脚本依赖：确保目标平台有脚本需要的依赖（Python包等）。
 
-1.  网络限制：API平台的代码执行容器默认禁止网络访问。如果脚本需要调用外部API，可能不work。
+3.  网络限制：API平台的代码执行容器默认禁止网络访问。如果脚本需要调用外部API，可能不work。
 
-1.  文件结构统一：保持所有平台使用相同的Skill文件结构，方便同步和维护。
+4.  文件结构统一：保持所有平台使用相同的Skill文件结构，方便同步和维护。
 
 ---
 
@@ -1109,7 +1056,7 @@ Claude可能会执行这些隐藏指令。
 
 +   ✅ 经过审计的企业内部Skills
 
-+   ⚠️ 知名社区项目（obra/superpowers等），审查后使用
++   ⚠️ 知名社区项目（`obra/superpowers`等），审查后使用
 
 +   ❌ 未知来源的第三方Skills
 
@@ -1117,13 +1064,13 @@ Claude可能会执行这些隐藏指令。
 
 在使用任何第三方Skill之前：
 
-1.  检查所有脚本代码（scripts/目录）
+1.  检查所有脚本代码（`scripts/`目录）
 
-1.  搜索可疑操作：requests、os.system、subprocess、eval
+2.  搜索可疑操作：`requests`、`os.system`、`subprocess`、`eval`
 
-1.  检查外部URL
+3.  检查外部URL
 
-1.  查看是否有隐藏的HTML注释
+4.  查看是否有隐藏的HTML注释
 
 环境隔离：
 
@@ -1139,9 +1086,9 @@ Claude可能会执行这些隐藏指令。
 
 ### 官方资源（首选）
 
-anthropics/skills
+`anthropics/skills`
 
-+   GitHub: https://github.com/anthropics/skills
++   GitHub: `https://github.com/anthropics/skills`
 
 +   45k+ stars
 
@@ -1151,7 +1098,7 @@ anthropics/skills
 
 +   推荐理由：官方维护，安全可靠，是学习Skills的最佳起点
 
-agentskills.io
+`agentskills.io`
 
 +   Agent Skills开放标准规范
 
@@ -1161,15 +1108,15 @@ agentskills.io
 
 官方文档
 
-+   https://code.claude.com/docs/en/skills
++   `https://code.claude.com/docs/en/skills`
 
-+   https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
++   `https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview`
 
 +   推荐理由：权威的使用指南
 
 ### 社区资源（审查后使用）
 
-obra/superpowers ⭐ 推荐
+`obra/superpowers` ⭐ 推荐
 
 +   GitHub: https://github.com/obra/superpowers
 
@@ -1181,9 +1128,9 @@ obra/superpowers ⭐ 推荐
 
 +   推荐理由：社区口碑最好的Skills库，设计理念先进
 
-awesome-claude-skills
+`awesome-claude-skills`
 
-+   多个版本：travisvn/awesome-claude-skills（5k+ stars）等
++   多个版本：`travisvn/awesome-claude-skills`（5k+ stars）等
 
 +   社区Skills资源汇总
 
@@ -1193,11 +1140,11 @@ awesome-claude-skills
 
 1.  优先用官方：Anthropic的Skills经过充分测试
 
-1.  社区精选：obra/superpowers质量高，可以用
 
-1.  其他第三方：审查代码后再用
 
-1.  最好自己写：针对自己的工作流定制
+1. 社区精选：`obra/superpowers`质量高，可以用
+1. 其他第三方：审查代码后再用
+1. 最好自己写：针对自己的工作流定制
 
 ---
 
@@ -1205,50 +1152,41 @@ awesome-claude-skills
 
 ### Claude Code 2.1的Skills增强（2026年1月）
 
-1月7日发布的Claude Code 2.1对Skills做了大幅增强：
+1月7日发布的Claude Code 2.1对`Skills`做了大幅增强：
 
-Hot Reload：修改Skill文件后自动生效，不需要重启。这让迭代开发变得很顺畅。
+Hot Reload：修改`Skill`文件后自动生效，不需要重启。这让迭代开发变得很顺畅。
 
-自动发现：支持从嵌套的 .claude/skills 目录自动发现Skills。
+自动发现：支持从嵌套的 `.claude/skills` 目录自动发现`Skills`。
 
-Hooks支持：可以为Skills配置PreToolUse、PostToolUse、Stop等钩子。
+Hooks支持：可以为`Skills`配置`PreToolUse`、`PostToolUse`、`Stop`等钩子。
 
-进度指示器：执行Skills时会显示实时进度。
+进度指示器：执行`Skills`时会显示实时进度。
 
 ### 开放标准的影响
 
-2025年12月，Anthropic把Skills做成了开放标准（agentskills.io）。
+2025年12月，Anthropic把`Skills`做成了开放标准（`agentskills.io`）。
 
 已采用的公司：
 
-+   Microsoft
-
-+   OpenAI（Codex CLI）
-
-+   Atlassian
-
-+   Figma
-
-+   Cursor
-
-+   GitHub
++ Microsoft
++ OpenAI（`Codex CLI`）
++ Atlassian
++ Figma
++ Cursor
++ GitHub
 
 意义：
 
-+   Skills不再是Anthropic独家功能
-
-+   创建的Skills可以跨平台使用
-
-+   生态系统会加速扩展
++ `Skills`不再是Anthropic独家功能
++ 创建的`Skills`可以跨平台使用
++ 生态系统会加速扩展
 
 ### 垂直领域扩展
 
-最近新增了医疗和生命科学领域的Skills：
+最近新增了医疗和生命科学领域的`Skills`：
 
-+   FHIR开发（医疗数据交换标准）
++ `FHIR`开发（医疗数据交换标准）
++ 临床试验协议生成
++ 生物信息学工具集成（`scVI-tools`、`Nextflow`）
 
-+   临床试验协议生成
-
-+   生物信息学工具集成（scVI-tools、Nextflow）
-
-这表明Skills正在从通用能力向垂直领域深入。
+这表明`Skills`正在从通用能力向垂直领域深入。

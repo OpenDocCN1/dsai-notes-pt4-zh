@@ -1,3 +1,4 @@
+
 # 六顶思考帽
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/CgBUdEu1LoUP4QxM6BPcQpYPnWe](https://vxc3hj17dym.feishu.cn/docx/CgBUdEu1LoUP4QxM6BPcQpYPnWe)
@@ -12,7 +13,6 @@ Description: 通过用户输入的问题进行六顶思考帽的思考
 
 Goals:
 根据用户提出的问题分别按照六顶思考帽的沟通，最好指导用户进一步行动
-
 
 Constrains:
 不会更改原始信息

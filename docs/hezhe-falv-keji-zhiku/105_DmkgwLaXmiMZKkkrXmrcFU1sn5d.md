@@ -1,50 +1,50 @@
+
 # 第五周｜August
 
 > 来源：[https://docs.feishu.cn/docx/SLPjd7b4Yoq8PHxSpgDcZTpRn8g](https://docs.feishu.cn/docx/SLPjd7b4Yoq8PHxSpgDcZTpRn8g)
+> <https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg>
 
-<https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg>
-
-# **一、法律科技资讯**
+## 一、法律科技资讯
 
 > 由于法律科技产品 + AI 能力已经成为主流，日报将减少同质化产品的动态推送，重点关注头部公司和创新产品。
 
 > 本日报仅推送新闻简讯，如需阅读更详细的内[会员体系](https://e9w56z965d.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)，可订阅高级版知识库。了解更多 👉
 
-## **法律 AI 前沿资讯**
+### 法律 AI 前沿资讯
 
-### Harvey 发布 AI 基准评估报告，用于评估大模型的性能
+#### Harvey 发布 AI 基准评估报告，用于评估大模型的性能
 
 8 月 29 日，法律 AI 公司 Harvey 发布一个 AI 基准评估报告，用于评估大模型的性能。报告显示，Harvey 的专有模型优于通用大模型，但对于复杂任务仍然有很大的优化空间。同时，这个基准评估方法是否科学，还有待讨论。
 
-### CLM 头部厂商 Icertis 集成 Harvey 法律模型，增强合同起草审查
+#### CLM 头部厂商 Icertis 集成 Harvey 法律模型，增强合同起草审查
 
 8 月 27 日，Harvey 宣布与 CLM（合同生命周期管理）头部公司 Icertis 合作，Harvey 的法律模型将集成到 Icertis 的合同管理系统中，辅助用户进行合同起草审查工作。
 
-### ALSP Morae 推出一系列 AI 工具，并与 CLM 服务商 ContractPodAi 建立合作
+#### ALSP Morae 推出一系列 AI 工具，并与 CLM 服务商 ContractPodAi 建立合作
 
 近日，替代性法律服务商（ALSP）Morae Global Corporation 推出一系列 AI 功能。同时，Morae 还与 CLM 服务商 ContractPodAi 合作，使用 ContractPodAi 的法律 AI 助手 Leah 加强其 AI 工具。
 
-### 中科院深圳先进院得理法律 AI 联合实验室发布首个 AI 模拟法庭，一周打完 1000 场官司
+#### 中科院深圳先进院得理法律 AI 联合实验室发布首个 AI 模拟法庭，一周打完 1000 场官司
 
 最近，中科院深圳先进研究院和深圳得理科技的研究团队联合开发了一个名为 Agent Court 的模拟智能法庭，这是一个基于大语言模型的法庭模拟系统，旨在通过 AI 驱动的虚拟法庭来革新法律教育、案例分析和法律研究。
 
-### 人身伤害法律 AI 工具 Supio 完成 2500 万美元 A 轮融资
+#### 人身伤害法律 AI 工具 Supio 完成 2500 万美元 A 轮融资
 
 8 月 27 日，法律 AI 初创公司 Supio 宣布完成 2500 万美元 A 轮融资，Sapphire Ventures 领投，现有投资者 Bonfire Ventures 和 Foothill Ventures 跟投。
 
 Supio 是一款 AI 工具，专为律师事务所分析复杂记录、总结证词、深入研究证人证词或专家报告，为审判做准备。目前，Supio 提供一个专注于人身伤害和大规模侵权的法律 AI 工具，可以为律师提供关键洞察，并赢得更多案件。
 
-## **传统法律科技资讯**
+### 传统法律科技资讯
 
-### 法律运营先驱 Mary O'Carroll：律师事务所是行业颠覆的核心
+#### 法律运营先驱 Mary O'Carroll：律师事务所是行业颠覆的核心
 
 8 月初，法律运营先驱 Mary O'Carroll 离开 CLM（合同生命周期管理）公司 Ironclad，加入 Goodwin Proctor 律师事务所，担任首席运营官。Mary O'Carroll 于 2008 年成为谷歌有史以来第一位法律运营专业人士，在大衰退期间因有效降低公司在法律方面的支出而名声大噪。2019 年到 2021 年，她还担任公司法律运营联盟（CLOC）总裁，并于 2021 年离开谷歌和 CLOC 加入 Ironclad，担任首席社区官，致力于推动生成式 AI 等技术。
 
 Mary O'Carroll 认为，法律生态系统转型的核心正在律师事务所内部发生。
 
-## **法律科技活动推荐**
+### 法律科技活动推荐
 
-### 来自法律修音机的邀请：征集法律 AI 先锋案例，让好产品和好内容被看见
+#### 来自法律修音机的邀请：征集法律 AI 先锋案例，让好产品和好内容被看见
 
 法律修音机（Legal Studio）是一个具有全球视野的法律科技自媒体，也是个高质量的交流社区，致力于传播全球法律科技的前沿资讯和深度内容，让好产品和好内容被看见。
 
@@ -54,7 +54,7 @@ Mary O'Carroll 认为，法律生态系统转型的核心正在律师事务所�
 
 > 拓展阅读：https://mp.weixin.qq.com/s/aOcvkw7OJ98PZAltTvMTjQ
 
-### 厦门律协法律 AI 共创大赛
+#### 厦门律协法律 AI 共创大赛
 
 🧐 活动形式：行业分享+AI 比赛
 
@@ -70,31 +70,23 @@ Mary O'Carroll 认为，法律生态系统转型的核心正在律师事务所�
 
 👉 了解更多：活动报名｜2024第二届厦门青年法律人创新文化节——法律AI共创大赛
 
-# **二、大模型资讯**
+## 二、大模型资讯
 
-## Around the World
+### Around the World
 
-### OpenAI「草莓」模型今年秋天发布，大幅强化推理能力，生成数据供给 GPT-5
+#### OpenAI「草莓」模型今年秋天发布，大幅强化推理能力，生成数据供给 GPT-5
 
 据 Theinformation 消息，OpenAI 已经向美国国家安全官员展示了草莓这个秘密项目，保证会在安全、合理的范围内来开发和使用。同时，OpenAI 会使用草莓生成的合成数据，来开发最新大模型猎户座。
 
-> 拓展阅读：
-
-> https://mp.weixin.qq.com/s/jaw2yQsfiFb5W9T3pYtPZg
-
+> 拓展阅读：https://mp.weixin.qq.com/s/jaw2yQsfiFb5W9T3pYtPZg
 > https://mp.weixin.qq.com/s/F4ETQNklWPQCXPUDBofwRw
-
 > https://mp.weixin.qq.com/s/r7OFsEL_CiRaajBBaPbp8g
-
 > https://mp.weixin.qq.com/s/0nNSIZgcsdRHmt3z4vFw_A
-
 > https://mp.weixin.qq.com/s/aaEnTDz7nlxKI3_o🐧5laQ
-
 > https://mp.weixin.qq.com/s/pru1HOXomtc8i-joGqW5uQ
-
 > https://mp.weixin.qq.com/s/6nHYS5L1-jOrGrevYYuw-g
 
-### Anthropic 公开了 Claude 的系统提示词
+#### Anthropic 公开了 Claude 的系统提示词
 
 为了防止模型行为不当，各生成式 AI 厂商都会使用系统提示词（system prompts）来设定模型的基本行为准则，同时调整回复的语气和情绪。出于竞争和安全防护的考虑，这些提示词通常对外保密。Anthropic 公开了 Claude 的系统提示词，并承诺记录任何变更。
 
@@ -146,11 +138,11 @@ Claude 在所有语言中都遵循这些信息，并始终以用户使用或要�
 
 > 拓展阅读：https://mp.weixin.qq.com/s/3H2da8Ur_9q3pv9nagjGig
 
-## **东八区**
+### 东八区
 
-### 夸克 PC 端升级 AI 搜索、AI 写作等功能
+#### 夸克 PC 端升级 AI 搜索、AI 写作等功能
 
-8 月 27 日消息，阿里智能信息事业群旗下产品夸克 PC 端产品上新，升级 AI 搜索、AI 写作、AI PPT、AI 文件总结等一系列功能，可一站式完成信息检索、创作和总结。用户在 Windows 电脑按下 Alt+Space 或苹果电脑的 Option+Space，可以随时随地使用 AI 回答、AI 写作、AI PPT、AI 文件总结等功能。
+8 月 27 日消息，阿里智能信息事业群旗下产品夸克 PC 端产品上新，升级 AI 搜索、AI 写作、AI PPT、AI 文件总结等一系列功能，可一站式完成信息检索、创作和总结。用户在 Windows 电脑按下 `Alt+Space` 或苹果电脑的 `Option+Space`，可以随时随地使用 AI 回答、AI 写作、AI PPT、AI 文件总结等功能。
 
 一个月前，夸克在 App 端推出 AI 搜索，此次一并在 PC 端发布，并升级了模型能力，还提升了交互速度。此外，夸克 AI 回答的首字出现速度和吐字速度领先于行业，可瞬时给出精准答案。三栏式的界面设计能，更清晰地展现图文、视频等生成式回答和网页，便于核心信息浏览。
 
@@ -158,23 +150,23 @@ Claude 在所有语言中都遵循这些信息，并始终以用户使用或要�
 
 > 来源：36氪
 
-# **三、监管与观点**
+## 三、监管与观点
 
-## **AI 监管****/政策****动态**
+### AI 监管/政策动态
 
-### 公共数据、企业数据开发利用文件将于年内出台
+#### 公共数据、企业数据开发利用文件将于年内出台
 
 > 拓展阅读：https://mp.weixin.qq.com/s/_scv4qyW7mPvxF_TyxP1fg
 
-### 2024 全国中小学科技少年 AI 领航计划启动
+#### 2024 全国中小学科技少年 AI 领航计划启动
 
 8 月 24 日，2024 年全国中小学科技少年 AI 领航计划启动会暨“大师面对面”讲座在京举办。据了解，领航计划由中国人工智能学会发起，中国人工智能学会中小学工作委员会与学而思网校承办。中国人工智能学会中小学工作委员会秘书长袁中果表示，过去一年，领航计划累计落地了 4 场线下大师课，开展了 3 场“科技少年行”实践活动，共有超 500 名学生深度参与线下活动，线上参与公益人工智能科普课程的累计学习人数突破 2 万人。
 
 > 来源：36氪
 
-## **AI 观点/资讯**
+### AI 观点/资讯
 
-### 金沙江创投朱啸虎：AI“六小虎”，最好的结果是卖给大厂
+#### 金沙江创投朱啸虎：AI“六小虎”，最好的结果是卖给大厂
 
 朱啸虎表示，并不鼓励烧钱策略，他认为成功的创业公司应该关注商业化能力和实现快速变现。
 
@@ -182,7 +174,7 @@ Claude 在所有语言中都遵循这些信息，并始终以用户使用或要�
 
 > 来源：界面新闻
 
-### A16Z：AI 如何将资本转化为劳动力
+#### A16Z：AI 如何将资本转化为劳动力
 
 A16Z 提到资本投入（如咖啡、工程师和 GPU）将产生代码，代码扮演劳动力的角色，这不仅会扩大软件市场，还会创造新市场，其中 “按席位” 定价模型将不再适用，因为系统能够自主采取行动或提高人类的生产力。
 
@@ -194,7 +186,7 @@ AI 不会结束白领工作，反而可能创造新的“AI 工作”。即，AI
 
 > 拓展阅读：https://a16z.com/ai-turns-capital-to-labor/
 
-# **四、优质文章分享**
+## 四、优质文章分享
 
 【法律 AI 交流群】每天都会分享法律 AI、法律科技相关的前沿信息，以下为群友分享的优质文章：
 
@@ -214,17 +206,17 @@ AI 不会结束白领工作，反而可能创造新的“AI 工作”。即，AI
 
 > 注：与本周重要资讯相关的文章已整合到以上特定资讯下方，不在此处再次列出。
 
-# **五、更多内容**
+## 五、更多内容
 
-## 飞书×法律修音机：Legal Studio 法律科技智库，认识一下
+### 飞书×法律修音机：Legal Studio 法律科技智库，认识一下
 
 近日，法律修音机正式推出 Legal Studio 法律科技智库，并上线「飞书官方社区」。
 
-> 拓展阅读：
-
-> 飞书×法律修音机：Legal Studio 法律科技智库，认识一下
+> 拓展阅读：飞书×法律修音机：Legal Studio 法律科技智库，认识一下
 
 > [Legal Studio 法律科技智库上线](https://mp.weixin.qq.com/s/dK2H3a7n2KxTa_w0Exbn6Q)「飞书官方社区」，免费订阅抽抖音文创🥳
+
+
 
 > [法律科技公司项目库（持续更新）](https://legalstudio.feishu.cn/wiki/IsMrwljO5iLOn5kF2xUcBosonog)
 

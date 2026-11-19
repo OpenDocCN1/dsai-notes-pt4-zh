@@ -1,22 +1,21 @@
+
 # 奇绩大模型日报（8月 28日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/P3f1dZnSkoPnPmx6raUcJGAcnZg](https://miracleplus.feishu.cn/docx/P3f1dZnSkoPnPmx6raUcJGAcnZg)
 
-# 📡潜空间活动报名
+## 📡潜空间活动报名
 
 > **潜空间系列活动重磅回归！**
-
-> 本期活动将在**9月6日** **14:00**开始，我们邀请到的嘉宾是**闫俊杰。**他**是MiniMax 创始人兼 CEO，是中国第一梯**队的大模型创业者，目前 MiniMax 估值超 25 亿美元。他将和大家探讨Intelligence with everyone ：对 AGI 0-1 的探索与实践。
-
+>
+> 本期活动将在**9月6日** **14:00**开始，我们邀请到的嘉宾是**闫俊杰.**他**是MiniMax 创始人兼 CEO，是中国第一梯**队的大模型创业者，目前 MiniMax 估值超 25 亿美元。他将和大家探讨Intelligence with everyone ：对 AGI 0-1 的探索与实践。
+>
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
-
+>
 > 报名通道已开启，欢迎扫描下方二维码报名。
 
 ![](img/0885702a8065a6c02271766e002b04c8.png)
 
-#
-
-# 资讯
+## 资讯
 
 ### 商汤营收大涨21%，六成来自生成式AI
 
@@ -34,11 +33,11 @@ https://mp.weixin.qq.com/s/b9kcWxyTiwXmh6pD1WfsrA
 
 ACM SIGKDD（国际数据挖掘与知识发现大会，KDD）是数据挖掘领域历史最悠久、规模最大的国际顶级学术会议，自1989年起举办，并引领了大数据、数据科学等多个前沿概念的发展。2024年，第30届KDD大会于8月25日至29日在西班牙巴塞罗那召开，颁发了多个重要奖项，包括最佳论文奖、时间检验奖、杰出博士论文奖等。其中，多位华人研究者获得了奖项。
 
-杰出博士论文奖授予了孟瑜的《Efficient and Effective Learning of Text Representations》，该论文探讨了如何通过球面空间和自监督技术提高文本表示学习的效率，并提出利用LLM生成训练数据以改进自然语言理解。另有两篇论文获得了杰出博士论文奖亚军，分别是加利福尼亚大学Ziniu Hu的《Make Knowledge Computable: Towards Differentiable Neural-Symbolic AI》和佐治亚理工学院Alexander Rodriguez的《Artificial Intelligence for Data-centric Surveillance and Forecasting of Epidemics》。
+杰出博士论文奖授予了孟瑜的《Efficient and Effective Learning of Text Representations》，该论文探讨了如何通过球面空间和自监督技术提高文本表示学习的效率，并提出利用`LLM`生成训练数据以改进自然语言理解。另有两篇论文获得了杰出博士论文奖亚军，分别是加利福尼亚大学Ziniu Hu的《Make Knowledge Computable: Towards Differentiable Neural-Symbolic AI》和佐治亚理工学院Alexander Rodriguez的《Artificial Intelligence for Data-centric Surveillance and Forecasting of Epidemics》。
 
-最佳论文奖（研究方向）授予了《CAT: Interpretable Concept-based Taylor Additive Models》，该研究提出了一种基于概念的泰勒相加模型CAT，简化了深度神经网络的可解释性。最佳学生论文（研究方向）由中国科学技术大学和华为合作的《Dataset Regeneration for Sequential Recommendation》获得，该研究提出了数据中心化AI的新范式，有效提升了序列推荐系统的性能。
+最佳论文奖（研究方向）授予了《CAT: Interpretable Concept-based Taylor Additive Models》，该研究提出了一种基于概念的泰勒相加模型`CAT`，简化了深度神经网络的可解释性。最佳学生论文（研究方向）由中国科学技术大学和华为合作的《Dataset Regeneration for Sequential Recommendation》获得，该研究提出了数据中心化AI的新范式，有效提升了序列推荐系统的性能。
 
-应用数据科学方向的最佳论文奖颁给了领英的《LiGNN: Graph Neural Networks at LinkedIn》，该研究介绍了大规模图神经网络的开发与部署经验。时间检验奖则授予了《DeepWalk: online learning of social representations》和《U-Air: when urban air quality inference meets big data》，分别在网络表示学习和城市空气质量推断领域做出了重要贡献。
+应用数据科学方向的最佳论文奖颁给了领英的《`LiGNN`: Graph Neural Networks at LinkedIn》，该研究介绍了大规模图神经网络的开发与部署经验。时间检验奖则授予了《`DeepWalk`: online learning of social representations》和《`U-Air`: when urban air quality inference meets big data》，分别在网络表示学习和城市空气质量推断领域做出了重要贡献。
 
 官网：https://kdd2024.kdd.org/awards/
 
@@ -48,7 +47,7 @@ ACM SIGKDD（国际数据挖掘与知识发现大会，KDD）是数据挖掘领�
 
 https://mp.weixin.qq.com/s/6H7c4Of_MkifUWetGgdipg
 
-Cerebras公司推出了全球最快的AI推理架构Cerebras Inference，以每秒1800 token的速度运行Llama3.1 8B模型，推理速度超越了英伟达GPU的20倍，并且价格极具竞争力。Cerebras Inference基于公司自研的第三代Wafer Scale Engine（WSE-3）芯片，解决了传统GPU推理中的内存带宽瓶颈问题。WSE-3芯片集成了44GB的SRAM，具备21 PB/s的内存带宽，远超英伟达H100的性能。这使得Cerebras Inference在保持模型精度的同时，大幅提升了推理速度，且成本仅为英伟达H100的五分之一。此外，Cerebras提供的API定价极具性价比，每百万token仅需10美分，并向开发者每日提供100万个免费token，进一步降低了推理成本。尽管推理速度极快，但Cerebras Inference的上下文长度限制为8K，相较其他平台的128K仍有差距。Cerebras的推理架构不仅提升了AI模型的智能，还为复杂的AI工作流程提供了支持，未来将测试支持更大参数的模型。
+Cerebras公司推出了全球最快的AI推理架构`Cerebras Inference`，以每秒1800 token的速度运行`Llama3.1 8B`模型，推理速度超越了英伟达`GPU`的20倍，并且价格极具竞争力。`Cerebras Inference`基于公司自研的第三代`Wafer Scale Engine`（`WSE-3`）芯片，解决了传统`GPU`推理中的内存带宽瓶颈问题。`WSE-3`芯片集成了44GB的`SRAM`，具备21 PB/s的内存带宽，远超英伟达`H100`的性能。这使得`Cerebras Inference`在保持模型精度的同时，大幅提升了推理速度，且成本仅为英伟达`H100`的五分之一。此外，`Cerebras`提供的`API`定价极具性价比，每百万token仅需10美分，并向开发者每日提供100万个免费token，进一步降低了推理成本。尽管推理速度极快，但`Cerebras Inference`的上下文长度限制为8K，相较其他平台的128K仍有差距。`Cerebras`的推理架构不仅提升了AI模型的智能，还为复杂的AI工作流程提供了支持，未来将测试支持更大参数的模型。
 
 https://cerebras.ai/blog/introducing-cerebras-inference-ai-at-instant-speed
 
@@ -58,7 +57,7 @@ https://cerebras.ai/blog/introducing-cerebras-inference-ai-at-instant-speed
 
 https://mp.weixin.qq.com/s/DkwOqBsCer2W9wFLa1M82Q
 
-开源技术在人工智能领域的广泛应用使其成为热点话题，但围绕开源标准的争论也日益激烈。特别是在大模型领域，Meta的Llama 3系列虽然被标榜为开源，但其使用限制引发了关于“什么才是真正的开源”的广泛讨论。
+开源技术在人工智能领域的广泛应用使其成为热点话题，但围绕开源标准的争论也日益激烈。特别是在大模型领域，Meta的`Llama 3`系列虽然被标榜为开源，但其使用限制引发了关于“什么才是真正的开源”的广泛讨论。
 
 开放源代码促进会（OSI）最近发布了关于“开源AI”的最新定义草案，旨在澄清这一术语在快速发展的科技领域中的模糊用法。OSI提出的“开源AI”标准包括四项基本自由，要求模型不受使用目的限制、可深入研究、自由修改并分享。这一草案强调了开源对AI系统透明度、安全性和创新的重要性。
 
@@ -76,7 +75,7 @@ https://mp.weixin.qq.com/s/INtkImenxKtQMbgM9T8ieA
 
 英伟达作为AI领域的领导者，其业绩将直接反映行业需求。如果财报优于预期，可能带动科技股和AI股上涨，反之则可能引发股价下跌。当前市场预期英伟达将继续实现高增长，分析师普遍看好其前景，并重申买入评级。
 
-此外，英伟达的新一代Blackwell芯片进展以及财报中的未来指引将成为投资者关注的焦点。近期有报道称该芯片可能因设计问题推迟发布，这可能影响大客户和市场预期。
+此外，英伟达的新一代`Blackwell`芯片进展以及财报中的未来指引将成为投资者关注的焦点。近期有报道称该芯片可能因设计问题推迟发布，这可能影响大客户和市场预期。
 
 资本市场方面，多家顶级对冲基金和资管公司大举增持英伟达，显示出对其的高度信心。然而，部分机构如桥水基金则选择减持，以规避潜在风险。
 
@@ -88,13 +87,13 @@ https://mp.weixin.qq.com/s/INtkImenxKtQMbgM9T8ieA
 
 https://mp.weixin.qq.com/s/EAfWMqiSkunW3MxOYuJyyQ
 
-Tesla基于iWARP的TCP拥塞控制机制和RoCEv1的二层转发，构建了以太网上的Lossy Fabric解决方案，提供了硬件处理TCP协议的创新方法。Tesla提出的解决方案不仅能够实现FrontEnd和ScaleOut的混跑，还强调了其解决方案在无需修改以太网交换机的情况下，通过GPU-Direct通信，实现了高效的网络传输。然而，他们在多路径方面还需进一步优化。
+`Tesla`基于`iWARP`的`TCP`拥塞控制机制和`RoCEv1`的二层转发，构建了以太网上的`Lossy Fabric`解决方案，提供了硬件处理`TCP`协议的创新方法。`Tesla`提出的解决方案不仅能够实现`FrontEnd`和`ScaleOut`的混跑，还强调了其解决方案在无需修改以太网交换机的情况下，通过`GPU-Direct`通信，实现了高效的网络传输。然而，他们在多路径方面还需进一步优化。
 
-此外，Azure和Meta也推出了针对云端AI加速的方案，Azure的Maia 100专注于推理任务，整合了标准以太网的ScaleUp和ScaleOut，并通过RoCE协议实现数据加密和高密度部署。Meta的MTIA则针对其核心业务进行了优化，采用LPDDR5内存以控制成本，具备强大的稀疏矩阵处理能力，并支持高效的推荐系统。
+此外，`Azure`和`Meta`也推出了针对云端`AI`加速的方案，`Azure`的`Maia 100`专注于推理任务，整合了标准以太网的`ScaleUp`和`ScaleOut`，并通过`RoCE`协议实现数据加密和高密度部署。`Meta`的`MTIA`则针对其核心业务进行了优化，采用`LPDDR5`内存以控制成本，具备强大的稀疏矩阵处理能力，并支持高效的推荐系统。
 
-AMD继续推广其Versal AIE-ML v2，但发展速度不如预期。Cerebras介绍了WSE-3的集群部署，虽然架构变化不大，但已开始转向推理服务，以应对市场竞争和融资压力。斯坦福的Onyx稀疏张量处理器也引起了关注，提出了一个通用的稀疏/密集张量计算框架，值得进一步探讨。
+`AMD`继续推广其`Versal AIE-ML v2`，但发展速度不如预期。`Cerebras`介绍了`WSE-3`的集群部署，虽然架构变化不大，但已开始转向推理服务，以应对市场竞争和融资压力。斯坦福的`Onyx`稀疏张量处理器也引起了关注，提出了一个通用的稀疏/密集张量计算框架，值得进一步探讨。
 
-其他提到的包括Intel的CPO演示，Enfabrica的通信架构，以及针对HPC应用的MN-Core 2芯片。这些创新虽然各有特点，但在技术深度和市场前景上与Tesla的TTPoE相比，仍存在差距。
+其他提到的包括`Intel`的`CPO`演示，`Enfabrica`的通信架构，以及针对`HPC`应用的`MN-Core 2`芯片。这些创新虽然各有特点，但在技术深度和市场前景上与`Tesla`的`TTPoE`相比，仍存在差距。
 
 ![](img/20f78c0197e04cc5d9db7604a6a5798d.png)
 
@@ -102,11 +101,11 @@ AMD继续推广其Versal AIE-ML v2，但发展速度不如预期。Cerebras介�
 
 https://mp.weixin.qq.com/s/DxnLApESR6tnHpKqiIYvCg
 
-燧原科技是一家成立于2018年的上海AI芯片公司，专注于云端和边缘的人工智能算力产品，致力于为通用AI打造算力基础设施，提供具备自主知识产权的AI加速卡、系统集群及软硬件解决方案。其服务对象包括东数西算节点、各地智算中心、国家科研机构等，应用场景涵盖内容理解生成、语音文字互转、大模型应用等。
+燧原科技是一家成立于2018年的上海`AI`芯片公司，专注于云端和边缘的人工智能算力产品，致力于为通用`AI`打造算力基础设施，提供具备自主知识产权的`AI`加速卡、系统集群及软硬件解决方案。其服务对象包括东数西算节点、各地智算中心、国家科研机构等，应用场景涵盖内容理解生成、语音文字互转、大模型应用等。
 
-公司在2023年参与了甘肃庆阳智算中心的建设，基于其新一代AI加速卡‘燧原S60’打造的智算中心正在进行中。腾讯作为燧原科技的最大股东，持股21.37%，并参与了燧原科技的六轮融资。燧原科技目前估值达160亿元，位列全球独角兽榜第482位。
+公司在2023年参与了甘肃庆阳智算中心的建设，基于其新一代`AI`加速卡‘燧原S60’打造的智算中心正在进行中。腾讯作为燧原科技的最大股东，持股21.37%，并参与了燧原科技的六轮融资。燧原科技目前估值达160亿元，位列全球独角兽榜第482位。
 
-燧原科技已经累计公开融资超过51亿元，IPO辅导协议已于8月23日签署，辅导机构为中国国际金融股份有限公司。
+燧原科技已经累计公开融资超过51亿元，`IPO`辅导协议已于8月23日签署，辅导机构为中国国际金融股份有限公司。
 
 ![](img/d2a2819d9d06d3d1000bf936deca32d5.png)
 
@@ -114,25 +113,25 @@ https://mp.weixin.qq.com/s/DxnLApESR6tnHpKqiIYvCg
 
 https://techcrunch.com/2024/08/27/why-ai-cant-spell-strawberry/
 
-大**规模语言模型（LLM**s）尽管在撰写文章和解决问题方面表现卓越，但在基本拼写任务上却常常失败，如无法正确计算“strawberry”一词中的“r”字母数量。这种失败反映了一个更深层的真相：AI 不具备人类的思维方式。LLMs 是基于 transformer 架构的深度学习模型，它们将文本分解为令牌，这些令牌可以是单词、音节或字母，但模型并不真正“理解”这些字符或单词。
+大规模语言模型（`LLMs`）尽管在撰写文章和解决问题方面表现卓越，但在基本拼写任务上却常常失败，如无法正确计算“strawberry”一词中的“r”字母数量。这种失败反映了一个更深层的真相：AI 不具备人类的思维方式。`LLMs` 是基于 `Transformer` 架构的深度学习模型，它们将文本分解为令牌，这些令牌可以是单词、音节或字母，但模型并不真正“理解”这些字符或单词。
 
-Tra**nsformer 模**型无法有效地处理或输出实际文本，而是将文本转化为数字表示，并通过这些表示来生成合理的回应。尽管 AI 可以知道“straw”和“berry”组合成“strawberry”，但它并不理解“strawberry”是由特定顺序的字母组成的。因此，无法精确地告诉你“strawberry”这个单词中有多少个“r”。
+`Transformer` 模型无法有效地处理或输出实际文本，而是将文本转化为数字表示，并通过这些表示来生成合理的回应。尽管 AI 可以知道“straw”和“berry”组合成“strawberry”，但它并不理解“strawberry”是由特定顺序的字母组成的。因此，无法精确地告诉你“strawberry”这个单词中有多少个“r”。
 
-这一问题难以解决，因为它深植于 transformer 架构中。随着 AI 学习更多语言，问题变得更加复杂。许多语言在分词方式上与英语不同，这使得生成模型更难以准确理解和生成内容。
+这一问题难以解决，因为它深植于 `Transformer` 架构中。随着 AI 学习更多语言，问题变得更加复杂。许多语言在分词方式上与英语不同，这使得生成模型更难以准确理解和生成内容。
 
-尽管存在这些问题，AI 领域仍在进步。例如，OpenAI 正在开发代号为“Strawberry”的新产品，旨在提高 AI 的推理能力。此外，Google DeepMind 最近推出了专为数学推理设计的 AI 系统 AlphaProof 和 AlphaGeometry 2，在国际数学奥林匹克竞赛中表现优异。
+尽管存在这些问题，AI 领域仍在进步。例如，`OpenAI` 正在开发代号为“`Strawberry`”的新产品，旨在提高 AI 的推理能力。此外，`Google DeepMind` 最近推出了专为数学推理设计的 AI 系统 `AlphaProof` 和 `AlphaGeometry 2`，在国际数学奥林匹克竞赛中表现优异。
 
 ![](img/072eda35ec7696d40ef8aff36e8abf30.png)
 
-# 推特
+## 推特
 
 ### Anthropic向所有Claude用户开放了Artifacts：将与Claude的对话转变为更加创意和协作的体验
 
 https://x.com/AnthropicAI/status/1828462522468372600
 
-今天，我们向所有Claude用户开放了Artifacts。现在，您还可以在Claude的iOS和Android应用程序上创建和查看Artifacts。
+今天，我们向所有`Claude`用户开放了`Artifacts`。现在，您还可以在`Claude`的`iOS`和`Android`应用程序上创建和查看`Artifacts`。
 
-Artifacts将与Claude的对话转变为更加创意和协作的体验。有了Artifacts，您可以通过专用窗口即时查看、迭代并基于您与Claude创建的内容进行构建。自6月份作为功能预览发布以来，用户已经创建了数千万个Artifacts。
+`Artifacts`将与`Claude`的对话转变为更加创意和协作的体验。有了`Artifacts`，您可以通过专用窗口即时查看、迭代并基于您与`Claude`创建的内容进行构建。自6月份作为功能预览发布以来，用户已经创建了数千万个`Artifacts`。
 
 ![](img/6ca1ad232efd307bcc3984ecc3fd54e7.png)
 
@@ -142,7 +141,7 @@ Artifacts将与Claude的对话转变为更加创意和协作的体验。有了Ar
 
 https://x.com/jimmykoppel/status/1828077203956850756
 
-Jimmy Koppel认为，Sakana的AI Scientist被过度宣传，其生成的论文质量低劣，内容空洞，缺乏深度和创意。该系统只是对少量代码库进行微小调整，生成简单的图表和文本包装成“论文”，这些论文通常只是些微不足道的代码替换。此外，AI审稿人的评估结果具有误导性，所有13篇示例论文都被拒绝，这表明其质量较差。Koppel还指出，这些论文存在重复、矛盾和错误，引用文献时只选择著名论文，忽略了可能更相关的研究。总体而言，Koppel认为AI Scientist更像一个项目生成器，而非真正的科学家，难以创造出有价值的内容。最后，他批评该系统在没有沙箱环境下运行自我修改代码，存在显著的安全隐患。
+Jimmy Koppel认为，Sakana的`AI Scientist`被过度宣传，其生成的论文质量低劣，内容空洞，缺乏深度和创意。该系统只是对少量代码库进行微小调整，生成简单的图表和文本包装成“论文”，这些论文通常只是些微不足道的代码替换。此外，`AI`审稿人的评估结果具有误导性，所有13篇示例论文都被拒绝，这表明其质量较差。Koppel还指出，这些论文存在重复、矛盾和错误，引用文献时只选择著名论文，忽略了可能更相关的研究。总体而言，Koppel认为`AI Scientist`更像一个项目生成器，而非真正的科学家，难以创造出有价值的内容。最后，他批评该系统在没有沙箱环境下运行自我修改代码，存在显著的安全隐患。
 
 ![](img/3f8e6d561a09aa49e2e46c480a52f313.png)
 
@@ -152,7 +151,7 @@ Jimmy Koppel认为，Sakana的AI Scientist被过度宣传，其生成的论文�
 
 https://x.com/mikeknoop/status/1828519928737210549
 
-家长提示：您可以将孩子的纸质学校日历拍照上传到ChatGPT，并请求生成一个.ics日历文件，直接导入使用。
+家长提示：您可以将孩子的纸质学校日历拍照上传到`ChatGPT`，并请求生成一个`.ics`日历文件，直接导入使用。
 
 ![](img/3b4bde85fd98d630728f388f721ceeb8.png)
 
@@ -170,9 +169,9 @@ https://x.com/Hamptonism/status/1828282500474343461
 
 https://x.com/CerebrasSystems/status/1828464491677524311
 
-推出Cerebras推理服务
+推出`Cerebras`推理服务
 
-‣ Llama3.1-70B，每秒处理450个token——速度是GPU的20倍
+‣ `Llama3.1-70B`，每秒处理450个token——速度是`GPU`的20倍
 
 ‣ 每百万个token只需60美分——价格是超大规模云计算服务商的五分之一
 
@@ -190,19 +189,21 @@ https://x.com/CerebrasSystems/status/1828464491677524311
 
 https://x.com/alexalbert__/status/1828502920788103363
 
-我们今天在 iOS 和 Android 上发布了 Artifacts！
+我们今天在 `iOS` 和 `Android` 上发布了 `Artifacts`！
 
-我整个早上都在用 Claude 复刻简单的游戏。
+我整个早上都在用 `Claude` 复刻简单的游戏。
 
 我们正在接近由大型语言模型实时创建移动应用的时代。
 
 ![](img/a3e2a276f1f7cedd7539995a017950bc.png)
 
+
+
 [ssstwitter.com_1724830645776.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SA63byGVioUSq8xFS76c8ovWnYe)
 
 # 论文
 
-### **扩散模型是实时游戏引擎**
+### 扩散模型是实时游戏引擎
 
 贡献人：
 
@@ -218,13 +219,13 @@ https://x.com/alexalbert__/status/1828502920788103363
 
 链接：http://arxiv.org/abs/2408.14805v1
 
-阅读图像中的文本（无[论是自然场景还是文档）是一个长期存在的研究课题，由于技术挑战高，应用范围广。之前，为解](https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/OCR/Platypus%E3%80%82)[决](https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/OCR/Platypus%E3%80%82)文本阅读的子任务（如场景文本识别、手写文本识别和数学表达式识别）通常会开发单独的专家模型。然而，这些专家模型通常不能有效泛化到不同的子任务。最近，通用模型（如GPT-4V）在统一训练的大量数据上展现出在各种场景下阅读文本的巨大潜力，但具有精度有限和效率低的缺点。在这项工作中，我们提出了Platypus，一个用于文本阅读的通用专家模型。具体地，Platypus结合了两者的优点：能够用单一统一的架构识别各种形式的文本，同时具有优秀的准确性和高效率。为更好地发挥Platypus的优势，我们还构建了一个文本阅读数据集（称为Worms），其图像来自先前的数据集并进行了部分重新标记。对标准基准数据集的实验表明了提出的Platypus模型的有效性和优越性。模型和数据将在以下网址公开：https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/OCR/Platypus。
+阅读图像中的文本（无论是自然场景还是文档）是一个长期存在的研究课题，由于技术挑战高，应用范围广。之前，为解决文本阅读的子任务（如场景文本识别、手写文本识别和数学表达式识别）通常会开发单独的专家模型。然而，这些专家模型通常不能有效泛化到不同的子任务。最近，通用模型（如GPT-4V）在统一训练的大量数据上展现出在各种场景下阅读文本的巨大潜力，但具有精度有限和效率低的缺点。在这项工作中，我们提出了Platypus，一个用于文本阅读的通用专家模型。具体地，Platypus结合了两者的优点：能够用单一统一的架构识别各种形式的文本，同时具有优秀的准确性和高效率。为更好地发挥Platypus的优势，我们还构建了一个文本阅读数据集（称为Worms），其图像来自先前的数据集并进行了部分重新标记。对标准基准数据集的实验表明了提出的Platypus模型的有效性和优越性。模型和数据将在以下网址公开：https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/OCR/Platypus。
 
 ![](img/9265fac0f248e3a106c2cfd9ddb13d94.png)
 
 ![](img/146258d79991db0600a42193c1e90421.png)
 
-### **BaichuanSEED：通过引入竞争性大语**言模型基线分享广泛数据集收集和去重的潜力
+### BaichuanSEED：通过引入竞争性大语言模型基线分享广泛数据集收集和去重的潜力
 
 贡献人：
 
@@ -240,7 +241,7 @@ https://x.com/alexalbert__/status/1828502920788103363
 
 链接：http://arxiv.org/abs/2408.15037v1
 
-为解决产生式问答（GQA）中存在的幻觉问题，即无法从文档中推导答案的情况，我们提出了一种新颖的证据增强三元组生成框架EATQA，鼓励模型通过交换源对和目标标签来预测所有（问题，证据，答案）三元组的组合，以了解它们的逻辑关系，即给定一个QE，EA和QA对分别预测答案（A），问题（Q）和证据（E）。此外，我们在推理阶段缩小了证据的分布差距，从而提取知识。我们的框架确保模型学习查询，证据和答案之间的逻辑关系，同时提高证据生成和查询回答。在本文中，我们将EATQA应用于LLama，并在两个具有挑战性的GQA基准测试中胜过其他基于LLM的方法和幻觉缓解方法。进一步分析显示，我们的方法不仅保留了LLM中的先前知识，而且缓解了幻觉并生成忠实的答案。
+为解决产生式问答（GQA）中存在的幻觉问题，即无法从文档中推导答案的情况，我们提出了一种新颖的证据增强三元组生成框架EATQA，鼓励模型通过交换源对和目标标签来预测所有（`QE`，`EA`，`QA`）三元组的组合，以了解它们的逻辑关系，即给定一个`QE`，`EA`和`QA`对分别预测答案（`A`），问题（`Q`）和证据（`E`）。此外，我们在推理阶段缩小了证据的分布差距，从而提取知识。我们的框架确保模型学习查询，证据和答案之间的逻辑关系，同时提高证据生成和查询回答。在本文中，我们将EATQA应用于LLama，并在两个具有挑战性的GQA基准测试中胜过其他基于LLM的方法和幻觉缓解方法。进一步分析显示，我们的方法不仅保留了LLM中的先前知识，而且缓解了幻觉并生成忠实的答案。
 
 ![](img/3d2175d17beeb01b98ee14804442347d.png)
 
@@ -370,13 +371,13 @@ Continuous vs Discrete表征：关于图像的连续和离散表征，现有实�
 
 https://zhuanlan.zhihu.com/p/715863693?utm_psn=1812046441658597377
 
-本文介绍了CUDA Graph在大语言模型（LLM）推理中的应用，特别是在vLLM框架中的实现与优化。CUDA Graph通过减少内核启动的开销，提高了推理性能，尤其在内核执行时间较短的情况下效果更为明显。文章首先通过一个简单的demo展示了如何在自定义模型中应用CUDA Graph加速推理。主要步骤包括预热模型以初始化GPU资源、捕获静态计算图以及执行图的重放。
+本文介绍了`CUDA Graph`在大语言模型（LLM）推理中的应用，特别是在`vLLM`框架中的实现与优化。`CUDA Graph`通过减少内核启动的开销，提高了推理性能，尤其在内核执行时间较短的情况下效果更为明显。文章首先通过一个简单的`demo`展示了如何在自定义模型中应用`CUDA Graph`加速推理。主要步骤包括预热模型以初始化GPU资源、捕获静态计算图以及执行图的重放。
 
-随后，文章深入探讨了CUDA Graph在vLLM中的应用。vLLM在推理阶段的prefill步骤输入的batch和seq_len是不可控的，因此CUDA Graph主要用于generate阶段。不同的batch对应不同的CUDA Graph Runner，预先为每个可能的batch捕获一组CUDA Graph，这样在推理时根据输入的batch大小选择合适的Graph Runner，以提高效率。
+随后，文章深入探讨了`CUDA Graph`在`vLLM`中的应用。`vLLM`在推理阶段的`prefill`步骤输入的`batch`和`seq_len`是不可控的，因此`CUDA Graph`主要用于`generate`阶段。不同的`batch`对应不同的`CUDA Graph Runner`，预先为每个可能的`batch`捕获一组`CUDA Graph`，这样在推理时根据输入的`batch`大小选择合适的`Graph Runner`，以提高效率。
 
-文章还讨论了CUDA Graph支持的控制流节点，指出在实际应用中，vLLM和大多数基于PyTorch的模型中并未显式利用这些控制流功能，而是通过动转静的方式自动化处理。但在一些复杂场景下，如控制流依赖于上一个算子的执行结果时，CUDA Graph的构建可能会失败，需要借助手动组网或其他工具如torch.compile来避免问题。
+文章还讨论了`CUDA Graph`支持的控制流节点，指出在实际应用中，`vLLM`和大多数基于`PyTorch`的模型中并未显式利用这些控制流功能，而是通过动转静的方式自动化处理。但在一些复杂场景下，如控制流依赖于上一个算子的执行结果时，`CUDA Graph`的构建可能会失败，需要借助手动组网或其他工具如`torch.compile`来避免问题。
 
-最后，文章总结了CUDA Graph在vLLM推理中的优势，虽然整体性能提升有限（约5%），但在特定场景下仍然具有重要的优化价值。合理设置捕获时的batch大小可以在提升性能的同时避免显存不足。
+最后，文章总结了`CUDA Graph`在`vLLM`推理中的优势，虽然整体性能提升有限（约5%），但在特定场景下仍然具有重要的优化价值。合理设置捕获时的`batch`大小可以在提升性能的同时避免显存不足。
 
 ![](img/b2e59e211609aad286fd6677bb154abd.png)
 
@@ -388,41 +389,45 @@ Rollout样本吞吐量与模型性能的关系： 强化学习中，Scaling的�
 
 **RL中泛化能力的Scaling**： 通过增加CPU数量（如2万个以上），并使特征建模更加通用，可以显著提升模型的泛化能力。这种Scaling Law表明，增加Rollout的并行度通常比在模型或损失函数上做优化更能提升模型能力。此外，随着并行度的增加，强化学习中常见的一些问题（如训练不稳定、对随机种子的敏感性等）会得到缓解。
 
-强化学习与深度学习的Scaling Law差异： 强化学习中的Scaling Law可能并不如深度学习中明显。深度学习的Scaling Law往往与特征空间的各个维度相关，而在强化学习中，Action Space（行动空间）的不同维度的相关性复杂且难以定义。此外，强化学习的训练稀疏性问题进一步限制了Scaling Law的适用性。当前的强化学习更依赖于高质量的训练环境，而非简单的扩展模型参数或样本规模。
 
-### 内存一致性模型兼容-从X86翻译到RISCV
 
-https://zhuanlan.zhihu.com/p/712667126?utm_psn=1812025033608015873
+# 强化学习与深度学习的Scaling Law差异
 
-在进行从X86到RISCV的二进制翻译过程中，内存一致性模型的兼容性是一个关键挑战。X86的内存一致性模型（TSO）在RISCV上的实现困难重重，主要因为两者在指令集设计哲学和内存模型强弱上的差异。X86 TSO模型是一种相对较强的模型，主要依赖于RCpc（Release Consistency with processor consistency）模型，而RISCV及其他RISC架构则通常采用更弱的RCsc（Release Consistency with sequential consistency）模型。这导致在翻译过程中，需要引入大量的barrier指令来维持内存一致性，严重影响性能。
+Scaling Law在强化学习中可能并不如深度学习中明显。深度学习的Scaling Law往往与特征空间的各个维度相关，而在强化学习中，Action Space（行动空间）的不同维度的相关性复杂且难以定义。此外，强化学习的训练稀疏性问题进一步限制了Scaling Law的适用性。当前的强化学习更依赖于高质量的训练环境，而非简单的扩展模型参数或样本规模。
 
-为了解决这一问题，历史上曾有几种方法。例如，Sparc-TSO通过在硬件中直接实现TSO模型，而苹果的M1处理器则采用了动态配置内存一致性模型的方法，允许在不同程序间切换模型，而不影响原生性能。华为的Exagear软件提供了两种翻译模式，允许用户根据需求在兼容性和性能之间进行选择。
+# 内存一致性模型兼容-从`X86`翻译到`RISCV`
 
-在RISCV社区，早期的ZTSO提案试图在硬件中实现类似TSO的模型，但这种方法不可避免地会导致原生程序的性能下降。后来，阿里巴巴提出的SSDTSO通过动态调节的方式支持不同的内存一致性模型，但需要定制操作系统和库，难以广泛应用。
+`https://zhuanlan.zhihu.com/p/712667126?utm_psn=1812025033608015873`
 
-从技术细节来看，兼容X86 TSO模型的核心在于对RCpc的支持，包括ld/st指令的barrier语义、fence指令和CAS指令。ARM通过在v8.3中引入LDAPR指令来支持RCpc，从而更好地兼容X86生态。而对于RISCV，要实现类似的兼容性，可能需要进一步扩展指令集或进行硬件设计上的调整。
+在进行从`X86`到`RISCV`的二进制翻译过程中，内存一致性模型的兼容性是一个关键挑战。`X86`的内存一致性模型（`TSO`）在`RISCV`上的实现困难重重，主要因为两者在指令集设计哲学和内存模型强弱上的差异。`X86 TSO`模型是一种相对较强的模型，主要依赖于`RCpc`（Release Consistency with processor consistency）模型，而`RISCV`及其他`RISC`架构则通常采用更弱的`RCsc`（Release Consistency with sequential consistency）模型。这导致在翻译过程中，需要引入大量的`barrier`指令来维持内存一致性，严重影响性能。
 
-### 聊聊大模型推理中的 KVCache 异构缓存之二
+为了解决这一问题，历史上曾有几种方法。例如，`Sparc-TSO`通过在硬件中直接实现`TSO`模型，而苹果的`M1`处理器则采用了动态配置内存一致性模型的方法，允许在不同程序间切换模型，而不影响原生性能。华为的`Exagear`软件提供了两种翻译模式，允许用户根据需求在兼容性和性能之间进行选择。
 
-https://zhuanlan.zhihu.com/p/715921106?utm_psn=1811827741294743552
+在`RISCV`社区，早期的`ZTSO`提案试图在硬件中实现类似`TSO`的模型，但这种方法不可避免地会导致原生程序的性能下降。后来，阿里巴巴提出的`SSDTSO`通过动态调节的方式支持不同的内存一致性模型，但需要定制操作系统和库，难以广泛应用。
 
-本文对大模型推理中的KVCache异构缓存技术进行了深入分析，主要讨论了InfiniGen和FastDecode这两篇论文中的创新技术细节。
+从技术细节来看，兼容`X86 TSO`模型的核心在于对`RCpc`的支持，包括`ld/st`指令的`barrier`语义、`fence`指令和`CAS`指令。`ARM`通过在`v8.3`中引入`LDAPR`指令来支持`RCpc`，从而更好地兼容`X86`生态。而对于`RISCV`，要实现类似的兼容性，可能需要进一步扩展指令集或进行硬件设计上的调整。
 
-**InfiniGen**主要研究了如何通过动态KVCache管理来提升生成式大模型推理的效率。论文提出了三个核心方法：首先，通过最小预演推测和选择生成下一个输出标记的关键KVCache条目，减少不必要的内存占用；其次，通过调整模型权重矩阵，引入SVD方法来优化注意力计算，提高推测的精度和效率；最后，利用CPU的大内存容量来维护完整的KVCache池，尽管这带来了一定的内存限制问题。
+# 聊聊大模型推理中的`KVCache`异构缓存之二
 
-**FastDecode**则探讨了如何通过异构流水线提升大模型推理的吞吐量。论文将Transformer模型分为两部分：R-Part处理依赖KVCache的计算，由CPU完成，S-Part处理参数化的矩阵乘法，由GPU处理。为了减少CPU和GPU之间的数据交换，FastDecode设计了传输激活张量的方法。此外，论文还解决了多机多卡环境下的流水线调度问题，提出了一种精细化的调度策略来提升系统效率。
+`https://zhuanlan.zhihu.com/p/715921106?utm_psn=1811827741294743552`
+
+本文对大模型推理中的`KVCache`异构缓存技术进行了深入分析，主要讨论了`InfiniGen`和`FastDecode`这两篇论文中的创新技术细节。
+
+`InfiniGen`主要研究了如何通过动态`KVCache`管理来提升生成式大模型推理的效率。论文提出了三个核心方法：首先，通过最小预演推测和选择生成下一个输出标记的关键`KVCache`条目，减少不必要的内存占用；其次，通过调整模型权重矩阵，引入`SVD`方法来优化注意力计算，提高推测的精度和效率；最后，利用`CPU`的大内存容量来维护完整的`KVCache`池，尽管这带来了一定的内存限制问题。
+
+`FastDecode`则探讨了如何通过异构流水线提升大模型推理的吞吐量。论文将`Transformer`模型分为两部分：`R-Part`处理依赖`KVCache`的计算，由`CPU`完成，`S-Part`处理参数化的矩阵乘法，由`GPU`处理。为了减少`CPU`和`GPU`之间的数据交换，`FastDecode`设计了传输激活张量的方法。此外，论文还解决了多机多卡环境下的流水线调度问题，提出了一种精细化的调度策略来提升系统效率。
 
 ![](img/7fa988b73c32a611781283a5f1c68329.png)
 
-### 强化学习产业化探索
+# 强化学习产业化探索
 
-https://zhuanlan.zhihu.com/p/716777710?utm_psn=1811815577033007104
+`https://zhuanlan.zhihu.com/p/716777710?utm_psn=1811815577033007104`
 
-首先，强化学习的产业化受到仿真环境的强依赖性和任务特异性等技术瓶颈的制约。大多数行业中的仿真场景与实际场景差距过大，使得RL开发者需要等待仿真公司完善场景，这延缓了技术的落地。此外，RL任务往往需要高度定制化，开发成本高昂，导致团队容易沦为“外包”角色，难以实现产品化。
+首先，强化学习的产业化受到仿真环境的强依赖性和任务特异性等技术瓶颈的制约。大多数行业中的仿真场景与实际场景差距过大，使得`RL`开发者需要等待仿真公司完善场景，这延缓了技术的落地。此外，`RL`任务往往需要高度定制化，开发成本高昂，导致团队容易沦为“外包”角色，难以实现产品化。
 
-作者详细分析了几种AI产品化的路径，如AI+硬件、AI原生产品、AI赋能软件等，但这些模式在RL领域均面临各自的挑战。为了克服这些问题，公司探索了数据驱动的离线强化学习路径，通过历史数据构建虚拟环境，减少对仿真的依赖，从而降低智能化改造的门槛。目前，公司推出了离线强化学习平台“仙启（REVIVE）”，在多个领域实现了突破，如L3级城市水务智能化方案和高精尖设备的制造控制等，显著提升了控制精度和稳定性。
+作者详细分析了几种AI产品化的路径，如AI+硬件、AI原生产品、AI赋能软件等，但这些模式在`RL`领域均面临各自的挑战。为了克服这些问题，公司探索了数据驱动的离线强化学习路径，通过历史数据构建虚拟环境，减少对仿真的依赖，从而降低智能化改造的门槛。目前，公司推出了离线强化学习平台“`REVIVE`”，在多个领域实现了突破，如`L3`级城市水务智能化方案和高精尖设备的制造控制等，显著提升了控制精度和稳定性。
 
-文章总结指出，RL的产业化道路任重道远，但通过技术创新和应用场景的扩展，未来RL有望在更多领域实现广泛应用，推动产业发展。
+文章总结指出，`RL`的产业化道路任重道远，但通过技术创新和应用场景的扩展，未来`RL`有望在更多领域实现广泛应用，推动产业发展。
 
 ![](img/a02ec2bcaed03816b92f5df7d927ce35.png)
 
@@ -432,27 +437,27 @@ https://zhuanlan.zhihu.com/p/716777710?utm_psn=1811815577033007104
 
 ![](img/4b0b134b68ad430949f734f3be90972e.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建`GenAI`时代独特的跨界人才社群。
 
-## **F24实习岗位**
+## F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+##### [`行研-学术科研人才交流组实习生`](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+##### 行研-`GenAI`研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+##### `Web` / `AI` 全栈开发工程师实习生
 
-## **火热开放中**
+## 火热开放中
 
-##### 行研-GenAI研究岗位-前沿学术探索
+##### 行研-`GenAI`研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+##### 行研-`GenAI`研究岗位-战略分析（偏咨询）
 
 ##### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**添加🛰️💻【**sunjiajunspace】
+> 点击相关岗位可查看对应岗位需求【`JD`】；相关岗位投递请添加🛰️💻【`sunjiajunspace`】
 
-> ‼️欢迎**推荐/自荐**，期待在**奇绩创坛**遇见更好的你‼️
+> ‼️欢迎推荐/自荐，期待在奇绩创坛遇见更好的你‼️
 
 ---
 
@@ -460,11 +465,9 @@ https://zhuanlan.zhihu.com/p/716777710?utm_psn=1811815577033007104
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+`ChatGPT`；`Angela`；`Zijia Liu`；`Alex`；`Zeqi Tan`；`Tiezhen`（`HuggingFace`）；`Naixu`；`Lizhi`；`Peter`；`Suoman`；`Jack`
 
 封面生成——右脑科技
 
@@ -472,9 +475,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
-> [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
+> [`大模型日报知识库(分享版)`](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
 

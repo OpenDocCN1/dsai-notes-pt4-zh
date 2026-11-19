@@ -1,3 +1,4 @@
+
 # 20250524-OpenAI版Manus上线，Operator携手o3模型，Pro用户专享
 
 > 来源：[https://aigcreative.feishu.cn/docx/YN0PdCThmoqxJXxDTqycmHN7nbg](https://aigcreative.feishu.cn/docx/YN0PdCThmoqxJXxDTqycmHN7nbg)
@@ -10,7 +11,7 @@
 
 让我们一起来看看。
 
-# Operator变聪明了，但你可能还用不上
+## Operator变聪明了，但你可能还用不上
 
 Operator功能已经全面整合了o3模型，号称在浏览器任务处理上更“聪明”、更“靠谱”。
 
@@ -28,7 +29,7 @@ Operator功能已经全面整合了o3模型，号称在浏览器任务处理上�
 
 不过，这里有个坏消息：Operator依然是ChatGPT Pro用户的专属福利。也就是说，如果你只是Plus用户，或者免费用户，压根儿摸不到这个新功能。这也难怪不少人在评论区炸毛了。
 
-# 用户炸锅：Plus用户被冷落，o3-pro又在“挤牙膏”？
+## 用户炸锅：Plus用户被冷落，o3-pro又在“挤牙膏”？
 
 OpenAI的这条帖子下方，评论区简直变成了“吐槽大会”。有用户直呼：“Plus用户就不是人吗？为什么我们用不了Operator？”另一位名叫Michael的用户提议：“能不能给Plus用户出一个o4-mini版本的Operator啊？”还有人直接喊话OpenAI的创始人Sam Altman：“o3-pro到底什么时候来？别老吊我们胃口了！”
 
@@ -36,7 +37,7 @@ OpenAI的这条帖子下方，评论区简直变成了“吐槽大会”。有�
 
 有意思的是，有人提到另一款AI工具flowith_ai，称它目前是“最强的Agentic系统”，甚至觉得Operator的热度已经不如从前。这话虽然有点扎心，但也反映出市场竞争的激烈——OpenAI可不能再“挤牙膏”式更新了，不然真有可能被对手抢了风头。
 
-# o3和o4-mini谁更强？价格差10倍，性能差距却不大
+## o3和o4-mini谁更强？价格差10倍，性能差距却不大
 
 说到模型性能，o3和o4-mini的对比也是个绕不开的话题。
 
@@ -52,7 +53,7 @@ OpenAI的这条帖子下方，评论区简直变成了“吐槽大会”。有�
 
 OpenAI这次给Operator装上o3模型，明显是想主打高端市场，但也难怪普通用户会觉得被“抛弃”了。
 
-# 写在最后：OpenAI的“高端路线”能走多远？
+## 写在最后：OpenAI的“高端路线”能走多远？
 
 Operator的这次升级，确实让ChatGPT Pro用户多了一个值得炫耀的功能，但对普通用户来说，这种“看得见、摸不着”的更新只会让人更焦虑。OpenAI的订阅模式已经让不少人颇有微词——20美元的Plus用户能用o4-mini，但想体验更强的o3或者Operator，就得掏200美元升级到Pro。这种“阶层分化”式的产品策略，虽然能帮OpenAI赚更多钱，但也可能在用户群体中埋下不满的种子。
 
@@ -62,4 +63,4 @@ Operator的这次升级，确实让ChatGPT Pro用户多了一个值得炫耀的�
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

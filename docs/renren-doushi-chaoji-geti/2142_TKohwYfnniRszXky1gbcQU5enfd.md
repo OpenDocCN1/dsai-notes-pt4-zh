@@ -1,12 +1,9 @@
+
 # 2023-06-30胖东来8页报告火了！顾客与员工争执，员工获5000元精神补偿-今日头条
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/TvZndjd8koPONAxsMNlce5YRnsh](https://xuqiwei1986.feishu.cn/docx/TvZndjd8koPONAxsMNlce5YRnsh)
-
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7250498528915800580/?log_from=27945493b02b8_1695805791290).com/article/725...
-
+> 来源：`https://xuqiwei1986.feishu.cn/docx/TvZndjd8koPONAxsMNlce5YRnsh`
 >
-
-# 胖东来8页报告火了！顾客与员工争执，员工获5000元精神补偿
+> 🔗 原文链接：https://www.toutiao.com/article/7250498528915800580/?log_from=27945493b02b8_1695805791290
 
 2023-06-30 23:17 · 金羊网
 

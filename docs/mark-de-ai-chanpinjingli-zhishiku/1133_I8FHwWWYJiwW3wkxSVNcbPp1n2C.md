@@ -1,10 +1,11 @@
+
 # 📠 带数据库路由的RAG
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/KvCNdu53RorTuwx1EwAcKT37n0c](https://qqs7y1hozd1.feishu.cn/docx/KvCNdu53RorTuwx1EwAcKT37n0c)
 
 # 📠 带数据库路由的RAG代理
 
-> **一个Streamlit应用程序，展示了**带有智能查询路由的RAG代理的高级实现。
+> 一个`Streamlit`应用程序，展示了带有智能查询路由的RAG代理的高级实现。
 
 > 该系统将多个专业数据库与智能回退机制相结合，以确保对用户查询提供可靠、准确的响应。
 
@@ -22,191 +23,193 @@
 
 ## 功能
 
-+   **文件上传：**
++ 文件上传：
 
 > 用户可以上传与特定公司相关的多个PDF文件。
 
->
++ 自然语言查询：
 
-+   **自然语言查询：**
+> 系统使用`agno`代理作为路由器，自动将查询路由到最相关的数据库。
 
-> 系统使用agno代理作为路由器，自动将查询路由到最相关的数据库。
++ 检索增强生成编排：
 
->
+> 利用`Langchain`编排检索增强生成过程，检索最相关的信息并呈现给用户。
 
-+   **检索增强生成编排：**
++ 备用机制：
 
-> 利用Langchain编排检索增强生成过程，检索最相关的信息并呈现给用户。
-
->
-
-+   **备用机制：**
-
-> 使用配备 DuckDuckGo 搜索工具的 LangGraph 代理进行网络研究并提供答案。
+> 使用配备`DuckDuckGo`搜索工具的`LangGraph`代理进行网络研究并提供答案。
 
 ## 如何运行？
 
-##### 安装依赖项：
+### 安装依赖项
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-##### 运行应用程序：
+### 运行应用程序
 
-**streamlit run rag**_database_routing.py
+`streamlit run rag_database_routing.py`
 
-获取OpenAI API密钥：获取OpenAI API密钥并在应用程序中设置。这是初始化应用程序中使用的语言模型所必需的。
+获取`OpenAI` API密钥：获取`OpenAI` API密钥并在应用程序中设置。这是初始化应用程序中使用的语言模型所必需的。
 
-##### 设置Qdrant云
+### 设置Qdrant云
 
-+   访问[Qdrant Cloud](https://cloud.qdrant.io/)
++ 访问[Qdrant Cloud](https://cloud.qdrant.io/)
 
-+   创建账户或登录
++ 创建账户或登录
 
-+   创建新集群
++ 创建新集群
 
-+   获取您的凭证：
++ 获取您的凭证：
 
-+   Qdrant API密钥：在API密钥部分中找到
++ `Qdrant` API密钥：在API密钥部分中找到
 
-+   Qdrant URL：您的集群 URL（格式：https://xxx-xxx.aws.cloud.qdrant.io）
++ `Qdrant` URL：您的集群 URL（格式：`https://xxx-xxx.aws.cloud.qdrant.io`）
 
-##### 上传文档：
+### 上传文档
 
 使用文档上传部分将PDF文档添加到所需的数据库中。
 
-##### 提问：
+### 提问
 
 在查询区域输入您的问题。应用程序将把您的问题路由到适当的数据库并提供答案。
 
 ## 使用的技术
 
-+   Langchain：用于RAG编排，确保高效检索和生成信息。
++ `Langchain`：用于RAG编排，确保高效检索和生成信息。
 
-+   Agno代理：用作路由代理，以确定与给定查询最相关的数据库。
++ `Agno`代理：用作路由代理，以确定与给定查询最相关的数据库。
 
-+   LangGraph代理：充当备用机制，必要时利用DuckDuckGo进行网络研究。
++ `LangGraph`代理：充当备用机制，必要时利用`DuckDuckGo`进行网络研究。
 
-+   Streamlit：提供用户友好的界面，用于文档上传和查询。
++ `Streamlit`：提供用户友好的界面，用于文档上传和查询。
 
-+   Qdrant：用于管理数据库，高效存储和检索文档嵌入。
++ `Qdrant`：用于管理数据库，高效存储和检索文档嵌入。
 
 ## 工作原理是什么？
 
-1.  查询路由系统采用三阶段路由方法：
+1. 查询路由系统采用三阶段路由方法：
 
-+   跨所有数据库的向量相似度搜索
++ 跨所有数据库的向量相似度搜索
 
-+   基于大语言模型的模糊查询路由
++ 基于大语言模型的模糊查询路由
 
-+   针对未知主题的网络搜索回退
++ 针对未知主题的网络搜索回退
 
-1.  文档处理
+2. 文档处理
 
-+   从PDF中自动提取文本
++ 从PDF中自动提取文本
 
-+   带重叠的智能文本分块
++ 带重叠的智能文本分块
 
-+   向量嵌入生成
++ 向量嵌入生成
 
-+   高效的数据库存储
++ 高效的数据库存储
 
-1.  答案生成
+3. 答案生成
 
-+   上下文感知检索
++ 上下文感知检索
 
-+   智能文档合并
++ 智能文档合并
 
-+   基于置信度的回复
++ 基于置信度的回复
 
-+   网络研究集成
++ 网络研究集成
 
 # 📠 RAG Agent with Database Routing
 
-A Streamlit application that demonstrates an advanced implementation of RAG Agent with intelligent query routing. The system combines multiple specialized databases with smart fallback mechanisms to ensure reliable and accurate responses to user queries.
+A `Streamlit` application that demonstrates an advanced implementation of RAG Agent with intelligent query routing. The system combines multiple specialized databases with smart fallback mechanisms to ensure reliable and accurate responses to user queries.
 
 ## Features
 
-+   Document Upload: Users can upload multiple PDF documents related to a particular company. These documents are processed and stored in one of the three databases: Product Information, Customer Support & FAQ, or Financial Information.
++ Document Upload: Users can upload multiple PDF documents related to a particular company. These documents are processed and stored in one of the three databases: Product Information, Customer Support & FAQ, or Financial Information.
 
-+   Natural Language Querying: Users can ask questions in natural language. The system automatically routes the query to the most relevant database using a agno agent as the router.
++ Natural Language Querying: Users can ask questions in natural language. The system automatically routes the query to the most relevant database using a `agno` agent as the router.
 
-+   RAG Orchestration: Utilizes Langchain for orchestrating the retrieval augmented generation process, ensuring that the most relevant information is retrieved and presented to the user.
++ RAG Orchestration: Utilizes `Langchain` for orchestrating the retrieval augmented generation process, ensuring that the most relevant information is retrieved and presented to the user.
 
-+   Fallback Mechanism: If no relevant documents are found in the databases, a LangGraph agent with a DuckDuckGo search tool is used to perform web research and provide an answer.
++ Fallback Mechanism: If no relevant documents are found in the databases, a `LangGraph` agent with a `DuckDuckGo` search tool is used to perform web research and provide an answer.
 
 ## How to Run?
 
-1.  Clone the Repository:
+### Clone the Repository
 
-1.  git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+```
+git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
 cd rag_tutorials/rag_database_routing
+```
 
-1.  Install Dependencies:
+### Install Dependencies
 
-1.  pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-1.  Run the Application:
+### Run the Application
 
-1.  streamlit run rag_database_routing.py
+`streamlit run rag_database_routing.py`
 
-1.  Get OpenAI API Key: Obtain an OpenAI API key and set it in the application. This is required for initializing the language models used in the application.
+### Get OpenAI API Key
 
-1.  Setup Qdrant Cloud
+Obtain an `OpenAI` API key and set it in the application. This is required for initializing the language models used in the application.
 
-+   Visit [Qdrant Cloud](https://cloud.qdrant.io/)
+### Setup Qdrant Cloud
 
-+   Create an account or sign in
++ Visit [Qdrant Cloud](https://cloud.qdrant.io/)
 
-+   Create a new cluster
++ Create an account or sign in
 
-+   Get your credentials:
++ Create a new cluster
 
-+   Qdrant API Key: Found in API Keys section
++ Get your credentials:
 
-+   Qdrant URL: Your cluster URL (format: https://xxx-xxx.aws.cloud.qdrant.io)
++ `Qdrant` API Key: Found in API Keys section
 
-1.  Upload Documents: Use the document upload section to add PDF documents to the desired database.
++ `Qdrant` URL: Your cluster URL (format: `https://xxx-xxx.aws.cloud.qdrant.io`)
 
-1.  Ask Questions: Enter your questions in the query section. The application will route your question to the appropriate database and provide an answer.
+### Upload Documents
+
+Use the document upload section to add PDF documents to the desired database.
+
+### Ask Questions
+
+Enter your questions in the query section. The application will route your question to the appropriate database and provide an answer.
 
 ## Technologies Used
 
-+   Langchain: For RAG orchestration, ensuring efficient retrieval and generation of information.
++ `Langchain`: For RAG orchestration, ensuring efficient retrieval and generation of information.
 
-+   Agno Agent: Used as the router agent to determine the most relevant database for a given query.
++ `Agno`: Used as the router agent to determine the most relevant database for a given query.
 
-+   LangGraph Agent: Acts as a fallback mechanism, utilizing DuckDuckGo for web research when necessary.
++ `LangGraph`: Acts as a fallback mechanism, utilizing `DuckDuckGo` for web research when necessary.
 
-+   Streamlit: Provides a user-friendly interface for document upload and querying.
++ `Streamlit`: Provides a user-friendly interface for document upload and querying.
 
-+   Qdrant: Used for managing the databases, storing and retrieving document embeddings efficiently.
++ `Qdrant`: Used for managing the databases, storing and retrieving document embeddings efficiently.
 
 ## How It Works?
 
-1.  Query Routing The system uses a three-stage routing approach:
+1. Query Routing The system uses a three-stage routing approach:
 
-+   Vector similarity search across all databases
++ Vector similarity search across all databases
 
-+   LLM-based routing for ambiguous queries
++ LLM-based routing for ambiguous queries
 
-+   Web search fallback for unknown topics
++ Web search fallback for unknown topics
 
-1.  Document Processing
+2. Document Processing
 
-+   Automatic text extraction from PDFs
++ Automatic text extraction from PDFs
 
-+   Smart text chunking with overlap
++ Smart text chunking with overlap
 
-+   Vector embedding generation
++ Vector embedding generation
 
-+   Efficient database storage
++ Efficient database storage
 
-1.  Answer Generation
+3. Answer Generation
 
-+   Context-aware retrieval
++ Context-aware retrieval
 
-+   Smart document combination
++ Smart document combination
 
-+   Confidence-based responses
++ Confidence-based responses
 
-+   Web research integration
++ Web research integration

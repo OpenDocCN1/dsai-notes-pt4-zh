@@ -1,3 +1,4 @@
+
 # 我们花了两天时间，终于造出了能自我进化的Skills管理器。
 
 > 来源：[https://aigcreative.feishu.cn/docx/A44pd2GfFoRUCMxKfMqchlCjnec](https://aigcreative.feishu.cn/docx/A44pd2GfFoRUCMxKfMqchlCjnec)
@@ -54,25 +55,25 @@ SKills，从入门到现在，我已经连续写了好几篇文章了。
 
 我们，手搓了一个SKills管理三件套。
 
-这**三件**套，再加上Claude官方的那个Skill-creator，这四个SKill，直接解决了我所有Skills的增删改查还有迭代升级功能 ， 让Skills库，实现真正的全自动化管理和自我进化。
+这三件套，再加上`skill-creator`官方的那个`Skill-Creator`，这四个SKill，直接解决了我所有Skills的增删改查还有迭代升级功能 ， 让Skills库，实现真正的全自动化管理和自我进化。
 
 ![](img/c1a412cc19f26bb45f86d841fa56b5c1.png)
 
 我们搓的这三件套，分别是：
 
-github-to-skills：专用的Github项目转Skills的Skill。
+`github-to-skills`：专用的Github项目转Skills的Skill。
 
-skill-manager：一个专用的管理本地所有SKills的Skill。
+`skill-manager`：一个专用的管理本地所有SKills的Skill。
 
-skill-evolution-manager：一个能将过程中的对话和经验，自动以外挂的形式，对某Skill进行迭代升级。
+`skill-evolution-manager`：一个能将过程中的对话和经验，自动以外挂的形式，对某Skill进行迭代升级。
 
 话不多说，老规矩，先看效果。
 
-我现在本地有一堆Skills，比如上次那个下载视频的神器 yt-dlp。
+我现在本地有一堆Skills，比如上次那个下载视频的神器 `yt-dlp`。
 
 因为很多的Github上的项目，也一直实在动态更新的，我肯定是希望，我们本地的Skills，也是可以根据他们仓库的动态，实现自动更新的。
 
-而现在，我只需要对着OpenCode说一句：
+而现在，我只需要对着`OpenCode`说一句：
 
 帮我检查一下所有的Skills状态。
 
@@ -82,13 +83,13 @@ skill-evolution-manager：一个能将过程中的对话和经验，自动以外
 
 可以看到，截图中的两个Skill，有两种状态。
 
-company-claude-skills的状态：过期。
+`company-claude-skills`的状态：过期。
 
-yt-dlp的状态：最新。
+`yt-dlp`的状态：最新。
 
 这两个Skill，都是我将Github上的项目，进行封装的。
 
-yt-dlp在我本地，目前还是Github上的最新版本，但是Company，已经不是了，过期了。
+`yt-dlp`在我本地，目前还是Github上的最新版本，但是Company，已经不是了，过期了。
 
 （PS：这个Company，是为了给大家看一下效果，我自己的Github仓库来测试的演示项目。）
 
@@ -100,17 +101,17 @@ yt-dlp在我本地，目前还是Github上的最新版本，但是Company，已�
 
 而这个时候，聪明的你可能就会问了。
 
-GitHub 更新了，旧版的SKILL.md不就被覆盖掉了，那我平时调教Skills优化不断迭代的各种修改和经验不就直接也没了吗？这特么不是巨坑吗，完全用不了啊。
+GitHub 更新了，旧版的`SKILL.md`不就被覆盖掉了，那我平时调教Skills优化不断迭代的各种修改和经验不就直接也没了吗？这特么不是巨坑吗，完全用不了啊。
 
 你说的对。
 
-因为我自己用Skills，在运行的过程中，难免会出现一些BUG，而这些BUG其实都是这个SKill的经验，理论上下一次运行，是完全可以避免的，所以我经常会在跑完之后，把这个聊天过程，让Skill-Creator，重新根据整个对话记录，把这些经验，写入到原来的SKill里，让这个Skill，变得越来越牛逼。
+因为我自己用Skills，在运行的过程中，难免会出现一些BUG，而这些BUG其实都是这个SKill的经验，理论上下一次运行，是完全可以避免的，所以我经常会在跑完之后，把这个聊天过程，让`Skill-Creator`，重新根据整个对话记录，把这些经验，写入到原来的SKill里，让这个Skill，变得越来越牛逼。
 
-比如我之前这个yt-dlp的Skill，第一次报错并就解决以后，就根据聊天记录，让它自主的修改迭代了一些东西。
+比如我之前这个`yt-dlp`的Skill，第一次报错并就解决以后，就根据聊天记录，让它自主的修改迭代了一些东西。
 
 ![](img/1dcc7d5e2546381bdf22de782b225d2f.png)
 
-但你要知道，这个迭代的结果，优化的是SKills里面的主文件也就是Skill.md文件，而我们上面提到的，拉取最新的Github项目，修改的也就是Skill.md文件。
+但你要知道，这个迭代的结果，优化的是SKills里面的主文件也就是`Skill.md`文件，而我们上面提到的，拉取最新的Github项目，修改的也就是`Skill.md`文件。
 
 这时候，冲突就来了。
 
@@ -120,15 +121,15 @@ GitHub 更新了，旧版的SKILL.md不就被覆盖掉了，那我平时调教Sk
 
 就是分开。
 
-拉群最新的Github项目，还是修改主SKill.md文件不变，而我们所有的迭代、报错的经验，不放在Skill.md里，而是直接存到一个全新的、我们自己自定义的evolution.json文件里。
+拉群最新的Github项目，还是修改主`SKILL.md`文件不变，而我们所有的迭代、报错的经验，不放在`Skill.md`里，而是直接存到一个全新的、我们自己自定义的`evolution.json`文件里。
 
 也就是，一个专门用来存，“进化”的文件。
 
 类似于我们的一个经验备份，或者说游戏存档。
 
-无论你的主进程如何更新，版本号升级到了多少，我们的游戏存档，肯定都不应该变得对吧，这个 evolution.json其实在Skills里，就是我们自己定义的游戏存档。
+无论你的主进程如何更新，版本号升级到了多少，我们的游戏存档，肯定都不应该变得对吧，这个 `evolution.json`其实在Skills里，就是我们自己定义的游戏存档。
 
-当SKILL.md被新版本覆盖时，它便会发挥它的作用，将存档里的经验，重新注入回到Skill.md里。
+当`SKILL.md`被新版本覆盖时，它便会发挥它的作用，将存档里的经验，重新注入回到`Skill.md`里。
 
 ![](img/3ba50b0619fe26ada856da5a3f1891ba.png)
 
@@ -146,11 +147,11 @@ GitHub 更新了，旧版的SKILL.md不就被覆盖掉了，那我平时调教Sk
 
 我把这三件套里的每一个Skill，再拆开来，稍微细一点点的给大家介绍一下，大家相信我，只是这些东西看着代码一些，但是真的不复杂！希望能对大家的思路，起到一些抛砖引玉的作用。
 
-# 一.github-to-skills
+## 一.github-to-skills
 
 做这个目的，其实就是希望，我们能给从Github上打包的那些Skills，一个身份证明。
 
-我发现之前用的官方skill-creator，虽然能打包，但是它生成的 SKILL.md文档里，没有关于GitHub的相关数据。
+我发现之前用的官方`skill-creator`，虽然能打包，但是它生成的 `SKILL.md`文档里，没有关于GitHub的相关数据。
 
 ![](img/d4264cdead83221c45ef9da56a54a8f0.png)
 
@@ -162,27 +163,27 @@ GitHub 更新了，旧版的SKILL.md不就被覆盖掉了，那我平时调教Sk
 
 如果强行去扫去匹配，失败率极高，效果极其不稳定。
 
-所以，这三件套的第一个解决方案，自然就是需要对SKills生成器开刀，也就是，要针对SKIIL.md元数据头下手。
+所以，这三件套的第一个解决方案，自然就是需要对SKills生成器开刀，也就是，要针对`SKIIL.md`元数据头下手。
 
-我魔改了skill-creator，做了一个github-to-skills。
+我魔改了`skill-creator`，做了一个`github-to-skills`。
 
 它的功能也很简单：在打包Github项目的时候，强制注入一些关于github的信息。
 
 这个信息包含这两样东西：
 
-github_url：它从哪来的。
+`github_url`：它从哪来的。
 
-github_hash：它是哪个版本。
+`github_hash`：它是哪个版本。
 
-这样，每一个经由这个github-to-skills产出的Skill，都自带了身份ID。
+这样，每一个经由这个`github-to-skills`产出的Skill，都自带了身份ID。
 
 可能还有的人没明白这样设计有什么用，对我们后续管理有什么帮助，直接上图对比，大家应该就可以明白了。
 
-这事原版Skill.md里的信息。
+这事原版`Skill.md`里的信息。
 
 ![](img/6c552950b6667f8c2c03592097ce0c17.png)
 
-这是改进后的SKILL.md里的信息。
+这是改进后的`SKILL.md`里的信息。
 
 ![](img/4c5ded547ff2c2bfa24cdff1a2057348.png)
 
@@ -192,33 +193,39 @@ github_hash：它是哪个版本。
 
 相当于，我们给每个SKill，都做了一个身份系统。
 
-有了身份ID，后续的自动化管理，才有了可能，可以这么说，它就是整个系统的地基了。
+有了身份ID，后续的自动化管理，才有了可能，可以说，它就是整个系统的地基了。
 
-而之所以为啥这个 github-to-skills和原有的 skill-creator共存，其实特别简单，因为不是所有的Skills，都是封装的Github项目，还有很多，是我们自己经验和工作流，这种其实没必要注入Github的信息了。
+而之所以为啥这个 `github-to-skills`和原有的 `skill-creator`共存，其实特别简单，因为不是所有的Skills，都是封装的Github项目，还有很多，是我们自己经验和工作流，这种其实没必要注入Github的信息了。
 
-# **二.skill-manager**
+## 二.skill-manager
 
-有了身份ID的Skill，接下来就是重头戏了，skill-manager。
+有了身份ID的Skill，接下来就是重头戏了，`skill-manager`。
 
 这玩意就是你skills的大管家，负责你所有本地Skills的管理和更新。
 
 它的功能有这些。
 
-**1. Skills查询： **主要是 最近不管是学习还是测试，经常装的Skills太特么多了，常年看着一堆文件夹，我都忘了这些Skills到底是干啥的。。。
+### 1. Skills查询
 
-不过现在通过这个skill-manager，它可以直接给我吐出一个好看点的表格，列出所有Skills的类型、描述、版本，而且是可以自己区分哪些是GitHub打包的skill，哪些是正常的skill，真就是可以列出我所有家底。
+主要是 最近不管是学习还是测试，经常装的Skills太特么多了，常年看着一堆文件夹，我都忘了这些Skills到底是干啥的。。。
+
+不过现在通过这个`skill-manager`，它可以直接给我吐出一个好看点的表格，列出所有Skills的类型、描述、版本，而且是可以自己区分哪些是GitHub打包的skill，哪些是正常的skill，真就是可以列出我所有家底。
 
 ![](img/1084d38551359a3cd4343f97bfeb6b4e.png)
 
-**2.Skills版本监控： **这就是开头说的，看Github仓库有没有更新的、非常实用的功能。
+### 2.Skills版本监控
 
-它会请求Github的接口，拿着本地Skill头部的github_hash去跟远程仓库进行对比。
+这就是开头说的，看Github仓库有没有更新的、非常实用的功能。
+
+它会请求Github的接口，拿着本地Skill头部的`github_hash`去跟远程仓库进行对比。
 
 最终的结果中，如果输出的对应状态为过期，那就说明需要更新对应的Skills了，若为状态为最新则说明无需更新。
 
 ![](img/806aee46f3fdef378b39831bc63b2313.png)
 
-**3. Skills管理： **一个非常简单的小功能，就是... 如果有不需要的或者用不上的，可以用它，来一句话直接删除。
+### 3. Skills管理
+
+一个非常简单的小功能，就是... 如果有不需要的或者用不上的，可以用它，来一句话直接删除。
 
 ![](img/0f8dc5789f8e1afabb22635725ce5ba4.png)
 
@@ -226,19 +233,19 @@ github_hash：它是哪个版本。
 
 我个人认为，还是非常方便的。
 
-现在经常打开OpenCode，没事就先扫一遍Skills是不是有更新，然后再开始干活。
+现在经常打开`OpenCode`，没事就先扫一遍Skills是不是有更新，然后再开始干活。
 
-# 三.skill-evolution-manager
+## 三.skill-evolution-manager
 
 这个就是我开头用了蛮多的篇幅，讲的根据对话或者经验，对Skills进行自动迭代的功能。
 
-所以设计了这个第三个Skill，通过外挂的存档文件evolution.json，来进行迭代和进化管理。
+所以设计了这个第三个Skill，通过外挂的存档文件`evolution.json`，来进行迭代和进化管理。
 
 他的作用就一个，就是只负责根据对话内容吸取经验，然后迭代skill。
 
 你可以理解错，这个Skill会在对话的时候，会默默记笔记，Skill哪里搞砸了、哪里需要改进，它全记在小本本上。
 
-对话结束，它把这些经验保存到一个叫evolution.json的文件里，然后写进Skill.md，下次再遇到同样的坑，Skill就会直接绕过，一坑不踩两次。
+对话结束，它把这些经验保存到一个叫`evolution.json`的文件里，然后写进`Skill.md`，下次再遇到同样的坑，Skill就会直接绕过，一坑不踩两次。
 
 说真的，我一直觉得，这才是真正的自我进化，也可以理解为我们常说的复盘。
 
@@ -248,7 +255,7 @@ github_hash：它是哪个版本。
 
 这个年代，持续的进化，才是唯一的真理。
 
-# **写在最后**
+## 写在最后
 
 这篇文章，可能阅读量数据量啥的，会非常差。
 
@@ -288,4 +295,4 @@ https://github.com/KKKKhazix/Khazix-Skills
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

@@ -1,3 +1,4 @@
+
 # 活动：刘润年度演讲2024 进化的力量
 
 > 来源：[https://langgptai.feishu.cn/docx/BmDwdC9YXoID6Ex7mDnc8QsWnHe](https://langgptai.feishu.cn/docx/BmDwdC9YXoID6Ex7mDnc8QsWnHe)
@@ -11,8 +12,6 @@ LangGPT登上刘润老师的「进化的力量·年度演讲」啦，我们从�
 ![](img/b25890a31f28a8393ff88033e2d26aca.png)
 
 ![](img/84fbe86ef2d614c23d038ea89a60b89a.png)
-
-
 
 ![](img/a6a0b5bcf4aaddb9a92e9608b3fd0a50.png)
 

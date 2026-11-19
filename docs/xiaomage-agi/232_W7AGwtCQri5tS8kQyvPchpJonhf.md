@@ -1,31 +1,26 @@
+
 # Sora背后团队：应届博士带队，00后入列，还专门招了艺术生
 
-> 来源：[https://xmgtoagi.feishu.cn/docx/H4XVdQRF6o3jdqxWVTPcRB80njc](https://xmgtoagi.feishu.cn/docx/H4XVdQRF6o3jdqxWVTPcRB80njc)
-
+> 来源：`https://xmgtoagi.feishu.cn/docx/H4XVdQRF6o3jdqxWVTPcRB80njc`
+>
 > 关注前沿科技 量子位 2024-02-18 12:57 北京
-
+>
 > 量子位 | 👸号 QbitAI
-
-> 链接：https://mp.weixin.qq.com/s/ggST2FiiUN8AgCApKWIh4Q
-
+>
+> 链接：`https://mp.weixin.qq.com/s/ggST2FiiUN8AgCApKWIh4Q`
+>
 > AI总结：
-
+>
 > Sora团队是由OpenAI支持的一个技术团队，他们专注于开发和研究先进的人工智能技术。根据提供的网页内容，Sora团队的主要负责人包括三位应届博士毕业生，以及一些年轻的研究人员，其中包括00后成员。以下是团队中一些关键成员的简介：
-
-1.  **Tim Brooks**：DALL-E 3的作者之一，曾在英伟达实习并主导视频生成研究项目。他在加州大学伯克利分校获得博士学位，主要研究方向是图片与视频生成。
-
-1.  William (Bill) Peebles：与谢赛宁合作开发了Sora的技术基础之一DiT（扩散Transformer）。他在伯克利Efros教授课题组攻读博士期间，研究成果多次入选SIGGRAPH、ICCV、CVPR等学术会议。
-
-1.  **Aditya Ramesh**：DALL-E的创造者，主导了三代DALL-E的研究。尽管只有本科学历，但他在OpenAI的暑期实习中表现出色，被留为正式研究人员。
-
-1.  **Will DePue**：2022年刚从密西根大学计算机系本科毕业，曾在大四时创办市场咨询公司DeepResearch。
-
-1.  **David Schnurr** 和 **Joe Taylor**：分别毕业于加州大学圣塔芭芭拉分校和美国旧金山艺术大学，他们在Sora团队中也扮演着重要角色。
-
-1.  **Li Jing** 和 **Yufei Guo**：两位华人成员，Li Jing是DALL-E 3的共同一作，Yufei Guo的公开资料较少。
-
-1.  **Ricky Wang**：从Meta/Instagram跳槽到OpenAI，曾参与DALL·E 3的推理优化工作。
-
+>
+> 1. Tim Brooks：DALL-E 3的作者之一，曾在英伟达实习并主导视频生成研究项目。他在加州大学伯克利分校获得博士学位，主要研究方向是图片与视频生成。
+> 1. William (Bill) Peebles：与谢赛宁合作开发了Sora的技术基础之一DiT（扩散Transformer）。他在伯克利Efros教授课题组攻读博士期间，研究成果多次入选SIGGRAPH、ICCV、CVPR等学术会议。
+> 1. Aditya Ramesh：DALL-E的创造者，主导了三代DALL-E的研究。尽管只有本科学历，但他在OpenAI的暑期实习中表现出色，被留为正式研究人员。
+> 1. Will DePue：2022年刚从密西根大学计算机系本科毕业，曾在大四时创办市场咨询公司DeepResearch。
+> 1. David Schnurr 和 Joe Taylor：分别毕业于加州大学圣塔芭芭拉分校和美国旧金山艺术大学，他们在Sora团队中也扮演着重要角色。
+> 1. Li Jing 和 Yufei Guo：两位华人成员，Li Jing是DALL-E 3的共同一作，Yufei Guo的公开资料较少。
+> 1. Ricky Wang：从Meta/Instagram跳槽到OpenAI，曾参与DALL·E 3的推理优化工作。
+>
 > 这些成员的背景显示了Sora团队的多样性和跨学科特点，他们不仅在技术上有着深厚的研究基础，而且在艺术和商业领域也有着丰富的经验。这样的团队构成有助于推动Sora项目在人工智能领域的创新和发展。
 
 现在世界上最受关注的技术团队是哪一支？
@@ -54,7 +49,7 @@ William (Bill) Peebles，和谢赛宁合作，搞出了Sora的技术基础之一
 
 这支团队到底什么来头，咱们今天一起仔细聊聊。
 
-## **应届博士带队**
+## 应届博士带队
 
 包括Tim和Bill在内，Sora的主要负责人一共有三名（以下排名不分先后）。
 
@@ -80,7 +75,7 @@ Tim本科就读于卡内基梅隆大学，主修逻辑与计算，辅修计算�
 
 ![](img/788f0ad073d2ad737524229a7dd4a5ff.png)
 
-**而与Tim师出同门、晚毕业4个**月的William Peebles，也是Sora的另一名负责人。
+**而与Tim师出同门、晚毕业4个月的William Peebles**，也是Sora的另一名负责人。
 
 （Peebles在𝕏上用昵称Bill，在Linkedin上及论文署名时用大名William，下文一律用Bill指代。）
 
@@ -90,7 +85,7 @@ Bill本科就读于MIT，主修计算机科学，参加了GAN和text2video的研
 
 毕业后正式开始读博之前，他还参加了Adobe的暑期实习，研究的依然是GAN，该项目和（时任）卡内基梅隆大学华人学者朱俊彦（也是Efros教授学生，现在在MIT）组有合作，并成为CVPR 2022最佳论文候选。
 
-![](img/08db024354f878492d3de84eb0f64c3b.png)
+![](img/08db024355d07b1a8fabcf4e12551080.png)
 
 之后，学期开始，Bill到了伯克利Efros教授课题组攻读博士，研究成果多次入选SIGGRAPH、ICCV、CVPR等学术会议。
 
@@ -122,7 +117,7 @@ Aditya是DALL-E的创造者，主导了三代DALL-E的研究，三个版本的�
 
 毕业之后，Aditya本想继续深造，但在OpenAI的暑期实习中被留了下来，成为了正式研究人员。
 
-## **00后已加入**
+## 00后已加入
 
 Sora团队的本科生，还不止Aditya Ramesh一位。
 
@@ -168,8 +163,8 @@ Li Jing是DALL-E 3的共同一作，2014年本科毕业于北京大学物理系�
 
 参考链接：
 
-[1]https://www.wpeebles.com/
+[1]`https://www.wpeebles.com/`
 
-[2]https://www.timothybrooks.com/about/
+[2]`https://www.timothybrooks.com/about/`
 
-[3]http://adityaramesh.com/about.html
+[3]`http://adityaramesh.com/about.html`

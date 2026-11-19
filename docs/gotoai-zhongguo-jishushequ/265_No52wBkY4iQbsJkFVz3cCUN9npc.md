@@ -1,10 +1,11 @@
+
 # Thehistory.Tech：Timeline of Milestones: History of Artificial Intelligence
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/G3IWdFU7Yo0DlNxPeNpcleCjncd](https://gotoaiworld.feishu.cn/docx/G3IWdFU7Yo0DlNxPeNpcleCjncd)
 
-https://thehistory.tech/history-of-ai-evolution/
+`https://thehistory.tech/history-of-ai-evolution/`
 
-# Timeline of Milestones: History of Artificial Intelligence
+## Timeline of Milestones: History of Artificial Intelligence
 
 Artificial intelligence (AI) has indeed undergone a remarkable transformation in recent years, capturing the imagination and integration into everyday business and society. This transformation represents a profound shift in how we interact with technology and how it impacts our lives and livelihoods.
 
@@ -20,105 +21,63 @@ AI’s synergy with big data is particularly transformative. It acts as a great 
 
 ## Table of Contents
 
-+   When was AI first invented?
-
-+   [Who first created arti](https://thehistory.tech/history-of-ai-evolution/#who-first-created-artificial-intelligence)ficial intelligence?
-
-+   AI Through the Ages
-
-+   [The 1950s](https://thehistory.tech/history-of-ai-evolution/#the-1950-s)
-
-+   [1950](https://thehistory.tech/history-of-ai-evolution/#1950)
-
-+   [1951](https://thehistory.tech/history-of-ai-evolution/#1951)
-
-+   [1952](https://thehistory.tech/history-of-ai-evolution/#1952)
-
-+   [1956](https://thehistory.tech/history-of-ai-evolution/#1956)
-
-+   [1958](https://thehistory.tech/history-of-ai-evolution/#1958)
-
-+   [1959](https://thehistory.tech/history-of-ai-evolution/#1959)
-
-+   [The 1960s](https://thehistory.tech/history-of-ai-evolution/#the-1960-s)
-
-+   [1964](https://thehistory.tech/history-of-ai-evolution/#1964)
-
-+   [1965](https://thehistory.tech/history-of-ai-evolution/#1965)
-
-+   [1966](https://thehistory.tech/history-of-ai-evolution/#1966)
-
-+   [1968](https://thehistory.tech/history-of-ai-evolution/#1968)
-
-+   [1969](https://thehistory.tech/history-of-ai-evolution/#1969)
-
-+   From the 1970s to 1990s
-
-+   [1973](https://thehistory.tech/history-of-ai-evolution/#1973)
-
-+   [1980](https://thehistory.tech/history-of-ai-evolution/#1980)
-
-+   [1981](https://thehistory.tech/history-of-ai-evolution/#1981)
-
-+   [1984](https://thehistory.tech/history-of-ai-evolution/#1984)
-
-+   [1985](https://thehistory.tech/history-of-ai-evolution/#1985)
-
-+   [1988](https://thehistory.tech/history-of-ai-evolution/#1988)
-
-+   [1989](https://thehistory.tech/history-of-ai-evolution/#1989)
-
-+   [1997](https://thehistory.tech/history-of-ai-evolution/#1997)
-
-+   [The 2000s](https://thehistory.tech/history-of-ai-evolution/#the-2000-s)
-
-+   [2000](https://thehistory.tech/history-of-ai-evolution/#2000)
-
-+   [2006](https://thehistory.tech/history-of-ai-evolution/#2006)
-
-+   [2009](https://thehistory.tech/history-of-ai-evolution/#2009)
-
-+   [The 2010s](https://thehistory.tech/history-of-ai-evolution/#the-2010-s)
-
-+   [2011](https://thehistory.tech/history-of-ai-evolution/#2011)
-
-+   [2012](https://thehistory.tech/history-of-ai-evolution/#2012)
-
-+   [2013](https://thehistory.tech/history-of-ai-evolution/#2013)
-
-+   [2014](https://thehistory.tech/history-of-ai-evolution/#2014)
-
-+   [2016](https://thehistory.tech/history-of-ai-evolution/#2016)
-
-+   [2017](https://thehistory.tech/history-of-ai-evolution/#2017)
-
-+   [2018](https://thehistory.tech/history-of-ai-evolution/#2018)
-
-+   [2019](https://thehistory.tech/history-of-ai-evolution/#2019)
-
-+   The 2020s and Beyond
-
-+   [2020](https://thehistory.tech/history-of-ai-evolution/#2020)
-
-+   [2021](https://thehistory.tech/history-of-ai-evolution/#2021)
-
-+   [2022](https://thehistory.tech/history-of-ai-evolution/#2022)
-
-+   [2023](https://thehistory.tech/history-of-ai-evolution/#2023)
++ When was AI first invented?
++ [Who first created artificial intelligence?](https://thehistory.tech/history-of-ai-evolution/#who-first-created-artificial-intelligence)
++ AI Through the Ages
+  + [The 1950s](https://thehistory.tech/history-of-ai-evolution/#the-1950-s)
+    + [1950](https://thehistory.tech/history-of-ai-evolution/#1950)
+    + [1951](https://thehistory.tech/history-of-ai-evolution/#1951)
+    + [1952](https://thehistory.tech/history-of-ai-evolution/#1952)
+    + [1956](https://thehistory.tech/history-of-ai-evolution/#1956)
+    + [1958](https://thehistory.tech/history-of-ai-evolution/#1958)
+    + [1959](https://thehistory.tech/history-of-ai-evolution/#1959)
+  + [The 1960s](https://thehistory.tech/history-of-ai-evolution/#the-1960-s)
+    + [1964](https://thehistory.tech/history-of-ai-evolution/#1964)
+    + [1965](https://thehistory.tech/history-of-ai-evolution/#1965)
+    + [1966](https://thehistory.tech/history-of-ai-evolution/#1966)
+    + [1968](https://thehistory.tech/history-of-ai-evolution/#1968)
+    + [1969](https://thehistory.tech/history-of-ai-evolution/#1969)
+  + From the 1970s to 1990s
+    + [1973](https://thehistory.tech/history-of-ai-evolution/#1973)
+    + [1980](https://thehistory.tech/history-of-ai-evolution/#1980)
+    + [1981](https://thehistory.tech/history-of-ai-evolution/#1981)
+    + [1984](https://thehistory.tech/history-of-ai-evolution/#1984)
+    + [1985](https://thehistory.tech/history-of-ai-evolution/#1985)
+    + [1988](https://thehistory.tech/history-of-ai-evolution/#1988)
+    + [1989](https://thehistory.tech/history-of-ai-evolution/#1989)
+    + [1997](https://thehistory.tech/history-of-ai-evolution/#1997)
+  + [The 2000s](https://thehistory.tech/history-of-ai-evolution/#the-2000-s)
+    + [2000](https://thehistory.tech/history-of-ai-evolution/#2000)
+    + [2006](https://thehistory.tech/history-of-ai-evolution/#2006)
+    + [2009](https://thehistory.tech/history-of-ai-evolution/#2009)
+  + [The 2010s](https://thehistory.tech/history-of-ai-evolution/#the-2010-s)
+    + [2011](https://thehistory.tech/history-of-ai-evolution/#2011)
+    + [2012](https://thehistory.tech/history-of-ai-evolution/#2012)
+    + [2013](https://thehistory.tech/history-of-ai-evolution/#2013)
+    + [2014](https://thehistory.tech/history-of-ai-evolution/#2014)
+    + [2016](https://thehistory.tech/history-of-ai-evolution/#2016)
+    + [2017](https://thehistory.tech/history-of-ai-evolution/#2017)
+    + [2018](https://thehistory.tech/history-of-ai-evolution/#2018)
+    + [2019](https://thehistory.tech/history-of-ai-evolution/#2019)
+  + The 2020s and Beyond
+    + [2020](https://thehistory.tech/history-of-ai-evolution/#2020)
+    + [2021](https://thehistory.tech/history-of-ai-evolution/#2021)
+    + [2022](https://thehistory.tech/history-of-ai-evolution/#2022)
+    + [2023](https://thehistory.tech/history-of-ai-evolution/#2023)
 
 As AI advances, it promises to revolutionize how we work, live, and interact with the world. Its ability to process and understand data at an unprecedented scale reshapes industries from finance to transportation and from education to entertainment. AI’s influence is pervasive, and its boundless potential makes it a driving force shaping the future of business and society.
 
-# When was AI first invented?
+## When was AI first invented?
 
 Artificial Intelligence (AI) was introduced in the mid-20th century. The term “artificial intelligence” was coined by computer scientist John McCarthy in 1956 during the Dartmouth Workshop, often considering AI’s birth as a field. However, creating machines that could simulate human intelligence dates back further.
 
-T[he foundati](https://thehistory.tech/alan-turing-computer-age/)ons of AI can be traced to early computer pioneers like Alan Turing, who, in the 1930s, conceived the notion of a “universal machine” capable of performing any computation that could be described algorithmically. Turing’s work laid the theoretical groundwork for AI.
+The [foundations](https://thehistory.tech/alan-turing-computer-age/) of AI can be traced to early computer pioneers like Alan Turing, who, in the 1930s, conceived the notion of a “universal machine” capable of performing any computation that could be described algorithmically. Turing’s work laid the theoretical groundwork for AI.
 
 Practical AI research began in the 1940s and 1950s with the development of electronic computers. The first AI programs, like the Logic Theorist developed by Allen Newell and Herbert A. Simon, in 1955, aimed to mimic human problem-solving and logical reasoning.
 
 While AI has evolved significantly since its inception, the 1950s marked the official birth of the field and the commencement of dedicated research into creating intelligent machines.
 
-# Who first created artificial intelligence?
+## Who first created artificial intelligence?
 
 Artificial intelligence (AI) does not have a single creator or originator but has evolved through the contributions of numerous researchers and scientists over several decades. The field of AI emerged as a distinct discipline in the mid-20th century.
 
@@ -128,13 +87,17 @@ Additionally, John McCarthy, an American computer scientist, is credited with co
 
 However, it’s important to note that AI’s development has been a collaborative effort involving many prominent researchers, including Marvin Minsky, Herbert A. Simon, and others, who made significant contributions to the field’s early development. AI’s evolution continues to this day through the collective efforts of scientists, engineers, and researchers worldwide.
 
-# AI Through the Ages
+## AI Through the Ages
 
 Artificial intelligence (AI) has a rich history that spans several decades. Here’s a timeline of some key milestones and developments in AI:
 
-## The 1950s
+### The 1950s
 
-### 1950
+#### 1950
+
+
+
+## 1950
 
 In 1950, Alan Turing published “Computing Machinery and Intelligence,” a groundbreaking paper that laid the foundation for the field of artificial intelligence (AI). In this seminal work, Turing introduced the concept of the Turing test, a measure of a machine’s ability to exhibit human-like intelligence. This test became pivotal in AI, challenging researchers to create machines capable of human-like conversation and reasoning. Turing’s visionary insights and the Turing test he proposed marked the beginning of AI research, setting the stage for developing AI technologies and systems that would shape our modern world.
 
@@ -187,6 +150,8 @@ In 1968, Terry Winograd developed SHRDLU, a groundbreaking multimodal AI system.
 ### 1969
 
 In 1969, Arthur Bryson and Yu-Chi Ho introduced a significant breakthrough in artificial neural networks (ANNs) with their backpropagation learning algorithm. This innovation marked a crucial advancement over the perceptron model, enabling the development of multilayer ANNs, which would later become the foundation for deep learning.
+
+
 
 However, around the same time, Marvin Minsky and Seymour Papert published the book “Perceptrons,” which highlighted the limitations of simple neural networks, causing a decline in neural network research. This setback led to the rise of symbolic AI research, emphasizing rule-based systems and knowledge representation as an alternative approach to solving complex problems.
 
@@ -246,29 +211,31 @@ Around the same time, IBM Watson emerged with the ambitious goal of challenging 
 
 ### 2009
 
+
+
 In 2009, Rajat Raina, Anand Madhavan, and Andrew Ng introduced a groundbreaking concept in their paper titled “Large-Scale Deep Unsupervised Learning Using Graphics Processors.” Their pioneering work advocated for the utilization of Graphics Processing Units (GPUs) as a means to train expansive neural networks. This innovation marked a pivotal moment in artificial intelligence, as GPUs offered unprecedented computational power, significantly accelerating the training of deep learning models. This breakthrough laid the foundation for the deep learning revolution, enabling the development of complex AI systems and applications across various domains, from computer vision to natural language processing.
 
-## The 2010s
+# The 2010s
 
-### 2011
+## 2011
 
 In 2011, a significant milestone in the field of artificial intelligence was achieved when Jürgen Schmidhuber, Dan Claudiu Cireșan, Ueli Meier, and Jonathan Masci developed the first Convolutional Neural Network (CNN) to attain “superhuman” performance. Their CNN outperformed human capabilities by winning the German Traffic Sign Recognition competition, showcasing the power of deep learning in computer vision tasks.
 
-[Furth](https://thehistory.tech/history-of-apple-inc-evolution-tech-giant/)ermore, in the same year, Apple released Siri, a groundbreaking voice-powered personal assistant. Siri could understand and respond to voice commands, execute tasks, and provide information, marking a significant leap in natural language processing and human-computer interaction. Siri’s introduction paved the way for integrating AI-powered virtual assistants into everyday technology and devices.
+Furthermore, in the same year, Apple released Siri, a groundbreaking voice-powered personal assistant. Siri could understand and respond to voice commands, execute tasks, and provide information, marking a significant leap in natural language processing and human-computer interaction. Siri’s introduction paved the way for integrating AI-powered virtual assistants into everyday technology and devices.
 
-### 2012
+## 2012
 
 In 2012, Geoffrey Hinton, Ilya Sutskever, and Alex Krizhevsky introduced a groundbreaking deep Convolutional Neural Network (CNN) architecture called “AlexNet.” This innovation secured a decisive victory in the ImageNet Large Scale Visual Recognition Challenge and ignited a profound transformation in deep learning. AlexNet’s success demonstrated the immense potential of deep neural networks for computer vision tasks, leading to a surge in research and practical applications of deep learning across various domains, from image recognition to natural language processing. It marked a pivotal moment that paved the way for deep learning techniques’ rapid expansion and adoption.
 
-### 2013
+## 2013
 
 In 2013, significant computing and artificial intelligence advancements were achieved. China’s Tianhe-2 supercomputer set a remarkable milestone by doubling the world’s top supercomputing speed, reaching 33.86 petaflops, securing its position as the world’s fastest system for the third consecutive time. This marked a significant leap in computational power.
 
-Meanwhile, DeepMi[nd, a ](https://thehistory.tech/history-of-google/)subsidiary of Google, introduced a groundbreaking approach to AI with deep reinforcement learning. They developed a Convolutional Neural Network (CNN) that learned tasks through rewards and repetition, ultimately surpassing human expert levels in playing games, showcasing the potential of machine learning in gaming and problem-solving.
+Meanwhile, DeepMind, a subsidiary of Google, introduced a groundbreaking approach to AI with deep reinforcement learning. They developed a Convolutional Neural Network (CNN) that learned tasks through rewards and repetition, ultimately surpassing human expert levels in playing games, showcasing the potential of machine learning in gaming and problem-solving.
 
 Additionally, Google researcher Tomas Mikolov and his team introduced Word2vec, a revolutionary technique for automatically identifying semantic relationships between words. This innovation paved the way for more advanced natural language processing and understanding, contributing to the evolution of AI in language-related tasks.
 
-### 2014
+## 2014
 
 In 2014, significant advancements in artificial intelligence were made. Ian Goodfellow and his colleagues introduced Generative Adversarial Networks (GANs), a groundbreaking machine learning framework. GANs revolutionized image generation, transformation, and even led to the creation of deepfake technology, which could convincingly manipulate visual and audio content.
 
@@ -276,13 +243,13 @@ Diederik Kingma and Max Welling introduced Variational Autoencoders (VAEs), anot
 
 Additionally, Facebook developed DeepFace, a deep learning facial recognition system. DeepFace achieved near-human accuracy in identifying human faces within digital images, demonstrating remarkable progress in computer vision and biometric technology. These developments paved the way for numerous applications in AI, from creative content generation to enhanced facial recognition systems.
 
-### 2016
+## 2016
 
 In 2016, DeepMind’s AlphaGo made history by defeating the world-renowned Go player Lee Sedol in Seoul, South Korea. This monumental victory showcased the remarkable capabilities of artificial intelligence in mastering a complex and strategic board game, reminiscent of IBM’s Deep Blue defeating chess champion Garry Kasparov nearly two decades prior.
 
 Simultaneously, Uber initiated a groundbreaking self-driving car pilot program in Pittsburgh, marking a significant step towards autonomous transportation. This innovative venture offered a select group of users the opportunity to experience self-driving technology firsthand, representing a major development in the pursuit of autonomous vehicles and the future of transportation.
 
-### 2017
+## 2017
 
 In 2017, significant developments and warnings in artificial intelligence (AI) emerged. Stanford researchers introduced diffusion models, a groundbreaking technique outlined in “Deep Unsupervised Learning Using Nonequilibrium Thermodynamics.” This approach allowed for reverse-engineering noise addition in final images, opening new possibilities in image processing.
 
@@ -290,7 +257,7 @@ Simultaneously, Google researchers introduced the concept of transformers in the
 
 Amid these advancements, renowned physicist Stephen Hawking issued a stark caution, highlighting the need to prepare for and mitigate potential risks associated with AI. He warned that AI could pose a catastrophic threat to our civilization’s history without proper precautions.
 
-### 2018
+## 2018
 
 In 2018, significant advancements in robotics and artificial intelligence (AI) marked a transformative year. In collaboration with Airbus and the German Aerospace Center DLR, IBM introduced Cimon, a groundbreaking robot designed for space missions. Cimon aimed to assist astronauts in performing tasks aboard the International Space Station, showcasing the potential of AI-driven robotics in extreme environments.
 
@@ -298,31 +265,35 @@ OpenAI’s release of GPT (Generative Pre-trained Transformer) marked a pivotal 
 
 Additionally, Groove X introduced Lovot, a remarkable home mini-robot. Lovot was designed to sense and respond to human emotions, creating a unique and emotionally engaging human-robot interaction experience. This innovation represented a significant step toward more emotionally intelligent AI-driven devices, potentially impacting daily life.
 
-### 2019
+## 2019
 
-In 2019, significant advancements in[ artifici](https://thehistory.tech/history-of-microsoft-inc/)al intelligence were achieved. Microsoft introduced the Turing Natural Language Generation model, a powerful language model boasting 17 billion parameters, pushing the boundaries of natural language understanding and generation.
+In 2019, significant advancements in artificial intelligence were achieved. Microsoft introduced the Turing Natural Language Generation model, a powerful language model boasting 17 billion parameters, pushing the boundaries of natural language understanding and generation.
 
 Meanwhile, Google AI collaborated with Langone Medical Center to develop a deep learning algorithm that demonstrated remarkable potential in medical imaging. This algorithm outperformed radiologists in the crucial task of detecting potential lung cancers. Such breakthroughs highlighted AI’s capacity to enhance medical diagnosis and underscored its potential to revolutionize healthcare through improved accuracy and efficiency in disease detection and diagnosis.
 
-## The 2020s and Beyond
+# The 2020s and Beyond
+
+
+
+# 人工智能发展年表
 
 ![](img/35f991f6fe8569e088c0897051635d31.png)
 
-### 2020
+## 2020
 
 In 2020, several significant developments in the field of artificial intelligence made headlines. The University of Oxford introduced the Curial AI test, designed to swiftly detect COVID-19 in emergency room patients, aiding in the fight against the global pandemic. OpenAI released GPT-3 LLM, a groundbreaking model boasting 175 billion parameters, capable of generating remarkably humanlike text. Nvidia unveiled the beta version of its Omniverse platform, revolutionizing the creation of 3D models in the physical world. Additionally, DeepMind’s AlphaFold made history by winning the Critical Assessment of Protein Structure Prediction contest, showcasing AI’s potential in solving complex scientific challenges, particularly in the field of biology and healthcare.
 
-### 2021
+## 2021
 
 In 2021, OpenAI made significant strides in AI with the introduction of Dall-E, a groundbreaking multimodal AI system capable of generating images from textual descriptions. This innovative technology demonstrated AI’s ability to understand and translate text into visual content, opening up new possibilities in various creative and practical applications.
 
 Additionally, the University of California, San Diego, achieved a remarkable feat by creating a four-legged soft robot that operated entirely on pressurized air, eschewing traditional electronic components. This development showcased the potential for alternative, bio-inspired approaches to robotics, offering greater adaptability and potential applications in areas like healthcare and exploration.
 
-### 2022
+## 2022
 
 In 2022, notable events in technology included Google’s controversial firing of software engineer Blake Lemoine, who was let go for allegedly revealing confidential information about Lamda and asserting it possessed sentience. DeepMind, on the other hand, introduced AlphaTensor, a tool designed to discover innovative, efficient, and verifiably correct algorithms. Meanwhile, Intel made strides in combating misinformation with its FakeCatcher, a real-time deepfake detector boasting an impressive 96% accuracy rate. OpenAI expanded its AI offerings by releasing ChatGPT in November, providing users with a chat-based interface to access its advanced GPT-3.5 Language Model. These developments showcased the ongoing evolution of AI and its applications in 2022.
 
-### 2023
+## 2023
 
 OpenAI’s introduction of GPT-4, a multimodal Language Model (LLM) capable of processing both text and image prompts, has raised significant concerns. A coalition, including notable figures like Elon Musk and Steve Wozniak, along with thousands of signatories, calls for a six-month halt on training “AI systems more powerful than GPT-4.” This plea underscores the growing apprehension about the rapid advancement of AI technology and the need for ethical considerations, safety measures, and comprehensive regulations to ensure responsible development and deployment of increasingly powerful AI systems. The debate over AI’s potential risks and benefits continues to intensify within the global tech community.
 

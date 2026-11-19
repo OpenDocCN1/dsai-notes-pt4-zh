@@ -1,3 +1,4 @@
+
 # 智能合同平台 Evisort 总法律顾问：数据和技术将为法律部门创造新的范式
 
 > 来源：[https://docs.feishu.cn/docx/AiI4dzJ8loKopaxCEQ6cYMnanhg](https://docs.feishu.cn/docx/AiI4dzJ8loKopaxCEQ6cYMnanhg)
@@ -6,7 +7,7 @@
 
 在这个趋势下，如何更好把握科技的发展方向，不论是对法律从业者还是对法律科技公司来说都至关重要。近几年来，国内外多家法律科技公司和先锋法律人们做出了自己的预测，法律修音机收集并翻译了这些文章，进行持续放送。
 
-近[期，智能合同管理平台「Evisort」的领导者们分享了他们对 2023 年法律行业和科技发展](https://www.evisort.com/blog/data-and-technology-will-create-a-new-paradigm-for-law-departments)的预测。2022 年 12 月 13 日，「Evisort」的总法律顾问 Margaret 发布了《2023 Predictions: Data and Technology Will Create a New Paradigm for Law Departments》—— 数据和技术将为法律部门创造新的范式。
+[近期，智能合同管理平台「Evisort」的领导者们分享了他们对 2023 年法律行业和科技发展](https://www.evisort.com/blog/data-and-technology-will-create-a-new-paradigm-for-law-departments)的预测。2022 年 12 月 13 日，「Evisort」的总法律顾问 Margaret 发布了《2023 Predictions: Data and Technology Will Create a New Paradigm for Law Departments》—— 数据和技术将为法律部门创造新的范式。
 
 以下，enjoy ：）
 
@@ -14,7 +15,7 @@
 
 法律实务正迅速地从人工审查文件和按小时计费转变为全新的范式。数据和自动化正在取代传统的法律工作方法，使法律部门能够以更低的计费模式提供有价值且实时的业务建议。
 
-## **更多地应用技术**
+## 更多地应用技术
 
 在企业面临较大经济压力的当下，法律部门将被要求降低成本[，少花钱](https://www.evisort.com/blog/five-key-benefits-of-contract-automation)多办事。这就引出了一个问题：如何利用技术以更低的成本快速、准确和高效地提供服务？
 
@@ -22,21 +23,21 @@
 
 注意，法律专业人士需要的技术除了要高效还要灵活，可以无缝集成到组织的各个业务环节中，快速且直观地让终端用户与法律部门沟通。
 
-## **更多地使用数据**
+## 更多地使用数据
 
 数据、自动化和法律运营一直是过去几年的流行词，未来这种关注还将继续存在。
 
-人们越来越意识到，数据是他们最有价值[的资产之一。法](https://www.evisort.com/blog/find-anything-in-seconds-with-a-contract-intelligence-platform)律部门拥有丰富的知识，预计将更多地使用数据，，以最大限度地发挥数据的价值。律师不再只能就法律风险提供建议，还可以参与关于公司盈利能力和关键绩效指标的讨论。在未来几年，法律部门将越来越多地利用这些信息来提供前瞻性的业务分析。
+人们越来越意识到，数据是他们最有价值[的资产之一。法](https://www.evisort.com/blog/find-anything-in-seconds-with-a-contract-intelligence-platform)律部门拥有丰富的知识，预计将更多地使用数据，以最大限度地发挥数据的价值。律师不再只能就法律风险提供建议，还可以参与关于公司盈利能力和关键绩效指标的讨论。在未来几年，法律部门将越来越多地利用这些信息来提供前瞻性的业务分析。
 
 律师们还将越来越多地审查合同的长期影响。除了跟踪合同义务和截止日期外，法律工作还需要密切关注合同会如何影响企业的无形资源 —— 比如时间和生产力，另外还需要分析具体条款如何随着时间的推移而改变公司的收入，这对于 2023 年仍然不确定的经济而言尤为重要。
 
-## **法律部门定位的演变**
+## 法律部门定位的演变
 
 在提高数据使用的基础上，法律部门将成为企业值得信赖的顾问和商业合作伙伴。法律部门不仅可以提供法律建议以降低风险，还可以回答一些诸如“我们如何才能最好地实现这一业务目标？”这样的问题。
 
 我们已经看到了这种转变，而且随着新产品、新市场和新法律的出现，这种转变将会加速。未来，律师必须变得更加敏捷，与业务保持一致，积极主动地支持商业团队。
 
-## **改变法律计费模式**
+## 改变法律计费模式
 
 目前，法律计费模式已经发生了根本性变化，而且这些变化将会加速。
 

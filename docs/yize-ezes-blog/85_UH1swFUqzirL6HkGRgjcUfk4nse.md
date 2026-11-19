@@ -1,14 +1,15 @@
+
 # LangChain Dark
 
-> 来源：[https://chatmemo.feishu.cn/docx/Lrxwd3jtIo7wE4xmyQucMxaBn6c](https://chatmemo.feishu.cn/docx/Lrxwd3jtIo7wE4xmyQucMxaBn6c)
+> 来源：`https://chatmemo.feishu.cn/docx/Lrxwd3jtIo7wE4xmyQucMxaBn6c`
 
-<https://chatmemo.feishu.cn/sync/SIErdovINs8WT1ba0sJc5f4fnsh>
+> `https://chatmemo.feishu.cn/sync/SIErdovINs8WT1ba0sJc5f4fnsh`
 
-> **作者：沧海九粟（****s**pace.bilibili.com/28357052）
+> 作者：沧海九粟（`space.bilibili.com/28357052`）
 
 ```
-&lt;style&gt;
-  @impo[r](https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css&#x27;);)t url(&#x27;https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css&#x27;);
+<style>
+  @import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css');
   :root {
     --langchain-primary: #1B4542;     /* 深绿色主色 */
     --langchain-secondary: #2B5753;    /* 次要绿色 */
@@ -30,7 +31,7 @@
   }
   
   .card::before {
-    content: &quot;&quot;;
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -58,17 +59,17 @@
   .date {
     font-size: 14px;
     color: #9DB4B0;
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
   }
   .product-name {
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
     font-size: 13px;
     font-weight: 500;
     color: #9DB4B0;
     letter-spacing: 0.1em;
   }
   .title {
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
     font-size: 22px;
     font-weight: 700;
     color: #FFFFFF;
@@ -79,7 +80,7 @@
     align-items: center;
   }
   .title:before {
-    content: &quot;🦜&quot;;
+    content: "🦜";
     margin-right: 8px;
     font-size: 0.9em;
     text-shadow: 0 0 15px rgba(45,130,119,0.3);
@@ -88,7 +89,7 @@
     font-size: 14px;
     color: #9DB4B0;
     margin-bottom: 24px;
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
   }
   .summary {
     background: rgba(45, 130, 119, 0.1);
@@ -100,7 +101,7 @@
     line-height: 1.8;
     letter-spacing: 0.02em;
     border-left: 3px solid var(--langchain-accent);
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
   }
   .points {
     margin-bottom: 24px;
@@ -113,10 +114,10 @@
     color: #E6E6E6;
     padding: 2px 0;
     line-height: 1.6;
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
   }
   .point:before {
-    content: &quot;🔗&quot;;
+    content: "🔗";
     margin-right: 8px;
     font-size: 14px;
   }
@@ -148,52 +149,52 @@
     flex: 1;
   }
   .qr-title {
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 6px;
   }
   .qr-subtitle {
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
     font-size: 14px;
     color: #9DB4B0;
     margin-bottom: 6px;
     line-height: 1.4;
   }
   .platform {
-    font-family: &#x27;LXGW WenKai&#x27;, serif;
+    font-family: 'LXGW WenKai', serif;
     font-size: 14px;
     color: #9DB4B0;
     display: flex;
     align-items: center;
   }
-&lt;/style&gt;
-&lt;div class=&quot;card&quot;&gt;
-  &lt;div class=&quot;langchain-decoration&quot;&gt;🦜🔗&lt;/div&gt;
-  &lt;div class=&quot;header&quot;&gt;
-    &lt;div class=&quot;date&quot;&gt;{{DATE}}&lt;/div&gt;
-    &lt;div class=&quot;product-name&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;h1 class=&quot;title&quot;&gt;{{TITLE}}&lt;/h1&gt;
-  &lt;div class=&quot;authors&quot;&gt;{{AUTHORS}}&lt;/div&gt;
-  &lt;div class=&quot;summary&quot;&gt;
+</style>
+<div class="card">
+  <div class="langchain-decoration">🦜🔗</div>
+  <div class="header">
+    <div class="date">{{DATE}}</div>
+    <div class="product-name"></div>
+  </div>
+  <h1 class="title">{{TITLE}}</h1>
+  <div class="authors">{{AUTHORS}}</div>
+  <div class="summary">
     {{SUMMARY}}
-  &lt;/div&gt;
-  &lt;div class=&quot;points&quot;&gt;
+  </div>
+  <div class="points">
     {{#each POINTS}}
-    &lt;div class=&quot;point&quot;&gt;{{this}}&lt;/div&gt;
+    <div class="point">{{this}}</div>
     {{/each}}
-  &lt;/div&gt;
-  &lt;div class=&quot;qr-section&quot;&gt;
-    &lt;div id=&quot;qrcode&quot;&gt;
-      &lt;!-- 这里放置二维码图片 --&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;qr-info&quot;&gt;
-      &lt;div class=&quot;qr-title&quot;&gt;{{QR_TITLE}}&lt;/div&gt;
-      &lt;div class=&quot;qr-subtitle&quot;&gt;{{QR_SUBTITLE}}&lt;/div&gt;
-      &lt;div class=&quot;platform&quot;&gt;{{PLATFORM}}&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+  </div>
+  <div class="qr-section">
+    <div id="qrcode">
+      <!-- 这里放置二维码图片 -->
+    </div>
+    <div class="qr-info">
+      <div class="qr-title">{{QR_TITLE}}</div>
+      <div class="qr-subtitle">{{QR_SUBTITLE}}</div>
+      <div class="platform">{{PLATFORM}}</div>
+    </div>
+  </div>
+</div>
 ```

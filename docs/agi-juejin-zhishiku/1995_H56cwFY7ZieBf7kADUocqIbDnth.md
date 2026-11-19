@@ -1,8 +1,7 @@
-# 07.14-彻底改写Transformer！「能量驱动架构」横空出世，通用推理时代要来了？
-
-> 来源：[https://agijuejin.feishu.cn/docx/W0ZGd558MoC22XxlX9ocrsdLnpb](https://agijuejin.feishu.cn/docx/W0ZGd558MoC22XxlX9ocrsdLnpb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 07 月 14 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/W0ZGd558MoC22XxlX9ocrsdLnpb](https://agijuejin.feishu.cn/docx/W0ZGd558MoC22XxlX9ocrsdLnpb)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

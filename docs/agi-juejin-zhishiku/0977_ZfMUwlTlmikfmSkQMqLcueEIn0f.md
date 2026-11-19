@@ -1,3 +1,4 @@
+
 # 高级RAG技巧
 
 > 来源：[https://agijuejin.feishu.cn/docx/SMhYdfAl5oHPyKx0V0pcf6L5niJ](https://agijuejin.feishu.cn/docx/SMhYdfAl5oHPyKx0V0pcf6L5niJ)
@@ -50,7 +51,7 @@
 
 +   实现：计算句子嵌入之间的 [余弦距离 ](https://www.zhihu.com/search?q=%E4%BD%99%E5%BC%A6%E8%B7%9D%E7%A6%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)。如果两个句子在语义上相似（低于某个阈值），它们属于同一个块。这会根据内容的语义结构创建可变长度的块。
 
-+   优缺点：产生更连贯和上下文有意义的块，提高检索准确性，但需要前向通过基于BERT的编码器模型，该模型比简单分块计算量更大。
++   优缺点：产生更连贯和上下文有意义的块，提高检索准确性，但需要前向通过基于`BERT`的编码器模型，该模型比简单分块计算量更大。
 
 ![](img/b70717df8254115f837717cd1da6c41c.png)
 
@@ -68,7 +69,7 @@
 
 1. 基于元数据的添加和过滤：
 
-+   概述：元数据提供了额外的上下文，可以显着提高检索准确性。通过合并日期、患者年龄和先决条件等元数据，可以在搜索期间过滤不相关的信息。过滤有助于缩小搜索空间，使检索过程更加高效和相关。
++   概述：元数据提供了额外的上下文，可以显著提高检索准确性。通过合并日期、患者年龄和先决条件等元数据，可以在搜索期间过滤不相关的信息。过滤有助于缩小搜索空间，使检索过程更加高效和相关。
 
 +   实现：索引数据时，将元数据与向量化文本一起存储。例如，如果索引患者记录，则包括年龄、就诊日期和特定条件等元数据。使用此元数据过滤搜索结果，确保系统只检索相关信息。
 
@@ -76,21 +77,21 @@
 
 ![](img/9cb81ca0ef6d851453fa343e3e86306c.png)
 
-2. 用GLiNER为块 [生成元 ](https://www.zhihu.com/search?q=%E7%94%9F%E6%88%90%E5%85%83&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)数据
+2. 用`GLiNER`为块 [生成元 ](https://www.zhihu.com/search?q=%E7%94%9F%E6%88%90%E5%85%83&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)数据
 
-并不总是有大量的元数据来增强块，但是用GLiNER（Generalized Linear Named Entity Recognizer）模型可以即时从块中生成元数据！GLiNER是强大的基于BERT的模型，可用于在摄取阶段标记块，即时创建元数据，显著改善检索过程。
+并不总是有大量的元数据来增强块，但是用`GLiNER`（Generalized Linear Named Entity Recognizer）模型可以即时从块中生成元数据！`GLiNER`是强大的基于`BERT`的模型，可用于在摄取阶段标记块，即时创建元数据，显著改善检索过程。
 
-+   使用GLiNER自动打标签
++   使用`GLiNER`自动打标签
 
-**实现 **：将每个块与要在块中识别的标签一起提供给GLiNER。如果在块[文本中找](https://www.zhihu.com/search?q=%E7%BD%AE%E4%BF%A1%E5%BA%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)到标签，将识别它们，如果没有高 置信度 匹配，则不会生成标签，从而减少误报！
+**实现**：将每个块与要在块中识别的标签一起提供给`GLiNER`。如果在块[文本中找](https://www.zhihu.com/search?q=%E7%BD%AE%E4%BF%A1%E5%BA%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)到标签，将识别它们，如果没有高 置信度 匹配，则不会生成标签，从而减少误报！
 
-**优缺点 **：对于一般用途非常有效，但可能需要对特定领域的数据集和应用进行微调。
+**优缺点**：对于一般用途非常有效，但可能需要对特定领域的数据集和应用进行微调。
 
 +   [查询解析 ](https://www.zhihu.com/search?q=%E6%9F%A5%E8%AF%A2%E8%A7%A3%E6%9E%90&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)和过滤
 
-**实现 **：GLiNER的另一个用途是解析传入查询，将其与标记的元数据匹配过滤结果。
+**实现**：`GLiNER`的另一个用途是解析传入查询，将其与标记的元数据匹配过滤结果。
 
-**优缺点 **：通过确保上下文相关性来提高检索准确性，但增加了额外的处理步骤。
+**优缺点**：通过确保上下文相关性来提高检索准确性，但增加了额外的处理步骤。
 
 ![](img/6d56f1770ec9de597e3c966dc19f47af.png)
 
@@ -106,7 +107,7 @@
 
 纯向量搜索可能会错过这些关键字，而基于关键字的搜索可确保匹配特定的重要术语。通过集成这两种方法，混合搜索可以实现更全面的检索过程。
 
-向量[和关键字](https://www.zhihu.com/search?q=%E5%8F%AC%E5%9B%9E%E7%8E%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)检索并行工作，然后根据加权系统合并和排名结果。例如，使用Weaviate，可以调整alpha参数平衡向量和关键字搜索结果的重要性，创建一个组合的排序文档列表。这么做平衡了准确率和 召回率 ，提高了整体检索质量，但需要仔细调整权重参数。
+向量[和关键字](https://www.zhihu.com/search?q=%E5%8F%AC%E5%9B%9E%E7%8E%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)检索并行工作，然后根据加权系统合并和排名结果。例如，使用`Weaviate`，可以调整`alpha`参数平衡向量和关键字搜索结果的重要性，创建一个组合的排序文档列表。这么做平衡了准确率和 召回率 ，提高了整体检索质量，但需要仔细调整权重参数。
 
 ![](img/814eee1957a1566fdd17eaa2fa4a5243.png)
 
@@ -116,7 +117,7 @@
 
 +   向量数据库的查询重写：患者的初始查询被转换为对数据库更友好[的格式。例](https://www.zhihu.com/search?q=%E9%A3%9F%E6%8C%87%E9%BA%BB%E6%9C%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)如，“我的左肩疼，我的拇指和 食指麻木 ”可能会被重写为“左肩疼痛。麻木。食指麻木。”
 
-+   语言模型的提示重写：这涉及自动和交互式自动构建提示，以优化与语言模型的交互，增强生成结果的质量和准确性。像DSPy这样的框架有助于这个过程。
++   语言模型的提示重写：这涉及自动和交互式自动构建提示，以优化与语言模型的交互，增强生成结果的质量和准确性。像`DSPy`这样的框架有助于这个过程。
 
 这些重写的查询和提示确保搜索过程更好地理解和检索相关文档，并以最佳方式提示语言模型。查询重写可以如下所示实现。
 
@@ -126,7 +127,7 @@
 
 虽然预训练的嵌入模型提供了一个很好的起点，但在特定数据集上微调这些模型可以显著提高检索性能。这包括：
 
-+   选[择适当的模](https://www.zhihu.com/search?q=%E7%B3%BB%E5%88%97%E6%9F%A5%E8%AF%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)型：对于医学等专业领域，选择在相关数据上预训练的模型。对于这个特定的示例，选择使用MedCPT 系列查询 和文档编码器，这些编码器已经用PubMed搜索日志中255M查询-文章对进行了预训练。
++   选[择适当的模](https://www.zhihu.com/search?q=%E7%B3%BB%E5%88%97%E6%9F%A5%E8%AF%A2&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)型：对于医学等专业领域，选择在相关数据上预训练的模型。对于这个特定的示例，选择使用`MedCPT` 系列查询 和文档编码器，这些编码器已经用`PubMed`搜索日志中255M查询-文章对进行了预训练。
 
 +   使用正负对象对进行微调：通过收集自己的数据并创建相似（正）和不相似（负）示例对来进一步提高这些模型的性能，并微调模型以更好地理解这些区别。这有助于模型学习特定领域的关系和语义学，提高检索性能，但需要精心设计的训练数据。
 
@@ -138,35 +139,33 @@
 
 ### 自动删除不相关信息
 
-AutoCut是一种过滤掉从数据库中检索到的不相关信息的方法，否则可能会误导LLM并导致幻觉。它的工作原理如下：
+`AutoCut`是一种过滤掉从数据库中检索到的不相关信息的方法，否则可能会误导LLM并导致幻觉。它的工作原理如下：
 
-+   [检索和评分相](https://www.zhihu.com/search?q=%E7%9B%B8%E4%BC%BC%E6%80%A7%E5%88%86%E6%95%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)似性：进行查询时，将检索多个对象及其 相似性分数 。
 
-+   识别和切断：使用相似性分数，确定分数显著下降的截止点。超过此点的对象被认为相关性较低，并自动排除。
+
++ [检索和评分相似性](https://www.zhihu.com/search?q=%E7%9B%B8%E4%BC%BC%E6%80%A7%E5%88%86%E6%95%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)：进行查询时，将检索多个对象及其相似性分数。
++ 识别和切断：使用相似性分数，确定分数显著下降的截止点。超过此点的对象被认为相关性较低，并自动排除。
 
 假设检索到六个对象，相似性得分可能在第四个对象之后急剧下降。通过检查相似性得分的变化率，可以确定要排除哪些对象，确保仅将最相关的信息提供给LLM。
 
 ![](img/f02a273f77a8d0f27fd6e556e158ce60.png)
 
-### 重排序检索到的对象
+## 重排序检索到的对象
 
 重排序使用辅助的、更复杂的模型，根据最初检索到的对象与查询的相关性对其进行重新评估和重排序。这个过程增强了最终检索到的集合的质量。以下是它的工作原理：
 
-+   过度召回：最初检索的对象比需要的多。
-
-+   应用ranker模型：使用高延迟、重量级模型，通常是交叉编码器，重新评估每个检索到的对象的相关性。该模型成对考虑查询和每个检索到的对象，以重新评估它们的相似性。
-
-+   重排序结果：基于新的评估，重排序对象，以在顶部反映最相关的结果。这种方法确保最相关的文档被优先排序，提高了提供给LLM的数据的整体质量。
++ 过度召回：最初检索的对象比需要的多。
++ 应用`ranker`模型：使用高延迟、重量级模型，通常是交叉编码器，重新评估每个检索到的对象的相关性。该模型成对考虑查询和每个检索到的对象，以重新评估它们的相似性。
++ 重排序结果：基于新的评估，重排序对象，以在顶部反映最相关的结果。这种方法确保最相关的文档被优先排序，提高了提供给LLM的数据的整体质量。
 
 ![](img/5b0c1d620df8eaceb779e01dfe75980f.png)
 
-### 微调LLM
+## 微调LLM
 
-对特定领域数据微调LLM可以显著提高其在该领域内的性能。例如，使用像Meditron70B这样的模型，它是LLaMA2 70b专门针对医学数据的微调版本，使用：
+对特定领域数据微调LLM可以显著提高其在该领域内的性能。例如，使用像`Meditron70B`这样的模型，它是`LLaMA2 70b`专门针对医学数据的微调版本，使用：
 
-+   无监督微调：在大量特定领域文本（例如PubMed文献）上继续预训练模型。
-
-+   [监督微调 ](https://www.zhihu.com/search?q=%E7%9B%91%E7%9D%A3%E5%BE%AE%E8%B0%83&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)：在特定领域任务（例如医学选择题）上使用监督学习进一步完善模型。[这种专门的训练有](https://www.zhihu.com/search?q=GPT-3.5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)助于模型在目标领域中表现异常出色，在特定任务中优于其基本模型和 GPT-3.5 等更大、不太专业的模型。
++ 无监督微调：在大量特定领域文本（例如PubMed文献）上继续预训练模型。
++ [监督微调](https://www.zhihu.com/search?q=%E7%9B%91%E7%9D%A3%E5%BE%AE%E8%B0%83&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)：在特定领域任务（例如医学选择题）上使用监督学习进一步完善模型。[这种专门的训练有](https://www.zhihu.com/search?q=GPT-3.5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A711988265%7D)助于模型在目标领域中表现异常出色，在特定任务中优于其基本模型和`GPT-3.5`等更大、不太专业的模型。
 
 ## 总结
 
@@ -174,4 +173,4 @@ AutoCut是一种过滤掉从数据库中检索到的不相关信息的方法，�
 
 ## 参考文档
 
-[A](https://link.zhihu.com/?target=https%3A//weaviate.io/blog/advanced-rag)dvanced RAG Techniques | Weaviate - Vector Database
+[Advanced RAG Techniques | Weaviate - Vector Database](https://link.zhihu.com/?target=https%3A//weaviate.io/blog/advanced-rag)

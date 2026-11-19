@@ -1,9 +1,8 @@
+
 # OpenAI 开发者大会的一个细节
 
 > 来源：[https://agijuejin.feishu.cn/docx/JwludBYEvo2mBPxFiaecOSfUnCe](https://agijuejin.feishu.cn/docx/JwludBYEvo2mBPxFiaecOSfUnCe)
-
 > 张海庚｜[阅读原文](https://mp.weixin.qq.com/s/3aLYN4AADJEO3soow1levg)
-
 > 转载请联系原作者取得授权
 
 OpenAI 开发者大会刷屏了，名副其实的新一代科技春晚，说一个似乎没什么人提到、但我个人很喜欢的细节。
@@ -30,7 +29,7 @@ Koert 在一百岁生日那天邂逅了 ChatGPT ，发现它「很友善、耐�
 
 就跟多点触控让现在任何一个三岁娃娃都能无师自通玩转 iPhone 一样。
 
-相关阅读：
+## 相关阅读
 
 · ChatGPT 8月最新数据：流量持续下降，产品经理应该怎么看？
 

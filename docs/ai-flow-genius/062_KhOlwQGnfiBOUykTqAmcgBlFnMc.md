@@ -1,10 +1,11 @@
+
 # 吴恩达来信：持续推动AGI发展
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/FBevdbGQYopoQOxWDlscZcL6nze](https://jalicvoygc0.feishu.cn/docx/FBevdbGQYopoQOxWDlscZcL6nze)
-
-引用：https://zhuanlan.zhihu.com/p/616631701
-
-作者：吴恩达
+>
+> 引用：[https://zhuanlan.zhihu.com/p/616631701](https://zhuanlan.zhihu.com/p/616631701)
+>
+> 作者：吴恩达
 
 Dear friends,
 
@@ -16,13 +17,13 @@ How about this?
 
 > “These creative moments give us confidence that AI can be used as a positive multiplier for human ingenuity.”
 
-These are not recent statements from g[enera](https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3D3e22ufcqfTs%26ref%3Ddl-staging-website.ghost.io)tive AI companies working on large language models (LLMs) or image [generat](https://link.zhihu.com/?target=https%3A//www.deepmind.com/research/highlighted-research/alphago%3Fref%3Ddl-staging-website.ghost.io)ion models! The first is from a 2011 IBM video that promotes the Watson system’s upcoming participation in the TV game show Jeopardy!. The second comes from Google DeepMind webpage about AlphaGo, which was released in 2015.
+These are not recent statements from generative AI companies working on large language models (LLMs) or image generation models! The first is from a 2011 IBM video that promotes the Watson system’s upcoming participation in the TV game show Jeopardy!. The second comes from Google DeepMind webpage about AlphaGo, which was released in 2015.
 
 IBM’s and DeepMind’s work moved AI forward. But it also inspired some people’s imaginations to get ahead of them. Some supposed that the technologies behind Watson and AlphaGo represented stronger AI capabilities than they did. Similarly, recent progress on LLMs and image generation models has reignited speculation about artificial general intelligence (AGI).
 
-Generative AI is very exciting! Nonetheless, today’s models are far from AGI. Here’s a reasonable definition of from Wikipedia:
+Generative AI is very exciting! Nonetheless, today’s models are far from AGI. Here’s a reasonable definition from Wikipedia:
 
-“Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that human beings or other animals can.”
+> “Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that human beings or other animals can.”
 
 The latest LLMs exhibit some superhuman abilities, just as a calculator exhibits superhuman abilities in arithmetic. At the same time, there are many things that humans can learn that AI agents today are far from being able to learn.
 
@@ -30,7 +31,7 @@ If you want to chart a course toward AGI, I think the baby steps we’re making 
 
 To be clear, though, in the past year, I think we’ve made one year of wildly exciting progress in what might be a 50- or 100-year journey. Benchmarking against humans and animals doesn’t seem to be the most useful question to focus on at the moment, given that AI is simultaneously far from reaching this goal and also surpasses it in valuable ways. I’d rather focus on the exciting task of putting these technologies to work to solve important applications, while also addressing realistic risks of harm.
 
-While AGI may be part of an indeterminate future, we have amazing capabilities today, and we can do many useful things with them. It will take great effort on all of our parts to to find ways to harness them to advance humanity. Let’s get to work on that.
+While AGI may be part of an indeterminate future, we have amazing capabilities today, and we can do many useful things with them. It will take great effort on all of our parts to find ways to harness them to advance humanity. Let’s get to work on that.
 
 Keep learning!
 
@@ -42,19 +43,19 @@ Andrew
 
 先来做个小测试吧。下面这段话出自于哪家公司?
 
-“创造可以真正以类似人类的思维水平来沟通和协作的计算机一直都是一个挑战，. . . .我们正在做的是创建一个能够应用于全世界各种应用程序的系统，并从本质上减少为极难问题寻找答案的时间。”
+> “创造可以真正以类似人类的思维水平来沟通和协作的计算机一直都是一个挑战，. . . .我们正在做的是创建一个能够应用于全世界各种应用程序的系统，并从本质上减少为极难问题寻找答案的时间。”
 
 再来看看这一句：
 
-“这些创意时刻让我们相信，人工智能可以作为人类创造力的积极助推器。”
+> “这些创意时刻让我们相信，人工智能可以作为人类创造力的积极助推器。”
 
-这些不是生忙于研究大型语言模型 (LLMs) 或图像生成模型的生成式人工智能公司最近所做的声明！第一段话是2011年IBM宣传Watson系统即将参加电视游戏节目 "Jeopardy!" 时的内容。第二句来自DeepMind于2015年发布的关于AlphaGo的谷歌网页。
+这些不是来自忙于研究大型语言模型 (LLMs) 或图像生成模型的生成式人工智能公司最近所做的声明！第一段话是2011年IBM宣传Watson系统即将参加电视游戏节目 "Jeopardy!" 时的内容。第二句来自DeepMind于2015年发布的关于AlphaGo的谷歌网页。
 
 IBM和DeepMind的工作推动了人工智能的发展。同时它也激发了一些人的想象力，让他们前进得更快。一些人认为，Watson和AlphaGo背后的技术代表着比它们更强大的人工智能能力。同样，LLMs和图像生成模型的最新进展也重新引发了人们对通用人工智能 (AGI) 的猜测。
 
 生成式人工智能非常令人兴奋！尽管如此，今天的模型与AGI还相差甚远。以下是来自维基百科的一个合理定义:
 
-“通用人工智能 (AGI) 是一种智能体能够理解或学习人类或其他动物可以完成的任何智力任务的能力。”
+> “通用人工智能 (AGI) 是一种智能体能够理解或学习人类或其他动物可以完成的任何智力任务的能力。”
 
 最新的LLMs展示出了一些超人的能力，就像计算器展示了卓越的计算能力一样。但与此同时，有许多人类可以学习的东西是目前的人工智能还远不能掌握的。
 

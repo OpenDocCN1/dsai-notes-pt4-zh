@@ -1,13 +1,10 @@
+
 # Windsurf：唯一让 Cursor 瑟瑟发抖的最强对手！
 
 > 来源：[https://agijuejin.feishu.cn/docx/LLZUdwwPuojPjQxLM7jcrMVsndb](https://agijuejin.feishu.cn/docx/LLZUdwwPuojPjQxLM7jcrMVsndb)
-
 > 作者：五月君
-
 > 链接：https://juejin.cn/post/7456819237651890228
-
 > 来源：稀土掘金
-
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ![](img/668daa3eddb994bc0133d03400d9d0c5.png)
@@ -28,7 +25,7 @@ Cursor 的 Agent 是在 2024 年 11 月 24 日推出。
 
 ## 下载安装
 
-进入 Windsurf 官网下载页面 codeium.com/download，点击… Download 按钮下载，它会根据你电脑当前系统推荐相应的安装包。
+进入 Windsurf 官网下载页面 `codeium.com/download`，点击… Download 按钮下载，它会根据你电脑当前系统推荐相应的安装包。
 
 下载之后，点击安装，安装过程中，Windsurf 支持从 Cursor 或 VS Code 导入
 
@@ -40,41 +37,41 @@ Cursor 的 Agent 是在 2024 年 11 月 24 日推出。
 
 完整的 Demo 参见笔者录制的以下视频。
 
-www.xiaohongshu.com/explore/677…
+`www.xiaohongshu.com/explore/677…`
 
 ## 功能特性
 
-1.  规则文件配置
+### 规则文件配置
 
-创建文件 .windsurfrules，这是 Windsurf 的规则文件，这里可以放一些我们项目的编码规范。例如，Windsurf 有时候会用英语回答，这里我更期望它能用中文回答，配置如下所示。
+创建文件 `.windsurfrules`，这是 Windsurf 的规则文件，这里可以放一些我们项目的编码规范。例如，Windsurf 有时候会用英语回答，这里我更期望它能用中文回答，配置如下所示。
 
 ![](img/5505753fb391297f5d1cc0d4ed9877c9.png)
 
-规则文件更多内容参见 https://docs.codeium.com/windsurf/cascade#workspace-rules
+规则文件更多内容参见 `https://docs.codeium.com/windsurf/cascade#workspace-rules`
 
-1.  主要功能：Cascade
+### 主要功能：Cascade
 
-使用命令 Command + L 打开 Windsurf Cascade 窗口。有两种模式 chat、write。
+使用命令 `Command + L` 打开 Windsurf Cascade 窗口。有两种模式 `chat`、`write`。
 
-1.  **Chat 模式**
+#### Chat 模式
 
 Chat 模式更像一个 AI 助手，基于我们的代码做一些答疑，或者一些问题解答。
 
 ![](img/db1f971308aa4e3728285b5d8fc4aa55.png)
 
-1.  **Write 模式**
+#### Write 模式
 
 Write 模式，可以帮我们写代码，添加、修改文件，自带 Agent 功能，期间还可以执行终端命令，不用再打开新窗口了。
 
-1.  文件内唤起内联聊天
+#### 文件内唤起内联聊天
 
-在单文件内使用快捷键 Command+i 唤起内联聊天窗口修改代码。
+在单文件内使用快捷键 `Command+i` 唤起内联聊天窗口修改代码。
 
 ![](img/5f07375e5fe698e63ffea979af4cd888.png)
 
-1.  终端命令
+#### 终端命令
 
-终端内也支持使用快捷键 Command+i 唤起内联聊天窗口。
+终端内也支持使用快捷键 `Command+i` 唤起内联聊天窗口。
 
 不常用的命令，很难记住，现在有了这个内联的聊天窗口，已经让我们的工作很方便了。
 

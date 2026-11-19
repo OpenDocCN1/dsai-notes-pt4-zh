@@ -1,3 +1,4 @@
+
 # LLM大模型
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TpEtdl43BoYG3Cxd7Yuc242Gnif](https://qqs7y1hozd1.feishu.cn/docx/TpEtdl43BoYG3Cxd7Yuc242Gnif)
@@ -15,7 +16,7 @@
 
 ## Dify专栏
 
-| [搭建聊天助手 ](https://qqs7y1hozd1.feishu.cn/wiki/MG3PwQhDdidUB8kKB33cWCN3nIg) | [Docker私有化部署Dify](https://qqs7y1hozd1.feishu.cn/wiki/BjcRwe55ni1uwdkzOTJczgbTnuc) |
+| [搭建聊天助手](https://qqs7y1hozd1.feishu.cn/wiki/MG3PwQhDdidUB8kKB33cWCN3nIg) | [Docker私有化部署Dify](https://qqs7y1hozd1.feishu.cn/wiki/BjcRwe55ni1uwdkzOTJczgbTnuc) |
 | --- | --- |
 | [Dify智能聊天机器人接入🛰️](https://qqs7y1hozd1.feishu.cn/wiki/HcY8wisRQibdxWkIjo9chPQbn9b) | [Dify工作流 - 长篇文章生成上篇](https://qqs7y1hozd1.feishu.cn/wiki/LZurwCtmdi3bP0kC1T2cGAa0nWg) |
 | [Dify工作流 - 长篇文章生成下篇](https://qqs7y1hozd1.feishu.cn/wiki/NEW1wibMWijkCUkpRMkcbUjxnah) | [Dify自定义工具](https://qqs7y1hozd1.feishu.cn/wiki/S9UWwssyqiMFPikGc0KcjAmWn3d) |
@@ -23,7 +24,7 @@
 | [知识库引入及应用](https://qqs7y1hozd1.feishu.cn/wiki/Deruwgn4Ji3AWyk9qZ0co3xhnRf) | [Dify图文回复](https://qqs7y1hozd1.feishu.cn/wiki/DEL2w6NE9idMluke304cJpnInje) |
 | [基于API调用Dify应用](https://qqs7y1hozd1.feishu.cn/wiki/LpZuw9tMIiLoFnkbzaMcb9qvn6b) | [Dify连接Claude 3.5, Azure OpenAI](https://qqs7y1hozd1.feishu.cn/wiki/W1AIw87s6iIjqIkhx0bcsnDInZf) |
 | [Dify中使用智谱扣费较快问题](https://qqs7y1hozd1.feishu.cn/wiki/HZoKweIBOiycDQklFxHcOaV1nsg) | [Dify连接Claude 3.5, Azure OpenAI](https://qqs7y1hozd1.feishu.cn/wiki/VbA6wRmTZif8SUkNYsncyMbvnbc) |
-| [Dify文件上传，图片/文档理解](https://qqs7y1hozd1.feishu.cn/wiki/CTRJw1wSQi2C3Ok3HT4cR9xvnxg) | [Dify自动生成播客](https://qqs7y1hozd1.feishu.cn/wiki/WcNlwP5kHizDLIkqizRcDeipnMe) |
+| [Dify文件上传，图片/文档理解](https://qqs7y1hofd1.feishu.cn/wiki/CTRJw1wSQi2C3Ok3HT4cR9xvnxg) | [Dify自动生成播客](https://qqs7y1hozd1.feishu.cn/wiki/WcNlwP5kHizDLIkqizRcDeipnMe) |
 
 ## Gemini3专栏
 
@@ -53,7 +54,7 @@
 
 [NanoBanana2 国内直连攻略](https://qqs7y1hozd1.feishu.cn/wiki/DOB9wmqQ5i7eJrkFLMNcfurcnlh)
 
-[Nano banana  全实操指南](https://qqs7y1hozd1.feishu.cn/wiki/F93Uw9ckUi0Yt0kWnQAcedjSnIe)
+[Nano banana 全实操指南](https://qqs7y1hozd1.feishu.cn/wiki/F93Uw9ckUi0Yt0kWnQAcedjSnIe)
 
 [基于 AiOnly 一键调用 Claude 4.5 + Gemini 3 Pro 修复老照片](https://qqs7y1hozd1.feishu.cn/wiki/Tps9wQS4piT5S3k6up1c3iCQnog)
 
@@ -81,33 +82,29 @@
 | [神经网络](https://qqs7y1hozd1.feishu.cn/wiki/BlIuwKcgGi686MkdtXuc9PSknsK) | [神经网络基础](https://qqs7y1hozd1.feishu.cn/wiki/ARs7w0JdqiWETEkK5AecAZU9nJe) |
 | [使用Excel通俗易懂理解Transformer！](https://qqs7y1hozd1.feishu.cn/wiki/URLcw3HSoiIwS2kDWECcB2l1nlg) | [Transformer基础](https://qqs7y1hozd1.feishu.cn/wiki/Xi6ewDFzwiVdxdkS7gtcrxL9n9c) |
 | [Transformer架构细节](https://qqs7y1hozd1.feishu.cn/wiki/VAAowVnb3iAEegkI2Bic7RoInse) | [Transformer架构细节](https://qqs7y1hozd1.feishu.cn/wiki/VAAowVnb3iAEegkI2Bic7RoInse) |
-| [PyTorch从零开始实现Transformer ](https://qqs7y1hozd1.feishu.cn/wiki/ZoEuwAvaIimqIvk6On7cRsscnQh) | [Attention Is All You Need](https://qqs7y1hozd1.feishu.cn/wiki/IiMcw1wTViADrYkLWE3cOaCDnOb) |
+| [PyTorch从零开始实现Transformer](https://qqs7y1hozd1.feishu.cn/wiki/ZoEuwAvaIimqIvk6On7cRsscnQh) | [Attention Is All You Need](https://qqs7y1hozd1.feishu.cn/wiki/IiMcw1wTViADrYkLWE3cOaCDnOb) |
 | [2024年度专题600+大语言模型论文「以更新」](https://qqs7y1hozd1.feishu.cn/wiki/T7xOwGK2CiKrNOk2hz2cFkJCnzb) | [Transformer机制原理](https://qqs7y1hozd1.feishu.cn/wiki/CJ5Qwsymnih3zEkmo1ocw3W7nNg) |
 | [可下载｜神经网络(含卷积神经网络）PPT .pptx](https://qqs7y1hozd1.feishu.cn/wiki/ZUOmwQWYkiDkaskInRzcWnVsnjf) |  |
 
----
-
 ### LLM
 
-| [LLM底层技术原理轻松入门](https://qqs7y1hozd1.feishu.cn/wiki/I2rQwSJ32iHDXYkwbxJc2VuQnCd) | [LLM概念  ](https://qqs7y1hozd1.feishu.cn/wiki/XCJBwZCmai7Z4HkQexIcXQGFnJg) |
+| [LLM底层技术原理轻松入门](https://qqs7y1hozd1.feishu.cn/wiki/I2rQwSJ32iHDXYkwbxJc2VuQnCd) | [LLM概念](https://qqs7y1hozd1.feishu.cn/wiki/XCJBwZCmai7Z4HkQexIcXQGFnJg) |
 | --- | --- |
-| [分词 ](https://qqs7y1hozd1.feishu.cn/wiki/SHsnwjto8ildRdkHH0Uc5VYynW9) | [激活函数 ](https://qqs7y1hozd1.feishu.cn/wiki/L2ckwj3rLitorKkepdRcYrSTnHe) |
-| [语言模型 ](https://qqs7y1hozd1.feishu.cn/wiki/BjrEw5PEhiBPgbkBh7TcQLMSnIb) | [jieba分词用法及原理 ](https://qqs7y1hozd1.feishu.cn/wiki/YloUwjYXMiTkyWkHd3icUkGWnAf) |
-| [词性标注 ](https://qqs7y1hozd1.feishu.cn/wiki/EVr2wNP8siM3uBkDa4acotLJnAf) | [词向量 ](https://qqs7y1hozd1.feishu.cn/wiki/LnVUwmAwaiZSW2k413ncE6RHnOd) |
-| [LLM为什么Decoder only架构 ](https://qqs7y1hozd1.feishu.cn/wiki/C2Bzwjl0DiL72zkoYkuct7nMnwf) | [NLP三大特征抽取器 （CNN/RNN/TF） ](https://qqs7y1hozd1.feishu.cn/wiki/SigMwT5p8ikAUakKGdjcsUnoncf) |
-| [NLP面试题](https://qqs7y1hozd1.feishu.cn/wiki/JOmgwd3xjiCJyKkYbLVcZ2s8nRb) | [句法分析 ](https://qqs7y1hozd1.feishu.cn/wiki/A3M3wqMI2iXyqqk22tVcMDcgnQc) |
-
----
+| [分词](https://qqs7y1hozd1.feishu.cn/wiki/SHsnwjto8ildRdkHH0Uc5VYynW9) | [激活函数](https://qqs7y1hozd1.feishu.cn/wiki/L2ckwj3rLitorKkepdRcYrSTnHe) |
+| [语言模型](https://qqs7y1hozd1.feishu.cn/wiki/BjrEw5PEhiBPgbkBh7TcQLMSnIb) | [jieba分词用法及原理](https://qqs7y1hozd1.feishu.cn/wiki/YloUwjYXMiTkyWkHd3icUkGWnAf) |
+| [词性标注](https://qqs7y1hozd1.feishu.cn/wiki/EVr2wNP8siM3uBkDa4acotLJnAf) | [词向量](https://qqs7y1hozd1.feishu.cn/wiki/LnVUwmAwaiZSW2k413ncE6RHnOd) |
+| [LLM为什么Decoder only架构](https://qqs7y1hozd1.feishu.cn/wiki/C2Bzwjl0DiL72zkoYkuct7nMnwf) | [NLP三大特征抽取器 （CNN/RNN/TF）](https://qqs7y1hozd1.feishu.cn/wiki/SigMwT5p8ikAUakKGdjcsUnoncf) |
+| [NLP面试题](https://qqs7y1hozd1.feishu.cn/wiki/JOmgwd3xjiCJyKkYbLVcZ2s8nRb) | [句法分析](https://qqs7y1hozd1.feishu.cn/wiki/A3M3wqMI2iXyqqk22tVcMDcgnQc) |
 
 ### 大语言模型架构
 
-| [llama系列模型](https://qqs7y1hozd1.feishu.cn/wiki/JrczwaToIi2zyvkUSElcCJounbh) | [Llama1到llama3技术细节 ](https://qqs7y1hozd1.feishu.cn/wiki/GjOiwyEsxikJ7Rkj08xct8Qmnub) |
-| --- | --- |
 
----
+
+| [llama系列模型](https://qqs7y1hozd1.feishu.cn/wiki/JrczwaToIi2zyvkUSElcCJounbh) | [Llama1到llama3技术细节](https://qqs7y1hozd1.feishu.cn/wiki/GjOiwyEsxikJ7Rkj08xct8Qmnub) |
+| --- | --- |
 
 ### 大语言模型应用
 
-| [Langchain ](https://qqs7y1hozd1.feishu.cn/wiki/B7fiwY0ZBigNmHkpGAzcecZ0nug) | [思维链（cot)](https://qqs7y1hozd1.feishu.cn/wiki/VUMYwSowsiHYqvkKO97cOWuNn8e) |
+| [Langchain](https://qqs7y1hozd1.feishu.cn/wiki/B7fiwY0ZBigNmHkpGAzcecZ0nug) | [思维链（cot)](https://qqs7y1hozd1.feishu.cn/wiki/VUMYwSowsiHYqvkKO97cOWuNn8e) |
 | --- | --- |
 | [用LLM实现客户细分](https://qqs7y1hozd1.feishu.cn/wiki/ERG8wNR0GiwS3rko9iCcetJkntg) | [基于LangChain+LLM的本地知识库问答](https://qqs7y1hozd1.feishu.cn/wiki/IA9FwPKHeiTr9Wk2aQfcWLM7ngf) |

@@ -1,8 +1,9 @@
+
 # Dify本地部署
 
 > 来源：[https://my.feishu.cn/docx/T2oldBGWAoxKXmxg4MAcxru7nHd](https://my.feishu.cn/docx/T2oldBGWAoxKXmxg4MAcxru7nHd)
 
-# 一、Dify下载和安装
+## 一、Dify下载和安装
 
 首先需要安装2个工具：
 
@@ -10,7 +11,7 @@ Git，参考[Git 安装](https://tffyvtlai4.feishu.cn/wiki/MF1ywmPKhig7p3kpIqNcF
 
 Docker，参考[Docker安装](https://tffyvtlai4.feishu.cn/wiki/C4pzw37L9ibcf2kx99OcY3nznJc)
 
-打开任意想安装的路径，Shift+右键，打开PowerShell，粘贴以下代码：
+打开任意想安装的路径，Shift+右键，打开`PowerShell`，粘贴以下代码：
 
 ```
 git clone http://github.com/langgenius/dify.git
@@ -18,27 +19,27 @@ git clone http://github.com/langgenius/dify.git
 
 ![](img/98ad6134cec12243a0108cbc295cbca2.png)
 
-安装项目路径下，搜索docker-compose.yaml，右键打开所在文件夹
+安装项目路径下，搜索`docker-compose.yaml`，右键打开所在文件夹
 
 ![](img/579a061034a5db820ba95e4aee86b52f.png)
 
-打开文件夹后，在地址栏中输入powershell，回车。
+打开文件夹后，在地址栏中输入`powershell`，回车。
 
 ![](img/53b95daa287f8d36ac9b170c9df83ab3.png)
 
 启动 Docker 容器
 
-根据你系统上的 Docker Compose 版本[，选择合适的命令来启动](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)容器。你可以通过 $ dock[Docker 安装 ](https://tffyvtlai4.feishu.cn/wiki/C4pzw37L9ibcf2kx99OcY3nznJc)r compose version 命令检查版本，详细说明请参考 Docker 官方文档，若没安装Docker，则参考 进行安装：
+根据你系统上的 Docker Compose 版本[，选择合适的命令来启动](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)容器。你可以通过 `docker compose version` 命令检查版本，详细说明请参考 Docker 官方文档，若没安装Docker，则参考 进行安装：
 
-# 2024/9/10新增：
+## 2024/9/10新增：
 
 升级0.8版本后会有API和WOKER报错，无法启动
 
-.env.example 复制并修改成.env 文件。
+`.env.example` 复制并修改成`.env` 文件。
 
 ![](img/a3876a1e99077b219d046f76a31e2291.png)
 
-找到REDIS_SENTINEL_SOCKET_TIMEOUT和CELERY_SENTINEL_SOCKET_TIMEOUT修改为10即可。
+找到`REDIS_SENTINEL_SOCKET_TIMEOUT`和`CELERY_SENTINEL_SOCKET_TIMEOUT`修改为10即可。
 
 ![](img/e609598a4c4c765ed0cb76f61d849ef8.png)
 
@@ -60,7 +61,7 @@ docker compose up -d
 
 ![](img/07a3144ed72acd472378014656a41f3f.png)
 
-# 二、Dify配置
+## 二、Dify配置
 
 打开浏览器，本地访问：127.0.0.1
 
@@ -74,9 +75,9 @@ docker compose up -d
 
 ![](img/1f6cd89ee29d336cb7feb9e4b75c6e38.png)
 
-模型名称：qwen2:7b
+模型名称：`qwen2:7b`
 
-URL填写刚刚一样的：http://host.docker.internal:11434
+URL填写刚刚一样的：`http://host.docker.internal:11434`
 
 ![](img/928f1b357d09a07a0da90ebd4113d0c4.png)
 
@@ -92,9 +93,9 @@ Dify界面有4个主要功能区：
 
 ![](img/ee1e8b4be8ddc80cc93ab620ef374c09.png)
 
-# 三、更新Dify
+## 三、更新Dify
 
-进入 dify 源代码的 docker 目录，按顺序执行以下命令：
+进入 `dify` 源代码的 `docker` 目录，按顺序执行以下命令：
 
 ```
 cd dify/docker
@@ -104,26 +105,25 @@ docker compose pull
 docker compose up -d
 ```
 
-**同步环境变量配置 (重要！)**
+### 同步环境变量配置 (重要！)
 
-+   如果 .env.example 文件有更新，请务必同步修改您本地的 .env 文件。
++ 如果 `.env.example` 文件有更新，请务必同步修改您本地的 `.env` 文件。
 
-+   检查 .env 文件中的所有配置项，确保它们与您的实际运行环境相匹配。您可能需要将 .env.example 中的新变量添加到 .env 文件中，并更新已更改的任何值。
++ 检查 `.env` 文件中的所有配置项，确保它们与您的实际运行环境相匹配。您可能需要将 `.env.example` 中的新变量添加到 `.env` 文件中，并更新已更改的任何值。
 
-**访问 Dify**
+### 访问 Dify
 
-在浏览器中输入 http://localhost 访问 Dify。
+在浏览器中输入 `http://localhost` 访问 Dify。
 
-**自定义配置**
+### 自定义配置
 
-编辑 .env 文件中的环境变量值。然后，重新启动 Dify：
-
-复制
+编辑 `.env` 文件中的环境变量值。然后，重新启动 Dify：
 
 ```
-docker compose downdocker compose up -d
+docker compose down
+docker compose up -d
 ```
 
-完整的环境变量集合可以在 docker/.env.example 中找到。
+完整的环境变量集合可以在 `docker/.env.example` 中找到。
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

@@ -1,3 +1,4 @@
+
 # 数据分析可视化
 
 > 来源：[https://deepwisdom.feishu.cn/docx/DY8Cd9TDfoZlBIxYqQmcQrVpnme](https://deepwisdom.feishu.cn/docx/DY8Cd9TDfoZlBIxYqQmcQrVpnme)
@@ -10,7 +11,7 @@
 
 ### 任务
 
-使用DataInterpreter对sklearn Iris数据集进行简单的数据分析并绘制可视化图表。
+使用`DataInterpreter`对`sklearn` Iris数据集进行简单的数据分析并绘制可视化图表。
 
 ### 代码
 
@@ -18,7 +19,7 @@
 python examples/di/data_visualization.py
 ```
 
-examples/di/data_visualization.py文件中的代码具体为：
+`examples/di/data_visualization.py`文件中的代码具体为：
 
 ```
 import asyncio
@@ -26,7 +27,7 @@ from metagpt.logs import logger
 from metagpt.roles.di.data_interpreter import DataInterpreter
 from metagpt.utils.recovery_util import save_history
 
-async def main(requirement: str = &quot;&quot;):
+async def main(requirement: str = ""):
 
     di = DataInterpreter()
     rsp = await di.run(requirement)
@@ -34,41 +35,41 @@ async def main(requirement: str = &quot;&quot;):
     save_history(role=di)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
 
-    requirement = &quot;Run data analysis on sklearn Iris dataset, include a plot&quot;
+    requirement = "Run data analysis on sklearn Iris dataset, include a plot"
     asyncio.run(main(requirement))
 ```
 
-执行上面的代码，生成的plan和code会分别保存在 dada/output/当前时间/plan.json和 dada/output/当前时间/code.ipynb中。
+执行上面的代码，生成的plan和code会分别保存在`dada/output/当前时间/plan.json`和`dada/output/当前时间/code.ipynb`中。
 
 ### 运行结果
 
-1.  DataInterpreter 提出的task如下:
+1. `DataInterpreter` 提出的task如下:
 
 ```
 [
   {
-    &quot;task_id&quot;: &quot;1&quot;,
-    &quot;dependent_task_ids&quot;: [],
-    &quot;instruction&quot;: &quot;Load the Iris dataset from sklearn.&quot;
+    "task_id": "1",
+    "dependent_task_ids": [],
+    "instruction": "Load the Iris dataset from sklearn."
   },
   {
-    &quot;task_id&quot;: &quot;2&quot;,
-    &quot;dependent_task_ids&quot;: [&quot;1&quot;],
-    &quot;instruction&quot;: &quot;Perform exploratory data analysis on the Iris dataset.&quot;
+    "task_id": "2",
+    "dependent_task_ids": ["1"],
+    "instruction": "Perform exploratory data analysis on the Iris dataset."
   },
   {
-    &quot;task_id&quot;: &quot;3&quot;,
-    &quot;dependent_task_ids&quot;: [&quot;2&quot;],
-    &quot;instruction&quot;: &quot;Create a plot visualizing the Iris dataset features.&quot;
+    "task_id": "3",
+    "dependent_task_ids": ["2"],
+    "instruction": "Create a plot visualizing the Iris dataset features."
   }
 ]
 ```
 
-DataInterpreter 能够把任务分解为合理的tasks, 并按照加载数据、分析数据和绘制图表的步骤运行。
+`DataInterpreter` 能够把任务分解为合理的tasks, 并按照加载数据、分析数据和绘制图表的步骤运行。
 
-1.  DataInterpreter输出代码如下:
+1. `DataInterpreter`输出代码如下:
 
 ```
 # ----------------------------------task1------------------------------------
@@ -83,8 +84,8 @@ iris_data.keys()
 import pandas as pd
 
 # Create a DataFrame from the iris dataset
-iris_df = pd.DataFrame(iris_data[&#x27;data&#x27;], columns=iris_data[&#x27;feature_names&#x27;])
-iris_df[&#x27;species&#x27;] = pd.Categorical.from_codes(iris_data[&#x27;target&#x27;], iris_data[&#x27;target_names&#x27;])
+iris_df = pd.DataFrame(iris_data['data'], columns=iris_data['feature_names'])
+iris_df['species'] = pd.Categorical.from_codes(iris_data['target'], iris_data['target_names'])
 
 # Summary statistics
 summary_statistics = iris_df.describe()
@@ -97,14 +98,14 @@ missing_values = iris_df.isnull().sum()
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Use seaborn&#x27;s pairplot to visualize the dataset features
-sns.set(style=&#x27;whitegrid&#x27;, context=&#x27;notebook&#x27;)
-iris_pairplot = sns.pairplot(iris_df, hue=&#x27;species&#x27;, height=2.5)
+# Use seaborn's pairplot to visualize the dataset features
+sns.set(style='whitegrid', context='notebook')
+iris_pairplot = sns.pairplot(iris_df, hue='species', height=2.5)
 plt.show()
 ```
 
-在完成task1时，由于环境中没有安装scikit-learn导致第一次执行报错，但DataInterpreter可以分析并通过安装scikit-learn来解决这个问题。在task3中DataInterpreter使用seaborn的pairplot函数绘制一个散点图矩阵，用于可视化数据集中不同特征之间的关系，并通过颜色区分不同种类的数据点，最后使用plt.show()将图表显示出来。
+在完成`task1`时，由于环境中没有安装`scikit-learn`导致第一次执行报错，但`DataInterpreter`可以分析并通过安装`scikit-learn`来解决这个问题。在`task3`中`DataInterpreter`使用`seaborn`的`pairplot`函数绘制一个散点图矩阵，用于可视化数据集中不同特征之间的关系，并通过颜色区分不同种类的数据点，最后使用`plt.show()`将图表显示出来。
 
-下面是DataInterpreter运行代码绘制出的图，可以看出代码成功执行并绘制了精美的可视化图表，帮助我们更好地对数据集特征进行分析。
+下面是`DataInterpreter`运行代码绘制出的图，可以看出代码成功执行并绘制了精美的可视化图表，帮助我们更好地对数据集特征进行分析。
 
 ![](img/aa9e9e41f5e840ffba7022da84c18dae.png)

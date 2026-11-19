@@ -1,12 +1,13 @@
+
 # Hackers And Painters
 
 > 来源：[https://docs.feishu.cn/docx/NYtudR8wboDSuIxVZIQcC5yLnOg](https://docs.feishu.cn/docx/NYtudR8wboDSuIxVZIQcC5yLnOg)
+>
+> `http://paulgraham.com/hp.html`
 
-> http://paulgraham.com/hp.html
+(This essay is derived from a guest lecture at Harvard, which incorporated an earlier talk at Northeastern.)
 
-(This essay is derived from a guest lecture at Harv[ard, which inco](http://paulgraham.com/taste.html)r[porated ](http://www.apa.org/journals/features/psp7761121.pdf)an earlier talk at Northeastern.)
-
-When I finished grad school in computer sci[ence I w](http://paulgraham.com/piraha.html)ent to a[rt schoo](http://paulgraham.com/power.html)l to study painting. A lot of people seemed surprised that someone interested in computers would also be interested in painting. They seemed to think that hacking and painting were very different kinds of work-- that hacking was cold, precise, and methodical, and that painting was the frenzied expression of some primal urge.
+When I finished grad school in computer science I went to art school to study painting. A lot of people seemed surprised that someone interested in computers would also be interested in painting. They seemed to think that hacking and painting were very different kinds of work-- that hacking was cold, precise, and methodical, and that painting was the frenzied expression of some primal urge.
 
 Both of these images are wrong. Hacking and painting have a lot in common. In fact, of all the different types of people I've known, hackers and painters are among the most alike.
 
@@ -22,7 +23,7 @@ Perhaps one day "computer science" will, like Yugoslavia, get broken up into its
 
 Bundling all these different types of work together in one department may be convenient administratively, but it's confusing intellectually. That's the other reason I don't like the name "computer science." Arguably the people in the middle are doing something like an experimental science. But the people at either end, the hackers and the mathematicians, are not actually doing science.
 
-The mathematicians don't seem bothered by this. They happily set to work proving theorems like the other mathematicians over in the math department, and probably soon stop noticing that the building they work in says ``computer science'' on the outside. But for the hackers this label is a problem. If what they're doing is called science, it makes them feel they ought to be acting scientific. So instead of doing what they really want to do, which is to design beautiful software, hackers in universities and research labs feel they ought to be writing research papers.
+The mathematicians don't seem bothered by this. They happily set to work proving theorems like the other mathematicians over in the math department, and probably soon stop noticing that the building they work in says "computer science" on the outside. But for the hackers this label is a problem. If what they're doing is called science, it makes them feel they ought to be acting scientific. So instead of doing what they really want to do, which is to design beautiful software, hackers in universities and research labs feel they ought to be writing research papers.
 
 In the best case, the papers are just a formality. Hackers write cool software, and then write a paper about it, and the paper becomes a proxy for the achievement represented by the software. But often this mismatch causes problems. It's easy to drift away from building beautiful things toward building ugly things that make more suitable subjects for research papers.
 
@@ -42,13 +43,23 @@ There are worse things than having people misunderstand your work. A worse dange
 
 Now I realize I was mistaken. Hackers need to understand the theory of computation about as much as painters need to understand paint chemistry. You need to know how to calculate time and space complexity and about Turing completeness. You might also want to remember at least the concept of a state machine, in case you have to write a parser or a regular expression library. Painters in fact have to remember a good deal more about paint chemistry than that.
 
+
+
+# 想法源自创造者
+
 I've found that the best sources of ideas are not the other fields that have the word "computer" in their names, but the other fields inhabited by makers. Painting has been a much richer source of ideas than the theory of computation.
+
+## 编程即草图
 
 For example, I was taught in college that one ought to figure out a program completely on paper before even going near a computer. I found that I did not program this way. I found that I liked to program sitting in front of a computer, not a piece of paper. Worse still, instead of patiently writing out a complete program and assuring myself it was correct, I tended to just spew out code that was hopelessly broken, and gradually beat it into shape. Debugging, I was taught, was a kind of final pass where you caught typos and oversights. The way I worked, it seemed like programming consisted of debugging.
 
 For a long time I felt bad about this, just as I once felt bad that I didn't hold my pencil the way they taught me to in elementary school. If I had only looked over at the other makers, the painters or the architects, I would have realized that there was a name for what I was doing: sketching. As far as I can tell, the way they taught me to program in college was all wrong. You should figure out programs as you're writing them, just as writers and painters and architects do.
 
+## 编程语言应具可塑性
+
 Realizing this has real implications for software design. It means that a programming language should, above all, be malleable. A programming language is for thinking of programs, not for expressing programs you've already thought of. It should be a pencil, not a pen. Static typing would be a fine idea if people actually did write programs the way they taught me to in college. But that's not how any of the hackers I know write programs. We need a language that lets us scribble and smudge and smear, not a language where you have to sit with a teacup of types balanced on your knee and make polite conversation with a strict old aunt of a compiler.
+
+## 避免"数学嫉妒"
 
 While we're on the subject of static typing, identifying with the makers will save us from another problem that afflicts the sciences: math envy. Everyone in the sciences secretly believes that mathematicians are smarter than they are. I think mathematicians also believe this. At any rate, the result is that scientists tend to make their work look as mathematical as possible. In a field like physics this probably doesn't do much harm, but the further you get from the natural sciences, the more of a problem it becomes.
 
@@ -56,11 +67,15 @@ A page of formulas just looks so impressive. (Tip: for extra impressiveness, use
 
 If hackers identified with other makers, like writers and painters, they wouldn't feel tempted to do this. Writers and painters don't suffer from math envy. They feel as if they're doing something completely unrelated. So are hackers, I think.
 
+## 大学、公司与黑客的困境
+
 If universities and research labs keep hackers from doing the kind of work they want to do, perhaps the place for them is in companies. Unfortunately, most companies won't let hackers do what they want either. Universities and research labs force hackers to be scientists, and companies force them to be engineers.
 
 I only discovered this myself quite recently. When Yahoo bought Viaweb, they asked me what I wanted to do. I had never liked the business side very much, and said that I just wanted to hack. When I got to Yahoo, I found that what hacking meant to them was implementing software, not designing it. Programmers were seen as technicians who translated the visions (if that is the word) of product managers into code.
 
 This seems to be the default plan in big companies. They do it because it decreases the standard deviation of the outcome. Only a small percentage of hackers can actually design software, and it's hard for the people running a company to pick these out. So instead of entrusting the future of the software to one brilliant hacker, most companies set things up so that it is designed by committee, and the hackers merely implement the design.
+
+## 初创公司与设计战争
 
 If you want to make money at some point, remember this, because this is one of the reasons startups win. Big companies want to decrease the standard deviation of design outcomes because they want to avoid disasters. But when you damp oscillations, you lose the high points as well as the low. This is not a problem for big companies, because they don't win by making great products. Big companies win by sucking less than other big companies.
 
@@ -68,15 +83,21 @@ So if you can figure out a way to get in a design war with a company big enough 
 
 The place to fight design wars is in new markets, where no one has yet managed to establish any fortifications. That's where you can win big by taking the bold approach to design, and having the same people both design and implement the product. Microsoft themselves did this at the start. So did Apple. And Hewlett-Packard. I suspect almost every successful startup has.
 
+## 创业的两个问题
+
 So one way to build great software is to start your own startup. There are two problems with this, though. One is that in a startup you have to do so much besides write software. At Viaweb I considered myself lucky if I got to hack a quarter of the time. And the things I had to do the other three quarters of the time ranged from tedious to terrifying. I have a benchmark for this, because I once had to leave a board meeting to have some cavities filled. I remember sitting back in the dentist's chair, waiting for the drill, and feeling like I was on vacation.
 
 The other problem with startups is that there is not much overlap between the kind of software that makes money and the kind that's interesting to write. Programming languages are interesting to write, and Microsoft's first product was one, in fact, but no one will pay for programming languages now. If you want to make money, you tend to be forced to work on problems that are too nasty for anyone to solve for free.
 
 All makers face this problem. Prices are determined by supply and demand, and there is just not as much demand for things that are fun to work on as there is for things that solve the mundane problems of individual customers. Acting in off-Broadway plays just doesn't pay as well as wearing a gorilla suit in someone's booth at a trade show. Writing novels doesn't pay as well as writing ad copy for garbage disposals. And hacking programming languages doesn't pay as well as figuring out how to connect some company's legacy database to their Web server.
 
+## 日常工作（Day Job）
+
 I think the answer to this problem, in the case of software, is a concept known to nearly all makers: the day job. This phrase began with musicians, who perform at night. More generally, it means that you have one kind of work you do for money, and another for love.
 
 Nearly all makers have day jobs early in their careers. Painters and writers notoriously do. If you're lucky you can get a day job that's closely related to your real work. Musicians often seem to work in record stores. A hacker working on some programming language or operating system might likewise be able to get a day job using it. [1]
+
+
 
 When I say that the answer is for hackers to have day jobs, and work on beautiful software on the side, I'm not proposing this as a new idea. This is what open-source hacking is all about. What I'm saying is that open-source is probably the right model, because it has been independently confirmed by all the other makers.
 
@@ -122,13 +143,21 @@ In hacking, like painting, work comes in cycles. Sometimes you get excited about
 
 To do good work you have to take these cycles into account, because they're affected by how you react to them. When you're driving a car with a manual transmission on a hill, you have to back off the clutch sometimes to avoid stalling. Backing off can likewise prevent ambition from stalling. In both painting and hacking there are some tasks that are terrifyingly ambitious, and others that are comfortingly routine. It's a good idea to save some easy tasks for moments when you would otherwise stall.
 
-In hacking, this can literally mean saving up bugs. I like debugging: it's the one time that hacking is as straightforward as people think it is. You have a totally constrained problem, and all you have to do is solve it. Your program is supposed to do x. Instead it does y. Where does it go wrong? You know you're going to win in the end. It's as relaxing as painting a wall.
+In hacking, this can literally mean saving up bugs. I like debugging: it's the one time that hacking is as straightforward as people think it is. You have a totally constrained problem, and all you have to do is solve it. Your program is supposed to do `x`. Instead it does `y`. Where does it go wrong? You know you're going to win in the end. It's as relaxing as painting a wall.
+
+
+
+# Hackers and Painters
+
+## Collaboration: Learning from Painting
 
 The example of painting can teach us not only how to manage our own work, but how to work together. A lot of the great art of the past is the work of multiple hands, though there may only be one name on the wall next to it in the museum. Leonardo was an apprentice in the workshop of Verrocchio and painted one of the angels in his Baptism of Christ. This sort of thing was the rule, not the exception. Michelangelo was considered especially dedicated for insisting on painting all the figures on the ceiling of the Sistine Chapel himself.
 
 As far as I know, when painters worked together on a painting, they never worked on the same parts. It was common for the master to paint the principal figures and for assistants to paint the others and the background. But you never had one guy painting over the work of another.
 
 I think this is the right model for collaboration in software too. Don't push it too far. When a piece of code is being hacked by three or four different people, no one of whom really owns it, it will end up being like a common-room. It will tend to feel bleak and abandoned, and accumulate cruft. The right way to collaborate, I think, is to divide projects into sharply defined modules, each with a definite owner, and with interfaces between them that are as carefully designed and, if possible, as articulated as programming languages.
+
+## Empathy: The Essential Quality of Great Hackers
 
 Like painting, most software is intended for a human audience. And so hackers, like painters, must have empathy to do really great work. You have to be able to see things from the user's point of view.
 
@@ -140,7 +169,7 @@ Most makers make things for a human audience. And to engage an audience you have
 
 Empathy is probably the single most important difference between a good hacker and a great one. Some hackers are quite smart, but when it comes to empathy are practically solipsists. It's hard for such people to design great software [5], because they can't see things from the user's point of view.
 
-One way to tell how good people are at empathy is to watch them explain a technical question to someone without a technical background. We probably all know people who, though otherwise smart, are just comically bad at this. If someone asks them at a dinner party what a programming language is, they'll say something like ``Oh, a high-level language is what the compiler uses as input to generate object code.'' High-level language? Compiler? Object code? Someone who doesn't know what a programming language is obviously doesn't know what these things are, either.
+One way to tell how good people are at empathy is to watch them explain a technical question to someone without a technical background. We probably all know people who, though otherwise smart, are just comically bad at this. If someone asks them at a dinner party what a programming language is, they'll say something like "Oh, a high-level language is what the compiler uses as input to generate object code." High-level language? Compiler? Object code? Someone who doesn't know what a programming language is obviously doesn't know what these things are, either.
 
 Part of what software has to do is explain itself. So to write good software you have to understand how little users understand. They're going to walk up to the software with no preparation, and it had better do what they guess it will, because they're not going to read the manual. The best system I've ever seen in this respect was the original Macintosh, in 1985. It did what software almost never does: it just worked. [6]
 
@@ -148,9 +177,11 @@ Source code, too, should explain itself. If I could get people to remember just 
 
 > Programs should be written for people to read, and only incidentally for machines to execute.
 
-You need to [have emp](http://paulgraham.com/montefeltro.html)**athy ****not ju**st for your users, but for your readers. It's in your interest, because you'll be one of them. Many a hacker has written a program only to find on returning to it six months later that he has no idea how it works. I know several people who've sworn off Perl after such experiences. [7]
+You need to [have empathy](http://paulgraham.com/montefeltro.html) not just for your users, but for your readers. It's in your interest, because you'll be one of them. Many a hacker has written a program only to find on returning to it six months later that he has no idea how it works. I know several people who've sworn off Perl after such experiences. [7]
 
 Lack of empathy is associated with intelligence, to the point that there is even something of a fashion for it in some places. But I don't think there's any correlation. You can do well in math and the natural sciences without having to learn empathy, and people in these fields tend to be smart, so the two qualities have come to be associated. But there are plenty of dumb people who are bad at empathy too. Just listen to the people who call in with questions on talk shows. They ask whatever it is they're asking in such a roundabout way that the hosts often have to rephrase the question for them.
+
+## Prestige and the Golden Age of Hacking
 
 So, if hacking works like painting and writing, is it as cool? After all, you only get one life. You might as well spend it working on something great.
 
@@ -164,7 +195,7 @@ Over and over we see the same pattern. A new medium appears, and people are so e
 
 Painting was not, in Leonardo's time, as cool as his work helped make it. How cool hacking turns out to be will depend on what we can do with this new medium.
 
-Notes
+## Notes
 
 [1] The greatest damage that photography has done to painting may be the fact that it killed the best day job. Most of the great painters in history supported themselves by painting portraits.
 
@@ -175,6 +206,8 @@ Notes
 [4] Here's an example of applied empathy. At Viaweb, if we couldn't decide between two alternatives, we'd ask, what would our competitors hate most? At one point a competitor added a feature to their software that was basically useless, but since it was one of few they had that we didn't, they made much of it in the trade press. We could have tried to explain that the feature was useless, but we decided it would annoy our competitor more if we just implemented it ourselves, so we hacked together our own version that afternoon.
 
 [5] Except text editors and compilers. Hackers don't need empathy to design these, because they are themselves typical users.
+
+
 
 [6] Well, almost. They overshot the available RAM somewhat, causing much inconvenient disk swapping, but this could be fixed within a few months by buying an additional disk drive.
 
@@ -298,7 +331,9 @@ Thanks to Trevor Blackwell, Robert Morris, Dan Giffin, and Lisa Randall for read
 
 要做好工作，你必须考虑这些周期，因为它们会受到你对它们的反应的影响。当您在山坡上驾驶配备手动变速箱的汽车时，有时您必须松开离合器以避免熄火。退缩同样可以防止雄心壮志停滞不前。在绘画和黑客攻击中，有些任务是可怕的雄心勃勃，而另一些则是令人欣慰的例行公事。最好将一些简单的任务留到其他时候，否则会停滞不前。
 
-在黑客攻击中，这实际上意味着保存错误。我喜欢调试：这是黑客攻击像人们想象的那样简单的时候。你有一个完全受限的问题，你所要做的就是解决它。你的程序应该做 x。相反，它做 y。哪里出了问题？你知道你最终会赢。这就像粉刷墙壁一样放松。
+
+
+在黑客攻击中，这实际上意味着保存错误。我喜欢调试：这是黑客攻击像人们想象的那样简单的时候。你有一个完全受限的问题，你所要做的就是解决它。你的程序应该做 `x`。相反，它做 `y`。哪里出了问题？你知道你最终会赢。这就像粉刷墙壁一样放松。
 
 绘画的例子不仅可以教会我们如何管理自己的工作，还可以教会我们如何合作。过去许多伟大的艺术作品都是多手的作品，尽管博物馆旁边的墙上可能只有一个名字。莱昂纳多是韦罗基奥工作室的学徒，并在他的《基督洗礼》中画了一位天使。这种事情是规则，而不是例外。米开朗基罗被认为特别致力于坚持在西斯廷教堂的天花板上画所有人物。
 
@@ -306,7 +341,7 @@ Thanks to Trevor Blackwell, Robert Morris, Dan Giffin, and Lisa Randall for read
 
 我认为这也是软件协作的正确模式。不要把它推得太远。当一段代码被三四个不同的人入侵时，没有人真正拥有它，它最终会像一个公共休息室。它往往会感到凄凉和被遗弃，并积累残渣。我认为，正确的协作方式是将项目划分为明确定义的模块，每个模块都有一个明确的所有者，并且它们之间的接口经过精心设计，如果可能的话，就像编程语言一样清晰。
 
-**像绘画一样，大多数软件都是为人类观众准备的**。因此，黑客和画家一样，必须有同理心才能完成真正伟大的工作。你必须能够从用户的角度看问题。
+**像绘画一样，大多数软件都是为人类观众准备的。**因此，黑客和画家一样，必须有同理心才能完成真正伟大的工作。你必须能够从用户的角度看问题。
 
 当我还是个孩子的时候，我总是被告知要从别人的角度看问题。在实践中，这总是意味着做别人想做的事，而不是我想要的事。这当然给同理心带来了不好的名声，我特意不去培养它。
 

@@ -1,3 +1,4 @@
+
 # Memristor 忆阻器 - talks 笔记
 
 > 来源：[https://learning.feishu.cn/docx/IO3jdupXAothIuxuwp6c2K9wn0g](https://learning.feishu.cn/docx/IO3jdupXAothIuxuwp6c2K9wn0g)
@@ -8,15 +9,15 @@ ReRAM 生产工艺与 CMOS 完全兼容，可以通过制程工艺的升级迭�
 
 几种存算的路线：
 
-+   查存计算（Processing With Memory）：GPU 中落地多年。复杂函数的计算，由存储芯片内的存储单元查表，存储单元和计算单元完全融合，没有一个独立的计算单元。
++ 查存计算（Processing With Memory）：GPU 中落地多年。复杂函数的计算，由存储芯片内的存储单元查表，存储单元和计算单元完全融合，没有一个独立的计算单元。
 
-+   近存计算（Computing Near Memory）：带 HBM 的 GPGPU。
++ 近存计算（Computing Near Memory）：带 HBM 的 GPGPU。
 
-+   存内计算（Computing In Memory）：典型代表是 Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
++ 存内计算（Computing In Memory）：典型代表是 Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
 
 ![](img/31dce995fcc7da47217c60d31febf672.png)
 
-# Paper List
+## Paper List
 
 | Paper | Year | Author | Notes |
 | --- | --- | --- | --- |
@@ -42,7 +43,7 @@ https://www.bilibili.com/video/BV1nN411g7HC
 
 ![](img/364bb9322b163c0ca1299a95502fe40b.png)
 
-# **6-Minute ****Memristor**** Guide**
+## 6-Minute Memristor Guide
 
 https://www.youtube.com/watch?v=rvA5r4LtVnc
 
@@ -58,11 +59,11 @@ a quick whiteboard talk
 
 要点：
 
-1.  crossbar 结构的网络拓扑。如果，每对导线之间有一个开关，就可以表示惊人的信息量。
+1. crossbar 结构的网络拓扑。如果，每对导线之间有一个开关，就可以表示惊人的信息量。
 
-1.  13 年过去了，我们仍然认为 crossbar 是未来电路的基础结构。
+1. 13 年过去了，我们仍然认为 crossbar 是未来电路的基础结构。
 
-1.  1 个忆阻器，可以代替 10 个晶体管。
+1. 1 个忆阻器，可以代替 10 个晶体管。
 
 ![](img/479a2620c9a0e177087f975740e1a67c.png)
 
@@ -70,10 +71,9 @@ a quick whiteboard talk
 
 ![](img/e76662878a11c71d9a0a8cd942fce75d.png)
 
-
 ![](img/f483c6beaa753c9044a5104924119823.png)
 
-# R. Stanley Williams 2010
+## R. Stanley Williams 2010
 
 https://www.youtube.com/watch?v=bKGhvKyjgLY
 
@@ -111,19 +111,19 @@ R. Stanley Williams 意识到，公式并没有说什么引起什么，只说了
 
 因此，无法用 1 个 equation 来表征 memristor，实际上，需要 2 个 equation 才能完全表征。
 
-1.  quasi-static 准静态方程描述 U 和 I 的关系。
+1. quasi-static 准静态方程描述 `U` 和 `I` 的关系。
 
-1.  电阻则取决于电路此时的状态。一个时间相关的方程，描述器件状态与时间的关系。
+1. 电阻则取决于电路此时的状态。一个时间相关的方程，描述器件状态与时间的关系。
 
 这两个 equation 都没有 flux 磁通。
 
-IV 曲线像数字 8。在 Leon Chua 1976 年的 paper 里，叫 收缩磁滞回线 pinched hysteresis loop。
+`IV` 曲线像数字 8。在 Leon Chua 1976 年的 paper 里，叫 收缩磁滞回线 pinched hysteresis loop。
 
 在 1976 年的 paper 中指出，找到 pinched hysteresis loop 曲线就找到了 memristor。
 
 Why memristor fundamental？
 
-只用电阻、电容和电感无法做出这种 IV 曲线，Leon Chua 从数学上证明了这一点。
+只用电阻、电容和电感无法做出这种 `IV` 曲线，Leon Chua 从数学上证明了这一点。
 
 实际上，1971 年之前，很多 paper 都观察到了 收缩磁滞回线，但大家都不知道这是什么。
 
@@ -155,7 +155,7 @@ Why memristor fundamental？
 
 ![](img/b9339e9e643f406e554c162aa2fc2458.png)
 
-# Leon Chua 2017 - UC Berkeley
+## Leon Chua 2017 - UC Berkeley
 
 https://www.youtube.com/watch?v=ieMdXnjQTXc
 
@@ -165,11 +165,11 @@ Leon Chua, UC Berkeley - 10 Things You Didn't Know About Memristors
 
 ![](img/9890bac16a3ad23a134df487ac44b118.png)
 
-1.  All non-volatile solid-state memories are memristors.
+1. All non-volatile solid-state memories are memristors.
 
-1.  Not all memristors are non-volatile
+1. Not all memristors are non-volatile
 
-# Memristors: Where fact meets fantasy
+## Memristors: Where fact meets fantasy
 
 https://www.youtube.com/watch?v=Y6ab32SRRoE
 
@@ -191,7 +191,7 @@ Alex Nugent
 
 ![](img/06adfc1d7eb95354ef9d46c7db93c03e.png)
 
-# 清华 吴华强 2023
+## 清华 吴华强 2023
 
 https://mp.weixin.qq.com/s/ZYcos8vEszvWGkKmvgXc_A
 
@@ -203,21 +203,21 @@ Edge learning using a fully integrated neuro-inspired memristor chip
 
 几点突破
 
-1.  器件层面。用千层饼结构，降低离子扩散导致的精度问题。
+1. 器件层面。用千层饼结构，降低离子扩散导致的精度问题。
 
-1.  架构优化。器件的电压控制等
+1. 架构优化。器件的电压控制等
 
-1.  算法层面，引入误差模型，通过一个压力训练，让 AI 寻找误差模型。
+1. 算法层面，引入误差模型，通过一个压力训练，让 AI 寻找误差模型。
 
 以清华团队论文中用的，MINST数据集中的28*28的手写数字图像识别为例，神经网络节点是3层的，784*100*10，输入层是784（它等于28*28）个节点，中间层是100个节点，输出层是10个节点，对应0-9。应用时是前向推导，784个输入节点的数值乘上连接权重，中间层某结点的所有784个连接乘数相加，就是这个节点的状态数值。这相当于用784维的向量乘以784*100的矩阵，得到100维的向量。再用中间层的向量，乘以100*10的权重矩阵，得到10维的向量。
 
-**一个**重大缺陷是，电阻的写入需要验证（write verification)，反复地读写，因为忆阻器作为元器件并非完美。这让训练过程不是那么顺畅，额外开支很大，能耗不低，并没有摆脱“冯·诺依曼瓶颈”。
+一个重大缺陷是，电阻的写入需要验证（write verification)，反复地读写，因为忆阻器作为元器件并非完美。这让训练过程不是那么顺畅，额外开支很大，能耗不低，并没有摆脱“冯·诺依曼瓶颈”。
 
 ![](img/01b9d9879cdf0bf2a0655948b225aa0d.png)
 
 要理解清华忆阻器芯片的元器件与架构，需要搞清楚一个现实问题：矩阵权重是有正有负的，忆阻器的电阻（论文中用电导，就是电阻的倒数）都是正的，负权重如何表示？办法是用一对忆阻器，看它们电导的差值，就能表示负数了。如上图左（上下排列是向量的意思），红的是正Cell，蓝的是负Cell（里面的电导也是正值），相减得到权重，就能表示负数了。这个图要好好理解，清华团队的创新原理与之紧密相关。
 
-**而清**华作者们就是具体实现了一个基于忆阻器交叉阵列的新架构芯片，能算是完全集成（fully integrated）的忆阻器芯片，并通过一系列人工智能任务上展现了芯片架构的优点与潜力。
+而清华作者们就是具体实现了一个基于忆阻器交叉阵列的新架构芯片，能算是完全集成（fully integrated）的忆阻器芯片，并通过一系列人工智能任务上展现了芯片架构的优点与潜力。
 
 ![](img/cdee1b7fc8c3afd0bf926e0ee3083eff.png)
 
@@ -227,7 +227,7 @@ Edge learning using a fully integrated neuro-inspired memristor chip
 
 有两个忆阻器交叉阵列数组，大一些的是2T2R的，有1568*100个忆阻器，在神经网络模型中代表784*100的权重矩阵。小一些的是1T1R的，有100*20个忆阻器，代表100*10的权重矩阵（注意不是100*20）。两个忆阻器交叉阵列组合成了784*100*10的一个三层神经网络结构，用于完成一些小型的人工智能算法任务。
 
-这两**个Crossbar各有特性。大的是2T2R的，里面的权重是“off**-chip”离线训练好的，然后上传到交叉阵列里面，它的特点是可以并行计算矩阵乘法，节点数多，展现了“存算一体”的优良特性。小的是1T1R的，规模小，但是后面附带权重更新逻辑，可以在芯片内训练更新网络权重，展现了“片上学习”（on-chip learning）的功能。
+这两个Crossbar各有特性。大的是2T2R的，里面的权重是“off-chip”离线训练好的，然后上传到交叉阵列里面，它的特点是可以并行计算矩阵乘法，节点数多，展现了“存算一体”的优良特性。小的是1T1R的，规模小，但是后面附带权重更新逻辑，可以在芯片内训练更新网络权重，展现了“片上学习”（on-chip learning）的功能。
 
 ![](img/96734cbf875f31d284ee01bbb55a7903.png)
 
@@ -235,21 +235,21 @@ Edge learning using a fully integrated neuro-inspired memristor chip
 
 ![](img/1aea7c2160a57eb5b3b1b486d5748d82.png)
 
-W1是大的交叉阵列，输入向量X进来，乘以矩阵W1，再用激活函数（Activation function）ReLU变换——其实很简单，负数变0，正数不变——变成向量Y1。Y1再乘以矩阵W2，再ReLU变换，成为输出向量Y2。Y2与训练样本T比较，生成误差向量E。
+`W1`是大的交叉阵列，输入向量`X`进来，乘以矩阵`W1`，再用激活函数（Activation function）`ReLU`变换——其实很简单，负数变0，正数不变——变成向量`Y1`。`Y1`再乘以矩阵`W2`，再`ReLU`变换，成为输出向量`Y2`。`Y2`与训练样本`T`比较，生成误差向量`E`。
 
 ![](img/2aad47de4180506d63ea9e6df93636e4.png)
 
-**清华团队的创新是，对W2的训练，先将Y1、Y2、E三个向**量的符号抽出来，实施更好的权重更新办法。其出发点是，一个权重是用一正一负两个忆阻器存储的，可以选择性根据符号，一列一起更新。这是深入思考反向传播的权重更新算法，结合元器件架构，实现了忆阻器潜在的并行功能。如图，权重更新分为SET和RESET两个步骤，SET步骤只对正的符号更新正Cell，对负的符号更新负Cell，而RESET正相反。这样SET和RESET分别都可以按列并行加速了。
+清华团队的创新是，对`W2`的训练，先将`Y1`、`Y2`、`E`三个向量的符号抽出来，实施更好的权重更新办法。其出发点是，一个权重是用一正一负两个忆阻器存储的，可以选择性根据符号，一列一起更新。这是深入思考反向传播的权重更新算法，结合元器件架构，实现了忆阻器潜在的并行功能。如图，权重更新分为`SET`和`RESET`两个步骤，`SET`步骤只对正的符号更新正Cell，对负的符号更新负Cell，而`RESET`正相反。这样`SET`和`RESET`分别都可以按列并行加速了。
 
-**另**一个创新是，在误差向量E上加一个threshold，预先将一些微小的误差过滤掉，这样给出的符号向量，训练性能更优。这个threshold是可配置的，对不同的网络模型可以设置相应的过滤门限值，这应该是结合SET和RESET特性的进一步优化。
+另一个创新是，在误差向量`E`上加一个`threshold`，预先将一些微小的误差过滤掉，这样给出的符号向量，训练性能更优。这个`threshold`是可配置的，对不同的网络模型可以设置相应的过滤门限值，这应该是结合`SET`和`RESET`特性的进一步优化。
 
-在字符识别测试时，**清**华团队还用48天进行了重复测试，结果是稳定的。这说明忆阻器芯片里的权重是稳定的，这是芯片能实用的重要特性。
+在字符识别测试时，清华团队还用48天进行了重复测试，结果是稳定的。这说明忆阻器芯片里的权重是稳定的，这是芯片能实用的重要特性。
 
 130 nm 的是 Memristor
 
 ![](img/d0c33b3da00d58137725d20fc3672ea0.png)
 
-# 清华 高斌 2023 - 忆阻器与类脑计算
+## 清华 高斌 2023 - 忆阻器与类脑计算
 
 https://www.youtube.com/watch?v=9U-5jshTuwg
 
@@ -257,7 +257,7 @@ Oct 23, 2023
 
 ![](img/7e2b292a48bb34785098dd4ee02a58cb.png)
 
-## 存算一体技术
+### 存算一体技术
 
 ![](img/872500654b26870c2d7e36a0bd769c74.png)
 
@@ -267,7 +267,7 @@ Oct 23, 2023
 
 ![](img/21039cac697dbcfc8205a789b09ef6ca.png)
 
-## 忆阻器 RRAM
+### 忆阻器 RRAM
 
 外加的脉冲，可以影响电阻值。且可以长时间保持。
 
@@ -291,7 +291,7 @@ Oct 23, 2023
 
 ![](img/813fd3bde281cd7d9c11f20661895a62.png)
 
-## 研究进展
+### 研究进展
 
 ![](img/cb6eaad54e77382721f5bd296450c36c.png)
 
@@ -307,9 +307,11 @@ Oct 23, 2023
 
 ![](img/a6d854969aad3024e6bd5f2daf9dd9e9.png)
 
+
+
 ![](img/58630b29669496d7f419f61ccefc5bfe.png)
 
-## 器件测试的新挑战
+# 器件测试的新挑战
 
 ![](img/62bdb6a8e1e0c0a3777e7e258845a424.png)
 
@@ -325,7 +327,7 @@ Oct 23, 2023
 
 ![](img/b3f93b398522d67eca267dadbfabc1fb.png)
 
-# In-memory Computing with Memristors and Memtransistors - Daniele Ielmini
+## In-memory Computing with Memristors and Memtransistors - Daniele Ielmini
 
 https://www.youtube.com/watch?v=RBviTZAM-7Y
 
@@ -343,7 +345,7 @@ https://www.youtube.com/watch?v=RBviTZAM-7Y
 
 ![](img/255bfac0851a3de982523c2e7f466b88.png)
 
-# 北大 **杨玉超 - 基于****忆阻器****的高效****AI芯片****与学习系统**
+## 北大 杨玉超 - 基于忆阻器的高效AI芯片与学习系统
 
 https://www.youtube.com/watch?v=lrrtM4ngzv0
 
@@ -353,7 +355,7 @@ May 4, 2022
 
 ![](img/dd18b5a27a74ec493c58fde1572673b9.png)
 
-## 背景 & 动机
+### 背景 & 动机
 
 近存计算
 
@@ -375,11 +377,11 @@ May 4, 2022
 
 ![](img/06b9bcc837a48e65ae8d909927f138a9.png)
 
-## 3 个例子
+### 3 个例子
 
 ![](img/164707a7214172e3d48443095f6f430c.png)
 
-### 深度学习
+#### 深度学习
 
 ![](img/9639bb43fcd30e1828d8cfff062f0767.png)
 
@@ -397,7 +399,7 @@ May 4, 2022
 
 ![](img/5aec88bc256d2911257296c36b8ba0bc.png)
 
-### 强化学习
+#### 强化学习
 
 用相变忆阻器来实现 ET。
 
@@ -407,7 +409,7 @@ May 4, 2022
 
 ![](img/0ecda21a1611cbf0661ecef73e1ea78b.png)
 
-## 高效芯片设计
+### 高效芯片设计
 
 比 GPU 至少 3 个数量级的能效提升
 
@@ -421,7 +423,7 @@ May 4, 2022
 
 ![](img/24b765929d693280acfbfea54fa08a80.png)
 
-# **什麼是憶阻器 - 江佩勳 教授**
+## 什麼是憶阻器 - 江佩勳 教授
 
 https://www.youtube.com/watch?v=x9E5QOhjGtE
 

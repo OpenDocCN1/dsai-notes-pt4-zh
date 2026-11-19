@@ -1,10 +1,11 @@
+
 # 风格整理
 
 > 来源：[https://seigy6zzam.feishu.cn/docx/Hrd4d9kW7oJQWtxh3W2cZu11nzh](https://seigy6zzam.feishu.cn/docx/Hrd4d9kW7oJQWtxh3W2cZu11nzh)
 
-# 【最新】Fooocus 2.0（184个）
+## 【最新】Fooocus 2.0（184个）
 
-## 【19个】SDXL平台默认（sai）
+### 【19个】SDXL平台默认（sai）
 
 ![](img/ff378865f0b96514ca3a12839702a0e9.png)
 
@@ -14,13 +15,13 @@
 
 ![](img/d8bd995a01ced51993dc48beb1ed026a.png)
 
-## 【8个】广告风格（ads）
+### 【8个】广告风格（ads）
 
 ![](img/93ce8c31e393b9b517a02958d7387925.png)
 
 ![](img/72a7ea71977ffd25a8919d16701f3744.png)
 
-## 【18个】艺术风格（artstyle）
+### 【18个】艺术风格（artstyle）
 
 ![](img/aa3a364eea6bf1f3f7665891c9b0cdfd.png)
 
@@ -28,13 +29,13 @@
 
 ![](img/acbd61b6cdbcf96f6361e7b47e75bbd8.png)
 
-## 【10个】未来风格（futuristic）
+### 【10个】未来风格（futuristic）
 
 ![](img/0dcb3ab82f1522dddef6daadc61e5e5f.png)
 
 ![](img/d2a08ce8d282b89356ff775ea659f78b.png)
 
-## 【13个】游戏风格（game）
+### 【13个】游戏风格（game）
 
 ![](img/59ed5ff35aac064edea39c6046af11aa.png)
 
@@ -42,7 +43,7 @@
 
 ![](img/6ea1a5042bb331cdad410d0c1744c227.png)
 
-## 【21个】杂项（misc）
+### 【21个】杂项（misc）
 
 ![](img/74729268af99ba79711641397e445dc7.png)
 
@@ -52,17 +53,17 @@
 
 ![](img/29d9eaf49786cc9d7dede5fd8b6b7508.png)
 
-## 【9个】纸艺（papercraft）
+### 【9个】纸艺（papercraft）
 
 ![](img/a3119a503afc4a6c079361db09a69f3f.png)
 
 ![](img/1f70e2eb275b5925dbd1592d0e194d51.png)
 
-## 【7个】照片（photo）
+### 【7个】照片（photo）
 
 ![](img/29784055ec839625a89a86cabf7aa8f9.png)
 
-## 【79个】2.0新增未分类
+### 【79个】2.0新增未分类
 
 ![](img/d8043a859d0802b441daa4f6c7167e9d.png)
 
@@ -78,38 +79,17 @@
 
 ![](img/8a52804e0bb2d5d9bb13137520a4270e.png)
 
-# Fooocus 1.0
+## Fooocus 1.0
 
 +   配套：
-
-+   多样图：https://docs.google.com/spreadsheets/d/1AF5bd-fALxlu0lguZQiQVn1yZwxUiBJGyh2eyJJWl74
-
-+   南瓜图：https://github.com/lllyasviel/Fooocus/discussions/14
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
++   多样图：`https://docs.google.com/spreadsheets/d/1AF5bd-fALxlu0lguZQiQVn1yZwxUiBJGyh2eyJJWl74`
++   南瓜图：`https://github.com/lllyasviel/Fooocus/discussions/14`
 
 ![](img/0456213826f4135c847effb81a8cf603.png)
 
 +   其他：
-
-+   兔子图：https://clio.so/rabbitsxl
-
-+   https://www.reddit.com/r/StableDiffusion/comments/15afvnb/sdxl_various_styles_keywords/
++   兔子图：`https://clio.so/rabbitsxl`
++   `https://www.reddit.com/r/StableDiffusion/comments/15afvnb/sdxl_various_styles_keywords/`
 
 ```
 &quot;Style: Enhance&quot;,&quot;breathtaking {prompt} . award-winning, professional, highly detailed&quot;,&quot;ugly, deformed, noisy, blurry, distorted, grainy&quot;

@@ -1,4 +1,7 @@
+
 # 【RUNWAY】又一炸裂的功能「口型同步」
+
+## 文章信息
 
 > 来源：[https://geekbang.feishu.cn/docx/Ed8Tdzr9soAJMLxgx5bcDCOinx1](https://geekbang.feishu.cn/docx/Ed8Tdzr9soAJMLxgx5bcDCOinx1)
 
@@ -14,17 +17,21 @@
 
 欢迎关注👸号👆
 
+## 背景
+
 今年被称为AI短视频元年，大家可以看到从央视到地方台，无处不在充斥着浓浓的AI味儿，甚至都用起了AI做新闻，可以说开创了一个新纪元。
 
 尴尬归尴尬，毕竟AI短视频还没发展到可以和拍摄出来一样的效果，不过这显然是一个大趋势，现在整个Ai行业可谓是“度日如年”，从能用到好用，不过是迭代几个版本的事情。
 
 不管是pika、stabelvideo、pixvers等视频大户，还是之前版本的runway，都无法解决一个问题，那就是口型同步，所以即便是有配音也看起来怪怪的。
 
+## Runway Lip Sync 功能
+
 但如今的runway不一样了，不仅有运动笔刷这个非常实用的功能，这次还更新了Lip Sync功能，让喜欢做AI电影的我们着实兴奋了一下下！
 
 ![](img/b9e510f58c94bac6f8eecb70ff98c659.png)
 
-点击Try Lip Sync进来：
+点击`Try Lip Sync`进来：
 
 ![](img/0092446670a2a07a0d8fa325dbaebfb6.png)
 
@@ -39,14 +46,13 @@
 （这里PS一下：这是我正在做的一个AI短视频宣传片，用我的脸换脸做的图，咱也来当一把女主角
 
 ![](img/305eb7edbf2ea61d98e639808b428fb4.png)
-
 ）
 
 都设置好了以后，长这个样子：
 
 ![](img/1b3013c5cc6e148186a53b194bb4b3d9.png)
 
-点一下Generate运行：
+点一下`Generate`运行：
 
 [🎦 点击观看视频](https://mpvideo.qpic.cn/0bc3gaab4aaa6eagpwzinftfamgddyyaahqa.f10002.mp4?dis_k=1f396c005c839a4c5da324e8fc155fc1&dis_t=1717142012&play_scene=10120&auth_info=VqS9l1o8VEegioPNdyBkX3E/FVUWKSc1US4cTjkVejhwHB4oCGE7JWlDNWVWN15V&auth_key=0f13b32e449fe91e0e5b0c805b307939&vid=wxv_3428195415659626497&format_id=10002&support_redirect=0&mmversion=false)
 
@@ -59,5 +65,7 @@
 视频详情
 
 还是英文的听着顺耳多了。
+
+## 结语
 
 好了，今天就到这儿，我继续去忙了～都去试试吧！

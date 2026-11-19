@@ -1,8 +1,9 @@
+
 # 深度：What We Learned from a Year of Building with LLMs
 
 > 来源：[https://aigcreative.feishu.cn/docx/CnqjdtVGHoisxPxeVascMiy3nTe](https://aigcreative.feishu.cn/docx/CnqjdtVGHoisxPxeVascMiy3nTe)
 
-# Part 1：tactical 战术部分
+## Part 1：tactical 战术部分
 
 It’s an exciting time to build with large language models (LLMs). Over the past year, LLMs have become “good enough” for real-world applications. The pace of improvements in LLMs, coupled with a parade of demos on social media, will fuel an estimated $200B investment in AI by 2025. LLMs are also broadly accessible, allowing everyone, not just ML engineers and scientists, to build intelligence into their products. While the barrier to entry for building AI products has been lowered, creating those effective beyond a demo remains a deceptively difficult endeavor.
 
@@ -28,19 +29,19 @@ Ready to delve dive in? Let’s go.
 
 准备好深入研究了吗？我们走吧。
 
-## **Tactical 战术上的**
+### Tactical 战术上的
 
 In this section, we share best practices for the core components of the emerging LLM stack: prompting tips to improve quality and reliability, evaluation strategies to assess output, retrieval-augmented generation ideas to improve grounding, and more. We also explore how to design human-in-the-loop workflows. While the technology is still rapidly developing, we hope these lessons, the by-product of countless experiments we’ve collectively run, will stand the test of time and help you build and ship robust LLM applications.
 
 在本节中，我们将分享新兴 LLM 堆栈核心组件的最佳实践：提高质量和可靠性的提示技巧、评估输出的评估策略、改善基础的检索增强生成想法等等。我们还探讨了如何设计人机交互工作流程。虽然该技术仍在快速发展，但我们希望这些经验教训（我们共同进行的无数实验的副产品）能够经受住时间的考验，并帮助您构建和交付强大的LLM应用程序。
 
-### **Prompting 提示**
+#### Prompting 提示
 
 We recommend starting with prompting when developing new applications. It’s easy to both underestimate and overestimate its importance. It’s underestimated because the right prompting techniques, when used correctly, can get us very far. It’s overestimated because even prompt-based applications require significant engineering around the prompt to work well.
 
 我们建议在开发新应用程序时从提示开始。人们很容易低估和高估其重要性。它被低估了，因为正确的提示技巧如果使用得当，可以让我们走得更远。它被高估了，因为即使是基于提示的应用程序也需要围绕提示进行大量工程才能正常工作。
 
-#### **F****ocus on gettin**g the most out of fundamental prompting techniques 专注于充分利用基本的提示技巧
+##### Focus on getting the most out of fundamental prompting techniques 专注于充分利用基本的提示技巧
 
 A few prompting techniques have consistently helped improve performance across various models and tasks: n-shot prompts + in-context learning, chain-of-thought, and providing relevant resources.
 
@@ -50,30 +51,20 @@ The idea of in-context learning via n-shot prompts is to provide the LLM with a 
 
 通过 n-shot 提示进行上下文学习的想法是为 LLM 提供一些示例来演示任务并使输出符合我们的期望。一些提示：
 
-+   If n is too low, the model may over-anchor on those specific examples, hurting its ability to generalize. As a rule of thumb, aim for n ≥ 5. Don’t be afraid to go as high as a few dozen.
-如果 n 太低，模型可能会过度锚定这些特定示例，从而损害其泛化能力。根据经验，目标是 n ≥ 5。不要害怕达到几十个。
-
-+   Examples should be representative of the expected input distribution. If you’re building a movie summarizer, include samples from different genres in roughly the proportion you expect to see in practice.
-示例应代表预期的输入分布。如果您正在构建电影摘要器，请按照您期望在实践中看到的大致比例包含不同类型的样本。
-
-+   You don’t necessarily need to provide the full input-output pairs. In many cases, examples of desired outputs are sufficient.
-您不一定需要提供完整的输入输出对。在许多情况下，所需输出的示例就足够了。
-
-+   If you are using an LLM that supports tool use, your n-shot examples should also use the tools you want the agent to use.
-如果您使用的 LLM 支持工具使用，则您的 n-shot 示例还应使用您希望代理使用的工具。
++ 如果 `n` 太低，模型可能会过度锚定这些特定示例，从而损害其泛化能力。根据经验，目标是 `n` ≥ 5。不要害怕达到几十个。
++ 示例应代表预期的输入分布。如果您正在构建电影摘要器，请按照您期望在实践中看到的大致比例包含不同类型的样本。
++ 您不一定需要提供完整的输入输出对。在许多情况下，所需输出的示例就足够了。
++ 如果您使用的 LLM 支持工具使用，则您的 n-shot 示例还应使用您希望代理使用的工具。
 
 In chain-of-thought (CoT) prompting, we encourage the LLM to explain its thought process before returning the final answer. Think of it as providing the LLM with a sketchpad so it doesn’t have to do it all in memory. The original approach was to simply add the phrase “Let’s think step-by-step” as part of the instructions. However, we’ve found it helpful to make the CoT more specific, where adding specificity via an extra sentence or two often reduces hallucination rates significantly. For example, when asking an LLM to summarize a meeting transcript, we can be explicit about the steps, such as:
 
 在思维链（CoT）提示中，我们鼓励LLM在返回最终答案之前解释其思维过程。可以将其视为为 LLM 提供画板，这样它就不必在内存中完成所有操作。最初的方法是简单地添加“让我们一步一步思考”这句话作为说明的一部分。然而，我们发现让 CoT 更加具体是有帮助的，通过额外的一两句话来增加特异性通常会显着降低幻觉率。例如，当要求 LLM 总结会议记录时，我们可以明确说明步骤，例如：
 
-+   First, list the key decisions, follow-up items, and associated owners in a sketchpad.
-首先，在画板中列出关键决策、后续项目和相关所有者。
++ 首先，在画板中列出关键决策、后续项目和相关所有者。
++ 然后，检查画板中的细节是否与文字记录相符。
++ 最后，将要点综合成简洁的总结。
 
-+   Then, check that the details in the sketchpad are factually consistent with the transcript.
-然后，检查画板中的细节是否与文字记录相符。
 
-+   Finally, synthesize the key points into a concise summary.
-最后，将要点综合成简洁的总结。
 
 Recently, [some doubt](https://arxiv.org/abs/2405.04776) has been cast on whether this technique is as powerful as believed. Additionally, there’s significant debate about exactly what happens during inference when chain-of-thought is used. Regardless, this technique is one to experiment with when possible.
 
@@ -83,49 +74,47 @@ Providing relevant resources is a powerful mechanism to expand the model’s kno
 
 提供相关资源是扩展模型知识库、减少幻觉并增加用户信任的强大机制。通常通过检索增强生成 (RAG) 来完成，为模型提供可直接在响应中使用的文本片段是一项重要技术。在提供相关资源时，仅仅包含它们是不够的；不要忘记告诉模型优先考虑它们的使用，直接引用它们，有时在资源不足时提及。这些有助于“接地”代理对资源库的响应。
 
-#### **Structure** your inputs and outputs 构建您的输入和输出
+## Structure your inputs and outputs 构建您的输入和输出
 
 Structured input and output help models better understand the input as well as return output that can reliably integrate with downstream systems. Adding serialization formatting to your inputs can help provide more clues to the model as to the relationships between tokens in the context, additional metadata to specific tokens (like types), or relate the request to similar examples in the model’s training data.
 
 结构化输入和输出有助于模型更好地理解输入和返回输出，从而能够与下游系统可靠地集成。向输入添加序列化格式有助于为模型提供更多关于上下文中标记之间的关系的线索、特定标记（如类型）的附加元数据，或将请求与模型训练数据中的类似示例相关联。
 
-As an[ examp](https://www.researchgate.net/publication/371223615_SQL-PaLM_Improved_Large_Language_ModelAdaptation_for_Text-to-SQL)le, many questions on the internet about writing SQL begin by specifying the SQL schema. Thus, you may expect that effective prompting for Text-to-SQL should include structured schema definitions; indeed.
+As an [example](https://www.researchgate.net/publication/371223615_SQL-PaLM_Improved_Large_Language_ModelAdaptation_for_Text-to-SQL), many questions on the internet about writing SQL begin by specifying the SQL schema. Thus, you may expect that effective prompting for Text-to-SQL should include structured schema definitions; indeed.
 
 例如，互联网上许多有关编写 SQL 的问题都是从指定 SQL 模式开始的。因此，您可能期望文本到 SQL 的有效提示应包括结构化模式定义；的确。
 
-Structured output serves a similar purpose, but it also simpli[fies integ](https://github.com/jxnl/instructor)ratio[n into d](https://github.com/outlines-dev/outlines)ownstream components of your system. Instructor and Outlines work well for structured output. (If you’re importing an LLM API SDK, use Instructor; if you’re importing Huggingface for a self-hosted model, use Outlines.) Structured input expresses tasks clearly and resembles how the training data is formatted, increasing the probability of better output.
+Structured output serves a similar purpose, but it also simplifies integration into downstream components of your system. [Instructor](https://github.com/jxnl/instructor) and [Outlines](https://github.com/outlines-dev/outlines) work well for structured output. (If you’re importing an LLM API SDK, use Instructor; if you’re importing Huggingface for a self-hosted model, use Outlines.) Structured input expresses tasks clearly and resembles how the training data is formatted, increasing the probability of better output.
 
 结构化输出具有类似的目的，但它也简化了与系统下游组件的集成。讲师和大纲非常适合结构化输出。 （如果您要导入 LLM API SDK，请使用 Instructor；如果您要为自托管模型导入 Huggingface，请使用 Outlines。）结构化输入可以清楚地表达任务，并且类似于训练数据的格式，增加更好输出的概率。
 
-When using structured input, be aware that each LLM family has their own preferences. Claude prefers xml while GPT favors Markdown and JSON. With XML, you can even pre-fill Claude’s responses by providing a response tag like so.
+When using structured input, be aware that each LLM family has their own preferences. Claude prefers xml while GPT favors Markdown and JSON. With XML, you can even pre-fill Claude’s responses by providing a `response` tag like so.
 
-使用结构化输入时，请注意每个 LLM 系列都有自己的偏好。 Claude 更喜欢 xml ，而 GPT 更喜欢 Markdown 和 JSON。使用 XML，您甚至可以通过提供像这样的 response 标签来预填充 Claude 的响应。
+使用结构化输入时，请注意每个 LLM 系列都有自己的偏好。 Claude 更喜欢 xml ，而 GPT 更喜欢 Markdown 和 JSON。使用 XML，您甚至可以通过提供像这样的 `response` 标签来预填充 Claude 的响应。
 
-```
-                                                     &lt;/&gt; python
-messages=[    {        &quot;role&quot;: &quot;user&quot;,        &quot;content&quot;: &quot;&quot;&quot;Extract the &lt;name&gt;, &lt;size&gt;, &lt;price&gt;, and &lt;color&gt; from this product description into your &lt;response&gt;.                &lt;description&gt;The SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control   lights, thermostats, and other connected devices via voice or app—no matter where you                   place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.
+```python
+messages = [
+    {
+        "role": "user",
+        "content": """Extract the <name>, <size>, <price>, and <color> from this product description into your <response>.
+                <description>The SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control   lights, thermostats, and other connected devices via voice or app—no matter where you                   place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.
 
-                &lt;/description&gt;&quot;&quot;&quot;
-
-   },
-
-   {
-
-        &quot;role&quot;: &quot;assistant&quot;,
-
-        &quot;content&quot;: &quot;&lt;response&gt;&lt;name&gt;&quot;
-
-   } 
+                </description>"""
+    },
+    {
+        "role": "assistant",
+        "content": "<response><name>"
+    }
 ]
 ```
 
-#### **H**ave small prompts that do one thing, and only one thing, well 有做一件事的小提示，而且只做一件事，好吧
+## Have small prompts that do one thing, and only one thing, well 有做一件事的小提示，而且只做一件事，好吧
 
-A[ common an](https://en.wikipedia.org/wiki/God_object)ti-pattern/code smell in software is the “God Object,” where we have a single class or function that does everything. The same applies to prompts too.
+A common anti-pattern/code smell in software is the “[God Object](https://en.wikipedia.org/wiki/God_object),” where we have a single class or function that does everything. The same applies to prompts too.
 
 软件中常见的反模式/代码味道是“上帝对象”，其中我们有一个类或函数可以完成所有事情。这同样适用于提示。
 
-A prompt typically starts simple: A few sentences of instruction, a couple of examples, and we’re good to go. But as we try to improve performance and handle more edge cases, complexity creeps in. More instructions. Mult[i-step reasoning](https://www.godaddy.com/resources/news/llm-from-the-trenches-10-lessons-learned-operationalizing-models-at-godaddy#h-1-sometimes-one-prompt-isn-t-enough). Dozens of examples. Before we know it, our initially simple prompt is now a 2,000 token frankenstein. And to add injury to insult, it has worse performance on the more common and straightforward inputs! GoDaddy shared this challenge as their No. 1 lesson from building with LLMs.
+A prompt typically starts simple: A few sentences of instruction, a couple of examples, and we’re good to go. But as we try to improve performance and handle more edge cases, complexity creeps in. More instructions. [Multi-step reasoning](https://www.godaddy.com/resources/news/llm-from-the-trenches-10-lessons-learned-operationalizing-models-at-godaddy#h-1-sometimes-one-prompt-isn-t-enough). Dozens of examples. Before we know it, our initially simple prompt is now a 2,000 token frankenstein. And to add injury to insult, it has worse performance on the more common and straightforward inputs! GoDaddy shared this challenge as their No. 1 lesson from building with LLMs.
 
 提示通常一开始很简单：几句指令，几个例子，我们就可以开始了。但当我们尝试提高性能并处理更多边缘情况时，复杂性就会逐渐增加。更多指令。多步推理。几十个例子。不知不觉中，我们最初的简单提示现在变成了 2,000 个代币弗兰肯斯坦。雪上加霜的是，它在更常见和直接的输入上表现更差！ GoDaddy 分享了这一挑战，并将其作为与 LLMs 构建的第一课。
 
@@ -133,20 +122,23 @@ Just like how we strive (read: struggle) to keep our systems and code simple, so
 
 就像我们如何努力（阅读：努力）保持我们的系统和代码简单一样，我们的提示也应该如此。我们可以将其分解为以下步骤：
 
-+   Extract key decisions, action items, and owners into structured format
-将关键决策、行动项目和所有者提取为结构化格式
+- Extract key decisions, action items, and owners into structured format
 
-+   Check extracted details against the original transcription for consistency
-检查提取的详细信息与原始转录的一致性
+  将关键决策、行动项目和所有者提取为结构化格式
 
-+   Generate a concise summary from the structured details
-从结构化细节生成简明摘要
+- Check extracted details against the original transcription for consistency
+
+  检查提取的详细信息与原始转录的一致性
+
+- Generate a concise summary from the structured details
+
+  从结构化细节生成简明摘要
 
 As a result, we’ve split our single prompt into multiple prompts that are each simple, focused, and easy to understand. And by breaking them up, we can now iterate and eval each prompt individually.
 
 因此，我们将单个提示拆分为多个提示，每个提示都简单、重点突出且易于理解。通过分解它们，我们现在可以单独迭代和评估每个提示。
 
-#### **Craft you**r context tokens 制作你的上下文标记
+## Craft your context tokens 制作你的上下文标记
 
 Rethink, and challenge your assumptions about how much context you actually need to send to the agent. Be like Michaelangelo, do not build up your context sculpture—chisel away the superfluous material until the sculpture is revealed. RAG is a popular way to collate all of the potentially relevant blocks of marble, but what are you doing to extract what’s necessary?
 
@@ -160,17 +152,21 @@ The other key optimization is the structure of your context. Your bag-of-docs re
 
 另一个关键的优化是上下文的结构。你的文档袋表示对人类没有帮助，不要认为它对代理有任何好处。仔细考虑如何构建上下文以强调其各部分之间的关系，并使提取尽可能简单。
 
-### **Informat**ion Retrieval/RAG 信息检索/RAG
+## Information Retrieval/RAG 信息检索/RAG
 
-Beyond prompting, another effective way to steer an LLM is by providing knowledge as part of the prompt. This grounds the LLM on the provided context which is then used for in-context learning. This is known as retrieval-augmented generation (RAG). Practitioners have found RAG effective at providing knowledge and improving output, while requiring far less effort and cost compared to finetuning.RAG is only as good as the retrieved documents’ relevance, density, and detail
+Beyond prompting, another effective way to steer an LLM is by providing knowledge as part of the prompt. This grounds the LLM on the provided context which is then used for in-context learning. This is known as retrieval-augmented generation (RAG). Practitioners have found RAG effective at providing knowledge and improving output, while requiring far less effort and cost compared to finetuning. RAG is only as good as the retrieved documents’ relevance, density, and detail
+
+在提示之外，另一种有效的引导 LLM 的方法是将知识作为提示的一部分提供。这使 LLM 以所提供的上下文为基础，然后用于上下文学习。这就是所谓的检索增强生成（RAG）。实践者发现 RAG 在提供知识和改进输出方面很有效，同时与微调相比所需的工作量和成本要少得多。RAG 的有效性取决于检索到的文档的相关性、密度和细节。
+
+
 
 除了提示之外，引导 LLM 的另一种有效方法是提供知识作为提示的一部分。这将 LLM 基于所提供的上下文，然后用于上下文学习。这称为检索增强生成（RAG）。从业者发现 RAG 可以有效地提供知识和提高输出，同时与微调相比，所需的工作量和成本要少得多。RAG 的好坏取决于检索到的文档的相关性、密度和细节
 
-#### **The**** quality of your R**AG’s output is dependent on the quality of retrieved documents, which in turn can be considered along a few factors. RAG 输出的质量取决于检索文档的质量，而检索文档的质量又可以考虑几个因素。
+## The quality of your RAG’s output is dependent on the quality of retrieved documents, which in turn can be considered along a few factors. RAG 输出的质量取决于检索文档的质量，而检索文档的质量又可以考虑几个因素。
 
-The fi[rst and most obvious met](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)ric is relevance. This is typically quantified via ranking metrics such as Mean Reciprocal Rank (MRR) or Normalized Discounted Cumulative Gain (NDCG). MRR evaluates how well a system places the first relevant result in a ranked list while NDCG considers the relevance of all the results and their positions. They measure how good the system is at ranking relevant documents higher and irrelevant documents lower. For example, if we’re retrieving user summaries to generate movie review summaries, we’ll want to rank reviews for the specific movie higher while excluding reviews for other movies.
+The [first and most obvious metric](https://en.wikipedia.org/wiki/Discounted_cumulative_gain) is relevance. This is typically quantified via ranking metrics such as Mean Reciprocal Rank (MRR) or Normalized Discounted Cumulative Gain (NDCG). MRR evaluates how well a system places the first relevant result in a ranked list while NDCG considers the relevance of all the results and their positions. They measure how good the system is at ranking relevant documents higher and irrelevant documents lower. For example, if we’re retrieving user summaries to generate movie review summaries, we’ll want to rank reviews for the specific movie higher while excluding reviews for other movies.
 
-第一个也是最明显的指标是相关性。这通常通过平均倒数排名 (MRR) 或标准化折扣累积增益 (NDCG) 等排名指标来量化。 MRR 评估系统将第一个相关结果放置在排名列表中的程度，而 NDCG 则考虑所有结果及其位置的相关性。它们衡量系统在将相关文档排名较高、将不相关文档排名较低方面的表现。例如，如果我们检索用户摘要以生成电影评论摘要，我们将希望对特定电影的评论进行更高的排名，同时排除其他电影的评论。
+第一个也是最明显的指标是相关性。这通常通过平均倒数排名 (MRR) 或标准化折扣累积增益 (NDCG) 等排名指标来量化。MRR 评估系统将第一个相关结果放置在排名列表中的程度，而 NDCG 则考虑所有结果及其位置的相关性。它们衡量系统在将相关文档排名较高、将不相关文档排名较低方面的表现。例如，如果我们检索用户摘要以生成电影评论摘要，我们将希望对特定电影的评论进行更高的排名，同时排除其他电影的评论。
 
 Like traditional recommendation systems, the rank of retrieved items will have a significant impact on how the LLM performs on downstream tasks. To measure the impact, run a RAG-based task but with the retrieved items shuffled—how does the RAG output perform?
 
@@ -184,47 +180,47 @@ Finally, consider the level of detail provided in the document. Imagine we’re 
 
 最后，考虑文档中提供的详细程度。想象一下，我们正在构建一个 RAG 系统来从自然语言生成 SQL 查询。我们可以简单地提供带有列名作为上下文的表模式。但是，如果我们包含列描述和一些代表性值怎么办？附加的详细信息可以帮助 LLM 更好地理解表的语义，从而生成更正确的 SQL。
 
-#### **D**on’t forget keyword search; use it as a baseline and in hybrid search. 不要忘记关键词搜索；将其用作基线和混合搜索。
+## Don’t forget keyword search; use it as a baseline and in hybrid search. 不要忘记关键词搜索；将其用作基线和混合搜索。
 
 Given how prevalent the embedding-based RAG demo is, it’s easy to forget or overlook the decades of research and solutions in information retrieval.
 
 鉴于基于嵌入的 RAG 演示的普遍性，人们很容易忘记或忽略数十年的信息检索研究和解决方案。
 
-Nonetheless, while embeddings are undoubtedly a powerful tool, they are not the be all and end all. First, while they excel at capturing high-level semantic similarity, they may struggle with more specific, keyword-based queries, like when users search for names (e.g., Ilya), acronyms (e.g., RAG), or IDs (e.g., claude-3-sonnet). Keyword-based search, such as BM25, are explicitly designed for this. And after years of keyword-based search, users have likely taken it for granted and may get frustrated if the document they expect to retrieve isn’t being returned.
+Nonetheless, while embeddings are undoubtedly a powerful tool, they are not the be all and end all. First, while they excel at capturing high-level semantic similarity, they may struggle with more specific, keyword-based queries, like when users search for names (e.g., Ilya), acronyms (e.g., RAG), or IDs (e.g., `claude-3-sonnet`). Keyword-based search, such as BM25, are explicitly designed for this. And after years of keyword-based search, users have likely taken it for granted and may get frustrated if the document they expect to retrieve isn’t being returned.
 
 尽管如此，虽然嵌入无疑是一个强大的工具，但它们并不是全部。首先，虽然它们擅长捕获高级语义相似性，但它们可能会难以处理更具体的、基于关键字的查询，例如当用户搜索名称（例如 Ilya）、首字母缩略词（例如 RAG）或 ID（例如 claude）时-3-十四行诗）。基于关键字的搜索，例如 BM25，就是专门为此设计的。经过多年基于关键字的搜索，用户可能已经认为这是理所当然的，如果他们期望检索的文档没有被返回，他们可能会感到沮丧。
 
 > Vector embeddings do not magically solve search. In fact, the heavy lifting is in the step before you re-rank with semantic similarity search. Making a genuine improvement over BM25 or full-text search is hard.
-
+>
 > 向量嵌入并不能神奇地解决搜索问题。事实上，繁重的工作是在使用语义相似性搜索重新排名之前的步骤。对 BM25 或全文搜索进行真正的改进是很困难的。
-
+>
 > — Aravind Srinivas, CEO Perplexity.ai
-
+>
 > — Aravind Srinivas，Perplexity.ai 首席执行官
 
 > We’ve been communicating this to our customers and partners for months now. Nearest Neighbor Search with naive embeddings yields very noisy results and you’re likely better off starting with a keyword-based approach.
-
+>
 > 几个月来，我们一直在向客户和合作伙伴传达这一点。使用朴素嵌入的最近邻搜索会产生非常嘈杂的结果，您最好从基于关键字的方法开始。
-
+>
 > — Beyang Liu, CTO Sourcegraph
-
+>
 > — Beyang Liu，首席技术官 Sourcegraph
 
 Second, it’s more straightforward to understand why a document was retrieved with keyword search—we can look at the keywords that match the query. In contrast, embedding-based retrieval is less interpretable. Finally, thanks to systems like Lucene and OpenSearch that have been optimized and battle-tested over decades, keyword search is usually more computationally efficient.
 
 其次，更容易理解为什么通过关键字搜索来检索文档——我们可以查看与查询匹配的关键字。相比之下，基于嵌入的检索的可解释性较差。最后，得益于 Lucene 和 OpenSearch 等经过数十年优化和实战测试的系统，关键字搜索通常在计算上更加高效。
 
-In most cases, a hybrid will work best: keyword matching for the obvious matches, and embeddi[ngs for synonyms, hypernyms, a](https://www.shortwave.com/blog/deep-dive-into-worlds-smartest-email-ai/)nd spelling errors, as well as multimodality (e.g., images and text). Shortwave shared how they built their RAG pipeline, including query rewriting, keyword + embedding retrieval, and ranking.
+In most cases, a hybrid will work best: keyword matching for the obvious matches, and [embeddings for synonyms, hypernyms, and spelling errors](https://www.shortwave.com/blog/deep-dive-into-worlds-smartest-email-ai/), as well as multimodality (e.g., images and text). Shortwave shared how they built their RAG pipeline, including query rewriting, keyword + embedding retrieval, and ranking.
 
-在大多数情况下，混合效果最好：明显匹配的关键字匹配，同义词、上位词和拼写错误的嵌入，以及多模态（例如图像和文本）。 Shortwave 分享了他们如何构建 RAG 管道，包括查询重写、关键字 + 嵌入检索和排名。
+在大多数情况下，混合效果最好：明显匹配的关键字匹配，同义词、上位词和拼写错误的嵌入，以及多模态（例如图像和文本）。Shortwave 分享了他们如何构建 RAG 管道，包括查询重写、关键字 + 嵌入检索和排名。
 
-#### **Prefer RAG over fine-tuni**ng for new knowledge 更喜欢 RAG 而不是新知识的微调
+## Prefer RAG over fine-tuning for new knowledge 更喜欢 RAG 而不是新知识的微调
 
 Both RAG and fine-tuning can be used to incorporate new information into LLMs and increase performance on specific tasks. Thus, which should we try first?
 
 RAG 和微调都可用于将新信息合并到 LLMs 中并提高特定任务的性能。那么，我们应该先尝试哪一个呢？
 
-R[ecent res](https://arxiv.org/abs/2312.05934)earch s[uggests that ](https://arxiv.org/abs/2401.08406)RAG may have an edge. One study compared RAG against unsupervised fine-tuning (a.k.a. continued pre-training), evaluating both on a subset of MMLU and current events. They found that RAG consistently outperformed fine-tuning for knowledge encountered during training as well as entirely new knowledge. In another paper, they compared RAG against supervised fine-tuning on an agricultural dataset. Similarly, the performance boost from RAG was greater than fine-tuning, especially for GPT-4 (see Table 20 of the paper).
+[Recent research](https://arxiv.org/abs/2312.05934) [suggests that](https://arxiv.org/abs/2401.08406) RAG may have an edge. One study compared RAG against unsupervised fine-tuning (a.k.a. continued pre-training), evaluating both on a subset of MMLU and current events. They found that RAG consistently outperformed fine-tuning for knowledge encountered during training as well as entirely new knowledge. In another paper, they compared RAG against supervised fine-tuning on an agricultural dataset. Similarly, the performance boost from RAG was greater than fine-tuning, especially for GPT-4 (see Table 20 of the paper).
 
 最近的研究表明 RAG 可能具有优势。一项研究将 RAG 与无监督微调（又称持续预训练）进行了比较，对 MMLU 的子集和当前事件进行了评估。他们发现，对于训练期间遇到的知识以及全新知识，RAG 的性能始终优于微调。在另一篇论文中，他们将 RAG 与农业数据集上的监督微调进行了比较。同样，RAG 的性能提升比微调更大，尤其是对于 GPT-4（参见论文的表 20）。
 
@@ -236,16 +232,18 @@ In addition, the R in RAG provides finer grained control over how we retrieve do
 
 此外，RAG 中的 R 对我们检索文档的方式提供了更细粒度的控制。例如，如果我们为多个组织托管 RAG 系统，通过对检索索引进行分区，我们可以确保每个组织只能从自己的索引中检索文档。这可确保我们不会无意中将一个组织的信息泄露给另一个组织。
 
-#### **Long-context models won**’t make RAG obsolete 长上下文模型不会让 RAG 过时
+## Long-context models won’t make RAG obsolete 长上下文模型不会让 RAG 过时
 
 > With Gemini 1.5 providing context windows of up to 10M tokens in size, some have begun to question the future of RAG.
-
+>
 > 随着 Gemini 1.5 提供高达 10M 令牌大小的上下文窗口，一些人开始质疑 RAG 的未来。
 
+
+
 > I tend to believe that Gemini 1.5 is significantly overhyped by Sora. A context window of 10M tokens effectively makes most of existing RAG frameworks unnecessary—you simply put whatever your data into the context and talk to the model like usual. Imagine how it does to all the startups/agents/LangChain projects where most of the engineering efforts goes to RAG 😅 Or in one sentence: the 10m context kills RAG. Nice work Gemini.
-
+>
 > 我倾向于认为 Sora 明显夸大了 Gemini 1.5。 10M 令牌的上下文窗口有效地使得大多数现有的 RAG 框架变得不必要——您只需将任何数据放入上下文中并像往常一样与模型对话即可。想象一下它对所有初创公司/代理/LangChain 项目的影响，其中大部分工程工作都花在 RAG 上😅 或者用一句话来说：10m 上下文杀死了 RAG。双子座干得好。
-
+>
 > — [Yao Fu](https://x.com/Francis_YAO_/status/1758935954189115714) — 付耀
 
 While it’s true that long contexts will be a game-changer for use cases such as analyzing multiple documents or chatting with PDFs, the rumors of RAG’s demise are greatly exaggerated.
@@ -256,7 +254,7 @@ First, even with a context window of 10M tokens, we’d still need a way to sele
 
 首先，即使有 10M 个 token 的上下文窗口，我们仍然需要一种方法来选择信息以输入模型。其次，除了狭隘的大海捞针评估之外，我们还没有看到令人信服的数据表明模型可以在如此大的背景下进行有效的推理。因此，如果没有良好的检索（和排名），我们就有可能用干扰因素淹没模型，甚至可能用完全不相关的信息填充上下文窗口。
 
-Finally, th[ere’s cost. The Tr](https://aws.amazon.com/ec2/instance-types/high-memory/)ansformer’s inference cost scales quadratically (or linearly in both space and time) with context length. Just because there exists a model that could read your organization’s entire Google Drive contents before answering each question doesn’t mean that’s a good idea. Consider an analogy to how we use RAM: we still read and write from disk, even though there exist compute instances with RAM running into the tens of terabytes.
+Finally, there’s [cost](https://aws.amazon.com/ec2/instance-types/high-memory/). The Transformer’s inference cost scales quadratically (or linearly in both space and time) with context length. Just because there exists a model that could read your organization’s entire Google Drive contents before answering each question doesn’t mean that’s a good idea. Consider an analogy to how we use RAM: we still read and write from disk, even though there exist compute instances with RAM running into the tens of terabytes.
 
 最后，还有成本。 Transformer 的推理成本随上下文长度呈二次方（或在空间和时间上呈线性）缩放。仅仅因为存在一个模型可以在回答每个问题之前读取您组织的整个 Google 云端硬盘内容，但这并不意味着这是一个好主意。考虑一下我们如何使用 RAM 的类比：即使存在 RAM 达到数十 TB 的计算实例，我们仍然从磁盘读取和写入。
 
@@ -264,35 +262,24 @@ So don’t throw your RAGs in the trash just yet. This pattern will remain usefu
 
 因此，暂时不要将 RAG 扔进垃圾桶。即使上下文窗口变大，这种模式仍然有用。
 
-### **Tuning an**d optimizing workflows 调整和优化工作流程
+## Tuning and optimizing workflows 调整和优化工作流程
 
 Prompting an LLM is just the beginning. To get the most juice out of them, we need to think beyond a single prompt and embrace workflows. For example, how could we split a single complex task into multiple simpler tasks? When is finetuning or caching helpful with increasing performance and reducing latency/cost? In this section, we share proven strategies and real-world examples to help you optimize and build reliable LLM workflows.
 
 提示 LLM 只是开始。为了充分利用它们，我们需要超越单一提示并拥抱工作流程。例如，我们如何将一个复杂的任务拆分为多个简单的任务？微调或缓存何时有助于提高性能和减少延迟/成本？在本部分中，我们分享经过验证的策略和实际示例，以帮助您优化和构建可靠的LLM工作流程。
 
-#### **S**tep-by-step, multi-turn “flows” can give large boosts. 循序渐进、多轮“流动”可以带来巨大的推动力。
+### Step-by-step, multi-turn “flows” can give large boosts. 循序渐进、多轮“流动”可以带来巨大的推动力。
 
-We [already kno](https://arxiv.org/abs/2401.08500)w that by decomposing a single big prompt into multiple smaller prompts, we can achieve better results. An example of this is AlphaCodium: By switching from a single prompt to a multi-step workflow, they increased GPT-4 accuracy (pass@5) on CodeContests from 19% to 44%. The workflow includes:
+We [already know](https://arxiv.org/abs/2401.08500) that by decomposing a single big prompt into multiple smaller prompts, we can achieve better results. An example of this is AlphaCodium: By switching from a single prompt to a multi-step workflow, they increased GPT-4 accuracy (`pass@5`) on CodeContests from 19% to 44%. The workflow includes:
 
-我们已经知道，通过将单个大提示分解为多个较小的提示，我们可以获得更好的结果。 AlphaCodium 就是一个例子：通过从单一提示切换到多步骤工作流程，他们将 CodeContests 上的 GPT-4 准确率 (pass@5) 从 19% 提高到了 44%。工作流程包括：
+我们已经知道，通过将单个大提示分解为多个较小的提示，我们可以获得更好的结果。 AlphaCodium 就是一个例子：通过从单一提示切换到多步骤工作流程，他们将 CodeContests 上的 GPT-4 准确率 (`pass@5`) 从 19% 提高到了 44%。工作流程包括：
 
-+   Reflecting on the problem
-反思问题
-
-+   Reasoning on the public tests
-公开测试的推理
-
-+   Generating possible solutions
-生成可能的解决方案
-
-+   Ranking possible solutions
-对可能的解决方案进行排名
-
-+   Generating synthetic tests
-生成综合测试
-
-+   Iterating on the solutions on public and synthetic tests.
-迭代公共测试和综合测试的解决方案。
+- Reflecting on the problem 反思问题
+- Reasoning on the public tests 公开测试的推理
+- Generating possible solutions 生成可能的解决方案
+- Ranking possible solutions 对可能的解决方案进行排名
+- Generating synthetic tests 生成综合测试
+- Iterating on the solutions on public and synthetic tests. 迭代公共测试和综合测试的解决方案。
 
 Small tasks with clear objectives make for the best agent or flow prompts. It’s not required that every agent prompt requests structured output, but structured outputs help a lot to interface with whatever system is orchestrating the agent’s interactions with the environment.
 
@@ -302,22 +289,13 @@ Some things to try
 
 一些值得尝试的事情
 
-+   An explicit planning step, as tightly specified as possible. Consider having predefined plans to choose from (c.f. https://youtu.be/hGXhFa3gzBs?si=gNEGYzux6TuB1del).
-明确的计划步骤，尽可能严格地指定。考虑有预定义的计划可供选择（参见 https://youtu.be/hGXhFa3gzBs?si=gNEGYzux6TuB1del）。
+- An explicit planning step, as tightly specified as possible. Consider having predefined plans to choose from (c.f. https://youtu.be/hGXhFa3gzBs?si=gNEGYzux6TuB1del). 明确的计划步骤，尽可能严格地指定。考虑有预定义的计划可供选择（参见 https://youtu.be/hGXhFa3gzBs?si=gNEGYzux6TuB1del）。
+- Rewriting the original user prompts into agent prompts. Be careful, this process is lossy! 将原来的用户提示重写为代理提示。小心，这个过程是有损耗的！
+- Agent behaviors as linear chains, DAGs, and State-Machines; different dependency and logic relationships can be more and less appropriate for different scales. Can you squeeze performance optimization out of different task architectures? 代理行为如线性链、DAG 和状态机；不同的依赖关系和逻辑关系可能或多或少适合不同的规模。您能否从不同的任务架构中挤出性能优化？
+- Planning validations; your planning can include instructions on how to evaluate the responses from other agents to make sure the final assembly works well together. 规划验证；您的计划可以包括有关如何评估其他代理的响应的说明，以确保最终组装顺利进行。
+- Prompt engineering with fixed upstream state—make sure your agent prompts are evaluated against a collection of variants of what may happen before. 具有固定上游状态的提示工程 - 确保根据之前可能发生的情况的变体集合来评估您的代理提示。
 
-+   Rewriting the original user prompts into agent prompts. Be careful, this process is lossy!
-将原来的用户提示重写为代理提示。小心，这个过程是有损耗的！
-
-+   Agent behaviors as linear chains, DAGs, and State-Machines; different dependency and logic relationships can be more and less appropriate for different scales. Can you squeeze performance optimization out of different task architectures?
-代理行为如线性链、DAG 和状态机；不同的依赖关系和逻辑关系可能或多或少适合不同的规模。您能否从不同的任务架构中挤出性能优化？
-
-+   Planning validations; your planning can include instructions on how to evaluate the responses from other agents to make sure the final assembly works well together.
-规划验证；您的计划可以包括有关如何评估其他代理的响应的说明，以确保最终组装顺利进行。
-
-+   Prompt engineering with fixed upstream state—make sure your agent prompts are evaluated against a collection of variants of what may happen before.
-具有固定上游状态的提示工程 - 确保根据之前可能发生的情况的变体集合来评估您的代理提示。
-
-#### **Prioritize determinist****ic workflows **for now 现在优先考虑确定性工作流程
+### Prioritize deterministic workflows for now 现在优先考虑确定性工作流程
 
 While AI agents can dynamically react to user requests and the environment, their non-deterministic nature makes them a challenge to deploy. Each step an agent takes has a chance of failing, and the chances of recovering from the error are poor. Thus, the likelihood that an agent completes a multi-step task successfully decreases exponentially as the number of steps increases. As a result, teams building agents find it difficult to deploy reliable agents.
 
@@ -327,14 +305,9 @@ A promising approach is to have agent systems that produce deterministic plans w
 
 一种有前途的方法是让代理系统产生确定性计划，然后以结构化、可重复的方式执行。第一步，给定一个高级目标或提示，代理会生成一个计划。然后，确定性地执行该计划。这使得每个步骤都更加可预测和可靠。好处包括：
 
-+   Generated plans can serve as few-shot samples to prompt or finetune an agent.
-生成的计划可以作为少量样本来提示或微调代理。
-
-+   Deterministic execution makes the system more reliable, and thus easier to test and debug. Furthermore, failures can be traced to the specific steps in the plan.
-确定性执行使系统更加可靠，从而更容易测试和调试。此外，失败可以追溯到计划中的具体步骤。
-
-+   Generated plans can be represented as directed acyclic graphs (DAGs) which are easier, relative to a static prompt, to understand and adapt to new situations.
-生成的计划可以表示为有向无环图 (DAG)，相对于静态提示，它更容易理解和适应新情况。
+- Generated plans can serve as few-shot samples to prompt or finetune an agent. 生成的计划可以作为少量样本来提示或微调代理。
+- Deterministic execution makes the system more reliable, and thus easier to test and debug. Furthermore, failures can be traced to the specific steps in the plan. 确定性执行使系统更加可靠，从而更容易测试和调试。此外，失败可以追溯到计划中的具体步骤。
+- Generated plans can be represented as directed acyclic graphs (DAGs) which are easier, relative to a static prompt, to understand and adapt to new situations. 生成的计划可以表示为有向无环图 (DAG)，相对于静态提示，它更容易理解和适应新情况。
 
 The most successful agent builders may be those with strong experience managing junior engineers because the process of generating plans is similar to how we instruct and manage juniors. We give juniors clear goals and concrete plans, instead of vague open-ended directions, and we should do the same for our agents too.
 
@@ -344,17 +317,19 @@ In the end, the key to reliable, working agents will likely be found in adopting
 
 最后，可靠、有效的代理的关键可能在于采用更加结构化、确定性的方法，以及收集数据来完善提示和微调模型。如果没有这一点，我们将构建的代理在某些时候可能表现得非常好，但平均而言，会让用户失望，从而导致留存率低。
 
-#### **Getting more diverse output****s beyond tempe**rature 获得除温度之外更多样化的输出
+### Getting more diverse outputs beyond temperature 获得除温度之外更多样化的输出
 
-Suppose your task requires diversity in an LLM’s output. Maybe you’re writing an LLM pipeline to suggest products to buy from your catalog given a list of products the user bought previously. When running your prompt multiple times, you might notice that the resulting recommendations are too similar—so you might increase the temperature parameter in your LLM requests.
+
+
+Suppose your task requires diversity in an LLM’s output. Maybe you’re writing an LLM pipeline to suggest products to buy from your catalog given a list of products the user bought previously. When running your prompt multiple times, you might notice that the resulting recommendations are too similar—so you might increase the `temperature` parameter in your LLM requests.
 
 假设您的任务需要 LLM 输出的多样性。也许您正在编写一个 LLM 管道，根据用户之前购买的产品列表来建议从目录中购买的产品。多次运行提示时，您可能会注意到生成的建议过于相似，因此您可能会增加 LLM 请求中的温度参数。
 
-Briefly, increasing the temperature parameter makes LLM responses more varied. At sampling time, the probability distributions of the next token become flatter, meaning that tokens which are usually less likely get chosen more often. Still, when increasing temperature, you may notice some failure modes related to output diversity. For example,Some products from the catalog that could be a good fit may never be output by the LLM.The same handful of products might be overrepresented in outputs, if they are highly likely to follow the prompt based on what the LLM has learned at training time.If the temperature is too high, you may get outputs that reference nonexistent products (or gibberish!)
+Briefly, increasing the `temperature` parameter makes LLM responses more varied. At sampling time, the probability distributions of the next token become flatter, meaning that tokens which are usually less likely get chosen more often. Still, when increasing `temperature`, you may notice some failure modes related to output diversity. For example, some products from the catalog that could be a good fit may never be output by the LLM. The same handful of products might be overrepresented in outputs, if they are highly likely to follow the prompt based on what the LLM has learned at training time. If the `temperature` is too high, you may get outputs that reference nonexistent products (or gibberish!)
 
-简而言之，增加温度参数会使 LLM 响应更加多样化。在采样时，下一个标记的概率分布变得更平坦，这意味着通常不太可能的标记被更频繁地选择。不过，当温度升高时，您可能会注意到一些与输出多样性相关的故障模式。例如，目录中的某些产品可能非常适合 LLM 可能永远不会输出。如果相同的少数产品很可能遵循基于以下的提示，则它们可能会在输出中出现过多的情况LLM 在训练时学到了什么。如果温度太高，您可能会得到引用不存在产品的输出（或乱码！）
+简而言之，增加温度参数会使 LLM 响应更加多样化。在采样时，下一个标记的概率分布变得更平坦，这意味着通常不太可能的标记被更频繁地选择。不过，当温度升高时，您可能会注意到一些与输出多样性相关的故障模式。例如，目录中一些可能非常合适的产品可能永远不会被 LLM 输出。如果相同的少数产品很可能基于 LLM 在训练时学到的内容而遵循提示，那么它们可能会在输出中出现过多。如果温度太高，您可能会得到引用不存在产品的输出（或乱码！）
 
-In other words, increasing temperature does not guarantee that the LLM will sample outputs from the probability distribution you expect (e.g., uniform random). Nonetheless, we have other tricks to increase output diversity. The simplest way is to adjust elements within the prompt. For example, if the prompt template includes a list of items, such as historical purchases, shuffling the order of these items each time they’re inserted into the prompt can make a significant difference.
+In other words, increasing `temperature` does not guarantee that the LLM will sample outputs from the probability distribution you expect (e.g., uniform random). Nonetheless, we have other tricks to increase output diversity. The simplest way is to adjust elements within the prompt. For example, if the prompt template includes a list of items, such as historical purchases, shuffling the order of these items each time they’re inserted into the prompt can make a significant difference.
 
 换句话说，升高温度并不能保证 LLM 将从您期望的概率分布（例如均匀随机）中采样输出。尽管如此，我们还有其他技巧来增加产出多样性。最简单的方法是调整提示中的元素。例如，如果提示模板包含项目列表（例如历史购买记录），则每次将这些项目插入提示时打乱它们的顺序可能会产生显着差异。
 
@@ -362,69 +337,75 @@ Additionally, keeping a short list of recent outputs can help prevent redundancy
 
 此外，保留最近输出的简短列表有助于防止冗余。在我们推荐的产品示例中，通过指示 LLM 避免建议最近列表中的项目，或者通过拒绝和重新采样与最近建议类似的输出，我们可以进一步使响应多样化。另一个有效的策略是改变提示中使用的措辞。例如，合并诸如“选择用户喜欢经常使用的项目”或“选择用户可能会推荐给朋友的产品”之类的短语可以转移焦点，从而影响推荐产品的种类。
 
-#### Caching is underrated. 缓存被低估了。
+### Caching is underrated / 缓存被低估了
 
 Caching saves cost and eliminates generation latency by removing the need to recompute responses for the same input. Furthermore, if a response has previously been guardrailed, we can serve these vetted responses and reduce the risk of serving harmful or inappropriate content.
 
 缓存无需重新计算同一输入的响应，从而节省了成本并消除了生成延迟。此外，如果某个回复之前已受到限制，我们可以提供这些经过审查的回复，并降低提供有害或不当内容的风险。
 
-One[ straightforwar](https://www.cnbc.com/2023/06/12/amazon-is-using-generative-ai-to-summarize-product-reviews.html)d approach to caching is to use unique IDs for the items being processed, such as if we’re summarizing new articles or product reviews. When a request comes in, we can check to see if a summary already exists in the cache. If so, we can return it immediately; if not, we generate, guardrail, and serve it, and then store it in the cache for future requests.
+[One straightforward approach](https://www.cnbc.com/2023/06/12/amazon-is-using-generative-ai-to-summarize-product-reviews.html) to caching is to use unique IDs for the items being processed, such as if we’re summarizing new articles or product reviews. When a request comes in, we can check to see if a summary already exists in the cache. If so, we can return it immediately; if not, we generate, guardrail, and serve it, and then store it in the cache for future requests.
 
-一种直接的缓存方法是对正在处理的项目使用唯一的 ID，例如我们正在总结新文章或产品评论。当请求到来时，我们可以检查缓存中是否已存在摘要。如果是，我们可以立即退货；如果没有，我们生成、保护并提供它，然后将其存储在缓存中以供将来的请求。
+一种直接的缓存方法是对正在处理的项目使用唯一的 ID，例如我们正在总结新文章或产品评论。当请求到来时，我们可以检查缓存中是否已存在摘要。如果是，我们可以立即返回它；如果没有，我们生成、保护并提供它，然后将其存储在缓存中以供将来的请求。
 
 For more open-ended queries, we can borrow techniques from the field of search, which also leverages caching for open-ended inputs. Features like autocomplete and spelling correction also help normalize user input and thus increase the cache hit rate.
 
 对于更多开放式查询，我们可以借用搜索领域的技术，该技术还利用缓存来实现开放式输入。自动完成和拼写纠正等功能也有助于规范用户输入，从而提高缓存命中率。
 
-#### When to fine-tune 何时进行微调
+### When to fine-tune / 何时进行微调
 
 We may have some tasks where even the most cleverly designed prompts fall short. For example, even after significant prompt engineering, our system may still be a ways from returning reliable, high-quality output. If so, then it may be necessary to finetune a model for your specific task.
 
-我们可能会遇到一些任务，即使设计得最巧妙的提示也无法达到要求。例如，即使在重大的即时工程之后，我们的系统距离返回可靠、高质量的输出可能仍然有一段路要走。如果是这样，那么可能需要针对您的特定任务微调模型。
+我们可能会遇到一些任务，即使设计得最巧妙的提示也无法达到要求。例如，即使在大量的提示工程之后，我们的系统距离返回可靠、高质量的输出可能仍然有一段路要走。如果是这样，那么可能需要针对您的特定任务微调模型。
 
 Successful examples include:
 
 成功的例子包括：
 
-+   [Honeycomb’s Natural Lang](https://www.honeycomb.io/blog/introducing-query-assistant)uage Query Assistant: Initially, the “programming manual” was provided in the prompt together with n-shot examples for in-context learning. While this worked decently, fine-tuning the model led to better output on the syntax and rules of the domain-specific language.
-Honeycomb 的自然语言查询助手：最初，提示中提供了“编程手册”以及用于上下文学习的 n-shot 示例。虽然这工作得很好，但对模型进行微调可以更好地输出特定领域语言的语法和规则。
++ [Honeycomb’s Natural Language Query Assistant](https://www.honeycomb.io/blog/introducing-query-assistant): Initially, the “programming manual” was provided in the prompt together with n-shot examples for in-context learning. While this worked decently, fine-tuning the model led to better output on the syntax and rules of the domain-specific language.
 
-+   [ReChat’s Lucy](https://www.youtube.com/watch?v=B_DMMlDuJB0): The LLM needed to generate responses in a very specific format that combined structured and unstructured data for the frontend to render correctly. Fine-tuning was essential to get it to work consistently.
-ReChat 的 Lucy：LLM 需要以非常特定的格式生成响应，该格式结合了结构化和非结构化数据，以便前端正确呈现。要使其始终如一地工作，微调至关重要。
+  Honeycomb 的自然语言查询助手：最初，提示中提供了“编程手册”以及用于上下文学习的 n-shot 示例。虽然这工作得很好，但对模型进行微调可以更好地输出特定领域语言的语法和规则。
 
-Nonetheless[, while fine-tuning](https://eugeneyan.com/writing/synthetic/) can be effective, it comes with significant costs. We have to annotate fine-tuning data, finetune and evaluate models, and eventually self-host them. Thus, consider if the higher upfront cost is worth it. If prompting gets you 90% of the way there, then fine-tuning may not be worth the investment. However, if we do decide to fine-tune, to reduce the cost of collecting human annotated data, we can generate and finetune on synthetic data, or bootstrap on open-source data.
++ [ReChat’s Lucy](https://www.youtube.com/watch?v=B_DMMlDuJB0): The LLM needed to generate responses in a very specific format that combined structured and unstructured data for the frontend to render correctly. Fine-tuning was essential to get it to work consistently.
+
+  ReChat 的 Lucy：LLM 需要以非常特定的格式生成响应，该格式结合了结构化和非结构化数据，以便前端正确呈现。要使其始终如一地工作，微调至关重要。
+
+Nonetheless, [while fine-tuning](https://eugeneyan.com/writing/synthetic/) can be effective, it comes with significant costs. We have to annotate fine-tuning data, finetune and evaluate models, and eventually self-host them. Thus, consider if the higher upfront cost is worth it. If prompting gets you 90% of the way there, then fine-tuning may not be worth the investment. However, if we do decide to fine-tune, to reduce the cost of collecting human annotated data, we can generate and finetune on synthetic data, or bootstrap on open-source data.
 
 尽管如此，虽然微调可能是有效的，但它会带来巨大的成本。我们必须注释微调数据、微调和评估模型，并最终自行托管它们。因此，请考虑较高的前期成本是否值得。如果提示让你完成了 90% 的任务，那么微调可能就不值得投资。然而，如果我们确实决定进行微调，以降低收集人工注释数据的成本，我们可以生成并微调合成数据，或引导开源数据。
 
-### Evaluation & Monitoring 评估与监测
+### Evaluation & Monitoring / 评估与监测
 
-Evalua[t](https://twitter.com/eugeneyan/status/1701692908074873036)ing LLMs can be a minefield. The inputs and the outputs of LLMs are arbitrary text, and the tasks we set them to are varied. Nonetheless, rigorous and thoughtful evals are critical—it’s no coincidence that technical leaders at OpenAI work on evaluation and give feedback on individual evals.
+[Evaluating](https://twitter.com/eugeneyan/status/1701692908074873036) LLMs can be a minefield. The inputs and the outputs of LLMs are arbitrary text, and the tasks we set them to are varied. Nonetheless, rigorous and thoughtful evals are critical—it’s no coincidence that technical leaders at OpenAI work on evaluation and give feedback on individual evals.
 
-评估 LLMs 可能是一个雷区。 LLMs的输入和输出是任意文本，我们设置它们的任务是多种多样的。尽管如此，严格且深思熟虑的评估至关重要——OpenAI 的技术领导者致力于评估并对个人评估提供反馈，这并非巧合。
+评估 LLMs 可能是一个雷区。LLMs 的输入和输出是任意文本，我们设置它们的任务是多种多样的。尽管如此，严格且深思熟虑的评估至关重要——OpenAI 的技术领导者致力于评估并对个人评估提供反馈，这并非巧合。
 
 Evaluating LLM applications invites a diversity of definitions and reductions: it’s simply unit testing, or it’s more like observability, or maybe it’s just data science. We have found all of these perspectives useful. In the following section, we provide some lessons we’ve learned about what is important in building evals and monitoring pipelines.
 
-评估LLM应用程序需要各种各样的定义和简化：它只是单元测试，或者更像是可观察性，或者可能只是数据科学。我们发现所有这些观点都很有用。在下一节中，我们提供了一些关于构建评估和监控管道的重要内容的经验教训。
+评估 LLM 应用程序需要各种各样的定义和简化：它只是单元测试，或者更像是可观察性，或者可能只是数据科学。我们发现所有这些观点都很有用。在下一节中，我们提供了一些关于构建评估和监控管道的重要内容的经验教训。
 
-#### **C**reate a few assertion-based unit tests from real input/output samples 从真实的输入/输出样本创建一些基于断言的单元测试
+#### Create a few assertion-based unit tests from real input/output samples / 从真实的输入/输出样本创建一些基于断言的单元测试
 
 Create unit tests (i.e., assertions) consisting of samples of inputs and outputs from production, with expectations for outputs based on at least three criteria. While three criteria might seem arbitrary, it’s a practical number to start with; fewer might indicate that your task isn’t sufficiently defined or is too open-ended, like a general-purpose chatbot. These unit tests, or assertions, should be triggered by any changes to the pipeline, whether it’s editing a prompt, adding new context via RAG, or other modifications. This write-up has an example of an assertion-based test for an actual use case.
 
 创建由生产中的输入和输出样本组成的单元测试（即断言），并基于至少三个标准对输出进行预期。虽然这三个标准似乎是任意的，但它是一个实用的数字。较少可能表明您的任务没有充分定义或过于开放，就像通用聊天机器人一样。这些单元测试或断言应该由管道的任何更改触发，无论是编辑提示、通过 RAG 添加新上下文还是其他修改。这篇文章有一个针对实际用例的基于断言的测试示例。
 
+
+
+## LLM-as-Judge 可以（在某种程度上）起作用，但这不是灵丹妙药
+
 Consider beginning with assertions that specify phrases or ideas to either include or exclude in all responses. Also consider checks to ensure that word, item, or sentence counts lie within a range. For other kinds of generation, assertions can look different. Execution-evaluation is a powerful method for evaluating code-generation, wherein you run the generated code and determine that the state of runtime is sufficient for the user-request.
 
 考虑从指定要在所有响应中包含或排除的短语或想法的断言开始。还要考虑进行检查以确保单词、项目或句子计数位于某个范围内。对于其他类型的生成，断言可能看起来有所不同。执行评估是评估代码生成的强大方法，您可以运行生成的代码并确定运行时的状态足以满足用户请求。
 
-As an example, if the user asks for a new function named foo; then after executing the agent’s generated code, foo should be callable! One challenge in execution-evaluation is that the agent code frequently leaves the runtime in slightly different form than the target code. It can be effective to “relax” assertions to the absolute most weak assumptions that any viable answer would satisfy.
+As an example, if the user asks for a new function named `foo`; then after executing the agent’s generated code, `foo` should be callable! One challenge in execution-evaluation is that the agent code frequently leaves the runtime in slightly different form than the target code. It can be effective to “relax” assertions to the absolute most weak assumptions that any viable answer would satisfy.
 
-举个例子，如果用户请求一个名为 foo 的新函数；那么在执行代理生成的代码后， foo 应该是可调用的！执行评估中的一项挑战是代理代码经常以与目标代码略有不同的形式离开运行时。将断言“放松”到任何可行的答案都会满足的绝对最弱的假设是有效的。
+举个例子，如果用户请求一个名为 `foo` 的新函数；那么在执行代理生成的代码后， `foo` 应该是可调用的！执行评估中的一项挑战是代理代码经常以与目标代码略有不同的形式离开运行时。将断言“放松”到任何可行的答案都会满足的绝对最弱的假设是有效的。
 
 Finally, using your product as intended for customers (i.e., “dogfooding”) can provide insight into failure modes on real-world data. This approach not only helps identify potential weaknesses, but also provides a useful source of production samples that can be converted into evals.
 
 最后，按照客户的预期使用您的产品（即“dogfooding”）可以深入了解真实世界数据的故障模式。这种方法不仅有助于识别潜在的弱点，而且还提供了可转换为评估的生产样本的有用来源。
 
-#### **L**LM-as-Judge can work (somewhat), but it’s not a silver bullet LLM-as-Judge 可以（在某种程度上）起作用，但这不是灵丹妙药
+## LLM-as-Judge 可以（在某种程度上）起作用，但这不是灵丹妙药
 
 LLM-as-Judge, where we use a strong LLM to evaluate the output of other LLMs, has been met with skepticism by some. (Some of us were initially huge skeptics.) Nonetheless, when implemented well, LLM-as-Judge achieves decent correlation with human judgements, and can at least help build priors about how a new prompt or technique may perform. Specifically, when doing pairwise comparisons (e.g., control vs. treatment), LLM-as-Judge typically gets the direction right though the magnitude of the win/loss may be noisy.
 
@@ -434,19 +415,24 @@ Here are some suggestions to get the most out of LLM-as-Judge:
 
 以下是一些充分利用LLM作为法官的建议：
 
-+   Use pairwise comparisons: Instead of askin[g the ](https://en.wikipedia.org/wiki/Likert_scale)LLM to score a single output on a Likert scale, present it with two options and ask it to select the better one. This tends to lead to more stable results.
+- Use pairwise comparisons: Instead of asking the LLM to score a single output on a Likert scale, present it with two options and ask it to select the better one. This tends to lead to more stable results.
+
 使用成对比较：不要要求 LLM 在李克特量表上对单个输出进行评分，而是向它提供两个选项并要求它选择更好的一个。这往往会带来更稳定的结果。
 
-+   Control for position bias: The order of options presented can bias the LLM’s decision. To mitigate this, do each pairwise comparison twice, swapping the order of pairs each time. Just be sure to attribute wins to the right option after swapping!
+- Control for position bias: The order of options presented can bias the LLM’s decision. To mitigate this, do each pairwise comparison twice, swapping the order of pairs each time. Just be sure to attribute wins to the right option after swapping!
+
 控制立场偏差：提供的选项顺序可能会导致 LLM 的决策产生偏差。为了缓解这种情况，请将每个成对比较进行两次，每次交换对的顺序。请务必在交换后将胜利归因于正确的选项！
 
-+   Allow for ties: In some cases, both options may be equally good. Thus, allow the LLM to declare a tie so it doesn’t have to arbitrarily pick a winner.
+- Allow for ties: In some cases, both options may be equally good. Thus, allow the LLM to declare a tie so it doesn’t have to arbitrarily pick a winner.
+
 允许联系：在某些情况下，两种选择可能同样好。因此，允许 LLM 宣布平局，这样它就不必任意选择获胜者。
 
-+   Use Chain-of-Thought: Asking the LLM to explain its decision before giving a final preference can increase eval reliability. As a bonus, this allows you to use a weaker but faster LLM and still achieve similar results. Because frequently this part of the pipeline is in batch mode, the extra latency from CoT isn’t a problem.
+- Use Chain-of-Thought: Asking the LLM to explain its decision before giving a final preference can increase eval reliability. As a bonus, this allows you to use a weaker but faster LLM and still achieve similar results. Because frequently this part of the pipeline is in batch mode, the extra latency from CoT isn’t a problem.
+
 使用思路链：在给出最终偏好之前要求 LLM 解释其决定可以提高评估可靠性。作为奖励，这允许您使用较弱但更快的 LLM 并仍然获得类似的结果。由于管道的这一部分通常处于批处理模式，因此 CoT 带来的额外延迟不是问题。
 
-+   Control for response length: LLMs tend to bias toward longer responses. To mitigate this, ensure response pairs are similar in length.
+- Control for response length: LLMs tend to bias toward longer responses. To mitigate this, ensure response pairs are similar in length.
+
 控制响应长度：LLMs 倾向于偏向较长的响应。为了缓解这种情况，请确保响应对的长度相似。
 
 One particularly powerful application of LLM-as-Judge is checking a new prompting strategy against regression. If you have tracked a collection of production results, sometimes you can rerun those production examples with a new prompting strategy, and use LLM-as-Judge to quickly assess where the new strategy may suffer.
@@ -463,7 +449,7 @@ LLM-as-Judge is not a silver bullet though. There are subtle aspects of language
 
 不过，LLM作为法官并不是灵丹妙药。语言有一些微妙的方面，即使是最强大的模型也无法可靠地评估。此外，我们发现传统的分类器和奖励模型可以比 LLM-as-Judge 实现更高的准确性，并且成本和延迟更低。对于代码生成，LLM-as-Judge 可能比更直接的评估策略（例如执行评估）更弱。
 
-#### **The “intern test” for ev****aluating gen**erations 评估世代的“实习生测试”
+## “实习生测试” 用于评估生成内容
 
 We like to use the following “intern test” when evaluating generations: If you took the exact input to the language model, including the context, and gave it to an average college student in the relevant major as a task, could they succeed? How long would it take?
 
@@ -485,17 +471,19 @@ If the answer is yes, they would get it quickly, then it’s time to dig into th
 
 如果答案是肯定的，他们会很快得到答案，那么就该深入研究数据了。模型做错了什么？我们能找到失败的模式吗？尝试要求模型在响应之前或之后进行自我解释，以帮助您建立心理理论。
 
-#### **O**veremphasizing certain evals can hurt overall performance 过度强调某些评估可能会损害整体性能
+## 过度强调某些评估可能会损害整体性能
 
 > “When a measure becomes a target, it ceases to be a good measure.”
-
+>
 > “当一项措施成为目标时，它就不再是一个好的措施。”
-
-> — Goodhart’s Law  ——古德哈特定律
+>
+> — Goodhart’s Law ——古德哈特定律
 
 An example of this is the Needle-in-a-Haystack (NIAH) eval. The original eval helped quantify model recall as context sizes grew, as well as how recall is affected by needle position. However, it’s been so overemphasized that it’s featured as Figure 1 for Gemini 1.5’s report. The eval involves inserting a specific phrase (“The special magic {city} number is: {number}”) into a long document which repeats the essays of Paul Graham, and then prompting the model to recall the magic number.
 
-大海捞针 (NIAH) 评估就是一个例子。最初的评估有助于量化随着上下文大小的增长而产生的模型召回率，以及针位置对召回率的影响。然而，它被过分强调了，以至于在 Gemini 1.5 的报告中如图 1 所示。评估涉及在重复 Paul Graham 文章的长文档中插入特定短语（“特殊的神奇 {city} 数字是：{number}”），然后提示模型回忆该神奇数字。
+大海捞针 (NIAH) 评估就是一个例子。最初的评估有助于量化随着上下文大小的增长而产生的模型召回率，以及针位置对召回率的影响。然而，它被过分强调了，以至于在 Gemini 1.5 的报告中如图 1 所示。评估涉及在重复 Paul Graham 文章的长文档中插入特定短语（“特殊的神奇 `{city}` 数字是：`{number}`”），然后提示模型回忆该神奇数字。
+
+
 
 While some models achieve near-perfect recall, it’s questionable whether NIAH truly reflects the reasoning and recall abilities needed in real-world applications. Consider a more practical scenario: Given the transcript of an hour-long meeting, can the LLM summarize the key decisions and next steps, as well as correctly attribute each item to the relevant person? This task is more realistic, going beyond rote memorization and also considering the ability to parse complex discussions, identify relevant information, and synthesize summaries.
 
@@ -515,7 +503,7 @@ This could also apply to other evals and use cases. For example, summarization. 
 
 这也适用于其他评估和用例。比如，总结。强调事实一致性可能会导致摘要不太具体（因此不太可能与事实不一致）并且可能不太相关。相反，强调写作风格和口才可能会导致更加华丽的营销型语言，从而导致事实不一致。
 
-#### **S**implify annotation to binary tasks or pairwise comparisons 简化对二进制任务或成对比较的注释
+### **S**implify annotation to binary tasks or pairwise comparisons 简化对二进制任务或成对比较的注释
 
 P[roviding ope](https://en.wikipedia.org/wiki/Likert_scale)n-ended feedback or ratings for model output on a Likert scale is cognitively demanding. As a result, the data collected is more noisy—due to variability among human raters—and thus less useful. A more effective approach is to simplify the task and reduce the cognitive burden on annotators. Two tasks that work well are binary classifications and pairwise comparisons.
 
@@ -533,7 +521,7 @@ If you’re starting to write labeling guidelines, here are some reference guide
 
 如果您开始编写标签指南，这里有一些来自 Google 和 Bing 搜索的参考指南。
 
-#### **(**Reference-free) evals and guardrails can be used interchangeably （无参考）evals和guardrails可以互换使用
+### **(Reference-free)** evals and guardrails can be used interchangeably （无参考）evals和guardrails可以互换使用
 
 Guardrails help to catch inappropriate or harmful content while evals help to measure the quality and accuracy of the model’s output. In the case of reference-free evals, they may be considered two sides of the same coin. Reference-free evals are evaluations that don’t rely on a “golden” reference, such as a human-written answer, and can assess the quality of output based solely on the input prompt and the model’s response.
 
@@ -543,7 +531,7 @@ Some examples of these are summarization evals, where we only have to consider t
 
 其中的一些例子是摘要评估，我们只需考虑输入文档即可评估摘要的事实一致性和相关性。如果摘要在这些指标上得分不佳，我们可以选择不向用户显示它，从而有效地使用评估作为护栏。同样，无参考翻译评估可以评估翻译的质量，而无需人工翻译的参考，这再次允许我们将其用作护栏。
 
-#### **LLMs will return output even** when they shouldn’t LLMs 将返回输出，即使它们不应该返回
+### **LLMs will return output even** when they shouldn’t LLMs 将返回输出，即使它们不应该返回
 
 A key challenge when working with LLMs is that they’ll often generate output even when they shouldn’t. This can lead to harmless but nonsensical responses, or more egregious defects like toxicity or dangerous content. For example, when asked to extract specific attributes or metadata from a document, an LLM may confidently return values even when those values don’t actually exist. Alternatively, the model may respond in a language other than English because we provided non-English documents in the context.
 
@@ -553,6 +541,8 @@ While we can try to prompt the LLM to return a “not applicable” or “unknow
 
 虽然我们可以尝试提示 LLM 返回“不适用”或“未知”响应，但这并不是万无一失的。即使对数概率可用，它们也不能很好地反映输出质量。虽然对数概率表示标记出现在输出中的可能性，但它们不一定反映生成文本的正确性。相反，对于经过训练以响应查询并生成一致响应的指令调整模型，对数概率可能无法很好地校准。因此，虽然高对数概率可能表明输出流畅且连贯，但这并不意味着它是准确的或相关的。
 
+
+
 While careful prompt engineering can help to some extent, we should complement it with robu[st guardrails that detect](https://github.com/topics/pii-detection) and filter/regenerate undesired output. For example, OpenAI provides a content moderation API that can identify unsafe responses such as hate speech, self-harm, or sexual output. Similarly, there are numerous packages for detecting personally identifiable information (PII). One benefit is that guardrails are largely agnostic of the use case and can thus be applied broadly to all output in a given language. In addition, with precise retrieval, our system can deterministically respond “I don’t know” if there are no relevant documents.
 
 虽然仔细的提示工程可以在一定程度上有所帮助，但我们应该用强大的护栏来补充它，以检测和过滤/重新生成不需要的输出。例如，OpenAI 提供了一个内容审核 API，可以识别不安全的响应，例如仇恨言论、自残或性输出。同样，有许多用于检测个人身份信息 (PII) 的软件包。一个好处是，护栏在很大程度上与用例无关，因此可以广泛应用于给定语言的所有输出。此外，通过精确检索，如果没有相关文档，我们的系统可以确定地回答“我不知道”。
@@ -561,7 +551,7 @@ A corollary here is that LLMs may fail to produce outputs when they are expected
 
 这里的一个推论是 LLMs 可能无法按预期产生输出。发生这种情况的原因有多种，从简单的问题（例如 API 提供商的长尾延迟）到更复杂的问题（例如内容审核过滤器阻止输出）。因此，持续记录输入和（可能缺乏）输出以进行调试和监控非常重要。
 
-#### **Hallucinations are**** a stubborn** problem. 幻觉是一个顽固的问题。
+#### Hallucinations are a stubborn problem. 幻觉是一个顽固的问题。
 
 Unlike content safety or PII defects which have a lot of attention and thus seldom occur, factual inconsistencies are stubbornly persistent and more challenging to detect. They’re more common and occur at a baseline rate of 5 – 10%, and from what we’ve learned from LLM providers, it can be challenging to get it below 2%, even on simple tasks such as summarization.
 
@@ -607,13 +597,13 @@ As an AI language model, I do not have opinions and so cannot tell you whether t
 
 ## Operations: Developing and Managing LLM Applications and the Teams That Build Them 运营：开发和管理LLM应用程序以及构建它们的团队
 
-### **Data 数据**
+### Data 数据
 
 Just as the quality of ingredients determines the dish’s taste, the quality of input data constrains the performance of machine learning systems. In addition, output data is the only way to tell whether the product is working or not. All the authors focus tightly on the data, looking at inputs and outputs for several hours a week to better understand the data distribution: its modes, its edge cases, and the limitations of models of it.
 
 正如食材的质量决定菜肴的味道一样，输入数据的质量也限制了机器学习系统的性能。此外，输出数据是判断产品是否正常工作的唯一方法。所有作者都密切关注数据，每周花几个小时查看输入和输出，以更好地理解数据分布：它的模式、它的边缘情况以及它的模型的局限性。
 
-#### **Check for de**velopment-prod skew 检查开发与产品之间的偏差
+#### Check for development-prod skew 检查开发与产品之间的偏差
 
 A common source of errors in traditional machine learning pipelines is train-serve skew. This happens when the data used in training differs from what the model encounters in production. Although we can use LLMs without training or fine-tuning, hence there’s no training set, a similar issue arises with development-prod data skew. Essentially, the data we test our systems on during development should mirror what the systems will face in production. If not, we might find our production accuracy suffering.
 
@@ -621,23 +611,25 @@ A common source of errors in traditional machine learning pipelines is train-ser
 
 LLM development-prod skew can be categorized into two types: structural and content-based. Structural skew includes issues like formatting discrepancies, such as differences between a JSON dictionary with a list-type value and a JSON list, inconsistent casing, and errors like typos or sentence fragments. These errors can lead to unpredictable model performance because different LLMs are trained on specific data formats, and prompts can be highly sensitive to minor changes. Content-based or “semantic” skew refers to differences in the meaning or context of the data.
 
-LLM 开发与产品的偏差可以分为两种类型：结构性偏差和基于内容的偏差。结构偏差包括格式差异等问题，例如具有列表类型值的 JSON 字典与 JSON 列表之间的差异、大小写不一致以及拼写错误或句子片段等错误。这些错误可能会导致不可预测的模型性能，因为不同的 LLMs 是针对特定数据格式进行训练的，并且提示可能对微小的变化高度敏感。基于内容或“语义”的偏差是指数据含义或上下文的差异。
 
-As in traditional ML, it’s useful to periodically measure skew between the LLM input/output pairs. Simple metrics like the length of inputs and outputs or specific formatting requirements (e.g., JSON or XML) are straightforward ways to track changes. For more “advanced” drift detection, consider clustering embeddings of input/output pairs to detect semantic drift, such as shifts in the topics users are discussing, which could indicate they are exploring areas the model hasn’t been exposed to before.
 
-与传统机器学习一样，定期测量 LLM 输入/输出对之间的偏差很有用。输入和输出的长度或特定格式要求（例如 JSON 或 XML）等简单指标是跟踪更改的直接方法。对于更“高级”的漂移检测，请考虑对输入/输出对的聚类嵌入来检测语义漂移，例如用户正在讨论的主题的变化，这可能表明他们正在探索模型以前从未接触过的领域。
+LLM 开发与产品的偏差可以分为两种类型：结构性偏差和基于内容的偏差。结构偏差包括格式差异等问题，例如具有列表类型值的 `JSON` 字典与 `JSON` 列表之间的差异、大小写不一致以及拼写错误或句子片段等错误。这些错误可能会导致不可预测的模型性能，因为不同的 LLMs 是针对特定数据格式进行训练的，并且提示可能对微小的变化高度敏感。基于内容或“语义”的偏差是指数据含义或上下文的差异。
+
+As in traditional ML, it’s useful to periodically measure skew between the LLM input/output pairs. Simple metrics like the length of inputs and outputs or specific formatting requirements (e.g., `JSON` or `XML`) are straightforward ways to track changes. For more “advanced” drift detection, consider clustering embeddings of input/output pairs to detect semantic drift, such as shifts in the topics users are discussing, which could indicate they are exploring areas the model hasn’t been exposed to before.
+
+与传统机器学习一样，定期测量 LLM 输入/输出对之间的偏差很有用。输入和输出的长度或特定格式要求（例如 `JSON` 或 `XML`）等简单指标是跟踪更改的直接方法。对于更“高级”的漂移检测，请考虑对输入/输出对的聚类嵌入来检测语义漂移，例如用户正在讨论的主题的变化，这可能表明他们正在探索模型以前从未接触过的领域。
 
 When testing changes, such as prompt engineering, ensure that holdout datasets are current and reflect the most recent types of user interactions. For example, if typos are common in production inputs, they should also be present in the holdout data. Beyond just numerical skew measurements, it’s beneficial to perform qualitative assessments on outputs. Regularly reviewing your model’s outputs—a practice colloquially known as “vibe checks”—ensures that the results align with expectations and remain relevant to user needs. Finally, incorporating nondeterminism into skew checks is also useful—by running the pipeline multiple times for each input in our testing dataset and analyzing all outputs, we increase the likelihood of catching anomalies that might occur only occasionally.
 
 在测试更改（例如提示工程）时，请确保保留数据集是最新的并反映最新的用户交互类型。例如，如果拼写错误在生产输入中很常见，那么它们也应该出现在保留数据中。除了数值偏差测量之外，对输出进行定性评估也是有益的。定期检查模型的输出（这种做法俗称“氛围检查”）可确保结果符合预期并与用户需求保持相关性。最后，将不确定性纳入偏差检查也很有用——通过为测试数据集中的每个输入多次运行管道并分析所有输出，我们增加了捕获偶尔发生的异常的可能性。
 
-#### **Look at samples of LLM inputs a****nd outputs ever**y day 每天查看LLM输入和输出的样本
+#### Look at samples of LLM inputs and outputs every day 每天查看LLM输入和输出的样本
 
 LLMs are dynamic and constantly evolving. Despite their impressive zero-shot capabilities and often delightful outputs, their failure modes can be highly unpredictable. For custom tasks, regularly reviewing data samples is essential to developing an intuitive understanding of how LLMs perform.
 
 LLMs 是动态的且不断发展的。尽管它们的零射击能力令人印象深刻并且输出通常令人愉悦，但它们的故障模式却是高度不可预测的。对于自定义任务，定期查看数据样本对于直观了解 LLMs 的执行情况至关重要。
 
-Input-output pair[s from producti](https://arxiv.org/abs/2404.12272)on are the “real things, real places” (genchi genbutsu) of LLM applications, and they cannot be substituted. Recent research highlighted that developers’ perceptions of what constitutes “good” and “bad” outputs shift as they interact with more data (i.e., criteria drift). While developers can come up with some criteria upfront for evaluating LLM outputs, these predefined criteria are often incomplete. For instance, during the course of development, we might update the prompt to increase the probability of good responses and decrease the probability of bad ones. This iterative process of evaluation, reevaluation, and criteria update is necessary, as it’s difficult to predict either LLM behavior or human preference without directly observing the outputs.
+[Input-output pairs from production](https://arxiv.org/abs/2404.12272) are the “real things, real places” (genchi genbutsu) of LLM applications, and they cannot be substituted. Recent research highlighted that developers’ perceptions of what constitutes “good” and “bad” outputs shift as they interact with more data (i.e., criteria drift). While developers can come up with some criteria upfront for evaluating LLM outputs, these predefined criteria are often incomplete. For instance, during the course of development, we might update the prompt to increase the probability of good responses and decrease the probability of bad ones. This iterative process of evaluation, reevaluation, and criteria update is necessary, as it’s difficult to predict either LLM behavior or human preference without directly observing the outputs.
 
 生产中的输入输出对是LLM应用程序的“真实事物、真实地点”（genchi genbutsu），它们是无法替代的。最近的研究强调，开发人员对“好”和“坏”输出的看法随着与更多数据的交互而发生变化（即标准漂移）。虽然开发人员可以预先提出一些标准来评估 LLM 输出，但这些预定义的标准通常是不完整的。例如，在开发过程中，我们可能会更新提示，以增加良好响应的概率并减少不良响应的概率。这种评估、重新评估和标准更新的迭代过程是必要的，因为如果不直接观察输出，就很难预测 LLM 行为或人类偏好。
 
@@ -651,49 +643,51 @@ With LLM APIs, we can rely on intelligence from a handful of providers. While th
 
 借助 LLM API，我们可以依赖少数提供商的情报。虽然这是一个福音，但这些依赖性还涉及性能、延迟、吞吐量和成本的权衡。此外，随着更新、更好的型号的下降（过去一年中几乎每个月），我们应该准备好更新我们的产品，因为我们弃用了旧型号并迁移到更新的型号。在本节中，我们将分享使用我们无法完全控制的技术（模型无法自行托管和管理）的经验教训。
 
-#### **G****enerate struct**ured output to ease downstream integration 生成结构化输出以简化下游集成
+#### Generate structured output to ease downstream integration 生成结构化输出以简化下游集成
 
-For most real-world use cases, the output of an LLM will be cons[umed b](https://www.youtube.com/watch?v=B_DMMlDuJB0)y [a do](https://martinfowler.com/articles/building-boba.html)wnst[ream application ](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)via some machine-readable format. For example, Rechat, a real-estate CRM, required structured responses for the frontend to render widgets. Similarly, Boba, a tool for generating product strategy ideas, needed structured output with fields for title, summary, plausibility score, and time horizon. Finally, LinkedIn shared about constraining the LLM to generate YAML, which is then used to decide which skill to use, as well as provide the parameters to invoke the skill.
+For most real-world use cases, the output of an LLM will be [consumed by](https://www.youtube.com/watch?v=B_DMMlDuJB0) [a downstream application](https://martinfowler.com/articles/building-boba.html) [via some machine-readable format](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product). For example, Rechat, a real-estate CRM, required structured responses for the frontend to render widgets. Similarly, Boba, a tool for generating product strategy ideas, needed structured output with fields for title, summary, plausibility score, and time horizon. Finally, LinkedIn shared about constraining the LLM to generate `YAML`, which is then used to decide which skill to use, as well as provide the parameters to invoke the skill.
 
-对于大多数实际用例，LLM 的输出将由下游应用程序通过某种机器可读的格式使用。例如，Rechat（一种房地产 CRM）需要前端的结构化响应来呈现小部件。同样，Boba（一种用于生成产品策略创意的工具）需要包含标题、摘要、合理性得分和时间范围字段的结构化输出。最后，LinkedIn 分享了如何约束 LLM 生成 YAML，然后使用 YAML 来决定使用哪个技能，并提供调用该技能的参数。
+对于大多数实际用例，LLM 的输出将由下游应用程序通过某种机器可读的格式使用。例如，Rechat（一种房地产 CRM）需要前端的结构化响应来呈现小部件。同样，Boba（一种用于生成产品策略创意的工具）需要包含标题、摘要、合理性得分和时间范围字段的结构化输出。最后，LinkedIn 分享了如何约束 LLM 生成 `YAML`，然后使用 `YAML` 来决定使用哪个技能，并提供调用该技能的参数。
 
 This application pattern is an extreme version of Postel’s law: be liberal in what you accept (arbitrary natural language) and conservative in what you send (typed, machine-readable objects). As such, we expect it to be extremely durable.
 
 此应用程序模式是 Postel 定律的极端版本：在您接受的内容（任意自然语言）上保持自由，而在发送的内容（键入的、机器可读的对象）上保持保守。因此，我们希望它非常耐用。
 
-Currently, [Instructor](https://github.com/jxnl/instructor) and [Outlines](https://github.com/outlines-dev/outlines) are the de facto standards for coaxing structured output from LLMs. If you’re using an LLM API (e.g., Anthropic, OpenAI), use Instructor; if you’re working with a self-hosted model (e.g., Hugging Face), use Outlines.
+Currently, [`Instructor`](https://github.com/jxnl/instructor) and [`Outlines`](https://github.com/outlines-dev/outlines) are the de facto standards for coaxing structured output from LLMs. If you’re using an LLM API (e.g., Anthropic, OpenAI), use `Instructor`; if you’re working with a self-hosted model (e.g., Hugging Face), use `Outlines`.
 
-目前，Instructor 和 Outlines 是 LLMs 结构化输出的事实上的标准。如果您使用 LLM API（例如 Anthropic、OpenAI），请使用 Instructor；如果您使用自托管模型（例如 Hugging Face），请使用 Outlines。
+目前，`Instructor` 和 `Outlines` 是 LLMs 结构化输出的事实上的标准。如果您使用 LLM API（例如 Anthropic、OpenAI），请使用 `Instructor`；如果您使用自托管模型（例如 Hugging Face），请使用 `Outlines`。
 
-#### **M**igrating prompts across models is a pain in the ass 跨模型迁移提示是一件很痛苦的事情
+#### Migrating prompts across models is a pain in the ass 跨模型迁移提示是一件很痛苦的事情
 
 Sometimes, our carefully crafted prompts work superbly with one model but fall flat with another. This can happen when we’re switching between various model providers, as well as when we upgrade across versions of the same model.
 
 有时，我们精心设计的提示在一种模型上表现出色，但在另一种模型上却表现不佳。当我们在不同的模型提供者之间切换时，以及当我们在同一模型的不同版本之间进行升级时，就会发生这种情况。
 
-[For example, Voiceflow found that](https://www.voiceflow.com/blog/how-much-do-chatgpt-versions-affect-real-world-performance) migrating from gpt-3.5-turbo-0301 to g[pt-3.5-turbo-1106 led to a 10%](https://www.godaddy.com/resources/news/llm-from-the-trenches-10-lessons-learned-operationalizing-models-at-godaddy#h-3-prompts-aren-t-portable-across-models) drop on their intent classification task. (Thankfully, they had evals!) Similarly, GoDaddy observed a trend in the positive direction, where upgrading to version 1106 narrowed the performance gap between gpt-3.5-turbo and gpt-4. (Or, if you’re a glass-half-full person, you might be disappointed that gpt-4’s lead was reduced with the new upgrade)
+[For example, Voiceflow found that](https://www.voiceflow.com/blog/how-much-do-chatgpt-versions-affect-real-world-performance) migrating from `gpt-3.5-turbo-0301` to [`gpt-3.5-turbo-1106` led to a 10%](https://www.godaddy.com/resources/news/llm-from-the-trenches-10-lessons-learned-operationalizing-models-at-godaddy#h-3-prompts-aren-t-portable-across-models) drop on their intent classification task. (Thankfully, they had evals!) Similarly, GoDaddy observed a trend in the positive direction, where upgrading to version 1106 narrowed the performance gap between `gpt-3.5-turbo` and `gpt-4`. (Or, if you’re a glass-half-full person, you might be disappointed that `gpt-4`’s lead was reduced with the new upgrade)
 
-例如，Voiceflow 发现从 gpt-3.5-turbo-0301 迁移到 gpt-3.5-turbo-1106 导致其意图分类任务下降了 10%。 （值得庆幸的是，他们进行了评估！）同样，GoDaddy 观察到了积极方向的趋势，升级到版本 1106 缩小了 gpt-3.5-turbo 和 gpt-4 之间的性能差距。 （或者，如果您是一个半满的人，您可能会对 gpt-4 的领先优势随着新升级而减少感到失望）
+
+
+例如，Voiceflow 发现从 `gpt-3.5-turbo-0301` 迁移到 `gpt-3.5-turbo-1106` 导致其意图分类任务下降了 10%。（值得庆幸的是，他们进行了评估！）同样，GoDaddy 观察到了积极方向的趋势，升级到版本 `1106` 缩小了 gpt-3.5-turbo 和 gpt-4 之间的性能差距。（或者，如果您是一个半满的人，您可能会对 gpt-4 的领先优势随着新升级而减少感到失望）
 
 Thus, if we have to migrate prompts across models, expect it to take more time than simply swapping the API endpoint. Don’t assume that plugging in the same prompt will lead to similar or better results. Also, having reliable, automated evals helps with measuring task performance before and after migration, and reduces the effort needed for manual verification.
 
 因此，如果我们必须跨模型迁移提示，预计它会比简单地交换 API 端点花费更多的时间。不要假设插入相同的提示符会导致类似或更好的结果。此外，拥有可靠的自动化评估有助于衡量迁移前后的任务性能，并减少手动验证所需的工作量。
 
-#### **Version a**nd pin your models 版本并固定您的模型
+### Version and pin your models 版本并固定您的模型
 
-[In any machine l](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html)earning pipeline, “changing anything changes everything“. This is particularly relevant as we rely on components like large language models (LLMs) that we don’t train ourselves and that can change without our knowledge.
+[In any machine learning pipeline](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html), “changing anything changes everything”. This is particularly relevant as we rely on components like large language models (LLMs) that we don’t train ourselves and that can change without our knowledge.
 
-在任何机器学习管道中，“改变任何事情都会改变一切”。这一点尤其重要，因为我们依赖于大型语言模型 (LLMs) 等组件，而这些组件不是我们自己训练的，而且可以在我们不知情的情况下发生变化。
+在任何机器学习管道中，“改变任何事情都会改变一切”。这一点尤其重要，因为我们依赖于大型语言模型（LLMs）等组件，而这些组件不是我们自己训练的，而且可以在我们不知情的情况下发生变化。
 
-Fortunately, many model providers offer the option to “pin” specific model versions (e.g., gpt-4-turbo-1106). This enables us to use a specific version of the model weights, ensuring they remain unchanged. Pinning model versions in production can help avoid unexpected changes in model behavior, which could lead to customer complaints about issues that may crop up when a model is swapped, such as overly verbose outputs or other unforeseen failure modes.
+Fortunately, many model providers offer the option to “pin” specific model versions (e.g., `gpt-4-turbo-1106`). This enables us to use a specific version of the model weights, ensuring they remain unchanged. Pinning model versions in production can help avoid unexpected changes in model behavior, which could lead to customer complaints about issues that may crop up when a model is swapped, such as overly verbose outputs or other unforeseen failure modes.
 
-幸运的是，许多模型提供商提供“固定”特定模型版本的选项（例如 gpt-4-turbo-1106）。这使我们能够使用特定版本的模型权重，确保它们保持不变。在生产中固定模型版本有助于避免模型行为发生意外变化，这可能会导致客户抱怨模型交换时可能出现的问题，例如过于冗长的输出或其他不可预见的故障模式。
+幸运的是，许多模型提供商提供“固定”特定模型版本的选项（例如 `gpt-4-turbo-1106`）。这使我们能够使用特定版本的模型权重，确保它们保持不变。在生产中固定模型版本有助于避免模型行为发生意外变化，这可能会导致客户抱怨模型交换时可能出现的问题，例如过于冗长的输出或其他不可预见的故障模式。
 
 Additionally, consider maintaining a shadow pipeline that mirrors your production setup but uses the latest model versions. This enables safe experimentation and testing with new releases. Once you’ve validated the stability and quality of the outputs from these newer models, you can confidently update the model versions in your production environment.
 
 此外，请考虑维护一个反映您的生产设置但使用最新模型版本的影子管道。这使得可以对新版本进行安全的实验和测试。一旦验证了这些新模型输出的稳定性和质量，您就可以放心地在生产环境中更新模型版本。
 
-#### **Choose the smallest model th****at gets the **job done 选择能完成工作的最小型号
+### Choose the smallest model that gets the job done 选择能完成工作的最小型号
 
 When working on a new application, it’s tempting to use the biggest, most powerful model available. But once we’ve established that the task is technically feasible, it’s worth experimenting if a smaller model can achieve comparable results.
 
@@ -703,25 +697,25 @@ The benefits of a smaller model are lower latency and cost. While it may be weak
 
 较小模型的好处是较低的延迟和成本。虽然它可能较弱，但思想链、n-shot 提示和上下文学习等技术可以帮助较小的模型超越其自身能力。除了 LLM API 之外，微调我们的特定任务也有助于提高性能。
 
-Taken together, a carefully crafted workflow using a smaller model can often match, or even sur[pass](https://twitter.com/mattshumer_/status/1770823530394833242), the output quality of a single large model, while being faster and cheaper. For example, this post shares anecdata of how Haiku + 10-shot prompt outperforms zero-shot Opus and GPT-4. In the long term, we expect to see more examples of flow-engineering with smaller models as the optimal balance of output quality, latency, and cost.
+Taken together, a carefully crafted workflow using a smaller model can often match, or even [surpass](https://twitter.com/mattshumer_/status/1770823530394833242), the output quality of a single large model, while being faster and cheaper. For example, this post shares anecdata of how Haiku + 10-shot prompt outperforms zero-shot Opus and GPT-4. In the long term, we expect to see more examples of flow-engineering with smaller models as the optimal balance of output quality, latency, and cost.
 
 总而言之，使用较小模型精心设计的工作流程通常可以匹配甚至超越单个大型模型的输出质量，同时速度更快、成本更低。例如，这篇文章分享了俳句 + 10 次提示如何优于零次 Opus 和 GPT-4 的轶事。从长远来看，我们期望看到更多使用较小模型的流程工程示例，作为输出质量、延迟和成本的最佳平衡。
 
-As ano[ther example, take the humb](https://eugeneyan.com/writing/finetuning/)le classification task. Lightweight models like DistilBERT (67M parameters) are a surprisingly strong baseline. The 400M parameter DistilBART is another great option—when fine-tuned on open source data, it could identify hallucinations with an ROC-AUC of 0.84, surpassing most LLMs at less than 5% of latency and cost.
+As [another example, take the humble classification task](https://eugeneyan.com/writing/finetuning/). Lightweight models like DistilBERT (67M parameters) are a surprisingly strong baseline. The 400M parameter DistilBART is another great option—when fine-tuned on open source data, it could identify hallucinations with an ROC-AUC of 0.84, surpassing most LLMs at less than 5% of latency and cost.
 
-再举一个例子，以简单的分类任务为例。像 DistilBERT（67M 参数）这样的轻量级模型是一个令人惊讶的强大基线。 400M 参数 DistilBART 是另一个不错的选择，当对开源数据进行微调时，它可以识别 ROC-AUC 为 0.84 的幻觉，以不到 5% 的延迟和成本超越大多数 LLMs。
+再举一个例子，以简单的分类任务为例。像 DistilBERT（67M 参数）这样的轻量级模型是一个令人惊讶的强大基线。400M 参数 DistilBART 是另一个不错的选择，当对开源数据进行微调时，它可以识别 ROC-AUC 为 0.84 的幻觉，以不到 5% 的延迟和成本超越大多数 LLMs。
 
 The point is, don’t overlook smaller models. While it’s easy to throw a massive model at every problem, with some creativity and experimentation, we can often find a more efficient solution.
 
 重点是，不要忽视较小的型号。虽然很容易为每个问题建立一个庞大的模型，但通过一些创造力和实验，我们通常可以找到更有效的解决方案。
 
-### **Product 产品**
+### Product 产品
 
 While new technology offers new possibilities, the principles of building great products are timeless. Thus, even if we’re solving new problems for the first time, we don’t have to reinvent the wheel on product design. There’s a lot to gain from grounding our LLM application development in solid product fundamentals, allowing us to deliver real value to the people we serve.
 
 虽然新技术提供了新的可能性，但构建伟大产品的原则是永恒的。因此，即使我们是第一次解决新问题，我们也不必重新发明产品设计的轮子。将我们的LLM应用程序开发建立在坚实的产品基础上可以获得很多好处，使我们能够为我们服务的人们提供真正的价值。
 
-#### **Involve d**esign early and often 尽早并经常参与设计
+#### Involve design early and often 尽早并经常参与设计
 
 Having a designer will push you to understand and think deeply about how your product can be built and presented to users. We sometimes stereotype designers as folks who take things and make them pretty. But beyond just the user interface, they also rethink how the user experience can be improved, even if it means breaking existing rules and paradigms.
 
@@ -731,129 +725,103 @@ Designers are especially gifted at reframing the user’s needs into various for
 
 设计师尤其擅长将用户的需求重新定义为各种形式。其中一些形式比其他形式更容易解决，因此，它们可能为人工智能解决方案提供或多或少的机会。与许多其他产品一样，构建人工智能产品应该围绕要完成的工作，而不是为其提供动力的技术。
 
-Focus[ on asking your](https://www.tidepool.so/blog/emerging-ux-patterns-for-generative-ai-apps-copilots)self: “What job is the user asking this product to do for them? Is that job something a chatbot would be good at? How about autocomplete? Maybe something different!” Consider the existing design patterns and how they relate to the job-to-be-done. These are the invaluable assets that designers add to your team’s capabilities.
+Focus [on asking yourself](https://www.tidepool.so/blog/emerging-ux-patterns-for-generative-ai-apps-copilots): “What job is the user asking this product to do for them? Is that job something a chatbot would be good at? How about autocomplete? Maybe something different!” Consider the existing design patterns and how they relate to the job-to-be-done. These are the invaluable assets that designers add to your team’s capabilities.
 
 专注于问自己：“用户要求该产品为他们做什么工作？聊天机器人擅长这项工作吗？自动完成怎么样？也许有什么不同！”考虑现有的设计模式以及它们与待完成的工作的关系。这些是设计师为团队能力添加的宝贵资产。
 
-#### **Design your UX f****or Human-in**-the-Loop 设计人机交互的用户体验
+#### Design your UX for Human-in-the-Loop 设计人机交互的用户体验
 
 One way to get quality annotations is to integrate Human-in-the-Loop (HITL) into the user experience (UX). By allowing users to provide feedback and corrections easily, we can improve the immediate output and collect valuable data to improve our models.
 
-获得高质量注释的一种方法是将人机交互 (HITL) 集成到用户体验 (UX) 中。通过允许用户轻松提供反馈和更正，我们可以改进即时输出并收集有价值的数据来改进我们的模型。
+获得高质量注释的一种方法是将人机交互（HITL）集成到用户体验（UX）中。通过允许用户轻松提供反馈和更正，我们可以改进即时输出并收集有价值的数据来改进我们的模型。
 
 Imagine an e-commerce platform where users upload and categorize their products. There are several ways we could design the UX:
 
 想象一个电子商务平台，用户可以在其中上传和分类他们的产品。我们可以通过多种方式设计用户体验：
 
-+   The user manually selects the right product category; an LLM periodically checks new products and corrects miscategorization on the backend.
-用户手动选择合适的产品类别； LLM 定期检查新产品并纠正后端的错误分类。
+-   The user manually selects the right product category; an LLM periodically checks new products and corrects miscategorization on the backend.
 
-+   The user doesn’t select any category at all; an LLM periodically categorizes products on the backend (with potential errors).
-用户根本没有选择任何类别； LLM 定期在后端对产品进行分类（可能存在错误）。
+    用户手动选择合适的产品类别；LLM 定期检查新产品并纠正后端的错误分类。
 
-+   An LLM suggests a product category in real time, which the user can validate and update as needed.
-LLM 实时建议产品类别，用户可以根据需要进行验证和更新。
+-   The user doesn’t select any category at all; an LLM periodically categorizes products on the backend (with potential errors).
 
-[While all three approac](https://eugeneyan.com/writing/llm-patterns/#collect-user-feedback-to-build-our-data-flywheel)hes involve an LLM, they provide very different UXes. The first approach puts the initial burden on the user and has the LLM acting as a postprocessing check. The second requires zero effort from the user but provides no transparency or control. The third strikes the right balance. By having the LLM suggest categories upfront, we reduce cognitive load on the user and they don’t have to learn our taxonomy to categorize their product! At the same time, by allowing the user to review and edit the suggestion, they have the final say in how their product is classified, putting control firmly in their hands. As a bonus, the third approach creates a natural feedback loop for model improvement. Suggestions that are good are accepted (positive labels) and those that are bad are updated (negative followed by positive labels).
+    用户根本没有选择任何类别；LLM 定期在后端对产品进行分类（可能存在错误）。
 
-虽然所有三种方法都涉及 LLM，但它们提供了截然不同的用户体验。第一种方法将初始负担置于用户身上，并让 LLM 充当后处理检查。第二种要求用户零努力，但不提供透明度或控制。第三个达到了适当的平衡。通过预先让LLM建议类别，我们减少了用户的认知负担，他们不必学习我们的分类法来对他们的产品进行分类！同时，通过允许用户查看和编辑建议，他们对产品的分类方式拥有最终决定权，将控制权牢牢掌握在自己手中。作为奖励，第三种方法为模型改进创建了一个自然的反馈循环。好的建议会被接受（正面标签），而不好的建议会被更新（负面的之后是正面标签）。
+-   An LLM suggests a product category in real time, which the user can validate and update as needed.
 
-This pattern of suggestion, user validation, and data collection is commonly seen in several applications:
+    LLM 实时建议产品类别，用户可以根据需要进行验证和更新。
+
+
+
+[所有三种方法都涉及 LLM](https://eugeneyan.com/writing/llm-patterns/#collect-user-feedback-to-build-our-data-flywheel)，但它们提供了截然不同的用户体验。第一种方法将初始负担置于用户身上，并让 LLM 充当后处理检查。第二种要求用户零努力，但不提供透明度或控制。第三个达到了适当的平衡。通过预先让 LLM 建议类别，我们减少了用户的认知负担，他们不必学习我们的分类法来对他们的产品进行分类！同时，通过允许用户查看和编辑建议，他们对产品的分类方式拥有最终决定权，将控制权牢牢掌握在自己手中。作为奖励，第三种方法为模型改进创建了一个自然的反馈循环。好的建议会被接受（正面标签），而不好的建议会被更新（负面的之后是正面标签）。
+
+虽然所有三种方法都涉及 LLM，但它们提供了截然不同的用户体验。第一种方法将初始负担置于用户身上，并让 LLM 充当后处理检查。第二种要求用户零努力，但不提供透明度或控制。第三个达到了适当的平衡。通过预先让 LLM 建议类别，我们减少了用户的认知负担，他们不必学习我们的分类法来对他们的产品进行分类！同时，通过允许用户查看和编辑建议，他们对产品的分类方式拥有最终决定权，将控制权牢牢掌握在自己手中。作为奖励，第三种方法为模型改进创建了一个自然的反馈循环。好的建议会被接受（正面标签），而不好的建议会被更新（负面的之后是正面标签）。
 
 这种建议、用户验证和数据收集的模式常见于多种应用程序中：
 
-+   Coding assistants: Where users can accept a suggestion (strong positive), accept and tweak a suggestion (positive), or ignore a suggestion (negative)
-编码助手：用户可以接受建议（强积极）、接受并调整建议（积极）或忽略建议（消极）
+这种建议、用户验证和数据收集的模式常见于多种应用程序中：
 
-+   Midjourney: Where users can choose to upscale and download the image (strong positive), vary an image (positive), or generate a new set of images (negative)
-中途：用户可以选择升级和下载图像（强正）、改变图像（正）或生成一组新图像（负）
-
-+   Chatbots: Where users can provide thumbs ups (positive) or thumbs down (negative) on responses, or choose to regenerate a response if it was really bad (strong negative)
-聊天机器人：用户可以对响应提供“赞成”（正面）或“反对”（负面），或者如果响应确实很糟糕（强烈负面），则可以选择重新生成响应
-
-Feedback can be explicit or implicit. Explicit feedback is information users provide in response to a request by our product; implicit feedback is information we learn from user interactions without needing users to deliberately provide feedback. Coding assistants and Midjourney are examples of implicit feedback while thumbs up and thumb downs are explicit feedback. If we design our UX well, like coding assistants and Midjourney, we can collect plenty of implicit feedback to improve our product and models.
++   编码助手：用户可以接受建议（强积极）、接受并调整建议（积极）或忽略建议（消极）
++   Midjourney：用户可以选择升级和下载图像（强正）、改变图像（正）或生成一组新图像（负）
++   聊天机器人：用户可以对响应提供“赞成”（正面）或“反对”（负面），或者如果响应确实很糟糕（强烈负面），则可以选择重新生成响应
 
 反馈可以是显式的，也可以是隐式的。显式反馈是用户根据我们产品的请求提供的信息；隐式反馈是我们从用户交互中学到的信息，而不需要用户刻意提供反馈。编码助手和 Midjourney 是隐式反馈的示例，而赞成和反对则是显式反馈。如果我们设计得很好，比如编码助手和 Midjourney，我们就可以收集大量隐式反馈来改进我们的产品和模型。
 
-#### **Prioritize your hierarchy** of needs ruthlessly 无情地确定你的需求层次的优先顺序
-
-As we think about putting our demo into production, we’ll have to think about the requirements for:
+#### Prioritize your hierarchy of needs ruthlessly 无情地确定你的需求层次的优先顺序
 
 当我们考虑将演示投入生产时，我们必须考虑以下要求：
 
-+   Reliability: 99.9% uptime, adherence to structured output
-可靠性：正常运行时间为 99.9%，遵守结构化输出
-
-+   Harmlessness: Not generate offensive, NSFW, or otherwise harmful content
-无害性：不会产生攻击性、NSFW 或其他有害内容
-
-+   Factual consistency: Being faithful to the context provided, not making things up
-事实一致性：忠实于所提供的上下文，而不是捏造事实
-
-+   Usefulness: Relevant to the users’ needs and request
-实用性：与用户的需求和要求相关
-
-+   Scalability: Latency SLAs, supported throughput
-可扩展性：延迟 SLA、支持的吞吐量
-
-+   Cost: Because we don’t have unlimited budget
-成本：因为我们没有无限的预算
-
-+   And more: Security, privacy, fairness, GDPR, DMA, etc.
-还有更多：安全、隐私、公平、GDPR、DMA 等。
-
-If we try to tackle all these requirements at once, we’re never going to ship anything. Thus, we need to prioritize. Ruthlessly. This means being clear what is nonnegotiable (e.g., reliability, harmlessness) without which our product can’t function or won’t be viable. It’s all about identifying the minimum lovable product. We have to accept that the first version won’t be perfect, and just launch and iterate.
++   可靠性：正常运行时间为 99.9%，遵守结构化输出
++   无害性：不会产生攻击性、NSFW 或其他有害内容
++   事实一致性：忠实于所提供的上下文，而不是捏造事实
++   实用性：与用户的需求和要求相关
++   可扩展性：延迟 SLA、支持的吞吐量
++   成本：因为我们没有无限的预算
++   还有更多：安全、隐私、公平、GDPR、DMA 等
 
 如果我们试图同时满足所有这些要求，我们将永远不会交付任何东西。因此，我们需要优先考虑。无情地。这意味着要清楚什么是不可协商的（例如，可靠性、无害性），否则我们的产品就无法运行或不可行。这一切都是为了确定最受喜爱的产品。我们必须接受第一个版本并不完美，只需启动并迭代即可。
 
-#### **Calibrate your risk tolerance b****ased on the us**e case 根据用例校准您的风险承受能力
-
-When deciding on the language model and level of scrutiny of an application, consider the use case and audience. For a customer-facing chatbot offering medical or financial advice, we’ll need a very high bar for safety and accuracy. Mistakes or bad output could cause real harm and erode trust. But for less critical applications, such as a recommender system, or internal-facing applications like content classification or summarization, excessively strict requirements only slow progress without adding much value.
+#### Calibrate your risk tolerance based on the use case 根据用例校准您的风险承受能力
 
 在决定应用程序的语言模型和审查级别时，请考虑用例和受众。对于提供医疗或财务建议的面向客户的聊天机器人，我们需要非常高的安全性和准确性标准。错误或不良输出可能会造成真正的伤害并削弱信任。但对于不太关键的应用程序（例如推荐系统）或面向内部的应用程序（例如内容分类或摘要），过于严格的要求只会减慢进度，而不会增加太多价值。
 
-[This aligns](https://a16z.com/generative-ai-enterprise-2024/) with a recent a16z report showing that many companies are moving faster with internal LLM applications compared to external ones. By experimenting with AI for internal productivity, organizations can start capturing value while learning how to manage risk in a more controlled environment. Then, as they gain confidence, they can expand to customer-facing use cases.
-
-这与最近的 a16z 报告一致，该报告显示，与外部应用程序相比，许多公司使用内部 LLM 应用程序的速度更快。通过尝试利用人工智能提高内部生产力，组织可以开始获取价值，同时学习如何在更受控的环境中管理风险。然后，当他们获得信心时，他们可以扩展到面向客户的用例。
+[这与最近的 a16z 报告一致](https://a16z.com/generative-ai-enterprise-2024/)，该报告显示，与外部应用程序相比，许多公司使用内部 LLM 应用程序的速度更快。通过尝试利用人工智能提高内部生产力，组织可以开始获取价值，同时学习如何在更受控的环境中管理风险。然后，当他们获得信心时，他们可以扩展到面向客户的用例。
 
 ### Team & Roles 团队与角色
 
-No job function is easy to define, but writing a job description for the work in this new space is more challenging than others. We’ll forgo Venn diagrams of intersecting job titles, or suggestions for job descriptions. We will, however, submit to the existence of a new role—the AI engineer—and discuss its place. Importantly, we’ll discuss the rest of the team and how responsibilities should be assigned.
-
 没有哪个工作职能是容易定义的，但为这个新领域的工作编写工作描述比其他工作更具挑战性。我们将放弃交叉职位的维恩图，或职位描述的建议。然而，我们将接受一个新角色——人工智能工程师——的存在，并讨论它的地位。重要的是，我们将讨论团队的其他成员以及如何分配职责。
 
-#### **Focus on p**rocess, not tools 关注流程，而不是工具
+#### Focus on process, not tools 关注流程，而不是工具
 
-When faced with new paradigms, such as LLMs, software engineers tend to favor tools. As a result, we overlook the problem and process the tool was supposed to solve. In doing so, many engineers assume accidental complexity, which has negative consequences for the team’s long-term productivity.
+当面对新的范式时，例如 LLM，软件工程师倾向于偏爱工具。结果，我们忽略了该工具应该解决的问题和流程。在这样做时，许多工程师假设了偶然的复杂性，这会对团队的长期生产力产生负面影响。
 
-当面对新的范式时，例如LLMs，软件工程师倾向于偏爱工具。结果，我们忽略了该工具应该解决的问题和流程。在这样做时，许多工程师假设了偶然的复杂性，这会对团队的长期生产力产生负面影响。
+例如，[这篇文章](https://hamel.dev/blog/posts/prompt/)讨论了某些工具如何自动为大型语言模型创建提示。它认为（恕我直言），在没有首先了解问题解决方法或流程的情况下使用这些工具的工程师最终会承担不必要的技术债务。
 
-For example, [this write-up](https://hamel.dev/blog/posts/prompt/) discusses how certain tools can automatically create prompts for large language models. It argues (rightfully IMHO) that engineers who use these tools without first understanding the problem-solving methodology or process end up taking on unnecessary technical debt.
-
-例如，这篇文章讨论了某些工具如何自动为大型语言模型创建提示。它认为（恕我直言），在没有首先了解问题解决方法或流程的情况下使用这些工具的工程师最终会承担不必要的技术债务。
-
-In addition to accidental complexity, tools are often underspecified. For example, there is a growing industry of LLM evaluation tools that offer “LLM Evaluation in a Box” with generic evaluators for toxicity, conciseness, tone, etc. We have seen many teams adopt these tools without thinking critically about the specific failure modes of their domains. Contrast this to EvalGen. It focuses on teaching users the process of creating domain-specific evals by deeply involving the user each step of the way, from specifying criteria, to labeling data, to checking evals. The software leads the user through a workflow that looks like this:
-
-除了偶然的复杂性之外，工具的说明也常常不明确。例如，LLM评估工具行业正在不断发展，这些工具提供“LLM评估盒”以及针对毒性、简洁性、语气等的通用评估器。我们已经看到很多团队采用这些工具时无需批判性地思考其领域的特定故障模式。将此与 EvalGen 进行对比。它的重点是通过让用户深入参与从指定标准到标记数据到检查评估的每一步，来教导用户创建特定于领域的评估的过程。该软件引导用户完成如下所示的工作流程：
+除了偶然的复杂性之外，工具的说明也常常不明确。例如，LLM 评估工具行业正在不断发展，这些工具提供“LLM 评估盒”以及针对毒性、简洁性、语气等的通用评估器。我们已经看到很多团队采用这些工具时无需批判性地思考其领域的特定故障模式。将此与 EvalGen 进行对比。它的重点是通过让用户深入参与从指定标准到标记数据到检查评估的每一步，来教导用户创建特定于领域的评估的过程。该软件引导用户完成如下所示的工作流程：
 
 ![](img/f641e9a2fffe11d338e340cb995dd278.png)
 
-[Shan](https://arxiv.org/abs/2404.12272)[kar, S., et al. (2024). Who Validates the Vali](https://arxiv.org/abs/2404.12272)dators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences. Retrieved from https://arxiv.org/abs/2404.12272
+[Shan](https://arxiv.org/abs/2404.12272)[kar, S., et al. (2024). Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences. Retrieved from https://arxiv.org/abs/2404.12272](https://arxiv.org/abs/2404.12272)
 
-香卡，S.，等人。 （2024）。谁来验证验证者？使LLM-LLM输出的辅助评估与人类偏好保持一致。检索自 https://arxiv.org/abs/2404.12272
+香卡，S.，等人。 （2024）。谁来验证验证者？使 LLM 输出的 LLM 辅助评估与人类偏好保持一致。检索自 https://arxiv.org/abs/2404.12272
+
+
 
 EvalGen guides the user through a best practice of crafting LLM evaluations, namely:
 
 EvalGen 指导用户完成制定 LLM 评估的最佳实践，即：
 
-1.  Defining domain-specific tests (bootstrapped automatically from the prompt). These are defined as either assertions with code or with LLM-as-a-Judge.
-定义特定于域的测试（从提示符自动引导）。这些被定义为带有代码的断言或带有 LLM-as-a-Judge 的断言。
+1. Defining domain-specific tests (bootstrapped automatically from the prompt). These are defined as either assertions with code or with LLM-as-a-Judge.
 
-1.  The importance of aligning the tests with human judgment, so that the user can check that the tests capture the specified criteria.
-将测试与人类判断保持一致的重要性，以便用户可以检查测试是否符合指定的标准。
+   定义特定于域的测试（从提示符自动引导）。这些被定义为带有代码的断言或带有 LLM-as-a-Judge 的断言。
 
-1.  Iterating on your tests as the system (prompts, etc.) changes. 
-当系统（提示等）发生变化时迭代您的测试。
+2. The importance of aligning the tests with human judgment, so that the user can check that the tests capture the specified criteria.
+
+   将测试与人类判断保持一致的重要性，以便用户可以检查测试是否符合指定的标准。
+
+3. Iterating on your tests as the system (prompts, etc.) changes.
+
+   当系统（提示等）发生变化时迭代您的测试。
 
 EvalGen provides developers with a mental model of the evaluation building process without anchoring them to a specific tool. We have found that after providing AI engineers with this context, they often decide to select leaner tools or build their own.
 
@@ -863,7 +831,7 @@ There are too many components of LLMs beyond prompt writing and evaluations to l
 
 除了提示写作和评估之外，LLMs 的组成部分太多，无法在此详尽列出。然而，重要的是，人工智能工程师在采用工具之前首先要了解流程。
 
-#### Always be experimenting 永远在尝试
+## Always be experimenting 永远在尝试
 
 ML products are deeply intertwined with experimentation. Not only the A/B, randomized control trials kind, but the frequent attempts at modifying the smallest possible components of your system and doing offline evaluation. The reason why everyone is so hot for evals is not actually about trustworthiness and confidence—it’s about enabling experiments! The better your evals, the faster you can iterate on experiments, and thus the faster you can converge on the best version of your system.
 
@@ -881,7 +849,7 @@ Finally, during product/project planning, set aside time for building evals and 
 
 最后，在产品/项目规划期间，留出时间来构建评估和运行多个实验。考虑工程产品的产品规格，但添加明确的评估标准。在制定路线图期间，不要低估实验所需的时间——在获得生产许可之前，需要进行多次开发和评估迭代。
 
-#### **Empower everyone to u**se new AI technology 让每个人都能使用新的人工智能技术
+## Empower everyone to use new AI technology 让每个人都能使用新的人工智能技术
 
 As generative AI increases in adoption, we want the entire team—not just the experts—to understand and feel empowered to use this new technology. There’s no better way to develop intuition for how LLMs work (e.g., latencies, failure modes, UX) than to, well, use them. LLMs are relatively accessible: You don’t need to know how to code to improve performance for a pipeline, and everyone can start contributing via prompt engineering and evals.
 
@@ -895,17 +863,19 @@ We can also go further and provide opportunities for hands-on experimentation an
 
 我们还可以更进一步，提供动手实验和探索的机会。也许是黑客马拉松？虽然让整个团队花几天时间研究投机性项目似乎成本高昂，但结果可能会让您感到惊讶。我们知道有一个团队通过黑客马拉松加速并几乎在一年内完成了他们的三年路线图。另一个团队举办了一场黑客马拉松，通过 LLMs 实现了范式转变的用户体验，现在这些用户体验成为了今年及以后的优先事项。
 
-#### **D**on’t fall into the trap of “AI engineering is all I need” 不要陷入“我只需要人工智能工程”的陷阱
+## Don’t fall into the trap of “AI engineering is all I need” 不要陷入“我只需要人工智能工程”的陷阱
 
 As new job titles are coined, there is an initial tendency to overstate the capabilities associated with these roles. This often results in a painful correction as the actual scope of these jobs becomes clear. Newcomers to the field, as well as hiring managers, might make exaggerated claims or have inflated expectations. Notable examples over the last decade include:
 
 随着新职位的出现，人们最初倾向于夸大与这些角色相关的能力。当这些工作的实际范围变得清晰时，这通常会导致痛苦的纠正。该领域的新人以及招聘经理可能会夸大其词或抱有过高的期望。过去十年的著名例子包括：
 
-+   [Data scientist: “someone who is better at statistics than a](https://x.com/josh_wills/status/198093512149958656)ny software engineer and better at software engineering than any statistician”  
-数据科学家：“比任何软件工程师更擅长统计，比任何统计学家更擅长软件工程”
++ [Data scientist: “someone who is better at statistics than any software engineer and better at software engineering than any statistician”](https://x.com/josh_wills/status/198093512149958656)
 
-+   Machine learning engineer (MLE): a software engineering-centric view of machine learning
-机器学习工程师（MLE）：以软件工程为中心的机器学习观点
+  数据科学家：“比任何软件工程师更擅长统计，比任何统计学家更擅长软件工程”
+
++ Machine learning engineer (MLE): a software engineering-centric view of machine learning
+
+  机器学习工程师（MLE）：以软件工程为中心的机器学习观点
 
 Initially, many assumed that data scientists alone were sufficient for data-driven projects. However, it became apparent that data scientists must collaborate with software and data engineers to develop and deploy data products effectively.
 
@@ -915,7 +885,9 @@ This misunderstanding has shown up again with the new role of AI engineer, with 
 
 这种误解随着人工智能工程师的新角色再次出现，一些团队认为人工智能工程师就是你所需要的。事实上，构建机器学习或人工智能产品需要广泛的专业角色。我们咨询了十几家人工智能产品公司，并一致观察到他们陷入了“你只需要人工智能工程”的陷阱。因此，由于公司忽视了构建产品所涉及的关键方面，产品往往难以扩展到演示之外。
 
-For exampl[e, evaluat](https://github.com/hamelsmu/ft-drift)ion and measurement are crucial for scaling a product beyond vibe checks. The skills for effective evaluation align with some of the strengths traditionally seen in machine learning engineers—a team composed solely of AI engineers will likely lack these skills. Coauthor Hamel Husain illustrates the importance of these skills in his recent work around detecting data drift and designing domain-specific evals.
+
+
+For example, [evaluation](https://github.com/hamelsmu/ft-drift) and measurement are crucial for scaling a product beyond vibe checks. The skills for effective evaluation align with some of the strengths traditionally seen in machine learning engineers—a team composed solely of AI engineers will likely lack these skills. Coauthor Hamel Husain illustrates the importance of these skills in his recent work around detecting data drift and designing domain-specific evals.
 
 例如，除了氛围检查之外，评估和测量对于扩展产品至关重要。有效评估的技能与传统上机器学习工程师的一些优势相一致——仅由人工智能工程师组成的团队可能缺乏这些技能。合著者 Hamel Husain 在他最近关于检测数据漂移和设计特定领域评估的工作中阐述了这些技能的重要性。
 
@@ -923,22 +895,25 @@ Here is a rough progression of the types of roles you need, and when you’ll ne
 
 以下是在构建人工智能产品的整个过程中您需要的角色类型以及何时需要它们的粗略进展：
 
-1.  First, focus on building a product. This might include an AI engineer, but it doesn’t have to. AI engineers are valuable for prototyping and iterating quickly on the product (UX, plumbing, etc.). 
-首先，专注于打造产品。这可能包括人工智能工程师，但并非必须如此。人工智能工程师对于产品（用户体验、管道等）的原型设计和快速迭代非常有价值。
+1. First, focus on building a product. This might include an AI engineer, but it doesn’t have to. AI engineers are valuable for prototyping and iterating quickly on the product (UX, plumbing, etc.).
+   
+   首先，专注于打造产品。这可能包括人工智能工程师，但并非必须如此。人工智能工程师对于产品（用户体验、管道等）的原型设计和快速迭代非常有价值。
 
-1.  Next, create the right foundations by instrumenting your system and collecting data. Depending on the type and scale of data, you might need platform and/or data engineers. You must also have systems for querying and analyzing this data to debug issues.
-接下来，通过检测系统和收集数据来创建正确的基础。根据数据的类型和规模，您可能需要平台和/或数据工程师。您还必须拥有用于查询和分析这些数据以调试问题的系统。
+1. Next, create the right foundations by instrumenting your system and collecting data. Depending on the type and scale of data, you might need platform and/or data engineers. You must also have systems for querying and analyzing this data to debug issues.
 
-1.  Next, you will eventually want to optimize your AI system. This doesn’t necessarily involve training models. The basics include steps like designing metrics, building evaluation systems, running experiments, optimizing RAG retrieval, debugging stochastic systems, and more. MLEs are really good at this (though AI engineers can pick them up too). It usually doesn’t make sense to hire an MLE unless you have completed the prerequisite steps.
-接下来，您最终会想要优化您的人工智能系统。这不一定涉及训练模型。基础知识包括设计指标、构建评估系统、运行实验、优化 RAG 检索、调试随机系统等步骤。 MLE 确实很擅长这一点（尽管人工智能工程师也可以学习它们）。除非您已完成先决条件步骤，否则聘请 MLE 通常没有意义。
+   接下来，通过检测系统和收集数据来创建正确的基础。根据数据的类型和规模，您可能需要平台和/或数据工程师。您还必须拥有用于查询和分析这些数据以调试问题的系统。
 
-Aside from this, you need a domain expert at all times. At small companies, this would ideally be the founding team—and at bigger companies, product managers can play this role. Being aware of the progression and timing of roles is critical. Hiring folks at the wrong time (e.g., hiring an MLE too early) or building in the wrong order is a waste of time and money, and causes churn.  Furthermore, regularly checking in with an MLE (but not hiring them full-time) during phases 1–2 will help the company build the right foundations.
+1. Next, you will eventually want to optimize your AI system. This doesn’t necessarily involve training models. The basics include steps like designing metrics, building evaluation systems, running experiments, optimizing RAG retrieval, debugging stochastic systems, and more. MLEs are really good at this (though AI engineers can pick them up too). It usually doesn’t make sense to hire an MLE unless you have completed the prerequisite steps.
+
+   接下来，您最终会想要优化您的人工智能系统。这不一定涉及训练模型。基础知识包括设计指标、构建评估系统、运行实验、优化 RAG 检索、调试随机系统等步骤。 MLE 确实很擅长这一点（尽管人工智能工程师也可以学习它们）。除非您已完成先决条件步骤，否则聘请 MLE 通常没有意义。
+
+Aside from this, you need a domain expert at all times. At small companies, this would ideally be the founding team—and at bigger companies, product managers can play this role. Being aware of the progression and timing of roles is critical. Hiring folks at the wrong time (e.g., hiring an MLE too early) or building in the wrong order is a waste of time and money, and causes churn. Furthermore, regularly checking in with an MLE (but not hiring them full-time) during phases 1–2 will help the company build the right foundations.
 
 除此之外，您始终需要领域专家。在小公司，理想的情况是创始团队，而在大公司，产品经理可以扮演这个角色。了解角色的进展和时间安排至关重要。在错误的时间雇用人员（例如，过早雇用 MLE）或以错误的顺序进行构建都是浪费时间和金钱，并会导致客户流失。此外，在第 1-2 阶段定期与 MLE 进行检查（但不是全职雇用他们）将有助于公司建立正确的基础。
 
 # Part 3：Strategy 战略部分
 
-We previously shared our insights on the tactics we have honed while operat[ing LLM app](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-ii/)lications. Tactics are granular: they are the specific actions employed to achieve specific objectives. We also shared our perspective on operations: the higher-level processes in place to support tactical work to achieve objectives.
+We previously shared our insights on the tactics we have honed while operating [LLM applications](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-ii/). Tactics are granular: they are the specific actions employed to achieve specific objectives. We also shared our perspective on operations: the higher-level processes in place to support tactical work to achieve objectives.
 
 我们之前分享了我们在操作 LLM 应用程序时磨练的策略的见解。策略是细粒度的：它们是为实现特定目标而采取的特定行动。我们还分享了我们对运营的看法：支持战术工作以实现目标的更高级别流程。
 
@@ -950,23 +925,29 @@ We provide our opinionated takes, such as “no GPUs before PMF” and “focus 
 
 我们提供我们的固执己见的观点，例如“PMF 之前没有 GPU”和“关注系统而不是模型”，以帮助团队弄清楚在哪里分配稀缺资源。我们还建议了一个迭代优秀产品的路线图。这最后一组课程回答了以下问题：
 
-1.  Building vs. Buying: When should you train your own models, and when should you leverage existing APIs? The answer is, as always, “it depends.” We share what it depends on.
-构建与购买：什么时候应该训练自己的模型，什么时候应该利用现有的 API？一如既往，答案是“视情况而定”。我们分享它所依赖的内容。
+1. Building vs. Buying: When should you train your own models, and when should you leverage existing APIs? The answer is, as always, “it depends.” We share what it depends on.
 
-1.  Iterating to Something Great: How can you create a lasting competitive edge that goes beyond just using the latest models? We discuss the importance of building a robust system around the model and focusing on delivering memorable, sticky experiences.
-迭代出伟大的东西：如何才能创造出超越仅仅使用最新模型的持久竞争优势？我们讨论了围绕模型构建强大系统并专注于提供令人难忘、有粘性的体验的重要性。
+   构建与购买：什么时候应该训练自己的模型，什么时候应该利用现有的 API？一如既往，答案是“视情况而定”。我们分享它所依赖的内容。
 
-1.  Human-Centered AI: How can you effectively integrate LLMs into human workflows to maximize productivity and happiness? We emphasize the importance of building AI tools that support and enhance human capabilities rather than attempting to replace them entirely.
-以人为本的人工智能：如何有效地将LLMs集成到人类工作流程中，以最大限度地提高生产力和幸福感？我们强调构建支持和增强人类能力的人工智能工具的重要性，而不是试图完全取代它们。
+1. Iterating to Something Great: How can you create a lasting competitive edge that goes beyond just using the latest models? We discuss the importance of building a robust system around the model and focusing on delivering memorable, sticky experiences.
 
-1.  Getting Started: What are the essential steps for teams embarking on building an LLM product? We outline a basic playbook that starts with prompt engineering, evaluations, and data collection.
-入门：团队开始构建 LLM 产品的基本步骤是什么？我们概述了一个基本的行动手册，从快速工程、评估和数据收集开始。
+   迭代出伟大的东西：如何才能创造出超越仅仅使用最新模型的持久竞争优势？我们讨论了围绕模型构建强大系统并专注于提供令人难忘、有粘性的体验的重要性。
 
-1.  The Future of Low-Cost Cognition: How will the rapidly decreasing costs and increasing capabilities of LLMs shape the future of AI applications? We examine historical trends and walk through a simple method to estimate when certain applications might become economically feasible.
-低成本认知的未来：LLMs快速降低的成本和不断增强的能力将如何塑造人工智能应用的未来？我们研究历史趋势并通过一种简单的方法来估计某些应用程序何时在经济上可行。
+1. Human-Centered AI: How can you effectively integrate LLMs into human workflows to maximize productivity and happiness? We emphasize the importance of building AI tools that support and enhance human capabilities rather than attempting to replace them entirely.
 
-1.  From Demos to Products: What does it take to go from a compelling demo to a reliable, scalable product? We emphasize the need for rigorous engineering, testing, and refinement to bridge the gap between prototype and production.
-从演示到产品：从引人注目的演示到可靠、可扩展的产品需要什么？我们强调需要进行严格的工程、测试和改进，以弥合原型和生产之间的差距。
+   以人为本的人工智能：如何有效地将LLMs集成到人类工作流程中，以最大限度地提高生产力和幸福感？我们强调构建支持和增强人类能力的人工智能工具的重要性，而不是试图完全取代它们。
+
+1. Getting Started: What are the essential steps for teams embarking on building an LLM product? We outline a basic playbook that starts with prompt engineering, evaluations, and data collection.
+
+   入门：团队开始构建 LLM 产品的基本步骤是什么？我们概述了一个基本的行动手册，从快速工程、评估和数据收集开始。
+
+1. The Future of Low-Cost Cognition: How will the rapidly decreasing costs and increasing capabilities of LLMs shape the future of AI applications? We examine historical trends and walk through a simple method to estimate when certain applications might become economically feasible.
+
+   低成本认知的未来：LLMs快速降低的成本和不断增强的能力将如何塑造人工智能应用的未来？我们研究历史趋势并通过一种简单的方法来估计某些应用程序何时在经济上可行。
+
+1. From Demos to Products: What does it take to go from a compelling demo to a reliable, scalable product? We emphasize the need for rigorous engineering, testing, and refinement to bridge the gap between prototype and production.
+
+   从演示到产品：从引人注目的演示到可靠、可扩展的产品需要什么？我们强调需要进行严格的工程、测试和改进，以弥合原型和生产之间的差距。
 
 To answer these difficult questions, let’s think step by step…
 
@@ -978,13 +959,13 @@ Successful products require thoughtful planning and tough prioritization, not en
 
 成功的产品需要深思熟虑的规划和严格的优先级排序，而不是无休止的原型设计或遵循最新的模型发布或趋势。在最后一节中，我们环顾四周并思考构建出色的人工智能产品的战略考虑因素。我们还研究了团队将面临的关键权衡，例如何时构建和何时购买，并为早期LLM应用程序开发策略提出了“剧本”。
 
-### **No GPUs befo**re PMF PMF 之前没有 GPU
+### No GPUs before PMF PMF 之前没有 GPU
 
 To be great, your product needs to be more than just a thin wrapper around somebody else’s API. But mistakes in the opposite direction can be even more costly. The past year has also seen a mint of venture capital, including an eye-watering six-billion-dollar Series A, spent on training and customizing models without a clear product vision or target market. In this section, we’ll explain why jumping immediately to training your own models is a mistake and consider the role of self-hosting.
 
 要想变得出色，您的产品需要不仅仅是别人 API 的薄包装。但相反方向的错误可能会付出更大的代价。过去的一年里，还出现了大量风险投资，其中包括令人眼花缭乱的 60 亿美元 A 轮融资，该投资用于培训和定制模型，但没有明确的产品愿景或目标市场。在本节中，我们将解释为什么立即跳到训练自己的模型是错误的，并考虑自托管的作用。
 
-#### **Training from scratch (almos****t) never makes** sense 从头开始训练（几乎）没有意义
+#### Training from scratch (almost) never makes sense 从头开始训练（几乎）没有意义
 
 For most organizations, pretraining an LLM from scratch is an impractical distraction from building products.
 
@@ -994,19 +975,21 @@ As exciting as it is and as much as it seems like everyone else is doing it, dev
 
 尽管开发和维护机器学习基础设施令人兴奋，而且似乎其他人都在这样做，但它需要大量资源。这包括收集数据、训练和评估模型以及部署它们。如果您仍在验证产品与市场的契合度，这些努力将转移开发核心产品的资源。即使您拥有计算、数据和技术能力，预训练的 LLM 可能会在几个月内过时。
 
-[Consider the](https://arxiv.org/abs/2303.17564) case of BloombergGPT, an LLM specifically trained for financial [tasks. The model ](https://arxiv.org/abs/2305.05862)was pretrained on 363B tokens and required a heroic effort by nine full-time employees, four from AI Engineering and five from ML Product and Research. Despite this effort, it was outclassed by gpt-3.5-turbo and gpt-4 on those financial tasks within a year.
 
-以 BloombergGPT 为例，它是专门针对金融任务进行培训的LLM。该模型是在 363B 代币上进行预训练的，需要九名全职员工的巨大努力，其中四名来自人工智能工程，五名来自机器学习产品和研究。尽管做出了这些努力，但一年内它在这些财务任务上就被 gpt-3.5-turbo 和 gpt-4 超越了。
+
+[Consider the](https://arxiv.org/abs/2303.17564) case of `BloombergGPT`, an LLM specifically trained for financial [tasks. The model ](https://arxiv.org/abs/2305.05862)was pretrained on 363B tokens and required a heroic effort by nine full-time employees, four from AI Engineering and five from ML Product and Research. Despite this effort, it was outclassed by `gpt-3.5-turbo` and `gpt-4` on those financial tasks within a year.
+
+以 `BloombergGPT` 为例，它是专门针对金融任务进行培训的LLM。该模型是在 363B 代币上进行预训练的，需要九名全职员工的巨大努力，其中四名来自人工智能工程，五名来自机器学习产品和研究。尽管做出了这些努力，但一年内它在这些财务任务上就被 `gpt-3.5-turbo` 和 `gpt-4` 超越了。
 
 This story and others like it suggests that for most practical applications, pretraining an LLM from scratch, even on domain-specific data, is not the best use of resources. Instead, teams are better off fine-tuning the strongest open source models available for their specific needs.
 
 这个故事和其他类似的故事表明，对于大多数实际应用，从头开始预训练 LLM ，即使是针对特定领域的数据，也不是资源的最佳利用。相反，团队最好根据其特定需求微调最强大的开源模型。
 
-There are of course exceptions. One shining example is Replit’s code model, trained specifically for code-generation and understanding. With pretraining, Replit was able to outperform other models of large sizes such as CodeLlama7b. But as other, increasingly capable models have been released, maintaining utility has required continued investment.
+There are of course exceptions. One shining example is Replit’s code model, trained specifically for code-generation and understanding. With pretraining, Replit was able to outperform other models of large sizes such as `CodeLlama7b`. But as other, increasingly capable models have been released, maintaining utility has required continued investment.
 
-当然也有例外。 Replit 的代码模型就是一个典型的例子，它专门针对代码生成和理解进行了训练。通过预训练，Replit 能够超越 CodeLlama7b 等其他大尺寸模型。但随着其他功能日益强大的模型的发布，维持实用性需要持续的投资。
+当然也有例外。 Replit 的代码模型就是一个典型的例子，它专门针对代码生成和理解进行了训练。通过预训练，Replit 能够超越 `CodeLlama7b` 等其他大尺寸模型。但随着其他功能日益强大的模型的发布，维持实用性需要持续的投资。
 
-#### **Don’t fine-tune until you’ve p****roven it’s nec**essary 在证明有必要之前不要进行微调
+### Don’t fine-tune until you’ve proven it’s necessary 在证明有必要之前不要进行微调
 
 For most organizations, fine-tuning is driven more by FOMO than by clear strategic thinking.
 
@@ -1028,7 +1011,7 @@ Ultimately, remember that LLM-powered applications aren’t a science fair proje
 
 最后，请记住，LLM 驱动的应用程序不是一个科学博览会项目；而是一个项目。对它们的投资应与其对企业战略目标及其竞争优势的贡献相称。
 
-#### **S**tart with inference APIs, but don’t be afraid of self-hosting 从推理 API 开始，但不要害怕自托管
+### Start with inference APIs, but don’t be afraid of self-hosting 从推理 API 开始，但不要害怕自托管
 
 With LLM APIs, it’s easier than ever for startups to adopt and integrate language modeling capabilities without training their own models from scratch. Providers like Anthropic and OpenAI offer general APIs that can sprinkle intelligence into your product with just a few lines of code. By using these services, you can reduce the effort spent and instead focus on creating value for your customers—this allows you to validate ideas and iterate toward product-market fit faster.
 
@@ -1042,13 +1025,13 @@ Furthermor[e, self-hosting circumvents limitat](https://tech.buzzfeed.com/lesson
 
 此外，自托管规避了推理提供商施加的限制，例如速率限制、模型弃用和使用限制。此外，自托管使您可以完全控制模型，从而更轻松地围绕模型构建差异化的高质量系统。最后，自托管，尤其是微调，可以大规模降低成本。例如，BuzzFeed 分享了他们如何微调开源 LLMs 以降低 80% 的成本。
 
-### **Iterate t**o something great 迭代一些伟大的事情
+### Iterate to something great 迭代一些伟大的事情
 
 To sustain a competitive edge in the long run, you need to think beyond models and consider what will set your product apart. While speed of execution matters, it shouldn’t be your only advantage.
 
 为了长期保持竞争优势，您需要超越模型来思考，并考虑是什么让您的产品与众不同。虽然执行速度很重要，但这不应该是您唯一的优势。
 
-#### **T**he model isn’t the product; the system around it is 模型不是产品，而是产品。它周围的系统是
+#### The model isn’t the product; the system around it is 模型不是产品，而是产品。它周围的系统是
 
 For teams that aren’t building models, the rapid pace of innovation is a boon as they migrate from one SOTA model to the next, chasing gains in context size, reasoning capability, and price-to-value to build better and better products.
 
@@ -1063,16 +1046,20 @@ Instead, focus your efforts on what’s going to provide lasting value, such as:
 相反，应将精力集中在能够提供持久价值的事情上，例如：
 
 +   Evaluation chassis: To reliably measure performance on your task across models
-评估底盘：可靠地衡量跨模型的任务性能
+
+    评估底盘：可靠地衡量跨模型的任务性能
 
 +   Guardrails: To prevent undesired outputs no matter the model
-护栏：无论型号如何，都可以防止不需要的输出
+
+    护栏：无论型号如何，都可以防止不需要的输出
 
 +   Caching: To reduce latency and cost by avoiding the model altogether
-缓存：通过完全避免模型来减少延迟和成本
+
+    缓存：通过完全避免模型来减少延迟和成本
 
 +   Data flywheel: To power the iterative improvement of everything above
-数据飞轮：为上述一切的迭代改进提供动力
+
+    数据飞轮：为上述一切的迭代改进提供动力
 
 These components create a thicker moat of product quality than raw model capabilities.
 
@@ -1086,11 +1073,13 @@ For example, some teams invested in building custom tooling to validate structur
 
 例如，一些团队投资构建自定义工具来验证专有模型的结构化输出；最小的投资在这里很重要，但深入的投资并不利于时间的利用。 OpenAI 需要确保当您请求函数调用时，您会得到有效的函数调用 - 因为他们的所有客户都希望如此。在这里采用一些“战略性拖延”，构建你绝对需要的东西，并等待提供商对功能的明显扩展。
 
-#### **Build tru**st by starting small 从小事做起建立信任
+#### Build trust by starting small 从小事做起建立信任
 
 Building a product that tries to be everything to everyone is a recipe for mediocrity. To create compelling products, companies need to specialize in building memorable, sticky experiences that keep users coming back.
 
 打造一款试图满足所有人需求的产品只会导致平庸。为了创造引人注目的产品，公司需要专注于打造令人难忘、有粘性的体验，以吸引用户回头客。
+
+
 
 Consider a generic RAG system that aims to answer any question a user might ask. The lack of specialization means that the system can’t prioritize recent information, parse domain-specific formats, or understand the nuances of specific tasks. As a result, users are left with a shallow, unreliable experience that doesn’t meet their needs.
 
@@ -1100,19 +1089,19 @@ To address this, focus on specific domains and use cases. Narrow the scope by go
 
 为了解决这个问题，请关注特定领域和用例。通过深入而不是广泛来缩小范围。这将创建与用户产生共鸣的特定领域工具。专业化还可以让您提前了解系统的功能和限制。对系统能做什么和不能做什么保持透明可以展现自我意识，帮助用户了解系统可以在哪些方面增加最大价值，从而建立对输出的信任和信心。
 
-#### **B**uild LLMOps, but build it for the right reason: faster iteration 构建 LLMOps，但构建它的原因是正确的：更快的迭代
+#### Build LLMOps, but build it for the right reason: faster iteration 构建 LLMOps，但构建它的原因是正确的：更快的迭代
 
-DevOps is not fundamentally about reproducible workflows or shifting left or empowering two pizza teams—and it’s definitely not about writing YAML files.
+DevOps is not fundamentally about reproducible workflows or shifting left or empowering two pizza teams—and it’s definitely not about writing `YAML` files.
 
-DevOps 从根本上来说并不是关于可重复的工作流程或左移或授权两个披萨团队，而且它绝对不是关于编写 YAML 文件。
+DevOps 从根本上来说并不是关于可重复的工作流程或左移或授权两个披萨团队，而且它绝对不是关于编写 `YAML` 文件。
 
 DevOps is about shortening the feedback cycles between work and its outcomes so that improvements accumulate instead of errors. Its roots go back, via the Lean Startup movement, to Lean manufacturing and the Toyota Production System, with its emphasis on Single Minute Exchange of Die and Kaizen.
 
 DevOps 旨在缩短工作与其结果之间的反馈周期，以便积累改进而不是错误。它的根源可以通过精益创业运动追溯到精益制造和丰田生产系统，其重点是单分钟模具交换和改善。
 
-MLOps has adapted the form of DevOps to ML. We have reproducible experiments and we have all-in-one suites that empower model builders to ship. And Lordy, do we have YAML files.
+MLOps has adapted the form of DevOps to ML. We have reproducible experiments and we have all-in-one suites that empower model builders to ship. And Lordy, do we have `YAML` files.
 
-MLOps 将 DevOps 的形式改编为 ML。我们有可重复的实验，我们有一体化的套件，可以帮助模型构建者进行交付。 Lordy，我们有 YAML 文件吗？
+MLOps 将 DevOps 的形式改编为 ML。我们有可重复的实验，我们有一体化的套件，可以帮助模型构建者进行交付。 Lordy，我们有 `YAML` 文件吗？
 
 But as an industry, MLOps didn’t adapt the function of DevOps. It didn’t shorten the feedback gap between models and their inferences and interactions in production.
 
@@ -1126,7 +1115,7 @@ Already, we have interactive arenas for neutral, crowd-sourced evaluation of cha
 
 我们已经拥有了用于对聊天和编码模型进行中立、众包评估的交互式平台——集体、迭代改进的外循环。 LangSmith、Log10、LangFuse、W&B Weave、HoneyHive 等工具不仅可以收集和整理有关生产中系统结果的数据，还可以利用它们通过与开发深度集成来改进这些系统。拥抱这些工具或构建您自己的工具。
 
-#### **Don’t build LLM ****features you c**an buy 不要构建可以购买的LLM功能
+#### Don’t build LLM features you can buy 不要构建可以购买的LLM功能
 
 Most successful businesses are not LLM businesses. Simultaneously, most businesses have opportunities to be improved by LLMs.
 
@@ -1140,14 +1129,17 @@ Consider a few misguided ventures that waste your team’s time:
 
 考虑一些浪费团队时间的误导行为：
 
-+   Building custom text-to-SQL capabilities for your business
-为您的企业构建自定义文本到 SQL 功能
++ Building custom text-to-SQL capabilities for your business
 
-+   Building a chatbot to talk to your documentation
-构建一个聊天机器人来与您的文档对话
+    为您的企业构建自定义文本到 SQL 功能
 
-+   Integrating your company’s knowledge base with your customer support chatbot
-将公司的知识库与客户支持聊天机器人集成
++ Building a chatbot to talk to your documentation
+
+    构建一个聊天机器人来与您的文档对话
+
++ Integrating your company’s knowledge base with your customer support chatbot
+
+    将公司的知识库与客户支持聊天机器人集成
 
 While the above are the hellos-world of LLM applications, none of them make sense for virtually any product company to build themselves. These are general problems for many businesses with a large gap between promising demo and dependable component—the customary domain of software companies. Investing valuable R&D resources on general problems being tackled en masse by the current Y Combinator batch is a waste.
 
@@ -1157,7 +1149,7 @@ If this sounds like trite business advice, it’s because in the frothy exciteme
 
 如果这听起来像是陈词滥调的商业建议，那是因为在当前炒作浪潮的泡沫兴奋中，很容易将任何“LLM”误认为是尖端的增值差异化，而忽略了哪些应用程序已经过时了。
 
-#### **AI in the loop; ****humans at the** center 人工智能在循环中；人在中心
+#### AI in the loop; humans at the center 人工智能在循环中；人在中心
 
 Right now, LLM-powered applications are brittle. They required an incredible amount of safe-guarding and defensive engineering and remain hard to predict. Additionally, when tightly scoped, these applications can be wildly useful. This means that LLMs make excellent tools to accelerate user workflows.
 
@@ -1183,17 +1175,19 @@ By centering humans and asking how an LLM can support their workflow, this leads
 
 通过以人为中心并询问LLM如何支持他们的工作流程，这会导致显着不同的产品和设计决策。最终，它将促使您开发出与竞争对手不同的产品，竞争对手试图将所有责任快速转移到LLMs上——更好、更有用、风险更小的产品。
 
-### **Start with prompting, evals,**** and data col**lection 从提示、评估和数据收集开始
+### Start with prompting, evals, and data collection 从提示、评估和数据收集开始
 
 The previous sections have delivered a fire hose of techniques and advice. It’s a lot to take in. Let’s consider the minimum useful set of advice: if a team wants to build an LLM product, where should they begin?
 
 前面的部分提供了大量的技术和建议。有很多东西需要考虑。让我们考虑一下最基本的有用建议：如果一个团队想要构建一个 LLM 产品，他们应该从哪里开始？
 
+
+
 Over the last year, we’ve seen enough examples to start becoming confident that successful LLM applications follow a consistent trajectory. We walk through this basic “getting started” playbook in this section. The core idea is to start simple and only add complexity as needed. A decent rule of thumb is that each level of sophistication typically requires at least an order of magnitude more effort than the one before it. With this in mind…
 
 在过去的一年里，我们看到了足够多的例子，开始相信成功的LLM应用程序遵循一致的轨迹。我们将在本节中介绍这个基本的“入门”手册。核心思想是从简单开始，仅根据需要增加复杂性。一个不错的经验法则是，每一个复杂程度通常都需要比之前至少多一个数量级的努力。考虑到这一点……
 
-#### **Prompt engin**eering comes first 及时的工程设计是第一位的
+### Prompt engineering comes first 及时的工程设计是第一位的
 
 Start with prompt engineering. Use all the techniques we discussed in the tactics section before. Chain-of-thought, n-shot examples, and structured input and output are almost always a good idea. Prototype with the most highly capable models before trying to squeeze performance out of weaker models.
 
@@ -1203,13 +1197,13 @@ Only if prompt engineering cannot achieve the desired level of performance shoul
 
 仅当即时工程无法达到所需的性能水平时，您才应考虑进行微调。如果存在阻止使用专有模型并因此要求您自行托管的非功能性需求（例如数据隐私、完全控制和成本），这种情况会更频繁地出现。只需确保这些相同的隐私要求不会阻止您使用用户数据进行微调即可！
 
-#### **Build evals and kicks****tart a data** flywheel 构建评估并启动数据飞轮
+### Build evals and kickstart a data flywheel 构建评估并启动数据飞轮
 
 Even teams that are just getting started need evals. Otherwise, you won’t know whether your prompt engineering is sufficient or when your fine-tuned model is ready to replace the base model.
 
 即使是刚刚起步的团队也需要评估。否则，您将不知道您的即时工程是否足够，或者您的微调模型何时准备好替换基础模型。
 
-E[ffective ](https://hamel.dev/blog/posts/evals/)evals are specific to your tasks and mirror the intended use cases. The first level of evals that we recommend is unit testing. These simple assertions detect known or hypothesized failure modes and help drive early design decisions. Also see other task-specific evals for classification, summarization, etc.
+[Effective evals](https://hamel.dev/blog/posts/evals/) are specific to your tasks and mirror the intended use cases. The first level of evals that we recommend is unit testing. These simple assertions detect known or hypothesized failure modes and help drive early design decisions. Also see other task-specific evals for classification, summarization, etc.
 
 有效的评估特定于您的任务并反映预期的用例。我们建议的第一级评估是单元测试。这些简单的断言可检测已知或假设的故障模式，并有助于推动早期设计决策。另请参阅其他特定于任务的分类、摘要等评估。
 
@@ -1218,12 +1212,16 @@ While unit tests and model-based evaluations are useful, they don’t replace th
 虽然单元测试和基于模型的评估很有用，但它们并不能取代人工评估的需要。让人们使用您的模型/产品并提供反馈。这具有测量现实世界性能和缺陷率的双重目的，同时还收集可用于微调未来模型的高质量注释数据。这会创建一个正反馈循环或数据飞轮，并随着时间的推移而复合：
 
 +   Use human evaluation to assess model performance and/or find defects
-使用人工评估来评估模型性能和/或发现缺陷
+
+    使用人工评估来评估模型性能和/或发现缺陷
 
 +   Use the annotated data to fine-tune the model or update the prompt
-使用带注释的数据微调模型或更新提示
 
-+   Repeat 重复
+    使用带注释的数据微调模型或更新提示
+
++   Repeat
+
+    重复
 
 For example, when auditing LLM-generated summaries for defects we might label each sentence with fine-grained feedback identifying factual inconsistency, irrelevance, or poor style. We can then use these factual inconsistency annotations to train a hallucination classifier or use the relevance annotations to train a reward model to score on relevance. As another example, LinkedIn shared about its success with using model-based evaluators to estimate hallucinations, responsible AI violations, coherence, etc. in its write-up.
 
@@ -1233,7 +1231,7 @@ By creating assets that compound their value over time, we upgrade building eval
 
 通过创建随着时间的推移而增值的资产，我们将建筑评估从纯粹的运营支出升级为战略投资，并在此过程中构建我们的数据飞轮。
 
-### **The high-level trend o****f low-cost** cognition 低成本认知的高级趋势
+### The high-level trend of low-cost cognition 低成本认知的高级趋势
 
 In 1971, the researchers at Xerox PARC predicted the future: the world of networked personal computers that we are now living in. They helped birth that future by playing pivotal roles in the invention of the technologies that made it possible, from Ethernet and graphics rendering to the mouse and the window.
 
@@ -1255,13 +1253,15 @@ In the four years since the launch of OpenAI’s davinci model as an API, the co
 
 自 OpenAI 的达芬奇模型作为 API 推出以来的四年里，在 100 万个代币（约一百份本文档）规模的任务上运行具有同等性能的模型的成本已从 20 美元降至不到10 美分——减半时间仅需六个月。同样，截至 2024 年 5 月，通过 API 提供商或自行运行 Meta 的 LLama 3 8B 的成本仅为每百万代币 20 美分，并且它具有与 OpenAI 的 text-davinci-003 类似的性能，该模型使 ChatGPT 震惊世界。该模型在 2023 年 11 月下旬发布时，每百万代币的成本约为 20 美元。在短短 18 个月内，这个价格就上涨了两个数量级——摩尔定律预测的时间范围仅为翻倍。
 
-Now, let’s consider an application of LLMs that is v[ery useful](https://arxiv.org/abs/2304.03442) (powering generative video game [char](https://arxiv.org/abs/2310.02172)acters, à la Park et al.) but is not yet economical. (Their cost was estimated at $625 per hour here.) Since that paper was published in August 2023, the cost has dropped roughly one order of magnitude, to $62.50 per hour. We might expect it to drop to $6.25 per hour in another nine months.
+Now, let’s consider an application of LLMs that is [very useful](https://arxiv.org/abs/2304.03442) (powering generative video game [characters](https://arxiv.org/abs/2310.02172), à la Park et al.) but is not yet economical. (Their cost was estimated at $625 per hour here.) Since that paper was published in August 2023, the cost has dropped roughly one order of magnitude, to $62.50 per hour. We might expect it to drop to $6.25 per hour in another nine months.
 
 现在，让我们考虑 LLMs 的一个应用程序，它非常有用（为生成视频游戏角色提供动力，à la Park 等人），但还不经济。 （这里的成本估计为每小时 625 美元。）自该论文于 2023 年 8 月发表以来，成本下降了大约一个数量级，达到每小时 62.50 美元。我们预计在接下来的 9 个月内它会降至每小时 6.25 美元。
 
 Meanwhile, when Pac-Man was released in 1980, $1 of today’s money would buy you a credit, good to play for a few minutes or tens of minutes—call it six games per hour, or $6 per hour. This napkin math suggests that a compelling LLM-enhanced gaming experience will become economical some time in 2025.
 
 与此同时，当《吃豆人》于 1980 年发布时，今天的 1 美元就可以给你买一个积分，可以玩几分钟或几十分钟——称之为每小时 6 场游戏，或每小时 6 美元。这个餐巾纸数学表明，引人注目的LLM增强游戏体验将在 2025 年的某个时候变得经济实惠。
+
+
 
 These trends are new, only a few years old. But there is little reason to expect this process to slow down in the next few years. Even as we perhaps use up low-hanging fruit in algorithms and datasets, like scaling past the “Chinchilla ratio” of ~20 tokens per parameter, deeper innovations and investments inside the data center and at the silicon layer promise to pick up slack.
 
@@ -1289,7 +1289,7 @@ Across different parts of industry and academia, we have keenly observed the ups
 
 在工业界和学术界的不同领域，我们敏锐地观察到了过去一年的起起落落：LLM应用程序的 N 年 1。我们希望我们学到的经验教训——从建立团队的严格运营技术等策略到内部构建哪些能力等战略视角——在第二年及以后对您有所帮助，因为我们都在这项令人兴奋的新技术的基础上共同构建。
 
-# About the authors 关于作者
+## About the authors 关于作者
 
 **Eugene Yan** designs, builds, and operates machine learning systems that serve customers at scale. He’s currently a Senior Applied Scientist at Amazon where he builds RecSys for m[illions world](https://eugeneyan.com/)wide [and applies LL](https://applyingml.com/)Ms to serve customers better. Previously, he led machine learning at Lazada (acquired by Alibaba) and a Healthtech Series A. He writes & speaks about ML, RecSys, LLMs, and engineering at eugeneyan.com and ApplyingML.com.
 

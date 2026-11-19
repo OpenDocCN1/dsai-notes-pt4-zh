@@ -1,8 +1,9 @@
-# 2023-08-04Jupyter推出免费AI助手，不只会写代码，多种大模型都能调用-今日头条
+
+# 2023-08-04 Jupyter推出免费AI助手，不只会写代码，多种大模型都能调用-今日头条
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Wqqvdw5kbonALVxNa18cUYJenQh](https://xuqiwei1986.feishu.cn/docx/Wqqvdw5kbonALVxNa18cUYJenQh)
 
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7263392138291937807/?log_from=679f0dc123385_1691147329559).com/article/726...
+> 🔗 原文链接：h[ttps://www.toutiao](https://www.toutiao.com/article/7263392138291937807/?log_from=679f0dc123385_1691147329559).com/article/726...
 
 > Jupyter推出免费AI助手，不只会写代码，多种大模型都能调用
 
@@ -22,15 +23,15 @@
 
 这个叫做Jupyter AI的编程神器是用LangChain打造的。
 
-**相比于VSCode**里的Copilot，Jupyter AI 支持的大模型更多 。
+相比于VSCode里的Copilot，Jupyter AI 支持的大模型更多。
 
 除了我们耳熟能详的ChatGPT和Claude之外，还有来自AWS、Cohere等厂商的模型。
 
-甚至只要有API，HuggingFac**e上的模块它都**能调用，这意味着它的作用 不仅仅是编程 。
+只要有API，HuggingFace上的模块它都能调用，这意味着它的作用 不仅仅是编程。
 
 ![](img/b5bb04e37dcb60d8bd1b44824257790d.png)
 
-**此外，Ju**py**ter AI的配置也更**为简便，而且 无需排队 、 支持中文prompt 。
+此外，Jupyter AI的配置也更为简便，而且 无需排队 、 支持中文prompt。
 
 支持的程序也不只是Jupyter自己，只要环境支持notebook或IPython就可以用，VSCode也包括在内。
 
@@ -40,29 +41,29 @@
 
 我们进行了第一手实测，快来看看结果如何！
 
-# 会写又会跑，还能debug
+## 会写又会跑，还能debug
 
 安装好带AI插件的Jupyter Lab并打开之后，新建一个笔记文件。
 
-然后输入「%load_ext jupyter_ai」对插件进行加载。
+然后输入`%load_ext jupyter_ai`对插件进行加载。
 
 之后是对API key进行配置，以ChatGPT为例，使用的命令是：
 
-> %env OPENAI_API_KEY=（填入OpenAI的API key）
+> `%env OPENAI_API_KEY=（填入OpenAI的API key）`
 
 其他大模型的配置方法也都相似。
 
 完成这些配置之后，就可以上手写代码了，输入内容的格式如下：
 
-> %%ai 模型名称 --format=(code/math/html/image…)
+> `%%ai 模型名称 --format=(code/math/html/image…)`
 
 > 要完成的任务
 
-其中任务用中文描述就可以，format参数也可以不输入。
+其中任务用中文描述就可以，`format`参数也可以不输入。
 
 我们从算法、Python绘图以及小游戏三个方面对Jupyter AI进行了测试。
 
-先来看算法，这里我们直接上难度，来一道困难级别的Leetcode题。
+先来看算法，这里我们直接上难度，来一道困难级别的LeetCode题。
 
 LeetCode平台上，这道题的通过率为30.7%。
 
@@ -92,7 +93,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 结果我们得到了一段调用海龟仓库进行绘图的代码。
 
-**这里就要提到这款插件的另一**个特性—— 生成好的代码可以直接运行 。
+这里就要提到这款插件的另一个特性—— 生成好的代码可以直接运行。
 
 ![](img/c428c83732bfea2a2672ba6fe0b17950.png)
 
@@ -104,7 +105,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 在这个区间之内的确没毛病，不过没能完整展示函数的单调性。
 
-没关系，我们可以 **对AI给出的代码进行手工调整 **，改变一下取值范围。
+没关系，我们可以对AI给出的代码进行手工调整，改变一下取值范围。
 
 ![](img/65e3fc9ac3ad5711ee855f18c42e1124.png)
 
@@ -116,7 +117,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 ![](img/9699021acfa3cf13394bbf03a5c8d291.png)
 
-**不过，这里我们**还想展示一下它的 多轮对话能力 。
+不过，这里我们还想展示一下它的多轮对话能力。
 
 比如，这个蓝色看起来不好看，我们想给它换个颜色。
 
@@ -142,7 +143,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 ![](img/71f12ece59d033347ba1c135cd8c993e.png)
 
-我们看到，or改成and的原因没有进行解释，不过没关系，我们可以进行追问。
+我们看到，`or`改成`and`的原因没有进行解释，不过没关系，我们可以进行追问。
 
 结果得到了更为详细的解释：
 
@@ -152,13 +153,13 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 但它会的，不只是编程。
 
-# 不只是编程
+## 不只是编程
 
 除了和Python程序相关的功能之外，这款AI插件还可以生成LaTex公式、SVG图形、网页等内容。
 
 首先来看公式，我们想让它生成一下麦克斯韦方程组。
 
-只要把format的参数改成math，结果就会以LaTex排版之后的格式输出。
+只要把`format`的参数改成`math`，结果就会以LaTex排版之后的格式输出。
 
 ![](img/1b871622d3c503fcdee5afb07210a41e.png)
 
@@ -168,7 +169,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 简单的网页，这个插件也能做得出来。
 
-我们让它生成一个时钟页面，这里需要把format改成html。
+我们让它生成一个时钟页面，这里需要把`format`改成`html`。
 
 ![](img/1848e4af310a1e1872b8a990516791be.png)
 
@@ -188,7 +189,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 不过由于没有HuggingFace的API，这里我们只能展示一下官方给出的DEMO：
 
-这里似乎需要把format设为image。
+这里似乎需要把`format`设为`image`。
 
 ![](img/3f13b4cf1e058747c7590c57ae06081e.png)
 
@@ -200,7 +201,7 @@ LeetCode平台上，这道题的通过率为30.7%。
 
 ![](img/e26bfbe9c5dd18ec7c72732866bd099b.png)
 
-还不赶快上手体验一下？ (GitHub页面有安装教程)
+还不赶快上手体验一下？（GitHub页面有安装教程）
 
 GitHub页面：
 

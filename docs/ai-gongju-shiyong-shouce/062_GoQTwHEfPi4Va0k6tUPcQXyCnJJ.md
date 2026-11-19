@@ -1,3 +1,4 @@
+
 # 1分钟出一篇文章👍
 
 > 来源：[https://my.feishu.cn/docx/JlpGdTwrPo9KsjxRoRyc0fvunad](https://my.feishu.cn/docx/JlpGdTwrPo9KsjxRoRyc0fvunad)
@@ -34,7 +35,7 @@ AI容易胡说的通病，这个工具也有。
 
 ### 使用教程（1分钟文章速写）
 
-工具叫  [秘塔写作猫](https://xiezuocat.com/)  官网： https://xiezuocat.com/
+工具叫[秘塔写作猫](https://xiezuocat.com/)，官网：`https://xiezuocat.com/`
 
 如图，新建文档→写个标题→生成大纲→生成内容，完成了，1分钟都不用🤣
 
@@ -46,11 +47,9 @@ AI容易胡说的通病，这个工具也有。
 
 ![](img/6887487308378c45b76571812d831a2c.png)
 
-真の是点一下出内容
+真の是点一下出内容，啥都能写，打工人的福报💖！！！
 
-啥都能写，打工人的福报💖！！！
-
-（作为过来人的提醒：大家用AI**提高工作效**率后，多的时间可以学习更多新知识，别急着交稿
+（作为过来人的提醒：大家用AI**提高工作效率**后，多的时间可以学习更多新知识，别急着交稿
 
 周报、年终总结、广告、翻译、改写、续写……大家去摸索一下
 
@@ -60,7 +59,7 @@ AI容易胡说的通病，这个工具也有。
 
 ![](img/2ecf0340b6d0d3848fdf28c59ef4bfda.png)
 
-**工具太多了大家自行**体验吧，然后我再说说刚体验完感觉还不错的📕种草文案🎁
+**工具太多了大家自行体验吧**，然后我再说说刚体验完感觉还不错的📕种草文案🎁
 
 文案搞定之后，咱们再用AI绘图和AI海报生成🤞就能直接用了。
 
@@ -74,15 +73,13 @@ AI海报：[让普通人成为设计师的 海报PPT制作神器！](https://yw5
 
 #### 1、准备文案素材
 
-因为保密协议，我不鞥拿自家产品，咱们就随便选个市面上的产品吧做示范吧；
-
-先让牛马工具人Claude😂帮我生成了小棕瓶的一些简单关键词用来测试
+因为保密协议，我不鞥拿自家产品，咱们就随便选个市面上的产品吧做示范吧；先让牛马工具人Claude😂帮我生成了小棕瓶的一些简单关键词用来测试
 
 Claude使用教程[最强Ai工具💥免费用！不需要魔法！（Slack-Claude使用教程）](https://yw55ojhusnq.feishu.cn/wiki/FvzywPunCiLpKekRD6QcBp4rnsd?from=from_copylink)
 
 👉大家可以根据实际情况给自家产品作一下卖点、特点提炼！
 
-prompt“简单介绍下雅诗兰黛品牌的小棕瓶精华，用关键词语介绍，不需要连续的句子。”
+prompt：`简单介绍下雅诗兰黛品牌的小棕瓶精华，用关键词语介绍，不需要连续的句子。`
 
 ![](img/c60591cf242f0302bfa00b1804ddbfc9.png)
 
@@ -90,7 +87,7 @@ prompt“简单介绍下雅诗兰黛品牌的小棕瓶精华，用关键词语�
 
 网上随便找了一张图，然后用蘑菇ai工具做了一些场景图片
 
-[模特图、产品图一键制作](https://yw55ojhusnq.feishu.cn/wiki/HDGywx9J6iAOjikf2a8cZEvlnYd?from=from_copylink)   工具的具体使用方法，大家自己看这篇教程：
+[模特图、产品图一键制作](https://yw55ojhusnq.feishu.cn/wiki/HDGywx9J6iAOjikf2a8cZEvlnYd?from=from_copylink)工具的具体使用方法，大家自己看这篇教程：
 
 准备好的素材图如下👇
 
@@ -98,10 +95,9 @@ prompt“简单介绍下雅诗兰黛品牌的小棕瓶精华，用关键词语�
 
 #### 3、制作模板
 
-进入官网：https://xiezuocat.com/
+进入官网：`https://xiezuocat.com/`
 
 先注册登录，然后如图示进行选择，
-
 
 首页
 

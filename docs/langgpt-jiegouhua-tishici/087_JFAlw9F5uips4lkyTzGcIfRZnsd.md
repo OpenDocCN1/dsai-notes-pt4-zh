@@ -1,10 +1,11 @@
+
 # Gif 制作工作流
 
 > 来源：[https://langgptai.feishu.cn/docx/GD4HdnAhJozB2Sx6bXpcjrX5nXc](https://langgptai.feishu.cn/docx/GD4HdnAhJozB2Sx6bXpcjrX5nXc)
 
 用于 GPT-4o
 
-> 来自 @大鞠  [GIF flow](https://cvvy65wh9yv.feishu.cn/docx/F5SddNDTto3iQUxZBuJc8DQunFb?from=from_copylink)
+> 来自 @大鞠 [GIF flow](https://cvvy65wh9yv.feishu.cn/docx/F5SddNDTto3iQUxZBuJc8DQunFb?from=from_copylink)
 
 ```
 基于这个IP形象帮我生成一张“xxxx”[风格的表情包

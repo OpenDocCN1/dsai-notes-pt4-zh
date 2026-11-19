@@ -1,3 +1,4 @@
+
 # 掘金AI研习社
 
 > 来源：[https://agijuejin.feishu.cn/docx/GztFdOWybo59jYxGHcacLCsfnAf](https://agijuejin.feishu.cn/docx/GztFdOWybo59jYxGHcacLCsfnAf)
@@ -6,7 +7,7 @@
 
 > #每个人都有一个自己的AI Agent才是未来 💪
 
-# **最新课程预告**
+## 最新课程预告
 
 ⏰ 时间：2024.09 时间待定
 
@@ -16,29 +17,23 @@
 
 **📄 QA提前填：敬请期待**
 
----
-
-# 📪 课程意见箱
+## 📪 课程意见箱
 
 <https://bytedance.larkoffice.com/share/base/form/shrcn5HjoXkcRqsjZXyWUu69PZx?iframeFrom=docx&ccm_open=iframe>
 
-# 🧑‍🏫讲师招募
+## 🧑‍🏫讲师招募
 
 > HI，我们不仅欢迎学习者，也欢迎课程讲师踊跃报名。
 
 > 如果你想：
 
-+   提升你的个人影响力
++ 提升你的个人影响力  
++ 锻炼自己的口才  
++ 参与我们的研习社共建  
 
-+   锻炼自己的口才
+投递链接🔗：`https://bytedance.larkoffice.com/share/base/form/shrcnpwd3jSicFAMUt5jVlWQ9Bf`
 
-+   参与我们的研习社共建
-
-**投递链接🔗：h****ttps://bytedance.larkoffice.com/shar**e/base/form/shrcnpwd3jSicFAMUt5jVlWQ9Bf
-
----
-
-# ❤️可爱的老师们
+## ❤️可爱的老师们
 
 **安仔**
 

@@ -1,22 +1,23 @@
+
 # 奇绩大模型日报（10月 16日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/CSoIdq4C1oxTK8xOD2cc7pn5nCd](https://miracleplus.feishu.cn/docx/CSoIdq4C1oxTK8xOD2cc7pn5nCd)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-#### 潜空间系列活动重磅回归！
+### 潜空间系列活动重磅回归！
 
-> 本期活动将在**10月20日** **10:00**开始，我们邀请到的嘉宾是**袁进辉**，硅基流动（SiliconFlow）创始人兼CEO，曾任微软亚洲研究院主管研究员，获得微软亚洲研究院院长特别奖。硅基流动目前专注于 AI Infra 领域，解决大模型训练与推理的效率问题，降低 AI 应用开发的门槛与成本。在本次分享中袁进辉将带来《AI Infra 创业10年得与失》的分享。
+本期活动将在 10月20日 10:00 开始，我们邀请到的嘉宾是袁进辉，硅基流动（SiliconFlow）创始人兼CEO，曾任微软亚洲研究院主管研究员，获得微软亚洲研究院院长特别奖。硅基流动目前专注于 AI Infra 领域，解决大模型训练与推理的效率问题，降低 AI 应用开发的门槛与成本。在本次分享中袁进辉将带来《AI Infra 创业10年得与失》的分享。
 
-> 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
+除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
 
-> 报名通道已开启，欢迎扫描下方二维码报名。
+报名通道已开启，欢迎扫描下方二维码报名。
 
 ![](img/37ef908310e87244a47c252ce74d06be.png)
 
-# 资讯
+## 资讯
 
-### **联想创新科技大会2024**
+### 联想创新科技大会2024
 
 https://mp.weixin.qq.com/s/H-gj_TMpnDA-y3pGEp4IVA
 
@@ -72,7 +73,7 @@ https://mp.weixin.qq.com/s/ISmjI87bB529sEFz7feLMg
 
 ![](img/46261466ec2a8cc1c70dd812f36de5c7.png)
 
-### **前Palantir首席信息安全官Dane S**tuckey加盟OpenAI领导安全团队
+### 前Palantir首席信息安全官Dane Stuckey加盟OpenAI领导安全团队
 
 https://techcrunch.com/2024/10/15/former-palantir-ciso-dane-stuckey-joins-openai-to-lead-security/
 
@@ -80,7 +81,7 @@ https://techcrunch.com/2024/10/15/former-palantir-ciso-dane-stuckey-joins-openai
 
 ![](img/6ec427d1f5438403bd673b1694bdc1f0.png)
 
-# 推特
+## 推特
 
 ### 全球首个AI营销团队：将您的简要转化为500个独特的营销视觉效果
 
@@ -176,7 +177,7 @@ https://x.com/pika_labs/status/1846295401491845213
 
 [ssstwitter.com_1729054159875.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XHZhbegtko582KxRpEscWgWxn6g)
 
-# 信号
+## 信号
 
 ### Tackling the Abstraction and Reasoning Corpus with Vision Transformers: the Importance of 2D Representation, Positions, and Objects
 
@@ -222,7 +223,7 @@ LLMs 通常经过训练，可以回答用户问题或遵循说明，类似于人
 
 ![](img/08bc30665ab21d088aa9e18f934fbcbb.png)
 
-# 产品
+## 产品
 
 ### Headshot Photo
 
@@ -234,7 +235,7 @@ headshotphoto.io 是一个在线服务平台，允许用户将日常自拍转换
 
 ![](img/93d33eaf9ce5f06af1780c1a367feb92.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Animate-X
 
@@ -242,63 +243,67 @@ headshotphoto.io 是一个在线服务平台，允许用户将日常自拍转换
 
 https://lucaria-academy.github.io/Animate-X/
 
-**Animate-X** 是一种基于潜在扩散模型的通用动画框架，可以为各种角色（包括拟人角色）生成高质量视频。通过引入姿势指示器，该框架能够全面捕捉运动模式，增强运动表示的能力，并通过新创建的动画拟人基准评估性能。实验结果表明，Animate-X 在动画生成方面优于现有方法。
+
+
+## Animate-X
+
+`Animate-X` 是一种基于潜在扩散模型的通用动画框架，可以为各种角色（包括拟人角色）生成高质量视频。通过引入姿势指示器，该框架能够全面捕捉运动模式，增强运动表示的能力，并通过新创建的动画拟人基准评估性能。实验结果表明，`Animate-X` 在动画生成方面优于现有方法。
 
 ![](img/156cc246fe96958bdaf7fba4e44867ea.png)
 
 ![](img/6bdd6d632ee4e2d031eb91f2cc1951b7.png)
 
-[c9549a82ff891ee7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VgN1brrFqopxfAxqzIJcWpfanTg)
+[`c9549a82ff891ee7.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VgN1brrFqopxfAxqzIJcWpfanTg)
 
-### IterComp
+## IterComp
 
 贡献人：
 
 https://huggingface.co/comin/IterComp
 
-**IterComp** 是一种先进的文本到图像生成方法，基于 SDXL Base 1.0 进行训练，利用迭代组合感知反馈学习。它可以作为多种生成方法的基础，推荐与 RPG 和 Omost 集成以提升生成效果。
+`IterComp` 是一种先进的文本到图像生成方法，基于 `SDXL Base 1.0` 进行训练，利用迭代组合感知反馈学习。它可以作为多种生成方法的基础，推荐与 `RPG` 和 `Omost` 集成以提升生成效果。
 
 ![](img/cfc5cd2e91801935dfa658a66d9af719.png)
 
 # 投融资
 
-### Xscape Photonics获巨额融资推动多色激光技术发展
+## Xscape Photonics获巨额融资推动多色激光技术发展
 
 贡献人：
 
 https://techcrunch.com/2024/10/15/xscape-is-building-multicolor-lasers-for-datacenters/
 
-Xscape Photonics是一家专注于通过硅光子技术提高数据中心内芯片间连接带宽的初创公司。该公司最近完成了4400万美元的A轮融资，使得其总融资额达到了5700万美元。本轮融资由IAG Capital Partners领投，Cisco Investments、NVIDIA等公司参与投资，显示出市场对Xscape Photonics技术的高度认可和期待。
+Xscape Photonics 是一家专注于通过硅光子技术提高数据中心内芯片间连接带宽的初创公司。该公司最近完成了 4400 万美元的 A 轮融资，使得其总融资额达到了 5700 万美元。本轮融资由 IAG Capital Partners 领投，Cisco Investments、NVIDIA 等公司参与投资，显示出市场对 Xscape Photonics 技术的高度认可和期待。
 
-Xscape Photonics的技术核心在于使用多色激光来实现数据中心内芯片间的高带宽连接。与传统的金属线连接相比，这种基于光的技术能够显著减少能耗和热量产生，同时提高数据传输速度。公司的第一个产品是一种可编程激光器，它能够利用不同颜色的光（即波长）在同一链接上传输多个数据流，而不会产生干扰。
+Xscape Photonics 的技术核心在于使用多色激光来实现数据中心内芯片间的高带宽连接。与传统的金属线连接相比，这种基于光的技术能够显著减少能耗和热量产生，同时提高数据传输速度。公司的第一个产品是一种可编程激光器，它能够利用不同颜色的光（即波长）在同一链接上传输多个数据流，而不会产生干扰。
 
-Xscape Photonics的团队由来自哥伦比亚大学的教授和光子学领域的世界领先研究人员组成，他们在硅光子学和光子频率梳技术方面拥有深厚的背景和丰富的经验。公司的技术起源于哥伦比亚大学的一个实验室，三位教授发明了一种他们认为可以用来通过光传输大量数据的技术。
+Xscape Photonics 的团队由来自哥伦比亚大学的教授和光子学领域的世界领先研究人员组成，他们在硅光子学和光子频率梳技术方面拥有深厚的背景和丰富的经验。公司的技术起源于哥伦比亚大学的一个实验室，三位教授发明了一种他们认为可以用来通过光传输大量数据的技术。
 
-此次融资将为Xscape Photonics提供资金支持，以扩大其24人团队，并增加其激光器及相关光子技术的制造规模。公司目前已经与10家客户积极接洽，探讨潜在的部署合作，这些客户包括供应商和超大规模计算公司。此外，Xscape Photonics的激光器可以利用现有的微电子制造设施进行生产，这可能成为其在光子学领域竞争对手如Ayar Labs和Celestial AI的一个优势。
+此次融资将为 Xscape Photonics 提供资金支持，以扩大其 24 人团队，并增加其激光器及相关光子技术的制造规模。公司目前已经与 10 家客户积极接洽，探讨潜在的部署合作，这些客户包括供应商和超大规模计算公司。此外，Xscape Photonics 的激光器可以利用现有的微电子制造设施进行生产，这可能成为其在光子学领域竞争对手如 Ayar Labs 和 Celestial AI 的一个优势。
 
-总的来说，Xscape Photonics的融资成功和技术创新，不仅为其自身的发展提供了动力，也为数据中心和高性能计算领域的进步带来了新的可能。随着数据中心对高带宽连接需求的不断增长，Xscape Photonics的多色激光技术有望在未来发挥重要作用。
+总的来说，Xscape Photonics 的融资成功和技术创新，不仅为其自身的发展提供了动力，也为数据中心和高性能计算领域的进步带来了新的可能。随着数据中心对高带宽连接需求的不断增长，Xscape Photonics 的多色激光技术有望在未来发挥重要作用。
 
 公司官网：https://www.xscapephotonics.com/
 
 ![](img/795f58e2c4db455eb70fc0e83dee884c.png)
 
-### Amplitude收购Command AI以增强应用交互产品
+## Amplitude收购Command AI以增强应用交互产品
 
 https://techcrunch.com/2024/10/15/amplitude-buys-command-ai-to-bolster-its-app-engagement-offerings/
 
-数字分析软件公司Amplitude宣布收购应用用户参与初创公司Command AI，以提升其产品的应用内交互能力。Command AI的技术将使Amplitude能够提供个性化的用户帮助，如产品内导览和入职体验等。Command AI团队的大部分成员将加入Amplitude，但交易的具体条款未披露。据消息人士透露，交易价值可能超过4500万美元。
+数字分析软件公司 Amplitude 宣布收购应用用户参与初创公司 Command AI，以提升其产品的应用内交互能力。Command AI 的技术将使 Amplitude 能够提供个性化的用户帮助，如产品内导览和入职体验等。Command AI 团队的大部分成员将加入 Amplitude，但交易的具体条款未披露。据消息人士透露，交易价值可能超过 4500 万美元。
 
-Command AI由James Evans、Richard Freling和Vinay Ayyala于2021年创立，旨在帮助开发者轻松集成搜索功能到Web应用程序中。该公司的产品包括应用内搜索栏、聊天机器人和AI协同浏览等，已获得包括Insight Partners在内的投资者2380万美元的资金支持。
+Command AI 由 James Evans、Richard Freling 和 Vinay Ayyala 于 2021 年创立，旨在帮助开发者轻松集成搜索功能到 `Web` 应用程序中。该公司的产品包括应用内搜索栏、聊天机器人和 AI 协同浏览等，已获得包括 Insight Partners 在内的投资者 2380 万美元的资金支持。
 
-Amplitude计划在明年年初推出基于Command AI技术的新产品，包括清单和指南工具，以及允许客户在应用程序中设置智能触发器的功能。此次收购是Amplitude自十年前成立以来的第三次收购，前两次分别是对预测分析公司ClearBrain和数据管道公司Iteratively的收购。
+Amplitude 计划在明年年初推出基于 Command AI 技术的新产品，包括清单和指南工具，以及允许客户在应用程序中设置智能触发器的功能。此次收购是 Amplitude 自十年前成立以来的第三次收购，前两次分别是对预测分析公司 ClearBrain 和数据管道公司 Iteratively 的收购。
 
-Amplitude目前拥有2,700多名付费客户，包括财富100强中的26家公司。Command AI的联合创始人James Evans和Vinay Ayyala将分别担任Amplitude的产品总监和工程总监，并监督新Command AI产品组织的运营，直至平台整合完成。
+Amplitude 目前拥有 2,700 多名付费客户，包括财富 100 强中的 26 家公司。Command AI 的联合创始人 James Evans 和 Vinay Ayyala 将分别担任 Amplitude 的产品总监和工程总监，并监督新 Command AI 产品组织的运营，直至平台整合完成。
 
 公司官网：https://www.command.ai/
 
 ![](img/74fed3164d056b7c1c8ea848bad9b8b3.png)
 
-### OutRival 获资金支持以构建 AI 代理服务
+## OutRival 获资金支持以构建 AI 代理服务
 
 https://techcrunch.com/2024/10/15/career-karma-founders-launch-outrival-to-help-companies-build-ai-agents/
 
@@ -308,33 +313,33 @@ OutRival 是一家由 Career Karma 创始人 Ruben Harris 和 Timur Meyster 推�
 
 ![](img/66320207a851525913c544a0e54dca61.png)
 
-### Concourse公司获投470万美元开发AI财务自动化平台
+## Concourse公司获投470万美元开发AI财务自动化平台
 
 https://techcrunch.com/2024/10/15/concourse-is-building-ai-to-automate-financial-tasks/
 
-Concourse是一家致力于开发财务自动化工具的初创公司，近日宣布完成了由Andreessen Horowitz（a16z）领投的470万美元种子轮融资。投资方还包括Y Combinator、CRV和BoxGroup等知名机构。这笔资金将用于产品研发、团队扩展以及市场推广。
+Concourse 是一家致力于开发财务自动化工具的初创公司，近日宣布完成了由 Andreessen Horowitz（`a16z`）领投的 470 万美元种子轮融资。投资方还包括 Y Combinator、CRV 和 BoxGroup 等知名机构。这笔资金将用于产品研发、团队扩展以及市场推广。
 
-Concourse由前Andreessen Horowitz的投资人Matthieu Hafemeister与Ted Michaels共同创立，旨在通过AI技术自动化处理复杂的财务任务，如数据提取、分析和报告生成。该平台已经吸引了包括Instabase和Shef在内的多家客户，目前还处于测试阶段，计划于明年正式推出。
+Concourse 由前 Andreessen Horowitz 的投资人 Matthieu Hafemeister 与 Ted Michaels 共同创立，旨在通过 `AI` 技术自动化处理复杂的财务任务，如数据提取、分析和报告生成。该平台已经吸引了包括 Instabase 和 Shef 在内的多家客户，目前还处于测试阶段，计划于明年正式推出。
 
-Hafemeister表示，此次融资将主要用于扩大工程团队，特别是后台、机器学习和AI领域的招聘，以进一步完善数据集成和工作流功能。他们的目标是为财务团队提供一体化的自动化解决方案，减少繁琐的手动工作，提高财务分析的准确性和效率。
+Hafemeister 表示，此次融资将主要用于扩大工程团队，特别是后台、机器学习和 `AI` 领域的招聘，以进一步完善数据集成和工作流功能。他们的目标是为财务团队提供一体化的自动化解决方案，减少繁琐的手动工作，提高财务分析的准确性和效率。
 
-Concourse的愿景是在财务领域通过AI实现多步骤、复杂操作的完全自动化，这在当前依赖Excel等传统工具的财务部门中将带来显著提升。
+Concourse 的愿景是在财务领域通过 `AI` 实现多步骤、复杂操作的完全自动化，这在当前依赖 `Excel` 等传统工具的财务部门中将带来显著提升。
 
 公司官网：https://www.concourse.co/
 
 ![](img/48de7a82e73c06114067161b4c2167c3.png)
 
-### Gladia公司完成1600万美元A轮融资，专注实时音频转录API
+## Gladia公司完成1600万美元A轮融资，专注实时音频转录API
 
 https://techcrunch.com/2024/10/15/gladia-believes-real-time-processing-is-the-next-frontier-of-audio-transcription-apis/
 
-法国初创公司Gladia专注于提供高效的语音识别API，最近完成了1600万美元的A轮融资，由XAnge领投，其他投资方包括Illuminate Financial、XTX Ventures、Athletico Ventures等。这笔资金将用于推动实时音频处理技术的发展，并进一步提升其语音转录服务的质量和速度。
+法国初创公司 Gladia 专注于提供高效的语音识别 `API`，最近完成了 1600 万美元的 A 轮融资，由 XAnge 领投，其他投资方包括 Illuminate Financial、XTX Ventures、Athletico Ventures 等。这笔资金将用于推动实时音频处理技术的发展，并进一步提升其语音转录服务的质量和速度。
 
-Gladia的API能够将音频文件快速准确地转换为文本，支持100种语言和多种口音，解决了多个发音问题。与市场上的大公司（如亚马逊、微软、谷歌）相比，Gladia凭借更精确的模型脱颖而出，并得到了包括Attention、Circleback、Method Financial等在内的600多家客户的认可。
+Gladia 的 `API` 能够将音频文件快速准确地转换为文本，支持 100 种语言和多种口音，解决了多个发音问题。与市场上的大公司（如亚马逊、微软、谷歌）相比，Gladia 凭借更精确的模型脱颖而出，并得到了包括 Attention、Circleback、Method Financial 等在内的 600 多家客户的认可。
 
-此次融资将帮助Gladia进一步简化语音到文本再到AI模型处理的工作流程，目标是将实时处理的延迟控制在300毫秒以内，并达到批处理的质量标准。这种实时转录技术有望在呼叫中心、AI通话代理等领域带来变革，为用户提供更流畅的体验。
+此次融资将帮助 Gladia 进一步简化语音到文本再到 `AI` 模型处理的工作流程，目标是将实时处理的延迟控制在 300 毫秒以内，并达到批处理的质量标准。这种实时转录技术有望在呼叫中心、`AI` 通话代理等领域带来变革，为用户提供更流畅的体验。
 
-Gladia正在探索“音频应用的ChatGPT时刻”，希望通过简化开发者的集成流程，推动自动化转录在日常应用中的普及。
+Gladia 正在探索“音频应用的 `ChatGPT` 时刻”，希望通过简化开发者的集成流程，推动自动化转录在日常应用中的普及。
 
 公司官网：https://www.gladia.io/
 
@@ -342,103 +347,118 @@ Gladia正在探索“音频应用的ChatGPT时刻”，希望通过简化开发�
 
 # 学习
 
-### 为什么使用Prolog作为中间语言能够改善LLM的推理能力？
+## 为什么使用 `Prolog` 作为中间语言能够改善 `LLM` 的推理能力？
 
 贡献人：
 
 https://www.zhihu.com/question/871015727/answer/5217103303
 
-当前大规模语言模型（LLM）展现出前所未有的推理能力，但其推理效果仍不理想。主要问题在于LLM的工作方式——它们以自回归的方式顺序生成答案，无法使用循环或条件语句。此外，当推理问题超出训练集时，LLM的表现会明显下降。
+当前大规模语言模型（`LLM`）展现出前所未有的推理能力，但其推理效果仍不理想。主要问题在于 `LLM` 的工作方式——它们以自回归的方式顺序生成答案，无法使用循环或条件语句。此外，当推理问题超出训练集时，`LLM` 的表现会明显下降。
 
-为了提高LLM的推理能力，有几种改进方法：一是生成多个答案并从中选择最佳结果；二是使用链式推理（CoT）等特殊提示技术；三是使用编程语言辅助推理。例如，模型可以生成Python代码来解算数学问题，Python在这种情况下充当帮助模型思考的中介语言。最近，开发者开始尝试使用Prolog作为中介语言来增强推理。
+为了提高 `LLM` 的推理能力，有几种改进方法：一是生成多个答案并从中选择最佳结果；二是使用链式推理（`CoT`）等特殊提示技术；三是使用编程语言辅助推理。例如，模型可以生成 `Python` 代码来解算数学问题，`Python` 在这种情况下充当帮助模型思考的中介语言。最近，开发者开始尝试使用 `Prolog` 作为中介语言来增强推理。
 
-Prolog是一种声明式编程语言，适合处理符号推理任务，常用于自然语言处理和定理证明。由于其声明式特性，LLM不需要生成复杂的控制流，生成代码相对简单。基于此，《超越自然语言的可靠推理》论文提出了一种神经符号结合的方法，通过将用户请求转换为Prolog代码并执行，利用链式推理生成代码，并采用多次尝试推理机制，类似于“思维程序”（PoT）方法。
+`Prolog` 是一种声明式编程语言，适合处理符号推理任务，常用于自然语言处理和定理证明。由于其声明式特性，`LLM` 不需要生成复杂的控制流，生成代码相对简单。基于此，《超越自然语言的可靠推理》论文提出了一种神经符号结合的方法，通过将用户请求转换为 `Prolog` 代码并执行，利用链式推理生成代码，并采用多次尝试推理机制，类似于“思维程序”（`PoT`）方法。
 
-此外，Prolog还能通过知识库提供可解释的上下文和事实验证。ProSLM论文进一步探讨了这种方法，利用Prolog的目标查询和反向推理来寻找支持结论的事实。在非线性推理数据集（NLR）上，结合Prolog的GPT-4在数学文字题上的准确率从12.5%提升至100%。在GSM8k数据集上，使用Prolog的GPT-4推理结果提升了3%。
+此外，`Prolog` 还能通过知识库提供可解释的上下文和事实验证。`ProSLM` 论文进一步探讨了这种方法，利用 `Prolog` 的目标查询和反向推理来寻找支持结论的事实。在非线性推理数据集（`NLR`）上，结合 `Prolog` 的 `GPT-4` 在数学文字题上的准确率从 12.5% 提升至 100%。在 `GSM8k` 数据集上，使用 `Prolog` 的 `GPT-4` 推理结果提升了 3%。
 
 ![](img/128ca995a5119e638dc6785f550865ab.png)
 
-### prefill 和 decode 该分离到不同的卡上么？
+## prefill 和 decode 该分离到不同的卡上么？
 
 https://zhuanlan.zhihu.com/p/1280567902
 
-**显存管理和通信开销**：分开 prefill 和 decode 的主要好处在于可以显著减少显存压力，尤其是在处理大模型和长上下文时。将 prefill 阶段的激活值保留在一张卡上，而 decode 只需使用 prefill 生成的 KV 缓存，避免了不必要的显存占用。然而，跨卡传输 KV cache 会引入一定的通信开销，这是你提到的一个关键点。
+`显存管理和通信开销`：分开 `prefill` 和 `decode` 的主要好处在于可以显著减少显存压力，尤其是在处理大模型和长上下文时。将 `prefill` 阶段的激活值保留在一张卡上，而 `decode` 只需使用 `prefill` 生成的 `KV` 缓存，避免了不必要的显存占用。然而，跨卡传输 `KV cache` 会引入一定的通信开销，这是你提到的一个关键点。
 
-**吞吐量和并行优化**：prefill 和 decode 分离还能提高多卡系统的吞吐量，通过实现更高效的 pipeline parallelism。这样可以加快模型推理速度，但这通常对大规模部署的系统更有意义。
+`吞吐量和并行优化`：`prefill` 和 `decode` 分离还能提高多卡系统的吞吐量，通过实现更高效的 `pipeline parallelism`。这样可以加快模型推理速度，但这通常对大规模部署的系统更有意义。
 
-**实现复杂度**：正如你所提到的，工程实现上的复杂度和通信开销是分离 prefill 和 decode 的一大挑战，尤其是在考虑大规模集群和硬件基础设施时。
+`实现复杂度`：正如你所提到的，工程实现上的复杂度和通信开销是分离 `prefill` 和 `decode` 的一大挑战，尤其是在考虑大规模集群和硬件基础设施时。
 
 ![](img/5582ba5a7c0893cf7bcaa6a376ecc78d.png)
 
-### 目前针对大模型蒸馏的方法有哪些？
+## 目前针对大模型蒸馏的方法有哪些？
 
 https://www.zhihu.com/question/625415893/answer/3604920266
 
-作者NetRookie的文章讨论了在开源大模型Llama 3.1发布后，随着其庞大的参数规模，训练和部署面临巨大资源需求。为了解决这一问题，越来越多的研究者开始关注知识蒸馏技术，通过将大模型的能力迁移到较小的模型上，实现更加高效的推理和应用。本文分析了清华大学的《MiniLLM：大模型的知识蒸馏》和Meta的《Distilling System2 into System1》，分别代表白盒蒸馏和黑盒蒸馏的典型案例。
+作者 `NetRookie` 的文章讨论了在开源大模型 `Llama 3.1` 发布后，随着其庞大的参数规模，训练和部署面临巨大资源需求。为了解决这一问题，越来越多的研究者开始关注知识蒸馏技术，通过将大模型的能力迁移到较小的模型上，实现更加高效的推理和应用。本文分析了清华大学的《`MiniLLM`: 大模型的知识蒸馏》和 `Meta` 的《`Distilling System2 into System1`》，分别代表白盒蒸馏和黑盒蒸馏的典型案例。
 
-MiniLLM采用逆向Kullback-Leibler散度（RKL）最小化作为蒸馏方法。相比于前向KL散度（FKL）的mean-seeking特性，RKL更倾向于mode-seeking，能够更准确地捕捉生成模型中最重要的模式，提升生成质量。文章还讨论了RKL和逆强化学习（Inverse RL）的关系，指出RKL等价于逆强化学习的目标函数，具有更高的泛化性能。
+`MiniLLM` 采用逆向 `Kullback-Leibler` 散度（`RKL`）最小化作为蒸馏方法。相比于前向 `KL` 散度（`FKL`）的 mean-seeking 特性，`RKL` 更倾向于 mode-seeking，能够更准确地捕捉生成模型中最重要的模式，提升生成质量。文章还讨论了 `RKL` 和逆强化学习（`Inverse RL`）的关系，指出 `RKL` 等价于逆强化学习的目标函数，具有更高的泛化性能。
 
-Meta的《Distilling System2 into System1》论文则提出将复杂推理系统（System2）的能力蒸馏到更简单、更高效的推理系统（System1）中，以提升系统1的推理能力。这一蒸馏过程通过数据生成、筛选、微调等步骤完成，实验结果表明，该方法可以在多种任务中有效提升模型性能。
+`Meta` 的《`Distilling System2 into System1`》论文则提出将复杂推理系统（`System2`）的能力蒸馏到更简单、更高效的推理系统（`System1`）中，以提升系统 1 的推理能力。这一蒸馏过程通过数据生成、筛选、微调等步骤完成，实验结果表明，该方法可以在多种任务中有效提升模型性能。
 
 ![](img/ac9567ab066c374e93dc0dce00078b17.png)
 
-### 两种CogVideoX并行推理实践：xDiT与VideoSys的异同比较
+## 两种 `CogVideoX` 并行推理实践：`xDiT` 与 `VideoSys` 的异同比较
 
 https://zhuanlan.zhihu.com/p/1127741819
 
-最近，文生视频技术受到广泛关注，特别是PixelDance和Meta Movie Gen的发布。然而，推理过程中的高计算量和生成延迟成为其广泛部署的障碍。大多数生成模型，包括CogVideoX，采用DiT（Diffusion Transformer）结构，通过多轮迭代生成图像或视频。由于模型参数庞大和视频尺寸的增加，生成效率下降，难以应用于实时场景。
+最近，文生视频技术受到广泛关注，特别是 `PixelDance` 和 `Meta Movie Gen` 的发布。然而，推理过程中的高计算量和生成延迟成为其广泛部署的障碍。大多数生成模型，包括 `CogVideoX`，采用 `DiT`（`Diffusion Transformer`）结构，通过多轮迭代生成图像或视频。由于模型参数庞大和视频尺寸的增加，生成效率下降，难以应用于实时场景。
 
-目前，业界通过多种推理优化方法提升效率，如Ulysses Attention、Ring Attention和CFG并行。Ulysses Attention利用All2All通信处理Q、K、V、O张量，使注意力计算能够并行化；Ring Attention是FlashAttention的分布式版本，通过块状方式结合通信和计算，以环形通信方式加速生成。此外，CogVideoX还采用了Classifier-Free Guidance（CFG）技术提升生成质量。
+目前，业界通过多种推理优化方法提升效率，如 `Ulysses Attention`、`Ring Attention` 和 `CFG` 并行。`Ulysses Attention` 利用 `All2All` 通信处理 `Q`、`K`、`V`、`O` 张量，使注意力计算能够并行化；`Ring Attention` 是 `FlashAttention` 的分布式版本，通过块状方式结合通信和计算，以环形通信方式加速生成。此外，`CogVideoX` 还采用了 `Classifier-Free Guidance`（`CFG`）技术提升生成质量。
 
-在对比了两种优化框架xDiT和VideoSys的性能后发现，xDiT支持Ulysses Attention、Ring Attention和CFG并行，VideoSys则采用独特的PAB（Pyramid Attention Broadcast）技术，通过U形缓存机制提升性能。在性能测试中，xDiT和VideoSys在单卡及Ulysses Attention优化场景下表现相似，但随着并行方式的增加，性能加速效果显著。
+在对比了两种优化框架 `xDiT` 和 `VideoSys` 的性能后发现，`xDiT` 支持 `Ulysses Attention`、`Ring Attention` 和 `CFG` 并行，`VideoSys` 则采用独特的 `PAB`（`Pyramid Attention Broadcast`）技术，通过 U 形缓存机制提升性能。在性能测试中，`xDiT` 和 `VideoSys` 在单卡及 `Ulysses Attention` 优化场景下表现相似，但随着并行方式的增加，性能加速效果显著。
 
 ![](img/d85558eccfdcd517c8fa0c6f9e2818af.png)
 
-### GPU 是如何加速深度学习模型的训练和推理过程的？
+## GPU 是如何加速深度学习模型的训练和推理过程的？
 
 https://mp.weixin.qq.com/s/NQ4NADyssvwHLpoV4Q_f1g
 
-本文由Lucas de Lima Nogueira撰写，深入探讨了为何一行简单的“.to('cuda')”代码能够大幅提升深度学习模型的训练速度，揭示了GPU并行计算背后的技术细节。
+本文由 `Lucas de Lima Nogueira` 撰写，深入探讨了为何一行简单的 `` `.to('cuda')` `` 代码能够大幅提升深度学习模型的训练速度，揭示了 `GPU` 并行计算背后的技术细节。
 
-GPU（图形处理器）最初用于加速图像和图形的渲染，但因其卓越的并行运算能力，迅速成为深度学习领域的重要工具。与CPU设计强调单线程高效处理不同，GPU专注于并行处理，通过多线程同时执行大量运算来提高整体性能。作者用法拉利（CPU）与公交车（GPU）做类比，形象地说明了CPU适合处理单个任务，而GPU则在处理大规模并行任务时具有优势。
+`GPU`（图形处理器）最初用于加速图像和图形的渲染，但因其卓越的并行运算能力，迅速成为深度学习领域的重要工具。与 `CPU` 设计强调单线程高效处理不同，`GPU` 专注于并行处理，通过多线程同时执行大量运算来提高整体性能。作者用法拉利（`CPU`）与公交车（`GPU`）做类比，形象地说明了 `CPU` 适合处理单个任务，而 `GPU` 则在处理大规模并行任务时具有优势。
 
-CUDA编程是实现GPU并行计算的核心技术，它为开发者提供了直接调用GPU硬件资源的能力。在CUDA架构中，host指代CPU，device指代GPU，kernel是运行在GPU上的函数。通过CUDA，开发者可以在GPU上并行执行数百万个线程，大大提高了诸如矩阵加法、乘法等深度学习核心运算的效率。
+`CUDA` 编程是实现 `GPU` 并行计算的核心技术，它为开发者提供了直接调用 `GPU` 硬件资源的能力。在 `CUDA` 架构中，`host` 指代 `CPU`，`device` 指代 `GPU`，`kernel` 是运行在 `GPU` 上的函数。通过 `CUDA`，开发者可以在 `GPU` 上并行执行数百万个线程，大大提高了诸如矩阵加法、乘法等深度学习核心运算的效率。
 
-作者详细介绍了如何利用CUDA编写并行代码，包括向量加法、矩阵运算等示例，并展示了如何通过CUDA编程优化深度学习模型的性能。最后，文章强调了GPU加速的强大潜力，尤其是在处理大规模数据时，GPU表现出显著的性能优势。
+作者详细介绍了如何利用 `CUDA` 编写并行代码，包括向量加法、矩阵运算等示例，并展示了如何通过 `CUDA` 编程优化深度学习模型的性能。最后，文章强调了 `GPU` 加速的强大潜力，尤其是在处理大规模数据时，`GPU` 表现出显著的性能优势。
 
 ![](img/624b950d6173c690263d893ee81ff761.png)
 
-### [**A Visual Guide to Mamba an**](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state)d State Space Models
+## A Visual Guide to `Mamba` and State Space Models
 
-https://substack.com/home/post/p-141228095
+https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state-space-models
+
+
+
+`https://substack.com/home/post/p-141228095`
 
 本文主要介绍了Transformer架构及其在大规模语言模型（LLM）中的应用，同时提出了可能超越Transformer的新架构Mamba，即一种状态空间模型（SSM）。Transformer在处理语言模型时具有训练时并行化优势，但推理过程中由于需要重新计算序列的所有注意力矩阵，推理速度较慢。而传统的循环神经网络（RNN）在推理速度上较快，但容易丢失长期依赖信息。
 
-Mamba提出了一种新的解决方案，通过选择性压缩信息并结合硬件感知的算法来改进SSM的性能。其主要技术贡献包括选择性扫描算法和硬件优化，使其能够并行计算并节省存储空间。Mamba的核心在于动态调整矩阵B和C，使模型根据输入内容有选择地保留信息，从而解决了传统SSM时间不变性的问题。通过引入HiPPO矩阵，Mamba可以有效处理长序列并保留上下文信息。最终，Mamba在训练速度和推理效率上与Transformer竞争，甚至在某些任务上表现优于同等规模的Transformer模型。
+Mamba提出了一种新的解决方案，通过选择性压缩信息并结合硬件感知的算法来改进SSM的性能。其主要技术贡献包括选择性扫描算法和硬件优化，使其能够并行计算并节省存储空间。Mamba的核心在于动态调整矩阵`B`和`C`，使模型根据输入内容有选择地保留信息，从而解决了传统SSM时间不变性的问题。通过引入`HiPPO`矩阵，Mamba可以有效处理长序列并保留上下文信息。最终，Mamba在训练速度和推理效率上与Transformer竞争，甚至在某些任务上表现优于同等规模的Transformer模型。
 
 ![](img/52d61bb0095f1599ea7d7df6dcb1926b.png)
 
-### AimRT从入门到精通（二）：AimRT基础环境安装
+# AimRT从入门到精通（二）：AimRT基础环境安装
 
-https://zhuanlan.zhihu.com/p/929413486
+`https://zhuanlan.zhihu.com/p/929413486`
 
 本文详细介绍了在Ubuntu22.04环境下安装和编译AimRT的过程，并且着重于技术细节。AimRT官方要求的环境包括：Ubuntu22.04，CMake版本不低于3.24，GCC版本不低于11.4。Ubuntu22.04自带GCC 11.4，但CMake需要手动升级。具体步骤如下：
 
-1.  升级CMake
-1.1 下载CMake安装脚本：从CMake官网获取安装包（例如3.29版本）。
-1.2 安装CMake：修改安装包权限后运行安装脚本，将CMake安装到/usr/local目录，跳过许可确认。
-1.3 验证安装：运行cmake --version命令，检查是否安装成功。
+## 1. 升级CMake
 
-1.  编译AimRT
-2.1 拉取代码：通过git clone命令从GitHub仓库获取AimRT源代码。
-2.2 编译：进入AimRT目录后，直接运行build.sh脚本。AimRT使用CMake的FetchContent机制自动管理依赖库的下载与编译，因此无需手动下载依赖。然而，由于默认从GitHub拉取依赖库，在网络较差时可能出现卡顿或下载失败。
+### 1.1 下载CMake安装脚本
+从CMake官网获取安装包（例如3.29版本）。
 
-为解决此问题，可以通过AimRT官方提供的url_cn.bashrc文件，手动将依赖库的下载地址重定向到国内镜像，如Gitee。例如，在编译过程中，指定Boost库的下载链接为Gitee上的版本（boost-1.82.0.tar.xz）。编译时也可以通过build.sh脚本设置是否启用ROS2插件（默认为开启），如果不需要ROS2插件，则可通过设置DAIMRT_BUILD_ROS2_PLUGIN和DAIMRT_BUILD_WITH_ROS2为OFF来关闭相关功能。
+### 1.2 安装CMake
+修改安装包权限后运行安装脚本，将CMake安装到`/usr/local`目录，跳过许可确认。
 
-编译过程中可能遇到一些依赖问题，例如setuptools版本过低。此时可以通过命令pip3 install setuptools==61.0来安装或升级相关依赖。
+### 1.3 验证安装
+运行`cmake --version`命令，检查是否安装成功。
 
-1.  运行示例
-编译完成后，进入build目录，其中列出了所有的示例程序。可以通过运行start_examples_cpp_helloworld.sh脚本来启动HelloWorld示例，确认AimRT环境是否配置正确。如果没有报错，则运行成功，可以使用ctrl-c优雅退出程序。
+## 2. 编译AimRT
+
+### 2.1 拉取代码
+通过`git clone`命令从GitHub仓库获取AimRT源代码。
+
+### 2.2 编译
+进入AimRT目录后，直接运行`build.sh`脚本。AimRT使用CMake的FetchContent机制自动管理依赖库的下载与编译，因此无需手动下载依赖。然而，由于默认从GitHub拉取依赖库，在网络较差时可能出现卡顿或下载失败。
+
+为解决此问题，可以通过AimRT官方提供的`url_cn.bashrc`文件，手动将依赖库的下载地址重定向到国内镜像，如Gitee。例如，在编译过程中，指定Boost库的下载链接为Gitee上的版本（`boost-1.82.0.tar.xz`）。编译时也可以通过`build.sh`脚本设置是否启用ROS2插件（默认为开启），如果不需要ROS2插件，则可通过设置`DAIMRT_BUILD_ROS2_PLUGIN`和`DAIMRT_BUILD_WITH_ROS2`为OFF来关闭相关功能。
+
+编译过程中可能遇到一些依赖问题，例如`setuptools`版本过低。此时可以通过命令`pip3 install setuptools==61.0`来安装或升级相关依赖。
+
+## 3. 运行示例
+
+编译完成后，进入`build`目录，其中列出了所有的示例程序。可以通过运行`start_examples_cpp_helloworld.sh`脚本来启动HelloWorld示例，确认AimRT环境是否配置正确。如果没有报错，则运行成功，可以使用`ctrl-c`优雅退出程序。
 
 ![](img/d25e2882859346838a6df512a5e9baea.png)
 
@@ -448,31 +468,27 @@ https://zhuanlan.zhihu.com/p/929413486
 
 ![](img/c2fb6c5c55daf42050bd30702544ae62.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+- [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+- 行研-GenAI研究岗位-战略分析（偏产品）
+- Web / AI 全栈开发工程师实习生
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+## 火热开放中🚀
 
-##### Web / AI 全栈开发工程师实习生
+- 行研-GenAI研究岗位-前沿学术探索
+- 行研-GenAI研究岗位-战略分析（偏咨询）
+- 创新活动产品运营 （大模型系列活动产品运营）
 
-## **火热开放中🚀**
-
-##### 行研-GenAI研究岗位-前沿学术探索
-
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
-
-##### 创新活动产品运营 （大模型系列活动产品运营）
-
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/03fab488e85478d309ffa34e0ac908ae.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
@@ -480,9 +496,7 @@ https://zhuanlan.zhihu.com/p/929413486
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
-（欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
+欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
 
@@ -492,11 +506,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

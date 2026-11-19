@@ -1,3 +1,4 @@
+
 # 2024 年必备的 9 款 AI PPT 生成工具
 
 > 来源：[https://docs.feishu.cn/docx/Kop9dL2SFohU6hxL97BcMwrFnec](https://docs.feishu.cn/docx/Kop9dL2SFohU6hxL97BcMwrFnec)
@@ -6,23 +7,15 @@ AI 工具派的社群中，经常会有小伙伴请教 AI 制作 PPT 的工具�
 
 本文介绍的工具**全部无需🪜**，**国内可访问**，包括：
 
-+   美图 AI PPT
-
-+   AiPPT
-
-+   Boardmix AI PPT
-
-+   Beautiful.ai
-
-+   iSlide
-
-+   MindShow
-
-+   讯飞智文
-
-+   轻竹办公
-
-+   MotionGo
++ 美图 AI PPT
++ AiPPT
++ Boardmix AI PPT
++ Beautiful.ai
++ iSlide
++ MindShow
++ 讯飞智文
++ 轻竹办公
++ MotionGo
 
 ## 1.美图 AI PPT
 
@@ -52,7 +45,7 @@ Chris 之前写了篇《AiPPT：全智能 AI 一键生成 PPT详细介绍，大�
 
 Boardmix AI PPT 是一款强大的在线 AI 白板软件，它不仅支持 AI 自动生成 PPT，还提供了丰富的模板和编辑工具。用户可以通过简单的输入，快速创建出结构化的演示文稿，同时支持多人在线协作和演示。
 
-**Boardmix **A**I PPT 支持一句话生成** **PPT、AI 提炼文档生成 **PPT、导入思维导图文件生成 PPT。
+**Boardmix AI PPT 支持一句话生成 PPT、AI 提炼文档生成 PPT、导入思维导图文件生成 PPT。**
 
 ![](img/456f5dc0de480cbda9d93be42ecf09f5.png)
 
@@ -62,7 +55,7 @@ Boardmix AI PPT 是一款强大的在线 AI 白板软件，它不仅支持 AI �
 
 Beautiful.ai 以其直观的界面和智能设计建议著称，能够帮助用户轻松创建好看的 PPT。它提供了可定制的模板、智能图表以及分析工具，让设计过程变得简单而高效。
 
-Beautiful.ai 支持**智能设计建议**、**数据分析可视化**、 **PPT 数据分析**。
+Beautiful.ai 支持**智能设计建议**、**数据分析可视化**、**PPT 数据分析**。
 
 ![](img/2be9884d610e079551bc033a96eef2f2.png)
 

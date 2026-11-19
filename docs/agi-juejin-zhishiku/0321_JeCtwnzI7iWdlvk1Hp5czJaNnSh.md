@@ -1,6 +1,7 @@
+
 # 人刚毕业，颠覆整个 AI 界：扒一扒 Sora 两带头人博士论文
 
-> 来源：[https://agijuejin.feishu.cn/docx/BJXjd3pqioCRi6xM5JXcMP0in3g](https://agijuejin.feishu.cn/docx/BJXjd3pqioCRi6xM5JXcMP0in3g)
+> 来源：`https://agijuejin.feishu.cn/docx/BJXjd3pqioCRi6xM5JXcMP0in3g`
 
 > 机器之心｜[阅读原文](https://mp.weixin.qq.com/s/9RbboBb_Bshtf3jJ-zST9g)
 
@@ -38,31 +39,31 @@ Sora 发布后，其开发团队自然也成为关注焦点，人们都想知道
 
 作为 Sora 背后的主要推动者，Tim Brooks、Bill Peebles 两人的博士毕业论文，也都是以 AI 视频生成为主题的。是时候从技术发展的角度，来研究一下 Sora 的来龙去脉了。
 
-# **Tim Brooks**
+# Tim Brooks
 
 ![](img/dc9eb754028222a3f7dc79a1aeaa6b4e.png)
 
-个人主页：https://www.timothybrooks.com/about/
+个人主页：`https://www.timothybrooks.com/about/`
 
 Tim Brooks 博士毕业于 UC Berkeley 的「伯克利人工智能研究所」BAIR，导师为 Alyosha Efros。
 
-在博士就读期间，他曾提出了 InstructPix2Pix，他还曾在谷歌从事为 Pixel 手机摄像头提供 AI 算法的工作，并在英伟达研究过视频生成模型。博士毕业后，Tim Brooks 加入 OpenAI，参与过 GPT-4、Sora 等多项研究。
+在博士就读期间，他曾提出了 `InstructPix2Pix`，他还曾在谷歌从事为 Pixel 手机摄像头提供 AI 算法的工作，并在英伟达研究过视频生成模型。博士毕业后，Tim Brooks 加入 OpenAI，参与过 `GPT-4`、`Sora` 等多项研究。
 
-2023 年，Tim Brooks 顺利毕业，博士论文接近 100 页。论文题目为《Generative Models for Image and Long Video Synthesis 》。
+2023 年，Tim Brooks 顺利毕业，博士论文接近 100 页。论文题目为《`Generative Models for Image and Long Video Synthesis`》。
 
 ![](img/ddaa396058e3ebac497d286ccf847ccb.png)
 
-论文地址：https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-100.pdf
+论文地址：`https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-100.pdf`
 
-## **论文简介**
+## 论文简介
 
 在这篇博士论文中，Tim Brooks 提出了将图像和视频生成模型用于一般视觉内容创作的基本要素，主要体现在三个方面：
 
-+   首先，论文介绍了长视频生成相关研究，并提出一种网络架构和训练范式，用于从视频中学习长程时间模式，这是将视频生成从较短的剪辑推进到较长形式且连贯视频的关键挑战。
++ 首先，论文介绍了长视频生成相关研究，并提出一种网络架构和训练范式，用于从视频中学习长程时间模式，这是将视频生成从较短的剪辑推进到较长形式且连贯视频的关键挑战。
 
-+   接下来，论文介绍了基于人体姿态生成场景图像的研究，展示了生成模型用来表示人与周围环境之间关系的能力，并强调了从大型且复杂的日常人类活动数据集中学习的重要性。
++ 接下来，论文介绍了基于人体姿态生成场景图像的研究，展示了生成模型用来表示人与周围环境之间关系的能力，并强调了从大型且复杂的日常人类活动数据集中学习的重要性。
 
-+   最后，论文介绍了一种通过结合大型语言模型和文本到图像模型的能力来创建监督训练数据，从而指导生成模型遵循图像编辑指令的方法。这些工作共同提升了生成模型合成图像和长视频的能力。
++ 最后，论文介绍了一种通过结合大型语言模型和文本到图像模型的能力来创建监督训练数据，从而指导生成模型遵循图像编辑指令的方法。这些工作共同提升了生成模型合成图像和长视频的能力。
 
 Tim Brooks 表示，在他读博期间（2019-2023 年），图像和视频生成模型已经从小范围的演示发展成被广泛采用的创意工具。他非常庆幸自己能在这个关键的时刻攻读视觉生成模型的博士学位，他也对生成模型充满了信心。
 
@@ -74,9 +75,9 @@ Tim Brooks 表示，在他读博期间（2019-2023 年），图像和视频生�
 
 ![](img/af50a63482bd16ddd5986d3c85d008a8.png)
 
-[0b2eyeabsaaataaj2ld33ntfbqoddhaqagia.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/McHCb3pvzo4HPXx1lNucYFrHnS7)
+`0b2eyeabsaaataaj2ld33ntfbqoddhaqagia.f10002.mp4`
 
-来源：https://www.timothybrooks.com/tech/long-video-gan/
+来源：`https://www.timothybrooks.com/tech/long-video-gan/`
 
 本章的主要贡献是一个分层生成器架构，生成器概览图如下所示。
 
@@ -86,7 +87,7 @@ Tim Brooks 表示，在他读博期间（2019-2023 年），图像和视频生�
 
 ![](img/e72ea54082455ce1eb8f3de6e64bccd0.png)
 
-本小节还设计了一个条件 GAN 来生成与人类姿态兼容的场景，网络架构基于 StyleGAN2 ，如图 3.3 所示。
+本小节还设计了一个条件 GAN 来生成与人类姿态兼容的场景，网络架构基于 `StyleGAN2` ，如图 3.3 所示。
 
 ![](img/41261b826c4b9533eab7ed5a4c76e487.png)
 
@@ -100,7 +101,7 @@ Tim Brooks 表示，在他读博期间（2019-2023 年），图像和视频生�
 
 ![](img/1e4bc335c92ffb88d1e5067172404985.png)
 
-由于难以大规模获取基于指令的图像编辑训练数据，该研究提出了一种生成配对数据集的方法，该方法结合了多个在不同模态上预训练的大型模型：大型语言模型（GPT-3 ）和文本到图像模型（Stable Diffusion）。这两个模型捕获了关于语言和图像的互补知识，可以将它们结合起来为跨两种模态的任务创建配对训练数据，而这两种模态中的任何一个都无法单独完成。
+由于难以大规模获取基于指令的图像编辑训练数据，该研究提出了一种生成配对数据集的方法，该方法结合了多个在不同模态上预训练的大型模型：大型语言模型（`GPT-3` ）和文本到图像模型（`Stable Diffusion`）。这两个模型捕获了关于语言和图像的互补知识，可以将它们结合起来为跨两种模态的任务创建配对训练数据，而这两种模态中的任何一个都无法单独完成。
 
 使用生成的配对数据，Tim Brooks 训练了一个条件扩散模型，该模型在给定输入图像和有关如何编辑文本指令的情况下，生成编辑后的图像。该模型可以直接在前向传播中执行图像编辑，不需要任何其他示例图像、输入 / 输出图像的完整描述或每个示例的微调。尽管模型完全在合成示例上进行训练，但其实现了对任意真实图像和人类指令的零样本泛化。该模型可以按照人类指令执行各种编辑：替换对象、更改图像样式、更改设置、艺术媒介等。
 
@@ -124,21 +125,21 @@ Tim Brooks 表示，在他读博期间（2019-2023 年），图像和视频生�
 
 ![](img/54a4b382cdc8c44b62420700d87c585e.png)
 
-个人主页：https://www.wpeebles.com/
+个人主页：`https://www.wpeebles.com/`
 
 2023 年，William (Bill) Peebles 在伯克利人工智能研究中心获得了博士学位，导师是 Alyosha Efros，与 Tim Brooks 师出同门。
 
-William (Bill) Peebles 本科毕业于麻省理工学院，曾在 FAIR、Adobe Research 和 NVIDIA 实习过。在攻读博士学位期间，他得到了美国国家科学基金会（NSF）研究生研究奖学金计划的支持。
+William (Bill) Peebles 本科毕业于麻省理工学院，曾在 `FAIR`、`Adobe Research` 和 `NVIDIA` 实习过。在攻读博士学位期间，他得到了美国国家科学基金会（`NSF`）研究生研究奖学金计划的支持。
 
-William (Bill) Peebles 的博士论文以图像生成模型为主题，论文题目是《Generative Models of Images and Neural Networks》。
+William (Bill) Peebles 的博士论文以图像生成模型为主题，论文题目是《`Generative Models of Images and Neural Networks`》。
 
 ![](img/c5b78fcca55ca7318a54246eccc18491.png)
 
-论文地址：https://www.proquest.com/openview/818cd87d905514d7d3706077d95d80b5/1?pq-origsite=gscholar&cbl=18750&diss=y
+论文地址：`https://www.proquest.com/openview/818cd87d905514d7d3706077d95d80b5/1?pq-origsite=gscholar&cbl=18750&diss=y`
 
-## **论文简介**
+## 论文简介
 
-大规模生成模型推动了人工智能的最新进展。这种范式使得人工智能的许多问题取得了突破，其中自然语言处理（NLP）领域是最大的受益者。
+大规模生成模型推动了人工智能的最新进展。这种范式使得人工智能的许多问题取得了突破，其中自然语言处理（`NLP`）领域是最大的受益者。
 
 给定一个新任务，预训练生成模型可以零样本地解决该任务，也可以在少量特定于任务的训练样本上进行有效的微调。
 
@@ -146,13 +147,13 @@ William (Bill) Peebles 的博士论文以图像生成模型为主题，论文题
 
 William (Bill) Peebles 的博士论文研究了训练改进的、可扩展的两种模态（图像和神经网络参数）的生成式模型的方法，并研究了如何利用预训练生成式模型来解决其他下游任务。
 
-首先，该论文证明保留了扩散模型图像生成扩展特性的扩散 transformer（DiT），优于之前主导该领域的卷积神经网络。
+首先，该论文证明保留了扩散模型图像生成扩展特性的扩散 transformer（`DiT`），优于之前主导该领域的卷积神经网络。
 
 ![](img/fb01dd252a9df9511d18697b92508828.png)
 
 ![](img/666d03810565d95c8e12d7d86d7d574e.png)
 
-值得注意的是，DiT 架构是在一篇题为《Scalable Diffusion Models with Transformers》的论文中被正式提出的，第一作者就是 William Peebles，另外一位论文作者是纽约大学的谢赛宁。
+值得注意的是，`DiT` 架构是在一篇题为《`Scalable Diffusion Models with Transformers`》的论文中被正式提出的，第一作者就是 William Peebles，另外一位论文作者是纽约大学的谢赛宁。
 
 ![](img/ef3ca510615ab000314196878bba6d86.png)
 
@@ -160,11 +161,11 @@ William (Bill) Peebles 的博士论文研究了训练改进的、可扩展的两
 
 该论文创建了包含数十万次深度学习训练运行的数据集，并使用它来训练生成式模型。给定起始参数向量和目标损失、错误或奖励，在此数据上训练的损失条件扩散模型可以对实现所需指标的参数更新进行采样。
 
-这种方法克服了以前元学习算法的许多困难 —— 它可以优化不可微目标，并省去不稳定的展开优化方法。与 SGD 和 Adam 等基于梯度的迭代优化器无法从优化历史中学习不同，该论文提出的生成模型只需一次生成的参数更新即可通过随机初始化来优化神经网络。
+这种方法克服了以前元学习算法的许多困难 —— 它可以优化不可微目标，并省去不稳定的展开优化方法。与 `SGD` 和 `Adam` 等基于梯度的迭代优化器无法从优化历史中学习不同，该论文提出的生成模型只需一次生成的参数更新即可通过随机初始化来优化神经网络。
 
 ![](img/7f5c5fb6e08bc587053448c497065300.png)
 
-该论文证明，预训练 GAN 生成器可用于创建无限数据流来训练网络，以解决密集视觉相关问题，而无需任何人工注释的监督。该论文表明，采用完全由 GAN 生成的数据进行训练的神经网络，性能优于之前在真实数据上训练的自监督和关键点监督方法。
+该论文证明，预训练 `GAN` 生成器可用于创建无限数据流来训练网络，以解决密集视觉相关问题，而无需任何人工注释的监督。该论文表明，采用完全由 `GAN` 生成的数据进行训练的神经网络，性能优于之前在真实数据上训练的自监督和关键点监督方法。
 
 ![](img/c97d90d41f5cde312085eb46b63fe607.png)
 
@@ -174,6 +175,6 @@ William (Bill) Peebles 的博士论文研究了训练改进的、可扩展的两
 
 参考内容：
 
-https://www.timothybrooks.com/about/
+`https://www.timothybrooks.com/about/`
 
-https://www.wpeebles.com/
+`https://www.wpeebles.com/`

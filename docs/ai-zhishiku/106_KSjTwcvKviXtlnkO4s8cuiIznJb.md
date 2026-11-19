@@ -1,3 +1,4 @@
+
 # Adobe Firefly 推出新功能 Generative Fill ！一键除去/修改画面内容，Photoshop 可用！
 
 > 来源：[https://my.feishu.cn/docx/MQeZdJPUBoJ2xNxVN5acGgtmnhh](https://my.feishu.cn/docx/MQeZdJPUBoJ2xNxVN5acGgtmnhh)
@@ -52,8 +53,6 @@ Photoshop（Beta） 中 Generative Fill 工具栏的样式，图片来源：Adob
 
 内置了生成式技术的 Photoshop 在处理图像上可以给我们带来完全不同于以往的效率和体验，非常令人期待。但是官方的 Beta 测试版目前需要在 Creative Cloud 中下载，也就是说只有正版用户才有机会体验最新的 Generative Fill 功能。如果你目前没有办法用到，可以选择先在 Adobe Firefly 中体验一下，效果同样不错。
 
-1.  Adobe Firefly 官网： https://firefly.adobe.com/
-
-1.  Photoshop Beta 测试版下载： [h](https://helpx.adobe.com/photoshop/using/generative-fill.html)ttps://helpx.adobe.com/photoshop/using/generative-fill.html
-
-1.  [官方](https://blog.adobe.com/en/publish/2023/05/23/future-of-photoshop-powered-by-adobe-firefly)对 Generative Fill 的详细介绍： https://blog.adobe.com/en/publish/2023/05/23/future-of-photoshop-powered-by-adobe-firefly
+1. Adobe Firefly 官网： https://firefly.adobe.com/
+2. Photoshop Beta 测试版下载： [https://helpx.adobe.com/photoshop/using/generative-fill.html](https://helpx.adobe.com/photoshop/using/generative-fill.html)
+3. [官方](https://blog.adobe.com/en/publish/2023/05/23/future-of-photoshop-powered-by-adobe-firefly)对 Generative Fill 的详细介绍： https://blog.adobe.com/en/publish/2023/05/23/future-of-photoshop-powered-by-adobe-firefly

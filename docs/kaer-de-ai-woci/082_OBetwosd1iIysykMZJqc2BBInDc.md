@@ -1,3 +1,4 @@
+
 # Flowith OS使用cases
 
 > 来源：[https://aiwarts101.feishu.cn/docx/NIJAdhVlSoOOb5xB7CGc16DNnHy](https://aiwarts101.feishu.cn/docx/NIJAdhVlSoOOb5xB7CGc16DNnHy)
@@ -20,31 +21,25 @@ https://mp.weixin.qq.com/s/dthJahPemFbzn58zO2CT7Q
 
 > 总结一下这个网页，然后根据你总记的信息，去X找到大家对这个东西的想法和使用意见
 
-
 [FlowithOSBeta01.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CUmwbHIN1oO1YVx5v9QcwQgqnFg)
 
 > 总结这个视频，并找出Tim有什么提效的AI图片工作流
 
-
 [FlowithOSBeta02.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B9i8bJBhZoLuUBxItzJce8eRnIe)
 
-> 监控nof1.ai的六个模型的盈利情况，读取completed trades和modelchat生成分析报告，编辑成邮件发送给我自己
-
+> 监控nof1.ai的六个模型的盈利情况，读取completed trades和`modelchat`生成分析报告，编辑成邮件发送给我自己
 
 [FlowithOSBeta03打码邮箱.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A5wcbbHYJo1abxxNGz0cCyHonE1)
 
 > 以瑞克和莫蒂里瑞克的思路随机去b站看视频、刷视频、评论，模拟人摆烂的1小时
 
-
 [FlowithOSBeta04.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PwnPbhKEoote87x1DZ5c95REnlb)
 
 > 帮我看这条推文下有哪些有价值的回复，汇总整理给我；如果回复的推文被折叠，请点开查看详情
 
-
 [FlowithOSBeta08.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dn6ebzoiToHn4gxTWdrcaaLznBd)
 
 > group my tabs by topic，and then close all duplicate tabs
-
 
 [FlowithOSBeta09.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SmqVbgnK8oIWZJxdMJJc1UGknRg)
 
@@ -77,7 +72,6 @@ https://mp.weixin.qq.com/s/dthJahPemFbzn58zO2CT7Q
 ## 更多cases
 
 > 用gemini生成一张四宫格卡通图，讲述一个深刻的道理，不要焦虑不要内耗
-
 
 [FlowithOSBeta05.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PpAzbQsxuoi8Lex6ILpcepr5ndf)
 

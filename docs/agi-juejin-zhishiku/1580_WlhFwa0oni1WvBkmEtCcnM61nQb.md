@@ -1,10 +1,11 @@
+
 # 原来亲手制作个人奥运头像原来这么简单！
 
 > 来源：[https://agijuejin.feishu.cn/docx/Z9i6dCMxdoLJrRxQAnUcpdoInNb](https://agijuejin.feishu.cn/docx/Z9i6dCMxdoLJrRxQAnUcpdoInNb)
 
 > 作者：景淮Maple | 景淮AI探索之旅
 
-> 原文：[https://mp.weixin.](https://mp.weixin.qq.com/s/sDVGXtDg6fC0pL7wxAJ6fw)qq.com/s/sDVGXtDg...
+> 原文：[https://mp.weixin.qq.com/s/sDVGXtDg6fC0pL7wxAJ6fw](https://mp.weixin.qq.com/s/sDVGXtDg6fC0pL7wxAJ6fw)
 
 嘿，大家好呀，我是景淮，一个在加拿大的朋友，每天陪你一起玩转 AI。
 
@@ -22,15 +23,12 @@
 
 本文会根据以下内容顺序进行：
 
-+   需求分析
++ 需求分析
++ 分步实现需求
++ 视频教程
++ 总结
 
-+   分步实现需求
-
-+   视频教程
-
-+   总结
-
-#  **一、需求分析 **
+## 一、需求分析
 
 我们想要制作的头像，是一种私人定制，何为私人定制呢？简单来说就是，用自己的图片、照片、生成一些漫画形式的以照片人物为主体的运动员头像图。
 
@@ -38,35 +36,35 @@
 
 因为是使用 MJ 进行生图操作，所以我们可以先生成基础图片，再选择图片对脸部进行重绘。从而达到我们想要的效果。
 
-##  **一）输入 **
+### 一）输入
 
 输入的部分其实应该尽量做的简单，我们这边先使用 ChatGPT 来完成对应的工作，直接输入一个奥林匹克的项目根据项目的内容生成一段人物的描述。
 
 结合我们一些设定好的提示词，来完成我们的需求。之后再使用重绘、垫图等参数进行调整。
 
-##  **二）ChatGPT 生成描述 **
+### 二）ChatGPT 生成描述
 
 结合我们找的范例提示词，添加一些中国人、中国运动服和对应的项目场景描述。
 
 来生成我们用来 MJ 画图的提示词
 
-##  **三）MJ 绘图测试 **
+### 三）MJ 绘图测试
 
 主要是针对于 MJ 绘图提示词的稳定性进行测试。是否需要垫图等。
 
-##  **四）局部重绘 **
+### 四）局部重绘
 
-我们使用 局部重绘,结合 cref 链接我们想要绘制人物的照片 同时可以调整下 cw 参数。
+我们使用 局部重绘,结合 `cref` 链接我们想要绘制人物的照片 同时可以调整下 `cw` 参数。
 
-##  **五）处理流程图 **
+### 五）处理流程图
 
 ![](img/a001ce2664d3a714686315c56cf59a42.png)
 
-#  **二、分步实现需求 **
+## 二、分步实现需求
 
-##  一）ChatGPT 生成 MJ 提示词
+### 一）ChatGPT 生成 MJ 提示词
 
-###   **提示词 **
+#### 提示词
 
 ```
 ## Workflows：
@@ -79,71 +77,70 @@
     - 绘画提示词使用英文进行输出，格式如下
     - 只需要输出最后的代码块结果即可，不需要展示中间过程给用户
 ```
-A dynamic, high-energyof an Olympic athlete mid-action, captured in a moment of intense focus and determination. The athlete is dressed in a sleek, modern Olympic uniform, adorned with the iconic Olympic rings and vibrant national colors. The background features a stadium filled with cheering fans, banners waving, and the Olympic torch burning brightly. The scene exudes excitement, athleticism, and the spirit of competition, with motion lines and dramatic lighting emphasizing the athlete&#x27;s speed and power. --ar 1:1 --s 750 --niji 6 
-``` 
 
-输入：110米跨栏，男性
+```
+A dynamic, high-energyof an Olympic athlete mid-action, captured in a moment of intense focus and determination. The athlete is dressed in a sleek, modern Olympic uniform, adorned with the iconic Olympic rings and vibrant national colors. The background features a stadium filled with cheering fans, banners waving, and the Olympic torch burning brightly. The scene exudes excitement, athleticism, and the spirit of competition, with motion lines and dramatic lighting emphasizing the athlete&#x27;s speed and power. --ar 1:1 --s 750 --niji 6 
 ```
 
-###   **效果展示 **
+输入：110米跨栏，男性
+
+#### 效果展示
 
 ```
 A dynamic, high-energy scene of an Olympic athlete mid-action, captured in a moment of intense focus and determination. The athlete, a Chinese male, is dressed in a sleek, modern Olympic uniform in vibrant red, representing China&#x27;s national colors. He is mid-jump, clearing a hurdle with perfect form in the 110-meter hurdles event. The background features a stadium filled with cheering fans, with a blurred Chinese national flag waving and the Olympic torch burning brightly. The scene exudes excitement, athleticism, and the spirit of competition, with motion lines and dramatic lighting emphasizing the athlete&#x27;s speed and power. --ar 1:1 --s 750 --niji 6
 ```
 
-##  **二）MJ 绘图测试 **
+### 二）MJ 绘图测试
 
-###   **上述提示词效果展示 **
+#### 上述提示词效果展示
 
 ![](img/45c22a4a80b9a6f4d49688c012ae66ce.png)
 
-##  **三）局部重绘 **
+### 三）局部重绘
 
-###   **尽量选择一张脸部是正面的图片 **
+#### 尽量选择一张脸部是正面的图片
 
 ![](img/fbeb72cb713385605dfe3871e7cf049c.png)
 
-###   上传想要换脸的人物照片（复制到聊天框，回车上传）
+#### 上传想要换脸的人物照片（复制到聊天框，回车上传）
 
 ![](img/3107a783c59af058c10215c67cc1c9d1.png)
 
-###   **复制链接 **
+#### 复制链接
 
 ![](img/a29aba683bf99d42fa97fcd4f72cbe19.png)
 
-###   找到刚才 MJ 生成的图片，点击 Vary(Region)
+#### 找到刚才 MJ 生成的图片，点击 `Vary(Region)`
 
 ![](img/3e356ec8574555a582573d0d064f6e76.png)
 
-###   **使用选择工具，选中脸部区域 **
+#### 使用选择工具，选中脸部区域
 
 ![](img/74ba561885ada1607dfed53a8bcb99bd.png)
 
 在提示词的最后面添加参数（注意与前面参数之间留个空格）
 
---cref https://cdn.discordapp.com/attachments/1155887342226247731/1268399808981504061/images.png?ex=66ac48e0&amp;is=66aaf760&amp;hm=aa6b8b8aee64a5165b613e154a556fe7c67c1b35769298ff99f09324d6efdb45&amp; --cw 0
-
 ```
+--cref https://cdn.discordapp.com/attachments/1155887342226247731/1268399808981504061/images.png?ex=66ac48e0&amp;is=66aaf760&amp;hm=aa6b8b8aee64a5165b613e154a556fe7c67c1b35769298ff99f09324d6efdb45&amp; --cw 0
 ```
 
 ![](img/74c4838331815b0de2a9612aba8944e8.png)
 
-###   **效果展示 **
+#### 效果展示
 
 ![](img/e7a2688f65a941b3a97c32d11ce360ec.png)
 
 ![](img/012eea675b82600689ee4177b75d014d.png)
 
-> 如果大家觉得不像，可以多调整几次，包括 cw 的参数值，参数 0 - 100，数字越大，对最后生成的图片影响应该是越大的。
+> 如果大家觉得不像，可以多调整几次，包括 `cw` 的参数值，参数 0 - 100，数字越大，对最后生成的图片影响应该是越大的。
 
-#  **三、视频教程 **
+## 三、视频教程
 
 ![](img/b4d30608a4732e870b5c7b8a65cdf712.png)
 
 [0bc3biaagaaag4aaefvlmztfacwdamfaaaya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B1SsbuzApoImVvx61gBcuywkn7c)
 
-**效果展示 **
-
+### 效果展示
 
 ![](img/cb68c7a179703719a3251a2da568eefa.png)
 
@@ -155,7 +152,7 @@ A dynamic, high-energy scene of an Olympic athlete mid-action, captured in a mom
 
 > 什么时候能看到中国的宫城呢，可能还没进体校就被淘汰了吧... 无奈╮(╯▽╰)╭
 
-#  **四、总结 **
+## 四、总结
 
 其实之前不怎么做视频的，但是发现好像纯文字版的内容有点太干了。之后的分享能做视频的尽量都会给大家安排。
 

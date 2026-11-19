@@ -1,10 +1,13 @@
+
 # AI Paper Summarizer Prompt
 
 > 来源：[https://my.feishu.cn/docx/VL0ldVCo1oV0MrxAUNqcBLKUnmc](https://my.feishu.cn/docx/VL0ldVCo1oV0MrxAUNqcBLKUnmc)
 
-**使用场景或用例：**适合科研人员、学生、知识博主，将长篇学术论文转为易读的要点式摘要与学习卡片，提升消化效率。
+## 使用场景或用例
 
-**提示词：**
+适合科研人员、学生、知识博主，将长篇学术论文转为易读的要点式摘要与学习卡片，提升消化效率。
+
+## 提示词
 
 ```
 You are an academic summarizer.  

@@ -1,27 +1,20 @@
+
 # 017-GPT-4o脑洞大开：50个知名品牌离谱跨界产品 | 附提示词
 
-> 来源：[https://aigcreative.feishu.cn/docx/VxIedjdQ1osWLgxAPYtc5cUUnVb](https://aigcreative.feishu.cn/docx/VxIedjdQ1osWLgxAPYtc5cUUnVb)
+> 来源：https://aigcreative.feishu.cn/docx/VxIedjdQ1osWLgxAPYtc5cUUnVb
 
 大家好，这里是**AIGC创意猎人**，我是与大家一起玩转AI的**何先森Kevin**。
 
 下面这些创意产品你见过吗？
 
 🛰️生产的社交润喉糖、
-
 钉钉生产的加班专用功能饮料、
-
 比亚迪生产的新能源自加热火锅、
-
 DeepMind生产的激活脑力的益生菌酸奶、
-
 Intel生产的吃了“更聪明”的芯片维生素、
-
 Adobe生产的可以“抠图脸型”的美容面膜、
-
 Hugging Face生产的爱护脸面专用保湿贴、
-
 OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
-
 茅台生产的护发精华露、面膜
 
 ......
@@ -70,7 +63,7 @@ OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
 
 下面简单分享一下创作思路：
 
-# 创意创作思路：
+## 创意创作思路：
 
 一个奇怪的想法：我们常见的这些品牌、科技公司，跨界去做一些消费品会是什么效果？
 
@@ -82,27 +75,27 @@ OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
 
 于是，就有了下面的这个关于这一个“产品包装”的系统提示词：
 
-> You are a packaging‑concept prompt engineer.
+```
+You are a packaging-concept prompt engineer.
 
-> When I give you a single word “BrandName”, automatically produce a photorealistic product‑packaging prompt for a signature concept product, using {BrandName}’s industry, primary color, logo font, core product cues and typical container style.
+When I give you a single word “BrandName”, automatically produce a photorealistic product‑packaging prompt for a signature concept product, using `{BrandName}`’s industry, primary color, logo font, core product cues and typical container style.
 
-> The output must follow this format:
+The output must follow this format:
 
-> 
+“Photorealistic pack shot of {BrandName} {ConceptName} — a conceptual set of {ItemCount} {Format} of {ProductCue} styled in {BrandName}’s signature aesthetic.
 
-> “Photorealistic pack shot of {BrandName} {ConceptName} — a conceptual set of {ItemCount} {Format} of {ProductCue} styled in {BrandName}’s signature aesthetic.
+• Containers: {VolumeOrSize}, {ContainerMaterial} with brand‑appropriate texture
 
-> • Containers: {VolumeOrSize}, {ContainerMaterial} with brand‑appropriate texture
+• Label: “{BrandName} {ConceptName}” in {FontName} on a clean white or matching accent band
 
-> • Label: “{BrandName} {ConceptName}” in {FontName} on a clean white or matching accent band
+• Background: solid block of {PrimaryColor}, ample white negative space
 
-> • Background: solid block of {PrimaryColor}, ample white negative space
+• Arrangement: {ArrangementDesc}, casting soft, realistic shadows
 
-> • Arrangement: {ArrangementDesc}, casting soft, realistic shadows
+• Tagline: “{Tagline}” centered below in a matching sans‑serif
 
-> • Tagline: “{Tagline}” centered below in a matching sans‑serif
-
-> • Lighting & Render: ultra‑realistic studio lighting, sharp focus, 8K detail”
+• Lighting & Render: ultra‑realistic studio lighting, sharp focus, 8K detail”
+```
 
 下面只需要输入品牌名+你的创意即可。
 
@@ -118,245 +111,251 @@ OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
 
 下面一起看看其他品牌产品的具体效果：
 
-# Apple （离谱，苹果牌的香蕉~~）
+## Apple （离谱，苹果牌的香蕉~~）
 
 > **Apple Banana**
 
-+   类型：苹果公司出品的智能香蕉（可识别情绪、自动剥皮）
++ 类型：苹果公司出品的智能香蕉（可识别情绪、自动剥皮）
 
-+   包装：极简白盒 + 一个孤独的高科技香蕉
++ 包装：极简白盒 + 一个孤独的高科技香蕉
 
-+   **Slogan**：Think Yellow.
++ **Slogan**：Think Yellow.
 
-+   延伸文案：Available in Banana Pro, Banana Air, and Banana Max.
++ 延伸文案：Available in Banana Pro, Banana Air, and Banana Max.
 
 > 提示词：
 
-> **Photo**rea**listic pack** sh**ot of **App**le Banana —** a **conceptual s**ing**le high-**tech smart banana designed by Apple, capable of emotion detection and auto-peeling, styled in Apple’s signature minimalist aesthetic.
+```
+Photorealistic pack shot of Apple Banana — a conceptual single high-tech smart banana designed by Apple, capable of emotion detection and auto-peeling, styled in Apple’s signature minimalist aesthetic.
 
-> • Containers: 1 unit, housed in a pristine matte white box with embossed silver Apple logo, internal tray molded to cradle the sleek yellow fruit
+• Containers: 1 unit, housed in a pristine matte white box with embossed silver Apple logo, internal tray molded to cradle the sleek yellow fruit
 
-> • Label: “Apple Banana” in San Francisco font on the box side; product markings include Banana Pro, Banana Air, and Banana Max
+• Label: “Apple Banana” in San Francisco font on the box side; product markings include Banana Pro, Banana Air, and Banana Max
 
-> • Background: solid block of Apple White, ample negative space
+• Background: solid block of Apple White, ample negative space
 
-> • Arrangement: box lid lifted, the banana centered and glowing subtly, accompanied by a sleek Apple-style quick start guide
+• Arrangement: box lid lifted, the banana centered and glowing subtly, accompanied by a sleek Apple-style quick start guide
 
-> • Tagline: “Think Yellow.” centered below in a clean, ultra-light sans-serif
+• Tagline: “Think Yellow.” centered below in a clean, ultra-light sans-serif
 
-> • Lighting & Render: ultra‑realistic studio lighting, sharp focus, 8K detail
+• Lighting & Render: ultra-realistic studio lighting, sharp focus, 8K detail
+```
 
 ![](img/c3700d90bdeb76222dc8e1bcb4f2cca1.png)
 
-# NVIDIA
+## NVIDIA
 
 > NVIDIA Popcorn
 
-+   类型：AI训练时专用爆米花，可边看显卡跑分边吃
++ 类型：AI训练时专用爆米花，可边看显卡跑分边吃
 
-+   包装：黑绿GPU造型袋子，每颗玉米带热能标识
++ 包装：黑绿GPU造型袋子，每颗玉米带热能标识
 
-+   Slogan：Snacks for the speed of light.
++ Slogan：Snacks for the speed of light.
 
 > 提示词：
 
-> **Photo**rea**listic pack** sh**ot of **NVI**DIA Popcorn** — **a conceptual** se**t of 2 G**PU-styled snack bags containing performance-themed popcorn, designed for AI developers, styled in NVIDIA’s signature high-tech aesthetic.
+```
+Photorealistic pack shot of NVIDIA Popcorn — a conceptual set of 2 GPU-styled snack bags containing performance-themed popcorn, designed for AI developers, styled in NVIDIA’s signature high-tech aesthetic.
 
-> • Containers: 180g, matte black snack pouches with angular GPU heat-sink designs and neon green accents, transparent window shows popcorn with thermal glyph markings
+• Containers: 180g, matte black snack pouches with angular GPU heat-sink designs and neon green accents, transparent window shows popcorn with thermal glyph markings
 
-> • Label: “NVIDIA Popcorn” in NVIDIA font on a glowing green-on-black grid overlay
+• Label: “NVIDIA Popcorn” in NVIDIA font on a glowing green-on-black grid overlay
 
-> • Background: solid block of NVIDIA Green, ample white negative space
+• Background: solid block of NVIDIA Green, ample white negative space
 
-> • Arrangement: one bag upright sealed, one torn open with popcorn scattered and faint heat signature glow, casting soft, realistic shadows
+• Arrangement: one bag upright sealed, one torn open with popcorn scattered and faint heat signature glow, casting soft, realistic shadows
 
-> • Tagline: “Snacks for the speed of light.” centered below in a matching sans‑serif
+• Tagline: “Snacks for the speed of light.” centered below in a matching sans-serif
 
-> • Lighting & Render: ultra‑realistic studio lighting, sharp focus, 8K detail
+• Lighting & Render: ultra-realistic studio lighting, sharp focus, 8K detail
+```
 
 ![](img/4691565dc8984b018ebbc01c6e0cab59.png)
 
-# Microsoft
+## Microsoft
 
 > Microsoft Excel Energy Drink
 
-+   类型：适合“表哥表姐”饮用的提神饮料
++ 类型：适合“表哥表姐”饮用的提神饮料
 
-+   包装：绿色表格纹理铝罐，配公式小贴士
++ 包装：绿色表格纹理铝罐，配公式小贴士
 
-+   Slogan：Power Up. Function On.
++ Slogan：Power Up. Function On.
 
 > 提示词：
 
-> **Photo**rea**listic pack** sh**ot of **Mic**rosoft Exce**l E**nergy Drink **— a** concept**ual set of 3 green aluminum cans featuring spreadsheet grid textures and formula tips, styled in Microsoft’s signature productivity aesthetic.
+```
+Photorealistic pack shot of Microsoft Excel Energy Drink — a conceptual set of 3 green aluminum cans featuring spreadsheet grid textures and formula tips, styled in Microsoft’s signature productivity aesthetic.
 
-> • Containers: 350ml, matte green aluminum cans with subtle Excel grid lines, pop-top lid, and attached peel-off “Function Tips” stickers
+• Containers: 350ml, matte green aluminum cans with subtle Excel grid lines, pop-top lid, and attached peel-off “Function Tips” stickers
 
-> • Label: “Microsoft Excel Energy Drink” in Segoe UI Bold on a clean white or grid-accented band
+• Label: “Microsoft Excel Energy Drink” in Segoe UI Bold on a clean white or grid-accented band
 
-> • Background: solid block of Excel Green, ample white negative space
+• Background: solid block of Excel Green, ample white negative space
 
-> • Arrangement: two upright cans, one tilted on its side with condensation and sticker partly peeled, casting soft, realistic shadows
+• Arrangement: two upright cans, one tilted on its side with condensation and sticker partly peeled, casting soft, realistic shadows
 
-> • Tagline: “Power Up. Function On.” centered below in a matching sans‑serif
+• Tagline: “Power Up. Function On.” centered below in a matching sans-serif
 
-> • Lighting & Render: ultra‑realistic studio lighting, sharp focus, 8K detail
+• Lighting & Render: ultra-realistic studio lighting, sharp focus, 8K detail
+```
 
 ![](img/b0c9b40bf2cad1929c07c4682b0a541c.png)
 
-# OpenAI
+## OpenAI
 
 > OpenAI Omega Ointment
 
-+   类型：抹在脑门上就能更聪明的“AI膏药”
++ 类型：抹在脑门上就能更聪明的“AI膏药”
 
-+   包装：类似GPT界面的小玻璃罐
++ 包装：类似GPT界面的小玻璃罐
 
-+   Slogan：Apply intelligence. Literally.
++ Slogan：Apply intelligence. Literally.
 
 ![](img/3106c2ab09585ee9a40a07adccaa1124.png)
 
-# Anthropic
+## Anthropic
 
 > Anthropic Meditation Incense
 
-+   类型：AI伦理冥想香，燃烧时播放哲学问题语音
++ 类型：AI伦理冥想香，燃烧时播放哲学问题语音
 
-+   包装：竹简×科技蓝金色+“可解释性”香味分类
++ 包装：竹简×科技蓝金色+“可解释性”香味分类
 
-+   Slogan：Smell the alignment.
++ Slogan：Smell the alignment.
 
 ![](img/b961a6a66268fe125005e3f71fdb402c.png)
 
-# Stability AI
+## Stability AI
 
 > Stability AI Instant Mood Stickers
 
-+   类型：贴在脸上能改变情绪的AI识别表情贴纸
++ 类型：贴在脸上能改变情绪的AI识别表情贴纸
 
-+   包装：情绪色卡 + 日志追踪App联动   画面比例2:3
++ 包装：情绪色卡 + 日志追踪App联动   画面比例2:3
 
-+   Slogan：Stable diffusion. For your soul.
++ Slogan：Stable diffusion. For your soul.
 
 ![](img/2a7a524ed17c59939bab33b0924c5ac1.png)
 
-# SpaceX
+## SpaceX
 
 > SpaceX Anti-Gravity Socks
 
-+   类型：穿上后脚底轻飘飘（设定）
++ 类型：穿上后脚底轻飘飘（设定）
 
-+   包装：火箭管装袜子+“登月感”纤维说明书
++ 包装：火箭管装袜子+“登月感”纤维说明书
 
-+   Slogan：Lift off. From your feet.
++ Slogan：Lift off. From your feet.
 
 ![](img/0313fb2e21536a2c88637baa06cf0f8a.png)
 
-# Adobe
+## Adobe
 
 > Adobe Photoshop Peel-Off Mask
 
-+   类型：可以“抠图脸型”的美容面膜
++ 类型：可以“抠图脸型”的美容面膜
 
-+   包装：图层图标印花+带蒙版可选滤镜模式
++ 包装：图层图标印花+带蒙版可选滤镜模式
 
-+   Slogan：CTRL+Z your skin.
++ Slogan：CTRL+Z your skin.
 
 ![](img/bf1582dfa24d0b8bdc43b187a882dc62.png)
 
-# TikTok
+## TikTok
 
 > TikTok Sleeping Mask
 
-+   类型：一戴上就能自动脑内播放短视频梦境
++ 类型：一戴上就能自动脑内播放短视频梦境
 
-+   包装：带LED灯滚动点赞数+醒来语音播报热榜
++ 包装：带LED灯滚动点赞数+醒来语音播报热榜
 
-+   Slogan：Scroll while you snore.
++ Slogan：Scroll while you snore.
 
 ![](img/bf48420ed15668c2bab4bfb4f38ed69d.png)
 
-# Tesla
+## Tesla
 
 > Tesla Toothbrush
 
-+   类型：自动驾驶震动牙刷+语音助手导航口腔
++ 类型：自动驾驶震动牙刷+语音助手导航口腔
 
-+   包装：银黑流线造型 + Elon语音提示
++ 包装：银黑流线造型 + Elon语音提示
 
-+   Slogan：Autopilot your molars.
++ Slogan：Autopilot your molars.
 
 ![](img/4628771a3ebe33db197f4310a527ea9f.png)
 
-# Google
+## Google
 
 > Google Instant Ramen
 
-+   类型：关键词推荐口味泡面（如"trending: spicy chicken"）
++ 类型：关键词推荐口味泡面（如"trending: spicy chicken"）
 
-+   包装：泡面桶带“你可能还想吃”联想词云
++ 包装：泡面桶带“你可能还想吃”联想词云
 
-+   Slogan：I’m Feeling Hungry.
++ Slogan：I’m Feeling Hungry.
 
 ![](img/079f603aa258a66214368c9ee6105fbd.png)
 
-# HUAWEI
+## HUAWEI
 
 > Huawei Time Travel Tea
 
-+   类型：喝了会“时间折叠”的中国风科技茶
++ 类型：喝了会“时间折叠”的中国风科技茶
 
-+   包装：紫砂壶造型+5G信号提示
++ 包装：紫砂壶造型+5G信号提示
 
-+   Slogan：Drink the future. Steeped in heritage.
++ Slogan：Drink the future. Steeped in heritage.
 
 ![](img/dd863040af1191051c1fcdc04602379a.png)
 
-# Baidu
+## Baidu
 
 > Baidu Memory Gum
 
-+   类型：嚼一颗立马想起你前女友的手机号（搜索增强功能）
++ 类型：嚼一颗立马想起你前女友的手机号（搜索增强功能）
 
-+   包装：蓝白AI脑纹口香糖盒
++ 包装：蓝白AI脑纹口香糖盒
 
-+   Slogan：Search with your mouth.
++ Slogan：Search with your mouth.
 
 ![](img/95bb7f98a44aa24c4d8ac038963567cb.png)
 
-# Nikon
+## Nikon
 
 > Nikon Eye Drops
 
-+   类型：滴眼液让你“景深可控”＋防眩光
++ 类型：滴眼液让你“景深可控”＋防眩光
 
-+   包装：仿相机镜头瓶 + 光圈标记
++ 包装：仿相机镜头瓶 + 光圈标记
 
-+   Slogan：Focus. For real.
++ Slogan：Focus. For real.
 
 ![](img/dd4316eacc69ed03466338bd5bd6c8e2.png)
 
-# Qualcomm
+## Qualcomm
 
 > Qualcomm Smart Socks
 
-+   类型：支持蓝牙+GPS的袜子，实时定位你妈喊你吃饭的位置
++ 类型：支持蓝牙+GPS的袜子，实时定位你妈喊你吃饭的位置
 
-+   包装：“芯片袜”透明窗包装
++ 包装：“芯片袜”透明窗包装
 
-+   Slogan：Connectivity from the ground up.
++ Slogan：Connectivity from the ground up.
 
 ![](img/c2cabd16e80081697ef39edc709ce595.png)
 
-# BYD
+## BYD
 
-> BYD Instant Hotpot
 
-+   类型：新能源自加热火锅
 
-+   包装：锂电池形态包装 + “热力持久80分钟”标签
+# BYD Instant Hotpot
 
-+   Slogan：Built Your Dinner.画面比例2:3
++ 类型：新能源自加热火锅
++ 包装：锂电池形态包装 + “热力持久80分钟”标签
++ Slogan：Built Your Dinner.画面比例2:3
 
 ![](img/e5d3029d0b01a85f3d28821a0d8f73f5.png)
 
@@ -364,11 +363,9 @@ OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
 
 > Canon Bubble Tea Printer
 
-+   类型：可以“打印奶盖图案”的珍珠奶茶机
-
-+   包装：多彩CMYK四色印头造型 + 可更换奶茶墨盒
-
-+   Slogan：Shoot. Print. Sip.
++ 类型：可以“打印奶盖图案”的珍珠奶茶机
++ 包装：多彩CMYK四色印头造型 + 可更换奶茶墨盒
++ Slogan：Shoot. Print. Sip.
 
 ![](img/63e4012f723310a59bfad0c39c80ea8d.png)
 
@@ -376,11 +373,9 @@ OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
 
 > AirFreshener Drone
 
-+   类型：悬浮在空中飞来飞去的室内香薰无人机
-
-+   包装：像遥控器一样的香氛按钮面板
-
-+   Slogan：Freshness. From above.
++ 类型：悬浮在空中飞来飞去的室内香薰无人机
++ 包装：像遥控器一样的香氛按钮面板
++ Slogan：Freshness. From above.
 
 ![](img/f3650daecd57a9ad364441ff05cc7614.png)
 
@@ -388,11 +383,9 @@ OpenAI生产的抹在脑门上就能更聪明的“AI膏药”、
 
 > Notion Notebooks
 
-+   类型：纸质笔记本，但页脚印着“快捷键提示”和“块级结构”提示
-
-+   包装：极简白封面 + 每页可添加“数据库标签”贴纸
-
-+   Slogan：Organize your thoughts. Offline.
++ 类型：纸质笔记本，但页脚印着“快捷键提示”和“块级结构”提示
++ 包装：极简白封面 + 每页可添加“数据库标签”贴纸
++ Slogan：Organize your thoughts. Offline.
 
 ![](img/d112af4ac82480c74371c91415f91a1c.png)
 
@@ -486,25 +479,19 @@ AMD
 
 > 文心一言（ERNIE Bot）
 
-+   文心养生壶：一边煮枸杞一边生成十条鸡汤语录
-
-+   包装：大模型芯片嵌在壶盖，语音播报“您今天不需要卷”
-
-+   Slogan：模型内功，温补中气。
++ 文心养生壶：一边煮枸杞一边生成十条鸡汤语录
++ 包装：大模型芯片嵌在壶盖，语音播报“您今天不需要卷”
++ Slogan：模型内功，温补中气。
 
 ![](img/75208abe2f3be52ba705aa97c91280e0.png)
 
 # 小结：
 
-从🛰️的社交润喉糖到百度文心一言的养生壶，
-
-这些由ChatGPT 4o文生图创造出的品牌跨界产品，展现了无限创意。
+从🛰️的社交润喉糖到百度文心一言的养生壶，这些由ChatGPT 4o文生图创造出的品牌跨界产品，展现了无限创意。
 
 AI的强大远超想象，它不仅是工具，更是创意伙伴，激发灵感、打破边界。
 
-在AI时代，我们应插上想象翅膀，以开放心态拥抱科技，
-
-让AI助力实现更多奇思妙想，创造更绚烂多彩的世界。
+在AI时代，我们应插上想象翅膀，以开放心态拥抱科技，让AI助力实现更多奇思妙想，创造更绚烂多彩的世界。
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 

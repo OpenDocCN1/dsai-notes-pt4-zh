@@ -1,8 +1,9 @@
+
 # MCP for Beginners
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/TKm0dV7shoEzACx0HqMcPNXXnig](https://gotoaiworld.feishu.cn/docx/TKm0dV7shoEzACx0HqMcPNXXnig)
 
-# 一、Introduction-MCP for Beginners
+## 一、Introduction-MCP for Beginners
 
 > Let’s Learn MCP Series Recap: 8 Languages, 4 Code Bases, Full Resources
 
@@ -16,7 +17,7 @@ Let’s Learn MCP Series Recap: 8 Languages, 4 Code Bases, Full Resources.
 
 ![](img/737b5869e5298612b00bad07edadc247.png)
 
-# AI Repo of the Week: MCP for Beginners
+## AI Repo of the Week: MCP for Beginners
 
 [DanWahlin](https://techcommunity.microsoft.com/users/danwahlin/803709)
 
@@ -24,13 +25,13 @@ Microsoft
 
 May 23, 2025
 
-## **Introduction**
+### Introduction
 
 Welcome to this week’s spotlight in our AI Repo of the Week series—introducing the MCP for Beginners course, a fantastic starting point for AI developers and enthusiasts eager to navigate the world of Model Context Protocol (MCP). This open-source GitHub repository offers an in-depth exploration of MCP, an interface designed to extend the capabilities of AI models by integrating them with external tools, APIs, and data sources. Whether you’re new to MCP or looking to strengthen your understanding, this comprehensive resource is a perfect fit.
 
 The repository provides practical lessons and examples that guide developers through creating MCP servers in multiple programming environments, including C#, Python, Java, and TypeScript. A primary goal is to demystify the process of building scalable AI applications by employing standardized protocols. Here’s a quick overview of what you can expect from this repository.
 
-## Key Features & Learning Journey
+### Key Features & Learning Journey
 
 Getting Started with MCP
 
@@ -51,8 +52,6 @@ Here’s the complete MCP curriculum structure:
 +   Core Concepts Explained In-depth exploration of the core concepts of MCP, including client-server architecture, key protocol components, and messaging patterns.
 
 +   [Security in MCP](https://github.com/microsoft/mcp-for-beginners/blob/main/02-Security/README.md) Identifying security threats within MCP-based systems, techniques and best practices for securing implementations.
-
-+   Getting Started with MCP Environment setup and configuration, creating basic MCP servers and clients, integrating MCP with existing applications.
 
 +   [First server](https://github.com/microsoft/mcp-for-beginners/blob/main/03-GettingStarted/01-first-server/README.md) Setting up a basic server using the MCP protocol, understanding the server-client interaction, and testing the server.
 
@@ -82,11 +81,11 @@ Here’s the complete MCP curriculum structure:
 
 +   MCP Case Studies Deep-dives into MCP solution architectures, deployment blueprints and integration tips, annotated diagrams and project walkthroughs.
 
-## Practical Implementation
+### Practical Implementation
 
 Throughout the curriculum, you’ll explore key MCP concepts alongside diverse, hands-on samples that demonstrate practical applications in multiple programming languages. For example, a simple calculator server illustrates how MCP principles can be applied to build API endpoints for operations like addition, subtraction, multiplication, and division, complete with type safety and error handling.
 
-## Advanced Concepts and Case Study
+### Advanced Concepts and Case Study
 
 In addition to covering MCP fundamentals, the course will also walk you through more advanced topics as well. This includes learning about multi-modal integrations, highlighting how AI models can expand beyond text-only capabilities to include data types like images and audio. You’ll also learn about scalable MCP architectures, security, performance optimization, and more.
 
@@ -94,39 +93,30 @@ The course also walks you through an Azure AI Travel Agents case study that demo
 
 ![](img/38d0f0b7c8e3c382c9a3c68f44006f3d.png)
 
-## **Conclusion**
+### Conclusion
 
 MCP for Beginners is a great resource for anyone journeying into the realm of AI and MCP development. It provides developers with the necessary knowledge and tools to create flexible and scalable AI applications that can integrate with a variety of data sources.
 
-Dive[ into the reposito](https://github.com/microsoft/mcp-for-beginners)ry, experiment with the provided examples and tools, and quickly get up-to-speed on what MCP is and how you can begin using it. Visit the MCP for Beginners repository on GitHub, star it, and help drive forward the mission of better, standardized AI integrations.
+
+
+Dive into the [repository](https://github.com/microsoft/mcp-for-beginners), experiment with the provided examples and tools, and quickly get up-to-speed on what MCP is and how you can begin using it. Visit the MCP for Beginners repository on GitHub, star it, and help drive forward the mission of better, standardized AI integrations.
+
+# 二、Video-MCP for Beginners
 
 ## Additional AI Courses
 
 In addition to the MCP for Beginners course, check out the following courses as well:
 
-+   AI Agents For Beginners
-
-+   [Generative AI for ](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)Beginners using .NET
-
-+   [Generative AI for Beginn](https://github.com/microsoft/generative-ai-with-javascript)ers using JavaScript
-
-+   Generative AI for Beginners
-
-+   ML for Beginners
-
-+   Data Science for Beginners
-
-+   AI for Beginners
-
-+   [Mastering GitHub Copilot for A](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)I Paired Programming
-
-+   [Mastering GitHub Copilot fo](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)r C#/.NET Developers
-
-+   Choose Your Own Copilot Adventure
-
-# 二、Video-MCP for Beginners
-
-![](img/1f9e1a72a3a0f40c667472014bcbc96d.png)
++ AI Agents For Beginners
++ [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
++ [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
++ Generative AI for Beginners
++ ML for Beginners
++ Data Science for Beginners
++ AI for Beginners
++ [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
++ [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
++ Choose Your Own Copilot Adventure
 
 ## Sessions
 

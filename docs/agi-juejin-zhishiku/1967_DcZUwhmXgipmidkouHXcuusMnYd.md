@@ -1,9 +1,7 @@
-# 05.29-刚刚，新版DeepSeek-R1正式开源！直逼o3编程强到离谱，一手实测来了
-
-> 来源：[https://agijuejin.feishu.cn/docx/RfPbdciabotMXYxqEBPcIRHsnQg](https://agijuejin.feishu.cn/docx/RfPbdciabotMXYxqEBPcIRHsnQg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 05 月 29 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/RfPbdciabotMXYxqEBPcIRHsnQg](https://agijuejin.feishu.cn/docx/RfPbdciabotMXYxqEBPcIRHsnQg)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/a97c088e48571e8d099d7939419e6dcc.png)
@@ -84,7 +82,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/856/663.htm)
 
 ![](img/982c788ebce3dac6acf2b17f2ecf5ed8.png)
 
-5月2**8日，日**本参议院通过首部AI专门法律。该法旨在促进AI研发应用、防止滥用。拟设“AI战略本部”，制定“AI基本计划”，强调保持研发能力、提升产业竞争力。为防AI滥用，政府将调查侵权、给予企业建议指导，可公开涉事企业名称。另外，据白皮书，日本使用生成式AI的国民仅占9.1%，远低于美、德。
+5月28日，日本参议院通过首部AI专门法律。该法旨在促进AI研发应用、防止滥用。拟设“AI战略本部”，制定“AI基本计划”，强调保持研发能力、提升产业竞争力。为防AI滥用，政府将调查侵权、给予企业建议指导，可公开涉事企业名称。另外，据白皮书，日本使用生成式AI的国民仅占9.1%，远低于美、德。
 
 ### 💡 腾讯开源混元语音数字人模型：一张图一段音频就能让图中人物说话唱歌
 
@@ -100,7 +98,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/856/623.htm)
 
 ![](img/6a580b9ca406f3349ca62f7310c0e585.png)
 
-5**月28**日，挪威科技公司Opera推出代理浏览器Opera Neon，定义为“代理浏览器”，具备上下文感知能力。观点1：高级人工智能产品总监亨里克・莱克索称，人工智能可改变互联网使用和浏览器任务执行方式，Neon将此能力带到用户指尖。Neon搭载AI引擎，借助云AI代理完成任务，能创建多种内容、离线处理多任务。它还提供AI工具，配备“浏览器操作员”。这是Opera继2月后推出的第五款浏览器，发布时间和价格未透露，是付费订阅产品 。
+5月28日，挪威科技公司Opera推出代理浏览器Opera Neon，定义为“代理浏览器”，具备上下文感知能力。观点1：高级人工智能产品总监亨里克・莱克索称，人工智能可改变互联网使用和浏览器任务执行方式，Neon将此能力带到用户指尖。Neon搭载AI引擎，借助云AI代理完成任务，能创建多种内容、离线处理多任务。它还提供AI工具，配备“浏览器操作员”。这是Opera继2月后推出的第五款浏览器，发布时间和价格未透露，是付费订阅产品 。
 
 ### 💡 消息称字节跳动内部将禁用第三方 AI 开发软件，用自家 Trae 替代
 
@@ -124,7 +122,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/856/572.htm)
 
 ![](img/f452cc908283c5bee0b330c6d2587ed8.png)
 
-5月28**日消息，**WordPress宣布成立AI团队，由Automattic的AI负责人James LePage领衔。成员来自谷歌等公司。WordPress作为主流网站构建平台，其开源社区早有开发者尝试AI工具。此次团队组建意在系统推进和协调AI开发。执行董事Mary Hubbard称统一团队领导可确保发展方向契合长期目标。目前，该社区已推出660款AI插件，如AI网站模板构建器等 。
+5月28日消息，WordPress宣布成立AI团队，由Automattic的AI负责人James LePage领衔。成员来自谷歌等公司。WordPress作为主流网站构建平台，其开源社区早有开发者尝试AI工具。此次团队组建意在系统推进和协调AI开发。执行董事Mary Hubbard称统一团队领导可确保发展方向契合长期目标。目前，该社区已推出660款AI插件，如AI网站模板构建器等 。
 
 ### 💡 Anthropic 为 Claude 聊天机器人推出语音模式
 

@@ -1,27 +1,20 @@
+
 # 网文创作提示词（通用/玄幻）
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/UlutdTPQeow4BtxaLbvc6oP4nyc](https://vxc3hj17dym.feishu.cn/docx/UlutdTPQeow4BtxaLbvc6oP4nyc)
-
+> 来源：https://vxc3hj17dym.feishu.cn/docx/UlutdTPQeow4BtxaLbvc6oP4nyc
+>
 > 关于作者：
-
+>
 > 作者：猫叔
-
 > 70后AI粉丝
-
 > 创作领域：提示词、AI艺术创作
-
 >
-
-> -WaytoAGI专栏作者
-
-> -MidJourney中国区核心创作者
-
-> -可灵 & 即梦超级创作者
-
+> - WaytoAGI专栏作者
+> - MidJourney中国区核心创作者
+> - 可灵 & 即梦超级创作者
 >
-
 > AI艺术与创作引领者，推动AI创作在中国区的发展，启发了众多创作者加入AI艺术领域。近期专注提示词设计，推动创作效率和表现力的提升。
-
+>
 > 👸号：AI替代人类
 
 因为要帮人做世界观故事，所以一时兴起搓了这么个东西；两个版本，下面这个是 lisp 格式，用POE 的 Claude-3.5-Sonnet-200k 测试没什么问题，默认是玄幻类型，可以自己改，字数的话也可以自由调整，这些其实都可以在对话时提要求；
@@ -113,7 +106,7 @@
           (type-features (web-novel-analyze-type type)))
       (append keywords type-features))))
 
-(defun web-novel-design-narrative (content &amp;optional length)
+(defun web-novel-design-narrative (content &optional length)
   &quot;设计叙述策略&quot;
   (let ((base-length (or length 3000)))
     `((总字数 . ,base-length)
@@ -131,7 +124,7 @@
                   p))
               paragraphs))))
 
-(defun web-novel-create-writing-guide (input &amp;optional type length)
+(defun web-novel-create-writing-guide (input &optional type length)
   &quot;生成写作指导建议&quot;
   (when (stringp input)
     (let* ((config (web-novel-config-create))

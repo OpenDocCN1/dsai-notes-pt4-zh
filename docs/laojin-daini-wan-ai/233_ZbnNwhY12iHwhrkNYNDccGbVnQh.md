@@ -1,3 +1,4 @@
+
 # OpenClaw1184个恶意插件Claude找出500个零日漏洞，老金开源个安全Skill你直接拿去用
 
 > 来源：[https://my.feishu.cn/docx/O7wNd47M7oyccaxueQhcammanPf](https://my.feishu.cn/docx/O7wNd47M7oyccaxueQhcammanPf)
@@ -26,19 +27,19 @@ Claude Code Security目前只对Enterprise和Team客户开放，普通人用不�
 
 老金我帮你列几个关键数据。
 
-**1184个恶意Skill**
+### 1184个恶意Skill
 
 ClawHavoc事件中，ClawHub上被发现1184个恶意Skill。
 
 伪装成正常工具，实际在偷数据、注入恶意指令。
 
-**数据窃取实测**
+### 数据窃取实测
 
 Cisco测试了一个第三方OpenClaw Skill，发现它在用户不知情的情况下执行了数据窃取和提示词注入。
 
-一个精心构造的WhatsApp消息就能触发OpenClaw读取 .env和 creds.json文件——里面存着API密钥和登录凭证。
+一个精心构造的WhatsApp消息就能触发OpenClaw读取`.env`和`creds.json`文件——里面存着API密钥和登录凭证。
 
-**150万API Token泄露**
+### 150万API Token泄露
 
 OpenClaw生态里的Agent社交网络Moltbook，数据库直接泄露了35000个邮箱和150万个API Token。
 
@@ -56,13 +57,13 @@ AI Agent越强大、权限越高，攻击面就越大。
 
 看完这些安全事件，老金我第一反应是——我自己的代码安全吗？
 
-**Claude **Code Security用不了，但有个开源替代品叫 Semgrep。
+Claude Code Security用不了，但有个开源替代品叫`Semgrep`。
 
 目前最流行的开源代码安全扫描工具，支持几十种编程语言，覆盖OWASP Top 10。
 
 不是AI推理，是规则匹配，但胜在免费、快速、成熟。
 
-老金我干了一件事：把Semgrep做成了一个 Claude Code Skill。
+老金我干了一件事：把`Semgrep`做成了一个Claude Code Skill。
 
 以后在Claude Code里说句中文就能触发安全扫描，不用记任何命令。
 
@@ -91,15 +92,15 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 安装脚本会自动：
 
-1、检测Python（未安装会提示下载链接）
+1、检测`Python`（未安装会提示下载链接）
 
-2、检测并安装Semgrep（未安装会自动 pip install）
+2、检测并安装`Semgrep`（未安装会自动`pip install`）
 
-3、复制SKILL.md到 ~/.claude/skills/code-security/
+3、复制`SKILL.md`到`~/.claude/skills/code-security/`
 
 4、验证安装成功
 
-**装完不需要重启Claude** Code。Hot Reloading 会自动加载新Skill。
+**装完不需要重启Claude Code**。Hot Reloading会自动加载新Skill。
 
 ## 怎么用
 
@@ -115,13 +116,13 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 扫一下有没有漏洞
 ```
 
-也可以用斜杠命令：/code-security
+也可以用斜杠命令：`/code-security`
 
-Claude Code会自动匹配到这个Skill，调用Semgrep执行扫描，然后给你一份结构化的安全报告。
+Claude Code会自动匹配到这个Skill，调用`Semgrep`执行扫描，然后给你一份结构化的安全报告。
 
 按高危/中危/低危分类，每个问题附带修复建议。
 
-**支持的扫描模式**
+### 支持的扫描模式
 
 ![](img/d2d524f889f2535b66a1352f17717427.png)
 
@@ -129,13 +130,13 @@ Claude Code会自动匹配到这个Skill，调用Semgrep执行扫描，然后给
 
 如果你不想跑安装脚本，手动创建也行。
 
-在 ~/.claude/skills/code-security/ 目录下新建一个 SKILL.md，内容如下：
+在`~/.claude/skills/code-security/`目录下新建一个`SKILL.md`，内容如下：
 
 ```
 ---
 name: code-security
-description: &quot;Runs Semgrep security scans on the current project to detect vulnerabilities, secrets leakage, and OWASP Top 10 issues. Use when the user asks for security scanning, vulnerability detection, or says 安全扫描, 扫漏洞, 安全检查, 漏洞检测.&quot;
-version: &quot;1.0&quot;
+description: "Runs Semgrep security scans on the current project to detect vulnerabilities, secrets leakage, and OWASP Top 10 issues. Use when the user asks for security scanning, vulnerability detection, or says 安全扫描, 扫漏洞, 安全检查, 漏洞检测."
+version: "1.0"
 context: fork
 ---
 
@@ -152,10 +153,10 @@ semgrep --version
 ## 扫描模式
 
 1、全面扫描（默认）：semgrep scan --config auto
-2、OWASP安全审计：semgrep scan --config &quot;p/security-audit&quot;
-3、密钥泄露检测：semgrep scan --config &quot;p/secrets&quot;
-4、Python专项：semgrep scan --config &quot;p/python&quot;
-5、JS/TS专项：semgrep scan --config &quot;p/javascript&quot;
+2、OWASP安全审计：semgrep scan --config "p/security-audit"
+3、密钥泄露检测：semgrep scan --config "p/secrets"
+4、Python专项：semgrep scan --config "p/python"
+5、JS/TS专项：semgrep scan --config "p/javascript"
 
 ## 扫描流程
 
@@ -168,21 +169,21 @@ semgrep --version
 6、输出结构化报告并给出修复建议
 ```
 
-全局Skill放在 ~/.claude/skills/code-security/SKILL.md，所有项目都能用。
+全局Skill放在`~/.claude/skills/code-security/SKILL.md`，所有项目都能用。
 
-项目级Skill放在 .claude/skills/code-security/SKILL.md，仅当前项目可用。
+项目级Skill放在`.claude/skills/code-security/SKILL.md`，仅当前项目可用。
 
 ## SKILL.md官方格式说明
 
-文件开头的 --- 块是YAML元数据，官方支持的关键字段：
+文件开头的`---`块是YAML元数据，官方支持的关键字段：
 
 ![](img/890cf6c6c7a59cd0bf6ad9409f9520fa.png)
 
-description 是最关键的字段。
+`description`是最关键的字段。
 
-Claude Code用它做语义匹配——你说"安全扫描"，它去匹配所有Skill的description，找最相关的加载。
+Claude Code用它做语义匹配——你说"安全扫描"，它去匹配所有Skill的`description`，找最相关的加载。
 
-所以description里要把触发条件写清楚，中英文触发词都可以放进去。
+所以`description`里要把触发条件写清楚，中英文触发词都可以放进去。
 
 ---
 
@@ -190,7 +191,7 @@ Claude Code用它做语义匹配——你说"安全扫描"，它去匹配所有S
 
 ![](img/bb4b5b37f2ed49e68eaea5ee0f60cc63.png)
 
-日常开发用Semgrep做基础安全扫描，等Claude Code Security开放后再升级。
+日常开发用`Semgrep`做基础安全扫描，等Claude Code Security开放后再升级。
 
 两个工具解决不同层面的问题，不冲突。
 
@@ -208,7 +209,7 @@ Anthropic用AI找出了500个人类和传统工具都漏掉的漏洞。
 
 SecureClaw给OpenClaw做了55项安全审计，覆盖OWASP ASI Top 10全部10项。
 
-EvoMap从底层协议重新设计，内置5层安全检查，默认dry-run模式。
+EvoMap从底层协议重新设计，内置5层安全检查，默认`dry-run`模式。
 
 但老金我觉得，与其等别人解决问题，不如先把自己的代码扫一遍。
 

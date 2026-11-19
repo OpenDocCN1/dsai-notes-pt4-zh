@@ -1,8 +1,7 @@
-# 12.25-消息称谷歌正为 Chrome 浏览器引入“Glic”AI 功能，基于 Gemini Live 大模型打造
-
-> 来源：[https://agijuejin.feishu.cn/docx/F5G2di0TioB2tkxgfCLcK3T0nFd](https://agijuejin.feishu.cn/docx/F5G2di0TioB2tkxgfCLcK3T0nFd)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 25 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/F5G2di0TioB2tkxgfCLcK3T0nFd](https://agijuejin.feishu.cn/docx/F5G2di0TioB2tkxgfCLcK3T0nFd)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

@@ -1,3 +1,4 @@
+
 # 做一个消除类小游戏总共分几步？
 
 > 来源：[https://huchegames.feishu.cn/docx/WEssdb6WooCegUxtBEtc1ovungh](https://huchegames.feishu.cn/docx/WEssdb6WooCegUxtBEtc1ovungh)
@@ -6,7 +7,7 @@
 
 ---
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/hXvdl064rhw8nIq_WAJFjA)q.com/s/hXvdl064...
+> 🔗 原文链接：<https://mp.weixin.qq.com/s/hXvdl064rhw8nIq_WAJFjA>
 
 > ⏰ 做个小游戏2025年05月27日 18:11  广东
 

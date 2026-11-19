@@ -1,3 +1,4 @@
+
 # 推荐系统之召回
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/MrgydfsLBoe3grxKoFIcmmydnkc](https://v11enp9ok1h.feishu.cn/docx/MrgydfsLBoe3grxKoFIcmmydnkc)
@@ -12,11 +13,9 @@
 
 ![](img/eee6a3c7d421aa1f41b919c50f2e1a2f.png)
 
-> **Swing**额外考虑重合的⽤户是否来⾃⼀个⼩圈⼦，两个⽤户重合度⼤，则可能来⾃⼀个⼩圈⼦，权重降低。
+> `Swing`额外考虑重合的⽤户是否来⾃⼀个⼩圈⼦，两个⽤户重合度⼤，则可能来⾃⼀个⼩圈⼦，权重降低。
 
-###
-
-### **基于用户的协同过滤**
+### 基于用户的协同过滤
 
 ![](img/53347c7bb7c7a226102f4fe335c90317.png)
 
@@ -24,18 +23,17 @@
 
 同样是离线计算索引，在线召回的流程
 
-
 ![](img/4799b69acccf790cc918457faae5986e.png)
 
 离散特征处理
 
 ![](img/892b26b5472e0ab9ea9e5ba588b7183f.png)
 
-Embedding 层参数数量=向量维度× 类别数量
+`Embedding` 层参数数量=向量维度× 类别数量
 
 ![](img/f09746d82933ddc8428f53b41bee39b7.png)
 
-### **矩阵补充模型**
+### 矩阵补充模型
 
 ![](img/9d433a45a074530cc6848f83f0b6baca.png)
 
@@ -47,31 +45,31 @@ Embedding 层参数数量=向量维度× 类别数量
 
 ![](img/d0aac086d4e5f6927fb9f8048aeab1ce.png)
 
-**训练好后线上召回**
+#### 训练好后线上召回
 
 ![](img/e1ff235553b9fefcffb654cb110c49a9.png)
 
-### **双塔模型**
+### 双塔模型
 
-除了ID还要考虑一些离散特征、连续特征；离散特征可以用Embedding Layers，连续特征可以归一化、分桶等处理
+除了`ID`还要考虑一些离散特征、连续特征；离散特征可以用`Embedding Layers`，连续特征可以归一化、分桶等处理
 
 ![](img/b49d7f382733d36aa95af6ab4cd82af4.png)
 
-训练方式主要有pointwise、pairwise、listwise
+训练方式主要有`pointwise`、`pairwise`、`listwise`
 
 ![](img/a791fbdc1de00b0963544cda6f3b0e38.png)
 
-pointwise就是常规的分类的思想
+`pointwise`就是常规的分类的思想
 
 ![](img/e2a4d3d4cd5b47aeeaf257559ed7ea6a.png)
 
-pairwise希望拉开用户与正负样本的距离
+`pairwise`希望拉开用户与正负样本的距离
 
 ![](img/a312f68e9c107b3ec8d6f2cb250eb42f.png)
 
 ![](img/dd28d8ccc510fd50da40904ff4a819c4.png)
 
-listwise考虑更多的负样本
+`listwise`考虑更多的负样本
 
 ![](img/86edc3c25051de09849dba6c27ad493f.png)
 
@@ -83,18 +81,17 @@ listwise考虑更多的负样本
 
 ![](img/875664afa6c7ca18ce37c763e65964bc.png)
 
-简单负样本可以是全体物品（考虑非均匀采样打压热门物品）或者Batch内负样本
+简单负样本可以是全体物品（考虑非均匀采样打压热门物品）或者`Batch`内负样本
 
 困难负样本主要考虑被召回，但是被排序淘汰的样本
 
 ![](img/5aa118268803d0ee5be130ae5bd81943.png)
 
-**一个常见的错误！**
-
+#### 一个常见的错误！
 
 ![](img/e99d0b0dafffe88c611858f4949442e2.png)
 
-**双塔模型的线上召回和更新**
+#### 双塔模型的线上召回和更新
 
 +   ⽤户兴趣动态变化，⽽物品特征相对稳定，事先存储物品向量 ，线上现算⽤户向量
 
@@ -106,7 +103,7 @@ listwise考虑更多的负样本
 
 ![](img/d13d92800b7edfda259b204f550197ef.png)
 
-双塔模型的问题
+#### 双塔模型的问题
 
 ![](img/e6a8fa63e762e97e77eddca3e5418422.png)
 
@@ -114,7 +111,7 @@ listwise考虑更多的负样本
 
 ![](img/102ee96c840dc5b5e6a661d7fa069291.png)
 
-**自监督学习**
+#### 自监督学习
 
 ![](img/1453cb58e0813c78859525182a631382.png)
 
@@ -128,7 +125,7 @@ listwise考虑更多的负样本
 
 ![](img/660813861162fc77c66097494e5ffe69.png)
 
-**训练模型**
+#### 训练模型
 
 ![](img/24ee3f0b8f76b7d6db67f2b2b39799e1.png)
 
@@ -136,41 +133,45 @@ listwise考虑更多的负样本
 
 ![](img/4ea2031f2c5aadde530833d99bb29a60.png)
 
-**Deep Retrieval** 把物品表征为路径（path），线上查找⽤户最匹配的路径
+#### `Deep Retrieval`
+
+`Deep Retrieval` 把物品表征为路径（`path`），线上查找⽤户最匹配的路径
 
 ![](img/c4aabf0b32139cae0f511d1779399637.png)
 
 ![](img/15198effe1b0e7e5ad04aa75cdd8ad35.png)
 
-其他召回通道
+## 其他召回通道
 
 ⽤户可能对附近、同城发⽣的事感兴趣
 
-+   索引：GeoHash优质笔记列表（按时间倒排）
++   索引：`GeoHash`优质笔记列表（按时间倒排）
 
 +   索引：城市优质笔记列表（按时间倒排）
 
-关注作者召回
+### 关注作者召回
 
 ![](img/03fee19165f8e50fced34c85d384c19b.png)
 
-有交互的作者召回
+### 有交互的作者召回
 
 ![](img/3a18ce898cadd1bc4e72acbb6ea7e247.png)
 
-相似作者召回
+### 相似作者召回
 
 ![](img/039d130b0df48cf693a6839879dddade.png)
 
-缓存召回，缓存⼤⼩固定，需要退场机制。
+### 缓存召回
+
+缓存⼤⼩固定，需要退场机制。
 
 ![](img/7b6f9260cd2653dfdc45bc1e7fd6cd90.png)
 
-曝光过滤问题
+### 曝光过滤问题
 
 ![](img/b36d25808208fa57357163f8a712806a.png)
 
-Bloom filter 判断⼀个物品ID是否在已曝光的物品集合中
+`Bloom filter` 判断⼀个物品`ID`是否在已曝光的物品集合中
 
 ![](img/e6a3f9c3ca49f9dd34af38ebd30a22cb.png)
 

@@ -1,3 +1,4 @@
+
 # 说话就能让AI写出顶级代码？Vercel官方经验包来了
 
 > 来源：[https://my.feishu.cn/docx/Km6YdBaQoodsMKxMYVecOWxfn8W](https://my.feishu.cn/docx/Km6YdBaQoodsMKxMYVecOWxfn8W)
@@ -14,11 +15,11 @@ Vercel就是网页版的GitHub，全世界数百万网站都用它托管。
 
 有字节跳动、Adobe、IBM这些巨头。
 
-**现在V**ercel把内部多年积累的开发经验，打包成了一个 经验包。
+现在Vercel把内部多年积累的开发经验，打包成了一个 `agent-skills` 经验包。
 
 你不用学技术，不用背规则，甚至不用看文档。
 
-**只要正常跟AI说话，AI就**会自动按照 Vercel的专业标准 来干活。
+只要正常跟AI说话，AI就会自动按照 Vercel的专业标准 来干活。
 
 我们常会发现AI有时候会写出一些质量不太好的代码。
 
@@ -26,7 +27,7 @@ Vercel就是网页版的GitHub，全世界数百万网站都用它托管。
 
 这些问题不是说AI不懂，而是它不知道"专业的开发标准是什么"。
 
-Vercel Labs开源的agent-skills，就是解决这个问题的。
+Vercel Labs开源的`agent-skills`，就是解决这个问题的。
 
 把Vercel官方多年积累的开发经验，打包成AI可以直接调用的技能包。
 
@@ -42,15 +43,15 @@ Vercel Labs开源的agent-skills，就是解决这个问题的。
 
 ![](img/02811e2f6179635dc10f975b8509bce0.png)
 
-并且在 Skills.sh 上仅**次于**老金分享的findskill，位居 第二。
+并且在 `Skills.sh` 上仅次于老金分享的`findskill`，位居 第二。
 
 ![](img/6ff0f3638688517f9fcae628b0a29899.png)
 
-## **怎么安装？**
+## 怎么安装？
 
 就一行命令。
 
-打开电脑的终端（Windows用户叫CMD或PowerShell），复制下面这行，回车。
+打开电脑的终端（Windows用户叫`CMD`或`PowerShell`），复制下面这行，回车。
 
 ```
 npx skills add vercel-labs/agent-skills
@@ -74,7 +75,7 @@ npx skills add vercel-labs/agent-skills
 
 **请转换为文科生，进行大声背诵。**
 
-### react-best-practices（性能优化）
+### `react-best-practices`（性能优化）
 
 说这些话会触发：
 
@@ -108,7 +109,7 @@ JS微优化：让代码运行更快。
 
 根据GitHub上的反馈，有用户用这个优化网页，加载时间从3.2秒降到1.9秒，快了差不多40%。
 
-### web-design-guidelines（网页检查）
+### `web-design-guidelines`（网页检查）
 
 说这些话会触发：
 
@@ -126,7 +127,7 @@ JS微优化：让代码运行更快。
 
 你写完网页，说一句"检查一下有没有问题"，它就会一条一条列出来。
 
-### react-native-skills（手机优化）
+### `react-native-skills`（手机优化）
 
 说这些话会触发：
 
@@ -151,11 +152,11 @@ React Native性能优化
 
 状态管理：让数据管理更清晰。
 
-根据社区反馈，对于一个列表卡顿的问题，技能会直接指出应该用FlashList。
+根据社区反馈，对于一个列表卡顿的问题，技能会直接指出应该用`FlashList`。
 
-FlashList是一种优化过的列表组件。
+`FlashList`是一种优化过的列表组件。
 
-### composition-patterns（代码结构）
+### `composition-patterns`（代码结构）
 
 说这些话会触发：
 
@@ -168,7 +169,7 @@ FlashList是一种优化过的列表组件。
 
 AI会帮你重构成更清晰的代码结构。
 
-### vercel-deploy-claimable（一键部署）
+### `vercel-deploy-claimable`（一键部署）
 
 这个需要注意，使用的是Vercel自身的代理，需要魔法才能登录网站。
 
@@ -198,7 +199,7 @@ AI会帮你重构成更清晰的代码结构。
 
 ---
 
-**记住：技能是自动触发的，只要正常跟AI对**话，它会在合适的时机自动调用对应的技能。
+记住：技能是自动触发的，只要正常跟AI对话，它会在合适的时机自动调用对应的技能。
 
 ## 和其他AI技能有什么区别
 

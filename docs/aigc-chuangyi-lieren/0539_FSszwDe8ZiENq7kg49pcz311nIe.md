@@ -1,8 +1,9 @@
+
 # 018-ChatGPT 4o多模态文生图高级提示词
 
 > 来源：[https://aigcreative.feishu.cn/docx/Ggr1d9M0EoTt4Ox6CQncMsbLnQe](https://aigcreative.feishu.cn/docx/Ggr1d9M0EoTt4Ox6CQncMsbLnQe)
 
-# Music Streaming App 音乐流媒体应用程序
+## Music Streaming App 音乐流媒体应用程序
 
 ```
 Prompt:
@@ -52,7 +53,7 @@ Design Requirements
 Functional Needs:
 Vast music library with curated playlists tailored to user preferences (e.g., mood-based or activity-based).
 High-resolution audio streaming (lossless quality) for premium subscribers.
-Social features like collaborative playlists, live listening parties, and artist Q&amp;A sessions.
+Social features like collaborative playlists, live listening parties, and artist Q&A sessions.
 Tools for independent artists to upload tracks, track analytics, and monetize directly through fan subscriptions or donations.
 
 Visual Design:
@@ -63,7 +64,7 @@ Intuitive navigation for discovering new music, podcasts, or audiobooks.
 
 ![](img/18609953d9986deb7bf242ca2477c205.png)
 
-# Personal Finance / Online Bank 个人理财/网上银行
+## Personal Finance / Online Bank 个人理财/网上银行
 
 ```
 The goal is to develop a web app offering a comprehensive digital banking platform with a focus on multi-currency accounts, investment tools, and seamless international transactions. This competitor will differentiate itself by prioritizing user privacy, enhanced financial education, and tailored solutions for diverse customer needs, including families, frequent travelers, and small business owners.
@@ -119,7 +120,7 @@ Light/dark mode options for user comfort.
 
 ![](img/d1c43ed9c45a1519cc66859946746e40.png)
 
-# Short term rental app 短期租赁应用程序
+## Short term rental app 短期租赁应用程序
 
 ```
 The goal is to create a web app offering a platform for short-term rentals and unique travel experiences. This competitor will differentiate itself through enhanced trust, transparency, and curated offerings tailored to specific traveler needs, such as families, business professionals, and adventure seekers.
@@ -177,178 +178,184 @@ High-quality visuals showcasing properties and activities.
 
 ![](img/c5ed125227694d222b9615cfd5a0c24d.png)
 
-# Maps 地图
+## Maps 地图
 
-```
+
+
+# Navigation and Mapping App 导航与地图应用
+
 The aim is to design a web app offering a user-friendly, privacy-focused, and feature-rich navigation and mapping platform. This app will differentiate itself by emphasizing offline capabilities, real-time updates, and personalized route planning while addressing common criticisms of Google Maps, such as privacy concerns and data dependency.
 
-Key Goals and Objectives
-Primary Goals:
-Provide accurate navigation for driving, walking, cycling, and public transport.
-Offer robust offline functionality with downloadable maps for entire regions or countries.
-Deliver real-time traffic updates, hazard alerts, and route optimization.
+## Key Goals and Objectives
 
-Secondary Goals:
-Prioritize user privacy by avoiding unnecessary data collection.
-Include customizable features like route preferences (e.g., avoiding tolls or highways) and multi-stop route planning.
-Support integration with third-party apps (e.g., ride-sharing services, travel planners).
+### Primary Goals:
+- Provide accurate navigation for driving, walking, cycling, and public transport.
+- Offer robust offline functionality with downloadable maps for entire regions or countries.
+- Deliver real-time traffic updates, hazard alerts, and route optimization.
 
-Target Audience
+### Secondary Goals:
+- Prioritize user privacy by avoiding unnecessary data collection.
+- Include customizable features like route preferences (e.g., avoiding tolls or highways) and multi-stop route planning.
+- Support integration with third-party apps (e.g., ride-sharing services, travel planners).
 
-Primary Users:
-Travelers seeking reliable navigation in areas with limited internet connectivity.
-Privacy-conscious individuals who prefer alternatives to Google’s data-driven ecosystem.
-Commuters, delivery drivers, and logistics professionals needing precise routing and real-time updates.
+## Target Audience
 
-Demographics:
-Age: 18–60 years old.
-Tech-savvy individuals, frequent travelers, and professionals in urban and rural areas.
+### Primary Users:
+- Travelers seeking reliable navigation in areas with limited internet connectivity.
+- Privacy-conscious individuals who prefer alternatives to Google’s data-driven ecosystem.
+- Commuters, delivery drivers, and logistics professionals needing precise routing and real-time updates.
 
-Competitor Analysis
+### Demographics:
+- Age: 18–60 years old.
+- Tech-savvy individuals, frequent travelers, and professionals in urban and rural areas.
 
-Google Maps:
-Strengths: Comprehensive global coverage, real-time updates, integration with Google’s ecosystem.
-Weaknesses: Heavy reliance on user data; inconsistent offline performance in remote areas.
+## Competitor Analysis
 
-Waze:
-Strengths: Community-driven traffic alerts and real-time updates.
-Weaknesses: Limited offline functionality; focused primarily on drivers.
+### Google Maps:
+- Strengths: Comprehensive global coverage, real-time updates, integration with Google’s ecosystem.
+- Weaknesses: Heavy reliance on user data; inconsistent offline performance in remote areas.
 
-HERE WeGo:
-Strengths: Excellent offline maps; intuitive interface for international travelers.
-Weaknesses: Limited community-driven updates compared to competitors.
-Design Requirements
+### Waze:
+- Strengths: Community-driven traffic alerts and real-time updates.
+- Weaknesses: Limited offline functionality; focused primarily on drivers.
 
-Functional Needs:
-Turn-by-turn navigation with voice guidance for driving, walking, cycling, and public transport.
-Offline maps with detailed information on streets, landmarks, and points of interest (POIs).
-Real-time traffic updates integrated with hazard alerts (e.g., accidents, road closures).
-Multi-stop route planning with options to customize routes based on user preferences.
+### HERE WeGo:
+- Strengths: Excellent offline maps; intuitive interface for international travelers.
+- Weaknesses: Limited community-driven updates compared to competitors.
 
-Visual Design:
-Clean interface with a focus on simplicity and usability.
-Customizable themes (e.g., light/dark mode).
-High-quality visuals for maps (satellite view, terrain view) with smooth zooming.
-```
+## Design Requirements
+
+### Functional Needs:
+- Turn-by-turn navigation with voice guidance for driving, walking, cycling, and public transport.
+- Offline maps with detailed information on streets, landmarks, and points of interest (POIs).
+- Real-time traffic updates integrated with hazard alerts (e.g., accidents, road closures).
+- Multi-stop route planning with options to customize routes based on user preferences.
+
+### Visual Design:
+- Clean interface with a focus on simplicity and usability.
+- Customizable themes (e.g., light/dark mode).
+- High-quality visuals for maps (satellite view, terrain view) with smooth zooming.
 
 ![](img/08aed27b5b6f78e877c9c270ddd8938f.png)
 
 # Clothes e-commerce 服装电商
 
-```
 The goal is to create a fashion e-commerce platform offering a personalized, user-friendly, and sustainable shopping experience. This app will differentiate itself through a focus on eco-friendly products, advanced AI-driven styling recommendations, and seamless integration with social media platforms while maintaining affordability and accessibility for users across Europe.
 
-Key Goals and Objectives
-Primary Goals:
-Provide a vast selection of fashion products from established brands and emerging designers.
-Offer advanced personalization through AI-driven styling recommendations based on user preferences and purchase history.
-Emphasize sustainability by highlighting eco-friendly products and promoting responsible fashion practices.
+## Key Goals and Objectives
 
-Secondary Goals:
-Integrate social features like influencer partnerships, user-generated content, and live shopping events.
-Ensure seamless checkout processes with flexible payment options and fast shipping.
-Support small businesses and independent designers through dedicated platforms or marketplaces.
+### Primary Goals:
+- Provide a vast selection of fashion products from established brands and emerging designers.
+- Offer advanced personalization through AI-driven styling recommendations based on user preferences and purchase history.
+- Emphasize sustainability by highlighting eco-friendly products and promoting responsible fashion practices.
 
-Target Audience
+### Secondary Goals:
+- Integrate social features like influencer partnerships, user-generated content, and live shopping events.
+- Ensure seamless checkout processes with flexible payment options and fast shipping.
+- Support small businesses and independent designers through dedicated platforms or marketplaces.
 
-Primary Users:
-Young adults (18–35) interested in fashion, sustainability, and social media.
-Environmentally conscious consumers seeking eco-friendly fashion options.
-Fashion enthusiasts looking for unique styles from emerging designers.
+## Target Audience
 
-Demographics:
-Global reach with a focus on urban, tech-savvy individuals in Europe who value fashion and sustainability.
+### Primary Users:
+- Young adults (18–35) interested in fashion, sustainability, and social media.
+- Environmentally conscious consumers seeking eco-friendly fashion options.
+- Fashion enthusiasts looking for unique styles from emerging designers.
 
-Competitor Analysis
+### Demographics:
+- Global reach with a focus on urban, tech-savvy individuals in Europe who value fashion and sustainability.
 
-Zalando:
-Strengths: Wide product range, strong brand recognition, user-friendly interface.
-Weaknesses: Limited focus on sustainability; less emphasis on social features.
+## Competitor Analysis
 
-ASOS:
-Strengths: Extensive product offerings; strong social media presence.
-Weaknesses: Higher return rates due to sizing issues; less focus on eco-friendly products.
+### Zalando:
+- Strengths: Wide product range, strong brand recognition, user-friendly interface.
+- Weaknesses: Limited focus on sustainability; less emphasis on social features.
 
-H&amp;M:
-Strengths: Affordable prices; strong brand identity.
-Weaknesses: Criticized for unsustainable practices; less emphasis on online personalization.
-Farfetch:
-Strengths: Luxury brand offerings; strong focus on high-end fashion.
-Weaknesses: Higher price points; less accessible to budget-conscious consumers.
+### ASOS:
+- Strengths: Extensive product offerings; strong social media presence.
+- Weaknesses: Higher return rates due to sizing issues; less focus on eco-friendly products.
 
-Design Requirements
+### H&M:
+- Strengths: Affordable prices; strong brand identity.
+- Weaknesses: Criticized for unsustainable practices; less emphasis on online personalization.
 
-Functional Needs:
-Advanced search and filtering options for sustainable products (e.g., organic materials, second-hand items).
-AI-powered styling recommendations based on user preferences, body type, and purchase history.
-Social features like influencer collaborations, user-generated content showcases, and live shopping events.
-Seamless checkout process with multiple payment options (e.g., Klarna, PayPal).
+### Farfetch:
+- Strengths: Luxury brand offerings; strong focus on high-end fashion.
+- Weaknesses: Higher price points; less accessible to budget-conscious consumers.
 
-Visual Design:
-Clean interface with customizable themes (light/dark mode).
-High-quality product visuals with 360-degree views and detailed product information.
-Intuitive navigation for discovering new brands, trends, or sustainable products.
-```
+## Design Requirements
+
+### Functional Needs:
+- Advanced search and filtering options for sustainable products (e.g., organic materials, second-hand items).
+- AI-powered styling recommendations based on user preferences, body type, and purchase history.
+- Social features like influencer collaborations, user-generated content showcases, and live shopping events.
+- Seamless checkout process with multiple payment options (e.g., Klarna, PayPal).
+
+### Visual Design:
+- Clean interface with customizable themes (light/dark mode).
+- High-quality product visuals with 360-degree views and detailed product information.
+- Intuitive navigation for discovering new brands, trends, or sustainable products.
 
 ![](img/d276f58e2c8e3157b676c308fcc478ee.png)
 
 # Trading app 交易应用程序
 
-```
 The objective is to create a modern, intuitive, and feature-rich trading web app that caters to both beginner and advanced traders. The app will emphasize simplicity, customization, and real-time data to provide users with a seamless trading experience while differentiating itself from competitors like Robinhood.
 
-Key Goals and Objectives
-Primary Goals:
-Offer real-time trading capabilities across multiple asset classes (stocks, crypto, ETFs, options).
-Provide advanced tools like customizable dashboards, technical analysis charts, and market insights.
-Ensure accessibility across devices with a responsive web design.
+## Key Goals and Objectives
 
-Secondary Goals:
-Incorporate educational resources for beginner traders.
-Introduce gamification elements to boost engagement without trivializing financial decisions.
-Maintain low transaction fees to attract cost-conscious users.
+### Primary Goals:
+- Offer real-time trading capabilities across multiple asset classes (stocks, crypto, ETFs, options).
+- Provide advanced tools like customizable dashboards, technical analysis charts, and market insights.
+- Ensure accessibility across devices with a responsive web design.
 
-Target Audience
+### Secondary Goals:
+- Incorporate educational resources for beginner traders.
+- Introduce gamification elements to boost engagement without trivializing financial decisions.
+- Maintain low transaction fees to attract cost-conscious users.
 
-Primary Users:
-Beginner investors seeking educational tools and simplified trading processes.
-Experienced traders requiring advanced analytics, real-time data, and customizable features.
+## Target Audience
 
-Demographics:
-Age: 20–50 years old.
-Tech-savvy individuals interested in personal finance and investments.
-Income: Middle to high-income earners.
+### Primary Users:
+- Beginner investors seeking educational tools and simplified trading processes.
+- Experienced traders requiring advanced analytics, real-time data, and customizable features.
 
-Competitor Analysis
+### Demographics:
+- Age: 20–50 years old.
+- Tech-savvy individuals interested in personal finance and investments.
+- Income: Middle to high-income earners.
 
-Robinhood:
-Strengths: Simplified UI, low fees, mobile-first approach.
-Weaknesses: Limited customization for advanced traders; lacks robust educational content.
+## Competitor Analysis
 
-E*TRADE:
-Strengths: Advanced charting tools; comprehensive research resources.
-Weaknesses: Higher fees; less beginner-friendly interface.
+### Robinhood:
+- Strengths: Simplified UI, low fees, mobile-first approach.
+- Weaknesses: Limited customization for advanced traders; lacks robust educational content.
 
-Webull:
-Strengths: Advanced tools for experienced traders; paper trading for beginners.
-Weaknesses: Overwhelming interface for new users.
-Design Requirements
+### E*TRADE:
+- Strengths: Advanced charting tools; comprehensive research resources.
+- Weaknesses: Higher fees; less beginner-friendly interface.
 
-Functional Needs:
-Real-time market data with sub-second updates.
-Advanced charting tools (candlestick, Heikin Ashi) with multiple indicators (Bollinger Bands, VWAP).
-Customizable dashboards with widgets for watchlists, portfolio performance, and newsfeeds.
-Seamless trade execution directly from charts or watchlists.
+### Webull:
+- Strengths: Advanced tools for experienced traders; paper trading for beginners.
+- Weaknesses: Overwhelming interface for new users.
 
-Visual Design:
-Minimalist design emphasizing clarity and usability.
-Light and dark modes for user comfort.
-Intuitive navigation with clear calls-to-action for both beginners and experts.
-```
+## Design Requirements
+
+### Functional Needs:
+- Real-time market data with sub-second updates.
+- Advanced charting tools (candlestick, Heikin Ashi) with multiple indicators (Bollinger Bands, VWAP).
+- Customizable dashboards with widgets for watchlists, portfolio performance, and newsfeeds.
+- Seamless trade execution directly from charts or watchlists.
+
+### Visual Design:
+- Minimalist design emphasizing clarity and usability.
+- Light and dark modes for user comfort.
+- Intuitive navigation with clear calls-to-action for both beginners and experts.
 
 ![](img/7d0d265b5d9f8ade3186f433cc994d52.png)
 
 # Graphic design software 平面设计软件
+
+
 
 ```
 The objective is to create a web-based design and prototyping platform that combines the robust editing  with the collaborative, real-time features. This app will cater to both individual designers and teams, offering tools for graphic design, UI/UX design, and prototyping in a seamless, browser-based environment.
@@ -519,6 +526,10 @@ Intuitive navigation for discovering new content or accessing personalized recom
 ![](img/f18f8c9ef5c8224b83e6f7fff8af5b07.png)
 
 # Task board / project management app 任务看板/项目管理应用程序
+
+
+
+# 任务管理与生产力看板应用
 
 ```
 The goal is to design a sleek, intuitive, and efficient web app dashboard tailored for task management and productivity tracking. The dashboard will prioritize speed, simplicity, and aesthetics while delivering actionable insights to users.

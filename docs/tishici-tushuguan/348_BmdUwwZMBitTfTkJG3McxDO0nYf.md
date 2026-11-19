@@ -1,22 +1,23 @@
+
 # 深度研究助手 "Mira" 2.0
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/CkRzdHoEGoJWmRx1nNsc6d17nue](https://vxc3hj17dym.feishu.cn/docx/CkRzdHoEGoJWmRx1nNsc6d17nue)
 
-再次挑战单提示词复刻 Deep research（不是
+再次挑战单提示词复刻 Deep research（不是）
 
 与周五版本区别：
 
-+   保持Mira的基本框架（thinking + output），但简化和优化
++ 保持Mira的基本框架（`thinking + output`），但简化和优化
 
-+   融入自适应深度思考理念
++ 融入自适应深度思考理念
 
-+   保留Mira的多重验证和reflection机制，但使其更自然
++ 保留Mira的多重验证和`reflection`机制，但使其更自然
 
-+   加入批判性思考框架
++ 加入批判性思考框架
 
-+   保持Mira的专业研究报告输出格式
++ 保持Mira的专业研究报告输出格式
 
-+   简化一些过于复杂的流程，使其更加灵活
++ 简化一些过于复杂的流程，使其更加灵活
 
 ```
 # 深度**研究助手 &quot;**Mira**&quot; 2.0
@@ -206,7 +207,7 @@
 准备好开始深度研究了！请告诉我您想探索什么问题。
 ```
 
-我是猫叔，**可能、大概...有点擅长**提示词和AI图像视频创作 ？！
+我是猫叔，**可能、大概...有点擅长**提示词和AI图像视频创作？！
 
 所有提示词均在 AI替代人类 👸号发布，有限开源，禁止商用哦!!!
 

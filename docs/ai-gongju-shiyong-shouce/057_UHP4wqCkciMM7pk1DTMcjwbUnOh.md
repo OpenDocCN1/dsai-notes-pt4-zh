@@ -1,3 +1,4 @@
+
 # New Bing绘画
 
 > 来源：[https://my.feishu.cn/docx/CuGRdZyVyoF1D0xUQxQcTEWLndd](https://my.feishu.cn/docx/CuGRdZyVyoF1D0xUQxQcTEWLndd)
@@ -20,11 +21,9 @@
 
 接下来我尝试不同的提问方法终于成功了，prompt是
 
-根据XXXX，用dell-e生成XXXXX图片
-
+`根据XXXX，用dell-e生成XXXXX图片`
 
 然后给我这样的一组图片
-
 
 其实就是根据之前我提供的内容，提取关键词生成图片，
 
@@ -38,7 +37,6 @@
 
 重新开始对话，同样prompt能用
 
-
 总之不要做一些涩涩的事情，对话是不会扑街的
 
 ![](img/804c56dc93dc8fd77fdee8e017043a9a.png)
@@ -49,4 +47,4 @@
 
 bing出图prompt：
 
-根据XXXX，用dell-e生成XXXXX图片
+`根据XXXX，用dell-e生成XXXXX图片`

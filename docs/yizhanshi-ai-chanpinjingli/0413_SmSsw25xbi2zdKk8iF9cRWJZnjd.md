@@ -1,10 +1,11 @@
+
 # PyTorch 实例 - 图像分类项目
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/UDePdFkqMoCLtoxEzkGcgR6hnke](https://v11enp9ok1h.feishu.cn/docx/UDePdFkqMoCLtoxEzkGcgR6hnke)
 
 图像分类是计算机视觉中最基础的任务之一，其目标是让计算机能够识别图像中的主要内容并将其归类到预定义的类别中。例如，识别一张图片中是猫还是狗。
 
-**深度学习在图像分类中的应用**
+## 深度学习在图像分类中的应用
 
 深度学习模型，特别是卷积神经网络(CNN)，已成为图像分类任务的主流解决方案。PyTorch作为深度学习框架，提供了构建和训练CNN模型的完整工具链。
 
@@ -12,15 +13,11 @@
 
 一个完整的图像分类项目通常包含以下步骤：
 
-1.  数据准备与预处理
-
-1.  模型构建
-
-1.  模型训练
-
-1.  模型评估
-
-1.  模型应用
+1. 数据准备与预处理
+2. 模型构建
+3. 模型训练
+4. 模型评估
+5. 模型应用
 
 ---
 
@@ -35,9 +32,9 @@
 
 ### 加载常用数据集
 
-PyTorch的torchvision提供了多个常用数据集，如CIFAR-10、MNIST等。
+PyTorch的`torchvision`提供了多个常用数据集，如CIFAR-10、MNIST等。
 
-## 实例
+### 实例
 
 ```
 import torch
@@ -51,20 +48,20 @@ transform = transforms.Compose([
 ])
 
 # 加载CIFAR-10训练集
-trainset = torchvision.datasets.CIFAR10(root=&#x27;./data&#x27;, train=True,
+trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
                                        download=True, transform=transform)
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,
                                          shuffle=True, num_workers=2)
 
 # 加载CIFAR-10测试集
-testset = torchvision.datasets.CIFAR10(root=&#x27;./data&#x27;, train=False,
+testset = torchvision.datasets.CIFAR10(root='./data', train=False,
                                       download=True, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=4,
                                         shuffle=False, num_workers=2)
 
 # 定义类别名称
-classes = (&#x27;plane&#x27;, &#x27;car&#x27;, &#x27;bird&#x27;, &#x27;cat&#x27;, &#x27;deer&#x27;, 
-           &#x27;dog&#x27;, &#x27;frog&#x27;, &#x27;horse&#x27;, &#x27;ship&#x27;, &#x27;truck&#x27;)
+classes = ('plane', 'car', 'bird', 'cat', 'deer', 
+           'dog', 'frog', 'horse', 'ship', 'truck')
 ```
 
 ## 构建卷积神经网络模型
@@ -119,7 +116,7 @@ net = Net()
 
 ### 定义损失函数和优化器
 
-## 实例
+### 实例
 
 ```
 import torch.optim as optim
@@ -132,7 +129,7 @@ optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 ### 训练循环
 
-## 实例
+### 实例
 
 ```
 for epoch in range(10):  # 训练10个epoch
@@ -156,10 +153,10 @@ for epoch in range(10):  # 训练10个epoch
         # 打印统计信息
         running_loss += loss.item()
         if i % 2000 == 1999:  # 每2000个mini-batch打印一次
-            print(f&#x27;[{epoch + 1}, {i + 1:5d}] loss: {running_loss / 2000:.3f}&#x27;)
+            print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / 2000:.3f}')
             running_loss = 0.0
 
-print(&#x27;Finished Training&#x27;)
+print('Finished Training')
 ```
 
 ## 模型评估
@@ -177,7 +174,7 @@ with torch.no_grad():  # 不计算梯度
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
-print(f&#x27;Accuracy on test images: {100 * correct / total:.2f}%&#x27;)
+print(f'Accuracy on test images: {100 * correct / total:.2f}%')
 ```
 
 ### 各类别准确率分析
@@ -197,7 +194,7 @@ with torch.no_grad():
             class_total[label] += 1
 
 for i in range(10):
-    print(f&#x27;Accuracy of {classes[i]:5s}: {100 * class_correct[i] / class_total[i]:.2f}%&#x27;)
+    print(f'Accuracy of {classes[i]:5s}: {100 * class_correct[i] / class_total[i]:.2f}%')
 ```
 
 ## 模型保存与加载
@@ -206,8 +203,8 @@ for i in range(10):
 
 ```
 # 保存模型参数
-PATH = &#x27;./cifar_net.pth&#x27;
-torch.save(net.s加载模型进行预测tate_dict(), PATH)
+PATH = './cifar_net.pth'
+torch.save(net.state_dict(), PATH)
 ```
 
 ### 加载模型进行预测
@@ -220,5 +217,5 @@ net.load_state_dict(torch.load(PATH))
 # 使用模型进行预测
 outputs = net(images)
 _, predicted = torch.max(outputs, 1)
-print(&#x27;Predicted: &#x27;, &#x27; &#x27;.join(f&#x27;{classes[predicted[j]]:5s}&#x27; for j in range(4)))
+print('Predicted: ', ' '.join(f'{classes[predicted[j]]:5s}' for j in range(4)))
 ```

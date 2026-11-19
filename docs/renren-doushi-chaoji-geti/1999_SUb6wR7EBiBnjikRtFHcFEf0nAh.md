@@ -1,10 +1,11 @@
+
 # 产品经理可考取的证书（汇总版更新中）
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Wtfzd6smaoYIBDxVNYXcgzTqnuc](https://xuqiwei1986.feishu.cn/docx/Wtfzd6smaoYIBDxVNYXcgzTqnuc)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/Wtfzd6smaoYIBDxVNYXcgzTqnuc`
 
-1.  产品经理证书
+## 产品经理证书
 
-## PMP项目管理资格认证
+### PMP项目管理资格认证
 
 **证书简介**:
 
@@ -14,19 +15,15 @@ PMP全称为Project Management Professional，即项目管理专业人士资格�
 
 **报名限制：**
 
-+   高中学历或全球同等学历
-
-+   7500小时项目领导和指导经验
-
-+   35小时项目管理学习
++ 高中学历或全球同等学历
++ 7500小时项目领导和指导经验
++ 35小时项目管理学习
 
 或者
 
-+   学士学位或全球同等学位
-
-+   4500小时项目领导和指导经验
-
-+   35小时项目管理学习
++ 学士学位或全球同等学位
++ 4500小时项目领导和指导经验
++ 35小时项目管理学习
 
 但是！一般培训机构或者某宝有途径可以帮助完成报名资格的认定！所以不用担心报名限制问题。
 
@@ -46,9 +43,9 @@ PMP全称为Project Management Professional，即项目管理专业人士资格�
 
 **官方网站**：
 
-[h](http://event.chinapmp.cn/PMP/LEAP/pmp/html/index.html)ttp://event.chinapmp.cn/PMP/LEAP/pmp/html/index.html
+`http://event.chinapmp.cn/PMP/LEAP/pmp/html/index.html`
 
-## NPDP产品经理国际资格认证
+### NPDP产品经理国际资格认证
 
 **证书简介**:
 
@@ -58,11 +55,11 @@ NPDP产品经理国际资格认证，New Product Development Professional（NPDP
 
 **报名限制：**
 
-+   获得本科学历及以上(或同等学历)：最近4年已积累2年以上新产品开发职业工作经验。完成40小时新产品开发培训课程。
++ 获得本科学历及以上(或同等学历)：最近4年已积累2年以上新产品开发职业工作经验。完成40小时新产品开发培训课程。
 
 或者
 
-+   获得专科学历及以下(或同等学历)：最近8年已积累5年以上新产品开发职业工作经验。完成40小时新产品开发培训课程。
++ 获得专科学历及以下(或同等学历)：最近8年已积累5年以上新产品开发职业工作经验。完成40小时新产品开发培训课程。
 
 **考试时间**：
 
@@ -80,11 +77,11 @@ NPDP产品经理国际资格认证，New Product Development Professional（NPDP
 
 **官方网站**：
 
-[h](http://www.chinanpdp.cn/CITEF/LEAP/npdp/html/index.html)ttp://www.chinanpdp.cn/CITEF/LEAP/npdp/html/index.html
+`http://www.chinanpdp.cn/CITEF/LEAP/npdp/html/index.html`
 
-1.  软考证书
+## 软考证书
 
-## 系统集成项目管理工程师（软考中级）
+### 系统集成项目管理工程师（软考中级）
 
 **证书简介**:
 
@@ -112,9 +109,9 @@ NPDP产品经理国际资格认证，New Product Development Professional（NPDP
 
 **官方网站**：
 
-https://www.ruankao.org.cn/
+`https://www.ruankao.org.cn/`
 
-## 信息系统项目管理师（软考高级）
+### 信息系统项目管理师（软考高级）
 
 **证书简介**:
 
@@ -138,21 +135,21 @@ https://www.ruankao.org.cn/
 
 **准备时间**：
 
-**非脱产建议3-5个月**左右，每天需要投入1-2小时，且软考高级要求考论文题，在120分钟内完成信息系统项目管理论文。
+非脱产建议3-5个月左右，每天需要投入1-2小时，且软考高级要求考论文题，在120分钟内完成信息系统项目管理论文。
 
 **官方网站**：
 
-https://www.ruankao.org.cn/
+`https://www.ruankao.org.cn/`
 
-1.  英语能力认证
+## 英语能力认证
 
-## 全国大学英语四、六级CET4/6
+### 全国大学英语四、六级CET4/6
 
 **证书简介**:
 
 全国大学英语四、六级考试（CET）是由教育部主办，教育部教育考试院（原教育部考试中心）主持和实施的大规模标准化考试，是全国性的教学考试，其目的是促进我国大学英语教学工作，对大学生的英语能力进行客观、准确的测量，为提高我国大学英语课程的教学质量提供服务。CET始于1987年，已走过了三十多年的历程，对我国大学英语教学的发展和改革产生了积极的影响。
 
-**含金量**：（四级）⭐    （六级）⭐⭐
+**含金量**：（四级）⭐ （六级）⭐⭐
 
 **报名限制：**
 
@@ -174,9 +171,9 @@ https://www.ruankao.org.cn/
 
 **官方网站**：
 
-https://cet.neea.edu.cn/
+`https://cet.neea.edu.cn/`
 
-## BEC剑桥商务英语
+### BEC剑桥商务英语
 
 **证书简介**:
 
@@ -204,9 +201,9 @@ BEC初级考试费为580元人民币/人；BEC中级考试费为720元人民币/
 
 **官方网站**：
 
-[https://bec.neea.cn/html1/fo](https://bec.neea.cn/html1/folder/1509/4202-1.htm)lder/1509/4202-1.htm
+`https://bec.neea.cn/html1/folder/1509/4202-1.htm`
 
-## IELTS雅思
+### IELTS雅思
 
 **证书简介**:
 
@@ -234,15 +231,15 @@ IELTS 雅思考试 （International English Language Testing System, 国际英�
 
 **官方网站**：
 
-https://www.chinaielts.org/
+`https://www.chinaielts.org/`
 
-https://ielts.neea.edu.cn/
+`https://ielts.neea.edu.cn/`
 
-## TOEFL托福
+### TOEFL托福
 
 **证书简介**:
 
-托福®考试是一个由ETS测评研发的学术英语语言测试 [31]  ，托福®考试通过考察听、说、读、写这4个技能方面以体现参与者在学术语言任务环境下的真实学术语言能力，并可用于本科及研究生阶段的院校申请。 [1]  托福是“对非英语国家留学生的英语考试”（Test of English as a Foreign Language）英文缩写（TOEFL）的音译。
+托福®考试是一个由ETS测评研发的学术英语语言测试 [31] ，托福®考试通过考察听、说、读、写这4个技能方面以体现参与者在学术语言任务环境下的真实学术语言能力，并可用于本科及研究生阶段的院校申请。 [1] 托福是“对非英语国家留学生的英语考试”（Test of English as a Foreign Language）英文缩写（TOEFL）的音译。
 
 **含金量**：⭐⭐⭐
 
@@ -264,13 +261,13 @@ https://ielts.neea.edu.cn/
 
 **官方网站**：
 
-https://www.toefl.cn/
+`https://www.toefl.cn/`
 
-https://toefl.neea.cn/
+`https://toefl.neea.cn/`
 
-1.  会计证书
+## 会计证书
 
-## 初/中级会计师
+### 初/中级会计师
 
 **证书简介**:
 
@@ -308,9 +305,9 @@ https://toefl.neea.cn/
 
 **官方网站**：
 
-http://kzp.mof.gov.cn/index.jsp
+`http://kzp.mof.gov.cn/index.jsp`
 
-[h](http://kjs.mof.gov.cn/gongzuodongtai/202211/t20221122_3852893.htm)ttp://kjs.mof.gov.cn/gongzuodongtai/202211/t20221122_3852893.htm
+`http://kjs.mof.gov.cn/gongzuodongtai/202211/t20221122_3852893.htm`
 
 # 供应链证书
 
@@ -326,11 +323,11 @@ SCMP是行业认可的垂直领域证书，不属于国家职称。供应链领�
 
 **报名限制：**
 
-+   具有3年及以上全职物流、采购、运输、供应链等方面的工作经验；
++ 具有3年及以上全职物流、采购、运输、供应链等方面的工作经验；
 
 或者
 
-+   拥有大学本科学历，全职从事物流、采购、运输、供应链等相关工作1年及以上。
++ 拥有大学本科学历，全职从事物流、采购、运输、供应链等相关工作1年及以上。
 
 注意，学员参加考试必须有在中物联采购委购买教材的记录！！！
 

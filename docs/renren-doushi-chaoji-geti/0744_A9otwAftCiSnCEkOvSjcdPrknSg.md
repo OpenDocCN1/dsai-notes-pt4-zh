@@ -1,56 +1,49 @@
+
 # 如何使用Cursor进行数据可视化和软件项目可视化
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/HBdHd8PzyoeJBYxI1hHcKIprnQg](https://xuqiwei1986.feishu.cn/docx/HBdHd8PzyoeJBYxI1hHcKIprnQg)
 
-各位圈友好，我是Time，向大家展示一些使用cursor进行数据可视化和软件项目可视化的案例。
+各位圈友好，我是Time，向大家展示一些使用`Cursor`进行数据可视化和软件项目可视化的案例。
 
-# 一、可视化的必要性
+## 一、可视化的必要性
 
-## （一）软件项目可视化的必要性
+### （一）软件项目可视化的必要性
 
 > 大家最近在做项目时，你有没有遇到这些烦恼：
 
-+   新来的同事看代码一脸懵，解释半天还是不明白
++ 新来的同事看代码一脸懵，解释半天还是不明白
 
-+   改完代码忘记更新文档，结果文档越来越不靠谱
++ 改完代码忘记更新文档，结果文档越来越不靠谱
 
-+   开会讨论架构，光靠说半天说不清楚
++ 开会讨论架构，光靠说半天说不清楚
 
 > 作为同时写过好几年文档和代码的开发者，我太理解这些痛点了。
 
->
-
 > 说实话，我们都知道项目需要文档和架构图，但现实是：
 
-+   写文档特别耗时，写着写着就忘了
++ 写文档特别耗时，写着写着就忘了
 
-+   画图要切换软件，没几个人愿意折腾
++ 画图要切换软件，没几个人愿意折腾
 
-+   代码改了文档没改，慢慢就没人信了
-
->
++ 代码改了文档没改，慢慢就没人信了
 
 > 但是吧，不写文档不画图也不行，特别是项目越做越大的时候：
 
-+   新人看不懂代码，接手困难
++ 新人看不懂代码，接手困难
 
-+   团队沟通效率低，讨论费劲
++ 团队沟通效率低，讨论费劲
 
-+   维护起来特别累，改bug都不知道从哪改起
++ 维护起来特别累，改bug都不知道从哪改起
 
->
-
-> 前段时间，我发现了个特别实用的组合：Cursor + Mermaid。
+> 前段时间，我发现了个特别实用的组合：`Cursor` + `Mermaid`。
 
 > 这套工具真的能帮我们：
 
-+   写代码的时候顺手就把文档做了
++ 写代码的时候顺手就把文档做了
 
-+   用简单的文本就能生成专业的图表
++ 用简单的文本就能生成专业的图表
 
-+   再也不用担心文档和代码对不上了
-
->
++ 再也不用担心文档和代码对不上了
 
 > 听起来挺不错？来看看具体怎么用👇
 
@@ -60,9 +53,9 @@
 
 ![](img/518d18b29373b290eabbab3725b52550.png)
 
-## （二）数据可视化的必要性
+### （二）数据可视化的必要性
 
-**最初，我**只想写软件项目的可视化，但是后来经过圈友A和不愿透露姓名的阿紫老师的建议，补充应用范围更广的数据可视化应用案例/教程。
+最初，我只想写软件项目的可视化，但是后来经过圈友A和不愿透露姓名的阿紫老师的建议，补充应用范围更广的数据可视化应用案例/教程。
 
 ![](img/66174cf6cf4f0edf160405ce79f0d791.png)
 
@@ -70,21 +63,21 @@
 
 ![](img/b267cd6521754a4d1ccc9d72c1f95292.png)
 
-## （三）前置说明
+### （三）前置说明
 
-本文默认大家已经具备cursor的基本使用，已经完成了cursor安装的前置步骤，并且会安装插件以及向cursor提问，如果对于cursor和编程是零基础朋友，可以阅读我9月份的帖子：0代码AI编程重塑你的编程体验：Cursor使用教程
+本文默认大家已经具备`Cursor`的基本使用，已经完成了`Cursor`安装的前置步骤，并且会安装插件以及向`Cursor`提问，如果对于`Cursor`和编程是零基础朋友，可以阅读我9月份的帖子：0代码AI编程重塑你的编程体验：`Cursor`使用教程
 
-以及近期圈友**@阿紫**分享的帖子，阿紫通过探索0基础学员们的卡点，非常详细的展示了一个项目应该怎么从0开始，如何根据需求转化成cursor能够理解的软件需求，非常值得一读：如何让小白学会用Cursor完成复杂项目
+以及近期圈友@阿紫分享的帖子，阿紫通过探索0基础学员们的卡点，非常详细的展示了一个项目应该怎么从0开始，如何根据需求转化成`Cursor`能够理解的软件需求，非常值得一读：如何让小白学会用`Cursor`完成复杂项目
 
-**此外，**对于专业程序员维护复杂项目的使用可以参考圈友@大铭的帖子：程序员视角下的Cursor软件深度使用与维护经验分享
+此外，对于专业程序员维护复杂项目的使用可以参考圈友@大铭的帖子：程序员视角下的`Cursor`软件深度使用与维护经验分享
 
 ---
 
-# 二、学习python数据可视化
+## 二、学习python数据可视化
 
 不论代码项目大小，以及是自己编程或学习其他项目，学习思路相似。
 
-## （一）萌新初窥数据可视化
+### （一）萌新初窥数据可视化
 
 以完全不懂数据可视化的角度，先绘制一些图表，基于特定数据进行可视化处理的例子在（二）。
 
@@ -92,25 +85,25 @@
 
 ![](img/cf5c796a79f4f87346d77617041676bd.png)
 
-先让cursor给我们编写几个示例代码，提示词如下：
+先让`Cursor`给我们编写几个示例代码，提示词如下：
 
-请给我编写 Matplotlib、Seaborn的示例数据可视化图表代码，分别创建python文件进行编写
+请给我编写 `Matplotlib`、`Seaborn`的示例数据可视化图表代码，分别创建python文件进行编写
 
 ![](img/98e574aca7e1aae61dab14d4a846a21c.png)
 
 下面是几个库仅限于示例，实际绘制时根据实际情况进行选择。
 
-### （1）Matplotlib图表
+#### （1）`Matplotlib`图表
 
 ![](img/f0bf401969696fa8b8724e90e17d60a8.png)
 
-### （2）Seaborn可视化
+#### （2）`Seaborn`可视化
 
-下面让Cursor展示了10个最具代表性的Seaborn数据可视化图表
+下面让`Cursor`展示了10个最具代表性的`Seaborn`数据可视化图表
 
-第一次提问让它回答有哪些代表性的图表：Seaborn最典型的10种可视化图表是什么
+第一次提问让它回答有哪些代表性的图表：`Seaborn`最典型的10种可视化图表是什么
 
-第二次提问让cursor写代码：请给我编写python代码，展示Seaborn这10种最具有代表性可视化图表，创建一个新的py文件
+第二次提问让`Cursor`写代码：请给我编写python代码，展示`Seaborn`这10种最具有代表性可视化图表，创建一个新的py文件
 
 第三次提问由于10个图表放在一张图上难以观看，于是重新组合排版：前10个图表，请分为每4个在一张图上展示
 
@@ -118,13 +111,13 @@
 
 ![](img/1ec4169c22d80771212948fe4693e43c.png)
 
-由于散点图、折线图、柱状图这些和前面Matplotlib绘制效果相似，于是手动让cursor移出了，并且凑了（条形图、箱线图、小提琴图、热力图）、（回归图、联合图、计数图、核密度图）组合展示了2张大图，以及额外展示了完整版联合图和成对关系图。
+由于散点图、折线图、柱状图这些和前面`Matplotlib`绘制效果相似，于是手动让`Cursor`移出了，并且凑了（条形图、箱线图、小提琴图、热力图）、（回归图、联合图、计数图、核密度图）组合展示了2张大图，以及额外展示了完整版联合图和成对关系图。
 
 当然，有些图表我目前也不懂是什么含义，现在看着酷就完了，而专业数据分析人员应该具备以下两个能力之一：
 
-+   明确所需图表含义，然后使用cursor绘制目标图表，这样才能够向客户或领导解释图表所要表达的意思；
++ 明确所需图表含义，然后使用`Cursor`绘制目标图表，这样才能够向客户或领导解释图表所要表达的意思；
 
-+   对于不理解的图表，需要让cursor给出解释，理由同上。
++ 对于不理解的图表，需要让`Cursor`给出解释，理由同上。
 
 ![](img/b50ca7b6a992faaaa61258c5c4d1b576.png)
 
@@ -138,9 +131,9 @@
 
 ![](img/bbfaa3da4078a94a75c3cb202dc86289.png)
 
-[seaborn_top10_plots.py](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YWh1bhuUQo4RTjxL3xWcqWe5n8e)
+[`seaborn_top10_plots.py`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YWh1bhuUQo4RTjxL3xWcqWe5n8e)
 
-### （3）Plotly交互式数据可视化
+#### （3）`Plotly`交互式数据可视化
 
 ![](img/d1a6287704dd8b0f795986dc591973f5.png)
 
@@ -148,15 +141,15 @@
 
 ![](img/242f6e073969cd26c79464f7c9205c0a.png)
 
-下面是这5个Plotly交互图表的代码，大家可以拿走玩一下，其中鼠标放置在图表上时，会显示数据，3D散点图也可以放大缩小，不过现在我只是为了展示种类，所以没有进一步优化交互和美工处理。
+下面是这5个`Plotly`交互图表的代码，大家可以拿走玩一下，其中鼠标放置在图表上时，会显示数据，3D散点图也可以放大缩小，不过现在我只是为了展示种类，所以没有进一步优化交互和美工处理。
 
 ![](img/deabda97cd3a8c071302ac26d2e0e2d9.png)
 
-[plotly_examples.py](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DxVmbs5tJoa5DBxwjtJcqQHjnoh)
+[`plotly_examples.py`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DxVmbs5tJoa5DBxwjtJcqQHjnoh)
 
-## （二）基于数据集进行数据可视化
+### （二）基于数据集进行数据可视化
 
-上一小节展示了这些图表，但是从cursor生成的代码中看，每一个图表的绘制都只有不到10行的代码，这种展示用的代码显然无法应用于我们实际工作中，同时我也好奇示例图表的数据源是从哪里来的（假装没有看到代码中的注释）。
+上一小节展示了这些图表，但是从`Cursor`生成的代码中看，每一个图表的绘制都只有不到10行的代码，这种展示用的代码显然无法应用于我们实际工作中，同时我也好奇示例图表的数据源是从哪里来的（假装没有看到代码中的注释）。
 
 ```
 import seaborn as sns
@@ -197,43 +190,43 @@ plt.ylabel(&quot;账单分布&quot;, fontproperties=chinese_font)
 
 ![](img/098ebf6794f17cdb3d604a62e52caaf6.png)
 
-可以看到Seaborn库自带了tips、flights、iris数据集，注意上面回答的最后一句话“方便用户进行数据可视化的练习和演示”。
+可以看到`Seaborn`库自带了`tips`、`flights`、`iris`数据集，注意上面回答的最后一句话“方便用户进行数据可视化的练习和演示”。
 
-于是追问怎么利用这些数据集进行数据可视化的学习：基于tips或flights或iris数据集，如何进行数据可视化的学习？
+于是追问怎么利用这些数据集进行数据可视化的学习：基于`tips`或`flights`或`iris`数据集，如何进行数据可视化的学习？
 
 ![](img/9d6fe40374c0c60cc6d84bb7ff51bf83.png)
 
-根据回答，就可以看到使用histplot就可以查看直方图、使用heatmap就可以查看矩阵数据，使用regplot就可以添加回归线，
+根据回答，就可以看到使用`histplot`就可以查看直方图、使用`heatmap`就可以查看矩阵数据，使用`regplot`就可以添加回归线，
 
-下面使用huggingface中的开源数据集进行演示，例如下面的fka/awesome-chatgpt-prompts，看起来像是ChatGpt的提示词，
+下面使用huggingface中的开源数据集进行演示，例如下面的`fka/awesome-chatgpt-prompts`，看起来像是ChatGpt的提示词，
 
 ![](img/5b27eeec0b9aaf62b6756a1c30e0066b.png)
 
 ![](img/8ac6df493b439a77ae9ebef97024e8c1.png)
 
-点进去后不知道怎么用，于是继续让cursor干活，
+点进去后不知道怎么用，于是继续让`Cursor`干活，
 
-怎么下载@https://huggingface.co/datasets/fka/awesome-chatgpt-prompts?sql=--+The+SQL+console+is+powered+by+DuckDB+WASM+and+runs+entirely+in+the+browser.%0A--+Get+started+by+typing+a+query+or+selecting+a+view+from+the+options+below.%0ASELECT+*+FROM+train+LIMIT+10%3B 这里的数据集
+怎么下载@`https://huggingface.co/datasets/fka/awesome-chatgpt-prompts?sql=--+The+SQL+console+is+powered+by+DuckDB+WASM+and+runs+entirely+in+the+browser.%0A--+Get+started+by+typing+a+query+or+selecting+a+view+from+the+options+below.%0ASELECT+*+FROM+train+LIMIT+10%3B` 这里的数据集
 
 ![](img/dae594b32bc594ab019339cfe8fb2791.png)
 
-下面是安装过程（我是在虚拟环境中安装的，所以没有在cursor终端直接执行安装命令，初学者可以不必理会）
+下面是安装过程（我是在虚拟环境中安装的，所以没有在`Cursor`终端直接执行安装命令，初学者可以不必理会）
 
 ![](img/1031124074fd2170e1a6184a5916cb4c.png)
 
-安装完成后，在cursor中复制前面提示的加载数据集和访问数据代码，执行效果如下，说明加载成功了，下面开始使用这个数据集进行演示。
+安装完成后，在`Cursor`中复制前面提示的加载数据集和访问数据代码，执行效果如下，说明加载成功了，下面开始使用这个数据集进行演示。
 
 ![](img/c44d75f93d03c68eeed34a1e2b13e1dd.png)
 
-以非专业人士的角度，不知道拿到数据集后如何下手，问cursor：读取fka/awesome-chatgpt-prompts数据集，请推荐合适的数据可视化图表，以供专业人士进行分析，当前步骤只需要回答合适的图表类别以及图表意义
+以非专业人士的角度，不知道拿到数据集后如何下手，问`Cursor`：读取`fka/awesome-chatgpt-prompts`数据集，请推荐合适的数据可视化图表，以供专业人士进行分析，当前步骤只需要回答合适的图表类别以及图表意义
 
 ![](img/72ad1fc33185a389f4fe89a7a01c3ffe.png)
 
 下面挑选几个图表进行绘制
 
-### （1）词云图
+#### （1）词云图
 
-由于这个数据集中都是句子，优先选择词云图，继续提问，让cursor绘制词云图
+由于这个数据集中都是句子，优先选择词云图，继续提问，让`Cursor`绘制词云图
 
 请你首先绘制词云图，然后根据词云图表，给出分析结果
 
@@ -243,17 +236,17 @@ plt.ylabel(&quot;账单分布&quot;, fontproperties=chinese_font)
 
 其实从这里的回答，我们已经能够得到以下结果：
 
-+   gpt使用者最常使用的词是help、write、explain、act、create，让gpt或写或解释或执行某些动作；
++ gpt使用者最常使用的词是help、write、explain、act、create，让gpt或写或解释或执行某些动作；
 
-+   gpt最常执行任务是：写作、定义角色、创造性任务和分析性任务；
++ gpt最常执行任务是：写作、定义角色、创造性任务和分析性任务；
 
-+   大量使用动词，让gpt执行这些写作或创造性动作；
++ 大量使用动词，让gpt执行这些写作或创造性动作；
 
-+   常用场景是教育学习、专业工作、创意写作和文件解决……
++ 常用场景是教育学习、专业工作、创意写作和文件解决……
 
-当然，这些是cursor读取数据进行分析的，下面绘制词云图然后看图能否得到这些信息。
+当然，这些是`Cursor`读取数据进行分析的，下面绘制词云图然后看图能否得到这些信息。
 
-由于有些库我没有安装，于是让cursor给出安装命令
+由于有些库我没有安装，于是让`Cursor`给出安装命令
 
 ![](img/831a0af1733b378929158ce5350b9ad3.png)
 
@@ -265,17 +258,17 @@ plt.ylabel(&quot;账单分布&quot;, fontproperties=chinese_font)
 
 下面是绘制的词云图，我来粗略的分析一下：
 
-+   想(want)让gpt帮我们做某件事情，或者执行(act)某个动作
++ 想(want)让gpt帮我们做某件事情，或者执行(act)某个动作
 
-+   让gpt向我们提供(provide）什么样的结果
++ 让gpt向我们提供(provide）什么样的结果
 
-+   首先(first)做什么
++ 首先(first)做什么
 
-大致意思是这样的，我分析的不专业，可以让cursor进一步的分析，在上面回答的基础上扩展，这里我就不再演示了。
+大致意思是这样的，我分析的不专业，可以让`Cursor`进一步的分析，在上面回答的基础上扩展，这里我就不再演示了。
 
 ![](img/f4ee6b406a7a6efefd1e6e545491f104.png)
 
-### （2）条形图
+#### （2）条形图
 
 继续绘制条形图
 
@@ -293,7 +286,7 @@ plt.ylabel(&quot;账单分布&quot;, fontproperties=chinese_font)
 
 ![](img/5a5bb6b3ea609c463f5217f8b44eb627.png)
 
-根据他的提示，让cursor修改，修改后的图表如下：
+根据他的提示，让`Cursor`修改，修改后的图表如下：
 
 ![](img/16db16ea5198203784d750081fc41b19.png)
 
@@ -301,9 +294,9 @@ plt.ylabel(&quot;账单分布&quot;, fontproperties=chinese_font)
 
 由于数据量较少，所以很多角色出现频率是1，只有一个出现频率为2，结果是正确的。
 
-### （3）自由发挥吧
+#### （3）自由发挥吧
 
-让cursor推荐合适的图表
+让`Cursor`推荐合适的图表
 
 ![](img/4b9f8f08a0ace35d585686c5432ca7e3.png)
 
@@ -319,39 +312,39 @@ plt.ylabel(&quot;账单分布&quot;, fontproperties=chinese_font)
 
 ---
 
-# 三、软件项目可视化实战
+## 三、软件项目可视化实战
 
-## （一）Mermaid基础介绍
+### （一）`Mermaid`基础介绍
 
-代码的可视化在很早前就有了，之前是使用UML直接绘制，而现在在UML的基础上，有了一些更加成熟的产品，Mermaid就是一个比较典型的项目。
+代码的可视化在很早前就有了，之前是使用UML直接绘制，而现在在UML的基础上，有了一些更加成熟的产品，`Mermaid`就是一个比较典型的项目。
 
-Mermaid是基于 JavaScript 的图表工具，可呈现 Markdown 启发的文本定义以动态创建和修改图表。
+`Mermaid`是基于 `JavaScript` 的图表工具，可呈现 Markdown 启发的文本定义以动态创建和修改图表。
 
 ![](img/f77eddea981efad4da676d85954dace0.png)
 
-**Mermaid：代码即图表**
+`Mermaid`：代码即图表
 
-+   使用文本定义图表
++ 使用文本定义图表
 
-+   支持多种图表类型
++ 支持多种图表类型
 
-+   易于版本控制
++ 易于版本控制
 
-+   实时渲染预览
++ 实时渲染预览
 
-**建议插件：**
+建议插件：
 
-**Markdown Preview Mermaid Suppor**t：Markdown中预览Mermaid
+`Markdown Preview Mermaid Support`：Markdown中预览`Mermaid`
 
-**M**ermaid Markdown Syntax Highlighting：Markdown中Mermaid语法高亮
+`Mermaid Markdown Syntax Highlighting`：Markdown中`Mermaid`语法高亮
 
 ![](img/89135a8577fb3990283d1d7035770948.png)
 
 ![](img/fe4fe353a7271d5f7464ce9052a8ca41.png)
 
-## （二）为什么需要绘制这些图表：更加专业的回答？
+### （二）为什么需要绘制这些图表：更加专业的回答？
 
-在文章开头，我笼统的解释了为什么需要给代码绘制诸如流程图、时序图、类图这些图表，这基本上能够解释了，不过咱们演示cursor的应用，为何不继续使用cursor进行优化呢？请看vcr：
+在文章开头，我笼统的解释了为什么需要给代码绘制诸如流程图、时序图、类图这些图表，这基本上能够解释了，不过咱们演示`Cursor`的应用，为何不继续使用`Cursor`进行优化呢？请看vcr：
 
 直接开问
 
@@ -363,6 +356,8 @@ Mermaid是基于 JavaScript 的图表工具，可呈现 Markdown 启发的文本
 
 ![](img/7a6dc4125aee1c351b351e46bf9125e1.png)
 
+
+
 ![](img/1b7cb867abda09f01470aedb1d4c8c47.png)
 
 第一版回答格式我是比较满意的，但是cursor死板的只以我提问的流程图、时序图和类图进行回答，强迫症不能接受，后面继续追问，为了不占用太多篇幅和冗余，下面只贴Prompt过程，不再一一贴回答图。
@@ -373,11 +368,11 @@ Mermaid是基于 JavaScript 的图表工具，可呈现 Markdown 启发的文本
 
 最终，基于cursor回答，以及手动整合修改，下面展示效果。
 
-### 基础图表展示
+# 基础图表展示
 
 下面展示一些常用图表，图表左侧附带了Mermaid代码，大家看一下就可以，可以不必过于关注，本次重在演示如何使用cursor帮我们自动生成这些图表，而深度使用用户，建议去官网查看Mermaid或UML语法。
 
-#### （1）流程图：展示业务逻辑和数据流
+## （1）流程图：展示业务逻辑和数据流
 
 大家最常接触到的图片是流程图，首先以流程图进行展示，那么为什么要绘制流程图呢？
 
@@ -387,132 +382,110 @@ Mermaid是基于 JavaScript 的图表工具，可呈现 Markdown 启发的文本
 
 Mermaid 代码定义了如何制作节点和边，并适应不同的箭头类型、多方向箭头以及任何与子图的链接。
 
-```
-````mermaid
+```mermaid
 flowchart TD
-    A[用户提问] --&gt; B{是否有缓存}
-    B --&gt;|是| C[返回缓存]
-    B --&gt;|否| D[查询向量库]
-    D --&gt; E[生成SQL]
-    E --&gt; F[执行查询]
-    F --&gt; G[返回结果]
-````
+    A[用户提问] --> B{是否有缓存}
+    B -->|是| C[返回缓存]
+    B -->|否| D[查询向量库]
+    D --> E[生成SQL]
+    E --> F[执行查询]
+    F --> G[返回结果]
 ```
 
 ![](img/eacc1c80eee73ef1cac1ea3d3f5924e7.png)
 
-| **详细用途** | **优点** | **适用场景** | **基本用法** |
+| 详细用途 | 优点 | 适用场景 | 基本用法 |
 | --- | --- | --- | --- |
-| +   清晰展示处理步骤 | +   统一团队认知 | +   业务流程 | +   TB/TD——从上到下 |
+| + 清晰展示处理步骤 | + 统一团队认知 | + 业务流程 | + `TB/TD`——从上到下 |
 
 ![](img/59dbcf47e734d869b195cc1bd62da36e.png)
 
-**基本用法：**
+基本用法：
 
-+   TB/TD——从上到下
++ `TB/TD`——从上到下
++ `BT`——从下到上
++ `RL`——从右到左
++ `LR`——从左到右
 
-+   BT——从下到上
-
-+   RL——从右到左
-
-+   LR——从左到右
-
-#### （2）**时序图：展示组件交互**
+## （2）时序图：展示组件交互
 
 序列图是一种交互图，显示进程如何彼此运行以及以什么顺序运行。
 
-```
-````mermaid
+```mermaid
 sequenceDiagram
     actor U as 用户
     participant A as API
     participant D as 数据库
-    U-&gt;&gt;+A: 发送请求
-    A-&gt;&gt;+D: 查询数据
-    D--&gt;&gt;-A: 返回数据
-    A--&gt;&gt;-U: 响应结果
-````
+    U->>+A: 发送请求
+    A->>+D: 查询数据
+    D-->>-A: 返回数据
+    A-->>-U: 响应结果
 ```
 
 ![](img/7c04070c4284b06f1928e5084b1d4ec2.png)
 
-**详细用途**：
+详细用途：
 
-+   展示交互顺序
++ 展示交互顺序
++ 明确责任边界
++ 识别异步操作
++ 优化响应时间
 
-+   明确责任边界
+适用场景：
 
-+   识别异步操作
++ 组件交互
++ API 调用
++ 消息传递
 
-+   优化响应时间
+## （3）类图：展示系统架构
 
-**适用场景**：
-
-+   组件交互
-
-+   API 调用
-
-+   消息传递
-
-#### **（3）类图：展示系统架构**
-
-“**在软件工程中，**统一建模语言（UML）中的类图是一种静态结构图，它通过显示系统的类、它们的属性、操作（或方法）以及对象之间的关系来描述系统的结构”。-Wikipedia -维基百科
+“在软件工程中，统一建模语言（UML）中的类图是一种静态结构图，它通过显示系统的类、它们的属性、操作（或方法）以及对象之间的关系来描述系统的结构”。-Wikipedia -维基百科
 
 类图是面向对象建模的主要构建块。它用于应用程序结构的一般概念建模，以及将模型转换为编程代码的详细建模。类图也可用于数据建模。类图中的类表示主要元素、应用程序中的交互以及要编程的类。
 
-```
-````mermaid
+```mermaid
 classDiagram
     class VannaBase {
-        &lt;&lt;Abstract&gt;&gt;
+        <<Abstract>>
         +generate_sql()
         +train()
     }
     class VectorStore {
-        &lt;&lt;Interface&gt;&gt;
+        <<Interface>>
         +add_data()
         +query()
     }
-    VannaBase &lt;|-- VectorStore
-````
+    VannaBase <|-- VectorStore
 ```
 
 ![](img/4dcfed98e7092eaa5e8801af7a9779d7.png)
 
-**详细用途**：
+详细用途：
 
-+   展示类的关系
++ 展示类的关系
++ 定义接口规范
++ 明确继承结构
++ 规划系统扩展
 
-+   定义接口规范
+适用场景：
 
-+   明确继承结构
++ 系统架构
++ 类关系
++ 接口定义
 
-+   规划系统扩展
-
-**适用场景**：
-
-+   系统架构
-
-+   类关系
-
-+   接口定义
-
-#### （4）甘特图 (Gantt)：时间进度
+## （4）甘特图 (Gantt)：时间进度
 
 甘特图是一种条形图，最初由 Karol Adamiecki 于 1896 年开发，并由 Henry Gantt 在 1910 年代独立开发，它说明了项目进度表以及任何一个项目完成所需的时间。甘特图显示了项目的终端元素和摘要元素的开始日期和完成日期之间的天数。
 
-```
-````mermaid
+```mermaid
 gantt
     title 项目计划
     section 阶段1
     任务1    :a1, 2024-01-01, 30d
     任务2    :after a1, 20d
-````
 ```
 
-```
-````mermaid
+```mermaid
 gantt
     title 项目里程碑
     dateFormat  YYYY-MM-DD
@@ -520,98 +493,82 @@ gantt
     需求分析     :a1, 2024-01-01, 30d
     架构设计     :a2, after a1, 20d
     编码实现     :a3, after a2, 40d
-````
 ```
 
 ![](img/72a538ad29c140bb94e27c75a0c380a9.png)
 
 ![](img/cf353c93fc19e818be9a5fb546906eb7.png)
 
-**适用场景**：
+适用场景：
 
-+   项目管理
++ 项目管理
++ 时间规划
++ 进度跟踪
 
-+   时间规划
-
-+   进度跟踪
-
-#### （5）饼图 (Pie Chart)
+## （5）饼图 (Pie Chart)
 
 饼图（或圆形图）是一种圆形统计图形，将其划分为多个切片以说明数字比例。在饼图中，每个切片的弧长（及其中心角和面积）与其表示的数量成正比。虽然它因其类似于切片的馅饼而得名，但它的呈现方式却有多种变化。已知最早的饼图通常归功于 William Playfair 于 1801 年出版的统计手册——维基百科
 
-```
-````mermaid
+```mermaid
 pie
     title 项目分布
-    &quot;A&quot; : 40
-    &quot;B&quot; : 30
-    &quot;C&quot; : 30
-````
+    "A" : 40
+    "B" : 30
+    "C" : 30
 ```
 
 ![](img/769fd113ef4ed32fa361ff949e02df43.png)
 
-**适用场景**：
+适用场景：
 
-+   数据分布
++ 数据分布
++ 占比分析
++ 统计展示
 
-+   占比分析
-
-+   统计展示
-
-#### （6）状态图 (State Diagram)
+## （6）状态图 (State Diagram)
 
 “状态图是计算机科学及相关领域中用于描述系统行为的一种图。状态图要求所描述的系统由有限数量的状态组成；有时确实如此，而在其他情况下有时这是一个合理的抽象。”——维基百科
 
-```
-````mermaid
+```mermaid
 stateDiagram-v2
-    [] --&gt; Still
-    Still --&gt; Moving
-    Moving --&gt; Still
-    Moving --&gt; Crash
-*    Crash --&gt; [*]
-````
+    [*] --> Still
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
 ```
 
 ![](img/c2b6cd89d00904f01ed71b661b0bf5fd.png)
 
-**适用场景**：
+适用场景：
 
-+   状态机
++ 状态机
++ 生命周期
++ 工作流程
 
-+   生命周期
-
-+   工作流程
-
-#### （7）ER 图 (Entity Relationship)
+## （7）ER 图 (Entity Relationship)
 
 实体关系模型（或 ER 模型）描述特定知识领域中相关的感兴趣的事物。基本 ER 模型由实体类型（对感兴趣的事物进行分类）组成，并指定实体（这些实体类型的实例）之间可能存在的关系。——维基百科
 
-```
-````mermaid
+```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
-````
 ```
 
 ![](img/9033be3b6e3c7cd96e302c43f0d4edc4.png)
 
-**适用场景**：
+适用场景：
 
-+   数据库设计
++ 数据库设计
++ 实体关系
++ 系统建模
 
-+   实体关系
+## （8）用户旅程图 (Journey)
 
-+   系统建模
+用户旅程高度详细地描述了不同用户在系统、应用程序或网站内完成特定任务所采取的步骤。该技术显示当前（原样）用户工作流程，并揭示未来工作流程的改进领域。——维基百科
 
-#### （8）用户旅程图 (Journey)
-
-用户旅程高度详细地描述了不同用户在系统、应用程序或网站内完成特定任务所采取的步骤。该技术显示当前（原样）用户工作流程，并揭示未来工作流程的改进领域。 ——维基百科
-
-```
-````mermaid
+```mermaid
 journey
     title 用户购物流程
     section 浏览
@@ -619,90 +576,78 @@ journey
     section 购买
       下单: 3: Me
       支付: 5: Me
-````
 ```
 
 ![](img/73c1bb8c0a2275e3eea695176780e8ef.png)
 
-**适用场景**：
+适用场景：
 
-+   用户体验
-
-+   流程体验
-
-+   满意度分析
++ 用户体验
++ 流程体验
++ 满意度分析
 
 > PS：可能是我接触的比较少，所以之前没画过这个图，不清楚实际业务场景这个图的作用是否大。
 
-### 不同维度的需求
+# 不同维度的需求
 
 从不同业务场景和项目相关人员进行介绍，更加详细的介绍与示例，请查看文档最后附件章节。
 
-| **业务阶段** | **需求** | **设计** | **开发** | **测试** | **管理** | **运营** |
+| 业务阶段 | 需求 | 设计 | 开发 | 测试 | 管理 | 运营 |
 | --- | --- | --- | --- | --- | --- | --- |
-| **角色** | **产品经理** | **程序员** | **程序员** | **测试工程师** | **项目经理** | **运营** |
-| **关注图表** | +   用户旅程图：用户体验 | +   ER图：数据库设计 | +   流程图：处理逻辑 | +   状态图 | +   甘特图：项目进度 | +   饼图：分析数据 |
+| 角色 | 产品经理 | 程序员 | 程序员 | 测试工程师 | 项目经理 | 运营 |
+| 关注图表 | + 用户旅程图：用户体验 | + ER图：数据库设计 | + 流程图：处理逻辑 | + 状态图 | + 甘特图：项目进度 | + 饼图：分析数据 |
 
-### 解决不同问题
+# 解决不同问题
 
-#### （1）架构问题
+## （1）架构问题
 
-```
-````mermaid
+```mermaid
 flowchart TB
-    A[前端] --&gt; B[API网关]
-    B --&gt; C[服务1]
-    B --&gt; D[服务2]
-    C --&gt; E[(数据库)]
-    D --&gt; E
-````
+    A[前端] --> B[API网关]
+    B --> C[服务1]
+    B --> D[服务2]
+    C --> E[(数据库)]
+    D --> E
 ```
 
 ![](img/cc2a2270a8ef92850c870fd908a192ea.png)
 
-**使用图表**：
+使用图表：
 
-+   流程图：系统架构
++ 流程图：系统架构
++ 类图：模块关系
++ ER图：数据结构
 
-+   类图：模块关系
+## （2）性能问题
 
-+   ER图：数据结构
-
-#### （2）性能问题
-
-```
-````mermaid
+```mermaid
 sequenceDiagram
     participant C as Client
     participant S as Server
     participant R as Redis
     participant D as DB
-    C-&gt;&gt;+S: 请求数据
-    S-&gt;&gt;+R: 查询缓存
-    R--&gt;&gt;-S: 缓存命中
+    C->>+S: 请求数据
+    S->>+R: 查询缓存
+    R-->>-S: 缓存命中
     alt 缓存未命中
-        S-&gt;&gt;+D: 查询数据库
-        D--&gt;&gt;-S: 返回数据
-        S-&gt;&gt;R: 更新缓存
+        S->>+D: 查询数据库
+        D-->>-S: 返回数据
+        S->>R: 更新缓存
     end
-    S--&gt;&gt;-C: 返回结果
-````
+    S-->>-C: 返回结果
 ```
 
 ![](img/dffcfb545b0145d0616e67e636fbf800.png)
 
-**使用图表**：
+使用图表：
 
-+   时序图：调用链路
++ 时序图：调用链路
++ 流程图：处理流程
++ 状态图：状态变化
 
-+   流程图：处理流程
+## （3）协作问题
 
-+   状态图：状态变化
-
-#### （3）协作问题
-
-```
-````mermaid
+```mermaid
 gantt
     title 团队协作计划
     dateFormat YYYY-MM-DD
@@ -712,52 +657,46 @@ gantt
     开发     :a2, 2024-01-15, 30d
     section 测试
     测试     :a3, 2024-02-01, 20d
-````
 ```
 
 ![](img/5207eaceb2bd7579345b0f1dc08fc504.png)
 
-**使用图表**：
+使用图表：
 
-+   甘特图：进度同步
++ 甘特图：进度同步
++ 流程图：工作流程
++ 时序图：协作流程
 
-+   流程图：工作流程
+## 总结：通过合理选择和组合这些图表，能够：
 
-+   时序图：协作流程
+1. 提高沟通效率
+2. 减少理解偏差
+3. 优化开发流程
+4. 提升项目质量
 
-### 总结：通过合理选择和组合这些图表，能够：
-
-1.  提高沟通效率
-
-1.  减少理解偏差
-
-1.  优化开发流程
-
-1.  提升项目质量
-
-## （三）已有项目代码可视化操作
+# （三）已有项目代码可视化操作
 
 不论代码项目大小，以及是自己编程或学习其他项目，均可使用这种方式。
 
-### ** 项目介绍**
+## 项目介绍
 
 vanna-ai项目为github本周410stars （总11.8kstars）的开源项目，其是 MIT 许可的开源 Python RAG（检索增强生成）框架，用于 SQL 生成和相关功能，下面是介绍视频与github链接。
 
 ![](img/b51047d259eb90b86fd2b495759c52d8.png)
 
-[ann-ai.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U2VybB2KooUYYGxPBL8clPuUnrc)
+[`ann-ai.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U2VybB2KooUYYGxPBL8clPuUnrc)
 
-### 梳理整个项目逻辑并且初步可视化
+## 梳理整个项目逻辑并且初步可视化
 
 使用Chat梳理整个项目逻辑，并且使用mermaid对项目进行可视化。
 
 ![](img/7a6243a4c4d63d64fd36cd392eb281e0.png)
 
-由于@Codebase ，所以会读取所有的文件，不仅仅是代码文件，过程如下图所示：
+由于`@Codebase`，所以会读取所有的文件，不仅仅是代码文件，过程如下图所示：
 
 ![](img/bc25c077c96f936e22b02124d6aa5c70.png)
 
-下面是回答结果，能够初步对项目功能及架构进**行说明，并且**给出了工作流程、训练过程以及关键代码位置，非常棒：
+下面是回答结果，能够初步对项目功能及架构进行说明，并且给出了工作流程、训练过程以及关键代码位置，非常棒：
 
 ![](img/5c19fb8c0b3b28fa07f938ccaaacb5b2.png)
 
@@ -765,13 +704,11 @@ vanna-ai项目为github本周410stars （总11.8kstars）的开源项目，其�
 
 ![](img/654604be6e38ecf2d3f055739492247c.png)
 
-### 不同角度图表的绘制
+## 不同角度图表的绘制
 
-#### （1）绘制项目流程图
+### （1）绘制项目流程图
 
-```
-梳理VANNA-MAIN的完整逻辑流程，创建 mermaid_flow.md文件到根目录，同时在mermaid_flow.md中使用绘制mermaid项目流程图
-```
+`梳理VANNA-MAIN的完整逻辑流程，创建 mermaid_flow.md文件到根目录，同时在mermaid_flow.md中使用绘制mermaid项目流程图`
 
 ![](img/fbfb8a66f35235fba9cfcbd46d8fb0e2.png)
 
@@ -795,9 +732,7 @@ cursor回答后，点击Apply就可以自动创建对应的md文档，并且会�
 
 回答的很不错，但是这个回答是以广义上的流程来回答绘制的，在这里我想要的是mermaid的Flowchart，于是加上Flowchart限定，重新提问，提示词如下：
 
-```
-梳理VANNA-MAIN的完整逻辑流程，创建 mermaid flow,md文件到根目录，同时在mermaid flow.md中使用绘制mermaid项目流程图(Flowchart)
-```
+`梳理VANNA-MAIN的完整逻辑流程，创建 mermaid flow.md文件到根目录，同时在mermaid flow.md中使用绘制mermaid项目流程图(Flowchart)`
 
 ![](img/8bd80b73810397583f7ad18ba17835e4.png)
 
@@ -807,17 +742,15 @@ cursor回答后，点击Apply就可以自动创建对应的md文档，并且会�
 
 ![](img/44135e0b86e56ecfef175f310347f867.png)
 
-```
-完整整理[苏苏]角色逻辑的时序图，用terminal帮我创建mermaid_sequence.md文件到根目录
-```
+`完整整理[苏苏]角色逻辑的时序图，用terminal帮我创建mermaid_sequence.md文件到根目录`
 
-#### （2）绘制项目时序图
+### （2）绘制项目时序图
 
 这里没有像绘制Flowchart一样，而是只让cursor绘制了一个全流程的时序图，使用Prompt如下：
 
-```
-@Codebase 完整梳理全流程的时序图，{只输出```mermaid.md```图表}，并帮我创建mermaid_sequence.md 文件到根目录 
-```
+`@Codebase 完整梳理全流程的时序图，{只输出```mermaid.md```图表}，并帮我创建mermaid_sequence.md 文件到根目录`
+
+
 
 cursor回答以及mermaid图表如下图所示：
 
@@ -827,37 +760,27 @@ cursor回答以及mermaid图表如下图所示：
 
 其中，各个组件解释如下：
 
-| **组件名称** | **User（用户）** | Vanna Core（核心组件） | VS（Vector Store，向量存储） | LLM（Language Model，语言模型） | DB（Database，目标数据库） | Viz（Visualization，可视化组件） |
+| 组件名称 | User（用户） | Vanna Core（核心组件） | VS（Vector Store，向量存储） | LLM（Language Model，语言模型） | DB（Database，目标数据库） | Viz（Visualization，可视化组件） |
 | --- | --- | --- | --- | --- | --- | --- |
-| **说明** | +   系统的最终用户 | +   系统的主要控制器 | +   存储训练数据的向量数据库 | +   负责自然语言处理 | +   存储实际业务数据的数据库 | +   处理数据可视化 |
+| 说明 | 系统的最终用户 | 系统的主要控制器 | 存储训练数据的向量数据库 | 负责自然语言处理 | 存储实际业务数据的数据库 | 处理数据可视化 |
 
-+   ChromaDB
+- ChromaDB
+- Milvus
+- OpenSearch
+- 等
 
-+   Milvus
+- DDL
+- 文档
+- SQL示例
+- QianWenAI
+- ZhipuAI
+- 等
 
-+   OpenSearch
+## 绘制类图
 
-+   等
+仿照绘制 Flowchart 的 Prompt 绘制类图
 
-+   DDL
-
-+   文档
-
-+   SQL示例
-
-+   QianWenAI
-
-+   ZhipuAI
-
-+   等
-
-#### （3）绘制类图
-
-仿照绘制Flowchart的Prompt绘制类图
-
-```
-梳理VANNA-MAIN的完整代码，创建 mermaid_classDiagrams.md文件到根目录，同时在mermaid_classDiagrams.md中绘制mermaid项目Class diagrams图
-```
+梳理`VANNA-MAIN`的完整代码，创建`mermaid_classDiagrams.md`文件到根目录，同时在`mermaid_classDiagrams.md`中绘制 mermaid 项目 Class diagrams 图
 
 ![](img/e18255539d79c2d79c7d006e185e4214.png)
 
@@ -871,45 +794,38 @@ cursor回答以及mermaid图表如下图所示：
 
 ![](img/593410df7962830232dc1e1431a52a32.png)
 
-# 四、** 使用建议——待更新**
+# 四、使用建议——待更新
 
-**图表设计原则：**保持简洁清晰、突出重点关系、合理使用颜色、注意布局美观。
+## 图表设计原则
 
-**（1）图表要言简意赅**
+保持简洁清晰、突出重点关系、合理使用颜色、注意布局美观。
 
-Mermaid 的设计宗旨就是用最简洁的语法来表达信息。在创建图表时要注意:
+### （1）图表要言简意赅
 
-+   节点内容尽量精简
+Mermaid 的设计宗旨就是用最简洁的语法来表达信息。在创建图表时要注意：
 
-+   不要有过多的交叉线
+- 节点内容尽量精简
+- 不要有过多的交叉线
+- 布局要整齐有序
+- 色彩要醒目但不花哨
 
-+   布局要整齐有序
+### （2）把图表用起来
 
-+   色彩要醒目但不花哨
+光画图表还不够，要学会在团队协作中充分利用它们：
 
-**（2）把图表用起来**
+- 设计阶段：用图表表达架构和流程
+- 代码评审：用图表解释关键逻辑
+- 新人培训：用图表辅助代码学习
+- 技术分享：用图表增强表现力
 
-光画图表还不够,要学会在团队协作中充分利用它们:
+### （3）持续打磨和优化
 
-+   设计阶段:用图表表达架构和流程
+图表的创建是一个持续迭代的过程：
 
-+   代码评审:用图表解释关键逻辑
-
-+   新人培训:用图表辅助代码学习
-
-+   技术分享:用图表增强表现力
-
-**（3）持续打磨和优化**
-
-图表的创建是一个持续迭代的过程:
-
-+   及时更新图表内容
-
-+   根据反馈不断优化
-
-+   定期重构图表结构
-
-+   引入新的图表类型
+- 及时更新图表内容
+- 根据反馈不断优化
+- 定期重构图表结构
+- 引入新的图表类型
 
 ---
 
@@ -917,10 +833,9 @@ Mermaid 的设计宗旨就是用最简洁的语法来表达信息。在创建图
 
 以下是从项目全生命周期的角度，分析不同角色可能使用的不同图表：
 
-## **产品经理**
+## 产品经理
 
-```
-````mermaid
+```mermaid
 journey
     title 产品需求分析
     section 调研
@@ -932,23 +847,19 @@ journey
     section 验证
       用户测试: 3: PM
       数据分析: 4: PM
-````
 ```
 
 ![](img/b411181d73f373781b337f68d596696a.png)
 
-**常用图表**：
+常用图表：
 
-+   用户旅程图：用户体验
+- 用户旅程图：用户体验
+- 流程图：业务流程
+- 饼图：需求优先级
 
-+   流程图：业务流程
+## 项目经理
 
-+   饼图：需求优先级
-
-## ** 项目经理**
-
-```
-````mermaid
+```mermaid
 gantt
     title 项目排期规划
     dateFormat YYYY-MM-DD
@@ -959,165 +870,138 @@ gantt
     后端开发     :a3, after a1, 20d
     section 测试
     系统测试     :a4, after a2 a3, 10d
-````
 ```
 
 ![](img/54be719ab033c0a378100bec5bf493c2.png)
 
-**常用图表**：
+常用图表：
 
-+   甘特图：项目进度
+- 甘特图：项目进度
+- 流程图：工作流程
+- 饼图：资源分配
 
-+   流程图：工作流程
+## 架构师
 
-+   饼图：资源分配
+常用图表：
 
-## **架构师**
+- 类图：系统架构
+- ER图：数据建模
+- 流程图：系统设计
 
-**常用图表**：
-
-+   类图：系统架构
-
-+   ER图：数据建模
-
-+   流程图：系统设计
-
-```
-````mermaid
+```mermaid
 flowchart TB
     subgraph 前端层
-    A[Web] --&gt; B[Mobile]
+    A[Web] --> B[Mobile]
     end
     subgraph 服务层
-    C[Gateway] --&gt; D[Service]
+    C[Gateway] --> D[Service]
     end
     subgraph 数据层
-    E[(Database)] --&gt; F[Cache]
+    E[(Database)] --> F[Cache]
     end
-    B --&gt; C
-    D --&gt; E
-````
+    B --> C
+    D --> E
 ```
 
 ![](img/d67fb67e1f88b15f9cb5d38892d6cf94.png)
 
-## **开发工程师**
+## 开发工程师
 
-**常用图表**：
+常用图表：
 
-+   时序图：接口交互
+- 时序图：接口交互
+- 类图：代码结构
+- 状态图：状态流转
 
-+   类图：代码结构
-
-+   状态图：状态流转
-
-```
-````mermaid
+```mermaid
 sequenceDiagram
     participant C as Client
     participant S as Service
     participant D as Database
-    C-&gt;&gt;+S: 请求数据
-    S-&gt;&gt;+D: 查询
-    D--&gt;&gt;-S: 返回
-    S--&gt;&gt;-C: 响应
-````
+    C->>+S: 请求数据
+    S->>+D: 查询
+    D-->>-S: 返回
+    S-->>-C: 响应
 ```
 
 ![](img/ce874141d920d3e40f4ce35bc8f4fcac.png)
 
-## **测试工程师**
+## 测试工程师
 
-**常用图表**：
+常用图表：
 
-+   状态图：测试流程
+- 状态图：测试流程
+- 流程图：测试用例
+- 时序图：接口测试
 
-+   流程图：测试用例
-
-+   时序图：接口测试
-
-```
-````mermaid
+```mermaid
 stateDiagram-v2
-    [] --&gt; 待测试
-    待测试 --&gt; 测试中
-    测试中 --&gt; 通过
-    测试中 --&gt; 失败
-    失败 --&gt; 修复中
-    修复中 --&gt; 待测试
-*    通过 --&gt; [*]
-````
+    [] --> 待测试
+    待测试 --> 测试中
+    测试中 --> 通过
+    测试中 --> 失败
+    失败 --> 修复中
+    修复中 --> 待测试
+*    通过 --> [*]
 ```
 
 ![](img/e3055fd54b86594f893a333b0d1cc78c.png)
 
-## ** 运维工程师**
+## 运维工程师
 
-**常用图表**：
+常用图表：
 
-+   流程图：部署流程
+- 流程图：部署流程
+- 时序图：问题排查
+- 状态图：系统监控
 
-+   时序图：问题排查
-
-+   状态图：系统监控
-
-```
-````mermaid
+```mermaid
 flowchart LR
-    A[监控] --&gt;|告警| B{处理}
-    B --&gt;|自动| C[自愈]
-    B --&gt;|手动| D[干预]
-    C --&gt; E[恢复]
-    D --&gt; E
-````
+    A[监控] -->|告警| B{处理}
+    B -->|自动| C[自愈]
+    B -->|手动| D[干预]
+    C --> E[恢复]
+    D --> E
 ```
 
 ![](img/c91e8d2dd553421b461c5a41f11b38cd.png)
 
-## ** UI/UX设计师**
+## UI/UX设计师
 
-**常用图表**：
+常用图表：
 
-+   流程图：页面流转
+- 流程图：页面流转
+- 用户旅程图：交互设计
+- 状态图：界面状态
 
-+   用户旅程图：交互设计
-
-+   状态图：界面状态
-
-```
-````mermaid
+```mermaid
 flowchart LR
-    A[首页] --&gt; B[列表页]
-    B --&gt; C[详情页]
-    C --&gt; D[购买页]
-    D --&gt; E[支付页]
+    A[首页] --> B[列表页]
+    B --> C[详情页]
+    C --> D[购买页]
+    D --> E[支付页]
     style A fill:#f9f,stroke:#333
     style E fill:#bbf,stroke:#333
-````
 ```
 
 ![](img/ca1936f61df6d02bcb0a5fac5dcafb49.png)
 
-## **产品运营：详细举例**
+## 产品运营：详细举例
 
 运营人员通常关注数据分析、用户行为和业务流程，以下是他们最常用的 Mermaid 图表类型：
 
 图表的作用：
 
-1.  更直观地展示数据
-
-1.  更清晰地规划工作
-
-1.  更有效地沟通决策
-
-1.  更科学地评估效果
+1. 更直观地展示数据
+2. 更清晰地规划工作
+3. 更有效地沟通决策
+4. 更科学地评估效果
 
 ### 常用图表
 
-#### （1）用户旅程图 (Journey)
+#### 用户旅程图 (Journey)
 
-```
-````mermaid
+```mermaid
 journey
     title 用户转化漏斗
     section 获客
@@ -1129,72 +1013,60 @@ journey
     section 留存
       复购: 1: User
       推荐他人: 1: User
-````
 ```
 
 ![](img/cdecd094a9f7fab884e2cacb69c2a12a.png)
 
-**用途**：
+用途：
 
-+   分析用户行为路径
+- 分析用户行为路径
+- 识别转化瓶颈
+- 优化用户体验
 
-+   识别转化瓶颈
+#### 饼图 (Pie)
 
-+   优化用户体验
-
-#### （2）饼图 (Pie)
-
-```
-````mermaid
+```mermaid
 pie
     title 用户来源分布
-    &quot;自然搜索&quot; : 35
-    &quot;社交媒体&quot; : 25
-    &quot;付费广告&quot; : 20
-    &quot;直接访问&quot; : 15
-    &quot;其他渠道&quot; : 5
-````
+    "自然搜索" : 35
+    "社交媒体" : 25
+    "付费广告" : 20
+    "直接访问" : 15
+    "其他渠道" : 5
 ```
 
 ![](img/a75ef267b52fd9f78222d811da94c6b0.png)
 
-**用途**：
+用途：
 
-+   渠道分析
+- 渠道分析
+- 用户画像
+- 收入构成
 
-+   用户画像
+#### 流程图 (Flowchart)
 
-+   收入构成
-
-#### （3）流程图 (Flowchart)
-
-```
-````mermaid
+```mermaid
 flowchart TD
-    A[营销活动] --&gt; B{用户行为}
-    B --&gt;|注册| C[新用户]
-    B --&gt;|浏览| D[潜在用户]
-    B --&gt;|流失| E[流失用户]
-    C --&gt; F[转化策略]
-    D --&gt; G[触达策略]
-    E --&gt; H[召回策略]
-````
+    A[营销活动] --> B{用户行为}
+    B -->|注册| C[新用户]
+    B -->|浏览| D[潜在用户]
+    B -->|流失| E[流失用户]
+    C --> F[转化策略]
+    D --> G[触达策略]
+    E --> H[召回策略]
 ```
 
 ![](img/9e99488e3f67eb8a0c3c2ab8a4ecd7b3.png)
 
-**用途**：
+用途：
 
-+   活动流程设计
+- 活动流程设计
+- 用户分层策略
+- 运营决策流程
 
-+   用户分层策略
+#### 甘特图 (Gantt)
 
-+   运营决策流程
-
-#### （4）甘特图 (Gantt)
-
-```
-````mermaid
+```mermaid
 gantt
     title 运营活动排期
     dateFormat YYYY-MM-DD
@@ -1205,81 +1077,69 @@ gantt
     section 新品发布
     物料准备   :b1, 2024-06-05, 5d
     发布活动   :b2, after b1, 7d
-````
 ```
 
 ![](img/5f2e5ed2060d9b3b682dabecf1559390.png)
 
-**用途**：
+用途：
 
-+   活动排期
+- 活动排期
+- 资源规划
+- 里程碑管理
 
-+   资源规划
+#### 状态图 (State)
 
-+   里程碑管理
-
-#### （5）状态图 (State)
-
-```
-````mermaid
+```mermaid
 stateDiagram-v2
-    [*] --&gt; 潜在用户
-    潜在用户 --&gt; 新注册
-    新注册 --&gt; 首购用户
-    首购用户 --&gt; 复购用户
-    首购用户 --&gt; 流失用户
-    复购用户 --&gt; 忠实用户
-    复购用户 --&gt; 流失用户
-    流失用户 --&gt; 召回用户
-    召回用户 --&gt; 复购用户
-````
+    [*] --> 潜在用户
+    潜在用户 --> 新注册
+    新注册 --> 首购用户
+    首购用户 --> 复购用户
+    首购用户 --> 流失用户
+    复购用户 --> 忠实用户
+    复购用户 --> 流失用户
+    流失用户 --> 召回用户
+    召回用户 --> 复购用户
 ```
 
 ![](img/148258282b2c6d2645aa1536ca25a29a.png)
 
-**用途**：
+用途：
 
-+   用户生命周期
-
-+   会员等级变化
-
-+   商品状态流转
+- 用户生命周期
+- 会员等级变化
+- 商品状态流转
 
 ### 运营场景应用
 
-#### （1）**活动策划**
+#### 活动策划
 
-```
-````mermaid
+```mermaid
 flowchart LR
-    A[目标设定] --&gt; B[方案设计]
-    B --&gt; C[资源准备]
-    C --&gt; D[活动执行]
-    D --&gt; E[效果评估]
-    E --&gt; F[复盘优化]
-````
+    A[目标设定] --> B[方案设计]
+    B --> C[资源准备]
+    C --> D[活动执行]
+    D --> E[效果评估]
+    E --> F[复盘优化]
 ```
 
 ![](img/79344778a75a91c85091f1e8cd9ae246.png)
 
-#### （2）**数据分析**
+#### 数据分析
 
-```
-````mermaid
+```mermaid
 pie
     title 活动效果分析
-    &quot;完成目标&quot; : 45
-    &quot;部分完成&quot; : 30
-    &quot;未达标&quot; : 25
-````
+    "完成目标" : 45
+    "部分完成" : 30
+    "未达标" : 25
 ```
 
 ![](img/306f705eec23c20b329a2fb4b16f6105.png)
 
-#### （3）**用户运营**
+#### 用户运营
 
-```
-````mermaid
+```mermaid
 journey
     title 会员成长体系
     section 新手期
@@ -1291,22 +1151,21 @@ journey
     section 成熟期
       等级提升: 4: Member
       权益使用: 5: Member
-````
 ```
 
 ![](img/932b596401f6d2994dcbfca49c2dadc1.png)
 
 ### 运营决策支持
 
-| **渠道分析** | **用户分析** | **活动分析** |
+| 渠道分析 | 用户分析 | 活动分析 |
 | --- | --- | --- |
-| +   投放效果评估 | +   行为轨迹 | +   参与度 |
+| 投放效果评估 | 行为轨迹 | 参与度 |
 
 ### 建议使用场景
 
-| **日常工作** | **战略规划** | **团队协作** |
+| 日常工作 | 战略规划 | 团队协作 |
 | --- | --- | --- |
-| +   活动策划：流程图 | +   用户旅程：Journey图 | +   任务分配：甘特图 |
+| 活动策划：流程图 | 用户旅程：Journey图 | 任务分配：甘特图 |
 
 ---
 
@@ -1320,14 +1179,10 @@ journey
 
 > 欢迎大家交流链接，可以通过鱼丸找到我。
 
-# **参考资源**
+# 参考资源
 
-+   [Cursor 官方文档](https://cursor.sh)
-
-+   [Mermaid 官方文档](https://mermaid.js.org/)
-
-+   [VANNA-MAIN 项目](https://github.com/vanna-ai/vanna)
-
-+   [huggingface.co](https://huggingface.co/datasets/fka/awesome-chatgpt-prompts)
-
-+   [Seaborn官方教程](https://seaborn.pydata.org/index.html)
+- [Cursor 官方文档](https://cursor.sh)
+- [Mermaid 官方文档](https://mermaid.js.org/)
+- [VANNA-MAIN 项目](https://github.com/vanna-ai/vanna)
+- [huggingface.co](https://huggingface.co/datasets/fka/awesome-chatgpt-prompts)
+- [Seaborn官方教程](https://seaborn.pydata.org/index.html)

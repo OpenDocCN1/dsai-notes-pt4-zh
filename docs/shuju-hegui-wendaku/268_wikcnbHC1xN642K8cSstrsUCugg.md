@@ -1,10 +1,15 @@
+
 # 流量路由至境外是什么意思
 
 > 来源：[https://docs.feishu.cn/docx/KSTXdSKwwo498Fx25XfcdLqHnwg](https://docs.feishu.cn/docx/KSTXdSKwwo498Fx25XfcdLqHnwg)
 
-**-问：**《数据安全管理办法（征求意见稿）》第29条：境内用户访问境内互联网的，其流量不得被路由到境外。这个是啥意思呀。
+## 问：
 
-**-答1：**可以看看这篇《[逐条解读数据安全新规](https://mp.weixin.qq.com/s?__biz=MzI3MDgwMjc5Mw==&mid=2247484206&idx=1&sn=0c6223e4951da039bcd3f0b07a27c68b&scene=21#wechat_redirect)》的解读：
+《数据安全管理办法（征求意见稿）》第29条：境内用户访问境内互联网的，其流量不得被路由到境外。这个是啥意思呀。
+
+## 答1：
+
+可以看看这篇《[逐条解读数据安全新规](https://mp.weixin.qq.com/s?__biz=MzI3MDgwMjc5Mw==&mid=2247484206&idx=1&sn=0c6223e4951da039bcd3f0b07a27c68b&scene=21#wechat_redirect)》的解读：
 
 本条明确了网络运营者对于用户流量路由的路径进行限制。
 
@@ -14,8 +19,12 @@
 
 有外媒称因遭到来自中国运营商的流量“劫持”导致国外访问异常的发生，中国电信第一时间也发布了《中国电信被指“劫持流量”不实报道的情况说明》。
 
-**-答2：**用户访问YouTube，本身就是想访问境外网络，不符合访问境内网**络这个约束条件。这种**情况可能说的是类似Google Analytics和Google Ads的情况，我本来想访问豆瓣网看一个电影评分，但是豆瓣通过Google Ads给我匹配了他们广告联盟的定制广告。Google Ads又是在境外的服务。
+## 答2：
 
-**-答3：**因为某事件，国内IP无法访问某APP，只能🪜出去再回来访问，这个就是规制的情况。
+用户访问YouTube，本身就是想访问境外网络，不符合访问境内网络这个约束条件。这种情况可能说的是类似Google Analytics和Google Ads的情况，我本来想访问豆瓣网看一个电影评分，但是豆瓣通过Google Ads给我匹配了他们广告联盟的定制广告。Google Ads又是在境外的服务。
+
+## 答3：
+
+因为某事件，国内IP无法访问某APP，只能🪜出去再回来访问，这个就是规制的情况。
 
 [数据出境定义](https://cbe8t1r4a5.feishu.cn/wiki/wikcn3L5bGEOvBTHYv21IniHZxc)

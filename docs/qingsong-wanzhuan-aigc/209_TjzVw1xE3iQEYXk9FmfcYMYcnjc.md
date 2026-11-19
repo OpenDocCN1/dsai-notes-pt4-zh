@@ -1,3 +1,4 @@
+
 # Coze/扣子 Agent
 
 > 来源：[https://my.feishu.cn/docx/Wtkpd9MiJo5phnxgjJYc2MrAnxe](https://my.feishu.cn/docx/Wtkpd9MiJo5phnxgjJYc2MrAnxe)
@@ -8,9 +9,8 @@ https://www.coze.cn/user/46623471189488?access_entrance=share_my_link&bid=6fjb9h
 
 ![](img/2c2c58c371c2216d78a635337d40e4ad.png)
 
-+   🌟 DeepSeek R1 自部署智能体推荐👇
-
-+   【扣子】智能体 · DeepSeek R1 联网满血版
++ 🌟 DeepSeek R1 自部署智能体推荐👇
++ 【扣子】智能体 · DeepSeek R1 联网满血版
 
 > DeepSeek R1 满血版，671B，深度思考+联网搜索
 

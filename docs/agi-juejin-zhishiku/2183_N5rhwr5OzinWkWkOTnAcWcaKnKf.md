@@ -1,8 +1,7 @@
-# 12.11-微软为 Win11 推出“原生”Copilot 应用，但本质仍是一个网页
-
-> 来源：[https://agijuejin.feishu.cn/docx/Ma5HdlQbnosYtaxZ1VccGb8knVf](https://agijuejin.feishu.cn/docx/Ma5HdlQbnosYtaxZ1VccGb8knVf)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 11 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/Ma5HdlQbnosYtaxZ1VccGb8knVf](https://agijuejin.feishu.cn/docx/Ma5HdlQbnosYtaxZ1VccGb8knVf)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -74,7 +73,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/816/599.htm)
 
 ![](img/24f8bfa9ec9ca8a0c9af78f52e56c973.png)
 
-Meta AI 推出开源可扩展高性能数据加载工具 SPDL，采用多线程技术提升数据加载效率从而加快 AI 训练速度。其核心是异步事件循环，相比传统基于进程的方式，改用基于线程加载，避免进程间通信开销，还运用预取和缓存技术。在不同环境下吞吐量有显著提升，提供性能监控和调优工具，且兼容主流 AI 框架 PyTorch。
+Meta AI 推出开源可扩展高性能数据加载工具 SPDL，采用多线程技术提升数据加载效率从而加快 AI 训练速度。其核心是异步事件循环，相比传统基于进程的方式，改用基于线程加载，避免进程间通信开销，还运用预取和缓存技术。在不同环境下吞吐量有显著提升，提供性能监控和调优工具，且兼容主流 AI 框架 `PyTorch`。
 
 ### 💡 Grok祭出首款生图模型Aurora！两位95后华人立大功，耗时6月自研MoE
 
@@ -124,7 +123,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/816/737.htm)
 
 ![](img/0070686da4358dee20a5894bc61bf2d0.png)
 
-2024 年 12 月 11 日，OpenAI 向所有 ChatGPT 用户开放 Canvas 功能，可提升写作和编码项目效率。目前可在网页版及 Windows 版 ChatGPT 应用中使用，即将推出 Mac 版和移动平台版本。Canvas 有丰富快捷键，可执行 Python 代码并修复错误，还支持定制 GPT 和评论功能。OpenAI 首席执行官 Sam Altman 称其可供所有用户使用，可执行代码且让作品更具风格。
+2024 年 12 月 11 日，OpenAI 向所有 ChatGPT 用户开放 Canvas 功能，可提升写作和编码项目效率。目前可在网页版及 Windows 版 ChatGPT 应用中使用，即将推出 Mac 版和移动平台版本。Canvas 有丰富快捷键，可执行 `Python` 代码并修复错误，还支持定制 GPT 和评论功能。OpenAI 首席执行官 Sam Altman 称其可供所有用户使用，可执行代码且让作品更具风格。
 
 ### 💡 清华系初创面壁智能获新一轮数亿元融资
 

@@ -1,16 +1,17 @@
+
 # Voice - 语音识别与发送语音
 
 > 来源：[https://my.feishu.cn/docx/HlNKdOE2coz0vAxt4rtcVYEunzg](https://my.feishu.cn/docx/HlNKdOE2coz0vAxt4rtcVYEunzg)
 
 ![](img/cf83c3a1732b74d388264afe2e831ddf.png)
 
-## 因cow是基于itchat的web协议制作，发送语音是.mp3文件，而非语音条
+## 因cow是基于`itchat`的web协议制作，发送语音是`.mp3`文件，而非语音条
 
-# 1、音频处理工具 - ffmpeg
+## 1、音频处理工具 - `ffmpeg`
 
 点击地址，进行安装[音频 - ffmpeg安装](https://tffyvtlai4.feishu.cn/wiki/ZxcowYub6iE5GNkEsUjcW9vznMf)
 
-# 2、讯飞APIkey申请
+## 2、讯飞APIkey申请
 
 对比来对比去，觉得讯飞的最合适。
 
@@ -32,9 +33,9 @@ https://www.xfyun.cn/services/rtasr
 
 ![](img/3e98060a38f5bff6707082a4083c77a9.png)
 
-# 3、配置Cow
+## 3、配置Cow
 
-**打开根目录的confi**g.json，这里是总开关，复制时请移除所有汉字。
+打开根目录的`config.json`，这里是总开关，复制时请移除所有汉字。
 
 ```
 # config.json文件内容示例
@@ -67,7 +68,7 @@ https://www.xfyun.cn/services/rtasr
 
 因发送语音不能是语音条，所以我只开了语音识别。
 
-配置讯飞的key，进入/chatgpt-on-wechat/voice/xunfei下的config.json，把对应的key配置进来即可。
+配置讯飞的key，进入`/chatgpt-on-wechat/voice/xunfei`下的`config.json`，把对应的key配置进来即可。
 
 ![](img/e334c7b57de6f5543cc7fba303f7b0bd.png)
 

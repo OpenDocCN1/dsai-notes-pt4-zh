@@ -1,3 +1,4 @@
+
 # 参数列表
 
 > 来源：[https://my.feishu.cn/docx/ACOxdmTJ0oJjF5xs0BqcEzqMnbc](https://my.feishu.cn/docx/ACOxdmTJ0oJjF5xs0BqcEzqMnbc)
@@ -10,7 +11,7 @@
 
 使用 Apple 设备？
 
-许多 Apple 设备会自动将双连字符 (--) 更改为破折号 (—)。Midjourney 可以接受这两种字符！
+许多 Apple 设备会自动将双连字符 (`--`) 更改为破折号 (`—`)。Midjourney 可以接受这两种字符！
 
 ---
 
@@ -18,11 +19,11 @@
 
 ### [Aspect Ratios](https://docs.midjourney.com/aspect-ratios)
 
-**--aspect**或**--ar**更改某一代的纵横比。
+`--aspect`或`--ar`更改某一代的纵横比。
 
 ### [Chaos](https://docs.midjourney.com/chaos)
 
---chaos <number 0–100>改变结果的变化程度。值越高，产生的生成结果就越不寻常和出乎意料。
+`--chaos <number 0–100>`改变结果的变化程度。值越高，产生的生成结果就越不寻常和出乎意料。
 
 ### Character Reference
 
@@ -30,49 +31,49 @@
 
 ### [Fast](https://docs.midjourney.com/fast-relax)
 
-**--fast**覆盖当前设置并使用快速模式运行单个作业。
+`--fast`覆盖当前设置并使用快速模式运行单个作业。
 
 ### [Image Weight](https://docs.midjourney.com/image-prompts)
 
-**--iw <0–3>**设置相对于文本权重的图像提示权重。默认值为 1。
+`--iw <0–3>`设置相对于文本权重的图像提示权重。默认值为 1。
 
 ### [No](https://docs.midjourney.com/multi-prompts)
 
-**--no**负面提示**--no plants**会尝试从图像中移除植物。
+`--no`负面提示`--no plants`会尝试从图像中移除植物。
 
 ### [Quality](https://docs.midjourney.com/quality)
 
---quality <.25, .5, or 1>，或者--q <.25, .5, or 1>您希望花费多少渲染质量时间。默认值为 1。值越高，使用的GPU 分钟数越多；值越低，使用的 GPU 分钟数越少。
+`--quality <.25, .5, or 1>`，或者`--q <.25, .5, or 1>`您希望花费多少渲染质量时间。默认值为 1。值越高，使用的GPU 分钟数越多；值越低，使用的 GPU 分钟数越少。
 
 ### [Random](https://docs.midjourney.com/style-tuner)
 
-**--style random**，将随机的 32 种基本样式 Style Tuner 代码添加到您的提示中。您还可以使用或--style random-16使用其他长度的 Style Tuner 的随机结果。--style random-64--style random-128
+`--style random`，将随机的 32 种基本样式 Style Tuner 代码添加到您的提示中。您还可以使用`--style random-16`使用其他长度的 Style Tuner 的随机结果。`--style random-64` `--style random-128`
 
 ### [Relax](https://docs.midjourney.com/fast-relax)
 
-**--relax**覆盖当前设置并使用“放松模式”运行单个作业。
+`--relax`覆盖当前设置并使用“放松模式”运行单个作业。
 
 ### [Repeat](https://docs.midjourney.com/repeat)
 
-**--repeat <1–40>**或**--r <1–40>**从单个提示创建多个作业。**--repeat**对于快速多次重新运行作业很有用。
+`--repeat <1–40>`或`--r <1–40>`从单个提示创建多个作业。`--repeat`对于快速多次重新运行作业很有用。
 
 ### [Seed](https://docs.midjourney.com/seeds)
 
-**--seed <integer b**etween 0–4294967295>Midjourney 机器人使用种子号创建一个视觉噪声场（如电视静态图像），作为生成初始图像网格的起点。种子号是为每个图像随机生成的，但可以使用 --seed 或 --sameseed 参数指定。使用相同的种子号和提示将产生类似的最终图像。
+`--seed <integer between 0–4294967295>`Midjourney 机器人使用种子号创建一个视觉噪声场（如电视静态图像），作为生成初始图像网格的起点。种子号是为每个图像随机生成的，但可以使用 `--seed` 或 `--sameseed` 参数指定。使用相同的种子号和提示将产生类似的最终图像。
 
 ### [Stop](https://docs.midjourney.com/stop)
 
---s**top <i**nteger between 10–100>使用该--stop参数在流程中途完成作业。以较早的百分比停止作业可能会导致结果更模糊、更不详细。
+`--stop <integer between 10–100>`使用该`--stop`参数在流程中途完成作业。以较早的百分比停止作业可能会导致结果更模糊、更不详细。
 
 ### [Style](https://docs.midjourney.com/style)
 
-**--style <raw>**在 Midjourney[模型版本](https://docs.midjourney.com/docs/models)5.1 和 5.2 之间[切换。
+`--style <raw>`在 Midjourney 模型版本 5.1 和 5.2 之间切换。
 
-](https://docs.midjourney.com/docs/models)**--style <4a, 4b, or 4c>在 Mi**djourn[ey模型](https://docs.midjourney.com/docs/models)版本[**4之间切换**](https://docs.midjourney.com/style-tuner)。
+`--style <4a, 4b, or 4c>`在 Midjourney 模型版本 4 之间切换。
 
---style <cute, expressive, original, or scenic>在 Niji模型版本5之间切换。
+`--style <cute, expressive, original, or scenic>`在 Niji 模型版本 5 之间切换。
 
-使用/tune命令创建 Style Tuner 并生成自定义样式代码。
+使用`/tune`命令创建 Style Tuner 并生成自定义样式代码。
 
 ### [Style Reference](https://docs.midjourney.com/style-reference)
 
@@ -80,23 +81,23 @@
 
 ### [Stylize](https://docs.midjourney.com/stylize)
 
--**-stylize <nu**mber>或--s <number>参数影响 Midjourney 默认美学风格应用于 Jobs 的强度。
+`--stylize <number>`或`--s <number>`参数影响 Midjourney 默认美学风格应用于 Jobs 的强度。
 
 ### [Tile](https://docs.midjourney.com/tile)
 
-**--tile**参数生成可用作重复图块以创建无缝图案的图像。
+`--tile`参数生成可用作重复图块以创建无缝图案的图像。
 
 ### [Turbo](https://docs.midjourney.com/fast-relax)
 
-**--turbo**覆盖当前设置并使用 Turbo 模式运行单个作业。
+`--turbo`覆盖当前设置并使用 Turbo 模式运行单个作业。
 
 ### [Video](https://docs.midjourney.com/video)
 
-**--video**保**存正在生成的初**始图像网格的进度视频。表情符号用 ✉️ 对完成的图像网格做出反应，以触发发送到您的直接消息的视频。--video在放大图像时不起作用。
+`--video`保存正在生成的初始图像网格的进度视频。表情符号用 ✉️ 对完成的图像网格做出反应，以触发发送到您的直接消息的视频。`--video`在放大图像时不起作用。
 
 ### [Weird](https://docs.midjourney.com/weird)
 
---weir**d <numb**er 0–3000>，或者--w <number 0–3000>用实验--weird参数探索不寻常的美学。
+`--weird <number 0–3000>`，或者`--w <number 0–3000>`用实验`--weird`参数探索不寻常的美学。
 
 ### 默认值（模型版本 5.2）
 
@@ -112,11 +113,11 @@ Midjourney 定期发布新模型版本以提高效率、连贯性和质量。不
 
 ### Niji
 
---niji <4, or 5>专注于动漫风格图像的替代模型。
+`--niji <4, or 5>`专注于动漫风格图像的替代模型。
 
 ### V
 
-**--version <1, 2, 3, 4, **5**.0, 5.1, 5.2, or **6>或--v <1, 2, 3, 4, 5.0, 5.1, 5.2, or 6>使用不同版本的 Midjourney 算法。
+`--version <1, 2, 3, 4, 5.0, 5.1, 5.2, or 6>`或`--v <1, 2, 3, 4, 5.0, 5.1, 5.2, or 6>`使用不同版本的 Midjourney 算法。
 
 ---
 
@@ -132,4 +133,4 @@ Midjourney 定期发布新模型版本以提高效率、连贯性和质量。不
 
 ### 模型版本和参数兼容性
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

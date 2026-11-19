@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（6月 1-2日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/ErnVdFUKFol2snxbqEecqVZEnig](https://miracleplus.feishu.cn/docx/ErnVdFUKFol2snxbqEecqVZEnig)
 
-# 资讯
+## 资讯
 
 ### Yann LeCun：ViT慢且效率低，实时图像处理还得看卷积
 
@@ -66,7 +67,7 @@ https://mp.weixin.qq.com/s/q6qm0Pd0XAKZ2oUNna53vw
 
 ![](img/14f5f44f5f7854a4ad038b5c1d6b3d29.png)
 
-# 推特
+## 推特
 
 ### ElevenLabs发布最新模型，用声效来创造丰富和沉浸式的内容
 
@@ -168,7 +169,7 @@ https://github.com/fofr/cog-consistent-character/blob/main/workflow_ui.json
 
 ![](img/f900a0ef0db3640cec31e2273309f875.png)
 
-# 产品
+## 产品
 
 ### Artizyou
 
@@ -192,7 +193,7 @@ LinkedCRM AI 是一款专门为销售人员设计的人工智能驱动的 Chrome
 
 ![](img/edc9e6a63659e4634fcb0d620b53ba43.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### AutoCoder
 
@@ -214,7 +215,7 @@ HolmesGPT 是一个开源的 DevOps 助理工具，可以像人类一样分析�
 
 ![](img/e1dc36a2ba7478793bb4f7b0640ceefa.png)
 
-# 投融资
+## 投融资
 
 ### 渊亭科技完成近4亿元人民币B轮系列融资
 
@@ -250,7 +251,7 @@ https://www.bloomberg.com/news/articles/2024-05-31/saudi-fund-joins-400-million-
 
 ![](img/f1df1d33710a6c7d736280ff69a4a484.png)
 
-# 学习
+## 学习
 
 ### 【LLM拆了再装】 Tokenizer篇
 
@@ -266,13 +267,15 @@ https://zhuanlan.zhihu.com/p/700283095?utm_psn=1779895090687229952
 
 贡献人：
 
+
+
 https://zhuanlan.zhihu.com/p/699978994?utm_psn=1778392780374986752
 
-文章提出了 Alignment from Demonstrations (AfD) 作为 RLHF 的一种替代方案，旨在解决大型语言模型（LLM）对齐问题。AfD 通过 Inverse RL trajectory matching 视角，优化了 SFT 数据的使用，并探讨了在何种情况下应用 SFT 或 Reward Modeling。文章指出，尽管 RLHF 有效，但标注成本高，而 BC 在部署时可能会因为累计误差而表现不佳。作者进一步分析了正反向 KL 散度在分布匹配中的作用，并提出了使用对抗性训练来提升奖励模型的效果。特别是在处理开放式任务时，反向 KL 散度的方法能够更好地捕捉到多种可能的答案模式。文章强调了技术细节，如 LLM 作为 MDP\R 的特性，以及在 RL 中缺少奖励函数时的解决策略，为 LLM 的对齐工作提供了新的思路和方法。
+文章提出了 Alignment from Demonstrations (AfD) 作为 RLHF 的一种替代方案，旨在解决大型语言模型（LLM）对齐问题。AfD 通过 Inverse RL trajectory matching 视角，优化了 SFT 数据的使用，并探讨了在何种情况下应用 SFT 或 Reward Modeling。文章指出，尽管 RLHF 有效，但标注成本高，而 BC 在部署时可能会因为累计误差而表现不佳。作者进一步分析了正反向 KL 散度在分布匹配中的作用，并提出了使用对抗性训练来提升奖励模型的效果。特别是在处理开放式任务时，反向 KL 散度的方法能够更好地捕捉到多种可能的答案模式。文章强调了技术细节，如 LLM 作为 `MDP\R` 的特性，以及在 RL 中缺少奖励函数时的解决策略，为 LLM 的对齐工作提供了新的思路和方法。
 
 ![](img/8e625bdeef4f494248edbce6d63645a2.png)
 
-### 数据收集魔法：获取顶级训练数据的方法
+## 数据收集魔法：获取顶级训练数据的方法
 
 贡献人：
 
@@ -282,7 +285,7 @@ https://zhuanlan.zhihu.com/p/700613165?utm_psn=1779410624936075264
 
 ![](img/37ff8770f5aafb769b71f57c45a6a662.png)
 
-### 大语言模型(LLM)在数学推理上的Scaling Laws
+## 大语言模型(LLM)在数学推理上的Scaling Laws
 
 贡献人：
 
@@ -292,7 +295,7 @@ https://zhuanlan.zhihu.com/p/648000801?utm_psn=1779411312210575360
 
 ![](img/34e9f48dc3a196fd15c2a94a3df0a1b9.png)
 
-### 高级 RAG 检索策略之内嵌表格
+## 高级 RAG 检索策略之内嵌表格
 
 贡献人：
 
@@ -302,7 +305,7 @@ https://mp.weixin.qq.com/s/ckHjnWRlkMMBNUO5cWfMBg
 
 ![](img/e97a1504caa961e3d16d0105a652c80e.png)
 
-### PipeFusion：如何用PCIe互联GPU 低成本并行推理扩散模型
+## PipeFusion：如何用PCIe互联GPU 低成本并行推理扩散模型
 
 贡献人：
 
@@ -316,8 +319,6 @@ https://zhuanlan.zhihu.com/p/699612077?utm_psn=1778390652055154688
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -328,7 +329,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

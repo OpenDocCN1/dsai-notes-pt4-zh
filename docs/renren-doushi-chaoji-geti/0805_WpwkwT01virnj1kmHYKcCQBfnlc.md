@@ -1,3 +1,4 @@
+
 # 赚钱出品——会员专属资料合集
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/V3TDddVejorK5ExXgYScc1nnnNc](https://xuqiwei1986.feishu.cn/docx/V3TDddVejorK5ExXgYScc1nnnNc)
@@ -15,7 +16,6 @@
 我们在龙哥盟的会员日中发起了这个活动，征集了大家在创业路上遇到的亏钱经历。最终汇总成了这份 9w+ 字的《人生亏钱指南》。
 
 希望这本亏钱指南，能为你的人生风控提供帮助。
-
 
 [《人生亏钱指南》龙哥盟出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hge3bwwZIoGipixZS4Vcg6Z6ndd)
 

@@ -1,3 +1,4 @@
+
 # 接码平台与ChatGPT的注册和使用
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KfSJdndLuoL2jixvF9ucILIVnKh](https://xuqiwei1986.feishu.cn/docx/KfSJdndLuoL2jixvF9ucILIVnKh)
@@ -6,7 +7,7 @@
 
 ### 什么是国外接码平台
 
-国外接码平台，就是收集大量手机卡的资源平台，提供接收、发送手机验证码服务。 日常生活中，当我们要使用某项网络服务，需在该平台上注册个人帐号，平台往往通过下发短信验证码来核身和确认。
+国外接码平台，就是收集大量手机卡的资源平台，提供接收、发送手机验证码服务。日常生活中，当我们要使用某项网络服务，需在该平台上注册个人帐号，平台往往通过下发短信验证码来核身和确认。
 
 接码平台是利用虚拟手机号码接收短信验证码的云服务平台，接码平台的原理就是利用卡商提供的号码，对接在平台上，然后接码平台提供给消费者。
 
@@ -14,9 +15,9 @@
 
 ### 什么是 SMS-Activate
 
-这是一个在这个星球上数以百万计的服务中注册帐户的网站。 我们提供世界上大多数国家的虚拟号码，以便您可以在线接收带有确认代码的短信。 在我们的服务中，还有虚拟号码的长期租赁，转发连接，电话验证等等。使用SMS-Activate的虚拟号码来在线接受短信。可以在600个多服务注册的一次性号码。短信即刻送到给你
+这是一个在这个星球上数以百万计的服务中注册帐户的网站。我们提供世界上大多数国家的虚拟号码，以便您可以在线接收带有确认代码的短信。在我们的服务中，还有虚拟号码的长期租赁，转发连接，电话验证等等。使用SMS-Activate的虚拟号码来在线接受短信。可以在600个多服务注册的一次性号码。短信即刻送到给你
 
-SMS-Activate官网：https://sms-activate.org
+SMS-Activate官网：`https://sms-activate.org`
 
 ### 什么是ChatGPT
 
@@ -40,8 +41,8 @@ SMS-Activate官网：https://sms-activate.org
 
 ## 其他接码平台整理
 
-https://sms-bus.com/?ref=YYRDV7FL
+`https://sms-bus.com/?ref=YYRDV7FL`
 
-https://www.sms-receive-online.com/
+`https://www.sms-receive-online.com/`
 
-https://sms-man.com/
+`https://sms-man.com/`

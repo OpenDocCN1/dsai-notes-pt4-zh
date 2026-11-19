@@ -1,3 +1,4 @@
+
 # 2023-12-07谷歌发布AI模型Gemini：小公主还没长大，被逼出阁_杭州网
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZzYLdKcDEo4hz9xWDVKcANhEnzh](https://xuqiwei1986.feishu.cn/docx/ZzYLdKcDEo4hz9xWDVKcANhEnzh)
@@ -34,7 +35,7 @@ google llm graphicGemini还有三种级别的产品型号：Ultra、Pro和Nano�
 
 皮查伊说Gemini代表了谷歌DeepMind在人工智能方面取得的进展：“我认为这是人工智能模型的Gemini时代，它将永远代表我们在人工智能技术方面取得进展的前沿。”
 
-**和GPT的技术较量**
+## 和GPT的技术较量
 
 OpenAI最强大的模型GPT-4被视为行业的黄金标准。虽然谷歌吹嘘Gemini的表现优于OpenAI的前一个模型GPT 3.5，但公司高管回避了该模型超过GPT-4的程度的问题。
 
@@ -48,7 +49,7 @@ OpenAI最强大的模型GPT-4被视为行业的黄金标准。虽然谷歌吹嘘
 
 利用人类测试人员的反馈，谷歌DeepMind训练Gemini更准确地回答事实，在被要求时给出归因，在面对无法回答的问题时进行对冲，而不是胡言乱语。华盛顿大学计算语言学教授Emily Bender对谷歌宣传的“万能机器”一说表示质疑，称该公司正在使用狭窄的基准来评估预计用于这些不同目的的模型，“这意味着无法对其进行有效的彻底评估”。
 
-**人工智能走到哪一步了？**
+## 人工智能走到哪一步了？
 
 今年3月OpenAI发布GPT人工智能模型并推出其支持的付费聊天AI机器人ChatGPT。这对谷歌来说压力很大。
 

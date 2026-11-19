@@ -1,38 +1,39 @@
+
 # 拆书成神-《儿媳x》&《换卷x》短篇拆解Prompt
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/YKXTdaVESoVsHyxk028c2GhInrc](https://rq547mr4oez.feishu.cn/docx/YKXTdaVESoVsHyxk028c2GhInrc)
+> 来源：https://rq547mr4oez.feishu.cn/docx/YKXTdaVESoVsHyxk028c2GhInrc
 
-# 一、前言：
+## 一、前言
 
-> 细纲怎么写？情节点怎么做？情绪上下行怎么写~~
+> 细纲怎么写？情节点怎么做？情绪上下行怎么写
 
-> **是每个小伙伴写章****节的****问题，so今天拆书短****篇《儿媳被系统**抹杀后》和《换卷系统攻略失败》来看看怎么做。
+> 是每个小伙伴写章节的问题，so今天拆书短篇《儿媳被系统抹杀后》和《换卷系统攻略失败》来看看怎么做。
 
-> 附《网文章节分析师》的prompt哦~
+> 附《网文章节分析师》的`prompt`哦~
 
-之前的拆书内容~~这个系列也是长期更新~~
+之前的拆书内容，这个系列也是长期更新。
 
-1.  [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
+1. [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
 
-1.  [NineS AI-《好一个乖乖女》爆款剧本全拆解](https://rq547mr4oez.feishu.cn/wiki/CX1UwnfjHidaiwkbe1CcZ4CGnk7?from=from_copylink)
+1. [NineS AI-《好一个乖乖女》爆款剧本全拆解](https://rq547mr4oez.feishu.cn/wiki/CX1UwnfjHidaiwkbe1CcZ4CGnk7?from=from_copylink)
 
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
 
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)（韭菜Y日记）
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)（韭菜Y日记）
 
-1.  [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)
+1. [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)
 
-1.  [拆书成神-爽文《从斩妖除魔开始长生不死》](https://rq547mr4oez.feishu.cn/wiki/HzN9w04IliWZBukwyXCcHAYqn9d?from=from_copylink)
+1. [拆书成神-爽文《从斩妖除魔开始长生不死》](https://rq547mr4oez.feishu.cn/wiki/HzN9w04IliWZBukwyXCcHAYqn9d?from=from_copylink)
 
-1.  [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
+1. [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
 
 ---
 
-**PS：NineS AI【****AI知识库+AI**产品+投稿渠道+干货交流=全链路】的创作者社群~
+PS：NineS AI【AI知识库+AI产品+投稿渠道+干货交流=全链路】的创作者社群~
 
 ![](img/f99a23332c6bf29027ba62d77342f669.png)
 
-# 二、直接上干货
+## 二、直接上干货
 
 ```
 ====
@@ -42,12 +43,12 @@
 2. 题材: 现代言情
 3. 类型: 都市情感
 4. 字数: 72608
-5. 期待感: 通过母亲的视角，探讨爱情、婚姻、家庭与选择的复杂性。
+5. 期待感: 通过母亲的视角，探讨爱情、婚姻、家庭与选择的复杂性.
 
 ## 二、故事设定
-1. 背景设定: 现代都市，强调娱乐圈与商业世界的交织，揭示权力和金钱在情感中的影响。
+1. 背景设定: 现代都市，强调娱乐圈与商业世界的交织，揭示权力和金钱在情感中的影响.
 2. 主角: 
-    - 母亲（苏总），中年，强势，商业精英，心痛因儿子与儿媳的关系恶化。
+    - 母亲（苏总），中年，强势，商业精英，心痛因儿子与儿媳的关系恶化.
     - 分析主角人设的七步法:
         - 目标: 保护儿媳和维持家庭完整
         - 阻碍: 儿子被爱情蒙蔽，系统的约束
@@ -60,7 +61,7 @@
     - 儿子，渣男，迷恋陈思思，对儿媳江凝缺乏理解
     - 儿媳，善良却被操控，坠入悲剧
     - 陈思思，狡诈的竞争者，直接导致事件恶化
-4. 核心梗: 利用系统选择的攻略主题，揭示选择影响人生的复杂关系。
+4. 核心梗: 利用系统选择的攻略主题，揭示选择影响人生的复杂关系.
 5. 核心内容: 
     - 危机: 儿媳妇的死亡、家庭关系的崩溃
     - 伏笔: 系统对儿子和儿媳的安排和干扰
@@ -68,17 +69,17 @@
     - 爽点: 母亲反击儿子对儿媳的伤害
 
 ## 三、故事脉络
-1. 核心冲突: 母亲与儿子、儿子与儿媳平行的内心斗争。
-2. 情感纽带: 家庭内的爱与恨，责任与抉择的拉锯。
-3. 故事反转: 儿子在爱与道德之间的摇摆，最终走入无法回头的深渊。
-4. 二次反转: 母亲的绝望与行动，影响整个家庭的命运。
+1. 核心冲突: 母亲与儿子、儿子与儿媳平行的内心斗争.
+2. 情感纽带: 家庭内的爱与恨，责任与抉择的拉锯.
+3. 故事反转: 儿子在爱与道德之间的摇摆，最终走入无法回头的深渊.
+4. 二次反转: 母亲的绝望与行动，影响整个家庭的命运.
 5. 整体节奏: 
     - [电话通知儿媳死亡] [悲伤和震惊][情绪低落]
     - [儿子怒找儿媳] [冲突与误解][愤怒]
     - [儿媳直播辩白] [舆论翻转][紧张]
     - [母亲指责儿子] [拒绝与支持][矛盾激化]
     - [亲家来访与冲突] [家暴与逃避][懊悔]
-6. 写作风格: 现实主义，冷静而带有讽刺的叙述手法。
+6. 写作风格: 现实主义，冷静而带有讽刺的叙述手法.
 
 ====
 ```
@@ -91,25 +92,25 @@
 
 ![](img/77e9409bbcd214f4f1a801b0a8f6ad4f.png)
 
-# 三、原文和xls表格**下载地址~~**
+## 三、原文和xls表格下载地址
 
 ![](img/8cf84355310cefeda56c7869a5248c0a.png)
 
-[《儿媳被系统抹杀后》.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BCWpbtKbBoDTDNxwW3LclMtQnEn)
+[`《儿媳被系统抹杀后》.txt`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BCWpbtKbBoDTDNxwW3LclMtQnEn)
 
 ![](img/6f31803787de409c334fb46149813880.png)
 
-[拆文-儿媳被系统抹杀后.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RJfAba7pzoAAO3xmGM9cjyXWnke)
+[`拆文-儿媳被系统抹杀后.xlsx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RJfAba7pzoAAO3xmGM9cjyXWnke)
 
 ![](img/b42fffe9a352937d7f4a9b08ad43e8a7.png)
 
-[《换卷系统攻略失败》.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hw3UbWd9zoi2GpxpXbecJG4rnLf)
+[`《换卷系统攻略失败》.txt`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hw3UbWd9zoi2GpxpXbecJG4rnLf)
 
 ![](img/28f6e0e8e89078acff74dcd529093af5.png)
 
-[拆文-换卷系统攻略失败.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CIWvbuzC4oclwzxnnCocre78nfh)
+[`拆文-换卷系统攻略失败.xlsx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CIWvbuzC4oclwzxnnCocre78nfh)
 
-# 四、拆书Prompt
+## 四、拆书Prompt
 
 ```
 # Role：网文章节分析师

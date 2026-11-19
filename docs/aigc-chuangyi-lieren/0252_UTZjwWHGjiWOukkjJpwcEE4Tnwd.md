@@ -1,16 +1,17 @@
+
 # Claude Prompt：概念构建
 
 > 来源：[https://aigcreative.feishu.cn/docx/Y42LdzCIfoAOQtxz5GAcvm6pneJ](https://aigcreative.feishu.cn/docx/Y42LdzCIfoAOQtxz5GAcvm6pneJ)
-
-> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/EV2gRTeD_6NtDaaANTT7TQ)qq.com/s/EV2gRTeD...
-
+>
+> 原文链接：[https://mp.weixin.qq.com/s/EV2gRTeD...](https://mp.weixin.qq.com/s/EV2gRTeD_6NtDaaANTT7TQ)
+>
 > 👸号：李继刚
 
 ## 缘起
 
 之前读过一篇文章，大意是介绍了一个如何快速掌握一个陌生领域知识的方法论：找行业的100个关键词，搞懂它们。
 
-这个方法论实践时，难在如何知道那**100个关键词，现在有了**Claude， 我不知道 X AI知道 ，那就可以搞了。甚至可以再往前多走一步，让它输出一下该领域的三条公理。
+这个方法论实践时，难在如何知道那**100个关键词，现在有了**Claude，我不知道 X AI知道，那就可以搞了。甚至可以再往前多走一步，让它输出一下该领域的三条公理。
 
 有了公理，有了核心概念，可以以此为起点，动态构建，最终完全掌握该领域的那座大厦的精髓。
 
@@ -85,7 +86,6 @@ Happy Prompting.
 ;; 3. 严格按照(生成卡片) 进行排版输出
 ;; 4. 输出完 SVG 后, 不再输出任何额外文本解释
 ;; ━━━━━━━━━━━━━━
-
 ```
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

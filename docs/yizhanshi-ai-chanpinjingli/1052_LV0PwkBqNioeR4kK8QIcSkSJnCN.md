@@ -1,4 +1,5 @@
-# 1.4  【RAG实践】
+
+# 1.4 【RAG实践】
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/SBB6dJsUXopCgsx5n5EcB7jjnKb](https://v11enp9ok1h.feishu.cn/docx/SBB6dJsUXopCgsx5n5EcB7jjnKb)
 
@@ -82,13 +83,16 @@
 
 [第二节 Neo4j 基本使用.pdf](https://v11enp9ok1h.feishu.cn/wiki/ZmgwwgIRbixK41kmc5McasomnNb)
 
-| [大模型主流RAG介绍——从架构到技术细节](https://v11enp9ok1h.feishu.cn/wiki/LSXtwpTlviLrugkO7mXcvgo5nRd?from=from_copylink) | [高级RAG ](https://v11enp9ok1h.feishu.cn/wiki/Pl8RwuFbViTYuWkCFh8cG4mcn5b?from=from_copylink) |
-| --- | --- |
-| [构建检索增强生成 (RAG) 应用程序 ](https://v11enp9ok1h.feishu.cn/wiki/InLbw39VSiDSIMkd0yTcdpphnk2?from=from_copylink) | [RAG应用案例 ](https://v11enp9ok1h.feishu.cn/wiki/MeG6wxykuiPlRwkO84OcnefwnEc?from=from_copylink) |
-| [大模型微调与RAG的选型建议](https://v11enp9ok1h.feishu.cn/wiki/QPmawl0ZiiqAXzkesNBcZWAzn8g?from=from_copylink) | [本地知识库问答模型搭建 ](https://v11enp9ok1h.feishu.cn/wiki/GqKvwcdHoilmC4k47uucbrNEnIg?from=from_copylink) |
-| [从《红楼梦》的视角看大模型知识库 RAG 服务的 Rerank 调优](https://v11enp9ok1h.feishu.cn/wiki/C7U1wV7QSi1P0MkeTrPcBTOSn5d?from=from_copylink) | [【RAG实践】基于LlamaIndex和Qwen1.5搭建基于本地知识库的问答机器人](https://v11enp9ok1h.feishu.cn/wiki/UCt8waVUjiEclSkWgIocpUf5ndv?from=from_copylink) |
-| [【RAG实践】Rerank，让大模型 RAG 更近一步](https://v11enp9ok1h.feishu.cn/wiki/B03bwG3LpiYFGakOdgicgc5rngh?from=from_copylink) |  |
+| [大模型主流RAG介绍——从架构到技术细节](https://v11enp9ok1h.feishu.cn/wiki/LSXtwpTlviLrugkO7mXcvgo5nRd?from=from_copylink) | [高级RAG](https://v11enp9ok1h.feishu.cn/wiki/Pl8RwuFbViTYuWkCFh8cG4mcn5b?from=from_copylink) |
 
-#
+| --- | --- |
+
+| [构建检索增强生成 (RAG) 应用程序 ](https://v11enp9ok1h.feishu.cn/wiki/InLbw39VSiDSIMkd0yTcdpphnk2?from=from_copylink) | [RAG应用案例 ](https://v11enp9ok1h.feishu.cn/wiki/MeG6wxykuiPlRwkO84OcnefwnEc?from=from_copylink) |
+
+| [大模型微调与RAG的选型建议](https://v11enp9ok1h.feishu.cn/wiki/QPmawl0ZiiqAXzkesNBcZWAzn8g?from=from_copylink) | [本地知识库问答模型搭建 ](https://v11enp9ok1h.feishu.cn/wiki/GqKvwcdHoilmC4k47uucbrNEnIg?from=from_copylink) |
+
+| [从《红楼梦》的视角看大模型知识库 RAG 服务的 Rerank 调优](https://v11enp9ok1h.feishu.cn/wiki/C7U1wV7QSi1P0MkeTrPcBTOSn5d?from=from_copylink) | [【RAG实践】基于LlamaIndex和Qwen1.5搭建基于本地知识库的问答机器人](https://v11enp9ok1h.feishu.cn/wiki/UCt8waVUjiEclSkWgIocpUf5ndv?from=from_copylink) |
+
+| [【RAG实践】Rerank，让大模型 RAG 更近一步](https://v11enp9ok1h.feishu.cn/wiki/B03bwG3LpiYFGakOdgicgc5rngh?from=from_copylink) |  |
 
 <https://v11enp9ok1h.feishu.cn/sync/Ipw1d27gNsv3OAbo3N7cks4ZnJf>

@@ -1,6 +1,7 @@
+
 # LangChain v1.0 文档审核类Agent开发实战
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/GAG2dwMWCoQlV4xrWJnc0vAwnBf](https://kq4b3vgg5b.feishu.cn/docx/GAG2dwMWCoQlV4xrWJnc0vAwnBf)
+> 来源：`https://kq4b3vgg5b.feishu.cn/docx/GAG2dwMWCoQlV4xrWJnc0vAwnBf`
 
 ## 从技术选型到产品落地
 
@@ -22,27 +23,27 @@
 
 ![](img/4c1176f0f5e33521c92c239f4b42da65.png)
 
-# 一、文档审核类AI成熟落地产品介绍
+## 一、文档审核类AI成熟落地产品介绍
 
 首先看一组数据，如下论文中是对法律大模型与传统法律合同审查员、初级律师和法律流程外包商进行了开创性的比较，并深入剖析了大模型在合同审查的准确性、速度和成本效益方面是否能够超越人类。而最终的实验结果表明，先进的大模型在确定法律问题方面的准确性能够达到甚至超过人类。在速度方面，大模型只需几秒钟即可完成审查，远超人类所需的数小时。在成本方面，大模型的运行成本仅为传统方法的几分之一，成本降低了惊人的 99.97%。
 
 ![](img/5f73c9ad2e7b68dfc4dd9bbf4ea44a69.png)
 
-> 论文地址：https://arxiv.org/pdf/2401.16212
+> 论文地址：`https://arxiv.org/pdf/2401.16212`
 
 随着大模型能力的提升，将其作为智能代理用于专业文档的合规性审核已经从理论变为现实，并且在多个行业中展现出了惊人的效率提升。
 
-**文档合规审核指的是根据法律法规、行业规范或企业内部规则，对各种专业文件进行内容和格式上的检查，以发现潜在**的违规或缺陷之处。典型场景包括：合同文档的法律合规审核、财务票据的规范校验、以及标书、公文等特定格式文件的规则符合性检查。以下是我们国内已经落地的在文档审核类产品中大模型的落地场景：
+**文档合规审核指的是根据法律法规、行业规范或企业内部规则，对各种专业文件进行内容和格式上的检查，以发现潜在的违规或缺陷之处。** 典型场景包括：合同文档的法律合规审核、财务票据的规范校验、以及标书、公文等特定格式文件的规则符合性检查。以下是我们国内已经落地的在文档审核类产品中大模型的落地场景：
 
-+   **阿里的通义法睿**：可以用于快速识别合同潜在风险，并提供专业的风险评估和修改建议。 体验地址：https://tongyi.aliyun.com/farui/review
++   **阿里的通义法睿**：可以用于快速识别合同潜在风险，并提供专业的风险评估和修改建议。体验地址：`https://tongyi.aliyun.com/farui/review`
 
 ![](img/7249b45ed30318e38513ae06e8212019.png)
 
-+   百度的财务、医疗、教育票据OCR识别及自动审查 ： https://ai.baidu.com/tech/ocr_receipts/vat_invoice
++   百度的财务、医疗、教育票据OCR识别及自动审查：`https://ai.baidu.com/tech/ocr_receipts/vat_invoice`
 
 ![](img/28330bd64c37acda3dfa47326e83426c.png)
 
-+   **语核科技的数字员工（文档审查方向）：ht**tps://langcore.cn/zh
++   **语核科技的数字员工（文档审查方向）：** `https://langcore.cn/zh`
 
 ![](img/c7f6be419b340ef9b47df2d2f2dcbe53.png)
 
@@ -51,9 +52,13 @@
 文档审核Agent核心应用场景
 
 | 场景类型 | 审核内容 | 核心价值 | 难度等级 |
+
 | --- | --- | --- | --- |
+
 | **法务合同审核** | 必要条款检查、法律风险识别、措辞合规性 | 降低法律风险、提升审核效率 | ⭐⭐⭐⭐⭐ |
+
 | **财务票据校验** | 发票真伪、金额计算、政策合规 | 减少财务错误、加速报销流程 | ⭐⭐⭐⭐ |
+
 | **标书公文审核** | 格式规范、必备内容、章节完整性 | 提高中标率、确保公文质量 | ⭐⭐⭐ |
 
 之所以能够实现上述复杂工作流程的原因在于基于大模型构建而成的Agent具备自主决策和工具调用能力：
@@ -72,9 +77,9 @@
 
 ![](img/051311092c2fbddc52b8852d88d75217.png)
 
-> 论文地址：https://arxiv.org/pdf/2501.09136
+> 论文地址：`https://arxiv.org/pdf/2501.09136`
 
-在合同、票据/收据、长篇公文等场景中，“大模型 + 工具调用 + 外部知识检索 + 规划/反思（Agentic模式）” 能把抽取、核对与基于证据的判断串成多步流程，用于自动化或半自动的合规审核。法务合同有 CUAD 这一权威标注集支撑条款级审核可行性；多模态文档 AI（如 LayoutLMv3 / LayoutLLM）显著提升了票据/表单/PDF 的结构化与问答能力；而 Agentic RAG/RA-LLM 则把检索、工具使用与多步推理纳入可控工作流。
+在合同、票据/收据、长篇公文等场景中，“大模型 + 工具调用 + 外部知识检索 + 规划/反思（Agentic模式）” 能把抽取、核对与基于证据的判断串成多步流程，用于自动化或半自动的合规审核。法务合同有 CUAD 这一权威标注集支撑条款级审核可行性；多模态文档 AI（如 `LayoutLMv3` / `LayoutLLM`）显著提升了票据/表单/PDF 的结构化与问答能力；而 Agentic RAG/RA-LLM 则把检索、工具使用与多步推理纳入可控工作流。
 
 同样，针对上图中的文档审核类的实现方案，如果进一步拆分则可以拆解为如下三大核心技术模块：
 
@@ -86,25 +91,25 @@
 
 其中：
 
-+   **解析与结构化**：主流 Document AI 都把 OCR/布局/**键值对/表格**抽取到统一 JSON，并附带置信度与坐标，便于后续规则与证据回链。
++   **解析与结构化**：主流 `Document AI` 都把 OCR/布局/**键值对/表格**抽取到统一 JSON，并附带置信度与坐标，便于后续规则与证据回链。
 
-+   **规则与知识**：企业审核离不开**可配置规则引擎**（版本化/审计）与**RAG****（把法规与制度做**成可检索、可引用的知识源），并通过混合检索+重排序提升命中与可溯源性。
++   **规则与知识**：企业审核离不开**可配置规则引擎**（版本化/审计）与 **RAG**（把法规与制度做成可检索、可引用的知识源），并通过混合检索+重排序提升命中与可溯源性。
 
-+   **Agent 编排**：用 **Lang**Graph/LangChain 等做计划-工具调用-记忆-长流程编排，并把人类在环作为低置信度的兜底环节。
++   **Agent 编排**：用 `LangGraph`/`LangChain` 等做计划-工具调用-记忆-长流程编排，并把人类在环作为低置信度的兜底环节。
 
 +   **评估与治理**：上线后需要字段级与 RAG 两路评估、Tracing/监控，以及 PII/审计合规治理，形成持续改进闭环。
 
 所以一个相对比较健全的文档审核类Agent的实现，不仅需要我们掌握 Agent 及 RAG 的底层技术原理，还需要我们掌握多模态大模型、多 Agent 协作、Prompt 工程、Agent 编排等技术。综合起来是相对较难的落地场景。
 
-此外，对于文档的精准解析是文档审核类Agent落地的关键，也主要分为OCR和VLM 两条实现链路，通过传统 OCR +规则的方法逐步转到现在基于 VLM-based 方法的革新，可以在不同场景下发挥各自的优势。
+此外，对于文档的精准解析是文档审核类Agent落地的关键，也主要分为OCR和VLM 两条实现链路，通过传统 OCR +规则的方法逐步转到现在基于 `VLM-based` 方法的革新，可以在不同场景下发挥各自的优势。
 
 ![](img/c90084fa0d04f82e5104bd249ba146a6.png)
 
-> 技术综述地址：https://www.firstsource.com/insights/whitepapers/document-processing-with-vlm
+> 技术综述地址：`https://www.firstsource.com/insights/whitepapers/document-processing-with-vlm`
 
 因此，本期公开课我们就从简到难，从基础的票据审核开始，逐步深入到更为复杂的合同审核，给大家全面讲解不同的解析和审核Agent构建思路，以及如何将这些方法应用到实际场景中。
 
-# 二、多模态大模型搭建票据审核Agent
+## 二、多模态大模型搭建票据审核Agent
 
 我们先从较为简单的需求场景开始，即票据类审核方向。财务部门需要审核各种票据和发票，确保其内容完整、真假有效，并符合财务规定（例如发票抬头、税号、金额计算正确，报销单据符合公司政策等）。传统手工核对易出错且耗费人力，引入大模型的Agent可自动解析票据并核查关键字段，极大提高效率。
 
@@ -113,12 +118,19 @@
 票据的人工审核标准流程
 
 | 审核环节 | 工作内容 | 耗时 | 风险点 |
+
 | --- | --- | --- | --- |
+
 | ①真伪鉴别 | 税务局网站查验 | 2-3分钟 | 假发票、克隆票 |
+
 | ②形式审核 | 检查发票代码、号码、印章等 | 1-2分钟 | 格式错误、要素缺失 |
+
 | ③金额计算 | 验证价税合计、行项目加总 | 2-3分钟 | 计算错误、税率错误 |
+
 | ④业务合理性 | 检查供应商资质、三流一致性 | 5-10分钟 | 虚构交易、关联交易 |
+
 | ⑤税务合规 | 验证税率、抵扣资格 | 3-5分钟 | 税务风险 |
+
 | ⑥归档管理 | 扫描、分类、录入系统 | 2-3分钟 | 资料遗失 |
 
 如果我们做的合规性检查输入比较简单，且规范都是统一的，比如票据类，此类的审核规则都是比较规范的，我们只需要定制化的提取出某些数值，那么这类场景是非常适合直接使用多模态大模型构建Agent审核流程的。
@@ -131,15 +143,15 @@
 
 ![](img/952c679d99030eda3f2e653ddf03513f.png)
 
-+   **自动提取**: 使用 Qwen3-VL 多模态模型从发票图像中自动提取结构化信息
++   **自动提取**: 使用 `Qwen3-VL` 多模态模型从发票图像中自动提取结构化信息
 
 +   **智能校验**: 4 个专门 Agent 协作完成格式、计算、业务规则等多维度校验
 
-接下来我们就使用 LangChain 框架来搭建这个完整的票据审核Agent系统。
+接下来我们就使用 `LangChain` 框架来搭建这个完整的票据审核Agent系统。
 
-+   **Step 1. 安装环境依赖**
+### Step 1. 安装环境依赖
 
-使用 **LangChain 1.0** 作为核心Agent开发框架, 需要预先安装如下依赖包：
+使用 `LangChain 1.0` 作为核心Agent开发框架, 需要预先安装如下依赖包：
 
 ```
 # 安装必要的依赖包
@@ -147,30 +159,29 @@
 ```
 
 ```
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0m
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 ```
 
-+   Step 2. 配置 API Key
+### Step 2. 配置 API Key
 
-接下来我们需要准备一个多模态大模型，我们使用阿里云百炼的 Qwen3-vl-plus 模型。注册地址：https://bailian.console.aliyun.com/#/home
+接下来我们需要准备一个多模态大模型，我们使用阿里云百炼的 `Qwen3-vl-plus` 模型。注册地址：`https://bailian.console.aliyun.com/#/home`
 
 ```
 import os
 
 # 设置 API Key (请替换为你的实际 Key)
-os.environ[&quot;DASHSCOPE_API_KEY&quot;] = &quot;sk-d036126977ff488fa2e29231975469f2&quot;  # 注意：这里要替换成你自己的
+os.environ["DASHSCOPE_API_KEY"] = "sk-d036126977ff488fa2e29231975469f2"  # 注意：这里要替换成你自己的
 
-print(&quot;API Key 配置完成&quot;)
+print("API Key 配置完成")
 ```
 
 ```
 API Key 配置完成
 ```
 
-+   **Step 3. 导入必要的库**
+### Step 3. 导入必要的库
 
-导入项目所需的核心库:
+导入项目所需的核心库：
 
 ```
 import os
@@ -188,7 +199,7 @@ from pydantic import BaseModel, Field, field_validator
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 
-print(&quot;导入完成&quot;)
+print("导入完成")
 ```
 
 ```
@@ -199,45 +210,45 @@ print(&quot;导入完成&quot;)
 导入完成
 ```
 
-+   Step 4. 发票信息提取模块
+### Step 4. 发票信息提取模块
 
-阶段的核心任务是:从发票图**像或 OCR 数据中提**取结构化的 JSON 数据。使用 Pydantic v2 定义发票的数据模型。Pydantic 提供了强大的数据验证功能，可用于将大模型返回的JSON数据转换为严格的数据模型。
+阶段的核心任务是:从发票图像或 OCR 数据中提取结构化的 JSON 数据。使用 `Pydantic v2` 定义发票的数据模型。`Pydantic` 提供了强大的数据验证功能，可用于将大模型返回的JSON数据转换为严格的数据模型。
 
 ```
 class LineItem(BaseModel):
-    &quot;&quot;&quot;发票行项目 - 代表一条商品或服务明细&quot;&quot;&quot;
+    """发票行项目 - 代表一条商品或服务明细"""
     
-    row: str = Field(..., description=&quot;行号&quot;)
-    name: str = Field(..., description=&quot;商品或服务名称&quot;)
-    specification: Optional[str] = Field(None, description=&quot;规格型号&quot;)
-    unit: Optional[str] = Field(None, description=&quot;单位&quot;)
-    quantity: Optional[float] = Field(None, description=&quot;数量&quot;)
-    unit_price: Optional[float] = Field(None, description=&quot;单价&quot;)
-    amount: float = Field(..., description=&quot;金额(不含税)&quot;)
-    tax_rate: float = Field(..., description=&quot;税率(小数,如0.06表示6%)&quot;)
-    tax_amount: float = Field(..., description=&quot;税额&quot;)
+    row: str = Field(..., description="行号")
+    name: str = Field(..., description="商品或服务名称")
+    specification: Optional[str] = Field(None, description="规格型号")
+    unit: Optional[str] = Field(None, description="单位")
+    quantity: Optional[float] = Field(None, description="数量")
+    unit_price: Optional[float] = Field(None, description="单价")
+    amount: float = Field(..., description="金额(不含税)")
+    tax_rate: float = Field(..., description="税率(小数,如0.06表示6%)")
+    tax_amount: float = Field(..., description="税额")
     
-    @field_validator(&#x27;row&#x27;, mode=&#x27;before&#x27;)
+    @field_validator('row', mode='before')
     @classmethod
     def convert_row_to_string(cls, v):
-        &quot;&quot;&quot;自动将行号转换为字符串 - 兼容模型返回整数的情况&quot;&quot;&quot;
+        """自动将行号转换为字符串 - 兼容模型返回整数的情况"""
         if v is None:
             return v
         return str(v)
 
-print(&quot;LineItem 模型定义完成&quot;)
-print(&quot;添加了 row 字段自动类型转换&quot;)
+print("LineItem 模型定义完成")
+print("添加了 row 字段自动类型转换")
 
 # 测试示例
 test_item = LineItem(
-    row=&quot;1&quot;,
-    name=&quot;*广告制作*广告费&quot;,
+    row="1",
+    name="*广告制作*广告费",
     amount=94339.62,
     tax_rate=0.06,
     tax_amount=5660.38
 )
 
-print(f&quot;测试数据: {test_item.name}, 金额: ¥{test_item.amount:,.2f}, 税率: {test_item.tax_rate*100}%&quot;)
+print(f"测试数据: {test_item.name}, 金额: ¥{test_item.amount:,.2f}, 税率: {test_item.tax_rate*100}%")
 ```
 
 ```
@@ -246,83 +257,85 @@ LineItem 模型定义完成
 测试数据: *广告制作*广告费, 金额: ¥94,339.62, 税率: 6.0%
 ```
 
-行项目就是发票里逐条计费的“最小可核查单元”，包含名称、数量、单价、金额、税率/税额等。清晰的行项目能提高透明度、减少争议与拒付风险，这是发票开具与收款的基本要求。注意：给多模态大模型做“行项目（LineItem）”模型，不是为了好看，而是为了把“每一条商品/服务明细”变成可校验、可对账、可落账的数据单位。这样后续才能做金额/税额一致性校验、与采购单/入库单的三方匹配、以及对接电子发票/财务系统标准。
+行项目就是发票里逐条计费的“最小可核查单元”，包含名称、数量、单价、金额、税率/税额等。清晰的行项目能提高透明度、减少争议与拒付风险，这是发票开具与收款的基本要求。注意：给多模态大模型做“行项目（`LineItem`）”模型，不是为了好看，而是为了把“每一条商品/服务明细”变成可校验、可对账、可落账的数据单位。这样后续才能做金额/税额一致性校验、与采购单/入库单的三方匹配、以及对接电子发票/财务系统标准。
 
-接下来再定义完整的发票模型，给多模态大模型一个“完整的发票模型（Invoice）”，是在抽取→校验→对账→入账/归档这条流水线上，给每个关键环节预留“有据可依的字段与规则锚点”。
+接下来再定义完整的发票模型，给多模态大模型一个“完整的发票模型（`Invoice`）”，是在抽取→校验→对账→入账/归档这条流水线上，给每个关键环节预留“有据可依的字段与规则锚点”。
 
-```
+
+
+```python
 class Invoice(BaseModel):
-    &quot;&quot;&quot;中国增值税发票完整模型&quot;&quot;&quot;
+    """中国增值税发票完整模型"""
 
     # ===== 基本信息 =====
-    invoice_type: str = Field(..., description=&quot;发票类型(如:增值税专用发票)&quot;)
-    province: Optional[str] = Field(None, description=&quot;省份&quot;)
-    invoice_code: str = Field(..., description=&quot;发票代码(10位数字)&quot;)
-    invoice_number: str = Field(..., description=&quot;发票号码(8位数字)&quot;)
-    issue_date: str = Field(..., description=&quot;开票日期(YYYY-MM-DD)&quot;)
-    check_code: Optional[str] = Field(None, description=&quot;校验码(普通发票有,专用发票无)&quot;)
+    invoice_type: str = Field(..., description="发票类型(如:增值税专用发票)")
+    province: Optional[str] = Field(None, description="省份")
+    invoice_code: str = Field(..., description="发票代码(10位数字)")
+    invoice_number: str = Field(..., description="发票号码(8位数字)")
+    issue_date: str = Field(..., description="开票日期(YYYY-MM-DD)")
+    check_code: Optional[str] = Field(None, description="校验码(普通发票有,专用发票无)")
 
     # ===== 购买方信息 =====
-    purchaser_name: str = Field(..., description=&quot;购买方名称&quot;)
-    purchaser_tax_id: str = Field(..., description=&quot;购买方纳税人识别号&quot;)
-    purchaser_address: Optional[str] = Field(None, description=&quot;购买方地址电话&quot;)
-    purchaser_bank: Optional[str] = Field(None, description=&quot;购买方开户行及账号&quot;)
+    purchaser_name: str = Field(..., description="购买方名称")
+    purchaser_tax_id: str = Field(..., description="购买方纳税人识别号")
+    purchaser_address: Optional[str] = Field(None, description="购买方地址电话")
+    purchaser_bank: Optional[str] = Field(None, description="购买方开户行及账号")
 
     # ===== 销售方信息 =====
-    seller_name: str = Field(..., description=&quot;销售方名称&quot;)
-    seller_tax_id: str = Field(..., description=&quot;销售方纳税人识别号&quot;)
-    seller_address: Optional[str] = Field(None, description=&quot;销售方地址电话&quot;)
-    seller_bank: Optional[str] = Field(None, description=&quot;销售方开户行及账号&quot;)
+    seller_name: str = Field(..., description="销售方名称")
+    seller_tax_id: str = Field(..., description="销售方纳税人识别号")
+    seller_address: Optional[str] = Field(None, description="销售方地址电话")
+    seller_bank: Optional[str] = Field(None, description="销售方开户行及账号")
 
     # ===== 金额信息 =====
-    total_amount: float = Field(..., description=&quot;合计金额(不含税)&quot;)
-    total_tax: float = Field(..., description=&quot;合计税额&quot;)
-    total_amount_with_tax: float = Field(..., description=&quot;价税合计&quot;)
-    amount_in_words: Optional[str] = Field(None, description=&quot;价税合计(大写)&quot;)
+    total_amount: float = Field(..., description="合计金额(不含税)")
+    total_tax: float = Field(..., description="合计税额")
+    total_amount_with_tax: float = Field(..., description="价税合计")
+    amount_in_words: Optional[str] = Field(None, description="价税合计(大写)")
 
     # ===== 商品明细 =====
-    line_items: List[LineItem] = Field(default_factory=list, description=&quot;行项目明细&quot;)
+    line_items: List[LineItem] = Field(default_factory=list, description="行项目明细")
 
     # ===== 其他信息 =====
-    payee: Optional[str] = Field(None, description=&quot;收款人&quot;)
-    checker: Optional[str] = Field(None, description=&quot;复核人&quot;)
-    drawer: Optional[str] = Field(None, description=&quot;开票人&quot;)
-    remarks: Optional[str] = Field(None, description=&quot;备注&quot;)
+    payee: Optional[str] = Field(None, description="收款人")
+    checker: Optional[str] = Field(None, description="复核人")
+    drawer: Optional[str] = Field(None, description="开票人")
+    remarks: Optional[str] = Field(None, description="备注")
 
-    @field_validator(&#x27;issue_date&#x27;)
+    @field_validator('issue_date')
     @classmethod
     def validate_date(cls, v):
-        &quot;&quot;&quot;标准化日期格式 - 将中文日期转换为 YYYY-MM-DD&quot;&quot;&quot;
+        """标准化日期格式 - 将中文日期转换为 YYYY-MM-DD"""
         if not v:
             return v
 
-        # 处理中文日期: 2016年06月02日 -&gt; 2016-06-02
-        match = re.search(r&#x27;(\d{4})年(\d{2})月(\d{2})日&#x27;, v)
+        # 处理中文日期: 2016年06月02日 -> 2016-06-02
+        match = re.search(r'(\d{4})年(\d{2})月(\d{2})日', v)
         if match:
-            return f&quot;{match.group(1)}-{match.group(2)}-{match.group(3)}&quot;
+            return f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
 
         # 处理其他格式
-        for fmt in [&#x27;%Y-%m-%d&#x27;, &#x27;%Y/%m/%d&#x27;, &#x27;%Y.%m.%d&#x27;, &#x27;%Y%m%d&#x27;]:
+        for fmt in ['%Y-%m-%d', '%Y/%m/%d', '%Y.%m.%d', '%Y%m%d']:
             try:
                 dt = datetime.strptime(str(v), fmt)
-                return dt.strftime(&#x27;%Y-%m-%d&#x27;)
+                return dt.strftime('%Y-%m-%d')
             except ValueError:
                 continue
 
         return v
 
-    def to_dict(self) -&gt; dict:
-        &quot;&quot;&quot;转换为字典&quot;&quot;&quot;
-        return self.model_dump(mode=&#x27;python&#x27;)
+    def to_dict(self) -> dict:
+        """转换为字典"""
+        return self.model_dump(mode='python')
 
-    def to_json(self, indent: int = 2) -&gt; str:
-        &quot;&quot;&quot;转换为JSON字符串&quot;&quot;&quot;
+    def to_json(self, indent: int = 2) -> str:
+        """转换为JSON字符串"""
         return self.model_dump_json(indent=indent, exclude_none=False)
 
-print(&quot;Invoice 模型定义完成&quot;)
-print(&quot;  包含 23 个字段&quot;)
-print(&quot;  自动验证日期格式&quot;)
-print(&quot;  支持导出为 dict/json&quot;)
+print("Invoice 模型定义完成")
+print("  包含 23 个字段")
+print("  自动验证日期格式")
+print("  支持导出为 dict/json")
 ```
 
 ```
@@ -332,32 +345,32 @@ Invoice 模型定义完成
   支持导出为 dict/json
 ```
 
-+   Step 5. 初始化多模态大模型
+### Step 5. 初始化多模态大模型
 
-使用 **LangChain** 接入多模态大模型。多模态模型可以同时处理图像和文本输入。
+使用 `LangChain` 接入多模态大模型。多模态模型可以同时处理图像和文本输入。
 
-```
+```python
 # 使用 ChatOpenAI 接入阿里云百炼的 Qwen3-VL-Plus 模型
 llm = ChatOpenAI(
-    model=&quot;qwen3-vl-plus&quot;,  # 多模态视觉语言模型
-    api_key=os.getenv(&quot;DASHSCOPE_API_KEY&quot;),
-    base_url=&quot;https://dashscope.aliyuncs.com/compatible-mode/v1&quot;,  # 兼容 OpenAI 格式的 API 地址
+    model="qwen3-vl-plus",  # 多模态视觉语言模型
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",  # 兼容 OpenAI 格式的 API 地址
     temperature=0.1,  # 较低温度保证输出稳定
 )
 
-print(&quot;多模态大模型初始化完成&quot;)
+print("多模态大模型初始化完成")
 ```
 
 ```
 多模态大模型初始化完成
 ```
 
-+   Step 6. 如何传入问题和图像
+### Step 6. 如何传入问题和图像
 
-**  多模态**模型的**输入包含**两部分:文本提示词 + 图像数据。我们需要将图像编码为 base64 格式。
+多模态模型的输入包含两部分:文本提示词 + 图像数据。我们需要将图像编码为 `base64` 格式。
 
-```
-extraction_prompt = &quot;&quot;&quot;你是专业的中国发票识别助手。请仔细识别图片中的增值税发票,提取所有信息并以JSON格式返回。
+```python
+extraction_prompt = """你是专业的中国发票识别助手。请仔细识别图片中的增值税发票,提取所有信息并以JSON格式返回。
 
 **必须提取的字段:**
 1. invoice_type: 发票类型(如:上海增值税专用发票)
@@ -394,11 +407,11 @@ extraction_prompt = &quot;&quot;&quot;你是专业的中国发票识别助手。
 5. 专用发票没有校验码,check_code留空
 
 请直接返回JSON,不要其他说明。
-&quot;&quot;&quot;
+"""
 
-print(&quot;提示词构建完成&quot;)
-print(f&quot;  - 提示词长度: {len(extraction_prompt)} 字符&quot;)
-print(f&quot;  - 要求提取 20 个关键字段&quot;)
+print("提示词构建完成")
+print(f"  - 提示词长度: {len(extraction_prompt)} 字符")
+print(f"  - 要求提取 20 个关键字段")
 ```
 
 ```
@@ -407,18 +420,18 @@ print(f&quot;  - 要求提取 20 个关键字段&quot;)
   - 要求提取 20 个关键字段
 ```
 
-提示词构建完成，接下来我们读取图像并编码为 base64。
+提示词构建完成，接下来我们读取图像并编码为 `base64`。
 
-```
-def encode_image(image_path: str) -&gt; str:
-    &quot;&quot;&quot;将图像编码为 base64 字符串&quot;&quot;&quot;
-    with open(image_path, &#x27;rb&#x27;) as f:
-        image_data = base64.b64encode(f.read()).decode(&#x27;utf-8&#x27;)
+```python
+def encode_image(image_path: str) -> str:
+    """将图像编码为 base64 字符串"""
+    with open(image_path, 'rb') as f:
+        image_data = base64.b64encode(f.read()).decode('utf-8')
     return image_data
 
 # 发票图像路径
-image_base64 = encode_image(&quot;./data/invoice_1.png&quot;)
-print(f&quot;图像编码完成, base64 长度: {len(image_base64)} 字符&quot;)
+image_base64 = encode_image("./data/invoice_1.png")
+print(f"图像编码完成, base64 长度: {len(image_base64)} 字符")
 ```
 
 ```
@@ -427,30 +440,30 @@ print(f&quot;图像编码完成, base64 长度: {len(image_base64)} 字符&quot;
 
 图像编码完成，接下来我们构建多模态消息。
 
-```
-def build_multimodal_message(prompt: str, image_base64: str) -&gt; HumanMessage:
-    &quot;&quot;&quot;构建包含文本和图像的多模态消息&quot;&quot;&quot;
+```python
+def build_multimodal_message(prompt: str, image_base64: str) -> HumanMessage:
+    """构建包含文本和图像的多模态消息"""
     
     message = HumanMessage(content=[
         # 第一部分: 文本提示
         {
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;text&quot;: prompt
+            "type": "text",
+            "text": prompt
         },
         # 第二部分: 图像数据
         {
-            &quot;type&quot;: &quot;image_url&quot;,
-            &quot;image_url&quot;: {
-                &quot;url&quot;: f&quot;data:image/jpeg;base64,{image_base64}&quot;
+            "type": "image_url",
+            "image_url": {
+                "url": f"data:image/jpeg;base64,{image_base64}"
             }
         }
     ])
     
     return message
 
-print(&quot;多模态消息构建函数定义完成&quot;)
-print(&quot;  输入: 文本提示 + base64 图像&quot;)
-print(&quot;  输出: HumanMessage 对象&quot;)
+print("多模态消息构建函数定义完成")
+print("  输入: 文本提示 + base64 图像")
+print("  输出: HumanMessage 对象")
 ```
 
 ```
@@ -459,13 +472,13 @@ print(&quot;  输出: HumanMessage 对象&quot;)
   输出: HumanMessage 对象
 ```
 
-+   Step 7. 如何调用模型并做结构化输出
+### Step 7. 如何调用模型并做结构化输出
 
-调用多模态模型后,我们需要从响应中提取 JSON 数据,并使用 Pydantic 模型进行验证。
+调用多模态模型后,我们需要从响应中提取 `JSON` 数据,并使用 `Pydantic` 模型进行验证。
 
-```
-def extract_json_from_response(text: str) -&gt; dict:
-    &quot;&quot;&quot;从模型响应中提取 JSON 对象&quot;&quot;&quot;
+```python
+def extract_json_from_response(text: str) -> dict:
+    """从模型响应中提取 JSON 对象"""
     
     # 尝试 1: 直接解析整个响应
     try:
@@ -474,7 +487,8 @@ def extract_json_from_response(text: str) -&gt; dict:
         pass
 
     # 尝试 2: 提取 ```json ... ``` 代码块
-    json_match = re.search(r&#x27;```json\s*\n(.*?)\n```&#x27;, text, re.DOTALL)
+
+    json_match = re.search(r'```json\s*\n(.*?)\n```', text, re.DOTALL)
     if json_match:
         try:
             return json.loads(json_match.group(1))
@@ -482,18 +496,18 @@ def extract_json_from_response(text: str) -&gt; dict:
             pass
 
     # 尝试 3: 提取 {...} JSON 对象
-    json_match = re.search(r&#x27;\{.*\}&#x27;, text, re.DOTALL)
+    json_match = re.search(r'\{.*\}', text, re.DOTALL)
     if json_match:
         try:
             return json.loads(json_match.group(0))
         except:
             pass
 
-    raise ValueError(f&quot;无法从响应中提取JSON: {text[:200]}...&quot;)
+    raise ValueError(f"无法从响应中提取JSON: {text[:200]}...")
 
-print(&quot;JSON 提取函数定义完成&quot;)
-print(&quot;  支持 3 种提取模式&quot;)
-print(&quot;  自动处理代码块格式&quot;)
+print("JSON 提取函数定义完成")
+print("  支持 3 种提取模式")
+print("  自动处理代码块格式")
 ```
 
 ```
@@ -502,56 +516,61 @@ JSON 提取函数定义完成
   自动处理代码块格式
 ```
 
-+   **Step 8. 完整的提取流程**
+### Step 8. 完整的提取流程
 
 最后,我们定义一个完整的提取流程,将上述步骤串联起来。
 
-```
+```python
 # ========== 步骤 8: 完整的提取流程 ==========
 
-def extract_invoice_from_image(image_path: str) -&gt; Invoice:
-    &quot;&quot;&quot;从发票图像中提取结构化数据的完整流程&quot;&quot;&quot;
+def extract_invoice_from_image(image_path: str) -> Invoice:
+    """从发票图像中提取结构化数据的完整流程"""
     
-    print(&quot;正在提取发票信息...&quot;)
+    print("正在提取发票信息...")
     
     # 1. 读取并编码图像
-    print(&quot;  [1/4] 读取图像...&quot;)
+    print("  [1/4] 读取图像...")
     image_base64 = encode_image(image_path)
     
     # 2. 构建多模态消息
-    print(&quot;  [2/4] 构建多模态消息...&quot;)
+    print("  [2/4] 构建多模态消息...")
     message = build_multimodal_message(extraction_prompt, image_base64)
     
     # 3. 调用多模态大模型
-    print(&quot;  [3/4] 调用 Qwen3-VL-Plus 模型...&quot;)
+    print("  [3/4] 调用 Qwen3-VL-Plus 模型...")
     response = llm.invoke([message])
     
     # 4. 提取 JSON 并验证
-    print(&quot;  [4/4] 提取并验证数据...&quot;)
+    print("  [4/4] 提取并验证数据...")
     raw_json = extract_json_from_response(response.content)
     invoice = Invoice.model_validate(raw_json)
     
-    print(&quot;发票信息提取完成&quot;)
+    print("发票信息提取完成")
     return invoice
 
-print(&quot;完整提取流程定义完成&quot;)
+print("完整提取流程定义完成")
 ```
 
 ```
 完整提取流程定义完成
 ```
 
-+   **Step 9. 运行测试**
+### Step 9. 运行测试
 
 以上代码构建完成后，接下来便可以实际进行运行测试了：
 
-```
-# 如果你有发票图像,可以运行以下代码:
-invoice = extract_invoice_from_image(&quot;./data/invoice_1.png&quot;)
 
-print(f&quot;发票代码: {invoice.invoice_code}&quot;)
-print(f&quot;发票号码: {invoice.invoice_number}&quot;)
-print(f&quot;价税合计: ¥{invoice.total_amount_with_tax:,.2f}&quot;)
+
+# 发票识别与多Agent校验系统
+
+如果你有发票图像，可以运行以下代码：
+
+```python
+invoice = extract_invoice_from_image("./data/invoice_1.png")
+
+print(f"发票代码: {invoice.invoice_code}")
+print(f"发票号码: {invoice.invoice_number}")
+print(f"价税合计: ¥{invoice.total_amount_with_tax:,.2f}")
 ```
 
 ```
@@ -566,11 +585,12 @@ print(f&quot;价税合计: ¥{invoice.total_amount_with_tax:,.2f}&quot;)
 价税合计: ¥100,000.00
 ```
 
-```
-# 如果有发票图像,可以运行以下代码:
-invoice = extract_invoice_from_image(&quot;./data/invoice_2.png&quot;)
+如果有发票图像，可以运行以下代码：
 
-print(f&quot;完整输出: {invoice}&quot;)
+```python
+invoice = extract_invoice_from_image("./data/invoice_2.png")
+
+print(f"完整输出: {invoice}")
 ```
 
 ```
@@ -580,121 +600,121 @@ print(f&quot;完整输出: {invoice}&quot;)
   [3/4] 调用 Qwen3-VL-Plus 模型...
   [4/4] 提取并验证数据...
 发票信息提取完成
-完整输出: invoice_type=&#x27;湖北增值税专用发票&#x27; province=None invoice_code=&#x27;4200162130&#x27; invoice_number=&#x27;00998959&#x27; issue_date=&#x27;2016-10-17&#x27; check_code=None purchaser_name=&#x27;百度在线网络技术(北京)有限公司上海软件技术分公司&#x27; purchaser_tax_id=&#x27;310114772120643&#x27; purchaser_address=&#x27;上海市嘉定区汇华路500号 021-39005678&#x27; purchaser_bank=&#x27;招商银行上海分行漕河泾支行 212280455510001&#x27; seller_name=&#x27;武汉海庭假日酒店管理有限公司&#x27; seller_tax_id=&#x27;914201115879926501&#x27; seller_address=&#x27;武汉市洪山区民族路124号 027-87598879&#x27; seller_bank=&#x27;交通银行武汉市南湖路支行4219 6163 5018 0100 41948&#x27; total_amount=1430.19 total_tax=85.81 total_amount_with_tax=1516.0 amount_in_words=&#x27;壹仟伍佰壹拾陆圆整&#x27; line_items=[LineItem(row=&#x27;1&#x27;, name=&#x27;住宿费&#x27;, specification=None, unit=None, quantity=None, unit_price=None, amount=1430.19, tax_rate=0.06, tax_amount=85.81)] payee=&#x27;前台&#x27; checker=&#x27;肖晨&#x27; drawer=&#x27;前台&#x27; remarks=None
+完整输出: invoice_type='湖北增值税专用发票' province=None invoice_code='4200162130' invoice_number='00998959' issue_date='2016-10-17' check_code=None purchaser_name='百度在线网络技术(北京)有限公司上海软件技术分公司' purchaser_tax_id='310114772120643' purchaser_address='上海市嘉定区汇华路500号 021-39005678' purchaser_bank='招商银行上海分行漕河泾支行 212280455510001' seller_name='武汉海庭假日酒店管理有限公司' seller_tax_id='914201115879926501' seller_address='武汉市洪山区民族路124号 027-87598879' seller_bank='交通银行武汉市南湖路支行4219 6163 5018 0100 41948' total_amount=1430.19 total_tax=85.81 total_amount_with_tax=1516.0 amount_in_words='壹仟伍佰壹拾陆圆整' line_items=[LineItem(row='1', name='住宿费', specification=None, unit=None, quantity=None, unit_price=None, amount=1430.19, tax_rate=0.06, tax_amount=85.81)] payee='前台' checker='肖晨' drawer='前台' remarks=None
 ```
 
 做到这里，其实我们就已经完成了一个“发票识别 Agent”，可以识别发票的结构化数据了。如下所示：
 
 ![](img/025a234c0846d3535f5eb8c7f43c2660.png)
 
-** 但是，我**们还需要对识别出来的发票数据进行校验，以确保数据的准确性。所以我们需要进一步设计一个“发票校验 Agent”。这个阶段是整个系统的核心创新点，我们会使用多个专门的 Agent 协作完成发票校验。
+但是，我们还需要对识别出来的发票数据进行校验，以确保数据的准确性。所以我们需要进一步设计一个“发票校验 Agent”。这个阶段是整个系统的核心创新点，我们会使用多个专门的 Agent 协作完成发票校验。
 
 ![](img/6c0a1ccb19c3e1c3fdf19a4f58d4536a.png)
 
-多Agent协作校验系统的优势
+## 多Agent协作校验系统的优势
 
 | 优势 | 优势描述 |
 | --- | --- |
-| 职责单一 | 每个Agent只负责一个特定领域的校验 |
-| 易于扩展 | 添加新Agent不影响现有代码 |
-| 可以并行 | 部分Agent可以并行执行 |
+| 职责单一 | 每个 Agent 只负责一个特定领域的校验 |
+| 易于扩展 | 添加新 Agent 不影响现有代码 |
+| 可以并行 | 部分 Agent 可以并行执行 |
 
-+   Step 10：定义校验结果数据模型
+### Step 10：定义校验结果数据模型
 
-同样，我们定义校验结果数据模型，用于存储每个Agent的校验结果。
+同样，我们定义校验结果数据模型，用于存储每个 Agent 的校验结果。
 
-```
+```python
 class ValidationResult(BaseModel):
-    &quot;&quot;&quot;单个校验结果&quot;&quot;&quot;
-    level: str = Field(..., description=&quot;级别: error/warning/info&quot;)
-    field: str = Field(..., description=&quot;相关字段&quot;)
-    message: str = Field(..., description=&quot;问题描述&quot;)
-    expected: Optional[str] = Field(None, description=&quot;期望值&quot;)
-    actual: Optional[str] = Field(None, description=&quot;实际值&quot;)
-    suggestion: Optional[str] = Field(None, description=&quot;修复建议&quot;)
+    """单个校验结果"""
+    level: str = Field(..., description="级别: error/warning/info")
+    field: str = Field(..., description="相关字段")
+    message: str = Field(..., description="问题描述")
+    expected: Optional[str] = Field(None, description="期望值")
+    actual: Optional[str] = Field(None, description="实际值")
+    suggestion: Optional[str] = Field(None, description="修复建议")
 
 
 class AgentValidationReport(BaseModel):
-    &quot;&quot;&quot;单个 Agent 的校验报告&quot;&quot;&quot;
-    agent_name: str = Field(..., description=&quot;Agent 名称&quot;)
+    """单个 Agent 的校验报告"""
+    agent_name: str = Field(..., description="Agent 名称")
     results: List[ValidationResult] = Field(default_factory=list)
-    execution_time: float = Field(0.0, description=&quot;执行时间(秒)&quot;)
+    execution_time: float = Field(0.0, description="执行时间(秒)")
     
     @property
-    def error_count(self) -&gt; int:
-        return len([r for r in self.results if r.level == &quot;error&quot;])
+    def error_count(self) -> int:
+        return len([r for r in self.results if r.level == "error"])
     
     @property
-    def warning_count(self) -&gt; int:
-        return len([r for r in self.results if r.level == &quot;warning&quot;])
+    def warning_count(self) -> int:
+        return len([r for r in self.results if r.level == "warning"])
     
     @property
-    def info_count(self) -&gt; int:
-        return len([r for r in self.results if r.level == &quot;info&quot;])
+    def info_count(self) -> int:
+        return len([r for r in self.results if r.level == "info"])
 
 
 class InvoiceValidationReport(BaseModel):
-    &quot;&quot;&quot;完整的发票校验报告&quot;&quot;&quot;
-    invoice_id: str = Field(..., description=&quot;发票标识&quot;)
-    validation_time: str = Field(..., description=&quot;校验时间&quot;)
-    overall_status: str = Field(..., description=&quot;总体状态: PASS/FAIL/WARNING&quot;)
-    summary: str = Field(..., description=&quot;总结&quot;)
+    """完整的发票校验报告"""
+    invoice_id: str = Field(..., description="发票标识")
+    validation_time: str = Field(..., description="校验时间")
+    overall_status: str = Field(..., description="总体状态: PASS/FAIL/WARNING")
+    summary: str = Field(..., description="总结")
     agent_reports: List[AgentValidationReport] = Field(default_factory=list)
     
     @property
-    def total_errors(self) -&gt; int:
+    def total_errors(self) -> int:
         return sum(r.error_count for r in self.agent_reports)
     
     @property
-    def total_warnings(self) -&gt; int:
+    def total_warnings(self) -> int:
         return sum(r.warning_count for r in self.agent_reports)
     
     @property
-    def total_info(self) -&gt; int:
+    def total_info(self) -> int:
         return sum(r.info_count for r in self.agent_reports)
 
-print(&quot;校验结果数据模型定义完成&quot;)
+print("校验结果数据模型定义完成")
 ```
 
 ```
 校验结果数据模型定义完成
 ```
 
-+   Step 11：完整性校验 Agent
+### Step 11：完整性校验 Agent
 
 该 Agent 主要检查发票的必填字段是否完整。
 
-```
+```python
 # 增值税专用发票的必填字段(13个核心字段)
 REQUIRED_FIELDS_SPECIAL = {
-    &#x27;invoice_type&#x27;: &#x27;发票类型&#x27;,
-    &#x27;invoice_code&#x27;: &#x27;发票代码&#x27;,
-    &#x27;invoice_number&#x27;: &#x27;发票号码&#x27;,
-    &#x27;issue_date&#x27;: &#x27;开票日期&#x27;,
-    &#x27;purchaser_name&#x27;: &#x27;购买方名称&#x27;,
-    &#x27;purchaser_tax_id&#x27;: &#x27;购买方纳税人识别号&#x27;,
-    &#x27;seller_name&#x27;: &#x27;销售方名称&#x27;,
-    &#x27;seller_tax_id&#x27;: &#x27;销售方纳税人识别号&#x27;,
-    &#x27;total_amount&#x27;: &#x27;合计金额&#x27;,
-    &#x27;total_tax&#x27;: &#x27;合计税额&#x27;,
-    &#x27;total_amount_with_tax&#x27;: &#x27;价税合计&#x27;,
-    &#x27;payee&#x27;: &#x27;收款人&#x27;,
-    &#x27;drawer&#x27;: &#x27;开票人&#x27;
+    'invoice_type': '发票类型',
+    'invoice_code': '发票代码',
+    'invoice_number': '发票号码',
+    'issue_date': '开票日期',
+    'purchaser_name': '购买方名称',
+    'purchaser_tax_id': '购买方纳税人识别号',
+    'seller_name': '销售方名称',
+    'seller_tax_id': '销售方纳税人识别号',
+    'total_amount': '合计金额',
+    'total_tax': '合计税额',
+    'total_amount_with_tax': '价税合计',
+    'payee': '收款人',
+    'drawer': '开票人'
 }
 
 # 建议填写的字段
 RECOMMENDED_FIELDS = {
-    &#x27;purchaser_address&#x27;: &#x27;购买方地址电话&#x27;,
-    &#x27;purchaser_bank&#x27;: &#x27;购买方开户行及账号&#x27;,
-    &#x27;seller_address&#x27;: &#x27;销售方地址电话&#x27;,
-    &#x27;seller_bank&#x27;: &#x27;销售方开户行及账号&#x27;,
-    &#x27;line_items&#x27;: &#x27;商品明细&#x27;,
-    &#x27;checker&#x27;: &#x27;复核人&#x27;
+    'purchaser_address': '购买方地址电话',
+    'purchaser_bank': '购买方开户行及账号',
+    'seller_address': '销售方地址电话',
+    'seller_bank': '销售方开户行及账号',
+    'line_items': '商品明细',
+    'checker': '复核人'
 }
 
 
-def validate_completeness(invoice_data: dict) -&gt; AgentValidationReport:
-    &quot;&quot;&quot;完整性校验 Agent&quot;&quot;&quot;
+def validate_completeness(invoice_data: dict) -> AgentValidationReport:
+    """完整性校验 Agent"""
     start_time = time.time()
     results = []
     
@@ -703,41 +723,41 @@ def validate_completeness(invoice_data: dict) -&gt; AgentValidationReport:
         value = invoice_data.get(field)
         
         # 检查是否为空
-        if value is None or value == &#x27;&#x27; or (isinstance(value, list) and len(value) == 0):
+        if value is None or value == '' or (isinstance(value, list) and len(value) == 0):
             results.append(ValidationResult(
-                level=&quot;error&quot;,
+                level="error",
                 field=field,
-                message=f&quot;必填字段 &#x27;{desc}&#x27; 缺失或为空&quot;,
-                expected=&quot;非空值&quot;,
-                actual=&quot;空&quot;,
-                suggestion=f&quot;请补充 {desc} 信息&quot;
+                message=f"必填字段 '{desc}' 缺失或为空",
+                expected="非空值",
+                actual="空",
+                suggestion=f"请补充 {desc} 信息"
             ))
     
     # 检查建议字段
     for field, desc in RECOMMENDED_FIELDS.items():
         value = invoice_data.get(field)
         
-        if value is None or value == &#x27;&#x27; or (isinstance(value, list) and len(value) == 0):
+        if value is None or value == '' or (isinstance(value, list) and len(value) == 0):
             results.append(ValidationResult(
-                level=&quot;warning&quot;,
+                level="warning",
                 field=field,
-                message=f&quot;建议填写字段 &#x27;{desc}&#x27; 缺失&quot;,
-                expected=&quot;非空值&quot;,
-                actual=&quot;空&quot;,
-                suggestion=f&quot;建议补充 {desc} 信息以提高发票可信度&quot;
+                message=f"建议填写字段 '{desc}' 缺失",
+                expected="非空值",
+                actual="空",
+                suggestion=f"建议补充 {desc} 信息以提高发票可信度"
             ))
     
     execution_time = time.time() - start_time
     
     return AgentValidationReport(
-        agent_name=&quot;完整性校验Agent&quot;,
+        agent_name="完整性校验Agent",
         results=results,
         execution_time=execution_time
     )
 
-print(&quot;完整性校验 Agent 定义完成&quot;)
-print(f&quot;  检查 {len(REQUIRED_FIELDS_SPECIAL)} 个必填字段&quot;)
-print(f&quot;  检查 {len(RECOMMENDED_FIELDS)} 个建议字段&quot;)
+print("完整性校验 Agent 定义完成")
+print(f"  检查 {len(REQUIRED_FIELDS_SPECIAL)} 个必填字段")
+print(f"  检查 {len(RECOMMENDED_FIELDS)} 个建议字段")
 ```
 
 ```
@@ -746,99 +766,103 @@ print(f&quot;  检查 {len(RECOMMENDED_FIELDS)} 个建议字段&quot;)
   检查 6 个建议字段
 ```
 
-+   Step 12：格式校验 Agent
+### Step 12：格式校验 Agent
 
 进一步地，当第一阶段正确输出验证发票代码、号码、税号等字段后，我们还要校验其识别的格式是否正确。
 
-```
-def validate_format(invoice_data: dict) -&gt; AgentValidationReport:
-    &quot;&quot;&quot;格式校验 Agent&quot;&quot;&quot;
+
+
+## 格式校验 Agent
+
+```python
+def validate_format(invoice_data: dict) -> AgentValidationReport:
+    """格式校验 Agent"""
     start_time = time.time()
     results = []
     
     # 1. 发票代码: 10位数字
-    invoice_code = invoice_data.get(&#x27;invoice_code&#x27;, &#x27;&#x27;)
-    if invoice_code and not re.match(r&#x27;^\d{10}$&#x27;, str(invoice_code)):
+    invoice_code = invoice_data.get('invoice_code', '')
+    if invoice_code and not re.match(r'^\d{10}$', str(invoice_code)):
         results.append(ValidationResult(
-            level=&quot;error&quot;,
-            field=&quot;invoice_code&quot;,
-            message=&quot;发票代码格式错误&quot;,
-            expected=&quot;10位数字&quot;,
+            level="error",
+            field="invoice_code",
+            message="发票代码格式错误",
+            expected="10位数字",
             actual=str(invoice_code),
-            suggestion=&quot;发票代码必须是10位纯数字,如: 3100153130&quot;
+            suggestion="发票代码必须是10位纯数字,如: 3100153130"
         ))
     
     # 2. 发票号码: 8位数字
-    invoice_number = invoice_data.get(&#x27;invoice_number&#x27;, &#x27;&#x27;)
-    if invoice_number and not re.match(r&#x27;^\d{8}$&#x27;, str(invoice_number)):
+    invoice_number = invoice_data.get('invoice_number', '')
+    if invoice_number and not re.match(r'^\d{8}$', str(invoice_number)):
         results.append(ValidationResult(
-            level=&quot;error&quot;,
-            field=&quot;invoice_number&quot;,
-            message=&quot;发票号码格式错误&quot;,
-            expected=&quot;8位数字&quot;,
+            level="error",
+            field="invoice_number",
+            message="发票号码格式错误",
+            expected="8位数字",
             actual=str(invoice_number),
-            suggestion=&quot;发票号码必须是8位纯数字,如: 14641426&quot;
+            suggestion="发票号码必须是8位纯数字,如: 14641426"
         ))
     
     # 3. 纳税人识别号: 15/18/20位
-    for field_name, desc in [(&#x27;purchaser_tax_id&#x27;, &#x27;购买方&#x27;), (&#x27;seller_tax_id&#x27;, &#x27;销售方&#x27;)]:
-        tax_id = invoice_data.get(field_name, &#x27;&#x27;)
-        if tax_id and not re.match(r&#x27;^[0-9A-Z]{15}$|^[0-9A-Z]{18}$|^[0-9A-Z]{20}$&#x27;, str(tax_id)):
+    for field_name, desc in [('purchaser_tax_id', '购买方'), ('seller_tax_id', '销售方')]:
+        tax_id = invoice_data.get(field_name, '')
+        if tax_id and not re.match(r'^[0-9A-Z]{15}$|^[0-9A-Z]{18}$|^[0-9A-Z]{20}$', str(tax_id)):
             results.append(ValidationResult(
-                level=&quot;error&quot;,
+                level="error",
                 field=field_name,
-                message=f&quot;{desc}纳税人识别号格式错误&quot;,
-                expected=&quot;15/18/20位数字或大写字母&quot;,
+                message=f"{desc}纳税人识别号格式错误",
+                expected="15/18/20位数字或大写字母",
                 actual=str(tax_id),
-                suggestion=&quot;纳税人识别号长度必须是15、18或20位&quot;
+                suggestion="纳税人识别号长度必须是15、18或20位"
             ))
     
     # 4. 开票日期: YYYY-MM-DD 格式且不能是未来日期
-    issue_date = invoice_data.get(&#x27;issue_date&#x27;, &#x27;&#x27;)
+    issue_date = invoice_data.get('issue_date', '')
     if issue_date:
-        if not re.match(r&#x27;^\d{4}-\d{2}-\d{2}$&#x27;, str(issue_date)):
+        if not re.match(r'^\d{4}-\d{2}-\d{2}$', str(issue_date)):
             results.append(ValidationResult(
-                level=&quot;error&quot;,
-                field=&quot;issue_date&quot;,
-                message=&quot;开票日期格式错误&quot;,
-                expected=&quot;YYYY-MM-DD&quot;,
+                level="error",
+                field="issue_date",
+                message="开票日期格式错误",
+                expected="YYYY-MM-DD",
                 actual=str(issue_date),
-                suggestion=&quot;日期格式应为: 2016-06-02&quot;
+                suggestion="日期格式应为: 2016-06-02"
             ))
         else:
             try:
-                date_obj = datetime.strptime(issue_date, &#x27;%Y-%m-%d&#x27;)
-                if date_obj &gt; datetime.now():
+                date_obj = datetime.strptime(issue_date, '%Y-%m-%d')
+                if date_obj > datetime.now():
                     results.append(ValidationResult(
-                        level=&quot;error&quot;,
-                        field=&quot;issue_date&quot;,
-                        message=&quot;开票日期不能是未来日期&quot;,
-                        expected=f&quot;&lt;= {datetime.now().strftime(&#x27;%Y-%m-%d&#x27;)}&quot;,
+                        level="error",
+                        field="issue_date",
+                        message="开票日期不能是未来日期",
+                        expected=f"<= {datetime.now().strftime('%Y-%m-%d')}",
                         actual=issue_date,
-                        suggestion=&quot;请检查开票日期是否正确&quot;
+                        suggestion="请检查开票日期是否正确"
                     ))
             except ValueError:
                 results.append(ValidationResult(
-                    level=&quot;error&quot;,
-                    field=&quot;issue_date&quot;,
-                    message=&quot;开票日期无效&quot;,
-                    expected=&quot;有效的日期&quot;,
+                    level="error",
+                    field="issue_date",
+                    message="开票日期无效",
+                    expected="有效的日期",
                     actual=issue_date,
-                    suggestion=&quot;请检查日期是否真实存在&quot;
+                    suggestion="请检查日期是否真实存在"
                 ))
     
     execution_time = time.time() - start_time
     
     return AgentValidationReport(
-        agent_name=&quot;格式校验Agent&quot;,
+        agent_name="格式校验Agent",
         results=results,
         execution_time=execution_time
     )
 
-print(&quot;格式校验 Agent 定义完成&quot;)
-print(&quot;  - 检查发票代码/号码格式&quot;)
-print(&quot;  - 检查纳税人识别号格式&quot;)
-print(&quot;  - 检查日期格式和有效性&quot;)
+print("格式校验 Agent 定义完成")
+print("  - 检查发票代码/号码格式")
+print("  - 检查纳税人识别号格式")
+print("  - 检查日期格式和有效性")
 ```
 
 ```
@@ -848,96 +872,96 @@ print(&quot;  - 检查日期格式和有效性&quot;)
   - 检查日期格式和有效性
 ```
 
-+   Step 13：计算校验 Agent
+## Step 13：计算校验 Agent
 
 接下来进一步验证发票金额、税额的计算是否正确。
 
-```
-def validate_calculation(invoice_data: dict) -&gt; AgentValidationReport:
-    &quot;&quot;&quot;计算校验 Agent&quot;&quot;&quot;
+```python
+def validate_calculation(invoice_data: dict) -> AgentValidationReport:
+    """计算校验 Agent"""
     start_time = time.time()
     results = []
     
     TOLERANCE = 0.02  # 允许2分钱误差(四舍五入)
     
-    total_amount = invoice_data.get(&#x27;total_amount&#x27;, 0)
-    total_tax = invoice_data.get(&#x27;total_tax&#x27;, 0)
-    total_amount_with_tax = invoice_data.get(&#x27;total_amount_with_tax&#x27;, 0)
+    total_amount = invoice_data.get('total_amount', 0)
+    total_tax = invoice_data.get('total_tax', 0)
+    total_amount_with_tax = invoice_data.get('total_amount_with_tax', 0)
     
     # 1. 验证: 价税合计 = 合计金额 + 合计税额
     expected_total = total_amount + total_tax
     diff = abs(total_amount_with_tax - expected_total)
     
-    if diff &gt; TOLERANCE:
+    if diff > TOLERANCE:
         results.append(ValidationResult(
-            level=&quot;error&quot;,
-            field=&quot;total_amount_with_tax&quot;,
-            message=&quot;价税合计计算错误&quot;,
-            expected=f&quot;¥{expected_total:.2f}&quot;,
-            actual=f&quot;¥{total_amount_with_tax:.2f}&quot;,
-            suggestion=f&quot;价税合计应该 = 合计金额({total_amount:.2f}) + 合计税额({total_tax:.2f}) = {expected_total:.2f}&quot;
+            level="error",
+            field="total_amount_with_tax",
+            message="价税合计计算错误",
+            expected=f"¥{expected_total:.2f}",
+            actual=f"¥{total_amount_with_tax:.2f}",
+            suggestion=f"价税合计应该 = 合计金额({total_amount:.2f}) + 合计税额({total_tax:.2f}) = {expected_total:.2f}"
         ))
     
     # 2. 验证行项目金额合计
-    line_items = invoice_data.get(&#x27;line_items&#x27;, [])
+    line_items = invoice_data.get('line_items', [])
     if line_items:
-        sum_amount = sum(item.get(&#x27;amount&#x27;, 0) for item in line_items)
+        sum_amount = sum(item.get('amount', 0) for item in line_items)
         diff_amount = abs(sum_amount - total_amount)
         
-        if diff_amount &gt; TOLERANCE:
+        if diff_amount > TOLERANCE:
             results.append(ValidationResult(
-                level=&quot;error&quot;,
-                field=&quot;total_amount&quot;,
-                message=&quot;行项目金额合计不匹配&quot;,
-                expected=f&quot;¥{sum_amount:.2f}&quot;,
-                actual=f&quot;¥{total_amount:.2f}&quot;,
-                suggestion=f&quot;行项目金额之和为 {sum_amount:.2f}, 但合计金额为 {total_amount:.2f}&quot;
+                level="error",
+                field="total_amount",
+                message="行项目金额合计不匹配",
+                expected=f"¥{sum_amount:.2f}",
+                actual=f"¥{total_amount:.2f}",
+                suggestion=f"行项目金额之和为 {sum_amount:.2f}, 但合计金额为 {total_amount:.2f}"
             ))
         
         # 3. 验证行项目税额合计
-        sum_tax = sum(item.get(&#x27;tax_amount&#x27;, 0) for item in line_items)
+        sum_tax = sum(item.get('tax_amount', 0) for item in line_items)
         diff_tax = abs(sum_tax - total_tax)
         
-        if diff_tax &gt; TOLERANCE:
+        if diff_tax > TOLERANCE:
             results.append(ValidationResult(
-                level=&quot;error&quot;,
-                field=&quot;total_tax&quot;,
-                message=&quot;行项目税额合计不匹配&quot;,
-                expected=f&quot;¥{sum_tax:.2f}&quot;,
-                actual=f&quot;¥{total_tax:.2f}&quot;,
-                suggestion=f&quot;行项目税额之和为 {sum_tax:.2f}, 但合计税额为 {total_tax:.2f}&quot;
+                level="error",
+                field="total_tax",
+                message="行项目税额合计不匹配",
+                expected=f"¥{sum_tax:.2f}",
+                actual=f"¥{total_tax:.2f}",
+                suggestion=f"行项目税额之和为 {sum_tax:.2f}, 但合计税额为 {total_tax:.2f}"
             ))
         
         # 4. 验证每个行项目的税额计算
         for idx, item in enumerate(line_items, 1):
-            amount = item.get(&#x27;amount&#x27;, 0)
-            tax_rate = item.get(&#x27;tax_rate&#x27;, 0)
-            tax_amount = item.get(&#x27;tax_amount&#x27;, 0)
+            amount = item.get('amount', 0)
+            tax_rate = item.get('tax_rate', 0)
+            tax_amount = item.get('tax_amount', 0)
             expected_tax = amount * tax_rate
             
-            if abs(tax_amount - expected_tax) &gt; TOLERANCE:
+            if abs(tax_amount - expected_tax) > TOLERANCE:
                 results.append(ValidationResult(
-                    level=&quot;error&quot;,
-                    field=f&quot;line_items[{idx-1}].tax_amount&quot;,
-                    message=f&quot;第{idx}行税额计算错误&quot;,
-                    expected=f&quot;¥{expected_tax:.2f}&quot;,
-                    actual=f&quot;¥{tax_amount:.2f}&quot;,
-                    suggestion=f&quot;税额应该 = 金额({amount:.2f}) × 税率({tax_rate*100}%) = {expected_tax:.2f}&quot;
+                    level="error",
+                    field=f"line_items[{idx-1}].tax_amount",
+                    message=f"第{idx}行税额计算错误",
+                    expected=f"¥{expected_tax:.2f}",
+                    actual=f"¥{tax_amount:.2f}",
+                    suggestion=f"税额应该 = 金额({amount:.2f}) × 税率({tax_rate*100}%) = {expected_tax:.2f}"
                 ))
     
     execution_time = time.time() - start_time
     
     return AgentValidationReport(
-        agent_name=&quot;计算校验Agent&quot;,
+        agent_name="计算校验Agent",
         results=results,
         execution_time=execution_time
     )
 
-print(&quot;计算校验 Agent 定义完成&quot;)
-print(&quot;  - 验证价税合计 = 金额 + 税额&quot;)
-print(&quot;  - 验证行项目金额/税额合计&quot;)
-print(&quot;  - 验证每行税额 = 金额 × 税率&quot;)
-print(&quot;  - 允许 ¥0.02 误差&quot;)
+print("计算校验 Agent 定义完成")
+print("  - 验证价税合计 = 金额 + 税额")
+print("  - 验证行项目金额/税额合计")
+print("  - 验证每行税额 = 金额 × 税率")
+print("  - 允许 ¥0.02 误差")
 ```
 
 ```
@@ -948,86 +972,89 @@ print(&quot;  - 允许 ¥0.02 误差&quot;)
   - 允许 ¥0.02 误差
 ```
 
-+   Step 14：业务规则校验 Agent
+## Step 14：业务规则校验 Agent
 
 最后，我们可以通过定制化的一些业务规则来精细化校验，比如我们这里以验证税率、发票类型等业务逻辑为例进行说明。
 
-```
+
+
 # 中国增值税标准税率
+
+```python
 VALID_TAX_RATES = [0.00, 0.01, 0.03, 0.05, 0.06, 0.09, 0.13]
 
-def validate_business_rules(invoice_data: dict) -&gt; AgentValidationReport:
-    &quot;&quot;&quot;业务规则校验 Agent&quot;&quot;&quot;
+def validate_business_rules(invoice_data: dict) -> AgentValidationReport:
+    """业务规则校验 Agent"""
     start_time = time.time()
     results = []
     
     # 1. 检查税率是否合法
-    line_items = invoice_data.get(&#x27;line_items&#x27;, [])
+    line_items = invoice_data.get('line_items', [])
     for idx, item in enumerate(line_items, 1):
-        tax_rate = item.get(&#x27;tax_rate&#x27;, 0)
+        tax_rate = item.get('tax_rate', 0)
         
         # 找到最接近的标准税率
         closest_rate = min(VALID_TAX_RATES, key=lambda x: abs(x - tax_rate))
         
-        if abs(tax_rate - closest_rate) &gt; 0.001:
+        if abs(tax_rate - closest_rate) > 0.001:
             results.append(ValidationResult(
-                level=&quot;error&quot;,
-                field=f&quot;line_items[{idx-1}].tax_rate&quot;,
-                message=f&quot;第{idx}行税率不是标准税率&quot;,
-                expected=f&quot;{&#x27;, &#x27;.join([f&#x27;{r*100}%&#x27; for r in VALID_TAX_RATES])}&quot;,
-                actual=f&quot;{tax_rate*100}%&quot;,
-                suggestion=f&quot;中国增值税标准税率为: 0%, 1%, 3%, 5%, 6%, 9%, 13%&quot;
+                level="error",
+                field=f"line_items[{idx-1}].tax_rate",
+                message=f"第{idx}行税率不是标准税率",
+                expected=f"{', '.join([f'{r*100}%' for r in VALID_TAX_RATES])}",
+                actual=f"{tax_rate*100}%",
+                suggestion="中国增值税标准税率为: 0%, 1%, 3%, 5%, 6%, 9%, 13%"
             ))
     
     # 2. 专用发票必须有购买方税号
-    invoice_type = invoice_data.get(&#x27;invoice_type&#x27;, &#x27;&#x27;)
-    if &#x27;专用&#x27; in invoice_type:
-        if not invoice_data.get(&#x27;purchaser_tax_id&#x27;):
+    invoice_type = invoice_data.get('invoice_type', '')
+    if '专用' in invoice_type:
+        if not invoice_data.get('purchaser_tax_id'):
             results.append(ValidationResult(
-                level=&quot;error&quot;,
-                field=&quot;purchaser_tax_id&quot;,
-                message=&quot;专用发票必须有购买方纳税人识别号&quot;,
-                expected=&quot;购买方税号&quot;,
-                actual=&quot;空&quot;,
-                suggestion=&quot;专用发票用于抵扣,必须填写购买方税号&quot;
+                level="error",
+                field="purchaser_tax_id",
+                message="专用发票必须有购买方纳税人识别号",
+                expected="购买方税号",
+                actual="空",
+                suggestion="专用发票用于抵扣,必须填写购买方税号"
             ))
     
     # 3. 金额不能为负
-    total_amount = invoice_data.get(&#x27;total_amount&#x27;, 0)
-    if total_amount &lt; 0:
+    total_amount = invoice_data.get('total_amount', 0)
+    if total_amount < 0:
         results.append(ValidationResult(
-            level=&quot;error&quot;,
-            field=&quot;total_amount&quot;,
-            message=&quot;合计金额不能为负数&quot;,
-            expected=&quot;&gt;= 0&quot;,
-            actual=f&quot;¥{total_amount:.2f}&quot;,
-            suggestion=&quot;如果是红字发票,请使用红字发票专用格式&quot;
+            level="error",
+            field="total_amount",
+            message="合计金额不能为负数",
+            expected=">= 0",
+            actual=f"¥{total_amount:.2f}",
+            suggestion="如果是红字发票,请使用红字发票专用格式"
         ))
     
     # 4. 大额发票提示
-    total_amount_with_tax = invoice_data.get(&#x27;total_amount_with_tax&#x27;, 0)
-    if total_amount_with_tax &gt; 10000000:  # 超过1000万
+    total_amount_with_tax = invoice_data.get('total_amount_with_tax', 0)
+    if total_amount_with_tax > 10000000:  # 超过1000万
         results.append(ValidationResult(
-            level=&quot;warning&quot;,
-            field=&quot;total_amount_with_tax&quot;,
-            message=&quot;大额发票,建议重点审核&quot;,
-            expected=&quot;&lt; ¥10,000,000&quot;,
-            actual=f&quot;¥{total_amount_with_tax:,.2f}&quot;,
-            suggestion=&quot;金额超过1000万,建议人工复核交易真实性&quot;
+            level="warning",
+            field="total_amount_with_tax",
+            message="大额发票,建议重点审核",
+            expected="< ¥10,000,000",
+            actual=f"¥{total_amount_with_tax:,.2f}",
+            suggestion="金额超过1000万,建议人工复核交易真实性"
         ))
     
     execution_time = time.time() - start_time
     
     return AgentValidationReport(
-        agent_name=&quot;业务规则校验Agent&quot;,
+        agent_name="业务规则校验Agent",
         results=results,
         execution_time=execution_time
     )
 
-print(&quot;业务规则校验 Agent 定义完成&quot;)
-print(&quot;  - 检查税率是否合法&quot;)
-print(&quot;  - 检查专用发票必填项&quot;)
-print(&quot;  - 检查金额合理性&quot;)
+print("业务规则校验 Agent 定义完成")
+print("  - 检查税率是否合法")
+print("  - 检查专用发票必填项")
+print("  - 检查金额合理性")
 ```
 
 ```
@@ -1037,29 +1064,29 @@ print(&quot;  - 检查金额合理性&quot;)
   - 检查金额合理性
 ```
 
-+   Step 15：Orchestrator: 编排所有 Agent
+## Step 15：`Orchestrator`: 编排所有 `Agent`
 
-最终，我们定义一个协调器负责调用所有 Agent 并汇总结果。
+最终，我们定义一个协调器负责调用所有 `Agent` 并汇总结果。
 
-```
-def validate_invoice_complete(invoice_data: dict) -&gt; InvoiceValidationReport:
-    &quot;&quot;&quot;完整的发票校验流程&quot;&quot;&quot;
+```python
+def validate_invoice_complete(invoice_data: dict) -> InvoiceValidationReport:
+    """完整的发票校验流程"""
     
-    print(&quot;开始发票校验...&quot;)
+    print("开始发票校验...")
     
     # 1. 调用所有 Agent
     agent_reports = []
     
-    print(&quot;  [1/4] 完整性校验...&quot;)
+    print("  [1/4] 完整性校验...")
     agent_reports.append(validate_completeness(invoice_data))
     
-    print(&quot;  [2/4] 格式校验...&quot;)
+    print("  [2/4] 格式校验...")
     agent_reports.append(validate_format(invoice_data))
     
-    print(&quot;  [3/4] 计算校验...&quot;)
+    print("  [3/4] 计算校验...")
     agent_reports.append(validate_calculation(invoice_data))
     
-    print(&quot;  [4/4] 业务规则校验...&quot;)
+    print("  [4/4] 业务规则校验...")
     agent_reports.append(validate_business_rules(invoice_data))
     
     # 2. 汇总结果
@@ -1067,33 +1094,33 @@ def validate_invoice_complete(invoice_data: dict) -&gt; InvoiceValidationReport:
     total_warnings = sum(r.warning_count for r in agent_reports)
     
     # 3. 确定总体状态
-    if total_errors &gt; 0:
-        overall_status = &quot;FAIL&quot;
-        summary = f&quot;发现 {total_errors} 个错误, {total_warnings} 个警告,需要修正后才能通过&quot;
-    elif total_warnings &gt; 0:
-        overall_status = &quot;WARNING&quot;
-        summary = f&quot;发现 {total_warnings} 个警告,建议修正但不阻塞流程&quot;
+    if total_errors > 0:
+        overall_status = "FAIL"
+        summary = f"发现 {total_errors} 个错误, {total_warnings} 个警告,需要修正后才能通过"
+    elif total_warnings > 0:
+        overall_status = "WARNING"
+        summary = f"发现 {total_warnings} 个警告,建议修正但不阻塞流程"
     else:
-        overall_status = &quot;PASS&quot;
-        summary = &quot;所有校验通过,发票数据正常&quot;
+        overall_status = "PASS"
+        summary = "所有校验通过,发票数据正常"
     
     # 4. 生成报告
     report = InvoiceValidationReport(
-        invoice_id=f&quot;{invoice_data.get(&#x27;invoice_code&#x27;, &#x27;&#x27;)}_{invoice_data.get(&#x27;invoice_number&#x27;, &#x27;&#x27;)}&quot;,
-        validation_time=datetime.now().strftime(&#x27;%Y-%m-%d %H:%M:%S&#x27;),
+        invoice_id=f"{invoice_data.get('invoice_code', '')}_{invoice_data.get('invoice_number', '')}",
+        validation_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         overall_status=overall_status,
         summary=summary,
         agent_reports=agent_reports
     )
     
-    print(f&quot;校验完成: {overall_status}&quot;)
+    print(f"校验完成: {overall_status}")
     
     return report
 
-print(&quot;Orchestrator 编排器定义完成&quot;)
-print(&quot;  - 顺序调用 4 个 Agent&quot;)
-print(&quot;  - 汇总所有校验结果&quot;)
-print(&quot;  - 确定总体状态 (PASS/WARNING/FAIL)&quot;)
+print("Orchestrator 编排器定义完成")
+print("  - 顺序调用 4 个 Agent")
+print("  - 汇总所有校验结果")
+print("  - 确定总体状态 (PASS/WARNING/FAIL)")
 ```
 
 ```
@@ -1103,51 +1130,51 @@ Orchestrator 编排器定义完成
   - 确定总体状态 (PASS/WARNING/FAIL)
 ```
 
-+   Step 16：多代理校验系统运行测试
+## Step 16：多代理校验系统运行测试
 
 最后，我们使用真实的发票数据进行校验，并打印校验报告。
 
-```
+```python
 # 将之前提取的 invoice 对象转换为字典
 invoice_dict = invoice.to_dict()
 invoice_dict
 ```
 
-```
-{&#x27;invoice_type&#x27;: &#x27;湖北增值税专用发票&#x27;,
- &#x27;province&#x27;: None,
- &#x27;invoice_code&#x27;: &#x27;4200162130&#x27;,
- &#x27;invoice_number&#x27;: &#x27;00998959&#x27;,
- &#x27;issue_date&#x27;: &#x27;2016-10-17&#x27;,
- &#x27;check_code&#x27;: None,
- &#x27;purchaser_name&#x27;: &#x27;百度在线网络技术(北京)有限公司上海软件技术分公司&#x27;,
- &#x27;purchaser_tax_id&#x27;: &#x27;310114772120643&#x27;,
- &#x27;purchaser_address&#x27;: &#x27;上海市嘉定区汇华路500号 021-39005678&#x27;,
- &#x27;purchaser_bank&#x27;: &#x27;招商银行上海分行漕河泾支行 212280455510001&#x27;,
- &#x27;seller_name&#x27;: &#x27;武汉海庭假日酒店管理有限公司&#x27;,
- &#x27;seller_tax_id&#x27;: &#x27;914201115879926501&#x27;,
- &#x27;seller_address&#x27;: &#x27;武汉市洪山区民族路124号 027-87598879&#x27;,
- &#x27;seller_bank&#x27;: &#x27;交通银行武汉市南湖路支行4219 6163 5018 0100 41948&#x27;,
- &#x27;total_amount&#x27;: 1430.19,
- &#x27;total_tax&#x27;: 85.81,
- &#x27;total_amount_with_tax&#x27;: 1516.0,
- &#x27;amount_in_words&#x27;: &#x27;壹仟伍佰壹拾陆圆整&#x27;,
- &#x27;line_items&#x27;: [{&#x27;row&#x27;: &#x27;1&#x27;,
-   &#x27;name&#x27;: &#x27;住宿费&#x27;,
-   &#x27;specification&#x27;: None,
-   &#x27;unit&#x27;: None,
-   &#x27;quantity&#x27;: None,
-   &#x27;unit_price&#x27;: None,
-   &#x27;amount&#x27;: 1430.19,
-   &#x27;tax_rate&#x27;: 0.06,
-   &#x27;tax_amount&#x27;: 85.81}],
- &#x27;payee&#x27;: &#x27;前台&#x27;,
- &#x27;checker&#x27;: &#x27;肖晨&#x27;,
- &#x27;drawer&#x27;: &#x27;前台&#x27;,
- &#x27;remarks&#x27;: None}
+```python
+{'invoice_type': '湖北增值税专用发票',
+ 'province': None,
+ 'invoice_code': '4200162130',
+ 'invoice_number': '00998959',
+ 'issue_date': '2016-10-17',
+ 'check_code': None,
+ 'purchaser_name': '百度在线网络技术(北京)有限公司上海软件技术分公司',
+ 'purchaser_tax_id': '310114772120643',
+ 'purchaser_address': '上海市嘉定区汇华路500号 021-39005678',
+ 'purchaser_bank': '招商银行上海分行漕河泾支行 212280455510001',
+ 'seller_name': '武汉海庭假日酒店管理有限公司',
+ 'seller_tax_id': '914201115879926501',
+ 'seller_address': '武汉市洪山区民族路124号 027-87598879',
+ 'seller_bank': '交通银行武汉市南湖路支行4219 6163 5018 0100 41948',
+ 'total_amount': 1430.19,
+ 'total_tax': 85.81,
+ 'total_amount_with_tax': 1516.0,
+ 'amount_in_words': '壹仟伍佰壹拾陆圆整',
+ 'line_items': [{'row': '1',
+   'name': '住宿费',
+   'specification': None,
+   'unit': None,
+   'quantity': None,
+   'unit_price': None,
+   'amount': 1430.19,
+   'tax_rate': 0.06,
+   'tax_amount': 85.81}],
+ 'payee': '前台',
+ 'checker': '肖晨',
+ 'drawer': '前台',
+ 'remarks': None}
 ```
 
-```
+```python
 # 执行完整校验
 validation_report = validate_invoice_complete(invoice_dict)
 ```
@@ -1160,6 +1187,8 @@ validation_report = validate_invoice_complete(invoice_dict)
   [4/4] 业务规则校验...
 校验完成: PASS
 ```
+
+
 
 ```
 def print_validation_report(report: InvoiceValidationReport):
@@ -1359,130 +1388,131 @@ print(&quot;发票数据已导出到 invoice_extracted.json&quot;)
 
 # 三、基于OCR搭建法务合同审核Agent
 
-接下里我们再看第二个场景。在特定类别的文档需要遵循严格的格式与内容要求，例如政府或企业的招投标书（RFP响应文档）、各类行政公文、行业报告等。这些文档通常有明确的章节结构、必备内容和格式规范（如字体大小、页边距），不符合要求可能导致投标无效或公文退回。在这种场景下，针对每次审核，Agent需要两个输入：一是待审的主文档（标书/公文等），二是相应的规范要求（可能是招标文件或内部规章）。
+接下来我们再看第二个场景。在特定类别的文档需要遵循严格的格式与内容要求，例如政府或企业的招投标书（RFP响应文档）、各类行政公文、行业报告等。这些文档通常有明确的章节结构、必备内容和格式规范（如字体大小、页边距），不符合要求可能导致投标无效或公文退回。在这种场景下，针对每次审核，Agent需要两个输入：一是待审的主文档（标书/公文等），二是相应的规范要求（可能是招标文件或内部规章）。
 
 为什么合同、标书审核更适合OCR+RAG方案而非VLM方案？ 这一选择基于以下几个核心考量：
 
-+   **文档长度与Token成本**
++ 文档长度与Token成本
 
-合同和标书通常是多页长文档，动辄数十页甚至**上百页。VLM在处**理此类文档时面临严重的token限制问题。以一份20页的劳动合同为例，如果将整个P**DF作为**图像输入VLM，每页图像约消耗1000-2000 tokens，整份文档就需要2万-4万tokens，这不仅接近多数VLM的上下文窗口上限，而且成本极高（图像token价格通常是文本token的5-10倍）。而采用OCR方案，20页合同提取的纯文本通常只需5000-8000 tokens，成本降低了80%以上。
+合同和标书通常是多页长文档，动辄数十页甚至上百页。VLM在处理此类文档时面临严重的token限制问题。以一份20页的劳动合同为例，如果将整个PDF作为图像输入VLM，每页图像约消耗1000-2000 tokens，整份文档就需要2万-4万tokens，这不仅接近多数VLM的上下文窗口上限，而且成本极高（图像token价格通常是文本token的5-10倍）。而采用OCR方案，20页合同提取的纯文本通常只需5000-8000 tokens，成本降低了80%以上。
 
 ![](img/074b9e7f624394bd55f6cad8a5007b12.png)
 
-+   **精确坐标定位与可追溯性**
++ 精确坐标定位与可追溯性
 
-**  法务合同审核的核心**需求之一是精确定位问题条款的位置，以便法务人员快速**查阅和修改。**OCR方案（如MinerU）在解析PDF时会返回每个文本块的精确**坐标信息（bbox**: [x1, y1, x2, y2] + page_idx），可以精确到字符级别的定位。而VLM虽然能"看到"文档内容，但其返回结果中缺乏精确的坐标映射，只能给出模糊的页码或段落描述，无法支持后续的PDF批注、高亮标记等可视化功能。这对于需要生成审核报告并在原文档上标注问题的场景来说是致命缺陷。
+法务合同审核的核心需求之一是精确定位问题条款的位置，以便法务人员快速查阅和修改。OCR方案（如MinerU）在解析PDF时会返回每个文本块的精确坐标信息（`bbox`: [`x1`, `y1`, `x2`, `y2`] + `page_idx`），可以精确到字符级别的定位。而VLM虽然能"看到"文档内容，但其返回结果中缺乏精确的坐标映射，只能给出模糊的页码或段落描述，无法支持后续的PDF批注、高亮标记等可视化功能。这对于需要生成审核报告并在原文档上标注问题的场景来说是致命缺陷。
 
 ![](img/372d74d98986fde9bfe98b34d0427f11.png)
 
-+   **智能切分与上下文控制**
++ 智能切分与上下文控制
 
-**  OC**R方案可以在提取文本后进行智能切分（按标题层级、段落语义**切分），****每个片段控制在800 to**kens以内，既保持了上下文完整性，又能并发处理以提升效率。更重要的是，切分时可以保留每个片段对应的坐标信息（bbox_list），实现"文本-坐标"的完美映射。而VLM处理长文档时，要么一次性输入（成本高、易超限），要么分页输入（丢失跨页上下文、无法保证坐标一致性），两者都不理想。
+OCR方案可以在提取文本后进行智能切分（按标题层级、段落语义切分），每个片段控制在800 tokens以内，既保持了上下文完整性，又能并发处理以提升效率。更重要的是，切分时可以保留每个片段对应的坐标信息（`bbox_list`），实现"文本-坐标"的完美映射。而VLM处理长文档时，要么一次性输入（成本高、易超限），要么分页输入（丢失跨页上下文、无法保证坐标一致性），两者都不理想。
 
-+   **表格与复杂格式的处理**
++ 表格与复杂格式的处理
 
-合同中常包含**表格****（如付款**计**划表、违**约**金计算表）和复杂格式（如条款编**号、多级标题）。OCR方案可以将表格解析为结构化数据（JSON或Markdown表格），便于后续的计算校验（如金额汇总、日期逻辑检查）。而VLM虽然能识别表格，但其输出往往是描述性文本（"表格中显示..."），难以直接用于数值计算和格式校验，需要额外的后处理步骤，反而增加了系统复杂度。
+合同中常包含表格（如付款计划表、违约金计算表）和复杂格式（如条款编号、多级标题）。OCR方案可以将表格解析为结构化数据（JSON或Markdown表格），便于后续的计算校验（如金额汇总、日期逻辑检查）。而VLM虽然能识别表格，但其输出往往是描述性文本（"表格中显示..."），难以直接用于数值计算和格式校验，需要额外的后处理步骤，反而增加了系统复杂度。
 
-票据的人工审核标准流程
+## 票据的人工审核标准流程
 
 | 对比维度 | OCR + RAG 方案 | VLM 方案 |
 | --- | --- | --- |
-| **长文档处理** | 智能切分，无token上限 | 受限于上下文窗口 |
-| **成本** | 纯文本token，成本低 | 图像token，成本高5-10倍 |
-| **坐标定位** | 精确到字符级别 | 缺乏精确坐标映射 |
-| **可追溯性** | 完整的bbox_list | 仅模糊描述 |
-| **规则灵活性** | 支持动态规则库（RAG） | 依赖模型内置知识 |
-| **表格处理** | 结构化解析，可计算 | 描述性输出，难计算 |
+| 长文档处理 | 智能切分，无token上限 | 受限于上下文窗口 |
+| 成本 | 纯文本token，成本低 | 图像token，成本高5-10倍 |
+| 坐标定位 | 精确到字符级别 | 缺乏精确坐标映射 |
+| 可追溯性 | 完整的`bbox_list` | 仅模糊描述 |
+| 规则灵活性 | 支持动态规则库（RAG） | 依赖模型内置知识 |
+| 表格处理 | 结构化解析，可计算 | 描述性输出，难计算 |
 
-综上，对于**合同、标书等长文档审核场景**，OCR+RAG方案在**成本、精度、可追溯性、灵活性****等多个维度均优于V**LM方案。VLM更适合短文档、强视觉依赖的场景（如票据识别、图文混排的宣传册审核），而法务文档审核这类"重文本、重逻辑、重定位"的任务，OCR+RAG才是最优选择。
 
-**  本课程将带你从零开始实现**一个完整的文档审核系统。该系统的核心特点是保留 PDF 文档的坐标信息，实现可追溯、可定位的文档审核和修改。
+
+# 文档审核系统实现指南
+
+综上，对于 **合同、标书等长文档审核场景**，OCR+RAG 方案在 **成本、精度、可追溯性、灵活性** 等多个维度均优于 **VLM** 方案。VLM 更适合短文档、强视觉依赖的场景（如票据识别、图文混排的宣传册审核），而法务文档审核这类 "重文本、重逻辑、重定位" 的任务，OCR+RAG 才是最优选择。
+
+本课程将带你从零开始实现一个完整的文档审核系统。该系统的核心特点是保留 PDF 文档的坐标信息，实现可追溯、可定位的文档审核和修改。
 
 ```
-    PDF 文档 → MinerU 解析 → 提取文本 + 坐标 → 智能切分 → LLM 审核 → 精确定位问题
+PDF 文档 → MinerU 解析 → 提取文本 + 坐标 → 智能切分 → LLM 审核 → 精确定位问题
 ```
 
 如下图所示：
 
 ![](img/e89909977c81c1b50b4bc1c54c260561.png)
 
-**  本课程将带你从零开始实现**一个完整的文档审核系统。该系统的核心特点是保留 PDF 文档的坐标信息，实现可追溯、可定位的文档审核和修改。
-
-+   **Step 1：环境准备**
+## 环境准备
 
 首先安装必要的依赖包。
 
-```
+```bash
 # 安装核心依赖
 ! pip install langchain langchain-openai langchain-core pydantic requests -q
 
-print(&quot;环境准备完成&quot;)
+print("环境准备完成")
 ```
 
 ```
-[33mWARNING: Running pip as the &#x27;root&#x27; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
-[0m环境准备完成
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+环境准备完成
 ```
 
-+   Step 2：配置 API Key 和 MinerU 服务地址
+## 配置 API Key 和 MinerU 服务地址
 
-```
+```python
 # 配置 API Key 和 MinerU 服务地址
 import os
 
 # LLM 配置
-os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;sk-d036126977ff488fa2e29231975469f2&quot;
-os.environ[&quot;OPENAI_BASE_URL&quot;] = &quot;https://dashscope.aliyuncs.com/compatible-mode/v1&quot;
+os.environ["OPENAI_API_KEY"] = "sk-d036126977ff488fa2e29231975469f2"
+os.environ["OPENAI_BASE_URL"] = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 # MinerU API 配置（PDF 解析服务）
-MINERU_API_URL = &quot;http://192.168.110.131:10010/file_parse&quot;  # 替换为你的 MinerU 服务地址
-VLLM_SERVER_URL = &quot;http://192.168.110.131:30000&quot;
+MINERU_API_URL = "http://192.168.110.131:10010/file_parse"  # 替换为你的 MinerU 服务地址
+VLLM_SERVER_URL = "http://192.168.110.131:30000"
 
-print(&quot;API 配置完成&quot;)
+print("API 配置完成")
 ```
 
 ```
 API 配置完成
 ```
 
-其中关于MinerU、PaddleOCR-VL和DeepSeek-OCR的详细[介](https://www.bilibili.com/video/BV1UEkDBhEvg/?spm_id_from=333.1387.upload.video_card.click&vd_source=b403a3d3e6fbb0deaa718687ee6b77a0)绍以及如何在本地通过vLLM框架启动解析服务，大家可以学习我的往期公开课视频：从零实现DeepSeek-OCR、PaddleOCR-VL及MinerU本地vLLM服务，搭建多模态PDF解析系统，企业级OCR模型进阶实战！
+其中关于 `MinerU`、`PaddleOCR-VL` 和 `DeepSeek-OCR` 的详细 [介绍](https://www.bilibili.com/video/BV1UEkDBhEvg/?spm_id_from=333.1387.upload.video_card.click&vd_source=b403a3d3e6fbb0deaa718687ee6b77a0) 以及如何在本地通过 `vLLM` 框架启动解析服务，大家可以学习我的往期公开课视频：从零实现 DeepSeek-OCR、PaddleOCR-VL 及 MinerU 本地 vLLM 服务，搭建多模态 PDF 解析系统，企业级 OCR 模型进阶实战！
 
 ![](img/10b1d4b6c1c854decb4412a0c67e1bf4.png)
 
 ![](img/a4b2ca1f3fce1fb2ba34aaf49461d678.png)
 
-+   Step 3：PDF 解析与坐标提取
+## PDF 解析与坐标提取
 
-这是整个系统的核心基础。我们使用 MinerU 将 PDF 转换为带坐标的 JSON 格式。
+这是整个系统的核心基础。我们使用 `MinerU` 将 PDF 转换为带坐标的 JSON 格式。
 
-MinerU 是一个 PDF 解析工具，它不仅提取文本，还保留每个文本块在 PDF 中的精确位置（坐标）。
+`MinerU` 是一个 PDF 解析工具，它不仅提取文本，还保留每个文本块在 PDF 中的精确位置（坐标）。
 
-输入*:** P**DF 文件
+输入：**PDF 文件**
 
-输出: JSON 文件，包含：
+输出：JSON 文件，包含：
 
-+   md_content: Markdown 格式的文本内容
-
-+   content_list: 每个文本块的坐标信息列表
+- `md_content`: Markdown 格式的文本内容
+- `content_list`: 每个文本块的坐标信息列表
 
 其中**坐标格式示例**:
 
-```
-    {
-    &quot;type&quot;: &quot;text&quot;,
-    &quot;bbox&quot;: [100, 200, 300, 250],  // [x1, y1, x2, y2]
-    &quot;page_idx&quot;: 0,
-    &quot;content&quot;: &quot;这是一段文本&quot;
-    }
+```json
+{
+    "type": "text",
+    "bbox": [100, 200, 300, 250],  // [x1, y1, x2, y2]
+    "page_idx": 0,
+    "content": "这是一段文本"
+}
 ```
 
-```
+```python
 import requests
 import json
 from pathlib import Path
 
-def parse_pdf_with_mineru(pdf_path: str, output_dir: str = &quot;./temp&quot;) -&gt; str:
-    &quot;&quot;&quot;
+def parse_pdf_with_mineru(pdf_path: str, output_dir: str = "./temp") -> str:
+    """
     调用 MinerU API 解析 PDF，保留坐标信息
     
     Args:
@@ -1491,30 +1521,30 @@ def parse_pdf_with_mineru(pdf_path: str, output_dir: str = &quot;./temp&quot;) -
     
     Returns:
         生成的 JSON 文件路径
-    &quot;&quot;&quot;
+    """
     # 创建输出目录
     Path(output_dir).mkdir(exist_ok=True)
     
-    print(f&quot;开始解析 PDF: {pdf_path}&quot;)
+    print(f"开始解析 PDF: {pdf_path}")
     
     # 准备请求参数
-    with open(pdf_path, &quot;rb&quot;) as f:
-        files = [(&quot;files&quot;, (Path(pdf_path).name, f, &quot;application/pdf&quot;))]
+    with open(pdf_path, "rb") as f:
+        files = [("files", (Path(pdf_path).name, f, "application/pdf"))]
         
         # MinerU 参数配置
         data = {
-            &quot;backend&quot;: &quot;pipeline&quot;,              # 使用 pipeline 后端
-            &quot;server_url&quot;: VLLM_SERVER_URL,
-            &quot;parse_method&quot;: &quot;auto&quot;,             # 自动识别
-            &quot;lang_list&quot;: &quot;ch&quot;,                  # 中文
-            &quot;return_md&quot;: &quot;true&quot;,                # 返回 Markdown
-            &quot;return_content_list&quot;: &quot;true&quot;,      # 关键：返回坐标信息
-            &quot;start_page_id&quot;: &quot;0&quot;,
-            &quot;end_page_id&quot;: &quot;99999&quot;,
+            "backend": "pipeline",              # 使用 pipeline 后端
+            "server_url": VLLM_SERVER_URL,
+            "parse_method": "auto",             # 自动识别
+            "lang_list": "ch",                  # 中文
+            "return_md": "true",                # 返回 Markdown
+            "return_content_list": "true",      # 关键：返回坐标信息
+            "start_page_id": "0",
+            "end_page_id": "99999",
         }
         
         # 调用 MinerU API
-        print(f&quot;  调用 MinerU API...&quot;)
+        print(f"  调用 MinerU API...")
         response = requests.post(MINERU_API_URL, files=files, data=data, timeout=600)
         response.raise_for_status()
     
@@ -1523,29 +1553,29 @@ def parse_pdf_with_mineru(pdf_path: str, output_dir: str = &quot;./temp&quot;) -
     
     # 保存完整 JSON
     file_name = Path(pdf_path).stem
-    json_path = Path(output_dir) / f&quot;{file_name}_output.json&quot;
+    json_path = Path(output_dir) / f"{file_name}_output.json"
     
-    with open(json_path, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     
-    print(f&quot;  PDF 解析完成&quot;)
-    print(f&quot;  JSON 已保存到: {json_path}&quot;)
-    print(f&quot;  文件大小: {json_path.stat().st_size / 1024:.2f} KB&quot;)
+    print(f"  PDF 解析完成")
+    print(f"  JSON 已保存到: {json_path}")
+    print(f"  文件大小: {json_path.stat().st_size / 1024:.2f} KB")
     
     return str(json_path)
 
-print(&quot;PDF 解析函数已定义&quot;)
+print("PDF 解析函数已定义")
 ```
 
 ```
 PDF 解析函数已定义
 ```
 
-```
+```python
 # 测试 PDF 解析（如果你有 PDF 文件）
-json_path = parse_pdf_with_mineru(&quot;./data/解除、终止劳动合同协议书.pdf&quot;)
+json_path = parse_pdf_with_mineru("./data/解除、终止劳动合同协议书.pdf")
 
-print(f&quot;PDF 解析完成: {json_path}&quot;)
+print(f"PDF 解析完成: {json_path}")
 ```
 
 ```
@@ -1557,13 +1587,13 @@ print(f&quot;PDF 解析完成: {json_path}&quot;)
 PDF 解析完成: temp/解除、终止劳动合同协议书_output.json
 ```
 
-+   Step 4：加载带坐标的 JSON 文档
+## 加载带坐标的 JSON 文档
 
-解析 MinerU 生成的 JSON，提取文本和坐标信息。
+解析 `MinerU` 生成的 JSON，提取文本和坐标信息。
 
-```
-def load_json_with_coordinates(json_path: str) -&gt; dict:
-    &quot;&quot;&quot;
+```python
+def load_json_with_coordinates(json_path: str) -> dict:
+    """
     加载 MinerU 生成的 JSON 文件
     
     Args:
@@ -1571,49 +1601,49 @@ def load_json_with_coordinates(json_path: str) -&gt; dict:
     
     Returns:
         包含 md_content 和 content_list 的字典
-    &quot;&quot;&quot;
-    with open(json_path, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+    """
+    with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     
-    # MinerU 输出格式：{&quot;results&quot;: {&quot;filename&quot;: {&quot;md_content&quot;: ..., &quot;content_list&quot;: ...}}}
-    if &quot;results&quot; in data:
+    # MinerU 输出格式：{"results": {"filename": {"md_content": ..., "content_list": ...}}}
+    if "results" in data:
         # 提取第一个结果
-        result_key = list(data[&quot;results&quot;].keys())[0]
-        result = data[&quot;results&quot;][result_key]
+        result_key = list(data["results"].keys())[0]
+        result = data["results"][result_key]
         
         # content_list 可能是字符串形式的 JSON
-        content_list = result.get(&quot;content_list&quot;, [])
+        content_list = result.get("content_list", [])
         if isinstance(content_list, str):
             content_list = json.loads(content_list)
         
         return {
-            &quot;md_content&quot;: result.get(&quot;md_content&quot;, &quot;&quot;),
-            &quot;content_list&quot;: content_list,
-            &quot;metadata&quot;: {
-                &quot;backend&quot;: data.get(&quot;backend&quot;, &quot;&quot;),
-                &quot;version&quot;: data.get(&quot;version&quot;, &quot;&quot;),
+            "md_content": result.get("md_content", ""),
+            "content_list": content_list,
+            "metadata": {
+                "backend": data.get("backend", ""),
+                "version": data.get("version", ""),
             }
         }
     
     # 如果不是标准格式，尝试直接提取
     return {
-        &quot;md_content&quot;: data.get(&quot;md_content&quot;, &quot;&quot;),
-        &quot;content_list&quot;: data.get(&quot;content_list&quot;, []),
-        &quot;metadata&quot;: {}
+        "md_content": data.get("md_content", ""),
+        "content_list": data.get("content_list", []),
+        "metadata": {}
     }
 
 # 加载文档
 doc_data = load_json_with_coordinates(json_path)
 
-print(&quot;文档加载成功:&quot;)
-print(f&quot;  文本长度: {len(doc_data[&#x27;md_content&#x27;])} 字符&quot;)
-print(f&quot;  坐标块数: {len(doc_data[&#x27;content_list&#x27;])} 个&quot;)
-print(f&quot;\n文本预览 (前 300 字符):&quot;)
-print(doc_data[&#x27;md_content&#x27;][:300])
-print(&quot;\n坐标信息示例 (前 2 个):&quot;)
-for i, item in enumerate(doc_data[&#x27;content_list&#x27;][:2], 1):
-    print(f&quot;  块 {i}: 类型={item.get(&#x27;type&#x27;)}, 页码={item.get(&#x27;page_idx&#x27;)}, 坐标={item.get(&#x27;bbox&#x27;)}&quot;)
-    print(f&quot;       内容={item.get(&#x27;content&#x27;, &#x27;&#x27;)[:50]}...&quot;)
+print("文档加载成功:")
+print(f"  文本长度: {len(doc_data['md_content'])} 字符")
+print(f"  坐标块数: {len(doc_data['content_list'])} 个")
+print(f"\n文本预览 (前 300 字符):")
+print(doc_data['md_content'][:300])
+print("\n坐标信息示例 (前 2 个):")
+for i, item in enumerate(doc_data['content_list'][:2], 1):
+    print(f"  块 {i}: 类型={item.get('type')}, 页码={item.get('page_idx')}, 坐标={item.get('bbox')}")
+    print(f"       内容={item.get('content', '')[:50]}...")
 ```
 
 ```
@@ -1626,7 +1656,7 @@ for i, item in enumerate(doc_data[&#x27;content_list&#x27;][:2], 1):
 
 先生/小姐
 
-根据 $&lt; &lt;$ 劳动合同法 $&gt; &gt;$ 相关规定，公司依法解除此前您与公司订立的劳动合同(合同期限:
+根据 $< <$ 劳动合同法 $> >$ 相关规定，公司依法解除此前您与公司订立的劳动合同(合同期限:
 
 年 月 日至 年 月 日)。解除您的理由是：
 
@@ -1651,59 +1681,72 @@ for i, item in enumerate(doc_data[&#x27;content_list&#x27;][:2], 1):
        内容=...
 ```
 
-+   **Step 5：带坐标的文档切分**
+## 带坐标的文档切分
 
 将长文档切分成小片段，同时为每个片段分配对应的坐标信息。切分策略为：
 
-1.  **按标题层级切分**: 优先在 # H1, ## H2, ### H3 处切分
-
-1.  **控制片段大小**: 每个片段不超过 800 tokens
-
-1.  **分配坐标**: 根据文本内容匹配对应的坐标信息
+1. **按标题层级切分**: 优先在 `# H1`, `## H2`, `### H3` 处切分
+2. **控制片段大小**: 每个片段不超过 800 tokens
+3. **分配坐标**: 根据文本内容匹配对应的坐标信息
 
 **关键点**: 坐标信息让我们能够在原 PDF 中精确定位每个审核问题的位置。
 
-```
-   # MinerU 返回的原始数据：按照行、段落、表格单元格等自然单位切分的。
 
-    {
-    &quot;content_list&quot;: [
-        {&quot;text&quot;: &quot;解除劳动合同通知书&quot;, &quot;bbox&quot;: [359, 95, 638, 120], &quot;page_idx&quot;: 0},
-        {&quot;text&quot;: &quot;先生/小姐&quot;, &quot;bbox&quot;: [199, 164, 373, 181], &quot;page_idx&quot;: 0},
-        {&quot;text&quot;: &quot;根据 &lt;&lt; 劳动合同法...&quot;, &quot;bbox&quot;: [170, 200, 847, 255], &quot;page_idx&quot;: 0},
-        // ... 共219个文本块
-    ]
-    }
 
-    # 重新切分 (chunk_size=800)：
+# MinerU 返回的原始数据：按照行、段落、表格单元格等自然单位切分的。
 
-    Chunk 1 (831 tokens):
-    内容: &quot;解除劳动合同通知书\n\n先生/小姐\n\n根据&lt;&lt;劳动合同法&gt;&gt;...&quot;
-    bbox_list: [
-        {bbox: [359, 95, 638, 120], text: &quot;解除劳动合同通知书&quot;},
-        {bbox: [199, 164, 373, 181], text: &quot;先生/小姐&quot;},
-        {bbox: [170, 200, 847, 255], text: &quot;根据...&quot;},
-        // ... 共86个原始文本块的坐标
-    ]
-
-    # 核心逻辑：一个Chunk → 多个BBox: 每个原始文本块都有自己精确的坐标
-
-    # 后续的审核逻辑：
-   
-    issue = {
-    &quot;original&quot;: &quot;年 月 日至 年 月 日&quot;,  # 有问题的原文
-    &quot;description&quot;: &quot;日期填写不完整&quot;
-    }
-
-    # 在chunk的bbox_list中查找匹配的坐标
-    for bbox_item in chunk[&#x27;bbox_list&#x27;]:
-        if &quot;年 月 日至 年 月 日&quot; in bbox_item[&#x27;text&#x27;]:
-            problem_bbox = bbox_item[&#x27;bbox&#x27;]  # 找到了！
-            problem_page = bbox_item[&#x27;page_idx&#x27;]
-            # 可以在PDF上精确高亮这个位置
+```json
+{
+  "content_list": [
+    {"text": "解除劳动合同通知书", "bbox": [359, 95, 638, 120], "page_idx": 0},
+    {"text": "先生/小姐", "bbox": [199, 164, 373, 181], "page_idx": 0},
+    {"text": "根据 << 劳动合同法...", "bbox": [170, 200, 847, 255], "page_idx": 0},
+    // ... 共219个文本块
+  ]
+}
 ```
 
+## 重新切分 (`chunk_size`=800)
+
+Chunk 1 (831 tokens)：
+
+内容: "解除劳动合同通知书\n\n先生/小姐\n\n根据<<劳动合同法>>..."
+
+```text
+bbox_list: [
+    {bbox: [359, 95, 638, 120], text: "解除劳动合同通知书"},
+    {bbox: [199, 164, 373, 181], text: "先生/小姐"},
+    {bbox: [170, 200, 847, 255], text: "根据..."},
+    // ... 共86个原始文本块的坐标
+]
 ```
+
+### 核心逻辑：一个 Chunk → 多个 BBox
+
+每个原始文本块都有自己精确的坐标。
+
+### 后续的审核逻辑
+
+```python
+issue = {
+    "original": "年 月 日至 年 月 日",  # 有问题的原文
+    "description": "日期填写不完整"
+}
+```
+
+在 `chunk['bbox_list']` 中查找匹配的坐标：
+
+```python
+for bbox_item in chunk['bbox_list']:
+    if "年 月 日至 年 月 日" in bbox_item['text']:
+        problem_bbox = bbox_item['bbox']  # 找到了！
+        problem_page = bbox_item['page_idx']
+        # 可以在PDF上精确高亮这个位置
+```
+
+## 代码实现
+
+```python
 import json
 import re
 from typing import List, Dict, Any
@@ -1712,81 +1755,81 @@ import re
 import json
 from typing import Dict, Any, List
 
-def clean_ocr_errors(text: str) -&gt; str:
-    &quot;&quot;&quot;清理常见的OCR识别错误&quot;&quot;&quot;
+def clean_ocr_errors(text: str) -> str:
+    """清理常见的OCR识别错误"""
     if not text:
         return text
     
     # 修复书名号识别错误（各种变体）
-    text = re.sub(r&#x27;\$&lt;\s*&lt;\s*\$\s*(.+?)\s*\$&gt;\s*&gt;\s*\$&#x27;, r&#x27;《\1》&#x27;, text)
-    text = re.sub(r&#x27;\$&lt;\s*&lt;\s*(.+?)\s*&gt;\s*&gt;\s*\$&#x27;, r&#x27;《\1》&#x27;, text)
-    text = re.sub(r&#x27;\$&lt; &lt;\s*(.+?)\s*&gt; &gt;\s*\$&#x27;, r&#x27;《\1》&#x27;, text)
+    text = re.sub(r'\$<\s*<\s*\$\s*(.+?)\s*\$>\s*>\s*\$', r'《\1》', text)
+    text = re.sub(r'\$<\s*<\s*(.+?)\s*>\s*>\s*\$', r'《\1》', text)
+    text = re.sub(r'\$< <\s*(.+?)\s*>\s*>\s*\$', r'《\1》', text)
     
     # 修复 LaTeX 符号
-    text = re.sub(r&#x27;\$\\ll\s*\$\s*(.+?)\s*\$\\mathrm\s*\{\s*&gt;\s*\}\s*&gt;\s*\$&#x27;, r&#x27;《\1》&#x27;, text)
-    text = re.sub(r&#x27;\$&lt;\s*&lt;\s*\$(.+?)\$\\mathrm\s*\{\s*&gt;\s*\}\s*&gt;\s*\$&#x27;, r&#x27;《\1》&#x27;, text)
+    text = re.sub(r'\$\\ll\s*\$\s*(.+?)\s*\$\\mathrm\s*\{\s*>\s*\}\s*>\s*\$', r'《\1》', text)
+    text = re.sub(r'\$<\s*<\s*\$(.+?)\$\\mathrm\s*\{\s*>\s*\}\s*>\s*\$', r'《\1》', text)
     
     # 清理多余空格
-    text = re.sub(r&#x27;\s+&#x27;, &#x27; &#x27;, text).strip()
+    text = re.sub(r'\s+', ' ', text).strip()
     
     return text
 
-def load_json_with_coordinates(json_path: str) -&gt; Dict[str, Any]:
-    &quot;&quot;&quot;加载 MinerU 输出的 JSON 文件（带OCR清理）&quot;&quot;&quot;
-    with open(json_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+def load_json_with_coordinates(json_path: str) -> Dict[str, Any]:
+    """加载 MinerU 输出的 JSON 文件（带OCR清理）"""
+    with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    results = data[&#x27;results&#x27;]
+    results = data['results']
     doc_name = list(results.keys())[0]
     doc_result = results[doc_name]
     
     # 解析 content_list
-    content_list_str = doc_result.get(&#x27;content_list&#x27;, &#x27;[]&#x27;)
+    content_list_str = doc_result.get('content_list', '[]')
     if isinstance(content_list_str, str):
         content_list = json.loads(content_list_str)
     else:
         content_list = content_list_str
     
     # 清理 md_content 中的OCR错误
-    md_content = doc_result.get(&#x27;md_content&#x27;, &#x27;&#x27;)
+    md_content = doc_result.get('md_content', '')
     md_content = clean_ocr_errors(md_content)
     
     # 清理 content_list 中的文本
     for item in content_list:
-        if &#x27;text&#x27; in item and item[&#x27;text&#x27;]:
-            item[&#x27;text&#x27;] = clean_ocr_errors(item[&#x27;text&#x27;])
+        if 'text' in item and item['text']:
+            item['text'] = clean_ocr_errors(item['text'])
     
     return {
-        &#x27;md_content&#x27;: md_content,
-        &#x27;content_list&#x27;: content_list
+        'md_content': md_content,
+        'content_list': content_list
     }
 
-def estimate_tokens(text: str) -&gt; int:
-    &quot;&quot;&quot;估算文本的 token 数&quot;&quot;&quot;
-    chinese_chars = len(re.findall(r&#x27;[\u4e00-\u9fff]&#x27;, text))
+def estimate_tokens(text: str) -> int:
+    """估算文本的 token 数"""
+    chinese_chars = len(re.findall(r'[\u4e00-\u9fff]', text))
     other_chars = len(text) - chinese_chars
     return chinese_chars + int(other_chars * 0.25)
 
-def normalize_text(text: str) -&gt; str:
-    &quot;&quot;&quot;规范化文本用于匹配&quot;&quot;&quot;
+def normalize_text(text: str) -> str:
+    """规范化文本用于匹配"""
     # 移除多余空格和换行
-    text = re.sub(r&#x27;\s+&#x27;, &#x27; &#x27;, text)
+    text = re.sub(r'\s+', ' ', text)
     # 移除LaTeX符号和特殊字符
-    text = re.sub(r&#x27;[\$&lt;&gt;\\]&#x27;, &#x27;&#x27;, text)
+    text = re.sub(r'[\$<>\\]', '', text)
     return text.strip().lower()
 
 def split_document_with_coords(
     md_content: str,
     content_list: List[Dict],
     chunk_size: int = 800
-) -&gt; List[Dict[str, Any]]:
-    &quot;&quot;&quot;
+) -> List[Dict[str, Any]]:
+    """
     切分文档并精确分配坐标（基于文本首次出现位置）
-    &quot;&quot;&quot;
+    """
     # 1. 切分文本
-    paragraphs = md_content.split(&#x27;\n\n&#x27;)
+    paragraphs = md_content.split('\n\n')
     chunks = []
-    current_chunk = &quot;&quot;
+    current_chunk = ""
     current_tokens = 0
     chunk_start_positions = []  # 记录每个chunk在原文中的起始位置
     
@@ -1798,7 +1841,7 @@ def split_document_with_coords(
         
         para_tokens = estimate_tokens(para)
         
-        if current_tokens + para_tokens &gt; chunk_size and current_chunk:
+        if current_tokens + para_tokens > chunk_size and current_chunk:
             chunks.append(current_chunk.strip())
             current_chunk = para
             chunk_start_positions.append(current_position)
@@ -1806,7 +1849,7 @@ def split_document_with_coords(
         else:
             if not current_chunk:
                 chunk_start_positions.append(current_position)
-            current_chunk += &quot;\n\n&quot; + para if current_chunk else para
+            current_chunk += "\n\n" + para if current_chunk else para
             current_tokens += para_tokens
         
         current_position += len(para) + 2  # +2 for \n\n
@@ -1821,8 +1864,8 @@ def split_document_with_coords(
         bbox_list = []
         
         for item in content_list:
-            if item.get(&#x27;type&#x27;) == &#x27;text&#x27;:
-                text = item.get(&#x27;text&#x27;, &#x27;&#x27;).strip()
+            if item.get('type') == 'text':
+                text = item.get('text', '').strip()
                 if not text:
                     continue
                 
@@ -1840,51 +1883,53 @@ def split_document_with_coords(
                     chunk_end = chunk_start + len(chunk_text)
                     
                     # 如果text在当前chunk的范围内
-                    if chunk_start &lt;= text_pos &lt; chunk_end:
+                    if chunk_start <= text_pos < chunk_end:
                         bbox_list.append({
-                            &#x27;type&#x27;: item.get(&#x27;type&#x27;),
-                            &#x27;bbox&#x27;: item.get(&#x27;bbox&#x27;),
-                            &#x27;page_idx&#x27;: item.get(&#x27;page_idx&#x27;),
-                            &#x27;text&#x27;: text,
-                            &#x27;content_preview&#x27;: text[:50]
+                            'type': item.get('type'),
+                            'bbox': item.get('bbox'),
+                            'page_idx': item.get('page_idx'),
+                            'text': text,
+                            'content_preview': text[:50]
                         })
         
         result.append({
-            &#x27;content&#x27;: chunk_text,
-            &#x27;token_count&#x27;: estimate_tokens(chunk_text),
-            &#x27;bbox_list&#x27;: bbox_list
+            'content': chunk_text,
+            'token_count': estimate_tokens(chunk_text),
+            'bbox_list': bbox_list
         })
     
     return result
 ```
 
+
+
 ```
-json_path = &quot;./temp/解除、终止劳动合同协议书_output.json&quot;
+json_path = "./temp/解除、终止劳动合同协议书_output";
 
 # 加载数据（自动解析 content_list）
 doc_data = load_json_with_coordinates(json_path)
 
-print(f&quot;JSON 加载成功!&quot;)
-print(f&quot;  md_content 长度: {len(doc_data[&#x27;md_content&#x27;])}&quot;)
-print(f&quot;  content_list 元素数: {len(doc_data[&#x27;content_list&#x27;])}&quot;)
-print(f&quot;  content_list 类型: {type(doc_data[&#x27;content_list&#x27;])}&quot;)
+print(f"JSON 加载成功!")
+print(f"  md_content 长度: {len(doc_data['md_content'])}")
+print(f"  content_list 元素数: {len(doc_data['content_list'])}")
+print(f"  content_list 类型: {type(doc_data['content_list'])}")
 
 # 切分文档
 chunks = split_document_with_coords(
-    md_content=doc_data[&#x27;md_content&#x27;],
-    content_list=doc_data[&#x27;content_list&#x27;],
+    md_content=doc_data['md_content'],
+    content_list=doc_data['content_list'],
     chunk_size=800
 )
 
-print(f&quot;\n文档已切分为 {len(chunks)} 个片段\n&quot;)
+print(f"\n文档已切分为 {len(chunks)} 个片段\n")
 for i, chunk in enumerate(chunks[:3], 1):
-    print(f&quot;片段 {i}:&quot;)
-    print(f&quot;  Token 数: {chunk[&#x27;token_count&#x27;]}&quot;)
-    print(f&quot;  坐标块数: {len(chunk[&#x27;bbox_list&#x27;])}&quot;)  # ✅ 现在应该有坐标了
-    print(f&quot;  内容预览: {chunk[&#x27;content&#x27;][:100]}...&quot;)
-    if chunk[&#x27;bbox_list&#x27;]:
-        print(f&quot;  坐标示例: 页码={chunk[&#x27;bbox_list&#x27;][0][&#x27;page_idx&#x27;]}, bbox={chunk[&#x27;bbox_list&#x27;][0][&#x27;bbox&#x27;]}&quot;)
-        print(f&quot;  文本示例: {chunk[&#x27;bbox_list&#x27;][0][&#x27;text&#x27;]}&quot;)
+    print(f"片段 {i}:")
+    print(f"  Token 数: {chunk['token_count']}")
+    print(f"  坐标块数: {len(chunk['bbox_list'])}")  # ✅ 现在应该有坐标了
+    print(f"  内容预览: {chunk['content'][:100]}...")
+    if chunk['bbox_list']:
+        print(f"  坐标示例: 页码={chunk['bbox_list'][0]['page_idx']}, bbox={chunk['bbox_list'][0]['bbox']}")
+        print(f"  文本示例: {chunk['bbox_list'][0]['text']}")
     print()
 ```
 
@@ -1892,7 +1937,7 @@ for i, chunk in enumerate(chunks[:3], 1):
 JSON 加载成功!
   md_content 长度: 5632
   content_list 元素数: 219
-  content_list 类型: &lt;class &#x27;list&#x27;&gt;
+  content_list 类型: <class 'list'>
 
 文档已切分为 1 个片段
 
@@ -1906,19 +1951,19 @@ JSON 加载成功!
 
 ```
 # 调试：查看 content_list 的内容
-print(&quot;=&quot; * 60)
-print(&quot;【调试】查看 content_list 前5个元素:&quot;)
-print(&quot;=&quot; * 60)
-for i, item in enumerate(doc_data[&#x27;content_list&#x27;][:5], 1):
-    print(f&quot;\n元素 {i}:&quot;)
-    print(f&quot;  类型: {item.get(&#x27;type&#x27;)}&quot;)
-    print(f&quot;  页码: {item.get(&#x27;page_idx&#x27;)}&quot;)
-    print(f&quot;  坐标: {item.get(&#x27;bbox&#x27;)}&quot;)
+print("=" * 60)
+print("【调试】查看 content_list 前5个元素:")
+print("=" * 60)
+for i, item in enumerate(doc_data['content_list'][:5], 1):
+    print(f"\n元素 {i}:")
+    print(f"  类型: {item.get('type')}")
+    print(f"  页码: {item.get('page_idx')}")
+    print(f"  坐标: {item.get('bbox')}")
 
-print(&quot;\n&quot; + &quot;=&quot; * 60)
-print(&quot;【调试】查看 md_content 前500字符:&quot;)
-print(&quot;=&quot; * 60)
-print(doc_data[&#x27;md_content&#x27;][:500])
+print("\n" + "=" * 60)
+print("【调试】查看 md_content 前500字符:")
+print("=" * 60)
+print(doc_data['md_content'][:500])
 ```
 
 ```
@@ -1957,18 +2002,18 @@ print(doc_data[&#x27;md_content&#x27;][:500])
 # 解除劳动合同通知书 先生/小姐 根据 《劳动合同法》 相关规定，公司依法解除此前您与公司订立的劳动合同(合同期限: 年 月 日至 年 月 日)。解除您的理由是： （1）过失性解除 口在试用期内证明不符合录用条件的； 口严重违反公司依法制定的规章制度的； 口严重失职，营私舞弊，给用人单位造成重大损害的； 口以欺诈、胁迫的手段使用人单位违背真实意思签订劳动合同致使劳动合同无效的； 口员工同时与其他用人单位建立劳动关系，对完成本单位的工作任务造成严重影响，或者经用人单位提出，拒不改正的； 口被依法追究刑事责任的； （2）非过失性解除 口劳动合同订立时所依据的客观情况发生重大变化，致使原合同无法履行，经当事人协商不能就变更合同达成协议的； 口员工不能胜任工作，经过培训或者调整工作岗位，仍不能胜任的； 口员工患病或非因工负伤，医疗期满后不能从事原工作，也不能从事由公司安排的其他工作； （3）经济性裁员 口依据企业破产法规定进行重整的；口生产经营发生严重困难的 口公司转产、重大技术革新或者经营方式调整，经变更劳动合同后仍需裁员的。 口其他因劳动合同订立时所依据的客观经济情况发生重大变化，致使劳
 ```
 
-+   **Step 6：设计审核规则**
+## Step 6：设计审核规则
 
 定义文档审核需要检查的规则。
 
 ```
-PROFESSIONAL_CONTRACT_AUDIT_RULES = &quot;&quot;&quot;
+PROFESSIONAL_CONTRACT_AUDIT_RULES = """
 # 合同协议书专业审核规则
 
 ## 一、文本规范性审核（P1-P2级）
 
 ### 1.1 错别字与形近字检查
-- 形近字：&quot;己&quot;/&quot;已&quot;/&quot;以&quot;、&quot;的&quot;/&quot;地&quot;/&quot;得&quot;、&quot;做&quot;/&quot;作&quot;、&quot;账&quot;/&quot;帐&quot;
+- 形近字："己"/"已"/"以"、"的"/"地"/"得"、"做"/"作"、"账"/"帐"
 - 多字、漏字、笔误
 - 严重程度：medium
 
@@ -1988,15 +2033,15 @@ PROFESSIONAL_CONTRACT_AUDIT_RULES = &quot;&quot;&quot;
 ## 二、合同专业性审核（P0级 - 核心）
 
 ### 2.1 法律术语规范性 ⚠️
-- 法律术语准确性：&quot;违约金&quot;非&quot;罚款&quot;、&quot;解除合同&quot;非&quot;取消合同&quot;
-- 避免口语化：&quot;差不多&quot;、&quot;大概&quot;、&quot;基本上&quot;
+- 法律术语准确性："违约金"非"罚款"、"解除合同"非"取消合同"
+- 避免口语化："差不多"、"大概"、"基本上"
 - 术语前后一致
 - 严重程度：high
 - 法律风险：术语使用不当可能影响合同效力
 
 ### 2.2 权利义务对等性 ⚠️
 - 甲乙方权利义务是否明确、对等
-- 关注：&quot;应当&quot;、&quot;必须&quot;、&quot;有权&quot;、&quot;可以&quot;
+- 关注："应当"、"必须"、"有权"、"可以"
 - 避免显失公平条款
 - 严重程度：high
 - 法律风险：可能被认定为无效条款
@@ -2004,13 +2049,13 @@ PROFESSIONAL_CONTRACT_AUDIT_RULES = &quot;&quot;&quot;
 ### 2.3 金额与数字准确性 ⚠️
 - 大写小写一致、数字单位统一
 - 重要金额必须大写+小写
-- 不使用约数：&quot;一万左右&quot;❌
+- 不使用约数："一万左右"❌
 - 严重程度：high
 - 法律风险：直接影响经济利益
 
 ### 2.4 时间条款明确性 ⚠️
 - 合同期限明确（起止日期）
-- 避免模糊词：&quot;尽快&quot;、&quot;及时&quot;→改为具体天数
+- 避免模糊词："尽快"、"及时"→改为具体天数
 - 明确计算方式（自然日/工作日）
 - 严重程度：high
 - 法律风险：影响履行标准，可能引发争议
@@ -2053,7 +2098,7 @@ PROFESSIONAL_CONTRACT_AUDIT_RULES = &quot;&quot;&quot;
 
 ### 4.2 敏感词汇检查
 - 避免歧视性语言
-- 避免绝对化承诺：&quot;绝不&quot;、&quot;永远&quot;、&quot;完全&quot;
+- 避免绝对化承诺："绝不"、"永远"、"完全"
 - 避免贬损性词汇
 - 严重程度：medium
 
@@ -2073,8 +2118,8 @@ PROFESSIONAL_CONTRACT_AUDIT_RULES = &quot;&quot;&quot;
 
 ### 5.1 歧义性表述 ⚠️
 - 多义词导致歧义
-- &quot;和&quot;、&quot;或&quot;、&quot;及&quot;、&quot;与&quot;连接词准确性
-- 标点影响理解：&quot;未经甲方同意不得转让&quot; vs &quot;未经甲方同意，不得转让&quot;
+- "和"、"或"、"及"、"与"连接词准确性
+- 标点影响理解："未经甲方同意不得转让" vs "未经甲方同意，不得转让"
 - 严重程度：high
 - 法律风险：可能引发争议
 
@@ -2092,18 +2137,24 @@ PROFESSIONAL_CONTRACT_AUDIT_RULES = &quot;&quot;&quot;
 **P0级（⚠️标记）**：专业性、一致性、风险 - 可能引发争议或损失
 **P1级**：规范性、可读性 - 建议修正
 **P2级**：优化项 - 可优化
-&quot;&quot;&quot;
+"""
 
-print(&quot;审核规则已定义&quot;)
+print("审核规则已定义")
 ```
 
 ```
 审核规则已定义
 ```
 
-+   Step 7. 构建审核 Agent（带坐标追溯）
+## Step 7. 构建审核 Agent（带坐标追溯）
 
 关键点：审核结果需要关联坐标信息，实现问题的精确定位。
+
+
+
+# 审核 Agent 构建与执行指南
+
+## 数据结构定义
 
 ```
 from pydantic import BaseModel, Field, ConfigDict, model_validator
@@ -2216,7 +2267,9 @@ print(&quot;数据结构定义完成&quot;)
 数据结构定义完成
 ```
 
-+   Step 8. 构建审核 Agent 的提示词
+## Step 8. 构建审核 Agent 的提示词
+
+### 系统提示词
 
 ```
 PROFESSIONAL_SYSTEM_PROMPT = &quot;&quot;&quot;你是资深的合同法律审核专家，具有10年以上的合同审查经验。你的任务是对合同协议书进行专业、全面、细致的审核。
@@ -2283,6 +2336,8 @@ PROFESSIONAL_SYSTEM_PROMPT = &quot;&quot;&quot;你是资深的合同法律审核
 &quot;&quot;&quot;
 ```
 
+### 用户提示词
+
 ```
 PROFESSIONAL_USER_PROMPT = &quot;&quot;&quot;请对以下合同协议书片段进行专业审核：
 
@@ -2320,7 +2375,7 @@ PROFESSIONAL_USER_PROMPT = &quot;&quot;&quot;请对以下合同协议书片段�
 &quot;&quot;&quot;
 ```
 
-+   Step 9. 基于langChain构建审核 Agent
+## Step 9. 基于 `langChain` 构建审核 Agent
 
 ```
 from langchain_openai import ChatOpenAI
@@ -2330,7 +2385,7 @@ from langchain_core.prompts import ChatPromptTemplate
 llm = ChatOpenAI(
     model=&quot;qwen3-max&quot;,
     temperature=0.1,
-)
+),
 
 # 使用结构化输出
 structured_llm = llm.with_structured_output(AuditResult)
@@ -2351,177 +2406,188 @@ print(&quot;审核 Agent 构建完成&quot;)
 审核 Agent 构建完成
 ```
 
-+   Step 10. 执行带坐标的审核
+## Step 10. 执行带坐标的审核
 
 审核单个片段，并关联坐标信息。
 
-```
+
+
+```python
 try:
-    print(&quot;\n正在调用专业审核系统...&quot;)
+    print("\n正在调用专业审核系统...")
     result = audit_chain.invoke({
-        &quot;rules&quot;: PROFESSIONAL_CONTRACT_AUDIT_RULES,
-        &quot;text&quot;: chunks[0]
+        "rules": PROFESSIONAL_CONTRACT_AUDIT_RULES,
+        "text": chunks[0]
     })
 
-    print(&quot;\n审核成功！&quot;)
-    print(&quot;\n&quot; + &quot;=&quot;*80)
-    print(&quot;【审核结果概览】&quot;)
-    print(&quot;=&quot;*80)
-    print(f&quot;是否发现问题: {result.has_issues}&quot;)
-    print(f&quot;整体风险等级: {result.overall_risk_level}&quot;)
-    print(f&quot;问题总数: {len(result.issues)}&quot;)
-    print(f&quot;修改总数: {len(result.modifications)}&quot;)
-    print(f&quot;\n审核总结: {result.summary}&quot;)
+    print("\n审核成功！")
+    print("\n" + "="*80)
+    print("【审核结果概览】")
+    print("="*80)
+    print(f"是否发现问题: {result.has_issues}")
+    print(f"整体风险等级: {result.overall_risk_level}")
+    print(f"问题总数: {len(result.issues)}")
+    print(f"修改总数: {len(result.modifications)}")
+    print(f"\n审核总结: {result.summary}")
 
     if result.has_issues:
         # 按严重程度分组
-        high_issues = [i for i in result.issues if i.severity == &#x27;high&#x27;]
-        medium_issues = [i for i in result.issues if i.severity == &#x27;medium&#x27;]
-        low_issues = [i for i in result.issues if i.severity == &#x27;low&#x27;]
+        high_issues = [i for i in result.issues if i.severity == 'high']
+        medium_issues = [i for i in result.issues if i.severity == 'medium']
+        low_issues = [i for i in result.issues if i.severity == 'low']
 
-        print(&quot;\n&quot; + &quot;=&quot;*80)
-        print(&quot;【问题详情】&quot;)
-        print(&quot;=&quot;*80)
+        print("\n" + "="*80)
+        print("【问题详情】")
+        print("="*80)
 
         if high_issues:
-            print(f&quot;\n高风险问题 ({len(high_issues)} 个)：&quot;)
-            print(&quot;-&quot;*80)
+            print(f"\n高风险问题 ({len(high_issues)} 个)：")
+            print("-"*80)
             for i, issue in enumerate(high_issues, 1):
-                print(f&quot;\n{i}. [{issue.rule_category}] {issue.issue_type}&quot;)
-                print(f&quot;   描述: {issue.description}&quot;)
-                print(f&quot;   原文: {issue.original}&quot;)
-                print(f&quot;   建议: {issue.suggestion}&quot;)
+                print(f"\n{i}. [{issue.rule_category}] {issue.issue_type}")
+                print(f"   描述: {issue.description}")
+                print(f"   原文: {issue.original}")
+                print(f"   建议: {issue.suggestion}")
                 if issue.legal_risk:
-                    print(f&quot;   ⚠️ 法律风险: {issue.legal_risk}&quot;)
+                    print(f"   ⚠️ 法律风险: {issue.legal_risk}")
 
         if medium_issues:
-            print(f&quot;\n中风险问题 ({len(medium_issues)} 个)：&quot;)
-            print(&quot;-&quot;*80)
+            print(f"\n中风险问题 ({len(medium_issues)} 个)：")
+            print("-"*80)
             for i, issue in enumerate(medium_issues, 1):
-                print(f&quot;\n{i}. [{issue.rule_category}] {issue.issue_type}&quot;)
-                print(f&quot;   描述: {issue.description}&quot;)
-                print(f&quot;   原文: {issue.original}&quot;)
-                print(f&quot;   建议: {issue.suggestion}&quot;)
+                print(f"\n{i}. [{issue.rule_category}] {issue.issue_type}")
+                print(f"   描述: {issue.description}")
+                print(f"   原文: {issue.original}")
+                print(f"   建议: {issue.suggestion}")
 
         if low_issues:
-            print(f&quot;\n低风险问题 ({len(low_issues)} 个)：&quot;)
-            print(&quot;-&quot;*80)
+            print(f"\n低风险问题 ({len(low_issues)} 个)：")
+            print("-"*80)
             for i, issue in enumerate(low_issues, 1):
-                print(f&quot;\n{i}. [{issue.rule_category}] {issue.issue_type}&quot;)
-                print(f&quot;   描述: {issue.description}&quot;)
-                print(f&quot;   原文: {issue.original}&quot;)
-                print(f&quot;   建议: {issue.suggestion}&quot;)
+                print(f"\n{i}. [{issue.rule_category}] {issue.issue_type}")
+                print(f"   描述: {issue.description}")
+                print(f"   原文: {issue.original}")
+                print(f"   建议: {issue.suggestion}")
 
         if result.modifications:
-            print(&quot;\n&quot; + &quot;=&quot;*80)
-            print(f&quot;【修改记录】({len(result.modifications)} 处)&quot;)
-            print(&quot;=&quot;*80)
+            print("\n" + "="*80)
+            print(f"【修改记录】({len(result.modifications)} 处)")
+            print("="*80)
             for i, mod in enumerate(result.modifications, 1):
-                print(f&quot;\n修改 {i}:&quot;)
-                print(f&quot;  原文: {mod.original}&quot;)
-                print(f&quot;  修改: {mod.modified}&quot;)
-                print(f&quot;  原因: {mod.reason}&quot;)
+                print(f"\n修改 {i}:")
+                print(f"  原文: {mod.original}")
+                print(f"  修改: {mod.modified}")
+                print(f"  原因: {mod.reason}")
                 if mod.rule_ref:
-                    print(f&quot;  规则: {mod.rule_ref}&quot;)
+                    print(f"  规则: {mod.rule_ref}")
 
-        print(&quot;\n&quot; + &quot;=&quot;*80)
-        print(&quot;【修正后的文本】&quot;)
-        print(&quot;=&quot;*80)
+        print("\n" + "="*80)
+        print("【修正后的文本】")
+        print("="*80)
         print(result.corrected_text)
 
     else:
-        print(&quot;\n文档无问题！&quot;)
+        print("\n文档无问题！")
 
-    print(&quot;\n&quot; + &quot;=&quot;*80)
-    print(&quot;测试通过！数据结构完全兼容！&quot;)
-    print(&quot;=&quot;*80)
-
+    print("\n" + "="*80)
+    print("测试通过！数据结构完全兼容！")
+    print("="*80)
 
 except Exception as e:
-    print(f&quot;\n测试失败！&quot;)
-    print(f&quot;\n错误类型: {type(e).__name__}&quot;)
-    print(f&quot;错误信息: {e}&quot;)
-    print(&quot;\n完整错误堆栈:&quot;)
+    print(f"\n测试失败！")
+    print(f"\n错误类型: {type(e).__name__}")
+    print(f"错误信息: {e}")
+    print("\n完整错误堆栈:")
     import traceback
     traceback.print_exc()
 ```
 
-```
+
+
+# 专业审核系统审核报告
+
 正在调用专业审核系统...
 
 审核成功！
 
-================================================================================
-【审核结果概览】
-================================================================================
-是否发现问题: True
-整体风险等级: high
-问题总数: 9
-修改总数: 6
+---
+
+## 审核结果概览
+
+是否发现问题: True  
+整体风险等级: high  
+问题总数: 9  
+修改总数: 6  
 
 审核总结: 本次审核发现该劳动合同相关文书模板存在多项高风险法律问题，主要包括：1）法律术语使用不当，混淆不同性质的解除类型；2）主体信息缺失，未填写员工姓名；3）经济补偿金表述模糊，缺乏计算标准；4）关键日期全部空白，不符合法定要求；5）续订意向书条款可能违反无固定期限合同强制性规定；6）存在严重歧义性表述。此外，还发现文书重复冗余、标点不规范等中低风险问题。建议全面修订模板，区分不同解除/终止情形，补充完整要素，明确经济补偿计算标准，并删除重复内容。
 
-================================================================================
-【问题详情】
-================================================================================
+---
 
-高风险问题 (6 个)：
---------------------------------------------------------------------------------
+## 问题详情
+
+### 高风险问题 (6 个)
 
 1. [法律术语规范性] 法律术语使用不当
-   描述: 多处使用&#x27;解除劳动合同通知书&#x27;作为单方通知文书，但根据《劳动合同法》，用人单位单方解除劳动合同必须说明具体法定事由并符合程序要求。该文本将协商解除、过失性解除、非过失性解除等不同性质的解除混在同一份通知书中，容易导致法律定性错误。
+
+   描述: 多处使用'解除劳动合同通知书'作为单方通知文书，但根据《劳动合同法》，用人单位单方解除劳动合同必须说明具体法定事由并符合程序要求。该文本将协商解除、过失性解除、非过失性解除等不同性质的解除混在同一份通知书中，容易导致法律定性错误。
    原文: 解除劳动合同通知书
-   建议: 应根据解除类型分别使用：&#x27;协商解除劳动合同协议书&#x27;（双方合意）、&#x27;解除劳动合同通知书（依据《劳动合同法》第XX条）&#x27;（单方解除），并在正文中明确引用具体法律条款。
+   建议: 应根据解除类型分别使用：'协商解除劳动合同协议书'（双方合意）、'解除劳动合同通知书（依据《劳动合同法》第XX条）'（单方解除），并在正文中明确引用具体法律条款。
 
 2. [权利义务对等性] 主体信息缺失
-   描述: 多份文书（如解除通知、终止通知、确认书等）中未填写员工姓名，仅以&#x27;先生/小姐&#x27;代替，违反《劳动合同法》关于书面通知应载明劳动者基本信息的要求，影响文书法律效力。
+
+   描述: 多份文书（如解除通知、终止通知、确认书等）中未填写员工姓名，仅以'先生/小姐'代替，违反《劳动合同法》关于书面通知应载明劳动者基本信息的要求，影响文书法律效力。
    原文: 先生/小姐
    建议: 应替换为具体员工姓名，或至少在正式使用时填写完整姓名。
 
 3. [金额与数字准确性] 经济补偿金表述不规范
-   描述: 经济补偿金计算未明确是否包含代通知金、是否按N+1标准，且未说明计算基数（如月工资指解除前12个月平均工资）。例如&#x27;相当于 月工资的经济补偿&#x27;表述模糊，易引发争议。
+
+   描述: 经济补偿金计算未明确是否包含代通知金、是否按N+1标准，且未说明计算基数（如月工资指解除前12个月平均工资）。例如'相当于 月工资的经济补偿'表述模糊，易引发争议。
    原文: 口公司需要支付给您相当于 月工资的经济补偿，计 元。
-   建议: 应明确为&#x27;相当于【X】个月工资的经济补偿金（按解除劳动合同前12个月平均工资计算），共计人民币【大写】元（¥【小写】）&#x27;。
+   建议: 应明确为'相当于【X】个月工资的经济补偿金（按解除劳动合同前12个月平均工资计算），共计人民币【大写】元（¥【小写】）'。
 
 4. [必备条款完整性] 关键日期空白
+
    描述: 所有文书中的关键日期（如合同起止日、解除日、薪资结算日等）均为空白，不符合《劳动合同法》第五十条关于出具解除或终止证明应载明劳动合同期限、解除或终止日期等要求。
    原文: 年 月 日
-   建议: 在正式使用时必须填写完整日期，模板中可标注为&#x27;【年】年【月】月【日】日&#x27;以提示填写。
+   建议: 在正式使用时必须填写完整日期，模板中可标注为'【年】年【月】月【日】日'以提示填写。
 
 5. [法律合规性] 续订意向书期限设置不当
-   描述: &#x27;续订劳动合同意向书&#x27;中规定&#x27;逾期7天视为不同意续签&#x27;，但根据《劳动合同法》第十四条，若劳动者符合签订无固定期限劳动合同条件，用人单位不得以逾期未回复为由拒绝续签，此条款可能被认定为无效。
+
+   描述: '续订劳动合同意向书'中规定'逾期7天视为不同意续签'，但根据《劳动合同法》第十四条，若劳动者符合签订无固定期限劳动合同条件，用人单位不得以逾期未回复为由拒绝续签，此条款可能被认定为无效。
    原文: 请您于收到此《意向书》后7天之内填妥回执意见并归还人力资源部，逾期将视为本人不同意与公司续签劳动合同。
-   建议: 修改为&#x27;请您于收到此《意向书》后7天之内填妥回执意见并归还人力资源部。若您符合签订无固定期限劳动合同的法定条件，公司将依法与您签订无固定期限劳动合同。&#x27;
+   建议: 修改为'请您于收到此《意向书》后7天之内填妥回执意见并归还人力资源部。若您符合签订无固定期限劳动合同的法定条件，公司将依法与您签订无固定期限劳动合同。'
 
 6. [表述清晰度] 歧义性表述
-   描述: &#x27;二、乙方薪资结算至 年 月 日；计 元方支付 方经济补偿金 元；&#x27;存在严重语法错误和歧义，无法判断支付主体和金额。
-   原文: 二、乙方薪资结算至 年 月 日；计 元方支付 方经济补偿金 元；
-   建议: 应拆分为：&#x27;（1）乙方薪资结算至【年】年【月】月【日】日，共计人民币【大写】元（¥【小写】）；（2）甲方支付乙方经济补偿金人民币【大写】元（¥【小写】）。&#x27;
 
-中风险问题 (1 个)：
---------------------------------------------------------------------------------
+   描述: '二、乙方薪资结算至 年 月 日；计 元方支付 方经济补偿金 元；'存在严重语法错误和歧义，无法判断支付主体和金额。
+   原文: 二、乙方薪资结算至 年 月 日；计 元方支付 方经济补偿金 元；
+   建议: 应拆分为：'（1）乙方薪资结算至【年】年【月】月【日】日，共计人民币【大写】元（¥【小写】）；（2）甲方支付乙方经济补偿金人民币【大写】元（¥【小写】）。'
+
+### 中风险问题 (1 个)
 
 1. [逻辑一致性] 文书重复冗余
-   描述: 同一份文档中重复出现完全相同的文书模板（如两份&#x27;协商解除劳动合同协议书&#x27;、两份&#x27;劳动合同到期终止通知书&#x27;等），属于明显的格式错误，可能导致实际使用混乱。
+
+   描述: 同一份文档中重复出现完全相同的文书模板（如两份'协商解除劳动合同协议书'、两份'劳动合同到期终止通知书'等），属于明显的格式错误，可能导致实际使用混乱。
    原文: 协商解除劳动合同协议书（全文重复）
    建议: 删除重复的文书模板，保留一份即可。
 
-低风险问题 (2 个)：
---------------------------------------------------------------------------------
+### 低风险问题 (2 个)
 
 1. [文本规范性] 标点符号不规范
-   描述: 多处顿号、逗号使用不规范，如&#x27;口不予支付经济补偿金； 口公司需要支付...&#x27;中分号应为句号或换行；法律条文引用中括号使用不一致。
+
+   描述: 多处顿号、逗号使用不规范，如'口不予支付经济补偿金； 口公司需要支付...'中分号应为句号或换行；法律条文引用中括号使用不一致。
    原文: 口不予支付经济补偿金； 口公司需要支付给您相当于 月工资的经济补偿，计 元。
    建议: 每个选项应独立成行或以句号结束，避免使用分号连接不同选项。
 
 2. [OCR识别问题] 特殊符号错误
-   描述: 《劳动合同法》书名号显示正常，但部分空格异常，如&#x27;《 劳动合同法 》&#x27;，属OCR识别错误。
-   原文: 《 劳动合同法 》
-   建议: 修正为&#x27;《劳动合同法》&#x27;
 
-================================================================================
-【修改记录】(6 处)
-================================================================================
+   描述: 《劳动合同法》书名号显示正常，但部分空格异常，如'《 劳动合同法 》'，属OCR识别错误。
+   原文: 《 劳动合同法 》
+   建议: 修正为'《劳动合同法》'
+
+---
+
+## 修改记录 (6 处)
 
 修改 1:
   原文: 解除劳动合同通知书
@@ -2559,10 +2625,11 @@ except Exception as e:
   原因: 修正OCR识别错误
   规则: OCR识别问题
 
-================================================================================
-【修正后的文本】
-================================================================================
-# 【根据解除类型选择】协商解除劳动合同协议书 / 解除劳动合同通知书（依据《劳动合同法》第XX条）
+---
+
+## 修正后的文本
+
+### 【根据解除类型选择】协商解除劳动合同协议书 / 解除劳动合同通知书（依据《劳动合同法》第XX条）
 
 【员工姓名】
 
@@ -2606,7 +2673,7 @@ except Exception as e:
 
 ---
 
-协商解除劳动合同协议书
+### 协商解除劳动合同协议书
 
 甲 方：AA公司
 乙 方：【员工姓名】（员工身份证号：【身份证号】）
@@ -2629,7 +2696,7 @@ except Exception as e:
 
 ---
 
-劳动合同到期终止通知书
+### 劳动合同到期终止通知书
 
 【员工姓名】
 
@@ -2652,7 +2719,7 @@ except Exception as e:
 
 ---
 
-劳动合同解除确认书
+### 劳动合同解除确认书
 
 【员工姓名】
 
@@ -2677,7 +2744,7 @@ except Exception as e:
 
 ---
 
-续订劳动合同意向书（用人单位使用）
+### 续订劳动合同意向书（用人单位使用）
 
 【员工姓名】
 
@@ -2690,7 +2757,7 @@ except Exception as e:
 
 ---
 
-劳动合同到期续签意向书回执意见
+### 劳动合同到期续签意向书回执意见
 
 公司【公司名称】：
 
@@ -2705,7 +2772,7 @@ except Exception as e:
 
 ---
 
-劳动合同终止通知书（适用于其他终止情形）
+### 劳动合同终止通知书（适用于其他终止情形）
 
 【员工姓名】
 
@@ -2739,7 +2806,7 @@ except Exception as e:
 
 ---
 
-订立劳动合同通知书（劳动者）：
+### 订立劳动合同通知书（劳动者）：
 
 【员工姓名】：
 
@@ -2750,7 +2817,7 @@ except Exception as e:
 
 ---
 
-终止劳动关系通知书
+### 终止劳动关系通知书
 
 【员工姓名】：
 
@@ -2761,7 +2828,7 @@ except Exception as e:
 
 ---
 
-解除或终止劳动合同（关系）证明书
+### 解除或终止劳动合同（关系）证明书
 
 【员工姓名】：
 
@@ -2785,7 +2852,7 @@ except Exception as e:
 
 ---
 
-变更劳动合同协议书
+### 变更劳动合同协议书
 
 甲 方：AA公司
 乙 方：【员工姓名】（员工身份证号：【身份证号】）
@@ -2802,18 +2869,17 @@ except Exception as e:
 法定代表人或委托代理人（签字或盖章）
 【年】年【月】月【日】日                【年】年【月】月【日】日
 
-================================================================================
-测试通过！数据结构完全兼容！
-================================================================================
-```
+---
 
-# 四、本地部署启动文档审核系统
+测试通过！数据结构完全兼容！
+
+
 
 # 一、系统架构与设计
 
 ## 1.1 整体架构
 
-**  DocumentAgent** 是一个基于 FastAP**I + **R**eact** 的智能文档审核系统，支持票据审查和合同审查两大核心功能。
+`DocumentAgent` 是一个基于 `FastAPI` + `React` 的智能文档审核系统，支持票据审查和合同审查两大核心功能。
 
 ![](img/9b7bb062e630648452c04de52c8db47d.png)
 
@@ -2844,26 +2910,24 @@ except Exception as e:
         └── contract_audit_prompt_professional.py  # 合同审查提示词
 ```
 
-对应的技术栈如下：
-
-DocumentAgent 技术栈
+### DocumentAgent 技术栈
 
 | 层级 | 技术 | 用途 |
 | --- | --- | --- |
-| **前端** | React 18 + TypeScript | UI框架 |
-|  | Vite | 构建工具 |
-|  | Tailwind CSS | 样式框架 |
-| **后端** | FastAPI | Web框架 |
-|  | Pydantic | 数据验证 |
-|  | Uvicorn | ASGI服务器 |
-| **AI能力** | LangChain | Agent编排 |
-|  | Qwen3-VL-Plus | 多模态OCR |
-|  | Qwen-Plus | 文本理解与审查 |
-|  | MinerU | PDF解析 |
-| **工具** | Python 3.10+ | 后端语言 |
-|  | Node.js 18+ | 前端环境 |
+| 前端 | `React` 18 + `TypeScript` | UI框架 |
+|  | `Vite` | 构建工具 |
+|  | `Tailwind CSS` | 样式框架 |
+| 后端 | `FastAPI` | Web框架 |
+|  | `Pydantic` | 数据验证 |
+|  | `Uvicorn` | ASGI服务器 |
+| AI能力 | `LangChain` | Agent编排 |
+|  | `Qwen3-VL-Plus` | 多模态OCR |
+|  | `Qwen-Plus` | 文本理解与审查 |
+|  | `MinerU` | PDF解析 |
+| 工具 | `Python` 3.10+ | 后端语言 |
+|  | `Node.js` 18+ | 前端环境 |
 
-项目的前后端源码已经上传到百度网盘中：LangChain v1.0 文档审核类Agent开发实战
+项目的前后端源码已经上传到百度网盘中：`LangChain` v1.0 文档审核类Agent开发实战
 
 链接: https://pan.baidu.com/s/1GWZJX9tjvjtrbp1t-iWfLQ?pwd=4b9f 提取码: 4b9f
 
@@ -2873,7 +2937,9 @@ DocumentAgent 技术栈
 
 下载后，解压即可得到完整的项目源码，然后按照以下步骤进行部署：
 
-+   **后端服务部署与启动**
+# 四、本地部署启动文档审核系统
+
+## 后端服务部署与启动
 
 ```
     # 1. 安装Python依赖
@@ -2912,7 +2978,7 @@ DocumentAgent 技术栈
 
 ![](img/b720617ff666daaffa11dacbb3ead753.png)
 
-这条命令会安装所有前端依赖包，包括 react、vite、tailwindcss 等。首次安装可能需要几分钟。
+这条命令会安装所有前端依赖包，包括 `react`、`vite`、`tailwindcss` 等。首次安装可能需要几分钟。
 
 启动开发服务器，执行如下命令：
 

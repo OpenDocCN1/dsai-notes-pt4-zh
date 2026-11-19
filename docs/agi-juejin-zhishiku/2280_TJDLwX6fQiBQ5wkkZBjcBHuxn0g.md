@@ -1,3 +1,4 @@
+
 # AIGC算力全景与趋势报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/MNpFddvlDoLhFyxtZNicRSFIntr](https://agijuejin.feishu.cn/docx/MNpFddvlDoLhFyxtZNicRSFIntr)

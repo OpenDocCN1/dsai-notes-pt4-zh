@@ -1,3 +1,4 @@
+
 # AI搞钱案例库（不定期更新）
 
 > 来源：[https://ga67w23t0nn.feishu.cn/docx/CEq1dc8Y4owJufxWaMRcHhGIn1c](https://ga67w23t0nn.feishu.cn/docx/CEq1dc8Y4owJufxWaMRcHhGIn1c)

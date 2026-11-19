@@ -1,16 +1,17 @@
+
 # 20240402-发布在即！Midjourney V7生成图片曝光，摄影师表示无法分辨
 
-> 来源：[https://aigcreative.feishu.cn/docx/A5KWd6zLsohIUkxGpXocs4yxnrg](https://aigcreative.feishu.cn/docx/A5KWd6zLsohIUkxGpXocs4yxnrg)
+> 来源：`https://aigcreative.feishu.cn/docx/A5KWd6zLsohIUkxGpXocs4yxnrg`
 
 > Midjourney即将推出令人期待已久的V7版本！
 
 而在正式发布之前，一场热闹非凡的评级活动正在官网进行，众多用户正跃跃欲试，为V7的图像美学打分。
 
-**Mid**journey的这次评级活动已进入第三轮，这意味着V7版本的美学个性化系统已经进入深度微调阶段。
+Midjourney的这次评级活动已进入第三轮，这意味着V7版本的美学个性化系统已经进入深度微调阶段。
 
 与前两轮不同的是，这一轮，用户们被邀请在两个美学风格强烈对比的图片中，选择自己更喜欢的一张。
 
-**AIGC创意猎人**在MJ官网参与了其测试图的评级打分，选取了一些图片，真的很逼真！到了几乎无法分辨的地步了。大家可以一起看看：
+AIGC创意猎人在MJ官网参与了其测试图的评级打分，选取了一些图片，真的很逼真！到了几乎无法分辨的地步了。大家可以一起看看：
 
 ![](img/e89bfd5686024291e51f6a4c067d0acb.png)
 
@@ -164,7 +165,7 @@
 
 ![](img/1aed49a53b5746d8aaae166514abaf91.png)
 
-**Midjourney**还是那个**Midjourney**，沉睡的雄狮终于要醒了！
+Midjourney还是那个Midjourney，沉睡的雄狮终于要醒了！
 
 官方强调，这些图片仅仅是社区成员随机生成的，不代表新模型的最终水准。
 
@@ -182,6 +183,6 @@
 
 让我们拭目以待！
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

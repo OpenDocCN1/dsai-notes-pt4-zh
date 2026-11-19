@@ -1,10 +1,11 @@
+
 # 多Agent协同的多模态智能医疗问诊系统
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/BGoEd9z0eoHXfPx8uI1cy8i8nUf](https://v11enp9ok1h.feishu.cn/docx/BGoEd9z0eoHXfPx8uI1cy8i8nUf)
+> 来源：`https://v11enp9ok1h.feishu.cn/docx/BGoEd9z0eoHXfPx8uI1cy8i8nUf`
 
 ## 项目概述
 
-> 本项目基于本地化部署的ERNIE-4.5-VL-28B-A3B-Paddle多模态大模型，构建了一个集成RAG知识库检索与多Agent协同机制的智能医疗问诊系统。通过FastDeploy框架实现模型的高效本地部署，结合ChromaDB知识库和多模态理解能力，为用户提供专业的医疗咨询服务。
+> 本项目基于本地化部署的`ERNIE-4.5-VL-28B-A3B-Paddle`多模态大模型，构建了一个集成`RAG`知识库检索与多Agent协同机制的智能医疗问诊系统。通过`FastDeploy`框架实现模型的高效本地部署，结合`ChromaDB`知识库和多模态理解能力，为用户提供专业的医疗咨询服务。
 
 ### 🎯 项目亮点
 
@@ -12,62 +13,62 @@
 
 +   **🖼️ 多模态融合：**支持文本+图像的混合输入，可分析皮肤病变等医疗图像
 
-+   **🧠 本地化部署：**基于ERNIE-4.5-VL-28B-A3B-Paddle的完全本地化方案，数据安全可控
++   **🧠 本地化部署：**基于`ERNIE-4.5-VL-28B-A3B-Paddle`的完全本地化方案，数据安全可控
 
-+   **📚 知识库驱动：**ChromaDB构建的医学知识库，支持症状、疾病、治疗方案的智能检索
++   **📚 知识库驱动：**`ChromaDB`构建的医学知识库，支持症状、疾病、治疗方案的智能检索
 
 +   **🤖 多Agent协同：**症状解析、知识检索、诊断决策等专业Agent的协同工作
 
-+   **⚡ 高性能推理**：FastDeploy加速框架，单机多卡部署，推理延迟优化
++   **⚡ 高性能推理**：`FastDeploy`加速框架，单机多卡部署，推理延迟优化
 
 ### 🏗️ 系统架构图
 
 ### 🏗️ 系统架构图-代码
 
 ```
-graph **TD**
-   ** **A[用户问诊输入] --&gt;** **B[Gr**a**dio前端界面]
- ** **  B **-**-&gt; C**[**Medic**a**lConsultat**i**on]
-** **   C** **--&gt; D[Agen**t**Coordinator协调器]
+graph TD
+    A[用户问诊输入] --> B[Gradio前端界面]
+    B --> C[MedicalConsultation]
+    C --> D[AgentCoordinator协调器]
     
-    D --&gt; E[ERNIE-4.5-VL本地模型]
-    E --&gt; F[FastDeploy推理引擎]
-    F --&gt; G[多模态理解]
+    D --> E[ERNIE-4.5-VL本地模型]
+    E --> F[FastDeploy推理引擎]
+    F --> G[多模态理解]
     
-    D --&gt; H[SymptomParserAgent]
-    D --&gt; I[KnowledgeRetrievalAgent] 
-    D --&gt; J[DiagnosisAgent]
+    D --> H[SymptomParserAgent]
+    D --> I[KnowledgeRetrievalAgent]
+    D --> J[DiagnosisAgent]
     
-    I --&gt; K[ChromaDB知识库]
-    K --&gt; L[症状库]
-    K --&gt; M[疾病库]
-    K --&gt; N[治疗库]
+    I --> K[ChromaDB知识库]
+    K --> L[症状库]
+    K --> M[疾病库]
+    K --> N[治疗库]
     
-    H --&gt; O[症状提取]
-    I --&gt; P[知识检索]
-    J --&gt; Q[风险评估]
-    J --&gt; R[治疗建议]
+    H --> O[症状提取]
+    I --> P[知识检索]
+    J --> Q[风险评估]
+    J --> R[治疗建议]
     
-    O --&gt; S[诊断结果整合]
-    P --&gt; S
-    Q --&gt; S
-    R --&gt; S
+    O --> S[诊断结果整合]
+    P --> S
+    Q --> S
+    R --> S
     
-    S --&gt; T[结构化医疗报告]
-    T --&gt; B
+    S --> T[结构化医疗报告]
+    T --> B
 ```
 
 ### 🏆 技术创新总结
 
 本项目实现了从**大模型本地化部署**到**智能医疗应用**的完整技术链路：
 
-1.  **🔥 核****心突破：**28B参数ERNIE-4.5-VL多模态大模型的高效本地化部署
+1.  **🔥 核心突破：**28B参数`ERNIE-4.5-VL`多模态大模型的高效本地化部署
 
-1.  **🧠 智****能升级：**RAG知识库检索 + 多Agent协同的医疗专家系统
+2.  **🧠 智能升级：**`RAG`知识库检索 + 多Agent协同的医疗专家系统
 
-1.  **🛡️ ****数****据安全：**完全本地化方案，患者隐私零泄露
+3.  **🛡️ 数据安全：**完全本地化方案，患者隐私零泄露
 
-1.  **⚡ ****性能优化**：FastDeploy推理加速，秒级响应医疗问诊
+4.  **⚡ 性能优化**：`FastDeploy`推理加速，秒级响应医疗问诊
 
 ### 🛠️ 技术栈选择
 
@@ -78,17 +79,17 @@ graph **TD**
 1.  多模态输入处理
 
 ```
-**class** **ErnieClient**:
-  **  d**ef medica**l_im****ag**e_analysis(self,** image**_path: str) -&gt; str:
-        &quot;&quot;&quot;医疗图像分析&quot;&quot;&quot;
-        with open(image_path, &quot;rb&quot;) as image_file:
-            base64_image = base64.b64encode(image_file.read()).decode(&quot;utf-8&quot;)
+class ErnieClient:
+    def medical_image_analysis(self, image_path: str) -> str:
+        """医疗图像分析"""
+        with open(image_path, "rb") as image_file:
+            base64_image = base64.b64encode(image_file.read()).decode("utf-8")
         
         messages = [{
-            &quot;role&quot;: &quot;user&quot;, 
-            &quot;content&quot;: [
-                {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: f&quot;data:image/jpeg;base64,{base64_image}&quot;}},
-                {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;请分析这张医疗图像，描述可见的症状特征&quot;}
+            "role": "user", 
+            "content": [
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}},
+                {"type": "text", "text": "请分析这张医疗图像，描述可见的症状特征"}
             ]
         }]
         # 调用本地ERNIE-4.5-VL模型
@@ -98,23 +99,23 @@ graph **TD**
 1.  知识库检索系统
 
 ```
-**class** **KnowledgeBase**:
-  **  d**e**f __init**__(self, persist_directory=&quot;medical_kb&quot;):
+class KnowledgeBase:
+    def __init__(self, persist_directory="medical_kb"):
         # 使用ChromaDB构建医学知识库
         self.client = chromadb.PersistentClient(path=persist_directory)
         
         # 创建专业医学集合
-        self.symptoms_collection = self.client.get_or_create_collection(&quot;symptoms&quot;)
-        self.diseases_collection = self.client.get_or_create_collection(&quot;diseases&quot;)  
-        self.treatments_collection = self.client.get_or_create_collection(&quot;treatments&quot;)
+        self.symptoms_collection = self.client.get_or_create_collection("symptoms")
+        self.diseases_collection = self.client.get_or_create_collection("diseases")  
+        self.treatments_collection = self.client.get_or_create_collection("treatments")
 ```
 
 1.  多Agent协同系统
 
 ```
-**class** Agen**tCo**ordinator:
-    def proces**s_**consultation**(sel**f, text_input: str, image_path: str = None):
-        # 1. 图像**分析（如果提**供）
+class AgentCoordinator:
+    def process_consultation(self, text_input: str, image_path: str = None):
+        # 1. 图像分析（如果提供）
         image_analysis = self.ernie.medical_image_analysis(image_path) if image_path else None
         
         # 2. 症状解析Agent
@@ -128,10 +129,10 @@ graph **TD**
         treatment_plan = self.diagnosis_agent.generate_treatment_plan(symptoms, medical_info)
         
         return {
-            &quot;symptoms&quot;: symptoms,
-            &quot;risk_assessment&quot;: risk_assessment, 
-            &quot;treatment_plan&quot;: treatment_plan,
-            &quot;image_analysis&quot;: image_analysis
+            "symptoms": symptoms,
+            "risk_assessment": risk_assessment, 
+            "treatment_plan": treatment_plan,
+            "image_analysis": image_analysis
         }
 ```
 
@@ -139,27 +140,27 @@ graph **TD**
 
 #### 典型使用流程
 
-1.  **用户输入**：描述症状 + 上传病变图片（可选）
+1.  用户输入：描述症状 + 上传病变图片（可选）
 
-1.  **多模态分析**：ERNIE-4.5-VL同时理解文本和图像
+1.  多模态分析：`ERNIE-4.5-VL`同时理解文本和图像
 
-1.  **症状提取**：AI识别关键症状和医学术语
+1.  症状提取：AI识别关键症状和医学术语
 
-1.  **知识检索**：从专业医学库中检索相关疾病信息
+1.  知识检索：从专业医学库中检索相关疾病信息
 
-1.  **风险评估**：评估病情严重程度和就医紧急性
+1.  风险评估：评估病情严重程度和就医紧急性
 
-1.  **治疗建议**：生成个性化的检查、用药和生活建议
+1.  治疗建议：生成个性化的检查、用药和生活建议
 
 #### 系统优势
 
-+   **数据安全**：完全本地化部署，患者数据不出本地
++   数据安全：完全本地化部署，患者数据不出本地
 
-+   **专业准确**：基于28B参数的专业医学模型
++   专业准确：基于28B参数的专业医学模型
 
-+   **响应快速**：本地推理，无网络延迟
++   响应快速：本地推理，无网络延迟
 
-+   **持续学习**：知识库可不断扩充和更新
++   持续学习：知识库可不断扩充和更新
 
 ## 🧠 ERNIE-4.5-VL-28B-A3B-Paddle模型选择
 
@@ -167,47 +168,47 @@ graph **TD**
 
 ### 模型规格选择策略表
 
-### 为什么选择ERNIE-4.5-VL-28B-A3B-Paddle模型？
+### 为什么选择`ERNIE-4.5-VL-28B-A3B-Paddle`模型？
 
-#### 1. **性能与成本的最佳平衡**
+#### 1. 性能与成本的最佳平衡
 
-+   **参数规模适中**：28B总参数，3B激活参数，在保证推理能力的同时控制了计算成本
++   参数规模适中：28B总参数，3B激活参数，在保证推理能力的同时控制了计算成本
 
-+   **硬件要求合理**：支持单机多卡部署（4×V100或2×A100），相比A47B系列降低了75%的硬件门槛
++   硬件要求合理：支持单机多卡部署（4×`V100`或2×`A100`），相比`A47B`系列降低了75%的硬件门槛
 
-+   **推理延迟适中**：在保证输出质量的前提下，响应速度比大规模模型快3-5倍
++   推理延迟适中：在保证输出质量的前提下，响应速度比大规模模型快3-5倍
 
-#### 2. **多模态能力突出**
+#### 2. 多模态能力突出
 
-+   **文本+视觉融合**：原生支持图文理解，无需额外的视觉编码器
++   文本+视觉融合：原生支持图文理解，无需额外的视觉编码器
 
-+   **长上下文支持**：128K token上下文长度，可处理长文档和多张图片
++   长上下文支持：`128K` `token`上下文长度，可处理长文档和多张图片
 
-+   **应用场景丰富**：适合文档分析、图像描述、多模态问答等任务
++   应用场景丰富：适合文档分析、图像描述、多模态问答等任务
 
-#### 3. **部署友好性**
+#### 3. 部署友好性
 
-+   **AIStudio平台优化**：官方深度适配，提供一键下载和部署
++   `AIStudio`平台优化：官方深度适配，提供一键下载和部署
 
-+   **FastDeploy集成**：完整的推理加速和服务化支持
++   `FastDeploy`集成：完整的推理加速和服务化支持
 
-+   **开源生态**：PaddlePaddle生态系统，文档完善，社区活跃
++   开源生态：`PaddlePaddle`生态系统，文档完善，社区活跃
 
-#### 4. **实际应用价值**
+#### 4. 实际应用价值
 
-+   **企业级可用**：相比0.3B模型，理解能力和生成质量显著提升
++   企业级可用：相比`0.3B`模型，理解能力和生成质量显著提升
 
-+   **成本可控**：相比A47B系列，部署成本降低70%，运营成本降低60%
++   成本可控：相比`A47B`系列，部署成本降低70%，运营成本降低60%
 
-+   **扩展性强**：支持LoRA微调，可针对特定场景进行优化
++   扩展性强：支持`LoRA`微调，可针对特定场景进行优化
 
-#### 5. **技术先进性**
+#### 5. 技术先进性
 
-+   **MoE架构**：专家混合模型，激活参数仅为总参数的1/9，推理效率高
++   `MoE`架构：专家混合模型，激活参数仅为总参数的1/9，推理效率高
 
-+   **多模态对齐**：视觉和文本特征深度融合，理解能力接近GPT-4V
++   多模态对齐：视觉和文本特征深度融合，理解能力接近`GPT-4V`
 
-+   **中文优化**：针对中文场景深度优化，在中文多模态任务上表现优异
++   中文优化：针对中文场景深度优化，在中文多模态任务上表现优异
 
 #### 选择建议
 
@@ -223,11 +224,11 @@ graph **TD**
 
 **不推荐场景**：
 
-+   对推理延迟要求极高的实时系统（选择0.3B）
++   对推理延迟要求极高的实时系统（选择`0.3B`）
 
-+   预算充足且追求极致性能的场景（选择A47B）
++   预算充足且追求极致性能的场景（选择`A47B`）
 
-+   纯文本应用且对多模态无需求（选择21B-A3B）
++   纯文本应用且对多模态无需求（选择`21B-A3B`）
 
 ## 🚀 ERNIE-4.5-VL模型本地化部署方案
 
@@ -235,11 +236,11 @@ graph **TD**
 
 #### 硬件要求
 
-+   **GPU**：NVIDIA A100 80GB（支持单卡/多卡，推荐CUDA 11.8+）
++   `GPU`：`NVIDIA` `A100` 80GB（支持单卡/多卡，推荐`CUDA` 11.8+）
 
-+   **内存**：≥60GB RAM
++   内存：≥60GB `RAM`
 
-+   **存储**：≥60GB（模型约28GB，需预留日志/缓存空间）
++   存储：≥60GB（模型约28GB，需预留日志/缓存空间）
 
 #### 软件依赖
 
@@ -250,7 +251,7 @@ graph **TD**
 
 #### 环境验证
 
-#### ① 检查CUDA版本
+#### ① 检查`CUDA`版本
 
 ```
 !nvcc --version
@@ -262,7 +263,7 @@ Cuda compilation tools, release 12.6, V12.6.85
 Build cuda_12.6.r12.6/compiler.35059454_0
 ```
 
-#### ② 检查GPU信息
+#### ② 检查`GPU`信息
 
 ```
  检查GPU状态和显存
@@ -292,29 +293,39 @@ Tue Jul  8 01:25:28 2025
 
 #### ③ 常见环境问题排查
 
+
+
+# 检查PaddlePaddle GPU支持
+
+```python
+!python -c "import paddle; print('GPU可用:', paddle.is_compiled_with_cuda()); print('GPU设备数:', paddle.device.cuda.device_count())"
 ```
- 检查PaddlePaddle GPU支持
-!python -c &quot;import paddle; print(&#x27;GPU可用:&#x27;, paddle.is_compiled_with_cuda()); print(&#x27;GPU设备数:&#x27;, paddle.device.cuda.device_count())&quot;
 
 # 检查FastDeploy安装
-!python -c &quot;from fastdeploy import LLM, SamplingParams; print(&#x27;FastDeploy安装成功！&#x27;)&quot;
+
+```python
+!python -c "from fastdeploy import LLM, SamplingParams; print('FastDeploy安装成功！')"
+```
 
 # 检查OpenAI库版本
-!python -c &quot;import openai; print(&#x27;OpenAI库版本:&#x27;, openai.__version__)&quot;
+
+```python
+!python -c "import openai; print('OpenAI库版本:', openai.__version__)"
 ```
 
 ## 二、模型下载与目录结构
 
-#### 下载模型文件
+### 下载模型文件
 
-```
+```python
 %%capture
 # 使用AIStudio命令下载模型
 !aistudio download --model PaddlePaddle/ERNIE-4.5-VL-28B-A3B-Paddle --local_dir /home/aistudio/work/models
 ```
 
-```
-# 查看模型文件
+### 查看模型文件
+
+```bash
 !ls -l work/models
 total 57441133
 -rw-r--r-- 1 aistudio aistudio      11366 Jul  6 18:57 LICENSE
@@ -336,14 +347,14 @@ total 57441133
 -rw-r--r-- 1 aistudio aistudio 3877260800 Jul  6 18:57 model-00012-of-00012.safetensors
 -rw-r--r-- 1 aistudio aistudio     691887 Jul  6 18:56 model.safetensors.index.json
 -rw-r--r-- 1 aistudio aistudio        615 Jul  6 18:56 preprocessor_config.json
--rw-r--r-- 1 aistudio aistudio      62694 Jul  6 18:56 special_tokens_map.json
--rw-r--r-- 1 aistudio aistudio    1614362 Jul  6 18:56 tokenizer.model
 -rw-r--r-- 1 aistudio aistudio       3606 Jul  6 18:56 tokenizer_config.json
+-rw-r--r-- 1 aistudio aistudio    1614362 Jul  6 18:56 tokenizer.model
+-rw-r--r-- 1 aistudio aistudio      62694 Jul  6 18:56 special_tokens_map.json
 ```
 
-#### 目录结构
+### 目录结构
 
-```
+```text
 work/
 └── models/
     ├── LICENSE                           # 许可证文件
@@ -370,11 +381,11 @@ work/
     └── tokenizer_config.json             # 分词器配置文件
 ```
 
-#### 文件说明
+### 文件说明
 
 ## 三、启动服务（关键命令）
 
-```
+```bash
 python -m fastdeploy.entrypoints.openai.api_server \
        --model work/models \
        --port 8180 \
@@ -393,8 +404,8 @@ python -m fastdeploy.entrypoints.openai.api_server \
   warnings.warn(
 [2025-07-06 18:57:55,035] [    INFO] - loading configuration file work/models/preprocessor_config.json
 INFO     2025-07-06 18:57:58,188 5574  engine.py[line:206] Waitting worker processes ready...
-Loading Weights: 100%|████████████████████████| 100/100 [01:17&lt;00:00,  1.30it/s]
-Loading Layers: 100%|█████████████████████████| 100/100 [00:07&lt;00:00, 13.31it/s]
+Loading Weights: 100%|████████████████████████| 100/100 [01:17<00:00,  1.30it/s]
+Loading Layers: 100%|█████████████████████████| 100/100 [00:07<00:00, 13.31it/s]
 INFO     2025-07-06 18:59:35,857 5574  engine.py[line:276] Worker processes are launched with 119.6253821849823 seconds.
 INFO     2025-07-06 18:59:35,857 5574  api_server.py[line:91] Launching metrics service at http://0.0.0.0:8181/metrics
 INFO     2025-07-06 18:59:35,857 5574  api_server.py[line:94] Launching chat completion service at http://0.0.0.0:8180/v1/chat/completions
@@ -412,16 +423,15 @@ INFO:     Uvicorn running on http://0.0.0.0:8180 (Press CTRL+C to quit)
 
 ### 服务验证
 
-```
+```bash
 # 检查模型是否正常加载
 curl http://localhost:8180/v1/models
 
 # 预期输出（包含模型ID）
-{&quot;data&quot;:[{&quot;id&quot;:&quot;ernie-4.5-vl-28b-a3b-paddle&quot;,&quot;object&quot;:&quot;model&quot;}]}
+{"data":[{"id":"ernie-4.5-vl-28b-a3b-paddle","object":"model"}]}
 ```
 
 ## 功能展示与效果
-
 
 ![](img/587bca30c6632d45c34dace84bf58ac8.png)
 
@@ -509,21 +519,21 @@ curl http://localhost:8180/v1/models
 
 ## 四、模型调用示例
 
-#### OpenAI库调用方式
+### OpenAI库调用方式
 
 #### ① 文本生成
 
-```
-**import**** op**enai
+```python
+import openai
 
-h**os**t = **&quot;0**.0.0.0&quot;
-port = &quot;8180&quot;
-client = openai.Client(base_url=f&quot;http://{host}:{port}/v1&quot;, api_key=&quot;null&quot;)
+host = "0.0.0.0"
+port = "8180"
+client = openai.Client(base_url=f"http://{host}:{port}/v1", api_key="null")
 
 response = client.chat.completions.create(
-    model=&quot;null&quot;,
+    model="null",
     messages=[
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你是Aistudio和文心大模型开发的智能助手，请介绍一下你自己.&quot;}
+        {"role": "user", "content": "你是Aistudio和文心大模型开发的智能助手，请介绍一下你自己."}
     ],
     stream=True,
 )
@@ -534,34 +544,40 @@ for chunk in response:
 
 #### ② 图像描述生成
 
+
+
+# 大模型API调用指南
+
+## OpenAI SDK 调用方式
+
 ```
-**import**** opena****i
-i**m**port base64
-**
-def** enc****od**e_image(**image_****pat**h):
-   ** w**ith **op**en(image_path, **&quot;rb**&quot;) as image_file:
-        return base64.b64encode(image_file.read()).decode(&#x27;utf-8&#x27;)
+import openai
+import base64
+
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode('utf-8')
 
 client = openai.Client(
-    base_url=&quot;http://0.0.0.0:8180/v1&quot;,
-    api_key=&quot;null&quot;
+    base_url="http://0.0.0.0:8180/v1",
+    api_key="null"
 )
 
 response = client.chat.completions.create(
-    model=&quot;null&quot;,
+    model="null",
     messages=[
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
+            "role": "user",
+            "content": [
                 {
-                    &quot;type&quot;: &quot;image_url&quot;,
-                    &quot;image_url&quot;: {
-                        &quot;url&quot;: f&quot;data:image/jpeg;base64,{encode_image(&#x27;1.jpg&#x27;)}&quot;
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/jpeg;base64,{encode_image('1.jpg')}"
                     }
                 },
                 {
-                    &quot;type&quot;: &quot;text&quot;,
-                    &quot;text&quot;: &quot;生成这张图片的描述&quot;
+                    "type": "text",
+                    "text": "生成这张图片的描述"
                 }
             ]
         }
@@ -569,110 +585,110 @@ response = client.chat.completions.create(
     stream=True,
 )
 
-print(&quot;图片描述：&quot;, end=&#x27;&#x27;, flush=True)
+print("图片描述：", end='', flush=True)
 for chunk in response:
     if chunk.choices and chunk.choices[0].delta.content:
-        print(chunk.choices[0].delta.content, end=&#x27;&#x27;, flush=True)
+        print(chunk.choices[0].delta.content, end='', flush=True)
 print()
 ```
 
-#### requests库调用方式
+## `requests` 库调用方式
 
 ```
-**import**** reque****sts**
-impor**t **json**
+import requests
+import json
 
-**url = &quot;h**tt**p://localhos**t:8180/v**1/chat/c**omp**letions&quot;
-hea**de**rs = {&quot;Cont**en**t-Type**&quot;: ****&quot;a**pplicati**on/jso****n&quot;**}
+url = "http://localhost:8180/v1/chat/completions"
+headers = {"Content-Type": "application/json"}
 payload = {
-    &quot;model&quot;: &quot;null&quot;,
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你是Aistudio和文心大模型开发的智能助手，请介绍一下你自己.&quot;}
+    "model": "null",
+    "messages": [
+        {"role": "user", "content": "你是Aistudio和文心大模型开发的智能助手，请介绍一下你自己."}
     ],
-    &quot;stream&quot;: True
+    "stream": True
 }
 
 response = requests.post(url, headers=headers, json=payload, stream=True)
 
 for line in response.iter_lines():
     if line:
-        line = line.decode(&#x27;utf-8&#x27;).replace(&#x27;data: &#x27;, &#x27;&#x27;)
+        line = line.decode('utf-8').replace('data: ', '')
         
-        if line.strip() == &#x27;[DONE]&#x27;:
+        if line.strip() == '[DONE]':
             continue
         try:
             data = json.loads(line)
             
-            if &#x27;choices&#x27; in data and len(data[&#x27;choices&#x27;]) &gt; 0:
-                delta = data[&#x27;choices&#x27;][0].get(&#x27;delta&#x27;, {})
-                content = delta.get(&#x27;content&#x27;, &#x27;&#x27;)
+            if 'choices' in data and len(data['choices']) > 0:
+                delta = data['choices'][0].get('delta', {})
+                content = delta.get('content', '')
                 if content:
-                    print(content, end=&#x27;&#x27;, flush=True)
+                    print(content, end='', flush=True)
         except json.JSONDecodeError as e:
-            print(f&quot;Error decoding line: {line}&quot;)
-            print(f&quot;Error: {e}&quot;)
+            print(f"Error decoding line: {line}")
+            print(f"Error: {e}")
 
 print()
 ```
 
-#### ② 图像描述生成
+## 图像描述生成
 
 ```
-**import**** reque****sts
-im****por**t** json
-import** bas**e64
-****
-d**ef encod**e_imag****e(i**mage_p**at**h):
-**  **  with o**pe**n(image_path**, &quot;rb&quot;) **as image**_fi**le:
-        **re**turn base64**.b**64enco**de(****im**age_file**.read(****))**.decode(&#x27;utf-8&#x27;)
+import requests
+import json
+import base64
 
-url = &quot;http://localhost:8180/v1/chat/completions&quot;
-headers = {&quot;Content-Type&quot;: &quot;application/json&quot;}
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode('utf-8')
+
+url = "http://localhost:8180/v1/chat/completions"
+headers = {"Content-Type": "application/json"}
 payload = {
-    &quot;model&quot;: &quot;null&quot;,
-    &quot;messages&quot;: [
+    "model": "null",
+    "messages": [
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: [
-                {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: f&quot;data:image/jpeg;base64,{encode_image(&#x27;1.jpg&#x27;)}&quot;}},
-                {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;生成图片描述&quot;}
+            "role": "user",
+            "content": [
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{encode_image('1.jpg')}"}},
+                {"type": "text", "text": "生成图片描述"}
             ]
         }
     ],
-    &quot;stream&quot;: True
+    "stream": True
 }
 
 response = requests.post(url, headers=headers, json=payload, stream=True)
 
 for line in response.iter_lines():
     if line:
-        line = line.decode(&#x27;utf-8&#x27;).replace(&#x27;data: &#x27;, &#x27;&#x27;)
+        line = line.decode('utf-8').replace('data: ', '')
         
-        if line.strip() == &#x27;[DONE]&#x27;:
+        if line.strip() == '[DONE]':
             continue
         try:
             data = json.loads(line)
             
-            if &#x27;choices&#x27; in data and len(data[&#x27;choices&#x27;]) &gt; 0:
-                delta = data[&#x27;choices&#x27;][0].get(&#x27;delta&#x27;, {})
-                content = delta.get(&#x27;content&#x27;, &#x27;&#x27;)
+            if 'choices' in data and len(data['choices']) > 0:
+                delta = data['choices'][0].get('delta', {})
+                content = delta.get('content', '')
                 if content:
-                    print(content, end=&#x27;&#x27;, flush=True)
+                    print(content, end='', flush=True)
         except json.JSONDecodeError as e:
-            print(f&quot;Error decoding line: {line}&quot;)
-            print(f&quot;Error: {e}&quot;)
+            print(f"Error decoding line: {line}")
+            print(f"Error: {e}")
 
 print()
 ```
 
-#### 调用参数说明
+## 调用参数说明
 
-#### 常用参数配置
+### 常用参数配置
 
 ```
 # 完整的调用参数示例
 response = client.chat.completions.create(
-    model=&quot;null&quot;,                    # 模型名称（固定值）
+    model="null",                    # 模型名称（固定值）
     messages=[...],                  # 消息列表
     stream=True,                     # 是否启用流式响应
     max_tokens=2048,                 # 最大生成token数
@@ -680,8 +696,8 @@ response = client.chat.completions.create(
     top_p=0.9,                      # 核采样参数(0.0-1.0)
     frequency_penalty=0.0,           # 频率惩罚(-2.0-2.0)
     presence_penalty=0.0,            # 存在惩罚(-2.0-2.0)
-    stop=[&quot;&lt;|endoftext|&gt;&quot;],         # 停止词列表
+    stop=["<|endoftext|>"],         # 停止词列表
 )
 ```
 
-#### 参数详细说明
+### 参数详细说明

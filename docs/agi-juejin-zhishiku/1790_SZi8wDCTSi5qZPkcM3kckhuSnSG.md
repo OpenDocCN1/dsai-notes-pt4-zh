@@ -1,3 +1,4 @@
+
 # 开源AI视频工具，你只需要当导演，HuggingFace工程师打造
 
 > 来源：[https://agijuejin.feishu.cn/docx/OuYkdFdaAoar0ZxrX5ncHSHwn2g](https://agijuejin.feishu.cn/docx/OuYkdFdaAoar0ZxrX5ncHSHwn2g)
@@ -26,13 +27,11 @@ Clapper 的作者 Julian Bilcke 是 HuggingFace 的一名 AI 前端工程师。�
 
 ![](img/c70b33ba29d609dfae4d986f61b018f9.png)
 
-+   GitHub 链接：https://github.com/jbilcke-hf/clapper
++ GitHub 链接：https://github.com/jbilcke-hf/clapper
++ HuggingFace 链接：https://huggingface.co/spaces/jbilcke-hf/clapper/tree/main
++ 试用网址：https://clapper.app/
 
-+   HuggingFace 链接：https://huggingface.co/spaces/jbilcke-hf/clapper/tree/main
-
-+   试用网址：https://clapper.app/
-
-**如何使用**
+## 如何使用
 
 既然是开源工具，我们主要看的当然是具体好不好用。
 
@@ -52,7 +51,7 @@ Clapper 正是一个集成了所有这些功能的一站式平台。
 
 剪映的素材轨道
 
-![](img/191361fa5639a517d99d80e0b23cf2de.png)
+![](img/191361fa5639a17d99d80e0b23cf2de.png)
 
 Clapper 的轨道
 

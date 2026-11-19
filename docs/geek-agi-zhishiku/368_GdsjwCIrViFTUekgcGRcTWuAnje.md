@@ -1,6 +1,7 @@
+
 # ChatGLM-6B模型结构组件源码阅读
 
-> 来源：[https://geekbang.feishu.cn/docx/ZSomdCVDwoE4qRxgZ2Gc6txcnaf](https://geekbang.feishu.cn/docx/ZSomdCVDwoE4qRxgZ2Gc6txcnaf)
+> 来源：`https://geekbang.feishu.cn/docx/ZSomdCVDwoE4qRxgZ2Gc6txcnaf`
 
 > 👨🏻 作者：余俊晖
 
@@ -10,24 +11,24 @@
 
 > ⏰ 收录时间：2024-05-28 17:09:42
 
-> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247484096&idx=1&sn=44fb68e4147c3e775d9dc57f0700e07f&chksm=cf9dd641f8ea5f57f0d6b5743038dda08bec6dbc7b9c81c7635945e6ed78bef6c083ba079e5d#rd)q.com/s?__biz=Mz...
+> 🔗 原文链接：`https://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247484096&idx=1&sn=44fb68e4147c3e775d9dc57f0700e07f&chksm=cf9dd641f8ea5f57f0d6b5743038dda08bec6dbc7b9c81c7635945e6ed78bef6c083ba079e5d#rd`
 
 ![](img/191a3508a299a253178cee3e9124f74c.png)
 
 关注作者👸号，获取更多AI知识
 
-## ** ****一、前言 **
+## 一、前言
 
 本文将介绍ChatGLM-6B的模型结构组件源码。
 
-代练链接：https://huggingface.co/THUDM/chatglm-6b/blob/main/modeling_chatglm.py
+代练链接：`https://huggingface.co/THUDM/chatglm-6b/blob/main/modeling_chatglm.py`
 
-## ** ****二、激活函数 **
+## 二、激活函数
 
 ```
 @torch.jit.script
 def gelu_impl(x):
-    &quot;&quot;&quot;OpenAI&#x27;s gelu implementation.&quot;&quot;&quot;
+    """OpenAI's gelu implementation."""
     return 0.5 * x * (1.0 + torch.tanh(0.7978845608028654 * x *
                                        (1.0 + 0.044715 * x * x)))
 
@@ -36,17 +37,17 @@ def gelu(x):
     return gelu_impl(x)
 ```
 
-## ** ****三、位置编码 **
+## 三、位置编码
 
-### ** 3.1、RoPE原理简介 **
+### 3.1、RoPE原理简介
 
 ChatGLM-6B的位置编码采用的旋转位置编码（详细推导过程见原文：ROPE），简单来说其目的就是构建一个包含相对位置信息的Attention矩阵，其公式如下：
 
-式中，  、  分别表示注意力机制中的query和key，  、  分别表示两个位置，  表示位置i处处理的矩阵，其中  的形式为：
+式中，  、  分别表示注意力机制中的`query`和`key`，  、  分别表示两个位置，  表示位置`i`处处理的矩阵，其中  的形式为：
 
 原作者提到，由于  非常稀疏，直接用矩阵乘法来实现会很浪费算力，推荐通过下述方式来实现RoPE：
 
-###  3.2、ChatGLM-6B中RoPE代码实现
+### 3.2、ChatGLM-6B中RoPE代码实现
 
 这里直接上代码阅读
 
@@ -61,7 +62,7 @@ class RotaryEmbedding(torch.nn.Module):
             self.inv_freq = torch.nn.Parameter(inv_freq)
             self.max_seq_len_cached = None
         else:
-            self.register_buffer(&#x27;inv_freq&#x27;, inv_freq)
+            self.register_buffer('inv_freq', inv_freq)
             self.max_seq_len_cached = None
             self.cos_cached = None
             self.sin_cached = None
@@ -74,12 +75,12 @@ class RotaryEmbedding(torch.nn.Module):
     def forward(self, x, seq_dim=1, seq_len=None):
         if seq_len is None:
             seq_len = x.shape[seq_dim]
-        if self.max_seq_len_cached is None or (seq_len &gt; self.max_seq_len_cached):
+        if self.max_seq_len_cached is None or (seq_len > self.max_seq_len_cached):
             self.max_seq_len_cached = None if self.learnable else seq_len
             # 在计算旋转嵌入之前，根据当前的嵌入维度和基数计算频率因子 inv_freq。将其转换为半精度数据类型（如果指定的 precision 为 bfloat16，则转换为单精度）。
             t = torch.arange(seq_len, device=x.device, dtype=self.inv_freq.dtype)
             # 使用 爱因斯坦求和函数 einsum 将 t 和 inv_freq 相乘，得到频率矩阵 freqs。
-            freqs = torch.einsum(&#x27;i,j-&gt;ij&#x27;, t, self.inv_freq)
+            freqs = torch.einsum('i,j->ij', t, self.inv_freq)
             # 通过在频率矩阵 freqs 中进行重复和拼接操作，生成旋转嵌入矩阵 emb，其维度为 [seq_len, 2 * dim]。
             emb = torch.cat((freqs, freqs), dim=-1).to(x.device)
             if self.precision == torch.bfloat16:
@@ -98,9 +99,9 @@ class RotaryEmbedding(torch.nn.Module):
         return self.cos_cached[:seq_len, ...], self.sin_cached[:seq_len, ...]
 ```
 
-## ** ****四、注意力层 **
+## 四、注意力层
 
-### ** 4.1、2D位置编码 **
+### 4.1、2D位置编码
 
 ChatGLM-6B代码中这一层采用的位置编码是GLM的中提出的2D位置编码，详细原理见原文：GLM: General Language Model Pretraining with Autoregressive Blank Infilling，其原理图如下图：
 
@@ -108,11 +109,13 @@ ChatGLM-6B代码中这一层采用的位置编码是GLM的中提出的2D位置�
 
 输入的序列是  ，片段  和片段  被随机MASK，原始的输入序列则变为  ，如上图(a)和(b)所示。将三个片段拼接得到模型的输入 ，模型的输出则是被遮蔽掉的片段，如上图(c)所示。这里使用了2种位置编码：第一种编码为整个输入嵌入位置信息，能够表示MASK片段在原始输入中的位置;第二种位置编码则是为MASK片段内的tokens输入位置信息。
 
-### ** 4.2、注意力机制 **
+### 4.2、注意力机制
 
-ChatGLM-6B相比标准的自注意力机制在Q和K中注入了RoPE位置信息。
+ChatGLM-6B相比标准的自注意力机制在`Q`和`K`中注入了RoPE位置信息。
 
-+   标准自注意力机制 **attention_fn **：
++   标准自注意力机制 `attention_fn`：
+
+
 
 ```
 def attention_fn(
@@ -227,10 +230,11 @@ def attention_fn(
     return outputs
 ```
 
-+   SelfAttention的目的是为了捕捉序列中的位置信息，应用RoPE将位置信息注入Q和K。
++ `SelfAttention` 的目的是为了捕捉序列中的位置信息，应用 `RoPE` 将位置信息注入 `Q` 和 `K`。
 
-```
-class SelfAttention(torch.nn.Module):
+
+
+```class SelfAttention(torch.nn.Module):
     def __init__(self, hidden_size, num_attention_heads,
                  layer_id, hidden_size_per_attention_head=None, bias=True,
                  params_dtype=torch.float, position_encoding_2d=True):
@@ -284,13 +288,13 @@ class SelfAttention(torch.nn.Module):
 
     def split_tensor_along_last_dim(self, tensor, num_partitions,
                                     contiguous_split_chunks=False):
-        &quot;&quot;&quot;Split a tensor along its last dimension.
+        """Split a tensor along its last dimension.
         Arguments:
             tensor: input tensor.
             num_partitions: number of partitions to split the tensor
             contiguous_split_chunks: If True, make each chunk contiguous
                                     in memory.
-        &quot;&quot;&quot;
+        """
         # Get the size and dimension.
         last_dim = tensor.dim() - 1
         last_dim_size = tensor.size()[last_dim] // num_partitions
@@ -312,15 +316,15 @@ class SelfAttention(torch.nn.Module):
             use_cache: bool = False,
             output_attentions: bool = False,
     ):
-        &quot;&quot;&quot;
+        """
         hidden_states: [seq_len, batch, hidden_size]
         attention_mask: [(1, 1), seq_len, seq_len]
-        &quot;&quot;&quot;
+        """
 
         # [seq_len, batch, 3 * hidden_size]
         mixed_raw_layer = self.query_key_value(hidden_states)
 
-        # [seq_len, batch, 3 * hidden_size] --&gt; [seq_len, batch, num_attention_heads, 3 * hidden_size_per_attention_head]
+        # [seq_len, batch, 3 * hidden_size] --> [seq_len, batch, num_attention_heads, 3 * hidden_size_per_attention_head]
         new_tensor_shape = mixed_raw_layer.size()[:-1] + (
             self.num_attention_heads_per_partition,
             3 * self.hidden_size_per_attention_head,
@@ -371,21 +375,19 @@ class SelfAttention(torch.nn.Module):
             outputs += (attention_probs,)
 
         return outputs  # output, present, attention_probs
-
 ```
 
-+   ** ****五、GLU层 **
+## 五、GLU层
 
-+   根据代码，GLU形式化表示为：
+根据代码，`GLU`形式化表示为：
 
-```
-class GEGLU(torch.nn.Module):
+```class GEGLU(torch.nn.Module):
     def __init__(self):
         super().__init__()
         self.activation_fn = F.gelu
 
     def forward(self, x):
-        # dim=-1 breaks in jit for pt&lt;1.10
+        # dim=-1 breaks in jit for pt<1.10
         x1, x2 = x.chunk(2, dim=(x.ndim - 1))
         return x1 * self.activation_fn(x2)
 
@@ -419,9 +421,9 @@ class GLU(torch.nn.Module):
         )
 
     def forward(self, hidden_states):
-        &quot;&quot;&quot;
+        """
         hidden_states: [seq_len, batch, hidden_size]
-        &quot;&quot;&quot;
+        """
 
         # [seq_len, batch, inner_hidden_size]
         intermediate_parallel = self.dense_h_to_4h(hidden_states)
@@ -433,11 +435,13 @@ class GLU(torch.nn.Module):
         return output
 ```
 
-+   ** ****六、GLMBlock **
+## 六、GLMBlock
 
-根据代码，GLMBlock由Layer Norm、Self Attention、Layer Norm和GLU模块构成。
+根据代码，`GLMBlock`由`Layer Norm`、`Self Attention`、`Layer Norm`和`GLU`模块构成。
 
 ![](img/262c0152faddc9b5fc001019e0b63504.png)
+
+
 
 ```
 class GLMBlock(torch.nn.Module):
@@ -500,10 +504,10 @@ class GLMBlock(torch.nn.Module):
             use_cache: bool = False,
             output_attentions: bool = False,
     ):
-        &quot;&quot;&quot;
+        """
         hidden_states: [seq_len, batch, hidden_size]
         attention_mask: [(1, 1), seq_len, seq_len]
-        &quot;&quot;&quot;
+        """
 
         # 输入进行Layer Norm
         # [seq_len, batch, hidden_size]
@@ -545,13 +549,13 @@ class GLMBlock(torch.nn.Module):
         return outputs  # hidden_states, present, attentions
 ```
 
-## ** **七、ChatGLMPreTrainedModel
+## 七、`ChatGLMPreTrainedModel`
 
-这一块主要看看其中的 **MASK **和 **Position_ids**
+这一块主要看看其中的 `MASK` 和 `Position_ids`
 
-###  7.1、ChatGLM-6B的Mask
+### 7.1、ChatGLM-6B的Mask
 
-ChatGLM-6B采用prefix**-LM的Ma**sk，其对于输入的前缀使用** 双向注意力 ，对于后续**的生成部分则是 Causal Mask 。
+ChatGLM-6B 采用 prefix-LM 的 Mask，其对于输入的前缀使用双向注意力，对于后续的生成部分则是 Causal Mask 。
 
 ![](img/99e85a345f5bce4206f8c2569776b95c.png)
 
@@ -567,19 +571,19 @@ def get_masks(self, input_ids, device):
     for i, context_length in enumerate(context_lengths):
         attention_mask[i, :, :context_length] = 1
     attention_mask.unsqueeze_(1)
-    attention_mask = (attention_mask &lt; 0.5).bool()
+    attention_mask = (attention_mask < 0.5).bool()
         
     return attention_mask
 ```
 
-###  7.2、ChatGLM-6B的Position_ids
+### 7.2、ChatGLM-6B的`Position_ids`
 
 ```
 def get_position_ids(self, input_ids, mask_positions, device, use_gmasks=None):
-    &quot;&quot;&quot;
+    """
     input_ids: [batch_size, seq_length]
     mask_positions: [batch_size]，由于GLM系列中会使用[Mask]或[gMask]标志，mask_positions就是指这些标注的具体位置
-    &quot;&quot;&quot;
+    """
     batch_size, seq_length = input_ids.shape
     if use_gmasks is None:
         use_gmasks = [False] * batch_size
@@ -611,13 +615,15 @@ def get_position_ids(self, input_ids, mask_positions, device, use_gmasks=None):
     return position_ids
 ```
 
-## ** ****八、ChatGLMModel **
+## 八、`ChatGLMModel`
 
 这一块主要是模型的各部件的组合结构，直接看源码：
 
-```
+
+
+```python
 class ChatGLMModel(ChatGLMPreTrainedModel):
- def __init__(self, config: ChatGLMConfig, empty_init=True):
+    def __init__(self, config: ChatGLMConfig, empty_init=True):
         super().__init__(config)
         if empty_init:
             init_method = skip_init
@@ -666,10 +672,10 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
         # Final layer norm before output.
         self.final_layernorm = LayerNorm(self.hidden_size, eps=self.layernorm_epsilon)
 
-        &quot;&quot;&quot;
+        """
         pre_seq_len 为prompt部分长度，这部分仅编码，无反向传播
 
-        &quot;&quot;&quot;
+        """
         if self.pre_seq_len is not None:
             for param in self.parameters():
                 param.requires_grad = False
@@ -677,12 +683,11 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
             self.prefix_encoder = PrefixEncoder(config)
             self.dropout = torch.nn.Dropout(0.1)
 
-
     def get_prompt(self, batch_size, device, dtype=torch.half):
-        &quot;&quot;&quot;
+        """
         prompt 编码
-        
-        &quot;&quot;&quot;
+
+        """
         prefix_tokens = self.prefix_tokens.unsqueeze(0).expand(batch_size, -1).to(device)
         past_key_values = self.prefix_encoder(prefix_tokens).type(dtype)
         past_key_values = past_key_values.view(
@@ -698,32 +703,33 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
         # past_key_values = [(v[0], v[1]) for v in past_key_values]
         return past_key_values
 
-
- def forward(
-            self,
-            input_ids: Optional[torch.LongTensor] = None,
-            position_ids: Optional[torch.LongTensor] = None,
-            attention_mask: Optional[torch.Tensor] = None,
-            past_key_values: Optional[Tuple[Tuple[torch.Tensor, torch.Tensor], ...]] = None,
-            inputs_embeds: Optional[torch.LongTensor] = None,
-            use_cache: Optional[bool] = None,
-            output_attentions: Optional[bool] = None,
-            output_hidden_states: Optional[bool] = None,
-            return_dict: Optional[bool] = None,
-    ) -&gt; Union[Tuple[torch.Tensor, ...], BaseModelOutputWithPast]:
+    def forward(
+        self,
+        input_ids: Optional[torch.LongTensor] = None,
+        position_ids: Optional[torch.LongTensor] = None,
+        attention_mask: Optional[torch.Tensor] = None,
+        past_key_values: Optional[Tuple[Tuple[torch.Tensor, torch.Tensor], ...]] = None,
+        inputs_embeds: Optional[torch.LongTensor] = None,
+        use_cache: Optional[bool] = None,
+        output_attentions: Optional[bool] = None,
+        output_hidden_states: Optional[bool] = None,
+        return_dict: Optional[bool] = None,
+    ) -> Union[Tuple[torch.Tensor, ...], BaseModelOutputWithPast]:
         .....
-        &quot;&quot;&quot;
- past_key_values机制是重要的机制，其可以防止模型在文本生成任务中重新计算上一次迭代
-  中已经计算好的上下文的值，大大提高了模型在文本生成任务中的计算效率。但要特别注意的是，
-    在第一次迭代时由于不存在上一次迭代返回的past_key_values值，因此第一次迭代时
-    past_key_values值为None。
-    past_key_values 中每个元素的dim :
-    num_layers * seq_len * batch_size * nh * hidden_size_per_head
-        &quot;&quot;&quot;
+        """
+        past_key_values机制是重要的机制，其可以防止模型在文本生成任务中重新计算上一次迭代
+        中已经计算好的上下文的值，大大提高了模型在文本生成任务中的计算效率。但要特别注意的是，
+        在第一次迭代时由于不存在上一次迭代返回的past_key_values值，因此第一次迭代时
+        past_key_values值为None。
+        past_key_values 中每个元素的dim :
+        num_layers * seq_len * batch_size * nh * hidden_size_per_head
+        """
         if past_key_values is None:
             if self.pre_seq_len is not None:
-                past_key_values = self.get_prompt(batch_size=input_ids.shape[0], device=input_ids.device,
-                                                  dtype=inputs_embeds.dtype)
+                past_key_values = self.get_prompt(
+                    batch_size=input_ids.shape[0], device=input_ids.device,
+                    dtype=inputs_embeds.dtype
+                )
             else:
                 past_key_values = tuple([None] * len(self.layers))
 
@@ -733,26 +739,25 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
                     device=input_ids.device
                 )
 
-
             if position_ids is None:
-    &quot;&quot;&quot;
-    如果只有MASK无gMASK，则mask_positions 为第一个MASK的起始位置，
-    如果有gMASK, 则mask_positions 为第一个gMASK的起始位置
-    e.g.
-    gMASK = 130001
-    MASK = 130000
-    seqs = [[11,22,MASK,33,MASK]]
-    --&gt; mask_positions:[2] use_gmask = [False]
+                """
+                如果只有MASK无gMASK，则mask_positions 为第一个MASK的起始位置，
+                如果有gMASK, 则mask_positions 为第一个gMASK的起始位置
+                e.g.
+                gMASK = 130001
+                MASK = 130000
+                seqs = [[11,22,MASK,33,MASK]]
+                --> mask_positions:[2] use_gmask = [False]
 
-    gMASK = 130001
-    MASK = 130000
-    seqs = seqs = [[11,22,MASK,33,MASK, gMASK, 55, 66, gMASK, 77]]
-    --&gt; mask_positions:[5] use_gmask = [True]
-    
-    把位置id结合mask位置信息由get_position_ids计算（为父类ChatGLMPreTrainedModel的方法）
-    在使用2d position coding 时，position_ids dim = batch_size * 2 * seq_length 
-    第二维包含 position_id 和 block_position_id 
-    &quot;&quot;&quot;
+                gMASK = 130001
+                MASK = 130000
+                seqs = seqs = [[11,22,MASK,33,MASK, gMASK, 55, 66, gMASK, 77]]
+                --> mask_positions:[5] use_gmask = [True]
+
+                把位置id结合mask位置信息由get_position_ids计算（为父类ChatGLMPreTrainedModel的方法）
+                在使用2d position coding 时，position_ids dim = batch_size * 2 * seq_length 
+                第二维包含 position_id 和 block_position_id 
+                """
                 MASK, gMASK = self.config.mask_token_id, self.config.gmask_token_id
                 seqs = input_ids.tolist()
 
@@ -771,15 +776,16 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
                 )
 
         if self.pre_seq_len is not None and attention_mask is not None:
-            prefix_attention_mask = torch.ones(batch_size, 1, input_ids.size(-1), self.pre_seq_len).to(
-                attention_mask.device)
-            prefix_attention_mask = (prefix_attention_mask &lt; 0.5).bool()
+            prefix_attention_mask = torch.ones(
+                batch_size, 1, input_ids.size(-1), self.pre_seq_len
+            ).to(attention_mask.device)
+            prefix_attention_mask = (prefix_attention_mask < 0.5).bool()
             attention_mask = torch.cat((prefix_attention_mask, attention_mask), dim=3)
 
-        &quot;&quot;&quot;
+        """
         输入的embedding在这里进行了转置 
-        batch_size * seq_len * hidden_size -&gt; seq_len * batch_size * hidden_size
-        &quot;&quot;&quot;
+        batch_size * seq_len * hidden_size -> seq_len * batch_size * hidden_size
+        """
         # [seq_len, batch, hidden_size]
         hidden_states = inputs_embeds.transpose(0, 1)
 
@@ -792,8 +798,7 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
         else:
             attention_mask = attention_mask.to(hidden_states.device)
 
-            
-  for i, layer in enumerate(self.layers):
+        for i, layer in enumerate(self.layers):
 
             if output_hidden_states:
                 all_hidden_states = all_hidden_states + (hidden_states,)
@@ -827,7 +832,9 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
                 presents = presents + (layer_ret[1],)
 
             if output_attentions:
-                all_self_attentions = all_self_attentions + (layer_ret[2 if use_cache else 1],)
+                all_self_attentions = all_self_attentions + (
+                    layer_ret[2 if use_cache else 1]
+                )
 
         # Final layer norm.
         hidden_states = self.final_layernorm(hidden_states)
@@ -836,11 +843,13 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
             all_hidden_states = all_hidden_states + (hidden_states,)
 
         if not return_dict:
-            return tuple(v for v in [hidden_states, presents, all_hidden_states, all_self_attentions] if v is not None)
+            return tuple(
+                v for v in [hidden_states, presents, all_hidden_states, all_self_attentions] if v is not None
+            )
 
-&quot;&quot;&quot;
- 经过多个glm block堆叠，最后通过一个layernorm
-&quot;&quot;&quot;
+        """
+        经过多个glm block堆叠，最后通过一个layernorm
+        """
         return BaseModelOutputWithPast(
             last_hidden_state=hidden_states,
             past_key_values=presents,
@@ -849,16 +858,18 @@ class ChatGLMModel(ChatGLMPreTrainedModel):
         )
 ```
 
+
+
 如有不详细之处，还望一起交流学习。
 
-## ** ****参考文献 **
+## 参考文献
 
-1.  GLM: General Language Model Pretraining with Autoregressive Blank Infilling)
+1. GLM: General Language Model Pretraining with Autoregressive Blank Infilling)
 
-1.  modeling_chatglm.py · THUDM/chatglm-6b at main (huggingface.co)
+1. `modeling_chatglm.py` · `THUDM/chatglm-6b` at `main` (`huggingface.co`)
 
-1.  Transformer升级之路：2、博采众长的旋转式位置编码 - 科学空间|Scientific Spaces (kexue.fm)
+1. Transformer升级之路：2、博采众长的旋转式位置编码 - 科学空间|Scientific Spaces (`kexue.fm`)
 
-## ** ****往期相关 **
+## 往期相关
 
-[浅尝prompt咒语设计：one-sh](http://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247484023&idx=1&sn=7dbbf3c41e78ec000f20a964f494a98c&chksm=cf9dd6f6f8ea5fe07fcc6844d66003ebe74f802b8aa287352387b080f26c7c75d35bb805ea89&scene=21#wechat_redirect)ot微调chatglm-6b实践信息抽取
+[浅尝prompt咒语设计：one-shot微调`chatglm-6b`实践信息抽取](http://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247484023&idx=1&sn=7dbbf3c41e78ec000f20a964f494a98c&chksm=cf9dd6f6f8ea5fe07fcc6844d66003ebe74f802b8aa287352387b080f26c7c75d35bb805ea89&scene=21#wechat_redirect)

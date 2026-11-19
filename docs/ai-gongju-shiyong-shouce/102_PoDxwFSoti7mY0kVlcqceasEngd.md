@@ -1,3 +1,4 @@
+
 # NO.06 知识付费变现起号测试
 
 > 来源：[https://my.feishu.cn/docx/SsXhdja86oEpxwxsHiKcrFuxnTd](https://my.feishu.cn/docx/SsXhdja86oEpxwxsHiKcrFuxnTd)
@@ -7,9 +8,6 @@
 目前主流自媒体渠道：📕、抖音、视频号
 
 📕主要人群是18-25岁年轻女性用户（实际起步年龄我预估在13左右，但是平台只会显示18+），我通过用不同内容不断测试，得出大概人群标签为以下：
-
-
-
 
 ![](img/76cad1fd36b2a92052b7d14aed673899.png)
 

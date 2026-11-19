@@ -1,3 +1,4 @@
+
 # Vidu Q2全新玩法
 
 > 来源：[https://aiwarts101.feishu.cn/docx/IFH7d1RpFotbB9xl1IYcwxDinDh](https://aiwarts101.feishu.cn/docx/IFH7d1RpFotbB9xl1IYcwxDinDh)
@@ -11,7 +12,6 @@ https://www.vidu.cn/
 ---
 
 > 一位年轻女子站在雨中，1-2s的时候微微一笑强颜欢笑的左右转头向后看了看，3-4s嘴角扁扁下弯委屈，5-6s低头难过，7-8s抬头崩溃大哭，最后跪倒在地。
-
 
 [vidu-video-2963882081871125 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZTk8bIccRoNYL6xyczacmkgyn8e)
 
@@ -40,7 +40,6 @@ https://www.vidu.cn/
 [vidu-video-2963917777351539.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RTiMbpHbeoKUXZxjXi3cVr3gnGe)
 
 > 动画风格，幼年的狮子王辛巴在辽阔草原的边缘，凝望着落日，眼神先是充满好奇与向往，随后逐渐流露出对未知的迷茫与脆弱，全程无对白，仅靠眼神和耳朵的细微颤动，镜头逐渐旋转推近聚焦到狮子侧脸的表情特写
-
 
 [vidu-video-2963927306144948.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NTuSbehFRodFKFxPVgrcwB13nXg)
 

@@ -1,3 +1,4 @@
+
 # 小说写作提示词
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/GlobdAC3BoZQ5mxuM2rc9SvQnHb](https://xodnytdcaw.feishu.cn/docx/GlobdAC3BoZQ5mxuM2rc9SvQnHb)
@@ -49,7 +50,6 @@
    - 选择七宗罪中的哪一种
    - 结尾如何收, 才能给人留出想象空间
 3. 输出: 综合以上分析过程, 输出小说
-
 
 ## Initialization:
 你好，我是一位小说家，我擅长在一个窄小的场景中铺陈故事。请介绍下你想听的故事场景吧.

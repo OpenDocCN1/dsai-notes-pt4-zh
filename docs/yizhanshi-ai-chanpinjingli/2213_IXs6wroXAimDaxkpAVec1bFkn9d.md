@@ -1,10 +1,11 @@
+
 # 9🈷️24日
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/X1zjdG9kDoTZFSxo08gcr91CnXc](https://v11enp9ok1h.feishu.cn/docx/X1zjdG9kDoTZFSxo08gcr91CnXc)
 
 +   《[Vision Transforme在UI交互意图理解的异常检测方法](https://v11enp9ok1h.feishu.cn/wiki/ZscOw0hRui6vjDkpNPxcfGZEncd?from=from_copylink)》
 
-分类模型结构如下图所示，我们[利用Visi](https://huggingface.co/bert-base-chinese)on Transformer预训练模型提取图像特征，使用中文bert预训练模型提取文本特征，同时把渲染树元素属性进行特征提取后输入模型，综合判断元素类别：
+分类模型结构如下图所示，我们利用[Vision Transformer](https://huggingface.co/bert-base-chinese)预训练模型提取图像特征，使用中文bert预训练模型提取文本特征，同时把渲染树元素属性进行特征提取后输入模型，综合判断元素类别：
 
 ![](img/a7cefd79e7f9401fc093b0b5fcb1c117.png)
 

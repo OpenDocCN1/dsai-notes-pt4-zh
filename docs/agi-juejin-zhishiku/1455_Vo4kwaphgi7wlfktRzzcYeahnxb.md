@@ -1,10 +1,11 @@
+
 # AI Agent（或者LLM Agent）深度讲解——组成、方法、案例及展望
 
 > 来源：[https://agijuejin.feishu.cn/docx/JHeYdkOzboVs81x3pb8ch1N8nkd](https://agijuejin.feishu.cn/docx/JHeYdkOzboVs81x3pb8ch1N8nkd)
 
 > 作者：北方的郎
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/676544930)hihu.com/p/676544...
+> 原文：[https://zhuanlan.zhihu.com/p/676544930](https://zhuanlan.zhihu.com/p/676544930)
 
 前一段时间，比尔.盖茨在他的博客上发表了：《AI is about to completely change how you use computers》比尔·盖茨在这篇文章中探讨了AI Agent对我们未来生活的巨大影响。他谈到了AI Agent在医疗保健、教育、生产力、娱乐和购物等领域的作用。这些Agent将为人们提供更个性化的服务，帮助解决各种问题并提供支持，从辅助医生和教师工作到处理日常任务，甚至影响我们与朋友和家人的互动方式。AI Agent正在以各种方式迅速进入我们的生活，将在未来几年内彻底改变我们的生活方式。
 
@@ -18,29 +19,29 @@ AI Agent是一种超越简单文本生成的人工智能系统。它使用大型
 
 ### 1.2 AI Agent 的主要组成部分：
 
-在LLM赋能的自主agent系统中(LLM Agent)，LLM充当agent大脑的角色，并与若干关键组件协作 。
+在LLM赋能的自主agent系统中(LLM Agent)，LLM充当agent大脑的角色，并与若干关键组件协作。
 
 ![](img/4b6fcb1548a1c0b935f0ea7cb33b4ab8.png)
 
-规划（planning）
+#### 规划（planning）
 
-+   子目标分解：agent将大任务拆分为更小的可管理的子目标，使得可以有效处理复杂任务。
++ 子目标分解：agent将大任务拆分为更小的可管理的子目标，使得可以有效处理复杂任务。
 
-+   反思与完善：agent对历史动作可以自我批评和自我反思，从错误中学习并在后续步骤里完善，从而改善最终结果的质量。
++ 反思与完善：agent对历史动作可以自我批评和自我反思，从错误中学习并在后续步骤里完善，从而改善最终结果的质量。
 
-记忆（Memory）
+#### 记忆（Memory）
 
-+   短期记忆：上下文学习即是利用模型的短期记忆学习
++ 短期记忆：上下文学习即是利用模型的短期记忆学习
 
-+   长期记忆：为agent提供保留和召回长期信息的能力，通常利用外部向量存储和检索实现
++ 长期记忆：为agent提供保留和召回长期信息的能力，通常利用外部向量存储和检索实现
 
-工具使用（tool use）
+#### 工具使用（tool use）
 
-+   对模型权重丢失的信息，agent学习调用外部API获取额外信息，包括当前信息、代码执行能力、专有信息源的访问等等
++ 对模型权重丢失的信息，agent学习调用外部API获取额外信息，包括当前信息、代码执行能力、专有信息源的访问等等
 
-行动（Action）
+#### 行动（Action）
 
-+   行动模块是智能体实际执行决定或响应的部分。面对不同的任务，智能体系统有一个完整的行动策略集，在决策时可以选择需要执行的行动，比如广为熟知的记忆检索、推理、学习、编程等。
++ 行动模块是智能体实际执行决定或响应的部分。面对不同的任务，智能体系统有一个完整的行动策略集，在决策时可以选择需要执行的行动，比如广为熟知的记忆检索、推理、学习、编程等。
 
 ## 2 AI Agent的意义
 
@@ -78,7 +79,7 @@ AI Agent范式将原本由人类主导的功能开发，逐渐迁移为以AI为�
 
 可以说是LLM Agent的鼻祖了。Auto-GPT是一个实验性的开源应用程序，展示了GPT-4语言模型的能力。这个程序由GPT-4驱动，将LLM“思想”连接在一起，以自主地实现您设置的任何目标。作为GPT-4完全自主运行的最早示例之一，Auto-GPT突破了人工智能的极限，将AI进程推向了新高度 -- 自主人工智能。
 
-[https:// github.com/Significan](https://link.zhihu.com/?target=https%3A//github.com/Significant-Gravitas/AutoGPT)t- Gravitas/AutoGPT
+[https://github.com/Significant-Gravitas/AutoGPT](https://link.zhihu.com/?target=https%3A//github.com/Significant-Gravitas/AutoGPT)
 
 ![](img/5531da52a7c64ed0f5eb9ff9c406cca2.png)
 
@@ -90,7 +91,7 @@ AI Agent范式将原本由人类主导的功能开发，逐渐迁移为以AI为�
 
 微软发布的AutoGen agent是可定制的、可对话的，并能以各种模式运行，这些模式采用 LLM、人类输入和工具的组合。使用 AutoGen，开发人员还可以灵活定义agent交互行为。自然语言和计算机代码都可用于为不同的应用编程灵活的对话模式。AutoGen 可作为一个通用框架，构建具有不同复杂性和 LLM 能力的各种应用。实证研究证明了该框架在许多样本应用中的有效性，应用领域包括数学、编码、问答、运筹学、在线决策、娱乐等。
 
-[https:// github.com](https://link.zhihu.com/?target=https%3A//github.com/microsoft/autogen)/microsoft/au togen
+[https://github.com/microsoft/autogen](https://link.zhihu.com/?target=https%3A//github.com/microsoft/autogen)
 
 ![](img/a362bef1e8d757d44743ddaaa8cdcb6c.png)
 
@@ -100,7 +101,7 @@ AI Agent范式将原本由人类主导的功能开发，逐渐迁移为以AI为�
 
 清华大学 NLP 实验室联合面壁智能等科研机构研发的一个大模型驱动的全流程自动化软件开发框架。ChatDev (Chat-powered Software Development)。ChatDev 拟作一个由多智能体协作运营的虚拟软件公司，在人类“用户”指定一个具体的任务需求后，不同角色的智能体将进行交互式协同，以生产一个完整软件（包括源代码、环境依赖说明书、用户手册等）。这一技术为软件开发自动化提供了新的可能性，支持快捷高效且经济实惠的软件制作，未来将有效地将部分人力从传统软件开发的繁重劳动中解放出来。
 
-[Git](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/ChatDev)Hub - OpenBMB/ChatDev: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)
+[GitHub - OpenBMB/ChatDev: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/ChatDev)
 
 ![](img/f9171d44b427d1e1d0a66c7410b19701.png)
 
@@ -110,17 +111,17 @@ AI Agent范式将原本由人类主导的功能开发，逐渐迁移为以AI为�
 
 ### 3.4 XAgent
 
-[GitHub - OpenBMB/XAgent: An Auton](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/XAgent)omous LLM Agent for Complex Task Solving
+[GitHub - OpenBMB/XAgent: An Autonomous LLM Agent for Complex Task Solving](https://link.zhihu.com/?target=https%3A//github.com/OpenBMB/XAgent)
 
 ![](img/28e7ce463efd2b752d170c6c8a235c97.png)
 
-XAgent是面壁智能联合清华大学 NLP 实验室共同研发开源的基于LLM的自主智能体，可以自动解决各种任务。 它被设计为一个通用的智能体，可以应用于各种任务，终极目标是创建一个可以解决任何给定任务的超级智能体。换句话说，打造的是超级无敌的多边形战士，不是单独为某个任务设计的特定智能体。
+XAgent是面壁智能联合清华大学 NLP 实验室共同研发开源的基于LLM的自主智能体，可以自动解决各种任务。它被设计为一个通用的智能体，可以应用于各种任务，终极目标是创建一个可以解决任何给定任务的超级智能体。换句话说，打造的是超级无敌的多边形战士，不是单独为某个任务设计的特定智能体。
 
 ![](img/820c13eac6966c1dc3c4ae616932e435.png)
 
 ### 3.5 GPT-engineer
 
-[Git](https://link.zhihu.com/?target=https%3A//github.com/gpt-engineer-org/gpt-engineer)Hub - gpt-engineer-org/gpt-engineer: Specify what you want it to build, the AI asks for clarification, and then builds it.
+[GitHub - gpt-engineer-org/gpt-engineer: Specify what you want it to build, the AI asks for clarification, and then builds it.](https://link.zhihu.com/?target=https%3A//github.com/gpt-engineer-org/gpt-engineer)
 
 ![](img/f1e22288abaa85562e997bf3d68071cf.png)
 
@@ -130,15 +131,15 @@ XAgent是面壁智能联合清华大学 NLP 实验室共同研发开源的基于
 
 HuggingGPT也是一个老牌的AI Agent项目了，主要思路为利用LLM的框架（例如。ChatGPT）来连接机器学习社区中的各种AI模型（例如huggingface）来解决人工智能任务。
 
-网址： [HuggingGPT - a Hugging Fac](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/microsoft/HuggingGPT)e Space by microsoft
+网址：[HuggingGPT - a Hugging Face Space by microsoft](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/microsoft/HuggingGPT)
 
 ![](img/c4dff028aa3f67d71959eb293a654144.png)
 
-代码： https://github.com/
+代码：`https://github.com/`
 
 ![](img/e7acf25df7b077d3f41662db49fa47b4.png)
 
-论文： [HuggingGPT: Solving AI Tasks with](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2303.17580) ChatGPT and its Friends in Hugging Face
+论文：[HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2303.17580)
 
 ![](img/b4e8860717b8cf931e4000c4b70d90ce.png)
 
@@ -158,11 +159,11 @@ Agent下一步可能会朝着两个方向同时迭代。一是与人协助的智
 
 技术方面，LLM模型仍然不够强大，即使是最强大的GPT4在AI Agent应用时，仍然面临以下一些问题：
 
-+   **上下文长度有限 **：上下文容量有限，限制了历史信息、详细说明、API 调用上下文和响应的包含。系统的设计必须适应这种有限的通信带宽，而从过去的错误中学习的自我反思等机制将从长或无限的上下文窗口中受益匪浅。尽管向量存储和检索可以提供对更大知识库的访问，但它们的表示能力不如充分关注那么强大。
++ 上下文长度有限：上下文容量有限，限制了历史信息、详细说明、API 调用上下文和响应的包含。系统的设计必须适应这种有限的通信带宽，而从过去的错误中学习的自我反思等机制将从长或无限的上下文窗口中受益匪浅。尽管向量存储和检索可以提供对更大知识库的访问，但它们的表示能力不如充分关注那么强大。
 
-+   **长期规划和任务分解的挑战 **：长期规划和有效探索解决方案空间仍然具有挑战性。LLM在遇到意外错误时很难调整计划，这使得它们与人类相比（从试错中学习）不太稳健。
++ 长期规划和任务分解的挑战：长期规划和有效探索解决方案空间仍然具有挑战性。LLM在遇到意外错误时很难调整计划，这使得它们与人类相比（从试错中学习）不太稳健。
 
-+   **自然语言接口的可靠性 **：当前的Agent系统依赖自然语言作为LLM与外部组件（例如内存和工具）之间的接口。然而，模型输出的可靠性值得怀疑，因为LLM可能会出现格式错误，并且偶尔会表现出叛逆行为（例如拒绝遵循指示）。因此，大部分Agent演示代码都专注于解析模型输出。
++ 自然语言接口的可靠性：当前的Agent系统依赖自然语言作为LLM与外部组件（例如内存和工具）之间的接口。然而，模型输出的可靠性值得怀疑，因为LLM可能会出现格式错误，并且偶尔会表现出叛逆行为（例如拒绝遵循指示）。因此，大部分Agent演示代码都专注于解析模型输出。
 
 其次，太烧钱了，尤其是多智能体。斯坦福的虚拟小镇一个Agent一天需要消耗20美金价格的token数，因为其需要记忆和行动的思考量非常大。这一价格是比很多人类工作者更高的，需要后续Agent框架和LLM推理侧的双重优化。
 
@@ -174,14 +175,14 @@ Agent下一步可能会朝着两个方向同时迭代。一是与人协助的智
 
 ## 参考文献
 
-[h](https://link.zhihu.com/?target=https%3A//lilianweng.github.io/posts/2023-06-23-agent/)ttps:// lilianweng.github.io/po sts/2023-06-23-agent/
+[https://lilianweng.github.io/posts/2023-06-23-agent/](https://lilianweng.github.io/posts/2023-06-23-agent/)
 
-https:// arxiv.org/abs/2312.1702 5
+`https://arxiv.org/abs/2312.17025`
 
-[h](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/blog/introduction-to-llm-agents/)ttps:// developer.nvidia.com/bl og/introduction-to-llm-agents/
+[https://developer.nvidia.com/blog/introduction-to-llm-agents/](https://developer.nvidia.com/blog/introduction-to-llm-agents/)
 
-[https://www. gatesn](https://link.zhihu.com/?target=https%3A//www.gatesnotes.com/AI-agents)otes.com/AI-agent s
+[https://www.gatesnotes.com/AI-agents](https://link.zhihu.com/?target=https%3A//www.gatesnotes.com/AI-agents)
 
 AI Agent，为什么是AIGC最后的杀手锏？
 
-[https:// github.com/e2b-dev](https://link.zhihu.com/?target=https%3A//github.com/e2b-dev/awesome-ai-agents)/awes ome-ai-agents
+[https://github.com/e2b-dev/awesome-ai-agents](https://link.zhihu.com/?target=https%3A//github.com/e2b-dev/awesome-ai-agents)

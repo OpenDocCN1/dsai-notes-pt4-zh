@@ -1,10 +1,11 @@
+
 # 实测Claude 3.5 新功能Artifacts，三句话做出“魂斗罗”几何限定版
 
 > 来源：[https://aiwarts101.feishu.cn/docx/UPp5dRnbqoLDr1xmxwncK5zEnVh](https://aiwarts101.feishu.cn/docx/UPp5dRnbqoLDr1xmxwncK5zEnVh)
-
+>
 > 作者：卡尔 & 祝豪
-
-> **动手学AI** 教程知识库 👉 learnprompt.pro 你想学的都在这里🎉
+>
+> **动手学AI** 教程知识库 👉 `learnprompt.pro` 你想学的都在这里🎉
 
 **AI界果然没有夜晚**，Anthropic又又又又悄咪咪上线了新模型 - Claude3.5
 
@@ -24,7 +25,7 @@
 
 ![](img/821c53428949f9441135d5af2eebfe82.png)
 
-**而在多模**态视觉上的各项能力达到了SOTA（state-of-the-art：用于描述机器学习中取得某个任务上当前最优效果的模型）。
+**而在多模态**视觉上的各项能力达到了SOTA（state-of-the-art：用于描述机器学习中取得某个任务上当前最优效果的模型）。
 
 这些数据并没有给我带来多大的惊喜
 
@@ -32,15 +33,15 @@
 
 不过，新模型还带来了新的交互方式！
 
-**Artifacts**
+## Artifacts
 
 在Claude3.5眼中，Artifacts代表了考古学文物、艺术作品，科学和工程中的人工痕迹，又或者是在软件开发中生成的任何文档、设计图纸、源代码、测试计划等，看来这个名字比Opus、Sonnet、Haiku好懂👍
 
-当**用户要**求 Claude 生成代码、文本或网站时，Artifacts会出现在右侧窗口，提供实时预览、修改，请看VCR📹：
+当**用户要求** Claude 生成代码、文本或网站时，Artifacts会出现在右侧窗口，提供实时预览、修改，请看VCR📹：
 
 ![](img/3c3bd6fa39a72227a55fb254b67ca0aa.png)
 
-[videoplayback.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KQlsbdKfDopEKrxx1qKc7m1VnjK)
+[`videoplayback.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KQlsbdKfDopEKrxx1qKc7m1VnjK)
 
 这个功能不相当于GPT的上一代版本之子 - 代码解释器的pro max版本吗？
 
@@ -72,7 +73,7 @@
 
 下面是**见证奇迹的时刻**，
 
-“现在，请帮我做一个横版的跳跃游戏，可操控的主角是8-bit的战士，需要跳过的障碍物是不断迎面而来的迷彩色火柴人，背景是黑色色天空、树丛。每次按空格键就是跳跃。“
+“现在，请帮我做一个横版的跳跃游戏，可操控的主角是8-bit的战士，需要跳过的障碍物是不断迎面而来的迷彩色火柴人，背景是黑色色天空、树丛。每次按空格键就是跳跃.“
 
 过程远没有想象中顺利，
 
@@ -80,7 +81,7 @@
 
 才找出了生成失败的核心原因。
 
-这**类游戏基本都是用Rea**ct写的，Artifacts不支持引用react-us之类的库，所以你需要让它用原生React hooks 来实现相同的功能
+这类游戏基本都是用`React`写的，Artifacts不支持引用`react-us`之类的库，所以你需要让它用原生`React` hooks 来实现相同的功能
 
 ![](img/e12cb21e05c82c2e2e83f90a51d9ef0f.png)
 
@@ -108,9 +109,9 @@ GPT快跟上啊！
 
 最后给大家送上官方指南传送门
 
-https://www.anthropic.com/news/claude-3-5-sonnet
+`https://www.anthropic.com/news/claude-3-5-sonnet`
 
-**最后，谢谢你看到了这里👏 **
+**最后，谢谢你看到了这里👏**
 
 如果喜欢这篇文章，不妨随手来个点赞、评论👍
 

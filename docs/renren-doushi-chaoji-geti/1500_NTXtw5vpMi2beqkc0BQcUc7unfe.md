@@ -1,12 +1,11 @@
+
 # 2023-09-01银行保险金融机构生成式人工智能（GenAI）战略报告_ChatGPT_技术_企业
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/WdJFdQzVBorm15x0GrRcNRrznpe](https://xuqiwei1986.feishu.cn/docx/WdJFdQzVBorm15x0GrRcNRrznpe)
+> 来源：https://xuqiwei1986.feishu.cn/docx/WdJFdQzVBorm15x0GrRcNRrznpe
 
-> 🔗 原文链接： h[ttps://www.sohu.co](https://www.sohu.com/a/716733913_121709768)m/a/716733913_12...
+> 🔗 原文链接：https://www.sohu.com/a/716733913_121709768
 
->
-
-[2023-09](https://www.sohu.com/a/716733913_121709768?spm=smpc.content.content.1.1693796331672mxnWchL)-01 10:53 来源: AIGC资源社
+[2023-09-01](https://www.sohu.com/a/716733913_121709768?spm=smpc.content.content.1.1693796331672mxnWchL) 10:53 来源: AIGC资源社
 
 生成式人工智能(GenAI)是人工智能的细分领域，其代表性应用ChatGPT的问世在全球范围引起巨大震动。
 
@@ -22,30 +21,14 @@
 
 若想率先在人工智能快速迭代的技术浪潮中确立竞争优势，金融机构应尽早审视自身战略发展过程中所面临的技术相关风险和阻碍，及时完成战略思维的转变；同时制定人工智能战略相关落地与流程管理保障机制，结合企业自身处境制定完整及契合自身发展节奏的人工智能战略规划、战略实施路径以及技术用例实施方案。
 
-《 银行保险金融机构生成式人工智能（GenAI）战略报告 》下载，👸号：幻影视界。
+《银行保险金融机构生成式人工智能（GenAI）战略报告》下载，👸号：幻影视界。
 
-# 报告原文内容节选如下：
+## 报告原文内容节选如下：
 
 ![](img/143a5f222fe2553554b7c96362fc34b0.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![](img/377d056e4346ced762c5f9aa6258eafe.png)
 
-（本文仅供参考，不代表我们的任何投资建议[。如需使用相关信息，](https://www.sohu.com/?strategyid=00001&spm=smpc.content.content.2.1693796331672mxnWchL)请参阅报告原文。）  返回搜狐，查看更多
+（本文仅供参考，不代表我们的任何投资建议。如需使用相关信息，请参阅[报告原文](https://www.sohu.com/?strategyid=00001&spm=smpc.content.content.2.1693796331672mxnWchL)。）返回搜狐，查看更多
 
 责任编辑：

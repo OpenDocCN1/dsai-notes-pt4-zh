@@ -1,30 +1,27 @@
+
 # NotebookLM 里面生成PPT的提示词模板
 
 > 来源：[https://aigcreative.feishu.cn/docx/QqsPdWpzcog8TDxCipZcH6Odn5c](https://aigcreative.feishu.cn/docx/QqsPdWpzcog8TDxCipZcH6Odn5c)
 
-[转：NotebookLM 里面生成P](https://t.co/YeTa9eyBPI)PT的提示词模板
+[转：NotebookLM 里面生成PPT的提示词模板](https://t.co/YeTa9eyBPI)
 
 作者：黄建同学
 
 来源：
 
-https://weibo.com/5648162302/Qhp4HBqAk
-
-> 
+`https://weibo.com/5648162302/Qhp4HBqAk`
 
 > 提示词：
 
-> 目标受众：{受众，例如：公司高管 / 技术团队 / 产品经理 / 普通用户}
+> 目标受众：`{受众，例如：公司高管 / 技术团队 / 产品经理 / 普通用户}`
 
-> 演示目的：{目的，例如：技术分享 / 项目汇报 / 产品介绍 / 教学使用}
+> 演示目的：`{目的，例如：技术分享 / 项目汇报 / 产品介绍 / 教学使用}`
 
-> 整体篇幅：{页数，例如：10 页以内 / 15～20 页}
+> 整体篇幅：`{页数，例如：10 页以内 / 15～20 页}`
 
-> 风格要求：{风格}
+> 风格要求：`{风格}`
 
-> 视觉效果：{视觉效果}
-
-> 
+> 视觉效果：`{视觉效果}`
 
 > 风格：
 
@@ -45,8 +42,6 @@ https://weibo.com/5648162302/Qhp4HBqAk
 > 8. 产品展示，突出场景镜头、用户价值、功能亮点、体验流程，强调“好处和使用方式”（适用于新品发布、方案宣讲）
 
 > 9. 思维导图，以概念之间的关联为主线，用层次化结构展开知识网络（适合复杂主题）
-
-> 
 
 > 视觉效果：
 

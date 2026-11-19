@@ -1,6 +1,3 @@
-# 09.23-刚刚，DeepSeek-V3.1「终极版」重磅发布！最大提升超36%，V4/R2还远吗？
-
-> 来源：[https://agijuejin.feishu.cn/docx/EyQ2dTzxpoZ9iFxB3w9cWJspnIb](https://agijuejin.feishu.cn/docx/EyQ2dTzxpoZ9iFxB3w9cWJspnIb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 09 月 23 日)
 
@@ -8,7 +5,9 @@
 
 ## ⭐ 今日热点
 
-### 💡 刚刚，DeepSeek-V3.1「终极版」重磅发布！最大提升超36%，V4/R2还远吗？
+### 💡 09.23-刚刚，DeepSeek-V3.1「终极版」重磅发布！最大提升超36%，V4/R2还远吗？
+
+> 来源：[https://agijuejin.feishu.cn/docx/EyQ2dTzxpoZ9iFxB3w9cWJspnIb](https://agijuejin.feishu.cn/docx/EyQ2dTzxpoZ9iFxB3w9cWJspnIb)
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KA3OD63H0511ABV6.html?spss=dy_author)
 
@@ -40,7 +39,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/884/922.htm)
 
 ![](img/06aa69bfedbb353e2b81e4c15a1817f6.png)
 
-2025年9月22日，Meta 开源 MobileLLM-R1 系列小语言模型，有1.4亿、3.6亿和9.5亿参数版本，可在轻量级设备运行。它非通用模型，经专门训练解决数学、编程、科学问题。以950M为例，预训练用约2TB高质量token，总训练数据不到5TB，在多项测试中成绩超Qwen 3-0.6B。在对比测试中，950M在MATH测试准确率远超Olmo 1.24B和SmolLM 1.7B ，编程任务也更优。开发者可通过vLLM推理引擎运行，模型已开源在Hugging Face平台。
+2025年9月22日，Meta 开源 MobileLLM-R1 系列小语言模型，有1.4亿、3.6亿和9.5亿参数版本，可在轻量级设备运行。它非通用模型，经专门训练解决数学、编程、科学问题。以950M为例，预训练用约2TB高质量token，总训练数据不到5TB，在多项测试中成绩超Qwen 3-0.6B。在对比测试中，950M在MATH测试准确率远超Olmo 1.24B和SmolLM 1.7B ，编程任务也更优。开发者可通过`vLLM`推理引擎运行，模型已开源在Hugging Face平台。
 
 ### 💡 宇树 G1 人形机器人遭“围殴”，摔倒后能快速起身
 
@@ -106,7 +105,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/884/937.htm)
 
 ![](img/93a97569f1556a93f6137c8500622c88.png)
 
-新加坡宝妈Laura Zaccaria休产假时，受丈夫怂恿参加「氛围编程」课程。她无编程背景，借助Cursor等工具，经数月努力写出家庭餐食规划App 。过程中她学会拆解问题、理解后台逻辑。AI迭代快，让她意识到要跟上时代。她的经历打破产假是职业断点的看法，表明学习AI能让人不被时代抛下，鼓励人们积极尝试。
+新加坡宝妈Laura Zaccaria休产假时，受丈夫怂恿参加「氛围编程」课程。她无编程背景，借助`Cursor`等工具，经数月努力写出家庭餐食规划App 。过程中她学会拆解问题、理解后台逻辑。AI迭代快，让她意识到要跟上时代。她的经历打破产假是职业断点的看法，表明学习AI能让人不被时代抛下，鼓励人们积极尝试。
 
 ### 💡 DeepSeek 线上模型升级至 V3.1-Terminus 版本，改进语言一致性及 Agent 能力
 
@@ -114,7 +113,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/884/921.htm)
 
 ![](img/292a52a36e57f41d2bf531d850b0f6c9.png)
 
-9月22日晚，DeepSeek线上模型升级到V3.1-Terminus版本，有思考和非思考模式，上下文长度128k。<代码开始>deepseek-chat<代码结束>和<代码开始>deepseek-reasoner<代码结束>对应不同模式。此次更新改进用户反馈问题，提升语言一致性，优化Agent能力。非思考模型输出默认4K最大8K，思考模型默认32K最大64K。使用价格为百万tokens输入（缓存命中）0.5元，未命中4元，百万tokens输出12元 。
+9月22日晚，DeepSeek线上模型升级到V3.1-Terminus版本，有思考和非思考模式，上下文长度`128k`。`deepseek-chat`和`deepseek-reasoner`对应不同模式。此次更新改进用户反馈问题，提升语言一致性，优化Agent能力。非思考模型输出默认4K最大8K，思考模型默认32K最大64K。使用价格为百万tokens输入（缓存命中）0.5元，未命中4元，百万tokens输出12元 。
 
 ### 💡 陶哲轩官宣AI数学基金首轮名单：29个项目瓜分1.3亿，数学界沸腾！
 
@@ -130,7 +129,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/884/852.htm)
 
 ![](img/1af56dbc540b19f5f2fae0d1dd6920a4.png)
 
-9月22日消息，字节跳动旗下火山引擎发布全新通用翻译大模型Doubao-Seed-Translation（豆包翻译模型）。该模型支持28种语言互译，覆盖主流语种，翻译效果佳，能处理复杂语境，输出自然。还支持4K上下文、3K输出长度，自动识别源语言。价格极具竞争力，每百万字符输入1.20元，输出3.60元，性能比肩GPT-4o 。
+9月22日消息，字节跳动旗下火山引擎发布全新通用翻译大模型`Doubao-Seed-Translation`（豆包翻译模型）。该模型支持28种语言互译，覆盖主流语种，翻译效果佳，能处理复杂语境，输出自然。还支持4K上下文、3K输出长度，自动识别源语言。价格极具竞争力，每百万字符输入1.20元，输出3.60元，性能比肩GPT-4o 。
 
 ### 💡 引流 + 动态定价，消息称 Reddit 正与谷歌就新版 AI 合作协议展开谈判
 

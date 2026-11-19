@@ -1,4 +1,5 @@
-#  DeepSeek 降 ai 率指令
+
+# DeepSeek 降 ai 率指令
 
 > 来源：[https://geekbang.feishu.cn/docx/ZHzYdpksQoJg2ixZmiAc0lPEnrg](https://geekbang.feishu.cn/docx/ZHzYdpksQoJg2ixZmiAc0lPEnrg)
 

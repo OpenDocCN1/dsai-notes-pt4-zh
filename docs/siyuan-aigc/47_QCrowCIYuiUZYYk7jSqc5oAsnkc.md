@@ -1,9 +1,9 @@
+
 # Midjourney商业实战(附关键词)
 
 > 来源：[https://my.feishu.cn/docx/HRtodIm5aoW5XExzZHTcbYqHnXe](https://my.feishu.cn/docx/HRtodIm5aoW5XExzZHTcbYqHnXe)
 
-| 源地址：https://zhuanlan.zhihu.com/p/618968769 |
-| --- |
+源地址：https://zhuanlan.zhihu.com/p/618968769
 
 近期，职场设计师们应该能看到不少与 AIGC 相关的新闻。例如，网易内部要求其所有设计师都要掌握 AIGC，腾讯 ISUX 已将 AI 应用于实战，知名设计博主 NodYoung 更是明确表示 UI 设计师应该尽快准备好职业转型。
 
@@ -11,7 +11,7 @@ AIGC 如今备受关注，但仍有许多设计师不知道如何利用它来提
 
 让我们先来探讨备受争议的 AI 绘画版权问题：
 
-一、AI 绘画的版权属于作者吗？
+## 一、AI 绘画的版权属于作者吗？
 
 AI 绘画的版权问题一直备受争议。特别是在 Midjourney 流行后，用户无需自己搭模型就可以轻松获取大量 AI 生成的图像，但其是否道德或合法，仍存在争议。对此，人们有两种看法：
 
@@ -27,36 +27,35 @@ AI 绘画的版权问题一直备受争议。特别是在 Midjourney 流行后�
 
 AI 那些令人叹为观止的画作
 
-二、如何把 AI 绘画应用到设计工作中？
+## 二、如何把 AI 绘画应用到设计工作中？
 
 AI 绘画技术可以应用于设计工作中，帮助设计师更快速、更高效地完成设计工作，以下是一些常见的应用：
 
-1.  快速草图：AI 绘画技术可以帮助设计师快速创建草图和概念图，使其可以更快地探索和调整设计方案。使用 AI 绘画技术创建的草图还可以在后续的设计阶段进行改进和完善。
+1. 快速草图：AI 绘画技术可以帮助设计师快速创建草图和概念图，使其可以更快地探索和调整设计方案。使用 AI 绘画技术创建的草图还可以在后续的设计阶段进行改进和完善。
 
+1. 自动化创意设计：AI 绘画技术可以帮助设计师快速创建各种设计方案，从而加快设计过程和减少犯错。AI 绘画技术可以自动创建多种设计方案，并为设计师提供灵感和启示。
 
-1.  自动化创意设计：AI 绘画技术可以帮助设计师快速创建各种设计方案，从而加快设计过程和减少犯错。AI 绘画技术可以自动创建多种设计方案，并为设计师提供灵感和启示。
-
-1.  自动化颜色匹配：AI 绘画技术可以帮助设计师自动匹配色彩，使得设计作品更加协调和美观。
+1. 自动化颜色匹配：AI 绘画技术可以帮助设计师自动匹配色彩，使得设计作品更加协调和美观。
 
 ![](img/69e981cb1d9b0db6c6464df4f8e8862f.png)
 
-1.  自动化插图绘制：AI 绘画技术可以帮助设计师自动化绘制插图，例如手绘风格的插图、卡通风格的插图等。使用 AI 技术可以加快插图绘制过程，同时保证插图的质量和一致性。
+1. 自动化插图绘制：AI 绘画技术可以帮助设计师自动化绘制插图，例如手绘风格的插图、卡通风格的插图等。使用 AI 技术可以加快插图绘制过程，同时保证插图的质量和一致性。
 
 当然，正确熟练地运用 AI 绘画会在更多工作场景中带来降本增效的效果。废话不多说，直接上案例。
 
-**三、AI 绘画之摄影篇**
+## 三、AI 绘画之摄影篇
 
-**娇兰香水产品摄影图**
+### 娇兰香水产品摄影图
 
 关键词：
 
-Guerlain Perfume, plant flowers, top light. cean natural backaround with water, saturation color scheme. The productis bright, Motled shading, studo lighfing, contrast high precision, Fine gloss, Centered composition, Photography, HD4Krealism –q 2 –v 5 –s 750 –ar 9:16
-
-![](img/b962eadf3462b4f7145b5f3aa237f419.png)
+`Guerlain Perfume, plant flowers, top light. cean natural backaround with water, saturation color scheme. The productis bright, Motled shading, studo lighfing, contrast high precision, Fine gloss, Centered composition, Photography, HD4Krealism –q 2 –v 5 –s 750 –ar 9:16`
 
 娇兰香水，植花，顶淡。海洋自然背景与水，饱和的配色方案。该产品明亮，斑纹底纹，studo lighfing，对比度精度高，光泽度高，居中构图，摄影，HD4Krealism
 
 Midjourney 生成的图片：
+
+![](img/b962eadf3462b4f7145b5f3aa237f419.png)
 
 我们在这组关键词上多生成几组图片，然后找到你认为不错的照片，去 PS（或者其他后期软件）后期修改调整一下，然后进行文字排版，如下：
 
@@ -70,11 +69,11 @@ Midjourney 生成的图片：
 
 有电商设计同学吗，是不是感觉可以去拍老板脑门要求涨薪了
 
-1.  **美女模特摄影海报**
+### 1. 美女模特摄影海报
 
 关键词：
 
-On a sunny summer day, a beautiful and innocent18-year-old Korean gir smiles brightly playing withwater in the stream –ar 9:16 –v 5
+`On a sunny summer day, a beautiful and innocent18-year-old Korean gir smiles brightly playing withwater in the stream –ar 9:16 –v 5`
 
 在一个阳光明媚的夏日，一个美丽而天真的 18 岁韩国女孩在小溪里玩水，笑容灿烂
 
@@ -84,11 +83,11 @@ Midjourney 生成的图片：
 
 美女人物海报：
 
-1.  **江南清明节海报**
+### 1. 江南清明节海报
 
 关键词：
 
-jiangnan, hangzhou,summer scenery, Green trees, small houses,brook2,Ultra-high definition picture, 8K –ar 2:3 –v 4
+`jiangnan, hangzhou,summer scenery, Green trees, small houses,brook2,Ultra-high definition picture, 8K –ar 2:3 –v 4`
 
 江南，杭州，夏日风光，绿树，小房子，小溪 2，超高清图片
 
@@ -104,11 +103,11 @@ Midjourney 生成的图片：
 
 后期一下，拿捏了…
 
-1.  **奔驰 GT 商业海报**
+### 1. 奔驰 GT 商业海报
 
 关键词：
 
-Mercedes benz design,photorealistic,cleanoackground, ray tracking,8k,studio lighting, mattefinishing，DSLR ultra realistic, ulltra detail, wideanglle lens –ar 9:16 –q 5
+`Mercedes benz design,photorealistic,cleanoackground, ray tracking,8k,studio lighting, mattefinishing，DSLR ultra realistic, ulltra detail, wideanglle lens –ar 9:16 –q 5`
 
 奔驰设计，逼真，干净的背景，光线跟踪，8k，工作室照明，抛光，单反超逼真，超细节，广角镜头
 
@@ -122,13 +121,13 @@ Midjourney 生成的图片：
 
 高级感不就有了吗，那摄影篇到这就结束，如果对你有帮助，3 连支持一下哇，我们继续往下看：
 
-**四、AI 绘画之 IP 角色篇**
+## 四、AI 绘画之 IP 角色篇
 
-1.  **可爱的花裙小女孩**
+### 1. 可爱的花裙小女孩
 
 关键词：
 
-a super cute girl, wearing a floral dress, wearing bootswearing a hat, holding bag, big watery eyes, full bodylooking at viewer, open hands, MD clothing, clothingwrinkles, surprise, clean background, dreamy, pop martmockup, blind box toy, disney style, fine luster, 3D ren-dering, OC, front lighting, face shot, best quality, 8K, ultradetoiled –ar 3:4 –niji
+`a super cute girl, wearing a floral dress, wearing bootswearing a hat, holding bag, big watery eyes, full bodylooking at viewer, open hands, MD clothing, clothingwrinkles, surprise, clean background, dreamy, pop martmockup, blind box toy, disney style, fine luster, 3D ren-dering, OC, front lighting, face shot, best quality, 8K, ultradetoiled –ar 3:4 –niji`
 
 一个超级可爱的女孩，穿着花裙子，戴着靴子，戴着帽子，拿着包，大水汪汪的眼睛，全身看着观众，张开双手，MD 衣服，衣服皱褶，惊喜，干净的背景，梦幻，流行的马丁模型，盲盒玩具，迪士尼风格，细光泽，3D 渲染，OC，正面照明，面部拍摄，最好的质量，8K，超累
 
@@ -144,11 +143,11 @@ Midjourney 生成的图片：
 
 这里大家可以把 IP 扣下来，然后重新排版下效果会更好，我这里只是给大家演示一下，勿吐槽！
 
-1.  **调皮的小男孩**
+### 1. 调皮的小男孩
 
 关键词：
 
-A handsome boy, dirty braids, trendy wear, a shoesfront view, ip pop mart blind box, front view,,animation effects,clean background, white background, morale group, movie lighting, light andshade contrast, 8k, best quality, super detail, 3d c4d, oc rendering, ultra high definition, 3d rendering –ar 3:4 –v 5
+`A handsome boy, dirty braids, trendy wear, a shoesfront view, ip pop mart blind box, front view,,animation effects,clean background, white background, morale group, movie lighting, light andshade contrast, 8k, best quality, super detail, 3d c4d, oc rendering, ultra high definition, 3d rendering –ar 3:4 –v 5`
 
 一个帅气的男孩，时髦的穿着，aj 鞋前视图，ip pop mart 盲盒，前视图，，动画效果，干净的背景，白色的背景，士气组，电影照明，明暗对比，8k，最好的质量，超细节，3d, c4d, oc 渲染，超高清，3d 渲染
 
@@ -164,11 +163,11 @@ Midjourney 生成的图片：
 
 没什么想说的，都在图里，看啥呢，你再看？（代入 IP 里皮一下，哈哈哈哈）
 
-1.  **气泡雨衣女孩**
+### 1. 气泡雨衣女孩
 
 关键词：
 
-whole body!! a cute girl from futurecyberpunk, wearing a sliver raincoat and wearing a big goggle, charmingpose, floating glass balls, soft pastel gradients, popmart blindbox, clay material, brightbackground,award-winning,LED3d art, depth of field, Pixar trend.surreal, octane rendering, raytracing, complex details, animation lighting, c4d –ar 3:4
+`whole body!! a cute girl from futurecyberpunk, wearing a sliver raincoat and wearing a big goggle, charmingpose, floating glass balls, soft pastel gradients, popmart blindbox, clay material, brightbackground,award-winning,LED3d art, depth of field, Pixar trend.surreal, octane rendering, raytracing, complex details, animation lighting, c4d –ar 3:4`
 
 整个身体! !一个来自 futurecyberpunk 的可爱女孩，穿着银色雨衣，戴着大眼镜，迷人的姿势，漂浮的玻璃球，柔和的粉彩渐变，popmart 盲盒，粘土材料，明亮的背景，获奖，LED3d 艺术，景深，皮克斯的趋势。超现实，辛烷值渲染，光线追踪，复杂的细节，动画照明
 
@@ -182,19 +181,19 @@ Midjourney 生成的图片：
 
 你们喜欢哪个呢，我都喜欢
 
-**五、AI 绘画之 UI 设计篇**
+## 五、AI 绘画之 UI 设计篇
 
-1.  **直播礼物风格图标**
+### 1. 直播礼物风格图标
 
 关键词：
 
-喂图+（Gift icon）, cartoon style, solid color background luminous effect, 3d –iw 1 –v 5 –q 2
+`喂图+（Gift icon）, cartoon style, solid color background luminous effect, 3d –iw 1 –v 5 –q 2`
 
 卡通风格，纯色背景发光效果，3d
 
 这里需要去素材网站上找到你喜欢的 icons 风格，然后喂图给机器人，后面打上关键词就可以了，不知道怎么喂图的看我的第一篇文章《奶奶看了都会的 Midjourney 入门教程》
 
-(Gift icon）是可替换的关键词，比如（beer icon）啤酒图标、（Headphone icon）耳机图标…..
+`Gift icon` 是可替换的关键词，比如 `beer icon` 啤酒图标、`Headphone icon` 耳机图标…..
 
 Midjourney 生成的图片：
 
@@ -206,11 +205,11 @@ Midjourney 生成的图片：
 
 一般这种图标会用在直播的礼物场景中…
 
-1.  **主题应用 icons**
+### 1. 主题应用 icons
 
 关键词：
 
-icon design, light texture, glow, Dribbble, 3D, frostedglass effect, 3d,ui, ux,–upbeta –q 2 –v 4
+`icon design, light texture, glow, Dribbble, 3D, frostedglass effect, 3d,ui, ux,–upbeta –q 2 –v 4`
 
 图标设计，光纹理，发光，Dribbble, 3D，磨砂玻璃效果，3D, ui, ux，——upbeta—q2—v4
 
@@ -224,11 +223,11 @@ Midjourney 生成的图片：
 
 这些生成出来的素材用来参考还是不错的。
 
-1.  **B 端图标**
+### 1. B 端图标
 
 关键词：
 
-喂图 +A data icon, blue gradient frosted glass, frostedglass building, white transparent technology sensewhite city building scene, data line link, chip, OCrenderer, big data, industrial machinery, high detailight gray background with simple linear details,studio lighting, 3d,c4d, pure white background, 8k
+`喂图 +A data icon, blue gradient frosted glass, frostedglass building, white transparent technology sensewhite city building scene, data line link, chip, OCrenderer, big data, industrial machinery, high detailight gray background with simple linear details,studio lighting, 3d,c4d, pure white background, 8k`
 
 一个数据图标，蓝色渐变磨砂玻璃，磨砂玻璃建筑，白色透明科技感白色城市建筑场景，数据线链接，芯片，OCrenderer，大数据，工业机械，高细节灰色背景与简单的线性细节，工作室照明，3d,c4d，纯白背景，8k
 
@@ -242,11 +241,11 @@ B 端图标设计：
 
 质感还不错，大家可以多尝试喂不同构图的图片，喂图玩法对图片影响最大的是你给的参考图，建议多跑跑图。
 
-1.  **音乐软件 UI 设计**
+### 1. 音乐软件 UI 设计
 
 关键词：
 
-music app ui design, ux design, white, light, bright,data, modern,smooth, behance, dribbble, –upbeta –q 2 –v 4
+`music app ui design, ux design, white, light, bright,data, modern,smooth, behance, dribbble, –upbeta –q 2 –v 4`
 
 音乐应用程序 ui 设计，用户体验设计，白色，轻，明亮，数据，现代，流畅，behance, dribbble，——upbeta——g2——V4
 
@@ -260,13 +259,13 @@ Midjourney 生成的图片：
 
 可以看到，UI 设计并不规范，文字也很乱，所以 MJ 在这块只能作为一个风格参考，网上已经有很多 AI 生成的 UI 设计软件开始内测了，关注我，后续给大家出 AI 绘制 UI 设计的教程。
 
-**六、AI 绘画之插画篇**
+## 六、AI 绘画之插画篇
 
-1.  **像素风格插画**
+### 1. 像素风格插画
 
 关键词：
 
-3D, 16-bit pixel art, Super mario, Minecraft, LEGO, pixel style, Blocksplicing, girl with long hair, Alice in Wonderland, garden background, 8K –uplight –ar 9:16 –v 5
+`3D, 16-bit pixel art, Super mario, Minecraft, LEGO, pixel style, Blocksplicing, girl with long hair, Alice in Wonderland, garden background, 8K –uplight –ar 9:16 –v 5`
 
 3D, 16 位像素艺术，超级马里奥，我的世界，乐高，像素风格，积木拼接，长头发的女孩，爱丽丝梦游仙境，花园背景，8K
 
@@ -280,11 +279,11 @@ Midjourney 生成的图片：
 
 第一张其实并不完全是像素风格，但是我个人感觉效果还不错，很神奇。
 
-1.  **手机壁纸插画**
+### 1. 手机壁纸插画
 
 关键词：
 
-mobile wallpaper illustrations, four seasons, natural landscapes, minimalist illustrations, line illustrations –ar 9:16 –niji
+`mobile wallpaper illustrations, four seasons, natural landscapes, minimalist illustrations, line illustrations –ar 9:16 –niji`
 
 移动壁纸插图，四季，自然景观，极简主义插图，线条插图
 
@@ -298,11 +297,11 @@ Midjourney 生成的图片：
 
 这个使用场景够实用了吧，再也不用去求壁纸了…
 
-1.  **新海诚风格插画**
+### 1. 新海诚风格插画
 
 关键词：
 
-Makoto Shinkai animation style, a girl, 4K –ar 9:16 –niji
+`Makoto Shinkai animation style, a girl, 4K –ar 9:16 –niji`
 
 新海诚动画风格，一个少女，4K
 
@@ -312,15 +311,17 @@ Midjourney 生成的图片：
 
 新海诚动漫海报：
 
+
+
 ![](img/fc01d48a578b5c5f9e242bab372fb57d.png)
 
 不要看手，不要看手，不要看手！！！
 
-1.  **国潮插画**
+### 国潮插画
 
 关键词：
 
-Make posters of James Jean, white deer, auspicious clouds, birds, distant mountains, Chinese China-Chic style, colorful, light color, gradient color –ar 9:16
+`Make posters of James Jean, white deer, auspicious clouds, birds, distant mountains, Chinese China-Chic style, colorful, light color, gradient color –ar 9:16`
 
 制作海报的詹姆斯让，白鹿，祥云，鸟类，远山，中国中国别致的风格，彩色，浅色，渐变色-ar 9:16
 
@@ -332,17 +333,17 @@ Midjourney 生成的图片：
 
 ![](img/391b73cf7ab40d1d760e7bf40c105554.png)
 
-**七、AI 绘画之概念篇**
+## 七、AI 绘画之概念篇
 
-1.  **中国武术电影片**
+### 中国武术电影片
 
 关键词：
 
-Amazing epic chinese ancient theme,chinese ink style, a young man is preparing to climb the stonesteps ladder, martial arts style, dynamic, expressiveclean lines, cinematic, stunning, realistic lighting andshading, vivid, vibrant, 8k, octane render, unrealengine, very detailed, concept art, realistic –ar 16:9
+`Amazing epic chinese ancient theme,chinese ink style, a young man is preparing to climb the stonesteps ladder, martial arts style, dynamic, expressiveclean lines, cinematic, stunning, realistic lighting andshading, vivid, vibrant, 8k, octane render, unrealengine, very detailed, concept art, realistic –ar 16:9`
 
 令人惊叹的史诗中国古代主题，中国墨水风格，一个年轻人正在准备爬石阶🪜，武术风格，动态，富有表现力的干净的线条，电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，不真实的引擎，非常详细，概念艺术，现实
 
-(young man is preparing to climb the stonesteps ladder,) 其他的关键词不变，改变这句话创作出不同的场景
+`(young man is preparing to climb the stonesteps ladder,)` 其他的关键词不变，改变这句话创作出不同的场景
 
 Midjourney 生成的图片：
 
@@ -354,11 +355,11 @@ Midjourney 生成的图片：
 
 这质感，我只能说无敌了….
 
-1.  **长安城夜景**
+### 长安城夜景
 
 关键词：
 
-Chang’an City, Ancient times, BigsceneSea of clouds, an expansive view of, highangle view Soft moonlight, Twinklingstars, cinematic lighting,8k,Virtua engine,detailed, Digital illustration –ar 16:9
+`Chang’an City, Ancient times, BigsceneSea of clouds, an expansive view of, highangle view Soft moonlight, Twinklingstars, cinematic lighting,8k,Virtua engine,detailed, Digital illustration –ar 16:9`
 
 长安城，古代，大场景云海，广阔的视野，高角度视图柔和的月光，闪烁的星星，电影照明，8k,Virtua 引擎，详细，数字插图-ar 16:9
 
@@ -368,14 +369,13 @@ Midjourney 生成的图片：
 
 长安，长治久安：
 
-
 ![](img/f7e64344f66a96f40c7a088d80f54419.png)
 
-1.  **中国古代女孩**
+### 中国古代女孩
 
 关键词：
 
-By Kuvshinov llya, amazing epic chinese ancient theme, water&ink style, Fantasy style, martial artsstyle, Temple, chinese dragon, Chinese fairytale,highly detailed,dynamic, expressive, clean linescinematic, stunning, realistic lighting and shading, vivid, vibrant, 8k, octane render, unreal engine, verydetailed, concept art, realistic, Cry engine –ar 16:9 –v 5 –s 250
+`By Kuvshinov llya, amazing epic chinese ancient theme, water&ink style, Fantasy style, martial artsstyle, Temple, chinese dragon, Chinese fairytale,highly detailed,dynamic, expressive, clean linescinematic, stunning, realistic lighting and shading, vivid, vibrant, 8k, octane render, unreal engine, verydetailed, concept art, realistic, Cry engine –ar 16:9 –v 5 –s 250`
 
 由 Kuvshinov llya，惊人的史诗中国古代主题，水墨画风格，幻想风格，武术风格，寺庙，中国龙，中国童话，高度详细，动态，富有表现力，干净的线条电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，虚幻引擎，非常详细，概念艺术，现实，哭泣引擎-ar 9:16 -v 5 -s 250
 
@@ -387,11 +387,11 @@ Midjourney 生成的图片：
 
 ![](img/750d57f149b43c30f4e5f043b6bfe951.png)
 
-1.  **未来太空科技风格**
+### 未来太空科技风格
 
 关键词：
 
-Amazing cosmic starry sky, ultra modern future theme, future technology style,surrealism.spacecraft, galaxy, planet, space, future story, hugeworld view, big scene, full of ignorance of future future futureexploration, astronauts, space creatures, highlydetailed, dynamic,expressive, clean lines,cinematic stunning, realistic lighting and shading, vivid8k,octane render, unreal engine, very detailed concept art, realistic, Cry engine –ar 16:9 –v 5
+`Amazing cosmic starry sky, ultra modern future theme, future technology style,surrealism.spacecraft, galaxy, planet, space, future story, hugeworld view, big scene, full of ignorance of future future futureexploration, astronauts, space creatures, highlydetailed, dynamic,expressive, clean lines,cinematic stunning, realistic lighting and shading, vivid8k,octane render, unreal engine, very detailed concept art, realistic, Cry engine –ar 16:9 –v 5`
 
 令人惊叹的宇宙星空，超现代的未来主题，未来科技风格，超现实主义。宇宙飞船，星系，行星，太空，未来的故事，巨大的世界观，大的场景，充满了对未来探索的无知，宇航员，太空生物，高度详细，动态，富有表现力，干净的线条，令人惊叹的电影，逼真的灯光和阴影，生动的 8k, ctane 渲染，虚幻的引擎，非常详细的概念艺术，现实的，哭引擎
 
@@ -401,11 +401,10 @@ Midjourney 生成的图片：
 
 未来太空科技风格：
 
-
 ![](img/5fd819dbae70c3bb9604f330ecff0d0b.png)
 
 震撼，太震撼了…
 
-**八、结语**
+## 八、结语
 
 以上就是本期为大家分享的商业案例，我们可以将 AI 视作一个工具，为自己的工作带来增效，而无需感到恐慌和被替代的担忧。祝大家生活愉快！如果本文对您有所帮助，也欢迎将其分享给需要的小伙伴。以上教程均

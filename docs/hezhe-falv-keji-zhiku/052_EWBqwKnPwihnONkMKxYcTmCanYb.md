@@ -1,3 +1,4 @@
+
 # 重磅！法律科技基金 LegalTech Fund 募资超 1 亿美元，顶级律所再次加码
 
 > 来源：[https://docs.feishu.cn/docx/JYn5dSB6BoDWWbxqhmccUYlTnsf](https://docs.feishu.cn/docx/JYn5dSB6BoDWWbxqhmccUYlTnsf)

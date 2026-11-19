@@ -1,8 +1,7 @@
-# 11.28-马斯克 xAI 强势出击，Grok AI 有望下月推独立 App 挑战 ChatGPT
-
-> 来源：[https://agijuejin.feishu.cn/docx/NrK5dePnsoeZdCxvtVAcMgf0nie](https://agijuejin.feishu.cn/docx/NrK5dePnsoeZdCxvtVAcMgf0nie)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 11 月 28 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/NrK5dePnsoeZdCxvtVAcMgf0nie](https://agijuejin.feishu.cn/docx/NrK5dePnsoeZdCxvtVAcMgf0nie)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -40,7 +39,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/813/773.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/591.htm)
 
-
 2024 年 11 月 26 日，Hugging Face 发布 SmolVLM 开源 AI 模型，拥有 20 亿参数，用于端侧推理。其优点为体积小、速度快、内存高效且完全开源。该模型有三个版本，架构独特，能处理更长文本序列和多张图像，降低内存占用。在多个基准测试中表现出色，吞吐量比 Qwen2-VL 快。
 
 ## 💫 企业动态
@@ -49,20 +47,17 @@ IT之家 | [阅读原文](https://www.ithome.com/0/813/591.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/754.htm)
 
-
 2024 年 11 月 27 日，摩托罗拉海外推出 Moto AI 首次公测。用户双击手机背部即可访问多项高级功能，包括生成重要信息摘要的‘Catch me up’、为会议设计的‘Pay attention’、作为数字备忘录的‘Remember this’，还有更智能的搜索栏。关键词：摩托罗拉、人工智能。
 
 ### 💡 被曝入局浏览器市场后，OpenAI 将前谷歌 Chrome 工程师纳入麾下
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/750.htm)
 
-
 2024 年 11 月，OpenAI 将前谷歌 Chrome 工程师达林・费舍尔纳入麾下。他曾为 Chrome、Firefox 和 Neeva 作出重要贡献。本月早些时候有消息称 OpenAI 考虑推出自研浏览器与谷歌形成竞争。此外，OpenAI 还在与多方讨论为旅行等网站提供搜索业务，以及为三星设备提供 AI 功能。关键词：openai，Chrome。
 
 ### 💡 美国华盛顿装上 AI 防空摄像头，22 年老设备下岗
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/748.htm)
-
 
 2024 年 11 月 27 日，美国华盛顿装上 AI 防空摄像头，22 年老设备下岗。新的增强型区域态势感知（ERSA）系统由东部防空部门密切监控，可对不明飞行物进行视觉检查。该系统配备光电系统、红外摄像头、激光测距仪等，还有机器学习功能，能追踪小目标。华盛顿特区此前的摄像系统自 2001 年 9·11 事件后安装，22 年未升级。关键词：AI、监控摄像头、摄像头。
 
@@ -93,7 +88,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/813/678.htm)
 ### 💡 昆仑万维“天工大模型 4.0”o1 版启动邀测，具备中文逻辑推理能力
 
 IT之家 | [阅读原文](https://www.ithome.com/0/813/666.htm)
-
 
 2024 年 11 月 27 日，昆仑万维推出‘天工大模型 4.0’o1 版，启动邀测。该版本具备中文逻辑推理能力，有三款模型：Skywork o1 Open 是基于 Llama 3.1 8B 的开源模型；Skywork o1 Lite 有更好中文支持和更快推理速度；Skywork o1 Preview 是完整版推理模型。关键词：昆仑万维、天工大模型。
 
@@ -153,4 +147,4 @@ IT之家 | [阅读原文](https://www.ithome.com/0/813/709.htm)
 
 ![](img/23d87c582bccd5043a2ea9203e0ca704.png)
 
-谷歌前 CEO 施密特在播客节目中警告‘AI 恋人’流行趋势存在风险，可能让心智未成熟青少年痴迷，使他们更加孤独并冲**击社会问**题**。如美国一** 14 岁少年自杀，其母亲起诉聊天机器人平台。施密特指出家长对孩子接触在线内容控制能力有限。关键词：人工智能、聊天机器人。
+谷歌前 CEO 施密特在播客节目中警告‘AI 恋人’流行趋势存在风险，可能让心智未成熟青少年痴迷，使他们更加孤独并冲击社会问题。如美国一名 14 岁少年自杀，其母亲起诉聊天机器人平台。施密特指出家长对孩子接触在线内容控制能力有限。关键词：人工智能、聊天机器人。

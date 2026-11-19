@@ -1,3 +1,4 @@
+
 # 用AI打败AI，Claude Skills自建教程：3小时让AI按你的风格来办事
 
 > 来源：[https://my.feishu.cn/docx/OS5Fd1H7Ro9JpwxGBUuc9NgWnpf](https://my.feishu.cn/docx/OS5Fd1H7Ro9JpwxGBUuc9NgWnpf)
@@ -106,7 +107,7 @@ Skills是你明明白白告诉AI：
 
 用Claude Code开发了一个Skill。
 
-名字就叫：gongzhonghao-writer
+名字就叫：`gongzhonghao-writer`
 
 ![](img/dfb5d76de4b419836e9c71885f0f5c91.png)
 
@@ -306,13 +307,13 @@ AI生成的第一段话：
 
 一个完整的Skill包含：
 
-1、skill.yaml配置文件（定义触发关键词、版本信息）
+1、`skill.yaml`配置文件（定义触发关键词、版本信息）
 
-2、knowledge/知识库（存放风格规则、案例库）
+2、`knowledge/`知识库（存放风格规则、案例库）
 
-3、prompts/提示词规则（具体的写作流程指令）
+3、`prompts/`提示词规则（具体的写作流程指令）
 
-**老金风格规则**就放在knowledge/里：
+**老金风格规则**就放在`knowledge/`里：
 
 1、短句（一两句就换行）
 
@@ -334,7 +335,7 @@ AI生成的第一段话：
 
 Claude检测到 **👸号、写文章**。
 
-自动加载 gongzhonghao-writer Skill。
+自动加载 `gongzhonghao-writer` Skill。
 
 渐进式加载，只传输元数据，不浪费上下文。
 
@@ -342,9 +343,9 @@ Claude检测到 **👸号、写文章**。
 
 这和Skill是两码事。
 
-Slash Command是 **你手动触发 **的快捷命令。
+Slash Command是 **你手动触发**的快捷命令。
 
-比如老金我输入 /gongzhonghao。
+比如老金我输入 `/gongzhonghao`。
 
 这个命令会调用Skill开始工作。
 
@@ -368,15 +369,15 @@ Slash Command是 **你手动触发 **的快捷命令。
 
 AI不是孤军奋战，而是有个工具箱。
 
-**第四层：Subagent协作**
+**第四层：`Subagent`协作**
 
 就像有个小团队帮忙。
 
 比如文章写完后：
 
-1、seo-optimizer 自动优化5个标题，选最好的
+1、`seo-optimizer` 自动优化5个标题，选最好的
 
-2、file-organizer 自动归档到articles目录
+2、`file-organizer` 自动归档到`articles`目录
 
 3、质量验证自动检查有没有AI腔
 
@@ -388,7 +389,7 @@ AI不是孤军奋战，而是有个工具箱。
 
 比如：
 
-1、文章创建完成后，自动触发file-organizer归档
+1、文章创建完成后，自动触发`file-organizer`归档
 
 2、Git提交前，自动运行代码检查
 

@@ -1,10 +1,11 @@
+
 # Midjourney 创意绘图
 
 > 来源：[https://docs.feishu.cn/docx/PMTodqbkioWziPxGfXscYG2Mnte](https://docs.feishu.cn/docx/PMTodqbkioWziPxGfXscYG2Mnte)
 
 ![](img/12102f02e87491aea4cf88ff219e5efe.png)
 
-**玩好MJ需要具备的能力**
+## 玩好MJ需要具备的能力
 
 > **英语**：Midjourney是纯英文操作，输入英文关键词进行Ai绘图，需要你至少英语4级水平，能看懂基本的英语指令，输入英语关键词，进行AI绘画创作。
 
@@ -18,9 +19,9 @@
 
 > **逻辑思维**：兵器是身体的延伸，AI是思维的衍生，需要你具备逻辑树形思维创建图像创意思维：需要你脑洞打开，无远弗届，创意--创造--创世。
 
-#### 二、关键词
+## 二、关键词
 
-**1. 儿童读物**
+### 1. 儿童读物
 
 人物描述+children's book illustration+风格/children's book illustration+描述
 
@@ -28,7 +29,7 @@
 
 例子：可爱的小女孩在旷阔的山林午夜中奔跑，童话风格
 
-翻译：Sweet little girl running in the middle of the night in the open forest，children's book illustration，Fairy tale style --ar 16:9
+翻译：Sweet little girl running in the middle of the night in the open forest，children's book illustration，Fairy tale style `--ar 16:9`
 
 ![](img/e36a84d7af0d7c7e76d1916866a8a112.png)
 
@@ -36,8 +37,7 @@
 
 翻译：The little princess sat on the back of a goat on the prairie，children's book illustration，Fairy tale style。
 
-
-1.  **2. 对称图标**
+### 2. 对称图标
 
 描述词+icon design symmetrical,flat
 
@@ -55,7 +55,7 @@
 
 ![](img/aca0e60e43265add3fd1c6fe47f2fda8.png)
 
-1.  **3. 游戏列表**
+### 3. 游戏列表
 
 game sheet of+描述词
 
@@ -73,7 +73,7 @@ game sheet of+描述词
 
 ![](img/be43fb4829233574dd0a8cb50fb8976c.png)
 
-1.  **4. 黑暗中灯光效果**
+### 4. 黑暗中灯光效果
 
 Blacklight+描述物体
 
@@ -91,7 +91,7 @@ Blacklight+描述物体
 
 ![](img/6b895647207e9b761efb49325a1d6076.png)
 
-1.  **5. 图案设计**
+### 5. 图案设计
 
 描述+pattern
 
@@ -109,7 +109,7 @@ Blacklight+描述物体
 
 ![](img/c7f2a8e2f51c6cbff890f68f476fb248.png)
 
-1.  **6. 装修/建筑设计**
+### 6. 装修/建筑设计
 
 Interior Design+描述文字
 
@@ -127,7 +127,7 @@ Interior Design+描述文字
 
 ![](img/693e393a13aee096714f06efa336f375.png)
 
-1.  7. 独有风格（Explode 艺术家）
+### 7. 独有风格（Explode 艺术家）
 
 Explode+物体描述词+by Nychos
 
@@ -145,7 +145,7 @@ Explode+物体描述词+by Nychos
 
 ![](img/2105c454dbf936662ae662aedeb83fa0.png)
 
-1.  **8. 字符艺术**
+### 8. 字符艺术
 
 描述物体+ASCII art
 
@@ -163,7 +163,7 @@ Explode+物体描述词+by Nychos
 
 ![](img/f3f11da78ef668b226acea49cbb7b9ff.png)
 
-1.  **9. 欧普艺术**
+### 9. 欧普艺术
 
 Op art portrait+描述文字
 
@@ -181,15 +181,15 @@ Op art portrait+描述文字
 
 ![](img/7168678667f5cc72eb885f6ea9113e1f.png)
 
-1.  **10. 粘土风格（图标）**
+### 10. 粘土风格（图标）
 
 Tiny cute isometric（等距）+（物体）+maxemoji，soft lightingsoft pastel colors+3Dicon+clay+blender 3d+名人画风（或者背景颜色）
 
 注意：
 
-1.  等距+物体+maxemoji，soft lightingsoft pastel colors/pastel background+3Dicon+clay+blender 3d+背景颜色=等距粘土物体
+1. 等距+物体+maxemoji，soft lightingsoft pastel colors/pastel background+3Dicon+clay+blender 3d+背景颜色=等距粘土物体
 
-1.  yasuko blythe dolls（安子布莱斯娃娃/也可以换成其他知道的娃娃名称）+灯光/颜色/背景/材质+clay（粘土）+style Yoshitomo Nara（良奈吉友画风/或者其他名人风格）=人偶
+1. yasuko blythe dolls（安子布莱斯娃娃/也可以换成其他知道的娃娃名称）+灯光/颜色/背景/材质+clay（粘土）+style Yoshitomo Nara（良奈吉友画风/或者其他名人风格）=人偶
 
 例子：Tiny cute isometric coffee shop，maxemoji，soft lightingsoft pastel colors，3Dicon，clay，blender 3d，Blue background
 

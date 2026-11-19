@@ -1,3 +1,4 @@
+
 # L1G4-InternLM 论文分类实践（沐曦版）
 
 > 来源：[https://aicarrier.feishu.cn/docx/U6hQdRKxoo4lNkx3DYWcqXNNnTd](https://aicarrier.feishu.cn/docx/U6hQdRKxoo4lNkx3DYWcqXNNnTd)
@@ -28,37 +29,37 @@ DaoCloud官网地址：https://d.run/zh/
 
 ## 创建沐曦MXC500实例
 
-### 1.选择算力云->算力市场->上海六区（如下图选择MXC500）立即购买
+### 1. 选择算力云->算力市场->上海六区（如下图选择MXC500）立即购买
 
 ![](img/5f41adde9786e00bd793f873bd005fbb.png)
 
-### **2.选择镜像 **
+### 2. 选择镜像
 
 下拉框1 :基础镜像->Dlinfer
 
-下拉框2：选择带有Xtuner的镜像版本（如下图）
+下拉框2：选择带有`Xtuner`的镜像版本（如下图）
 
 ![](img/f34647468699a26b256eebb2a9f9bd0e.png)
 
-### 3.初始化存储
+### 3. 初始化存储
 
 操作步骤：文件存储—>选择《上海六区》->初始化文件存储
 
-说明：文件存储将会挂载在/root/data 目录下 ，免费容量为20G
+说明：文件存储将会挂载在`/root/data` 目录下 ，免费容量为20G
 
 特别注意：初始化完成后，请在web页面上传一个空文件,否则无法挂载成功
 
-### 4.创建并启动容器实例
+### 4. 创建并启动容器实例
 
 1.选择JuypterLab 进入开发机
 
 ![](img/d92a5d1bd812370165162d1f70cd5b19.png)
 
-# 3.开发机介绍
+# 开发机介绍
 
 ## 1. 文件夹介绍
 
-默认进入/root 目录下
+默认进入`/root` 目录下
 
 data文件夹为初始化挂载文件夹（读写）
 
@@ -66,16 +67,15 @@ Public-model 为平台共享模型仓库
 
 ![](img/004df9ee3503ecb9911ec3325c60c811.png)
 
-## 2.终端介绍
+## 2. 终端介绍
 
 ![](img/3a5ff920ece85b720889104a4011059b.png)
 
-## 3.环境检查
+## 3. 环境检查
 
-镜像中已经内置Xtuner
+镜像中已经内置`Xtuner`
 
 ```
-
 pip show xtuner
 
 #可以看到环境中已经有了xtuner
@@ -93,9 +93,9 @@ pip show xtuner
 
 ```
 
-## 4.GPU信息监控
+## 4. GPU信息监控
 
-mx-smi 与nvidia-smi的功能一致
+`mx-smi` 与`nvidia-smi`的功能一致
 
 ```
 root@ins-5njhw-645f976478-djpwb:~# mx-smi
@@ -128,9 +128,9 @@ End of Log
 root@ins-5njhw-645f976478-djpwb:~# 
 ```
 
-# 4.补充安装包
+# 补充安装包
 
-## 1.安装mpi4py
+## 1. 安装mpi4py
 
 ```
 pip install mpi4py
@@ -140,7 +140,7 @@ pip install transformers==4.48.0
 
 建议安装 ，否则报错
 
-## 2.链接模型位置
+## 2. 链接模型位置
 
 ```
 ln -s /root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat ./
@@ -156,9 +156,9 @@ ln -s /root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat ./
 
 [pretrain.jsonl](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZOGGbvjjMoPHlqxMytKcsjegnCC)
 
-# 5.开启训练
+# 开启训练
 
-## 1.预训练
+## 1. 预训练
 
 ```
 xtuner train pretrain.py --deepspeed deepspeed_zero1
@@ -172,7 +172,9 @@ pretrained_model_name_or_path = &#x27;./internlm2_5-1_8b-chat&#x27;
 data_files = [&#x27;./datasets/pretrain.jsonl&#x27;]
 ```
 
-```
+
+
+```python
 import torch
 from datasets import load_dataset
 from mmengine.dataset import DefaultSampler
@@ -181,7 +183,7 @@ from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
 from mmengine.optim import AmpOptimWrapper, CosineAnnealingLR, LinearLR
 from peft import LoraConfig
 from torch.optim import AdamW
-from transformers import AutoModelForCausalLM, AutoTokenizer,BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 from xtuner.dataset import process_hf_dataset
 from xtuner.dataset.collate_fns import default_collate_fn
@@ -195,15 +197,15 @@ from xtuner.model import SupervisedFinetune
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = &#x27;./internlm2_5-1_8b-chat&#x27;
+pretrained_model_name_or_path = './internlm2_5-1_8b-chat'
 use_varlen_attn = False
 
 # Data
-data_files = [&#x27;./datasets/pretrain.jsonl&#x27;]
+data_files = ['./datasets/pretrain.jsonl']
 max_length = 2048
 pack_to_max_length = False
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 2  # per_device
 accumulative_counts = 32  # bs = 1 GPU * 1 batch_size_per_device * 16 acc
 dataloader_num_workers = 0
@@ -221,17 +223,17 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 
 # Evaluate the generation performance during the training
 evaluation_freq = 500
-SYSTEM = &#x27;&#x27;
-evaluation_inputs = [&#x27;上海是&#x27;, &#x27;Shanghai is&#x27;]
+SYSTEM = ''
+evaluation_inputs = ['上海是', 'Shanghai is']
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 tokenizer = dict(
     type=AutoTokenizer.from_pretrained,
     pretrained_model_name_or_path=pretrained_model_name_or_path,
     trust_remote_code=True,
-    padding_side=&#x27;right&#x27;)
+    padding_side='right')
 
 model = dict(
     type=SupervisedFinetune,
@@ -248,24 +250,24 @@ model = dict(
             llm_int8_has_fp16_weight=False,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type=&#x27;nf4&#x27;)
+            bnb_4bit_quant_type='nf4')
     ),
     lora=dict(
         type=LoraConfig,
         r=64,
         lora_alpha=16,
         lora_dropout=0.1,
-        bias=&#x27;none&#x27;,
-        task_type=&#x27;CAUSAL_LM&#x27;)
+        bias='none',
+        task_type='CAUSAL_LM')
 )
 
 
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 train_dataset = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=data_files),
+    dataset=dict(type=load_dataset, path='json', data_files=data_files),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=pretrain_map_fn,
@@ -283,7 +285,7 @@ train_dataloader = dict(
     collate_fn=dict(type=default_collate_fn, use_varlen_attn=use_varlen_attn))
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -292,8 +294,8 @@ optim_wrapper = dict(
         type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&#x27;dynamic&#x27;,
-    dtype=&#x27;float16&#x27;)
+    loss_scale='dynamic',
+    dtype='float16')
 
 # learning policy
 # More information: https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/param_scheduler.md  # noqa: E501
@@ -357,16 +359,16 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&#x27;fork&#x27;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&#x27;nccl&#x27;),
+    dist_cfg=dict(backend='nccl'),
 )
 
 # set visualizer
 visualizer = None
 
 # set log level
-log_level = &#x27;INFO&#x27;
+log_level = 'INFO'
 
 # load from which checkpoint
 load_from = None
@@ -379,42 +381,41 @@ randomness = dict(seed=None, deterministic=False)
 
 # set log processor
 log_processor = dict(by_epoch=False)
-
 ```
 
-## 2.模型转换pth_to_hf
+## 2. 模型转换 `pth_to_hf`
 
-```
-#转换HF脚本
+```bash
+# 转换 HF 脚本
 xtuner convert pth_to_hf pretrain.py \
                          ./work_dirs/pretrain/iter_288.pth \
                          ./work_dirs/pretrain/hf
-
 ```
 
-## 3.模型合并merge
+## 3. 模型合并 `merge`
 
-```
+```bash
 xtuner convert merge ./internlm2_5-1_8b-chat \
                      ./work_dirs/pretrain/hf \
                      ./work_dirs/pretrain/merged \
                      --max-shard-size 2GB
-
 ```
 
-## 4.SFT训练
+## 4. SFT 训练
 
-```
+```bash
 xtuner train sft.py --deepspeed deepspeed_zero1
 ```
 
-注意替换模型和数据集的位置分别位于34行38行
+注意替换模型和数据集的位置分别位于34行38行。
 
-```
-pretrained_model_name_or_path = &quot;./work_dirs/pretrain/merged&quot;
+```bash
+pretrained_model_name_or_path = "./work_dirs/pretrain/merged"
 
-alpaca_en_path = &quot;./datasets/sftdata.jsonl&quot;#换成自己的数据路径
+alpaca_en_path = "./datasets/sftdata.jsonl"  # 换成自己的数据路径
 ```
+
+
 
 ```
 # Copyright (c) OpenMMLab. All rights reserved.
@@ -450,11 +451,11 @@ from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = &quot;./work_dirs/pretrain/merged&quot;
+pretrained_model_name_or_path = "./work_dirs/pretrain/merged"
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = &quot;./datasets/sftdata.jsonl&quot;#换成自己的数据路径
+alpaca_en_path = "./datasets/sftdata.jsonl"#换成自己的数据路径
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
 max_length = 2048
 pack_to_max_length = False
@@ -462,7 +463,7 @@ pack_to_max_length = False
 # parallel
 sequence_parallel_size = 1
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 1  # per_device
 accumulative_counts = 1
 accumulative_counts *= sequence_parallel_size
@@ -482,16 +483,16 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 # Evaluate the generation performance during the training
 evaluation_freq = 500
 SYSTEM = SYSTEM_TEMPLATE.alpaca
-evaluation_inputs = [&quot;请给我介绍五个上海的景点&quot;, &quot;Please tell me five scenic spots in Shanghai&quot;]
+evaluation_inputs = ["请给我介绍五个上海的景点", "Please tell me five scenic spots in Shanghai"]
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 tokenizer = dict(
     type=AutoTokenizer.from_pretrained,
     pretrained_model_name_or_path=pretrained_model_name_or_path,
     trust_remote_code=True,
-    padding_side=&quot;right&quot;,
+    padding_side="right",
 )
 
 model = dict(
@@ -510,7 +511,7 @@ model = dict(
             llm_int8_has_fp16_weight=False,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type=&quot;nf4&quot;,
+            bnb_4bit_quant_type="nf4",
         ),
     ),
     lora=dict(
@@ -518,17 +519,17 @@ model = dict(
         r=64,
         lora_alpha=16,
         lora_dropout=0.1,
-        bias=&quot;none&quot;,
-        task_type=&quot;CAUSAL_LM&quot;,
+        bias="none",
+        task_type="CAUSAL_LM",
     ),
 )
 
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 alpaca_en = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=alpaca_en_path),
+    dataset=dict(type=load_dataset, path='json', data_files=alpaca_en_path),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=alpaca_map_fn,
@@ -539,7 +540,7 @@ alpaca_en = dict(
     use_varlen_attn=use_varlen_attn,
 )
 
-sampler = SequenceParallelSampler if sequence_parallel_size &gt; 1 else DefaultSampler
+sampler = SequenceParallelSampler if sequence_parallel_size > 1 else DefaultSampler
 train_dataloader = dict(
     batch_size=batch_size,
     num_workers=dataloader_num_workers,
@@ -549,7 +550,7 @@ train_dataloader = dict(
 )
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -557,8 +558,8 @@ optim_wrapper = dict(
     optimizer=dict(type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&quot;dynamic&quot;,
-    dtype=&quot;float16&quot;,
+    loss_scale="dynamic",
+    dtype="float16",
 )
 
 # learning policy
@@ -628,16 +629,16 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&quot;fork&quot;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method="fork", opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&quot;nccl&quot;),
+    dist_cfg=dict(backend="nccl"),
 )
 
 # set visualizer
 visualizer = None
 
 # set log level
-log_level = &quot;INFO&quot;
+log_level = "INFO"
 
 # load from which checkpoint
 load_from = None
@@ -650,10 +651,9 @@ randomness = dict(seed=None, deterministic=False)
 
 # set log processor
 log_processor = dict(by_epoch=False)
-
 ```
 
-## 5.模型转换pth_to_hf
+## 5. 模型转换 `pth_to_hf`
 
 ```
 #转换HF脚本
@@ -662,7 +662,7 @@ xtuner convert pth_to_hf sft.py \
                          ./work_dirs/sft/hf
 ```
 
-## 6.模型合并
+## 6. 模型合并
 
 ```
 #与原始模型合并
@@ -672,36 +672,37 @@ xtuner convert merge ./internlm2_5-1_8b-chat \
                      --max-shard-size 2GB
 ```
 
-# 6.上传到modelscope
+## 6. 上传到 `modelscope`
 
-```
+
+
+```python
 from modelscope.hub.api import HubApi
-YOUR_ACCESS_TOKEN = &#x27;xxx-xxx-xxx-xxx-xxx&#x27;
+YOUR_ACCESS_TOKEN = 'xxx-xxx-xxx-xxx-xxx'
 api = HubApi()
 api.login(YOUR_ACCESS_TOKEN)
 
-
 from modelscope.hub.constants import Licenses, ModelVisibility
-owner_name = &#x27;Harvey&#x27;#你的用户名
-model_name = &#x27;internlm2_5-1_8b-chat-xtuner-sft-mx&#x27;#模型的英文名字
-model_id = f&quot;{owner_name}/{model_name}&quot;
+owner_name = 'Harvey'  # 你的用户名
+model_name = 'internlm2_5-1_8b-chat-xtuner-sft-mx'  # 模型的英文名字
+model_id = f"{owner_name}/{model_name}"
 
-#创建模型卡
+# 创建模型卡
 api.create_model(
     model_id,
     visibility=ModelVisibility.PUBLIC,
     license=Licenses.APACHE_V2,
-    chinese_name=&quot;internlm2_5-1_8b-chat-xtuner-sft-沐曦&quot;
+    chinese_name="internlm2_5-1_8b-chat-xtuner-sft-沐曦"
 )
 
-#上传模型
+# 上传模型
 api.upload_folder(
-    repo_id=f&quot;{owner_name}/{model_name}&quot;,
-    folder_path=&#x27;/root/data/work_dirs/sft/merged&#x27;,#sft之后与原模型合并的路径
-    commit_message=&#x27;fast commit&#x27;,
+    repo_id=f"{owner_name}/{model_name}",
+    folder_path='/root/data/work_dirs/sft/merged',  # sft之后与原模型合并的路径
+    commit_message='fast commit',
 )
 ```
 
-# 7.评测
+## 7. 评测
 
 参考 [L1G4- InternLM 论文分类微调实践（Swift 版）](https://aicarrier.feishu.cn/wiki/HfQuwYa4Xi4WJVkuNF3cygqnnch)

@@ -1,3 +1,4 @@
+
 # 教程：AI PPT汇报
 
 > 来源：[https://datawhaler.feishu.cn/docx/DqiJdCVLjoeJeexGy1gczZtandb](https://datawhaler.feishu.cn/docx/DqiJdCVLjoeJeexGy1gczZtandb)
@@ -8,23 +9,17 @@
 
 +   **学习时间**：1~3天
 
-+   **学习难度**：建议会一点代码，至少会运行python或者VBA
++   **学习难度**：建议会一点代码，至少会运行`python`或者`VBA`
 
 +   **学习方式**：
 
-1.  在场景细分图中，找到自己需要的场景
+1. 在场景细分图中，找到自己需要的场景
+1. 找到对应的案例学习（参考小作业与参考教程）
+1. 学习优秀打卡案例，查漏补缺
+1. 选择感兴趣的小作业，跟着案例自己尝试做一遍。
+1. 尝试熟悉流程后，应用到实际工作中
 
-1.  找到对应的案例学习（参考小作业与参考教程）
-
-1.  学习优秀打卡案例，查漏补缺
-
-1.  选择感兴趣的小作业，跟着案例自己尝试做一遍。
-
-1.  尝试熟悉流程后，应用到实际工作中
-
->
-
-> 打卡核实后**「可获得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
+> 打卡核实后**「可獲得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
 
 > 具体打卡要求详见：[【说明文档】打卡（非必须）](https://datawhaler.feishu.cn/wiki/UR4bwTSjJiAKFLkfqdCc8Dlgnld?from=from_copylink)
 
@@ -32,7 +27,7 @@
 
 ## 参考小作业
 
-多维表格（IQSLbTVpea4Ck1sZgUdcPTBFnBe_tblwrAkMAsC3BIcr）
+多维表格（`IQSLbTVpea4Ck1sZgUdcPTBFnBe_tblwrAkMAsC3BIcr`）
 
 ## 参考教程
 
@@ -42,9 +37,9 @@
 
 ##### Step1 找大模型帮忙看年报，并找出关键信息
 
-使用kimi帮忙解读文档，生成PPT提纲
+使用`kimi`帮忙解读文档，生成PPT提纲
 
-文档有点长，可以分两次给kimi
+文档有点长，可以分两次给`kimi`
 
 ![](img/b44e5f92c3babb006ab14dd6fea7cad6.png)
 
@@ -52,13 +47,13 @@
 
 ##### Step2 生成并复核PPT内容
 
-然后把两次总结下来的信息，再重新给kimi，让他给个PPT提纲
+然后把两次总结下来的信息，再重新给`kimi`，让他给个PPT提纲
 
-> 参考prompt:
+> 参考`prompt`:
 
 > 假设你是财务总监，公司考虑与茅台进行业务合作、投资或收购，请整合下面茅台2021年和2022年的财务报告信息。整理有关茅台财务状况和潜在投资回报的信息，整理一个PPT内容给我
 
-> XXX（之前的内容）
+> `XXX`（之前的内容）
 
 ![](img/3e05608145c910ae839e3374af720af0.png)
 
@@ -66,13 +61,13 @@
 
 可通过多种方式或者文件生成
 
-使用chat-PPT进行PPT生成
+使用`chat-PPT`进行PPT生成
 
 > 目前使用建议安装插件，网页端只能生成一页。普通用户一天可生成20页PPT
 
 ![](img/a546adb967f25a4f9af5895b014335d4.png)
 
-打开新的office，打开chatPPT插件
+打开新的office，打开`chatPPT`插件
 
 ![](img/cfe8a9da64aa64bbb64423b72cbab4e9.png)
 
@@ -92,7 +87,7 @@
 
 ![](img/55c80fc496ff749af5c751fc30329d5e.png)
 
-**使用gamma进行PPT生成**
+使用`gamma`进行PPT生成
 
 导入内容
 
@@ -118,9 +113,9 @@ AI生成中
 
 ![](img/ae6b5d6d32b2f9f07071cba0be3ffb8d.png)
 
-**使用WPS AI进行PPT生成**
+使用`WPS AI`进行PPT生成
 
-> 目前使用需要申请APS AI内测名额，或者成为WPS会员
+> 目前使用需要申请`APS AI`内测名额，或者成为`WPS`会员
 
 输入初始提示/文本信息
 
@@ -142,7 +137,7 @@ AI生成中
 
 其余内容根据自己需求进行调整
 
-使用Slidesgo进行PPT生成
+使用`Slidesgo`进行PPT生成
 
 输入主题，基调，页数，语言风格即可生成PPT
 
@@ -169,5 +164,3 @@ AI生成中
 ## 优秀学习案例
 
 > 非常值得一看的内容！如果你也觉得不错，记得给他们点个赞
-
-##

@@ -1,8 +1,9 @@
-# 11🈷️17日
-
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/Utr2dwilgorOEvxY7xhcKkvDnKb](https://v11enp9ok1h.feishu.cn/docx/Utr2dwilgorOEvxY7xhcKkvDnKb)
 
 # 可口可乐用 AI 重制经典广告，网友们却说 “太假”！
+
+## 11🈷️17日
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/Utr2dwilgorOEvxY7xhcKkvDnKb](https://v11enp9ok1h.feishu.cn/docx/Utr2dwilgorOEvxY7xhcKkvDnKb)
 
 可口可乐公司近期宣布，利用人工智能技术重制了1995年经典的 “节日来临”（Holidays Are Coming）广告。这项大胆的尝试让可口可乐成为首批完全通过 AI 制作电视广告的大型公司之一。为了实现这一目标，他们与三家 AI 工作室合作，分别制作了不同版本的广告，这些广告将通过电视、流媒体平台以及全球数字视频进行播出。
 
@@ -18,7 +19,7 @@ Zada 提到，Secret Level 版本的广告使用了真实演员的肖像，并�
 
 尽管 AI 制作的广告质量在当前的技术水平下相对较高，但在社交媒体和媒体评论中，反响却呈现出两极化。一些评论人士认为，新广告看起来过于人工，缺乏传统制作的精致感。Pereira 为这项技术辩护，称这一项目在叙述故事的过程中展现了人类的参与感和技术的潜力，并认为未来在讲故事方面还有巨大的革命空间。
 
-> **划重点:  **
+> **划重点：**
 
 > 📺 可口可乐利用 AI 技术重制了1995年经典广告，成为大型企业中首个全面采用 AI 制作广告的公司。
 

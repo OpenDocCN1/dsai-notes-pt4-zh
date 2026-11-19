@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230806）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/XXqyd2wyQoZKHOxpdvvc0gLlnbe](https://jlqyxzzvbk.feishu.cn/docx/XXqyd2wyQoZKHOxpdvvc0gLlnbe)
@@ -10,13 +11,16 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## GPT-5出世，需5万张H100！全球H100总需求43万张， 英伟达GPU陷短缺风暴
+### GPT-5出世，需5万张H100！全球H100总需求43万张，英伟达GPU陷短缺风暴
 
-- GPT-4可能在大约10000-25000张A100上进行了训练- Meta大约21000 A100- Tesla大约7000 A100- Stability AI大约5000 A100- Falcon-40B在384个A100上进行了训练
-
-– Inflection使用了3500和H100，来训练与GPT-3.5能力相当的模型
+- GPT-4可能在大约10000-25000张A100上进行了训练
+- Meta大约21000 A100
+- Tesla大约7000 A100
+- Stability AI大约5000 A100
+- Falcon-40B在384个A100上进行了训练
+- Inflection使用了3500和H100，来训练与GPT-3.5能力相当的模型
 
 另外，根据马斯克的说法，GPT-5可能需要30000-50000个H100。
 
@@ -26,15 +30,15 @@
 
 更多信息请访问：https://mp.weixin.qq.com/s/aPMq4iVZPMiK0QZFDhOzag
 
-## 编辑器之神**Vim**之父，Bram Moolenaar逝世，享年62岁。
+### 编辑器之神Vim之父，Bram Moolenaar逝世，享年62岁。
 
 Bram的一生将大部分时间都奉献给了Vim，甚至在一个月前，他还在对Vim做着更新、修改工作。
 
 Vim凭借它的高效、可扩展、完全免费开源等特性，在程序员群体的影响力可以说是不言而喻的，毫不夸张地评价是：
 
-一个程序员，只要用熟了Vim，**没有不爱的**。
+一个程序员，只要用熟了Vim，没有不爱的。
 
-**任何Linux用户，**几乎都无法绕开命令行，也绕不开Vim编辑器。
+任何Linux用户，几乎都无法绕开命令行，也绕不开Vim编辑器。
 
 甚至程序员圈里经常会存在“鄙视链”——用Vim的瞧不起用图形界面的。
 
@@ -46,7 +50,7 @@ Vim凭借它的高效、可扩展、完全免费开源等特性，在程序员�
 
 更多信息请访问：https://mp.weixin.qq.com/s/PTS0KyTWE0Ick6w6pUbzYwl
 
-## 苹果正招聘生成式AI人才，让生成式AI能在iPhone上本地运行
+### 苹果正招聘生成式AI人才，让生成式AI能在iPhone上本地运行
 
 ![](img/72f504c8e3a2f5fa11750a3ca25b18e2.png)
 
@@ -56,25 +60,23 @@ Vim凭借它的高效、可扩展、完全免费开源等特性，在程序员�
 
 更多信息请访问：https://www.163.com/dy/article/IBF8ABC50530IP7Q.html
 
-# AI软件精选
+## AI软件精选
 
-# Claude2**（****AI****聊天）**
+### Claude2 AI聊天
 
 Claude 2被称为ChatGPT最强劲的竞争对手，支持100K上下文对话，并且可以同时和5个文档进行对话。使用流畅，且语言和逻辑推理能力仅次于GPT4。
 
 但是Claude2目前只开放给美国和英国的节点使用，所以我们做了一个国内镜像站：https://claudeai.ai ，最大的特点是：
 
-1.  和官网体验完全一致，包括对话能力、文档处理能力以及前端界面；
-
-1.  国内可以方便使用，不需要🪜；
-
-1.  只需要邮箱验证码即可（和官网一样），免费使用，不需付费。
+1. 和官网体验完全一致，包括对话能力、文档处理能力以及前端界面；
+1. 国内可以方便使用，不需要🪜；
+1. 只需要邮箱验证码即可（和官网一样），免费使用，不需付费。
 
 ![](img/9d7418c43bba57680a2eed3c2b7a47b7.png)
 
 链接：https://www.claudeai.ai/
 
-# Glasp**（****AI****写作）**
+### Glasp AI写作
 
 LogoLuck-在线logo设计-好设计多幸运
 
@@ -82,7 +84,7 @@ LogoLuck-在线logo设计-好设计多幸运
 
 链接：https://logoluck.nolibox.com/home
 
-# Vidyo**（****AI****视频）**
+### Vidyo AI视频
 
 从长视频立即制作短视频。使用强大的AI从现有视频中创建短剪辑✨节省90%的时间和精力。
 
@@ -90,11 +92,11 @@ LogoLuck-在线logo设计-好设计多幸运
 
 链接：https://vidyo.ai/
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+更多AI工具请访问：http://ai.kcodez.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -102,7 +104,7 @@ GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸�
 
 ![](img/44495f5e0e7e7835d29e98ce2cc1b028.png)
 
-## 付费课程（ai认知提升）
+### 付费课程（ai认知提升）
 
 AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
@@ -110,17 +112,15 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/19b89bc3778bbe5edfd86e6d53d80ccd.png)
 
-#
-
 ![](img/07b828d0e42d3953c3081aa0e3b87515.png)
 
 ![](img/517d8cb96959fb65b75e6fe5216ee3a6.png)
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4.会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：kanAI 九五折优惠，或者直接二维码访问
 
 ![](img/26e8bb6019c0f8519271121b106492a4.png)
 
@@ -130,7 +130,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/6d570393078c6c07c9a003e2e8203e81.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+国内镜像GPT，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/252a63a4ffce651132d1627d957d1b02.png)
 

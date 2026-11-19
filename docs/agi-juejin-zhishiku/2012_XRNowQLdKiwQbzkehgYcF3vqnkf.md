@@ -1,9 +1,7 @@
-# 08.14-韩企 DEEPX 联手三星打造全球首款 2nm 端侧生成式 AI 芯片，2027 年量产
-
-> 来源：[https://agijuejin.feishu.cn/docx/GPuudUWITobzXIxwkT7cTY9xnjg](https://agijuejin.feishu.cn/docx/GPuudUWITobzXIxwkT7cTY9xnjg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 08 月 14 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/GPuudUWITobzXIxwkT7cTY9xnjg](https://agijuejin.feishu.cn/docx/GPuudUWITobzXIxwkT7cTY9xnjg)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ## ⭐ 今日热点
@@ -24,7 +22,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/875/142.htm)
 
 ![](img/93e93cbd6840ee6cfb5a5b8ecf3585d1.png)
 
-Figure人形机器人首秀灵巧手叠衣服。在神经网络架构不变、仅增加数据集的情况下，原本用于物流场景的机器人习得新技能。完成任务展现三项成果：多指手人形机器人自主叠衣；相同架构仅数据变；实现自然多模态交互。其Helix架构是关键，由两个系统组成，此前包裹分拣任务还针对性改进该架构。未来团队计划提升机器人灵活性、速度和泛化能力 。
+Figure人形机器人首秀灵巧手叠衣服。在神经网络架构不变、仅增加数据集的情况下，原本用于物流场景的机器人习得新技能。完成任务展现三项成果：多指手人形机器人自主叠衣；相同架构仅数据变；实现自然多模态交互。其Helix架构是关键，由两个系统组成，此前包裹分拣任务还针对性改进该架构。未来团队计划提升机器人灵活性、速度和泛化能力。
 
 ### 💡 推理性能超传统 10 倍，群联发布 aiDAPTIV+ 英特尔 AI PC 笔记本方案
 

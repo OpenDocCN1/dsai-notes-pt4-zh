@@ -1,12 +1,13 @@
+
 # 盘点丨那些 AI 公司悄咪咪上线的产品（六）
 
-> 来源：[https://agispace.feishu.cn/docx/ZJELdsQyYoOTh2xLnTPcbjIunCb](https://agispace.feishu.cn/docx/ZJELdsQyYoOTh2xLnTPcbjIunCb)
-
+> 来源：`https://agispace.feishu.cn/docx/ZJELdsQyYoOTh2xLnTPcbjIunCb`
+>
 > 作者：特工少女
-
+>
 > 👸号：特工宇宙
-
-> 原文链接：https://mp.weixin.qq.com/s/8YSNz7dZyhu-GEKwoFuBOA
+>
+> 原文链接：`https://mp.weixin.qq.com/s/8YSNz7dZyhu-GEKwoFuBOA`
 
 ![](img/65b0c8f37950db67f8d82aec45665b56.png)
 
@@ -14,7 +15,9 @@
 
 ![](img/72b9527985a0e1663aff48ac3a360294.png)
 
-第一款产品——**小黄蕉**，**来自咱们的老朋友字节**跳动。据了解，该商标注册主体与番茄小说是同一个，小黄蕉项目由徐旸带队。很难想象字节除了豆包，又在内测这样一款 AI 虚拟陪伴产品，还取了这么个“可爱”的名字。访问地址：https://chatwiz.cn/h5/feely（不过截至 6 月 8 日晚，该内测已结束）。
+## 小黄蕉
+
+第一款产品——**小黄蕉**，**来自咱们的老朋友字节**跳动。据了解，该商标注册主体与番茄小说是同一个，小黄蕉项目由徐旸带队。很难想象字节除了豆包，又在内测这样一款 AI 虚拟陪伴产品，还取了这么个“可爱”的名字。访问地址：`https://chatwiz.cn/h5/feely`（不过截至 6 月 8 日晚，该内测已结束）。
 
 ![](img/ecdea1319cc71678dc46b1ec14d48bb8.png)
 
@@ -44,11 +47,13 @@
 
 ![](img/d129d0cc5d75099b7cd405f6924b44ee.png)
 
+## 海绵音乐
+
 第二款产品名为“**海绵音乐**”，也来自字节跳动。
 
 看这个名字应该也能猜出来，是一款 AI 生成音乐的产品。
 
-访问地址：https://www.haimianyinyue.com/产品于 6 月 5 日开启内测，可以免费听一些精选的 AI 歌曲。
+访问地址：`https://www.haimianyinyue.com/`产品于 6 月 5 日开启内测，可以免费听一些精选的 AI 歌曲。
 
 但是如果想要创作的话，需要输入邀请码。
 
@@ -64,11 +69,13 @@ BTW，我们正在筹备一场 AI+音乐的全球大赛，如果你对该赛事�
 
 ![](img/87268ef51c47092f8d5ed2fbcab6641d.png)
 
+## Motiff（妙多）
+
 **第三个是一个 AI+**设计的产品——Motiff（妙多）。令人惊奇的是，该产品从属于猿辅导。没错，没打错字，小猿搜题的那个猿辅导。早在去年的 8 月份，我们就关注到了这款产品。而在今年 6 月 5 日，该产品在新加坡全球发布。
 
 ![](img/f5888f56d91ed4469d15f75d94f4bba7.png)
 
-产品官网：https://motiff.cn/
+产品官网：`https://motiff.cn/`
 
 ![](img/00f6e8f382f00fb13cecd7ad9715fd7f.png)
 

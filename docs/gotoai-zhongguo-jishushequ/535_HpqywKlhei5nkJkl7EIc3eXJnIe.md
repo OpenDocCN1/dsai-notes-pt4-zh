@@ -1,8 +1,9 @@
+
 # OpenClaw真实应用案例合集
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/Oyw3dBzmloWAxlxfpJPcncJnn5f](https://gotoaiworld.feishu.cn/docx/Oyw3dBzmloWAxlxfpJPcncJnn5f)
 
-> 🔗 原文链接： h[ttps://github.com/](https://github.com/hesamsheikh/awesome-openclaw-usecases/tree/main)hesamsheikh/awes...
+> 🔗 原文链接： h[ttps://github.com/](https://github.com/)hesamsheikh/awes...
 
 ![](img/17ffb29ce8d41e54fa88e1ac8ca83f88.png)
 
@@ -26,20 +27,20 @@
 | [目标驱动自主任务](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/overnight-mini-app-builder.md) | 脑袋中放下你的目标，让你的经纪人自动生成、安排并完成日常任务——包括一夜之间打造惊喜的小应用。 |
 | [YouTube内容管道](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/youtube-content-pipeline.md) | 自动化YouTube频道的视频创意发掘、调研和跟踪。 |
 | [多智能体内容工厂](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/content-factory.md) | 在Discord中运行一个多代理内容管道——研究、写作和缩略图代理在专门渠道工作。 |
-| [自主游戏开发流程](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-game-dev-pipeline.md) | 教育游戏开发的全生命周期管理：从待办事项选择到实现、注册、文档和git提交。执行“错误优先”政策。 |
+| [自主游戏开发流程](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-game-dev-pipeline.md) | 教育游戏开发的全生命周期管理：从待办事项选择到实现、注册、文档和`git`提交。执行“错误优先”政策。 |
 
 ## 基础设施与开发运维
 
 | 名称 | 描述 |
 | --- | --- |
-| [n8n 工作流程编排](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md) | 通过webhook将API调用委托给n8n的工作流——代理从不触碰凭证，且每次集成都是可视化且可锁定的。 |
-| [自愈家庭服务器](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/self-healing-home-server.md) | 在你的家庭网络中运行一个始终在线的基础设施代理，支持SSH访问、自动化Cron作业和自我修复能力。 |
+| [`n8n` 工作流程编排](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md) | 通过`webhook`将`API`调用委托给`n8n`的工作流——代理从不触碰凭证，且每次集成都是可视化且可锁定的。 |
+| [自愈家庭服务器](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/self-healing-home-server.md) | 在你的家庭网络中运行一个始终在线的基础设施代理，支持`SSH`访问、自动化`Cron`作业和自我修复能力。 |
 
 ## 生产力
 
 | 名称 | 描述 |
 | --- | --- |
-| [自主项目管理](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md) | 使用STATE.yaml模式协调多代理项目——子代理并行工作，无需编排器开销。 |
+| [自主项目管理](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md) | 使用`STATE.yaml`模式协调多代理项目——子代理并行工作，无需编排器开销。 |
 | [多渠道人工智能客户服务](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-customer-service.md) | 将WhatsApp、Instagram、电子邮件和Google评论统一在一个AI驱动的收件箱中，全天候24小时自动回复。 |
 | [基于手机的个人助理](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-based-personal-assistant.md) | 通过电话访问您的AI代理，任何手机都可免提语音协助。 |
 | [收件箱整理](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/inbox-declutter.md) | 总结通讯，并以电子邮件形式发送摘要。 |
@@ -53,7 +54,7 @@
 | [家庭日历与家庭助理](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/family-calendar-household-assistant.md) | 将所有家庭日历汇总成晨间简报，监控约会信息，管理家庭库存。 |
 | [多智能体专用团队](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-agent-team.md) | 通过单一的Telegram聊天，作为一个协调团队运营多个专业代理（战略、开发、市场、业务）。 |
 | [定制晨间简报](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md) | 每天早晨，获取完全定制的每日简报——新闻、任务、内容草稿和AI推荐作。 |
-| [第二大脑](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/second-brain.md) | 给机器人发短信记录，然后在自定义Next.js仪表盘中搜索所有记忆。 |
+| [第二大脑](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/second-brain.md) | 给机器人发短信记录，然后在自定义`Next.js`仪表盘中搜索所有记忆。 |
 | [活动嘉宾确认](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/event-guest-confirmation.md) | 逐一联系活动嘉宾确认出席情况，收集笔记，并通过AI语音全自动整理总结。 |
 
 ## 研究与学习

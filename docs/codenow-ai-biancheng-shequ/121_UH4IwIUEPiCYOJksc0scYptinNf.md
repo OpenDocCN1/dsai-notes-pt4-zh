@@ -1,8 +1,9 @@
+
 # Refactoring UI
 
 > 来源：[https://now.feishu.cn/docx/TTyKdHhqnor2S4xOX5tcZ9xWnmd](https://now.feishu.cn/docx/TTyKdHhqnor2S4xOX5tcZ9xWnmd)
 
-tailwindCSS官方网站推荐的教程，转给大家参考。让你在与Cursor对话，构建UI时更专业
+`tailwindCSS`官方网站推荐的教程，转给大家参考。让你在与`Cursor`对话，构建UI时更专业
 
 ![](img/96ba92993e9f13f9347f25e90d18f23b.png)
 

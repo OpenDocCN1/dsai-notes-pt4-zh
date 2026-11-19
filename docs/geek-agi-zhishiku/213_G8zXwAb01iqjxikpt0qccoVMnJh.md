@@ -1,10 +1,11 @@
+
 # 手机安装注册 ChatGPT 教程
 
 > 来源：[https://geekbang.feishu.cn/docx/JIbNdayY3oJWiaxB8ywc7YcEntc](https://geekbang.feishu.cn/docx/JIbNdayY3oJWiaxB8ywc7YcEntc)
 
-# 安卓系统安装 ChatGPT
+## 安卓系统安装 ChatGPT
 
-(1) 首先安装谷歌商店（需要用到魔术，需自行解决）可参考：https://zhuanlan.zhihu.com/p/683383981
+(1) 首先安装谷歌商店（需要用到魔术，需自行解决）可参考：`https://zhuanlan.zhihu.com/p/683383981`
 
 (2) 打开 Google Play 商店。
 
@@ -12,13 +13,9 @@
 
 (4) 在搜索结果中点击 chatgpt 应用程序进行下载安装
 
+## 安卓系统订阅ChatGPT plus
 
-# 安卓系统订阅ChatGPT plus
-
-首先，我们需要在谷歌账号里绑定谷歌支付，目前只支持国内的双币信用卡或者全币信用卡。打开谷歌
-
-商店，点击右上角的账户管理，点击“付款和订阅”
-
+首先，我们需要在谷歌账号里绑定谷歌支付，目前只支持国内的双币信用卡或者全币信用卡。打开谷歌商店，点击右上角的账户管理，点击“付款和订阅”
 
 ### 点击付款方式
 
@@ -56,7 +53,7 @@
 
 如日后想要取消订阅，可到谷歌商店的账号管理，付款和订阅里面取消即可。
 
-# IOS 系统安装 ChatGPT
+## IOS 系统安装 ChatGPT
 
 ### 需要注册一个美区Apple ID
 

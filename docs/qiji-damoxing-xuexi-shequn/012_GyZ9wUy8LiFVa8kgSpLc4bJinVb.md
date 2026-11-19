@@ -1,14 +1,15 @@
+
 # 奇绩大模型日报（12月 5日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/SmHEdiQAuoFNRCxla35cH5Zonyw](https://miracleplus.feishu.cn/docx/SmHEdiQAuoFNRCxla35cH5Zonyw)
 
-# 资讯
+## 资讯
 
 ### Genie 2发布
 
 贡献人：
 
-https://mp.weixin.qq.com/s/PaUScHrclUwYABwT8LL5zg
+`https://mp.weixin.qq.com/s/PaUScHrclUwYABwT8LL5zg`
 
 Google DeepMind 最近发布了震撼人心的新一代世界模型——Genie 2。这个基础世界模型能够根据一张图像生成可供人类或AI智能体游玩的无限3D环境。该模型标志着AI在虚拟世界构建领域的重大突破，能够模拟复杂的物理效果、角色动画、物体互动等，并且为AI的训练和评估提供了更为丰富、动态的场景。与早期的Genie 1相比，Genie 2不再局限于2D环境，而是能够生成具有多种可能性和高度交互性的3D世界。
 
@@ -28,7 +29,7 @@ Genie 2不仅可以生成长达一分钟的一致视频世界，还能模拟各�
 
 贡献人：
 
-https://mp.weixin.qq.com/s/ucfWi8J-E3w0FBoDtz6WgQ
+`https://mp.weixin.qq.com/s/ucfWi8J-E3w0FBoDtz6WgQ`
 
 12月5日，智峪生科在江苏常州正式启用其百吨级生物合成天然香料生产中心。该中心不仅涵盖天然香料、化妆品原料、功能食品添加剂等多个领域，还成功实现了AI计算与合成生物学的深度融合，从反应路线设计到生物元件的挖掘、设计和改造，再到自动化智能化的研发与生产，推动了产业化落地。
 
@@ -46,7 +47,7 @@ https://mp.weixin.qq.com/s/ucfWi8J-E3w0FBoDtz6WgQ
 
 贡献人：
 
-https://mp.weixin.qq.com/s/dIR_RwhQ6U7ucMnZ8riAqw
+`https://mp.weixin.qq.com/s/dIR_RwhQ6U7ucMnZ8riAqw`
 
 2024年，NeurIPS公布了时间检验奖，并且首次将该奖项同时授予两篇论文：Ilya Sutskever的Seq2Seq和Ian Goodfellow的生成对抗网络（GAN）。该奖项表彰那些经得起时间考验的开创性研究。
 
@@ -66,7 +67,7 @@ Ozair也提到，尽管GAN一度被认为是自己最伟大的成就，但他认
 
 贡献人：
 
-https://mp.weixin.qq.com/s/w9carskDhvNwlJIsyFsoEg
+`https://mp.weixin.qq.com/s/w9carskDhvNwlJIsyFsoEg`
 
 外部制裁虽然边际收紧，国内也加紧半导体产业攻关，大基金三期出台，将重点支持先进制程突破，拉动设备需求并加快卡脖子设备的攻关进度，预计设备国产化率将持续提升。国内下游扩产持续向上+国产化设备验证持续推进，国产设备公司订单增长维持较好趋势，板块整体基本面向好。
 
@@ -78,7 +79,7 @@ https://mp.weixin.qq.com/s/w9carskDhvNwlJIsyFsoEg
 
 贡献人：
 
-https://mp.weixin.qq.com/s/YuC57YdvBr74ZXF4OYJktw
+`https://mp.weixin.qq.com/s/YuC57YdvBr74ZXF4OYJktw`
 
 在 ChatGPT 发布两周年之际，OpenAI 的成就令人瞩目，但背后隐藏的商业挑战与人才流失则揭示了其发展的复杂性。自 2022 年推出以来，ChatGPT 每周吸引 2.5 亿用户，为 OpenAI 带来了 37 亿美元收入，估值达 1570 亿美元，打破了历史纪录。然而，OpenAI 面临的最大难题是激进的支出模式，花费近 90 亿美元才能获得如此的收入，迫切需要更高的增长来解决盈利问题。
 
@@ -96,7 +97,7 @@ Altman 的战略以追求商业化和扩展为核心，这一方向已明确塑�
 
 贡献人：
 
-https://mp.weixin.qq.com/s/M-zLHBSsk0vfjJvkUeUhrw
+`https://mp.weixin.qq.com/s/M-zLHBSsk0vfjJvkUeUhrw`
 
 欧盟《人工智能法案》（EU AI Act）是全球首部全面的人工智能立法，旨在促进负责任的AI发展，并根据AI系统的风险级别设定不同的监管要求。该法案于2024年正式生效，并对开源开发者的实践产生了影响，尤其是在开源AI系统和模型的开发、使用和部署方面。
 
@@ -106,41 +107,41 @@ https://mp.weixin.qq.com/s/M-zLHBSsk0vfjJvkUeUhrw
 
 关键义务
 
-1.  **风险分类**：AI系统按风险分为四类：
+1. **风险分类**：AI系统按风险分为四类：
 
-+   **不可接受风险**：如侵犯人权的系统（例如利用面部识别监控）。这类系统被禁止。
++ **不可接受风险**：如侵犯人权的系统（例如利用面部识别监控）。这类系统被禁止。
 
-+   **高风险**：如涉及关键基础设施或执法的系统，需遵循严格合规步骤。
++ **高风险**：如涉及关键基础设施或执法的系统，需遵循严格合规步骤。
 
-+   **有限风险**：直接与用户互动的系统（如生成文本的聊天机器人），需满足透明性要求。
++ **有限风险**：直接与用户互动的系统（如生成文本的聊天机器人），需满足透明性要求。
 
-+   **最小风险**：不构成上述风险的系统，仅需遵守现有法律。
++ **最小风险**：不构成上述风险的系统，仅需遵守现有法律。
 
-1.  **开源AI的义务**：开源开发者需要采取一系列措施，以确保合规：
+2. **开源AI的义务**：开源开发者需要采取一系列措施，以确保合规：
 
-+   **文档要求**：为开源AI模型提供详细的训练内容摘要。
++ **文档要求**：为开源AI模型提供详细的训练内容摘要。
 
-+   **选择退出机制**：确保尊重版权并允许数据提供者选择退出AI训练。
++ **选择退出机制**：确保尊重版权并允许数据提供者选择退出AI训练。
 
-+   **生成内容标记**：AI生成的内容必须明确标记为生成或操控内容。
++ **生成内容标记**：AI生成的内容必须明确标记为生成或操控内容。
 
-1.  **合规工具**：Hugging Face等平台提供了多个工具来帮助开源开发者实现合规，包括支持退出流程、数据删除、文档和许可管理等工具。这些工具有助于开源项目满足透明性和隐私要求。
+3. **合规工具**：Hugging Face等平台提供了多个工具来帮助开源开发者实现合规，包括支持退出流程、数据删除、文档和许可管理等工具。这些工具有助于开源项目满足透明性和隐私要求。
 
-1.  **选择退出机制**：开发者需确保其使用的训练数据符合欧盟版权法，尊重版权持有人的选择退出请求。Hugging Face提供的工具，如Spawning API，允许创作者表达他们的内容不希望用于AI训练。
+4. **选择退出机制**：开发者需确保其使用的训练数据符合欧盟版权法，尊重版权持有人的选择退出请求。Hugging Face提供的工具，如Spawning API，允许创作者表达他们的内容不希望用于AI训练。
 
 开源开发者的准备工
 
-+   **文档和许可管理**：确保为开源AI模型提供完整的训练内容和许可信息，符合《人工智能法案》对开源的定义。
++ **文档和许可管理**：确保为开源AI模型提供完整的训练内容和许可信息，符合《人工智能法案》对开源的定义。
 
-+   **合规工具使用**：利用Hugging Face等平台的水印、文档生成和数据删除工具，帮助合规并确保透明性。
++ **合规工具使用**：利用Hugging Face等平台的水印、文档生成和数据删除工具，帮助合规并确保透明性。
 
-+   **参与法案的制定过程**：《人工智能法案》的一些实践准则仍在开发中，开源社区可以通过参与公开咨询，帮助塑造这些准则，确保法案在实践中便于中小企业和研究人员遵守。
++ **参与法案的制定过程**：《人工智能法案》的一些实践准则仍在开发中，开源社区可以通过参与公开咨询，帮助塑造这些准则，确保法案在实践中便于中小企业和研究人员遵守。
 
-# 推特
+## 推特
 
 ### Karpathy分享：Attention is All You Need 作者描述论文灵感来源
 
-https://x.com/karpathy/status/1864023344435380613
+`https://x.com/karpathy/status/1864023344435380613`
 
 关于 “Attention” 算子的开发和灵感背后（即“Attention is All You Need”论文中引入 Transformer 的 Attention 算子）的真实故事，来自大约两年前我与作者 @DBahdanau 的私人邮件交流，现已获其许可公开发布。这是针对过去几天内在网上传播的一些关于其开发过程的虚假信息而进行的澄清。
 
@@ -156,7 +157,7 @@ Attention 是一种极其聪明的数据相关加权平均操作。这是一种�
 
 ### FishSpeech v1.5 来了！多语言、零样本即时语音克隆、低延迟、开源文本转语音模型
 
-https://x.com/reach_vb/status/1864382548685492339
+`https://x.com/reach_vb/status/1864382548685492339`
 
 冲啊！FishSpeech v1.5 来了！多语言、零样本即时语音克隆、低延迟、开源文本转语音模型 🔥
 
@@ -176,11 +177,11 @@ https://x.com/reach_vb/status/1864382548685492339
 
 ![](img/08e52f9c786fc9338da7c0ce534cc6c5.png)
 
-[KDZhqPvDe96Xag9_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TX6vbZBdRoxi5ZxERKgcXsl5nXf)
+[`KDZhqPvDe96Xag9_.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TX6vbZBdRoxi5ZxERKgcXsl5nXf)
 
 ### Chip Huyen著《人工智能工程：基于基础模型构建应用程序》即将发布
 
-https://x.com/chipro/status/1864384749911065035
+`https://x.com/chipro/status/1864384749911065035`
 
 终于完成了！15 万字、200 多幅插图、250 个脚注，以及超过 1200 个参考链接。
 
@@ -188,13 +189,15 @@ https://x.com/chipro/status/1864384749911065035
 
 • 电子书将在本周晚些时候发布。
 
-• 平装版应该会在几周后上市（希望能在年底前）。预购链接：https://amzn.to/49j1cGS
+• 平装版应该会在几周后上市（希望能在年底前）。预购链接：`https://amzn.to/49j1cGS`
 
-[ • 完整手稿也可以在 O’Reilly 平台上访问：http](https://oreillymedia.pxf.io/c/5719111/2146021/15173)s://oreillymedia.pxf.io/c/5719111/2146021/15173
+[完整手稿也可以在 O’Reilly 平台上访问](https://oreillymedia.pxf.io/c/5719111/2146021/15173)
 
 如果没有那么多人帮助我，这一切都不可能实现。感谢那些审阅早期草稿的人、耐心回答我成千上万问题的人、向我介绍精彩案例的人，以及帮助我发现被忽略技术之美的人。
 
 感谢大家让这一切成为可能！
+
+
 
 ![](img/140f41095cb48a735a499102fbd18308.png)
 
@@ -208,11 +211,11 @@ https://x.com/unslothai/status/1864384960666456535
 
 我们的测试显示，标准的 4-bit 量化模型性能远逊于原始 16-bit 模型，而 Unsloth 动态 4-bit 量化 提供了非常高的精度和可靠性。
 
-阅读我们的博客：[https://unsloth.](https://unsloth.ai/blog/dynamic-4bit)ai/blog/dynamic-4bit
+阅读我们的博客：https://unsloth.ai/blog/dynamic-4bit
 
-[在 ](https://huggingface.co/collections/unsloth/unsloth-4-bit-dynamic-quants-67503bb873f89e15276c44e7)HuggingFace 上查看动态 4-bit 量化：https://huggingface.co/collections/unsloth/unsloth-4-bit-dynamic-quants-67503bb873f89e15276c44e7
+[在 HuggingFace 上查看动态 4-bit 量化](https://huggingface.co/collections/unsloth/unsloth-4-bit-dynamic-quants-67503bb873f89e15276c44e7)
 
-Colab Notebook：[https://colab.research.google.com/drive/1j0N4](https://colab.research.google.com/drive/1j0N4XTY1zXXy7mPAhOC1_gMYZ2F2EBlk?usp=sharing)XTY1zXXy7mPAhOC1_gMYZ2F2EBlk?usp=sharing
+[Colab Notebook](https://colab.research.google.com/drive/1j0N4XTY1zXXy7mPAhOC1_gMYZ2F2EBlk?usp=sharing)
 
 ![](img/da1021afd28615e94c4f39e56d126902.png)
 
@@ -294,13 +297,13 @@ Plot 的功能涵盖从智能日历规划到 AI 驱动的社交聆听，无缝�
 
 ![](img/0078f746ca66de126bceeff0a33b140c.png)
 
-### **Oopsie——**革命性的基于 AI 的移动调试工具
+### Oopsie——革命性的基于 AI 的移动调试工具
 
 贡献人：
 
 https://www.zipy.ai
 
-**Oopsie** 是**一款革命****性的基于**** AI 的**移动调试工具，专为 Flutter 和 React Native 开发者设计，旨在让调试更加智能、高效。Oopsie 提供了一整套功能强大的工具，包括 ▶️ 会话重播，让您能够回顾用户的操作并轻松重现问题；🤖 错误监控，帮助您实时追踪并识别应用中的关键问题；💡 AI 摘要，自动生成问题的智能分析，让复杂的调试过程变得清晰易懂；以及 🔥 Firebase Crashlytics 集成，将崩溃报告无缝整合到您的调试流程中。开发者可以深入了解用户体验中的每一个细节，从而快速定位问题根源，并以更短的时间修复错误。这款工具通过减少反复测试和冗长分析所耗费的时间，让团队将更多精力集中在产品改进和用户体验优化上。无论是初创团队还是大型开发团队，Oopsie 都是提升调试效率和开发速度的必备利器，为打造高质量的移动应用提供了坚实保障。
+Oopsie 是一款革命性的基于 AI 的移动调试工具，专为 Flutter 和 React Native 开发者设计，旨在让调试更加智能、高效。Oopsie 提供了一整套功能强大的工具，包括 ▶️ 会话重播，让您能够回顾用户的操作并轻松重现问题；🤖 错误监控，帮助您实时追踪并识别应用中的关键问题；💡 AI 摘要，自动生成问题的智能分析，让复杂的调试过程变得清晰易懂；以及 🔥 Firebase Crashlytics 集成，将崩溃报告无缝整合到您的调试流程中。开发者可以深入了解用户体验中的每一个细节，从而快速定位问题根源，并以更短的时间修复错误。这款工具通过减少反复测试和冗长分析所耗费的时间，让团队将更多精力集中在产品改进和用户体验优化上。无论是初创团队还是大型开发团队，Oopsie 都是提升调试效率和开发速度的必备利器，为打造高质量的移动应用提供了坚实保障。
 
 ![](img/2cc63bebc2287a72dde035059b10471e.png)
 
@@ -320,7 +323,7 @@ Digma 的后端从您的应用程序接收 OTEL 数据（在本地运行应用�
 
 Digma 背后的故事
 
-**Di**g**ma认**为，除非应用程序分析是连续且自动的（就像测试一样），否则它不会有效。目前有许多可观察性工具，但它们都需要积极和手动地花费时间、注意力和专业知识才能获得结果。当发生可怕的事情时，它们只会被动使用，这并不奇怪。可观察性的最终目标不应该是创建仪表板，而应该是改进我们的应用程序和代码。
+Digma 认为，除非应用程序分析是连续且自动的（就像测试一样），否则它不会有效。目前有许多可观察性工具，但它们都需要积极和手动地花费时间、注意力和专业知识才能获得结果。当发生可怕的事情时，它们只会被动使用，这并不奇怪。可观察性的最终目标不应该是创建仪表板，而应该是改进我们的应用程序和代码。
 
 ![](img/c6cfc50d12a3c68fb673e641033ecfee.png)
 
@@ -394,6 +397,8 @@ https://zhuanlan.zhihu.com/p/10596277450
 
 测试表明，qwen2-1.5b-int4模型的初始化时间达到8267毫秒，虽然经过int4量化减少了模型大小，但数据重排和拷贝依然是瓶颈。MNN引擎的初始化流程包括创建运行时环境、读取模型文件、重排权重数据等步骤，而最耗时的部分是权重的预重排。预重排过程涉及从磁盘读取数据、重建算子、调整权重格式等多个环节，这些操作在LLM模型中占用了大量时间。针对这一瓶颈，优化工作重点集中在算子重建、权重解析与重排上。
 
+
+
 在算子重建阶段，原本需要将模型权重从文件加载到内存并与算子合并，为了减少这部分开销，优化方案提出直接跳过权重合并，改为仅保留文件路径信息，在后续的权重解析阶段再从文件读取数据。这一优化大大减少了不必要的内存拷贝。
 
 权重解析部分，原本的流程将4bit量化权重转换为8bit，再进行其他转换操作。对于LLM场景而言，这种重复转换是冗余的，因此优化方案简化了权重解析过程，避免了多次内存拷贝和格式转换，直接通过文件加载数据并进行必要的处理，避免了中间的格式转换步骤。
@@ -412,9 +417,9 @@ https://zhuanlan.zhihu.com/p/10596277450
 
 https://sustcsonglin.github.io/blog/2024/deltanet-1/
 
-DeltaNet是通过将经典的Delta规则应用于线性注意力机制来改进序列建模的方法，旨在解决线性注意力在长序列建模中的局限性。传统的softmax注意力机制在处理长序列时会面临计算复杂度为平方级别的问题，而线性注意力通过移除softmax操作并利用其线性特性，实现了较低的计算复杂度。通过将注意力机制视为一个线性RNN，线性注意力将关键-值对的外积累积成一个状态矩阵，进而提高了模型效率。然而，线性注意力在信息检索和记忆更新方面存在局限，因为它无法精确地保存所有历史信息，尤其是当需要准确检索或复制信息时。
+DeltaNet是通过将经典的Delta规则应用于线性注意力机制来改进序列建模的方法，旨在解决线性注意力在长序列建模中的局限性。传统的`softmax`注意力机制在处理长序列时会面临计算复杂度为平方级别的问题，而线性注意力通过移除`softmax`操作并利用其线性特性，实现了较低的计算复杂度。通过将注意力机制视为一个线性RNN，线性注意力将关键-值对的外积累积成一个状态矩阵，进而提高了模型效率。然而，线性注意力在信息检索和记忆更新方面存在局限，因为它无法精确地保存所有历史信息，尤其是当需要准确检索或复制信息时。
 
-为了解决这一问题，DeltaNet引入了Delta规则——一种基于误差修正的学习方法，旨在动态调整模型的状态。Delta规则通过调整模型预测和目标之间的差异（即delta），使得模型能够根据预测误差更新状态。在DeltaNet中，每次更新不仅仅是简单地累积关键-值的外积，而是通过引入预测误差来更新当前状态，从而避免了直接覆盖旧的记忆，而是通过平衡旧值与新值进行有控制的更新。这种更新机制使得DeltaNet能够更有效地进行上下文检索，特别是在处理具有长序列依赖关系的任务时。
+为了解决这一问题，DeltaNet引入了Delta规则——一种基于误差修正的学习方法，旨在动态调整模型的状态。Delta规则通过调整模型预测和目标之间的差异（即`delta`），使得模型能够根据预测误差更新状态。在DeltaNet中，每次更新不仅仅是简单地累积关键-值的外积，而是通过引入预测误差来更新当前状态，从而避免了直接覆盖旧的记忆，而是通过平衡旧值与新值进行有控制的更新。这种更新机制使得DeltaNet能够更有效地进行上下文检索，特别是在处理具有长序列依赖关系的任务时。
 
 DeltaNet在多查询关联记忆任务（MQAR）中表现出色，展示了其在上下文记忆检索中的强大能力。与传统的线性注意力模型相比，DeltaNet能够更精确地在上下文中检索信息，减少了大误差，从而提高了检索准确性。此外，DeltaNet在其他基准测试如MAD中也表现突出，尤其是在噪声记忆和选择性复制任务中，它的表现比其他模型更为出色。
 
@@ -444,7 +449,7 @@ GPU内存管理经历了多个阶段：最初的分离内存管理要求显式�
 
 GPUDirect技术的演进从最早的1.0版本开始，解决了GPU与网卡之间内存共享的问题，避免了冗余的数据拷贝。第二代GPUDirect P2P支持了节点内GPU间的直接通信，而第三代GPUDirect RDMA则使得GPU和网卡能够通过PCIe直接交换数据，完全绕过了CPU的干预。
 
-实现这些技术的关键问题之一是如何使网卡能够直接读写GPU显存。通过修改网卡的内存注册流程，可以将GPU的虚拟地址注册到网卡，从而允许网卡直接访问GPU显存。在GPU控制的通信中，GPU需要访问网络资源并与网卡同步，这通过移植libibverbs库到GPU上实现，从而使GPU能够主动发起并控制通信。
+实现这些技术的关键问题之一是如何使网卡能够直接读写GPU显存。通过修改网卡的内存注册流程，可以将GPU的虚拟地址注册到网卡，从而允许网卡直接访问GPU显存。在GPU控制的通信中，GPU需要访问网络资源并与网卡同步，这通过移植`libibverbs`库到GPU上实现，从而使GPU能够主动发起并控制通信。
 
 GPUDirect技术的性能评测结果表明，不同拓扑结构下的GPU通信表现出显著的差异。CPU控制的通信性能优于GPU控制的通信，尤其是在数据P2P传输中，队列位于CPU内存中的情况性能最好。延迟和带宽的实验结果也证实了这一点。此外，GPU控制通信的主要瓶颈在于执行通信控制的开销，尤其是对于大型通信任务。
 
@@ -460,17 +465,17 @@ GPUDirect技术的性能评测结果表明，不同拓扑结构下的GPU通信�
 
 https://zhuanlan.zhihu.com/p/10692559975
 
-在使用 SGLang 部署微调后的 LLama3 8B 模型时，采用 TP2 并行化和 BF16 数据类型时出现了一个奇怪的现象，即偶尔会出现不符合预期的输出。这些输出虽然不是乱码，但明显不同于正常的推理结果。经过调试，发现问题是由于 RMSNorm 层的精度陷阱，导致推理中的精度丢失。
+在使用 SGLang 部署微调后的 LLama3 8B 模型时，采用 TP2 并行化和 BF16 数据类型时出现了一个奇怪的现象，即偶尔会出现不符合预期的输出。这些输出虽然不是乱码，但明显不同于正常的推理结果。经过调试，发现问题是由于 `RMSNorm` 层的精度陷阱，导致推理中的精度丢失。
 
 最初怀疑是采样过程的问题，因此准备了两个复现脚本：一个使用 HuggingFace 实现，另一个通过 SGLang 的 API 进行请求。通过对比发现，使用 SGLang 时即使切换到 PyTorch 的 naive 采样方法，结果仍然与默认的 flashinfer 采样方法相似，且问题依旧存在。这表明问题不在采样，而是模型推理本身。
 
-进一步分析发现，问题出现在每次推理的隐藏状态（hidden_states）上，特别是在推理过程中，SGLang 和 HuggingFace 输出的 hidden_states 差异较大，精度差距达到了 1e-1。追踪至 RMSNorm 层后，发现该层在 Transformer 块中逐渐放大了这种精度差距。为了定位问题，尝试替换 RMSNorm 的实现并比较结果，最终通过替换为 HuggingFace 的 naive 实现，成功地显著提升了精度，从而解决了问题。
+进一步分析发现，问题出现在每次推理的隐藏状态（`hidden_states`）上，特别是在推理过程中，SGLang 和 HuggingFace 输出的 `hidden_states` 差异较大，精度差距达到了 1e-1。追踪至 `RMSNorm` 层后，发现该层在 Transformer 块中逐渐放大了这种精度差距。为了定位问题，尝试替换 `RMSNorm` 的实现并比较结果，最终通过替换为 HuggingFace 的 naive 实现，成功地显著提升了精度，从而解决了问题。
 
-在追踪问题的过程中，发现 flashinfer 的 FusedAddRMSNormKernel 算子在 v0.1.6 版本中存在精度问题，导致精度只有 1e-2。通过安装 flashinfer 的 nightly 版本，精度问题得到了显著改进，最终推理结果恢复了正常。FusedAddRMSNormKernel 算子的精度提升原理在于对输入和残差的浮点数进行高低位分离，从而优化了后续的计算过程，成功将精度从 1e-2 提升到了 1e-3。
+在追踪问题的过程中，发现 `flashinfer` 的 `FusedAddRMSNormKernel` 算子在 v0.1.6 版本中存在精度问题，导致精度只有 1e-2。通过安装 flashinfer 的 nightly 版本，精度问题得到了显著改进，最终推理结果恢复了正常。`FusedAddRMSNormKernel` 算子的精度提升原理在于对输入和残差的浮点数进行高低位分离，从而优化了后续的计算过程，成功将精度从 1e-2 提升到了 1e-3。
 
-尽管 flashinfer nightly 解决了大部分精度问题，仍然存在一些限制。首先，当使用 bfloat16 数据类型时，flashinfer 无法维持 1e-3 的精度，导致问题没有完全解决。其次，使用 torch.float16 时，精度能够稳定在 1e-3 级别，因此推荐使用该数据类型。
+尽管 flashinfer nightly 解决了大部分精度问题，仍然存在一些限制。首先，当使用 `bfloat16` 数据类型时，flashinfer 无法维持 1e-3 的精度，导致问题没有完全解决。其次，使用 `torch.float16` 时，精度能够稳定在 1e-3 级别，因此推荐使用该数据类型。
 
-总结来说，当前 SGLang 可以通过以下两种方式正确部署模型：使用 flashinfer nightly + fused_rms_norm + torch.float16，或者使用 rms_norm_naive + torch.bfloat16 或 torch.float16。虽然 bfloat16 存在精度问题，但采用上述方法能够有效避免精度陷阱。大模型推理中的精度问题往往难以排查，需要仔细分析每个细节。在使用 SGLang 时，框架的高性能和创新性也值得关注，尤其是在推理框架中引入了如 Expert Parallel、Fused MoE、SDPA/Flashinfer 后端等先进技术。
+总结来说，当前 SGLang 可以通过以下两种方式正确部署模型：使用 `flashinfer nightly` + `fused_rms_norm` + `torch.float16`，或者使用 `rms_norm_naive` + `torch.bfloat16` 或 `torch.float16`。虽然 `bfloat16` 存在精度问题，但采用上述方法能够有效避免精度陷阱。大模型推理中的精度问题往往难以排查，需要仔细分析每个细节。在使用 SGLang 时，框架的高性能和创新性也值得关注，尤其是在推理框架中引入了如 Expert Parallel、Fused MoE、SDPA/Flashinfer 后端等先进技术。
 
 ![](img/1fda4383bbaad3157174295d48a14377.png)
 
@@ -494,8 +499,6 @@ https://zhuanlan.zhihu.com/p/10824739374
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -505,15 +508,13 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
-
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
-
-> [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
 >
-
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
+>
+> [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
+>
 > 欢迎大家多多帮我们分享,转发~~
-
+>
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 
 ![](img/3324655108789e92c4502fa63f246ed5.png)

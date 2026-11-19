@@ -1,3 +1,4 @@
+
 # 外贸部/国际业务部 OpenClaw 应用场景及对应Skills分析报告
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/NkQpdDP8JokbigxZ5ElcVEe3nAb](https://gotoaiworld.feishu.cn/docx/NkQpdDP8JokbigxZ5ElcVEe3nAb)
@@ -26,13 +27,13 @@
 
 对应OpenClaw Skills：
 
-+   overseas-customer-development（海外潜在客户挖掘、市场调研）；
++   `overseas-customer-development`（海外潜在客户挖掘、市场调研）；
 
-+   multilingual-communication（多语言开发信、邮件、对接话术撰写）；
++   `multilingual-communication`（多语言开发信、邮件、对接话术撰写）；
 
-+   overseas-negotiation（海外客户洽谈话术、需求对接）；
++   `overseas-negotiation`（海外客户洽谈话术、需求对接）；
 
-+   overseas-customer-ledger（海外客户台账建立、跟进记录更新）。
++   `overseas-customer-ledger`（海外客户台账建立、跟进记录更新）。
 
 ### （二）外贸订单洽谈与履约类（核心执行场景）
 
@@ -50,13 +51,13 @@
 
 对应OpenClaw Skills：
 
-+   foreign-trade-negotiation（外贸订单洽谈、价格与条款协商）；
++   `foreign-trade-negotiation`（外贸订单洽谈、价格与条款协商）；
 
-+   foreign-trade-contract（中英文外贸合同起草与审核）；
++   `foreign-trade-contract`（中英文外贸合同起草与审核）；
 
-+   order-fulfillment（外贸订单履约跟踪、单据整理）；
++   `order-fulfillment`（外贸订单履约跟踪、单据整理）；
 
-+   order-exception（订单异常处理方案、沟通话术撰写）。
++   `order-exception`（订单异常处理方案、沟通话术撰写）。
 
 ### （三）跨境物流与报关报检类（核心支撑场景）
 
@@ -74,13 +75,13 @@
 
 对应OpenClaw Skills：
 
-+   cross-border-logistics（跨境物流渠道对接、进度跟踪）；
++   `cross-border-logistics`（跨境物流渠道对接、进度跟踪）；
 
-+   customs-documents（报关报检单据撰写、整理与提交）；
++   `customs-documents`（报关报检单据撰写、整理与提交）；
 
-+   customs-clearance（报关报检流程对接、异常处理）；
++   `customs-clearance`（报关报检流程对接、异常处理）；
 
-+   logistics-ledger（物流台账建立、费用核算与效果评估）。
++   `logistics-ledger`（物流台账建立、费用核算与效果评估）。
 
 ### （四）合规风控与政策适配类（核心保障场景）
 
@@ -98,13 +99,13 @@
 
 对应OpenClaw Skills：
 
-+   trade-policy-interpretation（国际政策、关税政策解读与适配）；
++   `trade-policy-interpretation`（国际政策、关税政策解读与适配）；
 
-+   foreign-trade-compliance（外贸合规审核、风险评估）；
++   `foreign-trade-compliance`（外贸合规审核、风险评估）；
 
-+   foreign-exchange-management（外汇结算、汇率风险应对）；
++   `foreign-exchange-management`（外汇结算、汇率风险应对）；
 
-+   trade-risk-response（跨境贸易风险研判、应对建议撰写）。
++   `trade-risk-response`（跨境贸易风险研判、应对建议撰写）。
 
 ### （五）国际市场调研与拓展类（长期发展场景）
 
@@ -122,13 +123,13 @@
 
 对应OpenClaw Skills：
 
-+   international-market-research（海外市场调研、需求与趋势分析）；
++   `international-market-research`（海外市场调研、需求与趋势分析）；
 
-+   market-expansion-plan（海外市场拓展方案、渠道布局策略撰写）；
++   `market-expansion-plan`（海外市场拓展方案、渠道布局策略撰写）；
 
-+   overseas-promotion（国际展会、海外平台推广文案撰写）；
++   `overseas-promotion`（国际展会、海外平台推广文案撰写）；
 
-+   expansion-evaluation（市场拓展效果评估、优化策略撰写）。
++   `expansion-evaluation`（市场拓展效果评估、优化策略撰写）。
 
 ### （六）外汇结算与财务对接类（基础支撑场景）
 
@@ -146,13 +147,13 @@
 
 对应OpenClaw Skills：
 
-+   foreign-exchange-settlement（外汇结算流程对接、资金跟踪）；
++   `foreign-exchange-settlement`（外汇结算流程对接、资金跟踪）；
 
-+   cost-calculation（外贸成本、报价核算与对账材料整理）；
++   `cost-calculation`（外贸成本、报价核算与对账材料整理）；
 
-+   finance-docking（与财务部门对接、财务数据提供）；
++   `finance-docking`（与财务部门对接、财务数据提供）；
 
-+   settlement-ledger（外汇结算台账建立、更新与分析）。
++   `settlement-ledger`（外汇结算台账建立、更新与分析）。
 
 ### （七）文书与台账管理类（基础支撑场景）
 
@@ -170,37 +171,37 @@
 
 对应OpenClaw Skills：
 
-+   work-summary（部门工作总结、工作计划、工作汇报撰写）；
++   `work-summary`（部门工作总结、工作计划、工作汇报撰写）；
 
-+   ledger-manage（各类外贸、国际业务台账建立与更新）；
++   `ledger-manage`（各类外贸、国际业务台账建立与更新）；
 
-+   meeting-minutes（部门会议纪要、国际业务简报起草）；
++   `meeting-minutes`（部门会议纪要、国际业务简报起草）；
 
-+   official-doc（外贸相关公文、沟通函件撰写）。
++   `official-doc`（外贸相关公文、沟通函件撰写）。
 
 ## 三、核心Skills推荐（高频必配套装）
 
 结合外贸部/国际业务部工作高频度、跨境特性与合规要求，筛选10个核心Skills，可满足两个部门80%以上日常外贸与国际业务需求，优先落地适配，兼顾专业性、合规性与高效性：
 
-1.  overseas-customer-development（海外客户挖掘、对接与维护）；
+1.  `overseas-customer-development`（海外客户挖掘、对接与维护）；
 
-1.  multilingual-communication（多语言开发信、邮件、对接话术撰写）；
+2.  `multilingual-communication`（多语言开发信、邮件、对接话术撰写）；
 
-1.  foreign-trade-contract（中英文外贸合同起草与审核）；
+3.  `foreign-trade-contract`（中英文外贸合同起草与审核）；
 
-1.  order-fulfillment（外贸订单履约跟踪、单据整理）；
+4.  `order-fulfillment`（外贸订单履约跟踪、单据整理）；
 
-1.  cross-border-logistics（跨境物流对接、报关报检单据撰写）；
+5.  `cross-border-logistics`（跨境物流对接、报关报检单据撰写）；
 
-1.  foreign-trade-compliance（外贸合规审核、风险评估）；
+6.  `foreign-trade-compliance`（外贸合规审核、风险评估）；
 
-1.  foreign-exchange-settlement（外汇结算、资金跟踪）；
+7.  `foreign-exchange-settlement`（外汇结算、资金跟踪）；
 
-1.  international-market-research（海外市场调研、需求分析）；
+8.  `international-market-research`（海外市场调研、需求分析）；
 
-1.  overseas-promotion（海外推广、国际展会文案撰写）；
+9.  `overseas-promotion`（海外推广、国际展会文案撰写）；
 
-1.  ledger-manage（各类外贸、国际业务台账建立与管理）。
+10.  `ledger-manage`（各类外贸、国际业务台账建立与管理）。
 
 ## 四、应用价值总结
 

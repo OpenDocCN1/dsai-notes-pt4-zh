@@ -1,20 +1,25 @@
+
 # AI辅助制作APP动态启动页
 
 > 来源：[https://my.feishu.cn/docx/BSsHdHqQToyqM6xXWd2cWrs3nhd](https://my.feishu.cn/docx/BSsHdHqQToyqM6xXWd2cWrs3nhd)
 
-> 🔗 原文链接： h[ttps://www.zcool.c](https://www.zcool.com.cn/work/ZNjgwMDQwNDg=.html)om.cn/work/ZNjgw...
+> 🔗 原文链接：h[ttps://www.zcool.c](https://www.zcool.com.cn/work/ZNjgwMDQwNDg=.html)om.cn/work/ZNjgw...
 
 > ⏰ 剪存时间：2024-03-18 13:08:37 (UTC+8)
 
-> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+> ✂️ 本文档由 [飞书剪存](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
 
 ![](img/8ba5a783598e0b33c45e6e8eb97723f0.png)
+
+## 引言
 
 这是AIGC应用系列教程，之前给大家详细介绍了AIGC做海报和🛰️红包，这一篇给大家介绍AIGC辅助动态启动页设计的全流程！
 
 目前AIGC在设计中的可行性相比去年更为广泛，在平面设计、运营活动、数字人、传媒广告视频，你可以利用AIGC制作个人头像，🛰️红包，绘本漫画，3D场景，动画电影，创意海报，角色设计，运营活动等等。这次利用AI设计APP动态启动页设计，会使用AI绘画工具和最新的AI视频工具。
 
 ![](img/68bc91718c9413e59a553748f4f05336.png)
+
+## 启动页设计基础
 
 启动页也被称为闪屏页，是用户打开APP时看到的第一个页面。其主要功能包括：品牌展示、加载缓冲、运营活动推广、功能预告、节气氛围等。
 
@@ -23,6 +28,8 @@
 关键词提取：这次是设计「春日出行」运营启动页，可以收集春天、花朵、出行、美好生活等作为关键词的图片。
 
 ![](img/14e337959d79fc84c068dd638160ad50.png)
+
+## 视觉主图设计
 
 这次用到的主要是WHEE的文生图、AI提高画质、AI扩图来设计视觉主图，figma进行主题文字排版设计，AI视频工具来制作动态画面。更多AI视频教程可以查看我的👸号「姚十八设计」里面有系列教程。
 
@@ -58,6 +65,8 @@
 
 ![](img/114bf6dd65760d073124665c390ae2c8.png)
 
+## 动态效果制作
+
 接下来重要的一步，使用AI视频来做动态效果，在AI创作工具中找到「AI视频工具」。
 
 ![](img/a22f2d4e3af9d169e03c2b723ef984d0.png)
@@ -82,6 +91,8 @@
 
 ![](img/0962d6dffdf8193e06fcd1549179e45e.png)
 
+## 工作流总结
+
 第一步使用AI生成图片：生成主视觉「春日计划」，确定提示词，主视觉元素等。对图片进行修改体高分辨率和扩图。
 
 第二步使用设计工具排版：对主题文案「春日计划 追寻诗和远方」进行排版，加上渐变背景，融合整个图片。
@@ -95,6 +106,8 @@
 ![](img/44ac2bc5523b7dd4d862e4c3e7824d4a.png)
 
 ![](img/e2b1a8ddc15f5afeba808b56bfb22919.png)
+
+## 结语
 
 春天来袭，赶紧利用AI绘画和AI视频来设计动态启动页吧！操作简单易上手，让你轻松完成。
 

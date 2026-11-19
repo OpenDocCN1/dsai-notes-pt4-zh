@@ -1,3 +1,4 @@
+
 # 2024 年，谷歌投资 6 家法律科技公司，重仓 AI 和法律服务平台
 
 > 来源：[https://docs.feishu.cn/docx/KTK2dliHWoLk7JxlFr7cV5WcnDe](https://docs.feishu.cn/docx/KTK2dliHWoLk7JxlFr7cV5WcnDe)
@@ -6,9 +7,9 @@
 
 当下，生成式 AI 正在深刻改变法律行业，从合同审查到法律研究，AI 的应用日益广泛，可以有效提升法律服务的效率与质量。在这一科技浪潮中，「谷歌」作为全球领先的科技巨头，敏锐地洞察到 AI 在法律领域的应用潜力，持续加大对法律科技公司的投资。近年来，谷歌旗下 Google Ventures，以及专注于 AI 领域的风险投资基金 Gradient Ventures，陆续投资了一批法律科技公司。
 
-Google Ventures：
+## Google Ventures
 
-Gradient Ventures：
+## Gradient Ventures
 
 | 公司名称 | 所处赛道 | 融资轮次 |
 | --- | --- | --- |
@@ -29,13 +30,13 @@ Gradient Ventures：
 
 以下是这 6 家公司的具体介绍：
 
-# **Lawhive**
+## Lawhive
 
 今年 4 月，Lawhive 宣布完成 950 万英镑（约 1180 万美元）种子轮融资，投资方包括 Google Ventures 和 Episode 1 Ventures。12 月，Lawhive 再次宣布完成 4000 万美元 A 轮融资，Google Ventures、TQ Ventures 共同领投，Balderton、Episode 1、Jigsaw 以及英超足球运动员 Harry Maguire 和 Reece James 跟投，谷歌继续加码。
 
 Lawhive 是一家英国的在线法律服务平台，由 Pierre Proner、Jaime Van Oers 和 Flinn Dolman 于 2019 年创立，致力于通过技术和律师网络，提供全面、高效的法律服务。其中，Lawhive 推出的 AI 工具“Lawrence”可以自动执行部分法律任务，而且已经通过律师资格考试（SQE）的第一部分。
 
-# **Harvey**
+## Harvey
 
 7 月，Harvey 宣布完成 1 亿美元 C 轮融资，Google Ventures 领投，OpenAI、Kleiner Perkins、Sequoia Capital、Elad Gil 和 SV Angel 跟投。本轮融资后，Harvey 估值达到 15 亿美元，成为独角兽（估值 10 亿美金）公司。
 
@@ -43,31 +44,31 @@ Lawhive 是一家英国的在线法律服务平台，由 Pierre Proner、Jaime V
 
 Harvey 成立于 2022 年 1 月，最初为大型律所和公司法务部门定制法律 AI 产品，随后扩展到更多领域，包括工作流程自动化、法律研究，以及法律 AI 助理。
 
-# **Hebbia**
+## Hebbia
 
 7 月，AI 知识平台 Hebbia 宣布完成 1.3 亿美元 B 轮融资，投资人包括 Andreessen Horowitz、Index Ventures、Google Ventures 和亿万富翁 Peter Thiel。
 
 Hebbia 成立于 2020 年，利用 AI 帮助企业筛选各种文件、回答问题等。目前，Hebbia 已服务一些全球领先的资产管理公司、律师事务所、银行和财富 100 强公司。
 
-# **Genie AI**
+## Genie AI
 
 10 月，法律 AI 创企 Genie AI 宣布完成 1780 万美元 A 轮融资，Google Venture 领投，Kholsa Ventures 跟投。
 
 Genie AI 成立于 2017 年，利用 AI 技术帮助律师事务所、公司法律部门以及更广大人群，起草、编辑和审查各种法律文件，同时提供“传统”的合同模板和条款数据库。
 
-# Patlytics
+## Patlytics
 
 4 月，AI 专利工作自动化平台 Patlytics 种子轮融资，Gradient Ventures 参投。
 
 Patlytics 致力于通过 AI 技术将专利工作流程进行自动化，比如起草、侵权评估和搜索。
 
-# CaseMark
+## CaseMark
 
 6 月，法律 AI 初创公司 CaseMark 宣布完成 170 万美元种子轮融资，Gradient Ventures 领投。
 
 CaseMark 是一家 AI 驱动的法律科技公司，致力于构建效率工具，帮助律师能够更高效地工作。当前，CaseMark 正在研发一个基于 GPT-4o 的证词摘要功能，可以快速将冗长的证词记录转换为简洁和融资理解的摘要，同时提供叙述性和逐页逐行的格式，以帮助律师在法律诉讼分析中提高效率和清晰度。
 
-除了以上 6 家公司 ，Google Ventures 还于 2011 年投资了在线法律服务平台 Rocket Lawyer —— 该公司在十年后获得了 2.23 亿美元融资，并于去年 12 月推出一个名为 Rocket Copilot 的 AI 助手，基于 AI 和法律专业知识，客户可以快速完成各种文件，还可以便捷地联系到法律专业人士。
+除了以上 6 家公司，Google Ventures 还于 2011 年投资了在线法律服务平台 Rocket Lawyer —— 该公司在十年后获得了 2.23 亿美元融资，并于去年 12 月推出一个名为 Rocket Copilot 的 AI 助手，基于 AI 和法律专业知识，客户可以快速完成各种文件，还可以便捷地联系到法律专业人士。
 
 此外，Gradient Ventures 也于 2023 年投资了电子发现初创公司 Fileread。
 

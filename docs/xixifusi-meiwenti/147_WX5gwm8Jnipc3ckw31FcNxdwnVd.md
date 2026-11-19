@@ -1,3 +1,4 @@
+
 # 每个人都至少值得你学习两次，一次是他拥有的，一次是他缺失的。你能够从他身上得到的，可以比他拥有的更多
 
 > 来源：[https://docs.feishu.cn/docx/FRhhdD4sgohzlHxD3cKcblNwnfo](https://docs.feishu.cn/docx/FRhhdD4sgohzlHxD3cKcblNwnfo)

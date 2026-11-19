@@ -1,20 +1,21 @@
-# 一个更小、更快、更干净的GraphRAG！
 
-> 来源：[https://agijuejin.feishu.cn/docx/VcMGd8wFWoZ4QvxYjCVcS59en2g](https://agijuejin.feishu.cn/docx/VcMGd8wFWoZ4QvxYjCVcS59en2g)
+# 一个更小、更快、更干净的 GraphRAG！
+
+> 来源：https://agijuejin.feishu.cn/docx/VcMGd8wFWoZ4QvxYjCVcS59en2g
 
 > 作者：PaperAgent
 
-> 原文： [https://mp.weixin.](https://mp.weixin.qq.com/s/gdWINeUR2Qq3Rz_7TuhBIw)qq.com/s/gdWINeUR...
+> 原文：https://mp.weixin.qq.com/s/gdWINeUR2Qq3Rz_7TuhBIw
 
-**nano-GraphRAG **一个简单，易于修改的GraphRAG实现
+## nano-GraphRAG：一个简单、易于修改的 GraphRAG 实现
 
 ![](img/41594f0cd8d1215a3f2864c03efb04d0.png)
 
-😭 GraphRAG很好很强大，但是官方实现很难/痛苦地阅读或修改。
+😭 `GraphRAG` 很好很强大，但是官方实现很难/痛苦地阅读或修改。
 
-😊 这个项目提供了一个更小、更快、更干净的GraphRAG，同时保留了核心功能（见基准测试和问题）。
+😊 这个项目提供了一个更小、更快、更干净的 `GraphRAG`，同时保留了核心功能（见基准测试和问题）。
 
-🎁 除了测试和提示，nano-graphrag大约有800行代码。
+🎁 除了测试和提示，`nano-graphrag` 大约有 800 行代码。
 
 👌 小而可扩展，异步且完全类型化。
 
@@ -25,64 +26,64 @@ pip install nano-graphrag
 下载查尔斯·狄更斯的《圣诞颂歌》副本
 
 ```
-curl https://raw.githubusercontent.com/gusye1234/nano-graphrag/main/tests/mock_data.txt &gt; ./book.txt
+curl https://raw.githubusercontent.com/gusye1234/nano-graphrag/main/tests/mock_data.txt > ./book.txt
 ```
 
-使用下面的Python代码片段
+使用下面的 Python 代码片段
 
 ```
 from nano_graphrag import GraphRAG, QueryParam
-graph_func = GraphRAG(working_dir=&quot;./dickens&quot;)
+graph_func = GraphRAG(working_dir="./dickens")
 
-with open(&quot;./book.txt&quot;) as f:
+with open("./book.txt") as f:
     graph_func.insert(f.read())
 
 # Perform global graphrag search
-print(graph_func.query(&quot;What are the top themes in this story?&quot;))
+print(graph_func.query("What are the top themes in this story?"))
 
 # Perform local graphrag search (I think is better and more scalable one)
-print(graph_func.query(&quot;What are the top themes in this story?&quot;, param=QueryParam(mode=&quot;local&quot;)))
+print(graph_func.query("What are the top themes in this story?", param=QueryParam(mode="local")))
 ```
 
-下次你从相同的工作目录初始化GraphRAG时，它将自动重新加载所有上下文。
+下次你从相同的工作目录初始化 `GraphRAG` 时，它将自动重新加载所有上下文。
 
-**增量插入**
+## 增量插入
 
-nano-graphrag 支持增量插入，不会添加任何重复的计算或数据
+`nano-graphrag` 支持增量插入，不会添加任何重复的计算或数据
 
 ```
-with open(&quot;./book.txt&quot;) as f:
+with open("./book.txt") as f:
     book = f.read()
     half_len = len(book) // 2
     graph_func.insert(book[:half_len])
     graph_func.insert(book[half_len:])
 ```
 
-nano-graphrag 使用内容的 md5 哈希作为键，因此不会有重复的区块。
+`nano-graphrag` 使用内容的 md5 哈希作为键，因此不会有重复的区块。
 
 然而，每次你进行插入操作时，图的社区将被重新计算，社区报告也将被重新生成
 
-nano-GraphRAG与微软Graphrag 效果对比参数设置：
+`nano-GraphRAG` 与微软 `GraphRAG` 效果对比参数设置：
 
 ```
 使用罗贯中的《三国演义》作为基准语料库。
-使用了官方GraphRAG实现的61b5eea34783c58074b3c53f1689ad8a5ba6b6ee提交版本。
-GraphRAG和nano-graphrag都使用OpenAI的嵌入和gpt-4o。
+使用了官方 `GraphRAG` 实现的 `61b5eea34783c58074b3c53f1689ad8a5ba6b6ee` 提交版本。
+`GraphRAG` 和 `nano-graphrag` 都使用 OpenAI 的嵌入和 gpt-4o。
 两者都不使用缓存。
 在同一设备和网络连接上。
-GraphRAG的最大异步API请求数：25 
-nano-graphrag的最大异步API请求数：16
+`GraphRAG` 的最大异步 API 请求数：25
+`nano-graphrag` 的最大异步 API 请求数：16
 ```
 
-**Index对比**
+## Index 对比
 
-都超过10分钟
+都超过 10 分钟
 
-## **Local Search对比**
+## Local Search 对比
 
-+   **GraphRAG**
+### GraphRAG
 
-### "大乔和曹操的关系"
+#### "大乔和曹操的关系"
 
 ```
 大乔与曹操之间的关系在历史和文学中被描绘为复杂且多维的，尽管直接的互动可能并不频繁。大乔，作为东吴孙策的妻子，以及其美貌和与三国时期重要人物的关联而闻名。曹操，作为三国时期的关键政治和军事领导者，其与大乔的关系主要通过他与东吴的关系以及对大乔及其家族的兴趣来体现。
@@ -96,9 +97,9 @@ nano-graphrag的最大异步API请求数：16
 综上所述，大乔与曹操之间的关系主要是通过她的家庭背景、曹操的政治军事活动，以及文化记忆中对她美貌的追捧来定义的。这种关系更多地体现在历史和文学的叙述中，而不是基于两人之间有直接的个人互动。
 ```
 
-+   **nano-graphrag**
+### nano-graphrag
 
-### "大乔和曹操的关系"
+#### "大乔和曹操的关系"
 
 ```
 # 大乔和曹操的关系
@@ -115,11 +116,11 @@ nano-graphrag的最大异步API请求数：16
 曹操对大乔的欲望和权谋体现了三国时期复杂的政治动态，同时也揭示了美人计在当时战略中的重要性 [Data: Relationships (6, 12, 13); Entities (1); Sources (0, 2)].
 ```
 
-## **Global Search对比**
+## Global Search 对比
 
-+   GraphRAG
+### GraphRAG
 
-### "大乔与曹操的关系"
+#### "大乔与曹操的关系"
 
 ```
 ### 大乔与曹操的关系
@@ -139,9 +140,9 @@ nano-graphrag的最大异步API请求数：16
 综上所述，大乔与曹操的关系主要体现在曹操对她的渴望以及他计划将她安置在铜雀台的意图上。此外，乔公与曹操的友谊也为这一关系增添了复杂性，可能会在未来引发更多的动态变化 [Data: Reports (41, 269)]。
 ```
 
-+   **nano-graph**
+### nano-graphrag
 
-"大乔与曹操的关系"
+#### "大乔与曹操的关系"
 
 ```
 ## 曹操与大乔的关系
@@ -157,16 +158,16 @@ nano-graphrag的最大异步API请求数：16
 https://github.com/gusye1234/nano-graphrag
 ```
 
-**推荐阅读**
+## 推荐阅读
 
-+   对齐LLM偏好的直接偏好优化方法：DPO、IPO、KTO
++ 对齐 LLM 偏好的直接偏好优化方法：DPO、IPO、KTO
 
-+   2024：ToB、Agent、多模态
++ 2024：ToB、Agent、多模态
 
-+   [RAG全景图：从RAG启蒙到高级RAG之](http://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247487375&idx=1&sn=e16bc2fdaac04e58e99cfd2a1dc0b0cb&chksm=c2ce35fef5b9bce80dcf0a70b753707036fe7f962d7888d60396490841a538b0f46e952f53f0&scene=21#wechat_redirect)36技，再到终章Agentic RAG！
++ [RAG 全景图：从 RAG 启蒙到高级 RAG 之 36 技，再到终章 Agentic RAG！](http://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247487375&idx=1&sn=e16bc2fdaac04e58e99cfd2a1dc0b0cb&chksm=c2ce35fef5b9bce80dcf0a70b753707036fe7f962d7888d60396490841a538b0f46e952f53f0&scene=21#wechat_redirect)
 
-+   [A](http://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247485322&idx=1&sn=71ffb345fca514aa5ce2848cb2c9f071&chksm=c2ce3dfbf5b9b4edd5b98e45c6179890bdea748fb5220636d25f42006954ea5c81afa8735725&scene=21#wechat_redirect)gent到多模态Agent再到多模态Multi-Agents系统的发展与案例讲解（1.2万字，20+文献，27张图）
++ [Agent 到多模态 Agent 再到多模态 Multi-Agents 系统的发展与案例讲解（1.2 万字，20+ 文献，27 张图）](http://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247485322&idx=1&sn=71ffb345fca514aa5ce2848cb2c9f071&chksm=c2ce3dfbf5b9b4edd5b98e45c6179890bdea748fb5220636d25f42006954ea5c81afa8735725&scene=21#wechat_redirect)
 
 ---
 
-欢迎关注我的👸号“ **PaperAgent **”， 每天一篇大模型（LLM）文章来锻炼我们的思维，简单的例子，不简单的方法，提升自己。
+欢迎关注我的👸号“PaperAgent”，每天一篇大模型（LLM）文章来锻炼我们的思维，简单的例子，不简单的方法，提升自己。

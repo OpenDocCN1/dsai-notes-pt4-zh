@@ -1,10 +1,11 @@
+
 # Lama Cleaner免费开源图片修复工具
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/SHI5djdebojnq8xmEYqcWIw9nCg](https://diwfpqo78m.feishu.cn/docx/SHI5djdebojnq8xmEYqcWIw9nCg)
 
-原文链接： [https://github.com](https://github.com/Sanster/lama-cleaner)/Sanster/lama-cle...
+原文链接：[https://github.com/Sanster/lama-cleaner](https://github.com/Sanster/lama-cleaner)
 
-# Lama Cleaner
+## Lama Cleaner
 
 Lama Cleaner 是一款免费、开源且完全可自行托管的修复工具，由最先进的 AI 模型提供支持。您可以使用它从您的照片中删除任何不需要的对象、缺陷、人物或擦除和替换您照片上的任何内容。
 
@@ -26,19 +27,17 @@ Lama Cleaner 是一款免费、开源且完全可自行托管的修复工具，�
 
 +   擦除和替换模型：Stable Diffusion/Paint by Example
 
-+   [ ](https://lama-cleaner-docs.vercel.app/plugins)后处理 [插件：](https://lama-cleaner-docs.vercel.app/plugins)
++   后处理[插件](https://lama-cleaner-docs.vercel.app/plugins)
 
-+   [RemoveBG ](https://github.com/danielgatis/rembg): 移除图片背景
++   [RemoveBG](https://github.com/danielgatis/rembg)：移除图片背景
 
-+   [RealESRGAN ](https://github.com/xinntao/Real-ESRGAN): 超级分辨率
++   [RealESRGAN](https://github.com/xinntao/Real-ESRGAN)：超级分辨率
 
-+   [GFPGAN ](https://github.com/TencentARC/GFPGAN): 人脸修复
++   [GFPGAN](https://github.com/TencentARC/GFPGAN)：人脸修复
 
-+   [RestoreFormer ](https://github.com/wzhouxiff/RestoreFormer): 面部修复
++   [RestoreFormer](https://github.com/wzhouxiff/RestoreFormer)：面部修复
 
-+   lama-cleaner-docs 的更多功能
-
-+
++   `lama-cleaner-docs` 的更多功能
 
 ## 快速开始
 
@@ -53,7 +52,7 @@ lama-cleaner --model=lama --device=cpu --port=8080
 
 就这样，Lama Cleaner 现在运行在 http://localhost:8080
 
-在lama-cleaner-docs 查看所有命令行参数
+在`lama-cleaner-docs`查看所有命令行参数
 
 ## 发展
 
@@ -61,10 +60,10 @@ lama-cleaner --model=lama --device=cpu --port=8080
 
 ### 前端
 
-前端代码修改自 c[lean](https://cleanup.pictures/)up.pictures ，您可以  在这里 体验他们出色的在线服务 。
+前端代码修改自 [cleanup.pictures](https://cleanup.pictures/) ，您可以在这里体验他们出色的在线服务。
 
-+   安装依赖项： cd lama_cleaner/app/ && pnpm install
++   安装依赖项：`cd lama_cleaner/app/ && pnpm install`
 
-+   启动开发服务器： pnpm start
++   启动开发服务器：`pnpm start`
 
-+   建造： pnpm build
++   建造：`pnpm build`

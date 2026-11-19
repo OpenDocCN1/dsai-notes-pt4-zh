@@ -1,8 +1,9 @@
+
 # 03.26-谷歌最强模型 Gemini 2.5 Pro 发布即屠榜，创下史上最大分数飞跃纪录
 
 > 来源：[https://agijuejin.feishu.cn/docx/Q7GJd4tJFo1FuxxNRrRcP52Rnje](https://agijuejin.feishu.cn/docx/Q7GJd4tJFo1FuxxNRrRcP52Rnje)
 
-# AGI 掘金日报 - AI 新闻推送 (2025 年 03 月 26 日)
+## AGI 掘金日报 - AI 新闻推送 (2025 年 03 月 26 日)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

@@ -1,3 +1,4 @@
+
 # GPT-4o 和 GPT-4 与 Gemini 1.5 ⭐ 的比较及性能分析
 
 > 来源：[https://my.feishu.cn/docx/V3twdbRvOoXBJNx9BeCcnyU8n6g](https://my.feishu.cn/docx/V3twdbRvOoXBJNx9BeCcnyU8n6g)
@@ -34,7 +35,29 @@ OpenAI 还宣布 GPT-4o 提高了 50 多种语言的质量和速度，承诺以�
 
 新的 GPT-4o 模型遵循 OpenAI 的现有 API，使其向后兼容且易于使用。
 
-> 从 openai 导入 OpenAI OPENAI_API_KEY = “<your-api-key>” def openai_chat_resolve（response：dict，strip_tokens = None）-> str：如果 strip_tokens 为 None：strip_tokens = [] 如果 response 和 response.choices 和 len（response.choices）> 0：content = response.choices[0].message.content.strip（）如果 content 不是 None 或 content ！=''：如果 strip_tokens：对于 strip_tokens 中的 token：content = content.replace（token，''）返回内容引发异常（f'无法解析响应：{response}'）def openai_chat_request（prompt：str，model_name：str，temperature=0.0）：message = {'role'：'user'，'content'：prompt} client = OpenAI（api_key=OPENAI_API_KEY）返回客户端.chat.completions.create（模型=model_name，消息=[消息]，温度=温度，）响应=openai_chat_request（prompt =“你好！”，model_name =“gpt-4o-2024-05-13”）答案=openai_chat_resolve（响应）打印（答案）
+```
+从 openai 导入 OpenAI OPENAI_API_KEY = “<your-api-key>”
+def openai_chat_resolve（response：dict，strip_tokens = None）-> str：
+    如果 strip_tokens 为 None：
+        strip_tokens = []
+    如果 response 和 response.choices 和 len（response.choices）> 0：
+        content = response.choices[0].message.content.strip（）
+        如果 content 不是 None 或 content ！=''：
+            如果 strip_tokens：
+                对于 strip_tokens 中的 token：
+                    content = content.replace（token，''）
+            返回内容
+    引发异常（f'无法解析响应：{response}'）
+
+def openai_chat_request（prompt：str，model_name：str，temperature=0.0）：
+    message = {'role'：'user'，'content'：prompt}
+    client = OpenAI（api_key=OPENAI_API_KEY）
+    返回客户端.chat.completions.create（模型=model_name，消息=[消息]，温度=温度，）
+
+响应=openai_chat_request（prompt =“你好！”，model_name =“gpt-4o-2024-05-13”）
+答案=openai_chat_resolve（响应）
+打印（答案）
+```
 
 GPT-4o 也可通过 ChatGPT 界面获得：
 
@@ -50,37 +73,32 @@ OpenAI 博客发布了对 MMLU 和 HumanEval 等知名数据集的评估。
 
 然而，在过去的一年里，我看到许多模型声称在已知数据集上具有最先进的语言性能。
 
-事[实上](https://arxiv.org/pdf/2402.01781)，其中一些模型在这些公共数据集上进行了部分训练（或过度训练），导致了不切实际的排行榜分数。如果您有兴趣，请查看这篇文章。
+事实上，其中一些模型在这些公共数据集上进行了部分训练（或过度训练），导致了不切实际的排行榜分数。如果您有兴趣，请查看这篇文章。
 
 因此，在鲜为人知的数据集（例如我创建的数据集）上对这些模型的性能进行独立分析非常重要。
 
 ## 我的测试数据集🔢。
 
-我创建了一个专题[数据集](https://github.com/LarsChrWiik/lars_datasets/tree/main/topics_dataset_50)，我们可以用它来评估不同法学硕士的分类性能。
+我创建了一个专题数据集，我们可以用它来评估不同法学硕士的分类性能。
 
 该集合由分布在 50 个主题的 200 个句子组成，其中一些主题密切相关，使分类任务变得复杂。
 
 我手动创建并用英语标记了整个数据集。
 
-然后，我使用 GPT4 (gpt-4-0613) 将数据集翻译成多种语言。
+然后，我使用 GPT4 (`gpt-4-0613`) 将数据集翻译成多种语言。
 
-+   **然而，在本次评估**中，我们将仅评估数据集的英文版本这意味着结果不应受到使用相同语言模型创建数据集和预测主题而产生的潜在偏差的影响。
++ 然而，在本次评估中，我们将仅评估数据集的英文版本。这意味着结果不应受到使用相同语言模型创建数据集和预测主题而产生的潜在偏差的影响。
 
 ## 工作成果📊
 
 我决定评估以下模型：
 
-+   **GPT-4o**： gpt-4o-2024-05-13
-
-+   **GPT-4**：GPT-4-0613
-
-+   **GPT-4-Turbo** : gpt-4-turbo-2024-04-09
-
-+   **双子座 1.5 专业版**：gemini-1.5-pro-preview-0409
-
-+   **双子座 1.0**：gemini-1.0-pro-002
-
-+   **Palm 2 Unicorn** : text-unicorn@001
++ GPT-4o：`gpt-4o-2024-05-13`
++ GPT-4：`GPT-4-0613`
++ GPT-4-Turbo : `gpt-4-turbo-2024-04-09`
++ 双子座 1.5 专业版：`gemini-1.5-pro-preview-0409`
++ 双子座 1.0：`gemini-1.0-pro-002`
++ Palm 2 Unicorn : `text-unicorn@001`
 
 语言模型的任务是将数据集中的每个句子与正确的主题相匹配。
 
@@ -96,7 +114,7 @@ OpenAI 博客发布了对 MMLU 和 HumanEval 等知名数据集的评估。
 
 我们还看到 Palm 2 Unicorn、GPT-4 和 Gemini 1.5 接近 GPT-4o，表明它们的性能较高。
 
-有[趣的是，](https://platform.openai.com/docs/models)GPT-4 Turbo 的工作原理与 GPT-4-0613 类似。有关 OpenAI 模型的更多信息可以在模型页面上找到。
+有趣的是，GPT-4 Turbo 的工作原理与 GPT-4-0613 类似。有关 OpenAI 模型的更多信息可以在模型页面上找到。
 
 最后，Gemini 1.0 滞后，考虑到其价格范围，这是可以预料的。
 

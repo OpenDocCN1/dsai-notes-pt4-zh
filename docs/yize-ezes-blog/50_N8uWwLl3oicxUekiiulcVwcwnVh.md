@@ -1,14 +1,15 @@
+
 # 超强！能够遵循原文风格的写作优化专家
 
 > 来源：[https://chatmemo.feishu.cn/docx/FdEVd37oxoTsy6xQiWbcidMunm8](https://chatmemo.feishu.cn/docx/FdEVd37oxoTsy6xQiWbcidMunm8)
 
-# 效果示例
+## 效果示例
 
 对话原文：https://poe.com/s/gR0YpeURJyT6JFbQi8Hh
 
 ![](img/d16fc5817fb3744bac330d52010f12b4.png)
 
-# Prompt
+## Prompt
 
 ```
 # Role: 全能写作优化专家

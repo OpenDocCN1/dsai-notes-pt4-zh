@@ -1,10 +1,8 @@
+
 # 2023-08-25奇安信发布Q-GPT安全机器人和大模型卫士
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/HwLVddVaYoylbaxn5focqaTOncZ](https://xuqiwei1986.feishu.cn/docx/HwLVddVaYoylbaxn5focqaTOncZ)
-
-> 🔗 原文链接： h[ttps://finance.sin](https://finance.sina.com.cn/tech/roll/2023-08-25/doc-imzikthc6664035.shtml)a.com.cn/tech/ro...
-
-奇安信发布Q-GPT安全机器人和大模型卫士
+> 来源：`https://xuqiwei1986.feishu.cn/docx/HwLVddVaYoylbaxn5focqaTOncZ`
+> 🔗 原文链接：`https://finance.sina.com.cn/tech/roll/2023-08-25/doc-imzikthc6664035.shtml`
 
 【CNMO新闻】8月25日，奇安信集团今日在京发布了Q-GPT(奇安信大模型)安全机器人和大模型卫士。
 
@@ -12,7 +10,7 @@
 
 ![](img/29efe2b7cc7105198b744a511bc6cfba.png)
 
-大模型卫士则是集安全风险发现、大模型访问控制、数据泄露管控、违法违规行为溯源、大模型应用分析等为一体，帮助企业更安全的向大模型要生产力。 IDC预测，2026年中国AI大模型市场规模将达到211亿美元，人工智能的安全成为备受关注的问题。
+大模型卫士则是集安全风险发现、大模型访问控制、数据泄露管控、违法违规行为溯源、大模型应用分析等为一体，帮助企业更安全的向大模型要生产力。IDC预测，2026年中国AI大模型市场规模将达到211亿美元，人工智能的安全成为备受关注的问题。
 
 在会上，京东方集团和吉利集团等客户现场签约，成为国内首批Q-GPT安全机器人和安全大模型用户。同时，大模型卫士现场获得了国内多家客户的签约意向。
 

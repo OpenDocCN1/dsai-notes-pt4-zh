@@ -1,30 +1,24 @@
+
 # Midjourney 描述词库
 
-> 来源：[https://my.feishu.cn/docx/I6E0dyfjooR1joxjMehcl8winLe](https://my.feishu.cn/docx/I6E0dyfjooR1joxjMehcl8winLe)
-
-> ：以下为我在使用Midjourney时个人积累的一些有用的prompt。
-
+> 来源：`https://my.feishu.cn/docx/I6E0dyfjooR1joxjMehcl8winLe`
+>
+> 以下为我在使用Midjourney时个人积累的一些有用的prompt。
+>
 > 我的采集原则是：
 
-1.  收集prompt不是目的，不要把囤积当做习得，找到适合自己的应用方式服务自己的创作才是目的；
+1. 收集prompt不是目的，不要把囤积当做习得，找到适合自己的应用方式服务自己的创作才是目的；
+2. 重要的是养成识别优质描述词的能力，学会辨别不同的prompt在不同主题的绘画中的权重；
+3. prompt×句式结构的结合才是最高效的应用方式，不要过度依赖单一具体prompt；
+4. 对于常规的、通用的prompt，不做特别积累，采用更全面的prompt辅助网站更方便，例如：
 
-1.  重要的是养成识别优质描述词的能力，学会辨别不同的prompt在不同主题的绘画中的权重；
+   midjourney-prompt-builder：`https://promptomania.com/midjourney-prompt-builder/`
 
-1.  prompt×句式结构的结合才是最高效的应用方式，不要过度依赖单一具体prompt；
+   提示词扩充：`https://huggingface.co/spaces/daspartho/prompt-extend?continueFlag=e9a014f1e95c680fb6914aabd0df1599`
 
-1.  对于常规的、通用的prompt，不做特别积累，采用更全面的prompt辅助网站更方便，例如：
+5. 对于各个描述词的具体效果，可以在Midjourney 官方社区，检索对应关键词查看社群作品
 
-> midjourney-prompt-builder：
-
-> https://promptomania.com/midjourney-prompt-builder/
-
-> 提示词扩充：
-
-> https://huggingface.co/spaces/daspartho/prompt-extend?continueFlag=e9a014f1e95c680fb6914aabd0df1599
-
-1.  对于各个描述词的具体效果，可以在Midjourney 官方社区，检索对应关键词查看社群作品
-
-# 绘画风格
+## 绘画风格
 
 illustration 插画
 
@@ -124,7 +118,7 @@ behind the scenes 幕后
 
 Otherworldly Landscape 另一个世界的风景
 
-# 精细程度
+## 精细程度
 
 Photo-real 真实如照片
 
@@ -148,7 +142,7 @@ ultra detailed 超多细节
 
 detailed picture of 一幅详细的画
 
-# 颜色运用
+## 颜色运用
 
 limited palette 有限颜色
 
@@ -164,13 +158,13 @@ cerulean 蔚蓝色的
 
 crimson 深红色的
 
-# 光线应用
+## 光线应用
 
 evenly lit bright room 光线均匀的房间
 
 no contrast 无对比
 
-# 摄影风格
+## 摄影风格
 
 cinematic lighting 电影打光
 
@@ -202,7 +196,7 @@ Shot on 35mm 35毫米胶卷
 
 15/35/85/100 mm Lens 镜头F/2.8 焦距
 
-# 构图视角
+## 构图视角
 
 Worms eye view 蠕虫眼视角
 
@@ -238,7 +232,7 @@ Image split into 2, front view and back view 图片分成2张，正面视角和�
 
 knolling将相关联的物品以平行或是垂直排放的组织方式
 
-# 建筑设计
+## 建筑设计
 
 isometric view 微缩建筑
 
@@ -256,7 +250,7 @@ wooden floor 木质地板
 
 minimalist hotel lobby 极简主义的旅馆休息室
 
-# 道具设计
+## 道具设计
 
 Vast array of …… 很多物品的排列
 
@@ -278,7 +272,7 @@ Pixelart 像素艺术
 
 isometric view 等距
 
-# 身份角色
+## 身份角色
 
 humanoid 类人生物
 
@@ -294,7 +288,7 @@ clay models黏土模型
 
 c4d，OCtane c4d，oc渲染器
 
-# 相貌特征
+## 相貌特征
 
 flowing wild hair 飘逸的头发
 
@@ -310,7 +304,7 @@ proportional body 成比例的身体
 
 dynamic pose 动感的姿势
 
-# 衣物穿着
+## 衣物穿着
 
 trenchcoat 军用防水短上衣；腰带式大衣
 
@@ -336,7 +330,7 @@ oversize coat 大号外套
 
 silk 丝绸
 
-# 人物视角
+## 人物视角
 
 30 degree tilt body 30度倾斜的身体
 
@@ -364,7 +358,7 @@ Fullbody shoot 全身视图
 
 looking straight in the front 眼神直视前方
 
-# 景观景物
+## 景观景物
 
 tavern 酒馆，客栈
 

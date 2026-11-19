@@ -1,16 +1,17 @@
+
 # Intern-S1 社区优秀使用案例（收集中）
 
 > 来源：[https://aicarrier.feishu.cn/docx/JlYwdwMohovfSXx0cpwcC7Tdn9d](https://aicarrier.feishu.cn/docx/JlYwdwMohovfSXx0cpwcC7Tdn9d)
 
 WAIC 期间使用 S1 提交一个 Amazing 的使用案例，赠送 2000W Token （有效期三个月）。
 
-使用 https://chat.intern-ai.org.cn 页面和 Intern-S1 进行对话然后截图就行。
+使用 `https://chat.intern-ai.org.cn` 页面和 Intern-S1 进行对话然后截图就行。
 
 ## 案例1: 使用 Intern-S1 的 API 批量生成 3000 篇论文解读
 
 可以看看生成效果，图文并茂。这还不是 Intern-S1 天赋点，多模态酷酷强。
 
-https://rmd.paperscope.ai/?md=https://cdn.vansin.top/acl2025/2025.acl-long.131/intern_s1_blog_p1.md
+`https://rmd.paperscope.ai/?md=https://cdn.vansin.top/acl2025/2025.acl-long.131/intern_s1_blog_p1.md`
 
 ## 案例2: 药物设计
 

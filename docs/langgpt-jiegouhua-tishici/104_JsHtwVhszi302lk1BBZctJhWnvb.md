@@ -1,22 +1,21 @@
+
 # 口袋AI：五分钟把世界知识装进口袋
 
 > 来源：[https://langgptai.feishu.cn/docx/YbWPduoqaoqEK0xQsRvcjnGhnwb](https://langgptai.feishu.cn/docx/YbWPduoqaoqEK0xQsRvcjnGhnwb)
 
-原文：
-
-https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
+原文：https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 ## 安装包（目前只支持安卓，2024.11.11更新）
 
 ![](img/69ae106436fc4f640a56286e13de9694.png)
 
-[PocketAI-by-LangGPT-1.4.7.apk](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VOxWb0JNiomBB4xNjk9cAL5znoh)
+[`PocketAI-by-LangGPT-1.4.7.apk`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VOxWb0JNiomBB4xNjk9cAL5znoh)
 
 ![](img/6c3015117a0e33c76f68e05ce291ec96.png)
 
 现在我日常已经离不开使用 AI 了。
 
-但是目前这些 AI 的使用都有一个问题，那就是需要联网，一旦在没网或者网不好的情况下，AI就得歇菜。
+但是目前这些 AI 的使用都有一个问题，那就是需要联网，一旦在没网或者网不好的情况下，AI 就得歇菜。
 
 好几次，我在飞机上脑子里想到了某个东西，但是具体是什么不清楚，都会想，要是没网的时候也能用 AI 大模型就好了。
 
@@ -42,11 +41,11 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 ![](img/eaf9798fbdece5e6601abfd96baa7ea4.png)
 
-[d15e0f413e33abfcb497cbfae25e2e99.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MuGFbAnIQozNncxcXK9cmpy0n8g)
+[`d15e0f413e33abfcb497cbfae25e2e99.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MuGFbAnIQozNncxcXK9cmpy0n8g)
 
 那么这个应用去哪儿下载呢？
 
-关注👸号**「云中江树」**，回复**「口袋AI」**获取下载链接。
+关注👸号「云中江树」，回复「口袋AI」获取下载链接。
 
 如果你是 LangGPT 社区群友，安装包我已经发群里了，可以直接使用。
 
@@ -56,13 +55,13 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 ## Termux 安装法
 
-就是在手机上安装 Termux，然后安装linux系统，**再安装 Ollama，下载及运行大模型。全程步骤**很多，要输一大堆命令，而且全程都要在下面这个黑框里面操作，包括对话也是，很麻烦。
+就是在手机上安装 Termux，然后安装linux系统，再安装 Ollama，下载及运行大模型。全程步骤很多，要输一大堆命令，而且全程都要在下面这个黑框里面操作，包括对话也是，很麻烦。
 
 ![](img/4501acfa12971f6e6ae5851c61a146df.png)
 
 具体怎么安装我就不讲了，感兴趣的技术专家自己查看下面的文章
 
-[https://www.53ai.com/news/qi](https://www.53ai.com/news/qianyanjishu/1795.html)anyanjishu/1795.html
+[https://www.53ai.com/news/qianyanjishu/1795.html](https://www.53ai.com/news/qianyanjishu/1795.html)
 
 ## APP 安装法
 
@@ -82,7 +81,7 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 ![](img/80a5090bd583c1e443d2f02cd3be9638.png)
 
-于是我还真的自己按照官方的教程打包编译了 MLC-Ch**at，但是很遗憾，在我三年前的旧**手机上，每次使用 MLC-Chat 都会黑屏，也许是占用 GPU 资源太多的原因，也许新手机会好很多。
+于是我还真的自己按照官方的教程打包编译了 MLC-Chat，但是很遗憾，在我三年前的旧手机上，每次使用 MLC-Chat 都会黑屏，也许是占用 GPU 资源太多的原因，也许新手机会好很多。
 
 于是我继续寻找，看看有没有更方便的方案。
 
@@ -92,7 +91,7 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 ![](img/2389ceda02bbbf0dd0ef5395a24757e9.png)
 
-但是，**国内用不上 PocketPal ！安装**包只能在谷歌商店下载，同时还要特殊上网！
+但是，国内用不上 PocketPal！安装包只能在谷歌商店下载，同时还要特殊上网！
 
 因为模型很大，下载模型的时候不仅慢，而且经常失败，浪费很多时间！
 
@@ -106,7 +105,6 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 于是综合了上面各种方案以后，我在 PocketPal 开源项目的基础上打造了更符合中国宝宝体质的「口袋AI」APP。
 
-
 不用看英文了！内容全部翻译为中文。
 
 不用特殊网络了！国内流畅访问。
@@ -118,8 +116,6 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 **5min 内就能让你在手机上用**上本地大模型！
 
 也许是国内目前最快捷的部署方法。
-
-
 
 希望能让大家在手机上更方便省心的用好 AI。
 
@@ -135,4 +131,4 @@ https://mp.weixin.qq.com/s/1pt2ugL625bvn0bstwreBA
 
 ![](img/30df82f0fd33df8587a09bccde20dcab.png)
 
-[PocketAI-by-LangGPT-1.4.7.apk](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RXksb98kpov3iFxkdHXcBuKoncb)
+[`PocketAI-by-LangGPT-1.4.7.apk`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RXksb98kpov3iFxkdHXcBuKoncb)

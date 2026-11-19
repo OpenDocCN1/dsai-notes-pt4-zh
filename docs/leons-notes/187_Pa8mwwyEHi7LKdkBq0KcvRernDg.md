@@ -1,6 +1,7 @@
+
 # 04 Leon Thinking
 
-> 来源：[https://leonzhang.feishu.cn/docx/COZYdOaYaolcbTxYOsEcQesinFc](https://leonzhang.feishu.cn/docx/COZYdOaYaolcbTxYOsEcQesinFc)
+> 来源：`https://leonzhang.feishu.cn/docx/COZYdOaYaolcbTxYOsEcQesinFc`
 
 > 你以为你看到的是这个世界的实境，但其实是你对这个世界的偏见。   ——孟岩
 

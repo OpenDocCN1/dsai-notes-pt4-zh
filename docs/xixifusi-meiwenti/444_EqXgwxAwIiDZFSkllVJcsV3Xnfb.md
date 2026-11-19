@@ -1,12 +1,13 @@
+
 # 投资逻辑
 
 > 来源：[https://docs.feishu.cn/docx/Dg15dF1Q9oQYppxReJQcZLYdnue](https://docs.feishu.cn/docx/Dg15dF1Q9oQYppxReJQcZLYdnue)
 
-# 传统投资
+## 传统投资
 
-# 加密投资
+## 加密投资
 
-## Jasen的分享
+### Jasen的分享
 
 > https://mp.weixin.qq.com/s/7d36MwMbFKK7Q6Mq9lt8KA
 
@@ -18,13 +19,10 @@
 
 LSD赛道的终局我们看的非常清楚，在16年V神发表的博客中给以太坊制定的规划中明确的写到POS势在必行，再加上POW的各种问题所以POS的终局我们是可以看到的，然后到达这个终局的过程有4个里程碑
 
-1、16年V神的博客进行了战略规划
-
-2、20年信标链上线正式进入战略落地阶段
-
-3、22年的POW和POS merge巴黎升级为POS打下基础
-
-4、23年上海升级完成提款能力为用户质押扫清障碍
+1. 16年V神的博客进行了战略规划
+2. 20年信标链上线正式进入战略落地阶段
+3. 22年的POW和POS merge巴黎升级为POS打下基础
+4. 23年上海升级完成提款能力为用户质押扫清障碍
 
 我们来看这四个里程碑，第一个16年肯定不能入场，否则这8年怎么熬。
 

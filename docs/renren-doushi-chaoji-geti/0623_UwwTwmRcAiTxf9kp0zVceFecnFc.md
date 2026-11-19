@@ -1,3 +1,4 @@
+
 # 用RPA全自动化批量生产【生僻字】图片做📕商单，保姆级工具开发教程（附工具下载）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Y0Sod7uc7oynV5xOKJvczfWrnng](https://xuqiwei1986.feishu.cn/docx/Y0Sod7uc7oynV5xOKJvczfWrnng)
@@ -10,19 +11,19 @@
 
 这个项目比较固定，不仅可以做📕，视频号、抖音也同样可以发。于是就在思考怎么通过RPA达到批量生产做矩阵的目的。接下来，我将我通过批量生产生僻字的步骤分享给大家，一键启动RPA机器人，机器人就会自动逐个读取excel，并将生僻字转成图片保存在本地文件夹。
 
-开发工具为：**影刀+cursor**
+开发工具为：`影刀`+`cursor`
 
-# 一、怎么将生僻字生成图片呢？
+## 一、怎么将生僻字生成图片呢？
 
 我的方法比较简单，核心是2点：**拼音字体和ppt导出图片**。
 
-## 1.1、安装拼音字体
+### 1.1、安装拼音字体
 
 拼音字体的意思就是，粘贴汉字过来后，会自动显示拼音，如图：
 
 ![](img/87ce48def924a7bd49dda29317e2dd78.png)
 
-我用的是一个叫做【**萌神拼音**】的免费商用字体库，[点击下载字体库](https://pan.quark.cn/s/a904d5394369)** ,安装也很简**单，以windows为例，ctrl+r调出运行，输入control进入外观与个性化，再将上面的字体拖入到下面的字体库区域即可。
+我用的是一个叫做【萌神拼音】的免费商用字体库，[点击下载字体库](https://pan.quark.cn/s/a904d5394369)，安装也很简单，以windows为例，ctrl+r调出运行，输入`control`进入外观与个性化，再将上面的字体拖入到下面的字体库区域即可。
 
 ![](img/052589979f1480faace8375055880c94.png)
 
@@ -30,7 +31,7 @@
 
 ![](img/87d64b7da7740a149276a787acbf2de2.png)
 
-## 1.2、生僻字PPT模板制作
+### 1.2、生僻字PPT模板制作
 
 我参考了📕上面的很多博主案例封面，于是自己也做了一款。
 
@@ -44,7 +45,7 @@
 
 [模板3-生僻字.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V0NMbO2U5oRADbxeZqUceZfjnQg)
 
-# 二、通过AI批量生产生僻字和解释。
+## 二、通过AI批量生产生僻字和解释。
 
 怎么获取生僻字资源？
 
@@ -64,7 +65,7 @@
 
 ![](img/45c06fd976124fb6ffc62e51cf27335a.png)
 
-# 三、用影刀自动批量生产生僻字图片
+## 三、用影刀自动批量生产生僻字图片
 
 可以说，这一步是批量化最关键的步骤，我们选用的工具是影刀，自动读取excel，并替换ppt中的生僻字并导出图片。
 
@@ -77,34 +78,34 @@ import win32com.client
 import os
 import datetime
 
-#功能：打开ppt，替换文本，并导出图片
+# 功能：打开ppt，替换文本，并导出图片
 class PowerPointEditor:
     def __init__(self, ppt_path):
-        &quot;&quot;&quot;
+        """
         初始化 PowerPoint 编辑器。
         
         参数:
             ppt_path (str): PowerPoint 文件路径。
-        &quot;&quot;&quot;
+        """
         if not os.path.exists(ppt_path):
-            raise FileNotFoundError(f&quot;File &#x27;{ppt_path}&#x27; does not exist.&quot;)
+            raise FileNotFoundError(f"File '{ppt_path}' does not exist.")
         
         self.ppt_path = ppt_path
-        self.ppt_app = win32com.client.Dispatch(&quot;PowerPoint.Application&quot;)
+        self.ppt_app = win32com.client.Dispatch("PowerPoint.Application")
         self.ppt_app.Visible = True  # 可见，方便调试
         self.presentation = self.ppt_app.Presentations.Open(ppt_path)
 
     def replace_text_in_slide(self, slide_index, old_text, new_text):
-        &quot;&quot;&quot;
+        """
         替换指定幻灯片中的所有文本框中的文本。
         
         参数:
             slide_index (int): 要替换的幻灯片序号（从 1 开始）。
             old_text (str): 要查找的旧文本。
             new_text (str): 要替换的新文本。
-        &quot;&quot;&quot;
-        if slide_index &lt; 1 or slide_index &gt; len(self.presentation.Slides):
-            raise ValueError(f&quot;Slide index {slide_index} is out of range (1-{len(self.presentation.Slides)}).&quot;)
+        """
+        if slide_index < 1 or slide_index > len(self.presentation.Slides):
+            raise ValueError(f"Slide index {slide_index} is out of range (1-{len(self.presentation.Slides)}).")
         
         slide = self.presentation.Slides(slide_index)
 
@@ -113,20 +114,21 @@ class PowerPointEditor:
                 text_range = shape.TextFrame.TextRange
                 if old_text in text_range.Text:
                     text_range.Replace(old_text, new_text)
-    def export_slide_as_image(self, slide_index, export_folder, image_format=&quot;PNG&quot;):
-        &quot;&quot;&quot;
+
+    def export_slide_as_image(self, slide_index, export_folder, image_format="PNG"):
+        """
         将指定幻灯片导出为图片，并返回图片的完整路径。
         
         参数:
             slide_index (int): 要导出的幻灯片序号（从 1 开始）。
             export_folder (str): 图片保存文件夹路径。
-            image_format (str): 图片格式，支持 &quot;PNG&quot;, &quot;JPG&quot;, &quot;GIF&quot; 等（默认 PNG）。
+            image_format (str): 图片格式，支持 "PNG", "JPG", "GIF" 等（默认 PNG）。
         
         返回:
             str: 导出的图片完整路径。
-        &quot;&quot;&quot;
-        if slide_index &lt; 1 or slide_index &gt; len(self.presentation.Slides):
-            raise ValueError(f&quot;Slide index {slide_index} is out of range (1-{len(self.presentation.Slides)}).&quot;)
+        """
+        if slide_index < 1 or slide_index > len(self.presentation.Slides):
+            raise ValueError(f"Slide index {slide_index} is out of range (1-{len(self.presentation.Slides)}).")
         
         # 检查文件夹是否存在，不存在则创建
         if not os.path.exists(export_folder):
@@ -134,43 +136,46 @@ class PowerPointEditor:
 
         # 自动生成文件名
         filename = self.gettimestamp()
-        file_name = f&quot;{filename}.{image_format.lower()}&quot;
+        file_name = f"{filename}.{image_format.lower()}"
         export_path = os.path.join(export_folder, file_name)
 
         # 导出幻灯片为图片
         slide = self.presentation.Slides(slide_index)
         slide.Export(export_path, image_format)
-        print(f&quot;Slide {slide_index} exported as {image_format} to &#x27;{export_path}&#x27;.&quot;)
+        print(f"Slide {slide_index} exported as {image_format} to '{export_path}'.")
         return export_path
+
     def save(self, save_path=None):
-        &quot;&quot;&quot;
+        """
         保存 PowerPoint 文件。
         
         参数:
             save_path (str): 保存路径（默认覆盖原文件）。
-        &quot;&quot;&quot;
+        """
         if save_path is None:
             save_path = self.ppt_path
         
         self.presentation.SaveAs(save_path)
-        print(f&quot;Presentation saved as &#x27;{save_path}&#x27;.&quot;)
+        print(f"Presentation saved as '{save_path}'.")
+
     def gettimestamp(self):
         # 获取当前时间
         now = datetime.datetime.now()
         # 格式化为 yyyymmddhhMMss
-        formatted_time = now.strftime(&#x27;%Y%m%d%H%M%S&#x27;)
+        formatted_time = now.strftime('%Y%m%d%H%M%S')
         # 获取毫秒部分
         milliseconds = now.microsecond // 1000  # 微秒除以1000得到毫秒
         # 将毫秒部分转换为字符串，并确保是三位数
-        milliseconds_str = f&#x27;{milliseconds:03d}&#x27;
+        milliseconds_str = f'{milliseconds:03d}'
         # 拼接时间戳字符串
         timestamp_str = formatted_time + milliseconds_str
         print(timestamp_str)
         return timestamp_str
+
     def close(self):
-        &quot;&quot;&quot;
+        """
         关闭 PowerPoint 演示文稿和应用程序。
-        &quot;&quot;&quot;
+        """
         if self.presentation:
             self.presentation.Close()
             del self.presentation
@@ -179,12 +184,12 @@ class PowerPointEditor:
             del self.ppt_app
 
 
-#ppt_path = r&quot;E:\workspace\rpa\影刀\生僻字\temp.pptx&quot;
-#output_path = r&quot;E:\workspace\rpa\影刀\生僻字\output_png&quot;
+# ppt_path = r"E:\workspace\rpa\影刀\生僻字\temp.pptx"
+# output_path = r"E:\workspace\rpa\影刀\生僻字\output_png"
 ppt_path = dialog_result.ppt_path
-output_path = ppt_path[:ppt_path.rfind(&#x27;\\&#x27;)] + &quot;\\output&quot;
+output_path = ppt_path[:ppt_path.rfind('\\')] + "\\output"
 # original_path = dialog_result.ppt_path
-# ppt_dir = original_path[:original_path.rfind(&#x27;\\&#x27;)]
+# ppt_dir = original_path[:original_path.rfind('\\')]
 
 title = loop_excel[0]
 content = loop_excel[1]
@@ -192,19 +197,18 @@ content = loop_excel[1]
 editor = PowerPointEditor(ppt_path)
 try:
     # 多次替换文本
-    editor.replace_text_in_slide(1, &quot;词语&quot;, title)
-    editor.replace_text_in_slide(1, &quot;解释&quot;, content)
-    editor.export_slide_as_image(1,output_path)
+    editor.replace_text_in_slide(1, "词语", title)
+    editor.replace_text_in_slide(1, "解释", content)
+    editor.export_slide_as_image(1, output_path)
     # 保存结果
-    #editor.save(save_path)  //注释掉，暂无需保存
+    # editor.save(save_path)  // 注释掉，暂无需保存
     
 except Exception as e:
-    print(f&quot;Error: {e}&quot;)
+    print(f"Error: {e}")
 finally:
     # 确保关闭 PowerPoint
-   if &#x27;editor&#x27; in locals():
+    if 'editor' in locals():
         editor.close()
-
 ```
 
 这个代码确实踩了很多坑，是通过cursor生成的，不得不说效率真的高，不仅流程快，而且解决bug也超快。
@@ -215,7 +219,7 @@ finally:
 
 [0110-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WHAubWaclo7sWuxg1jzc3Bmontd)
 
-# 四、工具下载
+## 四、工具下载
 
 影刀下载：[点击这里](https://www.winrobot360.com/share/activity?inviteUserUuid=e6971e44-2101-4281-85f8-3a1bea004aa4)
 

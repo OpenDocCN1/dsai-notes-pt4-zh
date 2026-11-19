@@ -1,3 +1,4 @@
+
 # 被封了？DOW颠覆更新拯救你！
 
 > 来源：[https://my.feishu.cn/docx/Xmv9d7x5Zou4zqxqsWncE9Menwe](https://my.feishu.cn/docx/Xmv9d7x5Zou4zqxqsWncE9Menwe)
@@ -12,7 +13,7 @@ HI，大家好，年前好忙，接近一个月没有更新了。
 
 所以大家登录后在手机上看到的是“windows 🛰️已登录”或者“网页已登录”。
 
-此次检测也是针对于Web协议，所以，一扫一个准儿。
+此次检测也是针于Web协议，所以，一扫一个准儿。
 
 DOW在元旦前，更新了GEWE协议，它是一个Ipad协议，不在检测范围内。
 
@@ -64,15 +65,15 @@ docker pull ghcr.io/tu1h/wechotd/wechotd:alpine
 docker tag ghcr.io/tu1h/wechotd/wechotd:alpine gewe
 ```
 
-**root下**新建一个**gewechat文件夹**。
+`root` 下新建一个 `gewechat` 文件夹。
 
 ![](img/49fd65108c204c62e3f9b537e816d058.png)
 
-创建**data文件夹**和docker-compose.yml文件。
+创建 `data` 文件夹和 `docker-compose.yml` 文件。
 
 ![](img/1e528e28a1c1e4c32d45a962c1cca2b8.png)
 
-复制以下内容到docker-compose.yml文件。
+复制以下内容到 `docker-compose.yml` 文件。
 
 ```
 version: &#x27;3&#x27;
@@ -97,10 +98,10 @@ networks:
     
 ```
 
-然后点击**终端**，执行指令，启动Docker，直接执行第2个，第1个只是备注给大家说明。
+然后点击终端，执行指令，启动Docker，直接执行第2个，第1个只是备注给大家说明。
 
 ```
-**dock**er-compose down     #会停止并移除所有容器
+docker-compose down     #会停止并移除所有容器
 docker-compose up -d    #以 后台模式 启动所有容器
 ```
 
@@ -120,13 +121,13 @@ docker-compose up -d    #以 后台模式 启动所有容器
 
 这里只说怎么连接GEWE。
 
-dify-on-wechat、dify、gewechat服务的调用关系
+`dify-on-wechat`、`dify`、`gewechat` 服务的调用关系
 
 ![](img/df498b32fe6a0364f74df9e92d287080.png)
 
-在dify-on-we**chat项目的**config.json中需要配置以下Gewechat相关的参数，注意删除解释的文字：
+在 `dify-on-wechat` 项目的 `config.json` 中需要配置以下 `gewechat` 相关的参数，注意删除解释的文字：
 
-这里如果你和老金一样Gewe是在Docker中部署的，那么直接和老金写一样的就行。
+这里如果你和老金一样 `gewechat` 是在Docker中部署的，那么直接和老金写一样的就行。
 
 Dify相关的请自行配置。
 
@@ -144,29 +145,29 @@ Dify相关的请自行配置。
 
 参数说明：
 
-+   gewechat_token:** gewechat**服务的认证token，首次登录时，可以留空，启动dify-on-wechat服务时，会自动获取token并自动保存到config.json中
++   `gewechat_token`: `gewechat` 服务的认证 `token`，首次登录时，可以留空，启动 `dify-on-wechat` 服务时，会自动获取 `token` 并自动保存到 `config.json` 中
 
-+   gewechat_app_id:** gewechat**服务分配的设备ID，首次登录时，可以留空，启动dify-on-wechat服务时，会自动获取appid并自动保存到config.json中
++   `gewechat_app_id`: `gewechat` 服务分配的设备ID，首次登录时，可以留空，启动 `dify-on-wechat` 服务时，会自动获取 `appid` 并自动保存到 `config.json` 中
 
-+   gewechat_base_url: gewechat服务的API基础地址，请根据实际情况配置，如果gewechat服务与dify-on-wechat服务部署在同一台机器上，可以配置为http://本机ip:2531/v2/api
++   `gewechat_base_url`: `gewechat` 服务的API基础地址，请根据实际情况配置，如果 `gewechat` 服务与 `dify-on-wechat` 服务部署在同一台机器上，可以配置为 `http://本机ip:2531/v2/api`
 
-+   gewechat_callback_url: 接收gewechat消息的回调地址，请根据实际情况配置，如果gewechat服务与dify-on-wechat服务部署在同一台机器上，可以配置为http://本机ip:9919/v2/api/callback/collect，如无特殊需要，请使用9919端口号
++   `gewechat_callback_url`: 接收 `gewechat` 消息的回调地址，请根据实际情况配置，如果 `gewechat` 服务与 `dify-on-wechat` 服务部署在同一台机器上，可以配置为 `http://本机ip:9919/v2/api/callback/collect`，如无特殊需要，请使用9919端口号
 
-+   gewechat_download_url: 文件下载地址，用于下载语音、图片等文件，请根据实际部署情况配置，如果gewechat服务与dify-on-wechat服务部署在同一台机器上，可以配置为http://本机ip:2532/download
++   `gewechat_download_url`: 文件下载地址，用于下载语音、图片等文件，请根据实际部署情况配置，如果 `gewechat` 服务与 `dify-on-wechat` 服务部署在同一台机器上，可以配置为 `http://本机ip:2532/download`
 
-> 请确保您的回调地址(callback_url)，即dify-on-wechat启动的回调服务可以被gewechat服务正常访问到。如果您使用Docker部署，需要注意网络配置，确保容器之间可以正常通信。
+> 请确保您的回调地址 `callback_url`，即 `dify-on-wechat` 启动的回调服务可以被 `gewechat` 服务正常访问到。如果您使用Docker部署，需要注意网络配置，确保容器之间可以正常通信。
 
-> 本机ip是指**局域网ip**或**公网ip**，可通过ipconfig或ifconfig命令查看
+> 本机 `ip` 是指 `局域网 ip` 或 `公网 ip`，可通过 `ipconfig` 或 `ifconfig` 命令查看
 
-> 对与gewechat_callback_url，ip不能填127.0.0.1或localhost，否则会报错
+> 对与 `gewechat_callback_url`，`ip` 不能填 `127.0.0.1` 或 `localhost`，否则会报错
 
-> 9919端口是dify-on-wechat服务监听的端口，如果是用docker启动的dify-on-wechat服务,请把9919端口映射到宿主机
+> `9919` 端口是 `dify-on-wechat` 服务监听的端口，如果是用 `docker` 启动的 `dify-on-wechat` 服务，请把 `9919` 端口映射到宿主机
 
-启动成功后，可以看到如下日志信息，注意token和appid会自动保存到config.json，无需手动保存
+启动成功后，可以看到如下日志信息，注意 `token` 和 `appid` 会自动保存到 `config.json`，无需手动保存
 
 ![](img/dbdef042189ac66754a4ccc762738819.png)
 
-⚠️如果遇到gewechat创建设备失败，unexpected EOF错误，请排查网络是否是以下情况：
+⚠️如果遇到 `gewechat` 创建设备失败，`unexpected EOF` 错误，请排查网络是否是以下情况：
 
 1、代理：请关闭代理后尝试；
 
@@ -176,23 +177,23 @@ Dify相关的请自行配置。
 
 4、异地服务器：请更换为同省服务器；
 
-5、若手机上退出了Ipad，则需要把config里面GEWE的id和token的值删除；
+5、若手机上退出了Ipad，则需要把 `config` 里面 `GEWE` 的 `id` 和 `token` 的值删除；
 
-#### Gewechat_channel 限制
+#### `gewechat_channel` 限制
 
-1.  **ge**wechat 要求必须搭建服务到同省服务器或者电脑里方可正常使用，即登录🛰️的手机与gewechat服务必须在同一省
+1.  `gewechat` 要求必须搭建服务到同省服务器或者电脑里方可正常使用，即登录🛰️的手机与 `gewechat` 服务必须在同一省
 
-1.  gewechat 开源框架**只支持**下载接收到的图片，不支持下载文件
+1.  `gewechat` 开源框架只支持下载接收到的图片，不支持下载文件
 
-1.  **gewechat_**c**hannel 目前暂时只支持**接收文字消息，只支持发送文字消息与图片消息，后续支持的消息类型会逐步完善
+1.  `gewechat_channel` 目前暂时只支持接收文字消息，只支持发送文字消息与图片消息，后续支持的消息类型会逐步完善
 
-1.  此项目仅用于个人娱乐场景，**请勿用于任何商业场景**
+1.  此项目仅用于个人娱乐场景，请勿用于任何商业场景
 
 #### 语音条说明
 
 老金我自己还没接，有兴趣的小伙伴可以自己试试。
 
-语音相关配置如下，另外需要在dify应用中开启语音转**文字以及文字转语音功**能，注意语音功能需要安装ffmpeg依赖，如使用docker部署dify，已集成ffmpeg依赖，无需额外安装。
+语音相关配置如下，另外需要在 `dify` 应用中开启语音转文字以及文字转语音功能，注意语音功能需要安装 `ffmpeg` 依赖，如使用 `docker` 部署 `dify`，已集成 `ffmpeg` 依赖，无需额外安装。
 
 ```
 {
@@ -209,9 +210,9 @@ Dify相关的请自行配置。
 }
 ```
 
-Gewe支持**发送语音条消息**，但是Gewe服务只能获取到**20s**以内的语音
+`gewechat` 支持发送语音条消息，但是 `gewechat` 服务只能获取到 `20s` 以内的语音
 
-所以你只**能给bot发送20s以内的语**音，而bot给你发送语音时无此限制。
+所以你只能给 `bot` 发送 `20s` 以内的语音，而 `bot` 给你发送语音时无此限制。
 
 ![](img/b4f707b7004dd35295280f829dfce06a.png)
 

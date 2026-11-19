@@ -1,3 +1,4 @@
+
 # 精美文章总结卡片
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/PwgYd9M9Zo9A6RxUeqRcjdD4nEc](https://vxc3hj17dym.feishu.cn/docx/PwgYd9M9Zo9A6RxUeqRcjdD4nEc)
@@ -6,9 +7,9 @@
 
 原文地址：https://mp.weixin.qq.com/s/jKFtBtP5MXB95GBBFrpF4w
 
-适用大模型：Claude
+适用大模型：`Claude`
 
-提示词
+## 提示词
 
 ```
 # 文章概念卡片设计师提示词
@@ -137,264 +138,373 @@
 - **html2canvas库**：用于高质量图像导出，确保图标正确渲染
 
 ### HTML基础结构（必须包含下载功能）
+```
 ```html
+
 &lt;!DOCTYPE html&gt;
+
 &lt;html lang=&quot;zh&quot;&gt;
+
 &lt;head&gt;
+
   &lt;meta charset=&quot;UTF-8&quot;&gt;
+
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
   &lt;title&gt;文章概念卡片&lt;/title&gt;
+
   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&quot;&gt;
+
   &lt;script src=&quot;https://html2canvas.hertzen.com/dist/html2canvas.min.js&quot;&gt;&lt;/script&gt;
-  
+
   &lt;style&gt;
+
     /* 重置样式 */
+
     * {
+
       margin: 0;
+
       padding: 0;
+
       box-sizing: border-box;
+
       font-family: system-ui, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
+
     }
-    
+
     /* 卡片容器 - 固定尺寸和位置 */
+
     #card-container {
+
       position: relative;
+
       width: 1080px;
+
       height: 800px;
+
       background-color: #F5F2EB;
+
       border-radius: 12px;
+
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
       overflow: hidden;
+
     }
-    
+
     /* 自定义文本截断类 */
+
     .text-clamp-2 {
+
       display: -webkit-box;
+
       -webkit-line-clamp: 2;
+
       -webkit-box-orient: vertical;
+
       overflow: hidden;
+
     }
-    
+
     .text-clamp-3 {
+
       display: -webkit-box;
+
       -webkit-line-clamp: 3;
+
       -webkit-box-orient: vertical;
+
       overflow: hidden;
+
     }
-    
+
     /* 图标精确定位样式 */
+
     .icon-container i {
+
       display: inline-block;
+
       line-height: 0;
+
       position: relative;
+
       top: -2px;
+
     }
-    
+
     /* 头部大图标修正 */
+
     .header-icon i {
+
       position: relative;
+
       top: -3px;
+
       line-height: 0;
+
     }
-    
+
     /* 列标题图标修正 */
+
     .column-icon i {
+
       position: relative;
+
       top: -2px;
+
       line-height: 0;
+
     }
-    
+
     /* 下载按钮固定定位，不占用卡片空间 */
+
     .download-button {
+
       position: fixed;
+
       bottom: 20px;
+
       left: 50%;
+
       transform: translateX(-50%);
+
       background-color: #8B2332;
+
       color: white;
+
       border: none;
+
       border-radius: 8px;
+
       padding: 12px 24px;
+
       font-size: 16px;
+
       cursor: pointer;
+
       display: flex;
+
       align-items: center;
+
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
       z-index: 100;
+
     }
-    
+
     .download-button i {
+
       margin-right: 8px;
+
     }
-    
+
     .download-button:hover {
+
       opacity: 0.9;
+
     }
-    
+
     @keyframes spin {
+
       0% { transform: rotate(0deg); }
+
       100% { transform: rotate(360deg); }
+
     }
-    
+
     .animate-spin {
+
       animation: spin 1s linear infinite;
+
       display: inline-block;
+
     }
+
   &lt;/style&gt;
+
 &lt;/head&gt;
+
 &lt;body style=&quot;background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;&quot;&gt;
+
   &lt;!-- 卡片容器 --&gt;
+
   &lt;div id=&quot;card-container&quot;&gt;
+
     &lt;!-- 在此设计卡片内容 --&gt;
+
   &lt;/div&gt;
-  
+
   &lt;!-- 下载按钮 - 必须包含 --&gt;
+
   &lt;button id=&quot;download-btn&quot; class=&quot;download-button&quot;&gt;
+
     &lt;i class=&quot;fas fa-download&quot;&gt;&lt;/i&gt; 下载卡片PNG图像
+
   &lt;/button&gt;
+
   &lt;!-- 下载功能脚本 - 必须包含且不得修改 --&gt;
+
   &lt;script&gt;
+
     // 确保DOM加载完成
+
     document.addEventListener(&#x27;DOMContentLoaded&#x27;, function() {
+
       // 获取下载按钮
+
       const downloadBtn = document.getElementById(&#x27;download-btn&#x27;);
-      
+
       // 添加点击事件
+
       downloadBtn.addEventListener(&#x27;click&#x27;, async function() {
+
         try {
+
           // 显示加载状态
+
           const originalHTML = this.innerHTML;
+
           this.innerHTML = &#x27;&lt;i class=&quot;fas fa-spinner animate-spin&quot;&gt;&lt;/i&gt; 正在生成高清图片...&#x27;;
+
           this.disabled = true;
-          
+
           // 先隐藏下载按钮再截图
+
           this.style.display = &#x27;none&#x27;;
-          
+
           const cardElement = document.getElementById(&#x27;card-container&#x27;);
-          
+
           // 确保字体和图标完全加载
+
           await document.fonts.ready;
-          
+
           // 触发重排，确保布局稳定
+
           cardElement.getBoundingClientRect();
-          
+
           // 增加等待时间确保所有渲染完成
+
           await new Promise(resolve =&gt; setTimeout(resolve, 500));
-          
+
           // 强制应用所有计算样式，防止重叠问题
+
           const forceStyleRecalc = (element) =&gt; {
+
             if (!element) return;
+
             window.getComputedStyle(element).getPropertyValue(&#x27;position&#x27;);
+
             const children = element.children;
+
             for (let i = 0; i &lt; children.length; i++) {
+
               forceStyleRecalc(children[i]);
+
             }
+
           };
+
           forceStyleRecalc(cardElement);
-          
+
           // 使用html2canvas，处理图标位置和元素重叠问题
-          const canvas = await html2canvas(cardElement, {
-            scale: 2,
-            useCORS: true,
-            allowTaint: true,
-            backgroundColor: cardElement.style.backgroundColor || &quot;#F5F2EB&quot;,
-            logging: false,
-            onclone: function(clonedDoc) {
-              const clonedCard = clonedDoc.getElementById(&#x27;card-container&#x27;);
-              
-              // 确保布局稳定性
-              clonedCard.style.position = &#x27;relative&#x27;;
-              clonedCard.style.width = &#x27;1080px&#x27;;
-              clonedCard.style.height = &#x27;800px&#x27;;
-              
-              // 处理所有定位元素，确保正确的堆叠顺序
-              const positionedElements = clonedCard.querySelectorAll(&#x27;[style*=&quot;position&quot;]&#x27;);
-              positionedElements.forEach((el, index) =&gt; {
-                // 确保有明确的z-index，防止重叠混乱
-                if (!el.style.zIndex) {
-                  el.style.zIndex = 10 + index;
-                }
-              });
-              
-              // 修正所有图标位置
-              const icons = clonedDoc.querySelectorAll(&#x27;i&#x27;);
-              icons.forEach(icon =&gt; {
-                icon.style.position = &#x27;relative&#x27;;
-                icon.style.top = &#x27;-2px&#x27;;
-                icon.style.display = &#x27;inline-block&#x27;; 
-                icon.style.lineHeight = &#x27;1&#x27;;
-              });
-              
-              // 特别处理标题图标
-              const headerIcons = clonedDoc.querySelectorAll(&#x27;.header-icon i&#x27;);
-              headerIcons.forEach(icon =&gt; {
-                icon.style.top = &#x27;-4px&#x27;;
-              });
-              
-              // 特别处理列标题图标
-              const columnIcons = clonedDoc.querySelectorAll(&#x27;.column-icon i&#x27;);
-              columnIcons.forEach(icon =&gt; {
-                icon.style.top = &#x27;-3px&#x27;;
-              });
-              
-              // 确保文本容器不重叠
-              const textContainers = clonedCard.querySelectorAll(&#x27;p, h1, h2, h3, h4, h5, h6, span, div&#x27;);
-              textContainers.forEach(el =&gt; {
-                // 如果没有明确的overflow设置，添加overflow:hidden
-                if (!el.style.overflow) {
-                  el.style.overflow = &#x27;hidden&#x27;;
-                }
-              });
-            }
-          });
-          
-          // 转换为PNG并下载
-          canvas.toBlob(function(blob) {
-            // 创建下载链接
-            const link = document.createElement(&#x27;a&#x27;);
-            // 从卡片标题获取文件名，如果没有则使用默认名称
-            const title = document.querySelector(&#x27;.card-title&#x27;) || document.querySelector(&#x27;h1&#x27;);
-            const fileName = (title ? title.textContent.trim().substring(0, 30) : &#x27;文章概念卡片&#x27;) + &#x27;.png&#x27;;
-            link.download = fileName;
-            link.href = URL.createObjectURL(blob);
-            link.click();
-            
-            // 清理URL对象
-            URL.revokeObjectURL(link.href);
-            
-            // 恢复按钮状态和显示
-            downloadBtn.style.display = &#x27;flex&#x27;;
-            downloadBtn.innerHTML = originalHTML;
-            downloadBtn.disabled = false;
-          }, &#x27;image/png&#x27;, 1.0);
-          
-        } catch (error) {
-          console.error(&#x27;生成图片失败:&#x27;, error);
-          alert(&#x27;生成图片失败，请重试&#x27;);
-          
-          // 恢复按钮状态
-          this.style.display = &#x27;flex&#x27;;
-          this.innerHTML = &#x27;&lt;i class=&quot;fas fa-download&quot;&gt;&lt;/i&gt; 下载卡片PNG图像&#x27;;
-          this.disabled = false;
-        }
-      });
+```
+
+
+
+```javascript
+const canvas = await html2canvas(cardElement, {
+  scale: 2,
+  useCORS: true,
+  allowTaint: true,
+  backgroundColor: cardElement.style.backgroundColor || "#F5F2EB",
+  logging: false,
+  onclone: function(clonedDoc) {
+    const clonedCard = clonedDoc.getElementById('card-container');
+    // 确保布局稳定性
+    clonedCard.style.position = 'relative';
+    clonedCard.style.width = '1080px';
+    clonedCard.style.height = '800px';
+    // 处理所有定位元素，确保正确的堆叠顺序
+    const positionedElements = clonedCard.querySelectorAll('[style*="position"]');
+    positionedElements.forEach((el, index) => {
+      // 确保有明确的z-index，防止重叠混乱
+      if (!el.style.zIndex) {
+        el.style.zIndex = 10 + index;
+      }
     });
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-```
+    // 修正所有图标位置
+    const icons = clonedDoc.querySelectorAll('i');
+    icons.forEach(icon => {
+      icon.style.position = 'relative';
+      icon.style.top = '-2px';
+      icon.style.display = 'inline-block';
+      icon.style.lineHeight = '1';
+    });
+    // 特别处理标题图标
+    const headerIcons = clonedDoc.querySelectorAll('.header-icon i');
+    headerIcons.forEach(icon => {
+      icon.style.top = '-4px';
+    });
+    // 特别处理列标题图标
+    const columnIcons = clonedDoc.querySelectorAll('.column-icon i');
+    columnIcons.forEach(icon => {
+      icon.style.top = '-3px';
+    });
+    // 确保文本容器不重叠
+    const textContainers = clonedCard.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span, div');
+    textContainers.forEach(el => {
+      // 如果没有明确的overflow设置，添加overflow:hidden
+      if (!el.style.overflow) {
+        el.style.overflow = 'hidden';
+      }
+    });
+  }
+});
 
-### 溢出防护技术
+// 转换为PNG并下载
+canvas.toBlob(function(blob) {
+  // 创建下载链接
+  const link = document.createElement('a');
+  // 从卡片标题获取文件名，如果没有则使用默认名称
+  const title = document.querySelector('.card-title') || document.querySelector('h1');
+  const fileName = (title ? title.textContent.trim().substring(0, 30) : '文章概念卡片') + '.png';
+  link.download = fileName;
+  link.href = URL.createObjectURL(blob);
+  link.click();
+  // 清理URL对象
+  URL.revokeObjectURL(link.href);
+  // 恢复按钮状态和显示
+  downloadBtn.style.display = 'flex';
+  downloadBtn.innerHTML = originalHTML;
+  downloadBtn.disabled = false;
+}, 'image/png', 1.0);
+
+} catch (error) {
+  console.error('生成图片失败:', error);
+  alert('生成图片失败，请重试');
+  // 恢复按钮状态
+  this.style.display = 'flex';
+  this.innerHTML = '<i class="fas fa-download"></i> 下载卡片PNG图像';
+  this.disabled = false;
+}
+
+});
+
+});
+```
+`</script>`
+`</body>`
+`</html>`
+
+## 溢出防护技术
 - **固定尺寸容器**：使用固定尺寸的卡片容器
-- **内容限制**：使用自定义的text-clamp类限制文本显示行数
-- **溢出控制**：为所有容器添加overflow-hidden类
-- **框模型控制**：使用box-border确保尺寸计算包含内边
+- **内容限制**：使用自定义的`text-clamp`类限制文本显示行数
+- **溢出控制**：为所有容器添加`overflow-hidden`类
+- **框模型控制**：使用`box-border`确保尺寸计算包含内边
 
-```
+### 稳定版
 
-稳定版
-
-```
 # 文章概念卡片设计师提示词
 
 ## 核心定位
@@ -443,14 +553,14 @@
    - 使用网格系统确保区块对齐和统一间距
 
 2. **创建严格边界框架**
-   - 使用固定尺寸（width/height）而非自适应属性
+   - 使用固定尺寸（`width`/`height`）而非自适应属性
    - 对可能溢出的内容区域应用溢出控制技术
    - 为每个内容容器设置最大高度和宽度限制
 
 3. **HTML/CSS布局构建**
    - 使用语义化HTML5结构和TailwindCSS工具类
    - 主布局采用Flexbox或Grid技术构建
-   - 为所有容器设置明确的尺寸限制，不使用auto尺寸
+   - 为所有容器设置明确的尺寸限制，不使用`auto`尺寸
    - 使用`box-sizing: border-box`确保正确的尺寸计算
 
 4. **创意安全区设计**
@@ -498,71 +608,65 @@
 
 ### HTML基础结构
 ```html
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;文章概念卡片&lt;/title&gt;
-  &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&quot;&gt;
-  
-  &lt;script&gt;
-    // 配置Tailwind主题 - 动态生成的色彩变量
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: &#x27;#主色调代码&#x27;,
-            secondary: &#x27;#辅助色代码&#x27;,
-            accent: &#x27;#强调色代码&#x27;,
-          },
-          width: {
-            &#x27;card&#x27;: &#x27;1080px&#x27;,
-          },
-          height: {
-            &#x27;card&#x27;: &#x27;800px&#x27;,
-          },
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章概念卡片</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+      // 配置Tailwind主题 - 动态生成的色彩变量
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#主色调代码',
+              secondary: '#辅助色代码',
+              accent: '#强调色代码',
+            },
+            width: {
+              'card': '1080px',
+            },
+            height: {
+              'card': '800px',
+            },
+          }
         }
       }
-    }
-  &lt;/script&gt;
-  
-  &lt;style&gt;
-    /* 自定义文本截断类 */
-    .text-clamp-2 {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    
-    .text-clamp-3 {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body class=&quot;bg-gray-100 flex justify-center items-center min-h-screen p-5&quot;&gt;
-  &lt;!-- 卡片容器 --&gt;
-  &lt;div class=&quot;w-card h-card bg-white rounded-xl shadow-lg overflow-hidden&quot;&gt;
-    &lt;div class=&quot;p-8 h-full flex flex-col&quot;&gt;
-      &lt;header class=&quot;mb-6&quot;&gt;
-        &lt;!-- 标题区域 --&gt;
-      &lt;/header&gt;
-      
-      &lt;main class=&quot;flex-grow flex flex-col gap-6 overflow-hidden&quot;&gt;
-        &lt;!-- 核心内容区域 --&gt;
-      &lt;/main&gt;
-      
-      &lt;footer class=&quot;mt-4 pt-4 border-t border-gray-100 text-sm text-gray-500&quot;&gt;
-        &lt;!-- 来源信息 --&gt;
-      &lt;/footer&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
+    </script>
+    <style>
+      /* 自定义文本截断类 */
+      .text-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .text-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center min-h-screen p-5">
+    <!-- 卡片容器 -->
+    <div class="w-card h-card bg-white rounded-xl shadow-lg overflow-hidden">
+      <div class="p-8 h-full flex flex-col">
+        <header class="mb-6">
+          <!-- 标题区域 -->
+        </header>
+        <main class="flex-grow flex flex-col gap-6 overflow-hidden">
+          <!-- 核心内容区域 -->
+        </main>
+        <footer class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-500">
+          <!-- 来源信息 -->
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
 ```

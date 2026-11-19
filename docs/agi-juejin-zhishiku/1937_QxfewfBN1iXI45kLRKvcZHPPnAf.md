@@ -1,8 +1,7 @@
-# 04.10-谷歌发布 Gemini 2.5 Flash AI 模型：专为省钱高效而生
-
-> 来源：[https://agijuejin.feishu.cn/docx/HrvgdBBjoovqFIxyUmrcGsuBnBe](https://agijuejin.feishu.cn/docx/HrvgdBBjoovqFIxyUmrcGsuBnBe)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 10 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/HrvgdBBjoovqFIxyUmrcGsuBnBe](https://agijuejin.feishu.cn/docx/HrvgdBBjoovqFIxyUmrcGsuBnBe)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -66,7 +65,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/844/105.htm)
 
 ![](img/2973040d93f5c7c7c45bb5683d341596.png)
 
-UC伯克利和Together AI联合推出开源代码推理模型DeepCoder-14B-Preview，14B参数媲美o3-mini。其在LiveCodeBench测试中单次通过率达60.6%，提升8%。团队还开源verl-pipe，让训练速度提高2倍。该模型基于24K个编程问题，在32个H100 GPU上训练2.5周。此外，在训练方法、数据集构建、代码沙盒环境等方面有创新，采用多种技术提升性能。
+UC伯克利和Together AI联合推出开源代码推理模型DeepCoder-14B-Preview，14B参数媲美o3-mini。其在LiveCodeBench测试中单次通过率达60.6%，提升8%。团队还开源`verl-pipe`，让训练速度提高2倍。该模型基于24K个编程问题，在32个H100 GPU上训练2.5周。此外，在训练方法、数据集构建、代码沙盒环境等方面有创新，采用多种技术提升性能。
 
 ### 💡 孪生世界动态仿真新突破！北大发布RainyGS：降雨/洪涝/风速精准可控
 
@@ -92,7 +91,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/844/148.htm)
 
 ![](img/1f404787ec7834633fe5b6c4b09efa9b.png)
 
-**4月10日路**透社**报道，**谷歌母公司Alphab**et重申今年**投入约750亿美元（**约合5519**.45亿元人民币）扩建数据中心，押注生成式AI，资金用于采购芯片和服务器。首席执行官桑达尔・皮查伊称AI机会巨大。此前Alphabet公布的投资计划超出华尔街分析师预期29%。此外，微软今年将投超800亿美元，Meta预计投多达650亿美元建设AI基础设施。自ChatGPT推出后，AI领域投资激增，各大公司争夺技术主导权 。
+4月10日路透社报道，谷歌母公司Alphabet重申今年投入约750亿美元（约合5519.45亿元人民币）扩建数据中心，押注生成式AI，资金用于采购芯片和服务器。首席执行官桑达尔・皮查伊称AI机会巨大。此前Alphabet公布的投资计划超出华尔街分析师预期29%。此外，微软今年将投超800亿美元，Meta预计投多达650亿美元建设AI基础设施。自ChatGPT推出后，AI领域投资激增，各大公司争夺技术主导权 。
 
 ### 💡 OpenAI 启动先锋计划，旨在重塑 AI 模型评分体系
 

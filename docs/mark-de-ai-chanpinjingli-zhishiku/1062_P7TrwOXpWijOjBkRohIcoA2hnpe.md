@@ -1,3 +1,4 @@
+
 # 使用LCEL构建一个简单的LLM应用程序
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/BrM6dzgGEotGmzxKiX2c47fBnDf](https://qqs7y1hozd1.feishu.cn/docx/BrM6dzgGEotGmzxKiX2c47fBnDf)
@@ -6,15 +7,11 @@
 
 阅读本教程后，您将对以下内容有一个高层次的概述：
 
-+   使用语言模型
-
-+   使用 PromptTemplates 和 OutputParsers
-
-+   使用 LangChain Expression Language (LCEL) 将组件连接在一起
-
-+   使用 LangSmith 调试和跟踪您的应用程序
-
-+   使用 LangServe 部署您的应用程序
++ 使用语言模型
++ 使用 `PromptTemplates` 和 `OutputParsers`
++ 使用 LangChain Expression Language (LCEL) 将组件连接在一起
++ 使用 LangSmith 调试和跟踪您的应用程序
++ 使用 LangServe 部署您的应用程序
 
 让我们开始吧！
 
@@ -36,15 +33,15 @@ Pip Conda
 pip install langchain
 ```
 
-```
 LangSmith
+
 您使用 LangChain 构建的许多应用程序将包含多个步骤和多次 LLM 调用。随着这些应用程序变得越来越复杂，能够检查链或代理内部发生的事情变得至关重要。最好的方法是使用 LangSmith。
+
 在上述链接注册后，请确保设置环境变量以开始记录跟踪信息：
-```
 
 ```
-export LANGCHAIN_TRACING_V2=&quot;true&quot;
-export LANGCHAIN_API_KEY=&quot;...&quot;
+export LANGCHAIN_TRACING_V2="true"
+export LANGCHAIN_API_KEY="..."
 ```
 
 或者，如果在 notebook 中，可以使用以下方法设置：
@@ -53,21 +50,19 @@ export LANGCHAIN_API_KEY=&quot;...&quot;
 import getpass
 import os
 
-os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
-os.environ[&quot;LANGCHAIN_API_KEY&quot;] = getpass.getpass()
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = getpass.getpass()
 ```
 
 ```
 import getpass
 import os
 
-os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
-os.environ[&quot;LANGCHAIN_API_KEY&quot;] = getpass.getpass()
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = getpass.getpass()
 ```
 
-```
 使用语言模型 首先，让我们学习如何单独使用语言模型。LangChain 支持许多不同的语言模型，您可以互换使用——选择您要使用的模型！
-```
 
 ```
 pip install -qU langchain-openai
@@ -77,37 +72,36 @@ pip install -qU langchain-openai
 import getpass
 import os
 
-os.environ[&quot;OPENAI_API_KEY&quot;] = getpass.getpass()
+os.environ["OPENAI_API_KEY"] = getpass.getpass()
 
 from langchain_openai import ChatOpenAI
 
-model = ChatOpenAI(model=&quot;gpt-4&quot;)
+model = ChatOpenAI(model="gpt-4")
 ```
 
-让我们首先直接使用模型。ChatModels是LangChain“Runnables”的实例，这意味着它们公开了一个与它们交互的标准接口。要简单地调用模型，我们可以将消息列表传递给. invoke方法。
+让我们首先直接使用模型。`ChatModels`是LangChain“`Runnables`”的实例，这意味着它们公开了一个与它们交互的标准接口。要简单地调用模型，我们可以将消息列表传递给 `.invoke()` 方法。
 
 ```
-
 # 直接使用模型
 from langchain_core.messages import HumanMessage, SystemMessage
 
 messages = [
-    SystemMessage(content=&quot;将以下内容从英文翻译成意大利语&quot;),
-    HumanMessage(content=&quot;hi!&quot;),
+    SystemMessage(content="将以下内容从英文翻译成意大利语"),
+    HumanMessage(content="hi!"),
 ]
 
 model.invoke(messages)
 ```
 
 ```
-AIMessage(content=&#x27;ciao!&#x27;, response_metadata={&#x27;token_usage&#x27;: {&#x27;completion_tokens&#x27;: 3, &#x27;prompt_tokens&#x27;: 20, &#x27;total_tokens&#x27;: 23}, &#x27;model_name&#x27;: &#x27;gpt-4&#x27;, &#x27;system_fingerprint&#x27;: None, &#x27;finish_reason&#x27;: &#x27;stop&#x27;, &#x27;logprobs&#x27;: None}, id=&#x27;run-fc5d7c88-9615-48ab-a3c7-425232b562c5-0&#x27;)
+AIMessage(content='ciao!', response_metadata={'token_usage': {'completion_tokens': 3, 'prompt_tokens': 20, 'total_tokens': 23}, 'model_name': 'gpt-4', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None}, id='run-fc5d7c88-9615-48ab-a3c7-425232b562c5-0')
 ```
 
 如果我们启用了 LangSmith，可以看到此次运行被记录在 LangSmith 中，并查看 LangSmith 跟踪信息。
 
 ## OutputParsers
 
-注意，模型的响应是一个 AIMessage。它包含一个字符串响应以及有关响应的其他元数据。通常我们可能只想处理字符串响应。我们可以使用一个简单的输出解析器来解析出这个响应。
+注意，模型的响应是一个 `AIMessage`。它包含一个字符串响应以及有关响应的其他元数据。通常我们可能只想处理字符串响应。我们可以使用一个简单的输出解析器来解析出这个响应。
 
 首先导入简单输出解析器。
 
@@ -124,18 +118,18 @@ parser = StrOutputParser()
 result = model.invoke(messages)
 
 parser.invoke(result)
-# &#x27;Ciao!&#x27;
+# 'Ciao!'
 ```
 
 更常见的是，我们可以将模型与这个输出解析器“链”在一起。这意味着每次在这个链中调用时都会调用这个输出解析器。这个链采用语言模型的输入类型（字符串或消息列表）并返回输出解析器的输出类型（字符串）。
 
-我们可以轻松使用 | 操作符创建链。 | 操作符用于在 LangChain 中组合两个元素。
+我们可以轻松使用 `|` 操作符创建链。`|` 操作符用于在 LangChain 中组合两个元素。
 
 ```
 chain = model | parser
 
 chain.invoke(messages)
-# &#x27;Ciao!&#x27;
+# 'Ciao!'
 ```
 
 如果我们现在查看 LangSmith，可以看到该链有两个步骤：首先调用语言模型，然后将结果传递给输出解析器。
@@ -144,13 +138,12 @@ chain.invoke(messages)
 
 目前我们直接将消息列表传递给语言模型。这个消息列表从何而来？通常，它是从用户输入和应用程序逻辑的组合中构建的。此应用程序逻辑通常接受原始用户输入并将其转换为准备传递给语言模型的消息列表。常见的转换包括添加系统消息或使用用户输入格式化模板。
 
-PromptTemplates 是 LangChain 中设计用于帮助此转换的概念。它们接收原始用户输入并返回准备传递给语言模型的数据（提示）。
+`PromptTemplates` 是 LangChain 中设计用于帮助此转换的概念。它们接收原始用户输入并返回准备传递给语言模型的数据（提示）。
 
-让我们在此处创建一个 PromptTemplate。它将接受两个用户变量：
+让我们在此处创建一个 `PromptTemplate`。它将接受两个用户变量：
 
-+   语言：要将文本翻译成的语言
-
-+   文本：要翻译的文本
++ 语言：要将文本翻译成的语言
++ 文本：要翻译的文本
 
 ```
 from langchain_core.prompts import ChatPromptTemplate
@@ -159,7 +152,7 @@ from langchain_core.prompts import ChatPromptTemplate
 首先，让我们创建一个字符串，我们将其格式化为系统消息：
 
 ```
-system_template = &quot;将以下内容翻译成{language}：&quot;
+system_template = "将以下内容翻译成{language}："
 ```
 
 system_template = "将以下内容翻译成{language}："
@@ -167,7 +160,7 @@ system_template = "将以下内容翻译成{language}："
 ```
 # 创建 PromptTemplate
 prompt_template = ChatPromptTemplate.from_messages(
-    [(&quot;system&quot;, system_template), (&quot;user&quot;, &quot;{text}&quot;)]
+    [("system", system_template), ("user", "{text}")]
 )
 ```
 
@@ -175,35 +168,35 @@ prompt_template = ChatPromptTemplate.from_messages(
 
 ```
 # 此提示模板的输入是一个字典。我们可以单独试验此提示模板以查看其效果。
-result = prompt_template.invoke({&quot;language&quot;: &quot;italian&quot;, &quot;text&quot;: &quot;hi&quot;})
+result = prompt_template.invoke({"language": "italian", "text": "hi"})
 
 result
 ```
 
 ```
-ChatPromptValue(messages=[SystemMessage(content=&#x27;将以下内容翻译成italian:&#x27;), HumanMessage(content=&#x27;hi&#x27;)])
+ChatPromptValue(messages=[SystemMessage(content='将以下内容翻译成italian:'), HumanMessage(content='hi')])
 ```
 
-我们可以看到它返回一个由两条消息组成的ChatPromptValue。如果我们想直接访问消息，我们会这样做：
+我们可以看到它返回一个由两条消息组成的`ChatPromptValue`。如果我们想直接访问消息，我们会这样做：
 
 ```
 result.to_messages()
 ```
 
 ```
-[SystemMessage(content=&#x27;Translate the following into italian:&#x27;),
- HumanMessage(content=&#x27;hi&#x27;)]
+[SystemMessage(content='Translate the following into italian:'),
+ HumanMessage(content='hi')]
 ```
 
 ## Chaining together components with LCEL
 
-我们现在可以使用管道操作符 | 将其与上述模型和输出解析器结合起来：
+我们现在可以使用管道操作符 `|` 将其与上述模型和输出解析器结合起来：
 
 ```
 chain = prompt_template | model | parser
 
-chain.invoke({&quot;language&quot;: &quot;italian&quot;, &quot;text&quot;: &quot;hi&quot;})
-# &#x27;ciao&#x27;
+chain.invoke({"language": "italian", "text": "hi"})
+# 'ciao'
 ```
 
 这是使用 LangChain Expression Language (LCEL) 链接 LangChain 模块的一个简单示例。此方法的几个优点包括优化流式传输和跟踪支持。
@@ -219,18 +212,16 @@ chain.invoke({&quot;language&quot;: &quot;italian&quot;, &quot;text&quot;: &quot
 安装：
 
 ```
-pip install &quot;langserve[all]&quot;
+pip install "langserve[all]"
 ```
 
 ### Server
 
-要为我们的应用程序创建服务器，我们将创建一个 serve.py 文件。这将包含我们的应用程序服务逻辑。它包含三个部分：
+要为我们的应用程序创建服务器，我们将创建一个 `serve.py` 文件。这将包含我们的应用程序服务逻辑。它包含三个部分：
 
-1.  我们刚刚构建的链的定义
-
-1.  我们的 FastAPI 应用程序
-
-1.  使用 langserve.add_routes 定义的服务链的路由
+1. 我们刚刚构建的链的定义
+2. 我们的 `FastAPI` 应用程序
+3. 使用 `langserve.add_routes` 定义的服务链的路由
 
 ```
 #!/usr/bin/env python
@@ -242,10 +233,10 @@ from langchain_openai import ChatOpenAI
 from langserve import add_routes
 
 # 1. 创建提示模板
-system_template = &quot;将以下内容翻译成{language}：&quot;
+system_template = "将以下内容翻译成{language}："
 prompt_template = ChatPromptTemplate.from_messages([
-    (&#x27;system&#x27;, system_template),
-    (&#x27;user&#x27;, &#x27;{text}&#x27;)
+    ('system', system_template),
+    ('user', '{text}')
 ])
 
 # 2. 创建模型
@@ -259,22 +250,22 @@ chain = prompt_template | model | parser
 
 # 4. 应用定义
 app = FastAPI(
-  title=&quot;LangChain Server&quot;,
-  version=&quot;1.0&quot;,
-  description=&quot;使用 LangChain Runnable 接口的简单 API 服务器&quot;,
+  title="LangChain Server",
+  version="1.0",
+  description="使用 LangChain Runnable 接口的简单 API 服务器",
 )
 
 # 5. 添加链路由
 add_routes(
     app,
     chain,
-    path=&quot;/chain&quot;,
+    path="/chain",
 )
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host=&quot;localhost&quot;, port=8000)
+    uvicorn.run(app, host="localhost", port=8000)
 ```
 
 这就是全部！如果我们执行此文件：
@@ -283,20 +274,20 @@ if __name__ == &quot;__main__&quot;:
 python serve.py
 ```
 
-我们应该看到我们的链在 http://localhost:8000 提供服务。
+我们应该看到我们的链在 `http://localhost:8000` 提供服务。
 
 ### Playground
 
-每[个 LangServe 服务都带有一个](http://localhost:8000/chain/playground/)简单的内置 UI，用于配置和调用应用程序，支持流式输出和查看中间步骤。前往 http://localhost:8000/chain/playground/ 试用！输入与之前相同的参数 - {"language": "italian", "text": "hi"} - 应该会有相同的响应。
+每 [`LangServe`](http://localhost:8000/chain/playground/) 服务都带有一个简单的内置 UI，用于配置和调用应用程序，支持流式输出和查看中间步骤。前往 `http://localhost:8000/chain/playground/` 试用！输入与之前相同的参数 - `{"language": "italian", "text": "hi"}` - 应该会有相同的响应。
 
 ### Client
 
-现在让我们设置一个客户端以编程方式与我们的服务交互。我们可以轻松使用 langserve.RemoteRunnable。使用此方法，我们可以与提供的链交互，就像它在客户端运行一样。
+现在让我们设置一个客户端以编程方式与我们的服务交互。我们可以轻松使用 `langserve.RemoteRunnable`。使用此方法，我们可以与提供的链交互，就像它在客户端运行一样。
 
 ```
 from langserve import RemoteRunnable
 
-remote_chain = RemoteRunnable(&quot;http://localhost:8000/chain/&quot;)
-remote_chain.invoke({&quot;language&quot;: &quot;italian&quot;, &quot;text&quot;: &quot;hi&quot;})
-# &#x27;Ciao&#x27;
+remote_chain = RemoteRunnable("http://localhost:8000/chain/")
+remote_chain.invoke({"language": "italian", "text": "hi"})
+# 'Ciao'
 ```

@@ -1,8 +1,9 @@
+
 # NO.10👉一键制作PPT
 
 > 来源：[https://my.feishu.cn/docx/RziEdqUvYoBdBtxGksdcjFJtnGv](https://my.feishu.cn/docx/RziEdqUvYoBdBtxGksdcjFJtnGv)
 
-作者：星球用户 清枫々榄月  原文地址https://t.zsxq.com/100oLlwJv
+作者：星球用户 清枫々榄月  原文地址`https://t.zsxq.com/100oLlwJv`
 
 五分钟搞定一篇ppt
 
@@ -22,6 +23,7 @@
 
 （这时你就获得了类似下面内容的PPT
 
+```
 # 马克思主义概述
 
 ## 理论、历史与应用
@@ -44,7 +46,10 @@
 
 5. 马克思主义的影响与批判
 
-6. 结论）
+6. 结论
+```
+
+）
 
 第三步导入：打开MindShow | 快速演示你的想法网站进行登陆，如果没有账号注册一下就行，然后进行导入
 

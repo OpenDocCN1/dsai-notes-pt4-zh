@@ -1,22 +1,23 @@
+
 # coze搭建智能搜索agent
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/RurGdxD3WoqUKCxz1REcgJTCn3f](https://qqs7y1hozd1.feishu.cn/docx/RurGdxD3WoqUKCxz1REcgJTCn3f)
 
 Coze零代码搭建一个智能搜索智能体，根据关键词，自动进行全网搜索，筛选出最相关的内容，并进行智能总结，给出参考，提升你信息收集的效率，高时效、保姆级！
 
-### 一、智能体搭建
+## 一、智能体搭建
 
 接下来，手把手教大家如何在Coze上搭建一个属于自己的智能搜索智能体。
 
-#### 1.1 工作流创建
+### 1.1 工作流创建
 
-##### 1.1.1 认识工作流界面
+#### 1.1.1 认识工作流界面
 
 首先进入到Coze的官网，点击左侧的「工作空间」，然后点击「资源库」，再点击右上角的「资源」，选择工作流。
 
 ![](img/dbbe8e000c531f700281cd65d75702fb.png)
 
-然后输入工作流名称，这里输入的是info_collection，也可以是其他的；输入工作流描述，我这里是调用各种搜索引擎，搜索相关信息。然后点击确认完成创建
+然后输入工作流名称，这里输入的是`info_collection`，也可以是其他的；输入工作流描述，我这里是调用各种搜索引擎，搜索相关信息。然后点击确认完成创建
 
 ![](img/d6ff0281ab5cfef93db79794a387dbaa.png)
 
@@ -32,7 +33,7 @@ Coze零代码搭建一个智能搜索智能体，根据关键词，自动进行�
 
 ![](img/bbecfd52bebbb30faf91f4893657b361.png)
 
-##### 1.1.2 添加搜索插件
+#### 1.1.2 添加搜索插件
 
 首先，让我们来为工作流添加几个搜索插件，点击左侧的「插件」：
 
@@ -56,25 +57,25 @@ Coze零代码搭建一个智能搜索智能体，根据关键词，自动进行�
 
 ![](img/b7232ff0717a8488d018cb13979d6133.png)
 
-这样，我们的工作流就有了**四个搜索来源**了，节点名字分别是bingWebSearch, search, getToutiaoNews, get_video，如果感兴趣的话，还可以继续添加。将「开始」节点和刚才添加的四个搜索节点进行链接：
+这样，我们的工作流就有了**四个搜索来源**了，节点名字分别是`bingWebSearch`、`search`、`getToutiaoNews`、`get_video`，如果感兴趣的话，还可以继续添加。将「开始」节点和刚才添加的四个搜索节点进行链接：
 
 ![](img/e3a64ca1503c1f4f0a76b010631c811e.png)
 
-点击具体的搜索节点，分别设置每个搜索节点的输入参数，首先是bingWebSearch：
+点击具体的搜索节点，分别设置每个搜索节点的输入参数，首先是`bingWebSearch`：
 
 ![](img/8fde89e8abfcdaf1c9406497c1136df6.png)
 
-然后是search：
+然后是`search`：
 
 ![](img/5da926054cc53847630dced3f34f21de.png)
 
-然后是getToutiaoNews及get_video：
+然后是`getToutiaoNews`及`get_video`：
 
 ![](img/dd3dcae5732729d1487bdacd032bbcdf.png)
 
-##### 1.1.3 添加代码插件
+#### 1.1.3 添加代码插件
 
-在每个搜索节点执行完之后，我们需要将这几个搜索节点结果中的url合并起来，用来爬取其中的内容。这里，我新建了一个「代码」节点，用来合并搜索节点的结果。
+在每个搜索节点执行完之后，我们需要将这几个搜索节点结果中的`url`合并起来，用来爬取其中的内容。这里，我新建了一个「代码」节点，用来合并搜索节点的结果。
 
 在左侧选择「代码」，点击+号，即可添加一个「代码」节点
 
@@ -86,13 +87,13 @@ Coze零代码搭建一个智能搜索智能体，根据关键词，自动进行�
 
 点击「代码」节点，设置它的输入参数，其中每个条目具体的参数如下：
 
-+   bing_result：data/webPages/value
++   `bing_result`：`data/webPages/value`
 
-+   search_result: data/doc_results
++   `search_result`: `data/doc_results`
 
-+   toutiao_result: news
++   `toutiao_result`: `news`
 
-+   videl_result: data/list
++   `videl_result`: `data/list`
 
 ![](img/db409e5b38d316c89e231e12a2e63536.png)
 
@@ -107,38 +108,37 @@ Coze零代码搭建一个智能搜索智能体，根据关键词，自动进行�
 输入下面代码：
 
 ```
-async def main(args: Args)-&gt;Output:  
-    params = args.params  
-    bing_result = params[&#x27;bing_result&#x27;]  
-    search_result = params[&#x27;search_result&#x27;]  
-    toutiao_result = params[&#x27;toutiao_result&#x27;]  
-    video_result = params[&#x27;video_result&#x27;]  
-    result = []  
-    if bing_result is not None:  
-        for item in bing_result:  
-            if item == None:  
-                continue  
-            result.append(item[&quot;url&quot;])  
-    if search_result is not None:  
-        for item in search_result:  
-            if item == None:  
-                continue  
-            result.append(item[&#x27;url&#x27;])  
-    if toutiao_result is not None:  
-        for item in toutiao_result:  
-            if item == None:  
-                continue  
-            result.append(item[&#x27;url&#x27;])  
-    if video_result is not None:  
-        for item in video_result:  
-            if item == None:  
-                continue  
-            result.append(item[&#x27;link&#x27;])  
-    ret ={  
-        &quot;key&quot;: result  
-    }  
+async def main(args: Args) -> Output:
+    params = args.params
+    bing_result = params['bing_result']
+    search_result = params['search_result']
+    toutiao_result = params['toutiao_result']
+    video_result = params['video_result']
+    result = []
+    if bing_result is not None:
+        for item in bing_result:
+            if item == None:
+                continue
+            result.append(item["url"])
+    if search_result is not None:
+        for item in search_result:
+            if item == None:
+                continue
+            result.append(item['url'])
+    if toutiao_result is not None:
+        for item in toutiao_result:
+            if item == None:
+                continue
+            result.append(item['url'])
+    if video_result is not None:
+        for item in video_result:
+            if item == None:
+                continue
+            result.append(item['link'])
+    ret = {
+        "key": result
+    }
     return ret
-
 ```
 
 ![](img/4089ad95d7e19f981707a754118d792e.png)
@@ -147,7 +147,7 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/ea9de6ea9553b01daabc57c3cd3bb69c.png)
 
-##### 1.1.4 爬取网页结果
+#### 1.1.4 爬取网页结果
 
 现在，我们拿到了不同搜索节点获取到的链接，接下来，我们添加一个「链接读取」插件，来获取网页内容。
 
@@ -155,11 +155,11 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/29c030e5a09e86bfbc196c0b39a81040.png)
 
-添加完之后，可以在工作流中看到对应的插件（链接读取），节点名字为LinkReaderPlugin。连接「代码」节点和「LinkReaderPlugin」：
+添加完之后，可以在工作流中看到对应的插件（链接读取），节点名字为`LinkReaderPlugin`。连接「代码」节点和`LinkReaderPlugin`：
 
 ![](img/04fed24436e4d553031442932cefec7c.png)
 
-点击「LinkReaderPlugin」，设置一些参数。因为我们是一次传入一批url链接到「链接读取」插件，所以在参数设置中，选择「批处理」，如下所示：
+点击`LinkReaderPlugin`，设置一些参数。因为我们是一次传入一批`url`链接到「链接读取」插件，所以在参数设置中，选择「批处理」，如下所示：
 
 ![](img/5fe641991dae493c68c50c313966183b.png)
 
@@ -167,17 +167,17 @@ async def main(args: Args)-&gt;Output:
 
 +   批处理：
 
-+   item：选择代码节点的输出
++   `item`：选择代码节点的输出
 
 +   输入：
 
-+   url：选择LinkReaderPlugin->item
++   `url`：选择`LinkReaderPlugin->item`
 
 ![](img/0dedffbf21781dbf1a8dc83747b9b338.png)
 
-##### 1.1.5 过滤爬取结果
+#### 1.1.5 过滤爬取结果
 
-可能会因为各种原因，网络爬虫无法对每条url都返回结果，这些无法爬取的url的结果在返回的时候是None（空），不太方便后面批量处理，因此我们需要对上面「链接获取」节点的输出结果进行过滤。再次添加一个「代码节点」，并修改名称为「结果过滤」，并和「链接获取」节点连接：
+可能会因为各种原因，网络爬虫无法对每条`url`都返回结果，这些无法爬取的`url`的结果在返回的时候是`None`（空），不太方便后面批量处理，因此我们需要对上面「链接获取」节点的输出结果进行过滤。再次添加一个「代码节点」，并修改名称为「结果过滤」，并和「链接获取」节点连接：
 
 ![](img/d7aa0dfbb9e7df8fa8e8cf510f8eee25.png)
 
@@ -188,17 +188,16 @@ async def main(args: Args)-&gt;Output:
 然后修改语言为Python，代码如下：
 
 ```
-async def main(args: Args)-&gt;Output:  
-    params = args.params  
-    link_result = params[&#x27;link_result&#x27;]  
-    content = []  
-    for item in link_result:  
-        try:  
-            content.append(item[&#x27;data&#x27;][&#x27;content&#x27;])  
-        except:  
-            continue  
+async def main(args: Args) -> Output:
+    params = args.params
+    link_result = params['link_result']
+    content = []
+    for item in link_result:
+        try:
+            content.append(item['data']['content'])
+        except:
+            continue
     return content
-
 ```
 
 ![](img/12b621b970c90791e8130228628ce572.png)
@@ -207,7 +206,7 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/920cd7c010df36466a9de9e7928fe991.png)
 
-##### 1.1.6 网页内容总结
+#### 1.1.6 网页内容总结
 
 每个网页的结果数众多，我们不可能从头看到尾，因此需要用大模型对结果进行总结。在工作流界面左侧点击「大模型」，添加一个大模型，并链接上一节的「代码」节点。
 
@@ -217,17 +216,15 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/10e077639b80593452fcafb58c98acf3.png)
 
-##### 1.1.7 结果汇总
+#### 1.1.7 结果汇总
 
 现在，我们一共有这些信息：
 
-1.  url
+1.  `url`
 
-1.  title
+1.  `title`
 
-1.  content总结
-
-但是这些信息分散在不同的节点。下面，我们新建一个「代码」节点将这些汇总起来，如下所示
+1.  `content`总结
 
 但是这些信息分散在不同的节点。下面，我们新建一个「代码」节点将这些汇总起来，如下所示
 
@@ -237,39 +234,38 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/81e81f81cd01cb527ea525d01da53cec.png)
 
-###### 具体代码如下：
+具体代码如下：
 
 ```
-async def main(args: Args)-&gt;Output:  
-    params = args.params  
-    link_result = params[&#x27;link_result&#x27;]  
-    link_list = params[&#x27;link_list&#x27;]  
-    model_result = params[&#x27;model_result&#x27;]  
-    assert len(link_list) == len(link_result)  
-    result = []  
-    for item1, item2 in zip(link_result, link_list):  
-        try:  
-            title = item1[&#x27;data&#x27;][&#x27;title&#x27;]  
-            link = item2  
-            result.append({  
-                &quot;link&quot;: link,  
-                &quot;title&quot;: title,  
-            })  
-        except:  
-            continue  
-    assert len(model_result) == len(result)  
-    for i in range(len(result)):  
-        result[i][&quot;content&quot;] = model_result[i][&#x27;output&#x27;]  
-    ret ={  
-        &quot;key&quot;: result  
-    }  
+async def main(args: Args) -> Output:
+    params = args.params
+    link_result = params['link_result']
+    link_list = params['link_list']
+    model_result = params['model_result']
+    assert len(link_list) == len(link_result)
+    result = []
+    for item1, item2 in zip(link_result, link_list):
+        try:
+            title = item1['data']['title']
+            link = item2
+            result.append({
+                "link": link,
+                "title": title,
+            })
+        except:
+            continue
+    assert len(model_result) == len(result)
+    for i in range(len(result)):
+        result[i]["content"] = model_result[i]['output']
+    ret = {
+        "key": result
+    }
     return ret
-
 ```
 
 ![](img/3e977c260dacdf45ff52fb1d20e66cf8.png)
 
-##### 1.1.8 输出结果
+#### 1.1.8 输出结果
 
 将上面「结果合并」节点和最终的「结束」节点连接
 
@@ -279,7 +275,7 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/b3b620d84437329325ecc19a04e79630.png)
 
-##### 1.1.9 发布
+#### 1.1.9 发布
 
 至此，一个工作流就创建完成了，可以点击右上角的试运行：
 
@@ -301,15 +297,15 @@ async def main(args: Args)-&gt;Output:
 
 接下来，可以创建一个智能体，来使用这个工作流了。
 
-#### 1.2 智能体创建
+### 1.2 智能体创建
 
-##### 1.2.1 创建
+#### 1.2.1 创建
 
 在Coze点击左侧的「工作空间」，选择「项目开发」，然后点击「创建智能体」，输入智能体名称和图标，点击「确认」，即可完成智能体创建。
 
 ![](img/02306c6842b3f81571cc89e8651ba06d.png)
 
-##### 1.2.2 配置
+#### 1.2.2 配置
 
 下面是智能体的配置，需要修改地方有：
 
@@ -325,7 +321,7 @@ async def main(args: Args)-&gt;Output:
 
 ![](img/14707d299a05a4c0c46d90860d446419.png)
 
-###### 其中，人设与回复逻辑如下：
+其中，人设与回复逻辑如下：
 
 ```
 # 角色  
@@ -338,19 +334,18 @@ async def main(args: Args)-&gt;Output:
   
 ### 技能 2：整理与汇总信息  
 1.对收集到的每一条信息进行细致整理，按照以下格式呈现：  
--标题：&lt;title&gt;  
--内容：&lt;content&gt;  
--链接：&lt;link&gt;  
+-标题：<title>  
+-内容：<content>  
+-链接：<link>  
   
 ## 限制  
 -只收集与给定主题高度相关的信息，坚决摒弃不相关内容。  
 -输出内容必须严格按照规定格式组织，不得偏离要求框架。  
 -不得减少结果条数。  
 - 信息汇总务必保持客观、准确，严禁加入任何主观臆断。
-
 ```
 
-##### 1.2.3 大模型配置
+#### 1.2.3 大模型配置
 
 因为我们主要是做信息搜集，不需要大模型有太强的发散能力，所以需要修改一下大模型的参数。
 
@@ -360,11 +355,11 @@ async def main(args: Args)-&gt;Output:
 
 至此，一个智能体就搭建完成了。
 
-### 二、和智能体交互
+## 二、和智能体交互
 
 接下来，让我们向智能体提问几个问题，看看效果如下：
 
-#### 问题：什么是智能体
+### 问题：什么是智能体
 
 在对话框输入：什么是智能体？
 

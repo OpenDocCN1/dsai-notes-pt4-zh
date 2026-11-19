@@ -1,3 +1,4 @@
+
 # Cursor 0.46：MCP 支持的潜在升级，值得期待的更新
 
 > 来源：[https://qianniucity.feishu.cn/docx/XtpAdDcUoonbzFxDynMc9b2kn7X](https://qianniucity.feishu.cn/docx/XtpAdDcUoonbzFxDynMc9b2kn7X)
@@ -6,25 +7,25 @@ Cursor 0.46 还未正式亮相，但社区爆料已经点燃了期待，尤其�
 
 ### MCP 配置界面焕然一新
 
-社交媒体透露，0.46 为 MCP 服务器新增了“专用栏”，让用户能在设置中直观地启用或禁用单个工具。相比 0.45.6 首次引入 MCP 时“YOLO 模式”那种全开或全关的粗放设计，这次的灵活性无疑是个大进步，用户体验更上一层楼。
+社交媒体透露，0.46 为 MCP 服务器新增了“专用栏”，让用户能在设置中直观地启用或禁用单个工具。相比 0.45.6 首次引入 MCP 时 `YOLO 模式` 那种全开或全关的粗放设计，这次的灵活性无疑是个大进步，用户体验更上一层楼。
 
 ### MCP Server Config 文件加持
 
-0.46 引入了 .cursor/mcp.json 文件，开发者可以通过配置文件轻松管理 MCP 服务器。社区反馈称，这比以往手动输入命令方便得多，尤其适合频繁调整工具集的高级用户。
+0.46 引入了 `.cursor/mcp.json` 文件，开发者可以通过配置文件轻松管理 MCP 服务器。社区反馈称，这比以往手动输入命令方便得多，尤其适合频繁调整工具集的高级用户。
 
 **看点**：新手入门门槛降低的同时，有人期待未来能支持更细化的工具开关控制，这呼应了社交媒体上对 MCP 管理优化的热议。
 
 ### MCP Resources 开辟新可能
 
-“MCP Resources”作为新特性，可能意味着 MCP 工具返回的数据将以更智能的方式呈现。结合 0.46 的界面优化（比如 Chat 和 Composer 的融合），API 调用或文件内容的输出或许不再是单调的文本，而是更直观的展示形式。
+`MCP Resources` 作为新特性，可能意味着 MCP 工具返回的数据将以更智能的方式呈现。结合 0.46 的界面优化（比如 `Chat` 和 `Composer` 的融合），API 调用或文件内容的输出或许不再是单调的文本，而是更直观的展示形式。
 
-**社区期待**：X 上提到“从提需求到提 PR 的全流程”支持，MCP Resources 很可能成为复杂任务的得力助手。
+**社区期待**：X 上提到“从提需求到提 PR 的全流程”支持，`MCP Resources` 很可能成为复杂任务的得力助手。
 
 ### 工作流整合更智能
 
-0.46 的 MCP 更新与“Shared context between Chat & Composer”功能深度联动。用户可以从 Ask 模式发起提问，再无缝切换到 Agent 模式调用 MCP 工具，上下文全程无损传递。
+0.46 的 MCP 更新与 `Shared context between Chat & Composer` 功能深度联动。用户可以从 `Ask` 模式发起提问，再无缝切换到 `Agent` 模式调用 MCP 工具，上下文全程无损传递。
 
-**爆料亮点**：社交媒体称，界面整合让 MCP 使用更自然，比如在对话中直接触发 Git 工具或终端命令，省时省力，效率爆棚。
+**爆料亮点**：社交媒体称，界面整合让 MCP 使用更自然，比如在对话中直接触发 `Git` 工具或终端命令，省时省力，效率爆棚。
 
 ### 稳定性提升，生态更开放
 
@@ -38,8 +39,8 @@ Cursor 0.46 还未正式亮相，但社区爆料已经点燃了期待，尤其�
 
 ### 引用链接
 
-+   https://x.com/hobbydevelop/status/1893652881246507123
++ https://x.com/hobbydevelop/status/1893652881246507123
 
-+   https://forum.cursor.com/t/0-46-0-changelog-unofficial/52821
++ https://forum.cursor.com/t/0-46-0-changelog-unofficial/52821
 
-+   https://forum.cursor.com/t/0-46-0-changelog-unofficial/52821/8
++ https://forum.cursor.com/t/0-46-0-changelog-unofficial/52821/8

@@ -1,3 +1,4 @@
+
 # 《如何通过影刀RPA提升抖音图文10倍跟款的效率》@Leeka
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/BgxOdsgqNom98UxMctVcJHbunrb](https://xuqiwei1986.feishu.cn/docx/BgxOdsgqNom98UxMctVcJHbunrb)
@@ -12,7 +13,7 @@
 
 因为加入了赚钱，最开始知道 RPA 是在一年前，但是只知道这个是好东西，具体是做什么的，以及怎么做，完全没有头绪，就觉得这玩意儿也太神秘了吧？随着自己的认知不断提高，我终于知道 RPA 是啥，且 6 月续航时，跟同组的其他志愿者一起比赛学习 RPA。
 
-# 一、什么是 RPA？
+## 一、什么是 RPA？
 
 RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流程自动化”。
 
@@ -28,7 +29,7 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 最后 RPA 也不需要改造系统啥的，装个软件就能开干了。
 
-# 二、RPA 难学吗？
+## 二、RPA 难学吗？
 
 先上结论：用心学，真的不难。选择最简单的RPA工具，让自己的正反馈来得更快一些。
 
@@ -46,9 +47,9 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 ![](img/a32e3e250b7996873673c60ca92d2a9d.png)
 
-# 三、实际应用如何？
+## 三、实际应用如何？
 
-## 3.1 RPA的应用逻辑
+### 3.1 RPA的应用逻辑
 
 很多人刚接触RPA，并不觉得这机器人能多有多厉害，接下来我将通过一些案例来告诉你，我们如何能应用RPA机器人做好抖音图文这个项目。
 
@@ -68,7 +69,7 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 虽然我不是宝妈，但我能设计一款比宝妈还要拼的机器人啊哈哈哈。（此处应该有拍一拍，表示非常认同，哈哈哈）
 
-## 3.2 比宝妈更拼的跟款机器人
+### 3.2 比宝妈更拼的跟款机器人
 
 坤哥在直播的时候也说过，我们想要跟款跟得快跟得准，首先得确定自己找到的博主就是源头发布的人。
 
@@ -82,11 +83,11 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 1、打开对标的博主抖音主页
 
-**2、先**抓取她目前主页上的所有笔记超链接（定义为web_element_list）
+**2、先**抓取她目前主页上的所有笔记超链接（定义为`web_element_list`）
 
-**3、不**断刷新她的主页，记录她的所有笔记超链接（定义为web_element_list2）
+**3、不**断刷新她的主页，记录她的所有笔记超链接（定义为`web_element_list2`）
 
-4、通过比对web_element_list和web_element_list2是否不同，从而判断是否有新的笔记
+4、通过比对`web_element_list`和`web_element_list2`是否不同，从而判断是否有新的笔记
 
 5、如果有新的笔记，就把新的图文笔记的图存下来，文字保留下来（给后续发布自己作品准备基础素材）
 
@@ -106,13 +107,13 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 [Leeka-跟款机器人.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bld1bwo86oVuX6x4PTtcBJo3nne)
 
-## 3.3 比宝妈更拼的修图机器人
+### 3.3 比宝妈更拼的修图机器人
 
 及时抓取到最新的潜在爆款当然只是跟款机器人的第一步而已，第二步就应该将之前获取到的素材进行加工（去重），也就是我们说的修图。
 
 以服装为例，一般我们会将模特抠图，然后根据这个服装的风格，再替换背景图，再增加一些文字，引导用户购买。那么我们先用RPA给之前抓到的图，抠一下。
 
-先到 [https://photokit](https://photokit.com/editor/?lang=zh).com/editor/?lang=zh 这个免费抠图的网页，不需要登录还不需要充值，这个网站真的值得推荐。
+先到 https://photokit.com/editor/?lang=zh 这个免费抠图的网页，不需要登录还不需要充值，这个网站真的值得推荐。
 
 ![](img/8c0455da47b860130ddefbec8e20435a.png)
 
@@ -128,7 +129,7 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 [图12📕批量作图-0829.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeTJbqtDWoGwKPxXvO4cOZE7nFd)
 
-## 3.4 比宝妈更拼的发布机器人
+### 3.4 比宝妈更拼的发布机器人
 
 在抓到了图，及时修了图之后，附上提前准备好的标题和文案，就可以定时发布了：
 
@@ -138,7 +139,7 @@ RPA 是 Robotic Process Automation 的缩写，直译过来就是“机器人流
 
 [9月14日.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LCD1bCtJJogjpPxmv2LcGn4onrh)
 
-# 四、结语
+## 四、结语
 
 我始终认为【懒，是第一生产力】。
 

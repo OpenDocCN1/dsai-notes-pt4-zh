@@ -1,3 +1,4 @@
+
 # AI实操案例
 
 > 来源：[https://my.feishu.cn/docx/DEdbdM2r3o5idwxadnscAifknxb](https://my.feishu.cn/docx/DEdbdM2r3o5idwxadnscAifknxb)
@@ -26,20 +27,16 @@ https://mp.weixin.qq.com/s/VzNrw_dZ2OUe6tCFHos9BQ
 
 https://mp.weixin.qq.com/s/YXzPnR_xqxTrhKOh2picsg
 
-# 一天时间，我用AI做了一个恐龙网站
+## 一天时间，我用AI做了一个恐龙网站
 
 https://zhuanlan.zhihu.com/p/664461927
 
-#
-
-# AI Agents大爆发：软件2.0雏形初现，OpenAI的下一步
+## AI Agents大爆发：软件2.0雏形初现，OpenAI的下一步
 
 https://mp.weixin.qq.com/s/Jb8HBbaKYXXxTSQOBsP5Wg
 
-# 快速制作自己的数字人？HeyGen数字人生成效果拔群！数字人技术方案拆解！
+## 快速制作自己的数字人？HeyGen数字人生成效果拔群！数字人技术方案拆解！
 
 https://www.bilibili.com/video/BV1Gh4y1i7bU/
-
-#
 
 更多实操案例，可进知识星球获取。

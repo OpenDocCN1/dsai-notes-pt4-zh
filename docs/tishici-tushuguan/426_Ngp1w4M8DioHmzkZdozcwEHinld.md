@@ -1,3 +1,4 @@
+
 # 制作合作伙伴信息登记表
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/BACZdvqzdoMwzCxEeLlcBQvHnGc](https://vxc3hj17dym.feishu.cn/docx/BACZdvqzdoMwzCxEeLlcBQvHnGc)
@@ -15,7 +16,7 @@
 - 合作关系怎么样?
 - 之前有过的合作是什么?
 - 对方的满意程度如何?
-- if 该合作对象尚未开始合作 then 追问 &quot;未产生合作的原因&quot;
+- if 该合作对象尚未开始合作 then 追问 "未产生合作的原因"
 
 2. 了解对接人的基础信息:
 - Ta的工作时间是否跟你重合，如果不重合，合适的沟通时间段是什么?

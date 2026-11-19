@@ -1,10 +1,11 @@
+
 # Sora资料库【持续更新】
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/WEOzdSGbuozoVBx9qEScrL0xnvb](https://xmgtoagi.feishu.cn/docx/WEOzdSGbuozoVBx9qEScrL0xnvb)
 
 > 作者：量子位
 
-# 一、OpenAI Sora横空出世
+## 一、OpenAI Sora横空出世
 
 2024年2月15日，OpenAI宣布推出全新的生成式人工智能模型“Sora”。
 
@@ -12,7 +13,7 @@
 
 S
 
-## 背后的研发团队
+### 背后的研发团队
 
 现在世界上最受关注的技术团队是哪一支？
 
@@ -34,17 +35,17 @@ S
 
 但也是真的牛：
 
-【**Tim Brooks】**
+【Tim Brooks】
 
 DALL·E 3作者之一，GitHub 5.7k️
 
-项目InstructPix2Pix作者
+项目`InstructPix2Pix`作者
 
 2021-2022年在英伟达实习时，就是视频生成研究的项目负责人。
 
 【William (Bill) Peebles】
 
-和谢赛宁合作，搞出了Sora的技术基础之一DiT（扩散Transformer）
+和谢赛宁合作，搞出了Sora的技术基础之一`DiT`（扩散`Transformer`）
 
 论文还曾入围CVPR 2022最佳论文候选。
 
@@ -52,7 +53,7 @@ DALL·E 3作者之一，GitHub 5.7k️
 
 这支团队到底什么来头，咱们一起仔细聊聊。
 
-（1）**应届博士带队**
+#### （1）应届博士带队
 
 包括Tim和Bill在内，Sora的主要负责人一共有三名（以下排名不分先后）。
 
@@ -66,7 +67,7 @@ DALL·E 3作者之一，GitHub 5.7k️
 
 +   在伯克利读博期间，Tim的主要研究方向就是图片与视频生成，他还在英伟达实习并主导了一项关于视频生成的研究。
 
-+   回到校园后，Tim与导师Alexei Efros教授和同组博士后Aleksander Holynski（现在谷歌）一起研制了AI图片编辑工具InstructPix2Pix，并入选CVPR 2023 Highlight。
++   回到校园后，Tim与导师Alexei Efros教授和同组博士后Aleksander Holynski（现在谷歌）一起研制了AI图片编辑工具`InstructPix2Pix`，并入选CVPR 2023 Highlight。
 
 ![](img/51bd17130dd8c110ee2cc18ecfa5f615.png)
 
@@ -78,27 +79,27 @@ DALL·E 3作者之一，GitHub 5.7k️
 
 ![](img/62c54cbdd8e2b868b05fca3f120b3fe8.png)
 
-**而与Tim师出同门、晚毕业4个**月的William Peebles，也是Sora的另一名负责人。
+而与Tim师出同门、晚毕业4个月的William Peebles，也是Sora的另一名负责人。
 
 （Peebles在𝕏上用昵称Bill，在Linkedin上及论文署名时用大名William，下文一律用Bill指代。）
 
 ![](img/ee3ea946446108900678a81a355507b1.png)
 
-+   Bill本科就读于MIT，主修计算机科学，参加了GAN和text2video的研究，还在英伟达深度学习与自动驾驶团队实习，研究计算机视觉。
++   Bill本科就读于MIT，主修计算机科学，参加了`GAN`和`text2video`的研究，还在英伟达深度学习与自动驾驶团队实习，研究计算机视觉。
 
-+   毕业后正式开始读博之前，他还参加了Adobe的暑期实习，研究的依然是GAN，该项目和（时任）卡内基梅隆大学华人学者朱俊彦（也是Efros教授学生，现在在MIT）组有合作，并成为CVPR 2022最佳论文候选。
++   毕业后正式开始读博之前，他还参加了Adobe的暑期实习，研究的依然是`GAN`，该项目和（时任）卡内基梅隆大学华人学者朱俊彦（也是Efros教授学生，现在在MIT）组有合作，并成为CVPR 2022最佳论文候选。
 
 ![](img/739a3c31dbb39ec40da4201bb589e9be.png)
 
 +   之后，学期开始，Bill到了伯克利Efros教授课题组攻读博士，研究成果多次入选SIGGRAPH、ICCV、CVPR等学术会议。
 
-+   2022年5月，Bill到Meta进行了为期半年的实习，和谢赛宁（Bill开始实习时还未离开Meta）合作发表了DiT模型，首次将Transformer与扩散模型结合到了一起。该成果被ICCV 2023录用为Oral论文。值得一提的是，OpenAI此次发布的Sora，被认为正是基于DiT构建的。
++   2022年5月，Bill到Meta进行了为期半年的实习，和谢赛宁（Bill开始实习时还未离开Meta）合作发表了`DiT`模型，首次将`Transformer`与扩散模型结合到了一起。该成果被ICCV 2023录用为Oral论文。值得一提的是，OpenAI此次发布的Sora，被认为正是基于`DiT`构建的。
 
 +   2023年5月，Bill也从伯克利毕业，并入职OpenAI。
 
 ![](img/daaa113a810c680a47068d361972193f.png)
 
-**除了这两位去年加入的研究者**，Sora团队的另一位负责人Aditya Ramesh则是OpenAI的“老人”。
+除了这两位去年加入的研究者，Sora团队的另一位负责人Aditya Ramesh则是OpenAI的“老人”。
 
 ![](img/c3f03bc54395919d79598826820f42a7.png)
 
@@ -118,11 +119,11 @@ Aditya是DALL·E 的创造者，主导了三代DALL·E 的研究，三个版本�
 
 毕业之后，Aditya本想继续深造，但在OpenAI的暑期实习中被留了下来，成为了正式研究人员。
 
-（2）**00后已加入**
+#### （2）00后已加入
 
 Sora团队的本科生，还不止Aditya Ramesh一位。
 
-**前文提到，这支团队中**有一位“00后”Will DePue，就是2022年才刚从密西根大学计算机系本科毕业的。
+前文提到，这支团队中有一位“00后”Will DePue，就是2022年才刚从密西根大学计算机系本科毕业的。
 
 ![](img/e029ed8515d900bf21f77e5a987e1c17.png)
 
@@ -160,13 +161,13 @@ Li Jing是DALL·E 3的共同一作，2014年本科毕业于北京大学物理系
 
 ![](img/1abb13b74db67bd52a1c71bce8238657.png)
 
-## OpenAI Sora官网
+### OpenAI Sora官网
 
-> https://openai.com/sora
+> `https://openai.com/sora`
 
 ![](img/43c39d1705fce8b25e166a76b2d7bde4.png)
 
-## 官方视频DEMO
+### 官方视频DEMO
 
 ![](img/af087de7271a39d0933b2aaf45078764.png)
 
@@ -200,11 +201,11 @@ Li Jing是DALL·E 3的共同一作，2014年本科毕业于北京大学物理系
 
 [simulation_5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QLYDbUZ8oom01ox6iNsctCDnnDc)
 
-## 申请内测资格
+### 申请内测资格
 
 （1）内部申请路径一
 
-https://forum.openai.com/
+`https://forum.openai.com/`
 
 （2）内部申请路径二
 
@@ -212,21 +213,21 @@ https://forum.openai.com/
 
 加入条件: 展示出对申请者专业领域和AI交叉领域的浓厚兴趣。 有能力在每个财政季度中投入1小时的时间参与活动。
 
-+   **第一步 登录openai官网：**https://openai.com
++   **第一步 登录openai官网：**`https://openai.com`
 
-+   第二步 右上角点击 Search 按钮
++   第二步 右上角点击 `Search` 按钮
 
 ![](img/fd646ba68bf40b15f7e6223c13da633b.png)
 
-+   **第三步搜索栏搜索 apply**
++   **第三步搜索栏搜索** `apply`
 
 ![](img/8a0c7e69f195f2e0d27bdc398f0f4393.png)
 
-+   第四步点击 Pages 按钮，选择Red Teaming
++   第四步点击 `Pages` 按钮，选择`Red Teaming`
 
 ![](img/851dd684626f8577d470d9acf141b11a.png)
 
-**如果页面没有了，试试这个链接：**https://openai.com/form/red-teaming-network
+**如果页面没有了，试试这个链接：**`https://openai.com/form/red-teaming-network`
 
 +   **第五步 填写表单**
 
@@ -234,53 +235,53 @@ https://forum.openai.com/
 
 ![](img/d5a1c176731717f3280ceb7318716f22.png)
 
-表格中很重要的内容是填写你为什么有兴趣加入Red Teaming和你认为OpenAI成为红队的一个重要领域是什么（这个问题很拗口，请自行理解）。建议发挥想象力，体现你的专业能力背景和白左圣母心，可让GPT帮忙。
+表格中很重要的内容是填写你为什么有兴趣加入`Red Teaming`和你认为OpenAI成为红队的一个重要领域是什么（这个问题很拗口，请自行理解）。建议发挥想象力，体现你的专业能力背景和白左圣母心，可让GPT帮忙。
 
 在表单的最后还有推特和领英的链接，如果有的话，尽量附上，对于通过应该有很大的加分，这是真实性背书。
 
 ![](img/2a6792a384121dc1a38f8b4a2768e2b8.png)
 
-全部填写完成后，点击Submit提交。
+全部填写完成后，点击`Submit`提交。
 
 可预见的申请数量极大，通过率会很低，放平心态，万一通过了呢。
 
-# 二、Sora竞品对比
+## 二、Sora竞品对比
 
-## 一图展示Sora与竞品对比
+### 一图展示Sora与竞品对比
 
 ![](img/0fe05cbab822279cace9fde05e3b8f6f.png)
 
-## 主流生成式AI同提示词效果对比
+### 主流生成式AI同提示词效果对比
 
-**对比Runway、Pi**ka、SVD，OpenAI Sora真遥遥领先
+对比Runway、Pika、SVD，OpenAI Sora真遥遥领先
 
 <https://player.bilibili.com/player.html?bvid=18K421k7Pp&spm_id_from=888.80997.embed_other.whitelist&vd_source=03b758d23c4587f27d67124cb89dbad4>
 
-## Sora、Pika、Runway、Stable Video 四个模型对比
+### Sora、Pika、Runway、Stable Video 四个模型对比
 
 可以看到，相比于其他三个视频生成模型，Sora 在生成时长、连贯性等方面都有显著的优势。
 
 ![](img/2c3bf7f5bda6bedb8f3f55257b833ed6.png)
 
-> 图源：https://twitter.com/gabor/status/1758282791547232482
+> 图源：`https://twitter.com/gabor/status/1758282791547232482`
 
-## Sora与Runway对比
+### Sora与Runway对比
 
-比如输入相同的 prompt「一窝金毛幼犬在雪地里玩耍，它们的头从雪中探出来，被雪覆盖。」
+比如输入相同的 `prompt`「一窝金毛幼犬在雪地里玩耍，它们的头从雪中探出来，被雪覆盖。」
 
 ![](img/0e66a92b694f21a93f87ee4d9e02127a.png)
 
-> 图源：https://twitter.com/DailyUpdatesNet/status/1758646902751670355
+> 图源：`https://twitter.com/DailyUpdatesNet/status/1758646902751670355`
 
-再比如输入相同的 prompt「几只巨大的毛茸茸的猛犸象踏着白雪皑皑的草地走来，长长的毛毛在风中轻轻飘动，远处覆盖着积雪的树木和雄伟的雪山，午后的阳光、缕缕云彩和远处高高的太阳营造出温暖的光芒，低相机视野令人惊叹地捕捉到了大型毛茸茸的哺乳动物与美丽的摄影，景深。」
+再比如输入相同的 `prompt`「几只巨大的毛茸茸的猛犸象踏着白雪皑皑的草地走来，长长的毛毛在风中轻轻飘动，远处覆盖着积雪的树木和雄伟的雪山，午后的阳光、缕缕云彩和远处高高的太阳营造出温暖的光芒，低相机视野令人惊叹地捕捉到了大型毛茸茸的哺乳动物与美丽的摄影，景深。」
 
 虽然 Runway 和 Pika 表现都不错，但 Sora 的生成质量具有压倒性的优势。
 
 ![](img/894f9cbc5f8ab646e5d5b6d3cd60a42e.png)
 
-> 图源：https://twitter.com/keitowebai/status/1758384152670577136
+> 图源：`https://twitter.com/keitowebai/status/1758384152670577136`
 
-## Sora与Midjourney对比
+### Sora与Midjourney对比
 
 ![](img/af418fcedd741249937091ac7a4e08c2.png)
 
@@ -290,9 +291,9 @@ https://forum.openai.com/
 
 ![](img/77cf3918550976cc1485227e90fc644e.png)
 
-# 三、Sora文生视频案例
+## 三、Sora文生视频案例
 
-## 案例一
+### 案例一
 
 Prompt:
 
@@ -304,7 +305,13 @@ A stylish woman walks down a Tokyo street filled with warm glowing neon and anim
 
 ![](img/ba69da69b56bd67edb7e7e95dbfe0347.png)
 
-[tokyo-walk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M5Pfbdg6LoLWQUxees0c7ZMkn1d)
+
+
+# 三、Sora文生视频案例
+
+## 案例一
+
+[`tokyo-walk.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M5Pfbdg6LoLWQUxees0c7ZMkn1d)
 
 极其卓越！仅用60秒，实现了从头到尾的单镜头拍摄，而且不仅主角画面稳定，连背景中的人物也展现出了令人难以置信的稳定性，从广阔的中景轻松过渡到面部特写。
 
@@ -320,7 +327,7 @@ Several giant wooly mammoths approach treading through a snowy meadow, their lon
 
 ![](img/1e395bf67e76aa61b1d18883aecb2881.png)
 
-[wooly-mammoth.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K98Db0jmsotc6nxOdr8c0e8AnwT)
+[`wooly-mammoth.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K98Db0jmsotc6nxOdr8c0e8AnwT)
 
 ## 案例三
 
@@ -334,7 +341,7 @@ A movie trailer featuring the adventures of a 30-year-old space man wearing a re
 
 ![](img/29e5bef16f50b462ed31aba52baa6aa3.png)
 
-[mitten-astronaut.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aw6Vb8MjZo0dZwxuxyscSWZpnzh)
+[`mitten-astronaut.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aw6Vb8MjZo0dZwxuxyscSWZpnzh)
 
 ## 案例四
 
@@ -348,7 +355,7 @@ Drone view of waves crashing against the rugged cliffs along Big Sur’s garay p
 
 ![](img/5cec54e388818dae64b8c05bd4848273.png)
 
-[big-sur.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FuJtbTugAoGTF1xV8KycPlGLnjh)
+[`big-sur.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FuJtbTugAoGTF1xV8KycPlGLnjh)
 
 ## 案例五
 
@@ -362,7 +369,7 @@ Animated scene features a close-up of a short fluffy monster kneeling beside a m
 
 ![](img/39d5ad6abecdc8406f5f0336dfd4bc19.png)
 
-[monster-with-melting-candle.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dr9ebHxbXoh4E7xwdrYc2Q1unzF)
+[`monster-with-melting-candle.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dr9ebHxbXoh4E7xwdrYc2Q1unzF)
 
 ## 案例六
 
@@ -376,7 +383,7 @@ A gorgeously rendered papercraft world of a coral reef, rife with colorful fish 
 
 ![](img/39931808a8b0cc70c2627834ff470310.png)
 
-[origami-undersea.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H0subj3aKokPxixZUEKcCsnRnSh)
+[`origami-undersea.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H0subj3aKokPxixZUEKcCsnRnSh)
 
 ## 案例七
 
@@ -390,7 +397,7 @@ This close-up shot of a Victoria crowned pigeon showcases its striking blue plum
 
 ![](img/c44689db09983fea9f819456298b16be.png)
 
-[victoria-crowned-pigeon.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OHIxbz3iYo3Q4vx5lsAc7iScnxg)
+[`victoria-crowned-pigeon.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OHIxbz3iYo3Q4vx5lsAc7iScnxg)
 
 ## 案例八
 
@@ -400,11 +407,11 @@ Photorealistic closeup video of two pirate ships battling each other as they sai
 
 > 提示:
 
-> 两艘海盗船在一杯咖啡中航行时相互争斗的逼真特写视频…
+> 两艘海盗船在一杯咖啡中航行时相互争斗的逼真特关视频…
 
 ![](img/87663ab7957764c41143a16bb52bc222.png)
 
-[ships-in-coffee.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DbJIbS8oko18eXx7LcFcUO7Pn4b)
+[`ships-in-coffee.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DbJIbS8oko18eXx7LcFcUO7Pn4b)
 
 ## 案例九
 
@@ -418,7 +425,7 @@ A young man at his 20s is sitting on a piece of cloud in the sky, reading a book
 
 ![](img/303f8138d211d6f1e194883dd2c5cac3.png)
 
-[man-on-the-cloud.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vf3abqBVXo22ZtxSv75chtSmnQh)
+[`man-on-the-cloud.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vf3abqBVXo22ZtxSv75chtSmnQh)
 
 # 四、Sora文生图案例
 
@@ -436,23 +443,23 @@ Sora作为一种文本到视频的生成技术，其潜在的应用场景非常�
 
 以下是一些可能的应用场景：
 
-+   【**内容创作】**
++   【内容创作】
 
 对于视频制作人、动画师和内容创作者来说，Sora可以快速将脚本或故事概念转化为视觉内容，大幅度提高内容生产的效率和创意表达的可能性。
 
-+   【**教育与培训】**
++   【教育与培训】
 
 在教育领域，Sora可以用来创建教学视频或模拟情景，使学习材料更加生动、直观，提高学习的兴趣和效果。
 
-+   【**广告与营销】**
++   【广告与营销】
 
 企业可以利用Sora快速生成针对不同市场和客户群体的定制化视频广告，提高营销活动的响应速度和个性化水平。
 
-+   【**游戏与娱乐】**
++   【游戏与娱乐】
 
 Sora可以用于生成游戏内的动态场景、角色互动或者故事情节，为游戏开发和电影制作提供新的创意工具。
 
-+   【**新闻与媒体】**
++   【新闻与媒体】
 
 新闻机构可以使用Sora，根据报道的文本内容快速创建视觉支持材料，使新闻报道更加生动、吸引人。
 
@@ -460,15 +467,15 @@ Sora可以用于生成游戏内的动态场景、角色互动或者故事情节�
 
 Sora可以为VR和AR应用创建丰富的视觉内容，提供更加沉浸式的用户体验。
 
-+   【**个性化视频生成】**
++   【个性化视频生成】
 
 根据用户的兴趣和偏好，自动创建个性化视频内容，如个性化旅行指南、学习材料或健康指导视频。
 
-+   【**艺术创作】**
++   【艺术创作】
 
 艺术家和设计师可以使用Sora探索新的视觉表达方式，创作独一无二的数字艺术作品。
 
-+   【**自动视频摘要】**
++   【自动视频摘要】
 
 对于长视频内容，如会议、讲座或教程，Sora可以自动生成视频摘要，帮助用户快速获取关键信息。
 
@@ -480,23 +487,23 @@ Sora的应用潜力取决于其技术的成熟度、生成视频的质量以及�
 
 ## 了解基础知识
 
-+   机器学习与人工智能基础 ：了解机器学习和人工智能的基本概念，特别是深度学习，因为这些技术是Sora背后的核心。
++   机器学习与人工智能基础：了解机器学习和人工智能的基本概念，特别是深度学习，因为这些技术是Sora背后的核心。
 
-+   视频生成和处理基础 ：了解基本的视频处理技术，包括视频编辑、格式转换等，以及视频生成的基本原理。
++   视频生成和处理基础：了解基本的视频处理技术，包括视频编辑、格式转换等，以及视频生成的基本原理。
 
 ## 学习具体技术
 
-+   自然语言处理（NLP） ：Sora依赖于理解和生成文本的能力，因此深入学习NLP是必不可少的。
++   自然语言处理（NLP）：Sora依赖于理解和生成文本的能力，因此深入学习NLP是必不可少的。
 
-+   生成对抗网络（GANs）和变分自编码器（VAEs） ：这些是生成图像和视频的关键技术之一，学习它们的原理和应用会非常有帮助。
++   生成对抗网络（GANs）和变分自编码器（VAEs）：这些是生成图像和视频的关键技术之一，学习它们的原理和应用会非常有帮助。
 
-+   多模态学习 ：了解如何结合文本、图像和视频等不同类型的数据进行学习，因为Sora涉及从文本到视频的转换。
++   多模态学习：了解如何结合文本、图像和视频等不同类型的数据进行学习，因为Sora涉及从文本到视频的转换。
 
 ## 参加实践项目
 
-+   动手实验 ：通过实际项目练习技术应用，比如使用TensorFlow或PyTorch等框架进行模型训练。
++   动手实验：通过实际项目练习技术应用，比如使用`TensorFlow`或`PyTorch`等框架进行模型训练。
 
-+   参与开源项目 ：加入相关的开源项目，可以让你在实践中学习并贡献自己的力量。
++   参与开源项目：加入相关的开源项目，可以让你在实践中学习并贡献自己的力量。
 
 ## 了解Sora的具体细节
 
@@ -566,7 +573,11 @@ Sora的应用潜力取决于其技术的成熟度、生成视频的质量以及�
 
 ## 用Sora做AI小说推文
 
+
+
 如果说去年的AI小说推文还是集中在AI图片领域，那么今年，AI小说推文很可能直接跨越到AI视频。去年这块爆款很多，赚到钱的也有，但是实际上做过的人都知道花费的精力不少，今年这块很可能还会爆发一次。
+
+# 七、AI小说推文与直播带货
 
 ## 直播带货，帮忙推广Sora相关的付费产品
 
@@ -576,27 +587,21 @@ Sora的应用潜力取决于其技术的成熟度、生成视频的质量以及�
 
 > Sora是一个扩散模型，它从类似于静态噪声的视频开始，通过多个步骤逐渐去除噪声，视频也从最初的随机像素转化为清晰的图像场景。与GPT模型类似，Sora使用了Transformer架构，有极强的扩展性。
 
->
-
 > 视频和图像是被称为“补丁”的较小数据单位集合，每个“补丁”都类似于GPT中的一个标记（Token），通过统一的数据表达方式，可以在更广泛的视觉数据上训练和扩散变化，包括不同的时间、分辨率和纵横比。
 
->
-
 > Sora基于过去对DALL·E和GPT的研究基础构建，利用DALL·E 3的重述提示词技术，为视觉模型训练数据生成高描述性的标注，因此模型能更好的遵循文本指令。
-
->
 
 > 除了能够仅根据文本指令生成视频外，Sora 还能够获取现有的静态图像并从中生成视频，准确且细致地动画化图像内容。模型还可以取一个现有的视频并扩展它或填充缺失的帧。OpenAI 认为，Sora 为能够理解和模拟真实世界的模型奠定了基础，这将是实现 AGI 的一个重要里程碑。
 
 如果说Sora是依赖使用Unreal Engine 5生成的大量合成数据进行训练，我一点都不会觉得意外。
 
-因为它的确需要这样做！
+因为它确实需要这样做！
 
 我们来分析一段视频：
 
-![](img/3d951da07750b88b2e4979913b6b1944.png)
+![](`img/3d951da07750b88b2e4979913b6b1944.png`)
 
-[ships-in-coffee (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L0pubpf3poiAG4xTo2Xcs3g9n3f)
+[`ships-in-coffee (1).mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L0pubpf3poiAG4xTo2Xcs3g9n3f`)
 
 视频提示词是：“在一杯咖啡中航行的两艘海盗船进行战斗的逼真特写镜头。”
 
@@ -622,7 +627,7 @@ Sora的应用潜力取决于其技术的成熟度、生成视频的质量以及�
 
 +   官方发布的视频DEMO“与中国龙一起庆祝农历新年的视频”中，Sora无法准确生成视频画面中的中文受到了网友的关注。有相关人士对此调侃道：“莫非是中文太难了？”
 
-![](img/d4ef40f0745b4fbbf55a9aba989eebc5.png)
+![](`img/d4ef40f0745b4fbbf55a9aba989eebc5.png`)
 
 # 十、Sora对行业的影响
 
@@ -655,11 +660,17 @@ Sora，作为一个文本到视频的生成工具，拥有广泛的未来发展�
 # 十一、Sora对个体的影响
 
 | 影响 | 说明 |
+
 | --- | --- |
+
 | 视频创作的民主化 | Sora可以让普通人只需输入文本即可生成高质量视频，降低了视频创作的门槛，使得视频创作更加民主化 |
+
 | 文化多元化的促进 | Sora可以根据不同语言、文化和风格的文本指令生成视频，打破语言和文化壁垒，让世界变得更加多元化 |
+
 | 违法犯罪的风险 | Sora可能会有不法分子利用这项技术实施新手段的违法犯罪，例如制作虚假的视频证据，或者侵犯他人的肖像权和隐私权 |
+
 | 影视行业的冲击 | Sora可能会对影视行业，特别是特效行业，造成巨大的冲击，使用AI来制作一些特效和高风险的镜头，可以大幅降低拍摄成本，也可以避免很多危险 |
+
 | 虚拟偶像的催生 | Sora可能会催生出真正的“虚拟偶像”，没有演员的影视作品出现，对演员来说是个小挑战，同时也会利好编剧行 |
 
 不过，从Sora官网目前展示的视频画面效果来看，效果还没那么逼近真实，短期内不会产生让行业失业，但会有辅助作用，做个动画片应该问题不大。
@@ -672,88 +683,88 @@ OpenAI表示，Sora是能够理解和模拟现实世界的模型的基础，Open
 
 +   360周鸿祎对视频大模型 Sora 的理解
 
-![](img/4008a0f9e21c5028380d721a0fb971cb.png)
+![](`img/4008a0f9e21c5028380d721a0fb971cb.png`)
 
 +   OpenAI全新发布文生视频模型Sora - 现实，不存在了
 
 -👸号：数字生命卡兹克
 
-https://mp.weixin.qq.com/s/C-wSkjzkNsX0EFaJFTv38w
+`https://mp.weixin.qq.com/s/C-wSkjzkNsX0EFaJFTv38w`
 
 +   OpenAI发布首个视频生成模型Sora - 现实，不存在了？
 
 -👸号：小石AI之旅
 
-https://mp.weixin.qq.com/s/jb8uTGAsnN1amb5y0WC5nA
+`https://mp.weixin.qq.com/s/jb8uTGAsnN1amb5y0WC5nA`
 
-+   **OpenAI首个AI视频模型炸裂登场，彻底端掉行业饭**碗！60秒一镜到底惊人，世界模型真来了？
++   OpenAI首个AI视频模型炸裂登场，彻底端掉行业饭碗！60秒一镜到底惊人，世界模型真来了？
 
 -👸号：新智元
 
-https://mp.weixin.qq.com/s/93z4Ta91yLv7PB1pnBM9mg
+`https://mp.weixin.qq.com/s/93z4Ta91yLv7PB1pnBM9mg`
 
 +   OpenAI Sora发布：视频AI界的top1
 
 -👸号：AIGC新知
 
-https://mp.weixin.qq.com/s/c9ovxjBx0e-PoQikJd38lQ
+`https://mp.weixin.qq.com/s/c9ovxjBx0e-PoQikJd38lQ`
 
-+   **眼见不再为实！OpenAI发布最强**文生视频模型Sora【附60s演示视频】
++   眼见不再为实！OpenAI发布最强文生视频模型Sora【附60s演示视频】
 
 -👸号：腾讯科技
 
-https://mp.weixin.qq.com/s/fIM5PT5InZOAS8i2ZqB6sg
+`https://mp.weixin.qq.com/s/fIM5PT5InZOAS8i2ZqB6sg`
 
 +   OpenAI王炸模型引爆科技圈，我们第一时间深读了官方技术报告
 
 -👸号：腾讯科技
 
-https://mp.weixin.qq.com/s/gSvxvOVqYtGcKw0ueDGbFA
+`https://mp.weixin.qq.com/s/gSvxvOVqYtGcKw0ueDGbFA`
 
 +   OpenAI首个文生视频模型亮相，你觉得咋样？
 
 -👸号：央视网
 
-https://mp.weixin.qq.com/s/PS_WfoOX35XoScgoQJJVcA
+`https://mp.weixin.qq.com/s/PS_WfoOX35XoScgoQJJVcA`
 
 +   重磅！OpenAI发布文生视频模型Sora，一次可生成1分钟！
 
 -👸号：AIGC开放社区
 
-https://mp.weixin.qq.com/s/m8DtOLmn_JkqZ5D5NYLIhA
+`https://mp.weixin.qq.com/s/m8DtOLmn_JkqZ5D5NYLIhA`
 
-+   **Sora来了，现实不存在了？**
++   Sora来了，现实不存在了？
 
 -👸号：每日经济新闻
 
-https://mp.weixin.qq.com/s/y82KaPSIjCROi9FLHXdf2A
+`https://mp.weixin.qq.com/s/y82KaPSIjCROi9FLHXdf2A`
 
 +   又一次被OpenAi刷屏，文生视频模型Sora真的要淘汰一波人
 
 -👸号：伟豪学长AI
 
-https://mp.weixin.qq.com/s/Cksnawt-L73KInM2s5b7Mg
+`https://mp.weixin.qq.com/s/Cksnawt-L73KInM2s5b7Mg`
 
 +   OpenAI发布首个视频生成模型Sora
 
 -👸号：CGTN
 
-https://mp.weixin.qq.com/s/fnAOmwH8gOoO-Mc-pHs2hw
+`https://mp.weixin.qq.com/s/fnAOmwH8gOoO-Mc-pHs2hw`
 
 +   48个演示视频，最长60秒，看懂OpenAI视频大模型Sora
 
 -👸号：深网腾讯新闻
 
-https://mp.weixin.qq.com/s/4_hBzafAqZSC9GWJsIMVPA
+`https://mp.weixin.qq.com/s/4_hBzafAqZSC9GWJsIMVPA`
 
 +   OpenAI深夜发布首个文生视频模型Sora，现实将被彻底颠覆
 
 -👸号：界面新闻
 
-https://mp.weixin.qq.com/s/0RdUwGoVfQjKYRULZLabxw
+`https://mp.weixin.qq.com/s/0RdUwGoVfQjKYRULZLabxw`
 
 +   炸裂AI技术Sora背后：奥特曼清单法
 
 -👸号：孤独大脑
 
-https://mp.weixin.qq.com/s/XfUKz8Q0ybXaTgLIeA7Csg
+`https://mp.weixin.qq.com/s/XfUKz8Q0ybXaTgLIeA7Csg`

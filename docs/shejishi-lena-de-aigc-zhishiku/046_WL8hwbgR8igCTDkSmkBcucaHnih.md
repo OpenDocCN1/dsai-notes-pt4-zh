@@ -1,6 +1,7 @@
+
 # AI字体风格对照表 速来get30种
 
-> 来源：[https://aigclena.feishu.cn/docx/Ezm3dWCFzoaNUQxq1ufc7baCnvg](https://aigclena.feishu.cn/docx/Ezm3dWCFzoaNUQxq1ufc7baCnvg)
+> 来源：`https://aigclena.feishu.cn/docx/Ezm3dWCFzoaNUQxq1ufc7baCnvg`
 
 ![](img/baa7897c996ccf7db372c6f7d98ea90c.png)
 
@@ -12,7 +13,7 @@
 
 ![](img/ed64eeb18e49296a8dd37df1966bb17e.png)
 
-Xfun 智能包装设计平台 https://xfun.design/homePage
+`https://xfun.design/homePage`
 
 ![](img/381d1a6140f22e328d8d1a8ae909bb9f.png)
 
@@ -36,129 +37,129 @@ Xfun 是一个主打视觉智能化的 AI 包装设计平台。在官网首页�
 
 ![](img/2af234f5d4b98e5f7ff2cde50de56ab7.png)
 
-**如果你已经**知道自己想要的字体风格，只需要在提示词中加入对应的 风格限定词，例如：毛笔、酸性、金属、气球等…… 这样能更快生成接近目标的效果，大幅节省时间。
+如果你已经知道自己想要的字体风格，只需要在提示词中加入对应的 风格限定词，例如：毛笔、酸性、金属、气球等…… 这样能更快生成接近目标的效果，大幅节省时间。
 
 好啦，接下来我们一起看看有哪些值得一试的字体风格吧~~
 
-## **  1.艺术  **
+## 1.艺术
 
 ![](img/d0925f861074d771430aa55a2c253957.png)
 
-## **  2.象形  **
+## 2.象形
 
 ![](img/2f80011f6fa5bceda244550ce5c2388d.png)
 
-## **  3.国潮  **
+## 3.国潮
 
 ![](img/ff87a23f59fabc043d8c9edec04cf7af.png)
 
-## **  4.哥特  **
+## 4.哥特
 
 ![](img/8d8a11cf61c5046b5647ea1b32d523bc.png)
 
-##  **5.甲骨文  **
+## 5.甲骨文
 
 ![](img/d7cf0e1737678ec74b35c1f254c89b42.png)
 
-##  **6.酸性  **
+## 6.酸性
 
 ![](img/f055ddb95c470d8eb24b00be11ec28fc.png)
 
-## **7.赛博朋克  **
+## 7.赛博朋克
 
 ![](img/571733f3f2dcbd28276437f189a769ad.png)
 
-## **8.宋体  **
+## 8.宋体
 
 ![](img/c9d237ae66b6a4a40f30e899cf053e5a.png)
 
-## **9.书法/毛笔  **
+## 9.书法/毛笔
 
 ![](img/9764afdc31e978a3a596d66240ab406a.png)
 
-## **10.卡通  **
+## 10.卡通
 
 ![](img/0959bbd19c2eb420f1628783ebde18d8.png)
 
-## **11.飞白  **
+## 11.飞白
 
 ![](img/a05b409ebab68b498aa394c11a0eafbe.png)
 
-## **12.故障  **
+## 12.故障
 
 ![](img/815e6236264a6f58a78c6905f31994e7.png)
 
-## **13.噪点  **
+## 13.噪点
 
 ![](img/8df99c848d9440cf56f221d53bdb421f.png)
 
-## **14.拼接  **
+## 14.拼接
 
 ![](img/46621112e0d6880fae506d2b9ee581aa.png)
 
-## **15.拙朴**
+## 15.拙朴
 
 ![](img/6af023d1ff5376bc8a6c623748d63e35.png)
 
-## **16.飘逸  **
+## 16.飘逸
 
 ![](img/d61b7584d863b6991b3ec75f10702ae9.png)
 
-## **17.自由  **
+## 17.自由
 
 ![](img/cd979b1d7eb2fd9bccc79d33ac7a7d9d.png)
 
-## **18.狂野  **
+## 18.狂野
 
 ![](img/758146fa5585a632f5f56a7c29288bf6.png)
 
 除了根据字体、风格、字形的描述，我们也可以根据文字材质来搜索
 
-## **19.气球  **
+## 19.气球
 
 ![](img/cb63bc31ce17a9927f73fb98cbdb00ad.png)
 
-## **  20.糖果  **
+## 20.糖果
 
 ![](img/86b32c532e55277b752411e7a6372d39.png)
 
-## **21.沙**
+## 21.沙
 
 ![](img/fd9b35b816a5aa8992a14b2bb37e2813.png)
 
-## **22.玻璃  **
+## 22.玻璃
 
 ![](img/c94a3f72e74bcbb675c8b7f36f8453ef.png)
 
-## **23.木  **
+## 23.木
 
 ![](img/32a0f8724da4e61acd9c480349e0bf79.png)
 
-**24.瓷  **
+## 24.瓷
 
 ![](img/ae9e9ee7cd3e21c608265381b789e408.png)
 
-## **25.水晶  **
+## 25.水晶
 
 ![](img/ed78b17dcfd9720d41c2a8a2a398a2e0.png)
 
-## **26.机械  **
+## 26.机械
 
 ![](img/745d835e7646d102f53e2e725130802f.png)
 
-## **27.游戏**
+## 27.游戏
 
 ![](img/063f1965b471be213f4f1a66f078ef01.png)
 
-## **28.图腾**
+## 28.图腾
 
 ![](img/eaea4255e7aa493bd0206f27bb572d25.png)
 
-## **29.冰**
+## 29.冰
 
 ![](img/9ade11f79a54a29d8ea2580d806053dc.png)
 
-## **30.火**
+## 30.火
 
 ![](img/8e8641bf26886f1593ccb190db51483e.png)
 

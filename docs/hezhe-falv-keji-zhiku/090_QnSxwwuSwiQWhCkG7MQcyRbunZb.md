@@ -1,16 +1,17 @@
+
 # 第一周｜October
 
 > 来源：[https://docs.feishu.cn/docx/UnPldG3nEozT3KxGoqMcnAt1nEb](https://docs.feishu.cn/docx/UnPldG3nEozT3KxGoqMcnAt1nEb)
 
-<https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg>
+`https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg`
 
-# **一、法律科技资讯**
+# 一、法律科技资讯
 
 > 由于法律科技产品 + AI 能力已经成为主流，日报将减少同质化产品的动态推送，重点关注头部公司和创新产品。
 
 > 本日报仅推送新闻简讯，如需阅读更详细的内[会员体系](https://e9w56z965d.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)，可订阅高级版知识库。了解更多 👉
 
-## **法律 AI 前沿资讯**
+## 法律 AI 前沿资讯
 
 ### AI 知识产权保护平台 MarqVision 完成 1600 万美元新一轮融资
 
@@ -24,7 +25,7 @@
 
 10 月 2 日，法律 AI 初创公司 Reducto 宣布完成 840 万美元种子轮融资，First Round Capital 领投，YCombinator、BoxGroup、SVAngel 和 Liquid2 等基金，以及该公司的创始人，包括 Arash Ferdowsi（Dropbox）、Andrew Ofstad（Airtable）、Kulveer Taggar（Zeus）、JJ Fliegelman（WayUp）、Richard Aberman（WePay）、Ralph Goottee 和 Tracy Young（PlanGrid）等人参与。
 
-Reducto  利用 AI 技术帮助企业快速提取和检索庞大文件中的数据，重点处理 PDF 和电子表格格式的文件。
+Reducto 利用 AI 技术帮助企业快速提取和检索庞大文件中的数据，重点处理 PDF 和电子表格格式的文件。
 
 ### Fennemore Craig 与 Lucent Law 合作启动 AI 项目
 
@@ -38,7 +39,7 @@ Reducto  利用 AI 技术帮助企业快速提取和检索庞大文件中的数�
 
 近日，国际法律科技协会（ILTA）发布了 2024 年调查报告，面向 536 家律师事务所和 138,811 名律师开展调研。报告显示，越来越多的律所和法律专业人士愿意接受新兴技术，比如生成式 AI 工具、微软 Teams 和云存储。
 
-## **传统法律科技资讯**
+## 传统法律科技资讯
 
 ### 电子发现厂商 Reveal 收购竞品 Milyli 的编辑工具源代码
 
@@ -52,11 +53,11 @@ Reducto  利用 AI 技术帮助企业快速提取和检索庞大文件中的数�
 
 10 月 1 日，AI 驱动的 CLM 厂商 DocJuris 宣布完成 800 万美元 A 轮融资，Watertower Ventures、Surface Ventures 和 Seed Round Capital 投资。
 
-## **法律科技活动推荐**
+## 法律科技活动推荐
 
 暂无。
 
-# **二、大模型资讯**
+# 二、大模型资讯
 
 ## Around the World
 
@@ -78,15 +79,15 @@ ChatGPT 这一新界面，提供了与 Anthropic 的 Artifacts 和病毒式编�
 
 > 拓展阅读：
 
-> https://mp.weixin.qq.com/s/QIa_i_f7D8-t3s1hWfyuIg
+> `https://mp.weixin.qq.com/s/QIa_i_f7D8-t3s1hWfyuIg`
 
-> https://mp.weixin.qq.com/s/VqbgTUZqKC3pW6r9rtlpbA
+> `https://mp.weixin.qq.com/s/VqbgTUZqKC3pW6r9rtlpbA`
 
-> https://mp.weixin.qq.com/s/i9SbOL-EvBTJ2TyVldghjQ
+> `https://mp.weixin.qq.com/s/i9SbOL-EvBTJ2TyVldghjQ`
 
-> https://mp.weixin.qq.com/s/YKOUtyDh4YOWAU6MUIHaUw
+> `https://mp.weixin.qq.com/s/YKOUtyDh4YOWAU6MUIHaUw`
 
-> https://mp.weixin.qq.com/s/ZgAqgGfpHJkWf808MRb_Mw
+> `https://mp.weixin.qq.com/s/ZgAqgGfpHJkWf808MRb_Mw`
 
 ### OpenAI 完成 66 亿美元融资，估值达 1570 亿美元
 
@@ -98,47 +99,47 @@ ChatGPT 这一新界面，提供了与 Anthropic 的 Artifacts 和病毒式编�
 
 > 拓展阅读：
 
-> https://mp.weixin.qq.com/s/8Y93pu9AiZTly-Uydt46lw
+> `https://mp.weixin.qq.com/s/8Y93pu9AiZTly-Uydt46lw`
 
-> https://mp.weixin.qq.com/s/t91EAQTWgGAy_GJ2PuQ1ew
+> `https://mp.weixin.qq.com/s/t91EAQTWgGAy_GJ2PuQ1ew`
 
-> https://mp.weixin.qq.com/s/HNVljUhg9DBHMH2uYf7wgg
+> `https://mp.weixin.qq.com/s/HNVljUhg9DBHMH2uYf7wgg`
 
-> https://mp.weixin.qq.com/s/B1kueYJ2T5fnP-YDRQaQCg
+> `https://mp.weixin.qq.com/s/B1kueYJ2T5fnP-YDRQaQCg`
 
-## **东八区**
-
-暂无。
-
-# **三、监管与观点**
-
-## **AI 监管****/政策****动态**
+## 东八区
 
 暂无。
 
-## **AI 观点/资讯**
+# 三、监管与观点
+
+## AI 监管/政策动态
 
 暂无。
 
-# **四、优质文章分享**
+## AI 观点/资讯
+
+暂无。
+
+# 四、优质文章分享
 
 【法律 AI 交流群】每天都会分享法律 AI、法律科技相关的前沿信息，以下为群友分享的优质文章：
 
-+   【融资】2024 年 Q3 法律科技融资新闻汇总
++ 【融资】2024 年 Q3 法律科技融资新闻汇总
 
-+   🥇2024 年 9 月法律科技月刊
++ 🥇2024 年 9 月法律科技月刊
 
-+   智库上新｜全球法律科技融资/并购数据库（更新至 2024.9）
++ 智库上新｜全球法律科技融资/并购数据库（更新至 2024.9）
 
-+   2024 年第三十九期法律科技周报（9.23-9.29）
++ 2024 年第三十九期法律科技周报（9.23-9.29）
 
-+   [深](https://mp.weixin.qq.com/s/c_5oVfl9obLkB2fucn0gTg)度｜李开复对话微软总裁 Brad Smith：《AI 2041》新书 —— AI 将成为下一代最有用的老师，年轻人应该追随内心
++ [深度｜李开复对话微软总裁 Brad Smith：《AI 2041》新书 —— AI 将成为下一代最有用的老师，年轻人应该追随内心](https://mp.weixin.qq.com/s/c_5oVfl9obLkB2fucn0gTg)
 
-+   zì yǒu míng yuè zhào shān hé
++ zì yǒu míng yuè zhào shān hé
 
 > 注：与本周重要资讯相关的文章已整合到以上特定资讯下方，不在此处再次列出。
 
-# **五、更多内容**
+# 五、更多内容
 
 ## 飞书×法律修音机：Legal Studio 法律科技智库，认识一下
 
@@ -148,7 +149,7 @@ ChatGPT 这一新界面，提供了与 Anthropic 的 Artifacts 和病毒式编�
 
 > 飞书×法律修音机：Legal Studio 法律科技智库，认识一下
 
-> [Legal Studio 法律科技智库上线](https://mp.weixin.qq.com/s/dK2H3a7n2KxTa_w0Exbn6Q)「飞书官方社区」，免费订阅抽抖音文创🥳
+> [Legal Studio 法律科技智库上线「飞书官方社区」，免费订阅抽抖音文创🥳](https://mp.weixin.qq.com/s/dK2H3a7n2KxTa_w0Exbn6Q)
 
 > [法律科技公司项目库（持续更新）](https://legalstudio.feishu.cn/wiki/IsMrwljO5iLOn5kF2xUcBosonog)
 
@@ -160,6 +161,6 @@ Legal Studio 法律科技社区，是法律修音机运营的一个社群，平�
 
 > 拓展阅读：
 
-> [欢迎加入：Legal Studio 法律](https://mp.weixin.qq.com/s/8oaIE6pQFJkZ6rCakPVtQg)科技社区，跟上「AI+法律」最新趋势🪐
+> [欢迎加入：Legal Studio 法律科技社区，跟上「AI+法律」最新趋势🪐](https://mp.weixin.qq.com/s/8oaIE6pQFJkZ6rCakPVtQg)
 
 > 法律科技社区持续纳新中：飞书群正式组建，AI Agent 即将上线🤗

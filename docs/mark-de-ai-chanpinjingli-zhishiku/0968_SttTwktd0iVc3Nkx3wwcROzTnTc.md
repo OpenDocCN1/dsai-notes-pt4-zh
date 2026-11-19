@@ -1,3 +1,4 @@
+
 # 碾压Nano Banana的新模型来了！GPT Image 2 文字渲染到底有多离谱！
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/A0GbdgRAJohshCxccqBcJvOmnnh](https://qqs7y1hozd1.feishu.cn/docx/A0GbdgRAJohshCxccqBcJvOmnnh)
@@ -14,7 +15,7 @@ AI生成的马斯克带货
 
 官方目前还没有大张旗鼓地宣布它的存在。
 
-但在四月初的这几天，LM Arena，也就是大家熟悉的那个AI竞技场上，悄悄上线了三个代号为 maskingtape-alpha、packingtape-alpha 和 gaffertape-alpha 的匿名图像模型。
+但在四月初的这几天，LM Arena，也就是大家熟悉的那个AI竞技场上，悄悄上线了三个代号为 `maskingtape-alpha`、`packingtape-alpha` 和 `gaffertape-alpha` 的匿名图像模型。
 
 仅仅几个小时后，它们又神秘消失了。
 
@@ -26,17 +27,17 @@ AI生成的马斯克带货
 
 结合各种API返回的元数据和海外硬核用户的测试记录，真相已经毫无悬念：这就是大家苦等许久的 GPT Image 2.0。
 
-它现在在竞技场里还有一个被广泛接受的代号：duct-tape（胶带）。
+它现在在竞技场里还有一个被广泛接受的代号：`duct-tape`（胶带）。
 
 ![](img/23c357c98e63be162536079ff702ddde.png)
 
-**我收集了一大**批互联网上的实测提示词和返图，仔细研究完之后，我心里的震撼更强烈了。
+我收集了一大批互联网上的实测提示词和返图，仔细研究完之后，我心里的震撼更强烈了。
 
 可以说 GPT Image 2 完完全全杀死了比赛，直接把目前图像生成的上限暴力拉高了一个时代。
 
 ![](img/910afcd0d879e8715f1f600bbc40318f.png)
 
-# **碾压级的文字渲染**
+## 碾压级的文字渲染
 
 在这之前，提到AI生成带字的图，大家公认的标杆是谷歌的 Nano Banana 。
 
@@ -47,7 +48,6 @@ AI生成的马斯克带货
 GPT Image 2 彻底打破了这个瓶颈。
 
 它的文字渲染能力，已经强到了一个我很难用语言去框定的地步。
-
 
 @GeekCatX
 
@@ -63,9 +63,11 @@ GPT Image 2 彻底打破了这个瓶颈。
 
 为了让大家直观感受到它的统治力，我们先来看看几个疯传的案例。
 
-## 第一个：明太祖登基之后的推文页面
+### 第一个：明太祖登基之后的推文页面
 
+```
 Create an X post page from after Emperor Zhu Yuanzhang of the Ming Dynasty ascended the throne
+```
 
 ![](img/580a3a9e37ffee46d828b9007c085605.png)
 
@@ -75,7 +77,9 @@ GPT Image 2 给出的画面里，推文的排版、头像的位置、点赞转�
 
 第二个：T-800机器人的淘宝商品详情页
 
+```
 T-800 robot's Taobao product detail page, showcasing: Three-view diagrams of the robot's front, side, and back, Product price, Product details, Functions and usage scenarios, etc.
+```
 
 ![](img/97a3a9d708b47cfaa9d350fa5d43d390.png)
 
@@ -87,7 +91,7 @@ T-800 robot's Taobao product detail page, showcasing: Three-view diagrams of the
 
 ![](img/eee8b372f94f5399bcc331eab0c7b917.png)
 
-# **真正的生产力利器**
+## 真正的生产力利器
 
 我发现 Image 2.0 的仿真能力已经到了出神入化的境地：
 
@@ -117,7 +121,9 @@ T-800 robot's Taobao product detail page, showcasing: Three-view diagrams of the
 
 还有一个更极端的长提示词例子：
 
+```
 一张充满新春喜庆氛围但不失高雅格调的 2026 城市宣传海报。双重曝光，构图延续了S型的流动感；在纯白的纹理背景右下角，一个身穿中国传统服饰的微缩人物正在挥舞着一条长长的红色丝绸舞带，这条红绸在空中舞动，不仅展现出丝绸的柔顺质感，更在向左上方飘动的过程中，奇幻地变形成了一条壮丽的山脉河流。在这条"河流"中，叠加了一个有山有海河的广州城市手绘图，国潮，景色尽在眼底，壮阔雄伟，令人震撼。广州的地标建筑(广州塔，珠江新城建筑群，珠江, 广州城里古建筑，游轮，白云山）。云雾环绕，仙气缥缈，色彩丰富，结构复杂，细节丰富，但因为大面积的留白，画面依然显得清新脱俗，左下角排版着"SPRING 2026"和竖排的宣传语，整体寓意"千年商都，魅力广州"。文字排版优美，大方，字迹清晰完整，尺寸9:16。
+```
 
 ![](img/08d6fd455225a1270064e67f9bc88a62.png)
 
@@ -157,25 +163,25 @@ GPT Image 2 能够精准识别每一个约束条件，真的给你创造出一�
 
 ![](img/310e3acd9e0a0a64ae9425d218bfe1ff.png)
 
-# **干货时间**
+## 干货时间
 
 我知道大家现在心里最痒的问题就是：这玩意儿到底在哪能用到？
 
 目前它还在灰度测试阶段，有两条明确的路子：
 
-1、开通 ChatGPT Plus 或 Pro 会员
+1. 开通 ChatGPT Plus 或 Pro 会员
 
 大厂灰度测试的铁律，被灰到的人永远向高净值用户倾斜。Plus 和 Pro 用户的命中概率更大。
 
 目前晒图、直呼“杀疯了”的，大部分都是订阅了的用户。如果你手头有预算，且极其渴望提前体验，直接走这条路最简单粗暴。
 
-2、去 Arena AI 碰运气
+2. 去 Arena AI 碰运气
 
-大家可以直接访问 https://arena.ai/ ，进入图像双盲测试区。
+大家可以直接访问 `https://arena.ai/` ，进入图像双盲测试区。
 
 ![](img/ead8d1bfbe276385954218feb7fa63e9.png)
 
-在提交提示词后，你有一定概率会遇到代号为 duct-tape 的模型。
+在提交提示词后，你有一定概率会遇到代号为 `duct-tape` 的模型。
 
 这纯靠运气，我自己刷了几十次目前还没撞上，但看着网友们一张张甩图，我可太馋了。
 
@@ -183,8 +189,8 @@ GPT Image 2 能够精准识别每一个约束条件，真的给你创造出一�
 
 ![](img/e05b553632660773c98ec1b23e052464.png)
 
-收录了 GPT-Image-2 在人像、海报、**角色设计、UI 原型及**社区实验等场景下的高质量提示词与图像案例。
+收录了 GPT-Image-2 在人像、海报、角色设计、UI 原型及社区实验等场景下的高质量提示词与图像案例。
 
 暂时还用不了的朋友可以先找找有没有心仪的提示词，提前做好准备：
 
-github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/README_zh-CN.md
+`github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/README_zh-CN.md`

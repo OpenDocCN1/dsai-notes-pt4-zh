@@ -1,10 +1,11 @@
+
 # 如何使用ChatGPT写脚本无限注册heygen，实现数字人自由？
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ODqvdz4FUotoHhxcde3czpHknne](https://xuqiwei1986.feishu.cn/docx/ODqvdz4FUotoHhxcde3czpHknne)
 
 我们都知道最近一段时间heygen非常火爆，特别是在抖音上，不少小和尚和心灵鸡汤内容都是通过heygen制作的。然而，heygen的免费账号仅提供一个credit，一旦用完就需要手动注册新账号。那我能不能通过ChatGPT写脚本实现批量注册呢？
 
-实操下来，与ChatGPT对话一个多小时后我完成了v1.0版本，当然这个脚本还有需要要完善的地方，但是对于个人自用来说已经完全没有问题了，试了一下半小时不到就生成了二十多个账号。
+实操下来，与ChatGPT对话一个多小时后我完成了v1.0版本，当然这个脚本还有需要完善的地方，但是对于个人自用来说已经完全没有问题了，试了一下半小时不到就生成了二十多个账号。
 
 通过与ChatGPT对话的过程实现整个需求来看，即使是编程新手，也可以通过自然语言交互实现自动化需求。那举一反三更进一步，通过结合GPT-4和GitHub Copilot，能不能使用ChatGPT写脚本抓取📕或者推特上的数据？能不能抓取👸号所有的十万加的文章？能不能批量自动化使用heygen制作视频？答案是可以的，也并不难做到，我们需要付出的就是多一点的耐心。
 
@@ -22,13 +23,13 @@
 
 为了完成一个基本的账号自动化注册，我们需要：
 
-1. 可以使用selenium模拟浏览器操作
+1. 可以使用`selenium`模拟浏览器操作
 
 2. 拥有一个可以无限接收验证码的邮箱服务
 
 至于验证码、IP地址和代理的问题，目前可以暂时不考虑。如果未来heygen对此有所限制或者在批量注册账号时遇到问题，我们可以手动更换代理或修改代码。但在目前阶段，这些可以先忽略。
 
-上面第一点中，我们可以让GPT帮助我们生成操作浏览器的代码。那么第二点，如何获取无限的邮箱呢？以Gmail为例，example@gmail.com 中的 gmail.com 是域名，前缀是邮箱地址。也就是只要我们拥有了域名，理论上就可以搭建自己的邮箱服务，从而获得无限的地址。所以接下来的目标就是有没有最简单的搭建自己邮箱服务器的方法呢？
+上面第一点中，我们可以让GPT帮助我们生成操作浏览器的代码。那么第二点，如何获取无限的邮箱呢？以Gmail为例，`example@gmail.com` 中的 `gmail.com` 是域名，前缀是邮箱地址。也就是只要我们拥有了域名，理论上就可以搭建自己的邮箱服务，从而获得无限的地址。所以接下来的目标就是有没有最简单的搭建自己邮箱服务器的方法呢？
 
 ![](img/6fc146098f237aa1bd31b119071b368a.png)
 
@@ -38,7 +39,7 @@
 
 通过与GPT的对话我们再次得到了几个关键信息：
 
-+   只要拥有了域名，我们就可以设置一个捕获所有邮件（catch-all）的邮箱地址，不管发送到你域名下的任何前缀（如[anything]@yourdomain.com）的邮件，都会被路由到一个指定的邮箱。这样我们只需要从这个指定邮箱中根据发件人和收件人查询到heygen的注册邮件并且提取验证码就可以了。
++   只要拥有了域名，我们就可以设置一个捕获所有邮件（catch-all）的邮箱地址，不管发送到你域名下的任何前缀（如`[anything]@yourdomain.com`）的邮件，都会被路由到一个指定的邮箱。这样我们只需要从这个指定邮箱中根据发件人和收件人查询到heygen的注册邮件并且提取验证码就可以了。
 
 +   设置catch-all邮箱的最简单方式可以使用邮件转发服务，比如ImprovMX 和 Forward Email（当然也可以使用第三方邮件服务，但是可能会有一些限制，优点就是上手门槛更低）
 
@@ -50,13 +51,13 @@
 
 首先我们可以去cloudflare或者namesilo 或者其他任何自己熟悉的域名注册商注册自己的域名，最便宜的域名只需要几块钱，我们按需购买即可。如果有自己的域名那就更好了。
 
-这里我以一个自己的域名为例：bardextension.io。
+这里我以一个自己的域名为例：`bardextension.io`。
 
-根据刚才GPT的推荐，这里我选择使用forwardemail进行catch-all邮件的转发。我们首先访问 https://forwardemail.net/ ，如果没有注册的话我们可以直接使用gmail第三方登录。
+根据刚才GPT的推荐，这里我选择使用forwardemail进行catch-all邮件的转发。我们首先访问 `https://forwardemail.net/` ，如果没有注册的话我们可以直接使用gmail第三方登录。
 
 ![](img/0e436d4e898f80448605966b7dfb5b70.png)
 
-登录成功之后我们点击add domain添加我们的域名，比如这里填入我自己的域名bardextension.io
+登录成功之后我们点击add domain添加我们的域名，比如这里填入我自己的域名`bardextension.io`
 
 ![](img/165eb8e1680e4446f9934ec7ca9a8e60.png)
 
@@ -68,7 +69,7 @@
 
 接下来我们就可以登录到我们的域名后台根据引导页修改DNS了，红框中的MX地址是必须要新增的，我们需要把所有的邮箱都路由到同一个邮箱中，这里推荐使用自己的gmail邮箱。
 
-接下来我们就可以去新增DNS记录了，因为我的bardextension.io 域名是在namesilo注册的，我们进入到namesilo后台，在下面的红框区域填写对应的解析信息。
+接下来我们就可以去新增DNS记录了，因为我的`bardextension.io` 域名是在namesilo注册的，我们进入到namesilo后台，在下面的红框区域填写对应的解析信息。
 
 ![](img/dcefad6a1e3ebd1907047799de14bd71.png)
 
@@ -78,7 +79,7 @@ OK，填写完成之后我们返回到forwardemail的引导页，点击verify
 
 ![](img/d86c920bcf3b07f75e44438b62d1d6c6.png)
 
-点击后如果上面出现了congratulations，说明已经验证成功了，这时候我们的无限邮箱就算完成了，接下来不管你发送到邮件到 [anything]@bardextension.io 的任何地址，都会转发到你DNS中刚刚配置的forwardemail的邮箱中，这里你可以测试一下了，比如发送邮件到test@@bardextension.io，你可以在自己的gmail中看到了。
+点击后如果上面出现了congratulations，说明已经验证成功了，这时候我们的无限邮箱就算完成了，接下来不管你发送到邮件到 `[anything]@bardextension.io` 的任何地址，都会转发到你DNS中刚刚配置的forwardemail的邮箱中，这里你可以测试一下了，比如发送邮件到`test@@bardextension.io`，你可以在自己的gmail中看到了。
 
 ![](img/a6525049ff3080ca0880cd277e6aff46.png)
 
@@ -106,14 +107,14 @@ OK，填写完成之后我们返回到forwardemail的引导页，点击verify
 
 我们把GPT实现的代码拷贝出来并且在本地执行：
 
-```
+```python
 import imaplib
 import email
 from email.header import decode_header
 import re
 
 def fetch_verification_code(gmail_user, gmail_password, sender, recipient):
-    &quot;&quot;&quot;
+    """
     Fetches a six-digit verification code from Gmail using IMAP.
 
     Parameters:
@@ -124,29 +125,29 @@ def fetch_verification_code(gmail_user, gmail_password, sender, recipient):
 
     Returns:
     str: The six-digit verification code, if found. Otherwise, returns None.
-    &quot;&quot;&quot;
+    """
 
     # Connect to Gmail IMAP server
-    imap_url = &#x27;imap.gmail.com&#x27;
+    imap_url = 'imap.gmail.com'
     mail = imaplib.IMAP4_SSL(imap_url)
     mail.login(gmail_user, gmail_password)
 
     # Select the inbox
-    mail.select(&#x27;inbox&#x27;)
+    mail.select('inbox')
 
     # Search for emails from sender to recipient
-    status, messages = mail.search(None, f&#x27;(FROM &quot;{sender}&quot; TO &quot;{recipient}&quot;)&#x27;)
+    status, messages = mail.search(None, f'(FROM "{sender}" TO "{recipient}")')
 
     # Check if any messages are found
-    if status != &#x27;OK&#x27;:
-        print(&quot;No messages found.&quot;)
+    if status != 'OK':
+        print("No messages found.")
         return None
 
     # Fetch messages
     for num in messages[0].split():
-        typ, data = mail.fetch(num, &#x27;(RFC822)&#x27;)
-        if typ != &#x27;OK&#x27;:
-            print(f&quot;ERROR: Unable to fetch email {num}.&quot;)
+        typ, data = mail.fetch(num, '(RFC822)')
+        if typ != 'OK':
+            print(f"ERROR: Unable to fetch email {num}.")
             continue
 
         # Parse the email content
@@ -154,24 +155,23 @@ def fetch_verification_code(gmail_user, gmail_password, sender, recipient):
         if msg.is_multipart():
             for part in msg.walk():
                 content_type = part.get_content_type()
-                content_disposition = str(part.get(&quot;Content-Disposition&quot;))
+                content_disposition = str(part.get("Content-Disposition"))
 
                 # Extract body
-                if &quot;attachment&quot; not in content_disposition and content_type == &quot;text/plain&quot;:
+                if "attachment" not in content_disposition and content_type == "text/plain":
                     body = part.get_payload(decode=True).decode()
                     # Search for a six-digit code in the email body
-                    code = re.search(r&#x27;\b\d{6}\b&#x27;, body)
+                    code = re.search(r'\b\d{6}\b', body)
                     if code:
                         return code.group()
 
     return None
 
 # Example usage
-# Note: Replace &#x27;your_username&#x27;, &#x27;your_password&#x27;, &#x27;sender@example.com&#x27;, and &#x27;recipient@example.com&#x27; 
+# Note: Replace 'your_username', 'your_password', 'sender@example.com', and 'recipient@example.com' 
 # with actual values before running this function.
-# code = fetch_verification_code(&#x27;your_username&#x27;, &#x27;your_password&#x27;, &#x27;sender@example.com&#x27;, &#x27;recipient@example.com&#x27;)
+# code = fetch_verification_code('your_username', 'your_password', 'sender@example.com', 'recipient@example.com')
 # print(code)
-
 ```
 
 这时我们发现需要填写用户名和密码，用户名是我们的Gmail邮箱，那这个密码是什么，需要在哪里获取呢？不知道？没关系，继续问ChatGPT：
@@ -190,6 +190,10 @@ def fetch_verification_code(gmail_user, gmail_password, sender, recipient):
 
 自动化获取邮箱验证码完整代码如下：
 
+
+
+# Gmail 验证码获取与 HeyGen 自动化注册
+
 ```
 import imaplib
 import email
@@ -197,7 +201,7 @@ from email.header import decode_header
 import re
 
 def fetch_latest_verification_code(gmail_user, gmail_password, sender, recipient):
-    &quot;&quot;&quot;
+    """
     Fetches a six-digit verification code from the latest 10 unread emails in Gmail using IMAP.
 
     Parameters:
@@ -208,28 +212,28 @@ def fetch_latest_verification_code(gmail_user, gmail_password, sender, recipient
 
     Returns:
     str: The six-digit verification code, if found. Otherwise, returns None.
-    &quot;&quot;&quot;
+    """
 
     # Connect to Gmail IMAP server
-    imap_url = &#x27;imap.gmail.com&#x27;
+    imap_url = 'imap.gmail.com'
     mail = imaplib.IMAP4_SSL(imap_url)
     mail.login(gmail_user, gmail_password)
 
     # Select the inbox
-    mail.select(&#x27;inbox&#x27;)
+    mail.select('inbox')
 
     # Search for unread emails from sender to recipient in the latest 10 emails
-    status, messages = mail.search(None, f&#x27;(FROM &quot;{sender}&quot; TO &quot;{recipient}&quot; UNSEEN)&#x27;)
-    if status != &#x27;OK&#x27;:
-        print(&quot;No unread messages found.&quot;)
+    status, messages = mail.search(None, f'(FROM "{sender}" TO "{recipient}" UNSEEN)')
+    if status != 'OK':
+        print("No unread messages found.")
         return None
 
     # Fetch latest 10 messages
     message_numbers = messages[0].split()[-10:]
     for num in message_numbers:
-        typ, data = mail.fetch(num, &#x27;(RFC822)&#x27;)
-        if typ != &#x27;OK&#x27;:
-            print(f&quot;ERROR: Unable to fetch email {num}.&quot;)
+        typ, data = mail.fetch(num, '(RFC822)')
+        if typ != 'OK':
+            print(f"ERROR: Unable to fetch email {num}.")
             continue
 
         # Parse the email content
@@ -237,31 +241,30 @@ def fetch_latest_verification_code(gmail_user, gmail_password, sender, recipient
         if msg.is_multipart():
             for part in msg.walk():
                 content_type = part.get_content_type()
-                content_disposition = str(part.get(&quot;Content-Disposition&quot;))
+                content_disposition = str(part.get("Content-Disposition"))
 
                 # Extract body
-                if &quot;attachment&quot; not in content_disposition and content_type == &quot;text/plain&quot;:
+                if "attachment" not in content_disposition and content_type == "text/plain":
                     body = part.get_payload(decode=True).decode()
                     # Search for a six-digit code in the email body
-                    code = re.search(r&#x27;\b\d{6}\b&#x27;, body)
+                    code = re.search(r'\b\d{6}\b', body)
                     if code:
                         return code.group()
 
     return None
 
 # Example usage
-# Note: Replace &#x27;your_username&#x27;, &#x27;your_password&#x27;, &#x27;sender@example.com&#x27;, &#x27;recipient@example.com&#x27; 
+# Note: Replace 'your_username', 'your_password', 'sender@example.com', 'recipient@example.com' 
 # with actual values before running this function.
-# code = fetch_latest_verification_code(&#x27;your_username&#x27;, &#x27;your_password&#x27;, &#x27;sender@example.com&#x27;, &#x27;recipient@example.com&#x27;)
+# code = fetch_latest_verification_code('your_username', 'your_password', 'sender@example.com', 'recipient@example.com')
 # print(code)
-
 ```
 
 以上为获取无限邮箱且实时获取验证码的逻辑，接下来就是heygen自动化注册部分了
 
 ## 实现自动化注册
 
-通过刚刚GPT写的代码，我们知道获取验证码的方法为fetch_verification_code，我们再次把注册的过程和heygen网站的要求告诉GPT，让他为我们生成代码：
+通过刚刚GPT写的代码，我们知道获取验证码的方法为`fetch_verification_code`，我们再次把注册的过程和heygen网站的要求告诉GPT，让他为我们生成代码：
 
 ![](img/fe39ac7249e0c5772b3cf3beb1a76269.png)
 
@@ -275,7 +278,13 @@ def fetch_latest_verification_code(gmail_user, gmail_password, sender, recipient
 
 上一步生成的代码已经实现了自动化过程，但是验证码还没有整合进来，我们直接把第一步生成的代码拷贝到第二个脚本中即可，完整代码如下：
 
-```
+
+
+# 自动化注册脚本实现与优化
+
+## 完整 Python 脚本
+
+```python
 import random
 import string
 import time
@@ -289,11 +298,11 @@ import email
 from email.header import decode_header
 import re
 
-gmail_user = &quot;xxxx@gmail.com&quot;
-gmail_password = &quot;xxxxxx&quot;
+gmail_user = "xxxx@gmail.com"
+gmail_password = "xxxxxx"
 
 def fetch_verification_code(sender, recipient, max_messages=10):
-    &quot;&quot;&quot;
+    """
     Fetches a six-digit verification code from Gmail using IMAP.
 
     Parameters:
@@ -304,33 +313,33 @@ def fetch_verification_code(sender, recipient, max_messages=10):
 
     Returns:
     str: The six-digit verification code, if found. Otherwise, returns None.
-    &quot;&quot;&quot;
+    """
 
     # Connect to Gmail IMAP server
-    imap_url = &#x27;imap.gmail.com&#x27;
+    imap_url = 'imap.gmail.com'
     mail = imaplib.IMAP4_SSL(imap_url)
     mail.login(gmail_user, gmail_password)
 
     # Select the inbox
-    mail.select(&#x27;inbox&#x27;)
-    print(&quot;begin search&quot;)
+    mail.select('inbox')
+    print("begin search")
     # Search for emails from sender to recipient
-    # status, messages = mail.search(None, &#x27;(UNSEEN)&#x27;, f&#x27;(FROM &quot;{sender}&quot;)&#x27;, f&#x27;(TO &quot;{recipient}&quot;)&#x27;)
-    status, messages = mail.search(None, f&#x27;(FROM &quot;{sender}&quot; TO &quot;{recipient}&quot;)&#x27;)
+    # status, messages = mail.search(None, '(UNSEEN)', f'(FROM "{sender}")', f'(TO "{recipient}")')
+    status, messages = mail.search(None, f'(FROM "{sender}" TO "{recipient}")')
     print(messages)
 
     # Check if any messages are found
-    if status != &#x27;OK&#x27;:
-        print(&quot;No messages found.&quot;)
+    if status != 'OK':
+        print("No messages found.")
         return None
 
     # Fetch messages
     messages = messages[0].split()[-max_messages:]
     for num in messages:
-        print(f&quot;Fetching email {num}...&quot;)
-        typ, data = mail.fetch(num, &#x27;(RFC822)&#x27;)
-        if typ != &#x27;OK&#x27;:
-            print(f&quot;ERROR: Unable to fetch email {num}.&quot;)
+        print(f"Fetching email {num}...")
+        typ, data = mail.fetch(num, '(RFC822)')
+        if typ != 'OK':
+            print(f"ERROR: Unable to fetch email {num}.")
             continue
 
         # Parse the email content
@@ -338,14 +347,14 @@ def fetch_verification_code(sender, recipient, max_messages=10):
         if msg.is_multipart():
             for part in msg.walk():
                 content_type = part.get_content_type()
-                content_disposition = str(part.get(&quot;Content-Disposition&quot;))
+                content_disposition = str(part.get("Content-Disposition"))
 
                 # Extract body
-                if &quot;attachment&quot; not in content_disposition and content_type == &quot;text/plain&quot;:
+                if "attachment" not in content_disposition and content_type == "text/plain":
                     body = part.get_payload(decode=True).decode()
-                    print(f&quot;body is :{body}&quot;)
+                    print(f"body is :{body}")
                     # Search for a six-digit code in the email body
-                    code = re.search(r&#x27;\b\d{6}\b&#x27;, body)
+                    code = re.search(r'\b\d{6}\b', body)
                     if code:
                         return code.group()
 
@@ -354,89 +363,91 @@ def fetch_verification_code(sender, recipient, max_messages=10):
 # 随机生成邮箱地址
 def generate_email(domain, length=10):
     characters = string.ascii_letters + string.digits
-    email_local_part = &#x27;&#x27;.join(random.choice(characters) for i in range(length))
-    return email_local_part + &quot;@&quot; + domain
+    email_local_part = ''.join(random.choice(characters) for i in range(length))
+    return email_local_part + "@" + domain
 
 # 随机生成密码
 def generate_password(length=12):
     characters = string.ascii_letters + string.digits + string.punctuation
-    password = &#x27;&#x27;.join(random.choice(characters) for i in range(length))
+    password = ''.join(random.choice(characters) for i in range(length))
     return password
 
 # 主函数
 def main():
-    email = generate_email(&quot;bardextension.io&quot;, random.randint(5, 10))
+    email = generate_email("bardextension.io", random.randint(5, 10))
     password = generate_password(random.randint(12, 18))
 
     # 初始化 WebDriver
     driver = webdriver.Chrome()
-    driver.get(&quot;https://app.heygen.com/login&quot;)
+    driver.get("https://app.heygen.com/login")
 
     try:
         # 点击 Sign Up with Email
         WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.LINK_TEXT, &quot;Sign Up with Email&quot;))
+            EC.element_to_be_clickable((By.LINK_TEXT, "Sign Up with Email"))
         ).click()
-        print(&quot;click sign up with email&quot;)
+        print("click sign up with email")
 
         # 输入邮箱地址并发送验证码
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;email&quot;))
+            EC.visibility_of_element_located((By.ID, "email"))
         ).send_keys(email)
-        driver.find_element(By.XPATH, &quot;//button[.//span[contains(text(), &#x27;Send Code&#x27;)]]&quot;).click()
-        print(&quot;send code&quot;)
+        driver.find_element(By.XPATH, "//button[.//span[contains(text(), 'Send Code')]]").click()
+        print("send code")
 
         time.sleep(10)
         # 假设使用 fetch_verification_code 函数获取验证码
-        code = fetch_verification_code(&quot;no_reply@mail.heygen.com&quot;, email)
+        code = fetch_verification_code("no_reply@mail.heygen.com", email)
         if(code is None):
-            print(&quot;未获取到验证码，正在重试中&quot;)
+            print("未获取到验证码，正在重试中")
             time.sleep(20)
-            code = fetch_verification_code(&quot;no_reply@mail.heygen.com&quot;, email)
+            code = fetch_verification_code("no_reply@mail.heygen.com", email)
 
         # 填写验证码并点击 Next Step
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;code&quot;))
+            EC.visibility_of_element_located((By.ID, "code"))
         ).send_keys(code)
-        print(&quot;code is :&quot;, code)
-        driver.find_element(By.XPATH, &quot;//button[.//span[contains(text(), &#x27;Next Step&#x27;)]]&quot;).click()
-        print(&quot;next step&quot;)
+        print("code is :", code)
+        driver.find_element(By.XPATH, "//button[.//span[contains(text(), 'Next Step')]]").click()
+        print("next step")
 
         # 输入密码并完成注册
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;password&quot;))
+            EC.visibility_of_element_located((By.ID, "password"))
         ).send_keys(password)
 
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;pwdConfirm&quot;))
+            EC.visibility_of_element_located((By.ID, "pwdConfirm"))
         ).send_keys(password)
 
-        driver.find_element(By.XPATH, &quot;//button[.//span[contains(text(), &#x27;Done&#x27;)]]&quot;).click()
-        print(f&quot;email: {email}, password: {password}&quot;)
+        driver.find_element(By.XPATH, "//button[.//span[contains(text(), 'Done')]]").click()
+        print(f"email: {email}, password: {password}")
 
         # 关闭浏览器
         driver.quit()
     except Exception as e:
-        print(&quot;发生错误：&quot;, e)
+        print("发生错误：", e)
         driver.quit()
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
+
+## 启动验证与账号保存
 
 启动后发现已经注册成功：
 
 ![](img/36a49b0d97464f61147ed98e1e91ae26.png)
 
-## 保存生成的账号信息
-
-接下来我们要保存我们的账号到一个Excel中，并且要做到批量注册，那我们要怎么做呢？把刚刚的代码扔回给ChatGPT，让他们帮我继续下一步：
+接下来我们要保存我们的账号到一个 Excel 中，并且要做到批量注册，那我们要怎么做呢？把刚刚的代码扔回给 ChatGPT，让它们帮我继续下一步：
 
 ![](img/befcaef8ab832f5d41791d7ff5ce4e8c.png)
 
 ![](img/3e40d3b0845c457963b6c374afc9207f.png)
 
-完美，到此为止，这个脚本已经实现了我们的功能，但是这时候仍然有一个问题，就是现在是每5个账号就生成一个Excel，我需要让他把所有的账号写到一个Excel中，只是每5个保存一次而已，继续让他改。
+## 批量注册与 Excel 优化
+
+完美，到此为止，这个脚本已经实现了我们的功能，但是这时候仍然有一个问题，就是现在是每 5 个账号就生成一个 Excel，我需要让他把所有的账号写到一个 Excel 中，只是每 5 个保存一次而已，继续让他改。
 
 ![](img/398cdc7df336c4fa9df84764e2ec3bbf.png)
 
@@ -444,9 +455,17 @@ if __name__ == &quot;__main__&quot;:
 
 ![](img/532b33b436db6ee747c959a421f53eb0.png)
 
+## 完整代码
+
 完整代码如下：
 
-```
+
+
+# 自动化注册 HeyGen 脚本实践与总结
+
+## 代码实现
+
+```python
 import random
 import string
 import time
@@ -461,33 +480,34 @@ from fake_useragent import UserAgent
 import pandas as pd
 import re
 
-gmail_user = &quot;xxxxxx@gmail.com&quot;
-gmail_password = &quot;xxxxxxxx&quot;
+gmail_user = "xxxxxx@gmail.com"
+gmail_password = "xxxxxxxx"
 
 def create_driver():
-    &quot;&quot;&quot;
+    """
     创建并配置WebDriver。
-    &quot;&quot;&quot;
+    """
     options = webdriver.ChromeOptions()
-    # Add arguments for ChromeOptions to make the browser more &quot;real&quot;
-    options.add_argument(&quot;--disable-blink-features=AutomationControlled&quot;)
-    options.add_argument(&quot;--start-maximized&quot;)
-    options.add_argument(&quot;--disable-infobars&quot;)
-    options.add_argument(&quot;--disable-extensions&quot;)
-    options.add_argument(&quot;--no-sandbox&quot;)
-    options.add_argument(&quot;--disable-dev-shm-usage&quot;)
-    options.add_argument(&quot;--headless&quot;)
+    # Add arguments for ChromeOptions to make the browser more "real"
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--start-maximized")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--headless")
     ua = UserAgent()
     user_agent = ua.random
-    options.add_argument(f&quot;user-agent={user_agent}&quot;)
-    options.add_experimental_option(&quot;excludeSwitches&quot;, [&quot;enable-automation&quot;])
+    options.add_argument(f"user-agent={user_agent}")
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
 
     driver = webdriver.Chrome(options=options)
-    driver.execute_script(&quot;Object.defineProperty(navigator, &#x27;webdriver&#x27;, {get: () =&gt; undefined})&quot;)
+    driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
     return driver
+
 def fetch_verification_code(sender, recipient, max_messages=10):
-    &quot;&quot;&quot;
+    """
     Fetches a six-digit verification code from Gmail using IMAP.
 
     Parameters:
@@ -498,32 +518,32 @@ def fetch_verification_code(sender, recipient, max_messages=10):
 
     Returns:
     str: The six-digit verification code, if found. Otherwise, returns None.
-    &quot;&quot;&quot;
+    """
 
     # Connect to Gmail IMAP server
-    imap_url = &#x27;imap.gmail.com&#x27;
+    imap_url = 'imap.gmail.com'
     mail = imaplib.IMAP4_SSL(imap_url)
     mail.login(gmail_user, gmail_password)
 
     # Select the inbox
-    mail.select(&#x27;inbox&#x27;)
-    print(&quot;begin search&quot;)
+    mail.select('inbox')
+    print("begin search")
     # Search for emails from sender to recipient
-    status, messages = mail.search(None, &#x27;(UNSEEN)&#x27;, f&#x27;(FROM &quot;{sender}&quot;)&#x27;, f&#x27;(TO &quot;{recipient}&quot;)&#x27;)
-    # status, messages = mail.search(None, f&#x27;(FROM &quot;{sender}&quot; TO &quot;{recipient}&quot;)&#x27;)
+    status, messages = mail.search(None, '(UNSEEN)', f'(FROM "{sender}")', f'(TO "{recipient}")')
+    # status, messages = mail.search(None, f'(FROM "{sender}" TO "{recipient}")')
 
     # Check if any messages are found
-    if status != &#x27;OK&#x27;:
-        print(&quot;No messages found.&quot;)
+    if status != 'OK':
+        print("No messages found.")
         return None
 
     # Fetch messages
     messages = messages[0].split()[-max_messages:]
     for num in messages:
-        print(f&quot;Fetching email {num}...&quot;)
-        typ, data = mail.fetch(num, &#x27;(RFC822)&#x27;)
-        if typ != &#x27;OK&#x27;:
-            print(f&quot;ERROR: Unable to fetch email {num}.&quot;)
+        print(f"Fetching email {num}...")
+        typ, data = mail.fetch(num, '(RFC822)')
+        if typ != 'OK':
+            print(f"ERROR: Unable to fetch email {num}.")
             continue
 
         # Parse the email content
@@ -531,13 +551,13 @@ def fetch_verification_code(sender, recipient, max_messages=10):
         if msg.is_multipart():
             for part in msg.walk():
                 content_type = part.get_content_type()
-                content_disposition = str(part.get(&quot;Content-Disposition&quot;))
+                content_disposition = str(part.get("Content-Disposition"))
 
                 # Extract body
-                if &quot;attachment&quot; not in content_disposition and content_type == &quot;text/plain&quot;:
+                if "attachment" not in content_disposition and content_type == "text/plain":
                     body = part.get_payload(decode=True).decode()
                     # Search for a six-digit code in the email body
-                    code = re.search(r&#x27;\b\d{6}\b&#x27;, body)
+                    code = re.search(r'\b\d{6}\b', body)
                     if code:
                         return code.group()
 
@@ -546,77 +566,77 @@ def fetch_verification_code(sender, recipient, max_messages=10):
 # 随机生成邮箱地址
 def generate_email(domain, length=10):
     characters = string.ascii_letters + string.digits
-    email_local_part = &#x27;&#x27;.join(random.choice(characters) for i in range(length))
-    return email_local_part + &quot;@&quot; + domain
+    email_local_part = ''.join(random.choice(characters) for i in range(length))
+    return email_local_part + "@" + domain
 
 # 随机生成密码
 def generate_password(length=12):
     characters = string.ascii_letters + string.digits + string.punctuation
-    password = &#x27;&#x27;.join(random.choice(characters) for i in range(length))
+    password = ''.join(random.choice(characters) for i in range(length))
     return password
 
 # 主函数
 def register_account():
-    &quot;&quot;&quot;
+    """
     注册单个账号并返回邮箱和密码。
-    &quot;&quot;&quot;
-    email = generate_email(&quot;bardextension.io&quot;, random.randint(5, 10))
+    """
+    email = generate_email("bardextension.io", random.randint(5, 10))
     password = generate_password(random.randint(12, 18))
 
     # 初始化 WebDriver
     driver = create_driver()
-    driver.get(&quot;https://app.heygen.com/login&quot;)
+    driver.get("https://app.heygen.com/login")
 
     try:
         time.sleep(random.randint(1, 3))
         # 点击 Sign Up with Email
         WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.LINK_TEXT, &quot;Sign Up with Email&quot;))
+            EC.element_to_be_clickable((By.LINK_TEXT, "Sign Up with Email"))
         ).click()
-        print(&quot;click sign up with email&quot;)
+        print("click sign up with email")
 
         time.sleep(random.randint(1, 3))
         # 输入邮箱地址并发送验证码
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;email&quot;))
+            EC.visibility_of_element_located((By.ID, "email"))
         ).send_keys(email)
-        driver.find_element(By.XPATH, &quot;//button[.//span[contains(text(), &#x27;Send Code&#x27;)]]&quot;).click()
-        print(&quot;send code&quot;)
+        driver.find_element(By.XPATH, "//button[.//span[contains(text(), 'Send Code')]]").click()
+        print("send code")
 
         time.sleep(random.randint(5, 10))
         # 假设使用 fetch_verification_code 函数获取验证码
-        code = fetch_verification_code(&quot;no_reply@mail.heygen.com&quot;, email)
+        code = fetch_verification_code("no_reply@mail.heygen.com", email)
         if(code is None):
-            print(&quot;未获取到验证码，正在重试中&quot;)
+            print("未获取到验证码，正在重试中")
             time.sleep(20)
-            code = fetch_verification_code(&quot;no_reply@mail.heygen.com&quot;, email)
+            code = fetch_verification_code("no_reply@mail.heygen.com", email)
 
         # 填写验证码并点击 Next Step
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;code&quot;))
+            EC.visibility_of_element_located((By.ID, "code"))
         ).send_keys(code)
         time.sleep(random.randint(1, 3))
-        print(&quot;code is :&quot;, code)
-        driver.find_element(By.XPATH, &quot;//button[.//span[contains(text(), &#x27;Next Step&#x27;)]]&quot;).click()
-        print(&quot;next step&quot;)
+        print("code is :", code)
+        driver.find_element(By.XPATH, "//button[.//span[contains(text(), 'Next Step')]]").click()
+        print("next step")
 
         # 输入密码并完成注册
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;password&quot;))
+            EC.visibility_of_element_located((By.ID, "password"))
         ).send_keys(password)
 
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, &quot;pwdConfirm&quot;))
+            EC.visibility_of_element_located((By.ID, "pwdConfirm"))
         ).send_keys(password)
         time.sleep(random.randint(1, 3))
-        driver.find_element(By.XPATH, &quot;//button[.//span[contains(text(), &#x27;Done&#x27;)]]&quot;).click()
-        print(f&quot;email: {email}, password: {password}&quot;)
+        driver.find_element(By.XPATH, "//button[.//span[contains(text(), 'Done')]]").click()
+        print(f"email: {email}, password: {password}")
 
         # 关闭浏览器
         driver.quit()
         return email, password
     except Exception as e:
-        print(&quot;发生错误：&quot;, e)
+        print("发生错误：", e)
         driver.quit()
         return None, None
 
@@ -625,33 +645,32 @@ def main():
     for _ in range(100):  # 循环100次
         email, password = register_account()
         if email and password:
-            new_account = pd.DataFrame({&#x27;Email&#x27;: [email], &#x27;Password&#x27;: [password]})
+            new_account = pd.DataFrame({'Email': [email], 'Password': [password]})
             all_accounts = pd.concat([all_accounts, new_account], ignore_index=True)
 
             # 每5个账号保存一次
             if len(all_accounts) % 2 == 0:
-                all_accounts.to_excel(&#x27;all_accounts.xlsx&#x27;, index=False)
+                all_accounts.to_excel('all_accounts.xlsx', index=False)
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
-开始启动脚本测试，午饭回来已经注册了二十个账号（附在下面）。但这时又发现了一个比较烦人的事情，每次启动脚本都会打开浏览器操作，让我干不了别的工作了，怎么办？问ChatGPT呗，加一个headless，完美解决。收工！
-
 ## 总结
+
+开始启动脚本测试，午饭回来已经注册了二十个账号（附在下面）。但这时又发现了一个比较烦人的事情，每次启动脚本都会打开浏览器操作，让我干不了别的工作了，怎么办？问`ChatGPT`呗，加一个`headless`，完美解决。收工！
 
 以上整个过程不到两个小时，我们得到了以下东西：
 
-1.  一个完整的自动化注册heygen脚本
+1. 一个完整的自动化注册`heygen`脚本
+2. 不限量的个人邮箱，不仅可以用来注册`heygen`，也可以后续注册其他的海外服务
 
-1.  不限量的个人邮箱，不仅可以用来注册heygen，也可以后续注册其他的海外服务
+那我们付出了什么呢？是的，一个多小时的时间和一个域名的成本，最便宜的域名可能只需要十几块钱。当然这个脚本还很简陋，比如没有可视化操作，还需要使用到命令行启动。比如还不能创建`12`积分的账号，但这些问题通过`ChatGPT`依然可以很快地解决。如果大家感兴趣，欢迎留言交流，我会整理一下分享后续如何使用`GPT`实现可视化和`12`积分账号的注册。
 
-那我们付出了什么呢？是的，一个多小时的时间和一个域名的成本，最便宜的域名可能只需要十几块钱。当然这个脚本还很简陋，比如没有可视化操作，还需要使用到命令行启动。比如还不能创建12积分的账号，但这些问题通过ChatGPT依然可以很快地解决。如果大家感兴趣，欢迎留言交流，我会整理一下分享后续如何使用GPT实现可视化和12积分账号的注册。
-
-使用GPT帮我们自动化过程中的一些小技巧：
+使用`GPT`帮我们自动化过程中的一些小技巧：
 
 当两轮对话解决不了问题的时候，及时切换到新的对话窗口，这样可以快速解决我们的问题。
 
 另外就是生成的回答不满意的时候，我们点击下方的重新生成答案，一定要多重试几次，可能会有惊喜。
 
-最后本文只是为了展示ChatGPT的应用案例，不鼓励任何违反网站协议的自动化行为，仅仅用于学习和教育目的。
+最后本文只是为了展示`ChatGPT`的应用案例，不鼓励任何违反网站协议的自动化行为，仅仅用于学习和教育目的。

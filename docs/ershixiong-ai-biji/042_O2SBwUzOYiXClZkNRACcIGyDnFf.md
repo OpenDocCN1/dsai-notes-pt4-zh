@@ -1,6 +1,7 @@
+
 # o1 比 Claude 好吗
 
-> 来源：[https://qianniucity.feishu.cn/docx/KPSUdzvz7onlmdx4y5rcc1qyntb](https://qianniucity.feishu.cn/docx/KPSUdzvz7onlmdx4y5rcc1qyntb)
+> 来源：`https://qianniucity.feishu.cn/docx/KPSUdzvz7onlmdx4y5rcc1qyntb`
 
 在选择 AI 编程助手时，很多人可能会问类似于“o1 比 Claude 好吗？”这样的问题。实际上，这就像问“马龙和樊振东，哪个做你的教练比较好？”一样。答案并不是绝对的，而是取决于个人需求和使用习惯。
 

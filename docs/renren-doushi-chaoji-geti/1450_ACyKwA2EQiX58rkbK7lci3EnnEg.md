@@ -1,18 +1,17 @@
+
 # 使用gpt，小白不用一行代码就可以爬虫
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/F8VxdpYUxovdgkxVeTpcPZLXn4P](https://xuqiwei1986.feishu.cn/docx/F8VxdpYUxovdgkxVeTpcPZLXn4P)
+> 来源：[`https://xuqiwei1986.feishu.cn/docx/F8VxdpYUxovdgkxVeTpcPZLXn4P`](https://xuqiwei1986.feishu.cn/docx/F8VxdpYUxovdgkxVeTpcPZLXn4P)
 
-###
-
-大家好，我是亮仔
+### 大家好，我是亮仔
 
 ## 简介
 
-此前有个selenium的爬虫案例，但是环境配置是一个麻烦的问题
+此前有个`selenium`的爬虫案例，但是环境配置是一个麻烦的问题
 
-总有人说，只要执行力强，没有办不到的，但是我们还是需要考虑性价比的，毕竟程序员那些插件，什么chrom_driver啥的真是麻烦，还要匹配版本，还要安装chrom，有没有办法，既不用写什么代码，也不用安装什么chrom，只需要简简单单的让gpt给我写一个代码，我直接拿来用呢
+总有人说，只要执行力强，没有办不到的，但是我们还是需要考虑性价比的，毕竟程序员那些插件，什么`chrom_driver`啥的真是麻烦，还要匹配版本，还要安装chrom，有没有办法，既不用写什么代码，也不用安装什么chrom，只需要简简单单的让gpt给我写一个代码，我直接拿来用呢
 
-方法当然是有的，我今天就是来拯救你的【不过python环境还是必须的】
+方法当然是有的，我今天就是来拯救你的【不过`python`环境还是必须的】
 
 那么我们，action
 
@@ -24,7 +23,7 @@
 
 这一步看起来不聪明，主要是为了读取结构，毕竟我们小白并不懂什么网页结构，也听不懂专业术语，我就给你 我的目标网页，剩下的我就不管了
 
-ctrl+s就可以直接保存该网页文件到本地，这里最好就保存到固定本地某个盘（c/d），方便后面上传
+`ctrl+s`就可以直接保存该网页文件到本地，这里最好就保存到固定本地某个盘（`c/d`），方便后面上传
 
 ![](img/68215eff039a5ea2d01d8efe82b08d40.png)
 
@@ -44,7 +43,7 @@ ctrl+s就可以直接保存该网页文件到本地，这里最好就保存到�
 
 我通过访问如下链接：{目标链接复制过来}   得到了我需要的关键词{aigc}的网页，其内容如文件
 
-我希望你能够通过案例知道爬取的内容结构 并制作一个针对该网页的分页的python爬虫脚本，可以自定义搜索内容，并最终生成一个我给你的例子格式的表格
+我希望你能够通过案例知道爬取的内容结构 并制作一个针对该网页的分页的`python`爬虫脚本，可以自定义搜索内容，并最终生成一个我给你的例子格式的表格
 
 例子如下：
 
@@ -60,11 +59,11 @@ ctrl+s就可以直接保存该网页文件到本地，这里最好就保存到�
 
 要求：
 
-1.使用python和request
+1.使用`python`和`request`
 
-2.网站URL:weixin.sogou.com
+2.网站URL:`weixin.sogou.com`
 
-3.输入关键字 [AIGC]
+3.输入关键字 [`AIGC`]
 
 4.爬取标题、链接、来源，时间
 
@@ -130,49 +129,48 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 def fetch_articles(keyword, pages=2):
-    base_url = &quot;https://weixin.sogou.com/weixin&quot;
+    base_url = "https://weixin.sogou.com/weixin"
     headers = {
-        &#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36&#x27;
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     
     all_articles = []
     
     for page in range(1, pages + 1):
         params = {
-            &#x27;type&#x27;: &#x27;2&#x27;,
-            &#x27;query&#x27;: keyword,
-            &#x27;page&#x27;: page
+            'type': '2',
+            'query': keyword,
+            'page': page
         }
         
         response = requests.get(base_url, params=params, headers=headers)
-        soup = BeautifulSoup(response.text, &#x27;html.parser&#x27;)
+        soup = BeautifulSoup(response.text, 'html.parser')
         
-        articles = soup.find_all(&quot;h3&quot;)
+        articles = soup.find_all("h3")
         
         for article in articles:
             title = article.a.text.strip()
-            link = article.a[&#x27;href&#x27;]
-            details_section = article.find_next_sibling(&#x27;div&#x27;)
-            source = details_section.find(&#x27;span&#x27;, class_=&#x27;all-time-y2&#x27;).text.strip()
-            time_text = details_section.find(&#x27;span&#x27;, class_=&#x27;s2&#x27;).text.strip()
+            link = article.a['href']
+            details_section = article.find_next_sibling('div')
+            source = details_section.find('span', class_='all-time-y2').text.strip()
+            time_text = details_section.find('span', class_='s2').text.strip()
             all_articles.append((title, link, source, time_text))
     
     return all_articles
 
-def save_to_excel(data, filename=&quot;articles.xlsx&quot;):
-    df = pd.DataFrame(data, columns=[&quot;Title&quot;, &quot;Link&quot;, &quot;Source&quot;, &quot;Time&quot;])
+def save_to_excel(data, filename="articles.xlsx"):
+    df = pd.DataFrame(data, columns=["Title", "Link", "Source", "Time"])
     df.to_excel(filename, index=False)
     return filename
 
 # Example usage:
-# articles = fetch_articles(&quot;aigc&quot;, pages=2)
+# articles = fetch_articles("aigc", pages=2)
 # save_to_excel(articles)
-
 ```
 
 不过最后两行执行的代码他给注释掉了，我们记得打开
 
-本地新建一个main.py文件（新建txt改名就行），复制粘贴到里面，win+r输入cmd回车，然后进入对应的目录，比如我的是d盘，直接 d:，然后 python main.py
+本地新建一个`main.py`文件（新建txt改名就行），复制粘贴到里面，`win+r`输入`cmd`回车，然后进入对应的目录，比如我的是d盘，直接 `d:`，然后 `python main.py`
 
 ![](img/655714836f90ca4a47c1c26489fb38c3.png)
 
@@ -208,64 +206,63 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 import re
-import  datetime
+import datetime
 
 def fetch_articles(keyword, pages=3):
-    base_url = &quot;https://weixin.sogou.com/weixin&quot;
+    base_url = "https://weixin.sogou.com/weixin"
     headers = {
-        &#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36&#x27;,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
 
-    
     }
-    
+
     all_articles = []
-    
+
     for page in range(1, pages + 1):
         params = {
-            &#x27;type&#x27;: &#x27;2&#x27;,
-            &#x27;query&#x27;: keyword,
-            &#x27;page&#x27;: page
+            'type': '2',
+            'query': keyword,
+            'page': page
         }
-        
+
         response = requests.get(base_url, params=params, headers=headers)
-        soup = BeautifulSoup(response.text, &#x27;html.parser&#x27;)
-        
-        articles = soup.find_all(&quot;h3&quot;)
-        
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        articles = soup.find_all("h3")
+
         for article in articles:
             title = article.a.text.strip()
-            link = article.a[&#x27;href&#x27;]
-            details_section = article.find_next_sibling(&#x27;div&#x27;)
-            source = details_section.find(&#x27;span&#x27;, class_=&#x27;all-time-y2&#x27;).text.strip()
-            
-            time_script = details_section.find(&#x27;span&#x27;, class_=&#x27;s2&#x27;).script.string
-            timestamp_match = re.search(r&quot;timeConvert\(&#x27;(\d+)&#x27;\)&quot;, time_script)
+            link = article.a['href']
+            details_section = article.find_next_sibling('div')
+            source = details_section.find('span', class_='all-time-y2').text.strip()
+
+            time_script = details_section.find('span', class_='s2').script.string
+            timestamp_match = re.search(r"timeConvert('(\d+)')", time_script)
             if timestamp_match:
                 timestamp = int(timestamp_match.group(1))
-                formatted_time = datetime.datetime.fromtimestamp(timestamp).strftime(&#x27;%Y-%m-%d&#x27;)
+                formatted_time = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
             else:
-                formatted_time = &quot;N/A&quot;
-            
+                formatted_time = "N/A"
+
             all_articles.append((title, link, source, formatted_time))
         time.sleep(3)
     return all_articles
 
-def save_to_excel(data, filename=&quot;articles1.xlsx&quot;):
-    df = pd.DataFrame(data, columns=[&quot;Title&quot;, &quot;Link&quot;, &quot;Source&quot;, &quot;Time&quot;])
+def save_to_excel(data, filename="articles1.xlsx"):
+    df = pd.DataFrame(data, columns=["Title", "Link", "Source", "Time"])
     df.to_excel(filename, index=False)
     return filename
 
 
 # To use the script:
-results_path = save_to_excel(fetch_articles(&quot;AIGC&quot;))
-print(f&quot;Results saved to: {results_path}&quot;)
+results_path = save_to_excel(fetch_articles("AIGC"))
+print(f"Results saved to: {results_path}")
 ```
 
 #### 感谢
 
 该文章借鉴了圈友@毅鸣的部分思路，但是做了完善，原文如下
 
-https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=188514455288512
+`https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=188514455288512`
 
 如果对本文的那部分有困惑，可以直接评论区问我，我会针对问题对内容进行修改
 
@@ -273,4 +270,4 @@ https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=18851445528
 
 gpt对话分享【直接查看此前我的对话】
 
-https://chat.openai.com/share/bcd80563-ee70-41e4-94e7-5223d0a5f489
+`https://chat.openai.com/share/bcd80563-ee70-41e4-94e7-5223d0a5f489`

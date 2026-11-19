@@ -1,8 +1,9 @@
+
 # 建筑+Nano Banana，超多提示词分享
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/Ma39dxQXYozM8mxOuapc6hhwnve](https://xatc0v8uz5m.feishu.cn/docx/Ma39dxQXYozM8mxOuapc6hhwnve)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/QLHipm-0juawS5vGwfGrYA)q.com/s/QLHipm-0...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/QLHipm-0juawS5vGwfGrYA)q.com/s/QLHipm-0...
 
 > ⏰ 剪存时间：2025-11-18 22:00:17 (UTC+8)
 
@@ -22,15 +23,15 @@
 
 工具还是之前的，话不多说，咱们直接上链接
 
-https://www.concetto.cn/render/
+`https://www.concetto.cn/render/`
 
 ![](img/99fa2dd235a5f878a62e65aa4a7520d2.png)
 
 几天不见，还多了很多模版哦~，咱们结合这波更新，再给大家看看我又搞出了哪些有趣的提示词
 
-# **实战用法**
+## 实战用法
 
-**转绘水彩风格**
+### 转绘水彩风格
 
 让咱一下梦回当年拿着A1画板去水房裱纸的时代
 
@@ -48,7 +49,7 @@ https://www.concetto.cn/render/
 
 也不知道现在的小朋友们还用不用水彩做渲染了……
 
-**现场写生版**
+### 现场写生版
 
 如果你想让你的手绘草稿，既真实又保留手绘的味道，那么就试试这个现场写生版吧
 
@@ -66,9 +67,9 @@ https://www.concetto.cn/render/
 
 这写生效果能不能唬人
 
-**户型平面转模型**
+### 户型平面转模型
 
-**当年咱们也是这么一点**点做模型做出来的， 诶，谁看见我U胶了 。
+当年咱们也是这么一点点做模型做出来的， 诶，谁看见我U胶了 。
 
 原图：
 
@@ -82,7 +83,7 @@ https://www.concetto.cn/render/
 
 ![](img/a1e068d9236b441b98ebe6316280b0a9.png)
 
-**彩平转鸟瞰**
+### 彩平转鸟瞰
 
 直接生产力再跃迁，上一个台阶
 
@@ -98,19 +99,17 @@ https://www.concetto.cn/render/
 
 ![](img/cb430fd7a04d893203ff2104238a5525.png)
 
-**室内爆改**
+### 室内爆改
 
 毛坯房拯救者，家居博主的最爱
 
 原图：
-
 
 提示词：
 
 保持原图视角和墙体结构，生成室内真实渲染图，画面主体为客厅，右侧一角为卧室。进行合理的室内家具布置与材质搭配，为室内天花板、墙面、地板赋予材质，整体呈现现代轻奢风格。房间内外均进行真实感渲染。左侧为沙发，右侧墙面有电视，淡色原木地板，材质质感逼真，光线自然。整体画面呈现出专业建筑摄影的光线效果，具备4K超高清分辨率的图像细节。
 
 结果：
-
 
 然后再这张图的基础上，咱们再来个AR加持，让科技感瞬间拉满
 
@@ -122,7 +121,7 @@ https://www.concetto.cn/render/
 
 ![](img/a504b603f041e1cc6cde9cedd2e98f3f.png)
 
-**外立面改造**
+### 外立面改造
 
 咱们爆改完室内，再爆改一轮室外。这种带有反差的爆改非常有流量的哈哈哈
 
@@ -137,6 +136,8 @@ https://www.concetto.cn/render/
 结果：
 
 ![](img/4b8a24051df32305693ff733b103a593.png)
+
+### CONCETTO 后期编辑
 
 如果结合 CONCETTO 的一些后期编辑能力，会有更好的体验和结果。
 
@@ -154,7 +155,7 @@ https://www.concetto.cn/render/
 
 工具地址：
 
-https://www.concetto.cn/render
+`https://www.concetto.cn/render`
 
 大家玩的愉快
 

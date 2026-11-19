@@ -1,10 +1,11 @@
+
 # 20250816-简单2步，轻松做出炫酷裸眼3D效果 | 附提示词
 
 > 来源：[https://aigcreative.feishu.cn/docx/RJ9jdIZQDoiX4Xx1ZHBcuJ8Snph](https://aigcreative.feishu.cn/docx/RJ9jdIZQDoiX4Xx1ZHBcuJ8Snph)
 
 最近，一位名叫@aziz4ai 的博主在X（原推特）上发布了一组让人眼前一亮的创意。
 
-他提出了一个“**Scr**eenbreak Sorcery”概念，简单来说就是让手机屏幕不再仅仅是一个显示器，而是变成一个“传送门”，让产品仿佛从屏幕中“跳”出来，营造出一种逼真的裸眼3D的效果。
+他提出了一个“Screenbreak Sorcery”概念，简单来说就是让手机屏幕不再仅仅是一个显示器，而是变成一个“传送门”，让产品仿佛从屏幕中“跳”出来，营造出一种逼真的裸眼3D的效果。
 
 这种创意不仅炫酷，还让人开始思考：未来广告可能会彻底改变模样。
 
@@ -18,7 +19,7 @@
 
 [X2Twitter.com_rCpB586ZGTe5setl_1168p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MrIibHP0doJZ9KxOukCcyN0Mnce)
 
-一一瓶红牛功能饮料“冲”出屏幕，旁边写着“BOOST POWER，BREAK LIMITS”。
+一瓶红牛功能饮料“冲”出屏幕，旁边写着“BOOST POWER，BREAK LIMITS”。
 
 ![](img/7423986af75cc7e1614ee5a12ef9dbcc.png)
 
@@ -40,7 +41,9 @@ AR技术近年来在营销中逐渐崭露头角，尤其是像Burger King那样�
 
 整个过程很简单，主要分两步：
 
-第一步，使用ChatGPT生成图片：替换掉提示词中， "product": "[Enter product name]", [ ]中的产品名即可。
+## 第一步：使用ChatGPT生成图片
+
+替换掉提示词中，`"product": "[Enter product name]", [ ]`中的产品名即可。
 
 ```
 IMPORTANT: ONLY CHANGE THE PRODUCT NAME IN THE JSON 
@@ -132,7 +135,9 @@ IMPORTANT: ONLY CHANGE THE PRODUCT NAME IN THE JSON
 
 ![](img/1c55bb6ead60fcb9acc8ab269229035d.png)
 
-第二步：使用Midjourney的图生视频功能即可。直接使用下面的提示词：
+## 第二步：使用Midjourney生成视频
+
+直接使用下面的提示词：
 
 > hyper-realistic AR animation where any subject appears magically trapped inside the phone screen, fixed in perfect position no matter how the phone is rotated, ultra-detailed lighting and shadows matching real-world environment, surrounded by bold premium 3D text of exactly four impactful words orbiting fluidly around the phone, text casting realistic shadows and reflections onto the phone edges, seamless parallax between subject, text, and background, subtle floating particle effects and soft atmospheric glow for depth, ultra-smooth motion at high frame rate, delivering a jaw-dropping pop-out illusion as if breaking the barrier between screen and realit
 
@@ -144,6 +149,8 @@ IMPORTANT: ONLY CHANGE THE PRODUCT NAME IN THE JSON
 
 [0_1080_N.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BHHybSbT0oAxS4xo33WcpgsKnbd)
 
+## 总结
+
 整体实践下来，非常的简单，轻松，ChatGPT提供了复杂的提示词设计能力，Midjourney等AI视频工具则能够生成高质量的图像动画or视频，两者的结合，让这个“裸眼3D”的创意成为了可能。
 
 这种趋势也与近年来AR营销的兴起不谋而合。
@@ -151,6 +158,8 @@ IMPORTANT: ONLY CHANGE THE PRODUCT NAME IN THE JSON
 研究表明，AR广告能够显著提高消费者参与度和品牌记忆率，尤其是在年轻人群体中，这种互动式体验更容易引发共鸣。
 
 ![](img/1b7801cfceb1799ae69ff3c0d8936593.png)
+
+
 
 [X2Twitter.com_KlBfkSqsQ_FIdQlS_1168p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BNuabwCphodiK1xuLiNcBkn0nvg)
 

@@ -1,16 +1,17 @@
+
 # 奇绩大模型日报（5月 20日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/BvWMd2ExooStzOx4Un7c8cQynTd](https://miracleplus.feishu.cn/docx/BvWMd2ExooStzOx4Un7c8cQynTd)
 
-# 推特
+## 推特
 
 ### 从零实现llama3的代码库：所有层次的仔细解析
 
-https://x.com/naklecha/status/1792244347225641338
+`https://x.com/naklecha/status/1792244347225641338`
 
 今天，我很高兴发布一个从零实现llama3的代码库——从多头注意力的每一次矩阵乘法、位置编码到每一层之间的所有层次都进行了仔细的解析和解释。祝你玩得开心 :)
 
-https://github.com/naklecha/llama3-from-scratch
+`https://github.com/naklecha/llama3-from-scratch`
 
 从零实现llama3
 
@@ -20,7 +21,7 @@ https://github.com/naklecha/llama3-from-scratch
 
 ### Ethan Mollick：为了在工作中有效地使用人工智能，领导者和员工需要反思他们的工作对他人和对自己的意义
 
-https://x.com/emollick/status/1792302281737596930
+`https://x.com/emollick/status/1792302281737596930`
 
 “为了在工作中有效地使用人工智能，领导者和员工需要反思他们的工作对他人和对自己的意义。”
 
@@ -38,33 +39,27 @@ https://x.com/emollick/status/1792302281737596930
 
 ### Json Wei谈Scaling Laws论文：在单一模型家族中，通常模型的大小不多，这会影响预测能力
 
-https://x.com/_jasonwei/status/1792401639552565496
+`https://x.com/_jasonwei/status/1792401639552565496`
 
-[很喜欢这项关于预测语言模型性能的极其全面的研究 Observational S](http://arxiv.org/abs/2405.10938)caling Laws and the Predictability of Language Model Performance。发现了许多有见地的要点：
+[很喜欢这项关于预测语言模型性能的极其全面的研究 Observational Scaling Laws and the Predictability of Language Model Performance](http://arxiv.org/abs/2405.10938)。发现了许多有见地的要点：
 
-+   在单一模型家族中，通常模型的大小不多，这会影响预测能力。然而，有许多模型家族。如果你能以某种方式标准化模型家族之间的差异，所有数据都可以在同一个图上，从而得到更好的分辨率。
-
-+   不同基准测试的性能高度相关，也许某些关键能力（自然语言理解、推理、编码）可以预测许多下游任务的表现。
-
-+   将横轴从计算量改为“f等效FLOPs”，即参考模型家族匹配某个模型能力所需的计算量。
-
-+   事实证明，这比单纯使用计算量具有更好的预测能力。这个截图中的图表令人印象深刻；你可以用蓝点来预测红点。
-
-+   很酷的是，他们正在预注册他们的预测，并将在几个月内更新草稿。很有趣，看看他们是否能预测最大的Llama 3的性能。
-
-+   我非常好奇：我们能把蓝点推到多远的左边，还能预测红点？蓝点经常逐渐靠近拐点。如果你能用小一个数量级的模型预测拐点，那将是非常酷的。
-
-+   有一点我没有完全理解，那就是观察缩放律的x轴点的计算是否需要“大模型”在“核心能力”上的表现。从图3来看，他们似乎确实使用了大模型的评估性能？
++ 在单一模型家族中，通常模型的大小不多，这会影响预测能力。然而，有许多模型家族。如果你能以某种方式标准化模型家族之间的差异，所有数据都可以在同一个图上，从而得到更好的分辨率。
++ 不同基准测试的性能高度相关，也许某些关键能力（自然语言理解、推理、编码）可以预测许多下游任务的表现。
++ 将横轴从计算量改为“f等效FLOPs”，即参考模型家族匹配某个模型能力所需的计算量。
++ 事实证明，这比单纯使用计算量具有更好的预测能力。这个截图中的图表令人印象深刻；你可以用蓝点来预测红点。
++ 很酷的是，他们正在预注册他们的预测，并将在几个月内更新草稿。很有趣，看看他们是否能预测最大的Llama 3的性能。
++ 我非常好奇：我们能把蓝点推到多远的左边，还能预测红点？蓝点经常逐渐靠近拐点。如果你能用小一个数量级的模型预测拐点，那将是非常酷的。
++ 有一点我没有完全理解，那就是观察缩放律的x轴点的计算是否需要“大模型”在“核心能力”上的表现。从图3来看，他们似乎确实使用了大模型的评估性能？
 
 ![](img/4e39ac0852c94b0dc8ace0cd5724ece7.png)
 
 ### Mervin Praison根据Karpathy分享完成视频：GPT-4o从零开始构建LLM操作系统
 
-https://x.com/MervinPraison/status/1792258982645563874
+`https://x.com/MervinPraison/status/1792258982645563874`
 
-GPT-4o：从零开始构建LLM操作系统  Karpathy
+GPT-4o：从零开始构建LLM操作系统 Karpathy
 
-使用 -  phidata
+使用 - phidata
 
 🔧 创建AI操作系统
 
@@ -72,21 +67,21 @@ GPT-4o：从零开始构建LLM操作系统  Karpathy
 
 👥 多智能体创建
 
-📚 知识库  pgvector
+📚 知识库 pgvector
 
-🌐 网页浏览  ExaAILabs, DuckDuckGo
+🌐 网页浏览 ExaAILabs, DuckDuckGo
 
 🛠️ 工具
 
-订阅：https://youtube.com/@MervinPraison
+订阅：`https://youtube.com/@MervinPraison`
 
-YouTube: https://youtube.com/watch?v=GEQTooW02-E
+YouTube: `https://youtube.com/watch?v=GEQTooW02-E`
 
 ![](img/f94eba5888e9b4cfc4b3fde5a4ca20b1.png)
 
 ### Devon：GPT-4o和Claude的配对编程，在本周完全本地化
 
-https://x.com/akiradev0x/status/1792246200172953701
+`https://x.com/akiradev0x/status/1792246200172953701`
 
 新版本的Devon已上线！
 
@@ -104,7 +99,7 @@ GPT-4o正在创建一个新工具，Claude正在编写测试。
 
 ### Rowan Cheung分享ChatGPT Mac应用使用视频：终极截图转代码工具
 
-https://x.com/rowancheung/status/1792234214890336581
+`https://x.com/rowancheung/status/1792234214890336581`
 
 ChatGPT Mac应用是终极截图转代码工具。
 
@@ -116,11 +111,11 @@ ChatGPT Mac应用是终极截图转代码工具。
 
 [Bu43n2UiMy8qBxHa.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nvv1beb1qoxPdlxtqVWc0Hhanbb)
 
-# 资讯
+## 资讯
 
 ### 首个GPU高级语言，大规模并行就像写Python，已获8500 Star
 
-https://mp.weixin.qq.com/s/dC7Z5Rk05sM7ND7bYUsrZA
+`https://mp.weixin.qq.com/s/dC7Z5Rk05sM7ND7bYUsrZA`
 
 经过近 10 年的不懈努力，对计算机科学核心的深入研究，人们终于实现了一个梦想：在 GPU 上运行高级语言。上周末，一种名为 Bend 的编程语言在开源社区引发了热烈的讨论，GitHub 的 Star 量已经超过了 8500。作为一种大规模并行的高级编程语言，它仍处于研究阶段，但提出的思路已经让人们感到非常惊讶。使用 Bend，你可以为多核 CPU/GPU 编写并行代码，而无需成为具有 10 年经验的 C/CUDA 专家，感觉就像 Python 一样！
 
@@ -128,7 +123,7 @@ https://mp.weixin.qq.com/s/dC7Z5Rk05sM7ND7bYUsrZA
 
 ### 数据更多更好还是质量更高更好？这项研究能帮你做出选择
 
-https://mp.weixin.qq.com/s/EvPCCw7OAB-1wdSTmykJLQ
+`https://mp.weixin.qq.com/s/EvPCCw7OAB-1wdSTmykJLQ`
 
 对基础模型进行 scaling 是指使用更多数据、计算和参数进行预训练，简单来说就是「规模扩展」。虽然直接扩展模型规模看起来简单粗暴，但也确实为机器学习社区带来了不少表现卓越的模型。之前不少研究都认可扩大神经模型规模的做法，所谓量变引起质变，这种观点也被称为神经扩展律（neural scaling laws）。近段时间，又有不少人认为「数据」才是那些当前最佳的闭源模型的关键，不管是 LLM、VLM 还是扩散模型。随着数据质量的重要性得到认可，已经涌现出了不少旨在提升数据质量的研究：要么是从大型语料库中过滤出高质量数据，要么是生成高质量的新数据。但是，过去的扩展律一般是将「数据」视为一个同质实体，并未将近期人们关注的「数据质量」作为一个考量维度。尽管网络上的数据规模庞大，但高质量数据（基于多个评估指标）通常很有限。现在，开创性的研究来了 —— 数据过滤维度上的扩展律！它来自卡内基梅隆大学和 Bosch Center for AI，其中尤其关注了「大规模」与「高质量」之间的数量 - 质量权衡（🐧T）。
 
@@ -136,15 +131,15 @@ https://mp.weixin.qq.com/s/EvPCCw7OAB-1wdSTmykJLQ
 
 ### 消息称苹果首席运营官威廉姆斯访问台积电，探讨 AI 芯片开发
 
-https://www.ithome.com/0/769/190.htm
+`https://www.ithome.com/0/769/190.htm`
 
-台**媒《经济日报》消息，**苹果公司首席运营官杰夫**・威廉姆斯（Jeff** Williams）低调拜访台积电，台积电总裁魏哲家亲自接待。双方主要讨论了苹果自研 AI 芯片的开发，以及台积电使用先进制程技术生产芯片等事宜。
+台媒《经济日报》消息，苹果公司首席运营官杰夫・威廉姆斯（Jeff Williams）低调拜访台积电，台积电总裁魏哲家亲自接待。双方主要讨论了苹果自研 AI 芯片的开发，以及台积电使用先进制程技术生产芯片等事宜。
 
 ![](img/6a1c1a339bc246bdf3cdf19d4f25c7ba.png)
 
 ### 科学家提出新型智能体，距离实现全过程自主化更近一步
 
-https://mp.weixin.qq.com/s/MqoHxFPsT_cVDB7go7CODg
+`https://mp.weixin.qq.com/s/MqoHxFPsT_cVDB7go7CODg`
 
 去年，以 ChatGPT 为代表的大语言模型，成为整个 AI 领域的“游戏规则改变者”。其中，尤其令人惊艳的是它们在文本场景理解、文本生成和代码生成等方面的通用能力。与此同时，该领域的科学家们发现能够利用这些基础模型与外部世界交互，让它们自主地完成一些与人类真实生活接近的特定任务。比如，帮助人们网购；在一个由文本描述的室内环境中找到并移动某些物品等。而这种能够自主完成任务的主体，就叫做智能体（Agent）。目前，为训练智能体以提高其性能，研究人员致力于将多步推理和动作轨迹作为训练数据。但是，无论是通过人工注释，还是实现不同的提示框架，收集上述轨迹都需要耗费大量人力。为此，近期，来自清华大学的研究团队，提出一种名为 ActRe 的智能体，来帮助智能体实现数据收集和自我进化的全过程自主。作为一种新型智能体，ActRe 与 ReAct 这种广为人知的智能体不同，后者遵循“推理后行动”（reason-then-act）的规则，前者则属于“行动后推理”（act-then-reason）的范畴。也就是说，ActRe 将 ReAct 里面文字推理和动作执行的因果性进行了反转，以实现对给定任意的动作进行文字原因的描述。
 
@@ -152,19 +147,19 @@ https://mp.weixin.qq.com/s/MqoHxFPsT_cVDB7go7CODg
 
 ### 让大模型理解手机屏幕，苹果多模态Ferret-UI用自然语言操控手机
 
-https://mp.weixin.qq.com/s/GPsnp51OaCO0MCRlXTDObQ
+`https://mp.weixin.qq.com/s/GPsnp51OaCO0MCRlXTDObQ`
 
 移动应用已经成为我们日常生活的一大重要组成部分。使用移动应用时，我们通常是用眼睛看，用手执行对应操作。如果能将这个感知和交互过程自动化，用户也许能获得更加轻松的使用体验。此外，这还能助益手机辅助功能、多步 UI 导航、应用测试、可用性研究等。为了在用户界面内实现感知和交互的无缝自动化，就需要一个复杂的系统，其需要具备一系列关键能力。这样一个系统不仅要能完全理解屏幕内容，还要能关注屏幕内的特定 UI 元素。以视觉理解为基础，它应当有能力进一步将自然语言指令映射到给定 UI 内对应的动作、执行高级推理并提供其交互的屏幕的详细信息。为了满足这些要求，必须开发出能在 UI 屏幕中确定相关元素位置并加以引述的视觉 - 语言模型。其中，确定相关元素位置这一任务通常被称为 grounding，这里我们将其译为「定基」，取确定参考基准之意；而引述（referring）是指有能力利用屏幕中特定区域的图像信息。多模态大型语言模型（MLLM）为这一方向的发展带来了新的可能性。近日，苹果公司一个团队提出了 Ferret-UI。
 
 ![](img/eaf4cd34a8ae8f0a1fa1f8fa070bef30.png)
 
-# 论文
+## 论文
 
 ### INDUS：适用于科学应用的有效和高效语言模型
 
 贡献人：
 
-链接：http://arxiv.org/abs/2405.10725v1
+链接：`http://arxiv.org/abs/2405.10725v1`
 
 大语言模型（LLMs）训练在一般领域语料上显示出在自然语言处理（NLP）任务中显著的结果。然而，先前的研究表明，使用面向领域的语料训练的LLMs在专门任务上表现更好。受到这个关键洞见的启发，我们开发了INDUS，一套专门针对地球科学、生物学、物理学、日暈物理学、行星科学和天体物理学领域定制的LLMs套件，并使用从不同数据来源获取的策划科学语料库进行训练。我们的模型在这些新任务以及感兴趣领域现有基准任务上均表现出胜过通用型编码器（RoBERTa）和现有领域专用编码器（SciBERT）的结果。
 
@@ -174,19 +169,19 @@ https://mp.weixin.qq.com/s/GPsnp51OaCO0MCRlXTDObQ
 
 贡献人：
 
-链接：http://arxiv.org/abs/2405.10938v1
+链接：`http://arxiv.org/abs/2405.10938v1`
 
 理解语言模型的性能如何随规模变化是评估和算法开发的关键。尺度定律是构建这种理解的一种方法，但需要跨越许多不同规模训练模型的要求限制了它们的使用。我们提出了一种替代的观测方法，绕过模型训练，而是从大约80个公开可用的模型中建立尺度定律。从不同模型家族构建单一尺度定律具有挑战性，因为它们的训练计算效率和能力存在很大的变化。然而，我们展示了这些变化与一个简单的泛化尺度定律一致，其中语言模型性能是一个低维能力空间的函数，而模型家族只是在将训练计算转换为能力方面的效率不同。使用这种方法，我们展示了复杂尺度现象的惊人可预测性：我们表明一些涌现现象遵循平滑的S形行为，并可以从小模型中预测；我们展示了诸如GPT-4等模型的智能体性能可以从更简单的非智能体基准精确预测；我们展示了如何预测在后训练干预（如Thought链和自一致性）的影响，随着语言模型能力的持续改善。
 
 ![](img/1354abded77f809eec8741228992583b.png)
 
-### **轻量化注意力：面向硬件的可扩展注意力机**制，适用于Transformer解码阶段
+### 轻量化注意力：面向硬件的可扩展注意力机制，适用于Transformer解码阶段
 
 贡献人：
 
-链接：http://arxiv.org/abs/2405.10480v1
+链接：`http://arxiv.org/abs/2405.10480v1`
 
-基于Transformer的模型已经成为自然语言处理、自然语言生成和图像生成中最广泛使用的架构之一。当前最先进模型的规模不断增加，达到数十亿参数。这些巨大模型对内存需求高，并且即使在最先进的AI加速器（如GPU）上，也会产生明显的推理延迟。为了满足依赖于这些大型模型的应用程序对低延迟的需求，提出了许多优化方法，如键值张量缓存和FlashAttention计算。然而，这些技术不能满足推理期间不同阶段的计算性质差异。因此，我们提出了LeanAttention，一种用于解码器专用Transformer模型的标记生成阶段（解码阶段）的可伸缩自注意力计算技术。LeanAttention通过重新设计解码阶段的执行流程，实现了对长上下文长度的注意力机制进行扩展。我们发现在线softmax的结合性质可以被视为一个约简操作，从而使我们能够在这些大上下文长度上并行计算注意力。我们将平铺计算的“流式K”式约简扩展到自注意力，实现并行计算，使平均注意力执行速度比FlashAttention-2提升2.6倍，对于512k上下文长度可高达8.33倍的加速。
+基于`Transformer`的模型已经成为自然语言处理、自然语言生成和图像生成中最广泛使用的架构之一。当前最先进模型的规模不断增加，达到数十亿参数。这些巨大模型对内存需求高，并且即使在最先进的AI加速器（如GPU）上，也会产生明显的推理延迟。为了满足依赖于这些大型模型的应用程序对低延迟的需求，提出了许多优化方法，如键值张量缓存和`FlashAttention`计算。然而，这些技术不能满足推理期间不同阶段的计算性质差异。因此，我们提出了`LeanAttention`，一种用于解码器专用`Transformer`模型的标记生成阶段（解码阶段）的可伸缩自注意力计算技术。`LeanAttention`通过重新设计解码阶段的执行流程，实现了对长上下文长度的注意力机制进行扩展。我们发现在线`softmax`的结合性质可以被视为一个约简操作，从而使我们能够在这些大上下文长度上并行计算注意力。我们将平铺计算的“流式K”式约简扩展到自注意力，实现并行计算，使平均注意力执行速度比`FlashAttention-2`提升2.6倍，对于512k上下文长度可高达8.33倍的加速。
 
 ![](img/d018884aefc6140bad31147b9f291e0d.png)
 
@@ -194,9 +189,9 @@ https://mp.weixin.qq.com/s/GPsnp51OaCO0MCRlXTDObQ
 
 贡献人：
 
-链接：http://arxiv.org/abs/2405.10738v1
+链接：`http://arxiv.org/abs/2405.10738v1`
 
-在上下文学习（ICL）中推广了利用多个演示来促进LLM能力的范式已经成为在下游任务中刺激LLM能力的普遍做法。由于上下文长度限制，尽管有更多的训练数据，也无法进一步改进，并且ICL中直接来自LLM的通用特征对特定下游任务不具适应性。本文提出了一种特征自适应且数据可扩展的上下文学习框架（FADS-ICL），可以利用任务自适应特征来促进在下游任务上的推理，监督超出上下文样本。具体地，它首先通过带有ICL输入形式的LLM逐一提取超出上下文样本的通用特征，然后引入一个任务特定的调制器，在拟合特定下游任务后执行特征细化和预测。我们在不同数据设置（4~128 shots）和LLM规模（0.8~70B）设置下对FADS-ICL进行了广泛实验。实验结果显示，在所有设置下，FADS-ICL始终显著优于先前的最新方法，验证了FADS-ICL的有效性和优越性。例如，在1.5B和32 shots设置下，FADS-ICL可以在10个数据集上通过特征自适应实现 \textbf{+14.3} 平均准确率，比普通ICL提高 \textbf{+6.2} 平均准确率和优于先前最新方法，而且随着训练数据的增加性能还可以进一步提高。
+在上下文学习（ICL）中推广了利用多个演示来促进LLM能力的范式已经成为在下游任务中刺激LLM能力的普遍做法。由于上下文长度限制，尽管有更多的训练数据，也无法进一步改进，并且ICL中直接来自LLM的通用特征对特定下游任务不具适应性。本文提出了一种特征自适应且数据可扩展的上下文学习框架（FADS-ICL），可以利用任务自适应特征来促进在下游任务上的推理，监督超出上下文样本。具体地，它首先通过带有ICL输入形式的LLM逐一提取超出上下文样本的通用特征，然后引入一个任务特定的调制器，在拟合特定下游任务后执行特征细化和预测。我们在不同数据设置（4~128 shots）和LLM规模（0.8~70B）设置下对FADS-ICL进行了广泛实验。实验结果显示，在所有设置下，FADS-ICL始终显著优于先前的最新方法，验证了FADS-ICL的有效性和优越性。例如，在1.5B和32 shots设置下，FADS-ICL可以在10个数据集上通过特征自适应实现 +14.3 平均准确率，比普通ICL提高 +6.2 平均准确率和优于先前最新方法，而且随着训练数据的增加性能还可以进一步提高。
 
 ![](img/e4723c2beb85792958be03e69b85a4ce.png)
 
@@ -204,17 +199,19 @@ https://mp.weixin.qq.com/s/GPsnp51OaCO0MCRlXTDObQ
 
 贡献人：
 
-链接：http://arxiv.org/abs/2405.10548v1
+链接：`http://arxiv.org/abs/2405.10548v1`
+
+
 
 大语言模型（LLMs）以其在上下文学习（ICL）方面的卓越能力改变了自然语言处理。基于LLMs的自动助手越来越受欢迎；然而，使它们适应新任务仍然具有挑战性。虽然巨大的模型在零-shot表现上表现出色，但它们的计算需求限制了广泛应用，较小的语言模型在没有上下文的情况下表现不佳。本文研究了LLMs是否能够从预定义任务的标记示例中泛化到新任务。取材于生物神经元和Transformer架构的机械解释，我们探索了任务间信息共享的潜力。我们设计了一个跨任务提示设置，在三个LLM上展示，LLMs在没有来自目标任务的示例的情况下取得了显著的性能改善。跨任务提示使LLMs的性能显著提升，对LLaMA-27B为107%，对LLaMA-213B为18.6%，对GPT 3.5平均为3.2%，高于零-shot提示，并与标准上下文学习相媲美。我们证明了为任务内示例生成伪标签的有效性，分析揭示了任务间示例的效果与模型在源和目标输入token中激活相似性之间存在强相关性。这篇论文首次探索了LLMs基于不同任务示例的上下文信号解决新任务的能力。
 
 ![](img/6562b13fc6f4e2a99e56aa4bed2ade7b.png)
 
-### UniCL：一个用于大型时间序列模型的通用对比学习框架
+# UniCL：一个用于大型时间序列模型的通用对比学习框架
 
 贡献人：
 
-链接：http://arxiv.org/abs/2405.10597v1
+`http://arxiv.org/abs/2405.10597v1`
 
 时间序列分析在各种关键应用中起着关键作用，从金融到医疗保健，涉及预测和分类等各种任务。传统的监督学习方法为处理时间序列数据的固有复杂性（如高维度和噪声）通常需为每个任务对时间序列数据标注大量标签，这在现实应用中成本高且不切实际。相比之下，预训练的基础模型通过利用无标签数据捕捉一般性时间序列模式，为特定任务进行微调提供了一种有前途的替代方法。然而，现有的预训练方法通常由于使用预定义和刚性增强操作以及领域特定数据训练而受到高偏见和低泛化问题的困扰。为了克服这些限制，本文介绍了UniCL，这是一个通用且可扩展的对比学习框架，专为在跨领域数据集上预训练时间序列基础模型而设计。通过利用频谱信息提出了统一且可训练的时间序列增强操作生成保留模式、多样化且低偏见的时间序列数据。此外，我们引入了一种可扩展的增强算法，能够处理长度不同的数据集，促进跨领域预训练。在两个基准数据集上进行的广泛实验验证了UniCL的有效性，展示了其在各个领域的时间序列分析中的高泛化能力。
 
@@ -222,21 +219,21 @@ https://mp.weixin.qq.com/s/GPsnp51OaCO0MCRlXTDObQ
 
 # 产品
 
-### ChatPlayground AI
+## ChatPlayground AI
 
 贡献人：
 
-https://www.chatplayground.ai/
+`https://www.chatplayground.ai/`
 
 ChatPlayground AI 是一个综合了 10 个大型 AI 聊天机器人的平台，让用户可以与这些聊天机器人互动并选择最佳的输出。创始人通过在 UC Berkeley 进行的研究发现，每个聊天机器人都有自己的优势，同时使用多个聊天机器人可以提高 73% 获得更好结果的可能性。ChatPlayground AI 将这些聊天机器人整合到一个平台上，并提供了 6 个额外的功能，价格与使用单一高级版大语言模型的费用相当。
 
 ![](img/67e83dbf52687a68306199999104786a.png)
 
-### User Evaluation AI—— 用户访谈 Agent
+## User Evaluation AI—— 用户访谈 Agent
 
 贡献人：
 
-https://www.userevaluation.com/ai-curated-interviews
+`https://www.userevaluation.com/ai-curated-interviews`
 
 User Evaluation 的 AI Sidekick 是一款突破性的 AI 代理，可以代替人工进行深入的用户访谈，并自动生成访谈音频、文字记录和详细摘要，从而帮助创业公司、产品经理和 UX 设计师等人快速获得可靠的用户体验反馈。该平台还能整合分析多个访谈记录，提供新鲜有价值的研究见解，大幅提高定性研究的效率和洞察力，为客户的决策提供更好的支撑。
 
@@ -244,31 +241,31 @@ User Evaluation 的 AI Sidekick 是一款突破性的 AI 代理，可以代替�
 
 # HuggingFace&Github
 
-### Farfalle
+## Farfalle
 
 贡献人：
 
-https://github.com/rashadphz/farfalle
+`https://github.com/rashadphz/farfalle`
 
 Farfalle 是一个开源的 AI 驱动的搜索引擎项目，用户可以运行本地的 LLM 模型(如 llama3、gemma、mistral)或使用云端模型(如 Groq/Llama3、OpenAI/gpt4-o)来进行搜索和问答。该项目采用了 Next.js、FastAPI 等前后端技术栈，支持本地部署和云端部署，为用户提供了一个灵活的 AI 搜索解决方案。
 
 ![](img/1614db93bf2e787c6b8165c1ec5fbdf5.png)
 
-### Verba
+## Verba
 
 贡献人：
 
-https://github.com/weaviate/Verba
+`https://github.com/weaviate/Verba`
 
-Verba 是一个开源的 Retrieval-Augmented Generation (RAG)应用程序，提供了一个端到端的、简单易用的界面，让用户可以轻松地探索和处理数据。它支持多种语言模型、数据类型和 RAG 功能，如混合搜索、语义缓存等。Verba 可以通过多种方式部署，包括 pip 安装、从源码构建，以及使用 Docker。它还提供可定制的前端界面。
+Verba 是一个开源的 Retrieval-Augmented Generation (RAG)应用程序，提供了一个端到端的、简单易用的界面，让用户可以轻松地探索和处理数据。它支持多种语言模型、数据类型和 RAG 功能，如混合搜索、语义缓存等。Verba 可以通过多种方式部署，包括 `pip` 安装、从源码构建，以及使用 Docker。它还提供可定制的前端界面。
 
 ![](img/7b9293eabc5c0f62ecf8513260c6f92d.png)
 
-### MarkLLM
+## MarkLLM
 
 贡献人：
 
-https://github.com/THU-BPM/MarkLLM
+`https://github.com/THU-BPM/MarkLLM`
 
 MarkLLM 是一个开源的工具包，旨在促进大型语言模型 (LLMs) 中 Watermark 技术的研究和应用。它提供了一个统一可扩展的实现框架，支持来自不同家族的多种 Watermark 算法。此外，MarkLLM 还包含可视化工具，帮助用户更好地理解算法机制，以及全面的评估模块，涵盖可检测性、鲁棒性和对文本质量的影响等方面。
 
@@ -280,65 +277,65 @@ MarkLLM 是一个开源的工具包，旨在促进大型语言模型 (LLMs) 中 
 
 # 学习
 
-### 压缩下一个 token 通向超过人类的智能
+## 压缩下一个 token 通向超过人类的智能
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/619511222?utm_psn=1775797245264453632
+`https://zhuanlan.zhihu.com/p/619511222?utm_psn=1775797245264453632`
 
 文章首先介绍了 OpenAI 在机器学习领域的研究方向，即通过优化对未来观察的无损传输的压缩大小，以达到超过人类智能的目标。作者通过分析和讨论，提出了无损压缩在智能实现中的重要性，并详细描述了模型训练的无损压缩解释，包括基于神经网络的压缩方法，以及如何通过共享的概率分布来编码和解码 token。文章进一步探讨了传输代价的计算，并提出了一种基于二分查找的编码方法，该方法能够显著降低传输的数据量。作者还对压缩率的极限、模型训练过程与无损压缩的关系、weights 的表示以及压缩与智能的关系进行了深入分析。最后，文章对未来的发展进行了展望，包括压缩在科学研究中的应用、人工智能的控制问题，以及压缩在密码学中的潜在应用。
 
 ![](img/ee18b64769a45a6caeb501bddbd4341e.png)
 
-### DistServe速读——Prefill & Decode解耦、模型并行策略&GPU资源分配解耦
+## DistServe速读——Prefill & Decode解耦、模型并行策略&GPU资源分配解耦
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/698341542?utm_psn=1775797074639896576
+`https://zhuanlan.zhihu.com/p/698341542?utm_psn=1775797074639896576`
 
 DistServe 项目通过对 LLM 推理服务的 Prefill 和 Decode 阶段进行解耦，优化了模型并行策略和 GPU 资源分配，以提高 Goodput。Prefill 阶段主要关注首 token 延时（TTFT），Decode 阶段关注每个 token 的生成延时（TPOT）。文章指出，现有服务架构将两阶段合并处理，导致性能互相干扰，无法满足不同应用的 SLO 要求。DistServe 通过分离架构，实现了针对性的 GPU 分配和模型并行策略选择，如采用 Tensor Parallelism（TP）提高 TTFT，Pipeline Parallelism（PP）提高吞吐。实验结果显示，相比传统 LLM 服务架构，DistServe 在不同场景下显著提升了 Goodput 和延时性能，尤其在聊天机器人和代码自动完成等应用中表现出色。作者强调，Prefill 和 Decode 分离的服务架构能够更好地兼顾吞吐与服务质量，可能成为 LLM 服务架构的新趋势。
 
 ![](img/56ded951fe888f4fc2bd4f64f9144071.png)
 
-### 如何让大语言模型返回完美的JSON格式
+## 如何让大语言模型返回完美的JSON格式
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/698631962?utm_psn=1775636826168328192
+`https://zhuanlan.zhihu.com/p/698631962?utm_psn=1775636826168328192`
 
 文章首先回顾了大型语言模型如何生成响应的基本流程，包括接收提示、预测与采样、迭代过程和生成结束。随后，阐述了如何通过屏蔽词汇表中的某些 token 来干预大语言模型的响应，从而更有效地控制输出内容。接着，文章讨论了如何利用正则表达式来生成符合特定要求的响应，并提出了一种基于有限状态机的加速策略。文章进一步指出，对于更复杂的结构化数据如 JSON，可以通过上下文无关文法和下推自动机来构建掩盖函数，以此来生成符合格式要求的数据。最后，作者提出了将来 IDE 可能会嵌入大语言模型的想法，并探讨了如何通过全局上下文和监控来进一步减少模型的幻觉现象，提高响应的准确度。
 
 ![](img/0a436ea6e1c52a945c0498ef5cc73a81.png)
 
-### 《PyTorch实用教程》（第二版）开源
+## 《PyTorch实用教程》（第二版）开源
 
 贡献人：
 
-https://mp.weixin.qq.com/s/8o1YVX-fg5e-KrIDZwh5IQ
+`https://mp.weixin.qq.com/s/8o1YVX-fg5e-KrIDZwh5IQ`
 
 《PyTorch 实用教程（第二版）》是一本面向深度学习工程师的实用教程，结构清晰，分为上、中、下三篇，分别是入门、应用和落地。上篇是 PyTorch 基础，介绍 PyTorch 的核心模块、数据模块、模型模块、优化模块和可视化模块，以及一些小技巧。中篇是产业应用，包括计算机视觉、自然语言处理和大语言模型等多个领域的实战案例。下篇是工业落地，介绍 ONNX 和 TensorRT 的原理与使用，以及模型量化概念、PTQ 和 QAT 量化实战与原理。本书适合 AI 自学者、AI 产品经理、在校学生以及跨领域人士阅读，满足不同背景和需求的读者。
 
-相关链接：https://tingsongyu.github.io/PyTorch-Tutorial-2nd
+相关链接：`https://tingsongyu.github.io/PyTorch-Tutorial-2nd`
 
-https://pan.baidu.com/s/1trkq6Vr2DBPNXpRwK_Jdzg 提取码：4w15
+`https://pan.baidu.com/s/1trkq6Vr2DBPNXpRwK_Jdzg` 提取码：`4w15`
 
 ![](img/07b8afe4a8dce09f44dd4b4185892b23.png)
 
-### Unity 3D可视化CNN：让神经网络结构一目了然
+## Unity 3D可视化CNN：让神经网络结构一目了然
 
 贡献人：
 
-https://mp.weixin.qq.com/s/WuBod-lsvvGgqTPQU2vUzg
+`https://mp.weixin.qq.com/s/WuBod-lsvvGgqTPQU2vUzg`
 
 在文章中，作者首先介绍了 CNN（卷积神经网络）的重要性和在计算机视觉领域的应用。由于 CNN 的复杂性，单从代码层面理解起来往往比较困难，因此有人利用 Unity 引擎开发了一个 3D 可视化工具，使得 CNN 的各个组件，如卷积、池化和 Softmax 层等，能够以直观的方式展现出来。该工具不仅能够导入训练好的模型，还能实时显示训练过程中各层的变化，支持用户自由地折叠、扩展每个层以清晰地展示网络细节。项目作者 Stefan Sietzen 是一位来自维也纳的 3D 特效师，他通过 Houdini 软件搭建了原型，并在 Unity 中实现了 3D 神经网络的可视化。文章还详细介绍了从 TensorFlow 代码生成 3D 神经网络图像的过程，包括检查点文件的编写、权重值的分配以及最终的可视化效果。
 
 相关链接：
 
-视频：https://vimeo.com/stefsietz
+视频：`https://vimeo.com/stefsietz`
 
-源代码：https://github.com/stefsietz/nn-visualizer
+源代码：`https://github.com/stefsietz/nn-visualizer`
 
-项目主页：http://visuality.at/vis2/
+项目主页：`http://visuality.at/vis2/`
 
 ![](img/cdd11b3abed95b3a36f38f5c28a1fad3.png)
 
@@ -358,7 +355,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

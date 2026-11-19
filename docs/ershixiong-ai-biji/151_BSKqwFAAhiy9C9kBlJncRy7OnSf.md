@@ -1,3 +1,4 @@
+
 # Higress API 网关全面支持 MCP：助力 AI 应用开发与部署
 
 > 来源：[https://qianniucity.feishu.cn/docx/MwufdOuKDoe2J7xva25cbWJ0ngg](https://qianniucity.feishu.cn/docx/MwufdOuKDoe2J7xva25cbWJ0ngg)
@@ -26,17 +27,12 @@ Nacos 即将发布 MCP Register 相关能力，包括动态发现和管理 MCP S
 
 通过 Higress 托管 MCP 服务器，开发者可以享受到以下核心优势：
 
-+   统一认证授权机制，保障 AI 工具调用安全
-
-+   细粒度的速率限制，防止滥用和资源耗尽
-
-+   全面的审计日志记录所有工具调用行为
-
-+   丰富的可观察性，用于监控工具调用的性能和运行状况
-
-+   通过 Higress 的插件机制简化部署和管理，快速添加新的 MCP 服务器
-
-+   无中断动态更新：得益于 Envoy 对长连接的友好处理和 Wasm 插件的动态更新机制，MCP Server 逻辑可以即时更新，不会出现任何流量中断或连接断开的情况
++ 统一认证授权机制，保障 AI 工具调用安全
++ 细粒度的速率限制，防止滥用和资源耗尽
++ 全面的审计日志记录所有工具调用行为
++ 丰富的可观察性，用于监控工具调用的性能和运行状况
++ 通过 Higress 的插件机制简化部署和管理，快速添加新的 MCP 服务器
++ 无中断动态更新：得益于 Envoy 对长连接的友好处理和 Wasm 插件的动态更新机制，MCP Server 逻辑可以即时更新，不会出现任何流量中断或连接断开的情况
 
 ## 一句话总结
 

@@ -1,3 +1,4 @@
+
 # AI技术对绘圈冲击太大了怎么办? 设计/美术还有出路吗?
 
 > 来源：[https://agijuejin.feishu.cn/docx/QRYvdaBalotkIvxRZbEcX0Omnwg](https://agijuejin.feishu.cn/docx/QRYvdaBalotkIvxRZbEcX0Omnwg)
@@ -86,13 +87,13 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 ￥0.10 立即参加
 
-**在完整上完体验课后，你将获得「Stable Diffusion软件+安装教程」、「Mi**djourney常用咒语合集」等丰富的福利资料。记得在听完课后找助教老师领取哦！
+在完整上完体验课后，你将获得「`Stable Diffusion`软件+安装教程」、「`Midjourney`常用咒语合集」等丰富的福利资料。记得在听完课后找助教老师领取哦！
 
 ## 三、操作举例
 
 我以一个简单的海报为例，来分享下怎么利用AI去完成一个完整内容思路和经验。
 
-### **1.成品展示**
+### 1.成品展示
 
 先看下我做的成品海报效果吧，你喜欢吗？
 
@@ -170,4 +171,4 @@ AI工具可以让设计师变为超级个体，一个人可以成为一个团队
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3162454823%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3161270553%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3162454823%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3161270553%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

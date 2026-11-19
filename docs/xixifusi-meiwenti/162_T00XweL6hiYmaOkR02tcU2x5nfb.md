@@ -1,3 +1,4 @@
+
 # 人的野心是被见识撑大的。
 
 > 来源：[https://docs.feishu.cn/docx/IADFdRHcHo3ozXxS52tcWqIunvh](https://docs.feishu.cn/docx/IADFdRHcHo3ozXxS52tcWqIunvh)

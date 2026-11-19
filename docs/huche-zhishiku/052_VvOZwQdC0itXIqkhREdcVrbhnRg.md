@@ -1,19 +1,19 @@
+
 # 🛰️视频号互选平台 VS 星图游戏发行人
 
 > 来源：[https://huchegames.feishu.cn/docx/Ih6PdkVcFohs2ExH4n1cmoPEnJF](https://huchegames.feishu.cn/docx/Ih6PdkVcFohs2ExH4n1cmoPEnJF)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293128&idx=1&sn=367baa0d811de3e19e2e787320838419&scene=21#wechat_redirect)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293128&idx=1&sn=367baa0d811de3e19e2e787320838419&scene=21#wechat_redirect
 
-> ⏰ 原创 曾嵘 曾嵘胡扯的地方2024年12月25日 19:51  浙江
+> ⏰ 原创 曾嵘 曾嵘胡扯的地方 2024年12月25日 19:51 浙江
 
-昨天胡扯游戏群里的群友 **「运营峰哥」 **提出了一个相当有价值的问题：
+昨天胡扯游戏群里的群友「运营峰哥」提出了一个相当有价值的问题：
 
 > 为什么现在抖音发行人这块的流量会偏重于直播？小游戏的直播比短视频有什么优势？
 
 > 数据来源：
-
+>
 > 短视频任务 -> 一天80+ 达人查看文档。
-
 > 直播任务上架 -> 一天400+ 达人查看文档。
 
 ![](img/975fe1473d3aa5cbcca7c7f50e57b129.png)
@@ -36,13 +36,13 @@
 
 达人关注度的变化，是一个信号。在抖音，我们只需要去拥抱直播即可。
 
-**那么短视频还能做吗？**
+## 那么短视频还能做吗？
 
-**曾老师觉得，无论星图发行人的政**策如何变化，我们都可以在 🛰️中尝试一下视频号互选平台。
+曾老师觉得，无论星图发行人的政策如何变化，我们都可以在 🛰️中尝试一下视频号互选平台。
 
 ![](img/3a077bf8b3bc3ac943961fd066260674.png)
 
-**与抖音发行人的**短视频不同，🛰️视频号采用 「互选平台」 来实现与达人的合作，下面是官方公布的数据。
+与抖音发行人的短视频不同，🛰️视频号采用「互选平台」来实现与达人的合作，下面是官方公布的数据。
 
 ![](img/e20e74e313816dcb4f7742249103ed80.png)
 
@@ -70,8 +70,6 @@
 
 **这些文章值得读一下：**
 
-+   [为什么有的研发做不好自发？](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292718&idx=1&sn=934d3cc2d2ec588a7ce9b785dce824ea&scene=21#wechat_redirect)
-
-+   [为什么有的发行做不好自研？](https://huchegames.feishu.cn/wiki/FfNswLUpkiIErfkpkygcN7sMnKc)
-
-+   [小CP如何搭建发行团队](https://huchegames.feishu.cn/wiki/LiQywae7eifGTFklaREcUayfnVb)
++ [为什么有的研发做不好自发？](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656292718&idx=1&sn=934d3cc2d2ec588a7ce9b785dce824ea&scene=21#wechat_redirect)
++ [为什么有的发行做不好自研？](https://huchegames.feishu.cn/wiki/FfNswLUpkiIErfkpkygcN7sMnKc)
++ [小CP如何搭建发行团队](https://huchegames.feishu.cn/wiki/LiQywae7eifGTFklaREcUayfnVb)

@@ -1,3 +1,4 @@
+
 # 输入端：AI训练中的知产侵权
 
 > 来源：[https://docs.feishu.cn/docx/OdLzd7JTWoHo8ixwMdIcxhjNnJe](https://docs.feishu.cn/docx/OdLzd7JTWoHo8ixwMdIcxhjNnJe)
@@ -8,17 +9,13 @@
 
 争议发生的原因主要是：
 
-1.  权利人海量但授权机制不明晰；
+1. 权利人海量但授权机制不明晰；
+2. 各方对人工智能输入端构成合理使用的法律依据不同。
 
-1.  各方对人工智能输入端构成合理使用的法律依据不同。
-
-《生成式人工智能著作权侵权纠纷的证明之道》，http://www.legalweekly.cn/whlh/2024-03/07/content_8969546.html
-
-《TMI法律资讯 | 日本法项下对生成式AI与著作权相关问题的探讨：AI开发、学习阶段》，https://mp.weixin.qq.com/s/VIxYfdnjQ8fpOon-N_5Q0w
-
-《谷歌AI吃罚单背后，传统内容版权的博弈故事丨AI版权战事①》
-
-《版权合作密集，AI公司打算如何分蛋糕？丨AI版权战事②》
+- 《生成式人工智能著作权侵权纠纷的证明之道》，http://www.legalweekly.cn/whlh/2024-03/07/content_8969546.html
+- 《TMI法律资讯 | 日本法项下对生成式AI与著作权相关问题的探讨：AI开发、学习阶段》，https://mp.weixin.qq.com/s/VIxYfdnjQ8fpOon-N_5Q0w
+- 《谷歌AI吃罚单背后，传统内容版权的博弈故事丨AI版权战事①》
+- 《版权合作密集，AI公司打算如何分蛋糕？丨AI版权战事②》
 
 **张湖月**：美国一系列诉讼的核心争议点集中于利用受版权保护的作品来训练AI是否构成侵权。主流观点认为，这种做法可受到合理使用的豁免，因为AI生成内容具有转化性。然而，在某些案例中，AI生成的内容可能与原作品高度重叠，例如美国“纽约时报”案。针对此类情况，OpenAI辩称之所以出现重叠是因为指令本身具有很强的诱导性。
 
@@ -26,9 +23,9 @@ James Grimmelmann：在美国，围绕“合理使用”有两大发展趋势。
 
 Jason M. Schultz：在判断是否构成合理使用时，需要结合最终生成的内容本身进行评估。即使某公司仅利用纽约时报的网页来训练一个AI系统，最后也可能生成数百万种不同的表达方式；在这些表达中，可能仅0.1%存在侵权行为。一个关键的争论焦点在于：AI公司自动爬取数据进行训练与寻求版权持有人单独授权之间的区别是什么。与此相关的有两点：第一，竞争。为了促进不同AI之间的竞争，不能仅让世界上最富有的公司获得训练数据，而向所有版权人购买授权的费用非常高昂。第二，偏见。如果AI能使用更广泛的数据进行训练，就能避免产生偏颇的语言。例如，在美国，左派反对AI使用其数据进行训练，而右派则非常愿意。如果实行授权制，训练数据是否会被右派观点所主导呢？此外，AI生成的内容在很大程度上取决于指令内容，法院很难评估AI是否真的复制了某本书。如果用户极力逼迫AI进行复制，确实有可能实现，但实际上有多少人会这么做呢？这也引发了一个问题：如果AI生成的内容确实构成实质性相似，那么应该由谁负责？是用户还是人工智能服务提供商？
 
-James Grimmelmann & Jason M.Schultz：该问题不存在普遍适用的答案。用户使用AI的目的和情况各不相同，必须针对具体问题进行分析。版权法应对私人空间予以适当宽容。在北京互联网法院的案例中，当AI生成的内容被上传至公共领域时，问题的性质就不同了，尤其是涉及不公平竞争的情况。总之，当前生成式AI仍处于发展初期，任何版权问题都没有确切答案，只能依靠更多司法判例来丰富我们的知识储备。一个合理的制度应促使大型和初创公司都能茁壮成长，不依赖庞大的供应商，保障所有人平等地使用AI，并鼓励合理竞争。如果法律仅允许大公司与另一个大公司打交道，这并不能解决问题，艺术家也无法获得合理回报。此外，所谓的版权方经济利益受损，可能是因为更多的人能够与他们展开竞争，而不仅仅是因为某个人通过ChatGPT窃取了他们的作品。
+James Grimmelmann & Jason M. Schultz：该问题不存在普遍适用的答案。用户使用AI的目的和情况各不相同，必须针对具体问题进行分析。版权法应对私人空间予以适当宽容。在北京互联网法院的案例中，当AI生成的内容被上传至公共领域时，问题的性质就不同了，尤其是涉及不公平竞争的情况。总之，当前生成式AI仍处于发展初期，任何版权问题都没有确切答案，只能依靠更多司法判例来丰富我们的知识储备。一个合理的制度应促使大型和初创公司都能茁壮成长，不依赖庞大的供应商，保障所有人平等地使用AI，并鼓励合理竞争。如果法律仅允许大公司与另一个大公司打交道，这并不能解决问题，艺术家也无法获得合理回报。此外，所谓的版权方经济利益受损，可能是因为更多的人能够与他们展开竞争，而不仅仅是因为某个人通过ChatGPT窃取了他们的作品。
 
-### 人工智能的训练过程
+## 人工智能的训练过程
 
 OpenAI这样说明自己训练AI的技术步骤：首先，抓取互联网上公开可用的信息，或者是根据第三方商业协议获得信息；第二步，向模型“投喂”输入信息；第三步，模型将文本信息分解成一个个单词长度的token，计算哪些token经常一起出现，并转换为一串统计概率；Transformer架构进一步分析所有文本，比如哪个单词对于理解一句话的意思最重要，让AI捕捉到语言的深层结构和模式；最后将这些统计关系留在模型中，完成大模型的预训练。
 
@@ -36,41 +33,32 @@ OpenAI这样说明自己训练AI的技术步骤：首先，抓取互联网上公
 
 ![](img/fd9d947b9a588a9ac56ba9b0aac3b97b.png)
 
-### 中国案例
+## 中国案例
 
-1.  AIGC平台侵权第一案（2024）粤0192民初113号
+1. AIGC平台侵权第一案（2024）粤0192民初113号
+   - 判决书原文：http://ahsbqj.anhuinews.com/bq/202402/t20240227_7410093.html
+   - 讨论：[AIGC平台侵权第一案（2024）粤0192民初113号](https://s3zdtatd2r.feishu.cn/wiki/EZPvwJVgqiVJ0ukZVCwcQZNDnZf)
 
-1.  判决书原文：http://ahsbqj.anhuinews.com/bq/202402/t20240227_7410093.html
+## 美国案例（Generative AI vs. Copyright Law）
 
-1.  讨论：[AIGC平台侵权第一案（2024）粤0192民初113号](https://s3zdtatd2r.feishu.cn/wiki/EZPvwJVgqiVJ0ukZVCwcQZNDnZf)
+- New York Times vs. OpenAI (Dec 2023)
+- Doe vs. GitHub (Nov 2023)
+- Authors Guild (incl. John Grisham & George R.R. Martin et al.) vs. OpenAI (Sep 2023)
+- Sarah Silverman, Christopher Golden & Richard Kadrey vs. OpenAI (Jul 2023)
+- Sarah Silverman, Christopher Golden & Richard Kadrey vs. Meta (Jul 2023)
+- Sarah Andersen, Kelly McKernan & Karla Ortiz vs. Stability AI (Feb 2023)
+- Getty Images vs. Stability AI (Jan 2023)
+- 英伟达因其人工智能使用版权作品而被作者起诉
 
-### 美国案例（Generative Al vs. Copyright Law）
+  人工智能芯片巨头英伟达在美国旧金山被三名作家起诉，他们称该公司未经许可使用了他们的受版权保护的书籍来训练其人工智能平台 NeMo。作者 Brian Keene、Abdi Nazemian 和 Stewart O'Nan 表示，他们的作品是大约196,640本书的数据集的一部分，这些书籍帮助训练 NeMo 模拟普通书面语言，直到去年10月份“因举报侵犯版权”才被删除。在周五晚上向旧金山联邦法院提起的集体诉讼中，作者表示，删除反映了英伟达“承认”其在该数据集上训练了 NeMo，从而侵犯了他们的版权。他们正在为过去三年被利用的版权作品作者寻求赔偿，具体金额不详。
 
-+   .New York Times vs. OpenAl (Dec 2023)
+  Link：https://www.reuters.com/technology/nvidia-is-sued-by-authors-over-ai-use-copyrighted-works-2024-03-10/
 
-+   Doe vs. GitHub (Nov 2023)
+## 合理使用
 
-+   Authors Guild (incl. John Grisham & George R.R. Martin etal. vs. OpenAl (Sep 2023)
+在训练阶段使用版权作品能否属于“合理使用”？
 
-+   Sarah Silverman, Christopher Golden & Richard Kadrey vs. 0penAl (Ju 2023)
-
-+   Sarah Silverman, Christopher Golden & Richard Kadrey vs. Meta (Jul 2023)
-
-+   Sarah Andersen,Kelly McKernan & Karla Ortiz vs. StabilityAI (Feb 2023)
-
-+   Gettylmages vs. Stability Al (Jan 2023)
-
-+   英伟达因其人工智能使用版权作品而被作者起诉
-
-人工智能芯片巨头英伟达在美国旧金山被三名作家起诉，他们称该公司未经许可使用了他们的受版权保护的书籍来训练其人工智能平台 NeMo。作者 Brian Keene、Abdi Nazemian 和 Stewart O'Nan 表示，他们的作品是大约196,640本书的数据集的一部分，这些书籍帮助训练 NeMo 模拟普通书面语言，直到去年10月份“因举报侵犯版权”才被删除。在周五晚上向旧金山联邦法院提起的集体诉讼中，作者表示，删除反映了英伟达“承认”其在该数据集上训练了 NeMo，从而侵犯了他们的版权。他们正在为过去三年被利用的版权作品作者寻求赔偿，具体金额不详。
-
-Link：https://www.reuters.com/technology/nvidia-is-sued-by-authors-over-ai-use-copyrighted-works-2024-03-10/
-
-### 合理使用
-
-在训练阶段使用版权作品能否属于“合理使用“？
-
-1.  转换性使用
+### 转换性使用
 
 大模型对版权类训练语料的使用是转换性使用，属于合理使用或法定许可。大模型对于版权作品的使用，并不是以欣赏作品原有价值为目的而进行利用，或对原有作品内容进行复制和传播从而替代原有作品，而是为了掌握客观规律并培养模型的基础能力，就如给人类进行教育需要对其进行广泛的知识授予一般。有鉴于此，用版权类数据对模型进行训练，不应被视为 “复制式拷贝” 的版权侵权行为，而应属于转换性使用的范畴，并应构成“合理使用” 或 “法定许可”。目前，已有法律实践在模型训练使用版权作品方面做出突破，如欧盟《单一数字市场版权指令》为符合条件的 “文本和数据挖掘” 设置了豁免例外，日本对《著作权法》的修订将 “不以欣赏作品原有价值为目的” 的大模型数据训练纳入到合理使用的范畴等。
 

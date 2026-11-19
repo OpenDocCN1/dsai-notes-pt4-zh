@@ -1,4 +1,5 @@
-#  什么是采样
+
+# 什么是采样
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/WwVTdUKOVoWVdVxtFQkcaKmen8g](https://jlqyxzzvbk.feishu.cn/docx/WwVTdUKOVoWVdVxtFQkcaKmen8g)
 
@@ -60,47 +61,51 @@ AUTOMATIC1111 中的采样器。
 
 让我们先剔除简单的。列表中的一些采样器是一百多年前发明的。它们是常微分方程 (ODE) 的老式求解器。
 
-+   **Euler** – The simplest possible solver.
-Euler – 最简单的求解器。
++   `Euler` – The simplest possible solver.
 
-+   **Heun** – A more accurate but slower version of Euler.
-Heun – Euler的更准确但速度较慢的版本。
+`Euler` – 最简单的求解器。
 
-+   **LMS** (Linear multi-step method) – Same speed as Euler but (supposedly) more accurate.
-LMS（线性多步法）——与Euler速度相同，但（据说）更准确。
++   `Heun` – A more accurate but slower version of Euler.
+
+`Heun` – `Euler`的更准确但速度较慢的版本。
+
++   `LMS` (Linear multi-step method) – Same speed as Euler but (supposedly) more accurate.
+
+`LMS`（线性多步法）——与`Euler`速度相同，但（据说）更准确。
 
 ### Ancestral samplers 祖先采样器
 
 您是否注意到某些采样器的名字有一个字母“a”？
 
-+   Euler a
++   `Euler a`
 
-+   DPM2 a
++   `DPM2 a`
 
-+   DPM++ 2S a
++   `DPM++ 2S a`
 
-+   DPM++ 2S a Karras
-DPM++ 2S
++   `DPM++ 2S a Karras`
+
+`DPM++ 2S`
 
 他们是祖先的采样者。祖先采样器在每个采样步骤向图像添加噪声。它们是随机采样器，因为采样结果具有一定的随机性。
 
 请注意，许多其他采样器也是随机采样器，尽管他们的名字中没有“a”。
 
-使用祖先采样器的缺点是图像不会收敛。比较使用 Euler a 和下面的 Euler 生成的图像。
+使用祖先采样器的缺点是图像不会收敛。比较使用 `Euler a` 和下面的 `Euler` 生成的图像。
 
 ![](img/8ccec843e1d7242cab6a542c247bdaf1.png)
 
-**Euler a** does not converge. (sample steps 2 – 40)
+`Euler a` does not converge. (sample steps 2 – 40)
 
 欧拉 a 不收敛。 （示例步骤 2 – 40）
 
 ![](img/4e103c92c7cad9d48b753fb31aa8f428.png)
 
-**Euler** converges. (sampling steps 2-40)
+`Euler` converges. (sampling steps 2-40)
 
 欧拉收敛。 （采样步骤2-40）
 
-使用 Euler a 生成的图像在高采样步长时不会收敛。相比之下，欧拉的图像收敛得很好。
+使用 `Euler a` 生成的图像在高采样步长时不会收敛。相比之下，欧拉的图像收敛得很好。
 
 为了再现性，希望图像会聚。如果你想产生轻微的变化，你应该使用变分种子。
 
@@ -116,31 +121,31 @@ Comparison between the default and Karras noise schedule.
 
 DDIM and PLMS DDIM 和 PLMS
 
-DDIM（去噪扩散隐式模型）和 PLMS（伪线性多步方法）是原始稳定扩散 v1 附带的采样器。 DDIM 是最早为扩散模型设计的采样器之一。 PLMS 是 DDIM 更新、更快的替代方案。
+`DDIM`（去噪扩散隐式模型）和 `PLMS`（伪线性多步方法）是原始稳定扩散 v1 附带的采样器。 `DDIM` 是最早为扩散模型设计的采样器之一。 `PLMS` 是 `DDIM` 更新、更快的替代方案。
 
 它们通常被认为已经过时并且不再广泛使用。
 
 DPM and DPM++ DPM 和 DPM++
 
-DPM（扩散概率模型求解器）和 DPM++ 是为 2022 年发布的扩散模型设计的新采样器。它们代表了一系列具有相似架构的求解器。
+`DPM`（扩散概率模型求解器）和 `DPM++` 是为 2022 年发布的扩散模型设计的新采样器。它们代表了一系列具有相似架构的求解器。
 
-DPM 和 DPM2 类似，只是 DPM2 是二阶（更准确但速度更慢）。
+`DPM` 和 `DPM2` 类似，只是 `DPM2` 是二阶（更准确但速度更慢）。
 
-DPM++ 是对 DPM 的改进。
+`DPM++` 是对 `DPM` 的改进。
 
-DPM自适应自适应调整步长。它可能会很慢，因为它不能保证在采样步骤数内完成。
+`DPM`自适应自适应调整步长。它可能会很慢，因为它不能保证在采样步骤数内完成。
 
 ### UniPC 统一电脑
 
-UniPC（Unified Predictor-Corrector）是2023年发布的新采样器。受到ODE求解器中的预测器-校正器方法的启发，它可以在5-10步内实现高质量图像生成。
+`UniPC`（Unified Predictor-Corrector）是2023年发布的新采样器。受到ODE求解器中的预测器-校正器方法的启发，它可以在5-10步内实现高质量图像生成。
 
 ### k-diffusion k扩散
 
-最后，您可能听说过 k 扩散这个术语并想知道它的含义。它只是指 Katherine Crowson 的 k-diffusion GitHub 存储库以及与其关联的采样器。
+最后，您可能听说过 k 扩散这个术语并想知道它的含义。它只是指 Katherine Crowson 的 `k-diffusion` GitHub 存储库以及与其关联的采样器。
 
 该存储库实现了 Karras 2022 文章中研究的采样器。
 
-基本上，AUTOMATIC1111 中除 DDIM、PLMS 和 UniPC 之外的所有采样器都是从 k-diffusion 借用的。
+基本上，AUTOMATIC1111 中除 `DDIM`、`PLMS` 和 `UniPC` 之外的所有采样器都是从 `k-diffusion` 借用的。
 
 ## Evaluating samplers 评估采样器
 
@@ -150,23 +155,23 @@ UniPC（Unified Predictor-Corrector）是2023年发布的新采样器。受到OD
 
 在本节中，我将使用不同的采样器（最多 40 个采样步骤）生成相同的图像。第 40 步的最后一个图像用作评估采样收敛速度的参考。欧拉方法将被用作参考。
 
-Euler, DDIM, PLMS, LMS Karras and Heun
+`Euler`, `DDIM`, `PLMS`, `LMS Karras` and `Heun`
 
-Euler、DDIM、PLMS、LMS Karras 和 Heun
+`Euler`、`DDIM`、`PLMS`、`LMS Karras` 和 `Heun`
 
-首先，让我们将 Euler、DDIM、PLMS、LMS Karras 和 Heun 作为一组来看看，因为它们代表了老式的 ODE 求解器或原始扩散求解器。 DDIM 收敛于欧拉的步长，但有更多变化。这是因为它在采样步骤中注入了随机噪声。
+首先，让我们将 `Euler`、`DDIM`、`PLMS`、`LMS Karras` 和 `Heun` 作为一组来看看，因为它们代表了老式的 ODE 求解器或原始扩散求解器。 `DDIM` 收敛于欧拉的步长，但有更多变化。这是因为它在采样步骤中注入了随机噪声。
 
 ![](img/5af37bfb5c75f88a130c3099b98139bc.png)
 
 Image convergence of Euler, DDIM, PLMS, LMS Karras and Heun (Lower is better).
 
-Euler、DDIM、PLMS、LMS Karras 和 Heun 的图像收敛（越低越好）。
+`Euler`、`DDIM`、`PLMS`、`LMS Karras` 和 `Heun` 的图像收敛（越低越好）。
 
-PLMS 在这次测试中表现不佳。
+`PLMS` 在这次测试中表现不佳。
 
-LMS Karras 似乎很难收敛，并稳定在较高的基线上。
+`LMS Karras` 似乎很难收敛，并稳定在较高的基线上。
 
-Heun 收敛速度更快，但速度慢两倍，因为它是二阶方法。例如，我们应该将 30 步的 Heun 与 15 步的 Euler 进行比较。
+`Heun` 收敛速度更快，但速度慢两倍，因为它是二阶方法。例如，我们应该将 30 步的 `Heun` 与 15 步的 `Euler` 进行比较。
 
 ### Ancestral samplers 祖先采样器
 
@@ -180,31 +185,31 @@ Ancestral samplers do not converge well (Lower is better).
 
 #### DPM and DPM2 DPM 和 DPM2
 
-DPM fast 收敛得不好。 DPM2 和 DPM2 Karras 的性能优于 Euler，但代价是速度慢了两倍。
+`DPM fast` 收敛得不好。 `DPM2` 和 `DPM2 Karras` 的性能优于 `Euler`，但代价是速度慢了两倍。
 
-DPM 自适应性能看似良好，因为它使用自己的自适应采样步骤。它可能会非常慢。
+`DPM` 自适应性能看似良好，因为它使用自己的自适应采样步骤。它可能会非常慢。
 
 ![](img/2c8b297c160ac9d56849eb8354df4c8d.png)
 
 Convergence of DPM samplers (Lower the better).
 
-DPM 采样器的收敛性（越低越好）。
+`DPM` 采样器的收敛性（越低越好）。
 
 #### DPM++ solvers DPM++ 求解器
 
-DPM++ SDE 和 DPM++ SDE Karras 具有与祖先采样器相同的缺点。它们不仅不收敛，而且图像还会随着步数的变化而大幅波动。
+`DPM++ SDE` 和 `DPM++ SDE Karras` 具有与祖先采样器相同的缺点。它们不仅不收敛，而且图像还会随着步数的变化而大幅波动。
 
-DPM++ 2M 和 DPM++ 2M Karras 表现良好。当步数足够多时，Karras 变体收敛得更快。
+`DPM++ 2M` 和 `DPM++ 2M Karras` 表现良好。当步数足够多时，Karras 变体收敛得更快。
 
 ![](img/8d4813503c60daf7f656b502fe5b0c11.png)
 
 Convergence of DPM++ samplers (Lower the better).
 
-DPM++ 采样器的收敛性（越低越好）。
+`DPM++` 采样器的收敛性（越低越好）。
 
 ### UniPC
 
-UniPC 的收敛速度比 Euler 慢一点，但也不算太差。
+`UniPC` 的收敛速度比 `Euler` 慢一点，但也不算太差。
 
 ![](img/9bdf5d540ad0f19fa0c49272730cad87.png)
 
@@ -216,9 +221,9 @@ Relative rending time of each method (lower the better)
 
 每种方法的相对渲染时间（越低越好）
 
-尽管DPM自适应在收敛方面表现良好，但它也是最慢的。
+尽管`DPM`自适应在收敛方面表现良好，但它也是最慢的。
 
-您可能已经注意到其余的渲染时间分为两组，第一组花费大约相同的时间（约 1 倍），另一组花费大约两倍的时间（约 2 倍）。这反映了求解器的顺序。二阶求解器虽然更准确，但需要对去噪 U-Net 进行两次评估。所以它们的速度慢两倍。
+您可能已经注意到其余的渲染时间分为两组，第一组花费大约相同的时间（约 1 倍），另一组花费大约两倍的时间（约 2 倍）。这反映了求解器的顺序。二阶求解器虽然更准确，但需要对去噪 `U-Net` 进行两次评估。所以它们的速度慢两倍。
 
 ### Quality 质量
 
@@ -232,7 +237,7 @@ Relative rending time of each method (lower the better)
 
 ![](img/c161b1ad4ebaee4633c071384c5b6fd9.png)
 
-DPM++ fast 非常失败。祖先样本没有收敛到其他采样器收敛到的图像。
+`DPM++ fast` 非常失败。祖先样本没有收敛到其他采样器收敛到的图像。
 
 祖先采样器倾向于收敛到小猫的图像，而确定性采样器倾向于收敛到猫的图像。没有正确的答案，只要它们对你来说看起来不错即可。
 
@@ -240,15 +245,15 @@ DPM++ fast 非常失败。祖先样本没有收敛到其他采样器收敛到的
 
 即使图像没有收敛，图像看起来仍然不错。让我们看看每个采样器生成高质量图像的速度有多快。
 
-您将看到使用 BRISQUE（盲/无参考图像空间质量评估器）测量的感知质量。它衡量自然图像的质量。
+您将看到使用 `BRISQUE`（盲/无参考图像空间质量评估器）测量的感知质量。它衡量自然图像的质量。
 
-DDIM 在这方面的表现出人意料地好，能够在短短 8 个步骤内生成组内最高质量的图像。
+`DDIM` 在这方面的表现出人意料地好，能够在短短 8 个步骤内生成组内最高质量的图像。
 
 ![](img/2e51e68d2cc09d8e0b23f207e4ea32eb.png)
 
 The image quality of DDIM, PLMS, Heun and LMS Karras (Lower the better).
 
-DDIM、PLMS、Heun 和 LMS Karras 的图像质量（越低越好）。
+`DDIM`、`PLMS`、`Heun` 和 `LMS Karras` 的图像质量（越低越好）。
 
 除了一两个例外，所有祖先采样器在生成高质量图像方面都与欧拉相似。
 
@@ -258,51 +263,49 @@ The image quality of ancestral samplers (Lower the better).
 
 祖先采样器的图像质量（越低越好）。
 
-DPM2 采样器的性能略优于 Euler。
+`DPM2` 采样器的性能略优于 `Euler`。
 
 ![](img/f01f57192d9e0eadd7fc20f6ec8af6c8.png)
 
 The image quality of DPM samplers (Lower the better).
 
-DPM 采样器的图像质量（越低越好）。
+`DPM` 采样器的图像质量（越低越好）。
 
-DPM++ SDE 和 DPM++ SDE Karras 在本次质量测试中表现最好。
+`DPM++ SDE` 和 `DPM++ SDE Karras` 在本次质量测试中表现最好。
 
 ![](img/628f4304b1607a174610af27fd6a1fb2.png)
 
 The image quality of DPM++ samplers (Lower the better).
 
-DPM++ 采样器的图像质量（越低越好）。
+`DPM++` 采样器的图像质量（越低越好）。
 
-UniPC 在低步长上比 Euler 稍差，但在高步长上与 Euler 相当。
+`UniPC` 在低步长上比 `Euler` 稍差，但在高步长上与 `Euler` 相当。
 
 ![](img/19b4b24a1881a06c11689c2e7a584d57.png)
 
 The image quality of the UniPC sampler (Lower the better).
 
-UniPC 采样器的图像质量（越低越好）。
+`UniPC` 采样器的图像质量（越低越好）。
 
-###  那么……哪一个是最好的？
-
-> 
+### 那么……哪一个是最好的？
 
 > 以下是我的建议：
 
-1.  如果你想使用快速、融合、新颖且质量不错的东西，那么最好的选择是
+1. 如果你想使用快速、融合、新颖且质量不错的东西，那么最好的选择是
 
-+   **DPM**++ 2M Karras，20 – 30 个步骤
++   `DPM++ 2M Karras`，20 – 30 个步骤
 
-+   **UniPC**  有 20-30 个步骤。
++   `UniPC` 有 20-30 个步骤。
 
-1.  如果您想要高质量的图像并且不关心收敛，那么不错的选择是
+1. 如果您想要高质量的图像并且不关心收敛，那么不错的选择是
 
-+   **DPM****++ ****SDE**** Karras** 具有 10-15 个步骤（注意：这是一个较慢的采样器）
++   `DPM++ SDE Karras` 具有 10-15 个步骤（注意：这是一个较慢的采样器）
 
-+   **DDIM** 有 10-15 个步骤。
++   `DDIM` 有 10-15 个步骤。
 
-1.  如果您喜欢稳定、可重复的图像，请避免使用任何祖先采样器。
+1. 如果您喜欢稳定、可重复的图像，请避免使用任何祖先采样器。
 
-1.  如果您喜欢简单的东西，**Euler** 和 **Heun** 是不错的选择。减少 Heun 的步骤以节省时间。
+1. 如果您喜欢简单的东西，`Euler` 和 `Heun` 是不错的选择。减少 `Heun` 的步骤以节省时间。
 
 ## Samplers Explained 采样器解释
 
@@ -310,23 +313,15 @@ UniPC 采样器的图像质量（越低越好）。
 
 ### Euler
 
-Euler 是最简单的采样器。它在数学上与求解常微分方程的欧拉方法相同。它是完全确定性的，这意味着采样期间不会添加随机噪声。
+`Euler` 是最简单的采样器。它在数学上与求解常微分方程的欧拉方法相同。它是完全确定性的，这意味着采样期间不会添加随机噪声。
 
 下面是逐步采样。
 
-> 
-
 > 步骤 1：噪声预测器根据潜在图像估计噪声图像。
-
-> 
 
 > 步骤2：根据噪声表计算需要减去的噪声量。这就是当前步骤和下一步之间的噪声差异。
 
-> 
-
 > 步骤 3：将潜像减去归一化噪声图像（来自步骤 1）乘以要减少的噪声量（来自步骤 2）。
-
-> 
 
 > 重复步骤 1 至 3，直到噪声计划结束。
 
@@ -355,18 +350,23 @@ A noise schedule for 15 sampling steps.
 +   Time → noise 时间 → 噪音
 
 +   Time quantization → noise schedule
+
 时间量化→噪声调度
 
 +   Position → latent image
+
 位置→潜像
 
 +   Velocity → Predicted noise
+
 速度 → 预测噪声
 
 +   Initial position → Initial random latent image
+
 初始位置→初始随机潜像
 
 +   Final position → Final clear latent image
+
 最终位置→最终清晰潜像
 
 #### Sampling example 采样示例
@@ -381,71 +381,68 @@ Denoising with Euler’s method and 15 sampling steps.
 
 ### Euler a
 
-（Euler a）采样器与欧拉采样器类似。但在每一步中，它都会减去比应有的更多的噪声，并添加一些随机噪声以匹配噪声计划。去噪图像取决于前面步骤中添加的特定噪声。因此，它是一个祖先采样器，从某种意义上说，图像去噪的路径取决于每个步骤中添加的特定随机噪声。如果再做一次，结果就会不一样。
+（`Euler a`）采样器与欧拉采样器类似。但在每一步中，它都会减去比应有的更多的噪声，并添加一些随机噪声以匹配噪声计划。去噪图像取决于前面步骤中添加的特定噪声。因此，它是一个祖先采样器，从某种意义上说，图像去噪的路径取决于每个步骤中添加的特定随机噪声。如果再做一次，结果就会不一样。
 
 ### DDIM
 
-去噪扩散隐式模型 (DDIM) 是最早用于求解扩散模型的采样器之一。它基于这样的思想：每个步骤的图像可以通过添加以下三个分量来近似。
 
-1.  Final image 最终图像
 
-1.  Image direction pointing to the image at the current step
-图像方向指向当前步骤的图像
+# 扩散模型采样器
 
-1.  Random noise 随机噪声
+## 去噪扩散隐式模型 (DDIM)
 
-在进行最后一步之前我们如何知道最终图像？ DDIM 采样器使用去噪图像对其进行近似。类似地，图像方向由噪声预测器估计的噪声来近似。
+去噪扩散隐式模型（`DDIM`）是最早用于求解扩散模型的采样器之一。它基于这样的思想：每个步骤的图像可以通过添加以下三个分量来近似。
 
-### LMS and LMS Karras
+1. `Final image` 最终图像
+2. `Image direction pointing to the image at the current step` 图像方向指向当前步骤的图像
+3. `Random noise` 随机噪声
 
-与欧拉方法非常相似，线性多步法 (LMS) 是求解常微分方程的标准方法。它的目的是通过巧妙地使用先前时间步骤的值来提高准确性。 AUTOMATIC1111 默认使用最多 4 个最后值。
+在进行最后一步之前我们如何知道最终图像？`DDIM` 采样器使用去噪图像对其进行近似。类似地，图像方向由噪声预测器估计的噪声来近似。
 
-LMS Karras 使用 Karras 噪声表。
+## 线性多步法 (`LMS`) 与 `LMS Karras`
 
-### Heun
+与欧拉方法非常相似，线性多步法（`LMS`）是求解常微分方程的标准方法。它的目的是通过巧妙地使用先前时间步骤的值来提高准确性。`AUTOMATIC1111` 默认使用最多 4 个最后值。
 
-Heun 方法是对 Euler 方法更精确的改进。但它每一步需要预测噪声两次，因此比欧拉慢两倍。
+`LMS Karras` 使用 `Karras` 噪声表。
 
-### DPM 采样器
+## Heun 方法
 
-扩散概率模型求解器 (DPM-Solvers) 属于新开发的扩散模型求解器系列。它们是 AUTOMATIC1111 中的以下求解器。
+`Heun` 方法是对 `Euler` 方法更精确的改进。但它每一步需要预测噪声两次，因此比欧拉慢两倍。
 
-+   DPM2
+## DPM 采样器
 
-+   DPM2 Karras
+扩散概率模型求解器（`DPM-Solvers`）属于新开发的扩散模型求解器系列。它们是 `AUTOMATIC1111` 中的以下求解器。
 
-+   DPM2 a
++ `DPM2`
++ `DPM2 Karras`
++ `DPM2 a`
++ `DPM2 a Karras`
++ `DPM Fast`
++ `DPM adaptive`
++ `DPM Karras`
 
-+   DPM2 a Karras
+`DPM2` 是 `DPM-Solver` 文章的 `DPM-Solver-2`（算法 1）。求解器精确到二阶。
 
-+   DPM Fast
+除了使用 `Karras` 噪声调度器之外，`DPM2 Karras` 与 `DPM2` 相同。
 
-+   DPM adaptive
+`DPM2 a` 几乎与 `DPM2` 相同，只是每个采样步骤都添加了噪声。这使其成为祖先采样器。
 
-+   DPM Karras
+`DPM2 a Karras` 几乎与 `DPM2 a` 相同，只是使用了 `Karras` 噪声表。
 
-DPM2 是 DPM-Solver 文章的 DPM-Solver-2（算法 1）。求解器精确到二阶。
+`DPM Fast` 是具有统一噪声表的 `DPM` 求解器的变体。直到第一个订单为止都是准确的。因此它的速度是 `DPM2` 的两倍。
 
-除了使用 Karras 噪声调度器之外，DPM2 Karras 与 DPM2 相同。
+`DPM Adaptive` 是具有自适应噪声调度的一阶 `DPM` 求解器。它会忽略您设置的步数并自适应地确定自己的步数。
 
-DPM2 a 几乎与 DPM2 相同，只是每个采样步骤都添加了噪声。这使其成为祖先采样器。
+`DPM++` 采样器是 `DPM` 的改进版本。
 
-DPM2 a Karras 几乎与 DPM2 a 相同，只是使用了 Karras 噪声表。
+## UniPC 采样器
 
-DPM Fast 是具有统一噪声表的 DPM 求解器的变体。直到第一个订单为止都是准确的。因此它的速度是 DPM2 的两倍。
+`UniPC`（`Unified Predictor Corrector`方法）是2023年新开发的扩散采样器，由两部分组成
 
-DPM Adaptive 是具有自适应噪声调度的一阶 DPM 求解器。它会忽略您设置的步数并自适应地确定自己的步数。
++ `Unified predictor` (`UniP`)
+  统一预测器 (`UniP`)
 
-DPM++ 采样器是 DPM 的改进版本。
-
-### UniPC
-
-UniPC（Unified Predictor Corrector方法）是2023年新开发的扩散采样器，由两部分组成
-
-+   Unified predictor (UniP)
-统一预测器 (UniP)
-
-+   Unified corrector (UniC)
-统一校正器 (UniC)
++ `Unified corrector` (`UniC`)
+  统一校正器 (`UniC`)
 
 它支持任何求解器和噪声预测器。

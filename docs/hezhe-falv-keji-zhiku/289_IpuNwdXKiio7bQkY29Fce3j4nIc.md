@@ -1,6 +1,7 @@
+
 # 【密歇根州律协】AI 道德意见
 
-> 来源：[https://docs.feishu.cn/docx/KXHDdgjRgoHEq7xtuxxcdMJ2nJg](https://docs.feishu.cn/docx/KXHDdgjRgoHEq7xtuxxcdMJ2nJg)
+> 来源：`https://docs.feishu.cn/docx/KXHDdgjRgoHEq7xtuxxcdMJ2nJg`
 
 ---
 
@@ -14,7 +15,7 @@
 
 参考文献：MCJC 2(B), (C), MCJC 3(A)(1), (B)(1), RI-381, Mata v Avianca, Inc., 1:22-cv-01461 (S.D.N.Y.), 2023 年 7 月 7 日。
 
-## **核心内容**
+## 核心内容
 
 司法官员和律师一样，有道德义务保持对不断发展的技术的掌握，并进行进一步的自我教育，包括但不限于 AI。《密歇根职业行为规则》（MRPC）第 1.1 条规定：“律师应向客户提供合格的代理。”同时，MRPC 第 1.1 条的解释也明确提到了技术能力。这种能力的要求也适用于司法官员。随着技术使用的增加，对于保持对可用技术的掌握及其使用方法，以及使用该技术是否会影响司法判决的能力要求也随之增加。
 

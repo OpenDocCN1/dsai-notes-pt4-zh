@@ -1,10 +1,9 @@
+
 # 2023-09-14用AIGC来薅内容平台的羊毛？趁早打消这个念头-36氪
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/CVrodrGZlosjBKxTTzFcpzLlnWe](https://xuqiwei1986.feishu.cn/docx/CVrodrGZlosjBKxTTzFcpzLlnWe)
-
-> 🔗 原文链接： https://36kr.com/p/2431667975836293
-
 >
+> 🔗 原文链接：https://36kr.com/p/2431667975836293
 
 继文心一言正式面向所有用户开放后，腾讯的混元、阿里的通义千问也陆续与大家见面了。一时间，中文AI大模型也迎来了一轮集中爆发，无论是真的将AI视作生产力工具，还是将其作为谈资，许多朋友都不约而同地加入到了这场热潮中。自然而然的，借助AI大模型这一轮红利挣钱的声音又一次出现了。
 

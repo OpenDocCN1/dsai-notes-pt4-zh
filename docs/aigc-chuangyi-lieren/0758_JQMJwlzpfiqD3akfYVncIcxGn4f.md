@@ -1,16 +1,17 @@
+
 # Runway最新视频模型Gen-3 Alpha案例120+
 
 > 来源：[https://aigcreative.feishu.cn/docx/Lu0fdpdGXoPBChxWBmxcZe5Nnhf](https://aigcreative.feishu.cn/docx/Lu0fdpdGXoPBChxWBmxcZe5Nnhf)
 
 ![](img/ee63ce0c34d381d37e350f6736d3baed.png)
 
-# 官方宣传片：
+## 官方宣传片
 
 ![](img/07904e708631ae52eebab94c786d14c8.png)
 
 [X2Twitter.com_1802687085247119361(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VHxdbSSGcoJwqOxlXS2csqeLnjb)
 
-# 短片：
+## 短片
 
 ![](img/a6a08c84e25058008ae3eb48b3fd9d1f.png)
 
@@ -60,7 +61,7 @@
 
 [X2Twitter.com_1806881793280442368(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FFbPbU9ouopPKoxPSyScZoPHnsd)
 
-# 文字字符类：
+## 文字字符类
 
 ![](img/cfb2fb265170581590651757fadfde6e.png)
 
@@ -162,7 +163,7 @@
 
 [Luma (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HE1XbfQXKo3L9MxhdTgc9yb5nag)
 
-# 10s片段：
+## 10s片段
 
 ![](img/028f0ad5dfce0545c5b5a0cd50829cf9.png)
 
@@ -174,165 +175,169 @@
 
 ![](img/4cb4a13ca1110b6e3145194d717eee01.png)
 
-[X2Twitter.com_1806810863648620544(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MYzFbuVxaod1SrxgQFqccYebnHg)
 
-![](img/ca96e252e6777ca79964bca8169d62b8.png)
 
-[X2Twitter.com_1806810874679611392(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jj66bVxIxoZQVlx38eLcI6Qunwe)
+[`X2Twitter.com_1806810863648620544(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MYzFbuVxaod1SrxgQFqccYebnHg)
 
-![](img/9d937472d1bd4cad8f3b710869e164c9.png)
+![`img/ca96e252e6777ca79964bca8169d62b8.png`](img/ca96e252e6777ca79964bca8169d62b8.png)
 
-[X2Twitter.com_0XKcODW6IPDRU5Aa(720p) (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lnm4bKg3loqxxHxmD1fcVhchnSD)
+[`X2Twitter.com_1806810874679611392(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jj66bVxIxoZQVlx38eLcI6Qunwe)
 
-![](img/f16e4ec92b7b97e9c1701e6c4279d50f.png)
+![`img/9d937472d1bd4cad8f3b710869e164c9.png`](img/9d937472d1bd4cad8f3b710869e164c9.png)
 
-[X2Twitter.com_1804288721425985536(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UcC3bAYGpoY1SsxJTgZcyQjFn0g)
+[`X2Twitter.com_0XKcODW6IPDRU5Aa(720p) (1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lnm4bKg3loqxxHxmD1fcVhchnSD)
 
-![](img/f3ec739f4d19df2e0306a58ef9c41ab8.png)
+![`img/f16e4ec92b7b97e9c1701e6c4279d50f.png`](img/f16e4ec92b7b97e9c1701e6c4279d50f.png)
 
-[X2Twitter.com_1804320906405113856(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GX0Gb1LfNocMZGxXeHgcvURQn2e)
+[`X2Twitter.com_1804288721425985536(1080p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UcC3bAYGpoY1SsxJTgZcyQjFn0g)
 
-![](img/950b556f605e9f02a385c2d8212b6917.png)
+![`img/f3ec739f4d19df2e0306a58ef9c41ab8.png`](img/f3ec739f4d19df2e0306a58ef9c41ab8.png)
 
-[X2Twitter.com_1804377338118909952(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YhUAbhdaVoYXArxGJXZczoWdnqg)
+[`X2Twitter.com_1804320906405113856(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GX0Gb1LfNocMZGxXeHgcvURQn2e)
 
-![](img/c673fbf9a0436bd7ff53ebaa27963232.png)
+![`img/950b556f605e9f02a385c2d8212b6917.png`](img/950b556f605e9f02a385c2d8212b6917.png)
 
-[X2Twitter.com_1804669148099641344(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CP1SbuMsCoM6EExI5M0c0BvJnDb)
+[`X2Twitter.com_1804377338118909952(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YhUAbhdaVoYXArxGJXZczoWdnqg)
 
-![](img/616fd400059e3e50ca1838c1b30c59cc.png)
+![`img/c673fbf9a0436bd7ff53ebaa27963232.png`](img/c673fbf9a0436bd7ff53ebaa27963232.png)
 
-[X2Twitter.com_1805042381223256064(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MvlGbgwvmoWJ9FxhQMUcwBnznjf)
+[`X2Twitter.com_1804669148099641344(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CP1SbuMsCoM6EExI5M0c0BvJnDb)
 
-![](img/d639d3d2428a54e69d7d516ed7d7804c.png)
+![`img/616fd400059e3e50ca1838c1b30c59cc.png`](img/616fd400059e3e50ca1838c1b30c59cc.png)
 
-[X2Twitter.com_BA1xV-ykvpj3apfy(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/THHLb1IRuo5yCBxZcW9cCzQcnfg)
+[`X2Twitter.com_1805042381223256064(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MvlGbgwvmoWJ9FxhQMUcwBnznjf)
 
-![](img/2486c5aec470270c2e17fa8779e23396.png)
+![`img/d639d3d2428a54e69d7d516ed7d7804c.png`](img/d639d3d2428a54e69d7d516ed7d7804c.png)
 
-[X2Twitter.com_k1iU9qfFzUdslI5g(576p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G7pIb48smorKo4xBEgRc7HhJn6e)
+[`X2Twitter.com_BA1xV-ykvpj3apfy(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/THHLb1IRuo5yCBxZcW9cCzQcnfg)
 
-![](img/cf3d84028f7a520fc6fa9b5d9ff32aa5.png)
+![`img/2486c5aec470270c2e17fa8779e23396.png`](img/2486c5aec470270c2e17fa8779e23396.png)
 
-[X2Twitter.com_1802805124496044032(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CX2nbxVChogz2oxWkAccech6nKd)
+[`X2Twitter.com_k1iU9qfFzUdslI5g(576p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G7pIb48smorKo4xBEgRc7HhJn6e)
 
-![](img/da6ddaa6f9753395aa988d73e3f4cb2f.png)
+![`img/cf3d84028f7a520fc6fa9b5d9ff32aa5.png`](img/cf3d84028f7a520fc6fa9b5d9ff32aa5.png)
 
-[X2Twitter.com_1803288776749494272(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IQS4bM3MWoEkqUxgj5Ecbwzsntc)
+[`X2Twitter.com_1802805124496044032(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CX2nbxVChogz2oxWkAccech6nKd)
 
-![](img/81e3273541c477dd4fb0de74f4e0160e.png)
+![`img/da6ddaa6f9753395aa988d73e3f4cb2f.png`](img/da6ddaa6f9753395aa988d73e3f4cb2f.png)
 
-[X2Twitter.com_1803159976262705153(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SFqibXysmokXPzxfAYgcXBMTngQ)
+[`X2Twitter.com_1803288776749494272(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IQS4bM3MWoEkqUxgj5Ecbwzsntc)
 
-![](img/37c0b4983a46294c34d1f80e46a99132.png)
+![`img/81e3273541c477dd4fb0de74f4e0160e.png`](img/81e3273541c477dd4fb0de74f4e0160e.png)
 
-[X2Twitter.com_lsYfkiPpoWtrrvXf(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NTjcbnXr0oXwCUxUAITcBCUOnCb)
+[`X2Twitter.com_1803159976262705153(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SFqibXysmokXPzxfAYgcXBMTngQ)
 
-![](img/d994f5e339b3e926596a86ab0baa384f.png)
+![`img/37c0b4983a46294c34d1f80e46a99132.png`](img/37c0b4983a46294c34d1f80e46a99132.png)
 
-[X2Twitter.com_Aj9jUDiQjHTdIXwu(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FHWAbGQgPomEnFxa8cccfZMinMf)
+[`X2Twitter.com_lsYfkiPpoWtrrvXf(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NTjcbnXr0oXwCUxUAITcBCUOnCb)
 
-![](img/302e7af41873e9bc3f4b5c98d10132be.png)
+![`img/d994f5e339b3e926596a86ab0baa384f.png`](img/d994f5e339b3e926596a86ab0baa384f.png)
 
-[X2Twitter.com_1802702388769570816(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JHCQbcWnmoCLRKxEiYOcc1aMnsc)
+[`X2Twitter.com_Aj9jUDiQjHTdIXwu(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FHWAbGQgPomEnFxa8cccfZMinMf)
 
-![](img/8ae2a1e3c39606708378ebb26cf50a2a.png)
+![`img/302e7af41873e9bc3f4b5c98d10132be.png`](img/302e7af41873e9bc3f4b5c98d10132be.png)
 
-[X2Twitter.com_1802703059149291520(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K0FAbHI3PoOoClx29y5cF4Npn8c)
+[`X2Twitter.com_1802702388769570816(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JHCQbcWnmoCLRKxEiYOcc1aMnsc)
 
-![](img/72c081c8430a665b534575a42dce015f.png)
+![`img/8ae2a1e3c39606708378ebb26cf50a2a.png`](img/8ae2a1e3c39606708378ebb26cf50a2a.png)
 
-[X2Twitter.com_1802703327479902208(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FSSYbzcYio62Jgx8JqUccRaJndd)
+[`X2Twitter.com_1802703059149291520(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K0FAbHI3PoOoClx29y5cF4Npn8c)
 
-![](img/37c6af9e4a06b43e95733dafc353423e.png)
+![`img/72c081c8430a665b534575a42dce015f.png`](img/72c081c8430a665b534575a42dce015f.png)
 
-[X2Twitter.com_1802705102383276032(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UcOKb8zXKoyj3VxRweNccxSen0c)
+[`X2Twitter.com_1802703327479902208(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FSSYbzcYio62Jgx8JqUccRaJndd)
 
-![](img/c7ebea04aafc3988f7a1f72266ee2e13.png)
+![`img/37c6af9e4a06b43e95733dafc353423e.png`](img/37c6af9e4a06b43e95733dafc353423e.png)
 
-[X2Twitter.com_HAXAp4pjDFXV-r-b(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CQWGbln8koLRqqxWwoDcIZQqnCg)
+[`X2Twitter.com_1802705102383276032(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UcOKb8zXKoyj3VxRweNccxSen0c)
 
-![](img/4c9a3a2d5c5e7be8069853175b6fa515.png)
+![`img/c7ebea04aafc3988f7a1f72266ee2e13.png`](img/c7ebea04aafc3988f7a1f72266ee2e13.png)
 
-[X2Twitter.com_1802705563848957952(720p) (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wx5Ubi6p8oQLwux8qoscph7Jntf)
+[`X2Twitter.com_HAXAp4pjDFXV-r-b(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CQWGbln8koLRqqxWwoDcIZQqnCg)
 
-![](img/08f97d3bad6b01aada05c8279d657cb4.png)
+![`img/4c9a3a2d5c5e7be8069853175b6fa515.png`](img/4c9a3a2d5c5e7be8069853175b6fa515.png)
 
-[X2Twitter.com_k7OSBWHtO6fY7nAl(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HbLBbfHbqoEfEMxPWJjcoRpHnjk)
+[`X2Twitter.com_1802705563848957952(720p) (1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wx5Ubi6p8oQLwux8qoscph7Jntf)
 
-![](img/1164a7df4e5f6d2a20e5cc0c1e73fc70.png)
+![`img/08f97d3bad6b01aada05c8279d657cb4.png`](img/08f97d3bad6b01aada05c8279d657cb4.png)
 
-[X2Twitter.com_1802793981471834112(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G0JJbtLlIoUgsQxunt1cx30bnnV)
+[`X2Twitter.com_k7OSBWHtO6fY7nAl(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HbLBbfHbqoEfEMxPWJjcoRpHnjk)
 
-![](img/0f76490d9a0069b02313dcf4c1eeea77.png)
+![`img/1164a7df4e5f6d2a20e5cc0c1e73fc70.png`](img/1164a7df4e5f6d2a20e5cc0c1e73fc70.png)
 
-[X2Twitter.com_1802794172232945665(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BlHLbVLPwoe6wRxEy7Hc7tp3n5b)
+[`X2Twitter.com_1802793981471834112(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G0JJbtLlIoUgsQxunt1cx30bnnV)
 
-![](img/58add67d64e8933b0c987e88b8598167.png)
+![`img/0f76490d9a0069b02313dcf4c1eeea77.png`](img/0f76490d9a0069b02313dcf4c1eeea77.png)
 
-[X2Twitter.com_1802793958025629698(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XgOKbw9D7oLKkCxForEcNHuWnFb)
+[`X2Twitter.com_1802794172232945665(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BlHLbVLPwoe6wRxEy7Hc7tp3n5b)
 
-![](img/ead9c82b5b77074036c44ab823928704.png)
+![`img/58add67d64e8933b0c987e88b8598167.png`](img/58add67d64e8933b0c987e88b8598167.png)
 
-[X2Twitter.com_1802882831506681856(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HWJybYxLqoVZIExW23Bcw5MonGf)
+[`X2Twitter.com_1802793958025629698(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XgOKbw9D7oLKkCxForEcNHuWnFb)
 
-![](img/85a12a825ecb074e2388ed2cfa6bb9a9.png)
+![`img/ead9c82b5b77074036c44ab823928704.png`](img/ead9c82b5b77074036c44ab823928704.png)
 
-[X2Twitter.com_1802705563848957952(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5aubx3CRosb1cxRsEFct3iLnjb)
+[`X2Twitter.com_1802882831506681856(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HWJybYxLqoVZIExW23Bcw5MonGf)
 
-![](img/8ee83c34079a8d024fa349b59c728b5e.png)
+![`img/85a12a825ecb074e2388ed2cfa6bb9a9.png`](img/85a12a825ecb074e2388ed2cfa6bb9a9.png)
 
-[X2Twitter.com_1802729863243292672(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/URkQboliAo3toBx29UicxuN5nZd)
+[`X2Twitter.com_1802705563848957952(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5aubx3CRosb1cxRsEFct3iLnjb)
 
-![](img/4705ea1677f593c8dc3fc29702dd882c.png)
+![`img/8ee83c34079a8d024fa349b59c728b5e.png`](img/8ee83c34079a8d024fa349b59c728b5e.png)
 
-[X2Twitter.com_CTn-1F5Ew9ysq2Y3(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B39mbpRmOoQXaaxS8aqcEutynyf)
+[`X2Twitter.com_1802729863243292672(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/URkQboliAo3toBx29UicxuN5nZd)
 
-![](img/23b4eeedc13dfbd2eb76cd1617662dc4.png)
+![`img/4705ea1677f593c8dc3fc29702dd882c.png`](img/4705ea1677f593c8dc3fc29702dd882c.png)
 
-[X2Twitter.com_1802705871350177792(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JuUHbQ09zoB5KLxNkamcCZoDnmc)
+[`X2Twitter.com_CTn-1F5Ew9ysq2Y3(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B39mbpRmOoQXaaxS8aqcEutynyf)
 
-![](img/823dde6045db04840d6016f115d7bdbd.png)
+![`img/23b4eeedc13dfbd2eb76cd1617662dc4.png`](img/23b4eeedc13dfbd2eb76cd1617662dc4.png)
 
-[X2Twitter.com_1802705871354368000(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XS8Eb20OjoeCiyxJ6ihcdpE3nCd)
+[`X2Twitter.com_1802705871350177792(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JuUHbQ09zoB5KLxNkamcCZoDnmc)
 
-![](img/944d29308148013cf1076ed0983051c8.png)
+![`img/823dde6045db04840d6016f115d7bdbd.png`](img/823dde6045db04840d6016f115d7bdbd.png)
 
-[gen-3-alpha-output-003.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nuh9bajGrophsgxVjnrc4MaWnDb)
+[`X2Twitter.com_1802705871354368000(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XS8Eb20OjoeCiyxJ6ihcdpE3nCd)
 
-![](img/6361668846be0fd5396bc3fc1f4ed4ec.png)
+![`img/944d29308148013cf1076ed0983051c8.png`](img/944d29308148013cf1076ed0983051c8.png)
 
-[gen-3-alpha-output-004.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YNRLbJNd1oaWItxeX0tcNWIJnGd)
+[`gen-3-alpha-output-003.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nuh9bajGrophsgxVjnrc4MaWnDb)
 
-![](img/5b2e96d88547159e43820df1e72a0623.png)
+![`img/6361668846be0fd5396bc3fc1f4ed4ec.png`](img/6361668846be0fd5396bc3fc1f4ed4ec.png)
 
-[X2Twitter.com_1802690528649019395(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ai15bNBq0oIYoRx6cN2cq5T3nUd)
+[`gen-3-alpha-output-004.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YNRLbJNd1oaWItxeX0tcNWIJnGd)
 
-![](img/32943a28141ebc4ec64059f2d828e213.png)
+![`img/5b2e96d88547159e43820df1e72a0623.png`](img/5b2e96d88547159e43820df1e72a0623.png)
 
-[X2Twitter.com_1802690392619429888(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OdSMbZIipovaAMxwbGucmRw8ndb)
+[`X2Twitter.com_1802690528649019395(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ai15bNBq0oIYoRx6cN2cq5T3nUd)
 
-![](img/8e6b66ca68c576587e5e4c45d34767f6.png)
+![`img/32943a28141ebc4ec64059f2d828e213.png`](img/32943a28141ebc4ec64059f2d828e213.png)
 
-[Introducing Gen-3 Alpha A New Frontier for Video Generation.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dk9RbXHaboScxhxcFUacr93tnUh)
+[`X2Twitter.com_1802690392619429888(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OdSMbZIipovaAMxwbGucmRw8ndb)
 
-![](img/f7b783f64badb7c0bf65f1e4e3522e9c.png)
+![`img/8e6b66ca68c576587e5e4c45d34767f6.png`](img/8e6b66ca68c576587e5e4c45d34767f6.png)
 
-[gen-3-alpha-output-003 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CxOrbmE6Jo8UMvxt9PgcZm4bnwe)
+[`Introducing Gen-3 Alpha A New Frontier for Video Generation.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dk9RbXHaboScxhxcFUacr93tnUh)
 
-![](img/df492f0fc1667adeecec979555b5176d.png)
+![`img/f7b783f64badb7c0bf65f1e4e3522e9c.png`](img/f7b783f64badb7c0bf65f1e4e3522e9c.png)
 
-[X2Twitter.com_Rjv8CaAPBI7E8rRU(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Apa1bkZa7o9mxkxUu6ncR9pAnpd)
+[`gen-3-alpha-output-003 (1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CxOrbmE6Jo8UMvxt9PgcZm4bnwe)
 
-![](img/757c0730ad0f5f4482a5135e345c3e0a.png)
+![`img/df492f0fc1667adeecec979555b5176d.png`](img/df492f0fc1667adeecec979555b5176d.png)
 
-[X2Twitter.com_1802705616752050176(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UdtvbKNFwoZhCdx0jmnc5Lajndd)
+[`X2Twitter.com_Rjv8CaAPBI7E8rRU(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Apa1bkZa7o9mxkxUu6ncR9pAnpd)
 
-![](img/f98d207d165578b49ba44e4da02522a2.png)
+![`img/757c0730ad0f5f4482a5135e345c3e0a.png`](img/757c0730ad0f5f4482a5135e345c3e0a.png)
 
-[gen-3-alpha-output-007 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwEbbVG9soIGWVxUug5cKDZhnld)
+[`X2Twitter.com_1802705616752050176(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UdtvbKNFwoZhCdx0jmnc5Lajndd)
 
-![](img/446b8f786b166e914f6098b1486a2b56.png)
+![`img/f98d207d165578b49ba44e4da02522a2.png`](img/f98d207d165578b49ba44e4da02522a2.png)
+
+[`gen-3-alpha-output-007 (1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HwEbbVG9soIGWVxUug5cKDZhnld)
+
+![`img/446b8f786b166e914f6098b1486a2b56.png`](img/446b8f786b166e914f6098b1486a2b56.png)
+
+
 
 [Introducing Gen-3 Alpha A New Frontier for Video Generation (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RISMbTbaSoAN54xBIjVcN302nrf)
 
@@ -490,44 +495,36 @@
 
 ![](img/769f06fa7cb11e54d70158806ea4bd5f.png)
 
-[Introducing Gen-3 Alpha A New Frontier for Video Generation (16).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UgPDb1foHo11edxOrmrceI46npd)
 
+
+[Introducing Gen-3 Alpha A New Frontier for Video Generation (16).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UgPDb1foHo11edxOrmrceI46npd)
 ![](img/4a4b2802c17e6c235b3d23707a8b942e.png)
 
 [Introducing Gen-3 Alpha A New Frontier for Video Generation (17).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lgfvbj6UboY615xYWHuclJ3in0O)
-
 ![](img/5d08c1e437c5c409c827e6a634e3abe6.png)
 
 [gen-3-alpha-output-002 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EULYbYkacon3fMxBPnectayGnDd)
-
 ![](img/7367bf59dad40bfbea2174abb789f45c.png)
 
 [gen-3-alpha-output-011.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ez0wbWpqdo1nrVxUXJBceXhOnub)
-
 ![](img/364f0b3ad0e50caea94cb7bb6d84d9b9.png)
 
 [Introducing Gen-3 Alpha A New Frontier for Video Generation (18).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JOUZbpvjSoGzwvxHLvEc6LMOnDA)
-
 ![](img/03d32a365c34544089ca95fe27c74f84.png)
 
 [Introducing Gen-3 Alpha A New Frontier for Video Generation (19).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BMgLb1VhBoF6pxx5jubc7m5InJf)
-
 ![](img/8294ffe9e032195c88345befa98677b8.png)
 
 [Introducing Gen-3 Alpha A New Frontier for Video Generation (20).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DD9sbFFO4odU2MxYgTvcdrYenLh)
-
 ![](img/0aa91e80e3a7493254112f5afc67641b.png)
 
 [gen-3-alpha-output-009.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LQjQbMSaboTkEixTKtlcDrDKndc)
-
 ![](img/c3dee67f7d5cf3f98b4eba1434dfa40b.png)
 
 [gen-3-alpha-output-002 (3).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GEsrbpa9Yotncjx2aa6cfhENnmf)
-
 ![](img/a392d10d1353faf556af98fa105c9963.png)
 
 [gen-3-alpha-output-006 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FT64buKJ4o0c4WxKlbRcuz8lnub)
-
 ![](img/7550d928a6eb4f54465b1b0071fb5390.png)
 
 [Introducing Gen-3 Alpha A New Frontier for Video Generation (21).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YOTzbInHNofrfUxdqmxcuSXMn4T)

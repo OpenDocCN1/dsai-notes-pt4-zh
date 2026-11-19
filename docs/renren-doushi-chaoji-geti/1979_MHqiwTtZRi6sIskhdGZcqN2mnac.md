@@ -1,10 +1,8 @@
+
 # 2023-08-21开启 AI 创新之旅！“华为云杯”2023 人工智能应用创新大赛等你来挑战 - IT之家
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/UuvqdDpLOodP0Exs6ytcF4pxnDD](https://xuqiwei1986.feishu.cn/docx/UuvqdDpLOodP0Exs6ytcF4pxnDD)
-
 > 🔗 原文链接： h[ttps://www.ithom](https://www.ithome.com/0/713/717.htm)e.com/0/713/717.htm
-
->
 
 近年来，人工智能技术的发展如日中天，深刻地改变着我们的生活方式和产业格局。
 

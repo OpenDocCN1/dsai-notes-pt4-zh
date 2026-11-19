@@ -1,16 +1,15 @@
+
 # 奇绩大模型日报（7月 26日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/Fe9jd8lHzoyeTtx3lXPcU6jbnUd](https://miracleplus.feishu.cn/docx/Fe9jd8lHzoyeTtx3lXPcU6jbnUd)
 
-# 推特
+## 推特
 
 ### OpenAI推出SearchGPT：我们认为搜索还有比现在更好的空间空间
 
 https://x.com/sama/status/1816551657158877187?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
-[我们认为搜索还有比现在更好的空间。
-
-我们正在推出一](https://t.co/A28Y03X1So)[个](https://t.co/A28Y03X1So)名为 SearchGPT 的新原型： https://openai.com/index/searchgpt-prototype/…
+[我们认为搜索还有比现在更好的空间。我们正在推出一个名为 SearchGPT 的新原型](https://t.co/A28Y03X1So)：https://openai.com/index/searchgpt-prototype/…
 
 我们将从原型中学习，使其变得更好，然后将技术集成到 ChatGPT 中，使其实时且最大程度地提供帮助。
 
@@ -54,29 +53,26 @@ https://x.com/ollama/status/1816633415770472485?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
 Ollama 0.3 带工具支持！
 
-您[现在可以对 Llama 3.1 ](https://t.co/T3yFy5HRO6)[等](https://t.co/T3yFy5HRO6)流行模型使用工具调用！
+[您现在可以对 Llama 3.1 等流行模型使用工具调用！](https://t.co/T3yFy5HRO6)
 
 https://ollama.com/blog/tool-support…
 
 示例工具包括：
 
-函数和API
-
-网页浏览
-
-代码解释器
-
-以及更多！
+- 函数和API
+- 网页浏览
+- 代码解释器
+- 以及更多！
 
 快速线程
 
 ![](img/0b4653cd334babe7743f44aa530d0942.png)
 
-###  SGLang Runtime v0.2：显著的推理优化功能，完全开源并由python实现
+### SGLang Runtime v0.2：显著的推理优化功能，完全开源并由python实现
 
 https://x.com/lmsysorg/status/1816515251745214853?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
-我们很高兴地宣布 SG[Lang Runtime v0.2 的里程碑版本，经过几](https://t.co/ipq3FL9MNi)[个](https://t.co/ipq3FL9MNi)月的努力，它具有显著的推理优化功能。
+我们很高兴地宣布 SGLang Runtime v0.2 的里程碑版本，经过几个月的努力，它具有显著的推理优化功能。
 
 与 TRT-LLM 相比，它的吞吐量提高了 2.1 倍，与 vLLM 相比，吞吐量提高了 3.8 倍。当在带有 FP8/BF16 的 A100/H100 上为 Llama-8B 至 405B 型号提供服务时，它始终如一地提供卓越的性能。
 
@@ -86,7 +82,7 @@ SGLang 完全开源并用 Python 实现。随着原型逐渐成熟，我们邀�
 
 ![](img/2dc1194e1c1b5119f512e4b468a009c0.png)
 
-# 资讯
+## 资讯
 
 ### 谷歌也开“卷”了：Gemini聊天机器人换上新模型，还能一键核查输出内容
 
@@ -104,13 +100,13 @@ Meta、OpenAI等大模型厂商密集发力之际，谷歌也宣布了一项重�
 
 https://mp.weixin.qq.com/s/TdO6V0kNdPxzyvuqJVgDkA
 
-家人们！微软**Bing**已面向小部分用户开启AI内测了——
+家人们！微软 Bing 已面向小部分用户开启AI内测了——
 
-**没错，此番对**标谷歌，一举在搜索结果中推出了“AI概述”，所问即所得。
+没错，此番对标谷歌，一举在搜索结果中推出了“AI概述”，所问即所得。
 
-不过可能是鉴于谷歌“翻车”（曾建议人们在披萨中添加**无毒**胶水）在前，Bing此次升级主打一个谨慎。
+不过可能是鉴于谷歌“翻车”（曾建议人们在披萨中添加无毒胶水）在前，Bing此次升级主打一个谨慎。
 
-**微软搜索主管Jo**rdi Ribas特意强调，传统的算法结果将始终占据页面高位。
+微软搜索主管 Jordi Ribas 特意强调，传统的算法结果将始终占据页面高位。
 
 ![](img/b32bf80083cfd7c663cbc6cd030aaa22.png)
 
@@ -140,9 +136,7 @@ https://mp.weixin.qq.com/s/dWCj0zLPeX8Z1iiKbd8dMQ
 
 ![](img/8d38dc3f3960465fc6c733c624ce9090.png)
 
-#
-
-# 产品
+## 产品
 
 ### Tidyread
 
@@ -164,7 +158,7 @@ AdsMoss 是一款专为 TikTok 广告设计的监测工具，帮助用户提高�
 
 ![](img/186667ba54831fd2defb3cd84e102a2d.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Thepi.pe
 
@@ -184,9 +178,9 @@ PhotoMaker V2 是一个图像生成模型，允许用户输入一张或几张人
 
 ![](img/cadea7276167af163dae698cb697a8bc.png)
 
-# 投融资
+## 投融资
 
-### **Uplimit 宣布获得 Salesforc**e Ventures 领投的 A 轮融资
+### Uplimit 宣布获得 Salesforce Ventures 领投的 A 轮融资
 
 贡献人：
 
@@ -232,7 +226,7 @@ https://mp.weixin.qq.com/s/puU4LE-zi_aA-O-GpoOuUg
 
 ![](img/6d6b951033b5df1545de927ea6960685.png)
 
-# 学习
+## 学习
 
 ### GPU虚拟化和池化技术解读
 
@@ -256,7 +250,7 @@ https://zhuanlan.zhihu.com/p/710830985?utm_psn=1799936461585387520
 
 ### 大模型时代的代码执行沙箱
 
-贡献人:
+贡献人：
 
 https://mp.weixin.qq.com/s/X54d0foyBS56lGFUPyOvTw
 
@@ -266,6 +260,8 @@ https://mp.weixin.qq.com/s/X54d0foyBS56lGFUPyOvTw
 
 ### 基于扩散模型的艺术风格三维物体生成方法
 
+
+
 贡献人：
 
 https://mp.weixin.qq.com/s/NDf9cvRM2EBpEUFBpe0CXQ
@@ -274,23 +270,23 @@ https://mp.weixin.qq.com/s/NDf9cvRM2EBpEUFBpe0CXQ
 
 ![](img/79c7154495164aa4df56c8310c86c5d8.png)
 
-### LLM推理加速：decode阶段的Attention在GPU上的优化
+### LLM推理加速：`decode`阶段的`Attention`在GPU上的优化
 
 贡献人：
 
 https://mp.weixin.qq.com/s/Sek1cnmPshuk9kK-XR59iw
 
-文章聚焦于在 GPU 上优化大语言模型（LLM）推理过程中 decode 阶段 Attention 计算的技术细节。首先，介绍了 RTP-LLM 推理加速引擎，它通过在 kernel 级别优化 GEMM 和 Attention 计算，提升了推理效率。在 Attention 计算中，通过将 BiasAdd 和 Rotary Embedding 融入到一个 kernel 中，实现了高效的计算流程。文章详细描述了 tensor 的 shape 变换，以及如何在 GPU 上利用并行计算和寄存器优化来提高性能。特别是在处理小批量（B）和长序列（S）时，通过调整任务划分和增加 device occupancy，有效地提升了计算效率。此外，对于超长序列，提出了 seq 切分的策略，以适应 GPU 的 smem 限制。在全局查询全局注意力（GQA）场景下，进一步优化了任务划分。最后，文章提出了 MMHA 优化的未来方向，包括寄存器用量优化、KV Cache 的 load 行为调整以及在 compute bound 场景下的计算模式调整，以及这些优化后的 kernel 将会开源，供社区参考和共建。
+文章聚焦于在 GPU 上优化大语言模型（LLM）推理过程中 `decode` 阶段 `Attention` 计算的技术细节。首先，介绍了 `RTP-LLM` 推理加速引擎，它通过在 `kernel` 级别优化 `GEMM` 和 `Attention` 计算，提升了推理效率。在 `Attention` 计算中，通过将 `BiasAdd` 和 `Rotary Embedding` 融入到一个 `kernel` 中，实现了高效的计算流程。文章详细描述了 `tensor` 的 `shape` 变换，以及如何在 GPU 上利用并行计算和寄存器优化来提高性能。特别是在处理小批量（`B`）和长序列（`S`）时，通过调整任务划分和增加 device occupancy，有效地提升了计算效率。此外，对于超长序列，提出了 `seq` 切分的策略，以适应 GPU 的 `smem` 限制。在 `GQA` 场景下，进一步优化了任务划分。最后，文章提出了 `MMHA` 优化的未来方向，包括寄存器用量优化、`KV Cache` 的 `load` 行为调整以及在 compute bound 场景下的计算模式调整，以及这些优化后的 `kernel` 将会开源，供社区参考和共建。
 
 ![](img/46d24306d73edc4610fe3fc71f5dd692.png)
 
-### Mistral Large 2开源！魔搭推理、微调实战教程
+### `Mistral Large 2`开源！魔搭推理、微调实战教程
 
 贡献人：
 
 https://mp.weixin.qq.com/s/pXqpCVd2pmFwqu6cCqrz3Q
 
-Mistral Large 2 模型在多语言和编程语言支持方面得到了加强，并在性能 / 成本上显示出优势。该模型在 ModelScope 上开源，提供了详尽的实战教程，包括模型下载、环境搭建、推理代码和微调流程。实战教程突出了技术细节，如使用 ms-swift 进行模型微调、利用自我认知数据集优化模型性能，以及通过 vLLM 进行推理加速。此外，还介绍了如何在多 GPU 环境下部署模型，确保技术应用的高效性和实用性。这些教程为开发者提供了一套完整的操作指南，以便在实际应用中利用 Mistral Large 2 模型进行有效的推理和微调。
+`Mistral Large 2` 模型在多语言和编程语言支持方面得到了加强，并在性能 / 成本上显示出优势。该模型在 `ModelScope` 上开源，提供了详尽的实战教程，包括模型下载、环境搭建、推理代码和微调流程。实战教程突出了技术细节，如使用 `ms-swift` 进行模型微调、利用自我认知数据集优化模型性能，以及通过 `vLLM` 进行推理加速。此外，还介绍了如何在多 GPU 环境下部署模型，确保技术应用的高效性和实用性。这些教程为开发者提供了一套完整的操作指南，以便在实际应用中利用 `Mistral Large 2` 模型进行有效的推理和微调。
 
 ![](img/e75075eef271a735cea569ad0ae0c676.png)
 
@@ -300,19 +296,17 @@ Mistral Large 2 模型在多语言和编程语言支持方面得到了加强，�
 
 https://mp.weixin.qq.com/s/SzrWnq_YQCltmMLeFkpr0w
 
-AI 音乐大模型利用音频 token 化和压缩技术，通过 Transformer 架构生成音乐。首先，将音乐的各维度（如节奏、和声、旋律）转换为 token 序列，然后通过码本（codebook）进行信息压缩，大幅度减少数据量。其次，采用双层压缩技术，进一步减少 token 量，使得大语言模型能够处理长序列音乐数据。这些技术的进步使得 AI 音乐在作曲、作词和演唱上取得了显著的提升，能够生成悦耳的音乐作品。然而，这些技术的应用也引发了版权侵犯的争议，三大唱片公司对 Suno 和 Udio 提起了诉讼。尽管如此，AI 音乐技术的未来仍然广阔，预计会继续推动音乐产业的变革。
+AI 音乐大模型利用音频 `token` 化和压缩技术，通过 `Transformer` 架构生成音乐。首先，将音乐的各维度（如节奏、和声、旋律）转换为 `token` 序列，然后通过码本（`codebook`）进行信息压缩，大幅度减少数据量。其次，采用双层压缩技术，进一步减少 `token` 量，使得大语言模型能够处理长序列音乐数据。这些技术的进步使得 AI 音乐在作曲、作词和演唱上取得了显著的提升，能够生成悦耳的音乐作品。然而，这些技术的应用也引发了版权侵犯的争议，三大唱片公司对 `Suno` 和 `Udio` 提起了诉讼。尽管如此，AI 音乐技术的未来仍然广阔，预计会继续推动音乐产业的变革。
 
 ![](img/0af989b20d53d3db4abcde0a3b70bbf9.png)
 
-# 声明
+## 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+`ChatGPT`；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（`HuggingFace`）；Naixu；Lizhi；Peter；Suoman；Jack
 
 封面生成——右脑科技
 
@@ -320,14 +314,12 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> `【日报知识库】`这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
-
 > 欢迎大家多多帮我们分享,转发~~
-
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 
 ![](img/53950240c0e668e245482c863d7ca470.png)

@@ -1,8 +1,9 @@
+
 # 加入「胡扯游戏」群
 
 > 来源：[https://huchegames.feishu.cn/docx/OD3EddyK1o76gix6YAzchZRgnNe](https://huchegames.feishu.cn/docx/OD3EddyK1o76gix6YAzchZRgnNe)
 
-胡扯游戏群是一个**游戏行业从业者**自由交流的场所。请大家**多发言，多互赞，多吹牛。**
+胡扯游戏群是一个游戏行业从业者自由交流的场所。请大家多发言，多互赞，多吹牛。
 
 群主曾老师介绍：[关于曾老师](https://huchegames.feishu.cn/wiki/Fh3Uwg78yiijp1kgZNHcXMwtnWf)。
 
@@ -12,23 +13,21 @@
 
 如果您是：
 
-1.  非游戏行业者，
+1. 非游戏行业者，
+1. 游戏行业纯商务，
+1. 无法按规则提供介绍者，
 
-1.  游戏行业纯商务，
+那么您不能进「胡扯游戏」群。
 
-1.  无法按规则提供介绍者，
+[加入「胡扯行业」群](https://huchegames.feishu.cn/wiki/CIsLwWc5Bi9h46kL21HcdU6ynkf)欢迎您进入要求更宽松的「胡扯行业」群：。
 
-那么您**不能进「胡扯游戏」群**。
+[加入「胡扯AI」群](https://huchegames.feishu.cn/wiki/MCqXw959OiHOsRkHQP2cnC23nqd)欢迎您进入专门聊 AI 发展的「胡扯 AI」群：。
 
-[加入「胡扯行业」群](https://huchegames.feishu.cn/wiki/CIsLwWc5Bi9h46kL21HcdU6ynkf)欢迎您进入要求更宽松的「胡扯行业」群： 。
-
-[加入「胡扯AI」群](https://huchegames.feishu.cn/wiki/MCqXw959OiHOsRkHQP2cnC23nqd)欢迎您进入专门聊 AI 发展的「胡扯 AI」群： 。
-
-[申请「胡扯游戏资源库」权限](https://huchegames.feishu.cn/wiki/WQA4wXobLiq7q2kbNDoctVh7n0n)若仅为「胡扯游戏资源库」而来，可阅读  。
+[申请「胡扯游戏资源库」权限](https://huchegames.feishu.cn/wiki/WQA4wXobLiq7q2kbNDoctVh7n0n)若仅为「胡扯游戏资源库」而来，可阅读。
 
 # 入群红包
 
-> 进群要🧧发红包（不**低于10人拼手气30元总额）**🧧，同时提供名片和自我介绍。
+> 进群要🧧发红包（不低于10人拼手气30元总额）🧧，同时提供名片和自我介绍。
 
 > 🧧30 元总额！不是每人30！真是的，总有人发错。
 
@@ -38,11 +37,9 @@
 
 入群三步走：
 
-1.  填写入群资料表。
-
-1.  **添加曾老师🛰️：**[填写入群资料表后怎么办？](https://huchegames.feishu.cn/wiki/EhAxwnXVOimURCkAzpBcjlvpnFd)料提交后，击右边链接加曾老🛰️拉您入群：
-
-1.  **入群后自助发红包和介绍。**
+1. 填写入群资料表。
+1. 添加曾老师🛰️：[填写入群资料表后怎么办？](https://huchegames.feishu.cn/wiki/EhAxwnXVOimURCkAzpBcjlvpnFd)料提交后，击右边链接加曾老🛰️拉您入群：
+1. 入群后自助发红包和介绍。
 
 ## 填写入群资料表：
 
@@ -58,7 +55,7 @@
 
 ASO头部广告平台创始人，曾年利润过亿。老传奇狂热玩家，目前打算开始做游戏发行拉起第二曲线，12年产品运营，用户裂变相关经验，进群希望和各位大佬多多学习多多交流，以及找优秀的iap产品！！！
 
-xxxx 游戏工作室，4个女孩子的小团队，主做可可爱爱女性向休闲游戏。程序和策划之前都是北漂，回西安在上家公司认识的，平均10年游戏研发经验，第一款小游戏，xxxx 刚上线2周，希望跟群内大佬了解发行知识，寻找合作机会。
+xxxx 游戏工作室，4个女孩子的小团队，主做可可爱爱女性向休闲游戏。程序和策划之前都是北漂，回西安在上家公司认识的，平均10年游戏研发经验，第一款小游戏，xxxx 刚上线2周，希望跟群内大佬了解发行知识，寻找合作机会。
 
 尘世中迷途小研发，风格偏商业化独游，节奏偏慢工细活，主做小游戏、APP、H5。近几年自研过重度卡牌、轻度休闲，中度混变等；苟活，0爆款。团队老技术和老策划出身，美术（买和外包为主）和运营（找发行为主）短板明显；希望跟群内大佬学习运营投放知识、认识合适的发行运营、遇到美术朋友有缘合作；多认识一些能分摊精神内耗的朋友~
 

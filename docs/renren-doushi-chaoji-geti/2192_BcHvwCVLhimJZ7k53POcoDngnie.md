@@ -1,90 +1,87 @@
+
 # AI产品丨01 Sora深度解析：OpenAI的文生视频革命
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Dh6Rd3e0QoJlSgx8oNjcvVYSnjg](https://xuqiwei1986.feishu.cn/docx/Dh6Rd3e0QoJlSgx8oNjcvVYSnjg)
+> 来源：<https://xuqiwei1986.feishu.cn/docx/Dh6Rd3e0QoJlSgx8oNjcvVYSnjg>
 
 # 前言
 
-一周前，OpenAI发布了文生视频软件Sora的一些训练成果，又一次惊艳了所有人。
+一周前，`OpenAI`发布了文生视频软件`Sora`的一些训练成果，又一次惊艳了所有人。
 
-![](img/17f549081777be767b95bb8f616a0f3c.png)
+![](`img/17f549081777be767b95bb8f616a0f3c.png`)
 
-![](img/931c66d7c0345dbcafe17b652e659160.png)
+![](`img/931c66d7c0345dbcafe17b652e659160.png`)
 
-![](img/67cd8094ca7b0e0ae501b1c8d60280e5.png)
+![](`img/67cd8094ca7b0e0ae501b1c8d60280e5.png`)
 
-[tokyo-walk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HI2YbDxFfoWwynxJoh7cmRn3n7e)
+[`tokyo-walk.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HI2YbDxFfoWwynxJoh7cmRn3n7e)
 
-![](img/10b28c28c09fe63429a3ec525d899009.png)
+![](`img/10b28c28c09fe63429a3ec525d899009.png`)
 
-[mitten-astronaut.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJTbbVThyoEiToxpwbsc6s9VnNd)
+[`mitten-astronaut.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WJTbbVThyoEiToxpwbsc6s9VnNd)
 
-各种关于Sora的报道铺面而来，我的朋友圈先是被卡兹克的文章刷屏，又看到了红衣教主周鸿祎的评价。
+各种关于`Sora`的报道铺面而来，我的朋友圈先是被卡兹克的文章刷屏，又看到了红衣教主周鸿祎的评价。
 
-![](img/fe69751a3e15b63ffc341cd1b0a008c2.png)
+![](`img/fe69751a3e15b63ffc341cd1b0a008c2.png`)
 
-![](img/d94294c93f49100f2a94f222b799ad7b.png)
+![](`img/d94294c93f49100f2a94f222b799ad7b.png`)
 
-我看完了Sora之后感觉这个产品确实很厉害，又是一个具有划时代意义的生成式AI产品，但感觉这一次的热度远远比之前GPT的热度更高一点，看了市面上关于Sora的很多文章，其实还是有点云里雾里的感觉，于是我基于市面上的文章和OpenAI官方的手册去研究了Sora，写下了这篇文章。
+我看完了`Sora`之后感觉这个产品确实很厉害，又是一个具有划时代意义的生成式AI产品，但感觉这一次的热度远远比之前`GPT`的热度更高一点，看了市面上关于`Sora`的很多文章，其实还是有点云里雾里的感觉，于是我基于市面上的文章和`OpenAI`官方的手册去研究了`Sora`，写下了这篇文章。
 
 文章主要包含以下几个部分的内容：
 
-1.  Sora相比Runway、Pika为什么是一个划时代的AI产品
+1. `Sora`相比`Runway`、`Pika`为什么是一个划时代的AI产品
+1. 文生成视频这赛道是什么样子，大家采用的技术方案有什么区别
+1. `Sora`的文生视频模型逻辑是什么？它的优点和缺点在哪？
+1. `Sora`对于视频领域的影响有多大
+1. 会带来哪些看起来还不错的赚钱机会？
 
-1.  文生成视频这赛道是什么样子，大家采用的技术方案有什么区别
-
-1.  Sora的文生视频模型逻辑是什么？它的优点和缺点在哪？
-
-1.  Sora对于视频领域的影响有多大
-
-1.  会带来哪些看起来还不错的赚钱机会？
-
-# 一、划时代产品Sora
+# 一、划时代产品`Sora`
 
 ## 1.1 案例对比
 
 让我们先拿几家产品最厉害的文生视频的例子拿出来对比一下。
 
-**Sora**
+`Sora`
 
-![](img/0f7c37920389dc81f99ead9548a30c72.png)
+![](`img/0f7c37920389dc81f99ead9548a30c72.png`)
 
-[tokyo-walk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aa87boSvqomezZxg3iMcl6w1nDc)
+[`tokyo-walk.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Aa87boSvqomezZxg3iMcl6w1nDc)
 
-**Runway**
+`Runway`
 
-![](img/ca277adbaf8d6c4a849cdfe3cea44cdd.png)
+![](`img/ca277adbaf8d6c4a849cdfe3cea44cdd.png`)
 
-[SaveTwitter.Net_1758129771987243010(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kwf8be7bIo5ZE8xEKUOct70knld)
+[`SaveTwitter.Net_1758129771987243010(720p).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kwf8be7bIo5ZE8xEKUOct70knld)
 
-**Pika**
+`Pika`
 
-![](img/d26d5e6823b0addd1ed57d0ffdf403e3.png)
+![](`img/d26d5e6823b0addd1ed57d0ffdf403e3.png`)
 
-[water_glass,neon,_promotion_movie,cinematic,wave_seed4906767018470925_upscaled.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XfJbbHXKzoowvux4OnUcQnr8nnf)
+[`water_glass,neon,_promotion_movie,cinematic,wave_seed4906767018470925_upscaled.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XfJbbHXKzoowvux4OnUcQnr8nnf)
 
-**让我们**忽略各种技术层面的评判标准，仅仅从真实度这一个上评估就可以看到这三家的产品差距天差地别。
+让我们忽略各种技术层面的评判标准，仅仅从真实度这一个上评估就可以看到这三家的产品差距天差地别。
 
-Sora给到的案例视频过于真实，如果不告诉你它是AI生成的视频，你或许会直接认为是人为拍摄的。
+`Sora`给到的案例视频过于真实，如果不告诉你它是AI生成的视频，你或许会直接认为是人为拍摄的。
 
-而Runway、Pika的产品还远远没有到这个地步，跟Sora就不是一个时代的产物了。
+而`Runway`、`Pika`的产品还远远没有到这个地步，跟`Sora`就不是一个时代的产物了。
 
-Runway还要在推特的评论区受到Sora的暴击。
+`Runway`还要在推特的评论区受到`Sora`的暴击。
 
-![](img/66cfb5ec54a7ef73855f026789615140.png)
+![](`img/66cfb5ec54a7ef73855f026789615140.png`)
 
-## 1.2 Sora的超越
+## 1.2 `Sora`的超越
 
-相较于其他模型，Sora的优势主要是三方面：时长、角度、世界模型。
+相较于其他模型，`Sora`的优势主要是三方面：时长、角度、世界模型。
 
 ### 1.2.1 可以生成长达60秒的视频
 
-目前Runway、Pika支持的视频一次最大长度是3-4秒，而Sora的长度为60秒。
+目前`Runway`、`Pika`支持的视频一次最大长度是3-4秒，而`Sora`的长度为60秒。
 
-![](img/f576cbfd2a57ef28f375f94a1a5429f2.png)
+![](`img/f576cbfd2a57ef28f375f94a1a5429f2.png`)
 
-[tokyo-walk.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NivNbl03moCd1cxik8ZcmnGynfh)
+[`tokyo-walk.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NivNbl03moCd1cxik8ZcmnGynfh)
 
-Prompt: A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.
+`Prompt: A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.`
 
 提示：一位时尚女性走在充满温暖发光霓虹和动态城市标识的东京街道上。她穿着黑色皮夹克、长红色连衣裙和黑色靴子，手持黑色手提包。她戴着墨镜和红色口红。她自信而随意地走着。街道潮湿且反光，创造出彩色灯光的镜面效果。许多行人在周围走动。
 
@@ -92,21 +89,21 @@ Prompt: A stylish woman walks down a Tokyo street filled with warm glowing neon 
 
 大家看一些抖音口播视频，基本上就是一个角度拍摄一镜到底的视频。
 
-![](img/67232f1938723678252b3705160b00c7.png)
+![](`img/67232f1938723678252b3705160b00c7.png`)
 
-[下载.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ISBzbpz55oBDIjxdKR2c49tyngd)
+[`下载.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ISBzbpz55oBDIjxdKR2c49tyngd)
 
 但我们看这个夏洛特烦恼王老师的视频，会发现他有多个角度来描述来表达。
 
-![](img/1f517eb3e800557b56f3df3c2e8984ca.png)
+![](`img/1f517eb3e800557b56f3df3c2e8984ca.png`)
 
-[下载 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EOEZbfkELohVocx4WP6cnfeOngf)
+[`下载 (2).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EOEZbfkELohVocx4WP6cnfeOngf)
 
-Runway和Pika是单角度的抖音口播视频，那么Sora就是一个多角度的影视视频。
+`Runway`和`Pika`是单角度的抖音口播视频，那么`Sora`就是一个多角度的影视视频。
 
-![](img/472819a6784f52e40761b96d6f79481d.png)
+![](`img/472819a6784f52e40761b96d6f79481d.png`)
 
-[simulation_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gr5mbUIfSoMdf0xl8cJcb0nXnJ9)
+[`simulation_3.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gr5mbUIfSoMdf0xl8cJcb0nXnJ9)
 
 多角度跟单角度的差距也就1000分和60分差距那么大吧。
 
@@ -116,105 +113,107 @@ Runway和Pika是单角度的抖音口播视频，那么Sora就是一个多角度
 
 比如说汽车开在路上能有尘土，海边会有涨潮落潮。
 
-![](img/700b761c1e1f624aed2b5812da86446e.png)
+![](`img/700b761c1e1f624aed2b5812da86446e.png`)
 
-[big-sur.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PzH2bzU44oiRWfx7utCciE3LnDb)
+[`big-sur.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PzH2bzU44oiRWfx7utCciE3LnDb)
 
-![](img/a94dae14d9551c34286069d750adc1c4.png)
+![](`img/a94dae14d9551c34286069d750adc1c4.png`)
 
-[ships-in-coffee.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcSvbPynQoPtGlxnnDCci6gln5f)
+[`ships-in-coffee.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcSvbPynQoPtGlxnnDCci6gln5f)
 
-![](img/3bb62cc3396ef6a61f1cc1ca509a9e59.png)
+![](`img/3bb62cc3396ef6a61f1cc1ca509a9e59.png`)
 
-[suv-in-the-dust.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KlqTbLGgWoRNymxyXQecYTXMn1f)
+[`suv-in-the-dust.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KlqTbLGgWoRNymxyXQecYTXMn1f)
 
-Sora通过海量的学习，能够理解世界，比如说海边的潮汐运动，车后的尘土。
+`Sora`通过海量的学习，能够理解世界，比如说海边的潮汐运动，车后的尘土。
 
 它是一种习得性的逻辑，这个世界它见过的东西，它能够模仿出来。
 
-**世界模型：它理解了这个世界。**
+`世界模型`：它理解了这个世界。
 
 # 二、文生视频赛道解析
 
 ## 2.1 AIGC热门方向
 
-正好我们接下来要讨论文生视频赛道，那让我们先对AIGC整个赛道做一个回顾：
+正好我们接下来要讨论文生视频赛道，那让我们先对`AIGC`整个赛道做一个回顾：
 
-AIGC（人工智能生成内容）和我们相关较大的热门赛道主要是以下五个：
+`AIGC`（人工智能生成内容）和我们相关较大的热门赛道主要是以下五个：
 
-1.  文**生文（Text-to-Tex**t）：这一赛道专注于利用AI技术生成文本内容，如新闻文章、小说、诗歌、代码等。代表产品有ChatGPT、Claude、Kimi、智普；目前存在很多不错的商用产品。
+1. 文生文（`Text-to-Text`）：这一赛道专注于利用AI技术生成文本内容，如新闻文章、小说、诗歌、代码等。代表产品有`ChatGPT`、`Claude`、`Kimi`、`智普`；目前存在很多不错的商用产品。
 
-1.  文**生图（Text-to-Ima**ge）：这一赛道涉及将文本描述转化为图像的技术；代表产品有DALL-E、Stable Diffusion、Midjourney等；目前存在很多不错的商用产品。
+1. 文生图（`Text-to-Image`）：这一赛道涉及将文本描述转化为图像的技术；代表产品有`DALL-E`、`Stable Diffusion`、`Midjourney`等；目前存在很多不错的商用产品。
 
-1.  音频生成（Text-to-Audio）：这一赛道专注于将文本转换为语音或音乐；代表产品有Google的Text-to-Music、Github开源项目Coqui TTS等。
+1. 音频生成（`Text-to-Audio`）：这一赛道专注于将文本转换为语音或音乐；代表产品有`Google`的`Text-to-Music`、`Github`开源项目`Coqui TTS`等。
 
-1.  数**字人（Digital Hum**ans）：这一赛道专注于创造和应用具有高度逼真外观、行为和交互能力的虚拟角色；代表产品DID、Heygen、硅基智能、风平智能；目前存在很多不错的商用产品。
+1. 数字人（`Digital Humans`）：这一赛道专注于创造和应用具有高度逼真外观、行为和交互能力的虚拟角色；代表产品`DID`、`Heygen`、`硅基智能`、`风平智能`；目前存在很多不错的商用产品。
 
-1.  文生视频（Text-to-Video）：这一赛道的目标是将文本描述**转化为视频内容。目前这一领**域还处于早期发展阶段，主要产品为：Runway和Pika，目前Sora带来一定的颠覆式创新；目前不存在好用的商用产品。
+1. 文生视频（`Text-to-Video`）：这一赛道的目标是将文本描述转化为视频内容。目前这一领域还处于早期发展阶段，主要产品为：`Runway`和`Pika`，目前`Sora`带来一定的颠覆式创新；目前不存在好用的商用产品。
 
-**文**生视频从技术实现路线上来说可以是这五个模块中最难的一个模块，不是Runway和Pika太弱，而是Sora过强。
+文生视频从技术实现路线上来说可以是这五个模块中最难的一个模块，不是`Runway`和`Pika`太弱，而是`Sora`过强。
 
 ## 2.2 文生视频技术路线区别
 
-Runway和Pika都使用了Diffusion Model技术，而Sora使用的是Diffusion Transformer技术。
+`Runway`和`Pika`都使用了`Diffusion Model`技术，而`Sora`使用的是`Diffusion Transformer`技术。
 
-让我们用一些更简单的例子来理解Diffusion Model和Diffusion Transformer，由于我对技术的理解有限，所以我召唤了万能的Kimi来给我讲个案例来分析一下：
+让我们用一些更简单的例子来理解`Diffusion Model`和`Diffusion Transformer`，由于我对技术的理解有限，所以我召唤了万能的`Kimi`来给我讲个案例来分析一下：
 
 想象一下，我们有一个艺术家，他想要创作一幅画。这幅画的创作过程可以类比为数据生成的过程。
 
-Diffusion Model（扩散模型）：
+`Diffusion Model`（扩散模型）：
 
-+   想象这个艺术家开始时只有一张白纸（初始状态，相当于高斯噪声）。他开始在纸上滴上颜料（扩散过程），随着时间的推移，颜料逐渐扩散开来，最终形成了一幅复杂的画作（数据点）。
++ 想象这个艺术家开始时只有一张白纸（初始状态，相当于高斯噪声）。他开始在纸上滴上颜料（扩散过程），随着时间的推移，颜料逐渐扩散开来，最终形成了一幅复杂的画作（数据点）。
 
-+   现在，艺术家想要复制这个过程来创作新的画作。他需要逆向工作：从已经完成的画作开始，逐步移除颜料，直到回到最初的白纸状态。这个过程需要他记住颜料是如何扩散的，然后逆向这个过程来生成新的画作。这个过程可能很慢，因为艺术家需要仔细地观察和模拟颜料的扩散过程。
++ 现在，艺术家想要复制这个过程来创作新的画作。他需要逆向工作：从已经完成的画作开始，逐步移除颜料，直到回到最初的白纸状态。这个过程需要他记住颜料是如何扩散的，然后逆向这个过程来生成新的画作。这个过程可能很慢，因为艺术家需要仔细地观察和模拟颜料的扩散过程。
 
-Diffusion Transformer（扩散变换器）：
+`Diffusion Transformer`（扩散变换器）：
 
-+   在这个例子中，我们给艺术家提供了一个特殊的工具——一个智能画笔（Transformer结构）。这个智能画笔能够记住颜料在纸上的扩散模式，并且能够快速地在不同区域之间传递信息，帮助艺术家理解整个画作的结构和细节。
++ 在这个例子中，我们给艺术家提供了一个特殊的工具——一个智能画笔（`Transformer`结构）。这个智能画笔能够记住颜料在纸上的扩散模式，并且能够快速地在不同区域之间传递信息，帮助艺术家理解整个画作的结构和细节。
 
-+   当艺术家想要创作新画作时，这个智能画笔可以更快地模拟颜料的扩散过程，因为它能够同时处理整幅画作的多个部分，而不是一次只处理一个点。这样，艺术家可以更快地从白纸状态生成新的画作，同时保持高质量的输出。
++ 当艺术家想要创作新画作时，这个智能画笔可以更快地模拟颜料的扩散过程，因为它能够同时处理整幅画作的多个部分，而不是一次只处理一个点。这样，艺术家可以更快地从白纸状态生成新的画作，同时保持高质量的输出。
 
-**Sora和Runway和Pika最大的不同在Tran**sformer赋予的它对世界的理解能力。
+`Sora`和`Runway`和`Pika`最大的不同在`Transformer`赋予的它对世界的理解能力。
 
-# 三、Sora能力解析
+# 三、`Sora`能力解析
 
-OpenAI发布了多篇关于Sora的文章，我主要基于OpenAI官方公布的文章来给大家解析Sora的能力
+`OpenAI`发布了多篇关于`Sora`的文章，我主要基于`OpenAI`官方公布的文章来给大家解析`Sora`的能力
 
-参考文章：[Video generation models](https://openai.com/research/video-generation-models-as-world-simulators#fn-14) as world simulators
+参考文章：`Video generation models` as world simulators
 
-## 3.1 Sora介绍
+## 3.1 `Sora`介绍
 
-**Sora 是一个能够根据文本指令**创造现实和富有想象力场景的人工智能模型。
+`Sora` 是一个能够根据文本指令创造现实和富有想象力场景的人工智能模型。
 
-OpenAI正在教授人工智能理解和模拟动态物理世界，目标是训练能够帮助人们解决现实世界互动的问题的模型。
+`OpenAI`正在教授人工智能理解和模拟动态物理世界，目标是训练能够帮助人们解决现实世界互动的问题的模型。
 
-1.  Sora 能够生成长达一分钟的视频，同时保持视觉质量和对遵循用户的提示词。（OpenAI原文）
+1. `Sora` 能够生成长达一分钟的视频，同时保持视觉质量和对遵循用户的提示词。（`OpenAI`原文）
 
 一分钟的视频我们在开头介绍过很多次了，这里主要讲一下遵循用户的提示词。
 
-原文：Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt.
+原文：Introducing `Sora`, our `text-to-video` model. `Sora` can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt.
 
 其实刚刚看到这里我是有点懵的状态，为什么遵循用户的提示词这个事情要单独拿出来说一下？按道理遵循用户的提示词不应该是一个模型应该做到的吗？
 
 我去把它的提示词和视频都看了一下，发现它的提示词的每一个点，在视频都有体现。
 
-**Sora对文本和视频都有非常深刻的理解且具有**强大的映射能力，这是它世界模型强大之处。
+`Sora`对文本和视频都有非常深刻的理解且具有强大的映射能力，这是它世界模型强大之处。
 
-![](img/a91d0b30aa6e5d601fd07c57a0d6612a.png)
+![](`img/a91d0b30aa6e5d601fd07c57a0d6612a.png`)
 
-[wooly-mammoth.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HyfnbyjfAo0yRgxZeJ8cV255neb)
+[`wooly-mammoth.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HyfnbyjfAo0yRgxZeJ8cV255neb)
 
-Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.
+`Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.`
 
 几只巨大的长毛猛犸象正踏步穿过一片雪地，它们长长的羊毛状皮毛在行走时随风轻轻飘动。远处是被雪覆盖的树木和壮观的雪顶山脉，在午后的阳光下，天空中的薄云和高悬的太阳营造出温暖的光辉。低角度的摄像机视角令人惊叹，捕捉到了这些大型毛茸茸的哺乳动物，呈现出美丽的摄影作品和景深效果。
 
-![](img/006e86d06fc928607662c3d9061e8ddb.png)
+![](`img/006e86d06fc928607662c3d9061e8ddb.png`)
 
-[monster-with-melting-candle.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J1G9bMCxHouN7Sx3SVLcHqYKn5e)
+[`monster-with-melting-candle.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J1G9bMCxHouN7Sx3SVLcHqYKn5e)
 
-Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.
+`Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.`
 
 动画场景特写一个短毛茸茸的怪物跪在一支融化的红色蜡烛旁边。艺术风格是3D且逼真的，重点在于光影和质感。画面的氛围充满了惊奇和好奇，因为怪物用大眼睛和张开的嘴巴凝视着火焰。它的姿势和表情传达出一种天真和俏皮的感觉，就像它第一次探索周围的世界一样。温暖的色彩和戏剧性的照明进一步增强了图像的舒适氛围。
+
+
 
 ![](img/8c548b3fcf50a591e80d8e07ca79fed2.png)
 
@@ -224,7 +223,7 @@ A young man at his 20s is sitting on a piece of cloud in the sky, reading a book
 
 一个20多岁的年轻人正坐在天空中的一片云朵上阅读一本书。
 
-1.  Sora 能够生成具有多个角色、特定类型动作和准确细节的复杂场景。模型不仅理解用户在提示中所要求的内容，还理解这些事物在物理世界中的存在方式。（OpenAI原文）
+1. Sora 能够生成具有多个角色、特定类型动作和准确细节的复杂场景。模型不仅理解用户在提示中所要求的内容，还理解这些事物在物理世界中的存在方式。（OpenAI原文）
 
 能够生成多个角色，这么多电视机里每一个都是完全不同的画面。
 
@@ -236,7 +235,7 @@ The camera rotates around a large stack of vintage televisions all showing diffe
 
 摄像机围绕一堆大型复古电视机旋转，这些电视机上播放着不同的节目——1950年代的科幻电影、恐怖电影、新闻、静态画面、1970年代的情景喜剧等，场景设定在纽约一家大型博物馆的画廊内。
 
-1.  Sora 对语言有深刻的理解，能够准确解释提示并生成表达丰富情感的引人入胜的角色。Sora 还可以在单个生成视频中创建多个镜头，准确地保持角色和视觉风格的一致性。（OpenAI原文）
+1. Sora 对语言有深刻的理解，能够准确解释提示并生成表达丰富情感的引人入胜的角色。Sora 还可以在单个生成视频中创建多个镜头，准确地保持角色和视觉风格的一致性。（OpenAI原文）
 
 多镜头在文章刚开始就给大家展示了，这里看一个非常惊艳对语言理解的案例。
 
@@ -252,7 +251,7 @@ A cat waking up its sleeping owner demanding breakfast. The owner tries to ignor
 
 但是我们也可以看到这么简单的提示词，能够生成这么复杂的场景，Sora的世界模型太厉害了。
 
-1.  当前模型存在弱点，它可能在准确模拟复杂场景的物理方面遇到困难，也可能不理解特定因果关系的具体实例。（OpenAI原文）
+1. 当前模型存在弱点，它可能在准确模拟复杂场景的物理方面遇到困难，也可能不理解特定因果关系的具体实例。（OpenAI原文）
 
 Sora基于Diffusion Transformer的逻辑，构建了强大的世界模型，但是它对于世界的理解是我们不可控的，就比如说人在跑步机上跑步，Sora能够模拟，但是人是逆着跑步机跑步的，这些我会在Sora不足跟大家分享案例。
 
@@ -280,7 +279,7 @@ Sora 将视频和图像表示为较小的数据单元集合，称为块，每个
 
 通过统一我们表示数据的方式，我们可以在更广泛的视觉数据上训练扩散变换器，涵盖不同的时长、分辨率和宽高比。
 
-**Sora 建立在 DALL·E 和 GPT **模型的过去研究之上。（OpenAI原文）
+**Sora 建立在 DALL·E 和 GPT**模型的过去研究之上。（OpenAI原文）
 
 它使用了 DALL·E 3 中的重新标题技术，该技术涉及为视觉训练数据生成高度描述性的标题。结果，模型能够更忠实地遵循用户在生成视频中的文本指令。
 
@@ -452,6 +451,8 @@ Prompt: Basketball through hoop then explodes.
 
 它是很惊艳，但也很假。
 
+
+
 Prompt: A grandmother with neatly combed grey hair stands behind a colorful birthday cake with numerous candles at a wood dining room table, expression is one of pure joy and happiness, with a happy glow in her eye. She leans forward and blows out the candles with a gentle puff, the cake has pink frosting and sprinkles and the candles cease to flicker, the grandmother wears a light blue blouse adorned with floral patterns, several happy friends and family sitting at the table can be seen celebrating, out of focus. The scene is beautifully captured, cinematic, showing a 3/4 view of the grandmother and the dining room. Warm color tones and soft lighting enhance the mood..
 
 提示：一位头发梳理得整整齐齐的祖母站在一张色彩斑斓的生日蛋糕后面，蛋糕上插满了蜡烛，摆放在木制的餐桌旁。她的脸上洋溢着纯粹的快乐和幸福，眼中闪烁着幸福的光芒。她向前倾身，轻轻地一吹，蜡烛便熄灭了，蛋糕上覆盖着粉红色的糖霜和彩色糖屑，蜡烛也不再闪烁。祖母穿着一件带有花卉图案的浅蓝色衬衫，可以看到几位快乐的朋友和家人坐在桌子旁庆祝，他们的身影略显模糊。这个场景被美丽地捕捉下来，具有电影感，展示了祖母和餐厅的3/4视角。温暖的色调和柔和的灯光增强了氛围。
@@ -552,7 +553,7 @@ Sora也一样，当它的算力成本很低的时候，它可以让每个人都�
 
 ### 5.1.1 套壳Sora使用
 
-案例：https://sorawebui.com/zh/playground
+案例：`https://sorawebui.com/zh/playground`
 
 通过API接口来通过信息差获利。
 
@@ -658,4 +659,4 @@ Sora是一个惊艳的产品，了解它有利于让我们更好的在这个变�
 
 # 🌟 知识库内容汇总
 
-<https://my.feishu.cn/sync/GHQzdTph6so3XoblvDDcc3uYnfd>
+`https://my.feishu.cn/sync/GHQzdTph6so3XoblvDDcc3uYnfd`

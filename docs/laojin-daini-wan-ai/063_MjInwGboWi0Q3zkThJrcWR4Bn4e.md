@@ -1,10 +1,11 @@
+
 # ※ OpenAI官方提示词指南
 
-> 来源：[https://my.feishu.cn/docx/XeVFdkw2AoERYqx6vBVcaZfGnac](https://my.feishu.cn/docx/XeVFdkw2AoERYqx6vBVcaZfGnac)
+> 来源：https://my.feishu.cn/docx/XeVFdkw2AoERYqx6vBVcaZfGnac
 
-原文地址：[h](https://platform.openai.com/docs/guides/gpt-best-practices)ttps://platform.openai.com/docs/guides/gpt-best-practices
+原文地址：https://platform.openai.com/docs/guides/gpt-best-practices
 
-# 一、**获得更好结果的六种策略**
+## 一、获得更好结果的六种策略
 
 ### [写下清晰的说明](https://platform.openai.com/docs/guides/prompt-engineering/write-clear-instructions)
 
@@ -12,17 +13,17 @@
 
 策略：
 
-+   在您的查询中包含详细信息以获取更相关的答案
++ 在您的查询中包含详细信息以获取更相关的答案
 
-+   [要求模特采用角色](https://platform.openai.com/docs/guides/prompt-engineering/tactic-ask-the-model-to-adopt-a-persona)
++ 要求模特采用角色
 
-+   使用分隔符清楚地指示输入的不同部分
++ 使用分隔符清楚地指示输入的不同部分
 
-+   [指定完成任务所需的步骤](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task)
++ 指定完成任务所需的步骤
 
-+   [提供例子](https://platform.openai.com/docs/guides/prompt-engineering/tactic-provide-examples)
++ 提供例子
 
-+   [指定所需的输出长度](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-desired-length-of-the-output)
++ 指定所需的输出长度
 
 ### [提供参考文本](https://platform.openai.com/docs/guides/prompt-engineering/provide-reference-text)
 
@@ -30,9 +31,9 @@
 
 策略：
 
-+   [指示模型使用参考文本回答](https://platform.openai.com/docs/guides/prompt-engineering/tactic-instruct-the-model-to-answer-using-a-reference-text)
++ 指示模型使用参考文本回答
 
-+   指示模型使用参考文本的引用来回答
++ 指示模型使用参考文本的引用来回答
 
 ### [将复杂任务拆分为更简单的子任务](https://platform.openai.com/docs/guides/prompt-engineering/split-complex-tasks-into-simpler-subtasks)
 
@@ -40,11 +41,11 @@
 
 策略：
 
-+   使用意图分类来识别与用户查询最相关的说明
++ 使用意图分类来识别与用户查询最相关的说明
 
-+   对于需要长时间对话的对话应用，总结或过滤之前的对话
++ 对于需要长时间对话的对话应用，总结或过滤之前的对话
 
-+   分段总结长文档并递归构建完整摘要
++ 分段总结长文档并递归构建完整摘要
 
 ### [给模型时间“思考”](https://platform.openai.com/docs/guides/prompt-engineering/give-the-model-time-to-think)
 
@@ -52,11 +53,11 @@
 
 策略：
 
-+   指导模型在匆忙得出结论之前找到自己的解决方案
++ 指导模型在匆忙得出结论之前找到自己的解决方案
 
-+   使用内心独白或一系列查询来隐藏模型的推理过程
++ 使用内心独白或一系列查询来隐藏模型的推理过程
 
-+   询问模型在之前的传递中是否遗漏了什么
++ 询问模型在之前的传递中是否遗漏了什么
 
 ### [使用外部工具](https://platform.openai.com/docs/guides/prompt-engineering/use-external-tools)
 
@@ -64,11 +65,11 @@
 
 策略：
 
-+   使用基于嵌入的搜索实现高效的知识检索
++ 使用基于嵌入的搜索实现高效的知识检索
 
-+   使用代码执行进行更精确的计算或调用外部 API
++ 使用代码执行进行更精确的计算或调用外部 API
 
-+   [授予模型访问特定功能的权限](https://platform.openai.com/docs/guides/prompt-engineering/tactic-give-the-model-access-to-specific-functions)
++ 授予模型访问特定功能的权限
 
 ### [系统地测试变化](https://platform.openai.com/docs/guides/prompt-engineering/test-changes-systematically)
 
@@ -76,9 +77,9 @@
 
 策略：
 
-+   [参考黄金标准答案评估模型输出](https://platform.openai.com/docs/guides/prompt-engineering/tactic-evaluate-model-outputs-with-reference-to-gold-standard-answers)
++ 参考黄金标准答案评估模型输出
 
-## 二、[策略](https://platform.openai.com/docs/guides/prompt-engineering/tactics)
+## 二、策略
 
 上面列出的每一种策略都可以用具体的策略来实例化。这些策略旨在提供一些可以尝试的想法。它们绝不是完全全面的，你应该随意尝试这里没有提到的创造性想法。
 
@@ -114,7 +115,7 @@
 
 如果我们可以为模型提供与当前查询相关的可信信息，那么我们就可以指示模型使用提供的信息来组成其答案。
 
-鉴于所有模型的上下文窗口都有限，我们需要[某种](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings)方式来动态查找与所提问题相关的信息。嵌入可用于实现高效的知识检索。有关如何实现此目的的更多详细信息，请参阅策略“使用基于嵌入的搜索实现高效的知识检索” 。
+鉴于所有模型的上下文窗口都有限，我们需要某种方式来动态查找与所提问题相关的信息。嵌入可用于实现高效的知识检索。有关如何实现此目的的更多详细信息，请参阅策略“使用基于嵌入的搜索实现高效的知识检索”。
 
 #### 策略：指示模型用参考文本中的引文来回答
 
@@ -124,7 +125,7 @@
 
 #### 策略：使用意图分类来识别与用户查询最相关的指令
 
-对于需要大量独立指令集来处理不同情况的任务，首先对查询类型进行分类并使用该分类来确定需要哪些指令会很有帮助。这可以通过定义固定类别和硬编码与处理给定类别中的任务相关的指令来实现。此过[程还可以递归应](https://openai.com/pricing)用，以将任务分解为一系列阶段。这种方法的优点是每个查询将仅包含执行任务下一阶段所需的指令，与使用单个查询执行整个任务相比，这可以降低错误率。这还可以降低成本，因为更大的提示运行成本更高（请参阅定价信息）。
+对于需要大量独立指令集来处理不同情况的任务，首先对查询类型进行分类并使用该分类来确定需要哪些指令会很有帮助。这可以通过定义固定类别和硬编码与处理给定类别中的任务相关的指令来实现。此过程还可以递归应用，以将任务分解为一系列阶段。这种方法的优点是每个查询将仅包含执行任务下一阶段所需的指令，与使用单个查询执行整个任务相比，这可以降低错误率。这还可以降低成本，因为更大的提示运行成本更高。
 
 例如，假设对于客户服务应用程序，查询可以按如下方式进行有用分类：
 
@@ -144,7 +145,7 @@
 
 由于模型具有固定的上下文长度，因此它们不能用于在单个查询中汇总长度超过上下文长度减去生成的摘要的长度的文本。
 
-要总结非[常长](https://openai.com/research/summarizing-books)的文档（例如一本书），我们可以使用一系列查询来总结文档的每个部分。可以将各部分摘要连接起来并进行总结，从而生成摘要的摘要。此过程可以递归进行，直到总结整个文档。如果需要使用有关前面部分的信息来理解后面的部分，那么另一个有用的技巧是在总结该部分内容的同时，在书中任何给定点之前包含文本的连续摘要。OpenAI 在之前的研究中使用 GPT-3 变体研究了此程序对总结书籍的有效性。
+要总结非常长的文档（例如一本书），我们可以使用一系列查询来总结文档的每个部分。可以将各部分摘要连接起来并进行总结，从而生成摘要的摘要。此过程可以递归进行，直到总结整个文档。如果需要使用有关前面部分的信息来理解后面的部分，那么另一个有用的技巧是在总结该部分内容的同时，在书中任何给定点之前包含文本的连续摘要。OpenAI 在之前的研究中使用 GPT-3 变体研究了此程序对总结书籍的有效性。
 
 ### [策略：给模型时间“思考”](https://platform.openai.com/docs/guides/prompt-engineering/strategy-give-models-time-to-think)
 
@@ -190,29 +191,31 @@
 
 代码执行的另一个好用例是调用外部 API。如果模型被指导如何正确使用 API，它就可以编写利用该 API 的代码。可以通过向模型提供文档和/或代码示例来展示如何使用 API，从而指导模型如何使用 API。
 
-**警告：执行模型生成的代码并非天生安全，任何试图执行此操作的应用程序都**应采取预防措施。特别是，需要沙盒代码执行环境来限制不受信任的代码可能造成的危害。
+警告：执行模型生成的代码并非天生安全，任何试图执行此操作的应用程序都应采取预防措施。特别是，需要沙盒代码执行环境来限制不受信任的代码可能造成的危害。
 
 #### [策略：让模型访问特定功能](https://platform.openai.com/docs/guides/prompt-engineering/tactic-give-the-model-access-to-specific-functions)
 
-Chat[ Compl](https://platform.openai.com/docs/guides/function-calling)[etions ](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models)API 允许在请求中传递函数描述列表。这使模型能够根据提供的模式生成函数参数。生成的函数参数由 API 以 JSON 格式返回，可用于执行函数调用。函数调用提供的输出随后可以在以下请求中反馈到模型中以关闭循环。这是使用 OpenAI 模型调用外部函数的推荐方式。要了解更多信息，请参阅我们的入门文本生成指南中的函数调用部分以及OpenAI Cookbook 中的更多函数调用示例。
 
-### [策略：系统地测试变化](https://platform.openai.com/docs/guides/prompt-engineering/strategy-test-changes-systematically)
+
+## 函数调用
+
+[Chat Completions API](https://platform.openai.com/docs/guides/function-calling) 允许在请求中传递函数描述列表。这使模型能够根据提供的模式生成函数参数。生成的函数参数由 API 以 JSON 格式返回，可用于执行函数调用。函数调用提供的输出随后可以在以下请求中反馈到模型中以关闭循环。这是使用 OpenAI 模型调用外部函数的推荐方式。要了解更多信息，请参阅我们的入门文本生成指南中的函数调用部分以及 [OpenAI Cookbook](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models) 中的更多函数调用示例。
+
+### 策略：系统地测试变化
 
 有时很难判断某个变化（例如，新的指令或新的设计）是让你的系统变得更好还是更糟。查看几个示例可能会提示哪个更好，但由于样本量较小，很难区分真正的改进还是随机的运气。也许这种变化有助于提高某些输入的性能，但会损害其他输入的性能。
 
 评估程序（或“评估”）对于优化系统设计非常有用。好的评估包括：
 
-+   代表现实世界的使用情况（或至少是多样化的）
++ 代表现实世界的使用情况（或至少是多样化的）
++ 包含许多测试用例以获得更强的统计能力（请参阅下表了解指南）
++ 易于自动化或重复
 
-+   包含许多测试用例以获得更强的统计能力（请参阅下表了解指南）
-
-+   易于自动化或重复
-
-输出[评估可以由](https://github.com/openai/evals)计算机、人类或两者混合完成。计算机可以使用客观标准（例如，只有一个正确答案的问题）以及一些主观或模糊标准自动进行评估，其中模型输出由其他模型查询进行评估。OpenAI Evals是一个开源软件框架，提供用于创建自动评估的工具。
+输出 [评估可以由](https://github.com/openai/evals) 计算机、人类或两者混合完成。计算机可以使用客观标准（例如，只有一个正确答案的问题）以及一些主观或模糊标准自动进行评估，其中模型输出由其他模型查询进行评估。`OpenAI Evals`是一个开源软件框架，提供用于创建自动评估的工具。
 
 当存在一系列可能的输出，且这些输出的质量同样高时（例如，对于答案较长的问题），基于模型的评估会很有用。基于模型的评估可以实际评估的内容与需要人工评估的内容之间的界限很模糊，并且随着模型功能越来越强大而不断变化。我们鼓励进行实验，以确定基于模型的评估对您的用例的效果如何。
 
-#### 策略：参考黄金标准答案评估模型输出
+### 策略：参考黄金标准答案评估模型输出
 
 假设已知一个问题的正确答案应该参考一组特定的已知事实。那么我们可以使用模型查询来计算答案中包含了多少个所需的事实。
 
@@ -232,16 +235,13 @@ Chat[ Compl](https://platform.openai.com/docs/guides/function-calling)[etions ](
 
 下面是一个带有正确答案的示例输入，它还提供了比必要更多的细节：
 
-## [其他资源](https://platform.openai.com/docs/guides/prompt-engineering/other-resources)
+## 其他资源
 
-要获得更多灵感，请访问[OpenAI Cookbook](https://cookbook.openai.com/)，其中包含示例代码以及第三方资源的链接，例如：
+要获得更多灵感，请访问 [OpenAI Cookbook](https://cookbook.openai.com/)，其中包含示例代码以及第三方资源的链接，例如：
 
-+   [提示库和工具](https://cookbook.openai.com/related_resources#prompting-libraries--tools)
-
-+   [提示指南](https://cookbook.openai.com/related_resources#prompting-guides)
-
-+   [视频课程](https://cookbook.openai.com/related_resources#video-courses)
-
-+   关于通过高级提示提高推理能力的论文
++ [提示库和工具](https://cookbook.openai.com/related_resources#prompting-libraries--tools)
++ [提示指南](https://cookbook.openai.com/related_resources#prompting-guides)
++ [视频课程](https://cookbook.openai.com/related_resources#video-courses)
++ 关于通过高级提示提高推理能力的论文
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

@@ -1,3 +1,4 @@
+
 # 万航宇的观影阁🎬
 
 > 来源：[https://my.feishu.cn/docx/PKT4dQlMzoPI2JxRgSUcExmAn8g](https://my.feishu.cn/docx/PKT4dQlMzoPI2JxRgSUcExmAn8g)
@@ -10,10 +11,8 @@ PT站
 
 BT站
 
-+   星期三
-
-+   爱、死亡和机器人
-
-+   活着
++ 星期三
++ 爱、死亡和机器人
++ 活着
 
 规划是用多维表格来记录数据，画板模式呈现...然后还有找电影的方法..

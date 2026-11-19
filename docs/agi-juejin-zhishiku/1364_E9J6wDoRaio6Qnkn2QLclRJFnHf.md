@@ -1,3 +1,4 @@
+
 # 人人可做提示工程师！Claude上新：一键生成、测试和评估prompt
 
 > 来源：[https://agijuejin.feishu.cn/docx/OHHNdLPC1owrwyxo9oAc6BURnye](https://agijuejin.feishu.cn/docx/OHHNdLPC1owrwyxo9oAc6BURnye)
@@ -16,11 +17,13 @@ Anthropic 提示工程师 Alex Albert 表示：这是他们过去几周投入了
 
 ![](img/65353ea6201e8a0b507f6caa4332f3c3.png)
 
-难写的 prompt，交给 Claude
+## 难写的 prompt，交给 Claude
 
 在 Claude 中，写一个好的 prompt 就像描述任务一样简单。控制台提供了一个内置的 prompt 生成器，由 Claude 3.5 Sonnet 提供支持，允许用户描述任务并让 Claude 生成高质量的 prompt。
 
-**生成 prompt。 **首先点击 Generate Prompt，进入 prompt 生成界面：
+### 生成 prompt
+
+首先点击 `Generate Prompt`，进入 prompt 生成界面：
 
 ![](img/4a48260a351300bac74f0e91ccc057c7.png)
 
@@ -28,7 +31,9 @@ Anthropic 提示工程师 Alex Albert 表示：这是他们过去几周投入了
 
 ![](img/cad05a665d8c0904a343295fcbe543b6.png)
 
-**生成测试数据。 **如果用户有了 prompt，可能需要一些测试用例来运行它。Claude 可以生成那些测试用例。
+### 生成测试数据
+
+如果用户有了 prompt，可能需要一些测试用例来运行它。Claude 可以生成那些测试用例。
 
 ![](img/346d6367d5f2776469c81c8568d471d4.png)
 
@@ -40,11 +45,15 @@ Anthropic 提示工程师 Alex Albert 表示：这是他们过去几周投入了
 
 ![](img/e89edab97f686d2b4309bf560420a2a7.png)
 
-**评估模型。 **如果用户对 prompt 感到满意，之后可以在「评估」选项卡中一次针对各种测试用例运行它。用户可以从 CSV 导入测试数据，也可以直接使用 Claude 为用户生成合成测试数据。
+### 评估模型
+
+如果用户对 prompt 感到满意，之后可以在「评估」选项卡中一次针对各种测试用例运行它。用户可以从 CSV 导入测试数据，也可以直接使用 Claude 为用户生成合成测试数据。
 
 ![](img/9b2c01d5477e13550a2df430e8514bec.png)
 
-比较。用户还可以在测试用例中相互测试多个 prompt，并对更好的响应进行评分，以跟踪哪个 prompt 表现最佳。
+### 比较
+
+用户还可以在测试用例中相互测试多个 prompt，并对更好的响应进行评分，以跟踪哪个 prompt 表现最佳。
 
 ![](img/836fd4e087a4a5cea89856d1a4fbf79c.png)
 

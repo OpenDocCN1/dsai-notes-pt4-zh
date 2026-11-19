@@ -1,3 +1,4 @@
+
 # 需求描述组合+案例学习
 
 > 来源：[https://datawhaler.feishu.cn/docx/Oo6qd3BoboaoOVxxiemcJtYVnsh](https://datawhaler.feishu.cn/docx/Oo6qd3BoboaoOVxxiemcJtYVnsh)
@@ -24,7 +25,7 @@
 
 > 参考【NASA官方时间线、SpaceX任务页面、中国国家航天局官网时间轴，以及《星际穿越》科幻 UI 设计】。
 
-> 中国航天时间线科普网站：https://www.doubao.com/code/launch/detail/75617576194?from=from_launch_share_link
+> 中国航天时间线科普网站：`https://www.doubao.com/code/launch/detail/75617576194?from=from_launch_share_link`
 
 ## 示例 1️⃣：健身教练工作台
 
@@ -96,37 +97,35 @@
 
 ### 🔑 关键技巧：
 
-1.  **用户要具体**
+1. **用户要具体**
 
 > ❌ "给大家用的"
 
 > ✅ "给健身教练和私教工作室"
 
-1.  **痛点要可感知**
+2. **痛点要可感知**
 
 > ❌ "效率不高"
 
 > ✅ "Excel统计订单要2小时，容易算错"
 
-1.  **功能要成体系**
+3. **功能要成体系**
 
 > ❌ "有管理功能"
 
 > ✅ "学员档案+训练计划+预约+收费"（完整闭环）
 
-1.  **风格要有画面感**
+4. **风格要有画面感**
 
 > ❌ "好看的界面"
 
 > ✅ "Keep的活力感+卡片布局+渐变色按钮"
 
-1.  **参考要精准组合**
+5. **参考要精准组合**
 
 > ❌ "像🛰️"
 
 > ✅ "Figma的评论 + Notion的数据库 + Behance的展示"
-
----
 
 ### 作品优化后如何重新提交参赛新版本？
 
@@ -136,11 +135,10 @@
 
 🔄 作品修改迭代：若存在功能问题请及时修改更新，作品更新直接在原作品基础上即可，无需重新提交新作品，方式如下⬇️
 
-
 ![](img/f9093eea0c0dde7840c36dd616716e61.png)
 
-💡 创作思路参考：如遇到创作问题，可参考使用指南💫 豆包编程 2.0[💫 豆包编程 2.0 使用指南](https://bytedance.larkoffice.com/wiki/PJg2wZ0vEirF2LkXVbecXJ3pnmh?source_type=message&from=message)使用指南使用指南中提供详细的功能说明和最佳实践，可结合示例进行创新和扩展
+💡 创作思路参考：如遇到创作问题，可参考使用指南💫 豆包编程 2.0 [💫 豆包编程 2.0 使用指南](https://bytedance.larkoffice.com/wiki/PJg2wZ0vEirF2LkXVbecXJ3pnmh?source_type=message&from=message) 使用指南中提供详细的功能说明和最佳实践，可结合示例进行创新和扩展
 
 作品优化投稿成功比赛后别忘了来打卡哦（👉必须保证作品符合要求且应用可使用）
 
-+   作品打卡链接：https://datawhaler.feishu.cn/share/base/form/shrcn37MOOt0xxx3FerUi9EiZPe
++ 作品打卡链接：`https://datawhaler.feishu.cn/share/base/form/shrcn37MOOt0xxx3FerUi9EiZPe`

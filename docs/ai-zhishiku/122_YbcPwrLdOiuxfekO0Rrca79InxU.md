@@ -1,3 +1,4 @@
+
 # ChatGPT 神器 Code Interpreter 开放（附保姆级教程）
 
 > 来源：[https://my.feishu.cn/docx/EBggd7WXroklPRx5FWxcBbJzncd](https://my.feishu.cn/docx/EBggd7WXroklPRx5FWxcBbJzncd)
@@ -14,7 +15,7 @@
 
 以下是一些内测用户晒出的示例，为大家提供一些参考。
 
-**「博士期间几周才学会的东西，****AI**** 几秒就完成了」**
+**「博士期间几周才学会的东西，AI 几秒就完成了」**
 
 宾夕法尼亚大学沃顿商学院的教授 Ethan Mollick，是一位拥有数月 Code Interpreter Alpha 版本试用经验的 ChatGPT Plus 用户。他对 Code Interpreter 的评价还是比较高的，称之为「用过的最有用、最有趣的 AI 模式」。
 
@@ -28,7 +29,7 @@ Ethan Mollick 明确表达了两点感想：1）Code Interpreter 工作得非常
 
 > 我在读博士时花了几周时间才掌握的东西，AI 在几秒钟内就完成了，而且通常比我预期的人类分析员的错误要少。但对我来说，同样清楚的是，人类不会被 Code Interpreter 所取代。相反，AI 做的是我们一直希望自动化能做的事情 —— 把我们从工作中最恼人、重复的部分中解放出来，这样我们就可以专注于关键的事情。通过简化分析过程，我可以做更多、更深入、更满意的工作。我的时间变得更有价值，而不是更少，因为我可以专注于重要的事情，而不是死记硬背。
 
-**Code In****terpre**ter 补上了 ChatGPT 哪些短板？
+## Code Interpreter 补上了 ChatGPT 哪些短板？
 
 具体来说，Code Interpreter 为 AI 提供了一个解决问题的通用工具箱（通过用 Python 写代码），一个可以使用的大内存（能够上传高达 100MB 的文件，而且这些文件可以是压缩形式），并以发挥大型语言模型优势的方式将该工具箱整合到人工智能中。
 
@@ -54,7 +55,7 @@ Ethan Mollick 明确表达了两点感想：1）Code Interpreter 工作得非常
 
 ![](img/b8dabdc897219570be5fb7500cc69f9e.png)
 
-如何使用 Code Interpreter 处理数据
+## 如何使用 Code Interpreter 处理数据
 
 Code Interpreter 是一个令人印象深刻的「数据科学家」，能够将定量分析的许多复杂事物自动化，并且能够对数据采用非常复杂的方法。为了说明这一点，Ethan Mollick 从一个有趣的数据集「Super Heroes」开始。
 
@@ -98,11 +99,11 @@ Code Interpreter 先是产生了一个仪表盘，但不太符合作者想要的
 
 ![](img/7b856991561923ea57d8fd543b934d31.png)
 
-**20 个奇妙用例**
+## 20 个奇妙用例
 
 在数据分析之外，Code Interpreter 还有很多妙用。在推特上，一位名叫「Chase Lean」的网友收集了 20 个用例，让我们也来学习一下有什么新玩法：
 
-**1、从图像生成视频**
+### 1、从图像生成视频
 
 首先，上传想要制作动画的图像：
 
@@ -114,35 +115,35 @@ Code Interpreter 先是产生了一个仪表盘，但不太符合作者想要的
 
 ![](img/cba80651efe32afd43bc405a560e2729.png)
 
-，时长 00:21
+时长 00:21
 
 想让图像变小，就告诉 GPT 将其大小调整为 50%；想让视频从下往上平移，将提示改为「 Start: Bottom → Center → Top: End」；想让视频的速度提高 2 倍，将帧的步长从 8 像素改为 16 像素。
 
 ![](img/f845105afec1b1d5853ef7e77c49d909.png)
 
-**2、从图像摘取文字**
+### 2、从图像摘取文字
 
 ![](img/01820dc617f21371e6c31318a354779c.png)
 
-**3、智能地理解、分析和解释数据**
+### 3、智能地理解、分析和解释数据
 
 ![](img/deac9b078654f517a4e288979199acd9.png)
 
-**4、用现实物理模拟硬科幻**
+### 4、用现实物理模拟硬科幻
 
 初始 prompt：「我们将扮演一个科幻场景。我将成为队长。问题是：你必须使场景中的每个挑战都包含你将用代码模拟的真实物理效果。」
 
 ![](img/4e69057bd10c91ac0a8f02f0870b7545.png)
 
-**5、从图像中提取调色板**
+### 5、从图像中提取调色板
 
-Code Interpreter 能从图像中提取颜色以创建调色板。png，并在内存耗尽时自动压缩大型图像
+Code Interpreter 能从图像中提取颜色以创建`调色板.png`，并在内存耗尽时自动压缩大型图像
 
-**6、生成二维码**
+### 6、生成二维码
 
 ![](img/d1c8ee5e600b1f3710e15a0a6376ed16.png)
 
-**7、将动图转为视频**
+### 7、将动图转为视频
 
 使用 Code Interpreter，可以在 ChatGPT 中将上传的 GIF 转换成更长的 MP4 视频并慢速缩放。
 
@@ -152,7 +153,7 @@ Code Interpreter 能从图像中提取颜色以创建调色板。png，并在内
 
 ![](img/1b7e4d45aa379517362aadea29beead5.png)
 
-**8、分析期权数据以确定最佳合约**
+### 8、分析期权数据以确定最佳合约
 
 用 Code Interpreter 来分析 7 月 21 日到期的 AAPL 的期权：
 
@@ -162,7 +163,7 @@ Code Interpreter 能从图像中提取颜色以创建调色板。png，并在内
 
 ![](img/6bce1b728729ac864a7a510abb905703.png)
 
-**9、分析音乐偏好**
+### 9、分析音乐偏好
 
 使用 Code Interpreter 分析 300 小时的 Spotify 收藏夹播放列表，从 Spotify API 中导出，并运行多维 PCA 和 t-SNE 分析，总结音乐品味。
 
@@ -170,59 +171,59 @@ Code Interpreter 能从图像中提取颜色以创建调色板。png，并在内
 
 ![](img/a7ff2e25b911025f524bb6792631141c.png)
 
-**10、对房地产数据进行数据分析**
+### 10、对房地产数据进行数据分析
 
 ![](img/596af88c8d21b162be5c7bea6217083d.png)
 
-**11、生成并绘制随机数据**
+### 11、生成并绘制随机数据
 
 ![](img/263f161c363f899f58de7b644be2ccef.png)
 
-12、生成矩阵雨的 GIF 动画
+### 12、生成矩阵雨的 GIF 动画
 
 ![](img/a7ca4c40a9e2b10757a5cc9d44dc9822.png)
 
 ![](img/f724c1c27510cdd597716ecbebcd7e38.png)
 
-13、清理数据、数据分析和可视化
+### 13、清理数据、数据分析和可视化
 
 使用 Code Interpreter，你只需要上传数据，提供简单的英文指示，就可以完成清理数据、在 autopilot 上生成可视化图表的所有工作。
 
 ![](img/f928309b8ec28feb9383d1309737faa3.png)
 
-**14、创建灯塔位置图**
+### 14、创建灯塔位置图
 
 上传美国每个灯塔位置的 CSV 文件之后，Code Interpreter 可以创建这些灯塔位置的 GIF 地图，虽然地图非常暗，但每个灯塔都在闪烁。
 
 ![](img/b340c95e29ed855078280653542f73cb.png)
 
-**15、将数据转换为网页**
+### 15、将数据转换为网页
 
 提供一个未经加工的 UFO 目击事件的数据集，Code Interpreter 就能生成了一个功能齐全的 HTML 热图。下面是一个静态版本（它还可以很容易地创建任意多的版本）：
 
 ![](img/f4d8eaae9d15d6cff2ca449e8b983afb.png)
 
-16、使用 Python 复制 STATA 代码
+### 16、使用 Python 复制 STATA 代码
 
 Code Interpreter 能够利用旧的 STATA 文件和代码，用 Python 复制它们：「这里有一个 stata do 文件和一个 dta 文件。复制分析。」、「现在用 CSV 文件给我。
 
 ![](img/331d54c0402ab9f2e8b1fa985cfb93d6.png)
 
-**17、下载并分析比特币数据集**
+### 17、下载并分析比特币数据集
 
 Prompt: 「Seasonally decompose the price since 2011」
 
 ![](img/8729b73748aa88cd8d63d58d3b165c52.png)
 
-**18、犯罪数据趋势可视化**
+### 18、犯罪数据趋势可视化
 
 ![](img/73751ba0c2afdc819dad6c4bb46dfd19.png)
 
-**19、生成基因共表达的热图**
+### 19、生成基因共表达的热图
 
 ![](img/dc8c76cfd35bad6955b173ac3dd97b50.png)
 
-**20、分析泰坦尼克号数据集**
+### 20、分析泰坦尼克号数据集
 
 上传泰坦尼克号数据集，要求 Code Interpreter 进行一个完整的数据探索性分析。输出结果包括：
 

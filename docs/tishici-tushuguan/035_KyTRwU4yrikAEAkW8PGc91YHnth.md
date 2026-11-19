@@ -1,17 +1,13 @@
+
 # 非线性思考
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/OadCdYR6SoXiq0xzCPEc5fnHnFe](https://vxc3hj17dym.feishu.cn/docx/OadCdYR6SoXiq0xzCPEc5fnHnFe)
-
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)
+> 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.3
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```

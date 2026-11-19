@@ -1,8 +1,7 @@
-# 05.23-京东发布行业首个以供应链为核心的工业大模型 Joy industrial
-
-> 来源：[https://agijuejin.feishu.cn/docx/FQPTd5GsHoQvKLxP7jWcugRsnpb](https://agijuejin.feishu.cn/docx/FQPTd5GsHoQvKLxP7jWcugRsnpb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 05 月 23 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/FQPTd5GsHoQvKLxP7jWcugRsnpb](https://agijuejin.feishu.cn/docx/FQPTd5GsHoQvKLxP7jWcugRsnpb)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -132,7 +131,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/855/178.htm)
 
 ![](img/d32b0d5cea2899f44032ed68d5365a60.png)
 
-**5月22**日消息，京东集团曹鹏透露，近三个月京东大模型服务调用量环比提升200%。京东内部智能体超1.4万个，AI解决超18%工作内容。京东数字人直播成本仅为真人1/10，带货水平超80%真人主播，超10000家商家已使用。京东近期推出高商业可用数字人，今年618还推出六大行业定制数字人，开放给商家使用。
+5月22日消息，京东集团曹鹏透露，近三个月京东大模型服务调用量环比提升200%。京东内部智能体超1.4万个，AI解决超18%工作内容。京东数字人直播成本仅为真人1/10，带货水平超80%真人主播，超10000家商家已使用。京东近期推出高商业可用数字人，今年618还推出六大行业定制数字人，开放给商家使用。
 
 ### 💡 谷歌搜索 AI 模式引入广告，将整合到回答中
 
@@ -172,7 +171,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/855/097.htm)
 
 ![](img/5e8684a680f3119b703236c640da4376.png)
 
-5月22日，昆仑万维面向全球发布天工超级智能体。它采用AI agent架构和deep research技术，能一站式生成多模态内容，其deep research能力在GAIA榜单全球第一。因上线后用户使用量过大致卡顿，官方将限流。该智能体提供5个专家级agents和1个通用agent。此外，天工已开源deep research agent框架，还将文档等生成能力封装成MCP供开发者使用，并公布了开源和MCP地址。
+5月22日，昆仑万维面向全球发布天工超级智能体。它采用AI agent架构和deep research技术，能一站式生成多模态内容，其deep research能力在GAIA榜单全球第一。因上线后用户使用量过大致卡顿，官方将限流。该智能体提供5个专家级agents和1个通用agent。此外，天工已开源deep research agent框架，还将文档等生成能力封装成`MCP`供开发者使用，并公布了开源和`MCP`地址。
 
 ### 💡 谷歌创意利器 Canvas 升级 Gemini 2.5：降低开发门槛，AI 多样化呈现文本内容
 
@@ -188,7 +187,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/855/088.htm)
 
 ![](img/9e544109c314712d473485bb3d57fe97.png)
 
-近**期AI**及数码领域动态不断。技术上，腾讯混元图像2.0实测毫秒级响应，谷歌Veo3可生成有声视频等。企业方面，百度智能云同比增速达42%，李彦宏称坚持应用驱动；阿里云CEO吴泳铭将加大投入支持企业‘出海’；OpenAI与前苹果首席设计师合作推新硬件，苹果前设计师创业公司460亿元卖给OpenAI 。此外，还涉及手机新品体验、使用趣事及一些争议事件。
+近期AI及数码领域动态不断。技术上，腾讯混元图像2.0实测毫秒级响应，谷歌Veo3可生成有声视频等。企业方面，百度智能云同比增速达42%，李彦宏称坚持应用驱动；阿里云CEO吴泳铭将加大投入支持企业‘出海’；OpenAI与前苹果首席设计师合作推新硬件，苹果前设计师创业公司460亿元卖给OpenAI 。此外，还涉及手机新品体验、使用趣事及一些争议事件。
 
 ### 💡 OpenAI 扩展 Responses API：支持 MCP、图像生成等
 
@@ -196,13 +195,15 @@ IT之家 | [阅读原文](https://www.ithome.com/0/855/067.htm)
 
 ![](img/419182fb642ed88a05249a42ad64e37e.png)
 
-5月21日，OpenAI宣布扩展Responses API。此为其状态化API，能让开发者更简便灵活与模型交互。扩展后支持远程连接MCP服务器，开发者用几行代码就能连接热门工具访问数据源；支持图像生成，有实时流式预览等；还有Code Interpreter工具助力问题解决、优化文件搜索等。此外新增后台模式、推理摘要功能，加密推理项可降成本与延迟 。
+5月21日，OpenAI宣布扩展Responses API。此为其状态化API，能让开发者更简便灵活与模型交互。扩展后支持远程连接`MCP`服务器，开发者用几行代码就能连接热门工具访问数据源；支持图像生成，有实时流式预览等；还有Code Interpreter工具助力问题解决、优化文件搜索等。此外新增后台模式、推理摘要功能，加密推理项可降成本与延迟 。
 
 ## ✨ 行业观点
 
 ### 💡 2030年前必须实现AGI！谷歌祖师爷现场「催更」DeepMind CEO
 
-新智元 | [阅读原文](https://www.163.com/dy/article/K064SASJ0511ABV6.html?spss=dy_author)
+
+
+# 新智元 | [阅读原文](https://www.163.com/dy/article/K064SASJ0511ABV6.html?spss=dy_author)
 
 ![](img/b4bf52233c88ec726d8344c72290209a.png)
 

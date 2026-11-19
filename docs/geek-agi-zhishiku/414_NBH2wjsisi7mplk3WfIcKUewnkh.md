@@ -1,4 +1,5 @@
-# K8s 集群高可用master节点ETCD挂掉如何恢复?_etcd挂了
+
+# K8s 集群高可用 master 节点 ETCD 挂掉如何恢复?_etcd挂了
 
 > 来源：[https://geekbang.feishu.cn/docx/KhPndxUKxoqFFvxJtUncQTkbnxd](https://geekbang.feishu.cn/docx/KhPndxUKxoqFFvxJtUncQTkbnxd)
 
@@ -8,31 +9,29 @@
 
 > ⏰ 收录时间：2024-05-27 11:20:58 (UTC+8)
 
-> 🔗 原文链接：  h[ttps://liruilong.b](https://liruilong.blog.csdn.net/article/details/136773827)log.csdn.net/art...
+> 🔗 原文链接：https://liruilong.blog.csdn.net/article/details/136773827
 
 ![](img/6e876d29a561187963014d8a1da32ea9.png)
 
 关注作者，获取更多AI知识
 
-##
-
-###   写在前面
+## 写在前面
 
 ---
 
-+   很常见的集群运维场景，整理分享
++ 很常见的集群运维场景，整理分享
 
-+   博文内容为 K8s 集群高可用 master 节点故障如何恢复的过程
++ 博文内容为 K8s 集群高可用 master 节点故障如何恢复的过程
 
-+   理解不足小伙伴帮忙指正
++ 理解不足小伙伴帮忙指正
 
 **不**必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。——村上春树
 
 ---
 
-####   遇到了什么问题
+### 遇到了什么问题
 
-今天做实验发现 ， [集群 ](https://so.csdn.net/so/search?q=%E9%9B%86%E7%BE%A4&spm=1001.2101.3001.7020)其中一个 master 节点上的 etcd 和 apiserver 都挂掉了
+今天做实验发现，[集群](https://so.csdn.net/so/search?q=%E9%9B%86%E7%BE%A4&spm=1001.2101.3001.7020)其中一个 master 节点上的 `etcd` 和 `apiserver` 都挂掉了
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -48,7 +47,7 @@ vms106.liruilongs.github.io   Ready    &lt;none&gt;          415d   v1.25.1
 └─$
 ```
 
-vms100.liruilongs.github.io 这个节点 上的 apiserver 和 etcd
+`vms100.liruilongs.github.io` 这个节点上的 `apiserver` 和 `etcd`
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -61,9 +60,11 @@ kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1  
 kube-system          etcd-vms100.liruilongs.github.io                      0/1     CrashLoopBackOff   1244 (3m6s ago)    415d   192.168.26.100   vms100.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
 kube-system          etcd-vms101.liruilongs.github.io                      1/1     Running            167 (3h18m ago)    415d   192.168.26.101   vms101.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
 kube-system          etcd-vms102.liruilongs.github.io                      1/1     Running            173 (3h18m ago)    415d   192.168.26.102   vms102.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
+┌──[root@vms100.liruilongs.github.io]-[~]
+└─$
 ```
 
-查看 keepalived 对应的静态Pod运行正常
+查看 `keepalived` 对应的静态Pod运行正常
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -75,9 +76,9 @@ kube-system          keepalived-vms102.liruilongs.github.io                1/1  
 └─$
 ```
 
-所以可能是 etcd 数据不同步，或者什么原因 导致 etcd 挂掉了。因为 每个 master 节点的 apiserver 只和 本节点的 etcd 进行 通信(每个 etcd 的写请求会[转发到 e](https://so.csdn.net/so/search?q=etcd&spm=1001.2101.3001.7020)tcd 的领导节点)， etcd 挂掉，apiserver 无法提供能力，所以也会挂掉。
+所以可能是 `etcd` 数据不同步，或者什么原因导致 `etcd` 挂掉了。因为每个 master 节点的 `apiserver` 只和本节点的 `etcd` 进行通信（每个 `etcd` 的写请求会转发到 `etcd` 的领导节点），`etcd` 挂掉，`apiserver` 无法提供能力，所以也会挂掉。
 
-通过 etcdctl 可以发现 vms100.liruilongs.github.io 上的 etcd 彻底死掉了
+通过 `etcdctl` 可以发现 `vms100.liruilongs.github.io` 上的 `etcd` 彻底死掉了
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -89,11 +90,11 @@ kube-system          keepalived-vms102.liruilongs.github.io                1/1  
 Error: dial tcp 127.0.0.1:2379: connect: connection refused
 ```
 
-####   如何排查
+### 如何排查
 
-这里我们换一个 etcd 节点 执行 命令
+这里我们换一个 `etcd` 节点执行命令
 
-查看 etcd 集群成员
+查看 `etcd` 集群成员
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -112,9 +113,6 @@ Last login: Sat Mar  2 09:52:01 2024 from 192.168.26.100
 | 70059e836d19883d | started | vms101.liruilongs.github.io | https://192.168.26.101:2380 | https://192.168.26.101:2379 |
 | b8cb9f66c2e63b91 | started | vms102.liruilongs.github.io | https://192.168.26.102:2380 | https://192.168.26.102:2379 |
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
-
-
-
 ```
 
 查看节点状态
@@ -135,7 +133,7 @@ Failed to get the status of endpoint https://192.168.26.100:2379 (context deadli
 +-----------------------------+------------------+---------+---------+-----------+-----------+------------+
 ```
 
-确定 ETCD 节点故障
+确定 `ETCD` 节点故障
 
 ```
 ┌──[root@vms101.liruilongs.github.io]-[~]
@@ -150,21 +148,27 @@ https://192.168.26.100:2379 is unhealthy: failed to connect: dial tcp 192.168.26
 Error: unhealthy cluster
 ```
 
-查看 etcd 的容器日志
+查看 `etcd` 的容器日志
+
+
+
+# `etcd` 节点故障处理
+
+## 问题现象
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$docker ps -a | grep etcd
-0f2f98ebf8c3   a8a176a5d5d6                                        &quot;etcd --advertise-cl…&quot;   4 minutes ago   Exited (2) 4 minutes ago                  k8s_etcd_etcd-vms100.liruilongs.github.io_kube-system_e8c17bb99f9bd8119cdd769556041e18_1252
-a4b39d16a753   registry.aliyuncs.com/google_containers/pause:3.8   &quot;/pause&quot;                 4 hours ago     Up 4 hours                                k8s_POD_etcd-vms100.liruilongs.github.io_kube-system_e8c17bb99f9bd8119cdd769556041e18_54
+0f2f98ebf8c3   a8a176a5d5d6                                        "etcd --advertise-cl…"   4 minutes ago   Exited (2) 4 minutes ago                  k8s_etcd_etcd-vms100.liruilongs.github.io_kube-system_e8c17bb99f9bd8119cdd769556041e18_1252
+a4b39d16a753   registry.aliyuncs.com/google_containers/pause:3.8   "/pause"                 4 hours ago     Up 4 hours                                k8s_POD_etcd-vms100.liruilongs.github.io_kube-system_e8c17bb99f9bd8119cdd769556041e18_54
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$docker logs 0f2f98ebf8c3
-{&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:&quot;2024-03-16T14:46:54.644Z&quot;,&quot;caller&quot;:&quot;etcdmain/etcd.go:73&quot;,&quot;msg&quot;:&quot;Running: &quot;,&quot;args&quot;:[&quot;etcd&quot;,&quot;--advertise-client-urls=https://192.168.26.100:2379&quot;,&quot;--cert-file=/etc/kubernetes/pki/etcd/server.crt&quot;,&quot;--client-cert-auth=true&quot;,&quot;--data-dir=/var/lib/etcd&quot;,&quot;--experimental-initial-corrupt-check=true&quot;,&quot;--experimental-watch-progress-notify-interval=5s&quot;,&quot;--initial-advertise-peer-urls=https://192.168.26.100:2380&quot;,&quot;--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380&quot;,&quot;--key-file=/etc/kubernetes/pki/etcd/server.key&quot;,&quot;--listen-client-urls=https://127.0.0.1:2379,https://192.168.26.100:2379&quot;,&quot;--listen-metrics-urls=http://127.0.0.1:2381&quot;,&quot;--listen-peer-urls=https://192.168.26.100:2380&quot;,&quot;--name=vms100.liruilongs.github.io&quot;,&quot;--peer-cert-file=/etc/kubernetes/pki/etcd/peer.crt&quot;,&quot;--peer-client-cert-auth=true&quot;,&quot;--peer-key-file=/etc/kubernetes/pki/etcd/peer.key&quot;,&quot;--peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt&quot;,&quot;--snapshot-count=10000&quot;,&quot;--trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt&quot;]}
-{&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:&quot;2024-03-16T14:46:54.645Z&quot;,&quot;caller&quot;:&quot;etcdmain/etcd.go:116&quot;,&quot;msg&quot;:&quot;server has been already initialized&quot;,&quot;data-dir&quot;:&quot;/var/lib/etcd&quot;,&quot;dir-type&quot;:&quot;member&quot;}
-{&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:&quot;2024-03-16T14:46:54.645Z&quot;,&quot;caller&quot;:&quot;embed/etcd.go:131&quot;,&quot;msg&quot;:&quot;configuring peer listeners&quot;,&quot;listen-peer-urls&quot;:[&quot;https://192.168.26.100:2380&quot;]}
-{&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:&quot;2024-03-16T14:46:54.645Z&quot;,&quot;caller&quot;:&quot;embed/etcd.go:479&quot;,&quot;msg&quot;:&quot;starting with peer TLS&quot;,&quot;tls-info&quot;:&quot;cert = /etc/kubernetes/pki/etcd/peer.crt, key = /etc/kubernetes/pki/etcd/peer.key, client-cert=, client-key=, trusted-ca = /etc/kubernetes/pki/etcd/ca.crt, client-cert-auth = true, crl-file = &quot;,&quot;cipher-suites&quot;:[]}
-{&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:&quot;2024-03-16T14:46:54.645Z&quot;,&quot;caller&quot;:&quot;embed/etcd.go:139&quot;,&quot;msg&quot;:&quot;configuring client listeners&quot;,&quot;listen-client-urls&quot;:[&quot;https://127.0.0.1:2379&quot;,&quot;https://192.168.26.100:2379&quot;]}
-{&quot;level&quot;:&quot;info&quot;,&quot;ts&quot;:&quot;2024-03-16T14:46:54.645Z&quot;,&quot;caller&quot;:&quot;embed/etcd.go:308&quot;,&quot;msg&quot;:&quot;starting an etcd server&quot;,&quot;etcd-version&quot;:&quot;3.5.4&quot;,&quot;git-sha&quot;:&quot;08407ff76&quot;,&quot;go-version&quot;:&quot;go1.16.15&quot;,&quot;go-os&quot;:&quot;linux&quot;,&quot;go-arch&quot;:&quot;amd64&quot;,&quot;max-cpu-set&quot;:4,&quot;max-cpu-available&quot;:4,&quot;member-initialized&quot;:true,&quot;name&quot;:&quot;vms100.liruilongs.github.io&quot;,&quot;data-dir&quot;:&quot;/var/lib/etcd&quot;,&quot;wal-dir&quot;:&quot;&quot;,&quot;wal-dir-dedicated&quot;:&quot;&quot;,&quot;member-dir&quot;:&quot;/var/lib/etcd/member&quot;,&quot;force-new-cluster&quot;:false,&quot;heartbeat-interval&quot;:&quot;100ms&quot;,&quot;election-timeout&quot;:&quot;1s&quot;,&quot;initial-election-tick-advance&quot;:true,&quot;snapshot-count&quot;:10000,&quot;snapshot-catchup-entries&quot;:5000,&quot;initial-advertise-peer-urls&quot;:[&quot;https://192.168.26.100:2380&quot;],&quot;listen-peer-urls&quot;:[&quot;https://192.168.26.100:2380&quot;],&quot;advertise-client-urls&quot;:[&quot;https://192.168.26.100:2379&quot;],&quot;listen-client-urls&quot;:[&quot;https://127.0.0.1:2379&quot;,&quot;https://192.168.26.100:2379&quot;],&quot;listen-metrics-urls&quot;:[&quot;http://127.0.0.1:2381&quot;],&quot;cors&quot;:[&quot;*&quot;],&quot;host-whitelist&quot;:[&quot;*&quot;],&quot;initial-cluster&quot;:&quot;&quot;,&quot;initial-cluster-state&quot;:&quot;new&quot;,&quot;initial-cluster-token&quot;:&quot;&quot;,&quot;quota-size-bytes&quot;:2147483648,&quot;pre-vote&quot;:true,&quot;initial-corrupt-check&quot;:true,&quot;corrupt-check-time-interval&quot;:&quot;0s&quot;,&quot;auto-compaction-mode&quot;:&quot;periodic&quot;,&quot;auto-compaction-retention&quot;:&quot;0s&quot;,&quot;auto-compaction-interval&quot;:&quot;0s&quot;,&quot;discovery-url&quot;:&quot;&quot;,&quot;discovery-proxy&quot;:&quot;&quot;,&quot;downgrade-check-interval&quot;:&quot;5s&quot;}
+{"level":"info","ts":"2024-03-16T14:46:54.644Z","caller":"etcdmain/etcd.go:73","msg":"Running: ","args":["etcd","--advertise-client-urls=https://192.168.26.100:2379","--cert-file=/etc/kubernetes/pki/etcd/server.crt","--client-cert-auth=true","--data-dir=/var/lib/etcd","--experimental-initial-corrupt-check=true","--experimental-watch-progress-notify-interval=5s","--initial-advertise-peer-urls=https://192.168.26.100:2380","--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380","--key-file=/etc/kubernetes/pki/etcd/server.key","--listen-client-urls=https://127.0.0.1:2379,https://192.168.26.100:2379","--listen-metrics-urls=http://127.0.0.1:2381","--listen-peer-urls=https://192.168.26.100:2380","--name=vms100.liruilongs.github.io","--peer-cert-file=/etc/kubernetes/pki/etcd/peer.crt","--peer-client-cert-auth=true","--peer-key-file=/etc/kubernetes/pki/etcd/peer.key","--peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt","--snapshot-count=10000","--trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt"]}
+{"level":"info","ts":"2024-03-16T14:46:54.645Z","caller":"etcdmain/etcd.go:116","msg":"server has been already initialized","data-dir":"/var/lib/etcd","dir-type":"member"}
+{"level":"info","ts":"2024-03-16T14:46:54.645Z","caller":"embed/etcd.go:131","msg":"configuring peer listeners","listen-peer-urls":["https://192.168.26.100:2380"]}
+{"level":"info","ts":"2024-03-16T14:46:54.645Z","caller":"embed/etcd.go:479","msg":"starting with peer TLS","tls-info":"cert = /etc/kubernetes/pki/etcd/peer.crt, key = /etc/kubernetes/pki/etcd/peer.key, client-cert=, client-key=, trusted-ca = /etc/kubernetes/pki/etcd/ca.crt, client-cert-auth = true, crl-file = ","cipher-suites":[]}
+{"level":"info","ts":"2024-03-16T14:46:54.645Z","caller":"embed/etcd.go:139","msg":"configuring client listeners","listen-client-urls":["https://127.0.0.1:2379","https://192.168.26.100:2379"]}
+{"level":"info","ts":"2024-03-16T14:46:54.645Z","caller":"embed/etcd.go:308","msg":"starting an etcd server","etcd-version":"3.5.4","git-sha":"08407ff76","go-version":"go1.16.15","go-os":"linux","go-arch":"amd64","max-cpu-set":4,"max-cpu-available":4,"member-initialized":true,"name":"vms100.liruilongs.github.io","data-dir":"/var/lib/etcd","wal-dir":"","wal-dir-dedicated":"","member-dir":"/var/lib/etcd/member","force-new-cluster":false,"heartbeat-interval":"100ms","election-timeout":"1s","initial-election-tick-advance":true,"snapshot-count":10000,"snapshot-catchup-entries":5000,"initial-advertise-peer-urls":["https://192.168.26.100:2380"],"listen-peer-urls":["https://192.168.26.100:2380"],"advertise-client-urls":["https://192.168.26.100:2379"],"listen-client-urls":["https://127.0.0.1:2379","https://192.168.26.100:2379"],"listen-metrics-urls":["http://127.0.0.1:2381"],"cors":["*"],"host-whitelist":["*"],"initial-cluster":"","initial-cluster-state":"new","initial-cluster-token":"","quota-size-bytes":2147483648,"pre-vote":true,"initial-corrupt-check":true,"corrupt-check-time-interval":"0s","auto-compaction-mode":"periodic","auto-compaction-retention":"0s","auto-compaction-interval":"0s","discovery-url":"","discovery-proxy":"","downgrade-check-interval":"5s"}
 panic: freepages: failed to get all reachable pages (page 7744: multiple references)
 
 goroutine 109 [running]:
@@ -174,59 +178,64 @@ created by go.etcd.io/bbolt.(*DB).freepages
         /go/pkg/mod/go.etcd.io/bbolt@v1.3.6/db.go:1054 +0x1cd
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$
-
-
-
 ```
 
-####   如何解决
+## 如何解决
 
-这里最快的办法是重新同步一下这个节点的数据，即把这个故障节点移出 集群，清理完故障节点旧数据在重新添加，操作步骤
+这里最快的办法是重新同步一下这个节点的数据，即把这个故障节点移出集群，清理完故障节点旧数据在重新添加，操作步骤
 
-+   清理数据目录 ，移动静态Pod 的yaml 文件：停止故障节点服务，然后删除 etcd 数据目录。
+### 操作步骤
 
-+   移除故障节点 ：使用 member remove 命令剔除错误节点,可以在健康的节点执行命令。
++ 清理数据目录，移动静态`Pod`的`yaml`文件：停止故障节点服务，然后删除`etcd`数据目录。
 
-+   添加节点 ：使用 member add 命令添加故障节点。
++ 移除故障节点：使用`member remove`命令剔除错误节点，可以在健康的节点执行命令。
 
-+   重新启动 ：移动故障节点yaml文件，进行启动
++ 添加节点：使用`member add`命令添加故障节点。
 
-> 注 : 静态Pod 通过加载指定目录的 yaml 文件来调度， kubelet 会定时扫描，删除移动 yaml 文件，静态 Pod 会自动停止,同理。添加 yaml 文件会自动创建静态 Pod
++ 重新启动：移动故障节点`yaml`文件，进行启动
 
-移动静态Pod 的yaml 文件
+> 注：静态`Pod`通过加载指定目录的`yaml`文件来调度，`kubelet`会定时扫描，删除移动`yaml`文件，静态`Pod`会自动停止，同理。添加`yaml`文件会自动创建静态`Pod`
+
+### 移动静态`Pod`的`yaml`文件
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$mv  /etc/kubernetes/manifests/{etcd.yaml,kube-apiserver.yaml}  /tmp/
 ```
 
-删除 etcd 数据目录
+### 删除`etcd`数据目录
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$rm -rf /var/lib/etcd/*
 ```
 
-确认节点 的 etcd 和 apiservier 都已经停止
+### 确认节点的`etcd`和apiservier都已经停止
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$kubectl get pod -A -o wide | grep apiserver
-kube-system          kube-apiserver-vms101.liruilongs.github.io            1/1     Running   272 (4h15m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
-kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1     Running   246 (4h15m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
+kube-system          kube-apiserver-vms101.liruilongs.github.io            1/1     Running   272 (4h15m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   <none>           <none>
+kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1     Running   246 (4h15m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   <none>           <none>
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$kubectl get pod -A -o wide | grep etcd
-kube-system          etcd-vms101.liruilongs.github.io                      1/1     Running   167 (4h15m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
-kube-system          etcd-vms102.liruilongs.github.io                      1/1     Running   173 (4h15m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
+kube-system          etcd-vms101.liruilongs.github.io                      1/1     Running   167 (4h15m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   <none>           <none>
+kube-system          etcd-vms102.liruilongs.github.io                      1/1     Running   173 (4h15m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   <none>           <none>
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$
 ```
 
-获取故障节点 ID,下面的操作我们在健康的 etcd 节点执行，或者可以修改 --endpoints
+获取故障节点ID，下面的操作我们在健康的`etcd`节点执行，或者可以修改`--endpoints`
+
+
+
+# etcd 集群节点故障恢复
+
+## 查看当前集群成员
 
 ```
 ┌──[root@vms101.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://192.168.26.101:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot; member list -w table
+└─$ETCDCTL_API=3 etcdctl --endpoints https://192.168.26.101:2379 --cert="/etc/kubernetes/pki/etcd/server.crt" --key="/etc/kubernetes/pki/etcd/server.key" --cacert="/etc/kubernetes/pki/etcd/ca.crt" member list -w table
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
 |        ID        | STATUS  |            NAME             |         PEER ADDRS          |        CLIENT ADDRS         |
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
@@ -236,56 +245,56 @@ kube-system          etcd-vms102.liruilongs.github.io                      1/1  
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
 ```
 
-移除故障节点
+## 移除故障节点
 
 ```
 ┌──[root@vms101.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot;  member remove ee392e5273e89e2
+└─$ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cert="/etc/kubernetes/pki/etcd/server.crt" --key="/etc/kubernetes/pki/etcd/server.key" --cacert="/etc/kubernetes/pki/etcd/ca.crt" member remove ee392e5273e89e2
 Member  ee392e5273e89e2 removed from cluster 4816f346663d82a7
 ```
 
-重新添加
+## 重新添加节点
 
 ```
 ┌──[root@vms101.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot;  member add vms100.liruilongs.github.io --peer-urls=https://192.168.26.100:2380
+└─$ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cert="/etc/kubernetes/pki/etcd/server.crt" --key="/etc/kubernetes/pki/etcd/server.key" --cacert="/etc/kubernetes/pki/etcd/ca.crt" member add vms100.liruilongs.github.io --peer-urls=https://192.168.26.100:2380
 Member 456f71fdc1ad9917 added to cluster 4816f346663d82a7
 
-ETCD_NAME=&quot;vms100.liruilongs.github.io&quot;
-ETCD_INITIAL_CLUSTER=&quot;vms100.liruilongs.github.io=https://192.168.26.100:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380,vms102.liruilongs.github.io=https://192.168.26.102:2380&quot;
-ETCD_INITIAL_ADVERTISE_PEER_URLS=&quot;https://192.168.26.100:2380&quot;
-ETCD_INITIAL_CLUSTER_STATE=&quot;existing&quot;
+ETCD_NAME="vms100.liruilongs.github.io"
+ETCD_INITIAL_CLUSTER="vms100.liruilongs.github.io=https://192.168.26.100:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380,vms102.liruilongs.github.io=https://192.168.26.102:2380"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="https://192.168.26.100:2380"
+ETCD_INITIAL_CLUSTER_STATE="existing"
 ```
 
-回到 100 节点机器,移动 Yaml 文件，恢复节点
+## 回到 100 节点机器，移动 Yaml 文件，恢复节点
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$mv /tmp/{etcd.yaml,kube-apiserver.yaml} /etc/kubernetes/manifests/
 ```
 
-确认 Pod 状态
+## 确认 Pod 状态
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$kubectl get pod -A -o wide | grep etcd
-kube-system          etcd-vms100.liruilongs.github.io                      1/1     Running   0                 16s    192.168.26.100   vms100.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
-kube-system          etcd-vms101.liruilongs.github.io                      1/1     Running   167 (4h32m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
-kube-system          etcd-vms102.liruilongs.github.io                      1/1     Running   173 (4h32m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
+kube-system          etcd-vms100.liruilongs.github.io                      1/1     Running   0                 16s    192.168.26.100   vms100.liruilongs.github.io   <none>           <none>
+kube-system          etcd-vms101.liruilongs.github.io                      1/1     Running   167 (4h32m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   <none>           <none>
+kube-system          etcd-vms102.liruilongs.github.io                      1/1     Running   173 (4h32m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   <none>           <none>
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$kubectl get pod -A -o wide | grep apiserver
-kube-system          kube-apiserver-vms100.liruilongs.github.io            1/1     Running   0                 24s    192.168.26.100   vms100.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
-kube-system          kube-apiserver-vms101.liruilongs.github.io            1/1     Running   272 (4h32m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
-kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1     Running   246 (4h32m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
+kube-system          kube-apiserver-vms100.liruilongs.github.io            1/1     Running   0                 24s    192.168.26.100   vms100.liruilongs.github.io   <none>           <none>
+kube-system          kube-apiserver-vms101.liruilongs.github.io            1/1     Running   272 (4h32m ago)   415d   192.168.26.101   vms101.liruilongs.github.io   <none>           <none>
+kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1     Running   246 (4h32m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   <none>           <none>
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$
 ```
 
-查看 etcd 集群状态
+## 查看 `etcd` 集群状态
 
 ```
 ┌──[root@vms101.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot; member list -w table
+└─$ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cert="/etc/kubernetes/pki/etcd/server.crt" --key="/etc/kubernetes/pki/etcd/server.key" --cacert="/etc/kubernetes/pki/etcd/ca.crt" member list -w table
 +------------------+-----------+-----------------------------+-----------------------------+-----------------------------+
 |        ID        |  STATUS   |            NAME             |         PEER ADDRS          |        CLIENT ADDRS         |
 +------------------+-----------+-----------------------------+-----------------------------+-----------------------------+
@@ -295,20 +304,20 @@ kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1  
 +------------------+-----------+-----------------------------+-----------------------------+-----------------------------+
 ```
 
-这里我们发现 新添加的节点状态不正常，一直是 unstarted
+这里我们发现 新添加的节点状态不正常，一直是 `unstarted`
 
-我们在 故障节点执行 etcd 命令。发现故障节点并没有添加到集群，而是作为一个单节点运行。
+我们在 故障节点执行 `etcd` 命令。发现故障节点并没有添加到集群，而是作为一个单节点运行。
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot; member list -w table
+└─$ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cert="/etc/kubernetes/pki/etcd/server.crt" --key="/etc/kubernetes/pki/etcd/server.key" --cacert="/etc/kubernetes/pki/etcd/ca.crt" member list -w table
 +-----------------+---------+-----------------------------+-----------------------------+-----------------------------+
 |       ID        | STATUS  |            NAME             |         PEER ADDRS          |        CLIENT ADDRS         |
 +-----------------+---------+-----------------------------+-----------------------------+-----------------------------+
 | ee392e5273e89e2 | started | vms100.liruilongs.github.io | https://192.168.26.100:2380 | https://192.168.26.100:2379 |
 +-----------------+---------+-----------------------------+-----------------------------+-----------------------------+
 ┌──[root@vms100.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot; endpoint status --cluster  -w table
+└─$ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cert="/etc/kubernetes/pki/etcd/server.crt" --key="/etc/kubernetes/pki/etcd/server.key" --cacert="/etc/kubernetes/pki/etcd/ca.crt" endpoint status --cluster -w table
 +-----------------------------+-----------------+---------+---------+-----------+-----------+------------+
 |          ENDPOINT           |       ID        | VERSION | DB SIZE | IS LEADER | RAFT TERM | RAFT INDEX |
 +-----------------------------+-----------------+---------+---------+-----------+-----------+------------+
@@ -316,22 +325,25 @@ kube-system          kube-apiserver-vms102.liruilongs.github.io            1/1  
 +-----------------------------+-----------------+---------+---------+-----------+-----------+------------+
 ┌──[root@vms100.liruilongs.github.io]-[~]
 └─$
-
-
-
 ```
 
 也没有同步 当前集群的数据
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
-└─$kubectl get pod -A -o wide  --server=https://vms100.liruilongs.github.io:6443
+└─$kubectl get pod -A -o wide --server=https://vms100.liruilongs.github.io:6443
 No resources found
 ```
 
-遇到这种情[况，大部分](https://so.csdn.net/so/search?q=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&spm=1001.2101.3001.7020)原因是 某个节点的 etcd 配置文件 的问题，我的这个问题是 故障节点的 etcd 配置文件，没有集群信息相关配置 ，所以这里把集群相关配置写入配置
+遇到这种[情况，大部分](https://so.csdn.net/so/search?q=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&spm=1001.2101.3001.7020)原因是 某个节点的 `etcd` 配置文件 的问题，我的这个问题是 故障节点的 `etcd` 配置文件，没有集群信息相关配置 ，所以这里把集群相关配置写入配置
 
-原本的配置文件
+## 原本的配置文件
+
+
+
+# etcd 集群故障排查记录
+
+## 查看 etcd 配置文件
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -371,11 +383,10 @@ spec:
     - --snapshot-count=10000
     - --trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
     image: registry.aliyuncs.com/google_containers/etcd:3.5.4-0
-。。。。。。。。。。。。。。。。
-
-
-
+。。。。。。。。。。。。。。。。。
 ```
+
+## 添加缺失的集群配置
 
 集群信息不全的，添加后的配置文件
 
@@ -417,10 +428,9 @@ spec:
     - --peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
     - --snapshot-count=10000
     - --trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
-
-
-
 ```
+
+## 恢复节点并检查状态
 
 然后我们以上面相同的方式从新恢复一次，发现节点直接没有起来
 
@@ -437,7 +447,7 @@ kube-system          etcd-vms101.liruilongs.github.io                      1/1  
 kube-system          etcd-vms102.liruilongs.github.io                      1/1     Running            173 (5h29m ago)   415d   192.168.26.102   vms102.liruilongs.github.io   &lt;none&gt;           &lt;none&gt;
 ```
 
-查看日志
+## 查看日志
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
@@ -446,62 +456,69 @@ kube-system          etcd-vms102.liruilongs.github.io                      1/1  
 {&quot;level&quot;:&quot;fatal&quot;,&quot;ts&quot;:&quot;2024-03-16T16:25:19.981Z&quot;,&quot;caller&quot;:&quot;etcdmain/etcd.go:204&quot;,&quot;msg&quot;:&quot;discovery failed&quot;,&quot;error&quot;:&quot;error validating peerURLs {ClusterID:4816f346663d82a7 Members:[&amp;{ID:b8cb9f66c2e63b91 RaftAttributes:{PeerURLs:[https://192.168.26.102:2380] IsLearner:false} Attributes:{Name:vms102.liruilongs.github.io ClientURLs:[https://192.168.26.102:2379]}} &amp;{ID:3fbbbed942c51f7b RaftAttributes:{PeerURLs:[https://192.168.26.100:2380] IsLearner:false} Attributes:{Name: ClientURLs:[]}} &amp;{ID:70059e836d19883d RaftAttributes:{PeerURLs:[https://192.168.26.101:2380] IsLearner:false} Attributes:{Name:vms101.liruilongs.github.io ClientURLs:[https://192.168.26.101:2379]}}] RemovedMemberIDs:[]}: member count is unequal&quot;,&quot;stacktrace&quot;:&quot;go.etcd.io/etcd/server/v3/etcdmain.startEtcdOrProxyV2\n\t/go/src/go.etcd.io/etcd/release/etcd/server/etcdmain/etcd.go:204\ngo.etcd.io/etcd/server/v3/etcdmain.Main\n\t/go/src/go.etcd.io/etcd/release/etcd/server/etcdmain/main.go:40\nmain.main\n\t/go/src/go.etcd.io/etcd/release/etcd/server/main.go:32\nruntime.main\n\t/go/gos/go1.16.15/src/runtime/proc.go:225&quot;}
 ```
 
-根据日志信息，可以看到有用的信息 RemovedMemberIDs:[]}: member count is unequal ,成员数量不相等,在分析日志
+## 日志分析
+
+根据日志信息，可以看到有用的信息 `RemovedMemberIDs:[]}: member count is unequal` ,成员数量不相等,在分析日志
+
+
+
+# etcd 节点启动故障排查与修复
+
+## 查看异常日志
 
 ```
 {
-    &quot;level&quot;: &quot;info&quot;,
-    &quot;ts&quot;: &quot;2024-03-16T16:25:19.961Z&quot;,
-    &quot;caller&quot;: &quot;etcdmain/etcd.go:73&quot;,
-    &quot;msg&quot;: &quot;Running: &quot;,
-    &quot;args&quot;: [
-        &quot;etcd&quot;,
-        &quot;--advertise-client-urls=https://192.168.26.100:2379&quot;,
-        &quot;--cert-file=/etc/kubernetes/pki/etcd/server.crt&quot;,
-        &quot;--client-cert-auth=true&quot;,
-        &quot;--data-dir=/var/lib/etcd&quot;,
-        &quot;--experimental-initial-corrupt-check=true&quot;,
-        &quot;--experimental-watch-progress-notify-interval=5s&quot;,
-        &quot;--initial-advertise-peer-urls=https://192.168.26.100:2380&quot;,
-        &quot;--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380&quot;,
-        &quot;--initial-cluster-state=existing&quot;,
-        &quot;--key-file=/etc/kubernetes/pki/etcd/server.key&quot;,
-        &quot;--listen-client-urls=https://127.0.0.1:2379,https://192.168.26.100:2379&quot;,
-        &quot;--listen-metrics-urls=http://127.0.0.1:2381&quot;,
-        &quot;--listen-peer-urls=https://192.168.26.100:2380&quot;,
-        &quot;--name=vms100.liruilongs.github.io&quot;,
-        &quot;--peer-cert-file=/etc/kubernetes/pki/etcd/peer.crt&quot;,
-        &quot;--peer-client-cert-auth=true&quot;,
-        &quot;--peer-key-file=/etc/kubernetes/pki/etcd/peer.key&quot;,
-        &quot;--peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt&quot;,
-        &quot;--snapshot-count=10000&quot;,
-        &quot;--trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt&quot;
+    "level": "info",
+    "ts": "2024-03-16T16:25:19.961Z",
+    "caller": "etcdmain/etcd.go:73",
+    "msg": "Running: ",
+    "args": [
+        "etcd",
+        "--advertise-client-urls=https://192.168.26.100:2379",
+        "--cert-file=/etc/kubernetes/pki/etcd/server.crt",
+        "--client-cert-auth=true",
+        "--data-dir=/var/lib/etcd",
+        "--experimental-initial-corrupt-check=true",
+        "--experimental-watch-progress-notify-interval=5s",
+        "--initial-advertise-peer-urls=https://192.168.26.100:2380",
+        "--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380",
+        "--initial-cluster-state=existing",
+        "--key-file=/etc/kubernetes/pki/etcd/server.key",
+        "--listen-client-urls=https://127.0.0.1:2379,https://192.168.26.100:2379",
+        "--listen-metrics-urls=http://127.0.0.1:2381",
+        "--listen-peer-urls=https://192.168.26.100:2380",
+        "--name=vms100.liruilongs.github.io",
+        "--peer-cert-file=/etc/kubernetes/pki/etcd/peer.crt",
+        "--peer-client-cert-auth=true",
+        "--peer-key-file=/etc/kubernetes/pki/etcd/peer.key",
+        "--peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt",
+        "--snapshot-count=10000",
+        "--trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt"
     ]
 }
 ..............................................................................
 {
-    &quot;level&quot;: &quot;warn&quot;,
-    &quot;ts&quot;: &quot;2024-03-16T16:25:19.981Z&quot;,
-    &quot;caller&quot;: &quot;etcdmain/etcd.go:146&quot;,
-    &quot;msg&quot;: &quot;failed to start etcd&quot;,
-    &quot;error&quot;: &quot;error validating peerURLs {ClusterID:4816f346663d82a7 Members:[&amp;{ID:b8cb9f66c2e63b91 RaftAttributes:{PeerURLs:[https://192.168.26.102:2380] IsLearner:false} Attributes:{Name:vms102.liruilongs.github.io ClientURLs:[https://192.168.26.102:2379]}} &amp;{ID:3fbbbed942c51f7b RaftAttributes:{PeerURLs:[https://192.168.26.100:2380] IsLearner:false} Attributes:{Name: ClientURLs:[]}} &amp;{ID:70059e836d19883d RaftAttributes:{PeerURLs:[https://192.168.26.101:2380] IsLearner:false} Attributes:{Name:vms101.liruilongs.github.io ClientURLs:[https://192.168.26.101:2379]}}] RemovedMemberIDs:[]}: member count is unequal&quot;
+    "level": "warn",
+    "ts": "2024-03-16T16:25:19.981Z",
+    "caller": "etcdmain/etcd.go:146",
+    "msg": "failed to start etcd",
+    "error": "error validating peerURLs {ClusterID:4816f346663d82a7 Members:[&{ID:b8cb9f66c2e63b91 RaftAttributes:{PeerURLs:[https://192.168.26.102:2380] IsLearner:false} Attributes:{Name:vms102.liruilongs.github.io ClientURLs:[https://192.168.26.102:2379]}} &{ID:3fbbbed942c51f7b RaftAttributes:{PeerURLs:[https://192.168.26.100:2380] IsLearner:false} Attributes:{Name: ClientURLs:[]}} &{ID:70059e836d19883d RaftAttributes:{PeerURLs:[https://192.168.26.101:2380] IsLearner:false} Attributes:{Name:vms101.liruilongs.github.io ClientURLs:[https://192.168.26.101:2379]}}] RemovedMemberIDs:[]}: member count is unequal"
 }
 {
-    &quot;level&quot;: &quot;fatal&quot;,
-    &quot;ts&quot;: &quot;2024-03-16T16:25:19.981Z&quot;,
-    &quot;caller&quot;: &quot;etcdmain/etcd.go:204&quot;,
-    &quot;msg&quot;: &quot;discovery failed&quot;,
-    &quot;error&quot;: &quot;error validating peerURLs {ClusterID:4816f346663d82a7 Members:[&amp;{ID:b8cb9f66c2e63b91 RaftAttributes:{PeerURLs:[https://192.168.26.102:2380] IsLearner:false} Attributes:{Name:vms102.liruilongs.github.io ClientURLs:[https://192.168.26.102:2379]}} &amp;{ID:3fbbbed942c51f7b RaftAttributes:{PeerURLs:[https://192.168.26.100:2380] IsLearner:false} Attributes:{Name: ClientURLs:[]}} &amp;{ID:70059e836d19883d RaftAttributes:{PeerURLs:[https://192.168.26.101:2380] IsLearner:false} Attributes:{Name:vms101.liruilongs.github.io ClientURLs:[https://192.168.26.101:2379]}}] RemovedMemberIDs:[]}: member count is unequal&quot;,
-    &quot;stacktrace&quot;: &quot;go.etcd.io/etcd/server/v3/etcdmain.startEtcdOrProxyV2\n\t/go/src/go.etcd.io/etcd/release/etcd/server/etcdmain/etcd.go:204\ngo.etcd.io/etcd/server/v3/etcdmain.Main\n\t/go/src/go.etcd.io/etcd/release/etcd/server/etcdmain/main.go:40\nmain.main\n\t/go/src/go.etcd.io/etcd/release/etcd/server/main.go:32\nruntime.main\n\t/go/gos/go1.16.15/src/runtime/proc.go:225&quot;
+    "level": "fatal",
+    "ts": "2024-03-16T16:25:19.981Z",
+    "caller": "etcdmain/etcd.go:204",
+    "msg": "discovery failed",
+    "error": "error validating peerURLs {ClusterID:4816f346663d82a7 Members:[&{ID:b8cb9f66c2e63b91 RaftAttributes:{PeerURLs:[https://192.168.26.102:2380] IsLearner:false} Attributes:{Name:vms102.liruilongs.github.io ClientURLs:[https://192.168.26.102:2379]}} &{ID:3fbbbed942c51f7b RaftAttributes:{PeerURLs:[https://192.168.26.100:2380] IsLearner:false} Attributes:{Name: ClientURLs:[]}} &{ID:70059e836d19883d RaftAttributes:{PeerURLs:[https://192.168.26.101:2380] IsLearner:false} Attributes:{Name:vms101.liruilongs.github.io ClientURLs:[https://192.168.26.101:2379]}}] RemovedMemberIDs:[]}: member count is unequal",
+    "stacktrace": "go.etcd.io/etcd/server/v3/etcdmain.startEtcdOrProxyV2\n\t/go/src/go.etcd.io/etcd/release/etcd/server/etcdmain/etcd.go:204\ngo.etcd.io/etcd/server/v3/etcdmain.Main\n\t/go/src/go.etcd.io/etcd/release/etcd/server/etcdmain/main.go:40\nmain.main\n\t/go/src/go.etcd.io/etcd/release/etcd/server/main.go:32\nruntime.main\n\t/go/gos/go1.16.15/src/runtime/proc.go:225"
 }
-
-
-
 ```
 
-可以看到它提示 可能错误与 vms102.liruilongs.github.io 节点相关
+可以看到它提示可能错误与 `vms102.liruilongs.github.io` 节点相关
 
-然后我们看一下 vms102.liruilongs.github.io 的配置文件
+## 对比配置文件
+
+然后我们看一下 `vms102.liruilongs.github.io` 的配置文件
 
 ```
 ┌──[root@vms102.liruilongs.github.io]-[~]
@@ -541,25 +558,24 @@ spec:
     - --peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
     - --snapshot-count=10000
     - --trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
-
-
-
 ```
 
-通过 配置文件比对 ，可以发现，之前配置的故障节点的配置任然有问题，少了一个 vms102.liruilongs.github.io=https://192.168.26.102:2380 节点信息。
+通过配置文件比对，可以发现，之前配置的故障节点的配置任然有问题，少了一个 `vms102.liruilongs.github.io=https://192.168.26.102:2380` 节点信息。
 
 ```
-&quot;--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380&quot;,
-&quot;--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380,vms102.liruilongs.github.io=https://192.168.26.102:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380&quot;
+"--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380",
+"--initial-cluster=vms100.liruilongs.github.io=https://192.168.26.100:2380,vms102.liruilongs.github.io=https://192.168.26.102:2380,vms101.liruilongs.github.io=https://192.168.26.101:2380",
 ```
 
-修改完配置，按照上面相同的流程重新恢复节点， 节点恢复
+## 修复配置并验证集群状态
 
-通过 etcdctl 命令检查
+修改完配置，按照上面相同的流程重新恢复节点，节点恢复
+
+通过 `etcdctl` 命令检查
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]
-└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert=&quot;/etc/kubernetes/pki/etcd/server.crt&quot;  --key=&quot;/etc/kubernetes/pki/etcd/server.key&quot;  --cacert=&quot;/etc/kubernetes/pki/etcd/ca.crt&quot; member list -w table
+└─$ETCDCTL_API=3 etcdctl  --endpoints https://127.0.0.1:2379  --cert="/etc/kubernetes/pki/etcd/server.crt"  --key="/etc/kubernetes/pki/etcd/server.key"  --cacert="/etc/kubernetes/pki/etcd/ca.crt" member list -w table
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
 |        ID        | STATUS  |            NAME             |         PEER ADDRS          |        CLIENT ADDRS         |
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
@@ -568,6 +584,8 @@ spec:
 | b8cb9f66c2e63b91 | started | vms102.liruilongs.github.io | https://192.168.26.102:2380 | https://192.168.26.102:2379 |
 +------------------+---------+-----------------------------+-----------------------------+-----------------------------+
 ```
+
+
 
 ```
 ┌──[root@vms100.liruilongs.github.io]-[~]

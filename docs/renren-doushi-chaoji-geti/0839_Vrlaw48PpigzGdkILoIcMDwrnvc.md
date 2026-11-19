@@ -1,10 +1,7 @@
-# 4.17 龙哥快问快答 （汇总扩充版）
+
+# 4.17 龙哥快问快答（汇总扩充版）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/G8n5d39B6oIGNFxwFdXciFtonld](https://xuqiwei1986.feishu.cn/docx/G8n5d39B6oIGNFxwFdXciFtonld)
-
-PS：里面的蓝色字体部分，都是可以跳转的链接！
-
-PS：里面的蓝色字体部分，都是可以跳转的链接！
 
 PS：里面的蓝色字体部分，都是可以跳转的链接！
 
@@ -14,7 +11,7 @@ PS：里面的蓝色字体部分，都是可以跳转的链接！
 
 ---
 
-🎉 独**家揭秘 **🎉
+🎉 独家揭秘 🎉
 
 ---
 
@@ -24,39 +21,30 @@ PS：里面的蓝色字体部分，都是可以跳转的链接！
 
 一篇文章，N种读法！您可以像品茗一样，从开头慢慢品味到结尾；也可以像寻宝🔍一样，跳跃至最吸引您的宝藏篇章。
 
-**
+## 【前情提要】
 
-【前情提要**】
-
-昨夜，群星闪耀之时，龙哥大佬在群内投下了一枚重磅炸弹💣——《在线快问快答》！ 瞬间点燃了我们这些长期遨游在龙哥盟海洋中的大学生的热情，我们毫不犹豫地为这些珍贵的回复附上了《参考文献》的标签🔖（全部索引自赚钱索引站的精选内容）。
+昨夜，群星闪耀之时，龙哥大佬在群内投下了一枚重磅炸弹💣——《在线快问快答》！瞬间点燃了我们这些长期遨游在龙哥盟海洋中的大学生的热情，我们毫不犹豫地为这些珍贵的回复附上了《参考文献》的标签🔖（全部索引自赚钱索引站的精选内容）。
 
 随着问题的雪球越滚越大，深夜十点龙哥大佬的置顶回复“问题有点多，一晚上回不完”；这激发了我们帮助整理评论并加上参考文献的想法，旨在分析圈友们最关心的内容，为新圈友更快融入龙哥盟的氛围贡献一份力量🔥。
 
 我们相信，这对于新加入的圈友们来说，无疑是一份珍贵的指南🧭，一份能够迅速融入龙哥盟大家庭的温暖助力🚀。
 
-**
-
-【揭秘时刻**】
+## 【揭秘时刻】
 
 经过通宵达旦的努力，我们终于将这份心血凝成的文字呈现给您。
 
 这不仅仅是一篇文章，这是一次知识的探险，一场思维🌟的碰撞，一段成长的历程。
 
-### 阅读须知
+## 阅读须知
 
->
-
-1.  每个问题尽量都有回答，但有些我们无法代替龙哥老大作答 🌹
-
-1.  每个问题的回答都尽可能精准，每个人都是不同的个体，我们更多的是提供与问题匹配度尽可能高的赚钱资料，加大问题被解决的可能 ✔
-
->
+1. 每个问题尽量都有回答，但有些我们无法代替龙哥老大作答 🌹
+1. 每个问题的回答都尽可能精准，每个人都是不同的个体，我们更多的是提供与问题匹配度尽可能高的赚钱资料，加大问题被解决的可能 ✔
 
 # 一、搜索采集与数据分析
 
 **采集方法来源：**[大哥说我精华帖没用户思维?! 一气之下，我分析了40W评论数据！挖掘出了赚钱小白的7个痛点问题！](https://mkfwp3u79v.feishu.cn/docx/doxcnyx1dadaQMBpjoUVeupdbQh)
 
-**首先，我们收集了截**止于**2024.4.**18.3：25的218条评论提问，共计12866字。
+首先，我们收集了截止于`2024.4.18 3:25`的218条评论提问，共计12866字。
 
 由于内容全是一个接一个的问题评论，我们在意的并不是某个具体的问题（当然也很重要）我们希望看到的是这些问题通过大数定律之后可以看到赚钱对某个话题的重视程度。
 
@@ -68,7 +56,7 @@ PS：里面的蓝色字体部分，都是可以跳转的链接！
 
 于是我们将词云做成“术”的形状，
 
-正如龙哥大大的信中写到**“**市场并不缺一个得到版的龙哥盟，也不缺一个混沌版的龙哥盟，但一定会有一个分享最全最新赚钱机会的龙哥盟。”
+正如龙哥大大的信中写到“**市场并不缺一个得到版的龙哥盟，也不缺一个混沌版的龙哥盟，但一定会有一个分享最全最新赚钱机会的龙哥盟。**”
 
 寓意，**一切从项目开始结缘**
 
@@ -78,7 +66,7 @@ PS：里面的蓝色字体部分，都是可以跳转的链接！
 
 ![](img/82f9ab9729be74751d2d9317fa050950.png)
 
-[微词云导出分词的结果数据.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KOnMbO3Oxo7VdKx3zPacKxtZnKg)
+[`微词云导出分词的结果数据.xlsx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KOnMbO3Oxo7VdKx3zPacKxtZnKg)
 
 ## 1.2 问题整合分类
 
@@ -104,13 +92,13 @@ PS：里面的蓝色字体部分，都是可以跳转的链接！
 
 ![](img/7ddf2cee2446af2e0cc02ff65a84048a.png)
 
-[没有任何道路可以通往真诚，在龙哥盟，真诚本身就是道路。  我提醒自己，如果不擅长社交，那就做一个真诚的人。如果不知道怎么赚钱，那就](https://t.zsxq.com/19FJfzrNR)做对别人有价值的事情。  慢慢地我们就会发现，真诚是效率最高的沟通方式，而利他是最好的商业模式。  保持真诚，保持利他。这一条原则，让我在过去十几年里持续受益。
+[没有任何道路可以通往真诚，在龙哥盟，真诚本身就是道路。 我提醒自己，如果不擅长社交，那就做一个真诚的人。如果不知道怎么赚钱，那就](https://t.zsxq.com/19FJfzrNR)做对别人有价值的事情。 慢慢地我们就会发现，真诚是效率最高的沟通方式，而利他是最好的商业模式。 保持真诚，保持利他。这一条原则，让我在过去十几年里持续受益。
 
 ## 每次航海，可选的项目非常多，但是最终开放给圈友报名的，可以感觉出来是经过了取舍。那么这背后，决定一个项目是否成为正式航线的判断标准是什么呢？谢谢龙哥老师解答～
 
 ![](img/090e4ea78466fc3eab75dee477b36de9.png)
 
-https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
+`https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188`
 
 ## 昨天刚加入，总体有点懵，内容太多了。目前无副业，正寻求，有没有好的建议，快速适应赚钱，并入门。
 
@@ -118,7 +106,7 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/82eb01e07b4b084b6a05fabfb7331e61.png)
 
-新人指南 https://wx.zsxq.com/dweb2/index/columns/18245288222
+新人指南 `https://wx.zsxq.com/dweb2/index/columns/1824528822`
 
 ## 如果有机会，最想对7年前刚开始做“龙哥盟”的“龙哥”说什么呢？
 
@@ -138,11 +126,11 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/71f61d2b56adc48f72ff6998d5b4e1e5.png)
 
-[《龙哥百问百答》——龙哥盟星球问答_2017-2024合集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V5jVbTIrHo2etmx8Eczc84nXnYb)
+[`《龙哥百问百答》——龙哥盟星球问答_2017-2024合集.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V5jVbTIrHo2etmx8Eczc84nXnYb)
 
 ![](img/9bcc791f73995ad0a87ff0103a156914.png)
 
-[龙哥益语.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J0SRbz0kiosQLNxsAuSckgyxnxc)
+[`龙哥益语.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J0SRbz0kiosQLNxsAuSckgyxnxc)
 
 ## 龙哥现在已经有宝宝了，想问下你对孩子的期望是什么？你会如何刻意培养孩子这些期望！
 
@@ -156,7 +144,7 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/d0548f2183e9cb6734434d002493f59d.png)
 
-图中 链接直达：👉 https://t.zsxq.com/19P36gPhp
+图中 链接直达：👉 `https://t.zsxq.com/19P36gPhp`
 
 ## 对于一个没有形成基本盘的人，流量和项目如何取舍先后！
 
@@ -172,9 +160,9 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/ab1396e1d09d7714f493342a1f005312.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/214448128884221
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/214448128884221`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/584458122188484
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/584458122188484`
 
 ## 老大，如果让你再选一次，你还选择做赚钱还是做海外工具?为什么?
 
@@ -188,7 +176,7 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/9b36eded7f7e58b1c90b9abd22d9ac91.png)
 
-龙珠介绍：https://wx.zsxq.com/dweb2/index/topic_detail/582512214418244
+龙珠介绍：`https://wx.zsxq.com/dweb2/index/topic_detail/582512214418244`
 
 ![](img/eedea829cb8943d109fe9de3dcafe7b6.png)
 
@@ -196,7 +184,7 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/2952618163fd07f61b3f7a0ea7759115.png)
 
-航海手册：https://scys.com/view/docx/QWfQdS9bCoYX7uxv43pccryRn2g
+航海手册：`https://scys.com/view/docx/QWfQdS9bCoYX7uxv43pccryRn2g`
 
 ## 你好，龙哥大大。 眼下有主业8人小团队，4人业务➕4人运营。但目前市场趋于下滑姿态，想问您的是，目前是继续深耕做精主业，还是腾出时间测试其他项目呢
 
@@ -216,9 +204,9 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/b0e301399c3a742bf71ab6b2d86b8f0a.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188482818221122
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188482818221122`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/584512552251254
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/584512552251254`
 
 ## 每年只在四月有续费优惠吗？我明年续费时还不到四月
 
@@ -254,7 +242,7 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ## 想问一下，你怎么看待弹幕游戏。
 
-![](img/156ca739f76bb53e8df89a174634a0ed.png)
+![](img/156ca739f76bb53e8df89a174634a1ed.png)
 
 **圈友案例仅供参考：**
 
@@ -268,7 +256,7 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/1bbf81fdd92bef7fdc4e146a8b1f95bc.png)
 
-链接直达：👉 https://t.zsxq.com/193VNiajt
+链接直达：👉 `https://t.zsxq.com/193VNiajt`
 
 ## 今年给出的十大赛道很好，可否在每个赛道给出类似文件？例如赚钱内部的50个赛道这些都整理分享出来？这样便于更快大家找到合适方向。 2、跨行初学者来说，在这么多好的项目快速的找到方向有什么好的方法？ 3、航海可以很好让初学者入门；赚钱可否有航海类似机制，让找到方向的伙伴，将找到的方向发展成自己未来的事业。可以是副业，或是创业。
 
@@ -290,26 +278,27 @@ https://wx.zsxq.com/dweb2/index/topic_detail/4844852524811188
 
 ![](img/987aa379004c01a7c5940ffa6a824681.png)
 
-
-[《人生亏钱指南》龙哥盟出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcCjb0pAho6p8JxIY0PceVc8n5e)
+[`《人生亏钱指南》龙哥盟出品.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcCjb0pAho6p8JxIY0PceVc8n5e)
 
 ![](img/0bfb10ad81cbb49f2abf7452ff7c6d7a.png)
 
-[《龙哥百问百答》——龙哥盟星球问答_2017-2024合集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DW1JbGw70o255DxqAD9cm2FMn8e)
+[`《龙哥百问百答》——龙哥盟星球问答_2017-2024合集.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DW1JbGw70o255DxqAD9cm2FMn8e)
 
 ![](img/9b0c9aceb60a37493d7b82cfe7fc049c.png)
 
-[龙哥益语.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ENUPborpboIEObxPtErcfTbenkh)
+[`龙哥益语.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ENUPborpboIEObxPtErcfTbenkh)
 
 ![](img/171c54c63e26623ae27f4e6188499fdd.png)
 
-[100+赚钱高手提供的2021年赚钱建议-龙哥盟出品-完整版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SlKzbAby5oVAX5xfIvAcNLYNnyh)
+[`100+赚钱高手提供的2021年赚钱建议-龙哥盟出品-完整版.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SlKzbAby5oVAX5xfIvAcNLYNnyh)
 
 ![](img/69551595ac58efabbc2d8d1ace595125.png)
 
-[《赚钱日历2020》-龙哥盟社群出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BKafb8VJNol8EAxq0lYcNJcbnVf)
+[`《赚钱日历2020》-龙哥盟社群出品.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BKafb8VJNol8EAxq0lYcNJcbnVf)
 
 ![](img/d10fef86357213489c42743b490f0df7.png)
+
+
 
 [《赚钱日历2021》-龙哥盟社群出品.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uhpybc7uuoHsyWxOYepcAHhKnkf)
 
@@ -375,7 +364,7 @@ https://t.zsxq.com/19GYhFeuU
 
 ## 大大，如果做自由职业 你觉得最好在哪个城市定居比较利于赚钱？
 
-![](img/14bbf67d926c661c320a5b2b50b43ea2.png)
+![](img/14bbf67d926c66152d91b2145a02d2b7.png)
 
 8 月航海 | 数字游民 | 实战手册
 
@@ -485,8 +474,6 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/073e8ee5dce5691070eee92a2edb4e39.png)
 
-##
-
 ![](img/ce4ee4fcffa5e575390c1a6d1c360398.png)
 
 [【逐段翻译版】10x Is Easier Than 2x.epub](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UqtmbWD0PotHgLxZqUEcN9cYnnB)
@@ -537,7 +524,7 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/8ea8e4d8118dd307105e2b0ccb1ee5fb.png)
 
-# 老大，关于个人技能提升这块有没有可能开展一期抖音运营的，因为不管是工作上还是副业上运营特别的重要，但是一直不太懂
+## 老大，关于个人技能提升这块有没有可能开展一期抖音运营的，因为不管是工作上还是副业上运营特别的重要，但是一直不太懂
 
 ## 龙哥大大，最近在看个人优势挖掘的手册，运用手册中从成就事件中找优势和从重复行为中找优势，思考半天，也没想到一件成就事件，没有找到答案。想问龙哥大大，如何找到自己的优势，做擅长的事情。
 
@@ -555,49 +542,49 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/0d15d3791e3c76633b8c9bfab5d69dfa.png)
 
-# 如何正确的选择一条路，走到亮？ 如七年前的龙哥盟。龙哥大大，肯定是见过很多很多以后。正确判断未来趋势。
+## 如何正确的选择一条路，走到亮？ 如七年前的龙哥盟。龙哥大大，肯定是见过很多很多以后。正确判断未来趋势。
 
-# 现在人在云南的一个市级城市，互联网环境几乎没有，主要是靠线上，对一线城市了解较少，现实情况暂时不能改变城市，从发展角度，有什么建议吗
+## 现在人在云南的一个市级城市，互联网环境几乎没有，主要是靠线上，对一线城市了解较少，现实情况暂时不能改变城市，从发展角度，有什么建议吗
 
-# 龙哥老板好，听到身边的人在做的事情逐步走向正道且赚到了钱，反观自己还是不温不火，成长很慢，这种情况要怎么破？
+## 龙哥老板好，听到身边的人在做的事情逐步走向正道且赚到了钱，反观自己还是不温不火，成长很慢，这种情况要怎么破？
 
-# 你好👋，龙哥老板，视频号直播卖图书想深耕有哪三个方向可以发力？
+## 你好👋，龙哥老板，视频号直播卖图书想深耕有哪三个方向可以发力？
 
-# 什么时候出一个赚钱知识库AI助手，通过对话，结合赚钱的内容，给出实操方法
+## 什么时候出一个赚钱知识库AI助手，通过对话，结合赚钱的内容，给出实操方法
 
-# 如何提升心境？
+## 如何提升心境？
 
-# 有没有做ai国学赛道的？专门的易学预测治病风水之类的？
+## 有没有做ai国学赛道的？专门的易学预测治病风水之类的？
 
-# 我目前负债40w，01年的 每个月都有个2-3w，手里还有目前也还有其他项目没有去操作。但是我平时很多时间更想去玩，而不是去挣钱 该怎么办
+## 我目前负债40w，01年的 每个月都有个2-3w，手里还有目前也还有其他项目没有去操作。但是我平时很多时间更想去玩，而不是去挣钱 该怎么办
 
-# 龙哥是哪里人？家乡的环境对你的生活起到了什么样的作用？
+## 龙哥是哪里人？家乡的环境对你的生活起到了什么样的作用？
 
-# 有赚钱的想法 但总是没啥行动有啥方法嘛，计划总是败于实践
+## 有赚钱的想法 但总是没啥行动有啥方法嘛，计划总是败于实践
 
-# 计划在数字人方向深耕，比如大品牌的核心代理商，但是这段时间的市场调查和实战体感是，需求其实并没有那么大，有一点迷茫。想问问龙哥，我选的这个方向是不是值得做7年，怎么判断的。
+## 计划在数字人方向深耕，比如大品牌的核心代理商，但是这段时间的市场调查和实战体感是，需求其实并没有那么大，有一点迷茫。想问问龙哥，我选的这个方向是不是值得做7年，怎么判断的。
 
-# 龙哥老板晚上好，前面创业熬了六年退股了，停了大半年还没找到方向，好像人没有自信了，有下场爆文，但是没法坚持更新，拿到的结果也小，不知道自己内心真正想要什么了，假如你是我，想知道你会怎么破局？ 感恩！
+## 龙哥老板晚上好，前面创业熬了六年退股了，停了大半年还没找到方向，好像人没有自信了，有下场爆文，但是没法坚持更新，拿到的结果也小，不知道自己内心真正想要什么了，假如你是我，想知道你会怎么破局？ 感恩！
 
-# 关于个人成长：请问龙哥老大每天都会做的三个习惯是什么？
+## 关于个人成长：请问龙哥老大每天都会做的三个习惯是什么？
 
-# 想问问龙哥，一个相对私人生活的问题，希望方便的话可以解答哦，就是目前阶段是如何规划一天的时间分配，以及自己的精神和心力是如何去做调节分配
+## 想问问龙哥，一个相对私人生活的问题，希望方便的话可以解答哦，就是目前阶段是如何规划一天的时间分配，以及自己的精神和心力是如何去做调节分配
 
-# 龙哥大大，下一个七年会有什么不一样的东西出现呢
+## 龙哥大大，下一个七年会有什么不一样的东西出现呢
 
-# hi！能不能提供一个web3.0目前最应该薅的一个羊毛实操项目（lv0）
+## hi！能不能提供一个web3.0目前最应该薅的一个羊毛实操项目（lv0）
 
-# 听说可以薅龙哥大大了 请问龙哥大大，2024年知识付费赛道如何破局持续变现的呢？
+## 听说可以薅龙哥大大了 请问龙哥大大，2024年知识付费赛道如何破局持续变现的呢？
 
-# 龙哥大大:目前比较困惑主业没有什么发展空间，自己一人在外边，多年和家人异地，想改变现状，想辞职回老家，从事自由职业，不知道如何开始。航海也参加几期，没有拿到什么结果，也没有深耕。龙哥大大有没有什么好的建议，马上35感觉自己一事无成，好失败，每次女儿视频，就问爸爸什么时候回来陪我。
+## 龙哥大大:目前比较困惑主业没有什么发展空间，自己一人在外边，多年和家人异地，想改变现状，想辞职回老家，从事自由职业，不知道如何开始。航海也参加几期，没有拿到什么结果，也没有深耕。龙哥大大有没有什么好的建议，马上35感觉自己一事无成，好失败，每次女儿视频，就问爸爸什么时候回来陪我。
 
-# 龙哥大大，想要小航海小团队的组建，人不多一起推行计划的那种
+## 龙哥大大，想要小航海小团队的组建，人不多一起推行计划的那种
 
-# 我希望赚钱的航海体验感要优化一下，比如航海做成一个专业的训练营，有专门的干货介绍，教练的带教，也要有相应的作业要求，还有问题求助，有专业的解答就好了，体验感会好很多，个人建议一下，希望龙哥大佬能看到
+## 我希望赚钱的航海体验感要优化一下，比如航海做成一个专业的训练营，有专门的干货介绍，教练的带教，也要有相应的作业要求，还有问题求助，有专业的解答就好了，体验感会好很多，个人建议一下，希望龙哥大佬能看到
 
-# 龙哥老师未来看好那些赛道？ 心理学怎么样呢？
+## 龙哥老师未来看好那些赛道？ 心理学怎么样呢？
 
-# 可以搞一个赚钱AI小助手，把手册或者精华帖不定时的喂给他，这样圈友有问题了可以先问小助手，没有答案再来提问
+## 可以搞一个赚钱AI小助手，把手册或者精华帖不定时的喂给他，这样圈友有问题了可以先问小助手，没有答案再来提问
 
 ## 绿色陪玩桌游吧想要实现年利润百万级的收入，龙哥会从哪些角度去思考，从而把这个业务盘子做大（已经跑通从0到1）
 
@@ -607,9 +594,9 @@ https://t.zsxq.com/19xNZgICA
 
 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/181412881521112
 
-# 保持开放在面对未知没有什么掌控感的时候感觉很难
+## 保持开放在面对未知没有什么掌控感的时候感觉很难
 
-# 哈哈，什么时候来福建，有没有全国巡演计划？
+## 哈哈，什么时候来福建，有没有全国巡演计划？
 
 ## 我也想加入微天使，还需要做什么努力呀？
 
@@ -619,25 +606,27 @@ https://t.zsxq.com/19xNZgICA
 
 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/211225251118481
 
-# 赚钱孵化器目前有什么进度吗？比如什么时候会公布，入驻条件如何？
+## 赚钱孵化器目前有什么进度吗？比如什么时候会公布，入驻条件如何？
 
-# 大大，我是大四应届毕业生，在去年年底加入的赚钱，也是在那时候注册了一家公司，但是目前没有项目也不知道该干什么，我能利用这个公司做些什么呢？
+## 大大，我是大四应届毕业生，在去年年底加入的赚钱，也是在那时候注册了一家公司，但是目前没有项目也不知道该干什么，我能利用这个公司做些什么呢？
 
-# 以前全职炒股赚了几百万，现在不行了，但是也没亏，年纪也近40了，接下来该怎么办
+## 以前全职炒股赚了几百万，现在不行了，但是也没亏，年纪也近40了，接下来该怎么办
 
-# 今年最重要的一件事是？
+## 今年最重要的一件事是？
 
-# 请问龙哥老板，2024年 AI + 私域工具，有哪些赚钱机会呢？
+## 请问龙哥老板，2024年 AI + 私域工具，有哪些赚钱机会呢？
 
 ## 老大，web3的变局能给普通人带来什么机会
 
 **圈友案例仅供参考：**
 
+
+
 ![](img/203156e7c33431ee818c392a77d893cb.png)
 
-链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/588518844544554
+链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/588518844544554`
 
-# 对于新手来说，要实现的目标感觉难度太大了怎么办？想一年存十万，也已经找了两个方向，一个是闲鱼高客单，一个是AI代写。 但目前取得的成果不多，闲鱼高客单做了45天，到目前只挣了600左右，这个赛道有信心实现一个月三千，AI代写还没跑通最小MVP 之后还想找别的赛道，也有考虑过60分带30分的。每次遇到困难，会感觉十万真不容易，望而生畏，有时也会陷入自我怀疑
+# 对于新手来说，要实现的目标感觉难度太大了怎么办？想一年存十万，也已经找了两个方向，一个是闲鱼高客单，一个是AI代写。但目前取得的成果不多，闲鱼高客单做了45天，到目前只挣了600左右，这个赛道有信心实现一个月三千，AI代写还没跑通最小MVP 之后还想找别的赛道，也有考虑过60分带30分的。每次遇到困难，会感觉十万真不容易，望而生畏，有时也会陷入自我怀疑
 
 # 海外投资可以关注哪个赛道
 
@@ -669,9 +658,9 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/7b082554f106f84f6b2930ad5bb6ab4e.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/211428485448411
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/211428485448411`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/214514455848821
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/214514455848821`
 
 # 加入赚钱的一年，尝试了许多项目，也都有拿到一些正反馈，但总有一些主观或客观原因导致这个项目没有继续下去，想问龙哥大大，该如何在众多有反馈的项目中，找到一个适合自己并可以长期深耕的项目？
 
@@ -707,11 +696,11 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/7cbbae8de7c1b475528dbe5483ae9dd8.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/411254282841458
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/411254282841458`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/811428441244522
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/811428441244522`
 
-图3 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/211822545422441
+图3 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/211822545422441`
 
 # 老大，有没有考虑有出条赛道和“情感，情商，交际”这方面相关的，感觉对于我们这种社恐i人挺重要的，我的小伙伴都反应不太敢去线下，我也是，虽然一直告诉自己可以当个鼓掌的人，但是每次去都需要心理准备，而且很怕说出来的话不合适之类的。还有就是交际，很多关系都是停留在了表面，不会维护，赚钱很多小伙伴就做得很好，有时候幸好有他们不然我会更自闭
 
@@ -731,11 +720,11 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/bedfe43e5481db7ab50f5333df9df20b.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188184512225482
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188184512225482`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188545255818822
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188545255818822`
 
-图3 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188518215252812
+图3 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188518215252812`
 
 # 龙哥大大，我是一名程序员，去年这个时候加入的赚钱，对AI方向特别感兴趣。当时刚好看到了赚钱的手册，提到AI绘画小程序有年入百万的机会，就开始了开发。 花了4、5个月的业余时间完成了基于midjourney的AI绘画小程序的开发。但是自己不会推广，也没有做过相关的事情，找了一些教程，各个平台发文，都没有大的反馈。后面又持续迭代小程序，想着把功能、体验做的更好，可以更好推广，也可以激发用户的自传播。一直到去年底，还是没有什么起色。 然后看到赚钱有出海站的航海，里面也有推广相关的内容，就想着参加这个航海，可以学一些推广的方法应用到自己的小程序上。 经过一次出海站的航海，反而让我觉得出海才是未来，一个月的航海也让我收获了非常多的东西，觉得自己之前做小程序犯了太多的错误了，浪费了太多时间。 现在有点纠结，国内的小程序放弃掉，感觉有点可惜，毕竟花了很多的心思，感觉做的也还不错；持续投入又不知道有没有结果；还是说接下来专注出海的业务就好。希望龙哥大大可以给点建议 🙏
 
@@ -747,9 +736,9 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/5d064f98d25661527b8e6c7c3f1878af.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188184441821422
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188184441821422`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/811844452441512
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/811844452441512`
 
 # 正准备做面向赚钱圈友的赚钱工具站，龙哥对工具站的内容和运营有什么建议吗？ 目前想法： 开发或收录 航海项目、志愿者、赚钱 相关的工具，一些高频、适合移动端使用的上线🛰️小程序。
 
@@ -769,11 +758,11 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/79450ae93cd23914301cf836557d4918.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/2855822282882881
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/2855822282882881`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/811215584412142
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/811215584412142`
 
-图3 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/588115184524814
+图3 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/588115184524814`
 
 # 最近执行力变得好差，有什么方法调节吗
 
@@ -783,9 +772,9 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/ca951637de45e117bec593b8732d3539.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/212844452128121
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/212844452128121`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/212858188848111
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/212858188848111`
 
 # 十年财务人，国企财务经理，注册会计师，高级会计师，职业上升通道几乎没有了。今年初刚加入赚钱，从最开始的亢奋吸取到现在的漫无目的而焦虑不安，也就短短三个月。想找一个副业，让自己更加有安全感。 龙哥大大，请指点一二：我想走自媒体之路，针对我的情况，方向是什么？可以如何切入？
 
@@ -797,11 +786,11 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/313ad07a8817ded087202929d4d4e9af.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188828514212512
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188828514212512`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/214424151842451
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/214424151842451`
 
-图3 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/811418888242242
+图3 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/811418888242242`
 
 # h5小游戏适合小团队入手么，
 
@@ -809,7 +798,7 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/91a0d1f97da5504b382e3da5180f0371.png)
 
-链接直达：https://articles.zsxq.com/id_hxfq7xmj5w9r.html
+链接直达：`https://articles.zsxq.com/id_hxfq7xmj5w9r.html`
 
 # 老大，我试了好几个赛道，没有拿到我想要的结果，是继续走现有的赛道，还是换赛道呢？怎样才能试到适合自己又赚钱的副业呢？
 
@@ -817,9 +806,9 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/e4b8ca8358048bf8a3f3257698972b87.png)
 
-图一链接直达：https://wx.zsxq.com/dweb2/index/topic_detail/588122881488544
+图一链接直达：`https://wx.zsxq.com/dweb2/index/topic_detail/588122881488544`
 
-图二链接直达：https://scys.com/view/docx/FmtDd2M7wocG50x5W3WclpI7n8X
+图二链接直达：`https://scys.com/view/docx/FmtDd2M7wocG50x5W3WclpI7n8X`
 
 # 航海结束，有拿到正反馈的朋友，能不能开一个实训营，带着大家一起玩，适当收费也行。最重要的是可以甄别这个人是不是真的拿到正反馈。
 
@@ -863,11 +852,9 @@ https://t.zsxq.com/19xNZgICA
 
 # 老大，可以多加一些线上聚会吗哈哈哈
 
-#
 
-# 👸号刚爆两三篇在快速涨粉中，这会儿开始接广合适吗？或者什么时候开始接广更合适些（如爆文数粉丝量等相对量化指标）？ （另航海对于真小白的实操案例和解答是否可以多一些？航海确实部分过于流程化，全小白更多还是自己摸索。我个人在探索过程中的一些细节问题，想在星球中找到答案还是比较困难，理论类的大框架的分享偏多了。细节些的案例对新人小白可能更有帮助）
 
-#
+# 👸号刚爆两三篇在快速涨粉中，这会儿开始接广合适吗？或者什么时候开始接广更合适些（如爆文数粉丝量等相对量化指标）？（另航海对于真小白的实操案例和解答是否可以多一些？航海确实部分过于流程化，全小白更多还是自己摸索。我个人在探索过程中的一些细节问题，想在星球中找到答案还是比较困难，理论类的大框架的分享偏多了。细节些的案例对新人小白可能更有帮助）
 
 # 去年加入到现在参加了好几个航海，大部份都能跑通赚到钱，包括闲鱼二手书，📕无人直播，抖音直播教育（没跑通），闲鱼高客单，3月航海视频号中老年知识付费（单视频最高播放最高3w，没继续做），这次志愿者小组轻松里程第一，私域在做心力教练ip，能感觉也有反馈写作不错 能感觉到每次航海都对很多项目感兴趣，都想尝试，能感觉到我喜欢帮助别人。尤其是熟悉的圈友朋友，航海的时候跟他们聊选什么项目很开心 但是接触到很多人说是要深耕，不要老是换项目；我就很迷茫，不知道该怎么办，感觉聚焦有点吃力，同时又觉得去年是突破了0-1，拿到了从市场上赚钱的这个信心，按道理今年需要1-10尝试的慢下来沉下来，但是感觉内心有阻力又不知道是什么 想听听老大的想法和建议
 
@@ -879,23 +866,23 @@ https://t.zsxq.com/19xNZgICA
 
 # 目前还是在抖音上，两三年了，宝宝号6000粉丝，个人情感号一万七，却始终没有变现成功，找到自己可持续发展的方向，一直没有实现从0到1，我是继续抖音，还是转战📕和视频号从零开始呢？
 
-# 龙哥，你好。 我想问，“脱单陪跑”这个项目，是否可以做到仅靠一个人，是否可以做到年入百万以上？ 如果可以，需要基本什么样的核心能力，已经成功的因素是那些？ 期待解答。
+# 龙哥，你好。我想问，“脱单陪跑”这个项目，是否可以做到仅靠一个人，是否可以做到年入百万以上？如果可以，需要基本什么样的核心能力，已经成功的因素是那些？期待解答。
 
-**圈友案例仅供参考：**
+### 圈友案例仅供参考：
 
 ![](img/48b543b72de9afef92afc96a7c02ff44.png)
 
 ![](img/47ec6ad99bc773357c259853742fb7e0.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/2855822228518811
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/2855822228518811`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/8855841182884542
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/8855841182884542`
 
 # 🙌想提问一个问题，我的问题是，我在看赚钱咱圈友文章的时候，经常会出现别的文章链接，不知道应该选择继续读本文章还是点进去看其他的文章 如果进其他的文章再出来读原文章就很容易跟不上，不知道这该如何是好
 
 # 能请龙哥大大分享一下未来 3～5 年比较看好的行业吗？以及想知道一下，龙哥大大心中的偶像是谁哇
 
-# 老大，我是一个90后创业者，出生时候因为医疗事故损伤了语言神经，导致我说话比别人慢。但我从未放弃，去年在视频号卖Ai课程卖了8000多份，还在赚钱发帖得到很多圈友支持。其实现在大家都很难，但是有一些特殊群体其实更难，我在想怎么能利用赚钱去帮助他们来赚钱呢？我其实一直都想跟您交流一下。
+# 老大，我是一个90后创业者，出生时候因为医�事故损伤了语言神经，导致我说话比别人慢。但我从未放弃，去年在视频号卖Ai课程卖了8000多份，还在赚钱发帖得到很多圈友支持。其实现在大家都很难，但是有一些特殊群体其实更难，我在想怎么能利用赚钱去帮助他们来赚钱呢？我其实一直都想跟您交流一下。
 
 # 龙哥大大，请给想赚钱的年轻人提出你认为最实用的建议。
 
@@ -907,27 +894,27 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/69e8d6af276b06a9e6d2283ca024fa40.png)
 
-**圈友案例仅供参考：**
+### 圈友案例仅供参考：
 
 ![](img/92dc1d4b53ae0e7ae07010209805c6f8.png)
 
 ![](img/d35ebb93deacd75e6c5a4396f96f6c54.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/211258185258581
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/211258185258581`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/182585218582422
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/182585218582422`
 
 # 请问老大，如何摒弃学生思维?如何抓住根本避免无效努力?
 
-**圈友案例仅供参考：**
+### 圈友案例仅供参考：
 
 ![](img/c0a79439b5d7c1100f904479bd9960ac.png)
 
 ![](img/8e01534d997f06ca091aa964f9d8be05.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188411814424522
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188411814424522`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188554411182422
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188554411182422`
 
 # 另外一个问题，就是这三年，龙哥你听过最深刻的批评是什么？
 
@@ -937,17 +924,17 @@ https://t.zsxq.com/19xNZgICA
 
 # 老大 如何制定10x的人生和财富原则
 
-**圈友案例仅供参考：**
+### 圈友案例仅供参考：
 
 ![](img/3ad2a876d7f2efb3b4907eeed9646d84.png)
 
 ![](img/39fb20846ba8f8a2ffa60178a9476e84.png)
 
-这里是大家的作业，有很多圈友的建议和指南：👉 https://wx.zsxq.com/dweb2/index/topic_detail/8855818822848552
+这里是大家的作业，有很多圈友的建议和指南：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/8855818822848552`
 
 ![](img/edaa29c2b2a2e3964e81073baad5133c.png)
 
-[【逐段翻译版】10x Is Easier Than 2x.epub](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PVn6bFxCPocNJfxrNqYcQ12Vnle)
+[`【逐段翻译版】10x Is Easier Than 2x.epub`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PVn6bFxCPocNJfxrNqYcQ12Vnle)
 
 # 龙哥老师，我目前在做大学生的高数期末冲刺课程以及考研数学，这方面是否能坚持做下去？如果不太能的话，应该朝哪个方向努力？有全阶段（小学到大学）的数学教学能力，带过团队，有组织管理能力。
 
@@ -957,19 +944,19 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/5882f8451e614fd935c3698da103883e.png)
 
-链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/418828888188118
+链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/418828888188118`
 
 ## 龙哥大大，跨境电商做亚马逊还有前景吗？出海做什么平台好？
 
-**圈友案例仅供参考：**
+### 圈友案例仅供参考：
 
 ![](img/75ff7af55ea30604a291e0740488f724.png)
 
 ![](img/5b913b8afddf867dc92c85e0944a1dcd.png)
 
-图1 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/811842515551142
+图1 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/811842515551142`
 
-图2 链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/188545255818822
+图2 链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/188545255818822`
 
 ## 老大，项目做了快一年，跑通了但扩量一直没突破，心理很焦虑、迷茫，这种情况怎么破？（指心理层面）
 
@@ -987,7 +974,7 @@ https://t.zsxq.com/19xNZgICA
 
 ![](img/75d1f08419de83a4cb7afc74ab6c09fb.png)
 
-链接直达：👉 https://wx.zsxq.com/dweb2/index/topic_detail/211225251118481
+链接直达：👉 `https://wx.zsxq.com/dweb2/index/topic_detail/211225251118481`
 
 # 三、番外篇：我们的一点小感慨
 
@@ -1011,7 +998,7 @@ https://t.zsxq.com/19xNZgICA
 
 发起人：七小
 
-[七小的个人使用说明书  2024.03.27](https://mkfwp3u79v.feishu.cn/docx/FmWBdUJpcozlgxxdH2ScKR5snKc)
+[`七小的个人使用说明书  2024.03.27`](https://mkfwp3u79v.feishu.cn/docx/FmWBdUJpcozlgxxdH2ScKR5snKc)
 
 三位整理人：容非、彻易、隆盛
 

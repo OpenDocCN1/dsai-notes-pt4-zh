@@ -1,3 +1,4 @@
+
 # 11.20-英伟达发布新 AI 硬件：H200 NVL PCIe GPU 和 GB200 NVL4 超级芯片、Mistral 发布 Pixtral Large 多模态 AI 模型
 
 > 来源：[https://agijuejin.feishu.cn/docx/OyctdK2TSoEgEbxrF3ac1eE1nDg](https://agijuejin.feishu.cn/docx/OyctdK2TSoEgEbxrF3ac1eE1nDg)

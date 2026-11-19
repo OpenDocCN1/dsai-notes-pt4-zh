@@ -1,16 +1,17 @@
+
 # 写作经验：AI工作流
 
 > 来源：[https://datawhaler.feishu.cn/docx/RH8qd0nJco4dT0xPGrtcZZXFnph](https://datawhaler.feishu.cn/docx/RH8qd0nJco4dT0xPGrtcZZXFnph)
 
-# 说明
+## 说明
 
 由于之前分享到写作经验太过笼统，没有过多的例子，而且不够具体和清晰，所以在对前面的写作经验进行一个具体化的描述，通过构建一个具体的情景来给大家综合的演示文稿生成，配图，以及PPT的制作
 
-# 情景
+## 情景
 
 人工智能在在线教育领域的应用
 
-# 搭建工作流所需要的工具
+## 搭建工作流所需要的工具
 
 [秘塔AI](https://metaso.cn/)
 
@@ -20,7 +21,7 @@
 
 [通义千问](https://tongyi.aliyun.com/qianwen/?spm=5176.2810346&code=lapnbfugti&utm_content=se_1017928895)
 
-# 大纲的获取
+## 大纲的获取
 
 选择秘塔AI寻找合适的写作大纲与参考资料
 
@@ -30,15 +31,15 @@
 
 ![](img/7675262ac437f65259976cb90955c17b.png)
 
-# 论文写作
+## 论文写作
 
-## 章节编辑
+### 章节编辑
 
 ![](img/0233a99dd8e7b2efc1c647471311a78e.png)
 
 针对生成的大纲进行编辑，选择想要的章节
 
-## 参考资料替换
+### 参考资料替换
 
 删除修改完之后从第一段开始选择替换参考资料，删除部分参考资料
 
@@ -52,7 +53,7 @@
 
 说明：正常来说我们所使用的一般题材选文章就差不多了，但是本篇想要拉爆AI生产力，所以举了一个极端的例子：论文来给大家演示🎈🎈🎈🎈
 
-## 配图技巧
+### 配图技巧
 
 生成之后我们就需要配图了，接下来给大家展示如何通过文章内的大意制作prompt来生成内容较好的图片
 
@@ -116,7 +117,7 @@ word：
 
 [《AI 技术驱动智慧教育：挑战与机遇》.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IRUYb6A8noPEGBxRErLc2n5Onxh)
 
-# PPT生成
+## PPT生成
 
 ![](img/23e6339e56a97fea24cf780bbdfbdc46.png)
 

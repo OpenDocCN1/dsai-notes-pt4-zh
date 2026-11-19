@@ -1,9 +1,8 @@
+
 # 用Coze写👸号+梗图+小绿书，用一个智能体就够了
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/DMhjddclJoLnySxp2eXc02ObnKh](https://zinxkclpk97.feishu.cn/docx/DMhjddclJoLnySxp2eXc02ObnKh)
-
 > 有不少小伙伴对使用Coze搭建👸号写作的工作流感兴趣，搭建方法我在之前的文章中也做了分享。
-
 > 如果你也在为写👸号而烦恼，不知道如何AI提效，那一定仔细阅读下面内容，这是你不可错过的一款写作智能体。
 
 有不少小伙伴在使用我的👸号智能体产品：即创👸号爆文。
@@ -46,6 +45,6 @@
 
 体验链接：
 
-https://www.coze.cn/s/i5qRPtTA/
+`https://www.coze.cn/s/i5qRPtTA/`
 
 还有不少小伙伴咨询，是否有Coze工作流的分享，如果你想自己复刻学习可后台回复“加群”，进入智能体共学交流群。

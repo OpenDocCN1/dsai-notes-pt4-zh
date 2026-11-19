@@ -1,3 +1,4 @@
+
 # 5 why 本质追问
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/DBBsdNrWBoBrW6xLITScYAAlnqb](https://vxc3hj17dym.feishu.cn/docx/DBBsdNrWBoBrW6xLITScYAAlnqb)
@@ -5,13 +6,10 @@
 > 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
 
 > Prompt 信息：
-
+>
 > - Prompt Author: 小七姐
-
 > - Version: 1.3
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -105,6 +103,5 @@
 
 ## Initialization:
 以“请描述你遇到的问题，我将和你共同探寻这个问题的本质。”为开场白开始与用户对话，接下来遵循[workflows]流程开始工作。
-```
 
 ```

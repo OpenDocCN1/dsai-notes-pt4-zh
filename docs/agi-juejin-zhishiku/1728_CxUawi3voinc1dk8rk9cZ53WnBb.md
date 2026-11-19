@@ -1,12 +1,13 @@
+
 # Stable Diffusion的可控性研究-1
 
 > 来源：[https://agijuejin.feishu.cn/docx/MqzHdegyxotOhqxWvFEcq52Bnbd](https://agijuejin.feishu.cn/docx/MqzHdegyxotOhqxWvFEcq52Bnbd)
 
 > 作者：德里克文
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/638017980)hihu.com/p/638017...
+> 原文：[https://zhuanlan.zhihu.com/p/638017980](https://zhuanlan.zhihu.com/p/638017980)
 
-基础可控性研究-1：如何确保画面人数控制
+## 基础可控性研究-1：如何确保画面人数控制
 
 在学习AI绘画的过程中，经常会碰到当我们直接生像素较高的图片，或者16:9或者9:16的图的时候，很大概率会不受到提示词的控制，出现多个人物。
 
@@ -28,11 +29,11 @@
 
 ![](img/55ebe5309f33ceabbde431d96711315e.png)
 
-
 你看，是不是已经完美解决了这个问题呢？
 
 也放上这个图片的Prompt，自己去尝试下吧：
 
+```
 (4k),( best quality), (highres:1.1), (masterpiece:1.1), This handsome man stands tall with a height of about 6 feet. He has long hair flowing naturally down his shoulders. He wears a deep blue Hanfu adorned with gold patterns, looking sophisticated and refined. His clear deep blue eyes seem to shine with radiance.
 
 Behind him, a blooming peony flower complements his attractive facial features. He holds a delicate sword with intricate designs along the blade, adding to his charm. In the distance, towering mountains, vast blue skies, boundless seas, and drifting white clouds bring a sense of mystery and nobility to this ethereal man.
@@ -40,6 +41,7 @@ Behind him, a blooming peony flower complements his attractive facial features. 
 Negative prompt: easynegative, badhandv4, bad anatomy, (worst quality:1.5), (low quality, lowres:1.5), strabismus, cross-eye, mole, long neck, earrings, hair flower, female clothes, female ornament, female, topknot,watermark
 
 Steps: 25, Sampler: DPM++ SDE Karras, CFG scale: 7, Seed: 1100789359, Size: 960x540, Model hash: 4078eb4174, Model: 3Guofeng3_v33, Denoising strength: 0.7, ENSD: 31337, Version: v1.2.1, Hires upscale: 2, Hires upscaler: Latent
+```
 
 与AI对【画】
 

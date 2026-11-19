@@ -1,3 +1,4 @@
+
 # TensorFlow 文本数据处理
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/VcA0dZX04o5yFMx0itqcIssinVd](https://v11enp9ok1h.feishu.cn/docx/VcA0dZX04o5yFMx0itqcIssinVd)
@@ -13,13 +14,9 @@ TensorFlow 作为当前最流行的深度学习框架之一，提供了强大的
 原始文本数据通常包含许多噪声和不一致性，例如：
 
 +   大小写不一致
-
 +   标点符号
-
 +   停用词（如"的"、"是"等）
-
 +   特殊字符
-
 +   拼写错误
 
 预处理的目标是将原始文本转换为干净、一致的格式，便于后续的特征提取和模型训练。
@@ -30,17 +27,14 @@ TensorFlow 作为当前最流行的深度学习框架之一，提供了强大的
 
 TensorFlow 提供了多个用于文本处理的模块：
 
-1.  tf.strings：基础字符串操作
-
-1.  tf.keras.layers.TextVectorization：文本向量化层
-
-1.  tf.data.TextLineDataset：从文本文件创建数据集
-
-1.  tensorflow_text：高级文本处理库（需单独安装）
+1. `tf.strings`：基础字符串操作
+1. `tf.keras.layers.TextVectorization`：文本向量化层
+1. `tf.data.TextLineDataset`：从文本文件创建数据集
+1. `tensorflow_text`：高级文本处理库（需单独安装）
 
 ### 安装必要的库
 
-## 实例
+### 实例
 
 ```
 import tensorflow as tf
@@ -52,21 +46,21 @@ import tensorflow_text as tf_text  # 可选，用于高级处理
 
 ### 字符串基本操作
 
-TensorFlow 的 tf.strings 模块提供了常见的字符串操作：
+TensorFlow 的 `tf.strings` 模块提供了常见的字符串操作：
 
-## 实例
+### 实例
 
 ```
 # 创建字符串张量
-text = tf.constant([&quot;TensorFlow 文本处理&quot;, &quot;深度学习自然语言处理&quot;])
+text = tf.constant(["TensorFlow 文本处理", "深度学习自然语言处理"])
 
 # 转换为小写
 lower_case = tf.strings.lower(text)
-# 输出: [&#x27;tensorflow 文本处理&#x27;, &#x27;深度学习自然语言处理&#x27;]
+# 输出: ['tensorflow 文本处理', '深度学习自然语言处理']
 
 # 分割字符串
 words = tf.strings.split(text)
-# 输出: [[&#x27;TensorFlow&#x27;, &#x27;文本处理&#x27;], [&#x27;深度学习&#x27;, &#x27;自然语言处理&#x27;]]
+# 输出: [['TensorFlow', '文本处理'], ['深度学习', '自然语言处理']]
 
 # 字符串长度
 length = tf.strings.length(text)
@@ -75,39 +69,39 @@ length = tf.strings.length(text)
 
 ### 正则表达式处理
 
-## 实例
+### 实例
 
 ```
 # 移除标点符号
 def remove_punctuation(text):
-    return tf.strings.regex_replace(text, &#x27;[%s]&#x27; % re.escape(string.punctuation), &#x27;&#x27;)
+    return tf.strings.regex_replace(text, '[%s]' % re.escape(string.punctuation), '')
 
-text = tf.constant(&quot;Hello, World!&quot;)
+text = tf.constant("Hello, World!")
 clean_text = remove_punctuation(text)
-# 输出: &quot;Hello World&quot;
+# 输出: "Hello World"
 ```
 
 ## 文本向量化
 
-将文本转换为数值表示是文本处理的核心步骤。TensorFlow 提供了 TextVectorization 层来实现这一功能。
+将文本转换为数值表示是文本处理的核心步骤。TensorFlow 提供了 `TextVectorization` 层来实现这一功能。
 
 ### 创建向量化层
 
-## 实例
+### 实例
 
 ```
 # 定义文本向量化层
 vectorize_layer = TextVectorization(
     max_tokens=10000,        # 最大词汇量
-    output_mode=&#x27;int&#x27;,       # 输出整数索引
+    output_mode='int',       # 输出整数索引
     output_sequence_length=50  # 统一序列长度
 )
 
 # 示例文本数据
 text_dataset = tf.data.Dataset.from_tensor_slices([
-    &quot;这是第一个句子&quot;,
-    &quot;这是另一个不同的句子&quot;,
-    &quot;添加第三个示例句子&quot;
+    "这是第一个句子",
+    "这是另一个不同的句子",
+    "添加第三个示例句子"
 ])
 
 # 适配数据并构建词汇表
@@ -116,11 +110,11 @@ vectorize_layer.adapt(text_dataset)
 
 ### 向量化文本
 
-## 实例
+### 实例
 
 ```
 # 向量化单个句子
-vectorized_text = vectorize_layer(&quot;这是一个示例句子&quot;)
+vectorized_text = vectorize_layer("这是一个示例句子")
 print(vectorized_text)
 # 输出类似: [ 5, 3, 10, 8, 0, 0, ... ] (后面补零到长度50)
 
@@ -131,15 +125,15 @@ print(vocab[:10])  # 打印前10个词汇
 
 ### 向量化模式选项
 
-TextVectorization 层支持多种输出模式：
+`TextVectorization` 层支持多种输出模式：
 
 ## 高级文本处理
 
-对于更复杂的文本处理需求，可以使用 tensorflow_text 库：
+对于更复杂的文本处理需求，可以使用 `tensorflow_text` 库：
 
 ### 分词器
 
-## 实例
+### 实例
 
 ```
 # 安装 tensorflow_text (如果需要)
@@ -151,38 +145,38 @@ import tensorflow_text as tf_text
 tokenizer = tf_text.WhitespaceTokenizer()
 
 # 分词
-tokens = tokenizer.tokenize([&quot;TensorFlow 文本处理&quot;, &quot;深度学习 NLP&quot;])
+tokens = tokenizer.tokenize(["TensorFlow 文本处理", "深度学习 NLP"])
 print(tokens)
-# 输出: [[&#x27;TensorFlow&#x27;, &#x27;文本处理&#x27;], [&#x27;深度学习&#x27;, &#x27;NLP&#x27;]]
+# 输出: [['TensorFlow', '文本处理'], ['深度学习', 'NLP']]
 ```
 
 ### 子词分词
 
-## 实例
+### 实例
 
 ```
 # 使用 BERT 分词器
 bert_tokenizer = tf_text.BertTokenizer(
-    vocab_lookup_table=&quot;path/to/vocab.txt&quot;,
+    vocab_lookup_table="path/to/vocab.txt",
     token_out_type=tf.int32
 )
 
-tokens = bert_tokenizer.tokenize([&quot;自然语言处理很有趣&quot;])
+tokens = bert_tokenizer.tokenize(["自然语言处理很有趣"])
 print(tokens)
 ```
 
 ## 构建文本处理管道
 
-完整的文本处理通常包含多个步骤，可以通过 tf.data 和预处理层构建管道：
+完整的文本处理通常包含多个步骤，可以通过 `tf.data` 和预处理层构建管道：
 
-## 实例
+### 实例
 
 ```
 def preprocess_text(text):
     # 转换为小写
     text = tf.strings.lower(text)
     # 移除标点
-    text = tf.strings.regex_replace(text, &#x27;[^a-zA-Z0-9\u4e00-\u9fa5]&#x27;, &#x27; &#x27;)
+    text = tf.strings.regex_replace(text, '[^a-zA-Z0-9\u4e00-\u9fa5]', ' ')
     return text
 
 # 创建处理管道
@@ -203,7 +197,7 @@ processed_ds = make_text_pipeline(text_dataset)
 
 ### 情感分析数据处理
 
-## 实例
+### 实例
 
 ```
 # 1. 加载数据
@@ -215,7 +209,7 @@ sequence_length = 250
 
 vectorize_layer = TextVectorization(
     max_tokens=max_features,
-    output_mode=&#x27;int&#x27;,
+    output_mode='int',
     output_sequence_length=sequence_length
 )
 
@@ -228,13 +222,13 @@ model = tf.keras.Sequential([
     vectorize_layer,
     tf.keras.layers.Embedding(max_features, 16),
     tf.keras.layers.GlobalAveragePooling1D(),
-    tf.keras.layers.Dense(1, activation=&#x27;sigmoid&#x27;)
+    tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
 # 5. 编译和训练模型
-model.compile(optimizer=&#x27;adam&#x27;,
-              loss=&#x27;binary_crossentropy&#x27;,
-              metrics=[&#x27;accuracy&#x27;])
+model.compile(optimizer='adam',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
 model.fit(train_text, train_labels, epochs=10)
 ```
 
@@ -242,39 +236,32 @@ model.fit(train_text, train_labels, epochs=10)
 
 ### 最佳实践
 
-1.  **词汇表大小**：根据数据集大小选择适当的词汇量，通常 10,000-50,000 足够
-
-1.  **序列长度**：分析文本长度分布，选择覆盖大多数样本的长度
-
-1.  **预处理一致性**：确保训练和推理时使用相同的预处理步骤
-
-1.  **内存优化**：对于大型数据集，使用生成器或 tf.data 的缓存功能
+1. **词汇表大小**：根据数据集大小选择适当的词汇量，通常 10,000-50,000 足够
+1. **序列长度**：分析文本长度分布，选择覆盖大多数样本的长度
+1. **预处理一致性**：确保训练和推理时使用相同的预处理步骤
+1. **内存优化**：对于大型数据集，使用生成器或 `tf.data` 的缓存功能
 
 ### 常见问题
 
-**1、词汇表外词(OOV)处理**：
-
-## 实例
+#### 1、词汇表外词(OOV)处理
 
 ```
 vectorize_layer = TextVectorization(
     max_tokens=10000,
-    output_mode=&#x27;int&#x27;,
+    output_mode='int',
     output_sequence_length=50,
     pad_to_max_tokens=True  # 确保所有输出长度一致
 )
 ```
 
-**2、处理多语言文本**：
+#### 2、处理多语言文本
 
 +   统一编码为 UTF-8
-
 +   考虑语言特定的预处理（如中文分词）
 
-**3、性能优化**：
+#### 3、性能优化
 
-+   使用 tf.data 的 prefetch 和 cache
-
++   使用 `tf.data` 的 `prefetch` 和 `cache`
 +   考虑离线预处理大型数据集
 
 ---
@@ -284,11 +271,8 @@ vectorize_layer = TextVectorization(
 TensorFlow 提供了全面的文本处理工具链，从基础字符串操作到高级向量化技术。通过合理使用这些工具，可以高效地将原始文本转换为适合深度学习模型输入的数值表示。关键步骤包括：
 
 1.  文本清洗和标准化
-
 1.  选择合适的向量化策略
-
 1.  构建可复用的处理管道
-
 1.  与模型训练流程集成
 
 掌握这些技能将为自然语言处理任务奠定坚实基础。

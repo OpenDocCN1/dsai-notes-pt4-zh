@@ -1,16 +1,17 @@
+
 # 202511｜你永远不会完美，但你可以变得更好
 
 > 来源：[https://leonzhang.feishu.cn/docx/RWRrd2HNCoSIl4x4ZXbca1MvnKc](https://leonzhang.feishu.cn/docx/RWRrd2HNCoSIl4x4ZXbca1MvnKc)
 
-### 最近工作
+## 最近工作
 
-> 《Glasscape 液态玻璃壁纸 - App Store》：https://apps.apple.com/tw/app/glasscape-%E6%B6%B2%E6%80%81%E7%8E%BB%E7%92%83%E5%A3%81%E7%BA%B8/id6755082892
+> 《Glasscape 液态玻璃壁纸 - App Store》:`https://apps.apple.com/tw/app/glasscape-%E6%B6%B2%E6%80%81%E7%8E%BB%E7%92%83%E5%A3%81%E7%BA%B8/id6755082892`
 
 [工作空闲之余，新上](https://apps.apple.com/tw/app/glasscape-%E6%B6%B2%E6%80%81%E7%8E%BB%E7%92%83%E5%A3%81%E7%BA%B8/id6755082892)架了一个 iOS App 叫 Glasscape，借助 iPhone 可以实现 3D 景深效果。欢迎 App Store 搜索「Glasscape 液态玻璃壁纸」，下载使用～ ❤️
 
 ![](img/f150e7e5d1eb7864359be058066f288e.png)
 
-### 最近观察和思考
+## 最近观察和思考
 
 **1**
 
@@ -29,27 +30,28 @@
 真的不要有“越过山丘，却发现无人等候”的遗憾，更何况，对面这个人还是自己。还有句话说的是，“穷游、富游，不如少年游”。
 
 | ![](img/3f026dc9e847c9f5625b3c04347563f3.png) |
+
 | --- |
 
 **4**
 
-> 《对每一个要求“一点点”时间的人说不》：https://thoughtcatalog.com/ryan-holiday/2017/01/to-everyone-who-asks-for-just-a-little-of-your-time/
+> 《对每一个要求“一点点”时间的人说不》:`https://thoughtcatalog.com/ryan-holiday/2017/01/to-everyone-who-asks-for-just-a-little-of-your-time/`
 
 时间是绝对公平的，因为每个人的时间单位都是一样的，只是生命的长度有长有短，所以我们要尽可能少地减少对时间的浪费。
 
-### 最近在听、在看
+## 最近在听、在看
 
-#### 播客
+### 播客
 
 **1**
 
-> 《罗永浩的十字路口｜魔术大师刘谦×罗永浩！你所不知道的刘谦》: https://www.xiaoyuzhoufm.com/episode/6911792bd99642be964e9813
+> 《罗永浩的十字路口｜魔术大师刘谦×罗永浩！你所不知道的刘谦》: `https://www.xiaoyuzhoufm.com/episode/6911792bd99642be964e9813`
 
 1.  目标与幸福：目标应该称为「方向」，超越“成功”的个人成长法则。——刘谦
 
 1.  努力与结果：享受过程，才是长久的成功。——刘谦
 
-**毕**竟大多数人的大多数目标都是失败的，你要感受过程带来的快乐，而不是朝着目标。不然每一天、甚至到 deadline 那天都是痛苦的。
+毕竟大多数人的大多数目标都是失败的，你要感受过程带来的快乐，而不是朝着目标。不然每一天、甚至到 deadline 那天都是痛苦的。
 
 1.  魔术与艺术：拆解表演的灵魂魅力
 
@@ -57,7 +59,7 @@
 
 **2**
 
-> 《卫诗婕｜51.Plaud 许高首次深度讲述：全球增速最快 AI 硬件，与一种创业美学》: https://www.xiaoyuzhoufm.com/episode/68d6ceb2522b40626c7222f0
+> 《卫诗婕｜51.Plaud 许高首次深度讲述：全球增速最快 AI 硬件，与一种创业美学》: `https://www.xiaoyuzhoufm.com/episode/68d6ceb2522b40626c7222f0`
 
 **员工幸福感 vs 十倍回报**
 
@@ -67,17 +69,17 @@
 
 "规模大不一定是最好的商业回报。创造更大的经营杠杆，组建一个令所有参与者都能享受的美妙旅程，不断突破存量价值的天花板，并试图去触摸新的可能。"
 
-#### 文章
+### 文章
 
 **1**
 
-> 《**Brie Wolfson**｜**Inside Cursor**》https://colossus.com/article/inside-cursor/
+> 《Brie Wolfson｜Inside Cursor》`https://colossus.com/article/inside-cursor/`
 
 很喜欢的一家公司，产品、公司氛围都很喜欢！
 
 **2**
 
-> 《巴菲特发布谢幕信》: https://mp.weixin.qq.com/s/A9p_hWZB-5-5Kyc4SZ4BgA
+> 《巴菲特发布谢幕信》: `https://mp.weixin.qq.com/s/A9p_hWZB-5-5Kyc4SZ4BgA`
 
 95 岁的巴菲特竟然保有如此清晰的头脑，真是不容易，也真心希望自己到那个年纪也能够保持清醒。
 
@@ -99,7 +101,7 @@
 
 1.  基本放弃娱乐，把身体健康、自我成长视作优先级最高的事情。
 
-现阶段的他与我，竟也会如此相像。
+现阶段的他与我，竟也会如此相似。
 
 **原文摘要**
 
@@ -109,7 +111,7 @@
 
 1.  “想好你希望自己的讣告怎样写，然后活出配得上那篇讣告的一生。”
 
-1.  伟**大并非源于积累巨额财**富、获得铺天盖地的曝光，或攫取政府中的巨大权力。当你以成千上万种方式中的任何一种帮助他人时，你就在帮助这个世界。善意无需成本，却无价。无论你是否有宗教信仰，“黄金法则”（己所不欲，勿施于人）都是极佳的行为准则。
+1.  伟大并非源于积累巨额财富、获得铺天盖地的曝光，或攫取政府中的巨大权力。当你以成千上万种方式中的任何一种帮助他人时，你就在帮助这个世界。善意无需成本，却无价。无论你是否有宗教信仰，“黄金法则”（己所不欲，勿施于人）都是极佳的行为准则。
 
 1.  > 让世界变好一点点。
 
@@ -121,7 +123,7 @@
 
 **3**
 
-> 《云中江树｜Gemini Prompt: 当年明月 AI 分身》：https://mp.weixin.qq.com/s/-yEY80sfDKtQtFoREPtxTg
+> 《云中江树｜Gemini Prompt: 当年明月 AI 分身》: `https://mp.weixin.qq.com/s/-yEY80sfDKtQtFoREPtxTg`
 
 “所谓成功，只有一种，就是按照自己的方式，去度过人生。”
 
@@ -147,11 +149,11 @@
 
 **4**
 
-> 《张无常｜Ilya Sutskever：当一位 AI 科学家像先知一样说话》：https://mp.weixin.qq.com/s/bS8y0gQnOo_MUG9J9L8EyQ
+> 《张无常｜Ilya Sutskever：当一位 AI 科学家像先知一样说话》: `https://mp.weixin.qq.com/s/bS8y0gQnOo_MUG9J9L8EyQ`
 
 什么是“研究品味”？
 
-Ilya: **Beauty, Simplicity, and Biol**ogical Inspiration.（美，简洁，生物学启发。)
+Ilya: Beauty, Simplicity, and Biological Inspiration.（美，简洁，生物学启发。）
 
 ```
 **## 1. “语言影响思维” (Langu**age Affects Thought)
@@ -178,7 +180,7 @@ Ilya 认为，解开这个谜题，是通往下一代 AI 的关键。
 
 **5**
 
-> 《携隐 Melody｜我最受用的晨间习惯》：https://mp.weixin.qq.com/s/CqmcylneGEugWGkhPFO--g
+> 《携隐 Melody｜我最受用的晨间习惯》: `https://mp.weixin.qq.com/s/CqmcylneGEugWGkhPFO--g`
 
 携隐 Melody 说，她“开始正式工作前，先看 15 分钟书。这样进入工作后，就会更专注、更平静、更有一种享受工作的状态。”
 
@@ -188,11 +190,11 @@ Ilya 认为，解开这个谜题，是通往下一代 AI 的关键。
 
 那一刻不是更专注，而是被迫提前收尾。
 
-#### 视频
+### 视频
 
 **1**
 
-> 【“我们必须足够擅长，才配谈热爱吗”｜爱好与爱自己｜给高中生的最后三节语文课 2025Ⅰ】 https://www.bilibili.com/video/BV1jqCTBWEFY/
+> 【“我们必须足够擅长，才配谈热爱吗”｜爱好与爱自己｜给高中生的最后三节语文课 2025Ⅰ】 `https://www.bilibili.com/video/BV1jqCTBWEFY/`
 
 1.  “没有证书的热爱都是赝品，不够精湛的喜欢都是浪费？可以热爱，即便不擅长。”
 
@@ -200,4 +202,4 @@ Ilya 认为，解开这个谜题，是通往下一代 AI 的关键。
 
 ### 相关
 
-+   《Glasscape 液态玻璃壁纸 - App Store》：https://apps.apple.com/tw/app/glasscape-%E6%B6%B2%E6%80%81%E7%8E%BB%E7%92%83%E5%A3%81%E7%BA%B8/id6755082892
++   《Glasscape 液态玻璃壁纸 - App Store》:`https://apps.apple.com/tw/app/glasscape-%E6%B6%B2%E6%80%81%E7%8E%BB%E7%92%83%E5%A3%81%E7%BA%B8/id6755082892`

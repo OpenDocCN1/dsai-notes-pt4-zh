@@ -1,3 +1,4 @@
+
 # 8.22 微软「小而美」系列三连发！视觉小钢炮 PK GPT-4o，MoE 新秀力压 Llama 3.1
 
 > 来源：[https://agijuejin.feishu.cn/docx/U9gCdtSTXo4VsnxiNVzcJCbrnod](https://agijuejin.feishu.cn/docx/U9gCdtSTXo4VsnxiNVzcJCbrnod)
@@ -44,7 +45,7 @@ Google 研究人员开发了 Health Acoustic Representations（HeAR）模型，�
 
 量子位｜[阅读原文](https://sourl.co/utXJ4k)
 
-神经网络架构 KAN 2.0 发布，专为经典物理学研究设计，允许研究者定制化模型，融入专业知识。新版本引入 MultKAN、kanpiler 和树转化器，提升解释性，简化科学问题与 AI 的结合。KAN2.0 已展示发现物理定律的能力，未来将拓展至更广泛科学领域。MIT 博士生刘子鸣为论文一作，团队计划将框架应用于更大规模问题，探索跨学科应用。
+神经网络架构 KAN 2.0 发布，专为经典物理学研究设计，允许研究者定制化模型，融入专业知识。新版本引入 `MultKAN`、`kanpiler` 和树转化器，提升解释性，简化科学问题与 AI 的结合。KAN2.0 已展示发现物理定律的能力，未来将拓展至更广泛科学领域。MIT 博士生刘子鸣为论文一作，团队计划将框架应用于更大规模问题，探索跨学科应用。
 
 ### 💡 AI 设计自己，代码造物主已来！UBC 华人一作首提 ADAS，数学能力暴涨 25.9%
 

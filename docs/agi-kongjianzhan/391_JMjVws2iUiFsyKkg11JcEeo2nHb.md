@@ -1,8 +1,9 @@
+
 # 全球与国内顶尖投资机构
 
 > 来源：[https://agispace.feishu.cn/docx/XuKjdc2Q2oBcLAxcItLcooMsnNg](https://agispace.feishu.cn/docx/XuKjdc2Q2oBcLAxcItLcooMsnNg)
 
-### 全球顶尖投资机构概览
+## 全球顶尖投资机构概览
 
 > 那些在全球范围内影响力巨大的投资机构，往往具备丰富的资金实力、成功的投资案例以及持续捕捉前沿技术和市场机遇的能力。
 
@@ -20,7 +21,7 @@
 | ![](img/9a8ae62d41adfd3e4d8a29ea7987f165.png) | 英特尔资本 (Intel Capital) | 英特尔公司的投资部门，关注科技创新和AI领域 | Nauto、Movidius |
 | ![](img/19701e0bf32157f8ab70324565a8c6f4.png) | 软银愿景基金 (SoftBank Vision Fund) | 全球最大科技投资基金之一，投资规模大 | SenseTime, Nuro |
 
-### 国内顶尖投资机构概览
+## 国内顶尖投资机构概览
 
 > 国内影响力巨大的投资机构往往具备强大的资金实力和精准的市场眼光。它们积极推动科技创新、人工智能、金融科技等领域的企业成长。
 
@@ -46,6 +47,6 @@
 
 — 比尔·盖茨（Bill Gates）
 
-**“AI 是新时代的技术平台，它有可能**引领我们进入一个更智能、更高效的未来。”
+**“AI 是新时代的技术平台，它有可能引领我们进入一个更智能、更高效的未来。”**
 
 — 马克·扎克伯格（Mark Zuckerberg）

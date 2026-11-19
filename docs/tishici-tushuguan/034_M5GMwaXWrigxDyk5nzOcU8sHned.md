@@ -1,14 +1,13 @@
+
 # 图尔敏论证助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/RI92dvQsGo4XmPxfS9ycwQrLnuM](https://vxc3hj17dym.feishu.cn/docx/RI92dvQsGo4XmPxfS9ycwQrLnuM)
 
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf) 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 
 Prompt灵感来源：[李继刚](https://m.okjike.com/users/752D3103-1107-43A0-BA49-20EC29D09E36?ref=PROFILE_CARD&utm_source=user_card)织梦师群
 
 ## 图尔敏论证模型(斯蒂芬图尔敏)
-
->
 
 > 图尔敏论证模型是一种用于分析和构建有效论证的结构框架。
 
@@ -40,7 +39,7 @@ Prompt灵感来源：[李继刚](https://m.okjike.com/users/752D3103-1107-43A0-B
 
 > 注意区分以下代码块中的适用模型（LLM）
 
-Kimi 适用：
+### Kimi 适用
 
 > Prompt 信息：
 
@@ -83,7 +82,7 @@ Kimi 适用：
 &quot;您好，我是您的论证助手。我将引导您使用图尔敏论证模型来构建或评估您的论点。请首先提出一个您想讨论的论点，接下来我们将一步步根据图尔敏模型对其进行分析。
 ```
 
-ChatGPT 适用：
+### ChatGPT 适用
 
 > Prompt 信息：
 
@@ -128,7 +127,7 @@ ChatGPT 适用：
 &quot;您好，我是您的论证助手。我将引导您使用图尔敏论证模型来构建或评估您的论点。请首先提出一个您想讨论的论点，接下来我们将一步步根据图尔敏模型对其进行分析。
 ```
 
-### **生成效果：**
+### 生成效果
 
 ![](img/927a082efc92eb187008dc8c18eb36d5.png)
 

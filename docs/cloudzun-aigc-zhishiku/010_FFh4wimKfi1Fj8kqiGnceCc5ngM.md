@@ -1,10 +1,11 @@
+
 # 使用DeepSeek进行开发
 
 > 来源：[https://zsyhjtnsa5.feishu.cn/docx/ED4kdoCi1o1gUbxeMVVco1w1npb](https://zsyhjtnsa5.feishu.cn/docx/ED4kdoCi1o1gUbxeMVVco1w1npb)
 
-# 前端开发示例
+## 前端开发示例
 
-## 天气预报卡
+### 天气预报卡
 
 ```
 请查询上海最近三天的预报信息，并请按照以下格式生成天气预报卡片
@@ -19,9 +20,9 @@
 
 ![](img/0ea3ce87d59bcb3449abc659f2306f7e.png)
 
-[deepseek_html_20250530_de90a4.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFAmbLgVPoY08wxZhWHcdN3LnFd)
+[`deepseek_html_20250530_de90a4.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFAmbLgVPoY08wxZhWHcdN3LnFd)
 
-## 落地页面
+### 落地页面
 
 ```
 “为‘人工+智能才是AI的内核’主题设计一个高转化率的中文着陆页，目标是吸引自由职业者、内容创作者和知识工作者，展示如何将个人技能、经验转化为可销售的产品或服务，激发用户行动（如注册、咨询或下载资源）。页面风格现代、简约、专业，色调以蓝色、白色、灰色为主，适配移动端和桌面端，符合中文用户审美。
@@ -46,16 +47,16 @@
 
 ![](img/61ba472204043666f1c7b78ea16fe09f.png)
 
-[deepseek_html_20250530_9b8729.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EGTYbgjWVojbfsxIQeqc27Ufn16)
+[`deepseek_html_20250530_9b8729.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EGTYbgjWVojbfsxIQeqc27Ufn16)
 
-## 仓库管理系统
+### 仓库管理系统
 
 ```
 提示词：请帮我创建一个完整的网页版商品管理工具，具体要求如下：
 
-## 功能需求
+#### 功能需求
 
-### 1. 商品管理
+##### 1. 商品管理
 
 - **商品信息录入**：商品名称、种类/分类、SKU编号、价格、库存数量
 - **商品图片管理**：支持图片上传预览（可用文件选择器模拟）
@@ -63,54 +64,54 @@
 - **商品编辑**：支持修改商品信息
 - **商品删除**：支持删除商品（需确认提示）
 
-### 2. 库存管理
+##### 2. 库存管理
 
 - **入库操作**：增加商品库存数量，记录入库时间和数量
 - **出库操作**：减少商品库存数量，记录出库时间和数量
 - **库存记录**：显示每个商品的库存变动历史
 
-### 3. 界面功能
+##### 3. 界面功能
 
 - **仪表板**：显示商品总数、库存总值、低库存预警等统计信息
 - **响应式设计**：适配桌面和移动设备
-- **数据持久化**：使用localStorage保存数据
+- **数据持久化**：使用`localStorage`保存数据
 
-## 技术要求
+#### 技术要求
 
-### 样式和图标
+##### 样式和图标
 
 - **CSS框架**：使用 TailwindCSS 3.0+ CDN引入
 - **图标库**：使用 Heroicons 或 Feather Icons CDN引入
 - **字体**：使用 Google Fonts
 
-### 代码结构
+##### 代码结构
 
 - **单页面应用**：HTML + CSS + JavaScript
 - **模块化设计**：将功能分解为不同的JavaScript模块
 - **数据格式**：使用JSON格式存储商品数据
 
-## 界面设计要求
+#### 界面设计要求
 
 - **现代化UI**：简洁美观的界面设计
 - **颜色方案**：使用专业的商务色彩搭配
 - **交互反馈**：按钮点击、表单验证等交互效果
 - **表单验证**：必填字段验证、数据格式验证
 
-## 数据结构示例
+#### 数据结构示例
 
 请生成完整的HTML文件，包含所有必要的CSS和JavaScript代码，确保功能完整且可以直接在浏览器中运行
 ```
 
 ![](img/44c657ba7d0b389ce3ca6063cb41cc49.png)
 
-[deepseek_html_20250530_faa868.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WsScbd6fNoHEjYxgep6cxe5vn0e)
+[`deepseek_html_20250530_faa868.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WsScbd6fNoHEjYxgep6cxe5vn0e)
 
-## 点阵动画编辑器
+### 点阵动画编辑器
 
 ```
-**提示词：请创建一个基于P5.js的全**屏互动点阵动画生成器，满足以下技术需求：
+提示词：请创建一个基于`P5.js`的全屏互动点阵动画生成器，满足以下技术需求：
 ## 核心功能
-- 使用P5.js实现全屏点阵动画，动画需覆盖整个视口区域
+- 使用`P5.js`实现全屏点阵动画，动画需覆盖整个视口区域
 - 点阵矩阵总面积必须至少是可见区域的10倍，确保即使在最小网格间距下也能完全覆盖
 - 提供多种动画模式：波浪(Wave)、脉冲(Pulse)、涟漪(Ripple)、噪声(Noise)
 - 支持多种点形状选择：圆形、方形、十字、三角形、菱形等
@@ -121,7 +122,7 @@
 - 动画速度：控制动画效果的速度和幅度
 - 网格间距：调整点与点之间的距离
 ## 技术规范
-- 使用HTML5、TailwindCSS 3.0+（通过CDN引入）和P5.js
+- 使用HTML5、TailwindCSS 3.0+（通过CDN引入）和`P5.js`
 - 实现完整的深色/浅色模式切换功能，默认跟随系统设置
 - 代码需包含性能优化逻辑，仅渲染可见区域内及边缘附近的点
 - 动画必须流畅运行，无卡顿
@@ -140,9 +141,9 @@
 
 ![](img/bec6e43d42c6e41f35b259162515e20d.png)
 
-[deepseek_html_20250530_96ddd9.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FKdab26a0oZMI2xShmccDiEDnve)
+[`deepseek_html_20250530_96ddd9.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FKdab26a0oZMI2xShmccDiEDnve)
 
-## 图片渐变色提取工具
+### 图片渐变色提取工具
 
 ```
 提示词：根据以下文件内容生成一个 HTML 网页，支持给上传的图片提取5组渐变色，用户可以直接复制五组16进制渐变色，需要实现颜色提取功能
@@ -161,9 +162,9 @@
 
 ![](img/2bc4b29d05ae1d359e0506a45a5ccacd.png)
 
-[deepseek_html_20250530_3fab20.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z49tbsdpIoezzoxr0nYc3rqInVf)
+[`deepseek_html_20250530_3fab20.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z49tbsdpIoezzoxr0nYc3rqInVf)
 
-## 白噪音日签网站
+### 白噪音日签网站
 
 ```
 ### **视觉设计**
@@ -172,7 +173,7 @@
 - **图片链接**：XXXX
 - **图片处理**：添加25% 黑色遮罩，和一点点图片高斯模糊，确保文字清晰可读
 - **整体风格**：简约现代，风景图作为网页背景增加沉浸感
-- 动画框架使用 anime.js （通过CDN引入：JsDelivr jsdelivr.com），使用HTML5、TailwindCSS 3.0+（通过CDN引入）和必要的JavaScript，使用专业图标库如Font Awesome或Material Icons（通过CDN引入）
+- 动画框架使用 `anime.js` （通过CDN引入：JsDelivr jsdelivr.com），使用HTML5、TailwindCSS 3.0+（通过CDN引入）和必要的JavaScript，使用专业图标库如Font Awesome或Material Icons（通过CDN引入）
 
 ### **时间显示模块**
 
@@ -216,9 +217,9 @@
 
 ![](img/9b8dc4586c4677ce41e88518667cfeb4.png)
 
-[deepseek_html_20250530_6bec0d.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RsxzbPGfkoTGovxCNtVc5XIKnFf)
+[`deepseek_html_20250530_6bec0d.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RsxzbPGfkoTGovxCNtVc5XIKnFf)
 
-## 睡眠 APP 页面生成
+### 睡眠 APP 页面生成
 
 ```
 提示词：# 睡眠监测APP开发需求
@@ -230,7 +231,7 @@
 - HTML5 - 页面**结构
 - TailwindCSS v3.0+ - 样式框架（通过CDN引入）
 - JavaScript - 必要的交互逻辑
-- Anime.js v4.0.2 - 动画效果库
+- `Anime.js` v4.0.2 - 动画效果库
 - CDN: `https://cdn.jsdelivr.net/npm/animejs@4.0.2/+esm`
 
 ### 图标和图表
@@ -249,7 +250,7 @@
 - **按钮交互**: 悬停时轻微放大效果
 - **表单交互**: 输入框聚焦时显示渐变边框
 - **卡片交互**: 悬停时阴影加深效果
-- **动画效果**: 使用Anime.js实现流畅的页面动画
+- **动画效果**: 使用`Anime.js`实现流畅的页面动画
 
 ## 功能页面需求
 请生成睡眠监测APP所需的完整页面，包括但不限于：
@@ -268,9 +269,9 @@
 
 ![](img/594ea4cc4bbe32d932bfa22692d0ac07.png)
 
-[deepseek_html_20250530_1159d4.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YnffbtntVopaFxxr2GOcXiSvnrc)
+[`deepseek_html_20250530_1159d4.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YnffbtntVopaFxxr2GOcXiSvnrc)
 
-## 复杂功能俄罗斯方块
+### 复杂功能俄罗斯方块
 
 ```
 提示词：请帮我创建一个功能完整、视觉精美的俄罗斯方块网页游戏，要求如下：
@@ -354,4 +355,4 @@
 
 ![](img/79d35fba173e2c4c7e7c82d9ec1cca3c.png)
 
-[deepseek_html_20250530_8a326f.html](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hahyb9Hjuo8PjkxG1M9clZmynmc)
+[`deepseek_html_20250530_8a326f.html`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hahyb9Hjuo8PjkxG1M9clZmynmc)

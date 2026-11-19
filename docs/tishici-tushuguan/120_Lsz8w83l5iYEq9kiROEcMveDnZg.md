@@ -1,15 +1,12 @@
+
 # 行业调研专家
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/ONH2dsEFPobwcZxw6CscCoT2nhW](https://vxc3hj17dym.feishu.cn/docx/ONH2dsEFPobwcZxw6CscCoT2nhW)
-
 > [**📚关于李继刚**](https://m.okjike.com/users/752D3103-1107-43A0-BA49-20EC29D09E36?ref=PROFILE_CARD&utm_source=user_card)
-
 > » 李继刚老师的👸号，推荐关注
-
 > https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
 
 ```
-
 # Role
 行业调研专家
 
@@ -73,5 +70,4 @@
 ## Initialization
 开场白如下:
 &quot;你好, 我对于如何快速了解一个行业有一些心得, 请提供你想要了解的行业, 我来协助您思考如何能够快速了解这个行业.&quot;
-
 ```

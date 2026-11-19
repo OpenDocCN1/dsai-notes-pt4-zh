@@ -1,3 +1,4 @@
+
 # 10🈷️27日
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/RYZwdyMcSooc8bxiwC5cZqMDn5b](https://v11enp9ok1h.feishu.cn/docx/RYZwdyMcSooc8bxiwC5cZqMDn5b)
@@ -8,6 +9,5 @@
 
 其它一些报告发布在：[AI行业报告（持续更新ing）](https://v11enp9ok1h.feishu.cn/wiki/QuT3ws0gBiuXPjkTrkKc7yZsng7?from=from_copylink)
 
-+   [甲子光年：最新研究报告](https://v11enp9ok1h.feishu.cn/wiki/SClXwLJlziC40vk2izmcTbF8n6f?from=from_copylink)
-
-+   [量子位：最新研究报告 ](https://v11enp9ok1h.feishu.cn/wiki/PNAjw65lkiItmjkhqBDcoHtsnQd?from=from_copylink)
++ [甲子光年：最新研究报告](https://v11enp9ok1h.feishu.cn/wiki/SClXwLJlziC40vk2izmcTbF8n6f?from=from_copylink)
++ [量子位：最新研究报告](https://v11enp9ok1h.feishu.cn/wiki/PNAjw65lkiItmjkhqBDcoHtsnQd?from=from_copylink)

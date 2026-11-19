@@ -1,3 +1,4 @@
+
 # Paper
 
 > 来源：[https://leonzhang.feishu.cn/docx/SErHdwrZQoRpBqxQHUTcoGwnne2](https://leonzhang.feishu.cn/docx/SErHdwrZQoRpBqxQHUTcoGwnne2)
@@ -30,7 +31,6 @@
 
 [传媒互联网行业AI+系列报告4：拥抱CHATGPT，游戏行业有望迎来新变革-20230319-招商证券-24页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KE8FbuPpfo6OiAxB06ecBcXwnVf)
 
-
 [传媒行业：AIGC深度赋能游戏产业发展-20230320-华泰证券-21页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LQ08bDiQAoJU2HxgiHScYnAAnlD)
 
 ![](img/a6a176ad8ee1c6db0b59990b1073ce42.png)
@@ -41,7 +41,6 @@
 
 [传媒行业月报：关注国内外AIGC模型产品动态，看好应用端爆发潜力-20230319-国海证券-33页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SsP5b75kaoDYz4xpViScUm48nje)
 
-
 [传媒行业AGI（通用人工智能）专题之二：“文心一言”发布，国内厂商距离复现ChatGPT有多远？-20230317-华西证券-20页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SCHrbcVLbogCZoxtN7Gc5LvTnUc)
 
 ![](img/7be00a8fc69b84bf53459b33c081efea.png)
@@ -51,7 +50,6 @@
 ![](img/960d3c323a075244f978f0f31b9bb657.png)
 
 [计算机行业：AIGC行业应用畅想-20230319-华福证券-22页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KFerbUSxcoH4iqxZpwkcPW8cnYG)
-
 
 [计算机行业：GPT将如何影响我们的工作？-20230323-东北证券-25页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M8QubYGZMoEQvmxJxyVcDxDrn4g)
 
@@ -145,7 +143,6 @@
 
 [GPT4及ChatGPT相关应用梳理-中信建投-2023.3.17-33页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HEaKbfQkTo3s2YxpT9acJIRgnCh)
 
-
 [人工智能行业：ChatGPT的宏观视角-浙商证券-2023.3.18-41页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NWENbNbQUojxWJxXKvucXscLn3e)
 
 ![](img/1ea33a181e44c14b2eb6c1441565ef76.png)
@@ -160,14 +157,17 @@
 
 ![](img/c42ce6ba13ba58c8bdf61f67548cd64d.png)
 
+
+
+# AI 与 ChatGPT 相关资源列表
+
 [2303.08774 zh.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ByVWb37eXotwloxx1zAcFhQ8nid)
 
-+   GPT-4 Technical Report
++ GPT-4 Technical Report
 
 ![](img/1b33b4b9c1b5ab7145b93a2c22532f64.png)
 
 [ChatGPT的技术发展路径和带来的影响-2023.3-31页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uzc4bVR0woLS3BxvW41cALUTnzb)
-
 
 [ChatGPT引发的大模型时代变革-华安证券-2023.2.25-80页.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QHKzbMkt0oPBDyxMfguc58SVn9T)
 

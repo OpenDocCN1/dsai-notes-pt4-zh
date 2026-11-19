@@ -1,10 +1,11 @@
+
 # 数字人虚拟主播系列
 
 > 来源：[https://my.feishu.cn/docx/R6dGdWSjGoRL1DxOGXZchXsmn1c](https://my.feishu.cn/docx/R6dGdWSjGoRL1DxOGXZchXsmn1c)
 
-**数字****人**第二版资料在测试和整理中，敬请期待
+**数字人**第二版资料在测试和整理中，敬请期待
 
-# 虚拟主播黑科技使用解读
+## 虚拟主播黑科技使用解读
 
 首先下载好手机版APP这里给大家举个实操案例，比如要做民间故事类的短视频，我们只需要把文案复制粘贴到文本框里就可以了，直接就能生成带真人口播并且有声音的视频了，这里配音也能选择不同人物不同语气的配音，效果也还不错。同样，我们还能选择不同性别的人物、服饰，以及人物站姿或坐姿的位置，还能自己上传背景图片，可自行DIY的程度也是非常大的。
 
@@ -12,12 +13,12 @@
 
 这个工具出来还没有多久，想操作视频类项目的朋友，又无法真人出镜的，可以把握住这波红利，视频无非就是文案，配音，画面三部分组成的，这里配音和画面都有了，并且效果还算不错，我们只需要一心把文案做到顶级就可以了。
 
-# **数字****人****虚拟主播生成软件地址**
+## 数字人虚拟主播生成软件地址
 
-## 推荐方法一：Heygen（国外平台）
+### 推荐方法一：Heygen（国外平台）
 
-https://app.heygen.com/guest/templates?cid=dbf8b378
+`https://app.heygen.com/guest/templates?cid=dbf8b378`
 
-## 方法二：腾讯智影（国内平台）
+### 方法二：腾讯智影（国内平台）
 
-https://zenvideo.qq.com/activity/invitee?invitation_code=957mF1FNi7TpC4nl（建议电脑端操作）
+`https://zenvideo.qq.com/activity/invitee?invitation_code=957mF1FNi7TpC4nl`（建议电脑端操作）

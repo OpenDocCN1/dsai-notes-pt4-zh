@@ -1,3 +1,4 @@
+
 # 58元---交行“薪享礼遇”
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/M0svdbyzAoSqimxXZnDcBPDqndf](https://xuqiwei1986.feishu.cn/docx/M0svdbyzAoSqimxXZnDcBPDqndf)
@@ -14,8 +15,8 @@
 
 ![](img/c850e1c033d04949b5e6c436524c2c6e.png)
 
-**具体玩法 **：建议家人或者朋友的云闪付 ☞ 转账 ☞ 转到银行卡 ☞ 转1005☞ 备注填：工资
+**具体玩法**：建议家人或者朋友的云闪付 ☞ 转账 ☞ 转到银行卡 ☞ 转1005☞ 备注填：工资
 
-**耐心等待7天左**右【部分人说第二天到账了】【 佛系玩就好哈 】
+耐心等待7天左右【部分人说第二天到账了】【 佛系玩就好哈 】
 
 ![](img/9635d0c8102152edd26b13a0f53df38d.png)

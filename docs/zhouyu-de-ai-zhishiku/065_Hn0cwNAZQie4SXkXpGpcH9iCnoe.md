@@ -1,8 +1,9 @@
+
 # 建议收藏 | 挖到了 Nano Banana Pro的官方提示词库，这 1000+ 案例够你玩一年
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/LhKvdkMgXoku0fxTDCGcxuMrnIf](https://xatc0v8uz5m.feishu.cn/docx/LhKvdkMgXoku0fxTDCGcxuMrnIf)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/IGPxdK9TuVMDZPmgFg8OFg)q.com/s/IGPxdK9T...
+> 🔗 原文链接：https://mp.weixin.qq.com/s/IGPxdK9TuVMDZPmgFg8OFg
 
 > ⏰ 剪存时间：2025-12-11 15:49:31 (UTC+8)
 
@@ -10,17 +11,17 @@
 
 AI艺术设计2025年12月8日 08:33
 
-编者荐语：
+## 编者荐语
 
 ↖️点击左上角关注：Ai艺术设计 ❤️🩷💙💜🧡
 
 以下文章来源于智育派 ，作者智育派
 
-**智育派 **.
+智育派.
 
 左手懂心理，右手执AI；做有温度的技术派，为家庭育儿提供可落地的未来教育方案
 
-摘要：
+## 摘要
 
 本文深度拆解 Google 官方生图文档，并为你整理了 Github、OpenNana 等 4 大核心资源库，共计 1000+ 现成提示词，助你彻底玩转 Nano Banana Pro。
 
@@ -38,7 +39,7 @@ AI 圈子里 "Nano Banana Pro" 彻底火了。
 
 与其到处求关键词，不如把这篇文章收藏起来，看到喜欢的风格直接拿来用
 
-# 01 官方"泄题"：Google 教你怎么写提示词
+## 01 官方"泄题"：Google 教你怎么写提示词
 
 很多教程教你背复杂的参数，但其实 Google 官方文档里早就写明了 "底层逻辑" 。
 
@@ -58,7 +59,7 @@ AI 圈子里 "Nano Banana Pro" 彻底火了。
 
 > 提示词示例：
 
-> "An image of a futuristic backpack with the word 'GALAXY' written on it in neon blue letters."
+> `"An image of a futuristic backpack with the word 'GALAXY' written on it in neon blue letters."`
 
 > *(一张未来风格的背包图片，上面用霓虹蓝色字体写着单词"GALAXY"。)*
 
@@ -68,7 +69,7 @@ AI 圈子里 "Nano Banana Pro" 彻底火了。
 
 遇到不会写的词，直接去官方文档的 `Prompt Gallery` 抄作业，那里的词都是经过工程师调试的最佳实践。
 
-# 02 宝藏资源：这 4 个网站够你玩一年
+## 02 宝藏资源：这 4 个网站够你玩一年
 
 懂了逻辑还不够，我们需要海量的灵感库。哪怕是抄，我们也要抄点高级的。
 
@@ -106,8 +107,6 @@ AI 圈子里 "Nano Banana Pro" 彻底火了。
 
 ![](img/2864d8950a784f235e899adba9d04e99.png)
 
-+
-
 ### 3. 极客源头：GitHub Awesome-Nano-Banana
 
 +   推荐指数：
@@ -138,9 +137,7 @@ AI 圈子里 "Nano Banana Pro" 彻底火了。
 
 ![](img/56a692add17d3aad599a4dc613403740.png)
 
-+
-
-# 03 实战演示：如何把"死词"变"活图"？
+## 03 实战演示：如何把"死词"变"活图"？
 
 光有链接不够，我们来实操一个。
 
@@ -166,7 +163,7 @@ AI 圈子里 "Nano Banana Pro" 彻底火了。
 
 修改后的提示词：
 
-> "A cute cyberpunk cat wearing high-tech goggles, sitting on a neon rooftop at night. The background is a futuristic Tokyo street. The cat is holding a sign that says 'HELLO' ."
+> `"A cute cyberpunk cat wearing high-tech goggles, sitting on a neon rooftop at night. The background is a futuristic Tokyo street. The cat is holding a sign that says 'HELLO' ."`
 
 > *(一只可爱的赛博朋克猫，戴着高科技护目镜，坐在夜晚的霓虹屋顶上。背景是未来的东京街道。猫举着一个牌子，上面写着"HELLO"。)*
 

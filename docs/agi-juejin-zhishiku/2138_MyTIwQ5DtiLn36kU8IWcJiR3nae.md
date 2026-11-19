@@ -1,3 +1,4 @@
+
 # 9.10 [科技春晚]苹果发布iPhone 16系列：搭载A18系列芯片与Apple Intelligence
 
 > 来源：[https://agijuejin.feishu.cn/docx/KovqdLea6oJMkJx3FzEcXQh1noc](https://agijuejin.feishu.cn/docx/KovqdLea6oJMkJx3FzEcXQh1noc)
@@ -97,9 +98,3 @@ Sora AI模型发布后遭遇研究困境，迟迟未全面开放，原因涉及�
 有新Newin 丨 [阅读原文](https://sourl.co/CAj5vz)
 
 前特斯拉AI总监及OpenAI创始成员，在与Sara Guo和Elad Gil的对话中，深入探讨了AI的未来，特别是Transformer模型的潜力、小模型的发展前景、合成数据的重要性、大模型的多任务处理能力，以及AI在教育领域的应用。Karpathy认为，小模型通过蒸馏技术能高效处理复杂任务，未来AI将聚焦于处理重要信息的能力，而非记忆大量数据。他还强调了合成数据在训练高质量模型中的关键作用，并展望了AI作为教育工具的潜力，以赋能人类而非取代工作。
-
-###
-
-###
-
-###

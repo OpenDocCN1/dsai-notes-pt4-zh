@@ -1,10 +1,9 @@
+
 # 2023-08-25-360宣布加码大模型招聘 9大类别岗位聚焦研发和AI安全
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/VsYed8Q5loHS5FxTeLwcQjXQnIe](https://xuqiwei1986.feishu.cn/docx/VsYed8Q5loHS5FxTeLwcQjXQnIe)
-
-> 🔗 原文链接： h[ttps://finance.sin](https://finance.sina.com.cn/tech/it/2023-08-25/doc-imzikxqc8811521.shtml)a.com.cn/tech/it...
-
 >
+> 🔗 原文链接：https://finance.sina.com.cn/tech/it/2023-08-25/doc-imzikxqc8811521.shtml
 
 新浪科技讯 8月25日下午消息，自年初 ChatGPT 爆火后，入局大模型已成为科技公司的新赛道。近日，国内大模型“三巨头”百度、360集团、阿里纷纷开启招聘。其中，360集团为360智脑招募含大语言模型算法、数据加工与清洗、模型安全等9大方向人才，加码人工智能岗位人才需求。
 

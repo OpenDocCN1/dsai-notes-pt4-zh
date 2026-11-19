@@ -1,3 +1,4 @@
+
 # SORA
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/Mjr9daytoo2d8zxReghcASNsnHc](https://xmgtoagi.feishu.cn/docx/Mjr9daytoo2d8zxReghcASNsnHc)
@@ -52,11 +53,11 @@ Sora是一个扩散模型(21、)(22、)(23、)(24、)(25);给定输入噪声补�
 
 [scaling_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RFfRbCNroo04YOxO4yaclHepnze)
 
-# 可变的持续时间、分辨率、宽高比
+## 可变的持续时间、分辨率、宽高比
 
 过去的图像和视频生成方法通常会将视频调整大小、裁剪或修剪为标准尺寸，例如，分辨率为 256x256 的 4 秒视频。我们发现，对原始大小的数据进行训练有几个好处。
 
-采样灵活性
+### 采样灵活性
 
 Sora 可以采样宽屏 1920x1080p 视频、垂直 1080x1920 视频以及介于两者之间的所有视频。这使得 Sora 可以直接以其原生宽高比为不同设备创建内容。它还使我们能够在以全分辨率生成之前快速以较低尺寸制作原型内容 - 所有这些都使用相同的模型。
 
@@ -72,7 +73,7 @@ Sora 可以采样宽屏 1920x1080p 视频、垂直 1080x1920 视频以及介于�
 
 [sampling_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WCFBbfnOAoQ50yxRF5dcaBw2nDe)
 
-# 改进的框架和构图
+## 改进的框架和构图
 
 我们根据经验发现，以原始长宽比对视频进行训练可以改善构图和取景。我们将 Sora 与将所有训练视频裁剪为正方形的模型版本进行比较，这是训练生成模型时的常见做法。在方形作物（左）上训练的模型有时会生成仅部分可见主体的视频。相比之下，Sora（右）的视频的取景效果有所改善。
 
@@ -84,17 +85,17 @@ Sora 可以采样宽屏 1920x1080p 视频、垂直 1080x1920 视频以及介于�
 
 [sampling_4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QkeqbXo5wocUYDxWfbbcyyt9nmb)
 
-# 语言理解
+## 语言理解
 
 训练文本到视频生成系统需要大量带有相应文本字幕的视频。我们应用了 DALL·E 3 中引入的重新字幕技术30到视频。我们首先训练一个高度描述性的字幕生成器模型，然后使用它为训练集中的所有视频生成文本字幕。我们发现，对高度描述性视频字幕进行训练可以提高文本保真度以及视频的整体质量。
 
 与 DALL·E 3 类似，我们还利用 GPT 将简短的用户提示转换为较长的详细字幕，然后发送到视频模型。这使得 Sora 能够生成准确遵循用户提示的高质量视频。
 
-# 通过图像和视频进行提示
+## 通过图像和视频进行提示
 
 上面和我们的着陆页中的所有结果都显示文本到视频的示例。但 Sora 也可以通过其他输入进行提示，例如预先存在的图像或视频。此功能使 Sora 能够执行各种图像和视频编辑任务 - 创建完美的循环视频、动画静态图像、及时向前或向后扩展视频等。
 
-DALL·E 图像动画
+### DALL·E 图像动画
 
 Sora 能够生成提供图像和提示作为输入的视频。下面我们展示基于DALL·E 2生成的示例视频31和达尔·E 330图片。
 
@@ -130,7 +131,7 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 在一座华丽的历史大厅里，巨大的浪潮达到顶峰并开始崩塌。两名冲浪者抓住时机，熟练地驾驭海浪。
 
-# 连接视频
+## 连接视频
 
 我们还可以使用 Sora 在两个输入视频之间逐渐进行插值，从而在具有完全不同主题和场景构成的视频之间创建无缝过渡。在下面的示例中，中心的视频插值在左侧和右侧的相应视频之间。
 
@@ -202,6 +203,8 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 [e0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F7jHbTiQYoicJjxHqy0cmobgnUU)
 
+
+
 ![](img/0b29550837981cf47eae17115cfbe663.png)
 
 [e1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FcvlbTfuroRKkJx1zVqcRMlNnhf)
@@ -230,11 +233,13 @@ Sora 还能够生成图像。我们通过在时间范围为一帧的空间网格
 
 雪山村庄，拥有舒适的小屋和北极光显示屏，高细节和逼真的数码单反相机，50 毫米 f/1.2
 
-新兴的模拟功能
+## 新兴的模拟功能
 
 我们发现，视频模型在大规模训练时表现出许多有趣的新兴功能。这些功能使 Sora 能够模拟现实世界中人、动物和环境的某些方面。这些属性的出现对 3D、物体等没有任何明确的归纳偏差——它们纯粹是尺度现象。
 
-**3D 一致性。** Sora 可以生成带有动态摄像机运动的视频。随着摄像机的移动和旋转，人和场景元素在三维空间中一致移动。
+### 3D 一致性
+
+Sora 可以生成带有动态摄像机运动的视频。随着摄像机的移动和旋转，人和场景元素在三维空间中一致移动。
 
 ![](img/2967d68db791ea15f57added3e205954.png)
 
@@ -244,7 +249,9 @@ Sora 还能够生成图像。我们通过在时间范围为一帧的空间网格
 
 [simulation_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UlXubQJbOowoLZxLOOYcXF6WnKh)
 
-**远程相干性和物体持久性。**视频生成系统面临的一个重大挑战是在采样长视频时保持时间一致性。我们发现 Sora 通常（尽管并非总是）能够有效地对短期和长期依赖关系进行建模。例如，我们的模型可以保留人、动物和物体，即使它们被遮挡或离开框架。同样，它可以在单个样本中生成同一角色的多个镜头，并在整个视频中保持其外观。
+### 远程相干性和物体持久性
+
+视频生成系统面临的一个重大挑战是在采样长视频时保持时间一致性。我们发现 Sora 通常（尽管并非总是）能够有效地对短期和长期依赖关系进行建模。例如，我们的模型可以保留人、动物和物体，即使它们被遮挡或离开框架。同样，它可以在单个样本中生成同一角色的多个镜头，并在整个视频中保持其外观。
 
 ![](img/dd5f27ec3e74a14f086033bf90e99850.png)
 
@@ -254,13 +261,17 @@ Sora 还能够生成图像。我们通过在时间范围为一帧的空间网格
 
 [simulation_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DFkTbNTLto7wCUxG2EtcuprSnld)
 
-**与世界互动。**索拉有时可以用简单的方式模拟影响世界状况的行动。例如，画家可以在画布上留下新的笔触，并随着时间的推移而持续存在，或者一个人可以吃汉堡并留下咬痕。
+### 与世界互动
+
+索拉有时可以用简单的方式模拟影响世界状况的行动。例如，画家可以在画布上留下新的笔触，并随着时间的推移而持续存在，或者一个人可以吃汉堡并留下咬痕。
 
 ![](img/cc9cad8f665d4bb63c6025b489cc35fd.png)
 
 [simulation_5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RUTYbrIZMoYrljx0gl8ct779nQG)
 
-**模拟数字世界**。 Sora 还能够模拟人工过程——一个例子是视频游戏。 Sora 可以同时通过基本策略控制《我的世界》中的玩家，同时以高保真度渲染世界及其动态。这些能力可以通过用提及“我的世界”的标题提示 Sora 来零射击。
+### 模拟数字世界
+
+Sora 还能够模拟人工过程——一个例子是视频游戏。Sora 可以同时通过基本策略控制《我的世界》中的玩家，同时以高保真度渲染世界及其动态。这些能力可以通过用提及“我的世界”的标题提示 Sora 来零射击。
 
 ![](img/a35be84e25416c3d14e45d8d0df451f3.png)
 

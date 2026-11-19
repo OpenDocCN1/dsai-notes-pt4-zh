@@ -1,28 +1,29 @@
+
 # 20250911TapTap武汉开发者城市论坛（TDW2025）
 
 > 来源：[https://huchegames.feishu.cn/docx/QUlQdojTBoMrHfxpfNjcVyRTnGb](https://huchegames.feishu.cn/docx/QUlQdojTBoMrHfxpfNjcVyRTnGb)
 
-<https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc>
+`https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc`
 
 ![](img/8e5faa7a972a3cf97ca269e6327d9b0f.png)
 
 ## 游戏未获版号如何测试？如何免费申请版号？7 亿下载之后，TapTap独家合作还能带来更多……
 
-https://mp.weixin.qq.com/s/2KuuoKuN_nLkee2egMxDUA
+`https://mp.weixin.qq.com/s/2KuuoKuN_nLkee2egMxDUA`
 
 ## 现场语音和 AI 文字识别稿
 
-https://tingwu.aliyun.com/doc/transcripts/4l6xqaveyeydqm2y?sl=1# 《14:05 聚光灯计划/TapTap小游戏》
+`https://tingwu.aliyun.com/doc/transcripts/4l6xqaveyeydqm2y?sl=1#` 《14:05 聚光灯计划/TapTap小游戏》
 
-https://tingwu.aliyun.com/doc/transcripts/klrbn2yo8egb95zy?sl=1# 《14:15 TapTap独家合作》
+`https://tingwu.aliyun.com/doc/transcripts/klrbn2yo8egb95zy?sl=1#` 《14:15 TapTap独家合作》
 
-https://tingwu.aliyun.com/doc/transcripts/dej8nbymag759pog?sl=1# 《14:30 TapTap PC 游戏业务》
+`https://tingwu.aliyun.com/doc/transcripts/dej8nbymag759pog?sl=1#` 《14:30 TapTap PC 游戏业务》
 
-https://tingwu.aliyun.com/doc/transcripts/ro84nraxdjpzqkb3?sl=1# 《14:45 TapTap中小开发者免费置换流量》
+`https://tingwu.aliyun.com/doc/transcripts/ro84nraxdjpzqkb3?sl=1#` 《14:45 TapTap中小开发者免费置换流量》
 
-https://tingwu.aliyun.com/doc/transcripts/ro84nraxd35xqkb3?sl=1# 《16:00 TapTap平台运营》
+`https://tingwu.aliyun.com/doc/transcripts/ro84nraxd35xqkb3?sl=1#` 《16:00 TapTap平台运营》
 
-https://tingwu.aliyun.com/doc/transcripts/58gmq6awdoax9zwo?sl=1# 《16:20 TapTap高性价比投放指南》
+`https://tingwu.aliyun.com/doc/transcripts/58gmq6awdoax9zwo?sl=1#` 《16:20 TapTap高性价比投放指南》
 
 ## PPT 内容下载（访问胡扯资源库）
 
@@ -200,6 +201,6 @@ https://tingwu.aliyun.com/doc/transcripts/58gmq6awdoax9zwo?sl=1# 《16:20 TapTap
 
 ---
 
-<https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc>
+`https://huchegames.feishu.cn/sync/S5lfdyaWpsdZcnbOjtMcgmUvngc`
 
-<https://huchegames.feishu.cn/sync/OrihdFNVesPoTXbhZHEcKud4nfh>
+`https://huchegames.feishu.cn/sync/OrihdFNVesPoTXbhZHEcKud4nfh`

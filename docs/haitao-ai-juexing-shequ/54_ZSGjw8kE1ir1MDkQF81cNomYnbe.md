@@ -1,3 +1,4 @@
+
 # 3个DeepSeek隐藏玩法，99%的人都不知道！
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/Uy8xdlSwuoadPfxFe26cNH2Ynsd](https://zinxkclpk97.feishu.cn/docx/Uy8xdlSwuoadPfxFe26cNH2Ynsd)
@@ -16,7 +17,7 @@
 
 别急，今天我就给大家**分享3个小技巧**，帮你快速掌握DeepSeek的正确打开方式。
 
-### **1、不要用结构化提示词跟它对话**
+### 1、不要用结构化提示词跟它对话
 
 我们之前用的很多模型，都需要用结构化的提示词来对话。
 
@@ -62,7 +63,7 @@
 
 ![](img/b2c89b40f87583a8af2f7dcbbc352f4d.png)
 
-### **3、让它“说人话”**
+### 3、让它“说人话”
 
 如果前面的方法还是不行，它依然很能装，或者它给出的回答太专业、看不懂。
 

@@ -1,4 +1,5 @@
-# 2个步骤，生成高保真原型UI (附：ClaudeCode 详细提示词）
+
+# 2个步骤，生成高保真原型UI（附：ClaudeCode 详细提示词）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/J66fdLA8EouotHxE9UkcqA50nxb](https://qqs7y1hozd1.feishu.cn/docx/J66fdLA8EouotHxE9UkcqA50nxb)
 
@@ -62,7 +63,7 @@ Figma 插件页面（社区）：https://www.figma.com/community/search?resource
 - Game：题面 Emoji、四字答题格/键盘或候选、提示按钮、进度/计时/金币
 - Result：正确/错误两态、成语释义、下一题、分享卡片
 - Leaderboard：全球榜/好友榜切换、排名、头像、分数
-- Shop：金币/提示道具/礼包购买卡片
+- Shop：金币包、提示道具与礼包卡片；价格、折扣、热门标签
 - Profile：头像、昵称、统计（胜率、连胜、完成数）、成就徽章
 - Settings：音效、触感、通知、深色模式、语言、关于等
 

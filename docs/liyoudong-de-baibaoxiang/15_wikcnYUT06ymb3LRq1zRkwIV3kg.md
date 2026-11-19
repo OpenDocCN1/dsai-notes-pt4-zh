@@ -1,8 +1,9 @@
+
 # 一、ChatGPT 介绍
 
 > 来源：[https://docs.feishu.cn/docx/WsM8duNm4ov17RxqEMuc7OefnBG](https://docs.feishu.cn/docx/WsM8duNm4ov17RxqEMuc7OefnBG)
 
-### 一、ChatGPT 官方内容
+## 一、ChatGPT 官方内容
 
 ChatGPT: https://chat.openai.com/chat
 
@@ -14,7 +15,7 @@ OpenAI官方出的 github案例库
 
 GPT-4 插件: [ChatGPT plugins](https://openai.com/blog/chatgpt-plugins)
 
-#### ChatGPT国内版
+### ChatGPT国内版
 
 https://chat.theb.ai
 
@@ -46,11 +47,11 @@ https://poe.com/gpt-4
 
 > [GPT/AIGC/LLM/NLP/ChatGPT 学习](https://gofurther.feishu.cn/docx/Enofdl25BotoVrxth8ec4rNBn5c)
 
-### 二、注册方法
+## 二、注册方法
 
 [ChatGPT注册、登录全指南](https://m0pnt42rkm.feishu.cn/wiki/wikcnwpvdgLufztyhspJ83zIBDh)
 
-### 三、其他类似ChatGPT的对话模型
+## 三、其他类似ChatGPT的对话模型
 
 马斯克的Truth Gpt ：[Truth GPT](https://truthgpt.one/)
 
@@ -70,10 +71,10 @@ poe.com ：uora推出的整合平台，可以快速测试以上的主流大语�
 
 ChatGLM-6B 由清华大学唐杰团队开发的是一个开源的、支持中英双语的对话语言模型，基于 General Language Model (GLM) 架构，具有 62 亿参数。
 
-### 四、科普知识
+## 四、科普知识
 
 [【](https://www.bilibili.com/video/BV1MY4y1R7EN/?spm_id_from=333.337.search-card.all.click&vd_source=5e5b0c68a05980ffa62a5ca76ecb791a)渐构】万字科普GPT4为何会颠覆现有工作流；为何你要关注微软Copilot、文心一言等大模型_哔哩哔哩_bilibili
 
-### 五、解封
+## 五、解封
 
 [全网最强Chatgpt解封攻略](https://m0pnt42rkm.feishu.cn/wiki/wikcnc13zKNd8KT9tbflwfsXedb)

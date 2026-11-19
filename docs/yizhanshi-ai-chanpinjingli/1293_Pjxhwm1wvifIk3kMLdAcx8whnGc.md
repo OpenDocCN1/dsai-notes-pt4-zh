@@ -1,3 +1,4 @@
+
 # 多智能体协同办公
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/HBixdpHzkojd9UxnGD2cvadanmg](https://v11enp9ok1h.feishu.cn/docx/HBixdpHzkojd9UxnGD2cvadanmg)
@@ -8,23 +9,23 @@ ChatGPT 具有深度研究功能。它可以帮助你获取任何主题的详细
 
 ## 技术栈
 
-+   Linkup 平台：用于深度网络研究
++ Linkup 平台：用于深度网络研究
 
-+   CrewAI：用于多智能体编排
++ CrewAI：用于多智能体编排
 
-+   Ollama：本地部署 DeepSeek 模型
++ Ollama：本地部署 DeepSeek 模型
 
-+   Cursor：作为 MCP 主机
++ Cursor：作为 MCP 主机
 
 ## 工作流程
 
-+   用户提交查询
++ 用户提交查询
 
-+   网络搜索代理通过 Linkup 执行深度网络搜索
++ 网络搜索代理通过 Linkup 执行深度网络搜索
 
-+   研究分析师验证并去重结果
++ 研究分析师验证并去重结果
 
-+   技术作家撰写带有引用的连贯响应
++ 技术作家撰写带有引用的连贯响应
 
 ### 设置 LLM
 
@@ -37,10 +38,10 @@ import os
 from crewai import LLM
 
 def get_llm_client():
-    &quot;&quot;&quot;初始化并返回LLM客户端&quot;&quot;&quot;
+    """初始化并返回LLM客户端"""
     return LLM(
-        model=&quot;ollama/deepseek-r1:7b&quot;,
-        base_url=&quot;http://localhost:11434&quot;
+        model="ollama/deepseek-r1:7b",
+        base_url="http://localhost:11434"
     )
 ```
 
@@ -58,23 +59,23 @@ from linkup import LinkupClient
 from crewai.tools import BaseTool
 
 class LinkupSearchInput(BaseModel):
-    &quot;&quot;&quot;Linkup搜索的输入模式&quot;&quot;&quot;
-    query: str = Field(description=&quot;要执行的搜索查询&quot;)
-    depth: str = Field(default=&quot;standard&quot;, description=&quot;搜索深度：&#x27;standard&#x27;或&#x27;deep&#x27;&quot;)
+    """Linkup搜索的输入模式"""
+    query: str = Field(description="要执行的搜索查询")
+    depth: str = Field(default="standard", description="搜索深度：'standard'或'deep'")
     output_type: str = Field(
-        default=&quot;searchResults&quot;,
-        description=&quot;输出类型：&#x27;searchResults&#x27;或&#x27;sourcedAnswer&#x27;&quot;
+        default="searchResults",
+        description="输出类型：'searchResults'或'sourcedAnswer'"
     )
 
 class LinkupSearchTool(BaseTool):
-    name: str = &quot;Linkup Search&quot;
-    description: str = &quot;使用Linkup从网络检索信息并返回结果&quot;
+    name: str = "Linkup Search"
+    description: str = "使用Linkup从网络检索信息并返回结果"
     args_schema: Type[BaseModel] = LinkupSearchInput
 
-    def _run(self, query: str, depth: str = &quot;standard&quot;, output_type: str = &quot;searchResults&quot;) -&gt; str:
-        &quot;&quot;&quot;执行Linkup搜索并返回结果&quot;&quot;&quot;
+    def _run(self, query: str, depth: str = "standard", output_type: str = "searchResults") -> str:
+        """执行Linkup搜索并返回结果"""
         # 从环境变量初始化Linkup客户端
-        linkup_client = LinkupClient(api_key=os.getenv(&quot;LINKUP_API_KEY&quot;))
+        linkup_client = LinkupClient(api_key=os.getenv("LINKUP_API_KEY"))
         
         # 执行搜索
         search_response = linkup_client.search(query=query,
@@ -97,18 +98,18 @@ linkup_search_tool = LinkupSearchTool()
 client = get_llm_client()
 
 web_searcher = Agent(
-    role=&quot;Web Searcher&quot;,
-    goal=&quot;Retrieve relevant info with citations (source URLs)&quot;,
-    backstory=&quot;Expert searcher; forwards results to Research Analyst only.&quot;,
+    role="Web Searcher",
+    goal="Retrieve relevant info with citations (source URLs)",
+    backstory="Expert searcher; forwards results to Research Analyst only.",
     verbose=True,
     allow_delegation=True,
     tools=[linkup_search_tool],
 )
 
 search_task = Task(
-    description=f&quot;Search for comprehensive information about: {{query}}.&quot;,
+    description=f"Search for comprehensive information about: {{query}}.",
     agent=web_searcher,
-    expected_output=&quot;Detailed raw search results including sources (urls).&quot;,
+    expected_output="Detailed raw search results including sources (urls).",
     tools=[linkup_search_tool]
 )
 ```
@@ -124,18 +125,18 @@ from crewai import Agent, Task
 
 # 定义研究分析师
 research_analyst = Agent(
-    role=&quot;Research Analyst&quot;,
-    goal=&quot;Turn raw info into structured insights with URLs.&quot;,
-    backstory=&quot;Expert analyst; can delegate fact-checks to Web Searcher; hands final output to Technical Writer.&quot;,
+    role="Research Analyst",
+    goal="Turn raw info into structured insights with URLs.",
+    backstory="Expert analyst; can delegate fact-checks to Web Searcher; hands final output to Technical Writer.",
     verbose=True,
     allow_delegation=True,
     llm=client,
 )
 
 analysis_task = Task(
-    description=&quot;Analyze search results, extract insights, and verify facts.&quot;,
+    description="Analyze search results, extract insights, and verify facts.",
     agent=research_analyst,
-    expected_output=&quot;Structured insights with verified facts and source URLs.&quot;,
+    expected_output="Structured insights with verified facts and source URLs.",
     context=[search_task],
 )
 ```
@@ -150,22 +151,20 @@ analysis_task = Task(
 from crewai import Agent, Task
 
 technical_writer = Agent(
-    role=&quot;Technical Writer&quot;,
-    goal=&quot;Create clear markdown responses with citations and source URLs.&quot;,
-    backstory=&quot;Expert in simplifying complex information.&quot;,
+    role="Technical Writer",
+    goal="Create clear markdown responses with citations and source URLs.",
+    backstory="Expert in simplifying complex information.",
     verbose=True,
     allow_delegation=False,
 )
 
 writing_task = Task(
-    description=&quot;Write a clear, organized response based on research.&quot;,
+    description="Write a clear, organized response based on research.",
     agent=technical_writer,
-    expected_output=&quot;Comprehensive answer with citations and source URLs.&quot;,
+    expected_output="Comprehensive answer with citations and source URLs.",
     context=[analysis_task],
 )
 ```
-
-###
 
 ### 设置团队
 
@@ -185,7 +184,7 @@ crew = Crew(
 
 result = crew.kickoff(
     inputs={
-        &quot;query&quot;: &quot;how Small Language Models (SLMs) are Reshaping AI?&quot;
+        "query": "how Small Language Models (SLMs) are Reshaping AI?"
     }
 )
 ```
@@ -201,11 +200,11 @@ from mcp.server.fastmcp import FastMCP
 from agents import run_research
 
 # 创建FastMCP实例
-mcp = FastMCP(&quot;crew_research&quot;)
+mcp = FastMCP("crew_research")
 
 @mcp.tool()
-def crew_research(query: str) -&gt; str:
-    &quot;&quot;&quot;
+def crew_research(query: str) -> str:
+    """
     为给定的用户查询运行基于CrewAI的深度研究系统。
     
     参数:
@@ -213,12 +212,12 @@ def crew_research(query: str) -&gt; str:
         
     返回:
         str: 来自CrewAI流水线的研究响应。
-    &quot;&quot;&quot;
+    """
     return run_research(query)
 
 # 运行服务器
-if __name__ == &quot;__main__&quot;:
-    mcp.run(transport=&quot;stdio&quot;)
+if __name__ == "__main__":
+    mcp.run(transport="stdio")
 ```
 
 ### 将 MCP 服务器与 Cursor 集成

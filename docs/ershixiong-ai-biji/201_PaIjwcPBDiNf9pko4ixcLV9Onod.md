@@ -1,8 +1,9 @@
+
 # DeepSeek R1
 
 > 来源：[https://qianniucity.feishu.cn/docx/KiORdpyc2ocW8ax0m2ncJpa1nhd](https://qianniucity.feishu.cn/docx/KiORdpyc2ocW8ax0m2ncJpa1nhd)
 
-一个与 OpenAI o1 相媲美的完全开源推理模型刚刚发布
+一个与 OpenAI o1 相媲美的完全开源推理模型刚刚发布。
 
 Deepseek R1 在几乎所有基准测试中甚至超越了 Claude 3.5 Sonnet 和 o1-mini。
 

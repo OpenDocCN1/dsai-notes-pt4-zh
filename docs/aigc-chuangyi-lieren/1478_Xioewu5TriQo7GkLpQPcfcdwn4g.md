@@ -1,3 +1,4 @@
+
 # 20260312-小龙虾OpenClaw在“偷啃”？这12个技巧帮你省Token！
 
 > 来源：[https://aigcreative.feishu.cn/docx/ZdA3dwxjEoejs6xWgY3cFWyznId](https://aigcreative.feishu.cn/docx/ZdA3dwxjEoejs6xWgY3cFWyznId)
@@ -14,11 +15,7 @@
 
 ![](img/400ee9e8525373faf91c07569452f509.png)
 
-今天我把这些技巧整理成一份完整攻略，
-
-让你的小龙虾停止偷啃Token。
-
-应该能帮你省下不少钱。
+今天我把这些技巧整理成一份完整攻略，让你的小龙虾停止偷啃Token。应该能帮你省下不少钱。
 
 ## 1. 善用模型分级策略
 
@@ -33,15 +30,15 @@ OpenClaw最强大的功能之一是可以配置多个模型作为备选。核心
   agents: {
     defaults: {
       model: {
-        primary: &quot;anthropic/claude-sonnet-4-5&quot;,
-        fallbacks: [&quot;moonshot/kimi-k2.5&quot;, &quot;minimax-portal/MiniMax-M2.5&quot;],
+        primary: "anthropic/claude-sonnet-4-5",
+        fallbacks: ["moonshot/kimi-k2.5", "minimax-portal/MiniMax-M2.5"],
       },
     },
   },
 }
 ```
 
-你可以把最强最新的模型设为Primary，然后在fallbacks里放一些性价比更高的模型。
+你可以把最强最新的模型设为`Primary`，然后在`fallbacks`里放一些性价比更高的模型。
 
 当前一个模型出问题或者响应太慢时，会自动切换到备选。
 
@@ -81,7 +78,7 @@ OpenClaw的会话是持久的，意思是它会记住你们之前聊过的一切
 {
   session: {
     reset: {
-      mode: &quot;daily&quot;,
+      mode: "daily",
       atHour: 4,
       idleMinutes: 120,
     },
@@ -91,7 +88,7 @@ OpenClaw的会话是持久的，意思是它会记住你们之前聊过的一切
 
 这表示：每天凌晨4点重置会话；如果连续120分钟没有活动，也重置。
 
-你也可以随时手动触发重置，在对话里输入 /session reset 就行。
+你也可以随时手动触发重置，在对话里输入`/session reset`就行。
 
 ## 4. 把重要记忆写进文件
 
@@ -101,13 +98,10 @@ OpenClaw的会话是持久的，意思是它会记住你们之前聊过的一切
 
 OpenClaw的工作空间目录结构是有意义的：
 
-+   Projects（项目）
-
-+   Areas（领域）
-
-+   Resources（资源）
-
-+   Archives（归档）
++   `Projects`（项目）
++   `Areas`（领域）
++   `Resources`（资源）
++   `Archives`（归档）
 
 这是官方推荐的记忆结构。把你的工作习惯、常用指令、偏好设置都写成文档放进去，下次需要时直接让它「读取文件」，而不是从几小时前的对话里重新理解。
 
@@ -115,7 +109,7 @@ OpenClaw的工作空间目录结构是有意义的：
 
 ## 5. 精简System Prompt
 
-OpenClaw会把大量上下文信息注入到每次对话里，包括各种工具说明、配置信息、 Skill定义。这些内容加起来可能比你的实际对话还长。
+OpenClaw会把大量上下文信息注入到每次对话里，包括各种工具说明、配置信息、Skill定义。这些内容加起来可能比你的实际对话还长。
 
 ![](img/e02f0ed5f586ee1b73bcf5ada8647080.png)
 
@@ -129,7 +123,7 @@ OpenClaw支持Thinking模式，可以控制模型的思考深度。
 
 ![](img/451a1e4456c75597af5cdd85b582590f.png)
 
-在对话里使用 --thinking low、--thinking medium、--thinking high 来调整。
+在对话里使用`--thinking low`、`--thinking medium`、`--thinking high`来调整。
 
 简单查询用低思考模式，需要深度推理再用高模式。这不是黑科技，但很多人习惯性地用最高配置，其实很多问题用低模式就足够解决了，token消耗却能差好几倍。
 
@@ -141,7 +135,7 @@ OpenClaw支持Thinking模式，可以控制模型的思考深度。
 
 每个子会话是独立运行的，不会继承主会话的上下文。这意味着每个任务都是干净的start，不会带着前面任务的记忆。
 
-具体用法是在命令后加 --sub-agent 或者 spawn 一个新session。官方文档把这叫做「隔离运行」，非常适合批量操作、数据处理这类场景。
+具体用法是在命令后加`--sub-agent`或者`spawn`一个新session。官方文档把这叫做「隔离运行」，非常适合批量操作、数据处理这类场景。
 
 ## 8. 开启会话维护
 
@@ -153,14 +147,13 @@ OpenClaw有内置的会话维护功能，可以自动清理过期的会话记录
 {
   session: {
     maintenance: {
-      mode: &quot;enforce&quot;,
-      pruneAfter: &quot;30d&quot;,
+      mode: "enforce",
+      pruneAfter: "30d",
       maxEntries: 500,
-      rotateBytes: &quot;10mb&quot;,
+      rotateBytes: "10mb",
     },
   },
 }
-
 ```
 
 这相当于给会话存储设了个天花板。超过30天的记录会自动删除，转录文件太大也会自动轮转。

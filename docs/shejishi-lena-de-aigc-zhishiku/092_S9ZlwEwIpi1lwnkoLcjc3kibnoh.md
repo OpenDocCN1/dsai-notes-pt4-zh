@@ -1,3 +1,4 @@
+
 # AI影片欣赏
 
 > 来源：[https://aigclena.feishu.cn/docx/Keq7d6kXco6cBCx4QDPcXrqOnVb](https://aigclena.feishu.cn/docx/Keq7d6kXco6cBCx4QDPcXrqOnVb)
@@ -14,9 +15,9 @@
 
 [X2Twitter.com_hXzWLH-0ziLpJfzS(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DFypb2QjCoTY5GxGvMicWxEunXg)
 
-Image: grok
+Image: `grok`
 
-Video: LumaLabsAI
+Video: `LumaLabsAI`
 
 ![](img/7a637af4e63b90b2818d8be5ab32e2ea.png)
 
@@ -24,31 +25,31 @@ Video: LumaLabsAI
 
 Tools:
 
-Video: LumaLabsAI
+Video: `LumaLabsAI`
 
-Image:midjourney
+Image: `midjourney`
 
-Music: udiomusic
+Music: `udiomusic`
 
-Voice & SFX: elevenlabsio
+Voice & SFX: `elevenlabsio`
 
-Lipsyncing: hedra_labs liveportrait
+Lipsyncing: `hedra_labs` `liveportrait`
 
 ![](img/25d3f07ab6babe086cc6999e5e1ca32e.png)
 
 [X2Twitter.com_1817914356493168640(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KanAbrETco4aq6xtn4nczpLyn6g)
 
-来自@el
+来自`@el`
 
-Image: @midjourney
+Image: `@midjourney`
 
-Video: @Kling_ai
+Video: `@Kling_ai`
 
-Voice: @elevenlabsio
+Voice: `@elevenlabsio`
 
-Music: @udiomusic
+Music: `@udiomusic`
 
-Lipsyncing: #liveportrait @hedra_labs
+Lipsyncing: `#liveportrait` `@hedra_labs`
 
 ![](img/af51104029fc24d691750f51f02ce65a.png)
 
@@ -56,7 +57,7 @@ Lipsyncing: #liveportrait @hedra_labs
 
 来自@AIandDesign
 
-Created entirely with @runwayml gen-3 footage. Narration and sound effects made with @elevenlabsio. Musical score created with @suno_ai
+Created entirely with `@runwayml` `gen-3` footage. Narration and sound effects made with `@elevenlabsio`. Musical score created with `@suno_ai`
 
 ![](img/45548429c096a81347ec3b1478854730.png)
 
@@ -66,9 +67,9 @@ Created entirely with @runwayml gen-3 footage. Narration and sound effects made 
 
 STAR SHOPPING - Lil Peep
 
-Co-directed with @Lil_Dextop
+Co-directed with `@Lil_Dextop`
 
-Created using: @LumaLabsAI, @BMDesignPro, @Magnific_AI, & @midjourney
+Created using: `@LumaLabsAI`, `@BMDesignPro`, `@Magnific_AI`, & `@midjourney`
 
 ![](img/c02043ea9248075cf72370748d88a7b7.png)
 
@@ -80,7 +81,7 @@ Created using: @LumaLabsAI, @BMDesignPro, @Magnific_AI, & @midjourney
 
 来自 Justine
 
-reimagined with @midjourney @LumaLabsAI, and @elevenlabsio
+reimagined with `@midjourney` `@LumaLabsAI`, and `@elevenlabsio`
 
 ![](img/0aa94160cc7b1f4b303ef1e003904406.png)
 
@@ -88,7 +89,7 @@ reimagined with @midjourney @LumaLabsAI, and @elevenlabsio
 
 来自@Dave Villalva
 
-Use gen3 & udio
+Use `gen3` & `udio`
 
 ![](img/56f36733d92f2ea262487f8087bb84a5.png)
 
@@ -96,13 +97,13 @@ Use gen3 & udio
 
 来自@letz_ai
 
-→ img: LetzAI
+→ img: `LetzAI`
 
-→ vid: luma dream machine
+→ vid: `luma dream machine`
 
-→ edit: splice + lightroom
+→ edit: `splice` + `lightroom`
 
-→ song: suno
+→ song: `suno`
 
 ![](img/e52f21324740d59436118d7cf0077f5d.png)
 
@@ -110,13 +111,13 @@ Use gen3 & udio
 
 来自@PixelWiseAI
 
-img : midjourney
+img : `midjourney`
 
-vid: kling
+vid: `kling`
 
-edit: capcut
+edit: `capcut`
 
-music: suno
+music: `suno`
 
 ![](img/bed7bf700599a5e6e03a842ac93ae755.png)
 
@@ -124,31 +125,31 @@ music: suno
 
 来自@juliewdesign_
 
-→ img: midjourney v6
+→ img: `midjourney v6`
 
-→ vid: luma dream machine
+→ vid: `luma dream machine`
 
-→ edit: splice + lightroom
+→ edit: `splice` + `lightroom`
 
-→ song: suno - le coeur serré
+→ song: `suno` - le coeur serré
 
 ![](img/1e98bb249dad3b8738c0cafbf973e4e5.png)
 
 [X2Twitter.com_mtkNACBy0qRjKSlJ(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dtynby0NXoNH4cxJOnLcJldpnRe)
 
-来自@blizaine   使用软件：可灵
+来自@blizaine 使用软件：`可灵`
 
 ![](img/908767f8f5c31b561b5cfc23823609b4.png)
 
 [X2Twitter.com_1812479913875673088(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PPB9beQVQofwdfx7flHcJxDFnyf)
 
-来自@max   使用软件gen3
+来自@max 使用软件`gen3`
 
 ![](img/1950c6da64b48652dffb83a88a39fdf8.png)
 
 [X2Twitter.com_1812507998318641152(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PSvjbDmVBozD7bxQy36cX8JMnac)
 
-来自@Dave Villalva 使用软件gen3
+来自@Dave Villalva 使用软件`gen3`
 
 ![](img/1c58502be5043b9b7096cd9e75e860f1.png)
 
@@ -176,13 +177,13 @@ Voice:[@elevenlabsio](https://x.com/elevenlabsio)
 
 来自James Yeung
 
-Images - Midjourney
+Images - `Midjourney`
 
-Animation - @LumaLabsAI、Dream Machine
+Animation - `@LumaLabsAI`、`Dream Machine`
 
-Music - Udio
+Music - `Udio`
 
-Editing and Sound Effects - CapCut
+Editing and Sound Effects - `CapCut`
 
 ![](img/5ffe84a4ca57012c4c0c217bdaaf9498.png)
 
@@ -193,8 +194,6 @@ Editing and Sound Effects - CapCut
 [X2Twitter.com_ZFoSQv711aGTZ75v(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PaLdbTn5UoekhPxUz7NclDE2nmd)
 
 ## 国风
-
-![](img/0a47ea9fb93bfd5186850281335b72f8.png)
 
 [[twi]@Pixel_twi.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TA7jbcvN1o4eUlxVDF9cnJ46nff)
 
@@ -208,9 +207,9 @@ Editing and Sound Effects - CapCut
 
 [X2Twitter.com_OdjHkoJEQh4SurFO_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MoEWbbRIJo6AuSxVZVRc0HHTncd)
 
-Midjourney + Runway + ElevenLabs + CapCut
+`Midjourney` + `Runway` + `ElevenLabs` + `CapCut`
 
---sref 1597909873
+`--sref` 1597909873
 
 ![](img/5ed8cd03f0dd331debd1499e1300eeb9.png)
 
@@ -252,16 +251,18 @@ Midjourney + Runway + ElevenLabs + CapCut
 
 0925👇
 
+
+
 ![](img/57b3b50532a6aa2c7228f42a9e120ec4.png)
 
-[X2Twitter.com_45gb86_RFn8bCBcn_480p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ILpPbsGUponpqjxZesDcnpOZnib)
+[`X2Twitter.com_45gb86_RFn8bCBcn_480p.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ILpPbsGUponpqjxZesDcnpOZnib)
 
 ![](img/e86434cdd6c45631e23657beffabd859.png)
 
-[X2Twitter.com_56NTPlIUX05h7dC1_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IZG7bBNjIoMrb2xbZKXc1GjQneG)
+[`X2Twitter.com_56NTPlIUX05h7dC1_1080p.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IZG7bBNjIoMrb2xbZKXc1GjQneG)
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/ef83632bfb8c863b8aca33e60392a0cd.png)

@@ -1,8 +1,9 @@
+
 # 2023-11-22引入混合检索（Hybrid Search）和重排序（Rerank）改进 RAG 系统召回效果
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/J20RdRSDooka0jxsSIicdypKnBg](https://xuqiwei1986.feishu.cn/docx/J20RdRSDooka0jxsSIicdypKnBg)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/57Wb0EcvgHzLO_XetTnRLg)q.com/s/57Wb0Ecv...
+> 🔗 原文链接：https://mp.weixin.qq.com/s/57Wb0EcvgHzLO_XetTnRLg
 
 Dify 2023-11-22 09:16 发表于 美国
 
@@ -16,15 +17,15 @@ Dify.AI 提供了一个强大的 RAG 引擎，提升 LLM 对外挂知识库的�
 
 以下文章来源于何文斯 ，作者何文斯
 
-**何文斯 **.
+**何文斯**
 
 AI小厂产品经理/成为独立开发者的路上/Notion初学者/偶尔扫街📷
 
 我相信在当下这个时间点，每一个大模型应用开发者对 RAG（Retrieval Augmented Generation）的技术概念都已经不再陌生。在着手写这篇文章之前，我观察到仍有不少技术文章将 RAG 简单归纳为基于 Embedding 的向量检索技术与大模型生成技术的结合。
 
-但**实际上，经过近一年各行各业的开发者们在 RAG 应用方向上**的探索和实验，大家已经普遍意识到一个问题： 仅仅通过向量检索技术来构建 RAG 应用是完全不够的，尤其是当他们想将自己的应用投入生产环境时 。
+但实际上，经过近一年各行各业的开发者们在 RAG 应用方向上的探索和实验，大家已经普遍意识到一个问题： 仅仅通过向量检索技术来构建 RAG 应用是完全不够的，尤其是当他们想将自己的应用投入生产环境时。
 
-9** 月份时，Microsoft Azure AI 在官方博客上发布了一**篇《Azure 认知搜索：通过混合检索和排序能力超越向量搜索》， 文章对在 RAG 架构的生成式 AI 应用中引入混合检索和重排序技术做了完整的实验数据评估，量化了该技术组合对改善文档召回率和准确性方面的显著效果 。
+9月份时，Microsoft Azure AI 在官方博客上发布了一篇《Azure 认知搜索：通过混合检索和排序能力超越向量搜索》，文章对在 RAG 架构的生成式 AI 应用中引入混合检索和重排序技术做了完整的实验数据评估，量化了该技术组合对改善文档召回率和准确性方面的显著效果。
 
 ![](img/61671a175df8e36bc5b89f2c61034dba.png)
 
@@ -34,7 +35,7 @@ AI小厂产品经理/成为独立开发者的路上/Notion初学者/偶尔扫街
 
 作为一篇技术入门文章，为了便于理解，我先用通俗的语言快速解释一下什么是 RAG 系统。
 
-### **RAG 概念解释 **
+### RAG 概念解释
 
 检索增强生成（RAG，Retrieval Augmented Generation）
 
@@ -46,7 +47,7 @@ AI小厂产品经理/成为独立开发者的路上/Notion初学者/偶尔扫街
 
 ![](img/b1be41e87ae944eda7226d629609d332.png)
 
-**为什么需要这样做呢？ **
+**为什么需要这样做呢？**
 
 我们可以把大模型比做是一个超级专家，他熟悉人类各个领域的知识，但他也有自己的局限性，比如他不知道你个人的一些状况，因为这些信息是你私人的，不会在互联网上公开，所以他没有提前学习的机会。
 
@@ -56,7 +57,7 @@ AI小厂产品经理/成为独立开发者的路上/Notion初学者/偶尔扫街
 
 根据上面这个例子，我们很容易发现 RAG 系统中最核心是外部知识的检索环节。专家能不能向你提供专业的家庭财务建议，取决于能不能精确找到他需要的信息，如果他找到的不是投资理财记录，而是家庭减肥计划，那再厉害的专家都会无能为力。
 
-### **为什么需要混合检索 **
+### 为什么需要混合检索
 
 上文提到 RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的方式。技术原理是通过将外部知识库的文档先拆分为语义完整的段落或句子，并将其转换（Embedding）为计算机能够理解的一串数字表达（多维向量），同时对用户问题进行同样的转换操作。
 
@@ -94,39 +95,37 @@ AI小厂产品经理/成为独立开发者的路上/Notion初学者/偶尔扫街
 
 ![](img/d6e94ab5d14673cbc63911221a60755c.png)
 
-“混合检索”实际上并没有明确的定义，本文以向量检索和关键词检索的组合为示例。如果我们使用其他搜索算法的组合，也可以被称为“混合检索”。比如，我们可以将用于检索实体关系的知识图谱技术与向量检索技术结合。
+“混合检索”实际上并没有明确的定义，本文以向量检索和关键词检索的组合为示例。如果我们使用其他搜索算法的组合，也可以称为“混合检索”。比如，我们可以将用于检索实体关系的知识图谱技术与向量检索技术结合。
 
-不同的检索系统各自擅长寻找文本（段落、语句、词汇）之间不同的细微联系，这包括了精确关系、语义关系、主题关系、结构关系、实体关系、时间关系、事件关系等。可以说没有任何一种检索模式能够适用全部的情景。 混合检索通过多个检索系统的组合，实现了多个检索技术之间的互补。
+不同的检索系统各自擅长寻找文本（段落、语句、词汇）之间不同的细微联系，这包括了精确关系、语义关系、主题关系、结构关系、实体关系、时间关系、事件关系等。可以说没有任何一种检索模式能够适用全部的情景。混合检索通过多个检索系统的组合，实现了多个检索技术之间的互补。
 
-**这里我想说明的是：选用什么检索技术，取决于你需要解决什么样的问题。 RAG** 系统的本质是基于自然语言的开放域问答系统。对于用户的开放性问题，要想获得高的事实召回率，就需要对应用情景进行概括和收敛，寻找合适的检索模式或组合。
+这里我想说明的是：选用什么检索技术，取决于你需要解决什么样的问题。 RAG 系统的本质是基于自然语言的开放域问答系统。对于用户的开放性问题，要想获得高的事实召回率，就需要对应用情景进行概括和收敛，寻找合适的检索模式或组合。
 
-**在动手设计一个 RAG 系统之前，最好先考虑好你的用户是哪**些人，以及他们最可能问出什么样的问题。
+在动手设计一个 RAG 系统之前，最好先考虑好你的用户是哪些人，以及他们最可能问出什么样的问题。
 
-###
-
-### **为什么需要重排序 **
+### 为什么需要重排序
 
 混合检索能够结合不同检索技术的优势获得更好的召回结果，但在不同检索模式下的查询结果需要进行合并和归一化（将数据转换为统一的标准范围或分布，以便更好地进行比较、分析和处理），然后再一起提供给大模型。这时候我们需要引入一个评分系统：重排序模型（Rerank Model）。
 
-**重排序模型通过将候选文档列表与用户问题的语义匹配**度进行重新排序，从而改进语义排序的结果 。其原理是计算用户问题与给定的每个候选文档之间的相关性分数，并返回按相关性从高到低排序的文档列表。常见的 Rerank 模型如：Cohere rerank、bge-reranker 等。
+重排序模型通过将候选文档列表与用户问题的语义匹配度进行重新排序，从而改进语义排序的结果。其原理是计算用户问题与给定的每个候选文档之间的相关性分数，并返回按相关性从高到低排序的文档列表。常见的 Rerank 模型如：Cohere rerank、bge-reranker 等。
 
 ![](img/ceedd688caaff9353ef4d0327cf524d1.png)
 
-在**大多数情况下，在重排序之前会有一次前置检索**，这是由于计算查询与数百万个文档之间的相关性得分将会非常低效。所以， 重排序一般都放在搜索流程的最后阶段，非常适合用于合并和排序来自不同检索系统的结果 。
+在大多数情况下，在重排序之前会有一次前置检索，这是由于计算查询与数百万个文档之间的相关性得分将会非常低效。所以，重排序一般都放在搜索流程的最后阶段，非常适合用于合并和排序来自不同检索系统的结果。
 
 不过，重排序并不是只适用于不同检索系统的结果合并，即使是在单一检索模式下，引入重排序步骤也能有效帮助改进文档的召回效果，比如我们可以在关键词检索之后加入语义重排序。
 
-在具体实践过程中，除了将多路查询结果进行归一化之外，在将相关的文本分段交给大模型之前，我们一般会限制传递给大模型的分段个数（即 TopK，可以在重排序模型参数中设置），这样做的原因是大模型的输入窗口存在大小限制（一般为 4K、16K、32K、128K 的 Token 数量），你需要根据选用的模型输入窗口的大小限制，选择合适的分段策略和 TopK 值。
+在具体实践过程中，除了将多路查询结果进行归一化之外，在将相关的文本分段交给大模型之前，我们一般会限制传递给大模型的分段个数（即 `TopK`，可以在重排序模型参数中设置），这样做的原因是大模型的输入窗口存在大小限制（一般为 4K、16K、32K、128K 的 Token 数量），你需要根据选用的模型输入窗口的大小限制，选择合适的分段策略和 `TopK` 值。
 
-需要注意的是，即使模型上下文窗口足够大，过多的召回分段会可能会引入相关度较低的内容，导致回答的质量降低，所以重排序的 TopK 参数并不是越大越好。
+需要注意的是，即使模型上下文窗口足够大，过多的召回分段会可能会引入相关度较低的内容，导致回答的质量降低，所以重排序的 `TopK` 参数并不是越大越好。
 
-重排序并不是搜索技术的替代品，而**是**一种用于增强现有检索系统的辅助工具。 它最大的优势是不仅提供了一种简单且低复杂度的方法来改善搜索结果，允许用户将语义相关性纳入现有的搜索系统中，而且无需进行重大的基础设施修改。
+重排序并不是搜索技术的替代品，而是一种用于增强现有检索系统的辅助工具。它最大的优势是不仅提供了一种简单且低复杂度的方法来改善搜索结果，允许用户将语义相关性纳入现有的搜索系统中，而且无需进行重大的基础设施修改。
 
-以 Cohere Rerank 为例，你只需要注册账户和申请 API ，接入只需要两行代码。另外，他们也提供了多语言模型，也就是说你可以将不同语言的文本查询结果进行一次性排序。
+以 Cohere Rerank 为例，你只需要注册账户和申请 API，接入只需要两行代码。另外，他们也提供了多语言模型，也就是说你可以将不同语言的文本查询结果进行一次性排序。
 
-### **Azure**** ****AI**** 实验数据评估**
+### Azure AI 实验数据评估
 
-Azure AI 对 RAG 中几种常用的检索模式做了实验数据测试，包括关键词检索、向量检索、混合检索、混合检索+重排序。 实验结果支持将混合检索+重排序所为改进文档召回相关性的有效方法 ，对于使用 RAG 架构的生成式 AI 场景尤其适用。
+Azure AI 对 RAG 中几种常用的检索模式做了实验数据测试，包括关键词检索、向量检索、混合检索、混合检索+重排序。实验结果支持将混合检索+重排序所为改进文档召回相关性的有效方法，对于使用 RAG 架构的生成式 AI 场景尤其适用。
 
 以下是针对不同数据集类型的测试结果，可以看到混合检索+重排序的组合在不同测试集下的召回质量上都有一定程度的提升。
 
@@ -136,13 +135,11 @@ Azure AI 对 RAG 中几种常用的检索模式做了实验数据测试，包括
 
 ![](img/cddc5edaaaca98bb68e8b8f5b02793ea.png)
 
-###
-
-### **总结 **
+### 总结
 
 我们讨论了在 RAG 系统中引入混合检索和语义重排序对于改善文档召回质量的原理和可行性，但这涉及到的还仅仅是 RAG 检索管道设计中的一部分环节。
 
-**改善 RAG 应用的效果不能依赖于一个个独立的单点优化，而是要具备系统性的工程设计思维。要深刻理解用户的使用场景，将复**杂的开放域问答问题概括为可收敛的一个个情景策略，只有在此基础之上，才能合理的选择索引、分段、检索、重排等一系列技术组合 。
+改善 RAG 应用的效果不能依赖于一个个独立的单点优化，而是要具备系统性的工程设计思维。要深刻理解用户的使用场景，将复杂的开放域问答问题概括为可收敛的一个个情景策略，只有在此基础之上，才能合理的选择索引、分段、检索、重排等一系列技术组合。
 
 Dify.AI 支持了本文提到的混合检索（Hybrid Search）和重排序（Rerank）来改进 RAG 系统的召回效果，通过将检索模式和重排序结合，加入多路召回模式，不仅确保了与用户查询高度相关的内容被优先呈现，还显著提升了检索结果的全面性和准确度，总体上成功构建出了一套基于 LLMs 的高效问答系统。
 
@@ -150,39 +147,35 @@ Dify.AI 支持了本文提到的混合检索（Hybrid Search）和重排序（Re
 
 感谢阅读。
 
-###
+### 相关参考
 
-### 相关参考：
+1. https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167
 
-1.  https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167
+1. https://txt.cohere.com/rerank/
 
-1.  https://txt.cohere.com/rerank/
+1. https://vectara.com/what-is-reranking-and-why-does-it-matter/
 
-1.  https://vectara.com/what-is-reranking-and-why-does-it-matter/
+1. https://vectara.com/how-to-implement-hybrid-search-into-your-product-for-better-customer-experiences/
 
-1.  https://vectara.com/how-to-implement-hybrid-search-into-your-product-for-better-customer-experiences/
+1. https://qdrant.tech/articles/hybrid-search/
 
-1.  https://qdrant.tech/articles/hybrid-search/
+1. https://weaviate.io/blog/hybrid-search-fusion-algorithms
 
-1.  https://weaviate.io/blog/hybrid-search-fusion-algorithms
+1. https://www.pinecone.io/learn/series/rag/rerankers/
 
-1.  https://www.pinecone.io/learn/series/rag/rerankers/
+1. https://medium.com/@ben.burtenshaw/similarity-learning-vs-search-reranking-practical-approaches-to-boosting-real-world-search-367a152ff870
 
-1.  https://medium.com/@ben.burtenshaw/similarity-learning-vs-search-reranking-practical-approaches-to-boosting-real-world-search-367a152ff870
+1. https://weaviate.io/developers/weaviate/concepts/reranking
 
-1.  https://weaviate.io/developers/weaviate/concepts/reranking
+1. https://zhuanlan.zhihu.com/p/84206752
 
-1.  https://zhuanlan.zhihu.com/p/84206752
+1. https://eugeneyan.com/writing/llm-patterns/
 
-1.  https://eugeneyan.com/writing/llm-patterns/
-
-1.  https://towardsdatascience.com/vector-search-is-not-all-you-need-ecd0f16ad65e
+1. https://towardsdatascience.com/vector-search-is-not-all-you-need-ecd0f16ad65e
 
 ---
 
-# 🥳
-
-# **如果你喜欢 Dify，欢迎：**
+## 如果你喜欢 Dify，欢迎：
 
 +   在 GitHub 上贡献代码，与我们一同共建更好的 Dify；
 

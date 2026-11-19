@@ -1,3 +1,4 @@
+
 # 手把手教你配置Skills
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/YGe3dPS24oqCbqxbXgscSX80nff](https://qqs7y1hozd1.feishu.cn/docx/YGe3dPS24oqCbqxbXgscSX80nff)
@@ -6,7 +7,7 @@
 
 哈喽大家好!最近字节跳动家的TRAE AI搞了个大动作,正式上线了Skills功能!这玩意儿简直不要太香,让咱们写代码的效率直接起飞。今天就手把手教大家咋个配置这个神器,保证包教包会!
 
-> **🔗 宝子们注意啦!通过这个C**laude Code 国内代理链接注册使用,可以送20美金抵扣券直接可用哦!这羊毛必须薅!
+> 🔗 宝子们注意啦!通过这个Claude Code 国内代理链接注册使用,可以送20美金抵扣券直接可用哦!这羊毛必须薅!
 
 ![](img/370064f45434e7ce0fe01e669b30cc06.png)
 
@@ -38,7 +39,7 @@ Skills可以分享给团队成员用,大家用同样的标准干活,代码风格
 
 TRAE本身不支持直接用Claude Skills,但咱们可以通过OpenSkills这个开源项目来实现。首先打开终端(terminal),输入下面这个命令:
 
-npm i -g openskills
+`npm i -g openskills`
 
 ![](img/541e0fc29ad9f77f57f8f27d124e2b03.png)
 
@@ -48,31 +49,31 @@ npm i -g openskills
 
 安装好OpenSkills之后,咱们就可以安装官方的Skills了。这里有两个选择:
 
-**安装到当前项目:**
+安装到当前项目:
 
-openskills install anthropics/skills
+`openskills install anthropics/skills`
 
-**全局安装(推荐):**
+全局安装(推荐):
 
-openskills install anthropics/skills --global
+`openskills install anthropics/skills --global`
 
 ![](img/d1ce847d9bfa347807c9dd547202e588.png)
 
-运行命令之后,OpenSkills会把Anthropic官方的Skills项目克隆下来。默认会全选,你也可以用空格键选择自己想要的Skills。安装成功后,在TRAE的文件管理区就能看到.claude/skills文件夹了。
+运行命令之后,OpenSkills会把Anthropic官方的Skills项目克隆下来。默认会全选,你也可以用空格键选择自己想要的Skills。安装成功后,在TRAE的文件管理区就能看到`.claude/skills`文件夹了。
 
 如果你想安装其他第三方的Skills也是可以的,只需要把仓库地址换成对应的就行:
 
-openskills **install **your-org/custom-skills
+`openskills install your-org/custom-skills`
 
 #### 步骤三:创建AGENTS.md文件并同步Skills
 
 前两步只是把Skills安装到本地,如果想让TRAE这些Coding Agent发现和使用这些Skills,必须做这一步!
 
-首先在项目根目录创建一个AGENTS.md文件,然后运行:
+首先在项目根目录创建一个`AGENTS.md`文件,然后运行:
 
-openskills sync
+`openskills sync`
 
-运行之后,再次选择你想写入AGENTS.md文件的Skills。确认后按回车,选择的Skills就会写入这个文档。这个文件将作为TRAE使用Skills的指导文件,相当重要哈!
+运行之后,再次选择你想写入`AGENTS.md`文件的Skills。确认后按回车,选择的Skills就会写入这个文档。这个文件将作为TRAE使用Skills的指导文件,相当重要哈!
 
 #### 步骤四:在TRAE中调用Skills
 
@@ -80,11 +81,11 @@ openskills sync
 
 比如你想用前端设计技能开发个页面:
 
-**调用 f**rontend-design skills,用HTML开发一个视频剪辑软件的SaaS介绍页
+`frontend-design skills`,用HTML开发一个视频剪辑软件的SaaS介绍页
 
 或者开发一个博客网站:
 
-**调用 f**rontend-design skills 用HTML创建一个现代化的个人博客网站原型,包含首页、文章详情页、关于页面的完整博客
+`frontend-design skills` 用HTML创建一个现代化的个人博客网站原型,包含首页、文章详情页、关于页面的完整博客
 
 TRAE会自动调用对应的Skills,按照标准化的流程帮你完成开发任务。这感觉简直不要太爽!
 
@@ -92,15 +93,15 @@ TRAE会自动调用对应的Skills,按照标准化的流程帮你完成开发任
 
 来来来,给大家看个实际例子。咱们用Skills来开发一个视频剪辑软件的介绍页:
 
-1.  **明确需求**: 在TRAE的Chat模式中输入"调用frontend-design skills,开发一个视频剪辑软件的SaaS介绍页"
+1. 明确需求: 在TRAE的Chat模式中输入"调用`frontend-design skills`,开发一个视频剪辑软件的SaaS介绍页"
 
-1.  **AI分析**: TRAE会调用frontend-design skills,分析页面需求和设计规范
+2. AI分析: TRAE会调用`frontend-design skills`,分析页面需求和设计规范
 
-1.  **生成代码**: AI会自动生成HTML、CSS代码,包括响应式设计、美观的UI组件
+3. 生成代码: AI会自动生成HTML、CSS代码,包括响应式设计、美观的UI组件
 
-1.  **实时预览**: 点击预览按钮,直接在浏览器中查看效果
+4. 实时预览: 点击预览按钮,直接在浏览器中查看效果
 
-1.  **迭代优化**: 不满意的地方继续跟AI说,它会继续优化
+5. 迭代优化: 不满意的地方继续跟AI说,它会继续优化
 
 整个过程下来,原本可能要几小时的活路,现在几十分钟就搞定了,而且代码质量还贼高!
 
@@ -110,7 +111,7 @@ TRAE会自动调用对应的Skills,按照标准化的流程帮你完成开发任
 
 #### 1. 先学官方Skills咋写的
 
-创建自定义Skills之前,先把官方Skills仓库克隆到本地,让AI先学习一下官方的写法。这样无论它最开始懂不懂,都会通过官方仓库的skill-creator这个Skill快速学会。
+创建自定义Skills之前,先把官方Skills仓库克隆到本地,让AI先学习一下官方的写法。这样无论它最开始懂不懂,都会通过官方仓库的`skill-creator`这个Skill快速学会。
 
 #### 2. 梳理清楚你的工作流程
 
@@ -118,7 +119,7 @@ TRAE会自动调用对应的Skills,按照标准化的流程帮你完成开发任
 
 #### 3. 先做MVP再优化
 
-工作流程可能没法一次性梳理到位,没关系,先做个最小可行产品(MVP)的Skills出来跑一遍,你就知道哪里有问题,然后针对性地调优。这个过程可以像管理工程文件那样多用Git。
+工作流程可能没法一次性梳理到位,没关系,先做个最小可行产品(MVP)的Skills出来跑一遍,你就知道哪里有问题,然后针对性地调优。这个过程可以像管理工程文件那样多用`Git`。
 
 #### 4. 复杂Skills分步实现
 
@@ -134,15 +135,15 @@ TRAE会自动调用对应的Skills,按照标准化的流程帮你完成开发任
 
 TRAE Skills的上线,让AI编程变得更加强大和标准化。通过四个简单步骤,就能让TRAE掌握各种专业技能,大幅提升开发效率。
 
-**给大家的建议:**
+#### 给大家的建议:
 
-1.  **从小项目开始**: 先用简单的项目练手,比如待办清单、天气查询工具等
+1. 从小项目开始: 先用简单的项目练手,比如待办清单、天气查询工具等
 
-1.  **多实践多总结**: 每天花点时间实践小案例,逐步熟悉AI协作
+2. 多实践多总结: 每天花点时间实践小案例,逐步熟悉AI协作
 
-1.  **关注官方更新**: TRAE还在快速迭代中,经常会有新功能上线
+3. 关注官方更新: TRAE还在快速迭代中,经常会有新功能上线
 
-1.  **分享交流**: 把自己创建的Skills分享给社区,大家一起进步
+4. 分享交流: 把自己创建的Skills分享给社区,大家一起进步
 
 随着AI编程工具的不断发展,掌握像TRAE这样的AI辅助工具已经成为开发者的必备技能。希望这篇教程能帮到大家,让咱们的开发效率起飞!
 
@@ -150,20 +151,20 @@ TRAE Skills的上线,让AI编程变得更加强大和标准化。通过四个简
 
 ---
 
-**相关资源:**
+### 相关资源:
 
-+   TRAE国内版官网: https://www.trae.com.cn/
++ TRAE国内版官网: https://www.trae.com.cn/
 
-+   TRAE国际版官网: https://www.trae.ai/
++ TRAE国际版官网: https://www.trae.ai/
 
-+   OpenSkills项目: https://github.com/numman-ali/openskills
++ OpenSkills项目: https://github.com/numman-ali/openskills
 
-+   Anthropic官方Skills: https://github.com/anthropics/skills
++ Anthropic官方Skills: https://github.com/anthropics/skills
 
 ### 参考资料
 
-+   Trae AI 保姆级教程:从安装到调试全流程指南
++ Trae AI 保姆级教程:从安装到调试全流程指南
 
-+   如何在Cursor、Trae等工具中使用Skills?
++ 如何在Cursor、Trae等工具中使用Skills?
 
-+   AI开发新范式:Trae一口气升级5大能力
++ AI开发新范式:Trae一口气升级5大能力

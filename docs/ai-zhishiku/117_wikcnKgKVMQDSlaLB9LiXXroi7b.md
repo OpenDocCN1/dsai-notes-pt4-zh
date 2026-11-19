@@ -1,16 +1,17 @@
+
 # 吴恩达面向开发人员的 ChatGPT 提示工程中文版
 
 > 来源：[https://my.feishu.cn/docx/YsbUdjKTjoCnP4xCpkUcMkrynb6](https://my.feishu.cn/docx/YsbUdjKTjoCnP4xCpkUcMkrynb6)
 
-[「AI 知识库」 永久免费更新](https://ssw9noe1h6.feishu.cn/wiki/wikcn59pPXfAiF1ONajdPzvhA9d)**提**示工程中文版已收录至老于编写的里
+[「AI 知识库」 永久免费更新](https://ssw9noe1h6.feishu.cn/wiki/wikcn59pPXfAiF1ONajdPzvhA9d)提示工程中文版已收录至老于编写的里
 
 ![](img/65d4eb10c11b3e055334eabfec88afc8.png)
 
-# **介绍**
+# 介绍
 
 ChatGPT Prompt Engineering Learning Notesfor Developers (面向开发者的ChatGPT提问工程学习笔记)
 
-原视频：https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction
+原视频：`https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction`
 
 课程简单介绍了语言模型的工作原理，提供了最佳的提示工程实践，并展示了如何将语言模型 API 应用于各种任务的应用程序中。 此外，课程里面提供了 Jupyter Notebook 代码实例，可以直接使用 OpenAI 提供的 API Key 获得结果，所以没有账号也能够进行体验。
 
@@ -26,13 +27,13 @@ ChatGPT Prompt Engineering Learning Notesfor Developers (面向开发者的ChatG
 
 +   扩展（例如，自动编写电子邮件）
 
-**在这个课程中能够学习到**，编写有**效提示的两个关键原则**，即如何系统地设计好的提示，并学习构建自定义聊天机器人。
+在这个课程中能够学习到，编写有效提示的两个关键原则，即如何系统地设计好的提示，并学习构建自定义聊天机器人。
 
 所有概念都通过大量示例进行说明，可以直接在官方的Jupyter notebook环境中使用这些示例，以获得即时工程的实践经验。
 
-# **主要内容**
+# 主要内容
 
-## **课程章节**
+## 课程章节
 
 1.  课程简介 (Introduction)
 
@@ -52,7 +53,7 @@ ChatGPT Prompt Engineering Learning Notesfor Developers (面向开发者的ChatG
 
 1.  课程总结 (Conclusion)
 
-这个项目是对于[**ChatGPT Prompt Engine**](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)**ering ****f**or Developers课程的学习笔记整理，这里要感谢Isa Fulford (OpenAI) 和 Andrew Ng (DeepLearning.AI) 提供的精彩课程，这些内容对于像我一样的初学者提供了很大的帮助，本着学习与实践的想法，做了下面这些事情，希望可以对提示工程学习者起到帮助：
+这个项目是对于[ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)课程的学习笔记整理，这里要感谢Isa Fulford (OpenAI) 和 Andrew Ng (DeepLearning.AI) 提供的精彩课程，这些内容对于像我一样的初学者提供了很大的帮助，本着学习与实践的想法，做了下面这些事情，希望可以对提示工程学习者起到帮助：
 
 +   1.使用prompt+ChatGPT对课程内容原文进行机器翻译（全文由ChatGPT翻译生成，每一章都提供了中英对照）；
 
@@ -62,29 +63,27 @@ ChatGPT Prompt Engineering Learning Notesfor Developers (面向开发者的ChatG
 
 ![](img/017c9d17bf346ffa5e8ef539d17fae27.png)
 
-+   3.整理了实践过程中对应的jupyterbook代码，位置在： jb_code （可以在本地化部署环境运行）；
++   3.整理了实践过程中对应的jupyterbook代码，位置在：`jb_code`（可以在本地化部署环境运行）；
 
 ![](img/4103148737d27148ecdd89c005f0a37c.png)
 
-+   4.基于notebook代码制作shell的cli命令脚本(更新中)
++   4.基于notebook代码制作`shell`的`cli`命令脚本(更新中)
 
 +   5.整理了提示工程相关的awesome的项目清单(更新中)
 
 +   ... ...
 
-##
+# 致谢
 
-# **致谢**
++   [https://learn.deeplearning.ai/chatgpt-prompt-eng/](https://learn.deeplearning.ai/chatgpt-prompt-eng/)
 
-+   [https://learn.deeplearning.ai](https://learn.deeplearning.ai/chatgpt-prompt-eng/)/chatgpt-prompt-eng/
++   [https://github.com/openai/openai-cookbook](https://github.com/openai/openai-cookbook)
 
-+   [https://github.com/op](https://github.com/openai/openai-cookbook)enai/openai-cookbook
++   [https://github.com/openai/openai-python](https://github.com/openai/openai-python)
 
-+   [https://github.com/](https://github.com/openai/openai-python)openai/openai-python
++   [https://github.com/openai/chatgpt-retrieval-plugin](https://github.com/openai/chatgpt-retrieval-plugin)
 
-+   [https://github.com/openai/chat](https://github.com/openai/chatgpt-retrieval-plugin)gpt-retrieval-plugin
-
-+   [h](https://learnwithhasan.com/prompt-engineering-guide/)ttps://learnwithhasan.com/prompt-engineering-guide/
++   [https://learnwithhasan.com/prompt-engineering-guide/](https://learnwithhasan.com/prompt-engineering-guide/)
 
 ![](img/7f698e21bd5d95c997022ff31b7a0a0c.png)
 

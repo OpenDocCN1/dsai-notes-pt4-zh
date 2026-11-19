@@ -1,3 +1,4 @@
+
 # AI每日资讯-2024
 
 > 来源：[https://aigcreative.feishu.cn/docx/P7dJd4HEpoH18ixaDcFcUDArnLg](https://aigcreative.feishu.cn/docx/P7dJd4HEpoH18ixaDcFcUDArnLg)
@@ -56,7 +57,7 @@ Midjourney正式推出“情绪板（Moodboards）”功能，用户可以通过
 
 量子位智库的《2024年度AI十大趋势报告》提出了未来AI发展的重要方向，包括大模型架构优化、Scaling Law的泛化、AGI探索以及AI在多领域的深度渗透。报告指出，大模型将突破算力瓶颈，AGI的研发聚焦视频生成和空间智能。AI+X产品快速崛起，催生AI助手、智能工具等全新赛道。此外，AI技术正在重塑生产力，智能化解决方案在行业应用中持续深化。
 
-报告详情见文档：[2024年度AI十大趋势报告-量子位.pdf](https://aigcreative.feishu.cn/wiki/GNyiwflUDiDOEKk5WHBc9ZUwnsd?from=from_copylink)
+报告详情见文档：[`2024年度AI十大趋势报告-量子位.pdf`](https://aigcreative.feishu.cn/wiki/GNyiwflUDiDOEKk5WHBc9ZUwnsd?from=from_copylink)
 
 ![](img/28d4744089cd200ac1ce3b0518928091.png)
 

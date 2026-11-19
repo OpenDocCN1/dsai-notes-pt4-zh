@@ -1,6 +1,7 @@
+
 # 【MJ应用系列课程 第六讲】Midjourney 绘制壁纸、书籍插画、影视海报、Logo、图标
 
-> 来源：[https://docs.feishu.cn/docx/C40zda3V1oTFf0xPcBmc6LUXnlt](https://docs.feishu.cn/docx/C40zda3V1oTFf0xPcBmc6LUXnlt)
+> 来源：`https://docs.feishu.cn/docx/C40zda3V1oTFf0xPcBmc6LUXnlt`
 
 在前两章中，我们已经对 Midjourney 有了初步了解，并学习了如何使用指令和参数。在本章中，我们将开始通过实战，探索 Midjourney 的实际商业应用能力。
 
@@ -54,7 +55,7 @@ AIGC 在网易的应用已经相当广泛。在图像方面，其主要应用集
 
 这些游戏场景合成，是由 Midjourney 参与完成的。
 
-详细见网易ASAK设计团队的解析文章[：解析｜AIGC在网易落地项目中的运用 https://m](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/gmenXFRV-g1denIbGjg3NA)p.weixin.qq.com/s/gmenXFRV-g1denIbGjg3NA
+详细见网易ASAK设计团队的解析文章：[解析｜AIGC在网易落地项目中的运用](`https://mp.weixin.qq.com/s/gmenXFRV-g1denIbGjg3NA`)
 
 网易严选商城利用 Midjourney AI 生成严选品牌调性图、商品氛围图素材、材质特写、商用版权图片、服饰模特换装、包装设计、工业造型设计、商品图案设计以及 IP 设计。这些应用不仅丰富了商城的视觉体验，还提升了设计团队的灵感和创意水平。
 
@@ -76,7 +77,7 @@ AIGC 在网易的应用已经相当广泛。在图像方面，其主要应用集
 
 在过去，每张图片的版权费用和 CAD 渲染费用可能高达数千元。通过利用 AI 工具，企业可以大幅节省这些成本，也可以节省许多时间。
 
-详细见网易严选创新设计中心IDC[的文章：AIGC|探索AIGC在网易严选中的应用 http](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/GargWzAGH7QyRanIgZxiCQ)s://mp.weixin.qq.com/s/GargWzAGH7QyRanIgZxiCQ
+详细见网易严选创新设计中心IDC的文章：[AIGC|探索AIGC在网易严选中的应用](`https://mp.weixin.qq.com/s/GargWzAGH7QyRanIgZxiCQ`)
 
 OK，在简要了解了 AIGC 在中国的一些实战应用之后，我们现在开始进行商业实战案例的探讨。
 
@@ -88,13 +89,13 @@ OK，在简要了解了 AIGC 在中国的一些实战应用之后，我们现在
 
 附上一章链接：
 
-[陈](https://zhuanlan.zhihu.com/p/624253088)[大码：MJ应用系列课程](https://zhuanlan.zhihu.com/p/624253088)[(二](https://zhuanlan.zhihu.com/p/624253088))：一文学完 Midjourney AI 的基本操作与高级技巧及Prompt探索1 赞同 · 0 评论文章
+[陈](`https://zhuanlan.zhihu.com/p/624253088`)[大码：MJ应用系列课程](`https://zhuanlan.zhihu.com/p/624253088`)[(二)](`https://zhuanlan.zhihu.com/p/624253088`)：一文学完 Midjourney AI 的基本操作与高级技巧及Prompt探索1 赞同 · 0 评论文章
 
 ![](img/715f7d7e679bb5a8287bad0dabc06ef4.png)
 
 ### 实战：桌面壁纸
 
-**需求场景：用手机、iP**ad、电脑时，大家都会设置自己中意的图片为背景
+**需求场景：用手机、iPad、电脑时，大家都会设置自己中意的图片为背景**
 
 创意描述：一只活泼可爱的柯基犬，在沐浴着阳光的绿色草坪上欢快地奔跑，张开嘴巴，充满活力地朝着你跑来。在远处，三个人正悠闲地站在草坪上闲聊，享受着宁静的时光。
 
@@ -106,11 +107,11 @@ Midjourney 很快就生成了一组图像。
 
 清新欢乐，清晰度还很高，不过，这个图像有两个问题。
 
-首先，壁纸尺寸一般不是1:1比例的，拿我们电脑用的壁纸来说 16:9 会是常用的尺寸。我们回顾一下上章讲内容， -- ar 参数是可以指定生成的比例的，所以我们可以在 prompt 后增加参数 --ar 16:9
+首先，壁纸尺寸一般不是1:1比例的，拿我们电脑用的壁纸来说 16:9 会是常用的尺寸。我们回顾一下上章讲内容，`--ar` 参数是可以指定生成的比例的，所以我们可以在 prompt 后增加参数 `--ar 16:9`
 
 第二，没有三个人聊天的场景。又重新生成了几次，都没有出现这个场景。后来把三个人的场景放在了 prompt 描述的最前边，才勉强出现了人物。
 
-优化后的prompt：In the distance, three people are leisurely standing on the grass, chatting casually. A lively and adorable Corgi dog is joyfully running on the sunlit green lawn, with its mouth wide open, full of energy as it runs towards you. --ar 16:9
+优化后的prompt：`In the distance, three people are leisurely standing on the grass, chatting casually. A lively and adorable Corgi dog is joyfully running on the sunlit green lawn, with its mouth wide open, full of energy as it runs towards you. --ar 16:9`
 
 ![](img/06da4aa57ed3c733b808c140dce68876.png)
 
@@ -126,7 +127,7 @@ Midjourney 很快就生成了一组图像。
 
 ![](img/237485bd4ca2dca1069e772bb7b79b85.png)
 
-实战：书籍插图
+### 实战：书籍插图
 
 需求场景：印刷出版的书籍，重要情景或者人物会配有插图
 
@@ -138,7 +139,7 @@ Prompts 描述：An elderly lady slowly walks along a forest path, with a friend
 
 ![](img/5ec63d1dd79bc4719815dc2fe65ee118.png)
 
-按U1 按钮，放大添加细节后，获得成品。当然，一般出现这种插图时，文字都会对老奶奶的形象、衣着甚至神态都会有详细的描述。可以从你喜欢的文学作品中，寻找一段文字，尝试一下。如果是你自己创作的文学作品，可以找我帮你尝试制作一下。
+按 U1 按钮，放大添加细节后，获得成品。当然，一般出现这种插图时，文字都会对老奶奶的形象、衣着甚至神态都会有详细的描述。可以从你喜欢的文学作品中，寻找一段文字，尝试一下。如果是你自己创作的文学作品，可以找我帮你尝试制作一下。
 
 ![](img/a89b45444d817c8b33740b6bf29ddd11.png)
 
@@ -148,7 +149,7 @@ Prompts 描述：An elderly lady slowly walks along a forest path, with a friend
 
 创意描述：一个中年中国男子，穿着西装，在显示屏幕上演示着课件，明亮简洁的办公室，中远景
 
-Prompts 描述：A middle-aged Chinese man, dressed in a suit, is presenting a slideshow on a display screen in a bright and minimalist office, with a mid-to-long distance view. --v 5
+Prompts 描述：`A middle-aged Chinese man, dressed in a suit, is presenting a slideshow on a display screen in a bright and minimalist office, with a mid-to-long distance view. --v 5`
 
 一次生成，呈现出色的效果，同时在大屏幕上贴心展示了当前热门的数字大屏和商业智能（BI）内容。
 
@@ -202,15 +203,15 @@ Prompt 描述：Faint mist, mountains, floating islands, Chinese palaces, fairyl
 
 ![](img/2434e227317c7ad2acf019eae81f7f4c.png)
 
-有了两张图像后，我们开始将两张图片处理在一起，尝试使用 /blend 指令将两张图片融合在一起。
+有了两张图像后，我们开始将两张图片处理在一起，尝试使用 `/blend` 指令将两张图片融合在一起。
 
 ![](img/8acea251ec7e80e6401b06c422f297ab.png)
 
-> 失败了！Midjourney 基本保留了背景的风格，但是直接改变了主角的形象。仔细阅读下官方文档中 /blend 指令的说明，它只负责图片效果融合。
+> 失败了！Midjourney 基本保留了背景的风格，但是直接改变了主角的形象。仔细阅读下官方文档中 `/blend` 指令的说明，它只负责图片效果融合。
 
-尝试了一下 /imagine 指令来处理两张图片。
+尝试了一下 `/imagine` 指令来处理两张图片。
 
-Prompt：https://s.mj.run/dllIvMVXWhg https://s.mj.run/PwW8DRNopYM Characters float on the surface, like a poster
+Prompt：`https://s.mj.run/dllIvMVXWhg` `https://s.mj.run/PwW8DRNopYM` Characters float on the surface, like a poster
 
 生成的图片画风开始离谱
 
@@ -218,7 +219,7 @@ Prompt：https://s.mj.run/dllIvMVXWhg https://s.mj.run/PwW8DRNopYM Characters fl
 
 再退让一步，使用 图像 prompt + 文本 prompt 来尝试一下，保留主角，背景使用 AI 绘制。
 
-Prompt：https://s.mj.run/dllIvMVXWhg background Light fog, high mountains, floating islands with Chinese palaces, fairyland, realistic
+Prompt：`https://s.mj.run/dllIvMVXWhg` background Light fog, high mountains, floating islands with Chinese palaces, fairyland, realistic
 
 ![](img/e39d372e7e9504ed0890c1134fc58ebe.png)
 
@@ -248,7 +249,7 @@ Prompt 描述：Square, rounded corners, mobile APP icon, bull head, sense of te
 
 ![](img/e9bbf945066e192fe5c27c15fe2056f8.png)
 
-尝试后发现，小狗图标似乎更萌一些。在上述 propmt 描述中，将“bull”替换为“dog”，重新生成了几组图标，供大家欣赏。
+尝试后发现，小狗图标似乎更萌一些。在上述 prompt 描述中，将“bull”替换为“dog”，重新生成了几组图标，供大家欣赏。
 
 ![](img/548177d3366ef06c2213e3142b3b977f.png)
 
@@ -258,21 +259,23 @@ Prompt 描述：Square, rounded corners, mobile APP icon, bull head, sense of te
 
 ![](img/5af7610a3308c7659bf83be47ac14ea2.png)
 
-综合以上实战案例分析，显然，要想在各个领域全方位的商业应用，Midjourney 仍需不断迭代升级。但它已经在绘画、插画、游戏、海报等诸多领域展现出潜在的应用价值。同时，也可以作为一种辅助工具，为设计师提供灵感参考，拓展创意思维，实现更加出色的设计成果。
 
-## AI 绘画的影响
+
+# AI 绘画的影响
+
+综合以上实战案例分析，显然，要想在各个领域全方位的商业应用，Midjourney 仍需不断迭代升级。但它已经在绘画、插画、游戏、海报等诸多领域展现出潜在的应用价值。同时，也可以作为一种辅助工具，为设计师提供灵感参考，拓展创意思维，实现更加出色的设计成果。
 
 那么，AI 绘画将对哪些工作或者领域产生影响呢？在这里，影响不仅指取代现有工作，还可以是促进创新，甚至改变行业模式。
 
-### 首先，插画师
+## 首先，插画师
 
 观察 AI 生成的图像风格，我们可以明显地看到，插画风格的图像表现得更加出色。过去，一幅插画可能需要经过多天的沟通与创作，而如今借助 Midjourney 工具，仅需几分钟就可以生成大量的插画作品供我们优化和参考。
 
-### 设计师
+## 设计师
 
 目前的 AI 创作很少能直接作为成品使用，后期仍需进行诸如矢量化、利用 Photoshop 或 Illustrator 进行微调等处理。但是，AI 创作能为设计师提供丰富的创作思路和灵感，并有助于提高整体的创作效率。
 
-### 版权和图库
+## 版权和图库
 
 做为普通网民可能没感觉，做为公司经营者，他们多多少少都会遇到与设计创作相关的版权问题。要么要支付素材费用，要么要支付高昂的单张图片版权费用，或者被索赔数万元甚至更高的侵权费用。而 Midjourney 生成的图片，Midjourney 已经声明，付费用户创作的图片，版权都归创作用户所有。当然，图片内容是不能侵犯别人品牌和商标权益的。例如，你使用 Midjourney 创作一个仿制的迪士尼米老鼠卡通形象并用于商业用途，这是不允许的。迪士尼拥有 350 名全职律师随时准备维护其权益，全球最强法务绝非虚名。虽然2024 年，米老鼠版权就过 95 年的版权保护期了。
 
@@ -280,7 +283,7 @@ Prompt 描述：Square, rounded corners, mobile APP icon, bull head, sense of te
 
 你能Get到这幅漫画的梗吗？
 
-### 其他
+## 其他
 
 Midjourney 为各个领域提供丰富的创作思路和灵感，如摄影师。同时，它还可能影响现有的商业和教育运行模式，例如美术培训机构和艺术考生等，这种影响可能改变行业现状。
 

@@ -1,12 +1,13 @@
+
 # 服务器繁忙，请稍后再试？用Trae开发DeepSeek的离线版本
 
 > 来源：[https://agijuejin.feishu.cn/docx/MerfdInoPoZ8bIxwmZpcMIJCntc](https://agijuejin.feishu.cn/docx/MerfdInoPoZ8bIxwmZpcMIJCntc)
 
-> [二进制的](https://mp.weixin.qq.com/s/HmcnQ0euxTDDSMQMBs7jTA)梦想 野生的独立开发者｜阅读原文，如有侵权，请联系删除。
+> [二进制的梦想](https://mp.weixin.qq.com/s/HmcnQ0euxTDDSMQMBs7jTA) 野生的独立开发者｜阅读原文，如有侵权，请联系删除。
 
 > 转载请联系原作者取得授权
 
-“ 这段时间，我见过的最多文字，除了每天像刷屏一般的DeepSeek的新闻外，就是不断出现的“服务器繁忙，请稍后再试”。从联网搜索需要稍后，到深度思考(R1)需要稍后，再到。。。 ”
+“这段时间，我见过的最多文字，除了每天像刷屏一般的DeepSeek的新闻外，就是不断出现的“服务器繁忙，请稍后再试”。从联网搜索需要稍后，到深度思考(R1)需要稍后，再到。。。”
 
 **这你能忍？**
 
@@ -16,7 +17,7 @@
 
 不想看细节，要立刻、马上看Trae体验结论或者获取这个应用的，请直接拉到文章末尾。
 
-————
+---
 
 # 题外话：原版Ollama挺怀旧的
 
@@ -30,7 +31,7 @@
 
 想到字节跳动有发布 AI 中文 IDE“Trae”，正好拿来练练手。
 
-在Trae的官网https://www.trae.ai/download 轻轻松松下载到了Mac版本的安装包。
+在Trae的官网`https://www.trae.ai/download`轻轻松松下载到了Mac版本的安装包。
 
 有人可能要问，为什么不用Windows，因为Windows版本还在Coming soon。
 
@@ -62,7 +63,7 @@
 
 接下来，介于DeepSeek服务器繁忙，那就稍后再说吧。开发的事情还是交给Trae来搞，我打打辅助就好。
 
-直接把DeepSeek生成的界面粘贴到Trae-Builder模式的对话框中。
+直接把DeepSeek生成的界面粘贴到`Trae-Builder`模式的对话框中。
 
 ![](img/7887ab4c5dac6cbf98a76bf63f8adcce.png)
 
@@ -106,8 +107,8 @@ Trae，你得给我把历史记录的代码给写出来！
 
 我简单总结下关于Trae的体验：
 
-1.  Trae生成的代码相对比较聚焦具体功能，很少胡乱修改不相关的功能。这个必须要给Trae点个赞；
+1. Trae生成的代码相对比较聚焦具体功能，很少胡乱修改不相关的功能。这个必须要给Trae点个赞；
 
-1.  **Trae能**够基于某段对话进行相关代码的回撤，但回撤会导致相关 内容丢失 ；
+1. **Trae**能够基于某段对话进行相关代码的回撤，但回撤会导致相关 内容丢失 ；
 
-1.  相比Windsurf和Cursor， Trae更加的财大气粗，至少现在还是免费使用Claude-3.5-sonnet ; 嘿嘿~
+1. 相比Windsurf和Cursor，Trae更加的财大气粗，至少现在还是免费使用Claude-3.5-sonnet ; 嘿嘿~

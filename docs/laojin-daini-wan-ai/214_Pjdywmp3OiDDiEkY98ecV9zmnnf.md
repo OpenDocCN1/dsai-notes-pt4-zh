@@ -1,20 +1,21 @@
+
 # Claude Code 2.1.12超详细更新说明，小白也能10分钟上手
 
 > 来源：[https://my.feishu.cn/docx/QX9ldNvsQoU1f9xQNQeckonnnmh](https://my.feishu.cn/docx/QX9ldNvsQoU1f9xQNQeckonnnmh)
 
-前天刷论坛，看到某A官方推文：Claude Code 2.1.0发布。
+前天刷论坛，看到某A官方推文：`Claude Code 2.1.0`发布。
 
 1096次提交？
 
 好家伙，这得憋了多久的大招。
 
-半天后2.1.1来了，修了109个CLI问题。
+半天后`2.1.1`来了，修了109个CLI问题。
 
-然后2.1.2又来了，继续修复稳定性问题。
+然后`2.1.2`又来了，继续修复稳定性问题。
 
 两天连发三个版本，某A这迭代速度，绝了。
 
-老金用Claude Code写文章、管项目、写小工具，已经半年了。
+老金用`Claude Code`写文章、管项目、写小工具，已经半年了。
 
 看完更新说明，我从床上跳起来。
 
@@ -22,11 +23,11 @@
 
 ## Shift+Enter，这个等太久了
 
-之前用Claude Code最烦啥？
+之前用`Claude Code`最烦啥？
 
 写多行提示词。
 
-你想换行，按Enter。
+你想换行，按`Enter`。
 
 结果直接发送了。
 
@@ -34,13 +35,13 @@
 
 麻烦死了。
 
-现在好了，按Shift+Enter，直接换行。
+现在好了，按`Shift+Enter`，直接换行。
 
-不同终端下也有可能是Ctrl+Enter，或者\+Enter。
+不同终端下也有可能是`Ctrl+Enter`，或者`+Enter`。
 
 零配置。
 
-iTerm2、WezTerm、Ghostty、Kitty，开箱即用。
+`iTerm2`、`WezTerm`、`Ghostty`、`Kitty`，开箱即用。
 
 老金测试了下，写了个复杂提示词：
 
@@ -66,15 +67,15 @@ iTerm2、WezTerm、Ghostty、Kitty，开箱即用。
 
 老金管它叫"代码后悔药"。
 
-Claude Code现在会自动给你保存检查点。
+`Claude Code`现在会自动给你保存检查点。
 
 每次文件修改、每次提示词发送，都有备份。
 
 写代码写岔了？
 
-按两下Esc，直接穿越回去。
+按两下`Esc`，直接穿越回去。
 
-或者输入 /rewind命令，打开时光机菜单。
+或者输入`/rewind`命令，打开时光机菜单。
 
 三个选项任你选：
 
@@ -88,19 +89,19 @@ Claude Code现在会自动给你保存检查点。
 
 老金我今天测试了下：
 
-让Claude帮我重构一个脚本，结果改得太激进，功能全崩了。
+让`Claude`帮我重构一个脚本，结果改得太激进，功能全崩了。
 
-以前？得手动git checkout，或者Ctrl+Z按到手抽筋。
+以前？得手动`git checkout`，或者`Ctrl+Z`按到手抽筋。
 
 现在？
 
-Esc+Esc，选"恢复代码"，2秒回到修改前。
+`Esc+Esc`，选"恢复代码"，2秒回到修改前。
 
-**注意**：Bash命令的修改不能撤销。
+**注意**：`Bash`命令的修改不能撤销。
 
-只有Claude的文件编辑工具（Edit、Write）做的改动才能回滚。
+只有`Claude`的文件编辑工具（`Edit`、`Write`）做的改动才能回滚。
 
-Git还是要用的，这个是"本地撤销"，Git是"永久历史"。
+`Git`还是要用的，这个是"本地撤销"，`Git`是"永久历史"。
 
 ## Ctrl+B后台模式（终于不用卡着等了）
 
@@ -108,9 +109,9 @@ Git还是要用的，这个是"本地撤销"，Git是"永久历史"。
 
 你想同时干别的？抱歉，等着吧。
 
-现在按Ctrl+B，任务直接扔后台。
+现在按`Ctrl+B`，任务直接扔后台。
 
-Agent和Bash命令都能后台跑。
+`Agent`和`Bash`命令都能后台跑。
 
 终端释放出来，你继续干活。
 
@@ -118,33 +119,33 @@ Agent和Bash命令都能后台跑。
 
 ```
 # 让Claude分析项目，按Ctrl+B扔后台
-claude -p &quot;分析项目架构并生成报告&quot;
+claude -p "分析项目架构并生成报告"
 
 # 同时让它跑测试
-claude -p &quot;运行测试并总结结果&quot;  # 再按Ctrl+B
+claude -p "运行测试并总结结果"  # 再按Ctrl+B
 
 # 两个任务并行，我继续写文章
 ```
 
-**tmux用户注意**：按Ctrl+B+B（两下B）。
+**tmux用户注意**：按`Ctrl+B`+`B`（两下B）。
 
-后台任务会分配ID，比如bash_1、bash_2、bash_3。
+后台任务会分配ID，比如`bash_1`、`bash_2`、`bash_3`。
 
 随时能查看状态、终止任务。
 
 ## Skills系统大升级，这才是核心
 
-2.1.x最大改变，就是Skills。
+`2.1.x`最大改变，就是`Skills`。
 
-啥是Skills？
+啥是`Skills`？
 
-简单说，给Claude Code装技能包。
+简单说，给`Claude Code`装技能包。
 
-### 1、直接在Skills里写Hooks
+### 1、直接在`Skills`里写`Hooks`
 
-以前想给Skill加Hook（触发器），得去settings.json配置。
+以前想给`Skill`加`Hook`（触发器），得去`settings.json`配置。
 
-现在直接在Skill的frontmatter写：
+现在直接在`Skill`的`frontmatter`写：
 
 ```
 hooks:
@@ -152,21 +153,21 @@ hooks:
   - post-tool-use
 ```
 
-老金我的👸号写作Skill，之前配置Hook花了10分钟。
+老金我的👸号写作`Skill`，之前配置`Hook`花了10分钟。
 
 现在1分钟搞定，配置都在一个文件里。
 
-### 2、Forked Context（独立上下文）
+### 2、`Forked Context`（独立上下文）
 
 这个功能太绝了。
 
-以前你调用一个Skill，它会带着整个会话的上下文。
+以前你调用一个`Skill`，它会带着整个会话的上下文。
 
-问题是，上下文太多了，Claude容易跑偏。
+问题是，上下文太多了，`Claude`容易跑偏。
 
-现在你可以设置forked context：
+现在你可以设置`forked context`：
 
-Skill只带自己需要的上下文，干净、快速、不跑偏。
+`Skill`只带自己需要的上下文，干净、快速、不跑偏。
 
 ```
 context: fork
@@ -174,13 +175,13 @@ context: fork
 
 举个例子：
 
-我写文章时调用"标题生成"Skill，它只需要看文章正文。
+我写文章时调用"标题生成"`Skill`，它只需要看文章正文。
 
 不需要知道我之前讨论了什么、安装了什么。
 
 ### 3、热重载（改完直接用）
 
-以前改完Skill配置，得重启Claude Code。
+以前改完`Skill`配置，得重启`Claude Code`。
 
 现在改完，直接生效。
 
@@ -188,18 +189,18 @@ context: fork
 
 这才是开发体验啊。
 
-### 4、用/调用Skills
+### 4、用`/`调用`Skills`
 
 最爽的是这个：
 
-以前调用Skill，得输入完整的命令路径。
+以前调用`Skill`，得输入完整的命令路径。
 
-现在直接打/，自动补全，选一个就行。
+现在直接打`/`，自动补全，选一个就行。
 
 比如我的👸号助手，以前输入：
 
 ```
-use skill gongzhonghao-writer with topic &quot;Claude更新&quot;
+use skill gongzhonghao-writer with topic "Claude更新"
 ```
 
 现在输入：
@@ -214,17 +215,17 @@ use skill gongzhonghao-writer with topic &quot;Claude更新&quot;
 
 这个改动，Reddit上讨论最多。
 
-以前Claude Code的Agent（子代理），你只要拒绝一次工具调用，它就直接停了。
+以前`Claude Code`的`Agent`（子代理），你只要拒绝一次工具调用，它就直接停了。
 
 你想让它继续？抱歉，得重新开始。
 
-现在拒绝了，Agent会问你：
+现在拒绝了，`Agent`会问你：
 
 "我明白了，那我换个方案，你看这样行吗？"
 
 老金我测试了一下：
 
-让Agent帮我重构代码，它提议删除一个文件。
+让`Agent`帮我重构代码，它提议删除一个文件。
 
 我拒绝了，说这个文件还有用。
 
@@ -232,25 +233,25 @@ use skill gongzhonghao-writer with topic &quot;Claude更新&quot;
 
 "那我们保留这个文件，但重构它的内容，行吗？"
 
-这才是智能Agent该有的样子。
+这才是智能`Agent`该有的样子。
 
-## 安全修复（2.1.1/2.1.2紧急补丁）
+## 安全修复（`2.1.1`/`2.1.2`紧急补丁）
 
 这个必须说。
 
-2.1.0有个高危漏洞：敏感数据可能泄露到调试日志。
+`2.1.0`有个高危漏洞：敏感数据可能泄露到调试日志。
 
-OAuth token、API key、密码，都可能被记录。
+`OAuth token`、`API key`、`密码`，都可能被记录。
 
-2.1.1修复了这个问题，2.1.2继续加固。
+`2.1.1`修复了这个问题，`2.1.2`继续加固。
 
-如果你在用CI/CD流水线或共享开发环境，必须升级到最新版。
+如果你在用`CI/CD`流水线或共享开发环境，必须升级到最新版。
 
-某A还修了两个OAuth相关的bug：
+某A还修了两个`OAuth`相关的bug：
 
-1、Token刷新时机不对（服务器说过期了但本地觉得没过期）
+1、`Token`刷新时机不对（服务器说过期了但本地觉得没过期）
 
-2、并发刷新时可能读到旧Token
+2、并发刷新时可能读到旧`Token`
 
 **升级命令**：
 
@@ -262,19 +263,19 @@ npm update -g @某A-ai/claude-code
 
 这个功能，日本和西班牙用户疯狂夸赞。
 
-你可以在settings.json里设置：
+你可以在`settings.json`里设置：
 
 ```
 {
-  &quot;language&quot;: &quot;japanese&quot;
+  "language": "japanese"
 }
 ```
 
-Claude Code就会用你的母语回答。
+`Claude Code`就会用你的母语回答。
 
 支持中文、日语、西班牙语、法语等。
 
-也可以直接使用/config
+也可以直接使用`/config`
 
 ![](img/337caa8ecd3ec60d871183cee5e5b7bb.png)
 
@@ -290,7 +291,7 @@ Claude Code就会用你的母语回答。
 
 ```
 {
-  &quot;allowedTools&quot;: [&quot;Bash(git status)&quot;, &quot;Bash(npm test)&quot;]
+  "allowedTools": ["Bash(git status)", "Bash(npm test)"]
 }
 ```
 
@@ -298,46 +299,46 @@ Claude Code就会用你的母语回答。
 
 ```
 {
-  &quot;allowedTools&quot;: [&quot;Bash(*-h*)&quot;, &quot;Bash(git *)&quot;]
+  "allowedTools": ["Bash(*-h*)", "Bash(git *)"]
 }
 ```
 
-Bash(*-h*)：所有带-h参数的命令，直接允许。
+`Bash(*-h*)`：所有带`-h`参数的命令，直接允许。
 
-Bash(git *)：所有git命令，直接允许。
+`Bash(git *)`：所有`git`命令，直接允许。
 
 老金我的配置：
 
 ```
 {
-  &quot;allowedTools&quot;: [
-    &quot;Bash(python *)&quot;,
-    &quot;Bash(npm *)&quot;,
-    &quot;Edit&quot;,
-    &quot;Read&quot;
+  "allowedTools": [
+    "Bash(python *)",
+    "Bash(npm *)",
+    "Edit",
+    "Read"
   ]
 }
 ```
 
 再也不用每次都点"允许"了。
 
-## MCP动态检测（2.1.x新增）
+## MCP动态检测（`2.1.x`新增）
 
 这个功能技术人员会狂喜。
 
-2.1.x新增了MCP的list_changed通知。
+`2.1.x`新增了`MCP`的`list_changed`通知。
 
 啥意思？
 
-以前你连接的MCP工具状态变了，得手动重连才能检测到。
+以前你连接的`MCP`工具状态变了，得手动重连才能检测到。
 
 现在自动检测，无缝更新。
 
-比如你的数据库MCP服务器新增了一张表，Claude Code能立即知道。
+比如你的数据库`MCP`服务器新增了一张表，`Claude Code`能立即知道。
 
 不用重启会话。
 
-## /teleport传送到Web端（这个骚操作）
+## `/teleport`传送到Web端（这个骚操作）
 
 你在本地CLI写着写着，突然想在浏览器里继续？
 
@@ -347,7 +348,7 @@ Bash(git *)：所有git命令，直接允许。
 /teleport
 ```
 
-Claude Code会生成一个链接：
+`Claude Code`会生成一个链接：
 
 ```
 http://claude.ai/code?session=xxx
@@ -363,59 +364,59 @@ http://claude.ai/code?session=xxx
 
 ## 40+实用技巧（Medium文章总结的）
 
-Reddit上有个开发者Joe Njenga，测试了2.1.x的16个改动。
+Reddit上有个开发者`Joe Njenga`，测试了`2.1.x`的16个改动。
 
-还有个Substack博主Datasculptor，写了40+个实用技巧。
+还有个`Substack`博主`Datasculptor`，写了40+个实用技巧。
 
-老金我挑几个最实用的：
+老金我挑几个最实用：
 
 ### 技巧1：批量处理文件
 
 ```
-claude -p &quot;分析所有.md文件的错别字&quot; --add-dir ./articles
+claude -p "分析所有.md文件的错别字" --add-dir ./articles
 ```
 
-### 技巧2：JSON格式输出
+### 技巧2：`JSON`格式输出
 
 ```
-claude -p &quot;列出项目依赖&quot; --output-format json | jq &#x27;.dependencies&#x27;
+claude -p "列出项目依赖" --output-format json | jq '.dependencies'
 ```
 
 ### 技巧3：设置超时
 
 ```
-claude --timeout 60 -p &quot;复杂分析任务&quot;
+claude --timeout 60 -p "复杂分析任务"
 ```
 
 ### 技巧4：会话管理
 
 ```
 # 保存会话
-claude --save-session &quot;code-review-20260108&quot;
+claude --save-session "code-review-20260108"
 
 # 恢复会话
-claude --load-session &quot;code-review-20260108&quot; --continue
+claude --load-session "code-review-20260108" --continue
 ```
 
-### 技巧5：CI/CD集成
+### 技巧5：`CI/CD`集成
 
 ```
-cat test_results.txt | claude -p &quot;分析测试结果&quot; --output-format json
+cat test_results.txt | claude -p "分析测试结果" --output-format json
 ```
 
 ## 性能提升（数据说话）
 
-2.1.x底层用的是Claude Sonnet 4.5。
+`2.1.x`底层用的是`Claude Sonnet 4.5`。
 
 规划性能比之前提升18%。
 
-Substack博主提到的几个关键数据：
+`Substack`博主提到的几个关键数据：
 
 **启动速度**：
 
-2.0版本平均3.2秒
+`2.0`版本平均3.2秒
 
-2.1.x版本平均1.8秒
+`2.1.x`版本平均1.8秒
 
 提升44%
 
@@ -423,9 +424,9 @@ Substack博主提到的几个关键数据：
 
 长会话（1000+轮对话）：
 
-2.0版本：1.2GB
+`2.0`版本：1.2GB
 
-2.1.x版本：850MB
+`2.1.x`版本：850MB
 
 降低29%
 
@@ -433,28 +434,28 @@ Substack博主提到的几个关键数据：
 
 简单查询（<50 tokens）：
 
-2.0版本：0.8秒
+`2.0`版本：0.8秒
 
-2.1.x版本：0.4秒
+`2.1.x`版本：0.4秒
 
 提升50%
 
 ## 怎么升级（10分钟搞定）
 
-### 方法1：NPM（推荐）
+### 方法1：`NPM`（推荐）
 
 ```
 npm update -g @某A-ai/claude-code
 ```
 
-### 方法2：Homebrew（macOS）
+### 方法2：`Homebrew`（macOS）
 
 ```
 brew update
 brew upgrade claude-code
 ```
 
-### 方法3：Docker（隔离环境）
+### 方法3：`Docker`（隔离环境）
 
 ```
 docker pull 某A/claude-code:2.1.2
@@ -471,11 +472,11 @@ claude --version
 
 老金我升级时踩了几个坑：
 
-### 坑1：Node版本
+### 坑1：`Node`版本
 
-Claude Code 2.1.x要求Node 18+
+`Claude Code 2.1.x`要求`Node 18+`
 
-如果你是Node 16，会报错。
+如果你是`Node 16`，会报错。
 
 检查版本：
 
@@ -483,7 +484,7 @@ Claude Code 2.1.x要求Node 18+
 node --version
 ```
 
-升级Node：
+升级`Node`：
 
 ```
 # macOS
@@ -494,9 +495,9 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-### 坑2：旧Skills不兼容
+### 坑2：旧`Skills`不兼容
 
-如果你之前写过Skills，可能需要更新frontmatter格式。
+如果你之前写过`Skills`，可能需要更新`frontmatter`格式。
 
 旧格式：
 
@@ -519,71 +520,71 @@ forkedContext: true
 ---
 ```
 
-### 坑3：2.1.0/2.1.1的bug
+### 坑3：`2.1.0`/`2.1.1`的bug
 
-很多Reddit用户反映"2.1.0用不了"。
+很多Reddit用户反映"`2.1.0`用不了"。
 
-别担心，直接升级到2.1.2，问题全解决。
+别担心，直接升级到`2.1.2`，问题全解决。
 
 某A在48小时内连推两个修复版本。
 
 ## 社区反馈（Reddit炸了）
 
-2.1.x发布后，Reddit的r/ClaudeAI板块讨论爆了。
+`2.1.x`发布后，Reddit的`r/ClaudeAI`板块讨论爆了。
 
 **最高赞评论**（1.2K点赞）：
 
-"2.1.0用不了，2.1.2完美。某A这迭代速度，绝了。"
+"`2.1.0`用不了，`2.1.2`完美。某A这迭代速度，绝了。"
 
 **争议最大的话题**：
 
-"Skills比MCP重要吗？"
+"`Skills`比`MCP`重要吗？"
 
-LinkedIn上有个叫Ashay Kubal的开发者说：
+`LinkedIn`上有个叫`Ashay Kubal`的开发者说：
 
-"Skills has gone on to become 某A's most significant feature with a potential to make MCP irrelevant."
+"`Skills` has gone on to become 某A's most significant feature with a potential to make `MCP` irrelevant."
 
-翻译过来就是：Skills可能会让MCP变得不那么重要。
+翻译过来就是：`Skills`可能会让`MCP`变得不那么重要。
 
 老金我测试了一周，同意这个观点。
 
-MCP让Claude连接外部数据，但Skills定义工作流。
+`MCP`让`Claude`连接外部数据，但`Skills`定义工作流。
 
-两者不冲突，但Skills更核心。
+两者不冲突，但`Skills`更核心。
 
-VentureBeat的报道标题：
+`VentureBeat`的报道标题：
 
-"Claude Code 2.1.0 arrives with smoother workflows and smarter agents"
+"`Claude Code 2.1.0` arrives with smoother workflows and smarter agents"
 
-翻译：更顺滑的工作流，更聪明的Agent。
+翻译：更顺滑的工作流，更聪明的`Agent`。
 
 ## 未来趋势（某A的野心）
 
-看完2.1.1的更新日志，老金我有个大胆的猜测：
+看完`2.1.1`的更新日志，老金我有个大胆的猜测：
 
 某A在下一盘很大的棋。
 
-**第一步**：CLI工具成熟（2.1.1达成）
+**第一步**：CLI工具成熟（`2.1.1`达成）
 
-**第二步**：Skills生态爆发（进行中）
+**第二步**：`Skills`生态爆发（进行中）
 
-**第三步**：AI Agent标准化（未来6个月）
+**第三步**：`AI Agent`标准化（未来6个月）
 
 为什么这么说？
 
-看2.1.x的核心改动：
+看`2.1.x`的核心改动：
 
-1、Skills独立上下文 → 为多Agent协作铺路
+1、`Skills`独立上下文 → 为多`Agent`协作铺路
 
-2、Hooks系统完善 → 为自动化工作流铺路
+2、`Hooks`系统完善 → 为自动化工作流铺路
 
 3、多语言支持 → 为全球化铺路
 
-4、Checkpointing → 让开发者敢于大胆实验
+4、`Checkpointing` → 让开发者敢于大胆实验
 
 再看某A最近的动作：
 
-1月5日，Claude Opus 3退役，推荐升级Opus 4.5。
+1月5日，`Claude Opus 3`退役，推荐升级`Opus 4.5`。
 
 成本降低66%，性能提升3倍。
 
@@ -591,99 +592,99 @@ VentureBeat的报道标题：
 
 **老金预测**：
 
-2026年6月前，某A会发布Claude Code 3.0。
+2026年6月前，某A会发布`Claude Code 3.0`。
 
 核心功能：
 
-1、原生多Agent协作
+1、原生多`Agent`协作
 
 2、可视化工作流编辑器
 
-3、Skills市场
+3、`Skills`市场
 
 4、企业级权限管理
 
 ## 老金的使用建议
 
-用了2.1.2两天，我总结了几个最佳实践：
+用了`2.1.2`两天，我总结了几个最佳实践：
 
 ### 1、先升级，别犹豫
 
-2.1.2的性能提升肉眼可见。
+`2.1.2`的性能提升肉眼可见。
 
-如果你还在用2.0或2.1.0，赶紧升级。
+如果你还在用`2.0`或`2.1.0`，赶紧升级。
 
-### 2、学会用Skills
+### 2、学会用`Skills`
 
-Skills才是Claude Code的核心。
+`Skills`才是`Claude Code`的核心。
 
-花2小时学会写Skills，能省200小时重复工作。
+花2小时学会写`Skills`，能省200小时重复工作。
 
 ### 3、配置通配符权限
 
 别每次都点"允许"了。
 
-配好Wildcard权限，效率翻倍。
+配好`Wildcard`权限，效率翻倍。
 
-### 4、用Esc+Esc做撤销
+### 4、用`Esc+Esc`做撤销
 
 这个功能是实验的好朋友。
 
 大胆尝试，反正能撤销。
 
-### 5、用Ctrl+B跑后台任务
+### 5、用`Ctrl+B`跑后台任务
 
 长任务不用傻等了。
 
 扔后台，继续干活。
 
-### 6、用/teleport做备份
+### 6、用`/teleport`做备份
 
-重要会话，随手teleport到Web端。
+重要会话，随手`teleport`到Web端。
 
 浏览器端会自动保存，本地崩溃也不怕。
 
 ### 7、加入社区
 
-Reddit的r/ClaudeAI
+Reddit的`r/ClaudeAI`
 
-GitHub的claude-code仓库
+`GitHub`的`claude-code`仓库
 
-Discord的Claude开发者频道
+`Discord`的`Claude`开发者频道
 
-这三个地方，每天都有新技巧、新Skills。
+这三个地方，每天都有新技巧、新`Skills`。
 
 ## 最后说两句
 
-Claude Code 2.1.2这次更新，老金我给92分。
+`Claude Code 2.1.2`这次更新，老金我给92分。
 
 扣掉的8分，是因为：
 
-1、文档还不够详细（尤其是Skills部分）
+1、文档还不够详细（尤其是`Skills`部分）
 
 2、错误提示还不够友好（新手容易懵）
 
-3、Web端功能还没完全对齐
+3、`Web`端功能还没完全对齐
 
 但瑕不掩瑜。
 
-2.1.2已经是市面上最强的AI编程助手了。
+`2.1.2`已经是市面上最强的AI编程助手了。
 
 不是之一，就是最强。
 
 关键是，它还在快速迭代。
 
-1月7日发布2.1.0，1月8日就出2.1.1，1月9日2.1.2。
+1月7日发布`2.1.0`，1月8日就出`2.1.1`，1月9日`2.1.2`。
 
 这速度，这决心，这执行力。
 
 老金我预测：
 
-2026年底，Claude Code会成为开发者的标配工具。
+2026年底，`Claude Code`会成为开发者的标配工具。
 
-就像现在的Git一样，不会用都不好意思说自己是程序员。
+就像现在的`Git`一样，不会用都不好意思说自己是程序员。
 
-虽然不会写代码，但老金我已经用Claude Code做了：
+虽然不会写代码，但老金我已经用`Claude Code`做了：
 
 1、自动化👸号写作流程
 
@@ -695,7 +696,7 @@ Claude Code 2.1.2这次更新，老金我给92分。
 
 每天省2小时，不夸张。
 
-如果你还没用过Claude Code，今天就是最好的开始。
+如果你还没用过`Claude Code`，今天就是最好的开始。
 
 10分钟上手，1小时上瘾，1周离不开。
 
@@ -703,30 +704,25 @@ Claude Code 2.1.2这次更新，老金我给92分。
 
 ## 参考来源
 
-+   Boris Cherny（某A工程师）Threads官方发布：https://www.threads.com/@boris_cherny/post/DTOyRyBD018
++ `Boris Cherny`（某A工程师）Threads官方发布：https://www.threads.com/@boris_cherny/post/DTOyRyBD018
 
-+   Zelili新闻（2.1.1更新详解）：https://zelili.com/news/claude-code-2-1-1-update-whats-new-and-key-fixes/
++ `Zelili`新闻（`2.1.1`更新详解）：https://zelili.com/news/claude-code-2-1-1-update-whats-new-and-key-fixes/
 
-+   Medium文章（Joe Njenga测试16个新功能）：https://medium.com/@joe.njenga/claude-code-2-1-is-here-i-tested-all-16-new-changes-dont-miss-this-update-ea9ca008dab7
++ `Medium`文章（`Joe Njenga`测试16个新功能）：https://medium.com/@joe.njenga/claude-code-2-1-is-here-i-tested-all-16-new-changes-dont-miss-this-update-ea9ca008dab7
 
-+   Substack文章（Datasculptor的40+技巧）：https://mlearning.substack.com/p/claude-code-21-new-features-january-2026
++ `Substack`文章（`Datasculptor`的40+技巧）：https://mlearning.substack.com/p/claude-code-21-new-features-january-2026
 
-+   VentureBeat报道：https://venturebeat.com/orchestration/claude-code-2-1-0-arrives-with-smoother-workflows-and-smarter-agents
 
-+   ClaudeLog官方Changelog：https://claudelog.com/claude-code-changelog/
 
-+   Claude Code官方文档：https://docs.claude.com/en/release-notes/claude-code
+# Claude Code 相关资源与参考链接
 
-+   GitHub仓库（claude-code完整CHANGELOG）：https://github.com/某As/claude-code/blob/main/CHANGELOG.md
-
-+   Ashay Kubal的LinkedIn分析：https://www.linkedin.com/posts/ashaykubal_claudecode-claude-某A-activity-7414924350363152384-cq9J
-
-+   Ray Amjad的YouTube教程（2026工作流）：https://www.youtube.com/watch?v=sy65ARFI9Bg
-
-+   DEV Community（Esc+Esc时光机教程）：https://dev.to/rajeshroyal/your-time-machine-for-code-double-esc-to-rewind-when-things-go-wrong-53pa
-
-+   Skywork AI（Checkpointing开发者指南）：https://skywork.ai/skypage/en/claude-code-checkpoints-ai-coding/1976917740735229952
-
-+   Reddit讨论（r/ClaudeAI社区）：https://www.reddit.com/r/ClaudeAI/
-
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
++ VentureBeat报道：https://venturebeat.com/orchestration/claude-code-2-1-0-arrives-with-smoother-workflows-and-smarter-agents
++ ClaudeLog官方Changelog：https://claudelog.com/claude-code-changelog/
++ Claude Code官方文档：https://docs.claude.com/en/release-notes/claude-code
++ GitHub仓库（`claude-code`完整`CHANGELOG`）：https://github.com/某As/claude-code/blob/main/CHANGELOG.md
++ Ashay Kubal的LinkedIn分析：https://www.linkedin.com/posts/ashaykubal_claudecode-claude-某A-activity-7414924350363152384-cq9J
++ Ray Amjad的YouTube教程（2026工作流）：https://www.youtube.com/watch?v=sy65ARFI9Bg
++ DEV Community（`Esc+Esc`时光机教程）：https://dev.to/rajeshroyal/your-time-machine-for-code-double-esc-to-rewind-when-things-go-wrong-53pa
++ Skywork AI（`Checkpointing`开发者指南）：https://skywork.ai/skypage/en/claude-code-checkpoints-ai-coding/1976917740735229952
++ Reddit讨论（`r/ClaudeAI`社区）：https://www.reddit.com/r/ClaudeAI/
++ <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

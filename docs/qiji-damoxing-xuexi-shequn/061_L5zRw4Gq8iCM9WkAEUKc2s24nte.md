@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（11月 1日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/K050dTEFxokk52xzaxscuQgDnec](https://miracleplus.feishu.cn/docx/K050dTEFxokk52xzaxscuQgDnec)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Le**pton AI 创始成员，曾在阿里云担任高性能 AI** 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
+> 本期活动将在11月9日 10:00开始，我们邀请到的嘉宾是鱼哲，Lepton AI 创始成员，曾在阿里云担任高性能 AI 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
 
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
 
@@ -12,9 +13,7 @@
 
 ![](img/468f8802b2053b0f22f8d3067d40f2d3.png)
 
-#
-
-# 资讯
+## 资讯
 
 ### OpenAI推出ChatGPT搜索，挑战谷歌市场地位
 
@@ -24,11 +23,11 @@ OpenAI正式发布了ChatGPT Search，这是一个旨在提供“及时答案”
 
 主要功能与特点：
 
-+   **即时搜索**：ChatGPT Search可以根据用户的提问自动选择是否进行网络搜索，用户也可以通过点击图标手动激活搜索功能。
++ 即时搜索：ChatGPT Search可以根据用户的提问自动选择是否进行网络搜索，用户也可以通过点击图标手动激活搜索功能。
 
-+   **信息来源标注**：在回答中，ChatGPT Search提供了新闻来源及其他数据的边栏和内联标注，例如，当用户查询某地活动时，ChatGPT会从当地新闻来源中提取信息。
++ 信息来源标注：在回答中，ChatGPT Search提供了新闻来源及其他数据的边栏和内联标注，例如，当用户查询某地活动时，ChatGPT会从当地新闻来源中提取信息。
 
-+   **分阶段发布**：ChatGPT Search首先面向ChatGPT Plus和Team用户开放，未来几周内将推广至企业和教育用户，最终向免费用户开放。
++ 分阶段发布：ChatGPT Search首先面向ChatGPT Plus和Team用户开放，未来几周内将推广至企业和教育用户，最终向免费用户开放。
 
 OpenAI还推出了一个浏览器扩展，可将ChatGPT Search设为Chrome中的默认搜索引擎。同时，公司计划不断优化搜索功能，尤其在购物和旅游领域，并打算将其应用于高级语音模式（Advanced Voice Mode）功能。
 
@@ -46,9 +45,9 @@ Meta宣布与传感器公司GelSight和韩国机器人公司Wonik Robotics合作
 
 核心产品与技术：
 
-+   **Digit 360传感器**：Meta与GelSight合作推出了这一具有人类多模态感知能力的指尖传感器。Digit 360使用了内置AI芯片和18个传感特征，可感知振动、温度甚至气味。这款设备预计将于明年上市。
++ Digit 360传感器：Meta与GelSight合作推出了这一具有人类多模态感知能力的指尖传感器。Digit 360使用了内置AI芯片和18个传感特征，可感知振动、温度甚至气味。这款设备预计将于明年上市。
 
-+   **Allegro机器人手**：Meta与Wonik合作开发了新一代的Allegro机器人手，集成了Digit 360等触觉传感器，并配备控制板，能将触觉数据编码并传输至主机电脑。新款Allegro手计划于明年推出。
++ Allegro机器人手：Meta与Wonik合作开发了新一代的Allegro机器人手，集成了Digit 360等触觉传感器，并配备控制板，能将触觉数据编码并传输至主机电脑。新款Allegro手计划于明年推出。
 
 ![](img/473d0e1aa86eacf98ab2b25040c47250.png)
 
@@ -94,7 +93,7 @@ Bubeck还提到大模型智力的评估标准，展示GPT-4生成独角兽图像
 
 ![](img/2d33956a17624e889905f73ffe269530.png)
 
-# 推特
+## 推特
 
 ### HOVER模型：不用庞大数据集，仍然可以捕捉人类协调平衡时的“潜意识”，学习如何协调电机
 
@@ -166,7 +165,7 @@ https://x.com/LoubnaBenAllal1/status/1852055582494294414
 
 https://x.com/recraftai/status/1851706399631224939
 
-很高兴认识你！我们是 red_panda，但朋友们叫我们 Recraft。
+很高兴认识你！我们是 `red_panda`，但朋友们叫我们 Recraft。
 
 ---
 
@@ -212,9 +211,9 @@ https://x.com/chelseabfinn/status/1852043351366996449
 
 很高兴开始分享我们在 Pi 的工作 🤖❤️
 
-•  一个3B参数的通用预训练模型，基于8+机器人平台训练
+• 一个3B参数的通用预训练模型，基于8+机器人平台训练
 
-•  一个后期训练方案，让机器人能够完成灵活的、长时间的任务
+• 一个后期训练方案，让机器人能够完成灵活的、长时间的任务
 
 https://physicalintelligence.company/blog/pi0
 
@@ -224,7 +223,7 @@ https://physicalintelligence.company/blog/pi0
 
 [aDcw8_Ru7s5ozErE.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kpk5bdGM3odBN0xQOU9cxCqGnAg)
 
-# 信号
+## 信号
 
 ### AAAR-1.0: ASSESSING AI’S POTENTIAL TO ASSIST RESEARCH
 
@@ -236,15 +235,15 @@ https://physicalintelligence.company/blog/pi0
 
 信号节点：模型体系-评估体系
 
-这**篇论文研究了如何**评估大型语言模型（LLMs）在支持科研任务中的表现，尤其是在具备专业知识需求的研究任务中。具体而言，作者们开发了一个名为 AAAR-1.0 的基准数据集，用来测试 LLMs 在四种科研核心任务中的表现：
+这篇论文研究了如何评估大型语言模型（LLMs）在支持科研任务中的表现，尤其是在具备专业知识需求的研究任务中。具体而言，作者们开发了一个名为 AAAR-1.0 的基准数据集，用来测试 LLMs 在四种科研核心任务中的表现：
 
 equation inference：评估 LLMs 是否能够根据论文中的上下文信息判断方程的正确性；
 
 experiment design：设计验证研究思路和解决方案的实验；
 
-**paper weakness**：识别论文中的薄弱之处；
+paper weakness：识别论文中的薄弱之处；
 
-**review critique**：判断人类评审意见的各个部分是否存在不足之处。
+review critique：判断人类评审意见的各个部分是否存在不足之处。
 
 AAAR-1.0 数据集与之前的基准不同，特别之处在于它是专门面向科研领域设计的，任务需要深入的领域专业知识。此外，该数据集模拟了研究人员日常参与的主要活动。因此，该基准不仅对模型提出了更高的专业要求，也贴近科研人员的实际需求。论文还评估了不同开源和闭源 LLMs 在这些任务中的表现，指出了其在复杂科研任务中的潜力与局限性。
 
@@ -262,13 +261,15 @@ AAAR-1.0 数据集与之前的基准不同，特别之处在于它是专门面�
 
 这篇论文探讨了机器人学习如何应对现实世界应用中的数据需求、泛化能力和鲁棒性等关键挑战。作者提出了开发通用机器人策略（即机器人基础模型）作为应对这些挑战的有效方法。
 
+
+
 论文提出了一种新的流匹配架构，称为Physical Intelligence，该架构基于预训练的视觉-语言模型（VLM），利用大规模互联网语义知识来增强机器人的理解力和任务适应性。研究中展示了如何使用来自多个灵巧机器人平台的多样化数据集来训练这一模型，包括单臂机器人、双臂机器人和移动操控机器人。
 
 最后，作者通过多项任务评估了该模型的表现，包括其预训练后的零样本任务完成能力、在不同指令来源下的任务执行能力（如人类语言指令和高级 VLM 策略），以及通过微调获得新技能的能力。测试任务涉及洗衣折叠、桌面清洁和盒子组装等。
 
 ![](img/0b50175ad062f322a1ba82a764ff386e.png)
 
-### AUTOKAGGLE: A MULTI-AGENT FRAMEWORK FOR AUTONOMOUS DATA SCIENCE COMPETITIONS
+## AUTOKAGGLE: A MULTI-AGENT FRAMEWORK FOR AUTONOMOUS DATA SCIENCE COMPETITIONS
 
 贡献人：
 
@@ -278,15 +279,15 @@ AAAR-1.0 数据集与之前的基准不同，特别之处在于它是专门面�
 
 信号节点：开发体系-Agent
 
-这篇论文介绍了 **AutoKaggle**，一个为数据科学家设计的自动化框架，用于帮助完成复杂的表格数据处理任务。AutoKaggle 通过一个多智能体系统协作来完成数据管道工作，帮助用户更高效地解决日常数据科学问题。该框架采用了迭代式开发流程，包括代码执行、调试以及全面的单元测试，以确保代码的正确性和逻辑一致性。此外，AutoKaggle 支持高度可定制的工作流程，允许用户在各个阶段进行干预，从而将自动化智能和人类专业知识相结合。
+这篇论文介绍了 `AutoKaggle`，一个为数据科学家设计的自动化框架，用于帮助完成复杂的表格数据处理任务。`AutoKaggle` 通过一个多智能体系统协作来完成数据管道工作，帮助用户更高效地解决日常数据科学问题。该框架采用了迭代式开发流程，包括代码执行、调试以及全面的单元测试，以确保代码的正确性和逻辑一致性。此外，`AutoKaggle` 支持高度可定制的工作流程，允许用户在各个阶段进行干预，从而将自动化智能和人类专业知识相结合。
 
-AutoKaggle 的核心工具包包含经过验证的函数库，涵盖数据清洗、特征工程和建模等常见任务，极大地提高了工作效率。研究中使用了 8 个 Kaggle 竞赛的数据来模拟真实场景中的数据处理流程。评估结果表明，AutoKaggle 在典型的数据科学管道中实现了 0.85 的验证提交率和 0.82 的综合评分，验证了该框架在应对复杂数据科学任务方面的有效性和实用性。
+`AutoKaggle` 的核心工具包包含经过验证的函数库，涵盖数据清洗、特征工程和建模等常见任务，极大地提高了工作效率。研究中使用了 8 个 Kaggle 竞赛的数据来模拟真实场景中的数据处理流程。评估结果表明，`AutoKaggle` 在典型的数据科学管道中实现了 0.85 的验证提交率和 0.82 的综合评分，验证了该框架在应对复杂数据科学任务方面的有效性和实用性。
 
 ![](img/a06bc0a79e5c49e97f95567ef624330f.png)
 
 # 产品
 
-### Zefi
+## Zefi
 
 贡献人：
 
@@ -296,7 +297,7 @@ Zefi 是一款专注于客户声音（Voice of Customer, VoC）分析的平台�
 
 ![](img/08173b73fab5eae9a14e69c887288b2e.png)
 
-### Fable
+## Fable
 
 贡献人：
 
@@ -308,39 +309,39 @@ Fable 是一款工具，帮助用户创建精美的互动演示，结合了人�
 
 # HuggingFace&Github
 
-### Jarvis
+## Jarvis
 
 贡献人：
 
 https://github.com/synth-mania/jarvis
 
-Jarvis 是一个基于命令行的个人助理，能够与 Gmail、Google 日历和 Google 任务集成，帮助用户管理数字生活。主要功能包括查看未读邮件、即将到来的事件和任务，同时支持 OpenRouter 或本地 LLM API。它基于 Python 3.12+ 开发，利用 Google API 实现集成。
+Jarvis 是一个基于命令行的个人助理，能够与 Gmail、Google 日历和 Google 任务集成，帮助用户管理数字生活。主要功能包括查看未读邮件、即将到来的事件和任务，同时支持 OpenRouter 或本地 LLM API。它基于 Python 3.12+ 开发，利用 `Google API` 实现集成。
 
-### Aquila-VL-2B-llava-qwen
+## Aquila-VL-2B-llava-qwen
 
 贡献人：
 
 https://huggingface.co/BAAI/Aquila-VL-2B-llava-qwen
 
-Aquila-VL-2B-llava-qwen 是一种多模态人工智能模型，主要用于处理视觉和语言任务。它结合了视觉理解和自然语言处理能力，可以用于图像描述、视觉问答等应用。该模型通常基于先进的深度学习架构，能够在多个领域提供高效的性能，适用于需要同时理解图像和文本的场景。
+`Aquila-VL-2B-llava-qwen` 是一种多模态人工智能模型，主要用于处理视觉和语言任务。它结合了视觉理解和自然语言处理能力，可以用于图像描述、视觉问答等应用。该模型通常基于先进的深度学习架构，能够在多个领域提供高效的性能，适用于需要同时理解图像和文本的场景。
 
 # 投融资
 
-### Decart获2100万美元融资，推出可实时生成Minecraft体验的AI模型
+## Decart获2100万美元融资，推出可实时生成Minecraft体验的AI模型
 
 贡献人：
 
 https://techcrunch.com/2024/10/31/decarts-ai-simulates-a-real-time-playable-version-of-minecraft/
 
-以色列AI公司Decart近日推出了一款名为“Oasis”的AI模型，能实时生成类似Minecraft的开放世界游戏体验。该公司宣布获得了来自红杉资本和投资人Oren Zeev的2100万美元融资，用于支持这项技术的发展。Oasis通过实时处理键盘和鼠标输入来生成游戏画面，模拟物理规则和图形渲染，属于一种新兴的“世界模型”生成式AI。
+以色列AI公司Decart近日推出了一款名为“Oasis”的AI模型，能实时生成类似Minecraft的开放世界游戏体验。该公司宣布获得了来自红杉资本和投资人Oren Zeev的2100万美元融资，用于支持这项技术的发展。`Oasis`通过实时处理键盘和鼠标输入来生成游戏画面，模拟物理规则和图形渲染，属于一种新兴的“世界模型”生成式AI。
 
-Oasis模型能够以较高的帧率生成游戏场景，目前的演示版本运行在Nvidia H100 GPU上，而未来版本将优化为兼容Etched的AI加速芯片，甚至有望实现4K游戏画面生成。Decart认为，这类模型未来或能通过用户偏好实时生成内容，为互动娱乐平台带来全新的可能性。
+`Oasis`模型能够以较高的帧率生成游戏场景，目前的演示版本运行在`Nvidia H100 GPU`上，而未来版本将优化为兼容`Etched`的AI加速芯片，甚至有望实现4K游戏画面生成。Decart认为，这类模型未来或能通过用户偏好实时生成内容，为互动娱乐平台带来全新的可能性。
 
 公司官网：https://www.decart.ai/articles/oasis-interactive-ai-video-game-model
 
 ![](img/8c3e0d18e2935f266c4dd7dff20a8139.png)
 
-### Noma的AI安全新工具获2500万美元融资
+## Noma的AI安全新工具获2500万美元融资
 
 https://techcrunch.com/2024/10/31/noma-is-building-tools-to-spot-security-issues-with-ai-apps/
 
@@ -354,17 +355,17 @@ Noma成立于2023年，目前已成功完成A轮融资，获得2500万美元的�
 
 ![](img/774b9ed81f11f8bd0ea2a732fa1ad18a.png)
 
-### **Buddy.ai：通过AI和游戏帮助**儿童学习英语，获1100万美元种子轮融资
+## Buddy.ai：通过AI和游戏帮助儿童学习英语，获1100万美元种子轮融资
 
 https://techcrunch.com/2024/10/31/buddy-ai-is-using-ai-and-gaming-to-help-children-learn-english-as-a-second-language/
 
-Buddy.ai是一款专为儿童设计的AI语言学习应用，通过动画化的AI角色作为虚拟英语教师，帮助儿童在游戏化互动中学习英语。该应用现已拥有约5500万次下载，每年为超过2200万名学生提供服务。
+`Buddy.ai`是一款专为儿童设计的AI语言学习应用，通过动画化的AI角色作为虚拟英语教师，帮助儿童在游戏化互动中学习英语。该应用现已拥有约5500万次下载，每年为超过2200万名学生提供服务。
 
-Buddy.ai创始人Ivan Crewkov在移居美国后，受到自己孩子学英语的启发，创立了该公司。尽管AI语音技术发展迅速，Buddy.ai的推出经历了重重挑战，包括需遵守《儿童在线隐私保护法》（COPPA）等法规，且AI需能理解不同语言环境下的儿童语音和方言。
+`Buddy.ai`创始人Ivan Crewkov在移居美国后，受到自己孩子学英语的启发，创立了该公司。尽管AI语音技术发展迅速，`Buddy.ai`的推出经历了重重挑战，包括需遵守`COPPA`等法规，且AI需能理解不同语言环境下的儿童语音和方言。
 
-Buddy.ai刚刚完成了1100万美元的种子轮融资，由BITKRAFT Ventures领投，One Way Ventures、J Ventures和Point72 Ventures等参与。Crewkov表示，本轮融资过程历时艰难，与186位投资人交流才得以完成。BITKRAFT作为早期接触的投资方，以其游戏领域的专业背景成为Buddy.ai的理想合作伙伴。
+`Buddy.ai`刚刚完成了1100万美元的种子轮融资，由BITKRAFT Ventures领投，One Way Ventures、J Ventures和Point72 Ventures等参与。Crewkov表示，本轮融资过程历时艰难，与186位投资人交流才得以完成。BITKRAFT作为早期接触的投资方，以其游戏领域的专业背景成为`Buddy.ai`的理想合作伙伴。
 
-这笔资金将主要用于产品开发，尤其是聘请游戏设计和用户体验设计专家，以提升技术水平和用户体验。同时，Buddy.ai计划进一步增加多语言支持，并加强与学校的合作，拓展其全球教育市场。
+这笔资金将主要用于产品开发，尤其是聘请游戏设计和用户体验设计专家，以提升技术水平和用户体验。同时，`Buddy.ai`计划进一步增加多语言支持，并加强与学校的合作，拓展其全球教育市场。
 
 公司官网：https://buddy.ai/en/
 
@@ -372,163 +373,153 @@ Buddy.ai刚刚完成了1100万美元的种子轮融资，由BITKRAFT Ventures领
 
 # 学习
 
-### Nvidia CUTE 实战1：ABQ-LLM GEMM Kernel
+## Nvidia CUTE 实战1：ABQ-LLM GEMM Kernel
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/3904815819
 
-Cute编程库在Nvidia的Cutlass3.0中引入，专为高效处理复杂的坐标计算和多层级的计算数据拆分提供高级抽象。通过Cute，开发者可以轻松进行Epilog定制和复杂的layout操作（如swizzling），避免处理底层坐标细节。
+`Cute`编程库在Nvidia的`Cutlass3.0`中引入，专为高效处理复杂的坐标计算和多层级的计算数据拆分提供高级抽象。通过`Cute`，开发者可以轻松进行`Epilog`定制和复杂的`layout`操作（如`swizzling`），避免处理底层坐标细节。
 
-ABQ-LLM是字节跳动的ByteNN团队开发的任意bit量化库，用于LLM的高精度量化推理。ABQ-LLM基于1bit指令，将任意bit的计算转换为1bit的矩阵乘法（GEMM），并通过Epilog阶段的bit reduction实现高效的矩阵乘积。其实现使用Nvidia提供的WMMA和BMMA PTX封装，BMMA通过PTX汇编直接操作线程，具备更高的操作粒度。Cute提供了ABQ-LLM自定义GEMM的重实现，使其更具灵活性。
+`ABQ-LLM`是字节跳动的`ByteNN`团队开发的任意bit量化库，用于`LLM`的高精度量化推理。`ABQ-LLM`基于`1bit`指令，将任意bit的计算转换为`1bit`的矩阵乘法（`GEMM`），并通过`Epilog`阶段的`bit reduction`实现高效的矩阵乘积。其实现使用Nvidia提供的`WMMA`和`BMMA` `PTX`封装，`BMMA`通过`PTX`汇编直接操作线程，具备更高的操作粒度。`Cute`提供了`ABQ-LLM`自定义`GEMM`的重实现，使其更具灵活性。
 
-Cute库通过Swizzle和tiled mma封装解决了smem（共享内存）访问的bank conflict问题，实现了更高效的G2S（全局内存到共享内存）数据拷贝。Cute提供的tiled mma用于高效的warp级别计算分配，消除了warp-tiling的中间层级。
+`Cute`库通过`Swizzle`和`tiled mma`封装解决了`smem`（共享内存）访问的`bank conflict`问题，实现了更高效的`G2S`（全局内存到共享内存）数据拷贝。`Cute`提供的`tiled mma`用于高效的`warp`级别计算分配，消除了`warp-tiling`的中间层级。
 
-在性能对比中，Cute在rtx4090上获得了略高的TOPS和带宽峰值，但部分配置下在BMMA版本上仍表现更佳。Cute具备高灵活性，但文档和示例仍然有限，且有若干bug，如cp_async_zfill的pred bug等。
+在性能对比中，`Cute`在`rtx4090`上获得了略高的`TOPS`和带宽峰值，但部分配置下在`BMMA`版本上仍表现更佳。`Cute`具备高灵活性，但文档和示例仍然有限，且有若干bug，如`cp_async_zfill`的`pred bug`等。
 
 ![](img/6266d19e5b6914e80fae8fa2660a414d.png)
 
-### llvm后端实现指南
+## llvm后端实现指南
 
 https://zhuanlan.zhihu.com/p/679412102
 
-1.  **创建目录结构**：在 llvm/lib/Target/ 下创建 MyArch 文件夹。
+1.  **创建目录结构**：在 `llvm/lib/Target/` 下创建 `MyArch` 文件夹。
 
-1.  **编写目标描述文件**：使用 TableGen 语言创建 MyArch.td，定义指令、寄存器等架构特性。
+1.  **编写目标描述文件**：使用 `TableGen` 语言创建 `MyArch.td`，定义指令、寄存器等架构特性。
 
-1.  **生成 TableGen 文件**：运行 tblgen MyArch.td 生成相关的 Gen 文件，如 MyArchGenRegisterInfo.inc。
+1.  **生成 TableGen 文件**：运行 `tblgen MyArch.td` 生成相关的文件，如 `MyArchGenRegisterInfo.inc`。
 
 1.  **实现目标相关C++代码**：
 
-+   MyArchInstrInfo.cpp、MyArchRegisterInfo.cpp 等文件内定义指令和寄存器信息。
++   `MyArchInstrInfo.cpp`、`MyArchRegisterInfo.cpp` 等文件内定义指令和寄存器信息。
 
-+   MyArchTargetMachine.h/cpp 实现目标管理类 MyArchTargetMachine，重写 createPassConfig 等函数以配置优化Pass。
++   `MyArchTargetMachine.h/cpp` 实现目标管理类 `MyArchTargetMachine`，重写 `createPassConfig` 等函数以配置优化`Pass`。
 
-1.  **实现 TargetLowering **和 TargetRegisterInfo：
+1.  **实现 `TargetLowering` 和 `TargetRegisterInfo`**：
 
-+   TargetLowering 类实现数据类型、操作等定义，TargetRegisterInfo 描述寄存器信息。
++   `TargetLowering` 类实现数据类型、操作等定义，`TargetRegisterInfo` 描述寄存器信息。
 
-1.  **配置 CMake**：在 llvm/lib/Target 中的 CMakeLists.txt 添加新后端。
+1.  **配置 `CMake`**：在 `llvm/lib/Target` 中的 `CMakeLists.txt` 添加新后端。
 
 1.  **实现后端核心代码**：
 
-+   在 MyArch.cpp 注册 MyArchTargetMachine。
++   在 `MyArch.cpp` 注册 `MyArchTargetMachine`。
 
-+   在 CMakeLists.txt 配置 tablegen 生成的文件，引用实现的 .cpp 文件。
++   在 `CMakeLists.txt` 配置 `tablegen` 生成的文件，引用实现的 `.cpp` 文件。
 
-1.  **重编译和测试**：编译LLVM并编写测试用例验证新后端的功能。
+1.  **重编译和测试**：编译`LLVM`并编写测试用例验证新后端的功能。
 
-1.  **文档补充**：在 LLVM 文档目录中添加说明，包括指令集和架构特性。
+1.  **文档补充**：在 `LLVM` 文档目录中添加说明，包括指令集和架构特性。
 
-**技术要点**：通过 TableGen 定义并生成目标代码、实现 TargetMachine、TargetLowering 等核心类，并合理配置寄存器和指令信息是实现新后端的关键。同时，为支持优化和代码生成，需确保 TargetPassConfig 配置合理并优化内存布局和寄存器分配。
+**技术要点**：通过 `TableGen` 定义并生成目标代码、实现 `TargetMachine`、`TargetLowering` 等核心类，并合理配置寄存器和指令信息是实现新后端的关键。同时，为支持优化和代码生成，需确保 `TargetPassConfig` 配置合理并优化内存布局和寄存器分配。
 
-### Ray Data 让你的 ML 训练数据加载速度
+## Ray Data 让你的 ML 训练数据加载速度
 
 https://mp.weixin.qq.com/s/x-wezQN-8G0jY0Mo19MbiA
 
-数据加载和预处理常成为机器学习(ML)训练中的性能瓶颈。Ray Data可实现快速、灵活、可扩展的数据加载，特别适用于异构计算环境中的分布式数据预处理。它通过流数据集抽象提高GPU利用率，同时优化内存使用。
+数据加载和预处理常成为机器学习`ML`训练中的性能瓶颈。`Ray Data`可实现快速、灵活、可扩展的数据加载，特别适用于异构计算环境中的分布式数据预处理。它通过流数据集抽象提高`GPU`利用率，同时优化内存使用。
 
-Ray Data提供的data loader能从本地磁盘和云端进行流式数据加载，适应不同的数据格式（如Parquet、图像、视频）和数据分布（分布式缓存、多节点等），与常见的开源loader（如PyTorch DataLoader、tf.data）相比具有优势，特别在分布式环境下支持多节点动态划分数据集，从而实现高效的扩展性。
+`Ray Data`提供的`data loader`能从本地磁盘和云端进行流式数据加载，适应不同的数据格式（如`Parquet`、图像、视频）和数据分布（分布式缓存、多节点等），与常见的开源`loader`（如`PyTorch DataLoader`、`tf.data`）相比具有优势，特别在分布式环境下支持多节点动态划分数据集，从而实现高效的扩展性。
 
-在MLPerf图像分类基准测试中，Ray Data展示了其优越的吞吐量，尤其在云数据集的流式加载上表现出色，能够在多节点集群上通过自动数据分区和并行加载提高GPU利用率。此外，Ray Data可以在异构集群上运行，利用CPU节点进行数据预处理，减轻GPU节点的负担，进一步优化集群资源利用率。
+在`MLPerf`图像分类基准测试中，`Ray Data`展示了其优越的吞吐量，尤其在云数据集的流式加载上表现出色，能够在多节点集群上通过自动数据分区和并行加载提高`GPU`利用率。此外，`Ray Data`可以在异构集群上运行，利用`CPU`节点进行数据预处理，减轻`GPU`节点的负担，进一步优化集群资源利用率。
 
-Ray Data还支持数据集缓存，这对于避免重复的I/O和预处理开销非常有效。在异构集群中，Ray Data能够智能地在节点间缓存数据，确保GPU trainer可以高效读取处理后的数据。同时，Ray Data与Ray Core的结合，支持出错恢复、分布式调度和自动负载均衡，显著减少了开发者对集群环境的手动调整需求。
+`Ray Data`还支持数据集缓存，这对于避免重复的I/O和预处理开销非常有效。在异构集群中，`Ray Data`能够智能地在节点间缓存数据，确保`GPU trainer`可以高效读取处理后的数据。同时，`Ray Data`与`Ray Core`的结合，支持出错恢复、分布式调度和自动负载均衡，显著减少了开发者对集群环境的手动调整需求。
 
-单节点性能对比显示，尽管Ray Data加载图像时较其他loader稍慢，但凭借其可扩展性和灵活的数据处理能力，在Pinterest等企业的实际应用中已展现出性能优势。例如，Ray Data在复杂预处理任务中相对PyTorch DataLoader快45%，并且支持异构集群的扩展，节约了约25%的训练成本。Ray Data后续将进一步优化单线程性能和恢复机制，助力大规模ML任务的高效数据加载与预处理。
+单节点性能对比显示，尽管`Ray Data`加载图像时较其他`loader`稍慢，但凭借其可扩展性和灵活的数据处理能力，在实际应用中已展现出性能优势。例如，`Ray Data`在复杂预处理任务中相对`PyTorch DataLoader`快45%，并且支持异构集群的扩展，节约了约25%的训练成本。`Ray Data`后续将进一步优化单线程性能和恢复机制，助力大规模`ML`任务的高效数据加载与预处理。
 
 ![](img/ec96bfc49971da6370bb1524e66aac12.png)
 
-### GPU 性能迷思
+## GPU 性能迷思
 
 https://zhuanlan.zhihu.com/p/2759747438
 
-**隐面剔除**：各GPU架构的隐面剔除技术有所不同。PowerVR基于可见性缓冲剔除像素级遮挡的片段，称为HSR；Adreno使用LRZ缓冲在Binning阶段剔除不可见三角形，减少光栅化开销；Mali则通过FPK剔除过时片段，但不会阻塞管线。
+**隐面剔除**：各`GPU`架构的隐面剔除技术有所不同。`PowerVR`基于可见性缓冲剔除像素级遮挡的片段，称为`HSR`；`Adreno`使用`LRZ`缓冲在`Binning`阶段剔除不可见三角形，减少光栅化开销；`Mali`则通过`FPK`剔除过时片段，但不会阻塞管线。
 
-**Shader分支优化**：GPU并行执行时的Divergency会导致性能降低。Adreno对Divergency较敏感，其wave内线程数多，因此建议尽量避免Shader中的复杂分支，尤其是运行时变量决定的分支。
+**Shader分支优化**：`GPU`并行执行时的`Divergency`会导致性能降低。`Adreno`对`Divergency`较敏感，其`wave`内线程数多，因此建议尽量避免`Shader`中的复杂分支，尤其是运行时变量决定的分支。
 
-**Overdraw问题**：TBDR架构在Binning阶段利用深度信息减少Overdraw，但Quad Overdraw仍会导致Adreno等架构的Divergency。使用合适的LOD，确保每个三角形至少覆盖10-20个片段以减少Quad Overdraw。
+**Overdraw问题**：`TBDR`架构在`Binning`阶段利用深度信息减少`Overdraw`，但`Quad Overdraw`仍会导致`Adreno`等架构的`Divergency`。使用合适的`LOD`，确保每个三角形至少覆盖10-20个片段以减少`Quad Overdraw`。
 
-**带宽限制**：移动端GPU受限于内存带宽，其增加不仅带来功耗问题，也难以匹配算力增长。因此减少VS Output写入外部存储和在渲染阶段避免深度回写可显著节省带宽。
+**带宽限制**：移动端`GPU`受限于内存带宽，其增加不仅带来功耗问题，也难以匹配算力增长。因此减少`VS Output`写入外部存储和在渲染阶段避免深度回写可显著节省带宽。
 
-**PrePass必要性**：传统桌面端的PrePass在移动端已被Binning阶段的LRZ处理取代，除非特定大面积Mask物体重叠场景，通常无需额外的PrePass。
+**PrePass必要性**：传统桌面端的`PrePass`在移动端已被`Binning`阶段的`LRZ`处理取代，除非特定大面积`Mask`物体重叠场景，通常无需额外的`PrePass`。
 
-Vertex Shader (VS)优化：VS计算复杂度和VS Output量影响整体管线效率。Adreno等架构需控制VS计算量，避免复杂采样和数据读取。对于Mali第五代架构，DVS技术可降低带宽消耗，提升VS效率。
+`Vertex Shader (VS)`优化：`VS`计算复杂度和`VS Output`量影响整体管线效率。`Adreno`等架构需控制`VS`计算量，避免复杂采样和数据读取。对于`Mali`第五代架构，`DVS`技术可降低带宽消耗，提升`VS`效率。
 
 ![](img/54d771757dfd62dac3f440caf0ff65d9.png)
 
-### 强化大模型的事实性表达
+## 强化大模型的事实性表达
 
 https://zhuanlan.zhihu.com/p/3164307829
 
-**R-Tuning**：为应对知识外幻觉，R-Tuning通过指令微调阶段采样判断模型已知与未知的知识范围。对于未知知识，模型选择“拒答”（如“I am unsure”），从而避免生成虚构内容。实验表明，在域内和域外任务中，R-Tuning显著提高了准确率和泛化能力。
+**`R-Tuning`**：为应对知识外幻觉，`R-Tuning`通过指令微调阶段采样判断模型已知与未知的知识范围。对于未知知识，模型选择“拒答”（如`I am unsure`），从而避免生成虚构内容。实验表明，在域内和域外任务中，`R-Tuning`显著提高了准确率和泛化能力。
 
-**CONQORD（Confidence-Quali**ty-ORDer-preserving）：解决模型置信度与生成质量不对齐的问题。CONQORD通过强化学习调整模型的置信度，使低质量回答对应低置信度，从而避免高置信度错误回复。该方法在多个基准上有效降低了校准误差（ECE），实现了置信度与质量的双重对齐。
+**`CONQORD（Confidence-Quality-ORDer-preserving）`**：解决模型置信度与生成质量不对齐的问题。`CONQORD`通过强化学习调整模型的置信度，使低质量回答对应低置信度，从而避免高置信度错误回复。该方法在多个基准上有效降低了校准误差（`ECE`），实现了置信度与质量的双重对齐。
 
-**Reinforcement Learning fro**m Knowledge Feedback：此方法利用知识反馈强化模型的拒答能力。在训练集中，模型对未知问题采用拒答策略，从而减少幻觉。通过准确率、精度和真实性等指标验证了其对幻觉的有效抑制。
+**`Reinforcement Learning from Knowledge Feedback`**：此方法利用知识反馈强化模型的拒答能力。在训练集中，模型对未知问题采用拒答策略，从而减少幻觉。通过准确率、精度和真实性等指标验证了其对幻觉的有效抑制。
 
-**SaySelf**：基于自反推理的细粒度置信度表达。SaySelf通过生成自反性理由（Self-Reflective Rationales）来细化置信度评价，结合推理步骤使模型在回答时能清晰表达置信度。这一训练框架显著提高了模型的校准效果和可靠性。
+**`SaySelf`**：基于自反推理的细粒度置信度表达。`SaySelf`通过生成自反性理由（`Self-Reflective Rationales`）来细化置信度评价，结合推理步骤使模型在回答时能清晰表达置信度。这一训练框架显著提高了模型的校准效果和可靠性。
 
-Inference-Time Intervention (ITI)：ITI通过改变推理中的激活状态来提升事实性表达。利用知识探针探测中间层激活值并引导生成过程，使输出朝可信方向调整，显著提高了模型在开放式生成任务中的事实性。
+`Inference-Time Intervention (ITI)`：`ITI`通过改变推理中的激活状态来提升事实性表达。利用知识探针探测中间层激活值并引导生成过程，使输出朝可信方向调整，显著提高了模型在开放式生成任务中的事实性。
+
+
 
 ![](img/665a2a95f594a303f9b95c68b2651a1b.png)
 
-### FlashAttention算法之美：极简推导版
+## FlashAttention算法之美：极简推导版
 
 https://zhuanlan.zhihu.com/p/4264163756
 
 FlashAttention（FA）作为优化大模型训练和推理的关键组件，其算法在并行计算设计方面具有极高的教科书价值。FA通过简单的数学变换实现计算流程的等价重组，使并行执行与内存效率最大化。以下是FA的精简算法流程与LSE版本流程：
 
-一、前置知识
+### 一、前置知识
 
-1.  矩阵乘法分块：FA通过分块计算 O = QK^TV 避免直接计算 QK^T。
+1. 矩阵乘法分块：FA通过分块计算 `O = QK^TV` 避免直接计算 `QK^T`。
+2. Softmax简化：`softmax(x) = exp(x - m) / sum(exp(x - m))`。
+3. 指数和对数运算性质：利用 `exp(a + b) = exp(a) × exp(b)`，简化Softmax分子和分母的分块计算。
+4. 矩阵乘法性质：分块矩阵乘法可以逐步分解为 `A1V1 + A2V2`。
 
-1.  Softmax简化：softmax(x) = exp(x - m) / sum(exp(x - m))。
+### 二、FA基本流程
 
-1.  指数和对数运算性质：利用 exp(a + b) = exp(a) × exp(b)，简化Softmax分子和分母的分块计算。
+1. 计算 `Q × K^T`：独立计算 `X1 = Q × K1^T`，`X2 = Q × K2^T`。
+2. 寻找最大值：找到分块最大值，计算 `m1 = max(X1)`，`m2 = max(m1, max(X2))`。
+3. Softmax分子部分：引入矫正因子 `alpha = exp(m1 - m2)` 来修正Softmax分子，使 `a1' = a1 × alpha`。
+4. Softmax分母部分：以 `alpha` 调整分母，使 `d1' = d1 × alpha`，最终计算得到Softmax的完整表达。
+5. 结果组装：以分块因式分解方式合并计算结果，得到 `O = O1 × d1 / d12 + O2 × d2 / d12`。
 
-1.  矩阵乘法性质：分块矩阵乘法可以逐步分解为 A1V1 + A2V2。
+### 三、FlashAttention LSE版本流程
 
-二、FA基本流程
+为了数值稳定性，FA还引入了 Log-Sum-Exp（LSE）技巧。
 
-1.  计算 Q × K^T：独立计算 X1 = Q × K1^T，X2 = Q × K2^T。
-
-1.  寻找最大值：找到分块最大值，计算 m1 = max(X1)，m2 = max(m1, max(X2))。
-
-1.  Softmax分子部分：引入矫正因子 alpha = exp(m1 - m2) 来修正Softmax分子，使 a1' = a1 × alpha。
-
-1.  Softmax分母部分：以 alpha 调整分母，使 d1' = d1 × alpha，最终计算得到Softmax的完整表达。
-
-1.  结果组装：以分块因式分解方式合并计算结果，得到 O = O1 × d1 / d12 + O2 × d2 / d12。
-
-三、FlashAttention LSE版本流程 为了数值稳定性，FA还引入了 Log-Sum-Exp（LSE）技巧。
-
-1.  计算 Q × K^T：同样独立计算分块乘积 X1 和 X2。
-
-1.  最大值和LSE计算：计算LSE的最大值并利用 alpha 矫正分块，得到 lse1，lse2。
-
-1.  Softmax分子和分母更新：使用 alpha 更新分子与分母，并引入LSE确保数值稳定。
-
-1.  组装与对称更新：通过等价变换简化结果表达，最终以 O1 × exp(lse1 - lse12) + O2 × exp(lse2 - lse12) 计算得出最终输出。
+1. 计算 `Q × K^T`：同样独立计算分块乘积 `X1` 和 `X2`。
+2. 最大值和LSE计算：计算LSE的最大值并利用 `alpha` 矫正分块，得到 `lse1`，`lse2`。
+3. Softmax分子和分母更新：使用 `alpha` 更新分子与分母，并引入LSE确保数值稳定。
+4. 组装与对称更新：通过等价变换简化结果表达，最终以 `O1 × exp(lse1 - lse12) + O2 × exp(lse2 - lse12)` 计算得出最终输出。
 
 ![](img/788fdcfd5fb8a9e3985f471050b17a8c.png)
 
-### TD Learning （时序差分学习）中的值函数收敛性
+## TD Learning （时序差分学习）中的值函数收敛性
 
 https://zhuanlan.zhihu.com/p/2883455468
 
 在强化学习（RL）中，时序差分（TD）学习方法以其高效性而受到重视，但结合函数逼近（如神经网络）与off-policy学习时可能导致发散问题，即“致命三角”。为解决这一问题，研究者提出目标网络（target network）以提升算法的稳定性。本文首先介绍TD学习和“致命三角”，然后展示以DQN为代表的深度强化学习算法如何通过目标网络应对这一挑战，并介绍双时间尺度框架的设计和其收敛性。此外，本文还讨论了TD学习中关于值函数收敛性的最新研究成果。
 
-**关键点概述：**
+### 关键点概述：
 
-1.  **致命三角**：函数逼近、off-policy学习和引导更新的结合导致RL算法易于发散。TD学习通过状态估计的自我更新实现值函数更新，但在大型问题中依赖函数逼近，当与off-policy学习相结合时，这种泛化会影响不相关状态，从而导致不稳定。
-
-1.  **目标网络**：目标网络有效打破致命三角，通过与主网络同步降低不稳定性。DQN引入目标网络，使主网络以双时间尺度更新，从而确保了训练收敛性。Polyak平均更新策略进一步稳定了收敛性。
-
-1.  **TD学习收敛性研究**：近年来，TD学习收敛性研究从优化视角、离线RL中的Q值发散以及交叉熵训练方法对值函数的改进等方面深入探讨。TD学习作为优化问题的迭代解，目标函数动态变化使得常规优化策略存在问题，交叉熵损失在此情境下显示出更高稳定性，尤其在面对高容量网络（如Transformers）时。
-
-1.  **实验结果**：实验表明，使用目标网络的双Q学习和多步TD方法能够显著减小Q值估计偏差，缓解发散；而对优化器重置以及引入LayerNorm等正则化手段也对训练稳定性有帮助。
-
-1.  **未来方向**：研究继续探索不依赖目标网络的鲁棒off-policy学习算法，以及面向非线性逼近的TD学习优化方法。随着RL在离线场景的应用增加，Q值发散问题需要进一步解决以提高实际应用表现。
+1. 致命三角：函数逼近、off-policy学习和引导更新的结合导致RL算法易于发散。TD学习通过状态估计的自我更新实现值函数更新，但在大型问题中依赖函数逼近，当与off-policy学习相结合时，这种泛化会影响不相关状态，从而导致不稳定。
+2. 目标网络：目标网络有效打破致命三角，通过与主网络同步降低不稳定性。DQN引入目标网络，使主网络以双时间尺度更新，从而确保了训练收敛性。Polyak平均更新策略进一步稳定了收敛性。
+3. TD学习收敛性研究：近年来，TD学习收敛性研究从优化视角、离线RL中的Q值发散以及交叉熵训练方法对值函数的改进等方面深入探讨。TD学习作为优化问题的迭代解，目标函数动态变化使得常规优化策略存在问题，交叉熵损失在此情境下显示出更高稳定性，尤其在面对高容量网络（如Transformers）时。
+4. 实验结果：实验表明，使用目标网络的双Q学习和多步TD方法能够显著减小Q值估计偏差，缓解发散；而对优化器重置以及引入 `LayerNorm` 等正则化手段也对训练稳定性有帮助。
+5. 未来方向：研究继续探索不依赖目标网络的鲁棒off-policy学习算法，以及面向非线性逼近的TD学习优化方法。随着RL在离线场景的应用增加，Q值发散问题需要进一步解决以提高实际应用表现。
 
 ![](img/a16d722691b9dac2907d66fdb551fa21.png)
 
@@ -538,31 +529,31 @@ https://zhuanlan.zhihu.com/p/2883455468
 
 ![](img/cb04ce93a0f775cb8781b23c537cb87f.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+### 行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
-##### 行研-GenAI研究岗位-前沿学术探索
+### 行研-GenAI研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+### 行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/dafa5bf4f90cb47997af6a6be4caa895.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
@@ -570,9 +561,7 @@ https://zhuanlan.zhihu.com/p/2883455468
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
-（欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
+### （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
 
@@ -582,7 +571,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

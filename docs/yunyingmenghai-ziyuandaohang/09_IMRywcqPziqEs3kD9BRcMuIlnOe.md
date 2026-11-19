@@ -1,13 +1,11 @@
+
 # 按键精灵-脚本
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/Nfrvd3684obUO7x17ZQcx2KBn6c](https://yunyingmenghai.feishu.cn/docx/Nfrvd3684obUO7x17ZQcx2KBn6c)
 
-快手批量删除视频：
-
-https://cp.kuaishou.com/article/manage/video
+快手批量删除视频：`https://cp.kuaishou.com/article/manage/video`
 
 ```
-
 For i=1 To 10
     //这里的脚本可以循环10次
 IfColor 608, 832, &quot;FFFFFF&quot;, 1 Then

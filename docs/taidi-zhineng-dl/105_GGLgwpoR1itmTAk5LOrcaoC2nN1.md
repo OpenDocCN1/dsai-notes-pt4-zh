@@ -1,8 +1,9 @@
+
 # [Lec20] GPU Architectures
 
 > 来源：[https://learning.feishu.cn/docx/Ar4bdNuERoHxyjxHfAvcPx2mnIh](https://learning.feishu.cn/docx/Ar4bdNuERoHxyjxHfAvcPx2mnIh)
 
-# Recalls
+## Recalls
 
 ![](img/f8ac1f932a96ac504e95f28ff0d1ddaa.png)
 
@@ -20,7 +21,7 @@
 
 ![](img/8dd254d2b5561ab7bab85ec0047d5db9.png)
 
-# 测试题
+## 测试题
 
 ![](img/54787ec677729ad5d68c49dd52846d22.png)
 

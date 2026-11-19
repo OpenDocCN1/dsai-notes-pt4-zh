@@ -1,6 +1,7 @@
+
 # 看见AI日报（20230719）
 
-> 来源：[https://jlqyxzzvbk.feishu.cn/docx/WJfFdAc1Vo2gGbxaIkccMr7DnST](https://jlqyxzzvbk.feishu.cn/docx/WJfFdAc1Vo2gGbxaIkccMr7DnST)
+> 来源：https://jlqyxzzvbk.feishu.cn/docx/WJfFdAc1Vo2gGbxaIkccMr7DnST
 
 > 快报时间：2023/7月/19日 周三 16:00
 
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## **又一家大公司宣布加入****AI****之列！麦肯锡与AI****初创公司****Cohere“牵手”**
+### 又一家大公司宣布加入 AI 之列！麦肯锡与 AI 初创公司 Cohere“牵手”
 
 ![](img/ad252888b84bdea17d45f587277bd7a7.png)
 
@@ -24,17 +25,17 @@
 
 更多信息请访问：https://finance.sina.com.cn/jjxw/2023-07-19/doc-imzceyax4488188.shtml
 
-## Office 365 AI助手定价了，联手Meta推AI新服务，微软股价创新高
+### Office 365 AI助手定价了，联手Meta推AI新服务，微软股价创新高
 
 ![](img/3cc2db474857bc12dd829e8e0ab36773.png)
 
-微软（MSFT）公布了企业AI软件工具的价目表，**宣**布Office 365 Copilot的定价为每用户30美元/月，对一些用户来说，如果使用Copilot则意味着费用翻倍甚至增加两倍。
+微软（MSFT）公布了企业AI软件工具的价目表，宣布Office 365 Copilot的定价为每用户30美元/月，对一些用户来说，如果使用Copilot则意味着费用翻倍甚至增加两倍。
 
-微软还推出了Bing Chat Enterpris**e，这****是一款更****具安全性的**AI聊天机器人。微软和Meta共同表示，名为Llama 2的Meta AI模型将免费提供给在微软Azure云计算平台上构建软件的开发人员。
+微软还推出了Bing Chat Enterprise，这是一款更具安全性的AI聊天机器人。微软和Meta共同表示，名为Llama 2的Meta AI模型将免费提供给在微软Azure云计算平台上构建软件的开发人员。
 
 更多信息请访问：https://www.nbd.com.cn/articles/2023-07-19/2922658.html
 
-## 马斯克：xAI的目标是创造对人类友好的超级AI 以避免毁灭人类
+### 马斯克：xAI的目标是创造对人类友好的超级AI 以避免毁灭人类
 
 ![](img/87866736792da8ec23732d1b3d62477e.png)
 
@@ -48,9 +49,9 @@ AGI通常被定义为一种机器，它可以执行人类可以执行的任何�
 
 更多信息请访问：https://baijiahao.baidu.com/s?id=1771716186675463797&wfr=spider&for=pc
 
-# AI软件精选
+## AI软件精选
 
-## NVIDIA Canvas（AI3D场景）
+### NVIDIA Canvas（AI3D场景）
 
 NVIDIA Canvas是一款使用AI将简单的笔触变成逼真的风景图像的工具。
 
@@ -62,7 +63,7 @@ NVIDIA Canvas适用于Windows，需要NVIDIA GeForce RTX、NVIDIA RTX或TITAN RT
 
 链接：https://www.nvidia.cn/studio/canvas/
 
-## **Clipdrop（****AI****图片处理）**
+### Clipdrop（AI图片处理）
 
 ClipDrop，P图、抠图、移除背景、图片擦除、重新照亮图片、放大图片、文本删除、绘制图片，stable diffusion画图一个工具全搞定。无需安装，在线免费使用。
 
@@ -70,7 +71,7 @@ ClipDrop，P图、抠图、移除背景、图片擦除、重新照亮图片、�
 
 链接：https://clipdrop.co/
 
-## Notion AI**（AI写作）**
+### Notion AI（AI写作）
 
 获取AI的无限力量，就在概念内部。工作得更快。写得更好。想更大。
 
@@ -78,11 +79,11 @@ ClipDrop，P图、抠图、移除背景、图片擦除、重新照亮图片、�
 
 链接：https://www.notion.so/
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+更多AI工具请访问：http://ai.kcodez.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -90,15 +91,13 @@ GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸�
 
 ![](img/4790c28dcfee322a52c0d0a5602c0346.png)
 
-## 付费课程（ai绘画）
+### 付费课程（ai绘画）
 
 AI绘画基础课Midjourney
 
-优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         https://v.douyin.com/ixcenrM/
+优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】 https://v.douyin.com/ixcenrM/
 
 ![](img/67e30622067c2b508e16e596fdc96b04.png)
-
-#
 
 ![](img/111c9d3cd8e9129aa7ec238f10ca4764.png)
 
@@ -106,9 +105,9 @@ AI绘画基础课Midjourney
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4.会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：kanAI 九五折优惠，或者直接二维码访问
 
 ![](img/f7932e3e512122a2e070f7a97f190395.png)
 
@@ -118,7 +117,7 @@ AI绘画基础课Midjourney
 
 ![](img/bbb889bbadf0fc6de1ee8294e7644745.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+国内镜像GPT，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/55124e8eac9d1f4f2fb989811541b50a.png)
 

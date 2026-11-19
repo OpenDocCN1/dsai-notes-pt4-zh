@@ -1,10 +1,11 @@
+
 # LLM 推理优化探微 (1) ：Transformer 解码器的推理过程详解
 
 > 来源：[https://agijuejin.feishu.cn/docx/UUmsdiEMloWoY3x4JVUcaBPWn2c](https://agijuejin.feishu.cn/docx/UUmsdiEMloWoY3x4JVUcaBPWn2c)
 
 原文链接：https://mp.weixin.qq.com/s/GHjiyipB22q8dZES1Fc8XQ
 
-作者： Pierre Lienhart
+作者：Pierre Lienhart
 
 **编者按**：随着 LLM 赋能越来越多需要实时决策和响应的应用场景，以及用户体验不佳、成本过高、资源受限等问题的出现，大模型高效推理已成为一个重要的研究课题。为此，Baihai IDP 推出 Pierre Lienhart 的系列文章，从多个维度全面剖析 Transformer 大语言模型的推理过程，以期帮助读者对这个技术难点建立系统的理解，并在实践中做出正确的模型服务部署决策。
 
@@ -16,9 +17,9 @@
 
 **编译 | 岳扬**
 
-# 01 **Introduction**
+## 01 Introduction
 
-在本系列博文中，我将带领各位读者深入探讨 LLM 推**理的各方面知识以及实践中可能面临的挑战。本系列博文所说的 LLM 推理是指使用仅包含解码器**的 Transformer 模型生成词元（tokens），因为大多数挑战及其相关的补救方法都来自于该特定架构和使用场景。虽然重点在解码器模型，但我认为该系列博客中的一些较好的见解也可以用于理解和优化编码器模型的推理过程。
+在本系列博文中，我将带领各位读者深入探讨 LLM 推理的各方面知识以及实践中可能面临的挑战。本系列博文所说的 LLM 推理是指使用仅包含解码器的 Transformer 模型生成词元（tokens），因为大多数挑战及其相关的补救方法都来自于该特定架构和使用场景。虽然重点在解码器模型，但我认为该系列博客中的一些较好的见解也可以用于理解和优化编码器模型的推理过程。
 
 我假定各位读者已经对 Transformer 架构和著名的《Attention Is All You Need》论文([1])中介绍的缩放点积注意力（SDPA）机制有了基本的了解。不过，阅读本文无需深入理解注意力机制背后的原理。
 
@@ -36,7 +37,7 @@
 
 模型量化（Quantization）一直是去年最热门的优化策略之一，能够为性能带来重大提升。虽然模型量化本身就值得写一系列文章，但我将仅用一篇文章介绍，以期为读者打牢坚实的基础，明确模型量化算法在哪些方面能够有帮助，哪些方面没有帮助。
 
-**最后，我们需要介绍目前的这些 L**LM 服务框架是如何工作的。遗憾的是，要想在 LLM 推理过程获得最佳性能，仅优化模型本身是不够的。事实上，模型服务器通过有效地管理传入的请求和硬件资源，在确保较好的 end-to-end 性能方面确实发挥着关键作用。我希望最后这篇文章能为读者提供有用的见解，帮助读者更好地部署LLM。
+最后，我们需要介绍目前的这些 LLM 服务框架是如何工作的。遗憾的是，要想在 LLM 推理过程获得最佳性能，仅优化模型本身是不够的。事实上，模型服务器通过有效地管理传入的请求和硬件资源，在确保较好的 end-to-end 性能方面确实发挥着关键作用。我希望最后这篇文章能为读者提供有用的见解，帮助读者更好地部署LLM。
 
 以下是本系列博客内容计划：
 
@@ -58,7 +59,7 @@
 
 闲话少说，让我们直接开始吧！
 
-# 02 LLM 做出回答前历经的两个步骤
+## 02 LLM 做出回答前历经的两个步骤
 
 此小节将为各位读者提供一个热身的机会，我们先来回顾 Transformer 架构和使用基于 Transformer 的解码器生成文本的基础知识。对于本系列博客的理解和学习，建立一致的专业用词体系是非常重要的。我将使用粗体标出我个人喜欢的专业术语。然后我们来一起了解文本生成的两个阶段：启动阶段和生成（或解码）阶段。
 
@@ -66,7 +67,7 @@
 
 ![](img/40a74ace7e9d37069878613f6554b4c3.png)
 
-图 1 -  Transformer 解码器的模型轮廓图
+图 1 - Transformer 解码器的模型轮廓图
 
 请注意，解码器本身并不输出 tokens，而是输出 logits（数量与词汇表的大小相同）（译者注：logits 是一个数值向量，其维度等于词汇表的大小，表示每个 token 的可能性分数。）。顺便说一下，输出 logits 的最后一层通常被称为 language model head 或 LM head 。在生成文本时，通过 logits 提取 tokens 的过程是通过一种被称为搜索策略（search strategy）、生成策略（generation strategy）或解码策略（decoding strategy）的启发式方法完成的。常见的解码策略包括：
 
@@ -74,7 +75,7 @@
 
 +   抽样解码（Sampling decoding），模型的 logits 被看作是一个多项分布，采用该分布进行抽样。换句话说，就是通过抽样从词汇表（vocabulary）中选择一个token。我们从中进行抽样的分布可以首先通过简单的一些转换操作（如temperature scaling、top-k和top-p）来调整，这是最为人熟知的。
 
-+   还有更复杂的启发式方法，比如**束搜索（beam search）、对比解码（c**ontrastive decoding）([2])等。
++   还有更复杂的启发式方法，比如束搜索（beam search）、对比解码（contrastive decoding）([2])等。
 
 为了简单起见，我们将假定解码策略是模型的一部分（图2）。这种 mental model 实际上在部署、运行和提供大语言模型服务的整体解决方案中非常有用，这种将 tokens 序列作为输入并返回相应输出 token 的实体通常被称为执行引擎（execution engine）或推理引擎（inference engine）。
 
@@ -84,29 +85,29 @@
 
 那么如何生成多个 tokens 呢？使用基于 Transformer 的解码器从输入文本序列（通常称为提示语（prompt））生成文本（通常也被称为对输入文本的扩展或补充）基本上包括以下步骤：
 
-1.  将模型权重加载到 GPU
+1. 将模型权重加载到 GPU
 
-1.  在 CPU 上对提示语（prompt）进行分词（tokenizing），并将 token 张量传输到 GPU （图3）
+2. 在 CPU 上对提示语（prompt）进行分词（tokenizing），并将 token 张量传输到 GPU （图 3）
 
 ![](img/b743c2cbfc487a91a000914e2141872b.png)
 
 图 3 - 分词步骤示意图
 
-1.  将分词完成后的提示语输入神经网络，生成扩展的第一个token
+3. 将分词完成后的提示语输入神经网络，生成扩展的第一个token
 
 这一阶段通常被称为启动阶段（initiation phase）。在下一篇文章中，我们将看到它也经常被称为预填充阶段（pre-fill phase）。
 
-1.  将生成的 token 附加到输入的 token 序列中，并将其用作生成扩展文本中第二个 token 的新输入。然后，重复此过程，直到生成了停止序列（stop sequence）（例如，单个 end-of-sequence（EOS） token）或达到所配置的最大序列长度（图4））。
+4. 将生成的 token 附加到输入的 token 序列中，并将其用作生成扩展文本中第二个 token 的新输入。然后，重复此过程，直到生成了停止序列（stop sequence）（例如，单个 end-of-sequence（EOS） token）或达到所配置的最大序列长度（图 4））。
 
-**这个由多个步骤组成的阶段通常被称为生成阶段（generation phase）、解码阶段（decoding pha**se）、自回归阶段（auto-regressive phase），甚至是增量阶段（incremental phase）。
+**这个由多个步骤组成的阶段通常被称为生成阶段（generation phase）、解码阶段（decoding phase）、自回归阶段（auto-regressive phase），甚至是增量阶段（incremental phase）。**
 
-步骤3和步骤4都在下面的图中（图4）有所说明。
+步骤3和步骤4都在下面的图中（图 4）有所说明。
 
 ![](img/12606fbb819860155918227c887a974d.png)
 
-图4 - tokens 生成过程的启动和解码阶段
+图 4 - tokens 生成过程的启动和解码阶段
 
-5. 将完成的 tokens 从 GPU 获取到 CPU ，并对它们进行 detokenize（译者注：”detokenize“指的是将模型生成的 tokens 序列转换回原始文本或句子的过程。可能包括去除 tokens 之间的空格、添加标点符号、还原缩写等操作，以还原生成文本的自然语言形式。），以获取生成的文本（图5）。
+5. 将完成的 tokens 从 GPU 获取到 CPU ，并对它们进行 detokenize（译者注：”detokenize“指的是将模型生成的 tokens 序列转换回原始文本或句子的过程。可能包括去除 tokens 之间的空格、添加标点符号、还原缩写等操作，以还原生成文本的自然语言形式。），以获取生成的文本（图 5）。
 
 ![](img/2dd9fa4a172e55a8c6c9175651abaed7.png)
 
@@ -114,7 +115,7 @@
 
 注意：最近出现的旨在降低推理延迟的更先进技术，如投机抽样（speculative sampling([3]) ）或前向解码（lookahead decoding([4])），并不完全遵循上述简单算法。
 
-说到这里，你应该会感到失望、困惑或两者兼而有之。您可能会问我：那么启动阶段和解码阶段有什么区别？现在看来，这充其量只是人为刻意区分的。启动阶段的感觉确实像是 while 循环的初始化步骤，而且我们在这两个阶段所做的事情本质上是一样的：在每次迭代时，我们都对 tokens 序列进行前向传递，每次传递序列都会增加一个 token。
+说到这里，你应该会感到失望、困惑或两者兼而有之。您可能会问我：那么启动阶段和解码阶段有什么区别？现在看来，这充其量只是人为刻意区分的。启动阶段的感觉确实像是 `while` 循环的初始化步骤，而且我们在这两个阶段所做的事情本质上是一样的：在每次迭代时，我们都对 tokens 序列进行前向传递，每次传递序列都会增加一个 token。
 
 你说得没错。在这一点上，无论在硬件上如何进行计算，两个阶段之间确实没有区别，因此两个阶段在这方面都没有什么特别之处。不过，正如我们将在下一篇文章中看到的那样，这种设置涉及大量冗余计算，因此在许多情况下效率低下。缓解这种情况的一种重要方式是缓存我们不想重新计算的内容。这种优化被称为 KV 缓存，并引入了我一直在暗示的这两个阶段之间的关键差异。下一篇文章见！
 
@@ -122,7 +123,7 @@ Thanks for reading!
 
 **END**
 
-**参考资料**
+## 参考资料
 
 [1]: Attention Is All You Need (Vaswani et al., 2017) : https://arxiv.org/abs/1706.03762
 
@@ -132,7 +133,7 @@ Thanks for reading!
 
 [4]: Breaking the Sequential Dependency of LLM Inference Using Lookahead Decoding (Fu et al. 2023) : https://lmsys.org/blog/2023-11-21-lookahead-decoding/
 
-**本文经原作者授权，由Baihai I**DP编译。如需转载译文，请联系获取授权。
+**本文经原作者授权，由Baihai IDP编译。如需转载译文，请联系获取授权。**
 
 **原文链接：**
 

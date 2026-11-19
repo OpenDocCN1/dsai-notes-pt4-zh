@@ -1,3 +1,4 @@
+
 # 微学习27 | DeepSeek：绘制流程图
 
 > 来源：[https://datawhaler.feishu.cn/docx/OssId12JeoFzksxziEecF2HJnPh](https://datawhaler.feishu.cn/docx/OssId12JeoFzksxziEecF2HJnPh)
@@ -9,30 +10,28 @@
 ## 1. 准备工具
 
 +   [mermaid在线编辑器](https://mermaid-live.nodejs.cn/)
-
 +   [deepseek官方api](https://platform.deepseek.com/api_keys)
-
 +   [cherrystudio](https://cherry-ai.com/)
 
 ## 2. 具体操作流程
 
-**整个流程的图片**均使用mermaid语法进行绘制，Mermaid是一个基于JavaScript的图表绘制工具，可渲染Markdown启发的文本定义以动态创建和修改图表。允许你使用文本和代码创建图表和可视化。
+**整个流程的图片**均使用`mermaid`语法进行绘制，`Mermaid`是一个基于JavaScript的图表绘制工具，可渲染Markdown启发的文本定义以动态创建和修改图表。允许你使用文本和代码创建图表和可视化。
 
 ### 2.1 配置deepseek api
 
-注册[deepseek官方平台](https://platform.deepseek.com/api_keys)，**注册并充值****成功后，点击“AP**I keys”，点击“创建A**PI**-key”，输入描述信息之后，点击“创建”，即可完成密钥创建。
+注册[deepseek官方平台](https://platform.deepseek.com/api_keys)，注册并充值成功后，点击“`API keys`”，点击“创建`API-key`”，输入描述信息之后，点击“创建”，即可完成密钥创建。
 
 ![](img/7a30817293c34c79260b1c62c1bc033c.png)
 
-**下载安装打开ch**e**rrystudi**o，点击设置——模型服务，打**开深**度求索服务，输入API-key，点击“管理”按钮添加模型，这里添加DeepSeek Reasoner模型，即可完成配置。
+下载安装打开cherrystudio，点击设置——模型服务，打开深度求索服务，输入`API-key`，点击“管理”按钮添加模型，这里添加DeepSeek Reasoner模型，即可完成配置。
 
 ![](img/99d34ea54ae31e84e6b545c222d982a3.png)
 
-由于cherrystudio**自带流程图渲染**，因此接下来就可以通过新建对话的形式，输入文字，让deepseek直接生成流程图。
+由于cherrystudio自带流程图渲染，因此接下来就可以通过新建对话的形式，输入文字，让deepseek直接生成流程图。
 
 ### 2.2 时序图
 
-时**序图反映了事件或者行为发生的顺**序，它将交互过程分解为多个元素，并按时间顺序排列，强调了元素之间的顺序和交互关系。这里以小说《三国演义》中的人物和事件为例，输入以下提示词：
+时序图反映了事件或者行为发生的顺序，它将交互过程分解为多个元素，并按时间顺序排列，强调了元素之间的顺序和交互关系。这里以小说《三国演义》中的人物和事件为例，输入以下提示词：
 
 ```
 请你使用mermaid语法，按照时间顺序，排列《三国演义》中出现的人物以及事件，并绘制时序图。
@@ -72,7 +71,7 @@ timeline
     280年 : 晋灭东吴，三国归晋（孙皓投降）
 ```
 
-**由于目前cherryst**udio的时序图导出有bug，因此需要使用mermaid在线编辑器导出图片。
+由于目前cherrystudio的时序图导出有bug，因此需要使用mermaid在线编辑器导出图片。
 
 将以上源码粘贴到在线编辑器，即可导出图片：
 
@@ -157,7 +156,7 @@ mindmap
 
 ### 2.4 流程图
 
-流**程图反映了系统或过程的**逻辑结构，它将系统或过程分解为多个元素，并按顺序排列，强调了元素之间的顺序和关系。这里以“MCP协议交互流程”为例，输入以下提示词：
+流程图反映了系统或过程的逻辑结构，它将系统或过程分解为多个元素，并按顺序排列，强调了元素之间的顺序和关系。这里以“MCP协议交互流程”为例，输入以下提示词：
 
 ```
 MCP服务的工作原理可以简单理解为：

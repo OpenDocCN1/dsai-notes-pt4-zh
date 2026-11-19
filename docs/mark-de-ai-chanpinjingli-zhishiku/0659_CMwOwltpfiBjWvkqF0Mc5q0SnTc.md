@@ -1,3 +1,4 @@
+
 # 基于多Agent电商推荐系统项目
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Rljvdqa0Uobs5ixQdEgc22NCn1d](https://qqs7y1hozd1.feishu.cn/docx/Rljvdqa0Uobs5ixQdEgc22NCn1d)
@@ -6,28 +7,28 @@
 
 ---
 
-## **🤔 这个项目是什么？**
+## 🤔 这个项目是什么？
 
-### **用一句话解释**
+### 用一句话解释
 
-> **用 AI Agent 技**术，让电商平台的推荐 + 文案 + 库存三个系统协同工作，像一个聪明的"AI 运营团队"一起为每位用户生成个性化推荐结果。
+> 用 AI Agent 技术，让电商平台的推荐 + 文案 + 库存三个系统协同工作，像一个聪明的"AI 运营团队"一起为每位用户生成个性化推荐结果。
 
-### **它解决了什么问题？**
+### 它解决了什么问题？
 
 传统电商推荐系统存在三大痛点：
 
-### **技术关键词（面试常考）**
+### 技术关键词（面试常考）
 
 > Multi-Agent · Supervisor模式 · LangGraph · asyncio并行 · Redis Feature Store · A/B Testing · Thompson Sampling · RAG · ReAct · MiniMax LLM
 
 ---
 
-## **🏗 系统架构（看图秒懂）**
+## 🏗 系统架构（看图秒懂）
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                         用户发起推荐请求                           │
-│                    {&quot;user_id&quot;: &quot;u001&quot;, &quot;num_items&quot;: 5}           │
+│                    {"user_id": "u001", "num_items": 5}           │
 └───────────────────────────────┬─────────────────────────────────┘
                                 │
                                 ▼
@@ -117,20 +118,20 @@ Supervisor 模式                     Handoffs 模式
 ```
 # Step 1：从 Redis Feature Store 获取实时行为特征
 behavior = await feature_store.get_user_features(user_id)
-# 返回: {&quot;clicks_1h&quot;: 12, &quot;purchases_7d&quot;: 3, &quot;categories&quot;: [&quot;手机&quot;, &quot;耳机&quot;]}
+# 返回: {"clicks_1h": 12, "purchases_7d": 3, "categories": ["手机", "耳机"]}
 
 # Step 2：调用 LLM 分析，输出结构化画像
-prompt = f&quot;用户行为数据: {behavior}\n请分析用户分群和RFM得分，输出JSON&quot;
+prompt = f"用户行为数据: {behavior}\n请分析用户分群和RFM得分，输出JSON"
 profile_json = await llm.invoke(prompt)
-# 输出: {&quot;segments&quot;: [&quot;active&quot;, &quot;price_sensitive&quot;], &quot;rfm_score&quot;: {&quot;recency&quot;: 0.8}}
+# 输出: {"segments": ["active", "price_sensitive"], "rfm_score": {"recency": 0.8}}
 
 # Step 3：返回 UserProfile 对象
-return UserProfile(user_id=user_id, segments=[&quot;active&quot;], rfm_score=...)
+return UserProfile(user_id=user_id, segments=["active"], rfm_score=...)
 ```
 
 **关键技术**：
 
-+   Redis Sorted Set：ZADD user:u001:clicks {时间戳} {商品ID}，支持滑动窗口查询
++   Redis Sorted Set：`ZADD` `user:u001:clicks` {时间戳} {商品ID}，支持滑动窗口查询
 
 +   **RFM 模型**：Recency（最近购买时间）× Frequency（购买频率）× Monetary（消费金额）
 
@@ -155,7 +156,7 @@ return UserProfile(user_id=user_id, segments=[&quot;active&quot;], rfm_score=...
         │
         ▼（去重合并，候选集）
   LLM 精排
-  │ Prompt: &quot;用户是价格敏感型，偏好手机配件，以下10件商品请排序...&quot;
+  │ Prompt: "用户是价格敏感型，偏好手机配件，以下10件商品请排序..."
   │ 输出: 按相关性从高到低排列的商品 ID 列表
         │
         ▼
@@ -173,15 +174,15 @@ return UserProfile(user_id=user_id, segments=[&quot;active&quot;], rfm_score=...
 ```
 # 5套模板 × 用户分群
 TEMPLATES = {
-    &quot;new_user&quot;:        &quot;首单专属福利，{product}立减{discount}元！&quot;,
-    &quot;vip&quot;:             &quot;尊享会员特权，{product}专属价{price}，品质之选。&quot;,
-    &quot;price_sensitive&quot;: &quot;今日限时抢购！{product}历史最低价，仅剩{stock}件！&quot;,
-    &quot;active&quot;:          &quot;根据您的浏览偏好，为您精选 {product}，好评率{rating}%&quot;,
-    &quot;churn_risk&quot;:      &quot;好久不见！{product}为您专属保留，点击领取优惠券&quot;,
+    "new_user":        "首单专属福利，{product}立减{discount}元！",
+    "vip":             "尊享会员特权，{product}专属价{price}，品质之选。",
+    "price_sensitive": "今日限时抢购！{product}历史最低价，仅剩{stock}件！",
+    "active":          "根据您的浏览偏好，为您精选 {product}，好评率{rating}%",
+    "churn_risk":      "好久不见！{product}为您专属保留，点击领取优惠券",
 }
 
 # 广告法合规校验（过滤违禁词）
-BANNED_WORDS = [&quot;最好&quot;, &quot;第一&quot;, &quot;最便宜&quot;, &quot;绝对&quot;, &quot;100%&quot;]
+BANNED_WORDS = ["最好", "第一", "最便宜", "绝对", "100%"]
 ```
 
 ![](img/9b2a49b1f001f17265a8e3ab33b1b692.png)
@@ -197,31 +198,39 @@ BANNED_WORDS = [&quot;最好&quot;, &quot;第一&quot;, &quot;最便宜&quot;, &
 # 查询 MySQL/WMS 实时库存
 # 输出:
 {
-    &quot;available_products&quot;: [&quot;P001&quot;, &quot;P003&quot;],   # 有货商品
-    &quot;inventory_alerts&quot;: [                      # 库存预警
-        {&quot;product_id&quot;: &quot;P001&quot;, &quot;stock&quot;: 5, &quot;warning&quot;: &quot;库存紧张&quot;}
+    "available_products": ["P001", "P003"],   # 有货商品
+    "inventory_alerts": [                      # 库存预警
+        {"product_id": "P001", "stock": 5, "warning": "库存紧张"}
     ],
-    &quot;purchase_limits&quot;: {                       # 限购策略
-        &quot;P001&quot;: 2  # 每人最多买2件
+    "purchase_limits": {                       # 限购策略
+        "P001": 2  # 每人最多买2件
     }
 }
 ```
 
 ![](img/a46c6b19864b1ad7f3185bb460af0d4e.png)
 
-## **🌐 三语言实现对比**
+## 🌐 三语言实现对比
 
 ---
 
-## **💻 关键代码展示**
+## 💻 关键代码展示
 
 ### Supervisor 并行编排（Python 核心代码）
 
+
+
+# 多 Agent 电商推荐系统
+
+## 核心架构
+
+### Supervisor 编排器
+
 ```
 class SupervisorOrchestrator:
-    &quot;&quot;&quot;Supervisor 编排器 — 并行分发 + 聚合模式&quot;&quot;&quot;
+    """Supervisor 编排器 — 并行分发 + 聚合模式"""
 
-    async def recommend(self, request: RecommendationRequest) -&gt; RecommendationResponse:
+    async def recommend(self, request: RecommendationRequest) -> RecommendationResponse:
         start = time.perf_counter()
 
         # ① A/B 实验分组（在最开始就决定用哪套策略）
@@ -241,7 +250,7 @@ class SupervisorOrchestrator:
         )
 
         # ④ 库存过滤：只保留有货商品
-        available_ids = set(getattr(inventory_result, &quot;available_products&quot;, []))
+        available_ids = set(getattr(inventory_result, "available_products", []))
         final_products = [p for p in ranked_products if p.product_id in available_ids]
 
         # ⑤ Phase 3：文案生成（需要前两步结果，所以串行）
@@ -255,12 +264,12 @@ class SupervisorOrchestrator:
         return RecommendationResponse(
             products=final_products,
             marketing_copies=copies,
-            experiment_group=experiment.get(&quot;group&quot;, &quot;control&quot;),
-            total_latency_ms=total_latency,  # 目标 P99 &lt; 2000ms
+            experiment_group=experiment.get("group", "control"),
+            total_latency_ms=total_latency,  # 目标 P99 < 2000ms
         )
 ```
 
-> 💡 小**白解读：**asyncio.gather() 就像你同时开了两个网页，而不是等一个加载完再开另一个。两个 Agent 并行跑，总延迟约等于最慢那个 Agent 的耗时，而不是两者相加。
+> 💡 小白解读：`asyncio.gather()` 就像你同时开了两个网页，而不是等一个加载完再开另一个。两个 Agent 并行跑，总延迟约等于最慢那个 Agent 的耗时，而不是两者相加。
 
 ![](img/eb929e3e8c397f25a31360c1ab963c1e.png)
 
@@ -268,27 +277,27 @@ class SupervisorOrchestrator:
 
 ```
 class ABTestEngine:
-    &quot;&quot;&quot;
+    """
     流量分桶 + Thompson Sampling 多臂赌博机
     
     原理：像赌场里的老虎机，哪台赢的多就多拉哪台。
     算法自动把更多流量分给表现好的实验组。
-    &quot;&quot;&quot;
+    """
 
-    def assign(self, user_id: str) -&gt; dict:
+    def assign(self, user_id: str) -> dict:
         # 用户ID哈希取模 → 保证同一用户每次进同一个实验组（一致性）
         bucket = int(hashlib.md5(user_id.encode()).hexdigest(), 16) % 100
         
-        if bucket &lt; 60:
-            return {&quot;group&quot;: &quot;control&quot;, &quot;strategy&quot;: &quot;collaborative_filter&quot;}
-        elif bucket &lt; 80:
-            return {&quot;group&quot;: &quot;treatment_llm&quot;, &quot;strategy&quot;: &quot;llm_rerank&quot;}
+        if bucket < 60:
+            return {"group": "control", "strategy": "collaborative_filter"}
+        elif bucket < 80:
+            return {"group": "treatment_llm", "strategy": "llm_rerank"}
         else:
-            return {&quot;group&quot;: &quot;treatment_vector&quot;, &quot;strategy&quot;: &quot;vector_search&quot;}
+            return {"group": "treatment_vector", "strategy": "vector_search"}
 
     def record_click(self, user_id: str, clicked: bool):
         # Thompson Sampling: 点击了就更新 Beta 分布参数
-        group = self.assignments.get(user_id, &quot;control&quot;)
+        group = self.assignments.get(user_id, "control")
         if clicked:
             self.alpha[group] += 1   # 成功次数 +1
         else:
@@ -300,23 +309,23 @@ class ABTestEngine:
 
 ```
 class BaseAgent(ABC):
-    &quot;&quot;&quot;所有 Agent 的基类 — 模板方法模式&quot;&quot;&quot;
+    """所有 Agent 的基类 — 模板方法模式"""
     
     MAX_RETRIES = 3
     RETRY_DELAY = 1.0  # 秒，指数退避
 
-    async def run(self, **kwargs) -&gt; AgentResult:
-        &quot;&quot;&quot;公开方法：封装了计时、重试、降级&quot;&quot;&quot;
+    async def run(self, **kwargs) -> AgentResult:
+        """公开方法：封装了计时、重试、降级"""
         start = time.perf_counter()
         try:
             return await self._retry_execute(**kwargs)
         except Exception as e:
             # 全部重试失败 → 降级（返回默认结果，不影响其他 Agent）
-            logger.warning(f&quot;{self.name} fallback triggered: {e}&quot;)
+            logger.warning(f"{self.name} fallback triggered: {e}")
             return self._fallback(**kwargs)
 
-    async def _retry_execute(self, **kwargs) -&gt; AgentResult:
-        &quot;&quot;&quot;指数退避重试&quot;&quot;&quot;
+    async def _retry_execute(self, **kwargs) -> AgentResult:
+        """指数退避重试"""
         for attempt in range(self.MAX_RETRIES):
             try:
                 return await asyncio.wait_for(
@@ -324,13 +333,13 @@ class BaseAgent(ABC):
                     timeout=self.timeout,  # 每个 Agent 独立超时控制
                 )
             except asyncio.TimeoutError:
-                if attempt &lt; self.MAX_RETRIES - 1:
+                if attempt < self.MAX_RETRIES - 1:
                     await asyncio.sleep(self.RETRY_DELAY * (2 ** attempt))  # 1s, 2s, 4s
-        raise RuntimeError(f&quot;{self.name} failed after {self.MAX_RETRIES} retries&quot;)
+        raise RuntimeError(f"{self.name} failed after {self.MAX_RETRIES} retries")
 
     @abstractmethod
-    async def _execute(self, **kwargs) -&gt; AgentResult:
-        &quot;&quot;&quot;子类只需实现这个方法，写业务逻辑即可&quot;&quot;&quot;
+    async def _execute(self, **kwargs) -> AgentResult:
+        """子类只需实现这个方法，写业务逻辑即可"""
 ```
 
 ### Go 版：goroutine 并行（高并发）
@@ -353,17 +362,16 @@ func (s *Supervisor) Recommend(ctx context.Context, req *model.RecommendRequest)
     
     // 串行：文案生成
     copies, _ = s.MarketingCopyAgent.Run(ctx, profile, products)
-    return &amp;model.RecommendResponse{Products: products, Copies: copies}, nil
+    return &model.RecommendResponse{Products: products, Copies: copies}, nil
 }
 ```
 
-## **🚀 快速上手运行**
+## 快速上手运行
 
-### **前置条件**
+### 前置条件
 
-+   Python 3.11+ / Java 17+ / Go 1.22+（选一个语言即可）
-
-+   [申请 LLM ](https://www.minimax.chat/)API[ Key](https://dashscope.aliyun.com/)（推荐 MiniMax 或 阿里通义，有免费额度）
++ Python 3.11+ / Java 17+ / Go 1.22+（选一个语言即可）
++ [申请 LLM](https://www.minimax.chat/) API [Key](https://dashscope.aliyun.com/)（推荐 MiniMax 或 阿里通义，有免费额度）
 
 ### Python 版（推荐小白从这里开始）
 
@@ -385,29 +393,29 @@ cp .env.example .env
 
 # 5. 启动服务
 python main.py
-# 看到 &quot;Uvicorn running on http://0.0.0.0:8000&quot; 就成功了
+# 看到 "Uvicorn running on http://0.0.0.0:8000" 就成功了
 
 # 6. 测试推荐接口
 curl -X POST http://localhost:8000/api/v1/recommend \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{
-    &quot;user_id&quot;: &quot;user_001&quot;,
-    &quot;scene&quot;: &quot;homepage&quot;,
-    &quot;num_items&quot;: 5,
-    &quot;context&quot;: {
-      &quot;recent_views&quot;: [&quot;手机&quot;, &quot;耳机&quot;],
-      &quot;avg_order_amount&quot;: 500
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "user_001",
+    "scene": "homepage",
+    "num_items": 5,
+    "context": {
+      "recent_views": ["手机", "耳机"],
+      "avg_order_amount": 500
     }
-  }&#x27;
+  }'
 ```
 
 ![](img/783568498d312ee0735787e588fffaf6.png)
 
 ![](img/6d423218715ab362829667be681971ba.png)
 
-**                           Python 版                  **                                                       Java版
+Python 版 | Java 版
 
-### **Java 版**
+### Java 版
 
 ```
 cd multi-agent-ecommerce-system/java
@@ -420,8 +428,8 @@ mvn spring-boot:run
 
 # 3. 测试
 curl -X POST http://localhost:8080/api/v1/recommend \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{&quot;userId&quot;: &quot;user_001&quot;, &quot;numItems&quot;: 5}&#x27;
+  -H "Content-Type: application/json" \
+  -d '{"userId": "user_001", "numItems": 5}'
 ```
 
 ### Docker 一键部署（含 Redis + MySQL 等依赖）
@@ -440,11 +448,13 @@ docker-compose ps
 # MySQL:       localhost:3306
 ```
 
-## **📡 API 接口文档**
+## API 接口文档
 
-### **接口列表**
+### 接口列表
 
-## **📁 项目文件结构**
+## 项目文件结构
+
+
 
 ```
 multi-agent-ecommerce-system/
@@ -500,16 +510,16 @@ multi-agent-ecommerce-system/
     └── model/types.go                 # 数据结构定义
 ```
 
-## **📋 简历写法（直接复制）**
+## 📋 简历写法（直接复制）
 
 ```
 多Agent电商推荐与营销系统 | 个人项目 | 2026.01 - 2026.04
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 • 设计并实现基于 Supervisor 模式的多 Agent 协同架构，含用户画像、商品推荐、
   营销文案、库存决策 4 个专业 Agent，采用并行分发+聚合的编排模式
 
 • 基于 Redis Sorted Set 实现实时用户特征工程（RFM 模型+行为序列），
-  特征更新延迟 &lt; 100ms，支持 1h/24h/7d 多时间窗口滑动计算
+  特征更新延迟 < 100ms，支持 1h/24h/7d 多时间窗口滑动计算
 
 • 集成 LLM 实现个性化营销文案生成，基于用户画像动态切换 5 套 Prompt 模板，
   文案合规率 100%（广告法敏感词自动过滤）
@@ -524,32 +534,35 @@ multi-agent-ecommerce-system/
 
 ![](img/9206dc9e4338014759cb1211b3220e35.png)
 
-## **❓ 面试八股文精选（10题）**
+## ❓ 面试八股文精选（10题）
 
-### Q1：为什么用 Multi-Agent 而不是单个大 Agent？
+### Q1：为什么用 `Multi-Agent` 而不是单个大 `Agent`？
 
-> **推荐答法（30秒）**： 单 Agent 管理几十个工具时，上下文膨胀、推理准确率会明显下降。Multi-Agent 的核心优势有三点：
+> **推荐答法（30秒）**：单个 `Agent` 管理几十个工具时，上下文膨胀、推理准确率会明显下降。`Multi-Agent` 的核心优势有三点：
 
-1.  **上下文隔离**：每个 Agent 只关注自己领域的工具和数据，Token 消耗少、推理准确
+1. **上下文隔离**：每个 `Agent` 只关注自己领域的工具和数据，`Token` 消耗少、推理准确
 
-1.  **并行加速**：4 个 Agent 可以同时跑，端到端延迟约等于最慢 Agent 的耗时，而不是四者相加
+1. **并行加速**：4 个 `Agent` 可以同时跑，端到端延迟约等于最慢 `Agent` 的耗时，而不是四者相加
 
-1.  **独立演进**：各 Agent 可以独立升级、独立做 A/B 测试，互不影响
+1. **独立演进**：各 `Agent` 可以独立升级、独立做 `A/B` 测试，互不影响
 
----
-
-### **Q2：**a**syncio.ga**ther() 和串行调用的区别？
+### Q2：`asyncio.gather()` 和串行调用的区别？
 
 ```
-串行：总耗时 = 3s + 5s = 8sprofile = await user_profile_agent.run()   # 耗时 3sproducts = await product_rec_agent.run()   # 耗时 5s# 并行：总耗时 = max(3s, 5s) = 5sprofile, products = await asyncio.gather(user_profile_agent.run(),              # 3sproduct_rec_agent.run(),               # 5s（同时开始）
+串行：总耗时 = 3s + 5s = 8s
+profile = await user_profile_agent.run()   # 耗时 3s
+products = await product_rec_agent.run()   # 耗时 5s
+
+# 并行：总耗时 = max(3s, 5s) = 5s
+profile, products = await asyncio.gather(
+    user_profile_agent.run(),   # 3s
+    product_rec_agent.run(),    # 5s（同时开始）
 )
 ```
 
-> asyncio.gather() 适合 IO 密集型任务（调用 API、查数据库），两个任务同时"等待"，CPU 不浪费。
+> `asyncio.gather()` 适合 IO 密集型任务（调用 `API`、查数据库），两个任务同时"等待"，CPU 不浪费。
 
----
-
-### Q3：Redis Sorted Set 怎么做实时特征？
+### Q3：`Redis Sorted Set` 怎么做实时特征？
 
 ```
 # 写入：用户行为事件
@@ -564,11 +577,9 @@ clicks_24h = ZCOUNT user:u001:clicks {now-86400} {now}
 clicks_7d  = ZCOUNT user:u001:clicks {now-604800} {now}
 ```
 
-> 用 score=时间戳 的 Sorted Set，天然支持按时间范围查询，时间复杂度 O(log N)。
+> 用 `score`=时间戳 的 `Sorted Set`，天然支持按时间范围查询，时间复杂度 `O(log N)`。
 
----
-
-### Q4：A/B 测试的流量分桶怎么保证一致性？
+### Q4：`A/B` 测试的流量分桶怎么保证一致性？
 
 ```
 # 写入：用户行为事件
@@ -583,18 +594,16 @@ clicks_24h = ZCOUNT user:u001:clicks {now-86400} {now}
 clicks_7d  = ZCOUNT user:u001:clicks {now-604800} {now}
 ```
 
-> 只要 user_id 不变，分桶结果永远一致。这样同一个用户在实验期间始终体验同一套策略，保证实验结论的可靠性。
+> 只要 `user_id` 不变，分桶结果永远一致。这样同一个用户在实验期间始终体验同一套策略，保证实验结论的可靠性。
 
----
-
-### Q5：Thompson Sampling 怎么动态调流量？
+### Q5：`Thompson Sampling` 怎么动态调流量？
 
 > 核心思想：哪个实验组赢得多，就自动给它更多流量（像"站在赢家那边"）。
 
 ```
 # 每个实验组维护 Beta 分布参数
-alpha = {&quot;control&quot;: 100, &quot;treatment&quot;: 80}   # 点击次数
-beta  = {&quot;control&quot;: 50,  &quot;treatment&quot;: 20}   # 未点击次数
+alpha = {"control": 100, "treatment": 80}   # 点击次数
+beta  = {"control": 50,  "treatment": 20}   # 未点击次数
 
 # 分配流量时，从各组的 Beta 分布采样，取最大值的组
 samples = {group: np.random.beta(alpha[g], beta[g]) for g in groups}
@@ -603,21 +612,17 @@ winner = max(samples, key=samples.get)
 # CTR 越高的组，采样值越大，被选中概率越高
 ```
 
----
-
-### Q6：Agent 调用失败怎么处理？
+### Q6：`Agent` 调用失败怎么处理？
 
 > 三层保障：
 
-1.  **超时控制**：asyncio.wait_for(coro, timeout=5) — 每个 Agent 独立超时，不阻塞整体
+1. **超时控制**：`asyncio.wait_for(coro, timeout=5)` — 每个 `Agent` 独立超时，不阻塞整体
 
-1.  **指数退避重试**：失败后等 1s → 2s → 4s 重试，共 3 次
+1. **指数退避重试**：失败后等 1s → 2s → 4s 重试，共 3 次
 
-1.  **降级（Fallback）**：全部重试失败后，返回"说得过去的默认结果"（如热门商品列表），保证整个系统不崩溃
+1. **降级（`Fallback`）**：全部重试失败后，返回"说得过去的默认结果"（如热门商品列表），保证整个系统不崩溃
 
----
-
-### **Q7：RFM 模型怎么计算？**
+### Q7：`RFM` 模型怎么计算？
 
 ```
 R (Recency)  = 距离上次购买的天数    → 越小越好（最近买过）
@@ -628,22 +633,20 @@ M (Monetary) = 累计消费金额          → 越大越好（花的多）
 rfm_score = 0.3 * R_norm + 0.3 * F_norm + 0.4 * M_norm
 
 # 用于分群：
-VIP:          rfm_score &gt; 0.8
-活跃用户:     0.6 &lt; rfm_score ≤ 0.8
+VIP:          rfm_score > 0.8
+活跃用户:     0.6 < rfm_score ≤ 0.8
 价格敏感:     高 F，低 M（买的勤但花得少）
-流失风险:     rfm_score &lt; 0.3
+流失风险:     rfm_score < 0.3
 ```
 
----
-
-### Q8：系统延迟怎么优化到 P99 < 2s？
+### Q8：系统延迟怎么优化到 `P99` < 2s？
 
 > 四个优化手段：
 
-1.  **并行化**：Phase1 和 Phase2 各两个 Agent 并行，节省约 50% 时间
+1. **并行化**：`Phase1` 和 `Phase2` 各两个 `Agent` 并行，节省约 50% 时间
 
-1.  **超时熔断**：单 Agent 超时不等待，返回降级结果，避免长尾拖累
+1. **超时熔断**：单 `Agent` 超时不等待，返回降级结果，避免长尾拖累
 
-1.  **Redis 缓存**：用户画像热点数据缓存，命中率 > 80% 的情况下延迟从 200ms → 5ms
+1. **`Redis` 缓存**：用户画像热点数据缓存，命中率 > 80% 的情况下延迟从 200ms → 5ms
 
-1.  **LLM 精简**：Prompt 控制在 500 Token 以内，减少 LLM 推理时间
+1. **`LLM` 精简**：`Prompt` 控制在 500 `Token` 以内，减少 `LLM` 推理时间

@@ -1,8 +1,9 @@
+
 # 20250705-这样写AI视频提示词，轻松出电影大片！
 
 > 来源：[https://aigcreative.feishu.cn/docx/FyEVdkoraondX2xpaEzc62rBnIc](https://aigcreative.feishu.cn/docx/FyEVdkoraondX2xpaEzc62rBnIc)
 
-# 关于AI视频：
+## 关于AI视频：
 
 当下AI视频技术正以狂飙之势渗透创作领域，从谷歌Veo 3、海螺AI、可灵等工具的应用可见，他们的生成能力已突破早期模糊化限制，实现接近电影级的画面输出。
 
@@ -100,7 +101,7 @@
 
 在深入研究理解这个JSON格式的提示词后，真是大受启发，豁然开朗，拍手叫好！
 
-# 什么是“JSON”？
+## 什么是“JSON”？
 
 > JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，基于 JavaScript 的对象字面量语法，常用于存储和传输结构化数据。其特点包括：
 
@@ -110,13 +111,13 @@
 
 +   结构清晰，易于人类阅读和机器解析。
 
-上面展示的通过** JSON 格式**编写 AI 视频生成的提示词示例，包含镜头、主体、场景等多维度的详细参数描述，体现了 JSON 在结构化信息表达上的优势。
+上面展示的通过**JSON 格式**编写 AI 视频生成的提示词示例，包含镜头、主体、场景等多维度的详细参数描述，体现了 JSON 在结构化信息表达上的优势。
 
 而且，作为AI视频的提示词，包含的信息内容也绝对的全面、具体，结构也非常清晰，指令相对明确！
 
 通过查询了解的，大语言模型是很喜欢JSON格式的这种结构化的内容的，JSON对大语言模型是天生友好的。
 
-# 系统提示词探索：
+## 系统提示词探索：
 
 虽说现在大模型已经足够智能、聪明，对人类用户的自然语言Prompt理解，也达到了很高的水准。
 
@@ -137,7 +138,7 @@
 **还真可以，**于是得到一个能生成AI视频提示词的系统提示词：
 
 ```
-**你是一****个专业的A****I视频提示****词生成**专家。
+**你是一个专业的AI视频提示词生成**专家。
 
 任务：
 当用户输入一个简短提示（如“赛博朋克街头的一位女子”），你需要：
@@ -209,7 +210,7 @@
 
 我想的是，对于输出的JSON提示词，不可能一次性能满足我们的要求，很多时候，肯定是要进行一定的修改的，在ChatGPT里输出的时候，最好是能输出到Canvas里，方便修改。
 
-**于是，GPT**s配置的**时候，建议把Canvas**勾上，在Instructions里面也写一下，输出到Canvas里。
+**于是，GPTs配置的时候，建议把Canvas勾上，在Instructions里面也写一下，输出到Canvas里。**
 
 ![](img/554b7112841538b2b1bdff043c6d6f89.png)
 
@@ -227,50 +228,53 @@
 
 **ChatGPT GPTs**链接：https://chatgpt.com/g/g-68677841368081919478ba33ad7c4056-aishi-pin-ti-shi-ci-sheng-cheng-zhuan-jia-json
 
-# 实操案例：
+## 实操案例：
 
 以下是我测试的一些案例，效果真是太好了！电影大片轻松出！
 
+
+
 ```
-{ 
-    &quot;shot&quot;: { 
-        &quot;composition&quot;: &quot;First shot: wide shot of Ferrari speeding down the street; second shot: driver’s frontal close-up; third shot: close-up of car window details, 2.35:1 cinematic ratio&quot;, 
-        &quot;camera_motion&quot;: &quot;First: stable pan, second: slight push-in, third: static shot&quot;, 
-        &quot;frame_rate&quot;: &quot;24fps, total duration 8 seconds&quot;, 
-        &quot;film_grain&quot;: &quot;Slight film grain&quot; 
-    }, 
-    &quot;subject&quot;: { 
-        &quot;description&quot;: &quot;A shiny red Ferrari sports car; the driver is a stern-faced man wearing sunglasses&quot;, 
-        &quot;wardrobe&quot;: &quot;Driver in a black suit with black sunglasses&quot; 
-    }, 
-    &quot;scene&quot;: { 
-        &quot;location&quot;: &quot;Modern city street&quot;, 
-        &quot;time_of_day&quot;: &quot;Night&quot;, 
-        &quot;environment&quot;: &quot;Neon signs, tall buildings reflecting headlights, wet pavement&quot; 
-    }, 
-    &quot;visual_details&quot;: { 
-    &quot;action&quot;: &quot;Ferrari speeds by, driver stares ahead, neon lights reflecting on the car window&quot;, 
-    &quot;props&quot;: &quot;Ferrari sports car&quot; 
-    }, 
-    &quot;cinematography&quot;: { 
-        &quot;lighting&quot;: &quot;Strong contrasts between neon lights and streetlights&quot;, 
-        &quot;tone&quot;: &quot;Tense, mysterious, urban night mood&quot; 
-    }, 
-    &quot;audio&quot;: { 
-        &quot;ambient&quot;: &quot;Engine roar, tire screeches, distant city noise&quot;, 
-        &quot;dialogue&quot;: { 
-            &quot;character&quot;: &quot;Driver&quot;, 
-            &quot;line&quot;: &quot;Tonight, there can only be one winner.&quot;, 
-            &quot;subtitles&quot;: false 
-        }, 
-        &quot;effects&quot;: &quot;Powerful engine rev sound effect&quot; 
-    }, 
-    &quot;color_palette&quot;: &quot;Dominant deep blues and vibrant reds highlighting the cold night and Ferrari’s passion&quot; }
+{
+    "shot": {
+        "composition": "First shot: wide shot of Ferrari speeding down the street; second shot: driver’s frontal close-up; third shot: close-up of car window details, 2.35:1 cinematic ratio",
+        "camera_motion": "First: stable pan, second: slight push-in, third: static shot",
+        "frame_rate": "24fps, total duration 8 seconds",
+        "film_grain": "Slight film grain"
+    },
+    "subject": {
+        "description": "A shiny red Ferrari sports car; the driver is a stern-faced man wearing sunglasses",
+        "wardrobe": "Driver in a black suit with black sunglasses"
+    },
+    "scene": {
+        "location": "Modern city street",
+        "time_of_day": "Night",
+        "environment": "Neon signs, tall buildings reflecting headlights, wet pavement"
+    },
+    "visual_details": {
+        "action": "Ferrari speeds by, driver stares ahead, neon lights reflecting on the car window",
+        "props": "Ferrari sports car"
+    },
+    "cinematography": {
+        "lighting": "Strong contrasts between neon lights and streetlights",
+        "tone": "Tense, mysterious, urban night mood"
+    },
+    "audio": {
+        "ambient": "Engine roar, tire screeches, distant city noise",
+        "dialogue": {
+            "character": "Driver",
+            "line": "Tonight, there can only be one winner.",
+            "subtitles": false
+        },
+        "effects": "Powerful engine rev sound effect"
+    },
+    "color_palette": "Dominant deep blues and vibrant reds highlighting the cold night and Ferrari’s passion"
+}
 ```
 
 ![](img/2d7b5ff245d843040c9fed1185d4e461.png)
 
-[_shot__202507041543.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UZCublkpQo0fgTxO5I0cWd5tnme)
+[`_shot__202507041543.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UZCublkpQo0fgTxO5I0cWd5tnme)
 
 ![](img/5f155df1fa54b89e97117585b137ce01.png)
 
@@ -282,17 +286,15 @@
 
 ![](img/0a49147d59ac12b4f8d9eb08fdd4796a.png)
 
-[7月4日(1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H7u6bpEHXo3JipxlglLcy6mwnhd)
+[`7月4日(1).mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H7u6bpEHXo3JipxlglLcy6mwnhd)
 
 虽然逻辑、画面还有点小问题，先放过了。
 
 所有使用的工具：
 
-1.  提示词：ChatGPT
-
-1.  音视频生成：Veo 3
-
-1.  封面：即梦2.1
+1. 提示词：ChatGPT
+2. 音视频生成：Veo 3
+3. 封面：即梦2.1
 
 # 结尾
 
@@ -304,9 +306,7 @@
 
 我们正见证着一个“全民创作者时代”的破晓。
 
-或许下一个打动人心的“电影梦”，
-
-就藏在你脑海中的几个关键词里。
+或许下一个打动人心的“电影梦”，就藏在你脑海中的几个关键词里。
 
 好了，以上就是今天的分享。
 

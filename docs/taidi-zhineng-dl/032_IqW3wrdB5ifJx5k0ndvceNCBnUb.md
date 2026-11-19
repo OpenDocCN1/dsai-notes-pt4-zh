@@ -1,23 +1,24 @@
+
+
 # Learn Assembly Language
 
 > 来源：[https://learning.feishu.cn/docx/PP3SdO42WoeHexxWJPvcOyW2naf](https://learning.feishu.cn/docx/PP3SdO42WoeHexxWJPvcOyW2naf)
 
 大多数教程，比如《深入理解计算机系统》是基于 32bit 讲解的。
 
-gcc -m32 可得到 32bit 的汇编。
+`gcc -m32` 可得到 32bit 的汇编。
 
-ILOC 和 risc (RISCV)
+`ILOC` 和 `risc` (`RISCV`)
 
 RISC 汇编，大多数以 register 寄存器为参数。
 
-load / store 等内存操作，涉及 memory。
+`load` / `store` 等内存操作，涉及 memory。
 
 # 立即数乘法的优化
 
-gcc 的编译优化，a + b * 9 和 a + b * 10 的汇编相差很大
+`gcc` 的编译优化，`a + b * 9` 和 `a + b * 10` 的汇编相差很大
 
 ```
-// c code
 int simple_add(int a, int b) {
     int c;
     c = a + b * 9;
@@ -28,13 +29,13 @@ int simple_add(int a, int b) {
 生成的汇编，对比如下
 
 ```
-// a + b * 9
 movl    8(%esp), %eax  // b
 leal    (%eax,%eax,8), %eax  // 9b
 addl    4(%esp), %eax  // a + 9b
 ret
+```
 
-// a + b * 10
+```
 movl    8(%esp), %eax  // b
 movl    4(%esp), %edx  // a
 leal    (%eax,%eax,4), %eax  // 5b
@@ -46,19 +47,19 @@ ret
 
 ```
 // ~0.35s
+```
 
-
-
-// code
+```
 int fun() {
     int sum = 3;
-    for (int i = 0; i &lt; N; i++) {
+    for (int i = 0; i < N; i++) {
         sum = sum + i;
     }
     return sum;
 }
+```
 
-// assembly code
+```
 fun:
 .LFB0:
     .cfi_startproc
@@ -91,17 +92,19 @@ fun:
 // ~0.26
 // loop 多一个 +1 计算
 // .L3 多了 3 行指令，反而变快了。
+```
 
-// code
+```
 int fun() {
     int sum = 3;
-    for (int i = 0; i &lt; N; i++) {
+    for (int i = 0; i < N; i++) {
         sum = sum + i + 1;
     }
     return sum;
 }
+```
 
-// assembly code
+```
 fun:
 .LFB0:
     .cfi_startproc
@@ -135,34 +138,34 @@ fun:
 ## code
 
 ```
-#include &lt;stdio.h&gt;
-#include &lt;time.h&gt;
- 
+#include <stdio.h>
+#include <time.h>
+
 #define N 1000000000
- 
+
 int fun() {
     int sum = 0;
-    for (int i = 0; i &lt; N; i++) {
+    for (int i = 0; i < N; i++) {
         sum += 1;
     }
     return sum;
 }
- 
- 
+
+
 int main()
 {
     // Calculate the time taken by fun()
     clock_t t;
     int result;
- 
+
     t = clock();
     result = fun();
     t = clock() - t;
     double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds
- 
-    printf(&quot;result: %dn&quot;, result);
- 
-    printf(&quot;fun() took %f seconds to execute n&quot;, time_taken);
+
+    printf("result: %dn", result);
+
+    printf("fun() took %f seconds to execute n", time_taken);
     return 0;
 }
 ```
@@ -170,7 +173,7 @@ int main()
 ## 汇编
 
 ```
-    .file   &quot;01_using_clock.c&quot;
+    .file   "01_using_clock.c"
     .text
     .globl  fun
     .type   fun, @function
@@ -200,10 +203,10 @@ fun:
     .size   fun, .-fun
     .section    .rodata
 .LC1:
-    .string &quot;result: %dn&quot;
+    .string "result: %dn"
     .align 8
 .LC2:
-    .string &quot;fun() took %f seconds to execute n&quot;
+    .string "fun() took %f seconds to execute n"
     .text
     .globl  main
     .type   main, @function
@@ -253,19 +256,24 @@ main:
 .LC0:
     .long   0
     .long   1093567616
-    .ident  &quot;GCC: (Ubuntu 4.9.3-13ubuntu2) 4.9.3&quot;
-    .section    .note.GNU-stack,&quot;&quot;,@progbits
+    .ident  "GCC: (Ubuntu 4.9.3-13ubuntu2) 4.9.3"
+    .section    .note.GNU-stack,"",@progbits
 ```
 
 ## Perf
 
-calc/loop: cpu(hz) * t / N
+calc/loop: cpu(hz) * `t` / `N`
 
-| **CPU** | **N=1,000,000,000** |  | N=2,000,000,000 |  | **N=100,000,000** |  | **结论** |
+| CPU | `N=1,000,000,000` |  | `N=2,000,000,000` |  | `N=100,000,000` |  | 结论 |
+
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | **t** | **calc/loop** | **t** | **calc/loop** | **t** | **calc/loop** |  |
+
+|  | `t` | calc/loop | `t` | calc/loop | `t` | calc/loop |  |
+
 | Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz | 2.732398 | 6 | 5.211625 | 5.73 | 0.258168 | 5.5 | 有线性关系 |
+
 | Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz | 1.888062 | 5.097 | 3.76251 | 5 | 0.188075 | 5.1 | 每个 loop 的计算数：5 |
+
 | TF 2100 MHz | 4.767856 | 10 | 9.535503 | 10 | 0.476679 | 10 |  |
 
 ## code 改动
@@ -273,7 +281,7 @@ calc/loop: cpu(hz) * t / N
 ```
 int fun() {
     int sum = 0;
-    for (int i = 0; i &lt; N; i++) {
+    for (int i = 0; i < N; i++) {
         sum += 1;
         sum /= 1;  // new line
     }
@@ -328,11 +336,16 @@ index dd366b2..0682c78 100755
         str     w0, [sp, 12]
 ```
 
-| **CPU** | **N=1,000,000,000** |  | **N=2,000,000,000** |  | **N=100,000,000** |  | **结论** |
+| CPU | `N=1,000,000,000` |  | `N=2,000,000,000` |  | `N=100,000,000` |  | 结论 |
+
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | **t** | **calc/loop** | **t** | **calc/loop** | **t** | **calc/loop** |  |
+
+|  | `t` | calc/loop | `t` | calc/loop | `t` | calc/loop |  |
+
 | Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz | 4.735388 | 10.4 | 5.211625 | 10.14 | 0.450431 | 9.9 | 新增略小于 2 倍 |
+
 | Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz | 3.295563 | 8.9 | 6.606099 | 8.915 | 0.335304 | 9.1 | 同上 |
+
 | TF 2100 MHz | 8.581995 | 18.2 | 17.163879 | 18 | 0.858385 | 18.02 |  |
 
 # ISA 的基础概念
@@ -345,31 +358,36 @@ CSRs can be accessed by privileged instructions and are typically used by the op
 
 Here's a brief explanation of the two types of CSRs:
 
-1.  Control Registers: settings related to interrupts, memory management, and other system-level configurations. enable or disable certain features of the processor, such as virtual memory support or cache behavior.
+1. Control Registers: settings related to interrupts, memory management, and other system-level configurations. enable or disable certain features of the processor, such as virtual memory support or cache behavior.
+
 Example:
 
-1.  Control Register 0 (CR0) in x86 architecture is used to control operating mode, task switching, and other system-wide settings. It contains flags like the Protection Enable (PE) flag, which enables or disables memory protection.
+1. Control Register 0 (CR0) in x86 architecture is used to control operating mode, task switching, and other system-wide settings. It contains flags like the Protection Enable (PE) flag, which enables or disables memory protection.
 
-1.  Control Register 15 (CR15) in ARM architecture is used for system control and configuration, including cache settings and access permissions.
+1. Control Register 15 (CR15) in ARM architecture is used for system control and configuration, including cache settings and access permissions.
 
-1.  Status Registers: current state of the processor or the system. They may include flags indicating the result of arithmetic operations, the current privilege level, or the status of various system components. Status registers are often read-only or have restricted write access.
+1. Status Registers: current state of the processor or the system. They may include flags indicating the result of arithmetic operations, the current privilege level, or the status of various system components. Status registers are often read-only or have restricted write access.
+
 Example:
 
-1.  Flags Register (EFLAGS/RFLAGS) in x86 architecture contains various status flags such as the zero flag (ZF), carry flag (CF), and overflow flag (OF), which indicate the result of arithmetic operations and control program flow.
 
-1.  **Current Program St**atus Register (CPSR) in ARM architecture contains flags indicating the processor operating mode, interrupt enable/disable status, and condition code flags.
 
-CSRs play a vital role in the overall functionality and management of a processor. They provide a mechanism for privileged software to interact with hardware and control critical system operations.
 
-# RVV Extension
+`EFLAGS/RFLAGS` in x86 architecture contains various status flags such as the zero flag (`ZF`), carry flag (`CF`), and overflow flag (`OF`), which indicate the result of arithmetic operations and control program flow.
 
-chap 18 Standard Vector Extensions
+Current Program Status Register (`CPSR`) in ARM architecture contains flags indicating the processor operating mode, interrupt enable/disable status, and condition code flags.
 
-a larger vector extension designed for application processors is named as a single-letter V extension.
+`CSRs` play a vital role in the overall functionality and management of a processor. They provide a mechanism for privileged software to interact with hardware and control critical system operations.
 
-Zvl*: vector length extension
+# `RVV` Extension
 
-Zve*: extensions for embedded use
+## chap 18 Standard Vector Extensions
+
+a larger vector extension designed for application processors is named as a single-letter `V` extension.
+
+`Zvl*`: vector length extension
+
+`Zve*`: extensions for embedded use
 
 ![](img/d264ae6c641ed33e75e64f09bff6aff6.png)
 

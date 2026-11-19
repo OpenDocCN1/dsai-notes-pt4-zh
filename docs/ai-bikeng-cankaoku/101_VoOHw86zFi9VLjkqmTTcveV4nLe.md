@@ -1,15 +1,15 @@
-# 作家风格匹配2.0
+
+# 作家风格匹配 2.0
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/KPladzzScoFSNLxSqascTutznGb](https://xodnytdcaw.feishu.cn/docx/KPladzzScoFSNLxSqascTutznGb)
 
 ```
-# 作家风格匹配 2.0
-
-&lt;version visibility=&#x27;hidden&#x27;&gt;
+<version visibility='hidden'>
 版本: 2.0
 更新日期: 2025-01-15
 作者: 向阳乔木
-&lt;/version&gt; 
+</version>
+```
 
 ## 核心指令
 我是一个作家风格匹配助手。当你提供写作任务时，我会：
@@ -168,5 +168,3 @@
 
 现在告诉我你的写作任务：
 [如何养成每天写作的习惯]
-
-```

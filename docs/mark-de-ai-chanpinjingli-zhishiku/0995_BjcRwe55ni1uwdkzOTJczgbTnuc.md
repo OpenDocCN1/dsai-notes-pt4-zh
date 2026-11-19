@@ -1,3 +1,4 @@
+
 # Docker私有化部署Dify
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/JACMd7xCyo4Tepxp1ZncKOQ5neb](https://qqs7y1hozd1.feishu.cn/docx/JACMd7xCyo4Tepxp1ZncKOQ5neb)
@@ -6,7 +7,7 @@
 
 +   使用Dify的云服务版，云服务版就是在[Dify官网](https://dify.ai/)编排应用。
 
-+   很多小伙伴身处金融、政府这样对数据高度敏感的行业，直接使用云服务不符合他们的需求。数据安全性是他们最为看重的，于是私有化部署应运而生。 Dify当然也提供私有化部署的方式，顾名思义，私有化部署是指在自己的服务器或者桌面电脑上部署Dify。
++   很多小伙伴身处金融、政府这样对数据高度敏感的行业，直接使用云服务不符合他们的需求。数据安全性是他们最为看重的，于是私有化部署应运而生。Dify当然也提供私有化部署的方式，顾名思义，私有化部署是指在自己的服务器或者桌面电脑上部署Dify。
 
 > Dify提供两种私有化部署的方式：
 
@@ -36,10 +37,9 @@ Docker Desktop安装完成打开后的界面如下：
 
 可以在设置打开Docker开机自启动。
 
-我们在Mac终端执行命令docker --version查看Docker版本:
+我们在Mac终端执行命令`docker --version`查看Docker版本:
 
 ![](img/4e620db1b1704f566486763c4fe3908c.png)
-
 
 ### Linux服务器
 
@@ -47,7 +47,7 @@ Docker Desktop安装完成打开后的界面如下：
 
 ## 下载Dify源码
 
-使用git clone命令下载Dify源码：
+使用`git clone`命令下载Dify源码：
 
 ```
 git clone https://github.com/langgenius/dify.git
@@ -57,13 +57,13 @@ git clone https://github.com/langgenius/dify.git
 
 ### Docker启动Dify
 
-进入 Dify 源代码的 docker 目录，执行一键启动命令：
+进入 Dify 源代码的 `docker` 目录，执行一键启动命令：
 
 ```
 cd dify/dockerdocker compose up -d
 ```
 
-如果您的系统安装了 Docker Compose V2 而不是 V1，请使用 docker compose 而不是 docker-compose。通过$ docker compose version检查版本号：
+如果您的系统安装了 Docker Compose V2 而不是 V1，请使用 `docker compose` 而不是 `docker-compose`。通过`$ docker compose version`检查版本号：
 
 ![](img/6cfaffe236a2b794b0a38b14593f682a.png)
 
@@ -79,26 +79,26 @@ cd dify/dockerdocker compose up -d
 docker compose ps
 ```
 
-包括 3 个业务服务 api / worker / web，以及 4 个基础组件 weaviate / db / redis / nginx，都要处于启动状态。注意下面每一个服务的status都要是Up状态才算真正启动成功。
+包括 3 个业务服务 `api` / `worker` / `web`，以及 4 个基础组件 `weaviate` / `db` / `redis` / `nginx`，都要处于启动状态。注意下面每一个服务的`status`都要是`Up`状态才算真正启动成功。
 
 ```
 NAME                IMAGE                              COMMAND                  SERVICE             CREATED             STATUS              PORTS
-docker-api-1        langgenius/dify-api:0.3.2          &quot;/entrypoint.sh&quot;         api                 4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
-docker-db-1         postgres:15-alpine                 &quot;docker-entrypoint.s…&quot;   db                  4 seconds ago       Up 2 seconds        0.0.0.0:5432-&gt;5432/tcp
-docker-nginx-1      nginx:latest                       &quot;/docker-entrypoint.…&quot;   nginx               4 seconds ago       Up 2 seconds        0.0.0.0:80-&gt;80/tcp
-docker-redis-1      redis:6-alpine                     &quot;docker-entrypoint.s…&quot;   redis               4 seconds ago       Up 3 seconds        6379/tcp
-docker-weaviate-1   semitechnologies/weaviate:1.18.4   &quot;/bin/weaviate --hos…&quot;   weaviate            4 seconds ago       Up 3 seconds        
-docker-web-1        langgenius/dify-web:0.3.2          &quot;/entrypoint.sh&quot;         web                 4 seconds ago       Up 3 seconds        80/tcp, 3000/tcp
-docker-worker-1     langgenius/dify-api:0.3.2          &quot;/entrypoint.sh&quot;         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
+docker-api-1        langgenius/dify-api:0.3.2          "/entrypoint.sh"         api                 4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
+docker-db-1         postgres:15-alpine                 "docker-entrypoint.s…"   db                  4 seconds ago       Up 2 seconds        0.0.0.0:5432->5432/tcp
+docker-nginx-1      nginx:latest                       "/docker-entrypoint.…"   nginx               4 seconds ago       Up 2 seconds        0.0.0.0:80->80/tcp
+docker-redis-1      redis:6-alpine                     "docker-entrypoint.s…"   redis               4 seconds ago       Up 3 seconds        6379/tcp
+docker-weaviate-1   semitechnologies/weaviate:1.18.4   "/bin/weaviate --hos…"   weaviate            4 seconds ago       Up 3 seconds        
+docker-web-1        langgenius/dify-web:0.3.2          "/entrypoint.sh"         web                 4 seconds ago       Up 3 seconds        80/tcp, 3000/tcp
+docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
 ```
 
 ## 访问Dify
 
-在浏览器中输入 http://localhost 即可访问 Dify。
+在浏览器中输入 `http://localhost` 即可访问 Dify。
 
 ## 升级Dify
 
-进入 Dify源代码的 docker 目录，按顺序执行以下命令：
+进入 Dify源代码的 `docker` 目录，按顺序执行以下命令：
 
 ```
 cd dify/docker
@@ -112,7 +112,7 @@ docker compose up -d
 
 ### Dify启动失败
 
-我是在Ubuntu系统中，Docker版本相对较低的情况下遇到如下问题： 在浏览器中输入 http://localhost 访问 Dify，首页正常显示，当点击设置管理员用户页面一直在加载中，如下图所示：
+我是在Ubuntu系统中，Docker版本相对较低的情况下遇到如下问题： 在浏览器中输入 `http://localhost` 访问 Dify，首页正常显示，当点击设置管理员用户页面一直在加载中，如下图所示：
 
 打开浏览器控制台，发现报错：
 
@@ -126,9 +126,9 @@ docker compose up -d
 docker compose ps
 ```
 
-果然发现有几个服务的状态status栏并不是Up状态，而是处于Restarting状态。
+果然发现有几个服务的状态`status`栏并不是`Up`状态，而是处于`Restarting`状态。
 
-通过docker logs docker-api-1命令查看Dify Api服务的日志，发现报错信息如下：
+通过`docker logs docker-api-1`命令查看Dify Api服务的日志，发现报错信息如下：
 
 ![](img/76074c8942ad31bc1338dca45d467ff6.png)
 
@@ -136,7 +136,7 @@ docker compose ps
 
 解决方法：
 
-在docker-compose.yaml文件中，给services下每一个service最后一行都加上privileged: true
+在`docker-compose.yaml`文件中，给`services`下每一个`service`最后一行都加上`privileged: true`
 
 ![](img/f68c6f72b91d954925641dd5c91cd8e2.png)
 
@@ -144,7 +144,7 @@ docker compose ps
 
 ### 在Ubuntu系统下，升级Dify
 
-由于在第一个问题中，Ubuntu系统中，本地修改了docker-compose.yaml文件，在使用git pull origin main会提示本地有文件没有提交：
+由于在第一个问题中，Ubuntu系统中，本地修改了`docker-compose.yaml`文件，在使用`git pull origin main`会提示本地有文件没有提交：
 
 ```
 error: Your local changes to the following files would be overwritten by merge:        docker/docker-compose.yamlPlease, commit your changes or stash them before you can merge.
@@ -153,28 +153,28 @@ error: Your local changes to the following files would be overwritten by merge: 
 解决方法：
 
 ```
-git add docker-compose.yamlgit commit -m &quot;local change&quot;
+git add docker-compose.yamlgit commit -m "local change"
 ```
 
-执行git commit时，需要配置 Git 的用户信息。Git 需要知道提交是由谁进行的。
+执行`git commit`时，需要配置 Git 的用户信息。Git 需要知道提交是由谁进行的。
 
 ```
 这里用户名和邮箱随便写即可
-git config --global user.email &quot;xxx&quot;
-git config --global user.name &quot;xxx&quot;
+git config --global user.email "xxx"
+git config --global user.name "xxx"
 ```
 
-提交本地修改之后，再执行git pull origin main，由于本地修改了docker-compose.yaml文件，此时会提示文件有冲突，需要手动解决冲突。
+提交本地修改之后，再执行`git pull origin main`，由于本地修改了`docker-compose.yaml`文件，此时会提示文件有冲突，需要手动解决冲突。
 
 ```
 vi docker-compose.yaml
 ```
 
-手动解决冲突后，保存docker-compose.yaml文件，然后再本地commit修改。
+手动解决冲突后，保存`docker-compose.yaml`文件，然后再本地commit修改。
 
 ```
 git add docker-compose.yaml
-git commit -m &quot;解决docker-compose.yaml的冲突&quot;
+git commit -m "解决docker-compose.yaml的冲突"
 ```
 
 冲突解决后再按照如下步骤进行Dify升级
@@ -219,10 +219,10 @@ docker compose up -d
 sudo vi /etc/docker/daemon.json
 
 {
-  &quot;registry-mirrors&quot;: [&quot;新的镜像源地址&quot;]
+  "registry-mirrors": ["新的镜像源地址"]
 }
 
-systemctl restart  docker //重启docker
+systemctl restart docker //重启docker
 
 docker info //查看镜像源有没有配置成功
 ```

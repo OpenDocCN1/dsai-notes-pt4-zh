@@ -1,10 +1,11 @@
+
 # 使用claude design 设计你的网站
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/WlRsdcyW2ojiEKxKryJcosiHnZf](https://qqs7y1hozd1.feishu.cn/docx/WlRsdcyW2ojiEKxKryJcosiHnZf)
 
 ![](img/bc71649a9e35e3462eb266732e89c90a.png)
 
-首先是打开claude.ai/design , 起一个项目名字，就可以开始设计了。
+首先是打开`claude.ai/design`，起一个项目名字，就可以开始设计了。
 
 ![](img/8e127c76c443928ed5a08e580f45f19a.png)
 
@@ -12,6 +13,6 @@
 
 ![](img/0806008544bcab0f17fe64cb70ed98fc.png)
 
-最后生成的效果就是上面的视频，也可以对话编辑，和选择元素进行编辑。个人感觉已经设计的很好了，就没有编辑。然后直接导出，可以选择是直接用复制命令到claude code，这个也是非常方便的。
+最后生成的效果就是上面的视频，也可以对话编辑，和选择元素进行编辑。个人感觉已经设计的很好了，就没有编辑。然后直接导出，可以选择是直接用复制命令到`claude code`，这个也是非常方便。
 
 ![](img/baa53e57a450b9f5ca0c0acb588e4eb8.png)

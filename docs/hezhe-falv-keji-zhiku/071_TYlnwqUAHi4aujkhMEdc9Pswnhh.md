@@ -1,18 +1,19 @@
+
 # 2024 年 9 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/WIkrdFIrkopK9ixM5CVccbHin19](https://docs.feishu.cn/docx/WIkrdFIrkopK9ixM5CVccbHin19)
 
 ---
 
-# **一、法律科技融资动态**
+## 一、法律科技融资动态
 
-## 法律合规公司 Sedric AI 完成 1850 万美元 A 轮融资
+### 法律合规公司 Sedric AI 完成 1850 万美元 A 轮融资
 
 [9 月 5 日，法](https://www.sedric.ai)律科技初创公司 Sedric AI 宣布完成 1850 万美元 A 轮融资，Foundation Capital 领投，Amex Ventures、StageOne Ventures 和 The Garage 跟投。该公司利用 AI 实时监控、检测和分析多个渠道的客户触点，标记偏离既定合规政策和准则的情况，让公司能够快速采取纠正措施，而无需人工审查的成本和负担。
 
 > 拓展阅读：https://www.sedric.ai/blog/sedric-ai-raises-18-5-million-series-a
 
-## 法律 AI 初创公司 Anytime AI 完成 400 万美元种子轮融资
+### 法律 AI 初创公司 Anytime AI 完成 400 万美元种子轮融资
 
 [9 月 5 日，法律](https://www.anytimeai.ai) AI 初创公司 Anytime AI 宣布完成 400 万美元种子轮融资，Gopher Asset Management 和 Kao Family Office 领投，还有一些律师事务所和天使投资者跟投。Anytime AI 开发了一个法律 AI 助理，帮助律师更高效地完成日常法律工作，比如法律研究和文件审查。
 
@@ -20,11 +21,11 @@
 
 > 拓展阅读：https://www.anytimeai.ai/resources/press/
 
-## 法律 AI 初创公司 Dotyon.AI 完成 320 万美元天使轮融资
+### 法律 AI 初创公司 Dotyon.AI 完成 320 万美元天使轮融资
 
 9 月 5 日，Dotyon.AI 宣布完成 320 万美元天使轮融资，投资方为百联资本，贵州国建集团。该公司利用 AI 技术使繁琐的法律工作自动化，从证词摘要到电子取证，让法律专业人士可以专心改善客户服务并发展业务。
 
-## AI 尽职调查平台 Capsa AI 完成 170 万英镑种子轮融资
+### AI 尽职调查平台 Capsa AI 完成 170 万英镑种子轮融资
 
 [9 月 5 日，](https://www.capsa.ai)AI 驱动的尽职调查平台 Capsa AI 宣布完成 170 万英镑种子轮融资，Outward VC 领投，Cornerstone VC、Antler 以及 Chris Adelsbach 等天使投资人跟投。
 
@@ -32,7 +33,7 @@ Capsa AI 支持私募股权基金的投资者“委托”手动、低技能的�
 
 > 拓展阅读：https://www.uktech.news/ai/capsa-ai-funding-20240905
 
-## AI 法律检索初创公司 Jus Mundi 完成 2200 万美元 B 轮投资
+### AI 法律检索初创公司 Jus Mundi 完成 2200 万美元 B 轮投资
 
 [9 月 11 日，](https://jusmundi.com/en)总部位于法国的法律 AI 搜索公司 Jus Mundi 宣布完成 2000 万欧元（2200 万美元）B 轮融资，Acton Capital 和 True Global Ventures 领投，老股东 C4 Ventures 和 FJ Labs 跟投。
 
@@ -44,7 +45,7 @@ Capsa AI 支持私募股权基金的投资者“委托”手动、低技能的�
 
 > 拓展阅读：https://dailyjus.com/news/2024/09/jus-mundi-launches-jus-ai-and-raises-22m-in-series-b
 
-## 印度法律 AI 初创公司 Jhana.AI 完成 160 万美元新一轮融资
+### 印度法律 AI 初创公司 Jhana.AI 完成 160 万美元新一轮融资
 
 9 月 24 日，总部位于印度的法律科技初创公司 Jhana.AI 完成 160 万美元新一轮融资，Together Fund 领投，OpenAI 团队成员 Shyamal Anadkat 和云公司 VMware 的前首席技术官 Scott Davis 等人跟投。
 
@@ -52,7 +53,7 @@ Jhana.AI 提供一个 AI 律师助理，可以根据系统阅读和审查的消�
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/09/25/india-based-startup-jhana-ai-which-offers-ai-paralegal-raises-1-6m/
 
-## 瑞典法律研究初创公司 Qura 完成 210 万欧元新一轮融资
+### 瑞典法律研究初创公司 Qura 完成 210 万欧元新一轮融资
 
 9 月 24 日，总部位于瑞典的法律研究初创公司 Qura 宣布获得 210 万欧元新一轮融资，Cherry Ventures 领投。
 
@@ -60,7 +61,7 @@ Qura 成立于 2023 年底，提供了一个 AI 驱动的搜索引擎，帮助�
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/09/24/swedish-legal-research-startup-qura-raises-e2-1-million/
 
-## 电子取证公司 TrueScreen 完成 240 万欧元新一轮融资
+### 电子取证公司 TrueScreen 完成 240 万欧元新一轮融资
 
 9 月 25 日，电子证据取证公司 TrueScreen 宣布完成 240 万欧元新一轮融资，CYSERO EuVECA 领投。
 
@@ -68,13 +69,13 @@ TrueScreen 是一家网络安全公司，成立于 2022 年，利用技术对数
 
 > 拓展阅读：https://truescreen.io/2024/09/25/truescreen-closes-seed-round/?_gl=1*5nvvrb*_up*MQ..*_ga*Mzk0MTUzMzY3LjE3Mjc1MDE5NjU.*_ga_DGMCHW25WS*MTcyNzUwMTk2NC4xLjEuMTcyNzUwMjAyNy4wLjAuMA..
 
-## 波兰 CLM 初创公司 Pergamin 完成 1100 万兹罗提新一轮融资
+### 波兰 CLM 初创公司 Pergamin 完成 1100 万兹罗提新一轮融资
 
 9 月 23 日，波兰 CLM 初创公司 Pergamin 宣布完成 1100 万兹罗提（波兰货币单位）新一轮融资，OnDean Forward 领投。OnDean Forward 由美国电子发现领导者 Relativity 的创始人 Andrew Sieja 和首席增长官 Marcin Wojtczak 创立，本轮投资 Pergamin 将支持其成为区域领导者和全球合同管理平台。
 
 > 拓展阅读：https://pergam.in/blog/ondean-forward-inwestuje-11-mln-zl-w-pergamin-pomoze-w-budowie-globalnej-platformy-do-zarzadzania-umowami/
 
-## 法律 AI 初创公司 Mary Technology 完成 135 万美元种子轮融资
+### 法律 AI 初创公司 Mary Technology 完成 135 万美元种子轮融资
 
 9 月 26 日，法律 AI 初创公司 Mary Technology 宣布完成 135 万美元种子轮融资，Empress Capital 领投，Gilbert + Tobin CEO Sam Nickless、抵押贷款交易平台 Lendi Group 联合创始人 Mark Kalajzich 和 Martin Lam 等跟投。
 
@@ -82,9 +83,9 @@ Mary Technology 利用 AI 技术，帮助律师将数千份客户文档转换为
 
 > 拓展阅读：https://www.lawyersweekly.com.au/newlaw/40657-legal-tech-startup-raises-1-35m-in-funding-round
 
-# **二、法律科技并购动态**
+## 二、法律科技并购动态
 
-## Workday 将收购 Evisort，为财务和人力资源带来 AI 文档智能
+### Workday 将收购 Evisort，为财务和人力资源带来 AI 文档智能
 
 [9 月 17 ](https://www.workday.com/en-us/homepage.html)[日，企业管理云](https://www.evisort.com/company/about)提供商 Workday 宣布已签署一项最终协议，即将收购合同生命周期管理（CLM）服务商 Evisort，这笔收购预计将在 Worday 的 2024 财政年度第三季度完成，该财年将于 10 月结束。
 
@@ -110,19 +111,19 @@ Workday 对 Evisort 的收购将是 2024 年企业软件公司对 CLM 公司的�
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/09/17/workday-to-acquire-evisort-bringing-ai-powered-document-intelligence-to-finance-and-hr/
 
-## 电子发现公司 Proteus 收购竞品 Novitas Data
+### 电子发现公司 Proteus 收购竞品 Novitas Data
 
 9 月 17 日，总部位于印第安纳波利斯的电子发现服务和咨询公司 Proteus Discovery Group 宣布收购总部位于波特兰的电子发现提供商 Novitas Data。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1879415/e-discovery-services-co-proteus-makes-1st-acquisition
 
-## 律师培训机构 Barbri 收购 SkillBurst，整合在线培训课程
+### 律师培训机构 Barbri 收购 SkillBurst，整合在线培训课程
 
 9 月 18 日，律所培训机构 Barbri Global 宣布收购竞品 SkillBurst Interactive，进一步整合在线培训课程库，包括生成式 AI 相关培训。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1879976/legal-education-co-barbri-acquires-skillburst-interactive
 
-## CRM 厂商 Nexl 将收购收入运营初创公司 Databall
+### CRM 厂商 Nexl 将收购收入运营初创公司 Databall
 
 [9 月 ](https://nexl.cloud/)16 日，CRM（客户关系管[理）服务商 Ne](https://www.databall.io/)xl 宣布收购收入运营初创公司 Databall —— 该公司帮助客户弥补收入泄漏，并使用数据优化客户关系。据了解，这笔收购即将完成。
 
@@ -130,7 +131,7 @@ Workday 对 Evisort 的收购将是 2024 年企业软件公司对 CLM 公司的�
 
 > 拓展阅读：https://legaltechnology.com/2024/09/16/exclusive-crm-vendor-nexl-to-acquire-revenue-operations-startup-databall/
 
-## 数据治理公司 DiliTrust 收购企业法律管理公司 doeLegal
+### 数据治理公司 DiliTrust 收购企业法律管理公司 doeLegal
 
 9 月 [25](https://www.oneragtime.com/stories/legal-scale-up-dilitrust-the-salesforce-of-legal-departments-acquires-french-efficient-meeting-startup-aster) 日，总部位于巴黎的法律科技和数据治理公司 DiliTrust 宣布收购电子发现和企业法律管理（ELM）技术服务商 doeLEGAL，以提供更全面的工具，并将业务扩展到美国市场。据了解，doeLEGAL 是一家已经成立 50 多年的组织，与法律专业人士合作，提供 ELM 和电子发现服务。今年 3 月，DiliTrust 收购了会议管理软件 Aster。2020年，该公司还获得 Cathay Capital、Eurazeo 和 Sagard 投资的 1.3 亿欧元融资。
 
@@ -140,21 +141,21 @@ Workday 对 Evisort 的收购将是 2024 年企业软件公司对 CLM 公司的�
 
 > https://www.oneragtime.com/stories/legal-scale-up-dilitrust-the-salesforce-of-legal-departments-acquires-french-efficient-meeting-startup-aster
 
-## 替代性法律服务商 Elevate 收购电子发现公司 Redgrave Data
+### 替代性法律服务商 Elevate 收购电子发现公司 Redgrave Data
 
 9 月 24 日，替代法律服务商 Elevate 宣布收购电子发现公司 Redgrave Data，这是该公司今年的第二次收购。
 
+
+
 今年 5 月，Elevate 收购 CJK Group，一家专注于非英语审查的电子发现公司，专门审查、分类和分析中文、日语和韩语的多语种内容。通过收购 CJK，Elevate 可以提高自身在外语审查方面的专业知识，随着争议或尽职调查的文件审查越来越全球化，很多客户对此有很高的需求。此次收购是 Elevate 并购战略的延续，该战略旨在收购小型咨询、软件和服务公司，这些公司拥有客户所珍视的独特、特殊专业知识，随后我们可以扩大规模。
 
-> 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1881934/legal-software-provider-elevate-buys-redgrave-data
+> 拓展阅读：`https://www.law360.com/pulse/legal-tech/articles/1881934/legal-software-provider-elevate-buys-redgrave-data`
 
-# **三、律师行业如何拥抱法律科技**
-
-## K&L Gates 律所与 AltaClaro 合作，联合推出生成式 AI 监督课程
+# 三、律师行业如何拥抱法律科技
 
 目前，教育和培训在许多法律组织中占据了中心位置，因为生成式 AI 已经扎根于法律科技市场的大多数产品中。
 
-其中，大部分初始培训都集中在[「提示工程」](https://www.law.com/legaltechnews/2023/04/25/as-ai-advances-is-prompt-engineering-the-next-crucial-legal-skill/)上，比[如法律培训公司 A](https://www.law.com/americanlawyer/2024/06/03/kl-gates-joins-orrick-in-offering-gen-ai-training-for-summer-associates/)ltaClaro 为 Orrick、Herrington & Sutcliffe 和 K&L Gates 律师事务所，以及 Mackrell International  的 90 多家成员律所的 4000 多名律师提供相关课程。
+其中，大部分初始培训都集中在[「提示工程」](https://www.law.com/legaltechnews/2023/04/25/as-ai-advances-is-prompt-engineering-the-next-crucial-legal-skill/)上，比[如法律培训公司 AltaClaro](https://www.law.com/americanlawyer/2024/06/03/kl-gates-joins-orrick-in-offering-gen-ai-training-for-summer-associates/)为 Orrick、Herrington & Sutcliffe 和 K&L Gates 律师事务所，以及 Mackrell International 的 90 多家成员律所的 4000 多名律师提供相关课程。
 
 9 月 12 日，AltaClaro 宣布再次与 K&L Gates 律所合作，推出一个新的联合培训课程，名为《指导有效使用生成[式 AI](https://www.law.com/legaltechnews/2024/08/11/generative-ai-a-legal-ethics-roadmap-and-reference-guide/)：律师事务所合作伙伴的监督课程》，旨在为管理层提供监督团队使用生成式 AI 所需的技能和知识，包括遵守 ABA 最近发布的关于道德地使用生成式 AI 的正式意见，即如何履行监督职责、与客户就 AI 使用进行沟通的义务、一般能力和技能提升原则、生成式 AI 对计费和其他商业模式的潜在影响等。
 
@@ -164,11 +165,9 @@ Workday 对 Evisort 的收购将是 2024 年企业软件公司对 CLM 公司的�
 
 与提示工程课程不同，监督课程的重点主要面向律所或公司法律部门的高级领导层，具体内容包括：
 
-+   第一部分：强调生成式 AI 的基本概念，包括该技术如何运作及其构成的各种风险，特别是对法律风险。
-
-+   第二部分：侧重于教授实用的监督技巧，包括如何对产出进行质量检查、如何纠正错误、如何通过培训与法律团队互动等。
-
-+   第三部分：根据“学习-做-复习培训”的模式，课程参与者根据课程的学习，制定一份详细的清单，在未来工作中监督或管理 AI 时使用。然后，课程讲师对清单作业进行审查，并在互动复习环节中进行详细讨论。
++ 第一部分：强调生成式 AI 的基本概念，包括该技术如何运作及其构成的各种风险，特别是对法律风险。
++ 第二部分：侧重于教授实用的监督技巧，包括如何对产出进行质量检查、如何纠正错误、如何通过培训与法律团队互动等。
++ 第三部分：根据“学习-做-复习培训”的模式，课程参与者根据课程的学习，制定一份详细的清单，在未来工作中监督或管理 AI 时使用。然后，课程讲师对清单作业进行审查，并在互动复习环节中进行详细讨论。
 
 K&L Gates 希望通过提示工程和监督课程，促进法律专业人士对 AI 的兴趣，以及管理者鼓励组织成员学习 AI。
 
@@ -178,19 +177,15 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 
 因此，K&L Gates 制定了的多层次的 AI 教育战略，具体在五个方面开展培训：
 
-+   风险管理
-
-+   遵守专业责任示范规则
-
-+   遵守各种全球 AI 法规和条例
-
-+   如何有效地使用生成式 AI 工具，成为好的律师并得到正确的答案
-
-+   通过避免错误来进行品牌管理
++ 风险管理
++ 遵守专业责任示范规则
++ 遵守各种全球 AI 法规和条例
++ 如何有效地使用生成式 AI 工具，成为好的律师并得到正确的答案
++ 通过避免错误来进行品牌管理
 
 之所以这些美国律所会有意识地开展 AI 相关的监督，是因为美国法律行业非常重视法律道德教育，基本上每个州的律师协会都设置了负责监督使用新技术的人。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/09/12/kl-gates-partners-with-altaclaro-to-offer-gen-ai-supervisory-course-for-firm-partners-and-managers/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/09/12/kl-gates-partners-with-altaclaro-to-offer-gen-ai-supervisory-course-for-firm-partners-and-managers/`
 
 ## 纽约市律协成立 AI 和数字技术工作组，帮助律师应对 AI 的挑战和机遇
 
@@ -198,7 +193,7 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 
 据了解，该工作组由一系列专业人士，包括大学教授、计算机科学家以及内部、非营利和非从务律师，将通过创建播客、网络研讨会、研讨会、圆桌会议、报告和声明，帮助律师和其他人了解 AI 的“承诺和危险”。11 月 4 日，该小组还将与联合国和世界银行的代表，就 AI 的国际监管举办圆桌讨论。
 
-> 拓展阅读：https://www.law.com/newyorklawjournal/2024/09/09/city-bar-task-force-offers-comprehensive-focus-on-promise-and-peril-of-ai/
+> 拓展阅读：`https://www.law.com/newyorklawjournal/2024/09/09/city-bar-task-force-offers-comprehensive-focus-on-promise-and-peril-of-ai/`
 
 ## Dentons 推出 AI 合同起草工具，与汤森路透合同工具集成
 
@@ -207,14 +202,11 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 目前，该机器人在欧洲试点。
 
 > 拓展阅读：
-
 > 「自研」还是「采购」？世界上最大的律所推出 AI 合同自动化试点项目
+>
+> `https://www.dentons.com/en/about-dentons/news-events-and-awards/news/2024/september/dentons-launches-ai-powered-contract-automation-bot`
 
-> https://www.dentons.com/en/about-dentons/news-events-and-awards/news/2024/september/dentons-launches-ai-powered-contract-automation-bot
-
-# **四、法院和法学界如何拥抱 AI**
-
-## 美国纽森法官再论述 AI 如何辅助法官解释工作
+# 四、法院和法学界如何拥抱 AI
 
 今年 5 月，美国第十一巡回上诉法院的凯文·纽森（Kevin Newsom）法官，在一个案件中使用 AI 工具辅助明确一个词语的普通含义。同时，纽森法官还特地在判决中写了一份协同意见，说明了他使用 ChatGPT 的具体方式，并鼓励法律行业考虑跟随他的脚步。
 
@@ -223,14 +215,11 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 纽森法官表示，AI 的这种不确定性最初让他感到不安，但经过分析，他认为这种不确定性其实不足为奇，而是意料之中的，并且从普通含义的角度看，这种不完全一样的特点，反而充分体现了现实中人们日常的语言模式。
 
 > 拓展阅读：
-
 > [【解释语言】美国法官使用 ChatGPT 辅助判案！这或许才是「AI+法律」的正确姿势](https://legalstudio.feishu.cn/wiki/HgxVwxy8ni4ECXkewCBcv0TUnPg)
-
 >
-
-![](img/67eac0720d87b6d1802e4b40a349ac31.png)
-
-[202310478.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F5TublKkuovjIVxolwQcDmdGnqe)
+> ![](img/67eac0720d87b6d1802e4b40a349ac31.png)
+>
+> [202310478.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F5TublKkuovjIVxolwQcDmdGnqe)
 
 ## 中国法研法律大模型评估指标和测评服务正式发布
 
@@ -238,23 +227,21 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 
 近日，中国法研结合深耕司法大数据行业的多年经验，形成并发布了关于法律大模型测评的 5 大测试维度和 35 个测试指标，并积累了 10W+ 的法律大模型测试集，能够在记忆、理解、逻辑推理、生成和安全方面对法律大模型的质量进行全方位的评估。同时，依托中国合格评定国家认可委员会（CNAS）颁发的检测实验室资质，可出具专业的第三方测评报告，亦可对法律大模型做对比测评，为用户选型提供强有力的支撑。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/Pt5O43XoCl6QgUmg4_g_BA
+> 拓展阅读：`https://mp.weixin.qq.com/s/Pt5O43XoCl6QgUmg4_g_BA`
 
-# **五、政府机构如何拥抱 AI**
-
-## 又一机构任命「首席 AI 官」：AI 在组织落地，技术到落地存在一道鸿沟
+# 五、政府机构如何拥抱 AI
 
 近日，美国劳资关系委员会任命了一名“首席人工智能官”（CAIO），这是美国政府机构任命 CAIO 的最新案例。
 
 2023 年 3 月，美国总统拜登发布了一项行政命令，要求每个政府机构指定一名 CAIO，既要挖掘 AI 的潜力，也要管理其风险。今年 2 月，美国司法部也任命了首席 AI 官，该职位将就新兴技术相关问题向美国司法部长和部门领导层提供建议，包括如何负责任地将 AI 融入司法部的调查和刑事起诉中。
 
-[亚马逊前高](https://chiefexecutive.net/a-plea-to-rethink-the-chief-ai-officer/)管 John Rossman 在《首席执行官》中写道：“2024 年最热门的工作是首席 AI 官。从科技公司到医疗保健服务商，再到大学和学院，各种组织都在雇用 CAIO。”研究公司 Foundry 的数据也显示，截至去年年底，15% 的受访企业雇用了 CAIO，还有 24% 的企业正在招聘人员担任该职位。
+[亚马逊前高管 John Rossman](https://chiefexecutive.net/a-plea-to-rethink-the-chief-ai-officer/)在《首席执行官》中写道：“2024 年最热门的工作是首席 AI 官。从科技公司到医疗保健服务商，再到大学和学院，各种组织都在雇用 CAIO。”研究公司 Foundry 的数据也显示，截至去年年底，15% 的受访企业雇用了 CAIO，还有 24% 的企业正在招聘人员担任该职位。
 
 然而，行业对此存在不同观点。
 
 例如，Rossman 补充说道，很多组织创造了 CAIO 如此高级的职位，但最后收效甚微。他敦促 CEO 不要急于雇用 CAIO。相反，他建议组建跨学科团队，负责探索 AI 可以更好地辅助经营业务的方法，并负责运营落地。
 
-[国际](https://sloanreview.mit.edu/article/do-you-really-need-a-chief-ai-officer/#:~:text=Hiring%20a%20chief%20AI%20officer,via%20partnerships%20with%20external%20providers)管理发展研究所教授 Michael Wade 也认为：“聘请 CAIO 可能是当下流行的趋势，但并非所有组织都需要这样的角色。我们认为，适合大多数公司的做法，应该是在现有的组织架构内，通过组建跨部门的小组，或者与外部服务商合作来利用 AI。”Wade 表示，CAIO 和其他高管（如首席信息官和首席技术官）之间的角色需要非常明确地划分。在雇用 CAIO 之前，公司应该分配大量的时间和精力，来明确定义 CAIO 与其他高管职位相关的责任、预算和治理。同时，CAIO 还需要具备强大的沟通、政治和变革管理技能。由于这个角色是跨职能的，而且可能没有明确的权力支持，CAIO 可能需要通过建立影响力来领导 AI 落地。
+[国际管理发展研究所教授 Michael Wade](https://sloanreview.mit.edu/article/do-you-really-need-a-chief-ai-officer/#:~:text=Hiring%20a%20chief%20AI%20officer,via%20partnerships%20with%20external%20providers)也认为：“聘请 CAIO 可能是当下流行的趋势，但并非所有组织都需要这样的角色。我们认为，适合大多数公司的做法，应该是在现有的组织架构内，通过组建跨部门的小组，或者与外部服务商合作来利用 AI。”Wade 表示，CAIO 和其他高管（如首席信息官和首席技术官）之间的角色需要非常明确地划分。在雇用 CAIO 之前，公司应该分配大量的时间和精力，来明确定义 CAIO 与其他高管职位相关的责任、预算和治理。同时，CAIO 还需要具备强大的沟通、政治和变革管理技能。由于这个角色是跨职能的，而且可能没有明确的权力支持，CAIO 可能需要通过建立影响力来领导 AI 落地。
 
 以上看法和笔者的观察和思考类似：
 
@@ -267,14 +254,13 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 怎么办呢？只能说，各方都要修炼好自己的基本功，没有很好的捷径可以走。
 
 > 拓展阅读：
+> [又一机构任命「首席 AI 官」：AI 在组织落地，技术到落地存在一道鸿沟](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488821&idx=1&sn=8b00e05809349847d71a057e96a8d82c&chksm=fac52f95cdb2a683210085aa7ac0b7bfd75c438c39fe4623cd815444c0fe9fcedf2d2b84b3c2&token=804809582&lang=zh_CN#rd)
+>
+> `https://www.nlrb.gov/news-outreach/news-story/david-k-gaston-named-as-nlrbs-first-chief-artificial-intelligence-officer`
+>
+> `https://www.law.com/corpcounsel/2024/09/04/nlrb-appoints-chief-ai-officer-embracing-hottest-job-of-2024/`
 
-> [又一机构任命「首席 AI 官」：](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488821&idx=1&sn=8b00e05809349847d71a057e96a8d82c&chksm=fac52f95cdb2a683210085aa7ac0b7bfd75c438c39fe4623cd815444c0fe9fcedf2d2b84b3c2&token=804809582&lang=zh_CN#rd)AI 在组织落地，技术到落地存在一道鸿沟
-
-> https://www.nlrb.gov/news-outreach/news-story/david-k-gaston-named-as-nlrbs-first-chief-artificial-intelligence-officer
-
-> https://www.law.com/corpcounsel/2024/09/04/nlrb-appoints-chief-ai-officer-embracing-hottest-job-of-2024/
-
-# **六、法学院如何拥抱 AI**
+# 六、法学院如何拥抱 AI
 
 ## 新加坡法学院与微软合作开发 AI 教育资源
 
@@ -282,13 +268,13 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 
 这项合作将策划和开发资源，以帮助法律专业人士在不同领域更有效、更合乎道德地使用生成式 AI。SAL 的网站上将免费提供指南和其他资源，比如通过提示工程来利用 AI 的指南和视频演示，以及相关的最佳实践和注意事项，以对抗生成式 AI 工具时的常见陷阱。除此之外，SAL 还计划为律师开设基础课程。
 
-> 拓展阅读：https://legaltechnology.com/2024/09/11/techlaw-fest-in-singapore-new-collaborations-for-the-academy-and-ministry-of-law-with-microsoft-and-lupl/
+> 拓展阅读：`https://legaltechnology.com/2024/09/11/techlaw-fest-in-singapore-new-collaborations-for-the-academy-and-ministry-of-law-with-microsoft-and-lupl/`
 
 ## 乔治华盛顿大学法学院为联邦机构员工提供 AI 培训
 
 近日，乔治华盛顿大学法学院宣布为联邦雇员提供 AI 培训。
 
-据了解[，这是人工智能实](https://www.congress.gov/bill/117th-congress/senate-bill/2551)践社区（AI [CoP）教](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/)育系[列的一部](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/)分。该计划由美国联邦机构总务局（GSA）联合管理和预算办公室的联邦首席信息官办公室于 2020 年创立。AI CoP 为联邦、州和地方政府雇员网络提供关于 AI 技术和采用的指导和教育，致力于帮助满足《人工智能培训法》和拜登总统第 14110 号行政命令规定的要求。
+据了解，这是人工智能实践社区（AI [CoP](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/)）教育系列的一部分。该计划由美国联邦机构总务局（GSA）联合管理和预算办公室的联邦首席信息官办公室于 2020 年创立。AI CoP 为联邦、州和地方政府雇员网络提供关于 AI 技术和采用的指导和教育，致力于帮助满足[《人工智能培训法》](https://www.congress.gov/bill/117th-congress/senate-bill/2551)和拜登总统第 14110 号行政命令规定的要求。
 
 注：U.S. General Services Administration（GSA）是美国的一个联邦机构，成立于 1949 年，负责管理联邦大楼和为美国政府采购产品、服务和办公空间。
 
@@ -298,9 +284,9 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 
 除了乔治华盛顿大学法学院，AI CoP 还邀请了一些组织其他来参与培训计划，包括斯坦福大学以人为本的 AI 研究所、普林斯顿大学信息技术政策中心、智囊团威尔逊中心、GSA 的全政府政策办公室和 OMB。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/09/19/the-george-washington-university-law-school-is-helping-train-federal-employees-on-ai/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/09/19/the-george-washington-university-law-school-is-helping-train-federal-employees-on-ai/`
 
-# **七、法律 AI 新产品**
+# 七、法律 AI 新产品
 
 ## 法国高等教育计算中心、巴黎萨克雷大学发布两个法律模型，最高 1410 亿参数
 
@@ -308,23 +294,25 @@ K&L Gates 的实践创新总监 Carolyn Austin 表示，在组建律所的 AI �
 
 SaulLM 模型共有 540 亿、1410 亿两种参数，以及基础模型和指令微调两种版本。
 
+
+
 SaulLM 的最大特色是使用了 5400 亿 token 的专业法律数据进行了预训练，包括美国、欧洲、澳大利亚等地的法律文本，输出内容的准确率高于很多同类模型。
 
 ![](img/0b11a3ccdf7898c673a5b92fe6814472.png)
 
 > 拓展阅读：
-
+>
 > 5400 亿 token 专业法律数据！又双叒叕出现一个“法律大模型”
-
+>
 > https://mp.weixin.qq.com/s/tgNnk_REDBjmRwagTF8Uog
-
+>
 > 论文地址：https://arxiv.org/pdf/2407.19584
-
+>
 > 开源地址：https://huggingface.co/Equall/SaulLM-54-Base
-
+>
 > 指令微调：https://huggingface.co/Equall/SaulLM-141B-Instruct
 
-# **八、法律 AI 市场调研**
+# 八、法律 AI 市场调研
 
 ## Everlaw 最新调研：律师们采用 AI 的速度，是云服务的五倍
 
@@ -380,7 +368,7 @@ Everlaw 的战略发现顾问 Chuck Kellner 表示：公司法律部门正在利
 
 > 报告全文：https://www.fasken.com/-/media/b313030dbd324877bb741e5b6d56e9b9.pdf
 
-# **九、法律科技监管动态**
+# 九、法律科技监管动态
 
 ## 时代变了！Rocket Lawyer 获开创性许可，非律师也能提供法律服务了
 
@@ -411,11 +399,11 @@ ABS 许可，是 Rocket Lawyer 和美国各州探索替代性法律服务的最�
 传统律师行业需要顺应时代的变化，拥抱新的市场需求，拥抱新技术、新流量，做好自身的知识管理，及时做出调整，这样才能在未来的法律服务市场中，构建新的竞争力。
 
 > 拓展阅读：
-
+>
 > https://www.rocketlawyer.com/newsroom/rlps-approved-for-abs-license
-
+>
 > https://www.rocketlawyer.com/newsroom/rocket-lawyer-joins-utah-in-nations-first-program-to-transform-legal-services
-
+>
 > [时代变了！Rocket Lawyer](https://mp.weixin.qq.com/s/_hF7YUKWOuCGQav4se7gWA) 获开创性许可，非律师也能提供法律服务了
 
 ## 新泽西州最高法院：律师购买竞争对手姓名的搜索关键词并非不道德
@@ -425,12 +413,12 @@ ABS 许可，是 Rocket Lawyer 和美国各州探索替代性法律服务的最�
 今年 8 月，新泽西州律师协会向最高法院提交一项申请，敦促最高法院宣布一项规定：律师购买其他律师姓名用作关键词搜索，从而将网络流量导向到他们自己网站的做法，是不道德的，具有欺骗性和误导性。
 
 > 拓展阅读：
-
+>
 > 法院意见：https://www.njcourts.gov/system/files/court-opinions/2020/a_61_62_19.pdf
-
+>
 > 律协意见：https://community.njsba.com/blogs/njsba-staff/2024/08/08/capitol-report-attorneys-who-purchase-other-attorn
 
-# **十、法律科技市场活动**
+# 十、法律科技市场活动
 
 ## 律智未来·长宁 AI 法律思享会
 

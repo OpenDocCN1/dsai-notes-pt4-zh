@@ -1,3 +1,4 @@
+
 # 20250624-即梦AI图片生成3.1模型灰度测试，电影感与细节表现大幅提升
 
 > 来源：[https://aigcreative.feishu.cn/docx/SHFodm5UNoCioKxjDjucnaGBnle](https://aigcreative.feishu.cn/docx/SHFodm5UNoCioKxjDjucnaGBnle)
@@ -10,7 +11,7 @@
 
 尤其在响应艺术风格指令时，其表现尤为亮眼——对"胶片"等特定风格的细节刻画和光影处理达到新高度。
 
-# 直接开测：
+## 直接开测：
 
 > close-up of a Chinese bride holding a bouquet of wildflowers, gentle breeze in her hair, shot on vintage film stock, fine grain, dreamy lighting, candid emotion, soft skin tones, graceful bridal portrait
 
@@ -124,11 +125,13 @@
 
 ![](img/18c525ca3bb830207e7267e43622b4bf.png)
 
+
+
+# 知识库动态
+
 > portrait of a lonely Chinese woman standing at an empty crosswalk at night, soft rain falling, blurred city lights behind her, taken on 35mm film, moody lighting, reflective expression, subtle grain, cinematic sadness
 
 ![](img/a25a3b9f5fa85a231c915a7c9542306d.png)
-
-![](img/2b3e458204481f39dc5f7cccc6cffbb2.png)
 
 > Chinese man sitting alone on a rooftop at twilight, staring into the distance, soft blue tones, ambient city noise captured in stillness, analog film texture, introspective mood, melancholic atmosphere
 
@@ -184,6 +187,4 @@
 
 此次灰度测试目前仅开放部分用户体验，标志着即梦AI在视觉生成领域的技术突破迈入新阶段。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
-
-# 知识库动态
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

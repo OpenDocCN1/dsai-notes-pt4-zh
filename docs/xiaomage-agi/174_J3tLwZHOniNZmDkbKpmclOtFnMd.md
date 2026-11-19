@@ -1,12 +1,13 @@
+
 # 基于 Sovits 的声音训练及推理
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/OavbdhKEcoIvfOxqAjjcXui5nyb](https://xmgtoagi.feishu.cn/docx/OavbdhKEcoIvfOxqAjjcXui5nyb)
 
-# 👋 欢迎来到 SVC 的世界！
+## 👋 欢迎来到 SVC 的世界！
 
 Sovits 是一个音声转换的项目，可以将已有的歌声或者语音中的声线换成你想要的声线，从而达到“翻唱”的效果。
 
-原作者是[ bilibili@羽毛布団](https://space.bilibili.com/3493141443250876?spm_id_from=333.1007.0.0)的 So-VITS-SVC 一站式整合包的用户手册。
+原作者是 [bilibili@羽毛布团](https://space.bilibili.com/3493141443250876?spm_id_from=333.1007.0.0) 的 So-VITS-SVC 一站式整合包的用户手册。
 
 本文结合原文，并添加了关键步骤的截图，方便大家学习。如有问题，可以查看原文，有更专业的讲解。
 
@@ -18,9 +19,9 @@ Sovits 是一个音声转换的项目，可以将已有的歌声或者语音中�
 
 以下是教程正文：
 
-## 1，完整整合包 （v2.3.4）下载
+## 1. 完整整合包（v2.3.4）下载
 
-[h](https://pan.baidu.com/s/12u_LDyb5KSOfvjJ9LVwCIQ?pwd=g8n4)ttps://pan.baidu.com/s/12u_LDyb5KSOfvjJ9LVwCIQ?pwd=g8n4
+[百度网盘下载](https://pan.baidu.com/s/12u_LDyb5KSOfvjJ9LVwCIQ?pwd=g8n4)
 
 提取码：g8n4
 
@@ -28,25 +29,25 @@ Sovits 是一个音声转换的项目，可以将已有的歌声或者语音中�
 
 ![](img/85f095e25ab4cbbff29ce658761d07dd.png)
 
-## 2，下载**底模 DLC**
+## 2. 下载底模 DLC
 
 预训练模型（底模）可以大大减少小数据集的训练难度。整合包内已经自带了底模，并会在训练时自动加载。但是目前 Vec768l12 编码器有一个更强的底模。你可以自行下载并替换原来的底模。
 
 下载地址：
 
-[ms903/sovits4.0-76](https://huggingface.co/datasets/ms903/sovits4.0-768vec-layer12/tree/main/sovits_768l12_pre_large_320k)8vec-layer12 at main
+[ms903/sovits4.0-768vec-layer12](https://huggingface.co/datasets/ms903/sovits4.0-768vec-layer12/tree/main/sovits_768l12_pre_large_320k)
 
 ![](img/59aa627f7959efc7de7fb722b5bddd12.png)
 
-1 将下载的底模分别改名为 G_0.pth 和 D_0.pth
+1 将下载的底模分别改名为 `G_0.pth` 和 `D_0.pth`
 
 这里注意源文件名中的 D 和 G，不要搞错了
 
-2 替换到 pre_trained_model/768l12 目录下同名文件，
+2 替换到 `pre_trained_model/768l12` 目录下同名文件，
 
 ![](img/d50c9d802c7d61d17017b10ae71e61f4.png)
 
-## 3，点击 启动 webui.bat
+## 3. 点击 启动 `webui.bat`
 
 等待运行
 
@@ -58,7 +59,7 @@ Sovits 是一个音声转换的项目，可以将已有的歌声或者语音中�
 
 注：推理即转换的意思。新下载的整合包是不带任何模型的，所以无法立即体验，所以需要先进行训练
 
-## 4，训练
+## 4. 训练
 
 点开训练选项卡
 
@@ -68,19 +69,15 @@ Sovits 是一个音声转换的项目，可以将已有的歌声或者语音中�
 
 训练的步骤大致如下：
 
-1，准备数据集
-
-2，识别数据集
-
-3，数据预处理
-
-4，写入配置文件
-
-5，从头开始训练
+1. 准备数据集
+2. 识别数据集
+3. 数据预处理
+4. 写入配置文件
+5. 从头开始训练
 
 以下配合截图分别说明
 
-### 1，准备数据集
+### 4.1 准备数据集
 
 目标说话人的授权数据集（至少 30 分钟的纯人声 / 歌声，1-2 小时最佳），这一步预计耗时 1 个工作日。
 
@@ -88,7 +85,7 @@ Sovits 是一个音声转换的项目，可以将已有的歌声或者语音中�
 
 可以从一些音乐网站下载高清音乐，考虑到推理完成后，很多人还是需要合成 mv 的画面，这里提供一个更简单的下载方式，即 b 站视频。我们使用“唧唧 down”软件 http://client.jijidown.com/
 
-这**是一个用于下载 b**ilibili 视频的 PC 应用程序， 它能够下载 99% bilibili 视频（不支持番剧类型）， 并且它将会终身免费提供使用。现在它已经支持弹幕， 杜比视界/杜比全景声， 真彩 HDR， 超高清 8K， 超清 4K， AVC / HEVC / AV1 编码， 互动视频， mp3 音频， up 主投稿， up 主合集和列表， 个人收藏夹以及批量下载
+这是一个用于下载 bilibili 视频的 PC 应用程序，它能够下载 99% bilibili 视频（不支持番剧类型），并且它将会终身免费提供使用。现在它已经支持弹幕，杜比视界/杜比全景声，真彩 HDR，超高清 8K，超清 4K，AVC / HEVC / AV1 编码，互动视频，mp3 音频，up 主投稿，up 主合集和列表，个人收藏夹以及批量下载
 
 安装的时候注意把其他软件的小勾勾去掉
 
@@ -112,7 +109,7 @@ b 站教程：https://www.bilibili.com/video/BV1ga411S7gP/?spm_id_from=333.788.v
 
 Github 链接：https://github.com/Anjok07/ultimatevocalremovergui/
 
-百度网盘：https://pan.baidu.com/s/14iK32JKIPvjmf1Kfq21mzg?pwd=hjhj 提取码： hjhj
+百度网盘：https://pan.baidu.com/s/14iK32JKIPvjmf1Kfq21mzg?pwd=hjhj 提取码：hjhj
 
 ![](img/05864e48e5eb46cb79f12e0c81bf136a.png)
 
@@ -218,13 +215,13 @@ https://advancedrenamer.com/download
 
 ![](img/fbde465486b35949380cfcc152b8dca4.png)
 
-### 2，识别数据集
+### 4.2 识别数据集
 
-将声音文件夹改名，例如 sunjie1，拷贝至 so-vits-svc\dataset_raw 下，如图，每次训练只放一个文件夹，避免出错
+将声音文件夹改名，例如 `sunjie1`，拷贝至 `so-vits-svc\dataset_raw` 下，如图，每次训练只放一个文件夹，避免出错
 
 ![](img/0be12098d21c7f461460527cd7d6ceb5.png)
 
-### 3，数据预处理
+### 4.3 数据预处理
 
 回到 webui 界面，识别数据集：
 
@@ -236,67 +233,67 @@ https://advancedrenamer.com/download
 
 ![](img/ac08c0478060822780b64017ecc82e42.png)
 
-### 4，写入配置文件
+### 4.4 写入配置文件
 
-进度条走完之后，这里的说话人列表会显示对应的名称：sunjie1:0
+进度条走完之后，这里的说话人列表会显示对应的名称：`sunjie1:0`
 
 ![](img/52464ae581bcccbb4bfe6b3efcf8ca20.png)
 
 这里可以调整的是
 
-批量大小（batch_size），默认 48，我 12g 现存，填的是 72
+批量大小（`batch_size`），默认 48，我 12g 现存，填的是 72
 
 仅保留最新的 X 个模型，超出该数字的旧模型会被删除。设置为 0 则永不删除，默认是 10，如果你是晚上挂机训练，建议改成 0，早上起来后，把不要的模型删掉就行。现在存储又不贵。因为并不是最后一份模型就是最优秀的，整体来说是震荡上行。3060 12g 的显卡，挂机 8 小时，大约可以训练 2 万多步，但是有可能训练日志显示 14000 步的效果最好，如果不全部保留的话，可能就被清理掉了。
 
 点击写入配置文件
 
-### 5，从头开始训练
+### 4.5 从头开始训练
 
 配置文件写入完成后，点击从头开始训练，运行界面可以看到训练过程，此时你的显存占用应该达到 100%，所以尽量不要使用电脑处理其他事务。
 
-在训练日志中，主要看该模型的 reference_loss 的数值，越低越好，目前我的经历中最低的有 24.xxxxxxxx，一般来说 2 万步以上效果提升的不太明显。
+在训练日志中，主要看该模型的 `reference_loss` 的数值，越低越好，目前我的经历中最低的有 24.xxxxxxxx，一般来说 2 万步以上效果提升的不太明显。
 
-**Losses 详解**
+Losses 详解
 
 你不需要理解每一个 loss 的具体含义，大致来说：
 
-●loss/g/f0、loss/g/mel 和 loss/g/t**otal 应当是震荡下降的，并最**终收敛在某个值
+●`loss/g/f0`、`loss/g/mel` 和 `loss/g/total` 应当是震荡下降的，并最终收敛在某个值
 
-●loss/g/kl 应当是低位震荡的
+●`loss/g/kl` 应当是低位震荡的
 
-●loss/g/fm 应当在训练的中期持续上升，并在后期放缓上升趋势甚至开始下降
+●`loss/g/fm` 应当在训练的中期持续上升，并在后期放缓上升趋势甚至开始下降
 
 观察 losses 曲线的趋势可以帮助你判断模型的训练状态。但 losses 并不能作为判断模型训练状态的唯一参考，甚至它的参考价值其实并不大，你仍需要通过自己的耳朵来判断模型是否训练好了。
 
 对于小数据集（30 分钟甚至更小），在加载底模的情况下，不建议训练过久，这样是为了尽可能利用底模的优势。数千步甚至数百步就能有最好的结果。
 
-当你觉得数值差不多的时候，在运行界面点击 ctrl c，训练就会暂停（无需做其他的动作，此时切回到推理界面，就可以选择刚刚练好的模型进行推理试听了）
+当你觉得数值差不多的时候，在运行界面点击 `ctrl c`，训练就会暂停（无需做其他的动作，此时切回到推理界面，就可以选择刚刚练好的模型进行推理试听了）
 
 ![](img/73dc9733415f29ea675364c0a1d68466.png)
 
-如果这是你的第一炉模型，请打开 so-vits-svc\logs\44k 文件夹，该文件夹下的文件名应该是这样：
+如果这是你的第一炉模型，请打开 `so-vits-svc\logs\44k` 文件夹，该文件夹下的文件名应该是这样：
 
 文件名的数字代表了步数
 
 ![](img/013b84b71663f11d55e3b0fe1d46469b.png)
 
-## 5，推理
+## 5. 推理
 
-### 1，加载模型
+### 5.1 加载模型
 
-切到推理界面，刷新选项，下拉模型选择，你会看到你刚刚保存下来的模型，例如：G_0 开始到 G_11200
+切到推理界面，刷新选项，下拉模型选择，你会看到你刚刚保存下来的模型，例如：`G_0` 开始到 `G_11200`
 
 这里面代表了在多少步时保存下来的模型，选择模型后，再选择配置文件，点击加载模型
 
 ![](img/0fea7a7cbced46e816311fedafd8162f.png)
 
-这样就表示加载成功了，这里的说话人会显示模型的名称，我这里是手动改过模型的名字，如果没改的话，仍然显示 G_XXXX
+这样就表示加载成功了，这里的说话人会显示模型的名称，我这里是手动改过模型的名字，如果没改的话，仍然显示 `G_XXXX`
 
 ![](img/39627dd83cbc5dbe4e8d421ff0eb212c.png)
 
-### 2，上传音频
+### 5.2 上传音频
 
-也就是想推理的对象，我想用 sunjie1 的声音去唱孙燕姿的歌，那么这里我就应该传一个孙燕姿的歌声 wav 文件
+也就是想推理的对象，我想用 `sunjie1` 的声音去唱孙燕姿的歌，那么这里我就应该传一个孙燕姿的歌声 wav 文件
 
 ![](img/a3f20b6e8a0b7efb9c95d89097877d60.png)
 
@@ -314,37 +311,37 @@ https://advancedrenamer.com/download
 
 ![](img/dee535d191458e447a9f7535067c4464.png)
 
-自动 f0 预测和预测器选择，如果是说话就勾选自动 f0 预测，唱歌就不勾
+自动 `f0` 预测和预测器选择，如果是说话就勾选自动 `f0` 预测，唱歌就不勾
 
-f0 预测器我个人经验 crepe 效果还不错
+`f0` 预测器我个人经验 crepe 效果还不错
 
 ![](img/85682b5bf38b2821fc5f5bdbd18ceabf.png)
 
-### 3，点击音频转换：
+### 5.3 点击音频转换
 
 ![](img/9af78a83adec05e80b51ffd633a60c06.png)
 
 稍等即可。
 
-## 6，继续训练
+## 6. 继续训练
 
 如果对效果不满意，可以在数据集的声音加入更多高质量的干声，重复第四步的识别和预处理，然后点击继续上一次训练。
 
 也可以不增加数据集，直接继续上一步训练，通过训练时长的增加来改善效果。
 
-如果你对当前的某个模型比较满意，那么可以保留对应的 G 开头的 pth 文件，以及 config.json 文件，其余的可以删除。把 44k 文件夹下的 G-pth 文件以及 config.json 名字改掉，这样下次加载模型的时候可以很好的识别，
+如果你对当前的某个模型比较满意，那么可以保留对应的 `G` 开头的 `pth` 文件，以及 `config.json` 文件，其余的可以删除。把 `44k` 文件夹下的 `G-pth` 文件以及 `config.json` 名字改掉，这样下次加载模型的时候可以很好的识别，
 
 ![](img/5d1990417df180cdb1d5ed857b016d3e.png)
 
-把。json 文件放到 so-vits-svc\configs 下
+
+
+把 `。json` 文件放到 `so-vits-svc\configs` 下
 
 ![](img/17761e98fad88629af4b601450f9b502.png)
 
-第一个模型训练完成后，如果需要第二个声音，这里最好是把第一个模型的 g.pth 文件和。json 文件复制一份，保存在别处，当然 webui 会帮我们自动备份在 so-vits-svc\models_backup 下，不过自己复制一份更容易找到，备份文件的命名规则需要理解，里面文件也比较多，不好找。
+第一个模型训练完成后，如果需要第二个声音，这里最好是把第一个模型的 `g.pth` 文件和 `。json` 文件复制一份，保存在别处，当然 `webui` 会帮我们自动备份在 `so-vits-svc\models_backup` 下，不过自己复制一份更容易找到，备份文件的命名规则需要理解，里面文件也比较多，不好找。
 
-第二个声音也按照以上的规则进行训练，训练好之后，改名，然后把之前训练的声音也粘贴过来（注意：。pth
-
-文件放到 44k，。json 文件放到 configs 文件夹），这样在推理界面，我们就可以就有多个候选项了
+第二个声音也按照以上的规则进行训练，训练好之后，改名，然后把之前训练的声音也粘贴过来（注意：`。pth` 文件放到 `44k`，`。json` 文件放到 `configs` 文件夹），这样在推理界面，我们就可以就有多个候选项了
 
 ![](img/bfa31f5437733822d4dc99cb36e00df4.png)
 
@@ -352,9 +349,9 @@ f0 预测器我个人经验 crepe 效果还不错
 
 # 关于 So-VITS-SVC 5.0
 
-Github 上目前有一个以"So-VITS-SV**C 5.0"命名的项目。虽然叫这个名字**[，但这个项目是](https://github.com/svc-develop-team/so-vits-svc)由爱好者自行维护的一个仓库，并不是 So-VITS 的官方后续版本。本整合包将只更新由 So-VITS 社区官方维护的版本（即 So-VITS-SVC 4.1），如需尝试 So-VITS 5.0，请自行前往该项目仓库部署，勿与本整合包及 So-VITS 4.1 项目混淆。
+Github 上目前有一个以 "So-VITS-SVC 5.0" 命名的项目。虽然叫这个名字，但这个项目是[由爱好者自行维护的一个仓库](https://github.com/svc-develop-team/so-vits-svc)，并不是 So-VITS 的官方后续版本。本整合包将只更新由 So-VITS 社区官方维护的版本（即 So-VITS-SVC 4.1），如需尝试 So-VITS 5.0，请自行前往该项目仓库部署，勿与本整合包及 So-VITS 4.1 项目混淆。
 
-**许可证声明**
+## 许可证声明
 
 So-VITS 项目使用 [BSD-3-Clause](https://opensource.org/license/bsd-3-clause/) 许可证，任何基于 So-VITS 项目和本整合包产出的作品必须遵循以下协议条款：
 
@@ -362,7 +359,7 @@ So-VITS 项目使用 [BSD-3-Clause](https://opensource.org/license/bsd-3-clause/
 
 必须在作品中标注免责声明，免去仓库作者、贡献者、整合包作者对该作品一切后果的责任。
 
-**作品简介模板**
+## 作品简介模板
 
 Cover/原唱： [使用的输入源音声来源]
 
@@ -370,19 +367,17 @@ Cover/原唱： [使用的输入源音声来源]
 
 免责声明：本作品仅作为娱乐目的发布，可能造成的后果与使用的音声转换项目的作者、贡献者无关。
 
-##
+## 版本号说明
 
-## **版本号说明**
-
-目前该文档使用两个版本号系统，分别是 So-VI**TS 官方的版**本号，以及本整合包的版本号。请注意不要混淆。
+目前该文档使用两个版本号系统，分别是 So-VITS 官方的版本号，以及本整合包的版本号。请注意不要混淆。
 
 So-VITS 官方版本号目前为 4.1，其下另有两个分支：4.1-Stable 以及 4.1-Latest。
 
-4.1-Stable 是官方的稳定版本，4.**1-La**test 中包含一些尚在开发的新特性。由于后者可能存在一些 BUG，因此本整合包将仅同步更新 4.1-Stable 的内容。
+4.1-Stable 是官方的稳定版本，4.1-Latest 中包含一些尚在开发的新特性。由于后者可能存在一些 BUG，因此本整合包将仅同步更新 4.1-Stable 的内容。
 
 本整合包使用语义化版本，与 So-VITS 官方版本号独立发展。如无特殊说明，整合包的最新版本将始终与官方同步更新。您可以在更新日志中查看本整合包最新的版本说明。
 
-## **Checklist **
+## Checklist
 
 为了避免在之后的使用中出现各种意料之外的问题，请务必对照下面的 Checklist 检查本机环境。
 
@@ -400,7 +395,7 @@ So-VITS 官方版本号目前为 4.1，其下另有两个分支：4.1-Stable 以
 
 ⏩从外部转移模型时，只要将对应的文件放置到上述的对应位置即可。模型的文件名可以任意更改，但请保持后缀不变。聚类模型和扩散模型使用的是同一个后缀（。pt），请在重命名时显著区分这两种模型。
 
-⚠️从云端下载模型时，请务必注意只有"G_"模型才是推理可用的模型。错误下载"D_"模型将无法正常推理。
+⚠️从云端下载模型时，请务必注意只有 `G_` 模型才是推理可用的模型。错误下载 `D_` 模型将无法正常推理。
 
 ⏩你需要首先上传一段输入源音频才能进行转换，优秀的输入源音频的要求是：
 
@@ -408,9 +403,9 @@ So-VITS 官方版本号目前为 4.1，其下另有两个分支：4.1-Stable 以
 
 ●WAV 格式，44100 hz，16 bit
 
-⏩整合包中预装了 FFmpeg，因此即便不是 44100 hz， 16 bit 的 WAV 文件也可以上传。
+⏩整合包中预装了 `FFmpeg`，因此即便不是 44100 hz，16 bit 的 WAV 文件也可以上传。
 
-## **※免责声明※**
+## ※免责声明※
 
 为避免可能的法律纠纷和道德风险，使用者在使用该整合包前，请务必仔细阅读本条款并同意本声明。使用者使用本整合包的行为以及通过各类方式利用本整合包的行为，都将被视作是对本声明全部内容的无异议的认可。
 
@@ -426,47 +421,47 @@ So-VITS 官方版本号目前为 4.1，其下另有两个分支：4.1-Stable 以
 
 以上声明内容的最终解释权归整合包作者（bilibili@羽毛布団）所有，因使用者违反上述条款中的任意一条或多条而造成的一切后果，均由使用者本人承担，与整合包作者、项目作者以及 So-VITS 社区无关，特此声明。
 
-# **常见报错和解决方案**
+# 常见报错和解决方案
 
 报错：页面文件太小，无法完成操作。
 
 答：增大系统虚拟内存大小，方法各种地方都能搜得到，不展开了。
 
-报错：torch.cuda.OutOfMemoryError： CUDA out of memory
+报错：`torch.cuda.OutOfMemoryError`： CUDA out of memory
 
 答：爆显存了，训练遇到的话调小批量大小，推理遇到的话使用强制切片
 
-RuntimeError: DataLoader worker （pid（s） xxxx） exited unexpectedly
+`RuntimeError: DataLoader worker （pid（s） xxxx） exited unexpectedly`
 
 答：把虚拟内存再调大一点。
 
-报错：CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling 'cublasCreate（handle）'
+报错：CUDA error: `CUBLAS_STATUS_NOT_INITIALIZED` when calling `cublasCreate（handle）`
 
 答：爆显存了，基本上跟 CUDA 有关的报错大都是爆显存……
 
-报错：torch.multiprocessing.spawn.ProcessExitedException： process 0 terminated with exit code 3221225477
+报错：`torch.multiprocessing.spawn.ProcessExitedException`： process 0 terminated with exit code 3221225477
 
 答：调大虚拟内存
 
-报错：'HParams' object has no attribute 'xxx'
+报错：`'HParams' object has no attribute 'xxx'`
 
 答：无法找到音色，一般是配置文件和模型没对应，打开配置文件拉到最下面看看有没有你训练的音色
 
 报错：The expand size of the tensor （768） must match the existing size （256） at non-singleton dimension 0。
 
-答：把 dataset/44k 下的内容全部删了，重新走一遍预处理流程
+答：把 `dataset/44k` 下的内容全部删了，重新走一遍预处理流程
 
 报错：Given groups=1， weight of size [xxx， 256， xxx]， expected input[xxx， 768， xxx] to have 256 channels， but got 768 channels instead
 
-答：vec256 的模型用了 vec768 的配置文件，如果上面报错的 256 的 768 位置反过来了那就是 vec768 的模型用了 vec256 的配置文件，请参考本文的的旧模型兼容，确认你的配置文件和模型维度对应。
+答：`vec256` 的模型用了 `vec768` 的配置文件，如果上面报错的 256 的 768 位置反过来了那就是 `vec768` 的模型用了 `vec256` 的配置文件，请参考本文的的旧模型兼容，确认你的配置文件和模型维度对应。
 
 报错：配置文件中的编码器与模型维度不匹配
 
-答：在修改配置文件中的 "speech_encoder" 时修改错了，检查配置文件中的"ssl_dim"一项，如果这项是 256，那你的 speech_encoder 应当修改为"vec256l9"，如果是 768，则是"vec768l12"
+答：在修改配置文件中的 `speech_encoder` 时修改错了，检查配置文件中的 `ssl_dim` 一项，如果这项是 256，那你的 `speech_encoder` 应当修改为 `vec256l9`，如果是 768，则是 `vec768l12`
 
 报错：模型说话人数量与 emb 维度不匹配
 
-答：配置文件中的"n_speakers"一项与模型中实际的说话人数量不一致。你应当将"n_speaker"修改为模型中实际的说话人数量。当然，出现这一错误更有可能是你没有选择模型对应的配置文件。
+答：配置文件中的 `n_speakers` 一项与模型中实际的说话人数量不一致。你应当将 `n_speaker` 修改为模型中实际的说话人数量。当然，出现这一错误更有可能是你没有选择模型对应的配置文件。
 
 报错：配置文件与模型不匹配
 
@@ -476,6 +471,6 @@ RuntimeError: DataLoader worker （pid（s） xxxx） exited unexpectedly
 
 答：关闭全局🪜
 
-报错：error: emb_g.weight is not in the checkpoint
+报错：error: `emb_g.weight` is not in the checkpoint
 
 答：这其实不是报错，首次训练时出现这一条恰恰说明你的底模被成功加载了，属于正常现象，不用担心。

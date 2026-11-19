@@ -1,8 +1,9 @@
+
 # Google GenAI 提示库
 
-> 来源：[https://my.feishu.cn/docx/CeQrdq27To1l8hxnTMycf3A3noe](https://my.feishu.cn/docx/CeQrdq27To1l8hxnTMycf3A3noe)
+> 来源：[`https://my.feishu.cn/docx/CeQrdq27To1l8hxnTMycf3A3noe`](https://my.feishu.cn/docx/CeQrdq27To1l8hxnTMycf3A3noe)
 
-https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-gallery?hl=zh-cn
+[`https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-gallery?hl=zh-cn`](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-gallery?hl=zh-cn)
 
 # 广告系列
 

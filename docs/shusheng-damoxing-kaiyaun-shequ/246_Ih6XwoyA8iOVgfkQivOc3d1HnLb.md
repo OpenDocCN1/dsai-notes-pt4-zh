@@ -1,3 +1,4 @@
+
 # AI 知识库
 
 > 来源：[https://aicarrier.feishu.cn/docx/JBDxdWboioF4rax3OuLcjAI9nyb](https://aicarrier.feishu.cn/docx/JBDxdWboioF4rax3OuLcjAI9nyb)
@@ -6,4 +7,4 @@
 
 降低大模型学习门槛，帮助xxx学习大模型上下游知识
 
-**文档（优先）——> PPT (次优先) ——>5分钟短**视频（关键操作图+背景音乐+醒目的标题）
+文档（优先）——> PPT (次优先) ——>5分钟短视频（关键操作图+背景音乐+醒目的标题）

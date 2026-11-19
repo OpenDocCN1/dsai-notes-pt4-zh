@@ -1,3 +1,4 @@
+
 # 企业AIGC 商业落地应用研究报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/NzTMd8tCkoyQrwxEaKjcC6Rensm](https://agijuejin.feishu.cn/docx/NzTMd8tCkoyQrwxEaKjcC6Rensm)

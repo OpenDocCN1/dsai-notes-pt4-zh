@@ -1,8 +1,11 @@
+
 # B 端软件文档材料写作助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Aj5Xda5C2oapTOxWvUJc5ZGBnTb](https://vxc3hj17dym.feishu.cn/docx/Aj5Xda5C2oapTOxWvUJc5ZGBnTb)
 
-**关于作者：**[一泽 Eze 的个人说明书｜知识库 Index](https://zkv549gmz8.feishu.cn/wiki/PzUsw69neimLuakaz4Wc85mwnBe?from=from_copylink)
+### 关于作者
+
+[一泽 Eze 的个人说明书｜知识库 Index](https://zkv549gmz8.feishu.cn/wiki/PzUsw69neimLuakaz4Wc85mwnBe?from=from_copylink)
 
 ```
 # Role

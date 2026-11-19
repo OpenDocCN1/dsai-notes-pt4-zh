@@ -1,6 +1,7 @@
+
 # 联网搜索验证「AI 生成内容」是否准确可信
 
-> 来源：[https://my.feishu.cn/docx/SoWtdwpUfo1KNbxltsZcyHf9nuh](https://my.feishu.cn/docx/SoWtdwpUfo1KNbxltsZcyHf9nuh)
+> 来源：[`https://my.feishu.cn/docx/SoWtdwpUfo1KNbxltsZcyHf9nuh`](https://my.feishu.cn/docx/SoWtdwpUfo1KNbxltsZcyHf9nuh)
 
 ## AI 写作虽好，但“翻车”风险也不小，一个 Prompt 助力快速“验明正身”！
 
@@ -10,7 +11,7 @@
 
 ## AI 写作“翻车”怎么办？ 这款 Prompt 帮你快速“验明正身”！
 
-## 简洁版
+### 简洁版
 
 ```
 ## 任务：
@@ -37,20 +38,19 @@
 
 ## 请提供以下信息:
 
-```
 {输入需要验证的文本内容}
+
 ```
 
-## 示例:
+### 示例
 
 - **我提供的文本内容:**
 “2022年世界杯冠军是巴西队，决赛中他们以3:0战胜了法国队。”
 
 - **AI 输出:**
 “文本内容存在事实错误：原文“2022年世界杯冠军是巴西队，决赛中他们以3:0战胜了法国队。”，实际上2022年世界杯冠军是阿根廷队，他们在决赛中通过点球大战战胜了法国队。” 
-```
 
-## 复杂版
+### 复杂版
 
 ```
 **任务：** 验证我提供的文本内容是否准确可信。

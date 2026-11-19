@@ -1,3 +1,4 @@
+
 # 20251007-OpenAI开发者大会：不止GPT-5 Pro，ChatGPT正在变成一个操作系统
 
 > 来源：[https://aigcreative.feishu.cn/docx/SlrMd8bqvoFi9vxdBnfcKahanTe](https://aigcreative.feishu.cn/docx/SlrMd8bqvoFi9vxdBnfcKahanTe)
@@ -12,11 +13,9 @@
 
 ![](img/dec800d7ebff80b68cc89933abfac53e.png)
 
-# 01.最重要的变化：ChatGPT 正在变成一个平台
+## 01.最重要的变化：ChatGPT 正在变成一个平台
 
 **这次开发者大会，最核心的，就是** “Apps in ChatGPT”。
-
-![](img/e447feb6a759eddf15c6d3c01a663817.png)
 
 [Apps in ChatGPT.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JCZQbHMkMou1gQxsP8GcD9jCnzb)
 
@@ -52,29 +51,29 @@ OpenAI 的目标，是想把 ChatGPT 从一个“问答工具”，变成一个�
 
 所以，这次发布会传递出的一个清晰信号是：ChatGPT 的定位正在发生根本性的转变。
 
-# 02.为开发者铺路：让开发 AI 应用更简单
+## 02.为开发者铺路：让开发 AI 应用更简单
 
-有了平台的想法，那下一步自然就是吸引开发者。这次 OpenAI 推出的 AgentKit 工具包，就是干这个的。
+有了平台的想法，那下一步自然就是吸引开发者。这次 OpenAI 推出的 `AgentKit` 工具包，就是干这个的。
 
 ![](img/eb6104c18298cc71c3d58dd20420146d.png)
 
 简单来说，这是一套为了降低 AI 代理（Agent）开发门槛的工具集合。
 
-以前，开发者想要做一个能连接外部数据、能执行复杂任务的 AI 应用，需要自己处理很多繁琐的事情。现在 AgentKit 把很多工作都打包好了。
+以前，开发者想要做一个能连接外部数据、能执行复杂任务的 AI 应用，需要自己处理很多繁琐的事情。现在 `AgentKit` 把很多工作都打包好了。
 
 ![](img/9115f6889b803d368128d8ffafdf62d2.png)
 
 [Intro to Agent Builder (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IErzbDqvEoIGnyxVapzczQCpnJg)
 
-比如里面的 Agent Builder，提供了一个可视化的界面，让开发者可以通过拖拽组件的方式来设计 AI 的工作流程，这对于代码能力没那么强的开发者来说，友好很多。
+比如里面的 `Agent Builder`，提供了一个可视化的界面，让开发者可以通过拖拽组件的方式来设计 AI 的工作流程，这对于代码能力没那么强的开发者来说，友好很多。
 
-还有像 ChatKit，可以让你很方便地在自己的 App 里嵌入一个类似 ChatGPT 的聊天界面，省去了自己从头开发的麻烦。
+还有像 `ChatKit`，可以让你很方便地在自己的 App 里嵌入一个类似 ChatGPT 的聊天界面，省去了自己从头开发的麻烦。
 
-我个人觉得特别实用的是 Guardrails（护栏）功能。它能帮助开发者更好地控制 AI 的行为，比如设定规则，防止它泄露用户的个人信息，或者输出不合规的内容。这在开发一个真正能上线给用户使用的产品时，是非常重要的。
+我个人觉得特别实用的是 `Guardrails`（护栏）功能。它能帮助开发者更好地控制 AI 的行为，比如设定规则，防止它泄露用户的个人信息，或者输出不合规的内容。这在开发一个真正能上线给用户使用的产品时，是非常重要的。
 
 总的来说，OpenAI 就是在告诉所有开发者：来我的平台上开发应用吧，我已经把路都给你们铺好了，你们只需要专注于创意就行。
 
-# 03.模型更新：更强的 Pro 版和更实用的迷你版
+## 03.模型更新：更强的 Pro 版和更实用的迷你版
 
 当然，每次发布会都少不了模型本身的更新。
 
@@ -90,13 +89,13 @@ GPT-5 Pro 来了，并且已经可以在 API 中使用。从 “Pro” 这个名
 
 ![](img/54e255d1a2f1bab48b1c13bac1ed13fb.png)
 
-不过，除了这些“大家伙”，我个人觉得，这次发布的两个mini模型也同样重要：一个是用于实时语音的 gpt-realtime-mini，另一个是用于图像生成的 gpt-image-1-mini。
+不过，除了这些“大家伙”，我个人觉得，这次发布的两个mini模型也同样重要：一个是用于实时语音的 `gpt-realtime-mini`，另一个是用于图像生成的 `gpt-image-1-mini`。
 
 它们最大的特点就是便宜和快。便宜了 70%-80%，这个降价幅度非常可观。成本降下来，就意味着更多中小型开发者或者个人爱好者，有能力去尝试开发一些有趣的语音助手和图像应用。
 
 一个技术想要普及，成本永远是关键因素之一。
 
-# 04.支撑一切的基础：算力
+## 04.支撑一切的基础：算力
 
 发布了这么多强大的模型和平台功能，背后都需要海量的计算资源来支撑。
 
@@ -116,4 +115,4 @@ GPT-5 Pro 来了，并且已经可以在 API 中使用。从 “Pro” 这个名
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

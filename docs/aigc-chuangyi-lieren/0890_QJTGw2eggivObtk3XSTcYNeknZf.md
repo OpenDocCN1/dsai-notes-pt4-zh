@@ -1,18 +1,15 @@
+
 # 工具：Udio
 
 > 来源：[https://aigcreative.feishu.cn/docx/MQfld0cvlofycExd7qYcwsFenGh](https://aigcreative.feishu.cn/docx/MQfld0cvlofycExd7qYcwsFenGh)
 
-# Suno劲敌来了：Udio，让每个人都成为音乐创作大师！
+## Suno劲敌来了：Udio，让每个人都成为音乐创作大师！
 
 过去，音乐创作似乎一直是那些拥有专业技能的音乐人的专利，离我们平常人很遥远。
 
 但是，在这个人工智能技术飞速发展的时代，特别是进入了大模型发展时期，艺术创作领域似乎开始慢慢发生变化：
 
-可以使用Midjourney等工具轻松创作一幅很有创意的艺术作品；
-
-可以使用Sora（还未开放）等视频工具创作一部媲美好莱坞的电影;
-
-前不久，Suno震撼发布，它让我们每个人都体验了一把自己创作音乐的乐趣！让音乐创作不再是那么遥远。
+可以使用Midjourney等工具轻松创作一幅很有创意的艺术作品；可以使用Sora（还未开放）等视频工具创作一部媲美好莱坞的电影；前不久，Suno震撼发布，它让我们每个人都体验了一把自己创作音乐的乐趣！让音乐创作不再是那么遥远。
 
 ![](img/f05dae7f93a8d0ea84d49ab158e31f10.png)
 
@@ -64,4 +61,4 @@ Suno、Udio的出现无疑为音乐产业带来了新的活力。它降低了音
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

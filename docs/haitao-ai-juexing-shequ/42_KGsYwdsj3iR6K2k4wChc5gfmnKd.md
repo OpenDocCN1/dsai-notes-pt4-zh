@@ -1,14 +1,15 @@
+
 # 视频混剪工作流|商业思维认知提升版本
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/DjNFdkJbQonbzNxdxcxcySnMnlc](https://zinxkclpk97.feishu.cn/docx/DjNFdkJbQonbzNxdxcxcySnMnlc)
 
 ![](img/789d77daa02af81d8f59f0157e1fe96c.png)
 
-[工作流复制演示.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HMXPbQha9ox8wgxj2JMc🐧3KndH)
+[`工作流复制演示.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HMXPbQha9ox8wgxj2JMc🐧3KndH)
 
-## **专属通道：👉a**[**pi_token注册获取**](https://ts.fyshark.com/#/userInfo?user_id=7358)
+## 专属通道：👉a [`pi_token`注册获取](https://ts.fyshark.com/#/userInfo?user_id=7358)
 
-## **更多案例：**[Coze智能体高阶案例（VIP专属版）](https://zinxkclpk97.feishu.cn/wiki/XFcWwmKSGirqXTkJGZScqvZLnWb?fromScene=spaceOverview)
+## 更多案例：[Coze智能体高阶案例（VIP专属版）](https://zinxkclpk97.feishu.cn/wiki/XFcWwmKSGirqXTkJGZScqvZLnWb?fromScene=spaceOverview)
 
 ## 开始节点
 
@@ -36,6 +37,6 @@
 
 ![](img/97cd71c03de883cf9f663646c1fcd97a.png)
 
-[工作流源码.txt](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VxnVb0Cw3ofrWLxq6JzcH2YPnvg)
+[`工作流源码.txt`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VxnVb0Cw3ofrWLxq6JzcH2YPnvg)
 
-专属：👉a[pi_token注册获取](https://ts.fyshark.com/#/userInfo?user_id=7358)
+专属：👉a [`pi_token`注册获取](https://ts.fyshark.com/#/userInfo?user_id=7358)

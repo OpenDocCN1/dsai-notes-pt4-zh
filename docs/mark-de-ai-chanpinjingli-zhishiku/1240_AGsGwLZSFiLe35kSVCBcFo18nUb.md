@@ -1,10 +1,11 @@
+
 # 用DeepSeek和Cursor从零打造智能代码审查工具
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Yp1LdKhero8q2Sx8hLqclAdQnac](https://qqs7y1hozd1.feishu.cn/docx/Yp1LdKhero8q2Sx8hLqclAdQnac)
 
 ## 一、工具选型：深入比较主流AI编程工具
 
-1.1 为什么最终选择DeepSeek+Cursor？
+### 1.1 为什么最终选择DeepSeek+Cursor？
 
 经过两周的对比测试，我们发现不同工具在代码审查场景的表现差异显著：
 
@@ -12,13 +13,13 @@
 
 > 关键发现：
 
-+   DeepSeek在**复杂逻辑分析**和**自定义规则理解**上表现突出
++   DeepSeek在`复杂逻辑分析`和`自定义规则理解`上表现突出
 
-+   Cursor的**智能补全**和**代码重构功能**流畅度最佳
++   Cursor的`智能补全`和`代码重构功能`流畅度最佳
 
 +   两者API兼容性好，可实现1+1>2的效果
 
-1.2 环境搭建与配置秘籍
+### 1.2 环境搭建与配置秘籍
 
 ```
 # 进阶配置（使用pnpm加速依赖安装）
@@ -28,37 +29,37 @@ pnpm add @deepseek/sdk@latest @cursor-so/core@beta
 
 # 关键配置项（.cursor/config.json）
 {
-  &quot;ai&quot;: {
-    &quot;deepseek&quot;: {
-      &quot;apiKey&quot;: &quot;your_key&quot;,
-      &quot;analysisDepth&quot;: &quot;deep&quot;,
-      &quot;contextWindow&quot;: 8192
+  "ai": {
+    "deepseek": {
+      "apiKey": "your_key",
+      "analysisDepth": "deep",
+      "contextWindow": 8192
     },
-    &quot;autocomplete&quot;: {
-      &quot;aggressiveness&quot;: &quot;balanced&quot;,
-      &quot;delayMs&quot;: 200
+    "autocomplete": {
+      "aggressiveness": "balanced",
+      "delayMs": 200
     }
   },
-  &quot;codeReview&quot;: {
-    &quot;strictness&quot;: &quot;high&quot;,
-    &quot;languagePreferences&quot;: [&quot;typescript&quot;, &quot;python&quot;, &quot;go&quot;]
+  "codeReview": {
+    "strictness": "high",
+    "languagePreferences": ["typescript", "python", "go"]
   }
 }
 ```
 
 > **配置技巧：**
 
-+   设置contextWindow为8192可获得更完整的上下文理解
++   设置`contextWindow`为8192可获得更完整的上下文理解
 
-+   将analysisDepth设为"deep"会增加响应时间但提升分析质量
++   将`analysisDepth`设为`"deep"`会增加响应时间但提升分析质量
 
 +   针对不同语言设置特定的审查规则
 
 ## 二、实战开发全记录：从零到生产级应用
 
-2.1 Day1：架构设计与核心模块实现
+### 2.1 Day1：架构设计与核心模块实现
 
-**突破性实践：**使用Cursor的Architecture Generator功能，输入以下prompt：
+**突破性实践：**使用Cursor的`Architecture Generator`功能，输入以下prompt：
 
 > "我需要一个可扩展的智能代码审查系统架构，要求：
 
@@ -70,12 +71,12 @@ pnpm add @deepseek/sdk@latest @cursor-so/core@beta
 
 1.  输出PlantUML架构图"
 
-**Cursor在30秒内生成了包含12**个组件的架构设计，比手动设计节省4小时。
+Cursor在30秒内生成了包含12个组件的架构设计，比手动设计节省4小时。
 
 ```
 // 生成的架构核心代码（经优化后）
 class AICodeReviewEngine {
-  private ruleRegistry: Map&lt;string, IRule&gt;;
+  private ruleRegistry: Map<string, IRule>;
   private cache: ICache;
   private deepSeek: DeepSeek;
 
@@ -85,14 +86,15 @@ class AICodeReviewEngine {
     this.deepSeek = new DeepSeekAdapter(config);
   }
 
-  async review(file: FileContext): Promise&lt;ReviewResult&gt; {
+  async review(file: FileContext): Promise<ReviewResult> {
     const cached = this.cache.get(file.fingerprint);
     if (cached) return cached;
     
     const results = await Promise.all(
       Array.from(this.ruleRegistry.values()).map(
-        rule =&gt; this.applyRule(rule, file)
-    );
+        rule => this.applyRule(rule, file)
+      );
+    )
     
     const finalResult = this.aggregate(results);
     this.cache.set(file.fingerprint, finalResult);
@@ -101,21 +103,21 @@ class AICodeReviewEngine {
 }
 ```
 
-2.2 Day2：深度集成与性能优化
+### 2.2 Day2：深度集成与性能优化
 
 性能调优实战：
 
-1.  **批**处理优化：发现单个文件请求DeepSeek API耗时约1.2s，通过实现批量请求将10个文件的处理时间从12s降至3.8s
+1.  批处理优化：发现单个文件请求DeepSeek API耗时约1.2s，通过实现批量请求将10个文件的处理时间从12s降至3.8s
 
 ```
 // 批量处理实现
-async function batchReview(files: FileContext[]): Promise&lt;ReviewResult[]&gt; {
+async function batchReview(files: FileContext[]): Promise<ReviewResult[]> {
   const batchSize = 10; // 实测最佳批次大小
   const batches = chunk(files, batchSize);
   
   return (await Promise.all(
-    batches.map(async batch =&gt; {
-      const batchCode = batch.map(f =&gt; f.content).join(&#x27;\n//---\n&#x27;);
+    batches.map(async batch => {
+      const batchCode = batch.map(f => f.content).join('\n//---\n');
       const response = await deepSeek.analyze(batchCode);
       return parseBatchResponse(response, batch);
     })
@@ -127,7 +129,7 @@ async function batchReview(files: FileContext[]): Promise&lt;ReviewResult[]&gt; 
 
 ```
 # AST指纹生成算法（Python实现）
-def generate_ast_fingerprint(code: str) -&gt; str:
+def generate_ast_fingerprint(code: str) -> str:
     tree = ast.parse(code)
     normalized = AstNormalizer().visit(tree)
     fingerprint = hashlib.md5(
@@ -138,7 +140,7 @@ def generate_ast_fingerprint(code: str) -&gt; str:
 
 1.  规则引擎优化：将规则匹配从串行改为并行，规则数量增加到50+时仍保持毫秒级响应
 
-2.3 Day3：创新功能开发
+### 2.3 Day3：创新功能开发
 
 实现三大杀手级功能：
 
@@ -196,35 +198,35 @@ func TrackDataFlow(startNode ast.Node, repo *Repository) []DataPath {
 
 ## 四、深度技术解析
 
-4.1 混合分析引擎设计
+### 4.1 混合分析引擎设计
 
 ![](img/8e9e12ed340464dd8ffe7948ad0442f9.png)
 
-4.2 核心算法优化
+### 4.2 核心算法优化
 
 1.  基于注意力机制的代码分析：
 
-+   改造DeepSeek的Transformer模型，增加代码特定注意力头
++   改造DeepSeek的`Transformer`模型，增加代码特定注意力头
 
-+   在自定义数据集上fine-tune后，关键漏洞识别F1值提升至0.91
++   在自定义数据集上`fine-tune`后，关键漏洞识别`F1`值提升至0.91
 
 增量分析技术：
 
 ```
 // 增量分析核心逻辑（Rust实现）
 fn incremental_analysis(
-    &amp;mut self,
-    changes: Vec&lt;FileChange&gt;,
-    base_context: &amp;AnalysisContext
-) -&gt; AnalysisResult {
+    &mut self,
+    changes: Vec<FileChange>,
+    base_context: &AnalysisContext
+) -> AnalysisResult {
     let mut ctx = base_context.clone();
     
     for change in changes {
-        let old_ast = ctx.get_ast(&amp;change.file_path);
-        let new_ast = parse(&amp;change.new_content);
+        let old_ast = ctx.get_ast(&change.file_path);
+        let new_ast = parse(&change.new_content);
         
         let diff = ast_diff(old_ast, new_ast);
-        self.impact_analysis(diff, &amp;mut ctx);
+        self.impact_analysis(diff, &mut ctx);
     }
     
     ctx.into_result()
@@ -233,7 +235,7 @@ fn incremental_analysis(
 
 ## 五、经验总结与行业展望
 
-5.1 收获的六大经验
+### 5.1 收获的六大经验
 
 1.  **Prompt工程法则：**
 
@@ -245,11 +247,11 @@ fn incremental_analysis(
 
 +   设置AI代码的"三重验证"流程：
 
-1.  静态分析检查
+    1.  静态分析检查
 
-1.  单元测试覆盖
+    1.  单元测试覆盖
 
-1.  人工重点复核
+    1.  人工重点复核
 
 1.  **性能平衡点：**
 
@@ -271,7 +273,7 @@ fn incremental_analysis(
 
 +   每周进行效果评估和规则调整
 
-5.2 AI编程的未来预测
+### 5.2 AI编程的未来预测
 
 1.  2024-2025趋势：
 

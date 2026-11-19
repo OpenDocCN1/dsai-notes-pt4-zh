@@ -1,10 +1,11 @@
+
 # AI+编程
 
 > 来源：[https://datawhaler.feishu.cn/docx/WKdkdFQAtoVArhx02rhcYgxon9c](https://datawhaler.feishu.cn/docx/WKdkdFQAtoVArhx02rhcYgxon9c)
 
 > 本教程内容已上线至官网，具体内容可至官网学习：https://www.datawhale.cn/learn/summary/58
 
-# 学习提要
+## 学习提要
 
 欢迎大家参与OPEN AI通识课共学系列之【AI+编程入门】学习活动
 

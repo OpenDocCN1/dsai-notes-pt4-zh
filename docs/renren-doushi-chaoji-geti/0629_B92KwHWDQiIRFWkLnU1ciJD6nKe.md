@@ -1,8 +1,9 @@
+
 # 2025-03-14📕一键提取图文标题到飞书多维表格
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/OrFCd1kFjovBz0xOTRrcKOjOnWd](https://xuqiwei1986.feishu.cn/docx/OrFCd1kFjovBz0xOTRrcKOjOnWd)
+> 来源：https://xuqiwei1986.feishu.cn/docx/OrFCd1kFjovBz0xOTRrcKOjOnWd
 
-> 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/4848115458812548)ticleDetail/xq_t...
+> 🔗 原文链接：https://scys.com/articleDetail/xq_topic/4848115458812548
 
 各位赚钱的圈友，大家好，我是富贵。
 
@@ -14,13 +15,17 @@
 
 因为我们的技术同学不是专业搞AI的，也许文档里会有很多本可以简化的弯路，如果AI行业相关的圈友，还请大家帮忙多提建议呀。
 
-# **图文配置教程（苹果手机版）**
+# 图文配置教程（苹果手机版）
 
-总流程：核心逻辑就是通过快捷指令调用API接口执行coze工作流，需要使用coze的token+workflowid
+## 总流程
 
-第一步：然后coze工作流做的工作是识别app的短连接还原成长连接或者复制的就是长连接，然后请求📕接口第二步：返回相关参数，通过JavaScript脚本整合json保存变量然后调用飞书表格API接口
+核心逻辑就是通过快捷指令调用API接口执行coze工作流，需要使用coze的`token`+`workflowid`
 
-第三步：飞书表格接口需要授权+请求表格base路径+表格id
+第一步：coze工作流做的工作是识别app的短连接还原成长连接或者复制的就是长连接，然后请求📕接口
+
+第二步：返回相关参数，通过JavaScript脚本整合json保存变量然后调用飞书表格API接口
+
+第三步：飞书表格接口需要授权+请求表格`base`路径+表格id
 
 第四步：飞书表格我共享的模版会自动把图片链接转附件加入飞书表格显示封面
 
@@ -28,19 +33,19 @@
 
 最终效果呈现苹果手机点击📕笔记链接，一键同步到飞书多维表格，因为教程是刚写，所有还有很多复杂的场景都可以实现，比如直接拆解爆款视频，爆款图文，进行二创，根据比较生成词云等等，待完善
 
-## **一、飞书账号准备**
+## 一、飞书账号准备
 
-飞书官网： https://www.feishu.cn/
+飞书官网：https://www.feishu.cn/
 
 如果已经注册过飞书账号，这一步跳过，直接看第二步。
 
-**1.注册飞书账号**
+### 1.注册飞书账号
 
-1.1、访问 [https://accounts.feishu.cn/accounts/page/login?app_id=11&no_trap=1&redirect_](https://accounts.feishu.cn/accounts/page/login?app_id=11&no_trap=1&redirect_uri=https://www.feishu.cn/login_redirect&template_id=7159153320657698818)uri=https%3A%2F%2Fwww.feishu.cn%2Flogin_redirect&template_id=7159153320657698818
+1.1、访问 [https://accounts.feishu.cn/accounts/page/login?app_id=11&no_trap=1&redirect_uri=https://www.feishu.cn/login_redirect&template_id=7159153320657698818](https://accounts.feishu.cn/accounts/page/login?app_id=11&no_trap=1&redirect_uri=https://www.feishu.cn/login_redirect&template_id=7159153320657698818)
 
 1.2、填写手机号完成注册
 
-**2.创建企业**
+### 2.创建企业
 
 2.1.1、登录后点击"创建企业"
 
@@ -48,7 +53,7 @@
 
 2.1.3、完成企业创建
 
-## **二、创建多维表格**
+## 二、创建多维表格
 
 1.打开模板链接（需要运营提供模板链接）。要先登录飞书账号在打开哈。
 
@@ -64,19 +69,19 @@
 
 ![](img/3c98e622f8d8a8987f6b9b9c00df34a0.png)
 
-[4](http://feishu.cn/base/%E5%BC%80%E5%A4%B4%E7%9A%84%E3%80%82%E5%A6%82%E6%9E%9C%E4%B8%8D%E6%98%AF%E7%9A%84%E8%AF%9D%EF%BC%8C%E8%A6%81%E5%88%A0%E9%99%A4%E6%A8%A1%E6%9D%BF%EF%BC%8C%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E5%A4%9A%E7%BB%B4%E8%A1%A8%E6%A0%BC%EF%BC%88%E5%B0%B1%E6%98%AF%E6%8C%89%E7%AC%AC%E4%B8%80%E6%AD%A5%E9%87%8D%E6%96%B0%E6%93%8D%E4%BD%9C%EF%BC%89%EF%BC%8C%E4%B8%8D%E7%84%B6%E7%94%A8%E4%B8%8D%E4%BA%86%E5%93%88%E3%80%82).确认一下模板链接是以xxx. feishu.cn/base/开头的。如果不是的话，要删除模板，重新创建多维表格（就是按第一步重新操作），不然用不了哈。
+4.确认一下模板链接是以`xxx.feishu.cn/base/`开头的。如果不是的话，要删除模板，重新创建多维表格（就是按第一步重新操作），不然用不了哈。
 
 ![](img/812343745de5c4ee105f0adb7a4b8677.png)
 
-5.点击右上角‘分享’，弹框下面的权限把 ‘可阅读’ 切换到 ‘可编辑’。
+5.点击右上角‘分享’，弹框下面的权限把‘可阅读’切换到‘可编辑’。
 
 ![](img/80c0fd891ffae32d71249406dbe53acb.png)
 
 6.在浏览器顶部多维表格链接里，记录以下信息：
 
-复制 URL 中的 多维表格Token （即 base/后面的字符串）
+复制 URL 中的 `多维表格Token`（即 `base/` 后面的字符串）
 
-复制当前表格的 表格ID （即 table=后面的字符串）
+复制当前表格的 `表格ID`（即 `table=` 后面的字符串）
 
 **这两个信息要保存好，等会用到。**
 
@@ -84,7 +89,9 @@
 
 ![](img/68da3874e8cec5c1fd3c266fd0fdc132.png)
 
-# 使用飞书或者抖音扫码都可以
+## 三、coze工作流配置
+
+使用飞书或者抖音扫码都可以
 
 ![](img/7d21f446c47a033ffd70bb931c2f5deb.png)
 
@@ -114,6 +121,7 @@
 
 ### 代码内容
 
+```
 // 在这里，您可以通过 ‘params’ 获取节点中的输入变量，并通过 'ret' 输出结果
 
 // 'params' 和 'ret' 已经被正确地注入到环境中
@@ -165,6 +173,7 @@ info: records
 return ret;
 
 }
+```
 
 ![](img/94134dea299b09ec0fc81bc61f1a24d8.png)
 
@@ -178,7 +187,7 @@ return ret;
 
 ![](img/cc78afb071e32bf86e4bbc405398e225.png)
 
-使用接口调用需要获取token和workflowid
+使用接口调用需要获取`token`和`workflowid`
 
 ![](img/313e194f85c716e79fd1c40f740f08b1.png)
 
@@ -194,13 +203,13 @@ return ret;
 
 ![](img/ba3aeb63f62f0c4585aceec9f7ccc964.png)
 
-## 随便填写一个📕笔记链接
+### 四、随便填写一个📕笔记链接
 
-[htt](https://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_source=pc_user&xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=)ps://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=&xsec_source=pc_user
+[https://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_source=pc_user&xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=&xsec_source=pc_user](https://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_source=pc_user&xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=&xsec_source=pc_user)
 
 填写的格式是这样
 
-"url": " [htt](https://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_source=pc_user%22&xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=)ps://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=&xsec_source=pc_user"
+"url": "https://www.xiaohongshu.com/explore/67bc5f55000000000900e3dc?xsec_token=ABg1aRY_LIGGAmq12SC74oFzz6Ig-ZCelcWkBM2te5YyA=&xsec_source=pc_user"
 
 ![](img/c3a23f7733c23d02043bbafa5c34e47c.png)
 
@@ -220,19 +229,19 @@ return ret;
 
 ![](img/d52b6ad9b02103617958a609d57332e8.png)
 
-测试成功只需要2个参数给苹果快捷指令即可1 token 2 workflow_id
+测试成功只需要2个参数给苹果快捷指令即可`token` 2 `workflow_id`
 
 ### 五、获取快捷指令
 
 5.1、在 苹果手机浏览器或🛰️ 上打开链接，点击获取快捷指令
 
-[h](https://www.icloud.com/shortcuts/391e0cd9346c4fdf8fa100ae37e573ee)ttps://www.icloud.com/shortcuts/391e0cd9346c4fdf8fa100ae37e573ee
+[https://www.icloud.com/shortcuts/391e0cd9346c4fdf8fa100ae37e573ee](https://www.icloud.com/shortcuts/391e0cd9346c4fdf8fa100ae37e573ee)
 
 5.2、在手机上打开快捷指令应用，点击‘自动选题库’
 
 ![](img/cb4db80c6184b393dcc44ff07e9ef4d2.png)
 
-5.3、向下滑，找到图片中这条链接， 把获得的Token以及coze工作流填入(即&token=后面添加) ，填写完点击右上角的 ‘x’ 就可以了。
+5.3、向下滑，找到图片中这条链接， 把获得的`Token`以及coze工作流填入(即`&token=`后面添加) ，填写完点击右上角的 ‘x’ 就可以了。
 
 ![](img/0c621a3533ee9a8bdd8d0dfbd7f0be2b.png)
 
@@ -280,13 +289,13 @@ return ret;
 
 注意事项：
 
-1.请妥善保管 Token，不要泄露给他人
+1.请妥善保管 `Token`，不要泄露给他人
 
 2.如遇同步失败，请检查：
 
 网络连接是否正常
 
-Token 是否正确
+`Token` 是否正确
 
 飞书应用权限是否正常
 
@@ -312,11 +321,11 @@ Token 是否正确
 
 ![](img/0d03160f9a51ed4365864e0ba1da5432.png)
 
-6.下载后把文件名改成one.csv，方便上传到deepseek对话
+6.下载后把文件名改成`one.csv`，方便上传到deepseek对话
 
 ![](img/d790bb09384f20adff3fc73396a70ef9.png)
 
-7.在deepseek页面对话框，点击‘大头针’logo按钮，上传one.csv文件
+7.在deepseek页面对话框，点击‘大头针’logo按钮，上传`one.csv`文件
 
 ![](img/81c2ae3254405190ea5ef44b80e69bbf.png)
 
@@ -324,9 +333,9 @@ Token 是否正确
 
 8.把提示词模板，复制到对话框里，点击‘发送’，deepseek就会自动分析笔记内容
 
-**提示词模板： ****↓↓↓**
+**提示词模板：↓↓↓**
 
-根据one.csv文件是📕笔记内容，请分析出笔记的内容结构、标题公式、情感分析、关键词，标签分布、智能打标签、笔记内容结构。
+根据`one.csv`文件是📕笔记内容，请分析出笔记的内容结构、标题公式、情感分析、关键词，标签分布、智能打标签、笔记内容结构。
 
 1.标题公式：根据笔记标题划分笔记类型，分析标题特点和结构，最好能总结出公式、常用的关键词
 

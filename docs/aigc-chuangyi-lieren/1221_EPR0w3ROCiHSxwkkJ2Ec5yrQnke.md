@@ -1,3 +1,4 @@
+
 # 20240318-重磅！埃隆·马斯克再次颠覆科技界：xAI的Grok-1大语言模型开源发布
 
 > 来源：[https://aigcreative.feishu.cn/docx/LQDrddJsLot9zMxHsN5c4Zt7nrf](https://aigcreative.feishu.cn/docx/LQDrddJsLot9zMxHsN5c4Zt7nrf)
@@ -22,7 +23,7 @@ Grok-1的另一个引人注目的特性是它的封面配图，这是通过人�
 
 ![](img/708a17702624d423af2fab25d7766592.png)
 
-现在，任何人都可以通过访问GitHub页面https://github.com/xai-org/grok来下载Grok-1模型。这不仅仅是一个模型的下载，更是一次与未来对话的开始。你可以用它来开发新的应用，或者仅仅是为了满足你对人工智能的好奇心。
+现在，任何人都可以通过访问GitHub页面`https://github.com/xai-org/grok`来下载Grok-1模型。这不仅仅是一个模型的下载，更是一次与未来对话的开始。你可以用它来开发新的应用，或者仅仅是为了满足你对人工智能的好奇心。
 
 ![](img/096c40d34ff9bd4a4157790c3aa7e7c9.png)
 

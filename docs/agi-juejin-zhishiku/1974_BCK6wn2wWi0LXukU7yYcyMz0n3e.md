@@ -1,8 +1,7 @@
-# 06.10-Hugging Face 公布 4.5 亿参数开源机器人模型 SmolVLA，消费级硬件设备即可运行
-
-> 来源：[https://agijuejin.feishu.cn/docx/S3pud4Ly4oRToDxrDPycsGTonYc](https://agijuejin.feishu.cn/docx/S3pud4Ly4oRToDxrDPycsGTonYc)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 06 月 10 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/S3pud4Ly4oRToDxrDPycsGTonYc](https://agijuejin.feishu.cn/docx/S3pud4Ly4oRToDxrDPycsGTonYc)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -17,8 +16,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/859/472.htm)
 ![](img/a3ee8cb3ecb0ab0497ad468bb0fe140b.png)
 
 6 月 9 日，Hugging Face 公布 4.5 亿参数开源机器人模型 SmolVLA。它主打高普适性，能在消费级硬件运行，用公开数据集训练，降低开发者入门成本。模型结合特定结构与解码器，采用四项优化技术，训练策略独特。虽训练数据少，但在模拟和真实场景表现佳，还引入新架构提升实用性。基准测试显示性能优于竞品，基础模型已上线，训练方法公开。
-
-## 🌟 技术突破
 
 ### 💡 数学圈地震！o3靠直觉刷爆人类顶尖难题，14位专家集体破防
 

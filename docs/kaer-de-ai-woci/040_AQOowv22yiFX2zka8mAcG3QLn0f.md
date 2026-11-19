@@ -1,3 +1,4 @@
+
 # Claude4三项实测
 
 > 来源：[https://aiwarts101.feishu.cn/docx/YnkJdzH9oolx5yxgo3wcg5M9nLg](https://aiwarts101.feishu.cn/docx/YnkJdzH9oolx5yxgo3wcg5M9nLg)
@@ -19,13 +20,13 @@ https://www.anthropic.com/news/activating-asl3-protections
 https://www.anthropic.com/news/claude-4
 ```
 
-https://claude.ai/public/artifacts/aefd3f47-b85a-4db4-831f-6be1fe1e695c
+`https://claude.ai/public/artifacts/aefd3f47-b85a-4db4-831f-6be1fe1e695c`
 
 ## 文本转网页2
 
 ```
 你是一名专业的网页设计师和前端**开发专家，对现代**** Web **设计趋势**和最佳实践有**深入理解**，尤其擅**长创造具**有极高审美**价值的用**户界面。你**的设计作**品不仅功能**完备，而且在视觉**上令人**惊叹，能**够给用户带**来强烈的**&quot;Ah**a-mo**men**t&quot;体验**。
-请根据最****后提供的内**[容，设](https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css](https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css)[计一个](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css)[美观、现代、易读的&quot;中文&quot;可视化网页。请充分发挥你的专业判断，选择最能体现内容精髓的设计风格、配色方案、排版和布局。
+请根据最****后提供的内**[容，设](https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css)[计一个](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css)[美观、现代、易读的&quot;中文&quot;可视化网页。请充分发挥你的专业判断，选择最能体现内容精髓的设计风格、配色方案、排版和布局。
 设计目标：
 *   视觉吸引力： 创造一个在视觉上令人印象深刻的网页，能够立即吸引用户的注意力，并激发他们的阅读兴趣。
 *](https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap](https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap)[   ](https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js](https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js)**可读性： 确**保内容清**晰易读，**无论在桌**面端还是移**动端，都**能提供舒适****的阅读体验**[。](https://www.anthropic.com/news/agent-capabilities-api)[
@@ -57,8 +58,8 @@ https://claude.ai/public/artifacts/aefd3f47-b85a-4db4-831f-6be1fe1e695c
 *   使用 HTML5、Font Awesome、Tailwind CSS 和必要的 JavaScript。
     *   Font Awesome: [https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css](https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css)
     *   Tailwind CSS: [https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css)
-    *   非中文字体: [https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap](https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap)
-    *   font-family: Tahoma,Arial,Roboto,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,&quot;Droid Sans Fallback&quot;,&quot;Heiti SC&quot;,&quot;Hiragino Sans GB&quot;,Simsun,sans-self;
+    *   非中文字体: [https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap](https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap)
+    *   `font-family: Tahoma,Arial,Roboto,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,&quot;Droid Sans Fallback&quot;,&quot;Heiti SC&quot;,&quot;Hiragino Sans GB&quot;,Simsun,sans-self;`
     *   Mermaid: [https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js](https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js)
 *   实现完整的深色/浅色模式切换功能，默认跟随系统设置，并允许用户手动切换。
 *   代码结构清晰、语义化，包含适当的注释。
@@ -74,10 +75,11 @@ https://claude.ai/public/artifacts/aefd3f47-b85a-4db4-831f-6be1fe1e695c
 待处理内容：{{
 https://www.anthropic.com/news/agent-capabilities-api
 https://www.anthropic.com/news/activating-asl3-protections
-https://www.anthropic.com/news/claude-4}}
+https://www.anthropic.com/news/claude-4
+}}
 ```
 
-https://claude.ai/public/artifacts/9e240981-6b34-4c33-9b38-011a069e182f
+`https://claude.ai/public/artifacts/9e240981-6b34-4c33-9b38-011a069e182f`
 
 ## 3D飞行模拟器
 
@@ -99,41 +101,43 @@ Make the controls intuitive and fun, even for someone who isn&#x27;t a pilot.
 The goal is to create a visually engaging, beginner-friendly 3D flight experience using only one file.
 ```
 
-```
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Simple Flight Simulator&lt;/title&gt;
-    &lt;style&gt;
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flight Simulator</title>
+    <style>
         body {
             margin: 0;
             overflow: hidden;
             font-family: Arial, sans-serif;
         }
         #info {
- **           **position: absolute;
+            position: absolute;
             top: 10px;
             left: 10px;
-            col**or: white;
-   **         background: rgba(0,0,0,0.7);
+            color: white;
+            background: rgba(0,0,0,0.7);
             padding: 10px;
             border-radius: 5px;
             z-index: 100;
         }
         #dashboard {
-      **      posit**ion: absolute;
+            position: absolute;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-      **      colo**r: white;
+            color: white;
             background: rgba(0,0,0,0.7);
             padding: 15px;
             border-radius: 10px;
             z-index: 100;
             display: flex;
-            justify**-content: space**-between;
+            justify-content: space-between;
             width: 60%;
             max-width: 800px;
         }
@@ -143,7 +147,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         }
         .gauge-label {
             font-size: 14px;
-   **       **  margin-bottom: 5px;
+            margin-bottom: 5px;
         }
         .gauge-value {
             font-size: 24px;
@@ -153,44 +157,44 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
             font-size: 12px;
             opacity: 0.8;
         }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id=&quot;info&quot;&gt;
-        控制: WASD/方向键控制飞行, 空格加速, Shift减速&lt;br&gt;
-        速度: &lt;span id=&quot;speed&quot;&gt;5&lt;/span&gt;
-    &lt;/div&gt;
+    </style>
+</head>
+<body>
+    <div id="info">
+        控制: WASD/方向键控制飞行, 空格加速, Shift减速<br>
+        速度: <span id="speed">5</span>
+    </div>
 
-    &lt;div id=&quot;dashboard&quot;&gt;
-        &lt;div class=&quot;gauge&quot;&gt;
-            &lt;div class=&quot;gauge-label&quot;&gt;高度&lt;/div&gt;
-            &lt;div class=&quot;gauge-value&quot; id=&quot;altitude&quot;&gt;0&lt;/div&gt;
-            &lt;div class=&quot;gauge-unit&quot;&gt;米&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;gauge&quot;&gt;
-            &lt;div class=&quot;gauge-label&quot;&gt;速度&lt;/div&gt;
-            &lt;div class=&quot;gauge-value&quot; id=&quot;speedometer&quot;&gt;0&lt;/div&gt;
-            &lt;div class=&quot;gauge-unit&quot;&gt;km/h&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;gauge&quot;&gt;
-            &lt;div class=&quot;gauge-label&quot;&gt;俯仰角&lt;/div&gt;
-            &lt;div class=&quot;gauge-value&quot; id=&quot;pitch-indicator&quot;&gt;0&lt;/div&gt;
-            &lt;div class=&quot;gauge-unit&quot;&gt;度&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;gauge&quot;&gt;
-            &lt;div class=&quot;gauge-label&quot;&gt;偏航角&lt;/div&gt;
-            &lt;div class=&quot;gauge-value&quot; id=&quot;yaw-indicator&quot;&gt;0&lt;/div&gt;
-            &lt;div class=&quot;gauge-unit&quot;&gt;度&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;gauge&quot;&gt;
-            &lt;div class=&quot;gauge-label&quot;&gt;坐标&lt;/div&gt;
-            &lt;div class=&quot;gauge-value&quot; id=&quot;position&quot;&gt;0,0&lt;/div&gt;
-            &lt;div class=&quot;gauge-unit&quot;&gt;x,z&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    <div id="dashboard">
+        <div class="gauge">
+            <div class="gauge-label">高度</div>
+            <div class="gauge-value" id="altitude">0</div>
+            <div class="gauge-unit">米</div>
+        </div>
+        <div class="gauge">
+            <div class="gauge-label">速度</div>
+            <div class="gauge-value" id="speedometer">0</div>
+            <div class="gauge-unit">km/h</div>
+        </div>
+        <div class="gauge">
+            <div class="gauge-label">俯仰角</div>
+            <div class="gauge-value" id="pitch-indicator">0</div>
+            <div class="gauge-unit">度</div>
+        </div>
+        <div class="gauge">
+            <div class="gauge-label">偏航角</div>
+            <div class="gauge-value" id="yaw-indicator">0</div>
+            <div class="gauge-unit">度</div>
+        </div>
+        <div class="gauge">
+            <div class="gauge-label">坐标</div>
+            <div class="gauge-value" id="position">0,0</div>
+            <div class="gauge-unit">x,z</div>
+        </div>
+    </div>
 
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script&gt;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
         // Scene setup
         const scene = new THREE.Scene();
         scene.fog = new THREE.Fog(0x87CEEB, 100, 2000);
@@ -359,7 +363,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
                 opacity: 0.8
             });
             
-            for (let i = 0; i &lt; 5; i++) {
+            for (let i = 0; i < 5; i++) {
                 const segment = new THREE.Mesh(cloudGeometry, cloudMaterial);
                 segment.position.set(
                     (Math.random() - 0.5) * 15,
@@ -379,7 +383,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         }
         
         // 添加一些随机位置的云朵
-        for (let i = 0; i &lt; 15; i++) {
+        for (let i = 0; i < 15; i++) {
             const x = (Math.random() - 0.5) * 1000;
             const y = 100 + Math.random() * 150;
             const z = (Math.random() - 0.5) * 1000;
@@ -395,7 +399,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         
         // Add some variation to the ground
         const vertices = groundGeometry.attributes.position.array;
-        for (let i = 0; i &lt; vertices.length; i += 3) {
+        for (let i = 0; i < vertices.length; i += 3) {
             vertices[i + 2] = Math.random() * 2;
         }
         groundGeometry.computeVertexNormals();
@@ -428,7 +432,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
             createBuilding(-100, 200, 45, 70, 45, 0x778899),
         ];
 
-        buildings.forEach(building =&gt; scene.add(building));
+        buildings.forEach(building => scene.add(building));
 
         // Houses
         function createHouse(x, z) {
@@ -465,7 +469,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
             createHouse(-180, 150),
         ];
 
-        houses.forEach(house =&gt; scene.add(house));
+        houses.forEach(house => scene.add(house));
 
         // Trees
         function createTree(x, z) {
@@ -492,7 +496,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         }
 
         // Add trees
-        for (let i = 0; i &lt; 20; i++) {
+        for (let i = 0; i < 20; i++) {
             const x = (Math.random() - 0.5) * 800;
             const z = (Math.random() - 0.5) * 800;
             scene.add(createTree(x, z));
@@ -506,37 +510,37 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         let roll = 0;
 
         // 修复键盘控制，确保事件监听正确捕获所有按键
-        window.addEventListener(&#x27;keydown&#x27;, (e) =&gt; {
+        window.addEventListener('keydown', (e) => {
             keys[e.key.toLowerCase()] = true;
         });
 
-        window.addEventListener(&#x27;keyup&#x27;, (e) =&gt; {
+        window.addEventListener('keyup', (e) => {
             keys[e.key.toLowerCase()] = false;
         });
 
         // 更新速度显示
         function updateSpeedDisplay() {
-            document.getElementById(&#x27;speed&#x27;).textContent = Math.round(speed);
-            document.getElementById(&#x27;speedometer&#x27;).textContent = Math.round(speed * 20);
+            document.getElementById('speed').textContent = Math.round(speed);
+            document.getElementById('speedometer').textContent = Math.round(speed * 20);
         }
 
         // 更新仪表盘
         function updateDashboard() {
             // 高度 - 相对于地面的高度
-            document.getElementById(&#x27;altitude&#x27;).textContent = Math.round(airplane.position.y);
+            document.getElementById('altitude').textContent = Math.round(airplane.position.y);
             
             // 俯仰角 - 将弧度转换为角度并取整
             const pitchDegrees = Math.round((airplane.rotation.x * 180 / Math.PI) % 360);
-            document.getElementById(&#x27;pitch-indicator&#x27;).textContent = pitchDegrees;
+            document.getElementById('pitch-indicator').textContent = pitchDegrees;
             
             // 偏航角 - 将弧度转换为角度并取整
             const yawDegrees = Math.round((airplane.rotation.y * 180 / Math.PI) % 360);
-            document.getElementById(&#x27;yaw-indicator&#x27;).textContent = yawDegrees;
+            document.getElementById('yaw-indicator').textContent = yawDegrees;
             
             // 位置 - x和z坐标
             const posX = Math.round(airplane.position.x);
             const posZ = Math.round(airplane.position.z);
-            document.getElementById(&#x27;position&#x27;).textContent = `${posX},${posZ}`;
+            document.getElementById('position').textContent = `${posX},${posZ}`;
         }
 
         // Camera offset
@@ -554,26 +558,26 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
 
             // 处理输入，确保正确检测所有按键，使用更低的灵敏度
             // 上下控制
-            if (keys[&#x27;w&#x27;] || keys[&#x27;arrowup&#x27;]) {
+            if (keys['w'] || keys['arrowup']) {
                 pitch += PITCH_SENSITIVITY;
             }
-            if (keys[&#x27;s&#x27;] || keys[&#x27;arrowdown&#x27;]) {
+            if (keys['s'] || keys['arrowdown']) {
                 pitch -= PITCH_SENSITIVITY;
             }
             // 左右控制
-            if (keys[&#x27;a&#x27;] || keys[&#x27;arrowleft&#x27;]) {
+            if (keys['a'] || keys['arrowleft']) {
                 yaw += YAW_SENSITIVITY;
             }
-            if (keys[&#x27;d&#x27;] || keys[&#x27;arrowright&#x27;]) {
+            if (keys['d'] || keys['arrowright']) {
                 yaw -= YAW_SENSITIVITY;
             }
             
             // 速度控制
-            if (keys[&#x27; &#x27;]) {
+            if (keys[' ']) {
                 speed = Math.min(speed + SPEED_CHANGE_RATE, 20);
                 updateSpeedDisplay();
             }
-            if (keys[&#x27;shift&#x27;]) {
+            if (keys['shift']) {
                 speed = Math.max(speed - SPEED_CHANGE_RATE, 1);
                 updateSpeedDisplay();
             }
@@ -596,7 +600,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
             airplane.position.add(direction.multiplyScalar(speed * 0.5));
 
             // Keep airplane above ground
-            if (airplane.position.y &lt; 20) airplane.position.y = 20;
+            if (airplane.position.y < 20) airplane.position.y = 20;
 
             // Rotate propeller
             propellerGroup.rotation.x += speed * 0.2;
@@ -617,7 +621,7 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         }
 
         // Handle window resize
-        window.addEventListener(&#x27;resize&#x27;, () =&gt; {
+        window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
@@ -627,19 +631,21 @@ The goal is to create a visually engaging, beginner-friendly 3D flight experienc
         updateSpeedDisplay();
         
         // 添加鼠标控制提示
-        console.log(&#x27;控制说明: WASD/方向键控制飞行，空格加速，Shift减速&#x27;);
+        console.log('控制说明: WASD/方向键控制飞行，空格加速，Shift减速');
         
         animate();
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+    </script>
+</body>
+</html>
 ```
 
-## 特效贪吃蛇
+
+
+# 特效贪吃蛇
 
 ```
-Write a Python version of the classic game Snake using pygame, but with unique, visually stunning and complex enhancements that make
-it incredible to watch. In addition to standard Snake mechanics, implement the following features：
+Write a Python version of the classic game `Snake` using `pygame`, but with unique, visually stunning and complex enhancements that make
+it incredible to watch. In addition to standard `Snake` mechanics, implement the following features：
 Dynamic Visual Effects：
 The snake leaves behind a glowing, fading trail.
 The background pulses with subtle color gradients and transitions.
@@ -651,7 +657,7 @@ Reverse controls
 Double vision （visual decoy snake appears）
 Time slowdown （bullet-time effect with distorted visuals）
 Each food type includes unique animations.
-Evolving Snake：
+Evolving `Snake`：
 As the snake grows, its segments become biomechanical with animated textures or shifting color patterns.
 Visually evolve the snake with shaders or layered sprite effects depending on length or power-ups.
 Obstacles and Terrain：
@@ -659,14 +665,16 @@ Procedurally generate animated obstacles (e.g..-glowing,rotating or pulsating wa
 Include terrain zones with varving friction or effects （e.q.， slow zones, warp zones）， shown with dynamic visual cues.
 ```
 
-```
+
+
+```python
 import pygame
 import random
 import math
 import time
 from collections import deque
 
-# Init**ialize P**ygame
+# Initialize Pygame
 pygame.init()
 
 # Constants
@@ -678,46 +686,46 @@ CELL_SIZE = WINDOW_WIDTH // GRID_SIZE
 # Colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-GREEN =** (0, 2**55, 0)
+GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 PURPLE = (255, 0, 255)
-CYAN = (0, 2**55, **255)
+CYAN = (0, 255, 255)
 ORANGE = (255, 165, 0)
 
 # Setup display
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption(**&quot;Enhance**d Visual Snake&quot;)
+pygame.display.set_caption("Enhanced Visual Snake")
 clock = pygame.time.Clock()
 
 class Particle:
-    def __init__(self, x, y, color, velocity, size**=3):
- **       self.x = x
-       ** sel**f.y = y
+    def __init__(self, x, y, color, velocity, size=3):
+        self.x = x
+        self.y = y
         self.color = color
         self.velocity = velocity
         self.size = size
         self.lifetime = 60
         self.max_lifetime = 60
         
-    def update(self**):
-     **   self.x += self.velocity[0]
+    def update(self):
+        self.x += self.velocity[0]
         self.y += self.velocity[1]
-        self.velocity = (self.velocity[0] * 0.95, self.velocity[1] * 0.95)**
-   **     self.lifetime -= 1
+        self.velocity = (self.velocity[0] * 0.95, self.velocity[1] * 0.95)
+        self.lifetime -= 1
         
     def draw(self, surface):
-        if self.lifetime &gt; 0:
+        if self.lifetime > 0:
             alpha = int(255 * (self.lifetime / self.max_lifetime))
-            size = int(self.size * (self.li**fetime /** self.max_lifetime))
-            if size &gt; 0:
-                pygame.draw.circle(surface, (*self.color[:3], alpha), (int(self.x**), int**(self.y)), size)
+            size = int(self.size * (self.lifetime / self.max_lifetime))
+            if size > 0:
+                pygame.draw.circle(surface, (*self.color[:3], alpha), (int(self.x), int(self.y)), size)
 
 class Trail:
     def __init__(self, x, y, color):
         self.x = x
-    **    **self.y = y
+        self.y = y
         self.color = color
         self.lifetime = 30
         self.max_lifetime = 30
@@ -726,14 +734,14 @@ class Trail:
         self.lifetime -= 1
         
     def draw(self, surface):
-        if self.lifetime &gt; 0:
-            alpha = int(150 *** (self.l**ifetime / self.max_lifetime))
+        if self.lifetime > 0:
+            alpha = int(150 * (self.lifetime / self.max_lifetime))
             size = int(CELL_SIZE * 0.8 * (self.lifetime / self.max_lifetime))
-            if size &gt; 0:
-                gl**ow_sur**f = pygame.Surface((size *** 2,** size * 2), pygame.SRCALPHA)
+            if size > 0:
+                glow_surf = pygame.Surface((size * 2, size * 2), pygame.SRCALPHA)
                 pygame.draw.circle(glow_surf, (*self.color[:3], alpha), (size, size), size)
-                surface.blit(glow_surf, (self.x * CELL_SIZ**E + CELL**_SIZE // 2 - size, 
-                                       self.y * CELL_SIZE + CELL_**SIZE** // 2 - size))
+                surface.blit(glow_surf, (self.x * CELL_SIZE + CELL_SIZE // 2 - size, 
+                                       self.y * CELL_SIZE + CELL_SIZE // 2 - size))
 
 class Food:
     def __init__(self, x, y, food_type):
@@ -745,28 +753,28 @@ class Food:
         
         # Food types and their effects
         self.food_types = {
-            &#x27;normal&#x27;: {&#x27;co**lor&#x27;**: RED, &#x27;effect&#x27;: None, &#x27;duration&#x27;: 0},
-            &#x27;speed&#x27;: {&#x27;color&#x27;: YELLOW, &#x27;effect&#x27;: &#x27;speed_boost&#x27;, &#x27;duration&#x27;: 150},
-            &#x27;reverse&#x27;: {&#x27;color**&#x27;: P**URPLE, &#x27;effect&#x27;: &#x27;reverse_controls&#x27;, &#x27;duration&#x27;: 200},
-            &#x27;double&#x27;: {&#x27;color&#x27;: CYAN, &#x27;effect&#x27;: &#x27;double_vision&#x27;, &#x27;duration&#x27;: 250},
-            &#x27;slow&#x27;: {&#x27;color&#x27;: BLUE, &#x27;effect&#x27;: &#x27;time_slow&#x27;, &#x27;duration&#x27;: 200}
+            'normal': {'color': RED, 'effect': None, 'duration': 0},
+            'speed': {'color': YELLOW, 'effect': 'speed_boost', 'duration': 150},
+            'reverse': {'color': PURPLE, 'effect': 'reverse_controls', 'duration': 200},
+            'double': {'color': CYAN, 'effect': 'double_vision', 'duration': 250},
+            'slow': {'color': BLUE, 'effect': 'time_slow', 'duration': 200}
         }
         
     def draw(self, surface, time_factor=1.0):
         food_data = self.food_types[self.type]
-        color = food_data[&#x27;color&#x27;]
+        color = food_data['color']
         
-        # Animated p**ulsing e**ffect
+        # Animated pulsing effect
         self.pulse += 0.1 * time_factor
         size = CELL_SIZE // 2 + int(math.sin(self.pulse + self.animation_offset) * 3)
         
         # Draw glow effect
-        for i i**n range(3)**:
+        for i in range(3):
             glow_size = size + (i * 4)
             glow_alpha = 50 - (i * 15)
             glow_surf = pygame.Surface((glow_size * 2, glow_size * 2), pygame.SRCALPHA)
             pygame.draw.circle(glow_surf, (*color[:3], glow_alpha), (glow_size, glow_size), glow_size)
-            surface.blit(glow_surf, (self.x * CE**LL_SIZ**E + CELL_SIZE // 2 - glow_size,
+            surface.blit(glow_surf, (self.x * CELL_SIZE + CELL_SIZE // 2 - glow_size,
                                    self.y * CELL_SIZE + CELL_SIZE // 2 - glow_size))
         
         # Draw main food
@@ -775,7 +783,7 @@ class Food:
                          size)
 
 class Obstacle:
-    def __init__(self, x, y, obstacle_type=&#x27;wall&#x27;):
+    def __init__(self, x, y, obstacle_type='wall'):
         self.x = x
         self.y = y
         self.type = obstacle_type
@@ -783,7 +791,7 @@ class Obstacle:
         self.rotation = 0
         
     def update(self, time_factor=1.0):
-        if self.type == &#x27;rotating&#x27;:
+        if self.type == 'rotating':
             self.rotation += 0.05 * time_factor
         self.animation_phase += 0.03 * time_factor
         
@@ -791,24 +799,24 @@ class Obstacle:
         center_x = self.x * CELL_SIZE + CELL_SIZE // 2
         center_y = self.y * CELL_SIZE + CELL_SIZE // 2
         
-        if self.type == &#x27;wall&#x27;:
-            # Pulsa**ting wall
-     **       pulse = math.sin(self.animation_phase) * 2
-            size = CELL_SIZ**E //** 2 + int(pulse)
+        if self.type == 'wall':
+            # Pulsating wall
+            pulse = math.sin(self.animation_phase) * 2
+            size = CELL_SIZE // 2 + int(pulse)
             
             # Glow effect
             glow_surf = pygame.Surface((CELL_SIZE * 2, CELL_SIZE * 2), pygame.SRCALPHA)
             pygame.draw.rect(glow_surf, (255, 100, 100, 80), 
                            (CELL_SIZE // 2, CELL_SIZE // 2, CELL_SIZE, CELL_SIZE))
             surface.blit(glow_surf, (self.x * CELL_SIZE - CELL_SIZE // 2, 
-                      **       **      self.y * CELL_SIZE - CELL_SIZE // 2))
+                      self.y * CELL_SIZE - CELL_SIZE // 2))
             
             # Main obstacle
             pygame.draw.rect(surface, (200, 50, 50), 
                            (center_x - size, center_y - size, size * 2, size * 2))
                            
-        elif self.type == &#x27;rotating&#x27;:
-            # Rotating ob**stac**le
+        elif self.type == 'rotating':
+            # Rotating obstacle
             points = []
             for i in range(4):
                 angle = self.rotation + (i * math.pi / 2)
@@ -830,9 +838,9 @@ class TerrainZone:
         self.animation = 0
         
         self.zone_effects = {
-            &#x27;slow&#x27;: {&#x27;color&#x27;: (100, 100, 200, 50), &#x27;speed_mult&#x27;: 0.5},
-            &#x27;warp&#x27;: {&#x27;color&#x27;: (200, 100, 200, 50), &#x27;speed_mult&#x27;: 2.0},
-            &#x27;friction&#x27;: {&#x27;color&#x27;: (200, 150, 100, 50), &#x27;speed_mult&#x27;: 0.7}
+            'slow': {'color': (100, 100, 200, 50), 'speed_mult': 0.5},
+            'warp': {'color': (200, 100, 200, 50), 'speed_mult': 2.0},
+            'friction': {'color': (200, 150, 100, 50), 'speed_mult': 0.7}
         }
         
     def update(self):
@@ -847,8 +855,8 @@ class TerrainZone:
         for x in range(0, self.rect.width, 20):
             for y in range(0, self.rect.height, 20):
                 offset = math.sin(self.animation + x * 0.01 + y * 0.01) * 5
-                alpha = int(effect[&#x27;color&#x27;][3] + offset)
-                pygame.draw.circle(pattern_surf, (*effect[&#x27;color&#x27;][:3], min(alpha, 100)), 
+                alpha = int(effect['color'][3] + offset)
+                pygame.draw.circle(pattern_surf, (*effect['color'][:3], min(alpha, 100)), 
                                  (x + 10, y + 10), 8)
         
         surface.blit(pattern_surf, self.rect.topleft)
@@ -876,7 +884,7 @@ class Snake:
         
         self.body.insert(0, new_head)
         
-        if self.grow_count &gt; 0:
+        if self.grow_count > 0:
             self.grow_count -= 1
             self.segment_colors.insert(0, self.get_segment_color(len(self.body)))
         else:
@@ -905,7 +913,7 @@ class Snake:
         
     def draw(self, surface, time_factor=1.0):
         # Draw decoy if double vision is active
-        if &#x27;double_vision&#x27; in self.effects:
+        if 'double_vision' in self.effects:
             for i, pos in enumerate(self.decoy_positions):
                 alpha = 100 - (i * 2)
                 segment_surf = pygame.Surface((CELL_SIZE, CELL_SIZE), pygame.SRCALPHA)
@@ -915,14 +923,14 @@ class Snake:
         # Draw main snake
         for i, segment in enumerate(self.body):
             # Get color based on evolution
-            if i &lt; len(self.segment_colors):
+            if i < len(self.segment_colors):
                 color = self.segment_colors[i]
             else:
                 color = self.get_segment_color(i)
                 self.segment_colors.append(color)
             
             # Animated texture effect for evolved segments
-            if i &gt; 10:
+            if i > 10:
                 pulse = math.sin(time.time() * 5 + i * 0.5) * 20
                 color = (min(color[0] + int(pulse), 255), 
                         min(color[1] + int(pulse), 255), 
@@ -959,14 +967,14 @@ class Game:
         self.generate_terrain()
         
     def spawn_food(self):
-        while len(self.foods) &lt; 3:
+        while len(self.foods) < 3:
             x = random.randint(0, GRID_SIZE - 1)
             y = random.randint(0, WINDOW_HEIGHT // CELL_SIZE - 1)
             
             # Check if position is valid
             if (x, y) not in self.snake.body and not any(obs.x == x and obs.y == y for obs in self.obstacles):
                 # Random food type
-                food_types = [&#x27;normal&#x27;, &#x27;normal&#x27;, &#x27;normal&#x27;, &#x27;speed&#x27;, &#x27;reverse&#x27;, &#x27;double&#x27;, &#x27;slow&#x27;]
+                food_types = ['normal', 'normal', 'normal', 'speed', 'reverse', 'double', 'slow']
                 food_type = random.choice(food_types)
                 self.foods.append(Food(x, y, food_type))
                 
@@ -974,7 +982,7 @@ class Game:
         for _ in range(8):
             x = random.randint(2, GRID_SIZE - 3)
             y = random.randint(2, WINDOW_HEIGHT // CELL_SIZE - 3)
-            obstacle_type = random.choice([&#x27;wall&#x27;, &#x27;rotating&#x27;])
+            obstacle_type = random.choice(['wall', 'rotating'])
             self.obstacles.append(Obstacle(x, y, obstacle_type))
             
     def generate_terrain(self):
@@ -984,7 +992,7 @@ class Game:
             y = random.randint(0, WINDOW_HEIGHT // CELL_SIZE - 5)
             width = random.randint(3, 6)
             height = random.randint(3, 6)
-            zone_type = random.choice([&#x27;slow&#x27;, &#x27;warp&#x27;, &#x27;friction&#x27;])
+            zone_type = random.choice(['slow', 'warp', 'friction'])
             self.terrain_zones.append(TerrainZone(x, y, width, height, zone_type))
             
     def create_particle_explosion(self, x, y, color):
@@ -1002,7 +1010,7 @@ class Game:
             return
             
         # Update time factor for slow motion effect
-        if &#x27;time_slow&#x27; in self.snake.effects:
+        if 'time_slow' in self.snake.effects:
             self.time_factor = 0.3
         else:
             self.time_factor = 1.0
@@ -1011,7 +1019,7 @@ class Game:
         self.background_animation += 0.01 * self.time_factor
         
         # Move snake
-        reverse = &#x27;reverse_controls&#x27; in self.snake.effects
+        reverse = 'reverse_controls' in self.snake.effects
         
         # Apply terrain effects
         head = self.snake.body[0]
@@ -1020,14 +1028,14 @@ class Game:
         speed_mult = 1.0
         for zone in self.terrain_zones:
             if zone.rect.colliderect(head_rect):
-                speed_mult = zone.zone_effects[zone.type][&#x27;speed_mult&#x27;]
+                speed_mult = zone.zone_effects[zone.type]['speed_mult']
                 
         # Speed boost effect
-        if &#x27;speed_boost&#x27; in self.snake.effects:
+        if 'speed_boost' in self.snake.effects:
             speed_mult *= 1.5
             
         # Move based on speed multiplier
-        if random.random() &lt; speed_mult:
+        if random.random() < speed_mult:
             self.snake.move(reverse)
             
             # Add trail
@@ -1035,7 +1043,7 @@ class Game:
                                    self.snake.segment_colors[-1] if self.snake.segment_colors else GREEN))
         
         # Update double vision decoy
-        if &#x27;double_vision&#x27; in self.snake.effects:
+        if 'double_vision' in self.snake.effects:
             self.snake.decoy_positions = [(seg[0] + 2, seg[1] + 2) for seg in self.snake.body[:10]]
         
         # Check collision with self
@@ -1056,11 +1064,11 @@ class Game:
                 
                 # Apply food effect
                 food_data = food.food_types[food.type]
-                if food_data[&#x27;effect&#x27;]:
-                    self.snake.effects[food_data[&#x27;effect&#x27;]] = food_data[&#x27;duration&#x27;]
+                if food_data['effect']:
+                    self.snake.effects[food_data['effect']] = food_data['duration']
                     
                 # Create particle explosion
-                self.create_particle_explosion(food.x, food.y, food_data[&#x27;color&#x27;])
+                self.create_particle_explosion(food.x, food.y, food_data['color'])
                 
                 self.foods.remove(food)
                 self.spawn_food()
@@ -1068,21 +1076,21 @@ class Game:
         # Update effects duration
         for effect in list(self.snake.effects.keys()):
             self.snake.effects[effect] -= 1 * self.time_factor
-            if self.snake.effects[effect] &lt;= 0:
+            if self.snake.effects[effect] <= 0:
                 del self.snake.effects[effect]
-                if effect == &#x27;double_vision&#x27;:
+                if effect == 'double_vision':
                     self.snake.decoy_positions = []
                     
         # Update particles
         for particle in self.particles[:]:
             particle.update()
-            if particle.lifetime &lt;= 0:
+            if particle.lifetime <= 0:
                 self.particles.remove(particle)
                 
         # Update trails
         for trail in list(self.trails):
             trail.update()
-            if trail.lifetime &lt;= 0:
+            if trail.lifetime <= 0:
                 self.trails.remove(trail)
                 
         # Update obstacles
@@ -1138,13 +1146,13 @@ class Game:
     def draw_ui(self, surface):
         # Score
         font = pygame.font.Font(None, 36)
-        score_text = font.render(f&quot;Score: {self.score}&quot;, True, WHITE)
+        score_text = font.render(f"Score: {self.score}", True, WHITE)
         surface.blit(score_text, (10, 10))
         
         # Active effects
         y_offset = 50
         for effect, duration in self.snake.effects.items():
-            effect_text = font.render(f&quot;{effect.replace(&#x27;_&#x27;, &#x27; &#x27;).title()}: {int(duration/30)}s&quot;, 
+            effect_text = font.render(f"{effect.replace('_', ' ').title()}: {int(duration/30)}s", 
                                     True, YELLOW)
             surface.blit(effect_text, (10, y_offset))
             y_offset += 30
@@ -1152,7 +1160,7 @@ class Game:
         # Game over
         if self.game_over:
             game_over_font = pygame.font.Font(None, 72)
-            game_over_text = game_over_font.render(&quot;GAME OVER&quot;, True, RED)
+            game_over_text = game_over_font.render("GAME OVER", True, RED)
             text_rect = game_over_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
             
             # Glow effect
@@ -1164,7 +1172,7 @@ class Game:
             surface.blit(game_over_text, text_rect)
             
             restart_font = pygame.font.Font(None, 36)
-            restart_text = restart_font.render(&quot;Press SPACE to restart&quot;, True, WHITE)
+            restart_text = restart_font.render("Press SPACE to restart", True, WHITE)
             restart_rect = restart_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2 + 50))
             surface.blit(restart_text, restart_rect)
 
@@ -1193,7 +1201,7 @@ def main():
         
         # Update game at controlled intervals
         move_timer += clock.get_time()
-        if move_timer &gt;= move_delay * (10 / game.time_factor):
+        if move_timer >= move_delay * (10 / game.time_factor):
             move_timer = 0
             game.update()
         
@@ -1204,6 +1212,6 @@ def main():
     
     pygame.quit()
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```

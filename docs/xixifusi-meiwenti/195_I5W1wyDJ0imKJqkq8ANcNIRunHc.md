@@ -1,3 +1,4 @@
+
 # 那些能毁掉年轻人的思维里，最残酷的一条就是：我感觉我还没准备好。
 
 > 来源：[https://docs.feishu.cn/docx/TMEydwvlGoLIqnx6qpkcBvSTnqf](https://docs.feishu.cn/docx/TMEydwvlGoLIqnx6qpkcBvSTnqf)

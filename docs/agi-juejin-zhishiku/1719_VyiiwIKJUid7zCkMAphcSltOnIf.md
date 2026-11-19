@@ -1,8 +1,9 @@
+
 # T8 Comfyui进阶教程(第15集)-Flux最新CN工作流速度提升20倍！InstantX Union Controlnet联合模型最详细测评及工作流分享
 
-> 来源：[https://agijuejin.feishu.cn/docx/QAHBdvVXPoTcpgxwd3QcRR3in5g](https://agijuejin.feishu.cn/docx/QAHBdvVXPoTcpgxwd3QcRR3in5g)
+> 来源：https://agijuejin.feishu.cn/docx/QAHBdvVXPoTcpgxwd3QcRR3in5g
 
-# 👀快看👀
+## 👀快看👀
 
 > **作者：**[**T8star-Aix**](https://space.bilibili.com/385085361)
 
@@ -10,13 +11,11 @@
 
 ---
 
-# ⚡️摘要⚡️
+## ⚡️摘要⚡️
 
-> 主要介绍了 T8 对于 InstantX Union Controlnet 模型的详细测评及工作流程分享。
+主要介绍了 T8 对于 InstantX Union Controlnet 模型的详细测评及工作流程分享。
 
----
-
-# 🤖分集🤖
+## 🤖分集🤖
 
 ### T8 Comfyui进阶教程(第15集)-Flux最新CN工作流速度提升20倍！InstantX Union Controlnet联合模型最详细测评及工作流分享
 
@@ -26,20 +25,9 @@
 
 [T8 Comfyui动画教程(第1集)-流量密码ControlNext来袭！借我猴哥一用！超越mimicmotion又快又好的视频动作模仿工作流及整合包分享.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RUmab9gK5oNm6XxbuI2cVk7hnNI)
 
----
+## ✏️课代表✏️
 
-# ✏️课代表✏️
-
-+   InstantX 大佬的模型在 ComfyUI 上的应用表现出色，但需要注意显存管理。
-
->
-
-+   MC 的显存分层加载技术可以在显存不足时提高出图速度，但使用时需要注意节点开启与关闭的稳定性问题。
-
->
-
-+   INSTINX 模型在图像质量上优于 XLAB，但控制力不足，可能与模型本身的问题有关。
-
->
-
-+   Open pose 模型的控制能力不佳，目前使用效果不佳。
++ InstantX 大佬的模型在 ComfyUI 上的应用表现出色，但需要注意显存管理。
++ MC 的显存分层加载技术可以在显存不足时提高出图速度，但使用时需要注意节点开启与关闭的稳定性问题。
++ INSTINX 模型在图像质量上优于 XLAB，但控制力不足，可能与模型本身的问题有关。
++ Open pose 模型的控制能力不佳，目前使用效果不佳。

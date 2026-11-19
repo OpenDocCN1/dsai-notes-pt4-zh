@@ -1,3 +1,4 @@
+
 # TensorFlow 生态系统
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Tb4GdjSxmo7dELxVgZ7c5K5cnBh](https://v11enp9ok1h.feishu.cn/docx/Tb4GdjSxmo7dELxVgZ7c5K5cnBh)
@@ -12,7 +13,7 @@ TensorFlow 生态系统是由 Google 开发的一套围绕 TensorFlow 核心框�
 
 TensorFlow 的核心框架，提供基础的张量计算和自动微分功能。
 
-## 实例
+#### 实例
 
 ```
 import tensorflow as tf
@@ -26,12 +27,12 @@ print(tensor)
 
 允许在浏览器和 Node.js 环境中运行机器学习模型的 JavaScript 库。
 
-## 实例
+#### 实例
 
 ```
 // 在浏览器中加载预训练模型
 async function loadModel() {
-    const model = await tf.loadLayersModel(&#x27;model.json&#x27;);
+    const model = await tf.loadLayersModel('model.json');
     return model;
 }
 ```
@@ -40,7 +41,7 @@ async function loadModel() {
 
 专为移动和嵌入式设备优化的轻量级解决方案。
 
-## 实例
+#### 实例
 
 ```
 // Android 中使用 TFLite
@@ -54,31 +55,31 @@ Interpreter interpreter = new Interpreter(modelFile, options);
 
 端到端的机器学习平台，用于生产环境中的 ML 流水线。
 
-## 实例
+#### 实例
 
 ```
 # 定义 TFX 流水线组件
 example_gen = CsvExampleGen(input_base=path_to_csv)
-statistics_gen = StatisticsGen(examples=example_gen.outputs[&#x27;examples&#x27;])
+statistics_gen = StatisticsGen(examples=example_gen.outputs['examples'])
 ```
 
 ### TensorFlow Hub
 
 预训练模型库，可以轻松重用已有模型。
 
-## 实例
+#### 实例
 
 ```
 # 使用 TF Hub 中的预训练模型
-embed = hub.load(&quot;https://tfhub.dev/google/nnlm-en-dim128/1&quot;)
-embeddings = embed([&quot;TensorFlow is great&quot;])
+embed = hub.load("https://tfhub.dev/google/nnlm-en-dim128/1")
+embeddings = embed(["TensorFlow is great"])
 ```
 
 ### TensorFlow Serving
 
 高性能服务系统，用于部署训练好的模型。
 
-## 实例
+#### 实例
 
 ```
 # 启动 TensorFlow Serving 服务
@@ -92,13 +93,13 @@ tensorflow_model_server --port=8500 --rest_api_port=8501 \
 
 ### 案例1：使用TFX构建推荐系统
 
-1.  使用ExampleGen导入用户行为数据
+1.  使用`ExampleGen`导入用户行为数据
 
-1.  用Transform进行特征工程
+1.  用`Transform`进行特征工程
 
-1.  Trainer组件训练推荐模型
+1.  `Trainer`组件训练推荐模型
 
-1.  通过Pusher部署到生产环境
+1.  通过`Pusher`部署到生产环境
 
 ### 案例2：移动端图像分类
 

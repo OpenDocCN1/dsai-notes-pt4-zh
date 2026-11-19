@@ -1,8 +1,9 @@
-# 从0到1手把手教你用搭建OpenClaw私人助理(超详细)
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/T9XudUiLdoEn37xLYHtce7aMnwb](https://xuqiwei1986.feishu.cn/docx/T9XudUiLdoEn37xLYHtce7aMnwb)
+# 从0到1手把手教你搭建OpenClaw私人助理（超详细）
 
-| **文档版本** | **更新描述** | 作者 | **更新日期** |
+> 来源：https://xuqiwei1986.feishu.cn/docx/T9XudUiLdoEn37xLYHtce7aMnwb
+
+| 文档版本 | 更新描述 | 作者 | 更新日期 |
 | --- | --- | --- | --- |
 | V1.0.0 | 新建文档 | 科学羊🐑 | 2026-02-09 |
 | V1.0.1 | 新增飞书+Telegram配置 | 科学羊🐑 | 2026-03-14 |
@@ -14,21 +15,14 @@
 
 大家好，我是科学羊，
 
-+   （10W+）爆文👸号专栏日更作者；
-
-+   时间管理工具，「时迹-TimeFriend」的作者；
-
-+   知名报社签约编辑；
-
-+   海外内容创业实践者；
-
-+   YT海外BNG游戏视频创作者；
-
-+   赚钱垂直👸号航海教练+传术师；
-
-+   赚钱ClaudeCode航海教练；
-
-+   AI产品开发变现实践者；
++ （10W+）爆文👸号专栏日更作者；
++ 时间管理工具，「时迹-TimeFriend」的作者；
++ 知名报社签约编辑；
++ 海外内容创业实践者；
++ YT海外BNG游戏视频创作者；
++ 赚钱垂直👸号航海教练+传术师；
++ 赚钱ClaudeCode航海教练；
++ AI产品开发变现实践者；
 
 本期，我想给大家在分享一期关于最近非常火的Openclaw的搭建方法和我自己踩过的一些坑。话不多说，直接开始！
 
@@ -41,8 +35,6 @@
 比如Discord本身就像一个可扩展的工作空间，适合接入机器人和自动化，所以组合起来就变成一个可以随时下指令、自动执行的AI工作台，这也是它突然受到关注的主要原因。
 
 我最近在X里也浏览了很多大家对openclaw的观点和评论。
-
-
 
 ![](img/4cd9436dfa6b3d300cdf4216add55d04.png)
 
@@ -126,7 +118,7 @@ https://discord.com/developers/applications
 
 ![](img/a1024095c7270868f9eff23c484f8909.png)
 
-这个时候你就可以打开你的应用，如下图：
+这时候你就可以打开你的应用，如下图：
 
 ![](img/e38ecdd957706bd6f23d45c5f62df366.png)
 
@@ -148,7 +140,7 @@ https://openclaw.ai/
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-注意，如果输入这句指令报错可能是你没有管理员权限，可以增加sudo
+注意，如果输入这句指令报错可能是你没有管理员权限，可以增加`sudo`
 
 ```
 sudo curl -fsSL https://openclaw.ai/install.sh | bash
@@ -170,7 +162,7 @@ sudo curl -fsSL https://openclaw.ai/install.sh | bash
 
 ![](img/8bc63ea03f57e070778ff8c5489b9f83.png)
 
-选择QuickStart
+选择`QuickStart`
 
 ![](img/f8989edeac2bc9c88260b1bf2231a08f.png)
 
@@ -196,17 +188,17 @@ sudo curl -fsSL https://openclaw.ai/install.sh | bash
 
 ![](img/314b8c12230ab2d36b32da658a3af293.png)
 
-选择Keep...，然后继续，
+选择`Keep...`，然后继续，
 
-接下来，您会看到选择聊天工具的选项。您可**以先选择 [Skip for now]（注意注意，这里有坑**，一定先选择skip，我们后面再配置，我就当是卡在这里了，先跳过，选了也还是白选）
+接下来，您会看到选择聊天工具的选项。您可以先选择`[Skip for now]`（注意注意，这里有坑**，一定先选择skip，我们后面再配置，我就当是卡在这里了，先跳过，选了也还是白选）
 
 ![](img/3021ccfe8dedd9995a4fb71df4541542.png)
 
-其他配置，如 Gateway Port 设置，可以保持默认值 18789。对于 Skills 和包管理器，选择 npm 或其他选项，其余所有选项都可以选择 Yes。
+其他配置，如`Gateway Port`设置，可以保持默认值`18789`。对于`Skills`和包管理器，选择`npm`或其他选项，其余所有选项都可以选择`Yes`。
 
 ![](img/c1067a41d696f1b39f551d75a6e5b426.png)
 
-**对****于 skills，您**可以跳过此步骤，或使用空格键选择您需要的技能，其它别选，直接跳过！
+**对于**`skills`，**您**可以跳过此步骤，或使用空格键选择您需要的技能，其它别选，直接跳过！
 
 参考我这个
 
@@ -264,7 +256,7 @@ openclaw config
 
 ![](img/7ddaa012091a5c3c0f3116a4a1757f40.png)
 
-如**图，你需要发送：openclaw pairing** approve discord 你的pairing code（比如：openclaw pairing approve discord JCWXRTTQ）
+如图，你需要发送：`openclaw pairing approve discord 你的pairing code`（比如：`openclaw pairing approve discord JCWXRTTQ`）
 
 ![](img/d1a82b2d7d85a0cd11a8248b9ad8f843.png)
 
@@ -282,7 +274,7 @@ openclaw config
 
 # 三、多个频道如何配置
 
-刚才我们已经配置了关于 Discord，那么接下来我们再配置一下飞书 + telegram的方式。
+刚才我们已经配置了关于Discord，那么接下来我们再配置一下飞书+telegram的方式。
 
 三者之间其实不会冲突，大家放心配置。主要考虑到大家可能用的手机或者平台都不一样。
 
@@ -290,7 +282,7 @@ openclaw config
 
 ## 3.1 telegram
 
-首先，Telegram 大家需要注册，注册的方式可以直接用国内的手机号进行注册。
+首先，Telegram大家需要注册，注册的方式可以直接用国内的手机号进行注册。
 
 ### 3.1.1 设置步骤
 
@@ -298,35 +290,32 @@ openclaw config
 
 ![](img/4113179f210735c008617d55d7ed9bcc.png)
 
-**1、找 BotFather**
+**1、找`BotFather`**
 
-+   打开 Telegram，搜索 @BotFather
++ 打开Telegram，搜索`@BotFather`
++ 发送`/newbot`创建新机器人
++ 按提示命名（比如`MonicaBot`）并设置用户名（必须唯一，以`bot`结尾，如`masir_helper_bot`）
 
-+   发送 /newbot 创建新机器人
+**2、获取`Token`**
 
-+   按提示命名（比如 MonicaBot）并设置用户名（必须唯一，以 bot 结尾，如 masir_helper_bot）
-
-**2、获取 Token**
-
-+   BotFather 会给你一个 API token（格式：123456789:xxxxxxxklMNOpqrsTUVwxyz）
-
-+   **不要发给别人** — 谁有这串代码谁就能控制你的机器人
++ `BotFather`会给你一个API token（格式：`123456789:xxxxxxxklMNOpqrsTUVwxyz`）
++ **不要发给别人** — 谁有这串代码谁就能控制你的机器人
 
 **3、配置**
 
-+   把 token 发给你现在已经配置好的其中某一个助理（小龙虾）
++ 把token发给你现在已经配置好的其中某一个助理（小龙虾）
 
 **4、获取密钥**
 
-发送 /start，就可以获得这个密钥
+发送`/start`，就可以获得这个密钥
 
 **5、发给终端配置**
 
 ```
- openclaw pairing approve telegram 9XXXXX（你的密钥）
+openclaw pairing approve telegram 9XXXXX（你的密钥）
 ```
 
-## **3.2 飞书配置**
+## 3.2 飞书配置
 
 ### 配置飞书机器人通道
 
@@ -342,27 +331,25 @@ https://open.feishu.cn/app?lang=zh-CN
 
 ![](img/b771a859691ea81e3d4ce0234843fe00.png)
 
-5.3获得app id 和app secret
+5.3获得`app id`和`app secret`
 
 ![](img/123cec1874c63eb2df8d04bef75707aa.png)
 
 ## 3.3 🛰️接入
 
-### 个人🛰️一键接入（ClawBot 插件，iOS 8.0.70+）
+### 个人🛰️一键接入（`ClawBot`插件，`iOS 8.0.70`+）
 
 ### 前置条件
 
-+   🛰️版本：iOS 8.0.70 及以上
-
-+   已部署并运行 OpenClaw 实例（本地/服务器均可）
++ 🛰️版本：`iOS 8.0.70`及以上
++ 已部署并运行OpenClaw实例（本地/服务器均可）
 
 ### 操作步骤
 
-1.  打开🛰️ → 我 → 设置 → 插件。
+1. 打开🛰️ → 我 → 设置 → 插件。
+1. 找到「`ClawBot`」卡片，点击进入，可以看到安装的命令提示。
 
-1.  找到「ClawBot」卡片，点击进入, 可以看到安装的命令提示。
-
-复制终端安装命令（也可以直接执行这一步）:
+复制终端安装命令（也可以直接执行这一步）：
 
 ```
 npx -y @tencent-weixin/openclaw-weixin-cli@latest install
@@ -388,39 +375,43 @@ https://clawhub.ai/
 
 ![](img/88514f2695c6571d127e58c66e93e0d3.png)
 
-## 4.1 ClawHub.ai 是什么？
+## 4.1 ClawHub.ai是什么？
 
-**简单说：它是** OpenClaw（小龙虾）的官方技能商店，相当于小龙虾的"App Store"。
+**简单说：它是**OpenClaw（小龙虾）的官方技能商店，相当于小龙虾的"App Store"。
 
-### **核心功能**
+### 核心功能
 
-OpenClaw 本身只是一个 AI 智能体框架，能干什么、能连接哪些平台，全靠安装"Skills（技能包）"来扩展。ClawHub 是 OpenClaw 的公共技能商店，截至 2026 年 3 月已收录超过 5000 个经社区验证的优质技能，覆盖网页检索、平台操作、自动化流程等全场景。另有资料显示实际数量更多，目前 ClawHub 上已有将近 2 万个 Skills，不同来源统计口径有所差异。
+OpenClaw本身只是一个AI智能体框架，能干什么、能连接哪些平台，全靠安装"`Skills`（技能包）"来扩展。ClawHub是OpenClaw的公共技能商店，截至2026年3月已收录超过5000个经社区验证的优质技能，覆盖网页检索、平台操作、自动化流程等全场景。另有资料显示实际数量更多，目前ClawHub上已有将近2万个`Skills`，不同来源统计口径有所差异。
 
-### **能安装什么技能？**
+### 能安装什么技能？
 
-超过 100 类以上的技能可通过 ClawHub 获取，涵盖 GitHub 集成、浏览器自动化、CI/CD 触发、日历访问、智能家居控制等，还有针对📕、Twitter、YouTube 等平台的专项操作技能。
+超过100类以上的技能可通过ClawHub获取，涵盖GitHub集成、浏览器自动化、`CI/CD`触发、日历访问、智能家居控制等，还有针对📕、Twitter、YouTube等平台的专项操作技能。
 
-### **怎么用？**
+### 怎么用？
 
-ClawHub 支持搜索、安装、更新全流程管理，核心操作命令如 clawhub search、clawhub install、clawhub update 可直接在终端执行。
+ClawHub支持搜索、安装、更新全流程管理，核心操作命令如`clawhub search`、`clawhub install`、`clawhub update`可直接在终端执行。
 
-### **安全注意事项**
+### 安全注意事项
 
-要审慎下载 ClawHub 的技能包，并在安装前审查技能包代码，不要使用要求"下载ZIP"、"执行 shell 脚本"或"输入密码"的技能包。部分技能涉及 Cookie 和 API Key，存在一定安全风险。
+要审慎下载ClawHub的技能包，并在安装前审查技能包代码，不要使用要求"下载`ZIP`"、"执行`shell`脚本"或"输入密码"的技能包。部分技能涉及`Cookie`和`API Key`，存在一定安全风险。
 
-**一句话总结：** ClawHub.ai 就是给小龙虾"装手脚"的地方，没有它，OpenClaw 只是个聊天机器人；装对了技能，才能真正自动干活。这也正是你课程里教的核心之一，讲课时可以直接用这个比喻来解释。
+**一句话总结：**ClawHub.ai就是给小龙虾"装手脚"的地方，没有它，OpenClaw只是个聊天机器人；装对了技能，才能真正自动干活。这也正是你课程里教的核心之一，讲课时可以直接用这个比喻来解释。
 
 ## 4.2 安装Skill的方式
 
 ### 第一种：官方自带
 
-打开默认的 UI，在里面找到“代理”（Agent），然后找到 Skill，把你所需要的内容直接点击“使能”就可以了。
+
+
+打开默认的 `UI`，在里面找到“代理”（`Agent`），然后找到 `Skill`，把你所需要的内容直接点击“使能”就可以了。
+
+### 第一种方式：默认 UI 安装
 
 ![](img/f745e6f6e4c98f5fb379276927ca29bf.png)
 
 ### 第二种方式：插件市场下载（安全）
 
-https://clawhub.ai/
+`https://clawhub.ai/`
 
 首先先安装这个商城的插件工具：
 
@@ -435,22 +426,22 @@ npm i -g clawhub
 安装的时候，直接参考你最后的这个标签，按照下面的格式输入即可：
 
 ```
-clawhub install &quot;liang-tavily-search&quot;
+clawhub install "liang-tavily-search"
 ```
 
 ### 第三种方式：GitHub下载（有风险）
 
-https://github.com/vercel-labs/skills
+`https://github.com/vercel-labs/skills`
 
 ```
 npx skills add vercel-labs/agent-skills
 ```
 
-比如，以这个仓库为例：https://github.com/JimLiu/baoyu-skills?tab=readme-ov-file
+比如，以这个仓库为例：`https://github.com/JimLiu/baoyu-skills?tab=readme-ov-file`
 
-下载查找你有哪些Skills
+下载查找你有哪些`Skill`s
 
-仓库：https://github.com/vercel-labs/skills/tree/main/skills/find-skills
+仓库：`https://github.com/vercel-labs/skills/tree/main/skills/find-skills`
 
 ```
 npx skills add https://github.com/vercel-labs/skills/tree/main/skills/find-skills
@@ -460,23 +451,23 @@ npx skills add https://github.com/vercel-labs/skills/tree/main/skills/find-skill
 
 ![](img/0ab223904cdbef9f2ab389fa9e0099af.png)
 
-## 4.3 如何使用Skill发🛰️👸号
+## 4.3 如何使用`Skill`发🛰️👸号
 
 第一步：下载baoyu的👸号发布包
 
 ![](img/5f7d72b1ecebb33bacadbc0c6009d835.png)
 
-[baoyu-post-to-wechat.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IVPvbNPZkolbvGxkEbHcPrZanCd)
+[`baoyu-post-to-wechat.zip`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IVPvbNPZkolbvGxkEbHcPrZanCd)
 
 ```
 npx skills add https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-post-to-wechat
 ```
 
-将这个skill放到自己的openclaw的skill文件夹中
+将这个`skill`放到自己的`openclaw`的`skill`文件夹中
 
 ![](img/d12b744a48363b4b051556307424a4be.png)
 
-第二步：在这个Skill下面新建一个md文件，命名：EXTEND.md
+第二步：在这个`Skill`下面新建一个`md`文件，命名：`EXTEND.md`
 
 ```
 default_theme: default
@@ -494,7 +485,7 @@ WECHAT_APP_ID=xxxx
 WECHAT_APP_SECRET=xxx
 ```
 
-直接对话即可！**注意🛰️👸号，开启白名单！**
+直接对话即可！注意🛰️👸号，开启白名单！
 
 ![](img/100df666bb67f7d3593f81e0bb4d6129.png)
 
@@ -502,7 +493,7 @@ WECHAT_APP_SECRET=xxx
 
 ![](img/29e5f9027330c9f762fb82f386741ef0.png)
 
-## 4.4 图像生成skill
+## 4.4 图像生成`skill`
 
 ```
 npx skills add https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-image-gen  
@@ -510,7 +501,7 @@ npx skills add https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-ima
 
 ![](img/ccdf56340885b8f858df3e9614bacdf5.png)
 
-https://aistudio.google.com/app
+`https://aistudio.google.com/app`
 
 ![](img/45e48d3ee9db507bfa45384003114273.png)
 
@@ -525,14 +516,13 @@ GOOGLE_IMAGE_MODEL=gemini-3.1-flash-image-preview
 
 ![](img/02d2ec96b963e47f9d733f2e4d27f67a.png)
 
-## 4.5 IMA-Skill安装 @20260318更新
+## 4.5 `IMA-Skill`安装 @20260318更新
 
-配置地址：https://ima.qq.com/agent-interface
+配置地址：`https://ima.qq.com/agent-interface`
 
 ![](img/ac58ff917a61a20af0008c8f7663997b.png)
 
 把第一步的内容直接一键复制，然后发给小龙虾，告诉他让他自己去配置。顺便你可以把这个 Key 直接给他，等他安装好之后就可以测试了。
-
 
 ![](img/553e9447c9669c3a9c49a0cb97569cbd.png)
 
@@ -562,54 +552,54 @@ openclaw gateway restart
 
 如何加固你的小龙虾？
 
-Step 1：Gateway绑定到本地 + 安全组双重封锁
+### Step 1：`Gateway`绑定到本地 + 安全组双重封锁
 
 这是最容易被忽视也是最致命的问题，需要两道防线同时做：
 
-第一道：在OpenClaw配置里把Gateway绑定到本地地址，让端口物理上不对外开放——相当于龙虾根本不出门，门都没开，保证只有在这台机器本地运行的程序才能访问它：
+第一道：在`OpenClaw`配置里把`Gateway`绑定到本地地址，让端口物理上不对外开放——相当于龙虾根本不出门，门都没开，保证只有在这台机器本地运行的程序才能访问它：
 
 ```
 {
-    &quot;gateway&quot;: {
-        &quot;bind&quot;: &quot;loopback&quot;
+    "gateway": {
+        "bind": "loopback"
      }
 }
 ```
 
-第二道：**在云服务器安全组（腾讯云/阿里云）里限**制18789端口，只允许你自己的IP访问，其他来源全部拒绝——相当于小区大门就把陌生人挡住了：
+第二道：在云服务器安全组（腾讯云/阿里云）里限制`18789`端口，只允许你自己的IP访问，其他来源全部拒绝——相当于小区大门就把陌生人挡住了：
 
 ```
 入站规则：TCP 18789 端口，来源 → 你的IP地址（如 123.456.789.0/32）
 删除或禁用：0.0.0.0/0 对18789的任何开放规则
 ```
 
-Step 2：管好你的APIKey
+### Step 2：管好你的`APIKey`
 
 不要把密钥直接写在配置文件里，使用环境变量引用；
 
-在模型提供商后台设置消费上限（比如Kimi的49元月卡就是天然的消费上限）；
+在模型提供商后台设置消费上限（比如`Kimi`的49元月卡就是天然的消费上限）；
 
-定期检查消费记录，发现异常及时轮换key。
+定期检查消费记录，发现异常及时轮换`key`。
 
-Step 3：不要随便装来路不明的Skill
+### Step 3：不要随便装来路不明的`Skill`
 
-安装社区skill之前，至少做三件事：
+安装社区`skill`之前，至少做三件事：
 
-看SKILL.md里有没有奇怪的命令、看scripts目录里的脚本在干什么、优先使用ClawHub上有审核评分的skill。
+看`SKILL.md`里有没有奇怪的命令、看`scripts`目录里的脚本在干什么、优先使用`ClawHub`上有审核评分的`skill`。
 
-同时安装Skill Vette这款Skill，会在安装任何Skill之前，帮你把它审查一遍，类似于杀毒软件里。
+同时安装`Skill Vette`这款`Skill`，会在安装任何`Skill`之前，帮你把它审查一遍，类似于杀毒软件里。
 
-**Step 4：群聊权限要隔离**
+### Step 4：群聊权限要隔离
 
-接入群聊时：开启 requireMention: true 只在被@时响应、设置 groupPolicy: "allowlist" 限定群组、设置DM隔离 session.dmScope: "per-channel-peer"、群聊场景不开放exec和文件读写权限。
+接入群聊时：开启 `requireMention: true` 只在被`@`时响应、设置 `groupPolicy: "allowlist"` 限定群组、设置`session.dmScope: "per-channel-peer"`、群聊场景不开放`exec`和文件读写权限。
 
-然后也记得从聊天软件层面开启防护，比如我使用Discord群聊的操作就是关闭群聊的邀请。
+然后也记得从聊天软件层面开启防护，比如我使用`Discord`群聊的操作就是关闭群聊的邀请。
 
-Step 5：设置算力消耗的"保险丝"
+### Step 5：设置算力消耗的"保险丝"
 
-在API提供商后台设消费上限、定时任务设合理超时时间防死循环、定期看 openclaw logs 有没有异常高频调用。避免第二天起床看到账单被刷爆。
+在API提供商后台设消费上限、定时任务设合理超时时间防死循环、定期看 `openclaw logs` 有没有异常高频调用。避免第二天起床看到账单被刷爆。
 
-**Step 6：定期跑安全审计**
+### Step 6：定期跑安全审计
 
 ```
 openclaw security audit基础审计
@@ -617,11 +607,11 @@ openclaw security audit --deep深度审计
 openclaw security audit --fix自动修复
 ```
 
-**Step 7：开启沙盒模式**
+### Step 7：开启沙盒模式
 
-让龙虾在Docker容器里运行，就算它要搞事情，也只能在容器里面折腾。特别是当龙虾跑在你自己常用的机器里的时候，需要特别注意这一点。
+让龙虾在`Docker`容器里运行，就算它要搞事情，也只能在容器里面折腾。特别是当龙虾跑在你自己常用的机器里的时候，需要特别注意这一点。
 
-开启沙盒后，龙虾的exec默认是deny模式，需要你手动配置白名单来放行必要的命令。
+开启沙盒后，龙虾的`exec`默认是`deny`模式，需要你手动配置白名单来放行必要的命令。
 
 建议至少每周一次，改完配置后立即跑一次。审计跑完后会给一些问题清单给你，可以直接把这些清单发给龙虾，让他给你修复的建议。
 
@@ -631,7 +621,7 @@ openclaw security audit --fix自动修复
 
 其实你也可以尝试搭建在云端服务器，然后绑定你的企业🛰️来测试，比如，我测试过：
 
-https://cloud.tencent.com/act/pro/double12-2025（注意需要买海外的服务器，轻量级就可以）
+`https://cloud.tencent.com/act/pro/double12-2025`（注意需要买海外的服务器，轻量级就可以）
 
 ![](img/13fea0f9ce2d421339e074e8868353b9.png)
 
@@ -643,63 +633,63 @@ https://cloud.tencent.com/act/pro/double12-2025（注意需要买海外的服务
 
 ## 4.2 常用指令
 
-启动Openclaw的TUI
+启动`Openclaw`的`TUI`
 
-> openclaw tui
+`openclaw tui`
 
 重启网关
 
-> openclaw gateway restart
+`openclaw gateway restart`
 
 开启新对话
 
-> /new
+`/new`
 
 添加备用模型
 
-> openclaw models fallbacks add [模型公司代号/模型名称]
+`openclaw models fallbacks add [模型公司代号/模型名称]`
 
-例如：openai-codex/gpt-5.2-codex
+例如：`openai-codex/gpt-5.2-codex`
 
 设置默认模型
 
-> openclaw models set [模型公司代号/模型名称]
+`openclaw models set [模型公司代号/模型名称]`
 
-例如：kimi-code/kimi-for-coding
+例如：`kimi-code/kimi-for-coding`
 
-openclaw gateway start【启动】
+`openclaw gateway start`【启动】
 
-openclaw gateway restart【重启】
+`openclaw gateway restart`【重启】
 
-openclaw gateway stop【停止】
+`openclaw gateway stop`【停止】
 
-openclaw tui【命令行对话】
+`openclaw tui`【命令行对话】
 
-openclaw config【配置】(修改模型,通道,网关,等。。。)
+`openclaw config`【配置】(修改模型,通道,网关,等。。。)
 
-npm update -g openclaw【更新openclaw主程序】
+`npm update -g openclaw`【更新`openclaw`主程序】
 
-npm uninstall -g openclaw【卸载大龙虾】
+`npm uninstall -g openclaw`【卸载大龙虾】
 
 模型管理命令
 
 添加备用模型（主模型不可用时自动切换）
 
-openclaw models fallbacks add [提供商代号/模型名称]
+`openclaw models fallbacks add [提供商代号/模型名称]`
 
-# 示例：添加OpenAI Codex作为备用
+### 示例：添加OpenAI Codex作为备用
 
 ```
 openclaw models fallbacks add openai-codex/gpt-5.2-codex
 ```
 
-# 设置默认模型
+### 设置默认模型
 
 ```
 openclaw models set [提供商代号/模型名称]
 ```
 
-# 示例：将Kimi设为默认编程模型
+### 示例：将Kimi设为默认编程模型
 
 ```
 openclaw models set kimi-code/kimi-for-coding
@@ -713,19 +703,19 @@ openclaw models set kimi-code/kimi-for-coding
 openclaw configure --section web
 ```
 
-然后它会提示你输入 API Key，你粘贴进去就行。
+然后它会提示你输入 `API Key`，你粘贴进去就行。
 
 ![](img/a8d745ad628ae89f9376146e170743c1.png)
 
-如果你还没有 Brave API Key：
+如果你还没有 `Brave API Key`：
 
-1.  去 https://brave.com/search/api/
+1. 去 `https://brave.com/search/api/`
 
-1.  注册免费账户（每月 2000 次搜索）
+1. 注册免费账户（每月 2000 次搜索）
 
-1.  创建 API Key，复制下来
+1. 创建 API Key，复制下来
 
-1.  回来运行上面的命令，粘贴进去
+1. 回来运行上面的命令，粘贴进去
 
 具体执行截图：
 
@@ -733,70 +723,65 @@ openclaw configure --section web
 
 ## 6.4 其他玩法
 
-[OpenClaw + 影刀RPA组队：小龙虾指挥影刀 RPA 干活](https://yulu-tech.feishu.cn/docx/Ra9xdOnbWojwclxj9U0cftmynwf)
+[`OpenClaw + 影刀RPA组队：小龙虾指挥影刀 RPA 干活`](https://yulu-tech.feishu.cn/docx/Ra9xdOnbWojwclxj9U0cftmynwf)
 
-# 八、FAQ：智能体（discord、飞书等）突发中断怎么办？
+# 八、FAQ：智能体（`discord`、飞书等）突发中断怎么办？
 
-重启大法：openclaw gateway
+重启大法：`openclaw gateway`
 
-先启动Openclaw的TUI看对话是否正常。
+先启动`Openclaw`的`TUI`看对话是否正常。
 
-> openclaw tui
+`openclaw tui`
 
-**可能的原因：**
+### 可能的原因：
 
-1. **Gateway 连接断了** — Discord 连接可能掉了，需要重启
+1. **`Gateway` 连接断了** — Discord 连接可能掉了，需要重启
 
-2. **Token 过期** — Discord bot token 可能过期了
+2. **`Token` 过期** — Discord bot token 可能过期了
 
 3. **频道权限** — bot 可能被禁言或没权限读消息
 
-**检查/修复步骤：**
+### 检查/修复步骤：
 
 1. 检查 Gateway 状态
 
 在终端运行
 
 ```
-  openclaw gateway status                                                                                              
+openclaw gateway status
 ```
 
 2. 如果状态异常，重启 Gateway
 
 ```
-  # 先启用重启权限                                                                                                     
-  openclaw config set commands.restart true                                                                            
-                                                                                                                       
-  # 然后重启     
-   openclaw gateway                                                                                                      
-  openclaw gateway restart   
-  
-                                                                                            
+openclaw config set commands.restart true
+
+openclaw gateway restart
 ```
 
 3. 检查 Discord Bot Token
 
-去 Discord Developer Portal (https://discord.com/developers/applications)：
+去 Discord Developer Portal (`https://discord.com/developers/applications`)：
 
 +   你的应用 → Bot → 看 Token 是否有效
 
 +   如果显示 "Invalid" 或 regenerate 过，需要更新 token
 
-**4. 检查频道权限**
+### 4. 检查频道权限
 
 +   bot 是否还在频道里？
 
 +   是否有 "Read Messages" 和 "Send Messages" 权限？
 
-**手动启动（每次开机后）**
+### 手动启动（每次开机后）
 
 打开终端，运行：
 
 ```
-  openclaw gateway start    
+openclaw gateway start
 ```
 
-6.4 出现异常报错
+### 6.4 出现异常报错
 
 ```
 ⚠️ Agent failed before reply: All models failed (2): openai-codex/gpt-5.2-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | moonshot/kimi-k2.5: ⚠️ API rate limit reached. Please try again later. (rate_limit).Logs: openclaw logs --follow
@@ -806,7 +791,7 @@ openclaw configure --section web
 
 重新认证 Codex OAuth(最常见的解决方案)
 
-Re-run the Codex** OAuth login** on the gateway host:
+Re-run the Codex OAuth login on the gateway host:
 
 在网关主机上重新运行 Codex OAuth 登录：
 
@@ -817,7 +802,7 @@ openclaw gateway restart
 
 只需要运行上面这两个指令就可以了。注意登录 Codex 的时候，需要做一个授权。
 
-好了，以上就是今天的分享，但是**文**章并不止步，关于OpenClaw的详细用法和技巧，我会学到新的内容后第一时间来更新文章，欢迎大家的关注与支持。
+好了，以上就是今天的分享，但是文章并不止步，关于`OpenClaw`的详细用法和技巧，我会学到新的内容后第一时间来更新文章，欢迎大家的关注与支持。
 
 ## 信息不回复怎么办？
 
@@ -825,15 +810,17 @@ openclaw gateway restart
 
 我非常建议你至少要有 3 到 4 个客户端，然后分门别类地进行监控，这样会比较好一点。
 
-比如我自己用的telegram、discord、飞书、TUI等
+比如我自己用的`telegram`、`discord`、飞书、`TUI`等
 
 ![](img/0ea3822cf904a1e27a0f2c82f96bd9cf.png)
 
 ![](img/57867524a39abbcef83bb915896bfbea.png)
 
+
+
 ```
-异常时先 openclaw status
-需要时 openclaw gateway restart
+异常时先 `openclaw status`
+需要时 `openclaw gateway restart`
 ```
 
 ![](img/7461c36f018fa1d794d7b9e7b20e9cbd.png)

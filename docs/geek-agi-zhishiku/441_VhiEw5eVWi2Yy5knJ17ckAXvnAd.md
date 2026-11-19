@@ -1,7 +1,7 @@
+
 # 4.2【AI 开源落地】
 
 > 来源：[https://geekbang.feishu.cn/docx/JJZ4djvZDoRQpuxvyaScuIQlnuf](https://geekbang.feishu.cn/docx/JJZ4djvZDoRQpuxvyaScuIQlnuf)
-
 
 **板块主理人：尼福财**
 

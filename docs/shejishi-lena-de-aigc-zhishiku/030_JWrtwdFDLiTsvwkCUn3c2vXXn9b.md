@@ -1,24 +1,25 @@
+
 # MJ关键词提示网站
 
 > 来源：[https://aigclena.feishu.cn/docx/IPANdBSm8o4urHxzYdycwIm4nwf](https://aigclena.feishu.cn/docx/IPANdBSm8o4urHxzYdycwIm4nwf)
 
-> 3.05 复制打开抖音，看看【Ai设计师lena的图文作品】提升10倍工作效率关键词网站和工具分享。今天给大家... https://v.douyin.com/ihnphy6C/ C@h.BT 09/30 nqe:/
+> 3.05 复制打开抖音，看看【Ai设计师lena的图文作品】提升10倍工作效率关键词网站和工具分享。今天给大家... `https://v.douyin.com/ihnphy6C/` C@h.BT 09/30 nqe:/
 
-# MJ提示词网站
+## MJ提示词网站
 
 一些辅助工具帮助生成关键词网站，可以直接拿来使用
 
 常用几大类：风格、材质、媒介、场景、光照、渲染器、视角、精度
 
-+   yuanjineng.cn
++   `yuanjineng.cn`
 
-https://yuanjineng.cn/tools/dict/
+`https://yuanjineng.cn/tools/dict/`
 
 +   prompthero
 
 PromptHero是一个内容全面、社区活跃的AI图像生成资源平台，它能够提供按模型搜索，风格类型涵盖广泛，图片质量极高。每张图片关键词可以直接复制。
 
-https://prompthero.com/
+`https://prompthero.com/`
 
 ![](img/2e832f2c20f125d2bcf97af099243b3d.png)
 
@@ -26,7 +27,7 @@ https://prompthero.com/
 
 Midjourney官方作品探索区，可按随机、最热、单日/周/月最火筛选，目前每个分类下有2K多张图片，关键词准确度很高，可以复制和收藏。
 
-https://www.midjourney.com/
+`https://www.midjourney.com/`
 
 ![](img/e5c9e4d1ee802855212b29b88b025baa.png)
 
@@ -46,10 +47,9 @@ https://www.midjourney.com/
 
 ![](img/632caf5eba5c0206187b711597cd9a81.png)
 
-# 好看的MJ提示词合集
+## 好看的MJ提示词合集
 
-A [subject] rendered as a spectral chromatic aberration, where shifted colors in [color 1] and [color 2] tones create a ghostly, distorted appearance. The character moves in blurred, otherworldly steps, against a [background description], adding an unsettling effect to the image.
-
+`A [subject] rendered as a spectral chromatic aberration, where shifted colors in [color 1] and [color 2] tones create a ghostly, distorted appearance. The character moves in blurred, otherworldly steps, against a [background description], adding an unsettling effect to the image.`
 
 ![](img/41894ec3ab02254a55b28b8e5a1f3283.png)
 
@@ -57,11 +57,11 @@ A [subject] rendered as a spectral chromatic aberration, where shifted colors in
 
 ![](img/0957ab44b87d0e7344d0d2d2448daf30.png)
 
-[SUBJECT] depicted in a Solarized Dreamscape Vision, where landscapes and figures are transformed through tone inversion. Employ vivid [COLOR1] and [COLOR2] to highlight the surreal quality of the scene
+`[SUBJECT] depicted in a Solarized Dreamscape Vision, where landscapes and figures are transformed through tone inversion. Employ vivid [COLOR1] and [COLOR2] to highlight the surreal quality of the scene`
 
 ![](img/d1a9ae4a2c76ef25159b717106a3ee74.png)
 
-[Product / scene description].  Commercial food photography for an advertising campaign,  high resolution, high level of details
+`[Product / scene description].  Commercial food photography for an advertising campaign,  high resolution, high level of details`
 
 ![](img/415bb0bdfd4784a61f1f774cd997cda6.png)
 
@@ -75,10 +75,9 @@ A [subject] rendered as a spectral chromatic aberration, where shifted colors in
 
 ![](img/338be5e2f5b5f0611eb41024ee6b2e61.png)
 
-
 ![](img/fbdecfa51f7eb9a937c73d76f736398c.png)
 
-[SUBJECT] portrayed in a Neon Noir Nightscape, blending the dark atmosphere of film noir with vibrant, glowing neon elements. Utilize high-contrast imagery with bold accents of [COLOR1] and [COLOR2]
+`[SUBJECT] portrayed in a Neon Noir Nightscape, blending the dark atmosphere of film noir with vibrant, glowing neon elements. Utilize high-contrast imagery with bold accents of [COLOR1] and [COLOR2]`
 
 ![](img/850a67de7cf6bcbb39e6846b0b4c9985.png)
 
@@ -88,63 +87,65 @@ A [subject] rendered as a spectral chromatic aberration, where shifted colors in
 
 ![](img/96bc2d956a7f8e143735cf90e0cb6431.png)
 
-# LOGO提示词
+## LOGO提示词
 
 ![](img/d9b5bd5b62e1ad2f3425d30620e86d17.png)
 
-The logo of Kaiping Education
+`The logo of Kaiping Education`
 
 ![](img/90910ba31f1029fc728f226a3dd7527b.png)
 
-a logo of a a prestigious university with the text ‘LUBRAM’
+`a logo of a a prestigious university with the text ‘LUBRAM’`
 
 ![](img/ff217540e50aece3c9659e1d6f6f3de8.png)
 
-Fuyang Haizhou Cultural Media Company's logo design
+`Fuyang Haizhou Cultural Media Company's logo design`
 
 ![](img/fbbe0ab820403b604158fc916c0b0492.png)
 
 ![](img/c5a8b1521205819cdee65cedf4b7771d.png)
 
-Generate a logo for Scenic Area, text with "Panlong Gorge" in the bottom aream highlighting the features of rafting and the beauty of natural scenery. The design should integrate the dynamic flow of water and the contours of the canyon, a sense of tranquility and adventure. In terms of color, consider using shades of green and blue to reflect the freshness of nature and water. The overall style should be modern, simple, and easily recognizable, suitable for use across various media, water shape looks like a dragon
+`Generate a logo for Scenic Area, text with "Panlong Gorge" in the bottom aream highlighting the features of rafting and the beauty of natural scenery. The design should integrate the dynamic flow of water and the contours of the canyon, a sense of tranquility and adventure. In terms of color, consider using shades of green and blue to reflect the freshness of nature and water. The overall style should be modern, simple, and easily recognizable, suitable for use across various media, water shape looks like a dragon`
 
 ![](img/917f28ada0638e95c1c20604cc52b361.png)
 
-Logo design for "Fuding Buddhist Association XX佛教协会", incorporating a lotus and Mandala symbol to represent Buddhist culture, featuring elements of coastal lines or water to reflect Fuding city’s landscape. The logo should convey values of equality, integrity, compassion, love, and generosity. Use traditional Buddhist mulberry color (warm yellow or orange) as the primary color with black, white, or gold accents. Include Chinese calligraphy for "XX市佛教协会" and modern sans-serif font for "Fuding Buddhist Association." The design should be elegant, symmetrical, simple, and dynamic, combining traditional and contemporary elements, with a serene and culturally rich feel.
+`Logo design for "Fuding Buddhist Association XX佛教协会", incorporating a lotus and Mandala symbol to represent Buddhist culture, featuring elements of coastal lines or water to reflect Fuding city’s landscape. The logo should convey values of equality, integrity, compassion, love, and generosity. Use traditional Buddhist mulberry color (warm yellow or orange) as the primary color with black, white, or gold accents. Include Chinese calligraphy for "XX市佛教协会" and modern sans-serif font for "Fuding Buddhist Association." The design should be elegant, symmetrical, simple, and dynamic, combining traditional and contemporary elements, with a serene and culturally rich feel.`
 
 ![](img/f3a6c528ea0e68d853b8b6bf7d1ae829.png)
 
-The logo with the name " Право на Банкротство" The main colors are blue, blue, and green shades are allowed. The logo should be professional, in a strict style. on a white background . square shapes .
+`The logo with the name " Право на Банкротство" The main colors are blue, blue, and green shades are allowed. The logo should be professional, in a strict style. on a white background . square shapes .`
 
 ![](img/0d0de3fa9b32433442d4d40d5e3f794d.png)
 
-Chinese university school military training simple abstract logo
+`Chinese university school military training simple abstract logo`
 
 ![](img/d95d451d0cac715adddce40689682950.png)
 
-Design a logo for the school sports meeting of Anhui Art College,including blue and green colors. The torch is depicted as part of it. It has text below that reads ' sipa o industrial wharf' , which contains numbers indicating there will be eight events in total . There's also another line saying the event takes place on resembles silk cloth
+`Design a logo for the school sports meeting of Anhui Art College,including blue and green colors. The torch is depicted as part of it. It has text below that reads ' sipa o industrial wharf' , which contains numbers indicating there will be eight events in total . There's also another line saying the event takes place on resembles silk cloth`
 
 ![](img/cc7aba35c5b87389a7f3b8ede08f0160.png)
 
-Draw a logo for Xidian University
+`Draw a logo for Xidian University`
 
 ![](img/33637e64333a81edef73f03e06fe3343.png)
 
-Design a circular emblem for the Guangdong Nursing Society Public Health Committee. The emblem should have a white background with the text "广东省XXXXX专业委员会" around the edge in a modern sans-serif font. The center features an abstract cross symbol and a globe outline, representing healthcare and global public health. Incorporate elements of Lingnan culture, such as lychee and kapok flowers. Use blue and green as the primary colors, symbolizing trust, professionalism, health, and vitality. Include abstract hand shapes on both sides of the globe, symbolizing care and protection.
+`Design a circular emblem for the Guangdong Nursing Society Public Health Committee. The emblem should have a white background with the text "广东省XXXXX专业委员会" around the edge in a modern sans-serif font. The center features an abstract cross symbol and a globe outline, representing healthcare and global public health. Incorporate elements of Lingnan culture, such as lychee and kapok flowers. Use blue and green as the primary colors, symbolizing trust, professionalism, health, and vitality. Include abstract hand shapes on both sides of the globe, symbolizing care and protection.`
 
 ![](img/39b5a41268a7d75cefdd2282a087b6d3.png)
 
-The center of the trademark is a green circle containing an abstract leaf and several small stars. A simple bridge pattern extends from the bottom of the leaves, symbolizing connection. Below the trademark, there is a smooth font that reads, with the slogan' Connecting Farmers and Consumers' added.
+`The center of the trademark is a green circle containing an abstract leaf and several small stars. A simple bridge pattern extends from the bottom of the leaves, symbolizing connection. Below the trademark, there is a smooth font that reads, with the slogan' Connecting Farmers and Consumers' added.`
 
 ![](img/c85656b087c1602543aea6f27ec5ab69.png)
 
-The logo of your company providing educational services in business Chinese should reflect professionalism, innovation and international orientation. Here's what it might look like: The color palette: The main colors are red and gold (symbols of China), which reflects the business specifics and the Chinese context. Additional colors may include blue and gray, symbolizing trust and stability. Design elements: A globe or map is a symbol of international cooperation. Calligraphic elements the inclusion of elements of Chinese writing, symbolizing language and culture. Growth symbols are arrows or lines indicating professional growth and development. Font: Strict and modern, reflecting professionalism and seriousness, but with elements of smoothness symbolizing adaptability and flexibility. Such a logo will be associated with international business, high-quality education and innovation, which will attract your target audience
+`The logo of your company providing educational services in business Chinese should reflect professionalism, innovation and international orientation. Here's what it might look like: The color palette: The main colors are red and gold (symbols of China), which reflects the business specifics and the Chinese context. Additional colors may include blue and gray, symbolizing trust and stability. Design elements: A globe or map is a symbol of international cooperation. Calligraphic elements the inclusion of elements of Chinese writing, symbolizing language and culture. Growth symbols are arrows or lines indicating professional growth and development. Font: Strict and modern, reflecting professionalism and seriousness, but with elements of smoothness symbolizing adaptability and flexibility. Such a logo will be associated with international business, high-quality education and innovation, which will attract your target audience`
 
 ![](img/ad2e56db9e301acbc1a6dd43024a9a47.png)
 
-Design a balanced and refined logo for "New Vision Cultural Industry College" with an abstract emblem. Instead of a large brushstroke, use a small, refined calligraphy stroke subtly integrated at the bottom or side of the emblem. The main shape should be a circular outline representing a traditional Chinese scroll, simple and elegant, symbolizing unity and ongoing learning. Use blue as the primary color with subtle gold accents to emphasize prestige and scholarliness. The design should focus on clean lines and a minimalist approach, ensuring the logo is sophisticated yet professional. The brushstroke should be small and detailed, providing just enough cultural reference without dominating the design. Ensure the logo has a modern feel while incorporating subtle traditional elements.
+`Design a balanced and refined logo for "New Vision Cultural Industry College" with an abstract emblem. Instead of a large brushstroke, use a small, refined calligraphy stroke subtly integrated at the bottom or side of the emblem. The main shape should be a circular outline representing a traditional Chinese scroll, simple and elegant, symbolizing unity and ongoing learning. Use blue as the primary color with subtle gold accents to emphasize prestige and scholarliness. The design should focus on clean lines and a minimalist approach, ensuring the logo is sophisticated yet professional. The brushstroke should be small and detailed, providing just enough cultural reference without dominating the design. Ensure the logo has a modern feel while incorporating subtle traditional elements.`
 
 ![](img/98d748926c503dd13b5da0c0a42b7290.png)
+
+
 
 a logo for a company called GuideStar Land that invests in rural vacant land and needs to instill confidence, competence, integrity and trust in the land owners the company solicits for land. The company's tagline is Trust in every Transactions
 
@@ -290,11 +291,15 @@ cinematic scene of a dark elf. he is tall, he is skinny, he has long shiny silve
 
 ![](img/239ca3660279393e6fee7feb868bd773.png)
 
-fashion show , A 6-year-old chinese super modle girl in a high-end custom evening gown in a stunning off-white and gold and purple princess dress, smiling, inspired by the colors of a sunset. The dress has layers of tulle that blend seamlessly , with golden accents and a matching crown. The baby holds a small sun-shaped wand, her smile radiant as she walks down the runway. The background features a softly lit castle setting with a blurred audience, enhancing the fairytale ambiance. full body , full leg , 36K UHD --ar 3:4 --style raw --stylize 250 --v 6.1
+
+
+# 提示词示例
+
+fashion show , A 6-year-old chinese super modle girl in a high-end custom evening gown in a stunning off-white and gold and purple princess dress, smiling, inspired by the colors of a sunset. The dress has layers of tulle that blend seamlessly , with golden accents and a matching crown. The baby holds a small sun-shaped wand, her smile radiant as she walks down the runway. The background features a softly lit castle setting with a blurred audience, enhancing the fairytale ambiance. full body , full leg , 36K UHD `--ar 3:4 --style raw --stylize 250 --v 6.1`
 
 ![](img/9eff0e391470e2bc2c54604c6202c4ab.png)
 
-A pink flamingo in a festive green scarf with jingling bells is perched near a tiny, snow-covered sleigh filled with presents. Next to it, a baby in a candy cane onesie is sitting in the sleigh, laughing and waving its tiny hands in delight. Low angle full body shot. --ar 9:16 --quality 2 --style raw --stylize 750 --v 6.1
+A pink flamingo in a festive green scarf with jingling bells is perched near a tiny, snow-covered sleigh filled with presents. Next to it, a baby in a candy cane onesie is sitting in the sleigh, laughing and waving its tiny hands in delight. Low angle full body shot. `--ar 9:16 --quality 2 --style raw --stylize 750 --v 6.1`
 
 ![](img/e3ad7d4f118a29700996c89965adefe7.png)
 
@@ -306,11 +311,11 @@ A pink flamingo in a festive green scarf with jingling bells is perched near a t
 
 ![](img/992a44fbe839fc20cbe7fd5b889a2057.png)
 
-A sticker of a cute panda, cartoon, pixar style, die-cut sticker — ar 1:1 — niji 5 — s 180
+A sticker of a cute panda, cartoon, pixar style, die-cut sticker `— ar 1:1 — niji 5 — s 180`
 
 ![](img/85eecf29d61c882dc83bd6d8dfa46856.png)
 
-A sticker design of a hedgehog, whimsical and magical — ar 1:1 — niji 5 — s 180
+A sticker design of a hedgehog, whimsical and magical `— ar 1:1 — niji 5 — s 180`
 
 ## 风景系列
 
@@ -397,8 +402,6 @@ A sticker design of a hedgehog, whimsical and magical — ar 1:1 — niji 5 — 
 ![](img/9fcc170099c208c5db964eb70df0c40b.png)
 
 [婚纱系列11.xls](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L0o5btR4Xow6XLxyv8fcxhJnnsh)
-
-## 动物类
 
 # 精选付费内容
 

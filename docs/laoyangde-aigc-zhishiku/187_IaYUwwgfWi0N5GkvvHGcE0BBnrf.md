@@ -1,44 +1,45 @@
+
 # 拆书成神-复仇爽文《重生后手撕...》
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/O1ildbWN3onBjDx7iDkcmHWinRd](https://rq547mr4oez.feishu.cn/docx/O1ildbWN3onBjDx7iDkcmHWinRd)
 
-# 一、前言：
+## 一、前言：
 
 > 情节点怎么做？情绪上下行怎么写？细纲怎么写？~~
-
+>
 > **是每个小伙伴写小说的问题，今天拆书篇重生复**仇爽文《重生后手撕...》来看看怎么做。
-
+>
 > 留言，说说你们有没有想拆的书，或者推荐一些标准套路文模板~
 
 之前的拆书内容~~这个系列也是长期更新~~
 
-1.  [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
+1. [AI拆书-《幼薇》短篇节奏分析(独家Prompt)](https://rq547mr4oez.feishu.cn/wiki/C4C0w04hyilYMCkJwmDcnNnNn1d?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-创新？爆火男频又有女频的影子？](https://rq547mr4oez.feishu.cn/wiki/TX2vwm0qTiefe6kBNTdcwMo4nge?from=from_copylink)
+1. [AI写小说-创新？爆火男频又有女频的影子？](https://rq547mr4oez.feishu.cn/wiki/TX2vwm0qTiefe6kBNTdcwMo4nge?from=from_copylink)
 
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)上](https://rq547mr4oez.feishu.cn/wiki/BTubwjBNXilzZ7kIRvocbjOHnyc)
 
-1.  [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)
+1. [《诡秘之主》拆书之爆文框架+Prompt(五万字)下](https://rq547mr4oez.feishu.cn/wiki/IumjwUL8Ziaw0lkqhivc6gxsnUd?from=from_copylink)
 
-1.  [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)（韭菜Y日记）
+1. [《庆余年》拆书，新人也能写架空历史爽文](https://rq547mr4oez.feishu.cn/wiki/FYP7wlfcoiQXm5kdacycX9VBnqg)（韭菜Y日记）
 
-1.  [女频耽mei拆书，小白也能学会的高级框架](https://rq547mr4oez.feishu.cn/wiki/FCkewRlBYi2E7WkB6NscCG31nBY?from=from_copylink)
+1. [女频耽mei拆书，小白也能学会的高级框架](https://rq547mr4oez.feishu.cn/wiki/FCkewRlBYi2E7WkB6NscCG31nBY?from=from_copylink)
 
-1.  [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
+1. [AI拆小说-全网最全指南（底层思路+pormpt）](https://rq547mr4oez.feishu.cn/wiki/OMY9woSQWiD3ZEkZf5ncJYCFnff?from=from_copylink)（韭菜Y日记）
 
-1.  [《我用闲书成圣》拆书看爆文框架.docx](https://rq547mr4oez.feishu.cn/wiki/Xqbvwpzuci6qkuk7CJpczrNpnSd?from=from_copylink)
+1. [《我用闲书成圣》拆书看爆文框架.docx](https://rq547mr4oez.feishu.cn/wiki/Xqbvwpzuci6qkuk7CJpczrNpnSd?from=from_copylink)
 
-1.  [《大奉打更人》拆书，新人也能写网文.docx](https://rq547mr4oez.feishu.cn/wiki/MVh7wPdguimOV8k5elUczC4anZb?from=from_copylink)
+1. [《大奉打更人》拆书，新人也能写网文.docx](https://rq547mr4oez.feishu.cn/wiki/MVh7wPdguimOV8k5elUczC4anZb?from=from_copylink)
 
-1.  [写小说必火《灵境行者》de写作框架.docx](https://rq547mr4oez.feishu.cn/wiki/PkThw4eFfiYiKIkLFUucnu4nni3?from=from_copylink)（韭菜Y日记）
+1. [写小说必火《灵境行者》de写作框架.docx](https://rq547mr4oez.feishu.cn/wiki/PkThw4eFfiYiKIkLFUucnu4nni3?from=from_copylink)（韭菜Y日记）
 
-1.  [AI大测评-11款AI是不是理解“网文套路”？](https://rq547mr4oez.feishu.cn/wiki/Ghgewfw7CiC8iTkxgWYczhIVnid?from=from_copylink)
+1. [AI大测评-11款AI是不是理解“网文套路”？](https://rq547mr4oez.feishu.cn/wiki/Ghgewfw7CiC8iTkxgWYczhIVnid?from=from_copylink)
 
-1.  [拆书成神-《卖大力》拆细岗情节独家Prompt](https://rq547mr4oez.feishu.cn/wiki/VgJDwGoiGiAg2gkTpGIc45KbnMb?from=from_copylink)
+1. [拆书成神-《卖大力》拆细岗情节独家Prompt](https://rq547mr4oez.feishu.cn/wiki/VgJDwGoiGiAg2gkTpGIc45KbnMb?from=from_copylink)
 
-1.  [拆书成神-短篇言情《被爱的人肆无忌惮》](https://rq547mr4oez.feishu.cn/wiki/WuMPwYY1qihmEgkmaDFctnGtnxb?from=from_copylink)（韭菜Y日记）
+1. [拆书成神-短篇言情《被爱的人肆无忌惮》](https://rq547mr4oez.feishu.cn/wiki/WuMPwYY1qihmEgkmaDFctnGtnxb?from=from_copylink)（韭菜Y日记）
 
-1.  《桃花马上请长缨》《十日终焉》......
+1. 《桃花马上请长缨》《十日终焉》......
 
 持续学习ing，需要拆解那些书可以找我~
 
@@ -54,13 +55,13 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ---
 
-# 二、直接上干货
+## 二、直接上干货
 
 ### 复仇爽文
 
-| ### 重生后手撕装千金的白眼狼-复仇爽文 | ###  | ###  | ###  |
+| 重生后手撕装千金的白眼狼-复仇爽文 | | | |
 | --- | --- | --- | --- |
-| ### 章节 | ### 情节 | ### 字数 | ### 剧情推进 |
+| 章节 | 情节 | 字数 | 剧情推进 |
 | 导语 | 保姆的女儿靠我对她好假装千金，害我家破人亡，我重生了，她茶言茶语。 | 287 | 仇恨点：林浅浅狐假虎威 |
 | 01 | 林浅浅当众接受同学们吹捧，对我百般折辱，我断掉她亲属卡。 | 441 | 仇恨点：林浅浅收我巨额补习费还敢PUA我当众羞辱我 |
 | 02 | 回顾前世对林浅浅的救助和她的恶毒：在学校用我的钱收买人心，故意拖我后腿，诬陷我高考作弊，害我爸坐监狱。 | 843 | 仇恨点：林浅浅白眼狼，她哥哥骂我多管闲事 |
@@ -80,9 +81,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 | 14 | 我高考市状元，林家母女开直播诬陷我 | 306 | 仇恨点：林家母女利用网络舆论污蔑我 |
 | 15 | 我积攒很久的监控视频、账目记录等派上用场，风评调转，林浅浅又来求我，我没再心软 | 869 | 爽点1：我摆出确凿的证据，让风评调转 |
 
-###
-
-# 三、拆书Prompt
+## 三、拆书Prompt
 
 ```
 # Role：网文章节分析师

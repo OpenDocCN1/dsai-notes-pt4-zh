@@ -1,20 +1,21 @@
+
 # GPTs Action 实战：儿童汉语词典
 
-> 来源：[https://agijuejin.feishu.cn/docx/OlC7dqTlKoQY6qxSpiZcTqRgn9d](https://agijuejin.feishu.cn/docx/OlC7dqTlKoQY6qxSpiZcTqRgn9d)
+> 来源：`https://agijuejin.feishu.cn/docx/OlC7dqTlKoQY6qxSpiZcTqRgn9d`
 
 > 作者：景淮AI探索之旅
 
-> 原文链接：https://mp.weixin.qq.com/s/83ktnl8jJbXfF-5PXiEP_A
+> 原文链接：`https://mp.weixin.qq.com/s/83ktnl8jJbXfF-5PXiEP_A`
 
 嘿，大家好呀，我是景淮，一个加拿大的程序员，沉迷 AI 不能自拔中。
 
 今天是大年初一，祝小伙伴们和家人新春快乐，身体健康~
 
-今天的灵感来自于 月影 的 Learn Chinese Character 。
+今天的灵感来自于 月影 的 `Learn Chinese Character` 。
 
-GPTs 链接：https://chat.openai.com/g/g-HhhuZ8uIY-learn-chinese-character
+GPTs 链接：`https://chat.openai.com/g/g-HhhuZ8uIY-learn-chinese-character`
 
-通过调用 API 可以把汉字的每一个笔画进行展示，然后清晰的显示出来。
+通过调用 `API` 可以把汉字的每一个笔画进行展示，然后清晰的显示出来。
 
 ![](img/57e6d85b88564e2eb53489ee1698fee4.png)
 
@@ -28,29 +29,29 @@ GPTs 链接：https://chat.openai.com/g/g-HhhuZ8uIY-learn-chinese-character
 
 本文会根据以下内容顺序进行：
 
-+   API 测试分析
++ API 测试分析
 
-+   字典设计
++ 字典设计
 
-+   提示词编写测试
++ 提示词编写测试
 
-+   GPTs 使用链接
++ GPTs 使用链接
 
-+   总结
++ 总结
 
-#  **一、API 测试分析 **
+## 一、API 测试分析
 
-##  **一）如何使用字典 **
+### 一、如何使用字典
 
 我们查字的环境，设定为一二年级的孩子，在刚接触中文，识字不多的情况下进行。（配图为新华字典图，我是真的去重学了一下怎么使用字典... 太多年没用过了...）
 
-###   **1、拼音查字法 **
+#### 1、拼音查字法
 
 首先，这种查字法的使用，要能够猜出汉字的大概发音，然后根据拼音来查找。只要能输入正确的汉字拼音，一半就可以找到对应的所有汉字。
 
 ![](img/b6ad43c5e8475a1a61b46de587c81f1b.png)
 
-###   **2、部首查字法 **
+#### 2、部首查字法
 
 这个是对于孩子们来说，最常用也是最传统的查字方法。每个汉字都有一个或多个部首，我们可以先拆解汉字，找到主要的部首，然后根据字典中的部首索引进行查找。
 
@@ -60,75 +61,75 @@ GPTs 链接：https://chat.openai.com/g/g-HhhuZ8uIY-learn-chinese-character
 
 ![](img/6ee55f9cd7cfdc6761818124bbf91ce5.png)
 
-###   **3、笔画查字法 **
+#### 3、笔画查字法
 
 如果我们不能确定汉字的拼音、部首，那么我们也可以通过整个汉字的总的笔画数来进行查找。首先数出汉字的笔画总数，然后再从对应的笔画数排序索引中进行查找。
 
-###   **4、四角查字法 **
+#### 4、四角查字法
 
-这个方法也很好玩，但应该孩子们都没刻意去学习使用，我也没找到对应的 API ，这边就通过 GPT 写了个简介给大家，感兴趣的可以看一下，不感兴趣的直接跳过就好~
+这个方法也很好玩，但应该孩子们都没刻意去学习使用，我也没找到对应的 `API`，这边就通过 GPT 写了个简介给大家，感兴趣的可以看一下，不感兴趣的直接跳过就好~
 
 ![](img/2cbec0531e3da253bdfd87617555b3fa.png)
 
 ![](img/eea06cf3a45022bd5672317cc7ee10a7.png)
 
-> 四角号码查字法是一种在中国使用的汉字编码方法，它在1950年代由>中国的沈阳陆军通信学校发明。这种方法通过汉字的外观特征进行编>码，特别适合不知道汉字读音的情况下进行查字。
+> 四角号码查字法是一种在中国使用的汉字编码方法，它在1950年代由中国的沈阳陆军通信学校发明。这种方法通过汉字的外观特征进行编码，特别适合不知道汉字读音的情况下进行查字。
+>
+> 每个汉字的四角号码由五位数字组成，这五位数字分别代表汉字左上、右上、左下和右下四个角的特征，以及汉字的其他部分。每个角落的形状都有特定的编号，例如“一”是`0`，“丨”是`1`，“丿”是`2`，等等。如果一个角没有明显的特征，或者是一个单一的笔画，会使用特定的数字来标记。
+>
+> 使用四角号码查字时，你首先需要确定每个角的特征，并给出相应的数字。然后，使用这个五位数字的号码，在使用四角号码的字典中查找相应的汉字。这种方法特别适合在没有拼音或部首信息的情况下查找汉字，尤其在处理不常用或生僻字时非常有用。
+>
+> 新华字典中包含了四角号码查字法，使得用户能够更加方便地查找汉字。这种方法在中国和使用汉字的其他地区很受欢迎，因为它简化了查找过程，特别是在电子和在线字典中。
 
-> 每个汉字的四角号码由五位数字组成，这五位数字分别代表汉字左>上、右上、左下和右下四个角的特征，以及汉字的其他部分。每个角落>的形状都有特定的编号，例如“一”是0，“丨”是1，“丿”是2，等等。>如果一个角没有明显的特征，或者是一个单一的笔画，会使用特定的>数字来标记。
+## 二、查找可用的 API
 
-> 使用四角号码查字时，你首先需要确定每个角的特征，并给出相应的>数字。然后，使用这个五位数字的号码，在使用四角号码的字典中查找>相应的汉字。这种方法特别适合在没有拼音或部首信息的情况下查找>汉字，尤其在处理不常用或生僻字时非常有用。
+关于这次的 `API` 主要分为两个。
 
-> 新华字典中包含了四角号码查字法，使得用户能够更加方便地查找汉>字。这种方法在中国和使用汉字的其他地区很受欢迎，因为它简化了查>找过程，特别是在电子和在线字典中。
+### 1、查字 API
 
-##  **二）查找可用的 API **
+`API` 文档：`http://ccdb.hemiola.com/`
 
-关于这次的 API 主要分为两个。
+首先，这个 `API` 是免费哒，但是很遗憾在 2018 年就停止更新了，也就是说之后就没有迭代维护啦，但是如果做为孩子入门学习使用词典的汉字应该已经足够了。
 
-###   **1、查字 API **
+`API` 接口：
 
-API 文档：http://ccdb.hemiola.com/
++ `http://ccdb.hemiola.com/characters/mandarin/(拼音 数字=>声）)` ：通过拼音进行汉字搜索
 
-首先，这个 API 是免费哒，但是很遗憾在 2018 年就停止更新了，也就是说之后就没有迭代维护啦，但是如果做为孩子入门学习使用词典的汉字应该已经足够了。
++ `http://ccdb.hemiola.com/characters/radicals/数字` ：按照康熙部首偏旁编号来查询某一个部首下的汉字（有点乱对不对，等下我会单独来解释这个，请稍候~）
 
-API 接口：
++ `http://ccdb.hemiola.com/characters/radicals/数字1?strokes=数字2`：这里面有两个参数，第一个为康熙部首编号，第二个为去掉部首后的笔画数
 
-+   http://ccdb.hemiola.com/characters/mandarin/(拼音 数字=>声）) ： 通过拼音进行汉字搜索
++ `http://ccdb.hemiola.com/characters/strokes/数字` 按照笔画总数来查字
 
-+   http://ccdb.hemiola.com/characters/radicals/数字 ：按照康熙部首偏旁编号来查询某一个部首下的汉字（有点乱对不对，等下我会单独来解释这个，请稍候~）
+### 2、汉字解析 API
 
-+   http://ccdb.hemiola.com/characters/radicals/数字1?strokes=数字2：这里面有两个参数，第一个为康熙部首编号，第二个为去掉部首后的笔画数
-
-+   http://ccdb.hemiola.com/characters/strokes/数字 按照笔画总数来查字
-
-###   **2、汉字解析 API **
-
-这个 API 是通过把项目搭建在 AirCode 平台，从而实现使用的（这边感谢月影的指点~这边不完全是我完成的代码，我就不开源啦，还请谅解~）
+这个 `API` 是通过把项目搭建在 `AirCode` 平台，从而实现使用的（这边感谢月影的指点~这边不完全是我完成的代码，我就不开源啦，还请谅解~）
 
 我们直接来看项目文档
 
-https://theajack.github.io/cnchar/doc/cnchar.html
+`https://theajack.github.io/cnchar/doc/cnchar.html`
 
-主要功能：拼音=>笔画、多音词、笔顺、繁体字、汉字可视化、成语、歇后语、偏旁部首、组词、释义、语音、随机生成、输入法、 编码、姓名、汉字信息。
+主要功能：拼音=>笔画、多音词、笔顺、繁体字、汉字可视化、成语、歇后语、偏旁部首、组词、释义、语音、随机生成、输入法、编码、姓名、汉字信息。
 
 具体的我就不在文章中展示了，大家可以自行去文档中查看。
 
-##  **三）API 测试 **
+## 三、API 测试
 
-###   **1、查字 API **
+### 1、查字 API
 
-####  **1）拼音查字 **
+#### 1）拼音查字
 
-不加数字，则直接返回 jing 的所有声部内容
+不加数字，则直接返回 `jing` 的所有声部内容
 
 ![](img/85a160f9fe8fc736a8348c957c4ad13b.png)
 
-加数字，可以返回第二声的所有 huai 发音的汉字
+加数字，可以返回第二声的所有 `huai` 发音的汉字
 
 ![](img/59e5ecb766828ae981803c14106ff401.png)
 
-####  **2）部首查字 **
+#### 2）部首查字
 
-部首查字，首先因为 API 中使用的是康熙部首，所以就导致会和现代部首所点出入，我们就需要自己增加一部分流程。
+部首查字，首先因为 `API` 中使用的是康熙部首，所以就导致会和现代部首所点出入，我们就需要自己增加一部分流程。
 
 ![](img/8a51205a45f1c436ac24dc82ec7fe5c1.png)
 
@@ -136,26 +137,26 @@ https://theajack.github.io/cnchar/doc/cnchar.html
 
 ```
 1. 用户输入，部首的笔画数
-2. 根据用户输入的笔画数，从[简化部首笔画.txt]中找到对应的部首，以Markdown格式的列表（列为：编号和部首）展示给用户，等待用户选择对应的部首。
-3. 根据用户选择的部首，从[部首对照.txt]中进行搜索
+2. 根据用户输入的笔画数，从`简化部首笔画.txt`中找到对应的部首，以Markdown格式的列表（列为：编号和部首）展示给用户，等待用户选择对应的部首。
+3. 根据用户选择的部首，从`部首对照.txt`中进行搜索
   - 先从简化部首列，找到用户所选择的部首
   - 然后根据同一行的原则找到对应的康熙部首，并获取其康熙部首的编号。
 4. 把编号展示给用户。
 ```
 
-比如我们查询“火”、“灬”，编号为 86
+比如我们查询“火”、“灬”，编号为 `86`
 
 ![](img/b2e3d71b1097811eca9233ac92c5da27.png)
 
-####  **3）部首 + 笔画查字 **
+#### 3）部首 + 笔画查字
 
 同样的流程，当我们有了部首编号后，可以添加后续的笔画。
 
-这边我们尝试查询 “灯”，即 86 编号 + 2 画
+这边我们尝试查询“灯”，即 `86` 编号 + 2 画
 
 ![](img/7f915c4b5f646431ce06c3835f4be331.png)
 
-####  **4) 笔画查字 **
+#### 4) 笔画查字
 
 这边是根据总的笔画查字，其实整体的内容就很多了= =，很有可能最后会写不下，或者比较难找。
 
@@ -163,21 +164,21 @@ https://theajack.github.io/cnchar/doc/cnchar.html
 
 ![](img/a262c3d56a5661f8240425e801039133.png)
 
-####  **5）API 创建 **
+#### 5）API 创建
 
-这边因为不能在 GPTs 上直接使用 http 协议的api，所以我用 aircode 中转了一下~
+这边因为不能在 GPTs 上直接使用 http 协议的 `api`，所以我用 `aircode` 中转了一下~
 
 代码如下
 
 ```
-const axios = require(&#x27;axios&#x27;);
+const axios = require('axios');
 
 async function getCharactersByMandarin(mandarin) {
     try {
         const response = await axios.get(`http://ccdb.hemiola.com/characters/mandarin/${mandarin}`);
         return response.data;
     } catch (error) {
-        console.error(&quot;Error fetching characters by mandarin:&quot;, error);
+        console.error("Error fetching characters by mandarin:", error);
     }
 }
 
@@ -186,7 +187,7 @@ async function getCharactersByStrokes(strokes) {
         const response = await axios.get(`http://ccdb.hemiola.com/characters/strokes/${strokes}`);
         return response.data;
     } catch (error) {
-        console.error(&quot;Error fetching characters by strokes:&quot;, error);
+        console.error("Error fetching characters by strokes:", error);
     }
 }
 
@@ -195,32 +196,32 @@ async function getCharactersByRadical(radical) {
         const response = await axios.get(`http://ccdb.hemiola.com/characters/radicals/${radical}`);
         return response.data;
     } catch (error) {
-        console.error(&quot;Error fetching characters by radical:&quot;, error);
+        console.error("Error fetching characters by radical:", error);
     }
 }
 
 async function getCharactersByRadicalAndStrokes(rs) {
     try {
         const response = await axios.get(`http://ccdb.hemiola.com/characters/radicals/${rs.radical}?strokes=${rs.strokes}`);
-        console.log(rs.radical,rs.strokes)
+        console.log(rs.radical, rs.strokes)
         return response.data;
     } catch (error) {
-        console.error(&quot;Error fetching characters by radical and strokes:&quot;, error);
+        console.error("Error fetching characters by radical and strokes:", error);
     }
 }
 
 module.exports = async function(params) {
 
-    if(params.pinyin &amp;&amp; !params.strokes &amp;&amp; !params.radical&amp;&amp; !params.rs) {
+    if (params.pinyin && !params.strokes && !params.radical && !params.rs) {
         return await getCharactersByMandarin(params.pinyin);
     }
-    if(params.strokes &amp;&amp; !params.pinyin &amp;&amp; !params.radical&amp;&amp; !params.rs) {
+    if (params.strokes && !params.pinyin && !params.radical && !params.rs) {
         return await getCharactersByStrokes(params.strokes);
     }
-    if(params.radical &amp;&amp; !params.strokes &amp;&amp; !params.pinyin&amp;&amp; !params.rs) {
+    if (params.radical && !params.strokes && !params.pinyin && !params.rs) {
         return await getCharactersByRadical(params.radical);
     }
-    if(params.rs&amp;&amp; !params.radical &amp;&amp; !params.strokes &amp;&amp; !params.pinyin) {
+    if (params.rs && !params.radical && !params.strokes && !params.pinyin) {
         console.log(params.rs.radical)
         return await getCharactersByRadicalAndStrokes(params.rs);
     }
@@ -229,25 +230,25 @@ module.exports = async function(params) {
 
 设置了四个参数
 
-pinyin => 1) 、strokes=> 4)、radical=> 2)、rs=> 3)
+`pinyin` => 1) 、`strokes`=> 4)、`radical`=> 2)、`rs`=> 3)
 
 这边偷懒简写啦，就是上面的解释中的编号。（每次四个参数只有一个参数时才能使用哦~）
 
-API：https://q3wf3wh5yh.us.aircode.run/talk
+`API`：`https://q3wf3wh5yh.us.aircode.run/talk`
 
-###   **2、汉字解析 API **
+### 2、汉字解析 API
 
-我这边进行了一波 GPT 和 API 之间的测试，比如繁体字这个，GPT 的表述很准确，我就不调用 API 了。
+我这边进行了一波 GPT 和 `API` 之间的测试，比如繁体字这个，GPT 的表述很准确，我就不调用 `API` 了。
 
-最后可使用 API 如下：
+最后可使用 `API` 如下：
 
-https://ptcskv5x9m.us.aircode.run/index
+`https://ptcskv5x9m.us.aircode.run/index`
 
 参数
 
 ```
 {
-    &quot;char&quot;:&quot;[汉字]&quot;
+    "char": "[汉字]"
 }
 ```
 
@@ -255,91 +256,98 @@ https://ptcskv5x9m.us.aircode.run/index
 
 输出结果
 
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/tq72lb.1705646197699_k8srk5l5nlo.svg&quot;
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/2k1j9v.1705646197699_y46ubk119lm.svg&quot;
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/iano8b.1705646197700_kbunckhcl3e.svg&quot;
-    &quot;strokeImage&quot;: &quot;https://p984u2.us.aircodecdn.com/abs5ew.1705646197701_zayt5vmzqz.svg&quot;
-
 ```
+"strokeImage": "https://p984u2.us.aircodecdn.com/tq72lb.1705646197699_k8srk5l5nlo.svg";
+
+"strokeImage": "https://p984u2.us.aircodecdn.com/2k1j9v.1705646197699_y46ubk119lm.svg";
+
+"strokeImage": "https://p984u2.us.aircodecdn.com/iano8b.1705646197700_kbunckhcl3e.svg";
+
+"strokeImage": "https://p984u2.us.aircodecdn.com/abs5ew.1705646197701_zayt5vmzqz.svg";
+
 [
   {
-    &quot;shape&quot;: &quot;丿&quot;,
-    &quot;type&quot;: &quot;平笔&quot;,
-    &quot;foldCount&quot;: &quot;0&quot;,
-    &quot;name&quot;: &quot;撇&quot;,
-    &quot;letter&quot;: &quot;s&quot;,
+    "shape": "丿",
+    "type": "平笔",
+    "foldCount": "0",
+    "name": "撇",
+    "letter": "s",
   },
   {
-    &quot;shape&quot;: &quot;一&quot;,
-    &quot;type&quot;: &quot;平笔&quot;,
-    &quot;foldCount&quot;: &quot;0&quot;,
-    &quot;name&quot;: &quot;横&quot;,
-    &quot;letter&quot;: &quot;j&quot;,
+    "shape": "一",
+    "type": "平笔",
+    "foldCount": "0",
+    "name": "横",
+    "letter": "j",
   },
   {
-    &quot;shape&quot;: &quot;𠄌&quot;,
-    &quot;type&quot;: &quot;折笔&quot;,
-    &quot;foldCount&quot;: &quot;1&quot;,
-    &quot;name&quot;: &quot;竖提&quot;,
-    &quot;letter&quot;: &quot;h&quot;,
+    "shape": "𠄌",
+    "type": "折笔",
+    "foldCount": "1",
+    "name": "竖提",
+    "letter": "h",
   },
   {
-    &quot;shape&quot;: &quot;㇏&quot;,
-    &quot;type&quot;: &quot;平笔&quot;,
-    &quot;foldCount&quot;: &quot;0&quot;,
-    &quot;name&quot;: &quot;捺&quot;,
-    &quot;letter&quot;: &quot;l&quot;,
+    "shape": "㇏",
+    "type": "平笔",
+    "foldCount": "0",
+    "name": "捺",
+    "letter": "l",
   },
   {
-    &quot;radicalCount&quot;: 4,
-    &quot;radical&quot;: &quot;长&quot;,
-    &quot;struct&quot;: &quot;独体结构&quot;,
-    &quot;dyz&quot;: &quot;(Cháng|Zhǎng)&quot;
+    "radicalCount": 4,
+    "radical": "长",
+    "struct": "独体结构",
+    "dyz": "(Cháng|Zhǎng)"
   }
 ]
 ```
 
 主要包括，字型，结构，多音字，笔画，按照笔画的生图。
 
-#  **二、字典设计 **
+## 二、字典设计
 
 ![](img/f584b492f478185464b4403d6cb92ba4.png)
 
-##  **一）查字典 **
+### 一、查字典
 
-利用不同的查字方式和 API， 做成模拟孩子查字典的练习方式。
+利用不同的查字方式和 `API`，做成模拟孩子查字典的练习方式。
 
-##  **二）学习 **
+### 二、学习
 
 学习汉字的过程如下
 
-###   **1、认识阶段 **
+#### 1、认识阶段
 
-+   视觉识别：首先，学习者需要通过视觉记忆来识别汉字的形状。这包括对汉字的结构和基本部首的识别。
++ 视觉识别：首先，学习者需要通过视觉记忆来识别汉字的形状。这包括对汉字的结构和基本部首的识别。
 
-+   了解含义：接下来，学习者需了解这个汉字的基本意义。通常，老师或学习材料会提供这个汉字的基本解释或翻译。
++ 了解含义：接下来，学习者需了解这个汉字的基本意义。通常，老师或学习材料会提供这个汉字的基本解释或翻译。
 
-+   了解汉字的历史和演变：了解汉字的起源和发展过程，可以帮助学习者更好地理解汉字的结构和意义。
 
-###   **2、读音学习 **
 
-+   发音学习：通过拼音正确的发出汉字的发音。
+### 1、了解汉字的历史和演变
 
-###   **3、书写练习 **
+了解汉字的起源和发展过程，可以帮助学习者更好地理解汉字的结构和意义。
 
-+   学习笔画顺序：了解并练习汉字的正确笔画顺序。
+### 2、读音学习
 
-+   模仿书写：通过临摹练习，提高书写技巧和熟练度。
+发音学习：通过拼音正确的发出汉字的发音。
 
-###   **4、应用练习 **
+### 3、书写练习
 
-+   制作词组、例句：使用新学的汉字制作例句，加深对词汇的理解和记忆。
+学习笔画顺序：了解并练习汉字的正确笔画顺序。
 
-+   语境应用：在口语或书面语中实际运用这个汉字，以提高记忆效果。
+模仿书写：通过临摹练习，提高书写技巧和熟练度。
 
-###   **5、复习和巩固 **
+### 4、应用练习
 
-+   多种形式的练习：通过不同形式的练习（如填字游戏、汉字卡片、写作练习等），增加学习的趣味性和效果。
+制作词组、例句：使用新学的汉字制作例句，加深对词汇的理解和记忆。
+
+语境应用：在口语或书面语中实际运用这个汉字，以提高记忆效果。
+
+### 5、复习和巩固
+
+多种形式的练习：通过不同形式的练习（如填字游戏、汉字卡片、写作练习等），增加学习的趣味性和效果。
 
 根据以上不同的阶段，给出不同的学习内容加以辅助。
 
@@ -355,11 +363,11 @@ https://ptcskv5x9m.us.aircode.run/index
 
 然后开始把现代的汉字按照结构拆解讲解，读音，偏旁，含义，发音，书写笔画，组词造句，复习。
 
-#  **三、提示词编写测试 **
+# 三、提示词编写测试
 
-##  **一）查字典 **
+## 一）查字典
 
-这部分内容，多测测试下来，因为使用 get 方法去获取，不好调整。后面微调了 api 的设置，做到了 “查字典” 这个动作的模拟。
+这部分内容，多测测试下来，因为使用 `get` 方法去获取，不好调整。后面微调了 `api` 的设置，做到了 “查字典” 这个动作的模拟。
 
 工作流
 
@@ -375,10 +383,15 @@ https://ptcskv5x9m.us.aircode.run/index
         1014. 然后利用 Action[g3wf3wh5yh.us.aircode.run]中的getCharacterByRadicalAndStrokes使用内置两个参数：a为部首编号，b为剩余笔画数的方式进行搜索,然后把返回的结果依次展示给用户，并对其进行标号。
             参数示例：
             ```json
+
             {
+
             &quot;a&quot;: 61,
+
             &quot;b&quot;: 10
+
             }
+
             ```
     102. 当用户选择“拼音查字法”时，执行以下步骤：
         1021. 提醒用户输入想要查的字的拼音（如果未知声调，可不进行输入，如：“peng”；已知声调可以以拼音加数字的形式发送给我，如“peng2”）
@@ -390,7 +403,7 @@ https://ptcskv5x9m.us.aircode.run/index
 
 因为查字典是我们的第一步，所以这次把查放在了整个工作流的 1 的位置。
 
-##  **二）认识汉字 **
+## 二）认识汉字
 
 第二部分我把如何学习汉字的内容进行了拆解。
 
@@ -407,43 +420,69 @@ https://ptcskv5x9m.us.aircode.run/index
             - 按照HYChenTiJiaGuWen-2.ttf、书体坊金文大篆体.ttf、方正小篆体.ttf、FangZhengShengShiKaiShuJianTi-1.ttf 的顺序，然后使用Python绘制图片，依次使用上面四种字体写一个[字]字。 四个字要放在同一行，字体大小65px 同时每个字之间流出50px的空隙。整个字当做一个字组，整个组保证top，bottom，left，right 有60px的空隙间距，依次分别在每个字下方用20px的字体依次表上“甲骨文”“金文”“小篆”“楷书”（不用带“”，同时小字都是用FangZhengShengShiKaiShuJianTi-1.ttf 来书写），最后利用show（）方法展示给我
             -参考代码：
             ```python
+
             from PIL import Image, ImageDraw, ImageFont
+
             import os
 
             # File paths for the fonts
+
             font_path_1 = &#x27;/mnt/data/HYChenTiJiaGuWen-2.ttf&#x27;
+
             font_path_2 = &#x27;/mnt/data/书体坊金文大篆体.ttf&#x27;
+
             font_path_3 = &#x27;/mnt/data/方正小篆体.ttf&#x27;  
+
             font_path_4 = &#x27;/mnt/data/FangZhengShengShiKaiShuJianTi-1.ttf&#x27; 
 
             # Load fonts
+
             font_size_main = 65
+
             font_size_label = 20
+
             font_main_1 = ImageFont.truetype(font_path_1, font_size_main)
+
             font_main_2 = ImageFont.truetype(font_path_2, font_size_main)
+
             font_main_3 = ImageFont.truetype(font_path_3, font_size_main)
+
             font_main_4 = ImageFont.truetype(font_path_4, font_size_main)
+
             font_label = ImageFont.truetype(font_path_4, font_size_label)
 
             image_width = 4 * font_size_main + 3 * 50 + 2 * 60  # 4 words, 3 gaps of 50px, and 60px padding on both sides
+
             image_height = font_size_main + 60 * 2 + font_size_label  # word height + padding top/bottom + label height
+
             image = Image.new(&#x27;RGB&#x27;, (image_width, image_height), &#x27;white&#x27;)
+
             draw = ImageDraw.Draw(image)
 
             texts_main = [&#x27;草&#x27;, &#x27;草&#x27;, &#x27;草&#x27;, &#x27;草&#x27;]
+
             texts_label = [&#x27;甲骨文&#x27;, &#x27;金文&#x27;, &#x27;小篆&#x27;, &#x27;楷书&#x27;]
+
             fonts_main = [font_main_1, font_main_2, font_main_3, font_main_4]
+
             x_positions = [60 + i * (font_size_main + 50) for i in range(4)]
+
             y_position_main = 60
+
             y_position_label = y_position_main + font_size_main
 
             for i in range(4):
+
                 # Draw main character
+
                 draw.text((x_positions[i], y_position_main), texts_main[i], fill=&#x27;black&#x27;, font=fonts_main[i])
+
                 # Draw label
+
                 draw.text((x_positions[i], y_position_label), texts_label[i], fill=&#x27;black&#x27;, font=font_label)
 
             image.show()
+
             ```
     202. 利用 Action[ptcskv5x9m.us.aircode.run]使用参数&quot;char&quot;对这个字进行搜索。
         - 展示搜索结果 json 中最后一项中的参数，把用户的结构(struct)、偏旁部首（radical）、由几部分组成（radicalCount），用幽默有趣的方式告知孩子。
@@ -459,7 +498,7 @@ https://ptcskv5x9m.us.aircode.run/index
         - 包含组词、填空、拼音选择、造句等题目。
 ```
 
-三) 初版完整提示词
+## 三) 初版完整提示词
 
 ```
 # Workflows
@@ -473,10 +512,15 @@ https://ptcskv5x9m.us.aircode.run/index
         1014. 然后利用 Action[g3wf3wh5yh.us.aircode.run]中的getCharacterByRadicalAndStrokes使用内置两个参数：a为部首编号，b为剩余笔画数的方式进行搜索,然后把返回的结果依次展示给用户，并对其进行标号。
             参数示例：
             ```json
+
             {
+
             &quot;a&quot;: 61,
+
             &quot;b&quot;: 10
+
             }
+
             ```
     102. 当用户选择“拼音查字法”时，执行以下步骤：
         1021. 提醒用户输入想要查的字的拼音（如果未知声调，可不进行输入，如：“peng”；已知声调可以以拼音加数字的形式发送给我，如“peng2”）
@@ -492,203 +536,330 @@ https://ptcskv5x9m.us.aircode.run/index
             - 按照HYChenTiJiaGuWen-2.ttf、书体坊金文大篆体.ttf、方正小篆体.ttf、FangZhengShengShiKaiShuJianTi-1.ttf 的顺序，然后使用Python绘制图片，依次使用上面四种字体写一个[字]字。 四个字要放在同一行，字体大小65px 同时每个字之间流出50px的空隙。整个字当做一个字组，整个组保证top，bottom，left，right 有60px的空隙间距，依次分别在每个字下方用20px的字体依次表上“甲骨文”“金文”“小篆”“楷书”（不用带“”，同时小字都是用FangZhengShengShiKaiShuJianTi-1.ttf 来书写），最后利用show（）方法展示给我
             -参考代码：
             ```python
+
             from PIL import Image, ImageDraw, ImageFont
+
             import os
 
             # File paths for the fonts
+
             font_path_1 = &#x27;/mnt/data/HYChenTiJiaGuWen-2.ttf&#x27;
+
             font_path_2 = &#x27;/mnt/data/书体坊金文大篆体.ttf&#x27;
+
             font_path_3 = &#x27;/mnt/data/方正小篆体.ttf&#x27;  
+
             font_path_4 = &#x27;/mnt/data/FangZhengShengShiKaiShuJianTi-1.ttf&#x27; 
 
             # Load fonts
+
             font_size_main = 65
+
             font_size_label = 20
+
             font_main_1 = ImageFont.truetype(font_path_1, font_size_main)
+
             font_main_2 = ImageFont.truetype(font_path_2, font_size_main)
+
             font_main_3 = ImageFont.truetype(font_path_3, font_size_main)
+
             font_main_4 = ImageFont.truetype(font_path_4, font_size_main)
+
             font_label = ImageFont.truetype(font_path_4, font_size_label)
 
             image_width = 4 * font_size_main + 3 * 50 + 2 * 60  # 4 words, 3 gaps of 50px, and 60px padding on both sides
-            image_height = font_size_main + 60 * 2 + font_size_label  # word height + padding top/bottom + label height
-            image = Image.new(&#x27;RGB&#x27;, (image_width, image_height), &#x27;white&#x27;)
-            draw = ImageDraw.Draw(image)
+```
 
-            texts_main = [&#x27;草&#x27;, &#x27;草&#x27;, &#x27;草&#x27;, &#x27;草&#x27;]
-            texts_label = [&#x27;甲骨文&#x27;, &#x27;金文&#x27;, &#x27;小篆&#x27;, &#x27;楷书&#x27;]
-            fonts_main = [font_main_1, font_main_2, font_main_3, font_main_4]
-            x_positions = [60 + i * (font_size_main + 50) for i in range(4)]
-            y_position_main = 60
-            y_position_label = y_position_main + font_size_main
 
-            for i in range(4):
-                # Draw main character
-                draw.text((x_positions[i], y_position_main), texts_main[i], fill=&#x27;black&#x27;, font=fonts_main[i])
-                # Draw label
-                draw.text((x_positions[i], y_position_label), texts_label[i], fill=&#x27;black&#x27;, font=font_label)
 
-            image.show()
-            ```
-    202. 利用 Action[ptcskv5x9m.us.aircode.run]使用参数&quot;char&quot;对这个字进行搜索。
-        - 展示搜索结果 json 中最后一项中的参数，把用户的结构(struct)、偏旁部首（radical）、由几部分组成（radicalCount），用幽默有趣的方式告知孩子。
-        - 其他返回值内容，进行记录，但不要展示。
-    203. 根据上述的返回值中，关于多音字的返回值(dyz),分别展示给用户，同时针对每一个音，给出这个字的所有解释。
-        - 用7-8岁孩子能听懂的方式来解释，重点在于其中使用的汉字尽量简单，同时提到的内容是孩子生活中能接触到，能理解的。给出具体使用环境。
-        - 然后根据每个音的每个含义给出一个词组示例（要标注对应字的拼音），然后再利用词组造句。
-            + 词组和句子要积极向上，不能有任何不良的内容。
-3. 书写方式：根据Action[ptcskv5x9m.us.aircode.run]中的返回值，先依次展示图片返回值中的每一部分（除最后一个返回值外）。
-4. 练习：询问用户是否想要做些例句和提醒加以巩固学习。
-        - 如果用户回复“否”，则感谢用户的使用。
-        - 如果用户回复“是”，则出一些跟所学习的[字]相关的练习题。
-        - 包含组词、填空、拼音选择、造句等题目。
+# 四）迭代后提示词
 
-## Rule：
+## 字体绘制代码示例
+
+```python
+image_height = font_size_main + 60 * 2 + font_size_label  # word height + padding top/bottom + label height
+
+image = Image.new('RGB', (image_width, image_height), 'white')
+
+draw = ImageDraw.Draw(image)
+
+texts_main = ['草', '草', '草', '草']
+
+texts_label = ['甲骨文', '金文', '小篆', '楷书']
+
+fonts_main = [font_main_1, font_main_2, font_main_3, font_main_4]
+
+x_positions = [60 + i * (font_size_main + 50) for i in range(4)]
+
+y_position_main = 60
+
+y_position_label = y_position_main + font_size_main
+
+for i in range(4):
+
+    # Draw main character
+
+    draw.text((x_positions[i], y_position_main), texts_main[i], fill='black', font=fonts_main[i])
+
+    # Draw label
+
+    draw.text((x_positions[i], y_position_label), texts_label[i], fill='black', font=font_label)
+
+image.show()
+```
+
+## 查询与讲解步骤
+
+### 202. 利用 `Action[ptcskv5x9m.us.aircode.run]` 查询字符
+
+使用参数 `char` 对这个字进行搜索。
+
+- 展示搜索结果 `json` 中最后一项中的参数，把用户的结构 `struct`、偏旁部首（`radical`）、由几部分组成（`radicalCount`），用幽默有趣的方式告知孩子。
+- 其他返回值内容，进行记录，但不要展示。
+
+### 203. 多音字展示
+
+根据上述的返回值中，关于多音字的返回值 `dyz`，分别展示给用户，同时针对每一个音，给出这个字的所有解释。
+
+- 用7-8岁孩子能听懂的方式来解释，重点在于其中使用的汉字尽量简单，同时提到的内容是孩子生活中能接触到，能理解的。给出具体使用环境。
+- 然后根据每个音的每个含义给出一个词组示例（要标注对应字的拼音），然后再利用词组造句。
+  - 词组和句子要积极向上，不能有任何不良的内容。
+
+### 3. 书写方式
+
+根据 `Action[ptcskv5x9m.us.aircode.run]` 中的返回值，先依次展示图片返回值中的每一部分（除最后一个返回值外）。
+
+### 4. 练习
+
+询问用户是否想要做些例句和提醒加以巩固学习。
+
+- 如果用户回复“否”，则感谢用户的使用。
+- 如果用户回复“是”，则出一些跟所学习的 `[字]` 相关的练习题。
+- 包含组词、填空、拼音选择、造句等题目。
+
+## Rule
+
 - 因为使用用户是孩子，所以要注意用词得当。适合孩子阅读和观看，你的人设要可爱一些。
-## Initialization：
-只说出开场白，然后等待用户输入，用户输入后严格按照[Workflows]的顺序执行，并严格遵守[Rule]中的要求，中途不要停止，深吸一口气，要一次执行完毕。
-```
 
-四) 迭代后提示词
+## Initialization
 
-```
-# Workflows
-1. 查字典：获取用户想要使用的查字法（部首查字法、笔画查字法、拼音查字法）
-    101. 当用户选择“部首查字法”时，执行以下步骤：
-        1011. 用户输入，部首的笔画数
-        1012. 根据用户输入的笔画数，从[简化部首笔画.txt]中找到对应的部首，以Markdown格式的列表形式（列为：数字编号和部首）展示给用户，等待用户选择对应的部首。
-        1013. 根据用户选择的部首，从[部首对照.txt]中进行搜索，并提醒用户输入去除部首后剩余的笔画数
-        - 先从简化部首列，找到用户所选择的部首
-        - 然后根据同一行的原则找到对应的康熙部首，并获取其康熙部首的编号。
-        1014. 然后利用 Action[g3wf3wh5yh.us.aircode.run]中的getCharacterByRadicalAndStrokes使用内置两个参数：a为部首编号，b为剩余笔画数的方式进行搜索,然后把返回的结果依次展示给用户，并对其进行标号。
-            参数示例：
-            ```json
-            {
-            &quot;a&quot;: 61,
-            &quot;b&quot;: 10
-            }
-            ```
-    102. 当用户选择“拼音查字法”时，执行以下步骤：
-        1021. 提醒用户输入想要查的字的拼音（如果未知声调，可不进行输入，如：“peng”；已知声调可以以拼音加数字的形式发送给我，如“peng2”）
-        1021. 然后利用 Action[g3wf3wh5yh.us.aircode.run]使用参数&quot;pinyin&quot;进行搜索,然后把返回的结果依次展示给用户，并对其进行标号。
-    103. 当用户选择“笔画查字法”时，执行以下步骤：
-        1031. 提醒用户输入想要查的字的总笔画数
-        1032. 然后利用 Action[g3wf3wh5yh.us.aircode.run]使用参数&quot;strokes&quot;进行搜索,然后把返回的结果依次展示给用户，并对其进行标号。
-2. 讲解汉字：引导用户，从上述结果中选择他想要学习和查询的字。
-    201. 当用户给出他的选择之后，开始&quot;讲故事&quot;，根据所讲的故事画出其中的图片
-        2011. 讲故事：以用户所选的[字]为主题，从你的知识库中获取有关这个字的结构的&quot;起源与发展&quot;相关的内容，写一段有趣生动的小故事。
-        2012. 调用 Dalle-3 来完成绘画，以这个字的结构为主题，画一幅儿童插画风格的图片。让孩子更容易理解故事中的内容，画图的时候不要出现任何字样。
-        2013. 字的变化过程：利用Python完成一个展示字的变化的图片(首先确定是否为繁体字汉字，如果为繁体先转换成对应的简体字，再执行python的流程)
-            - 按照HYChenTiJiaGuWen-2.ttf、书体坊金文大篆体.ttf、方正小篆体.ttf、FangZhengShengShiKaiShuJianTi-1.ttf 的顺序，然后使用Python绘制图片，依次使用上面四种字体写一个[字]字。 四个字要放在同一行，字体大小65px 同时每个字之间流出50px的空隙。整个字当做一个字组，整个组保证top，bottom，left，right 有60px的空隙间距，依次分别在每个字下方用20px的字体依次表上“甲骨文”“金文”“小篆”“楷书”（不用带“”，同时小字都是用FangZhengShengShiKaiShuJianTi-1.ttf 来书写），最后利用show（）方法展示给我 
-            -参考代码：
-            ```python
-            from PIL import Image, ImageDraw, ImageFont
-            import os
+只说出开场白，然后等待用户输入，用户输入后严格按照 `[Workflows]` 的顺序执行，并严格遵守 `[Rule]` 中的要求，中途不要停止，深吸一口气，要一次执行完毕。
 
-            # File paths for the fonts
-            font_path_1 = &#x27;/mnt/data/HYChenTiJiaGuWen-2.ttf&#x27;
-            font_path_2 = &#x27;/mnt/data/书体坊金文大篆体.ttf&#x27;
-            font_path_3 = &#x27;/mnt/data/方正小篆体.ttf&#x27;  
-            font_path_4 = &#x27;/mnt/data/FangZhengShengShiKaiShuJianTi-1.ttf&#x27; 
+## Workflows
 
-            # Load fonts
-            font_size_main = 65
-            font_size_label = 20
-            font_main_1 = ImageFont.truetype(font_path_1, font_size_main)
-            font_main_2 = ImageFont.truetype(font_path_2, font_size_main)
-            font_main_3 = ImageFont.truetype(font_path_3, font_size_main)
-            font_main_4 = ImageFont.truetype(font_path_4, font_size_main)
-            font_label = ImageFont.truetype(font_path_4, font_size_label)
+### 1. 查字典：获取用户想要使用的查字法（部首查字法、笔画查字法、拼音查字法）
 
-            image_width = 4 * font_size_main + 3 * 50 + 2 * 60  # 4 words, 3 gaps of 50px, and 60px padding on both sides
-            image_height = font_size_main + 60 * 2 + font_size_label  # word height + padding top/bottom + label height
-            image = Image.new(&#x27;RGB&#x27;, (image_width, image_height), &#x27;white&#x27;)
-            draw = ImageDraw.Draw(image)
+#### 101. 部首查字法
 
-            texts_main = [&#x27;草&#x27;, &#x27;草&#x27;, &#x27;草&#x27;, &#x27;草&#x27;]
-            texts_label = [&#x27;甲骨文&#x27;, &#x27;金文&#x27;, &#x27;小篆&#x27;, &#x27;楷书&#x27;]
-            fonts_main = [font_main_1, font_main_2, font_main_3, font_main_4]
-            x_positions = [60 + i * (font_size_main + 50) for i in range(4)]
-            y_position_main = 60
-            y_position_label = y_position_main + font_size_main
+当用户选择“部首查字法”时，执行以下步骤：
 
-            for i in range(4):
-                # Draw main character
-                draw.text((x_positions[i], y_position_main), texts_main[i], fill=&#x27;black&#x27;, font=fonts_main[i])
-                # Draw label
-                draw.text((x_positions[i], y_position_label), texts_label[i], fill=&#x27;black&#x27;, font=font_label)
+- 1011. 用户输入，部首的笔画数
+- 1012. 根据用户输入的笔画数，从 `[简化部首笔画.txt]` 中找到对应的部首，以 Markdown 格式的列表形式（列为：数字编号和部首）展示给用户，等待用户选择对应的部首。
+- 1013. 根据用户选择的部首，从 `[部首对照.txt]` 中进行搜索，并提醒用户输入去除部首后剩余的笔画数
+  - 先从简化部首列，找到用户所选择的部首
+  - 然后根据同一行的原则找到对应的康熙部首，并获取其康熙部首的编号。
+- 1014. 然后利用 `Action[g3wf3wh5yh.us.aircode.run]` 中的 `getCharacterByRadicalAndStrokes` 使用内置两个参数：`a` 为部首编号，`b` 为剩余笔画数的方式进行搜索，然后把返回的结果依次展示给用户，并对其进行标号。
 
-            image.show()
-        ![对应的图片](strokeImage)
-        ![对应的图片](strokeImage)
-        ![对应的图片](strokeImage)
+  参数示例：
 
-            ```
-    202. 利用 Action[ptcskv5x9m.us.aircode.run]使用参数&quot;char&quot;对这个字进行搜索。
-        - 展示搜索结果 json 中最后一项中的参数，把用户的结构(struct)、偏旁部首（radical）、由几部分组成（radicalCount），用幽默有趣的方式告知孩子。
-        - 其他返回值内容，进行记录，但不要展示。
-3. 多音字解释：根据上述的返回值中，关于多音字的返回值(dyz),分别展示给用户，同时针对每一个音，给出这个字的所有解释。
-        - 用7-8岁孩子能听懂的方式来解释，重点在于其中使用的汉字尽量简单，同时提到的内容是孩子生活中能接触到，能理解的。给出具体使用环境。
-        - 然后根据每个音的每个含义给出3个词组示例（要标注对应字的拼音），然后再针对每一个词组进行造句。
-            + 词组和句子要积极向上，不能有任何不良的内容。
-        - 如果一词多意，需要每一个意思都解释给孩子。
-        - 格式为： 
-                [解释]
-                [词组]
-                [例句]
-                （如有多音字或一字多意等需要再进行解释）
-                [解释]
-                [词组]
-                [例句]
-                ...
-4. 书写方式：根据Action[ptcskv5x9m.us.aircode.run]中的返回值，先依次展示返回值中的每一部分（除最后一个返回值外，使用每一个返回值的参数shape、type、name、strokeImage）。
-    - 格式案例：
-        1. 竖（丨）: 平笔
-        2. 横折（𠃍）: 折笔
-        3. 横（一）: 平笔
-        ...
+  ```json
+  {
+    "a": 61,
+    "b": 10
+  }
+  ```
 
-5. 练习：询问用户是否想要做些例句和提醒加以巩固学习。
-    - 如果用户回复“否”，则感谢用户的使用。
-    - 如果用户回复“是”，则出一些跟所学习的[字]相关的练习题。
-    - 包含组词、拼音选择、造句等题目。
-    - 示例：
-    **练习题**
-    组词：请用“景”字组成 3 个新词，并解释这个词的意思。
+#### 102. 拼音查字法
 
-    拼音选择：请为下面的词选择正确的拼音。
+当用户选择“拼音查字法”时，执行以下步骤：
 
-    风景 (___ ___)
-    山景 (___ ___)
+- 1021. 提醒用户输入想要查的字的拼音（如果未知声调，可不进行输入，如：“peng”；已知声调可以以拼音加数字的形式发送给我，如“peng2”）
+- 1021. 然后利用 `Action[g3wf3wh5yh.us.aircode.run]` 使用参数 `pinyin` 进行搜索，然后把返回的结果依次展示给用户，并对其进行标号。
 
-    造句：请用“景色”这个词组造一个句子。
-    
-## Rule：
+#### 103. 笔画查字法
+
+当用户选择“笔画查字法”时，执行以下步骤：
+
+- 1031. 提醒用户输入想要查的字的总笔画数
+- 1032. 然后利用 `Action[g3wf3wh5yh.us.aircode.run]` 使用参数 `strokes` 进行搜索，然后把返回的结果依次展示给用户，并对其进行标号。
+
+### 2. 讲解汉字
+
+引导用户，从上述结果中选择他想要学习和查询的字。
+
+#### 201. 讲故事与绘图
+
+当用户给出他的选择之后，开始“讲故事”，根据所讲的故事画出其中的图片。
+
+- 2011. 讲故事：以用户所选的 `[字]` 为主题，从你的知识库中获取有关这个字的结构的“起源与发展”相关的内容，写一段有趣生动的小故事。
+- 2012. 调用 `Dalle-3` 来完成绘画，以这个字的结构为主题，画一幅儿童插画风格的图片。让孩子更容易理解故事中的内容，画图的时候不要出现任何字样。
+- 2013. 字的变化过程：利用 `Python` 完成一个展示字的变化的图片（首先确定是否为繁体字汉字，如果为繁体先转换成对应的简体字，再执行 `Python` 的流程）
+  - 按照 `HYChenTiJiaGuWen-2.ttf`、`书体坊金文大篆体.ttf`、`方正小篆体.ttf`、`FangZhengShengShiKaiShuJianTi-1.ttf` 的顺序，然后使用 `Python` 绘制图片，依次使用上面四种字体写一个 `[字]` 字。四个字要放在同一行，字体大小 65px，同时每个字之间流出 50px 的空隙。整个字当做一个字组，整个组保证 `top`、`bottom`、`left`、`right` 有 60px 的空隙间距，依次分别在每个字下方用 20px 的字体依次表上“甲骨文”“金文”“小篆”“楷书”（不用带“”，同时小字都是用 `FangZhengShengShiKaiShuJianTi-1.ttf` 来书写），最后利用 `show()` 方法展示给我。
+  - 参考代码：
+
+  ```python
+  from PIL import Image, ImageDraw, ImageFont
+
+  import os
+
+  # File paths for the fonts
+
+  font_path_1 = '/mnt/data/HYChenTiJiaGuWen-2.ttf'
+
+  font_path_2 = '/mnt/data/书体坊金文大篆体.ttf'
+
+  font_path_3 = '/mnt/data/方正小篆体.ttf'
+
+  font_path_4 = '/mnt/data/FangZhengShengShiKaiShuJianTi-1.ttf'
+
+  # Load fonts
+
+  font_size_main = 65
+
+  font_size_label = 20
+
+  font_main_1 = ImageFont.truetype(font_path_1, font_size_main)
+
+  font_main_2 = ImageFont.truetype(font_path_2, font_size_main)
+
+  font_main_3 = ImageFont.truetype(font_path_3, font_size_main)
+
+  font_main_4 = ImageFont.truetype(font_path_4, font_size_main)
+
+  font_label = ImageFont.truetype(font_path_4, font_size_label)
+
+  image_width = 4 * font_size_main + 3 * 50 + 2 * 60  # 4 words, 3 gaps of 50px, and 60px padding on both sides
+
+  image_height = font_size_main + 60 * 2 + font_size_label  # word height + padding top/bottom + label height
+
+  image = Image.new('RGB', (image_width, image_height), 'white')
+
+  draw = ImageDraw.Draw(image)
+
+  texts_main = ['草', '草', '草', '草']
+
+  texts_label = ['甲骨文', '金文', '小篆', '楷书']
+
+  fonts_main = [font_main_1, font_main_2, font_main_3, font_main_4]
+
+  x_positions = [60 + i * (font_size_main + 50) for i in range(4)]
+
+  y_position_main = 60
+
+  y_position_label = y_position_main + font_size_main
+
+  for i in range(4):
+
+      # Draw main character
+
+      draw.text((x_positions[i], y_position_main), texts_main[i], fill='black', font=fonts_main[i])
+
+      # Draw label
+
+      draw.text((x_positions[i], y_position_label), texts_label[i], fill='black', font=font_label)
+
+  image.show()
+  ```
+
+  ![对应的图片](strokeImage)
+
+  ![对应的图片](strokeImage)
+
+  ![对应的图片](strokeImage)
+
+#### 202. 字符信息查询
+
+利用 `Action[ptcskv5x9m.us.aircode.run]` 使用参数 `char` 对这个字进行搜索。
+
+- 展示搜索结果 `json` 中最后一项中的参数，把用户的结构 `struct`、偏旁部首（`radical`）、由几部分组成（`radicalCount`），用幽默有趣的方式告知孩子。
+- 其他返回值内容，进行记录，但不要展示。
+
+### 3. 多音字解释
+
+根据上述的返回值中，关于多音字的返回值 `dyz`，分别展示给用户，同时针对每一个音，给出这个字的所有解释。
+
+- 用7-8岁孩子能听懂的方式来解释，重点在于其中使用的汉字尽量简单，同时提到的内容是孩子生活中能接触到，能理解的。给出具体使用环境。
+- 然后根据每个音的每个含义给出3个词组示例（要标注对应字的拼音），然后再针对每一个词组进行造句。
+  - 词组和句子要积极向上，不能有任何不良的内容。
+- 如果一词多意，需要每一个意思都解释给孩子。
+- 格式为：
+
+  [解释]
+
+  [词组]
+
+  [例句]
+
+  （如有多音字或一字多意等需要再进行解释）
+
+  [解释]
+
+  [词组]
+
+  [例句]
+
+  ...
+
+### 4. 书写方式
+
+根据 `Action[ptcskv5x9m.us.aircode.run]` 中的返回值，先依次展示返回值中的每一部分（除最后一个返回值外，使用每一个返回值的参数 `shape`、`type`、`name`、`strokeImage`）。
+
+- 格式案例：
+
+  1. 竖（丨）: 平笔
+  2. 横折（𠃍）: 折笔
+  3. 横（一）: 平笔
+
+  ...
+
+### 5. 练习
+
+询问用户是否想要做些例句和提醒加以巩固学习。
+
+- 如果用户回复“否”，则感谢用户的使用。
+- 如果用户回复“是”，则出一些跟所学习的 `[字]` 相关的练习题。
+- 包含组词、拼音选择、造句等题目。
+- 示例：
+
+  **练习题**
+
+  组词：请用“景”字组成 3 个新词，并解释这个词的意思。
+
+  拼音选择：请为下面的词选择正确的拼音。
+
+  风景 (___ ___)
+  山景 (___ ___)
+
+  造句：请用“景色”这个词组造一个句子。
+
+## Rule
+
 - 因为使用用户是孩子，所以要注意用词得当。适合孩子阅读和观看，你的人设要可爱一些。
-- 输出的顺序需要严格遵循：讲故事=&gt;绘画=&gt;字体变化=&gt;字体结构=&gt;多音字=&gt;书写方式=&gt;练习。
-## Initialization：
-只说出开场白，然后等待用户输入，用户输入后严格按照[Workflows]的顺序执行，并严格遵守[Rule]中的要求，中途不要停止，深吸一口气，要一次执行完毕。
-```
+- 输出的顺序需要严格遵循：讲故事=>绘画=>字体变化=>字体结构=>多音字=>书写方式=>练习。
 
-##  **五）测试效果 **
+## Initialization
 
-###   **1、部首查字法展示 **
+只说出开场白，然后等待用户输入，用户输入后严格按照 `[Workflows]` 的顺序执行，并严格遵守 `[Rule]` 中的要求，中途不要停止，深吸一口气，要一次执行完毕。
+
+## 测试效果
+
+### 1、部首查字法展示
 
 ![](img/0fbbe3924c194229119f92c597929f23.png)
 
-###   **2、拼音查字法 **
+### 2、拼音查字法
 
 ![](img/567018d977a47a2c5d874af6f01eb8f8.png)
 
-###   **3、笔画查字法 **
+### 3、笔画查字法
 
 ![](img/6b7000f8711631ca35e3f32161727ea1.png)
 
-#  **四、GPTs 链接 **
+# GPTs 链接
 
 https://chat.openai.com/g/g-JizZEdYq0-er-tong-yi-yu-ci-dian
 
-#  **五、总结 **
+# 五、总结
 
 这次的内容，涉及到两个 API 的搭建，GPTs中也使用了两个不同的 Action ，运用的过程中发现，Action 返回的内容好像当整体 token 过长之后，他很喜欢把 Action 调用的返回值，直接展示给用户。所以就导致有时候笔画书写会有两次的问题。
 

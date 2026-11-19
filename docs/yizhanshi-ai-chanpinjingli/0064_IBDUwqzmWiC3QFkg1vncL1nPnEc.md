@@ -1,12 +1,13 @@
+
 # 经典案例
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/COyZdp0IQoUm18x318Bcc2x6nLf](https://v11enp9ok1h.feishu.cn/docx/COyZdp0IQoUm18x318Bcc2x6nLf)
 
 <https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie>
 
-本章节描述了几个 CogVLM2 模型能够有效处理的经典案例：
+本章节描述了几个 `CogVLM2` 模型能够有效处理的经典案例：
 
-# 图像理解
+## 图像理解
 
 ![](img/9bb1efbfd59fd8938b2c6363fe577c2d.png)
 
@@ -14,47 +15,32 @@
 
 这个梗图是对电影《寻找梦幻岛》中的一幕的改编。在原片中，一个名叫丹尼尔的年轻男孩遇到了困难。这个梗图将电影中的场景与机器学习中的问题——模型无法泛化到分布之外的数据——进行了幽默的对比。文本“MY MODEL CANNOT GENERALIZE OUT OF DISTRIBUTION”（我的模型不能泛化到分布之外的数据）是对丹尼尔的困境的引用，而“THEN WE'LL TRAIN IT UNTIL THERE IS NOTHING LEFT OUT OF DISTRIBUTION”（然后我们将训练它，直到没有任何分布之外的数据）则是对解决机器学习中泛化问题的一种幽默且不切实际的方法。
 
-## 挑选西瓜
-
-![](img/fe20e055dda5642e0d29a9e63fe645d9.png)
+### 挑选西瓜
 
 Q：哪个瓜最熟？给出理由
 
 A：根据图片，标号为9的瓜看起来最熟。它的底部有黄色，表皮上有明显的黑色斑点，这通常是成熟的迹象。
 
-## 户型图描述
-
-![](img/eb3fda1d776dcaaaf4d9fd6474bc5a66.png)
+### 户型图描述
 
 Q：请详细描述此户型图，包括各个房间的名称和大小。
 
 A：户型图显示了一个住宅的平面布局。从左到右，上到下，我们可以看到如下房间和区域：
 
 - 卧室C：位于左侧，面积为18.2平方米。
-
 - 门厅：位于中间，面积为14.7平方米。
-
 - 卧室B：位于左侧，面积为8.2平方米。
-
 - 过道A：连接卧室B和门厅，面积为1.6平方米。
-
 - 厨房：位于右侧，面积为7.6平方米。
-
 - 卫生间B：位于门厅旁边，面积为4.5平方米。
-
 - 客厅：位于右侧，面积为34.9平方米。
-
 - 卫生间A：位于客厅旁边，面积为4.5平方米。
-
 - 卧室A：位于左侧，面积为18.0平方米。
-
 - 阳台A：位于右侧，面积为7.0平方米。
 
 在户型图的左下角还有一个表示方向的罗盘，上面标注了“N”代表北。此外，图片的右下角有一个水印，显示为“房天下Fang.com”。
 
-## 奇怪的美食
-
-![](img/23917718571e2ab0a23b529d5d614cfc.png)
+### 奇怪的美食
 
 Q：请详细描述这张图片。
 
@@ -62,9 +48,7 @@ A：这张图片展示了一个独特的披萨，它的形状像一只乌龟。�
 
 这张图片展示了一个形状像乌龟的披萨，它被放置在一个纸盒里。披萨的外皮是金黄色的，上面撒有绿色的香草和一些看起来像是土豆泥的块状物。乌龟的头部和四肢也是用披萨面团制作的，呈现出绿色。整个披萨的造型非常逼真，甚至连乌龟的眼睛和壳上的纹理都做得非常细致。这个创意披萨看起来非常美味和有趣。
 
-## 手写体解析
-
-![](img/b6ca5e77718e054083ca5d4dea701fa7.png)
+### 手写体解析
 
 Q：输出这段文本。
 
@@ -100,59 +84,38 @@ A：我喜欢你.
 
 稻草人·李夏怡.
 
-## 车票扫描
-
-![](img/235fbd566e7858dba15c2ca8b2a1271d.png)
+### 车票扫描
 
 Q：用json格式列出图中的关键信息。
 
-A：```json
+A：
 
+```json
 {
-
 "始发站": "无锡",
-
 "到达站": "杭州东",
-
 "日期": "2001年10月05日09:00开",
-
 "金额": "45.00元",
-
 "座位类型": "无座"
-
 }
-
 ```
 
-## 统计图描述
-
-![](img/da00c2ccb40d6b6dd7caeec0d77c5171.png)
+### 统计图描述
 
 Q：用 markdown 格式整理图中的增长率曲线。
 
 A：| 年份 | 增长率 |
-
 |------|--------|
-
 | 2012 | 38.10%  |
-
 | 2013 | 1.7%   |
-
 | 2014 | 9.1%   |
-
 | 2015 | 11.9%  |
-
 | 2016 | 11.1%  |
-
 | 2017 | 9.9%   |
-
 | 2018 | 10.1%  |
-
 | 2019 | 18.8%  |
 
-## 流程图描述和讲解
-
-![](img/ab3bee55dde73dd8c2d45c9b664df279.png)
+### 流程图描述和讲解
 
 Q：用列表形式描述图中的关键步骤。
 
@@ -170,17 +133,13 @@ Q：请详细描述此图像内容。
 
 A：这是一幅展示了十二生肖的图片。图片上方有“十二生肖”四个大字，下方则是具体的十二生肖图案，每个生肖都由一个独特的图形表示。这些图形与常见的生肖符号相似，但又有所不同，可能是对传统生肖的现代艺术诠释。从左到右、从上到下，十二生肖依次为：鼠、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪。
 
-## 历史与象形文字
-
-![](img/2d5b502754b146d7ffe6725c92fc5155.png)
+### 历史与象形文字
 
 Q：这是什么字？字体分别是？
 
 A：这是“鱼”字，字体分别是：左边是甲骨文，中间是金文，右边是篆书。
 
-## 数学题解题
-
-![](img/abfdda734280ea025ac694bd0aaaee76.png)
+### 数学题解题
 
 Q：这道题怎么做？step by step.
 
@@ -202,9 +161,7 @@ c = 10
 
 所以，这个直角三角形的斜边长度是10。
 
-## 漫画分析
-
-![](img/b6be1f5c5ca3babe7f8a5d41d6fe0a2a.png)
+### 漫画分析
 
 Q：请详细分析这张图片及其含义。
 
@@ -216,8 +173,7 @@ A：The image depicts a scenario with a group of people gathered around a podium
 
 The image conveys a message about the challenges and realities faced in data science and machine learning. While many are attracted to the shiny new toys of technology (in this case, SOTA models), the actual work of preparing and cleaning data can be a significant and time-consuming barrier. It underscores the importance of not getting caught up in the hype of new technologies but also acknowledging the foundational and often unseen work that underpins them.
 
-# 视频理解
-
+## 视频理解
 
 [basketball.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BD9nbRBlVo7GBex6Xw1cDcbPnHb)
 

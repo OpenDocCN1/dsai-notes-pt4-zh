@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（10月 23日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/GG3Vd0V8KoNSBExO4uXcmGQnnBh](https://miracleplus.feishu.cn/docx/GG3Vd0V8KoNSBExO4uXcmGQnnBh)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Le**pton AI 创始成员，曾在阿里云担任高性能 AI** 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
+> 本期活动将在11月9日 10:00开始，我们邀请到的嘉宾是鱼哲，Lepton AI 创始成员，曾在阿里云担任高性能 AI 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
 
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
 
@@ -12,9 +13,7 @@
 
 ![](img/acdf1a8b9b4690b528c72a032b5013dc.png)
 
-#
-
-# 资讯
+## 资讯
 
 ### OpenAI 任命首位首席经济学家
 
@@ -34,21 +33,25 @@ https://techcrunch.com/2024/10/22/anthropics-new-ai-can-control-your-pc/
 
 Anthropic 最近发布了升级版的 Claude 3.5 Sonnet 模型，其核心新功能是能够通过“Computer Use” API 与桌面应用程序交互。该模型可以模拟用户的键盘输入、鼠标点击和光标移动，实际上模拟了人在电脑前的操作。此功能现已开放测试，开发者可以通过 Anthropic API、Amazon Bedrock 和 Google Cloud 的 Vertex AI 进行尝试。
 
-**技术细节与创新：**
+#### 技术细节与创新：
 
-1.  **屏幕交互**：Claude 3.5 Sonnet 能够通过屏幕截图分析用户界面，计算鼠标光标移动的像素数来执行点击等操作。它还支持使用软件工具完成复杂任务，如处理数据、填写表单等。
+1. 屏幕交互：Claude 3.5 Sonnet 能够通过屏幕截图分析用户界面，计算鼠标光标移动的像素数来执行点击等操作。它还支持使用软件工具完成复杂任务，如处理数据、填写表单等。
 
-1.  **性能提升**：新版本带来多项性能优化，包括改进的指令执行能力和工具使用精度，尤其是在编码任务上的表现优于 OpenAI 的 GPT-4o。尽管模型并未专门针对这些任务进行训练，但它具备自我纠正和重试的能力，能处理需要多步骤的复杂任务。
+2. 性能提升：新版本带来多项性能优化，包括改进的指令执行能力和工具使用精度，尤其是在编码任务上的表现优于 OpenAI 的 GPT-4o。尽管模型并未专门针对这些任务进行训练，但它具备自我纠正和重试的能力，能处理需要多步骤的复杂任务。
 
-1.  **局限性**：虽然 Claude 3.5 Sonnet 能够执行多种桌面级命令，但在实际操作中仍存在一定的缺陷，例如对滚动和缩放操作的处理不佳，并且容易遗漏一些短暂的操作提示。此外，操作速度较慢且易出错，Anthropic 建议开发者从低风险任务入手。
+3. 局限性：虽然 Claude 3.5 Sonnet 能够执行多种桌面级命令，但在实际操作中仍存在一定的缺陷，例如对滚动和缩放操作的处理不佳，并且容易遗漏一些短暂的操作提示。此外，操作速度较慢且易出错，Anthropic 建议开发者从低风险任务入手。
 
-**安全与风险：** Anthropic 意识到这一功能可能带来的安全风险。尽管模型没有在训练期间访问过用户的屏幕截图和网络内容，Anthropic 采取了措施来防止滥用，包括为模型配置高风险操作分类器，避免其与社交媒体或政府网站互动。此外，所有通过 Computer Use API 生成的截图将至少保留 30 天，供开发者和安全团队参考。公司表示，在必要时可以限制模型的访问权限，以防止垃圾邮件、欺诈和错误信息传播。
+#### 安全与风险：
 
-**市场应用与未来方向：** 早期版本的 Claude 3.5 Sonnet 已被 Replit 用于自动化应用程序验证，Canva 也在探索该模型对设计和编辑过程的支持能力。此外，Anthropic 还计划推出更经济的 Claude 3.5 Haiku 版本，旨在以较低成本提供更高效的工具使用和定制服务。
+Anthropic 意识到这一功能可能带来的安全风险。尽管模型没有在训练期间访问过用户的屏幕截图和网络内容，Anthropic 采取了措施来防止滥用，包括为模型配置高风险操作分类器，避免其与社交媒体或政府网站互动。此外，所有通过 Computer Use API 生成的截图将至少保留 30 天，供开发者和安全团队参考。公司表示，在必要时可以限制模型的访问权限，以防止垃圾邮件、欺诈和错误信息传播。
+
+#### 市场应用与未来方向：
+
+早期版本的 Claude 3.5 Sonnet 已被 Replit 用于自动化应用程序验证，Canva 也在探索该模型对设计和编辑过程的支持能力。此外，Anthropic 还计划推出更经济的 Claude 3.5 Haiku 版本，旨在以较低成本提供更高效的工具使用和定制服务。
 
 ![](img/8a6a1b14be64a6d38951173c0d01f726.png)
 
-### **Stability 宣布其最新的 Stable Dif**fusion 模型可生成更“多样化”图像
+### Stability 宣布其最新的 Stable Diffusion 模型可生成更“多样化”图像
 
 https://stability.ai/stable-image
 
@@ -56,11 +59,11 @@ https://stability.ai/stable-image
 
 Stable Diffusion 3.5 系列包含三个模型：
 
-+   Stable Diffusion 3.5 Large：拥有 80 亿参数，是该系列最强大的模型，能够生成分辨率高达 1 百万像素的图像。
+- Stable Diffusion 3.5 Large：拥有 80 亿参数，是该系列最强大的模型，能够生成分辨率高达 1 百万像素的图像。
 
-+   Stable Diffusion 3.5 Large Turbo：这是 3.5 Large 的蒸馏版本，虽然生成速度更快，但图像质量有所降低。
+- Stable Diffusion 3.5 Large Turbo：这是 3.5 Large 的蒸馏版本，虽然生成速度更快，但图像质量有所降低。
 
-+   Stable Diffusion 3.5 Medium：优化于手机和笔记本等边缘设备，支持生成分辨率为 0.25 至 2 百万像素的图像。
+- Stable Diffusion 3.5 Medium：优化于手机和笔记本等边缘设备，支持生成分辨率为 0.25 至 2 百万像素的图像。
 
 目前，Stable Diffusion 3.5 Large 和 3.5 Large Turbo 已上线，而 3.5 Medium 将于 10 月 29 日发布。
 
@@ -88,7 +91,7 @@ Mochi 1基于10亿参数的扩散模型，是目前最大的视频生成开源�
 
 ![](img/9aab4ed12ce2e46d8cf4fd095fbef003.png)
 
-# 推特
+## 推特
 
 ### Runway推出Act-One：不需要动作捕捉或绑定，通过一个驱动视频和角色图像生成富有表现力的角色表演
 
@@ -178,9 +181,9 @@ https://x.com/pirroh/status/1848752337080488177
 
 [ssstwitter.com_1729671123010.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XnnXb0HWkoLOVMx8rg2cC7ALn3b)
 
-# 信号
+## 信号
 
-## Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws
+### Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws
 
 贡献人：
 
@@ -194,7 +197,7 @@ https://x.com/pirroh/status/1848752337080488177
 
 ![](img/5ed0976d27a13fdf68e206efa0bc64df.png)
 
-## Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation
+### Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation
 
 贡献人：
 
@@ -208,7 +211,7 @@ https://x.com/pirroh/status/1848752337080488177
 
 ![](img/e202dfdb58a7dc9f7a99300fdea4111a.png)
 
-## A Watermark for Black-Box Language Models
+### A Watermark for Black-Box Language Models
 
 贡献者：
 
@@ -222,7 +225,9 @@ Watermarking技术最近作为一种有效策略，用于检测大型语言模�
 
 ![](img/395aca79a26957eab0e5e7eb7f2707fc.png)
 
-## Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents
+
+
+# Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents
 
 贡献人：
 
@@ -236,7 +241,7 @@ Watermarking技术最近作为一种有效策略，用于检测大型语言模�
 
 ![](img/f54f5aac2358dad2b367f7027037821b.png)
 
-# 产品
+## 产品
 
 ### Averi
 
@@ -246,7 +251,7 @@ https://www.averi.ai/
 
 Averi 是一款 AI 驱动的营销管理平台，帮助企业快速制定营销策略、创建内容并组建团队。它结合了基于公司数据的智能营销工具和经过审核的营销专家，提供高效的协作环境，用户可以免费使用基础计划，提升营销效率。
 
-![](img/5ed2852517215bf8777804ba52036294.png)
+![](img/5ed2852517215bf87777804ba52036294.png)
 
 ### Capgo
 
@@ -258,7 +263,7 @@ Capgo 是一个用于构建和管理微服务架构的工具，可以在简化�
 
 ![](img/2d92dba929589b132bfe1e8d9d6226c0.png)
 
-# HuggingFace&Github
+## HuggingFace & Github
 
 ### AutorizePro
 
@@ -280,7 +285,7 @@ Meta Lingua 是一个轻量级、高效和易于修改的 PyTorch LLM 训练库�
 
 ![](img/3092d2d095aef7737b2991e79e00cf91.png)
 
-# 投融资
+## 投融资
 
 ### CrewAI 利用第三方模型实现业务任务自动化
 
@@ -352,7 +357,7 @@ Socket还整合了OpenAI和Anthropic的生成式AI API，能够生成漏洞摘�
 
 ![](img/b479fb444ddcf4866b92b29a8dd03d2a.png)
 
-# 学习
+## 学习
 
 ### 强化学习课程
 
@@ -376,45 +381,45 @@ https://web.mit.edu/dimitrib/www/RLCOURSECOMPLETE%202ndEDITION.pdf
 
 https://zhuanlan.zhihu.com/p/2597683936
 
-+   模型支持，支持几乎所有llm和vlm模型且效率非常高，包括LLama系列模型/Mixtral系列模型/LLava多模态/状态空间模型/reward模型等
++   模型支持，支持几乎所有`llm`和`vlm`模型且效率非常高，包括`LLama`系列模型/`Mixtral`系列模型/`LLaVA`多模态/状态空间模型/reward模型等
 
-+   硬件支持，支持主流的xPU，如nvidia GPU/amd GPU/Intel GPU/Google TPU等
++   硬件支持，支持主流的`xPU`，如`nvidia GPU`/`amd GPU`/`Intel GPU`/`Google TPU`等
 
 +   模型性能优化
 
-+   深层次的 cuda kernel优化，如计算时异步数据传输/优化内存访问（精度精度-高效数据类型-减少数据传输量）/增加并行度等优化allreduce通信。利用cutlass库优化GEMM，实现kernel fusion等功能，提供专门的flashatention kernel等
++   深层次的`cuda` kernel优化，如计算时异步数据传输/优化内存访问（精度精度-高效数据类型-减少数据传输量）/增加并行度等优化`allreduce`通信。利用`cutlass`库优化`GEMM`，实现`kernel fusion`等功能，提供专门的`flashatention` kernel等
 
-+   cuda图优化
++   `cuda`图优化
 
-+   支持主流的量化技术，FP8/INT8/GPTQ/AWQ等，并集成marlin kernel等
++   支持主流的量化技术，`FP8`/`INT8`/`GPTQ`/`AWQ`等，并集成`marlin` kernel等
 
 +   新特性
 
-+   支持sarathiserver论文提出的chunked prefill
++   支持`sarathiserver`论文提出的`chunked prefill`
 
-+   speculative decodin(draft-verification)/dynamic speculative deccoding（根据系统负载和推测精度动态调整长度）
++   `speculative decodin(draft-verification)`/`dynamic speculative deccoding`（根据系统负载和推测精度动态调整长度）
 
-+   基于hash的自动前缀缓存，缓存system prompt及多轮对话，减少请求数据量，这与sglang中采用的radix树维护kv缓存不同，但都提高了缓存重用
++   基于`hash`的自动前缀缓存，缓存`system prompt`及多轮对话，减少请求数据量，这与`sglang`中采用的`radix`树维护`kv`缓存不同，但都提高了缓存重用
 
-+   支持多个lora adapter及热加载
++   支持多个`lora` adapter及热加载
 
 +   支持结构化输出等
 
-+   基于prometheus/grafana的实时监控，包括gpu内存使用/kvcache重用率/访问延迟吞吐等指标
++   基于`prometheus`/`grafana`的实时监控，包括`gpu`内存使用/`kvcache`重用率/访问延迟吞吐等指标
 
 +   分布式系统架构
 
-+   支持tensor并行/流水线并行等
++   支持`tensor`并行/流水线并行等
 
-+   多GPU/多节点支持
++   多`GPU`/多节点支持
 
-+   cpu offloading
++   `cpu offloading`
 
 +   动态批处理/流式输出
 
-+   v0.6.0中最小化GPU负载功能，
++   `v0.6.0`中最小化`GPU`负载功能，
 
-+   包括APIserver与推理引擎分离到不同进程，通过ZMQ消息队列通信
++   包括`APIserver`与推理引擎分离到不同进程，通过`ZMQ`消息队列通信
 
 +   多步调度
 
@@ -426,13 +431,13 @@ https://zhuanlan.zhihu.com/p/2597683936
 
 https://www.zhihu.com/question/653658936/answer/12031294363
 
-**Q的动态性**：推理阶段的查询向量Q是根据新输入的token实时生成的。每个新token都会带来新的Q，因此不能直接缓存Q。而K和V来自已处理的历史token，它们在推断过程中保持不变，因此可以缓存。
+**`Q`的动态性**：推理阶段的查询向量`Q`是根据新输入的`token`实时生成的。每个新`token`都会带来新的`Q`，因此不能直接缓存`Q`。而`K`和`V`来自已处理的历史`token`，它们在推断过程中保持不变，因此可以缓存。
 
-**计算模式的区别**：在每个推断步骤中，新的查询Q需要与先前缓存的K进行匹配计算，即Q和K的点积。由于K和V可以在模型首次处理时缓存下来，后续的推理阶段只需要每次用新的Q与缓存的K、V进行矩阵运算。而Q的动态特性使得缓存它没有意义，因为每次生成的新Q都不同。
+**计算模式的区别**：在每个推断步骤中，新的查询`Q`需要与先前缓存的`K`进行匹配计算，即`Q`和`K`的点积。由于`K`和`V`可以在模型首次处理时缓存下来，后续的推理阶段只需要每次用新的`Q`与缓存的`K`、`V`进行矩阵运算。而`Q`的动态特性使得缓存它没有意义，因为每次生成的新`Q`都不同。
 
-**计算复杂度与效率**：在LLM的推断阶段，使用KV Cache可以显著减少计算量。每次只需进行新Q和缓存的K、V矩阵的计算，而不必重新计算整个序列的键值对，这极大提高了推理效率。如果缓存Q，则每次输入新token时仍需要重新计算Q与K的点积，无法实现计算加速。
+**计算复杂度与效率**：在LLM的推断阶段，使用`KV Cache`可以显著减少计算量。每次只需进行新`Q`和缓存的`K`、`V`矩阵的计算，而不必重新计算整个序列的键值对，这极大提高了推理效率。如果缓存`Q`，则每次输入新`token`时仍需要重新计算`Q`与`K`的点积，无法实现计算加速。
 
-**内存与带宽限制**：KV Cache的引入也有助于减少推理时的内存和带宽使用，因为只需缓存历史的K和V，而不需要保留动态变化的Q。
+**内存与带宽限制**：`KV Cache`的引入也有助于减少推理时的内存和带宽使用，因为只需缓存历史的`K`和`V`，而不需要保留动态变化的`Q`。
 
 ![](img/00742124e376406176d7ccb8afbbdd28.png)
 
@@ -440,57 +445,59 @@ https://www.zhihu.com/question/653658936/answer/12031294363
 
 https://zhuanlan.zhihu.com/p/1274248985
 
-Mirage是一个新兴的项目，致力于通过SuperOptimization技术自动生成高效的GPU内核，无需用户编写CUDA或Triton代码。相比手动设计内核，Mirage在多个基准测试中显示出1.2至2.5倍的性能提升。通过几行Python代码，Mirage能自动搜索最优的GPU内核，实现如FlashAttention等复杂操作。此外，Mirage使用形式化验证确保内核的正确性，减少手动编写CUDA内核时可能出现的错误。
+`Mirage`是一个新兴的项目，致力于通过`SuperOptimization`技术自动生成高效的GPU内核，无需用户编写`CUDA`或`Triton`代码。相比手动设计内核，`Mirage`在多个基准测试中显示出1.2至2.5倍的性能提升。通过几行`Python`代码，`Mirage`能自动搜索最优的GPU内核，实现如`FlashAttention`等复杂操作。此外，`Mirage`使用形式化验证确保内核的正确性，减少手动编写CUDA内核时可能出现的错误。
 
-Mirage的核心优势在于：
+`Mirage`的核心优势在于：
 
-1.  **生产力提升**：无需深度了解GPU编程，只需描述PyTorch操作。
+1.  **生产力提升**：无需深度了解GPU编程，只需描述`PyTorch`操作。
 
-1.  **性能优化**：通过自动搜索优化方案，比手动编写更高效。
+2.  **性能优化**：通过自动搜索优化方案，比手动编写更高效。
 
-1.  **正确性保证**：形式化验证提高了内核的可靠性。
+3.  **正确性保证**：形式化验证提高了内核的可靠性。
 
-Mirage不仅适用于现有模型，还能支持带有复杂变体的LLM，如QK-Norm和Multi-Head Latent Attention，通过融合不同的操作进一步提高性能。Mirage为未来的AI开发提供了无需学习复杂GPU编程的可能性，大幅降低开发门槛。
+`Mirage`不仅适用于现有模型，还能支持带有复杂变体的LLM，如`QK-Norm`和`Multi-Head Latent Attention`，通过融合不同的操作进一步提高性能。`Mirage`为未来的AI开发提供了无需学习复杂GPU编程的可能性，大幅降低开发门槛。
 
 ![](img/2abc5890500ba0bf22335515a48f459d.png)
 
-### sglang 学习（一）：radix-tree
+### `sglang` 学习（一）：`radix-tree`
 
 https://zhuanlan.zhihu.com/p/2511078239
 
-Radix-tree的实现细节主要围绕两个核心目标：快速查找和最大匹配，以优化token的KV缓存和检索。以下是技术细节总结：
+`radix-tree`的实现细节主要围绕两个核心目标：快速查找和最大匹配，以优化`token`的KV缓存和检索。以下是技术细节总结：
 
-Prefix Cache的需求：
+`Prefix Cache`的需求：
 
-Prefix cache的目的是存储prompt_token_ids对应的KV值，并在相似的输入出现时直接从缓存中取出已有的KV值，减少重复计算。其关键需求是：
+`Prefix cache`的目的是存储`prompt_token_ids`对应的`KV`值，并在相似的输入出现时直接从缓存中取出已有的`KV`值，减少重复计算。其关键需求是：
 
-+   前向最大匹配：找到prompt_token_ids中前n个已缓存的KV值，并将这些值从KV池中取出，节省重复计算。
++   前向最大匹配：找到`prompt_token_ids`中前n个已缓存的`KV`值，并将这些值从`KV`池中取出，节省重复计算。
 
 核心问题与解决方法：
 
-1.  如何高效记录KV值：使用radix-tree来实现类似字典树的结构存储已计算过的token的KV值。
+1.  如何高效记录`KV`值：使用`radix-tree`来实现类似字典树的结构存储已计算过的`token`的`KV`值。
 
-1.  如何分散存储KV值：采用分散存储策略，类似vLLM的方案，不再赘述。
+2.  如何分散存储`KV`值：采用分散存储策略，类似`vLLM`的方案，不再赘述。
 
-Radix-tree的实现：
+`Radix-tree`通过分层存储`token`的`KV`值，并在新`token`插入时进行节点分裂（`split`），确保后续的`prompt`输入时能够快速找到前向最大匹配的`token`。
 
-Radix-tree通过分层存储token的KV值，并在新token插入时进行节点分裂（split），确保后续的prompt输入时能够快速找到前向最大匹配的token。
 
-+   首次插入：将token_id和对应的KV值插入radix-tree，如插入"hello, what your first name"，形成树状结构，子节点存储的token可通过key快速查找。
 
-+   多次插入与split操作：如插入第二个输入"hello, what your second name"，节点进行split，使得共享前缀部分快速匹配，未匹配的部分进入新的分支。split确保最大匹配的token能被快速找到。
+## Radix-tree 设计与实现
+
+- 首次插入：将`token_id`和对应的`KV`值插入`radix-tree`，如插入"hello, what your first name"，形成树状结构，子节点存储的`token`可通过`key`快速查找。
+
+- 多次插入与`split`操作：如插入第二个输入"hello, what your second name"，节点进行`split`，使得共享前缀部分快速匹配，未匹配的部分进入新的分支。`split`确保最大匹配的`token`能被快速找到。
 
 具体代码解析：
 
-+   插入逻辑：通过递归查找子节点，并根据匹配长度（prefix_len）进行分裂和插入新节点。
+- 插入逻辑：通过递归查找子节点，并根据匹配长度（`prefix_len`）进行分裂和插入新节点。
 
-+   LRU剔除策略：当显存不足时，采用最少使用（LRU）策略剔除叶子节点的KV值。将叶子节点构建最小堆，并根据访问时间剔除最早的节点，确保活跃token优先保留。
+- `LRU`剔除策略：当显存不足时，采用最少使用（`LRU`）策略剔除叶子节点的`KV`值。将叶子节点构建最小堆，并根据访问时间剔除最早的节点，确保活跃`token`优先保留。
 
 查找最大匹配：
 
-通过递归查找radix-tree中的前向最大匹配token，将匹配的KV值提取出来，并继续查找未匹配的部分。举例来说，对于两个prompt：[1,2,3,4,5,6,7,8]和[1,2,3,4,9,10,11,12]，radix-tree会识别前四个token匹配，并取出对应的KV值，剩余部分继续计算。
+通过递归查找`radix-tree`中的前向最大匹配`token`，将匹配的`KV`值提取出来，并继续查找未匹配的部分。举例来说，对于两个prompt：`[1,2,3,4,5,6,7,8]`和`[1,2,3,4,9,10,11,12]`，`radix-tree`会识别前四个`token`匹配，并取出对应的`KV`值，剩余部分继续计算。
 
-Radix-tree设计的目的是高效记录和查找缓存的token KV值，其核心在于split操作确保最大匹配的实现，结合LRU策略来管理内存使用，优化了token的KV缓存。
+`Radix-tree`设计的目的是高效记录和查找缓存的`token` `KV`值，其核心在于`split`操作确保最大匹配的实现，结合`LRU`策略来管理内存使用，优化了`token`的`KV`缓存。
 
 ![](img/182e3b5d8e50ad0880c59db760d08de4.png)
 
@@ -498,19 +505,19 @@ Radix-tree设计的目的是高效记录和查找缓存的token KV值，其核�
 
 https://zhuanlan.zhihu.com/p/2355110476
 
-作者首先以SMAC（StarCraft Multi-Agent Challenge）作为实验平台，在一周内开发并完成了初步的实验。相关工作发布在论文《LLM-SMAC》中，且代码已开源，供大家引用。
+作者首先以`SMAC`（StarCraft Multi-Agent Challenge）作为实验平台，在一周内开发并完成了初步的实验。相关工作发布在论文《`LLM-SMAC`》中，且代码已开源，供大家引用。
 
-通过LLM生成决策树代码具有以下优势：
+通过`LLM`生成决策树代码具有以下优势：
 
-1.  **可解释性**：生成的策略是白盒，具备可解释性，而不像神经网络模型那样是黑盒。
+1. **可解释性**：生成的策略是白盒，具备可解释性，而不像神经网络模型那样是黑盒。
 
-1.  **少量环境交互**：相比传统MARL（多智能体强化学习），LLM策略所需的环境交互次数极少。
+2. **少量环境交互**：相比传统`MARL`（多智能体强化学习），`LLM`策略所需的环境交互次数极少。
 
-1.  **策略迁移性强**：基于知识生成的策略不会依赖漏洞，而是依靠正当手段获胜，且同类任务间的迁移性极佳。
+3. **策略迁移性强**：基于知识生成的策略不会依赖漏洞，而是依靠正当手段获胜，且同类任务间的迁移性极佳。
 
-在实验中，作者通过LLM生成了一些初步策略，并使用这些策略控制单位在SMAC任务中进行作战。实验结果显示，通过几次迭代调整，生成的决策树策略能够达到接近100%的胜率。相比MARL训练的策略，作者发现LLM生成的决策更为纯粹，甚至在地图之间无需任何代码修改就能成功迁移。
+在实验中，作者通过`LLM`生成了一些初步策略，并使用这些策略控制单位在`SMAC`任务中进行作战。实验结果显示，通过几次迭代调整，生成的决策树策略能够达到接近100%的胜率。相比`MARL`训练的策略，作者发现`LLM`生成的决策更为纯粹，甚至在地图之间无需任何代码修改就能成功迁移。
 
-未来，作者计划将对局结果作为奖励函数，进一步微调LLM参数，甚至预训练一个专门用于星际争霸的大模型。通过结合已有的决策树代码和强化学习，作者相信可以开发出一个高质量的决策大模型。
+未来，作者计划将对局结果作为奖励函数，进一步微调`LLM`参数，甚至预训练一个专门用于星际争霸的大模型。通过结合已有的决策树代码和强化学习，作者相信可以开发出一个高质量的决策大模型。
 
 ![](img/979a2b26a4538df39c885332bc0946ab.png)
 
@@ -518,19 +525,19 @@ https://zhuanlan.zhihu.com/p/2355110476
 
 https://zhuanlan.zhihu.com/p/994832931
 
-本系列记录了开发AI编译器的过程。编译器系统复杂，涉及大量与硬件密切相关的细节，个人难以实现工业级别的AI编译器。因此，在开发中尽量简化实现方案，避免过度关注细节优化，同时确保功能齐全。项目的目标是分享开发过程中的问题与解决方案，帮助自己记录学习体会，并欢迎大家讨论更好的解决思路。
+本系列记录了开发`AI`编译器的过程。编译器系统复杂，涉及大量与硬件密切相关的细节，个人难以实现工业级别的`AI`编译器。因此，在开发中尽量简化实现方案，避免过度关注细节优化，同时确保功能齐全。项目的目标是分享开发过程中的问题与解决方案，帮助自己记录学习体会，并欢迎大家讨论更好的解决思路。
 
-该项目的前端使用Python，理论上可接入多种神经网络框架（如Torch、ONNX、TensorFlow等），当前只专注于对接Torch。编译器基于“先编译后优化”的思路，重点在于使用MLIR框架进行图优化、动态shape和符号表达、模型量化、混合精度、算子融合及代码生成、内存优化等。目前暂不涉及LLVM后端的指令集、寄存器优化等。
+该项目的前端使用`Python`，理论上可接入多种神经网络框架（如`Torch`、`ONNX`、`TensorFlow`等），当前只专注于对接`Torch`。编译器基于“先编译后优化”的思路，重点在于使用`MLIR`框架进行图优化、动态`shape`和符号表达、模型量化、混合精度、算子融合及代码生成、内存优化等。目前暂不涉及`LLVM`后端的指令集、寄存器优化等。
 
-1.  **前端与框架集成**：前端使用Python，理论上可以对接多种神经网络框架，目前专注于Torch。后续可能支持DSL。
+1. **前端与框架集成**：前端使用`Python`，理论上可以对接多种神经网络框架，目前专注于`Torch`。后续可能支持`DSL`。
 
-1.  **MLIR 图优化**：重点使用MLIR进行图优化，包括符号推导、动态shape支持、算子分解与融合等技术。
+2. **MLIR 图优化**：重点使用`MLIR`进行图优化，包括符号推导、动态`shape`支持、算子分解与融合等技术。
 
-1.  **内存优化**：通过算子融合、内存复用分析等手段优化内存使用，提升性能。
+3. **内存优化**：通过算子融合、内存复用分析等手段优化内存使用，提升性能。
 
-1.  **量化与混合精度**：引入模型量化和混合精度以提高推理速度，特别是对大模型的优化，如Flash Attention与KV缓存。
+4. **量化与混合精度**：引入模型量化和混合精度以提高推理速度，特别是对大模型的优化，如`Flash Attention`与`KV`缓存。
 
-1.  **代码生成**：通过Linalg dialect生成算子代码，并结合auto tilling与内存分块优化执行效率。
+5. **代码生成**：通过`Linalg dialect`生成算子代码，并结合`auto tilling`与内存分块优化执行效率。
 
 # 招聘公告
 
@@ -538,31 +545,31 @@ https://zhuanlan.zhihu.com/p/994832931
 
 ![](img/2ef06d76ce9568c4adcbde127a5b09fe.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建`GenAI`时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀 F24 实习岗位
 
 ##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
 ##### 行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+##### `Web` / `AI` 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
 ##### 行研-GenAI研究岗位-前沿学术探索
 
 ##### 行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+##### 创新活动产品运营（大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/5a2810221b7280870c357b1caef7b45e.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
@@ -570,11 +577,9 @@ https://zhuanlan.zhihu.com/p/994832931
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
+（欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给`AI`日报小组点个赞👍吧！）
 
-（欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
-
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+`ChatGPT`；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（`HuggingFace`）；Naixu；Lizhi；Peter；Suoman；Jack
 
 封面生成——右脑科技
 
@@ -582,12 +587,11 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
-
 > 欢迎大家多多帮我们分享,转发~~
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~

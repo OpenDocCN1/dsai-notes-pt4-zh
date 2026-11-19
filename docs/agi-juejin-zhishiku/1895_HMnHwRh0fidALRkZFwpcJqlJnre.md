@@ -1,8 +1,7 @@
-# 02.10-奥特曼预警AI成本每年降10倍，10年后每个人AI智力=全人类总和！
-
-> 来源：[https://agijuejin.feishu.cn/docx/Cb4wdFlPko4GJ2xddi3c1xfyn3f](https://agijuejin.feishu.cn/docx/Cb4wdFlPko4GJ2xddi3c1xfyn3f)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 02 月 10 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/Cb4wdFlPko4GJ2xddi3c1xfyn3f](https://agijuejin.feishu.cn/docx/Cb4wdFlPko4GJ2xddi3c1xfyn3f)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -10,7 +9,7 @@
 
 ## ⭐ 今日热点
 
-### 💡 奥特曼预警AI成本每年降10倍，10年后每个人AI智力=全人类总和！
+### 💡 02.10-奥特曼预警AI成本每年降10倍，10年后每个人AI智力=全人类总和！
 
 新智元 | [阅读原文](https://www.163.com/dy/article/JO19ISC80511ABV6.html?spss=dy_author)
 
@@ -58,13 +57,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/829/682.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/829/637.htm)
 
-
 2月9日，DeepSeek-V3 API 45天优惠期结束。优惠期（2024.12.26 - 2025.2.8 ）价格为每百万输入 tokens 0.1 元（缓存命中）/ 1 元（缓存未命中），每百万输出 tokens 2 元。之后调整为每百万输入 tokens 0.5 元（缓存命中）/2 元（缓存未命中），每百万输出 tokens 8 元。
 
 ### 💡 商汤大装置“万象平台”上架 DeepSeek 系列模型
 
 IT之家 | [阅读原文](https://www.ithome.com/0/829/630.htm)
-
 
 2月9日消息，商汤科技宣布企业客户和开发者可在商汤大装置万象平台快速部署DeepSeek-V3等模型，还能获得3个月内1000万tokens免费使用权益。其大装置亮点包括：升级服务，有闭环服务体系，满足企业轻量化模型定制、私有化综合解决方案需求；支持多种部署方式，兼容英伟达与国产异构芯片，未来还计划推出PD分离式推理架构 ，且支持多类大模型。
 
@@ -72,13 +69,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/829/630.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/829/626.htm)
 
-
 2月9日消息，智元机器人调整架构设三大产品线。“灵犀”产品线在深圳，“远征”在上海，“Genie”在北京，总裁分别为王闯、姚卯青、稚晖君，“灵犀”现由稚晖君暂代。灵犀系列此前有产品无专门产品线，现承接相关产品。灵犀X1是具身智能机器人，2024年10月已面向全球开源 。
 
 ### 💡 奇瑞智能大模型已与 DeepSeek 深度融合校验，逐步应用于更多新车型
 
 IT之家 | [阅读原文](https://www.ithome.com/0/829/618.htm)
-
 
 2月9日，奇瑞集团宣布与深度求索（DeepSeek）围绕智能化大模型系统深度融合。雄狮智能座舱系统的 Lion AI 智舱大模型依托 DeepSeek，能更精准响应语音指令、实现主动服务功能。奇瑞计划将其应用于更多新车型，还探索如车享元宇宙等新场景。此外，奇瑞墨甲机器人已将 DeepSeek 的 V3、R1 开源模型部署到云平台 。
 
@@ -120,12 +115,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/829/587.htm)
 
 ![](img/8f7ddc4126682baaa56a86154f126c47.png)
 
-IT之家2月9日消息，曾跳转多个热门AI模型的ai.com域名，现跳转至chat.deepseek.com 。2023年ChatGPT大热时它就曾跳转至其对话机器人网站，还传过OpenAI买下此域名，实则大概率是第三方操作。谷歌Gemini、马斯克xAI的Grok模型推出时，该域名也跳转过。域名有效期至2031年5月，注册联系人来自吉隆坡 。
+IT之家2月9日消息，曾跳转多个热门AI模型的`ai.com`域名，现跳转至`chat.deepseek.com` 。2023年ChatGPT大热时它就曾跳转至其对话机器人网站，还传过OpenAI买下此域名，实则大概率是第三方操作。谷歌Gemini、马斯克xAI的Grok模型推出时，该域名也跳转过。域名有效期至2031年5月，注册联系人来自吉隆坡 。
 
 ### 💡 AI 能取代哪些人类工作？OpenAI ChatGPT Deep Research 给出答案
 
 IT之家 | [阅读原文](https://www.ithome.com/0/829/578.htm)
-
 
 2 月 9 日，OpenAI 推出 Deep Research 功能，借助其最新模型 o3 的一个版本，能几分钟内整合网络内容成详细报告。X 用户 @Min Choi 让其列出 OpenAI o3 推理模型可能取代人类的 20 种工作，帖子浏览超 100 万次。排名第一的是报税员，被取代概率 98%。但 AI 无法复制人类软技能，企业广泛采用 AI 也有诸多障碍。使用该功能需订阅每月 200 美元的 ChatGPT Pro 服务。
 
@@ -134,7 +128,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/829/578.htm)
 ### 💡 Meta 首席 AI 科学家杨立昆最新观点：现有技术难以支撑家用机器人和自动驾驶汽车
 
 IT之家 | [阅读原文](https://www.ithome.com/0/829/697.htm)
-
 
 据英国《卫报》报道，Meta 首席 AI 科学家杨立昆预测本十年末人工智能技术将迎革命。他指出当前 AI 系统受限，实现家用机器人和完全自动驾驶汽车需重大技术突破，因其对物理世界理解有限。杨立昆正研究新系统助 AI“理解”现实。同时，同行 Yoshua Bengio 警告要加强 AI 技术安全性，呼吁全球 AI 峰会关注其影响与风险 。
 

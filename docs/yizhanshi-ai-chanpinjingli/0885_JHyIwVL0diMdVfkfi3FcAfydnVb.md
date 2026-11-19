@@ -1,3 +1,4 @@
+
 # Coze+即梦=爆款图文工作流
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/UmcoduJBAoSi1PxCRkKcVEUMn3e](https://v11enp9ok1h.feishu.cn/docx/UmcoduJBAoSi1PxCRkKcVEUMn3e)
@@ -22,21 +23,21 @@
 
 这套流程有主要有两个知识点：图像插件的使用和导入👸号草稿箱
 
-导入👸号草稿箱在Coze中是有专属的上传插件这插件是“倾听夜雨声”制作的插件“🛰️👸号上传草稿箱素材库”
+导入👸号草稿箱在Coze中是有专属的上传插件，这插件是“倾听夜雨声”制作的插件“🛰️👸号上传草稿箱素材库”
 
 ![](img/1a4e51b264c742664ad43c23165a569a.png)
 
 ### 开始节点
 
-设置两个参数：input和image；input是需要提供一个故事给工作流、image是提供一个参考人物图给工作流
+设置两个参数：`input`和`image`；`input`是需要提供一个故事给工作流、`image`是提供一个参考人物图给工作流
 
-后面的变量类型也要改一下，image可以改为上传图片（下拉变量类型后在File中找image格式）
+后面的变量类型也要改一下，`image`可以改为上传图片（下拉变量类型后在`File`中找`image`格式）
 
 ![](img/a45b9294a8e45a791a403e6cabd75181.png)
 
-### 添加插件：获取access_token
+### 添加插件：获取`access_token`
 
-在插件商店搜索“倾听夜雨声”制作的👸号草稿箱插件，在工具中找到名为“get_access_token
+在插件商店搜索“倾听夜雨声”制作的👸号草稿箱插件，在工具中找到名为`get_access_token`
 
 ![](img/c4e4425a4d897c4662690943386bc446.png)
 
@@ -71,11 +72,11 @@
 
 ![](img/b2acb5f13fa7475df1452dc6dcd04ef2.png)
 
-3.获取AppID和AppSecret作为插件的输入，这里的AppSecret只会出现一次，需要好好保管
+3.获取`AppID`和`AppSecret`作为插件的输入，这里的`AppSecret`只会出现一次，需要好好保管
 
 ![](img/7e90ea9bfcaea5c70688e9384069c2e5.png)
 
-回到工作流插件中，把获得的AppID和AppSecret分别填入插件的输入中即可
+回到工作流插件中，把获得的`AppID`和`AppSecret`分别填入插件的输入中即可
 
 ![](img/462969ebee835faf36d0e5bfbb2fe3f0.png)
 
@@ -87,12 +88,11 @@
 
 模型选择deepseek的3.1，比较稳定好用
 
-输入参数为input，引用开始节点的input
+输入参数为`input`，引用开始节点的`input`
 
 系统提示词
 
 ```
-
 # 角色
 你是一名漫画大师，擅长根据用户输入的主题，为用户创作出生动的漫画，漫画需要创作4个画面，每个画面有独特的深意：“起、承、转、结”的节奏
 
@@ -103,32 +103,29 @@
 4. 漫画中正常有一男一女进行对话组成，你需要输出画面的旁白、描述、以及男女之间的对话。
 5. 描述一定要把环境，以及人物动作描绘清楚，当主题在咖啡厅中坐着的时候，每一个描述尽量都需要把这个“咖啡厅中坐着”添加到描述中，画面尽量生动。
 
-
 ## 输出格式：
-  &quot;output&quot;: [
-    {
-      &quot;narrator&quot;: &quot;相亲开始，女生优雅地坐下并开口询问。&quot;,
-      &quot;connet&quot;: &quot;女：“你在哪租的房啊？”&quot;,
-      &quot;describe&quot;: &quot;在舒适的咖啡厅中，女生穿着精致的连衣裙，微笑着拉椅子坐下，男生对面端坐，环境温馨，灯光柔和。&quot;
-    },
-    {
-      &quot;narrator&quot;: &quot;男生略显尴尬地回应。&quot;,
-      &quot;connet&quot;: &quot;男：“在偏远郊区。”&quot;,
-      &quot;describe&quot;: &quot;咖啡厅中，男生挠头，表情紧张，女生眉头微微皱起，手持咖啡杯，背景简洁白色。&quot;
-    },
-    {
-      &quot;narrator&quot;: &quot;女生立刻表现出强烈不满。&quot;,
-      &quot;connet&quot;: &quot;女：“没房还敢来相亲，我们不合适！”&quot;,
-      &quot;describe&quot;: &quot;在咖啡厅的座位上，女生双手交叉胸前，语气严厉，男生惊讶地张大嘴巴，环境轻松幽默。&quot;
-    },
-    {
-      &quot;narrator&quot;: &quot;男生平静地揭示出人意料的反转。&quot;,
-      &quot;connet&quot;: &quot;男：“我家在春山墅（富人区）。”&quot;,
-      &quot;describe&quot;: &quot;咖啡厅中，男生自信微笑，女生目瞪口呆，手捂嘴，背景纯白，线条简单勾勒出反转的趣味。&quot;
-    }
-  ]
-
-
+"output": [
+  {
+    "narrator": "相亲开始，女生优雅地坐下并开口询问。",
+    "connet": "女：“你在哪租的房啊？”",
+    "describe": "在舒适的咖啡厅中，女生穿着精致的连衣裙，微笑着拉椅子坐下，男生对面端坐，环境温馨，灯光柔和。"
+  },
+  {
+    "narrator": "男生略显尴尬地回应。",
+    "connet": "男：“在偏远郊区。”",
+    "describe": "咖啡厅中，男生挠头，表情紧张，女生眉头微微皱起，手持咖啡杯，背景简洁白色。"
+  },
+  {
+    "narrator": "女生立刻表现出强烈不满。",
+    "connet": "女：“没房还敢来相亲，我们不合适！”",
+    "describe": "在咖啡厅的座位上，女生双手交叉胸前，语气严厉，男生惊讶地张大嘴巴，环境轻松幽默。"
+  },
+  {
+    "narrator": "男生平静地揭示出人意料的反转。",
+    "connet": "男：“我家在春山墅（富人区）。”",
+    "describe": "咖啡厅中，男生自信微笑，女生目瞪口呆，手捂嘴，背景纯白，线条简单勾勒出反转的趣味。"
+  }
+]
 ```
 
 用户提示词
@@ -141,9 +138,9 @@
 
 输出：
 
-变量名为output，类型是Array<object>
+变量名为`output`，类型是`Array<object>`
 
-narrator、connet、describe都是子变量
+`narrator`、`connet`、`describe`都是子变量
 
 ![](img/ae7d18731adb8bfe8e773247d7b34c08.png)
 
@@ -155,9 +152,9 @@ narrator、connet、describe都是子变量
 
 ### 文本处理节点：组合绘图提示词
 
-string1引用批处理中的describe
+`string1`引用批处理中的`describe`
 
-string2引用批处理中的connet
+`string2`引用批处理中的`connet`
 
 ```
 参考图中人物风格，生成一张漫画，背景为纯白色，线条简洁流畅，漫画中人物对话文字使用气泡框展示，画面：{{String1}}、对话内容：{{String2}}；每个画面中尽量展现两个人物。
@@ -169,19 +166,19 @@ string2引用批处理中的connet
 
 在插件的商店中搜索Doubao-Seedream-4.0，选择工具即可
 
-prompt引用上一个节点的输出
+`prompt`引用上一个节点的输出
 
-max_images是生成数量输入1即可
+`max_images`是生成数量输入1即可
 
-reference_images：上传一张参考图
+`reference_images`：上传一张参考图
 
-size：生成图片的 尺寸：4096x4096就是1:1的尺寸
+`size`：生成图片的尺寸：`4096x4096`就是1:1的尺寸
 
 ![](img/017024a356b70177d4d1a755974f12ad.png)
 
 ### 文本处理节点：提取图片链接
 
-引用上一个节点的输出（这个节点的作用就是将上一个节点输出的Array格式转为string格式）
+引用上一个节点的输出（这个节点的作用就是将上一个节点输出的`Array`格式转为`string`格式）
 
 ```
 {{String1[0]}}
@@ -193,9 +190,9 @@ size：生成图片的 尺寸：4096x4096就是1:1的尺寸
 
 两个元素，一个是图片中的文字一个是图片
 
-narrator，是文字引用批处理的narrator
+`narrator`，是文字引用批处理的`narrator`
 
-output是图片，引用上一个节点的输出
+`output`是图片，引用上一个节点的输出
 
 这里的元素也是需要绑定变量，文字可以直接绑定，而图片需要随便上传一张图片做为底图
 
@@ -203,19 +200,19 @@ output是图片，引用上一个节点的输出
 
 ### 添加插件：上传永久图片到素材库
 
-在插件商店搜索“倾听夜雨声”制作的👸号草稿箱插件，在工具中找到名为“add_material”
+在插件商店搜索“倾听夜雨声”制作的👸号草稿箱插件，在工具中找到名为`add_material`
 
 什么意思呢？看下面这张图的输入链接和输出链接，简单一看可能看不出什么效果，但如果你想在文章中插入图片就必须要转换成下面的链接，不然是展现不了的。这个插件的功能是将图片保存到👸号的图片资源库中。并获得新的图片链接，只有这个链接才能显示在草稿箱中
 
-access_token引用第一个节点的输出access_token*
+`access_token`引用第一个节点的输出`access_token`
 
-pic_url：则引用上一个节点的data
+`pic_url`：则引用上一个节点的`data`
 
 ![](img/57ed25377291b5616d952a8edcc547a5.png)
 
 ### 批处理的输出
 
-把插件add_material的输出全部引用一下即可
+把插件`add_material`的输出全部引用一下即可
 
 ![](img/a97158d979a180a7bd918d1cf6981a97.png)
 
@@ -231,24 +228,24 @@ pic_url：则引用上一个节点的data
 
 ### 代码节点：生成html代码
 
-输入参数名一定要是input，引用批处理的输出url_list
+输入参数名一定要是`input`，引用批处理的输出`url_list`
 
-输出一定要是result
+输出一定要是`result`
 
 ```
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     # 获取输入的四个图片链接数组
-    image_links = args.params[&#x27;input&#x27;]
+    image_links = args.params['input']
     
     # 准备HTML模板（使用三重引号保留格式）
-    html_template = &#x27;&#x27;&#x27;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;图片展示&lt;/title&gt;
-    &lt;style&gt;
+    html_template = '''
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <style>
         .img-container {
             display: flex;
             flex-direction: column;
@@ -259,28 +256,28 @@ async def main(args: Args) -&gt; Output:
             height: auto;
             margin-bottom: 10px;
         }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&quot;img-container&quot;&gt;
-        &lt;img src=&quot;图片1的路径&quot; alt=&quot;图片1&quot;&gt;
-        &lt;img src=&quot;图片2的路径&quot; alt=&quot;图片2&quot;&gt;
-        &lt;img src=&quot;图片3的路径&quot; alt=&quot;图片3&quot;&gt;
-        &lt;img src=&quot;图片4的路径&quot; alt=&quot;图片4&quot;&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;&#x27;&#x27;&#x27;
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <img src="图片1的路径" alt="图片1">
+        <img src="图片2的路径" alt="图片2">
+        <img src="图片3的路径" alt="图片3">
+        <img src="图片4的路径" alt="图片4">
+    </div>
+</body>
+</html>'''
     
     # 依次替换四个图片路径（索引0对应图片1，以此类推）
     for index in range(4):
         html_template = html_template.replace(
-            f&quot;图片{index+1}的路径&quot;,  # 需要替换的占位文本
+            f"图片{index+1}的路径",  # 需要替换的占位文本
             image_links[index]     # 用实际链接替换
         )
     
     # 返回最终结果
     return {
-        &quot;result&quot;: html_template
+        "result": html_template
     }
 ```
 
@@ -290,7 +287,7 @@ async def main(args: Args) -&gt; Output:
 
 模型一样用deepseek的3.1
 
-输入还是引用开始节点的input
+输入还是引用开始节点的`input`
 
 系统提示词：
 
@@ -311,7 +308,6 @@ async def main(args: Args) -&gt; Output:
 - 根据爆款标题要素为用户创作标题
 - 只创作一个标题
 - 只输出标题，不得输出其他内容
-
 ```
 
 用户提示词
@@ -326,15 +322,15 @@ async def main(args: Args) -&gt; Output:
 
 ### 插件：上传到草稿箱中
 
-在插件商店搜索“倾听夜雨声”制作的👸号草稿箱插件，在工具中找到名为“add_draft”
+在插件商店搜索“倾听夜雨声”制作的👸号草稿箱插件，在工具中找到名为`add_draft`
 
-access_token还是引用第一个节点的access_token
+`access_token`还是引用第一个节点的`access_token`
 
-content引用代码节点的输出
+`content`引用代码节点的输出
 
-thumb_media_id：引用文本处理提取封面id的输出
+`thumb_media_id`：引用文本处理提取封面`id`的输出
 
-title：引用爆款标题生成模型节点的输出
+`title`：引用爆款标题生成模型节点的输出
 
 ![](img/8ba3c32fa2a265e78e9f0318a7b6d332.png)
 
@@ -346,4 +342,4 @@ title：引用爆款标题生成模型节点的输出
 
 在整套工作流中，就是将即梦的生图一致性用好，让漫画的人物可以不变，这样漫画更有连贯性。
 
-导入到👸号草稿箱中就是一个自动化的体现，只需要给一个主题就可以直接一步到位这才是正正的图文一条龙。
+导入到👸号草稿箱中就是一个自动化的体现，只需要给一个主题就可以直接一步到位，这才是正正的图文一条龙。

@@ -1,3 +1,4 @@
+
 # OpenList-Desktop
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/Mv4td6oOeo7qKtx7aNVcXq0cnNb](https://xodnytdcaw.feishu.cn/docx/Mv4td6oOeo7qKtx7aNVcXq0cnNb)
@@ -22,7 +23,6 @@ https://github.com/winfsp/winfsp/releases
 
 配置代理
 
-
 核心管理
 
 ![](img/dd0b9fd13b871708ef8ec2c954b54d27.png)
@@ -31,9 +31,9 @@ https://github.com/winfsp/winfsp/releases
 
 ### 添加储存
 
-浏览器输入127.0.0.：5244
+浏览器输入`127.0.0.：5244`
 
-账号admin
+账号`admin`
 
 密码：管理员密码
 

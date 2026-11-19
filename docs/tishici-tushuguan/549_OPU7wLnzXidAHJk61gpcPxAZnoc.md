@@ -1,16 +1,17 @@
+
 # 📕爬虫数据分析
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/RUOqd1BQZoWfMxx4d0TcrX9mn8b](https://vxc3hj17dym.feishu.cn/docx/RUOqd1BQZoWfMxx4d0TcrX9mn8b)
 
 作者：[ChampionGPT的个人说明书](https://iiwfirldxpf.feishu.cn/wiki/IurXwX3eMiZj9BkYyAdcUiygncc?from=from_copylink)
 
-> From @ChampionCheung https://web.okjike.com/originalPost/66062d91de5f2873487edd65
+> From @ChampionCheung `https://web.okjike.com/originalPost/66062d91de5f2873487edd65`
 
-> **使用方法：**
+## 使用方法
 
-1.  使用爬虫插件“Instant Data Scrape”：chrome浏览器的爬虫插件，用来爬📕帖子的评论区非常好用，也可以爬博主主页帖子
+1. 使用爬虫插件“Instant Data Scrape”：chrome浏览器的爬虫插件，用来爬📕帖子的评论区非常好用，也可以爬博主主页帖子
 
-1.  把数据丢给kimi，用“📕数据分析师”prompt分析
+2. 把数据丢给kimi，用“📕数据分析师”prompt分析
 
 ```
 # 角色名称

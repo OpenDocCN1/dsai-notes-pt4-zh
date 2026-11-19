@@ -1,221 +1,216 @@
+
 # 【LLM】从零开始训练大模型
 
 > 来源：[https://agijuejin.feishu.cn/docx/IEBQddTSgov9YWxXSYHcXEeyn6b](https://agijuejin.feishu.cn/docx/IEBQddTSgov9YWxXSYHcXEeyn6b)
-
+>
 > 作者：[何枝](https://www.zhihu.com/people/who-u)
-
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/636270877)hihu.com/p/636270...
-
-> 在这篇文章中，我们将尽可能详细地梳理一个完整的 LLM 训练流程。包括模型预训练（Pretrain）、Tokenizer 训练、指令微调（Instruction Tuning）、奖励模型（Reward Model）和强化学习（RLHF）等环节。由于内容比较多，我们将逐步整理并完善这个文档。
+>
+> 原文：[https://zhuanlan.zhihu.com/p/636270877](https://zhuanlan.zhihu.com/p/636270877)
+>
+> 在这篇文章中，我们将尽可能详细地梳理一个完整的 LLM 训练流程。包括模型预训练（`Pretrain`）、`Tokenizer` 训练、指令微调（`Instruction Tuning`）、奖励模型（`Reward Model`）和强化学习（`RLHF`）等环节。由于内容比较多，我们将逐步整理并完善这个文档。
 
 ## 1. 预训练阶段（Pretraining Stage）
 
 > 工欲善其事，必先利其器。
 
-当前，不少工作选择在一个较强的基座[模型上进行微调](https://link.zhihu.com/?target=https%3A//github.com/tatsu-lab/stanford_alpaca)，且通常[效果不错（如：](https://link.zhihu.com/?target=https%3A//lmsys.org/blog/2023-03-30-vicuna/)[ alpaca ]、[ vicuna ] 等）。
+当前，不少工作选择在一个较强的基座[模型上进行微调](https://link.zhihu.com/?target=https%3A//github.com/tatsu-lab/stanford_alpaca)，且通常[效果不错（如：）](https://link.zhihu.com/?target=https%3A//lmsys.org/blog/2023-03-30-vicuna/)`alpaca`、`vicuna`等。
 
-这种成功的前提在于： 预训练模型和下游任务的差距不大，预训练模型中通常已经包含微调任务中所需要的知识 。
+这种成功的前提在于：预训练模型和下游任务的差距不大，预训练模型中通常已经包含微调任务中所需要的知识。
 
 但在实际情况中，我们通常会遇到一些问题，使得我们无法直接使用一些开源 backbone：
 
-1.  **语言不匹配： **[大多数开源基](https://link.zhihu.com/?target=https%3A//huggingface.co/decapoda-research/llama-7b-hf)座对中文[的支持都](https://link.zhihu.com/?target=https%3A//huggingface.co/mosaicml/mpt-7b)不太友好[，例如：[ L](https://link.zhihu.com/?target=https%3A//huggingface.co/tiiuae/falcon-7b)lama ]、[ mpt ]、[ falcon ] 等，这些模型在英文上效果都很优秀，但在中文上却差强人意。
+1. **语言不匹配：** 大多数开源基座对中文的支持都不太友好，例如：`Llama`、`mpt`、`falcon` 等，这些模型在英文上效果都很优秀，但在中文上却差强人意。
 
 | 续写任务测试 | LLaMA | MPT |
 | --- | --- | --- |
-| 杭州西湖是 | 杭州西湖是杭州的一个静静的一个游泳池，游泳池是杭州西湖的一个游泳池，游泳池是杭州西湖的一个游泳池，游泳池是杭州西湖的一个游泳池，� | 杭州西湖是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊， |
+| 杭州西湖是 | 杭州西湖是杭州的一个静静的一个游泳池，游泳池是杭州西湖的一个游泳池，游泳池是杭州西湖的一个游泳池，游泳池是杭州西湖的一个游泳池 | 杭州西湖是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊，是中国最大的湖泊， |
 | 琅琊榜的导演是 | 琅琊榜的导演是很多的人都不知道，因为他的父亲是一位杰作家，他的父亲的杰作家是一位杰作家， | 琅琊榜的导演是谁？Who are the directors of the Rolling Stone?琅琊榜的导演是谁？Who are the |
 
-2. **专业知识不足： **当我们需要一个专业领域的 LLM 时，预训练模型中的知识就尤为重要。由于大多数预训练模型都是在通用训练语料上进行学[习，对于一些特殊领域（金融](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.12002.pdf)、法律等）中的概念和名词无法具备很好的理解。我们通常需要在训练语料中加入一些领域数据（如：[ xuanyuan 2.0 ]），以帮助模型在指定领域内获得更好的效果。
+2. **专业知识不足：** 当我们需要一个专业领域的 LLM 时，预训练模型中的知识就尤为重要。由于大多数预训练模型都是在通用训练语料上进行学习，对于一些特殊领域（金融、法律等）中的概念和名词无法具备很好的理解。我们通常需要在训练语料中加入一些领域数据（如：`xuanyuan 2.0`），以帮助模型在指定领域内获得更好的效果。
 
 ![](img/1e6448028a670da3fbd7f76f64bca6cf.png)
 
-基于上述原因，我们在进行 SFT 步骤之前，先来看看预训练任务是如何做的。
+基于上述原因，我们在进行 `SFT` 步骤之前，先来看看预训练任务是如何做的。
 
 ### 1.1 Tokenizer Training
 
 在进行预训练之前，我们需要先选择一个预训练的模型基座。
 
-一个较为普遍的问题是：大部分优秀的语言模型都没有进行充分的中文预训练，
+一个较为普遍的问题是：大部分优秀的语言模型都没有进行充分的中文预训练。
 
 因此，许多工作都尝试将在英语上表现比较优秀的模型用中文语料进行二次预训练，期望其能够将英语上的优秀能力迁移到中文任务中来。
 
-> 已经有许多优秀的仓库做过这件事情，比如：[ Chinese-LLaMA-Alpaca ]。
+> 已经有许多优秀的仓库做过这件事情，比如：`Chinese-LLaMA-Alpaca`。
 
-但在进行正式的训练之前，我们还有一步很重要的事情去做： 词表扩充 。
+但在进行正式的训练之前，我们还有一步很重要的事情去做：词表扩充。
 
-通俗来讲，tokenizer 的目的就是将一句话进行切词，并将切好词的列表喂给模型进行训练。
+通俗来讲，`tokenizer` 的目的就是将一句话进行切词，并将切好词的列表喂给模型进行训练。
 
 例如：
 
 ```
-输入句子 &gt;&gt;&gt; 你好世界
-切词结果 &gt;&gt;&gt; [&#x27;你&#x27;, &#x27;好&#x27;, &#x27;世&#x27;, &#x27;界&#x27;]
+输入句子 >>> 你好世界
+切词结果 >>> ['你', '好', '世', '界']
 ```
 
-通常，tokenizer 有 2 种常用形式： WordPiece 和 BPE 。
+通常，`tokenizer` 有 2 种常用形式：`WordPiece` 和 `BPE`。
 
-+   **WordPiece**
++ `WordPiece`
 
-WordPiece 很好理解，就是将所有的「常用字」和「常用词」都存到词表中，
+`WordPiece` 很好理解，就是将所有的「常用字」和「常用词」都存到词表中，
 
 当需要切词的时候就从词表里面查找即可。
 
 ![](img/c59dd8f14ade6d637456d8ff57550b30.png)
 
-> 上述图片来自可视化工具 [ tokenizer_viewer ]。
+> 上述图片来自可视化工具 `tokenizer_viewer`。
 
-如上图所示，大名鼎鼎的 BERT 就使用的这种切词法。
+如上图所示，大名鼎鼎的 `BERT` 就使用的这种切词法。
 
 当我们输入句子：你好世界，
 
-BERT 就会依次查找词表中对应的字，并将句子切成词的组合。
+`BERT` 就会依次查找词表中对应的字，并将句子切成词的组合。
 
+![](img/aa07e2bf8de7f65eddf204b8b1393e3c.png)
 
-当遇到词表中不存在的字词时，tokenizer 会将其标记为特殊的字符 [UNK]：
+当遇到词表中不存在的字词时，`tokenizer` 会将其标记为特殊的字符 `[UNK]`：
 
 ![](img/5bdcb74c25cbd23fb7043fcb461fe294.png)
 
-+   Byte-level BPE（BBPE）
++ `Byte-level BPE（BBPE）`
 
-> [感谢评](https://zhuanlan.zhihu.com/p/146114164)论区指正，有关 BBPE 的原理可以参考 [ 这里 ]。
+> 感谢评论区指正，有关 `BBPE` 的原理可以参考 [这里](https://zhuanlan.zhihu.com/p/146114164)。
 
-WordPiece 的方式很有效，但当字词数目过于庞大时这个方式就有点难以实现了。
+`WordPiece` 的方式很有效，但当字词数目过于庞大时这个方式就有点难以实现了。
 
-对于一些多语言模型来讲，要想穷举所有语言中的常用词（穷举不全会造成 OOV），
+对于一些多语言模型来讲，要想穷举所有语言中的常用词（穷举不全会造成 `OOV`），
 
-既费人力又费词表大小，为此，人们引入另一种方法：BBPE。
+既费人力又费词表大小，为此，人们引入另一种方法：`BBPE`。
 
-BPE 不是按照中文字词为最小单位，而是按照 unicode 编码 作为最小粒度。
+`BPE` 不是按照中文字词为最小单位，而是按照 `unicode` 编码 作为最小粒度。
 
-对于中文来讲，一个汉字是由 3 个 unicode 编码组成的，
+对于中文来讲，一个汉字是由 3 个 `unicode` 编码组成的，
 
 因为平时我们不会拆开来看（毕竟中文汉字是不可拆分的），所以我一开始对这个概念也不太熟悉。
 
-我们来看看 LLaMA 的 tokenizer 对中文是如何进行 encode 的：
+我们来看看 `LLaMA` 的 `tokenizer` 对中文是如何进行 `encode` 的：
 
 ![](img/9fe9cd1eeabae2677b1db35290f9f1ec.png)
 
-> 上述图片来自可视化工具 [ tokenizer_viewer ]。
+> 上述图片来自可视化工具 `tokenizer_viewer`。
 
 可以看到，「编码」两个字能够被正常切成 2 个字，
 
-但「待」却被切成了 3 个 token，这里的每个 token 就是 1 个 unicode 编码。
+但「待」却被切成了 3 个 `token`，这里的每个 `token` 就是 1 个 `unicode` 编码。
 
 ![](img/68a307a668d5513b71925d6cb4c6da65.png)
 
-通过 token 查找功能，我们可以发现「编」「码」在词表中，但「待」不在词表中。
+通过 `token` 查找功能，我们可以发现「编」「码」在词表中，但「待」不在词表中。
 
-但任何 1 个汉字都是可以由 unicode 表示（只是组合顺序不同），因此「待」就被切成了 3 个 token。
+但任何 1 个汉字都是可以由 `unicode` 表示（只是组合顺序不同），因此「待」就被切成了 3 个 `token`。
 
-| BBPE 的优势 | 不会出现 OOV 的情况。不管是怎样的汉字，只要可以用 unicode 表示，就都会存在于词表中。 |
+| `BBPE` 的优势 | 不会出现 `OOV` 的情况。不管是怎样的汉字，只要可以用 `unicode` 表示，就都会存在于词表中。 |
 | --- | --- |
-| BBPE 的劣势 | 模型训练起来将会更吃力一些。毕竟像「待」这样的汉字特定 unicode 组合其实是不需要模型学习的，但模型却需要通过学习来知道合法的 unicode 序列。 |
+| `BBPE` 的劣势 | 模型训练起来将会更吃力一些。毕竟像「待」这样的汉字特定 `unicode` 组合其实是不需要模型学习的，但模型却需要通过学习来知道合法的 `unicode` 序列。 |
 
-通常在模型训练不够充足的时候，模型会输出一些乱码（不合法的 unicode 序列）：
+通常在模型训练不够充足的时候，模型会输出一些乱码（不合法的 `unicode` 序列）：
 
 ```
-游泳池是杭州西湖的一个游泳池，���
+游泳池是杭州西湖的一个游泳池，
 ```
 
-+   **词表扩充**
++ **词表扩充**
 
-为了降低模型的训练难度，人们通常会考虑在原来的词表上进行「词表扩充」，
+为了降低模型的训练难度，人们通常会考虑在原来的词表上进行「词表扩充」，也就是将一些常见的汉字 `token` 手动添加到原来的 `tokenizer` 中，从而降低模型的训练难度。
 
-也就是将一些常见的汉字 token 手动添加到原来的 tokenizer 中，从而降低模型的训练难度。
-
-我们对比 [ [Chinese-LLaMA ](https://link.zhihu.com/?target=https%3A//github.com/ymcui/Chinese-LLaMA-Alpaca)] 和 [ [LLaMA ](https://link.zhihu.com/?target=https%3A//huggingface.co/decapoda-research/llama-7b-hf)] 之间的 tokenizer 的区别：
+我们对比 `Chinese-LLaMA` 和 `LLaMA` 之间的 `tokenizer` 的区别：
 
 ![](img/80a6a1e85944d7aac85a10c25a2592e6.png)
 
-> 上述图片来自可视化工具 [ tokenizer_viewer ]。
+> 上述图片来自可视化工具 `tokenizer_viewer`。
 
-我们可以发现： Chinese LLaMA 在原始 tokenizer 上新增了17953 个 tokens，且加入 token 的大部分为汉字 。
+我们可以发现：`Chinese LLaMA` 在原始 `tokenizer` 上新增了17953 个 `tokens`，且加入 `token` 的大部分为汉字。
 
-而在 [ [BELLE ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2304.07854.pdf)] 中也有同样的做法：
+而在 `BELLE` 中也有同样的做法：
 
-在 120w 行中文文本上训练出一个 5w 规模的 token 集合，
+在 120w 行中文文本上训练出一个 5w 规模的 `token` 集合，
 
-并将这部分 token 集合与原来的 LLaMA 词表做合并，
+并将这部分 `token` 集合与原来的 `LLaMA` 词表做合并，
 
-最后再在 3.2B 的中文语料上对这部分新扩展的 token embedding 做二次预训练。
+最后再在 3.2B 的中文语料上对这部分新扩展的 `token embedding` 做二次预训练。
 
 ![](img/da8fa61e6e95d623b0c8786f34e811f1.png)
 
 ### 1.2 Language Model PreTraining
 
-在扩充完 tokenizer 后，我们就可以开始正式进行模型的预训练步骤了。
+在扩充完 `tokenizer` 后，我们就可以开始正式进行模型的预训练步骤了。
 
-Pretraining 的思路很简单，就是输入一堆文本，让模型做 Next Token Prediction 的任务，这个很好理解。
+`Pretraining` 的思路很简单，就是输入一堆文本，让模型做 `Next Token Prediction` 的任务，这个很好理解。
 
 我们主要来讨论几种预训练过程中所用到的方法：数据源采样、数据预处理、模型结构。
 
-+   **数据源采样**
++ **数据源采样**
 
-在 [ [gpt3 ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2005.14165.pdf)] 的训练过程中，存在多个训练数据源，论文中提到：对不同的数据源会选择不同采样比例：
+在 `gpt3` 的训练过程中，存在多个训练数据源，论文中提到：对不同的数据源会选择不同采样比例：
 
 ![](img/e6b04aefe53e13e45091ea4bd67ab4b4.png)
 
 通过「数据源」采样的方式，能够缓解模型在训练的时候受到「数据集规模大小」的影响。
 
-从上图中可以看到，相对较大的数据集（Common Crawl）会使用相对较大的采样比例（60%），
+从上图中可以看到，相对较大的数据集（`Common Crawl`）会使用相对较大的采样比例（60%），
 
 这个比例远远小于该数据集在整体数据集中所占的规模（410 / 499 = 82.1%），
 
-因此，CC 数据集最终实际上只被训练了 0.44（0.6 / 0.82 * (300 / 499））个 epoch。
+因此，`CC` 数据集最终实际上只被训练了 0.44（0.6 / 0.82 * (300 / 499））个 `epoch`。
 
-而对于规模比较小的数据集（Wikipedia），则将多被训练几次（3.4 个 epoch）。
+而对于规模比较小的数据集（`Wikipedia`），则将多被训练几次（3.4 个 `epoch`）。
 
 这样一来就能使得模型不会太偏向于规模较大的数据集，从而失去对规模小但作用大的数据集上的学习信息。
 
-+   **数据预处理**
++ **数据预处理**
 
 数据预处理主要指如何将「文档」进行向量化。
 
-通常来讲，在 Finetune 任务中，我们通常会直接使用 truncation 将超过阈值（2048）的文本给截断，
+通常来讲，在 `Finetune` 任务中，我们通常会直接使用 `truncation` 将超过阈值（2048）的文本给截断，
 
-但在 Pretrain 任务中，这种方式显得有些浪费。
+但在 `Pretrain` 任务中，这种方式显得有些浪费。
 
-以书籍数据为例，一本书的内容肯定远远多余 2048 个 token，但如果采用头部截断的方式，
+以书籍数据为例，一本书的内容肯定远远多余 2048 个 `token`，但如果采用头部截断的方式，
 
-则每本书永远只能够学习到开头的 2048 tokens 的内容（连序章都不一定能看完）。
+则每本书永远只能够学习到开头的 2048 `tokens` 的内容（连序章都不一定能看完）。
 
-因此，最好的方式是将长文章按照 seq_len（2048）作分割，将切割后的向量喂给模型做训练。
+因此，最好的方式是将长文章按照 `seq_len`（2048）作分割，将切割后的向量喂给模型做训练。
 
-+   **模型结构**
++ **模型结构**
 
-为了加快模型的训练速度，通常会在 decoder 模型中加入一些 tricks 来缩短模型训练周期。
+为了加快模型的训练速度，通常会在 `decoder` 模型中加入一些 tricks 来缩短模型训练周期。
 
-目[前大部分加速 ](https://link.zhihu.com/?target=https%3A//huggingface.co/tiiuae/falcon-40b)tricks 都集中在 Attention 计算上（如：MQA 和 Flash Attention [ falcon ] 等）；
+目前大部分加速 tricks 都集中在 `Attention` 计算上（如：`MQA` 和 `Flash Attention` 等）；
 
 此外，为了让模型能够在不同长度的样本上都具备较好的推理能力，
 
-通常也会在 Position Embeddin[g 上进行些](https://link.zhihu.com/?target=https%3A//huggingface.co/bigscience/bloom-7b1)处理，选用 ALiBi[（[ Bloom ](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/THUDM/GLM-130B)]）或 RoPE（[ GLM-130B ]）等。
+通常也会在 `Position Embedding` 上进行些处理，选用 `ALiBi`（`Bloom`）或 `RoPE`（`GLM-130B`）等。
 
 具体内容可以参考下面这篇文章：
 
-[  ](https://zhuanlan.zhihu.com/p/634236135)
++ `Warmup` & Learning Ratio 设置
 
-+   Warmup & Learning Ratio 设置
+在继续预训练中，我们通常会使用 `warmup` 策略，此时我们按照 2 种不同情况划分：
 
-在继续预训练中，我们通常会使用 warmup 策略，此时我们按照 2 种不同情况划分：
-
-1.  当训练资源充足时，应尽可能选择较大的学习率以更好的适配下游任务；
-
-1.  当资源不充足时，更小的学习率和更长的预热步数或许是个更好的选择。
+1. 当训练资源充足时，应尽可能选择较大的学习率以更好的适配下游任务；
+1. 当资源不充足时，更小的学习率和更长的预热步数或许是个更好的选择。
 
 具体内容可以参考下面这篇文章：
-
-[  ](https://zhuanlan.zhihu.com/p/654463331)
 
 ### 1.3 数据集清理
 
-中文预训练数据集可以使用 [ [悟道 ](https://link.zhihu.com/?target=https%3A//data.baai.ac.cn/details/WuDaoCorporaText)]，数据集分布如下（主要以百科、博客为主）：
+中文预训练数据集可以使用 `悟道`，数据集分布如下（主要以百科、博客为主）：
 
 ![](img/b1e172618570a6947007375ac9bc7fe4.png)
 
 但开源数据集可以用于实验，如果想突破性能，则需要我们自己进行数据集构建。
 
-在 [ [falcon paper ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2306.01116.pdf)] 中提到，
+在 `falcon paper` 中提到，
 
 仅使用「清洗后的互联网数据」就能够让模型比在「精心构建的数据集」上有更好的效果，
 
@@ -223,15 +218,13 @@ Pretraining 的思路很简单，就是输入一堆文本，让模型做 Next To
 
 ![](img/b45a093c76e17220a103543bca214ecb.png)
 
-有关 Falcon 更多的细节可以看这里：
-
-[  ](https://zhuanlan.zhihu.com/p/637996787)
+有关 `Falcon` 更多的细节可以看这里：
 
 ### 1.4 模型效果评测
 
-关于 Language Mode[ling](https://zhuanlan.zhihu.com/p/424162193) 的量化[指标，较](https://zhuanlan.zhihu.com/p/424162193)为普遍的有 [ PPL ]，[ BPC ] 等，
+关于 `Language Modeling` 的量化指标，较为普遍的有 `PPL`、`BPC` 等，
 
-可以简单理解为在生成结果和目标文本之间的 Cross Entropy Loss 上做了一些处理。
+可以简单理解为在生成结果和目标文本之间的 `Cross Entropy Loss` 上做了一些处理。
 
 这种方式可以用来评估模型对「语言模板」的拟合程度，
 
@@ -243,17 +236,17 @@ Pretraining 的思路很简单，就是输入一堆文本，让模型做 Next To
 
 为此，我们需要能够评估另外一个大模型的重要能力 —— 知识蕴含能力 。
 
-+   **C-Eval**
++ **`C-Eval`**
 
-[一个很好的中文](https://link.zhihu.com/?target=https%3A//github.com/SJTU-LIT/ceval)知识能力测试数据集是 [ C-Eval ]，涵盖1.4w 道选择题，共 52 个学科。
+一个很好的中文知识能力测试数据集是 `C-Eval`，涵盖1.4w 道选择题，共 52 个学科。
 
 覆盖学科如下：
 
 ![](img/7a2513b307e22036c6d4f34d8466c182.png)
 
-由于是选择题的形式，我们可以通过将题目写进 prompt 中，
+由于是选择题的形式，我们可以通过将题目写进 `prompt` 中，
 
-并让模型续写 1 个 token，判断这个续写 token 的答案是不是正确答案即可。
+并让模型续写 1 个 `token`，判断这个续写 `token` 的答案是不是正确答案即可。
 
 但大部分没有精调过的预训练模型可能无法续写出「A B C D」这样的选项答案，
 
@@ -288,11 +281,15 @@ D. 聘用生产外包商
 
 通过前面的样例后，模型能够知道在「答案：」后面应该输出选项字母。
 
-于是，我们获得模型续写后的第一个 token 的概率分布（logits），
+于是，我们获得模型续写后的第一个 `token` 的概率分布（`logits`），
 
-并取出「A B C D」这 4 个字母的概率，通过 softmax 进行归一化：
+并取出「A B C D」这 4 个字母的概率，通过 `softmax` 进行归一化：
 
-```
+
+
+## 1. 预训练阶段（Pretraining Stage）
+
+```text
 probs = (
     torch.nn.functional.softmax(
         torch.tensor(
@@ -330,7 +327,9 @@ C-Eval 也再一次证明了 GPT-4 是个多么强大的知识模型：
 例如：
 
 | 用户问题 | 用户预期回答 | 模型续写结果 |
+
 | --- | --- | --- |
+
 | 《无间道》的主演有哪些？ | 刘德华、梁朝伟 | 《无间道》的主演有哪些？不少观众期待看到阵容公告，今天小编... |
 
 因为训练大多来自互联网中的数据，我们无法保证数据中只存在存在规范的「一问一答」格式，
@@ -340,7 +339,9 @@ C-Eval 也再一次证明了 GPT-4 是个多么强大的知识模型：
 但是，这并不代表预训练模型「无知」，只是需要我们用一些巧妙的「技巧」来引导出答案：
 
 | 用户问题 | 用户预期回答 | 模型续写结果 |
+
 | --- | --- | --- |
+
 | 《无间道》的主演有 | 刘德华、梁朝伟 | 《无间道》的主演有刘德华、梁朝伟和黄秋生,而这部电影也是香港警匪片的代表作之一。 |
 
 不过，这种需要用户精心设计从而去「套」答案的方式，显然没有那么优雅。
@@ -349,7 +350,7 @@ C-Eval 也再一次证明了 GPT-4 是个多么强大的知识模型：
 
 这就是 Instruction Tuning 要做的事情，即指令对齐 。
 
-OpenAI 在 [ instruction-following ] 中展示了 GPT-3 和经过指令微调前后模型的区别：
+OpenAI 在 [instruction-following] 中展示了 GPT-3 和经过指令微调前后模型的区别：
 
 ![](img/5586d6624e0d9f6821bcfc4ea47c4ed4.png)
 
@@ -359,11 +360,11 @@ OpenAI 在 [ instruction-following ] 中展示了 GPT-3 和经过指令微调前
 
 那么我们就需要去精心编写各式各样人们在对话中可能询问的问题，以及问题的答案。
 
-在 [ InstructGPT Paper ] 中，使用了 1.3w 的数据来对 GPT-3.5 进行监督学习（下图中左 SFT Data）：
+在 [InstructGPT Paper] 中，使用了 1.3w 的数据来对 GPT-3.5 进行监督学习（下图中左 SFT Data）：
 
 ![](img/3c93804a7af05d4bc4be9c348a4dbe89.png)
 
-可以观察到，数据集中人工标注（labeler）占大头，
+可以观察到，数据集中人工标注（`labeler`）占大头，
 
 这还仅仅只是 InstructGPT，和 ChatGPT 远远不是一个量级。
 
@@ -377,7 +378,7 @@ OpenAI 在 [ instruction-following ] 中展示了 GPT-3 和经过指令微调前
 
 这就是 Self Instruction 的思路，即通过 ChatGPT 的输入输出来蒸馏自己的模型。
 
-一个非常出名的项目是 [ stanford_alpaca ]。
+一个非常出名的项目是 [stanford_alpaca]。
 
 如果从 ChatGPT 「套」数据，那么我们至少需要「套」哪些数据。
 
@@ -389,9 +390,9 @@ Instruction Tuning 中的「输入」（问题）和「输出」（答案）是�
 
 （靠人想太累了，屏幕前的你不妨试试，看看短时间内能想出多少有价值的问题）
 
-Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问题」又生成「答案」。
+Alpaca 则是使用「种子指令（`seed`）」，使得 ChatGPT 既生成「问题」又生成「答案」。
 
-由于 Alpaca 是英文项目，为了便[于理解，我们](https://link.zhihu.com/?target=https%3A//github.com/LianjiaTech/BELLE)使用相同思路的中文项目 [ BELLE ] 作为例子。
+由于 Alpaca 是英文项目，为了便于理解，我们使用相同思路的中文项目 [BELLE](https://link.zhihu.com/?target=https%3A//github.com/LianjiaTech/BELLE) 作为例子。
 
 通俗来讲，就是人为的先给一些「训练数据样例」让 ChatGPT 看，
 
@@ -427,7 +428,7 @@ Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问
 
 关于 BELLE 的更多细节可以参考这篇文章：
 
-[  ](https://zhuanlan.zhihu.com/p/618334308)
+[知乎专栏](https://zhuanlan.zhihu.com/p/618334308)
 
 ### 2.2 开源数据集整理
 
@@ -437,7 +438,7 @@ Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问
 
 +   **Alpaca**
 
-[ stanford_alpaca ] 采用上述的 self instruction 的方式采集了 5200 条指令训练数据集。
+[stanford_alpaca] 采用上述的 self instruction 的方式采集了 5200 条指令训练数据集。
 
 数据样例如下：
 
@@ -449,7 +450,7 @@ Alpaca 则是使用「种子指令（seed）」，使得 ChatGPT 既生成「问
 }
 ```
 
-其中，instruction 代表要求模型做的任务，input 代表用户输入， output 代表喂给模型的 label。
+其中，`instruction` 代表要求模型做的任务，`input` 代表用户输入，`output` 代表喂给模型的 label。
 
 Alpaca 覆盖了多种类型的指令，其数据分布如下：
 
@@ -459,7 +460,7 @@ Alpaca 覆盖了多种类型的指令，其数据分布如下：
 
 +   **BELLE**
 
-[BELLE](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/BelleGroup/train_1M_CN) 开放了[好几种规模](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/BelleGroup/train_2M_CN)的数据集[，[ 10](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/BelleGroup/train_3.5M_CN)0万 ]、[ 200万 ]、[ 350万 ] 等。
+[BELLE](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/BelleGroup/train_1M_CN) 开放了[好几种规模](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/BelleGroup/train_2M_CN)的数据集，[1000万](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/BelleGroup/train_3.5M_CN)、200万、350万 等。
 
 训练数据集样例如下：
 
@@ -473,23 +474,33 @@ Alpaca 覆盖了多种类型的指令，其数据分布如下：
 
 由于数据量很大，我们无法统计出训练数据集中各任务的真实占比，
 
-但从 [ [1000条评测集 ](https://link.zhihu.com/?target=https%3A//github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json)] 数据分布可以推测出，训练数据集中同样包含：摘要、问答、分类等任务。
+但从 [1000条评测集](https://link.zhihu.com/?target=https%3A//github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) 数据分布可以推测出，训练数据集中同样包含：摘要、问答、分类等任务。
 
 ![](img/81c82ad23bfd22c5fe5f1bbe3ab0664a.png)
 
 我们按照类别对评测数据进行采样，结果如下：
 
 | 任务名称 | 例子 |
+
 | --- | --- |
+
 | 文本生成 | 为一种智能手表编写用户手册，包括详细的使用说明和操作步骤。 |
+
 | 头脑风暴 | 针对给定的主题，进行头脑风暴并记录所有想法。  如何提高公司的销售额？ |
+
 | 开放域问答 | 用一两句话描述著名的尼罗河是如何形成的。 |
+
 | 封闭域问答 | 从以下选项中选择正确的词汇填空以完整下面的句子。 他喜欢去_______看电影。A) 邮局 B）超市 C）电影院 D）音乐会 |
+
 | 分类 | 请将以下这篇文章分类为新闻报道、科学文章或社论。  据媒体新闻援引美国福克斯新闻网报道，美国伯克希尔哈撒韦公司首席执行官、著名投资人巴菲特近日就美国银行业危机与总统拜登的团队进行对话。 |
+
 | 抽取 | 基于以下表格，请问张三的考勤情况  员工姓名,日期,上班时间,下班时间,是否迟到,是否早退,是否请假  张三,1月1日,8:30,17:30,否,否,否  李四,1月1日,9:00,18:00,是,否,否  王五,1月1日,8:00,16:30,否,是,否  赵六,1月1日,8:30,17:00,否,否,是  张三,1月2日,8:00,17:00,否,否,否  李四,1月2日,8:30,17:30,否,否,否  王五,1月2日,9:00,18:00,是,否,否  赵六,1月2日,8:30,17:00,否,否,是 |
+
 | 重写 | 根据提供的文本重写其中的一段，使之更加简明扼要，同时不丢失原文本的主要信息。  纽约市，简称“纽约”，通常被称为“大苹果”，是美国最大的城市，也是全世界最大的城市之一。位于美国东海岸，东北部边界是大西洋，在新泽西州的东南部。 |
+
 | 摘要 | 基于下面的这个故事，总结其中最重要的三个事件。  小明是一个好学生，每天早上都要起得很早去上学。有一天，他迟到了，因为他的家里来了一个客人。晚上，他参加了一次班级会议，会议主题是如何提高学习效率。回到家后，他又花了一些时间复习功课。 |
-| Code &amp; Math | 按照以下要求，写一个SQL查询语句：从表中查找所有性别为女性的学生的姓名和学号。  SELECT name, id FROM students WHERE gender = &#x27;女性&#x27; |
+
+| Code & Math | 按照以下要求，写一个SQL查询语句：从表中查找所有性别为女性的学生的姓名和学号。  SELECT name, id FROM students WHERE gender = '女性' |
 
 +   **Vicuna**
 
@@ -503,7 +514,7 @@ Instruction 环节中的评价指标比较令人头疼。
 
 鉴于语言生成模型的发展速度，BLEU 和 ROUGH 这样的指标已经不再客观。
 
-一种比较流行的方式是像 [ [FastChat ](https://link.zhihu.com/?target=https%3A//github.com/lm-sys/FastChat/blob/main/fastchat/eval/table/prompt.jsonl)] 中一样，利用 GPT-4 为模型的生成结果打分，
+一种比较流行的方式是像 [FastChat](https://link.zhihu.com/?target=https%3A//github.com/lm-sys/FastChat/blob/main/fastchat/eval/table/prompt.jsonl) 中一样，利用 GPT-4 为模型的生成结果打分，
 
 我们也尝试使用同样的 Prompt 对 3 种开源模型：OpenLlama、ChatGLM、BELLE 进行测试。
 
@@ -511,7 +522,7 @@ Instruction 环节中的评价指标比较令人头疼。
 
 对于每一个问题，我们先获得 ChatGPT 的回复，以及另外 3 种模型的回复，
 
-接着我们将 「ChatGPT 答案 - 候选模型答案」这样的 pair 喂给 GPT-4 打分（满分为 10 分）。
+接着我们将「ChatGPT 答案 - 候选模型答案」这样的 pair 喂给 GPT-4 打分（满分为 10 分）。
 
 得到的结果如下：
 
@@ -551,9 +562,9 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 但再经过人工 Review 后，ChatGPT 的答案是我们认为更合理一些的。
 
-[当然，最近陆陆续](https://link.zhihu.com/?target=https%3A//github.com/WeOpenML/PandaLM)续的推出了许多新的评测方法，如：[ PandaLM ]，
+[当然，最近陆陆续续](https://link.zhihu.com/?target=https%3A//github.com/WeOpenML/PandaLM) 推出了许多新的评测方法，如：PandaLM，
 
-[以及许多比较有](https://link.zhihu.com/?target=https%3A//github.com/SJTU-LIT/ceval)影响力的评测集，如：[ C-Eval ]、[ open_llm_leaderboard ] 等，
+[ceval 评测集](https://link.zhihu.com/?target=https%3A//github.com/SJTU-LIT/ceval)，如：C-Eval、`open_llm_leaderboard` 等，
 
 我们或许会在后续的整理中更新。
 
@@ -561,15 +572,15 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 我们在很早以前写过一篇 reward model 相关的文章，
 
-解释了 reward model 的基本原理和一些实验代码（包括 rank_list 的标注平台）：
+解释了 reward model 的基本原理和一些实验代码（包括 `rank_list` 的标注平台）：
 
 ![](img/352067cb9caefef10a259c2d94a0e055.png)
 
-但开源代码中是使用 encoder 作为训练基座的，
+但开源代码中是使用 `encoder` 作为训练基座的，
 
 因此如果只是想了解 reward model 基本概念的话可以参考这篇文章：
 
-[  ](https://zhuanlan.zhihu.com/p/595579042)
+[知乎专栏](https://zhuanlan.zhihu.com/p/595579042)
 
 ### 3.1 奖励模型（Reward Model）的必要性
 
@@ -587,7 +598,9 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 从而出现「有害性」或「幻觉」的问题。
 
-[为此，一些](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2203.02155.pdf)让模型脱[离昂贵标](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.18290.pdf)注数据，自我进行迭代的方法被提出，比如：[ RLHF ]，[ DPO ]，
+
+
+[为此，一些](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2203.02155.pdf)让模型脱离[昂贵标注](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.18290.pdf)数据，自我进行迭代的方法被提出，比如：RLHF，DPO，
 
 但无论是 RL 还是 DPO，我们都需要让告知模型什么是「好的数据」，什么是「不好的数据」。
 
@@ -599,7 +612,7 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 ### 3.2 利用偏序对训练奖励模型
 
-在 OpenAI 的 [ [Summarization ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2009.01325.pdf)] 和 [ [InstructGPT ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2203.02155.pdf)] 的论文中，都使用了「偏序对」来训练模型。
+在 OpenAI 的 [Summarization](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2009.01325.pdf) 和 [InstructGPT](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2203.02155.pdf) 的论文中，都使用了「偏序对」来训练模型。
 
 偏序对是指：不直接为每一个样本直接打分，而是标注这些样本的好坏顺序。
 
@@ -613,25 +626,25 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 我们可以来做一个简单实验，我们构造一批如下数据：
 
-```
+```json
 {
-    &quot;prompt&quot;: &quot;下面是一条正面的评论：&quot;,
-    &quot;selected&quot;: &quot;屯了一大堆，今年过年的话蛮富足的!到货很快的!&quot;,
-    &quot;rejected&quot;: &quot;对商品谈不上满意，但是你们店的信誉极度不满意，买了件衣服取消了订单，要求退款，结果退款过程进行一半就不进行了，真是因小失大啊&quot;
+    "prompt": "下面是一条正面的评论：",
+    "selected": "屯了一大堆，今年过年的话蛮富足的!到货很快的!",
+    "rejected": "对商品谈不上满意，但是你们店的信誉极度不满意，买了件衣服取消了订单，要求退款，结果退款过程进行一半就不进行了，真是因小失大啊"
 }
 ```
 
-其中，prompt 是要求模型续写一条好评，selected 是一条好的回答（A），rejected 是一条不好的回答（B）。
+其中，`prompt` 是要求模型续写一条好评，`selected` 是一条好的回答（A），`rejected` 是一条不好的回答（B）。
 
-我们使用 [ [llama-2-7b ](https://link.zhihu.com/?target=https%3A//huggingface.co/meta-llama/Llama-2-7b)] 作为基座模型训练，期望模型对于 A 回答能够给尽可能高的分，B 回答则尽可能低。
+我们使用 [llama-2-7b](https://link.zhihu.com/?target=https%3A//huggingface.co/meta-llama/Llama-2-7b) 作为基座模型训练，期望模型对于 A 回答能够给尽可能高的分，B 回答则尽可能低。
 
 ![](img/54a35e824e6dc342375e8a3f4e1554b8.png)
 
 我们将训练过程中的「分差变化」绘制出来，
 
-伴随着 loss 的降低，我们发现分差的均值和方差都呈上升的趋势：
+伴随着 `loss` 的降低，我们发现分差的均值和方差都呈上升的趋势：
 
-> Note：这里的分差是指 r(好答案) - r(坏答案) 的分差。
+> Note：这里的分差是指 `r(好答案) - r(坏答案)` 的分差。
 
 ![](img/10fd115def8173e874670147c4f5d109.png)
 
@@ -653,21 +666,21 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 后续一些工作在标注偏序的时候不仅标注了 A 好于 B，还同时标注了 A 比 B 好多少，具体细节可以看：
 
-[  ](https://zhuanlan.zhihu.com/p/660058778)
+[](https://zhuanlan.zhihu.com/p/660058778)
 
 还有一些工作会在 Reward Gap Loss 上添加 Prefered Samples 的 LM Loss：
 
-[  ](https://zhuanlan.zhihu.com/p/666455333)
+[](https://zhuanlan.zhihu.com/p/666455333)
 
 ### 3.3 使用多少数据能够训练好一个RM？
 
-[在 OpenA](https://link.zhihu.com/?target=https%3A//github.com/openai/summarize-from-feedback)I Summarize 的任务中，使用了 [ 6.4w 条 ] 偏序对进行训练。
+[在 OpenAI Summarize](https://link.zhihu.com/?target=https%3A//github.com/openai/summarize-from-feedback) 的任务中，使用了 [6.4w 条] 偏序对进行训练。
 
 在 InstructGPT 任务中，使用了 3.2w 条 [4~9] 偏序对进行训练。
 
 ![](img/7db4f1060d191ef4f90a85306c8750d4.png)
 
-在 [ [StackLlama ](https://link.zhihu.com/?target=https%3A//huggingface.co/blog/zh/stackllama)[] 任务中，使用了 10w 条](https://link.zhihu.com/?target=https%3A//stackexchange.com/) [ Stack Exchange ] 偏序对进行训练。
+在 [StackLlama](https://link.zhihu.com/?target=https%3A//huggingface.co/blog/zh/stackllama) 任务中，使用了 10w 条 [Stack Exchange](https://link.zhihu.com/?target=https%3A//stackexchange.com/) 偏序对进行训练。
 
 从上述工作中，我们仍无法总结出一个稳定模型需要的最小量级，这取决于具体任务。
 
@@ -675,7 +688,7 @@ GPT-4 会对每一条测试样本的 2 个答案分别进行打分，并给出�
 
 关于 Reward Model 的 Scaling Law 讨论可以看看 OpenAI 的论文：
 
-[  ](https://zhuanlan.zhihu.com/p/664575712)
+[](https://zhuanlan.zhihu.com/p/664575712)
 
 ### 3.4 RM 模型的大小限制？
 
@@ -699,11 +712,11 @@ DeepMind 使用了 70B 的 RM，70B LM。
 
 ### 4.1 Best-of-N（BON）
 
-BON 也叫 reject sampling，是指我们通过设置 temperature 值让同一个模型生成若干回复，
+BON 也叫 reject sampling，是指我们通过设置 `temperature` 值让同一个模型生成若干回复，
 
 接着，使用 Reward Model 挑出这些回复中得分较高的回复并再次训练原本的模型。
 
-在 [ [Llama2 Paper ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2307.09288.pdf)] 中使用了这种方法，由于这是一个循环迭代的过程（Sample -> SFT -> Sample -> ...），
+在 [Llama2 Paper](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2307.09288.pdf) 中使用了这种方法，由于这是一个循环迭代的过程（Sample -> SFT -> Sample -> ...），
 
 论文中指出：在进行 SFT 时， 应当使用之前所有策略下的 Good Samples（而非仅是最近一次策略模型 Sample 出的样本），以提高模型的泛化性 。
 
@@ -711,11 +724,11 @@ BON 也叫 reject sampling，是指我们通过设置 temperature 值让同一�
 
 BON 和 RL 的区别主要有以下 2 点：
 
-+   **探索广度： **对同一个 prompt，BON 一次会进行 N 次采样，但 PPO 每次只会采样 1 个答案。
++ 探索广度： 对同一个 prompt，BON 一次会进行 N 次采样，但 PPO 每次只会采样 1 个答案。
 
-+   **进化深度： **BON 的方法只会进行一次模型的「采样-迭代」，而 PPO 会重复进行「采样-进化-采样-进化」。但我们同样可以持续做多个轮回的 BON，这种情况下这 2 种方法的差别就不那么大。
++ 进化深度： BON 的方法只会进行一次模型的「采样-迭代」，而 PPO 会重复进行「采样-进化-采样-进化」。但我们同样可以持续做多个轮回的 BON，这种情况下这 2 种方法的差别就不那么大。
 
-在这一篇 [ [OpenAI Paper ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2210.10760.pdf)] 中对比了 BON & RL 在训练效果上的区别，
+在这一篇 [OpenAI Paper](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2210.10760.pdf) 中对比了 BON & RL 在训练效果上的区别，
 
 相比于 RL，BON 的训练曲线要更稳定（不那么容易崩），但从最终效果来看 RL 的上限会更高一些：
 
@@ -723,19 +736,19 @@ BON 和 RL 的区别主要有以下 2 点：
 
 ### 4.2 Direct Preference Optimisatio（DPO）
 
-[ [DPO ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.18290.pdf)] 是一种不需要 Reward Model 的训练方法，它可以用训练 RM 的偏序对来直接训练模型本身。
+[DPO](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.18290.pdf) 是一种不需要 Reward Model 的训练方法，它可以用训练 RM 的偏序对来直接训练模型本身。
 
 具体来讲，DPO 借鉴了对比学习的思路，
 
-其目标是： **对****于**同一个 prompt，尽可能大的拉开 selected 答案和 rejected 答案之间的生成概率 。
+其目标是： 对于同一个 prompt，尽可能大的拉开 selected 答案和 rejected 答案之间的生成概率 。
 
 ![](img/877bbed8949be5fe229a8e9db056ebe2.png)
 
-> 上述公式源自 [ [这篇 paper ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2310.12036.pdf)]，代码中实现也普遍采样该公式。
+> 上述公式源自 [这篇 paper](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2310.12036.pdf)，代码中实现也普遍采样该公式。
 
-以下是 [ [trl ](https://link.zhihu.com/?target=https%3A//github.com/huggingface/trl/blob/main/trl/trainer/dpo_trainer.py)] 中对 DPO 中的 loss 实现方式：
+以下是 [trl](https://link.zhihu.com/?target=https%3A//github.com/huggingface/trl/blob/main/trl/trainer/dpo_trainer.py) 中对 DPO 中的 loss 实现方式：
 
-```
+```python
 def dpo_loss(
     self,
     policy_chosen_logps: torch.FloatTensor,
@@ -743,7 +756,7 @@ def dpo_loss(
     reference_chosen_logps: torch.FloatTensor,
     reference_rejected_logps: torch.FloatTensor,
     reference_free: bool = False,
-) -&gt; Tuple[torch.FloatTensor, torch.FloatTensor, torch.FloatTensor]:
+) -> Tuple[torch.FloatTensor, torch.FloatTensor, torch.FloatTensor]:
     pi_logratios = policy_chosen_logps - policy_rejected_logps              # 当前模型的 good/bad sample 的概率差
     ref_logratios = reference_chosen_logps - reference_rejected_logps       # Ref模型的 good/bad sample 的概率差
 
@@ -752,12 +765,12 @@ def dpo_loss(
 
     logits = pi_logratios - ref_logratios                       # 如果 ref model 对这两个样本差异也很大，则不要拉的太猛（防止训飞了）
 
-    if self.loss_type == &quot;sigmoid&quot;:
+    if self.loss_type == "sigmoid":
         losses = -F.logsigmoid(self.beta * logits)              # 最大化 good/bad sample 的概率差
-    elif self.loss_type == &quot;hinge&quot;:
+    elif self.loss_type == "hinge":
         losses = torch.relu(1 - self.beta * logits)
     else:
-        raise ValueError(f&quot;Unknown loss type: {self.loss_type}. Should be one of [&#x27;sigmoid&#x27;, &#x27;hinge&#x27;]&quot;)
+        raise ValueError(f"Unknown loss type: {self.loss_type}. Should be one of ['sigmoid', 'hinge']")
 
     chosen_rewards = self.beta * (policy_chosen_logps - reference_chosen_logps).detach()
     rejected_rewards = self.beta * (policy_rejected_logps - reference_rejected_logps).detach()
@@ -767,19 +780,19 @@ def dpo_loss(
 
 ### 4.3 Proximal Policy Optimization（PPO）
 
-[ [PPO ](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/1707.06347.pdf)] 是强化学习中一种基于AC架构（Actor-Critic）的优化方法，其前身是TRPO，
+[PPO](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/1707.06347.pdf) 是强化学习中一种基于AC架构（Actor-Critic）的优化方法，其前身是TRPO，
 
 PPO通过引入重要性采样（Importance Sampling）来缓解 on policy 模型一次采样数据只能更新一次模型的问题，提升了数据利用率和模型训练速度。
 
 在 LLM 的训练中，使用 PPO 需要同时载入 4 个模型：
 
-+   **Actor Model： **用于进化训练的生成模型
++ Actor Model： 用于进化训练的生成模型
 
-+   **Critic Model： **用于进化训练的评判模型
++ Critic Model： 用于进化训练的评判模型
 
-+   **Ref Model： **参照模型，通过 KL 来限制 Actor 模型的训练方向
++ Ref Model： 参照模型，通过 KL 来限制 Actor 模型的训练方向
 
-+   **Reward Model： **奖励模型，用于指导 Actor 进化
++ Reward Model： 奖励模型，用于指导 Actor 进化
 
 为了节省显存，通常会将 actor / critic 共享一个 backbone，这样只用同时载入 3 个模型。
 
@@ -797,13 +810,13 @@ PPO 以其「训练过程不稳定」和「效果不稳定」著称，这里我�
 
 经过实验，我们发现存在几个因素与此有关：
 
-+   **KL Penalty： **适当调大 KL可以帮助稳定训练（可使用动态调整 KL 系数策略）。
++ KL Penalty： 适当调大 KL可以帮助稳定训练（可使用动态调整 KL 系数策略）。
 
-+   **Reward Model： **使用一个更稳定的 RM 能够有效缓解这种问题。
++ Reward Model： 使用一个更稳定的 RM 能够有效缓解这种问题。
 
-+   Reward Scaling： reward 的归一化对训练稳定有着很重要的作用。
++ Reward Scaling： reward 的归一化对训练稳定有着很重要的作用。
 
-+   **Batch Size： **适当增大 batch_size 有助于训练稳定。
++ Batch Size： 适当增大 `batch_size` 有助于训练稳定。
 
 ### 4.3.2 训练结果不稳定
 
@@ -823,7 +836,7 @@ PPO 以其「训练过程不稳定」和「效果不稳定」著称，这里我�
 
 之所以生成这种结果，是因为 Reward Model 对于这类「乱码」打分很高（最后一列为 RM 打出的分数）。
 
-> **这种通过找到 shortcut** 形成 reward 提升的现象又称为 reward hacking 。
+> 这种通过找到 `shortcut` 形成 reward 提升的现象又称为 reward hacking 。
 
 对于这种情况，除了提升 RM 本身的能力以外，我们还可以通过 Combine 多个 RM 以防止这种情况出现。
 
@@ -835,4 +848,4 @@ PPO 以其「训练过程不稳定」和「效果不稳定」著称，这里我�
 
 通过使用多种策略进行混合，最终模型能够获得较为稳定的分数增长，输出模型也不再崩溃。
 
-[关于如何「稳定训](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2307.04964.pdf)练 PPO 的技巧」，在 [ PPO-max ] 文章中有更为详尽的介绍：[【RLHF】怎样让 PPO 训练更稳定？早期人类征服 RLHF 的驯化经验](https://zhuanlan.zhihu.com/p/666455333)
+[关于如何「稳定训练 PPO 的技巧」](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2307.04964.pdf)，在 [PPO-max] 文章中有更为详尽的介绍：[【RLHF】怎样让 PPO 训练更稳定？早期人类征服 RLHF 的驯化经验](https://zhuanlan.zhihu.com/p/666455333)

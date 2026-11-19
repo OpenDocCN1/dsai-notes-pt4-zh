@@ -1,3 +1,4 @@
+
 # 过往培训现场
 
 > 来源：[https://now.feishu.cn/docx/X1IcddzrCoSY6kxcB0QcrmKDnbd](https://now.feishu.cn/docx/X1IcddzrCoSY6kxcB0QcrmKDnbd)

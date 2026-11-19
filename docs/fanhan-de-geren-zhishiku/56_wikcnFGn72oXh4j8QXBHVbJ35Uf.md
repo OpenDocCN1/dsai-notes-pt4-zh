@@ -1,3 +1,4 @@
+
 # 比例偏见：贵和便宜，是相对的 - 得到APP
 
 > 来源：[https://docs.feishu.cn/docx/doxcndVheAWk4liPTm1RAEDEYeb](https://docs.feishu.cn/docx/doxcndVheAWk4liPTm1RAEDEYeb)
@@ -47,8 +48,6 @@
 这个时候，虽然都只是4G内存200块的一个大小的差异，却给客户完全不一样的感觉，这就是利用了比例偏见的逻辑。
 
 ![](img/e5736063735eeaafe069e0c0255b7d48.png)
-
-##
 
 ## 小结：运用方法
 

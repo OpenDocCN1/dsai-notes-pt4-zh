@@ -1,3 +1,4 @@
+
 # Neonity的Next全栈入门小指南
 
 > 来源：[https://now.feishu.cn/docx/SgQ1dspIBoqC42xl8oMcwQPlnmh](https://now.feishu.cn/docx/SgQ1dspIBoqC42xl8oMcwQPlnmh)
@@ -8,7 +9,7 @@
 
 [多人博客/笔记系统（NextJS+Supabase全栈应用）](https://qwyofiv4bd3.feishu.cn/wiki/ROxuwxmMFiJjaCkof29cU2Qpnxc)
 
-+   最新的NextJS 15+shadcn/ui
++   最新的NextJS 15+`shadcn/ui`
 
 +   TipTap实现 所见即所得 WYSIWYG 的编辑器
 
@@ -66,20 +67,20 @@ NextJS作为最热门的全栈web平台，生态环境是最好的，几乎所�
 
 ### Coder with AI
 
-+   https://coderwithai.top/Next.js
++   `https://coderwithai.top/Next.js`
 
-## Javascript Mastery
+### Javascript Mastery
 
 +   [NextJS 15](https://qwyofiv4bd3.feishu.cn/wiki/HyqjwxmFPiFzjTkzf49cPTaknFc)
 
-## UI设计
+### UI设计
 
 +   [Refactoring UI](https://qwyofiv4bd3.feishu.cn/wiki/UH4IwIUEPiCYOJksc0scYptinNf)
 
-## 交互式编程学习网站
+### 交互式编程学习网站
 
 +   [Scrimba](https://qwyofiv4bd3.feishu.cn/wiki/BrzbwqhIQiHm8YkCrP3c2iRfnAd)
 
-## 网站部署
+### 网站部署
 
 +   [Netlify部署NextJS静态网站](https://qwyofiv4bd3.feishu.cn/wiki/PCkkwB1YPizjp4kcn3scbTnjnxe)

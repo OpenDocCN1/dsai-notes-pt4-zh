@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（11月 5日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/PAHMd02sAooVAKxq9VocA5jDnOt](https://miracleplus.feishu.cn/docx/PAHMd02sAooVAKxq9VocA5jDnOt)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Le**pton AI 创始成员，曾在阿里云担任高性能 AI** 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
+> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Lepton AI 创始成员，曾在阿里云担任高性能 AI 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
 
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
 
@@ -12,17 +13,17 @@
 
 ![](img/4be20474134f51fb89a92e1cab1b91e9.png)
 
-# 资讯
+## 资讯
 
 ### 腾讯3D大模型全面开源，文本图像10秒转3D资产，模型权重、推理代码全开放
 
 https://mp.weixin.qq.com/s/2qWYraxSWo3xQMNp2ODpgg
 
-3D生成开源界首个**同时支持文字、图像转3D**的模型来了，效果还是SOTA级别。
+3D生成开源界首个同时支持文字、图像转3D的模型来了，效果还是SOTA级别。
 
 就在刚刚，腾讯宣布推出Hunyuan3D-1.0，一口气开源轻量版和标准版两个模型。
 
-最快**10秒**就能端到端生成。
+最快10秒就能端到端生成。
 
 先生成6个多视角图像，再进行多视角重建，“啪”的一下360度无死角的3D资产就造出来了。
 
@@ -90,7 +91,7 @@ Kalinowski在LinkedIn上表示：“我非常高兴地宣布加入OpenAI，领�
 
 ![](img/a8b81001e9ed5f9ea936ac6ede63a43e.png)
 
-# 推特
+## 推特
 
 ### xAI API公开上线：每月25美元免费额度，128k 令牌上下文
 
@@ -162,7 +163,7 @@ https://x.com/arvidkahl/status/1853264865520976347
 
 这是一个自动化 AI 系统，用于分析 AI 案例研究（可以更换使用场景），以识别和记录企业级 AI 实施。
 
-它从读取 CSV 文件中的 URL 开始，使用网页抓取（通过 WebLoader 或 Firecrawl）从每个案例研究中提取内容。
+它从读取 `CSV` 文件中的 URL 开始，使用网页抓取（通过 `WebLoader` 或 `Firecrawl`）从每个案例研究中提取内容。
 
 提取的内容会发送给 Claude 3.5 Sonnet，基于特定标准（如公司成熟度、实施规模和可衡量的业务成果）分析该案例是否是真正的企业级 AI 实施。
 
@@ -176,7 +177,7 @@ https://x.com/arvidkahl/status/1853264865520976347
 
 • 执行仪表板，汇总关键指标和见解
 
-所有这些报告以结构化格式保存（个别报告为 markdown，跨案例分析和仪表板为 JSON）在各自的目录中。
+所有这些报告以结构化格式保存（个别报告为 `markdown`，跨案例分析和仪表板为 `JSON`）在各自的目录中。
 
 如果某个案例不符合企业级 AI 实施的标准，系统会记录原因并转向下一个 URL。
 
@@ -192,25 +193,25 @@ https://x.com/arvidkahl/status/1853264865520976347
 
 https://x.com/reach_vb/status/1853475883706614232
 
-Smol TTS 模型来了！OuteTTS-0.1-350M - 零样本语音克隆，基于 LLaMa 架构，CC-BY 许可！🔥
+Smol TTS 模型来了！`OuteTTS-0.1-350M` - 零样本语音克隆，基于 `LLaMa` 架构，`CC-BY` 许可！🔥
 
 纯语言建模方法实现 TTS
 
 零样本语音克隆
 
-LLaMa 架构结合音频令牌（WavTokenizer）
+`LLaMa` 架构结合音频令牌（`WavTokenizer`）
 
-亮点：支持 llama.cpp 实现设备端运行 ⚡
+亮点：支持 `llama.cpp` 实现设备端运行 ⚡
 
 TTS 三步法：
 
-使用 WavTokenizer 进行音频标记化（每秒 75 个令牌）
+使用 `WavTokenizer` 进行音频标记化（每秒 75 个令牌）
 
-CTC 强制对齐，实现文字到音频令牌的映射
+`CTC` 强制对齐，实现文字到音频令牌的映射
 
 使用转录、时长和音频令牌创建结构化提示词
 
-对于仅 350M 参数的模型表现令人印象深刻！向 @OuteAI 团队致敬，这一杰出成果令人赞叹——期待它能应用于更大的数据和更智能的骨干模型，比如 SmolLM 🤗
+对于仅 350M 参数的模型表现令人印象深刻！向 @OuteAI 团队致敬，这一杰出成果令人赞叹——期待它能应用于更大的数据和更智能的骨干模型，比如 `SmolLM` 🤗
 
 ![](img/3bfd0ba10784691cbd5b2e588d60bf07.png)
 
@@ -222,7 +223,7 @@ CTC 强制对齐，实现文字到音频令牌的映射
 
 https://x.com/gd3kr/status/1853645054721606100
 
-推出 BLENDERGPT —— 生成 3D 资产并无缝导入 Blender 的最快方式。
+推出 `BLENDERGPT` —— 生成 3D 资产并无缝导入 `Blender` 的最快方式。
 
 文本转 3D 仅需约 20 秒。
 
@@ -232,13 +233,13 @@ https://x.com/gd3kr/status/1853645054721606100
 
 [OBAKN1vOv9S-a8Hd.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UGiRb2hiIoVVuFxajbUc7mrMnYc)
 
-# 信号
+## 信号
 
 ### Deep Learning Through A Telescoping Lens: A Simple Model Provides Empirical Insights On Grokking, Gradient Boosting & Beyond
 
 推荐人：
 
-推文链接：[h](https://x.com/Jeffaresalan/status/1853460948440240213)ttps://x.com/Jeffaresalan/status/1853460948440240213
+推文链接：https://x.com/Jeffaresalan/status/1853460948440240213
 
 原文链接：https://arxiv.org/abs/2411.00247
 
@@ -258,13 +259,17 @@ https://x.com/gd3kr/status/1853645054721606100
 
 推荐人：
 
-推文链接：[https://x.com/omarsar0/status](https://x.com/omarsar0/status/1853286452227899851)/1853286452227899851
+推文链接：https://x.com/omarsar0/status/1853286452227899851
 
 原文链接：https://arxiv.org/abs/2411.00492
 
 信号源：Elvis
 
 研究节点：开发体系-Prompting优化
+
+
+
+# 综述
 
 这篇文章介绍了“多专家提示”（Multi-expert Prompting），这是一种对“专家提示”（ExpertPrompting）的新改进，旨在提升大型语言模型（LLM）的生成能力。该方法通过模拟多个专家来引导LLM执行输入指令，聚合各个专家的响应，并在个体和聚合响应中选择最佳答案。整个过程通过七个精心设计的子任务完成，这些子任务源自于知名的决策制定框架——名义小组技术（Nominal Group Technique）。
 
@@ -274,13 +279,13 @@ https://x.com/gd3kr/status/1853645054721606100
 
 ![](img/c2f58ad8824a0687705437275f532165.png)
 
-### Centaur: a foundation model of human cognition
+## Centaur: a foundation model of human cognition
 
 推荐人：
 
-推文链接：[h](https://x.com/IntuitMachine/status/1853331246211858676)ttps://x.com/IntuitMachine/status/1853331246211858676
+推文链接：`https://x.com/IntuitMachine/status/1853331246211858676`
 
-原文链接：[https://osf.io/prep](https://osf.io/preprints/psyarxiv/d6jeb)rints/psyarxiv/d6jeb
+原文链接：`https://osf.io/preprints/psyarxiv/d6jeb`
 
 信号源：Carlos E. Perez
 
@@ -300,7 +305,7 @@ https://x.com/gd3kr/status/1853645054721606100
 
 贡献人：
 
-https://openhands.daytona.io/
+`https://openhands.daytona.io/`
 
 Daytona是一个提供无缝的云端开发体验的平台，特别是在人工智能编码方面。它允许用户快速访问和使用AI工具，简化开发过程，消除了传统开发中的等待名单和复杂设置。
 
@@ -312,7 +317,7 @@ OpenHands在Daytona平台上推出，无需等待和复杂设置的AI编码工�
 
 贡献人：
 
-https://www.fullcontext.ai/
+`https://www.fullcontext.ai/`
 
 FullContext是一个基于人工智能的工具，通过自然语言快速构建市场推广工作流程。它提供互动产品演示、资格审核、会议安排等功能，能够识别访客身份并展示相关资源，从而提升销售效率和客户体验。
 
@@ -324,7 +329,7 @@ FullContext是一个基于人工智能的工具，通过自然语言快速构建
 
 贡献人：
 
-https://github.com/abi/screenshot-to-code
+`https://github.com/abi/screenshot-to-code`
 
 这个项目是一个简单的工具，利用人工智能将屏幕截图、原型和Figma设计转换为干净、功能性的代码，支持多种前端技术栈（如HTML + Tailwind、React + Tailwind、Vue + Tailwind）。它可以使用Claude Sonnet 3.5和GPT-4o两种AI模型进行转换，并提供实验性功能，将网站的视频/屏幕录像转换为可运行的原型。
 
@@ -334,7 +339,7 @@ https://github.com/abi/screenshot-to-code
 
 贡献人：
 
-https://github.com/Mintplex-Labs/anything-llm?tab=readme-ov-file
+`https://github.com/Mintplex-Labs/anything-llm?tab=readme-ov-file`
 
 AnythingLLM是一个全栈应用程序，允许用户将任何文档、资源或内容转换为上下文，以供任何大型语言模型（LLM）在聊天中参考。该应用支持自定义AI代理、多模态功能和多用户管理（仅限Docker版本），并提供工作区内的代理功能（如浏览网页、运行代码）。它支持多种文档类型（如PDF、TXT、DOCX），具有简单直观的聊天界面，支持拖放和清晰引用。
 
@@ -344,19 +349,19 @@ AnythingLLM是一个全栈应用程序，允许用户将任何文档、资源或
 
 ### Spot AI推出首个面向物理世界的视频AI代理，融资近1亿美元
 
-https://www.spot.ai/blog/spot-ai-introduces-first-video-ai-agents-for-the-physical-world-as-it-nears-100-million-in-funding-to-date
+`https://www.spot.ai/blog/spot-ai-introduces-first-video-ai-agents-for-the-physical-world-as-it-nears-100-million-in-funding-to-date`
 
 Spot AI宣布推出其创新的视频AI代理，旨在将数字世界中的代理AI能力带入物理世界。这些视频AI代理能够帮助组织即时识别和解决安全、安防和运营中的事件，提升制造业、教育、零售和汽车服务等行业的投资回报率。同时，Spot AI也成功完成了3100万美元的新一轮融资，使其总融资额达到9300万美元。本轮融资由Qualcomm Ventures领投，Scale Venture Partners、StepStone Group、Redpoint Ventures、Bessemer Venture Partners等现有投资者参与。
 
 Spot AI的最新产品——视频AI代理，将传统的视频监控系统从被动的记录转变为主动的解决方案，能够自动识别问题并触发响应，如警报、数据分析、控制设备等。Spot AI目前服务超过1000家客户，覆盖17个行业，处理的录像数据量是YouTube日常上传量的两倍。借助先进的边缘处理技术，Spot AI的视频AI代理可以实现更强大的计算能力，并将高质量视频数据转化为可操作的资源，推动安全性、生产力和营收的提升。
 
-公司官网：https://www.spot.ai/
+公司官网：`https://www.spot.ai/`
 
 ![](img/7ad71c2c7cedf244b35aa4e1794a0780.png)
 
 ### 月泉仿生获近亿元Pre-A轮融资
 
-https://36kr.com/p/3022212992869895
+`https://36kr.com/p/3022212992869895`
 
 月泉仿生，一家专注于人形机器人研发和产业化的企业，近期成功完成了近亿元的Pre-A轮融资。本轮融资由洪泰基金领投，长兴基金和中关村启航基金跟投，浪潮资本担任独家财务顾问。资金将用于加速人形机器人研发，强化公司的人才和技术壁垒，并推动商业化进程。
 
@@ -366,7 +371,7 @@ https://36kr.com/p/3022212992869895
 
 ### Coatue筹集10亿美元加码AI投资
 
-https://techcrunch.com/2024/11/04/coatue-is-raising-1b-for-ai-bets/
+`https://techcrunch.com/2024/11/04/coatue-is-raising-1b-for-ai-bets/`
 
 Coatue Management是一家在疫情期间积极投资科技初创企业的对冲基金，目前正计划筹集10亿美元用于AI领域的投资。根据彭博社的报道，这笔资金将主要来自机构投资者，此外，通过Raymond James和Associates经纪公司账户的高净值个人也有机会参与投资。
 
@@ -374,7 +379,7 @@ Coatue目前管理着接近500亿美元的资产，2021年曾投资超过170家�
 
 Coatue的AI投资将进一步推动该基金在这一新兴领域的布局，并为未来的创新技术提供资本支持。
 
-公司官网：https://www.coatue.com/
+公司官网：`https://www.coatue.com/`
 
 ![](img/e1d60c2e29b270db8b1e8c5b5acfc4e1.png)
 
@@ -384,7 +389,7 @@ Coatue的AI投资将进一步推动该基金在这一新兴领域的布局，并
 
 贡献人:
 
-https://mp.weixin.qq.com/s/cnTUlGOw3F-ytsgWje509g
+`https://mp.weixin.qq.com/s/cnTUlGOw3F-ytsgWje509g`
 
 在当前人工智能的快速发展中，大语言模型（LLM）已成为研究的热点。Qwen系列大模型凭借其强大的语言理解和生成能力，在开源社区引起了广泛关注。然而，随着这些模型应用场景的不断扩大，如何提高其计算效率、降低部署成本成为了亟待解决的难题。知识蒸馏（Knowledge Distillation）作为一种有效的模型压缩技术，通过将大模型的知识转移到小模型中，从而减少计算资源消耗并提升推理速度，成为解决该问题的重要手段。
 
@@ -400,15 +405,13 @@ DistilQwen2模型的开源和下载通过HuggingFace和ModelScope平台进行，
 
 ### Agent 智能体开发框架选型指南
 
-https://mp.weixin.qq.com/s/0jB157hXY2AwIcji0jywBQ
+`https://mp.weixin.qq.com/s/0jB157hXY2AwIcji0jywBQ`
 
 本文通过作者的实践对比发现，框架的选择应基于项目具体需求和团队特点，而不是简单追求某个特定框架。不同框架各有优势：
 
-1.  无框架方案实施最为简单直接，代码结构清晰，适合理解智能体原理，但随着项目复杂度增加可能变得难以维护。
-
-1.  LangGraph提供完整的智能体结构规范，特别适合团队协作和智能体结构新手，但框架限制较多，如不认同其理念可能面临较大调试挑战。
-
-1.  LlamaIndex Workflows采用事件驱动架构，在框架约束和开发自由度之间取得平衡，对框架依赖较少，但其固有的异步特性可能增加某些场景的复杂度。
+1. 无框架方案实施最为简单直接，代码结构清晰，适合理解智能体原理，但随着项目复杂度增加可能变得难以维护。
+2. LangGraph提供完整的智能体结构规范，特别适合团队协作和智能体结构新手，但框架限制较多，如不认同其理念可能面临较大调试挑战。
+3. LlamaIndex Workflows采用事件驱动架构，在框架约束和开发自由度之间取得平衡，对框架依赖较少，但其固有的异步特性可能增加某些场景的复杂度。
 
 框架选择需要考虑三个关键因素：项目是否已深度集成了特定框架、团队对智能体架构的熟悉程度、是否有可供参考的相似项目案例。
 
@@ -416,48 +419,44 @@ https://mp.weixin.qq.com/s/0jB157hXY2AwIcji0jywBQ
 
 ### 百川智能：深度学习大模型推理性能优化策略
 
-https://mp.weixin.qq.com/s/ViSg7THcwMHVp024L1gQuQ
+`https://mp.weixin.qq.com/s/ViSg7THcwMHVp024L1gQuQ`
 
 本文探讨了通过四个优化专项提升大模型推理框架性能的技术细节：量化、投机采样、TTFT与TPOT优化、以及通信优化。
 
-1.  量化
-量化是通过将模型的参数从浮点数转化为低比特定点数，减少计算强度和内存消耗的技术。量化有助于减少显存占用，降低访存量，并提高计算资源的利用效率。主要优化方法包括：
+1. 量化
 
-+   Weight-int8 + KV_cache_int8：将权重和KV缓存量化为int8，显著降低显存占用。
+   量化是通过将模型的参数从浮点数转化为低比特定点数，减少计算强度和内存消耗的技术。量化有助于减少显存占用，降低访存量，并提高计算资源的利用效率。主要优化方法包括：
 
-+   Activation int8：对GEMM相关计算的输入激活量化，减少运算耗时，首token时间可下降50%。
+   + `Weight-int8 + KV_cache_int8`：将权重和KV缓存量化为int8，显著降低显存占用。
+   + `Activation int8`：对GEMM相关计算的输入激活量化，减少运算耗时，首token时间可下降50%。
+   + `Weight-int4 + KV_cache-int4`：进一步降低显存占用，支持较长序列和更大batch，降低成本30%。
+   + `通信量化`：减少低端卡的通信耗时，提升效率。
+   + `Attention QKV int8`：将Q、K、V的GEMM计算量化为int8，提升计算效率。
 
-+   Weight-int4 + KV_cache-int4：进一步降低显存占用，支持较长序列和更大batch，降低成本30%。
+2. 投机采样
 
-+   通信量化：减少低端卡的通信耗时，提升效率。
+   投机采样通过利用解码过程中的算力冗余，生成多个候选token并行验证，从而提高算力利用率，减少延迟。设计包括：
 
-+   Attention QKV int8：将Q、K、V的GEMM计算量化为int8，提升计算效率。
+   + Clover模型：采用前几层信息预测，并通过MLP整合全局信息，提升效果。通过动态构建候选token树，使用贪心搜索策略，提升命中率和推理速度。
+   + Clover2模型：在Clover的基础上，增加数据蒸馏loss、提前加入transformer block等，提升全局信息提取能力和后期head预测能力，进一步提高推理效果。
 
-1.  投机采样
-投机采样通过利用解码过程中的算力冗余，生成多个候选token并行验证，从而提高算力利用率，减少延迟。设计包括：
+3. TTFT与TPOT优化
 
-+   Clover模型：采用前几层信息预测，并通过MLP整合全局信息，提升效果。通过动态构建候选token树，使用贪心搜索策略，提升命中率和推理速度。
+   + TTFT（首个token响应时间）：优化首个token生成速度，尤其在实时交互中，需尽量减少延迟。通过切块式prefill和Split fused技术降低decode间隔时间。
+   + TPOT（每个输出token的时间）：通过不同的推理任务分布，优化prefill与decode的平衡。采用PD分离策略，将prefill和decode阶段分开，以充分利用算力和内存，提升吞吐量。
 
-+   Clover2模型：在Clover的基础上，增加数据蒸馏loss、提前加入transformer block等，提升全局信息提取能力和后期head预测能力，进一步提高推理效果。
+4. 通信优化
 
-1.  TTFT与TPOT优化
+   通信在大模型推理中占据显著比重，尤其在低性能卡（如4090）上，通信耗时可能会影响计算效率。优化策略包括：
 
-+   TTFT（首个token响应时间）：优化首个token生成速度，尤其在实时交互中，需尽量减少延迟。通过切块式prefill和Split fused技术降低decode间隔时间。
-
-+   TPOT（每个输出token的时间）：通过不同的推理任务分布，优化prefill与decode的平衡。采用PD分离策略，将prefill和decode阶段分开，以充分利用算力和内存，提升吞吐量。
-
-1.  通信优化
-通信在大模型推理中占据显著比重，尤其在低性能卡（如4090）上，通信耗时可能会影响计算效率。优化策略包括：
-
-+   计算通信重叠：通过GEMM与通信的重叠，减少通信等待时间，提升GPU算力利用率。
-
-+   优化策略：采用GEMM切块策略、分段计算策略和复杂的计算通信重叠方法，提高整体推理效率。优化后的通信重叠策略可在不同GPU上显著提高性能，4090卡在四卡配置中提升40%。
+   + 计算通信重叠：通过GEMM与通信的重叠，减少通信等待时间，提升GPU算力利用率。
+   + 优化策略：采用GEMM切块策略、分段计算策略和复杂的计算通信重叠方法，提高整体推理效率。优化后的通信重叠策略可在不同GPU上显著提高性能，4090卡在四卡配置中提升40%。
 
 ![](img/6180a76e88e8c653cf8faf1b7e225d49.png)
 
 ### 《Graph+AI：大模型浪潮下的图计算》白皮书正式发布
 
-https://mp.weixin.qq.com/s/JmlBy7B8-ZvSqGvK1M-PnA
+`https://mp.weixin.qq.com/s/JmlBy7B8-ZvSqGvK1M-PnA`
 
 白皮书聚焦图计算技术与人工智能（AI）技术在大模型时代的融合与创新应用，分析了大模型技术兴起所带来的新机遇与挑战，探讨了图计算与AI如何在数据、算法、应用层面相互补足。白皮书还系统梳理了图数据处理、图神经网络、图基础模型、知识图谱工程、Text2GQL、GraphRAG等图计算与人工智能结合的关键技术，企业智能决策、图安全风控、知识增强生成等图计算与人工智能结合解决方案，以及图计算与人工智能在能源、金融、电商、科学研究等众多领域的结合应用案例，以期为学术界和产业界提供参考。
 
@@ -469,9 +468,9 @@ https://mp.weixin.qq.com/s/JmlBy7B8-ZvSqGvK1M-PnA
 
 ![](img/10663442721542514b80a19d64501a53.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
 ##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
@@ -479,7 +478,7 @@ https://mp.weixin.qq.com/s/JmlBy7B8-ZvSqGvK1M-PnA
 
 ##### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
 ##### 行研-GenAI研究岗位-前沿学术探索
 
@@ -487,13 +486,13 @@ https://mp.weixin.qq.com/s/JmlBy7B8-ZvSqGvK1M-PnA
 
 ##### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/71234fa839c9294c19cc3f4b4dc9a237.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
@@ -501,23 +500,21 @@ https://mp.weixin.qq.com/s/JmlBy7B8-ZvSqGvK1M-PnA
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
+
+
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
 
-封面生成——右脑科技
+## 封面生成——右脑科技
 
 如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

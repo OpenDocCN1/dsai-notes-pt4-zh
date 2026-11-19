@@ -1,8 +1,9 @@
+
 # DeepSeek-OCR（README）
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/Oe9KdQvIMovf85x7slCcnGwJn8f](https://kq4b3vgg5b.feishu.cn/docx/Oe9KdQvIMovf85x7slCcnGwJn8f)
 
-# 模型介绍
+## 模型介绍
 
 DeepSeek-OCR 是一个开源的多模态 AI 模型，由 DeepSeek AI 于 2025 年 10 月 21 日发布，旨在通过视觉感知压缩文本输入来革新长上下文处理。该模型迅速成为 AI 社区的焦点，已在 GitHub 上获得广泛关注（截至发布后两天，支持数千开发者）。它支持 Python 和其他语言的集成，适用于构建高效的文档处理、数据提取和 LLM 增强应用。
 
@@ -33,15 +34,15 @@ DeepSeek-OCR 采用多模态架构，结合 OCR 和视觉编码技术，将文�
 
 +   [Revolutionary Context Compression Th](https://deepseek.ai/blog/deepseek-ocr-context-compression)rough Optical 2D Mapping - DeepSeek Blog
 
-# 快速阅览
+## 快速阅览
 
 我们团队在文档不同的位置进行了详细的介绍，您可以点击进入并查看具体的技术文档。
 
-### ☑️** **实际评测
+### ☑️ 实际评测
 
 +   [D](https://www.bilibili.com/video/BV1eJWUzTECU)eepSeek-OCR深度解读+上手指南！高精度表格、公式、CAD图字符&语义混合识别，多模态混合DeepSeek实战（视频）
 
-### **☑️ **部署调用
+### ☑️ 部署调用
 
 ⭐️ DeepSeek-OCR快速入门实战（课件）
 
@@ -49,11 +50,11 @@ DeepSeek-OCR 采用多模态架构，结合 OCR 和视觉编码技术，将文�
 
 ⭐️ [基于PaddleOCR-VL+DeepSeek-](https://kq4b3vgg5b.feishu.cn/wiki/MhIjw4jqZi83rrk4irecZgL1ncd?from=from_copylink)ocr搭建企业级多模态RAG系统（课件）
 
-### **☑️ 进阶实战**
+### ☑️ 进阶实战
 
 +   [最强开源PaddleOCR-VL+DeepSeek-OCR从零搭建复杂PDF解析链路](https://www.bilibili.com/video/BV1GasBzVEej)，企业级多模态RAG系统开发实战！CAD图、架构图、图片、表格细粒度溯源（视频）
 
-### **☑️ 团队自研工具**
+### ☑️ 团队自研工具
 
 ⭐️ DeepSeek-OCR-Web 项目已开源【使用文档】
 
@@ -63,7 +64,7 @@ DeepSeek-OCR 采用多模态架构，结合 OCR 和视觉编码技术，将文�
 
 ---
 
-# ❤️ 赋范社区交流群
+## ❤️ 赋范社区交流群
 
 海量硬核独家技术**干货内容**+无门槛**技术交流**~
 
@@ -71,6 +72,4 @@ DeepSeek-OCR 采用多模态架构，结合 OCR 和视觉编码技术，将文�
 
 上图**扫码**👆即刻入群！
 
-📍 社群技术交**流氛围浓厚，**不定期开设硬**核干货&前沿技术公开课噢**~
-
----
+📍 社群技术交流氛围浓厚，不定期开设硬核干货&前沿技术公开课噢~

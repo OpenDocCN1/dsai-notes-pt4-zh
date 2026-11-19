@@ -1,3 +1,4 @@
+
 # 第25小时 · AI工具深度长测评
 
 > 来源：[https://my.feishu.cn/docx/ATUadNqQ6oQxi8xvETJc2qAhnTc](https://my.feishu.cn/docx/ATUadNqQ6oQxi8xvETJc2qAhnTc)
@@ -22,7 +23,7 @@
 
 《第25小时》存在的意义只有一个：
 
-**用我们几百小**时的深度测试，换你每天高效工作的第25个小时。
+**用我们几百小时**的深度测试，换你每天高效工作的第25个小时。
 
 我们负责筛选、踩坑、深度剖析，你负责直接享用成果，把省下的时间留给生活、思考，或是一场好梦。
 

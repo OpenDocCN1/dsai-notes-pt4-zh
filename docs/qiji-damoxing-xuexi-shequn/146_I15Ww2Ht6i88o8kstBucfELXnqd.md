@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（7月 24日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/XhELd69Ijo71crxbjZXcSJVinxg](https://miracleplus.feishu.cn/docx/XhELd69Ijo71crxbjZXcSJVinxg)
 
-# 资讯
+## 资讯
 
 ### Llama 3.1上线就被攻破：大骂小扎，危险配方张口就来！指令遵循能力强了更容易越狱
 
@@ -44,7 +45,7 @@ https://mp.weixin.qq.com/s/ndc4a8uKTlvJgUWtPkKXgg
 
 ![](img/2ea8a775eec204d6fdcff64283293c83.png)
 
-# 推特
+## 推特
 
 ### Llama的质量和Groq的速度结合：Llama 3.1 8B，体验即时智能
 
@@ -104,7 +105,7 @@ Gen-3 Alpha展示了几种模拟能力，包括生成动态镜头运动、复杂
 
 [ssstwitter.com_1721828100113.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GtK2bMN8moFm66xkjaUcqpwjnBe)
 
-# 产品
+## 产品
 
 ### Folk
 
@@ -126,7 +127,7 @@ HeyGen Interactive Avatar 是一种基于人工智能的数字双胞胎技术，
 
 ![](img/ba3f6cbcf6ec0a381489c5c32f760a85.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Awesome-LM-SSP
 
@@ -148,7 +149,7 @@ https://github.com/HICAI-ZJU/Scientific-LLM-Survey
 
 ![](img/a0af703047927d558d0a14ea7dc93eda.png)
 
-# 投融资
+## 投融资
 
 ### 瀚海聚能完成5000万元天使轮融资，推进核聚变商业化进程
 
@@ -222,7 +223,7 @@ FarmBlox由Nathan Rosenberg创立，通过AI驱动的自动化平台帮助农民
 
 ![](img/7e7585bd2843ca49455970f18591725c.png)
 
-###  Network3在种子轮融资中筹集550万美元
+### Network3在种子轮融资中筹集550万美元
 
 贡献人：
 
@@ -234,7 +235,7 @@ Web3人工智能公司Network3在其种子轮融资中筹集了550万美元。�
 
 ![](img/dc07a766dc50757411d3ee13dd266bdc.png)
 
-# 学习
+## 学习
 
 ### 波士顿动力：机器人与控制中机器学习的归纳偏好（四足部分）（RSS 2024）
 
@@ -244,13 +245,13 @@ https://zhuanlan.zhihu.com/p/709997736?utm_psn=1799347579873550337
 
 在 RSS 2024 的工作坊上，波士顿动力探讨了机器人控制中机器学习的归纳偏好，特别是在四足机器人的动态平衡和行走策略中的应用。技术细节包括：
 
-1.  MPC+： 结合了深度强化学习（RL）和模型预测控制（MPC），使得 RL 策略能够输出更精细的落脚点、接触序列和速度修正量，以提高 MPC 的性能。
+1. MPC+：结合了深度强化学习（RL）和模型预测控制（MPC），使得 RL 策略能够输出更精细的落脚点、接触序列和速度修正量，以提高 MPC 的性能。
 
-1.  RL Whole Body Control： 实现了一个简化的 PMTG 策略，不依赖特权信息或复杂训练方法，取得了与量产 MPC 算法相当甚至更优的效果。
+2. RL Whole Body Control：实现了一个简化的 PMTG 策略，不依赖特权信息或复杂训练方法，取得了与量产 MPC 算法相当甚至更优的效果。
 
-1.  基于学习的控制器选择： BD 采用了并行运行多个 MPC 实例的策略，并通过 RL 选择最合理的解，这一方法已在实际产品中得到应用。
+3. 基于学习的控制器选择：BD 采用了并行运行多个 MPC 实例的策略，并通过 RL 选择最合理的解，这一方法已在实际产品中得到应用。
 
-1.  技术挑战与优化： 指出了 RL 与 MPC 结合时的技术挑战，如训练效率、环境非线性和客户审美偏好，以及如何通过优化算法和环境生成来克服这些问题。
+4. 技术挑战与优化：指出了 RL 与 MPC 结合时的技术挑战，如训练效率、环境非线性和客户审美偏好，以及如何通过优化算法和环境生成来克服这些问题。
 
 ![](img/be1031db7c77a8bd26255d7123c64415.png)
 
@@ -260,33 +261,35 @@ https://zhuanlan.zhihu.com/p/709997736?utm_psn=1799347579873550337
 
 https://zhuanlan.zhihu.com/p/710476102?utm_psn=1799348933778092032
 
+
+
 文章详细介绍了 ServerlessLLM 的概念，它是一种结合 Serverless 架构和大型语言模型的创新技术。ServerlessLLM 通过去除服务器管理的复杂性，实现了自动扩展和按需计费，显著提高了资源利用率和成本效率。此外，该架构还具备高度的可用性和安全性，能够快速响应业务需求变化。通过具体案例分析，ServerlessLLM 在问答系统中的应用展示了其在提升系统响应速度和处理能力方面的潜力。作者认为，ServerlessLLM 为云计算领域带来了新的发展机遇，预计未来将广泛应用于多个领域。
 
 ![](img/99d5ef01ed973104cf87ef9f57c810ce.png)
 
-### CUTLASS 2.x & CUTLASS 3.x Intro 学习笔记
+## CUTLASS 2.x & CUTLASS 3.x Intro 学习笔记
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/710516489?utm_psn=1799349278482755585
+`https://zhuanlan.zhihu.com/p/710516489?utm_psn=1799349278482755585`
 
-CUTLASS 是 NVIDIA 推出的一个 CUDA C++ 模板库，旨在提供高效的线性代数运算，特别是矩阵乘法（GEMM）。CUTLASS 2.x 支持多种 NVIDIA GPU 架构，包括 Ada、Ampere、Turing 和 Volta，提供了多种核心功能，如 GEMM、卷积和稀疏 GEMM，以及对 Group GEMM、B2B GEMMs、FMHA 的支持。它还支持 GEMM layernorm 融合、GEMM softmax 融合等高级功能。在 CUTLASS 3.x 中，除了保留 2.x 版本的特性，还增加了对 Hopper 架构的支持，引入了 CuTe 抽象，并采用了新的执行模型，如 TMA、wgmma 和集群配置，以及持久化风格和生产者 - 消费者模型，以进一步提高性能。CUTLASS 3.x 的代码风格有显著变化，配置更加简化，主要需要指定矩阵的元素类型、布局和对齐方式，以及核心 kernel 配置。此外，文章还详细介绍了如何在 CUTLASS 2.x 和 3.x 中构建 GEMM 操作，包括关键的优化选项，如 ThreadBlockShape、WarpShape、InstructionShape 等，以及如何通过调整这些参数来满足不同的需求，并实现性能的最大化。
+CUTLASS 是 NVIDIA 推出的一个 CUDA C++ 模板库，旨在提供高效的线性代数运算，特别是矩阵乘法（GEMM）。CUTLASS 2.x 支持多种 NVIDIA GPU 架构，包括 Ada、Ampere、Turing 和 Volta，提供了多种核心功能，如 GEMM、卷积和稀疏 GEMM，以及对 Group GEMM、B2B GEMMs、FMHA 的支持。它还支持 GEMM `layernorm` 融合、GEMM `softmax` 融合等高级功能。在 CUTLASS 3.x 中，除了保留 2.x 版本的特性，还增加了对 Hopper 架构的支持，引入了 `CuTe` 抽象，并采用了新的执行模型，如 `TMA`、`wgmma` 和集群配置，以及持久化风格和生产者 - 消费者模型，以进一步提高性能。CUTLASS 3.x 的代码风格有显著变化，配置更加简化，主要需要指定矩阵的元素类型、布局和对齐方式，以及核心 `kernel` 配置。此外，文章还详细介绍了如何在 CUTLASS 2.x 和 3.x 中构建 GEMM 操作，包括关键的优化选项，如 `ThreadBlockShape`、`WarpShape`、`InstructionShape` 等，以及如何通过调整这些参数来满足不同的需求，并实现性能的最大化。
 
 ![](img/54e8a1d9a52ba98b1b1d8cfe0c9b6806.png)
 
-### cutlass swizzle机制解析（一）
+## cutlass swizzle机制解析（一）
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/710337546?utm_psn=1799350115741331457
+`https://zhuanlan.zhihu.com/p/710337546?utm_psn=1799350115741331457`
 
-Cutlass 是一个高性能的 CUDA 库，用于实现通用矩阵乘法（GEMM）。在 Cutlass 的 GEMM 实现中，swizzle 机制扮演着重要角色，它主要通过两种方式提高性能：一是通过 Thread Block Swizzle 重映射 block id，改变其发射顺序以提高 L2 cache 命中率；二是确保在进行 warp tile 计算时，读写共享内存是无 bank 冲突的。共享内存被组织成 32 路 bank，每路 4 字节，当一个 warp 中的不同线程访问同一个 bank 时，访问过程将会被串行化，影响效率。为了避免这种情况，swizzle 机制通过物理 layout 到逻辑 layout 的重映射确保读写过程中不会发生 bank 冲突。文章以一个 16x8x16xfp16 大小的矩阵乘法为例，详细描述了 ldmatrix 指令如何从共享内存加载数据到寄存器文件，然后通过 mma 指令进行计算。为了完成这一过程，需要分成多个 phase，每个 phase 负责读取一个 8x8xfp16 矩阵，并确保每个线程读取的 4 bank 数据连续，但线程间的数据不要求连续。通过对 bank 冲突的讨论，文章指出只有传给 ldmatrix 每个线程的地址合理，才能避免 bank 冲突。最后，文章通过一个 Swizzle<3, 3, 3> 的例子，说明了 swizzle 机制如何通过异或运算对矩阵元素进行重映射，以解决 bank 冲突问题。
+Cutlass 是一个高性能的 CUDA 库，用于实现通用矩阵乘法（GEMM）。在 Cutlass 的 GEMM 实现中，swizzle 机制扮演着重要角色，它主要通过两种方式提高性能：一是通过 `Thread Block Swizzle` 重映射 `block id`，改变其发射顺序以提高 L2 cache 命中率；二是确保在进行 warp tile 计算时，读写共享内存是无 bank 冲突的。共享内存被组织成 32 路 bank，每路 4 字节，当一个 warp 中的不同线程访问同一个 bank 时，访问过程将会被串行化，影响效率。为了避免这种情况，swizzle 机制通过物理 layout 到逻辑 layout 的重映射确保读写过程中不会发生 bank 冲突。文章以一个 `16x8x16xfp16` 大小的矩阵乘法为例，详细描述了 `ldmatrix` 指令如何从共享内存加载数据到寄存器文件，然后通过 `mma` 指令进行计算。为了完成这一过程，需要分成多个 phase，每个 phase 负责读取一个 `8x8xfp16` 矩阵，并确保每个线程读取的 4 bank 数据连续，但线程间的数据不要求连续。通过对 bank 冲突的讨论，文章指出只有传给 `ldmatrix` 每个线程的地址合理，才能避免 bank 冲突。最后，文章通过一个 `Swizzle<3, 3, 3>` 的例子，说明了 swizzle 机制如何通过异或运算对矩阵元素进行重映射，以解决 bank 冲突问题。
 
-### 笔记：学习推理加速半年之总结与迷思
+## 笔记：学习推理加速半年之总结与迷思
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/704938096?utm_psn=1799350718194397186
+`https://zhuanlan.zhihu.com/p/704938096?utm_psn=1799350718194397186`
 
 作者首先介绍了自己是如何开始研究推理加速的，包括阅读相关论文、编写代码实践以及参与开源项目。在学习过程中，作者面临了理解复杂算法、掌握软件工具以及优化性能的挑战。为了克服这些困难，作者采取了阅读更多资料、参与社区讨论以及不断实践的方法。
 
@@ -294,70 +297,44 @@ https://zhuanlan.zhihu.com/p/704938096?utm_psn=1799350718194397186
 
 最后，作者对未来的学习方向和行业发展趋势进行了展望。预测未来推理加速将更加关注端到端的优化、跨平台的适应性以及自动化的优化策略。作者也提出了自己的学习计划，包括深入研究某一领域的特定问题、参与更多的实际项目以及持续关注行业动态。
 
-### NVIDIA 全面转向开源 GPU 内核模块
+## NVIDIA 全面转向开源 GPU 内核模块
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/710506291?utm_psn=1799352486617825280
+`https://zhuanlan.zhihu.com/p/710506291?utm_psn=1799352486617825280`
 
 NVIDIA 宣布开源其 GPU 内核模块，这标志着公司对 Linux 社区的支持加强，并将推动软件生态系统的发展。开源驱动程序将提高兼容性和安全性，同时允许更多的调试和定制，为开发者和高级用户提供更灵活的使用体验。这一决策体现了 NVIDIA 对开放源代码和软件自由原则的承诺，预计将促进技术共享和协同开发，推动计算机科技行业的进步。
 
 ![](img/0aa16b11936e408dad8081cb5e508a1d.png)
 
-### Robotaxi四问四答
+## Robotaxi四问四答
 
 贡献人：
 
-https://mp.weixin.qq.com/s/bpIJ4bYy-AltnQ1pJyHnxw
+`https://mp.weixin.qq.com/s/bpIJ4bYy-AltnQ1pJyHnxw`
 
 文章指出 Robotaxi 要求系统具备高度的自动化、安全性和冗余性，具体包括：
 
-+   感知：需要高精度的传感器（如激光雷达）和高精度地图，以及对 Corner case（如编织袋、临时改道等）的处理能力。
++ 感知：需要高精度的传感器（如激光雷达）和高精度地图，以及对 Corner case（如编织袋、临时改道等）的处理能力。
 
-+   预测：涉及对动态障碍物未来轨迹的预测，特别是在多主体交互和长尾障碍物轨迹预测方面。
++ 预测：涉及对动态障碍物未来轨迹的预测，特别是在多主体交互和长尾障碍物轨迹预测方面。
 
-+   决策：决策模块需要在不确定的环境中工作，处理复杂场景下的博弈和交互，以及提供与人类驾驶员一致的乘坐体验。
++ 决策：决策模块需要在不确定的环境中工作，处理复杂场景下的博弈和交互，以及提供与人类驾驶员一致的乘坐体验。
 
-+   控制：控制模块需要精确控制，以确保车辆的行驶平稳和精确。
++ 控制：控制模块需要精确控制，以确保车辆的行驶平稳和精确。
 
-文章还提到，AI 大模型如 Transformer、端到端、多模态和世界模型等前沿技术的应用，有望加速智能驾驶能力的升阶，例如通过大模型提升神经网络的渗透率、模型架构的复杂性和数据的精细化处理。此外，文章举例说明了如何通过模型的训练和实车采集的数据来提升自动驾驶技术的泛化性和拟人性。
+文章还提到，AI 大模型如 `Transformer`、端到端、多模态和世界模型等前沿技术的应用，有望加速智能驾驶能力的升阶，例如通过大模型提升神经网络的渗透率、模型架构的复杂性和数据的精细化处理。此外，文章举例说明了如何通过模型的训练和实车采集的数据来提升自动驾驶技术的泛化性和拟人性。
 
 ![](img/5651696d53f86d6cdbc13da1eab3929d.png)
 
 # 📡潜空间系列活动:
 
 > 潜空间系列活动第三季启动！
-
->
-
 > 第三季第一期将在7.27上午10:00开始，嘉宾是宋佳铭。活动包括嘉宾分享、访谈Q&A、cofounder matching餐会。
-
->
-
->
-
 > 宋佳铭-Luma AI 首席科学家，斯坦福大学计算机科学博士、博士后；曾任职英伟达（DIR）小组科学家 ，创建了最早的扩散模型加速算法，该算法广泛用于最近的生成式 AI 系统，包括 DALL-E 2、Imagen、Stable Diffusion 和 ERNIE-ViLG 2.0。
-
->
-
->
-
 > 陈贝迪-卡内基梅隆大学助理教授，斯坦福大学人工智能博士后学者，前 Meta AI 研究科学家；致力于在现代硬件上设计和优化算法和模型，以加速大型机器学习系统。
-
->
-
->
-
 > 童晟邦- 纽约大学博士，伯克利人工智能实验室（BAIR）研究员， OpenAI 超对齐奖学金获得者；
-
->
-
 > 闫俊杰-MiniMax 创始人兼 CEO。是中国第一梯队的大模型创业者，目前 MiniMax 估值超 25 亿美元。
-
->
-
->
-
 > 本季活动同时开放北京线下、上海线下和线上场次，欢迎校友和外部创业者扫描右方二维码报名！
 
 ![](img/ec6455f96ef32b68e7bbd471deae68d6.png)
@@ -365,8 +342,6 @@ https://mp.weixin.qq.com/s/bpIJ4bYy-AltnQ1pJyHnxw
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -377,15 +352,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
-
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
-
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
-
 > 欢迎大家多多帮我们分享,转发~~
-
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 
 ![](img/3d22e4eb09791d584abc89469a0368cb.png)

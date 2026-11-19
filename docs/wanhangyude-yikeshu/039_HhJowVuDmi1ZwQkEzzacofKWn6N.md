@@ -1,8 +1,13 @@
+
 # 谷歌高级搜索指令工具
 
-> 来源：[https://my.feishu.cn/docx/OHbPdE2p6o5oV7xIeyEcbKPCnHb](https://my.feishu.cn/docx/OHbPdE2p6o5oV7xIeyEcbKPCnHb)
+> 来源：[`https://my.feishu.cn/docx/OHbPdE2p6o5oV7xIeyEcbKPCnHb`](https://my.feishu.cn/docx/OHbPdE2p6o5oV7xIeyEcbKPCnHb)
 
-脚本安装地址：https://greasyfork.org/zh-CN/scripts/522470-%E8%B0%B7%E6%AD%8C%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7
+## 脚本安装
+
+脚本安装地址：`https://greasyfork.org/zh-CN/scripts/522470-%E8%B0%B7%E6%AD%8C%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7`
+
+## 工具简介
 
 这是一个强大的谷歌高级搜索工具脚本，旨在简化谷歌搜索中的复杂操作，帮助用户快速实现高级搜索。通过本脚本，您可以轻松设置关键词、限定网址、文件格式、图片尺寸、时间范围等条件进行精准搜索，并且支持以下特色功能：
 
@@ -18,7 +23,7 @@
 
 无论是学术搜索、资源查找，还是图片过滤，本工具都可以大幅提升您的搜索效率！
 
-适用场景:
+## 适用场景
 
 适合需要精准搜索的用户，如学生、研究人员、开发者，以及其他希望提高谷歌搜索效率的人群。
 

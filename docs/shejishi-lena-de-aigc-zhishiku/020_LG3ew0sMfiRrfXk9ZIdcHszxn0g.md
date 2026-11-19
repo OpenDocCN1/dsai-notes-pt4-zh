@@ -1,19 +1,19 @@
+
 # 平面/品牌案例
+
+## 国际学校周年庆参考 双语排版
 
 > 来源：[https://aigclena.feishu.cn/docx/MtXkdyk75oWkEdxxQGgcYYXtn2c](https://aigclena.feishu.cn/docx/MtXkdyk75oWkEdxxQGgcYYXtn2c)
 
-# 国际学校周年庆参考 双语排版
-
 近期接的一个项目，内容比较多，客户要求比较高：国际范儿、简洁、博物馆、吴冠中、哲学、贝聿铭、M+balabal.....找了大量的参考，“找参考3天，画图3小时hhhhh”，如果你的客户也是相同需求，这些应该对你有用。
 
-## 主KV/周边文创
+### 主KV/周边文创
 
 ![](img/f561a86ea9137f122b33980408de485b.png)
 
 ![](img/f87e910075b4634435649614c2806c27.png)
 
 ![](img/0f0fe5299791e5a0e6ed3b08611f43e5.png)
-
 
 ![](img/c53ac7f4199b8d17a06cc146e6806d63.png)
 
@@ -121,7 +121,6 @@
 
 ![](img/47ffdc9e19ac687888480292382a249a.png)
 
-
 ![](img/d426a8d429570b1f79f23fecb07bfd60.png)
 
 ![](img/7428e459021c4552d3a8ff3eb7ada239.png)
@@ -129,8 +128,6 @@
 ![](img/a8a93d5766bbef4728c5c6a026e98238.png)
 
 ![](img/f01d823a7baca9eecd370c988f594ac5.png)
-
-
 
 ![](img/7cea5f12f561bd8eb57144321afba7b7.png)
 
@@ -151,7 +148,6 @@
 ![](img/240d573930ad87332819eebda8dfd229.png)
 
 ![](img/82eeec217fda99c25133270181137eaf.png)
-
 
 ![](img/ba5a3d26ae0faec39f09fdac48581583.png)
 
@@ -181,11 +177,11 @@
 
 ![](img/a02a188081ceec5a446e6149b0243cde.png)
 
-## PPT
+### PPT
 
 ![](img/5da4d9f613f9724bb4dfa5081dcaa5ce.png)
 
-## 工作牌
+### 工作牌
 
 ![](img/33cb78b0700a437089e26e38ec1d6c8d.png)
 
@@ -211,7 +207,7 @@
 
 ![](img/5a3a013a058420c14fa1ea2e73bf7ff4.png)
 
-## 会议手议程
+### 会议手议程
 
 ![](img/40834f38625200c5f53f9a1d5a005987.png)
 
@@ -231,7 +227,6 @@
 
 ![](img/717069d1ea525b200f5c40ae26b55bb6.png)
 
-
 ![](img/53cdf285ae1106214e637e1976229044.png)
 
 ![](img/d3a3c0784419610bdde711df8ac0d554.png)
@@ -250,10 +245,9 @@
 
 ![](img/2cda579855dc5fd6cd3497899eafad7e.png)
 
-
 ![](img/9da72a830e24d861cc66d6e965a343c1.png)
 
-## 温馨提示卡
+### 温馨提示卡
 
 ![](img/9e0253ff51849949fe2af9749535f6ef.png)
 
@@ -283,7 +277,7 @@
 
 ![](img/ca11db63b8f9fc90c9b28d051104cf97.png)
 
-## 环艺
+### 环艺
 
 ![](img/06287ef77aa4b477ed8cdf20e70cb456.png)
 
@@ -293,9 +287,9 @@
 
 ![](img/f5a9a1f9b5ccacda0069d441bce1dcf0.png)
 
-![](img/74c92e53ccf6c24880dbc5dbc64f16e7.png)
+![](img/74c92e53ccf6c24880dbc5dbc64f1e922.png)
 
-## 纸质邀请函
+### 纸质邀请函
 
 ![](img/29134796f7866218503a4a73a74c5202.png)
 
@@ -353,6 +347,8 @@
 
 ![](img/cd988a9c0f08dce0de5a9f3607c508b1.png)
 
+
+
 ![](img/3ee8ab0de08be78a24cad959652ccf70.png)
 
 ![](img/dd2f6549c2b38cd4127f3e3f214acd63.png)
@@ -373,21 +369,17 @@
 
 ![](img/ad65318f9b2e00cbfc36f8a2ed57be49.png)
 
-
 ![](img/12588040543a0230bdd5c64c0c539bd6.png)
 
 ![](img/0b72eabe6b90c3afc55f6cf18f5e8561.png)
 
 ![](img/9563e668fbb201e42c65fc98128bfebc.png)
 
-
-
 ![](img/977dd519189a62f75336655e8f21dcd6.png)
 
 ![](img/e9fedc5fb053f074cabfac917f11aa66.png)
 
 ![](img/02c6f5b605f369d70c85764570064748.png)
-
 
 ![](img/4e9cf2da6354ee67b5107d0c865d8795.png)
 
@@ -463,10 +455,7 @@ https://kattone.com/
 
 ![](img/2ca3a6ad03dd18c0c9079eada7f2e129.png)
 
-
 ![](img/ba6e3d99d018d155af4db7a8ad6a4f27.png)
-
-
 
 ![](img/5d2d2509069c9bdc57f2044ded7a90a2.png)
 
@@ -482,9 +471,7 @@ https://kattone.com/
 
 ![](img/4452cd6d59f08f6698a8bfabd7b7c1f4.png)
 
-
 ![](img/4315998e62b5af43afc9630921eb41c3.png)
-
 
 ![](img/8d31f3034bb9ec051676e3f65afbd9e9.png)
 
@@ -530,13 +517,11 @@ https://kattone.com/
 
 ![](img/d9b2bc7b85688c74908331f8308ca92a.png)
 
-
 ![](img/ee4c7ee25b3f47a8eab375291b8ae15e.png)
 
 ![](img/f75d569275ae3aecf1771994510abf3a.png)
 
 ![](img/682cf9179df1b479b9bf81213fe5b6da.png)
-
 
 ![](img/827b47ee44d0f296b5c85f3564c3614e.png)
 
@@ -558,8 +543,6 @@ https://kattone.com/
 
 ![](img/48cdf735ac936b5efeafc99f6bbf976a.png)
 
-
-
 ![](img/43e2be2008184683be5271bd5678f9ec.png)
 
 ![](img/bcbab8e453a69358bc25009b7fec03ac.png)
@@ -569,7 +552,6 @@ https://kattone.com/
 ![](img/4dbf2df027f3a07f2125d23c0e2c948a.png)
 
 ![](img/37bfffe0b7ce53d4b6638aa830c906db.png)
-
 
 ![](img/1ab77be717fe8ccc08de01c4dd1b80ca.png)
 
@@ -597,8 +579,6 @@ https://kattone.com/
 
 ![](img/bb7f2417998d0aae4c72d305b651b44d.png)
 
-
-
 ![](img/e395149a7bd5cf4a18245851504872f2.png)
 
 ![](img/ea268fa5a7aa5c0e1a2eaeca7dc24bfd.png)
@@ -606,8 +586,6 @@ https://kattone.com/
 ![](img/87d7cdc95fe99d01a5bbd3d4db2872c0.png)
 
 ![](img/532748aed855c18f6410d8fd132fc563.png)
-
-
 
 ![](img/b21ad3983810b01b135d3388d480b960.png)
 
@@ -625,12 +603,10 @@ https://kattone.com/
 
 ![](img/f565aaf98130f2f8a40942680f3253c0.png)
 
-# 纸张
-
 http://www.paperworms.com/
 
-### 联系我们
+## 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [ ](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)[AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [ ](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/13af6150de3cc58fbbc9f322fbd21765.png)

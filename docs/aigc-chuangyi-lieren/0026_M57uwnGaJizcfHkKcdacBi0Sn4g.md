@@ -1,3 +1,4 @@
+
 # AI每日资讯-202410
 
 > 来源：[https://aigcreative.feishu.cn/docx/JVn9dKxlno0X4lxgO2ec9jkUnYb](https://aigcreative.feishu.cn/docx/JVn9dKxlno0X4lxgO2ec9jkUnYb)
@@ -22,7 +23,7 @@ GitHub重磅宣布Copilot支持Anthropic、Google和OpenAI的多种AI模型，�
 
 [09c42595e21f8cc746ebf68432fd9bc6(10).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JwxdbRUVPoVMAvxddXQcn3YUntc)
 
-## 【20241029】公司| 壮观！全球最强AI超级计算机Colossus问世，由10万张NVIDIA GPU组成，采用液冷设计，实现顶级AI运算。
+## 【20241029】公司 | 壮观！全球最强AI超级计算机Colossus问世，由10万张NVIDIA GPU组成，采用液冷设计，实现顶级AI运算。
 
 美超微与伊隆马斯克的xAI联手打造Colossus，这座全球最大AI超级计算机拥有10万张NVIDIA H100 GPU，并计划扩充至15万张H100和5万张H200，总规模将达20万张。Colossus以T-MED-X设施为基础，具备数个ExaBytes的存储和超高速网络，用于支援Grok AI系统。工程团队仅用122天便建成该系统，展示惊人效率。每个机柜内含64颗GPU和16颗CPU的强大算力，液冷设计有效降低噪音并优化温度控制。网络速度超家用网络400倍，达800GB/s。供电方面，Tesla Megapack电池组确保稳定，满足AI训练的巨大电力需求。
 
@@ -70,7 +71,6 @@ Midjourney宣布推出两项新功能：图片编辑器和图片重新纹理化�
 
 Ideogram Canvas是一个全新设计的创意界面，让用户在一个平台上轻松组织、生成、编辑和组合图像。通过Magic Fill工具，用户可以对图像特定区域进行修补和替换，如添加文本、修复瑕疵、修改背景等，同时还能放大特定区域，生成更高分辨率的细节图像。Extend工具则可扩展图像边界，保持风格一致的同时，自适应不同屏幕比例。该平台适用于品牌视觉和个性化内容创作，使创意实现更加快捷、精准、流畅。
 
-
 [7b626a5ef4f5329b7a8f5772ef012e03(9).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OiEybAM3Zof5GJx45ObcxqVNnAd)
 
 ## 【20241023】产品 | Runway推出新工具，将视频转换为虚拟角色动画。
@@ -110,27 +110,20 @@ Gartner最新报告揭示2025年十大技术趋势，包括代理型AI、AI治�
 1、一键安装桌面版（内测）
 
 +   适用于Windows/macOS/Linux，支持自动更新
-
 +   自动安装Python依赖环境
-
 +   默认安装ComfyUI 管理器
-
 +   即将开源，加入内测：https://comfy.org/waitlist
 
 2、全新用户界面
 
 +   模板工作流/节点模糊搜索
-
 +   侧边菜单栏：Queue队列记录、模型库、节点库
-
 +   非桌面版也可立刻体验，更新最新版本，在设置中打开！
 
 3、节点注册表Custom Node Registry更新
 
 +   600+ 发布的节点，2000+ 版本
-
 +   支持节点版本选择
-
 +   默认集成 ComfyUI Manager（目前仅限 V1 桌面版）
 
 完整细节见ComfyUI博客：https://blog.comfy.org/comfyui-v1-release/
@@ -191,6 +184,8 @@ Kimi 设备近期新增语言通话功能，支持屏幕字幕显示、打断、
 
 ## 【20241014】公司 | OpenAI持续扩展内容授权版图，合作涵盖全球顶级媒体。
 
+
+
 2023年7月至2024年5月，OpenAI与多家全球知名媒体达成重要内容授权协议。2023年7月，OpenAI与美联社(AP)签署协议，随后在12月以3000万美元达成与Axel Springer（旗下有Politico、Business Insider等）的合作。2024年，OpenAI继续与法国《世界报》(Le Monde)、PRISA Media（旗下有《国家报》）和英国《金融时报》(Financial Times)等合作。到2024年5月，OpenAI更与News Corp（包括《华尔街日报》）、Reddit、Vox Media等大型内容平台达成协议，推动其AI模型内容的多元化。
 
 ![](img/65080cd9207b67b7a098f7a193b7e5bd.png)
@@ -243,9 +238,9 @@ Meta最新推出的Meta Movie Gen，是目前最先进的媒体生成基础模�
 
 [e2d20ddfb7a3e2b69d828fabe95518d6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Kx74be0fWonwuPx0qBHcZb9onoc)
 
-## 【20241004】动态 | OpenAI给ChatGPT整了个新界面，
+## 【20241004】动态 | OpenAI给ChatGPT整了个新界面，叫Canvas，简直是人机协作的神器！
 
-叫Canvas，简直是人机协作的神器！不再是单调的对话框，而是像画布一样，你和AI一起在上面创作、编程、编辑，效率杠杠的！比如写文章，AI能帮你改句子、调长度、加表情；编代码，AI能审查、加注释、修bug，还能跨语言翻译！这货不只是工具，简直是你的创意搭档！
+不再是单调的对话框，而是像画布一样，你和AI一起在上面创作、编程、编辑，效率杠杠的！比如写文章，AI能帮你改句子、调长度、加表情；编代码，AI能审查、加注释、修bug，还能跨语言翻译！这货不只是工具，简直是你的创意搭档！
 
 ![](img/28510a098fa113abf86a0d8e2fc97bcd.png)
 

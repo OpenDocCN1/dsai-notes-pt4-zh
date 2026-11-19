@@ -1,3 +1,4 @@
+
 # 设计师×开发者×Vibe Coding：当协作边界彻底消失
 
 > 来源：[https://now.feishu.cn/docx/CCw5dYCzUoKz4PxHWwWcu9ODnSd](https://now.feishu.cn/docx/CCw5dYCzUoKz4PxHWwWcu9ODnSd)
@@ -24,7 +25,7 @@ Lisa: 这是最有意思的部分！现在我们的工作边界变得越来越�
 
 比如我们现在用的是一个共享的设计系统，所有的UI组件都是代码和设计稿同步的。这套方案是我们的前端架构师提前搭建好的，实现了Figma设计文件和代码库的自动同步。我在Figma里调整一个按钮的样式，开发那边的代码库会自动更新。反过来，开发如果发现某个组件在不同设备上有兼容性问题，他们调整后，我这边的设计文件也会立刻看到变化。
 
-（这种同步机制对我们的协作效率提升特别大。如果有读者对具体实现感兴趣，可以参考这个GitHub示例项目：https://github.com/figma/variables-github-action-example）
+（这种同步机制对我们的协作效率提升特别大。如果有读者对具体实现感兴趣，可以参考这个GitHub示例项目：`https://github.com/figma/variables-github-action-example`）
 
 最神奇的是实时代码预览功能。我现在在设计的时候，右边就能看到代码实现的实际效果。以前我设计一个动画效果，只能用静态的方式表达，开发理解起来很困难。现在我能直接看到这个动画在真实环境中的表现，发现问题立刻就能调整。
 

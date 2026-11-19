@@ -1,7 +1,7 @@
+
 # 思维模型
 
 > 来源：[https://aigcreative.feishu.cn/docx/YiirdHFJBoO328xn3n9cjRgOn7c](https://aigcreative.feishu.cn/docx/YiirdHFJBoO328xn3n9cjRgOn7c)
-
 > 内容源自互联网，图片由创意猎人整理制作。
 
 ![](img/43daf709d63b2f2cc5479fa9ddd0c198.png)

@@ -1,19 +1,14 @@
+
 # 笔记体系构建助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Vrb2dE56AoDsFtxTzUXci5MBn0c](https://vxc3hj17dym.feishu.cn/docx/Vrb2dE56AoDsFtxTzUXci5MBn0c)
-
 > 作者：小七姐
-
 > 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+>
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.1
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -51,6 +46,7 @@
 - GTD 笔记体系
 - CODE 笔记体系
 ……
+
 ### 笔记工具：
 - Obsidian ：https://obsidian.md
 - Notion ：https://www.notion.so
@@ -112,6 +108,7 @@
 - GTD 笔记体系
 - CODE 笔记体系
 ……
+
 ### 笔记工具：
 - Obsidian ：https://obsidian.md
 - Notion ：https://www.notion.so

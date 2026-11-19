@@ -1,12 +1,13 @@
+
 # 09-09数据预处理方法-数据转换
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/FzZ4d5ulHoIXhwxa1KDcePqOneb](https://qqs7y1hozd1.feishu.cn/docx/FzZ4d5ulHoIXhwxa1KDcePqOneb)
 
-#### 首先，什么是「数据转换」？
+## 什么是「数据转换」？
 
 数据转换是指把原始数据按照一定的方式“变一变”，变成更适合分析或建模使用的格式，把原始数据整理成模型能理解、能用的样子。
 
-#### 常见的数据转换方法
+## 常见的数据转换方法
 
 1. 标准化 / 归一化（把数据缩放到同一个范围）
 
@@ -14,9 +15,9 @@
 
 举例：
 
-原始数据：身高 [160, 170, 180]
+原始数据：身高 `[160, 170, 180]`
 
-归一化后：[0, 0.5, 1]
+归一化后：`[0, 0.5, 1]`
 
 2. 类型转换（比如把文字变成数字）
 
@@ -24,9 +25,9 @@
 
 举例：
 
-性别列：["男", "女", "男"]
+性别列：`["男", "女", "男"]`
 
-转换后：[1, 0, 1]（男 = 1，女 = 0）
+转换后：`[1, 0, 1]`（男 = 1，女 = 0）
 
 3. 分箱（把连续的数据变成分组或等级）
 
@@ -34,19 +35,19 @@
 
 举例：
 
-年龄：[22, 35, 58]
+年龄：`[22, 35, 58]`
 
-分箱后：["青年", "中年", "老年"]
+分箱后：`["青年", "中年", "老年"]`
 
-**4. 对数转换（缩小数值差距）**
+4. 对数转换（缩小数值差距）
 
 当数据跨度太大，比如收入从几百到几百万，可以取对数，让数据更平稳，更容易处理。
 
 举例：
 
-收入：[1000, 10000, 1000000]
+收入：`[1000, 10000, 1000000]`
 
-转换后：[3, 4, 6]（以10为底的对数）
+转换后：`[3, 4, 6]`（以10为底的对数）
 
 总之，数据转换的目的是让数据变得更“规整”、更适合模型学习。它是数据预处理中的重要一步，几乎所有数据分析和机器学习项目都会用到。
 
@@ -54,15 +55,15 @@
 
 这里，咱们介绍数学方面的表示以及多个常用的转换技术~
 
-### 一、数据转换（数学层面）
+### 数据转换（数学层面）
 
 将原始数据   通过某个变换函数  ，映射到新的空间或分布中，得到新数据  ，其中：
 
 这个变换可以是线性变换、非线性变换、分段函数、分类编码等形式。
 
-### 二、常见数据转换方法
+### 常见数据转换方法
 
-#### 1. 标准化（Z-score 标准化）
+#### 标准化（Z-score 标准化）
 
 将数据转换为**均值为 0，标准差为 1**的正态分布。适用于假设数据是高斯分布的模型，如线性回归、逻辑回归等。
 
@@ -74,17 +75,17 @@
 
 该转换使数据均值为0，标准差为1，有助于提高梯度下降的收敛速度，并消除不同特征量纲差异对模型的影响。
 
-#### 2. 归一化（Min-Max 归一化）
+#### 归一化（Min-Max 归一化）
 
-将数据线性地压缩到特定的区间，如 [0, 1] 或 [-1, 1]。
+将数据线性地压缩到特定的区间，如 `[0, 1]` 或 `[-1, 1]`。
 
-设最大值为  ，最小值为  ，则归一化为 [0, 1] 的公式为：
+设最大值为  ，最小值为  ，则归一化为 `[0, 1]` 的公式为：
 
-或者归一化为 [-1, 1]：
+或者归一化为 `[-1, 1]`：
 
 通过缩放操作将不同范围的数据拉到统一尺度，使得模型的数值计算更稳定。特别适用于神经网络和距离相关的算法（如KNN、SVM）。
 
-#### 3. 对数转换（Log Transform）
+#### 对数转换（Log Transform）
 
 用于处理右偏（正偏）分布的数据。
 
@@ -96,13 +97,13 @@
 
 +     用于防止   时无法取对数
 
-**推理过程：**
+推理过程：
 
 对数函数   的一阶导数是：
 
 说明对数变化在   增大时变化减缓，从而压缩了极大值，提高模型的稳定性和抗噪能力。
 
-#### 4. Box-Cox 变换（广义幂变换）
+#### Box-Cox 变换（广义幂变换）
 
 用于将非正态分布的数据变成近似正态分布。
 
@@ -110,7 +111,7 @@
 
 通过调节参数  ，可以控制数据的偏度和峰度。利用最大似然估计法（MLE）寻找最优   使变换后数据最接近正态分布。
 
-#### 5. 分箱（Binning）
+#### 分箱（Binning）
 
 将连续数值变量划分为离散类别，便于模型学习非线性关系或提升鲁棒性。
 
@@ -126,7 +127,7 @@
 
 简化模型输入，提高解释性，减少噪声影响。尤其适用于决策树等模型。
 
-#### 6. One-Hot 编码（独热编码）
+#### One-Hot 编码（独热编码）
 
 将分类变量转换为向量形式，使其可以用于只能处理数值数据的模型。
 
@@ -136,7 +137,7 @@
 
 保持类别间等距关系，避免模型误解类别间有大小顺序（例如"小" < "中" < "大"）。但维度会随类别数变高，增加计算资源。
 
-#### 7. 主成分分析（PCA）作为一种转换方法
+#### 主成分分析（PCA）作为一种转换方法
 
 线性变换，将原始特征映射到一个新的坐标轴上，新坐标轴为数据协方差矩阵的特征向量方向，按信息保留度降维。
 
@@ -171,13 +172,21 @@
 ## 汇总数据转换核心点
 
 | 方法 | 数学核心 | 应用场景 |
+
 | --- | --- | --- |
+
 | 标准化 | 减均值除以标准差 | 高斯分布假设的模型 |
+
 | 归一化 | 线性缩放到特定区间 | 深度学习、KNN等距离敏感模型 |
+
 | 对数变换 | 应对数据偏态，压缩大数 | 收入、价格等大尺度变量 |
+
 | Box-Cox变换 | 参数化幂函数拟合近似正态分布 | 统计建模，预测模型 |
+
 | 分箱 | 将连续变量离散化 | 决策树模型、业务规则建模 |
+
 | One-Hot编码 | 分类变量转为数值向量 | 所有不支持分类变量的算法 |
+
 | PCA | 基于特征值分解进行线性降维 | 降维、特征冗余消除 |
 
 ## 完整案例
@@ -186,9 +195,9 @@
 
 咱们数据集使用Kaggle House Prices 数据集（大家可从 https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data 下载）。
 
-或者在👸号后台回复「数据集」，找到house-prices-advanced-regression-techniques.zip 文件。
+或者在👸号后台回复「数据集」，找到`house-prices-advanced-regression-techniques.zip` 文件。
 
-这里的案例，应用多个数据转换算法（归一化、对数变换、分箱、独热编码、PCA），然后进行深入分析与可视化，最后构建优化的数据集用于模型训练。
+这里的案例，应用多个数据转换算法（归一化、对数变换、分箱、独热编码，`PCA`），然后进行深入分析与可视化，最后构建优化的数据集用于模型训练。
 
 ### 整体流程
 
@@ -220,13 +229,13 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from scipy.stats import skew
 
-sns.set_palette(&quot;Set2&quot;)
+sns.set_palette("Set2")
 ```
 
 ##### 数据加载
 
 ```
-data = pd.read_csv(&#x27;./house-prices-advanced-regression-techniques/train.csv&#x27;)
+data = pd.read_csv('./house-prices-advanced-regression-techniques/train.csv')
 print(data.head())
 ```
 
@@ -236,8 +245,8 @@ print(data.head())
 # 查看数值变量的偏度，找出需要对数转换的列
 numeric_feats = data.select_dtypes(include=[np.number]).columns
 skewed_feats = data[numeric_feats].apply(lambda x: skew(x.dropna()))
-skewed_feats = skewed_feats[skewed_feats &gt; 1].sort_values(ascending=False)
-print(&quot;偏度较高的变量：&quot;)
+skewed_feats = skewed_feats[skewed_feats > 1].sort_values(ascending=False)
+print("偏度较高的变量：")
 print(skewed_feats)
 ```
 
@@ -246,10 +255,10 @@ print(skewed_feats)
 ```
 for feature in skewed_feats.index[:4]:
     plt.figure(figsize=(6, 4))
-    sns.histplot(data[feature], kde=True, color=&#x27;orange&#x27;)
-    plt.title(f&quot;Original Distribution - {feature}&quot;, fontsize=14)
-    plt.xlabel(&quot;Value&quot;)
-    plt.ylabel(&quot;Frequency&quot;)
+    sns.histplot(data[feature], kde=True, color='orange')
+    plt.title(f"Original Distribution - {feature}", fontsize=14)
+    plt.xlabel("Value")
+    plt.ylabel("Frequency")
     plt.show()
 ```
 
@@ -269,15 +278,15 @@ for feat in skewed_feats.index:
 
 偏度较高的数值通常集中在低值区域，尾部过长，不利于模型学习。对数变换压缩极端值，使分布趋于对称。
 
-**可视化对比：**
+可视化对比：
 
 ```
 for feature in skewed_feats.index[:4]:
     fig, ax = plt.subplots(1, 2, figsize=(12, 4))
-    sns.histplot(data[feature], ax=ax[0], kde=True, color=&#x27;skyblue&#x27;)
-    sns.histplot(data_log[feature], ax=ax[1], kde=True, color=&#x27;tomato&#x27;)
-    ax[0].set_title(f&quot;Original Distribution - {feature}&quot;)
-    ax[1].set_title(f&quot;After Log Transformation - {feature}&quot;)
+    sns.histplot(data[feature], ax=ax[0], kde=True, color='skyblue')
+    sns.histplot(data_log[feature], ax=ax[1], kde=True, color='tomato')
+    ax[0].set_title(f"Original Distribution - {feature}")
+    ax[1].set_title(f"After Log Transformation - {feature}")
     plt.show()
 ```
 
@@ -305,8 +314,8 @@ scaled_data = pd.DataFrame(scaled_feats, columns=numeric_feats)
 
 ```
 # 创建YearBuilt的分箱变量
-data_log[&#x27;YearBuiltBin&#x27;] = pd.cut(data_log[&#x27;YearBuilt&#x27;], bins=[1870, 1900, 1950, 2000, 2010],
-                                  labels=[&#x27;VeryOld&#x27;, &#x27;Old&#x27;, &#x27;Modern&#x27;, &#x27;New&#x27;])
+data_log['YearBuiltBin'] = pd.cut(data_log['YearBuilt'], bins=[1870, 1900, 1950, 2000, 2010],
+                              labels=['VeryOld', 'Old', 'Modern', 'New'])
 ```
 
 将年份这种连续变量转为有语义的分类，有助于建模的解释性和稳定性，尤其适合决策树等模型。
@@ -315,7 +324,7 @@ data_log[&#x27;YearBuiltBin&#x27;] = pd.cut(data_log[&#x27;YearBuilt&#x27;], bin
 
 ```
 # 填充分类变量缺失值（用众数）
-categorical_cols = [&#x27;YearBuiltBin&#x27;, &#x27;Neighborhood&#x27;, &#x27;HouseStyle&#x27;]
+categorical_cols = ['YearBuiltBin', 'Neighborhood', 'HouseStyle']
 for col in categorical_cols:
     data_log[col] = data_log[col].fillna(data_log[col].mode()[0])
 
@@ -335,8 +344,8 @@ final_data = pd.concat([scaled_data, data_encoded], axis=1)
 pca = PCA(n_components=0.95)
 X_pca = pca.fit_transform(final_data)
 
-print(&quot;Original Feature Dimension：&quot;, final_data.shape[1])
-print(&quot;Reduced Dimension：&quot;, X_pca.shape[1])
+print("Original Feature Dimension：", final_data.shape[1])
+print("Reduced Dimension：", X_pca.shape[1])
 ```
 
 PCA可剔除冗余特征，压缩数据，提高模型效率，同时降低过拟合风险。
@@ -347,7 +356,7 @@ PCA可剔除冗余特征，压缩数据，提高模型效率，同时降低过�
 
 ```
 # 目标变量对数化
-y = np.log1p(data_log[&#x27;SalePrice&#x27;])
+y = np.log1p(data_log['SalePrice'])
 
 # 划分训练集测试集
 X_train, X_test, y_train, y_test = train_test_split(X_pca, y, test_size=0.2, random_state=42)
@@ -363,7 +372,7 @@ model.fit(X_train, y_train)
 # 预测和评估
 y_pred = model.predict(X_test)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-print(&quot;Model RMSE (in Log Space)：&quot;, rmse)
+print("Model RMSE (in Log Space)：", rmse)
 ```
 
 #### 第六步：结果可视化与分析
@@ -373,13 +382,13 @@ print(&quot;Model RMSE (in Log Space)：&quot;, rmse)
 ```
 # 预测结果可视化
 plt.figure(figsize=(8, 6))
-plt.scatter(np.expm1(y_test), np.expm1(y_pred), color=&#x27;crimson&#x27;, alpha=0.7)
-plt.xlabel(&quot;Actual House Price&quot;, fontsize=12)
-plt.ylabel(&quot;Predicted House Price&quot;, fontsize=12)
-plt.title(&quot;Comparison of Predicted vs Actual Results (Unit: USD)&quot;, fontsize=14)
+plt.scatter(np.expm1(y_test), np.expm1(y_pred), color='crimson', alpha=0.7)
+plt.xlabel("Actual House Price", fontsize=12)
+plt.ylabel("Predicted House Price", fontsize=12)
+plt.title("Comparison of Predicted vs Actual Results (Unit: USD)", fontsize=14)
 
 max_price = max(np.expm1(y_test).max(), np.expm1(y_pred).max())
-plt.plot([0, max_price], [0, max_price], &#x27;--&#x27;, color=&#x27;black&#x27;)
+plt.plot([0, max_price], [0, max_price], '--', color='black')
 
 plt.grid(True)
 plt.show()
@@ -397,33 +406,33 @@ plt.show()
 
 +   部分分类变量独热编码后维度过高，可考虑目标编码等方法。
 
-+   模型RMSE可以通过加入更多高级转换如 Box-Cox 或构造交叉特征进一步优化。
++   模型RMSE可以通过加入更多高级转换如 `Box-Cox` 或构造交叉特征进一步优化。
 
 ## 模型分析
 
 ### 优缺点分析
 
-**优点：**
+优点：
 
 1.  **增强模型表达能力**：数据转换帮助模型更好地理解特征背后的结构。例如对数变换后偏态分布特征更接近正态，岭回归等线性模型可以更充分学习这些关系。
 
-1.  **提升训练效率**：经过标准化或归一化处理后，数值特征处于相似尺度，有助于加快梯度下降收敛速度，特别是在神经网络或带正则项的模型中表现更明显。
 
-1.  **减少异常值干扰**：对数变换或分箱可以压缩极端数值影响，提升模型鲁棒性。例如将 10 万美元与 200 万美元之间的房价拉近，有助于回归模型拟合。
 
-1.  **构建更易解释的特征空间**：分箱操作将连续特征转化为类别，使模型输出更易于人类理解（如“房龄较旧的房屋更便宜”），便于业务解读和可视化。
+# 数据转换（特征预处理）的优缺点与适用场景
 
-1.  **数据降维与噪声消除**：PCA等线性变换方法有效降低特征维度，减少冗余，提高计算效率，适用于大量数值特征的场景。
+## 优点
 
-**缺点：**
+1. **提升训练效率**：经过标准化或归一化处理后，数值特征处于相似尺度，有助于加快梯度下降收敛速度，特别是在神经网络或带正则项的模型中表现更明显。
+1. **减少异常值干扰**：对数变换或分箱可以压缩极端数值影响，提升模型鲁棒性。例如将 10 万美元与 200 万美元之间的房价拉近，有助于回归模型拟合。
+1. **构建更易解释的特征空间**：分箱操作将连续特征转化为类别，使模型输出更易于人类理解（如“房龄较旧的房屋更便宜”），便于业务解读和可视化。
+1. **数据降维与噪声消除**：PCA等线性变换方法有效降低特征维度，减少冗余，提高计算效率，适用于大量数值特征的场景。
 
-1.  **可能丢失原始数据语义**：尤其是 PCA 等无监督变换，转换后各主成分无法直接对应原始特征，模型的可解释性明显下降。
+## 缺点
 
-1.  **需要专业判断进行选择**：不同类型的特征适用不同的转换方式，若转换方法选错（如对线性特征误用非线性变换），可能反而破坏特征表达。
-
-1.  **增加前期处理复杂度**：多种变换方法叠加需要写大量代码并调试，数据清洗、可视化、分箱、标准化等操作会显著增加工作量。
-
-1.  **不适用于所有模型**：某些模型（如决策树、随机森林）对数据尺度和分布并不敏感，标准化、PCA等预处理反而可能无益甚至有害。
+1. **可能丢失原始数据语义**：尤其是 PCA 等无监督变换，转换后各主成分无法直接对应原始特征，模型的可解释性明显下降。
+1. **需要专业判断进行选择**：不同类型的特征适用不同的转换方式，若转换方法选错（如对线性特征误用非线性变换），可能反而破坏特征表达。
+1. **增加前期处理复杂度**：多种变换方法叠加需要写大量代码并调试，数据清洗、可视化、分箱、标准化等操作会显著增加工作量。
+1. **不适用于所有模型**：某些模型（如决策树、随机森林）对数据尺度和分布并不敏感，标准化、PCA等预处理反而可能无益甚至有害。
 
 ### 与其他相似算法的对比
 
@@ -438,20 +447,15 @@ plt.show()
 
 ### 何时使用数据转换，何时选择其他方法？
 
-#### 适合使用数据转换的情况：
+#### 适合使用数据转换的情况
 
-+   **结构化表格数据**：如金融、房地产、医疗等领域，字段类型丰富，需要控制变量尺度与分布。
+- **结构化表格数据**：如金融、房地产、医疗等领域，字段类型丰富，需要控制变量尺度与分布。
+- **使用线性模型或正则化模型**：如线性回归、Ridge、Lasso、SVM，强烈依赖数据分布与数值尺度。
+- **存在极端值或偏态特征**：对数变换等能有效缓解偏态和极端值影响。
+- **样本量不大，需要压缩维度**：PCA等降维可增强泛化能力。
 
-+   **使用线性模型或正则化模型**：如线性回归、Ridge、Lasso、SVM，强烈依赖数据分布与数值尺度。
+#### 不建议使用数据转换的情况
 
-+   **存在极端值或偏态特征**：对数变换等能有效缓解偏态和极端值影响。
-
-+   **样本量不大，需要压缩维度**：PCA等降维可增强泛化能力。
-
-#### 不建议使用数据转换的情况：
-
-+   **模型对尺度不敏感**：如决策树、XGBoost，不需标准化和归一化。
-
-+   **特征含义重要性高，需可解释性**：如医疗诊断、金融信贷评估，PCA会损失可解释性。
-
-+   **类别特征稀疏而复杂**：One-Hot编码会导致维度膨胀，可能引发稀疏矩阵计算瓶颈，此时目标编码更优。
+- **模型对尺度不敏感**：如决策树、XGBoost，不需标准化和归一化。
+- **特征含义重要性高，需可解释性**：如医疗诊断、金融信贷评估，PCA会损失可解释性。
+- **类别特征稀疏而复杂**：One-Hot编码会导致维度膨胀，可能引发稀疏矩阵计算瓶颈，此时目标编码更优。

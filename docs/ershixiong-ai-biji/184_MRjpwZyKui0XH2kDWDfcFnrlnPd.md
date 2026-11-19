@@ -1,3 +1,4 @@
+
 # 创意图片
 
 > 来源：[https://qianniucity.feishu.cn/docx/UWiud89s1otejZx0lb1cGyPOn0g](https://qianniucity.feishu.cn/docx/UWiud89s1otejZx0lb1cGyPOn0g)
@@ -15,8 +16,5 @@
 > 背景：浅色纯色背景（米色或白色 ） 。你可以在使用 AI 绘图工具时，根据实际效果微调这些提示词。
 
 ![](img/51faf8018e0a6ac4e6509743759dcc1e.png)
-
-
-
 
 ![](img/8ace3435b16a7706e5cac63faa5ed3ae.png)

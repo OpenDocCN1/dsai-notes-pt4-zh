@@ -1,3 +1,4 @@
+
 # 202409｜ “请 3 休 8”，一次“蓄谋已久”的出游计划
 
 > 来源：[https://leonzhang.feishu.cn/docx/OfFNdPXbqogbTIxwaWpcfKf1n4b](https://leonzhang.feishu.cn/docx/OfFNdPXbqogbTIxwaWpcfKf1n4b)
@@ -5,7 +6,6 @@
 Leon Zhang, Mon. 10, 2024
 
 #月度总结 #个人成长 #Life Blog
-
 
 > Thinking will not overcome fear, bat action will.  思考无法克服恐惧，但行动可以。
 
@@ -19,7 +19,7 @@ Leon Zhang, Mon. 10, 2024
 
 **1**
 
-**早上准备起床跑步的时候**，感觉很累，不想起床，但脑海突然闪过一句话「放弃很容易，但坚持很酷」，然后毅然决然的起床、去跑步。
+早上准备起床跑步的时候，感觉很累，不想起床，但脑海突然闪过一句话「放弃很容易，但坚持很酷」，然后毅然决然的起床、去跑步。
 
 **2**
 
@@ -38,25 +38,26 @@ Leon Zhang, Mon. 10, 2024
 **1**
 
 | ![](img/152165f595081f9e8830b447d67b3da8.png) |
+
 | --- |
 
-**这个是阿珂发我的一张图，而且她告诉我说，“这个研究是真**的，但是可能很多 HR 都不知道，更别说想到把它贴到 jd 里，甚至调整录取标准。”
+这个是阿珂发我的一张图，而且她告诉我说，“这个研究是真的，但是可能很多 HR 都不知道，更别说想到把它贴到 jd 里，甚至调整录取标准。”
 
 瞬间想到之前求职时看到的 JD，有的 JD 真的是招聘者认真写的那种，就看到真的想点赞的那种；有的就是很明显地复制粘贴，最常见、最明显的就是英文半角和中文全角符号混用，有序列表末有的是分号，有些是句号。其实这种行为没有对错，只是一种选择，毕竟更多时候只是业务给了 HR 部门的几个招聘指标，而有些 HR 去学习其他大厂 JD，细节也几乎不关心。
 
 **2**
 
-+1 也是如此。他经常在遇到合作部门背后给我**们使绊子**的时候，他也都会轻描淡写地说，“不用管他。”
++1 也是如此。他经常在遇到合作部门背后给我们使绊子的时候，他也都会轻描淡写地说，“不用管他。”
 
 是呀，不是每个人都值得你为他消耗生命，情绪波动。把注意力放在我们能够把握住的地方。
 
 | ![](img/900717e22a58b8d124358aca1a600773.png) |
+
 | --- |
 
 ## 最近观察和思考
 
 > All the best things in my life came to me unexpectedly. 美好之事总是不期而至。
-
 
 意义对于每一个人来说都是不一样的。有些人觉得登上高峰就很有意义，对于鹰来说，是再平常不过的一件事。很多事情，不是因为有意义才会去做，是因为做了之后才发现真正的意义。
 
@@ -64,17 +65,17 @@ Leon Zhang, Mon. 10, 2024
 
 写完回看的时候发现，按照“天”为维度划分是不合理的，应该按照目的地为维度，比如宁波、大理、丽江，下次尝试。
 
-1.  [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg?from=from_copylink)
+1. [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg?from=from_copylink)
 
-1.  [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
+1. [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
 
-1.  [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
+1. [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
 
-1.  ...
+1. ...
 
 ## 最近在听、在看
 
-> 知道自己真正喜欢什么东西，是一件很不容易的事，一定要坚持呀！！
+> 知道自己真正喜欢什么东西，是一件很不容易的事，一定要坚持呀！!
 
 ![](img/b74f4b2883c480e29828eeefb8997c36.png)
 
@@ -84,9 +85,9 @@ Leon Zhang, Mon. 10, 2024
 
 > 【5 点的纽约，原来长这样。思考无法克服恐惧，但行动可以】 https://www.bilibili.com/video/BV12ysUeeENW/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  "You set your own limits." 你的极限由你自己决定。
+1. "You set your own limits." 你的极限由你自己决定。
 
-1.  哪怕生活常常黯淡，只要跑起来，就能点亮黑暗中的自己。
+1. 哪怕生活常常黯淡，只要跑起来，就能点亮黑暗中的自己。
 
 **2**
 
@@ -100,7 +101,7 @@ Leon Zhang, Mon. 10, 2024
 
 我们也曾在洱海边的路上看到超大彩虹，看到路的这边是雨天，另一边是蓝天、白云和太阳的奇妙景象，甚至能看到雨在云下哗哗的下着，云随着风向前飘着。虽然淋了一场雨，但看到了这么大的彩虹 🌈，也值回票价了～
 
-Links 说，“**人生**中，常有让你彷徨的时候，你会纠结要不要迈出这一步，因为有很多恐惧的东西（比如这次我就恐惧天气、恐惧暴雨），但有时候当你出发，你会觉得这太难了，你如果再坚持一会，你就会发现，一切都会变好！”
+Links 说，“人生中，常有让你彷徨的时候，你会纠结要不要迈出这一步，因为有很多恐惧的东西（比如这次我就恐惧天气、恐惧暴雨），但有时候当你出发，你会觉得这太难了，你如果再坚持一会，你就会发现，一切都会变好！”
 
 **4**
 
@@ -174,41 +175,41 @@ Meta 智能眼镜如何“少就是多”取胜？优秀的产品做减法，3 �
 
 > 温馨提示：建议搭配降噪耳机，音量调至 50%-80%，尽量感受现场环境。若为夜深人静，更佳，enjoy～
 
-1.  【《斑马，斑马》- 宋冬野 总有一首歌让你感动 2018 澳大利亚专场演唱会】 https://www.bilibili.com/video/BV1CJ411P7Z6/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【《斑马，斑马》- 宋冬野 总有一首歌让你感动 2018 澳大利亚专场演唱会】 https://www.bilibili.com/video/BV1CJ411P7Z6/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【二次火爆全网的《桃花诺》，小姐姐开口就惊了！】 https://www.bilibili.com/video/BV1Xg4y1s7s9/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【二次火爆全网的《桃花诺》，小姐姐开口就惊了！】 https://www.bilibili.com/video/BV1Xg4y1s7s9/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【60000 秒！4K 重置版《ありがとう》-謝謝- KOKIA】 https://www.bilibili.com/video/BV1uo4y1S7n2/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【60000 秒！4K 重置版《ありがとう》-謝謝- KOKIA】 https://www.bilibili.com/video/BV1uo4y1S7n2/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【程响首次在西安古城墙下演绎火爆全网的《可能》，与风靡一个时代的经典电影《大话西游》深情混搭，这创意绝了～】 https://www.bilibili.com/video/BV1DA4m1V7VN/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【程响首次在西安古城墙下演绎火爆全网的《可能》，与风靡一个时代的经典电影《大话西游》深情混搭，这创意绝了～】 https://www.bilibili.com/video/BV1DA4m1V7VN/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【【声生不息】陈楚生周深合作舞台《凄美地》在歌里听见自由的声音】 https://www.bilibili.com/video/BV1TG411z71z/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【【声生不息】陈楚生周深合作舞台《凄美地》在歌里听见自由的声音】 https://www.bilibili.com/video/BV1TG411z71z/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【【4K 修复】柳爽《漠河舞厅》神级现场！】 https://www.bilibili.com/video/BV1ah411x7wV/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【【4K 修复】柳爽《漠河舞厅》神级现场！】 https://www.bilibili.com/video/BV1ah411x7wV/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【光良、陈卓璇《童话》里女主角出现啦！好喜欢这个合唱版本！】 https://www.bilibili.com/video/BV1j34y1u74S/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【光良、陈卓璇《童话》里女主角出现啦！好喜欢这个合唱版本！】 https://www.bilibili.com/video/BV1j34y1u74S/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【金志文 赖美云默契合唱《远走高飞》，唱响青春的一往无前，太好听了！】 https://www.bilibili.com/video/BV17x4y1c7Jd/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【金志文 赖美云默契合唱《远走高飞》，唱响青春的一往无前，太好听了！】 https://www.bilibili.com/video/BV17x4y1c7Jd/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
-1.  【黄霄雲《离别开出花》2024/6/10。毕业歌会。全网独家 10M 源码】 https://www.bilibili.com/video/BV1X7421R7XL/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【黄霄雲《离别开出花》2024/6/10。毕业歌会。全网独家 10M 源码】 https://www.bilibili.com/video/BV1X7421R7XL/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
 
 ### 相关阅读
 
-1.  [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg)
+1. [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg)
 
-1.  [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
+1. [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
 
-1.  [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
+1. [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
 
-1.  [游记｜云南中秋行 Day 4](https://leonzhang.feishu.cn/wiki/U398wxQmNiH5j8k0uYvcorxxn5e)
+1. [游记｜云南中秋行 Day 4](https://leonzhang.feishu.cn/wiki/U398wxQmNiH5j8k0uYvcorxxn5e)
 
-1.  [游记｜云南中秋行 Day 5](https://leonzhang.feishu.cn/wiki/GGorwqNerizlM9k8ZohciDlrnZb)
+1. [游记｜云南中秋行 Day 5](https://leonzhang.feishu.cn/wiki/GGorwqNerizlM9k8ZohciDlrnZb)
 
-1.  [游记｜云南中秋行 Day 6](https://leonzhang.feishu.cn/wiki/HPeHwUYySilSwUkC8r1c88j1nQc)
+1. [游记｜云南中秋行 Day 6](https://leonzhang.feishu.cn/wiki/HPeHwUYySilSwUkC8r1c88j1nQc)
 
-1.  [游记｜云南中秋行 Day 7](https://leonzhang.feishu.cn/wiki/NTAWwnHMpiSl1PkU61hca0Cpngg)
+1. [游记｜云南中秋行 Day 7](https://leonzhang.feishu.cn/wiki/NTAWwnHMpiSl1PkU61hca0Cpngg)
 
-1.  [游记｜云南中秋行 Day 8](https://leonzhang.feishu.cn/wiki/IUHwwNGHjiJAHbk63fbco2m2nXa)
+1. [游记｜云南中秋行 Day 8](https://leonzhang.feishu.cn/wiki/IUHwwNGHjiJAHbk63fbco2m2nXa)
 
 以上，
 

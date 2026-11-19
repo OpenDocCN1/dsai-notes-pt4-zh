@@ -1,8 +1,9 @@
+
 # 数字人起号-图书类口播
 
-> 来源：[https://jlqyxzzvbk.feishu.cn/docx/QOtjdMqA0ouq9vxAglgcvu8En4d](https://jlqyxzzvbk.feishu.cn/docx/QOtjdMqA0ouq9vxAglgcvu8En4d)
+> 来源：`https://jlqyxzzvbk.feishu.cn/docx/QOtjdMqA0ouq9vxAglgcvu8En4d`
 
-# **方案一：中英文双字幕版本**
+# 方案一：中英文双字幕版本
 
 ## 1、案例效果
 
@@ -22,13 +23,13 @@
 
 根据文案生成数字人口播视频
 
-1）heygen生成视频原声是英文
+1）`heygen`生成视频原声是英文
 
 2）生成双语字幕，可以选择手机版本剪映或者YouTube
 
 YouTube上下载双语字幕需要安装插件：YouTube™ 双字幕
 
-https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm
+`https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm`
 
 注意上传的视频需要横屏模式。
 

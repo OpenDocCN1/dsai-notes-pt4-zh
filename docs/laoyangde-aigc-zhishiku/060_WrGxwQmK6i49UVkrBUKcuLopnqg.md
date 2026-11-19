@@ -1,52 +1,39 @@
+
 # AI写小说-NineS AI仿写《桃花马上请长缨》
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/WiwDdR8wPoO0mExXWnTcg5TEn8f](https://rq547mr4oez.feishu.cn/docx/WiwDdR8wPoO0mExXWnTcg5TEn8f)
 
-# 一、前言
+## 一、前言
 
 > 各位小伙伴好~🎉🎉🎉NineS-AI与君又见😬。
-
+>
 > 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
-
-> **经过10月份的α测****试，小伙伴们都拿到了很多****好**结果（太多就不一一发图了），但是产品还是不够完善
-
+>
+> 经过10月份的α测试，小伙伴们都拿到了很多好结果（太多就不一一发图了），但是产品还是不够完善
+>
 > 所以第二期，在第一期的基础之上增加大量的优化和更改~
-
-> **如今，部分11月内部测试的效果一一展现给大家~~**期待小伙伴们的尝试（送大量字数福利~~）
+>
+> 如今，部分11月内部测试的效果一一展现给大家~~期待小伙伴们的尝试（送大量字数福利~~）
 
 ---
 
 以下是题材类Prompt，无私奉献~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
-
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
-
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
-
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
-
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
-
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
-
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
-
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
-
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
-
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
-
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
-
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
-
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
-
-1.  [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
-
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -54,68 +41,62 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+PS：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
 **原始出处：**
 
 ![](img/29f9d96fd2f00b69b7ae19d15c78f275.png)
 
-#
-
-# 二、内测结果反馈（一部分结果截图，还有很多）
-
-
-
+## 二、内测结果反馈（一部分结果截图，还有很多）
 
 ![](img/ebb39a744ae5c7dae2cace00dcd5e888.png)
 
-# 三、当前状态（以作家灵感为始，破程序想象之梏。）
+## 三、当前状态（以作家灵感为始，破程序想象之梏。）
 
-1.  **产品理念：**
+### 产品理念：
 
-1.  以作家灵感为始，破程序想象之梏。奉行长期价值主义~
+以作家灵感为始，破程序想象之梏。奉行长期价值主义~
 
-1.  最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
+最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
 
-1.  **功能一览**
+### 功能一览
 
-+   **AI拆书：**
+- **AI拆书：**
 
-+   短篇的情节节奏，情绪上下文怎么快速理解？
+  短篇的情节节奏，情绪上下文怎么快速理解？
 
-+   500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
+  500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
 
-+   **AI创作**
+- **AI创作**
 
-+   短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
+  短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
 
-+   润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
+  润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你，让你的创作灵感源源不断。
 
-+   **AI助手**
+- **AI助手**
 
-+   高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
+  高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
 
-1.  **我们的优势**
+### 我们的优势
 
-1.  质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
+质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
 
-1.  重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
+重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
 
-1.  高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
+高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
 
-1.  **产品进度**
+### 产品进度
 
-1.  种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
+种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
 
-1.  内测时间（群无条件邀请测试）**开始时间：2024-11-22晚19.3**0    结束时间：2024-12-30
+内测时间（群无条件邀请测试）开始时间：2024-11-22晚19:30    结束时间：2024-12-30
 
-# 四、仿写**案例~**
+## 四、仿写案例~
 
 ### 仿写思路：
 
-+   4个调试AI（集齐市面最强大的写作AI，包括我们微调版本）
-
-+   二十种通用风格（长篇、短篇、短剧~）
+- 4个调试AI（集齐市面最强大的写作AI，包括我们微调版本）
+- 二十种通用风格（长篇、短篇、短剧~）
 
 ### 拆书分析（还有很多拆书内容就不一一展示）
 
@@ -278,31 +259,56 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ### 微调版（字数1101）
 
-```
-**第一章**
+
+
+# 第一章
+
 文熙居的风灯轻轻摇曳，昏黄的灯光透过雕花窗棂洒在屋内，映照出一片静谧的氛围。
+
 宋惜惜端坐在檀木椅上，双手交叠放在膝头，眼神中带着一丝不易察觉的期待与不安。
+
 今晚，她等待着新婚丈夫战北望的到来，心中却充满了复杂的情绪。
+
 终于，门外传来轻微的脚步声，战北望推门而入，俊美的面容在灯光下显得格外威武。
+
 他走到宋惜惜面前，语气平静而坚定：“惜惜，有件事我必须告诉你。”
+
 宋惜惜的心猛地一沉，她抬起头，目光与战北望对视，声音微微颤抖：“是什么事？”
+
 战北望没有回避，直言道：“易昉将军即将进门，成为我的平妻。”
+
 宋惜惜的心如被重锤击打，她皱起眉头，疑惑地问道：“平妻？这到底是怎么回事？”
+
 战北望的眼神中闪过一丝无奈，但语气依然坚定：“易昉与我有深厚的感情基础，她是我心中的重要之人。”
+
 宋惜惜的心中涌起一股强烈的不甘与愤怒，她想起与战北望结婚时的承诺，那是一场由皇帝亲自赐婚的婚礼，他曾许诺会对她好，如今却变成了空话。
+
 她的眼底闪过一抹泪光，但很快被坚定的神情所取代：“你曾对我许下诺言，如今却要迎娶他人，这让我如何甘心？”
+
 战北望的神色有些复杂，他低声说道：“我知道这对你不公平，但我确实爱上了易昉，我希望你能成全我们。”
+
 宋惜惜的心如刀绞，她质问道：“你有没有问过我的父母，他们是否同意这门亲事？”
+
 战北望沉默片刻，缓缓开口：“易昉已经与母亲交谈过，她们之间达成了一致。”
+
 宋惜惜的心彻底凉了，她回想起自己曾经为了易昉的病痛付出的努力，甚至不惜耗费家中的珍贵药材，如今却换来这样的结果。
+
 她的心中充满了不平衡感，愤怒的情绪如同火山般喷发而出：“我为她治病，付出了多少心血，她却如此对我，这公平吗？”
+
 战北望的眼神中闪过一丝愧疚，但他依然坚定地说道：“我知道你不容易，但我希望你能理解，易昉对我而言非常重要。”
+
 宋惜惜冷笑一声，眼中闪烁着坚定的光芒：“我理解不了，我只希望你能给我一个交代。”
+
 战北望的语气中带着一丝恳求：“我希望你能成全大局，这样对我们三人都好。”
+
 宋惜惜的眸中闪过一丝冷冽，她冷冷地说道：“既然如此，我希望见一见易昉，当面问清楚这一切。”
+
 战北望的脸色微变，他摇了摇头：“易昉的性格不屑一顾，她不会见你的。”
+
 宋惜惜的心中涌起一股不服输的念头，她坚定地说道：“我不在乎她是否见我，我要维护自己的尊严和立场。”
+
 战北望的神色变得严肃，他深知宋惜惜的坚韧与智慧，但也明白她的决心不容小觑：“惜惜，你真的要这么做吗？”
+
 宋惜惜站起身来，目光坚定而清澈：“是的，我必须这么做。无论结果如何，我都要为自己争取一次机会。”
+
 战北望沉默了片刻，最终点了点头：“好吧，我会安排你们见面。”
-```

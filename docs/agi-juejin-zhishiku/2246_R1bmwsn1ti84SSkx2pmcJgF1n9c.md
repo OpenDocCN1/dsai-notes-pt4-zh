@@ -1,3 +1,4 @@
+
 # 2024中国AI医疗产业研究报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/G84ZdcnUGomEz4xCVhrcF3q4nRR](https://agijuejin.feishu.cn/docx/G84ZdcnUGomEz4xCVhrcF3q4nRR)

@@ -1,34 +1,35 @@
+
 # coze-studio开源版部署教程【Linux】
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/BLpkd9nmCogbxixuBivcMjjGn5f](https://v11enp9ok1h.feishu.cn/docx/BLpkd9nmCogbxixuBivcMjjGn5f)
 
 Coze开源地址：https://github.com/coze-dev/coze-studio
 
-# 大半夜的让不让人睡觉了？
+## 大半夜的让不让人睡觉了？
 
 大半夜的天塌了，本来已经躺好准备睡觉了，一看朋友圈天塌了
 
-**coze开源了？**
+coze开源了？
 
 ![](img/0aaabe2bae6f5f47b4a20a7609ca4ceb.png)
 
-# coze开源，意味着什么？
+## coze开源，意味着什么？
 
-开源意味着**免费**
+开源意味着免费
 
-**本地化部署的优势都有所**体现，例如隐私和数据安全得到保障
+本地化部署的优势都有所体现，例如隐私和数据安全得到保障
 
 可以更加深入的学习企业级别的Ai应用的架构设计和系统提示词
 
-可以基于开源版本，**搭建自己想要的Ai应用**
+可以基于开源版本，搭建自己想要的Ai应用
 
 ![](img/68c6afd67030acaa71319ad2e8e9d56f.png)
 
-# 部署方法：用云服务器来云部署Coze Studio
+## 部署方法：用云服务器来云部署Coze Studio
 
-接下来就告诉大家如何用云服务器来部署我们的Coze Studio:
+接下来就告诉大家如何用云服务器来部署我们的Coze Studio：
 
-## 万物起源：先来个云服务
+### 万物起源：先来个云服务
 
 部署一个项目，我们需要一个云服务器
 
@@ -36,7 +37,7 @@ Coze开源地址：https://github.com/coze-dev/coze-studio
 
 https://www.aliyun.com/product/ecs
 
-找到**产品**中的**云服务器ECS**
+找到产品中的云服务器ECS
 
 ![](img/58e7276710c99d4d1299e64ce940a509.png)
 
@@ -52,7 +53,7 @@ https://www.aliyun.com/product/ecs
 
 ![](img/6b9c6db56228e5576b4faf64b3deb2ac.png)
 
-**充值成功**后返回上个页面点击“确认下单”，等待跳转至如下页面，点击“远程连接”
+充值成功后返回上个页面点击“确认下单”，等待跳转至如下页面，点击“远程连接”
 
 ![](img/2d90b1680b2ad4e99942276ff5bb4f93.png)
 
@@ -64,7 +65,7 @@ https://www.aliyun.com/product/ecs
 
 ![](img/4a41a05134fe855c4eb7d05a93de3a9c.png)
 
-## 在云服务上部署[coze-studio](https://github.com/coze-dev/coze-studio/tree/main)
+### 在云服务上部署`coze-studio`
 
 直接在云服务上的Linux系统上跑就好了：
 
@@ -72,7 +73,7 @@ https://www.aliyun.com/product/ecs
 
 ```
 # 更新系统
-apt update &amp;&amp; apt upgrade -y
+apt update && apt upgrade -y
 
 # 安装必要工具
 apt install -y curl git vim
@@ -92,7 +93,7 @@ docker-compose --version
 
 ![](img/51d50d74bd2e836ef5d1b6a3c9010e39.png)
 
-### 获取 Coze Studio 源码
+#### 获取 Coze Studio 源码
 
 复制粘贴以下代码，回车运行:
 
@@ -103,7 +104,7 @@ cd coze-studio
 
 ![](img/ff558e015d378d12a5ad2de724b5b256.png)
 
-### 配置模型（以火山方舟 doubao-seed-1.6 为例）
+#### 配置模型（以火山方舟 doubao-seed-1.6 为例）
 
 ```
 # 复制模型模板
@@ -115,15 +116,15 @@ vim backend/conf/model/ark_doubao-seed-1.6.yaml
 
 ![](img/b9263b9ef784ed0f6b9eac314b923457.png)
 
-1.  按 i 进入编辑模式(英文状态下按键盘i即可)，修改以下字段：
+1. 按 `i` 进入编辑模式(英文状态下按键盘`i`即可)，修改以下字段：
 
 ![](img/d3b1e991315e6e76d7a4da722704f2db.png)
 
-1.  id: 填一个非 0 的唯一整数，必须是非 0 的整数，且全局唯一。
+1. `id`: 填一个非 0 的唯一整数，必须是非 0 的整数，且全局唯一。
 
-1.  meta.conn_config.api_key:[ 在线模型服务的 API K](https://www.volcengine.com/docs/82379/1541594)ey，在本示例中为火山方舟的 API Key，获取方式可参考获取火山方舟 API Key。
+1. `meta.conn_config.api_key`: [在线模型服务的 API Key](https://www.volcengine.com/docs/82379/1541594)，在本示例中为火山方舟的 API Key，获取方式可参考获取火山方舟 API Key。
 
-1.  meta.conn_config.model: 在线模型服务的 [model ID，在本示例中](https://www.volcengine.com/docs/82379/1099522)为火山方舟 doubao-seed-1.6 模型接入点的 Endpoint ID，获取方式可参考获取 Endpoint ID。
+1. `meta.conn_config.model`: 在线模型服务的 [model ID](https://www.volcengine.com/docs/82379/1099522)，在本示例中为火山方舟 doubao-seed-1.6 模型接入点的 Endpoint ID，获取方式可参考获取 Endpoint ID。
 
 ![](img/512fd39be3f7c946c32c1746822c6e8a.png)
 
@@ -135,18 +136,18 @@ vim backend/conf/model/ark_doubao-seed-1.6.yaml
 
 ![](img/099728f218ea5204e438187655cbd4f2.png)
 
-1.  按 Esc，输入 :wq 保存退出，回到这个页面
+1. 按 `Esc`，输入 `:wq` 保存退出，回到这个页面
 
 ![](img/2fdce064cba8aec69397c0fbd26e28ff.png)
 
-### 启动 Coze Studio
+#### 启动 Coze Studio
 
 复制回车
 
 ```
 cd docker
 cp .env.example .env
-sudo docker compose --profile &#x27;*&#x27; up -d
+sudo docker compose --profile '* *' up -d
 ```
 
 ![](img/3f4e77003788e2ed21079111d6ab38f0.png)
@@ -175,7 +176,7 @@ sudo docker compose --profile &#x27;*&#x27; up -d
 
 ![](img/7cc687d2eaeccb40122a9b4d6fd736d1.png)
 
-## 关闭示例，退剩下的金额
+### 关闭示例，退剩下的金额
 
 大家玩完后，千万记得停止，并且释放，要不会一直计费！！！
 
@@ -193,9 +194,9 @@ sudo docker compose --profile &#x27;*&#x27; up -d
 
 ![](img/a6121a86be1acba15427ca29010ca7e2.png)
 
-# 写在后面：自己的感触
+## 写在后面：自己的感触
 
-这**件事情本身注定会掀起一阵波浪，**从部署到现在凌晨5:00，越到后面越兴奋，就比如其实我们可以在Github上发现，他们开源了coze中的两个核心项目：
+这件事情本身注定会掀起一阵波浪，从部署到现在凌晨5:00，越到后面越兴奋，就比如其实我们可以在Github上发现，他们开源了coze中的两个核心项目：
 
 +   扣子开发平台：https://github.com/coze-dev/coze-studio
 
@@ -207,13 +208,13 @@ sudo docker compose --profile &#x27;*&#x27; up -d
 
 +   插件会比线上版要少，但是插件可以自己写，而且核心功能都在，搭建流程也特别顺滑
 
-在README.md中也很贴心的提供了功能清单：
+在`README.md`中也很贴心的提供了功能清单：
 
 ![](img/9fbdfdd787c553e8469f24d3b24d34f9.png)
 
 最后引用Richard Stallman的一句话作为结尾：
 
-** **"自由软件运动的目标是创造一个没有边界的世界，在这个世界中，任何人都可以自由地使用、修改和分发软件。"
+> "自由软件运动的目标是创造一个没有边界的世界，在这个世界中，任何人都可以自由地使用、修改和分发软件。"
 
 OK，这就是用云服务部署coze的具体内容了。
 

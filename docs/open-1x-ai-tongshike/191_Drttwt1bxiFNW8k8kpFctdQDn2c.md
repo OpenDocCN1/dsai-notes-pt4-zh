@@ -1,16 +1,16 @@
-# task03  LLm与微调入门
 
-> 来源：[https://datawhaler.feishu.cn/docx/Qyeod3lQBo4aKjxHpXDcvdrTnje](https://datawhaler.feishu.cn/docx/Qyeod3lQBo4aKjxHpXDcvdrTnje)
+# task03 LLM与微调入门
+
+> 来源：`https://datawhaler.feishu.cn/docx/Qyeod3lQBo4aKjxHpXDcvdrTnje`
 
 ![](img/0b960f94ebf191d6d1278c2981427dcc.png)
 
-> **教程****创作****者说：**
+> **教程创作者说：**
 
 > 本节主要介绍大语言模型和微调，给大家普及需要的前置知识：
 
-1.  大语言模型是什么？
-
-1.  微调又是什么？
+1. 大语言模型是什么？
+2. 微调又是什么？
 
 >
 
@@ -22,7 +22,7 @@
 
 > 下节我们详细解读：
 
-> [task04 如何做好一个微调工作](https://datawhaler.feishu.cn/wiki/Pbw7wrZ5kiNtCykrgjyc1bh8nBd)！
+> [`task04 如何做好一个微调工作`](`https://datawhaler.feishu.cn/wiki/Pbw7wrZ5kiNtCykrgjyc1bh8nBd`)！
 
 # LLM介绍&技术选型
 
@@ -30,39 +30,39 @@
 
 ### 大语言模型的概念
 
-**大语言模型（英文：Large La**nguage Model，缩写LLM），也称大型语言模型，是一种人工智能模型，旨在理解和生成人类语言。
+大语言模型（英文：`Large Language Model`，缩写`LLM`），也称大型语言模型，是一种人工智能模型，旨在理解和生成人类语言。
 
-**通****常**，**大语言模型 (**LLM) 指包含数十亿（Billion或更多）参数的语言模型，这些模型在大量的文本数据上进行训练，例如国外的有GPT-3 、GPT-4、PaLM 、Galactica 和 LLaMA 等，国内的有ChatGLM、文心一言、通义千问、讯飞星火等。
+通常，`大语言模型（LLM）`指包含数十亿（Billion或更多）参数的语言模型，这些模型在大量的文本数据上进行训练，例如国外的有`GPT-3`、`GPT-4`、`PaLM`、`Galactica` 和 `LLaMA` 等，国内的有`ChatGLM`、`文心一言`、`通义千问`、`讯飞星火`等。
 
-### **大模型的能力和特点**
+### 大模型的能力和特点
 
-1.  **大模型的能力**
+1. 大模型的能力
 
-大语言模型（LLM）与以前的预训练语言模型（PLM）的主要区别在于其涌现能力。这种能力在小型模型中不明显，但在大型模型中显著。例如：
+大语言模型（`LLM`）与以前的预训练语言模型（`PLM`）的主要区别在于其涌现能力。这种能力在小型模型中不明显，但在大型模型中显著。例如：
 
-+   **上下文学习**：首次由GPT-3引入，允许模型在提供自然语言指令或多个任务示例的情况下，通过理解上下文并生成相应输出来执行任务。
++ 上下文学习：首次由`GPT-3`引入，允许模型在提供自然语言指令或多个任务示例的情况下，通过理解上下文并生成相应输出来执行任务。
 
-+   **指令遵循**：通过指令微调，LLM可以根据任务指令执行未见过的任务，展示出强大的泛化能力。
++ 指令遵循：通过指令微调，`LLM`可以根据任务指令执行未见过的任务，展示出强大的泛化能力。
 
-+   **逐步推理**：通过"**思维链**（Chain of Thought, CoT）"策略，LLM能够解决多步推理任务，例如数学问题。
++ 逐步推理：通过"`思维链`（`Chain of Thought`，`CoT`）"策略，`LLM`能够解决多步推理任务，例如数学问题。
 
-1.  **大模型的特点**
+2. 大模型的特点
 
-+   **巨大的规模**：参数规模达数十亿甚至数千亿，使其能捕捉更多语言知识和复杂语法结构。
++ 巨大的规模：参数规模达数十亿甚至数千亿，使其能捕捉更多语言知识和复杂语法结构。
 
-+   **预训练和微调**：在大规模无标签文本数据上预训练，然后通过有标签数据微调，适应特定任务。
++ 预训练和微调：在大规模无标签文本数据上预训练，然后通过有标签数据微调，适应特定任务。
 
-+   **上下文感知**：具备强大的上下文感知能力，能够理解和生成依赖前文的文本内容。
++ 上下文感知：具备强大的上下文感知能力，能够理解和生成依赖前文的文本内容。
 
-+   **多语言支持**：支持多种语言，促进跨文化和跨语言的应用。
++ 多语言支持：支持多种语言，促进跨文化和跨语言的应用。
 
-+   **多模态支持**：一些LLM支持文本、图像和语音的多模态数据。
++ 多模态支持：一些`LLM`支持文本、图像和语音的多模态数据。
 
-+   **涌现能力**：在大规模模型中表现出明显的性能提升，能处理更复杂的任务。
++ 涌现能力：在大规模模型中表现出明显的性能提升，能处理更复杂的任务。
 
-+   **多领域应用**：广泛应用于文本生成、自动翻译、信息检索、摘要生成、聊天机器人等多个领域。
++ 多领域应用：广泛应用于文本生成、自动翻译、信息检索、摘要生成、聊天机器人等多个领域。
 
-+   **伦理和风险问题**：需要谨慎处理生成有害内容、隐私问题和认知偏差等伦理和风险问题。
++ 伦理和风险问题：需要谨慎处理生成有害内容、隐私问题和认知偏差等伦理和风险问题。
 
 ## 1.2 大语言模型小说撰写测试
 
@@ -70,7 +70,7 @@
 
 > 写一个现代女性穿越到中国唐朝后与将军发生的爱情故事，请保证故事完整性，字数控制在800字左右。注意：不要重复！
 
-> Qwen1.5-4b模型
+> `Qwen1.5-4b`模型
 
 > story：
 
@@ -90,9 +90,9 @@
 
 > 婚礼那天，长安城内张灯结彩，喜气洋洋，这对跨越时空的恋人终成眷属。他们的故事，成为了后人口中的佳话，流传千古，见证了真爱超越时间与空间的界限，也证明了智慧与勇气能够跨越时代，照亮彼此的世界。
 
-> Qwen 网页版模型
+> `Qwen` 网页版模型
 
-> https://tongyi.aliyun.com/qianwen
+> `https://tongyi.aliyun.com/qianwen`
 
 > story：
 
@@ -116,9 +116,9 @@
 
 > 林雨晴与李渊的故事，不仅是一场跨越时空的爱情传奇，更是一次关于勇气、智慧与爱的美丽邂逅。它告诉我们，真爱无界，勇敢追梦，终能收获属于自己的幸福。
 
-> 智谱清言 网页版模型
+> `智谱清言` 网页版模型
 
-> https://chatglm.cn/main/alltoolsdetail
+> `https://chatglm.cn/main/alltoolsdetail`
 
 > story：
 
@@ -142,9 +142,9 @@
 
 > 他们的爱情故事传为佳话，流传至今。林雅和李靖用自己的勇气和智慧，证明了爱情的力量。他们的故事告诉我们，无论身处何时何地，真爱都能战胜一切困难。
 
-> GPT4模型网页版
+> `GPT4`模型网页版
 
-> https://chatgpt.com/
+> `https://chatgpt.com/`
 
 > story：
 
@@ -168,55 +168,55 @@
 
 > 穿越虽然给她带来了伤痛，但也让她明白，奋不顾身的爱情，原来可以如此美好。虽然李安已经走了，但他们的爱情和记忆永远烙印在她的心中。
 
-## 1.3 **推荐尝试的微调模型**
+## 1.3 推荐尝试的微调模型
 
-internlm2-20b-chat，internlm2-7b-chat，
+`internlm2-20b-chat`，`internlm2-7b-chat`，
 
-**Qw****en**[2](https://huggingface.co/Qwen/Qwen1.5-32B-Chat)-7B-Instruct, Qwen2-1.5B-Instruct, Qwen1.5-32B-Chat (Qwen2-0.5B、Qwen2-1.5B, qwen1.5的4B，7B，14B，32B)
+`Qwen`[`2`](`https://huggingface.co/Qwen/Qwen1.5-32B-Chat`)-`7B-Instruct`, `Qwen2-1.5B-Instruct`, `Qwen1.5-32B-Chat` (`Qwen2-0.5B`、`Qwen2-1.5B`, `qwen1.5`的`4B`、`7B`、`14B`、`32B`)
 
-[**glm-4-9b-chat**](https://huggingface.co/THUDM/glm-4-9b-chat)**, ****g**lm-4-9b-chat-1m, glm-4-9b
+[`glm-4-9b-chat`](`https://huggingface.co/THUDM/glm-4-9b-chat`)`,` `glm-4-9b-chat-1m`, `glm-4-9b`
 
-Llama3-8B-Chinese-Chat-v2.1,
+`Llama3-8B-Chinese-Chat-v2.1`,
 
-iFlytekSpark-13B, i-flytek-spark-13-b-model-gpu
+`iFlytekSpark-13B`, `i-flytek-spark-13-b-model-gpu`
 
-### **模型选型链接**
+### 模型选型链接
 
-https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
+`https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard`
 
-https://huggingface.co/spaces/BAAI/open_cn_llm_leaderboard
+`https://huggingface.co/spaces/BAAI/open_cn_llm_leaderboard`
 
 # 微调介绍
 
-## 2.1 微调技术分享 [参考自 👸号 follow_bobo]
+## 2.1 微调技术分享 [参考自 👸号 `follow_bobo`]
 
 [PS: 此部分补充内容较多, 会讲的时候简略下, 资料供参赛者自行阅读查看]
 
-### **什么是模型****微调****？**
+### 什么是模型微调？
 
 ![](img/8cca8f8e1cb4e1dad479519f57694170.png)
 
-相当于给你一个预训练模型（Pre-trained model），基于这个模型微调（Fine Tune）。
+相当于给你一个预训练模型（`Pre-trained model`），基于这个模型微调（`Fine Tune`）。
 
-**预训练模型****就是**已经用数据集训练好了的模型。
+**预训练模型就是**已经用数据集训练好了的模型。
 
 ### 两种 Finetune 范式
 
-1.  **增量预训练微调 ****(****C**ontinue PreTraining)
+1. 增量预训练微调（`Continue PreTraining`）
 
 使用场景：让基座模型学习到一些新知识，如某个垂类领域的常识
 
 训练数据：文章、书籍、代码等
 
-1.  **指令跟随微调 (****S**upervised Finetuning)
+2. 指令跟随微调（`Supervised Finetuning`）
 
 使用场景：让模型学会对话模板，根据人类指令进行对话
 
 训练数据：高质量的对话、问答数据
 
-### **为什么****要****微调****？**
+### 为什么要微调？
 
-相对于从头开始训练(Training a model from scatch)，微调可以省去大量计算资源和计算时间，提高了计算效率,甚至提高准确率。
+相对于从头开始训练（`Training a model from scratch`），微调可以省去大量计算资源和计算时间，提高了计算效率,甚至提高准确率。
 
 **普通预训练模型**的特点是：用了大型数据集做训练，已经具备了提取浅层基础特征和深层抽象特征的能力。
 
@@ -228,7 +228,7 @@ https://huggingface.co/spaces/BAAI/open_cn_llm_leaderboard
 
 **使用微调**：避免了上述可能存在的问题。
 
-### **什么****情况****下使用****微调？**
+### 什么情况下使用微调？
 
 （1） 你要使用的数据集和预训练模型的数据集相似
 
@@ -240,21 +240,21 @@ https://huggingface.co/spaces/BAAI/open_cn_llm_leaderboard
 
 （4）计算资源太少。
 
-### **不同****数据集****下使用****微调**
+### 不同数据集下使用微调
 
-+   数据集1  - 数据量少，但数据相似度非常高在这种情况下，我们所做的只是修改最后几层或最终的softmax图层的输出类别。
++ 数据集1 - 数据量少，但数据相似度非常高 在这种情况下，我们所做的只是修改最后几层或最终的`softmax`图层的输出类别。
 
-+    数据集2 - 数据量少，数据相似度低在这种情况下，我们可以冻结预训练模型的初始层（比如k层），并再次训练剩余的（n-k）层。由于新数据集的相似度较低，因此根据新数据集对较高层进行重新训练具有重要意义。
++ 数据集2 - 数据量少，数据相似度低 在这种情况下，我们可以冻结预训练模型的初始层（比如`k`层），并再次训练剩余的（`n-k`）层。由于新数据集的相似度较低，因此根据新数据集对较高层进行重新训练具有重要意义。
 
-+    数据集3  - 数据量大，数据相似度低在这种情况下，由于我们有一个大的数据集，我们的神经网络训练将会很有效。但是，由于我们的数据与用于训练我们的预训练模型的数据相比有很大不同。使用预训练模型进行的预测不会有效。因此，最好根据你的数据从头开始训练神经网络（Training from scatch）。
++ 数据集3 - 数据量大，数据相似度低 在这种情况下，由于我们有一个大的数据集，我们的神经网络训练将会很有效。但是，由于我们的数据与用于训练我们的预训练模型的数据相比有很大不同。使用预训练模型进行的预测不会有效。因此，最好根据你的数据从头开始训练神经网络（`Training from scratch`）。
 
-+    数据集4  - 数据量大，数据相似度高这是理想情况。在这种情况下，预训练模型应该是最有效的。使用模型的最好方法是保留模型的体系结构和模型的初始权重。然后，我们可以使用在预先训练的模型中的权重来重新训练该模型。
++ 数据集4 - 数据量大，数据相似度高 这是理想情况。在这种情况下，预训练模型应该是最有效的。使用模型的最好方法是保留模型的体系结构和模型的初始权重。然后，我们可以使用在预先训练的模型中的权重来重新训练该模型。
 
-### **微调****指导事项**
+### 微调指导事项
 
-1.通常的做法是截断预先训练好的网络的最后一层（softmax层），并用与我们自己的问题相关的新的softmax层替换它。例如，ImageNet上预先训练好的网络带有1000个类别的softmax图层。如果我们的任务是对10个类别的分类，则网络的新softmax层将由10个类别组成，而不是1000个类别。然后，我们在网络上运行预先训练的权重。确保执行交叉验证，以便网络能够很好地推广。
+1.通常的做法是截断预先训练好的网络的最后一层（`softmax`层），并用与我们自己的问题相关的新的`softmax`层替换它。例如，`ImageNet`上预先训练好的网络带有1000个类别的`softmax`图层。如果我们的任务是对10个类别的分类，则网络的新`softmax`层将由10个类别组成，而不是1000个类别。然后，我们在网络上运行预先训练的权重。确保执行交叉验证，以便网络能够很好地推广。
 
-2.使用较小的学习率来训练网络。由于我们预计预先训练的权重相对于随机初始化的权重已经相当不错，我们不想过快地扭曲它们太多。通常的做法是使初始学习率比用于从头开始训练（Training from scratch）的初始学习率小10倍。
+2.使用较小的学习率来训练网络。由于我们预计预先训练的权重相对于随机初始化的权重已经相当不错，我们不想过快地扭曲它们太多。通常的做法是使初始学习率比用于从头开始训练（`Training from scratch`）的初始学习率小10倍。
 
 3. 如果数据集数量过少，我们进来只训练最后一层，如果数据集数量中等，冻结预训练网络的前几层的权重也是一种常见做法。
 
@@ -264,165 +264,171 @@ https://huggingface.co/spaces/BAAI/open_cn_llm_leaderboard
 
 微调大型语言模型通常是为了使模型在特定任务上表现得更好。
 
-这次我们将主要使用Dat**aWhale的Self-**LLM来微调Qwen1.5-4B模型
+这次我们将主要使用`DataWhale`的`Self-LLM`来微调`Qwen1.5-4B`模型
 
-### Self-LLM （Torch Huggingface Peft）
+### Self-LLM （`Torch` `Huggingface` `Peft`）
 
-(**开源大模型食用指南, ****https://github.com/dat**awhalechina/self-llm)
+（`开源大模型食用指南`，`https://github.com/datawhalechina/self-llm`）
 
-**介绍**: Huggingface提供了一个基于PyTorch的transformers库，它包含了大量预训练模型和微调工具。用户可以使用这个库来加载预训练模型，并使用PyTorch框架进行微调。
+**介绍**: `Huggingface`提供了一个基于`PyTorch`的`transformers`库，它包含了大量预训练模型和微调工具。用户可以使用这个库来加载预训练模型，并使用`PyTorch`框架进行微调。
 
-Self-LLM是一个围绕开源大模型、针对国内初学者、基于 AutoDL 平台的中国宝宝专属大模型教程，针对各类开源大模型提供包括环境配置、本地部署、高效微调等技能在内的全流程指导，简化开源大模型的部署、使用和应用流程，让更多的普通学生、研究者更好地使用开源大模型，帮助开源、自由的大模型更快融入到普通学习者的生活中。该项目的主要内容包括：
+`Self-LLM`是一个围绕开源大模型、针对国内初学者、基于 `AutoDL` 平台的中国宝宝专属大模型教程，针对各类开源大模型提供包括环境配置、本地部署、高效微调等技能在内的全流程指导，简化开源大模型的部署、使用和应用流程，让更多的普通学生、研究者更好地使用开源大模型，帮助开源、自由的大模型更快融入到普通学习者的生活中。该项目的主要内容包括：
 
-1.  基于 AutoDL 平台（可扩展，例如阿里云）的开源 LLM 环境配置指南，针对不同模型要求提供不同的详细环境配置步骤；
 
-1.  针对国内外主流开源 LLM 的部署使用教程，包括 LLaMA、ChatGLM、InternLM 等；
 
-1.  开源 LLM 的部署应用指导，包括命令行调用、在线 Demo 部署、LangChain 框架集成等；
+1. 基于 `AutoDL` 平台（可扩展，例如阿里云）的开源 `LLM` 环境配置指南，针对不同模型要求提供不同的详细环境配置步骤；
 
-1.  开源 LLM 的全量微调、高效微调方法，包括分布式全量微调、LoRA、ptuning 等。
+1. 针对国内外主流开源 `LLM` 的部署使用教程，包括 `LLaMA`、`ChatGLM`、`InternLM` 等；
 
-**优点**:
+1. 开源 `LLM` 的部署应用指导，包括命令行调用、在线 `Demo` 部署、`LangChain` 框架集成等；
 
-+   社区支持强大，有大量的文档和教程。
+1. 开源 `LLM` 的全量微调、高效微调方法，包括分布式全量微调、`LoRA`、`ptuning` 等。
 
-+   支持多种预训练模型，易于加载和使用。
+### 优点
 
-+   灵活的API，可以自定义微调过程。
++ 社区支持强大，有大量的文档和教程。
 
-**缺点**:
++ 支持多种预训练模型，易于加载和使用。
 
-+   对于大型模型，计算资源要求较高。
++ 灵活的 `API`，可以自定义微调过程。
 
-+   需要一定的PyTorch和深度学习知识。
+### 缺点
+
++ 对于大型模型，计算资源要求较高。
+
++ 需要一定的 `PyTorch` 和深度学习知识。
 
 ### 其他微调框架介绍
 
-不同的框架提供了不同的工具和方法来进行微调。下面是对XTuner和LLaMA-Factory这2种框架的简要介绍，以及它们的异同和优缺点。
+不同的框架提供了不同的工具和方法来进行微调。下面是对 `XTuner` 和 `LLaMA-Factory` 这 2 种框架的简要介绍，以及它们的异同和优缺点。
 
 #### 异同点
 
-+   **相同点**: 所有这些框架都旨在提高大型语言模型在特定任务上的性能，都提供了微调预训练模型的能力。
++ **相同点**: 所有这些框架都旨在提高大型语言模型在特定任务上的性能，都提供了微调预训练模型的能力。
 
-+   **不同点**: 它们在微调方法、易用性、社区支持、特定功能（如多模态支持）和目标用户群体方面有所不同。
++ **不同点**: 它们在微调方法、易用性、社区支持、特定功能（如多模态支持）和目标用户群体方面有所不同。
 
 #### XTuner
 
-**介绍**: XTuner 是一个**高效、灵活、全能**的轻量化大模型微调工具库，提供了多种微调策略，如LoRA和QLoRA，并且支持多模态数据。
+##### 介绍
 
-**高效**
+`XTuner` 是一个高效、灵活、全能的轻量化大模型微调工具库，提供了多种微调策略，如 `LoRA` 和 `QLoRA`，并且支持多模态数据。
 
-+   支持大语言模型 LLM、多模态图文模型 VLM 的预训练及轻量级微调。XTuner 支持在 8GB 显存下微调 7B 模型，同时也支持多节点跨设备微调更大尺度模型（70B+）。
+##### 高效
 
-+   自动分发高性能算子（如 FlashAttention、Triton kernels 等）以加速训练吞吐。
++ 支持大语言模型 `LLM`、多模态图文模型 `VLM` 的预训练及轻量级微调。`XTuner` 支持在 8GB 显存下微调 7B 模型，同时也支持多节点跨设备微调更大尺度模型（70B+）。
 
-+   兼容 [DeepSpeed](https://github.com/microsoft/DeepSpeed) 🚀，轻松应用各种 ZeRO 训练优化策略。
++ 自动分发高性能算子（如 `FlashAttention`、`Triton` 等）以加速训练吞吐。
 
-**灵活**
++ 兼容 [`DeepSpeed`](https://github.com/microsoft/DeepSpeed) 🚀，轻松应用各种 `ZeRO` 训练优化策略。
 
-+   [支持多种大语言模](https://huggingface.co/internlm)型[，包括但不限于 Inte](https://huggingface.co/mistralai)r[nLM、Mix](https://huggingface.co/meta-llama)t[ral-8x7](https://huggingface.co/THUDM)B[、Lla](https://huggingface.co/Qwen)m[a 2、Chat](https://huggingface.co/baichuan-inc)GLM、Qwen、Baichuan。
+##### 灵活
 
-+   支持多模态图文模型 LLaVA 的预训练与微调。利用 XTuner 训得模型 LLaVA-InternLM2-20B 表现优异。
++ 支持多种大语言模型，包括但不限于 [`InternLM`](https://huggingface.co/internlm)、[`Mixtral`](https://huggingface.co/mistralai)、`Llama 2`、`ChatGLM`、`Qwen`、`Baichuan`。
 
-+   精心设计的数据管道，兼容任意数据格式，开源数据或自定义数据皆可快速上手。
++ 支持多模态图文模型 `LLaVA` 的预训练与微调。利用 `XTuner` 训得模型 `LLaVA-InternLM2-20B` 表现优异。
 
-+   支持 [QLoRA](http://arxiv.org/abs/2305.14314)、[LoRA](http://arxiv.org/abs/2106.09685)、全量参数微调等多种微调算法，支撑用户根据具体需求作出最优选择。
++ 精心设计的数据管道，兼容任意数据格式，开源数据或自定义数据皆可快速上手。
 
-**全能**
++ 支持 [`QLoRA`](http://arxiv.org/abs/2305.14314)、[`LoRA`](http://arxiv.org/abs/2106.09685)、全量参数微调等多种微调算法，支撑用户根据具体需求作出最优选择。
 
-+   支持增量预训练、指令微调与 Agent 微调。
+##### 全能
 
-+   预定义众多开源对话模版，支持与开源或训练所得模型进行对话。
++ 支持增量预训练、指令微调与 `Agent` 微调。
 
-+   [训练所得模型可无](https://github.com/InternLM/lmdeploy)缝接入部署工具库 L[MDeploy、大规模](https://github.com/open-compass/opencompass)评测工[具库 OpenCom](https://github.com/open-compass/VLMEvalKit)pass 及 VLMEvalKit。
++ 预定义众多开源对话模版，支持与开源或训练所得模型进行对话。
 
-**优点**:
++ 训练所得模型可无缝接入部署工具库 [`LMDeploy`](https://github.com/InternLM/lmdeploy)、大规模评测工具库 [`OpenCompass`](https://github.com/open-compass/opencompass) 及 [`VLMEvalKit`](https://github.com/open-compass/VLMEvalKit)。
 
-+   支持多种微调策略，包括量化微调。
+##### 优点
 
-+   提供了易于使用的命令行工具和配置文件。
++ 支持多种微调策略，包括量化微调。
 
-+   支持多模态数据，可以处理文本和图像。
++ 提供了易于使用的命令行工具和配置文件。
 
-**缺点**:
++ 支持多模态数据，可以处理文本和图像。
 
-+   相对于Huggingface，社区和文档可能不够丰富。
+##### 缺点
 
-+   新用户可能需要时间来熟悉其工具和接口。
++ 相对于 `Huggingface`，社区和文档可能不够丰富。
 
-##### Xtuner+InternLM2参考教程资料
++ 新用户可能需要时间来熟悉其工具和接口。
 
-+   [InternLM2]书生·浦语大模型全链路开源体系【书生·浦语大模型实战营第二期第一节笔记】 - 知乎
+##### Xtuner+InternLM2 参考教程资料
+
++ [`InternLM2`] 书生·浦语大模型全链路开源体系【书生·浦语大模型实战营第二期第一节笔记】 - 知乎
 
 https://zhuanlan.zhihu.com/p/692078749
 
-+   [InternLM2]XTuner 微调 internlm2-chat-1_8b【书生·浦语大模型实战营第二期第四节笔记】【上】 - 知乎
++ [`InternLM2`] `XTuner` 微调 `internlm2-chat-1_8b`【书生·浦语大模型实战营第二期第四节笔记】【上】 - 知乎
 
 https://zhuanlan.zhihu.com/p/693147811
 
-+   [InternLM2]XTuner 微调 Llava 多模态模型【书生·浦语大模型实战营第二期第四节笔记】【下】 - 知乎
++ [`InternLM2`] `XTuner` 微调 `LLaVA` 多模态模型【书生·浦语大模型实战营第二期第四节笔记】【下】 - 知乎
 
 https://zhuanlan.zhihu.com/p/693359128
 
-+   [Llama3][EmoLLM][Minisora]Meta Llama 3快速上手：用EmoLLM数据基于Xtuner采用QLoRA微调Meta-Llama-3-8B-Instruct模型【V1】 - 知乎
++ [`Llama3`] [`EmoLLM`] [`Minisora`] `Meta Llama 3` 快速上手：用 `EmoLLM` 数据基于 `Xtuner` 采用 `QLoRA` 微调 `Meta-Llama-3-8B-Instruct` 模型【`V1`】 - 知乎
 
 https://zhuanlan.zhihu.com/p/693454096
 
-+   [InternLM2][Llama3]Llama 3 Agent 能力体验+微调（Lagent+XTuner 版） - 知乎
++ [`InternLM2`] [`Llama3`] `Llama 3 Agent` 能力体验+微调（`Lagent`+`XTuner` 版） - 知乎
 
 https://zhuanlan.zhihu.com/p/694196479
 
-+   [Llama3][InternLM2][RuoZhiBa][EmoLLM]使用弱智吧数据微调Llama3-Instruct-8B模型 【书生·浦语大模型实战营微调数据构造实验】[弱智吧] - 知乎
++ [`Llama3`] [`InternLM2`] [`RuoZhiBa`] [`EmoLLM`] 使用弱智吧数据微调 `Llama3-Instruct-8B` 模型 【书生·浦语大模型实战营微调数据构造实验】[弱智吧] - 知乎
 
 https://zhuanlan.zhihu.com/p/694818596
 
-+   Llama-3-8B-Instruct QLoRA 快速微调指南
++ `Llama-3-8B-Instruct QLoRA` 快速微调指南
 
-https://github.com/SmartFlowAI/EmoLLM/blob/main/xtuner_config/README_llama3_8b_instruct_qlora_alpaca_e3_M.md
+`https://github.com/SmartFlowAI/EmoLLM/blob/main/xtuner_config/README_llama3_8b_instruct_qlora_alpaca_e3_M.md`
 
 ### LLaMA-Factory
 
 https://github.com/hiyouga/LLaMA-Factory/tree/main
 
-**介绍**: LLaMA-Factory是一个专门用于微调LLaMA模型的工具，提供了WebUI界面，使得非开发人员也能方便进行微调工作。
+##### 介绍
 
-**项目特色**
+`LLaMA-Factory` 是一个专门用于微调 `LLaMA` 模型的工具，提供了 `WebUI` 界面，使得非开发人员也能方便进行微调工作。
 
-+   **多种模型**：LLaMA、LLaVA、Mistral、Mixtral-MoE、Qwen、Yi、Gemma、Baichuan、ChatGLM、Phi 等等。
+##### 项目特色
 
-+   **集成方法**：（增量）预训练、（多模态）指令监督微调、奖励模型训练、PPO 训练、DPO 训练、KTO 训练、ORPO 训练等等。
++ **多种模型**：`LLaMA`、`LLaVA`、`Mistral`、`Mixtral-MoE`、`Qwen`、`Yi`、`Gemma`、`Baichuan`、`ChatGLM`、`Phi` 等等。
 
-+   **多种精度**：32 比特全参数微调、16 比特冻结微调、16 比特 LoRA 微调和基于 AQLM/AWQ/GPTQ/LLM.int8 的 2/4/8 比特 QLoRA 微调。
++ **集成方法**：（增量）预训练、（多模态）指令监督微调、奖励模型训练、`PPO` 训练、`DPO` 训练、`KTO` 训练、`ORPO` 训练等等。
 
-+   **先进算法**：GaLore、BAdam、DoRA、LongLoRA、LLaMA Pro、Mixture-of-Depths、LoRA+、LoftQ 和 Agent 微调。
++ **多种精度**：`32` 比特全参数微调、`16` 比特冻结微调、`16` 比特 `LoRA` 微调和基于 `AQLM`/`AWQ`/`GPTQ`/`LLM.int8` 的 `2/4/8` 比特 `QLoRA` 微调。
 
-+   **实用技巧**：FlashAttention-2、Unsloth、RoPE scaling、NEFTune 和 rsLoRA。
++ **先进算法**：`GaLore`、`BAdam`、`DoRA`、`LongLoRA`、`LLaMA Pro`、`Mixture-of-Depths`、`LoRA+`、`LoftQ` 和 `Agent` 微调。
 
-+   **实验监控**：LlamaBoard、TensorBoard、Wandb、MLflow 等等。
++ **实用技巧**：`FlashAttention-2`、`Unsloth`、`RoPE scaling`、`NEFTune` 和 `rsLoRA`。
 
-+   **极速推理**：基于 vLLM 的 OpenAI 风格 API、浏览器界面和命令行接口。
++ **实验监控**：`LlamaBoard`、`TensorBoard`、`Wandb`、`MLflow` 等等。
 
-**训练方法**
++ **极速推理**：基于 `vLLM` 的 `OpenAI` 风格 `API`、浏览器界面和命令行接口。
 
-## **数据集**
+##### 训练方法
 
-**优点**:
+## 数据集
 
-+   提供了用户友好的WebUI界面，简化了微调过程。
+### 优点
 
-+   支持多种LLM模型和微调方法。
++ 提供了用户友好的 `WebUI` 界面，简化了微调过程。
 
-+   集成了业界前沿的微调方法。
++ 支持多种 `LLM` 模型和微调方法。
 
-**缺点**:
++ 集成了业界前沿的微调方法。
 
-+   相对于其他框架，可能在功能和灵活性上有所限制。
+### 缺点
 
-+   专注于LLaMA模型，对于其他类型的模型支持可能不足。
++ 相对于其他框架，可能在功能和灵活性上有所限制。
+
++ 专注于 `LLaMA` 模型，对于其他类型的模型支持可能不足。
 
 ## 2.3 微调入门案例
 
-+   [InternLM2]XTuner 微调 internlm2-chat-1_8b【书生·浦语大模型实战营第二期第四节笔记】【上】 - 知乎
++ [`InternLM2`] `XTuner` 微调 `internlm2-chat-1_8b`【书生·浦语大模型实战营第二期第四节笔记】【上】 - 知乎
 
 https://zhuanlan.zhihu.com/p/693147811
 
@@ -432,16 +438,15 @@ https://zhuanlan.zhihu.com/p/693147811
 
 微调后
 
-
 过拟合举例
 
 ![](img/c598e4718c47d72d0faaf22e200471b2.png)
 
 ![](img/e38fd615ae3f7c8b9049e90cedaaa5e2.png)
 
-### 其他应用举例和参考模型微调，数据构造资源（基于书生浦语的Xtuner和InternLM）
+### 其他应用举例和参考模型微调，数据构造资源（基于书生浦语的 `Xtuner` 和 `InternLM`）
 
-EmoLLM爹系男友心理咨询师
+`EmoLLM` 爹系男友心理咨询师
 
 https://openxlab.org.cn/apps/detail/chg0901/EmoLLM3.0_Gradio_Llama3-8B-Instruct3.0
 
@@ -453,58 +458,59 @@ https://github.com/SmartFlowAI/EmoLLM/
 
 # 高阶微调【扩展内容】
 
-### [**RLHF和DPO**](https://blog.csdn.net/youbingchen/article/details/136001134)
+### [`RLHF和DPO`](https://blog.csdn.net/youbingchen/article/details/136001134)
 
-**RLHF**(Reinforcement Learning from Human Feedback)基于人类反馈对语言模型进行强化学习，
+`RLHF`（`Reinforcement Learning from Human Feedback`）基于人类反馈对语言模型进行强化学习，
 
 ![](img/8528479e8e9da40a2af5fecce231ce38.png)
 
 分为两步：
 
-1.  RM(Reward Model)奖励模型建模，构造人类偏好排序数据集，训练奖励模型，用来建模人类偏好，主要是"HHH"原则，具体是"helpful, honest, harmless"
+1. `RM`（`Reward Model`）奖励模型建模，构造人类偏好排序数据集，训练奖励模型，用来建模人类偏好，主要是 `"HHH"` 原则，具体是 `"helpful, honest, harmless"`
 
-1.  RL(Reinforcement Learning)强化学习，用奖励模型来训练SFT模型，生成模型使用奖励或惩罚来更新其策略，以便生成更高质量、更符合人类偏好的文本.
+1. `RL`（`Reinforcement Learning`）强化学习，用奖励模型来训练 `SFT` 模型，生成模型使用奖励或惩罚来更新其策略，以便生成更高质量、更符合人类偏好的文本。
 
-**DPO**(Direct Preference Optimization)直接偏好优化方法，DPO通过直接优化语言模型来实现对其行为的精确控制，而无需使用复杂的强化学习，也可以有效学习到人类偏好，DPO相较于RLHF更容易实现且易于训练，效果更好
+`DPO`（`Direct Preference Optimization`）直接偏好优化方法，`DPO` 通过直接优化语言模型来实现对其行为的精确控制，而无需使用复杂的强化学习，也可以有效学习到人类偏好，`DPO` 相较于 `RLHF` 更容易实现且易于训练，效果更好
 
-> 在RLHF中真的需要强化学习（RL）吗？斯坦福大学的新研究提出了DPO（直接偏好优化）：一种简单的训练范式，用于在没有RL的情况下通过偏好来训练语言模型
+> 在 `RLHF` 中真的需要强化学习（`RL`）吗？斯坦福大学的新研究提出了 `DPO`（直接偏好优化）：一种简单的训练范式，用于在没有 `RL` 的情况下通过偏好来训练语言模型
 
 ![](img/c31e54c504fa78d3eecb117748757285.png)
 
 ### 参考资料
 
-1.  微调实操一: 增量预训练(Pretraining)-CSDN博客
+1. 微调实操一：增量预训练（`Pretraining`）-CSDN 博客
 
 https://blog.csdn.net/youbingchen/article/details/136001134
 
-1.  微调实操二: 有监督微调(Supervised Finetuning)-CSDN博客
+1. 微调实操二：有监督微调（`Supervised Finetuning`）-CSDN 博客
 
 https://blog.csdn.net/youbingchen/article/details/136072886
 
-1.  微调实操三:人类反馈对语言模型进行强化学习(RLHF)_人类反馈强化模型-CSDN博客
+1. 微调实操三：人类反馈对语言模型进行强化学习（`RLHF`）-人类反馈强化模型-CSDN 博客
 
 https://blog.csdn.net/youbingchen/article/details/136204393
 
-1.  微调实操四:直接偏好优化方法-DPO_dpo微调-CSDN博客
+1. 微调实操四：直接偏好优化方法-`DPO`-`dpo` 微调-CSDN 博客
 
 https://blog.csdn.net/youbingchen/article/details/136308044
 
-1.  大语言模型（LLM）微调技术笔记 – 明柳梦少
+1. 大语言模型（`LLM`）微调技术笔记 – 明柳梦少
 
 https://www.mingliumengshao.com/2023/06/08/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%EF%BC%88llm%EF%BC%89%E5%BE%AE%E8%B0%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/
 
-1.  MedicalGPT：训练医疗大模型，实现了包括增量预训练(PT)、有监督微调(SFT)、RLHF、DPO、ORPO。
+1. `MedicalGPT`：训练医疗大模型，实现了包括增量预训练（`PT`）、有监督微调（`SFT`）、`RLHF`、`DPO`、`ORPO`。
 
 https://github.com/shibing624/MedicalGPT
 
-+   RLHF training pipeline来自An[drej Karpath](https://karpathy.ai/stateofgpt.pdf)y的演讲[PDF S](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2)tate of GPT，视频 Video
++ `RLHF` training pipeline 来自 `Andrej Karpathy` 的演讲 [`PDF State of GPT`](https://karpathy.ai/stateofgpt.pdf)，视频 `Video`
 
-+   DPO方法来自论文[Direct Preference Optimization:Your L](https://arxiv.org/pdf/2305.18290.pdf)anguage Model is Secretly a Reward Model
++ `DPO` 方法来自论文 [`Direct Preference Optimization: Your LLM is Secretly a Reward Model`](https://arxiv.org/pdf/2305.18290.pdf)
 
-+   ORPO方法来自论文[O](https://arxiv.org/abs/2403.07691)RPO: Monolithic Preference Optimization without Reference Model
++ `ORPO` 方法来自论文 [`ORPO: Monolithic Preference Optimization without Reference Model`](https://arxiv.org/abs/2403.07691)
 
-7.  解密Prompt7. 偏好对齐RLHF-OpenAI·DeepMind·Anthropic对比分析-腾讯云开发者社区-腾讯云
+1. 解密 `Prompt` 7：偏好对齐 `RLHF` - `OpenAI`、`DeepMind`、`Anthropic` 对比分析 - 腾讯云开发者社区 - 腾讯云
 
 https://cloud.tencent.com/developer/article/2289566
 
-> 本教程由 、 、 、 等贡献者贡献，期待你的点赞和评论反馈~
+> 本教程由、、、、等贡献者贡献，期待你的点赞和评论反馈～
+

@@ -1,18 +1,19 @@
+
 # Midjourney会员购买
 
 > 来源：[https://aigclena.feishu.cn/docx/AOnrd68r0o1GY6x1vImcifj7nDe](https://aigclena.feishu.cn/docx/AOnrd68r0o1GY6x1vImcifj7nDe)
 
 > 版权申明:无授权，不可利用原创课程，进行商业牟利!
 
-> 页面描述：自己在官方购买的方式，需🪜。🪜链接：可免费使用24小时👉https://dddd.pics/#/register?code=xCHskvfd
+> 页面描述：自己在官方购买的方式，需🪜。🪜链接：可免费使用24小时👉`https://dddd.pics/#/register?code=xCHskvfd`
 
 > 更多🪜相关请移步[【新人扫盲必看】](https://aigclena.feishu.cn/wiki/BRCuwa1vdiZWyTkFWT4ckXOenre)
 
-# 购买地址
+## 购买地址
 
-> 购买地址：https://www.midjourney.com/account/
+> 购买地址：`https://www.midjourney.com/account/`
 
-也可以通过在输入框输入/subscribe，打开订阅地址：
+也可以通过在输入框输入`/subscribe`，打开订阅地址：
 
 ![](img/ad73bcf116a13ff9645237d9e3c65d62.png)
 
@@ -28,7 +29,7 @@
 
 120刀/月：无限制出图，60小时fast时间，12个并发作业，可设为私密，别人不能查看自己的关键词
 
-# 支付方式
+## 支付方式
 
 mj支付方式，要境外信用卡支付，银行卡上有这7个logo之中任何一个就可以支付成功
 
@@ -40,7 +41,7 @@ mj支付方式，要境外信用卡支付，银行卡上有这7个logo之中任�
 
 图为我用国内银联卡支付失败的错误示范
 
-# 订购成功
+## 订购成功
 
 订阅成功后会有邮件提示，每月账单也会按时发到邮箱。
 
@@ -48,7 +49,7 @@ mj支付方式，要境外信用卡支付，银行卡上有这7个logo之中任�
 
 ![](img/fc6b2b78b6766b49d84cb10581b28c9a.png)
 
-# 拼账号使用
+## 拼账号使用
 
 ① 如果是一起拼账号的小伙伴，建议不超过6台设备，设备多了账号安全会有一定风险。除了主账号以外，其余账号异地登录会出现以下情况，通过邮箱确认/扫码登录之后，其余账号就可以登录了。
 
@@ -58,8 +59,6 @@ mj支付方式，要境外信用卡支付，银行卡上有这7个logo之中任�
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  AI课程学习
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) AI课程学习
 
 ![](img/b7fccbb807aec16050a4cbe2845d2efe.png)
-
-##

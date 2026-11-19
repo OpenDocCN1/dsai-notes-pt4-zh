@@ -1,18 +1,19 @@
+
 # 常见问题
 
 > 来源：[https://ai.feishu.cn/docx/YzJdd5jjnoNUpMxzzdmcVwzLn6g](https://ai.feishu.cn/docx/YzJdd5jjnoNUpMxzzdmcVwzLn6g)
 
 > 以下问题和回答不完整，更多问题和回答可以在github进行关注和查看
 
-### 在提出问题之前
+## 在提出问题之前
 
 请先查看：
 
-https://github.com/THUDM/ChatGLM3/issues
+`https://github.com/THUDM/ChatGLM3/issues`
 
 和
 
-https://github.com/THUDM/ChatGLM3/discussions
+`https://github.com/THUDM/ChatGLM3/discussions`
 
 寻找相关的问题集
 

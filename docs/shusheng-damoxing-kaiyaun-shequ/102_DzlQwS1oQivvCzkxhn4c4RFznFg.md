@@ -1,12 +1,13 @@
+
 # Intern-S1-mini 公式识别微调练习赛复现(xtuner版本) （未完成）
 
 > 来源：[https://aicarrier.feishu.cn/docx/WNLEd6ouJoh75cxO9QJcgKY0nyc](https://aicarrier.feishu.cn/docx/WNLEd6ouJoh75cxO9QJcgKY0nyc)
 
-欢迎参加“Intern-S1 公式识别微微调练习赛”！本次比赛旨在鼓励开发者利用 InternVL 模型，通过微调提升其在数学公式识别任务上的性能。
+欢迎参加“Intern-S1 公式识别微调练习赛”！本次比赛旨在鼓励开发者利用 InternVL 模型，通过微调提升其在数学公式识别任务上的性能。
 
 # 赛事简介
 
-数学**公式识别是**计**算机视觉领**域一个富有挑战性的任务。本次练习赛提供了一个完整的框架，帮助您快速上手、验证和评估您的微调模型。您将使用提供的数据集对 InternVL 模型进行微调，并通过一个结合了哈希值比对和图像相似度的综合评估系统来检验您的模型性能。
+数学公式识别是计算机视觉领域一个富有挑战性的任务。本次练习赛提供了一个完整的框架，帮助您快速上手、验证和评估您的微调模型。您将使用提供的数据集对 InternVL 模型进行微调，并通过一个结合了哈希值比对和图像相似度的综合评估系统来检验您的模型性能。
 
 ![](img/579981b0699121286cd9edba961c81d1.png)
 
@@ -48,7 +49,7 @@ xx
 cd VLM-formula-recognition-dataset
 ```
 
-安装 ms-swift其他环境
+安装 `ms-swift` 其他环境
 
 ```
 conda create -n ms-swift python=3.10 -y
@@ -67,66 +68,65 @@ git clone https://www.modelscope.cn/datasets/JimmyMa99/VLM-formula-recognition-d
 
 数据集网站：https://modelscope.cn/datasets/JimmyMa99/VLM-formula-recognition-dataset_intern_camp
 
-需要将数据集的train_min**i.jso**nl中关于图片位置换成绝对位置,另存一份文件train_mini_abs.jsonl
+需要将数据集的 `train_mini.jsonl` 中关于图片位置换成绝对位置，另存一份文件 `train_mini_abs.jsonl`
 
-in_path:下载后train_mini.jsonl的绝对路径
+`in_path`: 下载后 `train_mini.jsonl` 的绝对路径
 
-out_path：转化train_mini.jsonl后的绝对路径
+`out_path`: 转化 `train_mini.jsonl` 后的绝对路径
 
-base：train_swift.jsonl所在的文件夹
+`base`: `train_swift.jsonl` 所在的文件夹
 
 我们需要填好三个字段，终端运行以下命令：
 
 ```
-python - &lt;&lt;&#x27;PY&#x27;
+python - << 'PY'
 import json, os, sys
 
-in_path  = &quot;xx/VLM-formula-recognition-dataset/train/train_mini.jsonl&quot;       # 你的现用 jsonl
-out_path = &quot;xx/VLM-formula-recognition-dataset/train/train_mini_abs.jsonl&quot;   # 输出到新文件jsonl
-base = &quot;xx/VLM-formula-recognition-dataset_intern_camp/train&quot;  # train_swift.jsonl所在的文件夹
+in_path  = "xx/VLM-formula-recognition-dataset/train/train_mini.jsonl"       # 你的现用 jsonl
+out_path = "xx/VLM-formula-recognition-dataset/train/train_mini_abs.jsonl"   # 输出到新文件jsonl
+base = "xx/VLM-formula-recognition-dataset_intern_camp/train"  # train_swift.jsonl所在的文件夹
 
 def to_abs(p):
     if not p: return p
     # 仅当是相对路径时拼接；已是绝对路径则保留
     return p if os.path.isabs(p) else os.path.join(base, p)
 
-n=0;m=0
-with open(in_path,&#x27;r&#x27;,encoding=&#x27;utf-8&#x27;) as fin, open(out_path,&#x27;w&#x27;,encoding=&#x27;utf-8&#x27;) as fout:
+n=0; m=0
+with open(in_path, 'r', encoding='utf-8') as fin, open(out_path, 'w', encoding='utf-8') as fout:
     for line in fin:
         if not line.strip(): continue
         obj = json.loads(line)
         changed = False
         # 兼容两种常见结构：images: [..] 或 messages[].content[].image
-        if &#x27;images&#x27; in obj and isinstance(obj[&#x27;images&#x27;], list):
-            obj[&#x27;images&#x27;] = [to_abs(x) for x in obj[&#x27;images&#x27;]]
+        if 'images' in obj and isinstance(obj['images'], list):
+            obj['images'] = [to_abs(x) for x in obj['images']]
             changed = True
-        if &#x27;messages&#x27; in obj:
-            for msg in obj[&#x27;messages&#x27;]:
-                c = msg.get(&#x27;content&#x27;)
+        if 'messages' in obj:
+            for msg in obj['messages']:
+                c = msg.get('content')
                 if isinstance(c, list):
                     for part in c:
-                        if part.get(&#x27;type&#x27;) == &#x27;image&#x27; and &#x27;image&#x27; in part:
-                            part[&#x27;image&#x27;] = to_abs(part[&#x27;image&#x27;])
+                        if part.get('type') == 'image' and 'image' in part:
+                            part['image'] = to_abs(part['image'])
                             changed = True
-        fout.write(json.dumps(obj,ensure_ascii=False)+&#x27;\n&#x27;)
-        n+=1
-        m+=changed
-print(f&quot;processed lines={n}, patched={m}, saved -&gt; {out_path}&quot;)
+        fout.write(json.dumps(obj, ensure_ascii=False) + '\n')
+        n += 1
+        m += changed
+print(f"processed lines={n}, patched={m}, saved -> {out_path}")
 PY
-
 ```
 
 ## 模型微调
 
-我们推荐使用 Swift 框架进行模型微调。在 swift_config/ 目录下，我们提供了一个训练脚本 interns1_mini_train.sh 作为参考。
+我们推荐使用 Swift 框架进行模型微调。在 `swift_config/` 目录下，我们提供了一个训练脚本 `interns1_mini_train.sh` 作为参考。
 
 您可以根据自己的需求，调整脚本中的超参数，例如：
 
-+   dataset 替换成自己服务器数据位置
++   `dataset` 替换成自己服务器数据位置
 
-+   learning_rate 自调
++   `learning_rate` 自调
 
-+   num_train_epochs 自调
++   `num_train_epochs` 自调
 
 配置完成后，执行训练脚本：
 
@@ -134,12 +134,12 @@ PY
 #!/bin/bash
 
 # 创建日志目录
-LOG_DIR=&quot;logs&quot;
+LOG_DIR="logs"
 mkdir -p $LOG_DIR
 
 # 获取当前时间戳
-TIMESTAMP=$(date +&quot;%Y%m%d_%H%M%S&quot;)
-LOG_FILE=&quot;$LOG_DIR/[SFT]interns1mini_${TIMESTAMP}.log&quot;
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+LOG_FILE="$LOG_DIR/[SFT]interns1mini_${TIMESTAMP}.log"
 
 # 设置环境变量
 # export ENABLE_AUDIO_OUTPUT=False
@@ -152,15 +152,15 @@ export MASTER_PORT=$((10000 + RANDOM % 50000))
 
 
 # 先打印启动信息
-echo &quot;Starting training...&quot;
-echo &quot;Log file: $LOG_FILE&quot;
-echo &quot;Using port: $MASTER_PORT&quot;
+echo "Starting training..."
+echo "Log file: $LOG_FILE"
+echo "Using port: $MASTER_PORT"
 
 # 没有指定 model_type
 # 启动训练并获取PID
 nohup swift sft \
-    --model &#x27;/root/share/new_models/Intern-S1-mini&#x27;\
-    --dataset &#x27;/root/user/camp6/math/VLM-formula-recognition-dataset/VLM-formula-recognition-dataset_intern_camp/train/train_mini_abs.jsonl&#x27; \
+    --model '/root/share/new_models/Intern-S1-mini'\
+    --dataset '/root/user/camp6/math/VLM-formula-recognition-dataset/VLM-formula-recognition-dataset_intern_camp/train/train_mini_abs.jsonl' \
     --eval_steps 1000 \
     --train_type lora \
     --lora_rank 8 \
@@ -175,7 +175,7 @@ nohup swift sft \
     --gradient_accumulation_steps 4 \
     --save_steps 2000 \
     --save_total_limit 10 \
-    --gradient_checkpointing_kwargs &#x27;{&quot;use_reentrant&quot;: false}&#x27; \
+    --gradient_checkpointing_kwargs '{"use_reentrant": false}' \
     --logging_steps 1 \
     --max_length 8000 \
     --output_dir ./swift_output/SFT-Interns1mini\
@@ -185,26 +185,24 @@ nohup swift sft \
     --model_name SFT-camp6 \
     --metric acc \
     --freeze_vit true \
-    &gt; &quot;$LOG_FILE&quot; 2&gt;&amp;1 &amp;
+    > "$LOG_FILE" 2>&1 &
 
 # 获取PID并等待一下确保进程启动
 TRAIN_PID=$!
 sleep 2
 
 # 检查进程是否还在运行
-if kill -0 $TRAIN_PID 2&gt;/dev/null; then
-    echo &quot;Training started successfully with PID $TRAIN_PID&quot;
-    echo &quot;To view logs in real-time, use:&quot;
-    echo &quot;tail -f $LOG_FILE&quot;
-    echo &quot;&quot;
-    echo &quot;To stop training, use:&quot;
-    echo &quot;kill $TRAIN_PID&quot;
+if kill -0 $TRAIN_PID 2>/dev/null; then
+    echo "Training started successfully with PID $TRAIN_PID"
+    echo "To view logs in real-time, use:"
+    echo "tail -f $LOG_FILE"
+    echo ""
+    echo "To stop training, use:"
+    echo "kill $TRAIN_PID"
 else
-    echo &quot;Failed to start training process&quot;
-    echo &quot;Check log file for errors: $LOG_FILE&quot;
+    echo "Failed to start training process"
+    echo "Check log file for errors: $LOG_FILE"
 fi
-
-
 ```
 
 启动
@@ -220,7 +218,7 @@ bash swift_config/interns1_mini_train.sh
 tail -f xxx.log
 ```
 
-等微调运行完成后，将 lora 微调产生的部分权重和源权重进行合并。
+等微调运行完成后，将 `lora` 微调产生的部分权重和源权重进行合并。
 
 ```
 swift export --adapters   /root/user/camp6/VLM-formula-recognition-dataset/swift_output/SFT-Interns1mini/v0-20250829-105735/checkpoint-375    --model   /root/share/new_models/Intern-S1-mini  --merge_lora true 
@@ -236,31 +234,31 @@ swift export --adapters   /root/user/camp6/VLM-formula-recognition-dataset/swift
 bash env.sh
 ```
 
-这一步下载latex 资源因网速不定，可能 1hours+。
+这一步下载 latex 资源因网速不定，可能 1hours+。
 
 ## 数据准备
 
-本次比赛的样例数据集存放在 data/ 目录下。
+本次比赛的样例数据集存放在 `data/` 目录下。
 
-+   data/samples/: 包含用于**训练**的 LaTeX 文本文件。
++   `data/samples/`: 包含用于训练的 LaTeX 文本文件。
 
-+   data/output_eval/: 包含与训练样本对应的**原始渲染图片**，作为 Ground Truth。
++   `data/output_eval/`: 包含与训练样本对应的原始渲染图片，作为 Ground Truth。
 
 您需要利用这些数据来准备您的测试集。
 
 ## 模型评估
 
-微调完成后，您需要使用 eval.py 脚本对测试图片进行公式识别。
+微调完成后，您需要使用 `eval.py` 脚本对测试图片进行公式识别。
 
 请修改以下路径：
 
-+   model-path: 输入待测试的模型路径
++   `model-path`: 输入待测试的模型路径
 
-+   input_dir: 输入待测试的**图片**目录
++   `input_dir`: 输入待测试的图片目录
 
-+   output_dir:  输出用于保存模型生成的 **LaTeX 文本**的目录。
++   `output_dir`:  输出用于保存模型生成的 LaTeX 文本的目录。
 
-+   report_path: 输出**报告结果**的路径。
++   `report_path`: 输出报告结果的路径。
 
 然后运行评估脚本：
 
@@ -292,17 +290,17 @@ python eval.py \
 
 ## 评估指标概述
 
-+   **哈希比较成功率**: 模型生成的图片与参考图片哈希值**完全相同**的样本比例。
++   哈希比较成功率：模型生成的图片与参考图片哈希值完全相同的样本比例。
 
-+   **相似度比较成功率**: 模型生成的图片与参考图片的**图像相似度**高于阈值的样本比例。
++   相似度比较成功率：模型生成的图片与参考图片的图像相似度高于阈值的样本比例。
 
-+   **最终综合得分**: 上述两项成功率的**加权平均值**，全面反映模型的性能。
++   最终综合得分：上述两项成功率的加权平均值，全面反映模型的性能。
 
 ### 哈希比较原理
 
 #### 基本概念
 
-哈希比较是一种通过计算文件数字指纹来判断两个文件是否完全相同的方法。本脚本使用加密哈希函数对LaTeX生成的图片和参考图片进行比较。
+哈希比较是一种通过计算文件数字指纹来判断两个文件是否完全相同的方法。本脚本使用加密哈希函数对 LaTeX 生成的图片和参考图片进行比较。
 
 #### 哈希函数原理
 
@@ -314,21 +312,21 @@ H(data) → hash_value
 
 其中：
 
-+   H 表示哈希函数
++   `H` 表示哈希函数
 
-+   data 是输入的文件二进制数据
++   `data` 是输入的文件二进制数据
 
-+   hash_value 是固定长度的哈希值（数字指纹）
++   `hash_value` 是固定长度的哈希值（数字指纹）
 
 #### 支持的哈希算法
 
 脚本支持三种常用的加密哈希算法：
 
-+   **MD5**: 生成128位（32个十六进制字符）的哈希值
++   `MD5`: 生成128位（32个十六进制字符）的哈希值
 
-+   **SHA1**: 生成160位（40个十六进制字符）的哈希值
++   `SHA1`: 生成160位（40个十六进制字符）的哈希值
 
-+   **SHA256**: 生成256位（64个十六进制字符）的哈希值
++   `SHA256`: 生成256位（64个十六进制字符）的哈希值
 
 #### 文件哈希计算过程
 
@@ -336,8 +334,12 @@ H(data) → hash_value
 
 为了处理大文件并避免内存溢出，脚本采用分块读取的方式：
 
+
+
+## 文件哈希计算与判断
+
 ```
-for chunk in iter(lambda: f.read(4096), b&quot;&quot;):
+for chunk in iter(lambda: f.read(4096), b""):
     hasher.update(chunk)
 ```
 
@@ -347,21 +349,18 @@ for chunk in iter(lambda: f.read(4096), b&quot;&quot;):
 hash = H(chunk₁ || chunk₂ || ... || chunkₙ)
 ```
 
-其中 || 表示数据连接操作。
+其中 `||` 表示数据连接操作。
 
-#### 计算流程
+### 计算流程
 
-1.  **初始化**：根据指定算法创建哈希对象
+1. **初始化**：根据指定算法创建哈希对象
+1. **分块读取**：按4096字节分块读取文件
+1. **逐块更新**：将每个数据块输入哈希函数
+1. **生成摘要**：获得最终的十六进制哈希值
 
-1.  **分块读取**：按4096字节分块读取文件
+### 相似度判断机制
 
-1.  **逐块更新**：将每个数据块输入哈希函数
-
-1.  **生成摘要**：获得最终的十六进制哈希值
-
-#### 相似度判断机制
-
-##### 完全匹配原则
+#### 完全匹配原则
 
 脚本采用严格的二进制比较方式：
 
@@ -371,9 +370,8 @@ identical = (hash_generated == hash_reference)
 
 判断逻辑：
 
-+   **相同**：hash₁ == hash₂ → 文件在字节级别完全相同
-
-+   **不同**：hash₁ ≠ hash₂ → 文件存在任何差异
++   **相同**：`hash₁ == hash₂` → 文件在字节级别完全相同
++   **不同**：`hash₁ ≠ hash₂` → 文件存在任何差异
 
 #### 整体相似度计算
 
@@ -383,25 +381,23 @@ identical = (hash_generated == hash_reference)
 相似度(%) = (相同文件数量 / 总文件数量) × 100
 ```
 
-### 图像相似度比较原理
+## 图像相似度比较原理
 
-#### 概述
+### 概述
 
 图像相似度比较是通过多种数学方法量化两幅图像之间视觉相似程度的技术。本脚本实现了五种不同的相似度计算方法，并通过加权平均得到综合相似度分数。
 
-#### 核心算法原理
+### 核心算法原理
 
-1.  直方图相似度 (Histogram Similarity)
+#### 直方图相似度 (Histogram Similarity)
 
 直方图描述了图像中像素强度的分布特征。
 
 **计算步骤：**
 
-1.  将图像转换为灰度图
-
-1.  计算像素强度直方图：H(i) = count(pixels with intensity i)
-
-1.  归一化直方图：H_norm(i) = H(i) / Σ H(i)
+1. 将图像转换为灰度图
+1. 计算像素强度直方图：`H(i) = count(pixels with intensity i)`
+1. 归一化直方图：`H_norm(i) = H(i) / Σ H(i)`
 
 **相似度计算方法：**
 
@@ -424,7 +420,7 @@ similarity = 1 / (1 + χ²)
 similarity = 1 - √(1 - Σ√(H₁(i) × H₂(i)))
 ```
 
-1.  结构相似性指数 (SSIM)
+#### 结构相似性指数 (SSIM)
 
 SSIM通过比较亮度、对比度和结构信息来评估图像质量。
 
@@ -436,25 +432,20 @@ SSIM(x,y) = [l(x,y)]^α × [c(x,y)]^β × [s(x,y)]^γ
 
 其中：
 
-+   **亮度比较**：l(x,y) = (2μₓμᵧ + c₁) / (μₓ² + μᵧ² + c₁)
-
-+   **对比度比较**：c(x,y) = (2σₓσᵧ + c₂) / (σₓ² + σᵧ² + c₂)
-
-+   **结构比较**：s(x,y) = (σₓᵧ + c₃) / (σₓσᵧ + c₃)
++   **亮度比较**：`l(x,y) = (2μₓμᵧ + c₁) / (μₓ² + μᵧ² + c₁)`
++   **对比度比较**：`c(x,y) = (2σₓσᵧ + c₂) / (σₓ² + σᵧ² + c₂)`
++   **结构比较**：`s(x,y) = (σₓᵧ + c₃) / (σₓσᵧ + c₃)`
 
 参数说明：
 
-+   μₓ, μᵧ：图像均值
-
-+   σₓ, σᵧ：图像标准差
-
-+   σₓᵧ：协方差
-
-+   c₁, c₂, c₃：稳定常数
++   `μₓ, μᵧ`：图像均值
++   `σₓ, σᵧ`：图像标准差
++   `σₓᵧ`：协方差
++   `c₁, c₂, c₃`：稳定常数
 
 **取值范围**：[-1, 1]，1表示完全相同
 
-1.  均方误差相似度 (MSE Similarity)
+#### 均方误差相似度 (MSE Similarity)
 
 基于像素级差异的相似度计算。
 
@@ -466,9 +457,8 @@ MSE = (1/N) × Σᵢ(I₁(i) - I₂(i))²
 
 其中：
 
-+   N：像素总数
-
-+   I₁(i), I₂(i)：对应位置的像素值
++   `N`：像素总数
++   `I₁(i), I₂(i)`：对应位置的像素值
 
 **相似度转换：**
 
@@ -476,21 +466,18 @@ MSE = (1/N) × Σᵢ(I₁(i) - I₂(i))²
 similarity = 1 - (MSE / MSE_max)
 ```
 
-其中 MSE_max = 255² 为最大可能的MSE值。
+其中 `MSE_max = 255²` 为最大可能的MSE值。
 
-1.  特征点相似度 (Feature Similarity)
+#### 特征点相似度 (Feature Similarity)
 
 通过检测和匹配图像特征点来计算相似度。
 
 **算法流程：**
 
-1.  **特征检测**：使用ORB或SIFT算法检测关键点
-
-1.  **描述符计算**：为每个关键点计算特征描述符
-
-1.  **特征匹配**：使用暴力匹配器进行特征匹配
-
-1.  **相似度计算**：
+1. **特征检测**：使用ORB或SIFT算法检测关键点
+1. **描述符计算**：为每个关键点计算特征描述符
+1. **特征匹配**：使用暴力匹配器进行特征匹配
+1. **相似度计算**：
 
 ```
 similarity = good_matches / max(keypoints₁, keypoints₂)
@@ -499,28 +486,23 @@ similarity = good_matches / max(keypoints₁, keypoints₂)
 **ORB特征**：
 
 +   使用FAST角点检测器
-
 +   采用BRIEF描述符
-
 +   汉明距离匹配
 
 **SIFT特征**：
 
 +   尺度不变特征变换
-
 +   欧几里得距离匹配
 
-1.  感知哈希相似度 (Perceptual Hash)
+#### 感知哈希相似度 (Perceptual Hash)
 
 基于图像感知特征的哈希算法，对轻微变化具有鲁棒性。
 
 **pHash算法步骤：**
 
-1.  **缩放图像**：调整到 (hash_size+1) × hash_size
-
-1.  **计算梯度**：diff(i,j) = image(i,j+1) > image(i,j)
-
-1.  **生成哈希**：将布尔梯度数组转换为二进制哈希值
+1. **缩放图像**：调整到 `(hash_size+1) × hash_size`
+1. **计算梯度**：`diff(i,j) = image(i,j+1) > image(i,j)`
+1. **生成哈希**：将布尔梯度数组转换为二进制哈希值
 
 **相似度计算：**
 
@@ -529,11 +511,11 @@ hamming_distance = popcount(hash₁ ⊕ hash₂)
 similarity = 1 - (hamming_distance / hash_bits)
 ```
 
-其中 ⊕ 表示异或运算，popcount 计算1的个数。
+其中 `⊕` 表示异或运算，`popcount` 计算1的个数。
 
-#### 综合相似度计算
+### 综合相似度计算
 
-##### 加权平均方法
+#### 加权平均方法
 
 ```
 comprehensive_score = Σ(wᵢ × scoreᵢ)
@@ -542,62 +524,47 @@ comprehensive_score = Σ(wᵢ × scoreᵢ)
 **默认权重配置：**
 
 +   直方图相似度：20%
-
 +   SSIM：30%
-
 +   MSE相似度：20%
-
 +   特征点相似度：20%
-
 +   感知哈希：10%
 
-##### 阈值判断机制
+#### 阈值判断机制
 
 最终评分采用二进制判断：
 
 ```
 final_score = {
     1, if comprehensive_score ≥ threshold
-    0, if comprehensive_score &lt; threshold
+    0, if comprehensive_score < threshold
 }
 ```
 
 **评估流程：**
 
-1.  **LaTeX编译**：将文本转换为图像
+1. **LaTeX编译**：将文本转换为图像
+1. **多方法计算**：并行计算五种相似度分数
+1. **加权融合**：计算综合相似度分数
+1. **阈值判断**：输出0或1的最终得分
+1. **批量统计**：计算通过率百分比
 
-1.  **多方法计算**：并行计算五种相似度分数
+### 算法特点分析
 
-1.  **加权融合**：计算综合相似度分数
-
-1.  **阈值判断**：输出0或1的最终得分
-
-1.  **批量统计**：计算通过率百分比
-
-#### 算法特点分析
-
-##### 各方法的优势
+#### 各方法的优势
 
 +   **直方图**：对颜色分布敏感，计算简单
-
 +   **SSIM**：符合人眼视觉感知，结构感知强
-
 +   **MSE**：像素级精确比较，对细微差异敏感
-
 +   **特征点**：对几何变换鲁棒，关注局部特征
-
 +   **感知哈希**：对小幅变化容忍度高，抗噪声
 
-#### 互补性设计
+### 互补性设计
 
 通过组合多种方法，可以：
 
 +   平衡精确性和鲁棒性
-
 +   综合全局和局部特征
-
 +   适应不同类型的图像差异
-
 +   提高评估的可靠性
 
 这种多算法融合的方法特别适合LaTeX公式图片的精确比较，既能检测到细微的数学符号差异，又能容忍渲染过程中的微小变化。

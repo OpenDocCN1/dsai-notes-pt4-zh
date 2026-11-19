@@ -1,22 +1,23 @@
+
 # AI行业资讯3.24
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/UuMLddsi4omVsnxieVFccWaVnad](https://qqs7y1hozd1.feishu.cn/docx/UuMLddsi4omVsnxieVFccWaVnad)
 
-+   **腾讯发布自研混元T1正式版**
++ 腾讯发布自研混元T1正式版
 
-+   英伟达GTC 2025大会发布多款重磅产品，涵盖AI芯片和人形机器人
++ 英伟达GTC 2025大会发布多款重磅产品，涵盖AI芯片和人形机器人
 
-+   **OpenAI发布语音Agent**
++ OpenAI发布语音Agent
 
-+   **OpenAI发布史上最贵模型o1-**pro API，定价远超DeepSeek
++ OpenAI发布史上最贵模型o1-pro API，定价远超DeepSeek
 
-+   GitHub CEO谈AI Agent对程序员的影响，未来将更个性化
++ GitHub CEO谈AI Agent对程序员的影响，未来将更个性化
 
-+   **百度发布文心大模型4.5及X1**
++ 百度发布文心大模型4.5及X1
 
-+   Anthropic发布Claude联网搜索功能，强调安全与信息透明
++ Anthropic发布Claude联网搜索功能，强调安全与信息透明
 
-# 腾讯发布自研混元T1正式版
+## 腾讯发布自研混元T1正式版
 
 3月21日，腾讯宣布推出自研深度思考模型混元T1正式版，并已在腾讯云官网上线。
 
@@ -26,11 +27,11 @@
 
 在多个常见Benchmark上，混元T1表现优异：
 
-+   在大语言模型评估增强数据集MMLU-PRO中，混元T1取得87.2分，仅次于o1。
++ 在大语言模型评估增强数据集MMLU-PRO中，混元T1取得87.2分，仅次于o1。
 
-+   在CEval、AIME、Zebra Logic等中英文知识及竞赛级数学、逻辑推理的公开基准测试中，混元T1的成绩达到业界领先推理模型的水平。
++ 在CEval、AIME、Zebra Logic等中英文知识及竞赛级数学、逻辑推理的公开基准测试中，混元T1的成绩达到业界领先推理模型的水平。
 
-+   此外，混元T1还在多项对齐任务、指令跟随任务和工具利用任务中展现出非常强的适应性。
++ 此外，混元T1还在多项对齐任务、指令跟随任务和工具利用任务中展现出非常强的适应性。
 
 价格方面，混元T1输入价格为每百万tokens 1元，输出价格为每百万tokens 4元。
 
@@ -40,45 +41,45 @@
 
 ![](img/927920943f93d3ff72473412fbf0ee6a.png)
 
-# 英伟达GTC 2025大会发布多款重磅产品，涵盖AI芯片和人形机器人
+## 英伟达GTC 2025大会发布多款重磅产品，涵盖AI芯片和人形机器人
 
 在GTC 2025大会上，英伟达创始人黄仁勋带来了一系列重磅产品，包括全新Blackwell芯片、下一代AI芯片「Vera Rubin」以及全球首款开源人形机器人功能模型「Isaac GR00T N1」。
 
 ### Blackwell芯片
 
-+   Blackwell Ultra：代号「Ultra」的GB300 AI芯片，包括GB300 NVL72机架级解决方案和HGX B300 NVL16系统。GB300 NVL72将于今年下半年发布，提供20 petaflops的AI性能，配备288GB的HBM3e内存，适用于AI智能体和「物理AI」。
++ Blackwell Ultra：代号「Ultra」的GB300 AI芯片，包括GB300 NVL72机架级解决方案和HGX B300 NVL16系统。GB300 NVL72将于今年下半年发布，提供20 petaflops的AI性能，配备288GB的HBM3e内存，适用于AI智能体和「物理AI」。
 
-+   DGX Station：包含单个GB300 Blackwell Ultra芯片的台式电脑，配备784GB系统内存和800Gbps的ConnectX-8 SuperNIC网络，支持20 petaflops的AI性能。
++ DGX Station：包含单个GB300 Blackwell Ultra芯片的台式电脑，配备784GB系统内存和800Gbps的ConnectX-8 SuperNIC网络，支持20 petaflops的AI性能。
 
-+   DGX Spark：CES 2025展示的「迷你主机」正式命名为DGX Spark，搭载GB10 Grace Blackwell超级芯片，每秒可提供高达1000万亿次AI计算操作，用于最新AI推理模型的微调和推理。
++ DGX Spark：CES 2025展示的「迷你主机」正式命名为DGX Spark，搭载GB10 Grace Blackwell超级芯片，每秒可提供高达1000万亿次AI计算操作，用于最新AI推理模型的微调和推理。
 
 ### 下一代AI芯片「Vera Rubin」
 
-+   Vera Rubin的性能将达到Hopper的900倍，而Blackwell相较Hopper已实现了68倍的提升。
++ Vera Rubin的性能将达到Hopper的900倍，而Blackwell相较Hopper已实现了68倍的提升。
 
-+   Vera Rubin NVL144预计将在2026年下半年发布，英伟达还计划推出Rubin Ultra版本。
++ Vera Rubin NVL144预计将在2026年下半年发布，英伟达还计划推出Rubin Ultra版本。
 
 ### 人形机器人「Isaac GR00T N1」
 
-+   Isaac GR00T N1在大会上亮相，展示了其强大的功能和灵活性。
++ Isaac GR00T N1在大会上亮相，展示了其强大的功能和灵活性。
 
-+   一台搭载Newton平台的机器人「Blue」登上了舞台，能够用声音和动作与黄仁勋互动，外观神似《星球大战》中的BDX机器人。
++ 一台搭载Newton平台的机器人「Blue」登上了舞台，能够用声音和动作与黄仁勋互动，外观神似《星球大战》中的BDX机器人。
 
 这些产品的发布展示了英伟达在AI和机器人领域的强大实力和创新能力，为未来的技术发展和应用提供了新的方向。
 
 ![](img/568eb8228b0616dd2adb4198de1c67c4.png)
 
-# OpenAI发布语音Agent
+## OpenAI发布语音Agent
 
 3月21日凌晨1点，OpenAI在技术直播中发布了三款全新语音模型，专用于开发语音AI Agent。这三款模型包括两个语音转文本模型GPT-40 Transcribe和GPT-4 Mini Transcribe，以及一个文本转语音模型GPT-40 Mini TTS。OpenAI还开发了一个新网站来展示这些新功能。
 
 ### 三款语音模型介绍
 
-+   GPT-40 Transcribe：高性能版本，基于最新的语音模型架构，经过海量音频数据训练，能够处理复杂的语音信号并准确转换为文本。其训练数据量达到了前所未有的规模，涵盖多种语言和方言，使其在不同语言环境下的转录任务中表现出色。
++ GPT-40 Transcribe：高性能版本，基于最新的语音模型架构，经过海量音频数据训练，能够处理复杂的语音信号并准确转换为文本。其训练数据量达到了前所未有的规模，涵盖多种语言和方言，使其在不同语言环境下的转录任务中表现出色。
 
-+   GPT-4 Mini Transcribe：通过模型压缩技术，将模型大小大幅减小，提高了运行速度并降低了资源消耗。这种设计使其更适合在资源受限的设备上运行，例如移动设备或嵌入式系统，同时也能满足实时性要求较高的应用场景。
++ GPT-4 Mini Transcribe：通过模型压缩技术，将模型大小大幅减小，提高了运行速度并降低了资源消耗。这种设计使其更适合在资源受限的设备上运行，例如移动设备或嵌入式系统，同时也能满足实时性要求较高的应用场景。
 
-+   GPT-40 Mini TTS：不仅能够将文本内容转换为自然流畅的语音，还允许开发者通过指令控制语音的语调、情感和风格。这使得语音Agent能够根据不同的情境和用户需求调整语音的表达方式，从而更好地传达信息和情感。该模型支持多种语言，并能够生成不同性别、年龄和口音的语音，适应不同地区、不同文化背景的用户需求。
++ GPT-40 Mini TTS：不仅能够将文本内容转换为自然流畅的语音，还允许开发者通过指令控制语音的语调、情感和风格。这使得语音Agent能够根据不同的情境和用户需求调整语音的表达方式，从而更好地传达信息和情感。该模型支持多种语言，并能够生成不同性别、年龄和口音的语音，适应不同地区、不同文化背景的用户需求。
 
 ### API和SDK重大更新
 
@@ -90,7 +91,7 @@ OpenAI还对其SDK进行了重大更新，新的Agents SDK采用了模块化设�
 
 ![](img/07cd1ad129e3a6049367f3c64c720a4b.png)
 
-# OpenAI发布史上最贵模型o1-pro API，定价远超DeepSeek
+## OpenAI发布史上最贵模型o1-pro API，定价远超DeepSeek
 
 近日，OpenAI在其开发者API中推出了o1-pro模型。该模型相较于o1使用了更多的计算资源，旨在提供“更稳定、更优质的回答”。目前，o1-pro向Tier 1–5的特定开发者开放，支持视觉处理、函数调用、结构化输出，并兼容Responses API和Batch API。
 
@@ -104,7 +105,7 @@ Sam Altman曾预测，使用固定级别AI的成本大约每12个月骤降90%，
 
 ![](img/6891b21df723b8df896cc84a8c1f01fe.png)
 
-# GitHub CEO谈AI Agent对程序员的影响，未来将更个性化
+## GitHub CEO谈AI Agent对程序员的影响，未来将更个性化
 
 近日，GitHub CEO Thomas Dohmke在接受播客No Priors采访时表示，AI Agent的广泛采用需满足可预测、可操控、可验证和可容忍的标准。他认为，AI Agent的主要目的是提高用户效率，而非浪费时间，并需具备良好的推理模型和明确的开发流程。
 
@@ -114,7 +115,7 @@ Thomas还展望了AI Agent的未来，认为其将更加个性化，能够根据
 
 ![](img/5f60f31180f466aa8263da44050fe9f3.png)
 
-# 百度发布文心大模型4.5及X1
+## 百度发布文心大模型4.5及X1
 
 3月16日，百度正式发布文心大模型4.5及文心大模型X1。
 
@@ -126,7 +127,7 @@ Thomas还展望了AI Agent的未来，认为其将更加个性化，能够根据
 
 ![](img/6282c69bea9282cc03735ccba492330b.png)
 
-# Anthropic发布Claude联网搜索功能，强调安全与信息透明
+## Anthropic发布Claude联网搜索功能，强调安全与信息透明
 
 近日，Anthropic宣布其AI聊天机器人Claude现支持联网搜索功能。用户可启用「联网搜索」，在需要时自动联网提取信息，反馈结果中会提供直接引用来源，方便用户核实。值得注意的是，Claude的「联网搜索」并非Deep Research（深度研究）。
 

@@ -1,10 +1,11 @@
+
 # 任意主题的书籍，你只差一个prompt
 
 > 来源：[https://agispace.feishu.cn/docx/KOy6d4v5EoiTKwxxAeDcE5fznPc](https://agispace.feishu.cn/docx/KOy6d4v5EoiTKwxxAeDcE5fznPc)
 
 > 原创：AI 洞察笔记
 
-> 原文：https://mp.weixin.qq.com/s/cHX04Tf5dAveuXpW6KoIPQ
+> 原文：`https://mp.weixin.qq.com/s/cHX04Tf5dAveuXpW6KoIPQ`
 
 今天跟大家分享一个prompt提示词，可以直接让AI写出任意主题的书籍，是不是简直不敢相信？写书原来是一些专家学者才能胜任的高难度技能，而现在有了AI的加持，你甚至可以写出任意主题的书籍。这不仅是技术的飞跃，更是人类创造和获取知识方式的革命。在这个神奇的转变背后，隐藏着AI深度学习和自然语言处理技术的巨大进步。它如同一把魔法钥匙，开启了一扇通往未知和无限可能的大门。
 

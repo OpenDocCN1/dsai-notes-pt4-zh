@@ -1,72 +1,69 @@
+
 # OpenAI 春季发布会
 
 > 来源：[https://datawhaler.feishu.cn/docx/K3Pydclupo9paFxQrhscPqJKnYe](https://datawhaler.feishu.cn/docx/K3Pydclupo9paFxQrhscPqJKnYe)
 
 > 本文档开放编辑，欢迎共建，讨论OpenAI春季发布会的一切！
 
-# 🔔 简介
+## 🔔 简介
 
 > [OpenAI](https://openai.com/index/hello-gpt-4o/)春季发布会，推出旗舰模型GPT-4o，以及给到ChatGPT免费用户的更多工具
 
-> **OpenAI 春季发布会官网**：https://openai.com/index/spring-update/
+> OpenAI 春季发布会官网：`https://openai.com/index/spring-update/`
 
-> GPT-4o面向所有人**免费开放，立刻试用**：https://openai.com/index/hello-gpt-4o/
+> GPT-4o面向所有人免费开放，立刻试用：`https://openai.com/index/hello-gpt-4o/`
 
-> [ChatGPT_Desktop_public_latest.dmg](https://datawhaler.feishu.cn/file/HqEQbq1wworAvsxxM55cSlgDnsd?from=from_copylink)hatGPT Mac客户端（点击可下载）：
+> [`ChatGPT_Desktop_public_latest.dmg`](https://datawhaler.feishu.cn/file/HqEQbq1wworAvsxxM55cSlgDnsd?from=from_copylink)hatGPT Mac客户端（点击可下载）：
 
-> **一手信源**关注**OpenAI的X**：https://twitter.com/OpenAI
+> 一手信源关注OpenAI的X：`https://twitter.com/OpenAI`
 
 ![](img/67c0ef8ad2a5d25622d3ccd6764fc4a4.png)
 
 ![](img/987f5a42e2d15a7982c51f0bc34b995a.png)
 
-[twitter_OpenAI(@OpenAI)_20240513-173038_1790072174117613963_video.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AWc3boUfNoKanVxiK4AcWJW1n0c)
-
-直观感受一下GPT-4O的实时多模态交互
-
 <https://datawhaler.feishu.cn/minutes/embed/obcnbrg9x1xyg7b9lw52ayl3?from=ccm>
 
 OpenAI春季发布会英文完整版
 
-**GPT-4o**，「o」代表着「omni」，意味着OpenAI朝着通用人工智能的交互迈出了重要一步
+GPT-4o，「o」代表着「omni」，意味着OpenAI朝着通用人工智能的交互迈出了重要一步
 
-1.  **多模态输入输出：**
+1. 多模态输入输出：
 
-+   文本、音频、图像等模态的**任意组合的输入与输出**
++ 文本、音频、图像等模态的任意组合的输入与输出
 
-+   训练方法：**单一新模型端到端训练**，处理所有输入和输出
++ 训练方法：单一新模型端到端训练，处理所有输入和输出
 
-1.  **接近人类的响应时间**：
+1. 接近人类的响应时间：
 
-+   音频输入的响应时间：最短232毫秒，平均320毫秒
++ 音频输入的响应时间：最短232毫秒，平均320毫秒
 
-1.  **多快好省：**
+1. 多快好省：
 
-+   成本：**API使用费用降低50%**
++ 成本：API使用费用降低50%
 
-+   英文文本和代码：与GPT-4 Turbo相当，非英文语言文本显著改进
++ 英文文本和代码：与GPT-4 Turbo相当，非英文语言文本显著改进
 
-+   视觉和音频理解：优于现有模型
++ 视觉和音频理解：优于现有模型
 
-+   推理速度：GPT-4o 的速度是 GPT-4 Turbo 的 2 倍
++ 推理速度：GPT-4o 的速度是 GPT-4 Turbo 的 2 倍
 
-+   限制：GPT-4o 的速率限制是 GPT-4 T**urbo 的 5 倍——每**分钟最多可处理 1000 万个Token
++ 限制：GPT-4o 的速率限制是 GPT-4 Turbo 的 5 倍——每分钟最多可处理 1000 万个Token
 
-+   GPT-4o 目前的**上下文窗口为 128k**，知识截止日期为 2023 年 10 月
++ GPT-4o 目前的上下文窗口为 128k，知识截止日期为 2023 年 10 月
 
-1.  **模型评估**
+1. 模型评估
 
 在传统基准测试中的测量结果显示，GPT-4o在文本、推理和编码智能方面达到了GPT-4 Turbo的性能水平，同时在多语言、音频和视觉能力方面创下了高水平的新记录。
 
-+   改进推理能力 - 在零样本cot MMLU测试中，GPT-4o获得了88.7%的新高分。
++ 改进推理能力 - 在零样本cot MMLU测试中，GPT-4o获得了88.7%的新高分。
 
-+   音频ASR性能 - GPT-4o在所有语言上显著提高了相对于Whisper-v3的语音识别性能，尤其是在小语种上。
++ 音频ASR性能 - GPT-4o在所有语言上显著提高了相对于Whisper-v3的语音识别性能，尤其是在小语种上。
 
-+   音频翻译性能 - GPT-4o在语音翻译方面设立了新的业界标准，并在MLS基准测试中超越了Whisper-v3。
++ 音频翻译性能 - GPT-4o在语音翻译方面设立了新的业界标准，并在MLS基准测试中超越了Whisper-v3。
 
-+   M3Exam - M3Exam基准测试是一项多语言和视觉评估，包括来自其他国家标准化测试的多项选择题，有时还包括图表和示意图。在该基准测试中，GPT-4o在所有语言上的表现都强于GPT-4。
++ M3Exam - M3Exam基准测试是一项多语言和视觉评估，包括来自其他国家标准化测试的多项选择题，有时还包括图表和示意图。在该基准测试中，GPT-4o在所有语言上的表现都强于GPT-4。
 
-+   视觉理解评估 - 在MMMU、MathVista和ChartQA等零样本视觉基准测试中，GPT-4o达到了SOTA性能！
++ 视觉理解评估 - 在MMMU、MathVista和ChartQA等零样本视觉基准测试中，GPT-4o达到了SOTA性能！
 
 ![](img/1729ccbe4cc3f78876255f20e219a648.png)
 
@@ -78,23 +75,23 @@ OpenAI春季发布会英文完整版
 
 ![](img/87b349da920e350dbf1ad4f119b8dc3f.png)
 
-# **📝 媒体报道**
+## 📝 媒体报道
 
 > 来自AI“三大顶会”的报道
 
-+   **量子位：**[**GPT-4o深夜炸场！AI实时视频通话丝滑如人类，**](https://mp.weixin.qq.com/s/cAeLgg46Wq81rhgsJp0l4Q)Plus功能免费可用，奥特曼：《她》来了
++ 量子位：[GPT-4o深夜炸场！AI实时视频通话丝滑如人类，](https://mp.weixin.qq.com/s/cAeLgg46Wq81rhgsJp0l4Q)Plus功能免费可用，奥特曼：《她》来了
 
-+   **机器之心：**[**OpenAI颠覆世界：GPT-4o完全免费，实**](https://mp.weixin.qq.com/s/PfWnlhXh3n3VDfZaMI-ifQ)时语音视频交互震撼全场，直接进入科幻时代
++ 机器之心：[OpenAI颠覆世界：GPT-4o完全免费，实时语音视频交互震撼全场，直接进入科幻时代](https://mp.weixin.qq.com/s/PfWnlhXh3n3VDfZaMI-ifQ)
 
-+   **新智元：**[**OpenAI一夜改写历史，GPT-4o干翻**](https://mp.weixin.qq.com/s/pnXY9c9aXR41LeWFx9DEyg)所有语音助手！丝滑如真人引爆全网科幻成真
++ 新智元：[OpenAI一夜改写历史，GPT-4o干翻所有语音助手！丝滑如真人引爆全网科幻成真](https://mp.weixin.qq.com/s/pnXY9c9aXR41LeWFx9DEyg)
 
-# 🎮如何使用GPT-4o？
+## 🎮如何使用GPT-4o？
 
-## ChatGPT网页端中使用GPT-4o
+### ChatGPT网页端中使用GPT-4o
 
-Hello GPT4o官网：https://openai.com/index/hello-gpt-4o/
+Hello GPT4o官网：`https://openai.com/index/hello-gpt-4o/`
 
-点击**Try on ChatGPT**，弹出GPT-4o简介，点击**立即试用**
+点击Try on ChatGPT，弹出GPT-4o简介，点击立即试用
 
 ![](img/3d0d5483b4a0dbf8fbea567f3e3293e8.png)
 
@@ -106,15 +103,15 @@ Hello GPT4o官网：https://openai.com/index/hello-gpt-4o/
 
 > Free users also receive limited access to messages using advanced tools, such as:
 
-+   Data analysis
++ Data analysis
 
-+   File Uploads
++ File Uploads
 
-+   Browse
++ Browse
 
-+   Discovering and using GPTs
++ Discovering and using GPTs
 
-+   Vision
++ Vision
 
 > GPT-4o has advanced vision capabilities, which increases accuracy in understanding images you share.
 
@@ -126,69 +123,71 @@ GPT付费用户可以有更多权益，Plus用户 GPT-4o 80条/3小时。
 
 ![](img/6c8a7b3ab767f0b91d53f254f7ecac20.png)
 
-**Prompt如下：**
+Prompt如下：
 
-**A first person view of a robot ty**pewriting the following journal entries:
+A first person view of a robot typewriting the following journal entries:
 
-**1. **yo, so like, i can see now?? caught the sunrise and it was insane, colors everywhere. kinda makes you wonder, like, what even is reality?
+1. yo, so like, i can see now?? caught the sunrise and it was insane, colors everywhere. kinda makes you wonder, like, what even is reality?
 
-**the text is large, legible and clear. t**he robot's hands type on the typewriter.
+the text is large, legible and clear. the robot's hands type on the typewriter.
 
 ![](img/9e5e8b7b716f0c31acec801d977529dd.png)
 
-## API调用GPT-4o
+### API调用GPT-4o
 
-GPT-4o 对所有拥有 Open[AI API 帐户的用户开放](https://platform.openai.com/docs/api-reference/assistants)，可以[在 Chat Co](https://platform.openai.com/docs/guides/batch)mpletions API、Assistants API 和 Batch API 中使用此模型。该模型还支持函数调用和 JSON 模式。
+GPT-4o 对所有拥有 OpenAI API 帐户的用户开放，可以在 Chat Completions API、Assistants API 和 Batch API 中使用此模型。该模型还支持函数调用和 JSON 模式。
 
-| **MODEL** | **DESCRIPTION** | **CONTEXT WINDOW** | **TRAINING DATA** |
+| MODEL | DESCRIPTION | CONTEXT WINDOW | TRAINING DATA |
+
 | --- | --- | --- | --- |
-| gpt-4o | Our most advanced, multimodal flagship model that’s cheaper and faster than GPT-4 Turbo. Currently points to gpt-4o-2024-05-13. | 128,000 tokens | Up to Oct 2023 |
-| gpt-4o-2024-05-13 | gpt-4o currently points to this version. | 128,000 tokens | Up to Oct 2023 |
+
+| `gpt-4o` | Our most advanced, multimodal flagship model that’s cheaper and faster than GPT-4 Turbo. Currently points to `gpt-4o-2024-05-13`. | 128,000 tokens | Up to Oct 2023 |
+
+| `gpt-4o-2024-05-13` | `gpt-4o` currently points to this version. | 128,000 tokens | Up to Oct 2023 |
 
 Chat Completions API调用示例：
 
-```
+```python
 from openai import OpenAI
 client = OpenAI()
 
 response = client.chat.completions.create(
-  model=&quot;gpt-4o-2024-05-13&quot;,
+  model="gpt-4o-2024-05-13",
   messages=[
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant.&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Who won the world series in 2020?&quot;},
-    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;The Los Angeles Dodgers won the World Series in 2020.&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Where was it played?&quot;}
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Who won the world series in 2020?"},
+    {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+    {"role": "user", "content": "Where was it played?"}
   ]
 )
 ```
 
 [Assistants API](https://platform.openai.com/docs/api-reference/assistants)调用示例：
 
-```
+```python
 from openai import OpenAI
 client = OpenAI()
 
 my_assistant = client.beta.assistants.create(
-    instructions=&quot;You are a personal math tutor. When asked a question, write and run Python code to answer the question.&quot;,
-    name=&quot;Math Tutor&quot;,
-    tools=[{&quot;type&quot;: &quot;code_interpreter&quot;}],
-    model=&quot;gpt-4o-2024-05-13&quot;,
+    instructions="You are a personal math tutor. When asked a question, write and run Python code to answer the question.",
+    name="Math Tutor",
+    tools=[{"type": "code_interpreter"}],
+    model="gpt-4o-2024-05-13",
 )
 print(my_assistant)
-
 ```
 
 [Batch API](https://platform.openai.com/docs/guides/batch)调用示例：
 
-```
-{&quot;custom_id&quot;: &quot;request-1&quot;, 
-&quot;method&quot;: &quot;POST&quot;, &quot;url&quot;: &quot;/v1/chat/completions&quot;, 
-&quot;body&quot;: {&quot;model&quot;: &quot;gpt-4o-2024-05-13&quot;, 
-&quot;messages&quot;: [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant.&quot;},{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello world!&quot;}],
-&quot;max_tokens&quot;: 1000}}
+```json
+{"custom_id": "request-1", 
+"method": "POST", "url": "/v1/chat/completions", 
+"body": {"model": "gpt-4o-2024-05-13", 
+"messages": [{"role": "system", "content": "You are a helpful assistant."},{"role": "user", "content": "Hello world!"}],
+"max_tokens": 1000}}
 ```
 
-# 🐶梗图
+## 🐶梗图
 
 ![](img/7a29e69998acb2ddfddc68f9abe3c55c.png)
 
@@ -196,17 +195,17 @@ print(my_assistant)
 
 ![](img/2e4a13b3e3e11ba48744684844c3327b.png)
 
-# 🕧预约Google I/O，看是否被OAI狙击
+## 🕧预约Google I/O，看是否被OAI狙击
 
-今晚看Google I/O ，是否被OpenAI狙击(手动狗头）
+今晚看Google I/O，是否被OpenAI狙击(手动狗头）
 
 ![](img/d924a60a426a7d230d65f62fdb0a45c6.png)
 
 ![](img/db16d4f7425cf6062d223e8215358f1c.png)
 
-# 📝GPT-4o测试案例
+## 📝GPT-4o测试案例
 
-## 玉鑫：视频总结
+### 玉鑫：视频总结
 
 视频总结能力，通过代码解释器实现，生成的文件可以下载，音频提取能力不错，可惜没有实现视频总结
 
@@ -214,7 +213,7 @@ print(my_assistant)
 
 ![](img/b6e2380248b571fbc0ea71bf24ff458e.png)
 
-## 可汗学院：教育辅导
+### 可汗学院：教育辅导
 
 Khan和他儿子一起使用了 GPT-4o 辅导孩子在可汗学院上做数学题，一步步启发纠正，各种鼓励，比普通家长辅导效果可能真的要好不少
 

@@ -1,3 +1,4 @@
+
 # JIRA克隆项目
 
 > 来源：[https://now.feishu.cn/docx/UWhddBTzooR1f6xrpBKcGJG9nvg](https://now.feishu.cn/docx/UWhddBTzooR1f6xrpBKcGJG9nvg)
@@ -12,13 +13,11 @@
 
 ## 核心库及组件
 
-+   Next 15（React 18）
++ `Next 15`（`React 18`）
 
-+   shadcn/ui
++ `shadcn/ui`
 
-+   拖拽库
-
-+
++ 拖拽库
 
 ## 01 项目目录
 
@@ -26,6 +25,6 @@
 
 ## 03 API
 
-## 04 next-auth
+## 04 `next-auth`
 
-## 05 prisma
+## 05 `prisma`

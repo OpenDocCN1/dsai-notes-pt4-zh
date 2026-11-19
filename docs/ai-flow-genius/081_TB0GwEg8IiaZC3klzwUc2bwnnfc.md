@@ -1,3 +1,4 @@
+
 # 还记得那个要做你“人生搜索引擎”的App吗？它出了iPhone版，还集成了GPT-4
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/T9KXdQvNloJM0AxNgDmcp1Z2nTw](https://jalicvoygc0.feishu.cn/docx/T9KXdQvNloJM0AxNgDmcp1Z2nTw)
@@ -86,9 +87,9 @@ iPhone版上线时Siroker也在推特再度重申：
 
 Rewind引发的隐私顾虑也再次提醒开发者，随着技术的不断演进，尤其是AI时代的到来，任何的产品创新都必须更严肃地对待隐私和道德。开发者必须在开发阶段就将这些问题的潜在后果考虑在内，而不是等到问题出现才亡羊补牢。
 
-引用：https://mp.weixin.qq.com/s/zm62F7CTqeBdVmJTa7P-nQ
+引用：[https://mp.weixin.qq.com/s/zm62F7CTqeBdVmJTa7P-nQ](https://mp.weixin.qq.com/s/zm62F7CTqeBdVmJTa7P-nQ)
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容：
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

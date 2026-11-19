@@ -1,3 +1,4 @@
+
 # 7个作品6000+粉，可爱动物科普漫画账号，超级简单，你也做一个吧~
 
 > 来源：[https://agispace.feishu.cn/docx/UAnNd89meol8ZYxfsXwcudYenVb](https://agispace.feishu.cn/docx/UAnNd89meol8ZYxfsXwcudYenVb)
@@ -6,9 +7,7 @@
 
 > 原文链接：https://mp.weixin.qq.com/s/wePhnYY7sSkpB1150M4pSQ
 
-# 01
-
-**雅雅叨叨叨**
+## 01 雅雅叨叨叨
 
 大家好，我是雅雅，一个还在为理想和兴趣而不断学习成长，拥有两台豪华碎钞机的“中年少女”
 
@@ -20,9 +19,7 @@
 
 感兴趣的小伙伴，跟着雅雅一块看看制作流程吧。
 
-# 02
-
-**项目介绍**
+## 02 项目介绍
 
 先来看对标，只发了7篇笔记，而且都是图文的，只用了2个多月的时间就有6000+粉丝了，做号效率还挺高的嘛！
 
@@ -34,11 +31,9 @@
 
 ![](img/4fa7e1efbe0912c0a33deb1f32d7a10d.png)
 
-# 03
+## 03 实操经验
 
-**实操经验**
-
-第1步：打开工具https://h5.cxyhub.com/?invitation=Nmoazn&vip=4（收费软件）倒推提示词
+第1步：打开工具`https://h5.cxyhub.com/?invitation=Nmoazn&vip=4`（收费软件）倒推提示词
 
 ![](img/98377b8fd0ada0454c0a18fc5c075e65.png)
 
@@ -64,9 +59,7 @@
 
 ![](img/c793ed6d2913d01a4da4a4be280378f7.png)
 
-# 04
-
-**欢迎和雅雅链接，送上免费资料**
+## 04 欢迎和雅雅链接，送上免费资料
 
 ![](img/2bfd0d33ffc18702a1c075e249177eee.png)
 
@@ -76,4 +69,4 @@
 
 1：本文末尾点亮“在看” 或 点“赞”   2：关注本👸号，聊天对话发送：绘画     获取超过18000+个MJ关键词+书写教程
 
-**— THE END —**
+— THE END —

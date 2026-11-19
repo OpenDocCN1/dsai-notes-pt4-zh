@@ -1,18 +1,17 @@
+
 # 2023-11-15【招联智鹿】消费金融发布开源大模型
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Pu9xdHF7ZotlbjxG0ERckBdrnXc](https://xuqiwei1986.feishu.cn/docx/Pu9xdHF7ZotlbjxG0ERckBdrnXc)
+> 来源：https://xuqiwei1986.feishu.cn/docx/Pu9xdHF7ZotlbjxG0ERckBdrnXc
 
-> 🔗 原文链接： h[ttps://baijiahao.b](https://baijiahao.baidu.com/s?id=1782613955418894584&wfr=spider&for=pc)aidu.com/s?id=17...
+> 🔗 原文链接：https://baijiahao.baidu.com/s?id=1782613955418894584&wfr=spider&for=pc
 
 |序号|公司|大模型|省市|类别|官网|说明|
-
+|---|---|---|---|---|---|---|
 |190|招联消费金融|招联智鹿ZhiLu-13B|广东省深圳|金融大模型|--|招联消费金融、中山大学联合研发推出|
-
 |188|安恒信息|恒脑|浙江杭州|信息安全|✘|恒脑安全大模型具备恶意代码检测、威胁情报分析、自动化安全编排响应和安全教育等能力|
-
 |189|容联云|赤兔|北京|客服|✘|客服，营销|
 
-加速金融数智化转型，招联消费金融发布开源大模型“招联智鹿”
+## 加速金融数智化转型，招联消费金融发布开源大模型“招联智鹿”
 
 近阶段，招联金融在金融科技前沿课题研究方面捷报频传。在2023年国际计算机视觉会议ICCV上，招联与中科大完成的“3D动作表示学习”“扩散生成图像检测”2篇论文在该顶会发表。其中，团队针对深度伪造技术首创的“DIRE”模型，达到SOTA（该项研究任务中最先进）水平，得到国际级平台的官方认可。近日，招联更是发布业界首个开源大模型“招联智鹿”，在“大模型”赛道走在行业前沿。
 
@@ -34,4 +33,9 @@
 
 大家都在搜
 
-[招联金融有新出产品吗 ](https://baidu.com/s?word=%E6%8B%9B%E8%81%94%E9%87%91%E8%9E%8D%E6%9C%89%E6%96%B0%E5%87%BA%E4%BA%A7%E5%93%81%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[互联网消费金融有哪些 ](https://baidu.com/s?word=%E4%BA%92%E8%81%94%E7%BD%91%E6%B6%88%E8%B4%B9%E9%87%91%E8%9E%8D%E6%9C%89%E5%93%AA%E4%BA%9B&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[消费金融公司设立流程 ](https://baidu.com/s?word=%E6%B6%88%E8%B4%B9%E9%87%91%E8%9E%8D%E5%85%AC%E5%8F%B8%E8%AE%BE%E7%AB%8B%E6%B5%81%E7%A8%8B&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[做联通招联有什么影响 ](https://baidu.com/s?word=%E5%81%9A%E8%81%94%E9%80%9A%E6%8B%9B%E8%81%94%E6%9C%89%E4%BB%80%E4%B9%88%E5%BD%B1%E5%93%8D&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[金融科技的发展趋势 ](https://baidu.com/s?word=%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[互联金融](https://baidu.com/s?word=%E4%BA%92%E8%81%94%E9%87%91%E8%9E%8D&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[招联金融有新出产品吗 ](https://baidu.com/s?word=%E6%8B%9B%E8%81%94%E9%87%91%E8%9E%8D%E6%9C%89%E6%96%B0%E5%87%BA%E4%BA%A7%E5%93%81%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[互联网消费金融有哪些 ](https://baidu.com/s?word=%E4%BA%92%E8%81%94%E7%BD%91%E6%B6%88%E8%B4%B9%E9%87%91%E8%9E%8D%E6%9C%89%E5%93%AA%E4%BA%9B&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[消费金融公司设立流程 ](https://baidu.com/s?word=%E6%B6%88%E8%B4%B9%E9%87%91%E8%9E%8D%E5%85%AC%E5%8F%B8%E8%AE%BE%E7%AB%8B%E6%B5%81%E7%A8%8B&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[做联通招联有什么影响 ](https://baidu.com/s?word=%E5%81%9A%E8%81%94%E9%80%9A%E6%8B%9B%E8%81%94%E6%9C%89%E4%BB%80%E4%B9%88%E5%BD%B1%E5%93%8D&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[金融科技的发展趋势 ](https://baidu.com/s?word=%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[互联金融](https://baidu.com/s?word=%E4%BA%92%E8%81%94%E9%87%91%E8%9E%8D&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)

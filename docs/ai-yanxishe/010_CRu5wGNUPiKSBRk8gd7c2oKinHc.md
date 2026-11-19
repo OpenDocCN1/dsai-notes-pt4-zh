@@ -1,3 +1,4 @@
+
 # 借助GPT10分钟完成业务模块全流程开发
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/YHJVd4C6HonpPUxo5UwcrzLAn8e](https://aiyanxishe.feishu.cn/docx/YHJVd4C6HonpPUxo5UwcrzLAn8e)
@@ -5,13 +6,13 @@
 ## 程序员AI破局简介
 
 > [《程序员AI破局指南》](https://t.zsxq.com/19EOflzkQ)由字节、百度、阿里等互联网大厂的AI业务相关高管共创，分享开箱即用、面向市场的AI编程知识和工具。
-
-> 指南包括六个专栏:**AI编程实战、AI编程工具、AI高效办公、A**I副业赚钱、AI提示词工程、AI私人助手
-
+>
+> 指南包括六个专栏：**AI编程实战、AI编程工具、AI高效办公、AI副业赚钱、AI提示词工程、AI私人助手**
+>
 > [程序员AI破局指南](https://t.zsxq.com/19EOflzkQ) 原价 599 元，限时特惠 199 元/年，5月1日恢复原价。
-
+>
 > 加入我们：https://t.zsxq.com/19EOflzkQ
-
+>
 > 购买后，添加群主🛰️加入 AI研习社陪伴社群，限时领取超值福利。
 
 ## 一.前言
@@ -42,7 +43,7 @@
 
 ## 三.数据库建模
 
-针对上述内容中的数据库建模部分，我希望你针对登录模块的功能，按照业内数据库建模规范和最佳实践给我写一份数据库建模表格文档，包含表名、列名、数据类型、约束条件、描述、枚举值（用数字代替），ID不是自增，使用雪花ID算法生成，标准字段：create_time、update_time、deleted，我的数据库是MySQL8，相关的字段comment注释、表comment注释、需要建立索引的也需要加上，建表语句和索引语句也请告诉我。
+针对上述内容中的数据库建模部分，我希望你针对登录模块的功能，按照业内数据库建模规范和最佳实践给我写一份数据库建模表格文档，包含表名、列名、数据类型、约束条件、描述、枚举值（用数字代替），`ID`不是自增，使用雪花ID算法生成，标准字段：`create_time`、`update_time`、`deleted`，我的数据库是MySQL8，相关的字段`comment`注释、表`comment`注释、需要建立索引的也需要加上，建表语句和索引语句也请告诉我。
 
 ![](img/74b446e6f06d3aa97da9cea4060a3e51.png)
 
@@ -56,91 +57,90 @@
 
 接口文档记录了API的用法和限制，确保客户端和服务器端正确地交互，提高代码重用性和可维护性。
 
-按照前面生成的表结构来分析，如果需要你设计一份标准的登录模块的基于RESTful接口文档，每一个接口都需要
-
-进行分析和论证必要性和设计合理性，请列出所需的接口。要求：返回OpenAPI规范JSON格式，描述信息需要中文
+按照前面生成的表结构来分析，如果需要你设计一份标准的登录模块的基于RESTful接口文档，每一个接口都需要进行分析和论证必要性和设计合理性，请列出所需的接口。要求：返回OpenAPI规范JSON格式，描述信息需要中文
 
 ![](img/55cd17baebd8bf7ae835a608d5d2d6c6.png)
 
 ![](img/f3ac8de2a1a9093bff2607b2a8322cd3.png)
 
-```
 以下是这些接口的OpenAPI规范JSON格式的一个示例概要：
+
+```
 {
-  &quot;openapi&quot;: &quot;3.0.0&quot;,
-  &quot;info&quot;: {
-    &quot;title&quot;: &quot;登录模块API&quot;,
-    &quot;description&quot;: &quot;为登录模块提供的RESTful API接口。&quot;,
-    &quot;version&quot;: &quot;1.0.0&quot;
+  "openapi": "3.0.0",
+  "info": {
+    "title": "登录模块API",
+    "description": "为登录模块提供的RESTful API接口。",
+    "version": "1.0.0"
   },
-  &quot;paths&quot;: {
-    &quot;/login&quot;: {
-      &quot;post&quot;: {
-        &quot;summary&quot;: &quot;用户登录&quot;,
-        &quot;description&quot;: &quot;用户使用用户名和密码进行登录。&quot;,
-        &quot;requestBody&quot;: {
-          &quot;required&quot;: true,
-          &quot;content&quot;: {
-            &quot;application/json&quot;: {
-              &quot;schema&quot;: {
-                &quot;type&quot;: &quot;object&quot;,
-                &quot;properties&quot;: {
-                  &quot;username&quot;: {
-                    &quot;type&quot;: &quot;string&quot;
+  "paths": {
+    "/login": {
+      "post": {
+        "summary": "用户登录",
+        "description": "用户使用用户名和密码进行登录。",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
                   },
-                  &quot;password&quot;: {
-                    &quot;type&quot;: &quot;string&quot;
+                  "password": {
+                    "type": "string"
                   }
                 }
               }
             }
           }
         },
-        &quot;responses&quot;: {
-          &quot;200&quot;: {
-            &quot;description&quot;: &quot;登录成功&quot;
+        "responses": {
+          "200": {
+            "description": "登录成功"
           },
-          &quot;401&quot;: {
-            &quot;description&quot;: &quot;认证失败&quot;
+          "401": {
+            "description": "认证失败"
           }
         }
       }
     },
-    &quot;/register&quot;: {
-      &quot;post&quot;: {
-        &quot;summary&quot;: &quot;用户注册&quot;,
-        &quot;description&quot;: &quot;新用户注册。&quot;,
-        &quot;requestBody&quot;: {
-          &quot;required&quot;: true,
-          &quot;content&quot;: {
-            &quot;application/json&quot;: {
-              &quot;schema&quot;: {
-                &quot;type&quot;: &quot;object&quot;,
-                &quot;properties&quot;: {
-                  &quot;username&quot;: {
-                    &quot;type&quot;: &quot;string&quot;
+    "/register": {
+      "post": {
+        "summary": "用户注册",
+        "description": "新用户注册。",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
                   },
-                  &quot;password&quot;: {
-                    &quot;type&quot;: &quot;string&quot;
+                  "password": {
+                    "type": "string"
                   },
-                  &quot;email&quot;: {
-                    &quot;type&quot;: &quot;string&quot;
+                  "email": {
+                    "type": "string"
                   }
                 }
               }
             }
           }
         },
-        &quot;responses&quot;: {
-          &quot;200&quot;: {
-            &quot;description&quot;: &quot;注册成功&quot;
+        "responses": {
+          "200": {
+            "description": "注册成功"
           },
-          &quot;400&quot;: {
-            &quot;description&quot;: &quot;请求参数错误&quot;
+          "400": {
+            "description": "请求参数错误"
           }
         }
       }
-    },
+    }
     // 其他接口的定义类似
   }
 }
@@ -162,7 +162,7 @@
 
 做过开发的朋友都知道，其实单元测试是非常耗费时间的一个环节。有时候开发一个功能可能1小时就能完成，但写单元测试可能会远超开发时间，现在有了GPT，单元测试就so easy了！
 
-针对上述的login方法，帮我写一个单元测试用例，要求：核心代码需要加上适当的中文注释。
+针对上述的`login()`方法，帮我写一个单元测试用例，要求：核心代码需要加上适当的中文注释。
 
 ![](img/21f646102fba1b2b6627e24f03bf2a3b.png)
 

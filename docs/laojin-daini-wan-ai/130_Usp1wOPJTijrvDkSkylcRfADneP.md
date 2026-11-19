@@ -1,3 +1,4 @@
+
 # IOS（苹果）安装教学！
 
 > 来源：[https://my.feishu.cn/docx/CeRWduFmJotSFax64Vhc6swDnHb](https://my.feishu.cn/docx/CeRWduFmJotSFax64Vhc6swDnHb)
@@ -14,9 +15,9 @@ ChatGPT 在中国区的 苹果和安卓商店都没有上线。
 
 今天，我们来教学 IOS（苹果）的美区账号申请，和下载 ChatGPT 流程。
 
-## 一、注册美区 Apple ID。
+## 一、注册美区 `AppleID`。
 
-进入 AppleID 官网 https://appleid.apple.com/，在左上角找到“创建你的 Apple ID”
+进入 `AppleID` 官网 `https://appleid.apple.com/`，在左上角找到“创建你的 Apple ID”
 
 ![](img/86057d5b17316ec8ab50300fb572a01e.png)
 
@@ -24,19 +25,14 @@ ChatGPT 在中国区的 苹果和安卓商店都没有上线。
 
 ![](img/87d303d7871c988b98f41599ff6dbcb6.png)
 
-**注意事项：**
+### 注意事项：
 
-+   姓名不要用中文。
-
-+   国家就填成“美国”。
-
-+   生日要大于 18 岁。
-
-+   邮箱不能用以前注册过 Apple ID 的。
-
-+   密码中不要出现如生日之类的个人敏感信息，否则后面的验证会失败，要重来。
-
-+   手机号码用自己的真实手机号。
+- 姓名不要用中文。
+- 国家就填成“美国”。
+- 生日要大于 18 岁。
+- 邮箱不能用以前注册过 Apple ID 的。
+- 密码中不要出现如生日之类的个人敏感信息，否则后面的验证会失败，要重来。
+- 手机号码用自己的真实手机号。
 
 然后点击注册，就会给邮箱和手机分别发送验证码，只要审核通过就可以。
 
@@ -48,7 +44,7 @@ ChatGPT 在中国区的 苹果和安卓商店都没有上线。
 
 恭喜你！现在，你已经拥有一个美区账号了。
 
-## 二、**下载 ChatGPT**
+## 二、下载 ChatGPT
 
 打开 APP Store，点击搜索，右上角。
 

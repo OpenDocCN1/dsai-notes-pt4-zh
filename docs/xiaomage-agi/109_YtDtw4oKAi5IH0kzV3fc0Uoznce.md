@@ -1,50 +1,51 @@
-# 实战操作： 62个咒语调教-时尚杂志封面
+
+# 实战操作：62个咒语调教-时尚杂志封面
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/EwwsdoeO2olZyKxaU7bcTicbnPK](https://xmgtoagi.feishu.cn/docx/EwwsdoeO2olZyKxaU7bcTicbnPK)
 
-**今天来给**大家分享，如何用sd简单的咒语输出好看的图片的教程，今天做的是时尚杂志专题，话不多说直入主题。
+今天来给大家分享，如何用`sd`简单的咒语输出好看的图片的教程，今天做的是时尚杂志专题，话不多说直入主题。
 
 ![](img/0df58eda238055245f15af67b13c2c7f.png)
 
 本文生成的素材图片已上传网盘，需要的可自取：
 
-20230715时尚杂志专题夸克网盘下载链接：https://pan.quark.cn/s/a29b917bb23d
+`https://pan.quark.cn/s/a29b917bb23d`
 
-用到的模型：「Stable Diffusion资料」链接：https://pan.quark.cn/s/2750beda9269
+用到的模型：`Stable Diffusion`资料，链接：`https://pan.quark.cn/s/2750beda9269`
 
 ![](img/d8d3767377999871c97de352a76036c6.png)
 
-# 一、基本设置：
+## 一、基本设置
 
-**正向提示词：**
+### 正向提示词
 
-画质：Highest quality, ultra-high definition, masterpieces, 8k quality,
+画质：`Highest quality`, `ultra-high definition`, `masterpieces`, `8k quality`，
 
-画面主题：1girl,young beautiful girl,White skin,long legs, delicate skin, big eyes, ultra detailed, official art, unity 8k wallpaper,
+画面主题：`1girl`, `young beautiful girl`, `White skin`, `long legs`, `delicate skin`, `big eyes`, `ultra detailed`, `official art`, `unity 8k wallpaper`，
 
-核心风格：(fashion magazine cover:1.3),
+核心风格：`(fashion magazine cover:1.3)`，
 
 穿搭：见下面每一个咒语
 
-**反向提示词：**
+### 反向提示词
 
-EasyNegative, (worst quality, low quality:1.4), nsfw, badhandv4,  ng_deepnegative_v1_75t,
+`EasyNegative`, `(worst quality, low quality:1.4)`, `nsfw`, `badhandv4`, `ng_deepnegative_v1_75t`，
 
-(worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), bad anatomy,DeepNegative, skin spots, acnes, skin blemishes,(fat:1.2),facing away, looking away,tilted head, lowres,bad anatomy,bad hands, missing fingers,extra digit, fewer digits,bad feet,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,missing arms,missing legs,extra digit, extra arms, extra leg, extra foot,teethcroppe,signature, watermark, username,blurry,cropped,jpeg artifacts,text,error,
+`(worst quality:2)`, `(low quality:2)`, `(normal quality:2)`, `lowres`, `((monochrome))`, `((grayscale))`, `bad anatomy`, `DeepNegative`, `skin spots`, `acnes`, `skin blemishes`, `(fat:1.2)`, `facing away`, `looking away`, `tilted head`, `lowres`, `bad anatomy`, `bad hands`, `missing fingers`, `extra digit`, `fewer digits`, `bad feet`, `poorly drawn hands`, `poorly drawn face`, `mutation`, `deformed`, `extra fingers`, `extra limbs`, `extra arms`, `extra legs`, `malformed limbs`, `fused fingers`, `too many fingers`, `long neck`, `cross-eyed`, `mutated hands`, `polar lowres`, `bad body`, `bad proportions`, `gross proportions`, `missing arms`, `missing legs`, `extra digit`, `extra arms`, `extra leg`, `extra foot`, `teethcroppe`, `signature`, `watermark`, `username`, `blurry`, `cropped`, `jpeg artifacts`, `text`, `error`，
 
-**设置：**
+### 设置
 
-**模型 ：**
+#### 模型
 
-Chillout(真人模型), revAnimated，breakdro，anything-v5-PrtRE等。
+`Chillout`(真人模型), `revAnimated`, `breakdro`, `anything-v5-PrtRE`等。
 
-VAE推荐使用：vae-ft-mse-840000-ema-pruned.safetensors，clip终止层数：2
+VAE推荐使用：`vae-ft-mse-840000-ema-pruned.safetensors`，`clip`终止层数：2
 
-迭代步数(steps):  25-32
+迭代步数(`steps`): 25-32
 
-采样方法(Sampler):  DPM++ 2M Karras,DPM++ SDE Karras 等等
+采样方法(`Sampler`): `DPM++ 2M Karras`, `DPM++ SDE Karras` 等等
 
-宽高：512*768
+宽高：`512*768`
 
 总批次数：2
 
@@ -52,289 +53,277 @@ VAE推荐使用：vae-ft-mse-840000-ema-pruned.safetensors，clip终止层数：
 
 提示词引导系数：7
 
-随机数种子(seed)：-1
+随机数种子(`seed`): -1
 
 设置完成出图：
 
 ![](img/9b165ac0a4290515fcbe617fb6c0e2a2.png)
 
-**关键词，采样器和模型测试**
+关键词，采样器和模型测试
 
 ![](img/64258791c852e34abece69d96d29af2b.png)
 
-# 二、咒语及出图
+## 二、咒语及出图
 
-## 风格搭配
+### 风格搭配
 
-### 1.都市摩登
+#### 1. 都市摩登
 
-**描述：****这套衣服****包括一个紧身的**黑色皮质迷你裙，一件简洁的白色紧身上衣，以及一双高跟鞋。配饰上，一条闪耀的金色链带提升了整体造型的豪华感。
+描述：这套衣服包括一个紧身的黑色皮质迷你裙，一件简洁的白色紧身上衣，以及一双高跟鞋。配饰上，一条闪耀的金色链带提升了整体造型的豪华感。
 
 关键词：黑色皮质迷你裙，白色紧身上衣，高跟鞋，金色链带
 
-Prompt：black leather miniskirt, white fitted top, high heels, gold chain belt
+`Prompt`：`black leather miniskirt, white fitted top, high heels, gold chain belt`
 
 ![](img/1698e481ab72782f34b8d5fe58a1e7d4.png)
 
-### 2.休闲海滩
+#### 2. 休闲海滩
 
-**
-
-描述****：这是一****套完美的海滩服**装，包括一件宽松的蓝白条纹连衣裙，一双棕色的草编凉鞋，和一顶阔边草帽。搭配上一个手工编织的海草包，你就准备好去海边度假了。
+描述：这是一套完美的海滩服装，包括一件宽松的蓝白条纹连衣裙，一双棕色的草编凉鞋，和一顶阔边草帽。搭配上一个手工编织的海草包，你就准备好去海边度假了。
 
 关键词：蓝白条纹连衣裙，棕色草编凉鞋，阔边草帽，手工编织的海草包
 
-Prompt：blue and white striped dress, brown woven sandals, wide-brimmed straw hat, hand-woven seagrass bag
+`Prompt`：`blue and white striped dress, brown woven sandals, wide-brimmed straw hat, hand-woven seagrass bag`
 
 ![](img/a439789d3836d7851f00f87b03f04483.png)
 
-### 3.高级商务
+#### 3. 高级商务
 
-**
-
-描述****：这套服****装包括一件黑色**修身西装外套，一件白色衬衫，一条黑色直筒裤和一双黑色牛津鞋。配以红色丝质领带，为整体商务感增加了一丝活力。
+描述：这套服装包括一件黑色修身西装外套，一件白色衬衫，一条黑色直筒裤和一双黑色牛津鞋。配以红色丝质领带，为整体商务感增加了一丝活力。
 
 关键词：黑色修身西装外套，白色衬衫，黑色直筒裤，黑色牛津鞋，红色丝质领带
 
-Prompt：black tailored suit jacket, white shirt, black straight-leg trousers, black oxford shoes, red silk tie
+`Prompt`：`black tailored suit jacket, white shirt, black straight-leg trousers, black oxford shoes, red silk tie`
 
 ![](img/799aae850fcbd7a289f36428217d22bd.png)
 
-###  4.复古酷女
+#### 4. 复古酷女
 
-**
-
-描述****：这套服****装包括一件红色**波点连衣裙，一双黑色皮质短靴，以及一个黑色伞形帽。复古的氛围和现代的酷感相结合，独特而引人注目。
+描述：这套服装包括一件红色波点连衣裙，一双黑色皮质短靴，以及一个黑色伞形帽。复古的氛围和现代的酷感相结合，独特而引人注目。
 
 关键词：红色波点连衣裙，黑色皮质短靴，黑色伞形帽
 
-Prompt：red polka dot dress, black leather ankle boots, black umbrella hat
+`Prompt`：`red polka dot dress, black leather ankle boots, black umbrella hat`
 
 ![](img/258f602529af75094f406c4a1a6b9677.png)
 
-### 5.轻松休闲
+#### 5. 轻松休闲
 
-**
-
-描述****：这套服****装包括一件柔软**的灰色圆领毛衣，一条蓝色牛仔裤，以及一双白色运动鞋。搭配简单的黑色帆布包，是城市休闲风的完美体现。
+描述：这套服装包括一件柔软的灰色圆领毛衣，一条蓝色牛仔裤，以及一双白色运动鞋。搭配简单的黑色帆布包，是城市休闲风的完美体现。
 
 关键词：灰色圆领毛衣，蓝色牛仔裤，白色运动鞋，黑色帆布包
 
-Prompt：grey round-neck sweater, blue jeans, white sneakers, black canvas bag
+`Prompt`：`grey round-neck sweater, blue jeans, white sneakers, black canvas bag`
 
 ![](img/1e77a0926de567961ebccf5c4d5a6c63.png)
 
-### 6.华丽夜晚
+#### 6. 华丽夜晚
 
-**
-
-描述****：这套服****装包括一件黑色**紧身短裙，一件亮片装饰的深V领上衣，以及一双黑色高跟鞋。加上一条闪亮的钻石项链，完美打造出夜晚的华丽造型。
+描述：这套服装包括一件黑色紧身短裙，一件亮片装饰的深V领上衣，以及一双黑色高跟鞋。加上一条闪亮的钻石项链，完美打造出夜晚的华丽造型。
 
 关键词：黑色紧身短裙，亮片深V领上衣，黑色高跟鞋，钻石项链
 
-Prompt：black tight mini skirt, sequin embellished deep V-neck top, black high heels, diamond necklace
+`Prompt`：`black tight mini skirt, sequin embellished deep V-neck top, black high heels, diamond necklace`
 
 ![](img/2760e2526fe16f59cff451b8e26eaba4.png)
 
-### 7.时髦运动
+#### 7. 时髦运动
 
-**描述：****这套服装****包括一件黑色运**动夹克，一条灰色运动裤，以及一双白色运动鞋。搭配鲜亮的橙色运动背包，完美诠释了活力四溢的运动风格。
+描述：这套服装包括一件黑色运动夹克，一条灰色运动裤，以及一双白色运动鞋。搭配鲜亮的橙色运动背包，完美诠释了活力四溢的运动风格。
 
 关键词：黑色运动夹克，灰色运动裤，白色运动鞋，橙色运动背包
 
-Prompt：black sports jacket, grey sweatpants, white sneakers, orange sports backpack
+`Prompt`：`black sports jacket, grey sweatpants, white sneakers, orange sports backpack`
 
 ![](img/7a9608083bbaf3c49e1a4025f35a120e.png)
 
-### 8.摩登女士
+#### 8. 摩登女士
 
-**
-
-描述****：这套服****装包括一件黄色**紧身连衣裙，一双金色高跟鞋，以及一个淡紫色的小手提包。华丽的金色耳环和精致的手镯使整体造型更显典雅。
+描述：这套服装包括一件黄色紧身连衣裙，一双金色高跟鞋，以及一个淡紫色的小手提包。华丽的金色耳环和精致的手镯使整体造型更显典雅。
 
 关键词：黄色紧身连衣裙，金色高跟鞋，淡紫色手提包，金色耳环，精致手镯
 
-Prompt：yellow bodycon dress, gold high heels, lilac handbag, gold earrings, delicate bracelet
+`Prompt`：`yellow bodycon dress, gold high heels, lilac handbag, gold earrings, delicate bracelet`
 
 ![](img/93ad644b6305a2e49fea98cd1298ae51.png)
 
-### 9.浪漫波希米亚
+#### 9. 浪漫波希米亚
 
-**
-
-描述****：这套服****装包括一件花卉**图案的长裙，一件白色松垮的衬衫，以及一双棕色的草编凉鞋。搭配手工编织的草帽和布满珠宝的长颈链，打造出充满艺术感的波希米亚风格。
+描述：这套服装包括一件花卉图案的长裙，一件白色松垮的衬衫，以及一双棕色的草编凉鞋。搭配手工编织的草帽和布满珠宝的长颈链，打造出充满艺术感的波希米亚风格。
 
 关键词：花卉图案长裙，白色松垮衬衫，棕色草编凉鞋，手工编织草帽，珠宝长颈链
 
-Prompt：floral patterned maxi skirt, loose white shirt, brown woven sandals, hand-woven straw hat, bejeweled long necklace
+`Prompt`：`floral patterned maxi skirt, loose white shirt, brown woven sandals, hand-woven straw hat, bejeweled long necklace`
 
 ![](img/81ab9cc0537d92c6d09f74b75b9dd62a.png)
 
-### 10.冰雪奇缘：
+#### 10. 冰雪奇缘
 
 风格：冰雪奇缘
 
-**描述**：这套服装包括一件白色的雪地靴，一件银色的羽绒服，以及一个蓝色的雪花图案围巾。配上一顶白色的毛线帽，给人一种冬日的温暖感觉。
+描述：这套服装包括一件白色的雪地靴，一件银色的羽绒服，以及一个蓝色的雪花图案围巾。配上一顶白色的毛线帽，给人一种冬日的温暖感觉。
 
-**关键词**：白色雪地靴，银色羽绒服，蓝色雪花图案围巾，白色毛线帽
+关键词：白色雪地靴，银色羽绒服，蓝色雪花图案围巾，白色毛线帽
 
-**Prompt**：white snow boots, silver down jacket, blue snowflake patterned scarf, white knitted hat
+`Prompt`：`white snow boots, silver down jacket, blue snowflake patterned scarf, white knitted hat`
 
 ![](img/719c61b6f11ea69ec3c0775f98deaadf.png)
 
-###
-
-### 11.风格：典雅复古
+#### 11. 风格：典雅复古
 
 描述：这套服装包括一件紫色的蕾丝连衣裙，一双银色的高跟鞋，以及一个黑色的小手提包。配上一颗珍珠项链，散发出复古的魅力。
 
 关键词：深紫色细蕾丝连衣裙，银色闪亮高跟鞋，黑色皮质小手提包，复古风格珍珠项链
 
-Prompt：deep purple delicate lace dress, shiny silver high heels, black leather mini handbag, vintage style pearl necklace
+`Prompt`：`deep purple delicate lace dress, shiny silver high heels, black leather mini handbag, vintage style pearl necklace`
 
 ![](img/3855efbb102fbb19035ff6f2bd29dc98.png)
 
 ![](img/063b7d3014152d0ca570520619d86144.png)
 
-### 12.都市炫酷：
+#### 12. 都市炫酷
 
 风格：都市炫酷
 
-**描述**：这套服装包括一条黑色的皮裤，一件红色的皮夹克，以及一双黑色的军靴。加上一条闪光的金色项链，展示出一种都市炫酷的风格。
+描述：这套服装包括一条黑色的皮裤，一件红色的皮夹克，以及一双黑色的军靴。加上一条闪光的金色项链，展示出一种都市炫酷的风格。
 
-**关键词**：黑色皮裤，红色皮夹克，黑色军靴，金色项链
+关键词：黑色皮裤，红色皮夹克，黑色军靴，金色项链
 
-**Prompt**：black leather pants, red leather jacket, black combat boots, gold necklace
+`Prompt`：`black leather pants, red leather jacket, black combat boots, gold necklace`
 
 ![](img/7eef50a81cff5f3a6318fd80e87dddf5.png)
 
-## 衣服穿搭Model1
+### 衣服穿搭`Model1`
 
-### 1.风格：碎花裙
+#### 1. 风格：碎花裙
 
-**描述**：这套服装以一条碎花裙为亮点，展现出浪漫和女性化的风格。搭配一件白色的简约上衣和一双粉色的高跟鞋，呈现出甜美而时尚的形象。
+描述：这套服装以一条碎花裙为亮点，展现出浪漫和女性化的风格。搭配一件白色的简约上衣和一双粉色的高跟鞋，呈现出甜美而时尚的形象。
 
-**关键词**：碎花裙，白色简约上衣，粉色高跟鞋
+关键词：碎花裙，白色简约上衣，粉色高跟鞋
 
-**Prompt**：floral dress, white minimalist top, pink high heels
+`Prompt`：`floral dress, white minimalist top, pink high heels`
 
-(floral dress1.1), denim jacket, white sneakers
+`(floral dress1.1), denim jacket, white sneakers`
 
 ![](img/0caae697a9d507c633a54daa2066defe.png)
 
-### 2.风格：短上衣
+#### 2. 风格：短上衣
 
-**描述**：这套服装以一件短款上衣为亮点，展现出时尚和年轻的风格。搭配一条高腰阔腿裤和一双凉鞋，呈现出时尚又舒适的形象。
+描述：这套服装以一件短款上衣为亮点，展现出时尚和年轻的风格。搭配一条高腰阔腿裤和一双凉鞋，呈现出时尚又舒适的形象。
 
-**关键词**：短上衣，高腰阔腿裤，凉鞋
+关键词：短上衣，高腰阔腿裤，凉鞋
 
-**Prompt**：crop top, high-waisted wide-leg pants, sandals
+`Prompt`：`crop top, high-waisted wide-leg pants, sandals`
 
-high-waisted jeans, cropped top, ankle boots
+`high-waisted jeans, cropped top, ankle boots`
 
 ![](img/70a3f0128d106f3fa89cda94f3290ed0.png)
 
 ![](img/e4564050789f962310d1d560015e88a6.png)
 
-### 3.风格：中长及膝裙
+#### 3. 风格：中长及膝裙
 
-**描述**：这套服装以一条中长及膝的裙子为亮点，展现出优雅和女性化的风格。搭配一件精致的丝质上衣和一双尖头高跟鞋，呈现出时尚又典雅的形象。
+描述：这套服装以一条中长及膝的裙子为亮点，展现出优雅和女性化的风格。搭配一件精致的丝质上衣和一双尖头高跟鞋，呈现出时尚又典雅的形象。
 
-**关键词**：中长及膝裙，丝质上衣，尖头高跟鞋
+关键词：中长及膝裙，丝质上衣，尖头高跟鞋
 
-**Prompt**：midi skirt, silk blouse, pointed-toe heels
+`Prompt`：`midi skirt, silk blouse, pointed-toe heels`
 
-midi skirt, tucked-in blouse, ballet flats
+`midi skirt, tucked-in blouse, ballet flats`
 
 ![](img/d2f2b127105f64c9f47a8ce4a01eed22.png)
 
-### 4.风格：露脐上衣
+#### 4. 风格：露脐上衣
 
-**描述**：这套服装以一件露脐上衣为亮点，展现出时尚和性感的风格。搭配一条高腰的牛仔短裤和一双时尚的运动鞋，呈现出休闲又时尚的形象。
+描述：这套服装以一件露脐上衣为亮点，展现出时尚和性感的风格。搭配一条高腰的牛仔短裤和一双时尚的运动鞋，呈现出休闲又时尚的形象。
 
-**关键词**：露脐上衣，高腰牛仔短裤，运动鞋
+关键词：露脐上衣，高腰牛仔短裤，运动鞋
 
-**Prompt**：crop top, high-waisted denim shorts, sneakers
+`Prompt`：`crop top, high-waisted denim shorts, sneakers`
 
-palazzo pants, fitted crop top, platform sandals
+`palazzo pants, fitted crop top, platform sandals`
 
 ![](img/7b05f2ccabf7210c3cc863db3e7c19f2.png)
 
-### 5.风格：及地长裙
+#### 5. 风格：及地长裙
 
-**描述**：这套服装以一条及地长裙为亮点，展现出优雅和女性魅力的风格。搭配一件修身的丝质上衣和一双高跟凉鞋，呈现出典雅而时尚的形象。
+描述：这套服装以一条及地长裙为亮点，展现出优雅和女性魅力的风格。搭配一件修身的丝质上衣和一双高跟凉鞋，呈现出典雅而时尚的形象。
 
-**关键词**：及地长裙，修身丝质上衣，高跟凉鞋
+关键词：及地长裙，修身丝质上衣，高跟凉鞋
 
-**Prompt**：floor-length skirt, fitted silk top, high-heeled sandals
+`Prompt`：`floor-length skirt, fitted silk top, high-heeled sandals`
 
-maxi dress, cardigan, gladiator sandals
+`maxi dress, cardigan, gladiator sandals`
 
 ![](img/e6998f9e2f43d9f2fba0ad19e7356a7e.png)
 
-### 6.风格：皮打底裤
+#### 6. 风格：皮打底裤
 
-**描述**：这套服装以一条皮质打底裤为亮点，展现出时尚和酷感的风格。搭配一件黑色的紧身上衣和一双高跟靴子，呈现出时尚又性感的形象。
+描述：这套服装以一条皮质打底裤为亮点，展现出时尚和酷感的风格。搭配一件黑色的紧身上衣和一双高跟靴子，呈现出时尚又性感的形象。
 
-**关键词**：皮打底裤，黑色紧身上衣，高跟靴子
+关键词：皮打底裤，黑色紧身上衣，高跟靴子
 
-**Prompt**：leather leggings, black fitted top, high-heeled boots
+`Prompt`：`leather leggings, black fitted top, high-heeled boots`
 
-leather leggings, oversized sweater, knee-high boots
+`leather leggings, oversized sweater, knee-high boots`
 
 ![](img/675e755c7302506f4acccab8d55bbb9f.png)
 
-### 7.风格：铅笔裙
+#### 7. 风格：铅笔裙
 
-**描述**：这套服装以一条铅笔裙为亮点，展现出优雅和职业的风格。搭配一件简约的白色衬衫和一双尖头高跟鞋，呈现出时尚又专业的形象。
+描述：这套服装以一条铅笔裙为亮点，展现出优雅和职业的风格。搭配一件简约的白色衬衫和一双尖头高跟鞋，呈现出时尚又专业的形象。
 
-**关键词**：铅笔裙，白色衬衫，尖头高跟鞋
+关键词：铅笔裙，白色衬衫，尖头高跟鞋
 
-**Prompt**：pencil skirt, white blouse, pointed-toe heels
+`Prompt`：`pencil skirt, white blouse, pointed-toe heels`
 
-(pencil skirt:1.1), button-up shirt, classic pumps
+`(pencil skirt:1.1), button-up shirt, classic pumps`
 
 ![](img/fe8f4004cf30ea044120729850b35cc9.png)
 
-### 8.风格：高领毛衣
+#### 8. 风格：高领毛衣
 
-**描述**：这套服装以一件高领毛衣为亮点，展现出舒适和温暖的风格。搭配一条修身的黑色裤子和一双时尚的长靴，呈现出时尚又保暖的形象。
+描述：这套服装以一件高领毛衣为亮点，展现出舒适和温暖的风格。搭配一条修身的黑色裤子和一双时尚的长靴，呈现出时尚又保暖的形象。
 
-**关键词**：高领毛衣，黑色修身裤，长靴
+关键词：高领毛衣，黑色修身裤，长靴
 
-**Prompt**：turtleneck sweater, black fitted pants, knee-high boots
+`Prompt`：`turtleneck sweater, black fitted pants, knee-high boots`
 
-short jeans, (turtleneck sweater:1.1), loafers
+`short jeans, (turtleneck sweater:1.1), loafers`
 
 ![](img/f5286aa61b0987eca20a99613452ad04.png)
 
-### 9.风格：A字裙
+#### 9. 风格：A字裙
 
-**描述**：这套服装以一条A字裙为亮点，展现出优雅和女性魅力的风格。搭配一件贴身的纯色上衣和一双优雅的高跟鞋，呈现出典雅而时尚的形象。
+描述：这套服装以一条A字裙为亮点，展现出优雅和女性魅力的风格。搭配一件贴身的纯色上衣和一双优雅的高跟鞋，呈现出典雅而时尚的形象。
 
-**关键词**：A字裙，纯色上衣，高跟鞋
+关键词：A字裙，纯色上衣，高跟鞋
 
-**Prompt**：A-line skirt, solid color top, high heels
+`Prompt`：`A-line skirt, solid color top, high heels`
 
-(A-line dress:1.1), blazer, heeled sandals
+`(A-line dress:1.1), blazer, heeled sandals`
 
 ![](img/e91b9594bbfb92d90bdd4d0e284283f0.png)
 
-### 10. 风格：无袖上衣
+#### 10. 风格：无袖上衣
 
-**描述**：这套服装以一件无袖上衣为亮点，展现出清爽和夏日的风格。搭配一条高腰的牛仔短裤和一双凉鞋，呈现出休闲又时尚的形象。
+描述：这套服装以一件无袖上衣为亮点，展现出清爽和夏日的风格。搭配一条高腰的牛仔短裤和一双凉鞋，呈现出休闲又时尚的形象。
 
-**关键词**：无袖上衣，高腰牛仔短裤，凉鞋
+关键词：无袖上衣，高腰牛仔短裤，凉鞋
 
-**Prompt**：sleeveless top, high-waisted denim shorts, sandals
+`Prompt`：`sleeveless top, high-waisted denim shorts, sandals`
 
-culottes, sleeveless blouse, wedges,suspenders
+`culottes, sleeveless blouse, wedges,suspenders`
 
 ![](img/b07f11f7a3bcedf8074d2e33e8f138ad.png)
 
 ![](img/4a56643720642de6b7c2b2d6a4d9eb49.png)
 
-### 11.丝质背心
+#### 11. 丝质背心
+
+
+
+### 11.风格：丝质背心
 
 **描述**：这套服装的重点是一件粉色的丝质背心，采用轻盈的材质，展现出简约而优雅的设计。搭配一条白色的高腰短裤和一双金色的凉鞋，透露出舒适且时尚的夏日风格。
 
@@ -394,7 +383,7 @@ tailored trousers, silk camisole, pointed-toe flats
 
 **Prompt**：blue denim vest, black leather pants, white high-top sneakers
 
-**Prompt:  **romper, denim vest, platform sneakers
+**Prompt**：romper, denim vest, platform sneakers
 
 ![](img/da0f5916f0270299a81f46c85b0f0d34.png)
 
@@ -472,13 +461,13 @@ tailored trousers, silk camisole, pointed-toe flats
 
 ## 衣服穿搭Model2
 
-**模型：dosmix**
+### 模型：dosmix
 
-模型测试
+### 模型测试
 
 ![](img/b00451e4af471bf541fdfdb8923b7377.png)
 
-最终模型选择：DPM++ 2S a  /  DPM++  2M
+最终模型选择：DPM++ 2S a / DPM++ 2M
 
 提示词相关性(CFG Scale)：9
 
@@ -496,7 +485,7 @@ tailored trousers, silk camisole, pointed-toe flats
 
 ![](img/b193f81d4f86ab7bd387e99a484de013.png)
 
-### 22.风格：锥形裤
+### 23.风格：锥形裤
 
 **描述**：这套服装的重点是一条海军蓝色的锥形裤，设计简约且合体，展现了都市时尚的风格。搭配一件白色宽松衬衫和一双棕色的皮质乐福鞋，形成了一种随性而精致的休闲装束。
 
@@ -516,7 +505,7 @@ tailored trousers, silk camisole, pointed-toe flats
 
 **Prompt**：mint green dress, white flats, straw sun hat
 
-### 24.风格：连衣裙
+### 25.风格：连衣裙
 
 pinafore dress, turtleneck, ankle boots
 
@@ -524,7 +513,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/afcc847e9aebe42dd961a2fe9ac48e4d.png)
 
-### 25.风格：荷叶边上衣
+### 26.风格：荷叶边上衣
 
 **描述**：这套服装以一件白色的荷叶边上衣为焦点，充满了浪漫和女性化的气息。搭配一条淡蓝色牛仔裤和一双棕色的皮质凉鞋，展现出轻松而时尚的休闲风格。
 
@@ -538,7 +527,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/2f1499dc58f1cb803f87d1814640333c.png)
 
-### 26.风格：波西米亚衬衫
+### 27.风格：波西米亚衬衫
 
 **描述**：这套服装的特色是一件带有复古印花的波西米亚衬衫，它散发出一种自由而艺术的气息。配以一条棕色的麂皮短裤和一双粗跟的皮质凉鞋，展现出舒适而风情万种的波西米亚风格。
 
@@ -550,7 +539,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/f4306b34ad68fc22fff065d19f183f4f.png)
 
-### 27.风格：吊带裙
+### 28.风格：吊带裙
 
 **描述**：这套服装以一条黑色的吊带裙为亮点，设计简约且性感。搭配一件白色的无袖上衣和一双金色高跟鞋，展现出时尚而优雅的夜晚风格。
 
@@ -562,9 +551,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/3ec05ef8f9c4213fc31eb62d0665270b.png)
 
-###
-
-### 28.风格：雪纺及地裙
+### 29.风格：雪纺及地裙
 
 **描述**：这套服装的特点是一条垂坠的雪纺及地裙，轻盈的面料给人带来优雅而飘逸的感觉。搭配一件粉色的丝质上衣和一双白色细高跟鞋，营造出浪漫而女性化的风格。
 
@@ -576,7 +563,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/ccb076edfee62e69357a62a8b39b7154.png)
 
-### 29.风格：灯芯绒工装裤
+### 30.风格：灯芯绒工装裤
 
 **描述**：这套服装以一条灯芯绒工装裤为焦点，展现出复古和休闲的风格。搭配一件白色的宽松卫衣和一双黑色的马丁靴，营造出时尚而有型的街头风格。
 
@@ -588,7 +575,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/b4d1c0f570b5744e14743b4aa1c722df.png)
 
-### 30.风格：褶边衬衫
+### 31.风格：褶边衬衫
 
 **描述**：这套服装以一件白色的褶边衬衫为亮点，给人带来柔和而优雅的感觉。搭配一条黑色的铅笔裙和一双黑色高跟鞋，展现出职业且时尚的形象。
 
@@ -600,9 +587,7 @@ pinafore dress, turtleneck, ankle boots
 
 ![](img/76be94c3389d0bd2d13d0592205df0d5.png)
 
-### 31.束带衬衫裙
-
-### 31.风格：束带衬衫裙
+### 32.风格：束带衬衫裙
 
 **描述**：这套服装以一条束带衬衫裙为焦点，展现出优雅和女性化的氛围。搭配一双中性色的皮革凉鞋和一顶宽边帽子，营造出时尚而自在的春夏风格。
 
@@ -616,21 +601,19 @@ belted shirtdress, patterned tights, ankle boots
 
 ![](img/1dd5dfa618e3ada24a354e772f79ee09.png)
 
-### 32.亮片迷你裙
-
-### 32.风格：亮片迷你裙
+### 33.风格：亮片迷你裙
 
 **描述**：这套服装以一条闪亮的亮片迷你裙为亮点，营造出充满派对氛围的时尚风格。搭配一件黑色的贴身上衣和一双高跟鞋，展现出时尚而性感的形象。
 
 **关键词**：亮片迷你裙，黑色贴身上衣，高跟鞋
 
-**Prompt**：sequin mini skirt, black fitted top, high heels,
+**Prompt**：sequin mini skirt, black fitted top, high heels
 
-**Prompt**：sequin mini skirt, plain tee, biker jacket, high-top sneakers,
+**Prompt**：sequin mini skirt, plain tee, biker jacket, high-top sneakers
 
 ![](img/2fe8ab9592cc345c582775b3a73afddb.png)
 
-### 33.风格：复古毛衣
+### 34.风格：复古毛衣
 
 **描述**：这套服装以一件粉色的复古毛衣为亮点，展现出复古风情和温暖的感觉。搭配一条高腰牛仔裤和一双白色运动鞋，呈现出休闲舒适的复古风格。
 
@@ -642,7 +625,7 @@ belted shirtdress, patterned tights, ankle boots
 
 ![](img/2353b5bc658735efda3414c4d084b4ba.png)
 
-### 34.风格：针织裙
+### 35.风格：针织裙
 
 **描述**：这套服装以一条灰色针织裙为焦点，展现出温暖和舒适的感觉。搭配一件黑色紧身上衣和一双黑色长靴，呈现出简约而时尚的秋冬风格。
 
@@ -654,7 +637,7 @@ belted shirtdress, patterned tights, ankle boots
 
 ![](img/0a8ac0c9415347a53ffcfa51d3aac2e3.png)
 
-### 35.风格：纸袋腰裤
+### 36.风格：纸袋腰裤
 
 **描述**：这套服装以一条纸袋腰裤为亮点，展现出时尚和休闲的风格。搭配一件简约的白色T恤和一双白色运动鞋，呈现出轻松又时尚的形象。
 
@@ -666,11 +649,17 @@ belted shirtdress, patterned tights, ankle boots
 
 ![](img/6ed0d276439da4e183c86710248bb280.png)
 
-### 36.风格：娃娃裙
+### 37.风格：娃娃裙
 
 **描述**：这套服装以一条粉色娃娃裙为亮点，呈现出可爱和俏皮的风格。搭配一件白色蕾丝上衣和一双粉色平底鞋，展现出甜美而少女心的形象。
 
 **关键词**：粉色娃娃裙，白色蕾丝上衣，粉色平底鞋
+
+
+
+# 时尚风格搭配指南
+
+## 风格搭配示例
 
 **Prompt**：pink babydoll dress, white lace top, pink flats
 
@@ -700,7 +689,7 @@ harem pants, tank top, flat sandals
 
 **Prompt**：tweed mini skirt, tights, blouse, ankle boots
 
-![](img/93c510a8b8f5097a65e1ebf1487df2b8.png)
+![](img/93c510a8b8f10a8b8f10a8b8f1.png)
 
 ### 39.风格：长袖衬衫
 
@@ -732,7 +721,7 @@ puffer vest, long-sleeve shirt, leggings, riding boots
 
 **关键词**：牛仔束腰夹克，黑色紧身裤，白色运动鞋
 
-**Prompt**：(denim waist-tied jacket:1.3), black skinny jeans, white sneakers
+**Prompt**：`(denim waist-tied jacket:1.3)`, black skinny jeans, white sneakers
 
 fit and flare dress, cropped denim jacket, ballet flats
 
@@ -744,7 +733,7 @@ fit and flare dress, cropped denim jacket, ballet flats
 
 **关键词**：黑色运动长裤，灰色运动上衣，白色运动鞋
 
-**Prompt**：(black sporty pants:1.2), gray athletic top, white sneakers
+**Prompt**：`(black sporty pants:1.2)`, gray athletic top, white sneakers
 
 **Prompt**：joggers, crop top, bomber jacket, chunky sneakers
 
@@ -816,7 +805,7 @@ tulle skirt, graphic tee, moto jacket, combat boots
 
 **关键词**：高腰打底裤，黑色贴身上衣，时尚运动鞋
 
-**Prompt**：(high-waisted leggings:1.3), black fitted top, trendy sneakers
+**Prompt**：`(high-waisted leggings:1.3)`, black fitted top, trendy sneakers
 
 **Prompt**：high-waisted leggings, sports bra, oversized hoodie, running shoes
 
@@ -828,7 +817,7 @@ tulle skirt, graphic tee, moto jacket, combat boots
 
 **关键词**：罩衫，牛仔短裤，白色帆布鞋
 
-**Prompt**：(cardigan:1.3), denim shorts, white canvas shoes
+**Prompt**：`(cardigan:1.3)`, denim shorts, white canvas shoes
 
 **Prompt**：smock dress, patterned tights, heeled oxfords
 
@@ -840,7 +829,7 @@ tulle skirt, graphic tee, moto jacket, combat boots
 
 **关键词**：宽边帽，连衣裙，平底凉鞋
 
-**Prompt**：(wide-brim hat:1.3), sundress, flat sandals,
+**Prompt**：`(wide-brim hat:1.3)`, sundress, flat sandals,
 
 wide-brim hat, bohemian maxi dress, layered necklaces, flat sandals,
 

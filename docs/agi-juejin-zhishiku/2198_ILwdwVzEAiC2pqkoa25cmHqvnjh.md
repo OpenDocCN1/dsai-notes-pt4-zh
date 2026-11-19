@@ -1,12 +1,13 @@
-# 12.28-OpenAI研究员首次提出「AGI时间」进化论！o1数学已达「分钟级AGI」
-
-> 来源：[https://agijuejin.feishu.cn/docx/RtcTd01EUoorb1xk5aecfcLrn8d](https://agijuejin.feishu.cn/docx/RtcTd01EUoorb1xk5aecfcLrn8d)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 28 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/RtcTd01EUoorb1xk5aecfcLrn8d](https://agijuejin.feishu.cn/docx/RtcTd01EUoorb1xk5aecfcLrn8d)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/9e46a552282c4892fb302e33f7bf702b.png)
+
+## 12.28-OpenAI研究员首次提出「AGI时间」进化论！o1数学已达「分钟级AGI」
 
 ## ⭐ 今日热点
 
@@ -26,7 +27,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/820/783.htm)
 
 ![](img/0203e5fe626ccb00c762758bc56a5b39.png)
 
-20**24 年 1**2 月 28 日，谷歌 D**eepMi**nd 推出‘可微缓存增强’新方法。该方法在不增加过多计算负担下提升大语言模型推理性能。在 Gemma-2 2B 模型测试中，如在 GSM8K 数据集上准确率提高10.05%，在 MMLU 上性能提升4.70%。为增强语言模型推理能力提供新思路，为处理更复杂任务铺平道路。
+2024 年 12 月 28 日，谷歌 DeepMind 推出‘可微缓存增强’新方法。该方法在不增加过多计算负担下提升大语言模型推理性能。在 Gemma-2 2B 模型测试中，如在 GSM8K 数据集上准确率提高10.05%，在 MMLU 上性能提升4.70%。为增强语言模型推理能力提供新思路，为处理更复杂任务铺平道路。
 
 ### 💡 中国联通业界首次提出大模型能力边界量化基准，避免“高射炮打蚊子”情况
 

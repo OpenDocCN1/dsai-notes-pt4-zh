@@ -1,3 +1,4 @@
+
 # 202404｜时间要转换为经历，才不辜负自己
 
 > 来源：[https://leonzhang.feishu.cn/docx/KkcfdT7oDopPXNxi8kXckNlynDr](https://leonzhang.feishu.cn/docx/KkcfdT7oDopPXNxi8kXckNlynDr)
@@ -116,14 +117,13 @@ Date: 2024/05/06
 
 > 节目地址：No.141 对谈 Koji：成为独立有能量的「超级赛亚人」 ｜三五环
 
-> https://www.xiaoyuzhoufm.com/episode/65f8fdf9696bd9a87905b8c5
+> `https://www.xiaoyuzhoufm.com/episode/65f8fdf9696bd9a87905b8c5`
 
 > 我真的太喜欢「超级赛亚人」这个概念了，跟我之前的观点「事以密成，语以泄败」，完全相反。第一是间接/直接找人监督，相当于立了 Flag，压力所在而不得不去完成；第二，由于是很小的事情，所以无论是压力还是完成度，成本都不高，所以只要合理，大多数任务应该能够完成；第三，不断做成功的小事，更增加了自己的信心，也为未来做更多、更有难度的事情奠定了基础。厉害，我喜欢。
 
 ## 最近观察和思考
 
 > 你现在一直在浪费时间，但也许你可以利用你所学到的或读到的东西，并更好地利用它。—— 本杰明 · 格雷厄姆
-
 
 **1**
 
@@ -135,7 +135,7 @@ Date: 2024/05/06
 
 **3**
 
-**塔勒布说：世界上最有害的**三种成瘾物，海洛因、碳水化合物、月薪。
+塔勒布说：世界上最有害的三种成瘾物，海洛因、碳水化合物、月薪。
 
 **4**
 
@@ -169,7 +169,7 @@ Date: 2024/05/06
 
 1.  晚点聊｜62: 对谈哲学教授姜宇辉：哲学能解决年轻人的意义危机吗？
 
-https://www.xiaoyuzhoufm.com/episode/65f2bebd03149b46083f0a1f
+`https://www.xiaoyuzhoufm.com/episode/65f2bebd03149b46083f0a1f`
 
 哲学对一个普通人有什么用。当我们感到迷茫、找不到生活的意义的时候，哲学能帮到我们吗？
 
@@ -177,7 +177,7 @@ https://www.xiaoyuzhoufm.com/episode/65f2bebd03149b46083f0a1f
 
 1.  问题不大｜20 总想和时间赛跑，如何才能活在当下？
 
-https://www.xiaoyuzhoufm.com/episode/631aabb8ca29090617cac519
+`https://www.xiaoyuzhoufm.com/episode/631aabb8ca29090617cac519`
 
 美国总统林肯，无论时间有多忙，每周都会陪妻子、孩子，和家人一起听音乐会。
 
@@ -193,7 +193,7 @@ Focus 确实是他们时间管理的诀窍之一。时间是一样的，那只�
 
 1.  思文，败类｜32。理想伴侣大讨论：正常就很奢侈了吗？
 
-https://www.xiaoyuzhoufm.com/episode/65a656adb5e4856c70a0fc70
+`https://www.xiaoyuzhoufm.com/episode/65a656adb5e4856c70a0fc70`
 
 第一次听思文的播客，感觉和她舞台上表演时的状态不太一样。当然这期话题也比较轻松，适合上班路上听。
 
@@ -235,17 +235,17 @@ https://www.xiaoyuzhoufm.com/episode/65a656adb5e4856c70a0fc70
 
 > 温馨提示：建议搭配降噪耳机，音量调至 50%-70%，尽量感受现场环境。若为夜深人静，更佳，enjoy～
 
-+   【开口跪|翻唱 Westlife 成名作《My Love》！瞬间回到青春】 https://www.bilibili.com/video/BV1fm421p7Fm/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++   【开口跪|翻唱 Westlife 成名作《My Love》！瞬间回到青春】 `https://www.bilibili.com/video/BV1fm421p7Fm/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-+   【【4K 杜比视界】霉霉爱人神级《Lover》音乐现场！！！】 https://www.bilibili.com/video/BV13q421c7mY/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++   【【4K 杜比视界】霉霉爱人神级《Lover》音乐现场！！！】 `https://www.bilibili.com/video/BV13q421c7mY/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-+   【【4K 收藏级画质】霉霉神级《Love Story》现场！！！】 https://www.bilibili.com/video/BV1vv41177jq/?share_source=copy_web
++   【【4K 收藏级画质】霉霉神级《Love Story》现场！！！】 `https://www.bilibili.com/video/BV1vv41177jq/?share_source=copy_web`
 
-+   【【上海交响乐团】百万级录音棚听《Hey Jude》2021MISA 上海夏季音乐节开幕音乐会【Hi-Res】】 https://www.bilibili.com/video/BV1Mp4y1G7i9/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++   【【上海交响乐团】百万级录音棚听《Hey Jude》2021MISA 上海夏季音乐节开幕音乐会【Hi-Res】】 `https://www.bilibili.com/video/BV1Mp4y1G7i9/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-+   【【𝟒𝐊 HDR】「环太平洋丨视觉盛宴」带上耳机体验极限视听【耗时 60000 秒近百 G 素材！打造极限视听盛宴】】 https://www.bilibili.com/video/BV1Q3411K7Bd/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
++   【【𝟒𝐊 HDR】「环太平洋丨视觉盛宴」带上耳机体验极限视听【耗时 60000 秒近百 G 素材！打造极限视听盛宴】】 `https://www.bilibili.com/video/BV1Q3411K7Bd/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
-+   【前方高燃！全家人一起演奏《环太平洋》主题曲《Pacific Rim》】 https://www.bilibili.com/video/BV1734y1b77z/?share_source=copy_web
++   【前方高燃！全家人一起演奏《环太平洋》主题曲《Pacific Rim》】 `https://www.bilibili.com/video/BV1734y1b77z/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b`
 
 ### 延伸阅读
 
@@ -263,6 +263,6 @@ https://www.xiaoyuzhoufm.com/episode/65a656adb5e4856c70a0fc70
 
 +   [Tim 采访 梅赛德斯 - 奔驰全球 CEO: Ola Källenius](https://leonzhang.feishu.cn/wiki/NB5gwoUC3iwKwIkRl7WcugA5nwb)
 
-+   窮人講家教，富人謀家底，從教育方式，看思維差異｜年度最美《老狐狸》 https://www.youtube.com/watch?v=AUbFhEfiE6w
++   窮人講家教，富人謀家底，從教育方式，看思維差異｜年度最美《老狐狸》 `https://www.youtube.com/watch?v=AUbFhEfiE6w`
 
 以上，祝你早安、午安、晚安～

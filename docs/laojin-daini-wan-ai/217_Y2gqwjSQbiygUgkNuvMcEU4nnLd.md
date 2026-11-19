@@ -1,28 +1,29 @@
+
 # Claude Code 30k+ star官方插件，小白也能写专业级代码
 
 > 来源：[https://my.feishu.cn/docx/N45HdDdhPo7cUexqbhLcRmSAnGc](https://my.feishu.cn/docx/N45HdDdhPo7cUexqbhLcRmSAnGc)
 
-1月18日，Jesse（obra）在GitHub上更新了Superpowers插件，star数刚突破3万。
+1月18日，Jesse（obra）在GitHub上更新了`Superpowers`插件，star数刚突破3万。
 
 老金我点进去一看，这玩意儿去年10月才发出来，3个月就3万多star，涨得有点夸张。
 
-**更关键的**是，这还是Claude Code的官方插件。
+**更关键的**是，这还是`Claude Code`的官方插件。
 
-## 什么是Superpowers
+## 什么是`Superpowers`
 
-老金我先把话说清楚：Superpowers不是独立工具，是Claude Code的插件系统。
+老金我先把话说清楚：`Superpowers`不是独立工具，是`Claude Code`的插件系统。
 
-装上之后，Claude Code会自动多出一套"技能树"：
+装上之后，`Claude Code`会自动多出一套"技能树"：
 
-brainstorming：帮你理清需求再动手，不是瞎写
+`brainstorming`：帮你理清需求再动手，不是瞎写
 
-test-driven-development：强制TDD流程，先写测试
+`test-driven-development`：强制TDD流程，先写测试
 
-systematic-debugging：4步调试法，找根因
+`systematic-debugging`：4步调试法，找根因
 
-writing-plans：把需求拆成2-5分钟的小任务
+`writing-plans`：把需求拆成2-5分钟的小任务
 
-subagent-driven-development：子代理流水线干活
+`subagent-driven-development`：子代理流水线干活
 
 还有十几个技能，老金我就不一一列了。
 
@@ -34,11 +35,11 @@ subagent-driven-development：子代理流水线干活
 
 **第一，官方背书**。
 
-作者是Jesse Vincent，Claude Code的核心贡献者。这不是野生插件，是亲儿子级别的。
+作者是Jesse Vincent，`Claude Code`的核心贡献者。这不是野生插件，是亲儿子级别的。
 
 **第二，解决真实痛点**。
 
-你用Claude Code写代码，是不是经常遇到这些问题：
+你用`Claude Code`写代码，是不是经常遇到这些问题：
 
 AI直接开写，没问你需求细节
 
@@ -46,27 +47,27 @@ AI直接开写，没问你需求细节
 
 遇到bug就开始乱改
 
-Superpowers就是来解决这些的。它让AI在写代码前先brainstorming，写代码时强制TDD，debugging时 systematic。
+`Superpowers`就是来解决这些的。它让AI在写代码前先`brainstorming`，写代码时强制TDD，debugging时`systematic`。
 
 **第三，开源免费**。
 
-MIT协议，3万star，社区活跃。有问题去GitHub提issue，回复挺快。
+MIT协议，3万star，社区活跃。有问题去GitHub提`issue`，回复挺快。
 
 ## 老金实测体验
 
 上周老金我拿一个真实项目测了。
 
-之前的流程：跟Claude说需求 → AI直接开写 → 发现理解不对 → 重写 → 改bug
+之前的流程：跟`Claude Code`说需求 → AI直接开写 → 发现理解不对 → 重写 → 改bug
 
-装了Superpowers之后：
+装了`Superpowers`之后：
 
-1、brainstorming技能触发，问了老金我七八个问题
+1、`brainstorming`技能触发，问了老金我七八个问题
 
 2、确认需求后生成plan，拆成15个小任务
 
 3、每个任务先写测试，再写代码
 
-4、遇到bug走systematic-debugging流程
+4、遇到bug走`systematic-debugging`流程
 
 说实话，第一次被AI问那么多问题，老金我有点懵。
 
@@ -80,9 +81,9 @@ MIT协议，3万star，社区活跃。有问题去GitHub提issue，回复挺快�
 
 ### 第0步：检查并卸载旧版本（重要）
 
-如果你之前装过superpowers，先卸载掉，否则会冲突。
+如果你之前装过`superpowers`，先卸载掉，否则会冲突。
 
-在Claude Code里输入：
+在`Claude Code`里输入：
 
 ```
 /plugin remove superpowers
@@ -90,9 +91,9 @@ MIT协议，3万star，社区活跃。有问题去GitHub提issue，回复挺快�
 
 如果提示找不到插件，说明你没装过，直接跳到下一步。
 
-### 第一步：注册marketplace
+### 第一步：注册`marketplace`
 
-打开Claude Code，输入：
+打开`Claude Code`，输入：
 
 ```
 /plugin marketplace add obra/superpowers-marketplace
@@ -124,16 +125,16 @@ MIT协议，3万star，社区活跃。有问题去GitHub提issue，回复挺快�
 
 **这三个命令是干什么的？**
 
-**brainstorm**（头脑风暴）：写代码前，AI会问你一堆问题，把需求搞清楚，避免理解偏差
+`brainstorm`（头脑风暴）：写代码前，AI会问你一堆问题，把需求搞清楚，避免理解偏差
 
-**write-plan**（写计划）：把需求拆成具体小任务，每个任务2-5分钟能完成
+`write-plan`（写计划）：把需求拆成具体小任务，每个任务2-5分钟能完成
 
-**execute-plan**（执行计划）：按照任务清单逐个完成，边做边验证
+`execute-plan`（执行计划）：按照任务清单逐个完成，边做边验证
 
 **典型流程：**
 
 ```
-你说：&quot;我要做个用户登录&quot;
+你说："我要做个用户登录"
   ↓
 /superpowers:brainstorm → AI问：JWT还是Session?要不要记住登录?
   ↓
@@ -150,15 +151,15 @@ MIT协议，3万star，社区活跃。有问题去GitHub提issue，回复挺快�
 
 **如果你是小白**：装。
 
-Superpowers会让AI按专业流程带你，避免走弯路。虽然前期问答有点多，但能帮你养成好习惯。
+`Superpowers`会让AI按专业流程带你，避免走弯路。虽然前期问答有点多，但能帮你养成好习惯。
 
 **如果你是老手**：看情况。
 
-如果你已经有一套成熟的工作流，可能觉得它有点啰嗦。但老金我建议至少试试brainstorming和systematic-debugging，这两个技能对谁都有效。
+如果你已经有一套成熟的工作流，可能觉得它有点啰嗦。但老金我建议至少试试`brainstorming`和`systematic-debugging`，这两个技能对谁都有效。
 
 **老金我的结论**：
 
-Superpowers不是魔法，不会让你一夜变大神。
+`Superpowers`不是魔法，不会让你一夜变大神。
 
 但它能让AI助手更专业、更规范。长期用下来，你自己也会被影响，形成更好的开发习惯。
 
@@ -168,10 +169,10 @@ Superpowers不是魔法，不会让你一夜变大神。
 
 ## 参考来源
 
-+   Superpowers GitHub 仓库：https://github.com/obra/superpowers
++ `Superpowers` GitHub 仓库：https://github.com/obra/superpowers
 
-+   作者博客：https://blog.fsck.com/2025/10/09/superpowers/
++ 作者博客：https://blog.fsck.com/2025/10/09/superpowers/
 
-+   Claude Code 官方文档：https://docs.anthropic.com/en/docs/claude-code
++ `Claude Code` 官方文档：https://docs.anthropic.com/en/docs/claude-code
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

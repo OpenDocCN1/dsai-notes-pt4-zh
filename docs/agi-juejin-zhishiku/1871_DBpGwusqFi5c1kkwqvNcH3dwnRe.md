@@ -1,8 +1,7 @@
-# 01.07-（更新：李开复回应）消息称阿里洽谈收购零一万物的预训练团队，人员约为 60 人
-
-> 来源：[https://agijuejin.feishu.cn/docx/WcgOdacyNogzzZxzfwwc4gcJnAd](https://agijuejin.feishu.cn/docx/WcgOdacyNogzzZxzfwwc4gcJnAd)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 07 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/WcgOdacyNogzzZxzfwwc4gcJnAd](https://agijuejin.feishu.cn/docx/WcgOdacyNogzzZxzfwwc4gcJnAd)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -108,4 +107,4 @@ IT之家 | [阅读原文](https://www.ithome.com/0/822/527.htm)
 
 ![](img/67e4c62d019ee5761c27a998c2e008f4.png)
 
-2**025 年 1**** 月，字节跳**动发布自建数据中心变电**站设计框架采**购寻源公告。2025 年字节跳动资本开支有望达1600 亿元，用于打造大规模数据中心集群，其中约900 亿元用于 AI 算力采购，700 亿元用于 IDC 基建及网络设备。张一鸣虽卸任 CEO，但积极参与集团 AI 战略，亲自监督招聘 AI 人员工作，谈及‘通用人工智能’目标。
+2025 年 1 月，字节跳动发布自建数据中心变电站设计框架采购寻源公告。2025 年字节跳动资本开支有望达1600 亿元，用于打造大规模数据中心集群，其中约900 亿元用于 AI 算力采购，700 亿元用于 IDC 基建及网络设备。张一鸣虽卸任 CEO，但积极参与集团 AI 战略，亲自监督招聘 AI 人员工作，谈及‘通用人工智能’目标。

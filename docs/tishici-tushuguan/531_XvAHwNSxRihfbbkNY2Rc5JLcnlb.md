@@ -1,3 +1,4 @@
+
 # 深度呈现一个想法图表
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/NPEGdl6seooi96xajU9c4acUnOc](https://vxc3hj17dym.feishu.cn/docx/NPEGdl6seooi96xajU9c4acUnOc)
@@ -101,8 +102,8 @@ y INT,
 );
 INSERT INTO 文本 (id, 内容, x, y, 字体大小, 颜色, 对齐方式) VALUES
 (1, &#x27;%时间%&#x27;, &#x27;#ffffff&#x27;, &#x27;middle&#x27;),
-(2, &#x27;%曲线%&#x27;,, &#x27;#ff6b6b&#x27;, &#x27;middle&#x27;),
-(3, &#x27;%基线%&#x27;, , &#x27;#4ecdc4&#x27;, &#x27;start&#x27;),
+(2, &#x27;%曲线%&#x27;,, &#x27;#4ecdc4&#x27;, &#x27;middle&#x27;),
+(3, &#x27;%基线%&#x27;, , &#x27;#45aaf2&#x27;, &#x27;start&#x27;),
 (4, &#x27;%完美点&#x27;, &#x27;#f7b731&#x27;, &#x27;start&#x27;),
 (5, &#x27;%缝隙%&#x27;, &#x27;#fc5c65&#x27;, &#x27;middle&#x27;),
 (6, &#x27;%底层理解&#x27;, &#x27;#ffffff&#x27;, &#x27;middle&#x27;),

@@ -1,8 +1,9 @@
+
 # 5. 行业活动
 
-> 来源：[https://agijuejin.feishu.cn/docx/CDL5dkYhboT7r8xVwTwc8jeNnPe](https://agijuejin.feishu.cn/docx/CDL5dkYhboT7r8xVwTwc8jeNnPe)
+> 来源：[`https://agijuejin.feishu.cn/docx/CDL5dkYhboT7r8xVwTwc8jeNnPe`](https://agijuejin.feishu.cn/docx/CDL5dkYhboT7r8xVwTwc8jeNnPe)
 
-### **AGI掘金活动：**
+## AGI掘金活动
 
 我们正在开展一系列品牌活动，为广大的 AI 爱好者、从业者、创业者以及专家学者等搭建一个前所未有的交流平台。
 
@@ -10,25 +11,19 @@
 
 在这里，AI 爱好者们能够亲身感受前沿科技的魅力，初学者能够获得宝贵的学习机会和专业指导，从业者可以交流经验、拓展人脉，创业者有机会对接资源、寻求合作，专家学者能够分享最新的研究成果和独到见解。
 
-**线上活动**
+### 线上活动
 
-**线下活动**
+### 线下活动
 
-**赛事**
+### 赛事
 
-+   AI 研习社
-
-+   AI Talk沙龙直播
-
-+   大咖对话
-
-+   AI Open Talk沙龙-城市站
-
-+   校园行
-
-+   闭门会
-
-+   系列峰会
++ AI 研习社
++ AI Talk沙龙直播
++ 大咖对话
++ AI Open Talk沙龙-城市站
++ 校园行
++ 闭门会
++ 系列峰会
 
 敬请期待……
 

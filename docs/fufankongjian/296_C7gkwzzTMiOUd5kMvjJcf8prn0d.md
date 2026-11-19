@@ -1,10 +1,11 @@
+
 # MateConv分词器训练流程
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/KSyYdiIUwoBtYExjkzqc2h1nnEe](https://kq4b3vgg5b.feishu.cn/docx/KSyYdiIUwoBtYExjkzqc2h1nnEe)
 
-+   Step 1.导入必要的库
+## Step 1. 导入必要的库
 
-```
+```python
 import random
 from tqdm import tqdm
 from transformers import AutoTokenizer
@@ -22,29 +23,29 @@ from tokenizers import (
 import os
 ```
 
-+   Step 2.读取 tokenizer_train.jsonl 文件
+## Step 2. 读取 `tokenizer_train.jsonl` 文件
 
-```
+```python
 def read_texts_from_jsonl(file_path):
-    with open(file_path, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)
-            yield data[&#x27;text&#x27;]
+            yield data['text']
 
 # 测试读取数据
-data_path = &#x27;/root/autodl-tmp/MateConv/dataset/tokenizer_train.jsonl&#x27;
+data_path = '/root/autodl-tmp/MateConv/dataset/tokenizer_train.jsonl'
 texts = read_texts_from_jsonl(data_path)
 
 # 打印前几行文本
 for i, text in enumerate(texts):
-    if i &lt; 5:
+    if i < 5:
         print(text)
     else:
         break
 ```
 
 ```
-好的。现在请你将这个文本中的所有的逗号都替换成空格。 好的，请稍等一下，现在我会将文本中的所有逗号替换为空格。处理后文本为：&quot;这是一个句子 目的是看看是否可以正确地从这个句子中删除关键词。&quot;。处理结果如何？
+好的。现在请你将这个文本中的所有的逗号都替换成空格。 好的，请稍等一下，现在我会将文本中的所有逗号替换为空格。处理后文本为："这是一个句子 目的是看看是否可以正确地从这个句子中删除关键词。"。处理结果如何？
 帮我回答一道历史题目。清朝时期的八旗共有多少旗人？ 清朝时期八旗旗人总数约为200万人左右，其中正黄旗、正蓝旗、正白旗、正红旗的人数较多，其他旗的人数较少。
 嗯，谢谢你介绍的做法很详细，但我不喜欢吃鸡蛋，有没有其他菜做法能介绍一下？ 当然，你可以试试酸辣土豆丝这道菜。
 材料：
@@ -86,17 +87,17 @@ for i, text in enumerate(texts):
 综上所述，天堂和地狱是两个完全不同的地方，它们的生态系统和环境反映了它们的性质，体现了人类对不同阶段的死后生命的不同想象和信仰。
 ```
 
-+   Step 3.初始化分词器
+## Step 3. 初始化分词器
 
-首先，通过 models.BPE() 创建了一个基于 Byte-Pair Encoding (BPE) 模型的分词器。BPE 是一种常用于文本分词的子词分解算法，特别在自然语言处理任务中被广泛使用，如机器翻译和语言模型训练。BPE 的主要思想是通过将频繁出现的字符或字符对合并成一个新的子词单元，逐步构建一个子词级别的词汇表，从而处理词汇表稀疏性和未登录词问题。
+首先，通过 `models.BPE()` 创建了一个基于 Byte-Pair Encoding (BPE) 模型的分词器。BPE 是一种常用于文本分词的子词分解算法，特别在自然语言处理任务中被广泛使用，如机器翻译和语言模型训练。BPE 的主要思想是通过将频繁出现的字符或字符对合并成一个新的子词单元，逐步构建一个子词级别的词汇表，从而处理词汇表稀疏性和未登录词问题。
 
-```
+```python
 # 初始化tokenizer
 tokenizer = Tokenizer(models.BPE())
 tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
 
 # 定义特殊token
-special_tokens = [&quot;&lt;unk&gt;&quot;, &quot;&lt;s&gt;&quot;, &quot;&lt;/s&gt;&quot;]
+special_tokens = ["<unk>", "<s>", "</s>"]
 
 # 设置训练器并添加特殊token
 trainer = trainers.BpeTrainer(
@@ -106,95 +107,95 @@ trainer = trainers.BpeTrainer(
     initial_alphabet=pre_tokenizers.ByteLevel.alphabet()
 )
 
-print(&quot;分词器初始化成功，准备训练。&quot;)
+print("分词器初始化成功，准备训练。")
 ```
 
 ```
 分词器初始化成功，准备训练。
 ```
 
-+   Step 4.训练分词器
+## Step 4. 训练分词器
 
 【TIME Warning：5mins】
 
-```
+```python
 # 读取文本数据
 texts = read_texts_from_jsonl(data_path)
 
 # 训练tokenizer
 tokenizer.train_from_iterator(texts, trainer=trainer)
 
-print(&quot;分词器训练完成！&quot;)
+print("分词器训练完成！")
 ```
 
 ```
 分词器训练完成！
 ```
 
-+   Step 5.保存分词器
+## Step 5. 保存分词器
 
-在训练完毕之后，还需要设置解码器 (tokenizer.decoder = decoders.ByteLevel()) ，这是为了在生成文本时正确地将分词器产生的 token 序列还原回原始文本。
+在训练完毕之后，还需要设置解码器 `tokenizer.decoder = decoders.ByteLevel()` ，这是为了在生成文本时正确地将分词器产生的 token 序列还原回原始文本。
 
-```
+```python
 # 设置解码器
 tokenizer.decoder = decoders.ByteLevel()
 
 # 保存tokenizer
-tokenizer_dir = &quot;/root/autodl-tmp/MateConv/model/mateconv_tokenizer&quot;
+tokenizer_dir = "/root/autodl-tmp/MateConv/model/mateconv_tokenizer"
 os.makedirs(tokenizer_dir, exist_ok=True)
-tokenizer.save(os.path.join(tokenizer_dir, &quot;tokenizer.json&quot;))
-tokenizer.model.save(&quot;/root/autodl-tmp/MateConv/model/mateconv_tokenizer&quot;)
+tokenizer.save(os.path.join(tokenizer_dir, "tokenizer.json"))
+tokenizer.model.save("/root/autodl-tmp/MateConv/model/mateconv_tokenizer")
 
 # 手动创建配置文件
 config = {
-    &quot;add_bos_token&quot;: False,
-    &quot;add_eos_token&quot;: False,
-    &quot;add_prefix_space&quot;: True,
-    &quot;added_tokens_decoder&quot;: {
-        &quot;0&quot;: {
-            &quot;content&quot;: &quot;&lt;unk&gt;&quot;,
-            &quot;lstrip&quot;: False,
-            &quot;normalized&quot;: False,
-            &quot;rstrip&quot;: False,
-            &quot;single_word&quot;: False,
-            &quot;special&quot;: True
+    "add_bos_token": False,
+    "add_eos_token": False,
+    "add_prefix_space": True,
+    "added_tokens_decoder": {
+        "0": {
+            "content": "<unk>",
+            "lstrip": False,
+            "normalized": False,
+            "rstrip": False,
+            "single_word": False,
+            "special": True
             },
-        &quot;1&quot;: {
-            &quot;content&quot;: &quot;&lt;s&gt;&quot;,
-            &quot;lstrip&quot;: False,
-            &quot;normalized&quot;: False,
-            &quot;rstrip&quot;: False,
-            &quot;single_word&quot;: False,
-            &quot;special&quot;: True
+        "1": {
+            "content": "<s>",
+            "lstrip": False,
+            "normalized": False,
+            "rstrip": False,
+            "single_word": False,
+            "special": True
             },
-        &quot;2&quot;: {
-            &quot;content&quot;: &quot;&lt;/s&gt;&quot;,
-            &quot;lstrip&quot;: False,
-            &quot;normalized&quot;: False,
-            &quot;rstrip&quot;: False,
-            &quot;single_word&quot;: False,
-            &quot;special&quot;: True
+        "2": {
+            "content": "</s>",
+            "lstrip": False,
+            "normalized": False,
+            "rstrip": False,
+            "single_word": False,
+            "special": True
             }
     },
-    &quot;bos_token&quot;: &quot;&lt;s&gt;&quot;,
-    &quot;clean_up_tokenization_spaces&quot;: False,
-    &quot;eos_token&quot;: &quot;&lt;/s&gt;&quot;,
-    &quot;legacy&quot;: True,
-    &quot;model_max_length&quot;: 1000000000000000019884624838656,
-    &quot;pad_token&quot;: None,
-    &quot;sp_model_kwargs&quot;: {},
-    &quot;spaces_between_special_tokens&quot;: False,
-    &quot;tokenizer_class&quot;: &quot;PreTrainedTokenizerFast&quot;,
-    &quot;unk_token&quot;: &quot;&lt;unk&gt;&quot;,
-    &quot;use_default_system_prompt&quot;: False,
-    &quot;chat_template&quot;: &quot;{% if messages[0][&#x27;role&#x27;] == &#x27;system&#x27; %}{% set system_message = messages[0][&#x27;content&#x27;] %}{% endif %}{% if system_message is defined %}{{ system_message }}{% endif %}{% for message in messages %}{% set content = message[&#x27;content&#x27;] %}{% if message[&#x27;role&#x27;] == &#x27;user&#x27; %}{{ &#x27;&lt;s&gt;user\\n&#x27; + content + &#x27;&lt;/s&gt;\\n&lt;s&gt;assistant\\n&#x27; }}{% elif message[&#x27;role&#x27;] == &#x27;assistant&#x27; %}{{ content + &#x27;&lt;/s&gt;&#x27; + &#x27;\\n&#x27; }}{% endif %}{% endfor %}&quot;
+    "bos_token": "<s>",
+    "clean_up_tokenization_spaces": False,
+    "eos_token": "</s>",
+    "legacy": True,
+    "model_max_length": 1000000000000000019884624838656,
+    "pad_token": None,
+    "sp_model_kwargs": {},
+    "spaces_between_special_tokens": False,
+    "tokenizer_class": "PreTrainedTokenizerFast",
+    "unk_token": "<unk>",
+    "use_default_system_prompt": False,
+    "chat_template": "{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ system_message }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ '<s>user\\n' + content + '</s>\\n<s>assistant\\n' }}{% elif message['role'] == 'assistant' %}{{ content + '</s>' + '\n' }}{% endif %}{% endfor %}"
 }
 
 # 保存配置文件
-with open(os.path.join(tokenizer_dir, &quot;tokenizer_config.json&quot;), &quot;w&quot;, encoding=&quot;utf-8&quot;) as config_file:
+with open(os.path.join(tokenizer_dir, "tokenizer_config.json"), "w", encoding="utf-8") as config_file:
     json.dump(config, config_file, ensure_ascii=False, indent=4)
 
-print(&quot;Tokenizer 保存成功！&quot;)
+print("Tokenizer 保存成功！")
 ```
 
 ```
@@ -203,21 +204,21 @@ Tokenizer 保存成功！
 
 ![](img/57586e9ba705a54415a158c423ed31af.png)
 
-+   Step 6.评估分词器
+## Step 6. 评估分词器
 
-```
+```python
 from transformers import AutoTokenizer
 
 # 加载预训练的tokenizer
-tokenizer = AutoTokenizer.from_pretrained(&quot;./model/mateconv_tokenizer&quot;)
+tokenizer = AutoTokenizer.from_pretrained("./model/mateconv_tokenizer")
 
 # 测试一段对话
 messages = [
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个优秀的聊天机器人，总是给我正确的回应！&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &#x27;是椭圆形的&#x27;},
-    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &#x27;456&#x27;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &#x27;456&#x27;},
-    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &#x27;789&#x27;}
+    {"role": "system", "content": "你是一个优秀的聊天机器人，总是给我正确的回应！"},
+    {"role": "user", "content": '是椭圆形的'},
+    {"role": "assistant", "content": '456'},
+    {"role": "user", "content": '456'},
+    {"role": "assistant", "content": '789'}
 ]
 
 # 使用模板进行文本处理

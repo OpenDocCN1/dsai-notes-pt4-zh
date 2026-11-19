@@ -1,3 +1,4 @@
+
 # 车内录像合规
 
 > 来源：[https://docs.feishu.cn/docx/AzMadIls9ohYBbx0vFncdItVnNc](https://docs.feishu.cn/docx/AzMadIls9ohYBbx0vFncdItVnNc)
@@ -12,8 +13,8 @@
 
 **-答2：****我粗浅的理解**1. 即时通信的视频画面是通过车内通信设施传的；2.可能既包含车企又包含App厂商，大概泛指data controller吧；3. 从41871的定义来讲，算。
 
--**答3：**你理解成**SDK**，但不是7号令（《汽车数据安全管理若干规定（试行）》）要管的。
+**-答3：**你理解成**SDK**，但不是7号令（《汽车数据安全管理若干规定（试行）》）要管的。
 
-**总结：无论是否涉及个人信息处理，境内从消费者保护的角度出发，也**是不合适的。监管力量未覆盖，不代表合规。
+**总结：无论是否涉及个人信息处理，境内从消费者保护的角度出发，也是不合适的。监管力量未覆盖，不代表合规。**
 
 [汽车](https://cbe8t1r4a5.feishu.cn/wiki/wikcnMcafyXR4VywEcADdZAYj1b)

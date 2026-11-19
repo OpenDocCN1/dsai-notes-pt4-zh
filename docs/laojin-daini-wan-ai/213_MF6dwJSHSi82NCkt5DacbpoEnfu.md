@@ -1,3 +1,4 @@
+
 # 小白友好-Claude Code的创造者，30天259个PR效率法则，他用的13个技巧老金全拆解了！
 
 > 来源：[https://my.feishu.cn/docx/Dg3NdEIEMoW7A5x2Z0DcdfI5nGf](https://my.feishu.cn/docx/Dg3NdEIEMoW7A5x2Z0DcdfI5nGf)
@@ -18,13 +19,13 @@
 
 5个终端并行？我也在用。
 
-Plan Mode详细规划？我一直这么干。
+`Plan Mode`详细规划？我一直这么干。
 
 让Claude自己验证？我反复强调过验证闭环。
 
 往下翻，越看越熟悉。
 
-CLAUDE.md当错题本、Auto-accept配Plan用、物理便签标记窗口......
+`CLAUDE.md`当错题本、`Auto-accept`配`Plan`用、物理便签标记窗口......
 
 这些方法我也在用。
 
@@ -54,13 +55,13 @@ Boris从产品设计者的视角，我从用户实践的视角。
 
 人家日常5个终端窗口一起跑，标1到5随时切。
 
-重点在后面——每个窗口用**独立的git worktree**。
+重点在后面——每个窗口用`git worktree`。
 
 同一仓库创建5个工作目录，共享提交历史但各自独立分支，不打架。
 
-之前也试过开多个老是冲突，原来是git共用搞的鬼。git worktree才是王道。
+之前也试过开多个老是冲突，原来是`git`共用搞的鬼。`git worktree`才是王道。
 
-**5个checkout才是王道。**
+**5个`checkout`才是王道。**
 
 我通常会打开多个项目，少量情况下会在单个项目内启动多个进程。
 
@@ -68,13 +69,13 @@ Boris从产品设计者的视角，我从用户实践的视角。
 
 ![](img/0b228d4072e48c6755dfb93855b81d33.png)
 
-然后也会有 **单项目启动多进程 **的情况，这个就需要用到下面的Git WorkTree：
+然后也会有单项目启动多进程的情况，这个就需要用到下面的`git worktree`：
 
 ![](img/28cf5408ecf72540fad5aca3cfe65c7f.png)
 
 ### 怎么做？（小白照着做）
 
-**第一步：创建5个git工作区**
+**第一步：创建5个`git`工作区**
 
 先安装Git ：https://ai.feishu.cn/wiki/MF1ywmPKhig7p3kpIqNcFsmPnPe
 
@@ -95,35 +96,35 @@ git worktree add ../project-5
 
 ```
 # 终端1
-cd ~/projects/project-main &amp;&amp; claude
+cd ~/projects/project-main && claude
 
 # 终端2
-cd ~/projects/project-2 &amp;&amp; claude
+cd ~/projects/project-2 && claude
 
 # 终端3、4、5以此类推
 ```
 
 **第三步：标记每个窗口**
 
-+   macOS：iTerm2按 Cmd+Shift+I 重命名标签为"1"、"2"...
++ macOS：iTerm2按 Cmd+Shift+I 重命名标签为"1"、"2"...
 
-+   Windows Terminal：右键标签→重命名
++ Windows Terminal：右键标签→重命名
 
-+   实体便签：每个窗口贴便签写"登录重构"、"API文档"
++ 实体便签：每个窗口贴便签写"登录重构"、"API文档"
 
 **为啥这么干？**
 
-我之前5个Claude共用一个git目录，改同一个文件就炸。
+我之前5个Claude共用一个`git`目录，改同一个文件就炸。
 
-git worktree才是王道——5个独立工作目录，每个检出自己的feature分支，互不干扰。改完各自提PR合并回main，有冲突在合并时处理。
+`git worktree`才是王道——5个独立工作目录，每个检出自己的`feature`分支，互不干扰。改完各自提PR合并回`main`，有冲突在合并时处理。
 
-**注意**：每个worktree必须检出不同分支，不能两个worktree同时用main分支。
+**注意**：每个`worktree`必须检出不同分支，不能两个`worktree`同时用`main`分支。
 
 真的，要改名，不然真记不住，而且还会遇到闪退的情况。
 
 ![](img/7e1bb8946bc71da204c9af632475ce25.png)
 
-回来/resume都找不到，最好再养成更改会话名字的习惯，/rename
+回来`/resume`都找不到，最好再养成更改会话名字的习惯，`/rename`
 
 ![](img/dddc9807a98ae82a1cbdb6613f770d26.png)
 
@@ -131,7 +132,7 @@ git worktree才是王道——5个独立工作目录，每个检出自己的feat
 
 模型选择？
 
-Opus 4.5 + Thinking，没别的。
+Opus 4.5 + `Thinking`，没别的。
 
 他原话：这是我用过最好的编程模型。
 
@@ -141,7 +142,7 @@ Opus 4.5 + Thinking，没别的。
 
 **少返工才是真效率。**
 
-### 怎么开Thinking模式？
+### 怎么开`Thinking`模式？
 
 ```
 # 方法1：命令行参数
@@ -150,58 +151,58 @@ claude --model opus-4.5 --thinking
 # 方法2：配置文件（推荐）
 # 编辑 ~/.claude/config.json
 {
-  &quot;model&quot;: &quot;claude-opus-4.5&quot;,
-  &quot;thinking&quot;: true
+  "model": "claude-opus-4.5",
+  "thinking": true
 }
 ```
 
-当然，如果你有老金的Hook，会更加如虎添翼。
+当然，如果你有老金的`Hook`，会更加如虎添翼。
 
-元提示词优化Hook：https://ai.feishu.cn/wiki/YvX7weVX2iuyL9kbxbocia4qn5b
+元提示词优化`Hook`：https://ai.feishu.cn/wiki/YvX7weVX2iuyL9kbxbocia4qn5b
 
 会帮你更好的拆解需求
 
 ![](img/cd11430f9ea857aca43098baa571141e.png)
 
-## 技巧3：先Plan再动手
+## 技巧3：先`Plan`再动手
 
-新任务？按两次Shift+Tab进Plan Mode。
+新任务？按两次`Shift+Tab`进`Plan Mode`。
 
 **重点来了**
 
-第一次按Shift+Tab，底部显示 ⏵⏵ accept edits on，这是Auto-accept模式。
+第一次按`Shift+Tab`，底部显示 ⏵⏵ `accept edits on`，这是`Auto-accept`模式。
 
 ![](img/6b05ce41dc4009f7485a32e7d6d8405a.png)
 
-**再按一次**，才显示 ⏸ plan mode on，这才对了。
+**再按一次**，才显示 ⏸ `plan mode on`，这才对了。
 
 ![](img/2651f81ba2eaeacd6882402b461b272d.png)
 
-Plan Mode里Claude只分析不改代码，就跟你聊方案。
+`Plan Mode`里Claude只分析不改代码，就跟你聊方案。
 
-聊到满意，再按Shift+Tab切回去开始执行。
+聊到满意，再按`Shift+Tab`切回去开始执行。
 
 **我之前按一次以为**就进了，结果它直接开改，差点搞崩测试库。记住：必须两次。
 
 ### 完整操作流程
 
-1.  启动Claude Code：claude
+1. 启动Claude Code：`claude`
 
-1.  按 Shift+Tab 第一次 → 看到 ⏵⏵ accept edits on（这是Auto-accept）
+1. 按 `Shift+Tab` 第一次 → 看到 ⏵⏵ `accept edits on`（这是`Auto-accept`）
 
-1.  按 Shift+Tab 第二次 → 看到 ⏸ plan mode on（成功进入Plan Mode）
+1. 按 `Shift+Tab` 第二次 → 看到 ⏸ `plan mode on`（成功进入`Plan Mode`）
 
-1.  跟Claude聊方案："我要重构支付模块，保证向后兼容"
+1. 跟Claude聊方案："我要重构支付模块，保证向后兼容"
 
-1.  Claude给3个方案，你选一个
+1. Claude给3个方案，你选一个
 
-1.  按 Shift+Tab 切回Normal Mode
+1. 按 `Shift+Tab` 切回`Normal Mode`
 
-1.  说"开始执行"，Claude开始改代码
+1. 说"开始执行"，Claude开始改代码
 
 **先规划后执行**，道理都懂，但我老忍不住上来就干。
 
-当然我更喜欢全权限启动：claude --dangerously-skip-permissions
+当然我更喜欢全权限启动：`claude --dangerously-skip-permissions`
 
 这个方式就是它全部自己操作，不需要问你任何事情，当然你可以自行设定允许它做什么。
 
@@ -209,7 +210,7 @@ Plan Mode里Claude只分析不改代码，就跟你聊方案。
 
 ## 技巧4：给Claude建错题本
 
-团队有个CLAUDE.md放仓库根目录。
+团队有个`CLAUDE.md`放仓库根目录。
 
 规则贼简单：Claude搞错了，立刻加进去。
 
@@ -260,7 +261,7 @@ Plan Mode里Claude只分析不改代码，就跟你聊方案。
 
 咋验证？单元测试写完就跑。Chrome扩展看效果。手机模拟器预览。
 
-改claude.ai/code时，Claude自己开浏览器测UI。改代码，再测。
+改`claude.ai/code`时，Claude自己开浏览器测UI。改代码，再测。
 
 加这个循环后质量翻**2到3倍**。
 
@@ -270,47 +271,48 @@ Plan Mode里Claude只分析不改代码，就跟你聊方案。
 
 **方式1：单元测试自动运行**
 
+在`CLAUDE.md`里加这段
+
 ```
-# 在CLAUDE.md里加这段
 ## 验证方法
 每次修改代码后必须运行：
 - Python项目：pytest tests/
 - JavaScript项目：npm test
-- 看到&quot;All tests passed&quot;才算完成
+- 看到"All tests passed"才算完成
 ```
 
-**方式2：配置测试Hook**
+**方式2：配置测试`Hook`**
 
 ```
 // .claude/settings.json
 {
-  &quot;hooks&quot;: {
-    &quot;post-edit&quot;: &quot;npm test&quot;
+  "hooks": {
+    "post-edit": "npm test"
   }
 }
 ```
 
 **方式3：让Claude主动问**
 
-在CLAUDE.md加：
+在`CLAUDE.md`加：
 
 ```
 ## 工作流程
 1. 修改代码
 2. 运行测试（必须）
 3. 测试失败 → 自己分析错误 → 自己修复 → 重新测试
-4. 测试通过 → 报告&quot;测试已通过&quot;
+4. 测试通过 → 报告"测试已通过"
 ```
 
 **关键是形成闭环**——别当监工，当甲方。你只要说"测试通过了吗"，剩下它自己搞定。
 
 ## 技巧6：一天跑几十次的命令
 
-**/commit-push-pr**——提交、推送、创建PR一键搞定。
+`/commit-push-pr`——提交、推送、创建PR一键搞定。
 
 一天跑几十次，高频操作变一句话。
 
-我现在只用/commit，得升级了。
+我现在只用`/commit`，得升级了。
 
 ### 怎么用slash命令？
 
@@ -330,7 +332,7 @@ Plan Mode里Claude只分析不改代码，就跟你聊方案。
 4. 更新k8s配置
 ```
 
-直接说 /deploy，Claude按步骤执行。
+直接说 `/deploy`，Claude按步骤执行。
 
 ## 技巧7：Web能传到终端
 
@@ -338,31 +340,31 @@ Plan Mode里Claude只分析不改代码，就跟你聊方案。
 
 根据他讲，终端跑着，浏览器还开5到10个会话。
 
-关键是——teleport能从网页传到本地。
+关键是——`teleport`能从网页传到本地。
 
-**注意**：teleport是**单向**的——只能Web → CLI，不能反过来。
+**注意**：`teleport`是**单向**的——只能`Web` → `CLI`，不能反过来。
 
-网页写到一半，想本地继续，用 claude --teleport <session-id>，聊天记录和文件全下来。
+网页写到一半，想本地继续，用 `claude --teleport <session-id>`，聊天记录和文件全下来。
 
 终端到网页？没这功能。
 
 ### 完整操作步骤
 
-1.  在网页版 claude.ai/code 开始任务
+1. 在网页版 `claude.ai/code` 开始任务
 
-1.  写到一半想切本地
+1. 写到一半想切本地
 
-1.  点右上角"Session ID"复制（比如：abc123）
+1. 点右上角"Session ID"复制（比如：abc123）
 
-1.  本地终端运行：
+1. 本地终端运行：
 
 ```
 claude --teleport abc123
 ```
 
-1.  等5-10秒，所有聊天记录和文件下载完成
+1. 等5-10秒，所有聊天记录和文件下载完成
 
-1.  继续本地工作
+1. 继续本地工作
 
 **为啥要这么切？**
 
@@ -380,15 +382,15 @@ Boris网页开5个处理文档、回答问题，本地开代码重构。
 
 ### macOS设置（小白照着做）
 
-1.  系统设置 → 通知
+1. 系统设置 → 通知
 
-1.  找到"终端"或"iTerm2"
+1. 找到"终端"或"iTerm2"
 
-1.  允许通知 ✅
+1. 允许通知 ✅
 
-1.  显示预览：始终
+1. 显示预览：始终
 
-1.  提醒样式：横幅（不是弹窗，太烦）
+1. 提醒样式：横幅（不是弹窗，太烦）
 
 ### Windows 10/11设置（小白照着做）
 
@@ -396,23 +398,23 @@ Boris网页开5个处理文档、回答问题，本地开代码重构。
 
 方法1：开启终端响铃提示（最简单）
 
-1.  打开Windows Terminal
+1. 打开Windows Terminal
 
-1.  按 Ctrl+, 打开设置
+1. 按 Ctrl+, 打开设置
 
-1.  点击左侧"外观"或"Appearance"
+1. 点击左侧"外观"或"Appearance"
 
-1.  找到"视觉响铃"或"Visual Bell"，打开 ✅
+1. 找到"视觉响铃"或"Visual Bell"，打开 ✅
 
-1.  Claude需要确认时，终端标题栏会闪烁提醒
+1. Claude需要确认时，终端标题栏会闪烁提醒
 
 **方法2：任务栏闪烁提醒（推荐）**
 
-1.  设置 → 系统 → 通知和操作（Win10）/ 通知（Win11）
+1. 设置 → 系统 → 通知和操作（Win10）/ 通知（Win11）
 
-1.  确保"获取来自应用和其他发送者的通知"是开的
+1. 确保"获取来自应用和其他发送者的通知"是开的
 
-1.  往下滚，确保"Windows Terminal"通知打开
+1. 往下滚，确保"Windows Terminal"通知打开
 
 方法3：PowerShell通知脚本（进阶）
 
@@ -421,7 +423,7 @@ Boris网页开5个处理文档、回答问题，本地开代码重构。
 Install-Module -Name BurntToast -Force
 
 # Claude跑完后弹通知
-New-BurntToastNotification -Text &quot;Claude完活了！&quot; -AppLogo $null
+New-BurntToastNotification -Text "Claude完活了！" -AppLogo $null
 ```
 
 **实测最有效的方法**：
@@ -436,11 +438,11 @@ Win10上这招比通知更直接。
 
 ## 技巧9：信任模式
 
-Plan聊满意了？切Auto-accept，修改自动接受不用挨个确认。
+`Plan`聊满意了？切`Auto-accept`，修改自动接受不用挨个确认。
 
-Plan做细了基本能一步到位。得信任它，但前提是Plan真做细了。
+`Plan`做细了基本能一步到位。得信任它，但前提是`Plan`真做细了。
 
-Shift+Tab 或启动时直接claude --dangerously-skip-permissions
+`Shift+Tab` 或启动时直接`claude --dangerously-skip-permissions`
 
 ### 使用节奏
 
@@ -456,21 +458,21 @@ Plan Mode       → 只聊方案不改代码
 
 **我的实战经验**：
 
-+   Plan Mode聊3-5轮，把方案敲死
++ `Plan Mode`聊3-5轮，把方案敲死
 
-+   切Auto-accept，说"开始执行"
++ 切`Auto-accept`，说"开始执行"
 
-+   去喝杯咖啡，回来看结果
++ 去喝杯咖啡，回来看结果
 
-+   90%情况一次搞定
++ 90%情况一次搞定
 
-别一上来就Auto-accept——第一次用Plan Mode没做细，直接Auto-accept，Claude把测试数据库清空了。
+别一上来就`Auto-accept`——第一次用`Plan Mode`没做细，直接`Auto-accept`，Claude把测试数据库清空了。
 
 血泪教训。
 
 ## 技巧10：让Claude先Review
 
-**/code-review**——Claude自己先过一遍标问题，人工只看它标的。
+`/code-review`——Claude自己先过一遍标问题，人工只看它标的。
 
 能自动化大部分Review。我还傻乎乎自己看，该让它先过了。
 
@@ -481,11 +483,11 @@ Plan Mode       → 只聊方案不改代码
 claude /code-review
 
 # 方法2：自然语言
-&quot;帮我review这段代码，重点检查：
+"帮我review这段代码，重点检查：
 1. 安全漏洞
 2. 性能问题
 3. 代码规范
-4. 测试覆盖&quot;
+4. 测试覆盖"
 
 # Claude输出
 ## Review报告
@@ -501,7 +503,7 @@ claude /code-review
 
 他原话："开箱即用就挺好，没咋定制。"
 
-创建者配置贼素，没装一堆插件没搞复杂Hook。
+创建者配置贼素，没装一堆插件没搞复杂`Hook`。
 
 **我以为高手肯**定花里胡哨，结果人家用原版。简单就是好。
 
@@ -510,13 +512,13 @@ claude /code-review
 ```
 // .claude/settings.json
 {
-  &quot;model&quot;: &quot;claude-opus-4.5&quot;,
-  &quot;thinking&quot;: true,
-  &quot;auto_commit&quot;: false
+  "model": "claude-opus-4.5",
+  "thinking": true,
+  "auto_commit": false
 }
 ```
 
-就这3行。我之前装了20个Hook、15个自定义命令，结果启动慢、经常出bug。
+就这3行。我之前装了20个`Hook`、15个自定义命令，结果启动慢、经常出bug。
 
 后来全删了，只留5个高频命令，速度快了3倍。
 
@@ -528,11 +530,11 @@ Claude能连续跑**几小时甚至2天**，咋做到的？
 
 **真正的秘密**：
 
-1.  Plan Mode做细了，执行路径清晰
+1. `Plan Mode`做细了，执行路径清晰
 
-1.  给足验证方法，它能自己测试自己迭代
+1. 给足验证方法，它能自己测试自己迭代
 
-1.  Auto-accept模式减少人工干预
+1. `Auto-accept`模式减少人工干预
 
 最长会话2天那个，是因为Boris规划得太细，Claude一口气执行完一个大Feature。
 
@@ -544,52 +546,54 @@ Claude能连续跑**几小时甚至2天**，咋做到的？
 
 ![](img/c4d5e51845da64ce806b84c7f6445efd.png)
 
-配合一个空消息Hook发送空消息，就能解决它自己断的问题。
+配合一个空消息`Hook`发送空消息，就能解决它自己断的问题。
 
 ![](img/5aa1e5719db4392a58ed62185c58f7ad.png)
 
 ### 配置长时间运行
 
-**第一步：Plan做细**
+**第一步：`Plan`做细**
+
+
 
 ```
-不能说：&quot;重构支付模块&quot;
-要说：&quot;重构支付模块，分3步：
+不能说："重构支付模块"
+要说："重构支付模块，分3步：
 1. 先写测试覆盖现有功能
 2. 重构代码保证测试通过
-3. 优化性能，目标响应&lt;200ms
-每步完成后运行测试，全通过再继续&quot;
+3. 优化性能，目标响应<200ms
+每步完成后运行测试，全通过再继续"
 ```
 
-**第二步：配置自动验证**
+# 第二步：配置自动验证
 
-在CLAUDE.md加：
+在`CLAUDE.md`加：
 
 ```
 ## 长任务流程
-1. 接到任务 → 先Plan Mode规划
-2. 开始执行 → 切Auto-accept
+1. 接到任务 → 先`Plan Mode`规划
+2. 开始执行 → 切`Auto-accept`
 3. 每完成一步 → 自动运行测试
 4. 测试失败 → 自己分析修复
 5. 测试通过 → 继续下一步
-6. 全部完成 → 报告&quot;任务完成&quot;
+6. 全部完成 → 报告"任务完成"
 ```
 
-**第三步：开通知挂机**
+# 第三步：开通知挂机
 
-我试了下连跑4小时，关键是**Plan要详细，验证要自动**。
+我试了下连跑4小时，关键是`Plan`要详细，验证要自动。
 
 你就等通知，成功了看结果，失败了介入。
 
-## 技巧13：10多个并行跑
+# 技巧13：10多个并行跑
 
 组合拳：终端+网页=10到15个并行。
 
 网页轻活：问答、查文档。终端重活：编码。
 
-两边teleport打通，跟流水线似的。
+两边`teleport`打通，跟流水线似的。
 
-### Boris的实战配置（5+5模式）
+## Boris的实战配置（5+5模式）
 
 **本地终端（5个重任务）**：
 
@@ -607,7 +611,7 @@ Claude能连续跑**几小时甚至2天**，咋做到的？
 
 **为啥不直接开15个？**
 
-Boris开15个是因为他管整个Claude Code仓库，任务粒度细。
+Boris开15个是因为他管整个`Claude Code`仓库，任务粒度细。
 
 我现在最多10个终端就是极限。
 
@@ -621,11 +625,11 @@ Boris开15个是因为他管整个Claude Code仓库，任务粒度细。
 
 别一口气开15个，我第一次开10个，切晕了完全懵逼。
 
-## 老金划重点（实战半年的真实感受）
+# 老金划重点（实战半年的真实感受）
 
 **为什么会这么像？**
 
-Claude Code用到极致，核心就3点：
+`Claude Code`用到极致，核心就3点：
 
 第一、能同时干的事，别一件一件来。
 
@@ -639,13 +643,13 @@ Claude Code用到极致，核心就3点：
 
 装一堆插件，反而容易出问题。
 
-Boris作为创建者，从第一天就知道正确玩法。
+`Boris`作为创建者，从第一天就知道正确玩法。
 
 我作为用户，花半年踩坑才摸到门道。
 
 方法一样，但效率差距明显：
 
-Boris 30天干了**259个PR**，我6个月才**18个**，差距**14.4倍**。
+`Boris` 30天干了**259个PR**，我6个月才**18个**，差距**14.4倍**。
 
 他能同时开**15个**并行，我只能开**5个**，差距**3倍**。
 
@@ -653,17 +657,17 @@ Boris 30天干了**259个PR**，我6个月才**18个**，差距**14.4倍**。
 
 **差在哪？**
 
-1.  **Plan的细致度**：他的Plan明显更详细
+1.  `Plan`的细致度：他的`Plan`明显更详细
 
-1.  **验证的自动化**：他的验证闭环更完善
+1.  验证的自动化：他的验证闭环更完善
 
-1.  **任务的拆解**：他管整个仓库，粒度更细
+1.  任务的拆解：他管整个仓库，粒度更细
 
 **方法对了，但熟练度还差很多。**
 
 ---
 
-### 最值得学的3条（按ROI排序）
+## 最值得学的3条（按ROI排序）
 
 第1名：技巧5 - 让它自己验证
 
@@ -682,16 +686,16 @@ ROI最高，没有之一。质量直接翻3倍。
 **配置方法**（复制就能用）：
 
 ```
-# CLAUDE.md新增
+# `CLAUDE.md`新增
 ## 质量标准
 每次修改代码后必须：
-1. 运行所有测试（pytest/npm test）
-2. 检查测试覆盖率 &gt;80%
+1. 运行所有测试（`pytest`/`npm test`）
+2. 检查测试覆盖率 >80%
 3. 测试失败 → 自己分析日志 → 自己修复 → 重新测试
-4. 全部通过 → 报告&quot;✅ 测试通过&quot;
+4. 全部通过 → 报告"✅ 测试通过"
 5. 没通过 → 继续修复直到通过
 
-不要问我&quot;需要我跑测试吗&quot;，直接跑。
+不要问我"需要我跑测试吗"，直接跑。
 ```
 
 ---
@@ -710,7 +714,7 @@ ROI最高，没有之一。质量直接翻3倍。
 
 终端1在跑测试（2分钟）→ 我切终端2继续写
 
-终端2在Plan Mode聊方案 → 我切终端3改bug
+终端2在`Plan Mode`聊方案 → 我切终端3改bug
 
 终端4在生成文档 → 我用终端5查API
 
@@ -746,37 +750,37 @@ ROI最高，没有之一。质量直接翻3倍。
 
 ---
 
-第3名：技巧3 - Plan Mode
+第3名：技巧3 - `Plan Mode`
 
-**用了Plan Mode之后**：
+**用了`Plan Mode`之后**：
 
 ```
-**我****：****&quot;重构支付模****块**，保证向后兼容，不能动订单表&quot;
+**我**："重构支付模块"，保证向后兼容，不能动订单表"
 
-Claude（Plan Mode）：&quot;我给3个方案：
+Claude（`Plan Mode`）："我给3个方案：
 方案1：新建支付表，迁移数据（风险：数据一致性）
 方案2：扩展现有表，加兼容层（风险：性能下降10%）
 方案3：外部服务解耦（风险：网络延迟）
-  推荐方案2，加缓存抵消性能损失&quot;
+  推荐方案2，加缓存抵消性能损失"
   
-我：&quot;用方案2，但要加数据迁移脚本，确保回滚&quot;
+我："用方案2，但要加数据迁移脚本，确保回滚"
 
-Claude：&quot;收到，具体步骤：
+Claude："收到，具体步骤：
 写迁移脚本（含回滚）
 测试环境验证
 添加兼容层
 写单元测试
 压测确认性能
-  可以吗？&quot;
+  可以吗？"
   
-我：&quot;可以，开始&quot;
+我："可以，开始"
 
-Claude（切Auto-accept）：一次性搞定，测试全过
+Claude（切`Auto-accept`）：一次性搞定，测试全过
 ```
 
-核心是Plan做细了，执行才敢放手。
+核心是`Plan`做细了，执行才敢放手。
 
-**我的Plan Mode模板**（复制就能用）：
+**我的`Plan Mode`模板**（复制就能用）：
 
 ```
 【背景】现在要做什么
@@ -791,35 +795,33 @@ Claude（切Auto-accept）：一次性搞定，测试全过
 - 回滚方案
 ```
 
-别急着开Auto-accept，Plan阶段多聊两轮，省下的时间比你想的多。
+别急着开`Auto-accept`，`Plan`阶段多聊两轮，省下的时间比你想的多。
 
----
+# 给小白的建议（按这个顺序来）
 
-### 给小白的建议（按这个顺序来）
+**如果你是第一次用`Claude Code`，别一口气学13条，会懵。**
 
-**如果你是第一次用Cla**ude Code，别一口气学13条，会懵。
+## Week 1计划（只学3条）
 
-#### Week 1计划（只学3条）
-
-**技巧2：只用Opus 4.5**
+**技巧2：只用`Opus 4.5`**
 
 别纠结模型了，一步到位。
 
-配置：claude --model opus-4.5 --thinking
+配置：`claude --model opus-4.5 --thinking`
 
-目标：习惯Thinking模式的节奏。
+目标：习惯`Thinking`模式的节奏。
 
-**技巧3：学会Plan Mode**
+**技巧3：学会`Plan Mode`**
 
-记住：Shift+Tab两次。
+记住：`Shift+Tab`两次。
 
-每个任务都先Plan，聊3-5轮。
+每个任务都先`Plan`，聊3-5轮。
 
 目标：养成"规划-执行"习惯。
 
 技巧5：配置自动测试（最重要！）
 
-在CLAUDE.md写："每次改代码后运行 npm test"
+在`CLAUDE.md`写："每次改代码后运行 `npm test`"
 
 让Claude自己跑，自己修。
 
@@ -829,17 +831,17 @@ Claude（切Auto-accept）：一次性搞定，测试全过
 
 ---
 
-#### Week 2计划（加2条）
+## Week 2计划（加2条）
 
 **技巧1：开2个终端试试**
 
-用git worktree建2个工作区。
+用`git worktree`建2个工作区。
 
 1个写新功能，1个改bug。
 
 目标：体验同时干活的感觉。
 
-技巧4：建CLAUDE.md错题本
+技巧4：建`CLAUDE.md`错题本
 
 创建文件，写5条规范。
 
@@ -851,7 +853,7 @@ Claude犯错就加一条。
 
 ---
 
-#### Week 3计划（再加3条）
+## Week 3计划（再加3条）
 
 **技巧8：开通知**
 
@@ -863,27 +865,27 @@ Claude犯错就加一条。
 
 **技巧6：用slash命令**
 
-学会 /commit-push-pr
+学会 `/commit-push-pr`
 
 高频操作都改成命令。
 
 目标：减少重复输入。
 
-技巧9：尝试Auto-accept
+技巧9：尝试`Auto-accept`
 
-前提：Plan做细了。
+前提：`Plan`做细了。
 
 小任务试水，别上来就大项目。
 
 目标：信任Claude。
 
-**Week 3目标**：3个终端，会用Auto-accept。
+**Week 3目标**：3个终端，会用`Auto-accept`。
 
 ---
 
-#### Week 4+（剩下5条慢慢来）
+## Week 4+（剩下5条慢慢来）
 
-+   技巧7：teleport（需要时再学）
++   技巧7：`teleport`（需要时再学）
 
 +   技巧10：code-review（团队协作时用）
 
@@ -895,25 +897,23 @@ Claude犯错就加一条。
 
 **别贪多，先把前8条用顺了再说。**
 
----
-
-### 最后一句话
+# 最后一句话
 
 259个PR不是神话，是方法论。
 
-Boris用的是Opus 4.5，我也是。
+`Boris`用的是`Opus 4.5`，我也是。
 
-Boris用Plan Mode，我也学会了。
+`Boris`用`Plan Mode`，我也学会了。
 
-Boris开5个并行，我现在也开了。
+`Boris`开5个并行，我现在也开了。
 
 **差距在哪？**
 
-他的Plan比我细**10倍**。
+他的`Plan`比我细**10倍**。
 
 他的验证闭环比我快**3倍**。
 
-他的CLAUDE.md比我精准**5倍**。
+他的`CLAUDE.md`比我精准**5倍**。
 
 这就是为什么他一个月259个PR，我只有18个。
 
@@ -927,9 +927,7 @@ Boris开5个并行，我现在也开了。
 
 说不定你的方法比我还好，也教教我。
 
----
-
-## 参考来源
+# 参考来源
 
 +   Boris Cherny Twitter原帖 - 259 PRs完整数据
 
@@ -939,8 +937,8 @@ Boris开5个并行，我现在也开了。
 
 +   [VentureBeat报道](https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are) - 媒体深度报道
 
-+   Claude Code官方文档 - Plan Mode - Plan Mode使用指南
++   Claude Code官方文档 - `Plan Mode` - `Plan Mode`使用指南
 
-+   Claude Code Web文档 - Teleport功能说明
++   Claude Code Web文档 - `Teleport`功能说明
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

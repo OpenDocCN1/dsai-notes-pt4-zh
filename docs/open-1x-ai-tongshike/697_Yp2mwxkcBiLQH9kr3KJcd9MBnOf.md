@@ -1,3 +1,4 @@
+
 # Napkin AI：PPT配图
 
 > 来源：[https://datawhaler.feishu.cn/docx/G1J2dJRJdozgdWxfC7ncg0eenBf](https://datawhaler.feishu.cn/docx/G1J2dJRJdozgdWxfC7ncg0eenBf)
@@ -12,7 +13,7 @@ Talk is cheap，我们先来看看效果：
 
 ![](img/5cdaf8dcec195ddd875d125a81d7b3db.png)
 
-[bandicam 2025-03-21 18-09-59-190.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EQyGbvhKeoy1V3xR0Yzcddh7nlf)
+[`bandicam 2025-03-21 18-09-59-190.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EQyGbvhKeoy1V3xR0Yzcddh7nlf)
 
 这里做了什么事情呢？其实就是我把一篇文章的内容，导入napkin，然后选中全文，让它生成了一张可视化的图。
 
@@ -32,39 +33,43 @@ napkin用AI分析我们选中的文字，自动匹配后台的信息图模板，
 
 看到这里的朋友，可能想要开始尝试看看了，我这里也总结了零门槛操作步骤：
 
-1.  进入官网。链接在这里：https://www.napkin.ai/
+## 零门槛操作步骤
 
-1.  点击进入napkin
+1. 进入官网。链接在这里：https://www.napkin.ai/
+
+2. 点击进入napkin
 
 ![](img/69f9347814a3b1d175ffb649ba9fa479.png)
 
-1.  napkin提供了3种生成信息图的方式
+3. napkin提供了3种生成信息图的方式
 
 ![](img/2c8c03d450bdebda0411460fbcefe1e4.png)
 
-1.  最上面一种：直接用napkin来生成文字，再生成对应的信息图。不太推荐
+4. 最上面一种：直接用napkin来生成文字，再生成对应的信息图。不太推荐
 
-1.  中间：从文件里识别文字，生成信息图。适合已经有文档的情况
+5. 中间：从文件里识别文字，生成信息图。适合已经有文档的情况
 
-1.  最下面一种：napkin会给你一个空白文档，你可以自由粘贴文字进去，选择对应的文字生成信息图。是最自由的方式
+6. 最下面一种：napkin会给你一个空白文档，你可以自由粘贴文字进去，选择对应的文字生成信息图。是最自由的方式
 
-1.  我们直接选择最下面一种方式，进入一个空白的文档。
+7. 我们直接选择最下面一种方式，进入一个空白的文档。
 
 ![](img/aa39390070af669ed7a027bdd7b44792.png)
 
-1.  然后把要生成信息图的文字粘贴进来。如果不知道粘什么，这里提供了一个例子：https://mp.weixin.qq.com/s/FLKOEKQx6VB33oaugOtgBg
+8. 然后把要生成信息图的文字粘贴进来。如果不知道粘什么，这里提供了一个例子：https://mp.weixin.qq.com/s/FLKOEKQx6VB33oaugOtgBg
 
-1.  我们直接点击蓝色闪电标志，生成这一段的信息图。
+9. 我们直接点击蓝色闪电标志，生成这一段的信息图。
 
 ![](img/d4ef814c6e73e2166be524593514dd4a.png)
 
-1.  等待几秒钟之后，对应的信息图就生成了。我们可以选择不同的模板、修改文字、图形位置等等。
+10. 等待几秒钟之后，对应的信息图就生成了。我们可以选择不同的模板、修改文字、图形位置等等。
 
 ![](img/bd35b683ccf9436005b0baaede099436.png)
 
-1.  生成好的图形，可以下载下来，也可以直接截图放到要用的地方。
+11. 生成好的图形，可以下载下来，也可以直接截图放到要用的地方。
 
 到这里，你就已经学会napkin的用法啦。
+
+## 应用场景延伸思考
 
 延伸思考，这个能力还可以应用到哪些场景呢？
 
@@ -88,13 +93,15 @@ napkin用AI分析我们选中的文字，自动匹配后台的信息图模板，
 
 此外，还可以用napkin来生成📕封面、法律领域可以用来生成案情关系图等等，这里就不演示啦，留给各位试一试~
 
+## 不足与趋势
+
 在使用napkin的过程中，其实也能发现一些不足之处。比如：
 
-1.  提供图片给napkin，想让它根据图上的文字，生成信息图。目前napkin就做不到
+1. 提供图片给napkin，想让它根据图上的文字，生成信息图。目前napkin就做不到
 
-1.  想让napkin生成excel中的图表，也做不到
+2. 想让napkin生成excel中的图表，也做不到
 
-1.  虽然模板比较多，但是图形风格都比较统一，自由度受到一定限制
+3. 虽然模板比较多，但是图形风格都比较统一，自由度受到一定限制
 
 以上这些问题都可以通过其他产品来解决，这里先留个坑。
 
@@ -114,6 +121,6 @@ napkin用AI分析我们选中的文字，自动匹配后台的信息图模板，
 
 <https://datawhaler.feishu.cn/sync/LfRzdAExlsoykRbUZymc0Jrfngh>
 
-# 欢迎投稿参与共建、下次微学习就学你的内容！
+## 欢迎投稿参与共建、下次微学习就学你的内容！
 
 <https://datawhaler.feishu.cn/sync/CPNrdTvwgshasbb2UjecLzVinPe>

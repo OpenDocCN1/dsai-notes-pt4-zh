@@ -1,3 +1,5 @@
+
+
 # 人人都是提示工程师 | 精品课程翻译
 
 > 来源：[https://aigcreative.feishu.cn/docx/RutNdrG34o4ZDmxxsgLcAKZPnGf](https://aigcreative.feishu.cn/docx/RutNdrG34o4ZDmxxsgLcAKZPnGf)
@@ -14,41 +16,41 @@ Codesignal最近发布了一套易于理解且充满实用技巧的免费教程�
 
 ![](img/83799607f41991ce855e422838329868.png)
 
-# 第一阶段：理解大型语言模型 (LLMs) 和基本的提示技巧
+## 第一阶段：理解大型语言模型 (LLMs) 和基本的提示技巧
 
 本基础课程带领学习者深入大型语言模型 (LLMs) 世界及提示构建的基本原理。课程目标是让学习者明白如GPT-3.5、GPT-4、LLaMA、Claude 2等LLMs是如何进行文本生成和用户互动的，为想要掌握利用先进人工智能技术创建能够精确输出的提示的人提供了一个坚实的学习基础。
 
-## 课程01：LLMs本质上是用于预测下一个词的机器
+### 课程01：LLMs本质上是用于预测下一个词的机器
 
-### 简介：
+#### 简介：
 
 欢迎进入大型语言模型 (LLMs) 及提示方法基本原理的迷人世界！在这开篇课程中，我们即将深入探索LLMs的真正内涵。先给个小提示：它们其实就是专门用来预测下一个词的高级机器。听上去简单？实际上它们的魅力远不止这些。不管你是编程新手，还是对这些技术奇观充满好奇，这里都是你的理想起点。让我们共同启程，一步步揭开LLMs核心功能背后的秘密。
 
-### 理解LLMs是用于预测下一个词的机器
+#### 理解LLMs是用于预测下一个词的机器
 
 想象当你正在发送短信或邮件时，手机能预测出你接下来可能打算输入的词。这正是大型语言模型（LLMs）的一个简单应用示例。然而，GPT-3.5、GPT-4（也就是大名鼎鼎的chatGPT）、Claude 2和LLaMA等LLMs则可以被视为单词预测领域的超级英雄。它们的能力远不止于预测下一个词——它们能够基于给定的输入生成一整段连贯有逻辑的文本。这种能力源于它们逐个预测下一个单词，以此方式连续扩展已有文本。
 
 LLMs的核心能力在于分析海量文本数据。通过深度分析，它们掌握了语言的模式、微妙差异和结构，进而能够预测在一串词汇中最自然出现的下一个词。可以说，它们就像在进行一场规模庞大、速度惊人的“填空游戏”。
 
-### LLMS是如何做预测的？
+#### LLMS是如何做预测的？
 
 你可能好奇LLMs如何能够做出如此精准的预测。答案在于它们的训练过程。LLMs被训练于包含大量教科书、文章、网站等内容的庞大数据集中。通过这一训练阶段，它们学习到了如何理解语言的上下文和流畅度，习得了语法、风格，乃至文本情感调性等方面的知识。
 
 当你向LLM提出一个句子或问题时，它依据所学到的内容预测接下来最可能出现的一个或几个词。这不是随机猜测，而是基于在训练过程中学到的模式和规则作出的精确预测。
 
-### 尝试下提示工程-Prompt Engineering
+#### 尝试下提示工程-Prompt Engineering
 
 考虑到LLMs本质上的概率特性，提示工程师面临的挑战是如何尽量使LLMs生成可预测且准确的结果。
 
 在这门课程中，你将学习到众多技巧，帮助你精通如何得到高度可预测的LLM输出——这既是一门艺术，也是一门科学。但在我们深入探讨之前，让我们先来做几个简单的实践练习，激活我们的思维。
 
-## 课程02：精通格式化与结构化：打造高效提示技巧的关键
+### 课程02：精通格式化与结构化：打造高效提示技巧的关键
 
-### 简介：
+#### 简介：
 
 在本课中，我们即将深入探讨设计给大型语言模型 (LLMs) 的提示时，格式化与结构化的一致性为何如此重要。可能令人惊讶的是，简单的提示格式调整竟然能显著改变AI的反馈效果。正如在人际交流中，清晰和有序对于确保你的要求被准确理解和执行至关重要。接下来，让我们一起探索如何运用这些基本原则，让你与LLMs的交互变得更高效、结果更可预期。
 
-### 格式一致性的重要性
+#### 格式一致性的重要性
 
 将你的提示格式化以保持一致性，不仅仅是为了外观整洁，更重要的是让你的意图对AI更加清晰。想象一下，如果你在指导某人烘焙蛋糕，却没有按顺序列出步骤，而是将它们搅在一起，结果会怎样？这会导致混乱，很可能做出来的蛋糕也不怎么好吃。同样的原理也适用于LLMs。通过以清晰、有序的方式呈现你的提示，你将大大增加获得所期望结果的可能性。
 
@@ -56,7 +58,7 @@ LLMs的核心能力在于分析海量文本数据。通过深度分析，它们�
 
 MPF是一种非常有效的方法，用于创建易于阅读、可维护和高效的提示，并且是Cosmo许多方面的核心。
 
-### Markdown提示框架（MPF）
+#### Markdown提示框架（MPF）
 
 在这个课程中，我们将通过多个示例来展示MPF的应用，但现在，先来看一个高层次的概要：
 
@@ -76,7 +78,7 @@ MPF是一种非常有效的方法，用于创建易于阅读、可维护和高�
 
 +   EXAMPLE—— 一个你会满意的输出示例是什么？
 
-### MPF应用示例
+#### MPF应用示例
 
 看看一个格式欠佳的提示示例：
 
@@ -106,13 +108,13 @@ __CONSTRAINTS__
 
 > 星际战机在夜空中交织出一幅绚烂的画卷，Luna与她的新伙伴英勇斗争。然而，随着战争的尘埃落定，宇宙突然一片漆黑，一个模拟舱的真相慢慢显现。“训练完成”，机械化的声音宣布了结束。Luna步出舱门，她的心脏怦怦直跳，满心期待着即将到来的真正冒险。
 
-## 课程03：为LLM提示编写高效的示例
+### 课程03：为LLM提示编写高效的示例
 
-### 介绍：
+#### 介绍：
 
 欢迎参加我们深入了解大型语言模型（LLMs）及基础提示技巧系列课程中的一课——“优质示例的重要性”。我们越是深入探讨LLMs的潜能，就越能明显看到，我们为模型准备的示例极大地影响了它们输出的质量和相关性。本节将重点讲解精心构建的示例在设计提示时的关键作用，这直接关系到模型理解当前任务和提供准确结果的能力。
 
-### 示例在引导LLMs进行有效回应中的角色
+#### 示例在引导LLMs进行有效回应中的角色
 
 示例是与大型语言模型进行有效交流的关键。设计提示不仅仅是提问或提出请求，更是在指导模型向我们期望的答案方向发展。通过给出清楚且相关的示例，我们不只是在阐明任务本身，更是在介绍背景信息和期待的输出格式。
 
@@ -133,7 +135,7 @@ __CONSTRAINTS__
 
 虽然成果已经相当不错，但可以看出文案开头有不必要的引言部分，且格式略显欠佳。另外，假如我们需要方便地复制粘贴这段文案，而不想要文案两侧的引号，这一点也需要调整。
 
-### 优质示例的作用
+#### 优质示例的作用
 
 虽然我们可以通过增加各种额外的约束条件来改善提示的表述，但更简便的办法是直接提供一个明确的示例，如下所示：
 
@@ -152,17 +154,17 @@ Build tech skills top companies are hiring for.
 
 这样我们得到了“Unlock your coding potential. Shine with CodeSignal”，这个结果更贴近我们的期望。
 
-### 总结
+#### 总结
 
 优质示例的价值远超附加效果；它们是设计LLM有效提示的基石。这些示例不仅将模型引导至我们所期望的方向，而且对提升生成内容的质量有着决定性的影响。在我们深入LLMs及提示工程的旅程中，别忘了一个恰当的示例所蕴含的巨大力量——它有可能是将一个好的输出转变为卓越输出的关键。
 
-## 课程04：上下文限制及其在提示工程中的作用
+### 课程04：上下文限制及其在提示工程中的作用
 
-### 探究上下文限制及其重要性
+#### 探究上下文限制及其重要性
 
 在大型语言模型（LLMs）的应用领域中，掌握上下文限制的知识至关重要。不论是使用GPT-3.5、GPT-4、Claude 2还是LLaMA，所有这类模型在生成回答时，都受到它们能够一次性处理的文本量的限制。这种限制不仅影响提示的设计方式，更深入了解这一概念还能大幅度提升你与LLMs的交互质量。本课程将详细介绍上下文限制的含义、它们的发展变化，以及如何巧妙地应对这些限制的实践策略。
 
-### 深入了解上下文限制
+#### 深入了解上下文限制
 
 上下文限制是指LLM在生成回答时可以处理的文本的最大长度。举个例子，按照最近的更新数据，GPT-3.5的上下文窗口能够处理的Token数量大约是4096个。
 
@@ -172,13 +174,13 @@ Build tech skills top companies are hiring for.
 
 理解Token的真实含义至关重要，正如你在之前的图像中所见，一个Token不仅可以是一个完整的单词，也可能是单词的一部分或者是标点。这就意味着，模型实际能处理的文本长度可能比你初步预计的要短。不过，一般来说，把Token等同于单词是一个不错的简化思路。
 
-### 上下文限制随时间的演进
+#### 上下文限制随时间的演进
 
 上下文限制的提升历程令人瞩目。以下是一个展示这些变化的简化表格：
 
 随着这一演变的发展，我们在生成更连贯、上下文更丰富的回答方面获得了更多可能性。但是，大部分LLM服务商是根据Token的使用量来收费的，而且常常我们使用的模型的上下文窗口并不大，因此我们需要采取一些策略来优化我们的提示，以规避这些限制。
 
-### 如何应对上下文限制
+#### 如何应对上下文限制
 
 要有效应对LLMs的上下文限制，需要有策略地设计提示并了解如何进行内容压缩。以下是一些克服这些限制的方法：
 
@@ -188,17 +190,17 @@ Build tech skills top companies are hiring for.
 
 +   **分步迭代提示**：把复杂的任务拆解成一系列更小、有序的步骤。通过逐步优化问题，即使在严格的Token限制下，你也能够引导LLM沿着逻辑连贯的思路进行。
 
-### 总结
+#### 总结
 
 尽管上下文限制在表面上似乎是一种严格的约束，它们实际上促使我们成为更加周到和高效的沟通者。随着大型语言模型不断进化，我们与它们交互的方式也在不断地改进。通过深入理解上下文限制的影响，并据此调整我们的提示设计，我们能够创建出既精确又高效的提示，从而获得相关性强且质量高的输出。
 
-## 课程05：精通AI提示中的风格艺术
+### 课程05：精通AI提示中的风格艺术
 
-### 介绍：
+#### 介绍：
 
 本课程将教你如何与大型语言模型（LLMs）进行有效交流，以便在提示中达到预期的风格效果。精通这一技巧对于创建能够产生定制、精确且风格一致的结果的提示至关重要。无论是撰写专业文档、编织富有创意的故事，还是其他任何形式的输出，深入理解风格的细节都将提升你的提示工程技巧。
 
-### 深入风格规范的理解
+#### 深入风格规范的理解
 
 可以把风格规范比作是向一位技艺高超的厨师提出菜品要求的过程。正如你会具体说明你希望牛排的烹饪程度一样，你也可以指引LLMs输出你想要的文本“味道”。风格涵盖了多个方面，如语调（正式或非正式）、用词（简洁或专业）、篇幅（简短或详尽）等。
 
@@ -222,7 +224,7 @@ __STYLE__
 
 > "Alone we can do so little; together we can do so much. Let's harness our collective strengths, dreams, and ambitions. Every challenge we face is an opportunity to grow stronger, together. Remember, it's not just about reaching the top; it's about the journey we share and the bonds we build. Let's move forward, hand in hand, towards our shared vision. Because when we unite, there's nothing we can't achieve."
 
-### 提示中的语气作用
+#### 提示中的语气作用
 
 语气在影响提示如何被解读以及你获得何种类型回应上具有显著作用。明确设定语气可以有效地指导LLM，使其生成的回应更贴合你所期望达到的情绪或专业背景。
 
@@ -238,7 +240,7 @@ Tone: Informative but easy to understand.
 
 在此示例中，通过设定语气，指引LLM在保证信息专业性的同时增加其易获取性，以确保内容对受众而言不过于技术化。
 
-### 调整语言风格和复杂度
+#### 调整语言风格和复杂度
 
 当面向的受众在专业知识水平上存在广泛差异时，明确指出所期望输出的语言风格和复杂度水平显得尤为关键。这可能意味着根据目标读者的需求，选择以简洁明了或含有专业术语的语言进行回答。
 
@@ -254,11 +256,14 @@ Language: Simple, for a general audience.
 
 通过这一提示，我们指示LLM采用通俗易懂的表达方式，使得那些非技术背景的人士也能够理解复杂技术。
 
-### 关于长度和细节的说明
+#### 关于长度和细节的说明
 
 最终，明确告知所需内容的长度和详细程度对于提高交流效果至关重要。这一步骤可能包括要求进行简明扼要的概述或提供详尽的阐述。
 
 示例：
+
+
+
 
 ```
 __ASK__
@@ -296,7 +301,7 @@ Length: Brief, two sentences.
 
 ```
 __ASK__
-Define &quot;Prompt Engineering&quot; in one sentence.
+Define "Prompt Engineering" in one sentence.
 
 __CONTEXT__
 - The concept pertains to the field of artificial intelligence.
@@ -372,14 +377,14 @@ __CONSTRAINTS__
 
 ```
 __ASK__
-Review this piece of code and tell me if it&#x27;s correct or incorrect
+Review this piece of code and tell me if it's correct or incorrect
 
 __CONTEXT__
 
 def fibonacci(n):
     a, b = 0, 1
-    while a &lt; n:
-        print(a, end=&#x27; &#x27;)
+    while a < n:
+        print(a, end=' ')
         a, b = b, a+b
     print()
 
@@ -402,14 +407,14 @@ __CONSTRAINTS__
 
 ```
 __ASK__
-Review this piece of code and tell me if it&#x27;s correct or incorrect
+Review this piece of code and tell me if it's correct or incorrect
 
 __CONTEXT__
 
 def fibonacci(n):
     a, b = 0, 1
-    while a &lt; n:
-        print(a, end=&#x27; &#x27;)
+    while a < n:
+        print(a, end=' ')
         a, b = b, a+b
     print()
 
@@ -449,10 +454,10 @@ __CONSTRAINTS__
 
 ```
 __ASK__
-Provide an overview of today&#x27;s stock market trend.
+Provide an overview of today's stock market trend.
 
 __CONTEXT__
-The S&amp;P 500 saw a slight increase in the morning but experienced volatility in the afternoon due to unexpected political news, closing with a minor gain.
+The S&P 500 saw a slight increase in the morning but experienced volatility in the afternoon due to unexpected political news, closing with a minor gain.
 ...
 
 __CONSTRAINTS__
@@ -471,10 +476,10 @@ __CONSTRAINTS__
 
 ```
 __ASK__
-Provide an overview of today&#x27;s stock market trend.
+Provide an overview of today's stock market trend.
 
 __CONTEXT__
-The S&amp;P 500 saw a slight increase in the morning but experienced volatility in the afternoon due to unexpected political news, closing with a minor gain.
+The S&P 500 saw a slight increase in the morning but experienced volatility in the afternoon due to unexpected political news, closing with a minor gain.
 ...
 
 __CONSTRAINTS__
@@ -533,7 +538,7 @@ __CONSTRAINTS__
 
 ```
 __ASK__
-Provide an outline for a detailed analysis of &quot;Romeo and Juliet.&quot;
+Provide an outline for a detailed analysis of "Romeo and Juliet."
 
 __CONSTRAINTS__
 - Focus on structure, key points, and themes.
@@ -549,14 +554,20 @@ __CONSTRAINTS__
 - Ensure each section is comprehensive and well-explained.
 
 __CONTEXT__
-&gt; OUTPUT_FROM_PREVIOUS_PROMPT
+> OUTPUT_FROM_PREVIOUS_PROMPT
 ```
 
 这种逐步细化的方法不仅促使得到一个有初步结构和详细度的回答，还能在此基础上进一步深化和丰富内容。当然，你可以继续加入第三步，再次应用同样的策略，但这时你可能会遇到上下文窗口的限制，尤其是在处理特定主题时。
 
 ### 实践时间
 
+
+
 现在你已经掌握了这些策略，就能够设计出鼓励大型语言模型产生更加长篇和详尽回答的引导语了。通过尝试这两种简单和复杂的方法，你将深入了解引导语设计的微妙之处，以及如何充分利用大型语言模型的能力来得到详尽的信息输出。
+
+# 第三阶段：深入格式控制的提升工程
+
+本课程致力于让用户掌握命令大型语言模型（LLMs）生成特定格式输出的技巧。从简单的项目列表到复杂的JSON对象，学习者将学习如何设计精准的引导语，从而获得结构化且符合特定格式要求的回答。这一进阶技能的掌握将大幅提升数据处理、报告编写的效率，并保证输出内容能够与更广泛的系统无缝对接。
 
 ## 课程10：深入了解通过F形电子邮件掌握复杂布局技巧
 
@@ -645,17 +656,13 @@ Best,
 [Your Company Name]
 ```
 
-尽管我们可以在约束（CONSTRAINTS）部分详细解释F形结构的工作原理，但更关键的是提供一个实例，同时保持对F形的描述简洁明了。按照上述引导策略，我们可以一致地创造出符合期望形状和格式的电子邮件。
+尽管我们可以在约束（`CONSTRAINTS`）部分详细解释F形结构的工作原理，但更关键的是提供一个实例，同时保持对F形的描述简洁明了。按照上述引导策略，我们可以一致地创造出符合期望形状和格式的电子邮件。
 
 ### 总结
 
 在本课中，你学习了如何设计能满足复杂输出要求的引导语。通过以撰写专业电子邮件为例，我们强调了平衡与结构的重要性——例如F形布局——来引导内容的产生。这种方法确保了你的引导语能有效指导语言模型生成不仅长度精准且结构优化的输出，以适应任何特定的需求。掌握这些技术是充分利用语言模型潜能的关键。现在，是时候去实践这些技巧了！
 
 ![](img/8faea62fe18458f72480f0d9885eb044.png)
-
-# 第三阶段：深入格式控制的提升工程
-
-本课程致力于让用户掌握命令大型语言模型（LLMs）生成特定格式输出的技巧。从简单的项目列表到复杂的JSON对象，学习者将学习如何设计精准的引导语，从而获得结构化且符合特定格式要求的回答。这一进阶技能的掌握将大幅提升数据处理、报告编写的效率，并保证输出内容能够与更广泛的系统无缝对接。
 
 ## 课程11：编写精准提示的格式基础知识
 
@@ -723,7 +730,7 @@ __CONSTRAINTS__
 
 掌握如何格式化编写提示远远超出了追求特定美学的范畴；它实际上是为了通过与大语言模型（LLMs）的有效沟通，来获得更加有效和实用的输出结果。在我们继续深入这门课程的学习过程中，需要记住的是，我们提问的方式就和我们询问的内容一样重要。一旦我们掌握了正确格式化的核心原则，就能更好地利用提示编写的巨大潜力，确保我们与大语言模型的交流尽可能地高效且成果丰富。
 
-## **课程12：**清晰条目的魔法：在编写提示时如何结构化列表响应
+## 课程12：清晰条目的魔法：在编写提示时如何结构化列表响应
 
 ### 引言
 
@@ -805,13 +812,15 @@ __FORMAT EXAMPLE__
 ...
 ```
 
-注意，在这个示例中，我们没有使用__EXAMPLE__作为部分的名称，而是选择了__FORMAT EXAMPLE__，目的是强调这不是一个具体的示例，而是一种格式上的展示。同时，请注意，虽然我们没有明确要求顶级条目必须加粗，但通过这种格式示例，我们也能达到这样的效果。
 
-### 总结：
+
+注意，在这个示例中，我们没有使用 `__EXAMPLE__` 作为部分的名称，而是选择了 `__FORMAT EXAMPLE__`，目的是强调这不是一个具体的示例，而是一种格式上的展示。同时，请注意，虽然我们没有明确要求顶级条目必须加粗，但通过这种格式示例，我们也能达到这样的效果。
+
+### 总结
 
 要从一个大语言模型（LLM）中获得条目列表形式的回答，需要精确、清晰地表达，同时对Markdown的格式化也要有深入的理解。如果你能明确指出需要条目列表，并且提供明确的上下文信息，就能大大增强AI输出的效果和实用性。这种能力在众多场合都极为宝贵，无论是撰写报告还是以易于理解的格式总结信息。通过在不同的提示和场景下进行实践，你将能够提升自己引导大语言模型输出有结构、有意义的条目列表的技巧。
 
-## **课程13：**在输出格式中使用Markdown标题
+## 课程13：在输出格式中使用Markdown标题
 
 ### 引言
 
@@ -823,7 +832,7 @@ __FORMAT EXAMPLE__
 
 现在，让我们通过实例深入了解如何在提示中融入Markdown标题的格式化指令。
 
-### 不包含格式请求的基础提示：
+### 不包含格式请求的基础提示
 
 比如说，你正在撰写一份生物学报告，想要借助一个大语言模型（LLM）的帮助，但你又希望你的报告能够在Markdown中结构清晰。你的初始提示可能是这样的：
 
@@ -834,7 +843,7 @@ Describe the process of photosynthesis.
 
 这样的提示只会得到一个故事性的叙述或是一个简单的列表，而无法形成有层次的结构。
 
-### 附带格式化要求的改进提示：
+### 附带格式化要求的改进提示
 
 ```
 __ASK__
@@ -852,9 +861,9 @@ Description...
 
 通过明确添加格式要求和结构示范，这样的提示更可能得到一个结构清晰、易于浏览的回答。
 
-### 进阶结构化技巧：
+### 进阶结构化技巧
 
-如果你只想使用特定格式的标题，如Markdown中的二级标题（即##），而非上述提示可能导出的多样标题格式，应该怎么办呢？
+如果你只想使用特定格式的标题，如Markdown中的二级标题（即 `##`），而非上述提示可能导出的多样标题格式，应该怎么办呢？
 
 ```
 __ASK__
@@ -881,7 +890,7 @@ __FORMAT EXAMPLE__
 
 设计出能够引导生成Markdown标题组织化回答的提示其实是直截了当的，但关键在于需要明确提出格式化的请求。通过尝试不同等级的标题规定，来实现你所期望的信息结构化程度。精通这一技巧需要不断实践，你在提示中的精准度将使得从大语言模型（LLM）得到的输出越来越有结构性和实用性。
 
-## **课程14：**结构化数据掌握：在大语言模型（LLMs）响应中使用JSON和YAML格式
+## 课程14：结构化数据掌握：在大语言模型（LLMs）响应中使用JSON和YAML格式
 
 ### 引言
 
@@ -891,9 +900,9 @@ __FORMAT EXAMPLE__
 
 在我们详细探索之前，首先了解一下支撑结构化格式生成的几个关键原则至关重要：
 
-+   精确指令：明确告知你期望的输出格式是什么，比如JSON、YAML或其他任何结构化格式。
++ 精确指令：明确告知你期望的输出格式是什么，比如JSON、YAML或其他任何结构化格式。
 
-+   清晰的上下文：为了和预期的结构化数据格式保持一致，需要提供充分的上下文信息。
++ 清晰的上下文：为了和预期的结构化数据格式保持一致，需要提供充分的上下文信息。
 
 下面让我们通过一些实例的结果来深入了解这些原则。
 
@@ -949,13 +958,13 @@ __EXAMPLE__
   email: john.smith@example.com
 ```
 
-我们来详细说明一下这里的操作。首先，我们通过一个包含了我们期望的特定空格规则的示例来展示。虽然我们也可以尝试在约束部分详细解释这些要求，但实际上，一个恰当的示例往往能更直观地传达我们的意图。我们还指定了我们需要的样本数量，并特别提醒LLM关注__EXAMPLE__部分的空格处理，因为YAML格式对空格的处理特别敏感。
+我们来详细说明一下这里的操作。首先，我们通过一个包含了我们期望的特定空格规则的示例来展示。虽然我们也可以尝试在约束部分详细解释这些要求，但实际上，一个恰当的示例往往能更直观地传达我们的意图。我们还指定了我们需要的样本数量，并特别提醒LLM关注 `__EXAMPLE__` 部分的空格处理，因为YAML格式对空格的处理特别敏感。
 
 ### 总结
 
 学会如何针对特定格式制定精确的提示，是提示技巧中一项极其重要的能力。本节课程提供了必要的知识和实例，使您能够自如地向大语言模型（LLMs）请求并获取结构化数据格式，比如JSON和YAML。通过在构造提示时应用这些原则和实例，你将能有效利用大语言模型处理需要严格数据格式的任务，为数据处理和系统整合开拓全新的可能性。
 
-## **课程15：**精通可执行代码：确保大语言模型（LLM）只生成可直接运行的代码
+## 课程15：精通可执行代码：确保大语言模型（LLM）只生成可直接运行的代码
 
 ### 引言
 
@@ -999,7 +1008,7 @@ def add_numbers(a, b):
 
 当你向大语言模型（LLM）添加了明确的新条件后，它就会明白你的目的是只获取可直接运行的代码。即便如此，返回的代码可能仍旧会被Markdown的反引号所包围。因此，如果你希望完全避开这些格式标记，可以考虑提供一个具体的示例来进一步说明你的需求。
 
-### 总结：
+### 总结
 
 总结而言，要想从大语言模型（LLM）中直接获得可运行的代码，构建精确且清晰的提示是至关重要的。通过清楚地界定代码需求，强调简洁性，以及明确排除所有非代码内容的要求，你便能引导大语言模型（LLM）输出整洁、立即可运行的代码。现在，就是将这些理论付诸实践的最佳时机了。
 
@@ -1017,7 +1026,7 @@ def add_numbers(a, b):
 
 ### 掌握文本总结中的保留元素
 
-在设计有效的总结提示之前，首先需要明确什么是你想要保留的"X"因素。"X"可能代表作者的原始语气、某个主题问题、特别的视角，或者是源文本中的独特风格元素。要在总结中保持这些元素，就需要有意识地制定出一套精巧的提示策略。
+在设计有效的总结提示之前，首先需要明确什么是你想要保留的 `X` 因素。`X` 可能代表作者的原始语气、某个主题问题、特别的视角，或者是源文本中的独特风格元素。要在总结中保持这些元素，就需要有意识地制定出一套精巧的提示策略。
 
 以这个简单的例子为起点：
 
@@ -1069,13 +1078,13 @@ __CONSTRAINTS__
 
 ### 有效总结策略
 
-实现既保留"X"又高效总结的关键策略包括：
+实现既保留 `X` 又高效总结的关键策略包括：
 
-+   清晰明确地指出需要保留什么。比如，如果要保留作者的语调，就明确指出是幽默、严肃还是正式等。
++ 清晰明确地指出需要保留什么。比如，如果要保留作者的语调，就明确指出是幽默、严肃还是正式等。
 
-+   明确设置总结的长度和重点的界限，确保总结聚焦主题。
++ 明确设置总结的长度和重点的界限，确保总结聚焦主题。
 
-+   当尝试保留如语调或风格这样较为抽象的元素时，用示例来明示你希望达到的效果。
++ 当尝试保留如语调或风格这样较为抽象的元素时，用示例来明示你希望达到的效果。
 
 ### 结论
 
@@ -1089,7 +1098,7 @@ __CONSTRAINTS__
 
 ### 理解这项任务
 
-在摒弃特定信息的同时进行文本总结是一个独特的挑战。这需要你对哪些信息至关重要以及哪些信息属于你希望省略的“X”有深刻的理解。发展这项技能的关键在于，你需要清楚且精确地向模型阐述你的需求。本质上，你是在请求模型把握文本的核心要义，然后在重新叙述时避开那些你指定要去除的部分。
+在摒弃特定信息的同时进行文本总结是一个独特的挑战。这需要你对哪些信息至关重要以及哪些信息属于你希望省略的 “X” 有深刻的理解。发展这项技能的关键在于，你需要清楚且精确地向模型阐述你的需求。本质上，你是在请求模型把握文本的核心要义，然后在重新叙述时避开那些你指定要去除的部分。
 
 想要在总结中避开特定内容，你需要谨慎设计你的提示。这里有一个简易的策略：
 
@@ -1125,9 +1134,11 @@ __CONTEXT__
 - [TEXT OF THE ARTICLE]
 ```
 
-在这个_**CONSTRAINTS_**环节中，我们不是留给模型自行解释，而是通过具体的指令明确指出应该包含和排除哪些内容。
+在这个 `__CONSTRAINTS__` 环节中，我们不是留给模型自行解释，而是通过具体的指令明确指出应该包含和排除哪些内容。
 
 #### 总结
+
+
 
 在总结文本的过程中，有意识地忽略掉某些细节，能够显著丰富你的提示工程技巧。本课不仅强调了给出精确与清晰指令的重要性，还为处理这一复杂任务提供了一个框架。通过不断练习，你将能够创建出完美契合你特定需求的总结，使得大语言模型（LLM）的应用更加个性化和高效。
 
@@ -1169,13 +1180,13 @@ In the heart of the mist-covered bridge, stood the hero, his sword drawn, reflec
 ----
 ```
 
-示例输出:
+示例输出：
 
 > In the heart of the mist-covered bridge, stood the hero, his sword drawn, reflecting the pale moonlight. Across from him, a shadowy figure emerged, its intentions as obscure as its form. The air was heavy with anticipation of the impending duel. The bridge, a silent witness to countless battles, seemed to hold its breath for yet another confrontation. The hero, with determination in his eyes, readied himself, knowing the shadowy adversary was unlike any he had faced before. Just as the hero braced for an attack, the ground beneath them trembled, and the ancient stones of the bridge began to glow with an ethereal light.
 
 > Unexpectedly, the shadowy figure halted, its form becoming less opaque, revealing a visage tormented by sorrow rather than malice. "I am no enemy," the figure spoke, its voice echoing with a haunting melody that seemed to resonate with the very essence of the bridge. "The real foe lies beyond, seeking to destroy what I've sworn to protect." The hero, taken aback, lowered his weapon slightly, sensing the sincerity in the figure's words. The tension that once filled the air shifted, giving way to a fragile truce formed upon the realization that perhaps their fates were intertwined more closely than they had imagined. Together, they turned their attention to the darkness that lay beyond, where the true threat awaited, hidden in the shadows that stretched ominously across the ancient stones.
 
-通过_**CONSTRAINTS_**部分，我们可以清楚地看到在故事扩展过程中需要维持哪些核心要素。如同从实际结果中所见，这种方法非常有效。
+通过`CONSTRAINTS`部分，我们可以清楚地看到在故事扩展过程中需要维持哪些核心要素。如同从实际结果中所见，这种方法非常有效。
 
 ### 总结
 
@@ -1185,23 +1196,20 @@ In the heart of the mist-covered bridge, stood the hero, his sword drawn, reflec
 
 ### 引言
 
-欢迎来到精确文本编辑的提示工程新课，本节我们将深入探讨一个非常吸引人的任务——在刻意修改某些特定元素或所谓的“X”时，如何扩展文本。这项任务展示了大语言模型（LLM）在处理和创造内容上的强大能力和灵活性。它不仅能够延续原有的叙述或信息，还能根据用户的具体需求加入精确的改动。本课程旨在提供策略，帮助你实现对文本进行微妙调整而不偏离其原本的方向或意图。
+欢迎来到精确文本编辑的提示工程新课，本节我们将深入探讨一个非常吸引人的任务——在刻意修改某些特定元素或所谓的`X`时，如何扩展文本。这项任务展示了大语言模型（LLM）在处理和创造内容上的强大能力和灵活性。它不仅能够延续原有的叙述或信息，还能根据用户的具体需求加入精确的改动。本课程旨在提供策略，帮助你实现对文本进行微妙调整而不偏离其原本的方向或意图。
 
 ### 掌握在改变某些细节的同时扩展文本的技巧
 
-扩展文本意味着为已有文本增加内容，使其更为丰富或详尽。本任务的一大特色就是有意识地修改某些特定的细节——即所谓的“X”。这些修改可能关乎语调、故事中的角色情感、描述的具体细节或是事实信息等多个方面。挑战在于如何让这些调整自然融入，既保持原文的完整性和连贯性，又能够融合新的方向或元素。
+扩展文本意味着为已有文本增加内容，使其更为丰富或详尽。本任务的一大特色就是有意识地修改某些特定的细节——即所谓的`X`。这些修改可能关乎语调、故事中的角色情感、描述的具体细节或是事实信息等多个方面。挑战在于如何让这些调整自然融入，既保持原文的完整性和连贯性，又能够融合新的方向或元素。
 
 现在，让我们一起看看如何精确地引导一个LLM完成这一任务。
 
 ### 分步制定精确的提示设计
 
-+   识别“X”首先，明确你想改变的“X”或是特定元素。在提示中具体说明这一点，能帮助LLM准确理解所需的修改范围和性质。
-
-+   设定扩展参数然后确定你期望以何种程度和方式扩展文本。这包括可能需要指明的字数、叙事的走向或是添加新的主题或信息。
-
-+   提供背景在提示中附上原文或其部分片段至关重要。这为LLM提供了一个出发点，并确保扩展内容与原文保持一致。
-
-+   构建你的提示把以上所有因素综合起来，制作出既清晰又简洁的结构化提示。利用Markdown提示框架（MPF）增强提示的清晰度和结构性。
+- **识别`X`**：首先，明确你想改变的`X`或是特定元素。在提示中具体说明这一点，能帮助LLM准确理解所需的修改范围和性质。
+- **设定扩展参数**：然后确定你期望以何种程度和方式扩展文本。这包括可能需要指明的字数、叙事的走向或是添加新的主题或信息。
+- **提供背景**：在提示中附上原文或其部分片段至关重要。这为LLM提供了一个出发点，并确保扩展内容与原文保持一致。
+- **构建你的提示**：把以上所有因素综合起来，制作出既清晰又简洁的结构化提示。利用Markdown提示框架（MPF）增强提示的清晰度和结构性。
 
 举例：
 
@@ -1212,7 +1220,7 @@ Extend the given text by adding new content, ensuring to change specific details
 __CONSTRAINTS__
 - Change the following elements when extending:
   1. The time of day (from night to dawn).
-  2. The main character&#x27;s emotion (from fear to determination).
+  2. The main character's emotion (from fear to determination).
 - The extension should add a narrative shift that reflects these changes, with at least 200 words.
 - Keep the genre and the primary story arc consistent with the original.
 - Introduce at least one new character who plays a pivotal role in the story progression.
@@ -1221,11 +1229,11 @@ __CONTEXT__
 - The original text is from a thriller novel where the protagonist, after evading capture all night in a dense urban environment, finds a momentary refuge.
 ____
 Given Text:  
-With the cover of darkness surrounding him, Alex hid in the shadow of an abandoned storefront, the sounds of his pursuers&#x27; footsteps fading into the distance. Fear gripped him tightly, knowing that discovery meant certain capture. The night, his only ally, offered scant comfort.
+With the cover of darkness surrounding him, Alex hid in the shadow of an abandoned storefront, the sounds of his pursuers' footsteps fading into the distance. Fear gripped him tightly, knowing that discovery meant certain capture. The night, his only ally, offered scant comfort.
 ----
 ```
 
-关键点在于CONSTRAINTS 部分，这里我们要清晰地勾勒出对模型输出的预期。
+关键点在于`CONSTRAINTS`部分，这里我们要清晰地勾勒出对模型输出的预期。
 
 ### 实践环节
 
@@ -1280,8 +1288,8 @@ __CONTEXT__
 - The text is an excerpt from a detective novel.
 - The missing part occurs during a crucial conversation between the detective and a mysterious informant.
 ____
-Given Text (with missing part indicated by &quot;___&quot;):  
-In the dimly lit alley, Detective Marlowe met with the informant, an elusive figure known only as Raven. &quot;You&#x27;re playing a dangerous game,&quot; Marlowe warned, his voice low and steady. ___ &quot;And that&#x27;s exactly why you need me,&quot; Raven replied, a sly grin spreading across his shadowed face.
+Given Text (with missing part indicated by "___"):  
+In the dimly lit alley, Detective Marlowe met with the informant, an elusive figure known only as Raven. "You're playing a dangerous game," Marlowe warned, his voice low and steady. ___ "And that's exactly why you need me," Raven replied, a sly grin spreading across his shadowed face.
 ----
 ```
 
@@ -1313,6 +1321,10 @@ In the dimly lit alley, Detective Marlowe met with the informant, an elusive fig
 
 ### 了解系统提示
 
+
+
+## 系统提示
+
 系统提示是特别设计的指令，它们一般不为LLM系统的终端用户所见，尤其是在LLM系统采用类似ChatGPT这样的聊天界面时更是如此。虽然像ChatGPT这样著名的LLM聊天接口的系统消息在不断更新迭代，但ChatGPT的系统消息早期版本是这样开始的：
 
 ```
@@ -1325,7 +1337,7 @@ In the dimly lit alley, Detective Marlowe met with the informant, an elusive fig
 
 ### 开始使用系统提示
 
-在你自己的环境中，系统消息文件可以命名为任何名称，但你会注意到在CodeSignal IDE中，它被称为system.md。配置系统消息以获得高质量输出的最佳提示之一是给予LLM鼓励和赞扬。
+在你自己的环境中，系统消息文件可以命名为任何名称，但你会注意到在CodeSignal IDE中，它被称为`system.md`。配置系统消息以获得高质量输出的最佳提示之一是给予LLM鼓励和赞扬。
 
 这里有一个示例：
 
@@ -1384,7 +1396,7 @@ Give me a sample bulleted list with two-level nesting.
 示例输出：
 
 ```
-Here&#x27;s an example of a sample bulleted list with two-level nesting:
+Here's an example of a sample bulleted list with two-level nesting:
 
 - Main Topic 1
   - Subtopic 1.1
@@ -1437,30 +1449,30 @@ Given the bulleted list below, convert it into a JSON document
 Here is the bulleted list converted into a JSON document:
 
 {
-  &quot;Main Topic 1&quot;: {
-    &quot;Subtopic 1.1&quot;: [],
-    &quot;Subtopic 1.2&quot;: [
-      &quot;Detail 1.2.1&quot;,
-      &quot;Detail 1.2.2&quot;
+  "Main Topic 1": {
+    "Subtopic 1.1": [],
+    "Subtopic 1.2": [
+      "Detail 1.2.1",
+      "Detail 1.2.2"
     ]
   },
-  &quot;Main Topic 2&quot;: {
-    &quot;Subtopic 2.1&quot;: [],
-    &quot;Subtopic 2.2&quot;: [
+  "Main Topic 2": {
+    "Subtopic 2.1": [],
+    "Subtopic 2.2": [
       {
-        &quot;Detail 2.2.1&quot;: []
+        "Detail 2.2.1": []
       },
       {
-        &quot;Detail 2.2.2&quot;: [
-          &quot;Specific Detail 2.2.2.1&quot;,
-          &quot;Specific Detail 2.2.2.2&quot;
+        "Detail 2.2.2": [
+          "Specific Detail 2.2.2.1",
+          "Specific Detail 2.2.2.2"
         ]
       }
     ]
   },
-  &quot;Main Topic 3&quot;: {
-    &quot;Subtopic 3.1&quot;: [],
-    &quot;Subtopic 3.2&quot;: []
+  "Main Topic 3": {
+    "Subtopic 3.1": [],
+    "Subtopic 3.2": []
   }
 }
 ```
@@ -1494,18 +1506,18 @@ Input:
 
 output:
 {
-  &quot;Main Topic 1&quot;: {
-    &quot;Subtopic 1.1&quot;: [],
-    &quot;Subtopic 1.2&quot;: [
-      &quot;Detail 1.2.1&quot;,
-      &quot;Detail 1.2.2&quot;
+  "Main Topic 1": {
+    "Subtopic 1.1": [],
+    "Subtopic 1.2": [
+      "Detail 1.2.1",
+      "Detail 1.2.2"
     ]
   },
-  &quot;Main Topic 2&quot;: {
-    &quot;Subtopic 2.1&quot;: [],
-    &quot;Subtopic 2.2&quot;: [
-      &quot;Detail 2.2.1&quot;,
-      &quot;Detail 2.2.2&quot;
+  "Main Topic 2": {
+    "Subtopic 2.1": [],
+    "Subtopic 2.2": [
+      "Detail 2.2.1",
+      "Detail 2.2.2"
     ]
   }
 }
@@ -1564,10 +1576,10 @@ __CONSTRAINTS__
 
 ```
 __ASK__
-We&#x27;ve asked several experts to come up with unique ideas for improving engagement on a social media platform designed for artists. Your task is to evaluate these ideas and suggest the best option.
+We've asked several experts to come up with unique ideas for improving engagement on a social media platform designed for artists. Your task is to evaluate these ideas and suggest the best option.
 
 __CONSTRAINTS__
-- Do not suggest new ideas from you, pick a winner from the given list or an idea that&#x27;s a merge of some of the given ones.
+- Do not suggest new ideas from you, pick a winner from the given list or an idea that's a merge of some of the given ones.
 
 __CONTEXT__
 - The platform allows for image and video uploads.
@@ -1602,7 +1614,7 @@ __IDEAS__
 
 ```
 __ASK__
-What&#x27;s 197*971
+What's 197*971
 ```
 
 尽管多次尝试后你可能偶尔能得到正确的答案，但更多时候，大型语言模型（LLM）会出错，给出的答案如191,087、191,987等都是错误的。
@@ -1611,16 +1623,14 @@ What&#x27;s 197*971
 
 现在，让我们看看当我们采用思维链技巧后会发生什么变化。应用这种方法的一个基本做法是要求模型逐步展开思考。其他一些可行的方式包括：
 
-+   从仔细分析问题开始
-
-+   在给出回答之前展示解题过程
-
-+   等等
++ 从仔细分析问题开始
++ 在给出回答之前展示解题过程
++ 等等
 
 ```
 __ASK__
 
-what&#x27;s 197*971
+what's 197*971
 
 __REQUIREMENTS__
 - Think step-by-step
@@ -1632,9 +1642,9 @@ __REQUIREMENTS__
 Step 1: Multiply 7 (units place of 197) by 971
        7 * 971 = 6797
 Step 2: Multiply 9 (tens place of 197) by 971 and add a zero at the end
-       9 * 971 = 8739 =&gt; 87390
+       9 * 971 = 8739 => 87390
 Step 3: Multiply 1 (hundreds place of 197) by 971 and add two zeroes at the end
-       1 * 971 = 971 =&gt; 97100
+       1 * 971 = 971 => 97100
 Step 4: Add all the results from steps 1, 2, and 3
        6797 + 87390 + 97100 = 191287
 
@@ -1650,7 +1660,7 @@ Therefore, 197 * 971 = 191,287
 ```
 __ASK__
 
-what&#x27;s 197*971
+what's 197*971
 
 __REQUIREMENTS__
 - Think Step by Step
@@ -1659,10 +1669,12 @@ __REQUIREMENTS__
 
 示例输出：
 
-```
-To calculate 197*971, we can break it down into simpler calculations by identifying round numbers that can be combined. 
 
-Let&#x27;s break down 197 and 971 into multiples of 100 and the remaining numbers:
+
+```
+To calculate 197*971, we can break it down into simpler calculations by identifying round numbers that can be combined.
+
+Let's break down 197 and 971 into multiples of 100 and the remaining numbers:
 
 197 = 100 + 97
 971 = 900 + 71
@@ -1686,7 +1698,7 @@ Now we add these results up:
 Therefore, 197*971 is equal to 191,287.
 ```
 
-### 实践挑战
+## 实践挑战
 
 既然你已经掌握了如何有效地利用思维链方法来构建提示，现在就到了你亲自尝试这种方法的时候了。记住，我们的目标是激励模型一步步地思考问题，并得出简明、准确的结论。现在，让我们开始实践，一起见证思维链的魅力吧！
 
@@ -1710,14 +1722,14 @@ __ASK__
 Find a 10-digit number where the first digit is how many zeros in the number, the second digit is how many 1s in the number etc. until the tenth digit which is how many 9s in the number.
 
 __REQUIREMENTS__
-- Let&#x27;s think Step-by-Step to solve this problem
+- Let's think Step-by-Step to solve this problem
 ```
 
 示例输出:
 
 ```
-Step 1: 
-The number has 10 digits. Let&#x27;s assume the number is represented as abcdefghij. Now we need to find the value of each digit from &#x27;a&#x27; to &#x27;j&#x27; based on the given conditions.
+Step 1:
+The number has 10 digits. Let's assume the number is represented as abcdefghij. Now we need to find the value of each digit from 'a' to 'j' based on the given conditions.
 
 Step 2:
 The first digit is how many zeros are in the number. Since there are no zeros in the number, the first digit must be 0.
@@ -1756,7 +1768,7 @@ __REQUIREMENTS__
 示例输出：
 
 ```
-1. Let&#x27;s start by listing out the requirements:
+1. Let's start by listing out the requirements:
    - The first digit is how many zeros are in the number
    - The second digit is how many ones are in the number
    - Continue this pattern up to the tenth digit, which is how many nines are in the number
@@ -1765,7 +1777,7 @@ __REQUIREMENTS__
    - The total number of digits is 10
    - Each digit can range from 0 to 9
 
-3. Let&#x27;s consider the problem in reverse:
+3. Let's consider the problem in reverse:
    - The tenth digit has to be the number of nines in the number, so we already know it will be 0 since there are no nines in the number yet.
    - The ninth digit will be the number of eights in the number, which is also 0 so that the ninth digit will be 0 as well.
    - Continue this pattern up to the first digit, which will be the number of zeros in the number.

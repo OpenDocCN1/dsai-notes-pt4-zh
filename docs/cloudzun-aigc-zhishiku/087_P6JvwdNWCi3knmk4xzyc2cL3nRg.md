@@ -1,18 +1,17 @@
+
 # AZ-2007: 使用 GitHub Copilot 加速应用开发
 
-> 来源：[https://zsyhjtnsa5.feishu.cn/docx/Iarzd6xiKotkUvxFzIccSf98nQb](https://zsyhjtnsa5.feishu.cn/docx/Iarzd6xiKotkUvxFzIccSf98nQb)
+> 来源：https://zsyhjtnsa5.feishu.cn/docx/Iarzd6xiKotkUvxFzIccSf98nQb
 
 **课件：**
 
-**repo: **
+**repo：** `https://github.com/MicrosoftLearning/mslearn-github-copilot-dev`
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev
+# 开始使用 GitHub Copilot
 
-# 开始使用 Github Copilot
+GitHub Copilot 是一个 AI 结对编程助手，它利用自然语言处理和机器学习技术来理解用户的问题并提供答案。研究表明，使用它可以显著提高开发人员的整体工作效率。
 
-**GitHub Co**pilot 是一个 AI 结对编程助手，它利用自然语言处理和机器学习技术来理解用户的问题并提供答案。研究表明，使用它可以显著提高开发人员的整体工作效率。
-
-##  核心概念与系统结构
+## 核心概念与系统结构
 
 ### Copilot 的定义与用途
 
@@ -22,75 +21,75 @@ GitHub Copilot 适用于所有常用编程语言。它可以帮助开发者：�
 
 GitHub Copilot 与 Visual Studio Code （VS Code）、Visual Studio、JetBrains IDE 等环境本机集成。在 VS Code 中，它使用两个主要扩展：
 
-1.  GitHub** Cop**ilot 扩展： 主要负责 代码完成 功能，包括根据代码注释生成的代码建议。
+1. `GitHub Copilot` 扩展：主要负责代码完成功能，包括根据代码注释生成的代码建议。
 
-1.  **GitHub Copilot 聊天扩展 （G**itHu**b Copilot** Chat）： 支持 AI 对等编程工具，包括用户与 AI 模型之间的聊天对话。
+1. `GitHub Copilot Chat` 扩展：支持 AI 对等编程工具，包括用户与 AI 模型之间的聊天对话。
 
 ---
 
-## 关键操作技巧 （操作指南）
+## 关键操作技巧（操作指南）
 
-### 配置与设置 （Installation & Configuration）
+### 配置与设置（Installation & Configuration）
 
-### 代码自动补全 （Code Completion）
+### 代码自动补全（Code Completion）
 
 自动补全建议旨在加速应用开发，它会在您输入代码时实时提供建议。
 
-### AI 对话与交互方式 （Chat Interaction）
+### AI 对话与交互方式（Chat Interaction）
 
 GitHub Copilot Chat 提供了多种交互方式来与 AI 结对程序员协作。
 
-#### 方式 A：内联聊天 （Inline Chat）
+#### 方式 A：内联聊天（Inline Chat）
 
 内联聊天允许您直接在代码编辑器中利用 AI 的强大功能，最大限度地减少开发工作流的中断。
 
-#### 方式 B：智能操作 （Smart Actions）
+#### 方式 B：智能操作（Smart Actions）
 
 智能操作是预定义的操作，使您无需编写提示即可快速轻松地执行常见的编码任务。
 
-#### 方式 C：聊天视图与模式 （Chat View and Modes）
+#### 方式 C：聊天视图与模式（Chat View and Modes）
 
 聊天视图（通常在右侧的辅助侧栏中）用于管理您和 AI 之间的聊天对话。
 
 **聊天模式切换：** 聊天视图提供了三种优化模式。
 
-1.  **问 （Ask） 模式：** 优化用于询问有关代码项目、编码主题和一般技术概念的问题。
+1. `Ask` 模式：优化用于询问有关代码项目、编码主题和一般技术概念的问题。
 
-1.  **编辑 （Edit） 模式：** 优化用于在工作区中提出代码更新建议（例如重构、添加注释）。建议的更新会直接应用到编辑器中，并提供保留或撤消的选项。
+1. `Edit` 模式：优化用于在工作区中提出代码更新建议（例如重构、添加注释）。建议的更新会直接应用到编辑器中，并提供保留或撤消的选项。
 
-1.  **代理 （Agent） 模式：** 允许您指定高级任务，AI 会自主评估请求、规划所需工作，并结合代码编辑和工具调**用来**完成任务。注意，Copilot 在运行某些终端命令或未内置工具之前，会请求 确认。
+1. `Agent` 模式：允许您指定高级任务，AI 会自主评估请求、规划所需工作，并结合代码编辑和工具调用来完成任务。注意，Copilot 在运行某些终端命令或未内置工具之前，会请求确认。
 
 ---
 
 ## 关键概念：计划选择与限制
 
-### 计划概述 （Plan Overview）
+### 计划概述（Plan Overview）
 
 GitHub Copilot 提供多种订阅计划，以满足不同用户的需求。
 
-+   学生、教师或热门开源项目的**维护者 **经过验证后，可能有资格 免费使用 Copilot Pro 计划。
++   学生、教师或热门开源项目的维护者经过验证后，可能有资格免费使用 `Copilot Pro` 计划。
 
-+   Copilot Free （免费版）：为没有通过组织访问 Copilot 的个人提供有限访问权限，例如每月最多 2000 次代码自动补全和 50 次聊天或高级请求。
++   `Copilot Free`（免费版）：为没有通过组织访问 Copilot 的个人提供有限访问权限，例如每月最多 2000 次代码自动补全和 50 次聊天或高级请求。
 
-+   Copilot Pro/Pro+：针对想要更高灵活性的个人，提供无限次代码补全、更多高级模型以及更高的每月高级请求额度。
++   `Copilot Pro`/`Pro+`：针对想要更高灵活性的个人，提供无限次代码补全、更多高级模型以及更高的每月高级请求额度。
 
-### 潜在风险与注意事项 （Limitations）
+### 潜在风险与注意事项（Limitations）
 
 学生在使用 Copilot 生成的代码时必须保持警惕和批判性思维，因为 Copilot 存在以下限制：
 
-+   **代码不准确性：** Copilot Chat 可能会生成看起来有效但实际无效的代码。为了降低风险，必须仔细审查和测试生成的代码。
++   **代码不准确性：** `Copilot Chat` 可能会生成看起来有效但实际无效的代码。为了降低风险，必须仔细审查和测试生成的代码。
 
 +   **安全风险：** 生成的代码可能会公开敏感信息或漏洞。对于安全敏感型应用程序，应始终全面审查和测试所生成的代码。
 
-+   **与公共代码匹配：** Copilot 使用筛选器来阻止与 GitHub 存储库上的公共代码匹配，但仍有低概率生成匹配代码。用户应采取预防措施，如严格测试、IP 扫描和安全漏洞检查。
++   **与公共代码匹配：** `Copilot` 使用筛选器来阻止与 GitHub 存储库上的公共代码匹配，但仍有低概率生成匹配代码。用户应采取预防措施，如严格测试、IP 扫描和安全漏洞检查。
 
 +   **范围受限：** 它可能无法处理复杂的代码结构或公共存储库中表示较少的编程语言。
 
-+   **非编码主题：** Copilot Chat 并非设计用于回答非编码问题，在这种情况下回复可能不准确或无用。
++   **非编码主题：** `Copilot Chat` 并非设计用于回答非编码问题，在这种情况下回复可能不准确或无用。
 
 ## 实验：检查 GitHub Copilot 设置和用户界面功能
 
-https://microsoftlearning.github.io/mslearn-github-copilot-dev/Instructions/Labs/LAB_AK_01_examine_settings_interface.html
+`https://microsoftlearning.github.io/mslearn-github-copilot-dev/Instructions/Labs/LAB_AK_01_examine_settings_interface.html`
 
 +   熟悉并配置 GitHub Copilot 的相关设置。
 
@@ -116,25 +115,25 @@ GitHub Copilot 允许开发人员了解代码的用途和行为，以便更轻�
 
 ### 聊天视图（Chat View）
 
-聊天视图（默认为**询问模式**）用于管理您和 AI 程序员之间的对话。您可以利用它来讨论各种主题：
+聊天视图（默认为`询问模式`）用于管理您和 AI 程序员之间的对话。您可以利用它来讨论各种主题：
 
 +   **询问编码和技术概念：** 例如，“什么是链表？”或“最受欢迎的 10 个 Web 框架”。
 
-+   **集思广益：** 关于如何最好地解决编码问题，例如“如何向我的项目添加身份验证？”.
++   **集思广思：** 关于如何最好地解决编码问题，例如“如何向我的项目添加身份验证？”。
 
-+   **解释代码块：** 使用 @workspace /explain 命令或提问“此代码是做什么的？”.
++   **解释代码块：** 使用 `@workspace /explain` 命令或提问“此代码是做什么的？”。
 
-+   **建议代码修复：** 使用 @workspace /fix 命令或描述问题，例如“此方法给出了 FileNotFoundException”。
++   **建议代码修复：** 使用 `@workspace /fix` 命令或描述问题，例如“此方法给出了 `FileNotFoundException`”。
 
 +   **分析整个工作区：** 询问有关代码项目、编码主题和常规编程实践的问题。
 
 ### 内联聊天（Inline Chat）
 
-内联聊天允许您**直接从编辑器**启动会话，而无需离开当前工作环境。它最适合在活动编辑器中向代码提问。
+内联聊天允许您直接从编辑器启动会话，而无需离开当前工作环境。它最适合在活动编辑器中向代码提问。
 
-+   **解释代码块：** 使用 /explain 命令来解释代码，例如 /explain #selection。
++   **解释代码块：** 使用 `/explain` 命令来解释代码，例如 `/explain #selection`。
 
-+   **检查问题：** 询问“为什么此代码会引发异常？”或“如何解决此问题？”.
++   **检查问题：** 询问“为什么此代码会引发异常？”或“如何解决此问题？”。
 
 +   **查询特定代码：** 询问有关特定代码节、行或变量的问题。
 
@@ -142,7 +141,7 @@ GitHub Copilot 允许开发人员了解代码的用途和行为，以便更轻�
 
 **“解释智能操作”** 功能可以直接解释所选代码，甚至无需编写提示语。
 
-+   **操作方式：**** 通过右键单击**活动代码编辑**器，选择** Copilot，然后选择 “解释” 来访问此功能。
++   **操作方式：** 通过右键单击活动代码编辑器，选择 `Copilot`，然后选择“解释”来访问此功能。
 
 +   **焦点范围：** 可以通过选择代码块、单个代码行或变量来缩小解释的焦点。响应显示在“聊天”视图中。
 
@@ -164,7 +163,7 @@ GitHub Copilot Chat 可帮助您快速、准确且一致地记录代码。文档
 
 ### 生成项目文档（Project Documentation）
 
-项目文档（如 README.md、API 引用等）描述了项目的用途、目标和要求。聊天视图是生成项目文档的理想工具，因为它可以分析整个项目结构。
+项目文档（如 `README.md`、API 引用等）描述了项目的用途、目标和要求。聊天视图是生成项目文档的理想工具，因为它可以分析整个项目结构。
 
 **请注意：** 在代理模式下使用聊天视图时，GitHub Copilot 可能会发出多个高级请求来完成单个任务，这可能会影响成本，因此需要考虑。
 
@@ -178,21 +177,21 @@ GitHub Copilot Chat 可帮助您快速、准确且一致地记录代码。文档
 
 ### 保持清晰、简洁和具体
 
-+   您提交的提示应该**清晰、简洁且具体**。
++   您提交的提示应该清晰、简洁且具体。
 
-+   **优化示例：** 应该询问“如何使用此函数？”，而不是询问“是否可以解释函数 calculateTotal 在 shoppingCart.js 文件中的工作原理？”.
++   **优化示例：** 应该询问“如何使用此函数？”，而不是询问“是否可以解释函数 `calculateTotal` 在 `shoppingCart.js` 文件中的工作原理？”。
 
 ### 结构化复杂提示
 
 +   当您需要编写较长的提示时，应使用几个简短的句子来构造提示。
 
-+   首先是**概述**。
++   首先是概述。
 
-+   接着描述您的**目标**。
++   接着描述您的目标。
 
-+   最后提供**具体的详细信息**。
++   最后提供具体的详细信息。
 
-+   将复杂的提示分解为**更小、更易于管理的部分**。分解有助于 AI 了解意图并提供更准确的响应。
++   将复杂的提示分解为更小、更易于管理的部分。分解有助于 AI 了解意图并提供更准确的响应。
 
 +   后续提示可以基于前面的提示，从而优化请求并获取更具体的答案。这种与 AI 程序员合作的方式，类似于与人一起工作，即先制定对话框架，然后描述特定详细信息。
 
@@ -202,47 +201,47 @@ GitHub Copilot Chat 使用关键字来帮助指定提示的上下文和意图。
 
 ### 聊天参与者（Chat Participants）：指定领域专家
 
-聊天参与者类似于特定领域的专家，它们使用 @ 符号指定，有助于 GitHub Copilot Chat 在了解您感兴趣的上下文时提供更好的响应。
+聊天参与者类似于特定领域的专家，它们使用 `@` 符号指定，有助于 GitHub Copilot Chat 在了解您感兴趣的上下文时提供更好的响应。
 
 **最佳实践：**
 
-+   在提示前添加特定聊天参与者，以帮助 Copilot 生成更相关的响应。
++   在提示前添加特定聊天参与者，以帮助 `Copilot` 生成更相关的响应。
 
-+   **限制：** @workspace 只能在**询问模式 （Ask mode）** 下使用。在编辑模式 （Edit mode） 或代理模式 （Agent mode） 下不支持使用聊天参与者。
++   **限制：** `@workspace` 只能在`询问模式（`Ask mode`）`下使用。在编辑模式（`Edit mode`）或代理模式（`Agent mode`）下不支持使用聊天参与者。
 
 ### 斜杠命令（Slash Commands）：阐明意图和目标
 
-斜杠指令（以 / 开头）有助于描述提示的**意图**（目标或目的），让 Copilot 知道您正在尝试执行的操作，从而优化其回复。
+斜杠指令（以 `/` 开头）有助于描述提示的意图（目标或目的），让 `Copilot` 知道您正在尝试执行的操作，从而优化其回复。
 
 **最佳实践：结合参与者和命令**
 
 +   斜杠命令通常与聊天参与者捆绑在一起。
 
-+   **将聊天参与者和斜杠**命令结合使用是阐明意图的强大方法。例如：
++   将聊天参与者和斜杠命令结合使用是阐明意图的强大方法。例如：
 
-+   使用 @work**space** /explain 来生成对完整工作区的说明。
++   使用 `@workspace /explain` 来生成对完整工作区的说明。
 
-+   使用 @workspace /fix（或 /fix）来建议对所选代码中问题的修复方案。
++   使用 `@workspace /fix`（或 `/fix`）来建议对所选代码中问题的修复方案。
 
-+   使用 @workspace /doc 可在询问模式下为项目、类或方法创建内联代码文档。
++   使用 `@workspace /doc` 可在询问模式下为项目、类或方法创建内联代码文档。
 
 **优化示例：**
 
-+   与其输入自然语言提示，如“Create a new workspace that uses Node.js， the Express framework， the Pug template engine， and TypeScript”，不如使用关键字：@workspace /new Node.js Express Pug TypeScript，这更容易让 GitHub Copilot 理解。
++   与其输入自然语言提示，如“Create a new workspace that uses Node.js， the Express framework， the Pug template engine， and TypeScript”，不如使用关键字：`@workspace /new Node.js Express Pug TypeScript`，这更容易让 GitHub Copilot 理解。
 
 ### 聊天变量（Chat Variables）：提供特定上下文
 
-聊天变量用于指定上下文，使用 # 符号引用。通过使用聊天变量，可以使提示中包含的上下文更具体。
+聊天变量用于指定上下文，使用 `#` 符号引用。通过使用聊天变量，可以使提示中包含的上下文更具体。
 
-**关键优化：****@workspace**** 与 ****#codebase**** 的选择**
+**关键优化：`@workspace` 与 `#codebase` 的选择**
 
-从概念上讲，@workspace 和 #codebase 都可以让您对整个代码库提出问题，但在使用方式和灵活性上存在关键差异。
+从概念上讲，`@workspace` 和 `#codebase` 都可以让您对整个代码库提出问题，但在使用方式和灵活性上存在关键差异。
 
-**总结：** 虽然 @workspace** 可以回答关于代码**库的问题，但 #codebase 更灵活，因为它可以在所有聊天模式中使用，并且可以与编辑工具结合使用。 GitHub 建议在聊天提示中使用 #codebase 以获得更大的灵活性。
+**总结：** 虽然 `@workspace` 可以回答关于代码库的问题，但 `#codebase` 更灵活，因为它可以在所有聊天模式中使用，并且可以与编辑工具结合使用。 GitHub 建议在聊天提示中使用 `#codebase` 以获得更大的灵活性。
 
 ## 实验：使用 GitHub Copilot 分析和记录代码
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_02_analyze_document_code_py.md
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_02_analyze_document_code_py.md`
 
 +   掌握使用 GitHub Copilot 分析和记录代码库的基本方法
 
@@ -250,7 +249,7 @@ https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instru
 
 +   使用 GitHub Copilot 创建数据访问类的相关说明
 
-+   [通过 GitHub](https://readme.md/) Copilot 自动生成项目的 README.md 文件
++   [通过 GitHub](https://readme.md/) `Copilot` 自动生成项目的 `README.md` 文件
 
 +   熟悉使用 AI 工具进行代码文档化的完整工作流程
 
@@ -258,27 +257,27 @@ https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instru
 
 ## Github Copilot 代码开发功能概述
 
-**Visual Studio **Code 使用 GitHub Copilot 和 GitHub Copilot Chat 这两个扩展来实现 GitHub Copilot 的功能。这些扩展通过生成建议来提高开发人员的工作效率，从而扩展或改进应用程序。
+Visual Studio Code 使用 GitHub Copilot 和 GitHub Copilot Chat 这两个扩展来实现 GitHub Copilot 的功能。这些扩展通过生成建议来提高开发人员的工作效率，从而扩展或改进应用程序。
 
 ### 核心功能与工具
 
-**GitHub C**opilot 是一个 AI 配对程序员，但它不是真正的程序员。它能为许多编程语言和各种框架提供代码补全建议。对于 Python、JavaScript、TypeScript、Ruby、Go、C# 和 C++，它的效果尤其有效。
+GitHub Copilot 是一个 AI 配对程序员，但它不是真正的程序员。它能为许多编程语言和各种框架提供代码补全建议。对于 Python、JavaScript、TypeScript、Ruby、Go、C# 和 C++，它的效果尤其有效。
 
 GitHub Copilot 在 Visual Studio Code 中提供的核心功能包括：
 
-+   GitHub Copilot 扩展：
++   `GitHub Copilot` 扩展：
 
-+   代码行补全 （Code line completion）：使用在编辑器中输入的代码或代码注释生成代码补全建议。
++   代码行补全（Code line completion）：使用在编辑器中输入的代码或代码注释生成代码补全建议。
 
-+   GitHub Copilot Chat 扩展：
++   `GitHub Copilot Chat` 扩展：
 
-+   聊天视图 （Chat View）：提供随时可用的 AI 助手。这是一个更可靠、提供完整聊天体验的界面。
++   聊天视图（Chat View）：提供随时可用的 AI 助手。这是一个更可靠、提供完整聊天体验的界面。
 
-+   快速聊天 （Quick Chat）：用于快速提问，然后继续正在进行的工作。
++   快速聊天（Quick Chat）：用于快速提问，然后继续正在进行的工作。
 
-+   内联聊天 （Inline Chat）：在编码时，直接在编辑器中启动对话以获取上下文帮助和代码建议。
++   内联聊天（Inline Chat）：在编码时，直接在编辑器中启动对话以获取上下文帮助和代码建议。
 
-+   智能操作 （Smart Actions）：无需编写提示即可完成某些任务。
++   智能操作（Smart Actions）：无需编写提示即可完成某些任务。
 
 ---
 
@@ -298,17 +297,17 @@ GitHub Copilot 会根据所编写代码的上下文生成代码行补全建议�
 
 +   当生成多个建议时，可以使用位于“接受”按钮左侧的向左或向右箭头（> 或 <）来循环浏览建议。
 
-+   若要接受建议，请按 Tab 键或选择“接受”。
++   若要接受建议，请按 `Tab` 键或选择“接受”。
 
 ### B. 通过代码生成代码补全
 
-可以通过启动代码行或按 Enter 在已补全的代码行后生成代码行补全。
+可以通过启动代码行或按 `Enter` 在已补全的代码行后生成代码行补全。
 
 1.  **触发补全**：
 
 +   开始输入代码行，然后等待 GitHub Copilot 为未完成的代码行建议自动补全。
 
-+   输入完整的代码行，按 Enter 键，然后等待 GitHub Copilot 为下一个代码行建议自动补全。
++   输入完整的代码行，按 `Enter` 键，然后等待 GitHub Copilot 为下一个代码行建议自动补全。
 
 1.  **上下文依赖性**：GitHub Copilot 根据输入的代码以及应用程序中代码定义的上下文生成建议。现有代码的数量和质量越高，GitHub Copilot 建议的质量和可靠性也越高。
 
@@ -318,135 +317,103 @@ GitHub Copilot 会根据所编写代码的上下文生成代码行补全建议�
 
 GitHub Copilot Chat 提供了交互式多轮次对话功能，用于提问、获取编码帮助和生成代码。它特别适用于开发实现不熟悉资源（例如新库、框架或 API）的代码。
 
-可以使用 **聊天参与者**（如 @workspace）、**斜杠命令**（如 /explain）和 **聊天变量**（如 #file 或 #editor）来阐明提示的上下文和意图，从而生成更准确和有用的响应。
+可以使用 聊天参与者（如 `@workspace`）、斜杠命令（如 `/explain`）和 聊天变量（如 `#file` 或 `#editor`）来阐明提示的上下文和意图，从而生成更准确和有用的响应。
 
 ### A. 聊天视图（Chat View）模式生成代码
 
 聊天视图提供了一个管理环境，支持三种主要模式：
 
-1.  **询问模式 （Ask Mode）**：
+1.  **询问模式（`Ask Mode`）**：
 
 +   旨在帮助分析代码、调查新功能的选项，并充当对话助手。
 
 +   可用于询问如何实现新功能或使用特定库。
 
-+   支持 @workspace 聊天参与者或 #codebase 来提供上下文。
++   支持 `@workspace` 聊天参与者或 `#codebase` 来提供上下文。
 
-1.  编辑模式 （Edit Mode）：
+1.  编辑模式（`Edit Mode`）：
 
-+   旨在帮助创建或更新代码，充当代码编辑器，可快速准确地开发代码。
 
-+   不支持聊天参与者，但可以使用 #codebase 来指定工作区上下文。
 
-+   建议的代码修改可以直接在代码编辑器中查看、接受或拒绝。
+# GitHub Copilot 使用指南
 
-1.  代理模式 （Agent Mode）：
++ 旨在帮助创建或更新代码，充当代码编辑器，可快速准确地开发代码。
++ 不支持聊天参与者，但可以使用 `#codebase` 来指定工作区上下文。
++ 建议的代码修改可以直接在代码编辑器中查看、接受或拒绝。
 
-+   GitHub Copilot 作为一个自主代理，能代表你执行操作。
+## 代理模式（Agent Mode）
 
-+   可用于生成新功能或创建全新的应用（例如，使用 React 和 Node.js 创建餐饮规划 Web 应用）。
-
-+   Copilot 运行终端命令或未内置工具之前，会请求确认以继续。
++ GitHub Copilot 作为一个自主代理，能代表你执行操作。
++ 可用于生成新功能或创建全新的应用（例如，使用 React 和 Node.js 创建餐饮规划 Web 应用）。
++ Copilot 运行终端命令或未内置工具之前，会请求确认以继续。
 
 在聊天视图中，如果返回代码块：
 
-+   初始选项包括“在编辑器中应用”、“在光标处插入 （Ctrl+Enter）”和“复制”。
++ 初始选项包括“在编辑器中应用”、“在光标处插入（`Ctrl+Enter`）”和“复制”。
++ 更多操作（...）选项包括“插入到新文件中”和“插入终端（`Ctrl+Alt+Enter`）”。
 
-+   更多操作（...）选项包括“插入到新文件中”和“插入终端 （Ctrl+Alt+Enter）”。
+## 内联聊天（Inline Chat）生成代码
 
-### B. 内联聊天（Inline Chat）生成代码
+内联聊天界面在代码编辑器中可用（通过 `Ctrl+I` 快捷方式打开），用于上下文交互。
 
-内联聊天界面在代码编辑器中可用（通过 Ctrl+I 快捷方式打开），用于上下文交互。
++ **上下文**：它使用选定的代码块作为提示的上下文；如果未选择代码，则使用整个文件作为上下文。
++ **用途**：可用于分析、修改或替换现有代码，或生成新代码功能。例如，可用于生成新的 UI 组件、API 终结点，或快速准确地生成复杂的正则表达式。
 
-+   **上下文**：它使用选定的代码块作为提示的上下文；如果未选择代码，则使用整个文件作为上下文。
-
-+   **用途**：可用于分析、修改或替换现有代码，或生成新代码功能。例如，可用于生成新的 UI 组件、API 终结点，或快速准确地生成复杂的正则表达式。
-
----
-
-## GH Copilot 生成代码的最佳实践
+# GitHub Copilot 生成代码的最佳实践
 
 为充分利用 GitHub Copilot 工具，应遵循以下最佳实践。
 
-### 为任务选择适当的 Copilot 工具
+## 为任务选择适当的 Copilot 工具
 
-### 充分利用 Copilot 内联建议（代码补全）
+## 充分利用 Copilot 内联建议（代码补全）
 
 当 GitHub Copilot 有足够的上下文来了解你的意图时，效果最佳。
 
-+   **提供上下文**：在使用 GitHub Copilot 时，在 Visual Studio Code 中打开相关文件，这有助于定义上下文并允许 Copilot 查看项目的全貌。
++ **提供上下文**：在使用 GitHub Copilot 时，在 Visual Studio Code 中打开相关文件，这有助于定义上下文并允许 Copilot 查看项目的全貌。
++ **使用注释**：
++ 代码文件中的顶级注释可以帮助 GitHub Copilot 了解所创建代码的整体上下文。
++ 使用特定且范围良好的函数注释，以提供函数名称无法提供的详细信息。
++ **手动设置依赖项**：最好手动设置工作所需的包含或模块引用，这有助于告知 GitHub Copilot 在创建建议时要使用的框架、库及其版本。
++ **描述性命名**：使用有意义的函数名称有助于 Copilot 生成执行所需操作的建议（例如，`fetchData()`意义不大）。
++ **保持质量**：Copilot 会锁定现有模式生成建议，因此要始终保持较高的质量标准。在“黑客”模式下（随意编码时），最好禁用 GitHub Copilot 完成功能。
++ 预热 Copilot（Prime Copilot）：将所需的代码示例复制粘贴到打开的编辑器选项卡中，帮助 Copilot 模拟所需的语言和任务，之后可以删除示例代码。
 
-+   **使用注释**：
+### 处理不理想建议时的调整
 
-+   代码文件中的顶级注释可以帮助 GitHub Copilot 了解所创建代码的整体上下文。
-
-+   使用特定且范围良好的函数注释，以提供函数名称无法提供的详细信息。
-
-+   **手动设置依赖项**：最好手动设置工作所需的包含或模块引用，这有助于告知 GitHub Copilot 在创建建议时要使用的框架、库及其版本。
-
-+   **描述性命名**：使用有意义的函数名称有助于 Copilot 生成执行所需操作的建议（例如，fetchData()意义不大）。
-
-+   **保持质量**：Copilot 会锁定现有模式生成建议，因此要始终保持较高的质量标准。在“黑客”模式下（随意编码时），最好禁用 GitHub Copilot 完成功能。
-
-+   预热 Copilot （Prime Copilot）：将所需的代码示例复制粘贴到打开的编辑器选项卡中，帮助 Copilot 模拟所需的语言和任务，之后可以删除示例代码。
-
-**处理不理想建议时的调整**：
-
-+   接受与所需代码不完全匹配的建议时，需要快速调整。
-
-+   在开发过程中尽早进行更正尤其重要，因为后续的代码补全基于您已编写的代码，确保代码准确性至关重要。
-
-+   如果代码中有多余的代码注释或语句，可能需要先移除它们，然后再尝试使用 GitHub Copilot 代码补全，因为 Copilot 在代码干净且集中时效果最佳。
++ 接受与所需代码不完全匹配的建议时，需要快速调整。
++ 在开发过程中尽早进行更正尤其重要，因为后续的代码补全基于您已编写的代码，确保代码准确性至关重要。
++ 如果代码中有多余的代码注释或语句，可能需要先移除它们，然后再尝试使用 GitHub Copilot 代码补全，因为 Copilot 在代码干净且集中时效果最佳。
 
 ### 充分利用 GitHub Copilot 聊天
 
 优化聊天体验可以提高代码生成质量：
 
-+   **提示结构**：**由泛入精**
++ **提示结构**：由泛入精
++ 首先为 Copilot 提供有关目标或方案的广泛描述。
++ 然后列出任何具体要求。
++ **提供示例**：使用示例来帮助 GitHub Copilot 理解需求（例如，示例输入数据、输出和实现）。
++ **分解复杂任务**：将复杂或大型任务分解为多个简单的小型任务，让 Copilot 逐个完成。
++ **避免歧义**：避免使用含糊不清的词语（如“这个”），要具体说明（例如，询问 `createUser` 函数的作用）。
++ **指示相关代码**：打开文件或突出显示你希望 GitHub Copilot 引用的代码。
++ **使用专用描述符**：
++ 使用 `聊天参与者`（如 `@workspace`）获取域特定上下文。
++ 使用 `斜杠命令`（如 `/fix`、`/tests`、`/explain`）帮助 Copilot Chat 了解你的意图。
++ 使用 `聊天变量`（如 `#file`）在提示中引用特定文件，提供更具体的上下文。
++ **迭代和历史记录管理**：
++ 如果没有获得想要的结果，请迭代提示并重试，可以在下一个请求中引用上一个响应。
++ 使用新线程为新任务启动新对话。
++ 删除不再相关的或未提供所需结果的请求，以确保历史记录的相关性。
++ **遵循良好的编码实践**：确保现有代码遵循最佳实践、易于阅读，包括使用一致的代码样式、描述性名称、提供注释和包含单元测试。
 
-+   首先为 Copilot 提供有关目标或方案的广泛描述。
+# 实验：使用 GitHub Copilot 开发新的代码功能
 
-+   然后列出任何具体要求。
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_03_develop_code_features_py.md`
 
-+   **提供示例**：使用示例来帮助 GitHub Copilot 理解需求（例如，示例输入数据、输出和实现）。
-
-+   **分解复杂任务**：将复杂或大型任务分解为多个简单的小型任务，让 Copilot 逐个完成。
-
-+   **避免歧义**：避免使用含糊不清的词语（如“这个”），要具体说明（例如，询问 createUser 函数的作用）。
-
-+   **指示相关代码**：打开文件或突出显示你希望 GitHub Copilot 引用的代码。
-
-+   **使用专用描述符**：
-
-+   使用 **聊天参与者**（如 @workspace）获取域特定上下文。
-
-+   使用 **斜杠命令**（如 /fix， /tests， /explain）帮助 Copilot Chat 了解你的意图。
-
-+   使用 **聊天变量**（如 #file）在提示中引用特定文件，提供更具体的上下文。
-
-+   **迭代和历史记录管理**：
-
-+   如果没有获得想要的结果，请迭代提示并重试，可以在下一个请求中引用上一个响应。
-
-+   使用新线程为新任务启动新对话。
-
-+   删除不再相关的或未提供所需结果的请求，以确保历史记录的相关性。
-
-+   **遵循良好的编码实践**：确保现有代码遵循最佳实践、易于阅读，包括使用一致的代码样式、描述性名称、提供注释和包含单元测试。
-
-## 实验：使用 GitHub Copilot 开发新的代码功能
-
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_03_develop_code_features_py.md
-
-+   掌握使用 GitHub Copilot 为 Python 应用程序开发新功能的方法
-
-+   学习通过 GitHub Copilot 内联聊天和聊天视图在新分支中进行功能开发
-
-+   使用 GitHub Copilot 协助完成代码测试与验证
-
-+   掌握将功能分支更改合并到主分支的工作流程
-
-+   运用 GitHub Copilot 自动生成提交消息和拉取请求摘要
++ 掌握使用 GitHub Copilot 为 Python 应用程序开发新功能的方法
++ 学习通过 GitHub Copilot 内联聊天和聊天视图在新分支中进行功能开发
++ 使用 GitHub Copilot 协助完成代码测试与验证
++ 掌握将功能分支更改合并到主分支的工作流程
++ 运用 GitHub Copilot 自动生成提交消息和拉取请求摘要
 
 # 使用 GitHub Copilot 工具开发单元测试
 
@@ -454,43 +421,35 @@ GitHub Copilot 提供了多种工具和方法来创建、管理和优化单元�
 
 以下是使用 GitHub Copilot 创建和管理单元测试的各种工具和方法的详细介绍：
 
----
-
-##  用于生成单元测试的核心工具
+## 用于生成单元测试的核心工具
 
 GitHub Copilot 提供了四种主要工具来生成测试代码，包括单元测试、集成测试和端到端测试：
 
-### 聊天视图 （Chat View）
+### 聊天视图（Chat View）
 
 聊天视图允许用户通过对话方式为项目、类或方法生成单元测试。它支持三种不同的模式，每种模式都有其独特的优化用途：
 
-+   询问模式 （Ask Mode）: 经过优化，用于询问有关代码项目或技术概念的问题。它适用于为文件中的多个函数或整个文件创建测试。
++ 询问模式（Ask Mode）：经过优化，用于询问有关代码项目或技术概念的问题。它适用于为文件中的多个函数或整个文件创建测试。
++ 编辑模式（Edit Mode）：经过优化，用于在代码库中的多个文件中进行编辑。它适用于创建或更新特定函数或整个文件的测试文件。
++ 智能体模式（Agent Mode）：经过优化，用于启动智能体编码工作流。它最适合创建需要更深入了解项目的单元测试，可用于自动执行任务，例如搭建测试项目、运行测试、生成测试报告等。智能体模式在运行测试时还能监视测试输出，并自动尝试修复并重新运行失败的测试。
 
-+   编辑模式 （Edit Mode）: 经过优化，用于在代码库中的多个文件中进行编辑。它适用于创建或更新特定函数或整个文件的测试文件。
-
-+   智能体模式 （Agent Mode）: 经过优化，用于启动智能体编码工作流。它最适合创建需要更深入了解项目的单元测试，可用于自动执行任务，例如搭建测试项目、运行测试、生成测试报告等。智能体模式在运行测试时还能监视测试输出，并自动尝试修复并重新运行失败的测试。
-
-### 内联聊天 （Inline Chat）
+### 内联聊天（Inline Chat）
 
 内联聊天功能允许开发人员直接在代码编辑器中创建单元测试，而无需切换到聊天视图。
 
-+   **如果需要为**特定函数或方法创建测试，并且需要比“生成测试”智能操作更多的控制，内联聊天非常有用。
-
-+   用户可以通过快捷键 Ctrl+I 或从 Copilot 菜单中打开内联聊天会话，并输入提示（例如：/tests 为此方法生成单元测试。验证成功和失败，并包括边缘事例）。
++ 如果需要为特定函数或方法创建测试，并且需要比“生成测试”智能操作更多的控制，内联聊天非常有用。
++ 用户可以通过快捷键 `Ctrl+I` 或从 Copilot 菜单中打开内联聊天会话，并输入提示（例如：`/tests` 为此方法生成单元测试。验证成功和失败，并包括边缘事例）。
 
 ### 智能操作（“生成测试” Smart Action）
 
 “生成测试”智能操作是 GitHub Copilot 的一项功能，它无需编写提示即可为代码生成单元测试。
 
-+   **为文件生成测试：**** 用户可以右键**单击代码编辑**器中的文**件，选择 Copilot，然后选择“生成测试”，Copilot 会分析代码并为文件中的所有函数和方法生成单元测试。
++ 为文件生成测试：用户可以右键单击代码编辑器中的文件，选择 Copilot，然后选择“生成测试”，Copilot 会分析代码并为文件中的所有函数和方法生成单元测试。
++ 为所选内容生成测试：用户可以选择特定的代码块（如函数或方法），然后使用该操作为其生成单元测试。
 
-+   **为所选内容生成测试：** 用户可以选择特定的代码块（如函数或方法），然后使用该操作为其生成单元测试。
+### 代码行完成（Code Line Completion）
 
-### 代码行完成 （Code Line Completion）
-
-一旦测试项目包含一些测试用例，你可以使用 GitHu**b Copi**lot 的代码行补全功能，为现有测试用例生成额外的代码补全建议。使用此功能可以减少重复过程，并有助于确保代码经过全面测试。
-
----
+一旦测试项目包含一些测试用例，你可以使用 GitHub Copilot 的代码行补全功能，为现有测试用例生成额外的代码补全建议。使用此功能可以减少重复过程，并有助于确保代码经过全面测试。
 
 ## 单元测试的创建、管理与支持任务
 
@@ -500,67 +459,53 @@ GitHub Copilot 提供了四种主要工具来生成测试代码，包括单元�
 
 Copilot 集成了 Visual Studio Code 中的测试资源管理器，以帮助修复失败的测试：
 
-+   **测试资源管理器集成：**** 在测试资源**管理器中，将鼠标悬停在失败的测试上，选择“修复测试失败”按钮（闪光图标），然后查看并应用 Copilot 的建议修复。
-
-+   **聊天命令：** 也可以打开“聊天”视图，输入斜杠命令 /fixTestFailure，根据 Copilot 的建议修复测试问题。
++ **测试资源管理器集成：** 在测试资源管理器中，将鼠标悬停在失败的测试上，选择“修复测试失败”按钮（闪光图标），然后查看并应用 Copilot 的建议修复。
++ 聊天命令：也可以打开“聊天”视图，输入斜杠命令 `/fixTestFailure`，根据 Copilot 的建议修复测试问题。
 
 ### 处理边缘情况和断言
 
 GitHub Copilot 使用代码的上下文和语义来帮助创建全面的测试套件：
 
-+   **边缘情况：** Copilot 可以帮助你编写可能难以手动识别的边缘情况和**边界条件**的**测试用例。例**如**，它可以推荐**用于错误处理、null 值或意外输入类型的测试用例。
-
-+   **断言建议：** Copilot 能够根据代码的上下文和语义推荐确保函数正常运行的断言。
++ 边缘情况：Copilot 可以帮助你编写可能难以手动识别的边缘情况和边界条件的测试用例。例如，它可以推荐用于错误处理、null 值或意外输入类型的测试用例。
++ 断言建议：Copilot 能够根据代码的上下文和语义推荐确保函数正常运行的断言。
 
 ### 设置测试框架
 
 为了加速测试工作流，Copilot 可以根据项目类型建议适当的测试框架，并帮助设置框架和 VS Code 扩展：
 
-+   **使用聊天命令设置：** 在“聊天”视图中，输入 /setupTests 命令，然后遵循 GitHub Copilot 的指导来配置项目。
++ 使用聊天命令设置：在“聊天”视图中，输入 `/setupTests` 命令，然后遵循 GitHub Copilot 的指导来配置项目。
 
 ### 保持一致性
 
 如果组织有特定的测试要求，你可以通过提供自定义说明来个性化 Copilot 生成测试的方式，以确保它们遵循项目编码做法。自定义项可以包括指定首选测试框架、定义测试的命名约定、设置代码结构偏好或请求特定的测试模式或方法。
 
----
-
 ## Visual Studio Code 环境与管理
 
 在 C# 项目中，Visual Studio Code 和 C# 开发工具包扩展提供了一套丰富的功能，可帮助你创建和管理单元测试：
 
-+   测试资源管理器 （Test Explorer）: 这是一个树状视图，用于显示工作区中的所有测试用例。用户可以通过活动栏上的烧杯形按钮打开它，并在其中运行/调试测试用例和查看测试结果。
++ 测试资源管理器（Test Explorer）：这是一个树状视图，用于显示工作区中的所有测试用例。用户可以通过活动栏上的烧杯形按钮打开它，并在其中运行/调试测试用例和查看测试结果。
++ 运行/调试测试用例：C# 开发工具包在类和方法定义的左侧生成快捷方式（绿色启动按钮），用于运行目标测试用例。
++ 创建测试项目：用户可以使用 Visual Studio Code 的“命令面板”（通过 `Ctrl + Shift + P` 或 `Cmd + Shift + P` 打开）来创建测试项目，并启用以下测试框架：
 
-+   **运行/调试测试用例：** C# 开发工具包在类和方法定义的左侧生成快捷方式（绿色启动按钮），用于运行目标测试用例。
++ `xUnit`
++ `NUnit`
++ `MSTest`
 
-+   **创建测试项目：** 用户可以使用 Visual Studio Code 的“命令面板”（通过 Ctrl + Shift + P 或 Cmd + Shift + P 打开）来创建测试项目，并启用以下测试框架：
+**重要提示：** 请务必注意，GitHub Copilot 生成的测试用例可能未涵盖所有可能的方案。为确保代码质量，必须进行手动测试和代码评审。
 
-+   xUnit
+# 实验：使用 GitHub Copilot 开发单元测试
 
-+   NUnit
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_04_develop_unit_tests_pytest.md`
 
-+   MSTest
++ 掌握使用 GitHub Copilot 加速 Python 应用程序单元测试开发的方法
++ 学习运用 `Pytest` 框架创建和运行单元测试
++ 熟悉 GitHub Copilot 聊天视图的三种模式：
 
-**重要提示：**** 请务必注意，GitHu**b Copilot 生成的**测试用例可能未涵盖**所有可能的方案。为确保代码质量，必须进行手动测试和代码评审。
-
-## 实验：使用 GitHub Copilot 开发单元测试
-
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_04_develop_unit_tests_pytest.md
-
-+   掌握使用 GitHub Copilot 加速 Python 应用程序单元测试开发的方法
-
-+   学习运用 Pytest 框架创建和运行单元测试
-
-+   熟悉 GitHub Copilot 聊天视图的三种模式：
-
-+   使用 Ask 模式分析现有单元测试方法
-
-+   通过 Agent 模式创建项目文件夹和新的测试类
-
-+   利用 Edit 模式编写具体单元测试用例
-
-+   运用 GitHub Copilot 的代码补全功能快速生成单元测试代码
-
-+   掌握使用 AI 工具提升测试代码开发效率的工作流程
++ 使用 `Ask` 模式分析现有单元测试方法
++ 通过 `Agent` 模式创建项目文件夹和新的测试类
++ 利用 `Edit` 模式编写具体单元测试用例
++ 运用 GitHub Copilot 的代码补全功能快速生成单元测试代码
++ 掌握使用 AI 工具提升测试代码开发效率的工作流程
 
 # 使用 GitHub Copilot 工具实现代码改进
 
@@ -572,158 +517,119 @@ GitHub Copilot 提供了多种工具和模式来支持代码重构和改进工�
 
 ### 内联聊天（Inline Chat）
 
-**内联聊天**功能允许用户直接在代码编辑器中重构代码。
+`内联聊天`功能允许用户直接在代码编辑器中重构代码。
 
-+   **用途和优势：** 如果用户想要更改代码而无需切换到聊天视图，内联聊天非常有用。它提供了一种快速的方法来查看代码改进并进行更改，无需切换到单独的面板。
-
-+   **交互方式：**** 用户选择要**优化的代码，使用快捷方式 Ctrl+I 或从 Copilot 菜单中打开内联聊天会话，然后输入要求优化的提示（例如：“是否可以改进此代码？”) .
-
-+   **建议呈现：** **建**议直接以代码更新的形式显示在编辑器中，没有自然语言的说明或指导。用户可以在编辑器中查看、评估并选择**“接受”或“关闭”**建议的代码更新。
-
-+   **前期分析：** 在重构之前，可以使用内联聊天功能询问有关代码的问题、获取特定部分的说明或请求改进建议（例如，要求解释特定函数的工作原理或建议如何优化它）。
++ **用途和优势：** 如果用户想要更改代码而无需切换到聊天视图，内联聊天非常有用。它提供了一种快速的方法来查看代码改进并进行更改，无需切换到单独的面板。
++ **交互方式：** 用户选择要优化的代码，使用快捷方式 `Ctrl+I` 或从 Copilot 菜单中打开内联聊天会话，然后输入要求优化的提示（例如：“是否可以改进此代码？”）。
++ **建议呈现：** 建议直接以代码更新的形式显示在编辑器中，没有自然语言的说明或指导。用户可以在编辑器中查看、评估并选择“接受”或“关闭”建议的代码更新。
++ **前期分析：** 在重构之前，可以使用内联聊天功能询问有关代码的问题、获取特定部分的说明或请求改进建议（例如，要求解释特定函数的工作原理或建议如何优化它）。
 
 ### 聊天视图（Chat View）
 
-**聊天视图**是 Visual Studio Code 中的专用面板，提供了一个用户友好的界面来管理聊天对话和访问 Copilot 的功能。它适用于涉及更新多个文件或项目的更复杂更改，以及用于分析、规划和实现代码重构任务。
+`聊天视图`是 Visual Studio Code 中的专用面板，提供了一个用户友好的界面来管理聊天对话和访问 Copilot 的功能。它适用于涉及更新多个文件或项目的更复杂更改，以及用于分析、规划和实现代码重构任务。
 
-**聊天视图包括以下三种主要模式：**
+聊天视图包括以下三种主要模式：
 
 ### 智能操作（Smart Actions）和修复功能
 
-+   修复智能操作 （Fix Smart Action）： 这是一种上下文操作，可用于修复编码错误，而无需编写提示。它也可以用于修复测试错误和终端错误。通过编辑器中的 Copilot 上下文菜单访问。
-
-+   **审阅和批注智能操作 （Review and Ann**otate Smart Action）： 用于检查和分析代码，帮助确定改进领域、建议重构更新，并提供有关最佳做法的指导。
++ 修复智能操作（Fix Smart Action）：这是一种上下文操作，可用于修复编码错误，而无需编写提示。它也可以用于修复测试错误和终端错误。通过编辑器中的 Copilot 上下文菜单访问。
++ **审阅和批注智能操作（Review and Annotate Smart Action）：** 用于检查和分析代码，帮助确定改进领域、建议重构更新，并提供有关最佳做法的指导。
 
 ### 代码评审功能（Code Review Features）
 
 GitHub Copilot 支持两种类型的代码评审，有助于发现改进领域并建议重构：
 
-+   审阅选择 （Review Selection）： 对突出显示的代码部分进行初步评审。这通过**“审阅和批注”**智能操作实现。
-
-+   查看更改 （Review Changes）： 对所有暂存或未暂存的更改进行更深入的评审。这项功能是高级功能，有每人每月配额限制。代码评审功能生成的建议有助于提高代码的质量、可靠性、性能和安全性。
++ 审阅选择（Review Selection）：对突出显示的代码部分进行初步评审。这通过“审阅和批注”智能操作实现。
++ 查看更改（Review Changes）：对所有暂存或未暂存的更改进行更深入的评审。这项功能是高级功能，有每人每月配额限制。代码评审功能生成的建议有助于提高代码的质量、可靠性、性能和安全性。
 
 ## 代码重构和改进工作流的常见应用场景
 
 GitHub Copilot 可以帮助用户在多种常见的重构场景中改进代码：
 
-+   **优化低效代码：** Copilot 可以评估和优化代码，使其运行更快（例如优化 Bash 脚本的性能）。
-
-+   **清理重复代码：** 帮助将重复的计算或逻辑封装为函数，使代码更易于修订和调试。
-
-+   **使代码更加简洁：** Copilot 可以建议更简洁版本的所选代码，以解决代码冗长繁琐的问题，提高可读性和维护性。
-
-+   **拆分复杂代码单元：** 帮助将执行多个操作的大型方法或函数拆分为执行特定操作的、更适合重复使用的小型单元。
-
-+   **重写条件代码以提高可读性：** 建议使用更合适的条件结构，例如将一系列 if 和 else if 语句重写为 switch 语句。
-
-+   **重新格式化代码以使用其他结构：** 帮助重新格式化代码，以遵循特定的编码标准（例如，使用箭头表示法和描述性参数名称）。
-
-+   **修复编码问题：** 提供快速修复选项，用于解决命令终端中检测到的编码问题、测试失败和问题。代理模式在运行测试时会自动尝试修复失败的测试。
++ 优化低效代码：Copilot 可以评估和优化代码，使其运行更快（例如优化 Bash 脚本的性能）。
++ 清理重复代码：帮助将重复的计算或逻辑封装为函数，使代码更易于修订和调试。
++ 使代码更加简洁：Copilot 可以建议更简洁版本的所选代码，以解决代码冗长繁琐的问题，提高可读性和维护性。
++ 拆分复杂代码单元：帮助将执行多个操作的大型方法或函数拆分为执行特定操作的、更适合重复使用的小型单元。
++ 重写条件代码以提高可读性：建议使用更合适的条件结构，例如将一系列 `if` 和 `else if` 语句重写为 `switch` 语句。
++ 重新格式化代码以使用其他结构：帮助重新格式化代码，以遵循特定的编码标准（例如，使用箭头表示法和描述性参数名称）。
++ 修复编码问题：提供快速修复选项，用于解决命令终端中检测到的编码问题、测试失败和问题。代理模式在运行测试时会自动尝试修复失败的测试。
 
 ## 改进工作流的最佳实践
 
 为了高效使用 Copilot 进行重构，源材料建议遵循以下最佳实践：
 
-+   **通过更好的提示改进响应：** 编写更有效的提示，从通用开始再具体化，提供所需内容的示例，将复杂任务分解为更简单的任务，并提供正确的上下文（例如代码选择、文件、终端输出等）。
++ **通过更好的提示改进响应：** 编写更有效的提示，从通用开始再具体化，提供所需内容的示例，将复杂任务分解为更简单的任务，并提供正确的上下文（例如代码选择、文件、终端输出等）。
++ **迭代提示：** 提供后续提示以优化或修改 Copilot 的响应（例如，要求优化或使用更有意义的变量名称）。
++ **保持聊天记录的相关性：** Copilot 使用对话历史记录提供上下文，因此如果问题与历史记录无关，应删除过去的问题和回复或启动新会话。
++ **提供正确的上下文和工具：** 使用相关上下文（如 `#codebase` 变量、特定的文件 `#<file name>` 或符号 `#<symbol>`）丰富提示，以获得更准确和相关的响应。在代理模式下，可以使用工具按钮配置要使用的工具。
 
-+   **迭代提示：** 提供后续提示以优化或修改 Copilot 的响应（例如，要求优化或使用更有意义的变量名称）。
+# 实验：使用 GitHub Copilot 重构现有代码
 
-+   **保持聊天记录的相关性：** Copilot 使用对话历史记录提供上下文，因此如果问题与历史记录无关，应删除过去的问题和回复或启动新会话。
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_05_refactor_improve_existing_code_py.md`
 
-+   **提供正确的上下文和工具：** 使用相关上下文（如 #codebase 变量、特定的文件 #<file name> 或符号 #<symbol>）丰富提示，以获得更准确和相关的响应。在代理模式下，可以使用工具按钮配置要使用的工具。
-
-## 实验：使用 GitHub Copilot 重构现有代码
-
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_05_refactor_improve_existing_code_py.md
-
-+   掌握使用 GitHub Copilot 重构和改进现有代码的核心方法
-
-+   学习运用 Python 式结构（如列表推导式、生成器表达式和内置函数）替代手动循环和重复模式
-
-+   熟练使用 GitHub Copilot 的多种模式（询问、内联、编辑和代理）分析代码并生成重构建议
-
-+   掌握在 Visual Studio Code 中直接应用代码改进的实操技巧
-
-+   提升代码质量、可读性、可维护性和性能的优化能力
++ 掌握使用 GitHub Copilot 重构和改进现有代码的核心方法
++ 学习运用 Python 式结构（如列表推导式、生成器表达式和内置函数）替代手动循环和重复模式
++ 熟练使用 GitHub Copilot 的多种模式（询问、内联、编辑和代理）分析代码并生成重构建议
++ 掌握在 Visual Studio Code 中直接应用代码改进的实操技巧
++ 提升代码质量、可读性、可维护性和性能的优化能力
 
 # 综合演练
 
 ## 使用 GitHub Copilot Agent 开始进行氛围编码
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_06_vibe_coding_prototype_ecommerce_app.md
 
-+   理解 Vibe 编码的基本概念及其利用 AI 工具（如 GitHub Copilot Agent）生成软件的核心流程
 
+## 使用 Vibe 编码构建在线购物应用原型
+
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_06_vibe_coding_prototype_ecommerce_app.md`
+
++   理解 Vibe 编码的基本概念及其利用 AI 工具（如 GitHub Copilot `Agent`）生成软件的核心流程
 +   掌握通过自然语言描述引导 AI 生成目标应用代码的实践方法
-
-+   使用 Vibe 编码流程和 GitHub Copilot Agent 构建在线购物应用原型
-
++   使用 Vibe 编码流程和 GitHub Copilot `Agent` 构建在线购物应用原型
 +   实现包含产品、产品详情、购物车和结账页面的完整前端界面
-
 +   建立页面间的基本导航功能并配置有限演示数据集
-
 +   明确原型应用的边界，了解其不包含后端功能（如用户认证、支付处理等）的特性
-
 +   完成从传统编码到指导、测试和优化 AI 生成输出的角色转变
 
 ## 使用 GitHub Copilot 合并重复代码
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_07_consolidate_duplicate_code.md
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_07_consolidate_duplicate_code.md`
 
 +   掌握分析和识别现有项目中重复代码逻辑的方法
-
-+   使用 GitHub Copilot 的 Ask 模式理解现有代码结构并探索逻辑合并方案
-
-+   通过 GitHub Copilot 的 Agent 模式重构代码，将重复逻辑合并为共享辅助方法
-
++   使用 GitHub Copilot 的 `Ask` 模式理解现有代码结构并探索逻辑合并方案
++   通过 GitHub Copilot 的 `Agent` 模式重构代码，将重复逻辑合并为共享辅助方法
 +   学习对原始代码和重构后代码进行对比测试的流程
-
 +   确保重构后的代码保持原有功能并正常运行
 
 ## 使用 GitHub Copilot 重构大型函数
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_08_refactor_large_functions.md
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_08_refactor_large_functions.md`
 
 +   掌握分析和识别现有项目中大型函数的方法
-
-+   使用 GitHub Copilot 的 Ask 模式理解代码结构并探索函数拆分方案
-
-+   通过 GitHub Copilot 的 Agent 模式重构代码，将大型函数拆分为单一职责的小型函数
-
++   使用 GitHub Copilot 的 `Ask` 模式理解代码结构并探索函数拆分方案
++   通过 GitHub Copilot 的 `Agent` 模式重构代码，将大型函数拆分为单一职责的小型函数
 +   学习从大型函数中提取代码段创建独立函数的技巧
-
 +   掌握对原始代码和重构后代码进行功能验证的测试方法
-
 +   确保重构后的代码保持原有功能并符合单一职责原则
 
 ## 使用 GitHub Copilot 简化复杂条件
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_09_simplify_complex_conditionals.md
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_09_simplify_complex_conditionals.md`
 
 +   掌握使用 GitHub Copilot 分析深度嵌套条件逻辑的方法
-
-+   通过 GitHub Copilot 的 Ask 模式理解复杂代码结构并探索简化方案
-
-+   运用 GitHub Copilot 的 Agent 模式重构代码，将复杂条件逻辑提取为小型辅助方法
-
++   通过 GitHub Copilot 的 `Ask` 模式理解复杂代码结构并探索简化方案
++   运用 GitHub Copilot 的 `Agent` 模式重构代码，将复杂条件逻辑提取为小型辅助方法
 +   学习减少条件嵌套、优化代码结构的实践技巧
-
 +   掌握对重构前后代码进行功能验证的测试流程
-
 +   确保简化后的代码保持原有功能，同时提升可读性和可维护性
 
 ## 使用 GitHub Copilot 实现性能分析
 
-https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_10_implement_performance_profiling.md
+`https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/blob/main/Instructions/Labs/LAB_AK_10_implement_performance_profiling.md`
 
 +   掌握识别和分析代码性能瓶颈的方法
-
-+   使用 GitHub Copilot 的 Ask 模式理解现有代码结构并探索性能优化方案
-
-+   通过 GitHub Copilot 的 Agent 模式重构代码，解决已发现的性能问题
-
++   使用 GitHub Copilot 的 `Ask` 模式理解现有代码结构并探索性能优化方案
++   通过 GitHub Copilot 的 `Agent` 模式重构代码，解决已发现的性能问题
 +   学习在保持功能完整性和代码可读性的前提下提升执行效率的技巧
-
 +   掌握对重构前后代码进行性能对比测试的评估方法
-
 +   确保优化后的代码在提升性能的同时维持原有功能特性

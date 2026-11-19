@@ -1,3 +1,4 @@
+
 # 2023.09.23-Meetup第一期
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/Ts3Vd9agKoWowwxcNXlcokFnnTh](https://jalicvoygc0.feishu.cn/docx/Ts3Vd9agKoWowwxcNXlcokFnnTh)
@@ -12,7 +13,7 @@
 
 🤓详细分享内容如下。
 
-## 主题分享1 -  **唠唠****AI****应用的近期潮流&趋势**
+## 主题分享1 - 唠唠AI应用的近期潮流&趋势
 
 ![](img/454c27f1af214e02e97c07b28f9caca0.png)
 
@@ -20,7 +21,7 @@
 
 ![](img/168ac920f26aa0ac5df58357522deb1c.png)
 
-## 主题分享2 -  **用人话讲清楚****GPT****背后的技术逻辑**
+## 主题分享2 - 用人话讲清楚GPT背后的技术逻辑
 
 ![](img/49ef915ff63127ccc13ac7f0d319d7de.png)
 
@@ -28,7 +29,7 @@
 
 ![](img/dbc01398801ee5c4a5cf62c87f0ad0a2.png)
 
-## 主题分享3 -  **咋能让****GPT****更聪明, 提示词优化攻略**
+## 主题分享3 - 咋能让GPT更聪明, 提示词优化攻略
 
 ![](img/1954fee25b8705ce7c9a4ddff47c792a.png)
 
@@ -36,10 +37,9 @@
 
 ![](img/7c0dde87b31ff123db9587b17389edd8.png)
 
-## 主题分享4 -  手把手教你创建自己的专属AIBOT
+## 主题分享4 - 手把手教你创建自己的专属AIBOT
 
 ![](img/422b25b505d7ec4d0110454ed561b4d7.png)
-
 
 ## 感谢大家的支持，下次见！
 
@@ -47,7 +47,7 @@
 
 ---
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容：
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

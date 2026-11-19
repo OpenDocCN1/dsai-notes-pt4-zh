@@ -1,12 +1,13 @@
+
 # 1.0 AI 大模型
 
 > 来源：[https://agispace.feishu.cn/docx/BW0xdQU73oyK4FxF8ykcz1QonFe](https://agispace.feishu.cn/docx/BW0xdQU73oyK4FxF8ykcz1QonFe)
 
-**AI 大模型**代表了当前人工智能领域的前沿技术。这些模型通常具备数以亿计的参数，能够处理和生成复杂的语言、图像和其他数据类型。它们在自然语言处理、计算机视觉、推荐系统等领域展现出卓越的性能。
+AI 大模型代表了当前人工智能领域的前沿技术。这些模型通常具备数以亿计的参数，能够处理和生成复杂的语言、图像和其他数据类型。它们在自然语言处理、计算机视觉、推荐系统等领域展现出卓越的性能。
 
 ---
 
-### 大模型入门
+## 大模型入门
 
 > 大模型的基本概念、发展历程和核心技术。适合刚接触这一领域的学习者。
 
@@ -18,7 +19,7 @@
 
 ---
 
-### 国内大模型
+## 国内大模型
 
 > 聚焦于中国本土的 AI 大模型及其应用，包括主要的技术平台和公司。
 
@@ -40,7 +41,7 @@
 
 [Kimi（月之暗面）](https://agispace.feishu.cn/wiki/NCp5wLd1CiEcIEkCoHAcPhlDnSe)
 
-[混元（腾讯） ](https://agispace.feishu.cn/wiki/Jc1TwOaAni879pksMgmcqgUNnof)
+[混元（腾讯）](https://agispace.feishu.cn/wiki/Jc1TwOaAni879pksMgmcqgUNnof)
 
 [GLM-4（智谱 AI）](https://agispace.feishu.cn/wiki/ZcIPwtqGWiFOL8kQtkfcUhRrnug)
 
@@ -52,7 +53,7 @@
 
 ---
 
-### 🌍  国外大模型
+## 🌍 国外大模型
 
 > 探讨国际上领先的 AI 大模型及其影响，如 OpenAI 的 GPT 系列、Google 的 BERT 和 DeepMind 的 AlphaFold。
 
@@ -66,7 +67,7 @@
 
 ---
 
-### 🎥  视频大模型（👉 ）
+## 🎥 视频大模型（👉）
 
 > 涉及以视频数据为基础的大模型技术，如视频生成和视频分析。
 
@@ -74,19 +75,19 @@
 
 ---
 
-### 📊  大模型报告（👉 ）
+## 📊 大模型报告（👉）
 
 > 提供最新的研究报告和技术白皮书，涵盖大模型的性能评估和趋势分析。
 
 ---
 
-### 📖  大模型拓展阅读（👉 ）
+## 📖 大模型拓展阅读（👉）
 
 > 推荐深入阅读的书籍、文章和研究，帮助扩展对大模型的理解。
 
 ---
 
-### 🛠️  辅助资源
+## 🛠️ 辅助资源
 
 > 提供学习和使用大模型的工具、平台和社区支持。
 

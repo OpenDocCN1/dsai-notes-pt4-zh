@@ -1,14 +1,11 @@
+
 # 评测｜🐧音乐新功能「AI帮你唱」，只需30秒即可将任何歌换成你的声音
 
 > 来源：[https://geekbang.feishu.cn/docx/Wlqkd2Z84oqMBXxOpAJccEKanRj](https://geekbang.feishu.cn/docx/Wlqkd2Z84oqMBXxOpAJccEKanRj)
-
 > 👩 作者：赛博大表姐
-
 > 📃 作者介绍：120万字小说作者，青岛AI企业家联盟导师，青岛市创业者协会人工智能专委会知识创业部副部长，自媒体创业者。
-
 > ⏰ 收录时间：2024-05-31 16:46:27 (UTC+8)
-
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247484137&idx=1&sn=22c85df6a7f6f53f5026cef91ee876ce&chksm=c1082726f67fae30d17d797e37ffa3d5367f2bd7f834edea5698d5d813e5da675f7ba5949757&token=1230547096&lang=zh_CN#rd)q.com/s?__biz=Mz...
+> 🔗 原文链接：[https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247484137&idx=1&sn=22c85df6a7f6f53f5026cef91ee876ce&chksm=c1082726f67fae30d17d797e37ffa3d5367f2bd7f834edea5698d5d813e5da675f7ba5949757&token=1230547096&lang=zh_CN#rd](https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247484137&idx=1&sn=22c85df6a7f6f53f5026cef91ee876ce&chksm=c1082726f67fae30d17d797e37ffa3d5367f2bd7f834edea5698d5d813e5da675f7ba5949757&token=1230547096&lang=zh_CN#rd)
 
 ![](img/3030d02ef00de68c9b0ecf1dcaec1466.png)
 
@@ -70,9 +67,9 @@
 
 毕竟这玩意儿就算换成你自己的声音了，音乐还有版权呢。
 
-**不过大家想**做原创，我倒是有个办法，就是用我之前介绍过的 SUNO ，先原创一首歌曲，然后将里面的声音换成自己的。
+不过大家想做原创，我倒是有个办法，就是用我之前介绍过的 `SUNO` ，先原创一首歌曲，然后将里面的声音换成自己的。
 
-不过那样的话得用上SVC这种专业工具了，听听我按照上述方法做的自己的“原创歌曲”吧。
+不过那样的话得用上`SVC`这种专业工具了，听听我按照上述方法做的自己的“原创歌曲”吧。
 
 这种应用场景会多一些，也容易商业交付，具体的可以翻翻我之前写的一篇关于AI音乐的文章。
 

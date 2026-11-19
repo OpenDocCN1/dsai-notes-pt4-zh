@@ -1,3 +1,4 @@
+
 # 第八章：记忆管理模式（Memory Pattern）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/N9GodR755o1OBsxmVI8cPwN6nqz](https://v11enp9ok1h.feishu.cn/docx/N9GodR755o1OBsxmVI8cPwN6nqz)
@@ -30,7 +31,7 @@
 
 Antonio Gulli 的定义非常简洁：
 
-> **记忆模式（Memory Pattern）是指通过对历史上下文、外**部知识与状态数据的存储与提取，使智能体具备连续性、个性化与自适应能力的设计模式。
+> **记忆模式（Memory Pattern）是指通过对历史上下文、外部知识与状态数据的存储与提取，使智能体具备连续性、个性化与自适应能力的设计模式。**
 
 换句话说：
 
@@ -98,7 +99,7 @@ LangChain的记忆系统非常成熟，支持多种类型👇
 
 ## 八、CrewAI 的记忆共享系统
 
-**在多智能体环境下，C**rewAI 引入了 Memory Hub 机制。
+**在多智能体环境下，CrewAI** 引入了 Memory Hub 机制。
 
 📘 Memory Hub 让团队协作型AI能像公司一样，既有“个人经验”，又有“组织知识”。
 

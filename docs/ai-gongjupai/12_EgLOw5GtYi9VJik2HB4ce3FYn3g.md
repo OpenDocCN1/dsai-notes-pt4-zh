@@ -1,10 +1,11 @@
+
 # 5 款不错的 AI 工具：📕做号神器、漫画生成、AI 学术、文本转语音等
 
 > 来源：[https://docs.feishu.cn/docx/AJ9gdJEMGokCc1xCiJfc0lwFnuc](https://docs.feishu.cn/docx/AJ9gdJEMGokCc1xCiJfc0lwFnuc)
 
 Hi，大家好，今天 Chris 和大家分享 5 款不错的 AI 工具，它们不仅功能强大，而且操作简便，能够帮助你在各个领域提升效率和创造力。接下来一起看看吧：
 
-# 1.Postnitro：📕做号神器
+## 1.Postnitro：📕做号神器
 
 工具地址：https://postnitro.ai/
 
@@ -16,19 +17,16 @@ Postnitro 是一款专为社交媒体内容创作者、品牌和个人博主设�
 
 核心功能：
 
-+   **快速封面设计**：AI算法根据用户输入快速生成封面图。
-
-+   **个性化定制**：提供丰富的模板库，支持用户自定义图片、颜色和字体等。
-
-+   **智能文案建议**：AI系统提供与封面风格相匹配的文案建议，帮助吸引目标受众。
-
-+   **多格式导出**：支持将封面导出为PNG或PDF格式，适用于多种社交平台。
++ **快速封面设计**：AI算法根据用户输入快速生成封面图。
++ **个性化定制**：提供丰富的模板库，支持用户自定义图片、颜色和字体等。
++ **智能文案建议**：AI系统提供与封面风格相匹配的文案建议，帮助吸引目标受众。
++ **多格式导出**：支持将封面导出为PNG或PDF格式，适用于多种社交平台。
 
 Chris 输入简单的主题内容，就可以生成多张不错的封面图：
 
 ![](img/abc8b89782cc43b58afc8e4ae9684d9c.png)
 
-# 2.TTS-Online：多语言文字转语音平台
+## 2.TTS-Online：多语言文字转语音平台
 
 工具地址：https://www.ttson.cn/
 
@@ -42,13 +40,13 @@ Chris 在左侧输入要转语音的文本，右侧进行配置即可：
 
 ![](img/0853f4bd988992e3d8aba1af4a61f568.png)
 
-# 3.AI Comic Factory：漫画生成工具
+## 3.AI Comic Factory：漫画生成工具
 
-工具地址：[h](https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory)ttps://huggingface.co/spaces/jbilcke-hf/ai-comic-factory
+工具地址：[https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory](https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory)
 
 工具亮点：开源免费
 
-AI Comic Factory 是一**款基于 Hugging **Face 平台的开源免费在线漫画创作工具，它结合了大型语言模型（LLM）和风格转换技术（SDXL），允许用户通过输入简短的文字描述创作出精美的漫画。这些由AI生成的图片不仅支持无损放大，而且操作简单，无需任何先前的学习经验，适合所有年龄段的用户。
+AI Comic Factory 是一款基于 Hugging Face 平台的开源免费在线漫画创作工具，它结合了大型语言模型（LLM）和风格转换技术（SDXL），允许用户通过输入简短的文字描述创作出精美的漫画。这些由AI生成的图片不仅支持无损放大，而且操作简单，无需任何先前的学习经验，适合所有年龄段的用户。
 
 ![](img/1b4dc4a3997a7494a692bccb619dae29.png)
 
@@ -58,7 +56,7 @@ AI Comic Factory 是一**款基于 Hugging **Face 平台的开源免费在线漫
 
 生成结果支持每张图片单独修改，不过 Chris 发现，对于人物的手指，还是有问题的。
 
-# 4.MyLens：时间线生成工具
+## 4.MyLens：时间线生成工具
 
 工具地址：https://mylens.ai/
 
@@ -72,7 +70,7 @@ MyLens 是一款**完全免费且免登录**的 AI 时间线生成工具，用�
 
 ![](img/09935d8a80a313ea338c3f8fd951ae22.png)
 
-# 5.Aminer：新一代 AI 学术搜索平台
+## 5.Aminer：新一代 AI 学术搜索平台
 
 工具地址：[www.aminer.cn](https://www.aminer.cn/)
 
@@ -82,19 +80,13 @@ AMiner 是由清华大学教授唐杰领导的团队创建的新一代科技情�
 
 AMiner 主要功能：
 
-+   **论文推荐**；
-
-+   **论文 AI 对话**；
-
-+   **论文排名**；
-
-+   **期刊顶会**；
-
-+   **必读论文**；
-
-+   **热点论文**；
-
-+   **开放平台**；
++ **论文推荐**；
++ **论文 AI 对话**；
++ **论文排名**；
++ **期刊顶会**；
++ **必读论文**；
++ **热点论文**；
++ **开放平台**；
 
 ![](img/3b2a65257765157556ac73cd9c2f0621.png)
 

@@ -1,3 +1,4 @@
+
 # 支持向量机
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/RZf1dsqfeoOkNYxSMiwcVIiun7d](https://v11enp9ok1h.feishu.cn/docx/RZf1dsqfeoOkNYxSMiwcVIiun7d)
@@ -10,11 +11,11 @@ SVM 的核心思想是找到一个最优的超平面，将不同类别的数据�
 
 ## 使用 Python 实现 SVM
 
-接下来，我们将使用 Python 中的 scikit-learn 库来实现一个简单的 SVM 分类器。
+接下来，我们将使用 Python 中的 `scikit-learn` 库来实现一个简单的 SVM 分类器。
 
 ### 安装必要的库
 
-首先，确保你已经安装了scikit-learn库。如果没有安装，可以使用以下命令进行安装：
+首先，确保你已经安装了 `scikit-learn` 库。如果没有安装，可以使用以下命令进行安装：
 
 ```
 pip install scikit-learn
@@ -22,7 +23,7 @@ pip install scikit-learn
 
 ### 导入库
 
-## 实例
+### 实例
 
 ```
 import numpy as np
@@ -34,20 +35,20 @@ from sklearn.metrics import accuracy_score
 
 ### 加载数据集
 
-我们将使用scikit-learn自带的鸢尾花（Iris）数据集。
+我们将使用 `scikit-learn` 自带的鸢尾花（Iris）数据集。
 
-## 实例
+### 实例
 
 ```
 加载鸢尾花数据集
 iris = datasets.load_iris()
-X = iris.data[:, :2]  只使用前两个特征
+X = iris.data[:, :2]  # 只使用前两个特征
 y = iris.target
 ```
 
 ### 划分训练集和测试集
 
-## 实例
+### 实例
 
 ```
 将数据集划分为训练集和测试集
@@ -56,11 +57,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 ### 训练 SVM 模型
 
-## 实例
+### 实例
 
 ```
 创建SVM分类器
-clf = svm.SVC(kernel=&#x27;linear&#x27;)  使用线性核函数
+clf = svm.SVC(kernel='linear')  # 使用线性核函数
 
 训练模型
 clf.fit(X_train, y_train)
@@ -68,20 +69,20 @@ clf.fit(X_train, y_train)
 
 ### 预测与评估
 
-## 实例
+### 实例
 
 ```
-**在测试集上**进行预测
+在测试集上进行预测
 y_pred = clf.predict(X_test)
 
 计算准确率
 accuracy = accuracy_score(y_test, y_pred)
-print(f&quot;模型准确率: {accuracy:.2f}&quot;)
+print(f"模型准确率: {accuracy:.2f}")
 ```
 
 ### 可视化结果
 
-## 实例
+### 实例
 
 ```
 import numpy as np
@@ -99,7 +100,7 @@ y = iris.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # 创建SVM分类器
-clf = svm.SVC(kernel=&#x27;linear&#x27;)  # 使用线性核函数
+clf = svm.SVC(kernel='linear')  # 使用线性核函数
 
 # 训练模型
 clf.fit(X_train, y_train)
@@ -109,7 +110,7 @@ y_pred = clf.predict(X_test)
 
 # 计算准确率
 accuracy = accuracy_score(y_test, y_pred)
-print(f&quot;模型准确率: {accuracy:.2f}&quot;)
+print(f"模型准确率: {accuracy:.2f}")
 
 # 绘制决策边界
 def plot_decision_boundary(X, y, model):
@@ -121,10 +122,10 @@ def plot_decision_boundary(X, y, model):
     Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
     Z = Z.reshape(xx.shape)
     plt.contourf(xx, yy, Z, alpha=0.8)
-    plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors=&#x27;k&#x27;, marker=&#x27;o&#x27;)
-    plt.xlabel(&#x27;Sepal length&#x27;)
-    plt.ylabel(&#x27;Sepal width&#x27;)
-    plt.title(&#x27;SVM Decision Boundary&#x27;)
+    plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors='k', marker='o')
+    plt.xlabel('Sepal length')
+    plt.ylabel('Sepal width')
+    plt.title('SVM Decision Boundary')
     plt.show()
 
 plot_decision_boundary(X_train, y_train, clf)

@@ -1,3 +1,4 @@
+
 # PC 一键开启Claude酒馆之门（原名：真·一键脚本，脚本内置注册cookie功能）
 
 > 来源：[https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec)
@@ -20,9 +21,9 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 **魔法：用来访问国外网络的魔法**
 
-**邮**箱：不建议使用临时邮箱/国内（qq、163）邮箱，推荐 Outlook / Gmail (现在不建议别名了)
+**邮箱**：不建议使用临时邮箱/国内（qq、163）邮箱，推荐 Outlook / Gmail (现在不建议别名了)
 
-[**手机**](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec?subFrom=quote_container&from=tab_link&wiki_version=2#part-OpLPdfbKCokTlEx6pqsc3Nctn3c)**号：需要一**次性的手机短信验证，可在 这里 获取教程
+[手机号](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec?subFrom=quote_container&from=tab_link&wiki_version=2#part-OpLPdfbKCokTlEx6pqsc3Nctn3c)：需要一次性的手机短信验证，可在 这里 获取教程
 
 ### 通过链接下载[一键脚本](https://github.com/LINKlang/SillyTavern-Clewd-auto/releases/latest)
 
@@ -31,7 +32,6 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 ### 使用一键脚本注册/登录 claude账号
 
 #### 自动完成网络等检验过后选择模式一
-
 
 #### 选择已安装的浏览器（Edge/Chrome）
 
@@ -47,9 +47,9 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 #### 创建更多的cookie
 
-这句话的意思是，是否要通过不同的邮箱添加更多的cookie（因为一个cookie用不了很长时间），你上次使用的什么方法进入获取cookie，输入y后还是用的同样方法
+这句话的意思是，是否要通过不同的邮箱添加更多的cookie（因为一个cookie用不了很长时间），你上次使用的什么方法进入获取cookie，输入`y`后还是用的同样方法
 
-> 比如你是注册claude账号，输入y后，也是进入的注册claude账号流程
+> 比如你是注册claude账号，输入`y`后，也是进入的注册claude账号流程
 
 ![](img/8e87ecc63939fcaa0152eccdc866be15.png)
 
@@ -77,7 +77,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 ### 使用clewd自带的更新程序进行更新
 
-运行后会自动调用clewd文件夹里的update程序进行更新
+运行后会自动调用clewd文件夹里的`update`程序进行更新
 
 ### 修改clewd配置文件
 
@@ -101,7 +101,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 ![](img/dbde501d020a24e8aff35a1bfa4f485f.png)
 
-然后再按下一次回车，输入end
+然后再按下一次回车，输入`end`
 
 ![](img/44f1dc4522c467c47abc95756e3cc983.png)
 
@@ -177,7 +177,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 ### **购买虚拟手机号**
 
-服务选 Any other ，地区选择除英美两国之外的其他国家。
+服务选 `Any other` ，地区选择除英美两国之外的其他国家。
 
 > 如果收不到验证码，服务搜Claude也不是不行
 
@@ -191,7 +191,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 购买过后自动进入收取页面
 
-**先在****sms**点击✅，再在一键脚本中输入手机号收取验证码
+**先在 sms 点击✅**，再在一键脚本中输入手机号收取验证码
 
 ![](img/e39c11088ac4fd995f447694cd4f2d11.png)
 
@@ -203,11 +203,11 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 酒馆使用教程：[酒馆使用](https://sqivg8d05rm.feishu.cn/wiki/Nazdwr3H9inZs6k1aIQcFPA0nth)
 
-当你已经 **注册/登录 **完了claude账号，进入酒馆页面的时候，一些人底部的输入框会提示以下内容
+当你已经 **注册/登录** 完了claude账号，进入酒馆页面的时候，一些人底部的输入框会提示以下内容
 
 ![](img/2abdeabd38843ea360555dcb69ce4d51.png)
 
-这种情况只需要点击[以下图片](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg#R6LudPOnCoVkEYx1N57cMn4dnJc)这个图标，进入接口页面，然后点击Reverse Proxy[、将Pr](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg#KTOhdILrmoNwbEx6CTPcDwuGndE)[oxy ](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg#U7X7dQVm5odNNtxzgJzczHcdnkf)Server URL改成这段文本，并给Proxy Password里填入任意字符，再点击连接按钮即可，图片教程
+这种情况只需要点击[以下图片](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg#R6LudPOnCoVkEYx1N57cMn4dnJc)这个图标，进入接口页面，然后点击Reverse Proxy，将Server URL改成这段文本，并给Proxy Password里填入任意字符，再点击连接按钮即可，图片教程
 
 ![](img/edc9cab7aa21dc32aa93d8de1fc40c8a.png)
 
@@ -225,7 +225,7 @@ http://127.0.01:8444/v1
 
 ### 双击程序没反应
 
-#### alt+tab打开详情
+#### `alt+tab`打开详情
 
 #### 勾选解除锁定，应用后重试
 
@@ -233,24 +233,22 @@ http://127.0.01:8444/v1
 
 ### 错误：更新cookie全程时出现问题
 
-#### 报错信息: [Errno 2] No such file or directory: 'clewd\\config.js'
+#### 报错信息: [Errno 2] No such file or directory: `clewd\\config.js`
 
 文件丢失，重新下载脚本
 
 > 赞助版可以使用恢复clewd功能
 
-#### 报错信息: [Errno 13] Permission denied: 'clewd\\config.js'
+#### 报错信息: [Errno 13] Permission denied: `clewd\\config.js`
 
-##### 检查是否使用记事本打开了clewd文件夹里的config.js
+##### 检查是否使用记事本打开了clewd文件夹里的`config.js`
 
 ##### 解决方法二：
 
-###### alt+tab打开详情
+###### `alt+tab`打开详情
 
 ###### 检查是否勾选只读（关掉只读）/是否有安全选项（有的话就勾选解除锁定）
 
 ![](img/96d02388b3b203f9edd314f25afd3599.png)
 
 ![](img/8dd1679bdbc8f620e3372dc0f51aa1db.png)
-
-####

@@ -1,3 +1,4 @@
+
 # 实测 Qwen3.6 新品：视觉推理一流，Coding 更进一步
 
 > 来源：[https://chatmemo.feishu.cn/docx/KMZxdTi0voomo6xAimlcKFVKneg](https://chatmemo.feishu.cn/docx/KMZxdTi0voomo6xAimlcKFVKneg)
@@ -18,17 +19,17 @@
 
 Qwen3.6-Plus 主打三个维度：
 
-+   **原生多模态：**沿袭上代 Qwen3.5-Plus 优秀多模态能力，可胜任复杂多模态推理任务，如看地铁图规划换乘路线。
++ 原生多模态：沿袭上代 Qwen3.5-Plus 优秀多模态能力，可胜任复杂多模态推理任务，如看地铁图规划换乘路线。
 
-+   **Agentic Coding：** 前端网页开发、复杂代码开发、终端操作与自动化任务能力提升
++ Agentic Coding：前端网页开发、复杂代码开发、终端操作与自动化任务能力提升
 
-+   **100 万上下文窗口**，以及提供了新的 API 参数 preserve_thinking，可在多轮对话中保留中间推理过程
++ 100 万上下文窗口，以及提供了新的 API 参数 `preserve_thinking`，可在多轮对话中保留中间推理过程
 
 ![](img/8c55f7ea749bd10dbd8bdfa74a99d72b.png)
 
 摘自千问提供的 Benchmark 结果
 
-目前新模型已上架阿里云百炼。可直接接入 Claude Code、OpenClaw、Qwen Code 等编程助手使用。chat.qwen.ai 也可直接体验。
+目前新模型已上架阿里云百炼。可直接接入 `Claude Code`、`OpenClaw`、`Qwen Code` 等编程助手使用。`chat.qwen.ai` 也可直接体验。
 
 ![](img/be16ab3db150da20269651fc833b4690.png)
 
@@ -44,13 +45,13 @@ Prompt 相同，分别用 Qwen3.6-Plus、Gemini 3.1 Pro、Claude Opus 4.6，一�
 
 为增加复杂度，要求模型在一次生成中，完成多项特效模式开发。
 
-**Qwen3.6-Plus：**
+Qwen3.6-Plus：
 
 ![](img/b664036ee64ffa019d4cb6488cf4bca6.png)
 
 [qwen-font.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CGgGbQH9doI4tHxWJeOc4iz7nWh)
 
-**Gemini 3.1 Pro：**
+Gemini 3.1 Pro：
 
 ![](img/5bc0fec3579bf3f9a6ef9d9866b13ea5.png)
 
@@ -91,7 +92,7 @@ Qwen 各项完成度均在线，文字链表现更佳；Opus 则在动画精细�
 
 这个任务打算给模型上一下强度。若要完整完成，需要模型对 3D 开发、材质把控、真实样板房布局均有深入理解。
 
-**Qwen3.6-Plus：**
+Qwen3.6-Plus：
 
 ![](img/5b265e5d8c086b9a82c966fda9fd8666.png)
 
@@ -103,7 +104,7 @@ Claude Opus 4.6：
 
 [claude46-3d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M02ebXVvSoZAHrx0JqAcm9xbnPg)
 
-**Gemini 3.1 Pro：**
+Gemini 3.1 Pro：
 
 ![](img/1aa40637c32630b51fed9747b8c02448.png)
 
@@ -125,11 +126,11 @@ Claude Opus 4.6：
 
 ![](img/8b542013723474b104c6e70a14c8edcd.png)
 
-**Qwen3.6-Plus**
+Qwen3.6-Plus
 
 ![](img/f547aff5a96bd7fe1eb86da75e7282fb.png)
 
-**Gemini 3.1 Pro**
+Gemini 3.1 Pro
 
 ![](img/18e95bc17196c23efad96b2674d9f64b.png)
 
@@ -165,7 +166,7 @@ Qwen3.6-Plus 长程 Agentic 任务能力，较前代有一定提升。相较复�
 
 ### Case 1：通用联网任务
 
-使用近日爆火的通用联网 Agent Skill 「Web-Access」（我做的），测试 Qwen3.6-Plus 在复杂网络环境的 Agent Loop 表现。
+使用近日爆火的通用联网 Agent Skill `Web-Access`（我做的），测试 Qwen3.6-Plus 在复杂网络环境的 Agent Loop 表现。
 
 直接给出并行调研指令：
 
@@ -181,7 +182,7 @@ Qwen3.6-Plus 长程 Agentic 任务能力，较前代有一定提升。相较复�
 
 ![](img/7f175955e652a19ea063c9f80ab90a79.png)
 
-![](img/c5ba528a5b2a482defa6c5112f5c0399.png)
+![](img/c5ba528a5b2a482defa6c5112f5c03999)
 
 在任务过程中，可胜任指令遵循表现良好，最终其抓取内容经核实，内容数据均与实际情况一致。
 
@@ -215,12 +216,12 @@ Qwen3.6-Plus 长程 Agentic 任务能力，较前代有一定提升。相较复�
 
 ---
 
-## **💰 定价与总结**
+## 💰 定价与总结
 
 Qwen3.6-Plus 已上架阿里云百炼，以 256k 上下文为界限，阶梯计价：
 
-![](img/4aa976aa291ceb26792aca3a68884d7f.png)
+![](img/4aa976aa291ceb26792aca3a6884d7f.png)
 
-**总结一下：**Qwen3.6-Plus 在前端代码 or 单轮 Coding 能力上，有较好表现。Agent 长程任务较上代有所进步，复杂度上限还有提升空间。
+总结一下：Qwen3.6-Plus 在前端代码 or 单轮 Coding 能力上，有较好表现。Agent 长程任务较上代有所进步，复杂度上限还有提升空间。
 
-另外，在**视觉识别推理**场景，体现出了明显的高可用度，延续了 Qwen 家族在多模态识别场景的一流水准。
+另外，在视觉识别推理场景，体现出了明显的高可用度，延续了 Qwen 家族在多模态识别场景的一流水准。

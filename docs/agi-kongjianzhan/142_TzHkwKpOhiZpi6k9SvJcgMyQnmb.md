@@ -1,3 +1,4 @@
+
 # 免费一周后，我们选出了10个免费用户体验感拉满的GPTs
 
 > 来源：[https://agispace.feishu.cn/docx/XWXddyPfModmpDxpkXXcPZHynuh](https://agispace.feishu.cn/docx/XWXddyPfModmpDxpkXXcPZHynuh)
@@ -14,7 +15,7 @@
 
 这一期，就带不熟悉GPTs的朋友们，看一下，有哪些GPTs是值得体验的！！！
 
-## **思维导图类**
+## 思维导图类
 
 不少小伙伴在工作和学习中，都会面对需要画思维导图的情况，思维导图，时序图等可以，将我们要思考的问题可视化，使问题更加的清晰，直观。下面我们就来看两个用来思维导图和流程图的GPTs
 
@@ -30,7 +31,7 @@ Whimsical Diagrams主要支持 3 种图表，分别是流程图（flowcharts）,
 
 ![](img/d53021b17c27e7b38cd7b28a2b64a6e5.png)
 
-它就会先将回答的文字内容展示给我们，然后再根据生成的内容生成mermaid代码，最后调用action 生成思维导图展示
+它就会先将回答的文字内容展示给我们，然后再根据生成的内容生成`mermaid`代码，最后调用`action` 生成思维导图展示
 
 ![](img/ee32321f6d1412a05cf227cbdc6daea1.png)
 
@@ -46,7 +47,7 @@ GPTs同样具有联网能力，你可以要求它根据网络上搜集来的信�
 
 除了这个画图工具，这里还有另一个很强大的画图工具叫Diagrams: Show Me | charts, presentations, code
 
-### **2. Diagrams: Show Me | charts,** presentations, code
+### 2. Diagrams: Show Me | charts, presentations, code
 
 Show Me，相比较于Whimsical就更加的强大，它可以画流程图，思维导图，UML，图表，PlotUML，工作流，序列，ERD，数据库和架构可视化代码等
 
@@ -64,9 +65,9 @@ Show Me生成的图元素和样式更加的丰富，如果你喜欢这种元素�
 
 大家可以根据自己的需求和喜好，在这两个GPTs中选择！
 
-## **学术类**
+## 学术类
 
-### **3.Consensus**
+### 3. Consensus
 
 Consensus可以询问research相关的问题，可以直接与文献聊天和搜索参考文献
 
@@ -82,7 +83,7 @@ Consensus可以询问research相关的问题，可以直接与文献聊天和搜
 
 通过这种方式查找文献岂不是快到起飞。
 
-### **4.论文润色大师**
+### 4. 论文润色大师
 
 搜索完文献之后，我们可以使用论文润色的GPTs来帮我们润色论文！
 
@@ -90,9 +91,9 @@ Consensus可以询问research相关的问题，可以直接与文献聊天和搜
 
 在这里我就就不演示了，大家可以在写作时尝试一下。
 
-## **设计类**
+## 设计类
 
-### **5.Presentation and Slides GP**T: PowerPoints, PDFs
+### 5. Presentation and Slides GPT: PowerPoints, PDFs
 
 做PPT相信是很多人在学习和生活中无法绕开的，PPT排版，找图都非常的令人头痛，用上这个GPTs 能帮你解决一系列问题。
 
@@ -102,7 +103,7 @@ Consensus可以询问research相关的问题，可以直接与文献聊天和搜
 
 ![](img/0ea22a1c008224f339a90509398e24b7.png)
 
-### **6.Canva**
+### 6. Canva
 
 Canva是一款可以设计一切的GPTs。从logo到社交媒体的帖子再到海报，都可以统统搞定。
 
@@ -122,13 +123,13 @@ Canva是一款可以设计一切的GPTs。从logo到社交媒体的帖子再到�
 
 除了Canva， 还有一个专门用来设计logo和App 图标的GPTs
 
-### **7. Logo Creator**
+### 7. Logo Creator
 
 他的名字就很简洁易懂，就是图标设计，使用起来也是非常的简单，你只需要告诉他你的需求，他就可以按照你的要求为你制作logo。
 
 ![](img/7bbdfc397ddf048c7fff8647c94ecbcf.png)
 
-### **8. Dall E**
+### 8. Dall E
 
 说到画图类，就不得不提出DallE，他的介绍也非常的直接：让我把你的想象变成形象。
 
@@ -136,15 +137,15 @@ DallE，可以将脑海中所有的想法为你画出来，不想充钱使用mid
 
 ![](img/849b64f1987ecaa3bd76c457adb1128e.png)
 
-## **编程类**
+## 编程类
 
-### **9. Data Analyst**
+### 9. Data Analyst
 
 说到编程类，就不得不提Data Analyst，这是由OpenAI官方出品的GPTs，前身就是作为单独feature出现的代码解释器，他可以完成代码解释任务和数据分析任务，而且还能读取文件和可视化数据。
 
 ![](img/7b75f4f22faf9f9a087202990fdaf3b4.png)
 
-### **10. Grimoire**
+### 10. Grimoire
 
 这是一个对新手更加友好的编程GPTs，他是自定义 GPT 编码向导。100x engineer。在几分钟内建立一个网站。无需编码经验。
 

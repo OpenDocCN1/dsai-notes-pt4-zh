@@ -1,3 +1,4 @@
+
 # 每日一图《AIGC》
 
 > 来源：[https://agispace.feishu.cn/docx/U21Yd4gWmo97FbxLWIpcRulLnHh](https://agispace.feishu.cn/docx/U21Yd4gWmo97FbxLWIpcRulLnHh)
@@ -6,15 +7,15 @@
 
 ![](img/93a566e64aca334e6b8758509658458b.png)
 
-https://x.com/Macbaconai/status/1830641323310805358
+`https://x.com/Macbaconai/status/1830641323310805358`
 
-# 《广告创意》
+## 《广告创意》
 
 ![](img/4ae9a8c8868260c6f24c329501da2e6f.png)
 
 [iFEb-X0YfrLUESkM.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JZO9bBZlDot26dxVTQrcvLVGnId)
 
-# 《 番茄》
+## 《番茄》
 
 ![](img/3ed52d6fbeb133ec54064c05d0503829.png)
 
@@ -24,35 +25,35 @@ https://x.com/Macbaconai/status/1830641323310805358
 
 ![](img/587b1f2ae5af24ae707b250ff79ac729.png)
 
-# 《 北极》
+## 《北极》
 
 ![](img/4c91371d199ac0d50f1b26ac15c93a55.png)
 
 [BeVCcQVGlJlT6DIr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LOD2bCyNIoFslJxgMhoc2Cvqnud)
 
-# 《未来汽车》
+## 《未来汽车》
 
 ![](img/7531ecba95cca9c8b4fd92967eba6a7a.png)
 
 马斯克 X
 
-# 《Q》
+## 《Q》
 
 ![](img/db6c1de4275aadd37b45d57d7d012f32.png)
 
-#  《线条》
+## 《线条》
 
 ![](img/1b0c70d41540b4d67f1912f2645c95a0.png)
 
 ![](img/870c668d67d584d92d592a10592a0b77.png)
 
-https://x.com/gizakdag/status/1811424873119699375/photo/3
+`https://x.com/gizakdag/status/1811424873119699375/photo/3`
 
-#  《青花瓷》
+## 《青花瓷》
 
 ![](img/113c028e1069c158e4124f69894a3aa7.png)
 
-#  《粉》
+## 《粉》
 
 ![](img/c14be3c73127bcdc14572ea5607047c3.png)
 
@@ -60,11 +61,9 @@ https://x.com/gizakdag/status/1811424873119699375/photo/3
 
 ![](img/3512a2056518460496acefe6f0f139ff.png)
 
-（https://x.com/egeberkina/status/1810289352976572655）
+（`https://x.com/egeberkina/status/1810289352976572655`）
 
-# 《色彩》
-
-
+## 《色彩》
 
 ![](img/42f79832760af714ae08d8032a6f43ce.png)
 
@@ -72,7 +71,7 @@ https://x.com/gizakdag/status/1811424873119699375/photo/3
 
 （[原链](https://x.com/gizakdag/status/1810062330706739517)）
 
-#  《MV》
+## 《MV》
 
 > 融合当下 AI 生图、AI 视频、AI 音乐等主流能力加创意产生的一个视频。
 
@@ -84,7 +83,7 @@ https://x.com/gizakdag/status/1811424873119699375/photo/3
 
 （[原链](https://x.com/Arata_Fukoe/status/1809840865063629292)）
 
-#  《武功-柔》
+## 《武功-柔》
 
 ![](img/4e5377f90d7c55d00ea3c86b3cea3d0a.png)
 

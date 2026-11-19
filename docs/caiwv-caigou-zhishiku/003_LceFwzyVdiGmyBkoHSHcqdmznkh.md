@@ -1,10 +1,11 @@
+
 # Deepseek+kimi 快速生成PPT 教程
 
 > 来源：[https://rxq0zfnkm77.feishu.cn/docx/AbMGdsVhlorgNPxQgIKcOzBqnqe](https://rxq0zfnkm77.feishu.cn/docx/AbMGdsVhlorgNPxQgIKcOzBqnqe)
 
 今天就带大家，用当下最火也是最优秀的AI大模型Deepseek-R1+ kimi来做一份PPT，看看效果如何。
 
-### Step 1：用DeepSeek满血版生成PPT大纲和内容框架
+## Step 1：用DeepSeek满血版生成PPT大纲和内容框架
 
 直接提问：
 
@@ -24,7 +25,7 @@
 
 到这里，第一步就好了。
 
-### Step 2：Kimi+ 一键生成PPT初稿
+## Step 2：Kimi+ 一键生成PPT初稿
 
 到kimi官网，找到 PPT助手：打开Kimi → 点击左侧“Kimi+” → 选择“PPT助手”
 
@@ -38,7 +39,7 @@
 
 ![](img/adb902b38264395dd7737362d6dfaa61.png)
 
-**非常详细，每一个模**块，每一页的内容基本都输出来了。 然后点击最下面的【一键生成PPT】按钮
+**非常详细，每一个模块，每一页的内容基本都输出来了。** 然后点击最下面的【一键生成PPT】按钮
 
 选择你想要的模板，底下可以筛选你想要的风格类型等等。
 
@@ -50,7 +51,7 @@
 
 ![](img/be18a7edf74373a9378a828c92687a12.png)
 
-### Step 3：数据与细节调整优化
+## Step 3：数据与细节调整优化
 
 初版的PPT生成之后，底下有下载和编辑的按钮，我们可以先点编辑进去，做一些修改，比如Logo，一些其他信息等
 
@@ -74,4 +75,4 @@
 
 ![](img/87a2b140fc9b432b5b7a449a785657d2.png)
 
-**总体来讲，在我没有做任何微调的情况下，这个PPT的质量我**觉得还是很OK的。全程只花了不到5分钟！
+**总体来讲，在我没有做任何微调的情况下，这个PPT的质量我觉得还是很OK的。** 全程只花了不到5分钟！

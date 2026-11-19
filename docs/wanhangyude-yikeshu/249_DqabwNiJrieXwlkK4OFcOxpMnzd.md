@@ -1,14 +1,15 @@
+
 # 做TikTok相关的工具有哪些？
 
 > 来源：[https://my.feishu.cn/docx/A71bdRlCGoyxhdxosHQcW74bni9](https://my.feishu.cn/docx/A71bdRlCGoyxhdxosHQcW74bni9)
 
-# 前言
+## 前言
 
-工欲善其事，必先利其器。任何足够先进的科技，都与魔法无异。在当今数字化时代，掌握高效的工具和平台可以显著提升工作效率和成果。今天主要是分享在做TikTok中，经常会遇到也会用到的工具有哪些，选择合适的最重要，主要是短视频制作、数据分析、指纹浏览器、ERP、导航、还有官方的课程资料。
+工欲善其事，必先利其器。任何足够先进的科技，都与魔法无异。在当今数字化时代，掌握高效的工具和平台可以显著提升工作效率和成果。今天主要是分享在做TikTok中，经常会遇到也会用到的工具有哪些，选择合适的最重要，主要是短视频制作、数据分析、指纹浏览器、ERP、导航，还有官方的课程资料。
 
-# 一、短视频编辑工具
+## 一、短视频编辑工具
 
-## 炫变AI [https://xuanbian.net]
+### 炫变AI [`https://xuanbian.net`]
 
 ![](img/0741f22d5dd80df11f3a41d5f0869131.png)
 
@@ -16,15 +17,15 @@
 
 其它主要是PR、剪映、CapCut这些常规的剪辑工具..
 
-## 哼哼猫 [https://www.henghengmao.com]
+### 哼哼猫 [`https://www.henghengmao.com`]
 
 视频下载工具，该工具功能强大，支持无水印下载，虽然也有很多在线在线之类的免费工具，但是从做抖音开始就在用哼哼猫，下📕也很方便，没想到做TikTok的时候，这款工具还能经常用到，值得推荐一下。
 
 ![](img/d4f592e7c1f96283d14e063fc7239dd5.png)
 
-# 二、数据平台
+## 二、数据平台
 
-## FastMoss [https://www.fastmoss.com]
+### FastMoss [`https://www.fastmoss.com`]
 
 ![](img/ed847161c4aab7a8d8d524b8a4e399d1.png)
 
@@ -36,8 +37,7 @@
 
 目前，FastData海内外客户已经超过30万，行业里各大品牌、头部的机构很多都是他们的客户。
 
-## 特看TabCut [https://www.tabcut.com]
-
+### 特看TabCut [`https://www.tabcut.com`]
 
 创始团队阿里出身，原淘宝鲁班视频团队，公司在杭州。
 
@@ -47,11 +47,11 @@
 
 特看数据的团队都很谦逊，和行业里的交流开始多起来，出席各种峰会活动。
 
-## 超店有数 [https://www.shoplus.net]
+### 超店有数 [`https://www.shoplus.net`]
 
 ![](img/e1c23cf06974bbb552d875efe1aff5b9.png)
 
-## 滴答狗 [https://didadog.com]
+### 滴答狗 [`https://didadog.com`]
 
 ![](img/795b1b9198d9b56ad883ba41b9f37ea7.png)
 
@@ -67,11 +67,11 @@
 
 所以，嘀嗒狗除了懂数据，还深度参与了MeToo的品牌运营，目前是MeToo菲律宾国家独家代理。
 
-## etsy平台数据选品 [https://www.etsyshop.ai]
+### etsy平台数据选品 [`https://www.etsyshop.ai`]
 
 ![](img/59e730926036f8605f78919174d7724f.png)
 
-## PIPIADS [https://www.pipiads.com]
+### PIPIADS [`https://www.pipiads.com`]
 
 ![](img/b7a150c3cf84f738ea005fc47f5ca0f5.png)
 
@@ -87,7 +87,7 @@ pipiads虽然只做广告数据，但是各项数据指标都是行业最高的�
 
 目前每个月利润过百万，是数据平台中营收最好的。
 
-## EchoTik [https://echotik.live]
+### EchoTik [`https://echotik.live`]
 
 ![](img/ae2699beb86937bbaf255eda2d05dc1f.png)
 
@@ -101,11 +101,11 @@ echotik主要针对TikTok电商选品数据，紫鸟浏览器的创始人King投
 
 echotik近期和亿邦动力联合做市场宣传，以提升影响力和知名度。
 
-## Kalodata [https://kalodata.com]
+### Kalodata [`https://kalodata.com`]
 
 ![](img/23990ab1cb6ae317ce8f86f822f1a1a2.png)
 
-## Tikbuddy [http://tikbuddy.com]
+### Tikbuddy [`http://tikbuddy.com`]
 
 ![](img/1e65a3d976891a158478c12005b43df8.png)
 
@@ -119,59 +119,59 @@ echotik近期和亿邦动力联合做市场宣传，以提升影响力和知名�
 
 tikbuddy主要提供创作者数据，国内市场营销做的很少，经常是老马人肉做宣传。
 
-# 三、指纹浏览器
+## 三、指纹浏览器
 
 目前还是用紫鸟的比较多，建议选择大牌的，之前听说因为指纹浏览器被盗店的..
 
-# 四、ERP
+## 四、ERP
 
 妙手、领星ERP、店小秘、客优云、马帮ERP、芒果店长、甩手店长....还有很多ERP，不过常用的常见的就是这几个，选择自己喜欢和适合的就好。也可以对比一下能够满足需求且合适的价格..
 
-# 五、导航页
+## 五、导航页
 
 **授人以鱼，不如授人以渔。**
 
 收款、网络、达人等等工具都有一些优秀的导航页汇总起来了，可以多去挖掘挖掘好用的工具。
 
-## TT123 [https://www.tt123.com]
+### TT123 [`https://www.tt123.com`]
 
 ![](img/a920ef6ad94d03764a69b89a7f810da0.png)
 
-## TK0123 [https://www.tk0123.com]
+### TK0123 [`https://www.tk0123.com`]
 
 ![](img/da587ebee935b6af32e2043c1b8c751d.png)
 
-## TKTOC运营导航 [https://www.tktoc.com]
+### TKTOC运营导航 [`https://www.tktoc.com`]
 
 ![](img/22e3fc7bb2c3501954285dc175868587.png)
 
-## TK后勤部 [https://nav.tik178.com]
+### TK后勤部 [`https://nav.tik178.com`]
 
 ![](img/8dbbe99a4f4ac44764775728cd665140.png)
 
-## AMC跨境导航 [https://tkstart.com]
+### AMC跨境导航 [`https://tkstart.com`]
 
 ![](img/0dd5af886ec7f6d3a979da9c3acebdcb.png)
 
-## TKMASTER [http://tkmaster.huilife168.com]
+### TKMASTER [`http://tkmaster.huilife168.com`]
 
 ![](img/ccce74925118a92ef316dd7fd098ecec.png)
 
-# 六、TikTok官方
+## 六、TikTok官方
 
-## TikTokshop学习中心 [https://seller.tiktokglobalshop.com]
+### TikTokshop学习中心 [`https://seller.tiktokglobalshop.com`]
 
 ![](img/8532e119aeaf396ea5c073cf8d3ed53a.png)
 
 官方的很多政策、基础尝试都在学习中心可以找到，新人卖家必看的一个平台，不要被外面搞知识付费的割韭菜了，官方团队的资料和课程真的很干货！
 
-## 出海学堂 [https://academy-outbound-ads.tiktok.com/]
+### 出海学堂 [`https://academy-outbound-ads.tiktok.com/`]
 
 ![](img/3bb9ae5429711df0c97b1a2cdfe62dac.png)
 
 关于投流的基本操作、实操、大卖分享，很多干货，不过主要是投流为主的。还可以考跨境营销认证，很有意思，上网课一样的感觉，感兴趣的也可以看一看。
 
-# 碎碎念
+## 碎碎念
 
 道法术器，工具虽然重要，但与我们真正想要达成的目标相比，它们并没有那么重要。比如，数据网站有很多，我们其实只需要用一个就好。关键在于如何从有效的数据中分析出更深层次的信息，提高我们的成功率。所以，不要陷入寻找工具的陷阱之中。
 

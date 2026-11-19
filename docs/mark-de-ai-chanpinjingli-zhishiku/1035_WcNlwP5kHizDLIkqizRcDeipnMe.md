@@ -1,3 +1,4 @@
+
 # Dify自动生成播客
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Rj8qd2uJVoJgjLxXT6gcmmZanH2](https://qqs7y1hozd1.feishu.cn/docx/Rj8qd2uJVoJgjLxXT6gcmmZanH2)
@@ -8,7 +9,7 @@
 
 ## 效果展示
 
-点击[audio.wav](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/dify/audio.wav)下载，播放。
+点击[`audio.wav`](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/dify/audio.wav)下载，播放。
 
 ## Dify工作流编排
 
@@ -18,13 +19,13 @@
 
 演示用PDF文件下载：[青少年信奥赛大纲](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/dify/%E9%9D%92%E5%B0%91%E5%B9%B4%E4%BF%A1%E5%A5%A5%E8%B5%9B%E5%A4%A7%E7%BA%B2.pdf)
 
-![](img/492c258e397984b242f1fdbfc9f3ac6a.png)
+![](`img/492c258e397984b242f1fdbfc9f3ac6a.png`)
 
 ### 文档提取器节点
 
 将PDF文件中的纯文本提取出来。
 
-![](img/8833294206d78144b51eb9361f40a87e.png)
+![](`img/8833294206d78144b51eb9361f40a87e.png`)
 
 ### PDF文本处理节点
 
@@ -32,19 +33,19 @@
 
 对PDF文本进行处理，删除原始数据中包含换行符、Latex 数学公式以及一些可以完全删除的冗余内容。请去掉对播客作者记录无用的信息。
 
-使用gpt-4o-mini模型对文本进行处理。
+使用`gpt-4o-mini`模型对文本进行处理。
 
-![](img/3e3dd5b5b69b10efa1396fcd3d494591.png)
+![](`img/3e3dd5b5b69b10efa1396fcd3d494591.png`)
 
 ### 播客讲稿撰写节点
 
-使用gpt-4o-mini模型撰写播客讲稿。
+使用`gpt-4o-mini`模型撰写播客讲稿。
 
-![](img/c13fe5603c0d56c9c068b94db7ca340a.png)
+![](`img/c13fe5603c0d56c9c068b94db7ca340a.png`)
 
 ### 播客讲稿润色节点
 
-使用gpt-4o-mini模型润色播客讲稿。
+使用`gpt-4o-mini`模型润色播客讲稿。
 
 生成播客讲稿结果：
 
@@ -70,37 +71,37 @@
 ]
 ```
 
-哇，完美的生成一个双人播客讲稿结构化数据，它是一个数组结构的数据，里面包含多个元祖数据，Speaker 1和Speaker 2就是播客的两位播者。完美的结构化数据，为了接下来生成播客音频做准备。
+哇，完美的生成一个双人播客讲稿结构化数据，它是一个数组结构的数据，里面包含多个元组数据，`Speaker 1` 和 `Speaker 2` 就是播客的两位播者。完美的结构化数据，为了接下来生成播客音频做准备。
 
-### HTTP请求节点
+### `HTTP请求节点`
 
-请求部署在本地或者服务端的Python WEB API接口， 生成音频。至于如何生成音频？先别急。
+请求部署在本地或者服务端的`Python WEB API`接口，生成音频。至于如何生成音频？先别急。
 
-![](img/625ac912ff5dbe564ae87fdf1ee3b3df.png)
+![](`img/625ac912ff5dbe564ae87fdf1ee3b3df.png`)
 
 ### 结束节点
 
 输出音频url和生成的播客文本。
 
-![](img/83a6345d0c332b7d146d6af81649ac31.png)
+![](`img/83a6345d0c332b7d146d6af81649ac31.png`)
 
 ## 音频生成
 
-### 安装F5-TTS
+### 安装`F5-TTS`
 
-我们使用最近大火的F5-TTS： F5-TTS是由上海交通大学开源的一款高性能文本到语音（TTS）系统，基于流匹配的非自回归生成方法，结合扩散变换器（DiT）技术。 系统在没有额外监督的情况下，基于零样本学习快速生成自然、流畅且忠实于原文的语音。 F5-TTS支持多语言合成，包括中文和英文，能在长文本上进行有效的语音合成。
+我们使用最近大火的`F5-TTS`：`F5-TTS`是由上海交通大学开源的一款高性能文本到语音（TTS）系统，基于流匹配的非自回归生成方法，结合扩散变换器（DiT）技术。系统在没有额外监督的情况下，基于零样本学习快速生成自然、流畅且忠实于原文的语音。`F5-TTS`支持多语言合成，包括中文和英文，能在长文本上进行有效的语音合成。
 
-Github地址：https://github.com/SWivid/F5-TTS
+Github地址：`https://github.com/SWivid/F5-TTS`
 
 注意：
 
-F5-TTS不支持Mac架构，如果需要在Macbook上安装，可以安装F5-TTS的移植版本F5-TTS-MLX。Github地址：[https://github.com/lu](https://github.com/lucasnewman/f5-tts-mlx)casnewman/f5-tts-mlx
+`F5-TTS`不支持Mac架构，如果需要在Macbook上安装，可以安装`F5-TTS`的移植版本`F5-TTS-MLX`。Github地址：[`https://github.com/lucasnewman/f5-tts-mlx`](https://github.com/lucasnewman/f5-tts-mlx)
 
-根据Github说明，在本机Python虚拟环境中安装F5-TTS依赖库。我使用的是Python版本是3.11。
+根据Github说明，在本机`Python`虚拟环境中安装`F5-TTS`依赖库。我使用的是`Python`版本是3.11。
 
-### 编写Python API
+### 编写`Python API`
 
-使用PyCharm IDE创建一个依赖Fast API的Pytyhon项目。Fast API就是给Pytyhon项目提供对外API访问的能力。用于我们在Dify中的HTTP请求节点调用。
+使用`PyCharm IDE`创建一个依赖`Fast API`的`Pytyhon`项目。`Fast API`就是给`Pytyhon`项目提供对外API访问的能力。用于我们在Dify中`HTTP请求节点`调用。
 
 代码流程：
 
@@ -108,13 +109,13 @@ F5-TTS不支持Mac架构，如果需要在Macbook上安装，可以安装F5-TTS�
 
 +   解析播客结构化数据，生成分段数据，每一个分段就是一句话。
 
-+   判断每一个分段的播者是谁。使用每一个分段中的Speaker 1和Speaker 2标识去区分。Speaker 1 播者1 就使用女声参考音频生成音频结果；Speaker 2 播者2 就使用男声参考音频生成音频结果。
++   判断每一个分段的播者是谁。使用每一个分段中`Speaker 1`和`Speaker 2`标识去区分。`Speaker 1` 播者1 就使用女声参考音频生成音频结果；`Speaker 2` 播者2 就使用男声参考音频生成音频结果。
 
 +   拼接每一个分段生成的音频文件，生成最终的完整音频文件。
 
 核心代码：
 
-接收Dify``HTTP请求节点的播客结构化数据：
+接收Dify `HTTP请求节点`的播客结构化数据：
 
 ```
 @app.post(&quot;/generate_podcast&quot;, response_model=PodcastResponse)
@@ -182,10 +183,10 @@ def merge_audio_files(audio_files: List[str], output_path: str) -&gt; float:
     return duration
 ```
 
-注意： 直接调用Pycharm中的接口，F5-TTS下载所需模型很慢。即便Pycharm已经设置了代理。可以现在终端命令行中执行F5-TTS相关命令，会去下载所需模型。
+注意：直接调用`PyCharm`中的接口，`F5-TTS`下载所需模型很慢。即便`PyCharm`已经设置了代理。可以现在终端命令行中执行`F5-TTS`相关命令，会去下载所需模型。
 
-### 始智AI平台部署F5-TTS
+### 始智AI平台部署`F5-TTS`
 
-个人电脑配置有限，生成音频较慢。我们可以使用始智AI平台部署F5-TTS。
+个人电脑配置有限，生成音频较慢。我们可以使用始智AI平台部署`F5-TTS`。
 
-![](img/6b2bfd380fad4808cdf5bb7def2c5233.png)
+![](`img/6b2bfd380fad4808cdf5bb7def2c5233.png`)

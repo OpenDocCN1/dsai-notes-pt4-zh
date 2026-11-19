@@ -1,3 +1,4 @@
+
 # 检测基于 RAG 的系统幻觉
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/CYbXd6ssjoN1ACxbbmccDGuVnvf](https://v11enp9ok1h.feishu.cn/docx/CYbXd6ssjoN1ACxbbmccDGuVnvf)
@@ -12,23 +13,28 @@
 
 ## 先决条件
 
-要[使用本文中介绍的方法，您需要](https://aws.amazon.com/bedrock/)一个能够访问 Amazon SageMaker、Amazon Bedrock 和 Amazon Simple Storage Service （Amazon S3） 的 AWS 账户。
+要使用本文中介绍的方法，您需要一个能够访问 Amazon SageMaker、Amazon Bedrock 和 Amazon Simple Storage Service（Amazon S3）的 AWS 账户。
 
 在您的 RAG 系统中，您需要存储三样东西：
 
-+   Context （上下文） – 与用户查询相关的文本区域
++ `Context`（上下文）– 与用户查询相关的文本区域
 
-+   Question （问题） – 用户的查询
++ `Question`（问题）– 用户的查询
 
-+   答案 – LLM 提供的答案
++ 答案 – LLM 提供的答案
 
 **生成的表应类似于以下示例**
 
-| ###### **问题** | ###### **上下文** | ###### **答** |
+| 问题 | 上下文 | 答 |
+
 | --- | --- | --- |
+
 | 什么是鸡尾酒？ | 鸡尾酒是酒精混合的...... | 鸡尾酒是酒精混合的...... |
+
 | 什么是鸡尾酒？ | 鸡尾酒是酒精混合的...... | 他们有着截然不同的历史...... |
+
 | 什么是 Fortnite？ | Fortnite 是一个受欢迎的视频...... | Fortnite 是一个在线多... |
+
 | 什么是 Fortnite？ | Fortnite 是一个受欢迎的视频...... | Fortnite 玩家的平均花费...... |
 
 ## 方法 1：基于 LLM 的幻觉检测
@@ -37,23 +43,23 @@
 
 **此方法包括以下步骤：**
 
-1.  创建一个包含问题、上下文和要分类的响应的数据集。
+1. 创建一个包含问题、上下文和要分类的响应的数据集。
 
-1.  向 LLM 发送包含以下信息的调用：
+2. 向 LLM 发送包含以下信息的调用：
 
-1.  提供语句（我们要分类的 LLM 中的答案）。
+3. 提供语句（我们要分类的 LLM 中的答案）。
 
-1.  提供 LLM 创建答案所依据的上下文。
+4. 提供 LLM 创建答案所依据的上下文。
 
-1.  指示 LLM 在语句中标记直接基于上下文的句子。
+5. 指示 LLM 在语句中标记直接基于上下文的句子。
 
-1.  解析输出并获得 0-1 之间的句子级数字分数。
+6. 解析输出并获得 0-1 之间的句子级数字分数。
 
-1.  确保 LLM、内存和参数独立于用于 Q&A 的参数。（这样 LLM 就无法访问之前的聊天记录来得出结论。
+7. 确保 LLM、内存和参数独立于用于 Q&A 的参数。（这样 LLM 就无法访问之前的聊天记录来得出结论。）
 
-1.  例如，根据域调整特定数据集的幻觉分数的决策阈值。
+8. 例如，根据域调整特定数据集的幻觉分数的决策阈值。
 
-1.  使用阈值将陈述分类为幻觉或事实。
+9. 使用阈值将陈述分类为幻觉或事实。
 
 ### 创建提示模板
 
@@ -62,7 +68,7 @@
 下面是一个包含少量示例的提示，以便 LLM 知道答案的预期格式和内容应该是什么：
 
 ```
-prompt = &quot;&quot;&quot;\n\nHuman: You are an expert assistant helping human to check if statements are based on the context.
+prompt = """\n\nHuman: You are an expert assistant helping human to check if statements are based on the context.
  Your task is to read context and statement and indicate which sentences in the statement are based directly on the context.
 
 Provide response as a number, where the number represents a hallucination score, which is a float between 0 and 1.
@@ -70,83 +76,13 @@ Set the float to 0 if you are confident that the sentence is directly based on t
 Set the float to 1 if you are confident that the sentence is not based on the context.
 If you are not confident, set the score to a float number between 0 and 1. Higher numbers represent higher confidence that the sentence is not based on the context.
 
-Do not include any other information except for the the score in the response. There is no need to explain your thinking.
-
-&lt;example&gt;
-Context: Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms. This frees clients from managing, scaling, and patching hardware and operating systems. One of the foundational services is Amazon Elastic Compute Cloud (EC2), which allows users to have at their disposal a virtual cluster of computers, with extremely high availability, which can be interacted with over the internet via REST APIs, a CLI or the AWS console. AWS&#x27;s virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; hard-disk/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).
-Statement: &#x27;AWS is Amazon subsidiary that provides cloud computing services.&#x27;
-Assistant: 0.05
-&lt;/example&gt;
-
-&lt;example&gt;
-Context: Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms. This frees clients from managing, scaling, and patching hardware and operating systems. One of the foundational services is Amazon Elastic Compute Cloud (EC2), which allows users to have at their disposal a virtual cluster of computers, with extremely high availability, which can be interacted with over the internet via REST APIs, a CLI or the AWS console. AWS&#x27;s virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; hard-disk/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).
-Statement: &#x27;AWS revenue in 2022 was $80 billion.&#x27;
-Assistant: 1
-&lt;/example&gt;
-
-&lt;example&gt;
-Context: Monkey is a common name that may refer to most mammals of the infraorder Simiiformes, also known as the simians. Traditionally, all animals in the group now known as simians are counted as monkeys except the apes, which constitutes an incomplete paraphyletic grouping; however, in the broader sense based on cladistics, apes (Hominoidea) are also included, making the terms monkeys and simians synonyms in regard to their scope. On average, monkeys are 150 cm tall.
-Statement:&#x27;Average monkey is 2 meters high and weights 100 kilograms.&#x27;
-Assistant: 0.9
-&lt;/example&gt;
-
-Context: {context}
-Statement: {statement}
-
-\n\nAssistant: [
-    &quot;&quot;&quot;
-    ### LANGCHAIN CONSTRUCTS
-    # prompt template
-    prompt_template = PromptTemplate(
-        template=prompt,
-        input_variables=[&quot;context&quot;, &quot;statement&quot;],
-    )
-```
-
-### 配置 LLM
-
-要从 LLM 检索响应，您需要使用 Amazon Bedrock 配置 LLM，类似于以下代码：
-
-```
-def configure_llm() -&gt; Bedrock:
-
-    model_params= { &quot;answer_length&quot;: 100, # max number of tokens in the answer
-        &quot;temperature&quot;: 0.0, # temperature during inference
-        &quot;top_p&quot;: 1, # cumulative probability of sampled tokens
-        &quot;stop_words&quot;: [ &quot;\n\nHuman:&quot;, &quot;]&quot;, ], # words after which the generation is stopped 
-                    } 
-    bedrock_client = boto3.client( 
-            service_name=&quot;bedrock-runtime&quot;,
-            region_name=&quot;us-east-1&quot;, 
-            )
-            
-    MODEL_ID = &quot;anthropic.claude-3-5-sonnet-20240620-v1:0&quot;
-    
-    llm = Bedrock( 
-        client=bedrock_client, 
-        model_id=MODEL_ID, 
-        model_kwargs=model_params, 
-        )
-                        
-    return llm 
-```
-
-### 从 LLM 获取幻觉分类
-
-下一步是使用提示、数据集和 LLM 从 RAG 系统获取每个响应的幻觉分数。更进一步，您可以使用阈值来确定响应是否为幻觉。请参阅以下代码：
-
-```
-def get_response_from_claude(context: str, answer: str, prompt_template: PromptTemplate, llm: Bedrock) -&gt; float:
-    
-    llm_chain = LLMChain(llm=llm, prompt=prompt_template, verbose=False)
-    # compute scores
-    response = llm_chain(
-        {&quot;context&quot;: context, &quot;statement&quot;: str(answer)}
+Do not include any other information except for the the score in the response. There is no need to explain your = llm_chain(
+        {"context": context, "statement": str(answer)}
     )
     try:
         scores = float(scores)
     except Exception:
-        print(f&quot;Could not parse LLM response: {scores}&quot;)
+        print(f"Could not parse LLM response: {scores}")
         scores = 0
     return scores
 ```
@@ -157,13 +93,17 @@ def get_response_from_claude(context: str, answer: str, prompt_template: PromptT
 
 此方法包括以下步骤：
 
-1.  使用 LLM 为答案和上下文创建嵌入。（在此示例中，我们使用 Amazon Titan Embeddings 模型。
+1. 使用 LLM 为答案和上下文创建嵌入。（在此示例中，我们使用 Amazon Titan Embeddings 模型。）
 
-1.  使用嵌入计算答案中每个句子与 （在本例中，我们使用余弦相似度作为距离度量。断章取义（幻觉句子）与上下文的相似度应该较低。
+2. 使用嵌入计算答案中每个句子与（在本例中，我们使用余弦相似度作为距离度量。断章取义（幻觉句子）与上下文的相似度应该较低。
 
-1.  调整特定数据集（例如域相关）的决策阈值，以对幻觉陈述进行分类。
+3. 调整特定数据集（例如域相关）的决策阈值，以对幻觉陈述进行分类。
 
 ### 使用 LLM 创建嵌入并计算相似度
+
+
+
+## 语义相似度检测
 
 您可以使用 LLM 为上下文和问题的初始响应创建嵌入。有了嵌入后，您可以计算两者的余弦相似度。余弦相似度分数将返回一个介于 0 和 1 之间的数字，其中 1 表示完全相似，0 表示无相似性。要将其转换为幻觉分数，我们需要取 1 — 余弦相似度。请参阅以下代码：
 
@@ -172,9 +112,9 @@ def similarity_detector(
     context: str,
     answer: str,
     llm: BedrockEmbeddings,
-) -&gt; float:
-    &quot;&quot;&quot;
-    Check hallucinations using semantic similarity methods based on embeddings&lt;br /&gt;&lt;br /&gt;
+) -> float:
+    """
+    Check hallucinations using semantic similarity methods based on embeddings
 
     Parameters
     ----------
@@ -189,7 +129,7 @@ def similarity_detector(
     -------
     float
         Semantic similarity score
-    &quot;&quot;&quot;
+    """
 
     if len(context) == 0 or len(answer) == 0:
         return 0.0
@@ -217,8 +157,8 @@ def intersection_detector(
     context: str,
     answer: str,
     length_cutoff: int = 3,
-) -&gt; dict[str, float]:
-    &quot;&quot;&quot;
+) -> dict[str, float]:
+    """
     Check hallucinations using token intersection metrics
 
     Parameters
@@ -234,34 +174,34 @@ def intersection_detector(
     -------
     dict[str, float]
         Token intersection and BLEU scores
-    &quot;&quot;&quot;
+    """
 
     # populate with relevant stopwords such as articles
     stopword_set = {}
 
     # remove punctuation and lowercase
-    context = re.sub(r&quot;[^\w\s]&quot;, &quot;&quot;, context).lower()
-    answer = re.sub(r&quot;[^\w\s]&quot;, &quot;&quot;, answer).lower()
+    context = re.sub(r"[^\w\s]", "", context).lower()
+    answer = re.sub(r"[^\w\s]", "", answer).lower()
 
     # calculate  metrics
-    if len(answer) &gt;= length_cutoff:
+    if len(answer) >= length_cutoff:
         # calculate token intersection
         context_split = {term for term in context if term not in stopword_set}
-        answer_split = re.compile(r&quot;\w+&quot;).findall(answer)
+        answer_split = re.compile(r"\w+").findall(answer)
         answer_split = {term for term in answer_split if term not in stopword_set}
         intersection = sum([term in context_split for term in answer_split]) / len(answer_split)
 
         # calculate BLEU score
-        bleu = evaluate.load(&quot;bleu&quot;)
-        bleu_score = bleu.compute(predictions=[answer], references=[context])[&quot;precisions&quot;]
+        bleu = evaluate.load("bleu")
+        bleu_score = bleu.compute(predictions=[answer], references=[context])["precisions"]
         bleu_score = sum(bleu_score) / len(bleu_score)
 
         return {
-            &quot;intersection&quot;: 1 - intersection,
-            &quot;bleu&quot;: 1 - bleu_score,
+            "intersection": 1 - intersection,
+            "bleu": 1 - bleu_score,
         }
 
-    return {&quot;intersection&quot;: 0, &quot;bleu&quot;: 0}
+    return {"intersection": 0, "bleu": 0}
 ```
 
 ## 比较方法：评估结果
@@ -276,11 +216,9 @@ def intersection_detector(
 
 下表总结了每种方法之间比较的指标。
 
-根据维基百科数据集和生成式 AI 合成数据集
-
-的平均值 **N = 随机样本
-
-数 ***K = 句子数
+根据维基百科数据集和生成式 AI 合成数据集的平均值：
+`N` = 随机样本数
+`K` = 句子数
 
 这些结果表明，基于 LLM 的检测器在准确性和成本（额外的答案延迟）之间显示出良好的权衡。我们建议结合使用标记相似性检测器来过滤掉最明显的幻觉，并使用基于 LLM 的检测器来识别更难的幻觉。
 

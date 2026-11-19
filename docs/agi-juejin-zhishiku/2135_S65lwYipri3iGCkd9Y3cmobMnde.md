@@ -1,3 +1,4 @@
+
 # 9.5 千亿AI妖股连年亏损近55亿，AI的赚钱能力为何还不及“黑神话: 悟空”游戏？
 
 > 来源：[https://agijuejin.feishu.cn/docx/ZDLtdhJVAonPx1xt9Qac52OCngb](https://agijuejin.feishu.cn/docx/ZDLtdhJVAonPx1xt9Qac52OCngb)
@@ -44,7 +45,7 @@ OpenAI的首款自研芯片采用台积电1.6纳米先进工艺，专为AI视频
 
 新智元 丨 [阅读原文](https://sourl.co/Ju2LzK)
 
-清华大学电子系城市科学与计算研究中心的研究论文《EconAgent: Large Language Model-Empowered Agents for Simulating Macroeconomic Activities》荣获ACL 2024杰出论文奖。该研究利用大语言模型（LLM）构建EconAgent，模拟宏观经济系统中个体的工作与消费行为，与传统基于代理的建模（ABM）相比，展现出更稳定、真实的宏观经济现象。研究通过模拟验证了EconAgent在宏观经济指标和规律上的合理性和稳定性，为计算经济学研究提供了新的范式。
+清华大学电子系城市科学与计算研究中心的研究论文《EconAgent: Large Language Model-Empowered Agents for Simulating Macroeconomic Activities》荣获ACL 2024杰出论文奖。该研究利用大语言模型（LLM）构建`EconAgent`，模拟宏观经济系统中个体的工作与消费行为，与传统基于代理的建模（ABM）相比，展现出更稳定、真实的宏观经济现象。研究通过模拟验证了`EconAgent`在宏观经济指标和规律上的合理性和稳定性，为计算经济学研究提供了新的范式。
 
 ## 💫 企业动态
 
@@ -96,7 +97,7 @@ OpenAI Japan 首席执行官长崎忠雄（Tadao Nagasaki）表示，虽然 GPT-
 
 ybq 丨 [阅读原文](https://sourl.co/W8BLc8)
 
-同源小模型的研究价值：在相同的tokenizer和训练数据下，小模型可以通过实验快速验证大模型的性能，尤其是在预训练和后续训练阶段。小模型的快速迭代能力使其成为大模型实验的理想场所
+同源小模型的研究价值：在相同的`tokenizer`和训练数据下，小模型可以通过实验快速验证大模型的性能，尤其是在预训练和后续训练阶段。小模型的快速迭代能力使其成为大模型实验的理想场所
 
 ### 💡 千亿AI妖股连年亏损近55亿，AI的赚钱能力为何还不及“黑神话: 悟空”游戏？
 
@@ -113,7 +114,3 @@ ybq 丨 [阅读原文](https://sourl.co/W8BLc8)
 AIGC开放社区 丨 [阅读原文](https://sourl.co/Xt5wiH)
 
 美国加州法案AB-3211针对文生图模型提出新规定，要求模型必须嵌入难以移除的元数据和水印，否则违法。该法案若通过，将对开源模型如SD3、FLUX.1造成重大影响，增加技术难度和成本，可能抑制创新。法案得到科技巨头支持，但对小型开发者和学术机构不利。
-
-###
-
-###

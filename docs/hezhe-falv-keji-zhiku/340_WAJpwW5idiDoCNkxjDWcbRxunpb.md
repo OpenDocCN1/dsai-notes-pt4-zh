@@ -1,12 +1,13 @@
+
 # 知名咨询公司 Gartner：改变企业法务部门的 5 个法律科技趋势
 
-> 来源：[https://docs.feishu.cn/docx/GuKFdsiDcoV2MxxRxtwcgJBpnPb](https://docs.feishu.cn/docx/GuKFdsiDcoV2MxxRxtwcgJBpnPb)
+> 来源：`https://docs.feishu.cn/docx/GuKFdsiDcoV2MxxRxtwcgJBpnPb`
 
 目前，法律科技可以为法律从业者提供在生产力和盈利能力方面获得显著提高的潜力，已经成为行业共识，而且这个趋势一直在持续发展。
 
 在这个趋势下，如何更好把握科技的发展方向，不论是对法律从业者还是对法律科技公司来说都至关重要。近几年来，国内外多家法律科技公司和先锋法律人们做出了自己的预测，法律修音机翻译了这些文章，并进行持续放送。
 
-[2](https://www.gartner.com/smarterwithgartner/5-legal-technology-trends-changing-in-house-legal-departments)022 年 2 月 24 日，Gartner 发布了《5 Legal Technology Trends Changing In-House Legal Departments》—— 改变企业法务部门的 5 个法律科技趋势。这篇文章首发于 2021 年 2 月，Gartner 团队对其进行了更新。
+[2](`https://www.gartner.com/smarterwithgartner/5-legal-technology-trends-changing-in-house-legal-departments`) 2022 年 2 月 24 日，Gartner 发布了《5 Legal Technology Trends Changing In-House Legal Departments》—— 改变企业法务部门的 5 个法律科技趋势。这篇文章首发于 2021 年 2 月，Gartner 团队对其进行了更新。
 
 众所周知，极少人有能力对未来作出精准预测 —— 预测的未来离当下越近，作出精准预测就越难。这篇文章发表于 3 年前，目前距离 2025 还有 2 年，Gartner 作为海外知名的咨询公司，其预测是否会出现？让我们拭目以待。
 
@@ -18,25 +19,25 @@
 
 **简而言之：**
 
-+   新冠疫情带来了新的压力，这迫使更多的企业法务部门追求或考虑自动化，尽管长期以来他们一直抵制该领域的变革。
++ 新冠疫情带来了新的压力，这迫使更多的企业法务部门追求或考虑自动化，尽管长期以来他们一直抵制该领域的变革。
 
-+   Gartner 专家预计，到 2025 年，法务部门在法律科技上的支出将增加三倍。
++ Gartner 专家预计，到 2025 年，法务部门在法律科技上的支出将增加三倍。
 
-+   以下五个预测，可以帮助企业法务领导者规划法律科技投资和更广泛的转型工作。
++ 以下五个预测，可以帮助企业法务领导者规划法律科技投资和更广泛的转型工作。
 
 长期以来，企业法务部门一直抵制自动化，不愿承担风险，但疫情的影响迫使很多人从 2020 年开始改变方向，去追求 —— 或者至少积极考虑 —— 某些法律工作更广泛的自动化，尤其是那些围绕重大公司交易的工作。现在的挑战是：采用哪些技术来推动真正的业务增长。
 
-Gartner 咨询总监[ Zack Hutt](https://www.gartner.com/en/experts/zack-hutto)o 表示：“新冠疫情带来的压力是这一转变的催化剂。（与企业其他职能部门相比）企业法律和合规团队很少是现代化、数字化和自动化的领跑者。疫情降低了法务部门的人力预算，同时增加了工作量，对于很多法务部门来说，技术是最明显的解决方案。”
+Gartner 咨询总监 [Zack Hutto](`https://www.gartner.com/en/experts/zack-hutto`) 表示：“新冠疫情带来的压力是这一转变的催化剂。（与企业其他职能部门相比）企业法律和合规团队很少是现代化、数字化和自动化的领跑者。疫情降低了法务部门的人力预算，同时增加了工作量，对于很多法务部门来说，技术是最明显的解决方案。”
 
-**立即下载：**[高效法律部门做对的 5 件事](https://www.gartner.com/en/legal-compliance/trends/cost-effective-legal-departments)
+**立即下载：**[高效法律部门做对的 5 件事](`https://www.gartner.com/en/legal-compliance/trends/cost-effective-legal-departments`)
 
 Gartner 的研究强调技术创新对企业法务和合规目标的影响。特别是，它着眼于法律科技对企业法务生产力和效率的积极和直接的影响、其降低不断提高的合规风险和复杂性的潜力，以及它在法律价值链上的转型作用。
 
 以下五项预测，可以帮助您规划 2021 年及以后的法律科技投资和更广泛的转型工作。
 
-### 到 2025 年，法务部门在法律科技上的支出将增加三倍。
+## 到 2025 年，法务部门在法律科技上的支出将增加三倍。
 
-根据 [2020 年 Gartner](https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018) 对[法律领导](https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018)[者](https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018)[的](https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018)[调研](https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018)[，](https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018)到 2025 年，用于技术的法律预算将大幅增加。
+根据 [2020 年 Gartner 对法律领导者的调研](`https://www.gartner.com/en/newsroom/press-releases/2020-12-17-gartner-survey-shows-outside-counsels-share-of-legal-spending-down-6-percentage-points-since-2018`)，到 2025 年，用于技术的法律预算将大幅增加。
 
 2020 年，87% 的法务部门预计其全职员工总数将保持不变或减少。
 
@@ -44,9 +45,9 @@ Hutto 表示：“新冠疫情给工作量本已非常饱和的企业法务团�
 
 制定一项能长期随着企业环境的变化和科技市场的进步而发展的法律科技战略，对于法务部门的成功至关重要。法务部门应该避免临时购买技术服务，这些技术往往与支持实现短期和长期业务目标的职能不一致。
 
-![](img/e74144a7659f6852d23ad9a7a38ee40b.png)
+![](`img/e74144a7659f6852d23ad9a7a38ee40b.png`)
 
-### 到 2024 年，法务部门将用“非律师”工作人员取代 20% 的律师工作。
+## 到 2024 年，法务部门将用“非律师”工作人员取代 20% 的律师工作。
 
 工作量增加和预算持平的趋势，让企业更加重视效率。这意味着法务部门必须改进其工作流程，部署法律科技、分析工具和其他数字化战略，以支持这种增加的工作量。
 
@@ -60,9 +61,9 @@ Hutto 表示：“新冠疫情给工作量本已非常饱和的企业法务团�
 
 未来几年，领先的企业法务部门将更多地专注于不断权衡特定工作领域的资源分配，无论是依赖内部律师、内部非律师、律师事务所，还是“非律所”法律服务提供商。此外，他们还将通过在现有员工中培养技能，从其他内部职能部门（如通过轮换计划）或外部各方（如通过借调）借用专业知识，或者从新人才库中招聘，来提高团队内部的法律科技和创新能力。
 
-**阅读更多：**[如何成为一名更高效的总法律顾问](https://www.gartner.com/smarterwithgartner/how-to-be-a-more-effective-general-counsel/)
+**阅读更多：**[如何成为一名更高效的总法律顾问](`https://www.gartner.com/smarterwithgartner/how-to-be-a-more-effective-general-counsel/`)
 
-### **到 2024 年，法务部门将实现 **50% 与重大公司交易相关工作的自动化。
+## 到 2024 年，法务部门将实现 50% 与重大公司交易相关工作的自动化。
 
 目前，公司交易的需求已经从疫情导致的低点中回升。随着企业从疫情中恢复过来，并购工作将在未来几年继续增加，特别是在疫情的影响下，企业往往会降低收购估值。
 
@@ -74,7 +75,7 @@ Hutto 说：“我们 2020 年调研的法务部门中，有 87% 的受访者预
 
 成功的关键是先确定可以通过自动化解决的具体问题，而不是先部署法律科技再寻找问题。
 
-### **到 2025 年，企业法务部门将仅获得其 CLM（合**同生命周期管理）投资潜在收益的 30%。
+## 到 2025 年，企业法务部门将仅获得其 CLM（合同生命周期管理）投资潜在收益的 30%。
 
 如前所述，自动化不是灵丹妙药，某些工作可以自动化并不意味着它很简单或者容易获得成功。最普遍、最有潜力的解决方案，如机器学习驱动的合同审查，在底层功能上有很大的复杂性。
 
@@ -90,7 +91,7 @@ Hutto 说：“我们 2020 年调研的法务部门中，有 87% 的受访者预
 
 为了获得 CLM 投资的最佳回报，法务部门必须优先考虑与其工作流程成熟度相匹配的能力，而不是直接部署可能只能达到预期价值一小部分的技术 —— 这往往会影响团队能获得的支持。
 
-### **到 2025 年，至少 25% 的**企业法律应用支出将流向非专业技术提供商。
+## 到 2025 年，至少 25% 的企业法律应用支出将流向非专业技术提供商。
 
 长期以来，专业技术供应商一直主导着法律科技市场，最大的通用企业软件供应商在企业法务部门中的发展有限。然而，随着 CEO、CFO 和 CIO 们认识到法律和合规的战略价值，其对法律和合规转型的需求将超越各部门本身。
 

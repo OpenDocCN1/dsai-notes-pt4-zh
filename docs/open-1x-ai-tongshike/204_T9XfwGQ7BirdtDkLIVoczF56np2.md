@@ -1,6 +1,7 @@
+
 # Task3：赛题进阶思路
 
-> 来源：[https://datawhaler.feishu.cn/docx/Bog3df52ko2bxzxeQwacVz8Inhc](https://datawhaler.feishu.cn/docx/Bog3df52ko2bxzxeQwacVz8Inhc)
+> 来源：`https://datawhaler.feishu.cn/docx/Bog3df52ko2bxzxeQwacVz8Inhc`
 
 ## 思路1：对比不同大模型
 
@@ -8,31 +9,31 @@
 
 ![](img/34dc629fce9575400727f79a049a28bb.png)
 
-https://huggingface.co/collections/Qwen/qwen25-66e81a666513e518adb90d9e
+`https://huggingface.co/collections/Qwen/qwen25-66e81a666513e518adb90d9e`
 
-```
+```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = &quot;Qwen/Qwen2.5-7B-Instruct&quot;
+model_name = "Qwen/Qwen2.5-7B-Instruct"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
-    torch_dtype=&quot;auto&quot;,
-    device_map=&quot;auto&quot;
+    torch_dtype="auto",
+    device_map="auto"
 )
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-prompt = &quot;Give me a short introduction to large language model.&quot;
+prompt = "Give me a short introduction to large language model."
 messages = [
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are Qwen, created by Alibaba Cloud. You are a helpful assistant.&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+    {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
+    {"role": "user", "content": prompt}
 ]
 text = tokenizer.apply_chat_template(
     messages,
     tokenize=False,
     add_generation_prompt=True
 )
-model_inputs = tokenizer([text], return_tensors=&quot;pt&quot;).to(model.device)
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
 generated_ids = model.generate(
     **model_inputs,
@@ -47,15 +48,13 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 
 ## 思路2：提示词工程
 
-在原有的代码中我们通过Qwen进行改写文本，但这种方法并不能保证改写的结果一定有效：
+在原有的代码中我们通过`Qwen`进行改写文本，但这种方法并不能保证改写的结果一定有效：
 
-+   大模型回答的结果可能是多样的，生成的文本仍然不安全。
+- 大模型回答的结果可能是多样的，生成的文本仍然不安全。
+- 大模型回答的结果可能并不能生成指定的语言，可能存在中英文混杂。
+- 大模型回答的结果可能丢失了文本的主体信息。
 
-+   大模型回答的结果可能并不能生成指定的语言，可能存在中英文混杂。
-
-+   大模型回答的结果可能丢失了文本的主体信息。
-
-```
+```python
 def qwen_chat(messages):
     with torch.no_grad():
         text = tokenizer.apply_chat_template(
@@ -63,7 +62,7 @@ def qwen_chat(messages):
             tokenize=False,
             add_generation_prompt=True
         )
-        model_inputs = tokenizer([text], return_tensors=&quot;pt&quot;).to(model.device)
+        model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
         
         generated_ids = model.generate(
             **model_inputs,
@@ -74,30 +73,30 @@ def qwen_chat(messages):
         ]
         
         return tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
-        
- def rewrite_text(text, lang=&#x27;中文&#x27;):
-    prompt = f&#x27;&#x27;&#x27;你是一个擅长编写文本提示和描述相似场景的机器人，请对用户输入的文本转换为含义相近的{lang}，需要输出为{lang}，但内容更加委婉的表达。输出的文本需要不要生成任何包含暴力、残忍、歧视、仇恨、安全、军事、毒品或违规的关键词，但含义需要相近。待转换文本为：{text}&#x27;&#x27;&#x27;
+
+def rewrite_text(text, lang='中文'):
+    prompt = f'''你是一个擅长编写文本提示和描述相似场景的机器人，请对用户输入的文本转换为含义相近的{lang}，需要输出为{lang}，但内容更加委婉的表达。输出的文本需要不要生成任何包含暴力、残忍、歧视、仇恨、安全、军事、毒品或违规的关键词，但含义需要相近。待转换文本为：{text}'''
     messages = [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+        {"role": "user", "content": prompt}
     ]
     return qwen_chat(messages)
 ```
 
 为此我们可以通过多轮对话的形式（如反思+规划），让大模型的回答更加完善：
 
-```
- def rewrite_text(text, lang=&#x27;中文&#x27;):
-    prompt = f&#x27;&#x27;&#x27;你是一个擅长编写文本提示和描述相似场景的机器人，请对用户输入的文本转换为含义相近的{lang}，需要输出为{lang}，但内容更加委婉的表达。输出的文本需要不要生成任何包含暴力、残忍、歧视、仇恨、安全、军事、毒品或违规的关键词，但含义需要相近。待转换文本为：{text}&#x27;&#x27;&#x27;
+```python
+def rewrite_text(text, lang='中文'):
+    prompt = f'''你是一个擅长编写文本提示和描述相似场景的机器人，请对用户输入的文本转换为含义相近的{lang}，需要输出为{lang}，但内容更加委婉的表达。输出的文本需要不要生成任何包含暴力、残忍、歧视、仇恨、安全、军事、毒品或违规的关键词，但含义需要相近。待转换文本为：{text}'''
     messages = [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt},
-        {&quot;role&quot;: &quot;assistant&quot;: &quot;content&quot;: prompt}
+        {"role": "user", "content": prompt},
+        {"role": "assistant": "content": prompt}
     ]
     fist_round_msg = qwen_chat(messages)
     
     messages = [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt},
-        {&quot;role&quot;: &quot;assistant&quot;: &quot;content&quot;: fist_round_msg}
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请反思上面的回答，并将回答从新改写的更加安全，并保证描述的内容与我输入的含义相近，需要输出为{lang}。&quot;},
+        {"role": "user", "content": prompt},
+        {"role": "assistant": "content": fist_round_msg}
+        {"role": "user", "content": "请反思上面的回答，并将回答从新改写的更加安全，并保证描述的内容与我输入的含义相近，需要输出为{lang}。"},
     ]
     return qwen_chat(messages)
 ```
@@ -112,4 +111,4 @@ def qwen_chat(messages):
 
 ## 致谢
 
-<https://datawhaler.feishu.cn/sync/FYi0dGxggscTqTbgf92cK8E9nkh>
+`https://datawhaler.feishu.cn/sync/FYi0dGxggscTqTbgf92cK8E9nkh`

@@ -1,3 +1,4 @@
+
 # 采购常用表格文件
 
 > 来源：[https://rxq0zfnkm77.feishu.cn/docx/XByMdQ2w1ooK3fxiDGAczqyNnff](https://rxq0zfnkm77.feishu.cn/docx/XByMdQ2w1ooK3fxiDGAczqyNnff)
@@ -8,4 +9,4 @@
 
 ![](img/604502aa9e6d8669ff9d671a7192ee6a.png)
 
-链接: https://pan.baidu.com/s/1O9BK-936xkxH0Kr5gF3CSw?pwd=afuj 提取码: afuj
+链接: `https://pan.baidu.com/s/1O9BK-936xkxH0Kr5gF3CSw?pwd=afuj` 提取码: afuj

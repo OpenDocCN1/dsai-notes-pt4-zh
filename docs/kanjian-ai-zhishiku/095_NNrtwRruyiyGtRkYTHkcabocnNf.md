@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230723）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/Sy84dggMeol3o3x4yvoczAyGnne](https://jlqyxzzvbk.feishu.cn/docx/Sy84dggMeol3o3x4yvoczAyGnne)
@@ -10,9 +11,9 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## **连续4年华人获奖！陈怡然获 ****IEEE** Edward J. McCluskey技术成就奖
+### 连续4年华人获奖！陈怡然获 IEEE Edward J. McCluskey技术成就奖
 
 ![](img/33a30c198f61420f4532ae0c2247a4e9.png)
 
@@ -22,11 +23,11 @@
 
 更多信息请访问：https://baijiahao.baidu.com/s?id=1724185933146397916&wfr=spider&for=pc
 
-## **估值15亿美元的美国****AIGC****独角兽开始裁员了**
+### 估值15亿美元的美国 AIGC 独角兽开始裁员了
 
 ![](img/b1e5385722870e7f3cdbfe68fab4af5c.png)
 
-Jasper在去年10月刚需宣布完成1.25亿美元融资，估值达到15亿美元，年营收预估7500万美元，是AIGC领域成长最快的独角兽之一。目前AIGC如日中天，上海刚举办的世界人工智能大会，盛况空前，行业一片欣欣向荣。AIGC正是用人之际，更有媒体报道，百万年薪也招不到人。
+Jasper在去年10月刚刚宣布完成1.25亿美元融资，估值达到15亿美元，年营收预估7500万美元，是AIGC领域成长最快的独角兽之一。目前AIGC如日中天，上海刚举办的世界人工智能大会，盛况空前，行业一片欣欣向荣。AIGC正是用人之际，更有媒体报道，百万年薪也招不到人。
 
 Jasper此时裁员，反差确实有点大。不过，也在意料之中。
 
@@ -36,7 +37,7 @@ GPT-3是OpenAI在2020年6月发布的自然语言处理模型。2020年底，Ope
 
 更多信息请访问：https://www.nbd.com.cn/articles/2023-07-19/2922658.html
 
-## 中科院计算所推出的多语言大模型“百聆”
+### 中科院计算所推出的多语言大模型“百聆”
 
 ![](img/94347de0a2855a9cb004e5430469f21f.png)
 
@@ -44,17 +45,17 @@ GPT-3是OpenAI在2020年6月发布的自然语言处理模型。2020年底，Ope
 
 更多信息请访问：http://mlops.ccloud.conestore.cn:30010/bayling/#/
 
-# AI软件精选
+## AI软件精选
 
-## **Cr****eati**ve Reality Studio (D-ID)（AI数字人）
+### Creative Reality Studio (D-ID)（AI数字人）
 
-**D-ID 的**[**视频**](https://nav.6aiq.com/favorites/video_ai)**库**是一款人工智能工具，专为从静止[图像](https://nav.6aiq.com/favorites/image_ai)创建专业视频而设计。主要特点和优势包括：
+D-ID 的**视频**库是一款人工智能工具，专为从静止[图像](https://nav.6aiq.com/favorites/image_ai)创建专业视频而设计。主要特点和优势包括：
 
 **多才多艺的视频创作**：制作带有文本或[音频](https://nav.6aiq.com/favorites/audio_ai)的视频以获得广泛的创意可能性
 
 **简化过程**：以最少的努力快速创建高质量的视频
 
-**API**** 访问**：允许开发人员在平台之上构建自定义应用程序
+**API 访问**：允许开发人员在平台之上构建自定义应用程序
 
 **灵活的定价**：在承诺之前试用该服务，并从一系列升级和帐户管理选项中进行选择
 
@@ -70,7 +71,7 @@ D-ID 视频库的**用例**非常适合各种专业人士：
 
 链接：https://studio.d-id.com/
 
-## Murf AI**（AI音频）**
+### Murf AI（AI音频）
 
 Murf AI 的 AI 语音生成器的**用例**适用于在用户友好的平台中寻求高质量、可定制配音的各种内容创作者和专业人士。
 
@@ -78,17 +79,17 @@ Murf AI 的 AI 语音生成器的**用例**适用于在用户友好的平台中�
 
 链接：https://murf.ai
 
-## Artflow ai**（AI视频）**
+### Artflow ai（AI视频）
 
-**Artflow.ai**是一款人工智能工具，旨在帮助用户创建自定义头像并让他们的故事栩栩如生。主要特点和优势包括：
+**Artflow.ai** 是一款人工智能工具，旨在帮助用户创建自定义头像并让他们的故事栩栩如生。主要特点和优势包括：
 
 **自定义创作**：从文本中生成角色、场景和声音，并编写独特的对话
 
 **资产库**：访问数百万用户生成的资产，例如预制角色和场景
 
-**语言支持**: 支持非英文描述，多样化创作
+**语言支持**：支持非英文描述，多样化创作
 
-**API**** 和反馈**：使用 API 生成内容并接收有关创作的实时反馈
+**API 和反馈**：使用 API 生成内容并接收有关创作的实时反馈
 
 **社区**：通过 Discord 社区、教程和常见问题解答与他人联系
 
@@ -106,9 +107,9 @@ Artflow.ai 的**用例**非常适合各种创意人士：
 
 **更多AI工具请访问：**http://ai.kcodez.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -116,15 +117,13 @@ GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸�
 
 ![](img/615c92385d4c15a74981eca9722d1a34.png)
 
-## 付费课程（ai绘画）
+### 付费课程（ai绘画）
 
 AI绘画基础课Midjourney
 
-优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         https://v.douyin.com/ixcenrM/
+优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】 https://v.douyin.com/ixcenrM/
 
 ![](img/ed8e56af712caf4b1385dfe5ba7a7f9d.png)
-
-#
 
 ![](img/f894465cef172a0454ba8496f4fc75bf.png)
 
@@ -132,9 +131,9 @@ AI绘画基础课Midjourney
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4. 会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：kanAI 九五折优惠，或者直接二维码访问
 
 ![](img/365b1ef62b9e09df796577b6dbfa6067.png)
 
@@ -144,7 +143,7 @@ AI绘画基础课Midjourney
 
 ![](img/cf1aef743c585163a3df7568e54bff17.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT**，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/a20932190c1d5bf811aec034cb7e17fe.png)
 

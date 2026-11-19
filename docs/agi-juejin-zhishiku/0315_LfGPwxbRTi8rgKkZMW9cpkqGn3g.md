@@ -1,3 +1,4 @@
+
 # AI 视频创作突破：Luma Dream Machine 关键帧技术
 
 > 来源：[https://agijuejin.feishu.cn/docx/XDCidSmf8ocCJgxWkrxcjpW4n0g](https://agijuejin.feishu.cn/docx/XDCidSmf8ocCJgxWkrxcjpW4n0g)
@@ -26,11 +27,11 @@ Luma Dream Machine 上线全新的关键帧功能（Keyframes），为用户提�
 
 使用这个新功能非常简单。
 
-只需要访问 lumalabs.ai 网站，进入 Dream Machine 上传一张图片，然后系统会提供添加结束关键帧的选项。
+只需要访问 `lumalabs.ai` 网站，进入 Dream Machine 上传一张图片，然后系统会提供添加结束关键帧的选项。
 
 ![](img/f8d79f7097403c52b201088d1c58109f.png)
 
-[0b2epqabyaaaguakiaua3ztfa7gddr6aahaa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PBcLbcsunoKKAHxDELncjbmsnId)
+[`0b2epqabyaaaguakiaua3ztfa7gddr6aahaa.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PBcLbcsunoKKAHxDELncjbmsnId)
 
 接下来，你就可以通过文本指令来实现整个视频的叙事控制。
 
@@ -42,19 +43,19 @@ Luma Dream Machine 上线全新的关键帧功能（Keyframes），为用户提�
 
 ![](img/30d9ec9ff5b5d04169ddd6034b6ba44a.png)
 
-[0bc3oeabgaaavmakkjea2vtfa4odcnyqaeya.f10004.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PuaFbN9kHojDSrxZFY4cJMOQnVf)
+[`0bc3oeabgaaavmakkjea2vtfa4odcnyqaeya.f10004.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PuaFbN9kHojDSrxZFY4cJMOQnVf)
 
 ### 20 个梗的转换
 
 ![](img/4e2586f8e78fde54a6be5e35f241dc55.png)
 
-[0b2efqaagaaasqalxk4a4ntfalgdamwaaaya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VBVSbDpBboYg60xci10ccak0nAc)
+[`0b2efqaagaaasqalxk4a4ntfalgdamwaaaya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VBVSbDpBboYg60xci10ccak0nAc)
 
 ### 狼人变身
 
 ![](img/991bb9c943fa8537aaa44990b03f82e9.png)
 
-[0bc3amaaoaaa4ealdluaujtfaa6da4bqabya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DmohbDLtwoQkxrxIdhIcVRDBnNj)
+[`0bc3amaaoaaa4ealdluaujtfaa6da4bqabya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DmohbDLtwoQkxrxIdhIcVRDBnNj)
 
 ### 龙珠
 
@@ -64,13 +65,13 @@ Luma Dream Machine 上线全新的关键帧功能（Keyframes），为用户提�
 
 ![](img/488de77836931d2a0b2663137c6b423d.png)
 
-[0bc36qabeaaa2iakkeea3ftfb5gdcl2aaeqa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4HkbNSdHo5eUNxzOF2cjjsZnyd)
+[`0bc36qabeaaa2iakkeea3ftfb5gdcl2aaeqa.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/S4HkbNSdHo5eUNxzOF2cjjsZnyd)
 
 ### 《狼、战士和衣柜》
 
 ![](img/ddf98370fec9b28ab921a911127f22a1.png)
 
-[0bc3raaa4aaa3ualkauahftfbcgdb2eaadqa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MpKJbdHsgoH9XZx150Uc6tLWn9e)
+[`0bc3raaa4aaa3ualkauahftfbcgdb2eaadqa.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MpKJbdHsgoH9XZx150Uc6tLWn9e)
 
 ### 6.水下宇航员
 
@@ -80,7 +81,7 @@ Luma Dream Machine 上线全新的关键帧功能（Keyframes），为用户提�
 
 ![](img/aa5b219babc611e6158b6a2672767fa7.png)
 
-[0bc3wyabgaaawyakihua2rtfbnwdco3aaeya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HFfFbaDmMo8Qxzx5xEXcBD9ynmd)
+[`0bc3wyabgaaawyakihua2rtfbnwdco3aaeya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HFfFbaDmMo8Qxzx5xEXcBD9ynmd)
 
 ## AI 视频创作的新突破
 
@@ -94,7 +95,7 @@ Luma 的关键帧功能不仅仅是技术上的进步，更是 AI 视频创作�
 
 ![](img/510638ca19f26485ebda009dd757e5ae.png)
 
-[0bc3umabgaaa2yakvc4avjtfbi6dcorqaeya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wf5Db0SqEoQJMGx5lzQcEVPNnjB)
+[`0bc3umabgaaa2yakvc4avjtfbi6dcorqaeya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wf5Db0SqEoQJMGx5lzQcEVPNnjB)
 
 例如，在制作一个短片时，创作者可以设定一个充满悬念的开头和一个高潮迭起的结尾，通过关键帧功能自然地过渡，从而吸引观众的注意力并保持他们的兴趣。
 
@@ -112,7 +113,7 @@ Luma 的关键帧功能不仅仅是技术上的进步，更是 AI 视频创作�
 
 ![](img/552710d8a4504b85b1220d2a6fed850f.png)
 
-[0bc3zaabgaaayiakirea3ztfbsgdcpeaaeya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DFlZbb8sxoXn9IxEIducfpdMn3e)
+[`0bc3zaabgaaayiakirea3ztfbsgdcpeaaeya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DFlZbb8sxoXn9IxEIducfpdMn3e)
 
 这种直观的操作方式，让更多没有专业技术背景的人也能轻松上手，创作出高质量的 AI 视频。
 
@@ -122,7 +123,7 @@ Luma 的关键帧功能为创作者提供了更多的创意空间。
 
 ![](img/d22513385a275cd01c7a7ee073830cf2.png)
 
-[0bc3kaabgaaajiacmama2btfaugdcniaaeya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DCCUbvvuLoVZh9xIZJWcFNLUn1d)
+[`0bc3kaabgaaajiacmama2btfaugdcniaaeya.f10002.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DCCUbvvuLoVZh9xIZJWcFNLUn1d)
 
 无论是改变视频的灯光效果，还是季节的转换，亦或是视角的变化，这一切都可以通过简单的设置来实现。
 

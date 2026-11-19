@@ -1,6 +1,7 @@
+
 # 【模版】AI视频制作模板（建议复制）
 
-> 来源：[https://datawhaler.feishu.cn/docx/PNsDd8LfgoGTNzxHRMvcDBQOnsh](https://datawhaler.feishu.cn/docx/PNsDd8LfgoGTNzxHRMvcDBQOnsh)
+> 来源：[`https://datawhaler.feishu.cn/docx/PNsDd8LfgoGTNzxHRMvcDBQOnsh`](https://datawhaler.feishu.cn/docx/PNsDd8LfgoGTNzxHRMvcDBQOnsh)
 
 > 结合传统电影创作制作流程，将部分拍摄与创作流程替换为AI工具。可以先找自己喜欢的视频风格作为参考，学习着自己做一个。大家可以复制这个文档，填上自己的内容~
 

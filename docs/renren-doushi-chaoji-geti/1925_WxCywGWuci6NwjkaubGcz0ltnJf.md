@@ -1,18 +1,19 @@
+
 # 2023-10-31如何使用RPA自动收集素材？
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KLH4dXGdLo8OKSxQ8J8cRchtnIc](https://xuqiwei1986.feishu.cn/docx/KLH4dXGdLo8OKSxQ8J8cRchtnIc)
 
 > 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_bcwf8tdqkpt5.html)xq.com/id_bcwf8t...
 
-# 日更30篇👸号是怎么做到的？
+## 日更30篇👸号是怎么做到的？
 
 想问下小伙伴们，你们写一篇👸号要多久？
 
 1个小时？
 
-## 2个小时？
+### 2个小时？
 
-### 一周？
+#### 一周？
 
 除了洋哥这种大牛外，大部份人写一篇大概也需要2个小时以上。
 
@@ -30,19 +31,19 @@
 
 接下来我会和大家详细讲解。
 
-# 认识自动化神器-影刀RPA
+## 认识自动化神器-影刀RPA
 
 影刀是个软件，下载到我们电脑上后，我们可以给他指定一个流程，它就可以按照我们的流程操作我们的电脑。比如自动得打开我们的👸号后台，然后自动写文章。。。
 
 关于影刀RPA在这里我就不太啰嗦了，它的官网上有相关的教程，建议大家都去学习一下。
 
-影刀官方地址: https://www.yingdao.com/
+影刀官方地址: `https://www.yingdao.com/`
 
-影刀学院地址: https://college.yingdao.com/
+影刀学院地址: `https://college.yingdao.com/`
 
 接下来我会讲解一个实际应用的例子--用影刀RPA收集写作素材。这里的写作素材是对标账号的文章，用这个简单的例子，让大家感受下做懒人的爽感。
 
-# 用影刀RPA自动收集素材
+## 用影刀RPA自动收集素材
 
 这个过程很简单，下面是我的一个简单的Demo。我用这个Demo演示了如何收集洋哥的文章(洋哥的铁粉，他的文章必须收藏)。
 
@@ -70,4 +71,4 @@
 
 查看更多优质内容
 
-https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=15552545485212
+`https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=15552545485212`

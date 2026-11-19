@@ -1,3 +1,4 @@
+
 # 全球第一！谷歌，回来了，全文详解G3的能力！
 
 > 来源：[https://my.feishu.cn/docx/ATbjdPPVloVBLcx2s3gcbIMHn0f](https://my.feishu.cn/docx/ATbjdPPVloVBLcx2s3gcbIMHn0f)
@@ -35,7 +36,7 @@ LMARENA全球排名第一！
 你是一个**拥有极高审美的世**界级高级前端工程师，****精通 Rea****ct、****Tai****lwin****d CSS ****和 UI/UX 设计。
 
 **任务目标：
-请构**建一个名为 &quot;Golde**nOS&quot; 的 Web 端操**作系统模拟器。该****系统需****要具备** MacOS 的交互逻辑，但采用独特的****“黑金（B****lack ****Gold）”奢华艺术风格******。
+请构**建一个名为 &quot;Golde**nOS&quot; 的 Web 端操**作系统模拟器。该****系统需****要具备** MacOS 的交互逻辑，但采用独特的****“黑金（B****lack ****Gold”）奢华艺术风格******。
 
 核心技术****栈：
 框架： React**** 19 (Ty**peScr**ipt)**
@@ -76,7 +77,6 @@ Terminal &amp; Photos： 简单的占位符界面即可。
 组件拆分为：components/os/MenuBar, components/os/Dock, components/os/Window, 以及 components/apps/ 下的具体应用。
 确保代码处理好 Z-index 层级关系，避免背景遮挡窗口。
 ```
-
 
 [视频1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WMbsbeGl3oqsqYxNURncNZQdnlg)
 
@@ -363,6 +363,10 @@ SWE-bench Verified测试，76.2%通过率，超过所有竞品。
 
 我试了个真实场景。
 
+
+
+# Gemini 3 Pro 使用体验报告
+
 给它一个GitHub issue："这个API响应太慢，优化一下。"
 
 它直接分析代码，找到3处性能瓶颈，给出优化方案，还写了完整的单元测试。
@@ -393,9 +397,9 @@ Gemini不一样，是直接理解图片本身。
 
 我试了张产品原型图，问："这页面布局有啥UX问题？"
 
-它说："导航栏太密，移动端会误触。按钮间距建议48px以上，符合触控友好设计。"
+它说："导航栏太密，移动端会误触。按钮间距建议`48px`以上，符合触控友好设计。"
 
-连48px这种具体数字都给出来了。
+连`48px`这种具体数字都给出来了。
 
 又试了张系统架构图，各种箭头、模块、注释密密麻麻。
 
@@ -443,27 +447,27 @@ Gemini 3 Pro的编程能力，真的吓到我了。
 
 这不是吹的。
 
-## Google官方CLI和IDE，专业选手的最爱
+## Google官方工具，专业选手的最爱
 
 Google还出了官方工具，方便开发者用Gemini 3。
 
-#### Gemini CLI（命令行工具）
+### `Gemini CLI`（命令行工具）
 
-直接在终端用Gemini，选Pro模式自动用gemini-3-pro-preview。
+直接在终端用Gemini，选Pro模式自动用`gemini-3-pro-preview`。
 
 适合开发者写脚本、自动化任务。
 
 但需要白名单资格。
 
-**Cli：**Ultra、API付费用户可以自动通过申请。
+`Cli`：Ultra、API付费用户可以自动通过申请。
 
 ![](img/c7334ec16fbd74b443acf5c52ca5446c.png)
 
-#### **Antigravity IDE**
+### `Antigravity IDE`
 
 Google官方的开发环境，专门为Gemini优化。
 
-下载地址：https://antigravity.google/download
+下载地址：`https://antigravity.google/download`
 
 支持代码补全、调试、项目管理，和Cursor一样的。
 
@@ -473,9 +477,9 @@ Google官方的开发环境，专门为Gemini优化。
 
 Antigravity虽说Gemini 3 和 Claude 4.5都免费，但是BUG还挺多，尤其卡在登录上的，官媒已经爆了。
 
-**Antigravity：**就都登录上了无法回调，包括我，已知方法是修改成TUN模式，或者更换账号，我是这两种方法都不行。
+`Antigravity`：就都登录上了无法回调，包括我，已知方法是修改成`TUN`模式，或者更换账号，我是这两种方法都不行。
 
-我Debug了一下，是他没有调用Localhost，配置Proxy也不好使，感觉是走不了系统代理。
+我`Debug`了一下，是他没有调用`Localhost`，配置`Proxy`也不好使，感觉是走不了系统代理。
 
 X上的官媒评论区都是这个问题。
 
@@ -487,7 +491,7 @@ Gemini 3 Pro不是完美的。
 
 中文理解还差点意思，特别是一些梗、俚语，它经常get不到点。
 
-插件太少了，GPT有一堆插件，Claude也有Tool Use，Gemini基本啥都没，都得自己配。
+插件太少了，GPT有一堆插件，Claude也有`Tool Use`，Gemini基本啥都没，都得自己配。
 
 稳定性有点抽风，毕竟Preview版本，刚试用就碰到1次返回错误。
 
@@ -499,9 +503,9 @@ Gemini 3 Pro不是完美的。
 
 最简单方式（推荐）：
 
-1、打开 https://ai.google.dev/
+1. 打开 `https://ai.google.dev/`
 
-2、登录Google账号，选择gemini-3-pro-preview
+2. 登录Google账号，选择`gemini-3-pro-preview`
 
 ## 别死守一个AI了
 
@@ -559,12 +563,12 @@ PPS：
 
 学生党福利来了！
 
-**Go**ogle官方刚宣布，美国大学生 延长 免费用一年Google AI Pro计划。
+Google官方刚宣布，美国大学生 延长 免费用一年Google AI Pro计划。
 
 包括Gemini 3 Pro更多访问权限（超过每月10000 tokens的限制）、NotebookLM更高限制、2TB存储空间等等。
 
-申请地址：gemini.google/students
+申请地址：`gemini.google/students`
 
 ![](img/54dd1bbb96a3e666223c740904946884.png)
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

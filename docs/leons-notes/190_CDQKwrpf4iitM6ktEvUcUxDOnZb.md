@@ -1,6 +1,7 @@
+
 # DeepSeek 的爆火，再次证明了影响模型回答质量的关键因素不止模型能力本身
 
-> 来源：[https://leonzhang.feishu.cn/docx/EmbEdRYC9obO0Kxa4dBc0EJanDd](https://leonzhang.feishu.cn/docx/EmbEdRYC9obO0Kxa4dBc0EJanDd)
+> 来源：`https://leonzhang.feishu.cn/docx/EmbEdRYC9obO0Kxa4dBc0EJanDd`
 
 大模型确实在改变搜索行业的格局，但搜索结果的数量和质量对最终回答的影响可能比模型本身还要大。
 

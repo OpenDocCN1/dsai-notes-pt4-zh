@@ -1,16 +1,17 @@
+
 # 扣子空间注册登录步骤
 
-> 来源：[https://datawhaler.feishu.cn/docx/GYBBdWPjboLPJbxZQqMcj0oTnxf](https://datawhaler.feishu.cn/docx/GYBBdWPjboLPJbxZQqMcj0oTnxf)
+> 来源：`https://datawhaler.feishu.cn/docx/GYBBdWPjboLPJbxZQqMcj0oTnxf`
 
 > 扣子空间平台入口：
 
-> https://www.coze.cn/s/kilDonYgjY0/
+> `https://www.coze.cn/s/kilDonYgjY0/`
 
-Step1: 点击扣子空间平台链接，右下角点击“登录”https://www.coze.cn/s/kilDonYgjY0/
+### Step1: 点击扣子空间平台链接，右下角点击“登录”`https://www.coze.cn/s/kilDonYgjY0/`
 
 ![](img/92516844a293eb8c8980d07976067a06.png)
 
-Step2: 选择手机号登录
+### Step2: 选择手机号登录
 
 ![](img/9e8faf94ab8bf3889a8ccc9f808f1db1.png)
 

@@ -1,3 +1,4 @@
+
 # Stability Matrix：整合ComfyUI多种流行包，傻瓜式操作轻松上手
 
 > 来源：[https://aigcreative.feishu.cn/docx/Pz1fdVuJ8ooTbfxip34chcJ0nsb](https://aigcreative.feishu.cn/docx/Pz1fdVuJ8ooTbfxip34chcJ0nsb)
@@ -32,7 +33,7 @@ StabilityMatrix，作为一个多平台的包管理器和推理用户界面，�
 
 ## 原生重构界面，全新的便捷体验
 
-Stability Matrix内置了一个重新构想的、功能强大的推理界面，它不仅提供了强大的自动补全和语法高亮功能，还允许用户通过.smproj项目文件保存和加载工作区。
+Stability Matrix内置了一个重新构想的、功能强大的推理界面，它不仅提供了强大的自动补全和语法高亮功能，还允许用户通过`.smproj`项目文件保存和加载工作区。
 
 此外，用户可以自定义可停靠和浮动的面板，生成的图像包含兼容的元数据，甚至可以通过拖放操作来加载画廊图像或文件。
 
@@ -57,7 +58,6 @@ Stability Matrix内置了一个重新构想的、功能强大的推理界面，�
 如果后期要更换电脑，你可以随时随地将数据目录移动到新的硬盘或电脑上，无需担心数据丢失或迁移的麻烦。
 
 ![](img/98a6fd0526dc912acdefa7b4c514e54c.png)
-
 
 ## 有调理、可视化模型管理
 

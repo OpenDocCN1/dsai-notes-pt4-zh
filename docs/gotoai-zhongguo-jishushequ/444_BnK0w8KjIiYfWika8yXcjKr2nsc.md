@@ -1,10 +1,11 @@
+
 # Semantic Kernel(SK)概述
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/PdCYdFhk6oH3cdxsL6QcbUIPnFb](https://gotoaiworld.feishu.cn/docx/PdCYdFhk6oH3cdxsL6QcbUIPnFb)
 
-# 一、Semantic Kernel(SK)
+## 一、Semantic Kernel(SK)
 
-> Semantic Kernel 是一个轻量级的开源开发工具包，可让您轻松构建 AI 代理并将最新的 AI 模型集成到 C#、Python 或 Java 代码库中。它充当高效的中间件，能够快速交付企业级解决方案。
+> Semantic Kernel 是一个轻量级的开源开发工具包，可让您轻松构建 AI 代理并将最新的 AI 模型集成到 `C#`、`Python` 或 `Java` 代码库中。它充当高效的中间件，能够快速交付企业级解决方案。
 
 Semantic Kernel（简称 SK）是微软开发的一个开源 SDK（软件开发工具包），核心目标是桥接大语言模型（LLMs）与传统编程逻辑，帮助开发者更高效地构建 “AI 原生” 应用 —— 即让 AI 能力（如自然语言理解、推理）与现有软件系统、业务逻辑无缝融合，实现更智能的自动化和交互。
 
@@ -14,24 +15,28 @@ SK 的本质是一个 “协同框架”：它允许开发者将自然语言定�
 
 ### 核心功能与组件
 
-1.  双函数体系：Semantic Functions + Native Functions
+1.  双函数体系：`Semantic Functions` + `Native Functions`
 
-+   Semantic Functions（语义函数）：用自然语言描述的逻辑（无需编写代码），由 LLM 直接执行。例如，定义一个 “邮件摘要” 函数，只需用提示词描述 “总结邮件内容，提取收件人、截止日期和核心诉求”，SK 会自动调用 LLM 生成结果。
++   `Semantic Functions`（语义函数）：用自然语言描述的逻辑（无需编写代码），由 LLM 直接执行。例如，定义一个 “邮件摘要” 函数，只需用提示词描述 “总结邮件内容，提取收件人、截止日期和核心诉求”，SK 会自动调用 LLM 生成结果。
 
-+   Native Functions（原生函数）：用传统编程语言（如 C#、Python）编写的代码逻辑，可调用 API、操作数据库、执行计算等。例如，一个 “查询订单状态” 的原生函数，会调用企业数据库接口并返回结果。
++   `Native Functions`（原生函数）：用传统编程语言（如 `C#`、`Python`）编写的代码逻辑，可调用 API、操作数据库、执行计算等。例如，一个 “查询订单状态” 的原生函数，会调用企业数据库接口并返回结果。
 
 +   两者可无缝协同：比如，先用语义函数解析用户的自然语言请求（如 “查一下我最近的订单有没有发货”），再调用原生函数执行数据库查询，最后用语义函数将结果整理成自然语言回复。
 
-1.  规划能力（Planner）
+1.  规划能力（`Planner`）
+
 SK 的规划器能将用户的复杂请求（如 “帮我整理本周的会议纪要，提取行动项并同步给参会人，同时在日历中创建提醒”）自动拆解为一系列函数调用（语义函数 + 原生函数），并按逻辑顺序执行，无需开发者手动编写流程。
 
-1.  记忆管理（Memory）
+1.  记忆管理（`Memory`）
+
 支持 “短期记忆”（对话上下文）和 “长期记忆”（结构化存储的知识，如用户偏好、历史交互），让 AI 应用能记住上下文，实现连贯的多轮对话，或基于历史数据做出更智能的决策。
 
 1.  多模型与多语言支持
-兼容主流大语言模型（如 GPT-4、Claude、Llama 系列，以及 Azure OpenAI 服务），同时支持 C#、Python 等编程语言，便于不同技术栈的开发者使用。
+
+兼容主流大语言模型（如 GPT-4、Claude、Llama 系列，以及 Azure OpenAI 服务），同时支持 `C#`、`Python` 等编程语言，便于不同技术栈的开发者使用。
 
 1.  与微软生态深度集成
+
 无缝对接微软产品体系，如 Azure（云服务）、Teams（协作平台）、Power Platform（低代码工具）等，方便企业级应用快速落地。
 
 ### 典型工作流程
@@ -62,9 +67,10 @@ SK 的规划器能将用户的复杂请求（如 “帮我整理本周的会议�
 
 +   企业级适配：支持私有数据隔离、权限管理，符合企业安全合规要求。
 
-### 二、核心官网资源
+## 二、核心官网资源
 
 1.  权威文档中心
+
 https://learn.microsoft.com/en-us/semantic-kernel/overview/
 
 ![](img/4d1b5858cd4adb73f44448097e2b14c7.png)
@@ -75,7 +81,7 @@ https://learn.microsoft.com/en-us/semantic-kernel/overview/
 
 +   概念详解：涵盖语义函数、规划器、记忆管理等核心组件的技术原理；
 
-+   多语言示例：提供 C#、Python 代码片段，演示如何调用 LLM 与原生函数协同工作。
++   多语言示例：提供 `C#`、`Python` 代码片段，演示如何调用 LLM 与原生函数协同工作。
 
 1.  GitHub 开源仓库
 
@@ -90,6 +96,7 @@ https://learn.microsoft.com/en-us/semantic-kernel/overview/
 +   贡献指南：参与代码贡献、提交 Bug 或提出新功能建议。
 
 1.  微软生态[集成文档
+
 官网的 A](https://learn.microsoft.com/en-us/semantic-kernel/integrations/azure)zure 集成指南 详细说明如何与 Azure OpenAI 服务、Teams 等产品无缝对接，例如：
 
 +   使用 Azure 云服务部署私有 AI 代理；
@@ -104,7 +111,7 @@ https://learn.microsoft.com/en-us/semantic-kernel/overview/
 
 ![](img/2ac88a9a3f222aaba8ac02ac510d594a.png)
 
-### 三、企业级支持
+## 三、企业级支持
 
 官网的 [企业安全合规文档](https://learn.microsoft.com/en-us/semantic-kernel/security) 特别针对企业用户提供：
 
@@ -114,8 +121,8 @@ https://learn.microsoft.com/en-us/semantic-kernel/overview/
 
 +   符合 GDPR、ISO 27001 等标准的实施建议。
 
-### 四、版本兼容性说明
+## 四、版本兼容性说明
 
-+   2[025 年最新动态：官网已更新对 Llama 3.1、GP](https://github.com/microsoft/semantic-kernel-java)T-4o 等新一代模型的支持文档，并新增 Java 语言 SDK（https://github.com/microsoft/semantic-kernel-java）；
++   2[025 年最新动态：官网已更新对 Llama 3.1、GP](https://github.com/microsoft/semantic-kernel-java)T-4o 等新一代模型的支持文档，并新增 `Java` 语言 SDK（https://github.com/microsoft/semantic-kernel-java）；
 
 +   旧版兼容：仍保留对 v0.9 版本的技术支持文档，方便存量项目迁移。

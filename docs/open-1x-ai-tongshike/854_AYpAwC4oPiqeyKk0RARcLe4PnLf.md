@@ -1,3 +1,4 @@
+
 # 扩散模型DDPM学习笔记
 
 > 来源：[https://datawhaler.feishu.cn/docx/HYd8d3313oH1w4xxdgccPCmxn8b](https://datawhaler.feishu.cn/docx/HYd8d3313oH1w4xxdgccPCmxn8b)
@@ -6,7 +7,7 @@
 
 《大模型白盒子构建指南》是一个从原理出发、以“白盒”为导向、围绕大模型全链路的“手搓”大模型指南，旨在帮助有传统深度学习基础的读者从底层原理出发，“纯手搓”搭建一个清晰、可用的大模型系统，包括大模型本身、RAG 框架、Agent 系统及大模型评估体系。教程将从基础原理出发，深入剖析每一个技术点并附以完整的代码实现，以细致讲解和代码注释帮助读者独立复现大模型核心部分，并在复现中实现对大模型的深入理解与掌握。
 
-**本学习笔记是在dataw**hale出品的《大模型白盒子构建指南》的基础上进行的，融入笔者的思考、大白话、比喻**、实操等过程。原**始的课程内容需要具备一定的基础，对初学者来说还是有一定的门槛，本笔记将其通俗化。如有余力，想要更细致的了解其内在过程，可自行学习原始课程（https://github.com/datawhalechina/tiny-universe）
+本学习笔记是在datawhale出品的《大模型白盒子构建指南》的基础上进行的，融入笔者的思考、大白话、比喻、实操等过程。原始的课程内容需要具备一定的基础，对初学者来说还是有一定的门槛，本笔记将其通俗化。如有余力，想要更细致的了解其内在过程，可自行学习原始课程（https://github.com/datawhalechina/tiny-universe）
 
 ## 概念介绍
 
@@ -14,21 +15,21 @@
 
 DDPM（Denoising Diffusion Probabilistic Models，去噪扩散概率模型）是一种基于马尔可夫链的生成模型，其核心思想是：
 
-+   把一张清晰的图片通过马尔可夫链逐步加入高斯噪声，直到完全变成噪点
++ 把一张清晰的图片通过马尔可夫链逐步加入高斯噪声，直到完全变成噪点
 
-+   然后学习如何从噪点中一步步还原出原始图片
++ 然后学习如何从噪点中一步步还原出原始图片
 
 ![](img/9cbd34910e83ec4d4b310246d5effa4e.png)
 
-**打个比方说:**
+打个比方说：
 
-就像是把一张照片慢慢**弄脏**，最后变成一团乱七八糟的墨迹。然后训练一个AI，让**它学**会如何从这团墨迹中一点点把原来的照片还原出来。
+就像是把一张照片慢慢弄脏，最后变成一团乱七八糟的墨迹。然后训练一个AI，让它学会如何从这团墨迹中一点点把原来的照片还原出来。
 
 ![](img/b79b6c60513d33cf38ba1bf4427e90a8.png)
 
-**再举个生活中的例子:**
+再举个生活中的例子：
 
-**想象你****在玩**一个拼图游戏，但是是反着来玩：先把完整的拼图打乱成一堆散片（加噪声），然后学习如何把这些散片重新拼回原来的样子（去噪）。DDPM就是在做类似的事情,只不过它处理的是图片像素，而不是拼图块。
+想象你在玩一个拼图游戏，但是是反着来玩：先把完整的拼图打乱成一堆散片（加噪声），然后学习如何把这些散片重新拼回原来的样子（去噪）。DDPM就是在做类似的事情，只不过它处理的是图片像素，而不是拼图块。
 
 ![](img/34f2f3f062f2e8a50583d51d0e4f581c.png)
 
@@ -36,27 +37,27 @@ DDPM（Denoising Diffusion Probabilistic Models，去噪扩散概率模型）是
 
 #### 1.2.1 前向过程(Forward Process)
 
-想象你在玩一个"弄脏照片"的游戏:
+想象你在玩一个"弄脏照片"的游戏：
 
-+   第一步，拿一张干净的照片
++ 第一步，拿一张干净的照片
 
-+   然后每隔一会儿往上面撒一点点灰尘(噪声)
++ 然后每隔一会儿往上面撒一点点灰尘(噪声)
 
-+   重复这个过程很多次，最后照片就完全被灰尘覆盖看不见了
++ 重复这个过程很多次，最后照片就完全被灰尘覆盖看不见了
 
 ![](img/987eee2c2383429f4b361e5c4ea18cf1.png)
 
 #### 1.2.2 反向过程(Reverse Process)
 
-这就像是在玩"清理照片"的游戏:
+这就像是在玩"清理照片"的游戏：
 
-+   从一张完全被灰尘覆盖的照片开始
++ 从一张完全被灰尘覆盖的照片开始
 
-+   用特殊的清洁工具(神经网络)一点点把灰尘清理掉
++ 用特殊的清洁工具(神经网络)一点点把灰尘清理掉
 
-+   每清理一次，照片就会变得更清晰一些
++ 每清理一次，照片就会变得更清晰一些
 
-+   最后终于能看到原来的图像了
++ 最后终于能看到原来的图像了
 
 ![](img/82f47afd75bb5d4baaf26d216091a46d.png)
 
@@ -66,69 +67,69 @@ DDPM（Denoising Diffusion Probabilistic Models，去噪扩散概率模型）是
 
 DDPM的整体架构可以分为三个关键部分：
 
-1.  **数据流动过程**
+1. 数据流动过程
 
-+   前向过程(Forward Process)：将原始图片逐步加噪
+   + 前向过程(Forward Process)：将原始图片逐步加噪
 
-+   反向过程(Reverse Process)：从噪声中逐步恢复图片
+   + 反向过程(Reverse Process)：从噪声中逐步恢复图片
 
-+   采样过程(Sampling)：生成新的图片
+   + 采样过程(Sampling)：生成新的图片
 
-1.  **核心网络结构**
+2. 核心网络结构
 
-+   主干网络：**U-Net架构**(像一个"U"形状的网络)
+   + 主干网络：`U-Net`架构（像一个"U"形状的网络）
 
-+   **下采样路径：**就像给照片做缩小,一步步把图片变小,这样可以看出照片里有什么大概的东西(比如是人还是风景)
+   + 下采样路径：就像给照片做缩小,一步步把图片变小,这样可以看出照片里有什么大概的东西(比如是人还是风景)
 
-+   **上采样路径：**再把缩小的照片一步步放大回来,把细节都补充回去(比如人脸上的五官、风景中的树叶)
+   + 上采样路径：再把缩小的照片一步步放大回来,把细节都补充回去(比如人脸上的五官、风景中的树叶)
 
-+   **跳跃连接：**在放大的时候,还可以参考之前缩小时的样子,这样可以更好地还原细节(就像拼图时可以看着原图来拼)
+   + 跳跃连接：在放大的时候,还可以参考之前缩小时的样子,这样可以更好地还原细节(就像拼图时可以看着原图来拼)
 
-+   时间编码：位置嵌入(Positional Embedding)（和transformer位置编码一样哦~）
+   + 时间编码：位置嵌入(`Positional Embedding`)（和transformer位置编码一样哦~）
 
-+   注意力机制：自注意力层用于捕捉长程依赖
+   + 注意力机制：自注意力层用于捕捉长程依赖
 
-1.  **损失函数设计**
+3. 损失函数设计
 
-+   主要使用简单的MSE损失和KL散度损失
+   + 主要使用简单的`MSE`损失和`KL散度`损失
 
-+   KL散度用于衡量前向过程和反向过程分布的差异（KL散度越小，说明模型学得越好）
+   + `KL散度`用于衡量前向过程和反向过程分布的差异（`KL散度`越小，说明模型学得越好）
 
-+   预测加入的噪声而不是直接预测图片
+   + 预测加入的噪声而不是直接预测图片
 
-+   损失计算在噪声空间进行
+   + 损失计算在噪声空间进行
 
-+   最终的目标是最小化变分下界(ELBO)
+   + 最终的目标是最小化变分下界(`ELBO`)
 
 ### 2.2 优缺点分析
 
 #### 2.2.1 优点
 
-+   **生成质量**：样本多样性好，质量高
++ 生成质量：样本多样性好，质量高
 
-+   **训练稳定**：不像GAN容易模式崩溃
++ 训练稳定：不像GAN容易模式崩溃
 
-+   **理论基础**：有严格的数学推导支持
++ 理论基础：有严格的数学推导支持
 
-+   **通用性强**：可用于多种生成任务
++ 通用性强：可用于多种生成任务
 
-+   **可控性好**：生成过程更可控可解释
++ 可控性好：生成过程更可控可解释
 
 #### 2.2.2 缺点
 
-+   **推理速度**：需要多步迭代，采样慢
++ 推理速度：需要多步迭代，采样慢
 
-+   **计算资源**：训练和推理都需要大量算力
++ 计算资源：训练和推理都需要大量算力
 
-+   **训练时间**：收敛需要较长时间
++ 训练时间：收敛需要较长时间
 
-+   **模型大小**：参数量较大，存储开销大
++ 模型大小：参数量较大，存储开销大
 
 ## 代码实践
 
-### 3.1 数据载入（dataloader）
+### 3.1 数据载入（`dataloader`）
 
-```
+```python
 import numpy as np
 import torch
 import torchvision
@@ -137,8 +138,8 @@ from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 
 
-def load_transformed_dataset(img_size=32, batch_size=128) -&gt; DataLoader:
-    &quot;&quot;&quot;加载并转换CIFAR10数据集&quot;&quot;&quot;
+def load_transformed_dataset(img_size=32, batch_size=128) -> DataLoader:
+    """加载并转换CIFAR10数据集"""
     train_data_transform = transforms.Compose([
         transforms.Resize((img_size, img_size)),
         transforms.RandomHorizontalFlip(),  # 随机水平翻转
@@ -152,12 +153,12 @@ def load_transformed_dataset(img_size=32, batch_size=128) -&gt; DataLoader:
     ])
 
     # 加载训练集和测试集
-    train_dataset = torchvision.datasets.CIFAR10(root=&quot;./datasets&quot;, 
+    train_dataset = torchvision.datasets.CIFAR10(root="./datasets", 
                                                 train=True,
                                                 download=False,
                                                 transform=train_data_transform)
     
-    test_dataset = torchvision.datasets.CIFAR10(root=&quot;./datasets&quot;,
+    test_dataset = torchvision.datasets.CIFAR10(root="./datasets",
                                                train=False, 
                                                download=False,
                                                transform=test_data_transform)
@@ -191,19 +192,21 @@ def show_tensor_image(image):
     return reverse_transforms(image)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     train_loader, test_loader = load_transformed_dataset()
     image, _ = next(iter(train_loader))
     img_to_show = show_tensor_image(image)
     plt.imshow(img_to_show)
-    plt.savefig(&#x27;/mnt/workspace/tiny-universe-main/content/TinyDiffusion/ddpm/dataloader_image.png&#x27;)  # 修改路径以适应您的环境
+    plt.savefig('/mnt/workspace/tiny-universe-main/content/TinyDiffusion/ddpm/dataloader_image.png')  # 修改路径以适应您的环境
 ```
 
 ![](img/ea55a44d8d64f57353d0cb968ba74af8.png)
 
 > wow乍一看是小猫表情包，是不是很可爱hhhh
 
-### 3.2 U-Net模型（unet）
+### 3.2 `U-Net`模型（`unet`）
+
+
 
 ```
 import torch
@@ -213,7 +216,7 @@ import math
 
 class Block(nn.Module):
     def __init__(self, in_channels, out_channels, time_emb_dim, up=False):
-        &quot;&quot;&quot;UNet中的基本Block模块,包含时间嵌入和上/下采样功能&quot;&quot;&quot;
+        """UNet中的基本Block模块,包含时间嵌入和上/下采样功能"""
         super().__init__()
         self.time_mlp = nn.Linear(time_emb_dim, out_channels)
         if up:
@@ -242,7 +245,7 @@ class Block(nn.Module):
 
 
 class SinusoidalPositionEmbeddings(nn.Module):
-    &quot;&quot;&quot;使用正弦位置编码实现时间步的嵌入,参考Transformer中的位置编码方法,使用正余弦函数将时间步映射到高维空间&quot;&quot;&quot;
+    """使用正弦位置编码实现时间步的嵌入,参考Transformer中的位置编码方法,使用正余弦函数将时间步映射到高维空间"""
     def __init__(self, dim):
         super().__init__()
         self.dim = dim
@@ -263,7 +266,7 @@ class SinusoidalPositionEmbeddings(nn.Module):
 
 
 class SimpleUnet(nn.Module):
-    &quot;&quot;&quot;简单的UNet模型,用于扩散模型的噪声预测&quot;&quot;&quot;
+    """简单的UNet模型,用于扩散模型的噪声预测"""
     def __init__(self):
         super().__init__()
         image_channels = 3
@@ -302,40 +305,40 @@ class SimpleUnet(nn.Module):
 
 
 def print_shapes(model, x, time_step):
-    print(&quot;Input shape:&quot;, x.shape)
+    print("Input shape:", x.shape)
     
     # 时间步嵌入
     t = model.time_embed(time_step)
-    print(&quot;Time embedding shape:&quot;, t.shape)
+    print("Time embedding shape:", t.shape)
     
     # 初始卷积
     x = model.input(x)
-    print(&quot;After input conv shape:&quot;, x.shape)
+    print("After input conv shape:", x.shape)
     
     #下采样过程
     residual_stack = []
-    print(&quot;\nDownsampling process:&quot;)
+    print("\nDownsampling process:")
     for i, down in enumerate(model.downs):
         x = down(x, t)
         residual_stack.append(x)
-        print(f&quot;Down block {i+1} output shape:&quot;, x.shape)
+        print(f"Down block {i+1} output shape:", x.shape)
     
     # 上采样过程
-    print(&quot;\nUpsampling process:&quot;)
+    print("\nUpsampling process:")
     for i, up in enumerate(model.ups):
         residual_x = residual_stack.pop()
         x = torch.cat((x, residual_x), dim=1)
-        print(f&quot;Concatenated input shape before up block {i+1}:&quot;, x.shape)
+        print(f"Concatenated input shape before up block {i+1}:", x.shape)
         x = up(x, t)
-        print(f&quot;Up block {i+1} output shape:&quot;, x.shape)
+        print(f"Up block {i+1} output shape:", x.shape)
     
     # 最终输出
     output = model.output(x)
-    print(&quot;\nFinal output shape:&quot;, output.shape)
+    print("\nFinal output shape:", output.shape)
     return output
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     model = SimpleUnet()
     x = torch.randn(1, 3, 32, 32)
     time_step = torch.tensor([10])
@@ -346,6 +349,8 @@ if __name__ == &quot;__main__&quot;:
 
 ### 3.3 扩散过程（Diffusion）
 
+
+
 ```
 import torch
 import torch.nn as nn
@@ -353,67 +358,67 @@ import torch.nn as nn
 
 class NoiseScheduler(nn.Module):
     def __init__(self, beta_start=0.0001, beta_end=0.02, num_steps=1000):
-        &quot;&quot;&quot;初始化噪声调度器
+        """初始化噪声调度器
         Args:
             beta_start: β1,初始噪声水平
             beta_end: βT,最终噪声水平  
             num_steps: T,扩散步数
             device: 运行设备
-        &quot;&quot;&quot;
+        """
         super().__init__()
         self.beta_start = beta_start
         self.beta_end = beta_end
         self.num_steps = num_steps
 
         # β_t: 线性噪声调度
-        self.register_buffer(&#x27;betas&#x27;, torch.linspace(beta_start, beta_end, num_steps))
+        self.register_buffer('betas', torch.linspace(beta_start, beta_end, num_steps))
         # α_t = 1 - β_t 
-        self.register_buffer(&#x27;alphas&#x27;, 1.0 - self.betas)
+        self.register_buffer('alphas', 1.0 - self.betas)
         # α_bar_t = ∏(1-β_i) from i=1 to t
-        self.register_buffer(&#x27;alpha_bar&#x27;, torch.cumprod(self.alphas, dim=0))
+        self.register_buffer('alpha_bar', torch.cumprod(self.alphas, dim=0))
         # α_bar_(t-1)
-        self.register_buffer(&#x27;alpha_bar_prev&#x27;, torch.cat([torch.tensor([1.0]), self.alpha_bar[:-1]], dim=0))
+        self.register_buffer('alpha_bar_prev', torch.cat([torch.tensor([1.0]), self.alpha_bar[:-1]], dim=0))
         # sqrt(α_bar_t)
-        self.register_buffer(&#x27;sqrt_alpha_bar&#x27;, torch.sqrt(self.alpha_bar))
+        self.register_buffer('sqrt_alpha_bar', torch.sqrt(self.alpha_bar))
         # 1/sqrt(α_t)
-        self.register_buffer(&#x27;sqrt_recip_alphas&#x27;, torch.sqrt(1.0 / self.alphas))
+        self.register_buffer('sqrt_recip_alphas', torch.sqrt(1.0 / self.alphas))
         # sqrt(1-α_bar_t)
-        self.register_buffer(&#x27;sqrt_one_minus_alpha_bar&#x27;, torch.sqrt(1.0 - self.alpha_bar))
+        self.register_buffer('sqrt_one_minus_alpha_bar', torch.sqrt(1.0 - self.alpha_bar))
 
         # 1/sqrt(α_bar_t)
-        self.register_buffer(&#x27;sqrt_recip_alphas_bar&#x27;, torch.sqrt(1.0 / self.alpha_bar))
+        self.register_buffer('sqrt_recip_alphas_bar', torch.sqrt(1.0 / self.alpha_bar))
         # sqrt(1/α_bar_t - 1)
-        self.register_buffer(&#x27;sqrt_recipm1_alphas_bar&#x27;, torch.sqrt(1.0 / self.alpha_bar - 1))
+        self.register_buffer('sqrt_recipm1_alphas_bar', torch.sqrt(1.0 / self.alpha_bar - 1))
         # 后验分布方差 σ_t^2
-        self.register_buffer(&#x27;posterior_var&#x27;, self.betas * (1.0 - self.alpha_bar_prev) / (1.0 - self.alpha_bar))
+        self.register_buffer('posterior_var', self.betas * (1.0 - self.alpha_bar_prev) / (1.0 - self.alpha_bar))
         # 后验分布均值系数1: β_t * sqrt(α_bar_(t-1))/(1-α_bar_t)
-        self.register_buffer(&#x27;posterior_mean_coef1&#x27;, self.betas * torch.sqrt(self.alpha_bar_prev) / (1.0 - self.alpha_bar))
+        self.register_buffer('posterior_mean_coef1', self.betas * torch.sqrt(self.alpha_bar_prev) / (1.0 - self.alpha_bar))
         # 后验分布均值系数2: (1-α_bar_(t-1)) * sqrt(α_t)/(1-α_bar_t)
-        self.register_buffer(&#x27;posterior_mean_coef2&#x27;, (1.0 - self.alpha_bar_prev) * torch.sqrt(self.alphas) / (1.0 - self.alpha_bar))
+        self.register_buffer('posterior_mean_coef2', (1.0 - self.alpha_bar_prev) * torch.sqrt(self.alphas) / (1.0 - self.alpha_bar))
     
     def get(self, var, t, x_shape):
-        &quot;&quot;&quot;获取指定时间步的变量值并调整形状
+        """获取指定时间步的变量值并调整形状
         Args:
             var: 要查询的变量
             t: 时间步
             x_shape: 目标形状
         Returns:
             调整后的变量值
-        &quot;&quot;&quot;
+        """
         # 从变量张量中收集指定时间步的值
         out = var[t]
         # 调整形状为[batch_size, 1, 1, 1],以便进行广播
         return out.view([t.shape[0]] + [1] * (len(x_shape) - 1))
 
     def add_noise(self, x, t):
-        &quot;&quot;&quot;向输入添加噪声
+        """向输入添加噪声
         实现公式: x_t = sqrt(α_bar_t) * x_0 + sqrt(1-α_bar_t) * ε, ε ~ N(0,I)
         Args:
             x: 输入图像 x_0
             t: 时间步
         Returns:
             (noisy_x, noise): 加噪后的图像和使用的噪声
-        &quot;&quot;&quot;
+        """
         # 获取时间步t对应的sqrt(α_bar_t)
         sqrt_alpha_bar = self.get(self.sqrt_alpha_bar, t, x.shape)
         # 获取时间步t对应的sqrt(1-α_bar_t)
@@ -425,22 +430,22 @@ class NoiseScheduler(nn.Module):
 
 
 def plot_diffusion_steps(image, noise_scheduler, step_size=100):
-    &quot;&quot;&quot;绘制图像逐步加噪的过程
+    """绘制图像逐步加噪的过程
     Args:
         image: 原始图像
         noise_scheduler: 噪声调度器
         step_size: 每隔多少步绘制一次
     Returns:
         fig: 绘制的图像
-    &quot;&quot;&quot;
+    """
     num_images = noise_scheduler.num_steps // step_size
     fig = plt.figure(figsize=(15, 3))
     
     # 绘制原始图像
     plt.subplot(1, num_images + 1, 1)
     plt.imshow(show_tensor_image(image))
-    plt.axis(&#x27;off&#x27;)
-    plt.title(&#x27;Original&#x27;)
+    plt.axis('off')
+    plt.title('Original')
     
     # 绘制不同时间步的噪声图像
     for idx in range(num_images):
@@ -448,20 +453,20 @@ def plot_diffusion_steps(image, noise_scheduler, step_size=100):
         noisy_image, _ = noise_scheduler.add_noise(image, t)
         plt.subplot(1, num_images + 1, idx + 2)
         plt.imshow(show_tensor_image(noisy_image))
-        plt.axis(&#x27;off&#x27;)
-        plt.title(f&#x27;t={t.item()}&#x27;)
+        plt.axis('off')
+        plt.title(f't={t.item()}')
     
     plt.tight_layout()
     return fig
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     import matplotlib.pyplot as plt
     from dataloader import load_transformed_dataset, show_tensor_image
     import os  # 导入os模块
 
     # 定义输出路径
-    output_dir = &#x27;/mnt/workspace/tiny-universe-main/content/TinyDiffusion/ddpm/&#x27;
+    output_dir = '/mnt/workspace/tiny-universe-main/content/TinyDiffusion/ddpm/'
     os.makedirs(output_dir, exist_ok=True)  # 确保输出目录存在
     
     train_loader, test_loader = load_transformed_dataset()
@@ -478,18 +483,18 @@ if __name__ == &quot;__main__&quot;:
     # 显示并保存最终加噪图像
     plt.figure(figsize=(5, 5))
     plt.imshow(show_tensor_image(noisy_image))
-    plt.axis(&#x27;off&#x27;)
-    final_output_path = os.path.join(output_dir, &#x27;final_noisy_image.png&#x27;)
+    plt.axis('off')
+    final_output_path = os.path.join(output_dir, 'final_noisy_image.png')
     plt.savefig(final_output_path)  # 保存最终加噪图像
     plt.close()  # 关闭图形以释放内存
-    print(f&quot;最终加噪图像已保存至 {final_output_path}&quot;)
+    print(f"最终加噪图像已保存至 {final_output_path}")
     
     # 绘制并保存逐步加噪过程
     fig = plot_diffusion_steps(single_image, noise_scheduler)
-    diffusion_process_output_path = os.path.join(output_dir, &#x27;diffusion_steps.png&#x27;)
+    diffusion_process_output_path = os.path.join(output_dir, 'diffusion_steps.png')
     plt.savefig(diffusion_process_output_path)  # 保存逐步加噪过程图
     plt.close(fig)  # 关闭图形以释放内存
-    print(f&quot;逐步加噪过程图已保存至 {diffusion_process_output_path}&quot;)
+    print(f"逐步加噪过程图已保存至 {diffusion_process_output_path}")
 ```
 
 ![](img/0d286efed6f6f40719b7348be036d001.png)
@@ -498,7 +503,9 @@ if __name__ == &quot;__main__&quot;:
 
 ### 3.4 训练过程（train）
 
-```
+
+
+```python
 import os
 
 import torch
@@ -514,7 +521,7 @@ from sample import sample, plot
 
 
 def test_step(model, dataloader, noise_scheduler, criterion, epoch, num_epochs, device):
-    &quot;&quot;&quot;测试步骤,计算测试集上的损失&quot;&quot;&quot;
+    """测试步骤,计算测试集上的损失"""
     model.eval()
     with torch.no_grad():
         loss_sum = 0
@@ -530,12 +537,12 @@ def test_step(model, dataloader, noise_scheduler, criterion, epoch, num_epochs, 
             loss = criterion(noise, predicted_noise)
             loss_sum += loss.item()
             num_batches += 1
-            pbar.set_description(f&quot;Epoch {epoch+1}/{num_epochs}, Test Loss: {loss_sum/num_batches:.4f}&quot;)
+            pbar.set_description(f"Epoch {epoch+1}/{num_epochs}, Test Loss: {loss_sum/num_batches:.4f}")
         return loss_sum / len(dataloader)
 
 
 def train_step(model, dataloader, noise_scheduler, criterion, optimizer, epoch, num_epochs, device):
-    &quot;&quot;&quot;训练步骤,计算训练集上的损失并更新模型参数&quot;&quot;&quot;
+    """训练步骤,计算训练集上的损失并更新模型参数"""
     # 设置模型为训练模式
     model.train()
     loss_sum = 0
@@ -567,14 +574,14 @@ def train_step(model, dataloader, noise_scheduler, criterion, optimizer, epoch, 
         # 累计损失并更新进度条
         loss_sum += loss.item()
         num_batches += 1
-        pbar.set_description(f&quot;Epoch {epoch+1}/{num_epochs}, Train Loss: {loss_sum/num_batches:.4f}&quot;)
+        pbar.set_description(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {loss_sum/num_batches:.4f}")
         
     # 返回平均损失
     return loss_sum / len(dataloader)
 
 
 def train(model, train_loader, test_loader, noise_scheduler, criterion, optimizer, device, num_epochs=100, img_size=32):
-    &quot;&quot;&quot;训练模型&quot;&quot;&quot;
+    """训练模型"""
     for epoch in range(num_epochs):
         train_loss = train_step(model, train_loader, noise_scheduler, criterion, optimizer, epoch, num_epochs, device)
         test_loss = test_step(model, test_loader, noise_scheduler, criterion, epoch, num_epochs, device)
@@ -584,20 +591,20 @@ def train(model, train_loader, test_loader, noise_scheduler, criterion, optimize
             # 将图像从[-1, 1]范围缩放到[0, 1]范围,以便可视化
             images = ((images + 1) / 2).detach().cpu()
             fig = plot(images)
-            os.makedirs(&quot;samples&quot;, exist_ok=True)
-            fig.savefig(f&quot;samples/epoch_{epoch}.png&quot;)
+            os.makedirs("samples", exist_ok=True)
+            fig.savefig(f"samples/epoch_{epoch}.png")
     return model
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument(&#x27;--batch_size&#x27;, type=int, default=128)
-    parser.add_argument(&#x27;--epochs&#x27;, type=int, default=200)
-    parser.add_argument(&#x27;--lr&#x27;, type=float, default=1e-4)
-    parser.add_argument(&#x27;--img_size&#x27;, type=int, default=32)
+    parser.add_argument('--batch_size', type=int, default=128)
+    parser.add_argument('--epochs', type=int, default=200)
+    parser.add_argument('--lr', type=float, default=1e-4)
+    parser.add_argument('--img_size', type=int, default=32)
     args = parser.parse_args()
 
-    device = &quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;
+    device = "cuda" if torch.cuda.is_available() else "cpu"
 
     train_loader, test_loader = load_transformed_dataset(args.img_size, args.batch_size)
     noise_scheduler = NoiseScheduler().to(device)
@@ -605,7 +612,7 @@ if __name__ == &quot;__main__&quot;:
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
     criterion = nn.MSELoss()
     model = train(model, train_loader, test_loader, noise_scheduler, criterion, optimizer, device, args.epochs, args.img_size)
-    torch.save(model.state_dict(), f&quot;simple-unet-ddpm-{args.img_size}.pth&quot;)
+    torch.save(model.state_dict(), f"simple-unet-ddpm-{args.img_size}.pth")
 ```
 
 ![](img/6105d8c9d0dd2eb6f02f154c1ff1b7c3.png)
@@ -620,9 +627,9 @@ if __name__ == &quot;__main__&quot;:
 
 ![](img/3e4e86c0fbebdc8009353c3da30f9669.png)
 
-### 3.5 采样过程（sample）
+### 3.5 采样过程（`sample`）
 
-```
+```python
 import torch
 import torchvision
 from tqdm import tqdm
@@ -631,8 +638,8 @@ from unet import SimpleUnet
 from diffusion import NoiseScheduler
 
 
-def sample(model, scheduler, num_samples, size, device=&quot;cpu&quot;):
-    &quot;&quot;&quot;从噪声采样生成图像的函数
+def sample(model, scheduler, num_samples, size, device="cpu"):
+    """从噪声采样生成图像的函数
     Args:
         model: UNet模型,用于预测噪声
         scheduler: 噪声调度器,包含采样所需的所有系数
@@ -641,14 +648,14 @@ def sample(model, scheduler, num_samples, size, device=&quot;cpu&quot;):
         device: 运行设备
     Returns:
         生成的图像张量
-    &quot;&quot;&quot;
+    """
     model.eval()
     with torch.no_grad():
         # 从标准正态分布采样初始噪声 x_T ~ N(0,I)
         x_t = torch.randn(num_samples, *size).to(device)
 
         # 逐步去噪,从t=T到t=0
-        for t in tqdm(reversed(range(scheduler.num_steps)), desc=&quot;Sampling&quot;):
+        for t in tqdm(reversed(range(scheduler.num_steps)), desc="Sampling"):
             # 构造时间步batch
             t_batch = torch.tensor([t] * num_samples).to(device)
 
@@ -668,8 +675,8 @@ def sample(model, scheduler, num_samples, size, device=&quot;cpu&quot;):
             # 计算后验分布方差的对数值 log(σ_t^2)
             model_log_var = scheduler.get(torch.log(torch.cat([scheduler.posterior_var[1:2], scheduler.betas[1:]])), t_batch, x_t.shape)
 
-            if t &gt; 0:
-                # t&gt;0时从后验分布采样: x_t-1 = μ_θ(x_t,t) + σ_t * z, z~N(0,I)
+            if t > 0:
+                # t>0时从后验分布采样: x_t-1 = μ_θ(x_t,t) + σ_t * z, z~N(0,I)
                 noise = torch.randn_like(x_t).to(device)
                 x_t = model_mean + torch.exp(0.5 * model_log_var) * noise
             else:
@@ -682,32 +689,37 @@ def sample(model, scheduler, num_samples, size, device=&quot;cpu&quot;):
 
 def plot(images):
     fig = plt.figure(figsize=(12, 8))
-    plt.axis(&quot;off&quot;)
+    plt.axis("off")
     plt.imshow(torchvision.utils.make_grid(images, nrow=5).permute(1, 2, 0))
     plt.tight_layout(pad=1)
     return fig
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     image_size = 32
     model = SimpleUnet()
-    model.load_state_dict(torch.load(f&quot;simple-unet-ddpm-{image_size}.pth&quot;, weights_only=True))
-    device = &quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;
+    model.load_state_dict(torch.load(f"simple-unet-ddpm-{image_size}.pth", weights_only=True))
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
     scheduler = NoiseScheduler().to(device)
     
     images = sample(model, scheduler, 10, (3, image_size, image_size), device)
     images = ((images + 1) / 2).detach().cpu()
     fig = plot(images)
-    fig.savefig(&quot;images-simple-unet-ddpm.png&quot;, bbox_inches=&#x27;tight&#x27;, pad_inches=0)
-
+    fig.savefig("images-simple-unet-ddpm.png", bbox_inches='tight', pad_inches=0)
 ```
 
 ![](img/4b0a901b3a5451a22fce432500e711c4.png)
 
-### 3.6 评估（metrics）
+### 3.6 评估（`metrics`）
 
-```
+
+
+# DDPM 模型评估与学习总结
+
+## 代码实现
+
+```python
 import torch
 import torch.nn as nn
 import torchvision.models as models
@@ -720,7 +732,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 
 class InceptionStatistics:
-    def __init__(self, device=&#x27;cuda&#x27;):
+    def __init__(self, device='cuda'):
         self.device = device
         # 加载预训练的Inception v3模型
         self.model = models.inception_v3(weights=models.Inception_V3_Weights.IMAGENET1K_V1, transform_input=False)
@@ -736,7 +748,7 @@ class InceptionStatistics:
     
     @torch.no_grad()
     def get_features(self, images):
-        &quot;&quot;&quot;获取Inception特征&quot;&quot;&quot;
+        """获取Inception特征"""
         features = []
         probs = []
         
@@ -763,7 +775,7 @@ class InceptionStatistics:
         return features, probs
 
 def calculate_inception_score(probs, splits=10):
-    &quot;&quot;&quot;计算Inception Score
+    """计算Inception Score
     
     IS = exp(E[KL(p(y|x) || p(y))])
     
@@ -780,7 +792,7 @@ def calculate_inception_score(probs, splits=10):
        - 计算KL散度
        - 取指数
     3. 返回所有组得分的均值和标准差
-    &quot;&quot;&quot;
+    """
     # 存储每个split的IS分数
     scores = []
     # 计算每个split的大小
@@ -801,7 +813,7 @@ def calculate_inception_score(probs, splits=10):
     return np.mean(scores), np.std(scores)
 
 def calculate_fid(real_features, fake_features):
-    &quot;&quot;&quot;计算Fréchet Inception Distance (FID)分数
+    """计算Fréchet Inception Distance (FID)分数
     
     FID = ||μ_r - μ_f||^2 + Tr(Σ_r + Σ_f - 2(Σ_r Σ_f)^(1/2))
     
@@ -812,7 +824,7 @@ def calculate_fid(real_features, fake_features):
     - ||·||^2 表示欧几里得距离的平方
     
     FID越小表示生成图像的质量越好,分布越接近真实图像
-    &quot;&quot;&quot;
+    """
     # 计算真实图像和生成图像特征的均值向量和协方差矩阵
     mu1, sigma1 = real_features.mean(axis=0), np.cov(real_features, rowvar=False)
     mu2, sigma2 = fake_features.mean(axis=0), np.cov(fake_features, rowvar=False)
@@ -829,13 +841,13 @@ def calculate_fid(real_features, fake_features):
     fid = ssdiff + np.trace(sigma1 + sigma2 - 2 * covmean)
     return fid
 
-def evaluate_model(model, scheduler, train_loader, num_samples, batch_size, image_size, device=&quot;cuda&quot;):
-    &quot;&quot;&quot;评估模型的IS和FID分数&quot;&quot;&quot;
+def evaluate_model(model, scheduler, train_loader, num_samples, batch_size, image_size, device="cuda"):
+    """评估模型的IS和FID分数"""
     # 生成样本
     fake_images = []
     num_batches = num_samples // batch_size  # 每批生成batch_size张图片
     
-    print(f&quot;生成{num_samples}张图像...&quot;)
+    print(f"生成{num_samples}张图像...")
     for _ in tqdm(range(num_batches)):
         fake_batch = sample(model, scheduler, batch_size, (3, image_size, image_size), device)
         fake_batch = ((fake_batch + 1) / 2)  # 转换到[0,1]范围
@@ -844,7 +856,7 @@ def evaluate_model(model, scheduler, train_loader, num_samples, batch_size, imag
     fake_images = torch.cat(fake_images, dim=0)
 
     # 收集所有真实图像
-    print(&quot;收集真实图像...&quot;)
+    print("收集真实图像...")
     real_images = []
     for batch in tqdm(train_loader):
         real_images.append(batch[0])
@@ -854,36 +866,36 @@ def evaluate_model(model, scheduler, train_loader, num_samples, batch_size, imag
     inception = InceptionStatistics(device=device)
     
     # 获取真实图像和生成图像的特征
-    print(&quot;计算真实图像特征...&quot;)
+    print("计算真实图像特征...")
     real_features, real_probs = inception.get_features(real_images)
-    print(&quot;计算生成图像特征...&quot;)
+    print("计算生成图像特征...")
     fake_features, fake_probs = inception.get_features(fake_images)
     
     # 计算IS分数
-    print(&quot;计算IS分数...&quot;)
+    print("计算IS分数...")
     is_score, is_std = calculate_inception_score(fake_probs)
     
     # 计算FID分数
-    print(&quot;计算FID分数...&quot;)
+    print("计算FID分数...")
     fid_score = calculate_fid(real_features, fake_features)
     
     return {
-        &quot;is_score&quot;: is_score,
-        &quot;is_std&quot;: is_std,
-        &quot;fid_score&quot;: fid_score
+        "is_score": is_score,
+        "is_std": is_std,
+        "fid_score": fid_score
     }
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     from unet import SimpleUnet
     from diffusion import NoiseScheduler
     from sample import sample
     from dataloader import load_transformed_dataset
     
     # 加载模型和数据
-    device = &quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     image_size = 32
     model = SimpleUnet()
-    model.load_state_dict(torch.load(f&quot;simple-unet-ddpm-{image_size}.pth&quot;, weights_only=True))
+    model.load_state_dict(torch.load(f"simple-unet-ddpm-{image_size}.pth", weights_only=True))
     model = model.to(device)
     model.eval()
     
@@ -903,8 +915,8 @@ if __name__ == &quot;__main__&quot;:
         device=device
     )
     
-    print(f&quot;Inception Score: {metrics[&#x27;is_score&#x27;]:.2f} ± {metrics[&#x27;is_std&#x27;]:.2f}&quot;)
-    print(f&quot;FID Score: {metrics[&#x27;fid_score&#x27;]:.2f}&quot;)
+    print(f"Inception Score: {metrics['is_score']:.2f} ± {metrics['is_std']:.2f}")
+    print(f"FID Score: {metrics['fid_score']:.2f}")
 ```
 
 ![](img/ddd9e80af32c2b4cc489fed1140081ad.png)
@@ -915,14 +927,13 @@ if __name__ == &quot;__main__&quot;:
 
 ## 学习总结
 
-第一次细致的学习扩散模型（DDPM）的数学原理和代码实现，对我来说，还是有些难度的。不管怎么来说，现在必须得给自己一个大大的赞👍！
+第一次细致的学习扩散模型（DDPM）的数学原理和代码实现，对我来说，还是有些难度的。不管怎样，现在必须得给自己一个大大的赞👍！
 
 DDPM这个过程就像是在做概率推理，从一个混沌的状态逐步恢复出有序的信息。虽然背后的数学推导看起来很复杂，但整个框架却非常优雅，体现了如何通过马尔可夫链将一个复杂的生成问题分解成一系列简单的去噪步骤。U-Net的多尺度结构设计也很巧妙（既有战略视角，也有战术视角hhh），能够同时捕捉图像的全局语义信息和局部细节特征。
 
 也感谢datawhale细致的教程~
 
-参考学习链接：
+### 参考学习链接
 
-+   https://arxiv.org/pdf/2006.11239
-
-+   https://github.com/datawhalechina/tiny-universe/tree/main/content/TinyDiffusion
++ https://arxiv.org/pdf/2006.11239
++ https://github.com/datawhalechina/tiny-universe/tree/main/content/TinyDiffusion

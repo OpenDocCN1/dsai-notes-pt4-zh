@@ -1,3 +1,4 @@
+
 # Claude Prompt：概念构建
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/SH7LdAYCZo8HNcx9GEqcArvQn8e](https://vxc3hj17dym.feishu.cn/docx/SH7LdAYCZo8HNcx9GEqcArvQn8e)
@@ -6,7 +7,7 @@
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 ```
 ;; ━━━━━━━━━━━━━━

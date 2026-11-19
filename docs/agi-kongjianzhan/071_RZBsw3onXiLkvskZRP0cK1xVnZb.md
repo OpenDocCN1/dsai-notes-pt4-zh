@@ -1,73 +1,62 @@
+
 # xAI（Grok）
 
-> 来源：[https://agispace.feishu.cn/docx/DFIbdkOvnoZbRtxBDOycUSQInKc](https://agispace.feishu.cn/docx/DFIbdkOvnoZbRtxBDOycUSQInKc)
+> 来源：`https://agispace.feishu.cn/docx/DFIbdkOvnoZbRtxBDOycUSQInKc`
+> 官方网址：`https://grok.x.ai/`
+> 官网最新公告：`https://x.ai/blog`
 
-> 官方网址：https://grok.x.ai/
+## 最新融资
 
-> 官网最新公告：https://x.ai/blog
+### 2024 年 5 月 26 日
 
-## **最新融资**
+### B 轮融资
 
->
+xAI 很高兴宣布我们完成 60 亿美元的 B 轮融资。
 
-> 2024 年 5 月 26 日
+**我们的 B 轮融资金额达 60 亿美元**，主要投资者包括 Valor Equity Partners、Vy Capital、Andreessen Horowitz、Sequoia Capital、Fidelity Management & Research Company、阿尔瓦利德·本·塔拉勒王子和 Kingdom Holding 等。
 
-# B 轮融资
+xAI 在过去一年中取得了长足进步。从 2023 年 7 月宣布成立公司，到 11 月在 X 上发布 Grok-1，再到最近宣布具有长上下文能力的改进型 Grok-1.5 模型，再到具有图像理解能力的 Grok-1.5V，xAI 的模型能力得到了迅速提升。随着 Grok-1 的开源发布，xAI 为模型的各种应用、优化和扩展的进步打开了大门。
 
-> xAI 很高兴宣布我们完成 60 亿美元的 B 轮融资。
+未来几个月，xAI 将沿着这一快速发展的轨迹继续前进，即将发布多项激动人心的技术更新和产品。本轮融资将用于将 xAI 的首批产品推向市场、构建先进的基础设施，并加速未来技术的研发。
 
->
+...原文详情：`https://x.ai/blog/series-b`
 
-> **我们的 **B 轮融资金额达 60 亿美元，主要投资者包括 Valor Equity Partners、Vy Capital、Andreessen Horowitz、Sequoia Capital、Fidelity Management & Research Company、阿尔瓦利德·本·塔拉勒王子和 Kingdom Holding 等。
+## 最新消息
 
-> xAI 在过去一年中取得了长足进步。从 2023 年 7[ 月宣布成立公司，到11](https://x.ai/blog/grok-os) 月在 X 上发布 Grok-1，再到最近宣布具有长上下文能力的改进型 Grok-1.5 模型，再到具有图像理解能力的 Grok-1.5V，xAI 的模型能力得到了迅速提升。随着Grok-1 的开源发布，xAI 为模型的各种应用、优化和扩展的进步打开了大门。
+### 2024 年 7 月 1 日
 
-> 未来几个月，xAI 将沿着这一快速发展的轨迹继续前进，即将发布多项激动人心的技术更新和产品。本轮融资将用于将 xAI 的首批产品推向市场、构建先进的基础设施，并加速未来技术的研发。
+人工智能公司 xAI CEO 埃隆·马斯克表示，`xAI()` 即将推出新一代大语言模型 Grok-2。
 
-> ...原文详情：https://x.ai/blog/series-b
+**xAI 将于 8 月推出 Grok-2，下一代 Grok-3 训练需 10 万块 H100**
 
-## **最新消息**
+马斯克宣布其人工智能初创公司 xAI 的大预言模型 Grok-2 将于 8 月推出，而下一代 Grok-3 用了 10 万块英伟达 H100 芯片进行训练，预计将于年底发布。Grok-2 即将推出，Grok-3 的训练已经开启，可见 xAI 产品发布规划的延续性，且 Grok-3 训练所用的 AI 芯片数量已经超过大多数 AI 大模型训练所用的芯片数量（一般万卡级别）。
 
->
+## 最新大模型 Grok-1.5V
 
-> 2024 年 7月 1 日
-
-> 人工智能公司xAI CEO埃隆·马斯克表示，xAI()即将推出新一代大语言模型Grok-2。
-
->
-
-> **xAI将于8月推出Grok-2，下**一代Grok-3训练需10万块 H100
-
-> 马斯克宣布其人工智能初创公司xAI的大预言模型Grok-2将于8月推出，而下一代Grok-3用了10万块英伟达H100芯片进行训练，预计将于年底发布。Grok-2即将推出，Grok-3的训练已经开启，可见xAI产品发布规划的延续性，且Grok-3训练所用的AI芯片数量已经超过大多数AI大模型训练所用的芯片数量（一般万卡级别）。
-
-# 最新大模型Grok-1.5V
-
-Grok-1.5V 在多个领域都与现有的前沿多模态模型相媲美，从多学科推理到理解文档、科学图表、图表、屏幕截图和照片。我们对 Grok 在理解物理世界方面的能力特别感兴趣。在我们新的 RealWorldQA 基准测试中，Grok 的表现优于同类产品，该基准测试衡量了现实世界的空间理解能力。对于以下所有数据集，我们在没有思路链提示的零样本设置中评估 Grok。
+Grok-1.5V 在多个领域都与现有的前沿多模态模型相媲美，从多学科推理到理解文档、科学图表、图表、屏幕截图和照片。我们对 Grok 在理解物理世界方面的能力特别感兴趣。在我们新的 `RealWorldQA` 基准测试中，Grok 的表现优于同类产品，该基准测试衡量了现实世界的空间理解能力。对于以下所有数据集，我们在没有思路链提示的零样本设置中评估 Grok。
 
 ![](img/ca8e06315018151c122bb5af73881ac2.png)
 
 ![](img/f6c0d455eb25555a679b861812896a02.png)
 
-（原文链接：https://x.ai/blog/grok-1.5v）
+（原文链接：`https://x.ai/blog/grok-1.5v`）
 
 ![](img/ffc83030194cd121a583c7ed7997ab3c.png)
 
-**我**们正在发布大型语言模型Grok-1的基本模型权重和网络架构。Grok-1 是一个由 xAI 从头开始训练的 3140 亿参数混合专家模型。
+我们正在发布大型语言模型 Grok-1 的基本模型权重和网络架构。Grok-1 是一个由 xAI 从头开始训练的 3140 亿参数混合专家模型。
 
 这是 Grok-1 预训练阶段的原始基础模型检查点，该阶段于 2023 年 10 月结束。这意味着该模型没有针对任何特定应用（例如对话）进行微调。
 
 我们正在 Apache 2.0 许可证下发布权重和架构。
 
-要开始使用该模型，请按照github.com/xai-org/grok上的说明进行操作。
+要开始使用该模型，请按照 `github.com/xai-org/grok` 上的说明进行操作。
 
-## 型号详情
+### 型号详情
 
-+   基础模型基于大量文本数据进行训练，未针对任何特定任务进行微调。
++ 基础模型基于大量文本数据进行训练，未针对任何特定任务进行微调。
++ **314B** 参数混合专家模型，其中 25% 的权重在给定代币上处于活动状态。
++ xAI 于 2023 年 10 月使用基于 JAX 和 Rust 的自定义训练堆栈从头开始训练。
 
-+   **314B**参数混合专家模型，其中 25% 的权重在给定代币上处于活动状态。
+[封](https://midjourney.com/) 面图像是根据 Grok 提出的以下提示使用 Midjourney 生成的：神经网络的 3D 插图，具有透明节点和发光连接，以不同粗细和颜色的连接线展示不同的权重。
 
-+   xAI 于 2023 年 10 月使用基于 JAX 和 Rust 的自定义训练堆栈从头开始训练。
-
-[封](https://midjourney.com/)面图像是根据 Grok 提出的以下提示使用Midjourney生成的：神经网络的 3D 插图，具有透明节点和发光连接，以不同粗细和颜色的连接线展示不同的权重。
-
-来源：https://x.ai/blog/grok-os
+来源：`https://x.ai/blog/grok-os`

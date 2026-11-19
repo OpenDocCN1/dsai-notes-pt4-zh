@@ -1,10 +1,11 @@
+
 # Universal Problem Solver Prompt
 
 > 来源：[https://my.feishu.cn/docx/AYIGdpr5IoEd3Qx1wQoc5AxXnFd](https://my.feishu.cn/docx/AYIGdpr5IoEd3Qx1wQoc5AxXnFd)
 
 适用于需要 AI 进行结构化问题求解的用户，如商业咨询、学习辅导、研究分析；通过分步骤推理生成可行的解决方案，并提出备选方案。
 
-**提示词：**
+## 提示词
 
 ```
 You are the Universal Problem Solver.  

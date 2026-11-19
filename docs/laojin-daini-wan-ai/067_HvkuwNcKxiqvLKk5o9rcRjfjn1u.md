@@ -1,3 +1,4 @@
+
 # 精美卡片-汉语新解（玩梗高手）的2种生成办法
 
 > 来源：[https://my.feishu.cn/docx/QNAIdgPPeo5LB1x8UbfcRcj8nue](https://my.feishu.cn/docx/QNAIdgPPeo5LB1x8UbfcRcj8nue)
@@ -16,7 +17,7 @@
 
 随便输出个，妥妥的图文流量入口呀。
 
-## **1、Claude提示词**
+## 1、Claude提示词
 
 ![](img/38a92ee16d8b44f9b76da4e5328607c7.png)
 
@@ -129,161 +130,318 @@
     (英文翻译)
     (日文翻译)
     (解释：(按现代诗排版))
-
-## 结果示例：```
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;汉语新解 - 金融杠杆&lt;/title&gt;
-    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-    &lt;style&gt;
-        :root {
-            /* 莫兰迪色系：使用柔和、低饱和度的颜色 */
-            --primary-color: #B6B5A7; /* 莫兰迪灰褐色，用于背景文字 */
-            --secondary-color: #9A8F8F; /* 莫兰迪灰棕色，用于标题背景 */
-            --accent-color: #C5B4A0; /* 莫兰迪淡棕色，用于强调元素 */
-            --background-color: #E8E3DE; /* 莫兰迪米色，用于页面背景 */
-            --text-color: #5B5B5B; /* 莫兰迪深灰色，用于主要文字 */
-            --light-text-color: #8C8C8C; /* 莫兰迪中灰色，用于次要文字 */
-            --divider-color: #D1CBC3; /* 莫兰迪浅灰色，用于分隔线 */
-        }
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--background-color); /* 使用莫兰迪米色作为页面背景 */
-            font-family: &#x27;Noto Sans SC&#x27;, sans-serif;
-            color: var(--text-color); /* 使用莫兰迪深灰色作为主要文字颜色 */
-        }
-        .card {
-            width: 300px;
-            height: 500px;
-            background-color: #F2EDE9; /* 莫兰迪浅米色，用于卡片背景 */
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            background-color: var(--secondary-color); /* 使用莫兰迪灰棕色作为标题背景 */
-            color: #F2EDE9; /* 浅色文字与深色背景形成对比 */
-            padding: 20px;
-            text-align: left;
-            position: relative;
-            z-index: 1;
-        }
-        h1 {
-            font-family: &#x27;Noto Serif SC&#x27;, serif;
-            font-size: 20px;
-            margin: 0;
-            font-weight: 700;
-        }
-        .content {
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .word {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        .word-main {
-            font-family: &#x27;Noto Serif SC&#x27;, serif;
-            font-size: 36px;
-            color: var(--text-color); /* 使用莫兰迪深灰色作为主要词汇颜色 */
-            margin-bottom: 10px;
-            position: relative;
-        }
-        .word-main::after {
-            content: &#x27;&#x27;;
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 50px;
-            height: 3px;
-            background-color: var(--accent-color); /* 使用莫兰迪淡棕色作为下划线 */
-        }
-        .word-sub {
-            font-size: 14px;
-            color: var(--light-text-color); /* 使用莫兰迪中灰色作为次要文字颜色 */
-            margin: 5px 0;
-        }
-        .divider {
-            width: 100%;
-            height: 1px;
-            background-color: var(--divider-color); /* 使用莫兰迪浅灰色作为分隔线 */
-            margin: 20px 0;
-        }
-        .explanation {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: left;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .quote {
-            position: relative;
-            padding-left: 20px;
-            border-left: 3px solid var(--accent-color); /* 使用莫兰迪淡棕色作为引用边框 */
-        }
-        .background-text {
-            position: absolute;
-            font-size: 150px;
-            color: rgba(182, 181, 167, 0.15); /* 使用莫兰迪灰褐色的透明版本作为背景文字 */
-            z-index: 0;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-weight: bold;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&quot;card&quot;&gt;
-        &lt;div class=&quot;header&quot;&gt;
-            &lt;h1&gt;汉语新解&lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;content&quot;&gt;
-            &lt;div class=&quot;word&quot;&gt;
-                &lt;div class=&quot;word-main&quot;&gt;金融杠杆&lt;/div&gt;
-                &lt;div class=&quot;word-sub&quot;&gt;Jīn Róng Gàng Gǎn&lt;/div&gt;
-                &lt;div class=&quot;word-sub&quot;&gt;Financial Leverage&lt;/div&gt;
-                &lt;div class=&quot;word-sub&quot;&gt;金融レバレッジ&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;explanation&quot;&gt;
-                &lt;div class=&quot;quote&quot;&gt;
-                    &lt;p&gt;
-                        借鸡生蛋，&lt;br&gt;
-                        只不过这蛋要是金的，&lt;br&gt;
-                        鸡得赶紧卖了还债。
-                    &lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;background-text&quot;&gt;杠杆&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-```## 注意：
-1. 分隔线与上下元素垂直间距相同，具有分割美学。
-2. 卡片(.card)不需要 padding ，允许子元素“汉语新解”的色块完全填充到边缘，具有设计感。
-
-## 初始行为： 
-输出&quot;说吧, 他们又用哪个词来忽悠你了?&quot;
 ```
 
-生成代码后，复制到txt（也就是记事本，桌面新建个就行），复制完成后，把txt后缀修改成html，类似这样。
+## 结果示例：
+
+```
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>汉语新解 - 金融杠杆</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+
+            /* 莫兰迪色系：使用柔和、低饱和度的颜色 */
+
+            --primary-color: #B6B5A7; /* 莫兰迪灰褐色，用于背景文字 */
+
+            --secondary-color: #9A8F8F; /* 莫兰迪灰棕色，用于标题背景 */
+
+            --accent-color: #C5B4A0; /* 莫兰迪淡棕色，用于强调元素 */
+
+            --background-color: #E8E3DE; /* 莫兰迪米色，用于页面背景 */
+
+            --text-color: #5B5B5B; /* 莫兰迪深灰色，用于主要文字 */
+
+            --light-text-color: #8C8C8C; /* 莫兰迪中灰色，用于次要文字 */
+
+            --divider-color: #D1CBC3; /* 莫兰迪浅灰色，用于分隔线 */
+
+        }
+
+        body, html {
+
+            margin: 0;
+
+            padding: 0;
+
+            height: 100%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background-color: var(--background-color); /* 使用莫兰迪米色作为页面背景 */
+
+            font-family: 'Noto Sans SC', sans-serif;
+
+            color: var(--text-color); /* 使用莫兰迪深灰色作为主要文字颜色 */
+
+        }
+
+        .card {
+
+            width: 300px;
+
+            height: 500px;
+
+            background-color: #F2EDE9; /* 莫兰迪浅米色，用于卡片背景 */
+
+            border-radius: 20px;
+
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+
+            overflow: hidden;
+
+            position: relative;
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .header {
+
+            background-color: var(--secondary-color); /* 使用莫兰迪灰棕色作为标题背景 */
+
+            color: #F2EDE9; /* 浅色文字与深色背景形成对比 */
+
+            padding: 20px;
+
+            text-align: left;
+
+            position: relative;
+
+            z-index: 1;
+
+        }
+
+        h1 {
+
+            font-family: 'Noto Serif SC', serif;
+
+            font-size: 20px;
+
+            margin: 0;
+
+            font-weight: 700;
+
+        }
+
+        .content {
+
+            padding: 30px 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            flex-grow: 1;
+
+        }
+
+        .word {
+
+            text-align: left;
+
+            margin-bottom: 20px;
+
+        }
+
+        .word-main {
+
+            font-family: 'Noto Serif SC', serif;
+
+            font-size: 36px;
+
+            color: var(--text-color); /* 使用莫兰迪深灰色作为主要词汇颜色 */
+
+            margin-bottom: 10px;
+
+            position: relative;
+
+        }
+
+        .word-main::after {
+
+            content: '';
+
+            position: absolute;
+
+            left: 0;
+
+            bottom: -5px;
+
+            width: 50px;
+
+            height: 3px;
+
+            background-color: var(--accent-color); /* 使用莫兰迪淡棕色作为下划线 */
+
+        }
+
+        .word-sub {
+
+            font-size: 14px;
+
+            color: var(--light-text-color); /* 使用莫兰迪中灰色作为次要文字颜色 */
+
+            margin: 5px 0;
+
+        }
+
+        .divider {
+
+            width: 100%;
+
+            height: 1px;
+
+            background-color: var(--divider-color); /* 使用莫兰迪浅灰色作为分隔线 */
+
+            margin: 20px 0;
+
+        }
+
+        .explanation {
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            text-align: left;
+
+            flex-grow: 1;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+        }
+
+        .quote {
+
+            position: relative;
+
+            padding-left: 20px;
+
+            border-left: 3px solid var(--accent-color); /* 使用莫兰迪淡棕色作为引用边框 */
+
+        }
+
+        .background-text {
+
+            position: absolute;
+
+            font-size: 150px;
+
+            color: rgba(182, 181, 167, 0.15); /* 使用莫兰迪灰褐色的透明版本作为背景文字 */
+
+            z-index: 0;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            font-weight: bold;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="header">
+
+            <h1>汉语新解</h1>
+
+        </div>
+
+        <div class="content">
+
+            <div class="word">
+
+                <div class="word-main">金融杠杆</div>
+
+                <div class="word-sub">Jīn Róng Gàng Gǎn</div>
+
+                <div class="word-sub">Financial Leverage</div>
+
+                <div class="word-sub">金融レバレッジ</div>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="explanation">
+
+                <div class="quote">
+
+                    <p>
+
+                        借鸡生蛋，<br>
+
+                        只不过这蛋要是金的，<br>
+
+                        鸡得赶紧卖了还债。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+
+
+```html
+&lt;/div&gt;
+&lt;div class=&quot;background-text&quot;&gt;杠杆&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+```
+
+## 注意
+
+1. 分隔线与上下元素垂直间距相同，具有分割美学。
+2. 卡片(`.card`)不需要 `padding` ，允许子元素“汉语新解”的色块完全填充到边缘，具有设计感。
+
+## 初始行为
+
+输出"说吧, 他们又用哪个词来忽悠你了?"
+
+生成代码后，复制到`txt`（也就是记事本，桌面新建个就行），复制完成后，把`txt`后缀修改成`html`，类似这样。
 
 ![](img/5b6b540967327d4bb6425eaa42591c93.png)
 
@@ -293,7 +451,7 @@
 
 ---
 
-好了，演示完成，说点儿正事儿。
+## 好了，演示完成，说点儿正事儿
 
 这个提示词是怎么来的呢，其实这都是在写代码。
 
@@ -317,8 +475,8 @@ AI时代中，提示词作为人类与机器通信的唯一语言，我认为是
 
 开源插件地址（来自王志玮）：
 
-https://github.com/BenedictKing/chinesepua/
+`https://github.com/BenedictKing/chinesepua/`
 
 某些环境下会无法使用（比如我），暂时没空写修改教程，有问题的可以加群问下。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

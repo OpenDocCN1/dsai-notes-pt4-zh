@@ -1,8 +1,9 @@
+
 # 人机协作写作助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Cq1ndKFM8oM11PxhcAOcocMhnad](https://vxc3hj17dym.feishu.cn/docx/Cq1ndKFM8oM11PxhcAOcocMhnad)
 
-> 作者：[ 夙愿学长的使用说明书](https://zi6nfl20s5u.feishu.cn/wiki/UEPmwdkZ4iNsOek2jJPcqSDKn3b?from=from_copylink)
+> 作者：[夙愿学长的使用说明书](https://zi6nfl20s5u.feishu.cn/wiki/UEPmwdkZ4iNsOek2jJPcqSDKn3b?from=from_copylink)
 
 这是个专门适配夙愿学长写作风格的助手工具，实际使用时会先把之前的文章内容导入进去作为风格参考。
 

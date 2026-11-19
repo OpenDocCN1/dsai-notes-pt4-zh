@@ -1,3 +1,4 @@
+
 # 谷歌深夜突发 Nano Banana 2，生图圈天塌了！Pro 级 4K 大片，价格砍半
 
 > 来源：[https://yunyinghui.feishu.cn/docx/IuEDdzlhlogYhJxSQuRczAMOnGc](https://yunyinghui.feishu.cn/docx/IuEDdzlhlogYhJxSQuRczAMOnGc)
@@ -12,15 +13,15 @@
 
 ---
 
-###  新智元报道
+## 新智元报道
 
 编辑：好困 桃子
 
-> **【新**智元导读】 AI 圈集体失眠！Nano Banana 2 深夜炸场，登顶文生图榜首，以 Flash 级速度暴力直出 Pro 级 4K 超清画质。更离谱的是，成本直接砍半，全网首测玩疯。
+> **【新智元导读】** AI 圈集体失眠！Nano Banana 2 深夜炸场，登顶文生图榜首，以 Flash 级速度暴力直出 Pro 级 4K 超清画质。更离谱的是，成本直接砍半，全网首测玩疯。
 
 一周一更，谷歌又在深夜扔出「深水炸弹」。
 
-就在刚刚， 最强生图模型 Nano Banana 2 横空出世 ，背靠全新 Gemini 3.1 Flash Image。
+就在刚刚，最强生图模型 Nano Banana 2 横空出世，背靠全新 Gemini 3.1 Flash Image。
 
 它不仅生成速度飞快，多语言文字处理更强，还能实时联网，一次直出 4K 大片。
 
@@ -55,11 +56,13 @@
 ![](img/6a0f5fd89f9749011cf8334df32ebe51.png)
 
 | ![](img/1340e94cd6b178e564103092752fcbab.png) | ![](img/4e806eadc91d02602b4f9cf6f8191ae2.png) |
+
 | --- | --- |
 
 在 Image Arena 中，NB2 文生图同样问鼎榜首，斩获 1279 Elo 得分，图像编辑实力仅次于 GPT Image。
 
 | ![](img/ddc8912d6971745162d8544661fb8a2a.png) | ![](img/996513f59e493fe7e98b198f4445957d.png) |
+
 | --- | --- |
 
 谷歌官方测评中，NB2（开启 Thinking + 文本搜索 + 图像搜索后）在整体偏好、视觉质量和信息图表准确性三个维度上，不仅全面压制了 GPT-Image 1.5、Grok Imagine Image Pro 等一众竞品，甚至还超越了大哥 Nano Banana Pro。
@@ -70,17 +73,11 @@
 
 ![](img/5890404fc317a88553025788d6687130.png)
 
-##
-
-![](img/1f8aa55bb1934bf717b1b8aed7330630.png)
-
-**快，但不只是快**
-
-##
+## 快，但不只是快
 
 话不多说，下面我们就来看看它都有哪些杀手级本领。
 
-**第一个是世界知识。**
+### 第一个是世界知识。
 
 Nano Banana 2 全面接入了 Gemini 的知识库和实时网络搜索。
 
@@ -93,7 +90,6 @@ Nano Banana 2 全面接入了 Gemini 的知识库和实时网络搜索。
 模型选择了正上方俯拍的鸟瞰视角，在干净的浅灰色纹理背景上，把水循环的每个步骤从左到右清晰铺开。
 
 背景上还画了简约的黑色手绘箭头来引导视线，光线柔和均匀，几乎没有阴影干扰，整体既有教育感又不沉闷，是那种你真的可以直接拿去课堂用的水平。
-
 
 描绘水循环的平铺俯拍信息图
 
@@ -127,7 +123,7 @@ Nano Banana 2 全面接入了 Gemini 的知识库和实时网络搜索。
 
 [0b2equacgaaajuai4yvayfuvbbodeocqaiya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EBnybj5zloYE4cxmxzucBcbOnde)
 
-**第二个是文本渲染和翻译。**
+### 第二个是文本渲染和翻译。
 
 AI 图像生成最大的老毛病之一就是「写字像鬼画符」，Nano Banana 2 在这块下了狠功夫。
 
@@ -153,11 +149,11 @@ AI 图像生成最大的老毛病之一就是「写字像鬼画符」，Nano Ban
 
 ![](img/d9b03a2405010f6bae67e3813c074fd8.png)
 
-**4K 创意大片，画质更牛了**
+### 4K 创意大片，画质更牛了
 
 速度上去了，质量没掉，这才是 Nano Banana 2 真正让人兴奋的地方。
 
-**首先，是主体一致性的大幅提升。**
+#### 首先，是主体一致性的大幅提升。
 
 具体来说就是，一个工作流里最多能保持 5 个角色的特征一致，以及 14 个对象的高保真度。
 
@@ -166,7 +162,6 @@ AI 图像生成最大的老毛病之一就是「写字像鬼画符」，Nano Ban
 14 个风格各异的角色和道具一起出现在农场场景里愉快玩耍，整体氛围逗趣、搞怪、欢乐。
 
 关键是每一个角色和道具都严格保持了原本的特征与形象，没有一个「变脸」或「串台」的。
-
 
 农场里逗趣欢乐的角色和道具
 
@@ -194,11 +189,11 @@ AI 图像生成最大的老毛病之一就是「写字像鬼画符」，Nano Ban
 
 [0bc3buazyaabneadfbfbrnuvcdodtqgqdhaa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ntxcb71Fno7oqKxQuJHc0In1nJd)
 
-**其次， 指令 遵循更精准了。**
+#### 其次，指令遵循更精准了。
 
 你脑子里想的那些微妙细节，现在模型能更好地捕捉到。复杂的描述不再被「自由发挥」成另一个东西。
 
-**第三，规格也拉满了。 **
+#### 第三，规格也拉满了。
 
 从 512px 到 4K，各种宽高比随你挑。
 
@@ -246,15 +241,9 @@ AI 图像生成最大的老毛病之一就是「写字像鬼画符」，Nano Ban
 
 不同宽高比的高度风格化波普艺术时尚人像
 
-##
+## 全网首测
 
-![](img/95b0baa086d40148853e4bb9d35e3a1d.png)
-
-**全网首测**
-
-**一帧画面「脑补」整个世界**
-
-##
+### 一帧画面「脑补」整个世界
 
 自 Nano Banana 出世后，全世界人们已用它生成超十亿张图像。
 
@@ -283,6 +272,7 @@ AI 图像生成最大的老毛病之一就是「写字像鬼画符」，Nano Ban
 上传一本书的封面图，NB2 即可直出一张书本中的展示水母的页面。
 
 | ![](img/93f9c2d4f65d187591a45e612c9adb41.png) | ![](img/55124d1a7b1f35a39bf7ff750f4676b3.png) |
+
 | --- | --- |
 
 在文本渲染上，NB2 再上一个全新的台阶，精准直出手稿、白板、海报等字体。
@@ -357,10 +347,13 @@ NB2 制作的信息图，细节非常丰富。
 
 a16z 合伙人 Justine Moore 测试中发现，NB2 在信息图表、广告、动作镜头，甚至是卡通生成实力提升，且速度非常快。
 
+
+
+# Nano Banana 2
+
 ![](img/17e23103d575951b773596b9e3a1fc06.png)
 
 ![](img/15adcdd2ad17fd708030d1dc2df7bc41.png)
-
 
 ![](img/ef9b4396994f5680ac8dc3f47ac94228.png)
 
@@ -388,19 +381,13 @@ a16z 合伙人 Justine Moore 测试中发现，NB2 在信息图表、广告、�
 
 左右滑动查看
 
-
-
 ![](img/2e0ba729031e88f9ba1b44fa3eb75d68.png)
 
 左右滑动查看
 
-##
-
 ![](img/3592068390150138ee318122d6def9e3.png)
 
-**哪里能用上？**
-
-##
+## 哪里能用上？
 
 从世界知识到文本渲染，从 14 个主体保真到 4K 输出，能力盘点到这里，你可能已经跃跃欲试了。
 
@@ -422,11 +409,11 @@ Nano Banana 2 将在 Fast、Thinking 和 Pro 模型中全面取代 Nano Banana P
 
 ![](img/c09a36dc93cef683366ecafb6cee3e01.png)
 
-谷歌的老本行—— 搜索 ，也安排上了。包括 Google App、移动端和桌面端的 AI Mode，以及智能镜头（Lens）。
+谷歌的老本行——搜索，也安排上了。包括 Google App、移动端和桌面端的 AI Mode，以及智能镜头（Lens）。
 
 ![](img/155a18e1cc863723b79e973e01f2911e.png)
 
-开发者可以在 AI Studio、Gemini API 和 Vertex AI 中拿到预览版， Google Antigravity 同样支持。
+开发者可以在 AI Studio、Gemini API 和 Vertex AI 中拿到预览版，Google Antigravity 同样支持。
 
 Flow 的用户更是直接受益——Nano Banana 2 成了默认模型，全员免积分使用。
 
@@ -434,13 +421,9 @@ Flow 的用户更是直接受益——Nano Banana 2 成了默认模型，全员�
 
 Google Ads 里也集成了，创建广告系列时会自动提供智能建议。
 
-##
-
 ![](img/2a147e0843fb9143a3595ae5507c0cb0.png)
 
-**结语**
-
-##
+## 结语
 
 总结来看，谷歌这次打的什么算盘，其实一目了然：
 
@@ -454,14 +437,14 @@ Google Ads 里也集成了，创建广告系列时会自动提供智能建议。
 
 参考资料：
 
-https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/
+`https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/`
 
-https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/
+`https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/`
 
-https://x.com/GoogleDeepMind/status/2027051577899380991
+`https://x.com/GoogleDeepMind/status/2027051577899380991`
 
-https://x.com/GeminiApp/status/2027052041697464629
+`https://x.com/GeminiApp/status/2027052041697464629`
 
-https://x.com/Google/status/2027051660392944035
+`https://x.com/Google/status/2027051660392944035`
 
-https://x.com/jesselaunz/status/2027133199156142372?s=20
+`https://x.com/jesselaunz/status/2027133199156142372?s=20`

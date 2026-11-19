@@ -1,12 +1,13 @@
+
 # 鸟笼效应
 
 > 来源：[https://my.feishu.cn/docx/HgiyduAtRoeiSOx6ENlcoJM6nGb](https://my.feishu.cn/docx/HgiyduAtRoeiSOx6ENlcoJM6nGb)
-
+>
 > 词条简介：
-
+>
 > 人们会在偶然获得一件物品后，会继续添加更多与之相关而的东西
 
-## **详细说明**
+## 详细说明
 
 “鸟笼效应”是一个很有意思的规律，人们会在偶然获得一件物品后，会继续添加更多与之相关而的东西。
 

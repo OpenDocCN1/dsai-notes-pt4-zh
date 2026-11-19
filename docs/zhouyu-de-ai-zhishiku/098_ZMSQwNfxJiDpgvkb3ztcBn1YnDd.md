@@ -1,12 +1,13 @@
+
 # gemini2.5 compute use安装
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/VbMWdHutRorkb7xWPUDcxnv9nRc](https://xatc0v8uz5m.feishu.cn/docx/VbMWdHutRorkb7xWPUDcxnv9nRc)
 
 ![](img/1f1dfb66bc8bbb7cfbfd808f236a49d6.png)
 
-### 通过Google AI Studio
+## 通过Google AI Studio
 
-安装依赖
+### 安装依赖
 
 获取API密钥：
 
@@ -25,27 +26,27 @@ pip install google-generativeai
 pip install playwright  # 用于浏览器自动化
 ```
 
-基本使用示例
+### 基本使用示例
 
 ```
 import os
 import google.generativeai as genai
 
 # 配置API密钥
-api_key = &quot;YOUR_API_KEY&quot;
+api_key = "YOUR_API_KEY"
 genai.configure(api_key=api_key)
 
 # 初始化模型
-model = genai.GenerativeModel(&#x27;gemini-2.5-pro-computer-use&#x27;)
+model = genai.GenerativeModel('gemini-2.5-pro-computer-use')
 
 # 发送请求
-response = model.generate_content(&quot;请打开https://example.com并查找最新新闻&quot;)
+response = model.generate_content("请打开https://example.com并查找最新新闻")
 print(response.text)
 ```
 
-Ai studio api获取
+## AI Studio API 获取
 
-https://aistudio.google.com/api-keys
+`https://aistudio.google.com/api-keys`
 
 ![](img/c763e94af0b5448fe63c600d29d737be.png)
 

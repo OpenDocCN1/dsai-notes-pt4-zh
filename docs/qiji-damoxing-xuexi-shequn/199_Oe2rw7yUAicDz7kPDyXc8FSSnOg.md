@@ -1,12 +1,13 @@
+
 # 奇绩大模型日报（5月 23日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/ODFldSiBgoGSBxxX4Jpc2uh8nZf](https://miracleplus.feishu.cn/docx/ODFldSiBgoGSBxxX4Jpc2uh8nZf)
 
-# 资讯
+## 资讯
 
 ### 李彦宏欧洲谈AI：比起GPT-5，我更感兴趣超级应用
 
-https://mp.weixin.qq.com/s/e12vEVe8mtAdCu6I9FLPQA
+`https://mp.weixin.qq.com/s/e12vEVe8mtAdCu6I9FLPQA`
 
 “欧洲AI春晚”主论坛现场，李彦宏最新亮相，作为大会唯一受邀中国企业家，再一次为中国AI“代言”。这场正在法国巴黎举办的大会全称“欧洲科技创新展览会”（Viva Technology），是欧洲规模最大的科技盛会之一。李彦宏之外，今年参与的演讲嘉宾包括马斯克、图灵奖得主Yoshua Bengio和Yann LeCun，还有Anthropic首席执行官Dario Amodei、Mistral AI首席执行官Arthur Mensch等等，可以说汇聚了全世界来自不同视角的最前沿AI科技力量。
 
@@ -14,7 +15,7 @@ https://mp.weixin.qq.com/s/e12vEVe8mtAdCu6I9FLPQA
 
 ### 英伟达称一年推出一款芯片 Blackwell下一代已在准备中
 
-https://www.cls.cn/detail/1683998
+`https://www.cls.cn/detail/1683998`
 
 英伟达财报会议上，首席执行官黄仁勋透露，继Blackwell之后，英伟达正在开发一款新芯片，节奏是一年发布一次；面对当前产品可能滞销的提问，黄仁勋表示，更新得越快只会让企业拥有更多的芯片需求。
 
@@ -22,7 +23,7 @@ https://www.cls.cn/detail/1683998
 
 ### 英伟达 Q1 净利润同比增长 628%！并宣布 1 拆 10，股价突破 1000 美元
 
-https://mp.weixin.qq.com/s/UkWFO4wA-NfZ0J-ZkvyhHw
+`https://mp.weixin.qq.com/s/UkWFO4wA-NfZ0J-ZkvyhHw`
 
 周三美股盘后，英伟达发布了截至 2024 年 4 月 28 日的第一季度财报，创下了 260 亿美元的季度营收，比上一季度增长了 18%，同比增长了 262%。本季度，每股稀释普通股的 GAAP 每股收益为 5.98 美元，比上一季度增长了 21%，同比增长了 629%。非 GAAP 每股稀释普通股收益为 6.12 美元，比上一季度增长了 19%，同比增长了 461%。英伟达创始人兼 CEO 黄仁勋表示：“下一次工业革命已经开始 —— 公司和国家正在与英伟达合作，将价值万亿美元的传统数据中心转向加速计算，并建立一种新型数据中心 —— AI 工厂 —— 以生产一种新的商品：AI。AI 将为几乎所有行业带来显著的生产率提升，并帮助企业更具成本效益和能源效率，同时拓展收入机会。
 
@@ -30,7 +31,7 @@ https://mp.weixin.qq.com/s/UkWFO4wA-NfZ0J-ZkvyhHw
 
 ### 誓在AI赛道突围！Meta成立“咨询顾问委员会” 由四大科技高管组成
 
-https://www.cls.cn/detail/1683953
+`https://www.cls.cn/detail/1683953`
 
 Meta首席执行官扎克伯格创立了一个“AI产品咨询顾问委员会”；据悉，该委员会将由四名高管组成，但不会领取报酬；他们将定期向Meta管理团队提供人工智能和先进技术层面的指导。
 
@@ -38,7 +39,7 @@ Meta首席执行官扎克伯格创立了一个“AI产品咨询顾问委员会�
 
 ### 赛诺菲与OpenAI、Formation Bio合作，加速AI药物发现
 
-https://mp.weixin.qq.com/s/zKFqWlol5QkjGiT4Tcubyw
+`https://mp.weixin.qq.com/s/zKFqWlol5QkjGiT4Tcubyw`
 
 5 月 21 日，法国制药公司赛诺菲（Sanofi）宣布与 OpenAI 和美国生物技术公司 Formation Bio 建立合作伙伴关系，以加速人工智能在药物开发中的应用。此次合作将改变制药行业的游戏规则。通过结合数据、人工智能技术和药物开发方面的专业知识，他们的目标是彻底改变新药的发现和推向市场的方式。
 
@@ -46,7 +47,7 @@ https://mp.weixin.qq.com/s/zKFqWlol5QkjGiT4Tcubyw
 
 ### 亚马逊与 AI 公司 Hugging Face 合作：定制芯片低成本运行 AI 模型
 
-https://www.ithome.com/0/770/049.htm
+`https://www.ithome.com/0/770/049.htm`
 
 亚马逊公司的云部门宣布，已与人工智能初创公司 Hugging Face 合作，将在亚马逊的定制计算芯片上更低成本地运行数千个 AI 模型。估值 45 亿美元的 Hugging Face 已成为 AI 研究人员和开发者分享聊天机器人或其他 AI 软件的中心，并得到了亚马逊、Alphabet 旗下的谷歌和英伟达等公司的支持，它是开发者获取和调整开源 AI 模型（如 Meta Platforms 的 Llama 3）的主要平台。
 
@@ -54,17 +55,17 @@ https://www.ithome.com/0/770/049.htm
 
 ### 前OpenAI华裔高管创立的Adept欲卖身Meta，融资4亿的AI独角兽也卷不动了
 
-https://mp.weixin.qq.com/s/4yJAvIJPjEmF7k0F1vfUTw
+`https://mp.weixin.qq.com/s/4yJAvIJPjEmF7k0F1vfUTw`
 
 由前OpenAI和谷歌AI开发者运营的2岁AI初创公司Adept，在过去几个月中就可能的出售或战略合作伙伴关系与大型科技公司进行了谈判。其中一家公司是Facebook的所有者Meta Platforms，但收购不太可能发生。
 
 ![](img/986ec756a174848ad51e260de2edf0ab.png)
 
-# 推特
+## 推特
 
 ### Yann LeCun：如果你是对构建下一代人工智能系统感兴趣的学生，不要从事大型语言模型的工作
 
-https://x.com/ylecun/status/1793326904692428907
+`https://x.com/ylecun/status/1793326904692428907`
 
 Yann LeCun：如果你是对构建下一代人工智能系统感兴趣的学生，不要从事大型语言模型（LLM）的工作。
 
@@ -84,7 +85,7 @@ Yann LeCun (@ylecun) 向即将进入行业的学生建议：
 
 ### MistralAI 7B 基础模型和指导模型上线HuggingFace，词汇量从 32000 扩展到 32768
 
-https://x.com/_philschmid/status/1793337888110694683
+`https://x.com/_philschmid/status/1793337888110694683`
 
 新品@MistralAI 7B 基础模型和指导模型 🔥 没有磁力链接，但有一个 @huggingface 仓库！🤗👀
 
@@ -96,15 +97,15 @@ https://x.com/_philschmid/status/1793337888110694683
 
 ❌ 没有评估细节
 
-基础模型: https://huggingface.co/mistralai/Mistral-7B-v0.3
+基础模型: `https://huggingface.co/mistralai/Mistral-7B-v0.3`
 
-指导模型: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
+指导模型: `https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3`
 
 ![](img/0940f921d1d0108b0221719c2de46b05.png)
 
 ### Jim Fan评价《柏拉图表示假设》：高度能力的LLM和视觉模型学习到非常相似的表示
 
-https://x.com/DrJimFan/status/1793318771932995793
+`https://x.com/DrJimFan/status/1793318771932995793`
 
 抽象概念“苹果”由什么组成？我们把“苹果”这个词读作一个字符串，在网上看到二维图片，在现实生活中看到三维形状，在视频中看到运动的苹果。我们触摸苹果，通过手掌的几何感觉和手指上的丰富触觉感受到它的纹理。
 
@@ -112,15 +113,15 @@ https://x.com/DrJimFan/status/1793318771932995793
 
 我非常喜欢麻省理工学院的这篇研究论文《柏拉图表示假设》。作者展示了高度能力的LLM和视觉模型学习到非常相似的表示，尽管这些模态从未被明确地共同训练。具体来说，实验比较了字符串“苹果”和“橙子”之间的相似性与苹果和橙子图片之间的相似性。这两个在广泛的现成模型中相互吻合。
 
-这让我想起了著名的词向量实验：f("king") - f("queen") ≈ f("man") - f("woman")。但这次，方程在模态、数据集和完全独立的训练管道之间成立。
+这让我想起了著名的词向量实验：`f("king") - f("queen") ≈ f("man") - f("woman")`。但这次，方程在模态、数据集和完全独立的训练管道之间成立。
 
-我很希望看到这项研究扩展到更多的模态：比如三维点云？语音？狮子和鸟的声音？机器人手上的触觉信号？我们能否训练出在测试时可以转移到*未知*模态的元模型，因为它只是从不同角度投射的另一种现实？
+我很希望看到这项研究扩展到更多的模态：比如三维点云？语音？狮子和鸟的声音？机器人手上的触觉信号？我们能否训练出在测试时可以转移到`未知`模态的元模型，因为它只是从不同角度投射的另一种现实？
 
 ![](img/4f888b9bdffc3e4e2ab6b86adb100d55.png)
 
 ### 加州最新AI法案，限制计算量超过10^26次浮点运算的模型
 
-https://x.com/deedydas/status/1793150273441218833
+`https://x.com/deedydas/status/1793150273441218833`
 
 最新消息：加利福尼亚州新通过的AI法案要求计算量超过10^26次浮点运算的模型必须
 
@@ -134,7 +135,7 @@ https://x.com/deedydas/status/1793150273441218833
 
 ### Tereza Tizkova分享：用 AI 抓取和分析网站数据
 
-https://x.com/tereza_tizkova/status/1792930398860726464
+`https://x.com/tereza_tizkova/status/1792930398860726464`
 
 🔎 使用 AI 抓取和分析网站数据 🧠
 
@@ -154,19 +155,19 @@ https://x.com/tereza_tizkova/status/1792930398860726464
 
 ### Mistral v3免费Colab，可以进行 QLoRA 微调，速度提高2倍，使用的显存减少70%，且没有精度下降
 
-https://x.com/danielhanchen/status/1793356226006511902
+`https://x.com/danielhanchen/status/1793356226006511902`
 
 为 Mistral v3 创建了一个免费的 Colab！你可以用 @UnslothAI 进行 QLoRA 微调，速度提高2倍，使用的显存减少70%，且没有精度下降！
 
 你可以导出到 vLLM、GGUF，HF 推理速度提高2倍，并且我们支持比 FA2 长 4 倍的上下文窗口（24GB=56K vs 14K）
 
-https://colab.research.google.com/drive/15F1xyn8497_dUbxZP4zWmPZ3PJx1Oymv?usp=sharing
+`https://colab.research.google.com/drive/15F1xyn8497_dUbxZP4zWmPZ3PJx1Oymv?usp=sharing`
 
 ![](img/8d62f7aa1c1399f8cc8ea3f05b8475d6.png)
 
 ### ambientGPT：一个开源的多模态 MacOS 基础模型图形界面
 
-https://x.com/siddrrsh/status/1793348338512974302
+`https://x.com/siddrrsh/status/1793348338512974302`
 
 介绍 ambientGPT：一个开源的多模态 MacOS 基础模型图形界面
 
@@ -180,13 +181,13 @@ Github: [https://github.com](https://github.com/siddrrsh/ambientGPT)/siddrrsh/am
 
 [cuqHfN9WnI1yo5QE.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LMWqbgbRJoXSKhxbeJRcnnqhnPO)
 
-# 产品
+## 产品
 
 ### Findr 2.0
 
 贡献人：
 
-https://www.usefindr.com/
+`https://www.usefindr.com/`
 
 Findr 是一款基于人工智能的搜索助手，能够快速整合工作中使用的各种应用程序(如 Slack、Notion 和 Gmail 等)，为用户提供快速的问答服务、文档创作支持，以及在工作知识库中高效检索信息。
 
@@ -196,7 +197,7 @@ Findr 是一款基于人工智能的搜索助手，能够快速整合工作中�
 
 贡献人：
 
-https://www.getnowadays.com/
+`https://www.getnowadays.com/`
 
 Nowadays 的产品是一个基于人工智能的企业活动策划助手。它拥有大量场地信息，能够根据客户的具体需求定制个性化方案，同时还能帮助客户获得优惠的场地价格，大大减轻了活动策划的负担。Nowadays已经成功服务于亚马逊、Supabase等大型企业，不论是小型聚会还是大型活动，都能提供高质量的一站式解决方案。
 
@@ -206,19 +207,19 @@ Nowadays 的产品是一个基于人工智能的企业活动策划助手。它�
 
 贡献人：
 
-https://www.canvid.com/
+`https://www.canvid.com/`
 
 Canvid 是一款为 Windows 用户设计的新一代 AI 驱动屏幕录制软件。它具有自动缩放、光标平滑移动、电影级动感模糊等智能化功能，能够帮助用户轻松制作出专业品质的录屏视频，无需繁琐的后期编辑。尽管目前还处于测试阶段，但该软件旨在满足 Windows 用户的需求，提高他们的工作效率和生产力，让用户能够专注于内容创作。
 
 ![](img/3d783d40b1ca64950f1e10193663eff1.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### CogVLM2
 
 贡献人：
 
-https://github.com/THUDM/CogVLM2
+`https://github.com/THUDM/CogVLM2`
 
 CogVLM2 是一个新一代的开源多模态语言模型系列，相较于上一代有了显著的性能提升。CogVLM2支持更长的文本长度和更高分辨率的图像，并提供了中英双语的版本。其在多个基准测试中的成绩超过了许多非开源的同类模型，体现出了优异的能力。CogVLM2提供了基础使用教程和微调示例，帮助开发者快速上手。
 
@@ -228,23 +229,23 @@ CogVLM2 是一个新一代的开源多模态语言模型系列，相较于上一
 
 贡献人：
 
-https://github.com/khoj-ai/khoj
+`https://github.com/khoj-ai/khoj`
 
 Khoj 是一款创建永久可用的个人 AI 助手应用程序，用户可以将笔记和文档共享给 AI 助手，由此扩展自己的数字大脑。该AI助手可以访问互联网获取最新信息，并支持在多种平台使用，同时提供快速准确的语义搜索功能。此外，Khoj 的 AI 助手还能创造个性化图像和理解用户语音，整个项目是开源且可以自行搭建的。
 
 ![](img/1fe63d8e8ffa58f84477ceca9e138c9a.png)
 
-# 投融资
+## 投融资
 
 ### DeepL 宣布获得了 3 亿美元的投资，估值达到 20 亿美元，全球AI语言解决方案需求高涨
 
 贡献人：
 
-https://www.businesswire.com/news/home/20240522689624/en/DeepL-Announces-300-Million-Investment-at-2-Billion-Valuation-Fueled-by-Global-Demand-for-AI-Language-Solutions
+`https://www.businesswire.com/news/home/20240522689624/en/DeepL-Announces-300-Million-Investment-at-2-Billion-Valuation-Fueled-by-Global-Demand-for-AI-Language-Solutions`
 
 DeepL，一家领先的语言AI公司，今天宣布以20亿美元的估值获得了3亿美元的投资。这轮投资由Index Ventures领投，受到新投资者的强烈支持，他们将为DeepL的增长和长期愿景提供广泛的专业知识、关系和资源支持。其他晚期投资者，包括ICONIQ Growth、Teachers’ Venture Growth等，以及现有投资者IVP、Atomico和WiL也参与了投资。
 
-相关网站：https://www.deepl.com/translator
+相关网站：`https://www.deepl.com/translator`
 
 ![](img/7e14aed77c2744daed4d95e0b8a74d4c.png)
 
@@ -252,11 +253,11 @@ DeepL，一家领先的语言AI公司，今天宣布以20亿美元的估值获�
 
 贡献人：
 
-https://yourstory.com/2024/05/unifyapps-secures-11m-from-elevation-capital
+`https://yourstory.com/2024/05/unifyapps-secures-11m-from-elevation-capital`
 
 UnifyApps宣布完成1100万美元的种子轮融资，由Elevation Capital领投，以及天使投资人的参与。该创业公司将利用这笔资金建立一个统一的集成平台，利用生成式人工智能（Gen AI）连接不连贯的应用程序，实现更快的定制应用程序创建、工作流自动化和实时数据同步。UnifyApps的愿景是通过简化和提供可访问的集成，改变组织内部构建软件即服务（SaaS）应用程序的方式，增强客户和员工的体验。该公司计划扩展其平台，支持超过5000个应用程序，并使组织能够在不到一天的时间内创建自定义集成。同时，公司还专注于Gen AI功能和专为其打造的LLM动力代理。Elevation Capital的联合管理合伙人Mukul Arora相信UnifyApps可以帮助大型企业自动化复杂的业务流程，并通过实现应用程序和数据之间的无缝统一来提高效率，为公司带来巨大的机遇。
 
-公司官网：https://www.unifyapps.com/
+公司官网：`https://www.unifyapps.com/`
 
 ![](img/ec7a1f61684e54547dee3ec2c6a1fe56.png)
 
@@ -264,7 +265,11 @@ UnifyApps宣布完成1100万美元的种子轮融资，由Elevation Capital领�
 
 贡献人：
 
-https://techcrunch.com/2024/05/22/unify-helps-developers-find-the-best-llm-for-the-job/
+`https://techcrunch.com/2024/05/22/unify-helps-developers-find-the-best-llm-for-the-job/`
+
+
+
+# 公司融资与产品动态
 
 Unify是一家英国初创公司，旨在帮助企业选择最适合其任务的大型语言模型（LLM）。他们开发的工具“Unify Router”允许开发者输入参数，找到其特定需求的最佳LLM。该公司最近宣布获得800万美元的投资，投资方包括SignalFire、M12、J12、Essence VC、A. Capital、Lunar VC、Y Combinator以及一些知名的行业天使投资人。Unify计划通过为企业提供定制基准测试服务来实现盈利，每家公司可以获得50美元的初始信用额度。
 
@@ -272,7 +277,7 @@ Unify是一家英国初创公司，旨在帮助企业选择最适合其任务的
 
 ![](img/064270df929380532c0b10de129598e5.png)
 
-### Artemis获得150万美元种子轮融资
+## Artemis获得150万美元种子轮融资
 
 贡献人：
 
@@ -284,7 +289,7 @@ Artemis宣布获得150万美元种子轮融资，由Raven Indigenous Capital Par
 
 ![](img/5bcbc270001aaf3b92bed3280197a5ff.png)
 
-### Bolster宣布由M12领投的1400万美元B轮融资
+## Bolster宣布由M12领投的1400万美元B轮融资
 
 贡献人：
 
@@ -296,7 +301,7 @@ Bolster宣布由M12领投的1400万美元B轮融资，以加速其在多渠道�
 
 ![](img/9ea036a8a64f9fb6be69633469346354.png)
 
-### HoundDog AI获得310万美元投资
+## HoundDog AI获得310万美元投资
 
 贡献人：
 
@@ -308,7 +313,7 @@ HoundDog AI宣布完成310万美元的种子轮融资，由E14、Mozilla和Ex/an
 
 ![](img/10ea6f404e4c1566a5475b9ea1e5adc1.png)
 
-### Patronus AI获得1700万美元投资
+## Patronus AI获得1700万美元投资
 
 贡献人：
 
@@ -320,7 +325,7 @@ Patronus AI刚刚完成了1700万美元的A轮融资，由Notable Capital的Glen
 
 ![](img/9409c868eeb455b04de6c17f9947e121.png)
 
-### Superlegal，针对中小型企业的AI合同审查平台，完成500万美元种子轮融资
+## Superlegal，针对中小型企业的AI合同审查平台，完成500万美元种子轮融资
 
 贡献人：
 
@@ -332,7 +337,7 @@ https://www.prnewswire.com/news-releases/superlegal-ai-contract-review-platform-
 
 ![](img/b8a73216adedc5b241e287df11f5c761.png)
 
-### Praktika获得3500万美元A轮融资，利用AI头像使语言学习更自然
+## Praktika获得3500万美元A轮融资，利用AI头像使语言学习更自然
 
 贡献人：
 
@@ -346,7 +351,7 @@ Praktika是一款语言学习应用，采用个性化AI头像，模拟私人导�
 
 # 学习
 
-### 大 Batch 训练 LLM 探索
+## 大 Batch 训练 LLM 探索
 
 贡献人：
 
@@ -356,17 +361,17 @@ https://zhuanlan.zhihu.com/p/666997679?utm_psn=1776623516152389632
 
 ![](img/a018de9335716789b3c71873e8e9241c.png)
 
-### LLaVA（六）训练你自己的多模态模型
+## LLaVA（六）训练你自己的多模态模型
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/698218006?utm_psn=1776623143408787456
 
-LLaVA v1.5 多模态模型训练涉及两个技术阶段：特征对齐和视觉指令微调。特征对齐阶段利用 MLP connector 对齐图像和文本特征，训练使用 LAION-CC-SBU 数据集的 LLaVA-Pretrain 子集，适用于多模态对话数据处理。视觉指令微调阶段应用了 GPT-4 生成的指令跟随数据和 VQA 数据，以及多个数据集（如 COCO、GQA 等），通过微调优化模型对多模态指令的响应能力。整个训练过程需要大量计算资源，建议使用 8 个 A100 GPU，并提供了内存优化和参数调整的策略。此外，还详细说明了如何使用自定义数据集进行微调，包括数据格式化和训练脚本的修改。微调后的模型应使用 wandb 进行性能评估，以确保模型的高效和准确性。
+LLaVA v1.5 多模态模型训练涉及两个技术阶段：特征对齐和视觉指令微调。特征对齐阶段利用 MLP connector 对齐图像和文本特征，训练使用 LAION-CC-SBU 数据集的 LLaVA-Pretrain 子集，适用于多模态对话数据处理。视觉指令微调阶段应用了 GPT-4 生成的指令跟随数据和 VQA 数据，以及多个数据集（如 COCO、GQA 等），通过微调优化模型对多模态指令的响应能力。整个训练过程需要大量计算资源，建议使用 8 个 A100 GPU，并提供了内存优化和参数调整的策略。此外，还详细说明了如何使用自定义数据集进行微调，包括数据格式化和训练脚本的修改。微调后的模型应使用 `wandb` 进行性能评估，以确保模型的高效和准确性。
 
 ![](img/e8488664214bf5f592532331926a2bb2.png)
 
-### GPU深度学习性能的三驾马车：Tensor Core、内存带宽与内存层次结构
+## GPU深度学习性能的三驾马车：Tensor Core、内存带宽与内存层次结构
 
 贡献人：
 
@@ -376,7 +381,7 @@ GPU 深度学习性能关键依赖于 Tensor Core、内存带宽和内存层次�
 
 ![](img/e908568b4d86a48a645d7e3d0bdb57e6.png)
 
-### 多核之后，CPU 的发展方向是什么？
+## 多核之后，CPU 的发展方向是什么？
 
 贡献人：
 
@@ -386,17 +391,17 @@ https://www.zhihu.com/question/20809971/answer/1678502542?utm_psn=17769353874893
 
 ![](img/11b51b766d1d9a38723edc4ef0c2aef7.png)
 
-### Pytorch 显存管理机制与显存占用分析方法
+## Pytorch 显存管理机制与显存占用分析方法
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/699254132?utm_psn=1776938336575778818
 
-PyTorch 显存管理机制采用动态申请与二次分配策略，通过 cudaMalloc 从 GPU 申请显存块 Segment，并将其分离为子块 Block 进行使用。显存的释放依赖于 torch.cuda.empty_cache() 调用，该调用会释放未分配的 Segment。PyTorch 提供了多种显存占用分析方法，包括内置 API、Snapshot 功能、nvidia-smi 工具和 torch.cuda.mem_get_info 函数，以帮助开发者监控和优化显存使用。Snapshot 功能能够记录 CUDA allocator 的显存消耗、调用堆栈和时间线，生成 .pickle 文件供分析。文章还提供了一个全连接网络训练的示例代码，展示了如何在训练过程中使用这些工具进行显存分析。通过这些方法，开发者可以更好地理解和管理 PyTorch 应用中的显存使用，从而提高 GPU 资源的利用率。
+PyTorch 显存管理机制采用动态申请与二次分配策略，通过 `cudaMalloc` 从 GPU 申请显存块 `Segment`，并将其分离为子块 `Block` 进行使用。显存的释放依赖于 `torch.cuda.empty_cache()` 调用，该调用会释放未分配的 Segment。PyTorch 提供了多种显存占用分析方法，包括内置 API、Snapshot 功能、`nvidia-smi` 工具和 `torch.cuda.mem_get_info` 函数，以帮助开发者监控和优化显存使用。Snapshot 功能能够记录 CUDA allocator 的显存消耗、调用堆栈和时间线，生成 `.pickle` 文件供分析。文章还提供了一个全连接网络训练的示例代码，展示了如何在训练过程中使用这些工具进行显存分析。通过这些方法，开发者可以更好地理解和管理 PyTorch 应用中的显存使用，从而提高 GPU 资源的利用率。
 
 ![](img/b7dae932db9d8044f67f5f1855c6bf8b.png)
 
-### 用 Coze(扣子) 打造浏览器书签助手（上）
+## 用 Coze(扣子) 打造浏览器书签助手（上）
 
 贡献人：
 
@@ -410,8 +415,6 @@ https://mp.weixin.qq.com/s/4RH6C-M7zzd_6-34lhMwfQ
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -422,7 +425,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

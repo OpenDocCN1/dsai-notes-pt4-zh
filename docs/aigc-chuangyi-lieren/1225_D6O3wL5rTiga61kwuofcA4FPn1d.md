@@ -1,3 +1,4 @@
+
 # 20240406-深度 | CB Insights评选出全球Top100顶尖AI企业：2024年的创新领航者
 
 > 来源：[https://aigcreative.feishu.cn/docx/QaiRdm70Cokfzoxl0FlcZq3Xnof](https://aigcreative.feishu.cn/docx/QaiRdm70Cokfzoxl0FlcZq3Xnof)
@@ -32,19 +33,17 @@ CB Insights的研究团队通过综合考量包括交易活动、行业合作伙
 
 在技术层面，AI 100强企业展现了从基础研究到实际应用的全方位能力。它们不仅在算法和模型的构建上有所创新，还在如何将这些技术应用到实际场景中展现了独到的见解和能力。无论是在医疗、教育、交通还是娱乐等领域，AI技术的应用都在不断深化和拓展，为我们的生活带来了极大的便利。
 
-
-AI Infrastructure Top 10
+#### AI Infrastructure Top 10
 
 ### 行业合作：共创未来
 
 AI 100强企业在行业合作方面也表现出色。它们与各行各业的领先企业建立了广泛的合作关系，共同探索AI技术在不同领域的应用可能。这种跨界合作不仅加速了AI技术的商业化进程，也为各行各业的数字化转型提供了强有力的支持。
 
-
-Horizontal AI Top 10
+#### Horizontal AI Top 10
 
 ![](img/abb68dd9763f481cc9db799236beb45a.png)
 
-Vertical AI Top 10
+#### Vertical AI Top 10
 
 ### 投资与市场：资本的助力
 

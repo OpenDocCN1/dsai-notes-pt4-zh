@@ -1,8 +1,9 @@
+
 # 融资建议
 
 > 来源：[https://docs.feishu.cn/docx/Ktiad9zZfoVKarx9AMocFIN7nOb](https://docs.feishu.cn/docx/Ktiad9zZfoVKarx9AMocFIN7nOb)
 
-# 给2023的AI项目的融资建议
+## 给2023的AI项目的融资建议
 
 1）目前的市场，天使轮平均估值也就是在 5000w 人民币上下，拿钱最重要，市场不好，不要奢求估值，不管啥钱，拿了再说
 
@@ -18,6 +19,6 @@
 
 7）机构最终核心 check 的容易卡住的问题，壁垒是什么，如何做 gtm，把这两个问题提前想，提前准备好再聊
 
-# HOW TO RAISE MONEY
+## HOW TO RAISE MONEY
 
 > https://paulgraham.com/fr.html

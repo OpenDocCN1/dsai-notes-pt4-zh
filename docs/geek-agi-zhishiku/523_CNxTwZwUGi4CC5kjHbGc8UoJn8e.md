@@ -1,8 +1,9 @@
+
 # 精选 | AI 导航站
 
 > 来源：[https://geekbang.feishu.cn/docx/KM0sdbPu0olV4Gxh2IvchrKInpg](https://geekbang.feishu.cn/docx/KM0sdbPu0olV4Gxh2IvchrKInpg)
 
-### 国外
+## 国外
 
 名称：AitoGrow
 
@@ -18,29 +19,29 @@
 
 名称：Daily Zaps
 
-网址：https://www.dailyzaps.com/
+网址：`https://www.dailyzaps.com/`
 
 名称：All Things AI
 
-网址：https://allthingsai.com/
+网址：`https://allthingsai.com/`
 
 名称：Favird
 
-网址：https://favird.com/
+网址：`https://favird.com/`
 
 名称：AI Depot
 
-网址：https://aidepot.co/
+网址：`https://aidepot.co/`
 
 名称：Future Pedia
 
-网址：https://www.futurepedia.io/
+网址：`https://www.futurepedia.io/`
 
 名称：SaaS  AI Tools
 
-网址：https://saasaitools.com/
+网址：`https://saasaitools.com/`
 
-### 国内
+## 国内
 
 名称：AI工具集
 
@@ -52,12 +53,12 @@
 
 名称：Likejay
 
-网址：https://www.likejay.cn/
+网址：`https://www.likejay.cn/`
 
 名称：AI深度导航
 
-网址：https://www.deepdh.com/ai
+网址：`https://www.deepdh.com/ai`
 
 名称：AI-TOOLS
 
-网址：https://ai-tools.plus/
+网址：`https://ai-tools.plus/`

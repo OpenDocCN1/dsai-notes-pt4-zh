@@ -1,3 +1,4 @@
+
 # Trae 测评，联手 AI 五分钟用 Vue 实现划拳游戏
 
 > 来源：[https://agijuejin.feishu.cn/docx/ULWXdzQzdoTWxnx2epYczbainje](https://agijuejin.feishu.cn/docx/ULWXdzQzdoTWxnx2epYczbainje)
@@ -14,7 +15,7 @@
 
 ## 速览
 
-[**本文所使用的 Trae **](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)免费下载链接： www.trae.ai/
+[本文所使用的 Trae](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article)免费下载链接：`www.trae.ai/`
 
 最近，DeepSeek 火爆全球，GPT 等大模型在 IDE 中的应用也日益成熟。
 
@@ -38,121 +39,123 @@ npm init vite@latest
 
 如果忘记了上述流程，也不需要亲自去查 Vite 官网，在 Trae 中免费向 GPT 聊天就会直接告诉你终端命令和基本流程：
 
+![](img/b61115b502288b27e40c051e1269cc87.png)
 
 ## 功能实现
 
-划拳游戏的基本原理并不复杂，我们使用 Math.random() 伪装 AI 人机，产生一个随机的手势，然后再让它和玩家点击选择的手势进行比较，判断胜负即可。
+划拳游戏的基本原理并不复杂，我们使用 `Math.random()` 伪装 AI 人机，产生一个随机的手势，然后再让它和玩家点击选择的手势进行比较，判断胜负即可。
 
 整个算法能且仅能产生三种结果：
 
-+   双方手势相同，平局；
++ 双方手势相同，平局；
 
-+   玩家获胜；
++ 玩家获胜；
 
-+   AI 获胜。
++ AI 获胜。
 
-这里主要使用到 v-for 指令来生成可供玩家选择的手势列表，然后使用 v-on 指令来绑定点击事件，玩家选中手势后触发，然后使用 setTimeout() 开始定时器生成 AI 的手势，两者比较胜负即可。
+这里主要使用到 `v-for` 指令来生成可供玩家选择的手势列表，然后使用 `v-on` 指令来绑定点击事件，玩家选中手势后触发，然后使用 `setTimeout()` 开始定时器生成 AI 的手势，两者比较胜负即可。
 
 在 DOM 操作中，经常会出现一些性能有害的写法，比如我们可能下意识地在每个手势上绑定了点击事件，浪费性能。
 
 性能更友好的方案是利用事件委托机制，即只在父元素上绑定一次点击事件，然后在事件处理函数中判断点击的目标元素是否是我们需要的手势元素，如果是，再触发相应的操作。
 
-我们可以询问 Trae 如何使用 Vue 在 v-for 列表上高效地绑定事件，它会给出一个解决方案：
+我们可以询问 Trae 如何使用 Vue 在 `v-for` 列表上高效地绑定事件，它会给出一个解决方案：
 
+![](img/3d90f09a12db0fbeec5979256d5f498f.png)
 
-这里另一个问题在于，获取手势的 DOM 元素时，一般我们可以使用 ref() 来获取，并自定义一些真实 DOM 的操作。但是，如果还需要这个 ref 对应的父级元素 —— 即整个 v-for 的列表元素时，我们该怎么实现呢？
+这里另一个问题在于，获取手势的 DOM 元素时，一般我们可以使用 `ref()` 来获取，并自定义一些真实 DOM 的操作。但是，如果还需要这个 `ref` 对应的父级元素 —— 即整个 `v-for` 的列表元素时，我们该怎么实现呢？
 
-这里分享一个 Trae 和 GPT 模型提供的新版 Vue 小技巧，可以使用 useTemplateRef() 来获取 v-for 列表元素的父级元素。
+这里分享一个 Trae 和 GPT 模型提供的新版 Vue 小技巧，可以使用 `useTemplateRef()` 来获取 `v-for` 列表元素的父级元素。
 
 ![](img/e9a350fd531905113fdd1de272a1f208.png)
 
-然后再结合使用 ref() 在事件处理程序中自定义操作。
+然后再结合使用 `ref()` 在事件处理程序中自定义操作。
 
-```
-&lt;script setup&gt;
-  import { ref, useTemplateRef } from &#x27;vue&#x27;
+```vue
+<script setup>
+  import { ref, useTemplateRef } from 'vue'
 
-  const main = useTemplateRef(&#x27;main&#x27;)
-  const user = useTemplateRef(&#x27;user&#x27;)
-  const ai = useTemplateRef(&#x27;ai&#x27;)
-  const result = useTemplateRef(&#x27;result&#x27;)
-  const imgs = useTemplateRef(&#x27;imgs&#x27;)
+  const main = useTemplateRef('main')
+  const user = useTemplateRef('user')
+  const ai = useTemplateRef('ai')
+  const result = useTemplateRef('result')
+  const imgs = useTemplateRef('imgs')
 
   function onClick(e, idx) {
-    e.target.classList.add(&#x27;active&#x27;)
-    user.value.src = ai.value.src = &#x27;/images/rock.png&#x27;
-    result.textContent = &#x27;稍等一下...&#x27;
-    imgs.value.forEach((el, index) =&gt; {
-      idx !== index &amp;&amp; el.classList.remove(&#x27;active&#x27;)
+    e.target.classList.add('active')
+    user.value.src = ai.value.src = '/images/rock.png'
+    result.textContent = '稍等一下...'
+    imgs.value.forEach((el, index) => {
+      idx !== index && el.classList.remove('active')
     })
-    main.value.classList.add(&#x27;start&#x27;)
+    main.value.classList.add('start')
     // add animateion
-    let time = setTimeout(() =&gt; {
-      let imageSrc = e.target.querySelector(&#x27;img&#x27;).src
+    let time = setTimeout(() => {
+      let imageSrc = e.target.querySelector('img').src
       user.value.src = imageSrc
-      main.value.classList.remove(&#x27;start&#x27;)
+      main.value.classList.remove('start')
 
       let randomNumber = Math.floor(Math.random() * 3)
       let cpuImages = [
-        &#x27;/images/rock.png&#x27;,
-        &#x27;/images/paper.png&#x27;,
-        &#x27;/images/scissor.png&#x27;,
+        '/images/rock.png',
+        '/images/paper.png',
+        '/images/scissor.png',
       ]
       ai.value.src = cpuImages[randomNumber]
-      let cpuValue = [&#x27;R&#x27;, &#x27;P&#x27;, &#x27;S&#x27;][randomNumber]
-      let useValue = [&#x27;R&#x27;, &#x27;P&#x27;, &#x27;S&#x27;][idx]
+      let cpuValue = ['R', 'P', 'S'][randomNumber]
+      let useValue = ['R', 'P', 'S'][idx]
       // create an object with all possible outcomes
       let outcomes = {
-        RR: &#x27;Draw&#x27;,
-        RP: &#x27;AI&#x27;,
-        RS: &#x27;你&#x27;,
-        PP: &#x27;Draw&#x27;,
-        PR: &#x27;你&#x27;,
-        PS: &#x27;AI&#x27;,
-        SS: &#x27;Draw&#x27;,
-        SR: &#x27;AI&#x27;,
-        SP: &#x27;你&#x27;,
+        RR: 'Draw',
+        RP: 'AI',
+        RS: '你',
+        PP: 'Draw',
+        PR: '你',
+        PS: 'AI',
+        SS: 'Draw',
+        SR: 'AI',
+        SP: '你',
       }
       // look up the outcome value based on user and CPU options
       let outComeValue = outcomes[useValue + cpuValue]
       result.value.textContent =
-        useValue === cpuValue ? &#x27;平手&#x27; : `${outComeValue}胜出!`
+        useValue === cpuValue ? '平手' : `${outComeValue}胜出!`
     }, 2500)
   }
 
   let items = ref([
-    { text: &#x27;石头&#x27;, src: &#x27;/images/rock.png&#x27; },
-    { text: &#x27;布&#x27;, src: &#x27;/images/paper.png&#x27; },
-    { text: &#x27;剪刀&#x27;, src: &#x27;/images/scissor.png&#x27; },
+    { text: '石头', src: '/images/rock.png' },
+    { text: '布', src: '/images/paper.png' },
+    { text: '剪刀', src: '/images/scissor.png' },
   ])
-&lt;/script&gt;
+</script>
 
-&lt;template&gt;
-  &lt;section class=&quot;container&quot; ref=&quot;main&quot;&gt;
-    &lt;div class=&quot;result_field&quot;&gt;
-      &lt;div class=&quot;result_images&quot;&gt;
-        &lt;span class=&quot;user_result&quot;&gt;
-          &lt;img src=&quot;/images/rock.png&quot; ref=&quot;user&quot; /&gt;
-        &lt;/span&gt;
-        &lt;span class=&quot;cpu_result&quot;&gt;
-          &lt;img src=&quot;/images/rock.png&quot; ref=&quot;ai&quot; /&gt;
-        &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;result&quot; ref=&quot;result&quot;&gt;点击出手！&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;option_images&quot;&gt;
-      &lt;span
-        class=&quot;option_image&quot;
-        v-for=&quot;(el, idx) in items&quot;
-        @click=&quot;onClick($event, idx)&quot;
-        ref=&quot;imgs&quot;
-      &gt;
-        &lt;img :src=&quot;el.src&quot; /&gt;
-        &lt;p&gt;{{ el.text }}&lt;/p&gt;
-      &lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/template&gt;
+<template>
+  <section class="container" ref="main">
+    <div class="result_field">
+      <div class="result_images">
+        <span class="user_result">
+          <img src="/images/rock.png" ref="user" />
+        </span>
+        <span class="cpu_result">
+          <img src="/images/rock.png" ref="ai" />
+        </span>
+      </div>
+      <div class="result" ref="result">点击出手！</div>
+    </div>
+    <div class="option_images">
+      <span
+        class="option_image"
+        v-for="(el, idx) in items"
+        @click="onClick($event, idx)"
+        ref="imgs"
+      >
+        <img :src="el.src" />
+        <p>{{ el.text }}</p>
+      </span>
+    </div>
+  </section>
+</template>
 ```
 
 核心算法和基本功能实现之后，设计自己的喜欢的样式即可，我只是简单地使用了油管上的同款样式。
@@ -163,8 +166,8 @@ npm init vite@latest
 
 ![](img/d1c20b305cacd21cea4f8da2184476d5.png)
 
-本文我们联手 Trae AI 编辑器使用 Vue 重构了一个划拳游戏，实现了基本的功能和样式，也展示了如何使用 Vue 来高效地绑定事件和新 API useTemplateRef() 。
+本文我们联手 Trae AI 编辑器使用 Vue 重构了一个划拳游戏，实现了基本的功能和样式，也展示了如何使用 Vue 来高效地绑定事件和新 API `useTemplateRef()` 。
 
 Trae 目前的大模型是我比较喜欢的 DeepSeek 和 GPT，使用起来更加得心应手。除了可以在 IDE 中免费白嫖主流的大模型，Trae 还支持一键导入 VSCode 的配置和 GitHub 的一键登录，这种无缝衔接的用户体验非常棒。
 
-听说Trae 国内版也上线了，大家也可以试试看：www.trae.com.cn/
+听说Trae 国内版也上线了，大家也可以试试看：`www.trae.com.cn/`

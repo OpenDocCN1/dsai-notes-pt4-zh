@@ -1,22 +1,21 @@
+
 # 爆肝 48s，我用 AI 制作了部《三体》预告片丨RTE开发者日报 Vol.24
 
 > 来源：[https://docs.feishu.cn/docx/QZjzdLS7ZoD4D5x2Tq3cU7bxnne](https://docs.feishu.cn/docx/QZjzdLS7ZoD4D5x2Tq3cU7bxnne)
 
 开发者朋友们大家好：
 
-这里**是「RTE 开发者日报**」，每天和大家一起**看新**闻、聊八卦。
+这里是「RTE 开发者日报」，每天和大家一起看新闻、聊八卦。
 
-**
-
-我**们的社区编辑团**队会**整理分享 RT**E **(Real T**im**e Engagement) 领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
+我们的社区编辑团队会整理分享 RTE (Real Time Engagement) 领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
 
 本期编辑：@Asui，@CY，@Cynthia
 
 ---
 
-### **一、有话题的新闻**
+### 一、有话题的新闻
 
-**1、福布斯发布 2023 云计算** 100 强榜单，OpenAI 位列第一
+1、福布斯发布 2023 云计算 100 强榜单，OpenAI 位列第一
 
 ![](img/d9902b45ded999ab2e9bbc0a8af00c0e.png)
 
@@ -34,7 +33,7 @@ OpenAI 排名第一，也是首次上榜，排名第二的是 Databricks。在�
 
 根据最新泄露的图片，苹果将在 iPhone 15 系列全面采用 USB-C。据报道，这些照片是由 X 上的用户「fix Apple」泄露的，画面突出显示了 iPhone 15、iPhone 15 Plus 和 iPhone 15 Pro Max 的 USB-C 端口。苹果预计将在两年内继续销售 iPhone 13 和 iPhone 14 系列，因此 Lighting 还不会消失。这除了方便用户携带一根充电线为 Mac、iPhone 和 iPad 充电之外，苹果预计还将提高 iPhone 15 Pro 的充电和数据传输速度，USB-C 端口将使 Apple 支持速度高达 40Gbps 的 Thunderbolt。苹果秋季发布会预计将于 9 月 12 日或 13 日举行，苹果秋季发布会应该仍然会采用录播的形式举行。（@中关村在线）
 
-**5、Stability AI 推出 Stabl**eCode，一款用于写代码的大型语言模型
+5、Stability AI 推出 StableCode，一款用于写代码的大型语言模型
 
 Stability AI 发布了其新的开放大型语言模型 StableCode，该模型旨在帮助用户生成编程语言代码，基于 Transformer 神经网络打造。（@品玩）
 
@@ -48,7 +47,7 @@ BlackBerry 的最新报告显示，全球 75% 的组织目前正在考虑或已�
 
 详情可查看官方介绍：https://developers.googleblog.com/2023/08/introducing-project-idx-experiment-to-improve-full-stack-multiplatform-app-development.html
 
-**8、谷歌和环球音乐公司正就授权艺**术家使用人工智能生成的旋律及声音进行谈判
+8、谷歌和环球音乐公司正就授权艺术家使用人工智能生成的旋律及声音进行谈判
 
 据报道，谷歌正在与环球音乐（Universal Music）洽谈AI音乐版权授权问题，主要是AI往往会在没有获得授权的前提下使用艺术家的声音和旋律来生成新音乐。AI会模仿艺术家的声音来生成音乐，而音乐产业已经开始着手处理AI深度伪造（AI Deepfake）歌曲的问题。
 
@@ -78,13 +77,13 @@ BlackBerry 的最新报告显示，全球 75% 的组织目前正在考虑或已�
 
 既做模型也做应用，是百川的路线，也是如今国内大模型厂商的缩影。无论是大厂派、互联网创业派还是学院派的模型团队，大家都在往 GPT-3.5 到 GPT-4 之间的目标前进。在效果上，大家没有办法拉开决定性差距。从造大模型到造应用，短短半年过去了，国内「百模大战」的第一阶段追逐战也告一段落。
 
-“现在还是群模乱舞的状态，未来慢慢会有更多的分层。接下来的应用层之争，才是资源、技术、产品、商业化的全方位「持久战」。”（@爱范儿）
+“现在还是群模乱舞的状态，未来慢慢会有更多的分层。接下来的应用层之争，才是资源、技术、产品、商业化的全方位「持久战」。（@爱范儿）
 
 ---
 
 ### 三、有思考的文章
 
-[1、苹果在AI原生计](https://mp.weixin.qq.com/s?__biz=Mzg4Mzg3MDU5NQ==&mid=2247487099&idx=1&sn=fc0640c0d1e3a4242180e500cae19ad5&chksm=cf419097f83619817671694dac649d19ffd3008ea4c36dd17ac3bc9d3d4948c6fd73f9cd3d78&mpshare=1&scene=1&srcid=0810TApHMx3ka1GFnFu7S955&sharer_sharetime=1691626714596&sharer_shareid=6133b0aa204d5f89ca7ba405241eb7fb&version=4.0.19.70165&platform=mac#rd)算平台的分裂（@广源的至诚思考）
+[1、苹果在AI原生计算平台的分裂](https://mp.weixin.qq.com/s?__biz=Mzg4Mzg3MDU5NQ==&mid=2247487099&idx=1&sn=fc0640c0d1e3a4242180e500cae19ad5&chksm=cf419097f83619817671694dac649d19ffd3008ea4c36dd17ac3bc9d3d4948c6fd73f9cd3d78&mpshare=1&scene=1&srcid=0810TApHMx3ka1GFnFu7S955&sharer_sharetime=1691626714596&sharer_shareid=6133b0aa204d5f89ca7ba405241eb7fb&version=4.0.19.70165&platform=mac#rd)（@广源的至诚思考）
 
 桌面互联网时代的计算平台是 PC，移动互联网时代的计算平台是手机，那么支撑 AI 时代的智能计算平台应该是什么呢？开启了前两个时代的苹果，在这个问题上发生了大分裂。
 
@@ -92,15 +91,13 @@ Tim Cook 认为是 AR/VR 设备，发布了 Vision Pro。但由苹果元老、�
 
 关于计算平台演变历史、关于新一代计算平台的探索， 创造 Mac 和 iPhone 的苹果会给出怎样的方案？
 
-[2、爆肝48](https://www.bilibili.com/video/BV1rN411879p/?share_source=copy_web&vd_source=b0e3ed68ed9f01a17d5fef0f941d202a)s，我用 AI 制作了部《三体》预告片（@曲东奇）
+[2、爆肝48s，我用 AI 制作了部《三体》预告片](https://www.bilibili.com/video/BV1rN411879p/?share_source=copy_web&vd_source=b0e3ed68ed9f01a17d5fef0f941d202a)（@曲东奇）
 
 这是一段小视频，作者是B站博主@曲东奇。他自述很早以前就有个当导演的梦想，正好赶上如今 AI 发展的好时代花了两个晚上完成了此短片，共计 130 张图片和 79 段短视频，致敬刘慈欣先生。视频地址：
 
-+   GPT出的剧本
-
-+   Md和Sd出图
-
-+   Mj和PK出视频
++ GPT出的剧本
++ Md和Sd出图
++ Mj和PK出视频
 
 ---
 
@@ -116,11 +113,9 @@ Tim Cook 认为是 AR/VR 设备，发布了 Vision Pro。但由苹果元老、�
 
 ---
 
-**
+### 写在最后
 
-写在最后**：
-
-我们欢迎更多的小伙伴参**与「RTE 开发者日报**」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
+我们欢迎更多的小伙伴参与「RTE 开发者日报」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
 
 对于任何反馈（包括但不限于内容上、形式上）我们不胜感激、并有小惊喜回馈，例如你希望从日报中看到哪些内容；自己推荐的信源、话题、活动等；或者列举几个你喜欢看、平时常看的内容渠道；内容排版或呈现形式上有哪些可以改进的地方等。
 

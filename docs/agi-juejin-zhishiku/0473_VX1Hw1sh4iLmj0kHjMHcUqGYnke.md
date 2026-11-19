@@ -1,3 +1,4 @@
+
 # 导师爆料：这篇CVPR最佳学生论文，从想法到成稿只用一个月，源自业余灵感
 
 > 来源：[https://agijuejin.feishu.cn/docx/JQWUdMjSBoAIgyxibXqcIPrhnlc](https://agijuejin.feishu.cn/docx/JQWUdMjSBoAIgyxibXqcIPrhnlc)
@@ -10,7 +11,7 @@
 
 CVPR 2024 的最佳学生论文，竟然是用一个月的时间写出来的。
 
-[北京时间 6 月 2](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650922810&idx=1&sn=25a68b38feb6393739738fe669bdfd65&chksm=84e41b44b393925287da7c592cd0136415f3f033fdebabe568bd1f9692a671468c96a791ed15&scene=21#wechat_redirect)0 日凌晨， CVPR 2024 正式公布了最佳论文、最佳学生论文等奖项。其中，获得最佳论文的有两篇文章 ——BioCLIP 和 Mip-Splatting。
+[北京时间 6 月 2](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650922810&idx=1&sn=25a68b38feb6393739738fe669bdfd65&chksm=84e41b44b393925287da7c592cd0136415f3f033fdebabe568bd1f9692a671468c96a791ed15&scene=21#wechat_redirect)0 日凌晨，CVPR 2024 正式公布了最佳论文、最佳学生论文等奖项。其中，获得最佳论文的有两篇文章 ——BioCLIP 和 Mip-Splatting。
 
 据 Mip-Splatting 论文一作 Zehao Yu 的导师、图宾根大学教授 Andreas Geiger 透露，这篇论文从想法公布到成稿，只用了一个月的时间。
 
@@ -46,7 +47,7 @@ Mip-Splatting 与其他方法的效果对比。
 
 ![](img/43179949211f9136ca4331d32217507b.png)
 
-论文链接：https://arxiv.org/pdf/2311.16493
+论文链接：`https://arxiv.org/pdf/2311.16493`
 
 一个简单的想法，用了短短一个月就写成了论文，还拿到了 CVPR 最佳学生论文奖，不知其他研究者听到有何感想。
 
@@ -54,7 +55,7 @@ Andreas Geiger 也谦虚得说，这里面有运气的成分（有人可能认�
 
 > 研究往往是非常非线性的。在从事某项工作的同时，你会发现其他的东西。最重要的一点是要努力工作，充满热情，充满好奇心，不断尝试新事物。要有创造力。提出疯狂的想法。用未曾设计过的方式测试现有模型。不断前进。这就是每个研究人员的核心：好奇心。试图探究事物的本质。深入了解它们，从而（有时在不经意间非常意外地）做出新发现。
 
-写到这里，他还推荐了苹果高级科学家 Vladlen Koltun 在 CVPR 2018 年的一个演讲，主题是「Doing (Good) Research」。（演讲链接：https://www.youtube.com/watch?v=4LEZED1YXm0&t=1420s）
+写到这里，他还推荐了苹果高级科学家 Vladlen Koltun 在 CVPR 2018 年的一个演讲，主题是「Doing (Good) Research」。（演讲链接：`https://www.youtube.com/watch?v=4LEZED1YXm0&t=1420s`）
 
 不过，他也指出，在现行的科研系统中，科学家要通过提交研究计划、 撰写资助申请书来获取研究项目资金，这和好奇心驱动的研究理念很不相称，尤其是在 AI 这样一个快速发展的领域。
 
@@ -64,6 +65,6 @@ Andreas Geiger 也谦虚得说，这里面有运气的成分（有人可能认�
 
 ![](img/d7e486576fc60c504891084dc46b35c9.png)
 
-个人主页：https://niujinshuchong.github.io/
+个人主页：`https://niujinshuchong.github.io/`
 
-参考链接：https://www.facebook.com/andreas.geiger.395
+参考链接：`https://www.facebook.com/andreas.geiger.395`

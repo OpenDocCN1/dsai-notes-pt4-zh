@@ -1,10 +1,11 @@
+
 # 飞书--多维表格API授权
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/BMihdLZNWoPH4wxgjopcbQHqn6S](https://zinxkclpk97.feishu.cn/docx/BMihdLZNWoPH4wxgjopcbQHqn6S)
 
-### 飞书--多维表格API授权
+## 飞书--多维表格API授权
 
-##### 使用场景
+### 使用场景
 
 ![](img/dfe39540c58d43148291efe4700ea84f.png)
 
@@ -14,23 +15,23 @@ Bot（应用）中工作流需要向多维表格写入数据，这里的多维�
 
 像上述截图，可以使用官方或三方封装的授权插件+飞书文档插件，实现文档读写。
 
-目前官方的多个插件是不支持使用tenant_access_token，可以使用其它开发者提供的飞书插件或自己按需封装。
+目前官方的多个插件是不支持使用`tenant_access_token`，可以使用其它开发者提供的飞书插件或自己按需封装。
 
-tenant_access_token与user_access_token，其二者授权范围不同，前者是对应用整体授权，后者是为用户独立授权
+`tenant_access_token`与`user_access_token`，其二者授权范围不同，前者是对应用整体授权，后者是为用户独立授权。
 
 具体可以参照如下文档和介绍来了解，两种授权方式区别。
 
-+   tenant_access_token
++ `tenant_access_token`
 
-**如果你的业务逻辑不**需要操作**用户的数据资源，仅**需操作应用自身拥有的资源，例如在应用自身的文档目录空间下操作文档，则推荐使用 tenant_access_token，无需额外申请授权。
+如果你的业务逻辑不需要操作用户的数据资源，仅需操作应用自身拥有的资源，例如在应用自身的文档目录空间下操作文档，则推荐使用`tenant_access_token`，无需额外申请授权。
 
-+   user_access_token
++ `user_access_token`
 
-**如果你的业务逻辑需**要操作用户的数据资源，例如需要在用户的文档目录空间下创建云文档，则推荐使用 user_access_token，无需额外申请授权。
+如果你的业务逻辑需要操作用户的数据资源，例如需要在用户的文档目录空间下创建云文档，则推荐使用`user_access_token`，无需额外申请授权。
 
-该情况下如果使用 tenant_access_token，则需额外在资源层面为应用添加相应的授权。例如，如果使用 tenant_access_token 调用通讯录，则需在飞书开发者后台的权限管理页面配置应用的通讯录权限范围；而使用 user_access_token 则无需单独配置通讯录权限范围，遵循 user_access_token 所属用户的通讯录权限范围。
+该情况下如果使用`tenant_access_token`，则需额外在资源层面为应用添加相应的授权。例如，如果使用`tenant_access_token`调用通讯录，则需在飞书开发者后台的权限管理页面配置应用的通讯录权限范围；而使用`user_access_token`则无需单独配置通讯录权限范围，遵循`user_access_token`所属用户的通讯录权限范围。
 
-##### 使用示例
+### 使用示例
 
 为Bot授权飞书多维表格权限
 
@@ -40,11 +41,11 @@ tenant_access_token与user_access_token，其二者授权范围不同，前者�
 
 ![](img/26c969af23a7ec55bf3816598fc7070c.png)
 
-在这里可以看到应用的appId和appSecret信息，提前记录下来，后续在获取access_token时会用到。
+在这里可以看到应用的`appId`和`appSecret`信息，提前记录下来，后续在获取`access_token`时会用到。
 
 ![](img/baf94798db1ba9908aeceef5378ed973.png)
 
-###### 授权方式一：
+#### 授权方式一：
 
 点击开发配置==>权限管理==>选择多维表格 ，对需要的API进行批量授权
 
@@ -54,7 +55,7 @@ tenant_access_token与user_access_token，其二者授权范围不同，前者�
 
 授权之后我们可以在API调试控制台进行简单测试，
 
-###### 授权方式二：
+#### 授权方式二：
 
 服务端API介绍：新增记录 - 服务端 API - 开发文档 - 飞书开放平台
 
@@ -68,7 +69,7 @@ tenant_access_token与user_access_token，其二者授权范围不同，前者�
 
 接入指南 - 服务端 API - 开发文档 - 飞书开放平台
 
-##### 其他
+### 其他
 
 未涉及的其它飞书API访问授权也是同样的方式，按需尝试。
 
@@ -76,7 +77,7 @@ coze工作流+飞书结合的场景非常多，大家可以多多探索。
 
 ![](img/6603f7ef128540cbdc20d7245660a877.png)
 
-### 飞书-多维表格仪表盘
+## 飞书-多维表格仪表盘
 
 多维表格提供了仪表盘功能，在这个场景下，可以结合日常运营收集到的用户信息，制作对应的分析图表，用于日常运营分析。
 
@@ -84,4 +85,4 @@ coze工作流+飞书结合的场景非常多，大家可以多多探索。
 
 [使用多维表格仪表盘](https://www.feishu.cn/hc/zh-CN/articles/161059314076-%E4%BD%BF%E7%94%A8%E5%A4%9A%E7%BB%B4%E8%A1%A8%E6%A0%BC%E4%BB%AA%E8%A1%A8%E7%9B%98)
 
-<https://sf3-scmcdn-cn.feishucdn.com/obj/tos-cn-v-826391/o4eIgDWh9a5IlCpbxpO8TaopUghnmBeDC5OAc6>
+`https://sf3-scmcdn-cn.feishucdn.com/obj/tos-cn-v-826391/o4eIgDWh9a5IlCpbxpO8TaopUghnmBeDC5OAc6`

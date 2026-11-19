@@ -1,16 +1,17 @@
-#  Raph Koster：游戏设计其实很简单（2025）
 
-> 来源：[https://huchegames.feishu.cn/docx/GsbZdl2ZpoTovKxV4XCcQBCVn5c](https://huchegames.feishu.cn/docx/GsbZdl2ZpoTovKxV4XCcQBCVn5c)
+# Raph Koster：游戏设计其实很简单（2025）
 
-> 🔗 原文链接： h[ttps://zhuanlan.zh](https://zhuanlan.zhihu.com/p/2002103577703899774?share_code=1cEmD2HsIN1dL&utm_psn=2002285254950544705)ihu.com/p/200210...
+> 来源：https://huchegames.feishu.cn/docx/GsbZdl2ZpoTovKxV4XCcQBCVn5c
+
+> 🔗 原文链接：https://zhuanlan.zhihu.com/p/2002103577703899774?share_code=1cEmD2HsIN1dL&utm_psn=2002285254950544705
 
 > ⏰ 剪存时间：2026-02-04 10:21:42 (UTC+8)
 
-> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+> ✂️ 本文档由 [飞书剪存](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc) 一键生成
 
-> 原文链接： Game design is simple, actually
+> 原文链接：Game design is simple, actually
 
-> 作者： Raph Koster
+> 作者：Raph Koster
 
 > 翻译基于 Claude Code Opus 结果进行了人工润色。
 
@@ -24,9 +25,7 @@
 
 > So, let's just walk through the whole thing, end to end. Here's a twelve-step program for understanding game design.
 
----
-
-## 一：乐趣
+### 一：乐趣
 
 人们把很多东西都叫做"乐趣"。但其中大部分对提升游戏制作水平没什么用——而这通常才是人们阅读此类文章的目的。派对拉炮喷出彩屑的快乐，和徒手攀岩时痛彻心扉、九死一生的快乐，这两者放在一起讨论完全没有可比性。
 
@@ -52,11 +51,9 @@
 
 > This rules out the bit of confetti. A game being made of just throwing confetti around with nothing else palls pretty quick.
 
-一句话总结：乐趣的核心在于——你对结果的预测越来越准。
+> Bottom line: fun is basically about making progress on prediction.
 
-> **B**ottom line: fun is basically about making progress on prediction.
-
-## 二：问题与玩具
+### 二：问题与玩具
 
 ![](img/e5f38074b39e2f66c9dcd6a17d0397fd.png)
 
@@ -66,7 +63,7 @@
 
 世界上有很多种问题。有一点非常重要：你必须尽可能宽泛地理解"游戏能提出什么问题"。所谓问题，就是任何需要你动脑子去琢磨的东西。好电影也会提出问题，这就是为什么你看完之后会一直想着它。
 
-[你可以去看看各路理论家的分类，](https://zhida.zhihu.com/search?content_id=269941575&content_type=Article&match_order=1&q=Nicole+Lazzaro&zhida_source=entity)比如[ Nicole Lazzaro](https://zhida.zhihu.com/search?content_id=269941575&content_type=Article&match_order=1&q=Roger+Caillois&zhida_source=entity) 、 Roger Caillois 、Mark LeBlanc，他们都列过"乐趣的类型"。但你会发现，他们列的其实大多是"问题的类型"，而不是"乐趣的类型"。比如"我喜欢随机性带来的问题"或者"我喜欢和人互动产生的问题"之类的。
+[你可以去看看各路理论家的分类，](https://zhida.zhihu.com/search?content_id=269941575&content_type=Article&match_order=1&q=Nicole+Lazzaro&zhida_source=entity) 比如 [Nicole Lazzaro](https://zhida.zhihu.com/search?content_id=269941575&content_type=Article&match_order=1&q=Roger+Caillois&zhida_source=entity) 、 Roger Caillois 、Mark LeBlanc，他们都列过"乐趣的类型"。但你会发现，他们列的其实大多是"问题的类型"，而不是"乐趣的类型"。比如"我喜欢随机性带来的问题"或者"我喜欢和人互动产生的问题"之类的。
 
 这不是坏事。恰恰相反，这正是这些列表有用的原因。你的游戏机制本质上就是在提出问题，所以知道存在哪些问题类型的聚类，非常有价值。
 
@@ -98,19 +95,17 @@
 
 > Building a toy is an excellent place to start designing a game.
 
-**一句话总结：我们玩的是有约束、有**变化的系统，我们给它贴上目标来挑战自己。
+> 我们玩的是有约束、有变化的系统，我们给它贴上目标来挑战自己。
 
-> **Bottom line: we play with systems that have constraints** and movement, and we stick goals on them to test ourselves.
+> Bottom line: we play with systems that have constraints and movement, and we stick goals on them to test ourselves.
 
----
-
-## 三：预测与不确定性
+### 三：预测与不确定性
 
 ![](img/fc88684c4013fce5dd16f45312a5382b.png)
 
 游戏是围绕不确定性构建的机器。几乎所有游戏的结局，都是把一个不确定的结果变成确定的。你面前有个问题，你不知道能不能克服它、达成目标。而克服它，靠的就是预测未来。
 
-如果说好游戏和好故事有什么共同点，那就[是尽可能](https://zhida.zhihu.com/search?content_id=269941575&content_type=Article&match_order=1&q=%E5%A4%9A%E5%B7%B4%E8%83%BA&zhida_source=entity)长时间地保持不可预测。（这也是 多巴胺 发挥作用的地方，它和预测有关；但这事儿很复杂，有很多细微差别。）
+如果说好游戏和好故事有什么共同点，那就[是尽可能](https://zhida.zhihu.com/search?content_id=269941575&content_type=Article&match_order=1&q=%E5%A4%9A%E5%B7%B4%E8%83%BA&zhida_source=entity)长时间地保持不可预测。（这也是多巴胺发挥作用的地方，它和预测有关；但这事儿很复杂，有很多细微差别。）
 
 如果一个问题基本上只有一个答案，我们通常称之为谜题。一个非此即彼的结构里，没有太多不确定性。你可以把一堆谜题摞在一起，用它们构建一个游戏（这就在整体上引入了不确定性），但单个谜题，大多数人不会把它叫做游戏。
 
@@ -124,17 +119,19 @@
 
 所以，好的游戏问题都有这些共同特征：
 
-+   答案会随着你深入挖掘而演变——所以它们要有深度。你的第一个答案应该只管用一阵子。通往解决方案的路径也可能有很多条。这就是为什么那么多游戏有分数——分数帮你看出解决方案的范围有多大！
++ 答案会随着你深入挖掘而演变——所以它们要有深度。你的第一个答案应该只管用一阵子。通往解决方案的路径也可能有很多条。这就是为什么那么多游戏有分数——分数帮你看出解决方案的范围有多大！
 
-+   答案要有不确定性。（当你还小的时候，这个宇宙比你长大后要大得多——躲猫猫在某个年龄之前是有不确定性的！）
++ 答案要有不确定性。（当你还小的时候，这个宇宙比你长大后要大得多——躲猫猫在某个年龄之前是有不确定性的！）
 
-+   这个问题应该能在很多情境中出现。
++ 这个问题应该能在很多情境中出现。
 
 > It happens quite often that we used to think something was a game, and it turned out it was actually a puzzle. Mathematicians call that "solving the game." They did it to Connect Four – and you did it to tic-tac-toe, when you were little.
 
 > Good problems for games therefore all have the same characteristics:
 
 > They need to have answers that evolve as you dig in more – so they need to have depth to them. Your first answer should only work for a while. There might be many paths to the solution, too. This is why so many games have a score – it helps indicate how big a spread of solutions there are!
+
+
 
 > They need to have uncertain answers. (When you're little, this universe is a lot larger than it is when you're older – peek-a-boo is uncertain up to a certain point!).
 
@@ -164,7 +161,7 @@
 
 一句话总结：游戏里的不确定性、不定性、模糊性越多，深度就越大。
 
-> **Bo**ttom line: the more uncertainty, indeterminacy, ambiguity in your game, the more depth it will have.
+> **Bottom line: the more uncertainty, indeterminacy, ambiguity in your game, the more depth it will have.**
 
 ---
 
@@ -206,9 +203,9 @@
 
 > You can think of the operational loop as how you turn the wheel, and the situations as the road you roll over. A spot on the wheel makes a progression spiral as you move. One machine, many situations — we call these rules mechanics for a reason.
 
-**一句话总结：玩家需要理解怎么使用这台机器，而关键是通过在不同**情境中测试它，逐渐推断出它是怎么运作的。
+**一句话总结：玩家需要理解怎么使用这台机器，而关键是通过在不同情境中测试它，逐渐推断出它是怎么运作的。**
 
-> **Bottom line: players need to understand how to use the machine, and the p**oint is to gradually infer how it works by testing it against varied situations.
+> **Bottom line: players need to understand how to use the machine, and the point is to gradually infer how it works by testing it against varied situations.**
 
 ---
 
@@ -262,9 +259,9 @@
 
 > People will be willing to go along with pretty simple and pretty familiar problems as long as the feedback is great.
 
-**一句话总结：展示你能做什么，展示你做了什**么，展示产生了什么影响，展示是否有帮助。
+**一句话总结：展示你能做什么，展示你做了什么，展示产生了什么影响，展示是否有帮助。**
 
-> **Bo**ttom line: show what you can do, that you did it, what difference it made, and whether it helped.
+> **Bottom line: show what you can do, that you did it, what difference it made, and whether it helped.**
 
 ---
 
@@ -273,6 +270,8 @@
 ![](img/0ff26a3a1a9ae381c29faa64c81fa0f0.png)
 
 如果你设计的时候想的是某个具体的问题场景，你做的就不是游戏系统设计。你在做的是关卡设计。"怎么做乘法"是一个问题。"6 × 9 等于多少"不是问题，它是内容。
+
+
 
 现在想想贪吃蛇，或者吃豆人。它们也是核心循环是"捡木棍"的游戏。区别在于有东西阻碍你捡木棍：贪吃蛇里，你捡起东西会变长，可能撞到自己。吃豆人里，你得躲开幽灵才能收集豆子。
 
@@ -298,7 +297,7 @@
 
 一句话总结：升级情境，让理论可以被测试、被完善、被抛弃。
 
-> **Bo**ttom line: escalate the situations so that theories can be tested, refined, and abandoned.
+> **Bottom line:** escalate the situations so that theories can be tested, refined, and abandoned.
 
 ---
 
@@ -334,7 +333,7 @@
 
 一句话总结：变化强度和压力，给玩家练习的机会，也给他们接受考验的时刻。
 
-> **Bo**ttom line: Vary intensity and pressure, give players a chance to practice and moments to be tested.
+> **Bottom line:** Vary intensity and pressure, give players a chance to practice and moments to be tested.
 
 ---
 
@@ -370,7 +369,7 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 
 一句话总结：把小问题构建成更大的网络，画出它们是怎么连接的。
 
-> **Bo**ttom line: build small problems into larger webs, and map them so you understand how they connect.
+> **Bottom line:** build small problems into larger webs, and map them so you understand how they connect.
 
 ---
 
@@ -387,14 +386,14 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 基本上有一组我们知道有效的问题类别，这是最简版本：
 
 +   数学上复杂的谜题
-
 +   弄清楚其他人类怎么想
-
 +   掌控你的身体和大脑
 
 > The common question is "okay, so how do I design a problem like that?" And that is indeed the unique bit in games, because the other items here are common to lots of other fields.
 
 > The list of possible problems is, as mentioned, enormous. This is a big rabbit hole. And once you consider that you can stack, web, and otherwise interlink problems, it means that there's a giant composable universe of games (and game variants) to create.
+
+
 
 > Just bear in mind that because of varied tastes and experience, the diversity of the set of problems you pose is going to affect who wants to play your game.
 
@@ -430,7 +429,7 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 
 **一句话总结：不是每种机制都已经被发明了**，但已经有很多了。建立你的目录和工作台。
 
-> **Bo**ttom line: not every mechanic has been invented, but a ton have. Build your catalog and workbench.
+> **Bottom line: not every mechanic has been invented, but a ton have. Build your catalog and workbench.**
 
 ---
 
@@ -476,9 +475,9 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 
 > It does not frickin' matter if you start out wanting to make interesting problems, or if you start out wanting to provide a cool experience. You are going to need to do both to make the game really good.
 
-**一句话总结：游戏开发是一种复合艺术形式。你可以去学**习那些单独的艺术，以及游戏所独有的部分。
+**一句话总结：游戏开发是一种复合艺术形式。你可以去学习那些单独的艺术，以及游戏所独有的部分。**
 
-> **Bottom line: game development is a compound art form. You can **go learn those individual arts and the part unique to games.
+> **Bottom line: game development is a compound art form. You can go learn those individual arts and the part unique to games.**
 
 ---
 
@@ -524,9 +523,9 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 
 > If you start with motivations, then you can go from there to types of problems, types of experience, and even player demographics. And then, if you want problems that are about interacting with people, well, there's lists of those. If you want problems that are about managing resources, or solving math issues, there's lists of those too.
 
-**一句话总结：没有一款游戏适合所有人，所以如果你知道**你是在为谁提出问题，你会做出更好的游戏。
+**一句话总结：没有一款游戏适合所有人，所以如果你知道你是在为谁提出问题，你会做出更好的游戏。**
 
-> **Bottom line: no game is for everyone, so you will ma**ke better games if you know who you are posing problems for.
+> **Bottom line: no game is for everyone, so you will make better games if you know who you are posing problems for.**
 
 ---
 
@@ -537,6 +536,12 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 ![](img/6247fad1d16dce5555ec174c22b45f4b.png)
 
 ![](img/027db9225001b7d386f4e74bb857796f.png)
+
+
+
+# 游戏设计速查表
+
+## 认知深度与专业领域
 
 举个例子，我们中的一些人花了整整二十多年，研究怎么把循环连接成一个更大的问题网络的规则集。
 
@@ -558,9 +563,11 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 
 一句话总结：这些话题中的每一个都很深，但你需要对所有话题都有一些了解。
 
-> **Bottom line: each of these topics is deep, b**ut you want a smattering of all of them.
+> Bottom line: each of these topics is deep, but you want a smattering of all of them.
 
 ---
+
+## 设计视角与实践路径
 
 你们中的一些人可能不喜欢这种对游戏设计的解构视角。没关系。我个人觉得最好的方式是去戳、去探索一个问题，比如"我怎么才能更好地做游戏？"，然后把它当作一个游戏来对待。我整个职业生涯就是这么做的。上面这些只是我的攻略指南。别人肯定会有不同的策略，我敢打包票。
 
@@ -595,6 +602,8 @@ FPS 有移动摄像机（而不是鼠标）来点击木棍的问题。它还有�
 > That's where the fun lives, not just for the designer, but also for their audience.
 
 ---
+
+## 结语
 
 就这样，整份速查表。就这些。
 

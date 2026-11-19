@@ -1,20 +1,21 @@
+
 # CogView2Cow - 智谱AI绘画&视频
 
 > 来源：[https://my.feishu.cn/docx/PYtHdTQfAo1XRfxVxKkcElBknPg](https://my.feishu.cn/docx/PYtHdTQfAo1XRfxVxKkcElBknPg)
 
-#10月31日赠送已关闭，使用需要充值
+## 10月31日赠送已关闭，使用需要充值
 
-##     前   言
+## 前言
 
 智谱又放大招了。
 
-这次不仅给了LLM，还新增了**图像**和**视频**生成。
+这次不仅给了`LLM`，还新增了`图像`和`视频`生成。
 
 限时1个月！
 
-白送的LLM自行配置，份额很大！
+白送的`LLM`自行配置，份额很大！
 
-其中PLUS老金用了很久，很好用！
+其中`PLUS`老金用了很久，很好用！
 
 ![](img/4c988fbc7079fb5e5d4d689cbd70b0e3.png)
 
@@ -36,7 +37,7 @@
 
 **画图：**
 
-## **e**mm 个人建议使用Siliconflow的Flux.dev或Schnell，因为和智谱视频共用次数，画图没什么亮点，且有水印。
+## emm 个人建议使用`Flux.dev`或`Schnell`，因为和智谱视频共用次数，画图没什么亮点，且有水印。
 
 ![](img/3df994de134c8022a9e664e768e55881.png)
 
@@ -44,23 +45,25 @@
 
 **MJ：**[最强AI绘画-Midjourney接入🛰️机器](http://mp.weixin.qq.com/s?__biz=MzI0NzU2MDgyNA==&mid=2247486268&idx=1&sn=12a9bbedc2ef2167e441dad2c9f1eae7&chksm=e9af642bded8ed3d115b654ee57b44253f00156948e5019050b40e0c12156a95b497d2bba2c7#rd)人手把手教程！
 
-Flux Dev或Schnell：🛰️上如何优雅的白嫖最强开源AI绘画模型-Flux，手把手教程！没剩几天！要的抓紧囤！
+`Flux Dev`或`Schnell`：🛰️上如何优雅的白嫖最强开源AI绘画模型-`Flux`，手把手教程！没剩几天！要的抓紧囤！
 
 ---
 
-##   🛰️机器人使用方法
+## 🛰️机器人使用方法
 
 下面开始讲解在🛰️机器人中使用，首先要满足几个基础条件。
 
-1、已安装chatgpt-on-wechat或dify-on-wechat项目。
+1、已安装`chatgpt-on-wechat`或`dify-on-wechat`项目。
 
-2、有LLMAPI，你可以使用智谱本次给的，也可以和老金我一样，用Siliconflow提供的Qwen2.5系列，我认为是国产第一梯队，申请链接：https://cloud.siliconflow.cn/i/wdyoipMi
+2、有`LLMAPI`，你可以使用智谱本次给的，也可以和老金我一样，用`Siliconflow`提供的`Qwen2.5`系列，我认为是国产第一梯队，申请链接：https://cloud.siliconflow.cn/i/wdyoipMi
 
 3、申请智谱API
 
-4、关注老金我的👸号，发送“**智谱AI视频**”，获取Github安装插件链接。
+4、关注老金我的👸号，发送`智谱AI视频`，获取Github安装插件链接。
 
-## 1和2在之前的教程中都有，如果不会，请添加老金我的个人联系方式，拉你进AI交流群，会有一些好心人会教你们。
+### 1和2在之前的教程中都有
+
+如果不会，请添加老金我的个人联系方式，拉你进AI交流群，会有一些好心人会教你们。
 
 本文主讲3和4，如何安装插件，以及插件的使用方法。
 
@@ -79,31 +82,30 @@ https://open.bigmodel.cn/usercenter/apikeys
 一行一行私聊机器人以下代码，第一行安装插件，第二行激活插件，第二行请在安装完成提示后进行。
 
 ```
-#installp &lt;公众号获取的插件地址&gt;.git
+#installp <公众号获取的插件地址>.git
 #scanp
 ```
 
-打开项目路径 chatgpt-on-wechat/plugins/CogView2Cow，找到Config.json文件。
+打开项目路径 `chatgpt-on-wechat/plugins/CogView2Cow`，找到`Config.json`文件。
 
 ```
 {
-    &quot;cogview_api_key&quot;: &quot;your_cogview_api_key&quot;,                                    #智谱API KEY
-    &quot;image_base_url&quot;: &quot;https://open.bigmodel.cn/api/paas/v4/images/generations&quot;,  #不用改
-    &quot;video_base_url&quot;: &quot;https://open.bigmodel.cn/api/paas/v4/videos/generations&quot;,  #不用改
-    &quot;video_result_url&quot;: &quot;https://open.bigmodel.cn/api/paas/v4/async-result/{id}&quot;, #不用改
-    &quot;image_model&quot;: &quot;cogview-3-plus&quot;,                                              #不用改
-    &quot;video_model&quot;: &quot;cogvideox&quot;,                                                   #不用改
-    &quot;translate_api_url&quot;: &quot;https://api.siliconflow.cn/v1/chat/completions&quot;,        #使用LLM的交互地址
-    &quot;translate_api_key&quot;: &quot;your_translate_api_key&quot;,                                #LLM的API KEY
-    &quot;ranslate_model&quot;: &quot;Qwen/Qwen2.5-7B-Instruct&quot;,                                 #LLM使用的模型
-    &quot;storage_path&quot;: &quot;/root/chatgpt-on-wechat/plugins/CogView2Cow/image_video&quot;,    #存储路径
-    &quot;cleanup_days&quot;: 3,                                                            #不用改
-    &quot;cleanup_check_interval_minutes&quot;: 1440,                                       #不用改
-    &quot;image_command&quot;: &quot;智谱画图&quot;,                                                   #触发画图
-    &quot;video_command&quot;: &quot;智谱视频&quot;,                                                   #触发视频
-    &quot;query_command&quot;: &quot;查询进度&quot;                                                    #触发进度查询+使用时添加ID
+    "cogview_api_key": "your_cogview_api_key",                                    #智谱API KEY
+    "image_base_url": "https://open.bigmodel.cn/api/paas/v4/images/generations",  #不用改
+    "video_base_url": "https://open.bigmodel.cn/api/paas/v4/videos/generations",  #不用改
+    "video_result_url": "https://open.bigmodel.cn/api/paas/v4/async-result/{id}", #不用改
+    "image_model": "cogview-3-plus",                                              #不用改
+    "video_model": "cogvideox",                                                   #不用改
+    "translate_api_url": "https://api.siliconflow.cn/v1/chat/completions",        #使用LLM的交互地址
+    "translate_api_key": "your_translate_api_key",                                #LLM的API KEY
+    "ranslate_model": "Qwen/Qwen2.5-7B-Instruct",                                 #LLM使用的模型
+    "storage_path": "/root/chatgpt-on-wechat/plugins/CogView2Cow/image_video",    #存储路径
+    "cleanup_days": 3,                                                            #不用改
+    "cleanup_check_interval_minutes": 1440,                                       #不用改
+    "image_command": "智谱画图",                                                   #触发画图
+    "video_command": "智谱视频",                                                   #触发视频
+    "query_command": "查询进度"                                                    #触发进度查询+使用时添加ID
 }
-
 ```
 
 配置完成后，私聊机器人
@@ -114,27 +116,27 @@ https://open.bigmodel.cn/usercenter/apikeys
 
 搞定，大家就可以愉快的使用🛰️机器人生成AI视频与图像了。
 
-## **插件使用**
+## 插件使用
 
-**生成图像：**
+### 生成图像：
 
-智谱画图 一个小姑娘 --ar 1：1
+`智谱画图` 一个小姑娘 `--ar 1：1`
 
 ```
-    &quot;1:1&quot;: &quot;1024x1024&quot;,
-    &quot;1:2&quot;: &quot;720x1440&quot;,
-    &quot;2:1&quot;: &quot;1440x720&quot;,
-    &quot;3:4&quot;: &quot;864x1152&quot;,
-    &quot;4:3&quot;: &quot;1152x864&quot;,
-    &quot;9:16&quot;: &quot;768x1344&quot;,
-    &quot;16:9&quot;: &quot;1344x768&quot;
+"1:1": "1024x1024",
+"1:2": "720x1440",
+"2:1": "1440x720",
+"3:4": "864x1152",
+"4:3": "1152x864",
+"9:16": "768x1344",
+"16:9": "1344x768"
 ```
 
-**生成视频：**
+### 生成视频：
 
-智谱视频 一个小姑娘
+`智谱视频` 一个小姑娘
 
-## F&Q：
+## F&Q
 
 1、如果无法使用，请先重启一遍项目。
 

@@ -1,8 +1,9 @@
+
 # 最强多模态 Gemini 2.0上线！老金手把手教你怎么用！
 
 > 来源：[https://my.feishu.cn/docx/TJMidsPkVojmVSxuJP7cp7u0nHe](https://my.feishu.cn/docx/TJMidsPkVojmVSxuJP7cp7u0nHe)
 
-### 引言
+## 引言
 
 最强多模态Gemini 2.0 Flash 实验版上新！
 
@@ -10,7 +11,7 @@
 
 可替代一部分ComfyUI的复杂上手门槛，傻瓜式自然语言输入即可快速出图和改图！
 
-### 实操过程
+## 实操过程
 
 限制很严，魔法需要精准，否则无法使用，打开网址后会提示限制地区。
 
@@ -18,7 +19,7 @@
 
 打开网址：
 
-https://aistudio.google.com/
+`https://aistudio.google.com/`
 
 右侧替换模型
 
@@ -26,12 +27,11 @@ https://aistudio.google.com/
 
 拿群里小伙伴的需求举个栗子：
 
-**首先他**说了想要**个产品图，老**金我试了 2张图，全程 1分钟不到 。
+首先他说了想要个产品图，老金我试了 2张图，全程 1分钟不到。
 
 ![](img/3687c666734e59e2ce9b6f5a2c67d558.png)
 
 再给他改个头像，这个更离谱，10秒不到。
-
 
 效果说完了，这个老金花了10秒想到的提示词分享给大家。
 
@@ -57,7 +57,7 @@ https://aistudio.google.com/
 
 ![](img/ec994f7e1973297538b8a0d7a567877d.png)
 
-### 结语
+## 结语
 
 你就说6不6，昨儿刚说完AI一天，人间十年，这不到一天，又出新玩意了。
 
@@ -65,4 +65,4 @@ https://aistudio.google.com/
 
 最后，祝你玩得开心。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

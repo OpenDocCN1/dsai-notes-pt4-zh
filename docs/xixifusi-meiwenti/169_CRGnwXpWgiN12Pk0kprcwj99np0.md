@@ -1,3 +1,4 @@
+
 # 尽量不要通过「向他人证明自己」的方式去构建影响力
 
 > 来源：[https://docs.feishu.cn/docx/IVKldzVcHoqw0ixcdtTc1MRmnrc](https://docs.feishu.cn/docx/IVKldzVcHoqw0ixcdtTc1MRmnrc)

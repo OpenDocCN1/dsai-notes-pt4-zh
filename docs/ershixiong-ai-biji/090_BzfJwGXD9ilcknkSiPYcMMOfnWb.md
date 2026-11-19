@@ -1,3 +1,4 @@
+
 # MCP Server 安装技巧：用魔法打败魔法（window）
 
 > 来源：[https://qianniucity.feishu.cn/docx/McpMdqyqpoU2Oyxb32ScVBKrnFc](https://qianniucity.feishu.cn/docx/McpMdqyqpoU2Oyxb32ScVBKrnFc)
@@ -6,19 +7,15 @@
 
 操作步骤：
 
-1.  在 Github 上找到所需安装的 MCP Server，并将其替换示例中的 MCP Server 地址。
+1. 在 Github 上找到所需安装的 `MCP Server`，并将其替换示例中的 `MCP Server` 地址。
+1. 借助 Cline 插件，将编辑完成的 prompts 填入对话框中。
+1. 配置完成后，将 `MCP Server` 的相关配置复制到 Cursor 的 json 文件中，确保配置无误。
 
-1.  借助 Cline 插件，将编辑完成的 prompts 填入对话框中。
+⚠️ 注意事项：
 
-1.  配置完成后，将 MCP Server 的相关配置复制到 Cursor 的 json 文件中，确保配置无误。
-
-⚠️注意事项：
-
-1.  虽然不一定能够成功，但此方法是一个可行的尝试方案，值得一试。
-
-1.  选择在 Cline 中执行的原因是，Cline 在处理安装异常时，提供了较为友好的错误提示，便于排查问题。
-
-1.  prompts 的具体地址已记录在飞书文档中，请查阅相关文档获取详细信息。
+1. 虽然不一定能够成功，但此方法是一个可行的尝试方案，值得一试。
+1. 选择在 Cline 中执行的原因是，Cline 在处理安装异常时，提供了较为友好的错误提示，便于排查问题。
+1. prompts 的具体地址已记录在飞书文档中，请查阅相关文档获取详细信息。
 
 ## prompts
 

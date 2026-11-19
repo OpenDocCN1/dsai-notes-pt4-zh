@@ -1,8 +1,9 @@
+
 # Midjourney Prompt分析第七期-特定句式
 
 > 来源：[https://bluefocus.feishu.cn/docx/XLF1d5sIxoR2vDxX6jJcM2NJnyg](https://bluefocus.feishu.cn/docx/XLF1d5sIxoR2vDxX6jJcM2NJnyg)
 
-# 7.1 **人物对抗思路**
+## 7.1 人物对抗思路
 
 人物对抗多出现在故事情节，这一素材也经常出现在赛事/PK概念海报或者脚本故事，漫画当中。所以掌握这个指令，你可以搞定很多对抗氛围极佳，极具视觉张力的对决画面。
 
@@ -12,9 +13,9 @@
 
 ![](img/f84098420ab7e667818d2bda4392dc2b.png)
 
-Wide angle extreme long shot, a combat between Thor and superman, fighting ,battle , fantasy,versus background , symmetrical thecomposition， ultra detailed, Photorealistic, 3D, CGI,16K, octane render, unreal engine --ar 16:9
+Wide angle extreme long shot, a combat between Thor and superman, fighting ,battle , fantasy,versus background , symmetrical thecomposition， ultra detailed, Photorealistic, 3D, CGI,16K, octane render, unreal engine `--ar 16:9`
 
-广角极端长镜头，雷神和超人之间的战斗，打斗，对决，幻想，分割背景，对称的组合，超详细，逼真，3D，CGI，16K，辛烷渲染，虚幻引擎 --ar 16：9
+广角极端长镜头，雷神和超人之间的战斗，打斗，对决，幻想，分割背景，对称的组合，超详细，逼真，3D，CGI，16K，辛烷渲染，虚幻引擎 `--ar 16:9`
 
 > Prompt解读
 
@@ -24,15 +25,15 @@ Wide angle extreme long shot, a combat between Thor and superman, fighting ,batt
 
 > 本词组有3个关键词:
 
-1.  Wide angle extreme long shot: 长镜头方便干仗，腾开些空间，便于获得视觉冲击力。
+1. Wide angle extreme long shot: 长镜头方便干仗，腾开些空间，便于获得视觉冲击力。
 
-1.  a combat between xx and XX,fighting ,battle:-场对决是谁和谁在干架，强化
+2. a combat between xx and XX,fighting ,battle:-场对决是谁和谁在干架，强化
 
-1.  构图:symmetricalthecomposition-对称,势均力敌;asymmetric composition-不对称,气势逼人。
+3. 构图:symmetricalthecomposition-对称,势均力敌;asymmetric composition-不对称,气势逼人。
 
 > 希望大家举一反三，可以把这个技能应用到更多的视觉领域中去。
 
-# 7.2 国画水墨**（思路）**
+## 7.2 国画水墨（思路）
 
 山水水墨多出现在国风系列素材中，比如传统节日/二十四节气，甚至一些国风插画，工笔人物等等。所以掌握这个指令，你可以扩展很多关联概念的风格表达方法。
 
@@ -42,19 +43,19 @@ Wide angle extreme long shot, a combat between Thor and superman, fighting ,batt
 
 ![](img/5fc1cb47f8033488676d7aa3214a8113.png)
 
-The Dwelling in the Fuchun Mountains，landscape, by zhang da qian, masterpiece , Ink wash, Gongbi,Abstract，concept art,realistic, --ar 21:9
+The Dwelling in the Fuchun Mountains，landscape, by zhang da qian, masterpiece , Ink wash, Gongbi,Abstract，concept art,realistic, `--ar 21:9`
 
-富春山居图，山水，张大千，杰作，水墨，工笔，抽象，写意，写实，--ar 21:9
+富春山居图，山水，张大千，杰作，水墨，工笔，抽象，写意，写实，`--ar 21:9`
 
 > Prompt解读
 
-> 这组**Promp**t，加与不加镜头其实差距不多，比如long shot,或者更大的远景视角。而核心的是你的画面描述，你的内容，哪怕只有landscape. 也是可以的，当然有明确的内容，比如我给他一个“富春山居图”的引导，是可以更加的具体化。
+> 这组Prompt，加与不加镜头其实差距不多，比如long shot,或者更大的远景视角。而核心的是你的画面描述，你的内容，哪怕只有landscape. 也是可以的，当然有明确的内容，比如我给他一个“富春山居图”的引导，是可以更加的具体化。
 
 > 山水效果的产生源自于形容词和万能词(媒介)部分的关键词要准确。不管是张大千还是吴冠中，还是其他的一些古今中外的大师，你都可以用来约束风格走向，然后就是国画中的一些属性词，比如水墨，工笔，写意，甚至于水彩等，这些会让你的画面更像那么一回事。
 
-The painting forms of Chinese Gongbi, Bai Miao, and Line Drawing.Along the River During the Qingming Festival，landscape, by zhang da qian,.masterpiece , Ink wash, Abstract，,concept art,realistic, --ar 21:9
+The painting forms of Chinese Gongbi, Bai Miao, and Line Drawing.Along the River During the Qingming Festival，landscape, by zhang da qian,.masterpiece , Ink wash, Abstract，，concept art,realistic, `--ar 21:9`
 
-中国工笔、白描、白描的绘画形式，清明上河图，山水，张大千，杰作，水墨，抽象，写意，写实，--ar 21:9
+中国工笔、白描、白描的绘画形式，清明上河图，山水，张大千，杰作，水墨，抽象，写意，写实，`--ar 21:9`
 
 > Prompt解读
 
@@ -62,9 +63,9 @@ The painting forms of Chinese Gongbi, Bai Miao, and Line Drawing.Along the River
 
 ![](img/7b93121cccf33a7b254e5d1f080225cc.png)
 
-extra long shot,fullbody shot,The painting forms of Chinese Gongbi, Since the Tang Dynasty, Lady of the Guo state, favored by the emperor, In the morning, she rode her horse to the palace gates. But she disliked the reddened powder staining her face, And so she lightly brushed her eyebrows before the sovereign. --ar 21:9
+extra long shot,fullbody shot,The painting forms of Chinese Gongbi, Since the Tang Dynasty, Lady of the Guo state, favored by the emperor, In the morning, she rode her horse to the palace gates. But she disliked the reddened powder staining her face, And so she lightly brushed her eyebrows before the sovereign. `--ar 21:9`
 
-长镜头，中国工笔，唐朝，虢国夫人承主恩，平明骑马入宫门。却嫌脂粉污颜色，淡扫娥眉朝至尊。--21:9
+长镜头，中国工笔，唐朝，虢国夫人承主恩，平明骑马入宫门。却嫌脂粉污颜色，淡扫娥眉朝至尊。`--21:9`
 
 > Prompt解读
 
@@ -76,17 +77,17 @@ extra long shot,fullbody shot,The painting forms of Chinese Gongbi, Since the Ta
 
 > 附人物prompt:
 
-> 男-extra long shot.fullbody shot,The painting forms of Chinese Gongbi, Since the Tang Dynasty,A handsome man in a long robe with cleal eyes and delicate features, wearing a tall hat and sporting a long beard, dressed in a white robe and black official boots, with a jade pendant hanging from his waist. He stands by a small river, drinking wine and gazing across at the weeping willows on the other side always thinking of composing a poem.--ar 9:16
+> 男-extra long shot.fullbody shot,The painting forms of Chinese Gongbi, Since the Tang Dynasty,A handsome man in a long robe with cleal eyes and delicate features, wearing a tall hat and sporting a long beard, dressed in a white robe and black official boots, with a jade pendant hanging from his waist. He stands by a small river, drinking wine and gazing across at the weeping willows on the other side always thinking of composing a poem.`--ar 9:16`
 
-> 女-fullbody shot, Since the Tang Dynasty,.A graceful and statuesque plump woman, dressed in red and white, sits on a bench in a pavilion quietly admiring the blooming and withering of flowers.--ar 9:16
+> 女-fullbody shot, Since the Tang Dynasty,.A graceful and statuesque plump woman, dressed in red and white, sits on a bench in a pavilion quietly admiring the blooming and withering of flowers.`--ar 9:16`
 
 > 大家可以尝试着用我们前面一直将的结构去拆解一下，去做创新。
 
-# 7.3 动漫IP与潮玩材质
+## 7.3 动漫IP与潮玩材质
 
 ![](img/8358da666e961590280a1ae25cdd33f3.png)
 
-toy beauty shot, cute colorful transparent plastic Mickey ,high detail, white background. vinyl characters, drawings , assembly drawings,concept artas sembly, toys design, studio lighting. steampunk ,concept art, octane rendering, fantasy engine, super detailed, realistic, photography, UHD ，16K --ar 3:4 --q 2
+toy beauty shot, cute colorful transparent plastic Mickey ,high detail, white background. vinyl characters, drawings , assembly drawings,concept artas sembly, toys design, studio lighting. steampunk ,concept art, octane rendering, fantasy engine, super detailed, realistic, photography, UHD ，16K `--ar 3:4 --q 2`
 
 玩具美拍，可爱的彩色透明塑料米奇，高细节，白色背景。乙烯基角色，图纸，装配图，概念艺术，玩具设计，工作室照明。蒸汽朋克，概念艺术，辛烷值渲染，幻想引擎，超级细节，现实，摄影、UHD ，16K
 

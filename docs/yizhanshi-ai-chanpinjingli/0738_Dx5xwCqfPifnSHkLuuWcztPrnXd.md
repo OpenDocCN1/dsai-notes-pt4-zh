@@ -1,94 +1,85 @@
-# Transformer 模型
+
+# `Transformer` 模型
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/IKu6dUOnEo7VaCx67N2cfqY7nld](https://v11enp9ok1h.feishu.cn/docx/IKu6dUOnEo7VaCx67N2cfqY7nld)
 
-> **Transformer** 的核心思想是完全摒弃传统的循环神经网络（RNN）结构，仅依赖注意力机制来处理序列数据，从而实现更高的并行性和更快的训练速度。
+> `Transformer` 的核心思想是完全摒弃传统的循环神经网络（`RNN`）结构，仅依赖注意力机制来处理序列数据，从而实现更高的并行性和更快的训练速度。
 
-以下是 **Transformer** 架构图，左边为**编码器**，右边为**解码器**。
+以下是 `Transformer` 架构图，左边为编码器，右边为解码器。
 
 ![](img/2cbd11576c2c6d19aa33c5592a8d2458.png)
 
-> **Transformer**模型由 **编码器**（Encoder） 和 **解码器**（Decoder） 两部分组成，每部分都由多层堆叠的相同模块构成。
+> `Transformer`模型由 编码器（`Encoder`） 和 解码器（`Decoder`） 两部分组成，每部分都由多层堆叠的相同模块构成。
 
 ![](img/df6534f6cccd4de0eff8cf2b339571f6.png)
 
----
+## 模型架构
 
-### 编码器（Encoder）
+### 编码器（`Encoder`）
 
-编码器由 NN 层相同的模块堆叠而成，每层包含两个子层：
+编码器由 `NN` 层相同的模块堆叠而成，每层包含两个子层：
 
-+   **多**头自注意力机制（Multi-Head Self-Attention）：计算输入序列中每个词与其他词的相关性。
++   多头自注意力机制（`Multi-Head Self-Attention`）：计算输入序列中每个词与其他词的相关性。
 
-+   **前**馈神经网络（Feed-Forward Neural Network）：对每个词进行独立的非线性变换。
++   前馈神经网络（`Feed-Forward Neural Network`）：对每个词进行独立的非线性变换。
 
-每个子层后面都接有 **残差连接****（Res**idual Connection） 和 层归一化（Layer Normalization）。
+每个子层后面都接有 残差连接（`Residual Connection`） 和 层归一化（`Layer Normalization`）。
 
----
+### 解码器（`Decoder`）
 
-### 解码器（Decoder）
+解码器也由 `NN` 层相同的模块堆叠而成，每层包含三个子层：
 
-解码器也由 **NN** 层相同的模块堆叠而成，每层包含三个子层：
++   掩码多头自注意力机制（`Masked Multi-Head Self-Attention`）：计算输出序列中每个词与前面词的相关性（使用掩码防止未来信息泄露）。
 
-+   **掩码多头自注意力机制****（**Masked Multi-Head Self-Attention）：计算输出序列中每个词与前面词的相关性（使用掩码防止未来信息泄露）。
++   编码器-解码器注意力机制（`Encoder-Decoder Attention`）：计算输出序列与输入序列的相关性。
 
-+   **编码器-解码器注意力机制****（**Encoder-Decoder Attention）：计算输出序列与输入序列的相关性。
-
-+   **前馈神经网络****（**Feed-Forward Neural Network）：对每个词进行独立的非线性变换。
-
----
++   前馈神经网络（`Feed-Forward Neural Network`）：对每个词进行独立的非线性变换。
 
 同样，每个子层后面都接有残差连接和层归一化。
 
-在 **Transformer** 模型出现之前，**NLP** 领域的主流模型是基于** RNN **的架构，如长短期记忆网络（LSTM）和门控循环单元（GRU）。这些模型通过顺序处理输入数据来捕捉序列中的依赖关系，但存在以下问题：
+在 `Transformer` 模型出现之前，`NLP` 领域的主流模型是基于 `RNN` 的架构，如长短期记忆网络（`LSTM`）和门控循环单元（`GRU`）。这些模型通过顺序处理输入数据来捕捉序列中的依赖关系，但存在以下问题：
 
-1.  **梯度消失问题**：长距离依赖关系难以捕捉。
+1.  梯度消失问题：长距离依赖关系难以捕捉。
 
-1.  **顺序计算的局限性**：无法充分利用现代硬件的并行计算能力，训练效率低下。
+1.  顺序计算的局限性：无法充分利用现代硬件的并行计算能力，训练效率低下。
 
 ![](img/451f7fb10a9e5fd644ff639d69938c88.png)
 
-> **Transformer** 通过引入自注意力机制解决了这些问题，允许模型同时处理整个输入序列，并动态地为序列中的每个位置分配不同的权重。
+> `Transformer` 通过引入自注意力机制解决了这些问题，允许模型同时处理整个输入序列，并动态地为序列中的每个位置分配不同的权重。
 
----
+## `Transformer` 的核心思想
 
-## Transformer 的核心思想
+### 自注意力机制（`Self-Attention`）
 
-### 自注意力机制（Self-Attention）
-
-自注意力机制是**Transformer** 的核心组件。
+自注意力机制是`Transformer` 的核心组件。
 
 自注意力机制允许模型在处理序列时，动态地为每个位置分配不同的权重，从而捕捉序列中任意两个位置之间的依赖关系。
 
-+   **输入表示**：输入序列中的每个词（或标记）通过词嵌入（Embedding）转换为向量表示。
++   输入表示：输入序列中的每个词（或标记）通过词嵌入（`Embedding`）转换为向量表示。
 
-+   **注意力权重计算**：通过计算查询（Query）、键（Key）和值（Value）之间的点积，得到每个词与其他词的相关性权重。
++   注意力权重计算：通过计算查询（`Query`）、键（`Key`）和值（`Value`）之间的点积，得到每个词与其他词的相关性权重。
 
-+   **加权求和**：使用注意力权重对值（Value）进行加权求和，得到每个词的上下文表示。
++   加权求和：使用注意力权重对值（`Value`）进行加权求和，得到每个词的上下文表示。
 
 **公式如下：**
 
 **其中：**
 
-+   Q 是查询矩阵，K是键矩阵，V是值矩阵。
++   `Q` 是查询矩阵，`K`是键矩阵，`V`是值矩阵。
 
-+    是向量的维度，用于缩放点积，防止梯度爆炸。
++   是向量的维度，用于缩放点积，防止梯度爆炸。
 
----
+### 多头注意力（`Multi-Head Attention`）
 
-### 多头注意力（Multi-Head Attention）
+为了捕捉更丰富的特征，`Transformer` 使用多头注意力机制。它将输入分成多个子空间，每个子空间独立计算注意力，最后将结果拼接起来。
 
-为了捕捉更丰富的特征，**Transformer** 使用多头注意力机制。它将输入分成多个子空间，每个子空间独立计算注意力，最后将结果拼接起来。
++   多头注意力的优势：允许模型关注序列中不同的部分，例如语法结构、语义关系等。
 
-+   **多头注意力的优势**：允许模型关注序列中不同的部分，例如语法结构、语义关系等。
++   并行计算：多个注意力头可以并行计算，提高效率。
 
-+   **并行计算**：多个注意力头可以并行计算，提高效率。
+### 位置编码（`Positional Encoding`）
 
----
-
-### 位置编码（Positional Encoding）
-
-由于 **Transformer**没有显式的序列信息（如 RNN 中的时间步），位置编码被用来为输入序列中的每个词添加位置信息。通常使用正弦和余弦函数生成位置编码：
+由于 `Transformer`没有显式的序列信息（如 `RNN` 中的时间步），位置编码被用来为输入序列中的每个词添加位置信息。通常使用正弦和余弦函数生成位置编码：
 
 **其中：**
 
@@ -96,61 +87,51 @@
 
 ### 编码器-解码器架构
 
-**Transformer** 模型由编码器和解码器两部分组成：
+`Transformer` 模型由编码器和解码器两部分组成：
 
-+   **编码器****：**将输入序列转换为一系列隐藏表示。每个编码器层包含一个自注意力机制和一个前馈神经网络。
++   编码器：将输入序列转换为一系列隐藏表示。每个编码器层包含一个自注意力机制和一个前馈神经网络。
 
-+   **解码器****：**根据编码器的输出生成目标序列。每个解码器层包含两个注意力机制（自注意力和编码器-解码器注意力）和一个前馈神经网络。
++   解码器：根据编码器的输出生成目标序列。每个解码器层包含两个注意力机制（自注意力和编码器-解码器注意力）和一个前馈神经网络。
 
----
+### 前馈神经网络（`Feed-Forward Neural Network`）
 
-### 前馈神经网络（Feed-Forward Neural Network）
-
-每个编码器和解码器层都包含一个前馈神经网络，通常由两个全连接层组成，中间使用 ReLU 激活函数。
-
----
+每个编码器和解码器层都包含一个前馈神经网络，通常由两个全连接层组成，中间使用 `ReLU` 激活函数。
 
 ### 残差连接和层归一化
 
-为了稳定训练过程，每个子层（如自注意力层和前馈神经网络）后面都会接一个残差连接和层归一化（Layer Normalization）。
+为了稳定训练过程，每个子层（如自注意力层和前馈神经网络）后面都会接一个残差连接和层归一化（`Layer Normalization`）。
 
----
+## `Transformer` 的优势
 
-## Transformer 的优势
+1.  并行计算：`Transformer`可以同时处理整个输入序列，充分利用现代硬件的并行计算能力。
 
-1.  **并行计算**：**Transformer**可以同时处理整个输入序列，充分利用现代硬件的并行计算能力。
+1.  长距离依赖：自注意力机制能够捕捉序列中任意两个位置之间的依赖关系，解决了 `RNN` 的梯度消失问题。
 
-1.  **长距离依赖**：自注意力机制能够捕捉序列中任意两个位置之间的依赖关系，解决了 RNN 的梯度消失问题。
+1.  可扩展性：`Transformer` 模型可以通过堆叠更多的层来提升性能，例如 `BERT` 和 `GPT` 等模型。
 
-1.  **可扩展性**：**Transformer** 模型可以通过堆叠更多的层来提升性能，例如 BERT 和 GPT 等模型。
+## `Transformer` 的应用
 
----
+1.  自然语言处理（`NLP`）：
 
-## Transformer 的应用
++   机器翻译（如 `Google Translate`）
 
-1.  **自然语言处理（NLP）**：
-
-+   机器翻译（如 Google Translate）
-
-+   文本生成（如 GPT 系列模型）
++   文本生成（如 `GPT` 系列模型）
 
 +   文本分类、问答系统等。
 
-1.  **计算机视觉（CV）**：
+1.  计算机视觉（`CV`）：
 
-+   图像分类（如 Vision Transformer）
++   图像分类（如 `Vision Transformer`）
 
 +   目标检测、图像生成等。
 
-1.  **多模态任务**：
+1.  多模态任务：
 
-+   结合文本和图像的任务（如 CLIP、DALL-E）。
++   结合文本和图像的任务（如 `CLIP`、`DALL-E`）。
 
----
+## PyTorch 实现 `Transformer`
 
-## PyTorch 实现 Transformer
-
-**以下是一个简单的 Py**Torch 实现 Transformer 的示例：
+**以下是一个简单的 `PyTorch` 实现 `Transformer` 的示例：**
 
 ```
 import torch
@@ -200,16 +181,16 @@ optimizer.zero_grad()
 loss.backward()
 optimizer.step()
 
-print(&quot;Loss:&quot;, loss.item())
+print("Loss:", loss.item())
 ```
 
-# 使用PyTorch 构建 Transformer 模型
+# 使用 `PyTorch` 构建 `Transformer` 模型
 
-**构建 ****Transformer****模型的步骤如下：**
+**构建 `Transformer` 模型的步骤如下：**
 
 ### 1、导入必要的库和模块
 
-导入 **PyTorch** 核心库、**神经网络模块**、**优化器模块**、**数据处理工具**，以及数学和对象复制模块，为定义模型架构、管理数据和训练过程提供支持。
+导入 `PyTorch` 核心库、`神经网络模块`、`优化器模块`、`数据处理工具`，以及数学和对象复制模块，为定义模型架构、管理数据和训练过程提供支持。
 
 ```
 import torch
@@ -222,15 +203,15 @@ import copy
 
 **说明：**
 
-+   torch：PyTorch 的核心库，用于张量操作和自动求导。
++   `torch`：`PyTorch` 的核心库，用于张量操作和自动求导。
 
-+   torch.nn：PyTorch 的神经网络模块，包含各种层和损失函数。
++   `torch.nn`：`PyTorch` 的神经网络模块，包含各种层和损失函数。
 
-+   torch.optim：优化算法模块，如 Adam、SGD 等。
++   `torch.optim`：优化算法模块，如 `Adam`、`SGD` 等。
 
-+   math：数学函数库，用于计算平方根等。
++   `math`：数学函数库，用于计算平方根等。
 
-+   copy：用于深度复制对象。
++   `copy`：用于深度复制对象。
 
 ### 定义基本构建块：多头注意力、位置前馈网络、位置编码
 
@@ -238,13 +219,13 @@ import copy
 
 ![](img/7456f03413da66490b60978920fff8f2.png)
 
-> MultiH**eadAttentio**n** 类封装了 Transforme**r 模型中常用的多头注意力机制，负责将输入拆分成多个注意力头，对每个注意力头施加注意力，然后将结果组合起来，这样模型就可以在不同尺度上捕捉输入数据中的各种关系，提高模型的表达能力。
+> `MultiHeadAttention` 类封装了 `Transformer` 模型中常用的多头注意力机制，负责将输入拆分成多个注意力头，对每个注意力头施加注意力，然后将结果组合起来，这样模型就可以在不同尺度上捕捉输入数据中的各种关系，提高模型的表达能力。
 
 ```
 class MultiHeadAttention(nn.Module):
     def __init__(self, d_model, num_heads):
         super(MultiHeadAttention, self).__init__()
-        assert d_model % num_heads == 0, &quot;d_model必须能被num_heads整除&quot;
+        assert d_model % num_heads == 0, "d_model必须能被num_heads整除"
         
         self.d_model = d_model    # 模型维度（如512）
         self.num_heads = num_heads # 注意力头数（如8）
@@ -257,13 +238,13 @@ class MultiHeadAttention(nn.Module):
         self.W_o = nn.Linear(d_model, d_model) # 输出变换
         
     def scaled_dot_product_attention(self, Q, K, V, mask=None):
-        &quot;&quot;&quot;
+        """
         计算缩放点积注意力
         输入形状：
             Q: (batch_size, num_heads, seq_length, d_k)
             K, V: 同Q
         输出形状： (batch_size, num_heads, seq_length, d_k)
-        &quot;&quot;&quot;
+        """
         # 计算注意力分数（Q和K的点积）
         attn_scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.d_k)
         
@@ -279,29 +260,29 @@ class MultiHeadAttention(nn.Module):
         return output
         
     def split_heads(self, x):
-        &quot;&quot;&quot;
+        """
         将输入张量分割为多个头
         输入形状: (batch_size, seq_length, d_model)
         输出形状: (batch_size, num_heads, seq_length, d_k)
-        &quot;&quot;&quot;
+        """
         batch_size, seq_length, d_model = x.size()
         return x.view(batch_size, seq_length, self.num_heads, self.d_k).transpose(1, 2)
         
     def combine_heads(self, x):
-        &quot;&quot;&quot;
+        """
         将多个头的输出合并回原始形状
         输入形状: (batch_size, num_heads, seq_length, d_k)
         输出形状: (batch_size, seq_length, d_model)
-        &quot;&quot;&quot;
+        """
         batch_size, _, seq_length, d_k = x.size()
         return x.transpose(1, 2).contiguous().view(batch_size, seq_length, self.d_model)
         
     def forward(self, Q, K, V, mask=None):
-        &quot;&quot;&quot;
+        """
         前向传播
         输入形状: Q/K/V: (batch_size, seq_length, d_model)
         输出形状: (batch_size, seq_length, d_model)
-        &quot;&quot;&quot;
+        """
         # 线性变换并分割多头
         Q = self.split_heads(self.W_q(Q)) # (batch, heads, seq_len, d_k)
         K = self.split_heads(self.W_k(K))
@@ -317,15 +298,21 @@ class MultiHeadAttention(nn.Module):
 
 **说明：**
 
-+   **多头注意力机制**：将输入分割成多个头，每个头独立计算注意力，最后将结果合并。
 
-+   **缩放点积注意力**：计算查询和键的点积，缩放后使用 softmax 计算注意力权重，最后对值进行加权求和。
 
-+   **掩码**：用于屏蔽无效位置（如填充部分）。
+# Transformer 模型构建与实现
 
-### 位置前馈网络（Position-wise Feed-Forward Network）
+## 注意力机制
 
-```
++ 多头注意力机制：将输入分割成多个头，每个头独立计算注意力，最后将结果合并。
+
++ 缩放点积注意力：计算查询和键的点积，缩放后使用 `softmax` 计算注意力权重，最后对值进行加权求和。
+
++ 掩码：用于屏蔽无效位置（如填充部分）。
+
+## 位置前馈网络（Position-wise Feed-Forward Network）
+
+```python
 class PositionWiseFeedForward(nn.Module):
     def __init__(self, d_model, d_ff):
         super(PositionWiseFeedForward, self).__init__()
@@ -338,17 +325,15 @@ class PositionWiseFeedForward(nn.Module):
         return self.fc2(self.relu(self.fc1(x)))
 ```
 
-**前馈网络****：**由两个全连接层和一个 ReLU 激活函数组成，用于进一步处理注意力机制的输出。
+前馈网络：由两个全连接层和一个 `ReLU` 激活函数组成，用于进一步处理注意力机制的输出。
 
----
+## 位置编码
 
-### 位置编码
-
-位置编码用于注入输入序列中每个** token **的位置信息。
+位置编码用于注入输入序列中每个 `token` 的位置信息。
 
 使用不同频率的正弦和余弦函数来生成位置编码。
 
-```
+```python
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, max_seq_length):
         super(PositionalEncoding, self).__init__()
@@ -357,18 +342,18 @@ class PositionalEncoding(nn.Module):
         div_term = torch.exp(torch.arange(0, d_model, 2).float() * -(math.log(10000.0) / d_model))
         pe[:, 0::2] = torch.sin(position * div_term)  # 偶数位置使用正弦函数
         pe[:, 1::2] = torch.cos(position * div_term)  # 奇数位置使用余弦函数
-        self.register_buffer(&#x27;pe&#x27;, pe.unsqueeze(0))  # 注册为缓冲区
+        self.register_buffer('pe', pe.unsqueeze(0))  # 注册为缓冲区
         
     def forward(self, x):
         # 将位置编码添加到输入中
         return x + self.pe[:, :x.size(1)]
 ```
 
-### 构建编码器块（Encoder Layer）
+## 构建编码器块（Encoder Layer）
 
 ![](img/1192e61b584d28b3ccfd1315c1d871c3.png)
 
-```
+```python
 class EncoderLayer(nn.Module):
     def __init__(self, d_model, num_heads, d_ff, dropout):
         super(EncoderLayer, self).__init__()
@@ -389,15 +374,13 @@ class EncoderLayer(nn.Module):
         return x
 ```
 
-> **编码器层****：**包含一个自注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
+> 编码器层：包含一个自注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
 
----
-
-### 构建解码器模块
+## 构建解码器模块
 
 ![](img/7d86f234a2a34263483e351c51310a42.png)
 
-```
+```python
 class DecoderLayer(nn.Module):
     def __init__(self, d_model, num_heads, d_ff, dropout):
         super(DecoderLayer, self).__init__()
@@ -424,13 +407,13 @@ class DecoderLayer(nn.Module):
         return x
 ```
 
-> **解码器层****：**包含一个自注意力机制、一个交叉注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
+> 解码器层：包含一个自注意力机制、一个交叉注意力机制和一个前馈网络，每个子层后接残差连接和层归一化。
 
-### 构建完整的 Transformer 模型
+## 构建完整的 `Transformer` 模型
 
 ![](img/8b3cc639a6f45064983f282f4aeee786.png)
 
-```
+```python
 class Transformer(nn.Module):
     def __init__(self, src_vocab_size, tgt_vocab_size, d_model, num_heads, num_layers, d_ff, max_seq_length, dropout):
         super(Transformer, self).__init__()
@@ -456,7 +439,7 @@ class Transformer(nn.Module):
         seq_length = tgt.size(1)
         # 生成上三角矩阵掩码，防止解码时看到未来信息
         nopeak_mask = (1 - torch.triu(torch.ones(1, seq_length, seq_length), diagonal=1)).bool()
-        tgt_mask = tgt_mask &amp; nopeak_mask  # 合并填充掩码和未来信息掩码
+        tgt_mask = tgt_mask & nopeak_mask  # 合并填充掩码和未来信息掩码
         return src_mask, tgt_mask
 
     def forward(self, src, tgt):
@@ -480,17 +463,17 @@ class Transformer(nn.Module):
         return output
 ```
 
-**说明：**
+## 说明
 
-+   **Transformer**** 模型**：包含编码器和解码器部分，每个部分由多个层堆叠而成。
++ `Transformer` 模型：包含编码器和解码器部分，每个部分由多个层堆叠而成。
 
-+   **掩码生成**：用于屏蔽无效位置和未来信息。
++ 掩码生成：用于屏蔽无效位置和未来信息。
 
-+   **前向传播**：依次通过编码器和解码器，最后通过全连接层输出。
++ 前向传播：依次通过编码器和解码器，最后通过全连接层输出。
 
 模型初始化参数说明：
 
-```
+```python
 class Transformer(nn.Module):
     def __init__(
         self, 
@@ -505,11 +488,11 @@ class Transformer(nn.Module):
     ):
 ```
 
-### 训练 PyTorch Transformer 模型
+## 训练 PyTorch `Transformer` 模型
 
 使用随机数据训练模型，计算损失并更新参数。
 
-```
+```python
 # 超参数
 src_vocab_size = 5000  # 源词汇表大小
 tgt_vocab_size = 5000  # 目标词汇表大小
@@ -549,14 +532,16 @@ for epoch in range(100):
     
     loss.backward()        # 反向传播
     optimizer.step()       # 更新参数
-    print(f&quot;Epoch: {epoch+1}, Loss: {loss.item()}&quot;)
+    print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
 ```
 
-### 模型评估
+## 模型评估
 
-**评估过程：**在验证数据上计算损失，评估模型性能。
+评估过程：在验证数据上计算损失，评估模型性能。
 
-```
+
+
+```python
 transformer.eval()
 # 生成验证数据
 val_src_data = torch.randint(1, src_vocab_size, (64, max_seq_length))
@@ -569,5 +554,5 @@ val_tgt_data = torch.randint(1, tgt_vocab_size, (64, max_seq_length))
 with torch.no_grad():
     val_output = transformer(val_src_data, val_tgt_data[:, :-1])
     val_loss = criterion(val_output.contiguous().view(-1, tgt_vocab_size), val_tgt_data[:, 1:].contiguous().view(-1))
-    print(f&quot;Validation Loss: {val_loss.item()}&quot;)
+    print(f"Validation Loss: {val_loss.item()}")
 ```

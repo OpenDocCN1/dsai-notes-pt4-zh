@@ -1,3 +1,4 @@
+
 # 创建你的第一个Skill
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/XQWjduqEBoQdvdxgPeocBORCnhh](https://qqs7y1hozd1.feishu.cn/docx/XQWjduqEBoQdvdxgPeocBORCnhh)
@@ -21,7 +22,7 @@ mkdir -p .claude/skills/project-helper
 
 ### 创建基础文件
 
-每个Skill最少需要一个SKILL.md文件：
+每个Skill最少需要一个`SKILL.md`文件：
 
 ```
 project-helper/
@@ -34,7 +35,7 @@ project-helper/
 
 ### YAML Frontmatter
 
-SKILL.md文件必须以YAML frontmatter开头：
+`SKILL.md`文件必须以YAML frontmatter开头：
 
 ```
 ---
@@ -51,9 +52,9 @@ description: 帮助处理项目文档和代码结构。当用户需要项目概�
 
 YAML字段说明：
 
-+   name: Skill的唯一标识符，只能包含小写字母、数字和连字符
++   `name`: Skill的唯一标识符，只能包含小写字母、数字和连字符
 
-+   description: 详细描述Skill的功能和使用时机，这是Claude判断何时使用这个Skill的关键
++   `description`: 详细描述Skill的功能和使用时机，这是Claude判断何时使用这个Skill的关键
 
 ### 添加基本指令
 
@@ -80,7 +81,7 @@ YAML字段说明：
 
 ### 验证Skill被识别
 
-创建SKILL.md文件后，重启Claude Code或运行：
+创建`SKILL.md`文件后，重启Claude Code或运行：
 
 ```
 claude /skills
@@ -125,6 +126,6 @@ description: 描述Skill功能
 
 ### Skill名称不符合规范
 
-错误名称： "My Skill"、"my_skill_v1"
+错误名称：`My Skill`、`my_skill_v1`
 
-正确名称： "my-skill"、"json-processor"
+正确名称：`my-skill`、`json-processor`

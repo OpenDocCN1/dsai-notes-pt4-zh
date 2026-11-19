@@ -1,3 +1,4 @@
+
 # 模型下载和安装
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/F21yd6cn6oPIjexEMlrckWyZnQB](https://v11enp9ok1h.feishu.cn/docx/F21yd6cn6oPIjexEMlrckWyZnQB)
@@ -10,17 +11,17 @@
 
 +   [官方体验地址](https://modelscope.cn/studios/ZhipuAI/Cogvlm2-llama3-chinese-chat-Demo/summary)
 
-> 在这个demo中，你将能体验到完整的 CogVLM2 模型能力。
+> 在这个demo中，你将能体验到完整的 `CogVLM2` 模型能力。
 
 ## 源码安装
 
-下载模型
+### 下载模型
 
-+   [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保`git lfs`命令已安装，安装教程请参考这里。
++   [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing) 模型文件前请先确保 `git lfs` 命令已安装，安装教程请参考这里。
 
-+   模型文件已上传至 Huggingface, Modelsope ,  WiseModel  三个平台，用户可以快速安装模型。
++   模型文件已上传至 `Huggingface`、`Modelsope`、`WiseModel` 三个平台，用户可以快速安装模型。
 
-+   从 Huggingface 下载模型
+### 从 Huggingface 下载模型
 
 ```
 # 图像理解英语模型
@@ -37,7 +38,7 @@ git clone https://huggingface.co/THUDM/cogvlm2-video-llama3-chat
 git clone https://huggingface.co/THUDM/cogvlm2-video-llama3-base
 ```
 
-+   从 ModelScope 魔搭社区 下载图像理解模型
+### 从 ModelScope 魔搭社区 下载图像理解模型
 
 ```
 # 图像理解英语模型
@@ -54,7 +55,7 @@ git clone https://modelscope.cn/models/ZhipuAI/cogvlm2-video-llama3-chat
 git clone https://modelscope.cn/models/ZhipuAI/cogvlm2-video-llama3-base
 ```
 
-+   下载示例代码
+### 下载示例代码
 
 ```
 git clone https://github.com/THUDM/CogVLM2
@@ -66,8 +67,8 @@ git clone https://github.com/THUDM/CogVLM2
 
 | Model Name | Type | 19B Series Model | Remarks |
 | --- | --- | --- | --- |
-| CogVLM2 | BF16 / FP16 Inference | 42GB | Tested with 2K dialogue text |
-| CogVLM2 | Int4 Inference | 16GB | Tested with 2K dialogue text |
-| CogVLM2 | BF16 Lora Tuning (Freeze Vision Expert Part) | 57GB | Training text length is 2K |
-| CogVLM2 | BF16 Lora Tuning (With Vision Expert Part) | &gt; 80GB | Single GPU cannot tune |
-| CogVLM2-Video | BF16 / FP16 Inference | 28GB | Tested with 0.2K dialogue text |
+| `CogVLM2` | `BF16` / `FP16` Inference | 42GB | Tested with 2K dialogue text |
+| `CogVLM2` | `Int4` Inference | 16GB | Tested with 2K dialogue text |
+| `CogVLM2` | `BF16` Lora Tuning (Freeze Vision Expert Part) | 57GB | Training text length is 2K |
+| `CogVLM2` | `BF16` Lora Tuning (With Vision Expert Part) | > 80GB | Single GPU cannot tune |
+| `CogVLM2-Video` | `BF16` / `FP16` Inference | 28GB | Tested with 0.2K dialogue text |

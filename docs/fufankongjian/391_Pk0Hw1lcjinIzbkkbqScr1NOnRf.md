@@ -1,18 +1,19 @@
+
 # 大模型高频面试真题满分答案丨赋范空间
 
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/V0OUd544XoQZxixfXYQcM9gxnuh](https://kq4b3vgg5b.feishu.cn/docx/V0OUd544XoQZxixfXYQcM9gxnuh)
-
-> **小伙伴们好，这里是九天老师精**心为大家准备的大模型技术面试·真题满分答案！
-
+> 来源：`https://kq4b3vgg5b.feishu.cn/docx/V0OUd544XoQZxixfXYQcM9gxnuh`
+>
+> 小伙伴们好，这里是九天老师精心为大家准备的大模型技术面试·真题满分答案！
+>
 > 咱们社区一直是公益的，但它背后投入了大量研发成本和心血。🥰我们愿意把高价值内容开放出来，让每一位想学习、想转型、想跟上AI浪潮的伙伴，都能“真正入门”！💓欢迎多多关注我们呀～
+>
+> 本文末尾附带技术文档学习链接，也欢迎把资料分享给更多有需要的小伙伴哦～
 
-> 本文末尾附带<技术文档学习链接>，也欢迎把资料分享给更多有需要的小伙伴哦～
-
-# 微调主题
+## 微调主题
 
 ---
 
-> 💡包**含内容：与**RAG技术的选择区分，微调（LoRA、PPO、GRPO）算法原理，专业数据集准备，评估微调模型所需成本方法～
+> 💡包含内容：与 RAG 技术的选择区分，微调（LoRA、PPO、GRPO）算法原理，专业数据集准备，评估微调模型所需成本方法～
 
 ![](img/132ff005adfcae1e91463a791b5ce431.png)
 
@@ -26,7 +27,7 @@
 
 ---
 
-> 💡包**含内容：评**估微调效果，GSPO微调算法原理，多机多卡微调，多模态大模型微调，微调Agent性能方法～
+> 💡包含内容：评估微调效果，GSPO微调算法原理，多机多卡微调，多模态大模型微调，微调Agent性能方法～
 
 ![](img/28dec4db779630ade61a461473bee69f.png)
 
@@ -38,11 +39,11 @@
 
 ![](img/fce67f5706534ca4d018b22cccf23945.png)
 
-# RAG主题
+## RAG主题
 
 ---
 
-> 💡包**含内容：R**AG基本流程，回答效果评估，如何进行文本增量，传统RAG与GraphRAG的技术异同，GraphRAG核心流程～
+> 💡包含内容：RAG基本流程，回答效果评估，如何进行文本增量，传统RAG与GraphRAG的技术异同，GraphRAG核心流程～
 
 ![](img/6d65aa982ead02ec585aa0c5fd8b6ce9.png)
 
@@ -56,7 +57,7 @@
 
 ---
 
-> 💡包**含内容：多**模态RAG系统搭建，Agentic RAG是什么，Hybrid RAG系统构建，以及RAG+SQL处理结构化数据，RAG系统处理文档权限与合规问题～
+> 💡包含内容：多模态RAG系统搭建，Agentic RAG是什么，Hybrid RAG系统构建，以及RAG+SQL处理结构化数据，RAG系统处理文档权限与合规问题～
 
 ![](img/781eff279f9de8af9af445513efcc142.png)
 
@@ -68,11 +69,11 @@
 
 ![](img/48356c37ec8ab2dd86d8703a3f684616.png)
 
-# Agent主题
+## Agent主题
 
 ---
 
-> 💡包**含内容：A**gent与传统AI差别，如何设计，各类开发框架如何选择，用LangChain开发Agent全流程，Function calling的基本原理～
+> 💡包含内容：Agent与传统AI差别，如何设计，各类开发框架如何选择，用LangChain开发Agent全流程，Function calling的基本原理～
 
 ![](img/ef4a075f9c6f2dc3ff2f3b57fd9cd08c.png)
 
@@ -86,7 +87,7 @@
 
 ---
 
-> 💡包**含内容：聚**焦应用开发实践！如何搭建DeepResearch系统，数据分析类Agent，Python代码编辑器，智能客服系统，Manus通用智能体～
+> 💡包含内容：聚焦应用开发实践！如何搭建DeepResearch系统，数据分析类Agent，Python代码编辑器，智能客服系统，Manus通用智能体～
 
 ![](img/1de8f1ab7dd98da010c97fecd39e9d6e.png)
 
@@ -98,11 +99,11 @@
 
 ![](img/085b72de3d554aef23eaf44364234922.png)
 
-# MCP主题
+## MCP主题
 
 ---
 
-> 💡包**含内容：聚**焦MCP基础知识与实践！MCP与Function calling的关系，服务器开发流程，如何跨平台兼容，Agent如何接入MCP，MCP调用如何保证并发～
+> 💡包含内容：聚焦MCP基础知识与实践！MCP与Function calling的关系，服务器开发流程，如何跨平台兼容，Agent如何接入MCP，MCP调用如何保证并发～
 
 ![](img/fa8f1783aeae4a5ce73562a7a311ef23.png)
 
@@ -116,7 +117,7 @@
 
 ---
 
-> 💡包**含内容：M**CP的流式HTTP传输，热门MCP工具，MCP技术协议主要内容，如何用MCP开发浏览器自动化Agent，Agent部署与运维有哪些指标？
+> 💡包含内容：MCP的流式HTTP传输，热门MCP工具，MCP技术协议主要内容，如何用MCP开发浏览器自动化Agent，Agent部署与运维有哪些指标？
 
 ![](img/54f7054a62a247c4ba41d969aa7f3726.png)
 
@@ -128,14 +129,12 @@
 
 ![](img/a152e341f221269ade078d43ab74e251.png)
 
-> **写在后面：**
+> 写在后面：
 
 > 面试八股文是作为技术实践参考，不提倡大家逐字背诵，一定根据自己的技术掌握程度进行内化，变成自己的语言在真实面试中作答哦～
 
->
-
 > 🔗以上的工程化解决思路与方案，在大模型技术社区有相应的教程～
 
-> 👉赋范大模型全栈技术社区：https://kq4b3vgg5b.feishu.cn/wiki/space/7257794425391579164
+> 👉赋范大模型全栈技术社区：`https://kq4b3vgg5b.feishu.cn/wiki/space/7257794425391579164`
 
-> 👉知识问答功能（内测中限免）：https://ask.feishu.cn/shared-space/7257794425391579164
+> 👉知识问答功能（内测中限免）：`https://ask.feishu.cn/shared-space/7257794425391579164`

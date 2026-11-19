@@ -1,73 +1,67 @@
+
 # 魔搭-从零入门AI生图原理&实践-学习者手册
 
 > 来源：[https://datawhaler.feishu.cn/docx/U9Ced7FfqoA1GTxd7pEcHhgKnCc](https://datawhaler.feishu.cn/docx/U9Ced7FfqoA1GTxd7pEcHhgKnCc)
 
-# 一、学习规划
+## 一、学习规划
 
-## 学习排期
+### 学习排期
 
 <https://datawhaler.feishu.cn/sync/GU9tdTHgLsbLltbHUcYceKNInXc>
 
-## 如何学习
+### 如何学习
 
-+   整个学习期间**就俩个任务**
+整个学习期间**就俩个任务**
 
-1.  结合自己学习到的知识，记录学习历程和学习心得，撰写你的学习笔记
+1. 结合自己学习到的知识，记录学习历程和学习心得，撰写你的学习笔记
+1. 基于 魔搭工具链 & 可图Kolors 模型 微调文生图模型，并制作八图故事，提交微调模型和作品，要求如下：
+1. 训练自己的`LoRA`模型权重（考验数据集的选择能力 & 对微调工具的使用）
+1. 使用自己的`LoRA`模型进行8图故事创作（考验工作流设计能力、`Prompt`功力）
 
-1.  **基于 魔搭工具链 & 可图Kolors**** 模型 微调文生图****模型，并制作**八图故事，提交微调模型和作品，要求如下：
+Talk is cheap，show me the 笔记 and demo，笔记和作品重在完成而不是完美
 
-1.  **训练自己的LoRA模型权重**（考验数据集的选择能力 & 对微调工具的使用）
-
-1.  使用自己的LoRA模型进行8图故事创作（考验工作流设计能力、Prompt功力）
-
-+   **Talk is cheap，Sho**w** me the 笔记 and** demo，笔记和作品重在完成而不是完美
-
-+   本期魔搭- AIGC方向[优秀笔记案例](https://datawhaler.feishu.cn/wiki/UM7awcAuQicI4ukd2qtccT51nug#XFCtdPtQaoWEIExK901ci40gnef)：笔记标题带“Datawhale X 魔搭 AI夏令营”
+本期魔搭- AIGC方向[优秀笔记案例](https://datawhaler.feishu.cn/wiki/UM7awcAuQicI4ukd2qtccT51nug#XFCtdPtQaoWEIExK901ci40gnef)：笔记标题带“Datawhale X 魔搭 AI夏令营”
 
 | 群号 | 平台 | 任务 | 笔记链接 | 优秀理由 |
 | --- | --- | --- | --- | --- |
-| 学习群3 | CSDN | Task01 | [https://blog.csdn.net/linghyu/article/d](https://blog.csdn.net/linghyu/article/details/140971933?spm=1001.2014.3001.5501)etails/140971933?spm=1001.2014.3001.5501 | 有额外的知识补充 |
-| 学习群3 | CSDN | Task01 | http://t.csdnimg.cn/HETVC | 排版优美 |
-| 学习群5 | CSDN | Task01 | [h](https://blog.csdn.net/qq_74869852/article/details/140971871)ttps://blog.csdn.net/qq_74869852/article/details/140971871 | 排版优美，主动去探索 |
-| 学习群7 | CSDN | Task01 | http://t.csdnimg.cn/8Dvdm | 流程完整，如果再加上对baseline代码相关知识的拓展或者补充会更好哦 |
-| 学习群2 | 知乎 | Task01 | https://zhuanlan.zhihu.com/p/713674024 | 有图文效果和Prompt总结以及学习流程总结 |
-| 学习群6 | 掘金 | Task01 | https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca | 记录了自己学习的心里历程，以及对AI生图效果进行分析和总结 |
+| 学习群3 | CSDN | Task01 | [https://blog.csdn.net/linghyu/article/details/140971933?spm=1001.2014.3001.5501](https://blog.csdn.net/linghyu/article/details/140971933?spm=1001.2014.3001.5501) | 有额外的知识补充 |
+| 学习群3 | CSDN | Task01 | [http://t.csdnimg.cn/HETVC](http://t.csdnimg.cn/HETVC) | 排版优美 |
+| 学习群5 | CSDN | Task01 | [https://blog.csdn.net/qq_74869852/article/details/140971871](https://blog.csdn.net/qq_74869852/article/details/140971871) | 排版优美，主动去探索 |
+| 学习群7 | CSDN | Task01 | [http://t.csdnimg.cn/8Dvdm](http://t.csdnimg.cn/8Dvdm) | 流程完整，如果再加上对`baseline`代码相关知识的拓展或者补充会更好哦 |
+| 学习群2 | 知乎 | Task01 | [https://zhuanlan.zhihu.com/p/713674024](https://zhuanlan.zhihu.com/p/713674024) | 有图文效果和`Prompt`总结以及学习流程总结 |
+| 学习群6 | 掘金 | Task01 | [https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca](https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca) | 记录了自己学习的心里历程，以及对AI生图效果进行分析和总结 |
 
-+   [夏令营优秀笔记](https://exn8g66dnwu.feishu.cn/sheets/M4LFsR8oAhnFKZtGdZHcDJn4ncg?sheet=cZVuMN)令营第一期第二期第三期优秀笔记汇总：
++ [夏令营优秀笔记](https://exn8g66dnwu.feishu.cn/sheets/M4LFsR8oAhnFKZtGdZHcDJn4ncg?sheet=cZVuMN)令营第一期第二期第三期优秀笔记汇总：
 
-+   过程中会穿插**3**场直播，邀请教程大大来做直播分享，记得定好闹钟，助教群内也会提醒
++ 过程中会穿插 3 场直播，邀请教程大大来做直播分享，记得定好闹钟，助教群内也会提醒
 
-# 二、学习笔记
+## 二、学习笔记
 
 ### 提交公开可查阅的笔记链接
 
-**笔记标题带“****D**atawhale X 魔搭 AI夏令营”，不限笔记平台，发布到CSDN、知乎、哔哩哔哩、博客园、📕、👸号、掘金等公开平台。
+**笔记标题带“Datawhale X 魔搭 AI夏令营”，不限笔记平台，发布到CSDN、知乎、哔哩哔哩、博客园、📕、👸号、掘金等公开平台。**
 
 **0分笔记情况**：
 
-1.  笔记是AI生成的；
+1. 笔记是AI生成的；
+1. 直接提交教程链接；
+1. 笔记链接错误，笔记内容无法查看；
+1. 笔记直接没有链接，而是一行字
+1. 笔记无实质性内容，而是“简单的打卡”
 
-1.  直接提交教程链接；
-
-1.  笔记链接错误，笔记内容无法查看；
-
-1.  笔记直接没有链接，而是一行字
-
-1.  笔记无实质性内容，而是“简单的打卡”
-
-具体笔记，可按照task来做多份笔记，也可沿用单个笔记持续更新内容
+具体笔记，可按照 `task` 来做多份笔记，也可沿用单个笔记持续更新内容
 
 （P1:若想评选优秀笔记，建议用新的笔记链接，同一个笔记链接不重复评选为优秀笔记哦。）
 
-（P2:若沿用前面Task的笔记链接，且笔记无新增内容，视为无效，删除数据，无结营证书）
+（P2:若沿用前面 `Task` 的笔记链接，且笔记无新增内容，视为无效，删除数据，无结营证书）
 
-### **笔记评选时间：**
+### 笔记评选时间：
 
 | 任务名 | 笔记截止提交时间 | 笔记评选时间 | 优秀笔记公布时间 |
 | --- | --- | --- | --- |
-| Task01 | 8月11号晚24:00 | 8月12号 | 8月13号 |
-| Task02 | 8月14号晚24:00 | 8月15号 | 8月16号 |
-| Task03 | 8月17号晚24:00 | 8月18号 | 8月18号晚 |
+| `Task01` | 8月11号晚24:00 | 8月12号 | 8月13号 |
+| `Task02` | 8月14号晚24:00 | 8月15号 | 8月16号 |
+| `Task03` | 8月17号晚24:00 | 8月18号 | 8月18号晚 |
 
 ### 学习激励
 
@@ -77,61 +71,75 @@
 
 ### 学习者优秀笔记公示
 
-+   **Task01优秀笔记**[夏令营优秀笔记](https://exn8g66dnwu.feishu.cn/sheets/M4LFsR8oAhnFKZtGdZHcDJn4ncg?sheet=c59c8m)
++ `Task01`优秀笔记[夏令营优秀笔记](https://exn8g66dnwu.feishu.cn/sheets/M4LFsR8oAhnFKZtGdZHcDJn4ncg?sheet=c59c8m)
 
-| **序号** | **群号** | **🛰️昵称** | **笔记链接** | **打分（0-15）** | **优秀理由** |
+| 序号 | 群号 | 🛰️昵称 | 笔记链接 | 打分（0-15） | 优秀理由 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 学习群10 | meme | Datawhale X 魔搭 AI夏令营 | 11 | 完成了两个task的内容，并且笔记翔实，有自己的运行结果 |
-| 2 | 学习群2 | 孙大圣 | [h](https://blog.csdn.net/spring5/article/details/141086707)ttps://blog.csdn.net/spring5/article/details/141086707 | 11 | 过程流畅，内容较为全面，效果不错 |
-| 3 | 学习群2 | Loving Life | [htt](https://flowus.cn/share/2c14a323-f5a8-41ce-9675-eca1d06f8d9f?code=5SNA63%20%26%2312304%3BFlowUs%20%26%2324687%3B%26%2327969%3B%26%2312305%3BDatawhale%20AI%26%2322799%3B%26%2320196%3B%26%2333829%3B%26%2331532%3B%26%2322235%3B%26%2326399%3B%26%2339764%3B%26%2325645%3B-%20AIGC%26%2325991%3B%26%2329983%3B%26%2322270%3B%26%2326041%3B%26%2321521%3B%20Task1%26%2323398%3B%26%2320064%3B%26%2331508%3B%26%2335760%3B)ps://flowus.cn/share/2c14a323-f5a8-41ce-9675-eca1d06f8d9f?code=5SNA63 【FlowUs 息流】Datawhale AI夏令营第四期魔搭- AIGC文生图方向 Task1学习笔记 | 12 | 内容详实，展示效果不错，有完整的古故事 |
-| 4 | 学习群2 | 路 | [https://blog.csdn.net/m0_50972200/article/d](https://blog.csdn.net/m0_50972200/article/details/141106097?spm=1001.2014.3001.5501)etails/141106097?spm=1001.2014.3001.5501 | 11 | 附带较为详细的内容拓展 |
-| 5 | 学习群2 | 星 | [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/713674024)hihu.com/p/713674024 | 12 | 排版不错 |
-| 6 | 学习群3 | 优优 | [h](https://blog.csdn.net/Cx330_Aurora/article/details/141101278)ttps://blog.csdn.net/Cx330_Aurora/article/details/141101278 | 10 | 对prompt知识点进行拓展，图文与代码很协调 |
-| 7 | 学习群3 | H&amp;R | http://t.csdnimg.cn/JXUgp | 11 | 内容丰富；操作详尽；结构清晰 |
-| 8 | 学习群3 | 537耶 | [https://blog.csdn.net/2301_79387683/article/d](https://blog.csdn.net/2301_79387683/article/details/141104230?spm=1001.2014.3001.5501)etails/141104230?spm=1001.2014.3001.5501 | 10 | 内容完整，有自己的拓展，包括对知识点一些拓展和魔塔生图平台使用经验 |
-| 9 | 学习群3 | 黎虽无意逐鹿 | [https:](https://github.com/Lipapaldl/datawhale-ai-summer-camp-notes/blob/master/AICG/task1/Datawhale%20AI%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F%E9%AD%94%E6%90%AD-AIGC%E6%96%87%E7%94%9F%E5%9B%BE%E6%96%B9%E5%90%91Task1%E7%AC%94%E8%AE%B0.md)//github.com/Lipapaldl/datawhale-ai-summer-camp-notes/blob/master/AICG/task1/Datawhale%20AI%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F%E9%AD%94%E6%90%AD-AIGC%E6%96%87%E7%94%9F%E5%9B%BE%E6%96%B9%E5%90%91Task1%E7%AC%94%E8%AE%B0.md | 12 | 结合课程内容进行了自己的拓展 |
+| 2 | 学习群2 | 孙大圣 | [https://blog.csdn.net/spring5/article/details/141086707](https://blog.csdn.net/spring5/article/details/141086707) | 11 | 过程流畅，内容较为全面，效果不错 |
+| 3 | 学习群2 | Loving Life | [https://flowus.cn/share/2c14a323-f5a8-41ce-9675-eca1d06f8d9f?code=5SNA63%20%26%2312304%3BFlowUs%20%26%2324687%3B%26%2327969%3B%26%2312305%3BDatawhale%20AI%26%2322799%3B%26%2320196%3B%26%2333829%3B%26%2331532%3B%26%2322235%3B%26%2326399%3B%26%2339764%3B%26%2325645%3B-%20AIGC%26%2325991%3B%26%2329983%3B%26%2322270%3B%26%2326041%3B%26%2321521%3B%20Task1%26%2323398%3B%26%2320064%3B%26%2331508%3B%26%2335760%3B](https://flowus.cn/share/2c14a323-f5a8-41ce-9675-eca1d06f8d9f?code=5SNA63%20%26%2312304%3BFlowUs%20%26%2324687%3B%26%2327969%3B%26%2312305%3BDatawhale%20AI%26%2322799%3B%26%2320196%3B%26%2333829%3B%26%2331532%3B%26%2322235%3B%26%2326399%3B%26%2339764%3B%26%2325645%3B-%20AIGC%26%2325991%3B%26%2329983%3B%26%2322270%3B%26%2326041%3B%26%2321521%3B%20Task1%26%2323398%3B%26%2320064%3B%26%2331508%3B%26%2335760%3B) 【FlowUs 息流】Datawhale AI夏令营第四期魔搭- AIGC文生图方向 Task1学习笔记 | 12 | 内容详实，展示效果不错，有完整的古故事 |
+| 4 | 学习群2 | 路 | [https://blog.csdn.net/m0_50972200/article/details/141106097?spm=1001.2014.3001.5501](https://blog.csdn.net/m0_50972200/article/details/141106097?spm=1001.2014.3001.5501) | 11 | 附带较为详细的内容拓展 |
+| 5 | 学习群2 | 星 | [https://zhuanlan.zhihu.com/p/713674024](https://zhuanlan.zhihu.com/p/713674024) | 12 | 排版不错 |
+| 6 | 学习群3 | 优优 | [https://blog.csdn.net/Cx330_Aurora/article/details/141101278](https://blog.csdn.net/Cx330_Aurora/article/details/141101278) | 10 | 对`prompt`知识点进行拓展，图文与代码很协调 |
+| 7 | 学习群3 | H&R | [http://t.csdnimg.cn/JXUgp](http://t.csdnimg.cn/JXUgp) | 11 | 内容丰富；操作详尽；结构清晰 |
+| 8 | 学习群3 | 537耶 | [https://blog.csdn.net/2301_79387683/article/details/141104230?spm=1001.2014.3001.5501](https://blog.csdn.net/2301_79387683/article/details/141104230?spm=1001.2014.3001.5501) | 10 | 内容完整，有自己的拓展，包括对知识点一些拓展和魔塔生图平台使用经验 |
+| 9 | 学习群3 | 黎虽无意逐鹿 | [https://github.com/Lipapaldl/datawhale-ai-summer-camp-notes/blob/master/AICG/task1/Datawhale%20AI%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F%E9%AD%94%E6%90%AD-AIGC%E6%96%87%E7%94%9F%E5%9B%BE%E6%96%B9%E5%90%91Task1%E7%AC%94%E8%AE%B0.md](https://github.com/Lipapaldl/datawhale-ai-summer-camp-notes/blob/master/AICG/task1/Datawhale%20AI%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F%E9%AD%94%E6%90%AD-AIGC%E6%96%87%E7%94%9F%E5%9B%BE%E6%96%B9%E5%90%91Task1%E7%AC%94%E8%AE%B0.md) | 12 | 结合课程内容进行了自己的拓展 |
 | 10 | 学习群3 | 天色天歌天籁音 | Datawhale X 魔搭 AI 夏令营-AIGC 方向 | 14 | 排版优美，内容丰富 |
-| 11 | 学习群5 | 🐍空🐰 | http://t.csdnimg.cn/ikpSZ | 13 | 拓展了文生图相关知识点，并进行了模型参数解读和测试，有进行自主学习和探索 |
-| 12 | 学习群5 | 。 | [h](https://blog.csdn.net/qq_63116907/article/details/141057717)ttps://blog.csdn.net/qq_63116907/article/details/141057717 | 10 | 对于代码进行了探索和理解 |
-| 13 | 学习群5 | 细雨在怀 | 61 小红薯60D37379发布了一篇📕笔记，快来看吧！ 😆 eol2UmFQIv3XbhK 😆 http://xhslink.com/r2DkPS，复制本条信息，打开【📕】App查看精彩内容！ | 10 | 写出了自己的真实感受，偏情感体会类的笔记 |
-| 14 | 学习群5 | 钢蹦儿 | [h](https://blog.csdn.net/weixin_43680622/article/details/141056997)ttps://blog.csdn.net/weixin_43680622/article/details/141056997 | 11 | 写出了自己的真实体会和感受，同时对于baseline代码进行了探究，总结了自己遇到的报错和问题 |
-| 15 | 学习群5 | 大雾鸡蛋花 | [https](https://blog.csdn.net/2302_79699802/article/details/141104754?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104754%22%2C%22source%22%3A%222302_79699802%22%7D)://blog.csdn.net/2302_79699802/article/details/141104754?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104754%22%2C%22source%22%3A%222302_79699802%22%7D | 10 | 从笔记中可以看出很认真的在学习，并有自身想法 |
-| 16 | 学习群5 | 云姐姐（爱小桔子) | [https://mp.weixin.qq.com/s/SF](https://mp.weixin.qq.com/s/SFgng7YKvkwa-qnsv86Kaw)gng7YKvkwa-qnsv86Kaw | 10 | 思维导图清晰简洁、学习认真 |
-| 17 | 学习群6 | 🎀 | [https://blog.csdn.net/m0_45686835/article/d](https://blog.csdn.net/m0_45686835/article/details/141087441?spm=1001.2014.3001.5501)etails/141087441?spm=1001.2014.3001.5501 | 12 | 具有丰富的知识拓展和讲解 |
-| 18 | 学习群6 | 山高路远 | [https](https://blog.csdn.net/qq_56450472/article/details/141106467?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141106467%22%2C%22source%22%3A%22qq_56450472%22%7D)://blog.csdn.net/qq_56450472/article/details/141106467?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141106467%22%2C%22source%22%3A%22qq_56450472%22%7D | 10 | 有原理公式推导过程，如果补充一些代码相关的会更好 |
-| 19 | 学习群6 | 老板娘 | [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/713830773)hihu.com/p/713830773 | 11 | 对代码，参数以及文件进行解读 |
-| 20 | 学习群6 | 百里香酚兰 | [https](https://blog.csdn.net/bailichen800/article/details/141027146?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141027146%22%2C%22source%22%3A%22bailichen800%22%7D)://blog.csdn.net/bailichen800/article/details/141027146?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141027146%22%2C%22source%22%3A%22bailichen800%22%7D | 10 | 对学习内容进行了深入的思考 |
-| 21 | 学习群6 | wm | [https://blog.csdn.net/siri_177/article/d](https://blog.csdn.net/siri_177/article/details/141094597?spm=1001.2014.3001.5501)etails/141094597?spm=1001.2014.3001.5501 | 10 | 内容充实有自己的思考 |
-| 22 | 学习群6 | Alyeska | [h](https://blog.csdn.net/alyeska/article/details/141113471)ttps://blog.csdn.net/alyeska/article/details/141113471 | 10 | 对代码深入解读，有自己的思考 |
-| 23 | 学习群6 | Amen | [ht](https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca)tps://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca | 14 | 内容充实有创新有深度的思考 |
-| 24 | 学习群7 | f | http://t.csdnimg.cn/vck10 | 12 | 虽然前半部分与baseline一致，但是作为补充也算合理，后续的步骤齐全，promote设定有自己理解 |
+| 11 | 学习群5 | 🐍空🐰 | [http://t.csdnimg.cn/ikpSZ](http://t.csdnimg.cn/ikpSZ) | 13 | 拓展了文生图相关知识点，并进行了模型参数解读和测试，有进行自主学习和探索 |
+| 12 | 学习群5 | 。 | [https://blog.csdn.net/qq_63116907/article/details/141057717](https://blog.csdn.net/qq_63116907/article/details/141057717) | 10 | 对于代码进行了探索和理解 |
+| 13 | 学习群5 | 细雨在怀 | 61 小红薯60D37379发布了一篇📕笔记，快来看吧！ 😆 eol2UmFQIv3XbhK 😆 [http://xhslink.com/r2DkPS](http://xhslink.com/r2DkPS)，复制本条信息，打开【📕】App查看精彩内容！ | 10 | 写出了自己的真实感受，偏情感体会类的笔记 |
+| 14 | 学习群5 | 钢蹦儿 | [https://blog.csdn.net/weixin_43680622/article/details/141056997](https://blog.csdn.net/weixin_43680622/article/details/141056997) | 11 | 写出了自己的真实体会和感受，同时对于`baseline`代码进行了探究，总结了自己遇到的报错和问题 |
+| 15 | 学习群5 | 大雾鸡蛋花 | [https://blog.csdn.net/2302_79699802/article/details/141104754?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104754%22%2C%22source%22%3A%222302_79699802%22%7D](https://blog.csdn.net/2302_79699802/article/details/141104754?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104754%22%2C%22source%22%3A%222302_79699802%22%7D) | 10 | 从笔记中可以看出很认真的在学习，并有自身想法 |
+| 16 | 学习群5 | 云姐姐（爱小桔子) | [https://mp.weixin.qq.com/s/SFgng7YKvkwa-qnsv86Kaw](https://mp.weixin.qq.com/s/SFgng7YKvkwa-qnsv86Kaw) | 10 | 思维导图清晰简洁、学习认真 |
+| 17 | 学习群6 | 🎀 | [https://blog.csdn.net/m0_45686835/article/details/141087441?spm=1001.2014.3001.5501](https://blog.csdn.net/m0_45686835/article/details/141087441?spm=1001.2014.3001.5501) | 12 | 具有丰富的知识拓展和讲解 |
+| 18 | 学习群6 | 山高路远 | [https://blog.csdn.net/qq_56450472/article/details/141106467?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141106467%22%2C%22source%22%3A%22qq_56450472%22%7D](https://blog.csdn.net/qq_56450472/article/details/141106467?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141106467%22%2C%22source%22%3A%22qq_56450472%22%7D) | 10 | 有原理公式推导过程，如果补充一些代码相关的会更好 |
+| 19 | 学习群6 | 老板娘 | [https://zhuanlan.zhihu.com/p/713830773](https://zhuanlan.zhihu.com/p/713830773) | 11 | 对代码，参数以及文件进行解读 |
+| 20 | 学习群6 | 百里香酚兰 | [https://blog.csdn.net/bailichen800/article/details/141027146?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141027146%22%2C%22source%22%3A%22bailichen800%22%7D](https://blog.csdn.net/bailichen800/article/details/141027146?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141027146%22%2C%22source%22%3A%22bailichen800%22%7D) | 10 | 对学习内容进行了深入的思考 |
+| 21 | 学习群6 | wm | [https://blog.csdn.net/siri_177/article/details/141094597?spm=1001.2014.3001.5501](https://blog.csdn.net/siri_177/article/details/141094597?spm=1001.2014.3001.5501) | 10 | 内容充实有自己的思考 |
+| 22 | 学习群6 | Alyeska | [https://blog.csdn.net/alyeska/article/details/141113471](https://blog.csdn.net/alyeska/article/details/141113471) | 10 | 对代码深入解读，有自己的思考 |
+| 23 | 学习群6 | Amen | [https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca](https://juejin.cn/post/7401033107807879202?share_token=573d1b10-6e53-4a48-96f1-f88365b49fca) | 14 | 内容充实有创新有深度的思考 |
+
+
+
+| 24 | 学习群7 | f | `http://t.csdnimg.cn/vck10` | 12 | 虽然前半部分与`baseline`一致，但是作为补充也算合理，后续的步骤齐全，`promote`设定有自己理解 |
+
 | 25 | 学习群7 | 抱了一只狗 | Datawhale × 魔搭 AI 夏令营 第四期 AIGC文生图方向 | 11 | 排版整洁，内容具有自己的扩展和思考，但具体的步骤阐述较少 |
-| 26 | 学习群7 | 风荷举 | Task1共产出两篇📕笔记：1. 90 ShirleyAI发布了一篇📕笔记，快来看吧！ Vnl0TsKNItNRZnP http://xhslink.com/JXVtQS，复制本条信息，打开【📕】App查看精彩内容！2. 54 ShirleyAI发布了一篇📕笔记，快来看吧！ 94Zss3UJeZTj1iO http://xhslink.com/4w2tQS，复制本条信息，打开【📕】App查看精彩内容！ | 12 | 非常认真，内容排版整洁，  内容有自己的思考和扩展，有详细的推导过程呈现 |
-| 28 | 学习群7 | 吃西瓜大王 | [Task 1 从零入门AI生图原理&amp;实践 笔记_](https://i26jbpcu8a.feishu.cn/docx/A0EcdTkfLo8WBjxVxBHceMZZnac?from=from_copylink)Datawhale X 魔搭 AI夏令营 | 10 | 内容详实有扩展，排版整洁，如果加上自己的AI生图图片合集就更优秀了 |
-| 29 | 学习群7 | 徒此揖清芬 | [https://blog.csdn.net/gonewitn/article/details/141104749?csdn_share_tail=%7B%22type%22%3A%22bl](https://blog.csdn.net/gonewitn/article/details/141104749?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104749%22%2C%22source%22%3A%22gonewitn%22%7D)og%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104749%22%2C%22source%22%3A%22gonewitn%22%7D | 10 | 发现问题并解决问题 |
-| 30 | 学习群7 | 读书 | D[atawhale X 魔搭AI夏令营](https://zhuanlan.zhihu.com/p/713809293) 第四期AIGC文生图方向Task1笔记 - 读书的文章 - 知乎 https://zhuanlan.zhihu.com/p/713809293 | 10 | 具有自己的思考与扩展 |
-| 31 | 学习群7 | V笑的热DIE麻雀 | [https://www.bilibili.com/read/cv36877](https://www.bilibili.com/read/cv36877071/?spm_id_from=333.999.0.0&amp;jump_opus=1)071/?spm_id_from=333.999.0.0&amp;jump_opus=1 | 11 | 具有独立思考非常棒 |
-| 32 | 学习群8 | 梦想 | [https://blog.csdn.net/mx17686528894/article/d](https://blog.csdn.net/mx17686528894/article/details/141070015?spm=1001.2014.3001.5502)etails/141070015?spm=1001.2014.3001.5502 | 10 | 笔记清晰，通俗易懂 |
-| 33 | 学习群8 | crush | [https](https://blog.csdn.net/qq_51406661/article/details/141090854?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141090854%22%2C%22source%22%3A%22qq_51406661%22%7D)://blog.csdn.net/qq_51406661/article/details/141090854?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141090854%22%2C%22source%22%3A%22qq_51406661%22%7D | 12 | 结构清晰，笔记非常详细 |
-| 34 | 学习群9 | 零度 | [https://www.cnblogs.com](https://www.cnblogs.com/lingdu98/p/18349440)/lingdu98/p/18349440 | 13 | 对于相关的知识进行了拓展和总结，针对部分代码进行了探索和研究 |
+
+| 26 | 学习群7 | 风荷举 | `Task1`共产出两篇📕笔记：1. 90 ShirleyAI发布了一篇📕笔记，快来看吧！ `Vnl0TsKNItNRZnP` `http://xhslink.com/JXVtQS`，复制本条信息，打开【📕】App查看精彩内容！2. 54 ShirleyAI发布了一篇📕笔记，快来看吧！ `94Zss3UJeZTj1iO` `http://xhslink.com/4w2tQS`，复制本条信息，打开【📕】App查看精彩内容！ | 12 | 非常认真，内容排版整洁，内容有自己的思考和扩展，有详细的推导过程呈现 |
+
+| 28 | 学习群7 | 吃西瓜大王 | [`Task 1 从零入门AI生图原理&实践 笔记_`](https://i26jbpcu8a.feishu.cn/docx/A0EcdTkfLo8WBjxVxBHceMZZnac?from=from_copylink) Datawhale X 魔搭 AI夏令营 | 10 | 内容详实有扩展，排版整洁，如果加上自己的AI生图图片合集就更优秀了 |
+
+| 29 | 学习群7 | 徒此揖清芬 | `https://blog.csdn.net/gonewitn/article/details/141104749?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141104749%22%2C%22source%22%3A%22gonewitn%22%7D` | 10 | 发现问题并解决问题 |
+
+| 30 | 学习群7 | 读书 | [`Datawhale X 魔搭AI夏令营`](https://zhuanlan.zhihu.com/p/713809293) 第四期AIGC文生图方向`Task1`笔记 - 读书的文章 - 知乎 `https://zhuanlan.zhihu.com/p/713809293` | 10 | 具有自己的思考与扩展 |
+
+| 31 | 学习群7 | V笑的热DIE麻雀 | `https://www.bilibili.com/read/cv36877071/?spm_id_from=333.999.0.0&jump_opus=1` | 11 | 具有独立思考非常棒 |
+
+| 32 | 学习群8 | 梦想 | `https://blog.csdn.net/mx17686528894/article/details/141070015?spm=1001.2014.3001.5502` | 10 | 笔记清晰，通俗易懂 |
+
+| 33 | 学习群8 | crush | `https://blog.csdn.net/qq_51406661/article/details/141090854?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22141090854%22%2C%22source%22%3A%22qq_51406661%22%7D` | 12 | 结构清晰，笔记非常详细 |
+
+| 34 | 学习群9 | 零度 | `https://www.cnblogs.com/lingdu98/p/18349440` | 13 | 对于相关的知识进行了拓展和总结，针对部分代码进行了探索和研究 |
 
 # 其他
 
-## **开营直播内容：**
+## 开营直播内容：
 
 ## 重要链接
 
-1.  **赛事官网**：
+### 赛事官网
 
-1.  **学习相关QA汇总文档**：** **[ QA & 其他彩蛋](https://datawhaler.feishu.cn/wiki/K6b1woVtlizjV0klBBgc6ZJUnie)** **
+### 学习相关QA汇总文档
+
+[QA & 其他彩蛋](https://datawhaler.feishu.cn/wiki/K6b1woVtlizjV0klBBgc6ZJUnie)
 
 ## 如何打卡？
 
-1.  **打卡说明**：
+### 打卡说明
 
 教程左侧显示栏完成，每个任务打卡表单不一样。
 
-同一个Task任务打卡为覆盖形式，比如填了笔记链接打卡后，再不填笔记链接打卡就会【没有笔记链接】，辛苦大家注意再加一下笔记链接哈
+同一个`Task`任务打卡为覆盖形式，比如填了笔记链接打卡后，再不填笔记链接打卡就会【没有笔记链接】，辛苦大家注意再加一下笔记链接哈
 
 ![](img/1b9f3f11bf5f545eb8dff484686a4a47.png)
 
@@ -139,4 +147,4 @@
 
 学习者仅能获得实践证明，详见【学习激励】
 
-后续参加 **助教/宣传大使/教程共创 **等贡献，表现优秀者可获得实习证明，有兴趣的同学可以咨询负责人
+后续参加助教/宣传大使/教程共创等贡献，表现优秀者可获得实习证明，有兴趣的同学可以咨询负责人

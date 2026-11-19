@@ -1,14 +1,15 @@
+
 # 2024 年 7 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/Kh2udbknRoBc2nxAHmeccrIunXg](https://docs.feishu.cn/docx/Kh2udbknRoBc2nxAHmeccrIunXg)
 
 ---
 
-# **一、法律科技融资动态**
+## 一、法律科技融资动态
 
-## AI 知识平台 Hebbia 完成 1.3 亿美元 B 轮融资，包括大量法律领域用例
+### AI 知识平台 Hebbia 完成 1.3 亿美元 B 轮融资，包括大量法律领域用例
 
-[7 月 8 ](https://www.hebbia.ai)日，AI 知识平台 Hebbia 宣布完成 1.3 亿美元 B 轮融资，投资人包括 Andreessen Horowitz、Index Ventures、Google Ventures 和亿万富翁 Peter Thiel。
+7 月 8 日，AI 知识平台 Hebbia 宣布完成 1.3 亿美元 B 轮融资，投资人包括 Andreessen Horowitz、Index Ventures、Google Ventures 和亿万富翁 Peter Thiel。
 
 Hebbia 成立于 2020 年，利用 AI 帮助企业筛选各种文件并回答问题。目前，Hebbia 已经服务一些全球领先的资产管理公司、律师事务所、银行和财富 100 强公司。Hebbia 在官网列举了以下“法律”相关用例：
 
@@ -24,33 +25,33 @@ Hebbia 成立于 2020 年，利用 AI 帮助企业筛选各种文件并回答问
 
 > https://mp.weixin.qq.com/s/rvm-3qRL9t3bAll4GdWi7Q
 
-## 网络安全初创公司 Cytactic 完成 1600 万美元种子轮融资
+### 网络安全初创公司 Cytactic 完成 1600 万美元种子轮融资
 
 7 月 9 日，网络危机管理平台 Cytactic 宣布完成 1600 万美元种子轮融资，Evolution Equity Partners 领投。
 
 Cytactic 由以色列律师事务所 Herzog, Fox & Ne'eman 的前合伙人兼技术主管 Nimrod Kozlovski 于 2022 年创立，旨在集中和管理组织的网络事件响应，并与律所密切合作。这个业务通常可能会涉及多个利益相关者，包括法律和隐私团队，而且涉及各种任务，从恢复数据到遵守数据泄露法规。
 
-Cytactic 不是唯一一家专注于帮助组织管理网络安全和数据隐私风险、遵[守相关法规，于今年](https://www.law.com/legaltechnews/2024/05/28/data-privacy-company-transcend-raises-40-million-in-series-b-funding-round/)披露新融资的科技公司。5 月下旬，数据隐私和合规解决方案公司 Transcend 也宣布完成 4000 万美元 B 轮融资。
+Cytactic 不是唯一一家专注于帮助组织管理网络安全和数据隐私风险、遵守相关法规，于今年披露新融资的科技公司。5 月下旬，数据隐私和合规解决方案公司 [Transcend](https://www.law.com/legaltechnews/2024/05/28/data-privacy-company-transcend-raises-40-million-in-series-b-funding-round/) 也宣布完成 4000 万美元 B 轮融资。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/10/cybersecurity-startup-cytactic-founded-by-law-firm-partner-announces-16m-seed-round/
 
-## 自动化计时计费工具 PointOne 完成 350 万美元种子轮融资
+### 自动化计时计费工具 PointOne 完成 350 万美元种子轮融资
 
 7 月 10 日，自动化计时计费工具 PointOne 宣布完成 350 万美元种子轮融资，投资方为 Bessemer Venture Partners、General Catalyst、Y Combinator 和隶属于 Cooley 律师事务所的投资基金等。
 
-Poi[ntOne 于 20](https://www.law.com/legaltechnews/2024/03/22/compliance-startup-singlefile-raises-6-5m-with-investments-from-am-law-100-and-tltf/)23 年 10 月启动，并参加了 YC[ 去年的](https://www.law.com/legaltechnews/2021/01/19/open-access-matter-platform-lupl-announces-14m-funding-on-track-for-wide-2021-release/)冬季创业营。该公司除了提供自动计时计费功能，还训练了一个 AI 系统，支持搜索与客户账单时的常见问题。据悉，PointOne 是 Cooley 基金投资的法律科技公司之一，该机构此前曾投资合规服务商 SingleFile、合同协作平台 The Contract Network 和法律事务管理平台 Lupl。
+PointOne 于 2023 年 10 月启动，并参加了 YC [去年的](https://www.law.com/legaltechnews/2021/01/19/open-access-matter-platform-lupl-announces-14m-funding-on-track-for-wide-2021-release/)冬季创业营。该公司除了提供自动计时计费功能，还训练了一个 AI 系统，支持搜索与客户账单时的常见问题。据悉，PointOne 是 Cooley 基金投资的法律科技公司之一，该机构此前曾投资合规服务商 [SingleFile](https://www.law.com/legaltechnews/2024/03/22/compliance-startup-singlefile-raises-6-5m-with-investments-from-am-law-100-and-tltf/)、合同协作平台 The Contract Network 和法律事务管理平台 Lupl。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/10/timekeeping-startup-pointone-secures-3-5m-seed-round-including-investment-from-cooley-fund/
 
-## HerculesAI 完成 2600 万美元 B 轮融资，为律师提供 AI Agent 服务
+### HerculesAI 完成 2600 万美元 B 轮融资，为律师提供 AI Agent 服务
 
 近日，HerculesAI（原“Zero Systems）宣布完成 2600 万美元 B 轮融资，Streamlined Ventures、 Proof VC、汤森路透、Alumni Ventures 以及各种天使投资者参与投资。HerculesAI 开发了多种 AI Agent，帮助律师将繁琐、复杂、枯燥的业务流程自动化，包括智能数据提取、数据转换和数据验证三部分。其中，智能数据提取主要从非结构化的文档中提取数据；数据转换则是通过建立一套规则和结构，来处理提取的数据；数据验证是最重要的部分，将提取的信息与法规、政策、合同、法律等来源进行比较，如果发现问题将会提交给人类做人工审核。
 
 > 拓展阅读：https://mp.weixin.qq.com/s/HymvjY258gyKHyI0t_2w8g
 
-## 法律 AI 初创公司 LegalFly 完成 1500 万欧元，Notion Capital 领投
+### 法律 AI 初创公司 LegalFly 完成 1500 万欧元，Notion Capital 领投
 
-[7 月 15 日](https://www.legalfly.ai)，法律 AI 初创公司 LegalFly 宣布完成 1500 万欧元 A 轮融资，Notion Capital 领投，Redalpine 和 Fortino Capital 跟投。
+7 月 15 日，法律 AI 初创公司 LegalFly 宣布完成 1500 万欧元 A 轮融资，Notion Capital 领投，Redalpine 和 Fortino Capital 跟投。
 
 LegalFly 成立于 2023 年，由 Tinder 公司的前产品专家团队 Ruben Miessen、Kasper Verbeeck、Dennis Montégnies和Gregory Vekemans 创立。去年 11 月，该公司完成 200 万欧元种子轮融资，Redalpine 领投，包括谷歌 Deepmind 产品总监 Mehdi Ghissassi 在内的行业领导者也参与其中。
 
@@ -64,61 +65,61 @@ LegalFly 将其产品的优势归为「安全性」，通过将数据进行本�
 
 > https://www.legalfly.ai/blog/seed-funding
 
-## CLM 服务商 netLex 完成 2270 万美元新一轮融资
+### CLM 服务商 netLex 完成 2270 万美元新一轮融资
 
 7 月 17 日，巴西合同生命周期管理（CLM）服务商 netLex 宣布完成 2270 万美元（1.26 亿雷亚尔）新一轮融资，Riverwood Capital 领投，旨在把 AI 集成到 CLM 流程中。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/18/brazilian-clm-provider-netlex-raises-22-7-million-seeking-global-expansion/
 
-## 法律 AI 初创公司 Leya 完成 2500 万美元 A 轮融资，两个月前刚完成种子轮融资
+### 法律 AI 初创公司 Leya 完成 2500 万美元 A 轮融资，两个月前刚完成种子轮融资
 
-7 月[ 17 日，法律](https://www.law.com/legaltechnews/2024/05/16/swedish-gen-ai-assistant-leya-raises-10-5-million/) AI 初创公司 Leya 宣布完成 2500 万美元 A 轮融资，Redpoint Ventures 领投，Benchmark、Y Combinator、Wayfinder Ventures 和 Alt Capital 跟投。今年 5 月，Leya 刚完成 1050 万美元种子轮融资，Benchmark 领投，Hummingbird、SV Angel 和 Y Combinator 跟投。
+7 月 17 日，[法律 AI 初创公司 Leya](https://www.law.com/legaltechnews/2024/05/16/swedish-gen-ai-assistant-leya-raises-10-5-million/) 宣布完成 2500 万美元 A 轮融资，Redpoint Ventures 领投，Benchmark、Y Combinator、Wayfinder Ventures 和 Alt Capital 跟投。今年 5 月，Leya 刚完成 1050 万美元种子轮融资，Benchmark 领投，Hummingbird、SV Angel 和 Y Combinator 跟投。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/17/swedish-startup-leya-announces-25m-investment-two-months-after-10-5m-seed-round/
 
-## AI 尽职调查平台 Xapien 完成 1000 万美元 A 轮融资
+### AI 尽职调查平台 Xapien 完成 1000 万美元 A 轮融资
 
 7 月 17 日，尽职调查平台 Xapien 宣布完成 1000 万美元 A 轮融资，YFM Equity Partners 领投。该公司利用 AI 从网上非结构化信息中提取关于公司和个人的关键信息。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/18/due-diligence-technology-provider-xapien-secures-10-million-series-a-investment/
 
-## Clio 完成 9 亿美元 F 轮融资，多年来始终如一构建「法律操作系统」
+### Clio 完成 9 亿美元 F 轮融资，多年来始终如一构建「法律操作系统」
 
-[7 月 ](https://www.clio.com)23 日，法律实践管理平台 Clio 宣布完成 9 亿美元 F 轮融资，New Enterprise Associates（NEA）领投，Goldman Sachs、Sixth Street、CapitalG、Tidemark、TCV、JMI Equity 等跟投。
+7 月 23 日，法律实践管理平台 Clio 宣布完成 9 亿美元 F 轮融资，New Enterprise Associates（NEA）领投，Goldman Sachs、Sixth Street、CapitalG、Tidemark、TCV、JMI Equity 等跟投。
 
 Clio 成立于 2008 年，是一家法律实践管理软件服务商。简单来说，就是开发辅助律所经营的各种软件的公司，致力于让律所经营更加容易，对于法律专业人士来说赚钱更加容易，对于客户来说也更加便利。
 
 ![](img/2e9b33c5dd2295d3b837190ebaded83a.png)
 
-目前，Clio 获得了全球 [100](https://www.clio.com/partnerships/bar-associations/) 多个[律师协会和法律协会](https://www.clio.com/partnerships/bar-associations/)[的批准，包括美国所有](https://www.clio.com/app-directory/?cta=top-nav-na)[ 50 个州](https://www.clio.com/partnerships/certified-consultants/find-a-ccc/)。Clio 的应用目录有超过 250 个产品集成。同时，Clio 通过与参加 Clio 学术访问计划（CAAP）的法律诊所合作，为无数法学生提供支持。除此之外，Clio 还与许多渠道合作伙伴合作，将 Clio 带入一个不断增长的科技前瞻性律师事务所社区。
+目前，Clio 获得了全球 [100 多个律师协会和法律协会](https://www.clio.com/partnerships/bar-associations/) 的批准，包括美国所有 [50 个州](https://www.clio.com/partnerships/certified-consultants/find-a-ccc/)。Clio 的应用目录有超过 250 个产品集成。同时，Clio 通过与参加 Clio 学术访问计划（CAAP）的法律诊所合作，为无数法学生提供支持。除此之外，Clio 还与许多渠道合作伙伴合作，将 Clio 带入一个不断增长的科技前瞻性律师事务所社区。
 
 > 拓展阅读：
 
-> [深度｜Clio 完成 9 亿美元 F 轮](https://mp.weixin.qq.com/s/y9qEJBHN2ZfadN0Ghv6lmA)融资，多年来始终如一构建「法律操作系统」
+> 深度｜Clio 完成 9 亿美元 F 轮融资，多年来始终如一构建「法律操作系统」
 
 > https://www.clio.com/blog/series-f/
 
 > https://www.law.com/legaltechnews/2024/07/23/clio-raises-900m-series-f-to-reach-3b-valuation-with-help-from-new-investors/
 
-## 法律 AI 初创公司 Harvey 完成 1 亿美元 C 轮融资，谷歌领投
+### 法律 AI 初创公司 Harvey 完成 1 亿美元 C 轮融资，谷歌领投
 
 7 月 23 日，法律 AI 公司 Harvey 宣布完成 1 亿美元 C 轮融资，估值 15 亿美元，成为了独角兽（估值 10 亿美金）公司。本轮融资由谷歌旗下基金 Google Ventures 领投，OpenAI、Kleiner Perkins、Sequoia Capital、Elad Gil 和 SV Angel 跟投。Harvey 打算利用这笔新的资金，投资 AI 原生系统所需的工程、数据和领域的专业知识，并且扩大团队，为全球客户服务。明年，Harvey 还打算收集和策划提高该公司大模型效率所需的数据，同时推出新产品。
 
 > 拓展阅读：https://www.harvey.ai/blog/harvey-raises-series-c
 
-## 法律 AI 初创公司 Uncover Legal 完成新一轮融资
+### 法律 AI 初创公司 Uncover Legal 完成新一轮融资
 
 7 月 24 日，[Uncover Legal](https://www.uncoverlegal.com) 宣布完成新一轮融资，投资方为 Dutchyard。该公司计划利用这笔新的资金，根据律师和法务部门的需求定制解决方案，将服务扩展到公司法务部门，并为更多律师提供合适且负担得起的 AI 工具。
 
 > 拓展阅读：https://www.uncoverlegal.com/blog/ai-driven-matter-analysis-tool-uncover-legal-secures-significant-growth-funding-from-dutchyard-to-maximize-lawyers-efficiency-with-ai
 
-## 法律科技初创公司 DecoverAI 完成 200 万美元种子轮融资
+### 法律科技初创公司 DecoverAI 完成 200 万美元种子轮融资
 
 7 月 30 日，[DecoverAI](https://www.decoverhq.com) 宣布完成 200 万美元种子轮融资，Leo Capital 领投。该公司正在开发一个 AI 系统，赋能法律任务的开展，比如证据发现、法律研究和战略制定等。
 
 > 拓展阅读：https://economictimes.indiatimes.com/tech/funding/legal-tech-company-decoverai-raises-2-million-in-funding-round-led-by-leo-capital/articleshow/112141328.cms
 
-## 法律科技初创公司 Definely 获得 Innovate UK 58.5 万英镑赠款
+### 法律科技初创公司 Definely 获得 Innovate UK 58.5 万英镑赠款
 
 7 月 31 日，法律科技初创公司 Definely 宣布获得 Innovate UK 提供的 58.5 万英镑赠款，以支持开发新的生成式 AI 产品，从而简化法律文件中的信息访问和理解。据悉，Innovate UK是一家英国创新机构，通过新产品、流程和服务的开发和商业化帮助英国企业成长。
 
@@ -128,26 +129,29 @@ Clio 成立于 2008 年，是一家法律实践管理软件服务商。简单来
 
 > https://legaltechnology.com/2024/07/31/definely-secures-585000-innovate-uk-grant/
 
-# **二、法律科技并购动态**
+## 二、法律科技并购动态
 
-## 私募股权公司 Aurora Capital Partners 收购诉讼支持公司 First Legal
+### 私募股权公司 Aurora Capital Partners 收购诉讼支持公司 First Legal
 
 7 月 2 日，Aurora 宣布了以上消息。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1854480/aurora-acquires-litigation-service-provider-first-legal
 
-## Legaltech Hub 收购 Legal Tech Consultants，扩展法律科技咨询服务
+### Legaltech Hub 收购 Legal Tech Consultants，扩展法律科技咨询服务
 
-[7 月 9 日，法律科技咨](https://www.legaltechnologyhub.com)询服务商 Legaltech Hub 宣布收购 Legal Tech Consultants，该公司的创始人兼 CEO Cheryl Wilson Griffin 将加入 Legaltech Hub，担任供应商咨询副总裁，发展公司的咨询和内容产品。
+7 月 9 日，法律科技咨询服务商 Legaltech Hub 宣布收购 Legal Tech Consultants，该公司的创始人兼 CEO Cheryl Wilson Griffin 将加入 Legaltech Hub，担任供应商咨询副总裁，发展公司的咨询和内容产品。
 
-Legal Tech Consultants 至少是近几年来，Legaltech Hub[ 的第二次收购。2022 年](https://www.law.com/legaltechnews/2022/05/12/legaltech-hub-expands-into-job-listings-with-legaltech-jobs-acquisition/)，Legaltech Hub 收购一家招聘信息网站 Lega[lTech Jobs，](https://www.law.com/legaltechnews/2023/01/24/legaltech-hub-launches-subscription-content-site-lth-premium/)扩[展法律科](https://www.law.com/legaltechnews/2024/05/23/legaltech-hub-releases-in-depth-competitive-analysis-on-legal-techs-document-automation-providers/)技相关的招聘业务；2023 年 1 月，Legaltech Hub 又推出一个订阅网站 LTH Premium，提供教育资源、针对性的法律科技报告和见解。今年 5 月，Legaltech Hub 发布了法律科技市场服务商类别竞争分析系列报告中的第一个 —— 专门针对文档自动化服务商。
+Legal Tech Consultants 至少是近几年来，Legaltech Hub [的第二次收购。2022 年](https://www.law.com/legaltechnews/2022/05/12/legaltech-hub-expands-into-job-listings-with-legaltech-jobs-acquisition/)，Legaltech Hub 收购一家招聘信息网站 [LegalTech Jobs，](https://www.law.com/legaltechnews/2023/01/24/legaltech-hub-launches-subscription-content-site-lth-premium/)扩展法律科技相关的招聘业务；2023 年 1 月，Legaltech Hub 又推出一个订阅网站 LTH Premium，提供教育资源、针对性的法律科技报告和见解。今年 5 月，Legaltech Hub 发布了法律科技市场服务商类别竞争分析系列报告中的第一个 —— [专门针对文档自动化服务商](https://www.law.com/legaltechnews/2024/05/23/legaltech-hub-releases-in-depth-competitive-analysis-on-legal-techs-document-automation-providers/)。
 
 Legaltech Hub 是一家法律科技解决方案、工具和服务的全球目录平台，法律科技的买家可以在这里研究他们管理 21 世纪律所或法务部门所需的技术，供应商可以展示他们的解决方案，投资者则可以了解市场。
 
+
+
+
+# 二、法律科技公司并购动态
+
 > 拓展阅读：
-
 > https://hub.legaltechconsultants.com/deep-thoughts/ltc-and-lth
-
 > https://www.law.com/legaltechnews/2024/07/09/legaltech-hub-acquires-legal-tech-consultants-expanding-to-full-service-consulting/
 
 ## 数据管理公司 Cellebrite 收购 CyTech
@@ -180,7 +184,7 @@ Legaltech Hub 是一家法律科技解决方案、工具和服务的全球目录
 
 这是 Litera 最新的并购交易，该公司在过去几年中进行了十几次收购。
 
-[2023 年，Lite](https://www.law.com/legaltechnews/2023/04/24/litera-acquires-crm-provider-upper-sigma-expanding-its-marketing-business-development-capabilities/)ra 收购了 CRM 服务商 U[pper Si](https://www.law.com/legaltechnews/2022/01/11/litera-acquires-shipping-and-processing-specialist-psship-continuing-ma-drive-into-2022/)[gma，扩大其营销和业务](https://www.law.com/legaltechnews/2022/01/18/litera-acquires-collaboration-manager-prosperoware-continuing-ma-run/)[开发能力。2022 年，Li](https://www.law.com/legaltechnews/2022/08/16/litera-acquires-talent-micron-systems-adding-talent-management-capabilities/)t[er](https://www.law.com/legaltechnews/2021/11/05/hg-pours-additional-funds-into-litera-to-fuel-acquisitions-product-growth-and-hiring/)a 宣布三项新收购：PS/Ship，一个运输管理、包裹跟踪和发票处理系统；Prosperoware，提高系统的信息治理能力；以及 Micron Systems，该公司提供人才管理软件，旨在为律师和会计师事务所提供招聘和人力资源流程自动化。据了解，Litera 的此类收购可能得到私募股权公司 Hg 的投资支持，该公司于 2019 年收购了 Litera。
+[2023 年，Lite](https://www.law.com/legaltechnews/2023/04/24/litera-acquires-crm-provider-upper-sigma-expanding-its-marketing-business-development-capabilities/)ra 收购了 CRM 服务商 U[pper Si](https://www.law.com/legaltechnews/2022/01/11/litera-acquires-shipping-and-processing-specialist-psship-continuing-ma-drive-into-2022/)gma，扩大其营销和业务[开发能力。2022 年，Li](https://www.law.com/legaltechnews/2022/01/18/litera-acquires-collaboration-manager-prosperoware-continuing-ma-run/)t[er](https://www.law.com/legaltechnews/2022/08/16/litera-acquires-talent-micron-systems-adding-talent-management-capabilities/)a 宣布三项新收购：PS/Ship，一个运输管理、包裹跟踪和发票处理系统；Prosperoware，提高系统的信息治理能力；以及 Micron Systems，该公司提供人才管理软件，旨在为律师和会计师事务所提供招聘和人力资源流程自动化。据了解，Litera 的此类收购可能得到私募股权公司 Hg 的投资支持，该公司于 2019 年收购了 Litera。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/29/litera-acquires-filetrail-seeking-expansion-into-the-governance-space/
 
@@ -234,7 +238,7 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 这两个产品的背景是，随着 AI 使用增长，生成式 AI 衍生的一系列问题成为全球法律诉讼问题的关键问题。目前，以 OpenAI 为代表的大模型公司，正在世界各地面临几起与训练大模型相关的版权和专利侵权等诉讼。
 
-**但是，要想做出高质量和吸引人的知识资源，其实并不容易，往往需要熟悉知识管理**和组织协作的牵头人，组织跨部门的律师积极参与，而一旦跑起来，就能享受时间的复利。
+**但是，要想做出高质量和吸引人的知识资源，其实并不容易，往往需要熟悉知识管理和组织协作的牵头人，组织跨部门的律师积极参与，而一旦跑起来，就能享受时间的复利。**
 
 > 拓展阅读：
 
@@ -260,7 +264,7 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 近年来，AAA 和萨福克大学法学院持续对 AI 技术及其影响进行投入。
 
-例如，AAA 于今年 5 月[收购](https://www.law.com/legaltechnews/2024/05/30/american-arbitration-association-acquires-odr-com-parent-company-planning-ai-powered-expansion/)了在线争议解决平台 ODR.com 的母公司 Resourceful Internet Solutions 以及一些相关网站和在线资源，加快替代性争议解决（ADR）技术产品的开发，特别是[ AI 产品。该](https://www.law.com/legaltechnews/2023/12/06/the-american-arbitration-association-launches-new-ai-resource-aaai-lab/)收购几周后，AAA 及其国际部门争议解决中心（ICDR）推出了 ClauseBuilde[r ](https://www.law.com/legaltechnews/2024/06/06/suffolk-law-school-wolters-kluwer-partner-for-gen-ai-prompting-challenge/)AI，旨在简化跨行业的调解和仲裁条款的起草。2023 年 12 月，AAA 还推出 AAAi 实验室，这是一个门户网站，旨在为希望了解 AI 及其对其职业影响的仲裁员和其他法律专业人士提供教育资源。同样，今年 5 月，萨福克大学法学院与 Wolters Kluwer 合作举办了一场“生成式 AI 提示挑战赛”，让法学生在 Wolters Kluwer 的数据库上探索生成式 AI 的用例。
+例如，AAA 于今年 5 月[收购](https://www.law.com/legaltechnews/2024/05/30/american-arbitration-association-acquires-odr-com-parent-company-planning-ai-powered-expansion/)了在线争议解决平台 ODR.com 的母公司 Resourceful Internet Solutions 以及一些相关网站和在线资源，加快替代性争议解决（ADR）技术产品的开发，特别是[ AI 产品。该](https://www.law.com/legaltechnews/2023/12/06/the-american-arbitration-association-launches-new-ai-resource-aaai-lab/)收购几周后，AAA 及其国际部门争议解决中心（ICDR）推出了 ClauseBuilder[r ](https://www.law.com/legaltechnews/2024/06/06/suffolk-law-school-wolters-kluwer-partner-for-gen-ai-prompting-challenge/)AI，旨在简化跨行业的调解和仲裁条款的起草。2023 年 12 月，AAA 还推出 AAAi 实验室，这是一个门户网站，旨在为希望了解 AI 及其对其职业影响的仲裁员和其他法律专业人士提供教育资源。同样，今年 5 月，萨福克大学法学院与 Wolters Kluwer 合作举办了一场“生成式 AI 提示挑战赛”，让法学生在 Wolters Kluwer 的数据库上探索生成式 AI 的用例。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/07/22/american-arbitration-association-partners-with-suffolk-law-school-to-launch-innovation-clinic/
 
@@ -280,9 +284,11 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 > 拓展阅读：https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-guidance-lawyers-use-ai-tools/
 
-# **五、法律科技市场调研**
+# 五、法律科技市场调研
 
-## Legaltech Hub 发布「尽职调查自动化」细分赛道竞争分析报告
+
+
+# Legaltech Hub 发布「尽职调查自动化」细分赛道竞争分析报告
 
 7 月 30 日，Legaltech Hub（简称“LTH”）发布「尽职调查自动化」赛道服务商的竞争分析报告，对服务商的分类如下图所示👇
 
@@ -290,11 +296,11 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 这份报告不包括将合同审查功能作为合同生命周期管理（CLM）或电子发现解决方案等，更广泛平台中的一部分的产品，早期初创企业（成立 18 个月内或更短）也被排除在外。具体来说，LTH 通过分析各家服务商的产品演示、与服务商进行对话等方式调研，并根据以下三个变量对相关产品进行评估：
 
-+   **成熟度和市场渗透率（X 轴）**
++ 成熟度和市场渗透率（X 轴）
 
-+   **功能完整性（Y 轴）**
++ 功能完整性（Y 轴）
 
-+   资金水平、财务状况以及安全状况（泡沫大小）的稳定性
++ 资金水平、财务状况以及安全状况（泡沫大小）的稳定性
 
 评估后，各家服务商被分为以下四个类别：
 
@@ -314,9 +320,9 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 这份报告需要付费获取，有需要的朋友可前往 LTH 官网订阅👇
 
-> 报告地址：https://www.legaltechnologyhub.com/contents/lth-competitive-analysis-due-diligence/
+> 报告地址：`https://www.legaltechnologyhub.com/contents/lth-competitive-analysis-due-diligence/`
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/07/30/legaltech-hub-releases-in-depth-competitive-analysis-on-due-diligence-automation-providers/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/07/30/legaltech-hub-releases-in-depth-competitive-analysis-on-due-diligence-automation-providers/`
 
 # 六、市场教育/创新孵化/生态联盟
 
@@ -328,23 +334,23 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 这个社区称为：[HF for Legal](https://huggingface.co/HFforLegal)，致力于为法律从业者、学者和研究人员，提供在法律领域中驾驭复杂的 AI 世界所需的知识和工具，共享法律 AI 相关的模型、代码、数据和建议等，目前已经吸引 50+ 成员，包括数据科学家、法律科技企业家、律师和知识管理人员等。HF for Legal 希望将这些人聚集在一起，打造一个开放的生态系统，让法律专业人士可以轻松地理解、访问和利用适合自己需求的 AI 模型。
 
-> HF for Legal 地址：https://huggingface.co/HFforLegal
+> HF for Legal 地址：`https://huggingface.co/HFforLegal`
 
-> 法律数据集地址：https://huggingface.co/datasets/HFforLegal/laws
+> 法律数据集地址：`https://huggingface.co/datasets/HFforLegal/laws`
 
 > 拓展阅读：
 
 > [一个法律 AI 社区在 HuggingFa](https://mp.weixin.qq.com/s/cHwW_BPQfiV7niID0w45jw)ce 上推出，还开源了一些「法律数据集」
 
-> https://www.law.com/legaltechnews/2024/07/10/to-advance-ai-efforts-legal-professionals-launch-community-on-open-source-platform-huggingface/
+> `https://www.law.com/legaltechnews/2024/07/10/to-advance-ai-efforts-legal-professionals-launch-community-on-open-source-platform-huggingface/`
 
 ## 政府培训服务商 Federal Publications Seminar 推出两个 AI 证书项目
 
-**7** 月 17 日，联邦政府承包培训服务商 Federal Publications Seminar 推出两个 AI 证书项目。
+7 月 17 日，联邦政府承包培训服务商 Federal Publications Seminar 推出两个 AI 证书项目。
 
 其中，AI 证书面向专业人士提供与 AI 使用和影响相关的教育课程，涵盖欧盟 AI 法案、虚假信息和深度伪造、国家标准和技术研究所 AI 风险管理框架等主题。领导力研究证书则侧重于领导力培训，包括战略和批判性思维、冲突解决、演示技巧、合同管理等课程。FPS 的主席安迪·金表示：“AI 证书旨在帮助专业人士掌握驾驭日益复杂的 AI 世界所需的知识和技能。同样，我们的领导力研究证书也旨在培养政府合同中的下一代领导者。”
 
-> 拓展阅读：https://www.fedpubseminars.com/Certificates/FPS-(AI)-Artificial-Intelligence-for-Government-Contractors-Certificate/?id=13
+> 拓展阅读：`https://www.fedpubseminars.com/Certificates/FPS-(AI)-Artificial-Intelligence-for-Government-Contractors-Certificate/?id=13`
 
 ## 国际法律科技协会发布使用主动学习技术管理诉讼电子发现的最佳实践指南草案
 
@@ -356,7 +362,7 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 该指南旨在通过律师可以遵循的一致流程，来鼓励合理地使用这项技术。然后，争议双方的法律团队可以确信遵循了已知和公平的程序，以满足他们和对手的披露义务。
 
-> 拓展阅读：https://www.iltanet.org/blogs/ilta-news1/2024/07/17/press-release-e-discovery-consultation-launch-uk-l
+> 拓展阅读：`https://www.iltanet.org/blogs/ilta-news1/2024/07/17/press-release-e-discovery-consultation-launch-uk-l`
 
 ## 法律 AI 初创公司 Paxton AI 推出 AI 置信度指标，提高透明度
 
@@ -364,6 +370,6 @@ Leya 是一家法律 AI 初创公司，提供一款专为法律专业人士设�
 
 > 拓展阅读：
 
-> https://www.paxton.ai/post/paxton-ai-achieves-93-accuracy-on-stanford-hallucination-benchmark-releases-new-confidence-indicator-feature
+> `https://www.paxton.ai/post/paxton-ai-achieves-93-accuracy-on-stanford-hallucination-benchmark-releases-new-confidence-indicator-feature`
 
-> https://www.law.com/legaltechnews/2024/07/30/paxton-ai-launches-a-confidence-indicator-which-is-what-it-sounds-like/
+> `https://www.law.com/legaltechnews/2024/07/30/paxton-ai-launches-a-confidence-indicator-which-is-what-it-sounds-like/`

@@ -1,3 +1,4 @@
+
 # Gemini CLI提高生产力的7个实用技巧
 
 > 来源：[https://aigcreative.feishu.cn/docx/ZGqxdzAbMoB76xxzuz6c4T0enAe](https://aigcreative.feishu.cn/docx/ZGqxdzAbMoB76xxzuz6c4T0enAe)
@@ -10,11 +11,11 @@ Google推出的Gemini CLI正迅速成为开发者工具箱中的核心利器。�
 
 ![](img/dbbdee13e6146fa0b10328fc1d1876e8.png)
 
-Gemini CLI使用场景汇总
+### Gemini CLI使用场景汇总
 
 ## 技巧一：基于内容智能重命名图片
 
-在UI/UX项目、数据集管理或内容管理系统（CMS）的开发流程中，我们常常会处理大量的图片资源。如果你的项目文件夹里堆满了像 IMG_1234.jpg 或 截图 2025-06-25.png 这样缺乏描述性的文件名，不仅难以管理，还会影响协作效率。
+在UI/UX项目、数据集管理或内容管理系统（CMS）的开发流程中，我们常常会处理大量的图片资源。如果你的项目文件夹里堆满了像 `IMG_1234.jpg` 或 `截图 2025-06-25.png` 这样缺乏描述性的文件名，不仅难以管理，还会影响协作效率。
 
 Gemini CLI提供了一个绝佳的解决方案：它可以扫描图片的实际内容，并自动为其生成富有描述性的、有意义的文件名。
 
@@ -22,7 +23,7 @@ Gemini CLI提供了一个绝佳的解决方案：它可以扫描图片的实际�
 
 Gemini CLI 识别图片内容并准备重命名
 
-无论是登录界面的截图、数据图表，还是产品照片，Gemini都能准确识别并应用一个相关的标签。如下图所示，原本混乱的截图文件名被清晰地重命名为 login-screen.png、chart-visualization.png 等。这一功能极大地简化了资产管理流程。
+无论是登录界面的截图、数据图表，还是产品照片，Gemini都能准确识别并应用一个相关的标签。如下图所示，原本混乱的截图文件名被清晰地重命名为 `login-screen.png`、`chart-visualization.png` 等。这一功能极大地简化了资产管理流程。
 
 ![](img/a2eca033cf47536854b80fcaa5ffffbb.png)
 
@@ -44,7 +45,7 @@ Gemini CLI彻底改变了这种学习模式。你只需将YouTube教程的链接
 
 对于开源项目的维护者而言，处理大量低质量或垃圾信息的拉取请求（Pull Requests, PRs）是一项耗时且枯燥的工作。
 
-Gemini CLI可以与[GitHub CLI](https://zhida.zhihu.com/search?content_id=259844321&content_type=Article&match_order=1&q=GitHub+CLI&zhida_source=entity)无缝集成，自动化这个繁琐的流程。它可以扫描所有开放的PR，智能识别那些缺乏有意义代码差异（diffs）或描述不清晰的提交，然后自动关闭它们，并附上一段礼貌且有用的反馈信息。
+Gemini CLI可以与[GitHub CLI](https://zhida.zhihu.com/search?content_id=259844321&content_type=Article&match_order=1&q=GitHub+CLI&zhida_source=entity)无缝集成，自动化这个繁琐的流程。它可以扫描所有开放的PR，智能识别那些缺乏有意义代码差异（`diffs`）或描述不清晰的提交，然后自动关闭它们，并附上一段礼貌且有用的反馈信息。
 
 ![](img/4b2ba199231b51ffe56a84b63eded993.png)
 
@@ -64,23 +65,23 @@ Gemini CLI 自动关闭PR并提供反馈
 
 ![](img/0dfabcd18e07ea8bcc44564ef0f86166.png)
 
-## 技巧四：使用/mcp命令链实现多步工作流
+## 技巧四：使用`/mcp`命令链实现多步工作流
 
-Gemini CLI的强大之处不仅在于处理单个任务，更在于能够编排复杂的多步工作流。通过使用 /mcp（multi-chain prompts）命令，你可以定义一系列环环相扣的任务，让它们按顺序自动执行。
+Gemini CLI的强大之处不仅在于处理单个任务，更在于能够编排复杂的多步工作流。通过使用 `/mcp`（multi-chain prompts）命令，你可以定义一系列环环相扣的任务，让它们按顺序自动执行。
 
 ![](img/1f2f082043825a27dde26955065f8e87.png)
 
-使用/mcp命令定义多步工作流
+使用`/mcp`命令定义多步工作流
 
 例如，你可以编写一个提示，让Gemini CLI一次性完成以下所有操作：
 
-+   生成后端API代码
++ 生成后端API代码
 
-+   为生成的代码编写对应的测试用例
++ 为生成的代码编写对应的测试用例
 
-+   创建[OpenAPI](https://zhida.zhihu.com/search?content_id=259844321&content_type=Article&match_order=1&q=OpenAPI&zhida_source=entity)（Swagger）文档
++ 创建[OpenAPI](https://zhida.zhihu.com/search?content_id=259844321&content_type=Article&match_order=1&q=OpenAPI&zhida_source=entity)（Swagger）文档
 
-+   将所有生成的文件推送到一个新的GitHub分支
++ 将所有生成的文件推送到一个新的GitHub分支
 
 ![](img/748b8fd18cbf80e8b1d7aa24ee8ebaf7.png)
 
@@ -102,15 +103,15 @@ flowchart TD
     style F fill:#f99,stroke:#333,stroke-width:2px
 ```
 
-## 技巧五：通过/tools命令发现隐藏功能
+## 技巧五：通过`/tools`命令发现隐藏功能
 
-Gemini CLI内置了数十种实用的工具，但这些工具并不会在默认界面中全部展示出来。通过执行 /tool[s 命令，你可以](https://zhida.zhihu.com/search?content_id=259844321&content_type=Article&match_order=1&q=Docker%E8%AF%8A%E6%96%AD&zhida_source=entity)解锁一个隐藏的工具箱，其中包含了从日志分析器、正则表达式构建器到Docker诊断和代码审查等各种实用程序。
+Gemini CLI内置了数十种实用的工具，但这些工具并不会在默认界面中全部展示出来。通过执行 `/tools` 命令，你可以[解锁一个隐藏的工具箱](https://zhida.zhihu.com/search?content_id=259844321&content_type=Article&match_order=1&q=Docker%E8%AF%8A%E6%96%AD&zhida_source=entity)，其中包含了从日志分析器、正则表达式构建器到Docker诊断和代码审查等各种实用程序。
 
 ![](img/77574afe29bb563a95dc80e3231c1c23.png)
 
-执行/tools命令以显示所有可用工具
+执行`/tools`命令以显示所有可用工具
 
-你无需记住每一个具体的命令，只需运行 /tools，选择你需要的工具，然后让Gemini来处理剩下的工作。这就像是开启了一个由AI驱动的开发者实用工具库，随时为你服务。
+你无需记住每一个具体的命令，只需运行 `/tools`，选择你需要的工具，然后让Gemini来处理剩下的工作。这就像是开启了一个由AI驱动的开发者实用工具库，随时为你服务。
 
 ![](img/b26425925cc4afb43416c3746d9252f4.png)
 

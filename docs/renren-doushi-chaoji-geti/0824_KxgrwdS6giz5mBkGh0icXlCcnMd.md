@@ -1,8 +1,9 @@
+
 # 免费多账号必备小工具：多账号登录浏览器（方便矩阵管理多个账号）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/FeCJd2LtyoLjwHxy37bchyB7n6f](https://xuqiwei1986.feishu.cn/docx/FeCJd2LtyoLjwHxy37bchyB7n6f)
 
-# 教程和下载都在这里。
+## 教程和下载
 
 [多账号矩阵管理软件（独立环境、独立ip、防关联）WIN版](https://udxxg5rx5m.feishu.cn/docx/Sa5Wdx0Naoq2AExhFx1cKFrUnXd?from=from_copylink)
 
@@ -34,6 +35,6 @@
 
 每次有新的需求我就要重新写一个软件，虽然开头的一些固定程序我可以直接套进去，但每次开发还是有些麻烦，索性这次我就写个综合性能多、集成各个平台都可使用的工具。
 
-# 教程和下载都在这里。
+## 教程和下载
 
 [多账号矩阵管理软件（独立环境、独立ip、防关联）WIN版](https://udxxg5rx5m.feishu.cn/docx/Sa5Wdx0Naoq2AExhFx1cKFrUnXd?from=from_copylink)

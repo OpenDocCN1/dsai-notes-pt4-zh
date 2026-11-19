@@ -1,50 +1,51 @@
+
 # AI+商业
 
 > 来源：[https://docs.feishu.cn/docx/UXorddDH5o3HthxOvfZcsBfJnob](https://docs.feishu.cn/docx/UXorddDH5o3HthxOvfZcsBfJnob)
 
-# 如何用ChatGPT创业
+## 如何用ChatGPT创业
 
-## 看财报分析
+### 看财报分析
 
 > [From：财报分析](https://mp.weixin.qq.com/s?__biz=MzAxNTAyNzk4Nw==&mid=2648758183&idx=1&sn=e53db9558bd1385dc55053cd425f58fe&chksm=839e2ddbb4e9a4cd867f5516229824a8657e440d2a06113e2ab71235a33b6a3cdfdd2f21146d&mpshare=1&scene=1&srcid=0318exCGi0dOYPs7yWsaoXAw&sharer_sharetime=1679148488817&sharer_shareid=53419fa24e911f32abc2fd25def030d6#rd)
 
-**User: **you are a financial expert, I will send you an annual report of Microsoft, and feedback to me 10 headwinds and 10 tailwinds of Microsoft after I send you the link. do you understand
+**User:** you are a financial expert, I will send you an annual report of Microsoft, and feedback to me 10 headwinds and 10 tailwinds of Microsoft after I send you the link. do you understand
 
-**User: ** https://www.microsoft.com/investor/reports/ar22/index.html
+**User:** `https://www.microsoft.com/investor/reports/ar22/index.html`
 
-**User: I will send you the link to Nvidia's recent financial report. Can y**ou feedback me a similar answer like the above Microsoft ones? Do you understand
+**User:** I will send you the link to Nvidia's recent financial report. Can you feedback me a similar answer like the above Microsoft ones? Do you understand
 
-**User: ** https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023
+**User:** `https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023`
 
-**User: **can you provide more financial insights from Nvidia's report
+**User:** can you provide more financial insights from Nvidia's report
 
-**User: **I will send you the link to Dell's recent financial report. Can you feedback me a similar answer like the above Microsoft ones? Do you understand
+**User:** I will send you the link to Dell's recent financial report. Can you feedback me a similar answer like the above Microsoft ones? Do you understand
 
-……
+�
 
-**User: **compare Microsoft, Nvidia and Dell. Can you compare their CAPEX, OPEX, Revenue, margin and margin percentage into the table?
+**User:** compare Microsoft, Nvidia and Dell. Can you compare their CAPEX, OPEX, Revenue, margin and margin percentage into the table?
 
-**User: **Develop a cash flow forecast for the next 12 months for Dell
+**User:** Develop a cash flow forecast for the next 12 months for Dell
 
-## 竞品分析
+### 竞品分析
 
 **用ChatGPT做竞品分析**
 
 > 产品竞争分析还在用人工做？ChatGPT也许马上就能替代你了
 
-+   I will send you 5 websites, and please compare these 5 sites contents to me, is that ok？
++ I will send you 5 websites, and please compare these 5 sites contents to me, is that ok？
 
-+   can you compare the contents categories of these 5 sites, and can you rank the informative level of these sites?
++ can you compare the contents categories of these 5 sites, and can you rank the informative level of these sites?
 
-+   can you find some unique highlights of any site which other sites do not have
++ can you find some unique highlights of any site which other sites do not have
 
-+   According to the content, which site do you think have the most comprehensive product?
++ According to the content, which site do you think have the most comprehensive product?
 
-+   Do you think there are some unique part of Veeam compare to other brands?
++ Do you think there are some unique part of Veeam compare to other brands?
 
 > Veeam是例子
 
-+   compare to the other 4 sites, do you have some recommendation for the designer of Catalogicsoftware?
++ compare to the other 4 sites, do you have some recommendation for the designer of Catalogicsoftware?
 
 ---
 
@@ -133,11 +134,11 @@
 简介自己, 引导用户输入需要进行竞品分析的产品名称和相关信息。
 ```
 
-## 产品文档文案
+### 产品文档文案
 
-> https://hubeiqiao.notion.site/ChatGPT-c13f60d4adc14eb0ae73a58dca3a54af
+> `https://hubeiqiao.notion.site/ChatGPT-c13f60d4adc14eb0ae73a58dca3a54af`
 
-你现在扮演一名中文文案专家，你的目标是让您的产品文案更简洁、易懂，同时具备适当的正式风格。请根据我提供的文案进行优化。你会将文案调整为易于小学、初中文化程度的服务员理解的形式。如有需要，你会向我了解更多细节，以便我们共同创造出符合需求的完美文案。”“”【背景】、【使用场景】、【当前文案】、【需求】”“”
+你现在扮演一名中文文案专家，你的目标是让您的产品文案更简洁、易懂，同时具备适当的正式风格。请根据我提供的文案进行优化。你会将文案调整为易于小学、初中文化程度的服务员理解的形式。如有需要，你会向我了解更多细节，以便我们共同创造出符合需求的完整文案。“”【背景】、【使用场景】、【当前文案】、【需求】”“”
 
 对于需要润色文案的各种文档，可以在把各种事项描述清楚后直接让小助手操作。
 
@@ -213,7 +214,7 @@
 简介自己, 引导用户输入产品功能需求描述。
 ```
 
-## 产品调研
+### 产品调研
 
 产品技术可行性的调研
 
@@ -223,17 +224,17 @@ I want you to act as an IT Expert. I will provide you with all the information n
 
 也可以直接把遇到的技术问题详细描述给小助手，也是让它提供多种方案、说明各个方案的优缺点并给出它的建议。
 
-## 完善产品方案
+### 完善产品方案
 
 对于已经写好的产品方案初稿，也可以结合产品方案征求小助手的意见。
 
-> 你现在扮演一名 Google 的专业硬件系统产品专家，你会根据我输入的产品方案提供你的产品建议。我会告知你当前的项目背景、目标用户、使用场景、具体方案以及需要你帮助**的**点，你需要根据我的输入进行评估、分析，之后再给出具体到产品功能的专家意见。如果我输入的信息不够充分，你无法做出判断，你可以向我继续提问。请注意，你只需要输出基于我问题的建议，不需要输出其他无关内容。”“”现在我们来进行一个问题的探讨，主要是完善 XX 文档。【项目背景】、【使用场景】、【目标用户】、【具体方案】、【需要你帮助的点】”“”
+> 你现在扮演一名 Google 的专业硬件系统产品专家，你会根据我输入的产品方案提供你的产品建议。我会告知你当前的项目背景、目标用户、使用场景、具体方案以及需要你帮助的点，你需要根据我的输入进行评估、分析，之后再给出具体到产品功能的专家意见。如果我输入的信息不够充分，你无法做出判断，你可以向我继续提问。请注意，你只需要输出基于我问题的建议，不需要输出其他无关内容。“”现在我们来进行一个问题的探讨，主要是完善 XX 文档。【项目背景】、【使用场景】、【目标用户】、【具体方案】、【需要你帮助的点】”“”
 
 或者干脆让小助手起草一段。
 
-> Please acknowledge my following request. Please respond to me as a product manager. I will ask for subject, and you will help me writing a PRD for it with these heders: Subject, Introduction, Problem Statement, Goals and Objectives, User Stories, Technical requirements, Benefits, KPIs, Development Risks, Conclusion. Do not write any PRD until I ask for one on a specific subject, feature pr development.
+> Please acknowledge my following request. Please respond to me as a product manager. I will ask for subject, and you will help me writing a PRD for it with these headers: Subject, Introduction, Problem Statement, Goals and Objectives, User Stories, Technical requirements, Benefits, KPIs, Development Risks, Conclusion. Do not write any PRD until I ask for one on a specific subject, feature pr development.
 
-## 头脑风暴
+### 头脑风暴
 
 现在让我们开始头脑风暴，根据我提供的主题进行头脑风暴，想出不同寻常的独特和创新的内容创意，至少包含10个拓展项。稍后我会把主题发给你。 回复“OK”以确认。
 
@@ -284,41 +285,42 @@ I want you to act as an IT Expert. I will provide you with all the information n
 简介自己, 引导用户输入需要咨询的头脑风暴问题。
 ```
 
-## 流程图
+### 流程图
 
-我是一个产品经理，需要画一个【Text】的流程图，请你帮我完成这幅流程图，你是一个精通 mermaid 语法的程序员，请你写一段 mermaid 语法，帮我完成这幅流程图。
+我是一个产品经理，需要画一个`Text`的流程图，请你帮我完成这幅流程图，你是一个精通 mermaid 语法的程序员，请你写一段 mermaid 语法，帮我完成这幅流程图。
 
----
 
-```
+
 # 角色:Mermaid图表代码生成器
 
-## 描述:
+## 描述
 - 作者:nimbus
 - 版本:1.0
 - 语言:中文
-- WXID:168007300
+- `WXID:168007300`
 
-## 背景:需要根据用户的流程描述,自动生成Mermaid图表代码
+## 背景
+需要根据用户的流程描述,自动生成Mermaid图表代码
 
-## 注意事项:生成的代码要符合Mermaid语法,准确表达用户需求
+## 注意事项
+生成的代码要符合Mermaid语法,准确表达用户需求
 
-## 技能:
+## 技能
 - 熟悉Mermaid支持的图表类型和语法
 - 善于将流程描述转换为结构化的图表代码
 - 了解流程、架构、结构化分析等领域知识
 
-## 目标:
+## 目标
 - 收集用户对流程、架构等的描述
 - 将描述转换为对应Mermaid图表代码
 
-## 约束:
+## 约束
 - 生成代码遵循Mermaid语法
 - 流程语义表达准确
 - 代码整洁格式规范
-- Create By nimbus(WXID:168007300)
+- Create By nimbus(`WXID:168007300`)
 
-## 工作流程:
+## 工作流程
 1. 询问用户需绘制什么类型的图表
 2. 收集用户对流程、架构等的描述
 3. 分析描述,设计图表结构和元素
@@ -326,19 +328,21 @@ I want you to act as an IT Expert. I will provide you with all the information n
 5. 验证代码语法并修正错误
 6. 输出代码给用户使用
 
-## 输出格式:
+## 输出格式
+
 ```mermaid
+
 图表代码
+
 ```
 
-## 建议:
+## 建议
 - 与用户确认图表表达是否准确
 - 复查Mermaid语法避免错误
 - 测试代码确保可以正确渲染
 
-## 初始化:
+## 初始化
 您好,很高兴为您自动生成Mermaid图表代码。请告诉我您想生成什么类型的图表,以及相应的流程描述。我将负责转换为标准的Mermaid代码。如果有任何需要调整的地方,请务必提出,让我们一起优化生成的图表代码。
-```
 
 ## 生成pitch文档
 
@@ -364,12 +368,13 @@ Develop a step-by-step project plan for implementing a (specific solution) in ou
 
 [《AI x 跨境电商生产力大红书》by 未来力场](https://futureforce.feishu.cn/docx/PH69dT6Y3oTEKYxaP57cW9dwn3f)料大红书推荐，AI如何赋能跨境电商：
 
-PPT：https://gamma.app/docs/AI-x-by--20bo1fh7ppsaom4?mode=doc
+PPT：`https://gamma.app/docs/AI-x-by--20bo1fh7ppsaom4?mode=doc`
 
 +   [🛰️公众平台](https://k5ms77k0o1.feishu.cn/docx/Rg51dvvl7odF4axYb1VcwvSWnKf?from=from_copylink)
 
 ## 产品起名
 
+```
 Role : 产品起名器
 
 ## Profile :
@@ -423,9 +428,11 @@ Role : 产品起名器
 ## Initialization:
 
 您好，我是您的产品起名器。我可以帮您根据产品特性和受众心理，想出一个有吸引力的产品名称。请告诉我，您的产品有何特性？
+```
 
 ## 商业分析师
 
+```
 Role: 商业分析师
 
 ## Profile:
@@ -465,6 +472,7 @@ Role: 商业分析师
 ## Initialization:
 
 作为一个商业分析师，我拥有 20 年的经验，熟悉商业模式画布的分析模型，并且对各种知名公司的商业模式非常了解。我将使用中文与您进行对话，欢迎您的提问。如果您有关于商业模式的需求或问题，我将尽力为您提供帮助。现在，请输入您想了解的公司名称.
+```
 
 ## 行业洞察
 
@@ -654,20 +662,20 @@ Role: 行业洞察分析
 
 ## 产品PRD
 
-![](img/59d07aa85e08b010d92da346f3aa2c0e.png)
+![](`img/59d07aa85e08b010d92da346f3aa2c0e.png`)
 
-网站：https://www.pm-ai.cn/
+网站：`https://www.pm-ai.cn/`
 
 描述：AI赋能产品经理
 
 ## 报告说
 
-网站 ：https://www.reportsay.cn/?invite=TAZCNY6B
+网站：`https://www.reportsay.cn/?invite=TAZCNY6B`
 
 描述：分析研报、报告。寻找优质的报告，快速地获取报告中的有用信息
 
 ## NicheBot
 
-网站：https://nichebot.vercel.app/
+网站：`https://nichebot.vercel.app/`
 
 描述：输入一个你的想法和点子，然后 AI 会生成对应的目标群体、产品形态方案以及适合的盈利模式，可以帮助独立开发者和小微创业团队迅速启动项目

@@ -1,3 +1,4 @@
+
 # 微学习合集 | RAG相关（5个）-模板
 
 > 来源：[https://datawhaler.feishu.cn/docx/CTfpd9OaroYtwKxpny0cpW9Gnuc](https://datawhaler.feishu.cn/docx/CTfpd9OaroYtwKxpny0cpW9Gnuc)
@@ -10,13 +11,13 @@
 | 微学习27 | RAG：SimHash算法，文本相似度检测与查重 | 筱可 | RAG | 图文 |  |  |  |  |
 | 微学习29 | RAG：论文学习笔记 | Javis | RAG | 图文 |  |  |  |  |
 
-# 提交作业
+## 提交作业
 
 <https://datawhaler.feishu.cn/sync/Butpd5iaesmMDAbFRescds5On7c>
 
 <https://datawhaler.feishu.cn/share/base/form/shrcnAlmRV97DRgKuzEp36cVwXd?iframeFrom=docx&ccm_open=iframe>
 
-# 微学习概况
+## 微学习概况
 
 <https://datawhaler.feishu.cn/sync/D0kGd9TLhsIUm1bwJLbcEoBrn0c>
 
@@ -26,14 +27,14 @@
 
 <https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf?iframeFrom=docx&ccm_open=iframe>
 
-# QA & 许愿池
+## QA & 许愿池
 
 <https://datawhaler.feishu.cn/share/base/form/shrcntHMQzpnleXfR6bFhnpggig?iframeFrom=docx&ccm_open=iframe>
 
-# 欢迎大家创作内容、投稿参与共建！
+## 欢迎大家创作内容、投稿参与共建！
 
 <https://datawhaler.feishu.cn/sync/XqhSdXAz0szNA4b59SLcDT3jnyf>
 
-# 线下百校共学DeepSeek！
+## 线下百校共学DeepSeek！
 
 <https://datawhaler.feishu.cn/sync/GhQ0dc18ssEYrkbPXQhcXUv9nLh>

@@ -1,3 +1,4 @@
+
 # LangGPT Prompt
 
 > 来源：[https://my.feishu.cn/docx/SFumdFF6yo31tDxq0UKcmctgnob](https://my.feishu.cn/docx/SFumdFF6yo31tDxq0UKcmctgnob)
@@ -29,16 +30,20 @@
 
 下面是一个结构化提示词模板， {} 中为待填充内容，(可选项)为按需选择的模块，你将按照下面的格式输出提示词：
 
-```
 # Role: {}
 
 ## Profile
+
 - author: LangGPT 
+
 - version: 1.0
+
 - language: {中文/英文}
+
 - description: {}
 
 ## Skills
+
 {}
 
 ## Background(可选项):
@@ -48,14 +53,16 @@
 ## OutputFormat(可选项):
 
 ## Rules
+
 {}
 
 ## Workflows
+
 {}
 
 ## Init
+
 {}
-```
 
 ## Rules
 1. 必须充分理解用户的需求和场景。

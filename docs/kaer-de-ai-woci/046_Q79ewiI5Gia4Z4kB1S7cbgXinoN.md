@@ -1,8 +1,9 @@
+
 # 六位模型决定复刻苹果WWDC IOS26
 
-> 来源：[https://aiwarts101.feishu.cn/docx/A6IOd7rTDohBIOxJA68cpD9wn6d](https://aiwarts101.feishu.cn/docx/A6IOd7rTDohBIOxJA68cpD9wn6d)
+> 来源：[`https://aiwarts101.feishu.cn/docx/A6IOd7rTDohBIOxJA68cpD9wn6d`](`https://aiwarts101.feishu.cn/docx/A6IOd7rTDohBIOxJA68cpD9wn6d`)
 
-基于下面苹果 WWDC2025发布会关键信息，帮我用类似苹果发布会PPT的Bento Grid风格的视觉设计生成一个中文动态网页展示，在线引用背景图片，背景图片为：https://i.ibb.co/xtN61cRf/Comfy-UI-Output-4-1.png
+基于下面苹果 WWDC2025发布会关键信息，帮我用类似苹果发布会PPT的Bento Grid风格的视觉设计生成一个中文动态网页展示，在线引用背景图片，背景图片为：`https://i.ibb.co/xtN61cRf/Comfy-UI-Output-4-1.png`
 
 ```
 网页具体要求为：
@@ -42,28 +43,28 @@ position: relative; z-index: 3; transition: transform 0.4s cubic-bezier(0.175, 0
 .menu-item:hover { background-color: rgba(255, 255, 255, 0.5); box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.1); backdrop-filter: blur(2px);}
 ```
 
-Gpt
+`Gpt`
 
-https://www.youware.com/project/fm8074s3lu?enter_from=upload
+`https://www.youware.com/project/fm8074s3lu?enter_from=upload`
 
-Gemini
+`Gemini`
 
-https://www.youware.com/project/i8q5ypst2t
+`https://www.youware.com/project/i8q5ypst2t`
 
-Qwen
+`Qwen`
 
-https://www.youware.com/project/jpt5a9ot8f
+`https://www.youware.com/project/jpt5a9ot8f`
 
-Deepseek
+`Deepseek`
 
-https://www.youware.com/project/r24cvod241
+`https://www.youware.com/project/r24cvod241`
 
-Claude
+`Claude`
 
-https://www.youware.com/project/h5udl4jid3
+`https://www.youware.com/project/h5udl4jid3`
 
 ## 感谢关注！
 
-![](img/f0c1aa57f8d65a21dcc95038cfd693cd.png)
+![](`img/f0c1aa57f8d65a21dcc95038cfd693cd.png`)
 
-![](img/483354024b031581ca49f7648ddbfe45.png)
+![](`img/483354024b031581ca49f7648ddbfe45.png`)

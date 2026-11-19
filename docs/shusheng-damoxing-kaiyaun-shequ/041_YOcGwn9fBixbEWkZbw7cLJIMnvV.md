@@ -1,10 +1,9 @@
+
 # 2026 书小生创作（日更）
 
 > 来源：[https://aicarrier.feishu.cn/docx/GIdgdKxcroOOxPx8EzqcRkhhnAd](https://aicarrier.feishu.cn/docx/GIdgdKxcroOOxPx8EzqcRkhhnAd)
 
 > 每日创作一个书小生海报(结合相关成果、AI4S 、合作伙伴)，本文图片中的内容由社区共创，不代表官方的立场。
-
-
 
 ![](img/0cf94f084e58476165fd60690e37c47b.png)
 
@@ -14,10 +13,9 @@
 
 ### 2/2 日下班
 
-
 ![](img/b9ae80293b5415e03e30c1ae118e8a7e.png)
 
-### 1/30  思考中
+### 1/30 思考中
 
 ![](img/d9723edd5a28761bf53e8cc45aee94e1.png)
 

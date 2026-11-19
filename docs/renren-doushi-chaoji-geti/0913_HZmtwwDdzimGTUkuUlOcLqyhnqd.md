@@ -1,10 +1,9 @@
+
 # 2023-12-11不妨挣快钱，不妨短期主义
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/FVQZdgmv8ohskGxaAH1cM8sWnSf](https://xuqiwei1986.feishu.cn/docx/FVQZdgmv8ohskGxaAH1cM8sWnSf)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/FVQZdgmv8ohskGxaAH1cM8sWnSf`
 
-> 🔗 原文链接： h[ttps://wx.zsxq.com](https://wx.zsxq.com/dweb2/index/topic_detail/588424288285444)/dweb2/index/top...
-
-不妨挣快钱，不妨短期主义
+> 🔗 原文链接：`https://wx.zsxq.com/dweb2/index/topic_detail/588424288285444`
 
 周末听小宇宙播客《面基》的最新一期，是主持人跟嘉宾杨天楠的对话。
 

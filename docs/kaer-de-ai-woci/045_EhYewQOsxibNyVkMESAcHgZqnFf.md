@@ -1,3 +1,4 @@
+
 # 即梦图生图100镜测评
 
 > 来源：[https://aiwarts101.feishu.cn/docx/NKokdZbj0ok3gSxXGTrcBtSDnsY](https://aiwarts101.feishu.cn/docx/NKokdZbj0ok3gSxXGTrcBtSDnsY)
@@ -8,7 +9,7 @@
 
 https://mp.weixin.qq.com/s/gD2MMWskTU5qmX6ArZWFhQ
 
-欢迎大家在表格上写下自己的创意，内测期间我会一个个实现的！！
+欢迎大家在表格上写下自己的创意，内测期间我会一个一个实现的！！
 
 ## 创意工坊
 

@@ -1,14 +1,15 @@
+
 # 读《箭术与禅心》后记：专注与体验
 
 > 来源：[https://leonzhang.feishu.cn/docx/L5F8dny6mobkg4xAduBcRSZ4nNc](https://leonzhang.feishu.cn/docx/L5F8dny6mobkg4xAduBcRSZ4nNc)
-
+>
 > #读书笔记 #禅宗 #哲学
-
+>
 > 关于禅宗的书，强调**”心“和”无我“**，即专注和体验。
 
-+   “心”，指心灵的集中、内在的平静。强调专注，专注到像呼吸一样自然，专注到像湖水一般平静。
++ “心”，指心灵的集中、内在的平静。强调专注，专注到像呼吸一样自然，专注到像湖水一般平静。
 
-+   “无我”，指一种类似于超越自我意识的状态。强调体验，不可言传，亦无法言传。
++ “无我”，指一种类似于超越自我意识的状态。强调体验，不可言传，亦无法言传。
 
 写到这里，不由想到由王晶导演、由李连杰与洪金宝主演的电影《倚天屠龙记之魔教教主》末尾的一个片段。
 
@@ -16,13 +17,13 @@
 
 由此，专注学习一招一式（体验），然后忘记所有招式（无我，内化于心），便是太极拳的奥秘所在。
 
-以及，可以和生活的中很多地方关联起来，比如读书，常听人说，“读书者，先将书读薄，再将书读厚。”
+以及，可以和生活中很多地方关联起来，比如读书，常听人说，“读书者，先将书读薄，再将书读厚。”
 
 “把书读薄”，就是梳理脉络、理解主旨与核心观点，而“将书读厚”，便是抽丝剥茧，与自身体系关联。如此，才能内化于心，从而学以致用。
 
-### **摘录**
+## 摘录
 
-正确的呼吸与深沉的专注**。**无我、无所求，这种专注的感觉也越强烈。
+正确的呼吸与深沉的专注。无我、无所求，这种专注的感觉也越强烈。
 
 以行动来直接切入禅的精神。禅是活生生的体验，不存在于任何言语文字中。
 
@@ -46,18 +47,18 @@
 
 一旦你真正成为无我时，你可以在任何时候中断。努力练习这个吧！
 
-### 扩展阅读
+## 扩展阅读
 
-+   倚天屠龙记之魔教教主 - 百度百科
++ 倚天屠龙记之魔教教主 - 百度百科
 
 ---
 
 一个 PM 看到的、听到的和想到的，欢迎交流～
 
-+   WeChat ID: thinkinghunt
++ WeChat ID: `thinkinghunt`
 
-+   Email: thinkinghunt@163.com
++ Email: thinkinghunt@163.com
 
-+   Time Line: [00 Time Line｜空间动态](https://sm84lfdag7.feishu.cn/wiki/HF6iwTOFniDoYUkXfzHc8JAXnQb)
++ Time Line: [00 Time Line｜空间动态](https://sm84lfdag7.feishu.cn/wiki/HF6iwTOFniDoYUkXfzHc8JAXnQb)
 
-+   Homepage: [Leon Zhang's User Manual（对外）](https://sm84lfdag7.feishu.cn/wiki/wikcnvVUZ7NmWg31mUgnpvXwsie)
++ Homepage: [Leon Zhang's User Manual（对外）](https://sm84lfdag7.feishu.cn/wiki/wikcnvVUZ7NmWg31mUgnpvXwsie)

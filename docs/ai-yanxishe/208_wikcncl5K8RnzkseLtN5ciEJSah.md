@@ -1,8 +1,9 @@
+
 # 2023年主流Ai绘画工具使用指南
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/W8CVdNLSuoaD3Cxlbxfc7ZUMnZc](https://aiyanxishe.feishu.cn/docx/W8CVdNLSuoaD3Cxlbxfc7ZUMnZc)
 
-## **Ai****绘画是什么？**
+## Ai绘画是什么？
 
 ![](img/4bc7f092cff466e95570b20a933b12d2.png)
 
@@ -20,9 +21,9 @@ Ai是一种计算机生成绘画的方法，它使用人工智能算法来创作
 
 开发商：谷歌
 
-体验网址：[ht](https://link.zhihu.com/?target=https%3A//colab.research.google.com/drive/1Ce-990CRb7AXvaSRV0DvhVFF8E9ogCaI%23scrollTo%3DCreateVidTop)tps://colab.research.google.com/drive/1Ce-990CRb7AXvaSRV0DvhVFF8E9ogCaI#scrollTo=CreateVidTop
+体验网址：[https://colab.research.google.com/drive/1Ce-990CRb7AXvaSRV0DvhVFF8E9ogCaI#scrollTo=CreateVidTop](https://colab.research.google.com/drive/1Ce-990CRb7AXvaSRV0DvhVFF8E9ogCaI#scrollTo=CreateVidTop)
 
-教程：[https://www.zcool.com.cn/articl](https://link.zhihu.com/?target=https%3A//www.zcool.com.cn/article/ZMTM3OTg3Mg%3D%3D.html)e/ZMTM3OTg3Mg==.html
+教程：[https://www.zcool.com.cn/article/ZMTM3OTg3Mg==.html](https://www.zcool.com.cn/article/ZMTM3OTg3Mg==.html)
 
 操作门槛：适中 需要🪜与谷歌账号，操作界面略难上手，需要按照教程一步一步生成画作。
 
@@ -40,9 +41,7 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 ![](img/dba7d3d6b1d5bf89ea644dbcbdc218ae.png)
 
-关键词的目的是为了方便让Ai能凭借关键词从海量的数据中抓取相关的图片进行拆分，
-
-提取再重组。
+关键词的目的是为了方便让Ai能凭借关键词从海量的数据中抓取相关的图片进行拆分，提取再重组。
 
 为了浅探AI绘画如何根据关键词（主次顺序？）进行生成画作，我从关键词修改着手
 
@@ -78,9 +77,9 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 开发商：DreamStudioAI
 
-体验网址：https://beta.dreamstudio.ai/dream
+体验网址：[https://beta.dreamstudio.ai/dream](https://beta.dreamstudio.ai/dream)
 
-教程：[h](https://link.zhihu.com/?target=https%3A//baijiahao.baidu.com/s%3Fid%3D1743758097302942643%26wfr%3Dspider%26for%3Dpc)ttps://baijiahao.baidu.com/s?id=1743758097302942643&wfr=spider&for=pc
+教程：[https://baijiahao.baidu.com/s?id=1743758097302942643&wfr=spider&for=pc](https://baijiahao.baidu.com/s?id=1743758097302942643&wfr=spider&for=pc)
 
 操作门槛：简单 UI界面直观
 
@@ -126,11 +125,7 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 风格定性：stable diffusion生成的画作风格是依据关键词，没有特定风格绑定。
 
-版权声明：与Disco Diffusion不同的是，stable diffusion现阶段不是开源工具，所以在版权声明中，它不会指工具的使用权，而是生成图形的版权。从以下信息中，能得知stable diffusion
-
-生成的画作版权不会归它所用。归创作者所有，but！目前AI作品的版权条例仍是未知，
-
-这不意味着画作就无版权纠纷，它的版权纠结是与现有版权的画作（影像作品）纠纷。而非是对于Ai绘画的保护。
+版权声明：与Disco Diffusion不同的是，stable diffusion现阶段不是开源工具，所以在版权声明中，它不会指工具的使用权，而是生成图形的版权。从以下信息中，能得知stable diffusion生成的画作版权不会归它所用。归创作者所有，but！目前AI作品的版权条例仍是未知，这不意味着画作就无版权纠纷，它的版权纠结是与现有版权的画作（影像作品）纠纷。而非是对于Ai绘画的保护。
 
 ![](img/285d373cc857eab9dc0c55a19e0e81e7.png)
 
@@ -142,9 +137,9 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 开发商：NovelAI
 
-体验网址：https://novelai.net/
+体验网址：[https://novelai.net/](https://novelai.net/)
 
-教程：[https://www.yuque.com/](https://link.zhihu.com/?target=https%3A//www.yuque.com/zhengchuanmao/nn7hgw)zhengchuanmao/nn7hgw
+教程：[https://www.yuque.com/zhengchuanmao/nn7hgw](https://www.yuque.com/zhengchuanmao/nn7hgw)
 
 操作门槛：简单 UI界面简单
 
@@ -208,7 +203,7 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 体验网址：网页端目前只限内测名额使用，不过可以搜索“TIAMAT AI”🛰️小程序体验一下。
 
-教程：[https://www.bilibili.com/video/BV1rm4y1F7V7/?spm_id_fr](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1rm4y1F7V7/%3Fspm_id_from%3Dtrigger_reload%26vd_source%3D2de83af4a66e0414b8fc2f1c598a80a6)om=trigger_reload&vd_source=2de83af4a66e0414b8fc2f1c598a80a6
+教程：[https://www.bilibili.com/video/BV1rm4y1F7V7/?spm_id_from=trigger_reload&vd_source=2de83af4a66e0414b8fc2f1c598a80a6](https://www.bilibili.com/video/BV1rm4y1F7V7/?spm_id_from=trigger_reload&vd_source=2de83af4a66e0414b8fc2f1c598a80a6)
 
 操作门槛：哈哈哈，感觉但凡是国人涉及到的领域，都会使之步伐加快很多。
 
@@ -220,9 +215,7 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 而且在引擎上还进行了划分，覆盖不同类型的创作需求。
 
-这一点，是前三者所没有的，最关键的是TIAMAT AI是支持中文关键词的录入，
-
-从用途、操作，这款AI更接近商业的应用。
+这一点，是前三者所没有的，最关键的是TIAMAT AI是支持中文关键词的录入，从用途、操作，这款AI更接近商业的应用。
 
 生成质量：TIAMAT AI貌似是不支持英文关键词。
 
@@ -270,17 +263,15 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 开发商：midjourney
 
-体验网址：[ht](https://link.zhihu.com/?target=https%3A//www.midjourney.com/home/%3FcallbackUrl%3Dhttps%253A%252F%252Fwww.midjourney.com%252Faccount%252F)tps://www.midjourney.com/home/?callbackUrl=https%3A%2F%2Fwww.midjourney.com%2Faccount%2F
+体验网址：[https://www.midjourney.com/home/?callbackUrl=https%3A%2F%2Fwww.midjourney.com%2Faccount%2F](https://www.midjourney.com/home/?callbackUrl=https%3A%2F%2Fwww.midjourney.com%2Faccount%2F)
 
-教程：[htt](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV16d4y1A7Zq/%3Fspm_id_from%3D333.337.search-card.all.click%26vd_source%3D2de83af4a66e0414b8fc2f1c598a80a6)ps://www.bilibili.com/video/BV16d4y1A7Zq/?spm_id_from=333.337.search-card.all.click&vd_source=2de83af4a66e0414b8fc2f1c598a80a6
+教程：[https://www.bilibili.com/video/BV16d4y1A7Zq/?spm_id_from=333.337.search-card.all.click&vd_source=2de83af4a66e0414b8fc2f1c598a80a6](https://www.bilibili.com/video/BV16d4y1A7Zq/?spm_id_from=333.337.search-card.all.click&vd_source=2de83af4a66e0414b8fc2f1c598a80a6)
 
 操作门槛：简单 只需要输入指令+关键词到指定的聊天室即可
 
 ![](img/def50f42d6023ab2a82028f885101b76.png)
 
-不同于以上的Ai绘画平台，midjourney是植入在Discord里，可以说更像是一个聊天室，没有繁琐的参数设置，
-
-更直接的输入关键词生成图像。
+不同于以上的Ai绘画平台，midjourney是植入在Discord里，可以说更像是一个聊天室，没有繁琐的参数设置，更直接的输入关键词生成图像。
 
 为了更好的识别midjourney与上面Ai绘画平台的差异。我依旧会使用相同的描述生成出来的画作进行对比。
 
@@ -316,6 +307,8 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 生成质量：到了midjourney这里，与其说它对你的关键词按顺序的拆解绘制，还不如说它自动的把你可能会喜欢、日常接触的风格给呈现出来，它少了许多粗糙感，多个许多精致的地方。与上面相比，它生成的Ai绘画难以辨别为是Ai画的。
 
+
+
 版权声明：midjourney植入在Discord，以聊天室的形式存在，其实蛮聪明的作法。既然Ai画作的版权目前无法有具体细节的明文规定，与其把麻烦自己揽在身上，还不如把这个麻烦作为公众监督的视窗，所以说拿Ai改成自己的画不会有人知道这个说法严格意义上是不存在的。只要你是在midjourney平台生成，就会有人能看过你生成的图，从而变成证据。
 
 另外Ai画作它在midjourney里没有“独家”的说法，任何人都可以拿你生成的作品进行二次改造。这也是Ai画作的缺点吧。
@@ -330,7 +323,7 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 体验网址：https://nijijourney.com/zh/
 
-教程：[htt](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1sT411Q7X1/%3Fspm_id_from%3D333.337.search-card.all.click%26vd_source%3D2de83af4a66e0414b8fc2f1c598a80a6)ps://www.bilibili.com/video/BV1sT411Q7X1/?spm_id_from=333.337.search-card.all.click&vd_source=2de83af4a66e0414b8fc2f1c598a80a6
+教程：[https://www.bilibili.com/video/BV1sT411Q7X1/?spm_id_from=333.337.search-card.all.click&vd_source=2de83af4a66e0414b8fc2f1c598a80a6](https://www.bilibili.com/video/BV1sT411Q7X1/?spm_id_from=333.337.search-card.all.click&vd_source=2de83af4a66e0414b8fc2f1c598a80a6)
 
 操作门槛：简单 只需要输入指令+关键词到指定的聊天室即可 （它就是midjourney的姐妹版）
 
@@ -374,4 +367,4 @@ Ai主要根据描述，描述需要英文（识别关键词进行千种图形拼
 
 ![](img/a27ba9c9282afb28c2c91f009d528dd0.png)
 
-扫描二维码，了解[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)** **
+扫描二维码，了解[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)

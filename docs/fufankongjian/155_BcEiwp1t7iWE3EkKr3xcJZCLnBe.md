@@ -1,8 +1,9 @@
+
 # GraphRAG（README）
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/Klo2d2vaqoLmhExDRf5cyprvn2g](https://kq4b3vgg5b.feishu.cn/docx/Klo2d2vaqoLmhExDRf5cyprvn2g)
 
-# 框架介绍
+## 框架介绍
 
 GraphRAG 是一种基于图的检索增强生成（RAG）框架，由 Microsoft 于 2024 年 10 月 15 日首次公开，旨在通过知识图谱提升大型语言模型（LLM）的生成能力。截至 2025 年 2 月 27 日，GraphRAG 被广泛认为是 RAG 领域的创新，特别适合处理复杂关系查询和长文档。
 
@@ -20,41 +21,41 @@ GraphRAG 是一种创新的 RAG 框架，通过知识图谱提升生成内容的
 
 > **关键引用：**
 
-+   [GraphRAG GitHub](https://github.com/microsoft/graphrag)
++ [GraphRAG GitHub](https://github.com/microsoft/graphrag)
 
-+   [GraphRAG: Democratizing Data-Driv](https://arxiv.org/abs/2410.11820)en Decision Making with Knowledge Graphs
++ [GraphRAG: Democratizing Data-Driven Decision Making with Knowledge Graphs](https://arxiv.org/abs/2410.11820)
 
-+   [Microsoft AI Blog: ](https://blogs.microsoft.com/ai/graphrag-announcement/)Introducing GraphRAG
++ [Microsoft AI Blog: Introducing GraphRAG](https://blogs.microsoft.com/ai/graphrag-announcement/)
 
-# 快速阅览
+## 快速阅览
 
 我们团队在文档不同的位置进行了详细的介绍，您可以点击进入并查看具体的技术文档。
 
-### ☑️** 入门介绍**
+### ☑️ 入门介绍
 
-+   零基础手撕GraphRAG基本原理（视频）
++ 零基础手撕GraphRAG基本原理（视频）
 
-### **☑️ **部署调用
+### ☑️ 部署调用
 
-⭐️微软GraphRAG快速部署与调用方法详解（课件）
++ ⭐️微软GraphRAG快速部署与调用方法详解（课件）
 
-+   零门槛GraphRAG部署与调用方法详解（视频）
++ 零门槛GraphRAG部署与调用方法详解（视频）
 
-⭐️ollama+GraphRAG本地部署（课件）
++ ⭐️ollama+GraphRAG本地部署（课件）
 
-+   GraphRAG+Ollama本地大模型运行方案详解（视频）
++ GraphRAG+Ollama本地大模型运行方案详解（视频）
 
-### **☑️ **进阶之路
+### ☑️ 进阶之路
 
-1、GraphRAG搭建本地知识库
+1. GraphRAG搭建本地知识库
 
-+   GraphRAG的核心原理详解，与传统RAG的区别（视频）
++ GraphRAG的核心原理详解，与传统RAG的区别（视频）
 
-+   [使用GraphRAG在个人电脑上](https://www.bilibili.com/video/BV1wvB4YEEAa/?)搭建高效本地知识库问答系统全流程（视频）
++ [使用GraphRAG在个人电脑上搭建高效本地知识库问答系统全流程（视频）](https://www.bilibili.com/video/BV1wvB4YEEAa/?)
 
 ---
 
-# ❤️ 赋范社区交流群
+## ❤️ 赋范社区交流群
 
 海量硬核独家技术**干货内容**+无门槛**技术交流**~
 

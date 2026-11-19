@@ -1,14 +1,15 @@
+
 # 贝索斯2007年致股东信
 
 > 来源：[https://leonzhang.feishu.cn/docx/GoDFdPyRJoyfyPx03npcOkA5nid](https://leonzhang.feishu.cn/docx/GoDFdPyRJoyfyPx03npcOkA5nid)
 
-> 🔗 原文链接： https://www.cmtzz.cn/news/27474
+> 🔗 原文链接：https://www.cmtzz.cn/news/27474
 
 > **亚马逊在当年推出现象级产品“Kindle”，改变了人们的阅读方式。如果我们的工具使阅读零碎的信息变得更容易，我们就会趋向于阅读零碎的信息，而远离长篇阅读。Kindle的初衷就是为了让人们更加舒适的进行长时间专心阅读，远离碎片化信息。**“Kindle”上线当日5.5小时内存货售罄，供不应求的情况持续了半年之久。当年市值399.3亿，同比增加134%；得益于电商的持续增长与Kindle的热卖，自由现金流达12.4亿，同比上涨135.4%；市场已经逐步认同贝索斯“自由现金流”的理念，市值的上涨主要由自由现金流驱动。
 
 ![](img/90f329c5f5cd89f9a3e7e1d9cbaca8a6.png)
 
-**致我们的股东：**
+## 致我们的股东：
 
 2007年11月19日是一个特殊的日子。经过3年的努力，我们向客户推出了Amazon Kindle。
 

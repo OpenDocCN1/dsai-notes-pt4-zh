@@ -1,3 +1,4 @@
+
 # 张一甲：AI 创生时代，2024 中国 AI 新风向 30 条判断
 
 > 来源：[https://agijuejin.feishu.cn/docx/BjbfdQMYUoZCCsxRgs2cp7Gbnic](https://agijuejin.feishu.cn/docx/BjbfdQMYUoZCCsxRgs2cp7Gbnic)

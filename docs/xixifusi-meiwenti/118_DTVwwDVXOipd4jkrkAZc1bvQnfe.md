@@ -1,7 +1,7 @@
+
 # The Casino on Mars 火星上的赌场
 
 > 来源：[https://docs.feishu.cn/docx/UiZ4dgJjUo7qcKxSdKtcxAcCngg](https://docs.feishu.cn/docx/UiZ4dgJjUo7qcKxSdKtcxAcCngg)
-
 > https://www.paradigm.xyz/2023/09/casino-on-mars
 
 It’s useful to think of crypto as a new planet that’s being settled.
@@ -55,6 +55,8 @@ Much crypto skepticism is unimaginative, but some is well-earned. Although the c
 Innovation depends on capital and labor applied to worthy experiments. Too much speculation, airdrop farming, and other shenanigans add noise to the price signal that would otherwise inform productive innovation. Even the most well-meaning entrepreneurs can be tricked by fake prices or distracted by short-term profits, ultimately slowing down the process of building what crypto actually needs.
 
 Short-term speculation is also a zero-sum game, with sophisticated traders extracting value from newcomers and possibly burning them forever. A free market admits all kinds of participants, and there’s nothing per se wrong with short-term traders as long as they behave legally and ethically. But if we view crypto adoption as partly a social coordination game, then choosing the optimal time horizon can be a prisoner’s dilemma. We might all reach a more inspiring endgame by collectively thinking longer term.
+
+
 
 Lastly, there are too many bad actors: scammers, rug pulls, and blackhat hackers. Imagine a roving gang of bandits who greet newcomers with a beatdown and a mugging—welcome to San Francisco crypto! Like the Wild West or the early internet, the open frontier enables innovation but also misbehavior. Good actors far outweigh the bad—for example, crypto is lucky to have some of the world’s leading whitehat security experts—but some self-regulation or regulation may be needed.
 
@@ -125,5 +127,7 @@ If we think of crypto as a new planet, what implications might that have?
 +   It can be tempting to see the Wild West activity on the new planet and to take overly aggressive action, like banning travel to the new planet, or heavily restricting the activity that takes place there. But this will prevent the new planet from getting past this bootstrapping phase to the innovation that is possible in the long run.
 
 +   It would be better to take a long-term view. Let there be safe harbors and permissionlessness. Punish bad actors when they commit crimes. But preserve the openness for the good actors to pursue experimentation and innovation.
+
+
 
 Disclaimer: This post is for general information purposes only. It does not constitute investment advice or a recommendation or solicitation to buy or sell any investment and should not be used in the evaluation of the merits of making any investment decision. It should not be relied upon for accounting, legal or tax advice or investment recommendations. This post reflects the current opinions of the authors and is not made on behalf of Paradigm or its affiliates and does not necessarily reflect the opinions of Paradigm, its affiliates or individuals associated with Paradigm. The opinions reflected herein are subject to change without being updated.

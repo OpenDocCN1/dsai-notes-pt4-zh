@@ -1,3 +1,4 @@
+
 # 【译】大型企业敏捷 AI 集成的 5 个步骤
 
 > 来源：[https://agijuejin.feishu.cn/docx/L3gVd31X1o1fp6xPZB9ckOIjnfe](https://agijuejin.feishu.cn/docx/L3gVd31X1o1fp6xPZB9ckOIjnfe)
@@ -54,6 +55,6 @@
 
 ![](img/17621e3271a50d2222696800ae0f675f.png)
 
-#### By Sahana Ramesh
+### By Sahana Ramesh
 
 Sahana Ramesh is a forward-thinking and results-oriented Global Technology transformation leader with distinguished career spanning 13 years, marked by continuous growth and accomplishments. She has led several cloud transformation and datacenters transformation strategy and delivery programs for the enterprise. Sahana is currently leading multi-disciplinary (Infrastructure and Application Development), cross functional global teams in Agile methodology. She is adept at partnering with international organizations to drive transformative programs in complicated matrix environments. Sahana leverages excellent communication acumen coupled with strong rapport- building talents to develop and foster trust-based, collaborative, and productive working relationships with stakeholders, business partners, and multidisciplinary project teams.

@@ -1,3 +1,4 @@
+
 # AI 编程
 
 > 来源：[https://my.feishu.cn/docx/DcoPdhMoDoEF55xI9A6ciVlDnkc](https://my.feishu.cn/docx/DcoPdhMoDoEF55xI9A6ciVlDnkc)
@@ -201,108 +202,116 @@
 
 > 资料来源：https://mp.weixin.qq.com/s/1ArOcukPJ9iJo-egeBzfWA
 
-```
+
+
 # 任务：
+
 请你制作适合小红书平台发布的精美卡片（SVG），竖屏，适合手机阅读。
 
 ## 要求：
-- 符合小红书平台上流行的&quot;高颜值、有设计感、信息清晰&quot;的风格，柔和色调，既时尚又保持技术内容的专业性。
+
+- 符合小红书平台上流行的"高颜值、有设计感、信息清晰"的风格，柔和色调，既时尚又保持技术内容的专业性。
 - 整体结构舒展，同时保持视觉美感和信息清晰度。
 - 视觉舒适，设计精美，整体设计让小仙女们看了一眼沦陷！
 - 包含面向技术小白的通俗解读
-- 突出重要和关键信息 
+- 突出重要和关键信息
 - 不要包含“小白”、“炸裂”、“通俗”和平台极限词
 
 ## 精美卡片（SVG）示例
-&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 750 1334&quot; width=&quot;750&quot; height=&quot;1334&quot;&gt;
-  &lt;!-- 定义渐变和阴影 --&gt;
-  &lt;defs&gt;
-    &lt;linearGradient id=&quot;bgGradient&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;0%&quot; y2=&quot;100%&quot;&gt;
-      &lt;stop offset=&quot;0%&quot; style=&quot;stop-color:#FFD4E5;stop-opacity:1&quot; /&gt;
-      &lt;stop offset=&quot;100%&quot; style=&quot;stop-color:#AAE0FF;stop-opacity:1&quot; /&gt;
-    &lt;/linearGradient&gt;
-    &lt;filter id=&quot;softShadow&quot; x=&quot;-10%&quot; y=&quot;-10%&quot; width=&quot;120%&quot; height=&quot;120%&quot;&gt;
-      &lt;feGaussianBlur in=&quot;SourceAlpha&quot; stdDeviation=&quot;5&quot; /&gt;
-      &lt;feOffset dx=&quot;0&quot; dy=&quot;3&quot; result=&quot;offsetblur&quot; /&gt;
-      &lt;feComponentTransfer&gt;
-        &lt;feFuncA type=&quot;linear&quot; slope=&quot;0.2&quot; /&gt;
-      &lt;/feComponentTransfer&gt;
-      &lt;feMerge&gt;
-        &lt;feMergeNode /&gt;
-        &lt;feMergeNode in=&quot;SourceGraphic&quot; /&gt;
-      &lt;/feMerge&gt;
-    &lt;/filter&gt;
-  &lt;/defs&gt;
 
-  &lt;!-- 主背景 --&gt;
-  &lt;rect width=&quot;750&quot; height=&quot;1334&quot; fill=&quot;url(#bgGradient)&quot; /&gt;
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1334" width="750" height="1334">
+  <!-- 定义渐变和阴影 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD4E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AAE0FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+      <feOffset dx="0" dy="3" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
 
-  &lt;!-- 装饰元素：几何形状 --&gt;
-  &lt;circle cx=&quot;50&quot; cy=&quot;150&quot; r=&quot;80&quot; fill=&quot;#FFB6D9&quot; opacity=&quot;0.5&quot; /&gt;
-  &lt;circle cx=&quot;700&quot; cy=&quot;200&quot; r=&quot;120&quot; fill=&quot;#B6E5FF&quot; opacity=&quot;0.4&quot; /&gt;
-  &lt;circle cx=&quot;120&quot; cy=&quot;1200&quot; r=&quot;100&quot; fill=&quot;#FFC8A2&quot; opacity=&quot;0.3&quot; /&gt;
-  &lt;circle cx=&quot;650&quot; cy=&quot;1100&quot; r=&quot;90&quot; fill=&quot;#ADFFD6&quot; opacity=&quot;0.3&quot; /&gt;
+  <!-- 主背景 -->
+  <rect width="750" height="1334" fill="url(#bgGradient)" />
 
-  &lt;!-- 内容区域 --&gt;
-  &lt;rect x=&quot;75&quot; y=&quot;280&quot; width=&quot;600&quot; height=&quot;880&quot; rx=&quot;30&quot; ry=&quot;30&quot; fill=&quot;white&quot; filter=&quot;url(#softShadow)&quot; /&gt;
+  <!-- 装饰元素：几何形状 -->
+  <circle cx="50" cy="150" r="80" fill="#FFB6D9" opacity="0.5" />
+  <circle cx="700" cy="200" r="120" fill="#B6E5FF" opacity="0.4" />
+  <circle cx="120" cy="1200" r="100" fill="#FFC8A2" opacity="0.3" />
+  <circle cx="650" cy="1100" r="90" fill="#ADFFD6" opacity="0.3" />
 
-  &lt;!-- DeepSeek标志和标题区 --&gt;
-  &lt;rect x=&quot;75&quot; y=&quot;140&quot; width=&quot;600&quot; height=&quot;180&quot; rx=&quot;30&quot; ry=&quot;30&quot; fill=&quot;#615DFA&quot; filter=&quot;url(#softShadow)&quot; /&gt;
+  <!-- 内容区域 -->
+  <rect x="75" y="280" width="600" height="880" rx="30" ry="30" fill="white" filter="url(#softShadow)" />
 
-  &lt;!-- 标题文本 - 得意黑 --&gt;
-  &lt;text x=&quot;375&quot; y=&quot;220&quot; font-family=&quot;&#x27;LXGW WenKai&#x27;, sans-serif&quot; font-size=&quot;44&quot; font-weight=&quot;bold&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot;&gt;DeepSeek：3FS 文件系统&lt;/text&gt;
-  &lt;text x=&quot;375&quot; y=&quot;280&quot; font-family=&quot;&#x27;LXGW WenKai&#x27;, sans-serif&quot; font-size=&quot;28&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot;&gt;DeepSeek开源周第五天重磅发布&lt;/text&gt;
+  <!-- DeepSeek标志和标题区 -->
+  <rect x="75" y="140" width="600" height="180" rx="30" ry="30" fill="#615DFA" filter="url(#softShadow)" />
 
-  &lt;!-- 技术解读区域 - 思源黑体 --&gt;
-  &lt;g font-family=&quot;&#x27;Noto Sans SC&#x27;, sans-serif&quot; fill=&quot;#333333&quot;&gt;
-    &lt;text x=&quot;105&quot; y=&quot;360&quot; font-size=&quot;26&quot; font-weight=&quot;bold&quot;&gt;这是什么？一句话解释👇&lt;/text&gt;
-    &lt;rect x=&quot;105&quot; y=&quot;380&quot; width=&quot;540&quot; height=&quot;70&quot; rx=&quot;15&quot; ry=&quot;15&quot; fill=&quot;#FFF4F9&quot; /&gt;
-    &lt;text x=&quot;125&quot; y=&quot;425&quot; font-size=&quot;22&quot; fill=&quot;#333&quot;&gt;3FS是一个能充分利用SSD存储和网络带宽的文件系统&lt;/text&gt;
+  <!-- 标题文本 - 得意黑 -->
+  <text x="375" y="220" font-family="'LXGW WenKai', sans-serif" font-size="44" font-weight="bold" fill="white" text-anchor="middle">DeepSeek：3FS 文件系统</text>
+  <text x="375" y="280" font-family="'LXGW WenKai', sans-serif" font-size="28" fill="white" text-anchor="middle">DeepSeek开源周第五天重磅发布</text>
+
+  <!-- 技术解读区域 - 思源黑体 -->
+  <g font-family="'Noto Sans SC', sans-serif" fill="#333333">
+    <text x="105" y="360" font-size="26" font-weight="bold">这是什么？一句话解释👇</text>
+    <rect x="105" y="380" width="540" height="70" rx="15" ry="15" fill="#FFF4F9" />
+    <text x="125" y="425" font-size="22" fill="#333">3FS是一个能充分利用SSD存储和网络带宽的文件系统</text>
     
-    &lt;!-- 核心数据指标 --&gt;
-    &lt;text x=&quot;105&quot; y=&quot;490&quot; font-size=&quot;26&quot; font-weight=&quot;bold&quot;&gt;🚀 性能有多强？&lt;/text&gt;
+    <!-- 核心数据指标 -->
+    <text x="105" y="490" font-size="26" font-weight="bold">🚀 性能有多强？</text>
     
-    &lt;!-- 数据点1 --&gt;
-    &lt;rect x=&quot;105&quot; y=&quot;510&quot; width=&quot;255&quot; height=&quot;120&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;#E2F6FF&quot; /&gt;
-    &lt;text x=&quot;232.5&quot; y=&quot;550&quot; font-size=&quot;22&quot; font-weight=&quot;bold&quot; fill=&quot;#333&quot; text-anchor=&quot;middle&quot;&gt;读取速度&lt;/text&gt;
-    &lt;text x=&quot;232.5&quot; y=&quot;590&quot; font-size=&quot;30&quot; font-weight=&quot;bold&quot; fill=&quot;#615DFA&quot; text-anchor=&quot;middle&quot;&gt;6.6 TiB/秒&lt;/text&gt;
+    <!-- 数据点1 -->
+    <rect x="105" y="510" width="255" height="120" rx="20" ry="20" fill="#E2F6FF" />
+    <text x="232.5" y="550" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">读取速度</text>
+    <text x="232.5" y="590" font-size="30" font-weight="bold" fill="#615DFA" text-anchor="middle">6.6 TiB/秒</text>
     
-    &lt;!-- 数据点2 --&gt;
-    &lt;rect x=&quot;390&quot; y=&quot;510&quot; width=&quot;255&quot; height=&quot;120&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;#FFEFEF&quot; /&gt;
-    &lt;text x=&quot;517.5&quot; y=&quot;550&quot; font-size=&quot;22&quot; font-weight=&quot;bold&quot; fill=&quot;#333&quot; text-anchor=&quot;middle&quot;&gt;排序性能&lt;/text&gt;
-    &lt;text x=&quot;517.5&quot; y=&quot;590&quot; font-size=&quot;30&quot; font-weight=&quot;bold&quot; fill=&quot;#FF6B95&quot; text-anchor=&quot;middle&quot;&gt;3.66 TiB/分钟&lt;/text&gt;
+    <!-- 数据点2 -->
+    <rect x="390" y="510" width="255" height="120" rx="20" ry="20" fill="#FFEFEF" />
+    <text x="517.5" y="550" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">排序性能</text>
+    <text x="517.5" y="590" font-size="30" font-weight="bold" fill="#FF6B95" text-anchor="middle">3.66 TiB/分钟</text>
     
-    &lt;!-- 数据点3 --&gt;
-    &lt;rect x=&quot;105&quot; y=&quot;650&quot; width=&quot;255&quot; height=&quot;120&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;#F2FFEF&quot; /&gt;
-    &lt;text x=&quot;232.5&quot; y=&quot;690&quot; font-size=&quot;22&quot; font-weight=&quot;bold&quot; fill=&quot;#333&quot; text-anchor=&quot;middle&quot;&gt;KVCache查询&lt;/text&gt;
-    &lt;text x=&quot;232.5&quot; y=&quot;730&quot; font-size=&quot;30&quot; font-weight=&quot;bold&quot; fill=&quot;#52BF90&quot; text-anchor=&quot;middle&quot;&gt;40+ GiB/秒&lt;/text&gt;
+    <!-- 数据点3 -->
+    <rect x="105" y="650" width="255" height="120" rx="20" ry="20" fill="#F2FFEF" />
+    <text x="232.5" y="690" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">KVCache查询</text>
+    <text x="232.5" y="730" font-size="30" font-weight="bold" fill="#52BF90" text-anchor="middle">40+ GiB/秒</text>
     
-    &lt;!-- 数据点4 --&gt;
-    &lt;rect x=&quot;390&quot; y=&quot;650&quot; width=&quot;255&quot; height=&quot;120&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;#FFF8E1&quot; /&gt;
-    &lt;text x=&quot;517.5&quot; y=&quot;690&quot; font-size=&quot;22&quot; font-weight=&quot;bold&quot; fill=&quot;#333&quot; text-anchor=&quot;middle&quot;&gt;集群规模&lt;/text&gt;
-    &lt;text x=&quot;517.5&quot; y=&quot;730&quot; font-size=&quot;30&quot; font-weight=&quot;bold&quot; fill=&quot;#FFA726&quot; text-anchor=&quot;middle&quot;&gt;180节点&lt;/text&gt;
+    <!-- 数据点4 -->
+    <rect x="390" y="650" width="255" height="120" rx="20" ry="20" fill="#FFF8E1" />
+    <text x="517.5" y="690" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">集群规模</text>
+    <text x="517.5" y="730" font-size="30" font-weight="bold" fill="#FFA726" text-anchor="middle">180节点</text>
 
-    &lt;!-- 为什么重要 --&gt;
-    &lt;text x=&quot;105&quot; y=&quot;810&quot; font-size=&quot;26&quot; font-weight=&quot;bold&quot;&gt;💡 为什么这很重要？&lt;/text&gt;
-    &lt;rect x=&quot;105&quot; y=&quot;830&quot; width=&quot;540&quot; height=&quot;170&quot; rx=&quot;15&quot; ry=&quot;15&quot; fill=&quot;#F5F5FF&quot; /&gt;
+    <!-- 为什么重要 -->
+    <text x="105" y="810" font-size="26" font-weight="bold">💡 为什么这很重要？</text>
+    <rect x="105" y="830" width="540" height="170" rx="15" ry="15" fill="#F5F5FF" />
     
-    &lt;text x=&quot;125&quot; y=&quot;865&quot; font-size=&quot;22&quot; fill=&quot;#333&quot;&gt;• 让AI模型训练和推理数据管理更高效&lt;/text&gt;
-    &lt;text x=&quot;125&quot; y=&quot;905&quot; font-size=&quot;22&quot; fill=&quot;#333&quot;&gt;• 支持数据预处理、加载和检查点存储&lt;/text&gt;
-    &lt;text x=&quot;125&quot; y=&quot;945&quot; font-size=&quot;22&quot; fill=&quot;#333&quot;&gt;• 向量搜索和推理KVCache查询更快&lt;/text&gt;
-    &lt;text x=&quot;125&quot; y=&quot;985&quot; font-size=&quot;22&quot; fill=&quot;#333&quot;&gt;• 分离式架构保证数据一致性&lt;/text&gt;
+    <text x="125" y="865" font-size="22" fill="#333">• 让AI模型训练和推理数据管理更高效</text>
+    <text x="125" y="905" font-size="22" fill="#333">• 支持数据预处理、加载和检查点存储</text>
+    <text x="125" y="945" font-size="22" fill="#333">• 向量搜索和推理KVCache查询更快</text>
+    <text x="125" y="985" font-size="22" fill="#333">• 分离式架构保证数据一致性</text>
 
-    &lt;!-- 开源链接 --&gt;
-    &lt;text x=&quot;105&quot; y=&quot;1040&quot; font-size=&quot;26&quot; font-weight=&quot;bold&quot;&gt;🔗 开源地址&lt;/text&gt;
-    &lt;rect x=&quot;105&quot; y=&quot;1060&quot; width=&quot;540&quot; height=&quot;70&quot; rx=&quot;15&quot; ry=&quot;15&quot; fill=&quot;#EDFFF5&quot; /&gt;
-    &lt;text x=&quot;125&quot; y=&quot;1100&quot; font-size=&quot;20&quot; fill=&quot;#333&quot;&gt;github.com/deepseek-ai/3FS&lt;/text&gt;
-  &lt;/g&gt;
-&lt;/svg&gt;
+    <!-- 开源链接 -->
+    <text x="105" y="1040" font-size="26" font-weight="bold">🔗 开源地址</text>
+    <rect x="105" y="1060" width="540" height="70" rx="15" ry="15" fill="#EDFFF5" />
+    <text x="125" y="1100" font-size="20" fill="#333">github.com/deepseek-ai/3FS</text>
+  </g>
+</svg>
+```
 
 ## 参考资料：
+
 ---
+
 [此处插入参考资料具体内容]
+
 ---
-```
 
 ## SVG 卡片设计师
 
@@ -310,7 +319,11 @@
 
 > 文中2.35:1的比例为🛰️公号文章头图尺寸，可根据需要调整
 
-```
+
+
+# SVG卡片设计师
+
+```lisp
 ;; 作者: 文森策
 
 ;; 版本: 1.0
@@ -456,20 +469,20 @@
 ;; &lt;/svg&gt;
 ```
 
-## n8n AI智能体架构导师
+# n8n AI智能体架构导师
 
-> 以资深自动化架构师视角，手把手指导在 n8n 中构建复杂的 AI 驱动智能体：从目标与I/O范围界定、整体架构设计、节点选型与逐一配置说明、到自定义代码、重试与容错、数据持久化、外部API对接与鉴权，并提供可复制的配置片段与扩展建议，围绕“{$AGENT_PURPOSE}”落地实战。
+> 以资深自动化架构师视角，手把手指导在 `n8n` 中构建复杂的 AI 驱动智能体：从目标与I/O范围界定、整体架构设计、节点选型与逐一配置说明、到自定义代码、重试与容错、数据持久化、外部API对接与鉴权，并提供可复制的配置片段与扩展建议，围绕`{$AGENT_PURPOSE}`落地实战。
 
-```
-&lt;role&gt;
+```xml
+<role>
 You are a senior automation architect and expert in building complex AI-powered agents inside n8n. You deeply understand workflows, triggers, external APIs, GPT integrations, custom JavaScript functions, and error handling.
-&lt;/role&gt;
+</role>
 
-&lt;task&gt;
+<task>
 Guide me step-by-step to build an AI-powered agent in n8n. The agent’s purpose is: {$AGENT_PURPOSE}
-&lt;/task&gt;
+</task>
 
-&lt;requirements&gt;
+<requirements>
 1. Start by helping me scope the agent’s goals and required inputs/outputs.
 2. Design the high-level architecture of the agent workflow.
 3. Recommend the necessary n8n nodes (built-in, HTTP, function, OpenAI, etc).
@@ -478,20 +491,18 @@ Guide me step-by-step to build an AI-powered agent in n8n. The agent’s purpose
 6. Help me set up retry logic, error handling, and fallback steps.
 7. Show me how to store and reuse data across executions (e.g. with Memory, Databases, or Google Sheets).
 8. If the agent needs external APIs or tools, walk me through connecting and authenticating them.
-&lt;/requirements&gt;
+</requirements>
 
-&lt;output_style&gt;
+<output_style>
 Be extremely clear and hands-on, like you&#x27;re mentoring a junior automation engineer. Provide visual explanations where possible (e.g. bullet points, flow-like formatting), and always give copy-paste-ready node settings or code snippets.
-&lt;/output_style&gt;
+</output_style>
 
-&lt;expandability&gt;
+<expandability>
 End by suggesting ways to make the agent more powerful, like chaining workflows, adding webhooks, or connecting to vector databases, CRMs, or Slack.
-&lt;/expandability&gt;
+</expandability>
 ```
 
----
-
-作者简介：
+## 作者简介
 
 我是文森策，一个10年+品牌策划人，AI提示词&提效玩家。
 

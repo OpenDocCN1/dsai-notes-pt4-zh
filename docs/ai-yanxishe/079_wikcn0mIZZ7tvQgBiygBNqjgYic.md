@@ -1,18 +1,15 @@
+
 # AI 绘画 Stable Diffusion模型全网最详细入门手册
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/AFUbd5D9zoY32Yxi3CZchxT9nSe](https://aiyanxishe.feishu.cn/docx/AFUbd5D9zoY32Yxi3CZchxT9nSe)
 
 ![](img/b5175eb96b987563b667d0779fa8ce34.png)
 
-# AI 绘画 Stable Diffusion模型全网最详细入门手册
-
-+   [AIGC](https://www.chatgoo.cn/aigc/)
+> 分类：[AIGC](https://www.chatgoo.cn/aigc/)
 
 ![](img/7ff5ced7ec322e377cce3797a95a5153.png)
 
-admin
-
-关注私信
+admin 关注私信
 
 在 Midjourney 关闭免费通道后，本地部署似乎才是更快乐的玩法。经过两天折腾，我深深迷上了 Stable Diffusion。
 
@@ -20,168 +17,148 @@ AI 零基础的我也在探索中，不断学习。AI 绘画背后的技术值�
 
 Stable Diffusion 是 2022 年发布的深度学习文字到图像生成模型。它主要用于根据文字的描述产生详细图像，能够在几秒钟内创作出令人惊叹的艺术作品，本文是一篇使用入门教程。
 
-## 首先去Civitai 社区感受一下AI绘图的震撼效果
+## 首先去 Civitai 社区感受一下 AI 绘图的震撼效果
 
 https://civitai.com/
 
-Civitai ：是一个稳定扩散 AI 艺术模型的社区平台。收集了来自 250 多位创作者的 1,700 多个模型。还收集了来自社区的 1200 条评论以及 12,000 多张带有提示的图像，来帮助你入门。
+Civitai：是一个稳定扩散 AI 艺术模型的社区平台。收集了来自 250 多位创作者的 1,700 多个模型。还收集了来自社区的 1200 条评论以及 12,000 多张带有提示的图像，来帮助你入门。
 
-## Stable Diffusion开源地址
+## Stable Diffusion 开源地址
 
-[https://github.com/Stabilit](https://github.com/Stability-AI/stablediffusion)y-AI/stablediffusion
+[https://github.com/Stability-AI/stablediffusion](https://github.com/Stability-AI/stablediffusion)
 
 ## 什么是 Stable Diffusion？
 
-2022 年发布的稳定扩散（Stable Diffusion([1])） 是一个文本到图像生成的深度学习模型。它主要用于根据文本的描述产生详细图像，尽管它也可以应用于其他任务，如内补绘制、外补绘制，以及基于文本提示（英文）生成图像到图像的转换。该模型是由初创公司 Stability AI([2]) 与一些学术研究机构和非营利组织合作开发的。
+2022 年发布的稳定扩散（Stable Diffusion([1])）是一个文本到图像生成的深度学习模型。它主要用于根据文本的描述产生详细图像，尽管它也可以应用于其他任务，如内补绘制、外补绘制，以及基于文本提示（英文）生成图像到图像的转换。该模型是由初创公司 Stability AI([2]) 与一些学术研究机构和非营利组织合作开发的。
 
 Stable Diffusion 是一种潜在扩散模型，它的开发由初创公司 Stability AI 资助和塑造，模型的技术许可证由慕尼黑大学的 CompVis 小组发布。开发工作由 Runway([3]) 的 Patrick Esser 和 CompVis([4]) 的 Robin Rombach 领导，他们是早期发明稳定扩散使用的潜在扩散模型架构的研究人员之一。Stability AI 还将 EleutherAI([5]) 和 LAION([6])（一家德国非营利组织，他们组织了 Stable Diffusion 训练的数据集）列为该项目的支持者。
 
 Stable Diffusion 的代码和模型权重已开源，并且可以在大多数消费级硬件上运行，配备至少 8 GB VRAM（Video random-access memory([7])）的适度 GPU。而以前的专有文生图模型（如 DALL-E([8]) 和 Midjourney([9])）只能通过云服务访问。
 
-## 如何使用Stable Diffusion？
+## 如何使用 Stable Diffusion？
 
-## 一、在线使用Stable Diffusion
+### 一、在线使用 Stable Diffusion
 
-[S](https://huggingface.co/spaces/stabilityai/stable-diffusion)table Diffusion 在线版 https://huggingface.co/spaces/stabilityai/stable-diffusion
+[Stable Diffusion 在线版](https://huggingface.co/spaces/stabilityai/stable-diffusion)：https://huggingface.co/spaces/stabilityai/stable-diffusion
 
 虽然使用简单，但是大部分为阉割版（不支持模型选择，不支持否定提示（Negative Prompt），不支持插件等等），无法发挥其更大的能力。
 
-+   Stable Diffusion 2.1 Demo([10])： Stable Diffusion 2.1 是 StabilityAI 最新的文本到图像模型。
+- Stable Diffusion 2.1 Demo([10])：Stable Diffusion 2.1 是 StabilityAI 最新的文本到图像模型。
 
-此模型卡侧重于与 Stable Diffusio[n v](https://github.com/Stability-AI/stablediffusion)2-1 模型相关联的模型，代码库可在此处获取。
+此模型卡侧重于与 [Stable Diffusion v2-1](https://github.com/Stability-AI/stablediffusion) 模型相关联的模型，代码库可在此处获取。
 
-该stable-diffusion-2-1模型是从stable-diffusion-2 ( 768-v-ema.ckpt) 对同一数据集（使用 ）进行额外 55k 步微调punsafe=0.1，然后使用 对另外 155k 步进行微调punsafe=0.98。
+该 `stable-diffusion-2-1` 模型是从 `stable-diffusion-2`（`768-v-ema.ckpt`）在同一数据集上使用 `punsafe=0.1` 额外微调 55k 步，然后使用 `punsafe=0.98` 再微调 155k 步。
 
 在线版图片生成主要包含四部分：
 
-+   Prompt 输入框：输入提示，即需要生成图片的文字描述，一般为英文短句或单词，以逗号进行分隔。
+- `Prompt` 输入框：输入提示，即需要生成图片的文字描述，一般为英文短句或单词，以逗号进行分隔。
+- `Negative Prompt` 输入框：除了一些功能阉割网站不支持此功能外，Stable Diffusion 早期版本也不支持。否定提示也是一种输入提示，用来指定生成的图像中不应包含的内容。这些提示可用于微调模型的输出并确保它不会生成包含某些元素或特征的图像（达到过滤的目的）。和提示用法一样，以逗号进行分隔。（注意：否定提示可以阻止生成特定的事物、样式或修复某些图像异常，但并非 100% 有效）
+- `Generate image` 按钮：提示输入完成后，点击此按钮则开始生成图片。
+- 图片展示区：此区域用来展示图片生成后的结果。
 
-+   Negative Prompt 输入框：除了一些功能阉割网站不支持此功能外，Stable Diffusion 早期版本也不支持。否定提示也是一种输入提示，用来指定生成的图像中不应包含的内容。这些提示可用于微调模型的输出并确保它不会生成包含某些元素或特征的图像（达到过滤的目的）。和提示用法一样，以逗号进行分隔。（注意：否定提示可以阻止生成特定的事物、样式或修复某些图像异常，但并非 100% 有效）
+### 二、本地机器使用 Stable Diffusion
 
-+   Generate image 按钮：提示输入完成后，点击此按钮则开始生成图片。
+先看一下本地如何使用 Stable Diffusion？
 
-+   图片展示区：此区域用来展示图片生成后的结果。
+#### 找到你想生成的画风图片，查看详细信息并下载相应包和模型
 
-## 二、本地机器使用Stable Diffusion
+以韩国美女小姐姐 lora 包（Korean Doll Likeness）为例。
 
-先看一下本地如何使用Stable Diffusion？
+1. 下载 lora 包，并放到指定文件夹
 
-### 找到你想生成的画风图片，查看详细信息并下载相应包和模型。
+   右上角点击 `download` 下载此 Lora 包。（一般几十到几百 MB），下载好后，放在你电脑的 `stable-diffusion-webui/models/Lora` 文件夹下面。
 
+2. 在 lora 包网页中，点击示例图片右下角的圈圈感叹号，查看生成信息。
 
-以韩国美女小姐姐lora包（Korean Doll Likeness）为例。
+3. 找到 `model` 行，了解到这个 lora 包还需要使用 `chilloutmix_cilloutmixNi` 模型。
 
-（1）下载lora包，并放到指定文件夹
+4. 下载模型，并放到指定文件夹
 
-右上角点击download下载此Lora包。（一般几十到几百MB），下载好后，放在你电脑的stable-diffusion-webui > models > Lora文件夹下面。
-
-（2）lora包网页，示例图片点击右下角的圈圈感叹号，查看生成信息。
-
-（3）找到model行，了解到这个lora包还需要使用chilloutmix_cilloutmixNi模型
-
-（4）下载模型，并放到指定文件夹
-
-把chilloutmix_cilloutmixNi放在Civitai搜索框上搜索，发现没结果，但是找到一个类似的，也是生成真实人像的模型（checkpoint），叫做OrangeChillMix，接着我们把这个模型下载下来（7.17GB），并放在stable-diffusion-webui>models>Stable-diffusion文件夹下面。
+   把 `chilloutmix_cilloutmixNi` 放在 Civitai 搜索框上搜索，发现没结果，但是找到一个类似的，也是生成真实人像的模型（checkpoint），叫做 `OrangeChillMix`，接着我们把这个模型下载下来（7.17GB），并放在 `stable-diffusion-webui/models/Stable-diffusion` 文件夹下面。
 
 ![](img/6d1b8ab1cef046d37246b7ec7ce51328.png)
 
-### 4.启动stable-diffusino-webui，并切换模型
+#### 启动 stable-diffusion-webui，并切换模型
 
-（1）启动stable diffusion webui
+1. 启动 `stable-diffusion-webui`
 
-如何启动就不重复了，忘了的可以回去看看win安装篇，mac安装篇，里面都有讲如何启动。
+   如何启动就不重复了，忘了的可以回去看看 win 安装篇、mac 安装篇，里面都有讲如何启动。
 
-（2）切换模型
+2. 切换模型
 
 ![](img/f0bfeea7adc8246790e34e86b2717ced.png)
 
-先点击左上角的刷新按钮，接着点击左上角的向下箭头，找到你刚刚下载的orangechillmix_v70.safetensors模型，点击它。
+先点击左上角的刷新按钮，接着点击左上角的向下箭头，找到你刚刚下载的 `orangechillmix_v70.safetensors` 模型，点击它。
 
-等待一分钟后，按f5刷新页面，如果左上角已经自动显示了“orangechillmix_v70.safetensors”字样，那么模型就切换成功了。
+等待一分钟后，按 `f5` 刷新页面，如果左上角已经自动显示了 `orangechillmix_v70.safetensors` 字样，那么模型就切换成功了。
 
-（注意，切换模型需要先提前完成第三步里面的：下载模型，并放到的指定文件夹）
+（注意，切换模型需要先提前完成第三步里面的：下载模型，并放到指定的文件夹）
 
-### 5.开始生成图像。
+#### 开始生成图像
 
-（1）浏览器回到刚刚的那个Korean Doll Likeness网页，点开示例图片右下角的感叹号，点击copy generation data 按钮。
+1. 浏览器回到刚刚的那个 Korean Doll Likeness 网页，点开示例图片右下角的感叹号，点击 `copy generation data` 按钮。
 
 ![](img/bbf4e4dfb333582a6531ab57d5c9ecc6.png)
 
-（2）在stable diffusion webui的 prompt输入框里面，Ctrl（command）+ V ，粘贴刚刚复制的内容后，接着点击Generate下方的“左下箭头”。
+2. 在 `stable-diffusion-webui` 的 `Prompt` 输入框里面，按 Ctrl（command）+ V 粘贴刚刚复制的内容后，接着点击 `Generate` 下方的“左下箭头”。
 
 ![](img/9e193e1b6e9b6e2dd41cf5a1dbe2d62c.png)
 
-这时候，你会发现，刚刚长长的prompt变短了，其他内容去哪了呢？
+这时候，你会发现，刚刚长长的 `prompt` 变短了，其他内容去哪了呢？
 
-原来去了下面的nagative prompt框，和下面的参数配置。
+原来去了下面的 `Negative Prompt` 框，和下面的参数配置。
 
 ![](img/952a9a4ce430916678a584031530fd97.png)
 
-（3）点击generate，开始生成图像。
+3. 点击 `Generate`，开始生成图像。
 
-（4）等待图像生成完毕，然后右键点击生成的图像保存，或者点击图像下面的文件夹图标，进入文件夹查看生成的图像。
+4. 等待图像生成完毕，然后右键点击生成的图像保存，或者点击图像下面的文件夹图标，进入文件夹查看生成的图像。
 
 ![](img/1a36bfbd985b8de1b307141be05ac332.png)
 
-是不是很简单？，立马要尝试
+是不是很简单？立马要尝试
 
-### 硬件要求
+#### 硬件要求
 
-建议使用不少于 16 GB 内存，并有 60GB 以上的硬盘空间。需要用到 CUDA 架构，推荐使用 N 卡。（目前已经有了对 A 卡的相关支持，但运算的速度依旧明显慢于 N 卡，参见：
-
-[Install and Run on AMD GPUs · AUTOMATIC1](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs)111/stable-diffusion-webui Wiki · GitHub
+建议使用不少于 16 GB 内存，并有 60GB 以上的硬盘空间。需要用到 CUDA 架构，推荐使用 N 卡。（目前已经有了对 A 卡的相关支持，但运算的速度依旧明显慢于 N 卡，参见：[Install and Run on AMD GPUs · AUTOMATIC1111/stable-diffusion-webui Wiki · GitHub](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs)）
 
 > 过度使用，显卡会有损坏的风险。
 
 进行 512x 图片生成时主流显卡速度对比：
 
-### 环境部署
+#### 环境部署
 
-#### 手动部署
+##### 手动部署
 
-可以参考 webui 的官方 wiki 部署：[H](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki)ome · AUTOMATIC1111/stable-diffusion-webui Wiki (github.com)
+可以参考 `webui` 的官方 wiki 部署：[Home · AUTOMATIC1111/stable-diffusion-webui Wiki (github.com)](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki)。
 
-stable diffusion webui 的完整环境占用空间极大，能达到几十 G。同时，webui 需要联网下载安装大量的依赖，在境内的网络环境下下载很慢，请自带🪜工具。
+`stable-diffusion-webui` 的完整环境占用空间极大，能达到几十 G。同时，`webui` 需要联网下载安装大量的依赖，在境内的网络环境下下载很慢，请自带🪜工具。
 
-1.  安装 Python 安装 [Python 3.10](https://www.python.org/downloads/windows/)，安装时须选中 Add Python to PATH
+1. 安装 Python，安装 [Python 3.10](https://www.python.org/downloads/windows/)，安装时须选中 `Add Python to PATH`。
 
-+   安装 Git 在 [Git-scm.com](https://git-scm.com/download/win) 下载 Git 安装包并安装。
+2. 安装 Git，在 [Git-scm.com](https://git-scm.com/download/win) 下载 Git 安装包并安装。
 
-+   下载 webui 的 github 仓库 按下win+r输入 cmd，调出命令行窗口。运行：
+3. 下载 `webui` 的 GitHub 仓库。按 `win + r` 输入 `cmd`，调出命令行窗口，运行：
 
 ```
 cd PATH_TO_CLONE
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-+   请把代码中的
+请把代码中的 `PATH_TO_CLONE` 替换为自己想下载的目录。
 
-```
-PATH_TO_CLONE
-```
+4. 装配模型。可在如 [Civitai](https://civitai.com/) 上下载标注有 `CKPT` 的模型，有模型才能作画。下载的模型放入下载后文件路径下的 `models/Stable-diffusion` 目录。
 
-+   替换为自己想下载的目录。
+5. 使用。双击运行 `webui-user.bat`。脚本会自动下载依赖，**等待一段时间**（可能很长），程序会输出一个类似 `http://127.0.0.1:7860/` 的地址，在浏览器中输入这个链接打开即可。详细可参见 [模型使用](https://km.woa.com/user/hkinghuang/articles/restore_draft/2298930#%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8)。
 
-1.  装配模型 可在如[Civitai](https://civitai.com/)上下载标注有**CKPT**的模型，有模型才能作画。下载的模型放入下载后文件路径下的models/Stable-diffusion目录。
-
-1.  使用 双击运行 webui-user.bat 。脚本会自动下载依赖，**等待一段时间**[（可能很](https://km.woa.com/user/hkinghuang/articles/restore_draft/2298930#%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8)长），程序会输出一个类似 http://127.0.0.1:7860/ 的地址，在浏览器中输入这个链接开即可。详细可参见模型使用。
-
-1.  更新 按下win+r输入 cmd，调出命令行窗口。运行：
+6. 更新。按 `win + r` 输入 `cmd`，调出命令行窗口，运行：
 
 ```
 cd PATH_TO_CLONE
 git pull
 ```
 
-1.  请把代码中的：
-
-```
-PATH_TO_CLONE
-```
-
-1.  替换为自己下载仓库的目录。
-
-1.
+请把代码中的 `PATH_TO_CLONE` 替换为自己下载仓库的目录。
 
 ## 安装 Stable Diffusion web UI
 
@@ -189,75 +166,78 @@ PATH_TO_CLONE
 
 系统环境（前置条件）：
 
-+   Python：项目依赖 Python 环境来运行，所以先保证系统中已安装过 Python，并将其加入环境变量（Python 下载([20])）。
-
-+   Git：需要使用 git 来同步最新代码到本地（Git 下载([21])）
-
-+   下载项目：Git 安装完成后，可以通过以下命令将下面下载到本地
+- Python：项目依赖 Python 环境来运行，所以先保证系统中已安装过 Python，并将其加入环境变量（[Python 下载](https://www.python.org/downloads/)）。
+- Git：需要使用 `git` 来同步最新代码到本地（[Git 下载](https://git-scm.com/downloads)）。
+- 下载项目：Git 安装完成后，可以通过以下命令将项目下载到本地：
 
 ```
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-注意：因为项目是通过 git clone 方式下载到本地的，所以如果远程仓库有最新发布，我们只需在项目根目录下执行 git pull 即可同步最新代码（如果你二次编辑了项目中的文件，请查看 git 文档，了解如何合并代码，解决冲突等）。
+注意：因为项目是通过 `git clone` 方式下载到本地的，所以如果远程仓库有最新发布，我们只需在项目根目录下执行 `git pull` 即可同步最新代码（如果你二次编辑了项目中的文件，请查看 `git` 文档，了解如何合并代码，解决冲突等）。
 
 ### Windows
 
-1.  安装 Python 3.10.6 和 git，并将它添加到系统环境变量中。
+1. 安装 Python 3.10.6 和 `git`，并将它添加到系统环境变量中。
 
-1.  下载项目
+2. 下载项目：
 
 ```
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-1.  以普通非管理员权限从 Windows 资源管理器运行 webui-user.bat。
+3. 以普通非管理员权限从 Windows 资源管理器运行 `webui-user.bat`。
 
-1.  它会自动下载相关依赖并启动一个服务。默认 URL 为 http://127.0.0.1:7860。
+4. 它会自动下载相关依赖并启动一个服务。默认 URL 为 `http://127.0.0.1:7860`。
 
 ### Linux
 
-1.  安装依赖：
-
-# # 基于 Debian: sudo apt install wget git python3 python3-venv  # 基于 Red Hat: sudo dnf install wget git python3  # 基于 Arch: sudo pacman -S wget git python3
-
-1.  下载项目：
+1. 安装依赖：
 
 ```
-bash &lt;(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+# 基于 Debian:
+sudo apt install wget git python3 python3-venv
+# 基于 Red Hat:
+sudo dnf install wget git python3
+# 基于 Arch:
+sudo pacman -S wget git python3
 ```
 
-1.  在项目根路径下找到 webui.sh，通过命令行来运行它。
+2. 下载项目：
 
-1.  它会自动下载相关依赖并启动一个服务。默认 URL 为 http://127.0.0.1:7860。
+```
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+```
+
+3. 在项目根路径下找到 `webui.sh`，通过命令行来运行它。
+
+4. 它会自动下载相关依赖并启动一个服务。默认 URL 为 `http://127.0.0.1:7860`。
 
 ### Mac
 
-1.  检查系统是否安装过 brew([22])
+1. 检查系统是否安装过 `brew`。
 
-1.  通过 brew 安装依赖，如果系统中已存在某个依赖则跳过它：
+2. 通过 `brew` 安装依赖，如果系统中已存在某个依赖则跳过它：
 
 ```
 brew install cmake protobuf rust python@3.10 git wget
 ```
 
-1.  下载项目：
+3. 下载项目：
 
 ```
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 ```
 
-1.  在项目根路径下找到 webui.sh，通过命令行来运行它。
+4. 在项目根路径下找到 `webui.sh`，通过命令行来运行它。
 
-1.  它会自动下载相关依赖并启动一个服务。默认 URL 为 http://127.0.0.1:7860。
+5. 它会自动下载相关依赖并启动一个服务。默认 URL 为 `http://127.0.0.1:7860`。
 
-#### 整合包
+### 整合包
 
-[觉得麻烦的](https://space.bilibili.com/250989068)同学可以使用整合包，解压[即用。比如独](https://www.bilibili.com/video/BV1ne4y1V7QU)立研究员的空间下经常更新整合包。秋叶的启动器 也非常好用，将启动器复制到下载仓库的目录下即可，更新管理会更方便。
-
+觉得麻烦的同学可以使用整合包，解压即用。比如[独立研究员](https://space.bilibili.com/250989068)的空间下经常更新整合包。秋叶的启动器也非常好用，将启动器复制到下载仓库的目录下即可，更新管理会更方便。
 
 打开启动器后，可一键启动：
-
 
 如果有其他需求，可以在高级选项中调整配置。
 
@@ -265,21 +245,21 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 显存优化根据显卡实际显存选择，不要超过当前显卡显存。不过并不是指定了显存优化量就一定不会超显存，在出图时如果启动了过多的优化项（如高清修复、人脸修复、过大模型）时，依然有超出显存导致出图失败的几率。
 
-## Stable Diffusion常见错误问题
+## Stable Diffusion 常见错误问题
 
 ### 安装依赖失败
 
-首次启动服务时，stable-diffusion-webui 需要下载大量依赖包，主要会出现以下情况：
+首次启动服务时，`stable-diffusion-webui` 需要下载大量依赖包，主要会出现以下情况：
 
-+   卡住不动：大概率是网络不佳，因为有些依赖资源地址在国内是无法访问的，这时需全程启用代理，避免网络连接问题。
-
-+   下载报错：有些依赖版本和自身系统不兼容，会导致报错，这时可根据具体报错信息去网上搜索解决方案。
-
-+   启动成功，但部分依赖下载失败：可以通过手动安装来解决此类问题（例如在项目根路径下执行 pip3 install xxx，至于执行什么命令可根据报错信息中的提示进行尝试）。
+- 卡住不动：大概率是网络不佳，因为有些依赖资源地址在国内是无法访问的，这时需全程启用代理，避免网络连接问题。
+- 下载报错：有些依赖版本和自身系统不兼容，会导致报错，这时可根据具体报错信息去网上搜索解决方案。
+- 启动成功，但部分依赖下载失败：可以通过手动安装来解决此类问题（例如在项目根路径下执行 `pip3 install xxx`，至于执行什么命令可根据报错信息中的提示进行尝试）。
 
 ### Mac 常见错误
 
-#### ERROR: No matching distribution found for tensorflow
+#### `ERROR: No matching distribution found for tensorflow`
+
+
 
 ```
 Error running install.py for extension /Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess.
@@ -305,38 +285,38 @@ stderr: ERROR: Could not find a version that satisfies the requirement tensorflo
 ERROR: No matching distribution found for tensorflow
 ```
 
-解决方案：打开 stable-diffusion-webui/extensions/sd_smartprocess/requirements.txt 文件修改 tensorflow 为 tensorflow-macos，这是因为在 mac 上匹配不到 tensorflow 安装包，将其修改为 tensorflow-macos 即可。
+解决方案：打开`stable-diffusion-webui/extensions/sd_smartprocess/requirements.txt`文件修改`tensorflow`为`tensorflow-macos`，这是因为在 mac 上匹配不到`tensorflow`安装包，将其修改为`tensorflow-macos`即可。
 
 +   What is the proper way to install TensorFlow on Apple M1 in 2022([38])
 
 +   Get started with tensorflow-metal([39])
 
-#### ModuleNotFoundError: No module named ‘fairscale’
+### ModuleNotFoundError: No module named 'fairscale'
 
 ```
 Civitai: API loaded
 Error loading script: main.py
 Traceback (most recent call last):
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/modules/scripts.py&quot;, line 256, in load_scripts
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/modules/scripts.py", line 256, in load_scripts
     script_module = script_loading.load_module(scriptfile.path)
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/modules/script_loading.py&quot;, line 11, in load_module
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/modules/script_loading.py", line 11, in load_module
     module_spec.loader.exec_module(module)
-  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 883, in exec_module
-  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 241, in _call_with_frames_removed
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess/scripts/main.py&quot;, line 3, in &lt;module&gt;
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess/scripts/main.py", line 3, in <module>
     from extensions.sd_smartprocess import smartprocess
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess/smartprocess.py&quot;, line 15, in &lt;module&gt;
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess/smartprocess.py", line 15, in <module>
     from extensions.sd_smartprocess.clipinterrogator import ClipInterrogator
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess/clipinterrogator.py&quot;, line 14, in &lt;module&gt;
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/extensions/sd_smartprocess/clipinterrogator.py", line 14, in <module>
     from models.blip import blip_decoder, BLIP_Decoder
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/repositories/BLIP/models/blip.py&quot;, line 11, in &lt;module&gt;
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/repositories/BLIP/models/blip.py", line 11, in <module>
     from models.vit import VisionTransformer, interpolate_pos_embed
-  File &quot;/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/repositories/BLIP/models/vit.py&quot;, line 21, in &lt;module&gt;
+  File "/Users/lencx/github/lencx/ai-art/stable-diffusion-webui/repositories/BLIP/models/vit.py", line 21, in <module>
     from fairscale.nn.checkpoint.checkpoint_activations import checkpoint_wrapper
-ModuleNotFoundError: No module named &#x27;fairscale&#x27;
+ModuleNotFoundError: No module named 'fairscale'
 ```
 
-解决方案：手动安装 fairscale 依赖（相关 issue：installed but it says ModuleNotFound?([40])）
+解决方案：手动安装`fairscale`依赖（相关 issue：installed but it says ModuleNotFound?([40])）
 
 ```
 pip3 install fairscale
@@ -352,15 +332,15 @@ pip3 install fairscale
 
 ![](img/2cd3ece3220f54b6fe8e329258c9007f.png)
 
-1.  在第一个框中填入提示词（Prompt），对想要生成的东西进行文字描述
+2.  在第一个框中填入提示词（Prompt），对想要生成的东西进行文字描述
 
 ![](img/d8fc86174388ae2012990df63cc991f2.png)
 
-1.  在第二个框中填入负面提示词（Negative prompt)，你不想要生成的东西进行文字描述
+3.  在第二个框中填入负面提示词（Negative prompt)，你不想要生成的东西进行文字描述
 
 ![](img/758be6480db2a88064a7c0ecdc536702.png)
 
-1.  选择采样方法、采样次数、图片尺寸等参数。
+4.  选择采样方法、采样次数、图片尺寸等参数。
 
 ![](img/b05a157a0ba4bd881e890b9fee34ce37.png)
 
@@ -384,9 +364,7 @@ pip3 install fairscale
 
 +   不同采样步数与采样器之间的关系：
 
-
 +   CFG Scale（提示词相关性）图像与你的提示的匹配程度。增加这个值将导致图像更接近你的提示，但它也在一定程度上降低了图像质量。可以用更多的采样步骤来抵消。过高的 CFG Scale 体现为粗犷的线条和过锐化的图像。一般开到 7~11。CFG Scale 与采样器之间的关系：
-
 
 +   **生成批次**每次生成图像的组数。一次运行生成图像的数量为“批次* 批次数量”。
 
@@ -396,10 +374,9 @@ pip3 install fairscale
 
 +   **种子**种子决定模型在生成图片时涉及的所有随机性，它初始化了 Diffusion 算法起点的初始值。
 
-理论上，在应用完全相同参数（如 Step、CFG、Seed、prompts）的情况下，生产的图片应当完全相同。
+理论上，在应用完全相同参数（如 `Step`、`CFG`、`Seed`、`prompts`）的情况下，生产的图片应当完全相同。
 
 +   **高清修复**
-
 
 通过勾选 “Highres. fix” 来启用。默认情况下，文生图在高分辨率下会生成非常混沌的图像。如果使用高清修复，会型首先按照指定的尺寸生成一张图片，然后通过放大算法将图片分辨率扩大，以实现高清大图效果。最终尺寸为（原分辨率*缩放系数 Upscale by)。
 
@@ -413,12 +390,11 @@ pip3 install fairscale
 
 +   **点击“生成”**
 
-
 ## Stable Diffusion提示词
 
 提示词所做的工作是缩小模型出图的解空间，即缩小生成内容时在模型数据里的检索范围，而非直接指定作画结果。提示词的效果也受模型的影响，有些模型对自然语言做特化训练，有些模型对单词标签对特化训练，那么对不同的提示词语言风格的反应就不同。
 
-#### 提示词内容
+### 提示词内容
 
 提示词中可以填写以下内容：
 
@@ -428,14 +404,13 @@ pip3 install fairscale
 
 +   Emoji、颜文字 Emoji (💰👨👩🎅👼🍟🍕) 表情符号也是可以使用并且非常准确的。因为 Emoji 只有一个字符，所以在语义准确度上表现良好。关于 emoji 的确切含义，可以参考Emoji List, v15.0 (unicode.org)，同时 Emoji 在构图上有影响。
 
-
 > 💐👩💐
 
 对于使用 Danbooru 数据的模型来说，可以使用西式颜文字在一定程度上控制出图的表情。如：:-) 微笑 🙁 不悦 😉 使眼色 😀 开心 😛 吐舌头 :-C 很悲伤 :-O 惊讶 张大口 :-/ 怀疑
 
-#### 提示词语法
+### 提示词语法
 
-根据自己想画的内容写出提示词，多个提示词之间使用英文半角符号 [ , ]，如：
+根据自己想画的内容写出提示词，多个提示词之间使用英文半角符号 `[ , ]`，如：
 
 > masterpiece, best quality, ultra-detailed, illustration, close-up, straight on, face focus, 1girl, white hair, golden eyes, long hair, halo, angel wings, serene expression, looking at viewer
 
@@ -447,24 +422,23 @@ pip3 install fairscale
 
 可以使用括号人工修改提示词的权重，方法如：
 
-+   (word) – 将权重提高 1.1 倍
++   `(word)` – 将权重提高 1.1 倍
 
-+   ((word)) – 将权重提高 1.21 倍（= 1.1 * 1.1）
++   `((word))` – 将权重提高 1.21 倍（= 1.1 * 1.1）
 
-+   [word] – 将权重降低至原先的 90.91%
++   `[word]` – 将权重降低至原先的 90.91%
 
-+   (word:1.5) – 将权重提高 1.5 倍
++   `(word:1.5)` – 将权重提高 1.5 倍
 
-+   (word:0.25) – 将权重减少为原先的 25%
++   `(word:0.25)` – 将权重减少为原先的 25%
 
-+   (word) – 在提示词中使用字面意义上的 () 字符
++   `(word)` – 在提示词中使用字面意义上的 `()` 字符
 
 > ( n ) = ( n : 1.1 ) (( n )) = ( n : 1.21 ) ((( n ))) = ( n : 1.331 ) (((( n )))) = ( n : 1.4641 ) ((((( n )))) = ( n : 1.61051 ) (((((( n )))))) = ( n : 1.771561 )
 
 请注意，权重值最好不要超过 1.5。
 
 还可以通过 Prompt Editing 使得 AI 在不同的步数生成不一样的内容，譬如在某阶段后，绘制的主体由男人变成女人。
-
 
 语法为：
 
@@ -474,9 +448,13 @@ pip3 install fairscale
 [from:to:when] 在指定数量的 step 后将 from处的提示词替换为 to处的提示词
 ```
 
-> 例如: a [fantasy:cyberpunk:16] landscape 在一开始，读入的提示词为：the model will be drawing a fantasy landscape. 在第 16 步之后,提示词将被替换为：a cyberpunk landscape, 它将继续在之前的图像上计算
+> 例如: `a [fantasy:cyberpunk:16] landscape` 在一开始，读入的提示词为：the model will be drawing a fantasy landscape. 在第 16 步之后,提示词将被替换为：a cyberpunk landscape, 它将继续在之前的图像上计算
 
-> 又例如，对于提示词为: fantasy landscape with a [mountain:lake:0.25] and [an oak:a christmas tree:0.75][ in foreground::0.6][ in background:0.25][shoddy:masterful:0.5]，100 步采样， 一开始。提示词为：fantasy landscape with a mountain and an oak in foreground shoddy 在第 25 步后，提示词为：fantasy landscape with a lake and an oak in foreground in background shoddy 在第 50 步后，提示词为：fantasy landscape with a lake and an oak in foreground in background masterful 在第 60 步后，提示词为：fantasy landscape with a lake and an oak in background masterful 在第 75 步后，提示词为：fantasy landscape with a lake and a christmas tree in background masterful
+
+
+## 提示词模板
+
+> 又例如，对于提示词为 `fantasy landscape with a [mountain:lake:0.25] and [an oak:a christmas tree:0.75][ in foreground::0.6][ in background:0.25][shoddy:masterful:0.5]`，采用 100 步采样。一开始提示词为 `fantasy landscape with a mountain and an oak in foreground shoddy`；在第 25 步后提示词为 `fantasy landscape with a lake and an oak in foreground in background shoddy`；在第 50 步后提示词为 `fantasy landscape with a lake and an oak in foreground in background masterful`；在第 60 步后提示词为 `fantasy landscape with a lake and an oak in background masterful`；在第 75 步后提示词为 `fantasy landscape with a lake and a christmas tree in background masterful`。
 
 提示词还可以轮转，譬如
 
@@ -484,100 +462,71 @@ pip3 install fairscale
 [cow|horse] in a field
 ```
 
-在第一步时，提示词为“cow in a field”；在第二步时，提示词为”horse in a field.”；在第三步时，提示词为”cow in a field” ，以此类推。
+在第一步时，提示词为 `cow in a field`；在第二步时，提示词为 `horse in a field.`；在第三步时，提示词为 `cow in a field`，以此类推。
 
-#### 示词模板
-
-可参考[C](https://civitai.com/)ivitai | Stable Diffusion models, embeddings, hypernetworks and more中优秀作品的提示词作为模板。
+可参考 [Civitai](https://civitai.com/) | Stable Diffusion models, embeddings, hypernetworks and more中优秀作品的提示词作为模板。
 
 类似的网站还有：
 
-+   Majinai：[MajinAI | Home](https://majinai.art/index.php)
+- Majinai：[MajinAI | Home](https://majinai.art/index.php)
+- 词图：词图 PromptTool – AI 绘画资料管理网站
+- Black Lily：[black_lily](http://heizicao.gitee.io/novelai/#/book)
+- Danbooru 标签超市：[Danbooru 标签超市](https://tags.novelai.dev/)
+- 魔咒百科词典：[魔咒百科词典](https://aitag.top/)
+- AI 词汇加速器：AI 词汇加速器 AcceleratorI Prompt
+- NovelAI 魔导书：[NovelAI 魔导书](https://thereisnospon.github.io/NovelAiTag/)
+- 鳖哲法典：[鳖哲法典](http://tomxlysplay.com.cn/#/)
+- Danbooru tag：[Tag Groups Wiki | Danbooru (donmai.us)](https://danbooru.donmai.us/wiki_pages/tag_groups)
+- AIBooru：AIBooru: Anime Image Board
 
-+   词图：词图 PromptTool – AI 绘画资料管理网站
+## 模型
 
-+   Black Lily：[black_lily](http://heizicao.gitee.io/novelai/#/book)
-
-+   Danbooru 标签超市：[Danbooru 标签超市](https://tags.novelai.dev/)
-
-+   魔咒百科词典：[魔咒百科词典](https://aitag.top/)
-
-+   AI 词汇加速器：AI 词汇加速器 AcceleratorI Prompt
-
-+   NovelAI 魔导书：[NovelAI 魔导书](https://thereisnospon.github.io/NovelAiTag/)
-
-+   鳖哲法典：[鳖哲法典](http://tomxlysplay.com.cn/#/)
-
-+   Danbooru tag：[Tag Groups Wiki | ](https://danbooru.donmai.us/wiki_pages/tag_groups)Danbooru (donmai.us)
-
-+   AIBooru：AIBooru: Anime Image Board
-
-+
-
-### 模型
-
-#### 模型下载
+### 模型下载
 
 模型能够有效地控制生成的画风和内容。常用的模型网站有：
 
-> [C](https://civitai.com/)ivitai[ | Stable Diff](https://www.123114514.xyz/models/ckpt)usi[on models, embeddings, hyp](https://aiguidebook.top/index.php/model/)ernetworks and more > Models – Hugging Face > SD – WebUI 资源站 > 元素法典 AI 模型收集站 – AI 绘图指南 wiki (aiguidebook.top) > AI 绘画模型博物馆 (subrecovery.top)
+- [Civitai](https://civitai.com/) | Stable Diffusion models, embeddings, hypernetworks and more
+- <https://www.123114514.xyz/models/ckpt>
+- <https://aiguidebook.top/index.php/model/>
+- Models – Hugging Face
+- SD – WebUI 资源站
+- 元素法典 AI 模型收集站 – AI 绘图指南 wiki (aiguidebook.top)
+- AI 绘画模型博物馆 (subrecovery.top)
 
-#### 模型安装
+### 模型安装
 
-下载模型后需要将之放置在指定的目录下，请注意，不同类型的模型应该拖放到不同的目录下。模型的类型可以通过Stable Diffusion 法术解析检测。
+下载模型后需要将之放置在指定的目录下，请注意，不同类型的模型应该拖放到不同的目录下。模型的类型可以通过 Stable Diffusion 法术解析检测。
 
+- 大模型（Ckpt）：放入 `models\Stable-diffusion`
+- VAE 模型：一些大模型需要配合 vae 使用，对应的 vae 同样放置在 `models\Stable-diffusion` 或 `models\VAE` 目录，然后在 webui 的设置栏目选择。
+- Lora/LoHA/LoCon 模型：放入 `extensions\sd-webui-additional-networks\models\lora`，也可以在 `models/Lora` 目录
+- Embedding 模型：放入 `embeddings` 目录
 
-+   大模型（Ckpt）：放入 models\Stable-diffusion
+### 模型使用
 
-
-+   VAE 模型：一些大模型需要配合 vae 使用，对应的 vae 同样放置在 models\Stable-diffusion 或 models\VAE 目录，然后在 webui 的设置栏目选择。
-
-
-
-+   Lora/LoHA/LoCon 模型：放入 extensions\sd-webui-additional-networks\models\lora，也可以在 models/Lora 目录
-
-
-
-+   Embedding 模型：放入 embeddings 目录
-
-
-#### 模型使用
-
-+   Checkpoint(ckpt)模型 对效果影响最大的模型。在 webui 界面的左上角选择使用。
-
-
-一些模型会有触发词，即在提示词内输入相应的单词才会生效。
-
-+   Lora 模型 / LoHA 模型 / LoCon 模型
-
-对人物、姿势、物体表现较好的模型，在 ckpt 模型上附加使用。在 webui 界面的 Additional Networks 下勾线 Enable 启用，然后在 Model 下选择模型，并可用 Weight 调整权重。权重越大，该 Lora 的影响也越大。不建议权重过大（超过 1.2），否则很容易出现扭曲的结果。
-
+- Checkpoint（ckpt）模型：对效果影响最大的模型。在 webui 界面的左上角选择使用。一些模型会有触发词，即在提示词内输入相应的单词才会生效。
+- Lora 模型 / LoHA 模型 / LoCon 模型：对人物、姿势、物体表现较好的模型，在 ckpt 模型上附加使用。在 webui 界面的 `Additional Networks` 下勾选 `Enable` 启用，然后在 `Model` 下选择模型，并可用 `Weight` 调整权重。权重越大，该 Lora 的影响也越大。不建议权重过大（超过 1.2），否则很容易出现扭曲的结果。
 
 多个 lora 模型混合使用可以起到叠加效果，譬如一个控制面部的 lora 配合一个控制画风的 lora 就可以生成具有特定画风的特定人物。因此可以使用多个专注于不同方面优化的 Lora，分别调整权重，结合出自己想要实现的效果。
 
 LoHA 模型是一种 LORA 模型的改进。
 
-LoCon 模型也一种 LORA 模型的改进，泛化能力更强。
+LoCon 模型也是一种 LORA 模型的改进，泛化能力更强。
 
-+   Embedding
+- Embedding：对人物、画风都有调整效果的模型。在提示词中加入对应的关键词即可。大部分 Embedding 模型的关键词与文件名相同，譬如一个名为 `SomeCharacter.pt` 的模型，触发它的关键词为 `SomeCharacter`。
 
-对人物、画风都有调整效果的模型。在提示词中加入对应的关键词即可。大部分 Embedding 模型的关键词与文件名相同，譬如一个名为为“SomeCharacter.pt”的模型，触发它的关键词检索“SomeCharacter”。
+### 模型训练
 
-#### 模型训练
+#### 环境搭建
 
-##### 环境搭建
+以 GitHub – bmaltais/kohya_ss 为例，它提供了在 Windows 操作系统下的 GUI 训练面板。
 
-以GitHub – bmaltais/kohya_ss为例，它提供了在 Windows 操作系统下的 GUI 训练面板。
+如果需要在 Linux 上部署且需要 GUI，请参考 [GitHub – P2Enjoy/kohya_ss-docker](https://github.com/P2Enjoy/kohya_ss-docker): This is the tandem repository to exploit on linux the kohya_ss training webui converted to Linux. It uses the fork in the following link。
 
-如果需要在 L[inux](https://github.com/P2Enjoy/kohya_ss-docker) 上部署且需要 GUI，请参考GitHub – P2Enjoy/kohya_ss-docker: This is the tandem repository to exploit on linux the kohya_ss training webui converted to Linux. It uses the fork in the following link
+需要保证设备拥有 `Python 3.10.6` 及 `git` 环境。
 
-
-需要保证设备拥有 Python 3.10.6 及 git 环境。
-
-1.  首先，以管理员模式启动 Powershell，执行“Set-ExecutionPolicy Unrestricted”命令，并回答“A”。然后可以关闭该窗口。
-
-
-1.  启动一个普通的 Powershell 窗口，在需要克隆该仓库的路径下，执行以下命令：
+1. 首先，以管理员模式启动 Powershell，执行 `Set-ExecutionPolicy Unrestricted` 命令，并回答 `A`。然后可以关闭该窗口。
+2. 启动一个普通的 Powershell 窗口，在需要克隆该仓库的路径下，执行以下命令：
 
 ```
 git clone https://github.com/bmaltais/kohya_ss.git
@@ -596,9 +545,14 @@ cp .\bitsandbytes_windows\main.py .\venv\Lib\site-packages\bitsandbytes\cuda_set
 accelerate config
 ```
 
-在执行“accelerate config”后，它将询问一些设置选项。请按照以下选项依次选择：
+在执行 `accelerate config` 后，它将询问一些设置选项。请按照以下选项依次选择：
 
-> This machine No distributed training NO NO NO all fp16
+- This machine
+- No distributed training
+- NO
+- NO
+- NO
+- all fp16
 
 30 系、40 系显卡可选择安装 CUDNN：
 
@@ -607,7 +561,7 @@ accelerate config
 python .\tools\cudann_1.8_install.py
 ```
 
-##### 环境更新
+#### 环境更新
 
 如果需要更新仓库，请执行以下命令：
 
@@ -617,7 +571,7 @@ git pull
 pip install --use-pep517 --upgrade -r requirements.txt
 ```
 
-##### 界面启动
+#### 界面启动
 
 在 Powershell 中执行：
 
@@ -625,253 +579,220 @@ pip install --use-pep517 --upgrade -r requirements.txt
 .\gui.ps1
 ```
 
-双击 gui.bat 也可以。弹出以下界面后，直接访问 URL 即可。
+双击 `gui.bat` 也可以。弹出以下界面后，直接访问 URL 即可。
 
+#### 训练流程
 
+模型训练主要有三种结果：欠拟合、效果好、过拟合。
 
-##### 训练流程
+- 欠拟合：模型完全没有从数据集中学习到经验，对各种输入都得出差距很大的结果。
+- 效果好：模型不仅对训练集中的输入有接近的结果，对不来自训练集中的输入也有接近的效果。
+- 过拟合：模型只对训练集中的输入有非常非常接近的结果，对不来自训练集中的输入给出差距很大的结果。
 
-模型训练主要有三种结果：欠拟合，效果好，过拟合。欠拟合：模型完全没有从数据集中学习到经验，对各种输入都得出差距很大的结果。效果好：模型不仅对训练集中的输入有接近的结果，对不来自训练集中的输入也有接近的效果。过拟合：模型只训练集中的输入有非常非常接近的结果，对不来自训练集中的输入给出差距很大的结果。
-
-1.  准备训练集
+1. 准备训练集
 
 图片尽可能高清，风格统一但内容形式多样（譬如动作多样、服装多样）。
 
-
-样本数量可能影响到拟合结果。
-
-样本量太少，模型可能欠拟合；样本量过大，模型可能过拟合。
+样本数量可能影响到拟合结果。样本量太少，模型可能欠拟合；样本量过大，模型可能过拟合。
 
 > 譬如让一个人学习英语，只给他几条例句去看，他可能什么都没学会【欠拟合】；给了它几十亿条例句去看，他可能只会根据别人说的话查字典一样回话，如果字典里没有就完全不会说了【过拟合】
 
-1.  图片裁剪
+2. 图片裁剪
 
 将训练集裁剪为多个尺寸相同的图片。可以在 SD webui 界面中自动裁剪，也可以手动裁切。
 
+一般使用的图片尺寸是 `512*512`，也可更换为其他尺寸，尺寸越大占用显存越高，但对细节的捕捉也会越好。
 
-一般使用的图片尺寸是 512*512，也可更换为其他尺寸，尺寸越大占用显存越高，但对细节的捕捉也会越好。
+3. 图片打标
 
-1.  图片打标
+- 关键词生成
 
-+   关键词生成 可以在训练环境的页面下打标：
-
+可以在训练环境的页面下打标：
 
 也可以在 sd webui 的页面下打标：
 
-
-
 比较这几种不同的打标器的效果，在同一输入下：
-
 
 【本义：一个在铁匠铺里打铁的男铁匠】
 
 打标对图片的描述越准越好，如果条件允许，尝试人工打标。
 
-+   关键词合并 在生成出的关键词中，我们需要把与训练目标强相关的关键词划为一个统一的特征表述。以”1boy, cooking, frying pan, male focus, solo, gloves, apron, fire, brown footwear, black gloves, boots, stove, kitchen, holding, facial hair, bandana, blue shirt, shirt”为例，假如我们的训练对象就是一个男性大胡子，那么他必然始终携带着”男人、胡子“这两个要素，那么我们可以用一个词总结这个角色，例如用”Smith“替代”1boy,facial hair”，整条句子将变为：
+- 关键词合并
+
+在生成出的关键词中，我们需要把与训练目标强相关的关键词划为一个统一的特征表述。以 `1boy, cooking, frying pan, male focus, solo, gloves, apron, fire, brown footwear, black gloves, boots, stove, kitchen, holding, facial hair, bandana, blue shirt, shirt` 为例，假如我们的训练对象就是一个男性大胡子，那么他必然始终携带着“男人、胡子”这两个要素，那么我们可以用一个词总结这个角色，例如用 `Smith` 替代 `1boy, facial hair`，整条句子将变为：
 
 以此类推，我们需要为目标绑定什么要素，就将它从关键词中删去。而类似于动作、背景这种与对象绑定关系不紧密，在日后生成图期间需要改变的，就保留在关键词中。
 
-+   编组 一些具有同组关系的图片可以利用关键词引导 AI 去归纳它们。譬如，我们训练的对象 Smith 有三张图，分别是全图、背景、前景，那么我可以如此处理：
+- 编组
 
+一些具有同组关系的图片可以利用关键词引导 AI 去归纳它们。譬如，我们训练的对象 `Smith` 有三张图，分别是全图、背景、前景，那么我可以如此处理：
 
-1.  正则化
+4. 正则化
 
-训练集中的每张图片通常能被分解为两大部分：“训练目标+其他要素”，依然以 Smith 为例：
+训练集中的每张图片通常能被分解为两大部分：“训练目标+其他要素”，依然以 `Smith` 为例：
 
-其中，”铁匠铺、打铁、铁匠“都是模型中已有的内容，称为“先验知识”。我们需要将这部分知识为 AI 指明，省去重新学习这部分内容的时间；也能引导 AI 明确学习的目标，让模型具有更好的泛化性。
+其中，“铁匠铺、打铁、铁匠”都是模型中已有的内容，称为“先验知识”。我们需要将这部分知识为 AI 指明，省去重新学习这部分内容的时间；也能引导 AI 明确学习的目标，让模型具有更好的泛化性。
 
 > 正则化通过降低模型的复杂性提高泛化能力。模型越复杂，模型的泛化能力越差，要达到相同的泛化能力，越复杂的模型需要的样本数量就越多，为了提高模型的泛化能力，需要正则化来限制模型复杂度。
 
-正则化的标签需要与训练集中的 Class 相对应，图片数量也要一致。正则化不是必须的，可以根据训练集的情况和训练目的的不同来调整。同一张图片不允许在训练集和正则化中同时出现。
+正则化的标签需要与训练集中的 `Class` 相对应，图片数量也要一致。正则化不是必须的，可以根据训练集的情况和训练目的的不同来调整。同一张图片不允许在训练集和正则化中同时出现。
 
-1.  文件路径组织
+5. 文件路径组织
 
-在训练前，我们需要用特定的方式组织文件路径：譬如，训练目标是一群女孩，其中有一位名为 sls 的女孩好一位名为 cpc 的女孩，那么文件路径应该为：
+在训练前，我们需要用特定的方式组织文件路径：譬如，训练目标是一群女孩，其中有一位名为 `sls` 的女孩和一位名为 `cpc` 的女孩，那么文件路径应该为：
 
-> ●train_girls —-○10_sls 1girl —-○10_cpc 1girl
+```
+● train_girls —-○ 10_sls 1girl —-○ 10_cpc 1girl
+● reg_girls —-○ 1_1girl
+```
 
-> ●reg_girls —-○1_1girl
+其中，`train_girls` 目录下放置的是训练集，命名规则是 `训练次数<标识符> <类别>`，如 `10_sls 1girl` 表示“名为 `sls` 的对象，她是一个女孩（类别），这个文件夹下的训练集每个训练 10 次”。
 
-其中，traingirls 目录下放置的是训练集，命名规则是“训练次数<标识符> <类别>”，如“10_sls 1girl”表示“名为 sls 的对象，她是一个女孩（类别），这个文件夹下的训练集每个训练 10 次”。
+`reg_girls` 目录下放置的是正则化内容。命名规则是 `训练次数<类别>`，如 `1_1girl` 表示“文件夹下的图片都是一个女孩，不重复使用数据”。*需要日后补充*
 
-reggirls 目录下放置的是正则化内容。命名规则是“训练次数<类别>”，如“1_1girl“表示”文件夹下的图片都是一个女孩，不重复使用数据“。*需要日后补充
+6. 训练参数
 
-1.  训练参数
-
-在 kohya webui 界面训练时，ckpt 与 lora 训练方法类似。
+在 kohya webui 界面训练时，`ckpt` 与 `lora` 训练方法类似。
 
 **a. 底模**
 
+它表明我们此次训练将以哪个模型为基础进行训练。这个模型需要根据自己的需求选择。如果很明确自己的目标是属于某一大类下的分支，那么可以用接近这一大类的模型进行训练。譬如想训练一个二次元角色，那么可以使用二次元的底模（如 NovelAI）进行训练。如果自己训练的目标需要比较好的泛化性，可以使用 `sd` 模型，因为它包含的人物、物品、风格最多。如果模型为 `sd2.0`，则需要勾选 `v2` 和 `v_parameterization`。
 
-它表明我们此次训练将以哪个模型为基础进行训练。这个模型需要根据自己的需求选择。如果很明确自己的目标是属于某一大类下的分支，那么可以用接近这一大类的模型进行训练。譬如想训练一个二次元角色，那么可以使用二次元的底模（如 NovelAI）进行训练。如果自己的像训练的目标需要比较好的泛化性，可以使用 sd 模型，因为它包含的人物、物品、风格最多。如果模型为 sd2.0，则需要勾选 v2 和 v_parameterization
+**b. 最大分辨率 Max resolution**
 
+`Training parameters` 下的 `Max Resolution` 用于指定当前输入训练集图片的分辨率，请与文件夹内的保持一致。如果尺寸不一会被裁切。
 
-b. 最大分辨率 Max resolution
+**c. `Epoch`**
 
-Training parameters 下的 Max Resolution 用于指定当前输入训练集图片的分辨率，请与文件夹内的保持一致。如果尺寸不一会被裁切。
+`Epoch` 是指一次将训练集中的所有样本训练一次（即对每个样本完成一次正向传播与一次反向传播）的过程。有时，由于一个训练样本过于庞大，它会被分成多个小块分批学习，每个小块就叫 `batch`。
 
+> 在深度学习中，程序通过不断地将数据集在神经网络中往复传递来更新网络中的权重，以此建立对目标的拟合关系，因此只有反复地迭代才能增强数据集的拟合度。随着 `epoch` 的增加，模型将从欠拟合（右一，表示即便是来自于数据集中的输入，模型也很难达到它应该有的结果，类似于“只做题库里的题都做不对的差生”）变为过拟合（左一，表示模型对于来自于数据集中的输入，总能精确地达到对应的结果，但是如果输入一旦有些许偏差，比如输入一些不是训练集中的输入，那结果就会很差，类似于“只会做题库里的题的书呆子”）。我们希望能达到中间的效果，即对训练集输出相对准确的结果，又对不在训练集里的输入也有较好的表现。这种特征就叫泛化。
 
-**c. Epoch**
+> 因此，我们需要不少于一个 `epoch` 才能建立起较好的拟合关系，当然也不能太多。对于不同的数据集，使用的 `epoch` 都可能有所不同。
 
+**d. `Batch size`**
 
-Epoch 是指一次将训练集中的所有样本训练一次（即对每个样本完成一次正向传播与一次反向传播）的过程。有时，由于一个训练样本过于庞大，它会被分成多个小块分批学习，每个小块就叫 batch。
+`batch size` 表示训练时的批量大小，也就是一次训练中选取的样本数量。这个参数对性能有一定要求，如果性能足够，增加 `batch size` 在理论上会提高模型的准确性。如果数据集样本量较小，`Batch Size` 可以等于样本数量，即把所有数据集一起输入网络进行训练，这样做的效果也很好；但是如果样本量较大，这肯定让设备吃不消，因此需要减小 `Batch Size`。但是，如果 `Batch Size` 太小，那么意味着在一个 `Epoch` 中迭代的次数也会减小，训练时权重的调整速度变慢，为了抵消这种影响，还得提高 `epoch` 才能有更好的效果。所以 `Batch Size` 与 `Epoch` 参数二者是相辅相成的，它们二者的关系就好比一次刷多少题和总共刷多少次题。合适的 `batch size` 应该让 GPU 正好满载运行。
 
-> 在深度学习**中，程**序**通过不**断地将数据集在神经网络中往复传递来更新网络中的权重，以此建立对目标的拟合关系，因此只有反复地迭代才能增强数据集的拟合度。随着 ep**oc**h 的增加，模型将从欠拟合（右一，表示即便是来自于数据集中的输入，模型也很难达到它应该有的结果，类似于“只做题库里的题都做不对的差生”）变为过拟合（左一，表示模型对于来自于数据集中的输入，总能精确地达到对应的对结果，但是如果输入一旦有些许偏差，比如输入一些不是训练集中的输入，那结果就会很差，类似于“只会做题库里的题的书呆子”）。我们希望能达到中间的效果，即对训练集输出相对准确的结果，又对不在训练集里的输入也有较好的表现。这种特征就叫泛化。
+**e. `Save every N epochs`**
 
+每 N 个 `Epoch` 保存一次。
 
-> 因此，我们需要不少于一个 epoch 才能建立起较好的拟合关系，当然也不能太多。对于不同的数据集，使用的 epoch 都可能有所不同。
+**f. 学习率 `Learning Rate`**
 
-**d. Batch size**
-
-
-batch size 表示训练时的批量大小，也就是一次训练中选取的样本数量。这个参数对性能有一定要求，如果性能足够，增加 batch size 在理论上会提高模型的准确性。如果数据集样本量较小，Batch Size 可以等于样本数量，即把所有数据集一起输入网络进行训练，这样做的效果也很好；但是如果样本量较大，这肯定让设备吃不消，因此需要减小 Batch Size。但是，如果 Batch Size 太小，那么意味着在一个 Epoch 中迭代的次数也会减小，训练时权重的调整速度变慢，为了抵消这种影响，还得提高 epoch 才能有更好的效果。所以 Batch Size 与 Epoch 参数二者是相辅相成的，他们二者的关系就好比一次刷多少题和总共刷多少次题。合适的 batch size 应该让 GPU 正好满载运行。
-
-e. Save every N epochs
-
-
-每 N 个 Epoch 保存一次
-
-**f. ****学习率**** ****Learning Rate**
-
-
-学习率指的是一次迭代（即输入一个样本对它学习，并用此次学习的经验调整神经网络）的步长。这个值越大，表明一次学习对模型的影响越大。为了让学习循序渐进，学习率不应该太高，我们需要 AI 在训练中反复总结一点点经验，最后累积为完整的学习成果。合理的学习率会让学习过程收敛，Loss 达到足够低。
+学习率指的是一次迭代（即输入一个样本对它学习，并用此次学习的经验调整神经网络）的步长。这个值越大，表明一次学习对模型的影响越大。为了让学习循序渐进，学习率不应该太高，我们需要 AI 在训练中反复总结一点点经验，最后累积为完整的学习成果。合理的学习率会让学习过程收敛，`Loss` 达到足够低。
 
 > 学习率太低，容易出现局部最优解，类似于“一个开车的 AI 稀里糊涂地开完全程，车技很菜”；学习率太高，容易使得模型不收敛，找不到解，类似于“一个开车的 AI 完全不会开车，只会原地打圈瞎操作”。
 
-**g. ****学习率****调度器 ****Learning Rate**** Scheduler**
+**g. 学习率调度器 `Learning Rate Scheduler`**
+
+学习率调度器是一种用于动态调整学习率的技术，它可以在训练过程中根据模型的表现自动调整学习率，以提高模型的训练效果和泛化能力。通常，学习率在训练开始时设置为比较高的值，允许 AI“在一次训练中学得更多更快”。随着训练的进行，学习率会降低，逐步收敛到最优。在训练过程中降低学习率也称为退火或衰减。
+
+- `adafactor`：自适应学习率。
+- `constant`：恒定，学习率不变。
 
 
-学习率调度器是一种用于动态调整学习率的技术，它可以在训练过程中根据模型的表现自动调整学习率，以提高**模型**的**训练**效果和泛化能力。通常，学习率在训练开始时设置为比较高的值，允许 AI“在一次训练中学得更多更快”。随着训练的进行，学习率会降低，逐步收敛到最优。在训练过程中降低学习率也称为退火或衰减。
 
-+   adafactor：自适应学习率。
++   `constant_with_warmup`：恒定预热。学习率在开始会增大一点，然后退回原学习率不变。
++   `Cosine`：使用余弦函数来调整学习率，使其在训练过程中逐渐降低。常被称为余弦退火。
++   `cosine_with_restarts`：余弦退火重启。在 `consine` 的基础上每过几个周期将进行一次重启，该值在选择后可以设定。
++   `linear`：线性。学习率线性下降。
++   `Polynomial`：使用多项式函数来调整学习率。
 
-+   constant ：恒定，学习率不变。
-
-+   constant_with_warmup：恒定预热。学习率在开始会增大一点，然后退回原学习率不变。
-
-+   Cosine：使用余弦函数来调整学习率，使其在训练过程中逐渐降低。常被称为余弦退火。
-
-+   cosine_with_restarts：余弦退火重启。在 consine 的基础上每过几个周期将进行一次重启，该值在选择后可以设定。
-
-+   linear：线性。学习率线性下降。
-
-+   Polynomial：使用多项式函数来调整学习率。
-
-h.学习率预热比例 LR warmup
-
+### h. 学习率预热比例 `LR warmup`
 
 刚开始训练时模型的权重是随机初始化的，如果此时选择一个较大的学习率，可能会带来模型的不稳定。学习率预热就是在刚开始训练的时候先使用一个较小的学习率，先训练一段时间，等模型稳定时再修改为预先设置的学习率进行训练。
 
 > 例如，假设我们在训练神经网络时设置了一个学习率为 0.1，预热比例为 0.1。则在训练的前 10% 的迭代次数中，我们会逐渐将学习率从 0.01 增加到 0.1，然后在剩余的训练迭代次数中使用设定的学习率 0.1。
 
-i. 优化器 Optimizer
+### i. 优化器 `Optimizer`
 
+在训练神经网络时，我们需要在反向传播中逐步更新模型的权重参数。优化器的作用就是根据当前模型计算结果与目标的偏差，不断引导模型调整权重，使得偏差不断逼近最小。`Adafactor` 和 `Lion` 是推荐使用的优化器。
 
-在训练神经网络时，我们需要在反向传播中逐步更新模型的权重参数。优化器的作用就是根据当前模型计算结果与目标的偏差，不断引导模型调整权重，使得偏差不断逼近最小。Adafactor 和 Lion 是推荐使用的优化器。
++   `Adam`：一种常用的梯度下降算法，被广泛应用于神经网络模型的优化中。它结合了动量梯度下降和自适应学习率方法的优点，既可以加快收敛速度，又可以避免学习率调整不当导致的振荡和陷入局部最优解。并且对于不同的参数有不同的学习率，更加适用于高维度的参数空间。
++   `AdamW`：对 `Adam` 算法的改进方案，对惩罚项参数进行控制，能更好地控制模型的复杂度，防止模型过拟合，提高泛化性能。
++   `AdamW8bit`：8bit 模式的 `AdamW`，能降低显存占用，略微加快训练速度。
++   [`Adafactor`](https://wandb.ai/yepster/tpu-t5-base/reports/Adafactor-learning-rate-0-005-seems-best-for-t5-base-training--VmlldzoxNTgyODIw)：自适应优化器，对 `Adam` 算法的改进方案，降低了显存占用。参考学习率为 0.005 1 。
++   `DAdaptation`[2](https://arxiv.org/pdf/2301.07733.pdf)：自适应优化器，比梯度下降（`SGD`）方法更加稳定有效、使用时请将学习率设置为 1。
++   `Lion`[3](https://github.com/google/automl/tree/master/lion)：自适应优化器，节省更多显存、速度更快，与 `AdamW` 和 `Adafactor` 相比有 15%左右的加速。参考学习率为 0.001。
++   `SGDNesterov`：一种常用的优化算法，基于梯度下降（`SGD`）方法进行优化，通过引入动量的概念加速收敛速度。
++   `SGDNesterov8bit`：8bit 模式的 `SGDNesterov`，能降低显存占用，略微加快训练速度。
 
-+   Adam：一种常用的梯度下降算法，被广泛应用于神经网络模型的优化中。它结合了动量梯度下降和自适应学习率方法的优点，既可以加快收敛速度，又可以避免学习率调整不当导致的振荡和陷入局部最优解。并且对于不同的参数有不同的学习率，更加适用于高维度的参数空间。
+### j. `Text Encoder` 与 `Unet`
 
-+   AdamW：对 Adam 算法的改进方案，对惩罚项参数进行控制，能更好地控制模型的复杂度，防止模型过拟合，提高泛化性能。
+机器不[能](https://medium.com/analytics-vidhya/nlp-text-encoding-a-beginners-guide-fa332d715854)直接识别人类的语言，`Text Encoder` 是一种用于将文本数据转换为机器可读形式的模型或算法。对于输入的一串提示词，程序会将它们分解为一个个标记（`Token`）输入给 `Text Encoder`（一个 `Token` 通常代表着一个特征），这样一句话就能被转为一个向量为机器所识别 4
 
-+   AdamW8bit：8bit 模式的 AdamW，能降低显存占用，略微加快训练速度。
-
-+   A[d](https://wandb.ai/yepster/tpu-t5-base/reports/Adafactor-learning-rate-0-005-seems-best-for-t5-base-training--VmlldzoxNTgyODIw)afactor：自适应优化器，对 Adam 算法的改进方案，降低了显存占用。参考学习率为 0.005 1 。
-
-+   DAdaptation[2](https://arxiv.org/pdf/2301.07733.pdf)：自适应优化器，比梯度下降（SGD）方法更加稳定有效、使用时请将学习率设置为 1。
-
-+   Lion[3](https://github.com/google/automl/tree/master/lion)：自适应优化器，节省更多显存、速度更快，与 AdamW 和 Adafactor 相比有 15%左右的加速。参考学习率为 0.001。
-
-+   SGDNesterov：一种常用的优化算法，基于梯度下降（SGD）方法进行优化，通过引入动量的概念加速收敛速度。
-
-+   SGDNesterov8bit：8bit 模式的 SGDNesterov，能降低显存占用，略微加快训练速度。
-
-j. Text Encoder 与 Unet
-
-
-机器不[能](https://medium.com/analytics-vidhya/nlp-text-encoding-a-beginners-guide-fa332d715854)直接识别人类的语言，Text Encoder 是一种用于将文本数据转换为机器可读形式的模型或算法。对于输入的一串提示词，程序会将它们分解为一个个标记（Token）输入给 Text Encoder（一个 Token 通常代表着一个特征），这样一句话就能被转为一个向量为机器所识别 4
-
-Unet 是一种用于图像分割的深度学习模型，它的作用是将图像分割为多个不同的构[成](https://medium.com/analytics-vidhya/painting-sketches-with-ml-33a3ece74d31)部分。经过训练后，它可以来填充图像中缺失或损坏的部分，或者对灰度草图进行着色。5
-
+`Unet` 是一种用于图像分割的深度学习模型，它的作用是将图像分割为多个不同的构[成](https://medium.com/analytics-vidhya/painting-sketches-with-ml-33a3ece74d31)部分。经过训练后，它可以来填充图像中缺失或损坏的部分，或者对灰度草图进行着色。5
 
 我们可以为它们设置不同的学习率，分别对应了“识别文字描述”和“识别图片”的能力。
 
-> 在原版 Dreambooth 训练中，我们只能让 AI [学](https://github.com/XavierXiao/Dreambooth-Stable-Diffusion/)习 UNET 模型，XavierXiao 改进添加了额外训练 Text Encoder 6 ，在本文使用的仓库中就沿用了这种改进。
+> 在原版 Dreambooth 训练中，我们只能让 AI 学[习](https://github.com/XavierXiao/Dreambooth-Stable-Diffusion/) `UNET` 模型，XavierXiao 改进添加了额外训练 `Text Encoder` 6 ，在本文使用的仓库中就沿用了这种改进。
 
-k. Network Rank(Dimension)
+### k. `Network Rank(Dimension)`
 
-
-表示神经网络的维度，维[度越](https://github.com/KohakuBlueleaf/LyCORIS)大，模型的表达能力就越强。如果训练 lora，该值不要超过 64；如果训练 loha，该值不要超过 32；如果训练 locon，该值不要超过 12 参考 ，但还是要根据具体的训练目标来定，如果目标比较简单，就完全不需要太高的 Rank。
+表示神经网络的维度，维[度越](https://github.com/KohakuBlueleaf/LyCORIS)大，模型的表达能力就越强。如果训练 `lora`，该值不要超过 64；如果训练 `loha`，该值不要超过 32；如果训练 `locon`，该值不要超过 12 参考 ，但还是要根据具体的训练目标来定，如果目标比较简单，就完全不需要太高的 `Rank`。
 
 > 在神经网络中，每一层都由许多个神经元节点构成，它们纵横交错构成了一个 N 维空间。维度越大，代表模型中就越多的神经元节点可以处理各种要素。——当然，这也意味着模型的训练难度就越大，也可能变得更容易过拟合，它可能需要更多的、更准确的数据集，更大的迭代次数。
 
-l. Network Alpha
+### l. `Network Alpha`
 
-
-对模型过拟合的惩[罚权](https://github.com/KohakuBlueleaf/LyCORIS)重。它表示对模型在训练时出现完全拟合（即输出结果与样本一致）时的惩罚的权重，适当提高它可以增加模型的泛化能力（当然也不能太高）。目前经验认为设置为 alpha 设置在 1 以下效果更好 参考。
+对模型过拟合的惩[罚权](https://github.com/KohakuBlueleaf/LyCORIS)重。它表示对模型在训练时出现完全拟合（即输出结果与样本一致）时的惩罚的权重，适当提高它可以增加模型的泛化能力（当然也不能太高）。目前经验认为设置为 `alpha` 设置在 1 以下效果更好 参考。
 
 > 举一个通俗的例子，一个学生在抄学霸的作业，为了不与学霸的结果完全相同，他需要对每个答案做一些小小的改动。对老师而言，一个完全照抄答案的学生约等于一个只会抄不会想的学生，而能稍作修改的学生说明还有对题目思考理解的能力。所以我们要稍微地“惩罚”那些只会照抄的学生，引导学生自己思考。因此这个值不能太低（完全不惩罚照抄），也不能太高（太大的惩罚让学渣完全不能从学霸的答案里获得参考）。
 
-m. Caption Dropout
+### m. `Caption Dropout`
 
+`Dropout` 是在深度学习中一种防止过拟合的技术，在训练中，可能模型会反复计算某些节点，随着训练的进行，这可能导致错误的路径依赖，即模型会变得总是依赖这些节点解决问题，就像某个学生碰巧刷到了几道解题方法相似的题目，就误认为所有的题目都要用这种解题方法。`Dropout` 的解决方法是随机关闭某些神经元，迫使模型在训练时减少神经元之间的依赖关系，从而让神经网络的泛化能力更强。当然，在实际使用模型的时候，`Dropout` 是关闭的。
 
-Dropout 是在深度学习中一种防止过拟合的技术，在训练中，可能模型会反复计算某些节点，随着训练的进行，这可能导致错误的路径依赖，即模型会变得总是依赖这些节点解决问题，就像某个学生碰巧刷到了几道解题方法相似的题目，就误认为所有的题目都要用这种解题方法。Dropout 的解决方法是随机关闭某些神经元，迫使模型在训练时减少神经元之间的依赖关系，从而让神经网络的泛化能力更强。当然，在实际使用模型的时候，Dropout 是关闭的。
+在训练中，我们也可以随机将一些训练集的标记（`Caption`）剔除。在 `Drop out caption every n epochs` 中，我们可以指定每隔多少 epoch 就剔除一些标记；在 `Rate of caption dropout` 中，我们可以指定剔除几成的标记。
 
-在训练中，我们也可以随机将一些训练集的标记（Caption）剔除。在 Drop out caption every n epochs 中，我们可以指定每隔多少 epoch 就剔除一些标记；在 Rate of caption dropout 中，我们可以指定剔除几成的标记。
-
-**n. Noise Offset**
-
+### n. `Noise Offset`
 
 在原版的 Stable Diffusion 中，模型得出的图片在亮度上总是很平均，[亮](https://www.crosslabs.org//blog/diffusion-with-offset-noise)的场景不够亮，暗的场景不够暗，而且用传统的训练方法也无法让它学会避免这个问题 7 。一般输入 0.1。
 
-通过 Noise Offset，我们可以让图像在亮和暗上的表现更加明显（右图）。
+通过 `Noise Offset`，我们可以让图像在亮和暗上的表现更加明显（右图）。
 
+### o. `xformers`
 
-**o.xformers**
+`Xformers` 是一个用于加快图像生成速度并减少显存占用的库。
 
+### p. `Gradient checkpointing`
 
-Xformers 是一个用于加快图像生成速度并减少显存占用的库。
-
-p. Gradient checkpointing
-
-
-梯度检查点（Gradient checkpointing）是一种在训练模型时减少显存占用的方法，但是会增加训练时长。它避免在训练期间一次计算所有权重，而是逐步计算权重，从而减少训练所需的显存量。关闭它不会影响模型的准确性，但打开它后我们可以使用更大的 Batch Size。
+梯度检查点（`Gradient checkpointing`）是一种在训练模型时减少显存占用的方法，但是会增加训练时长。它避免在训练期间一次计算所有权重，而是逐步计算权重，从而减少训练所需的显存量。关闭它不会影响模型的准确性，但打开它后我们可以使用更大的 Batch Size。
 
 > 虽然单次训练的时长可能增加了我们单次训练的时长，但如果我们增大了 Batch Size，总的学习时间实际上可能会更快。
 
-**q. ****shuffle**** caption**
-
+### q. `shuffle caption`
 
 打开它，可以让训练时训练集的标签被打乱（Shuffle，洗牌）。如输入”铁匠铺，工人，打铁”，可能被转换为”铁匠铺，打铁，工人“或”工人，铁匠铺，打铁“。
 
 这种操作通常用于增强模型对于不同文本顺序的鲁棒性，从而提高模型的泛化能力。打乱操作可以多次进行，从而更大程度地增加数据的随机性。
 
-Shuffle caption 可以在多种相似的图像中使用。如果差异较大，就不要使用了。
+`Shuffle caption` 可以在多种相似的图像中使用。如果差异较大，就不要使用了。
 
-> 在每一个 epoch 中，输入的前 4 个 token 会被当做触发词，此外的 token 会被当做排除集。ai 会将排除集中的元素在素材中删除后，把素材的剩余部分学进前 4 个 token 中。因此，如果不开启 keep tokens，在进行打乱后，打标中的每一个 tag 在足够多的 epoch 后，都将成为触发词。
+> 在每一个 epoch 中，输入的前 4 个 `token` 会被当做触发词，此外的 `token` 会被当做排除集。ai 会将排除集中的元素在素材中删除后，把素材的剩余部分学进前 4 个 `token` 中。因此，如果不开启 `keep tokens`，在进行打乱后，打标中的每一个 tag 在足够多的 epoch 后，都将成为触发词。
 
+### r. `Token`
 
-**r. Token**
+如果你的 `Caption` 比较长，那么可以扩充一次输入允许的 `Token` 量。如果不是必要，保持默认值 75。
 
-
-如果你的 Caption 比较长，那么可以扩充一次输入允许的 Token 量。如果不是必要，保持默认值 75。
-
-**s. Clip Skip**
+### s. `Clip Skip`
 
 ![](img/c60d0f0588ed5fa82bd1da222ffcb46b.png)
 
-Clip 是一个转换提示词为 Token 形式的神经网络，是模型理解文字的源头。
+`Clip` 是一个转换提示词为 `Token` 形式的神经网络，是模型理解文字的源头。
 
-它开启与否与底模有关。譬如，一些模型在第一层的神经网络将输入的词转换为 Token 读取，传输给下一层网络，但是通过 Cl**ip S**kip，我们可以手动控制跳过 Stable Diffusion 的 Clip 阶段，直接使用模型的 Tokenizer 对某些层级直接传输 Token 进去。有些时候调整这个参数可以让结果更好。
+它开启与否与底模有关。譬如，一些模型在第一层的神经网络将输入的词转换为 `Token` 读取，传输给下一层网络，但是通过 `Clip Skip`，我们可以手动控制跳过 Stable Diffusion 的 `Clip` 阶段，直接使用模型的 `Tokenizer` 对某些层级直接传输 `Token` 进去。有些时候调整这个参数可以让结果更好。
 
-默认情况下 SD2.0 使用倒数第二层接收 Token，因此不要在 SD2.0 学习中指定。
+默认情况下 `SD2.0` 使用倒数第二层接收 `Token`，因此不要在 `SD2.0` 学习中指定。
 
-##### 风格训练
+### 风格训练
 
 训练集尽可能包含该画风对不同事物的描绘。
 
 > ● 尽可能对训练集进行正则化。如果数据足够大，可以将数据二分，一部分作为训练集，一部分作为正则化图集。如果数据不够大，可以先用高学习率快速训练出一个临时模型，用它产出接近于该画风的图片，然后将它投入训练集。● 如果是小模型，可以在生成时变更大模以调整生成效果；如果是大模型，可以通过模型融合以调整效果。● 模型效果不好不一定是模型不好，提示词与最终的效果有非常大的关系。
 
-##### 人物训练
+### 人物训练
 
 训练集尽可能包含人物在不同角度的画面。
 

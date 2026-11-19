@@ -1,3 +1,4 @@
+
 # 全新 AI IDE：Trae，Claude 免费用
 
 > 来源：[https://agijuejin.feishu.cn/docx/WESidWNTgotRBmxvbN7czjOznMY](https://agijuejin.feishu.cn/docx/WESidWNTgotRBmxvbN7czjOznMY)
@@ -16,13 +17,13 @@
 
 字节的 AI 产品是真的高产！最近，字节跳动又发布了一款全新的 AI 编程 IDE：Trae。从此 Cursor 又多了一个竞争对手。
 
-字节还是挺豪的，**目前网红大模型 Claude-3.5、和 Open**AI 的 GPT-4o 模型通通免费使用！
+目前网红大模型 Claude-3.5、和 OpenAI 的 GPT-4o 模型通通免费使用！
 
 先上视频链接，上面有 Demo，可以看下！
 
 [ 👉 视频点这里](https://link.juejin.cn?target=https%3A%2F%2Fwww.xiaohongshu.com%2Fexplore%2F678e46c00000000028035384%3Fxsec_token%3DABdN0IDRg0zOl13rAkVyl8IuLkhKVwBvKLOpsbpY38P3E%3D%26xsec_source%3Dpc_user)
 
-**AI智见录，今天也体验了**下**，还可以，目前主要的功能有AI问答（Chat模式）、类似** Cursor 的 Agent 支持一键生成项目（Builder 模式）、内联聊天、代码补全，基本上 AI辅助编程工具该有的都有了。
+AI智见录，今天也体验了下，还可以，目前主要的功能有AI问答（Chat模式）、类似 Cursor 的 Agent 支持一键生成项目（Builder 模式）、内联聊天、代码补全，基本上 AI辅助编程工具该有的都有了。
 
 Trae 也是基于 VS Code 魔改，用户习惯如果从 VS Code 过来的朋友们不用太担心，差别不大，很快就能入手。
 
@@ -44,7 +45,7 @@ Trae 也是基于 VS Code 魔改，用户习惯如果从 VS Code 过来的朋友
 
 ## 两种模式
 
-使用 Command + U 命令打开和 AI 对话窗口，有两个模式 Chat、Builder
+使用 `Command + U` 命令打开和 AI 对话窗口，有两个模式 Chat、Builder
 
 ### Chat 模式
 
@@ -60,7 +61,7 @@ Builder 模式可以一键完成项目搭建，对文件的任何改动也都会
 
 ![](img/19f660c6eef75fe33d5bc184d9d6a0d4.png)
 
-做了一个 Demo，让 Tare 帮我实现一个 Todo List，从项目搭建到完成，全程也是没写一行代码
+做了一个 Demo，让 Trae 帮我实现一个 Todo List，从项目搭建到完成，全程也是没写一行代码
 
 ![](img/d52072cedb1fb7d0feac556250b2ffbd.png)
 
@@ -68,7 +69,7 @@ Builder 模式可以一键完成项目搭建，对文件的任何改动也都会
 
 ![](img/4cf6581fc0c34f0687e0355b22eb1a6e.png)
 
-还支持在 Webview 内打开，不用离开编辑器窗口
+还支持在 `Webview` 内打开，不用离开编辑器窗口
 
 ![](img/1dffcc7fcd7f6c27f02d6e33890f0e7f.png)
 
@@ -84,7 +85,7 @@ Builder 模式可以一键完成项目搭建，对文件的任何改动也都会
 
 ## 内联聊天
 
-通过 Command + i 命令，唤醒内联聊天
+通过 `Command + i` 命令，唤醒内联聊天
 
 ![](img/54250b6e5d6c62a488a04bdea20d7564.png)
 

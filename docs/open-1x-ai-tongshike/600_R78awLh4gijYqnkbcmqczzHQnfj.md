@@ -1,30 +1,25 @@
+
 # 教程：AI 人类模特换装
 
 > 来源：[https://datawhaler.feishu.cn/docx/WYQJdN0xio4Bzmxielzcqgeindf](https://datawhaler.feishu.cn/docx/WYQJdN0xio4Bzmxielzcqgeindf)
 
-> ✍️  作者：[纪伦的个人说明书](https://datawhaler.feishu.cn/wiki/AKxvw88QMiyg6NkxtYzc9evGnfc?from=from_copylink)
+> ✍️ 作者：[纪伦的个人说明书](https://datawhaler.feishu.cn/wiki/AKxvw88QMiyg6NkxtYzc9evGnfc?from=from_copylink)
 
 ## 学前须知
 
-+   **学习时间**：1~10天
++ **学习时间**：1~10天
 
-+   **学习难度**：可易可难，具体看需求
++ **学习难度**：可易可难，具体看需求
 
-+   **学习方式**：
++ **学习方式**：
 
-1.  针对不同能力基础和需求的用户，在场景细分图中，找到自己需要的场景
+1. 针对不同能力基础和需求的用户，在场景细分图中，找到自己需要的场景
+1. 找到对应的案例学习（参考小作业与参考教程）
+1. 学习优秀打卡案例，查漏补缺
+1. 选择感兴趣的小作业，跟着案例自己尝试做一遍。
+1. 尝试熟悉流程后，应用到实际工作生活中
 
-1.  找到对应的案例学习（参考小作业与参考教程）
-
-1.  学习优秀打卡案例，查漏补缺
-
-1.  选择感兴趣的小作业，跟着案例自己尝试做一遍。
-
-1.  尝试熟悉流程后，应用到实际工作生活中
-
->
-
-> 打卡核实后**「可获得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
+> 打卡核实后「可获得证书」，优秀打卡内容将被「展出」，特别优秀者会邀请来「一起完善学习文档」
 
 > 具体打卡要求详见：[【说明文档】打卡（非必须）](https://datawhaler.feishu.cn/wiki/UR4bwTSjJiAKFLkfqdCc8Dlgnld?from=from_copylink)
 
@@ -42,7 +37,7 @@
 
 #### 【方案一】人台图+局部重绘
 
-**SD WebUI**
+SD WebUI
 
 [自己安装一个S](https://space.bilibili.com/12566101)D WebUI，需要电脑上有显卡，可以用。B站上秋葉aaaki做了方便小白入手的整合包，具体安装可以看看教程。https://www.bilibili.com/video/BV1iM4y1y7oA/
 
@@ -58,7 +53,7 @@ https://www.uisdc.com/stable-diffusion-19
 
 ![](img/c94d76801316496d0e06c8c3c3b6accf.png)
 
-**无界AI人台图转模特工作流**
+无界AI人台图转模特工作流
 
 ![](img/fd7ce93edbf065949c8ab7fa1aa65469.png)
 
@@ -68,7 +63,7 @@ https://www.uisdc.com/stable-diffusion-19
 
 #### 【方案二】训练服装类Lora
 
-**SD WebUI+Lora**
+SD WebUI+Lora
 
 [自己安装一个S](https://space.bilibili.com/12566101)D WebUI，需要电脑上有显卡，可以用。B站上秋葉aaaki做了方便小白入手的整合包，具体安装可以看看教程。https://www.bilibili.com/video/BV1iM4y1y7oA/
 
@@ -100,7 +95,7 @@ https://www.bilibili.com/video/BV1914y1Q7CE/
 
 #### 【方案一】训练服装Lora+训练人物Lora -> Lora融合
 
-**训练服装**Lora+训练人物Lora ->Multi-LoRA-Composition融合方案
+训练服装Lora+训练人物Lora ->Multi-LoRA-Composition融合方案
 
 训练Lora参考前面的内容。
 
@@ -112,7 +107,7 @@ https://github.com/maszhongming/Multi-LoRA-Composition
 
 ![](img/ebc093c34f45061e745bd73df2b49b54.png)
 
-**训练服装****Lora+训练人物**Lora ->Mu普通的Lora融合方案
+训练服装Lora+训练人物Lora ->Mu普通的Lora融合方案
 
 训练Lora见参考资料。
 
@@ -122,7 +117,7 @@ https://www.zhihu.com/zvideo/1637944442459037696
 
 #### 【方案二】专门的换装模型，无需训练，一键换装
 
-**OOTDiffusion**
+OOTDiffusion
 
 目前此方案开源，且可免费使用demo(人多需排队，且使用需🪜)
 
@@ -140,7 +135,7 @@ Emmm..但有时也会生成这种
 
 ![](img/f0743f1d1b2926a1b22a722dbe07fe29.png)
 
-**Anydoor**
+Anydoor
 
 目前此方案开源，且可免费使用demo(人多需排队，且使用需🪜)，但不是专门针对换装训练的，可能稳定性与效果没有OOTDiffusion效果稳定
 
@@ -152,7 +147,7 @@ Emmm..但有时也会生成这种
 
 #### 【方案三】PS叠加人+服装->图生图
 
-**Midjourney图生图**
+Midjourney图生图
 
 利用P图叠加+midjourney图生图功能
 
@@ -192,7 +187,7 @@ https://github.com/maszhongming/Multi-LoRA-Composition
 
 #### 【方案一】利用人物/角色一致性，实现换装
 
-**Midjourney**
+Midjourney
 
 但目前对于Midjourney生成出的人物照片保持一致性效果较好，自己的真人照片还原度略低一点
 
@@ -200,7 +195,7 @@ https://github.com/maszhongming/Multi-LoRA-Composition
 
 参考 Midjourney 重大更新！深度解析「角色一致性」命令https://www.uisdc.com/midjourney-49
 
-**InstanceID**
+InstanceID
 
 开源免费，人物还原度高，但有时候需要排队。
 
@@ -210,23 +205,23 @@ InstantID 使用链接：https://www.modelscope.cn/studios/instantx/InstantID/su
 
 参考 用InstantID来做一致的人物角色 https://www.jiqizhixin.com/articles/2024-01-22
 
-**SD WebUI**
+SD WebUI
 
 安装SD WebUI见参考资料
 
 【SD】一致性角色 - 同一人物 不同姿势 https://blog.csdn.net/m0_73883919/article/details/135314693
 
-**Dalle**
+Dalle
 
 类似midjourney，目前对Dalle生成的照片保持角色一致性较好，自己的照片不行。
 
-用Seed值让Dall·E画出一致的人物！(有GPT4的看这里) https://zhuanlan.zhihu.com/p/675446051
+用`Seed`值让Dall·E画出一致的人物！(有GPT4的看这里) https://zhuanlan.zhihu.com/p/675446051
 
 #### 【方案二】局部重绘
 
 类似场景一方案一，只不过服装与人的关系交换
 
-#### 【方案三】训练人物Lora+prompt
+#### 【方案三】训练人物Lora+`prompt`
 
 参考前面的Lora训练
 
@@ -238,19 +233,19 @@ InstantID 使用链接：https://www.modelscope.cn/studios/instantx/InstantID/su
 
 > 公域上一些不错的，对大家学习用AI处理数据，可能有帮助的内容，也欢迎大家评论补充
 
-+   Stable Duffusion WebUI安装
++ Stable Duffusion WebUI安装
 
 [自己安装一个S](https://space.bilibili.com/12566101)D WebUI，需要电脑上有显卡，可以用。B站上秋葉aaaki做了方便小白入手的整合包，具体安装可以看看教程。https://www.bilibili.com/video/BV1iM4y1y7oA/
 
 ![](img/0cfb55fd60e72b4ecb55733774fb5806.png)
 
-+   Stable Duffusion WebUI使用
++ Stable Duffusion WebUI使用
 
 SD使用系列学习视频：https://www.bilibili.com/video/BV1e7421K7HF/
 
 ![](img/14c9015322a43fc829507da760590da3.png)
 
-+   Lora训练打标技巧
++ Lora训练打标技巧
 
 自己训练的需要注意参数配置和提前给训练图片打标签，方法如下：
 
@@ -262,7 +257,7 @@ SD使用系列学习视频：https://www.bilibili.com/video/BV1e7421K7HF/
 
 来源：https://www.youtube.com/watch?v=nqWZAgCZD5s
 
-+   对于Lora训练的技巧
++ 对于Lora训练的技巧
 
 LoRA训练和使用进阶：让LoRA实现真人幻化式换装，AI美少女养成(包含脸部、服装、Reg——更新Controlnet解决脸崩、直出高清图) https://nga.178.com/read.php?tid=35774713&rand=141
 

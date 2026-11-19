@@ -1,37 +1,38 @@
-# 怎么 理解/上手 AI开发 & 传统开发？
+
+# 怎么理解/上手 AI开发 & 传统开发？
 
 > 来源：[https://datawhaler.feishu.cn/docx/FVLBd05N2oRpXqxnRKMcx9Jin8g](https://datawhaler.feishu.cn/docx/FVLBd05N2oRpXqxnRKMcx9Jin8g)
 
-# AI开发
+## AI开发
 
-## RAG
+### RAG
 
-## 微调/蒸馏
+### 微调/蒸馏
 
-## 数据
+### 数据
 
-## MCP
+### MCP
 
-## Agent框架
+### Agent框架
 
-## Prompt
+### Prompt
 
-# 传统开发
+## 传统开发
 
-## 前端
+### 前端
 
-## 后端
+### 后端
 
-### Python
+#### Python
 
-### C++
+#### C++
 
-### Java
+#### Java
 
-## 数据库
+### 数据库
 
-### SQL语法
+#### SQL语法
 
-### MySQL
+#### MySQL
 
-### SQLite
+#### SQLite

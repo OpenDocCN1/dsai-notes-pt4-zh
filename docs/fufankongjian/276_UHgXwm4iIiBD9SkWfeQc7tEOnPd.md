@@ -1,34 +1,37 @@
-# 06-30分钟练习项目-知识库问答系统
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/JhdfdgsWeoqajJxTw0YcA9MunWb](https://kq4b3vgg5b.feishu.cn/docx/JhdfdgsWeoqajJxTw0YcA9MunWb)
 
 # 30 分钟练习项目 · 知识库问答系统 Starter
+
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/JhdfdgsWeoqajJxTw0YcA9MunWb](https://kq4b3vgg5b.feishu.cn/docx/JhdfdgsWeoqajJxTw0YcA9MunWb)
 
 > 配套视频：《从"会用工具"到"能交付项目"——AI 驱动全栈开发实战》
 
 > 作者：木羽Cheney（VibeCoding 实战课主讲老师） · 赋范大模型技术社区
 
-> 用法：按步骤操作，用 Claude Code 最快 30 分钟完成你的第一个全栈交付
+> 用法：按步骤操作，用 `Claude Code` 最快 30 分钟完成你的第一个全栈交付
 
 ---
 
 ## 这个练习项目是什么？
 
-一个**最小的知识库问答系统**：上传一段文本 → 对这段文本提问 → 得到 AI 生成的回答。
+一个最小的知识库问答系统：上传一段文本 → 对这段文本提问 → 得到 AI 生成的回答。
 
-**不需要****：服务**器、数据库安装、Docker、域名
+不需要：服务器、数据库安装、`Docker`、域名
 
-只需要：Node.js + 一个 AI 编程工具 + 一个国产模型的免费 API Key
+只需要：`Node.js` + 一个 AI 编程工具 + 一个国产模型的免费 `API Key`
 
 ---
 
 ## 前提准备
 
 | 需要什么 | 怎么获取 | 费用 |
+
 | --- | --- | --- |
-| Node.js 18+ | [nodejs.org](https://nodejs.org) 下载安装 | 免费 |
-| Claude Code 或其他 AI 编程工具 | Claude Code: npm i -g @anthropic-ai/claude-code | 需订阅 |
-| 国产模型 API Key | 推荐智谱 glm-4.7-flash（永久免费）或通义千问 qwen-plus（7000 万免费 token） | 免费 |
+
+| `Node.js 18+` | [nodejs.org](https://nodejs.org) 下载安装 | 免费 |
+
+| `Claude Code` 或其他 AI 编程工具 | `Claude Code`: `npm i -g @anthropic-ai/claude-code` | 需订阅 |
+
+| 国产模型 `API Key` | 推荐智谱 `glm-4.7-flash`（永久免费）或通义千问 `qwen-plus`（7000 万免费 token） | 免费 |
 
 ---
 
@@ -37,10 +40,10 @@
 打开终端，执行：
 
 ```
-mkdir my-qa-system &amp;&amp; cd my-qa-system
+mkdir my-qa-system && cd my-qa-system
 ```
 
-然后启动你的 AI 编程工具（以 Claude Code 为例）：
+然后启动你的 AI 编程工具（以 `Claude Code` 为例）：
 
 ```
 claude
@@ -53,11 +56,16 @@ claude
 这个练习项目的技术栈已经帮你选好了，不需要调研：
 
 | 层级 | 选型 | 理由 |
+
 | --- | --- | --- |
-| 前端 | Next.js 14 + Tailwind CSS | 前后端同框架，联调零成本 |
-| 后端 | Next.js API Routes | 不需要单独搭后端服务 |
-| 数据库 | SQLite（通过 better-sqlite3） | 零配置，文件即数据库 |
-| AI | OpenAI 兼容 API | 可接国产模型 |
+
+| 前端 | `Next.js 14` + `Tailwind CSS` | 前后端同框架，联调零成本 |
+
+| 后端 | `Next.js API Routes` | 不需要单独搭后端服务 |
+
+| 数据库 | `SQLite`（通过 `better-sqlite3`） | 零配置，文件即数据库 |
+
+| AI | `OpenAI` 兼容 API | 可接国产模型 |
 
 ---
 
@@ -90,7 +98,7 @@ claude
 生成 CLAUDE.md 后，等我确认再开始写代码。
 ```
 
-**确认点**：AI 生成的 CLAUDE.md 你看一眼，确保接口定义和数据模型没问题，然后说"确认，开始搭建"。
+**确认点**：AI 生成的 `CLAUDE.md` 你看一眼，确保接口定义和数据模型没问题，然后说"确认，开始搭建"。
 
 ---
 
@@ -115,7 +123,7 @@ LLM_API_KEY=你的智谱API Key
 LLM_MODEL=glm-4.7-flash
 ```
 
-**确认点**：两个接口 curl 测试通过后再继续。
+**确认点**：两个接口 `curl` 测试通过后再继续。
 
 ---
 
@@ -125,7 +133,7 @@ LLM_MODEL=glm-4.7-flash
 后端 API 已验证通过。现在请按 CLAUDE.md 开发前端，两个页面：
 
 页面 1：知识管理页（/）
-- 顶部：一个文本域 + &quot;保存&quot;按钮，用于添加知识条目
+- 顶部：一个文本域 + "保存"按钮，用于添加知识条目
 - 下方：已保存的知识条目列表（标题 + 内容预览）
 - 调用 POST /api/knowledge 保存，GET 方式获取列表
 
@@ -146,9 +154,9 @@ LLM_MODEL=glm-4.7-flash
 ```
 请做一次完整的端到端验证：
 
-1. 打开首页，添加一条知识：&quot;公司年假规定是每年 15 天，入职满一年后可使用。&quot;
+1. 打开首页，添加一条知识："公司年假规定是每年 15 天，入职满一年后可使用。"
 2. 确认知识条目出现在列表中
-3. 切换到问答页，提问：&quot;我能请多少天年假？&quot;
+3. 切换到问答页，提问："我能请多少天年假？"
 4. 确认回答引用了知识库中的内容
 5. 再提问一个知识库里没有的问题，确认 AI 不会编造
 
@@ -178,7 +186,7 @@ my-qa-system/
 └── package.json
 ```
 
-一个完整的前后端项目：有数据库、有 API、有前端界面、有 AI 功能、能端到端跑通。
+一个完整的前后端项目：有数据库、有 `API`、有前端界面、有 AI 功能、能端到端跑通。
 
 ---
 
@@ -187,13 +195,20 @@ my-qa-system/
 ### 加功能练手（每个 10-20 分钟）
 
 | 功能 | 难度 | 练什么 |
+
 | --- | --- | --- |
-| 给知识条目加&quot;标签&quot;分类 | 低 | 修改数据模型 + 前端 UI |
-| 问答页显示&quot;引用来源&quot; | 中 | 后端改返回格式 + 前端展示 |
-| 支持 Markdown 格式的回答 | 低 | 前端引入 Markdown 渲染组件 |
+
+| 给知识条目加"标签"分类 | 低 | 修改数据模型 + 前端 UI |
+
+| 问答页显示"引用来源" | 中 | 后端改返回格式 + 前端展示 |
+
+| 支持 `Markdown` 格式的回答 | 低 | 前端引入 `Markdown` 渲染组件 |
+
 | 对话历史记录 | 中 | 新增数据表 + 接口 + 前端展示 |
-| 换一个国产模型（如 DeepSeek） | 低 | 只改 .env 中的三个变量 |
-| 加一个&quot;文档上传&quot;功能（真正的文件上传） | 高 | 文件处理 + 文本提取 + 接口改造 |
+
+| 换一个国产模型（如 `DeepSeek`） | 低 | 只改 `.env` 中的三个变量 |
+
+| 加一个"文档上传"功能（真正的文件上传） | 高 | 文件处理 + 文本提取 + 接口改造 |
 
 ### 做自己的项目
 
@@ -209,21 +224,21 @@ my-qa-system/
 
 ## 常见问题
 
-### Q：我不是用 Claude Code，用 Cursor / Windsurf / 其他工具可以吗？
+### Q：我不是用 `Claude Code`，用 `Cursor` / `Windsurf` / 其他工具可以吗？
 
 **A**：可以。提示词是通用的，规范文档放在项目根目录，任何 AI 编程工具都会读取。
 
-### Q：我不会 TypeScript / React，能做吗？
+### Q：我不会 `TypeScript` / `React`，能做吗？
 
-**A**：能。AI 会帮你写代码，你只需要会运行命令（npm install / npm run dev）和在浏览器里验证结果。但建议对照代码多看看 AI 写了什么，这是最好的学习方式。
+**A**：能。AI 会帮你写代码，你只需要会运行命令（`npm install` / `npm run dev`）和在浏览器里验证结果。但建议对照代码多看看 AI 写了什么，这是最好的学习方式。
 
 ### Q：30 分钟真的够吗？
 
 **A**：熟练的话 30 分钟可以完成。第一次做可能需要 45-60 分钟，因为要理解每一步在做什么。不用着急，理解比速度更重要。
 
-### Q：API Key 从哪来？要花钱吗？
+### Q：`API Key` 从哪来？要花钱吗？
 
-**A**：推荐智谱 GLM-4.7-Flash，完全免费，注册后就能拿到 API Key。详见工具包中的《国产模型速查表》（上一期工具包）。
+**A**：推荐智谱 `GLM-4.7-Flash`，完全免费，注册后就能拿到 `API Key`。详见工具包中的《国产模型速查表》（上一期工具包）。
 
 ---
 

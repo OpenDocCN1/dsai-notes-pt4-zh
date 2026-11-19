@@ -1,3 +1,4 @@
+
 # 《瞬息全宇宙——穿越之旅终极教程》
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/WbFVdvGkAoo38ZxDumwclWEynRg](https://xuqiwei1986.feishu.cn/docx/WbFVdvGkAoo38ZxDumwclWEynRg)
@@ -46,9 +47,9 @@
 
 [v0d00fg10000cgm16cbc77u3rb7v14p0.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LPs6bHJGToQ6pKxmEtJcUhTqnGb)
 
-**制作穿越之旅，用到的是Stable D**iffusion里面的deforum插件
+制作穿越之旅，用到的是Stable Diffusion里面的`deforum`插件
 
-制作平行宇宙，用到的则是一个叫runway的网站里的功能
+制作平行宇宙，用到的则是一个叫`runway`的网站里的功能
 
 两种视频都叫“瞬息全宇宙”，但做法是完全不同的
 
@@ -56,35 +57,35 @@
 
 所以希望这篇文章能带给大家更准确一点的认识，如果我有说错的地方也欢迎大家指正
 
-这篇文章主要是跟大家分享**“穿越之旅”**的制作方法
+这篇文章主要是跟大家分享“穿越之旅”的制作方法
 
 > [《瞬息全宇宙——平行宇宙终极教程》](https://ry5hwpuf7b.feishu.cn/docx/Lfjedtd4QoCkBhxkgTfcBsG1np0)平行宇宙”的制作方法可以看这篇文章
 
 # 二、“穿越之旅”怎么做
 
-穿越之旅用到的是Stable Diffusion（简称SD）里面的deforum插件
+穿越之旅用到的是Stable Diffusion（简称SD）里面的`deforum`插件
 
-这个deforum插件的使用方法跟我们用SD生成照片其实是差不多的
+这个`deforum`插件的使用方法跟我们用SD生成照片其实是差不多的
 
 [《Stable Diffusion终极宝典》](https://ry5hwpuf7b.feishu.cn/docx/HYrZdLBMRorB0qxKqFFcQ075nWf)果还没安装SD或者不会用SD的朋友们，可以看我之前写的这篇文章
 
 想要快速生成一个视频其实只有两步：
 
-**1.安装插件**
+1. 安装插件
 
-**2.写提示词**
+2. 写提示词
 
 其他所有的设置都只是为了让这个视频更加的有趣，比如：
 
-1.增加视频时长
+1. 增加视频时长
 
-2.制作视频运镜
+2. 制作视频运镜
 
-3.定制开头
+3. 定制开头
 
-4.做网上的爆款视频
+4. 做网上的爆款视频
 
-5.可以照抄的一些参数设置
+5. 可以照抄的一些参数设置
 
 接下来我就跟大家分享每一个部分的详细操作！
 
@@ -96,47 +97,47 @@
 
 接下来我们就开始安装插件啦！
 
-1.打开SD，在状态栏里面点击“扩展”
+1. 打开SD，在状态栏里面点击“扩展”
 
-2.点击“可下载”
+2. 点击“可下载”
 
-3.点击“加载扩展列表”
+3. 点击“加载扩展列表”
 
-4.在搜索框里面输入“Deforum”
+4. 在搜索框里面输入“Deforum”
 
-5.看到“Deforum”，点击右边的“安装”
+5. 看到“Deforum”，点击右边的“安装”
 
 ![](img/9a9da6bb078c92e1d45ef6322c1e126b.png)
 
 安装完了之后，关掉SD
 
-下载网盘里面的《1.deforum模型》
+下载网盘里面的`1.deforum模型`
 
-复制里面的两个文件到SD文件夹，放到“models”里面的"Deforum"文件夹
+复制里面的两个文件到SD文件夹，放到`models`里面的`Deforum`文件夹
 
 （添加这两个文件是为了减少后续使用的时候出现报错）
 
 ![](img/a24e85db5866c82ea2954ef1b86c4caf.png)
 
-这时候再重新打开SD（重新启动web ui），我们的状态栏里面就多了一个“Deforum”的界面
+这时候再重新打开SD（重新启动`web ui`），我们的状态栏里面就多了一个`Deforum`的界面
 
 ![](img/bd650035d6c231277736a8d70d588614.png)
 
 看到这个界面我们的插件就安装好啦！
 
-**如果重启之后还是没有Deforum的界面，**那是因为SD和deforum的版本不适配
+如果重启之后还是没有`Deforum`的界面，那是因为SD和`deforum`的版本不适配
 
-**有两种解决办法，选一个就行：**
+有两种解决办法，选一个就行：
 
-**1.升级SD版本**
+1. 升级SD版本
 
 找到“版本管理”，切换SD版本
 
 ![](img/c9275a2785f04c9b9cae5cbe0e91bcba.png)
 
-**2.降低deforum版本**
+2. 降低`deforum`版本
 
-在“版本管理”——“扩展”——找到deforum，切换版本
+在“版本管理”——“扩展”——找到`deforum`，切换版本
 
 ![](img/587761255b3b76a33eebfee56e082e73.png)
 
@@ -148,15 +149,15 @@
 
 写提示词可以分为以下几步：
 
-1.选大模型
+1. 选大模型
 
-2.写提示词
+2. 写提示词
 
-3.写正负向提示词
+3. 写正负向提示词
 
 ### ①选择合适的大模型
 
-和做图一样，做视频之前要先选择我们视频的画风，是二次元、真人3D还是水墨画
+和做图一样，做视频之前要先选择我们视频的画风，是二次元、真人`3D`还是水墨画
 
 而在SD里面，大模型就控制着我们照片的画风
 
@@ -178,7 +179,7 @@
 
 而做视频就是需要把几张图的提示词拼到一起
 
-我们打开deforum的提示词界面
+我们打开`deforum`的提示词界面
 
 里面已经有系统默认输入的一大段提示词
 
@@ -186,17 +187,14 @@
 
 翻译成中文是这样的：
 
-> {
-
-> “0”: “小巧可爱的沼泽兔，高度细致，复杂，超高清，清晰的照片，黄昏的光线，聚焦，作者 Tomasz Alen Kopera”
-
-> “30”: “拟人洁净的猫，被分形所包围，史诗的角度和姿势，对称，3D，景深，阮家和风华中”,
-
-> “60”: “一个漂亮的椰子——阴性照片，真实”
-
-> “90”: “一颗漂亮的榴莲，在艺术站上走红”
-
-> }
+```
+{
+  "0": "小巧可爱的沼泽兔，高度细致，复杂，超高清，清晰的照片，黄昏的光线，聚焦，作者 Tomasz Alen Kopera",
+  "30": "拟人洁净的猫，被分形所包围，史诗的角度和姿势，对称，3D，景深，阮家和风华中",
+  "60": "一个漂亮的椰子——阴性照片，真实",
+  "90": "一颗漂亮的榴莲，在艺术站上走红"
+}
+```
 
 我们可以看到一行就是一张照片的提示词
 
@@ -228,17 +226,17 @@
 
 ![](img/18696f7ac94b1a8227d6b0002b8ec664.png)
 
-**这里一定一定要注意格式！！！**
+这里一定一定要注意格式！！！
 
-1.所有的提示词都在**{  }**里面
+1. 所有的提示词都在`{  }`里面
 
-2.前面的数字代表的是照片的帧数（下一节会讲）
+2. 前面的数字代表的是照片的帧数（下一节会讲）
 
-3.每一行的提示词都要在**“  ”**里面
+3. 每一行的提示词都要在`"  "`里面
 
-4.每一行最后要有一个**逗号（**最后一行不用）
+4. 每一行最后要有一个逗号（最后一行不用）
 
-5.所有符号（双引号、冒号、逗号）都是英文状态下输入的（如果最后生成视频出现报错，很有可能是符号出错）
+5. 所有符号（双引号、冒号、逗号）都是英文状态下输入的（如果最后生成视频出现报错，很有可能是符号出错）
 
 ![](img/ef7c669512db9b3c5a9ff85c31674dd7.png)
 
@@ -308,13 +306,17 @@
 
 这里我把提示词放出来，大家直接复制上去就可以
 
-**正向提示词：**
+正向提示词：
 
+```
 Highest quality, masterpieces, extreme detail, 8K, HD qualit
+```
 
-**反向提示词：**
+反向提示词：
 
+```
 nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), bad anatomy,DeepNegative, skin spots, acnes, skin blemishes,(fat:1.2),facing away, looking away,tilted head, lowres,bad anatomy,bad hands, missing fingers,extra digit, fewer digits,bad feet,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,missing arms,missing legs,extra digit, extra arms, extra leg, extra foot,teethcroppe,signature, watermark, username,blurry,cropped,jpeg artifacts,text,error
+```
 
 ![](img/5185bd35c7c88dde3f5ce80bc591fc89.png)
 
@@ -324,11 +326,11 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 但是现在我想让视频时长更长一点，生成更多的照片，该怎么办呢？
 
-我们可以通过调整deforum里面的两个参数来改变视频的时长
+我们可以通过调整`deforum`里面的两个参数来改变视频的时长
 
-打开deforum的关键帧页面
+打开`deforum`的关键帧页面
 
-下面的“最大帧数”就可以控制我们的视频长度
+下面的`最大帧数`就可以控制我们的视频长度
 
 这里的一帧我们可以理解为一张照片
 
@@ -338,7 +340,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 再打开“输出”页面
 
-这里的“FPS”控制的就是视频的速度
+这里的`FPS`控制的就是视频的速度
 
 把参数调到15，就代表着1秒钟生成15帧（也就是1秒钟生成15张照片）
 
@@ -346,17 +348,17 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 ![](img/59b9c446408fdc3e0b2dea692d217003.png)
 
-假如我们现在的最大帧数设置成200，FPS的参数设置为15（也就是总共200张照片，1秒播放15张照片）
+假如我们现在的最大帧数设置成200，`FPS`的参数设置为15（也就是总共200张照片，1秒播放15张照片）
 
-那我们的视频时长就是：200÷15=13.33秒
+那我们的视频时长就是：`200÷15=13.33秒`
 
-那也就是说，我们可以通过设置最大帧数和FPS来调整视频的时长
+那也就是说，我们可以通过设置最大帧数和`FPS`来调整视频的时长
 
-但正常情况下，FPS调到15就可以了，我们只要设置最大参数就行
+但正常情况下，`FPS`调到15就可以了，我们只要设置最大参数就行
 
 > 比如我想要一条30秒左右的视频
 
-> 30×15=450
+> `30×15=450`
 
 > 那我的最大帧数就要设置成450帧
 
@@ -364,9 +366,9 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 这里的数字代表的就是帧数
 
-“0”代表的就是一开始的照片：一束花
+`“0”`代表的就是一开始的照片：一束花
 
-“30”代表的是第30帧照片：一个漂亮的女孩
+`“30”`代表的是第30帧照片：一个漂亮的女孩
 
 所以第0~30帧就是一束花变成一个漂亮女孩的过程
 
@@ -382,13 +384,13 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 前面我们生成出来的照片都是固定在一个视角的
 
-在deforum里面，我们可以通过设置参数
+在`deforum`里面，我们可以通过设置参数
 
 让视频跟着我们设置的参数动起来，让视频变得更加有趣
 
-打开deforum的关键帧界面
+打开`deforum`的关键帧界面
 
-先把动画模式设置成“3D”，右边的参数设置成“wrap”
+先把动画模式设置成`3D`，右边的参数设置成`wrap`
 
 往下看，运动参数里面的所有设置都是为了让我们的照片动起来的
 
@@ -396,17 +398,17 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 接下来我们来看看这些参数到底怎么控制视频运动
 
-我们以“平移X”为例子，看看视频镜头是怎么运动的
+我们以`平移 X`为例子，看看视频镜头是怎么运动的
 
 ![](img/47716795af9c7690558352ede1b5cca4.png)
 
-默认状态下的参数是：0:(0)
+默认状态下的参数是：`0:(0)`
 
 前面的0代表的是第0帧，括号的0代表的是不运动
 
-当括号里面的数值**大于**0的时候，视频镜头向**右**移动
+当括号里面的数值大于0的时候，视频镜头向右移动
 
-当括号里面的数值**小于**0的时候，视频镜头向**左**移动
+当括号里面的数值小于0的时候，视频镜头向左移动
 
 比如现在我想让视频镜头前半段向右移动，后半段向左移动
 
@@ -414,15 +416,15 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 一直向右移动直到第60帧，变成速度为2的向左移动
 
-写出来就变成：**0: (2),60:(-2)**
+写出来就变成：`0: (2),60:(-2)`
 
-要注意的是：**中间用逗号隔开**
+要注意的是：中间用逗号隔开
 
 ![](img/449aaf32d94847f158d0533d83cc7e72.png)
 
 那如果说现在镜头从第0帧开始一直向右运动，运动到一半我想让镜头定住不动了
 
-写出来就变成：**0: (2),60:(0)**
+写出来就变成：`0: (2),60:(0)`
 
 ![](img/080940d380a7b3236483c6c1206dbc16.png)
 
@@ -432,9 +434,12 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 大家可以看下面的表格，当参数大于0或者小于0时，镜头是怎么运动的
 
-|  | 平移 Y | 平移 Z | Rotation 3D X | Rotation 3D Y | Rotation 3D Z |
+|  | `平移 Y` | `平移 Z` | `Rotation 3D X` | `Rotation 3D Y` | `Rotation 3D Z` |
+
 | --- | --- | --- | --- | --- | --- |
+
 | 大于0 | 向上 | 放大 | 从远到近旋转 | 从右到左的旋转 | 逆时针旋转 |
+
 | 小于0 | 向下 | 缩小 | 从近到远旋转 | 从左到右的旋转 | 顺时针旋转 |
 
 > 具体的运动方式大家可以自己去试试看
@@ -455,13 +460,13 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 具体的步骤：
 
-1.导入照片
+1. 导入照片
 
-2.写提示词
+2. 写提示词
 
-3.设置镜头运动
+3. 设置镜头运动
 
-4.生成视频
+4. 生成视频
 
 就以这张大家都熟知的照片作为开头第一帧的照片
 
@@ -471,9 +476,15 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 ## 1.导入照片
 
+
+
+# 六、Deforum 基础操作
+
+## 1. 导入初始图像
+
 首先要把这张照片先导入到deforum里面
 
-鼠标右键点击照片，点击“复制文件地址
+鼠标右键点击照片，点击“复制文件地址”
 
 打开deforum的“初始化”界面
 
@@ -487,7 +498,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 这样的我们的照片就导入进来了
 
-## 2.写提示词
+## 2. 写提示词
 
 接下来就要想一下我们要生成一条什么样的视频
 
@@ -507,7 +518,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 这样我们提示词就写完了
 
-## 3.设置镜头运动
+## 3. 设置镜头运动
 
 接下来为了让视频更加有趣，稍微设置一下镜头运动
 
@@ -515,7 +526,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 ![](img/353a0e0bbe0668a2a1ae5e21ad22b853.png)
 
-## 4.生成视频
+## 4. 生成视频
 
 全部参数设置好了之后,点击“生成”，就可以生成视频啦
 
@@ -583,7 +594,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 我们直接照抄就行
 
-## 1.采样器
+## 1. 采样器
 
 首先是采样器，比较常用的就是图片框起来那个
 
@@ -591,7 +602,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 ![](img/14e02b84903b8a8b0efdcfe386c6f77f.png)
 
-## 2.迭代步数
+## 2. 迭代步数
 
 电脑配置稍微低一点的就设置在20~25
 
@@ -601,7 +612,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 ![](img/0284ca589aead6ed3999962c4e3f839d.png)
 
-## 3.视频大小
+## 3. 视频大小
 
 这个宽度和高度是用来调整视频大小的
 
@@ -613,7 +624,7 @@ nsfw, nude,(worst quality:2), (low quality:2), (normal quality:2), lowres, ((mon
 
 ![](img/67c5f0eeba1d4da964d463891b598cbc.png)
 
-## 4.保存预设
+## 4. 保存预设
 
 大家可以看到deforum里面可以设置的参数很多
 

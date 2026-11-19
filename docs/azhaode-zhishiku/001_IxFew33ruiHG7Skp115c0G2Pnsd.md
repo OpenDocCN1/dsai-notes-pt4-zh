@@ -1,3 +1,4 @@
+
 # 阿赵的AIGC资料库丨持续更新中
 
 > 来源：[https://my.feishu.cn/docx/NIHVdYWDfoKeYTxHHATcSnPqnFd](https://my.feishu.cn/docx/NIHVdYWDfoKeYTxHHATcSnPqnFd)
@@ -10,7 +11,7 @@
 
 ---
 
-### **基础理论知识：**
+## 基础理论知识
 
 [2万字快速了解AIGC](http://mp.weixin.qq.com/s?__biz=MzIwNzU5MDk2NQ==&mid=2247490903&idx=1&sn=2da244bfe26aa29958522da047305620&chksm=97115e0da066d71b9b76167da653e151c391359a61c6dd8b221f38d52a9049f40a3ef65e9a3e&scene=21#wechat_redirect)丨[6万字科普文上](http://mp.weixin.qq.com/s?__biz=MzIwNzU5MDk2NQ==&mid=2247491381&idx=1&sn=38356a26f5e9f38afc10541774a89808&chksm=97115c6fa066d579ab5b1cd9b83a882ebccfd88fbc3d21aee3eed9a3920efee04bf217075e6f&scene=21#wechat_redirect)丨[下集](http://mp.weixin.qq.com/s?__biz=MzIwNzU5MDk2NQ==&mid=2247491381&idx=2&sn=5947de4b64190b34080793851dbbb848&chksm=97115c6fa066d57980238753bec9a69cfba430a17ca1374a5b5ec98c36949fd329fb55fbfdb8&scene=21#wechat_redirect)
 
@@ -42,15 +43,13 @@ AIGC零基础入门指南-学习篇
 
 ---
 
-### 精选行业报告**：**
-
-#### AI应用产品排行
+## 精选行业报告
 
 [AI应用产品榜](https://dnipkggqxh.feishu.cn/wiki/VOmnw4XwwikE2Jksri5cFR9Lnzg)丨[AI公司融资榜](https://dnipkggqxh.feishu.cn/wiki/DX13w0MkLiWqE1kxjjgcZP9MnFf?table=tbl8E7JTXEy1myP1&view=vewG251Nbb)
 
-### 阿赵的**所见所得：**
+## 阿赵的所见所得
 
-**陪你从零开始了解AIGC**
+陪你从零开始了解AIGC
 
 [2万字快速了解AIGC](http://mp.weixin.qq.com/s?__biz=MzIwNzU5MDk2NQ==&mid=2247490903&idx=1&sn=2da244bfe26aa29958522da047305620&chksm=97115e0da066d71b9b76167da653e151c391359a61c6dd8b221f38d52a9049f40a3ef65e9a3e&scene=21#wechat_redirect)丨[6万字科普文上](http://mp.weixin.qq.com/s?__biz=MzIwNzU5MDk2NQ==&mid=2247491381&idx=1&sn=38356a26f5e9f38afc10541774a89808&chksm=97115c6fa066d579ab5b1cd9b83a882ebccfd88fbc3d21aee3eed9a3920efee04bf217075e6f&scene=21#wechat_redirect)丨[下集](http://mp.weixin.qq.com/s?__biz=MzIwNzU5MDk2NQ==&mid=2247491381&idx=2&sn=5947de4b64190b34080793851dbbb848&chksm=97115c6fa066d57980238753bec9a69cfba430a17ca1374a5b5ec98c36949fd329fb55fbfdb8&scene=21#wechat_redirect)
 
@@ -62,7 +61,7 @@ AIGC零基础入门指南-学习篇
 
 耗时1个月，我做了本《AIGC入门小黑册》
 
-**头部企业正在如何用AI？**
+### 头部企业正在如何用AI？
 
 腾讯运营团队在不同业务场景下的使用技巧
 
@@ -82,7 +81,7 @@ AI时代，蒙牛正在借助AI驱动新智生产力
 
 阿里设计团队正在如何用AI为企业做设计
 
-### 优质👸号推荐**：**
+## 优质👸号推荐
 
 机器之心
 
@@ -98,46 +97,47 @@ AI时代，蒙牛正在借助AI驱动新智生产力
 
 Founder Park
 
-
 AI新榜
-
 
 量子位
 
 ![](img/cf6ce270b214e23933d5200b552cb41b.png)
 
-### 优质视频博主推荐
+## 优质视频博主推荐
 
 [图灵的猫](https://space.bilibili.com/371846699)
 
-
 [AI研究室-帆哥](https://space.bilibili.com/2161614/?spm_id_from=333.999.0.0)
 
-
-### 每周行业资讯**：**
+## 每周行业资讯
 
 [歸藏的AIGC周刊](https://quail.ink/op7418/)
 
-
 [小胡AI日报](https://xiaohu.ai/)
 
-
-### 优质资料合集**：**
+## 优质资料合集
 
 [通往AGI之路](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
 
 ![](img/b6c015c3d474957f1fe8a66e3e2f222c.png)
 
-| [新手入门路径](https://waytoagi.feishu.cn/wiki/RJofwtPcci6YMJkzBP2cRFFOnIR) | [入门课程推荐](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&amp;view=veweFm2l9w) | [入门文章推荐](https://waytoagi.feishu.cn/wiki/F8OMwrI3TisTPokQAJHcMG2knBh) |
-| --- | --- | --- |
-| [提示词句式](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tblRWtLCWkfYFUpl&amp;view=vewVqzhdRb) | [提示词技巧](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbljThjDXX4mNdBs&amp;view=vewo2g2ktO) | [提示词示例](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tblKrq5ConWWamYX&amp;view=vewY4M4UDm) |
-| [AI Agent智能体](https://waytoagi.feishu.cn/wiki/GFS0wJB78izVBmk3LVgcCn2MnCh) | [AI Agent学习路径](https://waytoagi.feishu.cn/wiki/QSVJwSkMfijmeZkcUSnckVXhnnd) | - |
-| [AI绘画](https://waytoagi.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb) | [AI视频](https://waytoagi.feishu.cn/wiki/SPXQwl5TXiau0mkKb1zcqHxVnEm) | [AI音乐](https://waytoagi.feishu.cn/wiki/P7N8wwy0tirs79klAgJc6FlCn0d) |
-| [AI数字人](https://waytoagi.feishu.cn/wiki/IOO6wQKDKiMrmzk1oDxcGFpFnFh) | [AI 3D](https://waytoagi.feishu.cn/wiki/TRJEwdbQEiJjvykq8nJc6juvn6g) | - |
-| [AI工具精选](https://waytoagi.feishu.cn/wiki/XCiTww8c6iEPyWkDa7IcWAv3n7g?table=tbldn9PphRqWcB2X&amp;view=vewlWAyVx6) | [AI行业报告](https://waytoagi.feishu.cn/wiki/WvhZwk16WiEnSvk8AcpcdZetnMe?table=ldxthSdnltXbtSvg) | [AI视频精选](https://waytoagi.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&amp;view=vew68BlUHo) |
-| [AI好图分享](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblyh76bHrCi4PXq&amp;view=vewUunvDn1) | [AI书籍推荐](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&amp;view=vewjfsOgyJ) | [AI信息源](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblgixk9XUcxuSFa&amp;view=vewfKOofLh) |
+| [新手入门路径](https://waytoagi.feishu.cn/wiki/RJofwtPcci6YMJkzBP2cRFFOnIR) | [入门课程推荐](https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd?table=tblWqPFOvA24Jv6X&view=veweFm2l9w) | [入门文章推荐](https://waytoagi.feishu.cn/wiki/F8OMwrI3TisTPokQAJHcMG2knBh) |
 
-[ 写出高质量 Prompt](https://langgptai.feishu.cn/wiki/C9i7wrU4eir4BmkIgQucUYUQndd)丨[高质Prompt合集](https://langgptai.feishu.cn/wiki/JCZHwwrsOizzaOktD4fcuGbFnzg)丨[李继刚Prompt合集](https://waytoagi.feishu.cn/wiki/OWTow2oPViaMZ4ky2CKcRI30nGg)丨
+| --- | --- | --- |
+
+| [提示词句式](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tblRWtLCWkfYFUpl&view=vewVqzhdRb) | [提示词技巧](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tbljThjDXX4mNdBs&view=vewo2g2ktO) | [提示词示例](https://waytoagi.feishu.cn/wiki/Q5mXww4rriujFFkFQOzc8uIsnah?table=tblKrq5ConWWamYX&view=vewY4M4UDm) |
+
+| [AI Agent智能体](https://waytoagi.feishu.cn/wiki/GFS0wJB78izVBmk3LVgcCn2MnCh) | [AI Agent学习路径](https://waytoagi.feishu.cn/wiki/QSVJwSkMfijmeZkcUSnckVXhnnd) | - |
+
+| [AI绘画](https://waytoagi.feishu.cn/wiki/Q5ddwxfkMiVUZBkQXN7cgXf4nOb) | [AI视频](https://waytoagi.feishu.cn/wiki/SPXQwl5TXiau0mkKb1zcqHxVnEm) | [AI音乐](https://waytoagi.feishu.cn/wiki/P7N8wwy0tirs79klAgJc6FlCn0d) |
+
+| [AI数字人](https://waytoagi.feishu.cn/wiki/IOO6wQKDKiMrmzk1oDxcGFpFnFh) | [AI 3D](https://waytoagi.feishu.cn/wiki/TRJEwdbQEiJjvykq8nJc6juvn6g) | - |
+
+| [AI工具精选](https://waytoagi.feishu.cn/wiki/XCiTww8c6iEPyWkDa7IcWAv3n7g?table=tbldn9PphRqWcB2X&view=vewlWAyVx6) | [AI行业报告](https://waytoagi.feishu.cn/wiki/WvhZwk16WiEnSvk8AcpcdZetnMe?table=ldxthSdnltXbtSvg) | [AI视频精选](https://waytoagi.feishu.cn/wiki/LEnvwwEy0iufT3k4kfVc8Ehenvf?table=tbllpoPWJn6MNOR6&view=vew68BlUHo) |
+
+| [AI好图分享](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblyh76bHrCi4PXq&view=vewUunvDn1) | [AI书籍推荐](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tbl2sA7TLn8L4uYp&view=vewjfsOgyJ) | [AI信息源](https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2🐧FcdTWrnlb?table=tblgixk9XUcxuSFa&view=vewfKOofLh) |
+
+[写出高质量 Prompt](https://langgptai.feishu.cn/wiki/C9i7wrU4eir4BmkIgQucUYUQndd)丨[高质Prompt合集](https://langgptai.feishu.cn/wiki/JCZHwwrsOizzaOktD4fcuGbFnzg)丨[李继刚Prompt合集](https://waytoagi.feishu.cn/wiki/OWTow2oPViaMZ4ky2CKcRI30nGg)丨
 
 ![](img/b7acb754a7940c72288ca5a5964bab4f.png)
 
@@ -145,9 +145,7 @@ AI新榜
 
 > 正在看：阿赵的AI资料库
 
-
 > 可前往：[阿赵的AI工具库](https://mq1nzy47gs.feishu.cn/wiki/KHmYwQs9BipuPrkGcgPcRfH3njh)
-
 
 > 可前往：[阿赵的AI案例库](https://mq1nzy47gs.feishu.cn/wiki/YJr5wpanBiRCdvkI0bFcRehZnlg)
 

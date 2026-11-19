@@ -1,8 +1,9 @@
+
 # 添加资源文件和参考资料
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/HNfBd6Zp1oCPcUxyqvYcbua6nIg](https://qqs7y1hozd1.feishu.cn/docx/HNfBd6Zp1oCPcUxyqvYcbua6nIg)
 
-随着Skill的复杂度增加，仅仅依靠SKILL.md文件来承载所有信息会变得越来越困难。本节将教你如何通过添加资源文件和参考资料来增强Skill的功能，使其更加专业和易于维护。
+随着Skill的复杂度增加，仅仅依靠`SKILL.md`文件来承载所有信息会变得越来越困难。本节将教你如何通过添加资源文件和参考资料来增强Skill的功能，使其更加专业和易于维护。
 
 资源文件和参考资料是Skill生态系统的重要组成部分，它们可以提供额外的上下文、示例代码、配置模板等，帮助Claude更好地理解和执行任务。
 
@@ -10,7 +11,7 @@
 
 Skill支持多种类型的资源文件，每种类型都有其特定的用途：
 
-### 参考文档 (references/)
+### 参考文档 (`references/`)
 
 存放详细的指导文档和技术规范：
 
@@ -22,7 +23,7 @@ Skill支持多种类型的资源文件，每种类型都有其特定的用途：
 
 +   术语表：专业术语的定义和解释
 
-### 资源文件 (assets/)
+### 资源文件 (`assets/`)
 
 存放可执行或使用的具体资源：
 
@@ -40,7 +41,7 @@ Skill支持多种类型的资源文件，每种类型都有其特定的用途：
 
 +   测试文件：验证Skill功能的测试用例
 
-+   README文件：Skill的使用说明和安装指南
++   `README`文件：Skill的使用说明和安装指南
 
 ## 目录组织
 
@@ -69,19 +70,19 @@ my-skill/
 
 ### 目录命名约定
 
-+   使用小写字母和连字符：my-skill 而不是 MySkill
++   使用小写字母和连字符：`my-skill` 而不是 `MySkill`
 
-+   保持名称简洁明了：api-docs 而不是 application_programming_interface_documentation
++   保持名称简洁明了：`api-docs` 而不是 `application_programming_interface_documentation`
 
-+   使用复数形式表示集合：scripts/ 而不是 script/
++   使用复数形式表示集合：`scripts/` 而不是 `script/`
 
-## 在SKILL.md中引用方法
+## 在`SKILL.md`中引用方法
 
-SKILL.md可以通过相对路径引用资源文件，Claude会自动加载相关内容：
+`SKILL.md`可以通过相对路径引用资源文件，Claude会自动加载相关内容：
 
 ### 直接引用文件
 
-在SKILL.md中使用相对路径引用：
+在`SKILL.md`中使用相对路径引用：
 
 ```
 ## 故障排除
@@ -95,23 +96,22 @@ SKILL.md可以通过相对路径引用资源文件，Claude会自动加载相关
 
 ### 嵌入代码示例
 
-将资源文件的内容嵌入到SKILL.md中：
+将资源文件的内容嵌入到`SKILL.md`中：
 
-```
+````
 ## 快速开始
 
 以下是基本的配置示例：
 
 ```json
-// 从 assets/templates/config.json 复制的内容
 {
-  &quot;database&quot;: {
-    &quot;host&quot;: &quot;localhost&quot;,
-    &quot;port&quot;: 5432
+  "database": {
+    "host": "localhost",
+    "port": 5432
   }
 }
 ```
-```
+````
 
 ### 条件性引用
 
@@ -134,11 +134,11 @@ SKILL.md可以通过相对路径引用资源文件，Claude会自动加载相关
 
 ### 版本控制策略
 
-+   主版本：SKILL.md 中的核心逻辑
++   主版本：`SKILL.md` 中的核心逻辑
 
 +   资源版本：参考资料的更新频率
 
-+   同步更新：确保SKILL.md和资源文件的一致性
++   同步更新：确保`SKILL.md`和资源文件的一致性
 
 ### 内容维护原则
 
@@ -162,7 +162,7 @@ SKILL.md可以通过相对路径引用资源文件，Claude会自动加载相关
 
 +   按需加载：只在需要时引用资源文件
 
-+   分层设计：基础功能在SKILL.md，详细信息在参考资料中
++   分层设计：基础功能在`SKILL.md`，详细信息在参考资料中
 
 +   缓存策略：利用Claude的上下文缓存机制
 
@@ -172,11 +172,11 @@ SKILL.md可以通过相对路径引用资源文件，Claude会自动加载相关
 
 +   命名清晰：使用描述性的文件名便于理解
 
-+   索引文件：在references目录中提供index.md作为导航
++   索引文件：在`references`目录中提供`index.md`作为导航
 
 ### 加载性能
 
-+   延迟加载：在SKILL.md中提供概要，在资源文件中提供细节
++   延迟加载：在`SKILL.md`中提供概要，在资源文件中提供细节
 
 +   条件引用：根据用户需求动态引用相关资源
 
@@ -196,9 +196,9 @@ mkdir -p data-analysis-skill/{references,assets/{scripts,templates,data},tests}
 
 1.  添加参考资料：
 
-```
+````
 # 创建API文档
-cat &gt; data-analysis-skill/references/pandas-api.md &lt;&lt; &#x27;EOF&#x27;
+cat > data-analysis-skill/references/pandas-api.md << 'EOF'
 # Pandas API 参考
 
 ## 常用操作
@@ -208,7 +208,7 @@ cat &gt; data-analysis-skill/references/pandas-api.md &lt;&lt; &#x27;EOF&#x27;
 import pandas as pd
 
 # 读取CSV文件
-df = pd.read_csv(&#x27;data.csv&#x27;)
+df = pd.read_csv('data.csv')
 ```
 
 ### 数据清洗
@@ -217,12 +217,12 @@ df = pd.read_csv(&#x27;data.csv&#x27;)
 df.dropna(inplace=True)
 
 # 数据类型转换
-df[&#x27;date&#x27;] = pd.to_datetime(df[&#x27;date&#x27;])
+df['date'] = pd.to_datetime(df['date'])
 ```
 EOF
-```
+````
 
-1.  在SKILL.md中引用：
+1.  在`SKILL.md`中引用：
 
 ```
 ---

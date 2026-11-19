@@ -1,8 +1,9 @@
+
 # OpenAI Agent发布会深度解读
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/T7gPdhE5voLhCJxpPyocCxfdnwh](https://kq4b3vgg5b.feishu.cn/docx/T7gPdhE5voLhCJxpPyocCxfdnwh)
 
-**正当人们还在热火朝**天的讨论Manus的时候，OpenAI发布了两年以来最大的更新，重磅上线4大项Agent开发套件以及一个开源项目，从此开发者几行代码就可以创建一个专属的Manus。
+正当人们还在热火朝天的讨论Manus的时候，OpenAI发布了两年以来最大的更新，重磅上线4大项Agent开发套件以及一个开源项目，从此开发者几行代码就可以创建一个专属的Manus。
 
 ![](img/d4cf93348c17ffef7b4ea81836c947a9.png)
 
@@ -12,7 +13,7 @@
 
 [20250312052821_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SAogb5RdWoyiaUxrZFPcrW3QnMg)
 
-也有人实现了computer use，全自动爬取网络信息，
+也有人实现了`Computer use`，全自动爬取网络信息，
 
 ![](img/75870146a80ff6e94cf842e24f7a3689.png)
 
@@ -30,11 +31,11 @@
 
 [20250312053006_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AHC5bAkoloNevYxJAArc7qLvnWb)
 
-甚至，在这场发布会上，我们还看到了OpenAI的开源的诚意，首次发布了一款工业级Multi-Agent开发框架，OpenAI Agents SDK。
+甚至，在这场发布会上，我们还看到了OpenAI的开源的诚意，首次发布了一款工业级Multi-Agent开发框架，`OpenAI Agents SDK`。
 
 ![](img/93d7a6b75cc3dec2fee75f116a142484.png)
 
-可以说OpenAI这的场发布会，对于Agent技术来说，就如23年11月的OpenAI开发者大会一样，意义非凡。
+可以说OpenAI这场发布会，对于Agent技术来说，就如23年11月的OpenAI开发者大会一样，意义非凡。
 
 ![](img/1242708248b02faaf611c3fc533d8371.png)
 
@@ -46,15 +47,17 @@
 
 ![](img/115b6a024828f051664c1845ab13ac6f.png)
 
+## 发布会背景与核心更新
+
 北京时间3月12号凌晨，OpenAI召开直播发布会，尽管没有提前预热，也没有类似GPT4.5这种噱头来镇场，但这次发布的内容，绝对足以颠覆现有Agent技术开发格局。
 
-本次发布会由OpenAI产品负责人Kevin主持，短短的20分钟不到，总共发布了4项新的API工具，分别是Web Search、File Search、Computer use、Response API，以及一个开源项目OpenAI Agents SDK。
+本次发布会由OpenAI产品负责人Kevin主持，短短的20分钟不到，总共发布了4项新的API工具，分别是`Web Search`、`File Search`、`Computer use`、`Response API`，以及一个开源项目`OpenAI Agents SDK`。
 
 ![](img/7eba6635622155f66525155df512b43c.png)
 
 [20250312043553_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/En4TbcOgfo7V9SxEZZHcEno7npf)
 
-这5个工具乍一看感觉并不惊艳，但事实并没有那么简单。首先来看这次发布的Response API，这是OpenAI两年来最大的底层API更新，从今天开始，开发者可以不再使用chat.completions API来调用模型，而是直接调用responses API来调用模型。要知道上一次底层API的更换，还是两年前，GPT3模型升级到GPT4模型的时候。
+这5个工具乍一看感觉并不惊艳，但事实并没有那么简单。首先来看这次发布的`Response API`，这是OpenAI两年来最大的底层API更新，从今天开始，开发者可以不再使用`chat.completions API`来调用模型，而是直接调用`responses API`来调用模型。要知道上一次底层API的更换，还是两年前，GPT3模型升级到GPT4模型的时候。
 
 ![](img/0d60b1c938280df15b2b2eb55b1d710f.png)
 
@@ -66,15 +69,17 @@
 
 [20250312045228_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TwzpbyiV1oWAU3xqscDcMYkonLh)
 
-同时，在右侧进行任何代码修改，都能在左边的浏览器中实时看到效果。这看着就非常酷炫，是的，这就是全新的Response API的功能效果，自此，AI开发进入全民级前后端一体式开发新时代。这么看，确实值得进行一次底层API的大更新。
+同时，在右侧进行任何代码修改，都能在左边的浏览器中实时看到效果。这看着就非常酷炫，是的，这就是全新的`Response API`的功能效果，自此，AI开发进入全民级前后端一体式开发新时代。这么看，确实值得进行一次底层API的大更新。
 
-此外，新的Response API还能支持发布会上发布的其他三项工具，也就是Web Search、File Search和Computer use。尽管这三项功能听着耳熟，好像我们在别的地方也能看到这些功能，但OpenAI实现的程度，各个都是王炸级别。举个例子，普通的Web Search就是上网搜集并汇总信息，而OpenAI的Web Search是Deep Research的API实现版！什么意思呢，前段时间，大家被Manus的网络搜索和长文本编写能力所震撼，如搜索并编写一篇研报，
+## 三大核心能力详解
+
+此外，新的`Response API`还能支持发布会上发布的其他三项工具，也就是`Web Search`、`File Search`和`Computer use`。尽管这三项功能听着耳熟，好像我们在别的地方也能看到这些功能，但OpenAI实现的程度，各个都是王炸级别。举个例子，普通的`Web Search`就是上网搜集并汇总信息，而OpenAI的`Web Search`是`Deep Research`的API实现版！什么意思呢，前段时间，大家被Manus的网络搜索和长文本编写能力所震撼，如搜索并编写一篇研报，
 
 ![](img/ffe40daceee2aa5935e7fc24a0ca5720.png)
 
 [20250310141421_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E2mmbCpxAoXM90xHTpCc9dUJnVc)
 
-而现在，OpenAI的Web Search，只需要三行代码即可实现相同功能。搜索又快有准
+而现在，OpenAI的`Web Search`，只需要三行代码即可实现相同功能。搜索又快有准
 
 ![](img/b99a5fa7436956c415ddb752e186b8d8.png)
 
@@ -84,49 +89,53 @@
 
 [20250312040632_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C1JJbG7vQoGQCoxU958cu3GRnIC)
 
-大家之前如果体验过ChatGPT的DeepResearch应该能感受到。
+大家之前如果体验过ChatGPT的`DeepResearch`应该能感受到。
 
 ![](img/0f6a6a47d24bab577343d545c1edee0f.png)
 
 ![](img/36b765575286fd5f6872673fb98e8ecf.png)
 
-再比如File Search，听着感觉就是RAG知识库检索功能，但实际上OpenAI的File Search最高支持100G海量文档检索，可以检索十几种主流类型的文件。这就不是简单的RAG系统了。
+再比如`File Search`，听着感觉就是RAG知识库检索功能，但实际上OpenAI的`File Search`最高支持100G海量文档检索，可以检索十几种主流类型的文件。这就不是简单的RAG系统了。
 
 ![](img/cc718671dfdb10acda3893d12cf6a91a.png)
 
-值得一提的是，这个File Search就是OpenAI的Assistant API中的文件检索功能的升级版，这套RAG系统可谓是OpenAI的看家本领，我们并不知道OpenAI是如何对100G海量文档进行检索的，但之前我们在使用Assistant API的时候确实能感受到，这套检索系统的性能完全不输GraphRAG，可以说是我所用过的最强的文本RAG系统。
+值得一提的是，这个`File Search`就是OpenAI的`Assistant API`中的文件检索功能的升级版，这套RAG系统可谓是OpenAI的看家本领，我们并不知道OpenAI是如何对100G海量文档进行检索的，但之前我们在使用`Assistant API`的时候确实能感受到，这套检索系统的性能完全不输`GraphRAG`，可以说是我所用过的最强的文本RAG系统。
 
-紧接着，第三个功能，也是这次发布会的最劲爆的功能，computer use。谁能想到，这个由Claude母公司，Anthropic在去年10月提出的实验性质的功能，现在由OpenAI发布了工业级解决方案。
+紧接着，第三个功能，也是这次发布会的最劲爆的功能，`Computer use`。谁能想到，这个由Claude母公司，Anthropic在去年10月提出的实验性质的功能，现在由OpenAI发布了工业级解决方案。
 
 ![](img/03deafaf8efeacf36ae36dcb531735aa.png)
 
 [20250311133419.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hhj5bOai8oiRcLxnHGbczXZvnlB)
 
-所谓computer use，指的是让大模型看到电脑屏幕，并在了解电脑界面操作逻辑的基础上，全自动的代替人来操作电脑。
+所谓`Computer use`，指的是让大模型看到电脑屏幕，并在了解电脑界面操作逻辑的基础上，全自动的代替人来操作电脑。
 
 ![](img/88541f86a775cfaf51bab01ade62ae61.png)
 
-大家其实能想象的到啊，电脑能力的边界，不就是现阶段人工智能的能力边界么？所以，自从computer use技术概念诞生以来，就被视作是大模型Agent的终极形态。
+大家其实能想象的到啊，电脑能力的边界，不就是现阶段人工智能的能力边界么？所以，自从`Computer use`技术概念诞生以来，就被视作是大模型Agent的终极形态。
 
-之前爆火的Manus，其技术本质就是computer use，只不过操作的不是本地的电脑，而是在沙盒环境中的云端的电脑。Manus的网页浏览、在线编程、进行文件管理等功能，本质上都是基于一个云端的电脑，借助computer use功能来完成的。
+之前爆火的Manus，其技术本质就是`Computer use`，只不过操作的不是本地的电脑，而是在沙盒环境中的云端的电脑。Manus的网页浏览、在线编程、进行文件管理等功能，本质上都是基于一个云端的电脑，借助`Computer use`功能来完成的。
 
 ![](img/97f88a8d3ae273acf29d56f1b5c495d3.png)
 
-而现在，OpenAI开放computer use API，让全体的开发者都借助这一功能来进行Agent开发。这个功能也被称作压垮Manus的最后一根稻草，不是，也被称作开启未来Agent发展之路的钥匙。
+而现在，OpenAI开放`Computer use` API，让全体的开发者都借助这一功能来进行Agent开发。这个功能也被称作压垮Manus的最后一根稻草，不是，也被称作开启未来Agent发展之路的钥匙。
 
-在OpenAI computer use功能上线的第一时间，外网就有大量用户评测出炉，无论是操作网页还是处理本地数据，都非常惊艳。
+在OpenAI `Computer use`功能上线的第一时间，外网就有大量用户评测出炉，无论是操作网页还是处理本地数据，都非常惊艳。
 
 ![](img/0384ae59104a53cfca0d294c435aad13.png)
 
 [20250312053333_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SWYIbrF8EoHYePxEpi6cdwM6nHb)
 
-当然，以上所有的功能，Web Search、File Search和Computer use，在response API调度下，都可以自由组装来构成复杂问题的解决流程，比如我想要制定一个旅行计划，那就需要Web Search搜集信息、File Search来检索我的出行习惯、同时需要Computer use来帮我预定机票旅馆等，并且，response API还能监督每个环节的执行情况，遇到问题会自动debug，从而保障任务完成率。甚至OpenAI还提供了一个任务管理的后台，让开发者一目了然查看目前Agent执行进度。
+## 工具组装与任务编排
+
+当然，以上所有的功能，`Web Search`、`File Search`和`Computer use`，在`response API`调度下，都可以自由组装来构成复杂问题的解决流程，比如我想要制定一个旅行计划，那就需要`Web Search`搜集信息、`File Search`来检索我的出行习惯、同时需要`Computer use`来帮我预定机票旅馆等，并且，`response API`还能监督每个环节的执行情况，遇到问题会自动`debug`，从而保障任务完成率。甚至OpenAI还提供了一个任务管理的后台，让开发者一目了然查看目前Agent执行进度。
 
 ![](img/ebf3aa29449c1b69e962b1d6f2516512.png)
 
 [20250312052821_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OXdPbMTOPoXHPhxwkrXcK8Pbnwf)
 
-而最最最关键的是，OpenAI还开源了能实现response API全套功能的OpenAI Agents SDK，不同于去年开源的swarm是一个实验项目，现在的Agents SDK是一个真正意义的企业级Multi Agent开发工具，这也是OpenAI截止目前最有诚意的开源项目。
+## OpenAI Agents SDK：企业级开源框架
+
+而最最最关键的是，OpenAI还开源了能实现`response API`全套功能的`OpenAI Agents SDK`，不同于去年开源的`swarm`是一个实验项目，现在的`Agents SDK`是一个真正意义的企业级Multi Agent开发工具，这也是OpenAI截止到目前为止最有诚意的开源项目。
 
 ![](img/1f4ffa8e0ba04c1c182e010d0bb1366f.png)
 

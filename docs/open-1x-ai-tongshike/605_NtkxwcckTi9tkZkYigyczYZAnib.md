@@ -1,30 +1,25 @@
+
 # 教程：AI 产品访谈整理
 
 > 来源：[https://datawhaler.feishu.cn/docx/L3lhdvlF5oIEI2xT8WvcDeYBnxg](https://datawhaler.feishu.cn/docx/L3lhdvlF5oIEI2xT8WvcDeYBnxg)
 
-> ✍️  作者：[纪伦的个人说明书](https://datawhaler.feishu.cn/wiki/AKxvw88QMiyg6NkxtYzc9evGnfc?from=from_copylink)
+> ✍️ 作者：[纪伦的个人说明书](https://datawhaler.feishu.cn/wiki/AKxvw88QMiyg6NkxtYzc9evGnfc?from=from_copylink)
 
 ## 学前须知
 
-+   **学习时间**：1天
++ **学习时间**：1天
 
-+   **学习难度**：简单，使用对应工具即可
++ **学习难度**：简单，使用对应工具即可
 
-+   **学习方式**：
++ **学习方式**：
 
-1.  在场景细分图中，找到自己需要的场景
+1. 在场景细分图中，找到自己需要的场景
+1. 找到对应的案例学习（参考小作业与参考教程）
+1. 学习优秀打卡案例，查漏补缺
+1. 选择感兴趣的小作业，跟着案例自己尝试做一遍。
+1. 尝试熟悉流程后，应用到实际工作中
 
-1.  找到对应的案例学习（参考小作业与参考教程）
-
-1.  学习优秀打卡案例，查漏补缺
-
-1.  选择感兴趣的小作业，跟着案例自己尝试做一遍。
-
-1.  尝试熟悉流程后，应用到实际工作中
-
->
-
-> 打卡核实后**「可获得证书」**，优秀打卡内容将被**「展出」**，特别优秀者会邀请来**「一起完善学习文档」**
+> 打卡核实后「可获得证书」，优秀打卡内容将被「展出」，特别优秀者会邀请来「一起完善学习文档」
 
 > 具体打卡要求详见：[【说明文档】打卡（非必须）](https://datawhaler.feishu.cn/wiki/UR4bwTSjJiAKFLkfqdCc8Dlgnld?from=from_copylink)
 
@@ -34,7 +29,7 @@
 
 ## 参考小作业
 
-多维表格（KmlTbcjQqazcK5sfCHvcZXkcn7d_tblBCE899vceUgHg）
+多维表格（`KmlTbcjQqazcK5sfCHvcZXkcn7d_tblBCE899vceUgHg`）
 
 ## 参考教程
 

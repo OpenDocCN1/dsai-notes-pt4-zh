@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（5月 16日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/G78xdTCKLo24NJx77NQcihiqnun](https://miracleplus.feishu.cn/docx/G78xdTCKLo24NJx77NQcihiqnun)
 
-# 资讯
+## 资讯
 
 ### 李飞飞解读创业方向「空间智能」，让AI真正理解世界
 
@@ -16,43 +17,41 @@ https://mp.weixin.qq.com/s/okhjWPp0is0ks3e_RvJO4g
 
 https://mp.weixin.qq.com/s/9iXb_sk0J5kPVUeS3CGhhw
 
-在大型语言模型的训练过程中，数据的处理方式至关重要。传统的方法通常通过将大量文档拼接并切分成等同于模型的上下文长度的训练序列。这虽然提高了训练效率，但也常导致文档的不必要截断，损害数据完整性，导致关键的上下文信息丢失，进而影响模型学习到的内容的逻辑连贯性和事实一致性，并使模型更容易产生幻觉。AWS AI Labs 的研究人员针对这一常见的拼接-分块文本处理方式进行了深入研究， 发现其严重影响了模型理解上下文连贯性和事实一致性的能力。这不仅影响了模型在下游任务的表现，还增加了产生幻觉的风险。针对这一问题，他们提出了一种创新的文档处理策略——最佳适配打包 （Best-fit Packing），通过优化文档组合来消除不必要的文本截断，并显著地提升了模型的性能且减少模型幻觉。这一研究已被ICML 2024接收。
+在大型语言模型的训练过程中，数据的处理方式至关重要。传统的方法通常通过将大量文档拼接并切分成等同于模型的上下文长度的训练序列。这虽然提高了训练效率，但也常导致文档的不必要截断，损害数据完整性，导致关键的上下文信息丢失，进而影响模型学习到的内容的逻辑连贯性和事实一致性，并使模型更容易产生幻觉。`AWS AI Labs` 的研究人员针对这一常见的拼接-分块文本处理方式进行了深入研究， 发现其严重影响了模型理解上下文连贯性和事实一致性的能力。这不仅影响了模型在下游任务的表现，还增加了产生幻觉的风险。针对这一问题，他们提出了一种创新的文档处理策略——`Best-fit Packing`，通过优化文档组合来消除不必要的文本截断，并显著地提升了模型的性能且减少模型幻觉。这一研究已被`ICML 2024`接收。
 
 ![](img/a3cf01eb7e602c0456d5f529a4af6c41.png)
 
-### 识别细胞也能用大模型了！清华系团队出品，已入选ICML 2024 | 开源
+### 大模型带来的生命科学领域突破，刚刚再传新进展
 
 https://mp.weixin.qq.com/s/lPTQsaN_kpvcTXtqEyZpPg
 
-**大模型带来的生命科学领域突破，**刚刚再传新进展。来自清华系，使用大模型实现了单细胞身份识别，同时模型LangCell也正式对外开源。它不仅可以准确识别细胞身份，还具有很强的零样本分析能力，论文已被ICML 2024录⽤。
+来自清华系，使用大模型实现了单细胞身份识别，同时模型`LangCell`也正式对外开源。它不仅可以准确识别细胞身份，还具有很强的零样本分析能力，论文已被`ICML 2024`录用。
 
 ![](img/fab0a60b2f3554c1788f3263011b11a5.png)
 
-### 微软研究院刘铁岩：AI for Science，憧憬一个人人都可参与科学发现的未来
+### 微软研究院刘铁岩：`AI for Science`，憧憬一个人人都可参与科学发现的未来
 
 https://mp.weixin.qq.com/s/G5iX0pkLIHoCMduWkjN0vA
 
-正处于起步阶段的AI for Science被认为是科学发现的第五范式。尽管目前对于AI for Science的定义和研究方向仍有诸多讨论，但这并不妨碍AI for Science已经开始在科学发现的实践中取得令人瞩目的成果。近年来，微软研究院科学智能中心杰出首席科学家刘铁岩博士和他的团队致力于推动AI for Science的发展和应用。在这篇署名文章中，刘铁岩博士将分享他对人工智能在科学领域关键研究方向的看法 ，以及对AI for Science未来前景的展望。
+正处于起步阶段的`AI for Science`被认为是科学发现的第五范式。尽管目前对于`AI for Science`的定义和研究方向仍有诸多讨论，但这并不妨碍`AI for Science`已经开始在科学发现的实践中取得令人瞩目的成果。近年来，微软研究院科学智能中心杰出首席科学家刘铁岩博士和他的团队致力于推动`AI for Science`的发展和应用。在这篇署名文章中，刘铁岩博士将分享他对人工智能在科学领域关键研究方向的看法 ，以及对`AI for Science`未来前景的展望。
 
 ![](img/fb0b0b620b2edf43ccc4e3827b547f21.png)
 
-### 行业首发多模态大模型辅助视障人士，vivo 看见 App 接入蓝心大模型
+### 行业首发多模态大模型辅助视障人士，`vivo` 看见 `App` 接入蓝心大模型
 
 https://www.ithome.com/0/768/466.htm
 
-vivo 今日宣布，vivo 看见 App 全新升级，接入蓝心大模型，成为行业首款多模态大模型视觉辅助产品。在 vivo 应用商店搜索“vivo 看见”。
+`vivo` 今日宣布，`vivo 看见 App` 全新升级，接入`蓝心大模型`，成为行业首款多模态大模型视觉辅助产品。在 `vivo` 应用商店搜索“`vivo 看见`”。
 
 ![](img/c9afa2508b128565f4b0663bb0a079ef.png)
 
-### 抖音试水AI电商，测试“AI购物小助手”
+### 抖音试水AI电商，测试“`AI购物小助手`”
 
 https://mp.weixin.qq.com/s/LQh8Th51gRq1G8OT22PGtw
 
-抖音电商正在测试首款面向C端的AI电商服务“AI购物小助手”。据悉，该业务从去年下半年就开始已着手研发，由上海团队负责，期望能够打造服务亿级用户的AI明星产品，通过AI技术提升用户购买体验以及业务效率。去年年底进行过小范围测试，其算法推荐机制是基于云雀大模型算法。
+抖音电商正在测试首款面向C端的AI电商服务“`AI购物小助手`”。据悉，该业务从去年下半年就开始已着手研发，由上海团队负责，期望能够打造服务亿级用户的AI明星产品，通过AI技术提升用户购买体验以及业务效率。去年年底进行过小范围测试，其算法推荐机制是基于`云雀大模型`算法。
 
-![](img/d705e233b508cb7ee5be9446856833aa.png)
-
-# 推特
+## 推特
 
 ### 奥特曼澄清：新的语音模式尚未推出，目前的是旧版，请期待新版！
 
@@ -60,33 +59,33 @@ https://mp.weixin.qq.com/s/LQh8Th51gRq1G8OT22PGtw
 
 https://x.com/sama/status/1790817315069771959
 
-另外，为了明确说明：新的语音模式尚未推出（尽管GPT-4o的文本模式已经推出）。你目前在应用中使用的是旧版本。
+另外，为了明确说明：新的语音模式尚未推出（尽管`GPT-4o`的文本模式已经推出）。你目前在应用中使用的是旧版本。
 
 新的版本非常值得期待！
 
 ![](img/cbbc7a2ed40da9289af126facdb9f610.png)
 
-### GPT-4o也被破解！一张图片劫持ChatGPT，打破几乎所有防御措施
+### `GPT-4o`也被破解！一张图片劫持`ChatGPT`，打破几乎所有防御措施
 
 贡献人：
 
 https://x.com/elder_plinius/status/1790879792474009949
 
-Pliny the Prompter ：
+`Pliny the Prompter` ：
 
 “⛓️💥 监狱破坏警报 ⛓️💥
 
-OPENAI: 被干掉了 🍆
+`OPENAI`: 被干掉了 🍆
 
-CHATGPT: 解放了 🤟
+`CHATGPT`: 解放了 🤟
 
 天啊！！！🙀
 
-只用一张图片就能完全劫持 ChatGPT 的行为，同时打破几乎所有的防护措施。
+只用一张图片就能完全劫持 `ChatGPT` 的行为，同时打破几乎所有的防护措施。
 
-没有文本提示，没有启用记忆，没有自定义指令，只需要一张图片和原版 gpt-4o。
+没有文本提示，没有启用记忆，没有自定义指令，只需要一张图片和原版 `gpt-4o`。
 
-我生成了一张图片，使用 LSB 隐写技术将越狱提示和多步骤指令编码到图片中，并将图片标题变成一个利用代码解释器的提示注入。就这么简单。
+我生成了一张图片，使用 `LSB` 隐写技术将越狱提示和多步骤指令编码到图片中，并将图片标题变成一个利用代码解释器的提示注入。就这么简单。
 
 AI 可以在互联网上散布数百万张带有越狱编码的图片，留下隐藏指令的痕迹供潜伏特工执行。真妙！
 
@@ -94,27 +93,27 @@ AI 可以在互联网上散布数百万张带有越狱编码的图片，留下�
 
 ![](img/ce2686535206c41f85f17a65de862f38.png)
 
-### Brockman分享GPT-4o生成图片：仅凭 GPT-4o 的图像生成能力就有很多可以探索的内容
+### Brockman分享`GPT-4o`生成图片：仅凭 `GPT-4o` 的图像生成能力就有很多可以探索的内容
 
 贡献人：
 
 https://x.com/gdb/status/1790869434174746805
 
-GPT-4o 生成的图片——仅凭 GPT-4o 的图像生成能力就有很多可以探索的内容。团队正努力将这些带给全世界。
+`GPT-4o` 生成的图片——仅凭 `GPT-4o` 的图像生成能力就有很多可以探索的内容。团队正努力将这些带给全世界。
 
 ![](img/b8a27ce5a490b1621a402d3a9c5cbaa4.png)
 
-### PaliGemma：sota 开源基础 VLM，设计用于快速、轻松且强大地转移到广泛的任务
+### `PaliGemma`：`sota` 开源基础 `VLM`，设计用于快速、轻松且强大地转移到广泛的任务
 
 贡献人：
 
 https://x.com/giffmana/status/1790444981418676360
 
-Lucas Beyer：
+`Lucas Beyer`：
 
-我们发布了 PaliGemma。我简短说一下，因为我还在度假：
+我们发布了 `PaliGemma`。我简短说一下，因为我还在度假：
 
-+   sota 开源基础 VLM，设计用于快速、轻松且强大地转移到广泛的任务上
++   `sota` 开源基础 `VLM`，设计用于快速、轻松且强大地转移到广泛的任务上
 
 +   也可以进行检测和分割
 
@@ -126,13 +125,13 @@ https://ai.google.dev/gemma/docs/paligemma
 
 ![](img/77d4479b66667bad20685736f5f66fb4.png)
 
-### OpenGPT-4o：开源可以本地运行的多模态模型！评论：妈妈我们终于有本地多模态模型啦
+### `OpenGPT-4o`：开源可以本地运行的多模态模型！评论：妈妈我们终于有本地多模态模型啦
 
 贡献人：
 
 https://x.com/osanseviero/status/1790413650689143205
 
-OpenGPT-4o：一个结合了 Mistral 的 Mixtral、Hugging Face 的 Idefics 和 NVIDIA 的 Streaming STT nemo 的演示。所有模型都是开放访问的，全部免费，并在一小时内创建完成。
+`OpenGPT-4o`：一个结合了 `Mistral` 的 `Mixtral`、`Hugging Face` 的 `Idefics` 和 `NVIDIA` 的 `Streaming STT nemo` 的演示。所有模型都是开放访问的，全部免费，并在一小时内创建完成。
 
 公告：https://huggingface.co/posts/KingNish/935677474633200
 
@@ -140,7 +139,7 @@ OpenGPT-4o：一个结合了 Mistral 的 Mixtral、Hugging Face 的 Idefics 和 
 
 ---
 
-Fareesh Vijayarangam评论：
+`Fareesh Vijayarangam`评论：
 
 > 妈妈，我们能有多模态吗？
 
@@ -150,13 +149,13 @@ Fareesh Vijayarangam评论：
 
 ![](img/f82cf44ec7c48614184e801a70eae211.png)
 
-### Ashpreet Bedi：11分钟用gpt-4o创建代理
+### Ashpreet Bedi：11分钟用`gpt-4o`创建代理
 
 贡献人：
 
 https://x.com/ashpreetbedi/status/1790790000713310284
 
-从头开始使用 gpt-4o 的代理 🔥 在 11 分钟内我们将构建：
+从头开始使用 `gpt-4o` 的代理 🔥 在 11 分钟内我们将构建：
 
 🌎 网络搜索代理 (2:40)
 
@@ -174,15 +173,15 @@ https://x.com/ashpreetbedi/status/1790790000713310284
 
 [ssstwitter.com_1715853970092.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N4DRbg2GIoyYvzxq31Kc9QWwndb)
 
-### Nathan Lambert分享斯坦福CS25讲座：对齐开放语言模型
+### Nathan Lambert分享斯坦福`CS25`讲座：对齐开放语言模型
 
 贡献人：
 
 https://x.com/natolambert/status/1790786038971113887
 
-对齐开放语言模型，这是我在斯坦福 CS25 上的一次讲座
+对齐开放语言模型，这是我在斯坦福 `CS25` 上的一次讲座
 
-内容涵盖了所有 LLaMA、Alpaca、Open Assistant、QLoRA、解锁 RLHF、Zephyr、Tulu、评估等的历史
+内容涵盖了所有 `LLaMA`、`Alpaca`、`Open Assistant`、`QLoRA`、解锁 `RLHF`、`Zephyr`、`Tulu`、评估等的历史
 
 YouTube: [https://youtube.com](https://youtube.com/watch?v=AdLgPmcrXwQ)/watch?v=AdLgPmcrXwQ
 
@@ -190,25 +189,25 @@ YouTube: [https://youtube.com](https://youtube.com/watch?v=AdLgPmcrXwQ)/watch?v=
 
 [ssstwitter.com_1715854129604.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UiDebD8WsoTgzOxxY5ecYkXhn0e)
 
-# 论文
+## 论文
 
-### 部署长上下文Transformer的挑战：理论性能峰值分析
+### 部署长上下文`Transformer`的挑战：理论性能峰值分析
 
 贡献人：
 
 链接：http://arxiv.org/abs/2405.08944v1
 
-基于Transformer的长文本生成模型为涌现的AI应用提供动力，如长达一小时的视频理解和项目级编码智能体。部署长上下文的Transformers（例如，100K到10M个token）与短上下文模型变体相比费用昂贵。从2024年开始，降低长上下文Transformer的成本正变成一项紧迫的研究和工程挑战。本文描述了一个并发编程框架，用于定量分析在有限GPU高带宽内存（HBM）制约下服务多个长上下文请求的效率挑战。我们详细分析了与4K上下文相比的所有额外计算成本都可以追溯到一个单一的来源：大规模的KV缓存。我们以A100 NVLink上的50K上下文34B GPT-3.5级模型为示例，并描述其大型KV缓存引发的四种部署挑战：（1）预填充长输入所需的计算时间和GPU内存远远多于短输入；（2）在预填充后，驻留在GPU HBM上的大型KV缓存大大限制了被服务的并发用户数量；（3）在解码期间，从HBM到SM反复读取KV缓存会大大增加延迟；（4）当KV缓存内存溢出时，从HBM交换到DDR会导致显着的上下文切换延迟。我们使用这个框架来分析现有的研究，并确定结合它们建立端到端系统的可能性。总的来说，这项工作为分析长上下文Transformer的部署奠定了基础，指明了降低1M上下文推理成本至与4K相同的方向。
+基于`Transformer`的长文本生成模型为涌现的AI应用提供动力，如长达一小时的视频理解和项目级编码智能体。部署长上下文的`Transformers`（例如，100K到10M个token）与短上下文模型变体相比费用昂贵。从2024年开始，降低长上下文`Transformer`的成本正变成一项紧迫的研究和工程挑战。本文描述了一个并发编程框架，用于定量分析在有限`GPU`高带宽内存（`HBM`）制约下服务多个长上下文请求的效率挑战。我们详细分析了与4K上下文相比的所有额外计算成本都可以追溯到一个单一的来源：大规模的`KV`缓存。我们以`A100 NVLink`上的50K上下文34B `GPT-3.5`级模型为示例，并描述其大型`KV`缓存引发的四种部署挑战：（1）预填充长输入所需的计算时间和`GPU`内存远远多于短输入；（2）在预填充后，驻留在`GPU HBM`上的大型`KV`缓存大大限制了被服务的并发用户数量；（3）在解码期间，从`HBM`到`SM`反复读取`KV`缓存会大大增加延迟；（4）当`KV`缓存内存溢出时，从`HBM`交换到`DDR`会导致显著的上下文切换延迟。我们使用这个框架来分析现有的研究，并确定结合它们建立端到端系统的可能性。总的来说，这项工作为分析长上下文`Transformer`的部署奠定了基础，指明了降低1M上下文推理成本至与4K相同的方向。
 
 ![](img/0d35a72e36c44d461cc8d6ffec63d61e.png)
 
-### **MS MARCO网络搜索：一个包含数百万**真实点击标签的大规模信息丰富的网络数据集
+### MS MARCO网络搜索：一个包含数百万真实点击标签的大规模信息丰富的网络数据集
 
 贡献人：
 
 链接：http://arxiv.org/abs/2405.07526v1
 
-近期在大型模型领域的突破强调了数据规模、标签和模态的关键重要性。本文介绍了MS MARCO Web Search，这是第一个大规模信息丰富的网络数据集，包括了数百万真实点击的查询文档标签。该数据集紧密模拟了现实世界的网络文档和查询分布，为各种下游任务提供了丰富信息，鼓励研究各种领域，如通用的端到端神经索引器模型、通用嵌入模型，以及具有大型语言模型的下一代信息访问系统。MS MARCO Web Search提供了一个检索基准，包括三个需要在机器学习和信息检索系统研究领域创新的网络检索挑战任务。作为符合大规模、真实和丰富数据需求的第一个数据集，MS MARCO Web Search为人工智能和系统研究的未来进步铺平了道路。MS MARCO Web Search数据集可在以下链接获取：https://github.com/microsoft/MS-MARCO-Web-Search。
+近期在大型模型领域的突破强调了数据规模、标签和模态的关键重要性。本文介绍了`MS MARCO Web Search`，这是第一个大规模信息丰富的网络数据集，包括了数百万真实点击的查询文档标签。该数据集紧密模拟了现实世界的网络文档和查询分布，为各种下游任务提供了丰富信息，鼓励研究各种领域，如通用的端到端神经索引器模型、通用嵌入模型，以及具有大型语言模型的下一代信息访问系统。`MS MARCO Web Search`提供了一个检索基准，包括三个需要在机器学习和信息检索系统研究领域创新的网络检索挑战任务。作为符合大规模、真实和丰富数据需求的第一个数据集，`MS MARCO Web Search`为人工智能和系统研究的未来进步铺平了道路。`MS MARCO Web Search`数据集可在以下链接获取：https://github.com/microsoft/MS-MARCO-Web-Search。
 
 ![](img/3910648faf8ce3092ca46f08ee8be009.png)
 
@@ -222,13 +221,13 @@ YouTube: [https://youtube.com](https://youtube.com/watch?v=AdLgPmcrXwQ)/watch?v=
 
 ![](img/dc512adb516b6a92aee6bb8b0aee6e11.png)
 
-### CuMo: 使用共同升级的专家混合物扩展多模态LLM
+### `CuMo`: 使用共同升级的专家混合物扩展多模态`LLM`
 
 贡献人：
 
 链接：http://arxiv.org/abs/2405.05949v1
 
-最近在多模态大语言模型（LLMs）领域的进展主要集中在通过增加文本-图像对数据和改进LLMs以提高在多模态任务上的性能方面进行的扩展。然而，这些扩展方法在计算上昂贵，并忽视了从视觉方面改进模型能力的重要性。受混合专家（MoE）在LLMs中成功应用的启发，通过在训练过程中改善模型的可扩展性同时保持推断成本与较小模型相似，我们提出了CuMo。 CuMo将Co-upcycled Top-K稀疏门控专家混合模块纳入视觉编码器和MLP连接器，从而在推断过程中最小化激活参数，增强多模态LLMs。CuMo首先对MLP模块进行预训练，然后在视觉指导调整阶段从预训练的MLP模块中初始化MoE模块中的每个专家。辅助损失被用于确保专家的平衡加载。CuMo在各种VQA和视觉指令遵循基准测试中优于最先进的多模态LLMs，使用各个模型大小组内的模型进行训练时仅使用开源数据集。CuMo的代码和模型权重均在https://github.com/SHI-Labs/CuMo上开源。
+最近在多模态大语言模型（`LLMs`）领域的进展主要集中在通过增加文本-图像对数据和改进`LLMs`以提高在多模态任务上的性能方面进行的扩展。然而，这些扩展方法在计算上昂贵，并忽视了从视觉方面改进模型能力的重要性。受混合专家（`MoE`）在`LLMs`中成功应用的启发，通过在训练过程中改善模型的可扩展性同时保持推断成本与较小模型相似，我们提出了`CuMo`。 `CuMo`将`Co-upcycled Top-K`稀疏门控专家混合模块纳入视觉编码器和`MLP`连接器，从而在推断过程中最小化激活参数，增强多模态`LLMs`。`CuMo`首先对`MLP`模块进行预训练，然后在视觉指导调整阶段从预训练的`MLP`模块中初始化`MoE`模块中的每个专家。辅助损失被用于确保专家的平衡加载。`CuMo`在各种`VQA`和视觉指令遵循基准测试中优于最先进的多模态`LLMs`，使用各个模型大小组内的模型进行训练时仅使用开源数据集。`CuMo`的代码和模型权重均在https://github.com/SHI-Labs/CuMo上开源。
 
 ![](img/25613801c54a7932020b7492a96feea0.png)
 
@@ -238,35 +237,37 @@ YouTube: [https://youtube.com](https://youtube.com/watch?v=AdLgPmcrXwQ)/watch?v=
 
 链接：http://arxiv.org/abs/2405.04798v1
 
-层次控制机器人学长期以来一直受困于需要有明确定义的接口层来在高级任务规划器和低级策略之间进行通信。随着LLM的出现，语言作为一种潜在的接口层不断涌现。然而，这存在一些限制。并非所有任务都可以分解为自然语言易于表达的步骤（例如执行舞蹈）。为了克服这些限制，我们介绍了一种名为LCB的方法，它使用可学习的潜在代码作为LLM和低级策略之间的桥梁。LCB使LLM能够灵活地在任务规划中传达目标，而不完全受语言限制。此外，它还实现了端到端微调，而不破坏预训练期间学习的单词token嵌入空间。通过在语言表（Language Table）和Calvin这两个常见的基于语言的基准测试中进行实验，我们发现LCB在需要推理和多步行为的任务上优于仅使用纯语言作为接口层的基线模型（包括带有GPT-4V的模型）。
+层次控制机器人学长期以来一直受困于需要有明确定义的接口层来在高级任务规划器和低级策略之间进行通信。随着`LLM`的出现，语言作为一种潜在的接口层不断涌现。然而，这存在一些限制。并非所有任务都可以分解为自然语言易于表达的步骤（例如执行舞蹈）。为了克服这些限制，我们介绍了一种名为`LCB`的方法，它使用可学习的潜在代码作为`LLM`和低级策略之间的桥梁。`LCB`使`LLM`能够灵活地在任务规划中传达目标，而不完全受语言限制。此外，它还实现了端到端微调，而不破坏预训练期间学习的单词`token`嵌入空间。通过在语言表（`Language Table`）和`Calvin`这两个常见的基于语言的基准测试中进行实验，我们发现`LCB`在需要推理和多步行为的任务上优于仅使用纯语言作为接口层的基线模型（包括带有`GPT-4V`的模型）。
 
 ![](img/1388320d1475f432c3fca1299bc30b68.png)
 
-# 产品
+## 产品
 
-### Glitter AI
+### `Glitter AI`
 
 贡献人：
 
 https://www.glitter.io/
 
-Glitter AI 是一款简单有效的工具，可以通过录制语音和屏幕来自动生成教程和操作指南。旨在帮助忙碌的工作人员和内容创作者更快捷高效地记录和分享各种流程，而无需长时间录制视频或手动编写文档。
+`Glitter AI` 是一款简单有效的工具，可以通过录制语音和屏幕来自动生成教程和操作指南。旨在帮助忙碌的工作人员和内容创作者更快捷高效地记录和分享各种流程，而无需长时间录制视频或手动编写文档。
 
 ![](img/28a83ff4322f0c3f71278b3588c34f6a.png)
 
-### Jovu
+### `Jovu`
 
 贡献人：
 
 https://amplication.com/jovu--production-ready-ai-code-generation
 
-Jovu 是 Amplication 公司推出的一款 AI 驱动的代码生成平台，能在几分钟内将创意转化为生产就绪的后端应用代码，涵盖数据模型、API 和基础设施，确保一致性和可扩展性。它可与 GitHub Copilot 等 AI 工具协作生成业务逻辑代码，还能根据需求提供最佳架构建议，大幅简化后端开发流程，加快上市速度并确保代码质量。Jovu 支持 Node.js 和 .NET ，可基于 OpenAPI 或 GraphQL 规范生成 API 服务。
+`Jovu` 是 `Amplication` 公司推出的一款 AI 驱动的代码生成平台，能在几分钟内将创意转化为生产就绪的后端应用代码，涵盖数据模型、`API` 和基础设施，确保一致性和可扩展性。它可与 `GitHub Copilot` 等 AI 工具协作生成业务逻辑代码，还能根据需求提供最佳架构建议，大幅简化后端开发流程，加快上市速度并确保代码质量。`Jovu` 支持 `Node.js` 和 `.NET` ，可基于 `OpenAPI` 或 `GraphQL` 规范生成 API 服务。
 
 ![](img/530b794d5f67fb2e499018b0cb9716bc.png)
 
+
+
 # HuggingFace&Github
 
-### **bilibot**
+## bilibot
 
 贡献人：
 
@@ -274,7 +275,7 @@ https://github.com/linyiLYi/bilibot
 
 bilibot是一款基于哔哩哔哩用户评论数据微调训练而成的本地化聊天机器人，集成了文字交互和语音对话两大功能。它借助了 Qwen1.5-32B-Chat语言模型、苹果 MLX-LM 微调框架、GPT-SoVITS 语音生成等开源技术，拥有较为丰富的对话能力。该项目提供了完整的模型训练、压缩优化、对话测试等流程，体现了较为成熟的开发水平，哔哩哔哩用户可以关注和使用。
 
-### **phidata**
+## phidata
 
 贡献人：
 
@@ -282,7 +283,7 @@ https://github.com/phidatahq/phidata
 
 phidata 是一个用于构建具有长期记忆、背景知识和工具能力的自主助手的框架。它旨在解决传统大语言模型在上下文信息和功能性方面的局限性。
 
-phidata的主要特点包括:
+phidata的主要特点包括：
 
 记忆：将对话历史存储在数据库中，使LLM能够进行长期对话。
 
@@ -298,7 +299,7 @@ phidata的主要特点包括:
 
 # 投融资
 
-### PolyAI近5亿估值，走近独角兽地位
+## PolyAI近5亿估值，走近独角兽地位
 
 贡献人：
 
@@ -310,7 +311,7 @@ PolyAI是一家总部位于英国的聊天机器人公司，已接近5亿美元�
 
 ![](img/df3aa6b5ac3f6116e8a1ca2ae52a1958.png)
 
-### Malted AI筹集600万英镑用于成本效益高的小型语言模型
+## Malted AI筹集600万英镑用于成本效益高的小型语言模型
 
 贡献人：
 
@@ -322,7 +323,7 @@ https://tech.eu/2024/05/15/malted-ai-raises/
 
 ![](img/6c8ab06ad4e0677bc02b8ea18338231f.png)
 
-### LanceDB为多模态AI构建数据库
+## LanceDB为多模态AI构建数据库
 
 贡献人：
 
@@ -334,31 +335,31 @@ LanceDB由Chang She和Lei Xu共同创立，旨在支持多模态AI模型，包�
 
 ![](img/1e1c32a48fa1272f07a4b7e83d691528.png)
 
-### WEKA在E轮融资中获得1.6亿美元，估值达16亿美元
+## WEKA在E轮融资中获得1.6亿美元，估值达16亿美元
 
 贡献人：
 
 https://www.prnewswire.com/news-releases/weka-nets-140m-in-series-e-funding-at-1-6b-valuation-302145513.html
 
-WekaIO（WEKA）是一家AI本地数据平台公司，他们在一轮超额认购的E轮融资中筹集了1.4亿美元，由之前的投资者Valor Equity Partners领投。这轮融资将WEKA的后估值提高至16亿美元。这笔资金将用于增加公司的现金储备，使其能够迅速扩大业务，以满足全球对AI本地数据基础设施的加速需求，并扩大对数据平台软件的开发投资。 WEKA是一家总部位于加利福尼亚州坎贝尔的公司，其AI和GPU部署超过300个，现在正迎来业务增长的前所未有的时刻，因为公司不断扩大以满足现代数据基础设施的全球需求。
+WekaIO（WEKA）是一家AI本地数据平台公司，他们在一轮超额认购的E轮融资中筹集了1.4亿美元，由之前的投资者Valor Equity Partners领投。这轮融资将WEKA的后估值提高至16亿美元。这笔资金将用于增加公司的现金储备，使其能够迅速扩大业务，以满足全球对AI本地数据基础设施的加速需求，并扩大对数据平台软件的开发投资。WEKA是一家总部位于加利福尼亚州坎贝尔的公司，其AI和GPU部署超过300个，现在正迎来业务增长的前所未有的时刻，因为公司不断扩大以满足现代数据基础设施的全球需求。
 
 公司官网：https://www.weka.io/
 
 ![](img/8bcedce1d2906d0a789f8788b7e4a20f.png)
 
-### Harness获得1.5亿美元的新融资
+## Harness获得1.5亿美元的新融资
 
 贡献人：
 
 https://www.prnewswire.com/news-releases/harness-raises-150-million-in-new-financing-302144095.html
 
-Harness是一家现代软件交付平台公司，于2024年5月14日宣布从硅谷银行（SVB）和Hercules Capital获得1.5亿美元的融资。这笔投资将用于支持Harness平台的扩展，包括增加新模块、进一步将生成式人工智能整合到平台中，并对公司的市场推广引擎进行额外投资。Harness的CEO兼联合创始人Jyoti Bansal表示，这笔资金将帮助公司以创纪录的速度继续创新，改变现代企业的软件交付生命周期。 Harness是一家总部位于旧金山的公司，为完整软件交付提供了一种简单、安全的方式，通过使用人工智能和机器学习来监控部署质量，并自动回滚失败的部署，从而节省时间并减少了对定制脚本和手动监督的需求，为工程师们节省了夜晚和周末的时间。 Harness的客户通过Harness平台加速部署速度高达75%，将基础设施成本降低高达60%，并将变更的导入时间缩短高达90%。
+Harness是一家现代软件交付平台公司，于2024年5月14日宣布从硅谷银行（SVB）和Hercules Capital获得1.5亿美元的融资。这笔投资将用于支持Harness平台的扩展，包括增加新模块、进一步将生成式人工智能整合到平台中，并对公司的市场推广引擎进行额外投资。Harness的CEO兼联合创始人Jyoti Bansal表示，这笔资金将帮助公司以创纪录的速度继续创新，改变现代企业的软件交付生命周期。Harness是一家总部位于旧金山的公司，为完整软件交付提供了一种简单、安全的方式，通过使用人工智能和机器学习来监控部署质量，并自动回滚失败的部署，从而节省时间并减少了对定制脚本和手动监督的需求，为工程师们节省了夜晚和周末的时间。Harness的客户通过Harness平台加速部署速度高达75%，将基础设施成本降低高达60%，并将变更的导入时间缩短高达90%。
 
 公司官网：https://www.harness.io/
 
 ![](img/bb8e4aec2f7b3c3e0e4bf13e8fa143e0.png)
 
-### Gorgias获得2900万美元的新融资，领跑电商AI客户体验新时代
+## Gorgias获得2900万美元的新融资，领跑电商AI客户体验新时代
 
 贡献人：
 
@@ -370,7 +371,7 @@ Gorgias是一家领先的客户体验（CX）平台，受到超过15,000个电�
 
 ![](img/d623a56bd46d8d8886e0443893574712.png)
 
-### 冰智科技完成百万级人民币种子轮融资，投资方未披露
+## 冰智科技完成百万级人民币种子轮融资，投资方未披露
 
 贡献人：
 
@@ -380,7 +381,7 @@ https://www.sohu.com/a/778903901_118792
 
 ![](img/5fe7fb7a718cf29a8d16f3807bd8f5bd.png)
 
-### Gamma获得1200万美元的A轮融资
+## Gamma获得1200万美元的A轮融资
 
 贡献人:
 
@@ -394,7 +395,7 @@ Gamma是一家致力于构建以人工智能为动力的内容创作未来的公
 
 # 学习
 
-### 【AI Infra漫谈系列】揭秘vLLM推理逻辑
+## 【AI Infra漫谈系列】揭秘vLLM推理逻辑
 
 贡献人：
 
@@ -404,7 +405,7 @@ https://zhuanlan.zhihu.com/p/697858922?utm_psn=1774351376082358272
 
 ![](img/c1721a20ffc2e976a5a4b175a6f2ec8a.png)
 
-### cuda性能优化笔记--一次默认类型提升引发的惨案
+## cuda性能优化笔记--一次默认类型提升引发的惨案
 
 贡献人：
 
@@ -414,7 +415,7 @@ https://zhuanlan.zhihu.com/p/697702478?utm_psn=1774375847967166464
 
 ![](img/f516d6c54a6f5de22990cc8d30cc6a24.png)
 
-### 量化那些事之FP8与LLM-FP4
+## 量化那些事之FP8与LLM-FP4
 
 贡献人：
 
@@ -424,7 +425,7 @@ https://zhuanlan.zhihu.com/p/683215538
 
 ![](img/1de617f5849c3c87d0fb213e2eb70ec2.png)
 
-### 序列并行做大模型训练
+## 序列并行做大模型训练
 
 贡献人：
 
@@ -434,7 +435,7 @@ https://zhuanlan.zhihu.com/p/698031151?utm_psn=1774441563877212160
 
 ![](img/4b3a55bddb73015a1b59260090427fce.png)
 
-### 点积在人工智能中的威力
+## 点积在人工智能中的威力
 
 贡献人：
 
@@ -446,7 +447,7 @@ https://towardsdatascience.com/the-power-of-the-dot-product-in-artificial-intell
 
 ![](img/df3e3be46e848554f508ff0dfca6cdc7.png)
 
-### 大模型推理优化实践：KV cache复用与投机采样
+## 大模型推理优化实践：KV cache复用与投机采样
 
 贡献人：
 
@@ -456,7 +457,7 @@ https://zhuanlan.zhihu.com/p/697801604?utm_psn=1774461319011491841
 
 ![](img/b6433c7d40948d41cb0e0c770f88bef4.png)
 
-### Transformers Agents 2.0
+## Transformers Agents 2.0
 
 贡献人：
 
@@ -470,8 +471,6 @@ Transformers Agents 2.0 发布，其中包括两种新的代理类型，可以�
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -482,7 +481,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

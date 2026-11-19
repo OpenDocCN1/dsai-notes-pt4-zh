@@ -1,12 +1,13 @@
+
 # 贝索斯2012年致股东信
 
 > 来源：[https://leonzhang.feishu.cn/docx/LALpdeRdko1YG7xXr8Pc3HApnig](https://leonzhang.feishu.cn/docx/LALpdeRdko1YG7xXr8Pc3HApnig)
 
-> 🔗 原文链接： h[ttps://www.bilibil](https://www.bilibili.com/read/cv13934905)i.com/read/cv139...
+> 🔗 原文链接：https://www.bilibili.com/read/cv13934905
 
 ![](img/332254100af4d85d2a655258d7f3b2ce.png)
 
-致我们的股东：
+## 致我们的股东
 
 常看我们致股东的信的读者们都应该知道，我们在亚马逊工作的动力在于打动用户，而非打败竞争对手。我们不会评论那些可能让企业最大限度获得成功的方法。这样做有利也有弊，以打败竞争对手为工作重心而获得成功的企业也有许多例子。我们致力于关注竞争对手，受到他们的启发，不过实际上以用户为中心是我们企业文化的标志性元素。
 

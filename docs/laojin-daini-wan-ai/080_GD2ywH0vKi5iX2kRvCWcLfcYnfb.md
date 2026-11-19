@@ -1,3 +1,4 @@
+
 # 带声音的视频提示词
 
 > 来源：[https://my.feishu.cn/docx/STAadU6d1ohjoTxCIqqcoMC2nEc](https://my.feishu.cn/docx/STAadU6d1ohjoTxCIqqcoMC2nEc)
@@ -34,10 +35,9 @@ Medium shot, cyberpunk hacker typing frantically, neon reflections on face, blad
 
 [Example 2]
 Wide shot, rainy alley with neon reflections on wet pavement, film noir lighting, handheld, Audio: gentle rain on pavement, footsteps echoing in hallway, subtle radio static
-
 ```
 
-##  中文版
+## 中文版
 
 ```
 【角色/目标】
@@ -69,5 +69,4 @@ Medium shot，赛博朋克黑客飞速打字，霓虹反光映面，blade runner
 
 【示例 2】
 Wide shot，雨夜旧巷霓虹闪烁，反射水面，film noir 光影，handheld，Audio: gentle rain on pavement, footsteps echoing in hallway, subtle radio static
-
 ```

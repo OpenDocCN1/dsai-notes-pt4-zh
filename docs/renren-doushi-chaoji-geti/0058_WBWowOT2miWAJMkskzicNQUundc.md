@@ -1,8 +1,9 @@
+
 # 2025-12-14--600页AI-PPT实战后，我写了这篇全网最全Noteboo
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MUvhdywKloCkILxufbGcLREFn9c](https://xuqiwei1986.feishu.cn/docx/MUvhdywKloCkILxufbGcLREFn9c)
 
-> 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/14588544228221852)ticleDetail/xq_t...
+> 🔗 原文链接： [https://scys.com/articleDetail/xq_topic/14588544228221852](https://scys.com/articleDetail/xq_topic/14588544228221852)
 
 各位赚钱圈友大家好，我是sky陈天，一名AI企业培训讲师、企业AI业务提效顾问。
 
@@ -50,8 +51,6 @@ PPT 制作从"AI填内容+套模板"变成了"AI直接画图成PPT"。
 
 6种常见PPT风格 + 如何固定你想要的风格
 
-如何制作超长PPT（一次只能生成十几页怎么办）
-
 这应该是目前全网最全的NotebookLM生成PPT教程了，建议收藏转发哦！
 
 ## 一、完整制作流程：从注册到导出
@@ -62,7 +61,7 @@ NotebookLM是Google的AI 知识管理的产品，需要Google账号才能使用�
 
 ![](img/5bf2a82cffda2b611183715f4fb5925f.png)
 
-访问地址： notebooklm.google.com
+访问地址：`notebooklm.google.com`
 
 NotebookLM本身是免费的，但生成Slide Deck（幻灯片）和Infographic（信息图）功能有使用次数限制。而且免费效果不好需要等很久。
 
@@ -74,7 +73,7 @@ Gemini pro 的账号是和 notebooklm 账号打通的，都可以用。
 
 ![](img/60fc93573c29d9aecbf8e778ea1914f4.png)
 
-登录后，点击「Create new」创建一个新笔记本，给它起个名字。
+登录后，点击「`Create new`」创建一个新笔记本，给它起个名字。
 
 比如你要做一个AI营销趋势的PPT，就叫"AI营销趋势分享"。
 
@@ -86,15 +85,15 @@ Gemini pro 的账号是和 notebooklm 账号打通的，都可以用。
 
 NotebookLM支持这些格式：
 
-**PDF文档 **：研究报告、白皮书、电子书都可以
+**PDF文档**：研究报告、白皮书、电子书都可以
 
-**Google Docs **：直接从Google Drive导入
+**Google Docs**：直接从Google Drive导入
 
-**网页链接 **：粘贴URL，它会自动抓取内容
+**网页链接**：粘贴URL，它会自动抓取内容
 
-**YouTube视频 **：粘贴视频链接，它会提取字幕内容
+**YouTube视频**：粘贴视频链接，它会提取字幕内容
 
-**纯文本 **：直接复制粘贴
+**纯文本**：直接复制粘贴
 
 但这里有一个关键技巧，很多人不知道：
 
@@ -128,11 +127,11 @@ NotebookLM支持这些格式：
 
 [粘贴你的素材]
 
-第二步：把逐字稿粘贴到NotebookLM
+**第二步：把逐字稿粘贴到NotebookLM**
 
 生成的逐字稿复制下来，直接粘贴到NotebookLM的素材区。
 
-你可以选择「Paste text」，把整份逐字稿作为一个source上传。
+你可以选择「`Paste text`」，把整份逐字稿作为一个`source`上传。
 
 ![](img/83d3c1dcfab5b51a496d04b81e7fca2e.png)
 
@@ -148,7 +147,7 @@ NotebookLM支持这些格式：
 
 ### 生成Slide Deck
 
-素材准备好后，记得勾选素材，只需要勾选你要生成的素材就可以了，然后在右侧找到「Studio」面板，点击「Slide Deck」。
+素材准备好后，记得勾选素材，只需要勾选你要生成的素材就可以了，然后在右侧找到「`Studio`」面板，点击「`Slide Deck`」。
 
 ![](img/a739d504ad045196a4fc610678f4771b.png)
 
@@ -156,27 +155,27 @@ NotebookLM支持这些格式：
 
 ![](img/3b252e4f99ae118a9ab79742661305ca.png)
 
-**Format（格式）：**
+`Format`（格式）：
 
-Detailed Deck：详细版，每页内容更丰富，适合阅读型PPT
+`Detailed Deck`：详细版，每页内容更丰富，适合阅读型PPT
 
-Presenter Slides：演讲版，每页内容更精简，适合现场演示
+`Presenter Slides`：演讲版，每页内容更精简，适合现场演示
 
-**Language（语言）：**
+`Language`（语言）：
 
 选择你想要的输出语言
 
 直接选中文就行了
 
-Custom Prompt（自定义提示词）：
+`Custom Prompt`（自定义提示词）：
 
 这里可以输入你想要的风格来输入。如果不输入信息的话生成的ppt有可能质量会没有那么高，随机性会比较大一些。
 
 比如我的哆啦 A梦风格的就是这个提示词："我想请你根据我的这个文件创建出一个哆啦A梦讲解整个AI PPT生成课程的PPT，要用哆啦A梦的风格去讲，大概 15 页"
 
-设置完成后，点击「Generate」，等待生成。
+设置完成后，点击「`Generate`」，等待生成。
 
-**生成时间大概3-10分钟 **，取决于素材量。
+**生成时间大概3-10分钟**，取决于素材量。
 
 好消息是你可以继续在笔记本里做其他事情，它会在后台生成。
 
@@ -188,7 +187,7 @@ Custom Prompt（自定义提示词）：
 
 ## 二、生成后发现错别字？4种修改方法
 
-N**otebooklm 做的 **PPT 很好看，但是有一个很大的问题，字有时候会乱码，比如说这个字明显就是有问题的。 但它是图片改起来特别麻烦。
+NotebookLM 做的 PPT 很好看，但是有一个很大的问题，字有时候会乱码，比如说这个字明显就是有问题的。但它是图片改起来特别麻烦。
 
 ![](img/57ad866799034e1666ac723af35552fb.png)
 
@@ -238,13 +237,13 @@ NotebookLM目前只能导出PDF，不能直接编辑。
 
 这是一个更灵活的方法，特别适合只需要改几个字的情况。
 
-Lovart（ [lovart.ai ](http://lovart.ai/)）是一个非常强大的AI设计工具，网址： https://www.lovart.ai/zh
+Lovart（ [`lovart.ai`](http://lovart.ai/)）是一个非常强大的AI设计工具，网址： `https://www.lovart.ai/zh`
 
 它有一个功能叫【编辑文字】——可以识别图片里的文字，单独对文字的部分进行修改。
 
 **操作步骤：**
 
-打开 [lovart.ai ](http://lovart.ai/)，新建一个项目
+打开 [`lovart.ai`](http://lovart.ai/)，新建一个项目
 
 ![](img/d1aaf16e7a054d9a3497cae8c071cadb.png)
 
@@ -260,7 +259,7 @@ Lovart（ [lovart.ai ](http://lovart.ai/)）是一个非常强大的AI设计工�
 
 ![](img/c38745e4554df3438504e24e646a18a7.png)
 
-**适合场景： **只改1-2个字或数据，想保持原有设计风格，
+**适合场景：** 只改1-2个字或数据，想保持原有设计风格，
 
 特别强调一下， 但如果说文字大面积乱码，用这种方式改文字也会照样会乱码
 
@@ -276,7 +275,7 @@ Lovart（ [lovart.ai ](http://lovart.ai/)）是一个非常强大的AI设计工�
 
 ![](img/89c8a2a11a98628c2f3cca723e341643.png)
 
-打开lovart、Gemini pro或者任何支持Nano Banana Pro的工具，国内的 seedream4.5 也可以，上传截图，加上这段提示词：
+打开lovart、`Gemini pro`或者任何支持Nano Banana Pro的工具，国内的 `seedream4.5` 也可以，上传截图，加上这段提示词：
 
 完全复刻这张图片，只提升文字清晰度和去除右下角水印，确保中文字体不变形不乱码，保持所有内容布局和图标与原图完全一致。4K
 
@@ -284,7 +283,7 @@ Lovart（ [lovart.ai ](http://lovart.ai/)）是一个非常强大的AI设计工�
 
 AI会重新生成一张几乎一样的图，但文字更清晰，水印也去掉了
 
-**适合场景： **文字大面积模糊、想去水印、想提升整体清晰度。
+**适合场景：** 文字大面积模糊、想去水印、想提升整体清晰度。
 
 那除了这三种还有没有更好的方法？还真被我发现了一个
 
@@ -308,7 +307,7 @@ AI会重新生成一张几乎一样的图，但文字更清晰，水印也去掉
 
 这个方法的好处是不需要额外的在线工具，直接在本地就能完成。
 
-**适合场景： **Windows用户，想快速把图片PPT转成可编辑格式。
+**适合场景：** Windows用户，想快速把图片PPT转成可编辑格式。
 
 最后做一个四种方法的对比，大家可以根据自己的情况自行选择
 
@@ -320,7 +319,7 @@ AI会重新生成一张几乎一样的图，但文字更清晰，水印也去掉
 
 NotebookLM生成的PPT默认是它自己的风格，但实际工作中，我们往往需要特定的视觉风格。
 
-所以我给大家准备了几个常见的风格提示词，复制粘贴到Custom Prompt框里就行。
+所以我给大家准备了几个常见的风格提示词，复制粘贴到`Custom Prompt`框里就行。
 
 **极简商务风**
 
@@ -336,7 +335,7 @@ Create professional minimalist slides with generous whitespace and clean visual 
 
 特点：深色背景，蓝紫渐变，几何线条，数据可视化，适合科技公司、AI主题、产品发布。
 
-Create futuristic tech-style slides with dark backgrounds (#0a0a0f or deep navy). Use electric blue (#00d4ff) and purple (#8b5cf6) as accent colors with subtle gradient effects. Feature geometric patterns: circuit-like lines, hexagonal grids, glowing nodes and connection lines. Typography should be sleek and modern, with a tech/digital feel. Include data visualizations with neon glow effects. Add subtle particle effects or abstract digital elements in backgrounds. Create a sense of innovation and cutting-edge technology.
+Create futuristic tech-style slides with dark backgrounds (`#0a0a0f` or deep navy). Use electric blue (`#00d4ff`) and purple (`#8b5cf6`) as accent colors with subtle gradient effects. Feature geometric patterns: circuit-like lines, hexagonal grids, glowing nodes and connection lines. Typography should be sleek and modern, with a tech/digital feel. Include data visualizations with neon glow effects. Add subtle particle effects or abstract digital elements in backgrounds. Create a sense of innovation and cutting-edge technology.
 
 **活泼创意风**
 
@@ -352,23 +351,25 @@ Create vibrant, energetic slides with bold saturated colors: coral pink, electri
 
 特点：数据可视化，图标丰富，流程图，对比图，适合数据报告、行业分析、复杂概念解释。
 
+
+
 Create infographic-style slides that transform complex information into visual stories. Use a cohesive color palette with 4-5 colors: one primary, two secondary, and accent colors for highlights. Feature abundant custom icons, pictograms, and symbolic illustrations. Include diverse chart types: pie charts, bar graphs, timelines, flowcharts, comparison tables, and process diagrams. Use visual metaphors and illustrated concepts. Typography should be bold and scannable with clear size hierarchy. Each slide should tell a complete visual story with minimal text and maximum visual communication.
 
-**疯狂动物城风格**
+## 疯狂动物城风格
 
 ![](img/949470685ec29621d5af888a4ef6b9e0.png)
 
 特点：迪士尼3D动画质感，拟人化动物角色，现代都市场景，色彩明亮温暖，适合团队分享、企业文化、轻松主题的汇报。
 
-Create slides in Disney Zootopia 2 animation style. Apply soft edge lighting, smooth shadow rendering, warm harmonious color palette, subtle fur texture details at light edges. Feature expressive anthropomorphic animal characters in professional settings - animals in business attire, working in offices, giving presentations. Use clean studio-style backgrounds with soft blue gradients. Character designs should have Disney-level quality with expressive shapes and friendly expressions. Typography should be rounded, friendly sans-serif fonts. High resolution, cinematic color grading. Overall mood: professional yet approachable, warm, optimistic. Each slide should feel like a promotional art piece from the movie.
+`Create slides in Disney Zootopia 2 animation style. Apply soft edge lighting, smooth shadow rendering, warm harmonious color palette, subtle fur texture details at light edges. Feature expressive anthropomorphic animal characters in professional settings - animals in business attire, working in offices, giving presentations. Use clean studio-style backgrounds with soft blue gradients. Character designs should have Disney-level quality with expressive shapes and friendly expressions. Typography should be rounded, friendly sans-serif fonts. High resolution, cinematic color grading. Overall mood: professional yet approachable, warm, optimistic. Each slide should feel like a promotional art piece from the movie.`
 
-**哆啦A梦风格**
+## 哆啦A梦风格
 
 ![](img/6af60b6a07af6640766173dc8d1aa8fd.png)
 
 特点：日系手绘动漫风格，蓝白配色为主，可爱圆润的线条，充满童趣和想象力，适合教育培训、创意分享、科技产品介绍。
 
-Create slides in classic Doraemon Japanese anime style with hand-drawn 2D illustration aesthetics. Use the iconic color palette: bright sky blue, white, warm yellow, and soft pink accents. Feature cute, rounded character designs with simple expressive faces and clean outlines. Include whimsical futuristic gadgets and magical elements floating in scenes. Backgrounds should have soft pastel gradients or simple clean environments. Add playful elements like clouds, stars, and magical sparkles. Typography should be rounded, cute Japanese-style fonts. Overall mood: cheerful, imaginative, nostalgic, and educational. Each slide should feel like a page from a manga or anime storyboard with a sense of wonder and possibility.
+`Create slides in classic Doraemon Japanese anime style with hand-drawn 2D illustration aesthetics. Use the iconic color palette: bright sky blue, white, warm yellow, and soft pink accents. Feature cute, rounded character designs with simple expressive faces and clean outlines. Include whimsical futuristic gadgets and magical elements floating in scenes. Backgrounds should have soft pastel gradients or simple clean environments. Add playful elements like clouds, stars, and magical sparkles. Typography should be rounded, cute Japanese-style fonts. Overall mood: cheerful, imaginative, nostalgic, and educational. Each slide should feel like a page from a manga or anime storyboard with a sense of wonder and possibility.`
 
 这两个IP风格做出来的PPT非常有辨识度，特别适合需要打破沉闷、制造轻松氛围的场合。
 
@@ -376,26 +377,25 @@ Create slides in classic Doraemon Japanese anime style with hand-drawn 2D illust
 
 这六套提示词我都实测过，效果还不错。你可以根据实际需要微调，比如换个主色调、调整某个具体元素。
 
-### 如何固定和提取你想要的风格
+## 如何固定和提取你想要的风格
 
 如果你有一套公司品牌规范，或者看到某个PPT风格很喜欢，想让NotebookLM学习，我也给大家准备了一个风格提取的办法。
 
-**操作步骤：**
+### 操作步骤
 
-**第一步：准备参考图**
+### 第一步：准备参考图
 
 收集5-6张你喜欢的PPT截图或设计图。可以是：
 
-你公司之前做得好的PPT页面
+- 你公司之前做得好的PPT页面
+- 网上看到喜欢的设计风格
+- Dribbble、Pinterest上的灵感图
 
-网上看到喜欢的设计风格
-
-Dribbble、Pinterest上的灵感图
-
-**第二步：用AI提取风格**
+### 第二步：用AI提取风格
 
 把这些图上传到任何一个 AI ，用这个提示词：
 
+```
 请分析这几张图片的设计风格，从以下维度提取特征：
 
 1. 色彩体系：主色调、辅助色、强调色的具体色值或描述
@@ -413,20 +413,23 @@ Dribbble、Pinterest上的灵感图
 最后，请将以上分析总结成一段英文提示词，格式为：
 
 "Create slides with [风格描述], using [色彩描述], featuring [版式特点], with [图形元素特点]..."
+```
 
 这段提示词将用于NotebookLM的Slide Deck生成功能。
 
-第三步：应用到NotebookLM
+### 第三步：应用到NotebookLM
 
 把AI生成的英文提示词，复制到NotebookLM的Custom Prompt框里。
 
-**实际效果：**
+### 实际效果
 
 比如我上传了几张极简商务风的PPT，AI生成了这样的提示词：
 
 ![](img/5df31eba440eef9a4f088cfd77c01a36.png)
 
-「Create slides with an elegant, intellectual, and editorial aesthetic, using a warm cream/beige background (#F5F5F0) with deep forest green text (#1A3C34) and muted gold accents (#C5A065). Featuring a clean layout with generous whitespace and clear visual hierarchy. Use Serif fonts for large, bold headings to create a classic look, and Sans-serif fonts for readable body text. Incorporate minimalist line-art icons and abstract fluid artistic elements for visuals. Ensure the overall tone is professional yet sophisticated, resembling a high-quality magazine layout.」
+```
+Create slides with an elegant, intellectual, and editorial aesthetic, using a warm cream/beige background (#F5F5F0) with deep forest green text (#1A3C34) and muted gold accents (#C5A065). Featuring a clean layout with generous whitespace and clear visual hierarchy. Use Serif fonts for large, bold headings to create a classic look, and Sans-serif fonts for readable body text. Incorporate minimalist line-art icons and abstract fluid artistic elements for visuals. Ensure the overall tone is professional yet sophisticated, resembling a high-quality magazine layout.
+```
 
 把这段放进NotebookLM，生成的PPT就会往这个风格靠拢。
 
@@ -438,43 +441,41 @@ Dribbble、Pinterest上的灵感图
 
 我的方法是：把文档拆分，分段生成，最后合并。
 
-具体操作：
-
-**第一步：把逐字稿按章节拆分**
+### 第一步：把逐字稿按章节拆分
 
 比如你的逐字稿有5个章节，就拆成5个独立的文档，怎么拆呢？ 按照每个部分 15 页的部分来拆。
 
 就是每一个文档大概 15 页左右的 PPT。
 
-**第二步：每个章节单独创建文件**
+### 第二步：每个章节单独创建文件
 
 在NotebookLM里创建5个文件，每个文件只上传对应章节的内容。
 
 ![](img/b0da552e49cc1547b591890f8accf3ba.png)
 
-第三步：分别生成Slide Deck
+### 第三步：分别生成Slide Deck
 
 每个笔记本分别生成PPT，而且都是要固定风格这样每个章节都能得到完整的十几页PPT。
 
 ![](img/062824b86d5e3b54dbfc06529704a508.png)
 
-**第四步：合并PDF**
+### 第四步：合并PDF
 
 把5个PDF下载下来，转化为 PPT 后 合并成一个完整的PDF。
 
-**关于风格一致性的问题：**
+### 关于风格一致性的问题
 
 你可能会担心：分开生成的话，每一部分风格会不会不一样？
 
 解决方法是： 在每个笔记本的Custom Prompt里，使用完全相同的风格提示词。
 
-比如都写："Create slides with a minimalist professional aesthetic, using navy blue and white color scheme, clean sans-serif typography, generous whitespace."
+比如都写：`"Create slides with a minimalist professional aesthetic, using navy blue and white color scheme, clean sans-serif typography, generous whitespace."`
 
 这样生成出来的5个部分，风格就是统一的。
 
 我做70页PPT的时候，就是拆成了4个部分，每部分15-20页，最后合并起来。
 
-整体风格会比较统一， **但是完全统一有点难 **，就得对提示词有非常精准的调整了
+整体风格会比较统一，**但是完全统一有点难**，就得对提示词有非常精准的调整了
 
 ## 五、国产 AI-PPT工具推荐
 
@@ -482,29 +483,29 @@ Dribbble、Pinterest上的灵感图
 
 我这边也试了几个工具：
 
-1、秘塔： https://metaso.cn/
+1. 秘塔： `https://metaso.cn/`
 
 Meta AI调用的是nano banana pro模型， 而且还是免费的（免费的要啥自行车？）。
 
 目前看起来效果还是不错的，但是它的入口是在学习点啥，这个可以作为一个平替
 
-具体教程： [https://mp.weixin.qq.com/s/Ci](https://mp.weixin.qq.com/s/CijVsVvj_MhyF6iezbO0Jg)jVsVvj_MhyF6iezbO0Jg
+具体教程： `https://mp.weixin.qq.com/s/CijVsVvj_MhyF6iezbO0Jg`
 
 ![](img/54141458cea38539c19b2109f7034a05.png)
 
-2、扣子空间： https://www.coze.cn/space-preview
+2. 扣子空间： `https://www.coze.cn/space-preview`
 
 ![](img/db02d4e8bfddf7e77db5d4e819b832ac.png)
 
-**这个产品也是免费的 **，扣子空间用的是国内的seedream4.5的模型，测试下来中文文字乱码比较少，但是审美比较差。
+这个产品也是免费的，扣子空间用的是国内的seedream4.5的模型，测试下来中文文字乱码比较少，但是审美比较差。
 
-3、天工： https://skywork.ai/
+3. 天工： `https://skywork.ai/`
 
 ![](img/a336c56c74688892d11492a6c0a672a8.png)
 
 天工最近接入了 nano banana pro，但需要付费，所以我还没试，但实在用不了国外模型的可以测试一下。
 
-**最后聊几句感受。**
+## 最后聊几句感受
 
 我是做AI企业咨询和培训的，所以有大量的PPT要做。从23年开始，我就在研究怎么用AI来提效这件事。
 
@@ -512,7 +513,7 @@ Meta AI调用的是nano banana pro模型， 而且还是免费的（免费的要
 
 过去一年时间，我这套工作流的框架基本没变：
 
-**明确目标和受众 → AI写大纲 → AI生成内容 → 人工修改**内容 → AI PPT生成 → 精修调整
+明确目标和受众 → AI写大纲 → AI生成内容 → 人工修改内容 → AI PPT生成 → 精修调整
 
 但随着AI的不断进化，每一步的准确率都大大提升了，精美程度也提升了很多。
 
@@ -520,7 +521,7 @@ Meta AI调用的是nano banana pro模型， 而且还是免费的（免费的要
 
 但这次做70页PPT，从写逐字稿到最终导出，我只花了3个小时。客户看了都以为是请设计师做的。
 
-所以我的体会是： **AI工具在越来越成熟，但对我们来说**，更重要的是把自己的工作流拆好、AI化。
+所以我的体会是：AI工具在越来越成熟，但对我们来说，更重要的是把自己的工作流拆好、AI化。
 
 可能当下AI还只能做到60分，但随着AI的升级迭代，可能过不了太久，就能达到90分的产出。
 
@@ -534,7 +535,7 @@ Meta AI调用的是nano banana pro模型， 而且还是免费的（免费的要
 
 如果那一天真的到来，那更值得我们思考的是：
 
-**褪去华丽的包装和外衣后，我们的观点（Point）到底**是什么？是不是真的有力量（Power）？
+**褪去华丽的包装和外衣后，我们的观点（Point）到底是什么？是不是真的有力量（Power）？**
 
 毕竟，PPT的全称是PowerPoint。
 

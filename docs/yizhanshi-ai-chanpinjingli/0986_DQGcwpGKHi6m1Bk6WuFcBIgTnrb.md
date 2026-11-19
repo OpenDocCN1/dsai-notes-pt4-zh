@@ -1,14 +1,15 @@
+
 # 适合设计Agent的提示词，能让Lovart作图更好看更高效！附邀请链接
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/TJE0dCiiIoimX7xiR7ncnd05nic](https://v11enp9ok1h.feishu.cn/docx/TJE0dCiiIoimX7xiR7ncnd05nic)
 
 相信近期大家已经被Lovart的相关讯息刷屏好多次了，我在设计群里也看到了群友们陆陆续续拿到了邀请码。尝试了很多玩法，看得我也觉得真的非常强也很有趣，今天我也使用Lovart做了一些尝试，同时有一些使用方法和小技巧，也想给朋友们分享一下，希望对大家有帮助。今天的内容有点长但是保证干货，大家有更多玩法也欢迎评论区讨论~！
 
-## **今天的目录：**
+## 今天的目录：
 
 > 概述. 简介与视频展示
 
-> 1.案例实测展示：IRENE的书店
+> 1. 案例实测展示：IRENE的书店
 
 > 第一步：Logo设计
 
@@ -20,7 +21,7 @@
 
 > 第四步：宣传画报
 
-> 2.其他方向的案例尝试：
+> 2. 其他方向的案例尝试：
 
 > 2.01 小狐狸一条提示从插画到周边到故事版到视频，直出分镜稿
 
@@ -44,11 +45,11 @@
 
 > 2.11 批量表情包
 
-> 3.小结
+> 3. 小结
 
-老规矩，先上网址： ** ****www.lovart.ai **
+老规矩，先上网址：`www.lovart.ai`
 
-Lovart为什么被这么多人关注，大概因为它是一个定位非常垂直方向**非常清晰的AI Agent。通用Ag**ent在细分的领域和方面可能不会那么极致， 而“设计Agent”，它的一切流程最终的目标就是服务于设计和创意发散产出， 针对一个点持续发力，简化设计的流程，并帮助设计师和创意工作者将灵感和想法去转换成专业精美的作品。
+Lovart为什么被这么多人关注，大概因为它是一个定位非常垂直方向非常清晰的AI Agent。通用Agent在细分的领域和方面可能不会那么极致，而“设计Agent”，它的一切流程最终的目标就是服务于设计和创意发散产出，针对一个点持续发力，简化设计的流程，并帮助设计师和创意工作者将灵感和想法去转换成专业精美的作品。
 
 前几天看到自己我很喜欢的博主Ege也在玩，这个效果很不错。
 
@@ -74,11 +75,11 @@ Lovart为什么被这么多人关注，大概因为它是一个定位非常垂�
 
 [518_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IVWTbbwiXoJzqHxcmAtcCJGQn0d)
 
-既然有一个这样快捷便利、能快速实现想法的设计Agent**了，我非常想尝试用它将我的梦想可视化。 比如身为一个（**自己认为的）文艺青年，我想开一家书店，我可以让Lovart帮我把VI视觉做出来。
+既然有一个这样快捷便利、能快速实现想法的设计Agent了，我非常想尝试用它将我的梦想可视化。 比如身为一个（自己认为的）文艺青年，我想开一家书店，我可以让Lovart帮我把VI视觉做出来。
 
-## **1. **** ****案例实测展示：IRENE的书店**
+## 1. 案例实测展示：IRENE的书店
 
-### **第一步：Logo设计**
+### 第一步：Logo设计
 
 首先我把这个品牌的定位、要求、以及一些设想扔给Lovart， 叫它一次给我画8个Logo，让我做超拽的甲方，想怎么选就怎么选！
 
@@ -118,21 +119,21 @@ Lovart为什么被这么多人关注，大概因为它是一个定位非常垂�
 
 ![](img/b0e989e7d4464a2704397ff52147d6e1.png)
 
-### **第二步：办公应用设计**
+### 第二步：办公应用设计
 
-**既然有了品牌Logo了，可以**做一些基于Logo的办公应用的效果图。 这一步一次性输出了24张图。
+既然有了品牌Logo了，可以做一些基于Logo的办公应用的效果图。 这一步一次性输出了24张图。
 
 我这里写得比较长，主要是因为我当时还没有明白它的原理，只当做类似ChatGPT绘图那样的工具，所以描述非常详细。后面我会给大家分享， 简单的提示词同样可以有很不错的效果。
 
 > Based on the minimalist modern style Logo designed for the bookstore brand "IRENE" , extend its visual identity (VI). Specific design tasks include: business cards, letterheads, envelopes, employee badges, shopping bags, takeout coffee cups, bookmarks, in-store signage (e.g., cashier, category indicators), social media avatars and cover images, and website header/footer.
 
-> Provide at le**as**t two alternative layout or detail options for each design item. Requirements are to clearly showcase the visual effect of the design in actual applications, for example: busi ness cards should have perspective views placed on a table or held in hand; shopping bags should have scene mockups of being carried; in-store signage should have simulation mockups installed on walls or next to bookshelves; social media graphics should have display mockups on mobile or computer screens. All mockups must ensure accurate application of the brand Logo, standard colors, and standard fonts.
+> Provide at least two alternative layout or detail options for each design item. Requirements are to clearly showcase the visual effect of the design in actual applications, for example: business cards should have perspective views placed on a table or held in hand; shopping bags should have scene mockups of being carried; in-store signage should have simulation mockups installed on walls or next to bookshelves; social media graphics should have display mockups on mobile or computer screens. All mockups must ensure accurate application of the brand Logo, standard colors, and standard fonts.
 
-> The design should follow the main minimalist modern style, using the Logo's primary color palette as the base, and can appropriately introduce accent colors to add vibrancy (e.g., small amounts of warm wood brown or c**ream white). Use sans-serif fonts that match or co**ordinate with the Logo's standard font. The design should incorporate the cultural atmosphere of a bookstore, using simple graphic elements or lines to emphasize the brand's professionalism and artistic sense. All design elements must consider accessibility, ensuring high text contrast and clear information hierarchy.
+> The design should follow the main minimalist modern style, using the Logo's primary color palette as the base, and can appropriately introduce accent colors to add vibrancy (e.g., small amounts of warm wood brown or cream white). Use sans-serif fonts that match or coordinate with the Logo's standard font. The design should incorporate the cultural atmosphere of a bookstore, using simple graphic elements or lines to emphasize the brand's professionalism and artistic sense. All design elements must consider accessibility, ensuring high text contrast and clear information hierarchy.
 
 >
 
-> 基于简约现代风格的标志，为“IRENE”书店**品**牌扩展其视觉识别。具体设计任务包括： 名片、信纸、信封、员工徽章、购物袋、外卖咖啡杯、书签、店内标识（例如收银台、分类指示）、社交媒体头像和封面图片，以及网站页眉/页脚。
+> 基于简约现代风格的标志，为“IRENE”书店品牌扩展其视觉识别。具体设计任务包括： 名片、信纸、信封、员工徽章、购物袋、外卖咖啡杯、书签、店内标识（例如收银台、分类指示）、社交媒体头像和封面图片，以及网站页眉/页脚。
 
 > 为每个设计项目至少提供两种布局或细节选项。要求要清晰地展示设计在实际应用中的视觉效果，例如：名片应放在桌子上或手持的透视视图；购物袋应有携带场景的模型；店内标识应有安装在墙壁或书架旁边的模拟模型；社交媒体图形应有显示在手机或电脑屏幕上的模型。 所有元素必须确保品牌 Logo、标准颜色和标准字体的准确应用。
 
@@ -142,7 +143,7 @@ Lovart为什么被这么多人关注，大概因为它是一个定位非常垂�
 
 ![](img/ef91ce76225ced17349d6dc5061df6d0.png)
 
-### **第三步：IP与周边设计**
+### 第三步：IP与周边设计
 
 我想再给我的书店做一个IP，增加辨识度和记忆点，以及提高品牌粘性。都做到这里了，顺便再做一组IP周边。说做就做。
 
@@ -174,7 +175,7 @@ Lovart为什么被这么多人关注，大概因为它是一个定位非常垂�
 
 +   Socks (with a small "Irene" image or book pattern on the cuff or body of the sock)
 
-> **All** design items must include mockup which requirements should highlight the practicality and aesthetic appeal of the peripheral products.
+> All design items must include mockup which requirements should highlight the practicality and aesthetic appeal of the peripheral products.
 
 >
 
@@ -224,30 +225,15 @@ Lovart这个勤勤恳恳的设计小行家，给了我三个选择，遵循了�
 
 ![](img/e91de961ff99fd750addfe2aa40bbea5.png)
 
-
-
-
-
-
-
 ![](img/0b5cb3e32d5435a8cc3fe64e082c0208.png)
-
-
-
 
 ![](img/5dcb1afaaa6b97fc15450f93c6dbae39.png)
 
-
 ![](img/118623ef426291d6ac6e9e7bafdda3d3.png)
-
 
 ![](img/1ee4ed72c13928fd91a4549b05eb5079.png)
 
 ![](img/689aed60c770db5622bbc1bc7e73006e.png)
-
-
-
-
 
 ![](img/b2861e1731a9f037b5c38cb08199d9e6.png)
 
@@ -255,45 +241,41 @@ Lovart这个勤勤恳恳的设计小行家，给了我三个选择，遵循了�
 
 ![](img/96e00e4abff7224c6bb84fac768a769e.png)
 
-### **第四步：空间视觉效果**
+## 第四步：空间视觉效果
 
-**顺便做一些空间视觉效**果和宣传海报的尝试， 这次是一次五张图。 选择前面三视图的图片下方会出现添加到聊天，点击将图片发送到聊天作为参考，然后对话框输入后面的提示词：
+顺便做一些空间视觉效果和宣传海报的尝试， 这次是一次五张图。 选择前面三视图的图片下方会出现添加到聊天，点击将图片发送到聊天作为参考，然后对话框输入后面的提示词：
 
 ![](img/bf1d19af82d7d171673d1dc3e9506122.png)
 
 > Design a complete set of bookstore space visuals, warm, modern, and literary in tone, based on the logo style shown in Image 1 and the IP mascot shown in Image 2—a cute 3D cartoon girl with twin braids and glasses. Generate a series of images including:
 
-+   Storefront facade: The logo is presented in embossed acrylic letters mounted on a wood-textured and light gray matte panel, lit with soft ambient lighting. A standing welcome sign features the mascot girl holding a book and smiling.
++ Storefront facade: The logo is presented in embossed acrylic letters mounted on a wood-textured and light gray matte panel, lit with soft ambient lighting. A standing welcome sign features the mascot girl holding a book and smiling.
 
-+   Main interior feature wall: Fabric or micro-cement texture background with a wall mural combining the logo and the mascot in a reading scene, surrounded by flying book pages for dynamic visual effect.
++ Main interior feature wall: Fabric or micro-cement texture background with a wall mural combining the logo and the mascot in a reading scene, surrounded by flying book pages for dynamic visual effect.
 
-+   Reading zone & soft furnishing: A cozy corner with sofas, bookshelves, and reading tables. Pillows, curtains, wall art, and lamps display variations of the logo or mascot figure. Main colors: beige, light wood, gray-blue, with brand colors as accents.
++ Reading zone & soft furnishing: A cozy corner with sofas, bookshelves, and reading tables. Pillows, curtains, wall art, and lamps display variations of the logo or mascot figure. Main colors: beige, light wood, gray-blue, with brand colors as accents.
 
-+   Signage system and labels: Floor arrows, hanging section signs, and bookshelf tags, all designed with consistent logo graphic language or simplified mascot icons for unified branding.
++ Signage system and labels: Floor arrows, hanging section signs, and bookshelf tags, all designed with consistent logo graphic language or simplified mascot icons for unified branding.
 
-+   Interactive installations and props: Include photo wall setups, character-themed sculpture pieces, decorative “book mountains,” and merchandise displays featuring the mascot and logo in creative forms.
++ Interactive installations and props: Include photo wall setups, character-themed sculpture pieces, decorative “book mountains,” and merchandise displays featuring the mascot and logo in creative forms.
 
 > 基于图1所示的标志风格和图2所示的IP吉祥物（一个戴眼镜扎双辫的可爱3D卡通女孩），设计一套完整的书店空间视觉方案，营造温暖、现代且富有文艺气息的氛围。需要生成以下系列图像：
 
-+   店面外观：标志采用亚克力凸字安装在木纹和浅灰色哑光面板上，配以柔和的环境照明。入口处设立欢迎牌，展示手持书本微笑的吉祥物形象。
++ 店面外观：标志采用亚克力凸字安装在木纹和浅灰色哑光面板上，配以柔和的环境照明。入口处设立欢迎牌，展示手持书本微笑的吉祥物形象。
 
-+   室内主题特色墙：采用织物或微水泥质地的背景，配以结合标志和吉祥物的阅读场景壁画，周围点缀飞舞的书页，营造动态视觉效果。
++ 室内主题特色墙：采用织物或微水泥质地的背景，配以结合标志和吉祥物的阅读场景壁画，周围点缀飞舞的书页，营造动态视觉效果。
 
-+   阅读区和软装：舒适的角落配备沙发、书架和阅读桌。抱枕、窗帘、墙面艺术品和灯具展现标志或吉祥物的变体设计。主色调：米色、浅木色、灰蓝色，品牌色作为点缀。
++ 阅读区和软装：舒适的角落配备沙发、书架和阅读桌。抱枕、窗帘、墙面艺术品和灯具展现标志或吉祥物的变体设计。主色调：米色、浅木色、灰蓝色，品牌色作为点缀。
 
-+   导视系统和标签：地面箭头、悬挂分区标识和书架标签，均采用统一的标志图形语言或简化的吉祥物图标，保持品牌一致性。
++ 导视系统和标签：地面箭头、悬挂分区标识和书架标签，均采用统一的标志图形语言或简化的吉祥物图标，保持品牌一致性。
 
-+   互动装置和道具：包括拍照墙布置、主题雕塑作品、装饰性"书山"，以及以创意形式展示吉祥物和标志的商品陈列。
++ 互动装置和道具：包括拍照墙布置、主题雕塑作品、装饰性"书山"，以及以创意形式展示吉祥物和标志的商品陈列。
 
 看看它制作的空间预览效果，整体调性也是统一的：
 
-
-
-
-
 ![](img/43a8b7bad3fd6bee73a08f44357c2c08.png)
 
-我**个人体验下来感觉Lovart应该做了调试和设置，Ch**atGPT生成图发黄的问题出现比较少了，比官网半天卷帘门一张还发黄好多了。 偶尔有出现发黄偏暖之类的话，我这里分享一个使用小妙招，可根治GPT生成图片偶尔发黄的问题， Lovart在这里做了设置，我觉得非常好用。大家可以看我下面图片框选的部分。点击图层后右上角有这个图标，可以调整色温色调饱和度曝光等等。
+个人体验下来感觉Lovart应该做了调试和设置，ChatGPT生成图发黄的问题出现比较少了，比官网半天卷帘门一张还发黄好多了。偶尔有出现发黄偏暖之类的话，我这里分享一个使用小妙招，可根治GPT生成图片偶尔发黄的问题，Lovart在这里做了设置，我觉得非常好用。大家可以看我下面图片框选的部分。点击图层后右上角有这个图标，可以调整色温色调饱和度曝光等等。
 
 ![](img/991540de8c2251f865cb07f5efae5ba4.png)
 
@@ -301,30 +283,30 @@ Lovart这个勤勤恳恳的设计小行家，给了我三个选择，遵循了�
 
 ![](img/5114707af7d5296bd84f28ee70ea24cc.png)
 
-### **第四步：宣传画报**
+## 第四步：宣传画报
 
-**比如在儿童阅览区之类的，我还想**尝试做一些趣味宣传画， 这里我也尝试了制作一组，6张。
+比如在儿童阅览区之类的，我还想尝试做一些趣味宣传画， 这里我也尝试了制作一组，6张。
 
-+   A cute 3D cartoon girl with braids and round glasses, wearing a maroon floral dress, sitting cross-legged on the floor reading a space-themed book titled "太空探险". The background features hand-drawn rocket ships, stars, and planets in simple black lines. Add a bold Chinese title below: “探索宇宙”.
++ A cute 3D cartoon girl with braids and round glasses, wearing a maroon floral dress, sitting cross-legged on the floor reading a space-themed book titled "太空探险". The background features hand-drawn rocket ships, stars, and planets in simple black lines. Add a bold Chinese title below: “探索宇宙”.
 
-+   A cute 3D cartoon girl with braids and round glasses, holding a book titled "植物的秘密" with wide eyes, as green vines and small flowers peek from the book pages. The background shows line-art flowers and leaves surrounding her. Add a bold Chinese caption: “森林的低语”.
++ A cute 3D cartoon girl with braids and round glasses, holding a book titled "植物的秘密" with wide eyes, as green vines and small flowers peek from the book pages. The background shows line-art flowers and leaves surrounding her. Add a bold Chinese caption: “森林的低语”.
 
-+   A cute 3D cartoon girl with braids and round glasses, reading a fantasy book titled "魔法学校", with sparkles in her eyes and magical glow reflecting on her face. In the background, line-art magic hats, stars, and wands are drawn simply. Add the caption: “咒语与奇迹”.
++ A cute 3D cartoon girl with braids and round glasses, reading a fantasy book titled "魔法学校", with sparkles in her eyes and magical glow reflecting on her face. In the background, line-art magic hats, stars, and wands are drawn simply. Add the caption: “咒语与奇迹”.
 
-+   A cute 3D cartoon girl with braids and round glasses, sitting at a desk, chin on hand, pondering while reading a math book titled "数学的乐趣". The background is filled with simple math symbols like √, π, geometric shapes in hand-drawn line style. Caption below: “数字王国”.
++ A cute 3D cartoon girl with braids and round glasses, sitting at a desk, chin on hand, pondering while reading a math book titled "数学的乐趣". The background is filled with simple math symbols like √, π, geometric shapes in hand-drawn line style. Caption below: “数字王国”.
 
-+   A cute 3D cartoon girl with braids and round glasses, excitedly running with a book titled "小镇冒险记", looking adventurous. Behind her, line-art drawings of treasure maps, compass, and dashed paths. Caption: “冒险开始！”
++ A cute 3D cartoon girl with braids and round glasses, excitedly running with a book titled "小镇冒险记", looking adventurous. Behind her, line-art drawings of treasure maps, compass, and dashed paths. Caption: “冒险开始！”
 
-+   A cute 3D cartoon girl with braids and round glasses, sitting on a pile of colorful books with a warm smile, hugging all her favourite books. The background shows flying book pages and a hand-drawn rainbow. Add the final caption: “我爱阅读”.
++ A cute 3D cartoon girl with braids and round glasses, sitting on a pile of colorful books with a warm smile, hugging all her favourite books. The background shows flying book pages and a hand-drawn rainbow. Add the final caption: “我爱阅读”.
 
-+   一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，身穿栗色碎花连衣裙，盘腿坐在地板上阅读一本名为"太空探险"的太空主题图书。背景是用简单黑线手绘的火箭、星星和行星。底部添加醒目的中文标题："探索宇宙"。
++ 一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，身穿栗色碎花连衣裙，盘腿坐在地板上阅读一本名为"太空探险"的太空主题图书。背景是用简单黑线手绘的火箭、星星和行星。底部添加醒目的中文标题："探索宇宙"。
 
-+   一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，睁大眼睛手持一本名为"植物的秘密"的书，书页中探出绿色藤蔓和小花。背景是环绕着她的线条艺术风格的花朵和树叶。添加醒目的中文说明："森林的低语"。
++ 一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，睁大眼睛手持一本名为"植物的秘密"的书，书页中探出绿色藤蔓和小花。背景是环绕着她的线条艺术风格的花朵和树叶。添加醒目的中文说明："森林的低语"。
 
-+   一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，正在阅读一本名为"魔法学校"的奇幻书籍，眼中闪烁着光芒，脸上反射着魔法般的光芒。背景简单勾勒着线条艺术风格的魔法帽、星星和魔杖。添加说明："咒语与奇迹"。
++ 一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，正在阅读一本名为"魔法学校"的奇幻书籍，眼中闪烁着光芒，脸上反射着魔法般的光芒。背景简单勾勒着线条艺术风格的魔法帽、星星和魔杖。添加说明："咒语与奇迹"。
 
-+   一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，坐在书桌前，手托着下巴，若有所思地阅读一本名为"数学的乐趣"的数学书。背景填满了手绘线条风格的数学符号，如√、π和几何图形。底部说明："数字王国"。
++ 一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，坐在书桌前，手托着下巴，若有所思地阅读一本名为"数学的乐趣"的数学书。背景填满了手绘线条风格的数学符号，如√、π和几何图形。底部说明："数字王国"。
 
-+   一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，兴奋地拿着一本名为"小镇冒险记"的书奔跑，看起来充满冒险精神。她身后是线条艺术风格的藏宝图、指南针和虚线路径。说明："冒险开始！"
++ 一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，兴奋地拿着一本名为"小镇冒险记"的书奔跑，看起来充满冒险精神。她身后是线条艺术风格的藏宝图、指南针和虚线路径。说明："冒险开始！"
 
-+   一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，带着温暖的微笑坐在一堆彩色书籍上，怀抱着她所有喜爱的书籍。背景展现飞舞的书页和手绘彩虹。添加最后的说明："我爱阅读"。
++ 一个戴圆框眼镜、扎着辫子的可爱3D卡通女孩，带着温暖的微笑坐在一堆彩色书籍上，怀抱着她所有喜爱的书籍。背景展现飞舞的书页和手绘彩虹。添加最后的说明："我爱阅读"。

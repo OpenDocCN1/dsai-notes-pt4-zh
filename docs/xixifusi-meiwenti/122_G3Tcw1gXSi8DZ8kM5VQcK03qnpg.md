@@ -1,4 +1,5 @@
-# 最幸福的人有哪些思维和行为模式：
+
+# 最幸福的人有哪些思维和行为模式
 
 > 来源：[https://docs.feishu.cn/docx/XSrhdRdWWoYgqzxLtsbcKa91n9c](https://docs.feishu.cn/docx/XSrhdRdWWoYgqzxLtsbcKa91n9c)
 
@@ -24,6 +25,6 @@
 
 他们让事情发生（make things happen）。他们追求新的理解，寻求新的成就，并能控制好自己的想法和情绪。
 
---
+---
 
 内容出自 The How of Happiness 这本书（中文版翻译成了《幸福多了 40%》），在 Derek Sivers 的博客里看到：https://sive.rs/book/HowOfHappiness

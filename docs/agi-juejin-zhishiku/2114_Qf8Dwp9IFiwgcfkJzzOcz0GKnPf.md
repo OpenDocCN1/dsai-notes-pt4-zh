@@ -1,3 +1,4 @@
+
 # 8.6 OpenAI 高层动荡！联合创始人 Brockman 及核心高管同期离场
 
 > 来源：[https://agijuejin.feishu.cn/docx/Q5UDdgNYfol45dxAFm2clGOTnZg](https://agijuejin.feishu.cn/docx/Q5UDdgNYfol45dxAFm2clGOTnZg)
@@ -44,7 +45,7 @@ Cleo 是一款个性化 AI 财务助手，专为 Z 世代设计，通过 Chatbot
 
 GitHubStore｜[阅读原文](https://sourl.co/scr6hg)
 
-FinHack 是一个高度可扩展的量化金融框架，集成了数据采集、因子计算、机器学习、策略编写、回测和实盘接入等功能。它支持自定义数据源、因子、AI 模型和策略，具备良好的环境隔离和 A 股规则支持。框架采用动态复权机制，优化了回测速度，内置了 tushare 数据采集器，并支持多进程回测和机器学习训练，以充分利用服务器算力。FinHack 旨在为 Quant 和金融研究工作者提供一个开放、可定制的高水平工具。
+FinHack 是一个高度可扩展的量化金融框架，集成了数据采集、因子计算、机器学习、策略编写、回测和实盘接入等功能。它支持自定义数据源、因子、AI 模型和策略，具备良好的环境隔离和 A 股规则支持。框架采用动态复权机制，优化了回测速度，内置了 `tushare` 数据采集器，并支持多进程回测和机器学习训练，以充分利用服务器算力。FinHack 旨在为 Quant 和金融研究工作者提供一个开放、可定制的高水平工具。
 
 ## 💫 企业动态
 

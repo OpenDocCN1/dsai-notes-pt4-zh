@@ -1,3 +1,4 @@
+
 # 中美两大AI巨头
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/AFDjdMlrCoZSirxgVb8cheQAnhb](https://aiyanxishe.feishu.cn/docx/AFDjdMlrCoZSirxgVb8cheQAnhb)
@@ -14,7 +15,7 @@
 
 ![](img/e0c026683f1f202e0be1bba7e77a8ec4.png)
 
-尽**管许多**AI创业者付出了巨大努力开发应用，但在收入方面，他们往往不敌那些专注于售卖AI相关课程的人。抖音拥有高达325万粉丝基础的李一舟便是在这一领域内非常出名的一个例子，他以售卖课程为生，月收入一度超过千万元，成为了这个市场的佼佼者。
+尽管**许多**AI创业者付出了巨大努力开发应用，但在收入方面，他们往往不敌那些专注于售卖AI相关课程的人。抖音拥有高达325万粉丝基础的李一舟便是在这一领域内非常出名的一个例子，他以售卖课程为生，月收入一度超过千万元，成为了这个市场的佼佼者。
 
 更有网友认为这是两位营销高手：
 
@@ -22,7 +23,7 @@
 
 > **李一舟**是通过直接效果转化，来短期收获消费者，可能会损害品牌的长期价值。
 
-> 当然大家都想做**Altman，**但是需要时间、钱和技术
+> 当然大家都想做**Altman**，但是需要时间、钱和技术
 
 > 所以我觉得**李一舟**是更现实环境下的选择。
 
@@ -32,4 +33,4 @@
 
 ![](img/69c90a91aa64d56c3300c8c2cc6fa338.png)
 
-<https://aiyanxishe.feishu.cn/sync/IaSadpoOOsopKab1ajKcz6z3nAb>
+<https://aiyanxishe.feishu.cn/sync/IaSadpoOosOpKab1ajKcz6z3nAb>

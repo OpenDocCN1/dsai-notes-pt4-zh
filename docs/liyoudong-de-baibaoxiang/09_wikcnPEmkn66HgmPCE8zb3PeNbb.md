@@ -1,8 +1,9 @@
+
 # AI壁纸号一周增加上千粉丝
 
 > 来源：[https://docs.feishu.cn/docx/AK7odeDJWo7dchxcCzWcHRI4n0g](https://docs.feishu.cn/docx/AK7odeDJWo7dchxcCzWcHRI4n0g)
 
-# 前言
+## 前言
 
 随着AI绘画技术的发展，传统的互联网副业壁纸号在新的技术加持下迎来了第二春。本文将分享一位壁纸号创作者的成功案例，并为大家提供创作门槛和硬件要求等相关信息。
 
@@ -12,56 +13,65 @@
 
 ![](img/fc1a575c6f437e64d887a55e668f917c.png)
 
-# 壁纸号的变现方式：
+## 壁纸号的变现方式
 
-抖音和📕上的AI壁纸号可以通过以下三种方式进行变现：
+抖音和📕上的AI壁纸号可以通过以下方式进行变现：
 
-1.  **广告变现**：通过在壁纸小程序或网站中投放广告来获得收益。🛰️小程序，抖音小程序，快手小程序，每个平台都有对应的广告联盟，接入就可以。这个方法要你先搭建部署一套系统。当然也有现成的小程序平台，你可以入驻。
+1. **广告变现**：通过在壁纸小程序或网站中投放广告来获得收益。🛰️小程序，抖音小程序，快手小程序，每个平台都有对应的广告联盟，接入就可以。这个方法要你先搭建部署一套系统。当然也有现成的小程序平台，你可以入驻。
 
-1.  **定制头像和海报等**
-借助ChatGPT等AI技术，现在可以轻松地完成定制任务。我们可以根据用户的需求和喜好，为他们制作定制头像和海报等设计作品，并收取一定的费用。
+2. **定制头像和海报等**
 
-1.  **原创设计授权**
+借助`ChatGPT`等AI技术，现在可以轻松地完成定制任务。我们可以根据用户的需求和喜好，为他们制作定制头像和海报等设计作品，并收取一定的费用。
+
+3. **原创设计授权**
+
 壁纸号可以将自己的原创设计授权给相关公司或品牌，以获得授权费用。如下面这个账号
 
 ![](img/e7b41989a35c6c2ed593ea329208ad7e.png)
 
-1.  **付费壁纸**：提供一些高品质的、独特的付费壁纸，吸引一部分用户购买，从中获得收益。
+4. **付费壁纸**：提供一些高品质的、独特的付费壁纸，吸引一部分用户购买，从中获得收益。
 
-1.  **粉丝打赏**
+5. **粉丝打赏**
+
 壁纸号可以通过📕平台的“鼓励”功能向粉丝发起打赏，粉丝可以通过打赏表达对壁纸号的喜爱和支持。
 
-1.  **直播变现**
+6. **直播变现**
+
 📕平台支持直播功能，壁纸号可以通过直播介绍自己的壁纸作品，通过直播间销售相关商品或服务。
 
-1.  **项目收徒**
+7. **项目收徒**
+
 当我们的壁纸号达到一定程度后，可以考虑通过收徒的方式获取更多收益。具体而言，我们可以带领新手壁纸作者，分享我们的经验和技巧，以获取一定的报酬。
 
 以上是对抖音和📕AI壁纸号变现途径的优化说明。下面我们着重讲解下网盘拉新，以及如何使用AI绘画，完成高效高清的图片。
 
-## **Ai绘画工具下载和安装**
+### Ai绘画工具下载和安装
 
-[Stable Diffusion的详细安装教程可以看下这篇](https://www.bilibili.com/video/BV1ts4y1d7NA/?spm_id_from=333.999.0.0)教程：【AI绘画】小白也能两分钟实现Stable Diffusion本地部署_哔哩哔哩_bilibili
+[Stable Diffusion的详细安装教程可以看下这篇](https://www.bilibili.com/video/BV1ts4y1d7NA/?spm_id_from=333.999.0.0)教程：【AI绘画】小白也能两分钟实现`Stable Diffusion`本地部署_哔哩哔哩_bilibili
 
-除了stable diffusion以外，市面上还有很多AI绘画的程序及软件可以使用，不过有些次数会受到限制或者收费等等。
+除了`stable diffusion`以外，市面上还有很多AI绘画的程序及软件可以使用，不过有些次数会受到限制或者收费等等。
 
-而本地部署的stable diffusion可以一劳永逸解决问题。
+而本地部署的`stable diffusion`可以一劳永逸解决问题。
 
-## 如何生成好的图片
+### 如何生成好的图片
 
 在AI绘图中，生成优质作品就像开启盲盒或进行炼丹一样，关键在于使用好的“丹炉”和“材料”。
 
-“丹炉”指的是Stable Diffusion所使用的模型。在C站上有很多开源免费的模型可供下载，其中我们推荐使用XXX（AI仿真虚拟人）和XXX（二次元动漫）模型。
+“丹炉”指的是`Stable Diffusion`所使用的模型。在C站上有很多开源免费的模型可供下载，其中我们推荐使用XXX（AI仿真虚拟人）和XXX（二次元动漫）模型。
 
-而“材料”则是指提示词（Prompt）。在Stable Diffusion中，提示词的使用有一定的规则，例如越靠前的提示词权重越高。许多初学者不了解这些规则，导致生成的作品质量难以控制，甚至可能会画出与预期不符的怪异背景或生物。
+而“材料”则是指提示词（`Prompt`）。在`Stable Diffusion`中，提示词的使用有一定的规则，例如越靠前的提示词权重越高。许多初学者不了解这些规则，导致生成的作品质量难以控制，甚至可能会画出与预期不符的怪异背景或生物。
 
 ![](img/86aae7b9f66f026d977ffbd30c508407.png)
 
-合适模型及参数下的长腿美女，提示词：mix420dsolo,long hair,shirtdress,high heelsfull body
+合适模型及参数下的长腿美女，提示词：
+
+```
+mix420dsolo,long hair,shirtdress,high heelsfull body
 
 look at viewer,8k,RAW photo,best qualitymasterpiece:12)realistic,photo-realistic:1.37)professional lighting,photon mapping,radiosity,physically-based rendering，
 
 Negative prompt: paintingssketches,(worst quality:2)lowquality:2)(normalquality:2),lowres, normal quality.(monochrome))((grayscale))skin spots,acnes,skin blemishes,age spotqlans,(worst quality:2)(low quality:2)(normal quality:2)lowres,normal quality((monochrome))((grayscale)skin spots, acnes skin blemishes, age spot,glansextra fingersfewer fingersstrange fingersbad hand(low qualityworst quality:14)(bad prompt:0.8)(monochrome)(greyscale)
+```
 
 ![](img/ca1379b4076ee167bebc3f4aae608559.png)
 
@@ -86,9 +96,9 @@ a (word:1.5)-提高word的权重1.5倍
 a (word:0.25)-降低word的权重4倍（1/0.25）
 ```
 
-[你想仔细深入研究的话可以参](https://guide.novelai.dev/guide/configuration/param-basic)考这篇教程：调参基础 | AiDraw
+[你想仔细深入研究的话可以参考这篇教程：调参基础 | AiDraw](https://guide.novelai.dev/guide/configuration/param-basic)
 
-# 总结
+## 总结
 
 该项目的逻辑比较容易理解，通过ai产出高质量内容撬动抖音、📕等平台的流量算法，再通过网盘拉新的形式进行变现，比较适合新手小白。
 

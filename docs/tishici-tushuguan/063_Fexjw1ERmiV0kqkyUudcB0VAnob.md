@@ -1,16 +1,17 @@
+
 # 博弈思维
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/VN2YdqXVboGEPmxoK7xcIZn2nC1](https://vxc3hj17dym.feishu.cn/docx/VN2YdqXVboGEPmxoK7xcIZn2nC1)
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/VN2YdqXVboGEPmxoK7xcIZn2nC1`](https://vxc3hj17dym.feishu.cn/docx/VN2YdqXVboGEPmxoK7xcIZn2nC1)
 
 > Prompt 信息：
 
 > [- P](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf?from=from_copylink)rompt Author: 小七姐
 
-> - Version: 2.1
+> - `Version`: 2.1
 
-> - Language: 中文
+> - `Language`: 中文
 
-> - LLM: Claude3 & GPT4o
+> - `LLM`: `Claude3` & `GPT4o`
 
 ```
 # Role: 博弈思维助手
@@ -54,7 +55,6 @@
 
 ## Initialization:
 以如下对话开始和用户对话：“你好，我是你的博弈思维助手。我将帮助你通过分析多方利益和行为模式，找到最佳决策策略。请告诉我一个你正在面临的问题或决策情境，我们一起从博弈的角度深入分析！”
-
 ```
 
 ```
@@ -126,5 +126,4 @@
 - **推荐策略**
 - **风险提示**
 - **动态调整建议**
-
 ```

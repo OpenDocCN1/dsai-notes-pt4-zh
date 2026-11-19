@@ -1,44 +1,45 @@
+
 # AI 企业应用场景研究报告
 
-> 来源：[https://docs.feishu.cn/docx/Be9KdpGWIobSq9xUPzdcRu4JnRf](https://docs.feishu.cn/docx/Be9KdpGWIobSq9xUPzdcRu4JnRf)
+> 来源：[`https://docs.feishu.cn/docx/Be9KdpGWIobSq9xUPzdcRu4JnRf`](https://docs.feishu.cn/docx/Be9KdpGWIobSq9xUPzdcRu4JnRf)
 
 > 本报告为团队协同创作完成，领路人是
 
-> 原链接：[AIGC 行业报告](https://to7e2gkmim.feishu.cn/docx/CCOQdQ2Y0ooyNyxyCNgcPyjLnnf) ，这一篇是 修订整理过的新的一版
+> 原链接：[AIGC 行业报告](`https://to7e2gkmim.feishu.cn/docx/CCOQdQ2Y0ooyNyxyCNgcPyjLnnf`) ，这一篇是 修订整理过的新的一版
 
-> 个人说明书：[泛函同学的一切 | 这是一篇阅读量破万的个人说明书](https://to7e2gkmim.feishu.cn/wiki/wikcnl2UCXsXjLBgGBnt3GDCI7g)
+> 个人说明书：[泛函同学的一切 | 这是一篇阅读量破万的个人说明书](`https://to7e2gkmim.feishu.cn/wiki/wikcnl2UCXsXjLBgGBnt3GDCI7g`)
 
-> 一些画过的画：[泛函的 AI 绘画作品集](https://to7e2gkmim.feishu.cn/wiki/wikcn3zPc3EoL9Qcv3KHo4ds813)
+> 一些画过的画：[泛函的 AI 绘画作品集](`https://to7e2gkmim.feishu.cn/wiki/wikcn3zPc3EoL9Qcv3KHo4ds813`)
 
-> 搭建的多维表格模板：[泛函的多维表格作品合集](https://to7e2gkmim.feishu.cn/wiki/wikcnvhQy0zffyyA0cQIgZajRtd)
+> 搭建的多维表格模板：[泛函的多维表格作品合集](`https://to7e2gkmim.feishu.cn/wiki/wikcnvhQy0zffyyA0cQIgZajRtd`)
 
-# 消费端应用
+## 消费端应用
 
-## AIGC 类搜索引擎
+### AIGC 类搜索引擎
 
-> [Perplexity 案例合集 | chatGPT 竞品研究](https://to7e2gkmim.feishu.cn/wiki/wikcnQViiaBVEzBYkPLhdACR0Ce)
+> [Perplexity 案例合集 | chatGPT 竞品研究](`https://to7e2gkmim.feishu.cn/wiki/wikcnQViiaBVEzBYkPLhdACR0Ce`)
 
-### Perplexity 介绍
+#### Perplexity 介绍
 
-> 官网链接：https://www.perplexity.ai/?s=u&uuid=aa0f28e7-893f-4bed-8e41-58a9bce11356
+> 官网链接：`https://www.perplexity.ai/?s=u&uuid=aa0f28e7-893f-4bed-8e41-58a9bce11356`
 
-#### 视频介绍
+##### 视频介绍
 
-<https://player.bilibili.com/player.html?bvid=11R4y1B7ha&spm_id_from=333.337.search-card.all.click>
+`https://player.bilibili.com/player.html?bvid=11R4y1B7ha&spm_id_from=333.337.search-card.all.click`
 
-#### 文字介绍
+##### 文字介绍
 
 > 我想向我的朋友推荐 Perplexity 这款产品，我该如何介绍Perplexity？
 
-> Perplexity is a measure of how well a language mo**del predic**t**s the** **next **word in a s**enten**ce([1])([2]). It can be used to evaluate chatbot models, such as ChatGPT([3]), and has been shown to have an effect on the quality of generated text([4]). In natural language processing (NLP), perplexity is one way to measure the performance of a language model([5]).
+> Perplexity is a measure of how well a language model predicts the next word in a sentence([1])([2]). It can be used to evaluate chatbot models, such as ChatGPT([3]), and has been shown to have an effect on the quality of generated text([4]). In natural language processing (NLP), perplexity is one way to measure the performance of a language model([5]).
 
 ![](img/335b6d351776030c366a2f66eae073f1.png)
 
-##### 毕业论文案例
+###### 毕业论文案例
 
 AIGC 领域研究 | 统计学论文
 
-####### 问题 1：想研究 AIGC 这个领域，推荐更加细分的研究方向
+###### 问题 1：想研究 AIGC 这个领域，推荐更加细分的研究方向
 
 提问与回答
 
@@ -46,17 +47,9 @@ AIGC 领域研究 | 统计学论文
 
 > 我是一个统计学专业的中国大学生，我的毕业论文想研究 AIGC 这个领域，请你给我推荐几个这个领域更加细分的研究方向。
 
-> Chinese university students interested in researching Artificial Intelligence in Games and
+> Chinese university students interested in researching Artificial Intelligence in Games and Computation (AIGC) can explore topics such as AI-driven game design [1], AI applications in education [2], the implications of AI for China [3], and the impact of tech giants on the adoption of advanced technologies [4].
 
-> Computation (AIGC) can explore topics such as Al-driven game design [1], Al applications in
-
-> education [2], the implications of Al for China [3], and the impact of tech giants on the
-
-> adoption of advanced technologies [4].
-
-> 有兴趣研究游戏和人工智能的中国大学生（AIGC）可以探索诸如 AI 驱动的游戏设计[1]、 Al 应用在
-
-> 教育[2],Al对中国的影响[3],以及科技巨头采用先进技术对中国的影响采用先进技术[4]。
+> 有兴趣研究游戏和人工智能的中国大学生（AIGC）可以探索诸如 AI 驱动的游戏设计[1]、AI 应用在教育[2]、AI 对中国的影响[3]、以及科技巨头采用先进技术对中国的影响[4]。
 
 引用链接
 
@@ -64,7 +57,7 @@ AIGC 领域研究 | 统计学论文
 
 ![](img/b9ca68c6c5c3717bc26ac28247815a44.png)
 
-[dagrep_v007_i011_p086_17471.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnLmmhaSnhmsw8UQGRPvU1gd)
+[`dagrep_v007_i011_p086_17471.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnLmmhaSnhmsw8UQGRPvU1gd)
 
 研究报告：Artificial Intelligence Market Size, Share & Trends AnalysisReport
 
@@ -72,9 +65,9 @@ AIGC 领域研究 | 统计学论文
 
 ![](img/8c9ba06b4ff880a31a683b1c7ed1db72.png)
 
-[MGI-Artificial-intelligence-implications-for-China.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnzEYQb94ihV9Ur6TmUPKMQ3)
+[`MGI-Artificial-intelligence-implications-for-China.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnzEYQb94ihV9Ur6TmUPKMQ3)
 
-####### **问题2：请你帮我写一份论文大纲**
+###### 问题 2：请你帮我写一份论文大纲
 
 提问与回答
 
@@ -82,39 +75,33 @@ AIGC 领域研究 | 统计学论文
 
 > 好的，我现在决定研究 chatGPT 对中国大学生教育的影响，并且与我的专业统计学相结合，请你就这个主题帮我写出一份论文大纲。
 
-> A re**searc**h paper on the impact of ChatG**PT on** Chinese univ**ersit**y students and its relation to statistics could include topics such as the use of ChatGPT in schools([1]), factors influencing university student happiness([2]), trust in AI programs used by the government([3]), online course development
+> A research paper on the impact of ChatGPT on Chinese university students and its relation to statistics could include topics such as the use of ChatGPT in schools([1]), factors influencing university student happiness([2]), trust in AI programs used by the government([3]), online course development([4]), and Baidu's AI chatbot service rival to OpenAI's ChatGPT([5]).
 
-> **([4])**, and Baidu's AI chatbot service rival** to O**penAI's ChatGPT([5]).
-
-> 关于ChatGPT对中国大学生的影响及其与统计数据的关系的开究论文可能包括诸如ChatGPT在学校的使用
-
-> 响大学生幸福感的因素([2]),对政府使用的AI程序的信任([3]),在线课程开发等主题([4]),以及百度的AI聊天机器人服务竞争对手OpenAl的ChaatGPT ([5])。
+> 关于ChatGPT对中国大学生的影响及其与统计数据的关系的研究论文可能包括诸如ChatGPT在学校的使用、影响大学生幸福感的因素([2])、对政府使用的AI程序的信任([3])、在线课程开发等主题([4])、以及百度的AI聊天机器人服务竞争对手OpenAI的ChatGPT ([5])。
 
 引用链接
 
-文章**：Don't Ban ChatGPT in Sch**ools. Teach With It.
+文章：Don't Ban ChatGPT in Schools. Teach With It.
 
-🔗：https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html
+🔗：`https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html`
 
-文章：**Alarmed ****by A.I. Chatbots, Univers**ities Start Revamping How They Teach
+文章：Alarmed by A.I. Chatbots, Universities Start Revamping How They Teach
 
-🔗：https://www.nytimes.com/2023/01/16/technology/chatgpt-artificial-intelligence-universities.html
+🔗：`https://www.nytimes.com/2023/01/16/technology/chatgpt-artificial-intelligence-universities.html`
 
 文章：ChatGPT Is a Plague Upon Education
 
-文章：**Ba**idu to Unveil AI Chatbot Rival to OpenAI’s ChatGPT
+文章：Baidu to Unveil AI Chatbot Rival to OpenAI’s ChatGPT
 
 文章：Can We Trust ChatGPT and Artificial Intelligence to Do Humans’ Work?
 
-####### 问题 3 ：推荐论文
+###### 问题 3：推荐论文
 
 ![](img/79757566b262534bcdbabe3b893e557b.png)
 
 > 我决定研究 chatGPT 对中国大学生教育的影响，你推荐我阅读哪些对我研究有帮助的论文？
 
-> Research papers have been published on the impact of ChatGPT on Chinese university
-
-> students, such as The Chinese University of Hong Kong Faculty of Law Research Paper No, which examines the ability of ChatGPT to answer questions[1].Alarmed by the rise of ChatGPT, universities have started revamping how they teach courses and taking preventive measures [2]. Al experts have also discussed how ChatGPT can be used to write research papers and the potential implications for cheating in universities[3].
+> Research papers have been published on the impact of ChatGPT on Chinese university students, such as The Chinese University of Hong Kong Faculty of Law Research Paper No, which examines the ability of ChatGPT to answer questions[1]. Alarmed by the rise of ChatGPT, universities have started revamping how they teach courses and taking preventive measures [2]. AI experts have also discussed how ChatGPT can be used to write research papers and the potential implications for cheating in universities[3].
 
 引用链接
 
@@ -122,11 +109,11 @@ AIGC 领域研究 | 统计学论文
 
 ![](img/d995f36a95949a71607ebcd1247aea2a.png)
 
-[SSRN-id4359407.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnqm58TsFEKSFgWQ7oweI3Zg)
+[`SSRN-id4359407.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnqm58TsFEKSFgWQ7oweI3Zg)
 
 文章：ChatGPT is changing education, AI experts say — but how?
 
-🔗：https://www.dw.com/en/chatgpt-is-changing-education-ai-experts-say-but-how/a-64454752
+🔗：`https://www.dw.com/en/chatgpt-is-changing-education-ai-experts-say-but-how/a-64454752`
 
 ## 创意
 
@@ -138,7 +125,7 @@ AI文本生成的方式大体分为两类：非交互式文本生成与交互式
 
 最令人印象深刻的交互式文本内容生成应用要属ChatGPT。
 
-**Chatgpt能做的49件事**
+#### Chatgpt能做的49件事
 
 ![](img/fc3a77be4bfb6c98a07fa888eb1c5c8e.png)
 
@@ -156,7 +143,7 @@ AIGC在图像生成方面有两种最成熟的落地使用场景：图像编辑�
 
 2022年下半年，AI绘图无疑成为热门应用，不少人都乐此不疲地在自己的朋友圈分享各种形式的AI绘画作品。从参与感与可玩度来看，AI绘画大致可以分为三类：借助文字描述生成图像、借助已有图像生成新图像，以及两者的结合版。
 
-#### **商业化探索**
+#### 商业化探索
 
 AI 绘画商业化方面仍处于摸索阶段，变现方式较为单一。用户多为生成数量或者使用时间付费，常见付费方式为订阅制或按次付费。
 
@@ -164,7 +151,7 @@ AI 绘画商业化方面仍处于摸索阶段，变现方式较为单一。用�
 
 目前尚未形成明确的盈利模式，主要收费方式是首次注册DreamStudio beta 将获得价值 2 英镑的积分，约为200 次单张图免费生成的额度。试用后可按 10 英镑的增量购买额外的积分。
 
-##### **Midjourney **
+##### Midjourney
 
 Midjourney 采用了订阅制，新用户可免费生成 25 张，之后对于个人用户或公司年收入少于 100 万美元的企业员工用户，有两个档位的订阅套餐可选。对于大公司客户，单人一年收费约为 600 美元，生成的作品可以商用。
 
@@ -174,43 +161,43 @@ Midjourney 采用了订阅制，新用户可免费生成 25 张，之后对于�
 
 在音乐生成方面，AIGC可以生成各种类型的音乐，例如流行歌曲、爵士乐、古典音乐等。音乐生成系统通常使用生成对抗网络（Generative Adversarial Network，GAN），它学习音乐的特征，从而生成音乐片段。AI音频生成主要分为两种类型：语音合成与歌曲生成。
 
-#### **语音合成**
+#### 语音合成
 
-> 马斯克大加赞赏的 voice.ai
+> 马斯克大加赞赏的 `voice.ai`
 
-<https://player.bilibili.com/player.html?bvid=1iP411g7Ss&share_source=copy_web&vd_source=066fb8318bd3c075df7805c51c24ad30>
+`https://player.bilibili.com/player.html?bvid=1iP411g7Ss&share_source=copy_web&vd_source=066fb8318bd3c075df7805c51c24ad30`
 
-#### **歌曲生成**
+#### 歌曲生成
 
 ##### MusicLM——谷歌
 
 谷歌全新生成的AI模型MusicLM，可以通过文字直接生成高保真的音乐。
 
-MusicLM还有故事模式，可以指定音乐的时长，甚至MusicLM还可以通过绘画和字幕说明来创造符合图片情景的音乐。此外MusicLm还可以根据乐器、年代、流派、地点以及音乐家水准来创作音乐。AIGC生成的音乐更加灵活，可以快速生成大量的音乐作品。
+MusicLM还有故事模式，可以指定音乐的时长，甚至MusicLM还可以通过绘画和字幕说明来创造符合图片情景的音乐。此外MusicLM还可以根据乐器、年代、流派、地点以及音乐家水准来创作音乐。AIGC生成的音乐更加灵活，可以快速生成大量的音乐作品。
 
 ![](img/65a28e4198d07d5b52b6592171a595e4.png)
 
-##### X studio 3 ：AI 虚拟歌手 | 辅助作曲
+##### X studio 3：AI 虚拟歌手 | 辅助作曲
 
-<https://player.bilibili.com/player.html?bvid=1XK411X7nv&spm_id_from=333.337.search-card.all.click>
+`https://player.bilibili.com/player.html?bvid=1XK411X7nv&spm_id_from=333.337.search-card.all.click`
 
-#### 视频生成
+### 视频生成
 
 在视频生成方面，AIGC可以生成动画视频、短片、广告等。视频生成系统通常利用深度卷积生成对抗网络（Deep Convolutional Generative Adversarial Network，DCGAN），它可以生成高质量的视频。例如：Dreamix、Gen-1 by Runway、文心一格等。
 
-**Dreamix**
+##### Dreamix
 
 Dreamix，只要上传原视频，输入文字描述，一个新的视频就生成了。
 
 ![](img/b6c5681cd38cb57d1db9d2fa3ee73410.png)
 
-**GEN-1 by Runway**
+##### GEN-1 by Runway
 
 Gen-1使用文字和图像从现有视频中生成新视频，不用灯光、不用相机、不用动捕，通过将图像或文本提示的构图和样式应用于源视频的结构，逼真且一致地合成新视频。就像拍新东西一样，但是什么都没拍。引入更具表现力、电影感和一致性的视频生成技术。
 
 ![](img/c8b56ad8b1b1dd84c4033b660c1b5226.png)
 
-**文心一格**
+##### 文心一格
 
 去年首支全AIGC生成MV发布——《启航星》，其画面全部由文心一格自动生成。百度推出”创作者AI助理团队“，其中“AI视频制作助理”利用多模态AI处理技术，实现图文自动生成视频能力，速度可达“分钟级”。
 
@@ -218,47 +205,51 @@ Gen-1使用文字和图像从现有视频中生成新视频，不用灯光、不
 
 AIGC（Artificial Intelligence in Education and Intelligent Tutoring Systems）在教学场景中的应用十分广泛，可以帮助学生实现更加智能化、个性化、互动化的学习，提高学生的学习效果和体验，同时也为教师提供更多的帮助和支持。（以下是ChatGPT的自述）
 
-1.  智能化教学内容的个性化推荐：通过对学生的学习行为、兴趣爱好、学习能力等因素进行分析，AIGC可以推荐最适合学生的学习内容和知识点，提高学生的学习效率和兴趣。
+1. 智能化教学内容的个性化推荐：通过对学生的学习行为、兴趣爱好、学习能力等因素进行分析，AIGC可以推荐最适合学生的学习内容和知识点，提高学生的学习效率和兴趣。
 
-1.  自动化的作业和考试批改：AIGC可以自动识别和分析学生提交的作业和考试答案，快速、准确地进行批改和评估，节省教师的时间和精力。
+2. 自动化的作业和考试批改：AIGC可以自动识别和分析学生提交的作业和考试答案，快速、准确地进行批改和评估，节省教师的时间和精力。
 
-1.  智能化的学习辅导和指导：AIGC可以通过对学生学习行为和情感状态的识别，为学生提供个性化的学习辅导和指导，帮助学生解决学习中遇到的困难和问题。
 
-1.  人机交互式学习体验：AIGC可以通过虚拟现实、增强现实等技术，为学生提供更加生动、多样、互动的学习体验，增强学生的学习兴趣和参与度。
+
+## AIGC在教育领域的应用
+
+1. 智能化的学习辅导和指导：AIGC可以通过对学生学习行为和情感状态的识别，为学生提供个性化的学习辅导和指导，帮助学生解决学习中遇到的困难和问题。
+
+1. 人机交互式学习体验：AIGC可以通过虚拟现实、增强现实等技术，为学生提供更加生动、多样、互动的学习体验，增强学生的学习兴趣和参与度。
 
 > 总之，AIGC技术在教育领域的应用包括自适应学习、智能辅导、虚拟实验、知识推荐、情感识别等多个方面。以下是其中的一些应用和相关的产品或公司：
 
-+   自适应学习： AIGC技术可以通过对学生个性化特征、学习风格、知识水平等进行分析，实现个性化学习路径的推荐。在这一领域较为出色的产品或公司包括：
++ 自适应学习：AIGC技术可以通过对学生个性化特征、学习风格、知识水平等进行分析，实现个性化学习路径的推荐。在这一领域较为出色的产品或公司包括：
 
 ![](img/226acf972a902bff1a8bd089166473fa.png)
 
-+   Carnegie Learning：一个提供智能化数学学习解决方案的公司，提供基于大数据和人工智能的个性化数学学习服务。
++ Carnegie Learning：一个提供智能化数学学习解决方案的公司，提供基于大数据和人工智能的个性化数学学习服务。
 
-+   DreamBox Learning：一个提供基于AIGC技术的数学学习平台，能够根据学生的学习状态和能力水平进行智能化的课程推荐和评估。
++ DreamBox Learning：一个提供基于AIGC技术的数学学习平台，能够根据学生的学习状态和能力水平进行智能化的课程推荐和评估。
 
-+   智能辅导：AIGC技术可以通过自然语言处理、图像识别等技术实现对学生问题的自动识别和解答。在这一领域较为出色的产品或公司包括：
++ 智能辅导：AIGC技术可以通过自然语言处理、图像识别等技术实现对学生问题的自动识别和解答。在这一领域较为出色的产品或公司包括：
 
-+   Squirrel AI：一个提供基于AIGC技术的K12在线学习平台，通过对学生语言、情感、认知等多个维度进行分析，实现个性化的智能辅导。
++ Squirrel AI：一个提供基于AIGC技术的K12在线学习平台，通过对学生语言、情感、认知等多个维度进行分析，实现个性化的智能辅导。
 
-+   Liulishuo：一个提供基于AIGC技术的英语学习APP，能够根据学生的学习状态和学习目标，推荐个性化的学习内容和学习方式。
++ Liulishuo：一个提供基于AIGC技术的英语学习APP，能够根据学生的学习状态和学习目标，推荐个性化的学习内容和学习方式。
 
-+   虚拟实验：AIGC技术可以通过虚拟实验系统，实现对复杂现象和实验的模拟和分析。在这一领域较为出色的产品或公司包括：
++ 虚拟实验：AIGC技术可以通过虚拟实验系统，实现对复杂现象和实验的模拟和分析。在这一领域较为出色的产品或公司包括：
 
-+   Labster：一个提供基于AIGC技术的虚拟实验教育平台，提供生物、化学等学科的虚拟实验服务，能够帮助学生提高实验技能和实验设计能力。
++ Labster：一个提供基于AIGC技术的虚拟实验教育平台，提供生物、化学等学科的虚拟实验服务，能够帮助学生提高实验技能和实验设计能力。
 
-+   知识推荐：AIGC技术可以通过对学生知识点掌握程度的分析，推荐合适的学习资源和知识点。在这一领域较为出色的产品或公司包括：
++ 知识推荐：AIGC技术可以通过对学生知识点掌握程度的分析，推荐合适的学习资源和知识点。在这一领域较为出色的产品或公司包括：
 
-+   Edmentum：一个提供基于AIGC技术的K12在线学习解决方案的公司，能够根据学生的学习状态和知识点的掌握情况，推荐个性化的学习资源和课程。
++ Edmentum：一个提供基于AIGC技术的K12在线学习解决方案的公司，能够根据学生的学习状态和知识点的掌握情况，推荐个性化的学习资源和课程。
 
-+   Coursera：一个提供在线课程和学位的平台，通过对学生学习行为的分析和学习成果的评估，为学生推荐适合的课程和知识点。
++ Coursera：一个提供在线课程和学位的平台，通过对学生学习行为的分析和学习成果的评估，为学生推荐适合的课程和知识点。
 
-+   情感识别：AIGC技术可以通过对学生情感状态的识别，实现情感智能化的学习。在这一领域较为出色的产品或公司包括：
++ 情感识别：AIGC技术可以通过对学生情感状态的识别，实现情感智能化的学习。在这一领域较为出色的产品或公司包括：
 
 ![](img/1ea6dad169aaf31526747be40f3ae739.png)
 
-+   Affectiva：一个提供面部表情识别和情感分析技术的公司，可以通过对学生情感状态的分析，实现情感智能化的学习和辅导。
++ Affectiva：一个提供面部表情识别和情感分析技术的公司，可以通过对学生情感状态的分析，实现情感智能化的学习和辅导。
 
-+   Woebot：一个提供基于AIGC技术的情感智能化的心理辅导机器人，能够为用户提供个性化的心理咨询和辅导。
++ Woebot：一个提供基于AIGC技术的情感智能化的心理辅导机器人，能够为用户提供个性化的心理咨询和辅导。
 
 > 除此之外，还有许多其他的产品或公司在AIGC教育领域有出色的表现，比如Knewton、Smart Sparrow等，未来也将有更多的创新企业加入到这个领域。
 
@@ -298,11 +289,11 @@ ChatGPT可以如同一名全能的私人教练的角色存在，只要你对自�
 
 用精确的问题让AIGC帮你生产内容，步骤：
 
-+   先让ChatGPT帮你梳理一份行业研究框架
++ 先让ChatGPT帮你梳理一份行业研究框架
 
-+   再就行业研究框架里的问题让他详细阐述
++ 再就行业研究框架里的问题让他详细阐述
 
-+   适当的列举一些具体的案例和公司进行丰富
++ 适当的列举一些具体的案例和公司进行丰富
 
 ![](img/e8fa3aa2dcc6f2734a9445bba0eafd7d.png)
 
@@ -316,27 +307,27 @@ ChatGPT可以如同一名全能的私人教练的角色存在，只要你对自�
 
 ## AIGC商业化模式
 
-### **To B****为主**
+### To B为主
 
-虽然AIGC使C端用户以较低的门槛使用 **AI 生成内容，但**就目前来看，to B 仍然是核心商业模式。对于 B 端客户来说，他们的需求和付费意愿是较为稳定的，这主要有以下两个核心原因：对于 B 端带来的效率提升和成本下降，如用 AIGC 抓取信息后根据已有模板完成新闻或一些产品的测评；能够填补原本很难完成的需求鸿沟。
+虽然AIGC使C端用户以较低的门槛使用AI生成内容，但就目前来看，to B仍然是核心商业模式。对于B端客户来说，他们的需求和付费意愿是较为稳定的，这主要有以下两个核心原因：对于B端带来的效率提升和成本下降，如用AIGC抓取信息后根据已有模板完成新闻或一些产品的测评；能够填补原本很难完成的需求鸿沟。
 
 ### 订阅制
 
-随着AI 模型与算力的发展突破了可用的临界点，AIGC 对个体的赋能也不容忽视，且将以订阅制为主。
+随着AI模型与算力的发展突破了可用的临界点，AIGC对个体的赋能也不容忽视，且将以订阅制为主。
 
-第一是作为**效率工具**，AIGC 产品能够在信息获取、格式整理和工作流**等各个流**程提高个人用户的效率；第二是作为创作工具，像剪辑、修图软件一样，AIGC 能够大幅度降低大众用户的创作门槛。
+第一是作为效率工具，AIGC产品能够在信息获取、格式整理和工作流等各个流程提高个人用户的效率；第二是作为创作工具，像剪辑、修图软件一样，AIGC能够大幅度降低大众用户的创作门槛。
 
-效率工具例如 Notion 发布的NotionAI，尤其值得关注 AI 模型作为基础设施集成到已有的工作流中。
+效率工例如Notion发布的NotionAI，尤其值得关注AI模型作为基础设施集成到已有的工作流中。
 
-### **算力市场**
+### 算力市场
 
-根据 OpenAI 的研究，AI 训练所需算力指数增长，且增长速度超越硬件的摩尔定律。AI 模型大算力的背后需要高昂的算力成本，GPT-3 训练的算力成本超过 400 万美元。尽管 AI 模型往往会**选择开源，但数据集和训**练成果是一个团队的内部资产，这意味着每个 AI 产品都需要支付自己的训练成本。在未来 AIGC 随着 B 端和 C 端的商业化落地的实现，算力集群的建设和云服务都会受益，同时考虑到英伟达 A100、H100 出口受限，相关国产算力芯片将有机会获得增量市场。
+根据OpenAI的研究，AI训练所需算力指数增长，且增长速度超越硬件的摩尔定律。AI模型大算力的背后需要高昂的算力成本，GPT-3训练的算力成本超过400万美元。尽管AI模型往往会选择开源，但数据集和训练成果是一个团队的内部资产，这意味着每个AI产品都需要支付自己的训练成本。在未来AIGC随着B端和C端的商业化落地的实现，算力集群的建设和云服务都会受益，同时考虑到英伟达A100、H100出口受限，相关国产算力芯片将有机会获得增量市场。
 
-### **AIGC 社区**
+### AIGC社区
 
-近期在与各个创业团队的沟通过程中，我们发现行业一个重要的关注点会放在 AI**GC 与** **Web3.**0 的结合，以及 AIGC 与社区的融合。AIGC 让用户的创作门槛的降低，有助于加强社区的互动和发展，同时降低了平台的内容成本。社区用户对内容的探讨与偏好能为 AIGC 模型提供优质的反馈，以便后续优化增强产品力。NFT能够确权作品和链接社区，AIGC与 NFT 社区的结合探索，或将产生值得期待的商业创新。
+近期在与各个创业团队的沟通过程中，我们发现行业一个重要的关注点会放在AIGC与Web3.0的结合，以及AIGC与社区的融合。AIGC让用户的创作门槛的降低，有助于加强社区的互动和发展，同时降低了平台的内容成本。社区用户对内容的探讨与偏好能为AIGC模型提供优质的反馈，以便后续优化增强产品力。NFT能够确权作品和链接社区，AIGC与NFT社区的结合探索，或将产生值得期待的商业创新。
 
-## 🥰 如果你感觉这些内容对你有帮助
+# 🥰 如果你感觉这些内容对你有帮助
 
 > 不妨请我喝杯咖啡吧
 
@@ -350,15 +341,15 @@ ChatGPT可以如同一名全能的私人教练的角色存在，只要你对自�
 
 ### 写代码
 
-+   前段时间，一篇名为“[ChatGPT 通过谷歌](https://www.baidu.com/link?url=uv2dElUzqtPQ7NLv7qaFfjgL6rdjloFoqg1_erAVfPselh1QztxiU4O6AYj3-V2gQt8jlrfk5_MmjGgcuRgQ24HFexAUtMAU_GSIS13AHFK&wd=&eqid=b6f5427200030f540000000263e8cca8)[ L3 工程师入职测试](https://www.baidu.com/link?url=uv2dElUzqtPQ7NLv7qaFfjgL6rdjloFoqg1_erAVfPselh1QztxiU4O6AYj3-V2gQt8jlrfk5_MmjGgcuRgQ24HFexAUtMAU_GSIS13AHFK&wd=&eqid=b6f5427200030f540000000263e8cca8)”的稿子，让ChatGPT首次大规模出圈。微软投资、OpenAI 发布的 ChatGPT 去年底爆红后，“传统搜索引擎要亡”的言论甚嚣尘上，搜索巨头谷歌也拉响了“红色代码”警报，内部正在进行各种开发测试，应对这个看起来可能是几十年来谷歌价值 1490 亿美元搜索业务的第一个显著威胁。
++ 前段时间，一篇名为“[ChatGPT 通过谷歌](https://www.baidu.com/link?url=uv2dElUzqtPQ7NLv7qaFfjgL6rdjloFoqg1_erAVfPselh1QztxiU4O6AYj3-V2gQt8jlrfk5_MmjGgcuRgQ24HFexAUtMAU_GSIS13AHFK&wd=&eqid=b6f5427200030f540000000263e8cca8)[ L3 工程师入职测试](https://www.baidu.com/link?url=uv2dElUzqtPQ7NLv7qaFfjgL6rdjloFoqg1_erAVfPselh1QztxiU4O6AYj3-V2gQt8jlrfk5_MmjGgcuRgQ24HFexAUtMAU_GSIS13AHFK&wd=&eqid=b6f5427200030f540000000263e8cca8)”的稿子，让ChatGPT首次大规模出圈。微软投资、OpenAI 发布的 ChatGPT 去年底爆红后，“传统搜索引擎要亡”的言论甚嚣尘上，搜索巨头谷歌也拉响了“红色代码”警报，内部正在进行各种开发测试，应对这个看起来可能是几十年来谷歌价值 1490 亿美元搜索业务的第一个显著威胁。
 
-+   我们先来看看ChatGPT自己是怎么看待这个事情的：
++ 我们先来看看ChatGPT自己是怎么看待这个事情的：
 
 ![](img/2529561ac549121b86850f513574daab.png)
 
-+   那么ChatGPT的代码水平到底如何呢？我做了两个简单的测试：
++ 那么ChatGPT的代码水平到底如何呢？我做了两个简单的测试：
 
-+   第一个是让它编写一个俄罗斯方块游戏的代码测试
++ 第一个是让它编写一个俄罗斯方块游戏的代码测试
 
 ![](img/4b19716a03286ea58e3970354901099f.png)
 
@@ -366,7 +357,7 @@ ChatGPT可以如同一名全能的私人教练的角色存在，只要你对自�
 
 ![](img/64b4cfcacab615bd654e0643f8e3eaa5.png)
 
-+   第二个问题：如何用rust生成一个无重复的随机整数集合。该问题是leetcode的第一题，号称算法中的hello world，也可以理解为考研单词中的abandon～
++ 第二个问题：如何用rust生成一个无重复的随机整数集合。该问题是leetcode的第一题，号称算法中的hello world，也可以理解为考研单词中的abandon～
 
 ![](img/3fcc5a1b3de8ff97b90c20a0306deedf.png)
 
@@ -374,7 +365,7 @@ ChatGPT可以如同一名全能的私人教练的角色存在，只要你对自�
 
 ![](img/52c584a1f147b0646d80abc1462be0e0.png)
 
-+   看到这里，我们可能会有一种感觉：算法工程师是不是要被取代了？或者说初级算法工程师是不是要被取代了？于是我又想到用一些目前算法领域比较难以解决，或者没有解决的问题去考一下它。于是我请教了一位算法朋友，他建议我提问ChatGPT如何精确求解三维装箱
++ 看到这里，我们可能会有一种感觉：算法工程师是不是要被取代了？或者说初级算法工程师是不是要被取代了？于是我又想到用一些目前算法领域比较难以解决，或者没有解决的问题去考一下它。于是我请教了一位算法朋友，他建议我提问ChatGPT如何精确求解三维装箱
 
 ![](img/a1eff65ef830efe855fe99a9eddcc3a1.png)
 
@@ -384,68 +375,67 @@ ChatGPT可以如同一名全能的私人教练的角色存在，只要你对自�
 
 ![](img/a58b18c9a28639e95801edf4b3535ae2.png)
 
-+   看样子ChatGPT所谓的“写代码”能力就是集成大搜索引擎的一个“小偷”。它仍然没有能力去解决那些业界里难以解决的问题。算法工程师们短期内不需要担心自己的失业问题了～
++ 看样子ChatGPT所谓的“写代码”能力就是集成大搜索引擎的一个“小偷”。它仍然没有能力去解决那些业界里难以解决的问题。算法工程师们短期内不需要担心自己的失业问题了～
 
 ### 编写测试用例
 
 > 我们以自己动手部署一个🛰️（or👸号）聊天机器人为例
 
-+   概念理解：所谓的"部署ChatGPT"是指在服务器/电脑上安装一个🛰️消息处理服务，作为用户和ChatGPT官方之间的桥梁。该服务可以将用户的提问转发给ChatGPT官方，并在收到回答后自动回复给🛰️用户。通过部署ChatGPT，我们不仅可以制作一个回复消息的小机器人满足自己的乐趣，也可以有其他很多应用场景：如社群运营的小伙伴可以让机器人代替我们回复绝大部分的问题等等。
++ 概念理解：所谓的"部署ChatGPT"是指在服务器/电脑上安装一个🛰️消息处理服务，作为用户和ChatGPT官方之间的桥梁。该服务可以将用户的提问转发给ChatGPT官方，并在收到回答后自动回复给🛰️用户。通过部署ChatGPT，我们不仅可以制作一个回复消息的小机器人满足自己的乐趣，也可以有其他很多应用场景：如社群运营的小伙伴可以让机器人代替我们回复绝大部分的问题等等。
 
-+   前期准备
++ 前期准备
 
-1.  注册一个ChaiGPT账号
+1. 注册一个ChaiGPT账号
 
-|  | 优势 | 劣势 | 攻略 |
+| | 优势 | 劣势 | 攻略 |
 | --- | --- | --- | --- |
 | 自行注册 | 稳定且独享 | 操作流程稍显复杂 | [注册教程](https://mp.weixin.qq.com/s/HcGDWuMK9aHSixWUV88h3A) |
 | 淘宝/其他渠道购买 | 简单易上手，所需时间短 | 不够稳定，可能会碰到多人共享账号的情况 | ![](img/ceec8c33c9cb5eeb3b2bf6d9b05a44d5.png) |
 
-1.  一个实名认证后的🛰️号/👸号
+1. 一个实名认证后的🛰️号/👸号
 
-1.  一台可以部署代码的电脑，带🪜。（节点非大陆、香港、台湾）
+1. 一台可以部署代码的电脑，带🪜。（节点非大陆、香港、台湾）
 
-1.  从代码仓库—chatgpt—on—wechat 下载代码
+1. 从代码仓库—`chatgpt-on-wechat` 下载代码
 
 ![](img/a03fdf2febd75adbd57523e56271fa42.png)
 
-1.  从[ChatGPT后台](http://openai.com)获取API Key，流程如下
+1. 从[ChatGPT后台](http://openai.com)获取`API Key`，流程如下
 
 第一步：挑逗一下ChatGPT～
 
 ![](img/7047c33f0c2d7e3f06b63723616729c8.png)
 
-第二步：在自己的openai主页里找到API Keys。单击Create news secrect key即可获得API key。
+第二步：在自己的openai主页里找到`API Keys`。单击Create news secrect key即可获得`API key`。
 
 ![](img/9fb46175cb7c3084d16d899b675401f4.png)
 
-1.  定制机器人聊天配置
-打开4.中下载的压缩包，open_ai_api_key配置项必须修改，改为上文提到的API Key其他配置项可选
+1. 定制机器人聊天配置
+
+打开4.中下载的压缩包，`open_ai_api_key`配置项必须修改，改为上文提到的`API Key`其他配置项可选
 
 ![](img/b7c9f6bf741c3790cf9c6c93786ae23f.png)
 
-1.  安装[及启动（Mac）
-](https://mp.weixin.qq.com/s/HcGDWuMK9aHSixWUV88h3A)下载Python安装包并搜索Mac中的终端
+1. 安装及启动（Mac）
+
+[下载Python安装包并搜索Mac中的终端](https://mp.weixin.qq.com/s/HcGDWuMK9aHSixWUV88h3A)
 
 ![](img/108b2ce5c8d53b8d22c10a57b7138e12.png)
 
 执行以下命令
 
-Shell
+```shell
+python -m pip install itchat-uos==1.5.0.dev0
+python -m pip install --upgrade openai
+nohup python3 app.py >> server.log 2>&1 &
+tail -f server.log
+```
 
-1  python -m pip install itchat-uos==1.5.0.dev0
-
-2  python -m pip install --upgrade openai
-
-3  nohup python3 app.py >> server.log 2>&1 &
-
-4  tail -f server.log
-
-1.  注意事项：目前通过🛰️部署机器人有账号被限制风险，最近几乎两小时筛查一批！建议使用小号部署，以免影响正常的工作和生活。
+1. 注意事项：目前通过🛰️部署机器人有账号被限制风险，最近几乎两小时筛查一批！建议使用小号部署，以免影响正常的工作和生活。
 
 ### 回答问题
 
-+   ChatGPT 在网络上很一下火到出圈，各大社交平台上充斥着大量的无厘头问题和巧妙的答案。如“谁才是湖北第一高校”、“中国top3的大学是哪三所”之类的问题。
++ ChatGPT在网络上很一下火到出圈，各大社交平台上充斥着大量的无厘头问题和巧妙的答案。如“谁才是湖北第一高校”、“中国top3的大学是哪三所”之类的问题。
 
 ![](img/77ef26610f6322ac5441ca2cc6f19c6a.png)
 
@@ -455,49 +445,59 @@ Shell
 
 （武大dbq）
 
-+   足以看出在特定语境中，ChatGPT 的回答非常出色，对于封闭域和具有确切答案的问题也能表现得十分流利。然而，ChatGPT 的优势在于基础性问题，对于人类具有的认知、动机、情绪、判断、决策和预测等能力，人工智能仍然存在难以克服的技术瓶颈。
++ 足以看出在特定语境中，ChatGPT的回答非常出色，对于封闭域和具有确切答案的问题也能表现得十分流利。然而，ChatGPT的优势在于基础性问题，对于人类具有的认知、动机、情绪、判断、决策和预测等能力，人工智能仍然存在难以克服的技术瓶颈。
 
-+   在回答一些常识性问题时，ChatGPT 能够给出高质量的答案，让人们为其的准确性和流利的语言称赞不已。甚至对于一些常见的情感问题，它也能提供详细的解决方案。
++ 在回答一些常识性问题时，ChatGPT能够给出高质量的答案，让人们为其的准确性和流利的语言称赞不已。甚至对于一些常见的情感问题，它也能提供详细的解决方案。
 
-+   但是，众所周知，目前的ChatGPT有一个明显的短板就是无法回答2021年9月之后的问题。由于训练ChatGPT的语料是既往网页中的数据,这也注定让它无法回复时效性特别高的问题。它或许能够告诉你乔丹的职业生涯中一共打进了多少粒进球，但是却无法回答你詹姆斯是在哪一天成为了历史得分王。
++ 但是，众所周知，目前的ChatGPT有一个明显的短板就是无法回答2021年9月之后的问题。由于训练ChatGPT的语料是既往网页中的数据,这也注定让它无法回复时效性特别高的问题。它或许能够告诉你乔丹的职业生涯中一共打进了多少粒进球，但是却无法回答你詹姆斯是在哪一天成为了历史得分王。
 
 ![](img/76b9caa099c5006ff460af55d3a1dad4.png)
 
-+   可以看出，关于乔丹的问题它回答的很好，但是关于詹姆斯的问题它就在一本正经的胡说八道了，东拼西凑出来一个错误答案。
++ 可以看出，关于乔丹的问题它回答的很好，但是关于詹姆斯的问题它就在一本正经的胡说八道了，东拼西凑出来一个错误答案。
 
-+   那么有没有办法可以[解决](https://chrome.google.com/webstore/detail/webchatgpt/lpfemeioodjbpieminkklglpmhlngfcn)这个问题呢？
++ 那么有没有办法可以[解决](https://chrome.google.com/webstore/detail/webchatgpt/lpfemeioodjbpieminkklglpmhlngfcn)这个问题呢？
+
 有！且有两种办法，第一种我们可以给他安装一个浏览器插件！它可以让你在于ChatGPT对话时同步收集互联网信息，帮助生成具有时效性的回答。
+
 第二种其实就是把学术模型产品化～我会在推荐内容部分详细介绍。
-该插件的核心原理是读取和指引。先通过插件预设的能力,读取搜索引擎多条搜索结果,提取对应问题的信息片段,再通过合适的prompt,指引 chatGPT根据这些信息片段进行文本分析,从而回答你提出的问题。
+
+该插件的核心原理是读取和指引。先通过插件预设的能力,读取搜索引擎多条搜索结果,提取对应问题的信息片段,再通过合适的prompt,指引chatGPT根据这些信息片段进行文本分析,从而回答你提出的问题。
+
 插件安装传送门：点这里,访问Chrome插件页面
 
-+   注意[事项 ](https://www.deepl.com/translator-mobile?referrer=https%3A%2F%2Fxiaobot.net%2F)提问语言:强烈建议使用【英文】提问,因为插件数据来源大概率是外文引擎,因此想要有高价值的原始数据,英文提问的准确率、效率更高。(可搭配Deepl翻译工具提问,Deepl传送门点这里)
 
-+   明辨是非:生成的内容具有欺骗的可能性,请自行批判筛选信息。
 
-+   综上：少问充满主观臆测的问题、少问专业性知识极强的问题、少问实时性太高的问题,即是用好 ChatGPT的基本前提。
+# AI 工具应用与行业分析
 
-### 推荐内容
+## 使用注意事项
 
-+   在考虑到把ChatGPT产品化，或者尝试让他去给我们做一些推荐和指引时，我们往往会遇到一个很严重的问题：这东西数据和信息不准啊！（也包括实效性较差）。我们就需要重新搜索一次，甚至多次，效率岂不是大大降低？
++ 注意[事项](https://www.deepl.com/translator-mobile?referrer=https%3A%2F%2Fxiaobot.net%2F)提问语言:强烈建议使用【英文】提问,因为插件数据来源大概率是外文引擎,因此想要有高价值的原始数据,英文提问的准确率、效率更高。(可搭配Deepl翻译工具提问,Deepl传送门点这里)
+
++ 明辨是非:生成的内容具有欺骗的可能性,请自行批判筛选信息。
+
++ 综上：少问充满主观臆测的问题、少问专业性知识极强的问题、少问实时性太高的问题,即是用好 ChatGPT的基本前提。
+
+## 推荐内容
+
++ 在考虑到把ChatGPT产品化，或者尝试让他去给我们做一些推荐和指引时，我们往往会遇到一个很严重的问题：这东西数据和信息不准啊！（也包括实效性较差）。我们就需要重新搜索一次，甚至多次，效率岂不是大大降低？
 
 ![](img/ee387f12d7845c082f1df18d59948922.png)
 
-+   在汉口跳舞明显就是它在胡说八道～
++ 在汉口跳舞明显就是它在胡说八道～
 
 > 那么，工业界的产品如何才能把学术界的模型完美融合呢？
 
-+   比如如何解决ChatGPT经常胡说八道给出一些无厘头的回答这种情况呢？微软和谷歌最近都在尝试做这件让搜索引擎大地震的事情。（New Bing最近就在做这件事）
++ 比如如何解决ChatGPT经常胡说八道给出一些无厘头的回答这种情况呢？微软和谷歌最近都在尝试做这件让搜索引擎大地震的事情。（New Bing最近就在做这件事）
 
-+   刚刚结束的谷歌发布会，透着一股「赶鸭子上架」的味道。不仅毫无亮点，效果拉跨，Bard还被爆出存在事实性错误，发布会一结束，谷歌的股价直接一泻千里，开盘即暴跌8%，市值蒸发1020亿美元。
++ 刚刚结束的谷歌发布会，透着一股「赶鸭子上架」的味道。不仅毫无亮点，效果拉跨，Bard还被爆出存在事实性错误，发布会一结束，谷歌的股价直接一泻千里，开盘即暴跌8%，市值蒸发1020亿美元。
 
-+   而微软发布了由加强版ChatGPT提供支持的全新搜索引擎必应Bing和Edge浏览器，发布会上一通操作秀到谷歌没眼看，市值也在一夜间涨超800亿美元。微软首席执行官Satya Nadella甚至在发布会上激动地表示「这是搜索的新时代」（This is a new day for search）。
++ 而微软发布了由加强版ChatGPT提供支持的全新搜索引擎必应Bing和Edge浏览器，发布会上一通操作秀到谷歌没眼看，市值也在一夜间涨超800亿美元。微软首席执行官Satya Nadella甚至在发布会上激动地表示「这是搜索的新时代」（This is a new day for search）。
 
 ![](img/76a14fc178852b9bc2ec964184e5fc36.png)
 
-+   其实原理并不难理解，ChatGPT拥有极强的算力、信息处理、信息认知能力。而Bing拥有时效性很高的大量信息流。我们只需要用产品化的流程把两者用映射关系串联起来，就可以实现。
++ 其实原理并不难理解，ChatGPT拥有极强的算力、信息处理、信息认知能力。而Bing拥有时效性很高的大量信息流。我们只需要用产品化的流程把两者用映射关系串联起来，就可以实现。
 
-+   我们先在Bing上搜索一件事情，Bing会先用自己的搜索引擎得到一个庞大的信息数据库。我们可以简单的设置它只读取2021年9月之后的数据，把这些数据通过某种映射方式传递到ChatGPT的数据库中。ChatGPT就会综合所有数据，整理之后给你一份有时效性、逻辑性的较为准确的答案。
++ 我们先在Bing上搜索一件事情，Bing会先用自己的搜索引擎得到一个庞大的信息数据库。我们可以简单的设置它只读取2021年9月之后的数据，把这些数据通过某种映射方式传递到ChatGPT的数据库中。ChatGPT就会综合所有数据，整理之后给你一份有时效性、逻辑性的较为准确的答案。
 
 ## 客服
 
@@ -521,59 +521,59 @@ Shell
 
 ## 游戏产业
 
-以腾讯AILab在游戏制作领域的布局为例，人工智能在游戏前期制作、游戏中运营的体验及运营优化、游戏周边内容制作的全流程中均有应用。我们将其中的核心生成要素提炼为AIBot、NPC相关生成和相关资产生成。
+以腾讯AILab在游戏制作领域的布局为例，人工智能在游戏前期制作、游戏中运营的体验及运营优化、游戏周边内容制作的全流程中均有应用。我们将其中的核心生成要素提炼为`AIBot`、`NPC`相关生成和相关资产生成。
 
 ![](img/cd25a75b372ee1905df2267288ccc8d6.png)
 
-#### 游戏策略生成
+### 游戏策略生成
 
-可以将其简单理解为人工智能玩家，重点在于生成真实对战策略。2016年DeepmindAlphaGO在围棋中有所展示，随后，AI决策在Dota2、StarCraft2、德扑、麻将等游戏领域中均展现出了良好的实力。技术关键在于强化学习方案优化设计，体现为多智能体使用、可适应游戏/环境复杂度、具体策略多样性等。
+可以将其简单理解为人工智能玩家，重点在于生成真实对战策略。2016年Deepmind`AlphaGO`在围棋中有所展示，随后，AI决策在`Dota2`、`StarCraft2`、德扑、麻将等游戏领域中均展现出了良好的实力。技术关键在于强化学习方案优化设计，体现为多智能体使用、可适应游戏/环境复杂度、具体策略多样性等。
 
 目前，包括网易在内的我国主流游戏公司已经形成共识，除去直接以陪玩等形式服务C端玩家，也在通过游戏跑图、平衡度等方式服务于游戏开发/运营等B端。
 
 ![](img/7cb248db441bf7afcd86d636656a9ce8.png)
 
-#### AI生成NPC逻辑、剧情
+### AI生成NPC逻辑、剧情
 
-此前，NPC具体的对话内容及底层剧情需要人工创造驱动脚本，由制作人主观联想不同NPC所对应的语言、动作、操作逻辑等，这种动态的个性化匹配背后依旧是不同的静态分支，创造性及个性化相对有限。
+此前，`NPC`具体的对话内容及底层剧情需要人工创造驱动脚本，由制作人主观联想不同`NPC`所对应的语言、动作、操作逻辑等，这种动态的个性化匹配背后依旧是不同的静态分支，创造性及个性化相对有限。
 
-而以rctAI的智能NPC为例，其NPC能够分析玩家的实时输入，并动态地生成交互反应，从而构建几乎无限且不重复的剧情，增强用户体验并延长游戏生命周期。特别是在养成类游戏中，AI所提供的个性化生成能够带来画面、剧情及具体交互的个性化全新游戏体验。而实时剧情生成则有助于在特定框架内生成全新的可能性，增加游戏整体的叙事可能性。
+而以`rctAI`的智能`NPC`为例，其`NPC`能够分析玩家的实时输入，并动态地生成交互反应，从而构建几乎无限且不重复的剧情，增强用户体验并延长游戏生命周期。特别是在养成类游戏中，AI所提供的个性化生成能够带来画面、剧情及具体交互的个性化全新游戏体验。而实时剧情生成则有助于在特定框架内生成全新的可能性，增加游戏整体的叙事可能性。
 
-目前，NPC逻辑自动生成技术已经应用在《黑客帝国：觉醒》（MassAI，车辆行人等将独立于玩家操控变动）、RedDeadRedemption2、MonsterHunter:World等大型游戏中。长期来看，NPC的灵活自主将引领其成为重要的社交节点，有效填充元宇宙的内部架构。
+目前，`NPC`逻辑自动生成技术已经应用在《黑客帝国：觉醒》（`MassAI`，车辆行人等将独立于玩家操控变动）、`RedDeadRedemption2`、`MonsterHunter:World`等大型游戏中。长期来看，`NPC`的灵活自主将引领其成为重要的社交节点，有效填充元宇宙的内部架构。
 
-代表公司：RCT AI
+代表公司：`RCT AI`
 
 ![](img/a685012d730b6ec7c8e11691199a56e5.png)
 
-#### 数字资产生成，也即结合其他模态生成能力，落地为具体场景
+### 数字资产生成，也即结合其他模态生成能力，落地为具体场景
 
-NPC相关资产：
+`NPC`相关资产：
 
-据腾讯AI Lab介绍，AIGC能够使相关资产的生成效率提高5-10倍，并同时增加用户内容的个性化
+据腾讯AI Lab介绍，`AIGC`能够使相关资产的生成效率提高5-10倍，并同时增加用户内容的个性化
 
-+   人物外观生成
++ 人物外观生成
 
-不同的NPC需要有不同的面孔、服饰、声音甚至性格特征。传统方法生成NPC成本高，需要逐个进行原型设计、多次建模及渲染等。借助AIGC有助于实现低成本大规模生产NPC，实现千人千面。
+不同的`NPC`需要有不同的面孔、服饰、声音甚至性格特征。传统方法生成`NPC`成本高，需要逐个进行原型设计、多次建模及渲染等。借助`AIGC`有助于实现低成本大规模生产`NPC`，实现千人千面。
 
-+   人物动画生成
++ 人物动画生成
 
 腾讯AI Lab整合文字转语音的前沿研究，生成自然语音，同步驱动嘴型、表情等面部变化，达到高度通真。传统方法成本极高，且制作一分钟的人物动画需要耗费数天，基于AI生成技术可以将原本数周工作量减少到几个小时。
 
-+   人物动作生成
++ 人物动作生成
 
 利用相位神经网络技术控制人物运动，将原本数周工作量减少到几小时。AI在大量的运动数据集上学习人体动作，将捕获的运动数据与场景地形数据相匹配，完成准确、流畅的动作反应，如行走、跑步、跳跃等。
 
-+   地图、官卡设计
++ 地图、官卡设计
 
-创建游戏关卡也称为程序内容生成(PCG)。这些技术采用复杂的 A 算法来生成巨大的开放世界环境、新游戏关卡和其他游戏资产。在腾讯AILab自研的2D小游戏中，只需要不到一百个训练关卡作为输入，AI即可在几个小时内生成一千多个可玩的、高质量、多样化的关卡。A生成3D关卡相较之下较为复杂 (A生成3D关卡内容则要复杂得多，3D关卡涉及地形起伏、元素之间的关联、不同分辨率的元素、路线与区域规划等，更考验A的生成能力)，但目前腾讯AI Lab已实现基于约200个训练关卡及人类的标注编辑的输入，生成超过一万个3D关卡。
+创建游戏关卡也称为程序内容生成(`PCG`)。这些技术采用复杂的 `A` 算法来生成巨大的开放世界环境、新游戏关卡和其他游戏资产。在腾讯`AILab`自研的2D小游戏中，只需要不到一百个训练关卡作为输入，AI即可在几个小时内生成一千多个可玩的、高质量、多样化的关卡。`A`生成3D关卡相较之下较为复杂 (`A`生成3D关卡内容则要复杂得多，3D关卡涉及地形起伏、元素之间的关联、不同分辨率的元素、路线与区域规划等，更考验`A`的生成能力)，但目前腾讯AI Lab已实现基于约200个训练关卡及人类的标注编辑的输入，生成超过一万个3D关卡。
 
-+   场景生成
++ 场景生成
 
-具体包括3D环境生成等。例如GAN Theft Auto中汽车移动时的阴影均是由A生成的。该部分目前的技术仍有较大进步空间
+具体包括3D环境生成等。例如`GAN Theft Auto`中汽车移动时的阴影均是由`A`生成的。该部分目前的技术仍有较大进步空间
 
 ![](img/0f7fdc9f66e4529fe02fb33469217a88.png)
 
-RCT AI官网：[rct AI](https://rct.ai/zh-hans/)
+`RCT AI`官网：[`rct.ai`](https://rct.ai/zh-hans/)
 
 ## AI 绘画
 
@@ -585,17 +585,17 @@ RCT AI官网：[rct AI](https://rct.ai/zh-hans/)
 
 > Befote
 
-1.  去视觉中国、Unplash 之类的图片素材网站中去挑选素材。
+1. 去视觉中国、Unplash 之类的图片素材网站中去挑选素材。
 
-1.  痛点：风格单一、意思直白、主题陈旧、模特雷同。
+1. 痛点：风格单一、意思直白、主题陈旧、模特雷同。
 
-1.  这些图被太多人用过，特别是用在各种PPT之中，有一种「职场感」，十分乏味。
+1. 这些图被太多人用过，特别是用在各种PPT之中，有一种「职场感」，十分乏味。
 
 > After
 
-1.  AI画的这些图，什么风格、什么素材都可以，要抽象可以让你体会神秘意境，要精细可以精细到让人类艺术家觉得根本花不起那么高的成本。
+1. AI画的这些图，什么风格、什么素材都可以，要抽象可以让你体会神秘意境，要精细可以精细到让人类艺术家觉得根本花不起那么高的成本。
 
-1.  你可以打开一个 AI 绘画工具，根据你文章的内容，在输入框中输入一小段文字，就能生成一张专属于你的精美图片了。
+1. 你可以打开一个 AI 绘画工具，根据你文章的内容，在输入框中输入一小段文字，就能生成一张专属于你的精美图片了。
 
 > 来自国产 AI 绘画工具「盗梦师」官网
 
@@ -611,15 +611,15 @@ AI画的每一幅图都完全不一样。你输入同一组关键词，它可以
 
 > Before
 
-+   在以前，你们的流程是，大家先分头搜集各类图片素材，将其放到一个白板上，并根据这个白板进行头脑风暴，并确定好最终的设计风格。
++ 在以前，你们的流程是，大家先分头搜集各类图片素材，将其放到一个白板上，并根据这个白板进行头脑风暴，并确定好最终的设计风格。
 
-+   但是，这个搜集图片素材的过程非常耗费时间，且不同的人上传的图片在质量、风格上很难统一，这会额外给最后的头脑风暴增加阻力。
++ 但是，这个搜集图片素材的过程非常耗费时间，且不同的人上传的图片在质量、风格上很难统一，这会额外给最后的头脑风暴增加阻力。
 
 > After
 
-+   现在，你可以通过 AI 绘画来批量生成固定风格的图片，并且根据 AI 生成的图片来进行头脑风暴，效率能提高许多。
++ 现在，你可以通过 AI 绘画来批量生成固定风格的图片，并且根据 AI 生成的图片来进行头脑风暴，效率能提高许多。
 
-+   现在人们用AI画画根本不是拿 AI 做批量体力活，而恰恰是看看AI能生成什么意想不到的创意，给人提供灵感。
++ 现在人们用AI画画根本不是拿 AI 做批量体力活，而恰恰是看看AI能生成什么意想不到的创意，给人提供灵感。
 
 在以前，你们的流程是，大家先分头搜集各类图片素材，将其放到一个白板上，并根据这个白板进行头脑风暴，并确定好最终的设计风格。
 
@@ -765,12 +765,13 @@ AI画的每一幅图都完全不一样。你输入同一组关键词，它可以
 
 > 官网链接：[Microsoft Designer - Stunnin](https://designer.microsoft.com/)g designs in a flash
 
+
+
 <https://player.bilibili.com/player.html?bvid=1qK411D7KF&share_source=copy_web&vd_source=066fb8318bd3c075df7805c51c24ad30>
 
-#### Yuan 初：用 AI 修图
+# Yuan 初：用 AI 修图
 
 > 最新版官方介绍视频👇🏻
-
 > 将 chatGPT、AI 绘画、AI 文字修图等技术集成进设计工作流中。
 
 ![](img/cf6f87c505c3f055ec0e3e02e8a93f30.png)
@@ -833,7 +834,7 @@ AI 就能进一步地带给我们惊喜。
 
 ![](img/ed72970630945d5d041bce474fafe194.png)
 
-#### 像迭代产品一样迭代一幅作品
+# 像迭代产品一样迭代一幅作品
 
 画宇宙（Nolibox）的定位是一款专业级的 AI 绘画工作台，这个工具里几乎集成了上面提到的工具里的所有功能。
 
@@ -871,9 +872,9 @@ AI 就能进一步地带给我们惊喜。
 
 ![](img/ef3c24ca4a741d3b18183c3099d90b4b.png)
 
-你点击【复制 Prompt】，这幅画对应的描述词复制到了你的剪贴板。
+你点击【复制 `Prompt`】，这幅画对应的描述词复制到了你的剪贴板。
 
-再按照上面的步骤使用一次【垫图】功能，将原来的那张图作为垫图，并在输入框中粘贴刚刚复制的描述语（Prompt），点击最下面的转换并添加，就能得到这张图啦👇🏻
+再按照上面的步骤使用一次【垫图】功能，将原来的那张图作为垫图，并在输入框中粘贴刚刚复制的描述语（`Prompt`），点击最下面的转换并添加，就能得到这张图啦👇🏻
 
 ![](img/c53bd5d67162df7a43c50e15c1587446.png)
 
@@ -905,7 +906,7 @@ AI 就能进一步地带给我们惊喜。
 
 ![](img/29dbefaa64a2cd24bd48049566afd580.png)
 
-### 未来职业展望：AI 画师
+# 未来职业展望：AI 画师
 
 在测评国产的专业级 AI 绘画工具「画宇宙 Nolibox」的过程中，有一个按钮叫作【高级模式】。
 
@@ -977,11 +978,11 @@ AI 就能进一步地带给我们惊喜。
 
 此后基于深度学习模型，出现了Transformer模型模仿人脑的学习过程。Transformer模型的基本原理是根据每两个单词间的关系进行分析，从而理解单词在上下文中的含义。
 
-简单来说，Transformer模型有三个主要特征：attention 机制、迁移学习(transfer learning)和自监督学习(self-supervised learning)。attention机制是通过充分利用硬件并行结构充分利用算力；迁移学习，是指首先对泛化的各类文本进行训练，生成预训练模型，而后如果需要针对特定场景，仅需基于预训练模型进行定制化微调，展示少许该领域范例即可完成训练，无需重复训练；自监督学习，则是无需对训练数据进行标注，当 AI 拿到一个语料库，可以通过遮住一句话中的某个单词、遮住某句话的下一句话的方式，来模拟一个标注数据集，帮模型理解每个词的上下文语境，找到长文本之间的关联，从而大幅提高了对数据集的使用效率。
+简单来说，Transformer模型有三个主要特征：`attention` 机制、迁移学习(`transfer learning`)和自监督学习(`self-supervised learning`)。`attention`机制是通过充分利用硬件并行结构充分利用算力；迁移学习，是指首先对泛化的各类文本进行训练，生成预训练模型，而后如果需要针对特定场景，仅需基于预训练模型进行定制化微调，展示少许该领域范例即可完成训练，无需重复训练；自监督学习，则是无需对训练数据进行标注，当 AI 拿到一个语料库，可以通过遮住一句话中的某个单词、遮住某句话的下一句话的方式，来模拟一个标注数据集，帮模型理解每个词的上下文语境，找到长文本之间的关联，从而大幅提高了对数据集的使用效率。
 
 在2010年之前，统计学习模型仍是主流。Transformer等深度学习模型得以实现重大突破，则是建立在近几年两个层面上的支持。首先是计算机硬件的改进，GPU吞吐量和内存在过去四年中增加了10倍，而且可以通过硬件并行训练更多参数的模型架构、更加巨量的训练数据、更加多元的数据类型及采集渠道。
 
-其次是众多科技公司及投资方对于文本生成AIGC的资金支持。在实际情况下要达到上述效果，成本不容小觑：从公开数据看，训练一个 BERT 模型租用云算力要花约 1.2 万美元，训练 GPT-2 每小时要花费 256 美元，但 OpenAI 并未公布总计时间成本。考虑到 GPT-3 需要的算力是 BERT 的 2000 多倍，预估发布当时的训练成本肯定是千万美元级别，以至于研究者在论文第九页说：我们发现了一个 bug，但没钱再去重新训练模型，就先这么算了吧。
+其次是众多科技公司及投资方对于文本生成AIGC的资金支持。在实际情况下要达到上述效果，成本不容小觑：从公开数据看，训练一个 BERT 模型租用云算力要花约 1.2 万美元，训练 GPT-2 每小时要花费 256 美元，但 OpenAI 并未公布总计时间成本。考虑到 GPT-3 需要的算力是 BERT 的 2000 多倍，预估发布当时的训练成本肯定是千万美元级别，以至于研究者在论文第九页说：我们发现了一个 `bug`，但没钱再去重新训练模型，就先这么算了吧。
 
 ![](img/e4e5914ea7df080a949c17a7fd62ac1f.png)
 
@@ -1001,7 +1002,7 @@ GPT-3完成后，OpenAI 把大模型的思路迁移到了图片多模态（multi
 
 “对抗生成网络”GAN（Generative Adverserial Network）包含两个模型，一个是生成模型（generative model），一个是判别模型(discriminative model)。生成模型的任务是生成看起来自然真实的、和原始数据相似的实例。判别模型的任务是判断给定的实例看起来是自然真实的还是人为伪造的（真实实例来源于数据集，伪造实例来源于生成模型）。
 
-受博弈论启发，GAN 在训练一个子模型A的同时，训练另一个子模型B来判断A生成的是真实图像还是伪造图像，两者在一个极小极大的博弈中不断变强。当A生成足以“骗”过B的图像时，模型认为它比较好地拟合出了真实图像的数据分布，进而用于生成逼真的图像。因此，GAN模型生成的作品是对源数据的模仿而非创新，也无法自由控制输出结果。
+受博弈论启发，GAN 在训练一个 `子模型A` 的同时，训练另一个 `子模型B` 来判断A生成的是真实图像还是伪造图像，两者在一个极小极大的博弈中不断变强。当A生成足以“骗”过B的图像时，模型认为它比较好地拟合出了真实图像的数据分布，进而用于生成逼真的图像。因此，GAN模型生成的作品是对源数据的模仿而非创新，也无法自由控制输出结果。
 
 ![](img/1d0871438136205e4a9950cc638a8956.png)
 
@@ -1011,7 +1012,7 @@ CLIP (Contrastive Language-Image Pre-Training)模型的原理是将文字与图�
 
 ![](img/6e9d0086801ae1d6a84b54d0ee768841.png)
 
-AIGC行业实现大规模爆发的最终推手，则是最新出现的Diffusion扩散化模型。简单来说，Diffusion扩散化模型中存在一系列高斯噪声（T 轮），将输入图片X0变为纯高斯噪声Xt，模型的训练过程则是负责将Xt复原回图片X0。它在发表之初其实并没有收到太多的关注，主要有两点原因，其一灵感来自于热力学领域，理解成本稍高，其二计算成本更高，对于大多高校学术实验室的显卡配置而言，训练时间比 GAN 更长更难接受。
+AIGC行业实现大规模爆发的最终推手，则是最新出现的Diffusion扩散化模型。简单来说，Diffusion扩散化模型中存在一系列高斯噪声（`T` 轮），将输入图片`X0`变为纯高斯噪声`Xt`，模型的训练过程则是负责将`Xt`复原回图片`X0`。它在发表之初其实并没有收到太多的关注，主要有两点原因，其一灵感来自于热力学领域，理解成本稍高，其二计算成本更高，对于大多高校学术实验室的显卡配置而言，训练时间比 GAN 更长更难接受。
 
 ![](img/67c74f26d33eb8780c518957afe66661.png)
 
@@ -1037,7 +1038,9 @@ AI作曲领域主要是“以语言模型（目前以Transformer为代表，如�
 
 ## 业内评价
 
-早**在**2019年3月强化学习之父Richard Sutton发布了名为The Bitter Lesson的博客，其中提到：“短期内要使AI能力有所进步，研究者应寻求在模型中利用人类先验知识；但之于AI的发展，唯一的关键点是对算力资源的充分利用。”
+早在2019年3月强化学习之父Richard Sutton发布了名为The Bitter Lesson的博客，其中提到：“短期内要使AI能力有所进步，研究者应寻求在模型中利用人类先验知识；但之于AI的发展，唯一的关键点是对算力资源的充分利用。”
+
+
 
 > Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation.
 
@@ -1063,21 +1066,14 @@ Stable Diffusion的开源直接引发2022年下半年AIGC引发广泛关注，�
 
 国内：
 
-+   红杉资本：Versa、诗云科技、超参数科技、心识宇宙Mindverse
-
-+   五源资本：超参数科技、小冰、元象XVERSE、魔珐科技、Draft AI、追一科技、小库科技Xkool、彩云小梦、ACE虚拟歌姬
-
-+   真格基金：不咕剪辑 Cooclip、奥创光年、笔神、图形起源、诗云科技、潞晨科技
-
-+   GGV纪源资本：ZMO.AI、腾讯智影、追一科技
-
-+   高瓴资本：Nolibox、ZMO.AI、超参数科技、小冰
-
-+   高榕资本：启元世界、超参数科技、元象XVERSE
-
-+   蓝驰创投：西湖心辰、潞晨科技
-
-+   奇绩创坛：马良、右脑科技、清昴智能科技、灵秘科技、元力场科技LandForce.io、大饼声音引擎、Enlight AI、6pen、Fluxus、AVAR、SeeKoo、NeuDim赜深数字、猴子无限
++ 红杉资本：Versa、诗云科技、超参数科技、心识宇宙Mindverse
++ 五源资本：超参数科技、小冰、元象XVERSE、魔珐科技、Draft AI、追一科技、小库科技Xkool、彩云小梦、ACE虚拟歌姬
++ 真格基金：不咕剪辑 Cooclip、奥创光年、笔神、图形起源、诗云科技、潞晨科技
++ GGV纪源资本：ZMO.AI、腾讯智影、追一科技
++ 高瓴资本：Nolibox、ZMO.AI、超参数科技、小冰
++ 高榕资本：启元世界、超参数科技、元象XVERSE
++ 蓝驰创投：西湖心辰、潞晨科技
++ 奇绩创坛：马良、右脑科技、清昴智能科技、灵秘科技、元力场科技LandForce.io、大饼声音引擎、Enlight AI、6pen、Fluxus、AVAR、SeeKoo、NeuDim赜深数字、猴子无限
 
 ## 技术迭代的未来发展方向
 
@@ -1092,54 +1088,31 @@ Transformer架构的跨界应用成为跨模态学习的重要开端之一。在
 # 公司动态
 
 > 一些思考：
-
 >
-
 > Q：知道这些公司在发展这些技术，跟我们，个体从业者的关系是什么？
-
 >
-
 > A：
-
 > 上游-技术从业者行业培训
-
 > 中游-行业供应商向应用企业销售
-
 > 下游-现有企业AI可行性研究、战略规划、测算
-
 > 市场-海外产品复制落地，变现
-
 >
-
 > Q：AIGC最能解决哪些行业的痛点？
-
 > A：创作密集、素材密集、人工密集、决策密集、模拟预测
-
 > 知识教育、咨询类、内容平台、C端销售、销售主播、企业号
-
 >
-
 > Q：如果这个行业是趋势，那这个行业最缺什么？
-
 > A：
-
 > 知识：让机器的素材与人的描述匹配，算法，给开发者的知识转译。
-
 > 开发者：能编程的人
-
 > 技术：需要大量的数据、参数以及强大的算力支撑。GPT-3在微软提供的Azure AI超算基础设施(由V100GPU组成的高带宽集群)上进行训练，总算力消耗约3640 PF-days(即每秒一千万亿次计算，运行3640天)。ChatGPT的持续升温为AIGC带来全新增量，对AI模型训练所需要的算力支持提出了更高要求。云计算基础设施作为算力底座，其重要性日益凸显，包括高性能芯片、数据中心、网络等基础设施建设为算力、应用以及产业发展提供可持续发展的保障。
-
 > 创业者：技术门槛+行业想象+工具化
-
->
 
 ## 01 一张图看懂产业链
 
 在AI产业链，国内外市场的进程不同，根据所找到的资料，呈现出的产业分布，有很大不同。
 
-感受上来说，
-
-国外呈现的，像是互联网技术已经开始普及后的应用领域百花齐放。
+感受上来说，国外呈现的，像是互联网技术已经开始普及后的应用领域百花齐放。
 
 国内呈现的，像是互联网刚普及时，还在大力发展程序员阶段。
 
@@ -1152,9 +1125,7 @@ AIGC上游主要包括数据供给方、算法机构、创作者生态以及底�
 下游主要是各类内容创作及分发平台以及内容服务机构等。
 
 ![](img/7a76128f59520f30775a28d0d87f17ac.png)
-
 ![](img/d28ad95ce350abcaf47039b779923fac.png)
-
 ![](img/4cf290110deeda618a97c942dc8b314b.png)
 
 根据AI在国内的发展趋势，我们也通过资料，分析到AIGC发展下，可能受益的公司：
@@ -1186,13 +1157,9 @@ AIGC受益厂商：https://mp.weixin.qq.com/s/efTYIKAenBSiFChNMVJZ6g
 文本、图片、音频、代码、聊天机器人、视频、机器学习平台、搜索、游戏、数据，10个类别。
 
 ![](img/fd677d74c8d697a1eef744fe067356e5.png)
-
 ![](img/e80553aab28162b0f827018d67202901.png)
-
 ![](img/832c206f16514d71c6405e87bc6a7cc6.png)
-
 ![](img/c9b3dbc5eac74360d957abff533e8b9b.png)
-
 ![](img/7e5012ca16e3ac5383fa67ce0f4919b6.png)
 
 ## 02 各领域AI布局概览
@@ -1209,26 +1176,18 @@ AIGC受益厂商：https://mp.weixin.qq.com/s/efTYIKAenBSiFChNMVJZ6g
 
 国内：
 
-红杉资本：Versa、诗云科技、超参数科技、心识宇宙Mindverse
-
-五源资本：超参数科技、小冰、元象XVERSE、魔珐科技、Draft AI、追一科技、小库科技Xkool、彩云小梦、ACE虚拟歌姬
-
-真格基金：不咕剪辑 Cooclip、奥创光年、笔神、图形起源、诗云科技、潞晨科技
-
-GGV纪源资本：ZMO.AI、腾讯智影、追一科技
-
-高瓴资本：Nolibox、ZMO.AI、超参数科技、小冰
-
-高榕资本：启元世界、超参数科技、元象XVERSE
-
-蓝驰创投：西湖心辰、潞晨科技
-
-奇绩创坛：马良、右脑科技、清昴智能科技、灵秘科技、元力场科技LandForce.io、大饼声音引擎、Enlight AI、6pen、Fluxus、AVAR、SeeKoo、NeuDim赜深数字、猴子无限
++ 红杉资本：Versa、诗云科技、超参数科技、心识宇宙Mindverse
++ 五源资本：超参数科技、小冰、元象XVERSE、魔珐科技、Draft AI、追一科技、小库科技Xkool、彩云小梦、ACE虚拟歌姬
++ 真格基金：不咕剪辑 Cooclip、奥创光年、笔神、图形起源、诗云科技、潞晨科技
++ GGV纪源资本：ZMO.AI、腾讯智影、追一科技
++ 高瓴资本：Nolibox、ZMO.AI、超参数科技、小冰
++ 高榕资本：启元世界、超参数科技、元象XVERSE
++ 蓝驰创投：西湖心辰、潞晨科技
++ 奇绩创坛：马良、右脑科技、清昴智能科技、灵秘科技、元力场科技LandForce.io、大饼声音引擎、Enlight AI、6pen、Fluxus、AVAR、SeeKoo、NeuDim赜深数字、猴子无限
 
 ### 大厂积极布局
 
 ![](img/b81f2a339b00439645d4d7e897fff6a3.png)
-
 ![](img/b05fb39df2b2c6cfa8591d756e6af0ae.png)
 
 ### 技术支持
@@ -1246,7 +1205,6 @@ ChatGPT的持续升温为AIGC带来全新增量，对AI模型训练所需要的�
 ### 代码编写+AIGC
 
 ![](img/916ef475830e650b6428a567647dd7fe.png)
-
 ![](img/f603766be448cef2edd94aac16d0b4e1.png)
 
 ### 内容素材平台+AIGC
@@ -1254,7 +1212,6 @@ ChatGPT的持续升温为AIGC带来全新增量，对AI模型训练所需要的�
 需要内容的平台，都有应用可能。游戏、视频、音乐、文本创作的内容。
 
 ![](img/f4c238da36a5bf07a3f1f25d11cf893d.png)
-
 ![](img/ea4f7c8660011928cc3979a7e0cc1d44.png)
 
 ### 内容审核+AIGC
@@ -1264,7 +1221,6 @@ ChatGPT的持续升温为AIGC带来全新增量，对AI模型训练所需要的�
 ### 教育公司+AIGC
 
 ![](img/a922ba6cf51fb41f53f47bed5934da62.png)
-
 ![](img/80a056c5cfb9bb990c3a6e478c400863.png)
 
 ### 咨询公司Gartner对AI发展的预估
@@ -1277,41 +1233,40 @@ ChatGPT的持续升温为AIGC带来全新增量，对AI模型训练所需要的�
 
 <https://airtable.com/embed/shrBeWpMlxf3e14E8?backgroundColor=purple&viewControls=on>
 
-#### OpenAI
+### OpenAI
 
 OpenAI是研发出ChatGPT的公司。
 
 ![](img/7a42c6899ec984cb500c2a3152192f40.png)
-
 ![](img/7601052523ad23b6f4cece68a030b458.png)
 
 非营利性机构OPENAI的钱从哪来？
 
 《财富》有一篇关于OpenAI股权结构的文章。如果你有兴趣，也不妨找来读一下。里面有很多关于“创造性”的细节。我试着简单说一下。
 
-1.  首先，Sam有一个非营利机构A（OpenAI实验室），想做点理想主义，造福人类的研究。但是后来发现，算力得花钱，人工得花钱，哪哪都得花钱。实在是扛不住了。怎么办？
+1. 首先，Sam有一个非营利机构A（OpenAI实验室），想做点理想主义，造福人类的研究。但是后来发现，算力得花钱，人工得花钱，哪哪都得花钱。实在是扛不住了。怎么办？
 
-1.  于是，Sam创立了一个盈利机构B，并用A“控制”B。同时，许诺那些愿意奉献的企业，在B里，有机会获得除了名誉之外的本金（以及封顶收益）回报，以此来降低奉献门槛。
+1. 于是，Sam创立了一个盈利机构B，并用A“控制”B。同时，许诺那些愿意奉献的企业，在B里，有机会获得除了名誉之外的本金（以及封顶收益）回报，以此来降低奉献门槛。
 
-1.  然后，微软加入了。微软加入的条件是，要有技术的优先使用权。另外，本金要回来，收益要有（但被限定在了10倍以内）。
+1. 然后，微软加入了。微软加入的条件是，要有技术的优先使用权。另外，本金要回来，收益要有（但被限定在了10倍以内）。
 
-1.  **最终，A就有了一个先回本金，再回10倍收益，最**后把所有股份完全退还给A的“资助”计划。微软也为此先后向B投入了10亿，20亿，100亿美元，分批降低风险。失败了，这笔钱就是“捐赠”。等微软收回约定的封顶收益，B的所有股权（包括微软的和其它的），就回归给A。
+1. **最终，A就有了一个先回本金，再回10倍收益，最**后把所有股份完全退还给A的“资助”计划。微软也为此先后向B投入了10亿，20亿，100亿美元，分批降低风险。失败了，这笔钱就是“捐赠”。等微软收回约定的封顶收益，B的所有股权（包括微软的和其它的），就回归给A。
 
-1.  **这就是最精妙的地方。**非营利性机构不能分红，那么资助者的收益，就几乎只有自我社会责任感的满足。“社会责任感的满足”，可能值100元，可能值1万，可能值1亿，但很难价值130亿美金。但我需要130亿美金才能改变世界，怎么办？给它除了社会责任感满足之外的其它收益，和它更想要的东西。对微软来说，就是技术和收益。但限定范围。技术有时间限制，收益有上限限制。这样，会有更多的人来帮你。即便帮你的原因不纯粹了。但是，你的梦想也得到了帮助。AB公司，就是这种初衷下的创造性解决方案。
+1. **这就是最精妙的地方。**非营利性机构不能分红，那么资助者的收益，就几乎只有自我社会责任感的满足。“社会责任感的满足”，可能值100元，可能值1万，可能值1亿，但很难价值130亿美金。但我需要130亿美金才能改变世界，怎么办？给它除了社会责任感满足之外的其它收益，和它更想要的东西。对微软来说，就是技术和收益。但限定范围。技术有时间限制，收益有上限限制。这样，会有更多的人来帮你。即便帮你的原因不纯粹了。但是，你的梦想也得到了帮助。AB公司，就是这种初衷下的创造性解决方案。
 
-1.  然后，我斗胆猜测，B这个主体也许有朝一日会消失。此时，A具备了强大的盈利能力。Sam会用这种强大盈利能力，继续创造“通用人工智能，造福人类”的梦想。
+1. 然后，我斗胆猜测，B这个主体也许有朝一日会消失。此时，A具备了强大的盈利能力。Sam会用这种强大盈利能力，继续创造“通用人工智能，造福人类”的梦想。
 
-1.  **这就是，创造性地找钱。**
+1. **这就是，创造性地找钱。**
 
-1.  如果你对这个投资方案的具体内容感兴趣，我没有更具体的资料。目前有限的内容，来自《财富》。简单来说，就是微软会分享B公司利润的75%。直到收回130亿美元的分批投入（10亿+20亿+100亿）。然后，微软对B的持股比率，会下降到49%，继续分红。直到获利达到920亿美元为止（其他股东同时获益）。然后，微软和其它股东的股权，全部还给A。
+1. 如果你对这个投资方案的具体内容感兴趣，我没有更具体的资料。目前有限的内容，来自《财富》。简单来说，就是微软会分享B公司利润的75%。直到收回130亿美元的分批投入（10亿+20亿+100亿）。然后，微软对B的持股比率，会下降到49%，继续分红。直到获利达到920亿美元为止（其他股东同时获益）。然后，微软和其它股东的股权，全部还给A。
 
-1.  我知道，我知道。也许有一天，这种盈利能力就像魔戒一样，会反噬主人。一旦B能非常赚钱，Sam会不会反过来放弃A，从此在B里享受名利双收，也说不准。
+1. 我知道，我知道。也许有一天，这种盈利能力就像魔戒一样，会反噬主人。一旦B能非常赚钱，Sam会不会反过来放弃A，从此在B里享受名利双收，也说不准。
 
-1.  **但不管怎样，这是一个非常独特的资助（捐赠+投资）结构。是**几乎所有投资机构没见过的，创造性的结构。所以，我估计各方的投资部、法务部、ESG部门，没少来回讨论。一个大公司，是不会为一个普通项目，创造一个如此复杂的结构的。
+1. **但不管怎样，这是一个非常独特的资助（捐赠+投资）结构。是**几乎所有投资机构没见过的，创造性的结构。所以，我估计各方的投资部、法务部、ESG部门，没少来回讨论。一个大公司，是不会为一个普通项目，创造一个如此复杂的结构的。
 
-1.  实在是OpenAI的技术，太诱人了。
+1. 实在是OpenAI的技术，太诱人了。
 
-#### Stability AI（图片）
+### Stability AI（图片）
 
 ![](img/da96dca0173eb03cac2ecf04c1d14989.png)
 
@@ -1319,7 +1274,7 @@ OpenAI是研发出ChatGPT的公司。
 
 DreamStudio是Stability AI面向消费者的产品，注册用户已经超过100万，他们来自全球50多个国家，共同创建了超过1.7亿张图像。
 
-#### Midjourney（图片）
+### Midjourney（图片）
 
 ![](img/c9bc926b37e304af491d40f7311a89da.png)
 
@@ -1327,35 +1282,36 @@ DreamStudio是Stability AI面向消费者的产品，注册用户已经超过100
 
 https://baijiahao.baidu.com/s?id=1740732683141319266&wfr=spider&for=pc
 
-#### Jasper（文案）
+### Jasper（文案）
 
 ChatGPT的出现，对采用同类底层技术的热门公司Jasper形成强烈冲击。
 
 ![](img/3b90b0aac9873ce7ebb0b4526dced168.png)
-
 ![](img/97a257205ec6834fab4e57edfd87d817.png)
 
-#### Grammarly（写作）
+### Grammarly（写作）
 
 日常英文写作辅助工具
 
 ![](img/073b9afc00ec48c45c7bacfc7cea4394.png)
 
-#### Ada（客服）
+### Ada（客服）
 
 智能聊天机器人公司，目标客服市场
 
-#### Glean（搜索）
+### Glean（搜索）
 
 从事搜索业务的创业公司，希望使用最新的AI算法来改进公司的产品。
 
-#### Copy.ai（文案）
+### Copy.ai（文案）
 
 Copy.ai 提供了很多场景的模版，比方说如何写博客、写社交媒体推广文案、写邮件以及产品上线该如何写等等，几乎涵盖了企业各种需要文案的场景，你可以通过这些模版快速上手，并且这些精心设计的模版也更适应客户的需求。
 
+
+
 有分析者推测：Copy.ai 的增长路径会跟 Grammarly 非常类似，甚至它也可能会切入 Grammarly 的业务，毕竟在写作时，语法方面直接解决了效率不是更好，当然不排除 Grammarly 直接做这块或者做一些收购。
 
-#### 微软（投资者、Copilot）
+### 微软（投资者、Copilot）
 
 GitHub，微软旗下的全球最大开源代码托管平台。
 
@@ -1363,35 +1319,33 @@ GitHub，微软旗下的全球最大开源代码托管平台。
 
 据官方介绍，Copilot 能够帮助开发者在 Visual Studio、Visual Studio Code、Neovim 和 JetBrains IDE 等开发环境中写代码时自动提供建议。
 
-Gi[tH](https://baike.baidu.com/item/%E4%BB%A3%E7%A0%81/86048?fromModule=lemma_inlink)ub Copilot 支持 Python、JavaScript、TypeScript、Java、Ruby 和 Go 等编程语言。可以根据上下文自动写代码，包括文档字符串、注释、函数名称、代码，只要用户给出提示，就可以写出完整的函数。
+[GitHub Copilot](https://baike.baidu.com/item/%E4%BB%A3%E7%A0%81/86048?fromModule=lemma_inlink) 支持 Python、JavaScript、TypeScript、Java、Ruby 和 Go 等编程语言。可以根据上下文自动写代码，包括文档字符串、注释、函数名称、代码，只要用户给出提示，就可以写出完整的函数。
 
 《八个不容错过的 GitHub Copilot 功能！》
 
-https://baijiahao.baidu.com/s?id=1744745611421725066&wfr=spider&for=pc
+`https://baijiahao.baidu.com/s?id=1744745611421725066&wfr=spider&for=pc`
 
-————————
+---
 
 微软将ChatGPT视为新一代技术革命，将ChatGPT整合进Bing搜索引擎、Office全家桶、Azure云服务、Teams程序等产品中，微软近期宣布推出视频会议及远程协作平台的高级付费版Microsoft Teams Premium，订阅者可享用OpenAI提供支持的大型语言模型技术，用AI自动生成会议笔记，此举或对Zoom、谷歌会议等平台形成巨大冲击。
 
 ![](img/9d146b7c88ba1886eb974bf2664acc80.png)
 
-###
-
-#### 英伟达
+### 英伟达
 
 ![](img/352dc8e72507a540766e41eb90d76e68.png)
 
 ![](img/b31bc2723c78066b93aae114a69d4741.png)
 
-#### Buzzfeed（美国新媒体）
+### Buzzfeed（美国新媒体）
 
 美国新媒体巨头Buzzfeed踩准ChatGPT风口，两天内股价飙升3倍。
 
 1月29日，美国新媒体巨头Buzzfeed宣布计划采用ChatGPT协助内容创作，其股价一夜间暴涨近120%，两天内飙升逾300%，成交量突破4.38亿股（其月平均成交量不足2500万股），消息公布后同类型公司股票成交量也迎来历史高峰：C3.ai本月成交量超过7200万股，为自去年6月以来最多；语音AI软件公司SoundHound AI的成交量约为6450万股，几乎是其月平均值的三倍。
 
-#### 谷歌
+### 谷歌
 
-在ChatGPT发布后，谷歌CEO在公司内部发布了“红色警报”(Code Red)，敦促团队解决ChatGPT对公司搜索引擎业务构成的威胁，同时批准了在谷歌搜索引擎中加入AI聊天机器人的计划。
+在ChatGPT发布后，谷歌CEO在公司内部发布了“红色警报"(Code Red)，敦促团队解决ChatGPT对公司搜索引擎业务构成的威胁，同时批准了在谷歌搜索引擎中加入AI聊天机器人的计划。
 
 2月4日，谷歌资3亿美元投资ChatGPT竞品--Anthropic，谷歌将获得约10%的股份，Anthropic计划将次轮资金用干购买公歌云计算部门的计算资源;Anthropic开发了一款名为Claude的智能聊天机器人，据称可与ChatGPT相媲美(仍未发布)Anthropic和Open AI渊源颇深，其联合创始人曾担任OpenAI 研究副总裁。
 
@@ -1399,41 +1353,41 @@ https://baijiahao.baidu.com/s?id=1744745611421725066&wfr=spider&for=pc
 
 ![](img/7db0dae95f53391311db3424450a795d.png)
 
-#### 谷歌子公司剧本写作
+### 谷歌子公司剧本写作
 
 剧本写作AI-Dramatorn
 
 ![](img/a0987cb6ac5f591fcff3a5c393baa4bf.png)
 
-#### 英矽智能（医疗）
+### 英矽智能（医疗）
 
 ![](img/4ff2f21a55f3d87d6bf66cb40738061c.png)
 
-#### 亚马逊
+### 亚马逊
 
 将ChatGPT用于职能部门，如：回答面试问题、编写代码软件、创建培训文档
 
 《亚马逊的AIGC探索：让孩子入睡前的故事不再无聊》
 
-https://new.qq.com/rain/a/20221214A0874900
+`https://new.qq.com/rain/a/20221214A0874900`
 
-#### Nothing,Forever（AI 生成的情景喜剧）
+### Nothing,Forever（AI 生成的情景喜剧）
 
 《Nothing,Forever》 是一部 AI 生成的情景喜剧，放在 Twitch 上直播。
 
 画质上，给人上世纪 90 年代 PC 端游戏的感觉，背景饱和度很高；人物动态并不丝滑，声音也能明显听出是机器合成，剧情中添加的罐头笑声、音乐与人声音轨也有比较明显的割裂感。但一想到这全是 AI 生成的内容，还是会觉得很了不起。
 
-相关报道：https://mp.weixin.qq.com/s/PvJu5G4lY2JbwOYbCOxu-A
+相关报道：`https://mp.weixin.qq.com/s/PvJu5G4lY2JbwOYbCOxu-A`
 
-### 国内市场
+## 国内市场
 
-#### AI四小龙（商汤、旷视、依图、云从）
+### AI四小龙（商汤、旷视、依图、云从）
 
 商汤科技：将人工智能基础设施、智能驾驶、人/物检测、SLAM、图像生成、智能決策为核心，应用领域涵盖智能驾驶、身份验证、城市管理、游戏Al VRIAR等，11月24日市值620亿港元。
 
 旷视科技：专注于图像/视频的分析与理解，以人脸识别为核心，业务场景包括城市治理、楼宇园区管理、以人脸识别为核心，实名认证、通行考勤等，据胡润全球独角兽榜，2021年估值270亿元。
 
-依图科技：聚焦于人脸识别、自然语言处理等领域，解决方紫包括城市管理、智慧医疗等据胡润全球独角兽榜，2020 年估值140亿元。
+依图科技：聚焦于人脸识别、自然语言处理等领域，解决方累包括城市管理、智慧医疗等据胡润全球独角兽榜，2020 年估值140亿元。
 
 云从科技：建立视觉、语言、环境认知系统，应用于智慧交通、金融、教育等领域，11月24日市值131亿元。
 
@@ -1441,23 +1395,23 @@ https://new.qq.com/rain/a/20221214A0874900
 
 ![](img/7d59c0a2ab874d2de41f3016a99de6ef.png)
 
-#### 联想，寒武纪
+### 联想，寒武纪
 
 ChatGPT催生高算力需求，联想集团、寒武纪等成核心受益标的。
 
 《ChatGPT带火AIGC赛道 AI芯片提供商寒武纪却面临大考》
 
-https://baijiahao.baidu.com/s?id=1757179556540476455&wfr=spider&for=pc
+`https://baijiahao.baidu.com/s?id=1757179556540476455&wfr=spider&for=pc`
 
-#### 科大讯飞
+### 科大讯飞
 
-公司近年重点打造面向不同场景的、各具特色的“虚拟人”,会综合运用各类AI技术,并结合具体场景对应实现相应技术的深度融合与贯穿,以期实现更接近于人类能力的软硬一体、个性化、善学习的虚拟人方案。
+公司近年重点打造面向不同场景的、各具特色的“虚拟人",会综合运用各类AI技术,并结合具体场景对应实现相应技术的深度融合与贯穿,以期实现更接近于人类能力的软硬一体、个性化、善学习的虚拟人方案。
 
 [科大讯飞:类ChatGPT技术将于5月落地，率先用](http://finance.ce.cn/home/jrzq/dc/202302/10/t20230210_38386864.shtml?from=groupmessage)于AI学习机_中国经济网——国家经济门户
 
-https://baijiahao.baidu.com/s?id=1750710912814433989&wfr=spider&for=pc
+`https://baijiahao.baidu.com/s?id=1750710912814433989&wfr=spider&for=pc`
 
-#### 拓尔思-虚拟人Saas 🌟
+### 拓尔思-虚拟人Saas 🌟
 
 服务对象更偏向政府、国企。
 
@@ -1471,7 +1425,7 @@ https://baijiahao.baidu.com/s?id=1750710912814433989&wfr=spider&for=pc
 
 ![](img/8001e4f8f6407465cbf31eb1822def11.png)
 
-#### 万兴科技 🌟
+### 万兴科技 🌟
 
 墨刀软件就是万兴旗下。
 
@@ -1483,7 +1437,7 @@ https://baijiahao.baidu.com/s?id=1750710912814433989&wfr=spider&for=pc
 
 ![](img/3b5ab7e9511c7d12d2ae1d42089faf07.png)
 
-#### 字节 AI Lab 🌟
+### 字节 AI Lab 🌟
 
 据报道，字节跳动的人工智能实验室（AI Lab）正在开展类似CHATGPT和AIGC的相关研发。分析人士预计，字节AI Lab研发相关产品，将主要在VR内容生成上开展更多探索。据悉，字节AI Lab成立于2016年，研究领域主要涉及自然语言处理、数据挖掘、机器学习、语音与音频等。
 
@@ -1493,13 +1447,13 @@ A股公司中，[吉宏股份](http://stockpage.10jqka.com.cn/002803/)（[002803
 
 [天龙集团](http://stockpage.10jqka.com.cn/300063/)（[300063](http://stockpage.10jqka.com.cn/300063/)）是巨量引擎广告业务授权代理商，代理旗下产品包括今日头条、抖音、西瓜视频、火山小视频等互联网广告销售业务。
 
-#### 百度·飞桨🌟
+### 百度·飞桨🌟
 
 培训行业人才
 
 ![](img/20f6ec14766dd4f22947109f36619f4a.png)
 
-#### 百度·文心一言
+### 百度·文心一言
 
 百度在人工智能及自然语言处理方面有着深厚的技术储备,目前相关专利量已达到全国第一,世界第四,目前相关技术在电力、金融、制造、农业、教育、水务、交通等领域已经得到广泛应用。AIGC领域拥有文心大模型,不仅可以自然语言处理,还可以生成修复图片。
 
@@ -1515,39 +1469,39 @@ A股公司中，[吉宏股份](http://stockpage.10jqka.com.cn/002803/)（[002803
 
 推出与ChatGPT类似的【基于语言模型的聊天机器人产品】——文心一言(ERNIE Bot)，该产品计划在3月内测，之后，会逐步将其合并到【搜索引擎】中，智能解答用户的搜索提问。
 
-#### 阿里鲁班
+### 阿里鲁班
 
 AI人工智能设计师 — 让天下没有难撸的Banner！
 
-#### 完美世界
+### 完美世界
 
 曾因AIGC概念股，当日涨停
 
-https://new.qq.com/rain/a/20221117A053H800
+`https://new.qq.com/rain/a/20221117A053H800`
 
 ![](img/1d825390fb3224a87d68a0d7ecc49ed9.png)
 
-#### 网易互娱
+### 网易互娱
 
 ![](img/0da4da308974d9fec5bbf3a580532b97.png)
 
 ![](img/3731454e89d15d5e3ba6291b9e34609b.png)
 
-#### 智能家居萤石网络（上市）
+### 智能家居萤石网络（上市）
 
 ![](img/961c8301ddeb268fb3645dc7b1a92edb.png)
 
 ![](img/47280a6d50b1bf63bdae584e12faaedd.png)
 
-#### 视觉中国 🌟
+### 视觉中国 🌟
 
 公司拥有中国最广泛的图片付费使用群体客户,客户涵盖了G端机关、C端个人以及广泛的大企业和中小企业和媒体;公司作为中国版权行业的领军企业,拥有海量的图片资源,同时很早就布局音视频资源以及区块链、数字认证等新技术。
 
-#### 蓝色光标
+### 蓝色光标
 
 ![](img/2c84182b861b83904f597b8d2b0d08fe.png)
 
-#### 昆仑万维 🌟
+### 昆仑万维 🌟
 
 成立于2008年，已经发展成为集精品自研游戏研发厂、全球精品游戏发行商、平台和软件商店三者为一体的互联网企业。
 
@@ -1557,35 +1511,25 @@ https://new.qq.com/rain/a/20221117A053H800
 
 ![](img/e22f8542d6b68bb76015a1c3ea20dc49.png)
 
-###
-
-#### 中文在线AI主播
+### 中文在线AI主播
 
 ![](img/7adcbc488cd1c57e104389a92083d49f.png)
 
-#### NoliBox
+### NoliBox
 
-###
-
-###
-
-###
-
-#### 豪末智行
+### 豪末智行
 
 ![](img/871864091b157b5fa980ee22a8ade074.png)
 
 ![](img/b31c0a08005e4b5dc9a579ab163b24a3.png)
 
-#### 右脑科技
+### 右脑科技
 
-做专业的AIGC图像视频创作工具——奇绩被投
+项目简介：右脑科技旨在用人工智能赋能视觉创作，打造基于AIGC技术的平台和新型创作生态。创始团队来自北京大学，有丰富的视觉大模型研发与落地经验，迭代速度快，仅用时40天自研系列算法，推出了支持视频和图像的AIGC创作工具。
 
-**项目简介：**右脑科技旨在用人工智能赋能视觉创作，打造基于AIGC技术的平台和新型创作生态。创始团队来自北京大学，有丰富的视觉大模型研发与落地经验，迭代速度快，仅用时40天自研系列算法，推出了支持视频和图像的AIGC创作工具。
+团队介绍：梁健：北京大学计算机科学硕士，曾在MSRA，长期从事视觉生成研究，代表作女娲系列NUWA、NUWA Infinity。史杰：北京大学智能系统硕士，曾在MSRA，女娲项目组从事Diffusion模型研究，曾任商汤研究员，负责扩散视频生成模型研究。周呈华: 北京大学软件工程硕士，曾在STCA、智源研究院，从事视觉生成研究，参与智源悟道·文生图模型、国画模型研发
 
-**团队介绍：**梁健：北京大学计算机科学硕士，曾在MSRA，长期从事视觉生成研究，代表作女娲系列NUWA、NUWA Infinity。史杰：北京大学智能系统硕士，曾在MSRA，女娲项目组从事Diffusion模型研究，曾任商汤研究员，负责扩散视频生成模型研究。周呈华: 北京大学软件工程硕士，曾在STCA、智源研究院，从事视觉生成研究，参与智源悟道·文生图模型、国画模型研发
-
-#### 深言科技
+### 深言科技
 
 整数有约 | 深言科技：一款应用拯救“词不达意”，理工科也能玩转浪漫
 
@@ -1593,55 +1537,39 @@ https://new.qq.com/rain/a/20221117A053H800
 
 ## 资料参考
 
-+   AI 作曲：https://cloud.tencent.com/developer/information/ai%E6%99%BA%E8%83%BD%E4%BD%9C%E6%9B%B2
++ `AI 作曲：https://cloud.tencent.com/developer/information/ai%E6%99%BA%E8%83%BD%E4%BD%9C%E6%9B%B2`
++ 报告合集：[🤖️ AIGC专题](https://pfbf3dkb9h.feishu.cn/wiki/wikcnxqTFtYAutb4LMPDB6h9yVc?from=from_copylink)
++ 【国外】[AIGC 企业库 Top50](https://pfbf3dkb9h.feishu.cn/wiki/wikcnYqcPcqBgfsCSZEsM3E8ZDe) Top 50 AIGC 初创公司和产品介绍：
++ AIGC受益厂商：`https://mp.weixin.qq.com/s/efTYIKAenBSiFChNMVJZ6g`
++ 人工智能工具目录：[Futurepedia - The Largest AI Tools Directory | Home](https://www.futurepedia.io/)
++ 《生成式人工智能：一个创造性的新世界》`https://zhuanlan.zhihu.com/p/570398695`
++ 《ChatGPT：一个人不管有多大的梦想，还是要有盖世武功》
++ `https://mp.weixin.qq.com/s/Dd28kONcjwiBYPuDUD8R7g`
++ 《万字长文：AI产品经理视角的ChatGPT全解析》
++ `https://mp.weixin.qq.com/s/iaaI-fxv5N4QEgtXwS8iqw`
++ [MuseArt 创作平台使用说明书📑](https://fszw8ihdf5.feishu.cn/docx/BlEbdBGjmoMPfgxT9KecYisinMf)
++ [MuseArt: 打字就能生成一幅画，支持中文，且免费！快申请加入吧！](https://fszw8ihdf5.feishu.cn/docx/doxcnigFcBNsKl5NeZtjs6j5yZc)
++ [👏 你好，AI 艺术家](https://maoxianqiu.feishu.cn/wiki/wikcnbFlktQ0OrsGustVLlg8rIg)
++ [造梦日记 Printidea 用户手册](https://fuhgh5u28j.feishu.cn/docx/doxcnPVITN5dA1CawR8ZbWYWBfh)
++ [画宇宙（Nolibox Creator）帮助中心](https://f8y4v1rln8.feishu.cn/wiki/wikcna7VCVJOxmTeVmQY5Jj0nSf)
++ `https://www.bilibili.com/video/BV1Ev4y1D7hn/?share_source=copy_web&vd_source=066fb8318bd3c075df7805c51c24ad30`
++ [上线一个月成为准独角兽、上万人排队注册，AI Art是下一个NFT？ | 全球行业mapping-36氪](https://36kr.com/p/1936392560380553)
 
-+   报告合集：[🤖️ AIGC专题](https://pfbf3dkb9h.feishu.cn/wiki/wikcnxqTFtYAutb4LMPDB6h9yVc?from=from_copylink)
 
-+   【国外】[AIGC 企业库 Top50](https://pfbf3dkb9h.feishu.cn/wiki/wikcnYqcPcqBgfsCSZEsM3E8ZDe)op 50 AIGC 初创公司和产品介绍：
 
-+   AIGC受益厂商：https://mp.weixin.qq.com/s/efTYIKAenBSiFChNMVJZ6g
+# AIGC 资源导航
 
-+   人工智能工具目录[ ](https://www.futurepedia.io/)Futurepedia - The Largest AI Tools Directory | Home
++ [36氪专访｜对话Nolibox：从AI生成艺术到AIGC，开](https://36kr.com/p/1976518408284802)源生态下的核心竞争力在于产品理解-36氪
++ `https://www.zmo.ai/`
++ [1⃣️ AIGC 企业库 Top50](https://pfbf3dkb9h.feishu.cn/wiki/wikcnYqcPcqBgfsCSZEsM3E8ZDe?table=tblgw8jEMB99k1KQ&view=vew2JA1hI3)
++ chatGPT 竞品：`https://www.perplexity.ai/`
++ [小宇宙关于AIGC 的播客合集：https://www.xiaoyuzhoufm.com/collection/epi](https://www.xiaoyuzhoufm.com/collection/episode/63e21a2ef4ac0bffcb710375?s=eyJ1IjogIjVlMjgyMmZkMzQxOWY0MDhiM2Y2ODlhOSJ9)sode/63e21a2ef4ac0bffcb710375?s=eyJ1IjogIjVlMjgyMmZkMzQxOWY0MDhiM2Y2ODlhOSJ9
 
-+   《生成式人工智能：一个创造性的新世界》https://zhuanlan.zhihu.com/p/570398695
-
-+   《ChatGPT：一个人不管有多大的梦想，还是要有盖世武功》
-
-+   https://mp.weixin.qq.com/s/Dd28kONcjwiBYPuDUD8R7g
-
-+   《万字长文：AI产品经理视角的ChatGPT全解析》
-
-+   https://mp.weixin.qq.com/s/iaaI-fxv5N4QEgtXwS8iqw
-
-+   [MuseArt 创作平台使用说明书📑](https://fszw8ihdf5.feishu.cn/docx/BlEbdBGjmoMPfgxT9KecYisinMf)
-
-+   [MuseArt: 打字就能生成一幅画，支持中文，且免费！快申请加入吧！](https://fszw8ihdf5.feishu.cn/docx/doxcnigFcBNsKl5NeZtjs6j5yZc)
-
-+   [👏 你好，AI 艺术家](https://maoxianqiu.feishu.cn/wiki/wikcnbFlktQ0OrsGustVLlg8rIg)
-
-+   [造梦日记 Printidea 用户手册](https://fuhgh5u28j.feishu.cn/docx/doxcnPVITN5dA1CawR8ZbWYWBfh)
-
-+   [画宇宙（Nolibox Creator）帮助中心](https://f8y4v1rln8.feishu.cn/wiki/wikcna7VCVJOxmTeVmQY5Jj0nSf)
-
-+    https://www.bilibili.com/video/BV1Ev4y1D7hn/?share_source=copy_web&vd_source=066fb8318bd3c075df7805c51c24ad30
-
-+   [上](https://36kr.com/p/1936392560380553)线一个月成为准独角兽、上万人排队注册，AI Art是下一个NFT？ | 全球行业mapping-36氪
-
-+   [36氪专访｜对话Nolibox：从AI生成艺术到AIGC，开](https://36kr.com/p/1976518408284802)源生态下的核心竞争力在于产品理解-36氪
-
-+   https://www.zmo.ai/
-
-+   [1⃣️ AIGC 企业库 Top50](https://pfbf3dkb9h.feishu.cn/wiki/wikcnYqcPcqBgfsCSZEsM3E8ZDe?table=tblgw8jEMB99k1KQ&view=vew2JA1hI3)
-
-+   chatGPT 竞品：https://www.perplexity.ai/
-
-+   [小宇宙关于AIGC 的播客合集：https://www.xiaoyuzhoufm.com/collection/epi](https://www.xiaoyuzhoufm.com/collection/episode/63e21a2ef4ac0bffcb710375?s=eyJ1IjogIjVlMjgyMmZkMzQxOWY0MDhiM2Y2ODlhOSJ9)sode/63e21a2ef4ac0bffcb710375?s=eyJ1IjogIjVlMjgyMmZkMzQxOWY0MDhiM2Y2ODlhOSJ9
-
-免责声明
+### 免责声明
 
 不可用作商业用途，部分内容参考各大券商报告。
 
-创作者
+### 创作者
 
 ![](img/3935ae4aeb04994dcf8ee6603e971cca.png)
 

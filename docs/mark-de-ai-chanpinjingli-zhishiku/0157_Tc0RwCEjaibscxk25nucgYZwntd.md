@@ -1,3 +1,4 @@
+
 # 03-12集成学习-因果推断
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/MHvPdMelLohq3NxKhTTcsp6engN](https://qqs7y1hozd1.feishu.cn/docx/MHvPdMelLohq3NxKhTTcsp6engN)
@@ -17,9 +18,7 @@
 在现实生活中，我们经常想知道做某件事是否会带来效果：
 
 +   吃某种药能不能治病？
-
 +   提高广告预算能不能增加销售？
-
 +   运动能不能让人减肥？
 
 如果只看相关性，容易被误导。因果推断帮助我们做出更科学、更可靠的决策。
@@ -27,19 +26,14 @@
 **基本思路是**：
 
 1.  **提出因果假设**：比如“每天跑步会让体重下降”。
-
-1.  **收集数据**：记录每天跑步的人和体重变化。
-
-1.  **分析因果关系**：考虑可能的混淆因素，比如饮食习惯、睡眠时间等。
-
-1.  **得出结论**：确认跑步本身是否真的能导致体重下降。
+2.  **收集数据**：记录每天跑步的人和体重变化。
+3.  **分析因果关系**：考虑可能的混淆因素，比如饮食习惯、睡眠时间等。
+4.  **得出结论**：确认跑步本身是否真的能导致体重下降。
 
 咱们举个简单例子，假设你想知道“喝咖啡是否让人更精神”。
 
 +   直接观察：喝咖啡的人更精神。
-
 +   但可能是因为早上爱喝咖啡的人本来就睡得好，更容易精神。
-
 +   因果推断会尝试控制这些干扰因素（比如睡眠时间），最终判断咖啡本身对精神状态有没有影响。
 
 总结来看就是，因果推断就是让我们搞清楚“事情发生的真正原因”，而不是被表面现象骗了眼睛。
@@ -48,97 +42,102 @@
 
 因果推断的核心是量化“干预”对结果的影响，而不是仅仅计算相关性。
 
-数学上，最基础的工具是 **潜在结果框架（Potential Outcomes Fram**ewo**rk，又称 Rubin 因果模型） **和 结构方程模型（Structural Equation Model, SEM）。
+数学上，最基础的工具是 `Potential Outcomes Framework`（又称 `Rubin 因果模型`）和 `Structural Equation Model`（`SEM`）。
 
-#### 1. 潜在结果框架
+### 1. 潜在结果框架
 
-**基本思想**：对于每个个体  ，假设有一个二元处理变量  （Treatment, 0 或 1），结果变量为  。
+**基本思想**：对于每个个体，假设有一个二元处理变量 `T`（Treatment, 0 或 1），结果变量为 `Y`。
 
-+   潜在结果  ：如果个体   接受处理  ，会得到的结果。
++   潜在结果 `Y(1)`：如果个体接受处理 `T=1`，会得到的结果。
++   潜在结果 `Y(0)`：如果个体不接受处理 `T=0`，会得到的结果。
 
-+   潜在结果  ：如果个体   不接受处理  ，会得到的结果。
+**个体因果效应（`ITE`）**：
 
-**个体因果效应（Individual Tr**eatment Effect, ITE）：
+`ITE = Y(1) - Y(0)`
 
-**平均处理效应（Average Tr**eatment Effect, ATE）：
+**平均处理效应（`ATE`）**：
 
-注意：每个个体只能观测到   或   中的一种，这就是所谓的“反事实问题（fundamental problem of causal inference）”。
+`ATE = E[Y(1) - Y(0)]`
 
-#### 2. 条件独立假设
+注意：每个个体只能观测到 `Y(1)` 或 `Y(0)` 中的一种，这就是所谓的“反事实问题（fundamental problem of causal inference）”。
 
-为了估计 ATE，我们通常假设：
+### 2. 条件独立假设
 
-意思是：在给定协变量   的条件下，处理   与潜在结果   独立。
+为了估计 `ATE`，我们通常假设：
+
+`(Y(1), Y(0)) ⊥ T | X`
+
+意思是：在给定协变量 `X` 的条件下，处理 `T` 与潜在结果 `(Y(1), Y(0))` 独立。
 
 这保证我们可以通过观察数据估计因果效应。
 
-#### 3. 逆概率加权
+### 3. 逆概率加权
 
 假设我们知道接受处理的概率（倾向得分）：
 
-ATE 可以通过加权公式估计：
+`e(X) = P(T=1 | X)`
+
+`ATE` 可以通过加权公式估计：
+
+`ATE = E[ (T·Y / e(X)) - ((1-T)·Y / (1-e(X))) ]`
 
 思路：给不同概率接受处理的人加权，抵消处理分配的不均衡。
 
-#### 4. 条件平均处理效应
+### 4. 条件平均处理效应
 
 在不同特征条件下的因果效应：
 
-CATE 可以帮助分析“不同人群的处理效果不同”。
+`CATE(x) = E[Y(1) - Y(0) | X=x]`
 
----
+`CATE` 可以帮助分析“不同人群的处理效果不同”。
 
-### 因果图与结构方程模型（SEM）
+## 因果图与结构方程模型（SEM）
 
-#### 1. 因果图
+### 1. 因果图
 
-+   节点：变量（处理 T、结果 Y、协变量 X）
-
++   节点：变量（处理 `T`、结果 `Y`、协变量 `X`）
 +   有向边：因果关系
 
 示例 DAG：
 
-这里   是混淆变量（confounder），同时影响 T 和 Y。
+这里 `X` 是混淆变量（confounder），同时影响 `T` 和 `Y`。
 
-#### 2. do-运算（干预操作）
+### 2. do-运算（干预操作）
 
 在 Pearl 的因果推理框架中：
 
-与条件概率   不同，do-操作表示我们强制让  ，阻断外界影响。
+与条件概率 `P(Y | T)` 不同，`do()` 操作表示我们强制让 `T = t`，阻断外界影响。
 
 **调整公式**：
 
-如果 X 屏蔽了所有“反向路径”，则：
+如果 `X` 屏蔽了所有“反向路径”，则：
 
----
+`P(Y | do(T)) = Σₓ P(Y | T, X=x) · P(X=x)`
 
-### 因果推断的算法流程
+## 因果推断的算法流程
 
-#### 1. 数据准备
+### 1. 数据准备
 
-+   收集处理变量  、结果变量  、协变量
-
++   收集处理变量 `T`、结果变量 `Y`、协变量 `X`
 +   确定可能的混淆变量
 
-#### 2. 因果假设
+### 2. 因果假设
 
 +   构建因果图（DAG）
-
 +   确定需要调整的混淆变量
 
-#### 3. 估计倾向得分（Propensity Score）
+### 3. 估计倾向得分（Propensity Score）
 
-+   用逻辑回归、机器学习模型等估计
++   用逻辑回归、机器学习模型等估计 `e(X)`
 
-#### 4. 因果效应估计
+### 4. 因果效应估计
 
 方法包括：
 
 1.  **匹配法**
 
 +   根据倾向得分匹配处理组和对照组
-
-+   估计 ATE:
++   估计 `ATE`：
 
 1.  **加权法**
 
@@ -146,45 +145,53 @@ CATE 可以帮助分析“不同人群的处理效果不同”。
 
 1.  **回归调整法**
 
-+   用回归模型预测  ：
-
-+   因果效应由   给出
++   用回归模型预测 `Y`：
++   因果效应由 `E[Y(1) - Y(0)]` 给出
 
 1.  **双重稳健法**
 
 +   结合倾向得分加权和回归调整，提高鲁棒性
 
-#### 5. 验证假设
+### 5. 验证假设
 
 +   检查平衡性（matching 或加权后处理组与对照组的协变量分布是否接近）
++   进行敏感性分析（`sensitivity analysis`）评估未观测混淆的影响
 
-+   进行敏感性分析（sensitivity analysis）评估未观测混淆的影响
-
----
-
-### 总结公式体系
+## 总结公式体系
 
 这里把刚刚论述的，总结一下：
 
 1.  **个体因果效应**：
 
+`ITE_i = Y_i(1) - Y_i(0)`
+
 1.  **平均处理效应**：
+
+`ATE = E[Y(1) - Y(0)]`
 
 1.  **条件独立假设**：
 
+`(Y(1), Y(0)) ⊥ T | X`
+
 1.  **倾向得分加权估计 ATE**：
+
+`ATE_IPW = (1/N) Σ [ T·Y / e(X) - (1-T)·Y / (1-e(X)) ]`
 
 1.  **do-操作调整公式**：
 
+`P(Y | do(T)) = Σₓ P(Y | T, X=x) · P(X=x)`
+
 1.  **CATE**：
+
+`CATE(x) = E[Y(1) - Y(0) | X=x]`
 
 ## 完整案例
 
 咱们利用模拟数据，使用因果推断算法，估计处理变量对结果变量的因果效应，最后进行可视化分析。
 
-数据包含协变量、混淆变量、处理变量和结果变量，设计了真实的因果效应（ATE=3）。
+数据包含协变量、混淆变量、处理变量和结果变量，设计了真实的因果效应（`ATE=3`）。
 
-```
+```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -209,75 +216,75 @@ Y0 = 2 + 1.5*X1 - 0.5*X2 + 0.5*Z + np.random.normal(0, 1, N)
 Y1 = Y0 + 3
 Y = T*Y1 + (1-T)*Y0
 
-data = pd.DataFrame({&#x27;X1&#x27;: X1, &#x27;X2&#x27;: X2, &#x27;Z&#x27;: Z, &#x27;T&#x27;: T, &#x27;Y&#x27;: Y})
+data = pd.DataFrame({'X1': X1, 'X2': X2, 'Z': Z, 'T': T, 'Y': Y})
 
 # 2，数据探索性分析
-print(&quot;数据前5行:\n&quot;, data.head())
+print("数据前5行:\n", data.head())
 
-sns.histplot(data=data, x=&#x27;X1&#x27;, hue=&#x27;T&#x27;, bins=30, palette=&#x27;bright&#x27;, kde=True, multiple=&#x27;stack&#x27;)
-plt.title(&#x27;X1在处理组(T=1)和对照组(T=0)的分布&#x27;)
+sns.histplot(data=data, x='X1', hue='T', bins=30, palette='bright', kde=True, multiple='stack')
+plt.title('X1在处理组(T=1)和对照组(T=0)的分布')
 plt.show()
 
-sns.histplot(data=data, x=&#x27;Y&#x27;, hue=&#x27;T&#x27;, bins=30, palette=&#x27;Set2&#x27;, kde=True, multiple=&#x27;stack&#x27;)
-plt.title(&#x27;Y在处理组(T=1)和对照组(T=0)的分布&#x27;)
+sns.histplot(data=data, x='Y', hue='T', bins=30, palette='Set2', kde=True, multiple='stack')
+plt.title('Y在处理组(T=1)和对照组(T=0)的分布')
 plt.show()
 
 # 3，倾向得分估计
-X_cov = data[[&#x27;X1&#x27;, &#x27;X2&#x27;, &#x27;Z&#x27;]]
-y_treat = data[&#x27;T&#x27;]
+X_cov = data[['X1', 'X2', 'Z']]
+y_treat = data['T']
 prop_model = LogisticRegression()
 prop_model.fit(X_cov, y_treat)
-data[&#x27;propensity_score&#x27;] = prop_model.predict_proba(X_cov)[:,1]
+data['propensity_score'] = prop_model.predict_proba(X_cov)[:,1]
 
-sns.kdeplot(data=data[data[&#x27;T&#x27;]==1], x=&#x27;propensity_score&#x27;, fill=True, color=&#x27;orange&#x27;, label=&#x27;Treatment&#x27;)
-sns.kdeplot(data=data[data[&#x27;T&#x27;]==0], x=&#x27;propensity_score&#x27;, fill=True, color=&#x27;blue&#x27;, label=&#x27;Control&#x27;)
-plt.title(&#x27;倾向得分分布&#x27;)
+sns.kdeplot(data=data[data['T']==1], x='propensity_score', fill=True, color='orange', label='Treatment')
+sns.kdeplot(data=data[data['T']==0], x='propensity_score', fill=True, color='blue', label='Control')
+plt.title('倾向得分分布')
 plt.legend()
 plt.show()
 
 # 4，加权法估计ATE
-data[&#x27;weight&#x27;] = data[&#x27;T&#x27;]/data[&#x27;propensity_score&#x27;] + (1-data[&#x27;T&#x27;])/(1-data[&#x27;propensity_score&#x27;])
-ATE_ipw = np.sum(data[&#x27;weight&#x27;] * data[&#x27;T&#x27;]*data[&#x27;Y&#x27;]/data[&#x27;propensity_score&#x27;] - data[&#x27;weight&#x27;] * (1-data[&#x27;T&#x27;])*data[&#x27;Y&#x27;]/(1-data[&#x27;propensity_score&#x27;])) / N
-print(f&#x27;加权法估计的ATE: {ATE_ipw:.3f}&#x27;)
+data['weight'] = data['T']/data['propensity_score'] + (1-data['T'])/(1-data['propensity_score'])
+ATE_ipw = np.sum(data['weight'] * data['T']*data['Y']/data['propensity_score'] - data['weight'] * (1-data['T'])*data['Y']/(1-data['propensity_score'])) / N
+print(f'加权法估计的ATE: {ATE_ipw:.3f}')
 
 # 5，回归调整法估计ATE
 reg_model = RandomForestRegressor(n_estimators=100, random_state=42)
-reg_model.fit(pd.concat([X_cov, data[[&#x27;T&#x27;]]], axis=1), data[&#x27;Y&#x27;])
-data[&#x27;Y1_pred&#x27;] = reg_model.predict(pd.concat([X_cov, pd.DataFrame({&#x27;T&#x27;:np.ones(N)})], axis=1))
-data[&#x27;Y0_pred&#x27;] = reg_model.predict(pd.concat([X_cov, pd.DataFrame({&#x27;T&#x27;:np.zeros(N)})], axis=1))
-CATE = data[&#x27;Y1_pred&#x27;] - data[&#x27;Y0_pred&#x27;]
+reg_model.fit(pd.concat([X_cov, data[['T']]], axis=1), data['Y'])
+data['Y1_pred'] = reg_model.predict(pd.concat([X_cov, pd.DataFrame({'T':np.ones(N)})], axis=1))
+data['Y0_pred'] = reg_model.predict(pd.concat([X_cov, pd.DataFrame({'T':np.zeros(N)})], axis=1))
+CATE = data['Y1_pred'] - data['Y0_pred']
 ATE_reg = CATE.mean()
-print(f&#x27;回归调整法估计的ATE: {ATE_reg:.3f}&#x27;)
+print(f'回归调整法估计的ATE: {ATE_reg:.3f}')
 
-sns.histplot(CATE, bins=30, color=&#x27;purple&#x27;, kde=True)
-plt.title(&#x27;估计的个体因果效应分布&#x27;)
-plt.xlabel(&#x27;CATE&#x27;)
-plt.ylabel(&#x27;频数&#x27;)
+sns.histplot(CATE, bins=30, color='purple', kde=True)
+plt.title('估计的个体因果效应分布')
+plt.xlabel('CATE')
+plt.ylabel('频数')
 plt.show()
 
 # 6，双重稳健法
-data[&#x27;residual&#x27;] = data[&#x27;Y&#x27;] - (data[&#x27;T&#x27;]*data[&#x27;Y1_pred&#x27;] + (1-data[&#x27;T&#x27;])*data[&#x27;Y0_pred&#x27;])
-DR_ATE = np.mean(data[&#x27;Y1_pred&#x27;] - data[&#x27;Y0_pred&#x27;] + data[&#x27;T&#x27;]*data[&#x27;residual&#x27;]/data[&#x27;propensity_score&#x27;] - (1-data[&#x27;T&#x27;])*data[&#x27;residual&#x27;]/(1-data[&#x27;propensity_score&#x27;]))
-print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
+data['residual'] = data['Y'] - (data['T']*data['Y1_pred'] + (1-data['T'])*data['Y0_pred'])
+DR_ATE = np.mean(data['Y1_pred'] - data['Y0_pred'] + data['T']*data['residual']/data['propensity_score'] - (1-data['T'])*data['residual']/(1-data['propensity_score']))
+print(f'双重稳健法估计的ATE: {DR_ATE:.3f}')
 ```
 
 ### 核心代码解析
 
-1.  **数据生成**：构建协变量、混淆变量、处理变量和结果变量，潜在因果效应为3。
+1.  **数据生成**：构建协变量、混淆变量、处理变量 `T` 和结果变量 `Y`，潜在因果效应为 `3`。
 
 1.  **探索性分析**：观察协变量和结果在处理组/对照组的分布，初步识别混淆。
 
 1.  **倾向得分**：通过逻辑回归估计每个样本接受处理的概率，用于加权和匹配。
 
-1.  **加权法**：通过倾向得分加权消除协变量分布差异，计算ATE。
+1.  **加权法**：通过倾向得分加权消除协变量分布差异，计算 `ATE`。
 
 1.  **回归调整法**：用随机森林预测潜在结果，计算个体因果效应和平均因果效应。
 
-1.  **可视化CATE**：直观显示个体因果效应分布及异质性。
+1.  **可视化 `CATE`**：直观显示个体因果效应分布及异质性。
 
 1.  **双重稳健法**：结合倾向得分加权和回归预测，提高因果效应估计的稳健性。
 
-1.  **分组分析**：按协变量分组计算CATE，揭示异质性效果。
+1.  **分组分析**：按协变量分组计算 `CATE`，揭示异质性效果。
 
 ### 可视化分析
 
@@ -289,11 +296,11 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 
 ![](img/b02b809e52a3e43bb393823f6fb5b752.png)
 
-**CATE直方图**：展示个体因果效应分布，识别异质性。
+**`CATE`直方图**：展示个体因果效应分布，识别异质性。
 
 ![](img/d1047c380803f61748bc2696ee4da459.png)
 
-**分组CATE柱状图**：显示不同特征组的平均因果效应，支持个性化干预决策。
+**分组 `CATE` 柱状图**：显示不同特征组的平均因果效应，支持个性化干预决策。
 
 ![](img/0cebe0826fbb2cb0055af45872217d1b.png)
 
@@ -301,7 +308,7 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 
 加权法、回归调整法和双重稳健法各有特点，双重稳健法兼顾模型预测和加权稳定性。
 
-可视化分析帮助理解处理效应分布及异质性，分组CATE分析提供个性化干预策略依据，适合实际因果推断场景。
+可视化分析帮助理解处理效应分布及异质性，分组 `CATE` 分析提供个性化干预策略依据，适合实际因果推断场景。
 
 ## 模型分析
 
@@ -313,7 +320,7 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 
 1.  通过倾向得分、加权法和双重稳健法，能够在有限样本下减小偏差，提高估计稳定性。
 
-1.  支持个体异质性分析（CATE），能够为不同特征群体提供个性化干预决策。
+1.  支持个体异质性分析（`CATE`），能够为不同特征群体提供个性化干预决策。
 
 1.  可与机器学习模型结合（如随机森林回归）处理非线性关系和复杂交互作用。
 
@@ -321,7 +328,7 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 
 1.  对未观测混淆变量敏感，假如存在重要未测协变量，因果估计可能有偏。
 
-1.  倾向得分模型或回归模型不准确时，会影响ATE和CATE估计。
+1.  倾向得分模型或回归模型不准确时，会影响 `ATE` 和 `CATE` 估计。
 
 1.  对数据量要求较高，尤其在异质性分析中，样本不足可能导致估计不稳定。
 
@@ -330,12 +337,18 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 ### 与相似算法对比
 
 | 方法 | 优点 | 缺点 | 适用场景 |
+
 | --- | --- | --- | --- |
-| 倾向得分加权(IPW) | 调整混淆变量分布，易于实现 | 对倾向得分模型依赖较大，可能高方差 | 样本量大且协变量信息完整时效果好 |
-| 回归调整(Regression Adjustment) | 利用协变量预测潜在结果，可处理非线性 | 模型不准确时有偏 | 协变量和结果关系复杂时，尤其适合机器学习模型 |
-| 双重稳健法(Doubly Robust) | 即使倾向得分或回归模型任一正确，估计仍无偏 | 实现稍复杂 | 样本存在混淆变量且不确定哪种模型更准确时 |
-| 匹配(Matching) | 简单直观，易解释 | 可能丢失样本，效率低 | 样本量适中且倾向得分重叠良好时 |
-| 随机对照试验(RCT) | 金标准，无混淆 | 实施成本高，伦理限制 | 能实际随机分配处理时优选 |
+
+| 倾向得分加权(`IPW`) | 调整混淆变量分布，易于实现 | 对倾向得分模型依赖较大，可能高方差 | 样本量大且协变量信息完整时效果好 |
+
+| 回归调整(`Regression Adjustment`) | 利用协变量预测潜在结果，可处理非线性 | 模型不准确时有偏 | 协变量和结果关系复杂时，尤其适合机器学习模型 |
+
+| 双重稳健法(`Doubly Robust`) | 即使倾向得分或回归模型任一正确，估计仍无偏 | 实现稍复杂 | 样本存在混淆变量且不确定哪种模型更准确时 |
+
+| 匹配(`Matching`) | 简单直观，易解释 | 可能丢失样本，效率低 | 样本量适中且倾向得分重叠良好时 |
+
+| 随机对照试验(`RCT`) | 金标准，无混淆 | 实施成本高，伦理限制 | 能实际随机分配处理时优选 |
 
 ### 适用情况与算法选择
 
@@ -345,7 +358,7 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 
 +   数据无法通过实验随机化获得；
 
-+   关注个体或群体的异质性因果效应（CATE）；
++   关注个体或群体的异质性因果效应（`CATE`）；
 
 +   可以使用机器学习模型处理非线性和复杂交互。
 
@@ -353,6 +366,6 @@ print(f&#x27;双重稳健法估计的ATE: {DR_ATE:.3f}&#x27;)
 
 +   样本量极小或倾向得分重叠严重，可考虑匹配或局部加权法；
 
-+   数据可以通过随机化实验获得，优先采用RCT；
++   数据可以通过随机化实验获得，优先采用 `RCT`；
 
 +   需要高可解释性且关系线性，可采用传统线性回归调整方法。

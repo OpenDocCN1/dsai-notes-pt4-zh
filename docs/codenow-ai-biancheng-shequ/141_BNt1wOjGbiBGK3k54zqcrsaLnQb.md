@@ -1,6 +1,7 @@
+
 # “家酿计算机俱乐部”和“家酿应用俱乐部”
 
-> 来源：[https://now.feishu.cn/docx/LLZldOJ8DocKmyxszj2couCBnJd](https://now.feishu.cn/docx/LLZldOJ8DocKmyxszj2couCBnJd)
+> 来源：[`https://now.feishu.cn/docx/LLZldOJ8DocKmyxszj2couCBnJd`](`https://now.feishu.cn/docx/LLZldOJ8DocKmyxszj2couCBnJd`)
 
 生成一篇关于家酿计算机俱乐部的文章，用生动的语言，故事一般的文风，讲述家酿计算机俱乐部（homebrew computer club）对计算机产业发展带来的影响；我想成立一个家酿应用俱乐部，向人们普及AI编程。我能从家酿计算机俱乐部的故事里得到什么启发。不要臆想，生成的文字要在网络上找到依据，并给我链接
 
@@ -24,21 +25,21 @@
 
 ### 对你创建AI编程俱乐部的启示
 
-1.  开放性：创建一个欢迎所有技术水平的人的平台
+1. 开放性：创建一个欢迎所有技术水平的人的平台
 
-1.  协作精神：鼓励成员分享项目和想法
+1. 协作精神：鼓励成员分享项目和想法
 
-1.  实践导向：组织实际编程workshops
+1. 实践导向：组织实际编程workshops
 
-1.  低门槛：让AI编程对普通人变得可及
+1. 低门槛：让AI编程对普通人变得可及
 
 ### 参考资料
 
-+   IEEE Spectrum: The Homebrew Computer Club
++ IEEE Spectrum: The Homebrew Computer Club
 
-+   Computer History Museum - Oral History
++ Computer History Museum - Oral History
 
-+   《硅谷之火》
++ 《硅谷之火》
 
 ### 结语
 

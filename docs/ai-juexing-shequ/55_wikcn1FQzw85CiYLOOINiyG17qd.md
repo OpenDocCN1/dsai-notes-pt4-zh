@@ -1,12 +1,13 @@
+
 # MiniGPT-4：看图聊天、教学、创作、搭网站......还开源了
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/DTzidoTg2ocQDKx6gTqcIABOnph](https://diwfpqo78m.feishu.cn/docx/DTzidoTg2ocQDKx6gTqcIABOnph)
 
-> 以下文章来源于👸号：Jack Cui ，作者Jack Cui 部分修改
+> 以下文章来源于👸号：Jack Cui ，作者 Jack Cui 部分修改
 
 > 一名热爱技术的算法工程师。分享技术，乐享生活：技术、快乐、财富。
 
-大家好， ChatGPT 的对话能力，想必大家也早已体验过了，无论是文本生成能力，还是写代码的能力，甚至是上下文的关联对话能力，无不一次又一次地震撼着我们。
+大家好，ChatGPT 的对话能力，想必大家也早已体验过了，无论是文本生成能力，还是写代码的能力，甚至是上下文的关联对话能力，无不一次又一次地震撼着我们。
 
 你还记不记得发布会上，GPT4 的多模态能力吗？输入不仅是可以是文字，还可以是文本和图片。
 
@@ -20,7 +21,7 @@
 
 ![](img/68a958004e8c6f6dda16d259076359ad.png)
 
-**然而，已经过去一个多月了 **！OpenAI 至今也没有提供发布会所展示的多模态处理能力！
+**然而，已经过去一个多月了**！OpenAI 至今也没有提供发布会所展示的多模态处理能力！
 
 原本以为还要再等几个月的官方更新，才能体验上这个功能，没想到，我看到了这么一个项目。
 
@@ -48,7 +49,7 @@
 
 ![](img/8fe37adca82488f26a8ebe14fae88f39.png)
 
-## **项目说明**
+## 项目说明
 
 MiniGPT-4 是一个很酷的开源项目,它能让计算机更好地理解图片和文字!
 
@@ -68,7 +69,7 @@ MiniGPT-4 是在一些开源大模型基础上训练得到的，fine tune 分为
 
 ![](img/1b6057e9806cdbdf19062b7e28becc3f.png)
 
-## **部署方式**
+## 部署方式
 
 要玩转 MiniGPT-4, 首先要准备 Python 环境和下载 Vicuna 的预训练模型。
 
@@ -96,7 +97,7 @@ vicuna_weights
 
 准备预训练的 MiniGPT-4 checkpoint.
 
-然后，在第 11 行的 eval_configs/minigpt4_eval.yaml 中的评估配置文件中设置预训练检查点的路径
+然后，在第 11 行的`eval_configs/minigpt4_eval.yaml`中的评估配置文件中设置预训练检查点的路径
 
 运行项目：
 
@@ -113,5 +114,3 @@ python demo.py --cfg-path eval_configs/minigpt4_eval.yaml
 如果你想了解更多关于 ChatGPT 有趣的项目和玩法，欢迎点击下面的链接，加入我们的社群一起交流探讨
 
 一起期待一下吧～
-
-###

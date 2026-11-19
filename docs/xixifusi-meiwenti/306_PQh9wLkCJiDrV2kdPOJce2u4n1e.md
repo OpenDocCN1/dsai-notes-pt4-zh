@@ -1,3 +1,4 @@
+
 # 创业不是考试，没有满分，是妥协与坚持的艺术
 
 > 来源：[https://docs.feishu.cn/docx/Bvr6d3DZ5oK1S3xkg5Tcx70OnDb](https://docs.feishu.cn/docx/Bvr6d3DZ5oK1S3xkg5Tcx70OnDb)

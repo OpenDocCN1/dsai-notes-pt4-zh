@@ -1,10 +1,11 @@
+
 # AI大礼包骨折价！Lenny's Newsletter限时促销！
 
 > 来源：[https://my.feishu.cn/docx/MjPmduSCDorI2SxND3xc3SKKn2g](https://my.feishu.cn/docx/MjPmduSCDorI2SxND3xc3SKKn2g)
 
 老金自己先冲了个低价的地方，有需要的可以联系老金，文末添加联系方式。
 
-**当然价**格有波动，但老金买到的是接近于市场价的60%的极高折扣，老金亲测后才敢放出来给大家看。
+当然价格有波动，但老金买到的是接近于市场价的60%的极高折扣，老金亲测后才敢放出来给大家看。
 
 2025/4/18 下午5:11 Cursor已断货 =。=
 
@@ -40,21 +41,19 @@ Perplexity是AI搜索的元老了，目前是海外数一数二的AI搜索软件
 
 这些工具涵盖了编程、设计、内容创作、团队协作等多个领域，适用于程序员、设计师、内容创作者、学生等多种角色。
 
-###
-
 ![](img/dae2fdeca698813e816d75e8a07f2e52.png)
 
 ## 交付说明
 
-打开：https://mail.com/
+打开：`https://mail.com/`
 
 点开链接
 
 ![](img/995f621783a69ee0a4cc7eb512ac4012.png)
 
 ---
-
-**--****-****--**-------------------------------------   到此为止交付完成   ------------------------------------------
+到此为止交付完成
+---
 
 ## 兑换说明
 
@@ -86,4 +85,4 @@ Perplexity是AI搜索的元老了，目前是海外数一数二的AI搜索软件
 
 其他的老金还没兑换，囤着呢，但是点了几个软件，都是可直连兑换界面。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

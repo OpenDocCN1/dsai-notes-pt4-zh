@@ -1,8 +1,9 @@
+
 # 从0-1打造商用 AI Agent（智能体）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/PQOHdSDiqoL9lExPBc2crkmGnEg](https://v11enp9ok1h.feishu.cn/docx/PQOHdSDiqoL9lExPBc2crkmGnEg)
 
-# 一、什么是智能体？
+## 一、什么是智能体？
 
 智能体是[一种能够感知](https://zhida.zhihu.com/search?content_id=254820407&content_type=Article&match_order=1&q=%E5%8F%8D%E5%BA%94%E5%BC%8F%E6%99%BA%E8%83%BD%E4%BD%93&zhida_source=entity)其所处环境、做出决策并采取行动以实现特定目标的自主实体。智能体的复杂程度各不相同，从简单的对刺激做出反应的反应式智能体，到能够随着时间推移进行学习和适应的更高级的智能体。
 
@@ -28,27 +29,27 @@
 
 +   [**系统提示**](https://zhida.zhihu.com/search?content_id=254820407&content_type=Article&match_order=1&q=%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA&zhida_source=entity)：指导智能体如何处理用户输入并选择正确工具的指令集。
 
-# 二、实现过程
+## 二、实现过程
 
 现在，让我们挽起袖子，开始动手构建吧！
 
 ![](img/c8cb4852e1958cfae7905945fd493d47.png)
 
-## 2.1 准备工作
+### 2.1 准备工作
 
-本教程的完整代码可在AI智能体的GitHub仓库中获取。你可以在 “Build an Agent from Scratch” 这里找到具体实现。在运行代码之前，请确保你的系统满足以下先决条件：
+本教程的完整代码可在AI智能体的GitHub仓库中获取。你可以在 `Build an Agent from Scratch` 这里找到具体实现。在运行代码之前，请确保你的系统满足以下先决条件：
 
 #### Python环境设置
 
 运行AI智能体需要安装Python。按照以下步骤来设置你的环境：
 
-+   安装Python（如果尚未安装）：从http://python.org下载并安装Python（推荐3.8及以上版本）。
++   安装Python（如果尚未安装）：从`http://python.org`下载并安装Python（推荐3.8及以上版本）。
 
-+   **验证安装**：在命令行中输入python --version，查看是否正确安装。
++   **验证安装**：在命令行中输入`python --version`，查看是否正确安装。
 
-+   **创建虚拟环境（推荐）**：使用虚拟环境来管理依赖项是个不错的选择。在命令行中输入python -m venv ai_agents_env创建虚拟环境，然后通过source ai_agents_env/bin/activate激活它。
++   **创建虚拟环境（推荐）**：使用虚拟环境来管理依赖项是个不错的选择。在命令行中输入`python -m venv ai_agents_env`创建虚拟环境，然后通过`source ai_agents_env/bin/activate`激活它。
 
-+   **安装所需依赖项**：导航到代码仓库目录，然后在命令行中输入pip install -r requirements.txt来安装所需的依赖库。
++   **安装所需依赖项**：导航到代码仓库目录，然后在命令行中输入`pip install -r requirements.txt`来安装所需的依赖库。
 
 #### 本地设置Ollama
 
@@ -56,31 +57,31 @@ Ollama用于高效地运行和管理本地语言模型。按照以下步骤安�
 
 +   **下载并安装Ollama**：访问Ollama的官方网站，下载适合你操作系统的安装程序，并按照平台对应的说明进行安装。
 
-+   **验证Ollama安装**：在命令行中运行ollama --version，检查Ollama是否正确安装。
++   **验证Ollama安装**：在命令行中运行`ollama --version`，检查Ollama是否正确安装。
 
-+   **拉取模型（如有需要）**：有些智能体实现可能需要特定的模型。你可以使用ollama pull mistral命令拉取模型。
++   **拉取模型（如有需要）**：有些智能体实现可能需要特定的模型。你可以使用`ollama pull mistral`命令拉取模型。
 
 ### AI Agent 选型
 
 第二步，我们需要根据场景选择 AI Agent 开发平台，选择合适的大模型，并选用不同的工具来执行不同系统的操作。
 
-### 选择哪个 AI Agent 平台
+#### 选择哪个 AI Agent 平台
 
-先说说 AI Agent 开发平台，Dify、Coze、FastGPT 等这么多无代码 Agent 开发平台，我们该选择哪个比较合适呢？
+先说说 AI Agent 开发平台，`Dify`、`Coze`、`FastGPT` 等这么多无代码 Agent 开发平台，我们该选择哪个比较合适呢？
 
-+   **Coze **只能使用云端，不能在本地部署。
++   **Coze**只能使用云端，不能在本地部署。
 
 +   **Dify**是完全开源的，没有限制，但在知识问答方面的能力较弱。
 
 +   **FastGPT** 的使用有一定限制，但在知识回答方面的能力相对较强。
 
-> 更高级的开发平台，如 LangGraph、CrewAI 等，可以让 AI 自我规划并执行任务，但是需要编写代码。
+> 更高级的开发平台，如 `LangGraph`、`CrewAI` 等，可以让 AI 自我规划并执行任务，但是需要编写代码。
 
 > 是否选择这些平台，取决于我们的具体需求，当然也可以混合使用。
 
 > 这就要求我们深入了解每个开发平台的特点，它擅长什么、不擅长什么，存在哪些明显的缺陷。只有掌握了这些信息，才能根据我们的场景做出合适的选型。
 
-### 选择哪个 LLM
+#### 选择哪个 LLM
 
 [再说说大模型](https://zhida.zhihu.com/search?content_id=253679336&content_type=Article&match_order=1&q=OpenAI&zhida_source=entity)的[选择，现在有](https://zhida.zhihu.com/search?content_id=253679336&content_type=Article&match_order=1&q=Claude&zhida_source=entity)[海外的 Open](https://zhida.zhihu.com/search?content_id=253679336&content_type=Article&match_order=1&q=DeepSeek&zhida_source=entity)AI、Claude、G[emini](https://zhida.zhihu.com/search?content_id=253679336&content_type=Article&match_order=1&q=LLaMA&zhida_source=entity)，[也有国内](https://zhida.zhihu.com/search?content_id=253679336&content_type=Article&match_order=1&q=Grok&zhida_source=entity)的 Kim[i、通义千问和](https://zhida.zhihu.com/search?content_id=253679336&content_type=Article&match_order=1&q=Mistral&zhida_source=entity)近期爆火的 DeepSeek，还有一些开源模型如 LLaMA、Grok，也有像 Mistral 这样的小模型。
 
@@ -90,11 +91,11 @@ Ollama用于高效地运行和管理本地语言模型。按照以下步骤安�
 
 #### 步骤1：设置环境
 
-除了Python，我们还需要安装一些必要的库。在本教程中，我们将使用requests、json和termcolor库。另外，我们会使用dotenv来管理环境变量。在命令行中输入pip install requests termcolor python-dotenv进行安装。
+除了Python，我们还需要安装一些必要的库。在本教程中，我们将使用`requests`、`json`和`termcolor`库。另外，我们会使用`dotenv`来管理环境变量。在命令行中输入`pip install requests termcolor python-dotenv`进行安装。
 
 #### 步骤2：定义模型类
 
-我们首先需要一个能够处理用户输入的模型。我们将创建一个OllamaModel类，它通过与本地API进行交互来生成响应。以下是基本实现代码：
+我们首先需要一个能够处理用户输入的模型。我们将创建一个`OllamaModel`类，它通过与本地API进行交互来生成响应。以下是基本实现代码：
 
 ```
 from termcolor import colored
@@ -107,37 +108,37 @@ import operator
 
 class OllamaModel:
     def __init__(self, model, system_prompt, temperature=0, stop=None):
-        &quot;&quot;&quot;
+        """
         用给定的参数初始化OllamaModel。
         参数:
         model (str): 要使用的模型名称。
         system_prompt (str): 要使用的系统提示。
         temperature (float): 模型的温度设置。
         stop (str): 模型的停止标记。
-        &quot;&quot;&quot;
-        self.model_endpoint = &quot;http://localhost:11434/api/generate&quot;
+        """
+        self.model_endpoint = "http://localhost:11434/api/generate"
         self.temperature = temperature
         self.model = model
         self.system_prompt = system_prompt
-        self.headers = {&quot;Content-Type&quot;: &quot;application/json&quot;}
+        self.headers = {"Content-Type": "application/json"}
         self.stop = stop
 
     def generate_text(self, prompt):
-        &quot;&quot;&quot;
+        """
         根据提供的提示从Ollama模型生成响应。
         参数:
         prompt (str): 用于生成响应的用户查询。
         返回:
         dict: 模型的响应，以字典形式返回。
-        &quot;&quot;&quot;
+        """
         payload = {
-            &quot;model&quot;: self.model,
-            &quot;format&quot;: &quot;json&quot;,
-            &quot;prompt&quot;: prompt,
-            &quot;system&quot;: self.system_prompt,
-            &quot;stream&quot;: False,
-            &quot;temperature&quot;: self.temperature,
-            &quot;stop&quot;: self.stop
+            "model": self.model,
+            "format": "json",
+            "prompt": prompt,
+            "system": self.system_prompt,
+            "stream": False,
+            "temperature": self.temperature,
+            "stop": self.stop
         }
         try:
             request_response = requests.post(
@@ -145,22 +146,24 @@ class OllamaModel:
                 headers=self.headers,
                 data=json.dumps(payload)
             )
-            print(&quot;REQUEST RESPONSE&quot;, request_response)
+            print("REQUEST RESPONSE", request_response)
             request_response_json = request_response.json()
-            response = request_response_json[&#x27;response&#x27;]
+            response = request_response_json['response']
             response_dict = json.loads(response)
-            print(f&quot;\n\nResponse from Ollama model: {response_dict}&quot;)
+            print(f"\n\nResponse from Ollama model: {response_dict}")
             return response_dict
         except requests.RequestException as e:
-            response = {&quot;error&quot;: f&quot;Error in invoking model! {str(e)}&quot;}
+            response = {"error": f"Error in invoking model! {str(e)}"}
             return response
 ```
 
-这个类使用模型名称、系统提示、温度和停止标记进行初始化。generate_text方法向模型API发送请求并返回响应。
+这个类使用模型名称、系统提示、温度和停止标记进行初始化。`generate_text`方法向模型API发送请求并返回响应。
 
 #### 步骤3：为智能体创建工具
 
 接下来是为我们的智能体创建可用的工具。这些工具是执行特定任务的简单Python函数。以下是一个基本计算器和字符串反转器的示例：
+
+
 
 ```
 def basic_calculator(input_str):
@@ -242,11 +245,11 @@ def reverse_string(input_string):
     return result
 ```
 
-这些函数根据提供的输入执行特定任务。basic_calculator处理算术运算，而reverse_string则反转给定的字符串。
+这些函数根据提供的输入执行特定任务。`basic_calculator`处理算术运算，而`reverse_string`则反转给定的字符串。
 
-#### 步骤4：构建工具箱
+## 步骤4：构建工具箱
 
-[ToolBox](https://zhida.zhihu.com/search?content_id=254820407&content_type=Article&match_order=1&q=ToolBox&zhida_source=entity)类用于存储智能体可以使用的所有工具，并为每个工具提供描述：
+[`ToolBox`](https://zhida.zhihu.com/search?content_id=254820407&content_type=Article&match_order=1&q=ToolBox&zhida_source=entity)类用于存储智能体可以使用的所有工具，并为每个工具提供描述：
 
 ```
 class ToolBox:
@@ -279,40 +282,42 @@ class ToolBox:
 
 这个类将帮助智能体了解哪些工具可用以及每个工具的用途。
 
-#### 步骤5：创建智能体类
+## 步骤5：创建智能体类
 
-智能体需要进行思考、决定使用哪个工具并执行它。以下是Agent类的代码：
+智能体需要进行思考、决定使用哪个工具并执行它。以下是`Agent`类的代码：
+
+
 
 ```
-agent_system_prompt_template = &quot;&quot;&quot;
+agent_system_prompt_template = """
 你是一个智能AI助手，可以使用特定的工具。你的回复必须始终采用以下JSON格式：
 {
-    &quot;tool_choice&quot;: &quot;name_of_the_tool&quot;,
-    &quot;tool_input&quot;: &quot;inputs_to_the_tool&quot;
+    "tool_choice": "name_of_the_tool",
+    "tool_input": "inputs_to_the_tool"
 }
 工具及使用场景：
 1. basic_calculator：用于任何数学计算
-    - 输入格式: {{&quot;num1&quot;: number, &quot;num2&quot;: number, &quot;operation&quot;: &quot;add/subtract/multiply/divide&quot;}}
+    - 输入格式: {"num1": number, "num2": number, "operation": "add/subtract/multiply/divide"}
     - 支持的运算: add/plus, subtract/minus, multiply/times, divide
     - 示例输入和输出:
-        - 输入: &quot;Calculate 15 plus 7&quot;
-        - 输出: {{&quot;tool_choice&quot;: &quot;basic_calculator&quot;, &quot;tool_input&quot;: {{&quot;num1&quot;: 15, &quot;num2&quot;: 7, &quot;operation&quot;: &quot;add&quot;}}}}
-        - 输入: &quot;What is 100 divided by 5?&quot;
-        - 输出: {{&quot;tool_choice&quot;: &quot;basic_calculator&quot;, &quot;tool_input&quot;: {{&quot;num1&quot;: 100, &quot;num2&quot;: 5, &quot;operation&quot;: &quot;divide&quot;}}}}
+        - 输入: "Calculate 15 plus 7"
+        - 输出: {"tool_choice": "basic_calculator", "tool_input": {"num1": 15, "num2": 7, "operation": "add"}}
+        - 输入: "What is 100 divided by 5?"
+        - 输出: {"tool_choice": "basic_calculator", "tool_input": {"num1": 100, "num2": 5, "operation": "divide"}}
 2. reverse_string：用于任何涉及反转文本的请求
     - 输入格式: 仅需反转的文本字符串
     - 当用户提到“reverse”、“backwards”或要求反转文本时，始终使用此工具
     - 示例输入和输出:
-        - 输入: &quot;Reverse of &#x27;Howwwww&#x27;?&quot;
-        - 输出: {{&quot;tool_choice&quot;: &quot;reverse_string&quot;, &quot;tool_input&quot;: &quot;Howwwww&quot;}}
-        - 输入: &quot;What is the reverse of Python?&quot;
-        - 输出: {{&quot;tool_choice&quot;: &quot;reverse_string&quot;, &quot;tool_input&quot;: &quot;Python&quot;}}
+        - 输入: "Reverse of 'Howwwww'?"
+        - 输出: {"tool_choice": "reverse_string", "tool_input": "Howwwww"}
+        - 输入: "What is the reverse of Python?"
+        - 输出: {"tool_choice": "reverse_string", "tool_input": "Python"}
 3. no tool：用于一般对话和问题
     - 示例输入和输出:
-        - 输入: &quot;Who are you?&quot;
-        - 输出: {{&quot;tool_choice&quot;: &quot;no tool&quot;, &quot;tool_input&quot;: &quot;I am an AI assistant that can help you with calculations, reverse text, and answer questions. I can perform mathematical operations and reverse strings. How can I help you today?&quot;}}
-        - 输入: &quot;How are you?&quot;
-        - 输出: {{&quot;tool_choice&quot;: &quot;no tool&quot;, &quot;tool_input&quot;: &quot;I&#x27;m functioning well, thank you for asking! I&#x27;m here to help you with calculations, text reversal, or answer any questions you might have.&quot;}}
+        - 输入: "Who are you?"
+        - 输出: {"tool_choice": "no tool", "tool_input": "I am an AI assistant that can help you with calculations, reverse text, and answer questions. I can perform mathematical operations and reverse strings. How can I help you today?"}
+        - 输入: "How are you?"
+        - 输出: {"tool_choice": "no tool", "tool_input": "I'm functioning well, thank you for asking! I'm here to help you with calculations, text reversal, or answer any questions you might have."}
 严格规则：
 1. 对于关于身份、能力或感受的问题：
     - 始终使用“no tool”
@@ -329,42 +334,43 @@ agent_system_prompt_template = &quot;&quot;&quot;
 以下是你的工具列表及其描述：
 {tool_descriptions}
 记住：你的回复必须始终是包含“tool_choice”和“tool_input”字段的有效JSON。
-&quot;&quot;&quot;
+"""
+```
 
-
+```
 class Agent:
     def __init__(self, tools, model_service, model_name, stop=None):
-        &quot;&quot;&quot;
+        """
         用工具列表和模型初始化智能体。
         参数:
         tools (list): 工具函数列表。
         model_service (class): 具有generate_text方法的模型服务类。
         model_name (str): 要使用的模型名称。
-        &quot;&quot;&quot;
+        """
         self.tools = tools
         self.model_service = model_service
         self.model_name = model_name
         self.stop = stop
 
     def prepare_tools(self):
-        &quot;&quot;&quot;
+        """
         将工具存储在工具箱中并返回其描述。
         返回:
         str: 存储在工具箱中的工具的描述。
-        &quot;&quot;&quot;
+        """
         toolbox = ToolBox()
         toolbox.store(self.tools)
         tool_descriptions = toolbox.tools()
         return tool_descriptions
 
     def think(self, prompt):
-        &quot;&quot;&quot;
+        """
         使用系统提示模板和工具描述在模型上运行generate_text方法。
         参数:
         prompt (str): 用于生成响应的用户查询。
         返回:
         dict: 模型的响应，以字典形式返回。
-        &quot;&quot;&quot;
+        """
         tool_descriptions = self.prepare_tools()
         agent_system_prompt = agent_system_prompt_template.format(tool_descriptions=tool_descriptions)
         if self.model_service == OllamaModel:
@@ -384,72 +390,72 @@ class Agent:
         return agent_response_dict
 
     def work(self, prompt):
-        &quot;&quot;&quot;
+        """
         解析think方法返回的字典并执行相应的工具。
         参数:
         prompt (str): 用于生成响应的用户查询。
         返回:
         执行相应工具的响应，如果未找到匹配的工具，则返回tool_input。
-        &quot;&quot;&quot;
+        """
         agent_response_dict = self.think(prompt)
-        tool_choice = agent_response_dict.get(&quot;tool_choice&quot;)
-        tool_input = agent_response_dict.get(&quot;tool_input&quot;)
+        tool_choice = agent_response_dict.get("tool_choice")
+        tool_input = agent_response_dict.get("tool_input")
         for tool in self.tools:
             if tool.__name__ == tool_choice:
                 response = tool(tool_input)
-                print(colored(response, &#x27;cyan&#x27;))
+                print(colored(response, 'cyan'))
                 return
-        print(colored(tool_input, &#x27;cyan&#x27;))
+        print(colored(tool_input, 'cyan'))
         return
 ```
 
 这个类有三个主要方法：
 
-+   prepare_tools：存储并返回工具的描述。
++   `prepare_tools`：存储并返回工具的描述。
 
-+   think：根据用户提示决定使用哪个工具。
++   `think`：根据用户提示决定使用哪个工具。
 
-+   work：执行选择的工具并返回结果。
++   `work`：执行选择的工具并返回结果。
 
-#### 步骤6：运行智能体
+## 步骤6：运行智能体
 
 最后，让我们把所有内容整合起来，运行我们的智能体。在脚本的主程序部分，初始化智能体并开始接受用户输入：
 
 ```
-if __name__ == &quot;__main__&quot;:
-    &quot;&quot;&quot;
+if __name__ == "__main__":
+    """
     使用此智能体的说明：
     你可以尝试的示例查询：
     1. 计算器运算:
-        - &quot;Calculate 15 plus 7&quot;
-        - &quot;What is 100 divided by 5?&quot;
-        - &quot;Multiply 23 and 4&quot;
+        - "Calculate 15 plus 7";
+        - "What is 100 divided by 5?";
+        - "Multiply 23 and 4";
     2. 字符串反转:
-        - &quot;Reverse the word &#x27;hello world&#x27;&quot;
-        - &quot;Can you reverse &#x27;Python Programming&#x27;?&quot;
+        - "Reverse the word 'hello world'";
+        - "Can you reverse 'Python Programming'?";
     3. 一般问题（将得到直接回复）:
-        - &quot;Who are you?&quot;
-        - &quot;What can you help me with?&quot;
+        - "Who are you?";
+        - "What can you help me with?";
     Ollama命令（在终端中运行这些命令）:
-        - 查看可用模型:    &#x27;ollama list&#x27;
-        - 查看正在运行的模型:      &#x27;ps aux | grep ollama&#x27;
-        - 列出模型标签:          &#x27;curl http://localhost:11434/api/tags&#x27;
-        - 拉取新模型:         &#x27;ollama pull mistral&#x27;
-        - 运行模型服务器:         &#x27;ollama serve&#x27;
-    &quot;&quot;&quot;
+        - 查看可用模型:    'ollama list';
+        - 查看正在运行的模型:      'ps aux | grep ollama';
+        - 列出模型标签:          'curl http://localhost:11434/api/tags';
+        - 拉取新模型:         'ollama pull mistral';
+        - 运行模型服务器:         'ollama serve';
+    """
     tools = [basic_calculator, reverse_string]
     model_service = OllamaModel
-    model_name = &quot;llama2&quot;
-    stop = &quot;&lt;|eot_id|&gt;&quot;
+    model_name = "llama2"
+    stop = "<|eot_id|>"
     agent = Agent(tools=tools, model_service=model_service, model_name=model_name, stop=stop)
-    print(&quot;\nWelcome to the AI Agent! Type &#x27;exit&#x27; to quit.&quot;)
-    print(&quot;You can ask me to:&quot;)
-    print(&quot;1. Perform calculations (e.g., &#x27;Calculate 15 plus 7&#x27;)&quot;)
-    print(&quot;2. Reverse strings (e.g., &#x27;Reverse hello world&#x27;)&quot;)
-    print(&quot;3. Answer general questions\n&quot;)
+    print("\nWelcome to the AI Agent! Type 'exit' to quit.")
+    print("You can ask me to:")
+    print("1. Perform calculations (e.g., 'Calculate 15 plus 7')")
+    print("2. Reverse strings (e.g., 'Reverse hello world')")
+    print("3. Answer general questions\n")
     while True:
-        prompt = input(&quot;Ask me anything: &quot;)
-        if prompt.lower() == &quot;exit&quot;:
+        prompt = input("Ask me anything: ")
+        if prompt.lower() == "exit":
             break
         agent.work(prompt)
 ```

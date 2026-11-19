@@ -1,8 +1,9 @@
+
 # AI 导航站
 
 > 来源：[https://docs.feishu.cn/docx/SLjCdRLeWo1iZzxH5QhcpMnGneh](https://docs.feishu.cn/docx/SLjCdRLeWo1iZzxH5QhcpMnGneh)
 
-### 国外
+## 国外
 
 名称：AitoGrow
 
@@ -18,29 +19,29 @@
 
 名称：Daily Zaps
 
-网址：https://www.dailyzaps.com/
+网址：`https://www.dailyzaps.com/`
 
 名称：All Things AI
 
-网址：https://allthingsai.com/
+网址：`https://allthingsai.com/`
 
 名称：Favird
 
-网址：https://favird.com/
+网址：`https://favird.com/`
 
 名称：AI Depot
 
-网址：https://aidepot.co/
+网址：`https://aidepot.co/`
 
 名称：Future Pedia
 
-网址：https://www.futurepedia.io/
+网址：`https://www.futurepedia.io/`
 
 名称：SaaS  AI Tools
 
-网址：https://saasaitools.com/
+网址：`https://saasaitools.com/`
 
-### 国内
+## 国内
 
 名称：AI工具集
 
@@ -52,15 +53,15 @@
 
 名称：Likejay
 
-网址：https://www.likejay.cn/
+网址：`https://www.likejay.cn/`
 
 名称：AI深度导航
 
-网址：https://www.deepdh.com/ai
+网址：`https://www.deepdh.com/ai`
 
 名称：AI-TOOLS
 
-网址：https://ai-tools.plus/
+网址：`https://ai-tools.plus/`
 
 # 极客时间 AIGC 知识库（持续更新中）
 
@@ -68,25 +69,26 @@
 
 > **学习指南：**
 
-+    [【AI快讯】3分钟速看大事件](https://longalong.feishu.cn/wiki/wikcnLSAB9bg1OFrfP1ssHiS40g)** **，快速概览 AI 届每周大事件，不错过重点
++ [【AI快讯】3分钟速看大事件](https://longalong.feishu.cn/wiki/wikcnLSAB9bg1OFrfP1ssHiS40g)，快速概览 AI 届每周大事件，不错过重点
 
-+    [【追前沿】趋势和风向](https://longalong.feishu.cn/wiki/wikcnWVtG5UA5DL59zmnWL3AfBf) ，看看别人的深度解读，整体上理解行业格局变化、行业价值链变迁，为抓住机会提供「认知层」的线索
++ [【追前沿】趋势和风向](https://longalong.feishu.cn/wiki/wikcnWVtG5UA5DL59zmnWL3AfBf)，看看别人的深度解读，整体上理解行业格局变化、行业价值链变迁，为抓住机会提供「认知层」的线索
 
-+    [【观案例】应用与变现案例](https://longalong.feishu.cn/wiki/wikcneAKpN3u473N7J9EAC4Ga0b)** **，看看 AI 相关工作/学习/生活提效案例、创造案例、赚钱案例，你可以做什么？这些真实案例为你提供「可操作」的线索
++ [【观案例】应用与变现案例](https://longalong.feishu.cn/wiki/wikcneAKpN3u473N7J9EAC4Ga0b)，看看 AI 相关工作/学习/生活提效案例、创造案例、赚钱案例，你可以做什么？这些真实案例为你提供「可操作」的线索
 
-+    [【收藏夹】AI 工具大全](https://longalong.feishu.cn/wiki/wikcnAawG8etdr1pp1ni6m0AqHf)** **，获取最全、最新、最主流的各方面工具，看看别人已经用 AI 做了什么创造，太多了不知道关注/使用哪个？看看测评吧~
++ [【收藏夹】AI 工具大全](https://longalong.feishu.cn/wiki/wikcnAawG8etdr1pp1ni6m0AqHf)，获取最全、最新、最主流的各方面工具，看看别人已经用 AI 做了什么创造，太多了不知道关注/使用哪个？看看测评吧~
 
-+    [【Prompt】提示指令库](https://longalong.feishu.cn/wiki/wikcn6By97y03xfvTs6Bee5mzJd)** **，为你提供实践指令，具体实践时不知道怎么用？来复制这里的指令试试。更多指令参见「更多提示词」sheet
++ [【Prompt】提示指令库](https://longalong.feishu.cn/wiki/wikcn6By97y03xfvTs6Bee5mzJd)，为你提供实践指令，具体实践时不知道怎么用？来复制这里的指令试试。更多指令参见「更多提示词」sheet
 
-+   [【搜藏家】AI 经典开源项目](https://longalong.feishu.cn/wiki/wikcn6DWQe1m39tTOby8mH2fBzf)** **，经典项目和库，不错过最好的
++ [【搜藏家】AI 经典开源项目](https://longalong.feishu.cn/wiki/wikcn6DWQe1m39tTOby8mH2fBzf)，经典项目和库，不错过最好的
 
-+   [【系统学】教程和课程](https://longalong.feishu.cn/wiki/wikcnFG6U23f0prVzYQW8e7sbAd)** **，那些最最最主流的工具，为你提供模型、注册、镜像站、使用技巧、调试技巧、提示词等超全一条龙教程，想实操？跟着这个来
++ [【系统学】教程和课程](https://longalong.feishu.cn/wiki/wikcnFG6U23f0prVzYQW8e7sbAd)，那些最最最主流的工具，为你提供模型、注册、镜像站、使用技巧、调试技巧、提示词等超全一条龙教程，想实操？跟着这个来
 
-+   [【追公司】相关公司及融资动态](https://longalong.feishu.cn/wiki/wikcnYrIiivNiy0LIAGvcvUjO0c)** **，看看大公司在关注和投资什么，他们的选择往往意味着行业的价值焦点，观测其周边生态，也许能喝到汤~
++ [【追公司】相关公司及融资动态](https://longalong.feishu.cn/wiki/wikcnYrIiivNiy0LIAGvcvUjO0c)，看看大公司在关注和投资什么，他们的选择往往意味着行业的价值焦点，观测其周边生态，也许能喝到汤~
 
 ## AI 时代，没有权威，谁先关注，谁先行动，谁在未来就能抢占更多话语权。
 
-## **加入****【极客时间 AIGC 交流群】****，抢先获取一手信息 👇🏻**
+## 加入【极客时间 AIGC 交流群】，抢先获取一手信息 👇🏻
 
-| ![](img/338f5ac16618321b899061363c8e7c40.png) |
+![](img/338f5ac16618321b899061363c8e7c40.png)
+
 | --- |

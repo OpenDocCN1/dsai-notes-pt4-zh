@@ -1,3 +1,4 @@
+
 # 2023-10-26我为知识付费100w+，那些年我被割过的韭菜
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AXlLdfoIPoxcjBxju7VcXAY7nJf](https://xuqiwei1986.feishu.cn/docx/AXlLdfoIPoxcjBxju7VcXAY7nJf)

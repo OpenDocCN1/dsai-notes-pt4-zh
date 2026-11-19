@@ -1,90 +1,91 @@
+
 # 用 Cursor 重写微软开源的70K项目--Markitdown
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/M744d47AQoyWXUxPM1sco273nZe](https://qqs7y1hozd1.feishu.cn/docx/M744d47AQoyWXUxPM1sco273nZe)
 
-## 1.定义cursor空间的需求
+## 1. 定义 Cursor 空间的需求
 
 > 决定 Cursor 需要提供哪些功能，比如高亮当前编辑位置、显示光标位置信息等。
 
-在 Cursor 中使用 markitdown-mcp，使用这个 mcp 可以将常见的不同格式的文档转成 markdown，比如：pdf、word、excel、html、zip，甚至图像和视频也可以转成 markdown。
+在 Cursor 中使用 `markitdown-mcp`，使用这个 `mcp` 可以将常见的不同格式的文档转成 Markdown，比如：pdf、word、excel、html、zip，甚至图像和视频也可以转成 Markdown。
 
 ![](img/eef9035e547b3f19ca01f06ba6d414aa.png)
 
-## **2.创建 Cursor 组件**
+## 2. 创建 Cursor 组件
 
 > 创建一个新的组件或修改现有组件以实现 Cursor 功能。
 
-### 2.1安装 markitdown-mcp 服务
+### 2.1 安装 `markitdown-mcp` 服务
 
-在 MCP 市场找到 MarkitDown MCP 服务
+在 `MCP` 市场找到 `MarkitDown MCP` 服务
 
 ![](img/c798c1c5025af908c0f751863ed27776.png)
 
-点击内容 tab 的第一个进入到 github 中
+点击内容 `tab` 的第一个进入到 `GitHub` 中
 
 ![](img/b74aee93a0ee2acece54ad28fbbc2e94.png)
 
-点击 Download ZIP 下载源代码。
+点击 `Download ZIP` 下载源代码。
 
-**解压缩刚才下载的压缩包，使用 Cursor 打开刚才的 **markitdown 文件，输入提示词：
+**解压缩刚才下载的压缩包，使用 `Cursor` 打开刚才的 `markitdown` 文件，输入提示词：**
 
-> 按照 readme 说明安装 markitdown mcp 服务。
+> 按照 `readme` 说明安装 `markitdown-mcp` 服务。
 
 ![](img/f0792f417b8ab9aae1b66fdc62e8bd62.png)
 
-可以看到 Cursor 开始按照 readme 说明文档开始执行
+可以看到 `Cursor` 开始按照 `readme` 说明文档开始执行
 
 ![](img/1e7ff0fd21ceb748425e3425fedbe9da.png)
 
-第一个命令执行失败，原因是需要创建一个虚拟环境，Cursor 开始自行创建，之后开始安装所需依赖。
+第一个命令执行失败，原因是需要创建一个虚拟环境，`Cursor` 开始自行创建，之后开始安装所需依赖。
 
 ![](img/50bd73c9dd142057f420c546abf954cd.png)
 
-**之后开始安装** markitdown-mcp，发现需要安装 Docker 来运行 markitdown 服务。
+**之后开始安装** `markitdown-mcp`，发现需要安装 `Docker` 来运行 `markitdown` 服务。
 
-> 开始查找项目中是否有需要的 Dockfile 文件。找到 Dockerfile 文件之后开始按照 Dockerfile 文件安装 Docker 服务。
+> 开始查找项目中是否有需要的 `Dockerfile` 文件。找到 `Dockerfile` 文件之后开始按照 `Dockerfile` 文件安装 `Docker` 服务。
 
-下载 Docker 失败之后，尝试使用其他方案启动 markitdown-mcp 服务，最后成功启动。
+下载 `Docker` 失败之后，尝试使用其他方案启动 `markitdown-mcp` 服务，最后成功启动。
 
 ![](img/8a306d2f7ef350bc91de0f649608246f.png)
 
 确认启动成功。
 
-### 2.2Cursor 集成 markitdown-mcp 服务
+### 2.2 Cursor 集成 `markitdown-mcp` 服务
 
-> **Cursor 中输入提示词：**
+> **在 `Cursor` 中输入提示词：**
 
-> 使用 Cursor 集成刚才创建的 markitdown mcp 服务
+> 使用 `Cursor` 集成刚才创建的 `markitdown-mcp` 服务
 
 ![](img/0e1ed5dc5505fb3f454e0dfbd07ec664.png)
 
-**创建 ****mcp_config.json** 文件，这一步就不需要自己去查找文档配置了。
+**创建** `mcp_config.json` **文件**，这一步就不需要自己去查找文档配置了。
 
 ![](img/1de599fff8e0b93ead443622c191a60b.png)
 
-创建脚本启动 markitdown-mcp 服务，并设置执行权限。
+创建脚本启动 `markitdown-mcp` 服务，并设置执行权限。
 
 ![](img/baa2c7028982b2aa0e3d1bf1ce4be1d4.png)
 
-更新 mcp_config.json 中的执行脚本为刚才创建的脚本。
+更新 `mcp_config.json` 中的执行脚本为刚才创建的脚本。
 
 ![](img/f427f834939432568cf522d2fe333ab5.png)
 
-最后成功安装 markitdown-mcp 服务。
+最后成功安装 `markitdown-mcp` 服务。
 
-### 2.3使用 markitdown-mcp 服务转换文档
+### 2.3 使用 `markitdown-mcp` 服务转换文档
 
-> **Cursor 中输入提示词：**
+> **在 `Cursor` 中输入提示词：**
 
-> 查看原文件目录中已经有转换好的 markdown 格式的文档了。
+> 查看原文件目录中已经有转换好的 `Markdown` 格式的文档了。
 
 > 尝试了几个不同大小的文件，几 M 和几十 M 的文档都可以很好的转换。
 
 ![](img/b44f7e0d35971029ea691cdc3dd36911.png)
 
-再看一个图片转 markdown 的案例
+再看一个图片转 `Markdown` 的案例
 
-> 使用markitdown将下载目录中的“🛰️图片_2025-05-25_133959_147.jpg”转成 markdown格式
+> 使用 `markitdown` 将下载目录中的“🛰️图片_2025-05-25_133959_147.jpg”转成 `Markdown` 格式
 
 ![](img/297415fd1fb632747cd802a745e81105.png)
 
@@ -107,46 +108,46 @@
 - **来源**：微信（从文件名推测）
 ```
 
-## 3.集成到 Markdown 编辑器中
+## 3. 集成到 Markdown 编辑器中
 
-> Cursor 控件集成到 Markdown 编辑器的现有代码中。
+> `Cursor` 控件集成到 `Markdown` 编辑器的现有代码中。
 
-### **3.1定位插入点**
+### 3.1 定位插入点
 
-安装 v-md-editor
+安装 `v-md-editor`
 
-> 在项目中安装该依赖及其所需的主题和 PrismJS（用于代码高亮）
+> 在项目中安装该依赖及其所需的主题和 `PrismJS`（用于代码高亮）
 
 ```
 # 安装 v-md-editor 和 PrismJS
 npm install @kangc/v-md-editor prismjs
 ```
 
-此外，还需要安装一个主题包（例如 GitHub 主题）：
+此外，还需要安装一个主题包（例如 `GitHub` 主题）：
 
 ```
 npm install @kangc/v-md-editor/lib/theme/github.js
 ```
 
-### **3.2事件监听**
+### 3.2 事件监听
 
-在 Vue 项目的入口文件（如 main.js 或 main.ts）中进行全局配置。
+在 `Vue` 项目的入口文件（如 `main.js` 或 `main.ts`）中进行全局配置。
 
-```
+````
 // main.js
-import { createApp } from &#x27;vue&#x27;;
-import App from &#x27;./App.vue&#x27;;
+import { createApp } from 'vue';
+import App from './App.vue';
 
 // 引入 v-md-editor 与主题
-import VMdEditor from &#x27;@kangc/v-md-editor&#x27;;
-import githubTheme from &#x27;@kangc/v-md-editor/lib/theme/github.js&#x27;;
+import VMdEditor from '@kangc/v-md-editor';
+import githubTheme from '@kangc/v-md-editor/lib/theme/github.js';
 
 // 引入基本样式和主题样式
-import &#x27;@kangc/v-md-editor/lib/style/base-editor.css&#x27;;
-import &#x27;@kangc/v-md-editor/lib/theme/style/github.css&#x27;;
+import '@kangc/v-md-editor/lib/style/base-editor.css';
+import '@kangc/v-md-editor/lib/theme/style/github.css';
 
 // 引入 PrismJS 用于代码高亮
-import Prism from &#x27;prismjs&#x27;;
+import Prism from 'prismjs';
 
 // 使用主题和 PrismJS 进行初始化配置
 VMdEditor.use(githubTheme, {
@@ -155,109 +156,104 @@ VMdEditor.use(githubTheme, {
 
 const app = createApp(App);
 app.use(VMdEditor); // 全局注册 v-md-editor
-app.mount(&#x27;#app&#x27;);
+app.mount('#app');
+````
+
+### 3.3 样式调整
+
+在 Vue 组件中，使用 `v-md-editor` 非常简单。只需通过 `v-model` 双向绑定数据，即可实现编辑和预览功能。
 
 ```
+<template>
+  <div>
+    <h2>Markdown 编辑器示例</h2>
+    <!-- v-md-editor 组件支持设置编辑器高度、主题等属性 -->
+    <v-md-editor v-model="text" height="500px" />
+  </div>
+</template>
 
-### **3.3样式调整**
-
-在 Vue 组件中，使用 v-md-editor 非常简单。只需通过 v-model 双向绑定数据，即可实现编辑和预览功能。
-
-```
-&lt;template&gt;
-  &lt;div&gt;
-    &lt;h2&gt;Markdown 编辑器示例&lt;/h2&gt;
-    &lt;!-- v-md-editor 组件支持设置编辑器高度、主题等属性 --&gt;
-    &lt;v-md-editor v-model=&quot;text&quot; height=&quot;500px&quot; /&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-
-&lt;script setup&gt;
-import { ref } from &#x27;vue&#x27;;
+<script setup>
+import { ref } from 'vue';
 
 // 初始化编辑器内容
 const text = ref(`# 欢迎使用 Markdown 编辑器
 
 这是一个基于 Vue 3 的 Markdown 编辑器示例，支持实时预览与代码高亮功能。`);
-&lt;/script&gt;
+</script>
 
-&lt;style scoped&gt;
+<style scoped>
 h2 {
   margin-bottom: 16px;
 }
-&lt;/style&gt;
-
+</style>
 ```
 
 > **在上述代码中：**
 
-+   通过 v-model 将编辑器的内容绑定到 text 变量，实时更新数据；
++   通过 `v-model` 将编辑器的内容绑定到 `text` 变量，实时更新数据；
 
-+   通过 height 属性设置编辑器的显示高度，可以根据需求自定义其他配置项。
++   通过 `height` 属性设置编辑器的显示高度，可以根据需求自定义其他配置项。
 
-## 4.第一个 Markdown 文件: Hello World!
+## 4. 第一个 Markdown 文件: Hello World!
 
-### 4.1新建笔记工作区
+### 4.1 新建笔记工作区
 
-**例如, 在 D ****盘创建了一个文件夹 D:****\Notes, ****那么工作**区就是这个 D:\Notes 文件夹
+**例如，在 `D:` 盘创建了一个文件夹 `D:\Notes`，那么工作区就是这个 `D:\Notes` 文件夹**
 
 ![](img/51d832d788c38cb9bc41b72292a9b572.png)
 
-### 4.2在工作区子笔记文件夹
+### 4.2 在工作区子笔记文件夹
 
-**将笔记按照不同的课程放在不同的文件夹下, 比如在 Markdo****wn 学习**中, 可以先新建一个文件夹叫 Learn
+**将笔记按照不同的课程放在不同的文件夹下，比如在 `Markdown` 学习中，可以先新建一个文件夹叫 `Learn`**
 
 ![](img/c074c787cca10cc64972c234250b048f.png)
 
 ![](img/45a484b93a472c92c0ca27cd88d3e284.png)
 
-**新建一个文件, 命名为 ****test.md****, 注意后缀一定要是 ****.md**
+**新建一个文件，命名为 `test.md`，注意后缀一定要是 `.md`**
 
 ![](img/68a686fb15b81a4d2357b3d14c96818a.png)
 
-### 4.3写下第一行 Markdown 笔记
+### 4.3 写下第一行 Markdown 笔记
 
-**输入笔记内容:**
+**输入笔记内容：**
 
 ```
 # Hello, World!
 ```
 
-(注意, # 和 文本之间要加入空格!)
+（注意，`#` 和文本之间要加入空格！）
 
-**然后按照先后顺序按下快捷键 ****Ctrl + K, V**, 然后在右边就会出现预览窗口.
+**然后按照先后顺序按下快捷键 `Ctrl + K, V`，然后在右边就会出现预览窗口。**
 
-> (注意, 快捷键按下时要连贯, 并且按下 V 的同时不用按 Ctrl 键!)
+> （注意，快捷键按下时要连贯，并且按下 `V` 的同时不用按 `Ctrl` 键！）
 
-![](img/64ae5e867c057b2e383b0ea2767a5a4a.png)
+如果正常地显示出了标题 "Hello, World!"，那么恭喜你，第一个 Markdown 笔记写成功了！
 
-如果正常地显示出了标题 "Hello, World!", 那么恭喜你, 第一个 Markdown 笔记写成功了!
+## 5. 修改预览窗口背景
 
-## 5.修改预览窗口背景
+> **按下快捷键 `Ctrl + ,`，就会打开设置窗口。**
 
-> **按下快捷键 ****Ctrl + ,****, 就会打开设置窗口。**
-
-> 在搜索框输入 Preview Theme, 看见标题为 Preview Theme 的选项, 在下拉框中选择 atom-dark.css, 就能让预览窗口的颜色改变了。
+> 在搜索框输入 `Preview Theme`，看见标题为 `Preview Theme` 的选项，在下拉框中选择 `atom-dark.css`，就能让预览窗口的颜色改变了。
 
 ![](img/55f272b379964fb4e32f5dc8415c0190.png)
 
-## 6.Markdown 语法
+## 6. Markdown 语法
 
-**纯粹的 Markdown 语法其实非**常简单, 70 行的语法介绍就可以写完.
-
+**纯粹的 Markdown 语法其实非常简单，70 行的语法介绍就可以写完。**
 
 ![图片提示语](图片地址)
 
-```
+````
 # 一级标题
 
 ## 二级标题
 
 ### 三级标题
 
-每写完一个段落要隔一行空行.
+每写完一个段落要隔一行空行。
 
-就像这样, 隔了一行空行.
+就像这样，隔了一行空行。
 
 ---
 
@@ -271,7 +267,7 @@ h2 {
 
 ---
 
-列表:
+列表：
 
 * 无序列表
   * 嵌套无序列表
@@ -287,30 +283,31 @@ h2 {
 
 ---
 
-引用文本:
+引用文本：
 
-&gt; 引用别人说的话
-&gt; 就这样写
-&gt; By. OrangeX4
+> 引用别人说的话
+> 就这样写
+> By. OrangeX4
 
 ---
 
-这是 `行内代码` 语法.
+这是 `行内代码` 语法。
 
-代码块语法:
+代码块语法：
 
-&#x27;&#x27;&#x27; python
-print(&quot;Hello, World!&quot;)
-&#x27;&#x27;&#x27;
+```python
+print("Hello, World!")
+```
 
-请将 &#x27; 替换成 `.
+请将 `'` 替换成反引号。
 
 ---
 
 [超链接名称](链接地址)
+
 ---
 
-表格:
+表格：
 
 | 表头 | 表头 |
 | ---- | ---- |
@@ -319,18 +316,18 @@ print(&quot;Hello, World!&quot;)
 
 ---
 
-注释:
-```
+注释：
+````
 
-> **快捷键:**
+> **快捷键：**
 
-> 选中文本之后, 按下 Ctrl + B 可以给选中文本加粗.
+> 选中文本之后，按下 `Ctrl + B` 可以给选中文本加粗。
 
-> 同理 Ctrl + I 可以让选中文本变为斜体.
+> 同理 `Ctrl + I` 可以让选中文本变为斜体。
 
-### 6.1列表
+### 6.1 列表
 
-列表是记笔记时非常基本的元素, 在 Markdown 中, 可以用很方便的格式书写列表:
+列表是记笔记时非常基本的元素，在 Markdown 中，可以用很方便的格式书写列表：
 
 ```
 * 无序列表
@@ -346,10 +343,10 @@ print(&quot;Hello, World!&quot;)
 3. 有序列表 3
 ```
 
-Markdown Preview Enhanced 拓展功能:
+Markdown Preview Enhanced 拓展功能：
 
 ```
-任务列表:
+任务列表：
 
 - [x] 已经完成的事 1
 - [x] 已经完成的事 2
@@ -360,91 +357,89 @@ Markdown Preview Enhanced 拓展功能:
 
 ![](img/919f06d52fdf9f3c7de3e76be61f837b.png)
 
-> **快捷键:**
+> **快捷键：**
 
-> 要进行缩进 (书写嵌套列表), 你可以使用 VS Code 的快捷键 Ctrl + [ 和 Ctrl + ].
+> 要进行缩进（书写嵌套列表），你可以使用 `VS Code` 的快捷键 `Ctrl + [` 和 `Ctrl + ]`。
 
-> 这个快捷键可以将代码向左或向右进行缩进!
+> 这个快捷键可以将代码向左或向右进行缩进！
 
-### 6.2引用和代码
+### 6.2 引用和代码
 
-```
-引用文本:
+````
+引用文本：
 
-&gt; 引用别人说的话
-&gt; 就这样写
-&gt; By. OrangeX4
+> 引用别人说的话
+> 就这样写
+> By. OrangeX4
 
-这是 `行内代码` 语法.
+这是 `行内代码` 语法。
 
-代码块语法:
+代码块语法：
 
-&#x27;&#x27;&#x27; python
-print(&quot;Hello, World!&quot;)
-&#x27;&#x27;&#x27;
-
-注意要将 &#x27; 替换成 `.
+```python
+print("Hello, World!")
 ```
 
-Markdown Preview Enhanced 拓展功能:
+注意要将 `'` 替换成反引号。
+````
 
-```
-代码行数的显示:
+Markdown Preview Enhanced 拓展功能：
 
-&#x27;&#x27;&#x27; javascript {.line-numbers}
+````
+代码行数的显示：
+
+```javascript {.line-numbers}
 function add(x, y) {
   return x + y
 }
-&#x27;&#x27;&#x27;
-
-注意要将 &#x27; 替换成 `.
 ```
 
-### 6.3超链接和图片
+注意要将 `'` 替换成反引号。
+````
 
-可以用下面的语法插入超链接和图片:
+### 6.3 超链接和图片
 
+可以用下面的语法插入超链接和图片：
 
 ![图片提示语](图片地址)
 
-
-![OrangeX&#x27;s Avatar](images/profile.jpg)
+![OrangeX's Avatar](images/profile.jpg)
 
 ```
 [超链接名称](链接地址)
-例如, 可以使用网址和图床:
+例如，可以使用网址和图床：
 
-[OrangeX4&#x27;s Blog]
+[OrangeX's Blog]
 
-![OrangeX&#x27;s Avatar]
+![OrangeX's Avatar]
 
-也可以在本地用相对地址:
+也可以在本地用相对地址：
 
 [Other](other.md)
 ```
 
-### 6.4剪贴板图片插入
+### 6.4 剪贴板图片插入
 
-> **在使用之前, 要做一点小调整:**
+> **在使用之前，要做一点小调整：**
 
-> 按下 Ctrl + , 打开设置窗口, 输入 Paste Image Path 并搜索, 将框内的文本改成 ${currentFileDir}/images.
+> 按下 `Ctrl + ,` 打开设置窗口，输入 `Paste Image Path` 并搜索，将框内的文本改成 `${currentFileDir}/images`。
 
 ![](img/05b97356077f376a4fb3b68597923e10.png)
 
-注意标题是 Paste Image: Path, 不要弄错了!
+注意标题是 `Paste Image: Path`，不要弄错了！
 
-设置好之后, 就可以使用剪贴板粘贴功能了!
+设置好之后，就可以使用剪贴板粘贴功能了！
 
-> 按下快捷键 Ctrl + Alt + V,
+> 按下快捷键 `Ctrl + Alt + V`，
 
-> 就能把图片自动保存到当前目录下, 并以正确的格式粘贴到当前的 Markdown 文件中.
+> 就能把图片自动保存到当前目录下，并以正确的格式粘贴到当前的 Markdown 文件中。
 
-### 6.5表格
+### 6.5 表格
 
-可以很方便地在做笔记的时候加入表格:
+可以很方便地在做笔记的时候加入表格：
 
 ```
-表格:
+表格：
 
 | 表头 | 表头 |
 | ---- | ---- |
@@ -452,15 +447,15 @@ function add(x, y) {
 | 内容 | 内容 |
 ```
 
-Markdown Preview Enhanced 拓展功能:
+Markdown Preview Enhanced 拓展功能：
 
 ```
-拓展语法:
+拓展语法：
 
 | 表头 | 表头 |
 | ---- | ---- |
 | 内容 | 内容 |
-| &gt;    | 内容 |
+| >    | 内容 |
 
 | 表头 | 表头 |
 | ---- | ---- |
@@ -470,43 +465,43 @@ Markdown Preview Enhanced 拓展功能:
 
 ![](img/5363c9536366bfd0daffaee1c019ea5c.png)
 
-> **快捷键:**
+> **快捷键：**
 
-> 自动表格对齐: Shift + Alt + F
+> 自动表格对齐：`Shift + Alt + F`
 
-### 6.6注释
+### 6.6 注释
 
-> **注释不会被渲染出来.**
+> **注释不会被渲染出来。**
 
-> 可以随手做点草稿, 如果还想保留着, 但是不显示, 就可以按下快捷键 Ctrl + \ 将当前行注释 / 反注释。
-
-```
-注释:
-
-&lt;!-- 你看不见我 --&gt;
-
-&lt;!-- 多行注释
-就像这样 --&gt;
-```
-
-有一点很重要的就是, VS Code 会在每次修改代码之后, 重新渲染一遍
-
-> 如果有很多很多的数学公式, 渲染会很慢, 这时候有两个建议:
-
-+   分成多个文件, 避免单文件过大!
-
-+   将你暂时不看的部分注释掉, 加快渲染速度!
-
-## 7.数学公式支持
-
-Markdown 的数学公式吸纳了大部分的 Latex 语法, 可以以一种简单的方式在 VS Code 中书写数学公式
+> 可以随手做点草稿，如果还想保留着，但是不显示，就可以按下快捷键 `Ctrl + \` 将当前行注释 / 反注释。
 
 ```
-行内公式: 
+注释：
+
+<!-- 你看不见我 -->
+
+<!-- 多行注释
+就这样 -->
+```
+
+有一点很重要的就是，`VS Code` 会在每次修改代码之后，重新渲染一遍
+
+> 如果有很多很多的数学公式，渲染会很慢，这时候有两个建议：
+
++   分成多个文件，避免单文件过大！
+
++   将你暂时不看的部分注释掉，加快渲染速度！
+
+## 7. 数学公式支持
+
+Markdown 的数学公式吸纳了大部分的 `LaTeX` 语法，可以以一种简单的方式在 `VS Code` 中书写数学公式
+
+```
+行内公式：
 
 单位圆 $x^2+y^2=1$
 
-公式块:
+公式块：
 
 $$
 \begin{cases}
@@ -518,15 +513,15 @@ $$
 
 ![](img/87274b9974e2fe53e37182815d83a381.png)
 
-**V**S Code 有着非常便捷好用的自动补全功能, 只需要简单地打出你想打的内容的几个字母 (乱序也行)。
+**`VS Code`** 有着非常便捷好用的自动补全功能，只需要简单地打出你想打的内容的几个字母（乱序也行）。
 
-> 再使用 ↑ ↓ 进行选择, 最后按下回车就可以打出你想要的内容。再使用 HyperSnips 插件, 就能够写得飞快。
+> 再使用 `↑ ↓` 进行选择，最后按下回车就可以打出你想要的内容。再使用 `HyperSnips` 插件，就能够写得飞快。
 
 ![](img/a5e63f49029372ed0ba7616d98e2b78a.png)
 
-**还有, 不要在公式****内使用中文, 除非**是 \text{中文} (但是也不推荐)
+**还有，不要在公式内使用中文，除非是** `\text{中文}`**（但是也不推荐）**
 
-### 7.1上标和下标
+### 7.1 上标和下标
 
 ```
 上标 $x^2 + y^{12} = 1$
@@ -534,18 +529,22 @@ $$
 上标 $x_1 + y_{12} = 1$
 ```
 
-HyperSnips 自动扩展：
+`HyperSnips` 自动扩展：
+
+
+
+### 7.1上标和下标
 
 ```
-xsr  =&gt;  x^{2}
+xsr  =>  x^{2}
 
-xtp  =&gt;  x^{...}
+xtp  =>  x^{...}
 
-x1  =&gt;  x_1
+x1  =>  x_1
 
-xii  =&gt;  x_i
+xii  =>  x_i
 
-xsb  =&gt;  x_{...}
+xsb  =>  x_{...}
 ```
 
 ### 7.2分式
@@ -556,18 +555,18 @@ xsb  =&gt;  x_{...}
 展示型的分式 $\displaystyle\frac{x+1}{x-1}$
 ```
 
-其中 \displaystyle 用于将行内展示转为块状展示.
+其中 `\displaystyle` 用于将行内展示转为块状展示.
 
 ![](img/b40d70d1b8e47e84de1a2ea8aa25d60e.png)
 
 HyperSnips 自动扩展：
 
 ```
-1/  =&gt;  \frac{1}{...}
+1/  =>  \frac{1}{...}
 
-(1 + 2)/  =&gt;  \frac{(1+2)}{...}
+(1 + 2)/  =>  \frac{(1+2)}{...}
 
-//  =&gt;  \frac{...}{...}
+//  =>  \frac{...}{...}
 ```
 
 ### 7.3根式
@@ -583,7 +582,7 @@ HyperSnips 自动扩展：
 HyperSnips 自动扩展：
 
 ```
-hsq  =&gt;  \sqrt{...}
+hsq  =>  \sqrt{...}
 ```
 
 ### 7.4空格
@@ -621,20 +620,20 @@ quad 空格 $a\quad b$
 HyperSnips 自动扩展：
 
 ```
-sum  =&gt;  \sum_{...}
+sum  =>  \sum_{...}
 
-prod  =&gt;  \prod_{&lt;n=1&gt;}^{&lt;\infty&gt;} ...
+prod  =>  \prod_{<n=1>}^{<\infty>} ...
 
-int  =&gt;  \int
+int  =>  \int
 
-dint  =&gt;  \int_{&lt;-\infty&gt;}^{&lt;\infty&gt;} ... \mathrm{d}x
+dint  =>  \int_{<-\infty>}^{<\infty>} ... \mathrm{d}x
 ```
 
-Tips：按下 Tab 键可以跳转光标。
+Tips：按下 `Tab` 键可以跳转光标。
 
 ### 7.6括号修饰
 
-**用 ****\left**** 和 ****\right**** 可以让括号适配内部大小**
+**用 `\left` 和 `\right` 可以让括号适配内部大小**
 
 ```
 圆括号 $\displaystyle \left(\sum_{k=1}^{n}\frac{1}{k} \right)^2$
@@ -651,15 +650,15 @@ Tips：按下 Tab 键可以跳转光标。
 HyperSnips 自动扩展：
 
 ```
-@(  =&gt;  \left( ... \right)
+@(  =>  \left( ... \right)
 
-@[  =&gt;  \left[ ... \right]
+@[  =>  \left[ ... \right]
 
-@{  =&gt;  \left\{ ... \right\}
+@{  =>  \left\{ ... \right\}
 
-@&lt;  =&gt;  \left&lt; ... \right&gt;
+@<  =>  \left< ... \right>
 
-set  =&gt;  \{ ... \}
+set  =>  \{ ... \}
 ```
 
 ### 7.7多行算式对齐
@@ -669,9 +668,9 @@ set  =&gt;  \{ ... \}
 
 $$
 \begin{aligned}
-y &amp;=(x+5)^2-(x+1)^2 \\
-&amp;=(x^2+10x+25)-(x^2+2x+1) \\
-&amp;=8x+24 \\
+y &=(x+5)^2-(x+1)^2 \\
+&=(x^2+10x+25)-(x^2+2x+1) \\
+&=8x+24 \\
 \end{aligned}
 $$
 
@@ -679,9 +678,9 @@ $$
 
 $
 \begin{aligned}
-y &amp;=(x+5)^2-(x+1)^2 \\
-&amp;=(x^2+10x+25)-(x^2+2x+1) \\
-&amp;=8x+24 \\
+y &=(x+5)^2-(x+1)^2 \\
+&=(x^2+10x+25)-(x^2+2x+1) \\
+&=8x+24 \\
 \end{aligned}
 $
 ```
@@ -691,15 +690,15 @@ $
 HyperSnips 自动扩展：
 
 ```
-ali  =&gt;
+ali  =>
 \begin{aligned}
 ... \\
 \end{aligned}
 ```
 
-**如果安装了 ****Bett**er Markdown & Latex Shortcuts 插件。
+如果安装了 `Better Markdown & Latex Shortcuts` 插件。
 
-> 还可以按下 Shift + Ctrl + Alt + C 可以将行公式转为 aligned 环境。
+> 还可以按下 `Shift + Ctrl + Alt + C` 可以将行公式转为 `aligned` 环境。
 
 ### 7.8方程组
 
@@ -719,7 +718,7 @@ $$
 HyperSnips 自动扩展：
 
 ```
-case  =&gt;
+case  =>
 \begin{cases}
 ... \\
 \end{cases}
@@ -732,19 +731,19 @@ case  =&gt;
 
 $$
 \begin{pmatrix}
-1 &amp; 1 &amp; \cdots &amp; 1 \\
-1 &amp; 1 &amp; \cdots &amp; 1 \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-1 &amp; 1 &amp; \cdots &amp; 1 \\
+1 & 1 & \cdots & 1 \\
+1 & 1 & \cdots & 1 \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & 1 & \cdots & 1 \\
 \end{pmatrix}
 
 \quad
 
 \begin{bmatrix}
-1 &amp; 1 &amp; \cdots &amp; 1 \\
-1 &amp; 1 &amp; \cdots &amp; 1 \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-1 &amp; 1 &amp; \cdots &amp; 1 \\
+1 & 1 & \cdots & 1 \\
+1 & 1 & \cdots & 1 \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & 1 & \cdots & 1 \\
 \end{bmatrix}
 $$ 
 
@@ -752,10 +751,10 @@ $$
 
 $$
 \begin{vmatrix}
-1 &amp; 1 &amp; \cdots &amp; 1 \\
-1 &amp; 1 &amp; \cdots &amp; 1 \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-1 &amp; 1 &amp; \cdots &amp; 1 \\
+1 & 1 & \cdots & 1 \\
+1 & 1 & \cdots & 1 \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & 1 & \cdots & 1 \\
 \end{vmatrix}
 $$
 ```
@@ -765,21 +764,21 @@ $$
 HyperSnips 自动扩展：
 
 ```
-bmat2  =&gt;  \begin{bmatrix} ... &amp; ... \\ ... &amp; ... \\\end{bmatrix}
+bmat2  =>  \begin{bmatrix} ... & ... \\ ... & ... \\\end{bmatrix}
 
-vec2  =&gt;  \begin{pmatrix} ... \\ ... \\\end{pmatrix}
+vec2  =>  \begin{pmatrix} ... \\ ... \\\end{pmatrix}
 ```
 
-tips：按下 Tab 键可以切换到下一个位置。
+tips：按下 `Tab` 键可以切换到下一个位置。
 
 ## 8.特殊字符
 
 ![](img/bec2e8e52d6f1f06f37e301953810b55.png)
 
 ```
-alpha  =&gt;  \alpha
+alpha  =>  \alpha
 
-Sigma  =&gt;  \Sigma
+Sigma  =>  \Sigma
 ```
 
 ### 8.1公式编号与引用
@@ -812,68 +811,66 @@ $$
 左小箭头 $\leftarrow$, 右小箭头 $\rightarrow$, 
 左大箭头, 右大箭头, 右长箭头 $\xrightarrow[fgh]{abcde}$.
 属于 $\in$, 包含于 $\subset$, 真包含于 $\subseteq$, 交 $\cap$, 并 $\cup$, 空集 $\empty$
-短向量 $\vec{x}$, 长向量 $\overrightarrow{AB}$, 
-上横线 $\overline{p}$.
-无限 $\infty$, 极限 $\lim$, 微分 ${\rm d}$, 偏导 $\partial$, 
-点求导 $\dot{y}$, 点二阶导 $\ddot{y}$, 变化量 $\Delta$, 梯度 $\nabla$.
-横省略 $\cdots$, 竖省略 $\vdots$, 斜省略 $\ddots$.
-常见函数 $\sin$, $\cos$, $\tan$, $\arcsin$, 
-$\arccos$, $\arctan$, $\ln$, $\log$, $\exp$.
+短向量 $\vec{x}`, 长向量 $\overrightarrow{AB}`, 
+上横线 $\overline{p}`.
+无限 $\infty`, 极限 $\lim`, 微分 ${\rm d}`, 偏导 $\partial`, 
+点求导 $\dot{y}`, 点二阶导 $\ddot{y}`, 变化量 $\Delta`, 梯度 $\nabla`.
+横省略 $\cdots`, 竖省略 $\vdots`, 斜省略 $\ddots`.
+常见函数 $\sin$, $\cos`, $\tan`, $\arcsin`, 
+$\arccos`, $\arctan`, $\ln`, $\log`, $\exp`.
 ```
-
-![](img/67cb498bbb8c32b9f88ac4da691c27ab.png)
 
 HyperSnips 自动扩展：
 
 ```
-**  =&gt;  \cdot
-xx  =&gt;  \times
-otimes  =&gt;  \otimes
-&lt;=  =&gt;  \le
-!=  =&gt;  \neq
-==  =&gt;  \equiv
-~~  =&gt;  \thickapprox
-sim  =&gt;  \sim
-land  =&gt;  \land
-lor  =&gt;  \lor
-bec  =&gt;  \because
-thr  =&gt;  \therefore
-EE  =&gt;  \exists
-AA  =&gt;  \forall
-inn  =&gt;  \in
-sse  =&gt;  \subseteq
-sqs  =&gt;  \sqsubseteq
-cap  =&gt;  \cap
-cup  =&gt;  \cup
-empty  =&gt;  \empty
-oo  =&gt;  \infty
-lim  =&gt;  \lim_{&lt;n&gt; \to &lt;\infty&gt;}
-dd  =&gt;  \mathrm{d}
-part  =&gt;  \frac{\partial &lt;V&gt;}{\partial &lt;x&gt;}
-Delta  =&gt;  \Delta
-nabla  =&gt;  \nabla
-...  =&gt;  \cdots
-sin  =&gt;  \sin
+**  =>  \cdot
+xx  =>  \times
+otimes  =>  \otimes
+<=  =>  \le
+!=  =>  \neq
+==  =>  \equiv
+~~  =>  \thickapprox
+sim  =>  \sim
+land  =>  \land
+lor  =>  \lor
+bec  =>  \because
+thr  =>  \therefore
+EE  =>  \exists
+AA  =>  \forall
+inn  =>  \in
+sse  =>  \subseteq
+sqs  =>  \sqsubseteq
+cap  =>  \cap
+cup  =>  \cup
+empty  =>  \empty
+oo  =>  \infty
+lim  =>  \lim_{<n> \to <\infty>}
+dd  =>  \mathrm{d}
+part  =>  \frac{\partial <V>}{\partial <x>}
+Delta  =>  \Delta
+nabla  =>  \nabla
+...  =>  \cdots
+sin  =>  \sin
 ```
 
 还有特别重要的数集、向量、矩阵符号：
 
 ```
-RR  =&gt;  \mathbb{R}
-NN  =&gt;   \mathbb{N}
-txt  =&gt;  \text{...}
-xbar  =&gt;  \bar{x}
-xhat  =&gt;  \hat{x}
-xhvec  =&gt;  \vec{x}
-xhdot  =&gt;  \dot{x}
-Xbb  =&gt;  \mathbb{X}
-Xbs  =&gt;  \boldsymbol{X}
-Xbm  =&gt;  \bm{X}
-Xbf  =&gt;  \mathbf{X}
-Xsf  =&gt;  \mathsf{X}
-Xcal  =&gt;  \mathcal{X}
-Xfrak  =&gt;  \mathfrak{X}
-Xrm  =&gt;  \mathrm{X}
+RR  =>  \mathbb{R}
+NN  =>   \mathbb{N}
+txt  =>  \text{...}
+xbar  =>  \bar{x}
+xhat  =>  \hat{x}
+xhvec  =>  \vec{x}
+xhdot  =>  \dot{x}
+Xbb  =>  \mathbb{X}
+Xbs  =>  \boldsymbol{X}
+Xbm  =>  \bm{X}
+Xbf  =>  \mathbf{X}
+Xsf  =>  \mathsf{X}
+Xcal  =>  \mathcal{X}
+Xfrak  =>  \mathfrak{X}
+Xrm  =>  \mathrm{X}
 ```
 
 ## 9.输出为 PDF

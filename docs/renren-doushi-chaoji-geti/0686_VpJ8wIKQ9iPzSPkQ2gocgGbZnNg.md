@@ -1,8 +1,9 @@
+
 # YT shorts 复盘——动物赛道的爆点因子分析及提示词模板
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/W6fYdvWp9owtbjxvbUkcGrkQn2g](https://xuqiwei1986.feishu.cn/docx/W6fYdvWp9owtbjxvbUkcGrkQn2g)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/W6fYdvWp9owtbjxvbUkcGrkQn2g`
 
-# 引言
+## 引言
 
 大家好，我是逸凡风顺，12 月 YouTube 航海的一份子。从 YouTube 航海开始到现在，我的心路变化历程是这样的：兴奋——实操——怀疑——激动——焦虑——信心十足，因为在 12 月 YouTube shorts 航海开始前后那几天，我选择了不同的赛道作为尝试，因为之前是做内容出身的，所以我在看完老马教练分享的《YouTube Shorts 赛道选择与收益解读》后，我选择了自己擅长的解说类 shorts，但类型区别于老马教练在文章中举例的那些赛道——工厂解说赛道，流量还可以，第一条视频就取得了 4 万多的观看量，后续视频流量均破万播，但好景不长，在三四天后，账号直接 0 播，不论是新内容还是之前的内容都停止推荐。在持续坚持了几天 0 播后，第一个频道就此卒了。在重新看了赚钱所有有关 YouTube 的帖子后，发现自己忽略了一个点，
 
@@ -10,21 +11,21 @@
 
 龙哥大佬发布的超级风向标是《通过 AI 生成的各种视频，上传到 YouTube 和 shorts，获取广告分成。生性爱钱的我只看到广告和分成字样，却没注意到 AI 生成。介于自己本身就有想学习 AI 有关的技能，何不借着这次航海学习一下这些 AI 应用呢，于是我的第一个 AI shorts 赛道开始了。
 
-# Shorts AI 赛道的选择
+## Shorts AI 赛道的选择
 
-## 个人数据分享
+### 个人数据分享
 
-在开始赛道解析之前，先汇报一下我在航海期间取得的成绩，航海期间，AIshorts 赛道，取得 8 天达到初级 ypp 标准，18 天达到高级 ypp 标准，最高视频播放量为 3470 万左右。收获粉丝 18 万＋，总流量应该在 6000 万＋（没具体细算）。收入就先不晒了，因为踩了许多坑，导致没能获取到太多收益，这些会在后续提到。
+在开始赛道解析之前，先汇报一下我在航海期间取得的成绩，航海期间，AIshorts 赛道，取得 8 天达到初级 `ypp` 标准，18 天达到高级 `ypp` 标准，最高视频播放量为 3470 万左右。收获粉丝 18 万＋，总流量应该在 6000 万＋（没具体细算）。收入就先不晒了，因为踩了许多坑，导致没能获取到太多收益，这些会在后续提到。
 
 ![](img/7e9c84fab532b8aa06480a71d73acd9a.png)
 
 ![](img/a80fdafee28175e2f73ba5b02eac3d22.png)
 
-## 赛道选择——AI 动物警告
+### 赛道选择——AI 动物警告
 
-其实在看了方波妮教练的[《](https://pa7l8baqg83.feishu.cn/docx/W2tdde1c5ohZyexGXgVcYDPHnte)YouTube Shorts 项目实操：从 0 到 1 跑通账号，12 天收获 2700+订阅与 90 万+播放》
+其实在看了方波妮教练的[《YouTube Shorts 项目实操：从 0 到 1 跑通账号，12 天收获 2700+订阅与 90 万+播放》](`https://pa7l8baqg83.feishu.cn/docx/W2tdde1c5ohZyexGXgVcYDPHnte`)
 
-圈友竹子的[《YouTube Shorts 实操指南：AI](https://scys.com/articleDetail/xq_topic/2858241885558511) 宝宝走秀与 Magic 变身视频制作》
+圈友竹子的[《YouTube Shorts 实操指南：AI 宝宝走秀与 Magic 变身视频制作》](`https://scys.com/articleDetail/xq_topic/2858241885558511`)
 
 老马教练《YouTube Shorts 赛道选择与收益解读》
 
@@ -32,11 +33,11 @@
 
 ![](img/9165cd7b56ed734028d1564264a400cc.png)
 
-[12月8日火烈鸟.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5AybvsKUorimNxQFWIcTAtqn1c)
+[`12月8日火烈鸟.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5AybvsKUorimNxQFWIcTAtqn1c`)
 
 ![](img/9f66984762923d32d6b324692fbd6011.png)
 
-[12月8日大公鸡.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UOp4bO8JYopdVOxZxUGcS5Qjnmf)
+[`12月8日大公鸡.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UOp4bO8JYopdVOxZxUGcS5Qjnmf`)
 
 于是，我决定找个自己能做下去视频的赛道，在胡乱刷了几天油管后，我看到了第一个对标账号：快乐探险家
 
@@ -50,23 +51,23 @@
 
 并且，我制作视频的过程中，我逐渐找出了我自己认为这个赛道的爆款因子。
 
-## 爆款因子分析：
+### 爆款因子分析：
 
 在 AI 动物示警，AI 动物救援这些赛道中，这类视频主打的就是激发用户的同情心以及情绪共鸣的价值，这个国内外都一样，只要情绪到位，流量不是问题，但这个赛道本身就是拿捏的这个情绪点。为什么有的视频有流量，有的视频就是不爆呢？
 
 我从卡万播就几十万，几十万，几千万流量的提升过程中，分析了一下我个人认为的爆款因子。现做一些分析，供圈友参考。
 
-### 色彩度
+#### 色彩度
 
 在反复观看对标，以及自己视频第一次突破流量限制后，我得出的结论是，之所以对标账号流量高，我自己总是卡万播，是因为我的视频一眼就能看出是 AI 做的，而对标账号的视频几乎可以做到以假乱真。放两个视频大家对比一下就能看出区别。
 
 ![](img/d010ccb3858abb3ed41b636765f60bbf.png)
 
-[12月13日金毛救人.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LnMubcwreoH2z6xfz8Ecym0Enxh)
+[`12月13日金毛救人.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LnMubcwreoH2z6xfz8Ecym0Enxh`)
 
 ![](img/c73c36ee2ea90c4131797fa9806c66e8.png)
 
-[杜兵犬.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A5clbwPFsoduffxl7ETcUhToncZ)
+[`杜兵犬.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A5clbwPFsoduffxl7ETcUhToncZ`)
 
 第一个视频是 2.6 万播放，第二个视频是 3400 多万播放，除去运气成分外，我认为第二个视频之所以流量好是画面色彩度，更能让用户误以为这不是 AI 做的，评论区的评论也验证了这一猜想，因为这类视频的评论很少，一旦视频爆了，大部分评论都是分享他们亲身经历过的动物示警。
 
@@ -80,13 +81,13 @@
 
 ![](img/358a14c986579f1eba7c629ec8eb901b.png)
 
-### 真实性
+#### 真实性
 
-#### 文生图真实性
+##### 文生图真实性
 
 跟爆款因子一有关系，但这一点体现在多个环节，包括文生图，包括图生视频，在第一步文生图中，合理的调整提示词，选择不同的绘图工具后，生成的图片是不一样的，后续我会给大家分享我自己用到的软件。
 
-#### 图生视频真实性
+##### 图生视频真实性
 
 在文生图环节中保证了分镜头图片质量后，接下来便是图生视频的环节，图生视频环节的真实性，我的理解就是，主体运动符合自然规律，比如狗狗奔跑，蹦跳，攀爬等肢体动作，如果生成的动作很连贯，但动作过于僵硬或者明显的感受到是计算机生成，也就是AI痕迹明显，这样的视频一般不建议使用。
 
@@ -94,7 +95,7 @@
 
 当然，也有人专门玩抽象派，就是故意保留这些 AI 生成离谱镜头作为视频的槽点，进而诱导用户评论。这里自行选择，要真实就一直真实下去，要抽象就一直抽象下去。
 
-### 适量的特写镜头
+##### 适量的特写镜头
 
 在经过一些视频验证过后，我发现，适当加入一些特写/近距离镜头，会让视频有不一样的效果，我一般会将动物异常举动的分镜头生成一些特写镜头，或者将镜头距离适当的拉近一下，这样不论是图生视频的视频质量还是视频整体的效果都会有意想不到的效果。这里放两张图片大家感受一下，近距离的好像更容易有代入感。
 
@@ -104,45 +105,45 @@
 
 ![](img/33c79e6618d31ad64f6a0f3c170c0de4.png)
 
-### 清晰度
+##### 清晰度
 
 一般来说，可能有部分圈友已经发现，明明自己生成的图片已经很清晰了，甚至都是超清画质，可为什么到了完整的成品出来后，却发现视频看着有一种说不出来的模糊感，而这个问题并不是出在图片上了。在我自己实操中也遇到过这些问题。
 
 排除掉图片清晰度问题后，在图生视频和剪辑的过程中会造成视频成品画质看起来差。
 
-#### 图生视频阶段：
+###### 图生视频阶段：
 
 其中图生视频这一块，因为不同家的模型它推理的模型也不同，有些会在推理过程中就自动将生成的视频画质损失掉一些，因为图生视频的模型不会因为你图片是4k的就给你输出4k画质的，高清的图片只是为了让模型能够更好的识别和推理提示词。
 
-大多都是720或者1080，但有些平台会对会员开放更高画质的选择，如可灵（35灵感值的）、即梦开会员可选择高画质，智谱清言（开会员）在这个过程中，所以要根据自己能接受的价格去选择画质损失相对较少的平台。
+大多都是720或者1080，但有些平台会对会员开放更高画质的选择，如`可灵 AI`（35灵感值的）、`即梦`开会员可选择高画质，`智谱清言`（开会员）在这个过程中，所以要根据自己能接受的价格去选择画质损失相对较少的平台。
 
-#### 剪辑阶段
+###### 剪辑阶段
 
 在生成每个分镜头的片段视频后，接下来就是配音效和剪辑了，而这个过程中，本身是不怎么影响画质的，哪怕为了去掉左下角或者右下角的水印，一般画面放大到105%左右，再通过调节y轴位置，一般-70到-80左右。也不会让画面看起来很糊，而最重要的就是导出时候的一些参数
 
-这里以剪映为例，我建议是4k60帧导出，码率按照推荐即可。
+这里以`剪映`为例，我建议是4k60帧导出，码率按照推荐即可。
 
 ![](img/ca93455b6ce5c2794813186659f99f94.png)
 
-### 分镜头结构
+##### 分镜头结构
 
 我目前采用的是5-6个分镜头组合，即动物拦车+动物与车的互动（中景镜头，车外角度）+动物与车的互动（近景特写镜头、车内向车外拍摄角度）+灾难镜头（画面中主体车辆和动物二者选其一）+动物近景特写镜头（可选）+温馨时刻。这样的结构去制作的。这样基本在剪辑过程中保证视频时长在22-26秒这样的区间。
 
-# 创作过程中的 AI 工具及使用心得
+## 创作过程中的 AI 工具及使用心得
 
 俗话说得好，工欲善其事，必先利其器。要想做好视频，好的工具必不可少，这里我将自己制作视频所用到的工具做一个使用体验。
 
-## 提示词部分
+### 提示词部分
 
-+   提示词优化 AI 工具：GPT4、deepseek。
++   提示词优化 AI 工具：`GPT4`、`deepseek`。
 
-写提示词思路：先对对标视频进分镜头分析和拆解，然后根据自己的创作思路，整理出自己视频的分镜头图，然后通过 GPT 上传分镜头图，让其推导出提示词。。
+写提示词思路：先对对标视频进分镜头分析和拆解，然后根据自己的创作思路，整理出自己视频的分镜头图，然后通过 `GPT` 上传分镜头图，让其推导出提示词。。
 
-这里说一下，至于为什么不用 mj，sd 等反推，一是 mj、sd 使用还不是很熟练，二是它们推导出来的提示词错乱的比较多。而 GPT 是可以识别图片的，用来推导提示词准确率相对高一些。为什么不用 deepseek，是因为 deepseek 只能识别图片中的文字，不能对图片整体识别推理
+这里说一下，至于为什么不用 `mj`、`sd` 等反推，一是 `mj`、`sd` 使用还不是很熟练，二是它们推导出来的提示词错乱的比较多。而 `GPT` 是可以识别图片的，用来推导提示词准确率相对高一些。为什么不用 `deepseek`，是因为 `deepseek` 只能识别图片中的文字，不能对图片整体识别推理
 
-而这里使用 GPT 的原因，主要是想确定这类图片提示词的结构，因为提示词前后顺序是会影响提示词权重的。这里可以让 GPT 输出的时候，以中英文对照的形式发给你，以便后续的修改和优化。
+而这里使用 `GPT` 的原因，主要是想确定这类图片提示词的结构，因为提示词前后顺序是会影响提示词权重的。这里可以让 `GPT` 输出的时候，以中英文对照的形式发给你，以便后续的修改和优化。
 
-比如，我想做个狗趴在窗外的分镜图，自己怎么写都出不来，最终我将我的想法和对标图发送给GPT，得到了我想要的效果。
+比如，我想做个狗趴在窗外的分镜图，自己怎么写都出不来，最终我将我的想法和对标图发送给`GPT`，得到了我想要的效果。
 
 ![](img/119c75ab4c5f5040989bd5a9e4e5adba.png)
 
@@ -154,51 +155,51 @@
 
 ![](img/6a36f02712ef4497783112b7f16da0b1.png)
 
-虽然但是，有时候 gpt 提供的提示词也不能百分百出来你想要的结果，这就需要用到 deepseek 了，其实 gpt 也行，只是最近 deepseek 太火了，就像试试，将 gpt 的提示词扔给 deepseek，将你生成后出现的问题一并告诉 deepseek，让它帮你优化，这样操作下来，你想要的图片效果基本上都可以实现。
+虽然但是，有时候 `gpt` 提供的提示词也不能百分百出来你想要的结果，这就需要用到 `deepseek` 了，其实 `gpt` 也行，只是最近 `deepseek` 太火了，就像试试，将 `gpt` 的提示词扔给 `deepseek`，将你生成后出现的问题一并告诉 `deepseek`，让它帮你优化，这样操作下来，你想要的图片效果基本上都可以实现。
 
 但到这里并没有完，如果你只是简单的复制粘贴，那么，你将每天都不得不重复这个操作，将其整理成自己的，才是真正的降本提效。这一点我会在后面部分详细整理。
 
-## 文生图绘画工具选择
+### 文生图绘画工具选择
 
-+   文生图：mjdjourney，stable diffusion
++   文生图：`mjdjourney`、`stable diffusion`
 
-这两个工具想必大家都比我这个新手用的好，因此使用方法就不说了，暂且说说上面提到的图片色彩度和真实性方面的一些心得，在我使用体验下来，sd 的出图效果是优于 mj 的。这里我就将我用到的模型和一些使用心得分享一下。
+这两个工具想必大家都比我这个新手用的好，因此使用方法就不说了，暂且说说上面提到的图片色彩度和真实性方面的一些心得，在我使用体验下来，`sd` 的出图效果是优于 `mj` 的。这里我就将我用到的模型和一些使用心得分享一下。
 
-+   stable diffusion:
++   `stable diffusion`:
 
-由于自身电脑配置带不动 F.1 模型，所以我使用的是 libulibu 在线端，地址：https://www.liblib.art/sd
+由于自身电脑配置带不动 `F.1` 模型，所以我使用的是 `libulibu` 在线端，地址：`https://www.liblib.art/sd`
 
-大模型：绘梦写实摄影大模型，F.1 基础模型，星流 star-alpha 大模型
+大模型：绘梦写实摄影大模型，`F.1` 基础模型，星流 `star-alpha` 大模型
 
 ![](img/af44bdd9bce978cf11d88aa4db89d310.png)
 
-lora 模型：纪实摄影 F.1、蔚蓝 blue 高清动物摄影大模型。
+`lora` 模型：纪实摄影 `F.1`、蔚蓝 `blue` 高清动物摄影大模型。
 
-+   mjdjourney
++   `mjdjourney`
 
-mj 模型选择 v6.1，但有时候生成的图片会过于清晰，色彩过于饱和，甚至给人一种黑黑的感觉。如果出不来我想要的色彩度，这个时候，我会选择先用 sd 生成一张图，然后再用垫图的方式让 mj 参考 sd 生成图片的风格，就是--sref+图片链接，这样出来的图片感觉会好很多。目前不知道还有没有别的方法让 mj 能够生成 sd 那种质感的图片。
+`mj` 模型选择 `v6.1`，但有时候生成的图片会过于清晰，色彩过于饱和，甚至给人一种黑黑的感觉。如果出不来我想要的色彩度，这个时候，我会选择先用 `sd` 生成一张图，然后再用垫图的方式让 `mj` 参考 `sd` 生成图片的风格，就是`--sref`+图片链接，这样出来的图片感觉会好很多。目前不知道还有没有别的方法让 `mj` 能够生成 `sd` 那种质感的图片。
 
-不管是 sd 还是 mj，在文生图这块，我会优先看中图片色彩度和真实性，其次再去考虑图片中的部分变形或者主体的站位等因素。
+不管是 `sd` 还是 `mj`，在文生图这块，我会优先看中图片色彩度和真实性，其次再去考虑图片中的部分变形或者主体的站位等因素。
 
-ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的状态，如果找到更加真实，质感更强的动物模型，我会分享出来。
+ps：这两个 `lora`，效果虽然好，但仍没有达到我心中最理想的状态，如果找到更加真实，质感更强的动物模型，我会分享出来。
 
-## 图生视频工具
+### 图生视频工具
 
-+   即梦（pass，提示词稍微复杂点就会响应不精准，不开会员只能下载低画质）
++   `即梦`（`pass`，提示词稍微复杂点就会响应不精准，不开会员只能下载低画质）
 
-+   runway（不会用，ps：总是抽不出符合自己预期的视频，可能是个人问题）
++   `runway`（不会用，`ps`：总是抽不出符合自己预期的视频，可能是个人问题）
 
-+   海螺（效果堪比可灵，甚至更优，但缺点也很明显，容易动画化）
++   `海螺`（效果堪比`可灵 AI`，甚至更优，但缺点也很明显，容易动画化）
 
-+   可灵 AI（主要使用工具，基本一遍过，缺点就是基础不够用）
++   `可灵 AI`（主要使用工具，基本一遍过，缺点就是基础不够用）
 
-+   智谱清言（对于动作幅度小的镜头效果挺好，动作幅度大的容易变形，动作 AI 痕迹明显。
++   `智谱清言`（对于动作幅度小的镜头效果挺好，动作幅度大的容易变形，动作 AI 痕迹明显。
 
-# 提效加速，打造万能提示词模板
+## 提效加速，打造万能提示词模板
 
-## 提示词拆解及模板制作
+### 提示词拆解及模板制作
 
-为了提高生产效率和减少抽卡，在 gpt 和 deepseek 的优化下，我们可以将分镜头的文生图提示词进行拆分归类，我一般将提示词部分分为三个部分，即主体描述、环境描述、镜头语言、图片质量。例如：
+为了提高生产效率和减少抽卡，在 `gpt` 和 `deepseek` 的优化下，我们可以将分镜头的文生图提示词进行拆分归类，我一般将提示词部分分为三个部分，即主体描述、环境描述、镜头语言、图片质量。例如：
 
 > 一只拉布拉多站在乡间公路上，
 
@@ -246,122 +247,126 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 
 ![](img/353fd9550f6f2a1a47797d799793802d.png)
 
+
+
+# 分镜头提示词模板
+
 同理，后续的分镜头也可以用同样的方法做出固定模板，有了固定镜头的提示词模板，在后续的创作过程中，便可以通过更换汉字部分，也就是主体、环境，而镜头、图片质量部分则保持不变。这样可以有效提高生图速度和减少抽卡次数。
 
-分镜头1：动物拦车
+## 分镜头1：动物拦车
 
 > 一只 [动物] 站在乡间公路上,
-
+>
 > back to the camera,
-
+>
 > [外貌特征] 保持角色一致性
-
+>
 > The  [动物]  is facing a  [车辆]  approaching the camera,
-
+>
 > the  [车辆] 's front headlights turned on and clearly visible.
-
+>
 > 这条路右边是 [环境] ，左边是 [环境2] 主要为后续灾难做适应性对照
-
+>
 > [天气描述] 调节图片整体色彩构图
-
+>
 > 照片视角是从人的站立的高度拍摄的，中距离镜头拍摄
-
+>
 > focusing on the  [动物] 's back and the [车辆]'s front.
-
+>
 > Natural light enhances realistic details. （自然光增强了逼真的细节）
-
+>
 > The image is in cinematic composition, realistic style, ,Film Photography,4k quality,
 
-分镜1示例输出：
+### 分镜1示例输出
 
 > A white moose stands on a rural road,
-
+>
 > back to the camera,
-
+>
 > white fur Huge antlers, domineering appearance
-
+>
 > The moose is facing a dark green car approaching the camera,
-
+>
 > The dark green sedan's front headlights turned on and clearly visible
-
+>
 > On the right side of this road are tall rocky cliffs, and on the left side are grasslands and mosses
-
+>
 > Blue sky, summer season
-
+>
 > The photo perspective is taken from an individual's standing height, with medium range shots taken
-
+>
 > Focusing on the white moose's back and the dark green sedan's front
-
+>
 > Natural light enhances realistic details
-
+>
 > The image is in cinematic composition, realistic style, ,Film Photography,4k quality,
 
-分镜头2、3：动物异常举动
+## 分镜头2、3：动物异常举动
 
 > Shot from inside a car,
-
+>
 > outside the car window is a  [动物]
-
+>
 > 白色的皮毛.巨大的鹿角，霸气的外表
-
+>
 > the [动物] is close to the glass,
-
+>
 > gazing inside the car, the glass is clear with faint reflections,
-
+>
 > outside is a [其中一侧环境]
-
+>
 > [同步分镜一天气描述]
-
+>
 > focus on the [动物]'s face"
-
+>
 > The image is in cinematic composition, realistic style, ,Film Photography,4k quality,
 
-分镜示例输出：
+### 分镜示例输出
 
 > Shot from inside a car,
-
+>
 > Outside the car window is an albino moose
-
+>
 > White fur Huge antlers, domineering appearance
-
+>
 > The albino moose is close to the glass,
-
+>
 > gazing inside the car, the glass is clear with faint reflections,
-
+>
 > Outside is a primitive forest with thick trunks
-
+>
 > Blue sky, summer season,
-
+>
 > Focus on the face of the albino moose
-
+>
 > The image is in cinematic composition, realistic style, ,Film Photography,4k quality,
 
-分镜头2、3：动物异常举动
+## 分镜头2、3：动物异常举动
 
 > 驾驶员视角透过 [车辆] 挡风玻璃的极端特写，画面最底部边缘隐约可见方向盘，
-
+>
 > 一只[动物]站立在 [车辆] 前的公路上，
-
+>
 > 白色的皮毛.巨大的鹿角，[动物]脸部占据画面60%，唾液滴在引擎盖上，张开嘴巴，有口水流下来，
-
+>
 > 右边高大的岩石峭壁，左边是草原和苔藓，
-
+>
 > [同步分镜一天气描述]
-
+>
 > The image is in cinematic composition, realistic style, ,Film Photography,4k quality,
 
-分镜示例输出：
+### 分镜示例输出
 
 > Through the extreme close-up of the dark green car windshield from the driver's perspective, the steering wheel can be vaguely seen at the bottom edge of the image,
-
+>
 > A white skinned Rangifer Taranduss stands on the road of a dark green sedan,
-
+>
 > White fur The huge antlers of the albino reindeer occupy 60% of the screen, and saliva drips onto the hood. Opening its mouth, saliva flows down,
-
+>
 > On the right is a tall rocky cliff, and on the left is grassland and moss,
-
+>
 > Blue sky, summer season,
-
+>
 > The image is in cinematic composition, realistic style, ,Film Photography,4k quality,
 
 以此可将分镜头4：灾难/动物救治（救治需将动物病化），分镜头5：人与动物的友善互动（抚摸/拥抱）/（救治需展示动物伤势包扎后形象），便可做出一套是经过验证的模板。
@@ -373,11 +378,11 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 比如动物示警拆解对标账号后得出的通用模板是这样的
 
 > 分镜一：动物拦车
-
+>
 > 分镜二、三：动物的异常举动
-
+>
 > 分镜四：灾害发生
-
+>
 > 分镜五：人与动物的接触互动
 
 我们可以在保留关键分镜的情况下，对部分分镜图在保证表达意思不变的情况下进行略作调整。比如分镜二、三表达的动物异常举动分镜头上，可以通过调整动物的动作、动物与车互动的相对位置、镜头的视角（如从车内向外拍，还是车外后视图等）不同的视角呈现的效果是不一样的，但整体表达的还是动物想通过异常行为进行警示。
@@ -438,7 +443,7 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 
 ![](img/184b806fdbf808db98379e7edd94e4de.png)
 
-视频当中所用的音效素材有：环境白噪音、狗叫、狗委屈叫、狗着急叫、狗舔舐声音、拉布拉多玩耍声、汽车喇叭、汽车刹车、汽车发动机怠速声、浪花拍打声、这个根据视频和个人审美自己搭配就行。
+视频当中所用的音效素材有：环境白噪音、狗叫、狗委屈叫、狗着急叫、狗舔舐声音、拉布拉多玩耍声、汽车喇叭、汽车刹车、汽车发动机怠速声、浪花拍打声，这个根据视频和个人审美自己搭配就行。
 
 还可以根据视频的表现对视频的色彩等进行调节，看个人审美。然后选择 4k 60 帧导出。
 
@@ -446,7 +451,7 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 
 ## 网络问题
 
-从实[操开始，最开始遇到的问题便是网络问](https://scys.com/articleDetail/xq_topic/2858281112428451)题，我其实对 ip 这块纠结了好久好久，总觉得这个 ip 行不行，那个 ip 行不行，用过大家常用的 airport，也按照圈友施仁的方法《搭建海外节点：三款免费工具 +99 元腾讯云，实现每月 1000G 流量》自行搭建过，还购买了数据中心 ip、静态住宅 ip。但无一例外都遇到了不同程度的 0 播问题。
+从实[操开始，最最初遇到的问题便是网络问](https://scys.com/articleDetail/xq_topic/2858281112428451)题，我其实对 ip 这块纠结了好久好久，总觉得这个 ip 行不行，那个 ip 行不行，用过大家常用的 airport，也按照圈友施仁的方法《搭建海外节点：三款免费工具 +99 元腾讯云，实现每月 1000G 流量》自行搭建过，还购买了数据中心 ip、静态住宅 ip。但无一例外都遇到了不同程度的 0 播问题。
 
 这个参考航海实战中教练的方法进行测试，只要欺诈性，黑名单、等风险值处于安全范围内，我认为是可以用的。整体来说，YouTube 对 ip 的管控并不很严格，数据中心 ip、还是住宅 ip，都是可以做的，在考虑经济性的前提下，前期不建议直接上住宅 ip。当然，假如不在乎 ip 费用的话，那住宅 ip 肯定最优选择。是住宅 ip 贵也有贵的道理，它能模拟真实的家庭的宽带地址。只是价格相对较贵。
 
@@ -500,27 +505,31 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 
 一个月后，当重新申请的时间达到后，我立马点击了申请，前一天晚上申请的，第二天早上审核通过。在重新申请的这段时间里。为了确保能够顺利申请通过，我对账号内容做出了以下调整。以便圈友参考
 
-+   1.我在视频左下角添加了人头，自己录个几分钟的镜头，然后每次随机截取几十秒进行添加。
++ 1.我在视频左下角添加了人头，自己录个几分钟的镜头，然后每次随机截取几十秒进行添加。
 
-+   2.我在后续视频中添加了文字描述，以文本的形式对视频的故事情节做一个简单的描述讲解（纯文本无配音）
++ 2.我在后续视频中添加了文字描述，以文本的形式对视频的故事情节做一个简单的描述讲解（纯文本无配音）
 
-+   3.我在后台设定了视频简介模板，在后续的视频中我都自动添加的。（之所以添加，是因为在官方 ypp 审核文档中提到，会对视频简介也会做一个考量，为了确保万无一失，索性就全添加了）大致内容为：
++ 3.我在后台设定了视频简介模板，在后续的视频中我都自动添加的。（之所以添加，是因为在官方 ypp 审核文档中提到，会对视频简介也会做一个考量，为了确保万无一失，索性就全添加了）大致内容为：
 
 > Note: This is a short video generated by AI, not a real thing,
-
+>
 > All the pictures and sound effects are made by myself, please do not copy or plagiarize,
-
+>
 > Production software: mj, sd, runway, kelingAI, hailuoAI
-
+>
 > The original intention of this channel and short video production is to call on everyone not to harm wild animals,
-
+>
 > Sometimes, their abnormal behavior may simply be to help you.
-
+>
 > Even without your knowledge, help you avoid danger.
 
 # AI 动物示警赛道后续玩法的一些思考
 
 ## 思考
+
+
+
+# AI动物示警赛道转型思考与分镜头模板库
 
 老马教练、方波妮教练、Gary 曹淦教练曾多次提到过一个事情，就是一个赛道，一个账号都必定存在一个流量的衰退期，当赛道衰退期来临的时候，AI 动物示警赛道又该如何进行转型之路呢？
 
@@ -530,239 +539,241 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 
 以下是我的一点思路。
 
-在动物示警的提示词模板中，如果将主体换成受伤的动物，或者最近比较火热的动物密集症救援（就那种爬满了蜜蜂，长满了虫子那种），然后第二，第三个动物互动的镜头同理，只需要将自然灾害镜头换成人类救援的分镜，比如人类给动物驱虫，人类给动物包扎、做手术。完全可以自由发挥，最后镜头再根据故事情节稍微进行调节即可。（这个玩法，我在小号上经过测试，是可以达到万播的基础流量池，基于新账号的流量规则，目前不能确定是否是个流量赛道，后续如果有爆款，会及时分享给大家。)
+在动物示警的提示词模板中，如果将主体换成受伤的动物，或者最近比较火热的动物密集症救援（就那种爬满了蜜蜂，长满了虫子那种），然后第二，第三个动物互动的镜头同理，只需要将自然灾害镜头换成人类救援的分镜，比如人类给动物驱虫，人类给动物包扎、做手术。完全可以自由发挥，最后镜头再根据故事情节稍微进行调节即可。（这个玩法，我在小号上经过测试，是可以达到万播的基础流量池，基于新账号的流量规则，目前不能确定是否是个流量赛道，后续如果有爆款，会及时分享给大家。）
 
 这样一个动物示警的提示词模板就可以巧妙的变成动物救援赛道。同理，发挥想象力，完全可以变换其他的，甚至更多的赛道。
 
 这样，在后续的创作中，只需要更换动物主体、环境、等因素即可。这里分享一个我最近正在尝试的动物救治赛道的一个固定模板，可能[如何才能高效的产出AI类视频](https://irxd56ii8t.feishu.cn/docx/CoMKdepdFoaTjsxteMjcUacPnlg)在一定的问题以及一些体验上的优化。模板已经是经过验证可以跑出来几十万流量的。但是我还没做到自动化，目前正在根据李哥帖子 学习。
 
-##  分镜头模板库
+## 分镜头模板库
 
-分镜1：危机引入
+### 分镜1：危机引入
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：A kangaroo stands on the gravel road of the grassland, with gray white fur.
-
+>
 > Its neck was tightly tied with rusty wire mesh, sharp hooks deeply piercing the skin, and bright red liquid seeped out from the wound.
-
+>
 > The kangaroo's expression was filled with pain, and its eyes reflected struggle and helplessness.
-
+>
 > On the right side of this road is the vast African savannah, and on the left side is the marshland.
-
+>
 > Blue sky, summer season.
-
+>
 > The photo perspective is taken from the height of two people standing, with a mid-range lens.
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
-分镜2：车辆介入
+### 分镜2：车辆介入
 
 > A [动物] tenses as [车辆颜色] [车辆型号] approaches,
-
+>
 > [重复伤害描述] with [新增细节].
-
+>
 > [动物动作] showing [应激反应].
-
+>
 > [车辆部件] dominates [画面占比].
-
+>
 > Maintain [环境一致性].
-
+>
 > [镜头参数] enhancing [关键元素].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：A kangaroo stood on the gravel road of the grassland, its neck tightly bound by rusty wire mesh, sharp hooks deeply piercing its skin, and bright red liquid seeping out from the wound.
-
+>
 > Back to the camera, the kangaroo's gray white fur glistens in the sunlight.
-
+>
 > The kangaroo is facing a blue Jeep approaching the camera, its front headlights clearly visible.
-
+>
 > On the right side of this road is the vast African savannah, and on the left side is the marshland.
-
+>
 > Blue sky, summer season.
-
+>
 > The photo perspective is taken from the height of two people standing, with a mid-range lens.
-
+>
 > Focusing on the kangaroo's back and the blue Jeep's front.
-
+>
 > Natural light enhances realistic details.
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
-分镜3：车窗视角（特写镜头）
+### 分镜3：车窗视角（特写镜头）
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：Shot from inside the blue Jeep,
-
+>
 > Through the car window, a kangaroo can be seen standing outside the car window.
-
+>
 > Its neck was tightly tied with rusty wire mesh, sharp hooks deeply piercing the skin, and bright red liquid seeped out from the wound.
-
+>
 > The kangaroo is close to the glass, gazing inside the car, the glass is clear with faint reflections of the vast African savannah outside.
-
+>
 > Focus on the kangaroo's face, slightly blurred background, realistic details, high resolution.
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
-分镜4：动物与车的互动
+### 分镜4：动物与车的互动
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：A kangaroo stands on the gravel road of the grassland, licking the side of the blue Jeep.
-
+>
 > Its neck was tightly tied with rusty wire mesh, sharp hooks deeply piercing the skin, and bright red liquid seeped out from the wound.
-
+>
 > On the right side of this road is the vast African savannah, and on the left side is the marshland.
-
+>
 > Blue sky, summer season.
-
+>
 > Close-up shot, standing angle shooting, 3/4 right rear view, cinematography, realistic style, natural lighting, 4K image quality, Film Photography.
 
-分镜5：人类介入
+### 分镜5：人类介入
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：A kangaroo is standing on a gravel road in the grassland.
-
+>
 > Its neck was tightly tied with rusty wire mesh, sharp hooks deeply piercing the skin, and bright red liquid seeped out from the wound.
-
+>
 > Next to the kangaroo, there is a middle-aged white-haired man wearing a white shirt and blue denim, holding pliers and walking towards the kangaroo.
-
+>
 > On the right side of this road is the vast African savannah, and on the left side is the marshland.
-
+>
 > In the background, the blue Jeep is parked on the roadside.
-
+>
 > Blue sky, summer season, taken at noon during the day.
-
+>
 > The photo perspective is taken from the height of two people standing, with a mid-range lens.
-
+>
 > Focusing on the kangaroo's body and the blue Jeep's front.
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
-分镜6：救援特写
+### 分镜6：救援特写
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：A kangaroo is standing on a gravel road in the grassland.
-
+>
 > A middle-aged man wearing a white shirt and blue denim is using pliers to remove the rusty wire mesh around the kangaroo's neck.
-
+>
 > Deep cuts are visible on the neck, with dark red liquid staining gray white fur.
-
+>
 > On the right side of this road is the vast African savannah, and on the left side is the marshland.
-
+>
 > In the background, the blue Jeep is parked on the roadside.
-
+>
 > Close-up shots of the man and the kangaroo, with the kangaroo occupying 70% of the photo.
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
-分镜7：救援递进
+### 分镜7：救援递进
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
-
+>
 > 示例：A kangaroo is standing on a gravel road in the grassland.
-
+>
 > A middle-aged white-haired man wearing a white shirt and blue denim is wrapping a bandage around the neck of the kangaroo.
-
+>
 > There is a dark red liquid oozing from the bandage around the neck.
-
+>
 > On the right side of this road is the vast African savannah, and on the left side is the marshland.
-
+>
 > In the background, the blue Jeep is parked on the roadside.
-
+>
 > Close-up shots of the man and the kangaroo, with the kangaroo occupying 70% of the photo.
-
+>
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
-分镜8：救治结束动物+车辆离开
+### 分镜8：救治结束动物+车辆离开
 
 > A [动物] stands on [路面类型],
-
+>
 > [受伤部位] trapped in [伤害源] (with [细节特征]), [液体描述] seeping from wounds.
-
+>
 > [动物] faces camera sideways, [表情描写] reflecting pain and helplessness.
-
+>
 > Right: [右侧环境], Left: [左侧环境].
-
+>
 > [天空状态], [季节].
-
+>
 > [镜头高度]+[镜头类型] focusing on [焦点].
+
+
 
 > The image is in cinematic composition, realistic style, Film Photography, 4k quality.
 
@@ -807,5 +818,3 @@ ps：这两个 lora，效果虽然好，但仍没有达到我心中最理想的�
 > 5.施仁：《[搭建海外节点：三款免费工具 +99](https://scys.com/articleDetail/xq_topic/2858281112428451) 元腾讯云，实现每月 1000G 流量》
 
 > 6.李香君：《[如何才能高效的产出AI视频](https://articles.zsxq.com/id_nm3jn3on8z22.html)》
-
->

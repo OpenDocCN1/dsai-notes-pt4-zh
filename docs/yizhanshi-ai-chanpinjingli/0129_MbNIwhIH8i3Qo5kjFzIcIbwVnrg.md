@@ -1,3 +1,4 @@
+
 # Web Search Pro 联网搜索工具
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/PBy6dbv9ooRI1MxeX4Jczt0xnxh](https://v11enp9ok1h.feishu.cn/docx/PBy6dbv9ooRI1MxeX4Jczt0xnxh)
@@ -7,101 +8,99 @@
 ## 工具说明
 
 > 高级搜索工具 Web search pro 在传统搜索引擎网页抓取、排序的能力基础上，增强了意图识别，支持复杂问题的分解（规划中）和搜索结果的流式输出。搜索工具能更有效地结合在大语言模型应用中，提高用户获取信息的效率，并一定程度上解决大语言模型所面临的幻觉问题。
-
 >
-
-> 工具代码：web-search-pro
+> 工具代码：`web-search-pro`
 
 ## Web Search Pro Cookbook 调用教程
 
-## 接口请求
+### 接口请求
 
-| **传输方式** | https |
+| 传输方式 | https |
 | --- | --- |
-| **请求地址** | https://open.bigmodel.cn/api/paas/v4/tools |
-| **调用方式** | 同步调用，等待模型执行完成并返回最终结果或 SSE 调用 |
-| **字符编码** | UTF-8 |
-| **接口请求格式** | JSON |
-| **响应格式** | JSON 或标准 Stream Event |
-| **接口请求类型** | POST |
-| **开发语言** | 任意可发起 HTTP 请求的开发语言 |
+| 请求地址 | `https://open.bigmodel.cn/api/paas/v4/tools` |
+| 调用方式 | 同步调用，等待模型执行完成并返回最终结果或 SSE 调用 |
+| 字符编码 | UTF-8 |
+| 接口请求格式 | JSON |
+| 响应格式 | JSON 或标准 Stream Event |
+| 接口请求类型 | POST |
+| 开发语言 | 任意可发起 HTTP 请求的开发语言 |
 
-## 接口请求参数
+### 接口请求参数
 
-| **参数名称** | **类型** | **是否必填** | **参数说明** |
+| 参数名称 | 类型 | 是否必填 | 参数说明 |
 | --- | --- | --- | --- |
-| tool | String | 是 | 工具名，目前支持搜索 web-search-pro |
-| message | List&lt;Object&gt; | 是 | 包含历史对话上下文的内容，按照 {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好&quot;} 的json 数组形式进行传参 |
-| request_id | String | 否 | 请求ID |
-| stream | Boolean | 否 | False：同步响应，True：流式返回，默认 流式返回 |
+| `tool` | `String` | 是 | 工具名，目前支持搜索 `web-search-pro` |
+| `message` | `List<Object>` | 是 | 包含历史对话上下文的内容，按照 `{"role": "user", "content": "你好"}` 的json 数组形式进行传参 |
+| `request_id` | `String` | 否 | 请求ID |
+| `stream` | `Boolean` | 否 | `False`：同步响应，`True`：流式返回，默认 流式返回 |
 
-## 接口响应参数
+### 接口响应参数
 
-### 同步响应
+#### 同步响应
 
-| **参数名称** | **类型** | **参数说明** |
+| 参数名称 | 类型 | 参数说明 |
 | --- | --- | --- |
-| id | String | 请求id |
-| created | Long | 请求创建时间 |
-| choices | List&lt;Object&gt; |  |
-| index | Integer | 结果下标 |
-| finish_reason | String | 终止原因， |
-| message | Object | 消息内容 |
-| role | String | 搜索api 为 Tool |
-| tool_calls | List&lt;Object&gt; | 搜索工具返回内容 |
-| id | String | 唯一标识符 |
-| type | String | 返回类型， |
-| search_intent | List&lt;Object&gt; | 返回搜索意图 |
-| index | Integer | 搜索轮次，默认为 0 |
-| query | String | 搜索优化 query |
-| intent | String | 判断的意图类型 |
-| keywords | String | 搜索关键词 |
-| search_result | List&lt;Object&gt; | 返回搜索结果 |
-| index | Integer | 搜索轮次，默认为 0 |
-| title | String | 标题 |
-| link | String | 链接url |
-| content | String | 内容 |
-| icon | String | 来源icon |
-| media | String | 来源媒体 |
-| refer | String | 角标序号 [ref_1] |
-| search_recommend | List&lt;Object&gt; | 返回推荐问题（规划中，暂不支持） |
-| index | Integer | 搜索轮次 |
-| query | String | 推荐query |
+| `id` | `String` | 请求id |
+| `created` | `Long` | 请求创建时间 |
+| `choices` | `List<Object>` |  |
+| `index` | `Integer` | 结果下标 |
+| `finish_reason` | `String` | 终止原因， |
+| `message` | `Object` | 消息内容 |
+| `role` | `String` | 搜索api 为 Tool |
+| `tool_calls` | `List<Object>` | 搜索工具返回内容 |
+| `id` | `String` | 唯一标识符 |
+| `type` | `String` | 返回类型， |
+| `search_intent` | `List<Object>` | 返回搜索意图 |
+| `index` | `Integer` | 搜索轮次，默认为 0 |
+| `query` | `String` | 搜索优化 query |
+| `intent` | `String` | 判断的意图类型 |
+| `keywords` | `String` | 搜索关键词 |
+| `search_result` | `List<Object>` | 返回搜索结果 |
+| `index` | `Integer` | 搜索轮次，默认为 0 |
+| `title` | `String` | 标题 |
+| `link` | `String` | 链接url |
+| `content` | `String` | 内容 |
+| `icon` | `String` | 来源icon |
+| `media` | `String` | 来源媒体 |
+| `refer` | `String` | 角标序号 [ref_1] |
+| `search_recommend` | `List<Object>` | 返回推荐问题（规划中，暂不支持） |
+| `index` | `Integer` | 搜索轮次 |
+| `query` | `String` | 推荐query |
 
-### 流式响应
+#### 流式响应
 
-| **参数名称** | **类型** | **参数说明** |
+| 参数名称 | 类型 | 参数说明 |
 | --- | --- | --- |
-| id | String | 请求id |
-| created | Long | 请求创建时间 |
-| choices | List&lt;Object&gt; |  |
-| index | Integer | 结果下标 |
-| finish_reason | String | 终止原因， |
-| delta | Object | 增量消息内容 |
-| role | String | 搜索默认为 Tool |
-| tool_calls | List&lt;Object&gt; | 搜索工具返回内容 |
-| id | String | 唯一标识符 |
-| type | String | 返回类型， |
-| search_intent | List&lt;Object&gt; | 返回搜索意图 |
-| index | Integer | 搜索轮次 |
-| query | String | 搜索优化 query |
-| intent | String | 判断的意图类型 |
-| keywords | String | 搜索关键词 |
-| search_result | List&lt;Object&gt; | 返回搜索结果 |
-| index | Integer | 搜索轮次 |
-| title | String | 标题 |
-| link | String | 链接url |
-| content | String | 内容 |
-| icon | String | 来源icon |
-| media | String | 来源媒体 |
-| refer | String | 角标序号 [ref_1] |
-| search_recommend | List&lt;Object&gt; | 返回推荐问题（规划中，暂不支持） |
-| index | Integer | 搜索轮次 |
-| query | String | 推荐query |
-| usage | Object | 本次模型调用的 tokens 数量统计 |
-| prompt_tokens | Integer | 用户输入的 tokens 数量 |
-| completion_tokens | Integer | 模型输出的 tokens 数量 |
-| total_tokens | Integer | 总 tokens 数量 |
+| `id` | `String` | 请求id |
+| `created` | `Long` | 请求创建时间 |
+| `choices` | `List<Object>` |  |
+| `index` | `Integer` | 结果下标 |
+| `finish_reason` | `String` | 终止原因， |
+| `delta` | `Object` | 增量消息内容 |
+| `role` | `String` | 搜索默认为 Tool |
+| `tool_calls` | `List<Object>` | 搜索工具返回内容 |
+| `id` | `String` | 唯一标识符 |
+| `type` | `String` | 返回类型， |
+| `search_intent` | `List<Object>` | 返回搜索意图 |
+| `index` | `Integer` | 搜索轮次 |
+| `query` | `String` | 搜索优化 query |
+| `intent` | `String` | 判断的意图类型 |
+| `keywords` | `String` | 搜索关键词 |
+| `search_result` | `List<Object>` | 返回搜索结果 |
+| `index` | `Integer` | 搜索轮次 |
+| `title` | `String` | 标题 |
+| `link` | `String` | 链接url |
+| `content` | `String` | 内容 |
+| `icon` | `String` | 来源icon |
+| `media` | `String` | 来源媒体 |
+| `refer` | `String` | 角标序号 [ref_1] |
+| `search_recommend` | `List<Object>` | 返回推荐问题（规划中，暂不支持） |
+| `index` | `Integer` | 搜索轮次 |
+| `query` | `String` | 推荐query |
+| `usage` | `Object` | 本次模型调用的 tokens 数量统计 |
+| `prompt_tokens` | `Integer` | 用户输入的 tokens 数量 |
+| `completion_tokens` | `Integer` | 模型输出的 tokens 数量 |
+| `total_tokens` | `Integer` | 总 tokens 数量 |
 
 ## 使用示例
 
@@ -115,36 +114,35 @@
 import requests
 import uuid
 
-api_key = &quot; YOUR API KEY&quot;
+api_key = " YOUR API KEY"
 
 def run_v4_sync():
     msg = [
         {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;:&quot;最近有哪些新上映的电影？&quot;
+            "role": "user",
+            "content": "最近有哪些新上映的电影？"
         }
     ]
-    tool = &quot;web-search-pro&quot;
-    url = &quot;https://open.bigmodel.cn/api/paas/v4/tools&quot;
+    tool = "web-search-pro"
+    url = "https://open.bigmodel.cn/api/paas/v4/tools"
     request_id = str(uuid.uuid4())
     data = {
-        &quot;request_id&quot;: request_id,
-        &quot;tool&quot;: tool,
-        &quot;stream&quot;: False,
-        &quot;messages&quot;: msg
+        "request_id": request_id,
+        "tool": tool,
+        "stream": False,
+        "messages": msg
     }
 
     resp = requests.post(
         url,
         json=data,
-        headers={&#x27;Authorization&#x27;: api_key},
+        headers={'Authorization': api_key},
         timeout=300
     )
     print(resp.content.decode())
 
 
-
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     run_v4_sync()
 ```
 
@@ -152,209 +150,213 @@ if __name__ == &#x27;__main__&#x27;:
 
 ```
 data: {
-        &quot;id&quot;: &quot;8804449104566561211&quot;,
-        &quot;created&quot;: 1719976219818,
-        &quot;model&quot;: &quot;web-search-pro&quot;,
-        &quot;choices&quot;: [{
-                &quot;index&quot;: 0,
-                &quot;delta&quot;: {
-                        &quot;role&quot;: &quot;tool&quot;,
-                        &quot;tool_calls&quot;: [{
-                                &quot;id&quot;: &quot;78ff01b8420997f7&quot;,
-                                &quot;type&quot;: &quot;search_intent&quot;,
-                                &quot;search_intent&quot;: [{
-                                        &quot;index&quot;: 0,
-                                        &quot;query&quot;: &quot;最近有哪些新上映的电影？&quot;,
-                                        &quot;intent&quot;: &quot;SEARCH_ALL&quot;,
-                                        &quot;keywords&quot;: &quot;最近有哪些新上映的电影？&quot;
+        "id": "8804449104566561211",
+        "created": 1719976219818,
+        "model": "web-search-pro",
+        "choices": [{
+                "index": 0,
+                "delta": {
+                        "role": "tool",
+                        "tool_calls": [{
+                                "id": "78ff01b8420997f7",
+                                "type": "search_intent",
+                                "search_intent": [{
+                                        "index": 0,
+                                        "query": "最近有哪些新上映的电影？",
+                                        "intent": "SEARCH_ALL",
+                                        "keywords": "最近有哪些新上映的电影？"
                                 }]
                         }]
                 }
         }],
-        &quot;usage&quot;: {}
+        "usage": {}
 }
 ```
 
 ### 响应示例 - 搜索结果
 
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/eastday_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/eastday_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/ifeng_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/qq_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/163_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/eastday_icon.jpg&quot;,
-                                        &quot;icon&quot;: &quot;https://sfile.chatglm.cn/searchImage/sohu_icon.jpg&quot;,
+```
+"icon": "https://sfile.chatglm.cn/searchImage/eastday_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/eastday_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/ifeng_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/qq_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/163_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/eastday_icon.jpg",
+"icon": "https://sfile.chatglm.cn/searchImage/sohu_icon.jpg",
+```
+
+
 
 ```
 data: {
-        &quot;id&quot;: &quot;8804449104566561211&quot;,
-        &quot;created&quot;: 1719976220154,
-        &quot;model&quot;: &quot;web-search-pro&quot;,
-        &quot;choices&quot;: [{
-                &quot;index&quot;: 0,
-                &quot;finish_reason&quot;: &quot;stop&quot;,
-                &quot;delta&quot;: {
-                        &quot;role&quot;: &quot;tool&quot;,
-                        &quot;tool_calls&quot;: [{
-                                &quot;id&quot;: &quot;78ff01b8420997f7&quot;,
-                                &quot;type&quot;: &quot;search_result&quot;,
-                                &quot;search_result&quot;: [{
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;王传君张钧甯吴镇宇《默杀》提档7.3 《头脑特工队2》成全球影史最快破10亿动画电影​&quot;,
-                                        &quot;link&quot;: &quot;http://mini.eastday.com/nsa/n240702175540093.html&quot;,
-                                        &quot;content&quot;: &quot;王传君，张钧甯和吴镇宇主演的电影《默杀》将提前至7月3日上映，并发布了海报。海报展现了站在雨夜中的神秘黑衣人。这部由柯汶利导演和编剧的电影，还包括王圣迪，蔡明，金士杰，黄明昊和徐娇的特殊出演。《头脑特工队2》成为全球影史上最快破10亿票房的动画电影。在2024年第26周，全国电影周票房达到5.96亿，观影人次超过1465万，总场次超过270万场。全年累计电影票房达到239.1亿。《云边有个小卖部》连续7天获得单日冠军，累计票房达到3.61亿，成为6月票房冠军。《头脑特工队2》保持第二的位置，累计票房1.75亿。新上映的电影《海关战线》首周票房为7435万，累计票房7497万。《寂静之地：入侵日》和《来福大酒店》分别排在第四和第五位。此外，电影《草木人间》发布了日本版海报，海报中吴磊安睡的样子被展现出来。&quot;,
-                                        &quot;media&quot;: &quot;东方网&quot;,
-                                        &quot;refer&quot;: &quot;ref_1&quot;
+        "id": "8804449104566561211",
+        "created": 1719976220154,
+        "model": "web-search-pro",
+        "choices": [{
+                "index": 0,
+                "finish_reason": "stop",
+                "delta": {
+                        "role": "tool",
+                        "tool_calls": [{
+                                "id": "78ff01b8420997f7",
+                                "type": "search_result",
+                                "search_result": [{
+                                        "index": 0,
+                                        "title": "王传君张钧甯吴镇宇《默杀》提档7.3 《头脑特工队2》成全球影史最快破10亿动画电影​",
+                                        "link": "http://mini.eastday.com/nsa/n240702175540093.html",
+                                        "content": "王传君，张钧甯和吴镇宇主演的电影《默杀》将提前至7月3日上映，并发布了海报。海报展现了站在雨夜中的神秘黑衣人。这部由柯汶利导演和编剧的电影，还包括王圣迪，蔡明，金士杰，黄明昊和徐娇的特殊出演。《头脑特工队2》成为全球影史上最快破10亿票房的动画电影。在2024年第26周，全国电影周票房达到5.96亿，观影人次超过1465万，总场次超过270万场。全年累计电影票房达到239.1亿。《云边有个小卖部》连续7天获得单日冠军，累计票房达到3.61亿，成为6月票房冠军。《头脑特工队2》保持第二的位置，累计票房1.75亿。新上映的电影《海关战线》首周票房为7435万，累计票房7497万。《寂静之地：入侵日》和《来福大酒店》分别排在第四和第五位。此外，电影《草木人间》发布了日本版海报，海报中吴磊安睡的样子被展现出来。",
+                                        "media": "东方网",
+                                        "refer": "ref_1"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;暑期档首炸，张学友硬核回归大银幕！&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/789901797_745022&quot;,
-                                        &quot;content&quot;: &quot;暑期档期开始，《云边有个小卖部》持续热映，票房超过3.6亿人民币。而《头脑特工队2》在内地的票房达到了1.75亿，超越了前作。新上映的电影中，《海关战线》淘票票开分9.3，上映三天票房达7435万；惊悚续集《寂静之地：入侵日》全球票房近亿；而《来福大酒店》也获得了好评，像“我不是药神”的治愈版。本期主要介绍了这三部新电影的看点。《海关战线》是一部硬核动作片，由张学友和谢霆锋主演，剧情紧凑，动作场面精彩，是一部不容错过的视听盛宴。《来福大酒店》是一部治愈系电影，由黄轩和柳岩主演，讲述了一群病患与家属的温情故事，给观众带来了感动和思考。《寂静之地：入侵日》是一部惊悚科幻片，视觉效果震撼，音效设计独到，让人全程屏息，体验末世逃亡的极限刺激。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_2&quot;
+                                        "index": 0,
+                                        "title": "暑期档首炸，张学友硬核回归大银幕！",
+                                        "link": "https://www.sohu.com/a/789901797_745022",
+                                        "content": "暑期档期开始，《云边有个小卖部》持续热映，票房超过3.6亿人民币。而《头脑特工队2》在内地的票房达到了1.75亿，超越了前作。新上映的电影中，《海关战线》淘票票开分9.3，上映三天票房达7435万；惊悚续集《寂静之地：入侵日》全球票房近亿；而《来福大酒店》也获得了好评，像“我不是药神”的治愈版。本期主要介绍了这三部新电影的看点。《海关战线》是一部硬核动作片，由张学友和谢霆锋主演，剧情紧凑，动作场面精彩，是一部不容错过的视听盛宴。《来福大酒店》是一部治愈系电影，由黄轩和柳岩主演，讲述了一群病患与家属的温情故事，给观众带来了感动和思考。《寂静之地：入侵日》是一部惊悚科幻片，视觉效果震撼，音效设计独到，让人全程屏息，体验末世逃亡的极限刺激。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_2"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;今年暑期档 目前定档88部新片&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/788331547_255783&quot;,
-                                        &quot;content&quot;: &quot;今年暑期档期已经安排了88部新电影上映。根据最新的数据，暑期档6月份的票房收入已经达到了17.25亿人民币，其中，6月22日上映的《云边有个小卖部》以超过1.9亿的票房成绩位居榜首。影片的首个周末表现出色，分别为7708万和6430万的单日票房，推动了大盘在六一档后首次突破1.6亿，市场活跃度有所上升。影片在多个社交平台的热搜和话题讨论中也是位居前列。目前，该片的灯塔AI预测票房将超过6亿。《海关战线》作为本周末新上映的电影，预售票房已经超过260万。随着假期的到来，电影市场预计将进一步升温。目前已有各类型的影片上映或定档，包括剧情、动画、喜剧、爱情、动作、青春等多种类型，满足不同观众的观影需求。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_3&quot;
+                                        "index": 0,
+                                        "title": "今年暑期档 目前定档88部新片",
+                                        "link": "https://www.sohu.com/a/788331547_255783",
+                                        "content": "今年暑期档期已经安排了88部新电影上映。根据最新的数据，暑期档6月份的票房收入已经达到了17.25亿人民币，其中，6月22日上映的《云边有个小卖部》以超过1.9亿的票房成绩位居榜首。影片的首个周末表现出色，分别为7708万和6430万的单日票房，推动了大盘在六一档后首次突破1.6亿，市场活跃度有所上升。影片在多个社交平台的热搜和话题讨论中也是位居前列。目前，该片的灯塔AI预测票房将超过6亿。《海关战线》作为本周末新上映的电影，预售票房已经超过260万。随着假期的到来，电影市场预计将进一步升温。目前已有各类型的影片上映或定档，包括剧情、动画、喜剧、爱情、动作、青春等多种类型，满足不同观众的观影需求。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_3"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;一上映就票房火爆，韩国又爆出一部生猛新片！&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/789675248_119164&quot;,
-                                        &quot;content&quot;: &quot;韩国新上映的惊悚悬疑片《劫机》由河正宇、吕珍九、成东日、蔡秀彬等主演，导演是金圣翰。该片上映首日票房达10亿韩元，8天内累计票房超77亿韩元。电影基于1971年大韩航空F-27劫机未遂事件改编，讲述了客机被劫持机组人员与劫机者斗争的故事。河正宇在片中饰演机长，与劫机者斗智斗勇，电影深度还原了整个劫机过程，并以南北韩冲突为背景。虽然韩国少有空难题材电影，但《劫机》的表现超出了预期，在场面和特效方面有较高水准。未来，河正宇有《游说》、《与神同行3》、《柏林2：观察者》等作品将上映。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_4&quot;
+                                        "index": 0,
+                                        "title": "一上映就票房火爆，韩国又爆出一部生猛新片！",
+                                        "link": "https://www.sohu.com/a/789675248_119164",
+                                        "content": "韩国新上映的惊悚悬疑片《劫机》由河正宇、吕珍九、成东日、蔡秀彬等主演，导演是金圣翰。该片上映首日票房达10亿韩元，8天内累计票房超77亿韩元。电影基于1971年大韩航空F-27劫机未遂事件改编，讲述了客机被劫持机组人员与劫机者斗争的故事。河正宇在片中饰演机长，与劫机者斗智斗勇，电影深度还原了整个劫机过程，并以南北韩冲突为背景。虽然韩国少有空难题材电影，但《劫机》的表现超出了预期，在场面和特效方面有较高水准。未来，河正宇有《游说》、《与神同行3》、《柏林2：观察者》等作品将上映。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_4"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;海关战线：票房日冠，打了多少资本的脸，谢霆锋这次又赌对了&quot;,
-                                        &quot;link&quot;: &quot;http://mini.eastday.com/nsa/240630155111949241969.html&quot;,
-                                        &quot;content&quot;: &quot;《海关战线》是一部新上映的港片，由谢霆锋主演，讲述了海关调查员周正礼在国际刑警组织的联合行动中揭开了军火交易的故事。影片在短短三个小时内票房突破千万，总票房已达到1500万，击败了同天上映的其他电影。这部影片凭借出色的视觉效果和紧张刺激的剧情，成功吸引了观众的关注，被视为港片复兴的序幕。&quot;,
-                                        &quot;media&quot;: &quot;东方网&quot;,
-                                        &quot;refer&quot;: &quot;ref_5&quot;
+                                        "index": 0,
+                                        "title": "海关战线：票房日冠，打了多少资本的脸，谢霆锋这次又赌对了",
+                                        "link": "http://mini.eastday.com/nsa/240630155111949241969.html",
+                                        "content": "《海关战线》是一部新上映的港片，由谢霆锋主演，讲述了海关调查员周正礼在国际刑警组织的联合行动中揭开了军火交易的故事。影片在短短三个小时内票房突破千万，总票房已达到1500万，击败了同天上映的其他电影。这部影片凭借出色的视觉效果和紧张刺激的剧情，成功吸引了观众的关注，被视为港片复兴的序幕。",
+                                        "media": "东方网",
+                                        "refer": "ref_5"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;港圈两大顶流回归，也救不了这片&quot;,
-                                        &quot;link&quot;: &quot;https://ent.ifeng.com/c/8auRTAjMlEA&quot;,
-                                        &quot;content&quot;: &quot;《海关战线》是一部新上映的电影，观众期待已久，因为它标志着张学友和谢霆锋两大港圈顶流的回归。张学友八年后重返大银幕，挑战了复杂的双面角色，并完成了许多动作戏。谢霆锋则是首次担任动作指导，电影没有后期特效，所有动作都是真实的。此外，电影还有许多养眼身材的展示，以及在宣传时利用这一点吸引观众。配角包括吴镇宇、林嘉欣、刘雅瑟等知名演员。电影投资超过两亿港币，是一大制作。然而，上映五天票房不足亿，水花小，口碑一般，豆瓣评分为6.5分。电影讲述了香港海关查获了一批非法武器，与国际刑警合作追查内鬼和失踪武器船只的故事。虽然故事情节涉及一些热门话题，如职场压力、情感关系等，但剧情混乱，人物刻板生硬，导致观众评价不佳。总结来说，《海关战线》有一定的亮点，如谢霆锋的身材和动作戏，以及张学友的复杂角色，但整体剧情陈旧无聊，无法吸引观众。&quot;,
-                                        &quot;media&quot;: &quot;凤凰网娱乐&quot;,
-                                        &quot;refer&quot;: &quot;ref_6&quot;
+                                        "index": 0,
+                                        "title": "港圈两大顶流回归，也救不了这片",
+                                        "link": "https://ent.ifeng.com/c/8auRTAjMlEA",
+                                        "content": "《海关战线》是一部新上映的电影，观众期待已久，因为它标志着张学友和谢霆锋两大港圈顶流的回归。张学友八年后重返大银幕，挑战了复杂的双面角色，并完成了许多动作戏。谢霆锋则是首次担任动作指导，电影没有后期特效，所有动作都是真实的。此外，电影还有许多养眼身材的展示，以及在宣传时利用这一点吸引观众。配角包括吴镇宇、林嘉欣、刘雅瑟等知名演员。电影投资超过两亿港币，是一大制作。然而，上映五天票房不足亿，水花小，口碑一般，豆瓣评分为6.5分。电影讲述了香港海关查获了一批非法武器，与国际刑警合作追查内鬼和失踪武器船只的故事。虽然故事情节涉及一些热门话题，如职场压力、情感关系等，但剧情混乱，人物刻板生硬，导致观众评价不佳。总结来说，《海关战线》有一定的亮点，如谢霆锋的身材和动作戏，以及张学友的复杂角色，但整体剧情陈旧无聊，无法吸引观众。",
+                                        "media": "凤凰网娱乐",
+                                        "refer": "ref_6"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;《来福大酒店》赢了口碑输了票房，黄轩惊艳，柳岩试水大女主失败&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J5SPII9H0537KIWO.html?clickfrom=w_mv_music&quot;,
-                                        &quot;content&quot;: &quot;《来福大酒店》是一部新上映的电影，由黄轩和柳岩领衔主演。尽管影片获得了不错的口碑，豆瓣评分达到7.2，但在票房上表现不佳。与之相比，《海关战线》由谢霆锋、张学友等众多实力派演员参演，特效场面宏大，动作戏拳拳到肉，上映后票房表现良好。另一部新上映的海外大片《寂静之地：入侵日》也取得了不错的票房成绩。对于《来福大酒店》票房失利的情况，你怎么看？&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_7&quot;
+                                        "index": 0,
+                                        "title": "《来福大酒店》赢了口碑输了票房，黄轩惊艳，柳岩试水大女主失败",
+                                        "link": "https://www.163.com/dy/article/J5SPII9H0537KIWO.html?clickfrom=w_mv_music",
+                                        "content": "《来福大酒店》是一部新上映的电影，由黄轩和柳岩领衔主演。尽管影片获得了不错的口碑，豆瓣评分达到7.2，但在票房上表现不佳。与之相比，《海关战线》由谢霆锋、张学友等众多实力派演员参演，特效场面宏大，动作戏拳拳到肉，上映后票房表现良好。另一部新上映的海外大片《寂静之地：入侵日》也取得了不错的票房成绩。对于《来福大酒店》票房失利的情况，你怎么看？",
+                                        "media": "网易新闻",
+                                        "refer": "ref_7"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;这种抗日神片也能票房第一？剧情一言难尽，女演员颜值是唯一看点&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J64DP7K60517CAC0.html?clickfrom=w_mv_music&quot;,
-                                        &quot;content&quot;: &quot;这篇文章讲述了一些2024年的网络大电影（网大）作品，如《黑白潜行》、《除暴安良》和《西装暴徒》等，这些作品票房和口碑都相对较好。其中，《目中无人2》不仅票房和口碑双丰收，还让观众希望制作团队为这个系列打造IP。然而，新上映的网大作品《浴血狙击》虽然票房排名第一，其剧情却备受批评，被认为是“神剧”，因为剧情一开始就是男主一人秒一群人的情节，女主在男主的培养下，短时间内成为格斗高手和狙击大师。虽然剧情普通，但建议闲暇时观看，因为该影片有较大的场面和女主们的颜值作为看点，整体来说，这是一部适合打发时间的“爽剧神剧”。&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_8&quot;
+                                        "index": 0,
+                                        "title": "这种抗日神片也能票房第一？剧情一言难尽，女演员颜值是唯一看点",
+                                        "link": "https://www.163.com/dy/article/J64DP7K60517CAC0.html?clickfrom=w_mv_music",
+                                        "content": "这篇文章讲述了一些2024年的网络大电影（网大）作品，如《黑白潜行》、《除暴安良》和《西装暴徒》等，这些作品票房和口碑都相对较好。其中，《目中无人2》不仅票房和口碑双丰收，还让观众希望制作团队为这个系列打造IP。然而，新上映的网大作品《浴血狙击》虽然票房排名第一，其剧情却备受批评，被认为是“神剧”，因为剧情一开始就是男主一人秒一群人的情节，女主在男主的培养下，短时间内成为格斗高手和狙击大师。虽然剧情普通，但建议闲暇时观看，因为该影片有较大的场面和女主们的颜值作为看点，整体来说，这是一部适合打发时间的“爽剧神剧”。",
+                                        "media": "网易新闻",
+                                        "refer": "ref_8"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;《海关战线》票房日冠，打了多少资本的脸？谢霆锋这次又赌对了&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J5POUFML055277PH.html?clickfrom=w_ent&quot;,
-                                        &quot;content&quot;: &quot;《海关战线》是一部新上映的动作电影，由谢霆锋和张学友等港星主演。影片讲述了海关调查员周正礼在国际刑警组织的联合行动中发现军火交易案，并卷入了更大的阴谋。影片由邱礼涛执导，以其特色的燃、炸、爽、猛的视觉效果和紧张的剧情获得了观众的关注。除了精彩的动作场面，影片还探讨了人物之间的复杂关系和信念的探讨。此外，该片的票房表现也非常出色，上映仅3小时票房就突破了1千万，累计票房达到了1500万，相比之下，其他同期上映的电影则表现不佳。该片的成功也归功于强大的演员阵容，包括谢霆锋、张学友、刘雅瑟和吴镇宇等港星，他们的表现赢得了观众的好评。总的来说，《海关战线》是一部值得去影院观看的电影。&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_9&quot;
+                                        "index": 0,
+                                        "title": "《海关战线》票房日冠，打了多少资本的脸？谢霆锋这次又赌对了",
+                                        "link": "https://www.163.com/dy/article/J5POUFML055277PH.html?clickfrom=w_ent",
+                                        "content": "《海关战线》是一部新上映的动作电影，由谢霆锋和张学友等港星主演。影片讲述了海关调查员周正礼在国际刑警组织的联合行动中发现军火交易案，并卷入了更大的阴谋。影片由邱礼涛执导，以其特色的燃、炸、爽、猛的视觉效果和紧张的剧情获得了观众的关注。除了精彩的动作场面，影片还探讨了人物之间的复杂关系和信念的探讨。此外，该片的票房表现也非常出色，上映仅3小时票房就突破了1千万，累计票房达到了1500万，相比之下，其他同期上映的电影则表现不佳。该片的成功也归功于强大的演员阵容，包括谢霆锋、张学友、刘雅瑟和吴镇宇等港星，他们的表现赢得了观众的好评。总的来说，《海关战线》是一部值得去影院观看的电影。",
+                                        "media": "网易新闻",
+                                        "refer": "ref_9"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;比刘德华还惨？亏损或超1.8亿，2024年暑期档第一票房惨案诞生了&quot;,
-                                        &quot;link&quot;: &quot;https://new.qq.com/rain/a/20240701A0APIN00&quot;,
-                                        &quot;content&quot;: &quot;在2024年暑期档的首日，即7月1日，内地电影市场新上映的电影中，《云边有个小卖部》单日票房突破1675万，占据25.3%的排片占比和29.4%的票房占比，成为当天票房冠军，该片累计票房已突破3.76亿。第二名和第三名分别是《海关战线》和《头脑特工队2》。而《云边有个小卖部》的制作成本不到1亿，是一部小清新温情电影，对于主演彭昱畅来说是一个大赢家。然而，与票房成绩形成鲜明对比的是，《海关战线》的票房表现不佳，其单日票房下降至943万，上映第3天票房就跌破千万，排片占比和票房占比也相对较低。该片制作成本超过2.5亿，预测最终票房可能只有1.7亿，这意味着可能亏损超过1.8亿，成为2024年暑期档第一票房惨案。 对于导演邱礼涛和男主角谢霆锋来说，这都是一个巨大的失败。&quot;,
-                                        &quot;media&quot;: &quot;腾讯新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_10&quot;
+                                        "index": 0,
+                                        "title": "比刘德华还惨？亏损或超1.8亿，2024年暑期档第一票房惨案诞生了",
+                                        "link": "https://new.qq.com/rain/a/20240701A0APIN00",
+                                        "content": "在2024年暑期档的首日，即7月1日，内地电影市场新上映的电影中，《云边有个小卖部》单日票房突破1675万，占据25.3%的排片占比和29.4%的票房占比，成为当天票房冠军，该片累计票房已突破3.76亿。第二名和第三名分别是《海关战线》和《头脑特工队2》。而《云边有个小卖部》的制作成本不到1亿，是一部小清新温情电影，对于主演彭昱畅来说是一个大赢家。然而，与票房成绩形成鲜明对比的是，《海关战线》的票房表现不佳，其单日票房下降至943万，上映第3天票房就跌破千万，排片占比和票房占比也相对较低。该片制作成本超过2.5亿，预测最终票房可能只有1.7亿，这意味着可能亏损超过1.8亿，成为2024年暑期档第一票房惨案。 对于导演邱礼涛和男主角谢霆锋来说，这都是一个巨大的失败。",
+                                        "media": "腾讯新闻",
+                                        "refer": "ref_10"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;《浴血狙击》上映，抗日神片，网红的这张锥子脸，成最大笑点&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/789563392_103685&quot;,
-                                        &quot;content&quot;: &quot;《浴血狙击》是一部新上映的网络电影，主角是徐僧和韩乐瑶等演员。电影讲述的是在一个虚构的县城中，进步同志们抗击日本侵略者的故事。这部电影被称为抗日神片，因其有许多令人难以置信的情节和笑点。其中最大的笑点是网红的那张尖尖的锥子脸。影片中有着典型的网络电影那种低俗的起点，那就是在剧烈的巷战中也总会有不必要的颜色内容出现。电影中有着一系列的荒唐情节，如日寇头领在战斗中竟然找时间去找漂亮女学生，还有妹妹为姐姐报仇等。影片的男主角在最后成功射杀了所有的日寇，救了女主角，并训练她成为一名狙击手。影片中的女主角在短时间内就成为了一名狙击高手，并开始打击日寇。影片中还有更多的的情节，例如通过夜总会模式的情节偷取日寇的城防图，以及男女主角最后和日寇狙击手的大战等。这部电影虽然有笑点，但也让人觉得胡闹，所以希望这类抗日神片能少一些。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_11&quot;
+                                        "index": 0,
+                                        "title": "《浴血狙击》上映，抗日神片，网红的这张锥子脸，成最大笑点",
+                                        "link": "https://www.sohu.com/a/789563392_103685",
+                                        "content": "《浴血狙击》是一部新上映的网络电影，主角是徐僧和韩乐瑶等演员。电影讲述的是在一个虚构的县城中，进步同志们抗击日本侵略者的故事。这部电影被称为抗日神片，因其有许多令人难以置信的情节和笑点。其中最大的笑点是网红的那张尖尖的锥子脸。影片中有着典型的网络电影那种低俗的起点，那就是在剧烈的巷战中也总会有不必要的颜色内容出现。电影中有着一系列的荒唐情节，如日寇头领在战斗中竟然找时间去找漂亮女学生，还有妹妹为姐姐报仇等。影片的男主角在最后成功射杀了所有的日寇，救了女主角，并训练她成为一名狙击手。影片中的女主角在短时间内就成为了一名狙击高手，并开始打击日寇。影片中还有更多的的情节，例如通过夜总会模式的情节偷取日寇的城防图，以及男女主角最后和日寇狙击手的大战等。这部电影虽然有笑点，但也让人觉得胡闹，所以希望这类抗日神片能少一些。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_11"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;人情世故拖累了《海关战线》&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/789373149_116162&quot;,
-                                        &quot;content&quot;: &quot;《海关战线》是一部新上映的华语商业大片，聚焦海关题材，由谢霆锋、张学友、林嘉欣、刘雅瑟、吴镇宇和关智斌等明星主演。观众对该电影有较高期待，一方面是因为这是华语商业大片首次聚焦海关题材，另一方面是因为主演阵容强大且罕见。此外，影片由知名导演邱礼涛执导，谢霆锋还首次担任动作指导。从影片完成后观众的反馈来看，电影在故事情节、演员表现和动作场面等方面基本满足了观众的期待。编剧李敏和李升所编写的剧本与海关系统有强关联，影片展示了海关调查员的出色形象。在大场面和动作戏方面，影片的视觉呈现出众，展现了大量的海陆空追逐、爆炸和战斗场面。然而，尽管影片满足了一部分观众的期待，但整体上仍让人感到失望。影片在塑造角色和故事连贯性方面存在问题，如海域行动组的战斗力过强，角色之间的关系过于复杂，以及影片中的反派角色塑造不足等。这些问题可能是因为在创作过程中过度考虑人情世故，试图满足各个方面的需求，导致影片的整合效果不佳。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_12&quot;
+                                        "index": 0,
+                                        "title": "人情世故拖累了《海关战线》",
+                                        "link": "https://www.sohu.com/a/789373149_116162",
+                                        "content": "《海关战线》是一部新上映的华语商业大片，聚焦海关题材，由谢霆锋、张学友、林嘉欣、刘雅瑟、吴镇宇和关智斌等明星主演。观众对该电影有较高期待，一方面是因为这是华语商业大片首次聚焦海关题材，另一方面是因为主演阵容强大且罕见。此外，影片由知名导演邱礼涛执导，谢霆锋还首次担任动作指导。从影片完成后观众的反馈来看，电影在故事情节、演员表现和动作场面等方面基本满足了观众的期待。编剧李敏和李升所编写的剧本与海关系统有强关联，影片展示了海关调查员的出色形象。在大场面和动作戏方面，影片的视觉呈现出众，展现了大量的海陆空追逐、爆炸和战斗场面。然而，尽管影片满足了一部分观众的期待，但整体上仍让人感到失望。影片在塑造角色和故事连贯性方面存在问题，如海域行动组的战斗力过强，角色之间的关系过于复杂，以及影片中的反派角色塑造不足等。这些问题可能是因为在创作过程中过度考虑人情世故，试图满足各个方面的需求，导致影片的整合效果不佳。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_12"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;看了辛芷蕾饰演的女间谍，才明白杨幂在《哈尔滨1944》差在哪里&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J64FRAGK05566ZGO.html&quot;,
-                                        &quot;content&quot;: &quot;《孤战迷城》是一部新上映的军事谍战剧，由辛芷蕾主演。该剧自开播以来受到了观众的热烈讨论。辛芷蕾在剧中扮演一位军医间谍，其表演受到了积极评价。与此同时，人们不禁将她的表演与杨幂在谍战电影《哈尔滨1944》中的表现进行比较。尽管两部作品题材相似且时间背景接近，评论却大相径庭。区别主要体现在三个方面：首先，光影处理上，《哈尔滨1944》采用了伦勃朗光，这种光线处理让杨幂的脸部显得不协调且过瘦，而辛芷蕾的脸型则在相同的光线下显得更为合适；其次，着装上，杨幂的装扮过于浓艳，缺少间谍的冷酷感觉，而辛芷蕾的服饰则更符合角色特点；再者，演技上，杨幂在《哈尔滨1944》中的表现更像是偶像剧女主，缺乏间谍的冷酷和专业性，而辛芷蕾则成功地将间谍身份隐藏，直到剧情揭示。总的来说，文章指出杨幂在《哈尔滨1944》中的表现不如辛芷蕾在《孤战迷城》中的演出令人满意，并期望杨幂未来在转型谍战片方面能更加努力和投入。&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_13&quot;
+                                        "index": 0,
+                                        "title": "看了辛芷蕾饰演的女间谍，才明白杨幂在《哈尔滨1944》差在哪里",
+                                        "link": "https://www.163.com/dy/article/J64FRAGK05566ZGO.html",
+                                        "content": "《孤战迷城》是一部新上映的军事谍战剧，由辛芷蕾主演。该剧自开播以来受到了观众的热烈讨论。辛芷蕾在剧中扮演一位军医间谍，其表演受到了积极评价。与此同时，人们不禁将她的表演与杨幂在谍战电影《哈尔滨1944》中的表现进行比较。尽管两部作品题材相似且时间背景接近，评论却大相径庭。区别主要体现在三个方面：首先，光影处理上，《哈尔滨1944》采用了伦勃朗光，这种光线处理让杨幂的脸部显得不协调且过瘦，而辛芷蕾的脸型则在相同的光线下显得更为合适；其次，着装上，杨幂的装扮过于浓艳，缺少间谍的冷酷感觉，而辛芷蕾的服饰则更符合角色特点；再者，演技上，杨幂在《哈尔滨1944》中的表现更像是偶像剧女主，缺乏间谍的冷酷和专业性，而辛芷蕾则成功地将间谍身份隐藏，直到剧情揭示。总的来说，文章指出杨幂在《哈尔滨1944》中的表现不如辛芷蕾在《孤战迷城》中的演出令人满意，并期望杨幂未来在转型谍战片方面能更加努力和投入。",
+                                        "media": "网易新闻",
+                                        "refer": "ref_13"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;擦边卖肉，观众喊退钱，徐冬冬新片满屏差评，上映2小时冲上第一&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J5MOCOGP0517CI7M.html?clickfrom=w_ent&quot;,
-                                        &quot;content&quot;: &quot;由徐冬冬主演的网络电影《食人鱼》于6月27日进行了网络首映。这部电影成本低，主要由徐冬冬主演，利用了她在网络电影中的号召力。尽管面临批评，比如观众对其剧情、逻辑和表现方式的质疑，该片在上映2小时内冲上了平台的新上映和飙升榜第一，预测其票房成绩将达到千万以上。然而，影片收到了大量差评，观众对其内容不满，甚至要求退钱。该片被认为是一部标准的反面网络电影，其中包含了许多逻辑上和情节上的问题，尤其被批评的是影片中过度的性别表现。&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_14&quot;
+                                        "index": 0,
+                                        "title": "擦边卖肉，观众喊退钱，徐冬冬新片满屏差评，上映2小时冲上第一",
+                                        "link": "https://www.163.com/dy/article/J5MOCOGP0517CI7M.html?clickfrom=w_ent",
+                                        "content": "由徐冬冬主演的网络电影《食人鱼》于6月27日进行了网络首映。这部电影成本低，主要由徐冬冬主演，利用了她在网络电影中的号召力。尽管面临批评，比如观众对其剧情、逻辑和表现方式的质疑，该片在上映2小时内冲上了平台的新上映和飙升榜第一，预测其票房成绩将达到千万以上。然而，影片收到了大量差评，观众对其内容不满，甚至要求退钱。该片被认为是一部标准的反面网络电影，其中包含了许多逻辑上和情节上的问题，尤其被批评的是影片中过度的性别表现。",
+                                        "media": "网易新闻",
+                                        "refer": "ref_14"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;近期喜剧电影，票房虽一般口碑却不错，配角比主角还知名&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/786634024_120477065&quot;,
-                                        &quot;content&quot;: &quot;近期有一部新上映的喜剧电影《爸爸是外星人》，由贾冰、左小青、萌儿、侯天来、苗圃等演员出演。虽然票房表现一般，但口碑却很不错。电影讲述了老金努力成为一个满分父亲，却意外发现自己的父亲是外星人的故事。贾冰是一名80后，虽然看起来像是年近半百，但在喜剧界已经颇有成就。他的妻子看起来却非常年轻。贾冰在年轻时曾当过兵，担任过曲艺队的队长，并多次在文艺汇演中获得奖项。左小青曾是一名体操运动员，后进入表演学院学习，并在多部电影中客串角色。侯天来曾是一名工人，后考入吉林艺术学院表演系，经常在影视剧中扮演反派形象。苗圃出生在一个艺术世家，曾获得多个表演奖项，并在《穆桂英挂帅》中彻底火遍大江南北。这部电影由一众优秀演员主演，质量有保障，观众评价不错。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_15&quot;
+                                        "index": 0,
+                                        "title": "近期喜剧电影，票房虽一般口碑却不错，配角比主角还知名",
+                                        "link": "https://www.sohu.com/a/786634024_120477065",
+                                        "content": "近期有一部新上映的喜剧电影《爸爸是外星人》，由贾冰、左小青、萌儿、侯天来、苗圃等演员出演。虽然票房表现一般，但口碑却很不错。电影讲述了老金努力成为一个满分父亲，却意外发现自己的父亲是外星人的故事。贾冰是一名80后，虽然看起来像是年近半百，但在喜剧界已经颇有成就。他的妻子看起来却非常年轻。贾冰在年轻时曾当过兵，担任过曲艺队的队长，并多次在文艺汇演中获得奖项。左小青曾是一名体操运动员，后进入表演学院学习，并在多部电影中客串角色。侯天来曾是一名工人，后考入吉林艺术学院表演系，经常在影视剧中扮演反派形象。苗圃出生在一个艺术世家，曾获得多个表演奖项，并在《穆桂英挂帅》中彻底火遍大江南北。这部电影由一众优秀演员主演，质量有保障，观众评价不错。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_15"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;18部动画电影决战暑期档，二次元大年到底在“卷”什么？&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J5EOBDG705118O92.html&quot;,
-                                        &quot;content&quot;: &quot;今年的暑期档电影市场竞争激烈，特别是动画电影。从六一儿童节到八月暑假结束，暑期档共长达三个月，是电影市场全年最长的档期，也是观影高峰期。根据猫眼数据，截止到6月21日，共有93部电影预计在暑期档上映，其中动画电影有18部。这18部动画电影中，除去三部重映影片，新上映的电影也有15部。暑期档一直是动画电影上映的热门档期，尤其是受到儿童和年轻学生群体的欢迎。在今年的暑期档中，动画电影的竞争主要体现在以下几个方面：一是IP竞争，包括日本动画电影和美国动画电影在内的多个经典IP都将上映；二是情怀竞争，许多经典日漫和国漫作品的上映引发了观众的情怀；三是制作竞争，无论是技术还是剧情，动画电影在质量上的竞争都非常激烈。尽管动画电影市场竞争激烈，但是对于电影市场来说，动画电影的存在有助于吸引年轻观众和学生群体走进影院，从而缓解了暑期档的票房压力。然而，由于目前电影市场缺少头部爆款影片，因此完成更高的票房目标仍然存在挑战。&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_16&quot;
+                                        "index": 0,
+                                        "title": "18部动画电影决战暑期档，二次元大年到底在“卷”什么？",
+                                        "link": "https://www.163.com/dy/article/J5EOBDG705118O92.html",
+                                        "content": "今年的暑期档电影市场竞争激烈，特别是动画电影。从六一儿童节到八月暑假结束，暑期档共长达三个月，是电影市场全年最长的档期，也是观影高峰期。根据猫眼数据，截止到6月21日，共有93部电影预计在暑期档上映，其中动画电影有18部。这18部动画电影中，除去三部重映影片，新上映的电影也有15部。暑期档一直是动画电影上映的热门档期，尤其是受到儿童和年轻学生群体的欢迎。在今年的暑期档中，动画电影的竞争主要体现在以下几个方面：一是IP竞争，包括日本动画电影和美国动画电影在内的多个经典IP都将上映；二是情怀竞争，许多经典日漫和国漫作品的上映引发了观众的情怀；三是制作竞争，无论是技术还是剧情，动画电影在质量上的竞争都非常激烈。尽管动画电影市场竞争激烈，但是对于电影市场来说，动画电影的存在有助于吸引年轻观众和学生群体走进影院，从而缓解了暑期档的票房压力。然而，由于目前电影市场缺少头部爆款影片，因此完成更高的票房目标仍然存在挑战。",
+                                        "media": "网易新闻",
+                                        "refer": "ref_16"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;沈腾马丽下场，多部新片补强，暑期档能否再破200亿？&quot;,
-                                        &quot;link&quot;: &quot;https://www.163.com/dy/article/J5F30N3L05567FWT.html&quot;,
-                                        &quot;content&quot;: &quot;沈腾和马丽等演员新片上映，以及众多其他电影作品的补充，为2024年暑期档电影市场增加了新动力。尽管该年度暑期档开局面临挑战，票房低于前一年，但随着一系列新电影的定档，市场显示出恢复的迹象。沈腾和马丽主演的电影《接班人计划》以及改编自知名动画IP的《异人之下》等多部新片将上映，这增加了市场对暑期档票房表现的期待。不过，2024年暑期档还面临一些挑战，例如没有类似于去年同期免征国家电影事业专项资金的优惠政策，以及与欧洲杯和巴黎奥运会的赛事重合，可能会分散观众的注意力。尽管如此，如果新上映的电影能够满足市场需求，2024年暑期档的票房仍有望突破百亿大关。&quot;,
-                                        &quot;media&quot;: &quot;网易新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_17&quot;
+                                        "index": 0,
+                                        "title": "沈腾马丽下场，多部新片补强，暑期档能否再破200亿？",
+                                        "link": "https://www.163.com/dy/article/J5F30N3L05567FWT.html",
+                                        "content": "沈腾和马丽等演员新片上映，以及众多其他电影作品的补充，为2024年暑期档电影市场增加了新动力。尽管该年度暑期档开局面临挑战，票房低于前一年，但随着一系列新电影的定档，市场显示出恢复的迹象。沈腾和马丽主演的电影《接班人计划》以及改编自知名动画IP的《异人之下》等多部新片将上映，这增加了市场对暑期档票房表现的期待。不过，2024年暑期档还面临一些挑战，例如没有类似于去年同期免征国家电影事业专项资金的优惠政策，以及与欧洲杯和巴黎奥运会的赛事重合，可能会分散观众的注意力。尽管如此，如果新上映的电影能够满足市场需求，2024年暑期档的票房仍有望突破百亿大关。",
+                                        "media": "网易新闻",
+                                        "refer": "ref_17"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;影版《三叉戟》终面世，高口碑脑洞儿童片、盖&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/780235769_580553&quot;,
-                                        &quot;content&quot;: &quot;过去一周，中国内地电影市场新上映影片较多，但整体表现疲软，票房有所下降。由王千源和王景春主演的大尺度犯罪片《彷徨之刃》是表现较好的新片之一，票房达4119万。另外，张震监制的爱情片《错过你的那些年》和张国立执导的犯罪电影《朝云暮雨》上映，但表现均一般。好莱坞动作片《特技狂人》和恐怖片《密室逃脱》也加入了新片行列。本周，即将上映的影片包括警匪电影《三叉戟》、儿童奇幻片《朱同在三年级丢失了超能力》、纪录片《再会长江》和盖·里奇执导的二战题材电影《盟军敢死队》。这些影片涵盖了多种类型，满足了不同观众的需求。此外，线上资源方面，推荐去年备受好评的法国赛博朋克科幻动画电影《火星特快》。这部电影在戛纳电影节首映，并获得不错的评价，豆瓣评分7.9分。总之，无论是院线新片还是线上资源，本周的电影市场都提供了丰富的选择，观众可以根据自己的兴趣进行选择。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_18&quot;
+                                        "index": 0,
+                                        "title": "影版《三叉戟》终面世，高口碑脑洞儿童片、盖",
+                                        "link": "https://www.sohu.com/a/780235769_580553",
+                                        "content": "过去一周，中国内地电影市场新上映影片较多，但整体表现疲软，票房有所下降。由王千源和王景春主演的大尺度犯罪片《彷徨之刃》是表现较好的新片之一，票房达4119万。另外，张震监制的爱情片《错过你的那些年》和张国立执导的犯罪电影《朝云暮雨》上映，但表现均一般。好莱坞动作片《特技狂人》和恐怖片《密室逃脱》也加入了新片行列。本周，即将上映的影片包括警匪电影《三叉戟》、儿童奇幻片《朱同在三年级丢失了超能力》、纪录片《再会长江》和盖·里奇执导的二战题材电影《盟军敢死队》。这些影片涵盖了多种类型，满足了不同观众的需求。此外，线上资源方面，推荐去年备受好评的法国赛博朋克科幻动画电影《火星特快》。这部电影在戛纳电影节首映，并获得不错的评价，豆瓣评分7.9分。总之，无论是院线新片还是线上资源，本周的电影市场都提供了丰富的选择，观众可以根据自己的兴趣进行选择。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_18"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;我区电影票房498.16万元&quot;,
-                                        &quot;link&quot;: &quot;http://mini.eastday.com/nsa/240612041759391294288.html&quot;,
-                                        &quot;content&quot;: &quot;根据内蒙古日报的报道，我区在端午档期间的电影票房达到了498.16万元，同时有12.7万人次的观众走进影院观影。在这个期间，三部电影《我才不要和你做朋友呢》、《扫黑·决不放弃》和《加菲猫家族》占据了票房的前三名。影院成为了热门的打卡地，许多群众团体购票观影。呼和浩特市万达影城的经理孙慧婷表示，新上映的电影内容丰富多样，能够满足观众不同的口味和选择。今年端午档有超过10部新片上映，不仅有国内的剧情片和国外电影，还包括一些小众电影。&quot;,
-                                        &quot;media&quot;: &quot;东方网&quot;,
-                                        &quot;refer&quot;: &quot;ref_19&quot;
+                                        "index": 0,
+                                        "title": "我区电影票房498.16万元",
+                                        "link": "http://mini.eastday.com/nsa/240612041759391294288.html",
+                                        "content": "根据内蒙古日报的报道，我区在端午档期间的电影票房达到了498.16万元，同时有12.7万人次的观众走进影院观影。在这个期间，三部电影《我才不要和你做朋友呢》、《扫黑·决不放弃》和《加菲猫家族》占据了票房的前三名。影院成为了热门的打卡地，许多群众团体购票观影。呼和浩特市万达影城的经理孙慧婷表示，新上映的电影内容丰富多样，能够满足观众不同的口味和选择。今年端午档有超过10部新片上映，不仅有国内的剧情片和国外电影，还包括一些小众电影。",
+                                        "media": "东方网",
+                                        "refer": "ref_19"
                                 }, {
-                                        &quot;index&quot;: 0,
-                                        &quot;title&quot;: &quot;百亿票房热血动画、好莱坞奇幻、管虎彭于晏戛纳获奖力作国内上映&quot;,
-                                        &quot;link&quot;: &quot;https://www.sohu.com/a/785445277_580553&quot;,
-                                        &quot;content&quot;: &quot;本周，中国内地电影院线上新多部影片。票房方面，尽管端午档期新片的整体表现低于预期，一周内票房仅报收4.08亿，较前一周下降了2.6%。其中，《我才不要和你做朋友呢》以6565万的票房夺得周冠，《扫黑·决不放弃》和《谈判专家》分列周榜第二和第三。好莱坞大片《疯狂的麦克斯：狂暴女神》票房排名第六。新上映影片方面，本周六，即6月15日，日本动画电影《排球少年！！垃圾场决战》将会登陆内地院线，此片在日本上映后获得现象级成绩。此外，由管虎执导，彭于晏和佟丽娅主演的《狗阵》也将上映，该片在戛纳电影节获得一种关注单元大奖。还有奇幻喜剧《无中生友》和家庭温情喜剧《爸爸是外星人》。线上资源方面，本周将介绍在烂番茄获得97%好评的美国黑色爱情喜剧《职业杀手》。总体来说，本周内地影市新品众多，类型丰富，包括了动画片、犯罪片、喜剧片等，满足不同观众的观影需求。&quot;,
-                                        &quot;media&quot;: &quot;搜狐新闻&quot;,
-                                        &quot;refer&quot;: &quot;ref_20&quot;
+                                        "index": 0,
+                                        "title": "百亿票房热血动画、好莱坞奇幻、管虎彭于晏戛纳获奖力作国内上映",
+                                        "link": "https://www.sohu.com/a/785445277_580553",
+                                        "content": "本周，中国内地电影院线上新多部影片。票房方面，尽管端午档期新片的整体表现低于预期，一周内票房仅报收4.08亿，较前一周下降了2.6%。其中，《我才不要和你做朋友呢》以6565万的票房夺得周冠，《扫黑·决不放弃》和《谈判专家》分列周榜第二和第三。好莱坞大片《疯狂的麦克斯：狂暴女神》票房排名第六。新上映影片方面，本周六，即6月15日，日本动画电影《排球少年！！垃圾场决战》将会登陆内地院线，此片在日本上映后获得现象级成绩。此外，由管虎执导，彭于晏和佟丽娅主演的《狗阵》也将上映，该片在戛纳电影节获得一种关注单元大奖。还有奇幻喜剧《无中生友》和家庭温情喜剧《爸爸是外星人》。线上资源方面，本周将介绍在烂番茄获得97%好评的美国黑色爱情喜剧《职业杀手》。总体来说，本周内地影市新品众多，类型丰富，包括了动画片、犯罪片、喜剧片等，满足不同观众的观影需求。",
+                                        "media": "搜狐新闻",
+                                        "refer": "ref_20"
                                 }]
                         }]
                 }
         }],
-        &quot;usage&quot;: {}
+        "usage": {}
 }
 ```

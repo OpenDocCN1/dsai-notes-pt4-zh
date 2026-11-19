@@ -1,15 +1,10 @@
+
 # DeepSeek：算力和成本方面的优势
 
 > 来源：[https://datawhaler.feishu.cn/docx/ALMpdRKpToWt6nxjazmc6BubnAw](https://datawhaler.feishu.cn/docx/ALMpdRKpToWt6nxjazmc6BubnAw)
-
 > Datawhale联合浙大发起了《能应用的DeepSeek通识课》
-
 > 本内容是浙江大学DeepSeek系列公开课其中的一篇，邀请了王则可研究员进行主题演讲
-
 > 原演讲主题——《DeepSeek模型优势：算力、成本角度解读》
-
->
-
 > 欢迎大家 [**学习打卡、投稿笔记**](https://datawhaler.feishu.cn/share/base/form/shrcnhopDrI77ZzTkzxBoE0pCmd)~
 
 <https://player.bilibili.com/player.html?bvid=1hoPYemEER>

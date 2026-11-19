@@ -1,3 +1,4 @@
+
 # 14.生成式 AI 应用生命周期
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/FRPEdRVxNoSQ19xI2AmcyKvtnWb](https://gotoaiworld.feishu.cn/docx/FRPEdRVxNoSQ19xI2AmcyKvtnWb)
@@ -13,11 +14,8 @@
 在本章中，您将：
 
 +   理解从 MLOps 到 LLMOps 的范式转变
-
 +   了解 LLM 生命周期
-
 +   生命周期工具
-
 +   生命周期指标化与评估
 
 ## 理解从 MLOps 到 LLMOps 的范式转变
@@ -31,13 +29,9 @@ LLM 是人工智能工具库中的新利器，它们在分析和生成任务中�
 请注意，在 LLMOps 中，我们更关注应用开发者，强调集成作为关键点，采用“模型即服务”的方式，并关注以下指标：
 
 +   质量：响应质量
-
 +   伤害：负责任的 AI
-
 +   诚实：响应的依据性（合理吗？正确吗？）
-
 +   成本：解决方案预算
-
 +   延迟：平均响应时间（每个 token）
 
 ## LLM 生命周期
@@ -79,9 +73,7 @@ Azure AI 支持多种资源，帮助您管理运营、服务、项目、向量�
 使用 PromptFlow，从概念验证（POC）到大规模应用构建：
 
 +   在 VS Code 中设计和构建应用，支持可视化和功能性工具
-
 +   轻松测试和微调应用，确保 AI 质量
-
 +   利用 Azure AI Studio 进行云端集成和迭代，快速推送和部署
 
 ## 太棒了！继续学习吧！

@@ -1,3 +1,4 @@
+
 # 1.4 Agent
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/QweqdsRDOoFxuTxIL8HcNu6nnMc](https://kq4b3vgg5b.feishu.cn/docx/QweqdsRDOoFxuTxIL8HcNu6nnMc)
@@ -6,10 +7,7 @@
 
 ## 本项目的主要内容包括：
 
-1.  开&闭源基座大模型选择优劣势分析；
-
-1.  多场景、多模态功能实现技巧与经验分享；
-
-1.  LangChain集成大模型与功能的多种方法；
-
-1.  企业级项目落地，完整前后端及完整开源代码。
+1. 开&闭源基座大模型选择优劣势分析；
+1. 多场景、多模态功能实现技巧与经验分享；
+1. `LangChain`集成大模型与功能的多种方法；
+1. 企业级项目落地，完整前后端及完整开源代码。

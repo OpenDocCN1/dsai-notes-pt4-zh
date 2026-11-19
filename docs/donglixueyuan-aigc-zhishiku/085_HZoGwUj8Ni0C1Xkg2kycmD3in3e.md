@@ -1,284 +1,218 @@
+
 # AI 主流工具精选
 
-> 来源：[https://docs.feishu.cn/docx/VmAjdLrfaoTEeHxDK24cbX4fnYf](https://docs.feishu.cn/docx/VmAjdLrfaoTEeHxDK24cbX4fnYf)
+> 来源：`https://docs.feishu.cn/docx/VmAjdLrfaoTEeHxDK24cbX4fnYf`
 
-# AI 写作
+## AI 写作
 
-ChatGPT:
+- ChatGPT
+  `https://chat.openai.com`
 
-https://chat.openai.com
+- NotionAl
+  `https://www.notion.so/product/ai`
 
-NotionAl:
+- A.l.Data Sidekick:AI工具编写SQL 文档等的速度提高10倍
+  `https://www.airops.com/`
 
-https://www.notion.so/product/ai
+- Writesonic:人工智能写作辅助工具
+  `https://writesonic.com/`
 
-A.l.Data Sidekick:AI工具编写SQL 文档等的速度提高10倍
+- copyai:使用Al编写更好的营销文案和内容
+  `https://www.copy.ai/`
 
-https://www.airops.com/
+- CharacterAl:AI人工交互
+  `https://beta.character.ai/`
 
-Writesonic:人工智能写作辅助工具
+- Fireflies:该工具可插入Zoom、Teams或Webex等流行的视频会议工具，并自动执行做笔记和创建转录的过程
+  `https://fireflies.ai/`
 
-https://writesonic.com/
+- Jasper: AI 文案写作工具
+  `https://www.jasper.ai/`
 
-copyai:使用Al编写更好的营销文案和内容
+- Outplay
+  `https://outplayhq.com/`
 
-https://www.copy.ai/
+- CoWriter:Al辅助写作
+  `https://cowriter.org/login`
 
-CharacterAl:AI人工交互
+## AI 绘画
 
-https://beta.character.ai/
+- Midjourney:Al绘画神器
+  `https://www.midjourney.com/`
 
-Fireflies:该工具可插入Zoom、Teams或Webex等流行的视频会议工具，并自动执行做笔记和创建转录的过程
+- PhotoRoom:擦除任何背景、对象
+  `https://www.photoroom.com/`
 
-https://fireflies.ai/
+- 造梦师:只需一句话，让你的文字变成画作
+  `https://printidea.art/`
 
-Jasper: AI 文案写作工具
+- ARC Lab:一款提供照片修复、抠图、画质增强的在线工具
+  `https://arc.tencent.com/zh/ai-demos/faceRestoration`
 
-https://www.jasper.ai/
+- Artbreeder:人工智能合成创意工具
+  `https://www.artbreeder.com/`
 
-Outplay:
+- StockimgAl:生成各种各样的设计元素，包括logo 插画、图片壁纸等
+  `https://stockimg.ai/`
 
-https://outplayhq.com/
+- nijijourney:二次元ai绘画
+  `https://niijourney.com/zh/`
 
-CoWriter:Al辅助写作
+- Getimgai:关键词生成图片的AI工具
+  `https://getimg.ai/`
 
-https://cowriter.org/login
+- Dreamlikeart:Al图像生成
+  `https://dreamlike.art/`
 
-# AI 绘画
+- 文心一格飞桨:AI艺术和创意辅助平台
+  `https://yige.baidu.com/`
 
-Midjourney:Al绘画神器
+- Phygital+:Al图像生成
+  `https://phygital.plus`
 
-https://www.midjourney.com/
+- Beautifulai:Al生成PPT
+  `https://www.beautiful.ai/`
 
-PhotoRoom:擦除任何背景、对象
+## AI 音频
 
-https://www.photoroom.com/
+- Brain.fm:专注、放松、冥想和睡眠，聆听为您的大脑量身打造的音乐
+  `https://www.brain.fm/`
 
-造梦师:只需一句话，让你的文字变成画作
+- Soundraw:人工智能生成音乐
+  `https://soundraw.io/`
 
-https://printidea.art/
+- Endel:个性化背景音，帮助您集中注意力、放松和睡眠
+  `https://endel.io/`
 
-ARC Lab:一款提供照片修复、抠图、画质增强的在线工具
+- Riffusion:实时音乐和音频生成库
+  `https://www.riffusion.com/`
+  `https://github.com/riffusion/riffusion`
 
-https://arc.tencent.com/zh/ai-demos/faceRestoration
+- Papercup:人工智能配音和视频翻译软件
+  `https://www.papercup.com/`
 
-Artbreeder:人工智能合成创意工具
+- LALAL.AI:从任何音频和视频中提取人声、伴奏和各种乐器
+  `https://www.lalal.ai/`
 
-https://www.artbreeder.com/
+- Murf:使用多功能AI语音生成器从文本到语音
+  `https://murf.ai/`
 
-StockimgAl:生成各种各样的设计元素，包括logo 插画、图片壁纸等 https://stockimg.ai/
+- PolyAl:语音助手
+  `https://poly.ai/`
 
-nijijourney:二次元ai绘画
+- Voicemod:语音实时变声器
+  `https://www.voicemod.net/zh/`
 
-https://niijourney.com/zh/
+- Boomy:人工智能生成音乐
+  `https://boomy.com/`
 
-Getimgai:关键词生成图片的AI工具
+- Mubert:人工智能生成音乐
+  `https://mubert.com/`
 
-https://getimg.ai/
+## AI 视频
 
-Dreamlikeart:Al图像生成
+- Runway:AI魔法工具
+  `https://runwayml.com`
 
-https://dreamlike.art/
+- Cascadeur:人工智能辅助关键帧动画软件
+  `https://cascadeur.com/`
 
-文心一格飞桨:AI艺术和创意辅助平台
+- Synthesia:人工智能视频生成
+  `https://www.synthesia.io/`
 
-https://yige.baidu.com/
+- Pollinations:文本转视频、图片
+  `https://pollinations.ai/`
 
-Phygital+:Al图像生成
+- Zubtitle:为视频添加字幕和在线编辑视频
+  `https://zubtitle.com/`
 
-https://phygital.plus
+- Munch:人工智能提取视频中的最引人入胜、最流行和最有影响力的片段
+  `https://www.getmunch.com/`
 
-Beautifulai:Al生成PPT
+- Fliki:将文本变成带有AI语音的视频
+  `https://fliki.ai/`
 
-https://www.beautiful.ai/
+- Peech:个性化的自动视频编辑和管理平台
+  `https://www.peech-ai.com/`
 
-# AI 音频
+- DreamFace:Al动画照片应用程序
+  `https://dreamfaceapp.com/`
 
-Brain.fm:专注、放松、冥想和睡眠，聆听为您的大脑量身打造的音乐 https://www.brain.fm/
+- D-ID:人工智能视频生成
+  `https://www.d-id.com/`
 
-Soundraw:人工智能生成音乐
+## 音频工具
 
-https://soundraw.io/
+- `http://Lovo.ai`
+- `http://Speechify.com`
+- `http://Murf.ai`
+- `http://Media.io`
 
-Endel:个性化背景音，帮助您集中注意力、放松和睡眠
+## 网站搭建工具
 
-https://endel.io/
+- `http://10web.io`
+- `http://Durable.co`
+- `http://Alliai.com`
+- `http://Subpage.app`
 
-Riffusion:实时音乐和音频生成库
+## 视频工具
 
-https://www.riffusion.com/
+- `http://Steve.ai`
+- `http://Pictory.ai`
+- `http://Deepbrain.io`
+- `http://Heygen.com`
 
-https://github.com/riffusion/riffusion
+## AI 搜索工具
 
-Papercup:人工智能配音和视频翻译软件
+- `http://Paperpal.com`
+- `http://Beta.monic.ai`
+- `http://Consensus.app`
+- `http://Perplexity.ai`
+- `http://You.com`
 
-https://www.papercup.com/
+## 代码工具
 
-LALAL.AI:从任何音频和视频中提取人声、伴奏和各种乐器 https://www.lalal.ai/
+- `http://Tabnine.com`
+- `http://Codium.ai`
+- `http://Dora.run/ai`
+- `http://Mutable.ai`
+- `http://Superagi.com`
 
-Murf:使用多功能AI语音生成器从文本到语音
+## 撸 PPT 工具
 
-https://murf.ai/
+- `http://Beautiful.ai`
+- `http://Simplified.com`
+- `http://Slidesgo.com`
+- `http://Sendsteps.com`
 
-PolyAl:语音助手
+## 做内容工具
 
-https://poly.ai/
-
-Voicemod:语音实时变声器
-
-https://www.voicemod.net/zh/
-
-Boomy:人工智能生成音乐
-
-https://boomy.com/
-
-Mubert:人工智能生成音乐
-
-https://mubert.com/
-
-# AI 视频
-
-Runway:AI魔法工具
-
-https://runwayml.com
-
-Cascadeur:人工智能辅助关键帧动画软件
-
-https://cascadeur.com/
-
-Synthesia:人工智能视频生成
-
-https://www.synthesia.io/
-
-Pollinations:文本转视频、图片
-
-https://pollinations.ai/
-
-Zubtitle:为视频添加字幕和在线编辑视频
-
-https://zubtitle.com/
-
-Munch:人工智能提取视频中的最引人入胜、最流行和最有影响力的片段 https://www.getmunch.com/
-
-Fliki:将文本变成带有AI语音的视频
-
-https://fliki.ai/
-
-Peech:个性化的自动视频编辑和管理平台
-
-https://www.peech-ai.com/
-
-DreamFace:Al动画照片应用程序
-
-https://dreamfaceapp.com/
-
-D-ID:人工智能视频生成
-
-https://www.d-id.com/
-
-# 音频工具:
-
-1.  http://Lovo.ai
-
-1.  http://Speechify.com
-
-1.  http://Murf.ai
-
-1.  http://Media.io
-
-# 网站搭建工具
-
-1.  http://10web.io
-
-1.  http://Durable.co
-
-1.  http://Alliai.com
-
-1.  http://Subpage.app
-
-# 视频工具
-
-1.  http://Steve.ai
-
-1.  http://Pictory.ai
-
-1.  http://Deepbrain.io
-
-1.  http://Heygen.com
-
-# AI搜索工具
-
-1.  http://Paperpal.com
-
-1.  http://Beta.monic.ai
-
-1.  http://Consensus.app
-
-1.  http://Perplexity.ai
-
-1.  http://You.com
-
-# 代码工具
-
-1.  http://Tabnine.com
-
-1.  http://Codium.ai
-
-1.  http://Dora.run/ai
-
-1.  http://Mutable.ai
-
-1.  http://Superagi.com
-
-# 撸PPT工具
-
-1.  http://Beautiful.ai
-
-1.  http://Simplified.com
-
-1.  http://Slidesgo.com
-
-1.  http://Sendsteps.com
-
-# 做内容工具
-
-1.  http://Lovo.ai
-
-1.  http://Writesonic.com
-
-1.  http://Jasper.ai
-
-1.  http://Stockimg.ai
-
-1.  http://Copy.ai
+- `http://Lovo.ai`
+- `http://Writesonic.com`
+- `http://Jasper.ai`
+- `http://Stockimg.ai`
+- `http://Copy.ai`
 
 试一试，工作效率快10倍
 
-# 极客时间 AIGC 知识库（持续更新中）
+## 极客时间 AIGC 知识库（持续更新中）
 
-> **更新内容：**AIGC 及 ChatGPT 相关 **市场格局趋势、热点快讯、深度报道、赚钱案例、工作/生活/学习**提效案例、最新工具、大厂落地及融资动态
+> 更新内容：AIGC 及 ChatGPT 相关 市场格局趋势、热点快讯、深度报道、赚钱案例、工作/生活/学习提效案例、最新工具、大厂落地及融资动态
 
-> **学习指南：**
+> 学习指南：
 
-+    [【AI快讯】3分钟速看大事件](https://longalong.feishu.cn/wiki/wikcnLSAB9bg1OFrfP1ssHiS40g)** **，快速概览 AI 届每周大事件，不错过重点
-
-+    [【追前沿】趋势和风向](https://longalong.feishu.cn/wiki/wikcnWVtG5UA5DL59zmnWL3AfBf) ，看看别人的深度解读，整体上理解行业格局变化、行业价值链变迁，为抓住机会提供「认知层」的线索
-
-+    [【观案例】应用与变现案例](https://longalong.feishu.cn/wiki/wikcneAKpN3u473N7J9EAC4Ga0b)** **，看看 AI 相关工作/学习/生活提效案例、创造案例、赚钱案例，你可以做什么？这些真实案例为你提供「可操作」的线索
-
-+    [【收藏夹】AI 工具大全](https://longalong.feishu.cn/wiki/wikcnAawG8etdr1pp1ni6m0AqHf)** **，获取最全、最新、最主流的各方面工具，看看别人已经用 AI 做了什么创造，太多了不知道关注/使用哪个？看看测评吧~
-
-+    [【Prompt】提示指令库](https://longalong.feishu.cn/wiki/wikcn6By97y03xfvTs6Bee5mzJd)** **，为你提供实践指令，具体实践时不知道怎么用？来复制这里的指令试试。更多指令参见「更多提示词」sheet
-
-+   [【搜藏家】AI 经典开源项目](https://longalong.feishu.cn/wiki/wikcn6DWQe1m39tTOby8mH2fBzf)** **，经典项目和库，不错过最好的
-
-+   [【系统学】教程和课程](https://longalong.feishu.cn/wiki/wikcnFG6U23f0prVzYQW8e7sbAd)** **，那些最最最主流的工具，为你提供模型、注册、镜像站、使用技巧、调试技巧、提示词等超全一条龙教程，想实操？跟着这个来
-
-+   [【追公司】相关公司及融资动态](https://longalong.feishu.cn/wiki/wikcnYrIiivNiy0LIAGvcvUjO0c)** **，看看大公司在关注和投资什么，他们的选择往往意味着行业的价值焦点，观测其周边生态，也许能喝到汤~
+- [【AI快讯】3分钟速看大事件](https://longalong.feishu.cn/wiki/wikcnLSAB9bg1OFrfP1ssHiS40g)，快速概览 AI 届每周大事件，不错过重点
+- [【追前沿】趋势和风向](https://longalong.feishu.cn/wiki/wikcnWVtG5UA5DL59zmnWL3AfBf)，看看别人的深度解读，整体上理解行业格局变化、行业价值链变迁，为抓住机会提供「认知层」的线索
+- [【观案例】应用与变现案例](https://longalong.feishu.cn/wiki/wikcneAKpN3u473N7J9EAC4Ga0b)，看看 AI 相关工作/学习/生活提效案例、创造案例、赚钱案例，你可以做什么？这些真实案例为你提供「可操作」的线索
+- [【收藏夹】AI 工具大全](https://longalong.feishu.cn/wiki/wikcnAawG8etdr1pp1ni6m0AqHf)，获取最全、最新、最主流的各方面工具，看看别人已经用 AI 做了什么创造，太多了不知道关注/使用哪个？看看测评吧~
+- [【Prompt】提示指令库](https://longalong.feishu.cn/wiki/wikcn6By97y03xfvTs6Bee5mzJd)，为你提供实践指令，具体实践时不知道怎么用？来复制这里的指令试试。更多指令参见「更多提示词」sheet
+- [【搜藏家】AI 经典开源项目](https://longalong.feishu.cn/wiki/wikcn6DWQe1m39tTOby8mH2fBzf)，经典项目和库，不错过最好的
+- [【系统学】教程和课程](https://longalong.feishu.cn/wiki/wikcnFG6U23f0prVzYQW8e7sbAd)，那些最最最主流的工具，为你提供模型、注册、镜像站、使用技巧、调试技巧、提示词等超全一条龙教程，想实操？跟着这个来
+- [【追公司】相关公司及融资动态](https://longalong.feishu.cn/wiki/wikcnYrIiivNiy0LIAGvcvUjO0c)，看看大公司在关注和投资什么，他们的选择往往意味着行业的价值焦点，观测其周边生态，也许能喝到汤~
 
 ## AI 时代，没有权威，谁先关注，谁先行动，谁在未来就能抢占更多话语权。
 
-## **加入****【极客时间 AIGC 交流群】****，抢先获取一手信息 👇🏻**
+## 加入【极客时间 AIGC 交流群】，抢先获取一手信息 👇🏻
 
 | ![](img/bf36336356ddf27eb1bcc688807061ae.png) |
 | --- |

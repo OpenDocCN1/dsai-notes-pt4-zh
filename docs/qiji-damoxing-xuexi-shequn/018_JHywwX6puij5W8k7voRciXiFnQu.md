@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（12月 12日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/E5ocdZ72kosDTAx250GcFgShnab](https://miracleplus.feishu.cn/docx/E5ocdZ72kosDTAx250GcFgShnab)
 
-# 资讯
+## 资讯
 
 ### 谷歌发布新一代大模型
 
@@ -66,7 +67,7 @@ Google DeepMind在视频生成领域也表现突出，带来了两篇获奖论�
 
 ![](img/d07d6bc0fb4d8822679e0aecd1018c5f.png)
 
-# 推特
+## 推特
 
 ### ChatGPT 现已集成到 iOS、iPadOS 和 macOS 的 Apple 体验中
 
@@ -136,7 +137,7 @@ BLENDERGPT 现已全面上线，无需等待名单。
 
 [1PPL36FMeOS7VkWh.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NHw9bXpUdofyLNxjd6tcdJF3nRd)
 
-# 信号
+## 信号
 
 ### AMAGO-2: Breaking the Multi-Task Barrier in Meta-Reinforcement Learning with Transformers
 
@@ -146,7 +147,7 @@ BLENDERGPT 现已全面上线，无需等待名单。
 
 学术报告链接：https://arxiv.org/abs/2411.11188
 
-这篇文章探讨了“多任务障碍”，并说明诸如值分类等抗规模损失函数有助于修复它，而无需任何新的假设。强化学习可以通过借用序列建模的细节来改进，而不需要将强化学习变成监督学习。有一种RL 技巧可以将 Q 学习转化为分类，还可以快速解决多任务强化学习最不必要的问题：每个任务的训练损失的规模随着时间的推移而变化不均匀。这种情况发生在监督学习中会很奇怪，而损失函数的改变可以在强化学习中修补它。多任务强化学习有更好的解决方案，但上下文适应需要修正，因为它最适合解决的问题涉及太多任务。我们会训练一个序列模型，以适应之前的尝试的记忆。这里的实验陷入了狭窄的领域。我们需要更多任务来泛化。
+这篇文章探讨了“多任务障碍”，并说明诸如值分类等抗规模损失函数有助于修复它，而无需任何新的假设。强化学习可以通过借用序列建模的细节来改进，而不需要将强化学习变成监督学习。有一种RL 技巧可以将 Q 学习转化为分类，还可以快速解决多任务强化学习最不必要的问题：每个任务的训练损失的规模随着时间而变化不均匀。这种情况发生在监督学习中会很奇怪，而损失函数的改变可以在强化学习中修补它。多任务强化学习有更好的解决方案，但上下文适应需要修正，因为它最适合解决的问题涉及太多任务。我们会训练一个序列模型，以适应之前的尝试的记忆。这里的实验陷入了狭窄的领域。我们需要更多任务来泛化。
 
 ![](img/85e478ea9fc58abb1e421333516ccde2.png)
 
@@ -186,6 +187,8 @@ BLENDERGPT 现已全面上线，无需等待名单。
 
 学术报告链接：https://generalist-distillation.github.io/
 
+
+
 RLDG 是一个将专业 RL 策略提炼为通用机器人策略的框架。通过这种方式训练的通用机器人比使用人类演示的传统微调方法表现出更高的性能，并且比提炼出来的 RL 策略具有更强的泛化能力。
 
 ![](img/895aa49cf5f06a5575d1b8054769bbb8.png)
@@ -196,7 +199,7 @@ RLDG 是一个将专业 RL 策略提炼为通用机器人策略的框架。通�
 
 贡献人：
 
-https://aismartcube.com/?ref=producthunt
+`https://aismartcube.com/?ref=producthunt`
 
 AISmartCube 是您的低代码平台，致力于构建、自动化和优化 AI 工具与助手。通过访问丰富的预制解决方案库，您可以轻松地选择适合的模块来满足不同需求，无需从零开始开发，显著降低技术门槛。平台还支持流畅的工作流程自动化，将繁琐的任务一键简化，让您的日常操作更加高效。此外，AISmartCube 提供公共知识库的无缝集成功能，使您的 AI 工具和助手拥有更强大的知识支持和推理能力，从而更智能地完成复杂任务。不论您是初创企业、企业团队，还是个人开发者，AISmartCube 都是您创新与效率提升的最佳助手，让 AI 工具的创建变得前所未有的简单！
 
@@ -206,7 +209,7 @@ AISmartCube 是您的低代码平台，致力于构建、自动化和优化 AI �
 
 贡献人：
 
-https://www.remention.ai/?ref=producthunt
+`https://www.remention.ai/?ref=producthunt`
 
 Remention 是一款强大的在线监控工具，可以实时追踪数十亿次在线对话。它通过精准的数据分析和智能算法，帮助用户发现与其产品相关的最佳提及位置。不论是在社交媒体、论坛、评论区，还是其他在线平台，Remention 都能迅速识别潜在商机，为用户提供清晰的互动路径。
 
@@ -220,11 +223,11 @@ Remention 是一款强大的在线监控工具，可以实时追踪数十亿次�
 
 贡献人：
 
-https://github.com/gpustack/gpustack
+`https://github.com/gpustack/gpustack`
 
 GPUStack 是一个用于运行 AI 模型的开源 GPU 集群管理器。
 
-**主要特点：**
+主要特点：
 
 广泛的硬件兼容性：可在 Apple MacBook、Windows PC 和 Linux 服务器中运行不同品牌的 GPU。
 
@@ -234,7 +237,7 @@ GPUStack 是一个用于运行 AI 模型的开源 GPU 集群管理器。
 
 分布式推理：支持单节点多 GPU 和多节点推理和服务。
 
-多推理后端：支持 llama-box（llama.cpp）和 vLLM 作为推理后端。
+多推理后端：支持 `llama-box`（`llama.cpp`）和 `vLLM` 作为推理后端。
 
 轻量级 Python 包：最小的依赖性和操作开销。
 
@@ -254,7 +257,7 @@ GPU 指标监控：实时监控 GPU 性能和利用率。
 
 贡献人：
 
-https://techcrunch.com/2024/12/11/albert-invent-hopes-to-revolutionize-the-chemicals-sector-with-its-ai-platform/
+`https://techcrunch.com/2024/12/11/albert-invent-hopes-to-revolutionize-the-chemicals-sector-with-its-ai-platform/`
 
 Albert Invent，致力于通过人工智能平台变革化学行业，最近成功完成了由 Coatue 主导的 2250 万美元 A 轮融资。该公司提供的 AI 平台，名为 Albert Breakthrough，能够基于过去化学实验的数据帮助化学家们在制定化学品时进行分子级的数据分析。平台结合了结构化数据和公司专有的 AI 模型，旨在加速化学产品的开发，提升产品质量。其核心能力包括实时生成毒理学预测，并且在许多标准行业模型中表现优异。
 
@@ -262,7 +265,7 @@ Albert Invent 的客户包括 Chemours、Solenis、Keystone Industries、Applied
 
 在此前的融资中，Albert Invent 已获得了来自 Index Ventures 的种子轮投资（2022 年底）。此次 A 轮融资的其他参与者还包括 TCV、Index Ventures、F-Prime 和 Homebrew。David Schneider，Coatue 的普通合伙人表示，支持 Albert Invent 是因为它通过最新的 AI 技术带来化学研究的高效性和商业效益。Nouryon 的首席技术官 Johan Landfors 也表示，Albert Breakthrough 已成为其产品开发的关键工具。
 
-公司官网：https://www.albertinvent.com/
+公司官网：`https://www.albertinvent.com/`
 
 ![](img/31b3769b837c4fccc1ea721dc10e7011.png)
 
@@ -270,7 +273,7 @@ Albert Invent 的客户包括 Chemours、Solenis、Keystone Industries、Applied
 
 贡献人：
 
-https://techcrunch.com/2024/12/11/yc-backed-finny-helps-financial-advisors-find-new-clients/
+`https://techcrunch.com/2024/12/11/yc-backed-finny-helps-financial-advisors-find-new-clients/`
 
 Finny是一家由Y Combinator支持的初创公司，致力于利用人工智能帮助财务顾问更高效地找到潜在客户。该平台通过AI分析帮助财务顾问筛选符合他们目标客户特征的潜在客户，并根据客户转换的可能性提供优先级评分。通过这一方式，Finny帮助顾问减少了对不合格客户的时间浪费，并且优化了客户获取过程，提供类似“热”客户的潜在机会。
 
@@ -280,15 +283,15 @@ Finny成立于2023年底，并于2024年夏季加入了Y Combinator。公司于2
 
 未来，Finny计划利用新的资金扩大工程团队，并进一步提升产品能力。目前，Finny的竞争对手包括ZoomInfo、LinkedIn Sales Navigator、Crunchbase和Pitchbook等平台。此外，还有一些市场平台也在匹配客户与顾问，像Farther、Savvy Wealth和Robinhood等。
 
-公司官网：https://www.finnyai.com/
+公司官网：`https://www.finnyai.com/`
 
 ![](img/35c4545de2ec280f93cd3ca8f4c6820b.png)
 
-### **Lumen Orbit成功筹集1100**万美元种子轮资金，吸引200多家风投关注
+### Lumen Orbit成功筹集1100万美元种子轮资金，吸引200多家风投关注
 
 贡献人：
 
-https://techcrunch.com/2024/12/11/200-vcs-wanted-to-get-into-lumen-orbits-11m-seed-round/
+`https://techcrunch.com/2024/12/11/200-vcs-wanted-to-get-into-lumen-orbits-11m-seed-round/`
 
 Lumen Orbit是一家致力于在太空中建立数据中心的初创公司，近期完成了1100万美元的种子轮融资，估值达到4000万美元。该公司位于华盛顿州的雷德蒙德市，凭借其创新的太空数据中心概念，迅速吸引了包括NFX、Fuse.VC、Soma Capital等多家风投的兴趣，并获得了Andreessen Horowitz、Sequoia等知名风投的支持。NFX的合伙人Morgan Beller将加入Lumen Orbit的董事会。Lumen Orbit的融资成功突显了其作为Y Combinator 2024年夏季批次最受关注的初创公司之一的潜力。
 
@@ -298,15 +301,15 @@ Lumen Orbit的核心目标是通过构建太空数据中心，解决地球上数
 
 Lumen Orbit的技术不仅能够降低数据中心的运行成本，还能借助太空中的冷环境解决冷却问题，这对于AI公司来说具有巨大的吸引力。创始人Philip Johnston和CTO Ezra Feilden的太空行业经验为这项技术奠定了坚实的基础。通过不断降低卫星发射成本，Lumen Orbit的太空数据中心计划有望在未来十年内实现多吉瓦级计算集群的建设。
 
-公司官网：https://www.lumenorbit.com/
+公司官网：`https://www.lumenorbit.com/`
 
 ![](img/1370208eb547f7e87bdf8f85565ec24d.png)
 
-### **Microsoft的M12再投资2250万美**元支持NeuBird，延续其高速增长势头
+### Microsoft的M12再投资2250万美元支持NeuBird，延续其高速增长势头
 
 贡献人：
 
-https://techcrunch.com/2024/12/11/microsofts-m12-invests-another-22-5m-into-nuebird-months-after-its-22m-seed-round/
+`https://techcrunch.com/2024/12/11/microsofts-m12-invests-another-22-5m-into-nuebird-months-after-its-22m-seed-round/`
 
 NeuBird是一家由Gou Rao和Vinod Jayaraman于2023年底创立的初创公司，致力于利用生成式AI自动化IT站点可靠性工程(SRE)任务。该公司通过其AI工具“Hawkeye”帮助企业迅速识别、诊断并解决问题，从而减少了对人工工程师的依赖，提升了效率。此前，创始人曾将他们的云存储初创公司Portworx以3.7亿美元售出，因此对IT行业有着深刻理解。
 
@@ -318,7 +321,7 @@ NeuBird的AI系统Hawkeye已被包括大型汽车制造公司、金融机构和�
 
 尽管市场上已有其他公司如SRE.ai、Opslane等在尝试解决相似问题，但NeuBird凭借其AI驱动的高效解决方案和持续获得的投资，已成为业内备受瞩目的新兴力量。
 
-公司官网：https://neubird.ai/
+公司官网：`https://neubird.ai/`
 
 ![](img/69353e64a63b07f6ef96898561778e08.png)
 
@@ -328,45 +331,45 @@ NeuBird的AI系统Hawkeye已被包括大型汽车制造公司、金融机构和�
 
 贡献人：
 
-https://mp.weixin.qq.com/s/Sy1dSx5RUtD6rjMY7_efkw
+`https://mp.weixin.qq.com/s/Sy1dSx5RUtD6rjMY7_efkw`
 
 节选：
 
-1.  **GraphReader**：将长文本转化为知识网络，帮助AI像人类一样探索信息。
+1. `GraphReader`：将长文本转化为知识网络，帮助AI像人类一样探索信息。
 
-1.  **MM-RAG**：多模态机器学习，理解不同形式信息并在它们之间建立联系。
+1. `MM-RAG`：多模态机器学习，理解不同形式信息并在它们之间建立联系。
 
-1.  **CRAG**：自我校正检索结果，提升生成文本的准确性和可靠性。
+1. `CRAG`：自我校正检索结果，提升生成文本的准确性和可靠性。
 
-1.  **RAPTOR**：递归嵌入、聚类和总结文本块，构建树状结构以检索信息。
+1. `RAPTOR`：递归嵌入、聚类和总结文本块，构建树状结构以检索信息。
 
-1.  **T-RAG**：结合RAG与LLM，使用树结构表示组织内实体层次结构。
+1. `T-RAG`：结合RAG与LLM，使用树结构表示组织内实体层次结构。
 
-1.  **RAT**：检索增强思维，修订每个思维步骤以提高长时生成任务性能。
+1. `RAT`：检索增强思维，修订每个思维步骤以提高长时生成任务性能。
 
-1.  **RAFT**：提高模型在特定领域内回答问题的能力。
+1. `RAFT`：提高模型在特定领域内回答问题的能力。
 
-1.  **Adaptive-RAG**：根据问题复杂度动态选择检索增强策略。
+1. `Adaptive-RAG`：根据问题复杂度动态选择检索增强策略。
 
-1.  **HippoRAG**：模仿海马体索引理论，实现新旧知识整合。
+1. `HippoRAG`：模仿海马体索引理论，实现新旧知识整合。
 
-1.  **RAE**：检索增强模型编辑框架，优化语言模型。
+1. `RAE`：检索增强模型编辑框架，优化语言模型。
 
 ![](img/8264f5ec2aaabdd34c6d9ea6abf9fdcd.png)
 
-### 用QA问答详解端到端 [工程落地：UniAD/PARA-Drive/SpareDrive/VADv2]
+### 用QA问答详解端到端 [工程落地：`UniAD`/`PARA-Drive`/`SpareDrive`/`VADv2`]
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/12088531309
+`https://zhuanlan.zhihu.com/p/12088531309`
 
-端到端自动驾驶模型通常分为两类：一种是完全黑盒的OneNet，它直接优化Planner模型；另一种是模块化的端到端模型，通过感知、预测和规划模块的协作，减少分段模型中的误差累积。UniAD是典型的模块化端到端架构，分为四个模块：输入多视角相机图像，Backbone提取BEV特征，Perception模块进行场景级感知，Prediction模块基于时序和交互预测轨迹，Planner模块则完成路径规划。所有模块均使用Query+Transformer结构，以便在模块间进行高效的信息交互。
+端到端自动驾驶模型通常分为两类：一种是完全黑盒的`OneNet`，它直接优化`Planner`模型；另一种是模块化的端到端模型，通过感知、预测和规划模块的协作，减少分段模型中的误差累积。`UniAD`是典型的模块化端到端架构，分为四个模块：输入多视角相机图像，`Backbone`提取`BEV`特征，`Perception`模块进行场景级感知，`Prediction`模块基于时序和交互预测轨迹，`Planner`模块则完成路径规划。所有模块均使用`Query`+`Transformer`结构，以便在模块间进行高效的信息交互。
 
-TrackFormer模型通过分离检测、跟踪和自车Query的方式，采用DETR检测模型来识别新目标，并通过合并历史帧的Track Query进行持续跟踪，利用QIM和MHA来获取时序信息并更新目标的状态。MapFormer使用Panoptic SegFormer进行全景分割，区分可数的things和不可数的stuff，支持不同类型的实例管理。MotionFormer模型处理代理的目标位置和轨迹，通过交互式的Query设计，使得动态代理、静态地图以及目标轨迹等信息有效融合。
+`TrackFormer`模型通过分离检测、跟踪和自车`Query`的方式，采用`DETR`检测模型来识别新目标，并通过合并历史帧的`Track Query`进行持续跟踪，利用`QIM`和`MHA`来获取时序信息并更新目标的状态。`MapFormer`使用`Panoptic SegFormer`进行全景分割，区分可数的`things`和不可数的`stuff`，支持不同类型的实例管理。`MotionFormer`模型处理代理的目标位置和轨迹，通过交互式的`Query`设计，使得动态代理、静态地图以及目标轨迹等信息有效融合。
 
-OccFormer模块采用类似RNN的结构，顺序处理不同时间点的环境信息，并使用掩膜交叉注意力机制来聚焦当前时刻的相关信息，优化代理实例的占用预测。SpareDrive是另一个模块化端到端架构，强化了图像编码器和稀疏感知模块，通过并行处理图像和环境信息来进行代理检测和轨迹规划，进一步增强系统的实时性能。其运动规划模块通过时空交互和层级规划选择，预测自车和周围代理的运动轨迹，并依据碰撞风险进行选择。
+`OccFormer`模块采用类似`RNN`的结构，顺序处理不同时间点的环境信息，并使用掩膜交叉注意力机制来聚焦当前时刻的相关信息，优化代理实例的占用预测。`SpareDrive`是另一个模块化端到端架构，强化了图像编码器和稀疏感知模块，通过并行处理图像和环境信息来进行代理检测和轨迹规划，进一步增强系统的实时性能。其运动规划模块通过时空交互和层级规划选择，预测自车和周围代理的运动轨迹，并依据碰撞风险进行选择。
 
-VADv2使用规划Transformer结构，通过交互和概率学习进行动作预测，结合真实驾驶数据对动作概率进行约束，从而减少轨迹冲突代价。它的规划Token、场景Token和导航Token分别处理动作决策、环境信息和自车状态，最终通过概率选出最佳驾驶行动。
+`VADv2`使用规划`Transformer`结构，通过交互和概率学习进行动作预测，结合真实驾驶数据对动作概率进行约束，从而减少轨迹冲突代价。它的规划`Token`、场景`Token`和导航`Token`分别处理动作决策、环境信息和自车状态，最终通过概率选出最佳驾驶行动。
 
 ![](img/043160911adebe126e7a3cc6b7964d5b.png)
 
@@ -374,79 +377,81 @@ VADv2使用规划Transformer结构，通过交互和概率学习进行动作预�
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/12041352548
+`https://zhuanlan.zhihu.com/p/12041352548`
 
-随着LLM（大规模语言模型）的兴起，其在结构和算子上的高度收敛性推动了专门推理框架（如llama.cpp）的流行，许多人开始思考是否不再需要深度学习编译器。由于算子的收敛性和结构的高度优化，部分开发者认为只需对特定算子进行加速（如Flash Attention）和优化（如FP8/FP16量化），无需再依赖传统的编译路径。这使得推理流程的重心转向了系统级的优化，例如KV缓存、Prefill/Decode的分离以及内存方案优化（如PageAttention）等，这些策略显著提升了推理吞吐量和效率，尤其是在大模型推理场景下。
+随着`LLM`（大规模语言模型）的兴起，其在结构和算子上的高度收敛性推动了专门推理框架（如`llama.cpp`）的流行，许多人开始思考是否不再需要深度学习编译器。由于算子的收敛性和结构的高度优化，部分开发者认为只需对特定算子进行加速（如`Flash Attention`）和优化（如`FP8`/`FP16`量化），无需再依赖传统的编译路径。这使得推理流程的重心转向了系统级的优化，例如`KV`缓存、`Prefill`/`Decode`的分离以及内存方案优化（如`PageAttention`）等，这些策略显著提升了推理吞吐量和效率，尤其是在大模型推理场景下。
 
-然而，这种思路也引发了反思。在CNN时代，模型从云端逐步推广到端设备，小型化和优化成为关键，尤其是在复杂的业务逻辑中，算子不再规整，甚至出现了碎算子问题，推动了自定义算子和大Kernel融合的流行。LLM作为强大工具，尽管能在许多领域展现威力，但无法解决所有问题。随着业务逻辑的复杂化，依然需要多种模型的拼接，甚至CNN模型可能继续发挥作用，尤其是在一些特定场景中。
+然而，这种思路也引发了反思。在`CNN`时代，模型从云端逐步推广到端设备，小型化和优化成为关键，尤其是在复杂的业务逻辑中，算子不再规整，甚至出现了碎算子问题，推动了自定义算子和大`Kernel`融合的流行。`LLM`作为强大工具，尽管能在许多领域展现威力，但无法解决所有问题。随着业务逻辑的复杂化，依然需要多种模型的拼接，甚至`CNN`模型可能继续发挥作用，尤其是在一些特定场景中。
 
-LLM并非万能，它将会演变为一个“决策大脑”，但在这个过程中，仍然需要与多模态模型的结合，Universal Token是一个重要的趋势。尽管云端推理强依赖NV硬件，但异构硬件（如AMD、国产芯片等）也会在成本和性能上发挥重要作用。而在设备端，硬件碎片化使得编译技术依然至关重要。
+`LLM`并非万能，它将会演变为一个“决策大脑”，但在这个过程中，仍然需要与多模态模型的结合，`Universal Token`是一个重要的趋势。尽管云端推理强依赖`NV`硬件，但异构硬件（如`AMD`、国产芯片等）也会在成本和性能上发挥重要作用。而在设备端，硬件碎片化使得编译技术依然至关重要。
 
-手写优化和编译并非互斥关系。历史上，传统编译器和数学库的结合提供了高效的性能；在CNN时代，AI编译器与供应商库的搭配同样是常见的优化方案。而在LLM时代，虽然部分场景可能依赖完全手写优化，但编译技术仍在多样化硬件环境下发挥着重要作用，尤其是在优化服务化和推理的融合时，AI编译器的作用不可忽视。未来可能出现从操作系统层面对LLM优化的趋势，进一步加深服务化与推理的深度融合，推动LLM应用场景的全面扩展。
+手写优化和编译并非互斥关系。历史上，传统编译器和数学库的结合提供了高效的性能；在`CNN`时代，AI编译器与供应商库的搭配同样是常见的优化方案。而在`LLM`时代，虽然部分场景可能依赖完全手写优化，但编译技术仍在多样化硬件环境下发挥着重要作用，尤其是在优化服务化和推理的融合时，AI编译器的作用不可忽视。未来可能出现从操作系统层面对`LLM`优化的趋势，进一步加深服务化与推理的深度融合，推动`LLM`应用场景的全面扩展。
 
-### 如何评价知乎刚刚宣布开源的大模型推理框架 ZhiLight？
+### 如何评价知乎刚刚宣布开源的大模型推理框架 `ZhiLight`？
 
 贡献人：
 
-https://www.zhihu.com/question/6401144682
+`https://www.zhihu.com/question/6401144682`
 
-ZhiLight是知乎开源的一款大模型推理框架，旨在提供高效的LLaMa-like模型推理支持，并兼容OpenAI的接口。其技术架构采用C++/CUDA实现，支持多种性能优化措施，如Flash-Attention、Marlin Kernel、vLLM异步OpenAI Server等开源组件。ZhiLight还自研了Prefill & All-Reduce Overlap、All-Reduce量化、基于TensorCore的批量解码和多卡TP等功能，在PCIe显卡上的测试性能优于一些主流开源框架，但在A800类NVLink显卡上稍逊。框架的代码结构清晰，适合用于推理引擎的研发或学习，且提供了Docker镜像，方便用户上手。
 
-ZhiLight的技术细节优化方面，特别突出的包括PCIe卡间通信优化、内存管理和并发请求管理等。这些措施有效降低了AI幻觉问题，提高了推理结果的准确性。此外，框架集成了多个流行的开源项目，并通过计算与通信重叠、低精度通信等技术，将单层Transformer的计算时间降低了40%以上。框架的设计目标是优化快速部署和应用，尤其适用于大规模用户产品的推理需求。团队在选择模型方案时，倾向于检索增强生成（RAG），相较于传统的pretrain+posttrain，RAG方案在成本、时效性、准确性和可扩展性方面更具优势。
 
-在知乎的实际应用中，ZhiLight支撑了知乎直答和专业搜索功能。知乎直答功能通过AI搜索提供快速、精准的答案，帮助用户避免传统搜索引擎需要逐个链接筛选的痛点。此外，专业搜索支持多种能力，如信息查询、内容分析和数学计算，特别在文献检索中表现出色，能够精确匹配并翻译相关文献。
+# ZhiLight 大模型推理框架介绍
 
-ZhiLight推理框架的优势在于其高效的性能和良好的扩展性，使得知乎能够优化AI搜索和内容检索体验。虽然在国内市场中已有多款AI搜索产品，但ZhiLight凭借其技术优势在特定场景中具有较强的竞争力，尤其是在文献检索和深度搜索方面。总体来说，ZhiLight是一个实用且易于部署的推理框架，适用于大规模的推理应用，尤其适合需要快速高效部署的企业和开发者。
+ZhiLight是知乎开源的一款大模型推理框架，旨在提供高效的`LLaMa-like`模型推理支持，并兼容`OpenAI`的接口。其技术架构采用`C++/CUDA`实现，支持多种性能优化措施，如`Flash-Attention`、`Marlin Kernel`、`vLLM`异步`OpenAI Server`等开源组件。`ZhiLight`还自研了`Prefill & All-Reduce Overlap`、`All-Reduce`量化、基于`TensorCore`的批量解码和多卡`TP`等功能，在`PCIe`显卡上的测试性能优于一些主流开源框架，但在`A800`类`NVLink`显卡上稍逊。框架的代码结构清晰，适合用于推理引擎的研发或学习，且提供了`Docker`镜像，方便用户上手。
+
+`ZhiLight`的技术细节优化方面，特别突出的包括`PCIe`卡间通信优化、内存管理和并发请求管理等。这些措施有效降低了`AI`幻觉问题，提高了推理结果的准确性。此外，框架集成了多个流行的开源项目，并通过计算与通信重叠、低精度通信等技术，将单层`Transformer`的计算时间降低了40%以上。框架的设计目标是优化快速部署和应用，尤其适用于大规模用户产品的推理需求。团队在选择模型方案时，倾向于检索增强生成（`RAG`），相较于传统的`pretrain+posttrain`，`RAG`方案在成本、时效性、准确性和可扩展性方面更具优势。
+
+在知乎的实际应用中，`ZhiLight`支撑了知乎直答和专业搜索功能。知乎直答功能通过`AI`搜索提供快速、精准的答案，帮助用户避免传统搜索引擎需要逐个链接筛选的痛点。此外，专业搜索支持多种能力，如信息查询、内容分析和数学计算，特别在文献检索中表现出色，能够精确匹配并翻译相关文献。
+
+`ZhiLight`推理框架的优势在于其高效的性能和良好的扩展性，使得知乎能够优化`AI`搜索和内容检索体验。虽然在国内市场中已有多款`AI`搜索产品，但`ZhiLight`凭借其技术优势在特定场景中具有较强的竞争力，尤其是在文献检索和深度搜索方面。总体来说，`ZhiLight`是一个实用且易于部署的推理框架，适用于大规模的推理应用，尤其适合需要快速高效部署的企业和开发者。
 
 ![](img/86e334fbd54f942fadb5238dda711985.png)
 
-### 生成扩散模型漫谈（二十六）：基于恒等式的蒸馏（下）
+## 生成扩散模型漫谈（二十六）：基于恒等式的蒸馏（下）
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/11823133445
+`https://zhuanlan.zhihu.com/p/11823133445`
 
-本文介绍了SiD（Score identity Distillation）的后续理论进展，主要内容是从梯度视角解释了SiD中的λ参数设置，核心部分是由FGM（Flow Generator Matching）发现的准确估计SiD梯度的巧妙思路，这肯定了λ=0.5的选择，在此基础上，作者拓展了Fisher散度的概念，从而解释了λ=1的取值。
+本文介绍了`SiD`（Score identity Distillation）的后续理论进展，主要内容是从梯度视角解释了`SiD`中的`λ`参数设置，核心部分是由`FGM`（Flow Generator Matching）发现的准确估计`SiD`梯度的巧妙思路，这肯定了`λ=0.5`的选择，在此基础上，作者拓展了`Fisher`散度的概念，从而解释了`λ=1`的取值。
 
-### SGLang代码快速上手（with openRLHF)
+## SGLang代码快速上手（with `openRLHF`）
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/11536619756
+`https://zhuanlan.zhihu.com/p/11536619756`
 
-在选择推理引擎时，团队最终决定从vllm切换到SGLang，主要考虑到封装的复杂性与技术优化的需求。虽然vllm提供了清晰的代码封装，适合新手和小规模改动，但过度封装导致的复杂逻辑使得深度修改变得困难。SGLang则提供了更直观、可控的实现，尤其是在训练加速上有显著的优化。
+在选择推理引擎时，团队最终决定从`vllm`切换到`SGLang`，主要考虑到封装的复杂性与技术优化的需求。虽然`vllm`提供了清晰的代码封装，适合新手和小规模改动，但过度封装导致的复杂逻辑使得深度修改变得困难。`SGLang`则提供了更直观、可控的实现，尤其是在训练加速上有显著的优化。
 
-SGLang的推理引擎基于一个多进程架构，其中HTTP服务器与SRT引擎共同协作。SRT引擎包括Tokenizer Manager、Scheduler与Detokenizer Manager。与vllm不同，SGLang的Scheduler模块通过多进程通信与显存管理来调度和执行请求。Scheduler的核心是如何处理输入的batch，决定哪些请求应先执行，以及如何优化模型的推理过程。Scheduler模块使用了两个主要的缓存策略：Chunked Cache和Radix Cache。Chunked Cache通过分块处理长文本来优化效率，而Radix Cache则通过高效的前缀树结构，减少重复计算，提升性能，尤其是在长文本生成时能显著降低成本。
+`SGLang`的推理引擎基于一个多进程架构，其中`HTTP`服务器与`SRT`引擎共同协作。`SRT`引擎包括`Tokenizer Manager`、`Scheduler`与`Detokenizer Manager`。与`vllm`不同，`SGLang`的`Scheduler`模块通过多进程通信与显存管理来调度和执行请求。`Scheduler`的核心是如何处理输入的`batch`，决定哪些请求应先执行，以及如何优化模型的推理过程。`Scheduler`模块使用了两个主要的缓存策略：`Chunked Cache`和`Radix Cache`。`Chunked Cache`通过分块处理长文本来优化效率，而`Radix Cache`则通过高效的前缀树结构，减少重复计算，提升性能，尤其是在长文本生成时能显著降低成本。
 
-SGLang的Scheduler通过分配任务到各个工作进程来执行推理，而每个进程通过管道与其他进程进行同步。工作进程中的TpWorker会根据预设策略加载和执行模型任务。通过灵活配置的内存池和缓存机制，SGLang能够高效地管理内存并减少内存瓶颈。调度策略由SchedulePolicy类定义，它决定了在任务队列中优先执行哪些请求，这些策略可以根据不同的应用需求进行定制。
+`SGLang`的`Scheduler`通过分配任务到各个工作进程来执行推理，而每个进程通过管道与其他进程进行同步。工作进程中的`TpWorker`会根据预设策略加载和执行模型任务。通过灵活配置的内存池和缓存机制，`SGLang`能够高效地管理内存并减少内存瓶颈。调度策略由`SchedulePolicy`类定义，它决定了在任务队列中优先执行哪些请求，这些策略可以根据不同的应用需求进行定制。
 
-模型的推理分为decode和extend两大模式，SGLang在模型执行时依据任务类型分别处理。Decoder和Extender在SGLang中被显式分离，尽管两者在实现上有些重叠，但这种分离使得后续优化和定制变得更加高效。在具体的模型执行过程中，SGLang利用Flash Attention模块加速了特定操作的执行，减少了推理时间。
+模型的推理分为`decode`和`extend`两大模式，`SGLang`在模型执行时依据任务类型分别处理。`Decoder`和`Extender`在`SGLang`中被显式分离，尽管两者在实现上有些重叠，但这种分离使得后续优化和定制变得更加高效。在具体的模型执行过程中，`SGLang`利用`Flash Attention`模块加速了特定操作的执行，减少了推理时间。
 
-在与OpenRLHF的合作中，SGLang还针对PPO训练优化了推理引擎，强调了推理引擎在RLHF训练中的加速作用。通过针对推理引擎的细节优化，SGLang能够有效降低推理成本，同时保证训练过程中的稳定性与一致性。尤其是在不同大小的batch下，推理引擎和训练引擎之间的精度差异仍然是一个难题，但这种差异已被识别并正在修复中。
+在与`OpenRLHF`的合作中，`SGLang`还针对`PPO`训练优化了推理引擎，强调了推理引擎在`RLHF`训练中的加速作用。通过针对推理引擎的细节优化，`SGLang`能够有效降低推理成本，同时保证训练过程中的稳定性与一致性。尤其是在不同大小的`batch`下，推理引擎和训练引擎之间的精度差异仍然是一个难题，但这种差异已被识别并正在修复中。
 
 # 声明
 
-本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
+本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系`Jack Jin` `15101136166`
 
-##
+（欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给`AI`日报小组点个赞👍吧！）
 
-（欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
+`ChatGPT`；`Angela`；`Zijia Liu`；`Alex`；`Zeqi Tan`；`Tiezhen`（`HuggingFace`）；`Naixu`；`Lizhi`；`Peter`；`Suoman`；`Jack`
 
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+学术分析报告：`ResearchFlow` -- 奇绩`F23`校友的开发的深度研究产品，PC端进入`RFlow`的分析报告，可直接点击节点右侧的小数字展开节点，登录后可在节点上直接“询问`AI`”，进一步探索深度信息
 
-学术分析报告：ResearchFlow -- 奇绩F23校友的开发的深度研究产品，PC端进入RFlow的分析报告，可直接点击节点右侧的小数字展开节点，登录后可在节点上直接“询问AI”，进一步探索深度信息
-
-如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
+如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：`15101136166`
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> `【日报知识库】`这里是近期日报内容的汇总,欢迎大家查阅
 
-> [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
+> [`大模型日报知识库(分享版)`](`https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh`)
 
 >
 
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

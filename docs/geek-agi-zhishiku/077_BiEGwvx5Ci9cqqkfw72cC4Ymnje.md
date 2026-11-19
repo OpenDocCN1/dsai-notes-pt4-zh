@@ -1,10 +1,11 @@
+
 # 龙虾实际产品形态预测——龙虾生态创业者必读系列
 
-> 来源：[https://geekbang.feishu.cn/docx/Dh2Wdn28zo6dJDxTgzDc6xkhnDd](https://geekbang.feishu.cn/docx/Dh2Wdn28zo6dJDxTgzDc6xkhnDd)
+> 来源：https://geekbang.feishu.cn/docx/Dh2Wdn28zo6dJDxTgzDc6xkhnDd
 
-> **来源：郎瀚威Will****
+> 来源：郎瀚威Will
 
-> 原文档****：https://mp.weixin.qq.com/s/q**tgASw0oyrTx3w-paBBWtg
+> 原文档：https://mp.weixin.qq.com/s/q**tgASw0oyrTx3w-paBBWtg
 
 ![](img/111601324a22080e63cc1eeaa2711659.png)
 
@@ -29,7 +30,6 @@
 这不是偶然的。
 
 Manus过去的路线是做一个独立App——你打开它，告诉它做事，它做完了你关掉。这个交互模式跟ChatGPT没有本质区别，还是"你去找AI"。（现在也有龙虾了）
-
 
 OpenClaw走了另一条路：agent住在你已经在用的聊天软件里。你不需要"打开"它，它就在你的Telegram对话列表里，跟你的朋友、家人、同事的对话窗口并列。你想跟它说话，点一下就行，跟给朋友发消息没区别。
 
@@ -77,7 +77,7 @@ OpenClaw走了另一条路：agent住在你已经在用的聊天软件里。你�
 
 ![](img/b3a86311227086689b588e952d9baa6a.png)
 
-1、调配：你说一句话，大总管判断这事该分给谁，或者需要哪几个agent协作完成。Casey Sapp的方法论其实就是这个思路——Scout采集、Engine推理、Editor润色、Judge把关，每个角色对应不同的agent或模型。
+1、调配：你说一句话，大总管判断这事该分给谁，或者需要哪几个agent协作完成。Casey Sapp的方法论其实就是这个思路——`Scout`采集、`Engine`推理、`Editor`润色、`Judge`把关，每个角色对应不同的agent或模型。
 
 ![](img/f79d2470a219bd21681c3fe14f758b0f.png)
 
@@ -91,7 +91,7 @@ OpenClaw走了另一条路：agent住在你已经在用的聊天软件里。你�
 
 ![](img/258c1916eb6704fec31f627876f1dbdf.png)
 
-Mnemo在做跨工具的记忆统一（把Cursor、Claude Code、Gemini CLI的聊天记录索引到一个本地SQLite），中国社区自建了Memory System 2.0。但这些都还在很早期，离"多个agent无缝共享上下文"还有距离。
+Mnemo在做跨工具的记忆统一（把`Cursor`、`Claude Code`、`Gemini CLI`的聊天记录索引到一个本地SQLite），中国社区自建了Memory System 2.0。但这些都还在很早期，离"多个agent无缝共享上下文"还有距离。
 
 ![](img/eb8e9e11b733446eaaa9aee6758cf4bb.png)
 
@@ -149,10 +149,9 @@ Manus或者类似的独立界面完全可以承担这个角色：一个你偶尔
 
 ![](img/c086900e36165cc3941170ecb3e32db1.png)
 
-1、Telegram原生的multi-agent管理层。 现在要在Telegram里跑多个agent，你得自己部署多个OpenClaw实例，手动配置各自的SOUL.md和技能，手动处理它们之间的通信。没有一个产品把这件事做成"开箱即用"。谁先做出来"一键在Telegram里创建一组协同agent"的产品，谁就拿到第一波用户。
+1、Telegram原生的multi-agent管理层。 现在要在Telegram里跑多个agent，你得自己部署多个OpenClaw实例，手动配置各自的`SOUL.md`和技能，手动处理它们之间的通信。没有一个产品把这件事做成"开箱即用"。谁先做出来"一键在Telegram里创建一组协同agent"的产品，谁就拿到第一波用户。
 
-
-**2、大总管调配层。** Casey Sapp的Scout/Engine/Editor/Judge方法论是对的，但现在全靠手动编排。需要一个中间层产品，能根据用户的消息自动判断该分给哪个agent，或者需要哪几个agent协作。Greg Isenberg说的"wrapper"就是这个东西，但目前还没有好用的实现。
+**2、大总管调配层。** Casey Sapp的`Scout`/`Engine`/`Editor`/`Judge`方法论是对的，但现在全靠手动编排。需要一个中间层产品，能根据用户的消息自动判断该分给哪个agent，或者需要哪几个agent协作。Greg Isenberg说的"wrapper"就是这个东西，但目前还没有好用的实现。
 
 **3、跨agent统一记忆。** Mnemo在做跨工具记忆归档，但不是实时共享。Memory System 2.0方向对了但还在早期。这一层谁做好，谁就成为多agent架构的基础设施。记忆层的价值在于：用户只需要说一次"我是做XX的，我的偏好是XX"，所有agent都知道。
 
@@ -160,7 +159,7 @@ Manus或者类似的独立界面完全可以承担这个角色：一个你偶尔
 
 **4、维护面板（Panel）。** 前面说的那个"后台操作台"——配置记忆、调整权限、设定调配规则、监控成本。现在这些要么靠命令行，要么靠改配置文件。做成一个可视化面板，让不会写代码的人也能管理自己的agent团队，这是Manus类产品真正应该去的方向。
 
-**5、企业合规封装。** 个人用户可以接受agent偶尔犯错，企业不行。把OpenClaw的能力封装成带权限管理、审计日志、SOC 2认证的企业产品，这条路Knolli和Lindy已经在走，但远没有跑通。
+**5、企业合规封装。** 个人用户可以接受agent偶尔犯错，企业不行。把OpenClaw的能力封装成带权限管理、审计日志、`SOC 2`认证的企业产品，这条路Knolli和Lindy已经在走，但远没有跑通。
 
 ![](img/77552b8fe767785512555189ef94ca15.png)
 
@@ -172,7 +171,7 @@ Manus或者类似的独立界面完全可以承担这个角色：一个你偶尔
 
 方向说完了，说说现实。以下是我的一些观察和判断
 
-第一，**安全现阶段不是2C获客属性。**现在很多OpenClaw生态的创业项目主打"更安全的agent"——NanoClaw、ZeroClaw都是这个定位。但安全是门槛，不是钩子。用户不会因为"这个agent更安全"而买单，但会因为"不安全"而离开。对创业者来说，企业端的资金和安全这块，大概率还是大公司在主导。创业者要想的是怎么破局，怎么把流量和热度先搞明白，这比堆安全功能重要。除非你是做2b，那么可以参考yc几个公司怎么玩的。
+第一，**安全现阶段不是2C获客属性。**现在很多OpenClaw生态的创业项目主打"更安全的agent"——`NanoClaw`、`ZeroClaw`都是这个定位。但安全是门槛，不是钩子。用户不会因为"这个agent更安全"而买单，但会因为"不安全"而离开。对创业者来说，企业端的资金和安全这块，大概率还是大公司在主导。创业者要想的是怎么破局，怎么把流量和热度先搞明白，这比堆安全功能重要。除非你是做2b，那么可以参考yc几个公司怎么玩的。
 
 第二，这波创业者几乎都是有积累的人，不是从零开始的。Daniel Foch能用agent跑房地产CRM是因为他本来就懂房地产流程，Greg Isenberg能提出"boring industry+agent"框架是因为他做过很多垂直SaaS。我目前没看到这一波里有从0到1特别牛的新人。都是之前融了一两轮、有行业认知的人在吃这波红利。如果你什么积累都没有就想进场，要想清楚自己的认知差在哪。
 
@@ -186,19 +185,19 @@ Manus或者类似的独立界面完全可以承担这个角色：一个你偶尔
 
 说完理想形态，说说现实。
 
-对个人用户来说，"Telegram里开几个agent窗口，各管一摊事"这个方案现在就能跑。不需要什么特殊架构，就是多部署几个OpenClaw实例，配不同的SOUL.md和技能，连到不同的Telegram bot上。成本是主要门槛——每个agent每月100-300美元的API费用，开三四个就是小一千美元/月。Daniel Foch算过账，对他的房地产业务来说替代人力还是划算的，但对普通个人用户来说这个数字不低。
+对个人用户来说，"Telegram里开几个agent窗口，各管一摊事"这个方案现在就能跑。不需要什么特殊架构，就是多部署几个OpenClaw实例，配不同的`SOUL.md`和技能，连到不同的Telegram bot上。成本是主要门槛——每个agent每月100-300美元的API费用，开三四个就是小一千美元/月。Daniel Foch算过账，对他的房地产业务来说替代人力还是划算的，但对普通个人用户来说这个数字不低。
 
 ![](img/b1a75a0d270ddf98c3bace0bbd6a6df1.png)
 
 对团队和企业来说，目前基本不现实。原因不是技术，是管理和合规：
 
-谁来决定agent的权限边界？agent之间共享的记忆里如果包含敏感信息怎么办？agent做了错误决策谁负责？WIRED的安全警告和HuggingFace 58.9%的审计评分不是闹着玩的——agent在明确任务上表现可靠，但在理解意图上还是0%。
+谁来决定agent的权限边界？agent之间共享的记忆里如果包含敏感信息怎么办？agent做了错误决策谁负责？`WIRED`的安全警告和`HuggingFace` 58.9%的审计评分不是闹着玩的——agent在明确任务上表现可靠，但在理解意图上还是0%。
 
 所以现阶段真正能把多agent跑起来的，是一小群技术能力强、风险承受力高、业务场景明确的个人创业者。像Daniel Foch（房地产CRM）、Ziwen（10-agent公司）、Presh Kumar（创业邮件自动化）这样的人。他们的共同特点是：自己就是老板，自己能承担风险，业务流程足够清晰到可以交给agent。
 
 ![](img/a032d0b1ae1ffb2a42695d9c1378d93b.png)
 
-企业市场要等Knolli（结构化权限+SOC 2方向）、Lindy（零配置+HIPAA）这类产品把合规和管理层解决了，才会真正打开。
+企业市场要等`Knolli`（结构化权限+`SOC 2`方向）、`Lindy`（零配置+`HIPAA`）这类产品把合规和管理层解决了，才会真正打开。
 
 ## 总结一下
 
@@ -212,7 +211,7 @@ Manus或者类似的独立界面完全可以承担这个角色：一个你偶尔
 
 4、主动汇报比被动聊天重要——每天早上你打开Telegram，每个agent已经把简报发过来了，你扫一遍就行
 
-5、记忆共享是当前最大的技术短板，Mnemo和Memory System 2.0是早期尝试
+5、记忆共享是当前最大的技术短板，`Mnemo`和`Memory System 2.0`是早期尝试
 
 6、现阶段能真正用起来的是少数个人创业者，企业市场还需要合规层的成熟
 
@@ -230,7 +229,7 @@ OpenClaw的贡献是证明了"agent住在聊天软件里"这个方向是对的�
 
 René Schulte让agent "Dave"通过WhatsApp从零建了一个完整网站——没用IDE、没push过git，全程聊天完成。他的原话是"no IDE, no git push, just chat"。这说明聊天界面不只是"方便"，它本身就能承载复杂的生产力工作。——by @rschu，2月16日
 
-James Steinberg说"我就想用手机远程控制Codex和Claude Code"，最后用VNC方案解决。他真正的需求不是VNC，是"在我已经在用的工具里，随时随地控制agent"。——by @DareFailed，2月22日
+James Steinberg说"我就想用手机远程控制`Codex`和`Claude Code`"，最后用VNC方案解决。他真正的需求不是VNC，是"在我已经在用的工具里，随时随地控制agent"。——by @DareFailed，2月22日
 
 ![](img/8e9a399eaeeda86d5d5d1bfc41131159.png)
 
@@ -240,37 +239,38 @@ Radek Sienkiewicz的描述很有画面感："它替我干活、关心我的睡�
 
 ### 支持"多窗口多agent，不是一个万能agent"
 
+
+
 Ryan Seamons第一周就给家庭每个成员配了不同的bot——这是最原始的"每人一个窗口"实践。——by @ryanseamons，1月25日
 
-Rahul Singh的Lead Agent "Supaclaw"抓取了Postiz的API文档，从零构建了一个专门管社媒的子agent。这就是"大总管派活给专业agent"的模式。——by @rahul_singh07，2月14日
+Rahul Singh的`Lead Agent` "`Supaclaw`"抓取了`Postiz`的API文档，从零构建了一个专门管社媒的子agent。这就是"大总管派活给专业agent"的模式。——by @rahul_singh07，2月14日
 
-Casey Sapp的方法论把多agent分成明确的角色：Scout（数据采集）、Engine（推理）、Editor（润色）、Judge（质量把关），不同角色用不同模型。他特别强调"最后一个模型必须最擅长说'我不知道'"。——by @CaseySapp，2月22日
+Casey Sapp的方法论把多agent分成明确的角色：`Scout`（数据采集）、`Engine`（推理）、`Editor`（润色）、`Judge`（质量把关），不同角色用不同模型。他特别强调"最后一个模型必须最擅长说'我不知道'"。——by @CaseySapp，2月22日
 
 ![](img/6822e553855a1733559041ce35aa23ec.png)
 
-Greg Isenberg的商业框架——"OpenClaw是wrapper，Claude Code是工厂，sub-agent/skill是劳动力，垂直bundle是产品"——本质上就是多agent分工。——by @gregisenberg，2月18日
+Greg Isenberg的商业框架——"`OpenClaw`是wrapper，`Claude Code`是工厂，`sub-agent/skill`是劳动力，垂直bundle是产品"——本质上就是多agent分工。——by @gregisenberg，2月18日
 
-第五周集中出现的ClawWork、Duet、Agify、TinkerClaw Recipes全都在解决multi-agent管理的问题，说明"多agent怎么协同"已经成了社区最迫切的需求。
+第五周集中出现的`ClawWork`、`Duet`、`Agify`、`TinkerClaw Recipes`全都在解决`multi-agent`管理的问题，说明"多agent怎么协同"已经成了社区最迫切的需求。
 
 ### 支持"统一记忆是关键短板"
 
-Suhail Balhatlani做的Mnemo试图解决跨工具记忆——把Cursor、Claude Code、Gemini CLI等10多个工具的聊天记录统一索引到本地SQLite。但这还只是"归档"层面的统一，不是"实时共享"。——by @sbalhatlani，2月22日
+Suhail Balhatlani做的`Mnemo`试图解决跨工具记忆——把`Cursor`、`Claude Code`、`Gemini CLI`等10多个工具的聊天记录统一索引到本地`SQLite`。但这还只是"归档"层面的统一，不是"实时共享"。——by @sbalhatlani，2月22日
 
-中国开发者社区自建的Memory System 2.0走得更远一步，做了持久记忆架构。这不是OpenClaw官方功能，是社区等不及自己造的——说明记忆是真刚需。
+中国开发者社区自建的`Memory System 2.0`走得更远一步，做了持久记忆架构。这不是`OpenClaw`官方功能，是社区等不及自己造的——说明记忆是真刚需。
 
 ![](img/f8b129a0d79e1e1ae6daa0ec1f9a957a.png)
 
-OpenClaw v2026.2.9专门修了一个bug：compaction之后agent会失忆。连单个agent的记忆持久化都还在修，多agent之间的记忆共享难度可想而知。
+`OpenClaw` v2026.2.9专门修了一个bug：`compaction`之后agent会失忆。连单个agent的记忆持久化都还在修，多agent之间的记忆共享难度可想而知。
 
 Machina（@EXM7777）说得很准确："真正的价值在于本地运行+持续记忆+主动推送"——他把记忆列为三大核心价值之一，和运行方式、交互方式并列。
 
 ### 不支持我的观点的案例——也值得看
 
-**"嵌入聊天"不代表好用。** Will Cheung对比了OpenClaw和Manus，结论是OpenClaw复杂很多："OpenClaw像自建房，Manus像精装房。"他还发现OpenClaw做简单查询要5-10分钟延迟，Manus几乎即时。"聊天窗口"形态的易用性天然受限于底层配置的复杂度。——by @willcheung，2月14日
+**"嵌入聊天"不代表好用。** Will Cheung对比了`OpenClaw`和`Manus`，结论是`OpenClaw`复杂很多："`OpenClaw`像自建房，`Manus`像精装房。"他还发现`OpenClaw`做简单查询要5-10分钟延迟，`Manus`几乎即时。"聊天窗口"形态的易用性天然受限于底层配置的复杂度。——by @willcheung，2月14日
 
+**大多数人根本用不了。** `OpenClaw`维护者Shadow自己在Discord上说过："if you can't understand how to run a command line, this is far too dangerous for you to use."（如果你连命令行都不会，这个项目对你来说太危险了。）这直接质疑了"聊天窗口降低门槛"这个假设——形态上是聊天窗口没错，但背后的搭建和维护门槛很高。
 
-**大多数人根本用不了。** OpenClaw维护者Shadow自己在Discord上说过："if you can't understand how to run a command line, this is far too dangerous for you to use."（如果你连命令行都不会，这个项目对你来说太危险了。）这直接质疑了"聊天窗口降低门槛"这个假设——形态上是聊天窗口没错，但背后的搭建和维护门槛很高。
-
-**Agent可能超越屏幕。** Irvin的ROSClaw把agent接入了机器人操作系统，Vitto Rivabella给agent造了物理身体。这些案例指向一个方向：agent最终可能不住在任何屏幕上的"窗口"里，而是存在于物理空间中。当然这离主流还很远，但它提醒我们，"聊天窗口"可能只是agent形态的一个阶段，不是终局。
+**Agent可能超越屏幕。** Irvin的`ROSClaw`把agent接入了机器人操作系统，Vitto Rivabella给agent造了物理身体。这些案例指向一个方向：agent最终可能不住在任何屏幕上的"窗口"里，而是存在于物理空间中。当然这离主流还很远，但它提醒我们，"聊天窗口"可能只是agent形态的一个阶段，不是终局。
 
 ![](img/09d9f937231850cb35a6c0ce501a7f52.png)

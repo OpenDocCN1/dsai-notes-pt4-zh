@@ -1,3 +1,4 @@
+
 # MCP Server 相关信息报告
 
 > 来源：[https://qianniucity.feishu.cn/docx/H1rMdcY56ooTXcxt0J3cOWOSn7f](https://qianniucity.feishu.cn/docx/H1rMdcY56ooTXcxt0J3cOWOSn7f)
@@ -8,7 +9,7 @@ MCP Server 即模型上下文协议服务器，是连接 AI 与外部世界的�
 
 MCP 采用客户端 - 服务器（Client - Server）架构，主要组件包括 MCP 主机（如 Claude 桌面应用、IDE、AI 工具等，用于通过 MCP 访问数据）、MCP 客户端（负责与 MCP 服务器建立 1:1 连接）、MCP 服务器（轻量级程序，通过标准化的 MCP 协议提供特定能力）、本地数据源（计算机文件、数据库和服务等，MCP 服务器可以安全访问）以及远程服务（可通过 API 访问的外部系统，MCP 服务器可以连接这些系统）。
 
-根据 MCP 协议定义，Server 可以提供三种类型的标准能力，分别是 Resources（资源，类似于文件数据读取，可以是文件资源或是 API 响应返回的内容）、Tools（工具，第三方服务、功能函数，通过此可控制 LLM 可调用哪些函数）、Prompts（提示词，为用户预先定义好的完成特定任务的模板）。
+根据 MCP 协议定义，Server 可以提供三种类型的标准能力，分别是 `Resources`（资源，类似于文件数据读取，可以是文件资源或是 API 响应返回的内容）、`Tools`（工具，第三方服务、功能函数，通过此可控制 LLM 可调用哪些函数）、`Prompts`（提示词，为用户预先定义好的完成特定任务的模板）。
 
 ## 二、当前 MCP Server 的发展趋势
 
@@ -20,17 +21,17 @@ MCP 采用客户端 - 服务器（Client - Server）架构，主要组件包括 
 
 MCP Server 作为连接 AI 与外部世界的桥梁，在多个领域展现出巨大的应用潜力。例如：
 
-1.  **旅游领域**：Airbnb MCP 服务器实现了 AI 与 Airbnb 搜索功能的集成，使会话式旅行助手能够访问和处理真实的住宿信息，提升了旅游规划的智能化水平。
+1. **旅游领域**：Airbnb MCP 服务器实现了 AI 与 Airbnb 搜索功能的集成，使会话式旅行助手能够访问和处理真实的住宿信息，提升了旅游规划的智能化水平。
 
-1.  **数据处理方面**：Supabase MCP 服务器促进了 AI 与数据库的高效连接，为开发智能数据可视化仪表板、构建自动化数据库查询与更新工具提供了坚实基础，推动了数据驱动的智能应用发展。
+2. **数据处理方面**：Supabase MCP 服务器促进了 AI 与数据库的高效连接，为开发智能数据可视化仪表板、构建自动化数据库查询与更新工具提供了坚实基础，推动了数据驱动的智能应用发展。
 
-1.  **云存储领域**：AWS - S3 MCP 服务器构建了 AI 模型与 Amazon S3 云存储服务之间的技术桥梁，允许 AI 模型从 S3 存储桶中高效检索 PDF 文档、图像等各类文件，解决了 AI 系统访问云存储资源的技术障碍。
+3. **云存储领域**：AWS - S3 MCP 服务器构建了 AI 模型与 Amazon S3 云存储服务之间的技术桥梁，允许 AI 模型从 S3 存储桶中高效检索 PDF 文档、图像等各类文件，解决了 AI 系统访问云存储资源的技术障碍。
 
-1.  **项目管理领域**：Linear MCP 服务器实现了与 Linear 项目管理 API 的深度集成，支持问题跟踪和项目管理功能，使 AI 助手能够进行专业级别的产品迭代周期管理。
+4. **项目管理领域**：Linear MCP 服务器实现了与 Linear 项目管理 API 的深度集成，支持问题跟踪和项目管理功能，使 AI 助手能够进行专业级别的产品迭代周期管理。
 
-1.  **容器编排领域**：Kubernetes MCP 服务器实现了 AI 模型对 Kubernetes 集群的程序化访问与控制，为 AI 驱动的 DevOps 工具和基础设施监控系统提供了关键接口，提升了云环境管理的智能化水平。
+5. **容器编排领域**：Kubernetes MCP 服务器实现了 AI 模型对 Kubernetes 集群的程序化访问与控制，为 AI 驱动的 DevOps 工具和基础设施监控系统提供了关键接口，提升了云环境管理的智能化水平。
 
-1.  **工作流调度领域**：Apache Airflow MCP 服务器将 Apache Airflow 与 AI 模型无缝连接，实现了有向无环图（DAG）工作流管理的智能化，提升了工作流程的自适应能力和智能调度效率。
+6. **工作流调度领域**：Apache Airflow MCP 服务器将 Apache Airflow 与 AI 模型无缝连接，实现了有向无环图（DAG）工作流管理的智能化，提升了工作流程的自适应能力和智能调度效率。
 
 ### （三）开源项目日益增多
 
@@ -48,7 +49,7 @@ MCP 定义了应用程序和 AI 模型之间交换上下文信息的方式，将
 
 ### （一）环境配置与协议选型
 
-选择合适的开发框架（如 Spring AI、Cursor）和协议服务器（如 FastMCP、Anthropic MCP Server），使用 uv 包管理器加速依赖安装，优先选择支持 SSE 通信的服务器框架以降低实时交互延迟。例如，在搭建基于 MCP 协议的智能体时，可使用 uv 包管理器，其速度比 pip 快 5 倍。
+选择合适的开发框架（如 Spring AI、Cursor）和协议服务器（如 `FastMCP`、Anthropic MCP Server），使用 `uv` 包管理器加速依赖安装，优先选择支持 SSE 通信的服务器框架以降低实时交互延迟。例如，在搭建基于 MCP 协议的智能体时，可使用 `uv` 包管理器，其速度比 `pip` 快 5 倍。
 
 ### （二）定义数据交互逻辑
 
@@ -60,8 +61,8 @@ MCP 定义了应用程序和 AI 模型之间交换上下文信息的方式，将
 
 ```
 from mcp.client.stdio import StdioClient
-async def main (): 
-    async with StdioClient(command= &quot;python&quot; , args=[ &quot;server.py&quot; ]) as client: 
+async def main(): 
+    async with StdioClient(command="python", args=["server.py"]) as client: 
         tools = await client.list_tools() # 动态发现工具列表 
 ```
 
@@ -74,10 +75,10 @@ async def main ():
 采用思维树（Tree - of - Thought）和 ReAct 框架等技术，提升决策质量和推理能力。思维树可实现多路径推理，ReAct 框架结合了搜索与工具调用的混合推理模式。其架构设计如下：
 
 ```
-A[LLM] --&gt; B{任务分解} 
-B --&gt; C[调用工具] 
-C --&gt; D[结果验证] 
-D --&gt; E[反馈优化]
+A[LLM] --> B{任务分解} 
+B --> C[调用工具] 
+C --> D[结果验证] 
+D --> E[反馈优化]
 ```
 
 ### （六）部署与持续优化

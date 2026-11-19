@@ -1,4 +1,5 @@
-# 10.17-阿里国际发布 Marco 翻译大模型、 Power-over-Skin “皮肤供电”技术 让可穿戴设备无需电池也能工作
+
+# 10.17-阿里国际发布 Marco 翻译大模型、Power-over-Skin “皮肤供电”技术 让可穿戴设备无需电池也能工作
 
 > 来源：[https://agijuejin.feishu.cn/docx/AHHFd1z77oOSNTxnQJncYcBunEh](https://agijuejin.feishu.cn/docx/AHHFd1z77oOSNTxnQJncYcBunEh)
 

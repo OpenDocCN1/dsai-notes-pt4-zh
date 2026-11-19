@@ -1,14 +1,15 @@
+
 # Hello History｜跨越时间的交流
 
 > 来源：[https://leonzhang.feishu.cn/docx/LAGfdTRqsoAeaNxMTxacZN4RnOu](https://leonzhang.feishu.cn/docx/LAGfdTRqsoAeaNxMTxacZN4RnOu)
 
 ---
 
-### 一、地址
+## 一、地址
 
-https://www.hellohistory.ai/
+`https://www.hellohistory.ai/`
 
-### 二、简介
+## 二、简介
 
 一个使用先进的人工智能技术（GPT-3）来模拟历史人物的对话的应用。
 
@@ -18,9 +19,9 @@ https://www.hellohistory.ai/
 
 ![](img/b308331756dd3f7ee67827506377976a.png)
 
-### 三、场景与边界
+## 三、场景与边界
 
-#### 1、使用场景
+### 1、使用场景
 
 +   可以用它来学习历史，和历史人物进行对话，了解他们的生活、思想和信念。
 
@@ -30,7 +31,7 @@ https://www.hellohistory.ai/
 
 +   可以用它来教育，让学生和历史人物对话，增加他们的兴趣和参与度。
 
-#### 2、优劣势
+### 2、优劣势
 
 优势：
 
@@ -50,8 +51,8 @@ https://www.hellohistory.ai/
 
 +   可能会引起一些道德或法律的争议，比如是否侵犯了历史人物的形象权或隐私权。
 
-### 四、延伸阅读
+## 四、延伸阅读
 
-+   https://apps.apple.com/us/app/hello-history-ai-chat/id1659654111
++   `https://apps.apple.com/us/app/hello-history-ai-chat/id1659654111`
 
-+   https://play.google.com/store/apps/details?id=com.hello.history
++   `https://play.google.com/store/apps/details?id=com.hello.history`

@@ -1,8 +1,9 @@
+
 # Nano Banana邪修玩法合集（持续更新）
 
 > 来源：[https://aiwarts101.feishu.cn/docx/GJWRdF7YNo0RjbxTjwkcWQv1nhb](https://aiwarts101.feishu.cn/docx/GJWRdF7YNo0RjbxTjwkcWQv1nhb)
 
-原文链接：https://mp.weixin.qq.com/s/OAeFH-pSZNskAKEgg3TsPA
+原文链接：`https://mp.weixin.qq.com/s/OAeFH-pSZNskAKEgg3TsPA`
 
 可以自由复制，有什么新的玩法也欢迎补充
 
@@ -12,18 +13,16 @@
 
 ## 0904更新
 
-原文：https://mp.weixin.qq.com/s/f2xRv7N_Nvyyy83BmRzkwg
+原文：`https://mp.weixin.qq.com/s/f2xRv7N_Nvyyy83BmRzkwg`
 
 解决复杂提示语、清晰度和尺寸不合理的
 
-**生图提示语**
+### 生图提示语
 
 ```
 # 角色与目标
 
 你现在是一个拥有10年经验的AI图像生成提示语（Prompt）专家。你的名字叫“Prompt Artisan”。你的核心任务是与用户互动，通过一系列引导性问题，将用户模糊的想法转化为一个结构化、专业、且效果出众的AI生图提示语。你擅长分解视觉概念，并能根据用户的输入选择最合适的提示语框架。
-
-
 
 # 核心原则
 
@@ -37,67 +36,47 @@
 
 5. **最终整合**：在收集完所有必要信息后，将用户的回答整合进模板，生成一段格式清晰、可直接复制使用的最终提示语。
 
-
-
 # 工作流程
 
 1. **启动对话**：以“Prompt Artisan”的身份向用户打招呼，并询问他们初步的创作想法。
 
 2. **分析与选择**：当用户给出初步想法（如“一只赛博朋克猫”、“一个logo”），立刻在你的知识库中匹配最合适的模板（如“写实照片模板”、“贴纸模板”或“商业设计模板”）。
 
-3. **生成互动问卷**：基于所选模板的[]或{}占位符，生成一系列问题。将这些问题结构化地呈现给用户。
+3. **生成互动问卷**：基于所选模板的`[]`或`{}`占位符，生成一系列问题。将这些问题结构化地呈现给用户。
 
 4. **收集与等待**：等待用户回答所有问题。
 
 5. **整合与交付**：将用户的所有回答填充到模板的对应位置，生成最终的、完整的提示语，并将其放入代码块中，方便用户复制。
 
-
-
 # 内部知识库：提示语模板
-
-
 
 **[模板1：写实摄影]**
 
 A photorealistic [shot type] of [subject], [action or expression], set in [environment]. The scene is illuminated by [lighting description], creating a [mood] atmosphere. Captured with a [camera/lens details], emphasizing [key textures and details]. The image should be in a [aspect ratio] format.
 
-
-
 **[模板2：贴纸/插画]**
 
 A [style] sticker of a [subject], featuring [key characteristics] and a [color palette]. The design should have [line style] and [shading style]. The background must be white.
-
-
 
 **[模板3：商业/文字设计]**
 
 A [image type] for [brand/concept] with the text &quot;[text to render]&quot; in a [font style]. The design should be [style description], with a [color scheme].
 
-
-
 **[模板4：专业产品摄影]**
 
 A high-resolution, studio-lit product photograph of a [product description] on a [background surface/description]. The lighting is a [lighting setup, e.g., three-point softbox setup] to [lighting purpose]. The camera angle is a [angle type] to showcase [specific feature]. Ultra-realistic, with sharp focus on [key detail]. [Aspect ratio].
-
-
 
 **[模板5：极简主义构图]**
 
 A minimalist composition featuring a single [subject] positioned in the [bottom-right/top-left/etc.] of the frame. The background is a vast, empty [color] canvas, creating significant negative space. Soft, subtle lighting. [Aspect ratio].
 
-
-
 **[模板6：漫画面板]**
 
 A single comic book panel in a [art style] style. In the foreground, [character description and action]. In the background, [setting details]. The panel has a [dialogue/caption box] with the text &quot;[Text]&quot;. The lighting creates a [mood] mood. [Aspect ratio].
 
-
-
 **[模板7：年代重塑（特殊指令）]**
 
-Reimagine the person in this photo in the style of the ${decade}. This includes clothing, hairstyle, photo quality, and the overall aesthetic of that decade. The output must be a photorealistic image showing the person clearly.
-
-
+Reimagine the person in this photo in the style of the `${decade}`. This includes clothing, hairstyle, photo quality, and the overall aesthetic of that decade. The output must be a photorealistic image showing the person clearly.
 
 ---
 
@@ -105,10 +84,6 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 ```
 
 > Using the style of this image, the ingredients—West African cocoa powder (from Ghana/Côte d'Ivoire), milk, cinnamon, black pepper (a pinch), brown sugar, and milk foam—are transformed into a complete step-by-step recipe infographic, presented from a top-down perspective. The infographic is presented in a minimalist style with a white background. The image includes labeled ingredient photos, with dotted lines connecting icons representing the preparation steps. A photo of the finished West African cocoa latte in a cup appears at the bottom of the infographic.
-
-
-
-
 
 ![](img/e3c3f49c9e288de2ccf7b5c35eb93370.png)
 
@@ -118,17 +93,15 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 ## 0901更新
 
-1.  画一辆在东京市中心行驶的汽车
+1. 画一辆在东京市中心行驶的汽车
 
-1.  把它做成黑白卡通风图
+2. 把它做成黑白卡通风图
 
-1.  切换为俯瞰视角
+3. 切换为俯瞰视角
 
-1.  调整为从下方构图的类似舔舐(翻译不出)视角，对车辆进行缩放
+4. 调整为从下方构图的类似舔舐(翻译不出)视角，对车辆进行缩放
 
 ![](img/257859049aeb1cff94efd579d908bbc6.png)
-
-
 
 ![](img/315329c9160d536c081101a94c2dc1cd.png)
 
@@ -136,9 +109,9 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 [kling_20250901_图生视频__5098_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HdOFbbYrVosOLcxtscccD5l3nrc)
 
-+   变成线稿手绘图
++ 变成线稿手绘图
 
-+   准确使用色卡为图二人物上色
++ 准确使用色卡为图二人物上色
 
 ![](img/cf1094aec4e12aa8cd0586aa65dfcbec.png)
 
@@ -152,18 +125,15 @@ Reimagine the person in this photo in the style of the ${decade}. This includes 
 
 ![](img/95b8c51a481a78f2a697bf170c3c53aa.png)
 
++ 转成3D建模的白模，去掉背景
 
-+   转成3D建模的白模，去掉背景
-
-+   汽车旋转90度
++ 汽车旋转90度
 
 ![](img/68ec46acb0b10948e2c477c60e5e8986.png)
 
 ![](img/a693cd8016012e2630c1e9be68fe4606.png)
 
 ![](img/3b0c8b93d202e1d17418e8ccc9ba1d6d.png)
-
-
 
 ![](img/fb3e408966ddf7972806e8fe660d3af7.png)
 
@@ -177,9 +147,7 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/541786f5ea00689b20b4aeef211563bc.png)
 
-
-
-> you are a location-based AR experience generator. highlight [point of interest] in this image and annotateelevant information about it.
+> you are a location-based AR experience generator. highlight `[point of interest]` in this image and annotateelevant information about it.
 
 ![](img/480297125b840eef9c31dae99b6ff32e.png)
 
@@ -187,7 +155,7 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 [kling_20250901_图生视频__5869_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xpsqb2sAKok5Q9x549LcIDhVnbc)
 
-> **This photo is very boring and plain. Enhance it! Increase the contrast, boost the colors, and**** **improve the lighting to make it richer,You can crop and delete details that affect the composition.
+> This photo is very boring and plain. Enhance it! Increase the contrast, boost the colors, and improve the lighting to make it richer. You can crop and delete details that affect the composition.
 
 > 【Increase the amount of sunlight on the mountain peaks】额外效果
 
@@ -205,16 +173,13 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/ce1f1e285d28e1d258483d80a7431e3f.png)
 
-
-
 ![](img/c8fab6fa27f040a4fb889328c06219a5.png)
 
-+   Generate a photo of a girl cosplaying this illustration, with the background set at Comiket
++ Generate a photo of a girl cosplaying this illustration, with the background set at Comiket
 
-+   Replace the background of Figure 1 with the anime Background from Figure 2
++ Replace the background of Figure 1 with the anime Background from Figure 2
 
 ![](img/e3096d618cdc0fb21fb7778a893a5b62.png)
-
 
 ![](img/6418f9fdacdbec7405872928be6b8710.png)
 
@@ -246,9 +211,7 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/a76a03ab1030b54a0ea7fc4b4bf4ebbe.png)
 
-另外一个高级玩法就是红框，简单来说就是框出图片中的元素，基于这个元素可以提取，放大，替换
-
-，独立成片。
+另外一个高级玩法就是红框，简单来说就是框出图片中的元素，基于这个元素可以提取，放大，替换，独立成片。
 
 > 将红色盒子里的人分开，变成高清单人照片g'g
 
@@ -260,20 +223,25 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 除了放大，红框还可以限定物体更换的区域，这样的好处是因为每张图大小不同，有的时候模型会误解插入物体应有的大小。
 
+
+
+# Nano Banana 图像生成与编辑实践笔记
+
+## 图片局部替换与蒙版编辑
+
 ![](img/b743bff523164fbbb2901b338ec94984.png)
 
 如果把红框转成大块红色蒙版，还可以无中生有，
 
 > replace the brush area with a chanel bag
 
-
-
-
 ![](img/80509e166efbefe4ed2429b4c2dd6b7c.png)
 
 红框框照样是可以拖到ppt里完成，蒙版就更好做了，用手机自带的图片编辑就可以完成。
 
 那如果还想简单一些，或者说利用模型脑子里的世界知识呢？
+
+## 视图转换与视频空镜生成
 
 > 将照片转换为自上而下的视图并标记摄影师的位置。
 
@@ -291,6 +259,8 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/cd35e386301af42a710ed09990025453.png)
 
+## 建筑标注与基于位置的AR体验
+
 还有还有，Nano Banana拥有Gemini的世界知识，我们还可以上传各种现实世界的建筑截图进行标注。
 
 > 你是一个基于位置的AR体验生成器。在图片中突出显示[兴趣点]，并为它添加相关的信息注释。
@@ -300,6 +270,8 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 ![](img/d29439d03a317dc6fbfec94d573ba8c3.png)
 
 ![](img/ff8bc9eec9261c8078730eca1ae71e96.png)
+
+## 姿势迁移与动漫画生成
 
 如果多画几笔红线，画成火柴人的话，还可以做成大幅度动作漫画！
 
@@ -313,6 +285,8 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/6c25e4df6e29e2513cc4195d8f1cdc86.png)
 
+## 插画与真人互相转换
+
 插画变手办变多了，
 
 还可以让Nano Banana来个插画变真人，看看会不会有AI假感
@@ -321,7 +295,9 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/e8aaaa87a1de37ff9d98c6c2361c75db.png)
 
-![](img/10b808e9930a628b9e9d41f3e91e6bd9.png)
+![](img/10b808e9930a628b9e9d41f3e91e6bd.png)
+
+## 原创角色设定（Character Design）
 
 那如果想要自己捏一个原创角色呢？
 
@@ -339,8 +315,9 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/6447e68bc8a49b6eb8122635731b119a.png)
 
-
 ![](img/e9376de2e1cad8b5335fed332c031409.png)
+
+## 角色海报与文字保持能力
 
 设计好自己的原创角色的吧，不如再试试看做一个角色海报，看看Nano Banana的文字保持能力，
 
@@ -356,6 +333,8 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 ![](img/986e1e824dd45e272402136efe971ac6.png)
 
+## 纯文字海报与信息图生成
+
 用Nano Banana做点纯文字海报也是可以的，
 
 > 请仔细阅读输入的内容，提取主题和核心要点，生成反应文章内容的封面图，要求：
@@ -370,9 +349,7 @@ Show me how this Jardin de la Tour Eiffel map looks like from a POV when I am st
 
 解释GPT5是什么
 
-
 解释AI coding和人工codng的区别
-
 
 > 为文章内容生成信息图
 

@@ -1,3 +1,4 @@
+
 # 2024生成式人工智能GenAI在生物医药大健康行业应用进展报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/MaZbdxYTVohG7uxIOkLcL3DNnM0](https://agijuejin.feishu.cn/docx/MaZbdxYTVohG7uxIOkLcL3DNnM0)

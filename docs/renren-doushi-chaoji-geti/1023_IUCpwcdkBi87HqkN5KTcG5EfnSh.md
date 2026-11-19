@@ -1,3 +1,4 @@
+
 # 2023-10-13经历过上次的续航，开发了一个自动加🛰️的RPA 副本
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KMhEdvlWeo1qBqxiXg6cHlyjnIe](https://xuqiwei1986.feishu.cn/docx/KMhEdvlWeo1qBqxiXg6cHlyjnIe)
@@ -14,33 +15,33 @@
 
 而这样也能提升我服务的船员们的航海体验了！
 
-# 一，运行前准备工作
+## 一、运行前准备工作
 
 1.需要安装影刀
 
-https://www.winrobot360.com/share/activity?inviteUserUuid=118838783572787201
+`https://www.winrobot360.com/share/activity?inviteUserUuid=118838783572787201`
 
 2.下载这个表格
 
 ![](img/a1ab23e3bf8e2be3b593d70019058780.png)
 
-[自动+V.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vzglb1fiGoI1dJxuipscgUffnAe)
+[`自动+V.xlsx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vzglb1fiGoI1dJxuipscgUffnAe)
 
 3.获取这个自动+V的影刀应用
 
-https://api.winrobot360.com/redirect/robot/share?inviteKey=6a5435f00951c66a
+`https://api.winrobot360.com/redirect/robot/share?inviteKey=6a5435f00951c66a`
 
 密码：scys
 
-4.先打开：自动+V.xlsx，这个表格
+4.先打开：`自动+V.xlsx`，这个表格
 
 编辑表格中的关键信息
 
-Sheet1为加🛰️息
+`Sheet1`为加🛰️息
 
-# 二，正式运行开始
+## 二、正式运行开始
 
-1.打开🛰️和自动+V.xlsx 的表格
+1.打开🛰️和`自动+V.xlsx`的表格
 
 2.在「已获取应用」中，找到「自动+v」机器人，点击「运行应用」
 
@@ -56,11 +57,11 @@ Sheet1为加🛰️息
 
 各位隔一段时间后，再重新运行就可以。
 
-# 三，搭配数据志愿者后台🛰️抓取效果更佳
+## 三、搭配数据志愿者后台🛰️抓取效果更佳
 
 1.获取影刀应用
 
-https://api.winrobot360.com/redirect/robot/share?inviteKey=bbf52b823e344c69
+`https://api.winrobot360.com/redirect/robot/share?inviteKey=bbf52b823e344c69`
 
 密码scys123
 
@@ -84,7 +85,7 @@ https://api.winrobot360.com/redirect/robot/share?inviteKey=bbf52b823e344c69
 
 6.等待完成表格出现在你选择的文件夹中
 
-# RPA能做的远远不止自动加🛰️好友
+## RPA能做的远远不止自动加🛰️好友
 
 凡是你日常工作、项目中的相关操作符合以下条件：
 
@@ -100,6 +101,6 @@ https://api.winrobot360.com/redirect/robot/share?inviteKey=bbf52b823e344c69
 
 我是马小威，一位目前专注在RPA提升工作效率的资深志愿者。
 
-如果你也想要提升工作效率欢迎你和我一起交流~V:mxw4260
+如果你也想要提升工作效率欢迎你和我一起交流~`V:mxw4260`
 
 ![](img/1ca80385b3cc6f455e86b0e2366d4919.png)

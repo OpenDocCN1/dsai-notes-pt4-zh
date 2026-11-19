@@ -1,12 +1,13 @@
+
 # 太空小孩的个人说明书
 
 > 来源：[https://my.feishu.cn/docx/ImoJdvx3JoWJcWx4VYtc2saenSg](https://my.feishu.cn/docx/ImoJdvx3JoWJcWx4VYtc2saenSg)
 
 > [个人主页 →](https://spacekid.me/)｜数字名片 Yellow Page →｜Notion 版本个人说明书 →
 
-> 本页面的固定链接：https://i.spacekid.me/
+> 本页面的固定链接：`https://i.spacekid.me/`
 
-# ➊ 基础信息档案 ʙᴀꜱɪᴄ ᴘʀᴏꜰɪʟᴇ
+## ➊ 基础信息档案 ʙᴀꜱɪᴄ ᴘʀᴏꜰɪʟᴇ
 
 ---
 
@@ -26,7 +27,7 @@
 
 +   一不小心给张小龙完成了一次造神运动
 
-# ➋ 性格解析系统 ᴘᴇʀꜱᴏɴᴀʟɪᴛʏ ᴅᴇᴄᴏᴅᴇʀ
+## ➋ 性格解析系统 ᴘᴇʀꜱᴏɴᴀʟɪᴛʏ ᴅᴇᴄᴏᴅᴇʀ
 
 ---
 
@@ -42,7 +43,7 @@
 
 +   🧟 末**日生存狂，**有自己的 BOB 背包和 PSK 生存盒，但仍然试图做个灰人。
 
-# ➌ 能力模块矩阵 ᴀʙɪʟɪᴛʏ ᴍᴀᴛʀɪx
+## ➌ 能力模块矩阵 ᴀʙɪʟɪᴛʏ ᴍᴀᴛʀɪx
 
 ---
 
@@ -70,7 +71,7 @@
 
 +   [多款智能体作品](https://www.coze.cn/user/1753058346019572)被[扣子作品社区首页](https://www.coze.cn/store/agent)置顶推荐已长达 2 年。
 
-# ➍ 身份识别体系 ɪᴅᴇɴᴛɪᴛʏ ꜱʏꜱᴛᴇᴍ
+## ➍ 身份识别体系 ɪᴅᴇɴᴛɪᴛʏ ꜱʏꜱᴛᴇᴍ
 
 ---
 
@@ -80,9 +81,9 @@
 
 +   **🧬 宇宙世界观：**相信 π 合取，且试图用庞加莱回归理解轮回，认同人生是一个巨大的蒙特卡洛采样误差。
 
-多维表格（Ebvvb9ssLajppWs67A8cp73onQ7_tblIOOKXjfC5KiEQ）
+多维表格（`Ebvvb9ssLajppWs67A8cp73onQ7_tblIOOKXjfC5KiEQ`）
 
-# ➎ 信号状态地图 ꜱɪɢɴᴀʟ ꜱᴛᴀᴛᴜꜱ ᴍᴀᴘ
+## ➎ 信号状态地图 ꜱɪɢɴᴀʟ ꜱᴛᴀᴛᴜꜱ ᴍᴀᴘ
 
 ---
 
@@ -116,9 +117,7 @@
 
 > ** **
 
-
 请备注来意
-
 
 [🛰️直达链接 →](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODgxODMyMQ==&scene=117#wechat_redirect)
 

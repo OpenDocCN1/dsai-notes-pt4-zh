@@ -1,8 +1,9 @@
+
 # GPT知识库
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/DElDdZR3bozKzDxRpYncoTOJngb](https://xuqiwei1986.feishu.cn/docx/DElDdZR3bozKzDxRpYncoTOJngb)
 
-# 💡资料目录
+## 💡资料目录
 
 | 目录内容 |
 | --- |
@@ -13,14 +14,14 @@
 | 🚀Stable diffusion终极教程 |
 |  |
 
-# AI成长导图
+## AI成长导图
 
 |  |
 | --- |
 |  |
 |  |
 
-# 🚀Stable diffusion终极教程
+## 🚀Stable diffusion终极教程
 
 | 日期 | 教程 |
 | --- | --- |
@@ -45,7 +46,7 @@
 | 2023-08-30 | [Stable Diffusion采样器：超详细入门指南](https://xuqiwei1986.feishu.cn/wiki/KgjYwUuQ5iJzcKkjPT0cq5OQn5e) |
 | 2023-08-25 | [《流量密码！AI幻术终极教程，3步做出百万爆款视频！》](https://xuqiwei1986.feishu.cn/wiki/AZCzwR2yLi6u0WkraWmcPKjtnjb) |
 | 2023-08-24 | [「换脸教程」写真自由！终于实现用lora换脸啦～MJ、SD以及lora的换脸教程整合版](https://xuqiwei1986.feishu.cn/wiki/CbKHwoQoli9Qc4kSyyXcPW7Kn9d) |
-| 2023-08-24 | [2023-08-24&quot;妙鸭相机&quot;开源版facechain本地部署详细教程（windows系统）](https://xuqiwei1986.feishu.cn/wiki/GyTYww9iliqoZVkUs2gc4eKknQh) |
+| 2023-08-24 | ["妙鸭相机"开源版facechain本地部署详细教程（windows系统）](https://xuqiwei1986.feishu.cn/wiki/GyTYww9iliqoZVkUs2gc4eKknQh) |
 | 2023-08-22 | [2023-08-22Stable Diffusion一周年：这份扩散模型编年简史值得拥有](https://xuqiwei1986.feishu.cn/wiki/SAXiwIrAAiyf0Gk1iJ1c38SVnuc) |
 | 2023-08-22 | [2023-08-21简单三步！教你用SD制作隐藏定位点的艺术二维码！ 副本](https://xuqiwei1986.feishu.cn/wiki/ZeL7wGiUAiGSWKkiGqpcaRB5njf) |
 | 2023-08-20 | [2023-08-20爆火「视频版ControlNet」开源了！靠提示词精准换画风，全华人团队出品](https://xuqiwei1986.feishu.cn/wiki/E4vJw4P3Yiwev2k0tndc6Rg5nYe) |
@@ -59,8 +60,8 @@
 | 2023-07-25 | [SD 艺术字实战：小赚几百块](https://xuqiwei1986.feishu.cn/wiki/V8CawV4yxiXWbBke08VcEPmSnCh) |
 | 2023-07-22 | [在用了两个云平台后，终于决定在Mac上部署Stable Diffusion了！（保姆级教程，含踩坑点）](https://zngu6uo6q3.feishu.cn/docx/BjUHdfj6yo8LwxxbYpAceRTlnde) |
 | 2023-07-15 | [2023-07-15手把手教你用 SD 生成文字形状的光线，用来做营销宣传图非常有效](https://xuqiwei1986.feishu.cn/wiki/UZlAwXmCWiMeX2kvvrocjX5WnQd) |
-| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &amp;优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
-| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &amp;优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
+| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
+| 2023-07-12 | [2023-07-12【快闪】AI绘画商业变现 &优秀对标拆解](https://xuqiwei1986.feishu.cn/wiki/BAXEwyNfaiSEibk7go2cb9xln3c) |
 | 2023-07-11 | [《爆肝7天！AI创意字终极攻略，光影、隐藏、嵌入、海报4种创意字全拆解！》](https://xuqiwei1986.feishu.cn/wiki/HRrjwD2Fpi3HM4k9gFPcWT6dnIu) |
 | 2023-07-10 | [【技术向】一文讲透如何用SD制作出来高质量艺术二维码](https://xuqiwei1986.feishu.cn/wiki/JU2OwyoX6i5uajkrFUJc3Ogunxc) |
 | 2023-07-09 | [2023-07-09SD零基础，4天做赛博机车项目变现1000+，有什么启示？](https://xuqiwei1986.feishu.cn/wiki/X7eKwFJsiiBcMhkb9iPc9EQYndd) |
@@ -84,13 +85,17 @@
 | 2023-05-21 | [《瞬息全宇宙——穿越之旅终极教程》](https://xuqiwei1986.feishu.cn/wiki/RbaiwC6ZZiCZaVkfGPYcuEBBnpd) |
 | 2023-04-21 | [《Stable Diffusion终极宝典》](https://xuqiwei1986.feishu.cn/wiki/L6vuwRyufi3XaxkLhTXcBFvQnMd) |
 
-# ⚓️ Midjourney大航海
+## ⚓️ Midjourney大航海
 
-| 2023-10-10 | [2023-10-10媲美Midjourney，微软New Bing免费提供DALL-E3](https://xuqiwei1986.feishu.cn/wiki/KdPTw2Qkbi2BRdk0ZAWckKmwnbb) |
+| 日期 | 教程 |
 | --- | --- |
+| 2023-10-10 | [2023-10-10媲美Midjourney，微软New Bing免费提供DALL-E3](https://xuqiwei1986.feishu.cn/wiki/KdPTw2Qkbi2BRdk0ZAWckKmwnbb) |
 | 2023-10-07 | [2023-10-07 min 搞定用户画像-爆肝拆解 AI 生成用户画像工作流](https://xuqiwei1986.feishu.cn/wiki/ZJJBwquZaiLMI1k1WhucWwETnJe) |
 | 2023-09-29 | [midjourney做可以搞钱的🛰️表情包避坑指南](https://xuqiwei1986.feishu.cn/wiki/G7VGwr4TviuRenk4GaccmhKZnEb) |
 | 2023-09-26 | [2023-09-26Midjourney如何做创意美甲设计？](https://xuqiwei1986.feishu.cn/wiki/PMgwwXopEif8MYkssdCcyl3Fnab) |
+
+
+
 | 2023-09-23 | [2023-09-23Midjourney 很出效果的 40 位艺术家推荐](https://xuqiwei1986.feishu.cn/wiki/O8XGwxbDcikwZHkXQsfcdTrNnhb) |
 | 2023-09-21 | [2023-09-21Fooocus 逆天王炸级更新](https://xuqiwei1986.feishu.cn/wiki/Z5Ugwy0NMixkWnk6PY2ck3VnnYf) |
 | 2023-09-14 | [2023-09-14AI绘画案例分析及其背后使用的Midjourney操作技巧](https://xuqiwei1986.feishu.cn/wiki/JEtywK3k9i48e9kEkwhcyni0nYe) |
@@ -114,27 +119,16 @@
 # 知识库合集
 
 [🥇「AI 知识库」 首页](https://xuqiwei1986.feishu.cn/wiki/NoymwdxIrirN6AkpvozcwXbbnj4)
-
 [「AI应用大爆炸社区」知识库](https://xuqiwei1986.feishu.cn/wiki/NNyWwxrf8itnCFkQX6BcQPGKnbf)
-
 [AI研习社](https://xuqiwei1986.feishu.cn/wiki/QJM1weO6jilUfAkxh4ScnpyAnJc)
-
 [🌈 通往 AGI 之路 ](https://xuqiwei1986.feishu.cn/wiki/CVBowuIqJimF1LkLk2BczZ65nGc)
-
 [👨🏻‍💻 刘海的个人说明书 👨🏻‍💻](https://xuqiwei1986.feishu.cn/wiki/Cqu8w1KXxiy2F6kBX3bcwJyan1f)
-
 [看见AI知识库](https://xuqiwei1986.feishu.cn/wiki/ErBZw6Tpti9022ktl2BcbnPAnES)
-
 [关于半山学院（必读）](https://xuqiwei1986.feishu.cn/wiki/J0RcwdSf2iBoz6kKjYech7gbnPe)
-
 [欢迎来到产品小鲤 AI 冲浪](https://xuqiwei1986.feishu.cn/wiki/FQ5hwhmK7iadzTkjKRscIMe5nxg)
-
 [查特邦——ChatGPT及AI工具免费知识库【更新至 2023.7.27】](https://xuqiwei1986.feishu.cn/wiki/ZI9mwj100iBnW7kDda7cflDUnJf)
-
 [AI 时代的学习观及方法论](https://xuqiwei1986.feishu.cn/wiki/IppFw3eMGiRlvoklQpSc09Z9nSj)
-
 [# AI 严选](https://xuqiwei1986.feishu.cn/wiki/XDihwKjttiLL6GkflqHc5BBwnOb)
-
 [快速入门](https://xuqiwei1986.feishu.cn/wiki/S3vUwOgSmiXNYmk25hocCtYznKc)
 
 # 关于我
@@ -142,3 +136,4 @@
 | 脉脉名片 |
 | --- |
 |  |
+

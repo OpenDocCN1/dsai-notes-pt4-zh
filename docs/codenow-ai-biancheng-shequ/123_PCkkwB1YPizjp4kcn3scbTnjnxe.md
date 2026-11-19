@@ -1,8 +1,7 @@
+
 # Netlify部署NextJS静态网站
 
 > 来源：[https://now.feishu.cn/docx/YGlQdgrnNoOBW3xB6XucSYbWnoc](https://now.feishu.cn/docx/YGlQdgrnNoOBW3xB6XucSYbWnoc)
-
-+   Netlify部署NextJS静态网站
 
 ![](img/58d3140750a45f7e34ce0e08483e21e8.png)
 

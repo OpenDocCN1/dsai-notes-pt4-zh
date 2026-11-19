@@ -1,32 +1,31 @@
+
 # 从愚昧之巅推向绝望之谷 ｜ 达克效应
 
 > 来源：[https://huchegames.feishu.cn/docx/EgXxd02NsoeXUoxfd4Ec2TvonQd](https://huchegames.feishu.cn/docx/EgXxd02NsoeXUoxfd4Ec2TvonQd)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/gpNbz4_KoYGVnWnC0DfiUQ)q.com/s/gpNbz4_K...
+> 🔗 原文链接：https://mp.weixin.qq.com/s/gpNbz4_KoYGVnWnC0DfiUQ
 
 > ⏰ 原创 曾嵘 曾嵘胡扯的地方2022年01月23日 09:09
 
-> 有担当的管理者的一个重要的责任，就是把下属从愚昧之巅推向绝望之谷。
+有担当的管理者的一个重要的责任，就是把下属从愚昧之巅推向绝望之谷。
 
-这是我在 2019 年 1 月 20 日写的一篇随[笔，距离今天已经整整三](http://mp.weixin.qq.com/s?__biz=Mzg5NDUzMzM0NA==&mid=2247485265&idx=1&sn=8355dd399aab89ffa8cb99f853c943f2&chksm=c01f6cdef768e5c853de8d923765382efee612aed965d5cbbcbd09f078ce8b0e740a8bf387ae&scene=21#wechat_redirect)年了。早上在回复 SAGI GAMES 同学周报的时候翻了出来。我这两天一直在反思2021年的工作，将文章与这三年我所做的决策对比思考，感触良多。
+这是我在 2019 年 1 月 20 日写的一篇随笔，距离今天已经整整三年了。早上在回复 SAGI GAMES 同学周报的时候翻了出来。我这两天一直在反思2021年的工作，将文章与这三年我所做的决策对比思考，感触良多。
 
 ![](img/30b29259f0114647015623648d8deee9.png)
 
 图像1: 笔记属性
 
-我将其稍作修改发出来，就是 20**22 年的第一篇文**章了。所以，这是一篇 「崭新的旧文章」 。文章中的一些观点需要结合当时（2019 年1 月）的现状才能讲得通。
+我将其稍作修改发出来，就是 2022 年的第一篇文章了。所以，这是一篇 「崭新的旧文章」。文章中的一些观点需要结合当时（2019 年1 月）的现状才能讲得通。
 
-文章标题和最开始的一句话来自于这篇采访： 美团王慧文：大部分人不知道自己在愚昧之巅。
+文章标题和最开始的一句话来自于这篇采访：美团王慧文：大部分人不知道自己在愚昧之巅。
 
 https://m.huxiu.com/article/282026.html
 
 这篇文章说了三个部分内容：
 
-1.  美团对上市这件事的认识；
-
-1.  管理和组织架构；
-
-1.  对于企业基因的认识。
+1. 美团对上市这件事的认识；
+2. 管理和组织架构；
+3. 对于企业基因的认识。
 
 有几句话对我触动比较大：
 
@@ -48,7 +47,7 @@ https://m.huxiu.com/article/282026.html
 
 图像 2: DK effect
 
-![](img/6757ff62326c677a55b3268b38cabe31.png)
+![](img/6757ff623268b38cabe31.png)
 
 图像 3: Skill Over Time
 
@@ -56,11 +55,9 @@ https://m.huxiu.com/article/282026.html
 
 达克效应：
 
-+   D-K effect
-
-+   邓宁-克鲁格效应
-
-+   Dunning-Kruger effect
++ D-K effect
++ 邓宁-克鲁格效应
++ Dunning-Kruger effect
 
 昨天看了 《空雨衣》，里面提到了 S 型曲线和达克效应有异曲同工之妙。看来大师们触摸到顶端之后，得到的本质理论是相同的。
 
@@ -70,11 +67,10 @@ S 曲线是把 S 躺下来看，大概的意思是，业务发展一定有增长
 
 我做管理方面的工作时，会有两个极端思维：
 
-+   1.觉得别人在 **D-K PEAK **，为啥别人不能快点成长和我保持思路一致啊；
++ 1. 觉得别人在 `D-K PEAK`，为啥别人不能快点成长和我保持思路一致啊；
++ 2. 觉得自己在 `绝望之谷`，似乎做什么都不对，很痛苦，不知道方向在哪里。
 
-+   2.觉得自己在 **绝望之谷 **，似乎做什么都不对，很痛苦，不知道方向在哪里。
-
-**《空雨衣》 **里面讲的 S曲线也有一个悖论。企业如何知道自己的业务是否处于向顶峰攀爬的过程中，还是已经处于顶**峰？何时开辟第**二条曲线才是最好的时机？毋庸置疑，新的曲线开始的时候大概率会处于 「绝望之谷」 ，而且会消耗大量的人力物力财力。
+《空雨衣》里面讲的 S曲线也有一个悖论。企业如何知道自己的业务是否处于向顶峰攀爬的过程中，还是已经处于顶峰？何时开辟第二条曲线才是最好的时机？毋庸置疑，新的曲线开始的时候大概率会处于 「绝望之谷」，而且会消耗大量的人力物力财力。
 
 ## 回到实际问题
 
@@ -84,33 +80,26 @@ S 曲线是把 S 躺下来看，大概的意思是，业务发展一定有增长
 
 > 不要用基因自我设限
 
-**专业是**必须要专业的 。对于游戏行业的从业者来说，除了专业还需要 全面 。
+专业是必须要专业的 。对于游戏行业的从业者来说，除了专业还需要 全面 。
 
 我一直这样认为：
 
-+   非全栈的程序员，不是称职的程序员。
++ 非全栈的程序员，不是称职的程序员。
++ 不懂一点美术、设计、音乐、程序、写作、管理的游戏策划，不是合格的策划，不可能成长一个合格的游戏制作人。
++ 不懂商务和产品的运营不是好运营。
++ 不玩自己做的游戏的人，`不配做游戏`。
 
-+   不懂一点美术、设计、音乐、程序、写作、管理的游戏策划，不是合格的策划，不可能成长一个合格的游戏制作人。
+## 用基因自我设限，更多的可能是给懒惰找台阶罢了。
 
-+   不懂商务和产品的运营不是好运营。
-
-+   不玩自己做的游戏的人， **不配做游戏 。**
-
-# 用基因自我设限，更多的可能是给懒惰找台阶罢了。
-
-## 下面的内容来自未来（2022-01-23）
+### 下面的内容来自未来（2022-01-23）
 
 我还是觉得三年前的思考有那么一点极端。后面我又写了几篇文章来平复这种思维：
 
-+   [读书笔记：《俞军产品方法论》](https://huchegames.feishu.cn/wiki/Ma0ewgBp1iC1yskt4omcn7tSnPf)
-
-+   [聪明的中层管理者](https://huchegames.feishu.cn/wiki/AuucwR0ffiluo8k0CIwcWfwZnLd)
-
-+   [去上游](https://huchegames.feishu.cn/wiki/VZoLwxBoti0VsQkRmrWcw5EFnxh)
-
-+   [自主思考是对员工的过分要求](https://huchegames.feishu.cn/wiki/Al9Hwiz0Oik6w1k0UmjcFLRMn6g)
-
-+   [杰出并非不可取代 读书笔记：《一生的旅程》](https://huchegames.feishu.cn/wiki/O5GNwOHXiif4cYkNJw2cjuGanCc)
++ [读书笔记：《俞军产品方法论》](https://huchegames.feishu.cn/wiki/Ma0ewgBp1iC1yskt4omcn7tSnPf)
++ [聪明的中层管理者](https://huchegames.feishu.cn/wiki/AuucwR0ffiluo8k0CIwcWfwZnLd)
++ [去上游](https://huchegames.feishu.cn/wiki/VZoLwxBoti0VsQkRmrWcw5EFnxh)
++ [自主思考是对员工的过分要求](https://huchegames.feishu.cn/wiki/Al9Hwiz0Oik6w1k0UmjcFLRMn6g)
++ [杰出并非不可取代 读书笔记：《一生的旅程》](https://huchegames.feishu.cn/wiki/O5GNwOHXiif4cYkNJw2cjuGanCc)
 
 更多关于管理的文章可以看博客中的这个 Tag Management ：
 

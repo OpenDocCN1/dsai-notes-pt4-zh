@@ -1,3 +1,4 @@
+
 # 各行业所需资质
 
 > 来源：[https://docs.feishu.cn/docx/TcfLdgazooqcZfxEY9acbItFnsc](https://docs.feishu.cn/docx/TcfLdgazooqcZfxEY9acbItFnsc)
@@ -8,9 +9,9 @@
 
 **-答2：**我跟某大厂的做平台治理的同学交流过，他说他们也很头疼各种类目下各种资质。
 
-**-答3：****🛰️小程序类目资质**去看下。详见：https://developers.weixin.qq.com/miniprogram/product/material/。
+**-答3：****🛰️小程序类目资质**去看下。详见：`https://developers.weixin.qq.com/miniprogram/product/material/`。
 
-**-答4：**还可以看看**支付宝**的，详见：https://opendocs.alipay.com/b/03al2m。
+**-答4：**还可以看看**支付宝**的，详见：`https://opendocs.alipay.com/b/03al2m`。
 
 **-答5：**互联网资质类之前看过麻策律师的《互联网实务全书》，介绍的还挺全面，之前对接办理过ICP许可，EDI，文网文等资质，实际办理和法规要求还不太一样，对页面做成啥样要求还挺严格。
 

@@ -1,6 +1,7 @@
+
 # Smartisan: 一个理想主义者的传奇
 
-> 来源：[https://leonzhang.feishu.cn/docx/IqN6dZJxLoLgQCxr9kMcZkWsnIg](https://leonzhang.feishu.cn/docx/IqN6dZJxLoLgQCxr9kMcZkWsnIg)
+> 来源：`https://leonzhang.feishu.cn/docx/IqN6dZJxLoLgQCxr9kMcZkWsnIg`
 
 > 本文由 Google Gemini 2.5 Pro Deep Research 完成，完整 Prompt 如下：
 
@@ -42,9 +43,7 @@
 - 如果某些日期存在争议或资料稀缺，请尝试查阅官方发布会视频/新闻稿，或知名科技媒体（如新浪科技、虎嗅、极客公园）的第一手报道。若找不到具体时间，可备注“待确认”或列出多个可能版本。
 ```
 
-# Smartisan: 一个理想主义者的传奇
-
-> **交互式网页：****https://g.co/gemin**i/share/77307178ce96
+> **交互式网页：** `https://g.co/gemini/share/77307178ce96`
 
 ## 摘要：Smartisan 现象
 

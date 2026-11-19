@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230812）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/LqaXdjlaHoxCuQx301rcEv8znvd](https://jlqyxzzvbk.feishu.cn/docx/LqaXdjlaHoxCuQx301rcEv8znvd)
@@ -6,13 +7,13 @@
 
 ![](img/ff73d523effcc353ded1b6c130364487.png)
 
-![](img/8df84a0881b034b596ed7f9ac3b65d99.png)
+![](img/8df84a0881b034b596ed7f9ac3b65d999)
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## GPT-4最强平替更新！UC伯克利发布Vicuna v1.5，支持4K和16K上下文，刷新SOTA，LeCun转赞
+### GPT-4最强平替更新！UC伯克利发布Vicuna v1.5，支持4K和16K上下文，刷新SOTA，LeCun转赞
 
 GPT-4最强平替更新了！
 
@@ -28,7 +29,7 @@ GPT-4最强平替更新了！
 
 更多信息请访问：https://mp.weixin.qq.com/s/OWPQtFaww1vAqLoQuTxI6Q
 
-## 被裁员工回归，Meta重建元宇宙！发布逼真图像数据集，全球巡回组装AR眼镜
+### 被裁员工回归，Meta重建元宇宙！发布逼真图像数据集，全球巡回组装AR眼镜
 
 Meta的元宇宙探索，还在继续。
 
@@ -44,7 +45,7 @@ Meta的元宇宙探索，还在继续。
 
 更多信息请访问：https://mp.weixin.qq.com/s/-xlwUcY3ahlsw_zpxguClw
 
-## 单张A100，50亿步训练！英伟达开源最强虚拟角色定制模型，超逼真动作零样本生成，游戏动画行业要变天
+### 单张A100，50亿步训练！英伟达开源最强虚拟角色定制模型，超逼真动作零样本生成，游戏动画行业要变天
 
 ![](img/7cb435a1bf0d9da7e5a2748ed1972794.png)
 
@@ -52,9 +53,9 @@ Meta的元宇宙探索，还在继续。
 
 更多信息请访问：https://mp.weixin.qq.com/s/51gYbrckeukWoME8YOJOEA
 
-# AI软件精选
+## AI软件精选
 
-# Booth.ai**（****AI****绘画）**
+### Booth.ai（AI绘画）
 
 通过人工智能生成快速、廉价、高质量的图像，无需实物样本。通过上传您自己产品的图像，并通过编写简单的提示轻松生成专业级产品照片，并创建您想要的结果。
 
@@ -62,7 +63,7 @@ Meta的元宇宙探索，还在继续。
 
 链接：https://www.booth.ai/
 
-# **N****ig****htC**afe Studio（AI绘画）
+### NightCafe Studio（AI绘画）
 
 用人工智能创造令人惊叹的艺术品。
 
@@ -70,7 +71,7 @@ Meta的元宇宙探索，还在继续。
 
 链接：https://creator.nightcafe.studio/
 
-# SpellBox**（****AI****写代码）**
+### SpellBox（AI写代码）
 
 为忙碌的程序员提供AI编码助手。用人工智能在几秒钟内解决任何编程或工程问题。
 
@@ -78,11 +79,11 @@ Meta的元宇宙探索，还在继续。
 
 链接：https://spellbox.app/
 
-**更多****AI****工具请访问：**https://www.ainavpro.com/
+**更多 AI 工具请访问：**https://www.ainavpro.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -90,7 +91,7 @@ https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f793
 
 ![](img/db65191b6aba7c3847e4f71ac4866f0e.png)
 
-## 付费课程（ai认知提升）
+### 付费课程（ai认知提升）
 
 AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
@@ -98,15 +99,13 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/e0f6d157cb0d289a6ce75fc35bec2690.png)
 
-#
-
 ![](img/127ec0524f0419809e13e09e8c6c541d.png)
 
 ![](img/d88eaab57c23b2478faa0a977eb94f28.png)
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4.会员精选
 
 访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
 
@@ -118,7 +117,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/4c6cc5a785970e80d19dafd7439d39a0.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/df24adb67e83133151a36bfd9ac75d3f.png)
 

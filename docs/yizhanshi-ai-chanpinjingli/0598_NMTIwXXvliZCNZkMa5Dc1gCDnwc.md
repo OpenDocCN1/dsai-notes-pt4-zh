@@ -1,15 +1,16 @@
+
 # 1.0 LLM
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/EJdodDlpnoNiYmxa7WzcZwBKnOf](https://v11enp9ok1h.feishu.cn/docx/EJdodDlpnoNiYmxa7WzcZwBKnOf)
+> 来源：[`https://v11enp9ok1h.feishu.cn/docx/EJdodDlpnoNiYmxa7WzcZwBKnOf`](https://v11enp9ok1h.feishu.cn/docx/EJdodDlpnoNiYmxa7WzcZwBKnOf)
 
-<https://v11enp9ok1h.feishu.cn/sync/PaIIdslbxsIJUIbkTfPcsMCFnph>
+`https://v11enp9ok1h.feishu.cn/sync/PaIIdslbxsIJUIbkTfPcsMCFnph`
 
 ## 大模型本地部署教程
 
 | [基于COW框架的ChatBot实现步骤](https://v11enp9ok1h.feishu.cn/wiki/MaH1wC0VTi6S78k4tpDcDCx2nRd?from=from_copylink) | [GPT平替方法](https://v11enp9ok1h.feishu.cn/wiki/BrcSwceI9iS0lekk2tdcvPSRnCb?from=from_copylink) |
 | --- | --- |
 | [手把手教你本地部署大模型以及搭建个人知识库](https://v11enp9ok1h.feishu.cn/wiki/SzmYwWr7CisXeektvZmcQmnBnmd?from=from_copylink) | [全网最适合小白的 Llama3 部署和微调教程](https://v11enp9ok1h.feishu.cn/wiki/AECiwivlvi53GYkTryxcCz2HnGg?from=from_copylink) |
-| [无需微调，仅用提示词工程就能让 LLM 获得 tool calling 的功能](https://v11enp9ok1h.feishu.cn/wiki/HnSDwHzQviRqgTkbJo1cLTv2nif?from=from_copylink) |  |
+| [无需微调，仅用提示词工程就能让 LLM 获得 tool calling 的功能](https://v11enp9ok1h.feishu.cn/wiki/HnSDwHzQviRqgTkbJo1cLTv2nif?from=from_copylink) | |
 
 ## LLM基础知识&论文解析
 
@@ -25,4 +26,4 @@
 | [目标检测模型评估指标](https://v11enp9ok1h.feishu.cn/wiki/JH5Qww73Ni8qCskPFopcI3xynRg?from=from_copylink) | [LoRA相关技术及要点](https://v11enp9ok1h.feishu.cn/wiki/UTOzwjQTliLhyYkfEmWcE4hYnSh?from=from_copylink) |
 | [扩散模型](https://v11enp9ok1h.feishu.cn/wiki/D7CUw08iFiQ2INkpBWMcX0KEngb?from=from_copylink) | [目标检测模型评估指标](https://v11enp9ok1h.feishu.cn/wiki/JH5Qww73Ni8qCskPFopcI3xynRg?from=from_copylink) |
 
-<https://v11enp9ok1h.feishu.cn/sync/Ipw1d27gNsv3OAbo3N7cks4ZnJf>
+`https://v11enp9ok1h.feishu.cn/sync/Ipw1d27gNsv3OAbo3N7cks4ZnJf`

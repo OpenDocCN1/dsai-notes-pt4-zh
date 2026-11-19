@@ -1,16 +1,17 @@
+
 # 【喂饭教程ai生成动漫画】超详细从0-1纯小白教程
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/JTq7dONX0osv58xln0PcPD7GnPf](https://xuqiwei1986.feishu.cn/docx/JTq7dONX0osv58xln0PcPD7GnPf)
 
-> 🖊 人不光是靠他生来就拥有一切，而是靠他从学习中所得到的一切来造就自己。 —— 歌德
+> 🖊 人不光是靠他生来就拥有一切，而是靠他从学习中所得到的一切来造就自己。—— 歌德
 
-### 步骤拆解
+## 步骤拆解
 
 ### 第一步：找视频素材
 
 直接去视频号或者抖音搜关键词：
 
-**#画一个世界   **
+**#画一个世界**
 
 **#感人瞬间**
 
@@ -20,7 +21,7 @@
 
 也可以直接搜热点视频，多刷一刷点点赞，后续推送的就都是类似内容了。
 
-**看到万**赞以上的可以顺手转发到自己的单人群里放着，等集中时**间做后续处**理**。高效率的收**集素材，能搜到很多同行，然后直接拿点赞最高的来抄。小tips：建单人群步骤——🛰️——右上角+——添加朋友——面对面建群——输入4个数字（除了不能是1111这种，其余都可以）——加入该群——群聊名称改为你想要的名字（比如灵感来源）。
+看到万赞以上的可以顺手转发到自己的单人群里放着，等集中时间做后续处理。高效率的收集素材，能搜到很多同行，然后直接拿点赞最高的来抄。小tips：建单人群步骤——🛰️——右上角+——添加朋友——面对面建群——输入4个数字（除了不能是1111这种，其余都可以）——加入该群——群聊名称改为你想要的名字（比如灵感来源）。
 
 **抄作业就要抄学霸的！**
 
@@ -32,11 +33,11 @@
 
 去抖音或者视频号上找你要剪辑的素材，然后下载下来。
 
-抖音里的素材收费工具首选亨亨猫（https://hhm.zzrjcp.com/），免费工具用这个（https://jianghudata.com/）。视频号里的素材下载工具地址：https://github.com/ltaoo/wx_channels_download，访问比较慢，工具放到这里有需要的可以直接下载（系统可能会报毒，不放心的可以自己去上边的地址下载）：
+抖音里的素材收费工具首选亨亨猫（`https://hhm.zzrjcp.com/`），免费工具用这个（`https://jianghudata.com/`）。视频号里的素材下载工具地址：`https://github.com/ltaoo/wx_channels_download`，访问比较慢，工具放到这里有需要的可以直接下载（系统可能会报毒，不放心的可以自己去上边的地址下载）：
 
 ![](img/7c96ebf1d2c0b81538e6fcbaa0c2c653.png)
 
-[wx_video_download.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XbC5bv4sKoCbtMxGQujcoEC5nVh)
+[`wx_video_download.zip`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XbC5bv4sKoCbtMxGQujcoEC5nVh)
 
 使用方法：下载下来后
 
@@ -50,7 +51,7 @@
 
 ![](img/c0d0fce6d34df50fc75d834a76752bc9.png)
 
-**小tips**：如果有水印和字幕可以用腾讯智影来抹掉：https://zenvideo.qq.com/smart/waterMask
+**小tips**：如果有水印和字幕可以用腾讯智影来抹掉：`https://zenvideo.qq.com/smart/waterMask`
 
 上传视频
 
@@ -70,7 +71,7 @@
 
 对comfyui比较熟的可以直接上工作流，也欢迎其他大佬推荐好用的平台。
 
-即梦网址：https://jimeng.jianying.com/ai-tool/video/generate
+即梦网址：`https://jimeng.jianying.com/ai-tool/video/generate`
 
 在即梦上，目前我能给你两种生成方案：
 
@@ -132,9 +133,9 @@
 
 **小tips**：当图片有点糊，会导致生成的画面扭曲，所以这里咱们得先把图片弄高清。
 
-这里我用的是豆绘：https://www.douhuiai.com/ric/20253854672824
+这里我用的是豆绘：`https://www.douhuiai.com/ric/20253854672824`
 
-在**人像写真**里面有个**人像变清晰**用它修复就行了**。**
+在**人像写真**里面有个**人像变清晰**用它修复就行了**。
 
 ![](img/a2f25b57ead6229da3fff947eeeb6c13.png)
 
@@ -152,9 +153,9 @@
 
 **小tips**：去除图片水印，给大家推荐一个网站，不用登录也可以用，去图片水印嘎嘎猛。
 
-生成好的图片下载下来，丢到https://dewatermark.ai/zh-CN这个网站里面去水印就行了。
+生成好的图片下载下来，丢到`https://dewatermark.ai/zh-CN`这个网站里面去水印就行了。
 
-## 第四步：剪辑出片（剪映电脑版）
+### 第四步：剪辑出片（剪映电脑版）
 
 成片是封面和结尾是AI动漫图片，中间是原视频做一些去重处理。
 
@@ -212,7 +213,7 @@
 
 ![](img/94a14aeb3e5336a37bf45508902c7f92.png)
 
-也可以参考抖音教程：https://v.douyin.com/i5nTXvB5/
+也可以参考抖音教程：`https://v.douyin.com/i5nTXvB5/`
 
 **第三步：添加滤镜**
 

@@ -1,3 +1,4 @@
+
 # 掌握这些Docker镜像管理命令，让容器部署更得心应手
 
 > 来源：[https://geekbang.feishu.cn/docx/Mmg9dxRXZoYhNUxU6iucFW9qnQb](https://geekbang.feishu.cn/docx/Mmg9dxRXZoYhNUxU6iucFW9qnQb)
@@ -16,7 +17,7 @@
 
 关注作者，获取更多相关知识
 
-# docker images
+## docker images
 
 列出本地镜像。
 
@@ -26,17 +27,12 @@ docker images [OPTIONS] [REPOSITORY[:TAG]]
 
 OPTIONS说明：
 
--a :列出本地所有的镜像（含中间映像层，默认情况下，过滤掉中间映像层）；
-
-–digests :显示镜像的摘要信息；
-
--f :显示满足条件的镜像；
-
-–format :指定返回值的模板文件；
-
-–no-trunc :显示完整的镜像信息；
-
--q :只显示镜像ID
+- `-a`：列出本地所有的镜像（含中间映像层，默认情况下，过滤掉中间映像层）；
+- `--digests`：显示镜像的摘要信息；
+- `-f`：显示满足条件的镜像；
+- `--format`：指定返回值的模板文件；
+- `--no-trunc`：显示完整的镜像信息；
+- `-q`：只显示镜像ID
 
 示例：
 
@@ -47,85 +43,56 @@ docker images --filter dangling=true
 docker image prune
 ```
 
-# docker build
+## docker build
 
-docker build 命令用于使用 Dockerfile 创建镜像。
+`docker build` 命令用于使用 `Dockerfile` 创建镜像。
 
 ```
 docker build [OPTIONS] PATH | URL | -
 ```
 
-OPTIONS说明：
+### OPTIONS 说明
 
-–add-host :向hosts文件中添加自定义 host:ip 映射
+- `--add-host`：向 `hosts` 文件中添加自定义 `host:ip` 映射
+- `--build-arg=[]`：设置镜像创建时的变量；
+- `--cache-from`：指定镜像用作当前构建的缓存镜像
+- `--cgroup-parent`：容器的可选父 cgroup
+- `--compress`：使用 gzip 压缩构建上下文
+- `--cpu-period`：限制 CPU CFS 周期；
+- `--cpu-quota`：限制 CPU CFS 配额；
+- `-c,–cpu-shares`：设置 cpu 使用权重；
+- `--cpuset-cpus`：指定使用的 CPU id；
+- `--cpuset-mems`：指定使用的内存 id；
+- `--disable-content-trust`：跳过镜像校验，默认为 true；
+- `-f,–file`：指定要使用的 `Dockerfile` 路径；
+- `–force-rm`：不论构建是否成功，总是删除中间容器，默认 false。注意：中间容器；
+- `–iidfile`：将镜像 ID 写入到文件
+- `–isolation`：使用容器隔离技术；
 
-–build-arg=[] :设置镜像创建时的变量；
-
-–cache-from :指定镜像用作当前构建的缓存镜像
-
-–cgroup-parent :容器的可选父cgroup
-
-–compress : 使用gzip压缩构建上下文
-
-–cpu-period :限制 CPU CFS周期；
-
-–cpu-quota :限制 CPU CFS配额；
-
--c,–cpu-shares :设置 cpu 使用权重；
-
-–cpuset-cpus :指定使用的CPU id；
-
-–cpuset-mems :指定使用的内存 id；
-
-–disable-content-trust :跳过镜像校验，默认为true;
-
--f,–file :指定要使用的Dockerfile路径；
-
-–force-rm :不论构建是否成功，总是删除中间容器，默认false。注意：中间容器；
-
-–iidfile :将镜像ID写入到文件
-
-–isolation :使用容器隔离技术；
-
-> linux系统：只支持default，即linux命名空间隔离技术
+> linux系统：只支持 `default`，即 linux 命名空间隔离技术
 
 > windows系统：
 
-> default:表示使用docker守护进程配置的选项，否则默认使用process选项
+> `default`：表示使用 `docker` 守护进程配置的选项，否则默认使用 `process` 选项
 
-> process:命名空间隔离
+> `process`：命名空间隔离
 
-> hyperv:基于Hyper-V 管理程序基于分区的隔离
+> `hyperv`：基于 `Hyper-V` 管理程序基于分区的隔离
 
-–label=[] :设置镜像使用的元数据；
-
--m :设置内存最大值；
-
-–memory-swap :设置Swap的最大值为内存+swap，"-1"表示不限swap；
-
-–network: 在构建期间为RUN指令设置网络模式（默认“default”）与docker run指令无关
-
-–no-cache :创建镜像的过程不使用缓存；
-
-–pull :总是尝试去更新镜像的新版本；
-
-–quiet, -q :安静模式，成功后只输出镜像 ID；
-
-–rm :构建成功后，删除中间容器，默认true。注意：中间容器，不是镜像；
-
-–security-opt :安全选项
-
-–shm-size :设置/dev/shm的大小，默认值是64M；/dev/shm 是基于内存的tmpfs文件系统。
-
-–ulimit :Ulimit配置。
-
-–tag, -t : 镜像的名字及标签，通常 name:tag 或者 name 格式；可以在一次构建中为一个镜像设置
-
-多个标签。
-
-–target : 设置要生成的目标生成阶段
-
-–ulimit : Ulimit 选项
+- `–label=[]`：设置镜像使用的元数据；
+- `-m`：设置内存最大值；
+- `–memory-swap`：设置 Swap 的最大值为内存 + swap，"-1" 表示不限 swap；
+- `–network`：在构建期间为 `RUN` 指令设置网络模式（默认 `"default"`）与 `docker run` 指令无关
+- `–no-cache`：创建镜像的过程不使用缓存；
+- `–pull`：总是尝试去更新镜像的新版本；
+- `–quiet, -q`：安静模式，成功后只输出镜像 ID；
+- `–rm`：构建成功后，删除中间容器，默认 true。注意：中间容器，不是镜像；
+- `–security-opt`：安全选项
+- `–shm-size`：设置 `/dev/shm` 的大小，默认值是 64M；`/dev/shm` 是基于内存的 `tmpfs` 文件系统。
+- `–ulimit`：Ulimit 配置。
+- `–tag, -t`：镜像的名字及标签，通常 name:tag 或者 name 格式；可以在一次构建中为一个镜像设置多个标签。
+- `–target`：设置要生成的目标生成阶段
+- `–ulimit`：Ulimit 选项
 
 示例：
 
@@ -133,7 +100,7 @@ OPTIONS说明：
 docker build -t nodetodo:v1.0.0 -f Dockerfile .
 ```
 
-# docker rmi
+## docker rmi
 
 删除本地一个或多个镜像。
 
@@ -143,11 +110,10 @@ docker rmi [OPTIONS] IMAGE [IMAGE...]
 
 OPTIONS说明：
 
--f :强制删除；
+- `-f`：强制删除；
+- `--no-prune`：不移除该镜像的过程镜像，默认移除。
 
-–no-prune :不移除该镜像的过程镜像，默认移除。
-
-# docker tag
+## docker tag
 
 标记本地镜像，将其归入某一仓库。
 
@@ -167,9 +133,9 @@ radial/busyboxplus   curl      71fa7369f437   8 years ago   4.23MB
 
 ```
 
-tag可以针对镜像进行版本管理和将镜像推到远程仓库。
+tag 可以针对镜像进行版本管理和将镜像推到远程仓库。
 
-# docker save
+## docker save
 
 将指定镜像保存成 tar 归档文件。
 
@@ -179,7 +145,7 @@ docker save [OPTIONS] IMAGE [IMAGE...]
 
 OPTIONS 说明：
 
--o :输出到的文件。
+- `-o`：输出到的文件。
 
 ```
 docker save -o mynginx.tar mynginx:v1
@@ -187,9 +153,9 @@ docker save -o mynginx.tar mynginx:v1
 tar vxf mynginx.tar -C mynginx
 ```
 
-# docker load
+## docker load
 
-导入使用 docker save 命令导出的镜像。
+导入使用 `docker save` 命令导出的镜像。
 
 ```
 docker load [OPTIONS]
@@ -197,9 +163,8 @@ docker load [OPTIONS]
 
 OPTIONS 说明：
 
-–input , -i : 指定导入的文件，代替 STDIN。
-
-–quiet , -q : 精简输出信息。
+- `--input , -i`：指定导入的文件，代替 `STDIN`。
+- `--quiet , -q`：精简输出信息。
 
 示例：
 
@@ -207,7 +172,7 @@ OPTIONS 说明：
 docker load -i mynginx.tar
 ```
 
-# docker import
+## docker import
 
 从归档文件中创建镜像。
 
@@ -217,9 +182,8 @@ docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
 
 OPTIONS说明：
 
--c :应用docker 指令创建镜像。
-
--m :提交时的说明文字。
+- `-c`：应用 `docker` 指令创建镜像。
+- `-m`：提交时的说明文字。
 
 示例：
 
@@ -227,7 +191,7 @@ OPTIONS说明：
 docker import mynginx.tar mynginx:v3
 ```
 
-# docker commit
+## docker commit
 
 从容器创建一个新的镜像。
 
@@ -237,13 +201,10 @@ docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
 
 OPTIONS说明：
 
--a :提交的镜像作者。
-
--c :使用Dockerfile指令来创建镜像。
-
--m :提交时的说明文字。
-
--p :在commit时，将容器暂停。
+- `-a`：提交的镜像作者。
+- `-c`：使用 `Dockerfile` 指令来创建镜像。
+- `-m`：提交时的说明文字。
+- `-p`：在 `commit` 时，将容器暂停。
 
 示例：
 
@@ -259,11 +220,11 @@ radial/busyboxplus   curl      71fa7369f437   8 years ago      4.23MB
 
 ```
 
-# docker login/logout
+## docker login/logout
 
-docker login : 登陆到一个Docker镜像仓库，如果未指定镜像仓库地址，默认为官方仓库 Docker Hub。
+`docker login`：登陆到一个 Docker 镜像仓库，如果未指定镜像仓库地址，默认为官方仓库 Docker Hub。
 
-docker logout : 登出一个Docker镜像仓库，如果未指定镜像仓库地址，默认为官方仓库 Docker Hub。
+`docker logout`：登出一个 Docker 镜像仓库，如果未指定镜像仓库地址，默认为官方仓库 Docker Hub。
 
 ```
 docker login [OPTIONS] [SERVER]
@@ -272,9 +233,8 @@ docker logout [OPTIONS] [SERVER]
 
 OPTIONS说明：
 
--u :登陆的用户名。
-
--p :登陆的密码。
+- `-u`：登陆的用户名。
+- `-p`：登陆的密码。
 
 示例：
 
@@ -283,7 +243,7 @@ docker login -u 用户名 -p 密码
 docker logout
 ```
 
-# docker pull
+## docker pull
 
 从镜像仓库中拉取或者更新指定镜像。
 
@@ -293,9 +253,8 @@ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
 
 OPTIONS说明：
 
--a :拉取所有 tagged 镜像。
-
-–disable-content-trust :忽略镜像的校验,默认开启。
+- `-a`：拉取所有 tagged 镜像。
+- `--disable-content-trust`：忽略镜像的校验,默认开启。
 
 示例：
 
@@ -309,7 +268,7 @@ docker.io/library/nginx:latest
 
 ```
 
-# docker push
+## docker push
 
 将本地的镜像上传到镜像仓库，注意，要先登陆到镜像仓库。
 
@@ -319,11 +278,11 @@ docker push [OPTIONS] NAME[:TAG]
 
 OPTIONS说明：
 
-–disable-content-trust :忽略镜像的校验,默认开启。
+- `--disable-content-trust`：忽略镜像的校验,默认开启。
 
-# docker search
+## docker search
 
-从Docker Hub查找镜像。
+从 Docker Hub 查找镜像。
 
 ```
 docker search [OPTIONS] TERM
@@ -331,11 +290,9 @@ docker search [OPTIONS] TERM
 
 OPTIONS说明：
 
-–automated :只列出 automated build类型的镜像。
-
-–no-trunc :显示完整的镜像描述。
-
--f <过滤条件>:列出收藏数不小于指定值的镜像。
+- `--automated`：只列出 `automated build` 类型的镜像。
+- `--no-trunc`：显示完整的镜像描述。
+- `-f <过滤条件>`：列出收藏数不小于指定值的镜像。
 
 ```
 # 从 Docker Hub 查找所有镜像名包含 nginx，并且收藏数大于 10 的镜像
@@ -344,16 +301,12 @@ docker search -f stars=10 nginx
 
 参数说明：
 
-NAME: 镜像仓库源的名称
-
-DESCRIPTION: 镜像的描述
-
-OFFICIAL: 是否 docker 官方发布
-
-stars: 类似 Github 里面的 star，表示点赞、喜欢的意思。
-
-AUTOMATED: 自动构建。
+- `NAME`：镜像仓库源的名称
+- `DESCRIPTION`：镜像的描述
+- `OFFICIAL`：是否 docker 官方发布
+- `stars`：类似 Github 里面的 star，表示点赞、喜欢的意思。
+- `AUTOMATED`：自动构建。
 
 # 总结
 
-掌握一系列重要的Docker镜像管理命令，让容器部署变得更加得心应手。 无论是在开发、测试还是生产环境中，这些命令都能够更好地管理和优化Docker镜像，提升云原生技能，加速容器部署，提高工作效率。
+掌握一系列重要的 Docker 镜像管理命令，让容器部署变得更加得心应手。无论是在开发、测试还是生产环境中，这些命令都能够更好地管理和优化 Docker 镜像，提升云原生技能，加速容器部署，提高工作效率。

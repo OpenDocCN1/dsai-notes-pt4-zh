@@ -1,3 +1,4 @@
+
 # 20240322-Cohere：AI界新星，融资5亿，估值飙升至50亿
 
 > 来源：[https://aigcreative.feishu.cn/docx/Dzt0dFq5robRN1xbdfLccm4CnOR](https://aigcreative.feishu.cn/docx/Dzt0dFq5robRN1xbdfLccm4CnOR)

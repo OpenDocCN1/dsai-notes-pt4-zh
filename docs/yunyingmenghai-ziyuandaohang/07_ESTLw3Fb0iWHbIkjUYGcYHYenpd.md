@@ -1,3 +1,4 @@
+
 # 中文网络小说写作模型
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/IUEKdN7KFo8APbxotnZc9peQnSM](https://yunyingmenghai.feishu.cn/docx/IUEKdN7KFo8APbxotnZc9peQnSM)
@@ -16,7 +17,9 @@ koboldcpp1.63推理程序：https://pan.quark.cn/s/73fa34eaea83
 
 中文小说数据集作者：https://huggingface.co/datasets/zxbsmk/webnovel_cn
 
-创建文件：Modelfile
+## 创建 `Modelfile`
+
+创建文件：`Modelfile`
 
 ```
 FROM D:\damoxing\llama3-chinese-novel.gguf
@@ -27,12 +30,16 @@ ollama create llama3-chinese-novel -f Modelfile
 ollama create Llama-3.1-8B-Lexi-Uncensored_V2_F16 -f Llama-3.1-8B-Lexi-Uncensored_V2_F16.modelfile
 ```
 
+## 运行新创建的模型
+
 运行新创建的model
 
 ```
    ollama run llama3-chinese-novel
    ollama run Lexi-Llama-3-8B-Uncensored_F16
 ```
+
+## 删除模型
 
 删除模型:
 
@@ -41,26 +48,26 @@ ollama list
 ollama rm Lexi-Llama-3-8B-Uncensored_F16:latest
 ```
 
-#### **bin****从文件构建**
+## 从 `bin` 文件构建
 
 ```
 FROM ./ollama-model.bin
 ```
 
-该 bin 文件位置应指定为绝对路径或相对于该Modelfile位置的路径。
+该 `bin` 文件位置应指定为绝对路径或相对于该 `Modelfile` 位置的路径。
 
 ```
 ollama cp llama3-chinese-novel yunying/llama3-chinese-novel
 ollama push yunying/llama3-chinese-novel
 ```
 
-# **最新网页在线版：**
+## 最新网页在线版
 
-# [**h**](https://modelscope.cn/studios/BlinkDL/RWKV-CHN/summary)ttps://modelscope.cn/studios/BlinkDL/RWKV-CHN/summary
+https://modelscope.cn/studios/BlinkDL/RWKV-CHN/summary
 
 https://github.com/josStorer/RWKV-Runner/blob/master/README_ZH.md
 
-# 小说数据集
+## 小说数据集
 
 https://huggingface.co/datasets/a686d380/sis-novel/tree/main
 
@@ -78,41 +85,28 @@ sis-novel2为长篇小说，4555项，解压缩后大小3.6GB，数据截止2023
 
 我这里列一些需求,这还依赖一些产品上的解决方案：
 
-1.给定题材，出一个主旨和脉络，给出章节标题，并叙述每章/每10章故事脉络；
-
-2.对于给定章节，写/续写内容会a.指定字数，b.生成的内容不符合预期（大改或小改），大改就是重新生成，小改能够在生成结果上改，并影响到接下来的生成结果；
-
-甚至不满意自己的提示词，修改提示词后重新生成结果；
-
-3.给定下一章标题，按照字数要求，过渡衔接
-
-4.由于网文字数较长，一些前文伏笔、道具、收获等在后文是想用到的，所以最好有张鱼骨和关系图，能够提取关键信息，并生成图，并且图是可以编辑和修改的；
-
-5.一些细节描写不到位，或者更类似故事梗概而缺少细节描述；
-
-6.按卷发展的思路不够，比如上界篇、中洲篇等
-
-7.有时内容和章节标题都希望自动生成
-
-8.场景构建
-
-9.小修生成结果
-
-10.字数扩写
-
-11.区分正文和提示词：识别正文，识别用户提示词
-
+1. 给定题材，出一个主旨和脉络，给出章节标题，并叙述每章/每10章故事脉络；
+2. 对于给定章节，写/续写内容会a.指定字数，b.生成的内容不符合预期（大改或小改），大改就是重新生成，小改能够在生成结果上改，并影响到接下来的生成结果；甚至不满意自己的提示词，修改提示词后重新生成结果；
+3. 给定下一章标题，按照字数要求，过渡衔接
+4. 由于网文字数较长，一些前文伏笔、道具、收获等在后文是想用到的，所以最好有张鱼骨和关系图，能够提取关键信息，并生成图，并且图是可以编辑和修改的；
+5. 一些细节描写不到位，或者更类似故事梗概而缺少细节描述；
+6. 按卷发展的思路不够，比如上界篇、中洲篇等
+7. 有时内容和章节标题都希望自动生成
+8. 场景构建
+9. 小修生成结果
+10. 字数扩写
+11. 区分正文和提示词：识别正文，识别用户提示词
 12、过渡、伏笔、悬念、引出、正文、总结
-
 13、帮助梳理故事脉络，对上前后文
-
 14、错别字，比如公式—写成公司，上下文能否给出公式？
 
 总的来说，现有大模型在写作方面支持的很不到位，最最迫切的是长上下文，Qwen支持了32K，Google Gemini1.5采用了MoE架构，支持1Million上下文，虽然gemma（没MoE）和Gemini1.5使用了相同的结构，但是上下文只有8192，算是遗憾之一。
 
 ————————————————
 
-*RAM usage会随着生成的过程增加。
+`RAM` usage会随着生成的过程增加。
+
+## 小说 `Prompt` 提示词
 
 小说prompt提示词（总共4745个字符，实际Token会因词汇表大小而差异）：
 
@@ -238,7 +232,7 @@ T-7存在于一种人眼不可见的特殊光谱里，它通过影响光的波�
 
 ————————————————
 
-# 资料
+## 资料
 
 https://www.pixiv.net/users/82296752/novels
 

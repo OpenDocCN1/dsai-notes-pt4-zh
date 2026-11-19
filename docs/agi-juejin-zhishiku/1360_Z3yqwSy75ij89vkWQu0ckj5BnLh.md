@@ -1,3 +1,4 @@
+
 # 解读提示工程（Prompt Engineering）
 
 > 来源：[https://agijuejin.feishu.cn/docx/Y5undY5jRo8PsixVI4Bc3jO8nKb](https://agijuejin.feishu.cn/docx/Y5undY5jRo8PsixVI4Bc3jO8nKb)
@@ -12,7 +13,7 @@
 
 为了理解提示工程，先要澄清什么是Prompt。
 
-## **1.什么是Prompt**
+## 1. 什么是Prompt
 
 Prompt提示是什么呢？
 
@@ -20,9 +21,9 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 例如，在chatGPT中，用户通常使用 prompt 来与大语言模型进行交互，请求回答问题、生成文本、完成任务等。模型会根据提供的 prompt 来生成一个与之相关的文本，尽量符合用户的要求。
 
-## **2. Prompt的分类**
+## 2. Prompt的分类
 
-从不同的视角， 可以对Prompt 进行不同的分类。在这里，尝试根据可解释性、交互方式和应用领域三个方面对Prompt 进行分类。
+从不同的视角，可以对Prompt 进行不同的分类。在这里，尝试根据可解释性、交互方式和应用领域三个方面对Prompt 进行分类。
 
 ### 2.1 可解释性分类：硬提示和软提示
 
@@ -30,7 +31,7 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 尽管模板带来了一定程度的灵活性，但是提示语仍然需要被设置得很好才行，换句话说，静态提示一种硬编码的提示。
 
-建立在LangChain 之上的基于大模型的 很多应用程序，其提示模板在很大程度上是静态的，它指示代理执行哪些操作。一般来说，模板包括: 定义了可以访问哪些工具，何时应该调用这些工具，以及一般的用户输入。
+建立在`LangChain` 之上的基于大模型的 很多应用程序，其提示模板在很大程度上是静态的，它指示代理执行哪些操作。一般来说，模板包括: 定义了可以访问哪些工具，何时应该调用这些工具，以及一般的用户输入。
 
 软提示（soft prompt ）是在提示调优过程中创建的。与hard prompt 不同， 软提示 不能在文本中查看和编辑，包含一个嵌入或一串数字，代表从大模型中获得知识。 软提示 缺乏软可解释性。人工智能发现与特定任务相关的 软提示 ，但不能解释为什么它。与深度学习模型本身一样， 软提示 也是不透明的。 软提示 可以替代额外的训练数据，一个好的语言分类器 软提示 有几百到几千个额外的数据点。
 
@@ -38,15 +39,15 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 ### 2.2 交互方式分类：在线提示 和 离线提示
 
-"online" 和 "offline" 是一种方式来区分模型互动中 prompt 的使用方式。这两种分类表示了 prompt 在与大模型互动的时间和方式上的不同。
+`online` 和 `offline` 是一种方式来区分模型互动中 prompt 的使用方式。这两种分类表示了 prompt 在与大模型互动的时间和方式上的不同。
 
 在线提示（Online prompt） 是在与模型的实时互动中提供的提示，通常用于即时的交互式应用。这种提示在用户与模型进行实际对话时提供，用户可以逐步输入、编辑或更改提示，在在线聊天、语音助手、实时问题回答等应用中常见。
 
 离线提示（Offline prompt ）是预先准备好的提示，通常在用户与模型的实际互动之前创建。这种提示在没有用户互动时预先设计和输入，然后整批输入模型进行批量处理。在离线文本生成、文章写作、大规模数据处理等应用中常见。
 
-对提示分类为 "online" 或 "offline" ，可帮助确定如何有效地使用提示，以满足不同应用的需求。 在线 提示通常用于需要实时交互和即时反馈的情况，而 离线 提示则适用于需要大规模处理或预生成文本的情况。根据具体应用和使用情境，您可以选择适当的提示类型。
+对提示分类为 `online` 或 `offline` ，可帮助确定如何有效地使用提示，以满足不同应用的需求。 在线 提示通常用于需要实时交互和即时反馈的情况，而 离线 提示则适用于需要大规模处理或预生成文本的情况。根据具体应用和使用情境，您可以选择适当的提示类型。
 
-### **2.3 应用领域分类**
+### 2.3 应用领域分类
 
 用途分类可以帮助确定 prompt 的主要目标，以便更有效地使用它们。以下是一些常见的 prompt 类别：
 
@@ -68,23 +69,23 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 通过将 prompt 分类为不同的用途，可以更好地理解模型如何应用于各种任务和情境。这有助于选择合适的提示类型，并设计它们以满足特定需求。
 
-## **3. Prompt 的一般要素**
+## 3. Prompt 的一般要素
 
 在应用Prompt的时候，我们需要理解一个Prompt 可能包含的6个要素：任务，上下文，示例，角色，格式和语气，而且这些要素是按重要性降序排列的。
 
-### **3.1 任务**
+### 3.1 任务
 
-任务序列是由动词引导的，例如generate, drive, write, analyze等，而且需要明确任务目标。例如：
+任务序列是由动词引导的，例如`generate`、`drive`、`write`、`analyze`等，而且需要明确任务目标。例如：
 
 ![](img/bbc5f42adc8832eb00d65ec4085391c8.png)
 
-### **3.2 上下文**
+### 3.2 上下文
 
 背景上下文极具挑战性， 一般要描述什么是用户的背景信息，成功的结果 希望是 什么样子，以及他们处于怎样的环境中，例如：
 
 ![](img/7405906dcabc15a61317976a930f4733.png)
 
-### **3.3 示例**
+### 3.3 示例
 
 基本上，对所有主要语言模型进行的研究表明，在提示中包含例子都将产生更高质量的答案。 例如：
 
@@ -92,12 +93,11 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 如果想为团队内的某个职位撰写一份JD，prompt可以是首先向ChatGPT提供情景描述（context），然后再根据已经准备好的描述提供一个参考案例（example）。
 
-### **3.4 角色**
+### 3.4 角色
 
 这是你希望人工智能所扮演的角色。想象一下你有一个问题，想咨询专家来解决这些疑问。例如，如果你在锻炼时受伤，你会去找一位有康复治疗师。如果你正在找工作，你会向招聘人员寻求建议。例如：
 
-
-### **3.5 格式**
+### 3.5 格式
 
 想象一下实现的目标，可以是个人或团体的目标，比如找到工作、成为一位优秀的演讲者等。所有这些都是零散的想法，但借助人工智能的帮助，可以将它们整理成一个特定的格式，比如一个表格。我们也可以希望得到电子邮件、要点、代码块等格式。这些格式对我们的工作也很有用，例如段落和标记。
 
@@ -105,7 +105,7 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 ![](img/b37ffc336bdfb3a444ae15126caee0dc.png)
 
-### **3.6 语气**
+### 3.6 语气
 
 如果正确衡量要使用的音调类型，“语气”者一个元素就很容易理解。
 
@@ -117,11 +117,11 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 那么，Prompt 如何在LLM起作用的呢？它个工作原理又是什么呢？
 
-## **4 Prompt 的工作原理**
+## 4. Prompt 的工作原理
 
 在试图理解Prompt 的工作原理之前， 需要理解大模型是如何生成文本的。简单起见，可以把大模型的文本生成理解为目标文本的补全， 在理解了LLM 文本生成的工作原理之后，就可能对Prompt 有一个相对清楚的理解。
 
-例如，假设想让“Paris is the city…”这句话继续下去。编码器使用Bloom-560M模型发送我们拥有的所有token的logits，这些logits可以使用softmax函数转换为选择生成token的概率。
+例如，假设想让“Paris is the city…”这句话继续下去。编码器使用Bloom-560M模型发送我们拥有的所有token的`logits`，这些`logits`可以使用`softmax()`函数转换为选择生成token的概率。
 
 ![](img/c65710e1ab67c2111542aa53ee78056b.png)
 
@@ -149,13 +149,13 @@ Prompt提示是模型接收以生成响应或完成任务的初始文本输入�
 
 示例中生成的输出可能是：Paris is the city of the future. The
 
-### **4.2 Beam Search**
+### 4.2 Beam Search
 
-beam搜索是文本生成中使用的另一个策略。在beam搜索中，模型假设一组最有可能的前“k”个token，而不仅仅考虑每个步骤中最有可能的token。这组k个token被称为“beam”。
+beam搜索是文本生成中使用的另一个策略。在beam搜索中，模型假设一组最有可能的前`k`个token，而不仅仅考虑每个步骤中最有可能的token。这组`k`个token被称为`beam`。
 
 ![](img/f107668bbc62bdec170482360dee7d39.png)
 
-模型通过为每个token生成可能的序列，并通过扩展每个beam在文本生成的每个步骤中跟踪它们的概率来生成可能的序列。这个过程会一直持续下去，直到达到生成文本的所需长度或者每个beam遇到一个“终止”标记的时候。模型会从所有beam中选择具有最高整体概率的序列作为最终输出。从算法的角度来看，创建beam就是扩展一个k叉树。在创建beam之后，选择具有最高整体概率的分支作为最终输出。
+模型通过为每个token生成可能的序列，并通过扩展每个beam在文本生成的每个步骤中跟踪它们的概率来生成可能的序列。这个过程会一直持续下去，直到达到生成文本的所需长度或者每个beam遇到一个“终止”标记的时候。模型会从所有beam中选择具有最高整体概率的序列作为最终输出。从算法的角度来看，创建beam就是扩展一个`k`叉树。在创建beam之后，选择具有最高整体概率的分支作为最终输出。
 
 示例中生成的输出可能是：Paris is the city of history and culture.
 
@@ -165,27 +165,27 @@ beam搜索是文本生成中使用的另一个策略。在beam搜索中，模型
 
 ![](img/01d0574586c2fb4c5ad1957c160584ea.png)
 
-### **4.4 ramdom sampl**ing with temperature
+### 4.4 ramdom sampling with temperature
 
-一般地，使用softmax函数将logit转换为概率。在这里，为随机采样引入了温度——一种影响文本生成随机性的超参数。比较一下激活函数，可以更好地理解温度如何影响概率计算。
+一般地，使用`softmax()`函数将`logit`转换为概率。在这里，为随机采样引入了温度——一种影响文本生成随机性的超参数。比较一下激活函数，可以更好地理解温度如何影响概率计算。
 
 ![](img/b73d585623712fc10983618b0285c23e.png)
 
-在引入温度之后，与典型的softmax不同之处在于分母除以了温度T。温度越高（趋向1）输出结果会更加多样化，而温度越低（趋向0），输出结果则更加集中并更具确定性。当T = 1的时候，演变为最初使用的softmax函数。
+在引入温度之后，与典型的`softmax()`不同之处在于分母除以了温度`T`。温度越高（趋向1）输出结果会更加多样化，而温度越低（趋向0），输出结果则更加集中并更具确定性。当`T` = 1的时候，演变为最初使用的`softmax()`函数。
 
 ### 4.5 Top-k sampling
 
-虽然可以根据温度来调整概率，另一个改进是使用前k个token而不是全部token。这将增强文本生成的稳定性，又不会太大程度上降低创造力。现在只对前k个token进行温度下的随机抽样。唯一可能的问题可能是选择数字k，以下是如何改进它。
+虽然可以根据温度来调整概率，另一个改进是使用前`k`个token而不是全部token。这将增强文本生成的稳定性，又不会太大程度上降低创造力。现在只对前`k`个token进行温度下的随机抽样。唯一可能的问题可能是选择数字`k`，以下是如何改进它。
 
 ![](img/5326df7abe9d83558f012332fc47b366.png)
 
 ### 4.6 Top-P sampling
 
-top-p采样不是指定一个固定的“k”令牌数量，而是使用一个概率阈值“p”。该阈值代表了希望在采样中包括的累积概率。模型在每个步骤中计算所有可能令牌的概率，然后按照降序的方式对它们进行排序。
+Top-P采样不是指定一个固定的`k`令牌数量，而是使用一个概率阈值`p`。该阈值代表了希望在采样中包括的累积概率。模型在每个步骤中计算所有可能令牌的概率，然后按照降序的方式对它们进行排序。
 
 ![](img/e7384e33ce483d4719499ad280108e76.png)
 
-该模型将继续添加token到生成的文本中，直到它们的概率之和超过指定的阈值。top-p采样的优势在于它允许根据上下文进行更动态和自适应的标记选择。每步选择的标记数量可以根据该上下文中token的概率而变化，这可以产生更多样化和更高质量的输出。
+该模型将继续添加token到生成的文本中，直到它们的概率之和超过指定的阈值。Top-P采样的优势在于它允许根据上下文进行更动态和自适应的标记选择。每步选择的标记数量可以根据该上下文中token的概率而变化，这可以产生更多样化和更高质量的输出。
 
 ### 4.7 Prompt 的可能工作机制
 
@@ -231,9 +231,11 @@ Zero-shot Prompting涉及将任务输入模型，而没有任何示例表明所�
 
 ### 6.2 Few-shot Prompting
 
-few-shot prompting 则是通过提供模型少量高质量的示例，这些示例包括目标任务的输入和期望输出。 通过观察这些良好的示例，模型可以更好地理解人类意图和生成准确输出的标准。 因此，与 zero-shot 相比， few-shot  通常会产生更好的性能。 然而，这种方法可能会消耗更多的token，并且在处理 长文本的 输入或者输出的时候可能会遇到上下文长度限制的问题。
 
-大型语言模型（例如GPT-3）在zero-shot能力方面表现出色。 但对于复杂任务，few-shot 提示性能更好。 为了提高性能，我们使用，few-shot 提示 进行上下文学习，通过在提示中提供演示来指导模型执行任务。 换句话说，将模型置于一些特定任务的示例中有助于提高模型性能。
+
+few-shot prompting 则是通过提供模型少量高质量的示例，这些示例包括目标任务的输入和期望输出。通过观察这些良好的示例，模型可以更好地理解人类意图和生成准确输出的标准。因此，与 zero-shot 相比，few-shot 通常会产生更好的性能。然而，这种方法可能会消耗更多的token，并且在处理长文本的输入或者输出的时候可能会遇到上下文长度限制的问题。
+
+大型语言模型（例如GPT-3）在zero-shot能力方面表现出色。但对于复杂任务，few-shot 提示性能更好。为了提高性能，我们使用few-shot 提示进行上下文学习，通过在提示中提供演示来指导模型执行任务。换句话说，将模型置于一些特定任务的示例中有助于提高模型性能。
 
 让我们看一下面的例子，来自 https://arxiv.org/abs/2005.14165
 
@@ -258,21 +260,21 @@ We were traveling in Africa and we saw these very cute whatpus.
 
 ## 7. Prompt Engingeering的组合方式
 
-Prompt Engingeering 之所以成为工程方式，是因为存在着各种相对复杂的Prompt方式，主要包括思维链（CoT） 和 递归提示（ Recursive Prompting）等。
+Prompt Engingeering 之所以成为工程方式，是因为存在着各种相对复杂的Prompt方式，主要包括思维链（CoT）和递归提示（Recursive Prompting）等。
 
 ### 7.1 Chain-of-Thought Prompting
 
-Chain-of-Thought（CoT）提示生成一系列短句，即被称为推理链的句子。这些句子描述了逐步推理逻辑，导致最终答案，对于复杂推理的任务和较大的模型，可获得更多的好处。常见的两种基本CoT提示包括Few-shot CoT 和 Zero-Shot CoT，并在下面对它们进行描述。
+Chain-of-Thought（CoT）提示生成一系列短句，即被称为推理链的句子。这些句子描述了逐步推理逻辑，导致最终答案，对于复杂推理的任务和较大的模型，可获得更多的好处。常见的两种基本CoT提示包括Few-shot CoT和Zero-Shot CoT，并在下面对它们进行描述。
 
 #### 7.1.1 Few-shot CoT
 
-Few-shot CoT 允许模型查看一些高质量推理链的演示。 让我们看 下面的例子 ：
+Few-shot CoT 允许模型查看一些高质量推理链的演示。让我们看下面的例子：
 
 ![](img/c1e36a357f182b519ada1e0ba2f57fff.png)
 
 #### 7.1.2 Zero-shot CoT
 
-Zero-shot CoT是由 Kojima等人在2022年首先提出 的，它在提示中添加了“让我们逐步思考”，有助于提高模型性能。让我们看一个下面的例子：
+Zero-shot CoT是由 Kojima等人在2022年首先提出的，它在提示中添加了“让我们逐步思考”，有助于提高模型性能。让我们看一个下面的例子：
 
 ```
 Prompt:
@@ -303,156 +305,134 @@ prompt: &quot;What is the area of a rectangle with length 8 and width 6?&quot;
 answer: &quot;The area of a rectangle with length 8 and width 6 is 48.&quot;
 ```
 
-recursive prompting 的 更多示例 如下：
+recursive prompting 的更多示例如下：
 
 ![](img/c52afbc2113cc20b2c6086259534d942.png)
 
-### 7.3 CoT 与 递归提示的混合使用
+### 7.3 CoT 与递归提示的混合使用
 
-自我提问（self-ask ）可以视为另一种类型的递归提示，是一种反复提示模型提出后续问题以迭代构建思维过程的方法。后续问题可以通过搜索引擎结果来回答。类似地，IRCoT 和 ReAct将迭代 CoT 提示与对 Wikipedia API 的查询相结合，以搜索相关实体和内容，然后将其添加回上下文中。示例如下：
+自我提问（self-ask）可以视为另一种类型的递归提示，是一种反复提示模型提出后续问题以迭代构建思维过程的方法。后续问题可以通过搜索引擎结果来回答。类似地，IRCoT 和 ReAct将迭代 CoT 提示与对 Wikipedia API 的查询相结合，以搜索相关实体和内容，然后将其添加回上下文中。示例如下：
 
 ![](img/848b8494c6d66af0e41c450688ae2329.png)
 
-思维树（Tree of Thought） 通过探索每一步的多种推理可能性来扩展 CoT。它首先将问题分解为多个思维步骤，并在每个步骤中生成多个思维，实质上是创建一个树形结构。搜索过程可以是广度优先过程或深度优先的过程，而每个节点的评估分类器可以通过Prompt提示的方式完成。
+思维树（Tree of Thought）通过探索每一步的多种推理可能性来扩展 CoT。它首先将问题分解为多个思维步骤，并在每个步骤中生成多个思维，实质上是创建一个树形结构。搜索过程可以是广度优先过程或深度优先的过程，而每个节点的评估分类器可以通过Prompt提示的方式完成。
 
 ![](img/8369908771852bb2df24813433881500.png)
 
-## **8. 自动提示的设计**
+## 8. 自动提示的设计
 
-一般而言，Prompt 相当于一系列前缀令牌，它们增加了在给定输入时获得所需输出的概率。因此，可以将它们视为可训练的参数，并通过梯度下降法直接在嵌入空间上对它们进行优化，例如 AutoPrompt ， Prefix-Tuning ， P 微调 和 Prompt-Tuning ，从自动提示到提示微调的趋势是设置的逐渐简化。
+一般而言，Prompt 相当于一系列前缀令牌，它们增加了在给定输入时获得所需输出的概率。因此，可以将它们视为可训练的参数，并通过梯度下降法直接在嵌入空间上对它们进行优化，例如 AutoPrompt，Prefix-Tuning，P 微调 和 Prompt-Tuning，从自动提示到提示微调的趋势是设置的逐渐简化。
 
-### **8.1 自动提示工程**
+### 8.1 自动提示工程
 
 APE 是一种在模型生成的Prompt候选集中搜索的方法，然后根据选择的得分函数过滤候选人集，以最终选择得分最高的最佳候选提示。
 
-+   提示 LLM 根据输入输出健值对形式的一个小集合尝试生成候选指令。
++ 提示 LLM 根据输入输出健值对形式的一个小集合尝试生成候选指令。
 
-+   给定一个数据集 Dtrain = {(x，y)} ，希望找到一个指令ρ，使：
++ 给定一个数据集 `Dtrain = {(x，y)}`，希望找到一个指令`ρ`，使：
 
 +
 
 ![](img/faaaea7c64f7a99298cc40bda3534bf2.png)
 
-f (.)是每个样本的得分函数，例如执行精度或对数概率。
+`f(.)`是每个样本的得分函数，例如执行精度或对数概率。
 
-+   使用蒙特卡罗搜索方法进行 迭代 ，通过promt生成下列指令的变体，同时保持语义，提出语义相似的变体，从而改进最佳候选项。
++ 使用蒙特卡罗搜索方法进行迭代，通过`promt`生成下列指令的变体，同时保持语义，提出语义相似的变体，从而改进最佳候选项。
 
-### **8.2 自动构建CoT**
+### 8.2 自动构建CoT
 
-为了自动构建思维链，Shum 等人( 2023 )提出了增强-修剪-选择，一个三步过程:
+为了自动构建思维链，Shum 等人( 2023 )提出了增强-修剪-选择，一个三步过程：
 
-+   增强: 使用few-shot或zero shot 的 CoT Prompt 生成给定问题的多个伪思维链;
++ 增强：使用few-shot或zero shot 的 CoT Prompt 生成给定问题的多个伪思维链；
 
-+   修剪: 基于生成的答案是否匹配基本真相来修剪这些伪思维链。
++ 修剪：基于生成的答案是否匹配基本真相来修剪这些伪思维链。
 
-+   选择: 应用降低方差的梯度策略来学习选定示例的概率分布，同时考虑将示例的概率分布作为策略，并将验证集的准确性作为奖励。
++ 选择：应用降低方差的梯度策略来学习选定示例的概率分布，同时考虑将示例的概率分布作为策略，并将验证集的准确性作为奖励。
 
-### **8.3 基于聚类的CoT 构建**
+### 8.3 基于聚类的CoT 构建
 
 采用聚类技术对问题进行抽样，然后生成链（ 2023 ）。LLM 倾向于犯某些类型的错误，一类错误可以在嵌入空间中相似，因此可以组合在一起。通过只从频繁错误集群中抽样一个或几个，可以防止一个错误类型的过多错误演示，并收集一组不同的示例。
 
-+   问题聚类: 嵌入问题并采用K-means聚类的运行方式。
++ 问题聚类：嵌入问题并采用`K-means`聚类的运行方式。
 
-+   演示选择: 从每个聚类中选择一组有代表性的问题，即从一个聚类中选择一个演示样例。每个簇中的样本按照到簇中心的距离进行排序，首先选择离簇中心较近的样本。
++ 演示选择：从每个聚类中选择一组有代表性的问题，即从一个聚类中选择一个演示样例。每个簇中的样本按照到簇中心的距离进行排序，首先选择离簇中心较近的样本。
 
-+   基本关系的生成: 使用zero-shot CoT 为选定的问题生成推理链，构造few-shot prompt进行推理。
++ 基本关系的生成：使用zero-shot CoT 为选定的问题生成推理链，构造few-shot prompt进行推理。
 
-## **9. 提示工程的常见实践**
+## 9. 提示工程的常见实践
 
 提示工程的实现涉及到基于LLM应用中的各个方面，这里给出一些提示工程的常见实践：
 
-1.  静态提示：Prompt可以遵循zero、single或few shot的方法。LLM 的生成能力通过在Prompt中包含示例数据来遵循一次性学习或几次性学习得到了极大的增强。
+1. 静态提示：Prompt可以遵循`zero`、`single`或`few shot`的方法。LLM 的生成能力通过在Prompt中包含示例数据来遵循一次性学习或几次性学习得到了极大的增强。
 
-1.  上下文提示：上下文提示在生成响应时提供对 LLM 的参考框架，在很大程度上可以避免 LLM 的幻觉。
+1. 上下文提示：上下文提示在生成响应时提供对 LLM 的参考框架，在很大程度上可以避免 LLM 的幻觉。
 
-1.  提示模板：静态提示转换为模板，其中键值被替换为占位符，占位符在运行时被应用程序的值/变量替换。提示模板中的变量或占位符通过用户提出的问题，以及从知识存储中搜索的知识来填充，因此也称为提示注入或实体注入。
+1. 提示模板：静态提示转换为模板，其中键值被替换为占位符，占位符在运行时被应用程序的值/变量替换。提示模板中的变量或占位符通过用户提出的问题，以及从知识存储中搜索的知识来填充，因此也称为提示注入或实体注入。
 
-1.  提示链：提示链，也称为LLM链，是创建一个由一系列模型调用组成的链的概念。这一系列调用相继发生，其中一个链的输出作为另一个链的输入。每个链的目标都是小型且范围良好的子任务，因此单个 LLM 是用于寻址任务的多个有序子组件之一。
+1. 提示链：提示链，也称为LLM链，是创建一个由一系列模型调用组成的链的概念。这一系列调用相继发生，其中一个链的输出作为另一个链的输入。每个链的目标都是小型且范围良好的子任务，因此单个 LLM 是用于寻址任务的多个有序子组件之一。
 
-1.  提示流水线：在机器学习中，流水线可以描述为端到端结构，来协调事件和数据流。流水线由触发器启动或启动; 并且基于某些事件和参数，遵循一个流程，该流程将产生一个输出。对于提示流水线而言，流在大多数情况下是由用户请求启动的，请求被定向到特定的提示模板。因此，提示流水线可以描述为提示模板的智能扩展。
+1. 提示流水线：在机器学习中，流水线可以描述为端到端结构，来协调事件和数据流。流水线由触发器启动或启动；并且基于某些事件和参数，遵循一个流程，该流程将产生一个输出。对于提示流水线而言，流在大多数情况下是由用户请求启动的，请求被定向到特定的提示模板。因此，提示流水线可以描述为提示模板的智能扩展。
 
-1.  Agent代理：对于 LLM 相关的操作，其自动化的形式是所谓的Agent代理。提示链是执行预先确定和设置的操作序列，Agent 不遵循预先确定的事件顺序，可以保持高度的自主性。Agent可以访问一组工具，任何属于这些工具范围的请求都可以由Agent处理。执行流水线为Agent提供了自治权，在代理到达最终答案之前可能需要进行多次迭代。
+1. Agent代理：对于 LLM 相关的操作，其自动化的形式是所谓的`Agent`代理。提示链是执行预先确定和设置的操作序列，`Agent` 不遵循预先确定的事件顺序，可以保持高度的自主性。`Agent`可以访问一组工具，任何属于这些工具范围的请求都可以由`Agent`处理。执行流水线为`Agent`提供了自治权，在代理到达最终答案之前可能需要进行多次迭代。
 
-1.  CoT提示：CoT提示使大型语言模型(LLM)能够处理常识推理和算术等复杂任务。通过Prompt建立CoT推理并相应地指导 LLM，这是一种相当直接的实现。标准提示与CoT提示的对比如下：
+1. CoT提示：CoT提示使大型语言模型(LLM)能够处理常识推理和算术等复杂任务。通过Prompt建立CoT推理并相应地指导 LLM，这是一种相当直接的实现。标准提示与CoT提示的对比如下：
 
 ![](img/408b81c059faefbbb091f7ab295412b2.png)
 
-思维 链 提示特别有用的地方在于，通过分解 LLM 输入和 LLM 输出，它创建了一个洞察和解释窗口。
+思维链提示特别有用的地方在于，通过分解 LLM 输入和 LLM 输出，它创建了一个洞察和解释窗口。
 
-8. ChatML：LLM 的主要安全漏洞和滥用途径是Prompt注入攻击，ChatML 将允许针对这些类型的攻击提供保护。为了消除prompt注入攻击，会话被分为以下几个层次或角色: 系统、助理和用户等， 然后做相应的prompt防护。
+1. ChatML：LLM 的主要安全漏洞和滥用途径是Prompt注入攻击，`ChatML` 将允许针对这些类型的攻击提供保护。为了消除prompt注入攻击，会话被分为以下几个层次或角色：系统、助理和用户等，然后做相应的prompt防护。
 
 ![](img/1e8d18feb17eb0f9471aeefe5c427107.png)
 
 ## 10. Prompt engineering 的挑战与未来
 
-有人可以说，Prompt Engineering是以某种方式构建的自然语言。但OpenAI首席执行官所指的似乎是真正的非结构化和高度直观的交互界面，在某种程度上，这种说法是值得商榷的，因为如此多的技术和创新都是基于Prompt engineering的基本原理来实现的。
+有人说，Prompt Engineering是以某种方式构建的自然语言。但OpenAI首席执行官所指的似乎是真正的非结构化和高度直观的交互界面，在某种程度上，这种说法是值得商榷的，因为如此多的技术和创新都是基于Prompt engineering的基本原理来实现的。
 
 ![](img/d6081a917ae2fb53d4829426a1b15c10.png)
 
-考虑到企业用例，操纵LLM的两种主要方法是微调和将上下文参考数据注入到推理prompt中，两种方法不是互斥的。模型微调会更改LLM的行为和响应，RAG通过上下文参考来补充用户的输入。
+考虑到企业用例，操纵LLM的两种主要方法是微调和将上下文参考数据注入到推理prompt中，两种方法不是互斥的。模型微调会更改LLM的行为和响应，`RAG`通过上下文参考来补充用户的输入。
 
 提示工程的主要挑战之一是问题的陈述和形式化表达，将思想中存在的需求转化为文本请求。退一步而言，在传统的聊天机器人中建立上下文是非常重要的。上下文首先是通过根据一个或多个意图对用户输入进行分类来建立的，通过先前的对话、对其他系统的API调用等建立进一步的上下文。上下文在很大程度上也取决于时间和地点，以及提出问题时的背景参考是什么。
 
-除了上下文感知外，歧义性是另一个挑战。有些形式的歧义对我们人类来说很容易理解，但传统上对NLU/聊天机器人来说很难。在OpenAI的实现中，LLM输入方面出现了chatML，定义了角色，并为LLM的输入提供了明确的结构。LLM输出方面出现了function call，聊天的完成模式被设置为 事实上的 标准。
+除了上下文感知外，歧义性是另一个挑战。有些形式的歧义对我们人类来说很容易理解，但传统上对NLU/聊天机器人来说很难。在OpenAI的实现中，LLM输入方面出现了`ChatML`，定义了角色，并为LLM的输入提供了明确的结构。LLM输出方面出现了`function call`，聊天的完成模式被设置为 事实上的 标准。
 
 意图、上下文、歧义和消除歧义都是任何对话的组成部分。有了人类语言界面，语境和语境感知将永远是重要的。歧义是存在的，一定程度的歧义消除是人类对话的一部分。在对话中，我们不断使用“歧义消除”来确立意义和意图，在上下文中可以在一定程度上自动消除歧义。例如，要求LLM生成五个选项，然后让用户选择生成的最佳答案，就是一种消除歧义的形式。
 
-**企业实**施将是特定于领域的，需要 约束 ，并具有一定程度的域外检测。问题或请求的分解对于**创建一个思**维链推理过程非常重要。微调设置模型行为，而RAG为LLM创建了一个上下文参考，以便在推理过程中使用。 数据管理 将始终是LLM应用程序的一部分。
+企业实施将是特定于领域的，需要约束，并具有一定程度的域外检测。问题或请求的分解对于创建一个思维链推理过程非常重要。微调设置模型行为，而`RAG`为LLM创建了一个上下文参考，以便在推理过程中使用。数据管理将始终是LLM应用程序的一部分。
 
 ![](img/e8e769ed891693a95088d779aa4f6d50.png)
 
 # 复杂性从不会消失，只会从一个地方转移到另一个地方。
 
-【参考资料与关联阅读】
+## 【参考资料与关联阅读】
 
-+   **https://github.com/open**ai/grade-school-math
++ `https://github.com/openai/grade-school-math`
++ `https://github.com/dair-ai/Prompt-Engineering-Guide`
++ `https://lilianweng.github.io/posts/2023-03-15-prompt-engineering`
++ `https://crfm.stanford.edu/2023/03/13/alpaca.html`
++ `https://learnprompting.org/docs/basics/instructions`
++ `https://txt.cohere.ai/how-to-train-your-pet-llm-prompt-engineering/`
++ `https://arxiv.org/pdf/2302.07842.pdf`
++ Ivan Reznikov，“ How Does an LLM Generate Text? ”
++ Cobus Greyling ，“the future of prompt engineering”
++ DatHero，“Master the Perfect ChatGPT Prompt Formula”
++ [如何构建基于大模型的App](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978464&idx=1&sn=8b9c617bced2b5ce012fb1f4aa87c086&chksm=80d35786b7a4de901400ffe4db5061c08df2912b4b49466e91a9f52813f22f3137e41802abc9&scene=21#wechat_redirect)
++ Qcon2023: 大模型时代的技术人成长（简）
++ 论文学习笔记：增强学习应用于OS调度
++ 《深入浅出Embedding》随笔
++ [LLM的工程实践思考](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978144&idx=1&sn=e8bff055687f7e7ad17baca58dc26c23&chksm=80d35446b7a4dd507b02832851e2308a276edc328f3e79bca0f3ae931ab27db69aeccd8d7c8d&scene=21#wechat_redirect)
++ [解读大模型的微调](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978125&idx=1&sn=b342e9c10734c1f7cd124ebc88aa75a8&chksm=80d3546bb7a4dd7d9c74dabd6046d1ccea01592760a8add3d71b2f75fa68712093a4834e6d88&scene=21#wechat_redirect)
 
-+   **https://github.com/dair-ai/Prom**pt-Engineering-Guide
 
-+   **h**ttps://lilianweng.github.io/posts/2023-03-15-prompt-engineering
 
-+   **https://crfm.stanford.edu/20**23/03/13/alpaca.html
-
-+   **https://learnprompting.org/docs**/basics/instructions
-
-+   **h**ttps://txt.cohere.ai/how-to-train-your-pet-llm-prompt-engineering/
-
-+   **https://arxiv.or**g/pdf/2302.07842.pdf
-
-+   **I**van Reznikov，“ How Does an LLM Generate Text? ”
-
-+   **Cobus Greyling ，“the future of** prompt engineering”
-
-+   DatHero，“Master the Perfect ChatGPT Prompt Formula”
-
-+   [如何构建基于大模型的App](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978464&idx=1&sn=8b9c617bced2b5ce012fb1f4aa87c086&chksm=80d35786b7a4de901400ffe4db5061c08df2912b4b49466e91a9f52813f22f3137e41802abc9&scene=21#wechat_redirect)
-
-+   Qcon2023: 大模型时代的技术人成长（简）
-
-+   论文学习笔记：增强学习应用于OS调度
-
-+    《深入浅出Embedding》随笔
-
-+   [LLM的工程实践思考](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978144&idx=1&sn=e8bff055687f7e7ad17baca58dc26c23&chksm=80d35446b7a4dd507b02832851e2308a276edc328f3e79bca0f3ae931ab27db69aeccd8d7c8d&scene=21#wechat_redirect)
-
-+   [解读大模型的微调](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978125&idx=1&sn=b342e9c10734c1f7cd124ebc88aa75a8&chksm=80d3546bb7a4dd7d9c74dabd6046d1ccea01592760a8add3d71b2f75fa68712093a4834e6d88&scene=21#wechat_redirect)
-
-+   [解读ChatGPT中的RLHF](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977979&idx=1&sn=4d66d662595d9aba355e0564df545370&chksm=80d3559db7a4dc8b96a5f3ac4d01b53a2601d5e1dcb51789ee3d9974ec9ae5f028c3e469b5a5&scene=21#wechat_redirect)
-
-+   解读大模型（LLM）的token
-
-+   [解读Toolformer](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977935&idx=1&sn=9dd162f270f7c17a673291c0f136cf8c&chksm=80d355a9b7a4dcbf3ab824ac6de5c27d94a11455a681ebeb98a211e9b58ff867ddddf33d1c8d&scene=21#wechat_redirect)
-
-+   [解读TaskMatrix.AI](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977922&idx=1&sn=2f67513b540485d0177ded24c0807bcc&chksm=80d355a4b7a4dcb2495ab97febd0ac88cd0780e0d8e4b3bbc369250304289e289f71b0a76f0c&scene=21#wechat_redirect)
-
-+    [解读LangChain](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978479&idx=1&sn=47d6d226a3ac6cc08980e7562ae09fce&chksm=80d35789b7a4de9f3ba9a3eeb21c6c812b0f7fe43cee47fc38368ed31a1346114a67daa3cd30&scene=21#wechat_redirect)
-
-+   [浅析多模态机器学习](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978122&idx=1&sn=baf54b7a1a0758e19bf6a3622a43d8fb&chksm=80d3546cb7a4dd7ab9b857ea75bcc3e361cb68489ff5c43ff4d8ab65b2da838b46621b2936b1&scene=21#wechat_redirect)
-
-+   [Agent 与对象的辨析](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977521&idx=1&sn=378ae6e0f2c53d31993515f62e295327&chksm=80d35bd7b7a4d2c174a99a8dc2910c193cc846d145e4351e768131f0a977410d3c9d0e668baa&scene=21#wechat_redirect)
-
-+   [深度学习架构的对比分析](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978063&idx=1&sn=f934c531bacfe1bf6c95ccbdababe439&chksm=80d35429b7a4dd3f8df5f8c439bd98420c13d4a115c609a60370a6e09ad7c667c4a8c95418c1&scene=21#wechat_redirect)
-
-+   [老码农眼中的大模型（LLM）](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977916&idx=1&sn=d38f03af2b3916251e9a8577d995e065&chksm=80d3555ab7a4dc4c0c919ce0a678adc9f3018d81994dc072e698cfa481665ec8faf788d606be&scene=21#wechat_redirect)
-
-+   [系统学习大模型的20篇论文](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978109&idx=1&sn=4d15334a5cccc300a18686b1dd2a2098&chksm=80d3541bb7a4dd0df321e516ad40c8e849dde084328b61259f4b17f5d24280686305a87fa8b5&scene=21#wechat_redirect)
+- [解读ChatGPT中的RLHF](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977979&idx=1&sn=4d66d662595d9aba355e0564df545370&chksm=80d3559db7a4dc8b96a5f3ac4d01b53a2601d5e1dcb51789ee3d9974ec9ae5f028c3e469b5a5&scene=21#wechat_redirect)
+- 解读大模型（LLM）的token
+- [解读Toolformer](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977935&idx=1&sn=9dd162f270f7c17a673291c0f136cf8c&chksm=80d355a9b7a4dcbf3ab824ac6de5c27d94a11455a681ebeb98a211e9b58ff867ddddf33d1c8d&scene=21#wechat_redirect)
+- [解读TaskMatrix.AI](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977922&idx=1&sn=2f67513b540485d0177ded24c0807bcc&chksm=80d355a4b7a4dcb2495ab97febd0ac88cd0780e0d8e4b3bbc369250304289e289f71b0a76f0c&scene=21#wechat_redirect)
+- [解读LangChain](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978479&idx=1&sn=47d6d226a3ac6cc08980e7562ae09fce&chksm=80d35789b7a4de9f3ba9a3eeb21c6c812b0f7fe43cee47fc38368ed31a1346114a67daa3cd30&scene=21#wechat_redirect)
+- [浅析多模态机器学习](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978122&idx=1&sn=baf54b7a1a0758e19bf6a3622a43d8fb&chksm=80d3546cb7a4dd7ab9b857ea75bcc3e361cb68489ff5c43ff4d8ab65b2da838b46621b2936b1&scene=21#wechat_redirect)
+- [Agent 与对象的辨析](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977521&idx=1&sn=378ae6e0f2c53d31993515f62e295327&chksm=80d35bd7b7a4d2c174a99a8dc2910c193cc846d145e4351e768131f0a977410d3c9d0e668baa&scene=21#wechat_redirect)
+- [深度学习架构的对比分析](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978063&idx=1&sn=f934c531bacfe1bf6c95ccbdababe439&chksm=80d35429b7a4dd3f8df5f8c439bd98420c13d4a115c609a60370a6e09ad7c667c4a8c95418c1&scene=21#wechat_redirect)
+- [老码农眼中的大模型（LLM）](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977916&idx=1&sn=d38f03af2b3916251e9a8577d995e065&chksm=80d3555ab7a4dc4c0c919ce0a678adc9f3018d81994dc072e698cfa481665ec8faf788d606be&scene=21#wechat_redirect)
+- [系统学习大模型的20篇论文](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978109&idx=1&sn=4d15334a5cccc300a18686b1dd2a2098&chksm=80d3541bb7a4dd0df321e516ad40c8e849dde084328b61259f4b17f5d24280686305a87fa8b5&scene=21#wechat_redirect)

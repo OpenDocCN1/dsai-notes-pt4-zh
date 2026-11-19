@@ -1,8 +1,7 @@
-# 12.13-生成式 AI 的版权困境：新线索表明 OpenAI 用游戏内容训练 Sora 视频生成模型
-
-> 来源：[https://agijuejin.feishu.cn/docx/ZeGhdbxFcodDozx3KZIcomnUn9f](https://agijuejin.feishu.cn/docx/ZeGhdbxFcodDozx3KZIcomnUn9f)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 13 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/ZeGhdbxFcodDozx3KZIcomnUn9f](https://agijuejin.feishu.cn/docx/ZeGhdbxFcodDozx3KZIcomnUn9f)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -94,7 +93,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/817/150.htm)
 
 2024 年 12 月 12 日，MLCommons 发布 PC AI 基准测试 MLPerf Client 首个公开版本 0.5。这是 AMD、英特尔等多方合作成果，基于 Meta 的 Llama 2 7B 开源 LLM，包含四项 AI 任务，目前支持两种加速路径，初期仅支持 Windows x86 - 64 设备，未来将支持 macOS 和 Windows on Arm 设备等。
 
-### 💡 宕机超 4 小时后，OpenAI 宣布 ChatGPT、Sora 服务故障已全面修复
+### 💡 宕机超 4 小时后，OpenAI 宣布 ChatGPT、Sora 及 API 服务故障已全面修复
 
 IT之家 | [阅读原文](https://www.ithome.com/0/817/135.htm)
 

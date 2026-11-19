@@ -1,3 +1,4 @@
+
 # Claude Prompt：疯狂星期四
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/P65UdZiLwoRRuoxJENpc6rvknmb](https://vxc3hj17dym.feishu.cn/docx/P65UdZiLwoRRuoxJENpc6rvknmb)

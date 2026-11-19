@@ -1,16 +1,17 @@
+
 # Linux Configs
 
 > 来源：[https://learning.feishu.cn/docx/PBaqdSF3yoGlNTxnlQmcpv44nZc](https://learning.feishu.cn/docx/PBaqdSF3yoGlNTxnlQmcpv44nZc)
 
-# **常用工具**
+## 常用工具
 
-## **Tmux**
+### Tmux
 
-大部分命令 （git pull / compile）耗时较长，建议在 tmux 里做，减少 terminal 断开导致的任务中断。
+大部分命令（`git pull` / `compile`）耗时较长，建议在 `tmux` 里做，减少 terminal 断开导致的任务中断。
 
 B 站：一分钟学会 tmux https://b23.tv/tpm2Wjj
 
-常用 tmux 命令
+常用 `tmux` 命令
 
 ```
 # start a new tmux session
@@ -25,15 +26,15 @@ ctrl-d
 # start new pane
 ctrl-b + c
 # switch pane
-ctrl-b + &lt;pane number&gt;
+ctrl-b + <pane number>
 # such as
 ctrl-b 0
 ctrl-b 1
 ```
 
-## Htops
+### Htops
 
-See ~/.config/htop/htoprc
+See `~/.config/htop/htoprc`
 
 To put All CPUs in a single column, with Tasks/Load/Uptime on right (1st example):
 

@@ -1,10 +1,11 @@
+
 # AI写小说-指南之简易版(简单操作)
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/UHVxdMn3doIz2PxBQcdc9qSzndd](https://rq547mr4oez.feishu.cn/docx/UHVxdMn3doIz2PxBQcdc9qSzndd)
+> 来源：[`https://rq547mr4oez.feishu.cn/docx/UHVxdMn3doIz2PxBQcdc9qSzndd`](https://rq547mr4oez.feishu.cn/docx/UHVxdMn3doIz2PxBQcdc9qSzndd)
 
-# 一、前言
+## 一、前言
 
-之前的一篇文章，[AI写小说-全网zui全指南(三万字) ](https://rq547mr4oez.feishu.cn/wiki/AGN5w9IXeiQvPbkcvHgc3mpynzc?from=from_copylink)（韭菜Y日记）
+之前的一篇文章，[AI写小说-全网zui全指南(三万字)](https://rq547mr4oez.feishu.cn/wiki/AGN5w9IXeiQvPbkcvHgc3mpynzc?from=from_copylink)（韭菜Y日记）
 
 ---
 
@@ -28,29 +29,27 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 1、简易版本，操作简单，但是小说成品需要抽奖，每次的结果都不是太稳定
 
-2、AI本质是跟你提供写小说的思路，而不是代替你写小说。
-
-很多网站也已经有防范机制，所以最终需要你自己优化文字。
+2、AI本质是跟你提供写小说的思路，而不是代替你写小说。很多网站也已经有防范机制，所以最终需要你自己优化文字。
 
 3、世面上的AI很多，我只是用免费的做一个简单操作
 
 4、重点：知识库的积累，喂给AI才是关键（韭菜Y日记）
 
-# 二、思路
+## 二、思路
 
-1.  确定故事类型和基本要素：明确小说的类型、主题和基本要素，如设置、角色、目标和冲突等。这些信息将成为 AI 生成创意的基础。
+1. 确定故事类型和基本要素：明确小说的类型、主题和基本要素，如设置、角色、目标和冲突等。这些信息将成为 AI 生成创意的基础。
 
-1.  提供输入提示：以简洁明了的方式向 AI 提供输入提示，指导 AI 生成创作的方向。例如：“请帮我构思一个扣人心弦的开头场景，展现主角的冲突和欲望。”
+2. 提供输入提示：以简洁明了的方式向 AI 提供输入提示，指导 AI 生成创作的方向。例如：“请帮我构思一个扣人心弦的开头场景，展现主角的冲突和欲望。”
 
-1.  生成情节和角色发展：使用 AI 模型生成故事情节的发展和角色的塑造。可以向 AI 提供关键转折点、角色关系、发展阶段等输入提示，以获得创意和灵感。
+3. 生成情节和角色发展：使用 AI 模型生成故事情节的发展和角色的塑造。可以向 AI 提供关键转折点、角色关系、发展阶段等输入提示，以获得创意和灵感。
 
-1.  生成对话和描写：通过向 AI 提供输入提示，帮助 AI 生成生动的对话和描写。可以提供情感、氛围、场景等方面的指导，使对话和描写更贴合故事情节和角色个性。
+4. 生成对话和描写：通过向 AI 提供输入提示，帮助 AI 生成生动的对话和描写。可以提供情感、氛围、场景等方面的指导，使对话和描写更贴合故事情节和角色个性。
 
-1.  结合人工创作和修改：AI 生成的内容需要经过人工创作和修改，以确保其连贯性、准确性和艺术性。小说作者需要结合自己的创作理念和风格，对 AI 生成的内容进行进一步发展和优化。
+5. 结合人工创作和修改：AI 生成的内容需要经过人工创作和修改，以确保其连贯性、准确性和艺术性。小说作者需要结合自己的创作理念和风格，对 AI 生成的内容进行进一步发展和优化。
 
-# 三、实操
+## 三、实操
 
-## 1、生成自己的智能体
+### 1、生成自己的智能体
 
 目前市面上很多免费的大模型，现在拿【智谱清言】举例，注册完成之后，新建智能体
 
@@ -58,17 +57,17 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ![](img/a1b1133fc7acef9d15d5b2306813f842.png)
 
-## 2、导入知识库
+### 2、导入知识库
 
 简单导入
 
-[七步构思法流程图版.pdf](https://rq547mr4oez.feishu.cn/wiki/JKpjwecrni4AFokptoMcCqPPnoe?from=from_copylink)（韭菜Y日记）
+[`七步构思法流程图版.pdf`](https://rq547mr4oez.feishu.cn/wiki/JKpjwecrni4AFokptoMcCqPPnoe?from=from_copylink)（韭菜Y日记）
 
-[AI写小说-投喂300+网文爽点(两万字)](https://rq547mr4oez.feishu.cn/wiki/E2krwrpNMibwtSk89IPcAAhQnwd?from=from_copylink)（韭菜Y日记）
+[`AI写小说-投喂300+网文爽点(两万字)`](https://rq547mr4oez.feishu.cn/wiki/E2krwrpNMibwtSk89IPcAAhQnwd?from=from_copylink)（韭菜Y日记）
 
 ![](img/6143f0d89d01a442f5dc894dc9df72a3.png)
 
-## 3、简单开始
+### 3、简单开始
 
 ![](img/4d57a09e4b44e12018c064c9e0e0ca84.png)
 
@@ -78,6 +77,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ![](img/97bcdf1f601b0a9edadffceba5da06db.png)
 
-# 四、总结
+## 四、总结
 
 这个是在之前的基础上精简而来，小白可以先用起来。

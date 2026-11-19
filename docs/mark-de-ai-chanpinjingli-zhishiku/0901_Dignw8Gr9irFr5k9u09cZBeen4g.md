@@ -1,3 +1,4 @@
+
 # Claude Code 和 Codex 接入 Figma MCP 保姆级教程
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/IfF5d2FvZor6rHxvLrHcLF51nUf](https://qqs7y1hozd1.feishu.cn/docx/IfF5d2FvZor6rHxvLrHcLF51nUf)
@@ -14,11 +15,11 @@ claude mcp add --transport http figma-desktop http://127.0.0.1:3845/mcp
 
 **参数说明：**
 
-+   --transport http：使用 HTTP 协议连接
++   `--transport http`：使用 HTTP 协议连接
 
-+   figma-desktop：MCP 服务器标识符（可自定义）
++   `figma-desktop`：MCP 服务器标识符（可自定义）
 
-+   http://127.0.0.1:3845/mcp: Desktop MCP 本地地址
++   `http://127.0.0.1:3845/mcp`: Desktop MCP 本地地址
 
 **管理命令：**
 
@@ -53,12 +54,12 @@ Codex by OpenAI 对 Figma MCP 的支持非常完整！
 
 在 Codex 的 MCP 配置中添加：
 
-```
+```json
 {
-  &quot;mcpServers&quot;: {
-    &quot;figma-desktop&quot;: {
-      &quot;url&quot;: &quot;http://127.0.0.1:3845/mcp&quot;,
-      &quot;transport&quot;: &quot;http&quot;
+  "mcpServers": {
+    "figma-desktop": {
+      "url": "http://127.0.0.1:3845/mcp",
+      "transport": "http"
     }
   }
 }
@@ -78,11 +79,11 @@ Codex by OpenAI 对 Figma MCP 的支持非常完整！
 
 ### 接入 Remote MCP（推荐）
 
-1.  打开 Codex 的 MCP 或 Tools/Servers 配置界面
+1.  打开 Codex 的 MCP 或 `Tools/Servers` 配置界面
 
 1.  新增一个 MCP server
 
-1.  URL 填写：https://mcp.figma.com/mcp
+1.  URL 填写：`https://mcp.figma.com/mcp`
 
 1.  保存配置并重启/刷新 Codex
 
@@ -90,7 +91,7 @@ Codex by OpenAI 对 Figma MCP 的支持非常完整！
 
 +   不依赖 Desktop 本地运行
 
-+   支持「Code to Canvas」- 将 Web 界面回写到 Figma（⚠️ 仅在 Claude Code 中可用，使用 generate_figma_design 工具）
++   支持「Code to Canvas」- 将 Web 界面回写到 Figma（⚠️ 仅在 Claude Code 中可用，使用 `generate_figma_design` 工具）
 
 +   更适合云端协作和长时间运行的工作流
 
@@ -136,7 +137,7 @@ Codex by OpenAI 对 Figma MCP 的支持非常完整！
 
 +   在 Figma Desktop 中开启 MCP server
 
-+   获得本地地址：http://127.0.0.1:3845/mcp
++   获得本地地址：`http://127.0.0.1:3845/mcp`
 
 1.  **配置 Claude Code**
 
@@ -146,7 +147,7 @@ claude mcp add --transport http figma-desktop http://127.0.0.1:3845/mcp
 
 1.  **配置 Codex**
 
-+   添加 Remote MCP:https://mcp.figma.com/mcp
++   添加 Remote MCP:`https://mcp.figma.com/mcp`
 
 +   可选添加 Desktop MCP
 
@@ -154,7 +155,7 @@ claude mcp add --transport http figma-desktop http://127.0.0.1:3845/mcp
 
 1.  **开始使用**
 
-+   通过 selection-based 或 link-based 方式
++   通过 `selection-based` 或 `link-based` 方式
 
 +   把 Figma 设计上下文交给 AI
 

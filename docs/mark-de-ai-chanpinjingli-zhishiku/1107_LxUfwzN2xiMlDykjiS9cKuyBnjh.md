@@ -1,8 +1,15 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/M1qldw9hJoLeBxxv2MNcOYbbnYe](https://qqs7y1hozd1.feishu.cn/docx/M1qldw9hJoLeBxxv2MNcOYbbnYe)
 
-```
+
+
+# Agentic RAG with Gemini Thinking and Agno
+
+## 导入依赖
+
+```python
 import os
 import tempfile
 from datetime import datetime
@@ -20,65 +27,79 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 from langchain_core.embeddings import Embeddings
 from agno.tools.exa import ExaTools
+```
 
+## `GeminiEmbedder` 类
 
+```python
 class GeminiEmbedder(Embeddings):
-    def __init__(self, model_name=&quot;models/text-embedding-004&quot;):
+    def __init__(self, model_name="models/text-embedding-004"):
         genai.configure(api_key=st.session_state.google_api_key)
         self.model = model_name
 
-    def embed_documents(self, texts: List[str]) -&gt; List[List[float]]:
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
         return [self.embed_query(text) for text in texts]
 
-    def embed_query(self, text: str) -&gt; List[float]:
+    def embed_query(self, text: str) -> List[float]:
         response = genai.embed_content(
             model=self.model,
             content=text,
-            task_type=&quot;retrieval_document&quot;
+            task_type="retrieval_document"
         )
-        return response[&#x27;embedding&#x27;]
+        return response['embedding']
+```
 
+## 常量定义
 
-# Constants
-COLLECTION_NAME = &quot;gemini-thinking-agent-agno&quot;
+```python
+COLLECTION_NAME = "gemini-thinking-agent-agno"
+```
 
+## Streamlit 应用初始化
 
-# Streamlit App Initialization
-st.title(&quot;🤔 Agentic RAG with Gemini Thinking and Agno&quot;)
+```python
+st.title("🤔 Agentic RAG with Gemini Thinking and Agno")
+```
 
-# Session State Initialization
-if &#x27;google_api_key&#x27; not in st.session_state:
-    st.session_state.google_api_key = &quot;&quot;
-if &#x27;qdrant_api_key&#x27; not in st.session_state:
-    st.session_state.qdrant_api_key = &quot;&quot;
-if &#x27;qdrant_url&#x27; not in st.session_state:
-    st.session_state.qdrant_url = &quot;&quot;
-if &#x27;vector_store&#x27; not in st.session_state:
+## 会话状态初始化
+
+```python
+if 'google_api_key' not in st.session_state:
+    st.session_state.google_api_key = ""
+if 'qdrant_api_key' not in st.session_state:
+    st.session_state.qdrant_api_key = ""
+if 'qdrant_url' not in st.session_state:
+    st.session_state.qdrant_url = ""
+if 'vector_store' not in st.session_state:
     st.session_state.vector_store = None
-if &#x27;processed_documents&#x27; not in st.session_state:
+if 'processed_documents' not in st.session_state:
     st.session_state.processed_documents = []
-if &#x27;history&#x27; not in st.session_state:
+if 'history' not in st.session_state:
     st.session_state.history = []
-if &#x27;exa_api_key&#x27; not in st.session_state:
-    st.session_state.exa_api_key = &quot;&quot;
-if &#x27;use_web_search&#x27; not in st.session_state:
+if 'exa_api_key' not in st.session_state:
+    st.session_state.exa_api_key = ""
+if 'use_web_search' not in st.session_state:
     st.session_state.use_web_search = False
-if &#x27;force_web_search&#x27; not in st.session_state:
+if 'force_web_search' not in st.session_state:
     st.session_state.force_web_search = False
-if &#x27;similarity_threshold&#x27; not in st.session_state:
+if 'similarity_threshold' not in st.session_state:
     st.session_state.similarity_threshold = 0.7
+```
 
+## 侧边栏配置
 
-# Sidebar Configuration
-st.sidebar.header(&quot;🔑 API Configuration&quot;)
-google_api_key = st.sidebar.text_input(&quot;Google API Key&quot;, type=&quot;password&quot;, value=st.session_state.google_api_key)
-qdrant_api_key = st.sidebar.text_input(&quot;Qdrant API Key&quot;, type=&quot;password&quot;, value=st.session_state.qdrant_api_key)
-qdrant_url = st.sidebar.text_input(&quot;Qdrant URL&quot;, 
-                                 placeholder=&quot;https://your-cluster.cloud.qdrant.io:6333&quot;,
+### API 配置
+
+```python
+st.sidebar.header("🔑 API Configuration")
+google_api_key = st.sidebar.text_input("Google API Key", type="password", value=st.session_state.google_api_key)
+qdrant_api_key = st.sidebar.text_input("Qdrant API Key", type="password", value=st.session_state.qdrant_api_key)
+qdrant_url = st.sidebar.text_input("Qdrant URL", 
+                                 placeholder="https://your-cluster.cloud.qdrant.io:6333",
                                  value=st.session_state.qdrant_url)
 
 # Clear Chat Button
-if st.sidebar.button(&quot;🗑️ Clear Chat History&quot;):
+if st.sidebar.button("🗑️ Clear Chat History"):
     st.session_state.history = []
     st.rerun()
 
@@ -86,43 +107,53 @@ if st.sidebar.button(&quot;🗑️ Clear Chat History&quot;):
 st.session_state.google_api_key = google_api_key
 st.session_state.qdrant_api_key = qdrant_api_key
 st.session_state.qdrant_url = qdrant_url
+```
 
-# Add in the sidebar configuration section, after the existing API inputs
-st.sidebar.header(&quot;🌐 Web Search Configuration&quot;)
-st.session_state.use_web_search = st.sidebar.checkbox(&quot;Enable Web Search Fallback&quot;, value=st.session_state.use_web_search)
+### Web Search 配置
+
+```python
+st.sidebar.header("🌐 Web Search Configuration")
+st.session_state.use_web_search = st.sidebar.checkbox("Enable Web Search Fallback", value=st.session_state.use_web_search)
 
 if st.session_state.use_web_search:
     exa_api_key = st.sidebar.text_input(
-        &quot;Exa AI API Key&quot;, 
-        type=&quot;password&quot;,
+        "Exa AI API Key", 
+        type="password",
         value=st.session_state.exa_api_key,
-        help=&quot;Required for web search fallback when no relevant documents are found&quot;
+        help="Required for web search fallback when no relevant documents are found"
     )
     st.session_state.exa_api_key = exa_api_key
     
     # Optional domain filtering
-    default_domains = [&quot;arxiv.org&quot;, &quot;wikipedia.org&quot;, &quot;github.com&quot;, &quot;medium.com&quot;]
+    default_domains = ["arxiv.org", "wikipedia.org", "github.com", "medium.com"]
     custom_domains = st.sidebar.text_input(
-        &quot;Custom domains (comma-separated)&quot;, 
-        value=&quot;,&quot;.join(default_domains),
-        help=&quot;Enter domains to search from, e.g.: arxiv.org,wikipedia.org&quot;
+        "Custom domains (comma-separated)", 
+        value=",".join(default_domains),
+        help="Enter domains to search from, e.g.: arxiv.org,wikipedia.org"
     )
-    search_domains = [d.strip() for d in custom_domains.split(&quot;,&quot;) if d.strip()]
+    search_domains = [d.strip() for d in custom_domains.split(",") if d.strip()]
+```
 
-# Add this to the sidebar configuration section
-st.sidebar.header(&quot;🎯 Search Configuration&quot;)
+### Search 配置
+
+```python
+st.sidebar.header("🎯 Search Configuration")
 st.session_state.similarity_threshold = st.sidebar.slider(
-    &quot;Document Similarity Threshold&quot;,
+    "Document Similarity Threshold",
     min_value=0.0,
     max_value=1.0,
     value=0.7,
-    help=&quot;Lower values will return more documents but might be less relevant. Higher values are more strict.&quot;
+    help="Lower values will return more documents but might be less relevant. Higher values are more strict."
 )
+```
 
+## 工具函数
 
-# Utility Functions
+### `init_qdrant`
+
+```python
 def init_qdrant():
-    &quot;&quot;&quot;Initialize Qdrant client with configured settings.&quot;&quot;&quot;
+    """Initialize Qdrant client with configured settings."""
     if not all([st.session_state.qdrant_api_key, st.session_state.qdrant_url]):
         return None
     try:
@@ -132,15 +163,19 @@ def init_qdrant():
             timeout=60
         )
     except Exception as e:
-        st.error(f&quot;🔴 Qdrant connection failed: {str(e)}&quot;)
+        st.error(f"🔴 Qdrant connection failed: {str(e)}")
         return None
+```
 
+## 文档处理函数
 
-# Document Processing Functions
-def process_pdf(file) -&gt; List:
-    &quot;&quot;&quot;Process PDF file and add source metadata.&quot;&quot;&quot;
+### `process_pdf`
+
+```python
+def process_pdf(file) -> List:
+    """Process PDF file and add source metadata."""
     try:
-        with tempfile.NamedTemporaryFile(delete=False, suffix=&#x27;.pdf&#x27;) as tmp_file:
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
             tmp_file.write(file.getvalue())
             loader = PyPDFLoader(tmp_file.name)
             documents = loader.load()
@@ -148,9 +183,9 @@ def process_pdf(file) -&gt; List:
             # Add source metadata
             for doc in documents:
                 doc.metadata.update({
-                    &quot;source_type&quot;: &quot;pdf&quot;,
-                    &quot;file_name&quot;: file.name,
-                    &quot;timestamp&quot;: datetime.now().isoformat()
+                    "source_type": "pdf",
+                    "file_name": file.name,
+                    "timestamp": datetime.now().isoformat()
                 })
                 
             text_splitter = RecursiveCharacterTextSplitter(
@@ -159,18 +194,21 @@ def process_pdf(file) -&gt; List:
             )
             return text_splitter.split_documents(documents)
     except Exception as e:
-        st.error(f&quot;📄 PDF processing error: {str(e)}&quot;)
+        st.error(f"📄 PDF processing error: {str(e)}")
         return []
+```
 
+### `process_web`
 
-def process_web(url: str) -&gt; List:
-    &quot;&quot;&quot;Process web URL and add source metadata.&quot;&quot;&quot;
+```python
+def process_web(url: str) -> List:
+    """Process web URL and add source metadata."""
     try:
         loader = WebBaseLoader(
             web_paths=(url,),
             bs_kwargs=dict(
                 parse_only=bs4.SoupStrainer(
-                    class_=(&quot;post-content&quot;, &quot;post-title&quot;, &quot;post-header&quot;, &quot;content&quot;, &quot;main&quot;)
+                    class_=("post-content", "post-title", "post-header", "content", "main")
                 )
             )
         )
@@ -179,9 +217,9 @@ def process_web(url: str) -&gt; List:
         # Add source metadata
         for doc in documents:
             doc.metadata.update({
-                &quot;source_type&quot;: &quot;url&quot;,
-                &quot;url&quot;: url,
-                &quot;timestamp&quot;: datetime.now().isoformat()
+                "source_type": "url",
+                "url": url,
+                "timestamp": datetime.now().isoformat()
             })
             
         text_splitter = RecursiveCharacterTextSplitter(
@@ -190,13 +228,17 @@ def process_web(url: str) -&gt; List:
         )
         return text_splitter.split_documents(documents)
     except Exception as e:
-        st.error(f&quot;🌐 Web processing error: {str(e)}&quot;)
+        st.error(f"🌐 Web processing error: {str(e)}")
         return []
+```
 
+## 向量存储管理
 
-# Vector Store Management
+### `create_vector_store`
+
+```python
 def create_vector_store(client, texts):
-    &quot;&quot;&quot;Create and initialize vector store with documents.&quot;&quot;&quot;
+    """Create and initialize vector store with documents."""
     try:
         # Create collection if needed
         try:
@@ -207,9 +249,9 @@ def create_vector_store(client, texts):
                     distance=Distance.COSINE
                 )
             )
-            st.success(f&quot;📚 Created new collection: {COLLECTION_NAME}&quot;)
+            st.success(f"📚 Created new collection: {COLLECTION_NAME}")
         except Exception as e:
-            if &quot;already exists&quot; not in str(e).lower():
+            if "already exists" not in str(e).lower():
                 raise e
         
         # Initialize vector store
@@ -220,68 +262,78 @@ def create_vector_store(client, texts):
         )
         
         # Add documents
-        with st.spinner(&#x27;📤 Uploading documents to Qdrant...&#x27;):
+        with st.spinner('📤 Uploading documents to Qdrant...'):
             vector_store.add_documents(texts)
-            st.success(&quot;✅ Documents stored successfully!&quot;)
+            st.success("✅ Documents stored successfully!")
             return vector_store
             
     except Exception as e:
-        st.error(f&quot;🔴 Vector store error: {str(e)}&quot;)
+        st.error(f"🔴 Vector store error: {str(e)}")
         return None
+```
 
+## Agent 初始化
 
-# Add this after the GeminiEmbedder class
-def get_query_rewriter_agent() -&gt; Agent:
-    &quot;&quot;&quot;Initialize a query rewriting agent.&quot;&quot;&quot;
+### `get_query_rewriter_agent`
+
+```python
+def get_query_rewriter_agent() -> Agent:
+    """Initialize a query rewriting agent."""
     return Agent(
-        name=&quot;Query Rewriter&quot;,
-        model=Gemini(id=&quot;gemini-exp-1206&quot;),
-        instructions=&quot;&quot;&quot;You are an expert at reformulating questions to be more precise and detailed. 
+        name="Query Rewriter",
+        model=Gemini(id="gemini-exp-1206"),
+        instructions="""You are an expert at reformulating questions to be more precise and detailed. 
         Your task is to:
-        1. Analyze the user&#x27;s question
+        1. Analyze the user's question
         2. Rewrite it to be more specific and search-friendly
         3. Expand any acronyms or technical terms
         4. Return ONLY the rewritten query without any additional text or explanations
         
         Example 1:
-        User: &quot;What does it say about ML?&quot;
-        Output: &quot;What are the key concepts, techniques, and applications of Machine Learning (ML) discussed in the context?&quot;
+        User: "What does it say about ML?"
+        Output: "What are the key concepts, techniques, and applications of Machine Learning (ML) discussed in the context?"
         
         Example 2:
-        User: &quot;Tell me about transformers&quot;
-        Output: &quot;Explain the architecture, mechanisms, and applications of Transformer neural networks in natural language processing and deep learning&quot;
-        &quot;&quot;&quot;,
+        User: "Tell me about transformers"
+        Output: "Explain the architecture, mechanisms, and applications of Transformer neural networks in natural language processing and deep learning"
+        """,
         show_tool_calls=False,
         markdown=True,
     )
+```
 
+### `get_web_search_agent`
 
-def get_web_search_agent() -&gt; Agent:
-    &quot;&quot;&quot;Initialize a web search agent.&quot;&quot;&quot;
+```python
+def get_web_search_agent() -> Agent:
+    """Initialize a web search agent."""
     return Agent(
-        name=&quot;Web Search Agent&quot;,
-        model=Gemini(id=&quot;gemini-exp-1206&quot;),
+        name="Web Search Agent",
+        model=Gemini(id="gemini-exp-1206"),
         tools=[ExaTools(
             api_key=st.session_state.exa_api_key,
             include_domains=search_domains,
             num_results=5
         )],
-        instructions=&quot;&quot;&quot;You are a web search expert. Your task is to:
+        instructions="""You are a web search expert. Your task is to:
         1. Search the web for relevant information about the query
         2. Compile and summarize the most relevant information
         3. Include sources in your response
-        &quot;&quot;&quot;,
+        """,
         show_tool_calls=True,
         markdown=True,
     )
+```
 
+### `get_rag_agent`
 
-def get_rag_agent() -&gt; Agent:
-    &quot;&quot;&quot;Initialize the main RAG agent.&quot;&quot;&quot;
+```python
+def get_rag_agent() -> Agent:
+    """Initialize the main RAG agent."""
     return Agent(
-        name=&quot;Gemini RAG Agent&quot;,
-        model=Gemini(id=&quot;gemini-2.0-flash-thinking-exp-01-21&quot;),
-        instructions=&quot;&quot;&quot;You are an Intelligent Agent specializing in providing accurate answers.
+        name="Gemini RAG Agent",
+        model=Gemini(id="gemini-2.0-flash-thinking-exp-01-21"),
+        instructions="""You are an Intelligent Agent specializing in providing accurate answers.
         
         When given context from documents:
         - Focus on information from the provided documents
@@ -292,14 +344,19 @@ def get_rag_agent() -&gt; Agent:
         - Synthesize the information clearly
         
         Always maintain high accuracy and clarity in your responses.
-        &quot;&quot;&quot;,
+        """,
         show_tool_calls=True,
         markdown=True,
     )
+```
 
+## 文档相关性检查
 
-def check_document_relevance(query: str, vector_store, threshold: float = 0.7) -&gt; tuple[bool, List]:
-    &quot;&quot;&quot;
+### `check_document_relevance`
+
+```python
+def check_document_relevance(query: str, vector_store, threshold: float = 0.7) -> tuple[bool, List]:
+    """
     Check if documents in vector store are relevant to the query.
     
     Args:
@@ -309,35 +366,37 @@ def check_document_relevance(query: str, vector_store, threshold: float = 0.7) -
         
     Returns:
         tuple[bool, List]: (has_relevant_docs, relevant_docs)
-    &quot;&quot;&quot;
+    """
     if not vector_store:
         return False, []
         
     retriever = vector_store.as_retriever(
-        search_type=&quot;similarity_score_threshold&quot;,
-        search_kwargs={&quot;k&quot;: 5, &quot;score_threshold&quot;: threshold}
+        search_type="similarity_score_threshold",
+        search_kwargs={"k": 5, "score_threshold": threshold}
     )
     docs = retriever.invoke(query)
     return bool(docs), docs
+```
 
+## 主应用流程
 
-# Main Application Flow
+```python
 if st.session_state.google_api_key:
-    os.environ[&quot;GOOGLE_API_KEY&quot;] = st.session_state.google_api_key
+    os.environ["GOOGLE_API_KEY"] = st.session_state.google_api_key
     genai.configure(api_key=st.session_state.google_api_key)
     
     qdrant_client = init_qdrant()
     
     # File/URL Upload Section
-    st.sidebar.header(&quot;📁 Data Upload&quot;)
-    uploaded_file = st.sidebar.file_uploader(&quot;Upload PDF&quot;, type=[&quot;pdf&quot;])
-    web_url = st.sidebar.text_input(&quot;Or enter URL&quot;)
+    st.sidebar.header("📁 Data Upload")
+    uploaded_file = st.sidebar.file_uploader("Upload PDF", type=["pdf"])
+    web_url = st.sidebar.text_input("Or enter URL")
     
     # Process documents
     if uploaded_file:
         file_name = uploaded_file.name
         if file_name not in st.session_state.processed_documents:
-            with st.spinner(&#x27;Processing PDF...&#x27;):
+            with st.spinner('Processing PDF...'):
                 texts = process_pdf(uploaded_file)
                 if texts and qdrant_client:
                     if st.session_state.vector_store:
@@ -345,11 +404,11 @@ if st.session_state.google_api_key:
                     else:
                         st.session_state.vector_store = create_vector_store(qdrant_client, texts)
                     st.session_state.processed_documents.append(file_name)
-                    st.success(f&quot;✅ Added PDF: {file_name}&quot;)
+                    st.success(f"✅ Added PDF: {file_name}")
 
     if web_url:
         if web_url not in st.session_state.processed_documents:
-            with st.spinner(&#x27;Processing URL...&#x27;):
+            with st.spinner('Processing URL...'):
                 texts = process_web(web_url)
                 if texts and qdrant_client:
                     if st.session_state.vector_store:
@@ -357,123 +416,123 @@ if st.session_state.google_api_key:
                     else:
                         st.session_state.vector_store = create_vector_store(qdrant_client, texts)
                     st.session_state.processed_documents.append(web_url)
-                    st.success(f&quot;✅ Added URL: {web_url}&quot;)
+                    st.success(f"✅ Added URL: {web_url}")
 
     # Display sources in sidebar
     if st.session_state.processed_documents:
-        st.sidebar.header(&quot;📚 Processed Sources&quot;)
+        st.sidebar.header("📚 Processed Sources")
         for source in st.session_state.processed_documents:
-            if source.endswith(&#x27;.pdf&#x27;):
-                st.sidebar.text(f&quot;📄 {source}&quot;)
+            if source.endswith('.pdf'):
+                st.sidebar.text(f"📄 {source}")
             else:
-                st.sidebar.text(f&quot;🌐 {source}&quot;)
+                st.sidebar.text(f"🌐 {source}")
 
     # Chat Interface
     # Create two columns for chat input and search toggle
     chat_col, toggle_col = st.columns([0.9, 0.1])
 
     with chat_col:
-        prompt = st.chat_input(&quot;Ask about your documents...&quot;)
+        prompt = st.chat_input("Ask about your documents...")
 
     with toggle_col:
-        st.session_state.force_web_search = st.toggle(&#x27;🌐&#x27;, help=&quot;Force web search&quot;)
+        st.session_state.force_web_search = st.toggle('🌐', help="Force web search")
 
     if prompt:
         # Add user message to history
-        st.session_state.history.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt})
-        with st.chat_message(&quot;user&quot;):
+        st.session_state.history.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
             st.write(prompt)
 
         # Step 1: Rewrite the query for better retrieval
-        with st.spinner(&quot;🤔 Reformulating query...&quot;):
+        with st.spinner("🤔 Reformulating query..."):
             try:
                 query_rewriter = get_query_rewriter_agent()
                 rewritten_query = query_rewriter.run(prompt).content
                 
-                with st.expander(&quot;🔄 See rewritten query&quot;):
-                    st.write(f&quot;Original: {prompt}&quot;)
-                    st.write(f&quot;Rewritten: {rewritten_query}&quot;)
+                with st.expander("🔄 See rewritten query"):
+                    st.write(f"Original: {prompt}")
+                    st.write(f"Rewritten: {rewritten_query}")
             except Exception as e:
-                st.error(f&quot;❌ Error rewriting query: {str(e)}&quot;)
+                st.error(f"❌ Error rewriting query: {str(e)}")
                 rewritten_query = prompt
 
         # Step 2: Choose search strategy based on force_web_search toggle
-        context = &quot;&quot;
+        context = ""
         docs = []
         if not st.session_state.force_web_search and st.session_state.vector_store:
             # Try document search first
             retriever = st.session_state.vector_store.as_retriever(
-                search_type=&quot;similarity_score_threshold&quot;,
+                search_type="similarity_score_threshold",
                 search_kwargs={
-                    &quot;k&quot;: 5, 
-                    &quot;score_threshold&quot;: st.session_state.similarity_threshold
+                    "k": 5, 
+                    "score_threshold": st.session_state.similarity_threshold
                 }
             )
             docs = retriever.invoke(rewritten_query)
             if docs:
-                context = &quot;\n\n&quot;.join([d.page_content for d in docs])
-                st.info(f&quot;📊 Found {len(docs)} relevant documents (similarity &gt; {st.session_state.similarity_threshold})&quot;)
+                context = "\n\n".join([d.page_content for d in docs])
+                st.info(f"📊 Found {len(docs)} relevant documents (similarity > {st.session_state.similarity_threshold})")
             elif st.session_state.use_web_search:
-                st.info(&quot;🔄 No relevant documents found in database, falling back to web search...&quot;)
+                st.info("🔄 No relevant documents found in database, falling back to web search...")
 
         # Step 3: Use web search if:
         # 1. Web search is forced ON via toggle, or
         # 2. No relevant documents found AND web search is enabled in settings
         if (st.session_state.force_web_search or not context) and st.session_state.use_web_search and st.session_state.exa_api_key:
-            with st.spinner(&quot;🔍 Searching the web...&quot;):
+            with st.spinner("🔍 Searching the web..."):
                 try:
                     web_search_agent = get_web_search_agent()
                     web_results = web_search_agent.run(rewritten_query).content
                     if web_results:
-                        context = f&quot;Web Search Results:\n{web_results}&quot;
+                        context = f"Web Search Results:\n{web_results}"
                         if st.session_state.force_web_search:
-                            st.info(&quot;ℹ️ Using web search as requested via toggle.&quot;)
+                            st.info("ℹ️ Using web search as requested via toggle.")
                         else:
-                            st.info(&quot;ℹ️ Using web search as fallback since no relevant documents were found.&quot;)
+                            st.info("ℹ️ Using web search as fallback since no relevant documents were found.")
                 except Exception as e:
-                    st.error(f&quot;❌ Web search error: {str(e)}&quot;)
+                    st.error(f"❌ Web search error: {str(e)}")
 
         # Step 4: Generate response using the RAG agent
-        with st.spinner(&quot;🤖 Thinking...&quot;):
+        with st.spinner("🤖 Thinking..."):
             try:
                 rag_agent = get_rag_agent()
                 
                 if context:
-                    full_prompt = f&quot;&quot;&quot;Context: {context}
+                    full_prompt = f"""Context: {context}
 
 Original Question: {prompt}
 Rewritten Question: {rewritten_query}
 
-Please provide a comprehensive answer based on the available information.&quot;&quot;&quot;
+Please provide a comprehensive answer based on the available information."""
                 else:
-                    full_prompt = f&quot;Original Question: {prompt}\nRewritten Question: {rewritten_query}&quot;
-                    st.info(&quot;ℹ️ No relevant information found in documents or web search.&quot;)
+                    full_prompt = f"Original Question: {prompt}\nRewritten Question: {rewritten_query}"
+                    st.info("ℹ️ No relevant information found in documents or web search.")
 
                 response = rag_agent.run(full_prompt)
                 
                 # Add assistant response to history
                 st.session_state.history.append({
-                    &quot;role&quot;: &quot;assistant&quot;,
-                    &quot;content&quot;: response.content
+                    "role": "assistant",
+                    "content": response.content
                 })
                 
                 # Display assistant response
-                with st.chat_message(&quot;assistant&quot;):
+                with st.chat_message("assistant"):
                     st.write(response.content)
                     
                     # Show sources if available
-                    if not st.session_state.force_web_search and &#x27;docs&#x27; in locals() and docs:
-                        with st.expander(&quot;🔍 See document sources&quot;):
+                    if not st.session_state.force_web_search and 'docs' in locals() and docs:
+                        with st.expander("🔍 See document sources"):
                             for i, doc in enumerate(docs, 1):
-                                source_type = doc.metadata.get(&quot;source_type&quot;, &quot;unknown&quot;)
-                                source_icon = &quot;📄&quot; if source_type == &quot;pdf&quot; else &quot;🌐&quot;
-                                source_name = doc.metadata.get(&quot;file_name&quot; if source_type == &quot;pdf&quot; else &quot;url&quot;, &quot;unknown&quot;)
-                                st.write(f&quot;{source_icon} Source {i} from {source_name}:&quot;)
-                                st.write(f&quot;{doc.page_content[:200]}...&quot;)
+                                source_type = doc.metadata.get("source_type", "unknown")
+                                source_icon = "📄" if source_type == "pdf" else "🌐"
+                                source_name = doc.metadata.get("file_name" if source_type == "pdf" else "url", "unknown")
+                                st.write(f"{source_icon} Source {i} from {source_name}:")
+                                st.write(f"{doc.page_content[:200]}...")
 
             except Exception as e:
-                st.error(f&quot;❌ Error generating response: {str(e)}&quot;)
+                st.error(f"❌ Error generating response: {str(e)}")
 
 else:
-    st.warning(&quot;⚠️ Please enter your Google API Key to continue&quot;)
+    st.warning("⚠️ Please enter your Google API Key to continue")
 ```

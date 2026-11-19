@@ -1,16 +1,17 @@
+
 # 🎨 AI绘画
 
 > 来源：[https://seigy6zzam.feishu.cn/docx/Yn0XdYUdCoGOcqxBbBocK4zxn3l](https://seigy6zzam.feishu.cn/docx/Yn0XdYUdCoGOcqxBbBocK4zxn3l)
 
-# 子页面目录
+## 子页面目录
 
-# 三足鼎立
+## 三足鼎立
 
-## 自然语言流Dalle-3
+### 自然语言流Dalle-3
 
 TODO：面向未来？
 
-## 最简交互流Midjourney
+### 最简交互流Midjourney
 
 折中方案，当前美感最优，在线提示词生成工具：https://promptfolder.com/midjourney-prompt-helper/
 
@@ -26,7 +27,7 @@ TODO：面向未来？
 
 [Midjourney Mastery.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Pph4bUXFsoEJG3xW3EEcDTMlnQd)
 
-## 多样生态工具Stable Diffusion
+### 多样生态工具Stable Diffusion
 
 +   工具
 

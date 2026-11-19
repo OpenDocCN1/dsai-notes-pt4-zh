@@ -1,3 +1,4 @@
+
 # 在AI世界做设计
 
 > 来源：[https://docs.feishu.cn/docx/PZASd3AepoXtdnxmlfpcgNkTnLg](https://docs.feishu.cn/docx/PZASd3AepoXtdnxmlfpcgNkTnLg)
@@ -14,43 +15,43 @@ Update：2024.4.6
 
 > 于是，我将我学习AI的笔记开源成我的知识库，每一篇笔记都是我自己走过的学习路线，我将他们全部公开出来，并且附上一些任务Quiz用来检测自己的完成情况，希望让每个人都能少走弯路，让学习AI不再困难。
 
-> 我常看见一些大而全的知识库，内容非常优质，但往往里面有多个不同体系互相冲突，频繁的外链跳转，让**我们学**习**路线非**常陡峭而缓慢，**难以构建起**一**个连贯的学习框架**。所以本系列知识库专注**于实操性和体系性，**旨在提供一个易于跟随的、能够快速学习掌握的Roadmap，并且文科生可以放心使用，适当的时候附以其他视频、音频的内容。
+> 我常看见一些大而全的知识库，内容非常优质，但往往里面有多个不同体系互相冲突，频繁的外链跳转，让我们学习路线非常陡峭而缓慢，难以构建起一个连贯的学习框架。所以本系列知识库专注于实操性和体系性，旨在提供一个易于跟随的、能够快速学习掌握的Roadmap，并且文科生可以放心使用，适当的时候附以其他视频、音频的内容。
 
 > 让我们一起踏上这场学习之旅，探索AI的无限可能。
 
 多维表格（Ewh2bKte8aO6KCswKRRcV5iMndd_tblmEyVd58CYO2xt）
 
-**学习原则**
+## 学习原则
 
-1.  永远不要糊弄自己
+1. 永远不要糊弄自己
 
-1.  要研究AI，不要研究“AI新闻”，不要停留在嘴上，实践出真知，多用多尝试
+1. 要研究AI，不要研究“AI新闻”，不要停留在嘴上，实践出真知，多用多尝试
 
-1.  不断修炼精进自己的知识系统，取长补短
+1. 不断修炼精进自己的知识系统，取长补短
 
-1.  有时候做减法更重要，注意力有限，关注最该关注的内容
+1. 有时候做减法更重要，注意力有限，关注最该关注的内容
 
 ---
 
-**卷首语**
+## 卷首语
 
 > 欢迎来到《在AI世界里做设计》知识库！
 
-# 走进Stable Difussion
+## 走进 `Stable Diffusion`
 
-## 原理介绍
+### 原理介绍
 
-## 如何使用
+### 如何使用
 
-+   LiblibAI
++ `LiblibAI`
 
-+   Stable Diffusion在线版
++ `Stable Diffusion`在线版
 
-+   https://www.liblib.art/
++ https://www.liblib.art/
 
-+   如何使用？
++ 如何使用？
 
-## 系列教程
+### 系列教程
 
 关于采样
 
@@ -60,59 +61,59 @@ https://zhuanlan.zhihu.com/p/612572004
 
 https://zhuanlan.zhihu.com/p/616895208
 
-## ComfyUI
+### `ComfyUI`
 
-ComfyUI 是一个基于节点流程的 Stable Di**ffusion 图形用户界面和后台，可以使**用图形/节点/流程图的界面设计和执行高级 Stable Diffusion 管道，通过将不同节点连接在一起来构建图像生成的工作流
+`ComfyUI` 是一个基于节点流程的 `Stable Diffusion` 图形用户界面和后台，可以使用图形/节点/流程图的界面设计和执行高级 `Stable Diffusion` 管道，通过将不同节点连接在一起来构建图像生成的工作流
 
-+   [合集](https://m.okjike.com/originalPosts/659bb33a38849f879f6c4891?s=eyJ1IjoiNjI1ZmQzNzdmNzU0NTMwMDEwYzc2MjcwIiwiZCI6MX0%3D)
++ [合集](https://m.okjike.com/originalPosts/659bb33a38849f879f6c4891?s=eyJ1IjoiNjI1ZmQzNzdmNzU0NTMwMDEwYzc2MjcwIiwiZCI6MX0%3D)
 
-+   https://www.comflowy.com/zh-CN
++ https://www.comflowy.com/zh-CN
 
-# Midjourney 101
+## `Midjourney` 101
 
-## 参考
+### 参考
 
-+   https://www.uisdc.com/u/702947/publish/all
++ https://www.uisdc.com/u/702947/publish/all
 
-## MJ 是什么？
+### MJ 是什么？
 
 AI 绘画是使用人工智能技术创作艺术作品的过程。
 
 AI 绘画的基本步骤包括：
 
-1.  训练数据的准备：选择一系列的艺术作品作为训练数据，让模型能够学习这些作品的风格和特征。
+1. 训练数据的准备：选择一系列的艺术作品作为训练数据，让模型能够学习这些作品的风格和特征。
 
-1.  模型训练：使用训练数据训练AI模型，模型通过分析和学习艺术作品中的模式和风格来生成新的图像。
+1. 模型训练：使用训练数据训练AI模型，模型通过分析和学习艺术作品中的模式和风格来生成新的图像。
 
-1.  图像生成：训练完成后，模型能够根据输入的条件或随机生成全新的艺术作品。
+1. 图像生成：训练完成后，模型能够根据输入的条件或随机生成全新的艺术作品。
 
-而[ Midjourne](https://www.uisdc.com/tag/midjourney)y 就是其中生成质量比较好、比较领先的一个 AI 绘画工具。Midjourney 是一个由 Midjourney 研究实验室开发的人工智能程序，可根据文本生成图像，目前架设在 Discord 频道上。于 2022 年 7 月 12 日进入公开测试阶段，使用者可通过 Discord 的机器人指令进行操作，可以创作出很多的图像作品。
+而 [`Midjourney`](https://www.uisdc.com/tag/midjourney) 就是其中生成质量比较好、比较领先的一个 AI 绘画工具。`Midjourney` 是一个由 `Midjourney` 研究实验室开发的人工智能程序，可根据文本生成图像，目前架设在 Discord 频道上。于 2022 年 7 月 12 日进入公开测试阶段，使用者可通过 Discord 的机器人指令进行操作，可以创作出很多的图像作品。
 
 目前已经升级到版本 6
 
-## 注册订阅和基础使用
+### 注册订阅和基础使用
 
 使用方式
 
-+   中国版 Midjourney（唯一官方）：
++ 中国版 `Midjourney`（唯一官方）：
 
-+   https://desktop.youchuanai.com/
++ https://desktop.youchuanai.com/
 
-+   也是需要订阅，可以支持🛰️、支付宝，支持中文
++ 也是需要订阅，可以支持🛰️、支付宝，支持中文
 
-+   Midjourney 官方：
++ `Midjourney` 官方：
 
-+   官网：https://www.midjourney.com/home
++ 官网：https://www.midjourney.com/home
 
-+   需要在 Discord 上使用，需要用海外的邮箱注册，需要订阅，需要魔法，支持 Visa 卡等
++ 需要在 Discord 上使用，需要用海外的邮箱注册，需要订阅，需要魔法，支持 Visa 卡等
 
-+   网页版：https://alpha.midjourney.com/
++ 网页版：https://alpha.midjourney.com/
 
-+   其他使用方式
++ 其他使用方式
 
-+   以上两种使用成本都比较高，可以淘宝、📕拼单
++ 以上两种使用成本都比较高，可以淘宝、📕拼单
 
-注册成功之后，在 Discord 中使用 Midjourney bot使用
+注册成功之后，在 Discord 中使用 `Midjourney` bot使用
 
 ![](img/17fb5516dbabf3899133807681443f86.png)
 
@@ -120,76 +121,65 @@ AI 绘画的基本步骤包括：
 
 ![](img/a4cecca458620e686a9d639251bdf170.png)
 
-## 基础控图与参数
+### 基础控图与参数
 
-+   两万字干货！可能是全网最详细的Midjourney基础教程
++ 两万字干货！可能是全网最详细的Midjourney基础教程
 
-+   很全，但是版本稍微有些落后
++ 很全，但是版本稍微有些落后
 
 ![](img/02765c19225b4ac7ec1b11b16e88efd0.png)
 
 [index.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RtTGby9ZxoshNKxsECqcKXjtnve)
 
-## 后缀参数全面深入解析
+### 后缀参数全面深入解析
 
-+   [参数总览与举例](https://waytoagi.feishu.cn/wiki/R4YswSIrFi5fDak6wAUcJJFVnGc)
++ [参数总览与举例](https://waytoagi.feishu.cn/wiki/R4YswSIrFi5fDak6wAUcJJFVnGc)
 
-+   5种 Midjourney 进阶提示用法
++ 5种 `Midjourney` 进阶提示用法
 
-## 万能提示词公式
+### 万能提示词公式
 
-## 图生图
+### 图生图
 
-## 一致性：cref、sref
+### 一致性：`cref`、`sref`
 
-+   https://www.uisdc.com/group/559683.html
++ https://www.uisdc.com/group/559683.html
 
-+   https://www.uisdc.com/character-reference
++ https://www.uisdc.com/character-reference
 
-+   [Midjourney V6 更新风格参考命令2.0 "--sref "](https://waytoagi.feishu.cn/wiki/XOPfwFW3fi69Knk6nFacAGeUntc)
++ [`Midjourney` V6 更新风格参考命令2.0 "`--sref`"](https://waytoagi.feishu.cn/wiki/XOPfwFW3fi69Knk6nFacAGeUntc)
 
-+   [Midjourney V6 更新角色一致性命令 "--cref "](https://waytoagi.feishu.cn/wiki/A1gmw8XewikT86k1e5tcfTP0n8e?from=from_copylink)
++ [`Midjourney` V6 更新角色一致性命令 "`--cref`"](https://waytoagi.feishu.cn/wiki/A1gmw8XewikT86k1e5tcfTP0n8e?from=from_copylink)
 
-+   sref是风格一致性，同样的也是 -- sref
-
-
-
-
-
-
++ `sref`是风格一致性，同样的也是 `--sref`
 
 ![](img/87595f2d099895718d051d7bc9b38146.png)
 
 ![](img/c18fe963fd05775aa070540e93fd12c5.png)
 
-
-
-
-
-
 ![](img/68769e4e71350593b7ac1d5523c901aa.png)
 
-## Niji
+### Niji
 
-+   https://www.uisdc.com/niji_v5
++ https://www.uisdc.com/niji_v5
 
-+   [Niji V5 最牛的动漫提示 干货操作实例](https://waytoagi.feishu.cn/wiki/IYeJwVFR7ijAhCkqFG8cNssxn6e?from=from_copylink)
++ [`Niji V5` 最牛的动漫提示 干货操作实例](https://waytoagi.feishu.cn/wiki/IYeJwVFR7ijAhCkqFG8cNssxn6e?from=from_copylink)
 
-## Prompt 大全
+### `Prompt` 大全
 
-+   https://catjourney.life/
++ https://catjourney.life/
 
-+   [Prompt全览](https://rnrjayevh1.feishu.cn/wiki/wikcnHF7TTmr35bOwydpW4D3vbh?table=tbl9u🐧LonUuCClB&view=vewhjOF3qU)
++ [`Prompt`全览](https://rnrjayevh1.feishu.cn/wiki/wikcnHF7TTmr35bOwydpW4D3vbh?table=tbl9u🐧LonUuCClB&view=vewhjOF3qU)
 
-+   https://big-amber.notion.site/big-amber/2afb973ea42a4817b478671c54cfe5a6?v=43d5b1d70e454b1d88289dc115cf31e2
++ https://big-amber.notion.site/big-amber/2afb973ea42a4817b478671c54cfe5a6?v=43d5b1d70e454b1d88289dc115cf31e2
 
-+   [关键词词库精选](https://waytoagi.feishu.cn/wiki/PShsw6D0AisUVQkCwcmcTA4fnTL)
++ [关键词词库精选](https://waytoagi.feishu.cn/wiki/PShsw6D0AisUVQkCwcmcTA4fnTL)
 
 ![](img/4f70391a613b3dba7252cd726ae844ed.png)
 
 [midjourney辞典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JKz7bl0kToiFfLxLAnpcGEAanpd)
 
-1）插画风格
+### 1）插画风格
 
 来自外星的兔子
 
@@ -221,7 +211,7 @@ Vector illustration, Minimalistic, Digital illustration, Hacker wearing a hoodie
 
 ![](img/da0eda867e29f96071ae36375f259a13.png)
 
-2）电影风格
+### 2）电影风格
 
 空中岛屿
 
@@ -253,7 +243,7 @@ A wooden cabin on an alpine montain, outside view with look into a valley, autum
 
 ![](img/d8c39686f8156671256119bcac5aff81.png)
 
-3）3D 风格
+### 3）3D 风格
 
 可爱的卡通兔子
 
@@ -273,7 +263,6 @@ Tiny, Cute, small, An astronaut in space with distant planets in the background,
 
 微小，可爱，小，宇航员在太空中与遥远的行星为背景，微缩，立体，正投影视图，电影照明，Gediminas pranckeviius, Giuseppe Arcimboldo，藤田五郎，复杂，Hyp er 细节，4k
 
-
 超写实主义机器人
 
 关键词：
@@ -284,17 +273,17 @@ Hyperrealism, Hyper detailed, Cute, Sci-fi, 3D, cute, robot assistant made of th
 
 ![](img/9277fb10dc1616478bea1c30221e4d39.png)
 
-**1. 中国武术电影片**
+### 1. 中国武术电影片
 
 关键词：
 
-Amazing epic chinese ancient theme,chinese ink style, a young man is preparing to climb the stonesteps ladder, martial arts style, dynamic, expressiveclean lines, cinematic, stunning, realistic lighting andshading, vivid, vibrant, 8k, octane render, unrealengine, very detailed, concept art, realistic --ar 16:9
+Amazing epic chinese ancient theme,chinese ink style, a young man is preparing to climb the stonesteps ladder, martial arts style, dynamic, expressiveclean lines, cinematic, stunning, realistic lighting andshading, vivid, vibrant, 8k, octane render, unrealengine, very detailed, concept art, realistic `--ar 16:9`
 
 令人惊叹的史诗中国古代主题，中国墨水风格，一个年轻人正在准备爬石阶🪜，武术风格，动态，富有表现力的干净的线条，电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，不真实的引擎，非常详细，概念艺术，现实
 
 (young man is preparing to climb the stonesteps ladder,) 其他的关键词不变，改变这句话创作出不同的场景
 
-Midjourney 生成的图片：
+`Midjourney` 生成的图片：
 
 ![](img/2bf5b06e7a97ded739b2629fffd9bd88.png)
 
@@ -304,13 +293,15 @@ Midjourney 生成的图片：
 
 这质感，我只能说无敌了....
 
-**2. 长安城夜景**
+### 2. 长安城夜景
 
 关键词：
 
-Chang'an City, Ancient times, BigsceneSea of clouds, an expansive view of, highangle view Soft moonlight, Twinklingstars, cinematic lighting,8k,Virtua engine,detailed, Digital illustration --ar 16:9
+Chang'an City, Ancient times, BigsceneSea of clouds, an expansive view of, highangle view Soft moonlight, Twinklingstars, cinematic lighting,8k,Virtua engine,detailed, Digital illustration `--ar 16:9`
 
-长安城，古代，大场景云海，广阔的视野，高角度视图柔和的月光，闪烁的星星，电影照明，8k,Virtua 引擎，详细，数字插图-ar 16:9
+长安城，古代，大场景云海，广阔的视野，高角度视图柔和的月光，闪烁的星星，电影照明，8k,Virtua 引擎，详细，数字插图`--ar 16:9`
+
+
 
 Midjourney 生成的图片：
 
@@ -320,13 +311,13 @@ Midjourney 生成的图片：
 
 ![](img/1eb0d8516b9c52d5274a29bfd3a39d2f.png)
 
-**3. 中国古代女孩**
+### 3. 中国古代女孩
 
 关键词：
 
-By Kuvshinov llya, amazing epic chinese ancient theme, water&ink style, Fantasy style, martial artsstyle, Temple, chinese dragon, Chinese fairytale,highly detailed,dynamic, expressive, clean linescinematic, stunning, realistic lighting and shading, vivid, vibrant, 8k, octane render, unreal engine, verydetailed, concept art, realistic, Cry engine --ar 16:9 --v 5 --s 250
+`By Kuvshinov llya, amazing epic chinese ancient theme, water&ink style, Fantasy style, martial artsstyle, Temple, chinese dragon, Chinese fairytale,highly detailed,dynamic, expressive, clean linescinematic, stunning, realistic lighting and shading, vivid, vibrant, 8k, octane render, unreal engine, verydetailed, concept art, realistic, Cry engine --ar 16:9 --v 5 --s 250`
 
-由 Kuvshinov llya，惊人的史诗中国古代主题，水墨画风格，幻想风格，武术风格，寺庙，中国龙，中国童话，高度详细，动态，富有表现力，干净的线条电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，虚幻引擎，非常详细，概念艺术，现实，哭泣引擎-ar 9:16 -v 5 -s 250
+由 Kuvshinov llya，惊人的史诗中国古代主题，水墨画风格，幻想风格，武术风格，寺庙，中国龙，中国童话，高度详细，动态，富有表现力，干净的线条电影，令人惊叹，现实的灯光和阴影，生动，充满活力，8k，辛坦渲染，虚幻引擎，非常详细，概念艺术，现实，哭泣引擎`-ar 9:16 -v 5 -s 250`
 
 Midjourney 生成的图片：
 
@@ -336,11 +327,11 @@ Midjourney 生成的图片：
 
 ![](img/5beb6ea79259c58b813308dccb3bd7f7.png)
 
-**4. 未来太空科技风格**
+### 4. 未来太空科技风格
 
 关键词：
 
-Amazing cosmic starry sky, ultra modern future theme, future technology style,surrealism.spacecraft, galaxy, planet, space, future story, hugeworld view, big scene, full of ignorance of future future futureexploration, astronauts, space creatures, highlydetailed, dynamic,expressive, clean lines,cinematic stunning, realistic lighting and shading, vivid8k,octane render, unreal engine, very detailed concept art, realistic, Cry engine --ar 16:9 --v 5
+`Amazing cosmic starry sky, ultra modern future theme, future technology style,surrealism.spacecraft, galaxy, planet, space, future story, hugeworld view, big scene, full of ignorance of future future futureexploration, astronauts, space creatures, highlydetailed, dynamic,expressive, clean lines,cinematic stunning, realistic lighting and shading, vivid8k,octane render, unreal engine, very detailed concept art, realistic, Cry engine --ar 16:9 --v 5`
 
 令人惊叹的宇宙星空，超现代的未来主题，未来科技风格，超现实主义。宇宙飞船，星系，行星，太空，未来的故事，巨大的世界观，大的场景，充满了对未来探索的无知，宇航员，太空生物，高度详细，动态，富有表现力，干净的线条，令人惊叹的电影，逼真的灯光和阴影，生动的 8k, ctane 渲染，虚幻的引擎，非常详细的概念艺术，现实的，哭引擎
 
@@ -356,27 +347,29 @@ Midjourney 生成的图片：
 
 ### 连环漫画
 
-+   https://www.uisdc.com/mj-comic
++ `https://www.uisdc.com/mj-comic`
 
-+   用Coze bot生成分镜：https://www.coze.com/store/bot/7364070218857431058?bot_id=true
++ `https://www.coze.com/store/bot/7364070218857431058?bot_id=true`
 
-+   再和他说“很棒，根据以上分镜，创建对应的AI绘画可用的提示词，要求提示词中用一个小男孩来替换李李， 提示词要包含角色所在的场景和角色的表情动作描写，并且后续的提示订场景的连贯性， 其中提示词的部分，生成中英文的对照版，而介绍部分用中文就可以”
++ 用 `Coze` bot 生成分镜：`https://www.coze.com/store/bot/7364070218857431058?bot_id=true`
 
-+   再把第一段输给mj，再用cref去制作后续的分镜
++ 再和他说“很棒，根据以上分镜，创建对应的 AI 绘画可用的提示词，要求提示词中用一个小男孩来替换李李，提示词要包含角色所在的场景和角色的表情动作描写，并且后续的提示订场景的连贯性，其中提示词的部分，生成中英文的对照版，而介绍部分用中文就可以”
+
++ 再把第一段输给 `mj`，再用 `cref` 去制作后续的分镜
 
 ### 表情包
 
-+   [教程：1分钟10套表情包](https://waytoagi.feishu.cn/wiki/🐧zlwOOjtie4hJk6srLcFBMunbg)
++ [教程：1分钟10套表情包](https://waytoagi.feishu.cn/wiki/🐧zlwOOjtie4hJk6srLcFBMunbg)
 
-+   https://www.bilibili.com/video/BV1dH4y1J7Rc/?spm_id_from=333.999.0.0&vd_source=b2c556c92eaad2e3330b8aa1ae47c210
++ `https://www.bilibili.com/video/BV1dH4y1J7Rc/?spm_id_from=333.999.0.0&vd_source=b2c556c92eaad2e3330b8aa1ae47c210`
 
-+   https://www.uisdc.com/group/551908.html
++ `https://www.uisdc.com/group/551908.html`
 
 ![](img/d22bbfce3b809c05b87a3183febbccf1.png)
 
 ### 插画
 
-+   https://www.uisdc.com/group/554830.html
++ `https://www.uisdc.com/group/554830.html`
 
 ![](img/2ff1f5dcfbc70743b91423b44c2d7074.png)
 
@@ -386,35 +379,35 @@ Midjourney 生成的图片：
 
 ### 卡通头像
 
-> https://www.uisdc.com/group/543879.html
+> `https://www.uisdc.com/group/543879.html`
 
-+   可爱头像：cref+关键词
++ 可爱头像：`cref`+关键词
 
-+   Cute, 3D, IP, Pixar, solid color background --iw 1.5
++ `Cute, 3D, IP, Pixar, solid color background --iw 1.5`
 
-+   Cute, flat style, ghibli, comics, solid color background
++ `Cute, flat style, ghibli, comics, solid color background`
 
 男生头像
 
-A young boy, Disney Prince, baby face, exquisite facial features, big eyes, high nose, smiling lips, fantastic style, vast sky, bold and colorful portraits, bayard wu, rtx, spotlight, game cg, 3D, --iw 0.5 --s 750
+`A young boy, Disney Prince, baby face, exquisite facial features, big eyes, high nose, smiling lips, fantastic style, vast sky, bold and colorful portraits, bayard wu, rtx, spotlight, game cg, 3D, --iw 0.5 --s 750`
 
 女生头像
 
-A young girl, Disney princess, baby face, exquisite facial features, big eyes, high nose, smiling lips, fantastic style, vast sky, bold and colorful portraits, bayard wu, rtx, spotlight, game cg, 3D, --iw 0.5 --s 750
+`A young girl, Disney princess, baby face, exquisite facial features, big eyes, high nose, smiling lips, fantastic style, vast sky, bold and colorful portraits, bayard wu, rtx, spotlight, game cg, 3D, --iw 0.5 --s 750`
 
 情侣头像
 
-A young boy holding a girl, Disney style, baby face, exquisite facial features, big eyes, high nose, smiling lips, fantastic style, vast sky, bold and colorful portraits, bayard wu, rtx, spotlight, game cg, 3D, --iw 0.5 --s 750
+`A young boy holding a girl, Disney style, baby face, exquisite facial features, big eyes, high nose, smiling lips, fantastic style, vast sky, bold and colorful portraits, bayard wu, rtx, spotlight, game cg, 3D, --iw 0.5 --s 750`
 
 ![](img/33aa98297f49b44a068613abcb5d6e14.png)
 
 ### 做手机壁纸
 
-> https://www.uisdc.com/midjourney-6
+> `https://www.uisdc.com/midjourney-6`
 
 关键词：
 
-mobile wallpaper illustrations, four seasons, natural landscapes, minimalist illustrations, line illustrations --ar 9:16 --niji
+`mobile wallpaper illustrations, four seasons, natural landscapes, minimalist illustrations, line illustrations --ar 9:16 --niji`
 
 移动壁纸插图，四季，自然景观，极简主义插图，线条插图
 
@@ -428,11 +421,11 @@ Midjourney 生成的图片：
 
 ![](img/95e8e34ba085ab970fe8b9c0dfef88d3.png)
 
-**3. 新海诚风格插画**
+### 3. 新海诚风格插画
 
 关键词：
 
-Makoto Shinkai animation style, a girl, 4K --ar 9:16 --niji
+`Makoto Shinkai animation style, a girl, 4K --ar 9:16 --niji`
 
 新海诚动画风格，一个少女，4K
 
@@ -446,13 +439,13 @@ Midjourney 生成的图片：
 
 不要看手，不要看手，不要看手！！！
 
-**4. 国潮插画**
+### 4. 国潮插画
 
 关键词：
 
-Make posters of James Jean, white deer, auspicious clouds, birds, distant mountains, Chinese China-Chic style, colorful, light color, gradient color --ar 9:16
+`Make posters of James Jean, white deer, auspicious clouds, birds, distant mountains, Chinese China-Chic style, colorful, light color, gradient color --ar 9:16`
 
-制作海报的詹姆斯让，白鹿，祥云，鸟类，远山，中国中国别致的风格，彩色，浅色，渐变色-ar 9:16
+制作海报的詹姆斯让，白鹿，祥云，鸟类，远山，中国中国别致的风格，彩色，浅色，渐变色`-ar 9:16`
 
 Midjourney 生成的图片：
 
@@ -464,41 +457,41 @@ Midjourney 生成的图片：
 
 ### 黏土风格写真
 
-+   https://www.bilibili.com/read/cv34290188/
++ `https://www.bilibili.com/read/cv34290188/`
 
 ### 做微电影
 
-+   涉及到runway、pika等工具
++ 涉及到 `runway`、`pika` 等工具
 
 ### 转绘/真人转卡通
 
 > 转绘可能会用到其他软件
 
-+   instantID
++ `instantID`
 
-+   Domo AI
++ `Domo AI`
 
-+   GoEnhance AI
++ `GoEnhance AI`
 
-+   Magictoonify
++ `Magictoonify`
 
 ### 视觉传达：运营海报设计/视觉呈现/产品渲染海报中的应用
 
-+   https://www.uisdc.com/midjourney-6
++ `https://www.uisdc.com/midjourney-6`
 
-**1. 娇兰香水产品摄影图**
+#### 1. 娇兰香水产品摄影图
 
 关键词：
 
-Guerlain Perfume, plant flowers, top light. cean natural backaround with water, saturation color scheme. The productis bright, Motled shading, studo lighfing, contrast high precision, Fine gloss, Centered composition, Photography, HD4Krealism --q 2 --v 5 --s 750 --ar 9:16
+`Guerlain Perfume, plant flowers, top light. cean natural backaround with water, saturation color scheme. The productis bright, Motled shading, studo lighfing, contrast high precision, Fine gloss, Centered composition, Photography, HD4Krealism --q 2 --v 5 --s 750 --ar 9:16`
 
-娇兰香水，植花，顶淡。海洋自然背景与水，饱和的配色方案。该产品明亮，斑纹底纹，studo lighfing，对比度精度高，光泽度高，居中构图，摄影，HD4Krealism
+娇兰香水，植花，顶淡。海洋自然背景与水，饱和的配色方案。该产品明亮，斑纹底纹，`studo lighfing`，对比度精度高，光泽度高，居中构图，摄影，HD4Krealism
 
 Midjourney 生成的图片：
 
 ![](img/7a617c5250610a5872fc41ed84ad7574.png)
 
-我们在这组关键词上多生成几组图片，然后找到你认为不错的照片，去 PS（或者其他后期软件）后期修改调整一下，然后进行文字排版，如下：
+我们在这组关键词上多生成几组图片，然后找到你认为不错的照片，去 `PS`（或者其他后期软件）后期修改调整一下，然后进行文字排版，如下：
 
 娇兰香水产品海报：
 
@@ -510,11 +503,11 @@ Midjourney 生成的图片：
 
 有电商设计同学吗，是不是感觉可以去拍老板脑门要求涨薪了
 
-**2. 美女模特摄影海报**
+#### 2. 美女模特摄影海报
 
 关键词：
 
-On a sunny summer day, a beautiful and innocent18-year-old Korean gir smiles brightly playing withwater in the stream --ar 9:16 --v 5
+`On a sunny summer day, a beautiful and innocent18-year-old Korean gir smiles brightly playing withwater in the stream --ar 9:16 --v 5`
 
 在一个阳光明媚的夏日，一个美丽而天真的 18 岁韩国女孩在小溪里玩水，笑容灿烂
 
@@ -526,11 +519,11 @@ Midjourney 生成的图片：
 
 ![](img/a05c1b5e4db00951dc71043f5f2b588d.png)
 
-**3. 江南清明节海报**
+#### 3. 江南清明节海报
 
 关键词：
 
-jiangnan, hangzhou,summer scenery, Green trees, small houses,brook2,Ultra-high definition picture, 8K --ar 2:3 --v 4
+`jiangnan, hangzhou,summer scenery, Green trees, small houses,brook2,Ultra-high definition picture, 8K --ar 2:3 --v 4`
 
 江南，杭州，夏日风光，绿树，小房子，小溪 2，超高清图片
 
@@ -544,11 +537,11 @@ Midjourney 生成的图片：
 
 后期一下，拿捏了...
 
-**4. 奔驰 GT 商业海报**
+#### 4. 奔驰 GT 商业海报
 
 关键词：
 
-Mercedes benz design,photorealistic,cleanoackground, ray tracking,8k,studio lighting, mattefinishing，DSLR ultra realistic, ulltra detail, wideanglle lens --ar 9:16 --q 5
+`Mercedes benz design,photorealistic,cleanoackground, ray tracking,8k,studio lighting, mattefinishing，DSLR ultra realistic, ulltra detail, wideanglle lens --ar 9:16 --q 5`
 
 奔驰设计，逼真，干净的背景，光线跟踪，8k，工作室照明，抛光，单反超逼真，超细节，广角镜头
 
@@ -564,21 +557,21 @@ Midjourney 生成的图片：
 
 春天海报
 
-+   https://www.uisdc.com/group/556298.html
++ `https://www.uisdc.com/group/556298.html`
 
 ![](img/6651335e175ba2b5b047fb6cc58452f7.png)
 
-### 虚拟角色创作/构建卡通 IP人物图
+### 虚拟角色创作/构建卡通 IP 人物图
 
-> https://www.bilibili.com/video/BV1Li421m7pt?p=12&vd_source=b2c556c92eaad2e3330b8aa1ae47c210
+> `https://www.bilibili.com/video/BV1Li421m7pt?p=12&vd_source=b2c556c92eaad2e3330b8aa1ae47c210`
 
-**1. 可爱的花裙小女孩**
+#### 1. 可爱的花裙小女孩
 
 关键词：
 
-a super cute girl, wearing a floral dress, wearing bootswearing a hat, holding bag, big watery eyes, full bodylooking at viewer, open hands, MD clothing, clothingwrinkles, surprise, clean background, dreamy, pop martmockup, blind box toy, disney style, fine luster, 3D ren-dering, OC, front lighting, face shot, best quality, 8K, ultradetoiled --ar 3:4 --niji
+`a super cute girl, wearing a floral dress, wearing bootswearing a hat, holding bag, big watery eyes, full bodylooking at viewer, open hands, MD clothing, clothingwrinkles, surprise, clean background, dreamy, pop martmockup, blind box toy, disney style, fine luster, 3D ren-dering, OC, front lighting, face shot, best quality, 8K, ultradetoiled --ar 3:4 --niji`
 
-一个超级可爱的女孩，穿着花裙子，戴着靴子，戴着帽子，拿着包，大水汪汪的眼睛，全身看着观众，张开双手，MD 衣服，衣服皱褶，惊喜，干净的背景，梦幻，流行的马丁模型，盲盒玩具，迪士尼风格，细光泽，3D 渲染，OC，正面照明，面部拍摄，最好的质量，8K，超累
+一个超级可爱的女孩，穿着花裙子，戴着靴子，戴着帽子，拿着包，大水汪汪的眼睛，全身看着观众，张开双手，`MD` 衣服，衣服皱褶，惊喜，干净的背景，梦幻，流行的马丁模型，盲盒玩具，迪士尼风格，细光泽，3D 渲染，`OC`，正面照明，面部拍摄，最好的质量，8K，超累
 
 Midjourney 生成的图片：
 
@@ -592,13 +585,13 @@ Midjourney 生成的图片：
 
 这里大家可以把 IP 扣下来，然后重新排版下效果会更好，我这里只是给大家演示一下，勿吐槽！
 
-**2. 调皮的小男孩**
+#### 2. 调皮的小男孩
 
 关键词：
 
-A handsome boy, dirty braids, trendy wear, a shoesfront view, ip pop mart blind box, front view,,animation effects,clean background, white background, morale group, movie lighting, light andshade contrast, 8k, best quality, super detail, 3d c4d, oc rendering, ultra high definition, 3d rendering --ar 3:4 --v 5
+`A handsome boy, dirty braids, trendy wear, a shoesfront view, ip pop mart blind box, front view,,animation effects,clean background, white background, morale group, movie lighting, light andshade contrast, 8k, best quality, super detail, 3d c4d, oc rendering, ultra high definition, 3d rendering --ar 3:4 --v 5`
 
-一个帅气的男孩，时髦的穿着，aj 鞋前视图，ip pop mart 盲盒，前视图，，动画效果，干净的背景，白色的背景，士气组，电影照明，明暗对比，8k，最好的质量，超细节，3d, c4d, oc 渲染，超高清，3d 渲染
+一个帅气的男孩，时髦的穿着，aj 鞋前视图，ip pop mart 盲盒，前视图，，动画效果，干净的背景，白色的背景，士气组，电影照明，明暗对比，8k，最好的质量，超细节，3d, `C4D`, `OC` 渲染，超高清，3d 渲染
 
 Midjourney 生成的图片：
 
@@ -612,13 +605,21 @@ Midjourney 生成的图片：
 
 ![](img/b3b2d89de7f53b57e20813ccf9f0b9f6.png)
 
-Three-view cute boy 3d IP, Cute boy 3D, IP image light red hair, beautiful eyes, black coat popmart style,, blind box, cyberpunk, Full body, three views, front view of boy, side view of boy, back view of boy, ray tracing, clay material, more details, gray background --ar 16:9 --niji 5
 
-**3. 气泡雨衣女孩**
+
+# Midjourney AI 绘画与提示词指南
+
+## 角色与 IP 设计
+
+### 三视图可爱男孩 3D IP
+
+`Three-view cute boy 3d IP, Cute boy 3D, IP image light red hair, beautiful eyes, black coat popmart style,, blind box, cyberpunk, Full body, three views, front view of boy, side view of boy, back view of boy, ray tracing, clay material, more details, gray background --ar 16:9 --niji 5`
+
+### 3. 气泡雨衣女孩
 
 关键词：
 
-whole body!! a cute girl from futurecyberpunk, wearing a sliver raincoat and wearing a big goggle, charmingpose, floating glass balls, soft pastel gradients, popmart blindbox, clay material, brightbackground,award-winning,LED3d art, depth of field, Pixar trend.surreal, octane rendering, raytracing, complex details, animation lighting, c4d --ar 3:4
+`whole body!! a cute girl from futurecyberpunk, wearing a sliver raincoat and wearing a big goggle, charmingpose, floating glass balls, soft pastel gradients, popmart blindbox, clay material, brightbackground,award-winning,LED3d art, depth of field, Pixar trend.surreal, octane rendering, raytracing, complex details, animation lighting, c4d --ar 3:4`
 
 整个身体! !一个来自 futurecyberpunk 的可爱女孩，穿着银色雨衣，戴着大眼镜，迷人的姿势，漂浮的玻璃球，柔和的粉彩渐变，popmart 盲盒，粘土材料，明亮的背景，获奖，LED3d 艺术，景深，皮克斯的趋势。超现实，辛烷值渲染，光线追踪，复杂的细节，动画照明
 
@@ -632,19 +633,19 @@ Midjourney 生成的图片：
 
 你们喜欢哪个呢，我都喜欢
 
-### UI和Logo
+## UI 与图标设计
 
-**1. 直播礼物风格图标**
+### 直播礼物风格图标
 
 关键词：
 
-喂图+（Gift icon）, cartoon style, solid color background luminous effect, 3d --iw 1 --v 5 --q 2
+`喂图+（Gift icon）, cartoon style, solid color background luminous effect, 3d --iw 1 --v 5 --q 2`
 
 卡通风格，纯色背景发光效果，3d
 
-这里需要去素材网站上找到你喜欢的 icons 风格，然后喂图给机器人，后面打上关键词就可以了，不知道怎么喂图的看我的第一篇文章《奶奶看了都会的 Midjourney 入门教程》
+这里需要去素材网站上找到你喜欢的 `icons` 风格，然后喂图给机器人，后面打上关键词就可以了，不知道怎么喂图的看我的第一篇文章《奶奶看了都会的 Midjourney 入门教程》
 
-(Gift icon）是可替换的关键词，比如（beer icon）啤酒图标、（Headphone icon）耳机图标.....
+`Gift icon` 是可替换的关键词，比如 `beer icon` 啤酒图标、`Headphone icon` 耳机图标.....
 
 Midjourney 生成的图片：
 
@@ -656,13 +657,13 @@ Midjourney 生成的图片：
 
 一般这种图标会用在直播的礼物场景中...
 
-**2. 主题应用 icons**
+### 主题应用图标
 
 关键词：
 
-icon design, light texture, glow, Dribbble, 3D, frostedglass effect, 3d,ui, ux,--upbeta --q 2 --v 4
+`icon design, light texture, glow, Dribbble, 3D, frostedglass effect, 3d, ui, ux, --upbeta --q 2 --v 4`
 
-图标设计，光纹理，发光，Dribbble, 3D，磨砂玻璃效果，3D, ui, ux，——upbeta—q2—v4
+图标设计，光纹理，发光，Dribbble, 3D，磨砂玻璃效果，3D, ui, ux，`--upbeta --q 2 --v 4`
 
 Midjourney 生成的图片：
 
@@ -674,13 +675,13 @@ Midjourney 生成的图片：
 
 这些生成出来的素材用来参考还是不错的。
 
-**3. B 端图标**
+### B 端图标
 
 关键词：
 
-喂图 +A data icon, blue gradient frosted glass, frostedglass building, white transparent technology sensewhite city building scene, data line link, chip, OCrenderer, big data, industrial machinery, high detailight gray background with simple linear details,studio lighting, 3d,c4d, pure white background, 8k
+`喂图 + A data icon, blue gradient frosted glass, frostedglass building, white transparent technology sense white city building scene, data line link, chip, OCrenderer, big data, industrial machinery, high detail light gray background with simple linear details, studio lighting, 3d, c4d, pure white background, 8k`
 
-一个数据图标，蓝色渐变磨砂玻璃，磨砂玻璃建筑，白色透明科技感白色城市建筑场景，数据线链接，芯片，OCrenderer，大数据，工业机械，高细节灰色背景与简单的线性细节，工作室照明，3d,c4d，纯白背景，8k
+一个数据图标，蓝色渐变磨砂玻璃，磨砂玻璃建筑，白色透明科技感白色城市建筑场景，数据线链接，芯片，OCrenderer，大数据，工业机械，高细节灰色背景与简单的线性细节，工作室照明，3d, c4d，纯白背景，8k
 
 Midjourney 生成的图片：
 
@@ -692,13 +693,13 @@ B 端图标设计：
 
 质感还不错，大家可以多尝试喂不同构图的图片，喂图玩法对图片影响最大的是你给的参考图，建议多跑跑图。
 
-**4. 音乐软件 UI 设计**
+### 音乐软件 UI 设计
 
 关键词：
 
-music app ui design, ux design, white, light, bright,data, modern,smooth, behance, dribbble, --upbeta --q 2 --v 4
+`music app ui design, ux design, white, light, bright, data, modern, smooth, behance, dribbble, --upbeta --q 2 --v 4`
 
-音乐应用程序 ui 设计，用户体验设计，白色，轻，明亮，数据，现代，流畅，behance, dribbble，——upbeta——g2——V4
+音乐应用程序 ui 设计，用户体验设计，白色，轻，明亮，数据，现代，流畅，behance, dribbble，`--upbeta --q 2 --v 4`
 
 Midjourney 生成的图片：
 
@@ -710,13 +711,11 @@ Midjourney 生成的图片：
 
 可以看到，UI 设计并不规范，文字也很乱，所以 MJ 在这块只能作为一个风格参考，网上已经有很多 AI 生成的 UI 设计软件开始内测了，关注我，后续给大家出 AI 绘制 UI 设计的教程。
 
-####
-
-**1. 像素风格插画**
+### 像素风格插画
 
 关键词：
 
-3D, 16-bit pixel art, Super mario, Minecraft, LEGO, pixel style, Blocksplicing, girl with long hair, Alice in Wonderland, garden background, 8K --uplight --ar 9:16 --v 5
+`3D, 16-bit pixel art, Super mario, Minecraft, LEGO, pixel style, Blocksplicing, girl with long hair, Alice in Wonderland, garden background, 8K --uplight --ar 9:16 --v 5`
 
 3D, 16 位像素艺术，超级马里奥，我的世界，乐高，像素风格，积木拼接，长头发的女孩，爱丽丝梦游仙境，花园背景，8K
 
@@ -730,56 +729,45 @@ Midjourney 生成的图片：
 
 第一张其实并不完全是像素风格，但是我个人感觉效果还不错，很神奇。
 
+## 场景与概念资源
+
 ### 梦幻世界/游戏概念场景的构建
 
-+   3D元素：https://www.uisdc.com/group/559055.html
++ `https://www.uisdc.com/group/559055.html`
++ `https://zhuanlan.zhihu.com/p/691234853`
++ `https://zhuanlan.zhihu.com/p/640555647`
++ `https://huashou.club/guide/scene6`
 
-+   https://zhuanlan.zhihu.com/p/691234853
+### AI 写真证件照
 
-+   https://zhuanlan.zhihu.com/p/640555647
++ 可以使用 `cref`
++ 可以使用 `InsightFace`
++ `https://www.bilibili.com/read/cv34136301/`
++ `Prompt: professional portrait, asian girl 26 years old in white shirt, smiling expression, round face, long brown hair, straight hair, professional portrait photo, pure blue background, fine glossy, soft composition, best quality, high resolution, very clear --ar 3:4`
++ `https://www.bilibili.com/video/BV1KF4m1c7t1/?spm_id_from=333.788&vd_source=b2c556c92eaad2e3330b8aa1ae47c210`
 
-+   https://huashou.club/guide/scene6
+### 电影/动漫/游戏角色
 
-### AI写真证件照
-
-+   可以使用cref
-
-+   可以使用InsightFace
-
-+   https://www.bilibili.com/read/cv34136301/
-
-+   Prompt: professional portrait, asian girl 26 years old in white shirt, smiling expression, round face, long brown hair, straight hair, professional portrait photo, pure blue background, fine glossy, soft composition, best quality, high resolution, very clear --ar 3:4
-
-+   https://www.bilibili.com/video/BV1KF4m1c7t1/?spm_id_from=333.788&vd_source=b2c556c92eaad2e3330b8aa1ae47c210
-
-### 电影/**动漫/游戏角色**
-
-+   不同风格的（比如赛博朋克）
-
-+   二次元动漫角色
-
-+   游戏：原神，蛋仔派对
-
-+   乙女
-
-+   动漫
++ 不同风格的（比如赛博朋克）
++ 二次元动漫角色
++ 游戏：原神，蛋仔派对
++ 乙女
++ 动漫
 
 ### 节日
 
 #### 劳动节
 
-+   https://www.uisdc.com/group/559055.html
++ `https://www.uisdc.com/group/559055.html`
 
-## ChatGPT提示词
+## ChatGPT 提示词生成器
 
 As a prompt generator for a generative AI called "Midjourney", you will create image prompts for the AI to visualize. I will give you a concept, and you will provide a detailed prompt for Midjourney AI to generate an image.
 
 Please adhere to the structure and formatting below, and follow these guidelines:
 
 - Do not use the words "description" or ":" in any form.
-
-- Do not place a comma between [ar] and [v].
-
+- Do not place a comma between `[ar]` and `[v]`.
 - Write each prompt in one line without using return.
 
 Structure:
@@ -796,69 +784,66 @@ Structure:
 
 [6] = A description of how [5] will be executed (e.g. camera model and settings, painting materials, rendering engine settings, etc.)
 
-[ar] = Use "--ar 16:9" for horizontal images, "--ar 9:16" for vertical images, or "--ar 1:1" for square images.
+[ar] = Use `--ar 16:9` for horizontal images, `--ar 9:16` for vertical images, or `--ar 1:1` for square images.
 
-[v] = Use "--niji" for Japanese art style, or "--v 5" for other styles.
+[v] = Use `--niji` for Japanese art style, or `--v 5` for other styles.
 
 Formatting:
 
-Follow this prompt structure: "/imagine prompt: [1], [2], [3], [4], [5], [6], [ar] [v]".
+Follow this prompt structure: `/imagine prompt: [1], [2], [3], [4], [5], [6], [ar] [v]`.
 
 Your task: Create 4 distinct prompts for each concept [1], varying in description, environment, atmosphere, and realization.
 
 - Write your prompts in English and Chinese again.
-
 - Do not describe unreal concepts as "real" or "photographic".
-
 - Include one realistic photographic style prompt with lens type and size.
-
 - Separate different prompts with two new lines.
 
 Example Prompts:
 
 Prompt 1:
 
-/imagine prompt: A stunning Halo Reach landscape with a Spartan on a hilltop, lush green forests surround them, clear sky, distant city view, focusing on the Spartan's majestic pose, intricate armor, and weapons, Artwork, oil painting on canvas, --ar 16:9 --v 5
+`/imagine prompt: A stunning Halo Reach landscape with a Spartan on a hilltop, lush green forests surround them, clear sky, distant city view, focusing on the Spartan's majestic pose, intricate armor, and weapons, Artwork, oil painting on canvas, --ar 16:9 --v 5`
 
 Prompt 2:
 
-/imagine prompt: A captivating Halo Reach landscape with a Spartan amidst a battlefield, fallen enemies around, smoke and fire in the background, emphasizing the Spartan's determination and bravery, detailed environment blending chaos and beauty, Illustration, digital art, --ar 16:9 --v 5
+`/imagine prompt: A captivating Halo Reach landscape with a Spartan amidst a battlefield, fallen enemies around, smoke and fire in the background, emphasizing the Spartan's determination and bravery, detailed environment blending chaos and beauty, Illustration, digital art, --ar 16:9 --v 5`
 
-#### 充当midjourney的简单联想器
+### 充当 Midjourney 的简单联想器
 
-从现在开始，你是一名中英翻译，你会根据我输入的中文内容，翻译成对应英文。请注意，你翻译后的内容主要服务于一个绘画AI，它只能理解具象的描述而非抽象的概念，同时根据你对绘画AI的理解，比如它可能的训练模型、自然语言处理方式等方面，进行翻译优化。由于我的描述可能会很散乱，不连贯，你需要综合考虑这些问题，然后对翻译后的英文内容再次优化或重组，从而使绘画AI更能清楚我在说什么。请严格按照此条规则进行翻译，也只输出翻译后的英文内容。 例如，我输入：一只想家的小狗。
+从现在开始，你是一名中英翻译，你会根据我输入的中文内容，翻译成对应英文。请注意，你翻译后的内容主要服务于一个绘画 AI，它只能理解具象的描述而非抽象的概念，同时根据你对绘画 AI 的理解，比如它可能的训练模型、自然语言处理方式等方面，进行翻译优化。由于我的描述可能会很散乱，不连贯，你需要综合考虑这些问题，然后对翻译后的英文内容再次优化或重组，从而使绘画 AI 更能清楚我在说什么。请严格按照此条规则进行翻译，也只输出翻译后的英文内容。例如，我输入：一只想家的小狗。
 
 你不能输出：
 
-/imagine prompt:
+`/imagine prompt:`
 
-A homesick little dog.
+`A homesick little dog.`
 
 你必须输出：
 
-/imagine prompt:
+`/imagine prompt:`
 
-A small dog that misses home, with a sad look on its face and its tail tucked between its legs. It might be standing in front of a closed door or a gate, gazing longingly into the distance, as if hoping to catch a glimpse of its beloved home.
+`A small dog that misses home, with a sad look on its face and its tail tucked between its legs. It might be standing in front of a closed door or a gate, gazing longingly into the distance, as if hoping to catch a glimpse of its beloved home.`
 
-如果你明白了，请回复"我准备好了"，当我输入中文内容后，请以"/imagine prompt:"作为开头，翻译我需要的英文内容。
+如果你明白了，请回复"我准备好了"，当我输入中文内容后，请以 `/imagine prompt:` 作为开头，翻译我需要的英文内容。
 
-## 插件安利
+## 插件推荐
 
-+   ops：可视化低代码prompt管理工具
++ `ops`：可视化低代码 prompt 管理工具
 
-https://moonvy.com/apps/ops/
+`https://moonvy.com/apps/ops/`
 
-+   [mj提示词工具
-aijiaol](http://aijiaolian.chat/)ian.chat
++ [mj 提示词工具](http://aijiaolian.chat)
 
-+   小绿ai关键词：小程序搜名字；简单输入几个词可以自动帮你扩充成完整的ai绘画关键词，有时候会出现一些意想不到的高质量关键词
++ 小绿 AI 关键词：小程序搜名字；简单输入几个词可以自动帮你扩充成完整的 AI 绘画关键词，有时候会出现一些意想不到的高质量关键词
 
-+   [mj提示词批量生成](https://udify.app/completion/SiKtiPJ9gHUrHUPy)器
-udify.app
++ `mj 提示词批量生成器`
 
-+   ai灵创提词器（小白学习必备）
+`https://udify.app/completion/SiKtiPJ9gHUrHUPy`
 
-[frozenland.cc](https://frozenland.cc/teleprompter.html)
++ `ai 灵创提词器`（小白学习必备）
+
+`frozenland.cc`
 
 非常适合小白。
 
@@ -868,95 +853,94 @@ udify.app
 
 ## 友链
 
-+   [Midjourney 导航](https://rnrjayevh1.feishu.cn/wiki/wikcnriLFvNBkVBp6Nh4vB042pg)
++ [Midjourney 导航](https://rnrjayevh1.feishu.cn/wiki/wikcnriLFvNBkVBp6Nh4vB042pg)
 
-# AI 绘画其他
+## 其他 AI 绘画工具
 
-## WHEE
+### WHEE
 
 美图做的
 
-https://www.whee.com/
+`https://www.whee.com/`
 
-## InstantID
+### InstantID
 
-📕做的妙鸭相机
+📕 做的妙鸭相机
 
-+   介绍：https://mp.weixin.qq.com/s/Etl0HUVRdxwsgcM0ErqHjA
++ 介绍：`https://mp.weixin.qq.com/s/Etl0HUVRdxwsgcM0ErqHjA`
++ Demo 尝鲜：`https://huggingface.co/spaces/InstantX/InstantID`
 
-+   Demo 尝鲜：https://huggingface.co/spaces/InstantX/InstantID
+### 其他
 
-## 其他
++ `Adobe Firefly` Adobe 推出的创意生成式 AI 模型集，网页版目前可申请内测 `https://www.adobe.com/sensei/generative-ai/firefly.html`
++ `NovelAI` 号称最强的二次元生成 AI 工具，非常适合用于漫画创作 `https://novelai.net/`
++ `Canva` 一款支持多平台的在线平面设计工具，包含集成了 AI 功能的系列产品 `https://www.canva.com/ai-image-generator/`
++ `Fotor` 类似于 Canva 的设计平台，支持生成多种设计 `https://www.fotor.com/features/ai-image-generator/`
++ `Leonardo` AI 绘图社区，同时也是一个绘图工具，深度集成了 Stable Diffusion 各种插件 `https://leonardo.ai/`
 
-+   **Adobe Firefly **Adobe 推出的创意生成式AI模型集，网页版目前可申请内测 https://www.adobe.com/sensei/generative-ai/firefly.html
 
-+   **NovelAI **号称最强的二次元生成AI工具，非常适合用于漫画创作 https://novelai.net/
 
-+   **Canva **一款支持多平台的在线平面设计工具，包含集成了AI功能的系列产品 https://www.canva.com/ai-image-generator/
+# AI 绘图
 
-+   **Fotor **类似于 Canva 的设计平台，支持生成多种设计 https://www.fotor.com/features/ai-image-generator/
++ CivitAI 分享和发现AI艺术创作资源的平台，可以浏览和下载其他用户创建的模型 `https://easywithai.com/resources/civitai/`
 
-+   **Leonardo **AI绘图社区，同时也是一个绘图工具，深度集成了 Stable Diffusion 各种插件 https://leonardo.ai/
++ DreamUp DeviantArt 推出的AI插图生成工具，可以根据输入的 `Prompt` 生成图片 `https://www.deviantart.com/dreamup`
 
-+   **CivitAI **分享和发现AI艺术创作资源的平台，可以浏览和下载其他用户创建的模型 https://easywithai.com/resources/civitai/
++ Lexica 提供了一个基于 Stable Diffusion 的AI图像的搜索引擎，也可以根据用户输入的 `Prompt` 生成逼真的图像 `https://lexica.art/aperture`
 
-+   **DreamUp **DeviantArt 推出的AI插图生成工具，可以根据输入的 Prompt 生成图片 https://www.deviantart.com/dreamup
++ 文心一格 依托百度飞桨、文心大模型的AI艺术与创意辅助平台 `https://yige.baidu.com/`
 
-+   **Lexica **提供了一个基于 Stable Diffusion 的AI图像的搜索引擎，也可以根据用户输入的 Prompt 生成逼真的图像 https://lexica.art/aperture
++ 云景 国内开发者发布的AI绘图网站，后台集成22个模型和多个国风 `Lora`，可以自由选择切换 `https://yunjing.gallery/`
 
-+   **文心一格 **依托百度飞桨、文心大模型的AI艺术与创意辅助平台 https://yige.baidu.com/
++ 即时 AI 创意画廊 即时设计众多AI产品种的一款，并支持更多设计场景的应用 `https://js.design/AI-gallery`
 
-+   **云景 **国内开发者发布的AI绘图网站，后台集成22个模型和多个国风Lora，可以自由选择切换 https://yunjing.gallery/
++ 爱作画 AIGC 开放平台，支持选择 Stable Diffusion、NovelAI、MidJourney、百度的模型 `https://aizuohua.com/#/aicz`
 
-+   **即时 AI 创意画廊 **即时设计众多AI产品种的一款，并支持更多设计场景的应用 https://js.design/AI-gallery
++ 皮卡智能 AI艺术生成器是皮卡智能的功能之一，可以根据提示词生成图像 `https://www.picup.shop/text2image.html#/`
 
-+   **爱作画 **AIGC 开放平台，支持选择 Stable Diffusion、NovelAI、MidJourney、百度的模型https://aizuohua.com/#/aicz
++ 6pen Art 国内团队出品的AI绘图网站，支持中文，支持多种不同的绘画风格，并支持图像尺寸、参考图、随机种子等核心参数设置 `https://6pen.art`
 
-+   **皮卡智能 **AI艺术生成器是皮卡智能的功能之一，可以根据提示词生成图像https://www.picup.shop/text2image.html#/
++ PAI 国内的文生图应用，基础功能可以根据 `Prompt` 生成创意图片，高级功能包含更多参数选项 `https://artpai.xyz/#/`
 
-+   **6pen Art **国内团队出品的AI绘图网站，支持中文，支持多种不同的绘画风格，并支持图像尺寸、参考图、随机种子等核心参数设置 https://6pen.art
++ Draft 国产AI绘画应用，可以根据输入的 `Prompt` 生成图像，高级出图设置包括选择 `Lora` 模型、确认采样器和采样步数等选项 `https://draft.art`
 
-+   **PAI **国内的文生图应用，基础功能可以根据 Prompt 生成创意图片，高级功能包含更多参数选项 https://artpai.xyz/#/
++ 意间AI绘画 目前支持App和小程序，可以根据输入的提示词生成图片，还可以根据上传的图片生成魔法头像，或一键转为二次元风格图片
 
-+   **Draft **国产AI绘画应用，可以根据输入的 Prompt 生成图像，高级出图设置包括选择 Lora 模型、确认采样器和采样步数等选项 https://draft.art
++ 造梦日记 🛰️小程序，操作便捷，五到十秒出图
 
-+   **意间AI绘画 **目前支持App和小程序，可以根据输入的提示词生成图片，还可以根据上传的图片生成魔法头像，或一键转为二次元风格图片
-
-+   **造梦日记 **🛰️小程序，操作便捷，五到十秒出图
-
-+   **SparkAI花火**：Spark-火花AI集成了AI聊天和Midjourney，还有Stable Diffusion、 DALL-E， 国内就可以使用，移动端也兼容 https://www.huohuaai.com/
++ SparkAI花火：Spark-火花AI 集成了AI聊天和 Midjourney，还有 Stable Diffusion、DALL-E，国内就可以使用，移动端也兼容 `https://www.huohuaai.com/`
 
 # AI 设计
 
 ## UIUX/产品图
 
-即时AI: https://js.design/ai
+即时AI: `https://js.design/ai`
 
 ---
 
 pebblely：给你的产品加上背景图
 
-https://pebblely.com/
+`https://pebblely.com/`
 
 ---
 
-https://flair.ai/
+`https://flair.ai/`
 
 产品商品图
 
 ---
 
-https://xiangji.ai/
+`https://xiangji.ai/`
 
 产品商品图
 
 ---
 
-https://www.weshop.com/
+`https://www.weshop.com/`
 
 产品商品图
 
-WeShop 是一款AI商拍工具，由时尚电商平台蘑菇街在今年4月孵化推出，基于 S**t**able Diffusion 技术为商家提供商品实拍图场景及模特替换解决方案。使用 WeShop，商家不再受限于模特、经纪、摄影、后期处理等方面的限制，甚至不再需要真人模特，也不再受拍摄地点和模特类型的限制。
+WeShop 是一款AI商拍工具，由时尚电商平台蘑菇街在今年4月孵化推出，基于 Stable Diffusion 技术为商家提供商品实拍图场景及模特替换解决方案。使用 WeShop，商家不再受限于模特、经纪、摄影、后期处理等方面的限制，甚至不再需要真人模特，也不再受拍摄地点和模特类型的限制。
 
 ---
 
@@ -964,7 +948,7 @@ vizcom，ai可以把手绘图转成产品设计图。
 
 ---
 
-https://www.gaoding.com/ai/design
+`https://www.gaoding.com/ai/design`
 
 稿定AI
 
@@ -972,11 +956,11 @@ https://www.gaoding.com/ai/design
 
 灵动AI
 
-https://www.redoon.cn
+`https://www.redoon.cn`
 
-灵**动AI最近发布了首款可商**用的AIGC产品「灵动AI商品图」，并与京东智能新品孵化平台合作，为商家和产业带客户提供 AIGC「营销+设计」服务。
+灵动AI最近发布了首款可商用的AIGC产品「灵动AI商品图」，并与京东智能新品孵化平台合作，为商家和产业带客户提供 AIGC「营销+设计」服务。
 
-该**工具包括了多个自研的特定风格场景的 LoRA 模型，多个1亿级参数的专用AI**模型以及专业的智能审美评价系统。在精准的算法控制下，主体商品与生成场景在构图、色彩、光影、氛围等方面完美融合，展现出独特的视觉特征和美学调性，为B端用户和设计师创作高质量商品场景图提供助力
+该工具包括了多个自研的特定风格场景的 `LoRA` 模型，多个1亿级参数的专用AI模型以及专业的智能审美评价系统。在精准的算法控制下，主体商品与生成场景在构图、色彩、光影、氛围等方面完美融合，展现出独特的视觉特征和美学调性，为B端用户和设计师创作高质量商品场景图提供助力
 
 ---
 
@@ -1000,7 +984,7 @@ logomaster，ai帮你设计logo。
 
 ideogram
 
-> https://ideogram.ai/login
+> `https://ideogram.ai/login`
 
 帮助生成带有文字的海报
 
@@ -1014,26 +998,26 @@ Create a mood board that encapsulates the visual identity of (specific brand or 
 
 ---
 
-1.  AI配色
+## AI配色
 
-https://aicolors.co/
+1. `https://aicolors.co/`
 
 # AI 视频
 
 ## AI视频科普
 
-多维表格（Ewh2bKte8aO6KCswKRRcV5iMndd_tbl6rx7UUuEjj9R0）
+多维表格（`Ewh2bKte8aO6KCswKRRcV5iMndd_tbl6rx7UUuEjj9R0`）
 
 这个视频基本上把AI生成视频不同的技术路线，和现在的发展趋势、发展史都科普的非常清楚，强烈推荐。
 
 ## AI视频
 
-+   runway：付费
++ runway：付费
 
-+   pika：付费
++ pika：付费
 
-+   https://app.pixverse.ai/：免费
++ `https://app.pixverse.ai/`：免费
 
-+   剪映：https://dreamina.jianying.com/ai-tool/home
++ 剪映：`https://dreamina.jianying.com/ai-tool/home`
 
 # AI 3D生成

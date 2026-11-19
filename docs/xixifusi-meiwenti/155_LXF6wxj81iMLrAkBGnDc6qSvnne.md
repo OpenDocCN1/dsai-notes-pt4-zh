@@ -1,26 +1,27 @@
+
 # Advice for all students
 
 > 来源：[https://docs.feishu.cn/docx/Xkz6d0L6EoNqwpxscfVcivGGnMc](https://docs.feishu.cn/docx/Xkz6d0L6EoNqwpxscfVcivGGnMc)
 
-# 1 Scheduling a meeting by email
+## 1 Scheduling a meeting by email
 
 > https://homes.cs.washington.edu/~mernst/advice/schedule-meeting.html
 
-## Scheduling a meeting by email 通过电子邮件安排会议
+### Scheduling a meeting by email 通过电子邮件安排会议
 
 When proposing a meeting, give your availability and preferences. If you don't, you will just require an extra round of email to schedule the meeting.
 
 提议会面时，请提供您的空闲时间和偏好。如果你不这样做，你只需要额外的一轮电子邮件来安排会议。
 
-You m[ight show you](https://types.cs.washington.edu/plume-lib/api/plume/ICalAvailable.html)r availability by publishing your calendar (say, your Google Calendar if you use that). Otherwise, you will need to write a little program to collect your availability from your calendar (I use ICalAvailable), or type in your availability.
+You might [show your availability](https://types.cs.washington.edu/plume-lib/api/plume/ICalAvailable.html) by publishing your calendar (say, your Google Calendar if you use that). Otherwise, you will need to write a little program to collect your availability from your calendar (I use `ICalAvailable`), or type in your availability.
 
-您可以通过发布日历（例如，如果您使用 Google 日历）来显示您的空闲时间。否则，您将需要编写一个小程序来从您的日历中收集您的可用性（我使用 ICalAvailable），或输入您的可用性。
+您可以通过发布日历（例如，如果您使用 Google 日历）来显示您的空闲时间。否则，您将需要编写一个小程序来从您的日历中收集您的可用性（我使用 `ICalAvailable`），或输入您的可用性。
 
 Never issue a “schedule ultimatum”, which is when you offer exactly one time. Even if a slot seems to be available on someone else's calendar, it may be inconvenient for them. If it does not abut other appointments, it might unnecessarily break up their schedule by creating too many small slots that are not useful for either meetings or getting work done. It might be the subject of negotiations with someone else for a meeting. If you issue a schedule ultimatum, it sends a (hopefully unintentional) message that your convenience is more important than anyone else's and that you are not willing to meet except at that one time.
 
 永远不要发出“时间表最后通牒”，即你只提供一次。即使其他人的日历上似乎有空位，也可能给他们带来不便。如果它不与其他约会相邻，它可能会通过创建太多对会议或完成工作没有用处的小时段来不必要地打乱他们的日程安排。它可能是与其他人进行会议谈判的主题。如果你发出时间表最后通牒，它会发出一个（希望是无意的）信息，即你的便利比任何人都重要，除非在那一次，否则你不愿意见面。
 
-## Scheduling a group meeting using a scheduling tool such as Doodle or When2Meet 使用 Doodle 或 When2Meet 等日程安排工具安排小组会议
+### Scheduling a group meeting using a scheduling tool such as `Doodle` or `When2Meet` 使用 `Doodle` 或 `When2Meet` 等日程安排工具安排小组会议
 
 If everyone's calendar is in the same calendar tool (say, Google Calendar or Outlook), you can probably determine free times without using a scheduling tool.
 
@@ -30,13 +31,13 @@ Even if your meeting will be 1 hour long, make the survey offer 30-minute slots.
 
 即使您的会议将持续 1 小时，也要让调查提供 30 分钟的时间段。这样，您就可以将会议设置在（例如）1：00 到 2：00 或 1：30 到 2：30 之间。不要每 30 分钟进行一次 1 小时的调查;这使得调查变得杂乱无章，填写起来令人困惑。
 
-Always use a tool that offers three choices: Yes, No, or If-Need-Be. This gives more opportunities for scheduling, and it avoids penalizing people who would generously say “Yes” to a slot that actually requires some effort on their part to reschedule.
+Always use a tool that offers three choices: `Yes`, `No`, or `If-Need-Be`. This gives more opportunities for scheduling, and it avoids penalizing people who would generously say “`Yes`” to a slot that actually requires some effort on their part to reschedule.
 
-始终使用提供三种选择的工具：是、否或 If-need-Be。这为日程安排提供了更多机会，并且避免了惩罚那些慷慨地对实际上需要他们付出一些努力才能重新安排的时段说“是”的人。
+始终使用提供三种选择的工具：`是`、`否`或 `If-Need-Be`。这为日程安排提供了更多机会，并且避免了惩罚那些慷慨地对实际上需要他们付出一些努力才能重新安排的时段说“`是`”的人。
 
-# 2 Requesting a letter of recommendation
+## 2 Requesting a letter of recommendation
 
-https://homes.cs.washington.edu/~mernst/advice/request-recommendation.html
+`https://homes.cs.washington.edu/~mernst/advice/request-recommendation.html`
 
 Choose carefully. The ideal letter-writer is knowledgeable about you, about the place you are applying to, and about the norms of letter-writing. Knowledge of you permits the letter to include specific examples and anecdotes, which are much more powerful than generic bromides or undifferentiated praise. Knowledge of the place you are applying permits the letter to specifically play up your strengths and qualifications. Knowledge of the norms of letter writing prevents the letter from being ignored because it is completely inappropriate. A good letter-writer also should not have a conflict of interest (such as being the advisor of another applicant). You should only request letters from people who will write you a good letter; you probably know whether this is the case but may want to double-check. Many applications request 3 letters. Including 4 strengthens your application; however, it's better to have 3 very strong letters than to have 4 letters, only 3 of which are very strong. Don't omit obvious people such as past supervisors and advisors from your list; these glaring omissions will lead those evaluating your recommendation to the conclusion that things did not work out and that person would have written a negative recommendation. Do try to include people with multiple backgrounds or who have seen you in multiple lights (corporate and academic supervisors, and teachers), but remember that people most similar to the letter readers will be able to write most persuasively — they understand, and can speak to, the needs of the job. For a corporate job, your industrial bosses will provide the most compelling recommendations. For an academic or research job, focus on academics and researchers (in your research area) as references. For example, suppose that you are applying to graduate school in computer science, and you have done programming for a biology lab on campus. A biology professor does not know what it takes to succeed in a computer science graduate program, and does not have wide experience with many computer scientists. Such a letter won't carry much weight, unfortunately.
 
@@ -46,70 +47,99 @@ Choose carefully. The ideal letter-writer is knowledgeable about you, about the 
 
 提供完整信息。
 
-+   Write a brief description of the position or honor (and possibly provide a URL or a pamphlet), so that the letter-writer can provide the correct variety of detail. If you have not been in recent contact with the letter writer, you should provide an update on what you have been up to recently. (Actually, in that case you should consider getting letters from others who know you better.)
-写一份关于职位或荣誉的简短描述（并可能提供一个URL或一本小册子），以便写信人可以提供正确的各种细节。如果您最近没有与写信人联系，您应该提供有关您最近的最新情况。（实际上，在这种情况下，您应该考虑从更了解您的人那里获得信件。
++ Write a brief description of the position or honor (and possibly provide a `URL` or a pamphlet), so that the letter-writer can provide the correct variety of detail. If you have not been in recent contact with the letter writer, you should provide an update on what you have been up to recently. (Actually, in that case you should consider getting letters from others who know you better.)
 
-+   Provide a filled-out form, a pre-addressed, stamped envelope, and any other necessary materials: don't impose on the letter-writer to get that minutia correct. (With electronic applications, this point is less relevant.)
+写一份关于职位或荣誉的简短描述（并可能提供一个 `URL` 或一本小册子），以便写信人可以提供正确的各种细节。如果您最近没有与写信人联系，您应该提供有关您最近的最新情况。（实际上，在这种情况下，您应该考虑从更了解您的人那里获得信件。
+
++ Provide a filled-out form, a pre-addressed, stamped envelope, and any other necessary materials: don't impose on the letter-writer to get that minutia correct. (With electronic applications, this point is less relevant.)
+
 提供填写好的表格、预先写好地址、已盖章的信封和任何其他必要的材料：不要强加给写信人以纠正这些细节。（对于电子应用程序，这一点不太相关。
 
-+   Provide your resume or c.v. Provide your personal statement, if one is required for the application. (Obviously, you should never send Word (.doc) files, which can be a hassle to print and which tend to format differently using different software. PDF is much better.)
-提供您的简历或简历如果申请需要，请提供您的个人陈述。（显然，您永远不应该发送 Word （.doc） 文件，打印起来可能很麻烦，并且使用不同的软件往往会有不同的格式。PDF要好得多。
++ Provide your resume or `c.v.`. Provide your personal statement, if one is required for the application. (Obviously, you should never send `Word` (`.doc`) files, which can be a hassle to print and which tend to format differently using different software. `PDF` is much better.)
 
-+   Tell your references all the places you are applying, so they can calibrate their letters. For instance, when writing letters for multiple people to the same place, they can put both in the best light. Don't blindside them with requests for additional letters later on. Another reason to provide a full list of all programs to which you are applying (and their addresses, etc.) is that it lessens the letter-writer's logistical burden: it's easier to send out lots of letters at once rather than in small batches.
+提供您的简历或 `c.v.` 如果申请需要，请提供您的个人陈述。（显然，您永远不应该发送 `Word` (`.doc`) 文件，打印起来可能很麻烦，并且使用不同的软件往往会有不同的格式。`PDF` 要好得多。
+
++ Tell your references all the places you are applying, so they can calibrate their letters. For instance, when writing letters for multiple people to the same place, they can put both in the best light. Don't blindside them with requests for additional letters later on. Another reason to provide a full list of all programs to which you are applying (and their addresses, etc.) is that it lessens the letter-writer's logistical burden: it's easier to send out lots of letters at once rather than in small batches.
+
 告诉你的推荐人你申请的所有地方，这样他们就可以校准他们的字母。例如，当为多个人写信到同一个地方时，他们可以将两者都放在最好的位置。不要在以后要求额外的信件来蒙蔽他们。提供您申请的所有项目（及其地址等）的完整列表的另一个原因是，它减轻了写信人的后勤负担：一次发送大量信件比小批量发送更容易。
 
-+   Remind your references of any specific details that might be helpful or that are more appropriate for a letter of recommendation than for your personal statement. For instance, I had once drafted a (positive) letter for someone who reminded me that I had nominated him for a special pay raise; I was able to include that detail in the final letter, which buttressed my case that he was a top performer. (It's easy to say in a letter that someone is a top performer, but specific details may convince the reader that it is actually true.)
++ Remind your references of any specific details that might be helpful or that are more appropriate for a letter of recommendation than for your personal statement. For instance, I had once drafted a (positive) letter for someone who reminded me that I had nominated him for a special pay raise; I was able to include that detail in the final letter, which buttressed my case that he was a top performer. (It's easy to say in a letter that someone is a top performer, but specific details may convince the reader that it is actually true.)
+
+
+
+# 如何获取推荐信
+
 提醒您的推荐人任何可能有帮助或更适合推荐信而不是您的个人陈述的具体细节。例如，我曾经为某人起草了一封（正面）信，他提醒我，我已经提名他特别加薪;我能够在最后一封信中包含这个细节，这支持了我的观点，即他是一个表现最好的人。（在一封信中说某人是表现最好的人很容易，但具体的细节可能会让读者相信这实际上是真的。
 
-+   Some people will ask you to write the letter for them, and they will (possibly) modify and sign it. You should do so if requested, but this is not such a good idea in general. First, it indicates that the letter writer is not enthusiastic enough about your application to write his or her own letter. Second, you may not know the hidden language of letters of reference, so you may inadvertently err by commission or omission. Third, the letter won't sound like the person's other letters. Fourth, the letter won't add much to your own statement, and this homogeneity will make your application less compelling: it's better for the evaluators to have multiple perspectives on your personality and accomplishments.
++ Some people will ask you to write the letter for them, and they will (possibly) modify and sign it. You should do so if requested, but this is not such a good idea in general. First, it indicates that the letter writer is not enthusiastic enough about your application to write his or her own letter. Second, you may not know the hidden language of letters of reference, so you may inadvertently err by commission or omission. Third, the letter won't sound like the person's other letters. Fourth, the letter won't add much to your own statement, and this homogeneity will make your application less compelling: it's better for the evaluators to have multiple perspectives on your personality and accomplishments.
+
 有些人会要求你为他们写这封信，他们会（可能）修改并签名。如果需要，您应该这样做，但这通常不是一个好主意。首先，这表明写信人对你的申请不够热情，无法写他或她自己的信。其次，你可能不知道推荐信的隐藏语言，所以你可能会无意中犯错。第三，这封信听起来不像这个人的其他信件。第四，这封信不会对你自己的陈述增加太多，这种同质性会让你的申请不那么引人注目：评估者最好对你的个性和成就有多种看法。
 
-Don't read the letter. You may be asked on an applicati**on whe**ther you waive your right to view the letters of recommendation. You should always agree to waive that right. There are two reasons. First, if you don't waive the right, then whoever is reading the letter will assume that the letter isn't being totally honest. (The letter-writer knows you can read the letter and thus might make it more positive or less complete.) Second, many writers by policy do not write letters unless that clause is waived. (I know of some people who never write recommendation letters to some universities because those universities do not guarantee confidentiality of recommendation letters.) Don't be paranoid about not seeing the letter: it is completely standard. An ethical letter-writer would warn you before writing a negative recommendation, but then again, you should only be asking people with a good impression of you.
+## Don't read the letter.
+
+Don't read the letter. You may be asked on an application whether you waive your right to view the letters of recommendation. You should always agree to waive that right. There are two reasons. First, if you don't waive the right, then whoever is reading the letter will assume that the letter isn't being totally honest. (The letter-writer knows you can read the letter and thus might make it more positive or less complete.) Second, many writers by policy do not write letters unless that clause is waived. (I know of some people who never write recommendation letters to some universities because those universities do not guarantee confidentiality of recommendation letters.) Don't be paranoid about not seeing the letter: it is completely standard. An ethical letter-writer would warn you before writing a negative recommendation, but then again, you should only be asking people with a good impression of you.
 
 不要读这封信。您可能会在申请中被问及您是否放弃查看推荐信的权利。您应始终同意放弃该权利。有两个原因。首先，如果你不放弃这个权利，那么无论谁在读这封信，都会认为这封信并不完全诚实。（写信人知道你可以阅读这封信，因此可能会使它更积极或更不完整。其次，根据政策，许多作家不会写信，除非该条款被放弃。（我知道有些人从不给某些大学写推荐信，因为这些大学不保证推荐信的机密性。不要因为没有看到这封信而偏执：这是完全标准的。一个有道德的写信人会在写负面推荐之前警告你，但话又说回来，你应该只问那些对你有好印象的人。
 
-**Follow up. 跟进。**
+## Follow up. 跟进。
 
-+   Letters sometimes get lost, and people sometimes forget to write them. You should double-check that the letter has arrived, and if not, ask the writer to send another copy.
++ Letters sometimes get lost, and people sometimes forget to write them. You should double-check that the letter has arrived, and if not, ask the writer to send another copy.
+
 信件有时会丢失，人们有时会忘记写它们。您应该仔细检查这封信是否已到达，如果没有，请作者发送另一份副本。
 
-+   After you have completed your application/interview/etc., tell your letter-writers the outcome. The letter-writers care about you and want to know whether their letter was effective. Furthermore, letter-writers will often lobby directly on your behalf, but the letter-writer will look silly if he/she isn't aware that this is moot because you already either got an interview or got rejected.
++ After you have completed your application/interview/etc., tell your letter-writers the outcome. The letter-writers care about you and want to know whether their letter was effective. Furthermore, letter-writers will often lobby directly on your behalf, but the letter-writer will look silly if he/she isn't aware that this is moot because you already either got an interview or got rejected.
+
 完成申请/面试等后，告诉您的写信人结果。写信人关心你，想知道他们的信是否有效。此外，写信人通常会直接代表你进行游说，但如果他/她不知道这没有意义，因为你已经接受了面试或被拒绝，写信人会看起来很傻。
 
-+   Don't give gifts. It is not appropriate. The letter-writer is just doing his/her job.
++ Don't give gifts. It is not appropriate. The letter-writer is just doing his/her job.
+
 不要送礼物。这是不合适的。写信人只是在做他/她的工作。
 
 # 3 How to write a letter of recommendation
 
-https://homes.cs.washington.edu/~mernst/advice/write-recommendation.html
+`https://homes.cs.washington.edu/~mernst/advice/write-recommendation.html`
 
 At the beginning of the letter, say how well you know the person, for how long, and how you became acquainted. Also give an overview or summary of your recommendation.
 
 在信的开头，说你认识这个人有多好，认识了多长时间，以及你是如何认识的。还要概述或总结您的建议。
 
+## Be specific.
+
 Be specific. Don't just praise the person with generalities (such as “quick learner”), but give specific stories or anecdotes about things the person did to give you that impression. A letter that praises a person without being concrete comes across as a tepid recommendation. Rankings in class are another example of a helpful specific.
 
 要具体。不要只是笼统地表扬这个人（例如“快速学习者”），而是要给出关于这个人所做的事情的具体故事或轶事，以给你留下这种印象。一封赞美一个人而不具体的信给人的印象是一个不温不火的建议。班级排名是另一个有用的特定例子。
+
+## Differentiate.
 
 Differentiate. Say how this person is unlike other people: his or her specific strengths.
 
 区分。说出这个人与其他人的不同之处：他或她的具体优势。
 
+## Compare.
+
 Compare. When writing to someone who shares context with you, name names. (“In the top 5% of the class” is OK, but much better is “Equivalent in promise to my former students Donny Knuth and Al Turing, but a notch below Johnny von Neumann.”)
 
 比较。写信给与您共享上下文的人时，请说出姓名。（“在班级中排名前 5%”是可以的，但更好的是“与我以前的学生 Donny Knuth 和 Al Turing 相当，但比 Johnny von Neumann 低一个档次。
+
+## Be plausible.
 
 Be plausible. Don't make the person out to be perfect. Often a letter just ignores shortcomings, but then the letter lacks credibility; writing such letters will hurt people you recommend in the future. If the person has shortcomings, admit them or note some ways the person can improve, particularly if the person has started to overcome those problems. Don't make up faults nor magnify real ones.
 
 要有道理。不要让这个人变得完美。通常，一封信只是忽略了缺点，但随后这封信缺乏可信度;写这样的信会伤害你将来推荐的人。如果这个人有缺点，承认它们或注意这个人可以改进的一些方法，特别是如果这个人已经开始克服这些问题。不要编造错误，也不要放大真实的错误。
 
+## State your own qualifications.
+
 State your own qualifications. How many other people have you seen who are of the caliber expected by the reader? (For a recommedation to a top-10 school such as UW, the recommendation will carry more weight if the recommender has spent time at a top-10 school. Only someone with first-hand experience can give a truly accurate assessment.) These qualifications are probably best-suited to a postscript, though sometimes they are written as the first paragraph to establish credibility.
 
 说明您自己的资格。你见过多少人是读者所期望的？（对于像威斯康星大学这样排名前 10 的学校，如果推荐人曾在排名前 10 的学校学习过，则推荐将具有更大的权重。只有有第一手经验的人才能给出真正准确的评估。这些限定可能最适合后记，尽管有时它们被写成第一段以建立可信度。
 
+## Justify your recommendations.
+
 Justify your recommendations. Don't write a statement like "The applicant is definitely qualified for your institution/award/program" (especially with "your institution" verbatim as in a form letter, not substituted by an actual name). This weakens rather than strengthens the letter, because the reader will assume that the form letter was sent to many places, and the statement cannot be true of every recipient.
 
 证明您的建议是合理的。不要写“申请人绝对有资格参加您的机构/奖项/计划”之类的声明（尤其是在格式信函中逐字逐句地使用“您的机构”，而不是用实际姓名代替）。这削弱了这封信，而不是加强了这封信，因为读者会认为这封信被寄到了许多地方，而这句话不可能对每个收件人都是真实的。
+
+## Don't be too brief.
 
 Don't be too brief. One paragraph, or two short paragraphs, is the kiss of death. (If you don't know the student well, and don't have much to say, add a short paragraph explaining what the course is and why it's good that the student excelled in it. This won't fool most people, but will soften the blow of a short letter.) However, don't ramble: make it succinct and to the point. Whoever reads your letter is probably reading hundreds of other letters. If the key points of yours do not pop out, or the reader wearies midway through your letter, then your letter will net be effective.
 
@@ -121,48 +151,56 @@ For situations where the letter has a disproportionate impact (e.g., for faculty
 
 If you are requested to provide a letter in PDF, provide the original PDF that was created by your word processor or typesetting program. Don't scan the document, which degrades the visual quality and makes it much harder to read. No one really cares whether your original signature is on the letter, so you can insert a scanned signature into the PDF or even use a typewritten signature. You don't want eyestrain (or anything else) to lessen the impact of your letter. For similar reasons, don't use "watermark" letterhead that puts a large, dim image (for example, of your university crest or logo) behind your text. You may think this looks cool and sets your letter or institution apart, but in fact it makes your letter harder to read without impressing anyone.
 
+
+
 如果您被要求提供 PDF 格式的信件，请提供由您的文字处理器或排版程序创建的原始 PDF。不要扫描文档，这会降低视觉质量并使其更难阅读。没有人真正关心您的原始签名是否在信上，因此您可以在 PDF 中插入扫描的签名，甚至使用打字签名。你不希望眼睛疲劳（或其他任何东西）来减少你的信的影响。出于类似的原因，不要使用“水印”信笺抬头，在文本后面放置一个大而暗的图像（例如，你的大学徽章或标志）。你可能认为这看起来很酷，让你的信或机构与众不同，但实际上它使你的信更难阅读，而不会给任何人留下深刻印象。
 
-## Mayfield Handbook: Writing Letters of Recommendation 梅菲尔德手册：撰写推荐信
+# Mayfield Handbook: Writing Letters of Recommendation 梅菲尔德手册：撰写推荐信
 
-(The Mayfield Handbook is compilation of suggestions and style tips useful for all types of writing. The following is from its “Writing Letters of Recommendation” section.)
-
-（《梅菲尔德手册》汇编了对所有类型的写作有用的建议和风格技巧。以下内容来自其“撰写推荐信”部分。
+> The Mayfield Handbook is compilation of suggestions and style tips useful for all types of writing. The following is from its “Writing Letters of Recommendation” section.
+>
+> 《梅菲尔德手册》汇编了对所有类型的写作有用的建议和风格技巧。以下内容来自其“撰写推荐信”部分。
 
 Write letters of recommendation to provide relevant information and to present an individual truthfully and positively.
 
 写推荐信以提供相关信息并真实积极地介绍个人。
 
-#### Guidelines for Writing Letters of Recommendation 推荐信撰写指南
+## Guidelines for Writing Letters of Recommendation 推荐信撰写指南
 
-Before writing the letter:
+### Before writing the letter 在写这封信之前：
 
-在写这封信之前：
+- In most cases, agree to write a letter of recommendation only if you can honestly write a supportive letter. If you cannot portray an individual positively, decline to write the recommendation.
 
-+   In most cases, agree to write a letter of recommendation only if you can honestly write a supportive letter. If you cannot portray an individual positively, decline to write the recommendation.
 在大多数情况下，只有在你能诚实地写一封支持信的情况下，才同意写一封推荐信。如果您不能正面描绘一个人，请拒绝写推荐信。
 
-+   Ask for a current resume and as complete a description as possible of the position or program to which the person is applying.
+- Ask for a current resume and as complete a description as possible of the position or program to which the person is applying.
+
 要求提供最新的简历，并尽可能完整地描述该人申请的职位或计划。
 
-+   Assemble and review all other relevant information you may have about the person you are recommending. It is often easy to overlook some important accomplishment.
+- Assemble and review all other relevant information you may have about the person you are recommending. It is often easy to overlook some important accomplishment.
+
 收集并审查您可能拥有的有关您推荐的人的所有其他相关信息。人们往往很容易忽视一些重要的成就。
 
-Writing the letter:  写这封信：
+### Writing the letter 写这封信：
 
-+   Present the person truthfully but positively. A recommendation that paints an unrealistic picture of a candidate may be discounted. A recommendation that focuses on negative qualities may do more harm than intended.
+- Present the person truthfully but positively. A recommendation that paints an unrealistic picture of a candidate may be discounted. A recommendation that focuses on negative qualities may do more harm than intended.
+
 真实但积极地呈现这个人。描绘候选人不切实际形象的建议可能会被打折扣。专注于负面品质的建议可能比预期的危害更大。
 
-+   Tailor the recommendation to the position. A letter recommending an individual for a job as a camp counselor should contain different information from that in a letter recommending the same individual for a job as a computer programmer.
+- Tailor the recommendation to the position. A letter recommending an individual for a job as a camp counselor should contain different information from that in a letter recommending the same individual for a job as a computer programmer.
+
 根据职位定制推荐。推荐某人担任营地辅导员的信函应包含与推荐同一人担任计算机程序员的信函中的信息不同的信息。
 
-+   Begin the letter by describing how you know the individual you are recommending and the specific contexts upon which you are basing your evaluation. In what situations have you known the individual? For how long? How closely?
+- Begin the letter by describing how you know the individual you are recommending and the specific contexts upon which you are basing your evaluation. In what situations have you known the individual? For how long? How closely?
+
 在这封信的开头，描述你是如何认识你所推荐的人的，以及你评估所依据的具体背景。你在什么情况下认识这个人？持续多长时间？有多近？
 
-+   Present the individual's general qualities relevant to the position along with one or two detailed examples. Including vivid detail will make the recommendation much more effective.
+- Present the individual's general qualities relevant to the position along with one or two detailed examples. Including vivid detail will make the recommendation much more effective.
+
 介绍个人与该职位相关的一般素质以及一两个详细示例。包括生动的细节将使建议更加有效。
 
-+   In most cases, a letter of recommendation should consist of three or four paragraphs and not be over one page in length.
+- In most cases, a letter of recommendation should consist of three or four paragraphs and not be over one page in length.
+
 在大多数情况下，推荐信应由三到四段组成，长度不得超过一页。
 
 ## A bad recommendation letter 一封糟糕的推荐信
@@ -173,57 +211,29 @@ Here is a real example of a letter of recommendation that I received for a PhD a
 
 Dear Prof. Ernst: 尊敬的恩斯特教授：
 
-It is my pleasure to write this letter and recommend [omitted], one of my
+It is my pleasure to write this letter and recommend `[omitted]`, one of my favorite students, for the admission to the Co-PhD Study Program at your laboratory.
 
-favorite students, for the admission to the Co-PhD Study Program at your
+我很高兴写这封信，并推荐我最喜欢的学生之一`[omitted]`进入你们实验室的双博士学习计划。
 
-laboratory.
+`[omitted]` is an enthusiastic and progressive young man with extremely high potentialities. He is not only quick at learning and good at solving complicated problems, but also with a logical and creative mind that enables him to raise some insightful views. I was also deeply impressed with his diligence and outstanding communication ability, compared with my other students. What's more, he is an optimistic man with pleasant personality, and gets along well with all the people around him. I hope he could further broaden his vision and accumulate research and programming experience to get him more fruitful.
 
-我很高兴写这封信，并推荐我最喜欢的学生之一[省略]进入你们实验室的双博士学习计划。
+`[省略]`是一个充满热情和进步的年轻人，具有极高的潜力。他不仅学得快，善于解决复杂问题，而且具有逻辑性和创造性的思维，使他能够提出一些有见地的观点。与其他学生相比，他的勤奋和出色的沟通能力也给我留下了深刻的印象。更重要的是，他是一个乐观的人，性格开朗，与周围的人相处融洽。我希望他能进一步开阔视野，积累研究和编程经验，让他更有成效。
 
-[omitted] is an enthusiastic and progressive young man with extremely high
-
-potentialities. He is not only quick at learning and good at solving
-
-complicated problems, but also with a logical and creative mind that
-
-enables him to raise some insightful views. I was also deeply impressed
-
-with his diligence and outstanding communication ability, compared with my
-
-other students. What's more, he is an optimistic man with pleasant
-
-personality, and gets along well with all the people around him. I hope he
-
-could further broaden his vision and accumulate research and programming
-
-experience to get him more fruitful.
-
-[省略]是一个充满热情和进步的年轻人，具有极高的潜力。他不仅学得快，善于解决复杂问题，而且具有逻辑性和创造性的思维，使他能够提出一些有见地的观点。与其他学生相比，他的勤奋和出色的沟通能力也给我留下了深刻的印象。更重要的是，他是一个乐观的人，性格开朗，与周围的人相处融洽。我希望他能进一步开阔视野，积累研究和编程经验，让他更有成效。
-
-I believe in your laboratory, which possesses a wonderful research
-
-foundation for program analysis and software security, his excellent
-
-competence, coupled with your preeminent guidance, will assure him of
-
-academic achievements in his future academic pursuits.
+I believe in your laboratory, which possesses a wonderful research foundation for program analysis and software security, his excellent competence, coupled with your preeminent guidance, will assure him of academic achievements in his future academic pursuits.
 
 我相信你们的实验室在程序分析和软件安全方面拥有良好的研究基础，他出色的能力，加上您卓越的指导，将确保他在未来的学术追求中取得学术成就。
 
-Thanks for your letter, if you have any other questions, please contact me
-
-freely.
+Thanks for your letter, if you have any other questions, please contact me freely.
 
 感谢您的来信，如果您有任何其他问题，请随时与我联系。
 
-[Signature]
+`[Signature]`
 
-[签名]
+`[签名]`
 
 # 4 Writing a progress/status report
 
-> https://homes.cs.washington.edu/~mernst/advice/progress-report.html
+> `https://homes.cs.washington.edu/~mernst/advice/progress-report.html`
 
 Writing a weekly report about your research progress can make your research more successful, less frustrating, and more visible to others, among other benefits.
 
@@ -233,16 +243,20 @@ One good format is to write your report in four parts:
 
 一个好的格式是将报告分为四个部分：
 
-1.  Quote the **previous** week's plan. This helps you determine whether you accomplished your goals.
+1. Quote the **previous** week's plan. This helps you determine whether you accomplished your goals.
+
 引用前一周的计划。这有助于您确定是否实现了目标。
 
-1.  State **this** week's progress. This can include information such as: what you have accomplished, what you learned, what difficulties you overcame, what difficulties are still blocking you, your new ideas for research directions or projects, and the like.
+1. State **this** week's progress. This can include information such as: what you have accomplished, what you learned, what difficulties you overcame, what difficulties are still blocking you, your new ideas for research directions or projects, and the like.
+
 说明本周的进展情况。这可以包括以下信息：你取得了什么成就，你学到了什么，你克服了什么困难，哪些困难仍然阻碍着你，你对研究方向或项目的新想法，等等。
 
-1.  Give the **next** week's plan. A good format is a bulleted list, so we can see what you accomplished or did not. Try to make each goal measurable: there should be no ambiguity as to whether you were able to finish it. It's good to include longer-term goals as well.
+1. Give the **next** week's plan. A good format is a bulleted list, so we can see what you accomplished or did not. Try to make each goal measurable: there should be no ambiguity as to whether you were able to finish it. It's good to include longer-term goals as well.
+
 给出下周的计划。一个好的格式是项目符号列表，因此我们可以看到您完成了什么或没有完成什么。试着让每个目标都可衡量：你是否能够完成它不应该有歧义。最好也包括长期目标。
 
-1.  Give an **agenda** for the meeting. Some people like to send this as a separate message, which is fine.
+1. Give an **agenda** for the meeting. Some people like to send this as a separate message, which is fine.
+
 给出会议议程。有些人喜欢将其作为单独的消息发送，这很好。
 
 The report need not be onerous. It can be a few paragraphs or a page, so it shouldn't take you long to write. Minimize details that are not relevant to your audience, such as classwork and the like, in order to keep the report focused; you will spend less time writing it, and make it more likely to be read.
@@ -256,6 +270,8 @@ Writing the progress report has many benefits.
 Writing the report will make you more productive, because it will force you to think about your work in a manner concretely enough to write down. Any time that you spend organizing your thoughts will more than pay itself back in better understanding and improved productivity. When a project is complete, it is all too easy to forget some of your contributions. You can look back over your progress reports to remember what was difficult, and to think about how to work more productively in the future. You may be able to re-use some of the text when writing up your results.
 
 写报告会让你更有效率，因为它会迫使你以一种足够具体的方式思考你的工作，以便写下来。你花在组织思想上的任何时间都会在更好的理解和提高生产力方面得到回报。当一个项目完成时，很容易忘记你的一些贡献。您可以回顾您的进度报告，以记住困难之处，并思考将来如何更有效地工作。在撰写结果时，您可以重复使用某些文本。
+
+
 
 Writing the report will make your meetings more productive. When you have a weekly research meeting, the report should be sent 24 hours in advance, to help everyone prepare. (Two hours is not an acceptable alternative: it does not let everyone — both you and others — mull over the ideas.) Don't delay your report because you want to wait until you have better results to report. Instead, send the report on schedule, and if you get more results in the next 24 hours, you can discuss those at the meeting.
 
@@ -283,25 +299,32 @@ Students must decide whether to spend the summer working at a company (and if so
 
 学生必须决定是否在暑假期间在一家公司工作（如果是的话，是哪家公司），在大学做研究，或者只是休一个长假。这些选项中的每一个都有其优点，不同的选项最适合不同的人（或处于职业生涯的不同阶段）。以下是您可能想要选择实习的一些原因：
 
-1.  If you haven't worked in a company, you are ill-prepared to choose a a job after graduation. You are also ill-prepared to decide between a job and graduate school. The same thing goes for learning about companies of specific size (big company, startup, etc.), particular types of work (programmer, tester, program manager, researcher, etc.), and other factors.
+1. If you haven't worked in a company, you are ill-prepared to choose a a job after graduation. You are also ill-prepared to decide between a job and graduate school. The same thing goes for learning about companies of specific size (big company, startup, etc.), particular types of work (programmer, tester, program manager, researcher, etc.), and other factors.
+
 如果你没有在公司工作过，你就没有做好毕业后选择工作的准备。你也没有准备好在工作和研究生院之间做出决定。了解特定规模的公司（大公司、初创公司等）、特定类型的工作（程序员、测试人员、项目经理、研究人员等）和其他因素也是如此。
 
-1.  Working in a company exposes you to a different way of thinking and working. This breadth of experience is likely to stand you in good stead when you approach problems, because you will be able to choose the most effective style rather than applying the same approach in every situation. Each new company or research group adds to your experience, but having at least one internship and at least one long-term undergraduate research experience (such as the summer or a full academic year) is essential.
+1. Working in a company exposes you to a different way of thinking and working. This breadth of experience is likely to stand you in good stead when you approach problems, because you will be able to choose the most effective style rather than applying the same approach in every situation. Each new company or research group adds to your experience, but having at least one internship and at least one long-term undergraduate research experience (such as the summer or a full academic year) is essential.
+
 在一家公司工作会让你接触到不同的思维和工作方式。当你处理问题时，这种广泛的经验可能会让你受益匪浅，因为你将能够选择最有效的风格，而不是在每种情况下都应用相同的方法。每个新公司或研究小组都会增加你的经验，但至少有一个实习和至少一个长期的本科研究经验（如暑期或一整个学年）是必不可少的。
 
-1.  Related to the above point, internships require and provide different skills than research jobs, from interpersonal interactions to specific development tools. A company may be the only or best way to obtain these skills, which you will find valuable in your future career as an engineer.
+1. Related to the above point, internships require and provide different skills than research jobs, from interpersonal interactions to specific development tools. A company may be the only or best way to obtain these skills, which you will find valuable in your future career as an engineer.
+
 与上述观点相关，实习需要并提供与研究工作不同的技能，从人际互动到特定的开发工具。公司可能是获得这些技能的唯一或最佳途径，您会发现这些技能在您未来的工程师职业生涯中很有价值。
 
-1.  Working on real products with real customers is particularly rewarding for some people; they like to see the concrete impact their jobs have on customers, on coworkers, and on the industry.
+1. Working on real products with real customers is particularly rewarding for some people; they like to see the concrete impact their jobs have on customers, on coworkers, and on the industry.
+
 对某些人来说，与真实客户一起开发真实产品特别有益;他们希望看到他们的工作对客户、同事和行业产生的具体影响。
 
-1.  Knowledge of industry is essential even for people who will eventually find their careers in academia, if you hope that your research will have any impact on practice. You need to know the state of the art, how practitioners act, and what they really need. A superficial knowledge, or just listening to what they say they need, is not sufficient.
+1. Knowledge of industry is essential even for people who will eventually find their careers in academia, if you hope that your research will have any impact on practice. You need to know the state of the art, how practitioners act, and what they really need. A superficial knowledge, or just listening to what they say they need, is not sufficient.
+
 即使对于最终将在学术界找到职业生涯的人来说，如果你希望你的研究对实践产生任何影响，对工业的了解也是必不可少的。您需要了解最先进的技术、从业者的行为方式以及他们真正需要什么。肤浅的知识，或者仅仅听他们说他们需要什么，是不够的。
 
-1.  You will expand your personal network: you will know more people, which can help you when you need advice or a collaborator in the future.
+1. You will expand your personal network: you will know more people, which can help you when you need advice or a collaborator in the future.
+
 您将扩展您的个人网络：您将认识更多的人，当您将来需要建议或合作者时，这可以为您提供帮助。
 
-1.  Internships tend to pay much more than summer academic research jobs.
+1. Internships tend to pay much more than summer academic research jobs.
+
 实习的薪水往往比暑期学术研究工作高得多。
 
 I personally benefited enormously from my summer internships and my years in industry before I became a professor. I recommend that every undergraduate student work at a company for least one summer (and possibly more), and I recommend that every graduate student work at a company one or two summers (but usually no more, because research takes priority at that level). You might also want to read my advice on internships, but be warned that text is very sketchy and that it is geared primarily toward graduate students.
@@ -310,7 +333,7 @@ I personally benefited enormously from my summer internships and my years in ind
 
 # 6 Writing a research statement
 
-A research statement lays out your vision of your research, including both your acco[mplishments to ](https://homes.cs.washington.edu/~mernst/advice/apply-grad-school.html)date a[nd your pla](https://homes.cs.washington.edu/~mernst/advice/fellowship.html)[ns for the fu](https://homes.cs.washington.edu/~mernst/advice/academic-job.html)ture. It is a required part of many applications — for graduate school, for fellowships, for jobs (especially academic jobs), for awards, etc.
+A research statement lays out your vision of your research, including both your [accomplishments to date](https://homes.cs.washington.edu/~mernst/advice/apply-grad-school.html) and your [plans for the future](https://homes.cs.washington.edu/~mernst/advice/fellowship.html). It is a required part of many applications — for graduate school, for fellowships, for jobs (especially [academic jobs](https://homes.cs.washington.edu/~mernst/advice/academic-job.html)), for awards, etc.
 
 研究声明阐述了您对研究的愿景，包括您迄今为止的成就和您对未来的计划。它是许多申请的必要部分——研究生院、奖学金、工作（尤其是学术工作）、奖励等。
 
@@ -324,6 +347,8 @@ Write your statement in the first person.
 
 Your statement will likely discuss multiple research projects or results. Readers are unlikely to remember each of the projects in detail (though they may remember that you are broad, which is good). It will be easiest for readers to remember your work, and equally importantly to place it in context as they read your statement, if you can show how the projects are related. They might be in the same research subarea, or use related techniques, or stem from your own experiences, etc. Find a way to tie them together, which will make readers more likely to understand them. Furthermore, readers will be more likely to believe that you may continue to produce similar results in the future, if they see a pattern. After starting out with an overview (which might describe the general topic and its importance), tie the description of each result or project into that overview.
 
+
+
 您的陈述可能会讨论多个研究项目或结果。讀者不太可能詳細記住每個項目（儘管他們可能記得你很廣泛，這很好）。对于读者来说，记住你的工作是最容易的，同样重要的是，在他们阅读你的陈述时，把它放在上下文中，如果你能展示这些项目是如何相关的。他们可能在同一个研究子领域，或者使用相关技术，或者源于你自己的经验，等等。找到一种方法将它们联系在一起，这将使读者更有可能理解它们。此外，如果读者看到一个模式，他们将更有可能相信你将来可能会继续产生类似的结果。从概述（可能描述一般主题及其重要性）开始后，将每个结果或项目的描述与该概述联系起来。
 
 Somewhere — maybe at the beginning, though more likely at the end — you need to bring the statement to life and let your personality show through. Permit yourself to gush about how much you enjoy research: show that you really care about this and why. For example, you might state how important it is to you and how it has changed the way you think about your research area computing. Another way to address this (not incompatible with the others) is to say why you got involved in research at all; that might go at the beginning. If readers believe that you are enthusiastic about the topic, they will be more likely to believe that you are doing a great job and will be more favorably inclined toward you in general.
@@ -332,13 +357,13 @@ Somewhere — maybe at the beginning, though more likely at the end — you need
 
 # 7 Applying to grad school
 
-> https://homes.cs.washington.edu/~mernst/advice/apply-grad-school.html
+> `https://homes.cs.washington.edu/~mernst/advice/apply-grad-school.html`
 
-> https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf
+> `https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf`
 
-> https://homes.cs.washington.edu/~mernst/advice/apply-grad-school-for-mit-mengs.html
+> `https://homes.cs.washington.edu/~mernst/advice/apply-grad-school-for-mit-mengs.html`
 
-> https://web.archive.org/web/20190519012623/https://pages.gseis.ucla.edu/faculty/agre/grad-school.html
+> `https://web.archive.org/web/20190519012623/https://pages.gseis.ucla.edu/faculty/agre/grad-school.html`
 
 ## How grad schools choose their Ph.D. students 研究生院如何选择博士生
 
@@ -350,7 +375,7 @@ The process is inherently subjective. It includes:
 
 这个过程本质上是主观的。它包括：
 
-strength[ of the recommend](https://homes.cs.washington.edu/~mernst/advice/request-recommendation.html)ation letters
+strength[ of the recommend](`https://homes.cs.washington.edu/~mernst/advice/request-recommendation.html`)ation letters
 
 推荐信的强度This is perhaps the most important. Do the letters give concrete accomplishments, or speak in generalities? Are there problems when reading between the lines? Has the letter writer been forthright about weaknesses in candidates before, or does the letter writer have relatively low credibility? See my advice on requesting a letter of recommendation and on writing a recommeendation.
 
@@ -366,7 +391,7 @@ I don't think that tailoring your application toward a single faculty member is 
 
 我不认为针对单个教职员工定制您的申请是必要或好的。你不知道那个人是否仍然在积极从事你在他们的网站上找到的相同项目，或者对今年的新生感兴趣。然而，通过提及特定教职员工来定制申请的建议非常普遍，一些学校的一些教职员工可能会因此而动摇。
 
-[Just as with](https://homes.cs.washington.edu/~mernst/advice/academic-job.html#After_the_interview) an academic job, you shouldn't be depressed nor angry if you don't get in your first choice. There may or may not have been anything you could do about it, and you don't understand the reasons behind the decision. Getting mad is immature and unprofessional, and it won't do you any good.
+[Just as with](`https://homes.cs.washington.edu/~mernst/advice/academic-job.html#After_the_interview`) an academic job, you shouldn't be depressed nor angry if you don't get in your first choice. There may or may not have been anything you could do about it, and you don't understand the reasons behind the decision. Getting mad is immature and unprofessional, and it won't do you any good.
 
 就像学术工作一样，如果你没有得到你的第一选择，你不应该感到沮丧或生气。你可能对此无能为力，也可能无能为力，而且你不明白这个决定背后的原因。生气是不成熟和不专业的，对你没有任何好处。
 
@@ -382,7 +407,7 @@ Don't bother to include descriptions of your class projects. It doesn't add anyt
 
 # 8 How to send and reply to email
 
-> https://matt.might.net/articles/how-to-email/
+> `https://matt.might.net/articles/how-to-email/`
 
 The problem with email is that people think it's electronic mail.
 
@@ -419,27 +444,13 @@ You can reduce that opportunity cost by:
 您可以通过以下方式降低商机成本：
 
 +   not sending email; 不发送电子邮件;
-
 +   keeping it short; 保持简短;
-
-+   creating informative subjects;
-创建信息丰富的主题;
-
-+   breaking your message into points;
-将您的信息分解为要点;
-
-+   replying to points instead of emails;
-回复积分而不是电子邮件;
-
-+   placing action items at the top;
-将行动项目放在顶部;
-
-+   sorting points by priority;
-按优先级对点进行排序;
-
-+   breaking long emails into multiple emails; and
-将长电子邮件分解为多封电子邮件;和
-
++   creating informative subjects; 创建信息丰富的主题;
++   breaking your message into points; 将您的信息分解为要点;
++   replying to points instead of emails; 回复积分而不是电子邮件;
++   placing action items at the top; 将行动项目放在顶部;
++   sorting points by priority; 按优先级对点进行排序;
++   breaking long emails into multiple emails; and 将长电子邮件分解为多封电子邮件;和
 +   being polite. 礼貌。
 
 ## When to send email 何时发送电子邮件
@@ -449,9 +460,7 @@ If you're asking a question, first check:
 如果您要提问，请先检查：
 
 +   [Google](http://www.google.com/); 谷歌;
-
 +   [Quora](http://www.quora.com/); and Quora的;和
-
 +   maybe even [Twitter](http://www.twitter.com/). 甚至可能是Twitter。
 
 Also consider, Can I wait to ask until I see her in person?
@@ -470,9 +479,13 @@ If you're a programmer, do not email this question:
 
 What happens when I run the following code?
 
+```
 code here
+```
 
 If you want to know what happens, run the code.
+
+
 
 如果想知道会发生什么，请运行代码。
 
@@ -484,9 +497,9 @@ Or, run the code through a debugger.
 
 或者，通过调试器运行代码。
 
-Or, instrument the code with print statements.
+Or, instrument the code with `print` statements.
 
-或者，使用 print 语句检测代码。
+或者，使用 `print` 语句检测代码。
 
 If that doesn't work, explain why in your email.
 
@@ -594,15 +607,15 @@ That is, try sending the following:
 
 也就是说，尝试发送以下内容：
 
-Action item: Send nominees for X before date Y.
+Action item: Send nominees for `X` before date `Y`.
 
-page of text on who is eligible for X
+page of text on who is eligible for `X`
 
 not:  不：
 
-page of text on who is eligible for X
+page of text on who is eligible for `X`
 
-Can you send nominees for X before date Y?
+Can you send nominees for `X` before date `Y`?
 
 ## Sorting points by priority 按优先级对点进行排序
 
@@ -650,7 +663,7 @@ A "Thanks!" often comes off as more sincere than "Sincerely."
 
 # 9 How to get a great letter of recommendation
 
-> https://matt.might.net/articles/how-to-recommendation-letter/
+> `https://matt.might.net/articles/how-to-recommendation-letter/`
 
 It's job-hunting and grad-school admissions season.
 
@@ -734,15 +747,15 @@ Writing quality and lecturing ability are roughly correlated.
 
 写作质量和讲课能力大致相关。
 
-## Don't get n letters 不要得到 n 个字母
+## Don't get n letters 不要得到 `n` 个字母
 
-Too often, students need n letter-writers, so they ask any n previous professors for a letter.
+Too often, students need `n` letter-writers, so they ask any `n` previous professors for a letter.
 
-很多时候，学生需要 n 封信人，所以他们向任何 n 名以前的教授索要一封信。
+很多时候，学生需要 `n` 封信人，所以他们向任何 `n` 名以前的教授索要一封信。
 
 This will get a student an "nth" letter.
 
-这将使学生获得“第 n 个”字母。
+这将使学生获得“第 `n` 个”字母。
 
 Professors don't mind writing these letters, because they take about ten seconds. But, deep down, we know we're doing the student a disservice.
 
@@ -765,6 +778,8 @@ For applications to grad school, if all letters read like this, it guarantees re
 对于研究生院的申请，如果所有信件都这样读，它肯定会被拒绝。信息是：“这是一个做得很好的学生，但从来没有花时间超越。
 
 ## How to get a good letter 如何获得一封好信
+
+
 
 The more I know about an applicant, the better the letter.
 
@@ -842,9 +857,9 @@ This will give you peace of mind, in that you can verify whether or not a profes
 
 ## It's been a while, can I still ask? 已经有一段时间了，我还能问吗？
 
-[[A](http://news.ycombinator.com/item?id=3163691)dded in response to questions on HN.]
+[Added](`http://news.ycombinator.com/item?id=3163691`) in response to questions on HN.
 
-[在回答有关HN的问题时添加。
+在回答有关HN的问题时添加。
 
 If you've graduated and gone to industry, you can still ask for a letter.
 
@@ -868,9 +883,9 @@ Most professors have hopelessly swollen inboxes, and expect to be re-emailed wit
 
 ## Should I draft my own letter? 我应该起草自己的信吗？
 
-[[A](http://news.ycombinator.com/item?id=3163691)dded in response to questions on HN.]
+[Added](`http://news.ycombinator.com/item?id=3163691`) in response to questions on HN.
 
-[在回答有关HN的问题时添加。
+在回答有关HN的问题时添加。
 
 If the professor requests a draft, yes.
 

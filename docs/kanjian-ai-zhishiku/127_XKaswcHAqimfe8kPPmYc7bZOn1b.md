@@ -1,3 +1,4 @@
+
 # DeepSeek使用技巧
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/Fqcqd6Xjao1aUkxLKmrcXwUnnwh](https://jlqyxzzvbk.feishu.cn/docx/Fqcqd6Xjao1aUkxLKmrcXwUnnwh)
@@ -23,7 +24,6 @@
 ![](img/db723ae5d8d395cd7cc0fb27f822f666.png)
 
 [DeepSeek 15天指导手册——从入门到精通 (2)(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GvFFbi20KoyM0cxzGe7c3HhhnTg)
-
 
 [清华大学第三弹：普通人如何抓住 DeepSeek 红利.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ms0ub6qbzohOsRxVNuRcwYzjnXB)
 

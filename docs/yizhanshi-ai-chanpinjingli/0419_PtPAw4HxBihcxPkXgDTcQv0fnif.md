@@ -1,28 +1,29 @@
+
 # TensorFlow 张量操作
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/H6NbdOmMmodinsxpFlIcG75Fnmd](https://v11enp9ok1h.feishu.cn/docx/H6NbdOmMmodinsxpFlIcG75Fnmd)
 
-张量是TensorFlow 中的核心数据结构，可以理解为多维数组的扩展概念。
+张量是TensorFlow中的核心数据结构，可以理解为多维数组的扩展概念。
 
 在机器学习中，几乎所有数据最终都会被表示为张量形式进行处理。
 
-### 张量 的基本特性
+## 张量的基本特性
 
-1.  **数据类型(dtype)**：每个张量都有特定的数据类型，如tf.float32、tf.int64等
+1. 数据类型(`dtype`)：每个张量都有特定的数据类型，如`tf.float32`、`tf.int64`等
 
-1.  **形状(shape)**：表示张量每个维度的大小，如(2,3)表示2行3列的矩阵
+1. 形状(`shape`)：表示张量每个维度的大小，如(2,3)表示2行3列的矩阵
 
-1.  **设备位置(device)**：指示张量存储在CPU还是GPU上
+1. 设备位置(`device`)：指示张量存储在CPU还是GPU上
 
-### 张量的维度
+## 张量的维度
 
-+   0维张量：标量(scalar)，如 tf.constant(5)
++ 0维张量：标量(scalar)，如`tf.constant(5)`
 
-+   1维张量：向量(vector)，如 tf.constant([1,2,3])
++ 1维张量：向量(vector)，如`tf.constant([1,2,3])`
 
-+   2维张量：矩阵(matrix)，如 tf.constant([[1,2],[3,4]])
++ 2维张量：矩阵(matrix)，如`tf.constant([[1,2],[3,4]])`
 
-+   3维及以上：高阶张量，如 tf.ones((2,3,4)) 表示2个3×4的矩阵
++ 3维及以上：高阶张量，如`tf.ones((2,3,4))`表示2个3×4的矩阵
 
 ---
 
@@ -30,7 +31,7 @@
 
 ### 从Python列表/NumPy数组创建
 
-## 实例
+### 实例
 
 ```
 import tensorflow as tf
@@ -46,7 +47,7 @@ tensor_from_numpy = tf.constant(numpy_array)
 
 ### 创建特殊值张量
 
-## 实例
+### 实例
 
 ```
 # 全零张量
@@ -64,7 +65,7 @@ filled = tf.fill((2, 2), 7)  # 2×2矩阵，所有元素为7
 
 ### 创建随机张量
 
-## 实例
+### 实例
 
 ```
 # 均匀分布随机数
@@ -81,20 +82,20 @@ shuffled = tf.random.shuffle(tf.constant([1, 2, 3, 4, 5]))
 
 ### 数学运算
 
-## 实例
+### 实例
 
 ```
 a = tf.constant([[1, 2], [3, 4]])
 b = tf.constant([[5, 6], [7, 8]])
 
 # 逐元素加法
-add = tf.add(a, b)        # 或使用运算符重载 a + b
+add = tf.add(a, b)        # 或使用运算符重载 `a + b`
 
 # 逐元素乘法
-mul = tf.multiply(a, b)   # 或 a * b
+mul = tf.multiply(a, b)   # 或 `a * b`
 
 # 矩阵乘法
-matmul = tf.matmul(a, b)  # 或 a @ b
+matmul = tf.matmul(a, b)  # 或 `a @ b`
 
 # 其他数学运算
 sqrt = tf.sqrt(tf.cast(a, tf.float32))  # 平方根(需要转换为浮点型)
@@ -102,7 +103,7 @@ sqrt = tf.sqrt(tf.cast(a, tf.float32))  # 平方根(需要转换为浮点型)
 
 ### 形状操作
 
-## 实例
+### 实例
 
 ```
 tensor = tf.constant([[1, 2, 3], [4, 5, 6]])
@@ -122,7 +123,7 @@ expanded = tf.expand_dims(tensor, axis=0)  # 形状从(2,3)变为(1,2,3)
 
 ### 索引与切片
 
-## 实例
+### 实例
 
 ```
 tensor = tf.constant([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
@@ -142,15 +143,15 @@ sub = tensor[0:2, 1:] # 获取第1-2行，第2-3列 [[2,3],[5,6]]
 
 ### 广播规则
 
-1.  从最后一个维度开始向前比较
+1. 从最后一个维度开始向前比较
 
-1.  两个维度要么相等，要么其中一个为1，要么其中一个不存在
+1. 两个维度要么相等，要么其中一个为1，要么其中一个不存在
 
-1.  在缺失或为1的维度上进行复制扩展
+1. 在缺失或为1的维度上进行复制扩展
 
 ### 广播示例
 
-## 实例
+### 实例
 
 ```
 # 向量(3,)与标量()相加
@@ -169,7 +170,7 @@ f = d + e  # d被广播为[[1,1,1],[2,2,2],[3,3,3]]
 
 ### 常用聚合函数
 
-## 实例
+### 实例
 
 ```
 tensor = tf.constant([[1, 2, 3], [4, 5, 6]])
@@ -187,15 +188,15 @@ max_val = tf.reduce_max(tensor)        # 最大值 → 6
 min_val = tf.reduce_min(tensor)       # 最小值 → 1
 
 # 逻辑运算
-any_true = tf.reduce_any(tensor &gt; 4)   # 是否有元素&gt;4 → True
-all_true = tf.reduce_all(tensor &gt; 0)   # 是否所有元素&gt;0 → True
+any_true = tf.reduce_any(tensor > 4)   # 是否有元素>4 → True
+all_true = tf.reduce_all(tensor > 0)   # 是否所有元素>0 → True
 ```
 
 ## 实践练习
 
 ### 练习1：创建和操作张量
 
-## 实例
+### 实例
 
 ```
 # 1. 创建一个3×3的随机矩阵，元素值在0-10之间
@@ -213,7 +214,7 @@ diag_sum = tf.reduce_sum(tf.linalg.diag_part(product))
 
 ### 练习2：广播机制应用
 
-## 实例
+### 实例
 
 ```
 # 1. 创建一个4×1的矩阵和一个1×4的向量
@@ -224,6 +225,6 @@ vector = tf.constant([10, 20, 30, 40])
 broadcast_sum = matrix + vector
 
 # 3. 验证结果的形状和值
-print(&quot;形状:&quot;, broadcast_sum.shape)  # 应为(4,4)
-print(&quot;结果:&quot;, broadcast_sum.numpy())
+print("形状:", broadcast_sum.shape)  # 应为(4,4)
+print("结果:", broadcast_sum.numpy())
 ```

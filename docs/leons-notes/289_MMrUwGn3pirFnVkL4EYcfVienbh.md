@@ -1,7 +1,7 @@
+
 # 何谓复合增长？
 
 > 来源：[https://leonzhang.feishu.cn/docx/J9gAdQEPPo9zCXx2cjZc58GXn5b](https://leonzhang.feishu.cn/docx/J9gAdQEPPo9zCXx2cjZc58GXn5b)
-
 > 🔗 原文链接：https://rediverge.com/compound/
 
 ![](img/b35522314af00cfd5e8cf24274f80f89.png)

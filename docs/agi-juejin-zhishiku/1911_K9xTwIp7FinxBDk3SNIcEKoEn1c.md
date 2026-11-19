@@ -1,8 +1,7 @@
-# 03.03-“中国首个 AI IDE”字节跳动 Trae 国内版发布：配置豆包 1.5pro，可切换满血版 DeepSeek
-
-> 来源：[https://agijuejin.feishu.cn/docx/X3bBdokoIoH80dxNYbecQt74nse](https://agijuejin.feishu.cn/docx/X3bBdokoIoH80dxNYbecQt74nse)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 03 月 03 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/X3bBdokoIoH80dxNYbecQt74nse](https://agijuejin.feishu.cn/docx/X3bBdokoIoH80dxNYbecQt74nse)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

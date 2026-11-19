@@ -1,3 +1,4 @@
+
 # PyTorch 循环神经网络（RNN）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/RE6cd6fyIoAmVux5SSQctbI5n3c](https://v11enp9ok1h.feishu.cn/docx/RE6cd6fyIoAmVux5SSQctbI5n3c)
@@ -8,45 +9,45 @@ RNN 在自然语言处理（NLP）、语音识别、时间序列预测等任务�
 
 RNN 的关键特性是其能够保持隐状态（hidden state），使得网络能够记住先前时间步的信息，这对于处理序列数据至关重要。
 
-### RNN 的基本结构
+## RNN 的基本结构
 
 在传统的前馈神经网络（Feedforward Neural Network）中，数据是从输入层流向输出层的，而在 RNN 中，数据不仅沿着网络层级流动，还会在每个时间步骤上传播到当前的隐层状态，从而将之前的信息传递到下一个时间步骤。
 
-隐状态（Hidden State）： RNN 通过隐状态来记住序列中的信息。
+隐状态（Hidden State）：RNN 通过隐状态来记住序列中的信息。
 
 隐状态是通过上一时间步的隐状态和当前输入共同计算得到的。
 
-**循环单元的结构如下：**
+循环单元的结构如下：
 
-+   输入（xtxt）：在时间步 tt 的输入向量。
++ 输入（`xtxt`）：在时间步 `tt` 的输入向量。
 
-+   隐藏状态（htht：在时间步 tt 的隐藏状态向量，用于存储之前时间步的信息。
++ 隐藏状态（`htht`：在时间步 `tt` 的隐藏状态向量，用于存储之前时间步的信息。
 
-+   输出（ytyt）：在时间步 tt 的输出向量（可选，取决于具体任务）。
-
-**公式：**
-
-+   h(t)：当前时刻的隐状态。
-
-+   h(t-1)：前一时刻的隐状态。
-
-+   X(t)：当前时刻的输入。
-
-+   W(hh)、W(xh)：权重矩阵。
-
-+   b：偏置项。
-
-+   f：激活函数（如 Tanh 或 ReLU）。
-
-**输出（Output）：** RNN 的输出不仅依赖当前的输入，还依赖于隐状态的历史信息。
++ 输出（`ytyt`）：在时间步 `tt` 的输出向量（可选，取决于具体任务）。
 
 公式：
 
-+   y(t)：在时间步 t 的输出向量（可选，取决于具体任务）。
++ `h(t)`：当前时刻的隐状态。
 
-+   W(hy)：是隐藏状态到输出的权重矩阵。。
++ `h(t-1)`：前一时刻的隐状态。
 
-**RNN 如何处理序列数据**
++ `X(t)`：当前时刻的输入。
+
++ `W(hh)`、`W(xh)`：权重矩阵。
+
++ `b`：偏置项。
+
++ `f`：激活函数（如 Tanh 或 ReLU）。
+
+输出（Output）：RNN 的输出不仅依赖当前的输入，还依赖于隐状态的历史信息。
+
+公式：
+
++ `y(t)`：在时间步 `t` 的输出向量（可选，取决于具体任务）。
+
++ `W(hy)`：是隐藏状态到输出的权重矩阵。
+
+### RNN 如何处理序列数据
 
 循环神经网络（RNN）在处理序列数据时的展开（unfold）视图如下：
 
@@ -54,49 +55,47 @@ RNN 的关键特性是其能够保持隐状态（hidden state），使得网络�
 
 RNN 是一种处理序列数据的神经网络，它通过循环连接来处理序列中的每个元素，并在每个时间步传递信息，以下是图中各部分的说明：
 
-+   输入序列（Xt, Xt-1, Xt+1, ...）：图中的粉色圆圈代表输入序列中的各个元素，如Xt表示当前时间步的输入，Xt-1表示前一个时间步的输入，以此类推。
++ 输入序列（`Xt`, `Xt-1`, `Xt+1`, ...）：图中的粉色圆圈代表输入序列中的各个元素，如 `Xt` 表示当前时间步的输入，`Xt-1` 表示前一个时间步的输入，以此类推。
 
-+   隐藏状态（ht, ht-1, ht+1, ...）：绿色矩形代表RNN的隐藏状态，它在每个时间步存储有关序列的信息。ht是当前时间步的隐藏状态，ht-1是前一个时间步的隐藏状态。
++ 隐藏状态（`ht`, `ht-1`, `ht+1`, ...）：绿色矩形代表 `RNN` 的隐藏状态，它在每个时间步存储有关序列的信息。`ht` 是当前时间步的隐藏状态，`ht-1` 是前一个时间步的隐藏状态。
 
-+   **权重矩阵（U, W, V）**：
++ 权重矩阵（`U`, `W`, `V`）：
 
-+   U：输入到隐藏状态的权重矩阵，用于将输入Xt转换为隐藏状态的一部分。
+  + `U`：输入到隐藏状态的权重矩阵，用于将输入 `Xt` 转换为隐藏状态的一部分。
 
-+   W：隐藏状态到隐藏状态的权重矩阵，用于将前一时间步的隐藏状态ht-1转换为当前时间步隐藏状态的一部分。
+  + `W`：隐藏状态到隐藏状态的权重矩阵，用于将前一时间步的隐藏状态 `ht-1` 转换为当前时间步隐藏状态的一部分。
 
-+   V：隐藏状态到输出的权重矩阵，用于将隐藏状态ht转换为输出Yt。
+  + `V`：隐藏状态到输出的权重矩阵，用于将隐藏状态 `ht` 转换为输出 `Yt`。
 
-+   输出序列（Yt, Yt-1, Yt+1, ...）：蓝色圆圈代表RNN在每个时间步的输出，如Yt是当前时间步的输出。
++ 输出序列（`Yt`, `Yt-1`, `Yt+1`, ...）：蓝色圆圈代表 `RNN` 在每个时间步的输出，如 `Yt` 是当前时间步的输出。
 
-+   **循环连接**：RNN的特点是隐藏状态的循环连接，这允许网络在处理当前时间步的输入时考虑到之前时间步的信息。
++ 循环连接：`RNN` 的特点是隐藏状态的循环连接，这允许网络在处理当前时间步的输入时考虑到之前时间步的信息。
 
-+   **展开（Unfold）**：图中展示了RNN在序列上的展开过程，这有助于理解RNN如何在时间上处理序列数据。在实际的RNN实现中，这些步骤是并行处理的，但在概念上，我们可以将其展开来理解信息是如何流动的。
++ 展开（Unfold）：图中展示了 `RNN` 在序列上的展开过程，这有助于理解 `RNN` 如何在时间上处理序列数据。在实际的 `RNN` 实现中，这些步骤是并行处理的，但在概念上，我们可以将其展开来理解信息是如何流动的。
 
-+   **信息流动**：信息从输入序列通过权重矩阵U传递到隐藏状态，然后通过权重矩阵W在时间步之间传递，最后通过权重矩阵V从隐藏状态传递到输出序列。
++ 信息流动：信息从输入序列通过权重矩阵 `U` 传递到隐藏状态，然后通过权重矩阵 `W` 在时间步之间传递，最后通过权重矩阵 `V` 从隐藏状态传递到输出序列。
 
 ## PyTorch 中的 RNN 基础
 
-在 PyTorch 中，RNN 可以用于构建复杂的序列模型。
+在 PyTorch 中，`RNN` 可以用于构建复杂的序列模型。
 
-PyTorch 提供了几种 RNN 模块，包括：
+PyTorch 提供了几种 `RNN` 模块，包括：
 
-+   torch.nn.RNN：基本的RNN单元。
++ `torch.nn.RNN`：基本的 `RNN` 单元。
 
-+   torch.nn.LSTM：长短期记忆单元，能够学习长期依赖关系。
++ `torch.nn.LSTM`：长短期记忆单元，能够学习长期依赖关系。
 
-+   torch.nn.GRU：门控循环单元，是LSTM的简化版本，但通常更容易训练。
++ `torch.nn.GRU`：门控循环单元，是 `LSTM` 的简化版本，但通常更容易训练。
 
-使用 RNN 类时，您需要指定输入的维度、隐藏层的维度以及其他一些超参数。
+使用 `RNN` 类时，您需要指定 `input_size`、`hidden_size` 以及其他一些超参数。
 
 ### PyTorch 实现一个简单的 RNN 实例
 
-以下是一个简单的 PyTorch 实现例子，使用 RNN 模型来处理序列数据并进行分类。
+以下是一个简单的 `PyTorch` 实现例子，使用 `RNN` 模型来处理序列数据并进行分类。
 
 **1、导入必要库**
 
-## 实例
-
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -104,9 +103,9 @@ from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
 ```
 
-**2、定义 RNN 模型**
+**2、定义 `RNN` 模型**
 
-```
+```python
 class SimpleRNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super(SimpleRNN, self).__init__()
@@ -126,9 +125,9 @@ class SimpleRNN(nn.Module):
 
 **3、创建训练数据**
 
-为了训练 RNN，我们生成一些随机的序列数据。这里的目标是将每个序列的最后一个值作为分类的目标。
+为了训练 `RNN`，我们生成一些随机的序列数据。这里的目标是将每个序列的最后一个值作为分类的目标。
 
-```
+```python
 # 生成一些随机序列数据
 num_samples = 1000
 seq_len = 10
@@ -147,7 +146,7 @@ train_loader = DataLoader(dataset, batch_size=32, shuffle=True)
 
 **4、定义损失函数与优化器**
 
-```
+```python
 # 模型实例化
 model = SimpleRNN(input_size=input_size, hidden_size=64, output_size=output_size)
 
@@ -158,7 +157,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 **5、训练模型**
 
-```
+```python
 num_epochs = 10
 
 for epoch in range(num_epochs):
@@ -185,14 +184,14 @@ for epoch in range(num_epochs):
         correct += (predicted == labels).sum().item()
 
     accuracy = 100 * correct / total
-    print(f&quot;Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss / len(train_loader):.4f}, Accuracy: {accuracy:.2f}%&quot;)
+    print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss / len(train_loader):.4f}, Accuracy: {accuracy:.2f}%")
 ```
 
 **6、测试模型**
 
 训练结束后，我们可以在测试集上评估模型的表现。
 
-```
+```python
 # 测试模型
 model.eval()  # 设置模型为评估模式
 with torch.no_grad():
@@ -205,26 +204,26 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
 
     accuracy = 100 * correct / total
-    print(f&quot;Test Accuracy: {accuracy:.2f}%&quot;)
+    print(f"Test Accuracy: {accuracy:.2f}%")
 ```
 
 **7、完整代码如下：**
 
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 数据集：字符序列预测（Hello -&gt; Elloh）
-char_set = list(&quot;hello&quot;)
+# 数据集：字符序列预测（Hello -> Elloh）
+char_set = list("hello")
 char_to_idx = {c: i for i, c in enumerate(char_set)}
 idx_to_char = {i: c for i, c in enumerate(char_set)}
 
 # 数据准备
-input_str = &quot;hello&quot;
-target_str = &quot;elloh&quot;
+input_str = "hello"
+target_str = "elloh"
 input_data = [char_to_idx[c] for c in input_str]
 target_data = [char_to_idx[c] for c in target_str]
 
@@ -277,7 +276,7 @@ for epoch in range(num_epochs):
     losses.append(loss.item())
 
     if (epoch + 1) % 20 == 0:
-        print(f&quot;Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}&quot;)
+        print(f"Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}")
 
 # 测试 RNN
 with torch.no_grad():
@@ -285,37 +284,37 @@ with torch.no_grad():
     test_output, _ = model(inputs.unsqueeze(0), test_hidden)
     predicted = torch.argmax(test_output, dim=2).squeeze().numpy()
 
-    print(&quot;Input sequence: &quot;, &#x27;&#x27;.join([idx_to_char[i] for i in input_data]))
-    print(&quot;Predicted sequence: &quot;, &#x27;&#x27;.join([idx_to_char[i] for i in predicted]))
+    print("Input sequence: ", ''.join([idx_to_char[i] for i in input_data]))
+    print("Predicted sequence: ", ''.join([idx_to_char[i] for i in predicted]))
 ```
 
 **代码解析：**
 
-1.  **数据准备**：
+1. **数据准备**：
 
-+   使用字符序列 hello，并将其转化为独热编码。
++ 使用字符序列 `hello`，并将其转化为独热编码。
 
-+   目标序列为 elloh，即向右旋转一个字符。
++ 目标序列为 `elloh`，即向右旋转一个字符。
 
-1.  **模型构建**：
+1. **模型构建**：
 
-+   使用 torch.nn.RNN 创建循环神经网络。
++ 使用 `torch.nn.RNN` 创建循环神经网络。
 
-+   加入全连接层 torch.nn.Linear 用于映射隐藏状态到输出。
++ 加入全连接层 `torch.nn.Linear` 用于映射隐藏状态到输出。
 
-1.  **训练部分**：
+1. **训练部分**：
 
-+   每一轮都计算损失并反向传播。
++ 每一轮都计算损失并反向传播。
 
-+   隐藏状态通过 hidden.detach() 防止梯度爆炸。
++ 隐藏状态通过 `hidden.detach()` 防止梯度爆炸。
 
-1.  **测试部分**：
+1. **测试部分**：
 
-+   模型输出字符的预测结果。
++ 模型输出字符的预测结果。
 
-1.  **可视化**：
+1. **可视化**：
 
-+   用 Matplotlib 绘制训练损失的变化趋势。
++ 用 `Matplotlib` 绘制训练损失的变化趋势。
 
 假设你的模型训练良好，输出可能如下：
 
@@ -337,21 +336,23 @@ Input sequence:  hello
 
 **8、可视化代码：**
 
-```
+
+
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 数据集：字符序列预测（Hello -&gt; Elloh）
-char_set = list(&quot;hello&quot;)
+# 数据集：字符序列预测（Hello -> Elloh）
+char_set = list("hello")
 char_to_idx = {c: i for i, c in enumerate(char_set)}
 idx_to_char = {i: c for i, c in enumerate(char_set)}
 
 # 数据准备
-input_str = &quot;hello&quot;
-target_str = &quot;elloh&quot;
+input_str = "hello"
+target_str = "elloh"
 input_data = [char_to_idx[c] for c in input_str]
 target_data = [char_to_idx[c] for c in target_str]
 
@@ -404,7 +405,7 @@ for epoch in range(num_epochs):
     losses.append(loss.item())
 
     if (epoch + 1) % 20 == 0:
-        print(f&quot;Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}&quot;)
+        print(f"Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}")
 
 # 测试 RNN
 with torch.no_grad():
@@ -412,14 +413,14 @@ with torch.no_grad():
     test_output, _ = model(inputs.unsqueeze(0), test_hidden)
     predicted = torch.argmax(test_output, dim=2).squeeze().numpy()
 
-    print(&quot;Input sequence: &quot;, &#x27;&#x27;.join([idx_to_char[i] for i in input_data]))
-    print(&quot;Predicted sequence: &quot;, &#x27;&#x27;.join([idx_to_char[i] for i in predicted]))
+    print("Input sequence: ", ''.join([idx_to_char[i] for i in input_data]))
+    print("Predicted sequence: ", ''.join([idx_to_char[i] for i in predicted]))
 
 # 可视化损失
-plt.plot(losses, label=&quot;Training Loss&quot;)
-plt.xlabel(&quot;Epoch&quot;)
-plt.ylabel(&quot;Loss&quot;)
-plt.title(&quot;RNN Training Loss Over Epochs&quot;)
+plt.plot(losses, label="Training Loss")
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.title("RNN Training Loss Over Epochs")
 plt.legend()
 plt.show()
 ```

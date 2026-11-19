@@ -1,3 +1,4 @@
+
 # 01-14回归算法-线性回归
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/VcuqdnpABoB8P5xuI7IcYMlenDc](https://qqs7y1hozd1.feishu.cn/docx/VcuqdnpABoB8P5xuI7IcYMlenDc)
@@ -12,85 +13,85 @@
 
 这时候，线性回归就派上用场了。
 
-线性回归的目标是找到一条直线，这条直线尽可能贴近这些数据点。这个过程叫做“拟合”数据。简单来说，就是找出一个公式，类似于 y = mx + b，这个公式告诉你房子的价格（y）和房子的大小（x）之间的关系。
+线性回归的目标是找到一条直线，这条直线尽可能贴近这些数据点。这个过程叫做“拟合”数据。简单来说，就是找出一个公式，类似于 `y = mx + b`，这个公式告诉你房子的价格（`y`）和房子的大小（`x`）之间的关系。
 
-+   **y**：这是你想要预测的值，比如房子的价格。
++ `y`：这是你想要预测的值，比如房子的价格。
 
-+   **x**：这是你已知的值，比如房子的大小。
++ `x`：这是你已知的值，比如房子的大小。
 
-+   **m**：这是斜率，表示房子的大小每增加一个单位，价格会增加多少。
++ `m`：这是斜率，表示房子的大小每增加一个单位，价格会增加多少。
 
-+   **b**：这是截距，表示当房子的大小为零时，价格是多少（虽然在实际中房子的大小不可能是零，但数学上需要这个值）。
++ `b`：这是截距，表示当房子的大小为零时，价格是多少（虽然在实际中房子的大小不可能是零，但数学上需要这个值）。
 
 ### 举个简单例子
 
 假设你有以下几个房子的大小和价格：
 
-+   房子1：大小100平方米，价格200万
++ 房子1：大小100平方米，价格200万
 
-+   房子2：大小150平方米，价格250万
++ 房子2：大小150平方米，价格250万
 
-+   房子3：大小200平方米，价格300万
++ 房子3：大小200平方米，价格300万
 
-你希望找到一个公式，能够预测其他大小房子的价格。通过线性回归，你可能会得到一个公式，比如 y = 2x + 0. 这意味着每平方米的大小对应的价格是2万，而且即使房子大小是零，起价也是0万（这个仅仅是为了公式完整，在现实中并不实际）。
+你希望找到一个公式，能够预测其他大小房子的价格。通过线性回归，你可能会得到一个公式，比如 `y = 2x + 0`。这意味着每平方米的大小对应的价格是2万，而且即使房子大小是零，起价也是0万（这个仅仅是为了公式完整，在现实中并不实际）。
 
 ### 为什么要用线性回归？
 
-1.  **简单易懂**：线性回归的结果是一个简单的直线公式，容易理解和解释。
+1. **简单易懂**：线性回归的结果是一个简单的直线公式，容易理解和解释。
 
-1.  **快速计算**：计算线性回归的参数（斜率和截距）非常快速。
+1. **快速计算**：计算线性回归的参数（斜率和截距）非常快速。
 
-1.  **广泛应用**：很多实际问题都可以用线性回归来解决，比如预测房价、销售额、温度变化等。
+1. **广泛应用**：很多实际问题都可以用线性回归来解决，比如预测房价、销售额、温度变化等。
 
 ## 理论基础
 
-线性回归的目标是找到一条直线  ，使得这条直线能够最好地拟合数据。
+线性回归的目标是找到一条直线，使得这条直线能够最好地拟合数据。
 
 这里， 是斜率， 是截距。为了找到最佳的  和  ，我们需要最小化预测值和实际值之间的误差。
 
 ### 公式推导
 
-1.  **假设模型**：
+1. **假设模型**：
 
-1.  这里  是截距， 是斜率， 是误差项。
+1. 这里  是截距， 是斜率， 是误差项。
 
-1.  **误差平方和**：
+1. **误差平方和**：
 
-1.  为了衡量模型的好坏，我们用误差平方和来表示：
+1. 为了衡量模型的好坏，我们用误差平方和来表示：
 
-1.  **最小化误差平方和**：
+1. **最小化误差平方和**：
 
-1.  我们需要找到   和   使得 SSE 最小。对 SSE 关于   和   求偏导数，并令其为零，得到：
+1. 我们需要找到  和  使得 `SSE` 最小。对 `SSE` 关于  和  求偏导数，并令其为零，得到：
 
-1.  **求解方程**：
+1. **求解方程**：
 
-1.  将以上两个方程展开并整理，可以得到：
+1. 将以上两个方程展开并整理，可以得到：
 
-1.  这是一组线性方程组，可以解出   和  ：
+1. 这是一组线性方程组，可以解出  和  ：
 
-1.  其中，  和   分别是   和   的均值。
+1. 其中，  和  分别是  和  的均值。
 
 ### 算法流程
 
-1.  **收集数据**：获得一组包含自变量   和因变量   的数据点。
+1. **收集数据**：获得一组包含自变量  和因变量  的数据点。
 
-1.  **计算均值**：
+1. **计算均值**：
 
-1.  **计算斜率**  ：
+1. **计算斜率**  ：
 
-1.  **计算截距**  ：
+1. **计算截距**  ：
 
-1.  **构建模型**：得到回归方程  。
+1. **构建模型**：得到回归方程  。
 
-1.  **模型评估**：
+1. **模型评估**：
 
-+   计算预测值  。
++ 计算预测值  。
 
-+   计算残差  。
++ 计算残差  。
 
-+   计算均方误差（Mean Squared Error, MSE）：
++ 计算均方误差（Mean Squared Error, `MSE`）：
 
-+   计算   决定系数来评估模型的拟合优度：
++ 计算  决定系数来评估模型的拟合优度：
 
 线性回归的核心思想是通过最小化误差平方和来找到最优的直线拟合数据。通过计算均值和斜率，可以得出回归方程。然后，通过模型评估指标来判断模型的拟合效果。
 
@@ -104,19 +105,19 @@
 
 整个代码的步骤：
 
-1.  加载和预处理数据
+1. 加载和预处理数据
 
-1.  构建线性回归模型
+1. 构建线性回归模型
 
-1.  可视化数据和模型结果
+1. 可视化数据和模型结果
 
-1.  评估模型性能
+1. 评估模型性能
 
-1.  进行算法优化
+1. 进行算法优化
 
 ### 1. 加载和预处理数据
 
-```
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -129,7 +130,7 @@ from sklearn.datasets import fetch_california_housing
 # 加载加州房价数据集
 california = fetch_california_housing()
 data = pd.DataFrame(california.data, columns=california.feature_names)
-data[&#x27;MedHouseVal&#x27;] = california.target
+data['MedHouseVal'] = california.target
 
 # 查看数据集
 print(data.head())
@@ -139,10 +140,10 @@ print(data.head())
 
 将数据分为训练集和测试集，训练线性回归模型。
 
-```
+```python
 # 分离特征变量和目标变量
-X = data.drop(&#x27;MedHouseVal&#x27;, axis=1)
-y = data[&#x27;MedHouseVal&#x27;]
+X = data.drop('MedHouseVal', axis=1)
+y = data['MedHouseVal']
 
 # 拆分训练集和测试集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -160,34 +161,33 @@ y_test_pred = model.predict(X_test)
 
 可视化真实值与预测值的关系，以及残差分布。
 
-```
+```python
 # 真实值 vs 预测值
 plt.figure(figsize=(10, 5))
-plt.scatter(y_train, y_train_pred, color=&#x27;blue&#x27;, label=&#x27;Train data&#x27;)
-plt.scatter(y_test, y_test_pred, color=&#x27;red&#x27;, label=&#x27;Test data&#x27;)
-plt.xlabel(&#x27;True Values&#x27;)
-plt.ylabel(&#x27;Predictions&#x27;)
+plt.scatter(y_train, y_train_pred, color='blue', label='Train data')
+plt.scatter(y_test, y_test_pred, color='red', label='Test data')
+plt.xlabel('True Values')
+plt.ylabel('Predictions')
 plt.legend()
-plt.title(&#x27;True Values vs Predictions&#x27;)
+plt.title('True Values vs Predictions')
 plt.show()
 
 # 残差分布
 plt.figure(figsize=(10, 5))
-sns.histplot((y_train - y_train_pred), bins=50, kde=True, label=&#x27;Train data&#x27;, color=&#x27;blue&#x27;)
-sns.histplot((y_test - y_test_pred), bins=50, kde=True, label=&#x27;Test data&#x27;, color=&#x27;red&#x27;)
+sns.histplot((y_train - y_train_pred), bins=50, kde=True, label='Train data', color='blue')
+sns.histplot((y_test - y_test_pred), bins=50, kde=True, label='Test data', color='red')
 plt.legend()
-plt.title(&#x27;Residuals Distribution&#x27;)
+plt.title('Residuals Distribution')
 plt.show()
 ```
-
 
 ![](img/fa94ecf77681fae3334f6bec1d16ca19.png)
 
 ### 4. 评估模型性能
 
-使用均方误差（MSE）和   决定系数来评估模型。
+使用均方误差（`MSE`）和  决定系数来评估模型。
 
-```
+```python
 # 评估训练集性能
 mse_train = mean_squared_error(y_train, y_train_pred)
 r2_train = r2_score(y_train, y_train_pred)
@@ -196,15 +196,15 @@ r2_train = r2_score(y_train, y_train_pred)
 mse_test = mean_squared_error(y_test, y_test_pred)
 r2_test = r2_score(y_test, y_test_pred)
 
-print(f&#x27;Train MSE: {mse_train}, Train R2: {r2_train}&#x27;)
-print(f&#x27;Test MSE: {mse_test}, Test R2: {r2_test}&#x27;)
+print(f'Train MSE: {mse_train}, Train R2: {r2_train}')
+print(f'Test MSE: {mse_test}, Test R2: {r2_test}')
 ```
 
 ### 5. 进行算法优化
 
 通过特征选择和标准化来优化模型。
 
-```
+```python
 from sklearn.preprocessing import StandardScaler
 from sklearn.feature_selection import SelectKBest, f_regression
 
@@ -232,8 +232,8 @@ r2_train_new = r2_score(y_train_new, y_train_pred_new)
 mse_test_new = mean_squared_error(y_test_new, y_test_pred_new)
 r2_test_new = r2_score(y_test_new, y_test_pred_new)
 
-print(f&#x27;Train MSE (new): {mse_train_new}, Train R2 (new): {r2_train_new}&#x27;)
-print(f&#x27;Test MSE (new): {mse_test_new}, Test R2 (new): {r2_test_new}&#x27;)
+print(f'Train MSE (new): {mse_train_new}, Train R2 (new): {r2_train_new}')
+print(f'Test MSE (new): {mse_test_new}, Test R2 (new): {r2_test_new}')
 ```
 
 ### 总结
@@ -250,31 +250,38 @@ print(f&#x27;Test MSE (new): {mse_test_new}, Test R2 (new): {r2_test_new}&#x27;)
 
 #### 优点
 
-1.  **简单易懂**：线性回归模型的结果是一个简单的线性方程，易于理解和解释。
+1. **简单易懂**：线性回归模型的结果是一个简单的线性方程，易于理解和解释。
 
-1.  **快速计算**：线性回归的计算速度快，适用于大规模数据集的快速建模。
+1. **快速计算**：线性回归的计算速度快，适用于大规模数据集的快速建模。
 
-1.  **可解释性强**：线性回归可以清楚地展示每个特征对目标变量的影响，便于进行因果分析。
+1. **可解释性强**：线性回归可以清楚地展示每个特征对目标变量的影响，便于进行因果分析。
 
 #### 缺点
 
-1.  **假设严格**：线性回归假设自变量和因变量之间存在线性关系，但实际中很多关系是非线性的。
+1. **假设严格**：线性回归假设自变量和因变量之间存在线性关系，但实际中很多关系是非线性的。
 
-1.  **对异常值敏感**：线性回归对异常值非常敏感，这些异常值可以极大地影响模型的参数估计。
+1. **对异常值敏感**：线性回归对异常值非常敏感，这些异常值可以极大地影响模型的参数估计。
 
-1.  **特征工程要求高**：需要对特征进行选择、标准化等预处理，否则可能会导致模型性能下降。
+1. **特征工程要求高**：需要对特征进行选择、标准化等预处理，否则可能会导致模型性能下降。
 
-1.  **多重共线性问题**：当自变量之间存在多重共线性时，模型的稳定性会受到影响。
+1. **多重共线性问题**：当自变量之间存在多重共线性时，模型的稳定性会受到影响。
 
 ### 与相似算法的对比
 
 | 算法 | 适用情况 | 优点 | 缺点 |
+
 | --- | --- | --- | --- |
+
 | **多项式回归** | 适用于数据存在非线性关系时 | 能拟合复杂的非线性关系 | 高次多项式易过拟合 |
+
 | **决策树回归** | 适用于数据有明显分段特征，或关系非线性且不连续 | 对异常值不敏感，易解释 | 易过拟合 |
+
 | **随机森林回归** | 适用于复杂数据且非线性关系明显 | 比决策树更稳健，不易过拟合 | 计算量大，解释性差 |
+
 | **支持向量机回归（SVR）** | 适用于高维特征数据，尤其是线性不可分数据 | 适用于非线性回归问题，泛化能力强 | 参数选择复杂，计算成本高 |
+
 | **梯度提升回归（GBR）** | 适用于高精度任务，如比赛或高要求预测任务 | 预测精度高，适应复杂关系 | 训练时间长，超参数调整复杂 |
+
 | **线性回归** | 适用于简单线性关系、快速建模、大规模数据 | 计算高效，易解释，适用于金融、医疗等领域 | 不能处理非线性关系，易受异常值影响 |
 
 ## 最后

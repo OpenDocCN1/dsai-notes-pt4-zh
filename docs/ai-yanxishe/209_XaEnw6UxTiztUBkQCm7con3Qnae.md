@@ -1,3 +1,4 @@
+
 # AI 生成二维码，太好看了
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/AvLddXB31oKGZbxagv8cWQH4nbh](https://aiyanxishe.feishu.cn/docx/AvLddXB31oKGZbxagv8cWQH4nbh)
@@ -16,7 +17,7 @@
 
 很神奇吧！下面是这个项目的缘起、训练过程和更多生图结果……
 
-## **缘起**
+## 缘起
 
 大二的时候，我和同学做了一个参数化二维码生成器，出于各种（摆烂）原因，至今没有继续更新。记得一次和创新工场的咏刚老师交流时，突然聊到，能不能在任何肉眼观察完全正常的图像中编码隐藏的信息。在那个 GAN 的年代，机器学习的生态远没有如今活跃，不说有 Gradio Web UI、Diffusers 这样好用的框架，但配环境就足够劝退我了，这个想法就此搁置。
 
@@ -40,7 +41,7 @@ AIGC All in One 文档，持续更新中
 
 HuggingFace JAX/Diffusers Sprint
 
-## **训练**
+## 训练
 
 ControlNet 训练的数据结构十分简单，仅为一张输入图（conditioning image）、一张输出图（image）和一段标注（caption）。官方给出了非常多预训练模型，包括 1.0 版本中的 Depth、HED、OpenPose 和 1.1 中非常有创意的 Shuffle、Tile 和 Instruct Pix2Pix 等。
 
@@ -54,21 +55,21 @@ GPU / TPU 训练参数
 
 ![](img/17ee96b7e960379189feb878d6e9d956.png)
 
-灰度控制 ControlNet，训练流程见 aigc.ioclab.com/sd-showcase/brightness-controlnet
+灰度控制 ControlNet，训练流程见 `aigc.ioclab.com/sd-showcase/brightness-controlnet`
 
 ![](img/833441e6b163cd628835190dee1cbeff.png)
 
-光影控制 ControlNet，训练流程见 aigc.ioclab.com/sd-showcase/light_controlnet
+光影控制 ControlNet，训练流程见 `aigc.ioclab.com/sd-showcase/light_controlnet`
 
-## **推理**
+## 推理
 
 测试模型训练完毕后，我们尝试了多种 Checkpoint + LoRA + QR Code ControlNet 的组合。得到了下面各式各样的可识别二维码。
 
-### **中国传统纹样**
+### 中国传统纹样
 
-LoRA 训练流程：aigc.ioclab.com/sd-showcase/chinese-ornament
+LoRA 训练流程：`aigc.ioclab.com/sd-showcase/chinese-ornament`
 
-LoRA 模型下载：civitai.com/models/29858/chinese-traditional-pattern
+LoRA 模型下载：`civitai.com/models/29858/chinese-traditional-pattern`
 
 ![](img/4fb92e0f3f44d0721dde79178b28d0e1.png)
 
@@ -78,11 +79,11 @@ LoRA 模型下载：civitai.com/models/29858/chinese-traditional-pattern
 
 ![](img/0fd88628cc359e9172f95b5f1f1be7b3.png)
 
-### **浮世绘风格**
+### 浮世绘风格
 
-LoRA 训练流程：aigc.ioclab.com/sd-showcase/fuyue
+LoRA 训练流程：`aigc.ioclab.com/sd-showcase/fuyue`
 
-LoRA 模型下载：civitai.com/models/25222/ukiyo-e-fuyue-style-background-mix
+LoRA 模型下载：`civitai.com/models/25222/ukiyo-e-fuyue-style-background-mix`
 
 ![](img/c39ebf6cfb906e09581427d62c2a07af.png)
 
@@ -90,7 +91,7 @@ LoRA 模型下载：civitai.com/models/25222/ukiyo-e-fuyue-style-background-mix
 
 ![](img/fa9655fe3a69b877418430b1c14dda42.png)
 
-### **二次元和插画风格**
+### 二次元和插画风格
 
 ![](img/ca7e323e7608aefb9d16bf9a809316a7.png)
 
@@ -102,15 +103,15 @@ LoRA 模型下载：civitai.com/models/25222/ukiyo-e-fuyue-style-background-mix
 
 ![](img/8e915d3f4d15a59d0ebec657318e2099.png)
 
-### **水墨风格（MoXin）**
+### 水墨风格（MoXin）
 
 ![](img/62dcebfc2a5f435c6b112eaaa5457a13.png)
 
-### **水彩风格**
+### 水彩风格
 
 ![](img/1e084b00d7a0ffd4d3acfe0fc8631deb.png)
 
-### **立体风格**
+### 立体风格
 
 ![](img/35b8abbb1a3b3c6d26f9b07e75ffcf7c.png)
 
@@ -120,24 +121,24 @@ LoRA 模型下载：civitai.com/models/25222/ukiyo-e-fuyue-style-background-mix
 
 ![](img/7b9f64fa6865925689a5e5cb594fec2b.png)
 
-### **抽象风格**
+### 抽象风格
 
-### **PCB**** 风格**
+### PCB 风格
 
 ![](img/f0b466c80f7a8b87959a02e1bf8519a1.png)
 
 ![](img/34fdfdbc389751a614378f907275f48b.png)
 
-### **Bonus：****Ps**** 重绘**
+### Bonus：Ps 重绘
 
 ![](img/7679719e3670cc7532bfe7f8fe7d934f.png)
 
 ![](img/39804390227cb84b2beedc24faab605e.png)
 
-## **后记**
+## 后记
 
 加入AI研习社，一起学习AI工具，做AI时代新青年
 
 [AI研习社介绍](https://zl49so8lbq.feishu.cn/wiki/Q8e5wnAjAiV2Uek2rsnc5Znqnrg)
 
-[AI研习社知识星球精选导读.xlsx](https://zl49so8lbq.feishu.cn/wiki/USLewXx7EiWqdfkBBdUcsoxmnae)
+[`AI研习社知识星球精选导读.xlsx`](https://zl49so8lbq.feishu.cn/wiki/USLewXx7EiWqdfkBBdUcsoxmnae)

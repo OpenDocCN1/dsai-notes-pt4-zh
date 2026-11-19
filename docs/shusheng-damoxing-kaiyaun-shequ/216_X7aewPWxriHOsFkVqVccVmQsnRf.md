@@ -1,3 +1,4 @@
+
 # 第二期实战营项目（项目申报火热进行中～）
 
 > 来源：[https://aicarrier.feishu.cn/docx/HPYudMk8so3mo4xNuN1cOtdun1Z](https://aicarrier.feishu.cn/docx/HPYudMk8so3mo4xNuN1cOtdun1Z)
@@ -8,7 +9,7 @@
 
 **加入群聊找小助手兑换算力**
 
-# **时间线**
+## 时间线
 
 | 日期 | 事项 |
 | --- | --- |
@@ -17,9 +18,9 @@
 | 6 月 20 日 | 优秀项目公布&amp;人气奖拉票 |
 | 6 月 23 日 | 人气奖&amp;明星项目公布 |
 
-# 项目算力激励
+## 项目算力激励
 
-## 实战营学员项目算力激励
+### 实战营学员项目算力激励
 
 实战营学员报名即提供算力支持！
 
@@ -27,9 +28,9 @@
 | --- | --- | --- |
 | 团队项目算力点 | 500 算力点 | 价值约 500 人民币 |
 | 团队GPU Quota | 10 | 单位为 10% A100 |
-| 团队磁盘 | 200 GB | /group_share 目录 200GB 共享 Quota |
+| 团队磁盘 | 200 GB | `/group_share` 目录 200GB 共享 Quota |
 
-## 实战营结营学员项目算力激励
+### 实战营结营学员项目算力激励
 
 实战营结营学员报名所在团队即提供算力支持！
 
@@ -37,9 +38,9 @@
 | --- | --- | --- |
 | 团队项目算力点 | 1288 算力点 | 价值约 1288 人民币 |
 | 团队GPU Quota | 20 | 单位为 10% A100 |
-| 团队磁盘 | 500 GB | /group_share 目录 500GB 共享 Quota |
+| 团队磁盘 | 500 GB | `/group_share` 目录 500GB 共享 Quota |
 
-# **奖项设置**
+## 奖项设置
 
 | 奖项 | 评价标准 | 激励 |
 | --- | --- | --- |
@@ -49,11 +50,11 @@
 
 备注：激励除证书外不累计获得，最终解释权归书生·浦语运营团队所有～，算力点有效时长为 2 个月～
 
-# 需提交的材料
+## 需提交的材料
 
 参加实战营项目的小伙伴请通过问卷登记团队信息（提交后问卷可以更改，先不用纠结先提交），登记了项目之后联系  兑换算力～
 
-https://aicarrier.feishu.cn/share/base/form/shrcnZAhJeT6PYxhkvRxCnPljkf
+`https://aicarrier.feishu.cn/share/base/form/shrcnZAhJeT6PYxhkvRxCnPljkf`
 
 ![](img/9567fb21e3bb4cf478b60e87745333ee.png)
 
@@ -69,16 +70,16 @@ https://aicarrier.feishu.cn/share/base/form/shrcnZAhJeT6PYxhkvRxCnPljkf
 
 同时欢迎大家点击以下链接，授权登陆为书生·浦语点亮 GitHub 繁星
 
-https://r.vansin.top/star_repos?s=icamp
+`https://r.vansin.top/star_repos?s=icamp`
 
-# 浦源大模型挑战赛
+## 浦源大模型挑战赛
 
 在这里推荐小伙伴们将实战营项目提交到浦源大模型挑战赛（赛事信息来源选择[书生浦语实战营/社区]），报名成功后截图给 （其他证明也可以），可以获取后续算力资源改进项目。
 
 ![](img/a3d95851a9ae64b2caadebb93ce32c80.png)
 
-赛事报名地址：https://www.shlab.org.cn/event/detail/59
+赛事报名地址：`https://www.shlab.org.cn/event/detail/59`
 
-# 常见问题 QA
+## 常见问题 QA
 
 <https://aicarrier.feishu.cn/sync/YF4fd8DGrsM0kabILLAcUxm0nWe>

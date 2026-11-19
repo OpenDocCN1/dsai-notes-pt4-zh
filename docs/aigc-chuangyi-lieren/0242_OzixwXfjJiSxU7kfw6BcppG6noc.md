@@ -1,3 +1,4 @@
+
 # 5 | Chain of Thought Prompting
 
 > 来源：[https://aigcreative.feishu.cn/docx/ApkVdnXmioOWsnxfNAucf2phnxb](https://aigcreative.feishu.cn/docx/ApkVdnXmioOWsnxfNAucf2phnxb)

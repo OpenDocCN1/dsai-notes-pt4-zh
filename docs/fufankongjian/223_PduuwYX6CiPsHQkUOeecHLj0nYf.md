@@ -1,12 +1,13 @@
+
 # LCEL快速入门与实战
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/SwL9dUhNRoYPoBxnM0jc1caxnhe](https://kq4b3vgg5b.feishu.cn/docx/SwL9dUhNRoYPoBxnM0jc1caxnhe)
 
-## 课程说明：
+## 课程说明
 
-+   体验课时间有限，若想深度学习大模型技术，欢迎大家报名我主讲的《2025大模型Agent智能体开发实战》
+体验课时间有限，若想深度学习大模型技术，欢迎大家报名我主讲的《2025大模型Agent智能体开发实战》。
 
-**《2025大模型Agent智能体开发实战**》为【100+小时】体系大课，总共20大模块精讲精析，零基础直达大模型企业级应用！
+《2025大模型Agent智能体开发实战》为【100+小时】体系大课，总共20大模块精讲精析，零基础直达大模型企业级应用！
 
 ![](img/d140c988a61a47a496e52de81cd0350c.png)
 
@@ -16,50 +17,46 @@
 
 ---
 
-# 《2025大模型智能体Agent开发实战》体验课
+## 《2025大模型智能体Agent开发实战》体验课
 
-## LangChain AI+ DeepSeek v3 企业 Agent 开发实战
+### LangChain AI+ DeepSeek v3 企业 Agent 开发实战
 
-## Part 1. LCEL (LangChain Expression Language) 快速入门与实战
+### Part 1. LCEL (LangChain Expression Language) 快速入门与实战
 
-# 1. LCEL基本概念入门
+## 1. LCEL基本概念入门
 
-LCEL(LangChain Expression Language)是 LangChain 中非常关键的概念，它指的是一种声明式的表达式语言，用于通过链式组合不同的模块。它将不同的组件通过统一的Runable接口连接起来，从而实现具体的流程或功能（比如RAG、Agent）。
+LCEL(LangChain Expression Language)是 LangChain 中非常关键的概念，它指的是一种声明式的表达式语言，用于通过链式组合不同的模块。它将不同的组件通过统一的`Runnable`接口连接起来，从而实现具体的流程或功能（比如RAG、Agent）。
 
 ![](img/87610f7a90188889cae014bf7a60ebf9.png)
 
-因为每个模块都是LCEL对象，因此基于LCEL对象连接形成的链，本身也是一个 LCEL 对象，所以当通过一组通用的调用方法（invoke、 batch、stream、 ainvoke ）方法时，就能够做到定制化组合链、并行化组件、回退、动态配置链内部结构等标准化的操作。它的优势非常明显：
+因为每个模块都是`LCEL`对象，因此基于`LCEL`对象连接形成的链，本身也是一个 `LCEL` 对象，所以当通过一组通用的调用方法（`invoke`、`batch`、`stream`、`ainvoke`）方法时，就能够做到定制化组合链、并行化组件、回退、动态配置链内部结构等标准化的操作。它的优势非常明显：
 
-1.  统一的接口：每个 LCEL 对象都实现Runnable接口，因此可以非常方便的连接到一起；
+1. 统一的接口：每个 `LCEL` 对象都实现`Runnable`接口，因此可以非常方便的连接到一起；
+1. 模块化操作：每个组件都可以独立开发和测试，处理好输入和输出就可以通过`LCEL`集成到一起；
+1. 良好扩展性：各个模块组件之间都实现了通用的调用方法（`invoke`、`batch`、`stream`、`ainvoke`）方法，因此可以灵活组合使用不同的使用场景；
 
-1.  模块化操作：每个组件都可以独立开发和测试，处理好输入和输出就可以通过LCEL集成到一起；
-
-1.  良好扩展性：各个模块组件之间都实现了通用的调用方法（invoke、 batch、stream、 ainvoke ）方法，因此可以灵活组合使用不同的使用场景；
-
-比如LangChain中抽象出来的最简单的 Model I/O 模块。
+比如`LangChain`中抽象出来的最简单的 Model I/O 模块。
 
 ![](img/6e73c4bffcc2718092cdfdb5da9063cf.png)
 
-LangChain的Model I/O模块提供了标准的、可扩展的接口实现与大语言模型的外部集成。所谓的Model I/O，包括模型输入（Prompts）、模型输出（OutPuts）和模型本身（Models），简单理解就是通过该模块，我们可以快速与某个大模型进行对话交互，整个内部逻辑就相当于我们最熟悉的这个过程：输入Prompt，得到大模型针对该Prompt的推理结果。如下示例为OpenAI的 GPT 系列模型的API 调用规范：
+LangChain的Model I/O模块提供了标准的、可扩展的接口实现与大语言模型的外部集成。所谓的Model I/O，包括模型输入（Prompts）、模型输出（Outputs）和模型本身（Models），简单理解就是通过该模块，我们可以快速与某个大模型进行对话交互，整个内部逻辑就相当于我们最熟悉的这个过程：输入Prompt，得到大模型针对该Prompt的推理结果。如下示例为OpenAI的 GPT 系列模型的API 调用规范：
 
 ```
 response = openai.ChatCompletion.create(
-  model=&quot;gpt-3.5-turbo&quot;,
+  model="gpt-3.5-turbo",
   messages=[
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请问，什么是机器学习？&quot;}
+    {"role": "user", "content": "请问，什么是机器学习？"}
   ]
 )
 ```
 
-在LangChain的Model I/O模块设计中，包含三个核心部分： Prompt Template（对应上图中的Format部分）， Model（对应上图中的Predict部分） 和Output Parser（对应上图中的Parse部分）。
+在LangChain的Model I/O模块设计中，包含三个核心部分： `Prompt Template`（对应上图中的Format部分）， `Model`（对应上图中的Predict部分） 和 `Output Parser`（对应上图中的Parse部分）。
 
-+   **Format：即指代Prompts Temp**late，通过模板化来管理大模型的输入；
++ `Format`：即指代Prompts Template，通过模板化来管理大模型的输入；
++ `Predict`：即指代Models，使用通用接口调用不同的大语言模型；
++ `Parse`：即指代Output部分，用来从模型的推理中提取信息，并按照预先设定好的模版来规范化输出。
 
-+   Predict：即指代Models，使用通用接口调用不同的大语言模型；
-
-+   **Parse：即指代Output部分，用来从模型的推理中提取信**息，并按照预先设定好的模版来规范化输出。
-
-+   **Format**
++ `Format`
 
 对于Prompt Template第一部分，传统上我们创建提示词是通过手工编写来实现的，在这个过程中会利用各种提示工程技巧，如Few-Shot、链式推理（CoT）等方法，以提高大模型的推理性能。然而，在应用开发中，一个关键的考量是提示词不能是一成不变的。 其原因在于，应用开发需要适应多变的用户需求和场景。固定的提示词限制了模型的灵活性和适用范围。例如，如果我们正在开发一个天气查询应用，用户可能会以多种方式提出查询，如“今天的天气怎么样？”或“明天纽约的温度是多少度？”。如果提示词是固定的，它可能只能处理一种特定类型的查询，而无法适应这种多样性的需求。
 
@@ -67,10 +64,10 @@ response = openai.ChatCompletion.create(
 
 ```
 # 将一个插件的关键信息拼接成一段文本的模版。
-TOOL_DESC = &quot;&quot;&quot;{name_for_model}: Call this tool to interact with the {name_for_human} API. What is the {name_for_human} API useful for? {description_for_model} Parameters: {parameters}&quot;&quot;&quot;
+TOOL_DESC = """{name_for_model}: Call this tool to interact with the {name_for_human} API. What is the {name_for_human} API useful for? {description_for_model} Parameters: {parameters}"""
 
 # ReAct prompting 的 instruction 模版，将包含插件的详细信息。
-PROMPT_REACT = &quot;&quot;&quot;Answer the following questions as best you can. You have access to the following APIs:
+PROMPT_REACT = """Answer the following questions as best you can. You have access to the following APIs:
 
 {tool_descs}
 
@@ -87,49 +84,47 @@ Final Answer: the final answer to the original input question
 
 Begin!
 
-Question: {query}&quot;&quot;&quot;
+Question: {query}"""
 ```
 
 因此，引入Prompt Template可以支持变量和动态内容的插入，使得同一个应用可以根据不同的输入动态调整提示词，从而更好地响应用户的具体需求。LangChain通过这种方式来提高应用的通用性和用户体验。
 
-+   **Predict**
++ `Predict`
 
 在Predict部分，实质上是处理模型从接收输入到执行推理的整个过程。考虑到存在两种主要类型的大模型——Base类模型和Chat类模型，LangChain在其Model I/O模块中对这两种模型都进行了抽象，分别归类为LLMs（Large Language Models）和Chat Models。我们还是以OpenAI 的 Completion 和 Chatcompletions方法为例：
 
 ```
-
 # Base类模型
 client.completions.create(
-  model=&quot;gpt-3.5-turbo-instruct&quot;,
-  prompt=&quot;Say this is a test&quot;,
+  model="gpt-3.5-turbo-instruct",
+  prompt="Say this is a test",
 )
-
 
 # 聊天模型
 client.chat.completions.create(
-  model=&quot;gpt-3.5-turbo&quot;,
+  model="gpt-3.5-turbo",
   messages=[
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一位乐于助人的AI智能小助手&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，请你介绍一下你自己。&quot;}
+    {"role": "system", "content": "你是一位乐于助人的AI智能小助手"},
+    {"role": "user", "content": "你好，请你介绍一下你自己。"}
   ]
 )
 ```
 
 LLMs是简化的大语言模型抽象，即基于给定的Prompt提供内容生成的功能。而Chat Models则专注于聊天API的抽象，需要维护上下文的记忆（聊天记录），呈现出更接近对话或聊天形式的交互。
 
-+   **Parse**
++ `Parse`
 
 我们知道，大模型的输出是不稳定的，同样的输入Prompt往往会得到不同形式的输出。在自然语言交互中，不同的语言表达方式通常不会造成理解上的障碍。但在应用开发中，大模型的输出可能是下一步逻辑处理的关键输入。因此，在这种情况下，规范化输出是必须要做的任务，以确保应用能够顺利进行后续的逻辑处理。
 
-输出解析器 Output Parser就是一个帮助结构化语言模型响应的抽象，可以获取格式指令或者进行更深层次的解析。这我们会在后面的实践中直观的体验到。
+输出解析器 `Output Parser`就是一个帮助结构化语言模型响应的抽象，可以获取格式指令或者进行更深层次的解析。这我们会在后面的实践中直观的体验到。
 
 整体而言，在Model I/O模块的抽象中，其一能够让开发者快速的接入不同的大模型，比如OpenAI、ChatGLM、Qwen等，按照既定规范执行模型推理。其二通过输入和输出的模板化处理，使其更贴合于应用开发的最佳实践。接下来，我们就逐步的介绍上述三个流程在LangChain下是如何进行集成和操作的。
 
 ![](img/0fd12cecbc865d0ab9f59ee39aac0d5e.png)
 
-# 2. DeepSeek v3 模型注册与使用
+## 2. DeepSeek v3 模型注册与使用
 
-+   DeepSeek v3账号注册与API获取
++ DeepSeek v3账号注册与API获取
 
 DeepSeek官网：https://www.deepseek.com/
 
@@ -155,7 +150,7 @@ DeepSeek官网：https://www.deepseek.com/
 
 ![](img/8b2628decca953f3a77aa2efde36ace9.png)
 
-# 3. 基于LCEL 实现 DeepSeep v3 的集成
+## 3. 基于LCEL 实现 DeepSeep v3 的集成
 
 LangChain中最基本和常见的用例是将提示模板和模型链接在一起。为了看看这是如何工作的，我们创建一个接受某个主题并生成响应的链：
 
@@ -167,18 +162,18 @@ LangChain中最基本和常见的用例是将提示模板和模型链接在一�
 from langchain_openai import ChatOpenAI
 
 # 使用DeepSeek-chat模型作为chatmodel
-model = ChatOpenAI(model=&quot;deepseek-chat&quot;,
-                   api_key=&#x27;sk-6c960cb2a7&#x27;,
-                   base_url=&#x27;https://api.deepseek.com&#x27;)
+model = ChatOpenAI(model="deepseek-chat",
+                   api_key='sk-6c960cb2a7',
+                   base_url='https://api.deepseek.com')
 ```
 
-使用 LCEL 将这些不同的组件拼凑成一个链。其中 | 符号类似于unix管道运算符，它将不同的组件链接在一起，将一个组件的输出作为下一个组件的输入。
+使用 `LCEL` 将这些不同的组件拼凑成一个链。其中 `|` 符号类似于unix管道运算符，它将不同的组件链接在一起，将一个组件的输出作为下一个组件的输入。
 
 ```
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
-prompt = ChatPromptTemplate.from_template(&quot;请你介绍一下什么是 {topic}&quot;)
+prompt = ChatPromptTemplate.from_template("请你介绍一下什么是 {topic}")
 
 chain = prompt | model | StrOutputParser()
 ```
@@ -186,24 +181,24 @@ chain = prompt | model | StrOutputParser()
 在此链中，用户输入传递到提示模板，然后提示模板输出传递到模型，然后模型输出传递到输出解析器。
 
 ```
-chain.invoke({&quot;topic&quot;: &quot;人工智能&quot;})
+chain.invoke({"topic": "人工智能"})
 ```
 
 ```
-&#x27;人工智能（Artificial Intelligence，简称 AI）是指通过计算机系统模拟、扩展和增强人类智能的技术和科学领域。它旨在使机器能够执行通常需要人类智能的任务，例如学习、推理、问题解决、感知、语言理解和决策等。\n\n### 人工智能的主要特点：\n1. **模拟人类智能**：AI 系统试图模仿人类的思维过程，例如学习、推理和决策。\n2. **自动化**：AI 可以自动执行任务，减少人类干预。\n3. **适应性和学习能力**：许多 AI 系统能够通过数据学习并改进性能，例如机器学习和深度学习。\n4. **处理复杂问题**：AI 可以处理大量数据并解决复杂问题，例如图像识别、自然语言处理和预测分析。\n\n### 人工智能的分类：\n1. **弱人工智能（Narrow AI）**：专注于特定任务，例如语音助手（如 Siri、Alexa）或图像识别系统。这是目前最常见的 AI 形式。\n2. **强人工智能（General AI）**：具备与人类相当的通用智能，能够理解、学习和执行任何智力任务。目前尚未实现。\n3. **超级人工智能（Superintelligent AI）**：超越人类智能的 AI，能够在几乎所有领域超越人类。这仍然是理论上的概念。\n\n### 人工智能的关键技术：\n1. **机器学习（Machine Learning）**：通过数据训练模型，使系统能够从经验中学习并改进性能。\n2. **深度学习（Deep Learning）**：一种机器学习方法，使用神经网络模拟人脑的工作方式，适用于图像识别、语音识别等任务。\n3. **自然语言处理（NLP）**：使机器能够理解、生成和处理人类语言，例如聊天机器人和翻译系统。\n4. **计算机视觉（Computer Vision）**：使机器能够“看”并理解图像和视频内容，例如人脸识别和自动驾驶。\n5. **强化学习（Reinforcement Learning）**：通过试错和奖励机制训练 AI 系统，使其在特定环境中做出最佳决策。\n\n### 人工智能的应用领域：\n- **医疗**：疾病诊断、药物研发、个性化治疗。\n- **金融**：风险评估、欺诈检测、自动化交易。\n- **交通**：自动驾驶、交通流量优化。\n- **教育**：个性化学习、智能辅导系统。\n- **娱乐**：游戏 AI、内容推荐系统。\n- **制造业**：自动化生产线、质量控制。\n\n### 人工智能的挑战与争议：\n1. **伦理问题**：AI 的决策可能涉及隐私、偏见和公平性等问题。\n2. **就业影响**：自动化可能取代某些工作岗位，引发社会经济问题。\n3. **安全性**：AI 系统可能被滥用或出现不可预测的行为。\n4. **技术限制**：目前的 AI 仍无法完全模拟人类的创造力和情感。\n\n总之，人工智能是一项快速发展的技术，正在深刻改变我们的生活和工作方式。尽管它带来了巨大的潜力，但也需要谨慎应对其带来的挑战。&#x27;
+'人工智能（Artificial Intelligence，简称 AI）是指通过计算机系统模拟、扩展和增强人类智能的技术和科学领域。它旨在使机器能够执行通常需要人类智能的任务，例如学习、推理、问题解决、感知、语言理解和决策等。\n\n### 人工智能的主要特点：\n1. **模拟人类智能**：AI 系统试图模仿人类的思维过程，例如学习、推理和决策。\n2. **自动化**：AI 可以自动执行任务，减少人类干预。\n3. **适应性和学习能力**：许多 AI 系统能够通过数据学习并改进性能，例如机器学习和深度学习。\n4. **处理复杂问题**：AI 可以处理大量数据并解决复杂问题，例如图像识别、自然语言处理和预测分析。\n\n### 人工智能的分类：\n1. **弱人工智能（Narrow AI）**：专注于特定任务，例如语音助手（如 Siri、Alexa）或图像识别系统。这是目前最常见的 AI 形式。\n2. **强人工智能（General AI）**：具备与人类相当的通用智能，能够理解、学习和执行任何智力任务。目前尚未实现。\n3. **超级人工智能（Superintelligent AI）**：超越人类智能的 AI，能够在几乎所有领域超越人类。这仍然是理论上的概念。\n\n### 人工智能的关键技术：\n1. **机器学习（Machine Learning）**：通过数据训练模型，使系统能够从经验中学习并改进性能。\n2. **深度学习（Deep Learning）**：一种机器学习方法，使用神经网络模拟人脑的工作方式，适用于图像识别、语音识别等任务。\n3. **自然语言处理（NLP）**：使机器能够理解、生成和处理人类语言，例如聊天机器人和翻译系统。\n4. **计算机视觉（Computer Vision）**：使机器能够“看”并理解图像和视频内容，例如人脸识别和自动驾驶。\n5. **强化学习（Reinforcement Learning）**：通过试错和奖励机制训练 AI 系统，使其在特定环境中做出最佳决策。\n\n### 人工智能的应用领域：\n- **医疗**：疾病诊断、药物研发、个性化治疗。\n- **金融**：风险评估、欺诈检测、自动化交易。\n- **交通**：自动驾驶、交通流量优化。\n- **教育**：个性化学习、智能辅导系统。\n- **娱乐**：游戏 AI、内容推荐系统。\n- **制造业**：自动化生产线、质量控制。\n\n### 人工智能的挑战与争议：\n1. **伦理问题**：AI 的决策可能涉及隐私、偏见和公平性等问题。\n2. **就业影响**：自动化可能取代某些工作岗位，引发社会经济问题。\n3. **安全性**：AI 系统可能被滥用或出现不可预测的行为。\n4. **技术限制**：目前的 AI 仍无法完全模拟人类的创造力和情感。\n\n总之，人工智能是一项快速发展的技术，正在深刻改变我们的生活和工作方式。尽管它带来了巨大的潜力，但也需要谨慎应对其带来的挑战。'
 ```
 
-在这个过程中，Runnable 会动态生成输入的描述，显示的将其传入Pydantic 模型。我们可以对其调用.schema()来获取 JSONSchema 表示。
+在这个过程中，`Runnable` 会动态生成输入的描述，显示的将其传入`Pydantic` 模型。我们可以对其调用`.schema()`来获取 JSONSchema 表示。
 
 ```
 chain.input_schema.schema()
 ```
 
 ```
-{&#x27;properties&#x27;: {&#x27;topic&#x27;: {&#x27;title&#x27;: &#x27;Topic&#x27;, &#x27;type&#x27;: &#x27;string&#x27;}},
- &#x27;required&#x27;: [&#x27;topic&#x27;],
- &#x27;title&#x27;: &#x27;PromptInput&#x27;,
- &#x27;type&#x27;: &#x27;object&#x27;}
+{'properties': {'topic': {'title': 'Topic', 'type': 'string'}},
+ 'required': ['topic'],
+ 'title': 'PromptInput',
+ 'type': 'object'}
 ```
 
 ```
@@ -211,846 +206,857 @@ prompt.input_schema.schema()
 ```
 
 ```
-{&#x27;properties&#x27;: {&#x27;topic&#x27;: {&#x27;title&#x27;: &#x27;Topic&#x27;, &#x27;type&#x27;: &#x27;string&#x27;}},
- &#x27;required&#x27;: [&#x27;topic&#x27;],
- &#x27;title&#x27;: &#x27;PromptInput&#x27;,
- &#x27;type&#x27;: &#x27;object&#x27;}
+{'properties': {'topic': {'title': 'Topic', 'type': 'string'}},
+ 'required': ['topic'],
+ 'title': 'PromptInput',
+ 'type': 'object'}
 ```
 
 ```
 prompt.output_schema.schema()
 ```
 
+
+
+# ChatPromptTemplateOutput
+
+```python
+{'$defs': {'AIMessage': {'additionalProperties': True,
+   'description': 'Message from an AI.\n\nAIMessage is returned from a chat model as a response to a prompt.\n\nThis message represents the output of the model and consists of both\nthe raw output as returned by the model together standardized fields\n(e.g., tool calls, usage metadata) added by the LangChain framework.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'ai',
+     'default': 'ai',
+     'enum': ['ai'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'},
+    'tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/ToolCall'},
+     'title': 'Tool Calls',
+     'type': 'array'},
+    'invalid_tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/InvalidToolCall'},
+     'title': 'Invalid Tool Calls',
+     'type': 'array'},
+    'usage_metadata': {'anyOf': [{'$ref': '#/$defs/UsageMetadata'},
+      {'type': 'null'}],
+     'default': None}},
+   'required': ['content'],
+   'title': 'AIMessage',
+   'type': 'object'},
+  'AIMessageChunk': {'additionalProperties': True,
+   'description': 'Message chunk from an AI.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'AIMessageChunk',
+     'default': 'AIMessageChunk',
+     'enum': ['AIMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'},
+    'tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/ToolCall'},
+     'title': 'Tool Calls',
+     'type': 'array'},
+    'invalid_tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/InvalidToolCall'},
+     'title': 'Invalid Tool Calls',
+     'type': 'array'},
+    'usage_metadata': {'anyOf': [{'$ref': '#/$defs/UsageMetadata'},
+      {'type': 'null'}],
+     'default': None},
+    'tool_call_chunks': {'default': [],
+     'items': {'$ref': '#/$defs/ToolCallChunk'},
+     'title': 'Tool Call Chunks',
+     'type': 'array'}},
+   'required': ['content'],
+   'title': 'AIMessageChunk',
+   'type': 'object'},
+  'ChatMessage': {'additionalProperties': True,
+   'description': 'Message that can be assigned an arbitrary speaker (i.e. role).',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'chat',
+     'default': 'chat',
+     'enum': ['chat'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'role': {'title': 'Role', 'type': 'string'}},
+   'required': ['content', 'role'],
+   'title': 'ChatMessage',
+   'type': 'object'},
+  'ChatMessageChunk': {'additionalProperties': True,
+   'description': 'Chat Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'ChatMessageChunk',
+     'default': 'ChatMessageChunk',
+     'enum': ['ChatMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'role': {'title': 'Role', 'type': 'string'}},
+   'required': ['content', 'role'],
+   'title': 'ChatMessageChunk',
+   'type': 'object'},
+  'ChatPromptValueConcrete': {'description': 'Chat prompt value which explicitly lists out the message types it accepts.\nFor use in external schemas.',
+   'properties': {'messages': {'items': {'oneOf': [{'$ref': '#/$defs/AIMessage'},
+       {'$ref': '#/$defs/HumanMessage'},
+       {'$ref': '#/$defs/ChatMessage'},
+       {'$ref': '#/$defs/SystemMessage'},
+       {'$ref': '#/$defs/FunctionMessage'},
+       {'$ref': '#/$defs/ToolMessage'},
+       {'$ref': '#/$defs/AIMessageChunk'},
+       {'$ref': '#/$defs/HumanMessageChunk'},
+       {'$ref': '#/$defs/ChatMessageChunk'},
+       {'$ref': '#/$defs/SystemMessageChunk'},
+       {'$ref': '#/$defs/FunctionMessageChunk'},
+       {'$ref': '#/$defs/ToolMessageChunk'}]},
+     'title': 'Messages',
+     'type': 'array'},
+    'type': {'const': 'ChatPromptValueConcrete',
+     'default': 'ChatPromptValueConcrete',
+     'enum': ['ChatPromptValueConcrete'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['messages'],
+   'title': 'ChatPromptValueConcrete',
+   'type': 'object'},
+  'FunctionMessage': {'additionalProperties': True,
+   'description': 'Message for passing the result of executing a tool back to a model.\n\nFunctionMessage are an older version of the ToolMessage schema, and\ndo not contain the tool_call_id field.\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'function',
+     'default': 'function',
+     'enum': ['function'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'title': 'Name', 'type': 'string'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content', 'name'],
+   'title': 'FunctionMessage',
+   'type': 'object'},
+  'FunctionMessageChunk': {'additionalProperties': True,
+   'description': 'Function Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'FunctionMessageChunk',
+     'default': 'FunctionMessageChunk',
+     'enum': ['FunctionMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'title': 'Name', 'type': 'string'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content', 'name'],
+   'title': 'FunctionMessageChunk',
+   'type': 'object'},
+  'HumanMessage': {'additionalProperties': True,
+   'description': 'Message from a human.\n\nHumanMessages are messages that are passed in from a human to the model.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content="You are a helpful assistant! Your name is Bob."\n            ),\n            HumanMessage(\n                content="What is your name?"\n            )\n        ]\n\n        # Instantiate a chat model and invoke it with the messages\n        model = ...\n        print(model.invoke(messages))',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'human',
+     'default': 'human',
+     'enum': ['human'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'}},
+   'required': ['content'],
+   'title': 'HumanMessage',
+   'type': 'object'},
+  'HumanMessageChunk': {'additionalProperties': True,
+   'description': 'Human Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'HumanMessageChunk',
+     'default': 'HumanMessageChunk',
+     'enum': ['HumanMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'}},
+   'required': ['content'],
+   'title': 'HumanMessageChunk',
+   'type': 'object'},
+  'InputTokenDetails': {'description': 'Breakdown of input token counts.\n\nDoes *not* need to sum to full input token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "audio": 10,\n            "cache_creation": 200,\n            "cache_read": 100,\n        }\n\n.. versionadded:: 0.3.9',
+   'properties': {'audio': {'title': 'Audio', 'type': 'integer'},
+    'cache_creation': {'title': 'Cache Creation', 'type': 'integer'},
+    'cache_read': {'title': 'Cache Read', 'type': 'integer'}},
+   'title': 'InputTokenDetails',
+   'type': 'object'},
+  'InvalidToolCall': {'description': 'Allowance for errors made by LLM.\n\nHere we add an `error` key to surface errors made during generation\n(e.g., invalid JSON arguments.)',
+   'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'title': 'Name'},
+    'args': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Args'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'},
+    'error': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'title': 'Error'},
+    'type': {'const': 'invalid_tool_call',
+     'enum': ['invalid_tool_call'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['name', 'args', 'id', 'error'],
+   'title': 'InvalidToolCall',
+   'type': 'object'},
+  'OutputTokenDetails': {'description': 'Breakdown of output token counts.\n\nDoes *not* need to sum to full output token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "audio": 10,\n            "reasoning": 200,\n        }\n\n.. versionadded:: 0.3.9',
+   'properties': {'audio': {'title': 'Audio', 'type': 'integer'},
+    'reasoning': {'title': 'Reasoning', 'type': 'integer'}},
+   'title': 'OutputTokenDetails',
+   'type': 'object'},
+  'StringPromptValue': {'description': 'String prompt value.',
+   'properties': {'text': {'title': 'Text', 'type': 'string'},
+    'type': {'const': 'StringPromptValue',
+     'default': 'StringPromptValue',
+     'enum': ['StringPromptValue'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['text'],
+   'title': 'StringPromptValue',
+   'type': 'object'},
+  'SystemMessage': {'additionalProperties': True,
+   'description': 'Message for priming AI behavior.\n\nThe system message is usually passed in as the first of a sequence\nof input messages.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content="You are a helpful assistant! Your name is Bob."\n            ),\n            HumanMessage(\n                content="What is your name?"\n            )\n        ]\n\n        # Define a chat model and invoke it with the messages\n        print(model.invoke(messages))',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'system',
+     'default': 'system',
+     'enum': ['system'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content'],
+   'title': 'SystemMessage',
+   'type': 'object'},
+  'SystemMessageChunk': {'additionalProperties': True,
+   'description': 'System Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'SystemMessageChunk',
+     'default': 'SystemMessageChunk',
+     'enum': ['SystemMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content'],
+   'title': 'SystemMessageChunk',
+   'type': 'object'},
+  'ToolCall': {'description': 'Represents a request to call a tool.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "name": "foo",\n            "args": {"a": 1},\n            "id": "123"\n        }\n\n    This represents a request to call the tool named "foo" with arguments {"a": 1}\n    and an identifier of "123".',
+   'properties': {'name': {'title': 'Name', 'type': 'string'},
+    'args': {'title': 'Args', 'type': 'object'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'},
+    'type': {'const': 'tool_call',
+     'enum': ['tool_call'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['name', 'args', 'id'],
+   'title': 'ToolCall',
+   'type': 'object'},
+  'ToolCallChunk': {'description': 'A chunk of a tool call (e.g., as part of a stream).\n\nWhen merging ToolCallChunks (e.g., via AIMessageChunk.__add__),\nall string attributes are concatenated. Chunks are only merged if their\nvalues of `index` are equal and not None.\n\nExample:\n\n.. code-block:: python\n\n    left_chunks = [ToolCallChunk(name="foo", args=\'{"a":\', index=0)]\n    right_chunks = [ToolCallChunk(name=None, args=\'1}\', index=0)]\n\n    (\n        AIMessageChunk(content="", tool_call_chunks=left_chunks)\n        + AIMessageChunk(content="", tool_call_chunks=right_chunks)\n    ).tool_call_chunks == [ToolCallChunk(name=\'foo\', args=\'{"a":1}\', index=0)]',
+   'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'title': 'Name'},
+    'args': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Args'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'},
+    'index': {'anyOf': [{'type': 'integer'}, {'type': 'null'}],
+     'title': 'Index'},
+    'type': {'const': 'tool_call_chunk',
+     'enum': ['tool_call_chunk'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['name', 'args', 'id', 'index'],
+   'title': 'ToolCallChunk',
+   'type': 'object'},
+  'ToolMessage': {'additionalProperties': True,
+   'description': 'Message for passing the result of executing a tool back to a model.\n\nToolMessages contain the result of a tool invocation. Typically, the result\nis encoded inside the `content` field.\n\nExample: A ToolMessage representing a result of 42 from a tool call with id\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        ToolMessage(content=\'42\', tool_call_id=\'call_Jja7J89XsjrOLA5r!MEOW!SL\')\n\n\nExample: A ToolMessage where only part of the tool output is sent to the model\n    and the full output is passed in to artifact.\n\n    .. versionadded:: 0.2.17\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        tool_output = {\n            "stdout": "From the graph we can see that the correlation between x and y is ...",\n            "stderr": None,\n            "artifacts": {"type": "image", "base64_data": "/9j/4gIcSU...\"},\n        }\n\n        ToolMessage(\n            content=tool_output["stdout"],\n            artifact=tool_output,\n            tool_call_id=\'call_Jja7J89XsjrOLA5r!MEOW!SL\',\n        )\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'tool',
+     'default': 'tool',
+     'enum': ['tool'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'tool_call_id': {'title': 'Tool Call Id', 'type': 'string'},
+    'artifact': {'default': None, 'title': 'Artifact'},
+    'status': {'default': 'success',
+     'enum': ['success', 'error'],
+     'title': 'Status',
+     'type': 'string'}},
+   'required': ['content', 'tool_call_id'],
+   'title': 'ToolMessage',
+   'type': 'object'},
+  'ToolMessageChunk': {'additionalProperties': True,
+   'description': 'Tool Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'ToolMessageChunk',
+     'default': 'ToolMessageChunk',
+     'enum': ['ToolMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'tool_call_id': {'title': 'Tool Call Id', 'type': 'string'},
+    'artifact': {'default': None, 'title': 'Artifact'},
+    'status': {'default': 'success',
+     'enum': ['success', 'error'],
+     'title': 'Status',
+     'type': 'string'}},
+   'required': ['content', 'tool_call_id'],
+   'title': 'ToolMessageChunk',
+   'type': 'object'},
+  'UsageMetadata': {'description': 'Usage metadata for a message, such as token counts.\n\nThis is a standard representation of token usage that is consistent across models.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "input_tokens": 350,\n            "output_tokens": 240,\n            "total_tokens": 590,\n            "input_token_details": {\n                "audio": 10,\n                "cache_creation": 200,\n                "cache_read": 100,\n            },\n            "output_token_details": {\n                "audio": 10,\n                "reasoning": 200,\n            }\n        }\n\n.. versionchanged:: 0.3.9\n\n    Added ``input_token_details`` and ``output_token_details``.',
+   'properties': {'input_tokens': {'title': 'Input Tokens', 'type': 'integer'},
+    'output_tokens': {'title': 'Output Tokens', 'type': 'integer'},
+    'total_tokens': {'title': 'Total Tokens', 'type': 'integer'},
+    'input_token_details': {'$ref': '#/$defs/InputTokenDetails'},
+    'output_token_details': {'$ref': '#/$defs/OutputTokenDetails'}},
+   'required': ['input_tokens', 'output_tokens', 'total_tokens'],
+   'title': 'UsageMetadata',
+   'type': 'object'}},
+ 'anyOf': [{'$ref': '#/$defs/StringPromptValue'},
+ {'$ref': '#/$defs/ChatPromptValueConcrete'}],
+ 'title': 'ChatPromptTemplateOutput'}
 ```
-{&#x27;$defs&#x27;: {&#x27;AIMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message from an AI.\n\nAIMessage is returned from a chat model as a response to a prompt.\n\nThis message represents the output of the model and consists of both\nthe raw output as returned by the model together standardized fields\n(e.g., tool calls, usage metadata) added by the LangChain framework.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ai&#x27;,
-     &#x27;default&#x27;: &#x27;ai&#x27;,
-     &#x27;enum&#x27;: [&#x27;ai&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;},
-    &#x27;tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;invalid_tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/InvalidToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Invalid Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;usage_metadata&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/UsageMetadata&#x27;},
-      {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;AIMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;AIMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message chunk from an AI.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;AIMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;AIMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;AIMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;},
-    &#x27;tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;invalid_tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/InvalidToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Invalid Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;usage_metadata&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/UsageMetadata&#x27;},
-      {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None},
-    &#x27;tool_call_chunks&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ToolCallChunk&#x27;},
-     &#x27;title&#x27;: &#x27;Tool Call Chunks&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;AIMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ChatMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message that can be assigned an arbitrary speaker (i.e. role).&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;chat&#x27;,
-     &#x27;default&#x27;: &#x27;chat&#x27;,
-     &#x27;enum&#x27;: [&#x27;chat&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;role&#x27;: {&#x27;title&#x27;: &#x27;Role&#x27;, &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;role&#x27;],
-   &#x27;title&#x27;: &#x27;ChatMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ChatMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Chat Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ChatMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;ChatMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;ChatMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;role&#x27;: {&#x27;title&#x27;: &#x27;Role&#x27;, &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;role&#x27;],
-   &#x27;title&#x27;: &#x27;ChatMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ChatPromptValueConcrete&#x27;: {&#x27;description&#x27;: &#x27;Chat prompt value which explicitly lists out the message types it accepts.\nFor use in external schemas.&#x27;,
-   &#x27;properties&#x27;: {&#x27;messages&#x27;: {&#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/AIMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/HumanMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ChatMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/SystemMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/FunctionMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ToolMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/AIMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/HumanMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ChatMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/SystemMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/FunctionMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ToolMessageChunk&#x27;}]},
-     &#x27;title&#x27;: &#x27;Messages&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ChatPromptValueConcrete&#x27;,
-     &#x27;default&#x27;: &#x27;ChatPromptValueConcrete&#x27;,
-     &#x27;enum&#x27;: [&#x27;ChatPromptValueConcrete&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;messages&#x27;],
-   &#x27;title&#x27;: &#x27;ChatPromptValueConcrete&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;FunctionMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message for passing the result of executing a tool back to a model.\n\nFunctionMessage are an older version of the ToolMessage schema, and\ndo not contain the tool_call_id field.\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;function&#x27;,
-     &#x27;default&#x27;: &#x27;function&#x27;,
-     &#x27;enum&#x27;: [&#x27;function&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;title&#x27;: &#x27;Name&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;name&#x27;],
-   &#x27;title&#x27;: &#x27;FunctionMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;FunctionMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Function Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;FunctionMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;FunctionMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;FunctionMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;title&#x27;: &#x27;Name&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;name&#x27;],
-   &#x27;title&#x27;: &#x27;FunctionMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;HumanMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message from a human.\n\nHumanMessages are messages that are passed in from a human to the model.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content=&quot;You are a helpful assistant! Your name is Bob.&quot;\n            ),\n            HumanMessage(\n                content=&quot;What is your name?&quot;\n            )\n        ]\n\n        # Instantiate a chat model and invoke it with the messages\n        model = ...\n        print(model.invoke(messages))&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;human&#x27;,
-     &#x27;default&#x27;: &#x27;human&#x27;,
-     &#x27;enum&#x27;: [&#x27;human&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;HumanMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;HumanMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Human Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;HumanMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;HumanMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;HumanMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;HumanMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;InputTokenDetails&#x27;: {&#x27;description&#x27;: &#x27;Breakdown of input token counts.\n\nDoes *not* need to sum to full input token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;audio&quot;: 10,\n            &quot;cache_creation&quot;: 200,\n            &quot;cache_read&quot;: 100,\n        }\n\n.. versionadded:: 0.3.9&#x27;,
-   &#x27;properties&#x27;: {&#x27;audio&#x27;: {&#x27;title&#x27;: &#x27;Audio&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;cache_creation&#x27;: {&#x27;title&#x27;: &#x27;Cache Creation&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;cache_read&#x27;: {&#x27;title&#x27;: &#x27;Cache Read&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;}},
-   &#x27;title&#x27;: &#x27;InputTokenDetails&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;InvalidToolCall&#x27;: {&#x27;description&#x27;: &#x27;Allowance for errors made by LLM.\n\nHere we add an `error` key to surface errors made during generation\n(e.g., invalid JSON arguments.)&#x27;,
-   &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;args&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Args&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;error&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Error&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;invalid_tool_call&#x27;,
-     &#x27;enum&#x27;: [&#x27;invalid_tool_call&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;name&#x27;, &#x27;args&#x27;, &#x27;id&#x27;, &#x27;error&#x27;],
-   &#x27;title&#x27;: &#x27;InvalidToolCall&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;OutputTokenDetails&#x27;: {&#x27;description&#x27;: &#x27;Breakdown of output token counts.\n\nDoes *not* need to sum to full output token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;audio&quot;: 10,\n            &quot;reasoning&quot;: 200,\n        }\n\n.. versionadded:: 0.3.9&#x27;,
-   &#x27;properties&#x27;: {&#x27;audio&#x27;: {&#x27;title&#x27;: &#x27;Audio&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;reasoning&#x27;: {&#x27;title&#x27;: &#x27;Reasoning&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;}},
-   &#x27;title&#x27;: &#x27;OutputTokenDetails&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;StringPromptValue&#x27;: {&#x27;description&#x27;: &#x27;String prompt value.&#x27;,
-   &#x27;properties&#x27;: {&#x27;text&#x27;: {&#x27;title&#x27;: &#x27;Text&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;StringPromptValue&#x27;,
-     &#x27;default&#x27;: &#x27;StringPromptValue&#x27;,
-     &#x27;enum&#x27;: [&#x27;StringPromptValue&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;text&#x27;],
-   &#x27;title&#x27;: &#x27;StringPromptValue&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;SystemMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message for priming AI behavior.\n\nThe system message is usually passed in as the first of a sequence\nof input messages.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content=&quot;You are a helpful assistant! Your name is Bob.&quot;\n            ),\n            HumanMessage(\n                content=&quot;What is your name?&quot;\n            )\n        ]\n\n        # Define a chat model and invoke it with the messages\n        print(model.invoke(messages))&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;system&#x27;,
-     &#x27;default&#x27;: &#x27;system&#x27;,
-     &#x27;enum&#x27;: [&#x27;system&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;SystemMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;SystemMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;System Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;SystemMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;SystemMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;SystemMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;SystemMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolCall&#x27;: {&#x27;description&#x27;: &#x27;Represents a request to call a tool.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;name&quot;: &quot;foo&quot;,\n            &quot;args&quot;: {&quot;a&quot;: 1},\n            &quot;id&quot;: &quot;123&quot;\n        }\n\n    This represents a request to call the tool named &quot;foo&quot; with arguments {&quot;a&quot;: 1}\n    and an identifier of &quot;123&quot;.&#x27;,
-   &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;title&#x27;: &#x27;Name&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;args&#x27;: {&#x27;title&#x27;: &#x27;Args&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;tool_call&#x27;,
-     &#x27;enum&#x27;: [&#x27;tool_call&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;name&#x27;, &#x27;args&#x27;, &#x27;id&#x27;],
-   &#x27;title&#x27;: &#x27;ToolCall&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolCallChunk&#x27;: {&#x27;description&#x27;: &#x27;A chunk of a tool call (e.g., as part of a stream).\n\nWhen merging ToolCallChunks (e.g., via AIMessageChunk.__add__),\nall string attributes are concatenated. Chunks are only merged if their\nvalues of `index` are equal and not None.\n\nExample:\n\n.. code-block:: python\n\n    left_chunks = [ToolCallChunk(name=&quot;foo&quot;, args=\&#x27;{&quot;a&quot;:\&#x27;, index=0)]\n    right_chunks = [ToolCallChunk(name=None, args=\&#x27;1}\&#x27;, index=0)]\n\n    (\n        AIMessageChunk(content=&quot;&quot;, tool_call_chunks=left_chunks)\n        + AIMessageChunk(content=&quot;&quot;, tool_call_chunks=right_chunks)\n    ).tool_call_chunks == [ToolCallChunk(name=\&#x27;foo\&#x27;, args=\&#x27;{&quot;a&quot;:1}\&#x27;, index=0)]&#x27;,
-   &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;args&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Args&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;index&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;integer&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Index&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;tool_call_chunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;tool_call_chunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;name&#x27;, &#x27;args&#x27;, &#x27;id&#x27;, &#x27;index&#x27;],
-   &#x27;title&#x27;: &#x27;ToolCallChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message for passing the result of executing a tool back to a model.\n\nToolMessages contain the result of a tool invocation. Typically, the result\nis encoded inside the `content` field.\n\nExample: A ToolMessage representing a result of 42 from a tool call with id\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        ToolMessage(content=\&#x27;42\&#x27;, tool_call_id=\&#x27;call_Jja7J89XsjrOLA5r!MEOW!SL\&#x27;)\n\n\nExample: A ToolMessage where only part of the tool output is sent to the model\n    and the full output is passed in to artifact.\n\n    .. versionadded:: 0.2.17\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        tool_output = {\n            &quot;stdout&quot;: &quot;From the graph we can see that the correlation between x and y is ...&quot;,\n            &quot;stderr&quot;: None,\n            &quot;artifacts&quot;: {&quot;type&quot;: &quot;image&quot;, &quot;base64_data&quot;: &quot;/9j/4gIcSU...&quot;},\n        }\n\n        ToolMessage(\n            content=tool_output[&quot;stdout&quot;],\n            artifact=tool_output,\n            tool_call_id=\&#x27;call_Jja7J89XsjrOLA5r!MEOW!SL\&#x27;,\n        )\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;tool&#x27;,
-     &#x27;default&#x27;: &#x27;tool&#x27;,
-     &#x27;enum&#x27;: [&#x27;tool&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;tool_call_id&#x27;: {&#x27;title&#x27;: &#x27;Tool Call Id&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;artifact&#x27;: {&#x27;default&#x27;: None, &#x27;title&#x27;: &#x27;Artifact&#x27;},
-    &#x27;status&#x27;: {&#x27;default&#x27;: &#x27;success&#x27;,
-     &#x27;enum&#x27;: [&#x27;success&#x27;, &#x27;error&#x27;],
-     &#x27;title&#x27;: &#x27;Status&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;tool_call_id&#x27;],
-   &#x27;title&#x27;: &#x27;ToolMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Tool Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ToolMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;ToolMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;ToolMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;tool_call_id&#x27;: {&#x27;title&#x27;: &#x27;Tool Call Id&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;artifact&#x27;: {&#x27;default&#x27;: None, &#x27;title&#x27;: &#x27;Artifact&#x27;},
-    &#x27;status&#x27;: {&#x27;default&#x27;: &#x27;success&#x27;,
-     &#x27;enum&#x27;: [&#x27;success&#x27;, &#x27;error&#x27;],
-     &#x27;title&#x27;: &#x27;Status&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;tool_call_id&#x27;],
-   &#x27;title&#x27;: &#x27;ToolMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;UsageMetadata&#x27;: {&#x27;description&#x27;: &#x27;Usage metadata for a message, such as token counts.\n\nThis is a standard representation of token usage that is consistent across models.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;input_tokens&quot;: 350,\n            &quot;output_tokens&quot;: 240,\n            &quot;total_tokens&quot;: 590,\n            &quot;input_token_details&quot;: {\n                &quot;audio&quot;: 10,\n                &quot;cache_creation&quot;: 200,\n                &quot;cache_read&quot;: 100,\n            },\n            &quot;output_token_details&quot;: {\n                &quot;audio&quot;: 10,\n                &quot;reasoning&quot;: 200,\n            }\n        }\n\n.. versionchanged:: 0.3.9\n\n    Added ``input_token_details`` and ``output_token_details``.&#x27;,
-   &#x27;properties&#x27;: {&#x27;input_tokens&#x27;: {&#x27;title&#x27;: &#x27;Input Tokens&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;output_tokens&#x27;: {&#x27;title&#x27;: &#x27;Output Tokens&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;total_tokens&#x27;: {&#x27;title&#x27;: &#x27;Total Tokens&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;input_token_details&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/InputTokenDetails&#x27;},
-    &#x27;output_token_details&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/OutputTokenDetails&#x27;}},
-   &#x27;required&#x27;: [&#x27;input_tokens&#x27;, &#x27;output_tokens&#x27;, &#x27;total_tokens&#x27;],
-   &#x27;title&#x27;: &#x27;UsageMetadata&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;}},
- &#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/StringPromptValue&#x27;},
-  {&#x27;$ref&#x27;: &#x27;#/$defs/ChatPromptValueConcrete&#x27;}],
- &#x27;title&#x27;: &#x27;ChatPromptTemplateOutput&#x27;}
-```
+
+
 
 ```
 model.input_schema.schema()
 ```
 
-```
-{&#x27;$defs&#x27;: {&#x27;AIMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message from an AI.\n\nAIMessage is returned from a chat model as a response to a prompt.\n\nThis message represents the output of the model and consists of both\nthe raw output as returned by the model together standardized fields\n(e.g., tool calls, usage metadata) added by the LangChain framework.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ai&#x27;,
-     &#x27;default&#x27;: &#x27;ai&#x27;,
-     &#x27;enum&#x27;: [&#x27;ai&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;},
-    &#x27;tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;invalid_tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/InvalidToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Invalid Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;usage_metadata&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/UsageMetadata&#x27;},
-      {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;AIMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;AIMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message chunk from an AI.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;AIMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;AIMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;AIMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;},
-    &#x27;tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;invalid_tool_calls&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/InvalidToolCall&#x27;},
-     &#x27;title&#x27;: &#x27;Invalid Tool Calls&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;usage_metadata&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/UsageMetadata&#x27;},
-      {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None},
-    &#x27;tool_call_chunks&#x27;: {&#x27;default&#x27;: [],
-     &#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ToolCallChunk&#x27;},
-     &#x27;title&#x27;: &#x27;Tool Call Chunks&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;AIMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ChatMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message that can be assigned an arbitrary speaker (i.e. role).&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;chat&#x27;,
-     &#x27;default&#x27;: &#x27;chat&#x27;,
-     &#x27;enum&#x27;: [&#x27;chat&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;role&#x27;: {&#x27;title&#x27;: &#x27;Role&#x27;, &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;role&#x27;],
-   &#x27;title&#x27;: &#x27;ChatMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ChatMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Chat Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ChatMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;ChatMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;ChatMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;role&#x27;: {&#x27;title&#x27;: &#x27;Role&#x27;, &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;role&#x27;],
-   &#x27;title&#x27;: &#x27;ChatMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ChatPromptValueConcrete&#x27;: {&#x27;description&#x27;: &#x27;Chat prompt value which explicitly lists out the message types it accepts.\nFor use in external schemas.&#x27;,
-   &#x27;properties&#x27;: {&#x27;messages&#x27;: {&#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/AIMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/HumanMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ChatMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/SystemMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/FunctionMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ToolMessage&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/AIMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/HumanMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ChatMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/SystemMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/FunctionMessageChunk&#x27;},
-       {&#x27;$ref&#x27;: &#x27;#/$defs/ToolMessageChunk&#x27;}]},
-     &#x27;title&#x27;: &#x27;Messages&#x27;,
-     &#x27;type&#x27;: &#x27;array&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ChatPromptValueConcrete&#x27;,
-     &#x27;default&#x27;: &#x27;ChatPromptValueConcrete&#x27;,
-     &#x27;enum&#x27;: [&#x27;ChatPromptValueConcrete&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;messages&#x27;],
-   &#x27;title&#x27;: &#x27;ChatPromptValueConcrete&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;FunctionMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message for passing the result of executing a tool back to a model.\n\nFunctionMessage are an older version of the ToolMessage schema, and\ndo not contain the tool_call_id field.\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;function&#x27;,
-     &#x27;default&#x27;: &#x27;function&#x27;,
-     &#x27;enum&#x27;: [&#x27;function&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;title&#x27;: &#x27;Name&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;name&#x27;],
-   &#x27;title&#x27;: &#x27;FunctionMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;FunctionMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Function Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;FunctionMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;FunctionMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;FunctionMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;title&#x27;: &#x27;Name&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;name&#x27;],
-   &#x27;title&#x27;: &#x27;FunctionMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;HumanMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message from a human.\n\nHumanMessages are messages that are passed in from a human to the model.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content=&quot;You are a helpful assistant! Your name is Bob.&quot;\n            ),\n            HumanMessage(\n                content=&quot;What is your name?&quot;\n            )\n        ]\n\n        # Instantiate a chat model and invoke it with the messages\n        model = ...\n        print(model.invoke(messages))&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;human&#x27;,
-     &#x27;default&#x27;: &#x27;human&#x27;,
-     &#x27;enum&#x27;: [&#x27;human&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;HumanMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;HumanMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Human Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;HumanMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;HumanMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;HumanMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;example&#x27;: {&#x27;default&#x27;: False, &#x27;title&#x27;: &#x27;Example&#x27;, &#x27;type&#x27;: &#x27;boolean&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;HumanMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;InputTokenDetails&#x27;: {&#x27;description&#x27;: &#x27;Breakdown of input token counts.\n\nDoes *not* need to sum to full input token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;audio&quot;: 10,\n            &quot;cache_creation&quot;: 200,\n            &quot;cache_read&quot;: 100,\n        }\n\n.. versionadded:: 0.3.9&#x27;,
-   &#x27;properties&#x27;: {&#x27;audio&#x27;: {&#x27;title&#x27;: &#x27;Audio&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;cache_creation&#x27;: {&#x27;title&#x27;: &#x27;Cache Creation&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;cache_read&#x27;: {&#x27;title&#x27;: &#x27;Cache Read&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;}},
-   &#x27;title&#x27;: &#x27;InputTokenDetails&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;InvalidToolCall&#x27;: {&#x27;description&#x27;: &#x27;Allowance for errors made by LLM.\n\nHere we add an `error` key to surface errors made during generation\n(e.g., invalid JSON arguments.)&#x27;,
-   &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;args&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Args&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;error&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Error&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;invalid_tool_call&#x27;,
-     &#x27;enum&#x27;: [&#x27;invalid_tool_call&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;name&#x27;, &#x27;args&#x27;, &#x27;id&#x27;, &#x27;error&#x27;],
-   &#x27;title&#x27;: &#x27;InvalidToolCall&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;OutputTokenDetails&#x27;: {&#x27;description&#x27;: &#x27;Breakdown of output token counts.\n\nDoes *not* need to sum to full output token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;audio&quot;: 10,\n            &quot;reasoning&quot;: 200,\n        }\n\n.. versionadded:: 0.3.9&#x27;,
-   &#x27;properties&#x27;: {&#x27;audio&#x27;: {&#x27;title&#x27;: &#x27;Audio&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;reasoning&#x27;: {&#x27;title&#x27;: &#x27;Reasoning&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;}},
-   &#x27;title&#x27;: &#x27;OutputTokenDetails&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;StringPromptValue&#x27;: {&#x27;description&#x27;: &#x27;String prompt value.&#x27;,
-   &#x27;properties&#x27;: {&#x27;text&#x27;: {&#x27;title&#x27;: &#x27;Text&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;StringPromptValue&#x27;,
-     &#x27;default&#x27;: &#x27;StringPromptValue&#x27;,
-     &#x27;enum&#x27;: [&#x27;StringPromptValue&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;text&#x27;],
-   &#x27;title&#x27;: &#x27;StringPromptValue&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;SystemMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message for priming AI behavior.\n\nThe system message is usually passed in as the first of a sequence\nof input messages.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content=&quot;You are a helpful assistant! Your name is Bob.&quot;\n            ),\n            HumanMessage(\n                content=&quot;What is your name?&quot;\n            )\n        ]\n\n        # Define a chat model and invoke it with the messages\n        print(model.invoke(messages))&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;system&#x27;,
-     &#x27;default&#x27;: &#x27;system&#x27;,
-     &#x27;enum&#x27;: [&#x27;system&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;SystemMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;SystemMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;System Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;SystemMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;SystemMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;SystemMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;],
-   &#x27;title&#x27;: &#x27;SystemMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolCall&#x27;: {&#x27;description&#x27;: &#x27;Represents a request to call a tool.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;name&quot;: &quot;foo&quot;,\n            &quot;args&quot;: {&quot;a&quot;: 1},\n            &quot;id&quot;: &quot;123&quot;\n        }\n\n    This represents a request to call the tool named &quot;foo&quot; with arguments {&quot;a&quot;: 1}\n    and an identifier of &quot;123&quot;.&#x27;,
-   &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;title&#x27;: &#x27;Name&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;args&#x27;: {&#x27;title&#x27;: &#x27;Args&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;tool_call&#x27;,
-     &#x27;enum&#x27;: [&#x27;tool_call&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;name&#x27;, &#x27;args&#x27;, &#x27;id&#x27;],
-   &#x27;title&#x27;: &#x27;ToolCall&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolCallChunk&#x27;: {&#x27;description&#x27;: &#x27;A chunk of a tool call (e.g., as part of a stream).\n\nWhen merging ToolCallChunks (e.g., via AIMessageChunk.__add__),\nall string attributes are concatenated. Chunks are only merged if their\nvalues of `index` are equal and not None.\n\nExample:\n\n.. code-block:: python\n\n    left_chunks = [ToolCallChunk(name=&quot;foo&quot;, args=\&#x27;{&quot;a&quot;:\&#x27;, index=0)]\n    right_chunks = [ToolCallChunk(name=None, args=\&#x27;1}\&#x27;, index=0)]\n\n    (\n        AIMessageChunk(content=&quot;&quot;, tool_call_chunks=left_chunks)\n        + AIMessageChunk(content=&quot;&quot;, tool_call_chunks=right_chunks)\n    ).tool_call_chunks == [ToolCallChunk(name=\&#x27;foo\&#x27;, args=\&#x27;{&quot;a&quot;:1}\&#x27;, index=0)]&#x27;,
-   &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;args&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Args&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}], &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;index&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;integer&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;title&#x27;: &#x27;Index&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;tool_call_chunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;tool_call_chunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;name&#x27;, &#x27;args&#x27;, &#x27;id&#x27;, &#x27;index&#x27;],
-   &#x27;title&#x27;: &#x27;ToolCallChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolMessage&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Message for passing the result of executing a tool back to a model.\n\nToolMessages contain the result of a tool invocation. Typically, the result\nis encoded inside the `content` field.\n\nExample: A ToolMessage representing a result of 42 from a tool call with id\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        ToolMessage(content=\&#x27;42\&#x27;, tool_call_id=\&#x27;call_Jja7J89XsjrOLA5r!MEOW!SL\&#x27;)\n\n\nExample: A ToolMessage where only part of the tool output is sent to the model\n    and the full output is passed in to artifact.\n\n    .. versionadded:: 0.2.17\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        tool_output = {\n            &quot;stdout&quot;: &quot;From the graph we can see that the correlation between x and y is ...&quot;,\n            &quot;stderr&quot;: None,\n            &quot;artifacts&quot;: {&quot;type&quot;: &quot;image&quot;, &quot;base64_data&quot;: &quot;/9j/4gIcSU...&quot;},\n        }\n\n        ToolMessage(\n            content=tool_output[&quot;stdout&quot;],\n            artifact=tool_output,\n            tool_call_id=\&#x27;call_Jja7J89XsjrOLA5r!MEOW!SL\&#x27;,\n        )\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;tool&#x27;,
-     &#x27;default&#x27;: &#x27;tool&#x27;,
-     &#x27;enum&#x27;: [&#x27;tool&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;tool_call_id&#x27;: {&#x27;title&#x27;: &#x27;Tool Call Id&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;artifact&#x27;: {&#x27;default&#x27;: None, &#x27;title&#x27;: &#x27;Artifact&#x27;},
-    &#x27;status&#x27;: {&#x27;default&#x27;: &#x27;success&#x27;,
-     &#x27;enum&#x27;: [&#x27;success&#x27;, &#x27;error&#x27;],
-     &#x27;title&#x27;: &#x27;Status&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;tool_call_id&#x27;],
-   &#x27;title&#x27;: &#x27;ToolMessage&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;ToolMessageChunk&#x27;: {&#x27;additionalProperties&#x27;: True,
-   &#x27;description&#x27;: &#x27;Tool Message chunk.&#x27;,
-   &#x27;properties&#x27;: {&#x27;content&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-      {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;object&#x27;}]},
-       &#x27;type&#x27;: &#x27;array&#x27;}],
-     &#x27;title&#x27;: &#x27;Content&#x27;},
-    &#x27;additional_kwargs&#x27;: {&#x27;title&#x27;: &#x27;Additional Kwargs&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;response_metadata&#x27;: {&#x27;title&#x27;: &#x27;Response Metadata&#x27;, &#x27;type&#x27;: &#x27;object&#x27;},
-    &#x27;type&#x27;: {&#x27;const&#x27;: &#x27;ToolMessageChunk&#x27;,
-     &#x27;default&#x27;: &#x27;ToolMessageChunk&#x27;,
-     &#x27;enum&#x27;: [&#x27;ToolMessageChunk&#x27;],
-     &#x27;title&#x27;: &#x27;Type&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;name&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Name&#x27;},
-    &#x27;id&#x27;: {&#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;}, {&#x27;type&#x27;: &#x27;null&#x27;}],
-     &#x27;default&#x27;: None,
-     &#x27;title&#x27;: &#x27;Id&#x27;},
-    &#x27;tool_call_id&#x27;: {&#x27;title&#x27;: &#x27;Tool Call Id&#x27;, &#x27;type&#x27;: &#x27;string&#x27;},
-    &#x27;artifact&#x27;: {&#x27;default&#x27;: None, &#x27;title&#x27;: &#x27;Artifact&#x27;},
-    &#x27;status&#x27;: {&#x27;default&#x27;: &#x27;success&#x27;,
-     &#x27;enum&#x27;: [&#x27;success&#x27;, &#x27;error&#x27;],
-     &#x27;title&#x27;: &#x27;Status&#x27;,
-     &#x27;type&#x27;: &#x27;string&#x27;}},
-   &#x27;required&#x27;: [&#x27;content&#x27;, &#x27;tool_call_id&#x27;],
-   &#x27;title&#x27;: &#x27;ToolMessageChunk&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;},
-  &#x27;UsageMetadata&#x27;: {&#x27;description&#x27;: &#x27;Usage metadata for a message, such as token counts.\n\nThis is a standard representation of token usage that is consistent across models.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            &quot;input_tokens&quot;: 350,\n            &quot;output_tokens&quot;: 240,\n            &quot;total_tokens&quot;: 590,\n            &quot;input_token_details&quot;: {\n                &quot;audio&quot;: 10,\n                &quot;cache_creation&quot;: 200,\n                &quot;cache_read&quot;: 100,\n            },\n            &quot;output_token_details&quot;: {\n                &quot;audio&quot;: 10,\n                &quot;reasoning&quot;: 200,\n            }\n        }\n\n.. versionchanged:: 0.3.9\n\n    Added ``input_token_details`` and ``output_token_details``.&#x27;,
-   &#x27;properties&#x27;: {&#x27;input_tokens&#x27;: {&#x27;title&#x27;: &#x27;Input Tokens&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;output_tokens&#x27;: {&#x27;title&#x27;: &#x27;Output Tokens&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;total_tokens&#x27;: {&#x27;title&#x27;: &#x27;Total Tokens&#x27;, &#x27;type&#x27;: &#x27;integer&#x27;},
-    &#x27;input_token_details&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/InputTokenDetails&#x27;},
-    &#x27;output_token_details&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/OutputTokenDetails&#x27;}},
-   &#x27;required&#x27;: [&#x27;input_tokens&#x27;, &#x27;output_tokens&#x27;, &#x27;total_tokens&#x27;],
-   &#x27;title&#x27;: &#x27;UsageMetadata&#x27;,
-   &#x27;type&#x27;: &#x27;object&#x27;}},
- &#x27;anyOf&#x27;: [{&#x27;type&#x27;: &#x27;string&#x27;},
-  {&#x27;$ref&#x27;: &#x27;#/$defs/StringPromptValue&#x27;},
-  {&#x27;$ref&#x27;: &#x27;#/$defs/ChatPromptValueConcrete&#x27;},
-  {&#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/AIMessage&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/HumanMessage&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/ChatMessage&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/SystemMessage&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/FunctionMessage&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/ToolMessage&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/AIMessageChunk&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/HumanMessageChunk&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/ChatMessageChunk&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/SystemMessageChunk&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/FunctionMessageChunk&#x27;},
-     {&#x27;$ref&#x27;: &#x27;#/$defs/ToolMessageChunk&#x27;}]},
-   &#x27;type&#x27;: &#x27;array&#x27;}],
- &#x27;title&#x27;: &#x27;ChatOpenAIInput&#x27;}
+
+
+```python
+{'$defs': {'AIMessage': {'additionalProperties': True,
+   'description': 'Message from an AI.\n\nAIMessage is returned from a chat model as a response to a prompt.\n\nThis message represents the output of the model and consists of both\nthe raw output as returned by the model together standardized fields\n(e.g., tool calls, usage metadata) added by the LangChain framework.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'ai',
+     'default': 'ai',
+     'enum': ['ai'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'},
+    'tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/ToolCall'},
+     'title': 'Tool Calls',
+     'type': 'array'},
+    'invalid_tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/InvalidToolCall'},
+     'title': 'Invalid Tool Calls',
+     'type': 'array'},
+    'usage_metadata': {'anyOf': [{'$ref': '#/$defs/UsageMetadata'},
+      {'type': 'null'}],
+     'default': None}},
+   'required': ['content'],
+   'title': 'AIMessage',
+   'type': 'object'},
+  'AIMessageChunk': {'additionalProperties': True,
+   'description': 'Message chunk from an AI.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'AIMessageChunk',
+     'default': 'AIMessageChunk',
+     'enum': ['AIMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'},
+    'tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/ToolCall'},
+     'title': 'Tool Calls',
+     'type': 'array'},
+    'invalid_tool_calls': {'default': [],
+     'items': {'$ref': '#/$defs/InvalidToolCall'},
+     'title': 'Invalid Tool Calls',
+     'type': 'array'},
+    'usage_metadata': {'anyOf': [{'$ref': '#/$defs/UsageMetadata'},
+      {'type': 'null'}],
+     'default': None},
+    'tool_call_chunks': {'default': [],
+     'items': {'$ref': '#/$defs/ToolCallChunk'},
+     'title': 'Tool Call Chunks',
+     'type': 'array'}},
+   'required': ['content'],
+   'title': 'AIMessageChunk',
+   'type': 'object'},
+  'ChatMessage': {'additionalProperties': True,
+   'description': 'Message that can be assigned an arbitrary speaker (i.e. role).',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'chat',
+     'default': 'chat',
+     'enum': ['chat'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'role': {'title': 'Role', 'type': 'string'}},
+   'required': ['content', 'role'],
+   'title': 'ChatMessage',
+   'type': 'object'},
+  'ChatMessageChunk': {'additionalProperties': True,
+   'description': 'Chat Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'ChatMessageChunk',
+     'default': 'ChatMessageChunk',
+     'enum': ['ChatMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'role': {'title': 'Role', 'type': 'string'}},
+   'required': ['content', 'role'],
+   'title': 'ChatMessageChunk',
+   'type': 'object'},
+  'ChatPromptValueConcrete': {'description': 'Chat prompt value which explicitly lists out the message types it accepts.\nFor use in external schemas.',
+   'properties': {'messages': {'items': {'oneOf': [{'$ref': '#/$defs/AIMessage'},
+       {'$ref': '#/$defs/HumanMessage'},
+       {'$ref': '#/$defs/ChatMessage'},
+       {'$ref': '#/$defs/SystemMessage'},
+       {'$ref': '#/$defs/FunctionMessage'},
+       {'$ref': '#/$defs/ToolMessage'},
+       {'$ref': '#/$defs/AIMessageChunk'},
+       {'$ref': '#/$defs/HumanMessageChunk'},
+       {'$ref': '#/$defs/ChatMessageChunk'},
+       {'$ref': '#/$defs/SystemMessageChunk'},
+       {'$ref': '#/$defs/FunctionMessageChunk'},
+       {'$ref': '#/$defs/ToolMessageChunk'}]},
+     'title': 'Messages',
+     'type': 'array'},
+    'type': {'const': 'ChatPromptValueConcrete',
+     'default': 'ChatPromptValueConcrete',
+     'enum': ['ChatPromptValueConcrete'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['messages'],
+   'title': 'ChatPromptValueConcrete',
+   'type': 'object'},
+  'FunctionMessage': {'additionalProperties': True,
+   'description': 'Message for passing the result of executing a tool back to a model.\n\nFunctionMessage are an older version of the ToolMessage schema, and\ndo not contain the tool_call_id field.\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'function',
+     'default': 'function',
+     'enum': ['function'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'title': 'Name', 'type': 'string'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content', 'name'],
+   'title': 'FunctionMessage',
+   'type': 'object'},
+  'FunctionMessageChunk': {'additionalProperties': True,
+   'description': 'Function Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'FunctionMessageChunk',
+     'default': 'FunctionMessageChunk',
+     'enum': ['FunctionMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'title': 'Name', 'type': 'string'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content', 'name'],
+   'title': 'FunctionMessageChunk',
+   'type': 'object'},
+  'HumanMessage': {'additionalProperties': True,
+   'description': 'Message from a human.\n\nHumanMessages are messages that are passed in from a human to the model.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content="You are a helpful assistant! Your name is Bob."\n            ),\n            HumanMessage(\n                content="What is your name?"\n            )\n        ]\n\n        # Instantiate a chat model and invoke it with the messages\n        model = ...\n        print(model.invoke(messages))',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'human',
+     'default': 'human',
+     'enum': ['human'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'}},
+   'required': ['content'],
+   'title': 'HumanMessage',
+   'type': 'object'},
+  'HumanMessageChunk': {'additionalProperties': True,
+   'description': 'Human Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'HumanMessageChunk',
+     'default': 'HumanMessageChunk',
+     'enum': ['HumanMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'example': {'default': False, 'title': 'Example', 'type': 'boolean'}},
+   'required': ['content'],
+   'title': 'HumanMessageChunk',
+   'type': 'object'},
+  'InputTokenDetails': {'description': 'Breakdown of input token counts.\n\nDoes *not* need to sum to full input token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "audio": 10,\n            "cache_creation": 200,\n            "cache_read": 100,\n        }\n\n.. versionadded:: 0.3.9',
+   'properties': {'audio': {'title': 'Audio', 'type': 'integer'},
+    'cache_creation': {'title': 'Cache Creation', 'type': 'integer'},
+    'cache_read': {'title': 'Cache Read', 'type': 'integer'}},
+   'title': 'InputTokenDetails',
+   'type': 'object'},
+  'InvalidToolCall': {'description': 'Allowance for errors made by LLM.\n\nHere we add an `error` key to surface errors made during generation\n(e.g., invalid JSON arguments.)',
+   'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'title': 'Name'},
+    'args': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Args'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'},
+    'error': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'title': 'Error'},
+    'type': {'const': 'invalid_tool_call',
+     'enum': ['invalid_tool_call'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['name', 'args', 'id', 'error'],
+   'title': 'InvalidToolCall',
+   'type': 'object'},
+  'OutputTokenDetails': {'description': 'Breakdown of output token counts.\n\nDoes *not* need to sum to full output token count. Does *not* need to have all keys.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "audio": 10,\n            "reasoning": 200,\n        }\n\n.. versionadded:: 0.3.9',
+   'properties': {'audio': {'title': 'Audio', 'type': 'integer'},
+    'reasoning': {'title': 'Reasoning', 'type': 'integer'}},
+   'title': 'OutputTokenDetails',
+   'type': 'object'},
+  'StringPromptValue': {'description': 'String prompt value.',
+   'properties': {'text': {'title': 'Text', 'type': 'string'},
+    'type': {'const': 'StringPromptValue',
+     'default': 'StringPromptValue',
+     'enum': ['StringPromptValue'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['text'],
+   'title': 'StringPromptValue',
+   'type': 'object'},
+  'SystemMessage': {'additionalProperties': True,
+   'description': 'Message for priming AI behavior.\n\nThe system message is usually passed in as the first of a sequence\nof input messages.\n\nExample:\n\n    .. code-block:: python\n\n        from langchain_core.messages import HumanMessage, SystemMessage\n\n        messages = [\n            SystemMessage(\n                content="You are a helpful assistant! Your name is Bob."\n            ),\n            HumanMessage(\n                content="What is your name?"\n            )\n        ]\n\n        # Define a chat model and invoke it with the messages\n        print(model.invoke(messages))',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'system',
+     'default': 'system',
+     'enum': ['system'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content'],
+   'title': 'SystemMessage',
+   'type': 'object'},
+  'SystemMessageChunk': {'additionalProperties': True,
+   'description': 'System Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'SystemMessageChunk',
+     'default': 'SystemMessageChunk',
+     'enum': ['SystemMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'}},
+   'required': ['content'],
+   'title': 'SystemMessageChunk',
+   'type': 'object'},
+  'ToolCall': {'description': 'Represents a request to call a tool.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "name": "foo",\n            "args": {"a": 1},\n            "id": "123"\n        }\n\n    This represents a request to call the tool named "foo" with arguments {"a": 1}\n    and an identifier of "123".',
+   'properties': {'name': {'title': 'Name', 'type': 'string'},
+    'args': {'title': 'Args', 'type': 'object'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'},
+    'type': {'const': 'tool_call',
+     'enum': ['tool_call'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['name', 'args', 'id'],
+   'title': 'ToolCall',
+   'type': 'object'},
+  'ToolCallChunk': {'description': 'A chunk of a tool call (e.g., as part of a stream).\n\nWhen merging ToolCallChunks (e.g., via AIMessageChunk.__add__),\nall string attributes are concatenated. Chunks are only merged if their\nvalues of `index` are equal and not None.\n\nExample:\n\n.. code-block:: python\n\n    left_chunks = [ToolCallChunk(name="foo", args=\'{"a":\', index=0)]\n    right_chunks = [ToolCallChunk(name=None, args=\'1}\', index=0)]\n\n    (\n        AIMessageChunk(content="", tool_call_chunks=left_chunks)\n        + AIMessageChunk(content="", tool_call_chunks=right_chunks)\n    ).tool_call_chunks == [ToolCallChunk(name=\'foo\', args=\'{"a":1}\', index=0)]',
+   'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'title': 'Name'},
+    'args': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Args'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'},
+    'index': {'anyOf': [{'type': 'integer'}, {'type': 'null'}],
+     'title': 'Index'},
+    'type': {'const': 'tool_call_chunk',
+     'enum': ['tool_call_chunk'],
+     'title': 'Type',
+     'type': 'string'}},
+   'required': ['name', 'args', 'id', 'index'],
+   'title': 'ToolCallChunk',
+   'type': 'object'},
+  'ToolMessage': {'additionalProperties': True,
+   'description': 'Message for passing the result of executing a tool back to a model.\n\nToolMessages contain the result of a tool invocation. Typically, the result\nis encoded inside the `content` field.\n\nExample: A ToolMessage representing a result of 42 from a tool call with id\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        ToolMessage(content=\'42\', tool_call_id=\'call_Jja7J89XsjrOLA5r!MEOW!SL\')\n\n\nExample: A ToolMessage where only part of the tool output is sent to the model\n    and the full output is passed in to artifact.\n\n    .. versionadded:: 0.2.17\n\n    .. code-block:: python\n\n        from langchain_core.messages import ToolMessage\n\n        tool_output = {\n            "stdout": "From the graph we can see that the correlation between x and y is ...",\n            "stderr": None,\n            "artifacts": {"type": "image", "base64_data": "/9j/4gIcSU...\"},\n        }\n\n        ToolMessage(\n            content=tool_output["stdout"],\n            artifact=tool_output,\n            tool_call_id=\'call_Jja7J89XsjrOLA5r!MEOW!SL\',\n        )\n\nThe tool_call_id field is used to associate the tool call request with the\ntool call response. This is useful in situations where a chat model is able\nto request multiple tool calls in parallel.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'tool',
+     'default': 'tool',
+     'enum': ['tool'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'tool_call_id': {'title': 'Tool Call Id', 'type': 'string'},
+    'artifact': {'default': None, 'title': 'Artifact'},
+    'status': {'default': 'success',
+     'enum': ['success', 'error'],
+     'title': 'Status',
+     'type': 'string'}},
+   'required': ['content', 'tool_call_id'],
+   'title': 'ToolMessage',
+   'type': 'object'},
+  'ToolMessageChunk': {'additionalProperties': True,
+   'description': 'Tool Message chunk.',
+   'properties': {'content': {'anyOf': [{'type': 'string'},
+      {'items': {'anyOf': [{'type': 'string'}, {'type': 'object'}]},
+       'type': 'array'}],
+     'title': 'Content'},
+    'additional_kwargs': {'title': 'Additional Kwargs', 'type': 'object'},
+    'response_metadata': {'title': 'Response Metadata', 'type': 'object'},
+    'type': {'const': 'ToolMessageChunk',
+     'default': 'ToolMessageChunk',
+     'enum': ['ToolMessageChunk'],
+     'title': 'Type',
+     'type': 'string'},
+    'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Name'},
+    'id': {'anyOf': [{'type': 'string'}, {'type': 'null'}],
+     'default': None,
+     'title': 'Id'},
+    'tool_call_id': {'title': 'Tool Call Id', 'type': 'string'},
+    'artifact': {'default': None, 'title': 'Artifact'},
+    'status': {'default': 'success',
+     'enum': ['success', 'error'],
+     'title': 'Status',
+     'type': 'string'}},
+   'required': ['content', 'tool_call_id'],
+   'title': 'ToolMessageChunk',
+   'type': 'object'},
+  'UsageMetadata': {'description': 'Usage metadata for a message, such as token counts.\n\nThis is a standard representation of token usage that is consistent across models.\n\nExample:\n\n    .. code-block:: python\n\n        {\n            "input_tokens": 350,\n            "output_tokens": 240,\n            "total_tokens": 590,\n            "input_token_details": {\n                "audio": 10,\n                "cache_creation": 200,\n                "cache_read": 100,\n            },\n            "output_token_details": {\n                "audio": 10,\n                "reasoning": 200,\n            }\n        }\n\n.. versionchanged:: 0.3.9\n\n    Added ``input_token_details`` and ``output_token_details``.',
+   'properties': {'input_tokens': {'title': 'Input Tokens', 'type': 'integer'},
+    'output_tokens': {'title': 'Output Tokens', 'type': 'integer'},
+    'total_tokens': {'title': 'Total Tokens', 'type': 'integer'},
+    'input_token_details': {'$ref': '#/$defs/InputTokenDetails'},
+    'output_token_details': {'$ref': '#/$defs/OutputTokenDetails'}},
+   'required': ['input_tokens', 'output_tokens', 'total_tokens'],
+   'title': 'UsageMetadata',
+   'type': 'object'}},
+ 'anyOf': [{'type': 'string'},
+ {'$ref': '#/$defs/StringPromptValue'},
+ {'$ref': '#/$defs/ChatPromptValueConcrete'},
+ {'items': {'oneOf': [{'$ref': '#/$defs/AIMessage'},
+     {'$ref': '#/$defs/HumanMessage'},
+     {'$ref': '#/$defs/ChatMessage'},
+     {'$ref': '#/$defs/SystemMessage'},
+     {'$ref': '#/$defs/FunctionMessage'},
+     {'$ref': '#/$defs/ToolMessage'},
+     {'$ref': '#/$defs/AIMessageChunk'},
+     {'$ref': '#/$defs/HumanMessageChunk'},
+     {'$ref': '#/$defs/ChatMessageChunk'},
+     {'$ref': '#/$defs/SystemMessageChunk'},
+     {'$ref': '#/$defs/FunctionMessageChunk'},
+     {'$ref': '#/$defs/ToolMessageChunk'}]},
+   'type': 'array'}],
+ 'title': 'ChatOpenAIInput'}
 ```
 
-+   **流式输出**
 
-```
-for chunk in chain.stream(&quot;大模型技术&quot;):
-    print(chunk, end=&quot;&quot;, flush=True)
+
+## 流式输出
+
+```python
+for chunk in chain.stream("大模型技术"):
+    print(chunk, end="", flush=True)
 ```
 
-```
+## 大模型技术
+
 大模型技术（Large Model Technology）是指基于大规模数据和计算资源训练的深度学习模型，通常具有数十亿甚至数千亿个参数。这类模型在自然语言处理（NLP）、计算机视觉、语音识别等领域表现出色，能够处理复杂的任务并生成高质量的结果。大模型技术的核心在于通过海量数据和强大的计算能力，学习到更加通用和深层次的模式，从而实现更智能化的应用。
 
 ### 大模型技术的特点
@@ -1097,97 +1103,96 @@ for chunk in chain.stream(&quot;大模型技术&quot;):
 5. **可解释性与公平性**：提高模型的可解释性，减少偏见和歧视。
 
 大模型技术正在推动人工智能的快速发展，但也面临诸多挑战。未来需要在技术、伦理和社会影响之间找到平衡，以实现更广泛的应用和可持续发展。
-```
 
-整个过程其实并不难理解，在LCEL中，所有组件都实现了runable接口，而runable的接口协议会将每个组件的输入和输出做一个描述，传入pydantic模型做一个强检验，如果一切正常则会正常传递数据，否则程序则抛出异常。
+整个过程其实并不难理解，在`LCEL`中，所有组件都实现了`runable`接口，而`runable`的接口协议会将每个组件的输入和输出做一个描述，传入`pydantic`模型做一个强检验，如果一切正常则会正常传递数据，否则程序则抛出异常。
 
 # 3. 实现复杂RAG聊天机器人
 
-接下来，我们进一步探讨 LangChain 和 DeepSeek v3模型如何构建一个复杂的 RAG 聊天机器人，能够处理复杂的查询，并且可以通过聊天历史记录维护上下文，并使用 LangChain 的 LCEL语法遵守严格的Guardrails（护栏）。
+接下来，我们进一步探讨`LangChain`和`DeepSeek v3`模型如何构建一个复杂的 RAG 聊天机器人，能够处理复杂的查询，并且可以通过聊天历史记录维护上下文，并使用`LangChain`的`LCEL`语法遵守严格的`Guardrails`（护栏）。
 
-Guardrails(护栏)对于确保AI系统的安全性和可靠性是比较重要的。通过设定明确的界限，我们可以防止大模型生成有害或误导性的内容。拒绝机制使机器人能够礼貌地拒绝违反这些护栏的请求，例如与敏感主题或非法活动相关的请求。
+`Guardrails`（护栏）对于确保 AI 系统的安全性和可靠性是比较重要的。通过设定明确的界限，我们可以防止大模型生成有害或误导性的内容。拒绝机制使机器人能够礼貌地拒绝违反这些护栏的请求，例如与敏感主题或非法活动相关的请求。
 
-这里我们创建一个智能HR聊天机器人助手，该机器人将能够利用私有知识库回答有关公司政策、程序和福利的问题。
+这里我们创建一个智能 HR 聊天机器人助手，该机器人将能够利用私有知识库回答有关公司政策、程序和福利的问题。
 
 ![](img/889eaaf22c3bda55f60b509c25b9fa60.png)
 
-使用DeepSeek v3模型作为对话模型。
+使用`DeepSeek v3`模型作为对话模型。
 
-```
+```python
 from langchain_openai import ChatOpenAI
 
-model = ChatOpenAI(model=&quot;deepseek-chat&quot;,
-                   api_key=&#x27;sk-6c960cb2a3a24fa6b92f6993d5942777&#x27;,
-                   base_url=&#x27;https://api.deepseek.com&#x27;)
+model = ChatOpenAI(model="deepseek-chat",
+                   api_key='sk-6c960cb2a3a24fa6b92f6993d5942777',
+                   base_url='https://api.deepseek.com')
 ```
 
-使用OpenAI的Embeddings模型将自然语言转化成词向量的表示。
+使用`OpenAI`的`Embeddings`模型将自然语言转化成词向量的表示。
 
-```
+```python
 from langchain_openai import OpenAIEmbeddings
 
 embed = OpenAIEmbeddings(
-    api_key=&#x27;sk-proj-Vs1hvbqAjlKBnTS9yTrNygLSq16ElNdDuTV1ADDgfezt3b4B5oA&#x27;,
-    base_url=&#x27;https://ai.devtool.tech/proxy/v1&#x27;,     # 国内中转地址
-    model=&quot;text-embedding-3-large&quot; 
+    api_key='sk-proj-Vs1hvbqAjlKBnTS9yTrNygLSq16ElNdDuTV1ADDgfezt3b4B5oA',
+    base_url='https://ai.devtool.tech/proxy/v1',     # 国内中转地址
+    model="text-embedding-3-large" 
 )
 ```
 
-```
+```python
 # ! pip install faiss-cpu
 ```
 
-接下来，我们使用FAISS作为矢量数据库。 FAISS 是 Facebook AI Research 开发的一个库，用于高效相似性搜索和密集向量聚类。LangChain在第三方集成模块（Langchain_community）中已经接入了FAISS向量数据库，所以我们就可以直接使用。
+接下来，我们使用`FAISS`作为矢量数据库。`FAISS`是 Facebook AI Research 开发的一个库，用于高效相似性搜索和密集向量聚类。`LangChain`在第三方集成模块（`langchain_community`）中已经接入了`FAISS`向量数据库，所以我们就可以直接使用。
 
-```
+```python
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 
 
 # 加载一些模拟的假数据
-doc1 = Document(page_content=&quot;员工每年享有一定数量的病假。有关资格和具体细节可以在员工手册中找到。&quot;)
-doc2 = Document(page_content=&quot;员工请病假时，必须首先通知其主管关于病情和预计缺勤时间。员工需填写病假申请表，并提交给人力资源部门或主管。&quot;)
-doc3 = Document(page_content=&quot;病假申请表可以在公司内部网找到。表格需要填写员工姓名、部门、缺勤日期和缺勤原因等信息。&quot;)
+doc1 = Document(page_content="员工每年享有一定数量的病假。有关资格和具体细节可以在员工手册中找到。")
+doc2 = Document(page_content="员工请病假时，必须首先通知其主管关于病情和预计缺勤时间。员工需填写病假申请表，并提交给人力资源部门或主管。")
+doc3 = Document(page_content="病假申请表可以在公司内部网找到。表格需要填写员工姓名、部门、缺勤日期和缺勤原因等信息。")
 
 
 # 创建 Faiss 向量存储
 vector_store = FAISS.from_documents([doc1, doc2, doc3], embed)
 
 # 将文件保存到本地，包括：向量数据、索引文件和元数据文件
-vector_store.save_local(folder_path=&#x27;.&#x27;)
+vector_store.save_local(folder_path='.')
 ```
 
 创建矢量数据库后，我们可以进行测试：
 
-```
+```python
 # 加载本地的Faiss向量文件，allow_dangerous_deserialization 用于控制是否允许在加载向量存储时进行潜在的危险反序列化操作。
-vector_store = FAISS.load_local(embeddings=embed, folder_path=&#x27;.&#x27;,allow_dangerous_deserialization=True)
+vector_store = FAISS.load_local(embeddings=embed, folder_path='.', allow_dangerous_deserialization=True)
  
 # 将 FAISS 向量存储转换为一个 retriever（检索器），并为该检索器设置一些搜索相关的参数。k=1 表示检索时返回 最相似的 1 个文档
-retriever = vector_store.as_retriever(search_kwargs={&#x27;k&#x27;: 1})
+retriever = vector_store.as_retriever(search_kwargs={'k': 1})
 
 # 执行相似度搜素
-query = &quot;请问我们公司有没有病假？&quot;
+query = "请问我们公司有没有病假？"
 results = retriever.invoke(query)
 
 for doc in results:
-    print(f&quot;Content: {doc.page_content}&quot;)
+    print(f"Content: {doc.page_content}")
 ```
 
 ```
 Content: 员工每年享有一定数量的病假。有关资格和具体细节可以在员工手册中找到。
 ```
 
-我们从一个最简单的链开始，只接受用户问题，在提示中格式化它并输出该问题的答案（不检索）。这里使用 Langchain 的PromptTemplate并使用LCEL对其进行管道传输。
+我们从一个最简单的链开始，只接受用户问题，在提示中格式化它并输出该问题的答案（不检索）。这里使用`LangChain`的`PromptTemplate`并使用`LCEL`对其进行管道传输。
 
-```
+```python
 from langchain.prompts import PromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 
 # 定义提示模板
 prompt = PromptTemplate(
-  input_variables = [&quot;question&quot;],
-  template = &quot;你是一个乐于助人的智能小助理。擅长根据用户输入的问题给出一个简短的回答：: {question}&quot;
+  input_variables=["question"],
+  template="你是一个乐于助人的智能小助理。擅长根据用户输入的问题给出一个简短的回答：: {question}"
 )
 
 
@@ -1197,50 +1202,51 @@ chain = (
   | model
   | StrOutputParser()
 )
-print(chain.invoke({&quot;question&quot;: &quot;请问什么是人工智能？&quot;}))
+print(chain.invoke({"question": "请问什么是人工智能？"}))
 ```
 
 ```
 人工智能（AI）是指通过计算机系统模拟人类智能的能力，包括学习、推理、问题解决、感知和语言理解等。AI可以分为弱人工智能（专注于特定任务）和强人工智能（具备通用智能，能像人类一样处理各种任务）。常见的AI应用包括语音助手、图像识别、自动驾驶等。
 ```
 
-在这个过程中，会将带有question键的字典被传递到提示模板中，其中question值被提取并在模板中格式化，然后作为输入传递到model，最后将结果提取为使用StrOutputPaser()最终输出字符串。
+在这个过程中，会将带有`question`键的字典被传递到提示模板中，其中`question`值被提取并在模板中格式化，然后作为输入传递到`model`，最后将结果提取为使用`StrOutputParser()`最终输出字符串。
 
-接下来，因为最终我们想要构建一个聊天机器人，所以需要让它支持聊天历史记录，作为RAG系统的一个基础组件。当调用链时，以列表的形式传递历史记录，指定每条消息是由用户还是助手发送的。例如：
+接下来，因为最终我们想要构建一个聊天机器人，所以需要让它支持聊天历史记录，作为 RAG 系统的一个基础组件。当调用链时，以列表的形式传递历史记录，指定每条消息是由用户还是助手发送的。例如：
 
+```python
+[
+    {"role": "user", "content": "我每年可以请多少天病假？"},
+    {"role": "assistant", "content": "你每年可以请的病假天数取决于你的具体雇佣合同和公司政策。然而，一般来说，员工有权享受一定的病假。具体细节请参阅员工手册或与人力资源部门联系。"},
+    {"role": "user", "content": "我在哪里可以找到员工手册？"},
+    {"role": "assistant", "content": "员工手册通常在公司内部网上提供。你也可以联系你的人力资源部门索要一份实体副本。"}
+]
 ```
-［ {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;我每年可以请多少天病假？&quot;}，
-   {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;你每年可以请的病假天数取决于你的具体雇佣合同和公司政策。然而，一般来说，员工有权享受一定的病假。具体细节请参阅员工手册或与人力资源部门联系。&quot;},
-   {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;我在哪里可以找到员工手册？&quot;}，
-   {&quot;role&quot;: &quot;assistant&quot;, &quot;content“: ”员工手册通常在公司内部网上提供。你也可以联系你的人力资源部门索要一份实体副本。&quot;}
-］
-```
 
-然后创建链组件，将此输入转换为传递给prompt_with_history的输入。与上面的代码类似，但在这里我们需要创建一个 RunnableLambda，它用来获取消息列表并从中提取问题和历史记录。然后使用 LangChain LCEL 为变量问题分配一个管道，该管道首先从字典中提取关键消息。
+然后创建链组件，将此输入转换为传递给`prompt_with_history`的输入。与上面的代码类似，但在这里我们需要创建一个`RunnableLambda`，它用来获取消息列表并从中提取问题和历史记录。然后使用`LangChain LCEL`为变量问题分配一个管道，该管道首先从字典中提取关键消息。
 
-```
+```python
 from langchain.schema.runnable import RunnableLambda
 from operator import itemgetter
 
 # 问题是历史记录中的最后一项
 def extract_question(input):
-    return input[-1][&quot;content&quot;]
+    return input[-1]["content"]
 
 # 历史记录是除了最后一个问题之外的所有内容
 def extract_history(input):
     return input[:-1]
 
 
-prompt_with_history_str = &quot;&quot;&quot;
+prompt_with_history_str = """
 你是一个人力资源助理聊天机器人。请只回答HR相关问题。如果你不知道或者这个问题与人力资源无关，就不要回答。
 这是你与用户对话的历史记录: {chat_history}
 现在，请回答这个问题: {question}
-&quot;&quot;&quot;
+"""
 
 # 构建提示模板
 prompt_with_history = PromptTemplate(
-  input_variables = [&quot;chat_history&quot;, &quot;question&quot;],
-  template = prompt_with_history_str
+  input_variables=["chat_history", "question"],
+  template=prompt_with_history_str
 )
 
 
@@ -1249,8 +1255,8 @@ chain_with_history = (
     {
         # Itemgetter：从输入字典中提取特定键，这里指定的是 messages 列表
         # 自定义 lambda 函数可用于进一步处理提取的数据，从messages列表中提取question和chat_history 
-        &quot;question&quot;: itemgetter(&quot;messages&quot;) | RunnableLambda(extract_question), 
-        &quot;chat_history&quot;: itemgetter(&quot;messages&quot;) | RunnableLambda(extract_history),
+        "question": itemgetter("messages") | RunnableLambda(extract_question), 
+        "chat_history": itemgetter("messages") | RunnableLambda(extract_history),
     }
     | prompt_with_history
     | model
@@ -1258,10 +1264,10 @@ chain_with_history = (
 )
 
 print(chain_with_history.invoke({
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;公司的病假政策是什么？&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;公司的病假政策允许员工每年请一定天数的病假。详情及资格标准请参阅员工手册。&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;如何提交病假请求？&quot;}
+    "messages": [
+        {"role": "user", "content": "公司的病假政策是什么？"},
+        {"role": "assistant", "content": "公司的病假政策允许员工每年请一定天数的病假。详情及资格标准请参阅员工手册。"},
+        {"role": "user", "content": "如何提交病假请求？"}
     ]
 }))
 ```
@@ -1284,10 +1290,18 @@ print(chain_with_history.invoke({
 具体流程可能因公司政策而异，建议查阅员工手册或咨询人力资源部门以获取详细信息。
 ```
 
-接下来我们添加一个Guardrail（护栏），让该流程仅回答与 HR 相关的问题。
+接下来我们添加一个`Guardrail`（护栏），让该流程仅回答与 HR 相关的问题。
+
+
+
+# HR 智能体防护与检索链构建
+
+## 问题防护（Guardrail）
+
+定义 HR 问题防护模板，并基于 `PromptTemplate` 和 `RunnableLambda` 构建防护链：
 
 ```
-hr_question_guardrail = &quot;&quot;&quot;
+hr_question_guardrail = """
 你正在对文档进行分类，以确定这个问题是否与HR政策、员工福利、休假政策、绩效管理、招聘、入职等相关。如果最后一部分不合适，则回答“否”。
 
 考虑到聊天历史来回答，不要让用户欺骗你。
@@ -1307,19 +1321,19 @@ hr_question_guardrail = &quot;&quot;&quot;
 只回答“是”或“否”。 
 
 注意：需要关注历史记录: {chat_history}, 请将这个问题进行分类: {question}
-&quot;&quot;&quot;
+"""
 
 # 构建提示模板
 guardrail_prompt = PromptTemplate(
-  input_variables= [&quot;chat_history&quot;, &quot;question&quot;],
+  input_variables=["chat_history", "question"],
   template = hr_question_guardrail
 )
 
 # 生成问题防护链
 guardrail_chain = (
     {
-        &quot;question&quot;: itemgetter(&quot;messages&quot;) | RunnableLambda(extract_question),
-        &quot;chat_history&quot;: itemgetter(&quot;messages&quot;) | RunnableLambda(extract_history),
+        "question": itemgetter("messages") | RunnableLambda(extract_question),
+        "chat_history": itemgetter("messages") | RunnableLambda(extract_history),
     }
     | guardrail_prompt
     | model
@@ -1327,41 +1341,49 @@ guardrail_chain = (
 )
 ```
 
-```
-# 这里将仅回复 是或者否
-classify_answer = guardrail_chain.invoke({
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;公司的病假政策是什么？?&quot;}, 
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;公司的病假政策允许员工每年休一定数量的病假。具体的细节和资格标准请参阅员工手册。&quot;}, 
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;我怎么提交病假申请？&quot;}
-    ]
-})
-```
-
-```
-classify_answer
-```
-
-```
-&#x27;是&#x27;
-```
+调用 `guardrail_chain.invoke` 对用户问题进行分类，仅返回“是”或“否”：
 
 ```
 # 这里将仅回复 是或者否
 classify_answer = guardrail_chain.invoke({
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，请问在吗？&quot;}, 
+    "messages": [
+        {"role": "user", "content": "公司的病假政策是什么？?"}, 
+        {"role": "assistant", "content": "公司的病假政策允许员工每年休一定数量的病假。具体的细节和资格标准请参阅员工手册。"}, 
+        {"role": "user", "content": "我怎么提交病假申请？"}
     ]
 })
 
 classify_answer
 ```
 
+输出结果：
+
 ```
-&#x27;否&#x27;
+'是'
 ```
 
-在生产应用中开发大模型应用时，提供某些防护措施以确保聊天机器人符合我们的意图非常重要。而接下来，我们进一步优化和丰富应用，添加我们的 langchain 检索器。
+再次调用防护链，处理非 HR 相关问题：
+
+```
+# 这里将仅回复 是或者否
+classify_answer = guardrail_chain.invoke({
+    "messages": [
+        {"role": "user", "content": "你好，请问在吗？"}, 
+    ]
+})
+
+classify_answer
+```
+
+输出结果：
+
+```
+'否'
+```
+
+## 检索器构建
+
+在生产应用中开发大模型应用时，提供某些防护措施以确保聊天机器人符合我们的意图非常重要。而接下来，我们进一步优化和丰富应用，添加我们的 `langchain` 检索器。
 
 ```
 from langchain_community.vectorstores import FAISS
@@ -1369,16 +1391,16 @@ from langchain_community.vectorstores import FAISS
 def get_retriever():
     # 使用 OpenAI 的嵌入模型初始化嵌入对象
     embed = OpenAIEmbeddings(
-        api_key=&#x27;sk-proj-Vs1hvbqA8CWfyTrNygLSq16ElNdDu-S4-nwJfZsRVVTV1ADDgfezt3b4B5oA&#x27;,
-        base_url=&#x27;https://ai.devtool.tech/proxy/v1&#x27;,
-        model=&quot;text-embedding-3-large&quot;
+        api_key='sk-proj-Vs1hvbqA8CWfyTrNygLSq16ElNdDu-S4-nwJfZsRVVTV1ADDgfezt3b4B5oA',
+        base_url='https://ai.devtool.tech/proxy/v1',
+        model="text-embedding-3-large"
     )
     
     # 从本地加载 FAISS 向量存储，并且指定嵌入对象
-    vector_store = FAISS.load_local(embeddings=embed, folder_path=&#x27;.&#x27;,allow_dangerous_deserialization=True)
+    vector_store = FAISS.load_local(embeddings=embed, folder_path='.', allow_dangerous_deserialization=True)
      
     # 配置文档检索，返回最相关的 1 个文档
-    retriever = vector_store.as_retriever(search_kwargs={&#x27;k&#x27;: 1})
+    retriever = vector_store.as_retriever(search_kwargs={'k': 1})
     return retriever
 
 # 构建检索器实例
@@ -1386,17 +1408,21 @@ retriever = get_retriever()
 
 # 生成检索链
 retrieve_document_chain = (
-    itemgetter(&quot;messages&quot;) 
+    itemgetter("messages") 
     | RunnableLambda(extract_question)
     | retriever
 )
 
-print(retrieve_document_chain.invoke({&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;病假的HR政策是什么？&quot;}]}))
+print(retrieve_document_chain.invoke({"messages": [{"role": "user", "content": "病假的HR政策是什么？"}]}))
 ```
 
+检索输出示例：
+
 ```
-[Document(metadata={}, page_content=&#x27;员工每年享有一定数量的病假。有关资格和具体细节可以在员工手册中找到。&#x27;)]
+[Document(metadata={}, page_content='员工每年享有一定数量的病假。有关资格和具体细节可以在员工手册中找到。')]
 ```
+
+## 完整链路实现
 
 最后，我们实现完整的链来连接检索器。
 
@@ -1405,7 +1431,7 @@ print(retrieve_document_chain.invoke({&quot;messages&quot;: [{&quot;role&quot;: 
 ```
 from langchain.schema.runnable import RunnableBranch, RunnablePassthrough
 
-question_with_history_and_context_str = &quot;&quot;&quot;
+question_with_history_and_context_str = """
 你是一个可信赖的 HR 政策助手。你将回答有关员工福利、休假政策、绩效管理、招聘、入职以及其他与 HR 相关的话题。如果你不知道问题的答案，你会诚实地说你不知道。
 阅读讨论以获取之前对话的上下文。在聊天讨论中，你被称为“系统”，用户被称为“用户”。
 
@@ -1416,20 +1442,20 @@ question_with_history_and_context_str = &quot;&quot;&quot;
 请直接回答，不要重复问题，不要以“问题的答案是”之类的开头，不要在答案前加上“AI”，不要说“这是答案”，不要提及上下文或问题。
 
 根据这个历史和上下文，回答这个问题： {question}
-&quot;&quot;&quot;
+"""
 
 question_with_history_and_context_prompt = PromptTemplate(
-  input_variables= [&quot;chat_history&quot;, &quot;context&quot;, &quot;question&quot;],
+  input_variables=["chat_history", "context", "question"],
   template = question_with_history_and_context_str
 )
 
 def format_context(docs):
-    return &quot;\n\n&quot;.join([d.page_content for d in docs])
+    return "\n\n".join([d.page_content for d in docs])
 
 
 # 定义不相关的链
 irrelevant_question_chain = (
-  RunnableLambda(lambda x: {&quot;result&quot;: &#x27;我不能回答与 HR 政策无关的问题。&#x27;})
+  RunnableLambda(lambda x: {"result": '我不能回答与 HR 政策无关的问题。'})
 )
 
 # 定义相关的链
@@ -1437,58 +1463,62 @@ relevant_question_chain = (
   RunnablePassthrough() 
   |
   {
-    &quot;relevant_docs&quot;: prompt | model | StrOutputParser() | retriever,
-    &quot;chat_history&quot;: itemgetter(&quot;chat_history&quot;), 
-    &quot;question&quot;: itemgetter(&quot;question&quot;)
+    "relevant_docs": prompt | model | StrOutputParser() | retriever,
+    "chat_history": itemgetter("chat_history"), 
+    "question": itemgetter("question")
   }
  |
   {
-    &quot;context&quot;: itemgetter(&quot;relevant_docs&quot;) | RunnableLambda(format_context),
-    &quot;chat_history&quot;: itemgetter(&quot;chat_history&quot;), 
-    &quot;question&quot;: itemgetter(&quot;question&quot;)
+    "context": itemgetter("relevant_docs") | RunnableLambda(format_context),
+    "chat_history": itemgetter("chat_history"), 
+    "question": itemgetter("question")
   }
   |
   {
-    &quot;prompt&quot;: question_with_history_and_context_prompt,         
+    "prompt": question_with_history_and_context_prompt,         
   }
   |
   {
-    &quot;result&quot;: itemgetter(&quot;prompt&quot;) | model | StrOutputParser(),
+    "result": itemgetter("prompt") | model | StrOutputParser(),
   }
 )
 
 
 # 定义分支
 branch_node = RunnableBranch(
-  (lambda x: &quot;是&quot; in x[&quot;question_is_relevant&quot;].lower(), relevant_question_chain),
-  (lambda x: &quot;否&quot; in x[&quot;question_is_relevant&quot;].lower(), irrelevant_question_chain),
+  (lambda x: "是" in x["question_is_relevant"].lower(), relevant_question_chain),
+  (lambda x: "否" in x["question_is_relevant"].lower(), irrelevant_question_chain),
   irrelevant_question_chain
 )
 
 full_chain = (
   {
-    &quot;question_is_relevant&quot;: guardrail_chain,
-    &quot;question&quot;: itemgetter(&quot;messages&quot;) | RunnableLambda(extract_question),
-    &quot;chat_history&quot;: itemgetter(&quot;messages&quot;) | RunnableLambda(extract_history),    
+    "question_is_relevant": guardrail_chain,
+    "question": itemgetter("messages") | RunnableLambda(extract_question),
+    "chat_history": itemgetter("messages") | RunnableLambda(extract_history),    
   }
   | branch_node
 )
 ```
 
+### 不相关问题测试
+
 ```
 import json
 
 non_relevant_dialog = {
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;公司的病假政策是什么？&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;公司的病假政策允许员工每年休一定数量的病假。具体的细节和资格标准请参阅员工手册。&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，请你介绍一下你自己呀。&quot;}
+    "messages": [
+        {"role": "user", "content": "公司的病假政策是什么？"},
+        {"role": "assistant", "content": "公司的病假政策允许员工每年休一定数量的病假。具体的细节和资格标准请参阅员工手册。"},
+        {"role": "user", "content": "你好，请你介绍一下你自己呀。"}
     ]
 }
 
-print(f&#x27;用不相关的问题测试&#x27;)
+print(f'用不相关的问题测试')
 response = full_chain.invoke(non_relevant_dialog)
 ```
+
+执行输出：
 
 ```
 用不相关的问题测试
@@ -1499,31 +1529,37 @@ response
 ```
 
 ```
-{&#x27;result&#x27;: &#x27;我不能回答与 HR 政策无关的问题。&#x27;}
+{'result': '我不能回答与 HR 政策无关的问题。'}
 ```
+
+### 相关问题测试
 
 ```
 dialog = {
-    &quot;messages&quot;: [
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;公司的病假政策是什么？&quot;},
-        {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;公司的病假政策允许员工每年休一定数量的病假。具体的细节和资格标准请参阅员工手册。&quot;},
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;我应该如何提交病假的申请？&quot;}
+    "messages": [
+        {"role": "user", "content": "公司的病假政策是什么？"},
+        {"role": "assistant", "content": "公司的病假政策允许员工每年休一定数量的病假。具体的细节和资格标准请参阅员工手册。"},
+        {"role": "user", "content": "我应该如何提交病假的申请？"}
     ]
 }
 ```
 
 ```
-print(retrieve_document_chain.invoke({&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;我应该如何提交病假的申请？?&quot;}]}))
+print(retrieve_document_chain.invoke({"messages": [{"role": "user", "content": "我应该如何提交病假的申请？?"}]}))
+```
+
+检索输出：
+
+```
+[Document(metadata={}, page_content='员工请病假时，必须首先通知其主管关于病情和预计缺勤时间。员工需填写病假申请表，并提交给人力资源部门或主管。')]
 ```
 
 ```
-[Document(metadata={}, page_content=&#x27;员工请病假时，必须首先通知其主管关于病情和预计缺勤时间。员工需填写病假申请表，并提交给人力资源部门或主管。&#x27;)]
-```
-
-```
-print(f&#x27;用相关的问题测试&#x27;)
+print(f'用相关的问题测试')
 response = full_chain.invoke(dialog)
 ```
+
+执行输出：
 
 ```
 用相关的问题测试
@@ -1534,7 +1570,7 @@ response
 ```
 
 ```
-{&#x27;result&#x27;: &#x27;你应该首先通知你的主管关于病情和预计缺勤时间。然后，填写病假申请表并提交给人力资源部门或你的主管。&#x27;}
+{'result': '你应该首先通知你的主管关于病情和预计缺勤时间。然后，填写病假申请表并提交给人力资源部门或你的主管。'}
 ```
 
 ---
@@ -1547,6 +1583,6 @@ response
 
 ![](img/a9b9cc7b27e6a9b00d3bc2abf538cddc.png)
 
-+   体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》
++ 体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》
 
-**《2025大模型Agent智能体开发实战****》为【100+小时】体**系大课，总共20大模块精讲精析，零基础直达大模型企业级应用！了解详细信息可扫码咨询
+**《2025大模型Agent智能体开发实战》**为【100+小时】体系大课，总共20大模块精讲精析，零基础直达大模型企业级应用！了解详细信息可扫码咨询

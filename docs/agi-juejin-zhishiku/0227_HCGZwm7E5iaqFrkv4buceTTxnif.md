@@ -1,6 +1,7 @@
+
 # 仅几秒，准确推断蛋白动力学信息，山大、北理工等AI模型RMSF-net登Nature子刊
 
-> 来源：[https://agijuejin.feishu.cn/docx/S9qGdioyhowdEuxgrcbck5N5nvb](https://agijuejin.feishu.cn/docx/S9qGdioyhowdEuxgrcbck5N5nvb)
+> 来源：https://agijuejin.feishu.cn/docx/S9qGdioyhowdEuxgrcbck5N5nvb
 
 > 机器之心 ScienceAI｜[阅读原文](https://www.jiqizhixin.com/articles/2024-07-05-5)
 
@@ -22,7 +23,7 @@ RMSF-net 是一个可免费使用的工具，将在蛋白质动力学研究中�
 
 ![](img/a49f0bc5633484001da60b671165a0e4.png)
 
-论文链接： https://www.nature.com/articles/s41467-024-49858-x
+论文链接：https://www.nature.com/articles/s41467-024-49858-x
 
 RMSF-net github 地址：https://github.com/XintSong/RMSF-net
 
@@ -32,7 +33,7 @@ RMSF-net github 地址：https://github.com/XintSong/RMSF-net
 
 深度学习方法已广泛应用于低温电子显微镜图的自动分析。目前，给定一个高分辨率的低温电镜图谱，从低温电镜图谱精确构建一个蛋白质数据库（Protein Data Bank，PDB）模型模型并不困难。然而，这些构建的 PDB 模型没有考虑动力学信息，而从 PDB 模型计算动力学信息仍然是一项困难的分子动力学（MD）模拟任务，通常需要大量的计算资源和时间。
 
-## **RMSF-net 概述**
+## RMSF-net 概述
 
 该研究团队提出了一种用于低温电子显微镜密度图的神经网络模型 RMSF-net，该模型充分利用低温电子显微镜密度和 PDB 模型信息，可以在几秒钟内准确推断出蛋白质的动力学信息。
 
@@ -54,7 +55,7 @@ RMSF-net 是一个三维卷积神经网络，包含两个相互连接的模块�
 
 特别是，RMSF-net 通过严格的 5 倍交叉验证在测试集上表现出色，与 MD 模拟结果的相关系数达到 0.746±0.127，比 DEFMap 提高了 15%，比基线提高了 10%。
 
-## **动力学预测的可解释性**
+## 动力学预测的可解释性
 
 接下来，研究人员通过对比实验进一步增强了 RMSF-net 动力学预测的可解释性。通过将仅基于低温电子显微镜图谱的 RMSF 预测过程分为两个步骤（Occ2RMSF-net）：（1）结构信息提取；（2）基于提取的结构信息进行动力学预测。
 
@@ -66,7 +67,7 @@ RMSF-net 是一个三维卷积神经网络，包含两个相互连接的模块�
 
 此外，通过对 RMSF-net_cryo、RMSF-net_pdb 和最终的双组合 RMSF-net 进行全面比较，证明了：一方面，来自 PDB 模型的结构信息在 RMSF-net 中起主要作用，其中深度模型从 MD 模拟中学习结构拓扑和灵活性之间的模式，另一方面，低温电子显微镜图谱异质密度分布中包含的动力学信息进一步增强了模型。这些结果验证了低温电子显微镜图和 PDB 模型的信息对 RMSF-net 中的蛋白质动力学预测的互补作用。
 
-## **局限性与未来方向**
+## 局限性与未来方向
 
 不可否认的是，RMSF-net 主要限于预测纯蛋白质及其复合物在溶液中的柔韧性。对于蛋白质在与小分子配体结合或在膜环境中的动力学特性，该方法在某些局部区域可能会表现出不准确性。
 

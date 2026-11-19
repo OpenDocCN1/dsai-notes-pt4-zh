@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（9月 13日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/DW2LdqQWvo3JEExgEJ3cMMdLn8g](https://miracleplus.feishu.cn/docx/DW2LdqQWvo3JEExgEJ3cMMdLn8g)
 
-# 资讯
+## 资讯
 
 ### OpenAI o1比博士还“聪明”，全球11位AI大咖怎么看？
 
@@ -28,7 +29,7 @@ https://mp.weixin.qq.com/s/w9chmnT1MTxMeuiTslBdxQ
 
 +   Ethan Mollick（沃顿商学院教授）：认为o1在规划复杂问题上表现出色，但其智能仍依赖于GPT-4，存在错误和局限性。
 
-+   **Aravind Sr****iniva**s（Perplexity CEO）：认为单纯依赖大语言模型的推理不够可靠，建议结合代码执行和知识图谱来提升模型的实用性。
++   Aravind Srinivas（Perplexity CEO）：认为单纯依赖大语言模型的推理不够可靠，建议结合代码执行和知识图谱来提升模型的实用性。
 
 ![](img/3c6a68fa103e9d2ddf1d309a42504ce0.png)
 
@@ -78,7 +79,7 @@ https://mp.weixin.qq.com/s/isbkGGhYcrz_r5VljG9xYQ
 
 ![](img/49e28ba59cd0e611cf56dbdd7d64d38c.png)
 
-# 推特
+## 推特
 
 ### Devin评估OpenAI o1模型：新系列模型在处理代码的自主系统方面有显著提升
 
@@ -86,7 +87,7 @@ https://x.com/cognition_labs/status/1834292718174077014
 
 我们在过去几周与 OpenAI 紧密合作，使用 Devin 评估了 OpenAI o1 模型的推理能力。结果显示，新系列模型在处理代码的自主系统方面有显著提升。
 
-在评估过程中，我们使用了简化版的 Devin——“Devin-Base”，以便专门衡量基础模型的变化对 Devin 能力的影响。与 GPT-4o 相比，o1 在反思和分析能力上表现出色，能够在得出正确答案前回溯并考虑不同选项，减少了幻想和错误的可能性。此外，使用 o1-preview 时，Devin 更能准确诊断问题的根本原因，而不是仅仅解决表面症状。
+在评估过程中，我们使用了简化版的 Devin——“`Devin-Base`”，以便专门衡量基础模型的变化对 Devin 能力的影响。与 GPT-4o 相比，o1 在反思和分析能力上表现出色，能够在得出正确答案前回溯并考虑不同选项，减少了幻想和错误的可能性。此外，使用 `o1-preview` 时，Devin 更能准确诊断问题的根本原因，而不是仅仅解决表面症状。
 
 在提示 o1 时，我们发现与以往模型不同：
 
@@ -96,7 +97,7 @@ https://x.com/cognition_labs/status/1834292718174077014
 
 •o1 的智能提升带来了对高度规范指令的遵循变异性增加。
 
-我们使用内部基准“cognition-golden”对 Devin 进行评估，设计了针对经济价值任务的真实评估，环境可完全复现并具有自主反馈。在详细报告中，我们展示了例如使用用户提供的数据源部署 Grafana 仪表盘的任务，介绍了模拟用户、评估代理和评估评估者的方法。
+我们使用内部基准`cognition-golden`对 Devin 进行评估，设计了针对经济价值任务的真实评估，环境可完全复现并具有自主反馈。在详细报告中，我们展示了例如使用用户提供的数据源部署 Grafana 仪表盘的任务，介绍了模拟用户、评估代理和评估评估者的方法。
 
 总的来说，OpenAI 团队在推动行业进步方面取得了令人印象深刻的成果，我们期待继续合作
 
@@ -174,7 +175,7 @@ https://x.com/nickfloats/status/1834332468662391043
 
 [ssstwitter.com_1726176011065.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NcR8bhoNMovNL8xeG5UcjcKsnne)
 
-# 论文
+## 论文
 
 ### 基于话语重写的无监督对话主题分割模型
 
@@ -182,11 +183,11 @@ https://x.com/nickfloats/status/1834332468662391043
 
 链接：https://arxiv.org/abs/2409.07672
 
-对话主题分割在各种对话建模任务中起着至关重要的作用。当前最先进的无监督对话主题分割（DTS）方法通过相邻话语匹配和伪分割，从对话数据中学习与主题相关的语篇表示，进一步挖掘未标注对话关系中的有用线索。然而，在多轮对话中，话语常常存在共指或省略，导致直接使用这些话语进行表示学习可能会对邻近话语匹配任务中的语义相似性计算产生负面影响。为了充分利用对话关系中的有用线索，本研究提出了一种新颖的无监督对话主题分割方法，该方法结合了话语重写（Utterance Rewriting, UR）技术与无监督学习算法，通过重写对话以恢复共指和省略词，有效利用未标注对话中的有用线索。与现有的无监督模型相比，所提出的话语重写主题分割模型（UR-DTS）显著提高了主题分割的准确性。主要发现是在DialSeg711数据集上，绝对误差评分和WD分别提高了约6%，达到11.42%和12.97%；在Doc2Dial数据集上，绝对误差评分和WD分别提高了约3%和2%，最终在绝对误差评分和WD上达到35.17%和38.49%，实现了当前最优（SOTA）的性能。这表明该模型在捕捉对话主题的细微差别方面非常有效，同时展示了利用未标注对话的有用性和挑战性。
+对话主题分割在各种对话建模任务中起着至关重要的作用。当前最先进的无监督对话主题分割（DTS）方法通过相邻话语匹配和伪分割，从对话数据中学习与主题相关的语篇表示，进一步挖掘未标注对话关系中的有用线索。然而，在多轮对话中，话语常常存在共指或省略，导致直接使用这些话语进行表示学习可能会对邻近话语匹配任务中的语义相似性计算产生负面影响。为了充分利用对话关系中的有用线索，本研究提出了一种新颖的无监督对话主题分割方法，该方法结合了话语重写（Utterance Rewriting, UR）技术与无监督学习算法，通过重写对话以恢复共指和省略词，有效利用未标注对话中的有用线索。与现有的无监督模型相比，所提出的话语重写主题分割模型（`UR-DTS`）显著提高了主题分割的准确性。主要发现是在DialSeg711数据集上，绝对误差评分和WD分别提高了约6%，达到11.42%和12.97%；在Doc2Dial数据集上，绝对误差评分和WD分别提高了约3%和2%，最终在绝对误差评分和WD上达到35.17%和38.49%，实现了当前最优（SOTA）的性能。这表明该模型在捕捉对话主题的细微差别方面非常有效，同时展示了利用未标注对话的有用性和挑战性。
 
 ![](img/5886e38e6769ed4a476a0c763f6956cd.png)
 
-### **微调大型语言模型用于实体匹配**
+### 微调大型语言模型用于实体匹配
 
 贡献人：
 
@@ -204,7 +205,7 @@ https://x.com/nickfloats/status/1834332468662391043
 
 链接：https://arxiv.org/abs/2409.08239
 
-大型语言模型（LLMs）在利用结构化数据、复杂推理或工具使用的挑战性场景中仍然存在困难。本文提出了Source2Synth：一种无需依赖昂贵的人类注释即可用于教授LLMs新技能的新方法。Source2Synth以自定义数据源作为输入，生成具有基于现实世界来源的中间推理步骤的合成数据点。Source2Synth通过根据可回答性丢弃低质量的生成内容，从而提高数据集的质量。我们通过将该方法应用于两个具有挑战性的领域来证明其通用性：在多跳问题回答（Multi-Hop Question Answering, MHQA）中测试推理能力，以及在表格问题回答（Tabular Question Answering, TQA）中测试工具使用能力。与微调基线相比，我们的方法在WikiSQL的TQA任务上提升了25.51%，在HotPotQA的MHQA任务上提升了22.57%。
+大型语言模型（LLMs）在利用结构化数据、复杂推理或工具使用的挑战性场景中仍然存在困难。本文提出了`Source2Synth`：一种无需依赖昂贵的人类注释即可用于教授LLMs新技能的新方法。`Source2Synth`以自定义数据源作为输入，生成具有基于现实世界来源的中间推理步骤的合成数据点。`Source2Synth`通过根据可回答性丢弃低质量的生成内容，从而提高数据集的质量。我们通过将该方法应用于两个具有挑战性的领域来证明其通用性：在多跳问题回答（Multi-Hop Question Answering, MHQA）中测试推理能力，以及在表格问题回答（Tabular Question Answering, TQA）中测试工具使用能力。与微调基线相比，我们的方法在WikiSQL的TQA任务上提升了25.51%，在HotPotQA的MHQA任务上提升了22.57%。
 
 ![](img/b25955bb299dec4efeedf8e765441379.png)
 
@@ -226,15 +227,17 @@ https://x.com/nickfloats/status/1834332468662391043
 
 贡献人：
 
+
+
 链接：https://arxiv.org/abs/2409.07606
 
-深度学习正则化技术，如\emph{dropout}、\emph{layer normalization}或\emph{weight decay}，在构建现代人工神经网络中被广泛采用，通常能带来更稳健的训练过程和更好的泛化能力。然而，在\emph{强化学习}（Reinforcement Learning, RL）领域，这些技术的应用仍然有限，通常仅应用于价值函数估计器 \citep{hiraoka2021dropout, smith2022walk}，且可能产生不利影响。这一问题在离线强化学习（offline RL）环境中更加明显，尽管离线RL与监督学习更为相似，但其研究关注度较低。近期在连续离线RL中的研究表明，尽管我们可以构建足够强大的评论家网络（critic networks），但演员网络（actor networks）的泛化能力仍然是一个瓶颈。在本研究中，我们通过实验证明，在离线RL的演员-评论家算法中对演员网络应用标准正则化技术，平均可以在两种算法和三个不同的连续D4RL领域中提升6%的性能。
+深度学习正则化技术，如 dropout、layer normalization 或 weight decay，在构建现代人工神经网络中被广泛采用，通常能带来更稳健的训练过程和更好的泛化能力。然而，在强化学习（Reinforcement Learning, RL）领域，这些技术的应用仍然有限，通常仅应用于价值函数估计器 \citep{hiraoka2021dropout, smith2022walk}，且可能产生不利影响。这一问题在离线强化学习（offline RL）环境中更加明显，尽管离线RL与监督学习更为相似，但其研究关注度较低。近期在连续离线RL中的研究表明，尽管我们可以构建足够强大的评论家网络（critic networks），但演员网络（actor networks）的泛化能力仍然是一个瓶颈。在本研究中，我们通过实验证明，在离线RL的演员-评论家算法中对演员网络应用标准正则化技术，平均可以在两种算法和三个不同的连续D4RL领域中提升6%的性能。
 
 ![](img/dd5ac055bafa2fc4a5c8de18509d5591.png)
 
 ![](img/274091829a3e091802b954b68d6a6504.png)
 
-### GRE²-MDCL：通过多维对比学习增强的图表示嵌入
+# GRE²-MDCL：通过多维对比学习增强的图表示嵌入
 
 贡献人：
 
@@ -248,7 +251,7 @@ https://x.com/nickfloats/status/1834332468662391043
 
 # 产品
 
-### Thunderbit
+## Thunderbit
 
 贡献人：
 
@@ -258,7 +261,7 @@ Thunderbit 是一款 Chrome 扩展，通过人工智能和无代码技术帮助�
 
 ![](img/1ddc486d0114b38a06d3b00862ef71b9.png)
 
-### ContentRadar
+## ContentRadar
 
 贡献人：
 
@@ -270,7 +273,7 @@ ContentRadar 是一款自动化工具，帮助用户将写作和播客内容快�
 
 # HuggingFace&Github
 
-### VMAs
+## VMAs
 
 贡献人：
 
@@ -282,7 +285,7 @@ VMAs 是一种生成背景音乐的框架，从视频输入中学习生成音乐
 
 [17.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XIkabfwpzoHjIgxu1ALcxrtPngg)
 
-### MVLLaVA
+## MVLLaVA
 
 贡献人：
 
@@ -294,7 +297,7 @@ MVLLaVA 是一个智能代理，结合了多视角扩散模型和大型多模态
 
 # 投融资
 
-### 前小米机器人骨干创业：完成数千万天使轮融资，研发高性价比机器人关节
+## 前小米机器人骨干创业：完成数千万天使轮融资，研发高性价比机器人关节
 
 贡献人：
 
@@ -302,33 +305,33 @@ https://mp.weixin.qq.com/s/5F26kwx2UeviDMqLv1Jh1Q
 
 机器人关节厂商「灵足时代」近日宣布完成数千万元天使轮融资，本轮融资由英诺天使基金、雅瑞智友科学家基金及一维创投共同投资。资金将主要用于机器人关节的新产品研发以及团队搭建等方面。「灵足时代」成立于2024年1月，专注于开发适用于机器人的一体化关节产品，并为其他行业提供机器人整机硬件定制服务。
 
-**融资亮点：**
+### 融资亮点：
 
-1.  **投资方背景**：
+1. 投资方背景：
 
-+   **英诺天使基金**对「灵足时代」的技术积累和市场潜力表示看好，认为其产品具有极高的性价比和跨领域应用前景，未来有望对传统传动市场产生革新影响。
++ 英诺天使基金对「灵足时代」的技术积累和市场潜力表示看好，认为其产品具有极高的性价比和跨领域应用前景，未来有望对传统传动市场产生革新影响。
 
-+   **雅瑞智友科学家基金**由国内机器人领域专家王田苗创立，特别关注机器人核心零部件的创新能力，认为「灵足时代」在电机驱动和控制方面具备高性能表现，且稳定的量产能力将推动机器人行业发展。
++ 雅瑞智友科学家基金由国内机器人领域专家王田苗创立，特别关注机器人核心零部件的创新能力，认为「灵足时代」在电机驱动和控制方面具备高性能表现，且稳定的量产能力将推动机器人行业发展。
 
-+   **一维创投**长期看好机器人赛道，认为「灵足时代」凭借核心硬件能力和务实的商业模式，具备行业领先的竞争优势。
++ 一维创投长期看好机器人赛道，认为「灵足时代」凭借核心硬件能力和务实的商业模式，具备行业领先的竞争优势。
 
-1.  **资金用途**：
+2. 资金用途：
 
-+   该笔融资将用于开发新款机器人关节产品，包括即将发布的准直驱一体化关节模组“RobStride03”，这款产品在市场中性价比极具竞争力，售价仅为999元，相比同行产品降低了一半以上的成本。
++ 该笔融资将用于开发新款机器人关节产品，包括即将发布的准直驱一体化关节模组“RobStride03”，这款产品在市场中性价比极具竞争力，售价仅为999元，相比同行产品降低了一半以上的成本。
 
-+   资金也将用于团队建设和业务扩展，特别是在海外市场上，已成功进入欧洲、美国、南非等国家，并与海外知名企业合作研发机器人整机硬件架构。
++ 资金也将用于团队建设和业务扩展，特别是在海外市场上，已成功进入欧洲、美国、南非等国家，并与海外知名企业合作研发机器人整机硬件架构。
 
-1.  **商业化前景**：
+3. 商业化前景：
 
-+   「灵足时代」的关节产品已被国内30%左右的人形机器人厂商采用，其产品不仅局限于机器人领域，还计划扩展到智能滑板车、电动车、自动驾驶清洁车等其他应用场景。
++ 「灵足时代」的关节产品已被国内30%左右的人形机器人厂商采用，其产品不仅局限于机器人领域，还计划扩展到智能滑板车、电动车、自动驾驶清洁车等其他应用场景。
 
-+   创始团队成员出身于小米机器人团队，拥有超过10年的机器人关节开发经验，为公司快速迭代和商业化进程提供了强有力的支持。
++ 创始团队成员出身于小米机器人团队，拥有超过10年的机器人关节开发经验，为公司快速迭代和商业化进程提供了强有力的支持。
 
 公司官网：https://www.robstride.com/
 
 ![](img/697955c3c1c1c71517544e179f8760ca.png)
 
-### OffDeal：用AI助力小企业寻找大规模退出机会
+## OffDeal：用AI助力小企业寻找大规模退出机会
 
 https://techcrunch.com/2024/09/12/offdeal-wants-to-help-small-businesses-find-big-exits-with-ai-agents/
 
@@ -340,7 +343,7 @@ OffDeal是一家旨在帮助小企业通过AI代理找到最佳并购机会的�
 
 ![](img/3ce83daad092ed777c1989d83a14ab42.png)
 
-### Shopsense AI助力粉丝购买明星红毯同款
+## Shopsense AI助力粉丝购买明星红毯同款
 
 https://techcrunch.com/2024/09/12/shopsense-ai-technology-enables-music-fans-to-buy-dupes-inspired-by-red-carpet-looks-vmas/
 
@@ -354,7 +357,7 @@ Shopsense AI是一家利用AI技术帮助用户在观看娱乐节目时购买类
 
 # 学习
 
-### 如何看待 OpenAI 发布 o1 系列模型？将带来哪些变革？
+## 如何看待 OpenAI 发布 o1 系列模型？将带来哪些变革？
 
 贡献人：
 
@@ -370,7 +373,7 @@ https://www.zhihu.com/question/666991594?utm_psn=1817858863715725312
 
 ![](img/0c1fb53cd8a6135bbba9250f8993600a.png)
 
-### 一些稀疏化的工作
+## 一些稀疏化的工作
 
 https://zhuanlan.zhihu.com/p/719773345?utm_psn=1817907686014066689
 
@@ -378,101 +381,114 @@ https://zhuanlan.zhihu.com/p/719773345?utm_psn=1817907686014066689
 
 **模型稀疏性**：
 
-1.  **SparseGPT**：针对现有剪枝方法计算成本过高的问题，SparseGPT提供了一种基于Hessian逆序列的剪枝方法。在给定剪枝掩码的情况下，通过更新权重矩阵的剩余权重来补偿剪枝带来的误差。
+1. **SparseGPT**：针对现有剪枝方法计算成本过高的问题，SparseGPT提供了一种基于Hessian逆序列的剪枝方法。在给定剪枝掩码的情况下，通过更新权重矩阵的剩余权重来补偿剪枝带来的误差。
 
-1.  **Deja vu**：提出了一种动态剪枝pipeline，基于上下文稀疏性预测模型中哪些神经元需要激活。对于MLP和MHA分别用不同方式来预测活跃神经元和head，使用layer-wise的token embedding近似推理来实现加速。
+2. **Deja vu**：提出了一种动态剪枝 pipeline，基于上下文稀疏性预测模型中哪些神经元需要激活。对于MLP和MHA分别用不同方式来预测活跃神经元和 head，使用 layer-wise 的 token embedding 近似推理来实现加速。
 
-1.  **Sirius**：观察到稀疏性方法在推理任务（如GSM8k）中效果不佳，但通过修正少量错误token可以恢复正确率，这类似于speculate decoding的应用。
+3. **Sirius**：观察到稀疏性方法在推理任务（如GSM8k）中效果不佳，但通过修正少量错误 token 可以恢复正确率，这类似于 speculate decoding 的应用。
 
-1.  Adaptive methods：通过动态head-wise调整和分配权重，解决中间层检索不到的现象，提出了新的调整方法，如PyramidKV来优化attention map。
+4. Adaptive methods：通过动态 head-wise 调整和分配权重，解决中间层检索不到的现象，提出了新的调整方法，如 PyramidKV 来优化 attention map。
 
-**MInference 1.0**：使用硬件高效的模式组合attention map，提升了计算效率，并提供了准确率的benchmark，展现出在稀疏性优化中的潜力。
+**MInference 1.0**：使用硬件高效的模式组合 attention map，提升了计算效率，并提供了准确率的 benchmark，展现出在稀疏性优化中的潜力。
 
 ![](img/02836b8446e81e978d1ea4fc9b3d442d.png)
 
-### xDiT加入diffusers文档
+## xDiT加入diffusers文档
 
 https://huggingface.co/docs/diffusers/main/en/optimization/xdit
 
-xDiT 是一个专为大规模并行部署的扩散变换器（Diffusion Transformers, DiTs）设计的推理引擎，提供了多种高效的并行方法和 GPU 内核加速。xDiT 支持四种并行方法：统一序列并行（Unified Sequence Parallelism）、管道融合（PipeFusion）、CFG 并行和数据并行。这四种并行方法可以混合配置，以优化通信模式，适应底层网络硬件。
+`xDiT` 是一个专为大规模并行部署的扩散变换器（Diffusion Transformers, DiTs）设计的推理引擎，提供了多种高效的并行方法和 GPU 内核加速。`xDiT` 支持四种并行方法：统一序列并行（Unified Sequence Parallelism）、管道融合（PipeFusion）、CFG 并行和数据并行。这四种并行方法可以混合配置，以优化通信模式，适应底层网络硬件。
 
-除了并行优化，xDiT 还侧重于单 GPU 的性能加速。通过引入 torch.compile 和 onediff 等编译加速技术，以及利用 Attention 优化库，进一步提升单 GPU 推理效率。
+除了并行优化，`xDiT` 还侧重于单 GPU 的性能加速。通过引入 `torch.compile` 和 `onediff` 等编译加速技术，以及利用 Attention 优化库，进一步提升单 GPU 推理效率。
 
-技术实现上，用户只需使用 xFuserArgs 从 xDiT 获取配置参数，并将其与 Diffusers 库的 pipeline 对象传递给 xDiTParallel，即可实现特定 pipeline 的并行化。此外，xDiT 支持使用 torchrun 命令在多节点、多 GPU 上进行推理。
+技术实现上，用户只需使用 `xFuserArgs` 从 `xDiT` 获取配置参数，并将其与 `Diffusers` 库的 `pipeline` 对象传递给 `xDiTParallel`，即可实现特定 `pipeline` 的并行化。此外，`xDiT` 支持使用 `torchrun` 命令在多节点、多 GPU 上进行推理。
 
 例如，以下命令用于 8 GPU 的并行推理：
 
 ```
-torchrun --nproc_per_node=8 ./inference.py --model models/FLUX.1-dev --data_parallel_degree 2 --ulysses_degree 2 --ring_degree 2 --prompt &quot;A snowy mountain&quot; &quot;A small dog&quot; --num_inference_steps 50
+torchrun --nproc_per_node=8 ./inference.py --model models/FLUX.1-dev --data_parallel_degree 2 --ulysses_degree 2 --ring_degree 2 --prompt "A snowy mountain" "A small dog" --num_inference_steps 50
 ```
 
-目前支持的模型包括 Flux.1、Stable Diffusion 3 等，性能基准可以在 xDiT 的 GitHub 页面上找到。
+目前支持的模型包括 Flux.1、Stable Diffusion 3 等，性能基准可以在 `xDiT` 的 GitHub 页面上找到。
 
 ![](img/5608e520d2fffa9ebecf1a479226d24d.png)
 
-### 使用 Imatrix 和 K-Quantization 进行 GGUF 量化以在 CPU 上运行 LLM
+## 使用 Imatrix 和 K-Quantization 进行 GGUF 量化以在 CPU 上运行 LLM
 
 https://zhuanlan.zhihu.com/p/719927690?utm_psn=1817905793753833473
 
-GGUF 是一种用于大型语言模型 (LLM) 的高效存储和快速加载的二进制文件格式，依赖 GGML 张量库。GGUF 文件封装了推理所需的所有组件，并支持多种模型格式（如 Llama 3、Phi、Qwen2）。尽管 GGUF 本身并不提供量化功能，但 llama.cpp 提供了多种量化算法，如 K-Quantization，用于减少模型大小并以 GGUF 格式存储。
+`GGUF` 是一种用于大型语言模型（LLM）的高效存储和快速加载的二进制文件格式，依赖 `GGML` 张量库。`GGUF` 文件封装了推理所需的所有组件，并支持多种模型格式（如 Llama 3、Phi、Qwen2）。尽管 `GGUF` 本身并不提供量化功能，但 `llama.cpp` 提供了多种量化算法，如 `K-Quantization`，用于减少模型大小并以 `GGUF` 格式存储。
 
-K-Quantization（K 量化）通过将模型权重分成“超级块”并进一步细分为子块来提高精度。每个子块有各自的比例和最小值，用于保持模型准确性。该方法尽管较慢，但在推理过程中性能极佳。反量化过程非常简单，适合 GPU 和 SIMD 加速。
+`K-Quantization`（`K` 量化）通过将模型权重分成“超级块”并进一步细分为子块来提高精度。每个子块有各自的比例和最小值，用于保持模型准确性。该方法尽管较慢，但在推理过程中性能极佳。反量化过程非常简单，适合 GPU 和 SIMD 加速。
 
-量化准确性可以通过重要性矩阵 (imatrix) 提高，该矩阵用于识别最关键的权重并避免量化这些权重，从而减少误差。生成 imatrix 需要模型对校准数据集进行前向传递，计算过程耗时较长，通常使用 GPU 加速。
+量化准确性可以通过重要性矩阵（`imatrix`）提高，该矩阵用于识别最关键的权重并避免量化这些权重，从而减少误差。生成 `imatrix` 需要模型对校准数据集进行前向传递，计算过程耗时较长，通常使用 GPU 加速。
 
-基准测试表明，量化模型的困惑度接近于原始 FP16 模型，尤其是使用了重要性矩阵的模型。通过 K-Quantization 和重要性矩阵优化的 GGUF 模型在推理吞吐量和内存效率方面表现优异，特别是在 CPU 上的推理速度明显提高。
+基准测试表明，量化模型的困惑度接近于原始 `FP16` 模型，尤其是使用了重要性矩阵的模型。通过 `K-Quantization` 和重要性矩阵优化的 `GGUF` 模型在推理吞吐量和内存效率方面表现优异，特别是在 CPU 上的推理速度明显提高。
 
 ![](img/76592e07f19a4311873695254bf118ac.png)
 
-### 大模型推理服务调度优化技术-Continuous batching
+## 大模型推理服务调度优化技术-Continuous batching
 
 https://zhuanlan.zhihu.com/p/719610083?utm_psn=1817314936814198784
 
-**KV Cache**：GPT模型的推理分为两个阶段——预填充和解码。解码阶段中，每次推理输出一个token，前后t**oken产生冗余**计算。为避免重复计算，已生成token的K和V值可以缓存，这就是KV Cache技术，它通过以内存换计算来提高推理速度，减少延迟。
+**KV Cache**：`GPT` 模型的推理分为两个阶段——预填充和解码。解码阶段中，每次推理输出一个 token，前后 token 产生冗余计算。为避免重复计算，已生成 token 的 `K` 和 `V` 值可以缓存，这就是 `KV Cache` 技术，它通过以内存换计算来提高推理速度，减少延迟。
 
 **批处理模式**：
 
-+   **静态批处理**：多个请求打包后一起处理，直到所有请求完成后才返回响应。这种方式由于等待较长请求完成，GPU利用率较低。
++ **静态批处理**：多个请求打包后一起处理，直到所有请求完成后才返回响应。这种方式由于等待较长请求完成，GPU 利用率较低。
 
-+   **动态批处理**：允许多个请求动态打包，最大化GPU吞吐量，减少响应延迟。但在生成长度差异较大的情况下，性能提升有限。
++ **动态批处理**：允许多个请求动态打包，最大化 GPU 吞吐量，减少响应延迟。但在生成长度差异较大的情况下，性能提升有限。
 
-+   **连续批处理**：适用于自回归大模型推理，通过在推理过程中动态加入新的请求，优化GPU资源利用率。该方法可提升10-20倍的吞吐量，是目前最先进的推理批处理技术。
++ **连续批处理**：适用于自回归大模型推理，通过在推理过程中动态加入新的请求，优化 GPU 资源利用率。该方法可提升 10-20 倍的吞吐量，是目前最先进的推理批处理技术。
 
-**Ragged Batching**：在处理变长输入时，不需要填充到相同形状，通过设置输入允许不规则批次，实现高效批处理。Triton推理框架中的Ragged Batching是此类技术的典型实现。
+**Ragged Batching**：在处理变长输入时，不需要填充到相同形状，通过设置输入允许不规则批次，实现高效批处理。`Triton` 推理框架中的 `Ragged Batching` 是此类技术的典型实现。
 
-**ORCA架构**：ORCA提出了一种迭代级调度机制，通过分割请求并动态批处理，减少延迟并提升吞吐量。其独特之处在于选择性批处理，只对非注意力操作进行批处理，最大化GPU利用。
+**ORCA 架构**：`ORCA` 提出了一种迭代级调度机制，通过分割请求并动态批处理，减少延迟并提升吞吐量。其独特之处在于选择性批处理，只对非注意力操作进行批处理，最大化 GPU 利用。
 
-**应用案例**：多个推理框架如**vLLM**、D**eepSpeed-Fas**t**Gen、Tens**o**rRT-LLM、**LMDeploy和LightLLM都已实现了Continuous Batching。每个框架在处理KV Cache、预填充与解码的优化上有所不同，如vLLM区分Prefill和Decode阶段，DeepSpeed-MII通过动态分割融合优化前向推理的大小，提升吞吐量与响应一致性。
+
+
+
+## 应用案例
+
+多个推理框架如 `vLLM`、`DeepSpeed-FastGen`、`TensorRT-LLM`、`LMDeploy` 和 `LightLLM` 都已实现了Continuous Batching。每个框架在处理KV Cache、预填充与解码的优化上有所不同，如vLLM区分Prefill和Decode阶段，`DeepSpeed-MII`通过动态分割融合优化前向推理的大小，提升吞吐量与响应一致性。
 
 ![](img/217517a763ab366e304e1f2e1275b63e.png)
 
-### 浅谈LLM mechanistic interpretability的几个流派
+## 浅谈LLM mechanistic interpretability的几个流派
 
-https://zhuanlan.zhihu.com/p/719002810?utm_psn=1817598803068461056
+`https://zhuanlan.zhihu.com/p/719002810?utm_psn=1817598803068461056`
 
-因果追踪（Causal Tracing）：又称路径修补或因果干预**分析，主要通过改变模型某个位置的参数或向量，观察最终预测**的变化来理解信息流。经典研究表明中间FFN层对知识表示重要，如在Locating and Editing Factual Associations in GPT中发现FFN层在事实知识任务中起关键作用，另有研究表明FFN早期层负责表示的丰富化，而注意力头提取知识。这一方法还可应用于其他架构，如Mamba模型。
+因果追踪（Causal Tracing）：又称路径修补或因果干预分析，主要通过改变模型某个位置的参数或向量，观察最终预测的变化来理解信息流。经典研究表明中间FFN层对知识表示重要，如在Locating and Editing Factual Associations in GPT中发现FFN层在事实知识任务中起关键作用，另有研究表明FFN早期层负责表示的丰富化，而注意力头提取知识。这一方法还可应用于其他架构，如 `Mamba` 模型。
 
-电路**分析（Circuit Ana**lysis）：关注特定输入/输出路径上模型的重要参数，目标是以注意力头和FFN层为基本单元构建输入到输出的电路。研究发现，某些注意力头与上下文学习（in-context learning）相关，如induction head在该过程中的作用。通过分析GPT-2等模型的电路，研究者发现微调增强了已有的机制。
+电路分析（Circuit Analysis）：关注特定输入/输出路径上模型的重要参数，目标是以注意力头和FFN层为基本单元构建输入到输出的电路。研究发现，某些注意力头与上下文学习（in-context learning）相关，如induction head在该过程中的作用。通过分析 `GPT-2` 等模型的电路，研究者发现微调增强了已有的机制。
 
 神经元分析（Neuron Analysis）：这一流派将FFN层的神经元作为基本单元，探讨单个神经元在预测中的角色。研究表明，FFN层可被视为多个神经元的加和，部分神经元在投影到词汇空间时具有强解释性。然而，神经元之间的叠加现象（superposition）削弱了这种可解释性，因而提出了如稀疏自编码器等方法以提高其解释能力。
 
-### 通过打包 Flash Attention 来提升 Hugging Face 训练效率
+## 通过打包 `Flash Attention` 来提升 Hugging Face 训练效率
 
-https://zhuanlan.zhihu.com/p/719693369?utm_psn=1817597530319499264
+`https://zhuanlan.zhihu.com/p/719693369?utm_psn=1817597530319499264`
 
-**背景与问题**：在模型训练时，填充（padding）常用于统一输入序列长度，但这种方式会带来性能损失。打包示例能避免填充的效率低下问题。然而，之前的打包方式未处理好示例边界，导致出现不期望的跨示例注意力，影响模型的质量与收敛性。
+### 背景与问题
 
-**解决方案**：Hugging Face 引入了新的数据整理器 DataCollatorWithFlattening，它与 Flash Attention 2 兼容，能够在打包时保持对示例边界的处理。通过计算累积序列长度（cu_seqlens），该方法确保训练过程不会出现跨示例注意力问题，并提升训练吞吐量和内存效率。
+在模型训练时，填充（padding）常用于统一输入序列长度，但这种方式会带来性能损失。打包示例能避免填充的效率低下问题。然而，之前的打包方式未处理好示例边界，导致出现不期望的跨示例注意力，影响模型的质量与收敛性。
 
-**吞吐量与内存改进**：
+### 解决方案
 
-+   在 FLAN 数据集上使用新的数据整理器，训练吞吐量提升了 2 倍，内存使用减少了 20%。
+Hugging Face 引入了新的数据整理器 `DataCollatorWithFlattening`，它与 `Flash Attention 2` 兼容，能够在打包时保持对示例边界的处理。通过计算累积序列长度（`cu_seqlens`），该方法确保训练过程不会出现跨示例注意力问题，并提升训练吞吐量和内存效率。
 
-+   在 OrcaMath 数据集上，吞吐量提升了 1.4 倍，内存减少了 6%。
+### 吞吐量与内存改进
 
-**收敛性保持**：打包并不会影响训练收敛性。实验表明，使用打包的模型与使用填充的模型在验证损失上表现相同，保证了训练的效果不受影响。
++ 在 FLAN 数据集上使用新的数据整理器，训练吞吐量提升了 2 倍，内存使用减少了 20%。
 
-**支持的模型**：目前已有多个模型支持这一新功能，包括 Llama 2/3、Mistral、Granite 等。这些模型都可以通过提供 position_ids 来实现与 Flash Attention 2 的兼容。
++ 在 OrcaMath 数据集上，吞吐量提升了 1.4 倍，内存减少了 6%。
+
+### 收敛性保持
+
+打包并不会影响训练收敛性。实验表明，使用打包的模型与使用填充的模型在验证损失上表现相同，保证了训练的效果不受影响。
+
+### 支持的模型
+
+目前已有多个模型支持这一新功能，包括 `Llama 2/3`、`Mistral`、`Granite` 等。这些模型都可以通过提供 `position_ids` 来实现与 `Flash Attention 2` 的兼容。
 
 ![](img/86f9178dd0ca02385b8821eb0d9659fb.png)
 
@@ -482,9 +498,9 @@ https://zhuanlan.zhihu.com/p/719693369?utm_psn=1817597530319499264
 
 ![](img/7cd620ce9b7570392ec0966d8cc89f3f.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
 ##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
@@ -492,7 +508,7 @@ https://zhuanlan.zhihu.com/p/719693369?utm_psn=1817597530319499264
 
 ##### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
 ##### 行研-GenAI研究岗位-前沿学术探索
 
@@ -500,17 +516,15 @@ https://zhuanlan.zhihu.com/p/719693369?utm_psn=1817597530319499264
 
 ##### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**添加🛰️💻【****l_ivresse29】**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请添加🛰️💻【`l_ivresse29`】
 
-> ‼️欢迎**推荐/自荐**，期待在**奇绩创坛**遇见更好的你‼️
+> ‼️欢迎推荐/自荐，期待在奇绩创坛遇见更好的你‼️
 
 ---
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -522,11 +536,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

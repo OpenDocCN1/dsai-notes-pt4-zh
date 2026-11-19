@@ -1,10 +1,11 @@
+
 # 【说明文档】打卡（非必须）
 
 > 来源：[https://datawhaler.feishu.cn/docx/O6QEdgoROoLBssx2yDJciWM3nWc](https://datawhaler.feishu.cn/docx/O6QEdgoROoLBssx2yDJciWM3nWc)
 
 ## 温馨提示
 
-> **打卡（非必须）****：并非强制，看个人意愿**。
+> **打卡（非必须）**：并非强制，看个人意愿。
 
 > 如果选择打卡，请按要求提交，提交完成核实为有效打卡后，将在一周内通过预留邮箱收到【学习证书】
 
@@ -18,15 +19,15 @@
 
 ---
 
-#### **自媒体平台**
+#### 自媒体平台
 
-对于**📕、视频号、抖音、B站**等复制添加👇标签
+对于📕、视频号、抖音、B站等复制添加👇标签
 
 #AI千行百业学习打卡 #Datawhale #奇想星球平台
 
 #### 社交媒体平台
 
-对于**CSDN、知乎、即刻、🛰️**等附上本知识库链接[应用 | AI + 千行百业](https://datawhaler.feishu.cn/wiki/XrNcwoE70i7NNJkyijmclsP8nAg)
+对于CSDN、知乎、即刻、🛰️等附上本知识库链接[应用 | AI + 千行百业](https://datawhaler.feishu.cn/wiki/XrNcwoE70i7NNJkyijmclsP8nAg)
 
 ---
 
@@ -34,13 +35,13 @@
 
 打卡核实后，将会邮箱发送学习证书。优秀打卡内容还有机会获得优秀学习证书！
 
-打卡链接提交地址：https://datawhaler.feishu.cn/share/base/form/shrcnw8rIEeT5SI0yWNGADyj7rc
+打卡链接提交地址：`https://datawhaler.feishu.cn/share/base/form/shrcnw8rIEeT5SI0yWNGADyj7rc`
 
 ## 证书画廊
 
-### **AI + 视频生成**
+### AI + 视频生成
 
-> **AI视频生成学习**
+> AI视频生成学习
 
 > 要求：
 
@@ -54,9 +55,9 @@
 
 ![](img/108ad295f5c8a92bcf28637437b74740.png)
 
-### **AI + 音乐**
+### AI + 音乐
 
-> **AI音乐**
+> AI音乐
 
 > 要求：
 
@@ -70,9 +71,9 @@
 
 ![](img/7b2c789e1c8e961985c090b271c942c8.png)
 
-### **AI + 财务**
+### AI + 财务
 
-> **AI+财务学习**
+> AI+财务学习
 
 > 要求：
 
@@ -84,9 +85,9 @@
 
 ![](img/40b3d2b07939caab9b3dbb8413c755f8.png)
 
-### **AI + 产品经理**
+### AI + 产品经理
 
-> **AI+产品经理学习**
+> AI+产品经理学习
 
 > 要求：
 
@@ -98,9 +99,9 @@
 
 ![](img/1d2a865cd6f0a6f565992ea8d9f37afc.png)
 
-### **AI + 电商**
+### AI + 电商
 
-> **AI+电商学习**
+> AI+电商学习
 
 > 要求：
 

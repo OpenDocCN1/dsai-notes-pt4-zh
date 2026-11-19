@@ -1,3 +1,4 @@
+
 # 社区共学课件：AI 智能体 10 倍提效超级个体
 
 > 来源：[https://yunyinghui.feishu.cn/docx/MbtVdcJhCoIsQjxMKUEcZLYun6g](https://yunyinghui.feishu.cn/docx/MbtVdcJhCoIsQjxMKUEcZLYun6g)
@@ -66,7 +67,7 @@
 
 ![](img/6f5f45aa5bc2a7e01ffad9b198a4a0cf.png)
 
-## **【🛰️智能客服】智能体**
+## 【🛰️智能客服】智能体
 
 ![](img/4e5259b73b82331372772dbaa4ccee74.png)
 
@@ -74,7 +75,7 @@
 
 ![](img/7903139d884c8b3d2ec7149144f5129b.png)
 
-## **其他各种使用场景的智能体**
+## 其他各种使用场景的智能体
 
 ![](img/00565d4d25285a859b8fa46f7318a533.png)
 
@@ -209,7 +210,6 @@ AI 智能体的应用场景广泛覆盖金融、医疗、教育、制造、智�
 ![](img/3ec676e6413c4915627778be5f83a803.png)
 
 ```
-
 async def main(args: Args) -&gt; Output:
     # 定义返回结构
     ret = {
@@ -238,11 +238,11 @@ async def main(args: Args) -&gt; Output:
 
 接下来是配置多维表格的添加记录节点，三个关键参数需要配置，如图：
 
-app_token:多维表格地址，把第一步那生成的多维表格的网址（把网址中 ？号后面的删掉）
+`app_token`:多维表格地址，把第一步那生成的多维表格的网址（把网址中 ？号后面的删掉）
 
-records:上面的代码节点的输出。
+`records`:上面的代码节点的输出。
 
-table_name:数据表名称，要和第一步中新建的数据表名称对应上。
+`table_name`:数据表名称，要和第一步中新建的数据表名称对应上。
 
 ![](img/8e8947adeb05b799bd4a9a417f925865.png)
 
@@ -314,7 +314,7 @@ table_name:数据表名称，要和第一步中新建的数据表名称对应上
 
 +   方法：例如用 AI 辅助写作、数据分析、自动化任务等，提升效率 。
 
-##  找到圈子，融入圈子
+## 找到圈子，融入圈子
 
 +   建议：找到智能体学习圈子，泡在里面，和大家一起共学。
 

@@ -1,4 +1,5 @@
-# 30 分钟通过Trae 写了个浏览器插件工具箱
+
+# 30 分钟通过 Trae 写了个浏览器插件工具箱
 
 > 来源：[https://agijuejin.feishu.cn/docx/H55KdSrTUoFl59xIFNAcOiCLnQp](https://agijuejin.feishu.cn/docx/H55KdSrTUoFl59xIFNAcOiCLnQp)
 
@@ -57,6 +58,7 @@ function generateModalComponent() {
 }
 ```
 
+![](img/a5d176f50740d56ba19d815624731985.png)
 
 #### 2. 代码优化系统
 
@@ -136,18 +138,15 @@ function initTheme() {
 #### 1. 快速原型开发
 
 +   通过自然语言描述快速生成基础代码框架
-
 +   自动生成 API 文档和测试用例
-
 +   智能推荐最佳实践和设计模式
 
+![](img/d6448c41488b64ea509a8b44a8379259.png)
 
 #### 2. 代码重构优化
 
 +   自动识别代码异味
-
 +   提供重构建议和方案
-
 +   保证重构后的代码质量
 
 ![](img/63f7b9688dfe59354e992194bb42373d.png)
@@ -155,9 +154,7 @@ function initTheme() {
 #### 3. 性能调优
 
 +   自动分析性能瓶颈
-
 +   提供优化建议
-
 +   生成性能报告
 
 ### 最佳实践指南
@@ -209,42 +206,30 @@ export async function initComponents() {
 
 ### 技术规格
 
-+   **编译优化 **：
-
++   编译优化：
 +   即时编译（JIT）
-
 +   静态分析优化
-
 +   内联优化
-
 +   循环优化
 
-+   **AI 模型 **：
-
++   AI 模型：
 +   基于 Transformer 架构
-
 +   支持增量学习
-
 +   上下文感知能力
-
 +   多模态输入支持
 
 ### 安全性考虑
 
-1.  代码安全
+#### 代码安全
 
 +   自动检测安全漏洞
-
 +   符合 OWASP 标准
-
 +   敏感信息保护
 
-1.  数据安全
+#### 数据安全
 
 +   本地优先处理
-
 +   加密传输
-
 +   访问控制
 
 ### 未来展望
@@ -252,18 +237,17 @@ export async function initComponents() {
 Trae.ai 编译器代表了 AI 辅助开发的未来方向：
 
 +   更智能的代码理解
-
 +   更精准的优化建议
-
 +   更自然的人机交互
-
 +   更强大的多语言支持
 
-### 通过Trae编写的智能工具箱浏览器插件( gitee.com/class-java/… )
+### 通过Trae编写的智能工具箱浏览器插件(`gitee.com/class-java/…`)
 
 ![](img/e044bdb5e52890f7e465efe30e1ace9e.png)
 
+![](img/d2850c6d4b50dc051f00b619f86ba632.png)
 
+![](img/0ac8efc1074a248339042a16400f0097.png)
 
 ![](img/a1715a352d0748924e2536dcffccc60a.png)
 
@@ -307,7 +291,7 @@ Trae.ai 编译器代表了 AI 辅助开发的未来方向：
 ## 安装方法
 
 1. 下载本项目代码
-2. 打开 Chrome 浏览器，进入扩展程序页面 (chrome://extensions/)
+2. 打开 Chrome 浏览器，进入扩展程序页面 (`chrome://extensions/`)
 3. 开启「开发者模式」
 4. 点击「加载已解压的扩展程序」
 5. 选择本项目所在目录
@@ -322,16 +306,15 @@ Trae.ai 编译器代表了 AI 辅助开发的未来方向：
 ## 技术栈
 
 - 原生 JavaScript (ES6+)
-- HTML5 &amp; CSS3
+- HTML5 & CSS3
 - Chrome Extensions API
 
 ## 开发说明
 
 本项目采用模块化的开发方式，各功能组件独立封装，便于维护和扩展。使用原生 JavaScript 开发，无需额外依赖，保持轻量级的特点。
-
 ```
 
-工具地址： gitee.com/class-java/…
+工具地址：`gitee.com/class-java/…`
 
 ### 结语
 

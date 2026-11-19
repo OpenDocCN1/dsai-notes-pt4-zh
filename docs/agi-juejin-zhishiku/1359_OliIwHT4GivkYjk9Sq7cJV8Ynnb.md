@@ -1,3 +1,4 @@
+
 # 提示工程中的10个设计模式
 
 > 来源：[https://agijuejin.feishu.cn/docx/UuXIdRjpGoarALxXGrYckKknn7e](https://agijuejin.feishu.cn/docx/UuXIdRjpGoarALxXGrYckKknn7e)
@@ -6,13 +7,13 @@
 
 > 原文：https://mp.weixin.qq.com/s/CMPI4AT5HclcA9g-hKxqnQ
 
-我们可以将提示词定[义为向大型语言模型(Larg](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978579&idx=1&sn=10bd1392b60197deb91779529e1f32ef&chksm=80d35635b7a4df237be3ae39ab3c75b9d98902e06d667fc0c4198e4b18ed206efa3526f91ecb&scene=21#wechat_redirect)e Language Model，LLM)提供的一个查询或一组指令，这些指令随后使模型能够维持一定程度的自定义或增强，以改进其功能并影响其输出。我们可以通过提供细节、规则和指导来引出更有针对性的输出，从而使提示词更加具体。提示词越具体，输出就越精确，关于提示工程的更多信息可以参考《 解读提示工程（Prompt Engineering） 》以及《 Agent 应用于提示工程 》。
+我们可以将提示词定义为向大型语言模型（Large Language Model，LLM）提供的一个查询或一组指令，这些指令随后使模型能够维持一定程度的自定义或增强，以改进其功能并影响其输出。我们可以通过提供细节、规则和指导来引出更有针对性的输出，从而使提示词更加具体。提示词越具体，输出就越精确，关于提示工程的更多信息可以参考《 解读提示工程（Prompt Engineering） 》以及《 Agent 应用于提示工程 》。
 
 而设计模式可以理解为对常见问题的通用可重复解决方案。每个设计模式绝不是一个可以直接应用于问题的完整解决方案，而是一个可以用来更好地构建应用最佳实践的解决方案的模板或框架。设计模式在面向对象编程领域应用广泛，在本文中，老码农尝试总结了提示工程中的10个常见设计模式。
 
 ![](img/6de08d44c159bfc3a287a1c241fcf2b0.png)
 
-## **1. 人物角色模式**
+## 1. 人物角色模式
 
 人物角色模式是一种通过向语言模型注入特定的人格或说话的语气来实现。通过定义不同的角色，我们能够控制生成文本的风格和方式，以适应各种不同的应用场景。以下是一些示例：
 
@@ -24,19 +25,19 @@
 
 通过人物角色模式，语言模型能够以更加灵活、个性化的方式生成文本，从而提高与用户的互动体验，并在各种应用场景中发挥更大的作用。
 
-## **2. 食谱模式**
+## 2. 食谱模式
 
 类似于烹饪食谱，食谱模式提供了一种逐步指导大模型生成文本的方法。这种模式对于需要详细和连续指令的任务非常有价值，例如教程、过程文档或制作装配指南。以下是部分示例：
 
 +   教程：想象一下，正在写一篇教程文章，向读者介绍如何学会某项技能，比如学习编程或学习绘画。通过食谱模式，你可以提供清晰的步骤和指导，使读者能够逐步理解和实践所学内容，从而更容易地掌握新技能。
 
-+   过程文档 ：在工业生产或科学实验中，经常需要编写详细的过程文档，以记录和共享操作步骤。利用食谱模式，你可以逐步描述每个操作步骤，确保读者能够准确地重现操作过程，从而提高工作效率并减少错误发生的可能性。
++   过程文档：在工业生产或科学实验中，经常需要编写详细的过程文档，以记录和共享操作步骤。利用食谱模式，你可以逐步描述每个操作步骤，确保读者能够准确地重现操作过程，从而提高工作效率并减少错误发生的可能性。
 
 +   制作装配指南：在制造业中，制作装配指南对于工厂工人来说至关重要。你可以为每个装配步骤提供详细的说明，包括所需工具、材料和操作步骤，以确保产品能够正确组装并符合质量标准。
 
 通过这种模式，大模型可以提供连贯性和结构性的文本输出，使读者能够轻松理解和实践其中的指导，从而在各种应用场景中实现更高效的工作和学习。
 
-## **3. 反向查询模式**
+## 3. 反向查询模式
 
 在反向查询模式中，大模型被要求以一种特殊的方式工作：首先，它接收一个输出或响应作为启动条件，然后被要求生成最适合的查询或输入，以产生特定的输出。这种技术不仅仅可以用于问答场景，还可以应用于各种其他情境中。以下是一些示例：
 
@@ -50,7 +51,7 @@
 
 ![](img/5bf674d3956933bf345fba8c121231c7.png)
 
-## **4. 输出自动化模式**
+## 4. 输出自动化模式
 
 输出自动化模式是一种利用指示词来规范化大模型生成结构化或格式化输出的方式，以实现重复任务的自动化。举例来说，它可以用于以下情形：
 
@@ -64,7 +65,7 @@
 
 输出自动化模式特别是在涉及数据分析、内容生成和软件开发等领域中，它能够极大地提高工作效率和准确性。
 
-## **5. 思维链模式**
+## 5. 思维链模式
 
 思维链（CoT）模式是一种指导大模型按照特定的推理或论证路径进行生成的技术。这种模式对于创作有说服力的文章、评论或者复杂的讨论非常有价值，因为逻辑流是构建其可信度和可理解性的关键要素。以下是一些示例：
 
@@ -76,7 +77,7 @@
 
 通过思维链模式，大模型可以按照逻辑思维的路径生成文本，使其更具有连贯性、说服力和可理解性，从而在各种领域中发挥重要作用。
 
-## **6 图谱辅助模式**
+## 6. 图谱辅助模式
 
 图谱辅助模式是一种利用已有知识来增强提示的方法，从而帮助大型语言模型生成更准确的输出结果。这种模式通过将知识图谱或领域专业知识与模型结合，以提供更多背景信息和上下文，从而改善模型的理解能力和输出质量。以下是部分示例：
 
@@ -90,7 +91,7 @@
 
 ![](img/c21bbc48f78ab1ca7c2be97f3330e624.png)
 
-## **7. 事实检查模式**
+## 7. 事实检查模式
 
 为了降低产生错误或误导信息的风险，事实检查模式促使大型语言模型根据可靠的外部来源或数据库验证其输出。这种模式鼓励大模型提供支持性证据来证明其答案的可信性，从而促进准确的结果。以下是一些示例：
 
@@ -102,7 +103,7 @@
 
 通过事实检查模式，大模型可以提供更加可靠和准确的输出，从而增强其在各种应用场景中的可信度和实用性。
 
-## **8. 反射模式**
+## 8. 反射模式
 
 反射模式鼓励大模型以批判性的视角评估其生成的文本。这种模式促使大模型审视其输出中存在的潜在偏见或不确定性。以下是一些示例：
 
@@ -114,7 +115,7 @@
 
 通过反射模式，大模型可以更加自觉地评估其输出，避免不当的言论或误导性信息，并且提供更加负责任和可信的回答。
 
-## **9.问题精炼模式**
+## 9. 问题精炼模式
 
 问题精炼模式是一种迭代方法，其中根据语言模型的反馈不断优化输入的查询或提示。通过分析模型对不同提示的响应，开发人员可以微调查询，从而提高模型的性能。以下是一些示例：
 
@@ -128,7 +129,7 @@
 
 ![](img/cbc6ba6347d4010da7b8f7ae9e74b152.png)
 
-## **10.部分拒绝模式**
+## 10. 部分拒绝模式
 
 有时，人工智能模型在面对复杂的查询时可能会回答“我不知道”或拒绝生成输出。为了更有效地处理这种情况，引入了“断路拒绝模式”。这种模式的目标是训练模型在面对困难或无法准确回答的情况下，能够提供有用的答复或部分答案，而不是直接拒绝。以下是一些示例：
 
@@ -140,11 +141,11 @@
 
 通过该模式，人工智能模型可以更加灵活和智能地处理复杂的情况，提高其适应性和用户体验。
 
-## **没有结束**
+## 没有结束
 
 提示工程的设计模式是一种强大的工具，能够更好地发挥大模型的能力。本文介绍的这些模式可以帮助提高给定大模型的整体质量。通过利用这些模式，我们可以定制特定用例的输出，识别和纠正错误，并优化提示以获得更准确和更富有见地的响应。随着人工智能技术的不断发展和新模式的涌现，提示工程仍可能是创造更可靠和更智能的人工智能会话系统的关键因素之一。
 
-【关联阅读】
+## 【关联阅读】
 
 +   在大模型RAG系统中应用知识图谱
 
@@ -160,7 +161,7 @@
 
 +   论文学习笔记：增强学习应用于OS调度
 
-+    《深入浅出Embedding》随笔
++   《深入浅出Embedding》随笔
 
 +   [LLM的工程实践思考](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978144&idx=1&sn=e8bff055687f7e7ad17baca58dc26c23&chksm=80d35446b7a4dd507b02832851e2308a276edc328f3e79bca0f3ae931ab27db69aeccd8d7c8d&scene=21#wechat_redirect)
 
@@ -170,32 +171,34 @@
 
 +   [解读大模型的微调](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978125&idx=1&sn=b342e9c10734c1f7cd124ebc88aa75a8&chksm=80d3546bb7a4dd7d9c74dabd6046d1ccea01592760a8add3d71b2f75fa68712093a4834e6d88&scene=21#wechat_redirect)
 
-+    [解读向量数据库](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978665&idx=1&sn=10512636ac46b2df414ec862e7699841&chksm=80d3564fb7a4df59a43529f2f005c1db65dce7d1225634be5ccd5e817572c383fbe605db063a&scene=21#wechat_redirect)
++   [解读向量数据库](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978665&idx=1&sn=10512636ac46b2df414ec862e7699841&chksm=80d3564fb7a4df59a43529f2f005c1db65dce7d1225634be5ccd5e817572c383fbe605db063a&scene=21#wechat_redirect)
 
-+   [解读ChatGPT中的RLHF](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977979&idx=1&sn=4d66d662595d9aba355e0564df545370&chksm=80d3559db7a4dc8b96a5f3ac4d01b53a2601d5e1dcb51789ee3d9974ec9ae5f028c3e469b5a5&scene=21#wechat_redirect)
 
-+   解读大模型（LLM）的token
 
-+   解读提示词工程（Prompt Engineering）
++ [解读ChatGPT中的RLHF](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977979&idx=1&sn=4d66d662595d9aba355e0564df545370&chksm=80d3559db7a4dc8b96a5f3ac4d01b53a2601d5e1dcb51789ee3d9974ec9ae5f028c3e469b5a5&scene=21#wechat_redirect)
 
-+   [解读Toolformer](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977935&idx=1&sn=9dd162f270f7c17a673291c0f136cf8c&chksm=80d355a9b7a4dcbf3ab824ac6de5c27d94a11455a681ebeb98a211e9b58ff867ddddf33d1c8d&scene=21#wechat_redirect)
++ 解读大模型（LLM）的token
 
-+   [解读TaskMatrix.AI](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977922&idx=1&sn=2f67513b540485d0177ded24c0807bcc&chksm=80d355a4b7a4dcb2495ab97febd0ac88cd0780e0d8e4b3bbc369250304289e289f71b0a76f0c&scene=21#wechat_redirect)
++ 解读提示词工程（Prompt Engineering）
 
-+    [解读LangChain](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978479&idx=1&sn=47d6d226a3ac6cc08980e7562ae09fce&chksm=80d35789b7a4de9f3ba9a3eeb21c6c812b0f7fe43cee47fc38368ed31a1346114a67daa3cd30&scene=21#wechat_redirect)
++ [解读Toolformer](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977935&idx=1&sn=9dd162f270f7c17a673291c0f136cf8c&chksm=80d355a9b7a4dcbf3ab824ac6de5c27d94a11455a681ebeb98a211e9b58ff867ddddf33d1c8d&scene=21#wechat_redirect)
 
-+   [解读LoRA](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978719&idx=1&sn=52183b612a2586d407ba9c9006027078&chksm=80d356b9b7a4dfaf127df71ca4834513eb9454988a5aa488f24938e04283353c376660e8516c&scene=21#wechat_redirect)
++ [解读TaskMatrix.AI](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977922&idx=1&sn=2f67513b540485d0177ded24c0807bcc&chksm=80d355a4b7a4dcb2495ab97febd0ac88cd0780e0d8e4b3bbc369250304289e289f71b0a76f0c&scene=21#wechat_redirect)
 
-+   [解读RAG](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978863&idx=1&sn=73746b3a4453e27ed0f2d2ff28840c82&chksm=80d35109b7a4d81fef96f451ae279ec18cb0c12f6f0353e5ca0563929c682719cd00cb5e5dd0&scene=21#wechat_redirect)
++ [解读LangChain](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978479&idx=1&sn=47d6d226a3ac6cc08980e7562ae09fce&chksm=80d35789b7a4de9f3ba9a3eeb21c6c812b0f7fe43cee47fc38368ed31a1346114a67daa3cd30&scene=21#wechat_redirect)
 
-+   大模型应用框架之Semantic Kernel
++ [解读LoRA](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978719&idx=1&sn=52183b612a2586d407ba9c9006027078&chksm=80d356b9b7a4dfaf127df71ca4834513eb9454988a5aa488f24938e04283353c376660e8516c&scene=21#wechat_redirect)
 
-+   [浅析多模态机器学习](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978122&idx=1&sn=baf54b7a1a0758e19bf6a3622a43d8fb&chksm=80d3546cb7a4dd7ab9b857ea75bcc3e361cb68489ff5c43ff4d8ab65b2da838b46621b2936b1&scene=21#wechat_redirect)
++ [解读RAG](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978863&idx=1&sn=73746b3a4453e27ed0f2d2ff28840c82&chksm=80d35109b7a4d81fef96f451ae279ec18cb0c12f6f0353e5ca0563929c682719cd00cb5e5dd0&scene=21#wechat_redirect)
 
-+    [大模型应用于数字人](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978589&idx=1&sn=cb8e7a54f5675ec65d07f7555f16b4eb&chksm=80d3563bb7a4df2d9dcb13a4491d27e33117ff90ca25e2416ab2a36fa4757ca9478635dd38f3&scene=21#wechat_redirect)
++ 大模型应用框架之Semantic Kernel
 
-+   [深度学习架构的对比分析 ](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978063&idx=1&sn=f934c531bacfe1bf6c95ccbdababe439&chksm=80d35429b7a4dd3f8df5f8c439bd98420c13d4a115c609a60370a6e09ad7c667c4a8c95418c1&scene=21#wechat_redirect)
++ [浅析多模态机器学习](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978122&idx=1&sn=baf54b7a1a0758e19bf6a3622a43d8fb&chksm=80d3546cb7a4dd7ab9b857ea75bcc3e361cb68489ff5c43ff4d8ab65b2da838b46621b2936b1&scene=21#wechat_redirect)
 
-+   [老码农眼中的大模型（LLM）](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977916&idx=1&sn=d38f03af2b3916251e9a8577d995e065&chksm=80d3555ab7a4dc4c0c919ce0a678adc9f3018d81994dc072e698cfa481665ec8faf788d606be&scene=21#wechat_redirect)
++ [大模型应用于数字人](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978589&idx=1&sn=cb8e7a54f5675ec65d07f7555f16b4eb&chksm=80d3563bb7a4df2d9dcb13a4491d27e33117ff90ca25e2416ab2a36fa4757ca9478635dd38f3&scene=21#wechat_redirect)
 
-+   [系统学习大模型的20篇论文 ](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978109&idx=1&sn=4d15334a5cccc300a18686b1dd2a2098&chksm=80d3541bb7a4dd0df321e516ad40c8e849dde084328b61259f4b17f5d24280686305a87fa8b5&scene=21#wechat_redirect)
++ [深度学习架构的对比分析](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978063&idx=1&sn=f934c531bacfe1bf6c95ccbdababe439&chksm=80d35429b7a4dd3f8df5f8c439bd98420c13d4a115c609a60370a6e09ad7c667c4a8c95418c1&scene=21#wechat_redirect)
+
++ [老码农眼中的大模型（LLM）](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658977916&idx=1&sn=d38f03af2b3916251e9a8577d995e065&chksm=80d3555ab7a4dc4c0c919ce0a678adc9f3018d81994dc072e698cfa481665ec8faf788d606be&scene=21#wechat_redirect)
+
++ [系统学习大模型的20篇论文](http://mp.weixin.qq.com/s?__biz=MzAwOTcyNzA0OQ==&mid=2658978109&idx=1&sn=4d15334a5cccc300a18686b1dd2a2098&chksm=80d3541bb7a4dd0df321e516ad40c8e849dde084328b61259f4b17f5d24280686305a87fa8b5&scene=21#wechat_redirect)

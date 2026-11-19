@@ -1,3 +1,4 @@
+
 # 找老金咨询之前请先看完这篇
 
 > 来源：[https://my.feishu.cn/docx/KeHndQNFHo5FxlxEyIJcrUQTnCg](https://my.feishu.cn/docx/KeHndQNFHo5FxlxEyIJcrUQTnCg)
@@ -70,7 +71,7 @@ GitHub上的文档、Anthropic的官方文档，这些东西加起来够你从�
 
 目前的产品矩阵是这样的：
 
-**陪伴群（永久有效）**
+### 陪伴群（永久有效）
 
 一群真在用AI干活的人聚在一起。
 
@@ -86,7 +87,7 @@ AI前沿信息老金我会优先发在群里，自制工具也是群友先体验
 
 ![](img/0f39239d343c4ecca1a26acbc47ed818.png)
 
-**实战训练营（季度制）**
+### 实战训练营（季度制）
 
 每周日一次实战直播，把当周最值得聊的AI内容拆开讲。
 
@@ -100,13 +101,13 @@ AI前沿信息老金我会优先发在群里，自制工具也是群友先体验
 
 逢年过节或有异常情况老金会提前请个假。
 
-**全能套餐**
+### 全能套餐
 
 陪伴群+季度课一起，打个折扣。
 
 陪伴群的永久权益加上季度课的全部权益，一次搞定。
 
-**徒弟招募（即将推出）**
+### 徒弟招募（即将推出）
 
 限量名额，一对一深度指导。
 
@@ -128,9 +129,9 @@ GitHub上Anthropic的官方文档写得非常清楚。
 
 老金我自己就是这条路走过来的，没花一分钱，纯靠啃文档和瞎折腾。
 
-**那什么人适合报名？**
+### 那什么人适合报名？
 
-**想快速获取信息的人**
+#### 想快速获取信息的人
 
 你没时间一个个翻文档、一个个试错。
 
@@ -138,7 +139,7 @@ GitHub上Anthropic的官方文档写得非常清楚。
 
 省的是你筛选信息的时间。
 
-**想看实操演示的人**
+#### 想看实操演示的人
 
 有些东西文档写得明白，但自己动手就不知道从哪开始。
 
@@ -146,7 +147,7 @@ GitHub上Anthropic的官方文档写得非常清楚。
 
 这些零碎经验是文档里找不到的。
 
-**想跟着人一起动手的人**
+#### 想跟着人一起动手的人
 
 这才是第二期课程的目标人群。
 
@@ -156,7 +157,7 @@ GitHub上Anthropic的官方文档写得非常清楚。
 
 想有人带着练，等3月第二期启动。
 
-**不确定的人**
+#### 不确定的人
 
 如果你犹豫要不要报，老金我的建议是：先别报。
 
@@ -220,11 +221,11 @@ GitHub上Anthropic的官方文档写得非常清楚。
 
 ## 老金的开源项目和链接（以及付费介绍）
 
-**GitHub主页：** https://github.com/KimYx0207
+**GitHub主页：** `https://github.com/KimYx0207`
 
-**X（Twitter）：** https://x.com/KimYx0207
+**X（Twitter）：** `https://x.com/KimYx0207`
 
-**个人主页：** https://www.aiking.dev/ （这里可以看老金的介绍，价格，以及我正在把小龙虾往上放 == ）
+**个人主页：** `https://www.aiking.dev/` （这里可以看老金的介绍，价格，以及我正在把小龙虾往上放 == ）
 
 **👸号：** 老金带你玩AI
 
@@ -232,20 +233,20 @@ GitHub上Anthropic的官方文档写得非常清楚。
 
 说明先看这里：[老金开源10万字Claude Code中文教程，零基础到企业实战完整路径](https://my.feishu.cn/wiki/LsfPwKl2sikZV5kk3H6cQdP2nFg)
 
-**教程仓库（求Star，你的星星能助我让更多的人看见，谢谢）**：https://github.com/KimYx0207/Claude-Code-Guide-Zh
+**教程仓库（求Star，你的星星能助我让更多的人看见，谢谢）**：`https://github.com/KimYx0207/Claude-Code-Guide-Zh`
 
 [Claude Code Claude Code 中文教程](https://my.feishu.cn/wiki/M0YFwDL4diAm7rkmRZccQ0NVnpe)知识库内地址（方便大家阅读）：
 
 其他Claude Code中使用的开源项目：
 
-全自动提示词强化：**https://github.com/**KimYx0207/HookPrompt
+全自动提示词强化：`https://github.com/KimYx0207/HookPrompt`
 
-自动搜Skill：**https://github.com**/KimYx0207/findskill
+自动搜Skill：`https://github.com/KimYx0207/findskill`
 
-3顶级Cli联动：**h**ttps://github.com/KimYx0207/Claudecode-Codex-Gemini
+3顶级Cli联动：`https://github.com/KimYx0207/Claudecode-Codex-Gemini`
 
-**Agent Team编排自动搜索Skill：https:/**/github.com/KimYx0207/agent-teams-playbook
+**Agent Team编排自动搜索Skill**：`https://github.com/KimYx0207/agent-teams-playbook`
 
 ## 免费学习资源推荐
 
-+   Anthropic官方文档：https://docs.anthropic.com/en/docs/claude-code
++   Anthropic官方文档：`https://docs.anthropic.com/en/docs/claude-code`

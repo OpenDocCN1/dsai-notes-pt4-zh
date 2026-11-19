@@ -1,12 +1,10 @@
+
 # 2023-05-26【摩根大通】研发投资顾问GPT
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/FbEcdTm9XoDj5BxzNk0cwdHmn9b](https://xuqiwei1986.feishu.cn/docx/FbEcdTm9XoDj5BxzNk0cwdHmn9b)
+> 原文链接：[https://baijiahao.baidu.com/s?id=1766946454656573988&wfr=spider&for=pc](https://baijiahao.baidu.com/s?id=1766946454656573988&wfr=spider&for=pc)
 
-> 🔗 原文链接： h[ttps://baijiahao.b](https://baijiahao.baidu.com/s?id=1766946454656573988&wfr=spider&for=pc)aidu.com/s?id=17...
-
->
-
-摩根大通研发投资顾问GPT
+## 摩根大通研发投资顾问GPT
 
 【新华社微特稿】据美国消费者新闻与商业频道(CNBC)25日报道，美国摩根大通银行正在研发类似ChatGPT的软件，为客户提供投资建议。
 
@@ -22,10 +20,13 @@
 
 他说：“听起来我的理财顾问可能要失业了。”（完）（卜晓明）
 
-关键词：摩根大通(JPMorgan)
+### 关键词
+摩根大通(JPMorgan)
 
-举报/反馈
+### 举报/反馈
 
-大家都在搜
-
-[上投摩根研究驱动股票C ](https://baidu.com/s?word=%E4%B8%8A%E6%8A%95%E6%91%A9%E6%A0%B9%E7%A0%94%E7%A9%B6%E9%A9%B1%E5%8A%A8%E8%82%A1%E7%A5%A8C&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[上投摩根研究驱动股票A ](https://baidu.com/s?word=%E4%B8%8A%E6%8A%95%E6%91%A9%E6%A0%B9%E7%A0%94%E7%A9%B6%E9%A9%B1%E5%8A%A8%E8%82%A1%E7%A5%A8A&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[摩根大通证券中国官网 ](https://baidu.com/s?word=%E6%91%A9%E6%A0%B9%E5%A4%A7%E9%80%9A%E8%AF%81%E5%88%B8%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[上投摩根行业a](https://baidu.com/s?word=%E4%B8%8A%E6%8A%95%E6%91%A9%E6%A0%B9%E8%A1%8C%E4%B8%9Aa&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+### 大家都在搜
+[上投摩根研究驱动股票C](https://baidu.com/s?word=%E4%B8%8A%E6%8A%95%E6%91%A9%E6%A0%B9%E7%A0%94%E7%A9%B6%E9%A9%B1%E5%8A%A8%E8%82%A1%E7%A5%A8C&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[上投摩根研究驱动股票A](https://baidu.com/s?word=%E4%B8%8A%E6%8A%95%E6%91%A9%E6%A0%B9%E7%A0%94%E7%A9%B6%E9%A9%B1%E5%8A%A8%E8%82%A1%E7%A5%A8A&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[摩根大通证券中国官网](https://baidu.com/s?word=%E6%91%A9%E6%A0%B9%E5%A4%A7%E9%80%9A%E8%AF%81%E5%88%B8%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[上投摩根行业a](https://baidu.com/s?word=%E4%B8%8A%E6%8A%95%E6%91%A9%E6%A0%B9%E8%A1%8C%E4%B8%9Aa&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)

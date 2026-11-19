@@ -1,21 +1,23 @@
+
+
 # Claude+Cursor+Figma/MasterGo四步生成高端的产品原型图（附提示词和步骤）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DlWidJ7GVo0GcpxtSGic9heRnRr](https://qqs7y1hozd1.feishu.cn/docx/DlWidJ7GVo0GcpxtSGic9heRnRr)
 
-第一步 ：发送初步简单的提示词到AI工具，表明自己的目的
+## 第一步：发送初步简单的提示词到AI工具，表明自己的目的
 
 ```
 现在我要开发一个汽车销售的app，根据三个角色设计提示词如下：我想开发一个汽车销售app要输出原型图，请通过以下方式帮我完成app所有原型页面的设计。
- 1、作为产品经理先设计出这个app实现哪些功能 
- 2、作为UI设计师完成这些原型界面的设计 
- 3、使用html在一个界面上生成所有的原型界面，使用Tailwind CSS创建高保真UI原型，可从Unsplash获取图片素材，使用FontAwesome等开源图标库，让原型显得更精美和更加真实 
- 4、我需要这些界面可直接用于项目开发
+1、作为产品经理先设计出这个app实现哪些功能
+2、作为UI设计师完成这些原型界面的设计
+3、使用html在一个界面上生成所有的原型界面，使用Tailwind CSS创建高保真UI原型，可从Unsplash获取图片素材，使用FontAwesome等开源图标库，让原型显得更精美和更加真实
+4、我需要这些界面可直接用于项目开发
 帮我把这个提示词更加丰富，达到做出一个非常高端app的要求，最后把提示词以可以复制的形式给我
 ```
 
 ![](img/818aeefea532b99aea170d69fc4cb4f1.png)
 
-第二步 :AI给出具体的详细提示词(如果需要，可以自己修改)
+## 第二步：AI给出具体的详细提示词（如果需要，可以自己修改）
 
 ```
 # 高端汽车销售App原型设计
@@ -154,13 +156,16 @@
    - 支持快速复制重建
 
 5. **导出功能实现**
-```
-   在HTML页面中添加工具栏，包含：
-   - [导出单页SVG] - 点击任意页面导出该页
-   - [导出全部SVG] - 打包下载所有页面
-   - [导出设计规范] - 下载JSON格式的Design Tokens
-   - [复制CSS变量] - 一键复制所有设计变量
-```
+
+在HTML页面中添加工具栏，包含：
+
+- [导出单页SVG] - 点击任意页面导出该页
+
+- [导出全部SVG] - 打包下载所有页面
+
+- [导出设计规范] - 下载JSON格式的Design Tokens
+
+- [复制CSS变量] - 一键复制所有设计变量
 
 6. **Figma导入指南**
    - 在HTML中附带简要说明
@@ -181,13 +186,13 @@
 请现在开始，依次以三个角色完成设计并输出完整HTML代码。
 ```
 
-第三步：把上面的提示词复制给AI
+## 第三步：把上面的提示词复制给AI
 
 ![](img/447654bab3534ff335261e708b150ccd.png)
 
-**第四步：AI生成对应的原型**
+## 第四步：AI生成对应的原型
 
-**具体原型**
+### 具体原型
 
 ![](img/6c7b5a75264fa34e25c3ba7ff932a795.png)
 
@@ -195,7 +200,7 @@
 
 ## 有了原型之后，可以自己进行修改，调试
 
-**设计规范 ：**
+### 设计规范
 
 ```
 设计规范 (Design Tokens)
@@ -214,16 +219,17 @@ xs: 4px | sm: 8px | md: 16px
 lg: 24px | xl: 32px
 ```
 
-## Figma/MasterGo 导入 ：
+## Figma/MasterGo 导入
 
-1.  点击"导出全部SVG"下载所有页面的SVG文件
+1. 点击`"导出全部SVG"`下载所有页面的SVG文件
 
-1.  在Figma/MasterGo中，使用 File → Import 导入SVG
+2. 在Figma/MasterGo中，使用 `File → Import` 导入SVG
 
-1.  选择导入的SVG，右键 → Ungroup 解组
+3. 选择导入的SVG，右键 → `Ungroup` 解组
 
-1.  选择内容，右键 → Frame Selection 转换为Frame
+4. 选择内容，右键 → `Frame Selection` 转换为Frame
 
-1.  应用Auto Layout整理布局
+5. 应用`Auto Layout`整理布局
 
-1.  使用"导出设计规范"获取Design Tokens，导入到Figma Tokens插件
+6. 使用`"导出设计规范"`获取`Design Tokens`，导入到Figma Tokens插件
+

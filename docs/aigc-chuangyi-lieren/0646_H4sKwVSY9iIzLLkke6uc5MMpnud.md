@@ -1,8 +1,9 @@
+
 # Stable Diffusion创意实验室
 
 > 来源：[https://aigcreative.feishu.cn/docx/QkKPdI7z6oYNOBxuoROcGl1dnCd](https://aigcreative.feishu.cn/docx/QkKPdI7z6oYNOBxuoROcGl1dnCd)
 
-# 简介：
+## 简介
 
 Stable Diffusion 是一款基于扩散技术的深度学习文本到图像模型，于 2022 年发布，被视为当前 AI 春天的一部分。该模型主要用于根据文本描述生成详细图像，同时也可以应用于其他任务，如图像修复、图像外扩和文本引导的图像到图像转换。Stable Diffusion 的开发涉及来自慕尼黑路德维希-马克西米利安大学的 CompVis 小组和 Runway 的研究人员，以及 Stability AI 的计算捐赠和来自非营利组织的训练数据。
 
@@ -16,6 +17,6 @@ Stable Diffusion 在 LAION-5B 上进行了训练，这是一个从网页抓取�
 
 Stable Diffusion 在生成图像时存在一些限制和挑战，如分辨率偏离其“预期”的 512x512 分辨率时图像质量的明显下降，以及由于 LAION 数据库中肢体数据质量较差而在生成人体肢体时遇到的挑战。为了解决这些限制，用户可以选择进行额外的训练以微调生成输出，以匹配更具体的用例，这一过程也被称为个性化。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

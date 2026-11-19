@@ -1,3 +1,4 @@
+
 # Cursor 0.44版本说明
 
 > 来源：[https://my.feishu.cn/docx/ZZJFdwcWxodeM5xF3HKcscainuh](https://my.feishu.cn/docx/ZZJFdwcWxodeM5xF3HKcscainuh)
@@ -12,33 +13,28 @@
 
 **言归正题**，老金这就开始给大家做Cursor介绍，本期的教学内容如下：
 
-1、安装Cursor
+1. 安装Cursor
+2. 切换中文
+3. 功能简介 - 只介绍和Windsurf不同的
+4. 开启YOLO模式（同理Windsurf的核心丝滑功能）
+5. 加入提示词 `Cursor.Rules`
+6. 破解方法
 
-2、切换中文
-
-3、功能简介 - 只介绍和Windsurf不同的
-
-4、开启YOLO模式（同理Windsurf的核心丝滑功能）
-
-5、加入提示词Cursor.Rules
-
-6、破解方法
-
-### 安装Cursor
+## 安装Cursor
 
 这里下载Cursor。
 
-地址 : https://www.cursor.com/
+地址：https://www.cursor.com/
 
-安装后选择Defau**lt****(**VS Code)，并且输入中文，也就是导入VS Code的配置，以及默认沟通语言。
+安装后选择 `Default`（`VS Code`），并且输入中文，也就是导入VS Code的配置，以及默认沟通语言。
 
 ![](img/6f8c918e2603d0e6277d0079b2b96bcd.png)
 
-这里选择Privacy Mode，可以隐私代码，这点比Windsurf做的好。
+这里选择 `Privacy Mode`，可以隐私代码，这点比Windsurf做的好。
 
 ![](img/71533abddb527a87f8fb174e2cbd10b9.png)
 
-选择**Sign Up**进行注册，可选Gmail登录或者Github登录。
+选择 `Sign Up` 进行注册，可选 Gmail 登录或者 Github 登录。
 
 ![](img/ada1033b5911ba085191c35428756fe2.png)
 
@@ -48,43 +44,43 @@
 
 ![](img/3bc1fdc4bf76c0436707b6ff4c431ad1.png)
 
-Cursor两种方式，一种是直接打开文件夹，一种是通过SSH打开。
+Cursor 两种方式，一种是直接打开文件夹，一种是通过 `SSH` 打开。
 
 ![](img/2c1629bb87077ff95962509b922193b1.png)
 
-老样子，安装中文插件，扩展里搜**中文**。
+老样子，安装中文插件，扩展里搜 `中文`。
 
 ![](img/8c19b680d087b1bbe10e3851af13c93d.png)
 
-### Cursor功能简介
+## Cursor功能简介
 
 +   Chat：仅对话，不做修改，老金我从来不用，老夫要的就是一把梭。
 
-+   Composer：自动进行板鞋，并增加了Agent功能，配合YOLO模式，可达到Windsurf的丝滑程度。
++   Composer：自动进行板鞋，并增加了 Agent 功能，配合 YOLO 模式，可达到 Windsurf 的丝滑程度。
 
 ![](img/e41c3aee84e64359db074bf855ba1ac6.png)
 
-+   Bug Finder：自动查找BUG，测试阶段，老金目前还不建议使用此功能。因为代码写的好与不好，还是和提示词有关，提示词写的不好，它是不知道功能是否合理的。需要连接Git，是介于主分支与当前分支进行分析的。
++   Bug Finder：自动查找 BUG，测试阶段，老金目前还不建议使用此功能。因为代码写的好与不好，还是和提示词有关，提示词写的不好，它是不知道功能是否合理的。需要连接 `Git`，是介于主分支与当前分支进行分析的。
 
 +   Tab：自动根据上下文补全。
 
-+   @功能：是老金切换到Cursor的最主要原因，功能比Windsurf多了一些。
++   `@功能`：是老金切换到 Cursor 的最主要原因，功能比 Windsurf 多了一些。
 
-以下仅列出和**Windsurf的差别功能**。
+以下仅列出和 Windsurf 的差别功能。
 
-+   DOCS：可以理解为知识库，每次对话它都会从中查找，可以串联Chat与Composer。
++   DOCS：可以理解为知识库，每次对话它都会从中查找，可以串联 Chat 与 Composer。
 
-+   Git：连接Github。
++   `Git`：连接 Github。
 
-+   Notepad：就是创建个类似像Read.ME一样的文件，总结了项目内容。在 Composer 和 Chat 之间无缝共享上下文.
++   Notepad：就是创建个类似 `Read.ME` 一样的文件，总结了项目内容。在 Composer 和 Chat 之间无缝共享上下文。
 
 +   Suggested：将你的输入转化为智能建议。
 
-+   Web：连接网络，可以直接使用@Web浏览网页。
++   Web：连接网络，可以直接使用 `@Web` 浏览网页。
 
-### YOLO模式
+## YOLO模式
 
-开启YOLO模式，体验Windsurf的丝滑。
+开启 YOLO 模式，体验 Windsurf 的丝滑。
 
 ![](img/2c223a424e93eb98a896d857d88a704d.png)
 
@@ -94,17 +90,17 @@ Cursor两种方式，一种是直接打开文件夹，一种是通过SSH打开�
 
 在启动 YOLO 模式后，会有一些选项可供设置。
 
-+   Yolo prompt：对哪些命令应自动执行的描述，由您使用的模型判断。例如：“仅限编译命令、git 命令和其他安全命令。”
++   `Yolo prompt`：对哪些命令应自动执行的描述，由您使用的模型判断。例如：“仅限编译命令、`git` 命令和其他安全命令。”
 
-+   Command allowlist：如果只有非常具体的命令应自动执行，请在此添加命令
++   `Command allowlist`：如果只有非常具体的命令应自动执行，请在此添加命令
 
-+   Command denylist：永远不应自动执行的命令
++   `Command denylist`：永远不应自动执行的命令
 
-+   Delete file protection：如果启用，将阻止 Agent 自动删除文件
++   `Delete file protection`：如果启用，将阻止 Agent 自动删除文件
 
 ![](img/68d70753645fe26d750843ce84e33272.png)
 
-### 提示词
+## 提示词
 
 提示词老金直接给过，现复制，下面告你在哪放。
 
@@ -173,13 +169,13 @@ Cursor两种方式，一种是直接打开文件夹，一种是通过SSH打开�
 
 ```
 
-放入Cursor，在这，输入后保存。
+放入 Cursor，在这，输入后保存。
 
 ![](img/3c2c9b06e2852046b4067ba9d4211051.png)
 
-### 破解方法
+## 破解方法
 
-在Github上有大佬进行了破解。
+在 Github 上有大佬进行了破解。
 
 地址：https://github.com/bestK/cursor-fake-machine
 
@@ -187,47 +183,47 @@ Cursor两种方式，一种是直接打开文件夹，一种是通过SSH打开�
 
 ![](img/c87759eb1bbd374d6c88889664f1c2e1.png)
 
-打开Cursor，点击**扩展**，把下载的文件拖进来。
+打开 Cursor，点击 `扩展`，把下载的文件拖进来。
 
 ![](img/39aecad49848fde53e54c07b0b423685.png)
 
-设置中，找到Manage，自动打开浏览器。
+设置中，找到 `Manage`，自动打开浏览器。
 
 ![](img/499a8cc8df6cdab3eb51c576470d1419.png)
 
-找到Advanced，删除账号。
+找到 `Advanced`，删除账号。
 
 ![](img/01b7c796b6271325b51e16a9dac5c9bd.png)
 
-在Cursor中，点击Ctrl+Shift+P，打开输入框，输入fake
+在 Cursor 中，点击 `Ctrl+Shift+P`，打开输入框，输入 `fake`
 
 ![](img/1d8ca6ee0291e63d2265b69559281558.png)
 
-点击Fake Cursor，修改成功。
+点击 `Fake Cursor`，修改成功。
 
 ![](img/f335f9a81674d2a2852202a69a9e7990.png)
 
 重新返回浏览器，登录账号，你就会发现次数被重置了。
 
-**备注：**
+### 备注
 
-有的时候按照以上方式操作后会发现，依然被提示机器限制。又或者只能使用Chat不能使用Composer。没关系，你只需要再次删掉账号，更换机器码之后，重启电脑，再次登录账号就可以了。
+有时候按照以上方式操作后会发现，依然被提示机器限制。又或者只能使用 Chat 不能使用 Composer。没关系，你只需要再次删掉账号，更换机器码之后，重启电脑，再次登录账号就可以了。
 
-如出现下图，直接**重启电脑**。
+如出现下图，直接重启电脑。
 
 ![](img/a9a8fbd7e16f247e3b8c868d3b6a5e08.png)
 
-**免责声明:**
+### 免责声明
 
-本文仅出于学习和研究目的分享，不对使用者因采用本文方法而可能产生的任何后果承担责任。请注意:
+本文仅出于学习和研究目的分享，不对使用者因采用本文方法而可能产生的任何后果承担责任。请注意：
 
-1.  本文内容仅供学习和研究使用,不得用于任何商业目的或非法活动。
+1. 本文内容仅供学习和研究使用，不得用于任何商业目的或非法活动。
 
-1.  使用者应当遵守Cursor和Claude的服务条款及相关法律法规。
+2. 使用者应当遵守 Cursor 和 Claude 的服务条款及相关法律法规。
 
-1.  本文不鼓励也不支持任何形式的滥用、破解或规避付费服务的行为。请尊重知识产权和服务提供商的利益。
+3. 本文不鼓励也不支持任何形式的滥用、破解或规避付费服务的行为。请尊重知识产权和服务提供商的利益。
 
-1.  如果您决定采用本文描述的方法,即表示您已完全理解并接受本免责声明的全部内容。
+4. 如果您决定采用本文描述的方法，即表示您已完全理解并接受本免责声明的全部内容。
 
 请合理使用。
 

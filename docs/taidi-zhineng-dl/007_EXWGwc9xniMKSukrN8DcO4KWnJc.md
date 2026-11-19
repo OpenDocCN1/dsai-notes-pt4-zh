@@ -1,3 +1,4 @@
+
 # Triton 设计思想 & Paper 理解
 
 > 来源：[https://learning.feishu.cn/docx/U3t9dufNkoGAX2xMaf1c6MT6nHd](https://learning.feishu.cn/docx/U3t9dufNkoGAX2xMaf1c6MT6nHd)
@@ -6,15 +7,15 @@ Github: https://github.com/triton-lang/triton
 
 [Triton Conference 2023 - talk notes](https://deep-learning.feishu.cn/wiki/SbWEwY68mi8WpCkBZHIc56wMnjb?fromScene=spaceOverview)
 
-1.  提出背景与 triton 定位。典型的 GPU 编程模型、难点 & triton 试图解决的问题。
+1. 提出背景与 triton 定位。典型的 GPU 编程模型、难点 & triton 试图解决的问题。
 
 TODO
 
-1.  深入理解 TileIR 相关。
+1. 深入理解 `TileIR` 相关。
 
-# 问题背景
+## 问题背景
 
-## high performance GPU code
+### high performance GPU code
 
 Triton allows researchers with no GPU programming experience to write high performance GPU code.
 
@@ -34,7 +35,7 @@ No。重点是 high performance GPU code。
 
 ![](img/3c08935befc4601605c7fe0632175510.png)
 
-## Challenges of GPU Programming - 问题定义
+### Challenges of GPU Programming - 问题定义
 
 https://openai.com/research/triton
 
@@ -54,81 +55,81 @@ https://openai.com/research/triton
 
 note:
 
-1.  GPU 上的 DRAM/HBM 是 off-chip 的。目前，一般是 3D / 3.5D 封装的 HBM 或 3D-DRAM。
+1. GPU 上的 DRAM/HBM 是 off-chip 的。目前，一般是 3D / 3.5D 封装的 HBM 或 3D-DRAM。
 
-1.  上图只花了 SIMT 部分，没体现 TensorCore。从 H100 引入 TMA 开始，TensorCore 对 SIMT 编程模型的冲击越来越大了。
+1. 上图只花了 SIMT 部分，没体现 TensorCore。从 H100 引入 TMA 开始，TensorCore 对 SIMT 编程模型的冲击越来越大了。
 
-## Triton 理念
+### Triton 理念
 
 Triton 理念:
 
-1.  放弃硬件无关。解决 tiling、shared memory 管理、software pipelining 等关键问题。
+1. 放弃硬件无关。解决 tiling、shared memory 管理、software pipelining 等关键问题。
 
-1.  保持简洁，克制的使用 MLIR dialect，避免引入不必要的 lowering 层抽象。
+1. 保持简洁，克制的使用 MLIR dialect，避免引入不必要的 lowering 层抽象。
 
-> Triton的编程模型大家发现反而好像是各种硬件的公约数，如何划分数据块，load到片上再store回去在各种硬件架构下都是难搞的问题。
+> Triton的编程模型大家发现反而好像是各种硬件的公约数，如何划分数据块，`load`到片上再`store`回去在各种硬件架构下都是难搞的问题。
 
 > Hopper架构，引入很多编程难题，试图保持硬件中立的TVM和MLIR看起来都难以适应这些改变，而Triton却通过简单增加了一层NVGPU的IR基本搞定了这个问题。
 
 > （对以上说法，持疑）
 
-# Triton 核心设计要点 - 2025.03
+## Triton 核心设计要点 - 2025.03
 
-## 问题定义
+### 问题定义
 
 ![](img/873029a21cfbec4a8c9e3fc09faaefc1.png)
 
-Trition 包括 language 和 Compiler 2 部分：
+Trition 包括 `language` 和 `Compiler` 2 部分：
 
-1.  Compiler 假定 Tensor 已在 SRAM 上。
+1. Compiler 假定 `Tensor` 已在 SRAM 上。
 
-1.  access to DRAM，由用户通过 triton language 手写代码。也就是 offset 计算 + tl.load/tl.store。
+1. access to DRAM，由用户通过 `triton language` 手写代码。也就是 `offset` 计算 + `tl.load`/`tl.store`。
 
-一般说的 Triton，主要还是 Triton Compiler 部分。
+一般说的 Triton，主要还是 `Triton Compiler` 部分。
 
-核心就是 tile-level IR & optimization passes
+核心就是 `tile-level IR` & `optimization passes`
 
-DL model 加速的 2 大绞肉机：fusion，tiling。
+DL model 加速的 2 大绞肉机：`fusion`，`tiling`。
 
-## 编程模型 - Block SPMD
+### 编程模型 - Block SPMD
 
 Triton 与 CUDA 均采用 SPMD 模型，但抽象层级不同：
 
-1.  **CUDA**
+1. `CUDA`
 
-+   基本并行单元：thread（线程）
++ 基本并行单元：`thread`（线程）
 
-+   数据粒度：element-wise（单个元素）
++ 数据粒度：`element-wise`（单个元素）
 
-+   开发者需手动管理：线程同步、共享内存分配、bank conflict 避免等
++ 开发者需手动管理：线程同步、共享内存分配、`bank conflict` 避免等
 
-1.  **Triton**
+1. `Triton`
 
-+   基本并行单元：block（逻辑块，自动映射到硬件资源）
++ 基本并行单元：`block`（逻辑块，自动映射到硬件资源）
 
-+   数据粒度：block-wise（数据块级）
++ 数据粒度：`block-wise`（数据块级）
 
-+   编译器自动处理：线程调度、共享内存分配、同步插入、指令流水
++ 编译器自动处理：线程调度、共享内存分配、同步插入、`指令流水`
 
-+   开发者只需声明数据块的操作语义（如 tl.arange）
++ 开发者只需声明数据块的操作语义（如 `tl.arange`）
 
-cuda 的每个 P 是一个 thread，Triton 的每个 P 是一个 Triton block。
+cuda 的每个 P 是一个 `thread`，Triton 的每个 P 是一个 `Triton block`。
 
-用户在 block (tile) 层级写代码，block 内交给 Triton Compiler，block 外的用户自己管。
+用户在 `block` (`tile`) 层级写代码，`block` 内交给 `Triton Compiler`，`block` 外的用户自己管。
 
-事实上，block 只是一个逻辑概念，能否对应到更高的一层，全看 compiler 的能力边界。
+事实上，`block` 只是一个逻辑概念，能否对应到更高的一层，全看 `compiler` 的能力边界。
 
-在 nv 上，管到了 sm(CTA/block) 这一层。
+在 nv 上，管到了 `sm`(`CTA`/`block`) 这一层。
 
-接管了：手动管理 shared memory、线程之间的显式同步、访存优化（coalease/Prefetch）。
+接管了：手动管理 `shared memory`、`线程之间的显式同步`、`访存优化`（`coalease`/`Prefetch`）。
 
 这些都是 GPGPU 编程中比较复杂的地方。
 
-从 block lowering 到 thread 是 triton compiler 做的事情
+从 `block lowering` 到 `thread` 是 `triton compiler` 做的事情
 
-triton 的编程模型基本可以看作多核 SIMD CPU
+triton 的编程模型基本可以看作多核 `SIMD CPU`
 
-|  | CUDA | TRITON |
+| | CUDA | TRITON |
 | --- | --- | --- |
 | Memory Coalescing | Manual | Automatic |
 | Shared Memory Management | Manual | Automatic |
@@ -145,47 +146,47 @@ Triton Conference 2023, Thomas Raoux, https://www.youtube.com/watch?v=AtbnRIzpwh
 
 TODO
 
-block based 不同于现在常提的 tile-based language 或者 tile based programming model
+`block based` 不同于现在常提的 `tile-based language` 或者 `tile based programming model`
 
 challenge
 
-稀疏化场景，Index 计算，一般是 thread 级别。
+稀疏化场景，`Index` 计算，一般是 `thread` 级别。
 
 有分支分化问题。
 
-Triton 如何能达到 CUDA 水平的 performance。
+Triton 如何能达到 CUDA 水平的 `performance`。
 
-NVIDIA Hopper架构特性，通过中间层抽象保持扩展性
+`NVIDIA Hopper`架构特性，通过中间层抽象保持扩展性
 
-## MLIR 的使用与克制
+### MLIR 的使用与克制
 
 MLIR的克制使用：
 
-+   仅利用基础设施（TableGen/Pass Manager）
++ 仅利用基础设施（`TableGen`/`Pass Manager`）
 
-+   避免多层Dialect抽象
++ 避免多层`Dialect`抽象
 
-+   通过Attribute标记优化策略（如sizePerThread）
++ 通过`Attribute`标记优化策略（如`sizePerThread`）
 
-陡峭Lowering路径
+陡峭`Lowering`路径
 
-TritonIR → TritonGPU → PTX
+`TritonIR` → `TritonGPU` → `PTX`
 
 直接生成目标代码，避免中间抽象
 
-TritonGPU Dialect 是一个更加贴近 GPU 层面的 IR。为了 GPGPU 性能优化而设计。
+`TritonGPU Dialect` 是一个更加贴近 GPU 层面的 `IR`。为了 `GPGPU` 性能优化而设计。
 
-必须把MLIR分成两部分讨论，一部分是基于tablegen的Compiler的基础设施，一部分是MLIR试图通过层次化的dialect复用来形成一个生态。
+必须把`MLIR`分成两部分讨论，一部分是基于`tablegen`的`Compiler`的基础设施，一部分是`MLIR`试图通过层次化的`dialect`复用来形成一个生态。
 
-Triton基于的是第一部分，而几乎彻底地放弃第二部分。
+`Triton`基于的是第一部分，而几乎彻底地放弃第二部分。
 
-Triton 克制的使用 MLIR 的各种 dialect，避免引入不必要的 lowering 层抽象。
+`Triton` 克制的使用 `MLIR` 的各种 `dialect`，避免引入不必要的 `lowering` 层抽象。
 
-Triton对于MLIR生态的dialect的使用是非常克制的，从TritonGPU这一层IR直接非常陡峭地lower到汇编层。
+`Triton`对于`MLIR`生态的`dialect`的使用是非常克制的，从`TritonGPU`这一层`IR`直接非常陡峭地`lower`到汇编层。
 
-TritonGPU的实现也非常有意思，Triton尽可能使用attribute的标记而不是引入新的IR来解决问题。比如访存合并，按照之前（从多面体优化传承下来）的思路，应该是往IR里面加个一两层循环之类的操作，而Triton的做法则是标记诸如“sizePerThread”之类的attribute，记录访存合并的策略并验证其合法性，然后通过陡峭地lowering直接生成代码。从结果来看，Triton的简洁化是成功的，60K的代码行数相对于Triton取得的成绩来说是一个非常小的数字。当然简洁能够得以实现的重要前提也是前面说的硬件中立。
+`TritonGPU`的实现也非常有意思，`Triton`尽可能使用`attribute`的标记而不是引入新的`IR`来解决问题。比如访存合并，按照之前（从多面体优化传承下来）的思路，应该是往`IR`里面加个一两层循环之类的操作，而`Triton`的做法则是标记诸如`"sizePerThread"`之类的`attribute`，记录访存合并的策略并验证其合法性，然后通过陡峭地`lowering`直接生成代码。从结果来看，`Triton`的简洁化是成功的，`60K`的代码行数相对于`Triton`取得的成绩来说是一个非常小的数字。当然简洁能够得以实现的重要前提也是前面说的硬件中立。
 
-## Hierarchical Tiling
+### Hierarchical Tiling
 
 Kernel 的优化最难搞定的还是 tiling。
 
@@ -193,21 +194,21 @@ Kernel 的优化最难搞定的还是 tiling。
 
 triton 的 tiling，是针对 SIMT 定制的 hierarchical tiling 算法。
 
-1.  不用再搞多面体模型了。polyhedral machinery
+1. 不用再搞多面体模型了。`polyhedral machinery`
 
-1.  support for non-affine tensor indices contrary to TC and Diesel。多面体应该是不支持的。
+1. support for non-affine tensor indices contrary to TC and Diesel。多面体应该是不支持的。
 
-+   专为SIMT架构定制
++ 专为SIMT架构定制
 
-+   放弃多面体模型，支持非仿射张量索引
++ 放弃多面体模型，支持非仿射张量索引
 
-+   自动验证分块策略合法性
++ 自动验证分块策略合法性
 
-## Triton vs Linalg
+### Triton vs Linalg
 
-triton，特别是 TritonIR 核心就是 tile-level IR & optimization passes。
+triton，特别是 `TritonIR` 核心就是 `tile-level IR` & `optimization passes`。
 
-TTIR 与 Linalg，基本是同一时期、同一思想的并行工作。
+`TTIR` 与 Linalg，基本是同一时期、同一思想的并行工作。
 
 Triton 和 Linalg 是同一时期的工作。
 
@@ -219,51 +220,51 @@ Triton 放弃了硬件无关，而，Linalg 依旧是跨硬件通用。
 
 所以，linalg 的 tiling，依旧是依赖多面体模型等。
 
-## triton tools
+### triton tools
 
-在 build 目录下有三个 bin tool: triton-opt, triton-reduce, triton-translate
+在 build 目录下有三个 bin tool: `triton-opt`, `triton-reduce`, `triton-translate`
 
-配合 ptxas，可以搞事情。ptx 是 LLVM 的 NV GPU backend。
+配合 `ptxas`，可以搞事情。`ptx` 是 LLVM 的 NV GPU backend。
 
-triton shared 编译完，生成 /triton/build/tools/triton-shared-opt
+triton shared 编译完，生成 `/triton/build/tools/triton-shared-opt`
 
-triton 的 tests，很多是用 triton-opt 来运行的。
+triton 的 tests，很多是用 `triton-opt` 来运行的。
 
 内置 benchmark 工具
 
-do_bench 在python/triton/testing.py下，
+`do_bench` 在`python/triton/testing.py`下，
 
 对每个 kernel 进行 25 次的 warm_up 和 100 次 iteration。
 
-## triton 的历史与八卦
+### triton 的历史与八卦
 
-1.  最初，Triton 的论文被 reject 了多次。
+1. 最初，Triton 的论文被 reject 了多次。
 
-1.  first paper: MAPL 2019 workshop。
+1. first paper: MAPL 2019 workshop。
 
-1.  2020 年，Phil 在 OpenAI 实习，Triton 的发展进入了快车道。引入了 Python DSL 前端。
+1. 2020 年，Phil 在 OpenAI 实习，Triton 的发展进入了快车道。引入了 Python DSL 前端。
 
-1.  2022 年，重构，用了 MLIR。最初基本是 OpenAI 实习生 Da Yan 独立开发 commit/20100a725
+1. 2022 年，重构，用了 MLIR。最初基本是 OpenAI 实习生 Da Yan 独立开发 `commit/20100a725`
 
-1.  英伟达加入（ampere 架构的支持？），和 OpenAI 一起加速了重构进程。
+1. 英伟达加入（ampere 架构的支持？），和 OpenAI 一起加速了重构进程。
 
 triton meetup Summary
 
-1.  2023-07-18
+1. 2023-07-18
 
-1.  di**fferent backend**s can be **integrated through a** plugin mechanism where Triton provides a layer at the Triton IR layer that is generic and other backends can plug into that.
+1. different backends can be integrated through a plugin mechanism where Triton provides a layer at the Triton IR layer that is generic and other backends can plug into that.
 
-1.  Short term roadmap plans are very focused on things like improving all FP8 things on Ampere and Hopper support (end of August). After Hopper support lands, priorities will include refactoring codebase to increase maintainability.
+1. Short term roadmap plans are very focused on things like improving all FP8 things on Ampere and Hopper support (end of August). After Hopper support lands, priorities will include refactoring codebase to increase maintainability.
 
-1.  linalg on hold.
+1. linalg on hold.
 
-1.  Language improvements: Have added location information support into Triton codegen.
+1. Language improvements: Have added location information support into Triton codegen.
 
-1.  08-22
+1. 08-22
 
-1.  Will expose flags for a user to enable kernel selection themselves.
+1. Will expose flags for a user to enable kernel selection themselves.
 
-# Microsoft - triton-shared
+## Microsoft - triton-shared
 
 Introducing a middle layer: Linalg + HW vendor Dialects
 
@@ -277,183 +278,191 @@ Introducing a middle layer: Linalg + HW vendor Dialects
 
 triton 作为一个框架，要解决的核心问题是什么，要保留的核心设计是什么。要基于这个理解做新的设计。
 
-# Paper Reading - 2019 Triton Paper
+## Paper Reading - 2019 Triton Paper
 
 Triton: An Intermediate Language and Compiler for Tiled Neural Network Computations
 
 https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf
 
-## highlights
+### highlights
 
-一句话：triton 的核心就是 tile-level IR & optimization passes
+一句话：triton 的核心就是 `tile-level IR` & `optimization passes`
 
-### micro-kernels
+#### micro-kernels
 
 手写 micro-kernels，例如 hand-written tile-level intrinsics
 
-2 个参考文献，看起来，都不是很相关。TVM 指的是 tir / TE 的设计？
+2 个参考文献，看起来，都不是很相关。TVM 指的是 `tir` / `TE` 的设计？
 
 2018 TVM: End-to-End Optimization Stack for DeepLearning
 
 2016 BLISlab: A Sandbox for Optimizing GEMM.
 
-### Tile 优化
+#### Tile 优化
 
-triton 的核心定位：tile-level optimization passes
+triton 的核心定位：`tile-level optimization passes`
 
-DL model 加速的 2 大绞肉机：fusion，tiling。
+DL model 加速的 2 大绞肉机：`fusion`，`tiling`。
 
-tir 的算子开发、auto tune，也是搜 tiling。
+`tir` 的算子开发、auto tune，也是搜 tiling。
 
-## 背景 & 优化思路
+### 背景 & 优化思路
 
-tiling 的 paper。2 个 analytical 的，2 个 empirical 的。普遍还是依赖 hand-optimized sub-routines (e.g., cuBLAS and cuDNN).
+tiling 的 paper。2 个 analytical 的，2 个 empirical 的。普遍还是依赖 hand-optimized sub-routines (e.g., `cuBLAS` and `cuDNN`).
 
-+   2018 - Revisiting Loop Tiling for Datacenters: Live and Let Live
++ 2018 - Revisiting Loop Tiling for Datacenters: Live and Let Live
 
-+   2013 - Defensive Loop Tiling for Shared Cache
++ 2013 - Defensive Loop Tiling for Shared Cache
 
-+   2016 - TurboTiling: Leveraging Prefetching to Boost Performance of Tiled Codes.
++ 2016 - TurboTiling: Leveraging Prefetching to Boost Performance of Tiled Codes.
 
-+   2010 - Parameterized Tiling Revisited
++ 2010 - Parameterized Tiling Revisited
 
 insight
 
-1.  他们怎么依赖的，我们也怎么依赖 intrinsic。先解决跑起来的问题。
+1. 他们怎么依赖的，我们也怎么依赖 intrinsic。先解决跑起来的问题。
 
-1.  cuBLAS and cuDNN 真牛逼。具体的核心竞争力，到底是什么。哪些优化算法，哪些优化 level，开发者需要哪些 HPC 知识。
+1. `cuBLAS` and `cuDNN` 真牛逼。具体的核心竞争力，到底是什么。哪些优化算法，哪些优化 level，开发者需要哪些 HPC 知识。
 
 DSL 的设计思路
 
-+   polyhedral machinery (e.g., Tensor Comprehensions [43])
++ `polyhedral machinery` (e.g., Tensor Comprehensions [43])
 
-+   loop synthesis techniques (e.g., Halide [37], TVM [10], and PlaidML[22]). 先把 tensor 计算表示成 nested loop，然后可以 手动/自动 tuning。即，写 scheduler。
++ loop synthesis techniques (e.g., Halide [37], TVM [10], and PlaidML[22]). 先把 tensor 计算表示成 nested loop，然后可以 手动/自动 tuning。即，写 scheduler。
 
 缺点：
 
-1.  much slower than vendor libraries in practice.
 
-1.  lack the expressivity necessary to implement structured sparsity patterns [28, 31, 47] that cannot be directly specified using affine array indices in nested loops
+
+# Triton 技术文档
+
+## 现有方案的局限
+
+1. much slower than vendor libraries in practice.
+
+1. lack the expressivity necessary to implement structured sparsity patterns [28, 31, 47] that cannot be directly specified using affine array indices in nested loops
 
 ![](img/5b3f30043dd5601514e30c6c45ef2d6c.png)
 
+## 已有解决思路
+
 已有的解决思路：
 
-1.  手写 micro-kernels，例如 hand-written tile-level intrinsics
+1. 手写 micro-kernels，例如 hand-written tile-level intrinsics
 
-1.  high-level programming abstractions for tiling。但 compiler backend 依旧缺少这方面的支持。
+1. high-level programming abstractions for tiling。但 `compiler` backend 依旧缺少这方面的支持。
 
-1.  CUTLASS: Fast Linear Algebra in CUDAC++. ([n. d.]). https://devblogs.nvidia.com/cutlass-linear-algebra-cuda/
+1. `CUTLASS`: Fast Linear Algebra in `CUDAC++`. ([n. d.]). `https://devblogs.nvidia.com/cutlass-linear-algebra-cuda/`
 
-1.  2016. TiDA: High-Level Programming Abstractions for Data Locality Management.
+1. 2016. `TiDA`: High-Level Programming Abstractions for Data Locality Management.
 
 ## 主要模块设计
 
 ![](img/728605fb1167c5c0f3eaa441643ac7fe.png)
 
-### Trition IR
+### Triton IR
 
 #### 要点总结
 
-定位：**tile-level** 的计算表示。
+定位：tile-level 的计算表示。
 
-SSA form 的。
+`SSA` form 的。
 
-high-level structure 和 LLVM 相同（same），只是包含了一些描述 tile-level dataflow 和 control-flow analysis 的 extension。
+high-level structure 和 `LLVM` 相同（same），只是包含了一些描述 tile-level dataflow 和 control-flow analysis 的 extension。
 
 extensions 的 2 点意义。
 
-1.  carrying out the optimizations
+1. carrying out the optimizations
 
-1.  safely accessing tensors of arbitrary shapes
+1. safely accessing tensors of arbitrary shapes
 
 结构：
 
-1.  Module。独立编译，然后 linker 合并起来。包含 functions, global variables, constants, 其他 symbols。
+1. `Module`。独立编译，然后 `linker` 合并起来。包含 functions, global variables, constants, 其他 symbols。
 
-1.  Functions。强类型的 function 声明语法。body 就是 CFG (Control Flow Graph) 的那一套。
+1. `Functions`。强类型的 `function` 声明语法。`body` 就是 `CFG` (Control Flow Graph) 的那一套。
 
-1.  Basic Blocks。程序结构里的基本概念，只有 1 个 terminator instructions (i.e., branching, return) 在结尾。
+1. `Basic Blocks`。程序结构里的基本概念，只有 1 个 terminator instructions (i.e., `branching`, `return`) 在结尾。
 
-ReLU 的 example code
+`ReLU` 的 example code
 
 ![](img/9637452cf1aba38d4dec4d12f5c60b31.png)
 
 #### tile-Level DataFlow Analysis
 
-Triton IR 数据流分析的核心：Multi-dimensional tiles
+`Triton IR` 数据流分析的核心：Multi-dimensional tiles
 
-声明的语法：similar to vector declarations in LLVM-IR。也就是，类似 CUDA，thread-block 的语法。
+声明的语法：similar to vector declarations in `LLVM-IR`。也就是，类似 `CUDA`，thread-block 的语法。
 
-不支持 tunable keyword。必须是 static shape，triton-JIT 的 auto-tuner 会解决。
+不支持 `tunable` `keyword`。必须是 static shape，`triton-JIT` 的 `auto-tuner` 会解决。
 
 TODO:
 
-最新的 Triton IR 是否支持 tunable 参数，若不，如何支持动态 shape 算子。
+最新的 `Triton IR` 是否支持 `tunable` 参数，若不，如何支持动态 shape 算子。
 
-Triton IR 的指令包括
+`Triton IR` 的指令包括
 
-1.  retiling 指令。目的是支持 broadcast semantics，带 reshape 和 padding，所以要重新 tiling。
+1. `retiling` 指令。目的是支持 broadcast semantics，带 `reshape` 和 `padding`，所以要重新 tiling。
 
-1.  preserve 并 extended 常见的 scalar 指令：cmp, getelementptr, add, load...
+1. preserve 并 extended 常见的 scalar 指令：`cmp`, `getelementptr`, `add`, `load`...
 
-1.  定制的 arithmetic instructions。包括 transpositions (trans) and matrix multiplications (dot).
+1. 定制的 arithmetic instructions。包括 transpositions (`trans`) and matrix multiplications (`dot`).
 
 #### tile-Level Control-Flow Analysis
 
-tile-level IR 引入的困难是：inexpressibility of divergent control flow within tiles.
+tile-level `IR` 引入的困难是：inexpressibility of divergent control flow within tiles.
 
 挑战还有点大
 
-用的时候，还是要尽量避免落入这种 corner case。可能需要一些 intrinsic 和硬件层面的支持。
+用的时候，还是要尽量避免落入这种 corner case。可能需要一些 `intrinsic` 和硬件层面的支持。
 
 ![](img/ed19b65588911571d130bf42678f5e58.png)
 
 ### Triton-jit
 
-定位: triton-ir -> LLVM bitcode
+定位: `triton-ir` -> `LLVM` bitcode
 
 包含 3 个模块：
 
-1.  **tile-level, **machine-independent passes: simplifying input compute kernels.
+1. tile-level, machine-independent passes: simplifying input compute kernels.
 
-1.  **tile-level** machine dependent passes: generating efficient GPU-ready LLVM-IR
+1. tile-level machine dependent passes: generating efficient GPU-ready `LLVM-IR`
 
-1.  auto-tuner: optimize any meta-parameter associated with the above passes
+1. `auto-tuner`: optimize any `meta-parameter` associated with the above passes
 
 #### 机器无关 Pass
 
-1.  Pre-Feteching。在 tiling 代码里，自动插入 pre-fetch，遮掩 tile-level 的内存操作。
+1. `Pre-Feteching`。在 tiling 代码里，自动插入 `pre-fetch`，遮掩 tile-level 的内存操作。
 
-1.  Tile-Level Peephole Optimization。offers new opportunities for peephole optimizers。比如，连续 transpositions 消除。
+1. `Tile-Level Peephole Optimization`。offers new opportunities for peephole optimizers。比如，连续 transpositions 消除。
 
 ![](img/bd2e84cb0f24672ebf0f6ba06300de7d.png)
 
 #### 机器相关 Pass
 
-1.  hierarchical tiling。
+1. `hierarchical tiling`。
 
-1.  针对 grid-block-thread 的 Nested tiling strategies。micro-tiles，nano-tiles。
+1. 针对 `grid-block-thread` 的 Nested tiling strategies。`micro-tiles`，`nano-tiles`。
 
-1.  不用再搞多面体模型了。polyhedral machinery
+1. 不用再搞多面体模型了。`polyhedral machinery`
 
-1.  memory coalescing。
+1. `memory coalescing`。
 
-1.  合并内存读写。When adjacent threads simultaneously access nearby memory locations
+1. 合并内存读写。When adjacent threads simultaneously access nearby memory locations
 
-1.  因为 single-threaded & 自动并行。compiler 可以优化 micro-tile 内的 threads 顺序，提升内存合并。
+1. 因为 `single-threaded` & 自动并行。`compiler` 可以优化 `micro-tile` 内的 threads 顺序，提升内存合并。
 
-1.  shared memory allocation。
+1. `shared memory allocation`。
 
-1.  复用 cache。determine when and where a tile should be stashed in fast shared memory。
+1. 复用 `cache`。determine when and where a tile should be stashed in fast `shared memory`。
 
-1.  calculating the live range of each variable of interest, and then using the linear-time storage allocation algorithm
+1. calculating the `live range` of each variable of interest, and then using the `linear-time storage allocation algorithm`
 
-1.  shared memory synchronization。
+1. `shared memory synchronization`。
 
-1.  机器本身是异步的 read/write，pass 自动插入 barriers。
+1. 机器本身是异步的 `read/write`，`pass` 自动插入 `barriers`。
 
-1.  This is done by detecting read-after-writes (RAW) and write-after-read(WAR) hazards using forward data-flow analysis
+1. This is done by detecting `read-after-writes (RAW)` and `write-after-read (WAR)` hazards using `forward data-flow analysis`
 
 ![](img/7738588bcf53c176f2dcc7859d191806.png)
 
@@ -469,34 +478,34 @@ tile-level IR 引入的困难是：inexpressibility of divergent control flow wi
 
 #### 要点总结
 
-DSL。
+`DSL`。
 
-现在应该是改成了 python。
+现在应该是改成了 `python`。
 
 主要的 semantics
 
-1.  tile semantics。2 点意义
+1. `tile semantics`。2 点意义
 
-1.  隐藏了 intra-tiling 的优化手段。对外统一 API。
+1. 隐藏了 `intra-tiling` 的优化手段。对外统一 `API`。
 
-1.  compiler 可以自动搜索 intra-tiling 的优化方案了。
+1. `compiler` 可以自动搜索 `intra-tiling` 的优化方案了。
 
-1.  Broadcast Semantics。遵循 2 点 rules，即，先 padding 再 broadcasting。
+1. `Broadcast Semantics`。遵循 2 点 rules，即，先 `padding` 再 `broadcasting`。
 
-1.  padding。把 shortest operand left-padded with ones 到相同的 dimension
+1. `padding`。把 shortest operand `left-padded` with ones 到相同的 dimension
 
-1.  broadcasting。
+1. `broadcasting`。
 
 TODO：
 
-1.  看一下，这些 semantics 在 triton code 的什么地方，
+1. 看一下，这些 semantics 在 `triton code` 的什么地方，
 
-1.  写点 example code 感受一下宣称的牛逼意义。
+1. 写点 `example code` 感受一下宣称的牛逼意义。
 
 #### Programming Model
 
-similar, but each kernel is single-threaded – though automatically parallelized
+similar, but each `kernel` is `single-threaded` – though automatically parallelized
 
-leads to simpler kernels in which CUDA-like concurrency primitives (shared memory synchronization, inter-thread communication, etc.) are inexistent. -- 性能不够极致
+leads to simpler kernels in which `CUDA-like` concurrency primitives (`shared memory synchronization`, `inter-thread communication`, etc.) are inexistent. -- 性能不够极致
 
 ![](img/294ab9aa8e731e55ab0f7d6120266f36.png)

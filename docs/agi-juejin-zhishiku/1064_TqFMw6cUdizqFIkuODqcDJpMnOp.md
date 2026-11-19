@@ -1,3 +1,4 @@
+
 # Transformer，一个神奇的算法模型！！
 
 > 来源：[https://agijuejin.feishu.cn/docx/J59WdcW81o6ktnxkOjQcHo0Vn2d](https://agijuejin.feishu.cn/docx/J59WdcW81o6ktnxkOjQcHo0Vn2d)
@@ -14,7 +15,7 @@ Transformer 非常多的人很熟悉，不过也有人有点模糊，咱们今�
 
 ![](img/3bf9f469895179cf983cc03349284db6.png)
 
-## **基本原理**
+## 基本原理
 
 Transformer 是一种使用注意力机制（attention mechanism）的神经网络模型，能够有效地处理序列数据，如句子或文本。
 
@@ -24,7 +25,7 @@ Transformer 是一种使用注意力机制（attention mechanism）的神经网�
 
 它能够同时处理整个序列，而不需要依赖循环神经网络（RNN）等逐步处理的方法。
 
-## **巧妙的公式**
+## 巧妙的公式
 
 让我们下面严肃一点，看看Transformer的具体公式。
 
@@ -34,13 +35,13 @@ Transformer 是一种使用注意力机制（attention mechanism）的神经网�
 
 这是通过计算查询（query）与键（key）之间的相似度，再乘以值（value）来实现的。然后，我们将这些注意力得分进行归一化处理，并将其加权求和。这个过程可以使用下面的公式表示：
 
-Attention(Q, K, V) = softmax(QK^T / √d_k) * V
+`Attention(Q, K, V) = softmax(QK^T / √d_k) * V`
 
-其中，Q表示查询向量，K表示键向量，V表示值向量，d_k表示维度数。
+其中，`Q`表示查询向量，`K`表示键向量，`V`表示值向量，`d_k`表示维度数。
 
 接着，我们将注意力得分与输入序列的表示进行加权求和，得到编码器的输出。
 
-## **案例**
+## 案例
 
 这次我们选择一个简单的翻译任务作为示例。
 

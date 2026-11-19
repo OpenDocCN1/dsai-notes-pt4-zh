@@ -1,14 +1,15 @@
+
 # 绘画 | Midjourney
 
 > 来源：[https://aigclena.feishu.cn/docx/VTQ1do7Qroy54Rx1jtqc6cOinGd](https://aigclena.feishu.cn/docx/VTQ1do7Qroy54Rx1jtqc6cOinGd)
 
-# 零基础Midjourney教程
+## 零基础Midjourney教程
 
 > 如果你能认真看完这个板块内容，那恭喜你的MJ技能，如果以100分为满分的话，你将能掌握到85分以上的程度，剩余的就是多练。这份基础软件使用教程挂车卖价最低￥399，对你有用的话，欢迎三连我的📕新账号:AIGC娜娜子
 
 > 版权申明:无授权，不可利用原创课程，进行商业牟利!
 
-## 基本介绍
+### 基本介绍
 
 简单介绍Midjourney
 
@@ -28,11 +29,11 @@ Midjourney的主要特点包括：
 
 +   **社区驱动：** Midjourney拥有一个活跃的社区，用户可以互相分享作品和交流经验。
 
-+   地址：https://www.midjourney.com/explore
++   地址：`https://www.midjourney.com/explore`
 
-## **应用场景**
+### 应用场景
 
-### 海报设计
+#### 海报设计
 
 ![](img/7e3139f779ba2154fe02e6c5683cae4a.png)
 
@@ -48,18 +49,15 @@ Midjourney的主要特点包括：
 
 ![](img/2e6bd70cbcfd7a3fc0411341bddae16d.png)
 
-### 游戏场景/角色
-
+#### 游戏场景/角色
 
 ![](img/0b6e1938e54a3f851bc6b68cb4a3adea.png)
 
 ![](img/434a356fd1f16fe854de4618010c27ff.png)
 
-
 ![](img/4b83b51e9a9bcebb3b9fd7987d8eb5ab.png)
 
-
-### 图标
+#### 图标
 
 ![](img/214935c5496fd2f1aa63ecee7491cfdd.png)
 
@@ -67,11 +65,9 @@ Midjourney的主要特点包括：
 
 ![](img/265d29433d8d029429eca2ab2f26c85a.png)
 
-
-
 ![](img/889e1965fab81716da91957d3e4b2b74.png)
 
-### 三视图/IP角色
+#### 三视图/IP角色
 
 ![](img/3bf7af231417d55ec43b2dca11a0e3fc.png)
 
@@ -87,38 +83,23 @@ Midjourney的主要特点包括：
 
 ![](img/d0f69f79a1a90d92ad59d37e4450059c.png)
 
+#### 表情包
 
-### 表情包
-
-
-
-### LOGO设计/界面设计
-
-
-
-
-
-
-
+#### LOGO设计/界面设计
 
 ![](img/5d500dcbac8fb502ec25479ec0f6b1e7.png)
 
-
-
 ![](img/1f30221db6dadcd458933a0c22c104f6.png)
 
-### 3d头像/插画
-
+#### 3d头像/插画
 
 ![](img/9862a8ac1c4a9432916f7f26dd88fa49.png)
 
 ![](img/d8afaec1ce4a139d3965e104e5397b8f.png)
 
-
-
 ![](img/776dbaad39caf75f200684c7cec1c727.png)
 
-### 文字
+#### 文字
 
 ![](img/36a2784e3e2a978b5f3a16831a8cd6ea.png)
 
@@ -128,7 +109,7 @@ Midjourney的主要特点包括：
 
 ![](img/7b16f166115f8cf087ce66d64363bc20.png)
 
-### 壁纸
+#### 壁纸
 
 ![](img/825dca8b50d9df25e594cd8b7d16e25b.png)
 
@@ -140,7 +121,7 @@ Midjourney的主要特点包括：
 
 ![](img/7f75a38392e11c3f42c1cf79012a344c.png)
 
-### 餐饮
+#### 餐饮
 
 ![](img/a84e5f651fe826e00fd3c52aeba3d70c.png)
 
@@ -152,8 +133,7 @@ Midjourney的主要特点包括：
 
 ![](img/a99e554bb8c94a843859796c7e85a52d.png)
 
-### 汽车广告
-
+#### 汽车广告
 
 ![](img/808ba3c5a8bb702422a51f0a2c74eee2.png)
 
@@ -165,7 +145,7 @@ Midjourney的主要特点包括：
 
 ![](img/a713384464caf81543729b3b54d640ec.png)
 
-### 电商产品
+#### 电商产品
 
 ![](img/ef659d870ce010b5e30452c4f62daebc.png)
 
@@ -175,19 +155,16 @@ Midjourney的主要特点包括：
 
 ![](img/2f99e3cd7cd8d8017e39cdb6eec3f5ab.png)
 
-
-
 ![](img/80f22ac2e561c01cb1188a3a4923fa00.png)
 
-### 包装设计
+#### 包装设计
 
 ![](img/7fcc7cde32bf68f53ab9d5d4e36b370b.png)
 
-
 ![](img/b016b27c62f4b35bd43fd60eae4cd8ad.png)
 
-### 联系我们
+#### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)   [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/9169acf0d52be3b19b75c43045bc42c1.png)

@@ -1,3 +1,4 @@
+
 # 谷歌Antigravity的9个使用技巧
 
 > 来源：[https://aigcreative.feishu.cn/docx/C5CsdUo25oOkTWxRtb8cuOF7nag](https://aigcreative.feishu.cn/docx/C5CsdUo25oOkTWxRtb8cuOF7nag)
@@ -8,17 +9,19 @@
 
 大家好，上篇文章介绍了Antigravity的登录以及模型限额，这篇文章来介绍Antigravity的9个使用技巧。
 
-1.安装中文插件，将Antigravity的界面设置成中文。
+## 1. 安装中文插件，将Antigravity的界面设置成中文
 
-在Extensions:Marketplace插件市场中找到中文（简体）插件，安装。
+在`Extensions:Marketplace`插件市场中找到中文（简体）插件，安装。
 
 ![](img/26426f2d79451c5ad2285d52853ea219.png)
 
-2.除了界面的中文化，我们的习惯是输入中文提示词，也希望模型的思考过程以及回复都是中文，那就需要设置全局Rules。点击右上角的三个点，选择Customization
+## 2. 设置全局Rules
+
+除了界面的中文化，我们的习惯是输入中文提示词，也希望模型的思考过程以及回复都是中文，那就需要设置全局Rules。点击右上角的三个点，选择`Customization`。
 
 ![](img/e2b709b2536d0264797605f4f49c17a0.png)
 
-在设置全局rules之前，先解释一下rules和workflows的区别，以及Global rules， Workspace rules的区别。
+在设置全局rules之前，先解释一下rules和workflows的区别，以及Global rules，Workspace rules的区别。
 
 ![](img/a3f38065b32191cb3ed172fdffb52acd.png)
 
@@ -26,7 +29,7 @@ Rules定义Agent的行为准则和代码风格，输出规范等，类似AI应�
 
 Workflows是预定义好的自动化任务序列，类似于SOP标准化流程。
 
-而Rules和Workflows都有Global和Workspace之分。Global定义作用于全局的rules或workflows，Workspace定义作用于当前项目文件夹的rules，比如prompts。
+而Rules和Workflows都有Global和Workspace之分。Global定义作用于全局的rules或workflows，Workspace定义作用于当前项目文件夹的rules，比如`prompts`。
 
 下面我们来设置一个全局的包含中文回复的rules
 
@@ -75,54 +78,56 @@ priority: highest
 结构清晰、层次分明，避免冗余说明与无关扩展。
 ```
 
-3.实践中发现上面的全局rule不生效---AI返回的仍然是英文，原因是Antigravity 在处理特定项目时，有时会优先遵循工作区特有的配置。解决方法是在Workspace里将全局rule同步到当前项目中。
+## 3. 将全局Rule同步到Workspace
+
+实践中发现上面的全局rule不生效---AI返回的仍然是英文，原因是Antigravity 在处理特定项目时，有时会优先遵循工作区特有的配置。解决方法是在Workspace里将全局rule同步到当前项目中。
 
 ![](img/791305e1b2104430e7bd6debd0c22349.png)
 
-4.Planning模式和Fast模式的切换
+## 4. Planning模式和Fast模式的切换
 
 ![](img/ebb0b84cd8e04a63ddf854a32cbf2acc.png)
 
-用Planning模式，AI 会先制定计划再执行任务，适合复杂的任务。
+用`Planning`模式，AI 会先制定计划再执行任务，适合复杂的任务。
 
-用Fast模式，AI 会直接执行任务，跳过规划环节，适合简单的需要快速出结果的任务。
+用`Fast`模式，AI 会直接执行任务，跳过规划环节，适合简单的需要快速出结果的任务。
 
-5.几个常用的快捷键
+## 5. 常用快捷键
 
-**Crtl + E **：打开 Agent Manager；
+`Crtl + E`：打开 `Agent Manager`；
 
-**Crtl + L **：打开 AI 对话框；
+`Crtl + L`：打开 AI 对话框；
 
-**Crtl + I **：编辑选中的代码；
+`Crtl + I`：编辑选中的代码；
 
 ![](img/ff8bf7f33012cb2b3c3c9943ab41bbd8.png)
 
-6.Agent Manager
+## 6. Agent Manager
 
-通过Agent Manager，可以同时管理多个 AI 代理并行工作——比如一个代理负责编写后端 API，另一个优化前端界面，第三个在浏览器中测试功能。
+通过`Agent Manager`，可以同时管理多个 AI 代理并行工作——比如一个代理负责编写后端 API，另一个优化前端界面，第三个在浏览器中测试功能。
 
-用CTRL+E 在代理管理器和编辑器之间切换，也可以通过菜单栏右上角的“打开编辑器”和“打开代理管理器”按钮进行切换。
+用`CTRL+E` 在代理管理器和编辑器之间切换，也可以通过菜单栏右上角的“打开编辑器”和“打开代理管理器”按钮进行切换。
 
 ![](img/2d34f98bc6e44729d8daffb68a282342.png)
 
-7.上传参考图片，上下文，或工作流
+## 7. 上传参考图片，上下文，或工作流
 
 ![](img/63b1c89184627640db18e35ca18e428f.png)
 
-8.Artifacts： AI的交付产物
+## 8. Artifacts： AI的交付产物
 
-在WorkSpace里可以看到项目的Artifacts，有Implementation Plan，Task，Walkthrough，以及前后端文件（根据具体项目）。 AI 在动手写代码之前，会先给出全局规划（Planning模式下），就是Implementation Plan，这个Plan需要人工来确认，有问题让AI改，没有问题就让它执行。Task是将Implementation Plan的拆解后的具体步骤。
+在`WorkSpace`里可以看到项目的`Artifacts`，有`Implementation Plan`，`Task`，`Walkthrough`，以及前后端文件（根据具体项目）。 AI 在动手写代码之前，会先给出全局规划（`Planning`模式下），就是`Implementation Plan`，这个Plan需要人工来确认，有问题让AI改，没有问题就让它执行。`Task`是将`Implementation Plan`的拆解后的具体步骤。
 
-WalkThrough是代码生成或修改完成后，AI 为你提供的功能说明和测试指南。当然，Cursor等IDE里也有，只是名字不同。
+`WalkThrough`是代码生成或修改完成后，AI 为你提供的功能说明和测试指南。当然，`Cursor`等IDE里也有，只是名字不同。
 
 ![](img/03427aa012593e4bf814881e81e72a6d.png)
 
-9.Comments on artifacts
+## 9. Comments on artifacts
 
 可以对产出物进行标注，让模型针对批注逐一进行修改。
 
 ![](img/db610efcdc076a783b3c0f7903107152.png)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

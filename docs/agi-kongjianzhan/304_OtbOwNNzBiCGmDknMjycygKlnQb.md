@@ -1,14 +1,11 @@
+
 # AI 洞察笔记【prompt】
 
 > 来源：[https://agispace.feishu.cn/docx/Gl2BdMOdwoxuevx1IyNcVTdQnIf](https://agispace.feishu.cn/docx/Gl2BdMOdwoxuevx1IyNcVTdQnIf)
 
 > 👸号：AI 洞察笔记
 
->
-
 > Prompt提示词是人工智能时代的编程语言，撬动大模型生产力的杠杆。 取代你的不是AI，而是比你更会用AI的人。这里分享各种案例，关注我们，做一个会AI的人。
-
->
 
 ![](img/97ed9289eef2674fb9a2f8ad0cc70f02.png)
 

@@ -1,8 +1,9 @@
+
 # 6 | Zero Shot Chain of Thought
 
 > 来源：[https://aigcreative.feishu.cn/docx/XBOSdU7UMoR8SFxVzBUc7AkfnJd](https://aigcreative.feishu.cn/docx/XBOSdU7UMoR8SFxVzBUc7AkfnJd)
 
-### What is Zero Shot CoT?
+## What is Zero Shot CoT?
 
 Zero Shot Chain of Thought (Zero-shot-CoT) is a new prompting technique for generating more accurate answers to questions.
 

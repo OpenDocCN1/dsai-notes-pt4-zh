@@ -1,3 +1,4 @@
+
 # 数字教育新周期下，为什么AIGC应用是核心？
 
 > 来源：[https://agijuejin.feishu.cn/docx/UZGwdh8juoyJcixCbfKcHbO4nsb](https://agijuejin.feishu.cn/docx/UZGwdh8juoyJcixCbfKcHbO4nsb)

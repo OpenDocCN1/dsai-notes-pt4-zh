@@ -1,3 +1,4 @@
+
 # 20241015-创意盛宴！Adobe MAX 2024给你从图像到视频的全新视界
 
 > 来源：[https://aigcreative.feishu.cn/docx/ZLdVdwbQYoEKupxffGfctrQ0nTc](https://aigcreative.feishu.cn/docx/ZLdVdwbQYoEKupxffGfctrQ0nTc)

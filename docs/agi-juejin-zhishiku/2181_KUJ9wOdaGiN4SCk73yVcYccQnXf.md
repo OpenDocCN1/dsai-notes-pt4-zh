@@ -1,8 +1,7 @@
-# 12.09-张一鸣被曝全力押注 AI，亲自监督字节跳动招聘高端人才
-
-> 来源：[https://agijuejin.feishu.cn/docx/SwRbdeiNhokNFMxZ2w4cmfpqn9E](https://agijuejin.feishu.cn/docx/SwRbdeiNhokNFMxZ2w4cmfpqn9E)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 09 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/SwRbdeiNhokNFMxZ2w4cmfpqn9E](https://agijuejin.feishu.cn/docx/SwRbdeiNhokNFMxZ2w4cmfpqn9E)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

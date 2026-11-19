@@ -1,3 +1,4 @@
+
 # Dify自定义工具
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/W06odNsLuoWMhQxDaqhcwodSnSf](https://qqs7y1hozd1.feishu.cn/docx/W06odNsLuoWMhQxDaqhcwodSnSf)
@@ -22,7 +23,9 @@
 
 当然你也可以为Dify贡献自己[的工具，让自己的工具](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md)成为Dify的内置工具。关于如何贡献的具体方法请查看Dify开发贡献文档。
 
-第一方工具授权 若你需要直接使用 Dify 生态提供的第一方内置工具，你需要在使用前配置相应的凭据。
+### 第一方工具授权
+
+若你需要直接使用 Dify 生态提供的第一方内置工具，你需要在使用前配置相应的凭据。
 
 ![](img/2fba84080bbfa90d8b57b301e582fbf4.png)
 
@@ -89,7 +92,7 @@ d) 参加烹饪课程，学习法式烹饪
 a) 警惕扒手，特别是在热门旅游区和公共交通工具上
 b) 学习几句基本的法语，如问候语和感谢词
 c) 提前预订热门景点的门票，避免长时间排队
-d) 注意&quot;巴黎综合症&quot;：部分游客可能因文化冲击而产生不适应症状，保持开放和包容的心态
+d) 注意"巴黎综合症"：部分游客可能因文化冲击而产生不适应症状，保持开放和包容的心态
 
 住宿
 根据预算和喜好选择酒店、民宿或公寓。建议住在市中心区域，如马莱区、拉丁区或圣日耳曼德佩区，方便游览主要景点。
@@ -133,27 +136,27 @@ OpenAPI规范文档: 这些文档是使用OpenAPI规范编写的API描述文档�
 
 ```
 @RestController
-@RequestMapping(&quot;/weather&quot;)
-@Tag(name = &quot;天气接口&quot;, description = &quot;查询天气的接口&quot;)
+@RequestMapping("/weather")
+@Tag(name = "天气接口", description = "查询天气的接口")
 
 public class WeatherController {
-    @GetMapping(&quot;/query&quot;)
-    @Operation(summary = &quot;查询天气&quot;)
-    public ResponseEntity&lt;Object&gt; getWeather(@Parameter(name = &quot;city&quot;, description = &quot;查询天气传入的城市名&quot;, schema = @Schema(type = &quot;string&quot;))
+    @GetMapping("/query")
+    @Operation(summary = "查询天气")
+    public ResponseEntity<Object> getWeather(@Parameter(name = "city", description = "查询天气传入的城市名", schema = @Schema(type = "string"))
                                                              @RequestParam(required = false) String city) {
-        Map&lt;String, Object&gt; response = new HashMap&lt;&gt;();
+        Map<String, Object> response = new HashMap<>();
 
         if (city == null || city.isEmpty()) {
-            response.put(&quot;status&quot;, HttpStatus.BAD_REQUEST.value());
-            response.put(&quot;message&quot;, &quot;参数错误&quot;);
-            return new ResponseEntity&lt;&gt;(response, HttpStatus.BAD_REQUEST);
+            response.put("status", HttpStatus.BAD_REQUEST.value());
+            response.put("message", "参数错误");
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
 
         // Assuming the temperature is always 20 degrees Celsius for demonstration
-        response.put(&quot;status&quot;, HttpStatus.OK.value());
-        response.put(&quot;message&quot;, &quot;20摄氏度&quot;);
+        response.put("status", HttpStatus.OK.value());
+        response.put("message", "20摄氏度");
 
-        return new ResponseEntity&lt;&gt;(response, HttpStatus.OK);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
 }
@@ -165,27 +168,25 @@ public class WeatherController {
 
 如何编写OpenAPI / Swagger规范文档，三种方法：
 
-1.  Swagger Editor官网在线编辑。
-
-1.  根据API接口信息，让ChatGpt、文心一言等帮你生成。
-
-1.  SpringBoot集成Swagger依赖，自动生成OpenAPI / Swagger规范文档。
+1. Swagger Editor官网在线编辑。
+2. 根据API接口信息，让ChatGpt、文心一言等帮你生成。
+3. SpringBoot集成Swagger依赖，自动生成OpenAPI / Swagger规范文档。
 
 前两种方式比较简单，本节我们介绍第三种方式，SpringBoot集成Swagger依赖，自动生成OpenAPI / Swagger规范文档。
 
-添加Swagger依赖
+#### 添加Swagger依赖
 
 ```
 pom.xml
 
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springdoc&lt;/groupId&gt;
-    &lt;artifactId&gt;springdoc-openapi-starter-webmvc-ui&lt;/artifactId&gt;
-    &lt;version&gt;2.4.0&lt;/version&gt;
-&lt;/dependency&gt;
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.4.0</version>
+</dependency>
 ```
 
-配置Swagger
+#### 配置Swagger
 
 ```
 @Configuration
@@ -195,108 +196,114 @@ public class SwaggerConfig {
     public OpenAPI springShopOpenAPI() {
 
         return new OpenAPI()
-                .info(new Info().title(&quot;SpringBoot3 API&quot;)
-                        .description(&quot;SpringBoot3 sample application&quot;)
-                        .version(&quot;v1.0.0&quot;)
-                        .license(new License().name(&quot;Apache 2.0&quot;).url(&quot;http://springdoc.org&quot;)))
+                .info(new Info().title("SpringBoot3 API")
+                        .description("SpringBoot3 sample application")
+                        .version("v1.0.0")
+                        .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
-                        .description(&quot;SpringShop Wiki Documentation&quot;)
-                        .url(&quot;https://springshop.wiki.github.org/docs&quot;));
+                        .description("SpringShop Wiki Documentation")
+                        .url("https://springshop.wiki.github.org/docs"));
 
     }
 }
 ```
 
-使用Swagger
+#### 使用Swagger
 
 ```
 @RestController
-@RequestMapping(&quot;/weather&quot;)
-@Tag(name = &quot;天气接口&quot;, description = &quot;查询天气的接口&quot;)
+@RequestMapping("/weather")
+@Tag(name = "天气接口", description = "查询天气的接口")
 
 public class WeatherController {
-    @GetMapping(&quot;/query&quot;)
-    @Operation(summary = &quot;查询天气&quot;)
-    public ResponseEntity&lt;Object&gt; getWeather(@Parameter(name = &quot;city&quot;, description = &quot;查询天气传入的城市名&quot;, schema = @Schema(type = &quot;string&quot;))
+    @GetMapping("/query")
+    @Operation(summary = "查询天气")
+    public ResponseEntity<Object> getWeather(@Parameter(name = "city", description = "查询天气传入的城市名", schema = @Schema(type = "string"))
                                                              @RequestParam(required = false) String city) {
-        Map&lt;String, Object&gt; response = new HashMap&lt;&gt;();
+        Map<String, Object> response = new HashMap<>();
 
         if (city == null || city.isEmpty()) {
-            response.put(&quot;status&quot;, HttpStatus.BAD_REQUEST.value());
-            response.put(&quot;message&quot;, &quot;参数错误&quot;);
-            return new ResponseEntity&lt;&gt;(response, HttpStatus.BAD_REQUEST);
+            response.put("status", HttpStatus.BAD_REQUEST.value());
+            response.put("message", "参数错误");
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
 
         // Assuming the temperature is always 20 degrees Celsius for demonstration
-        response.put(&quot;status&quot;, HttpStatus.OK.value());
-        response.put(&quot;message&quot;, &quot;20摄氏度&quot;);
+        response.put("status", HttpStatus.OK.value());
+        response.put("message", "20摄氏度");
 
-        return new ResponseEntity&lt;&gt;(response, HttpStatus.OK);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
 }
 ```
 
-在线预览OpenAPI / Swagger规范文档 启动上面的[SpringBoot程序，在浏览器](http://localhost:8088/swagger-ui.html)中访问：http://localhost:8088/swagger-ui.html （注意端口号需要根据实际配置，我的SpringBoot程序端口号是8088）。
+在线预览OpenAPI / Swagger规范文档 启动上面的`[SpringBoot程序，在浏览器](http://localhost:8088/swagger-ui.html)`中访问：`http://localhost:8088/swagger-ui.html` （注意端口号需要根据实际配置，我的SpringBoot程序端口号是8088）。
 
 ![](img/c16ac6da001d56bccb7ce23b9cf3c9cc.png)
 
 以下就是一份标准的OpenAPI / Swagger规范文档，你可以直接复制粘贴到Dify自定义工具中。
 
-```
+
+
+# OpenAPI 规范文档与 Dify 自定义工具
+
+## OpenAPI 3.0.1 规范文档
+
+```json
 {
-  &quot;openapi&quot;: &quot;3.0.1&quot;,
-  &quot;info&quot;: {
-    &quot;title&quot;: &quot;SpringBoot3 API&quot;,
-    &quot;description&quot;: &quot;SpringBoot3 sample application&quot;,
-    &quot;license&quot;: {
-      &quot;name&quot;: &quot;Apache 2.0&quot;,
-      &quot;url&quot;: &quot;http://springdoc.org&quot;
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SpringBoot3 API",
+    "description": "SpringBoot3 sample application",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://springdoc.org"
     },
-    &quot;version&quot;: &quot;v1.0.0&quot;
+    "version": "v1.0.0"
   },
-  &quot;externalDocs&quot;: {
-    &quot;description&quot;: &quot;SpringShop Wiki Documentation&quot;,
-    &quot;url&quot;: &quot;https://springshop.wiki.github.org/docs&quot;
+  "externalDocs": {
+    "description": "SpringShop Wiki Documentation",
+    "url": "https://springshop.wiki.github.org/docs"
   },
-  &quot;servers&quot;: [
+  "servers": [
     {
-      &quot;url&quot;: &quot;http://localhost:8088&quot;,
-      &quot;description&quot;: &quot;Generated server url&quot;
+      "url": "http://localhost:8088",
+      "description": "Generated server url"
     }
   ],
-  &quot;tags&quot;: [
+  "tags": [
     {
-      &quot;name&quot;: &quot;天气接口&quot;,
-      &quot;description&quot;: &quot;查询天气的接口&quot;
+      "name": "天气接口",
+      "description": "查询天气的接口"
     }
   ],
-  &quot;paths&quot;: {
-    &quot;/weather/query&quot;: {
-      &quot;get&quot;: {
-        &quot;tags&quot;: [
-          &quot;天气接口&quot;
+  "paths": {
+    "/weather/query": {
+      "get": {
+        "tags": [
+          "天气接口"
         ],
-        &quot;summary&quot;: &quot;查询天气&quot;,
-        &quot;operationId&quot;: &quot;getWeather&quot;,
-        &quot;parameters&quot;: [
+        "summary": "查询天气",
+        "operationId": "getWeather",
+        "parameters": [
           {
-            &quot;name&quot;: &quot;city&quot;,
-            &quot;in&quot;: &quot;query&quot;,
-            &quot;description&quot;: &quot;查询天气传入的城市名&quot;,
-            &quot;required&quot;: false,
-            &quot;schema&quot;: {
-              &quot;type&quot;: &quot;string&quot;
+            "name": "city",
+            "in": "query",
+            "description": "查询天气传入的城市名",
+            "required": false,
+            "schema": {
+              "type": "string"
             }
           }
         ],
-        &quot;responses&quot;: {
-          &quot;200&quot;: {
-            &quot;description&quot;: &quot;OK&quot;,
-            &quot;content&quot;: {
-              &quot;*/*&quot;: {
-                &quot;schema&quot;: {
-                  &quot;type&quot;: &quot;object&quot;
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object"
                 }
               }
             }
@@ -305,14 +312,14 @@ public class WeatherController {
       }
     }
   },
-  &quot;components&quot;: {
+  "components": {
 
   }
 }
 ```
 
-### Dify自定义工具
+### Dify 自定义工具
 
-将上一步形成的OpenAPI / Swagger规范文档内容复制粘贴到Dify自定义工具窗口中。即完成了Dify的自定义工具的创建！😎
+将上一步形成的 OpenAPI / Swagger 规范文档内容复制粘贴到 Dify 自定义工具窗口中。即完成了 Dify 的自定义工具的创建！😎
 
 ![](img/adf909c443d47fabebfeb6ea191367a1.png)

@@ -1,3 +1,4 @@
+
 # AI 工具大全
 
 > 来源：[https://my.feishu.cn/docx/MhwLdeNmSo4V9axnUFZcTAsanlh](https://my.feishu.cn/docx/MhwLdeNmSo4V9axnUFZcTAsanlh)
@@ -6,189 +7,146 @@
 
 多维表格（QJKXb66WkahfZSsRYotcynemnff_tblp8Ximo06q601v）
 
-# ✍AI 文本
+## ✍AI 文本
 
-GPT-4 在线体验（每日免费一次）
-
+GPT-4 在线体验（每日免费一次）  
 https://poe.com/gpt-4
 
-NotionAl:
-
+NotionAl:  
 https://www.notion.so/product/ai
 
-A.I.Data Sidekick:A 工具编写 SQL、文档等的速度提高 10 倍
-
+A.I.Data Sidekick:A 工具编写 SQL、文档等的速度提高 10 倍  
 https://www.airops.com/
 
-Writesonic:人工智能写作辅助工具
-
+Writesonic:人工智能写作辅助工具  
 https://writesonic.com/
 
-copy.ai：使用 AI 编写更好的营销文案和内容
-
+copy.ai：使用 AI 编写更好的营销文案和内容  
 https://www.copy.ai/
 
-Character.Al：Al 人工交互
-
+Character.Al：Al 人工交互  
 https://beta.character.ai/
 
-Fireflies:该工具可插入 Zoom、Teams 或 Nebex 等流行的视频会议工具，并自动执行做笔记和创建转录的过程
-
+Fireflies:该工具可插入 Zoom、Teams 或 Nebex 等流行的视频会议工具，并自动执行做笔记和创建转录的过程  
 https://fireflies.ai/
 
-Jasper:AI 文案写作工具
-
+Jasper:AI 文案写作工具  
 https://www.jasper.ai/
 
-Outplay:AI 销售互动平台
-
+Outplay:AI 销售互动平台  
 https://outplayhq.com/
 
-CoWriter:Al 辅助写作
-
+CoWriter:Al 辅助写作  
 https://cowriter.org/login
 
-Tldv.io： AI 会议总结器
-
+Tldv.io： AI 会议总结器  
 https://tldv.io/
 
-# 🖊AI 绘画
+## 🖊AI 绘画
 
-PhotoRoom:擦除任何背景、对象
-
+PhotoRoom:擦除任何背景、对象  
 https://www.photoroom.com/
 
-造梦师：只需一句话，让你的文字变成画作
-
+造梦师：只需一句话，让你的文字变成画作  
 https://printidea.art/
 
-ARC Lab:一款提供照片修复、抠图、画质增强的在线工具
+ARC Lab:一款提供照片修复、抠图、画质增强的在线工具  
+https://arc.tencent.com/zh/ai-demos/faceRestoration
 
-[https://arc.tencent.com/zh/ai-d](https://arc.tencent.com/zh/ai-demos/faceRestoration)emos/faceRestoration
-
-Artbreeder:人工智能合成创意工具
-
+Artbreeder:人工智能合成创意工具  
 https://www.artbreeder.com/
 
-Stockimg Al:生成各种各样的设计元素，包括引 ogo、插画、图片壁纸等
-
+Stockimg Al:生成各种各样的设计元素，包括引 ogo、插画、图片壁纸等  
 https://stockimg.ai/
 
-niji-journey:二次元 ai 绘画
-
+niji-journey:二次元 ai 绘画  
 https://nijijourney.com/zh/
 
-Getimg.ai：关键词生成图片的 A 工具
-
+Getimg.ai：关键词生成图片的 A 工具  
 https://getimg.ai/
 
-Dreamlike.at：Al 图像生成
-
+Dreamlike.at：Al 图像生成  
 https://dreamlike.art/
 
-文心一格飞桨：A 艺术和创意辅助平台
-
+文心一格飞桨：A 艺术和创意辅助平台  
 https://yige.baidu.com/
 
-Phygital+-:AI 图像生成
-
+Phygital+-:AI 图像生成  
 https://phygital.plus/
 
-Beautiful.ai：Al 生成 PPT
-
+Beautiful.ai：Al 生成 PPT  
 https://www.beautiful.ai/
 
-# 🎦AI 视频
+## 🎦AI 视频
 
-Runway:AI 魔法工具
-
+Runway:AI 魔法工具  
 https://runwayml.com/
 
-Cascadeur:人工智障辅助关键帧动画软件
-
+Cascadeur:人工智障辅助关键帧动画软件  
 https://cascadeur.com/
 
-Synthesia:人工智障视频生成
-
+Synthesia:人工智障视频生成  
 https://www.synthesia.io/
 
-Pollinations:文本转视频、图片
-
+Pollinations:文本转视频、图片  
 https://pollinations.ai/
 
-Zubtitle:为视频添加字幕和在线编辑视频
-
+Zubtitle:为视频添加字幕和在线编辑视频  
 https://zubtitle.com/
 
-Much:人工智障提取视频中的最引人入胜、最流行和最有影响力的片段
-
+Much:人工智障提取视频中的最引人入胜、最流行和最有影响力的片段  
 https://www.getmunch.com/
 
-Fik:将文本变成带有 A！语音的视频
-
+Fik:将文本变成带有 A！语音的视频  
 https://fliki.ai/
 
-Peech:个性化的自动视频编辑和管理平台
-
+Peech:个性化的自动视频编辑和管理平台  
 https://www.peech-ai.com/
 
-DreamFace:Al 动画照片应用程序
-
+DreamFace:Al 动画照片应用程序  
 https://dreamfaceapp.com/
 
-D-ID:人工智障视频生成
-
+D-ID:人工智障视频生成  
 https://www.d-id.com/
 
-# 🎵AI 音频
+## 🎵AI 音频
 
-Brain.fm：专注、放松、冥想和睡眠，聆听为您的大脑量身打造的音乐
-
+Brain.fm：专注、放松、冥想和睡眠，聆听为您的大脑量身打造的音乐  
 https://www.brain.fm/
 
-Soundraw:人工智障生成音乐
-
+Soundraw:人工智障生成音乐  
 https://soundraw.io/
 
-Endl:个性化背景音，帮助您集中注意力、放松和睡眠
-
+Endl:个性化背景音，帮助您集中注意力、放松和睡眠  
 https://endel.io/
 
-Riffusion:实时音乐和音频生成库
-
+Riffusion:实时音乐和音频生成库  
 https://www.riffusion.com/
 
-[https://github.com](https://github.com/riffusion/riffusion)/riffusion/riffusion
+https://github.com/riffusion/riffusion
 
-Papercup:人工智障配音和视频翻译软件
-
+Papercup:人工智障配音和视频翻译软件  
 https://www.papercup.com/
 
-LALAL.A：从任何音频和视频中提取人声、伴奏和各种乐器
-
+LALAL.A：从任何音频和视频中提取人声、伴奏和各种乐器  
 https://www.lalal.ai/
 
-Mu:使用多功能 AI 语音生成器从文本到语音
-
+Mu:使用多功能 AI 语音生成器从文本到语音  
 https://murf.ai/
 
-PolyA:语音助手
-
+PolyA:语音助手  
 https://poly.ai/
 
-Voicemod:语音实时变声器
-
+Voicemod:语音实时变声器  
 https://www.voicemod.net/zh/
 
-Boomy:人工智障生成音乐
-
+Boomy:人工智障生成音乐  
 https://boomy.com/
 
-Mubert:人工智障生成音乐
-
+Mubert:人工智障生成音乐  
 https://mubert.com/
 
-# Prompt IDEs
+## Prompt IDEs
 
 +   OpenAI Playground：无需多说，第一方应用。
 
@@ -200,9 +158,7 @@ https://mubert.com/
 
 +   [Dyno](https://trydyno.com/)：文档里嵌入的就是它
 
-#
-
-# 其他 AI 产品
+## 其他 AI 产品
 
 +   [iconifyai](https://www.iconifyai.com/)：这是一个 AI 生成 App icon 的产品，价格大约是 10 美元 15 个 icon，15 美元 30 个。看了下 demo 效果，水平比猪八戒平台上找外包搞的要好太多了（不确定实际怎样，后面准备试试），价格也不算很贵，算上试错，应该 15-20 美元就能搞定。
 
@@ -236,4 +192,3 @@ https://mubert.com/
 
 +   [FlowGPT：](https://flowgpt.com/) ChatGPT 的 Prompt 聚合网站，你可以在上面找到不少有意思的玩法。坦率说来，这些 Prompt 应该跟 ChatGPT 强整合。
 
-#

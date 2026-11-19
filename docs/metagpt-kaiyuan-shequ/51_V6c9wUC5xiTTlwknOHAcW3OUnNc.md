@@ -1,10 +1,11 @@
+
 # 数学问题解答
 
 > 来源：[https://deepwisdom.feishu.cn/docx/Z2KLdFVvzo2AV6xPHrJcgIN1nKg](https://deepwisdom.feishu.cn/docx/Z2KLdFVvzo2AV6xPHrJcgIN1nKg)
 
 ## 概述
 
-使用 DataInterpreter 解决数学问题，具体的数学问题随机选自MATH数据集的level5等级。
+使用`DataInterpreter`解决数学问题，具体的数学问题随机选自`MATH`数据集的`level5`等级。
 
 ## 示例
 
@@ -20,7 +21,7 @@ python examples/di/solve_math_problems.py
 
 ### 运行结果
 
-1.  DataInterpreter 提出的task如下：
+1. `DataInterpreter` 提出的task如下：
 
 ```
 [
@@ -42,9 +43,9 @@ python examples/di/solve_math_problems.py
 ]
 ```
 
-由于有一半的学生参加篮球队，因此很容易计算出篮球队的总人数；然后根据数学队、篮球队和足球队的人数比例能够计算出数学队和足球队的总人数；最后根据容斥原理来得到答案。可以看出DataInterpreter规划的步骤非常合理且符合人类解数学题的思维。
+由于有一半的学生参加篮球队，因此很容易计算出篮球队的总人数；然后根据数学队、篮球队和足球队的人数比例能够计算出数学队和足球队的总人数；最后根据容斥原理来得到答案。可以看出`DataInterpreter`规划的步骤非常合理且符合人类解数学题的思维。
 
-1.  DataInterpreter 写的代码如下:
+1. `DataInterpreter` 写的代码如下:
 
 ```
 # ------------------------------task1------------------------------
@@ -82,4 +83,4 @@ students_two_teams = (math_team + basketball_team + soccer_team) - total_student
 students_two_teams
 ```
 
-DataInterpreter所生成的代码完全遵循规划好的task并且能成功运行，并最终计算出正确答案为：14
+`DataInterpreter`所生成的代码完全遵循规划好的task并且能成功运行，并最终计算出正确答案为：14

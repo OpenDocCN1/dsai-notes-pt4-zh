@@ -1,6 +1,7 @@
+
 # conv 算子深入分析
 
-> 来源：[https://learning.feishu.cn/docx/Fh5wddHRboahdrxhB1octMaDn5g](https://learning.feishu.cn/docx/Fh5wddHRboahdrxhB1octMaDn5g)
+> 来源：https://learning.feishu.cn/docx/Fh5wddHRboahdrxhB1octMaDn5g
 
 https://datascience.stackexchange.com/questions/23183/why-convolutions-always-use-odd-numbers-as-filter-size
 
@@ -8,7 +9,7 @@ https://stackoverflow.com/questions/45538980/how-does-the-size-of-the-patch-kern
 
 https://stats.stackexchange.com/questions/366739/when-do-we-use-an-even-size-kernel-in-convolutional-neural-network-and-why
 
-A guide to convolution arithmetic for deep learning
+### A guide to convolution arithmetic for deep learning
 
 https://arxiv.org/pdf/1603.07285
 
@@ -20,18 +21,18 @@ https://no5-aaron-wu.github.io/2021/11/14/AI-Algorithm-2-NC4HW4/
 
 https://www.zhihu.com/question/337513515/answer/768632471
 
-卷积：从推理引擎优化和硬件优化角度理解
+### 卷积：从推理引擎优化和硬件优化角度理解
 
 https://zhuanlan.zhihu.com/p/616138047?utm_id=0
 
-谈谈为什么卷积加速更喜欢 NHWC Layout
+### 谈谈为什么卷积加速更喜欢 NHWC Layout
 
 https://zhuanlan.zhihu.com/p/395810743?utm_id=0
 
-CUDA卷积算子手写详细实现
+### CUDA卷积算子手写详细实现
 
 https://zhuanlan.zhihu.com/p/613538649?utm_psn=1811308582488125440&utm_id=0
 
-从GPU的内存访问视角对比NHWC和NCHW
+### 从GPU的内存访问视角对比NHWC和NCHW
 
 https://mp.weixin.qq.com/s/bd1wsnIn7bYHtZ4hqL0_FA

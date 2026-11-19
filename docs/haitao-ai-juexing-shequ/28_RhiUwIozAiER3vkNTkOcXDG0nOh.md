@@ -1,3 +1,4 @@
+
 # Coze 儿童古诗词视频动画制作教程
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/RNardFLXfoW2OgxFqxJcFmginkh](https://zinxkclpk97.feishu.cn/docx/RNardFLXfoW2OgxFqxJcFmginkh)
@@ -36,17 +37,14 @@
 
 核心知识点
 
-+   控制大模型生文效果，分镜画面人物一致性
-
-+   图像生成节点，选择合适的模型，保证生成画面效果
-
-+   图转视频模块，需要单独搭建图转视频工作流，异步执行生图任务
-
-+   重组素材输出剪映草稿，其中包括文字、音频、视频、特效等时间线设置
++ 控制大模型生文效果，分镜画面人物一致性
++ 图像生成节点，选择合适的模型，保证生成画面效果
++ 图转视频模块，需要单独搭建图转视频工作流，异步执行生图任务
++ 重组素材输出剪映草稿，其中包括文字、音频、视频、特效等时间线设置
 
 ### 工作流搭建
 
-我们这里使用海螺的插件，实现图转视频工作流如下，先搭建好如下工作流起个名字image2video，后续主工作流中会使用到。
+我们这里使用海螺的插件，实现图转视频工作流如下，先搭建好如下工作流起个名字`image2video`，后续主工作流中会使用到。
 
 ![](img/a66d69d46bf944ff60584d654fb933e4.png)
 
@@ -54,7 +52,7 @@
 
 ![](img/00118ff74d5cbcb338324cb687143ce7.png)
 
-下一步使用视频生成插件，输入图片和视频提示词，模型我们选择I2V-01-live，2D卡通表现效果还不错。token参数则需要到相应平台完成注册后获取。
+下一步使用视频生成插件，输入图片和视频提示词，模型我们选择`I2V-01-live`，2D卡通表现效果还不错。`token`参数则需要到相应平台完成注册后获取。
 
 考虑海螺插件配置复杂和稳定性问题，也可以使用阿里通义万像插件平替
 
@@ -66,7 +64,7 @@
 
 ![](img/2e3f98ff34c76126ad02e1c7ccbfda73.png)
 
-细节部分，循环次数选择无限循环，设置中间变量video_url，用来接受生成好的视频地址
+细节部分，循环次数选择无限循环，设置中间变量`video_url`，用来接受生成好的视频地址
 
 ![](img/feb3a15c61f5d2749df83865344deea5.png)
 
@@ -74,7 +72,7 @@
 
 ![](img/5b42f32e7185835cdaf5b205dfe88658.png)
 
-添加参数判断逻辑，如果任务未完成，则等待30s钟后再继续循环，如果任务成功则设置video_url参数并终止循环。流程比较简单就不展开细节了。
+添加参数判断逻辑，如果任务未完成，则等待30s钟后再继续循环，如果任务成功则设置`video_url`参数并终止循环。流程比较简单就不展开细节了。
 
 ![](img/5c9f8b28ff2e264180507a42ac0e2570.png)
 
@@ -92,31 +90,31 @@
 
 首先还是老生常谈的方案，使用大模型生成古诗词文字、分镜画面。
 
-通过这个提示词，我们可以一步完成诗词文案、分镜提示词、人物一致性控制。也相对减少了大模型的token资源消耗。
+通过这个提示词，我们可以一步完成诗词文案、分镜提示词、人物一致性控制。也相对减少了大模型的`token`资源消耗。
 
 ![](img/1c0ab82d94fc702d1d9563705df098de.png)
 
 ```
-#系统提示词
+# 系统提示词
 # 角色 儿童古诗词绘本设计师
 擅长卡通绘画，擅长中国古诗词
 
 # 任务
-根据用户要求，生成诗句对应分镜画面提示词prompt、诗词解释desc、诗词句子sentence
+根据用户要求，生成诗句对应分镜画面提示词`prompt`、诗词解释`desc`、诗词句子`sentence`
 
 # 输出格式
 以数组对象的结构输出。
 示例：
 [{
-&quot;sentence&quot;:&quot;床前明月光&quot;,
-&quot;desc&quot;:&quot;窗前有一片明月洒下的光辉&quot;,
-&quot;prompt&quot;:&quot;Q版可爱漂亮小女孩6岁，头部占身体1/3，大眼睛占头部1/3，梳着黑发双丫髻，穿着粉色齐胸襦裙，动作描述(手指摩挲怀中玉佩)，回忆光效(地面浮现故乡稻田、纸鸢飞舞)，动态模糊，暖黄回忆色调，光柱效果，渐隐转场，低角度仰拍 &quot;
+"sentence": "床前明月光",
+"desc": "窗前有一片明月洒下的光辉",
+"prompt": "Q版可爱漂亮小女孩6岁，头部占身体1/3，大眼睛占头部1/3，梳着黑发双丫髻，穿着粉色齐胸襦裙，动作描述(手指摩挲怀中玉佩)，回忆光效(地面浮现故乡稻田、纸鸢飞舞)，动态模糊，暖黄回忆色调，光柱效果，渐隐转场，低角度仰拍 "
 }]
 
 ===========================
-#用户提示词
-我想做一个关于古诗《{{title}}》的儿童古诗动画视频，帮我设计每句古诗的分镜头画面提示词，包括古诗文案，运镜，画面提示词。
-画面提示词要求符合Midjourney提示词结构，包含主体人物、动作描述、场景画面、画面质量、灯光氛围、风格参数与镜头语言，每个提示词都加上&quot;卡通风格&quot;，每个画面都要搭配如下人物形象提示“卡通风格Q版可爱漂亮小女孩6岁，头部占身体1/3，大眼睛占头部1/3，梳着黑发双丫髻，穿着粉色齐胸襦裙”，并且保持人物一致，风格一致，着装一致。
+# 用户提示词
+我想做一个关于古诗《{{`title`}}》的儿童古诗动画视频，帮我设计每句古诗的分镜头画面提示词，包括古诗文案，运镜，画面提示词。
+画面提示词要求符合Midjourney提示词结构，包含主体人物、动作描述、场景画面、画面质量、灯光氛围、风格参数与镜头语言，每个提示词都加上"卡通风格"，每个画面都要搭配如下人物形象提示“卡通风格Q版可爱漂亮小女孩6岁，头部占身体1/3，大眼睛占头部1/3，梳着黑发双丫髻，穿着粉色齐胸襦裙”，并且保持人物一致，风格一致，着装一致。
 ```
 
 下一步生成封面配图，这一步可以按需选择。
@@ -125,7 +123,7 @@
 
 继续，使用批处理节点或循环节点，对大模型输出的分镜数据进行处理，生成配图画面，并将图片转为视频片段。
 
-这里就用到了我们前面已经搭建好的图像转视频的工作流image2video。
+这里就用到了我们前面已经搭建好的图像转视频的工作流`image2video`。
 
 ![](img/5c66693b288b77cf7fb84f0491a2cc4b.png)
 
@@ -155,19 +153,19 @@
 
 数据聚合代码节点源码
 
-```
+```python
 import json
 
-async def main(args) -&gt; dict:
+async def main(args) -> dict:
     params = args.params
     
     # 参数解析（处理类型转换和嵌套结构）
-    times = [t[&quot;duration&quot;] for t in params[&#x27;times&#x27;]]  # 提取duration数值
-    video_list = params[&#x27;video_list&#x27;]                # 视频数组
-    texts = params[&#x27;texts&#x27;]                           # 字幕数组
-    audio_urls = params[&#x27;audio_urls&#x27;]                 # 含嵌套结构的音频数据
-    width = int(params[&#x27;width&#x27;])                      # 转int类型
-    height = int(params[&#x27;height&#x27;])                    # 转int类型
+    times = [t["duration"] for t in params['times']]  # 提取duration数值
+    video_list = params['video_list']                # 视频数组
+    texts = params['texts']                           # 字幕数组
+    audio_urls = params['audio_urls']                 # 含嵌套结构的音频数据
+    width = int(params['width'])                      # 转int类型
+    height = int(params['height'])                    # 转int类型
 
     captions = []
     videos = []
@@ -183,30 +181,30 @@ async def main(args) -&gt; dict:
         
         # 构建音频轨道（从嵌套结构提取真实URL）
         audios.append({
-            &quot;audio_url&quot;: audio_urls[idx][&quot;data&quot;][&quot;link&quot;],
-            &quot;duration&quot;: duration,
-            &quot;start&quot;: current_time,
-            &quot;end&quot;: end_time
+            "audio_url": audio_urls[idx]["data"]["link"],
+            "duration": duration,
+            "start": current_time,
+            "end": end_time
         })
         
         # 构建字幕轨道
         captions.append({
-            &quot;text&quot;: texts[idx][&#x27;sentence&#x27;],
-            &quot;start&quot;: current_time,
-            &quot;end&quot;: end_time,
-            &quot;in_animation&quot;:&quot;激光雕刻&quot;,
-            &quot;out_animation&quot;: &quot;渐隐&quot;
+            "text": texts[idx]['sentence'],
+            "start": current_time,
+            "end": end_time,
+            "in_animation": "激光雕刻",
+            "out_animation": "渐隐"
         })
         
         # 构建图片轨道（每个时间段对应一张图）
         videos.append({
-            &quot;video_url&quot;: video_list[idx],
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: current_time,
-            &quot;end&quot;: end_time,
-            &quot;transition&quot;: &quot;叠化&quot;,
-            &quot;transition_duration&quot;: 1000000
+            "video_url": video_list[idx],
+            "width": width,
+            "height": height,
+            "start": current_time,
+            "end": end_time,
+            "transition": "叠化",
+            "transition_duration": 1000000
         })
         
         # 移动时间轴指针
@@ -214,9 +212,9 @@ async def main(args) -&gt; dict:
 
     # 构建输出（保持JSON序列化）
     return {
-        &quot;captions&quot;: json.dumps(captions),
-        &quot;videos&quot;: json.dumps(videos),
-        &quot;audios&quot;: json.dumps(audios)
+        "captions": json.dumps(captions),
+        "videos": json.dumps(videos),
+        "audios": json.dumps(audios)
     }
 ```
 
@@ -242,15 +240,13 @@ async def main(args) -&gt; dict:
 
 [b357bd12-25ea-4da2-ac5d-bb5d1b2ec29a.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RHVLbl6DvoSk4txFjuLcpFifn5f)
 
-###
++ 相关插件
 
-+   相关插件
-
-+   定时器插件 https://www.coze.cn/store/plugin/7479765683052494882?from=plugin_card
++ 定时器插件 https://www.coze.cn/store/plugin/7479765683052494882?from=plugin_card
 
 ![](img/7cece5f2d526195725fa9058196753eb.png)
 
-+   [Coze视频生成插件使用说明](https://zinxkclpk97.feishu.cn/wiki/VZGzwiicKiXsTlkjawnc2ZAfn2d?from=from_copylink)
++ [Coze视频生成插件使用说明](https://zinxkclpk97.feishu.cn/wiki/VZGzwiicKiXsTlkjawnc2ZAfn2d?from=from_copylink)
 
 ![](img/49cefbe025574588a74c47ddcffc4120.png)
 

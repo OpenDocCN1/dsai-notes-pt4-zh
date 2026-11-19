@@ -1,3 +1,4 @@
+
 # 20251030-老黄的GTC 2025聊了啥？AI工厂、美国制造，还有个五千亿的订单
 
 > 来源：[https://aigcreative.feishu.cn/docx/KY0TduultoWbqnxbPMTcRzNGnng](https://aigcreative.feishu.cn/docx/KY0TduultoWbqnxbPMTcRzNGnng)
@@ -42,13 +43,13 @@
 
 ![](img/551d874a2fe86306a6d68b0394eb819b.png)
 
-然后，他提到了一个很关键的数字：目前Blackw**ell和R**ubin早期的可见订单，累计有五千亿美元。
+然后，他提到了一个很关键的数字：目前Blackwell和Rubin早期的可见订单，累计有五千亿美元。
 
 这个数字确实很惊人，说明市场对算力的需求非常旺盛。
 
 这也印证了他说的“良性循环”：AI越好用，买算力的人就越多；买的人越多，英伟达就有更多资源去研发更强的“工厂”，让AI变得更好用。这个循环看样子是已经跑起来了。
 
-**另外，这**次演讲还有一个很突出的主题：美国制造。
+另外，这次演讲还有一个很突出的主题：美国制造。
 
 老黄花了不短的时间，用一个片子展示Blackwell的供应链，强调它是在美国本土（亚利桑那、德克萨斯等地）生产、组装的。他也提到了政府对制造业回流和能源政策的支持。
 
@@ -86,6 +87,6 @@
 
 这个布局确实很大。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

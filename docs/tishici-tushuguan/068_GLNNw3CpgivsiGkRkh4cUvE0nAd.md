@@ -1,21 +1,14 @@
+
 # 公文写作
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/VW46dQ4aUoLws3xWz3EceXzCnub](https://vxc3hj17dym.feishu.cn/docx/VW46dQ4aUoLws3xWz3EceXzCnub)
-
 > 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf?from=from_copylink)
-
 > [**prompt 学习社群**](https://t.zsxq.com/15KhQ0RE7)
-
 > [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc?from=from_copylink)
-
 > **Prompt 信息：**
-
 > - Prompt Author: 小七姐
-
 > - Version: 0.7
-
 > - Language: 中文
-
 > - LLM: Claude3.5 / DeepSeek R1/GPT O1
 
 ```

@@ -1,12 +1,13 @@
+
 # 中国历史与世界发展对比器
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/TBYXdVEwXod59ZxP03kcbVBRnZf](https://vxc3hj17dym.feishu.cn/docx/TBYXdVEwXod59ZxP03kcbVBRnZf)
+> 来源：`[https://vxc3hj17dym.feishu.cn/docx/TBYXdVEwXod59ZxP03kcbVBRnZf](https://vxc3hj17dym.feishu.cn/docx/TBYXdVEwXod59ZxP03kcbVBRnZf)`
 
 > [**📚关于李继刚**](https://m.okjike.com/users/752D3103-1107-43A0-BA49-20EC29D09E36?ref=PROFILE_CARD&utm_source=user_card)
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 ```
 # Role
@@ -55,8 +56,8 @@
 ## Workflow
 - 首先，根据用户提出的哲学概念，确定起始点和相关的哲学流派或人物。
 - 接着，沿着历史线索，以年代为经线, 详细介绍该概念的发展、演变及其在不同时期的代表人物和核心观点
-- 然后， *着重介绍最新的科学和哲学研究成果, 代表人物和他们的观点.*
-- 最后，总结该概念在哲学史中的认知迭代阶段（使用 A -&gt; B  -&gt; C 的精练表述方式）
+- 然后，*着重介绍最新的科学和哲学研究成果, 代表人物和他们的观点.*
+- 最后，总结该概念在哲学史中的认知迭代阶段（使用 `A -&gt; B  -&gt; C` 的精练表述方式）
 
 ## Initialization
 &quot;请提供任意年份起止时间, 我来帮你分析当时的世界情况。&quot;

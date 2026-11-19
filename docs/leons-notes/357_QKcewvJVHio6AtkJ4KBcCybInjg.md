@@ -1,8 +1,9 @@
+
 # 币安创始人赵长鹏（CZ）：我的时间管理法则 | 币安资讯
 
 > 来源：[https://leonzhang.feishu.cn/docx/RaqZd3qpRoBiHQxtlDxc9AbEnjf](https://leonzhang.feishu.cn/docx/RaqZd3qpRoBiHQxtlDxc9AbEnjf)
 
-> 🔗 原文链接： h[ttps://www.binance](https://www.binance.com/zh-CN/blog/from-our-ceo/%E5%B8%81%E5%AE%89%E5%88%9B%E5%A7%8B%E4%BA%BA%E8%B5%B5%E9%95%BF%E9%B9%8Fcz%E6%88%91%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E6%B3%95%E5%88%99-937115089915394194).com/zh-CN/blog/...
+> 🔗 原文链接：h[ttps://www.binance](https://www.binance.com/zh-CN/blog/from-our-ceo/%E5%B8%81%E5%AE%89%E5%88%9B%E5%A7%8B%E4%BA%BA%E8%B5%B5%E9%95%BF%E9%B9%8Fcz%E6%88%91%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E6%B3%95%E5%88%99-937115089915394194).com/zh-CN/blog/...
 
 ![](img/f5d05917f7ca5170134880936107aee7.png)
 
@@ -10,7 +11,7 @@
 
 在我看来，时间管理主要是一门说“不”的艺术，不做什么比做什么更重要。
 
-我[不参加任何](https://www.binance.com/en/blog/from-cz/communication-tips-from-cz-399492046094925824)见面会、推介会或探索会等，这些会议需要消耗大量的时间，且通常效率极低。我会毫不留情地直接拒绝，甚至到了不礼貌的地步，比如我会把 这篇文章 发给他们看。这可能不太礼貌，但可以节省时间。
+我[不参加任何](https://www.binance.com/en/blog/from-cz/communication-tips-from-cz-399492046094925824)见面会、推介会或探索会等，这些会议需要消耗大量的时间，且通常效率极低。我会毫不留情地直接拒绝，甚至到了不礼貌的地步，比如我会把这篇文章发给他们看。这可能不太礼貌，但可以节省时间。
 
 我喜欢简洁，这样就可以腾出时间做其他事情。如果某件事可以总结，那它只需要总结就好了。
 

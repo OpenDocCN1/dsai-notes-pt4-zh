@@ -1,6 +1,7 @@
+
 # Coze视频工作流：1分钟轻松制作儿童绘本故事视频
 
-> 来源：[https://zinxkclpk97.feishu.cn/docx/Qqlwd78D1oZ61sxPJBechTannxh](https://zinxkclpk97.feishu.cn/docx/Qqlwd78D1oZ61sxPJBechTannxh)
+> 来源：[`https://zinxkclpk97.feishu.cn/docx/Qqlwd78D1oZ61sxPJBechTannxh`](https://zinxkclpk97.feishu.cn/docx/Qqlwd78D1oZ61sxPJBechTannxh)
 
 最近在某图文平台上看到一类非常火的儿童绘本故事内容，借助AI生图软件制作绘本故事，最近Coze中的图像生成模型也升级到了即梦3.0同款模型。我们借此做一次新的尝试，使用Coze实现一站式绘本故事视频制作流程。
 
@@ -10,15 +11,16 @@
 
 下面进行详细拆解：
 
+## 方案思路
+
 先说思路，其中核心要点是故事的文案质量、和配图一致性。
 
-+   根据成语生成绘本故事文案，拆分文案段落，生成配音。
++ 根据成语生成绘本故事文案，拆分文案段落，生成配音。
++ 提取文案确定其中涉及的角色形象，为后续固定绘本中人物的风格，避免每个画面中人物形象差距太大。
++ 文案分段，生产配图画面的提示词，再生产配图。
++ 最后将上述元素进行组合输出为剪映草稿和视频。
 
-+   提取文案确定其中涉及的角色形象，为后续固定绘本中人物的风格，避免每个画面中人物形象差距太大。
-
-+   文案分段，生产配图画面的提示词，再生产配图。
-
-+   最后将上述元素进行组合输出为剪映草稿和视频。
+## 生成故事文案
 
 第一个环节，根据用户输入成语，生成故事文。提示词比较简单，出文基本符合要求。
 
@@ -43,6 +45,8 @@
 **限制** ：
 禁止输出违反社会道德的内容和价值观。
 ```
+
+## 生成音频
 
 接下来文案分段生成音频
 
@@ -88,6 +92,8 @@ async def main(args: Args) -&gt; Output:
 返回人物形象描述提示词。不需要做多余的解释
 ```
 
+## 生成段落配图
+
 紧接着是段落配图，这里大模型就需要使用到前面生成的人物形象提示词。以固定画面的人物形象。
 
 ![](img/43bd77c407ae291f0afa44d6f0d09a1c.png)
@@ -109,6 +115,8 @@ async def main(args: Args) -&gt; Output:
 ```
 
 ok，以上就完成了故事文案、配音、配图。
+
+## 生成剪映草稿
 
 接下来就是对这些元素进行重新组合，生成剪映草稿了。
 
@@ -175,6 +183,8 @@ async def main(args) -&gt; dict:
         &quot;imageDurations&quot;:imageDurations
     }
 ```
+
+## 编排剪映草稿
 
 最后一个环节，使用剪映小助手插件，编排剪映草稿。
 
@@ -245,7 +255,7 @@ async def main(args: Args) -&gt; Output:
 
 这套工作流也上架到了Coze应用商店，欢迎体验
 
-https://www.coze.cn/s/i5DQDvAT/
+`https://www.coze.cn/s/i5DQDvAT/`
 
 ![](img/476af5e305166eee6143b536a23303b5.png)
 

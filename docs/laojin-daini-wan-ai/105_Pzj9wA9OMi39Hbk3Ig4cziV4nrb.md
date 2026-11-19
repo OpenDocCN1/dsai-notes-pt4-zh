@@ -1,10 +1,13 @@
+
 # Meta‑Prompt for Prompt Engineers
 
 > 来源：[https://my.feishu.cn/docx/P1C8dn7ptoS96MxiVEEccpGpnZd](https://my.feishu.cn/docx/P1C8dn7ptoS96MxiVEEccpGpnZd)
 
-**使用场景或用例：**适合希望自主设计高质量 prompts 的用户，尤其是产品经理、内容创作者、初级 prompt engineer；通过元提示（meta‑prompt）生成结构清晰、上下文明确、输出格式可控的优化 prompt。
+## 使用场景或用例
 
-**提示词：**
+适合希望自主设计高质量 `prompts` 的用户，尤其是产品经理、内容创作者、初级 `prompt engineer`；通过元提示（`meta‑prompt`）生成结构清晰、上下文明确、输出格式可控的优化 `prompt`。
+
+## 提示词
 
 ```
 Act as an expert prompt engineer. Your task is to take my simple prompt/goal and transform it into a detailed, optimized prompt that will yield a superior result. First, analyze my request below and identify any ambiguities or missing info. Then, construct a new, comprehensive prompt that.

@@ -1,3 +1,4 @@
+
 # 谷歌68页圣经看完更焦虑了，所以我做了个Hook
 
 > 来源：[https://my.feishu.cn/docx/Olc5d56tPoqrtjxyM63c7Q5znrb](https://my.feishu.cn/docx/Olc5d56tPoqrtjxyM63c7Q5znrb)
@@ -45,8 +46,6 @@
 折腾了两天，还真搞出来了。
 
 用的是Claude Code的Hook机制。
-
----
 
 ## 先放一下昨天的元提示词
 
@@ -139,8 +138,6 @@
 
 这就是昨天发的完整版，直接复制就能用。
 
----
-
 ## Hook是干嘛的
 
 简单说：**提示词自动翻译器**。
@@ -150,8 +147,6 @@
 Hook输出：符合谷歌圣经+元提示词标准的专业提示词
 
 然后Claude收到的是优化后的版本。
-
----
 
 ## 先说清楚：这个Hook适合谁
 
@@ -169,11 +164,9 @@ Hook输出：符合谷歌圣经+元提示词标准的专业提示词
 
 Claude收到的是专业级提示词，输出质量自然上去了。
 
----
-
 ## 举个例子
 
-你说：\"做个登录\"
+你说："做个登录"
 
 Hook自动翻译成：
 
@@ -210,8 +203,6 @@ Hook自动翻译成：
 Claude收到这个，直接开干。
 
 不用来回问"用什么框架？""要不要加验证？"
-
----
 
 ## Hook的核心提示词
 
@@ -256,8 +247,6 @@ Claude收到这个，直接开干。
 
 你只管说大概意思，AI帮你补全所有该有的细节。
 
----
-
 ## 怎么配置这个Hook
 
 Hook的工作原理：
@@ -266,7 +255,7 @@ Hook的工作原理：
 
 ### 第一步：创建Hook脚本
 
-在项目的 .claude/hooks/ 目录下创建 user-prompt-submit.sh：
+在项目的 `.claude/hooks/` 目录下创建 `user-prompt-submit.sh`：
 
 ```
 #!/bin/bash
@@ -326,7 +315,7 @@ chmod +x .claude/hooks/user-prompt-submit.sh
 
 ### 第二步：配置Hook
 
-在 .claude/settings.json 中添加Hook配置：
+在 `.claude/settings.json` 中添加Hook配置：
 
 ```
 {
@@ -342,7 +331,7 @@ chmod +x .claude/hooks/user-prompt-submit.sh
 
 ### 第三步：创建优化提示词模板
 
-在 .claude/prompt-optimizer-meta.md 中放入上面的优化提示词。
+在 `.claude/prompt-optimizer-meta.md` 中放入上面的优化提示词。
 
 ### Gemini是可选的
 
@@ -350,7 +339,7 @@ chmod +x .claude/hooks/user-prompt-submit.sh
 
 **想用Gemini**：可以配置Gemini MCP服务器（免费，速度更快）
 
-在 ~/.claude/mcp.json 添加：
+在 `~/.claude/mcp.json` 添加：
 
 ```
 {
@@ -367,8 +356,6 @@ chmod +x .claude/hooks/user-prompt-submit.sh
 ```
 
 Gemini API Key免费申请：https://aistudio.google.com/
-
----
 
 ## 工作流程
 
@@ -391,13 +378,11 @@ Gemini API Key免费申请：https://aistudio.google.com/
 
 你能看到完整的优化过程，然后自动继续！
 
----
-
 ## 实测3个场景
 
 用了几天，测了几个典型场景。
 
-**场景1：快速原型**
+### 场景1：快速原型
 
 输入："做个聊天界面"
 
@@ -430,7 +415,7 @@ Gemini API Key免费申请：https://aistudio.google.com/
 
 Claude收到这个，半小时就搞定了完整界面。
 
-**场景2：Debug**
+### 场景2：Debug
 
 输入："这个报错怎么回事"
 
@@ -464,19 +449,17 @@ Claude收到这个，半小时就搞定了完整界面。
 
 Claude会系统地分析问题，不会只给一个简单答案。
 
-**场景3：重构**
+### 场景3：重构
 
 输入："这段代码太乱了"
 
 优化后会补充完整的重构规范和验收标准。
 
----
-
 ## 踩过的坑
 
 用了几天，有几个问题必须说。
 
-**坑1：有时候过度优化**
+### 坑1：有时候过度优化
 
 简单问题会被优化得太复杂。
 
@@ -486,15 +469,13 @@ Claude会系统地分析问题，不会只给一个简单答案。
 
 解决办法：加个长度判断，短问题不优化。
 
-**坑2：需要适应新流程**
+### 坑2：需要适应新流程
 
 一开始不习惯看到优化过程。
 
 但用几次就会发现，看到优化过程能学到很多。
 
 知道什么样的提示词才算"好"。
-
----
 
 ## 这个Hook的本质
 
@@ -516,8 +497,6 @@ Hook帮你全干了。
 
 把规则交给AI执行，焦虑就没了。
 
----
-
 ## 写在最后
 
 昨天发的元提示词是"方法论"。
@@ -532,14 +511,12 @@ Hook帮你全干了。
 
 这个思路，比任何具体工具都重要。
 
----
+## 引用来源（供验证）
 
-**引用来源（供验证）**
++ Google提示词圣经：Gemini for Google Workspace Prompt Guide https://inthecloud.withgoogle.com/gemini-for-google-workspace-prompt-guide/dl-cd.html
 
-+   Google提示词圣经：Gemini for Google Workspace Prompt Guide https://inthecloud.withgoogle.com/gemini-for-google-workspace-prompt-guide/dl-cd.html
++ Claude Code Hooks文档：官方Hook机制说明 https://docs.anthropic.com/en/docs/claude-code/hooks
 
-+   Claude Code Hooks文档：官方Hook机制说明 https://docs.anthropic.com/en/docs/claude-code/hooks
-
-+   Gemini API：免费申请地址 https://aistudio.google.com/
++ Gemini API：免费申请地址 https://aistudio.google.com/
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

@@ -1,60 +1,56 @@
+
 # 【吴旭】互联网工具资料宝库合集
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/WjvCdVSyToDLQuxeOgvcYnG0nqe](https://xuqiwei1986.feishu.cn/docx/WjvCdVSyToDLQuxeOgvcYnG0nqe)
 
-> **👸号：吴旭笔记**
+> 👸号：吴旭笔记
 
 > 吴旭本人🛰️：wxz16819、wzx516988
 
-# **顶区：**
+## 顶区
 
 > 【必看】关于我：[一位四线城市公交司机的“百万”逆袭之路](https://ai.feishu.cn/wiki/SEbZwUA3oirVDQkracrcfuqcnsv?from=from_copylink)
 
 > （从2016年至今，我如何通过做项目+卖项目实现百万营收的完整经历）
 
-# **陪跑项目：**
+## 陪跑项目
 
-1.  **AI×📕虚拟电商：**[AI×📕SEO虚拟电商 训练营 火爆招生中......](https://ai.feishu.cn/wiki/Lb3IwjaR9i0KSYkj3hSc2eBJnZe?from=from_copylink)
+1. AI×📕虚拟电商：[AI×📕SEO虚拟电商 训练营 火爆招生中......](https://ai.feishu.cn/wiki/Lb3IwjaR9i0KSYkj3hSc2eBJnZe?from=from_copylink)
 
-## **99副业社群介绍：**
+### 99副业社群介绍
 
 > https://mp.weixin.qq.com/s/sFq_ut7vKx5HJKWe4UH41g
 
-# **快速查找内容方法：**
+## 快速查找内容方法
 
->
++ 点右上角三个点“...”；
++ 点击“查找页面内容”或“查找和替换”；
++ 输入关键词即可快速定位内容；
++ 耐心查找，所有内容都在这里了，相信你一定能找到哦~
 
-+   点右上角三个点“...”；
+## 最新更新
 
-+   点击“查找页面内容”或“查找和替换”；
+### 2026年
 
-+   输入关键词即可快速定位内容；
-
-+   耐心查找，所有内容都在这里了，相信你一定能找到哦~
-
-# **最新更新：**
-
-# 2026年
-
-## 2026-3-27更新：
+#### 2026-3-27更新
 
 [【👸号流量主】热评段子赛道](https://a5yo5lvdaa.feishu.cn/wiki/EhL1wTVOdi2RtWkuJEJcWQDKn5g?from=from_copylink)
 
-## 2026-3-25更新：
+#### 2026-3-25更新
 
 [AI治愈风景提示词](https://a5yo5lvdaa.feishu.cn/wiki/S8ZzwFb6MimWifkr9rTcmeYInfc?from=from_copylink)
 
-## 2026-3-11更新：
+#### 2026-3-11更新
 
 [治愈轻动漫AI提示词](https://a5yo5lvdaa.feishu.cn/wiki/M6HewGq13inKyykh9ZacqsuZnQh?from=from_copylink)
 
-## 2026-2-28更新：
+#### 2026-2-28更新
 
 [AI生成儿童模特提示词](https://a5yo5lvdaa.feishu.cn/wiki/XzYxwhg8bicCuPksIcSc2Mb0nCh?from=from_copylink)
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## 2026-2-26更新：
+#### 2026-2-26更新
 
 通过网盘分享的文件：6.0版本破解插件+剪映软件
 
@@ -62,45 +58,45 @@
 
 --来自百度网盘超级会员v8的分享
 
-## 2026-2-25更新：
+#### 2026-2-25更新
 
 [AI生日涂鸦照片完整提示词](https://a5yo5lvdaa.feishu.cn/wiki/Co4XwN6xYix92jkTuaLcEAOFnZb?from=from_copylink)
 
-## 2026-2-24更新：
+#### 2026-2-24更新
 
 [AI写真照 提示词](https://a5yo5lvdaa.feishu.cn/wiki/AFEowy4x9iMyvYkZnTocsHfKncc?from=from_copylink)
 
-## 2026-2-23更新：
+#### 2026-2-23更新
 
 [AI图文带货中老年服装 · 提示词](https://a5yo5lvdaa.feishu.cn/wiki/B8ZuwErT0iMqBHkyUBMcOKjMnZe?from=from_copylink)
 
-## 2026-2-14更新：
+#### 2026-2-14更新
 
 得物搬砖选品和工具
 
 [得物 2 月爆款清单 + 对标账号 + 去水印工具合集（2026 最新）](https://a5yo5lvdaa.feishu.cn/wiki/N01MweGvRiv6zCkpWfXcMoJznSf?from=from_copylink)
 
-## 2026-2-8更新：
+#### 2026-2-8更新
 
 AI一键创作原创歌曲：海绵音乐APP
 
 （各大手机应用商店均有下载）
 
-## 2026-2-4更新：
+#### 2026-2-4更新
 
 [AI宠物赛道用到的提示词](https://a5yo5lvdaa.feishu.cn/wiki/PUHgwRRvcizY2Gkw5AEcXALJnre?from=from_copylink)
 
-## 2026-1-15更新：
+#### 2026-1-15更新
 
 我用夸克网盘分享了「小说推文素材包」，点击链接即可保存。打开「夸克APP」，无需下载在线播放视频，畅享原画5倍速，支持电视投屏。
 
 链接：https://pan.quark.cn/s/a3d1884d0247
 
-## 2026-1-14更新：
+#### 2026-1-14更新
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## 2026-1-12更新：
+#### 2026-1-12更新
 
 通用型朋友圈文案：
 
@@ -112,9 +108,9 @@ AI一键创作原创歌曲：海绵音乐APP
 
 [月入5w，📕0粉开店卖虚拟资料赚钱（知行团队内部培训教程）](https://ai.feishu.cn/wiki/EWPCwwK1QiOPr2kXI2sct5sknUg?from=from_copylink)
 
-# 2025年
+### 2025年
 
-## 2025-12-3更新：
+#### 2025-12-3更新
 
 国外小说合集：
 
@@ -126,45 +122,45 @@ AI一键创作原创歌曲：海绵音乐APP
 
 [月入5w，📕0粉开店卖虚拟资料赚钱（知行团队内部培训教程）](https://ai.feishu.cn/wiki/EWPCwwK1QiOPr2kXI2sct5sknUg?from=from_copylink)
 
-## 2025-12-1更新：
+#### 2025-12-1更新
 
-**美食优惠券渠道：**
+美食优惠券渠道：
 
 🛰️小程序搜索：美团联盟。
 
-## 2**025-7-9更新：**
+#### 2025-7-9更新
 
 [20个不同领域的提示词](https://a5yo5lvdaa.feishu.cn/docx/FOUOdG12vouPRQxPUBXc8Vfvnhe?from=from_copylink)
 
-## 2**025-6-28更新：**
+#### 2025-6-28更新
 
 [📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
-## 2**025-6-15更新：**
+#### 2025-6-15更新
 
 [20个高端PPT模板指令词](https://a5yo5lvdaa.feishu.cn/docx/W1s5duwCDoaY0zxqNc4cSwC5njd?from=from_copylink)
 
-## 2**025-6-2更新：**
+#### 2025-6-2更新
 
 [头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/HZIxsCYwEh9jystYd0kcCMLPnId?from=from_copylink)
 
-## 2**025-6-1更新：**
+#### 2025-6-1更新
 
 [👸号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
 
-## 2**025-5-28更新：**
+#### 2025-5-28更新
 
 [虚拟品类5点避坑经验](https://a5yo5lvdaa.feishu.cn/docx/DGRKdc4o8oVuzQx6vEVcxm7Znzd?from=from_copylink)
 
-## 2**025-5-23更新：**
+#### 2025-5-23更新
 
 [头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/HZIxsCYwEh9jystYd0kcCMLPnId?from=from_copylink)
 
-## 2**025-5-21更新：**
+#### 2025-5-21更新
 
 [👸号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
 
-## 2**025-5-20更新：**
+#### 2025-5-20更新
 
 [10个高转化率AI指令](https://a5yo5lvdaa.feishu.cn/docx/FlKDdAUY7oMP21xn68rcIgvUnSf?from=from_copylink)
 
@@ -188,31 +184,31 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ♥温馨提醒：因文件比较多，一次转存到网盘有限制，可进入子目录分批次转存到自己的网盘。
 
-————————
+---
 
 非网盘会员，需要什么转存什么即可，不要在线打开，不要在线打开
 
-## 2**025-5-19更新：**
+#### 2025-5-19更新
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## 2**025-5-6更新：**
+#### 2025-5-6更新
 
 [👸号情感领域常用20套指令](https://a5yo5lvdaa.feishu.cn/docx/Do7WdtF1KoZqpCxQz72c17RznYe?from=from_copylink)
 
-## 2**025-5-4更新：**
+#### 2025-5-4更新
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## 2**025-4-26更新：**
+#### 2025-4-26更新
 
 [10套情感领域提示词](https://a5yo5lvdaa.feishu.cn/docx/HBnBd0WTxo0psbxKGWtcuJlDnqb?from=from_copylink)
 
-## 2**025-4-25更新：**
+#### 2025-4-25更新
 
 [虚拟品类5点避坑经验](https://a5yo5lvdaa.feishu.cn/docx/DGRKdc4o8oVuzQx6vEVcxm7Znzd?from=from_copylink)
 
-## 2**025-4-23更新：**
+#### 2025-4-23更新
 
 [10个高转化率AI指令](https://a5yo5lvdaa.feishu.cn/docx/FlKDdAUY7oMP21xn68rcIgvUnSf?from=from_copylink)
 
@@ -236,29 +232,29 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ♥温馨提醒：因文件比较多，一次转存到网盘有限制，可进入子目录分批次转存到自己的网盘。
 
-————————
+---
 
 非网盘会员，需要什么转存什么即可，不要在线打开，不要在线打开
 
-## 2**025-4-22更新：**
+#### 2025-4-22更新
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## 2**025-4-21更新：**
+#### 2025-4-21更新
 
 [头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/HZIxsCYwEh9jystYd0kcCMLPnId?from=from_copylink)
 
-## 2**025-4-18更新：**
+#### 2025-4-18更新
 
 📕养号+开店+上架商品教程：
 
 [📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
-## 2**025-4-17更新：**
+#### 2025-4-17更新
 
 [虚拟品类5点避坑经验](https://a5yo5lvdaa.feishu.cn/docx/DGRKdc4o8oVuzQx6vEVcxm7Znzd?from=from_copylink)
 
-## 2**025-4-16更新：**
+#### 2025-4-16更新
 
 [10个高转化率AI指令](https://a5yo5lvdaa.feishu.cn/docx/FlKDdAUY7oMP21xn68rcIgvUnSf?from=from_copylink)
 
@@ -282,19 +278,19 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ♥温馨提醒：因文件比较多，一次转存到网盘有限制，可进入子目录分批次转存到自己的网盘。
 
-————————
+---
 
 非网盘会员，需要什么转存什么即可，不要在线打开，不要在线打开
 
-## 2**025-4-15更新：**
+#### 2025-4-15更新
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## 2**025-4-3更新：**
+#### 2025-4-3更新
 
 [头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/HZIxsCYwEh9jystYd0kcCMLPnId?from=from_copylink)
 
-## 2**025-3-31更新：**
+#### 2025-3-31更新
 
 [10个高转化率AI指令](https://a5yo5lvdaa.feishu.cn/docx/FlKDdAUY7oMP21xn68rcIgvUnSf?from=from_copylink)
 
@@ -318,25 +314,25 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ♥温馨提醒：因文件比较多，一次转存到网盘有限制，可进入子目录分批次转存到自己的网盘。
 
-————————
+---
 
 非网盘会员，需要什么转存什么即可，不要在线打开，不要在线打开
 
-## 2**025-3-27更新：**
+#### 2025-3-27更新
 
 做剪映拉新渠道：
 
 ![](img/4a89cb837959965c181458d5d0dde18e.png)
 
-## 2**025-3-26更新：**
+#### 2025-3-26更新
 
 [虚拟品类5点避坑经验](https://a5yo5lvdaa.feishu.cn/docx/DGRKdc4o8oVuzQx6vEVcxm7Znzd?from=from_copylink)
 
-## 2**025-3-25更新：**
+#### 2025-3-25更新
 
 [头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/HZIxsCYwEh9jystYd0kcCMLPnId?from=from_copylink)
 
-## 2**025-3-20更新：**
+#### 2025-3-20更新
 
 小说推文⬇合集
 
@@ -358,25 +354,31 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ♥温馨提醒：因文件比较多，一次转存到网盘有限制，可进入子目录分批次转存到自己的网盘。
 
-————————
+---
 
 非网盘会员，需要什么转存什么即可，不要在线打开，不要在线打开
 
-## 2**025-3-18更新：**
+#### 2025-3-18更新
 
 [抖音快速涨1000粉丝技巧](https://a5yo5lvdaa.feishu.cn/wiki/RahzwcRceinblRkuKgXcioUKn4f?from=from_copylink)
 
-## **2024-05-09更新：**
+#### 2024-05-09更新
 
-## 2**025-3-3更新：**
+
+
+# 更新日志
+
+## 2025年
+
+### 2025-3-3 更新
 
 [养生文提示词](https://a5yo5lvdaa.feishu.cn/docx/TQGQdNsaMoxoRxxCTT2c9jT5nTc?from=from_copylink)
 
-## 2**025-2-24更新：**
+### 2025-2-24 更新
 
 [近一周头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/PtOMsLFhQh93l1ttgoKcDfbPnCc?from=from_copylink)
 
-## 2**025-2-24更新：**
+### 2025-2-24 更新
 
 [精选20个常用DeepSeek洗稿的提示词！](https://a5yo5lvdaa.feishu.cn/docx/AqkjdZcjNoyUSoxfOetcItwAnae?from=from_copylink)
 
@@ -388,37 +390,37 @@ https://pan.baidu.com/s/1w6pa5pN4by6lIq0daL-bmQ?pwd=ryv3
 
 ③到网盘右上角文件库查看资料即可
 
-## 2**025-2-20更新：**
+### 2025-2-20 更新
 
 [未命名表格](https://a5yo5lvdaa.feishu.cn/sheets/PtOMsLFhQh93l1ttgoKcDfbPnCc?from=from_copylink)
 
-## 2**025-2-10更新：**
+### 2025-2-10 更新
 
 [近一周头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/RxrFs9I0jhGb1CtEKamcLh5gnPf?from=from_copylink)
 
-## 2**025-2-6更新：**
+### 2025-2-6 更新
 
 AI沙雕动画工具：
 
 ![](img/5a6f8d1589fcb3905a2bbf9525006db3.png)
 
-## 2**025-2-1更新：**
+### 2025-2-1 更新
 
 橘猫萌宠做饭【全套提示词】：
 
 [橘猫做饭全套AI提示词](https://a5yo5lvdaa.feishu.cn/docx/SPSvdTqykovz1GxmfoZcbsvxncd?from=from_copylink)
 
-## 2**025-1-20更新：**
+### 2025-1-20 更新
 
 推广即梦AI入口：
 
 ![](img/56d2ab6cb5c911875373224c0aac7780.png)
 
-## 2**025-1-19更新：**
+### 2025-1-19 更新
 
 [提示词：虐心文案+绘画](https://a5yo5lvdaa.feishu.cn/docx/AXzcd6awdonq19xKjIxcMt5ZnLf?from=from_copylink)
 
-## 2**025-1-18更新：**
+### 2025-1-18 更新
 
 数字人工具：
 
@@ -426,7 +428,7 @@ AI沙雕动画工具：
 
 有其他免费好用的数字人工具大家也可以多分享
 
-## 2**025-1-17更新：**
+### 2025-1-17 更新
 
 📕开通接商单权限（要求1000粉丝）
 
@@ -440,11 +442,11 @@ AI沙雕动画工具：
 
 各大应用商店下载即可
 
-## 2**025-1-16更新：**
+### 2025-1-16 更新
 
 [【📕人物传记】AI工具和提示词](https://a5yo5lvdaa.feishu.cn/docx/WDe3dDuzMosU4Vx54WtcJQA3nKd?from=from_copylink)
 
-## 2**025-1-15更新：**
+### 2025-1-15 更新
 
 AI生成分镜头提示词：
 
@@ -456,139 +458,139 @@ AI绘图工具：即梦AI。https://jimeng.jianying.com/ai-tool/
 
 AI视频工具：可灵AI，https://klingai.kuaishou.com/
 
-## 2**025-1-14更新：**
+### 2025-1-14 更新
 
 红包封面推广渠道：
 
 ![](img/e34683b5244de53a1c153ea3f683255b.png)
 
-## 2**025-1-13更新：**
+### 2025-1-13 更新
 
 [【萌娃萌宠】视频制作配套软件+提示词](https://a5yo5lvdaa.feishu.cn/docx/ThUFdqicUoND2yxabfhcaxMlnhV?from=from_copylink)
 
-## 2**025-1-12更新：**
+### 2025-1-12 更新
 
 橘猫萌宠做饭【全套提示词】：
 
 [橘猫做饭全套AI提示词](https://a5yo5lvdaa.feishu.cn/docx/SPSvdTqykovz1GxmfoZcbsvxncd?from=from_copylink)
 
-## 2**025-1-9更新：**
+### 2025-1-9 更新
 
 春联模板：【剪映APP】最下方工具栏，找到【剪同款】，搜索【对联模板可改文字】，选择一款用即可。
 
-## 2**025-1-8更新：**
+### 2025-1-8 更新
 
 AI微短剧完整提示词：
 
 你现在是一个非常著名的短视频导演，需要拍摄一段1分钟左右的视频，故事内容围绕着玄幻类型，介绍一个来自深海的远古文明，需要你做的是需要在开头的5秒钟就能抓住用户的兴趣点，吸引用户观看，有槽点或者有冲突，请你详细的撰写撰写出分镜头脚本和旁白。
 
-## 2**025-1-7更新：**
+### 2025-1-7 更新
 
 AI答题工具：
 
 KIMI：https://kimi.moonshot.cn/
 
-## 2**025-1-6更新：**
+### 2025-1-6 更新
 
 AI美女视频工具：
 
 即梦AI：https://jimeng.jianying.com/
 
-## 2**025-1-3更新：**
+### 2025-1-3 更新
 
 小说推文渠道：🛰️搜索“力推小程序”
 
-## 2**025-1-2更新：**
+### 2025-1-2 更新
 
 最新小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
-## 2**025-1-1更新：**
+### 2025-1-1 更新
 
 AI一键剪辑短剧工具：https://aic.oceanengine.com/login
 
 AI工具登录教程：
 
-# 2024年
+## 2024年
 
-## 2**024-11-27更新：**
+### 2024-11-27 更新
 
 [山海经异兽变身提示词](https://a5yo5lvdaa.feishu.cn/docx/C99ydPD8XoFpuBx36Escn20jnub?from=from_copylink)
 
-## 2**024-11-20更新：**
+### 2024-11-20 更新
 
 [小说推文保姆级实操教程](https://a5yo5lvdaa.feishu.cn/docx/VqFodroCCoJ0lPxneLdcnxhPn8g?from=from_copylink)
 
-## 2**024-11-7更新：**
+### 2024-11-7 更新
 
 最新小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
-## 2**024-11-7更新：**
+### 2024-11-7 更新
 
 AI工具：https://kimi.moonshot.cn/
 
 [本周头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/NDRas2D3KhKMhKtPCA0cDrPznWb?from=from_copylink)
 
-## 2**024-11-7更新：**
+### 2024-11-7 更新
 
 [短剧剪辑详细步骤](https://a5yo5lvdaa.feishu.cn/docx/Lctjdp1l1osjgqxREpXcM3V9ned?from=from_copylink)
 
-## 2**024-11-6更新：**
+### 2024-11-6 更新
 
 [小说推文保姆级实操教程](https://a5yo5lvdaa.feishu.cn/docx/VqFodroCCoJ0lPxneLdcnxhPn8g?from=from_copylink)
 
-## 2**024-11-5更新：**
+### 2024-11-5 更新
 
 AI工具：https://kimi.moonshot.cn/
 
 [本周头条爆文库](https://a5yo5lvdaa.feishu.cn/sheets/NDRas2D3KhKMhKtPCA0cDrPznWb?from=from_copylink)
 
-## 2**024-10-31更新：**
+### 2024-10-31 更新
 
 [小说推文保姆级实操教程](https://a5yo5lvdaa.feishu.cn/docx/VqFodroCCoJ0lPxneLdcnxhPn8g?from=from_copylink)
 
-## 2**024-10-30更新：**
+### 2024-10-30 更新
 
 [短剧剪辑详细步骤](https://a5yo5lvdaa.feishu.cn/docx/Lctjdp1l1osjgqxREpXcM3V9ned?from=from_copylink)
 
-## 2**024-10-29更新：**
+### 2024-10-29 更新
 
 [头条号爆文玩法详解](https://a5yo5lvdaa.feishu.cn/docx/ThiKdY19dobKonxUgJFce541nyZ?from=from_copylink)
 
-## 2**024-10-18更新：**
+### 2024-10-18 更新
 
 AI工具：https://kimi.moonshot.cn/
 
 提示词：帮我生成一对夫妻的对话内容，要求有足够趣，且要有吐槽的点
 
-## 2**024-10-17更新：**
+### 2024-10-17 更新
 
 今日头条爆文库：https://www.kdocs.cn/l/ccdsQTSjvrTy
 
 AI工具：https://kimi.moonshot.cn/
 
-## 2**024-10-9更新：**
+### 2024-10-9 更新
 
 最新小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
-## 2**024-10-1更新：**
+### 2024-10-1 更新
 
 小绿书背景图文模板：[📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg)
 
-## 2**024-9-29更新：**
+### 2024-9-29 更新
 
 低价会员渠道：http://11560.96km.cc/
 
 （电脑直接复制到浏览器打开，手机也要复制到浏览器打开！）
 
-## 2**024-9-20更新：**
+### 2024-9-20 更新
 
 AI一键剪辑短剧工具：https://aic.oceanengine.com/login
 
-## 2**024-9-19更新：**
+### 2024-9-19 更新
 
 AI生成视频工具：🛰️搜索【魔法画师👸号】，从👸号，点击【魔法画师入口】
 
-## 2**024-9-18更新：**
+### 2024-9-18 更新
 
 AI工具：https://kimi.moonshot.cn/
 
@@ -596,13 +598,13 @@ AI工具：https://kimi.moonshot.cn/
 
 [未命名表格](https://a5yo5lvdaa.feishu.cn/sheets/PnUIsLtUwheWWdtDO5hcawg3nwg?from=from_copylink)
 
-## 2**024-9-13更新：**
+### 2024-9-13 更新
 
 AI克隆声音工具网址：
 
 https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
-## 2**024-9-11更新：**
+### 2024-9-11 更新
 
 通过网盘分享的文件：手把手教你剪辑出一个完整作品.mp4
 
@@ -618,17 +620,17 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 --来自百度网盘超级会员v6的分享
 
-## 2**024-9-7更新：**
+### 2024-9-7 更新
 
 一键生成短剧解说文案的AI工具：【美册视频制作】APP
 
 （直接各大应用商店搜索“美册”下载即可！！！）
 
-## 2**024-9-2更新：**
+### 2024-9-2 更新
 
 【电影资源网站】：https://www.btnull.org/
 
-## 2**024-9-1更新：**
+### 2024-9-1 更新
 
 网游加速器推广官方申请表单网址：
 
@@ -642,29 +644,29 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 --来自百度网盘超级会员v6的分享
 
-## 2**024-8-31更新：**
+### 2024-8-31 更新
 
 [AI选品教程](https://a5yo5lvdaa.feishu.cn/docx/XGdJdWG3SoWsmQxvLuYch1EFn1g?from=from_copylink)
 
-## 2**024-8-30更新：**
+### 2024-8-30 更新
 
 小学教辅资料群：百度网盘群号：935849085
 
 （请自行添加群获取教辅资料！！！！）
 
-## 2**024-8-29更新：**
+### 2024-8-29 更新
 
 百家号视频搬运去重教程：
 
 [百家号视频搬运去重教程](https://a5yo5lvdaa.feishu.cn/docx/RngCdyoZAo2qkdx2ALWcUJTknBT?from=from_copylink)
 
-## 2**024-8-28更新：**
+### 2024-8-28 更新
 
 《黑神话》离线版+修整器：
 
 链接：https://pan.quark.cn/s/71723096a34c
 
-## 2**024-8-26更新：**
+### 2024-8-26 更新
 
 直播《黑神话·悟空》必备直播软件+素材：
 
@@ -676,7 +678,7 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 --来自百度网盘超级会员v6的分享
 
-## 2**024-8-16更新：**
+### 2024-8-16 更新
 
 50粉丝挂【番茄畅听】小风车：
 
@@ -690,9 +692,9 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 --来自百度网盘超级会员v6的分享
 
-## 2**024-8-15更新：**
+### 2024-8-15 更新
 
-**IDM浏览器下载视频插件：**
+IDM浏览器下载视频插件：
 
 通过网盘分享的文件：IDM绿色版插件
 
@@ -708,11 +710,11 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 --来自百度网盘超级会员v6的分享
 
-## 2**024-8-11更新：**
+### 2024-8-11 更新
 
 [【伪原创宝典】100%过原创的洗稿8大技巧](https://a5yo5lvdaa.feishu.cn/docx/Aoiqda9F2otgdbxeYK9cdxI4nbg?from=from_copylink)
 
-## 2**024-7-25更新：**
+### 2024-7-25 更新
 
 旧版剪映：
 
@@ -722,47 +724,47 @@ https://kevinwang676-gpt-sovits-trilingual.hf.space/
 
 --来自百度网盘超级会员v6的分享
 
-## 2**024-7-10更新：**
+### 2024-7-10 更新
 
 📕养号+开店+上架商品教程：
 
 [📕开店上架商品教程](https://a5yo5lvdaa.feishu.cn/docx/CZhcdEswCorfcDxgy3WcfaVmnWe?from=from_copylink)
 
-## 2**024-7-8更新：**
+### 2024-7-8 更新
 
 老照片：各大app商店，搜索🔍“快影”！
 
 ![](img/a9921dab77eabb5b3770393b136518de.png)
 
-## 2**024-7-5更新：**
+### 2024-7-5 更新
 
-**50套📕模板**
+50套📕模板
 
 [📕50套图文模板](https://a5yo5lvdaa.feishu.cn/sheets/GI0ss4bBBh0CYqtTSwkcu4f8nRg?from=from_copylink)
 
-## 2**024-7-2更新：**
+### 2024-7-2 更新
 
-**国内免费AI工具：智谱清言**
+国内免费AI工具：智谱清言
 
-**官网：**https://chatglm.cn/
+官网：https://chatglm.cn/
 
-## **2024-5-31更新：**
+### 2024-5-31 更新
 
-**各大应用商店，搜索“度加”。**
+各大应用商店，搜索“度加”。
 
 ![](img/f73ce7245917e07ae77f7ecf684d8f31.png)
 
-## **2024-5-20更新：**
+### 2024-5-20 更新
 
 AI一键剪辑短剧工具：https://aic.oceanengine.com/login
 
-## **2024-05-17更新：**
+### 2024-05-17 更新
 
 一条视频卖货37万件，利润74万+，不用实拍和剪辑，用好这个工具就够了
 
 各大应用商店搜索：起号带货宝，下载安装即可（只单纯做推荐）
 
-## **2024-05-10更新：**
+### 2024-05-10 更新
 
 一条视频带货60万，短视频赚钱最快的新玩法（独家实操干货）
 
@@ -774,7 +776,7 @@ AI一键剪辑短剧工具：https://aic.oceanengine.com/login
 
 [49fa0bf302bf355d2091461de14842b9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Muhbb3U6qoGpNRxQoqucUaYbnyg)
 
-## **2024-05-09更新：**
+### 2024-05-09 更新
 
 用AI在今日头条写文章，一天挣了400多块，详细玩法复盘！（5月爆文+AI工具）：
 
@@ -788,7 +790,7 @@ AI一键剪辑短剧工具：https://aic.oceanengine.com/login
 
 AI写作工具：https://ai.kezhan365.com/
 
-## **2024-05-08更新：**
+### 2024-05-08 更新
 
 AI古诗文短视频玩法：AI配音工具（包含童声，🛰️扫码使用）：
 
@@ -796,11 +798,13 @@ AI古诗文短视频玩法：AI配音工具（包含童声，🛰️扫码使用
 
 AI绘画工具：https://app.recraft.ai/projects
 
-## **2024-05-02更新：**
+### 2024-05-02 更新
 
 24小时躺赚4800+！快手无人播剧玩法详解【附强开快手磁力聚星方法】：
 
-链接：https://pan.baidu.com/s/1N0oxEMqS9KZcGtZ1YVDsTg?pwd=fjmd
+
+
+链接：`https://pan.baidu.com/s/1N0oxEMqS9KZcGtZ1YVDsTg?pwd=fjmd`
 
 提取码：fjmd
 
@@ -808,15 +812,15 @@ AI绘画工具：https://app.recraft.ai/projects
 
 电视剧资源：
 
-链接：https://pan.baidu.com/s/1hPkQxRbZkVY3thJ1NgcEAw?pwd=hux2
+链接：`https://pan.baidu.com/s/1hPkQxRbZkVY3thJ1NgcEAw?pwd=hux2`
 
 提取码：hux2
 
 --来自百度网盘超级会员V6的分享
 
-# **之前更新：**
+# 之前更新：
 
-## **450个搞钱项目合集：**
+## 450个搞钱项目合集：
 
 ![](img/4553d540a2030638ce84309c027e4461.png)
 
@@ -824,67 +828,67 @@ AI绘画工具：https://app.recraft.ai/projects
 
 ## 1、【企微文档】📕换绑接🐴平台
 
-https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4UzTzIxBQRUGd2k2v10?scode=AHgAEAfnACkZuwg1mB
+`https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4UzTzIxBQRUGd2k2v10?scode=AHgAEAfnACkZuwg1mB`
 
 --来自百度网盘超级会员V6的分享
 
 ## 2、闲鱼官方管理工具——鱼店长
 
-https://www.agiso.com/product/yudz
+`https://www.agiso.com/product/yudz`
 
 ## 3、闲鱼店群工具——鱼管家
 
-https://www.goofish.pro/login
+`https://www.goofish.pro/login`
 
 ## 4、【企微文档】大羊毛入口及操作流程
 
-https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4369n1repTqegzcB6SZ?scode=AHgAEAfnACkdtHPSdX
+`https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4369n1repTqegzcB6SZ?scode=AHgAEAfnACkdtHPSdX`
 
 ## 5、【企微文档】闲鱼虚拟产品（必备文档）
 
-https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4lTVXjwxVRWCFlvJyKL?scode=AHgAEAfnACkjnQ6Spd
+`https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4lTVXjwxVRWCFlvJyKL?scode=AHgAEAfnACkjnQ6Spd`
 
 ## 6、【企微文档】抖音卖电影票授权渠道
 
-https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4GFIfdQtTROS9pzSoVo?scode=AHgAEAfnACkHWmAHoY
+`https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4GFIfdQtTROS9pzSoVo?scode=AHgAEAfnACkHWmAHoY`
 
-## 7、  小说推文渠道：🛰️搜索“力推小程序”
+## 7、小说推文渠道：🛰️搜索“力推小程序”
 
-## 8、  无限邮箱网址合集：
+## 8、无限邮箱网址合集：
 
-Heygen地址：https://app.heygen.com/home
+Heygen地址：`https://app.heygen.com/home`
 
 临时邮箱：
 
-5日邮箱：https://yopmail.com/zh/
+5日邮箱：`https://yopmail.com/zh/`
 
-24小时邮箱：http://24mail.chacuo.net/
+24小时邮箱：`http://24mail.chacuo.net/`
 
-24小时邮箱：https://tempmail.altmails.com/
+24小时邮箱：`https://tempmail.altmails.com/`
 
-24小时邮箱：http://24mail.chacuo.net/
+24小时邮箱：`http://24mail.chacuo.net/`
 
-10 分钟邮箱：https://www.lbzyw.xyz
+10 分钟邮箱：`https://www.lbzyw.xyz`
 
-60分钟邮箱：https://www.guerrillamail.com/zh/
+60分钟邮箱：`https://www.guerrillamail.com/zh/`
 
-10 分钟邮箱：https://linshiyouxiang.net/
+10 分钟邮箱：`https://linshiyouxiang.net/`
 
-10 分钟邮箱：https://temp-mail.org/zh/
+10 分钟邮箱：`https://temp-mail.org/zh/`
 
-10 分钟邮箱：https://10minutemail.net/m/?lang=zh-cn
+10 分钟邮箱：`https://10minutemail.net/m/?lang=zh-cn`
 
-10分钟邮箱：https://10minemail.com/zh/
+10分钟邮箱：`https://10minemail.com/zh/`
 
-一次性邮箱：https://www.mohmal.com/zh
+一次性邮箱：`https://www.mohmal.com/zh`
 
 ## 9、视频去重技术：
 
 【企微文档】视频去重技术，从一级到五级
 
-https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4iVDmuGJ8Qo2f5Jua8n?scode=AHgAEAfnACkDrmeQE2
+`https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4iVDmuGJ8Qo2f5Jua8n?scode=AHgAEAfnACkDrmeQE2`
 
-## 10、  小说推文平台：
+## 10、小说推文平台：
 
 🛰️搜索“右豹”小程序，注册登录，上面有详细的授权教程
 
@@ -893,5 +897,3 @@ https://doc.weixin.qq.com/doc/w3_AeEAfQZVAL4iVDmuGJ8Qo2f5Jua8n?scode=AHgAEAfnACk
 ## 11、爱奇艺低价会员渠道
 
 ![](img/055c6ca506d7bdbc5d71a2e6bc764bb7.png)
-
-#

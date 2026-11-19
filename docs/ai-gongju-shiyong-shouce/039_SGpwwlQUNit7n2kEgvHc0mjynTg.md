@@ -1,10 +1,11 @@
+
 # 打开手机就能玩的SD绘画工具（本地算力）
 
 > 来源：[https://my.feishu.cn/docx/CJ6cdjZR1opgBvxgAq6cfiqEnCb](https://my.feishu.cn/docx/CJ6cdjZR1opgBvxgAq6cfiqEnCb)
 
 今天早上一个帅哥给我推荐了手机上能跑的SD，我赶紧冲了，写一篇评测给大家；
 
-软件全名是     **Draw Tings：****AI**** Generation**
+软件全名是 **Draw Tings：AI Generation**
 
 ![](img/d5ef9928b86bb1a933eeaf45a708f233.png)
 
@@ -22,7 +23,7 @@
 
 ![](img/25726b1a5d2d60e169b3bcfb5064d4c2.png)
 
-### 模型和lora
+## 模型和lora
 
 首先我看了下模型和lora清单，非常全！而且可以多lora混合！
 
@@ -32,7 +33,7 @@
 
 ![](img/342a93b997b64abf701966b48336b28e.png)
 
-### 参数与插件
+## 参数与插件
 
 参数和插件也都很全！！！高清修复、图生图、局部重绘啥的都支持
 
@@ -42,7 +43,7 @@
 
 ![](img/74d948a4d6db60f46b388e2e2bae0bd1.png)
 
-### 跑图实测
+## 跑图实测
 
 和stable diffusion一样，用的是本地算力，然后无法识别中文，跑一张全默认参数的图，大概是1分钟多点（M1芯片的速度，苹果手机五分钟，高清我就不敢想了，手机还是不建议跑图😰
 
@@ -54,7 +55,7 @@
 
 ![](img/5f044cf895aafa323d5e493fc4d73965.png)
 
-### 评测总结
+## 评测总结
 
 适合人群：没有PC的用户
 

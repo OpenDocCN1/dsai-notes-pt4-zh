@@ -1,17 +1,16 @@
+
 # 智能体入门
 
-> 来源：[https://deepwisdom.feishu.cn/docx/JqWUdvYiCohpvoxoVWwcB4YYn8c](https://deepwisdom.feishu.cn/docx/JqWUdvYiCohpvoxoVWwcB4YYn8c)
+> 来源：[`https://deepwisdom.feishu.cn/docx/JqWUdvYiCohpvoxoVWwcB4YYn8c`](https://deepwisdom.feishu.cn/docx/JqWUdvYiCohpvoxoVWwcB4YYn8c)
 
 完成本节，你将能够：
 
-1.  使用现成的智能体
-
-1.  开发你的第一个能够执行一个或多个动作的智能体
+1. 使用现成的智能体
+1. 开发你的第一个能够执行一个或多个动作的智能体
 
 ## 使用现成的智能体
 
 ```
-# 可导入任何角色，初始化它，用一个开始的消息运行它，完成！
 import asyncio
 
 from metagpt.context import Context
@@ -19,14 +18,14 @@ from metagpt.roles.product_manager import ProductManager
 from metagpt.logs import logger
 
 async def main():
-    msg = &quot;Write a PRD for a snake game&quot;
+    msg = "Write a PRD for a snake game"
     context = Context()  # 显式创建会话Context对象，Role对象会隐式的自动将它共享给自己的Action对象
     role = ProductManager(context=context)
     while msg:
         msg = await role.run(msg)
         logger.info(str(msg))
 
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     asyncio.run(main())
 ```
 
@@ -40,31 +39,33 @@ if __name__ == &#x27;__main__&#x27;:
 
 ## 具有单一动作的智能体
 
-假设我们想用自然语言编写代码，并想让一个智能体为我们做这件事。让我们称这个智能体为 SimpleCoder，我们需要两个步骤来让它工作：
+假设我们想用自然语言编写代码，并想让一个智能体为我们做这件事。让我们称这个智能体为 `SimpleCoder`，我们需要两个步骤来让它工作：
 
-1.  定义一个编写代码的动作
-
-1.  为智能体配备这个动作
+1. 定义一个编写代码的动作
+1. 为智能体配备这个动作
 
 ### 定义动作
 
-在 MetaGPT 中，类 Action 是动作的逻辑抽象。用户可以通过简单地调用 self._aask 函数令 LLM 赋予这个动作能力，即这个函数将在底层调用 LLM api。
+在 MetaGPT 中，类 `Action` 是动作的逻辑抽象。用户可以通过简单地调用 `self._aask` 函数令 LLM 赋予这个动作能力，即这个函数将在底层调用 LLM api。
 
-在我们的场景中，我们定义了一个 SimpleWriteCode 子类 Action。虽然它主要是一个围绕提示和 LLM 调用的包装器，但我们认为这个 Action 抽象更直观。在下游和高级任务中，使用它作为一个整体感觉更自然，而不是分别制作提示和调用 LLM，尤其是在智能体的框架内。
+在我们的场景中，我们定义了一个 `SimpleWriteCode` 子类 `Action`。虽然它主要是一个围绕提示和 LLM 调用的包装器，但我们认为这个 `Action` 抽象更直观。在下游和高级任务中，使用它作为一个整体感觉更自然，而不是分别制作提示和调用 LLM，尤其是在智能体的框架内。
 
 ```
 from metagpt.actions import Action
 
 class SimpleWriteCode(Action):
-    PROMPT_TEMPLATE: str = &quot;&quot;&quot;
+    PROMPT_TEMPLATE: str = """
     Write a python function that can {instruction} and provide two runnnable test cases.
     Return ```python your_code_here ``` with NO other texts,
-    your code:
-    &quot;&quot;&quot;
 
-    name: str = &quot;SimpleWriteCode&quot;
+    your code:
+
+    """
+
+    name: str = "SimpleWriteCode"
 
     async def run(self, instruction: str):
+
         prompt = self.PROMPT_TEMPLATE.format(instruction=instruction)
 
         rsp = await self._aask(prompt)
@@ -74,8 +75,10 @@ class SimpleWriteCode(Action):
         return code_text
 
     @staticmethod
+
     def parse_code(rsp):
-        pattern = r&quot;```python(.*)```&quot;
+
+        pattern = r"```python(.*)```"
         match = re.search(pattern, rsp, re.DOTALL)
         code_text = match.group(1) if match else rsp
         return code_text
@@ -83,29 +86,27 @@ class SimpleWriteCode(Action):
 
 ### 定义角色
 
-在 MetaGPT 中，Role 类是智能体的逻辑抽象。一个 Role 能执行特定的 Action，拥有记忆、思考并采用各种策略行动。基本上，它充当一个将所有这些组件联系在一起的凝聚实体。目前，让我们只关注一个执行动作的智能体，并看看如何定义一个最简单的 Role。
+在 MetaGPT 中，`Role` 类是智能体的逻辑抽象。一个 `Role` 能执行特定的 `Action`，拥有记忆、思考并采用各种策略行动。基本上，它充当一个将所有这些组件联系在一起的凝聚实体。目前，让我们只关注一个执行动作的智能体，并看看如何定义一个最简单的 `Role`。
 
-在这个示例中，我们创建了一个 SimpleCoder，它能够根据人类的自然语言描述编写代码。步骤如下：
+在这个示例中，我们创建了一个 `SimpleCoder`，它能够根据人类的自然语言描述编写代码。步骤如下：
 
-1.  我们为其指定一个名称和配置文件。
-
-1.  我们使用 self._init_action 函数为其配备期望的动作 SimpleWriteCode。
-
-1.  我们覆盖 _act 函数，其中包含智能体具体行动逻辑。我们写入，我们的智能体将从最新的记忆中获取人类指令，运行配备的动作，MetaGPT 将其作为待办事项 （self.rc.todo） 在幕后处理，最后返回一个完整的消息。
+1. 我们为其指定一个名称和配置文件。
+1. 我们使用 `self._init_action` 函数为其配备期望的动作 `SimpleWriteCode`。
+1. 我们覆盖 `_act` 函数，其中包含智能体具体行动逻辑。我们写入，我们的智能体将从最新的记忆中获取人类指令，运行配备的动作，MetaGPT 将其作为待办事项 （`self.rc.todo`） 在幕后处理，最后返回一个完整的消息。
 
 ```
 from metagpt.roles import Role
 
 class SimpleCoder(Role):
-    name: str = &quot;Alice&quot;
-    profile: str = &quot;SimpleCoder&quot;
+    name: str = "Alice"
+    profile: str = "SimpleCoder"
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.set_actions([SimpleWriteCode])
 
-    async def _act(self) -&gt; Message:
-        logger.info(f&quot;{self._setting}: to do {self.rc.todo}({self.rc.todo.name})&quot;)
+    async def _act(self) -> Message:
+        logger.info(f"{self._setting}: to do {self.rc.todo}({self.rc.todo.name})")
         todo = self.rc.todo  # todo will be SimpleWriteCode()
 
         msg = self.get_memories(k=1)[0]  # find the most recent messages
@@ -125,7 +126,7 @@ import asyncio
 from metagpt.context import Context
 
 async def main():
-    msg = &quot;write a function that calculates the sum of a list&quot;
+    msg = "write a function that calculates the sum of a list"
     context = Context()
     role = SimpleCoder(context=context)
     logger.info(msg)
@@ -137,24 +138,24 @@ asyncio.run(main)
 
 ## 具有多个动作的智能体
 
-我们注意到一个智能体能够执行一个动作，但如果只有这些，实际上我们并不需要一个智能体。通过直接运行动作本身，我们可以得到相同的结果。智能体的力量，或者说Role抽象的惊人之处，在于动作的组合（以及其他组件，比如记忆，但我们将把它们留到后面的部分）。通过连接动作，我们可以构建一个工作流程，使智能体能够完成更复杂的任务。
+我们注意到一个智能体能够执行一个动作，但如果只有这些，实际上我们并不需要一个智能体。通过直接运行动作本身，我们可以得到相同的结果。智能体的力量，或者说 `Role` 抽象的惊人之处，在于动作的组合（以及其他组件，比如记忆，但我们将把它们留到后面的部分）。通过连接动作，我们可以构建一个工作流程，使智能体能够完成更复杂的任务。
 
-假设现在我们不仅希望用自然语言编写代码，而且还希望生成的代码立即执行。一个拥有多个动作的智能体可以满足我们的需求。让我们称之为RunnableCoder，一个既写代码又立即运行的Role。我们需要两个Action：SimpleWriteCode 和 SimpleRunCode
+假设现在我们不仅希望用自然语言编写代码，而且还希望生成的代码立即执行。一个拥有多个动作的智能体可以满足我们的需求。让我们称之为 `RunnableCoder`，一个既写代码又立即运行的 `Role`。我们需要两个 `Action`：`SimpleWriteCode` 和 `SimpleRunCode`
 
 ### 定义动作
 
-首先，定义 SimpleWriteCode。我们将重用上面创建的那个。
+首先，定义 `SimpleWriteCode`。我们将重用上面创建的那个。
 
-接下来，定义 SimpleRunCode。如前所述，从概念上讲，一个动作可以利用 LLM，也可以在没有 LLM 的情况下运行。在SimpleRunCode的情况下，LLM 不涉及其中。我们只需启动一个子进程来运行代码并获取结果。我们希望展示的是，对于动作逻辑的结构，我们没有设定任何限制，用户可以根据需要完全灵活地设计逻辑。
+接下来，定义 `SimpleRunCode`。如前所述，从概念上讲，一个动作可以利用 LLM，也可以在没有 LLM 的情况下运行。在 `SimpleRunCode` 的情况下，LLM 不涉及其中。我们只需启动一个子进程来运行代码并获取结果。我们希望展示的是，对于动作逻辑的结构，我们没有设定任何限制，用户可以根据需要完全灵活地设计逻辑。
 
 ```
 class SimpleRunCode(Action):
-    name: str = &quot;SimpleRunCode&quot;
+    name: str = "SimpleRunCode"
 
     async def run(self, code_text: str):
-        result = subprocess.run([&quot;python3&quot;, &quot;-c&quot;, code_text], capture_output=True, text=True)
+        result = subprocess.run(["python3", "-c", code_text], capture_output=True, text=True)
         code_result = result.stdout
-        logger.info(f&quot;{code_result=}&quot;)
+        logger.info(f"{code_result=}")
         return code_result
 ```
 
@@ -162,24 +163,22 @@ class SimpleRunCode(Action):
 
 与定义单一动作的智能体没有太大不同！让我们来映射一下：
 
-1.  用 self.set_actions 初始化所有 Action
-
-1.  指定每次 Role 会选择哪个 Action。我们将 react_mode 设置为 "by_order"，这意味着 Role 将[按照 se](https://docs.deepwisdom.ai/main/zh/guide/tutorials/agent_think_act.html)lf.set_actions 中指定的顺序执行其能够执行的 Action（有关更多讨论，请参见 思考和行动）。在这种情况下，当 Role 执行 _act 时，self.rc.todo 将首先是 SimpleWriteCode，然后是 SimpleRunCode。
-
-1.  覆盖 _act 函数。Role 从上一轮的人类输入或动作输出中检索消息，用适当的 Message 内容提供当前的 Action （self.rc.todo），最后返回由当前 Action 输出组成的 Message。
+1. 用 `self.set_actions` 初始化所有 `Action`
+1. 指定每次 `Role` 会选择哪个 `Action`。我们将 `react_mode` 设置为 `by_order`，这意味着 `Role` 将[按照 `self.set_actions` 中指定的顺序执行其能够执行的 `Action`](https://docs.deepwisdom.ai/main/zh/guide/tutorials/agent_think_act.html)（有关更多讨论，请参见 思考和行动）。在这种情况下，当 `Role` 执行 `_act` 时，`self.rc.todo` 将首先是 `SimpleWriteCode`，然后是 `SimpleRunCode`。
+1. 覆盖 `_act` 函数。`Role` 从上一轮的人类输入或动作输出中检索消息，用适当的 `Message` 内容提供当前的 `Action` （`self.rc.todo`），最后返回由当前 `Action` 输出组成的 `Message`。
 
 ```
 class RunnableCoder(Role):
-    name: str = &quot;Alice&quot;
-    profile: str = &quot;RunnableCoder&quot;
+    name: str = "Alice"
+    profile: str = "RunnableCoder"
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.set_actions([SimpleWriteCode, SimpleRunCode])
-        self._set_react_mode(react_mode=&quot;by_order&quot;)
+        self._set_react_mode(react_mode="by_order")
 
-    async def _act(self) -&gt; Message:
-        logger.info(f&quot;{self._setting}: to do {self.rc.todo}({self.rc.todo.name})&quot;)
+    async def _act(self) -> Message:
+        logger.info(f"{self._setting}: to do {self.rc.todo}({self.rc.todo.name})")
         # By choosing the Action by order under the hood
         # todo will be first SimpleWriteCode() then SimpleRunCode()
         todo = self.rc.todo
@@ -202,7 +201,7 @@ import asyncio
 from metagpt.context import Context
 
 async def main():
-    msg = &quot;write a function that calculates the sum of a list&quot;
+    msg = "write a function that calculates the sum of a list"
     context = Context()
     role = RunnableCoder(context=context)
     logger.info(msg)
@@ -214,10 +213,10 @@ asyncio.run(main)
 
 ## 本节完整脚本
 
-[https://github.com/geekan/MetaGPT/blob](https://github.com/geekan/MetaGPT/blob/main/examples/build_customized_agent.py)/main/examples/build_customized_agent.py
+[`https://github.com/geekan/MetaGPT/blob/main/examples/build_customized_agent.py`](https://github.com/geekan/MetaGPT/blob/main/examples/build_customized_agent.py)
 
 通过以下命令运行：
 
 ```
-python3 examples/build_customized_agent.py --msg &quot;write a function that calculates the sum of a list&quot;
+python3 examples/build_customized_agent.py --msg "write a function that calculates the sum of a list"
 ```

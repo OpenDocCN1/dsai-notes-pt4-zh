@@ -1,3 +1,4 @@
+
 # AI 时代的学习观及方法论
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KbwAdFaWxoC62exgKsscKv85n4p](https://xuqiwei1986.feishu.cn/docx/KbwAdFaWxoC62exgKsscKv85n4p)
@@ -6,17 +7,13 @@
 
 AI 时代，信息搜索-阅读-结构化-整合-抽取知识-沉淀，你准备怎么做？
 
----
+## 一、自学过程中的每一步
 
-# 一、自学过程中的每一步
+我们以 `Prompt` 自主学习过程中，会经历的每一个阶段进行整理：
 
-我们以 **Prompt 自主学习**过程中，会经历的每一个阶段进行整理：
+### 🔍 信息获取
 
-## 🔍 信息获取
-
----
-
-### 我应该从哪里获取高质量的信息/知识？
+#### 我应该从哪里获取高质量的信息/知识？
 
 在大家自主学习的过程中，很多时候并没有人帮自己整理好结构化的信息，此时我们需要自己通过自己熟悉的渠道，所以我们平时需要做好优质信息渠道的收录，信息源的分类。以备不时之需。
 
@@ -36,9 +33,9 @@ GitHub
 
 [⭐LangGPT 结构化提示词](https://aq92z6vors3.feishu.cn/wiki/RXdbwRyASiShtDky381ciwFEnpe)
 
-https://github.com/yzfly/awesome-chatgpt-zh
+`https://github.com/yzfly/awesome-chatgpt-zh`
 
-https://github.com/yzfly/LangGPT
+`https://github.com/yzfly/LangGPT`
 
 [openai官方《提示词工程课》超详细中文笔记](https://ec26ubh65w.feishu.cn/docx/PuULdQP3wojyZYxn157cnsDXnqe)
 
@@ -52,7 +49,7 @@ AI 产品沉思录
 
 Web3 天空之城
 
-### 作为初学者，我都不知道如何去搜，用什么关键字搜？
+#### 作为初学者，我都不知道如何去搜，用什么关键字搜？
 
 作为初学者，很多概念、名词都没有听说过，此时不知道如何下手。而且受制于当前的搜索引擎强依赖于关键字的匹配，所以如果关键字不匹配，搜索结果也很难让自己满意。
 
@@ -70,7 +67,7 @@ Web3 天空之城
 
 ![](img/ceb2a81fb5e983583401bfb246574de5.png)
 
-### 我能把gpt当成搜索引擎，完全替代现在的搜索工具吗？
+#### 我能把gpt当成搜索引擎，完全替代现在的搜索工具吗？
 
 如果你有 gpt4，如果你有联网插件，你当然可以直接使用 gpt 完成搜索引擎可以做的工作。
 
@@ -78,13 +75,11 @@ Web3 天空之城
 
 借助gpt理解思维模型
 
-查理芒格的 100 个思维模型：https://www.yuque.com/yiliqi-t2n6d/xzm737/gnyfgrtoeprqobl4?singleDoc#
+查理芒格的 100 个思维模型：`https://www.yuque.com/yiliqi-t2n6d/xzm737/gnyfgrtoeprqobl4?singleDoc#`
 
-## 📖 阅读信息
+### 📖 阅读信息
 
----
-
-### 内容全是英文，阅读有障碍怎么办？
+#### 内容全是英文，阅读有障碍怎么办？
 
 这里推荐一个英文阅读的神器。
 
@@ -92,7 +87,7 @@ Web3 天空之城
 
 utools
 
-### 文章/视频太长，内容太多，我没时间读，也读不下去怎么办？
+#### 文章/视频太长，内容太多，我没时间读，也读不下去怎么办？
 
 通义听悟
 
@@ -100,7 +95,7 @@ biliGPT
 
 提炼文本-交给 GPT 进行摘要，找到自己感兴趣的部分精度/回看
 
-### 虽然知道文章内容很不错，但是没有动力读下去怎么办？
+#### 虽然知道文章内容很不错，但是没有动力读下去怎么办？
 
 关于努力
 
@@ -108,11 +103,9 @@ biliGPT
 
 你已经进了 AI 学习的门，不要死在半路
 
-## 💡 理解信息
+### 💡 理解信息
 
----
-
-### 文章专业名词过多，知识过干，理解起来很费劲，怎么办？
+#### 文章专业名词过多，知识过干，理解起来很费劲，怎么办？
 
 使用gpt可以协助做文章的解释：用更容易理解的文字，配上生活化的示例，或者一些对比来辅助理解。
 
@@ -120,7 +113,7 @@ biliGPT
 
 ![](img/c4ad7c496aa48312cb3ae112d5fb3be6.png)
 
-### 尝试将新的知识，融入自己的认知体系上？
+#### 尝试将新的知识，融入自己的认知体系上？
 
 让我们接受一项全新的事物，很多时候是不容易理解，也需要一段时间的接受。但是如果我们将新的知识，融入自己原有的认知体系上，就会更容易被接受。
 
@@ -138,11 +131,9 @@ biliGPT
 
 ![](img/c86809522e380fa09b628f5f87af64d4.png)
 
-## 📂 整理信息
+### 📂 整理信息
 
----
-
-### 如何使用工具，来构建自己的知识体系？
+#### 如何使用工具，来构建自己的知识体系？
 
 推荐大家使用语雀、飞书来构建自己的私有知识库。
 
@@ -156,9 +147,7 @@ biliGPT
 
 ![](img/9672fadc5080c0d292676dbbed09dc13.png)
 
-###
-
-### 信息很杂，如何对信息进行结构化整理？
+#### 信息很杂，如何对信息进行结构化整理？
 
 持续的碎片化收集、整理、吸收，再创作。
 
@@ -166,13 +155,13 @@ biliGPT
 
 ![](img/a7ccf1d2b801a0396e7e44bb3e078f5f.png)
 
-### 总结
+#### 总结
 
 在自学这件事情上，我们可以将GPT理解为一个优秀的文字工具，他可以很好的完成两类文字工作：
 
-**🧬文字的升维（**用作信息提炼）
+🧬文字的升维（用作信息提炼）
 
-**🧩文字的降维（**用作信息解释）
+🧩文字的降维（用作信息解释）
 
 小彩蛋：一个层次分析 prompt ：
 
@@ -232,7 +221,7 @@ biliGPT
 2. 按照最简单最初级的层次到最复杂最高级的层次来进行分析
 ```
 
-# 二、AI时代的学习观念
+## 二、AI时代的学习观念
 
 ### 0. 关于学习的认知：
 
@@ -241,8 +230,6 @@ biliGPT
 那么在今天，AI 刚刚开始崛起的时代，我们的学习观念和学习目标发生什么变化了吗？大家有感知吗
 
 ![](img/6da18cf705a13c1827132a49821f5fb6.png)
-
-###
 
 ### 学习目标的改变
 
@@ -280,7 +267,7 @@ biliGPT
 
 ![](img/17eef74b1ca1a915b28e93403fd88d0d.png)
 
-# 三、学习原理 - 训练方法
+## 三、学习原理 - 训练方法
 
 ![](img/fabc77b899704a54e35f16778a62d545.png)
 
@@ -358,8 +345,6 @@ biliGPT
 
 > 与同伴分享你编写的 prompt，并询问他们在解答过程中是否能够感受到与其他知识或经验的关联。
 
->
-
 ### 深度加工
 
 ![](img/14e6672d6aeef92336db8cce83b42705.png)
@@ -370,23 +355,21 @@ biliGPT
 
 > 请思考并记录下你过去一周内学到的三个知识点。
 
-> 
+>
 
 > 选择其中一个，尝试深入思考：这个知识点或技能与你之前所学的内容有哪些相似之处？有哪些不同之处？
 
-> 
+>
 
 > 对于上述的知识点或技能，如果需要你为其编写一个清晰的 prompt，你希望通过这个 prompt 达到什么学习效果？
 
-> 
+>
 
 > 现在，基于你的答案和思考，为这个知识点或技能编写一个 prompt，确保该 prompt 能够鼓励接下来的使用者进行深度的思考和加工。
 
-> 
+>
 
 > 重新修订你的 prompt，使其更具有深度加工的引导性，然后再次与同伴分享并征求反馈。
-
->
 
 ### 元认知
 
@@ -398,21 +381,17 @@ biliGPT
 
 > 请回忆并简述一个你学习某项知识或技能时遇到的困难或挑战。
 
-> 
+>
 
 > 在面对这一困难时，你如何认知自己的学习过程？
 
 > 例如：你是如何察觉到自己不理解的？你采用了哪些策略来尝试克服这个困难？
 
-> 
+>
 
 > 请描述在这一过程中，你如何对自己的学习方法和策略进行了调整或更改？
 
->
-
-# 彩蛋：
-
----
+## 彩蛋：
 
 ### 学习中用到的一些AI工具：
 
@@ -420,33 +399,33 @@ biliGPT
 
 沉浸式翻译
 
-https://chrome.google.com/webstore/detail/immersive-translate/bpoadfkcbjbfhfodiogcnhhhpibjhbnh
+`https://chrome.google.com/webstore/detail/immersive-translate/bpoadfkcbjbfhfodiogcnhhhpibjhbnh`
 
 Utools
 
-https://www.u.tools/
+`https://www.u.tools/`
 
 monica
 
-https://chrome.google.com/webstore/detail/monica-your-ai-copilot-po/ofpnmcalabcbjgholdjcjblkibolbppb?hl=zh-CN
+`https://chrome.google.com/webstore/detail/monica-your-ai-copilot-po/ofpnmcalabcbjgholdjcjblkibolbppb?hl=zh-CN`
 
 2、文本视频内容解析工具
 
 通义听悟
 
-https://tingwu.aliyun.com/
+`https://tingwu.aliyun.com/`
 
 ChatDoc
 
-https://chatdoc.com/
+`https://chatdoc.com/`
 
 BibiGPT
 
-https://b.jimmylv.cn/#
+`https://b.jimmylv.cn/#`
 
 ### 一个非常有用的半自动结构化提示词工具：
 
-https://chat.openai.com/share/9b1f826d-f50b-4b48-a9b0-5ff17df3c251
+`https://chat.openai.com/share/9b1f826d-f50b-4b48-a9b0-5ff17df3c251`
 
 点击继续对话，按你自己的方式使用这个已经被 GPT 理解的结构化框架，比如：
 
@@ -454,11 +433,13 @@ https://chat.openai.com/share/9b1f826d-f50b-4b48-a9b0-5ff17df3c251
 
 ### 学术论文辅助阅读工具：
 
-https://chat.openai.com/share/e95a6741-f950-42b2-86f5-b80b2f0a8e19
+`https://chat.openai.com/share/e95a6741-f950-42b2-86f5-b80b2f0a8e19`
 
 ![](img/d8cbdb5726ac1586f67281ec70b85335.png)
 
 祝愿每个认真学习的人都富足、喜悦。
+
+
 
 ---
 

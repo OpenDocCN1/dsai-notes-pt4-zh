@@ -1,3 +1,4 @@
+
 # MJ-风格控制 with SW
 
 > 来源：[https://aigcreative.feishu.cn/docx/PXNudg6Nuo1Ng2xXKgQcAIgEnte](https://aigcreative.feishu.cn/docx/PXNudg6Nuo1Ng2xXKgQcAIgEnte)
@@ -18,6 +19,6 @@
 
 ![](img/b5d90f73bd1b1fe7f9ef455bc9a0728f.png)
 
-![](img/55f2697a4ab208712b7bf72c12b2b5e8.png)
+![](img/55f2697a4ab208712b2bf72c12b2b5e8.png)
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

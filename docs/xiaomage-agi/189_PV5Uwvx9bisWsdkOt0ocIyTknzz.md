@@ -1,14 +1,17 @@
+
 # 用ChatGPT免费做出数字人视频
 
-> 来源：[https://xmgtoagi.feishu.cn/docx/HRgRd5Y8boLrhxxz3aycm20Ln6d](https://xmgtoagi.feishu.cn/docx/HRgRd5Y8boLrhxxz3aycm20Ln6d)
+> 来源：`https://xmgtoagi.feishu.cn/docx/HRgRd5Y8boLrhxxz3aycm20Ln6d`
 
 > 作者：孟祥林
 
-操作指引
+### 操作指引
 
-ChatGPT产生文案=》腾讯智影数字人播报=》粘贴文案=》导出视频。
+ChatGPT产生文案 => 腾讯智影数字人播报 => 粘贴文案 => 导出视频。
 
-说明：部分资源只有会员才能用~，非会员可生成5分钟视频。
+### 说明
+
+部分资源只有会员才能用~，非会员可生成5分钟视频。
 
 ## 一、ChatGPT产生文案
 
@@ -38,9 +41,9 @@ prompt：
 
 打开注册：[腾讯智影网站](https://zenvideo.qq.com/activity/invitee?invitation_code=8nO4F1SlTAuWhJjm)，
 
-找到数字人播报'功能入口：https://zenvideo.qq.com/smart/listVirtual
+找到数字人播报'功能入口：`https://zenvideo.qq.com/smart/listVirtual`
 
-会员领取链接：https://zenvideo.qq.com/activity/invitee?invitation_code=8nO4F1SlTAuWhJjm
+会员领取链接：`https://zenvideo.qq.com/activity/invitee?invitation_code=8nO4F1SlTAuWhJjm`
 
 ![](img/6943288f1712e0655b310a2aa40937fd.png)
 
@@ -68,13 +71,13 @@ prompt：
 
 在我的资源"里能看到导出的视频。
 
-https://zenvideo.qq.com/my/material
+`https://zenvideo.qq.com/my/material`
 
 ![](img/bd96e502bc3fcebeb80efa468e6a7cc8.png)
 
 ## 七、其他数字人平台推荐
 
-D-ID平台：https://studio.d-id.com/
+D-ID平台：`https://studio.d-id.com/`
 
 可免费生成15分钟的视频。
 

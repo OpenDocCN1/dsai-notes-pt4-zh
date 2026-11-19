@@ -1,8 +1,9 @@
+
 # 开源资料
 
 > 来源：[https://my.feishu.cn/docx/OoCbdytUWonBICxa3PkczVfynnq](https://my.feishu.cn/docx/OoCbdytUWonBICxa3PkczVfynnq)
 
-##** 来源于**WaytoAGI的开源资料，点击放大查看
+## 来源于 WaytoAGI 的开源资料，点击放大查看
 
 ![](img/15bc47f84c853bb462f3195d215ac918.png)
 

@@ -1,3 +1,4 @@
+
 # 通过时间、空间和信息透镜揭示意识和大脑功能
 
 > 来源：[https://agijuejin.feishu.cn/docx/UUuYdSAGXoL0LAxGw86chHXKnwc](https://agijuejin.feishu.cn/docx/UUuYdSAGXoL0LAxGw86chHXKnwc)
@@ -8,7 +9,7 @@
 
 ![](img/ac396a9a3f894010620dde271cf740c2.png)
 
-> 关键词： 脑网络结构，意识理论，信息分解
+> 关键词：脑网络结构，意识理论，信息分解
 
 ![](img/3bef3294b7b919958542a1eed0788443.png)
 
@@ -16,7 +17,7 @@
 
 > 论文地址：https://doi.org/10.1016/j.tins.2024.05.007
 
-> 期刊名称： Trends in Neurosciences
+> 期刊名称：Trends in Neurosciences
 
 传统的神经影像学方法通常将认知功能与特定的大脑区域联系起来，但这种方法忽略了大脑功能的空间分布性和多尺度特性。近日发表在 Trends in Neurosciences 上的这项研究通过解构大脑功能为时间、空间和信息这三种基本构成要素，探讨了脑功能和意识的复杂性，特别是通过药理学和病理学手段引起的意识变化。
 
@@ -38,4 +39,4 @@
 
 图4. 计算建模以整合分解并获得机械性的内在结构
 
-**编译  | **龚铭康
+**编译 | 龚铭康**

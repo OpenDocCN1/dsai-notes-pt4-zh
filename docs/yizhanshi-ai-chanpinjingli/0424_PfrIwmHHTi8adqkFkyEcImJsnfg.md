@@ -1,20 +1,18 @@
+
 # TensorFlow tf.data API
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/GX6kdQuG0oWf06x6fFoc9rcdnJf](https://v11enp9ok1h.feishu.cn/docx/GX6kdQuG0oWf06x6fFoc9rcdnJf)
 
-TensorFlow tf.data API 是 TensorFlow 提供的高效数据输入管道构建工具，专门用于处理大规模数据集。
+TensorFlow `tf.data` API 是 TensorFlow 提供的高效数据输入管道构建工具，专门用于处理大规模数据集。
 
-tf.data API 解决了传统数据加载方式中的性能瓶颈问题，使数据预处理和模型训练能够并行进行。
+`tf.data` API 解决了传统数据加载方式中的性能瓶颈问题，使数据预处理和模型训练能够并行进行。
 
-### 为什么需要 tf.data API
+## 为什么需要 tf.data API
 
-1.  **性能优势**：比传统方法快 10-100 倍
-
-1.  **内存效率**：支持流式处理超大数据集
-
-1.  **灵活性**：可组合的数据转换操作
-
-1.  **易用性**：简洁的链式调用接口
+1. **性能优势**：比传统方法快 10-100 倍
+2. **内存效率**：支持流式处理超大数据集
+3. **灵活性**：可组合的数据转换操作
+4. **易用性**：简洁的链式调用接口
 
 ![](img/db59c96128cfcca36c5ed25ab0a4ae07.png)
 
@@ -22,47 +20,45 @@ tf.data API 解决了传统数据加载方式中的性能瓶颈问题，使数�
 
 ### Dataset 对象
 
-Dataset 是 tf.data API 的核心抽象，表示一系列元素，其中每个元素包含一个或多个张量。
+`Dataset` 是 `tf.data` API 的核心抽象，表示一系列元素，其中每个元素包含一个或多个张量。
 
 #### 创建 Dataset 的三种主要方式
 
-**1、从内存数据创建**
+##### 从内存数据创建
 
-## 实例
+###### 代码示例
 
 ```
 dataset = tf.data.Dataset.from_tensor_slices([1, 2, 3, 4, 5])
 ```
 
-**2、从文件创建**
+##### 从文件创建
 
-## 实例
+###### 代码示例
 
 ```
-dataset = tf.data.TextLineDataset([&quot;file1.txt&quot;, &quot;file2.txt&quot;])
+dataset = tf.data.TextLineDataset(["file1.txt", "file2.txt"])
 ```
 
-**3、从生成器创建**
+##### 从生成器创建
 
-## 实例
+###### 代码示例
 
 ```
 def gen():
     for i in range(10):
         yield i
-           
+
 dataset = tf.data.Dataset.from_generator(gen, output_types=tf.int32)
 ```
 
 ### 数据转换操作
 
-## 关键操作详解
+#### map 操作
 
-### map 操作
+`map` 是最常用的转换操作，用于对每个元素应用自定义函数。
 
-map 是最常用的转换操作，用于对每个元素应用自定义函数。
-
-## 实例
+##### 代码示例
 
 ```
 # 对每个数字进行平方
@@ -78,17 +74,16 @@ def process_image(image_path):
 image_dataset = image_dataset.map(process_image)
 ```
 
-**最佳实践**：
+##### 最佳实践
 
-+   使用 num_parallel_calls 参数启用并行处理
++ 使用 `num_parallel_calls` 参数启用并行处理
++ 对于 CPU 密集型操作，设置 `tf.data.experimental.AUTOTUNE`
 
-+   对于 CPU 密集型操作，设置 tf.data.experimental.AUTOTUNE
-
-### batch 操作
+#### batch 操作
 
 将多个元素组合成一个批次。
 
-## 实例
+##### 代码示例
 
 ```
 # 创建32大小的批次
@@ -102,17 +97,17 @@ padded_batch = dataset.padded_batch(
 )
 ```
 
-### shuffle 操作
+#### shuffle 操作
 
 打乱数据顺序，对训练至关重要。
 
-## 实例
+##### 代码示例
 
 ```
 # 基本用法
 shuffled = dataset.shuffle(buffer_size=10000)
 
-# 最佳实践：buffer_size应 &gt;= 数据集大小
+# 最佳实践：buffer_size应 >= 数据集大小
 full_shuffle = dataset.shuffle(buffer_size=len(dataset))
 ```
 
@@ -122,7 +117,7 @@ full_shuffle = dataset.shuffle(buffer_size=len(dataset))
 
 让数据加载和模型执行重叠进行：
 
-## 实例
+##### 代码示例
 
 ```
 dataset = dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
@@ -130,7 +125,7 @@ dataset = dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
 
 ### 并行化处理
 
-## 实例
+##### 代码示例
 
 ```
 dataset = dataset.map(
@@ -141,21 +136,21 @@ dataset = dataset.map(
 
 ### 缓存机制
 
-## 实例
+##### 代码示例
 
 ```
 # 内存缓存
 dataset = dataset.cache()
 
 # 文件缓存
-dataset = dataset.cache(filename=&#x27;/tmp/cache&#x27;)
+dataset = dataset.cache(filename='/tmp/cache')
 ```
 
 ## 完整示例
 
 ### 图像分类数据管道
 
-## 实例
+##### 代码示例
 
 ```
 def build_image_pipeline(file_pattern, batch_size=32, is_training=True):
@@ -190,36 +185,27 @@ def load_and_preprocess_image(path):
 
 **解决方案**：
 
-1.  使用 tf.data.Dataset.list_files 创建文件数据集
-
-1.  使用交错读取 (interleave) 并行处理多个文件
-
-1.  考虑使用 TFRecord 格式存储数据
+1. 使用 `tf.data.Dataset.list_files` 创建文件数据集
+2. 使用交错读取 (`interleave`) 并行处理多个文件
+3. 考虑使用 TFRecord 格式存储数据
 
 ### Q2: 为什么我的数据管道速度很慢？
 
 **排查步骤**：
 
-1.  检查是否使用了预取 (prefetch)
-
-1.  确保 map 操作设置了 num_parallel_calls
-
-1.  验证 shuffle 的 buffer_size 是否足够大
-
-1.  考虑使用 tf.data.experimental.snapshot 缓存中间结果
+1. 检查是否使用了预取 (`prefetch`)
+2. 确保 `map` 操作设置了 `num_parallel_calls`
+3. 验证 `shuffle` 的 `buffer_size` 是否足够大
+4. 考虑使用 `tf.data.experimental.snapshot` 缓存中间结果
 
 ---
 
 ## 最佳实践总结
 
-1.  **尽早 shuffle**：在数据管道的早期应用 shuffle
-
-1.  **延迟批处理**：在应用 map 后再进行批处理
-
-1.  **利用并行**：尽可能使用并行化操作
-
-1.  **重叠执行**：使用 prefetch 实现数据加载和模型执行的重叠
-
-1.  **合理缓存**：对不变的数据进行缓存
+1. **尽早 shuffle**：在数据管道的早期应用 `shuffle`
+2. **延迟批处理**：在应用 `map` 后再进行批处理
+3. **利用并行**：尽可能使用并行化操作
+4. **重叠执行**：使用 `prefetch` 实现数据加载和模型执行的重叠
+5. **合理缓存**：对不变的数据进行缓存
 
 通过遵循这些原则，您可以构建高效的数据输入管道，充分发挥 GPU 的计算能力，显著提升模型训练效率。

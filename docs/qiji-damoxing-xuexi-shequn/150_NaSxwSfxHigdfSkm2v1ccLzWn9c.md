@@ -1,8 +1,10 @@
+
+
 # 奇绩大模型日报（7月 19日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/M7YfdP5bloIvEOxkh9ocuwxNnve](https://miracleplus.feishu.cn/docx/M7YfdP5bloIvEOxkh9ocuwxNnve)
 
-# 资讯
+## 资讯
 
 ### GPT-4o mini背后团队揭秘：9人团华人面孔过半，清华北大同济校友在列
 
@@ -16,7 +18,7 @@ https://mp.weixin.qq.com/s/64tH59e5u0Vm1b6ywoaZUg
 
 https://mp.weixin.qq.com/s/7oSxdFyqJ7MUpbfuNB_n5Q
 
-比** OpenAI 官宣 G**PT-4o mini 早几个小时，被誉为「欧洲版 OpenAI」的 Mistral AI 也官宣了一个小模型 ——Mistral NeMo。
+比OpenAI 官宣 GPT-4o mini 早几个小时，被誉为「欧洲版 OpenAI」的 Mistral AI 也官宣了一个小模型 ——Mistral NeMo。
 
 这个小模型由 Mistral AI 和英伟达联合打造，参数量为 120 亿（12B），上下文窗口为 128k。
 
@@ -28,7 +30,7 @@ Mistral AI 表示，Mistral NeMo 的推理能力、世界知识和编码准确�
 
 https://mp.weixin.qq.com/s/Qte9x8yygmC2aiGEk7AYXg
 
-**论**文共同一作为李婧博士，孙志杰和林大超博士，主要成员来自GTS AI计算Lab，主要研究及落地领域包含LLM训推加速、AI训练保障和图计算。
+论文共同一作为李婧博士，孙志杰和林大超博士，主要成员来自GTS AI计算Lab，主要研究及落地领域包含LLM训推加速、AI训练保障和图计算。
 
 MoE 因其在训推流程中低销高效的特点，近两年在大语言模型领域大放异彩。作为 MoE 的灵魂，专家如何能够发挥出最大的学习潜能，相关的研究与讨论层出不穷。此前，华为 GTS AI 计算 Lab 的研究团队提出了 LocMoE ，包括新颖的路由网络结构、辅助降低通信开销的本地性 loss 等，引发了广泛关注。
 
@@ -40,11 +42,11 @@ https://mp.weixin.qq.com/s/fNL8MOGOAWLvN0sMy-i_Lw
 
 [A](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652489743&idx=4&sn=19afc442b4ce44c675d216174113dda1&chksm=f12abcfec65d35e855b93974970b35c81b0a9293b0afc688d618b8a5ae84cf21dc8b8f8cb60d&scene=21#wechat_redirect)I科技巨头的「数据荒」到底该拿什么拯救？为了训练生成式AI，尤其是在scalling law的支配之下，互联网上现存的内容早已不能满足LLM越来越大的胃口，It's soooo hungry for data!
 
-「数据[荒](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652484637&idx=1&sn=dc35b88a4ed15b879dc88321aa66168a&chksm=f12ac0ecc65d49fab3f3bba607a7c7bff57dddb2b2de5809c9aa02e4a8f87df0fbffdeb22cfd&scene=21#wechat_redirect)」的直接结果，就是科技巨头对GenAI()的训练数据越来越「饥不择食」。不仅仅是书籍、文章，甚至Instagram、X、Fackbook等各种社交平台上的内容也是来者不拒。前段时间和OpenAI签合作协议，而且坑了谷歌搜索、导致Gemini教唆网友给披萨加胶水的Reddit也是其中之一。为了规避潜在的法律纠纷，GPT、Gemini、Claude等商业模型在发布时往往选择对训练数据「三缄其口」，绝口不提及其来源、构成、使用许可等信息。然而，这个问题早就引起了创作者和各种媒体平台越来越强烈的不满。
+「数据[荒](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652484637&idx=1&sn=dc35b88a4ed15b879dc88321aa66168a&chksm=f12ac0ecc65d49fab3f3bba607a7c7bff57dddb2b2de5809c9aa02e4a8f87df0fbffdeb22cfd&scene=21#wechat_redirect)」的直接结果，就是科技巨头对`GenAI()`的训练数据越来越「饥不择食」。不仅仅是书籍、文章，甚至Instagram、X、Fackbook等各种社交平台上的内容也是来者不拒。前段时间和OpenAI签合作协议，而且坑了谷歌搜索、导致Gemini教唆网友给披萨加胶水的Reddit也是其中之一。为了规避潜在的法律纠纷，GPT、Gemini、Claude等商业模型在发布时往往选择对训练数据「三缄其口」，绝口不提及其来源、构成、使用许可等信息。然而，这个问题早就引起了创作者和各种媒体平台越来越强烈的不满。
 
 ![](img/84ecd7fbfa453481dea8228b0ef05a16.png)
 
-# 推特
+## 推特
 
 ### Mckay Wrigley：软件开发的未来模样
 
@@ -130,7 +132,7 @@ https://x.com/c_valenzuelab/status/1813954465667457412
 
 我有一个想要在C4D中探索的创意，需要大面积的混凝土内部空间。这是我在C4D中完全可以创建的东西，但制作多个场景可能需要几周的时间。所以我想，何不看看Runway Gen3能做些什么呢？然后我意识到可以将3D动态跟踪的影像输入到Cinema4D中。
 
-虽然它并不完美（首先，Runway不是高清的），但它基本上表明Gen3在透视、大小和距离上的一致性（有时）足以从中获得实际的3D跟踪。尽管有很多限制条件，并且仍然需要在2D和3D上投入工作，但这些都是概念验证的粗略作品，潜力还是相当大的。
+虽然它并不完美（首先，Runway不是高清的），但它基本上表明Gen3在透视、大小和距离上的一致性（有时）足以从中获得实际的3D跟踪。尽管有很多限制条件，并且仍然需要在2D和3D上投入工作，但这些都是概念验证的粗略作品，潜力还是相当大。
 
 我越来越感觉到，AI生成实际上仍然需要一位艺术家来操控，最好是具备艺术指导、技术指导能力并能使用2D和3D工具的艺术家。
 
@@ -138,7 +140,7 @@ https://x.com/c_valenzuelab/status/1813954465667457412
 
 [ssstwitter.com_1721390177747.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JcwObVgDRoRf1pxezUeccMZDn5x)
 
-# 产品
+## 产品
 
 ### Flow-Studio
 
@@ -160,7 +162,7 @@ Intelligent Canvas 是 Miro 推出的一项重大平台更新，通过 AI 和可
 
 ![](img/7a8e9ba24f8fc5ccdab6f9126a1b1b62.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### VD3D
 
@@ -184,9 +186,9 @@ https://snap-research.github.io/vd3d/
 
 https://huggingface.co/mistralai/mathstral-7B-v0.1
 
-mathstral-7b 是一个专注于数学和科学任务的大型语言模型，基于 Mistral 7B 模型开发。它在多个数学和科学基准测试中表现优于同类大型语言模型。该模型可以通过 mistral_inference 库进行安装和使用，也可以在 transformers 库中进行调用。
+mathstral-7b 是一个专注于数学和科学任务的大型语言模型，基于 Mistral 7B 模型开发。它在多个数学和科学基准测试中表现优于同类大型语言模型。该模型可以通过 `mistral_inference` 库进行安装和使用，也可以在 `transformers` 库中进行调用。
 
-# 投融资
+## 投融资
 
 ### Leya宣布完成2500万美元A轮融资
 
@@ -216,7 +218,7 @@ https://static.cninfo.com.cn/finalpage/2024-07-18/1220675931.PDF
 
 https://www.itjuzi.com/investevent/14664980
 
-**边缘创智Finnox**获得天使轮融资，金额未披露，本轮投资方为奇绩创坛、李泽湘。边缘创智着力于量化人们的认知与情绪，并希望以数据为核心驱动力构建产品级的情绪智能大脑。首要应用场景是通过使用多模态传感器 + AI 技术可以量化心理病患在诊疗过程中的数据，提高心理医生接诊效益，核心关注面部肌肉变化、心率和呼吸等指标。
+边缘创智Finnox获得天使轮融资，金额未披露，本轮投资方为奇绩创坛、李泽湘。边缘创智着力于量化人们的认知与情绪，并希望以数据为核心驱动力构建产品级的情绪智能大脑。首要应用场景是通过使用多模态传感器 + AI 技术可以量化心理病患在诊疗过程中的数据，提高心理医生接诊效益，核心关注面部肌肉变化、心率和呼吸等指标。
 
 公司官网：https://www.finnox.cn/
 
@@ -246,7 +248,10 @@ https://techcrunch.com/2024/07/18/samsung-to-acquire-uk-based-knowledge-graph-st
 
 ![](img/70ba42106a739b4b543d589aae826b85.png)
 
-### Artificial Agency筹集资金以增强视频游戏中的NPC AI
+
+
+
+# Artificial Agency筹集资金以增强视频游戏中的NPC AI
 
 贡献人：
 
@@ -260,7 +265,7 @@ https://techcrunch.com/2024/07/18/artificial-agency-raises-video-game-npcs-ai/
 
 # 学习
 
-### 我为什么不看好LLM —— 记过去一年实习经历有感
+## 我为什么不看好LLM —— 记过去一年实习经历有感
 
 贡献人：
 
@@ -270,17 +275,17 @@ https://zhuanlan.zhihu.com/p/709590163?utm_psn=1797587296884772864
 
 ![](img/3504a15476cf8e14bf91cdbfd7f6607e.png)
 
-### [Hopper 架构特性学习笔记 Part1] Distributed Shared Memory
+## [Hopper 架构特性学习笔记 Part1] Distributed Shared Memory
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/708645371?utm_psn=1797581865554698240
 
-Hopper 架构通过引入 Thread Block Clusters 和 Distributed Shared Memory（DSM）技术，提升了 GPU 在处理大规模并行任务时的性能和效率。DSM 允许多个 Thread Block 跨越不同的 SM 共享内存，从而克服了单个 Thread Block 因 Shared Memory 容量限制而无法处理大规模数据的问题。Hopper 架构中的 DSM 实现了基于 L2 Cache 的高效内存访问，尽管访问延迟高于 Shared Memory，但远低于 Global Memory。同时，Hopper 提供了 TMA 单元支持异步内存访问，进一步优化了内存计算的效率。在编程实践中，CUDA 的 Cooperative Groups 模块为开发者提供了访问和同步 DSM 的接口，如 cg::this_cluster() 和 cluster.sync()，以及优化同步的 cluster.barrier_arrive() 和 cluster.barrier_wait()。这些技术细节的深入理解和恰当应用，能够帮助开发者充分发挥 Hopper 架构的潜力，实现高效的多 Thread Block 协同运行和性能优化。
+Hopper 架构通过引入 Thread Block Clusters 和 Distributed Shared Memory（DSM）技术，提升了 GPU 在处理大规模并行任务时的性能和效率。DSM 允许多个 Thread Block 跨越不同的 SM 共享内存，从而克服了单个 Thread Block 因 Shared Memory 容量限制而无法处理大规模数据的问题。Hopper 架构中的 DSM 实现了基于 L2 Cache 的高效内存访问，尽管访问延迟高于 Shared Memory，但远低于 Global Memory。同时，Hopper 提供了 TMA 单元支持异步内存访问，进一步优化了内存计算的效率。在编程实践中，CUDA 的 Cooperative Groups 模块为开发者提供了访问和同步 DSM 的接口，如 `cg::this_cluster()` 和 `cluster.sync()`，以及优化同步的 `cluster.barrier_arrive()` 和 `cluster.barrier_wait()`。这些技术细节的深入理解和恰当应用，能够帮助开发者充分发挥 Hopper 架构的潜力，实现高效的多 Thread Block 协同运行和性能优化。
 
 ![](img/40767a1024479353229a52d540080168.png)
 
-### 机器人设计避坑指南47——复杂的机器人工作空间
+## 机器人设计避坑指南47——复杂的机器人工作空间
 
 贡献人：
 
@@ -292,7 +297,7 @@ https://zhuanlan.zhihu.com/p/702406630?utm_psn=1797588523722866689
 
 ![](img/b53790527f8f27af1378162b2b3de5ef.png)
 
-### CUDA-MODE课程笔记 第6课: 如何优化PyTorch中的优化器
+## CUDA-MODE课程笔记 第6课: 如何优化PyTorch中的优化器
 
 贡献人：
 
@@ -302,7 +307,7 @@ https://zhuanlan.zhihu.com/p/709594587?utm_psn=1797588664215285760
 
 ![](img/98a4ac51f78ed343b1afb6cee08399f3.png)
 
-### 如何评价贵阳轰轰烈烈的大数据战役？
+## 如何评价贵阳轰轰烈烈的大数据战役？
 
 贡献人：
 
@@ -310,7 +315,7 @@ https://www.zhihu.com/question/29880671/answer/3566097571?utm_psn=17975882463451
 
 作者 Jeff Tao 在参加中国计算机学会数据库战略研讨会后，对数据资产的确权、定价、流通、安全、供需匹配等问题进行了深入思考。他指出，尽管数据已成为第五大生产要素，但贵阳大数据交易所的实际交易额远低于预期目标，反映出数据交易市场的热度与实际交易活跃度之间存在鸿沟。作者分析了数据交易所面临的问题，包括数据来源的多样性、质量不一、数据安全问题、以及 “阿罗悖论” 导致的数据复制成本低下等。针对这些问题，作者提出了实时数据交易作为一种趋势，并强调了实时数据的交易特点，如时间敏感性、延时对价值的影响、以及数据复制问题的解决方案。作者还提到了实时数据交易平台的搭建技术要求、以及 TDengine 作为时序数据处理平台在实时数据交易中的应用。最后，作者预测了公用事业数据、电商交易数据、物联网设备数据等领域的实时数据交易的潜力，并对实时数据交易所破局的可能性表示乐观态度。
 
-### 《RISC-V产业年鉴2023》发布，洞察产业发展现状与趋势
+## 《RISC-V产业年鉴2023》发布，洞察产业发展现状与趋势
 
 贡献人：
 
@@ -320,50 +325,30 @@ https://mp.weixin.qq.com/s/bHQ4_iL43UheIkFRKbl-4A
 
 为确保 RISC-V 产业的健康可持续发展，报告强调了以下几个关键点：首先，加强技术创新，开发出性能优异、功耗低、安全可靠的芯片产品；其次，建立完善的 RISC-V 标准体系，推动生态系统的健康发展；第三，强化产业链上下游的合作，避免不必要的竞争，共同促进 RISC-V 产业的成长；第四，加强 RISC-V 人才的培养，为产业发展提供人才保障；最后，政府需要出台更多支持 RISC-V 产业发展的政策，营造良好的市场环境。
 
-### 【分布式训练技术分享十五】聊聊Ring Attention + Flash Attention前向推导细节
+## 【分布式训练技术分享十五】聊聊Ring Attention + Flash Attention前向推导细节
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/709402194?utm_psn=1797279605201186818
 
-文章首先介绍了大型语言模型（LLM）在序列长度方面的扩展，提到了 Megatron-LM 使用的 Ring Attention + Flash Attention 技术。接着，详细阐述了 Ring Attention 的原理，即将 QKV 矩阵在 sequence 维度切分，并通过环形通信进行计算。与 Colossal-AI 的序列并行不同，Ring Attention 通过一次通信计算 softmax，需要对 Flash Attention 的实现进行修正。文章进一步推导了 Ring Attention 的公式，并解释了如何通过分块计算和修正操作来得到正确的 self-attention 结果。在此基础上，文章深入探讨了 Ring Attention 与 Flash Attention 结合时的公式推导，包括如何处理 softmax 函数的数值稳定性问题，以及如何利用 log-sum-exp（LSE）函数来简化计算过程。最后，文章展示了在 transformer_engine 中实现 Ring Attention + Flash Attention 的代码示例，并对实现 1 和实现 2 进行了数学证明，确保它们是等价的。
+文章首先介绍了大型语言模型（LLM）在序列长度方面的扩展，提到了 Megatron-LM 使用的 Ring Attention + Flash Attention 技术。接着，详细阐述了 Ring Attention 的原理，即将 `QKV` 矩阵在 sequence 维度切分，并通过环形通信进行计算。与 Colossal-AI 的序列并行不同，Ring Attention 通过一次通信计算 `softmax`，需要对 Flash Attention 的实现进行修正。文章进一步推导了 Ring Attention 的公式，并解释了如何通过分块计算和修正操作来得到正确的 self-attention 结果。在此基础上，文章深入探讨了 Ring Attention 与 Flash Attention 结合时的公式推导，包括如何处理 `softmax` 函数的数值稳定性问题，以及如何利用 `log-sum-exp`（`LSE`）函数来简化计算过程。最后，文章展示了在 `transformer_engine` 中实现 Ring Attention + Flash Attention 的代码示例，并对实现 1 和实现 2 进行了数学证明，确保它们是等价的。
 
 ![](img/6654d7baaefcf2859e053a21bbf0f78a.png)
 
 # 📡潜空间系列活动:
 
 > 潜空间系列活动第三季启动！
-
 >
-
 > 第三季第一期将在7.27上午10:00开始，嘉宾是宋佳铭。活动包括嘉宾分享、访谈Q&A、cofounder matching餐会。
-
 >
-
->
-
 > 宋佳铭-Luma AI 首席科学家，斯坦福大学计算机科学博士、博士后；曾任职英伟达（DIR）小组科学家 ，创建了最早的扩散模型加速算法，该算法广泛用于最近的生成式 AI 系统，包括 DALL-E 2、Imagen、Stable Diffusion 和 ERNIE-ViLG 2.0。
-
 >
-
->
-
 > 陈贝迪-卡内基梅隆大学助理教授，斯坦福大学人工智能博士后学者，前 Meta AI 研究科学家；致力于在现代硬件上设计和优化算法和模型，以加速大型机器学习系统。
-
 >
-
->
-
 > 童晟邦- 纽约大学博士，伯克利人工智能实验室（BAIR）研究员， OpenAI 超对齐奖学金获得者；
-
 >
-
 > 闫俊杰-MiniMax 创始人兼 CEO。是中国第一梯队的大模型创业者，目前 MiniMax 估值超 25 亿美元。
-
 >
-
->
-
 > 本季活动同时开放北京线下、上海线下和线上场次，欢迎校友和外部创业者扫描右方二维码报名！
 
 ![](img/bd83ae6767689563628e41f521170905.png)
@@ -371,8 +356,6 @@ https://zhuanlan.zhihu.com/p/709402194?utm_psn=1797279605201186818
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -384,7 +367,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

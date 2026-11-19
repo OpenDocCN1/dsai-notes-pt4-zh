@@ -1,10 +1,11 @@
+
 # 大模型的“Lost in the middle”现象探究
 
 > 来源：[https://agijuejin.feishu.cn/docx/SDnIdDZ7CoQsCtxG3IpczWgznob](https://agijuejin.feishu.cn/docx/SDnIdDZ7CoQsCtxG3IpczWgznob)
 
 > 作者：Meta
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/678614880)hihu.com/p/678614...
+> 原文：[https://zhuanlan.zhihu.com/p/678614880](https://zhuanlan.zhihu.com/p/678614880)
 
 许多研究致力于提升大模型的长文本处理能力，通过各种手段提高大模型所能处理的最大上下文长度，但是对于大模型在更长的上下文情况下效果怎么样却不那么重点关注。本文对大模型在长文本情况下的性能做了一系列实验研究，发现了一个有趣的“Lost in the middle”现象：在处理需要识别相关上下文的信息的任务（如文档问答、键值对索引）时，大模型对相关信息的位置很敏感，当相关的信息在输入prompt的开头或者结尾时，能够取得较好的效果，而当相关的信息在prompt中间部分时，性能会显著下降。同时研究者们对其中的原因进行了一些探讨，为未来更多支持长上下文的大模型的评估和优化提供一些参考。
 
@@ -16,9 +17,9 @@
 
 实验结果如下：
 
-+   在总文档数分别为10、20、30，对**应token数约为2K、4K、6K时， 均发现相关文档位于p**rompt的开始或者结尾时，能够取得更好的效果，而相关文档位于中间时，性能下降 。
++ 在总文档数分别为10、20、30，对应token数约为2K、4K、6K时，均发现相关文档位于prompt的开始或者结尾时，能够取得更好的效果，而相关文档位于中间时，性能下降。
 
-+   进行了更长上下文支持的模型在这个任务上并未显著优于未进行更长上下文支持的模型（如图中的gpt-3.5-turbo-16K-0613的效果就与gpt-3.5-turbo-0613的效果十分接近）
++ 进行了更长上下文支持的模型在这个任务上并未显著优于未进行更长上下文支持的模型（如图中的gpt-3.5-turbo-16K-0613的效果就与gpt-3.5-turbo-0613的效果十分接近）
 
 ![](img/fd6c062839762ac3ffd25d4c1a2183c5.png)
 
@@ -30,7 +31,7 @@
 
 相关的实验结论如下：
 
-+   对于比较优秀的模型，如claude-1.3-100k、claude-1.3，它们在4k、8k、**16k的上下文长度下，不管目标key在哪个位置，都**能取得接近100%的准确率； 而对于差一些的模型，仍然有与上个实验相似的现象，目标key位于中间位置时，取得较差的结果。
++ 对于比较优秀的模型，如claude-1.3-100k、claude-1.3，它们在4k、8k、16k的上下文长度下，不管目标key在哪个位置，都能取得接近100%的准确率；而对于差一些的模型，仍然有与上个实验相似的现象，目标key位于中间位置时，取得较差的结果。
 
 ![](img/8663a8f87b6b040963b3c707c2d4d8ae.png)
 
@@ -38,11 +39,11 @@
 
 针对以上的“Lost in the middle”现象，作者试图从几个方面去探讨可能的原因：
 
-+   是否和LLM的 **模型架构 **相关？Decoder-only/Encoder-Decoder等架构的LLM是否会有不同的表现？
++ 是否和LLM的模型架构相关？Decoder-only/Encoder-Decoder等架构的LLM是否会有不同的表现？
 
-+   query和参考的context信息的相对位置是否有影响？
++ query和参考的context信息的相对位置是否有影响？
 
-+   是基座LLM就存在这种现象还是说因为进行了指令遵循微调成Chat模型才造成的这种现象？
++ 是基座LLM就存在这种现象还是说因为进行了指令遵循微调成Chat模型才造成的这种现象？
 
 ## 模型架构的影响探究
 
@@ -88,4 +89,4 @@
 
 ## 参考资料
 
-1.  Liu N F, Lin K, Hewitt J, et al. Lost in the middle: How language models use long contexts[J]. arXiv preprint arXiv:2307.03172, 2
+1. Liu N F, Lin K, Hewitt J, et al. Lost in the middle: How language models use long contexts[J]. arXiv preprint arXiv:2307.03172, 2

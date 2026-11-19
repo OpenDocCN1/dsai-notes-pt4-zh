@@ -1,18 +1,17 @@
+
 # TensorFlow 模型调优技巧
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/G0nEdltDNoL7ffx67thcIvuSnmc](https://v11enp9ok1h.feishu.cn/docx/G0nEdltDNoL7ffx67thcIvuSnmc)
 
-模型调优是机器学习工作流程中至关重要的环节，它直接影响模型的最终性能表现。在TensorFlow中，我们可以通过多种技术手段来提升模型的准确率和泛化能力。
+模型调优是机器学习工作流程中至关重要的环节，它直接影响模型的最终性能表现。在`TensorFlow`中，我们可以通过多种技术手段来提升模型的准确率和泛化能力。
 
-### 为什么需要模型调优
+## 为什么需要模型调优
 
-+   **初始模型通常不够理想**：首次训练的模型往往存在欠拟合或过拟合问题
+- **初始模型通常不够理想**：首次训练的模型往往存在欠拟合或过拟合问题
+- **资源利用优化**：通过调优可以在相同计算资源下获得更好性能
+- **业务需求匹配**：不同应用场景对模型有不同要求（如精度vs速度）
 
-+   **资源利用优化**：通过调优可以在相同计算资源下获得更好性能
-
-+   **业务需求匹配**：不同应用场景对模型有不同要求（如精度vs速度）
-
-### 1.2 调优的主要方向
+## 调优的主要方向
 
 ![](img/3ec6dc3cb3a918fe93df278117a2b696.png)
 
@@ -24,7 +23,7 @@
 
 #### 静态学习率设置
 
-## 实例
+#### 实例
 
 ```
 # 基本学习率设置示例
@@ -33,7 +32,7 @@ optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
 
 #### 动态学习率策略
 
-## 实例
+#### 实例
 
 ```
 # 学习率衰减示例
@@ -49,22 +48,22 @@ optimizer = tf.keras.optimizers.SGD(learning_rate=lr_schedule)
 
 #### 学习率查找器
 
-## 实例
+#### 实例
 
 ```
-# 使用Keras Tuner进行学习率搜索
+# 使用`Keras Tuner`进行学习率搜索
 import keras_tuner as kt
 
 def build_model(hp):
     model = tf.keras.Sequential()
     model.add(tf.keras.layers.Dense(10))
     # 设置学习率搜索范围
-    hp_learning_rate = hp.Choice(&#x27;learning_rate&#x27;, values=[1e-2, 1e-3, 1e-4])
+    hp_learning_rate = hp.Choice('learning_rate', values=[1e-2, 1e-3, 1e-4])
     model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=hp_learning_rate),
-                  loss=&#x27;mse&#x27;)
+                  loss='mse')
     return model
 
-tuner = kt.RandomSearch(build_model, objective=&#x27;val_loss&#x27;, max_trials=5)
+tuner = kt.RandomSearch(build_model, objective='val_loss', max_trials=5)
 ```
 
 ### 批量大小选择
@@ -77,73 +76,72 @@ tuner = kt.RandomSearch(build_model, objective=&#x27;val_loss&#x27;, max_trials=
 
 #### 宽度调整技巧
 
-## 实例
+#### 实例
 
 ```
-# 使用Keras Tuner自动搜索最佳层大小
+# 使用`Keras Tuner`自动搜索最佳层大小
 def build_model(hp):
     model = tf.keras.Sequential()
     # 搜索最佳神经元数量
-    hp_units = hp.Int(&#x27;units&#x27;, min_value=32, max_value=512, step=32)
-    model.add(tf.keras.layers.Dense(units=hp_units, activation=&#x27;relu&#x27;))
+    hp_units = hp.Int('units', min_value=32, max_value=512, step=32)
+    model.add(tf.keras.layers.Dense(units=hp_units, activation='relu'))
     model.add(tf.keras.layers.Dense(10))
-    model.compile(optimizer=&#x27;adam&#x27;, loss=&#x27;mse&#x27;)
+    model.compile(optimizer='adam', loss='mse')
     return model
 ```
 
 #### 深度调整策略
 
-1、从浅层网络开始，逐步增加深度
+1. 从浅层网络开始，逐步增加深度
+2. 使用残差连接(`ResNet`)解决深度网络梯度消失问题
 
-2、使用残差连接(ResNet)解决深度网络梯度消失问题
-
-## 实例
+#### 实例
 
 ```
 # 残差块示例
 def residual_block(x, filters):
   shortcut = x
-  x = tf.keras.layers.Conv2D(filters, (3,3), padding=&#x27;same&#x27;)(x)
+  x = tf.keras.layers.Conv2D(filters, (3,3), padding='same')(x)
   x = tf.keras.layers.BatchNormalization()(x)
-  x = tf.keras.layers.Activation(&#x27;relu&#x27;)(x)
-  x = tf.keras.layers.Conv2D(filters, (3,3), padding=&#x27;same&#x27;)(x)
+  x = tf.keras.layers.Activation('relu')(x)
+  x = tf.keras.layers.Conv2D(filters, (3,3), padding='same')(x)
   x = tf.keras.layers.BatchNormalization()(x)
   x = tf.keras.layers.Add()([shortcut, x])
-  return tf.keras.layers.Activation(&#x27;relu&#x27;)(x)
+  return tf.keras.layers.Activation('relu')(x)
 ```
 
 ### 正则化技术
 
-#### Dropout
+#### `Dropout`
 
-## 实例
+#### 实例
 
 ```
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(128, activation=&#x27;relu&#x27;),
+    tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.Dropout(0.5),  # 50%的神经元会被随机丢弃
     tf.keras.layers.Dense(10)
 ])
 ```
 
-#### L1/L2正则化
+#### `L1`/`L2`正则化
 
-## 实例
+#### 实例
 
 ```
-# 添加L2正则化
+# 添加`L2`正则化
 tf.keras.layers.Dense(64, 
-                     activation=&#x27;relu&#x27;,
+                     activation='relu',
                      kernel_regularizer=tf.keras.regularizers.l2(0.01))
 ```
 
-#### 早停法(Early Stopping)
+#### 早停法(`Early Stopping`)
 
-## 实例
+#### 实例
 
 ```
 early_stopping = tf.keras.callbacks.EarlyStopping(
-    monitor=&#x27;val_loss&#x27;,
+    monitor='val_loss',
     patience=5,  # 连续5个epoch验证损失没有改善则停止
     restore_best_weights=True)  # 恢复最佳权重
 
@@ -157,12 +155,12 @@ model.fit(x_train, y_train,
 
 ### 数据增强
 
-## 实例
+#### 实例
 
 ```
 # 图像数据增强示例
 data_augmentation = tf.keras.Sequential([
-    tf.keras.layers.RandomFlip(&quot;horizontal&quot;),
+    tf.keras.layers.RandomFlip("horizontal"),
     tf.keras.layers.RandomRotation(0.1),
     tf.keras.layers.RandomZoom(0.1),
 ])
@@ -171,22 +169,22 @@ data_augmentation = tf.keras.Sequential([
 model.fit(data_augmentation(x_train), y_train, epochs=10)
 ```
 
-### 批归一化(Batch Normalization)
+### 批归一化(`Batch Normalization`)
 
-## 实例
+#### 实例
 
 ```
 model = tf.keras.Sequential([
     tf.keras.layers.Dense(64),
     tf.keras.layers.BatchNormalization(),
-    tf.keras.layers.Activation(&#x27;relu&#x27;),
+    tf.keras.layers.Activation('relu'),
     tf.keras.layers.Dense(10)
 ])
 ```
 
 ### 梯度裁剪
 
-## 实例
+#### 实例
 
 ```
 # 梯度裁剪防止梯度爆炸
@@ -197,17 +195,17 @@ optimizer = tf.keras.optimizers.Adam(clipvalue=1.0)
 
 ### 自动化超参数调优
 
-## 实例
+#### 实例
 
 ```
-# 使用Keras Tuner进行自动化调优
+# 使用`Keras Tuner`进行自动化调优
 tuner = kt.Hyperband(
     build_model,
-    objective=&#x27;val_accuracy&#x27;,
+    objective='val_accuracy',
     max_epochs=10,
     factor=3,
-    directory=&#x27;my_dir&#x27;,
-    project_name=&#x27;intro_to_kt&#x27;)
+    directory='my_dir',
+    project_name='intro_to_kt')
 
 tuner.search(x_train, y_train, epochs=10, validation_data=(x_val, y_val))
 best_model = tuner.get_best_models(num_models=1)[0]
@@ -215,11 +213,11 @@ best_model = tuner.get_best_models(num_models=1)[0]
 
 ### 模型蒸馏
 
-## 实例
+#### 实例
 
 ```
 # 教师模型训练
-teacher = tf.keras.models.load_model(&#x27;teacher_model.h5&#x27;)
+teacher = tf.keras.models.load_model('teacher_model.h5')
 
 # 学生模型定义
 student = tf.keras.Sequential([...])
@@ -233,20 +231,16 @@ def distillation_loss(y_true, y_pred, teacher_pred, temp=5.0):
 
 ## 调优实践建议
 
-1.  **建立基准**：先训练一个简单模型作为基准
+1. **建立基准**：先训练一个简单模型作为基准
+1. **一次调整一个参数**：避免同时改变多个参数
+1. **记录实验**：使用`TensorBoard`或`MLflow`跟踪实验
+1. **验证集使用**：确保验证集代表真实数据分布
+1. **考虑计算成本**：平衡调优效果与资源消耗
 
-1.  **一次调整一个参数**：避免同时改变多个参数
-
-1.  **记录实验**：使用TensorBoard或MLflow跟踪实验
-
-1.  **验证集使用**：确保验证集代表真实数据分布
-
-1.  **考虑计算成本**：平衡调优效果与资源消耗
-
-## 实例
+### 实例
 
 ```
-# 使用TensorBoard记录训练过程
-tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=&quot;./logs&quot;)
+# 使用`TensorBoard`记录训练过程
+tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir="./logs")
 model.fit(x_train, y_train, epochs=10, callbacks=[tensorboard_callback])
 ```

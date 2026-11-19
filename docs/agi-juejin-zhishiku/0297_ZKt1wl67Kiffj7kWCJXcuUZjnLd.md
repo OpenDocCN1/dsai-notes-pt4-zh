@@ -1,10 +1,11 @@
+
 # 苹果推出视频大语言模型 SlowFast-LaVA｜大模型论文周报（7.22-7.26）
 
 > 来源：[https://agijuejin.feishu.cn/docx/Yc6wdNy3MoM3ACxdD1HcKZR5nic](https://agijuejin.feishu.cn/docx/Yc6wdNy3MoM3ACxdD1HcKZR5nic)
 
-### 7.25-7.26
+## 7.25-7.26
 
-[MINT-1T：迄今为止最广泛、最多样的](https://github.com/mlfoundations/MINT-1T)开源多模态交错数据集
+### MINT-1T：迄今为止最广泛、最多样的开源多模态交错数据集
 
 多模态交错数据集具有自由形式的图像和文本交错序列，对于训练前沿大型多模态模型（LMM）至关重要。尽管开源 LMM 发展迅速，但大规模、多样化的开源多模态交错数据集仍然非常稀缺。
 
@@ -21,18 +22,14 @@ GitHub 地址：
 https://github.com/mlfoundations/MINT-1T
 
 > 想要第一时间获取每日热门大模型论文？
-
 > 扫描下方二维码申请入群，请务必备注「姓名+职业+公司/学校」，否则不予通过。
-
 > ps：我们会持续分享日报、周报、月报，敬请期待～
 
 ![](img/a096af941db2ef55fc5c2e2135b5adc7.png)
 
-[
+### Diffree：通过文本引导实现对象添加的文生图模型
 
-Diffree：通过文本引导实](https://github.com/OpenGVLab/Diffree)[现对象添加的文生图模型
-
-来自厦门大](https://github.com/OpenDevin/OpenDevin)学和上海 AI Lab 的研究团队解决了一个重要问题，即仅通过文本指导为图像添加对象。这是一个挑战，因为新对象必须无缝地融入图像中，并保持一致的视觉背景，如光照、纹理和空间位置。虽然现有的文本引导图像修补方法可以添加对象，但它们要么无法保持背景的一致性，要么需要繁琐的人工干预来指定边界框或用户涂鸦的遮罩。
+来自厦门大学和上海 AI Lab 的研究团队解决了一个重要问题，即仅通过文本指导为图像添加对象。这是一个挑战，因为新对象必须无缝地融入图像中，并保持一致的视觉背景，如光照、纹理和空间位置。虽然现有的文本引导图像修补方法可以添加对象，但它们要么无法保持背景的一致性，要么需要繁琐的人工干预来指定边界框或用户涂鸦的遮罩。
 
 为此，研究团队推出了 Diffree，这是一个文生图（T2I）模型，它仅通过文本控制就能方便地实现文本引导的对象添加。他们通过使用图像修补技术移除对象，制作了一个合成数据集 OABench。OABench 包含了 74K 个真实世界的元组，包括原始图像、移除对象后的修补图像、对象遮罩和对象描述。
 
@@ -46,7 +43,7 @@ GitHub 地址：
 
 https://github.com/OpenGVLab/Diffree
 
-OpenDevin：面向 AI 软件开发者的智能体开放平台
+### OpenDevin：面向 AI 软件开发者的智能体开放平台
 
 得益于大语言模型（LLM）的改进，与周围环境互动并产生影响变化的 AI 智能体（agent）得到了快速发展。
 
@@ -62,7 +59,7 @@ GitHub 地址：
 
 https://github.com/OpenDevin/OpenDevin
 
-ViPer：通过个体偏好学习实现生成模型的视觉个性化
+### ViPer：通过个体偏好学习实现生成模型的视觉个性化
 
 不同的用户对于同一提示生成的不同图像有不同的喜好。这引发了个性化的图像生成，即创建与个人视觉偏好相符的图像。然而，当前的生成模型是非个性化的，因为它们被调整为产出吸引广泛受众的输出。使用它们来生成与个人用户喜好对齐的图像依赖于用户迭代的手动提示工程，这是低效且不理想的。
 
@@ -78,7 +75,7 @@ https://arxiv.org/abs/2407.17365
 
 https://viper.epfl.ch/
 
-PERSONA：一个可复现的多元对齐测试平台
+### PERSONA：一个可复现的多元对齐测试平台
 
 语言模型（LM）的快速进步要求与多样化的用户价值观进行鲁棒的对齐。然而，当前的偏好优化方法往往未能捕捉到用户意见的多样性，反而强化了多数观点，边缘化了少数视角。来自 SynthLabs 和斯坦福大学的研究团队推出了一个可复现的测试平台 PERSONA，旨在评估和改进 LM 的多元对齐。
 
@@ -92,11 +89,11 @@ https://arxiv.org/abs/2407.17387
 
 https://www.synthlabs.ai/research/persona
 
-### 7.24
+## 7.24
 
-[O](https://cdn.openai.com/rule-based-rewards-for-language-model-safety.pdf)[penAI 最新研究：无需大量人工，用基于规则的奖励改善模型](https://github.com/openai/safety-rbr-code-and-data)[安全行为
+### OpenAI 最新研究：无需大量人工，用基于规则的奖励改善模型安全行为
 
-基于人类偏好的大语言模型（LL](https://stability.ai/news/stable-video-4d)M）的强化学习微调已被证明可以提升它们的能力和安全行为。然而，在涉及安全的情况下，如果没有向人类标注者提供精确的指示，收集到的数据可能会导致模型变得过于谨慎，或者以不希望的风格回应，例如带有评判性。此外，随着模型能力和使用模式的发展，可能需要花费大量成本来添加或重新标注数据以修改安全行为。
+基于人类偏好的大语言模型（LLM）的强化学习微调已被证明可以提升它们的能力和安全行为。然而，在涉及安全的情况下，如果没有向人类标注者提供精确的指示，收集到的数据可能会导致模型变得过于谨慎，或者以不希望的风格回应，例如带有评判性。此外，随着模型能力和使用模式的发展，可能需要花费大量成本来添加或重新标注数据以修改安全行为。
 
 为此，OpenAI 研究团队推出了一种新颖的偏好建模方法，该方法利用人工智能（AI）反馈，并且只需少量的人类数据。他们基于规则的奖励（RBR），使用一组规则来定义期望或非期望的行为（例如，拒绝不应带有评判性），并结合一个 LLM 评分器。
 
@@ -112,7 +109,7 @@ GitHub 地址：
 
 https://github.com/openai/safety-rbr-code-and-data
 
-Stability AI 推出 Stable Video 4D
+### Stability AI 推出 Stable Video 4D
 
 Stability AI 研究团队推出了 Stable Video 4D （SV4D），这是一种用于生成多帧和多视角一致的动态 3D 内容的潜在视频扩散模型。与之前依赖单独训练的视频生成和新视角合成的生成模型的方法不同，他们设计了一个统一的扩散模型来生成动态 3D 对象的新视角视频。
 
@@ -128,7 +125,7 @@ https://arxiv.org/pdf/2407.17470
 
 https://stability.ai/news/stable-video-4d
 
-[C](https://github.com/FreedomIntelligence/Chain-of-Diagnosis)oD：利用诊断链实现可解释的医疗智能体
+### CoD：利用诊断链实现可解释的医疗智能体
 
 随着大语言模型（LLMs）的出现，医学诊断领域发生了重大变革，但这些模型的可解释性问题在很大程度上仍未得到解决。
 
@@ -146,7 +143,7 @@ GitHub 地址：
 
 https://github.com/FreedomIntelligence/Chain-of-Diagnosis
 
-Cross Anything：通用四足机器人在复杂地形中导航
+### Cross Anything：通用四足机器人在复杂地形中导航
 
 视觉语言模型（VLM）在各种机器人任务中的应用取得了显著的成就，但用于四足机器人导航的基础模型却鲜有探索。
 
@@ -162,7 +159,7 @@ https://arxiv.org/abs/2407.16412
 
 https://cross-anything.github.io/
 
-INF-LaVA：高分辨率多模态大语言模型的双视角感知
+### INF-LaVA：高分辨率多模态大语言模型的双视角感知
 
 随着数据可用性和计算资源的进步，多模态大语言模型（MLLM）已在各个领域大显身手。 然而，MLLM 中视觉编码器的二次方复杂性限制了输入图像的分辨率。 目前大多数方法都是通过将高分辨率图像裁剪成较小的子图像，然后由视觉编码器独立处理。尽管能捕捉到足够的局部细节，但这些子图像缺乏全局背景，无法相互影响。
 
@@ -178,7 +175,7 @@ GitHub 地址：
 
 https://github.com/WeihuangLin/INF-LLaVA
 
-T2V-CompBench：首个合成文生视频模型定制基准
+### T2V-CompBench：首个合成文生视频模型定制基准
 
 文生视频（T2V）模型已经取得了长足的进步，但它们将不同对象、属性、动作和运动合成到视频中的能力仍有待开发。以往的文生视频基准也忽略了这一重要的评估能力。
 
@@ -194,7 +191,7 @@ https://arxiv.org/abs/2407.14505
 
 https://t2v-compbench.github.io/
 
-RedAgent：可生成上下文感知越狱提示的多智能体 LLM 系统
+### RedAgent：可生成上下文感知越狱提示的多智能体 LLM 系统
 
 最近，GPT-4 等大语言模型（LLM）已被集成到 Code Copilot 等许多实际应用中。这些应用大大扩展了 LLM 的攻击面，使其面临各种威胁。其中，通过越狱提示诱发毒性反应的越狱攻击引发了严重的安全问题。为了识别这些威胁，越来越多的红队方法通过制作越狱提示来模拟潜在的对抗场景。然而，现有的红队方法并没有考虑到 LLM 在不同场景下的独特漏洞，因此很难调整越狱提示来发现特定场景下的漏洞。同时，这些方法仅限于使用一些突变操作来完善越狱模板，缺乏适应不同场景的自动化和可扩展性。
 
@@ -206,9 +203,9 @@ RedAgent：可生成上下文感知越狱提示的多智能体 LLM 系统
 
 https://arxiv.org/abs/2407.16667
 
-### 7.23
+## 7.23
 
-Falcon2-11B 技术报告
+### Falcon2-11B 技术报告
 
 Technology Innovation Institute 推出了一个在超过五万亿 token 上训练的基础模型 Falcon2-11B 及其多模态版本 Falcon2-11B-vlm。他们介绍了在 Falcon2-11B 训练过程中的发现，该训练采用了多阶段方法，其中早期阶段根据上下文的长度进行区分，最后阶段则使用了高质量数据集。
 
@@ -220,7 +217,7 @@ Technology Innovation Institute 推出了一个在超过五万亿 token 上训�
 
 https://arxiv.org/abs/2407.14885
 
-苹果推出视频大语言模型 SlowFast-LaVA
+### 苹果推出视频大语言模型 SlowFast-LaVA
 
 苹果公司推出的 SlowFast-LaVA（简称 SF-LaVA）是一种无需训练的视频大语言模型（LLM），它可以在不超出常用 LLM 的 token 预算的情况下，同时捕捉详细的空间语义和长距离的时间上下文。
 
@@ -232,19 +229,23 @@ https://arxiv.org/abs/2407.14885
 
 https://arxiv.org/abs/2407.15841
 
-谷歌推出可操纵的多目标微调通用框架 CLP
+### 谷歌推出可操纵的多目标微调通用框架 CLP
 
 基于奖励的微调对于将语言政策与预期行为（如创造性和安全性）对齐至关重要。这方面的一个关键挑战是开发可操纵的语言模型，以灵活高效的方式权衡多个（相互冲突的）目标。
 
 谷歌团队推出了一种针对多个目标对语言模型进行微调的通用框架 CLP。在多任务训练和参数高效微调技术的基础上，CLP 可以学习可操纵的模型，从而在推理时有效地权衡相互冲突的目标。值得注意的是，这并不需要训练或维护多个模型来实现不同目标之间的权衡。
 
+
+
+## CLP 框架在多目标微调中的优势
+
 一系列广泛的实验和分析表明，CLP 框架所学习的可操纵模型优于目前 SOTA 多目标微调方法，并在帕累托（Pareto）上占优势。
 
 论文链接：
 
-https://arxiv.org/abs/2407.15762
+`https://arxiv.org/abs/2407.15762`
 
-GET-Zero：用于零样本实体泛化的图形实体 transformer
+## GET-Zero：用于零样本实体泛化的图形实体 transformer
 
 来自斯坦福大学的研究团队推出了一种用于学习体现感知控制策略的模型架构和训练程序 GET-Zero，该架构无需重新训练即可立即适应新的硬件变化。
 
@@ -254,17 +255,17 @@ GET-Zero：用于零样本实体泛化的图形实体 transformer
 
 论文链接：
 
-https://arxiv.org/abs/2407.15002
+`https://arxiv.org/abs/2407.15002`
 
 GitHub链接：
 
-https://github.com/real-stanford/get_zero
+`https://github.com/real-stanford/get_zero`
 
 项目地址：
 
-https://get-zero-paper.github.io/
+`https://get-zero-paper.github.io/`
 
-浙大团队推出 Odyssey：让智能体掌握开放世界技能
+## 浙大团队推出 Odyssey：让智能体掌握开放世界技能
 
 最近的一些研究深入探讨了如何构建适用于开放世界具身环境（如 Minecraft）的通用型智能体。尽管取得了一些成果，但现有工作主要集中在解决基本的程序任务上，如收集材料和制作工具，并将获取钻石任务视为最终目标。这种局限性源于智能体可采取的行动范围较窄，要求它们从头开始学习有效的长远策略。因此，在开放世界中发现多样化的游戏机会变得极具挑战性。
 
@@ -276,29 +277,29 @@ Odyssey 包括三个关键部分：(1) 带有开放世界技能库的交互式�
 
 论文链接：
 
-https://arxiv.org/abs/2407.15325
+`https://arxiv.org/abs/2407.15325`
 
 GitHub链接：
 
-https://github.com/zju-vipa/Odyssey
+`https://github.com/zju-vipa/Odyssey`
 
-牛津团队推出零样本音频描述框架，无需额外训练
+## 牛津团队推出零样本音频描述框架，无需额外训练
 
 在这项工作中，来自牛津大学的研究团队旨在以无需训练的方式生成电影和电视剧的音频描述（AD），他们利用视觉语言模型（VLM）和大语言模型（LLM）为这项任务开发了视觉和文本 prompt 策略。
 
 他们的贡献包括三个方面：(1) 证明了如果通过视觉指示直接 prompt 字符信息，VLM 可以成功地命名和指代字符，而无需任何微调；(2) 开发了一个分两个阶段生成 AD 的过程，第一阶段要求 VLM 全面描述视频，第二阶段利用 LLM 将密集的文本信息总结为一个简洁的 AD 句子；(3) 制定了一个新的电视音频描述数据集。
 
-此方法被命名为 AutoAD-Zero，在生成电影和电视剧的 AD 方面表现出色，甚至可与某些根据真实AD 微调的模型相媲美，获得了 SOTA 级的 CRITIC 分数。
+此方法被命名为 AutoAD-Zero，在生成电影和电视剧的 AD 方面表现出色，甚至可与某些根据真实 AD 微调的模型相媲美，获得了 SOTA 级的 CRITIC 分数。
 
 论文链接：
 
-https://arxiv.org/abs/2407.15850
+`https://arxiv.org/abs/2407.15850`
 
 项目地址：
 
-https://www.robots.ox.ac.uk/~vgg/research/autoad-zero/
+`https://www.robots.ox.ac.uk/~vgg/research/autoad-zero/`
 
-LongVideoBench：长上下文交错视频语言理解基准
+## LongVideoBench：长上下文交错视频语言理解基准
 
 大型多模态模型（LMM）正在处理越来越长、越来越丰富的输入。尽管取得了进展，但很少有公共基准可用于衡量这种发展。
 
@@ -306,13 +307,13 @@ LongVideoBench：长上下文交错视频语言理解基准
 
 为此，团队将主要挑战解释为从长输入中准确检索和推理详细的多模态信息。因此，他们制定了一项新颖的视频 QA 任务，称为“引用推理”（referring reasoning）。具体来说，作为问题的一部分，它包含一个引用相关视频上下文的引用查询，称为引用上下文。然后，模型需要从参考上下文中推理出相关的视频细节。按照引用推理的范例，团队在 17 个细粒度类别中整理出了 6678 道由人类标注的多选题，为长视频理解建立了最全面的基准之一。
 
-评估表明，LongVideoBench 即使对 SOAT 专有模型（如 GPT-4o、Gemini-1.5-Pro、GPT-4-Turbo）也提出了重大挑战，而开源模型的性能差距更大。此外，结果表明，只有当模型能够处理更多帧时，它们在基准测试中的性能才会提高，因此 LongVideoBench 被定位为评估未来一代长上下文 LMM 的重要基准。
+评估表明，LongVideoBench 即使对 SOTA 专有模型（如 GPT-4o、Gemini-1.5-Pro、GPT-4-Turbo）也提出了重大挑战，而开源模型的性能差距更大。此外，结果表明，只有当模型能够处理更多帧时，它们在基准测试中的性能才会提高，因此 LongVideoBench 被定位为评估未来一代长上下文 LMM 的重要基准。
 
 论文链接：
 
-https://arxiv.org/abs/2407.15754
+`https://arxiv.org/abs/2407.15754`
 
-Cinemo：利用运动扩散模型制作一致且可控的图像动画
+## Cinemo：利用运动扩散模型制作一致且可控的图像动画
 
 扩散模型已在图像动画领域取得了长足的进步。然而，如何与输入静态图像的详细信息（如输入静态图像的风格、背景和对象）保持时空一致性，并在文本提示的引导下确保动画视频叙事的流畅性，仍然具有挑战性。
 
@@ -324,13 +325,13 @@ Cinemo：利用运动扩散模型制作一致且可控的图像动画
 
 论文链接：
 
-https://arxiv.org/abs/2407.15642
+`https://arxiv.org/abs/2407.15642`
 
-### 7.22
+## 7.22
 
-[快手团队推出高效视觉语言模型 EVLM
+### 快手团队推出高效视觉语言模型 EVLM
 
-在多模态语言模型（](https://github.com/Stability-AI/stable-audio-tools)MMLM）领域，大多数方法都建立在类似于 LLaVA 的架构上。这些模型使用单层 ViT 特征作为视觉 prompt，将其与文本 token 一起直接输入语言模型。但是，在处理长序列的视觉信号或视频等输入时，语言模型的自注意力机制会导致大量的计算开销。此外，使用单层 ViT 特征使得大语言模型（LLM）难以完全感知视觉信号。
+在多模态语言模型（MMLM）领域，大多数方法都建立在类似于 LLaVA 的架构上。这些模型使用单层 ViT 特征作为视觉 prompt，将其与文本 token 一起直接输入语言模型。但是，在处理长序列的视觉信号或视频等输入时，语言模型的自注意力机制会导致大量的计算开销。此外，使用单层 ViT 特征使得大语言模型（LLM）难以完全感知视觉信号。
 
 为此，来自快手的研究团队提出了一种高效的多模态语言模型，以最大限度地降低计算成本，同时使模型尽可能全面地感知视觉信号。他们的方法主要包括：(1) 采用与 Flamingo 类似的交叉注意力图像-文本交互。(2) 利用分层 ViT 特征。(3) 引入混合专家（MoE）机制，以提高模型的有效性。
 
@@ -338,9 +339,9 @@ https://arxiv.org/abs/2407.15642
 
 论文链接：
 
-https://arxiv.org/abs/2407.14177
+`https://arxiv.org/abs/2407.14177`
 
-苹果团队推出 LazyLLM：动态剪枝 token ，实现高效长上下文 LLM 推理
+### 苹果团队推出 LazyLLM：动态剪枝 token，实现高效长上下文 LLM 推理
 
 基于 transformer 的大语言模型（LLM）推理包括两个连续阶段：(1) 计算 prompt 的键值缓存并生成第一个 token 的预填充阶段，(2) 生成后续 token 的解码阶段。
 
@@ -348,13 +349,13 @@ https://arxiv.org/abs/2407.14177
 
 为此，来自苹果公司的研究团队提出了一种名为 LazyLLM 的新方法。它可以在预填充和解码阶段选择性地计算对预测下一个 token 很重要的 token 键值。与一次性剪枝 prompt 的静态剪枝方法相反，LazyLLM 允许语言模型在不同的生成步骤中动态地从上下文中选择不同的 token 子集，即使这些 token 子集可能在之前的步骤中被剪枝过。
 
-在各种任务的标准数据集上进行的大量实验表明， LazyLLM 是一种通用方法，可以与现有的语言模型无缝集成，在不进行微调的情况下显著加快生成速度。例如，在多文档问答任务中，LazyLLM 将 LLama 2 7B 模型的预填充阶段加快了 2.34 倍，同时保持了准确性。
+在各种任务的标准数据集上进行的大量实验表明，LazyLLM 是一种通用方法，可以与现有的语言模型无缝集成，在不进行微调的情况下显著加快生成速度。例如，在多文档问答任务中，LazyLLM 将 LLama 2 7B 模型的预填充阶段加快了 2.34 倍，同时保持了准确性。
 
 论文链接：
 
-https://arxiv.org/abs/2407.14057
+`https://arxiv.org/abs/2407.14057`
 
-Stability AI 推出 Stable Audio Open
+### Stability AI 推出 Stable Audio Open
 
 开放的生成模型对社区来说至关重要，它允许进行微调，并作为展示新模型的基准。然而，目前大多数文本转音频模型都是私有的，艺术家和研究人员无法在此基础上建立模型。
 
@@ -364,13 +365,13 @@ Stability AI 推出 Stable Audio Open
 
 论文链接：
 
-https://arxiv.org/abs/2407.14358
+`https://arxiv.org/abs/2407.14358`
 
 GitHub 地址：
 
-https://github.com/Stability-AI/stable-audio-tools
+`https://github.com/Stability-AI/stable-audio-tools`
 
-Google DeepMind：利用 JumpReLU 稀疏自动编码器提高重建保真度
+### Google DeepMind：利用 JumpReLU 稀疏自动编码器提高重建保真度
 
 稀疏自动编码器（SAE）是一种很有前途的无监督方法，可用于识别语言模型（LM）激活中的因果相关和可解释的线性特征。为了在下游任务中发挥作用，SAE 需要忠实地分解 LM 激活；然而，为了具有可解释性，分解必须是稀疏的。这是两个相互矛盾的目标。
 
@@ -380,9 +381,9 @@ JumpReLU SAE 是对 vanilla (ReLU) SAE 的简单修改，研究团队用不连�
 
 论文链接：
 
-https://arxiv.org/abs/2407.14435
+`https://arxiv.org/abs/2407.14435`
 
-微软新研究：用“打破-修复”循环将语言模型对齐
+### 微软新研究：用“打破-修复”循环将语言模型对齐
 
 最近在语言模型训练方面的创新表明，有可能创建出体积小到足以在智能手机上运行的高性能模型。随着这些模型被部署到越来越多的领域，确保将它们与人类偏好和安全考虑对齐至关重要。
 
@@ -392,9 +393,9 @@ https://arxiv.org/abs/2407.14435
 
 论文链接：
 
-https://arxiv.org/abs/2407.13833
+`https://arxiv.org/abs/2407.13833`
 
-MIT 团队推出 FLUTE：查找表量化 LLM 的快速矩阵乘法
+### MIT 团队推出 FLUTE：查找表量化 LLM 的快速矩阵乘法
 
 大语言模型（LLM）的部署通常受到内存带宽的限制，其中主要的瓶颈是将模型参数从 GPU 的全局内存传输到其寄存器的成本。如果与融合了去量化和矩阵运算的定制内核相结合，纯权重量化就能通过减少内存移动量来加快推理速度。
 
@@ -406,8 +407,8 @@ MIT 团队推出 FLUTE：查找表量化 LLM 的快速矩阵乘法
 
 论文链接：
 
-https://arxiv.org/abs/2407.10960
+`https://arxiv.org/abs/2407.10960`
 
 GitHub地址：
 
-https://github.com/HanGuo97/flute
+`https://github.com/HanGuo97/flute`

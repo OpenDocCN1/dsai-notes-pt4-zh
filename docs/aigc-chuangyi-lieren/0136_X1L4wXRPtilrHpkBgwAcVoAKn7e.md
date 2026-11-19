@@ -1,13 +1,13 @@
+
 # 南方周末2025新年献词｜用你的活法定义世界的算法
 
 > 来源：[https://aigcreative.feishu.cn/docx/BBRgd849NoetZ1xyGe0c4iCVnzd](https://aigcreative.feishu.cn/docx/BBRgd849NoetZ1xyGe0c4iCVnzd)
-
+>
 > 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/KiAvmaFlpMjbSI2nrfskCA)qq.com/s/KiAvmaFl...
-
+>
 > 来源-👸号：南方周末
 
-
-**▲ **制图/赖子欢（部分素材由AI生成）
+**▲** 制图/赖子欢（部分素材由AI生成）
 
 > 用你的活法定义世界的算法，将你的真实汇成世界的真相，真正点亮黑夜的并不只有太阳，还有内心的火、眼中的光。
 

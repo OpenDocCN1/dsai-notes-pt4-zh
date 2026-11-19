@@ -1,7 +1,7 @@
+
 # 20240401-Kimi爆火，但我更推荐这款Chrome插件：Kimi Copilot！关键还免费！
 
 > 来源：[https://aigcreative.feishu.cn/docx/DffRdGH3poAFYUxAOSYc1KnFnnd](https://aigcreative.feishu.cn/docx/DffRdGH3poAFYUxAOSYc1KnFnnd)
-
 > 链接：https://mp.weixin.qq.com/s/_c8TVB4oUV0OZ7jnHej-KQ
 
 ![](img/ce8d1ed40496fba65eff1cd4168c9d0e.png)
@@ -24,7 +24,6 @@
 
 这不就是TLDR类的产品吗？
 
-
 近期Kimi不是爆火嘛，就想着试试这款插件，看看有啥功能？
 
 敢号称Copilot的产品不多。
@@ -33,25 +32,19 @@
 
 简直就是Chrome浏览器必备的Copilot呀！对于一些简单的场景需求，就不用再打开Kimi网站，直接一键打开插件，就可以满足需求了。
 
-1、遇到一个全新的网站，点开【Kimi Copilot】插件：立马给你总结该网站的情况，还详细总结该页面的内容。
+1. 遇到一个全新的网站，点开【Kimi Copilot】插件：立马给你总结该网站的情况，还详细总结该页面的内容。
 
+2. 打开CATL宁德时代的官网，点开【Kimi Copilot】插件：立马给你总结：根据提供的网页内容，该链接是宁德时代的官方网站。宁德时代是一家提供新能源解决方案的公司，主要业务涵盖乘用车、商业应用、工程机械、电动港口以及储能系统等领域的解决方案。公司注重研发和创新，拥有前沿技术和组合换电解决方案。在新闻动态方面，宁德时代近期有几个重要的新闻发布，包括与中远集团的合作、工程机械行业的新产品发布以及连续7年保持全球第一的市场地位。此外，公司还强调了其企业文化、战略和可持续发展的理念，并提供了加入公司、制造、服务和投资者关系等相关信息。网站还提供了联系宁德时代的方式，包括服务代理商申请、供应商入口和配套车型查询等服务。最后，网站声明了其版权信息、隐私政策和法律声明，并列出了相关的备案和查询号码。
 
-2、打开CATL宁德时代的官网，点开【Kimi Copilot】插件：
+3. 打开一片虎嗅网站上的一片长文，点开【Kimi Copilot】插件：立马总结出概要。
 
+4. 中文网站内容可以识别，英文网站呢？一样也可以！
 
-立马给你总结：根据提供的网页内容，该链接是宁德时代的官方网站。宁德时代是一家提供新能源解决方案的公司，主要业务涵盖乘用车、商业应用、工程机械、电动港口以及储能系统等领域的解决方案。公司注重研发和创新，拥有前沿技术和组合换电解决方案。在新闻动态方面，宁德时代近期有几个重要的新闻发布，包括与中远集团的合作、工程机械行业的新产品发布以及连续7年保持全球第一的市场地位。此外，公司还强调了其企业文化、战略和可持续发展的理念，并提供了加入公司、制造、服务和投资者关系等相关信息。网站还提供了联系宁德时代的方式，包括服务代理商申请、供应商入口和配套车型查询等服务。最后，网站声明了其版权信息、隐私政策和法律声明，并列出了相关的备案和查询号码。
-
-3、打开一片虎嗅网站上的一片长文，点开【Kimi Copilot】插件：立马总结出概要。
-
-
-4、中文网站内容可以识别，英文网站呢？一样也可以！
-
-
-5、推特呢？也可以！
+5. 推特呢？也可以！
 
 ![](img/ca0ff594a23b392e0a82d333985067ae.png)
 
-6、最后，甚至用Kimi Copilot给自己总结了一下。
+6. 最后，甚至用Kimi Copilot给自己总结了一下。
 
 ![](img/a4d8000658ff40f8aff92659ecd0564e.png)
 
@@ -59,6 +52,6 @@
 
 总起来就是2个字：真香！赶紧试试吧~~
 
-**Chrome插件下载体验链接或者Chrome插**件商店搜索“Kimi Copilot”：https://chromewebstore.google.com/detail/kimi-copilot/icmdpfpmbfijfllafmfogmdabhijlehn
+**Chrome插件下载体验链接或者Chrome插件商店搜索“Kimi Copilot”**：https://chromewebstore.google.com/detail/kimi-copilot/icmdpfpmbfijfllafmfogmdabhijlehn
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

@@ -1,3 +1,4 @@
+
 # 使用SD+AI成片+ChatGPT来制作短片之-小女孩端午节一天的故事
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/SqSKdc0K5odp45xFAvbc7QKKnGg](https://xuqiwei1986.feishu.cn/docx/SqSKdc0K5odp45xFAvbc7QKKnGg)
@@ -43,61 +44,51 @@
 我们可以发现分镜中缺少了一些通用元素，比如中国风、小女孩的衣服颜色等，所以我大概调整了一下，我是在调试stable diffusion提示词生成器的时候为了效果更好，所以是手动调整的，当然大家也可以使用gpt调整。调整后的分镜绘本如下：
 
 > 好的，以下是对应的中文分镜：
-
 >
-
 > 场景一：小菲醒来
-
+>
 > 画面一：现代风，全身照，早上小菲睁开眼睛，坐起来，在单人床上，小菲穿着红色喜庆的短袖，红色的短裙，看向窗外,她非常开心，因为今天是端午节，宽敞干净的房间里有书架、柜子，柜子上摆放着台灯。
-
+>
 > 画面二：现代风，全身照，她跳下床，跑出房间
-
+>
 > 画面三：现代风，全身，跳下床，小菲高兴的站在屋门口，小菲穿着红色喜庆的短袖，红色的短裙，小菲的侧面角度，打开门看向院子
-
+>
 > 画面四：现代风，远景，爸爸，妈妈高兴的坐在桌子旁边包粽子，农家小院院子里有大树，院墙，镜头角度为俯视镜头
-
 >
-
 > 场景二：布置时间
-
+>
 > 画面一：现代风，全身照，广角镜头，小菲穿着红色喜庆的短袖，红色的短裙，她正在用五彩纸条和红色葫芦装饰房门。侧面照片，面向门
-
+>
 > 画面二：现代风，全身照，广角镜头，她环顾四周，看到邻居们也在装饰他们的门。
-
+>
 > 画面三：80年代怀旧风，全身照，广角镜头，她微笑着，欣赏着装饰物的鲜艳颜色。
-
 >
-
 > 场景三：龙舟比赛
-
+>
 > 画面一：现代风，小菲穿着红色喜庆的短袖，红色的短裙，全身照，广角镜头，小菲和她的5个小伙伴到达了水边，准备龙舟比赛。街上的人非常热闹，湖旁边有很多人
-
+>
 > 画面二：现代风，全身照，广角镜头，他们登上龙舟，拿起木桨，准备开始比赛，小菲和其他伙伴穿着同样的衣服，都是红色的上衣和红色的短裙。
-
+>
 > 画面三：现代风，全身照，广角镜头，比赛开始了，他们的龙舟在水面上快速前行。多个船队
-
+>
 > 画面四：现代风，全身照，广角镜头，他们在比赛中面临挑战，克服障碍。多个船队
-
+>
 > 画面五：现代风，全身照，广角镜头，他们的龙舟第一名跨过了终点线，小菲和她的队友庆祝胜利。
-
 >
-
 > 场景四：午餐时间
-
-> 画面一：现代风，全身照，广角镜头，小菲和她的家人，爸爸，妈妈，爷爷，奶奶，一起坐在餐桌旁享用午餐。
-
-> 画面二：现代风，全身照，广角镜头，他们分享美味的粽子和其他传统端午节的小吃。
-
-> 画面三：现代风，全身照，广角镜头，他们一起聊天笑闹，分享故事，享受彼此的陪伴。
-
 >
-
+> 画面一：现代风，全身照，广角镜头，小菲和她的家人，爸爸，妈妈，爷爷，奶奶，一起坐在餐桌旁享用午餐。
+>
+> 画面二：现代风，全身照，广角镜头，他们分享美味的粽子和其他传统端午节的小吃。
+>
+> 画面三：现代风，全身照，广角镜头，他们一起聊天笑闹，分享故事，享受彼此的陪伴。
+>
 > 场景五：快乐的结局
-
+>
 > 画面一：现代风，全身照，广角镜头，小菲感到这一天过得很愉快和满意。
-
+>
 > 画面二：现代风，全身照，广角镜头，太阳落山，月亮，星星，夜晚的美景，小菲向家人和朋友微笑，感恩他们的爱和支持。
-
+>
 > 画面三：现代风，全身照，广角镜头，太阳落山，月亮，星星，窗外的夜景，这一天结束了，小菲在床上微笑，但小菲对端午节的美好回忆将永存。
 
 ### 5、调教stable diffusion提示词生成器
@@ -111,55 +102,35 @@
 由于我使用的是zelinAI工具，所以必须要有输出格式。为了让它更好的理解提示词，所以我给了它一些例子，都写在的输出格式参数中：
 
 > 1、输出格式
-
+>
 > 正向提示词为：
-
+>
 > 反向提示词为：
-
 >
-
 > 2、学习stable diffusion的语法规则如下：
-
+>
 > 正向提示词 参考格式1：(ultra-detailed, realistic:1.3), illustration, 1 girl, cute, innocent, (detailed eyes:1.1), (detailed hair:1.1), (detailed clothing:1.1), sitting on a swing, beautiful detailed sky, green grass, flowers, (smiling:1.2), (blushing cheeks), (barefoot), (masterpiece:1.4), (best quality), (colorful), (bright and cheerful)
-
 >
-
 > 正向提示词参考格式2：1girl <lora:HinghoiStyleMSMerryweather:0.8>, bokeh breasts black happy, screencap [running:6] outdoors, walking daylight, megathickthighs thighhighs blue blue blue, blue_hair solo portrait,, (masterpiece, best quality, high resolution), Merryweather Style, chan, (isometric:1.0), double exposure, bubble,
-
+>
 > mid shot, full body,
-
 >
-
 > 正向提示词参考格式3 ：masterpiece, best quality, 1girl, (colorful),(finely detailed beautiful eyes and detailed face),cinematic lighting,bust shot,extremely detailed CG unity 8k wallpaper,smile,intricate skirt,((flying petal)),(Flowery meadow) sky, cloudy_sky, building, moonlight, moon, night, (dark theme:1.3), light, fantasy,looking at viewer,
-
 >
-
 > 正向提示词 参考格式4：(RAW photo, best quality), (realistic, photo-realistic:1.3), masterpiece, an extremely delicate and beautiful, extremely detailed, CG, unity , 2k wallpaper, Amazing, finely detail, light smile, extremely detailed CG unity 8k wallpaper, huge filesize, ultra-detailed, highres, absurdres, soft light, (((medium hair:1.3), short bang, pink hair, floating hair novafrogstyle)), beautiful detailed girl, detailed fingers, extremely detailed eyes and face, beautiful detailed nose, beautiful detailed eyes, long eyelashes, light on face, looking at viewer, (closed mouth:1.2), 1girl, cute, young, mature face, (full body:1.3), ((small breasts)), realistic face, realistic body, beautiful detailed thigh, (ulzzang-6500-v1.1:0.8), <lora:koreanDollLikeness_v15:0.4>, business suit, cross-laced clothes, collared shirt, open clothes, in office, detailed office, open cardigan, black thighhighs, miniskirt, black underwear, unbuttoned shirt,
-
 >
-
 > 正向提示词参考格式5：cute girl, sitting in grass, soles, feet up, nature, green grass, trees, smiling, slim body, small breasts, long brown hair, blue eyes, crop top, sweatpants, city, sunset, neon lights, ultra detailed, masterpiece, best quality, badhandv4, <lora:animefeetv4:0.6>
-
 >
-
 > 正向提示词参考格式6：close-up photo of an evil slimy black lizard, (open mouth:1.4), (sharp white fangs:1.3), cinematic, beautiful, glowing eyes, detailed intricate background, sharp focus, <lora:Add_Detail:1> araknope
-
 >
-
 > 反向提示词参考格式1：Negative prompt: paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, extra fingers, fewer fingers, ((watermark:2)), (white letters:1), (multi nipples), bad anatomy, bad hands, text, error, missing fingers, missing arms, missing legs, extra digit, fewer digits, cropped, worst quality, jpeg artifacts, signature, watermark, username, bad feet, {Multiple people}, blurry, poorly drawn hands, poorly drawn face, mutation, deformed, extra limbs, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, mutated hands, polar lowres, bad body, bad proportions, gross proportions, wrong feet bottom render, abdominal stretch, briefs, knickers, kecks, thong, {{fused fingers}}, {{bad body}},
-
+>
 > bad-picture-chill-75v,  ng_deepnegative_v1_75t, EasyNegative, bad proportion body to legs, wrong toes, extra toes, missing toes, weird toes, 2 body, 2 pussy, 2 upper, 2 lower, 2 head, 3 hand, 3 feet, extra long leg, super long leg, mirrored image, mirrored noise, (bad_prompt_version2:0.8), aged up, old,
-
 >
-
 > 反向提示词参考格式2：Negative prompt: (nsfw:1.5), haze, fog, worst quality, low quality, lowres, blurry, jpeg artifacts, watermark, text, error, signature, username, artist name, bad anatomy, letterbox, tattoo, text, letterboxed, verybadimagenegative_v1.3, EasyNegativeV2
-
 >
-
 > 上述为标准的stable diffusion 语法的参考，请您认真学习。
-
 >
-
 > 3、正向提示词输出格式参考如下，下面的提示词将一个完整的提示词分开描述了，清晰的表达了画面质量、画面的主要人物或动物的完整描述、场景细节等。请使用英文输出。
 
 ### 6、画面分镜转提示词
@@ -200,11 +171,13 @@
 
 你可以将所有的画面的提示词通过换行隔开放到一个文件中，在这里上传文件，格式大概是这样的：
 
+
+
 ![](img/5f9482b5531814ecebc092968ce97af8.png)
 
 你可以批量生成图片然后进行选图。这个时间比较慢，我为了验证提示词生成的准确性，我没有使用这种方式，大家可自行尝试。
 
-### 9、AI成片并替换素材
+## 9、AI成片并替换素材
 
 这里我是用的是百家号的ai成片功能，先将我的画面放到文案中，然后点击成片：
 
@@ -212,7 +185,7 @@
 
 当然，你也可以使用度卡软件，也是不错的。成片之后，手动上传素材，将每一帧的素材替换成自己生成的图片：
 
-**这个过程比较简****单，这****里**不详细说明。成品如下：题目：《小菲过端午节》
+这个过程比较简单，这里不详细说明。成品如下：题目：《小菲过端午节》
 
 ![](img/f787c6b670bbb8ccf5061fb53aa879f0.png)
 

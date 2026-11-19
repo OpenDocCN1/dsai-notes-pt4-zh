@@ -1,11 +1,8 @@
+
 # AI 生活研究所【工具】
 
 > 来源：[https://agispace.feishu.cn/docx/ZgbMd9bdmodsUUx5LBWc27UgnWf](https://agispace.feishu.cn/docx/ZgbMd9bdmodsUUx5LBWc27UgnWf)
-
 > 👸号：AI 生活研究所
-
->
-
 > 探索AI人工智能时代的新生活方式!了解掌握最新的AI技术，如AI写作、AI绘画、AI视频制作，以及各种AI软件应用，让生活智慧又有趣!
 
 ![](img/acb275b3180a89f5f412aa9fe5747214.png)

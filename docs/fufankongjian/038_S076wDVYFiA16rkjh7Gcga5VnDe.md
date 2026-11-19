@@ -1,3 +1,4 @@
+
 # QWQ-Qwen团队开源推理大模型
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/Wm0wd7pQVockNZxn5BicxPccnjp](https://kq4b3vgg5b.feishu.cn/docx/Wm0wd7pQVockNZxn5BicxPccnjp)
@@ -11,9 +12,7 @@
 QWQ模型相关链接信息：
 
 +   Blog: https://qwenlm.github.io/blog/qwq-32b-preview/
-
 +   HuggingFace: https://huggingface.co/Qwen/QwQ-32B-Preview
-
 +   线上Demo: https://modelscope.cn/studios/Qwen/QwQ-32B-preview
 
 就在今天凌晨（2024.11.28），Qwen团队发布了类o1推理大模型--QWQ。
@@ -26,19 +25,19 @@ QWQ模型相关链接信息：
 
 ---
 
-🍻现开设了大**模型学习交流群，**扫描下👇码，来遇见更多志同道合的小伙伴~
+🍻现开设了大模型学习交流群，扫描下👇码，来遇见更多志同道合的小伙伴~
 
-海量硬核独家技术**干货内容**+无门槛**技术交流**~
+海量硬核独家技术干货内容+无门槛技术交流~
 
 ![](img/19616aeacc8856ff2057e2265ec8f7bd.png)
 
-上图**扫码**👆即刻入群！
+上图扫码👆即刻入群！
 
-📍 社群技**术交流氛**围浓厚，不定期开设硬**核干货&前沿技术公开课噢**~
+📍 社群技术交流氛围浓厚，不定期开设硬核干货&前沿技术公开课噢~
 
 ---
 
-**线上测试**
+### 线上测试
 
 线上demo网址：https://modelscope.cn/studios/Qwen/QwQ-32B-preview
 
@@ -60,10 +59,7 @@ Q先生：我也知道了。
 
 部分答案：
 
-看看花色：
-
 +   如果花色是红桃，可能的牌是红桃Q、红桃4
-
 +   如果花色是方块，可能的牌是方块5
 
 所以，如果Q先生的花色是红桃，还有两张牌；如果是方块，只有一张牌。
@@ -90,11 +86,10 @@ Q先生：我也知道了。
 
 Linux系统：
 
-1.  操作系统：推荐Ubuntu 22.04或更高版本，或其他支持的Linux发行版。
-
-1.  显卡:推荐使用 NVIDIA GPU（如 T4、V100、A10 等），或 AMD GPU，在本流程中至少需要 22GB 的显存。
-
-1.  内存：至少 16GB 的 RAM，在运行更大的模型的时候需要更多内存。 4. 硬盘空间：在每个模型的支持列表中会显示安装所需的空间大小，在本流程中最少20GB用于模型下载。
+1. 操作系统：推荐Ubuntu 22.04或更高版本，或其他支持的Linux发行版。
+2. 显卡：推荐使用 NVIDIA GPU（如 T4、V100、A10 等），或 AMD GPU，在本流程中至少需要 22GB 的显存。
+3. 内存：至少 16GB 的 RAM，在运行更大的模型的时候需要更多内存。
+4. 硬盘空间：在每个模型的支持列表中会显示安装所需的空间大小，在本流程中最少20GB用于模型下载。
 
 ### 下载&更新Ollama
 
@@ -118,13 +113,13 @@ ollama -v
 
 ### 下载模型QWQ
 
-在终端中执行命令 ollama run qwq ，即可下载该模型。模型下载完成后，会自动启动大模型，进入命令行交互模式，直接输入指令，就可以和模型进行对话了对应参数的模型的下载方式可以通过在Ollama官网查看到下载指令。
+在终端中执行命令 `ollama run qwq` ，即可下载该模型。模型下载完成后，会自动启动大模型，进入命令行交互模式，直接输入指令，就可以和模型进行对话了对应参数的模型的下载方式可以通过在Ollama官网查看到下载指令。
 
 模型挂载网址：https://ollama.com/library/qwq
 
 ![](img/bcb4cc8222971eb37f15fd6d85ad4033.png)
 
-完成下载后会直接进入模型启动状态，如果退出或刷新界面，再次输入指令 ollama run qwq 即可启动对应模型。
+完成下载后会直接进入模型启动状态，如果退出或刷新界面，再次输入指令 `ollama run qwq` 即可启动对应模型。
 
 ![](img/77a7bf382d2cc28c1b119b8fad939ce9.png)
 
@@ -138,16 +133,13 @@ ollama -v
 
 ---
 
-我从以下维度对模型进行了测试： 机器翻译、推理能力、数学能力、代码能力、开放式问题。
+我从以下维度对模型进行了测试：机器翻译、推理能力、数学能力、代码能力、开放式问题。
 
 先上结论：
 
 +   QWEN--QWQ推理大模型在应对机器翻译类任务的时候表现优秀，可以做到很好理解语句的深层含义，并翻译成对应语言中符合语言文化的句子，故QWQ可以作为翻译类大模型应用于海外商务英语、字幕翻译等需要考虑文化背景和上下文信息的环境中。
-
 +   另外，QWQ模型表现出了不错的推理能力，相较于同参数的大模型可以很好的解决推理问题（如数字母和比较数字），对于较复杂的推理问题，QWQ可以实现问题拆解后分步骤推理，并在完成一轮推理后检验结果，通过尝试使用多种方式去验证。展现出的MCTS和反思机制是QWQ这类LRM实现有效推理的关键。
-
 +   在数学和代码任务中，本质上也要求LLM具有较强的推理能力才能更好的分析问题并灵活的给出答案，QWQ在这类问题上展现出了良好的问题拆分和按步骤做答的习惯，在解决问题的时候按照严谨的步骤去推结论，并尝试验证；对于代码生成，会较全面的去生成代码并解答每个模块的功能，同时具有良好的人类意图识别能力。
-
 +   开放式问题是LRM比较擅长的领域，这类问题没有具体的答案，需要分析并适当推理然后向合适的方向进行思考，也就是说，如果一个模型能够实现创新，那它一定会擅长回答开放式问题。在这类任务中，QWQ分析问题时会先进行详细的问题理解，然后尝试使用各种工具辅助其解决问题（如有需要），然后会进行反思，通过多种可行的解决方案进行验证，最后得出答案，总的来说，QWQ在处理此类开放式问题的时候表现出不错的解决能力，具有一定的解决复杂的、未见过的问题的素质。
 
 ---
@@ -208,7 +200,6 @@ ollama -v
 
 ![](img/87b13da174a3f939306be34f62ec801c.png)
 
-
 ![](img/28e9ae8ff429bc7779ad60983efd1d9f.png)
 
 ![](img/e672df918aa8f13128dfb786b613a99e.png)
@@ -221,30 +212,22 @@ If I have 5 apples and give away 2, how many do I have left?
 
 假设有 7 个海盗，他们需要分配一批金币。每个海盗都具有以下特点：
 
-1.  **绝对理性**：每个海盗都会尽量使自己的利益最大化。
+1. 绝对理性：每个海盗都会尽量使自己的利益最大化。
+2. 绝对自私：他们只关心自己的得失，不关心他人的情况。
+3. 暴力威胁：如果一个提案无法被通过（投票否决），则提议者会被“扔下船”。
 
-1.  **绝对自私**：他们只关心自己的得失，不关心他人的情况。
+#### 分赃规则
 
-1.  **暴力威胁**：如果一个提案无法被通过（投票否决），则提议者会被“扔下船”。
+1. 按照从首领（编号为 1 的海盗）到最后一名海盗的顺序，依次由每个海盗提出分赃方案。
+2. 每名海盗（包括提议者）对提案进行投票。提案若获得 至少一半人数（包括自己）或以上 的支持，则通过；否则，提议者被抛弃，剩下的海盗继续讨论。
+3. 海盗之间按照逻辑进行投票，遵循理性自私的行为模式。
 
-**分赃规则**
+#### 目标
 
-1.  按照从首领（编号为 1 的海盗）到最后一名海盗的顺序，依次由每个海盗提出分赃方案。
-
-1.  **每名海盗（包括提议者）对提案进**行投票。提案若获得 至少一半人数（包括自己）或以上 的支持，则通过；否则，提议者被抛弃，剩下的海盗继续讨论。
-
-1.  海盗之间按照逻辑进行投票，遵循理性自私的行为模式。
-
-**目标**
-
-首领（提议者）需要提出一个分赃方案，使：
-
-1.  自己不会被扔下船（提案被通过）。
-
-1.  自己分得的金币尽可能多。
+1. 自己不会被扔下船（提案被通过）。
+2. 自己分得的金币尽可能多。
 
 问，他们应该如何分赃
-
 
 ![](img/f734439b53d2ef5a4d6fdd47f92249e5.png)
 
@@ -260,7 +243,13 @@ If I have 5 apples and give away 2, how many do I have left?
 
 ![](img/5003e9c0b2d75e895890a5c0fd91ca98.png)
 
-```
+
+
+# 贪吃蛇游戏
+
+## Python 代码实现
+
+```python
 import pygame
 import random
 
@@ -270,7 +259,7 @@ pygame.init()
 # 设置窗口大小
 width, height = 640, 480
 screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption(&quot;贪吃蛇游戏&quot;)
+pygame.display.set_caption("贪吃蛇游戏")
 
 # 定义颜色
 snake_color = (255, 255, 0)  # 黄色
@@ -285,15 +274,15 @@ snake_pos = [[100, 100], [90, 100], [80, 100]]
 snake_speed = [block_size, 0]
 
 # 初始化食物位置
-food_pos = [random.randrange(1, (width//block_size)) * block_size,
-            random.randrange(1, (height//block_size)) * block_size]
+food_pos = [random.randrange(1, (width // block_size)) * block_size,
+            random.randrange(1, (height // block_size)) * block_size]
 food_spawn = True
 
 # 游戏循环标志
 running = True
 
 # 方向变量
-direction = &#x27;RIGHT&#x27;
+direction = 'RIGHT'
 change_to = direction
 
 # 移动速度
@@ -306,7 +295,7 @@ score = 0
 # 显示得分的函数
 def show_score(choice, color, font, size):
     score_font = pygame.font.SysFont(font, size)
-    score_surface = score_font.render(&#x27;Score : &#x27; + str(score), True, color)
+    score_surface = score_font.render('Score : ' + str(score), True, color)
     score_rect = score_surface.get_rect()
     if choice == 1:
         score_rect.midtop = (width / 10, 15)
@@ -316,9 +305,9 @@ def show_score(choice, color, font, size):
 
 # 游戏结束的函数
 def game_over():
-    my_font = pygame.font.SysFont(&#x27;times new roman&#x27;, 50)
+    my_font = pygame.font.SysFont('times new roman', 50)
     game_over_surface = my_font.render(
-        &#x27;Your Score is : &#x27; + str(score), True, (255, 255, 255))
+        'Your Score is : ' + str(score), True, (255, 255, 255))
     game_over_rect = game_over_surface.get_rect()
     game_over_rect.midtop = (width / 2, height / 4)
     screen.blit(game_over_surface, game_over_rect)
@@ -334,24 +323,24 @@ while running:
             running = False
         # 检测按键事件
         elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_UP and direction != &#x27;DOWN&#x27;:
-                change_to = &#x27;UP&#x27;
-            if event.key == pygame.K_DOWN and direction != &#x27;UP&#x27;:
-                change_to = &#x27;DOWN&#x27;
-            if event.key == pygame.K_LEFT and direction != &#x27;RIGHT&#x27;:
-                change_to = &#x27;LEFT&#x27;
-            if event.key == pygame.K_RIGHT and direction != &#x27;LEFT&#x27;:
-                change_to = &#x27;RIGHT&#x27;
+            if event.key == pygame.K_UP and direction != 'DOWN':
+                change_to = 'UP'
+            if event.key == pygame.K_DOWN and direction != 'UP':
+                change_to = 'DOWN'
+            if event.key == pygame.K_LEFT and direction != 'RIGHT':
+                change_to = 'LEFT'
+            if event.key == pygame.K_RIGHT and direction != 'LEFT':
+                change_to = 'RIGHT'
 
     # 更新蛇的运动方向
     direction = change_to
-    if direction == &#x27;UP&#x27;:
+    if direction == 'UP':
         snake_speed = [0, -block_size]
-    if direction == &#x27;DOWN&#x27;:
+    if direction == 'DOWN':
         snake_speed = [0, block_size]
-    if direction == &#x27;LEFT&#x27;:
+    if direction == 'LEFT':
         snake_speed = [-block_size, 0]
-    if direction == &#x27;RIGHT&#x27;:
+    if direction == 'RIGHT':
         snake_speed = [block_size, 0]
 
     # 更新蛇的位置
@@ -366,8 +355,8 @@ while running:
 
     # 重新生成食物
     if not food_spawn:
-        food_pos = [random.randrange(1, (width//block_size)) * block_size,
-                    random.randrange(1, (height//block_size)) * block_size]
+        food_pos = [random.randrange(1, (width // block_size)) * block_size,
+                    random.randrange(1, (height // block_size)) * block_size]
     food_spawn = True
 
     # 绘制背景
@@ -382,8 +371,7 @@ while running:
 
     # 检测游戏结束条件
     # 超出边界
-    if snake_pos[0][0] &lt; 0 or snake_pos[0][0] &gt;= width or snake_pos[0][1] &lt; 0 or 
-snake_pos[0][1] &gt;= height:
+    if snake_pos[0][0] < 0 or snake_pos[0][0] >= width or snake_pos[0][1] < 0 or snake_pos[0][1] >= height:
         game_over()
     # 碰到自己
     for block in snake_pos[1:]:
@@ -391,7 +379,7 @@ snake_pos[0][1] &gt;= height:
             game_over()
 
     # 显示得分
-    show_score(1, (255, 255, 255), &#x27;times new roman&#x27;, 20)
+    show_score(1, (255, 255, 255), 'times new roman', 20)
 
     # 更新显示
     pygame.display.update()
@@ -402,10 +390,11 @@ snake_pos[0][1] &gt;= height:
 # 退出pygame
 pygame.quit()
 quit()
-解释代码
+```
 
-这段代码是一个用Python编写的简单的贪吃蛇游戏，使用了Pygame库来处理图形和事件。下面是对代
-码的详细解释：
+## 代码解释
+
+这段代码是一个用 `Python` 编写的简单的贪吃蛇游戏，使用了 `Pygame` 库来处理图形和事件。下面是对代码的详细解释：
 
 ### 导入必要的模块
 
@@ -415,79 +404,73 @@ import sys
 from pygame.locals import *
 ```
 
-+   pygame: 用于游戏开发的库，包含绘制图形、处理事件等功能。
+- `pygame`: 用于游戏开发的库，包含绘制图形、处理事件等功能。
+- `sys`: 用于系统特定的参数和功能，这里可能用于退出程序。
+- `pygame.locals`: 包含了许多常量，如按键代码等。
 
-+   sys: 用于系统特定的参数和功能，这里可能用于退出程序。
+### 初始化 Pygame
 
-+   pygame.locals: 包含了许多常量，如按键代码等。
-
-### 初始化Pygame
-
-```
+```python
 pygame.init()
 ```
 
-+   初始化所有导入的Pygame模块。
+- 初始化所有导入的 `Pygame` 模块。
 
 ### 设置游戏窗口
 
-```
+```python
 window_size = (400, 300)
 screen = pygame.display.set_mode(window_size)
-pygame.display.set_caption(&#x27;贪吃蛇游戏&#x27;)
+pygame.display.set_caption('贪吃蛇游戏')
 ```
 
-+   创建一个大小为400x300像素的游戏窗口。
-
-+   设置窗口的标题为“贪吃蛇游戏”。
+- 创建一个大小为 400×300 像素的游戏窗口。
+- 设置窗口的标题为“贪吃蛇游戏”。
 
 ### 定义颜色
 
-```
+```python
 black = (0, 0, 0)
 white = (255, 255, 255)
 red = (255, 0, 0)
 ```
 
-+   定义了一些常用的颜色，用于绘制蛇、食物等。
+- 定义了一些常用的颜色，用于绘制蛇、食物等。
 
 ### 创建蛇和食物
 
-```
+```python
 snake_pos = [[100, 50], [90, 50], [80, 50]]
 snake_speed = [10, 0]
-food_pos = [random.randrange(1, (window_size[0]//10)) * 10,
-            random.randrange(1, (window_size[1]//10)) * 10]
+food_pos = [random.randrange(1, (window_size[0] // 10)) * 10,
+            random.randrange(1, (window_size[1] // 10)) * 10]
 food_spawn = True
 ```
 
-+   snake_pos: 蛇的身体位置，初始为三个块。
-
-+   snake_speed: 蛇的移动速度，初始向右移动。
-
-+   food_pos: 食物的位置，随机生成。
-
-+   food_spawn: 标志食物是否需要重新生成。
+- `snake_pos`: 蛇的身体位置，初始为三个块。
+- `snake_speed`: 蛇的移动速度，初始向右移动。
+- `food_pos`: 食物的位置，随机生成。
+- `food_spawn`: 标志食物是否需要重新生成。
 
 ### 游戏循环
 
-```
+```python
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
         elif event.type == KEYDOWN:
-            if (event.key == K_UP or event.key == ord(&#x27;w&#x27;)
+            if (event.key == K_UP or event.key == ord('w')
                     and snake_speed[1] != 10):
                 snake_speed = [0, -10]
-            elif (event.key == K_DOWN or event.key == ord(&#x27;s&#x27;)
+            elif (event.key == K_DOWN or event.key == ord('s')
                   and snake_speed[1] != -10):
                 snake_speed = [0, 10]
-            elif (event.key == K_LEFT or event.key == ord(&#x27;a&#x27;)
+            elif (event.key == K_LEFT or event.key == ord('a')
                   and snake_speed[0] != 10):
                 snake_speed = [-10, 0]
-            elif (event.key == K_RIGHT or event.key == ord(&#x27;d&#x27;)
+            elif (event.key == K_RIGHT or event.key == ord('d')
                   and snake_speed[0] != -10):
                 snake_speed = [10, 0]
 
@@ -499,60 +482,46 @@ while True:
         snake_pos.pop()
 
     if not food_spawn:
-        food_pos = [random.randrange(1, (window_size[0]//10)) * 10,
-                    random.randrange(1, (window_size[1]//10)) * 10]
+        food_pos = [random.randrange(1, (window_size[0] // 10)) * 10,
+                    random.randrange(1, (window_size[1] // 10)) * 10]
     food_spawn = True
 
     screen.fill(black)
-
     for pos in snake_pos:
         pygame.draw.rect(screen, white, pygame.Rect(
             pos[0], pos[1], 10, 10))
-
     pygame.draw.rect(screen, red, pygame.Rect(
         food_pos[0], food_pos[1], 10, 10))
 
     pygame.display.flip()
     pygame.time.Clock().tick(15)
+```
 
 ![](img/ee874fd32aab9800d250222e92f0f74e.png)
-
-
 ![](img/05e2687b15300efa872da707206dc910.png)
-
 ![](img/853ac3cfb1e610909c7db391ac093922.png)
-
-
 ![](img/5cc57877cd499fb413234ca599570239.png)
-
-
-
-
-
 ![](img/0905214917bca90f0b548cd937326dc9.png)
-
-
 ![](img/92e81cb6fb886874910c54bc6f16d870.png)
-
 ![](img/97b5a6c497d38d053939fc86eb2fc186.png)
 
-```
-运行实例如下：
-写一个 Bash 脚本，将格式为 '[1,2],[3,4],[5,6]' 的字符串表示的矩阵转置，并以相同格式输出。
+## 运行示例：Bash 脚本矩阵转置
+
+写一个 `Bash` 脚本，将格式为 `'[1,2],[3,4],[5,6]'` 的字符串表示的矩阵转置，并以相同格式输出。
 要求只生成代码。
 完整代码如下：
 
-```
+```bash
 #!/bin/bash
 
-input=&#x27;[1,2],[3,4],[5,6]&#x27;
+input='[1,2],[3,4],[5,6]'
 
 # 去掉最外层的方括号
 input=${input#[}
 input=${input%]}
 
 # 按逗号分割子数组
-IFS=&#x27;,&#x27; read -ra rows &lt;&lt;&lt; &quot;$input&quot;
+IFS=',' read -ra rows <<< "$input"
 
 # 读取 rows 数组的长度，即行数
 m=${#rows[@]}
@@ -562,40 +531,44 @@ parse_row() {
     local row=$1
     row=${row#[}
     row=${row%]}
-    IFS=&#x27;,&#x27; read -ra nums &lt;&lt;&lt; &quot;$row&quot;
-    echo &quot;${nums[@]}&quot;
+    IFS=',' read -ra nums <<< "$row"
+    echo "${nums[@]}"
 }
 
-cols=($(parse_row &quot;${rows[0]}&quot;))
+cols=($(parse_row "${rows[0]}"))
 n=${#cols[@]}
 
 # 初始化矩阵元素数组
 matrix=()
-for row in &quot;${rows[@]}&quot;; do
-    nums=($(parse_row &quot;$row&quot;))
-    for num in &quot;${nums[@]}&quot;; do
-        matrix+=(&quot;$num&quot;)
+
+for row in "${rows[@]}"; do
+    nums=($(parse_row "$row"))
+    for num in "${nums[@]}"; do
+        matrix+=("$num")
     done
 done
 
 # 进行转置
 transposed=()
-for ((i=0; i&lt;n; i++)); do
+
+for ((i=0; i<n; i++)); do
     transposed_row=()
-    for ((j=0; j&lt;m; j++)); do
+    for ((j=0; j<m; j++)); do
         # 计算原矩阵中的索引
         index=j*n + i
-        transposed_row+=(&quot;${matrix[index]}&quot;)
+        transposed_row+=("${matrix[index]}")
     done
     # 将转置后的行添加到 transposed 数组中
-    transposed+=(&quot;[$(IFS=,; echo &quot;${transposed_row[*]}&quot;)]&quot;)
+    transposed+=("[$(IFS=,; echo "${transposed_row[*]}")]")
 done
 
 # 生成输出字符串
-output=&quot;$(IFS=,; echo &quot;${transposed[*]}&quot;)&quot;
-
-echo &quot;$output&quot;
+output="$(IFS=,; echo "${transposed[*]}")"
+echo "$output"
 ```
+
+
+
 
 ---
 
@@ -603,9 +576,9 @@ echo &quot;$output&quot;
 
 ![](img/1ee4bd7eaf25bb4eb8a7333cccf9ceb2.png)
 
-Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
+Prove that the limit of the sequence (`a(n)`) defined by `a(n) = 1/(n^2)` is 0
 
-证明n趋于无穷时，1/(n^2)为0.
+证明`n`趋于无穷时，`1/(n^2)`为0.
 
 ![](img/8660871bef7e6b0160e703798978acfa.png)
 
@@ -617,7 +590,6 @@ Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
 
 计算巴黎距离柏林之间的距离
 
-
 ![](img/3baf565edca3cb2668d9413cf9929d83.png)
 
 ![](img/f5f605a773e674c01b0d296032a2b621.png)
@@ -626,12 +598,9 @@ Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
 
 指正
 
-巴黎（France）和柏林（Germany）之间的直线距离大约为 878 公里（或 878 千米）。这个距离是指两座城市之间的最短直线距离，通常称为“大圆距离”。 你尝试重新计算查看是否有哪里出现了问题
+巴黎（France）和柏林（Germany）之间的直线距离大约为 878 公里（或 878 千米）。这个距离是指两座城市之间的最短直线距离，通常称为“大圆距离”。你尝试重新计算查看是否有哪里出现了问题
 
 ![](img/56aecc58a8a8990e293df89e7aa052fd.png)
-
-
-
 
 ![](img/61129dcaff2fafe79287c3315d0bbe03.png)
 
@@ -641,7 +610,7 @@ Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
 
 ---
 
-我们如何让世界更快乐
+### 我们如何让世界更快乐
 
 ![](img/9676be7eb6c2db9911c8e5e8c0c8b0b1.png)
 
@@ -655,8 +624,8 @@ Prove that the limit of the sequence (a(n)) defined by a(n) = 1/(n^2) is 0
 
 📍更**多大模型技术内容学习**
 
-**扫码添加助理****英英**，回复“大模型”，了解更多大模型技术详情哦👇
+**扫码添加助理英英**，回复“大模型”，了解更多大模型技术详情哦👇
 
 ![](img/f931b1b39b8f99adfdec112985e3401c.png)
 
-此外，**扫码回复“入群”**，即可加入**大模型技术社群****：海量硬核独家技术****干货内容****+无门槛****技术交流****！**
+此外，**扫码回复“入群”**，即可加入**大模型技术社群：海量硬核独家技术干货内容 + 无门槛技术交流！**

@@ -1,13 +1,14 @@
+
 # 豆包 Marscode 入门：案例
 
 > 来源：[https://agijuejin.feishu.cn/docx/YjHgdvqvSoWXByxXppiclhoinag](https://agijuejin.feishu.cn/docx/YjHgdvqvSoWXByxXppiclhoinag)
-
+>
 > 作者：范文杰
-
+>
 > 链接：https://juejin.cn/post/7444574123420319770
-
+>
 > 来源：稀土掘金
-
+>
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ## 实例：实现并发控制函数
@@ -56,13 +57,13 @@ class PQueue {
 
 const pLimit = (concurrency: number) =&gt; {
   const queue = new PQueue(concurrency);
-  return (task: () =&gt; Promise&lt;any&gt;) =&gt; queue.add(task);
+  return (task: () =&gt; Promise&lt;any&gt;) => queue.add(task);
 };
 ```
 
 并且，更强大的点在于我们可以使用 豆包豆包MarsCode 在此基础上不断迭代优化，例如，我们可以要求 豆包MarsCode 补充代码注释，帮助开发者理解代码意图：
 
-也可以要求 豆包MarsCode 将代码中所有 any 类型替换为 unknown；或者从 class 风格切换为 FP 风格；又或者分析代码中可能存在的性能问题，给出修复意见等等。
+也可以要求 豆包MarsCode 将代码中所有 `any` 类型替换为 `unknown`；或者从 `class` 风格切换为 FP 风格；又或者分析代码中可能存在的性能问题，给出修复意见等等。
 
 甚至，可以用于生成单测代码：
 

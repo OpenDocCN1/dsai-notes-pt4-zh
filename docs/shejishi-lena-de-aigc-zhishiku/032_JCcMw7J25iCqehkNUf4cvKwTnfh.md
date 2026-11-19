@@ -1,15 +1,15 @@
+
 # 案例 | MJ换脸插件
 
 > 来源：[https://aigclena.feishu.cn/docx/MiwWdsYzMonsvmxnaOhcvX94nIb](https://aigclena.feishu.cn/docx/MiwWdsYzMonsvmxnaOhcvX94nIb)
 
 > Ai设计师lena发布了一篇📕笔记，快来看吧！ 😆 cCnpT3NqJ8gInjX 😆 http://xhslink.com/DVUrzH，复制本条信息，打开【📕】App查看精彩内容！
 
-# 先看最后效果：
+## 先看最后效果
 
-单人
+### 单人
 
 ![](img/152f065d468c32234360392d98c8bbec.png)
-
 
 一键换脸效果
 
@@ -17,12 +17,11 @@
 
 PS细微调整后
 
-多人
+### 多人
 
 ![](img/7e657a518c8ffedc520349c3bbf5e373.png)
 
 ![](img/721caf4c2d57ae1278c3648b7c97af99.png)
-
 
 ![](img/f71190727a96dc054ae531e52ddaa35e.png)
 
@@ -36,13 +35,15 @@ PS细微调整后
 
 ![](img/901eac186a7d2389a89480d24950322d.png)
 
-![](img/97cc9e4efdc138a3b03a416e379d333a.png)
+![](img/97cc9e4efdc138a3b03a379d333a.png)
 
 ### 插件使用
 
 ①先在mj里生成图片
 
+```
 /imagine prompt:Girl with pink bun head, double ponytail, red and orange dress, pink bear doll,portrait, by style of henry twachtman --ar 3:4 --niji 6
+```
 
 ![](img/0cb3e6d759ece45fb1d8186880105842.png)
 
@@ -54,7 +55,7 @@ PS细微调整后
 
 ②上传替换的头像
 
-键入“/saveid”,起一个ID名字和上传一张你要换脸的照片；机器人回复“idname XXX created”说明创建成功。
+键入`/saveid`，起一个ID名字和上传一张你要换脸的照片；机器人回复`idname XXX created`说明创建成功。
 
 ![](img/f4ca17ccb9a89838ab88a0f116f35c19.png)
 
@@ -68,16 +69,15 @@ PS细微调整后
 
 ③多人一键换脸
 
-多人换脸，得保证我们的库里有多张面部图片，确保有多个面部图片后。键入“/setid”后输入“lena,tc”，要换2个人就输入2个名字，中间用逗号隔开；
+多人换脸，得保证我们的库里有多张面部图片，确保有多个面部图片后。键入`/setid`后输入`lena,tc`，要换2个人就输入2个名字，中间用逗号隔开；
 
 ![](img/0cf0e9115d27c93a52ec1fcab75d9b49.png)
 
 ④swapid用法
 
-键入swapid后，同时上传图片和idname，可一键换脸
+键入`swapid`后，同时上传图片和`idname`，可一键换脸
 
 ![](img/7eeef8ac6c40b3ca17193cf1e7516517.png)
-
 
 ![](img/dea3266b620876a7485fe13134fbc646.png)
 
@@ -89,7 +89,7 @@ PS细微调整后
 
 来自@Wade McMaster
 
-+   --oldify 衰老  后面可加数值
++   `--oldify` 衰老  后面可加数值
 
 ![](img/568d58586df1b3f0651ef41761173877.png)
 
@@ -101,19 +101,19 @@ PS细微调整后
 
 1000
 
-+   -s -f
++   `-s -f`
 
 ![](img/353e403a9e7f211d3978dcb3abb6d322.png)
 
 ![](img/58b5a4c0362042c43691770ebd50232b.png)
 
-+   -e 增加面部表情
++   `-e` 增加面部表情
 
 ![](img/91f672500f2f3335ca6c0edc03d4dbb6.png)
 
 ![](img/b40518b7738a34ef0e9f3fb448a290ef.png)
 
-+   -c 卡通化，可加数值
++   `-c` 卡通化，可加数值
 
 ![](img/c41b11789804e5b64f5d099d6342fa1d.png)
 

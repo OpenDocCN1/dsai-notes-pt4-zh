@@ -1,3 +1,4 @@
+
 # 我把写 PRD 的痛苦，塞进了一条能“自我生长”的提示词里
 
 > 来源：[https://my.feishu.cn/docx/BBWSdpFXyop3Vuxj8ItcmAdnneb](https://my.feishu.cn/docx/BBWSdpFXyop3Vuxj8ItcmAdnneb)
@@ -12,21 +13,16 @@
 
 ## 这条 Prompt 到底能帮你什么
 
-+   节省 70% 的骨架时间：不用从 0 开始搭结构。
-
-+   输出“可测试”的用户故事：天然带验收标准，QA直接拿。
-
-+   角色与权限不再漏：产品、运营、开发不再对齐半天。
-
-+   文档一致性：多人协作时，版本与编号可追踪。
++ 节省 70% 的骨架时间：不用从 0 开始搭结构。
++ 输出“可测试”的用户故事：天然带验收标准，QA直接拿。
++ 角色与权限不再漏：产品、运营、开发不再对齐半天。
++ 文档一致性：多人协作时，版本与编号可追踪。
 
 ## 老金三步上手法
 
-1.  把你的项目描述塞进 {PROJECT_DESCRIPTION}：越具体越好（目标用户、竞品对比、关键指标、边界限制）。
-
-1.  直接运行提示词，生成首版 PRD：先别改，先通读结构。
-
-1.  二轮迭代：在“用户故事”和“验收标准”里加数据口径、埋点约定、失败态文案。
+1. 把你的项目描述塞进 `{PROJECT_DESCRIPTION}`：越具体越好（目标用户、竞品对比、关键指标、边界限制）。
+1. 直接运行提示词，生成首版 PRD：先别改，先通读结构。
+1. 二轮迭代：在“用户故事”和“验收标准”里加数据口径、埋点约定、失败态文案。
 
 ## 一个 60 秒小示例
 
@@ -34,15 +30,11 @@
 
 用这条 Prompt 喂描述后，你会拿到：
 
-+   规范化的章节：Title、Overview、Personas、Role-based Access、User Stories。
-
-+   用户故事样例（含 ID 与验收标准），比如：
-
-+   US-007：访客在不登录的前提下也能预览渲染结果（边界态：超长文本自动截断并提示）。
-
-+   US-011：管理员配置输出字体与行距模板（验收标准含渲染一致性与回退策略）。
-
-+   安全/鉴权专门故事：如 US-015（下载链接带时效签名，10 分钟失效，重复请求记录到审计日志）。
++ 规范化的章节：Title、Overview、Personas、Role-based Access、User Stories。
++ 用户故事样例（含 ID 与验收标准），比如：
++ US-007：访客在不登录的前提下也能预览渲染结果（边界态：超长文本自动截断并提示）。
++ US-011：管理员配置输出字体与行距模板（验收标准含渲染一致性与回退策略）。
++ 安全/鉴权专门故事：如 US-015（下载链接带时效签名，10 分钟失效，重复请求记录到审计日志）。
 
 你也能把它立刻用在别的项目上，因为大纲和检查清单是通用的。
 
@@ -125,12 +117,12 @@ Follow these steps to create your PRD
 
 产出灰常可用：
 
-```
-# Title
-HTML 卡片生成器 PRD
+
+
+# HTML 卡片生成器 PRD
 
 ## 1. Title and Overview
-### 1.1 Document Title &amp; Version
+### 1.1 Document Title & Version
 HTML 卡片生成器 PRD，版本 1.0
 
 ### 1.2 Product Summary
@@ -154,7 +146,7 @@ HTML 卡片生成器 PRD，版本 1.0
 ## 3. Role-based Access
 ### 3.1 Roles and Permissions
 - 管理员：组织、用户、角色、SSO、审计日志、全局设置、模板发布、限流。
-- 设计师：创建/编辑模板，管理品牌 Token，发布/下线模板，视觉质检。
+- 设计师：创建/编辑模板，管理品牌 `Token`，发布/下线模板，视觉质检。
 - 创作者：基于模板创建/编辑卡片，上传素材，预览与导出，提交审核。
 - 审核者：评论、审批/驳回、锁定发布版本。
 - 访客：在授权下查看共享预览；无编辑/导出权限。
@@ -165,7 +157,7 @@ US-101 身份认证
 Title: 安全登录
 Description: 作为用户，我通过邮箱/密码或 SSO 登录工作区。
 Acceptance Criteria:
-- 支持邮箱/密码与 SSO（OAuth2 或 SAML）。
+- 支持邮箱/密码与 SSO（`OAuth2` 或 `SAML`）。
 - 强密码与会话超时策略。
 - 错误信息不泄露敏感信息。
 - 记录所有认证事件。
@@ -176,7 +168,7 @@ Description: 作为管理员，我为不同角色分配权限。
 Acceptance Criteria:
 - 仅管理员可进行角色的增删改。
 - 所有接口强制校验权限矩阵。
-- 无权限返回 403，且不暴露细节。
+- 无权限返回 `403`，且不暴露细节。
 
 US-201 系统语言切换
 Title: 切换 UI 语言
@@ -199,7 +191,7 @@ Title: 人工校对翻译
 Description: 作为创作者/本地化负责人，我可对机器翻译逐字段覆写。
 Acceptance Criteria:
 - 各文本字段支持按语种覆写。
-- 显示机器与人工版本 Diff。
+- 显示机器与人工版本 `Diff`。
 - 导出优先使用人工覆写。
 
 US-204 语言回退
@@ -227,17 +219,17 @@ Acceptance Criteria:
 
 US-303 品牌样式
 Title: 品牌 Token
-Description: 作为设计师，我以 Token 管理字体、色彩、间距与圆角。
+Description: 作为设计师，我以 `Token` 管理字体、色彩、间距与圆角。
 Acceptance Criteria:
-- Token 可应用于任意模板。
-- 对比度低于 WCAG AA 给出警告。
-- Token 版本可追踪与审计。
+- `Token` 可应用于任意模板。
+- 对比度低于 `WCAG AA` 给出警告。
+- `Token` 版本可追踪与审计。
 
 US-304 素材上传
 Title: 上传图片与 Logo
 Description: 作为创作者，我上传图片用于卡片。
 Acceptance Criteria:
-- 支持 png、jpg、webp、svg。
+- 支持 `png`、`jpg`、`webp`、`svg`。
 - 大小限制可配；上传进度与错误明确。
 - 反恶意处理与清洗。
 
@@ -261,38 +253,38 @@ US-402 模板导入/导出
 Title: 跨空间迁移模板
 Description: 作为设计师，我导入/导出模板。
 Acceptance Criteria:
-- 以 JSON + 资源 ZIP 导出。
-- 导入校验 Schema 并给出冲突报告。
+- 以 `JSON` + 资源 `ZIP` 导出。
+- 导入校验 `Schema` 并给出冲突报告。
 
 US-501 导出单文件 HTML
 Title: 单文件导出
-Description: 作为创作者，我导出包含内联 CSS/图片的 .html。
+Description: 作为创作者，我导出包含内联 `CSS`/图片的 `.html`。
 Acceptance Criteria:
-- 所有资源内联（base64）。
+- 所有资源内联（`base64`）。
 - 离线打开视觉一致。
 - 文件名安全并带语种后缀。
 
 US-502 导出 ZIP 包
 Title: 结构化导出
-Description: 作为创作者，我导出 HTML + 资源的 ZIP。
+Description: 作为创作者，我导出 `HTML` + 资源的 `ZIP`。
 Acceptance Criteria:
-- HTML 使用相对路径。
+- `HTML` 使用相对路径。
 - 目录结构固定且文档化。
-- 入口文件为 index.html。
+- 入口文件为 `index.html`。
 
 US-503 可选 PNG/PDF
 Title: 图片/PDF 导出
-Description: 作为创作者，我可导出 PNG 或 PDF。
+Description: 作为创作者，我可导出 `PNG` 或 `PDF`。
 Acceptance Criteria:
-- 可选 DPI；文本栅格化说明清晰。
+- 可选 `DPI`；文本栅格化说明清晰。
 - 与 HTML 预览像素误差 ≤2 px。
 - 大文件流式导出不阻塞 UI。
 
 US-504 元数据注入
 Title: SEO 与社交分享
-Description: 作为创作者，我设置标题、描述与 OG 标签。
+Description: 作为创作者，我设置标题、描述与 `OG` 标签。
 Acceptance Criteria:
-- 元信息写入导出 HTML head。
+- 元信息写入导出 `HTML` head。
 - 提供分享预览模拟。
 
 US-505 文件名与编码
@@ -300,13 +292,13 @@ Title: 多平台安全文件名
 Description: 作为创作者，导出文件名跨系统可用。
 Acceptance Criteria:
 - 清除非法字符；必要时转写。
-- 保留语种后缀，如 _ja、_ko。
+- 保留语种后缀，如 `_ja`、`_ko`。
 
 US-601 无障碍检查
 Title: A11y 校验
 Description: 作为设计师/审核者，我运行无障碍检查。
 Acceptance Criteria:
-- 文本对比度达到 WCAG AA。
+- 文本对比度达到 `WCAG AA`。
 - 图片必须有替代文本或警告。
 - 编辑器支持键盘导航。
 
@@ -314,23 +306,23 @@ US-602 性能预算
 Title: 快速生成
 Description: 作为用户，我期望生成快速。
 Acceptance Criteria:
-- 常规卡片（文本 &lt;50KB、图片 &lt;1MB）TTI &lt; 2 秒。
-- 单文件导出 &lt; 5 秒（参考硬件）。
+- 常规卡片（文本 `&lt;50KB`、图片 `&lt;1MB`）`TTI` `&lt;` 2 秒。
+- 单文件导出 `&lt;` 5 秒（参考硬件）。
 
 US-603 安全加固
-Title: 防 XSS/注入
+Title: 防 `XSS`/注入
 Description: 作为管理员，我需要安全的内容处理。
 Acceptance Criteria:
 - 输入清洗；导出文件不执行脚本。
-- 推荐导出 CSP（禁止远程脚本）。
-- CI 进行静态扫描。
+- 推荐导出 `CSP`（禁止远程脚本）。
+- `CI` 进行静态扫描。
 
 US-604 审计与日志
 Title: 行为可追踪
 Description: 作为管理员，我查看并导出审计日志。
 Acceptance Criteria:
 - 记录创建/编辑/导出/发布事件与用户、时间、对象。
-- 支持筛选与 CSV 导出。
+- 支持筛选与 `CSV` 导出。
 
 US-701 审核流
 Title: 审批流程
@@ -354,15 +346,15 @@ Acceptance Criteria:
 - 回滚会生成新版本并指向来源。
 
 US-801 接口生成
-Title: API 生成导出
-Description: 作为 API 客户端，我通过接口生成并获取导出。
+Title: `API` 生成导出
+Description: 作为 `API` 客户端，我通过接口生成并获取导出。
 Acceptance Criteria:
-- REST 端点具备生成/导出权限范围。
-- 限流与 429 处理。
-- Webhook 通知完成。
+- `REST` 端点具备生成/导出权限范围。
+- 限流与 `429` 处理。
+- `Webhook` 通知完成。
 
 US-802 批量生成
-Title: CSV/JSON 批量
+Title: `CSV`/`JSON` 批量
 Description: 作为市场人员，我批量生成多语卡片。
 Acceptance Criteria:
 - 字段映射 UI。
@@ -372,7 +364,7 @@ US-803 字体离线可用
 Title: CJK 字体保障
 Description: 作为设计师，我确保中日韩字体离线可用。
 Acceptance Criteria:
-- 默认使用内置或系统字体栈（如 Noto 系）。
+- 默认使用内置或系统字体栈（如 `Noto` 系）。
 - 不强依赖外部 CDN。
 
 US-804 本地化格式
@@ -394,8 +386,6 @@ Final Checklist
 - 身份认证与授权由 US-101 与 US-102 覆盖。
 - 覆盖创建、编辑、本地化、导出、安全、性能与协作。
 - 对 MVP 足够完整，并可平滑扩展。
-
-```
 
 ## 老金有话说
 

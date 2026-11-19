@@ -1,60 +1,52 @@
+
 # 游戏不再是精神鸦片？主流舆论面对游戏行业口风转变，现在轮到家长们加油了
 
-> 来源：[https://huchegames.feishu.cn/docx/T0ZRd9nu2oL0LjxOWlwchybgnPf](https://huchegames.feishu.cn/docx/T0ZRd9nu2oL0LjxOWlwchybgnPf)
+> 来源：https://huchegames.feishu.cn/docx/T0ZRd9nu2oL0LjxOWlwchybgnPf
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656294018&idx=1&sn=39975b8d5478d610083f2fa7011968ec&scene=21#wechat_redirect)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656294018&idx=1&sn=39975b8d5478d610083f2fa7011968ec&scene=21#wechat_redirect
 
-> ⏰ 原创 曾嵘 曾嵘胡扯的地方2025年05月22日 16:06  湖北
+> ⏰ 原创 曾嵘 曾嵘胡扯的地方 2025年05月22日 16:06 湖北
 
 ![](img/f5bbd7706984072aee09b33e93dc643e.png)
 
 昨晚武汉电闪雷鸣，不知道是哪个游戏人在渡劫。
 
-一早刷到一篇文章： [装睡的家长，躲进“反游”里 ](https://mp.weixin.qq.com/s?__biz=MzA4MDMwNjcxNg==&mid=2648345221&idx=1&sn=be013941b552642515d36bf2c5b6b6b0&scene=21#wechat_redirect)。
+一早刷到一篇文章：[装睡的家长，躲进“反游”里](https://mp.weixin.qq.com/s?__biz=MzA4MDMwNjcxNg==&mid=2648345221&idx=1&sn=be013941b552642515d36bf2c5b6b6b0&scene=21#wechat_redirect)。
 
-感觉舆论口风有点儿转向。 之前自媒体是不敢写这些东西的， 因为会被骂死。
+感觉舆论口风有点儿转向。之前自媒体是不敢写这些东西的，因为会被骂死。
 
 游戏行业媒体也是不可能写这种「反社会」内容的，内部交流时大家会吐吐槽，感叹一下舆论的压力。
 
 但最近好像不一样了，经常能刷到游戏相关的正向新闻。什么大学开设游戏专业啦，大佬参观游戏大厂啦，某厂收入又创新高啦（主要不是游戏媒体的报道），小游戏行业多么赚钱啦（主要不是游戏媒体的报道），黑神话和 DeepSeek 一样厉害啦，各地政府不断出台利好游戏行业的政策啦……
 
-+   [《黑神话：悟空》对游戏行业意味着什么？](https://huchegames.feishu.cn/wiki/P4C6wLv1ii3qeZkQCNNcosw3nxc)
++ [《黑神话：悟空》对游戏行业意味着什么？](https://huchegames.feishu.cn/wiki/P4C6wLv1ii3qeZkQCNNcosw3nxc)
++ DeepSeek 服务器繁忙？这里有免费解决方案
++ [总奖金60万！2025武汉国际设计大赛·腾讯游戏创作大赛·小游戏赛道报名](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293769&idx=2&sn=df4ecad384ffcc5d8e79bae9b423871d&scene=21#wechat_redirect)
++ [陵水小游戏创作者基地政策解读（部分）](https://huchegames.feishu.cn/wiki/SieSwlPzQi8EH2kjRETcqUPhnwg)
++ [最高1000万游戏补贴！全国首个小游戏产业孵化基地落地武汉](https://huchegames.feishu.cn/wiki/EuCfwQibLiQ5wOkG66BcTenhn1e)
 
-+   DeepSeek 服务器繁忙？这里有免费解决方案
+比如昨天 **居然** 发了 130 个游戏版号，又创新高了：130款再创新高！2025年5月国产网络游戏版号过审。
 
-+   [总奖金60万！2025武汉国际设](https://mp.weixin.qq.com/s?__biz=MzA5NzQ3NDM3MA==&mid=2656293769&idx=2&sn=df4ecad384ffcc5d8e79bae9b423871d&scene=21#wechat_redirect)计大赛·腾讯游戏创作大赛·小游戏赛道报名
+再比如这篇：[“请开门，我是警察，我打游戏全国16强！”](https://mp.weixin.qq.com/s?__biz=MTI0MDU3NDYwMQ==&mid=2657785314&idx=1&sn=9c25609d0549b50b5530c2c841fc0fba&scene=21#wechat_redirect)，这可是官媒啊！
 
-+   [陵水小游戏创作者基地政策解读（部分）](https://huchegames.feishu.cn/wiki/SieSwlPzQi8EH2kjRETcqUPhnwg)
-
-+   [最高1000万游戏补贴！全国首个小游戏产业孵化基地落地武汉](https://huchegames.feishu.cn/wiki/EuCfwQibLiQ5wOkG66BcTenhn1e)
-
-比如昨天 **居然 **发了 130 个游戏版号，又创新高了： 130款再创新高！2025年5月国产网络游戏版号过审 。
-
-再比如这篇： [“ ](https://mp.weixin.qq.com/s?__biz=MTI0MDU3NDYwMQ==&mid=2657785314&idx=1&sn=9c25609d0549b50b5530c2c841fc0fba&scene=21#wechat_redirect)[请开](https://mp.weixin.qq.com/s?__biz=MTI0MDU3NDYwMQ==&mid=2657785314&idx=1&sn=9c25609d0549b50b5530c2c841fc0fba&scene=21#wechat_redirect)门，我是警察，我打游戏全国16强！ ” ，这可是官媒啊！
-
-要举例子的话，不一定要使用警察打游戏的例子。如此主动对游戏示好，是不是可以说明， 主流叙事希望转变社会对游戏的看法。
+要举例子的话，不一定要使用警察打游戏的例子。如此主动对游戏示好，是不是可以说明，主流叙事希望转变社会对游戏的看法。
 
 游戏行业内，也有游戏从业者，反对孩子玩游戏。
 
 但胡扯游戏的群友们挺开明的，很多都会陪着孩子玩游戏，举几个例子：
 
-+   **Kedy：**
-
-+   玩游戏比刷短剧好，至少游戏动脑，短视频大多都是吸引眼球的。
-
-+   **古希腊掌管尺度的神：**
-
-+   不是这个的问题，而是说脏话的习惯问题。语音是必须禁用的。 我孩子玩的时候，我都会检查。我玩游戏，是真打不过我儿子。
-
-+   **Junshi：**
-
-+   短视频危害现在比网络游戏大 ，家里有个初中生 周末刷视频 能刷到早上5点。小时候就会我爸带着我玩游戏，每次都玩不过他 然后就没有太成瘾 。从最开始的 傲剑狂刀，到97格斗，到红警 ，帝国 我小时候没一个打得过我爸。现在每周末固定给我儿子玩半个小时-1个小时游戏，抖音小游戏中心打开让他选，我在后面看他的选择和行为。
++ **Kedy：**
++ 玩游戏比刷短剧好，至少游戏动脑，短视频大多都是吸引眼球的。
++ **古希腊掌管尺度的神：**
++ 不是这个的问题，而是说脏话的习惯问题。语音是必须禁用的。我孩子玩的时候，我都会检查。我玩游戏，是真打不过我儿子。
++ **Junshi：**
++ 短视频危害现在比网络游戏大，家里有个初中生 周末刷视频 能刷到早上5点。小时候就会我爸带着我玩游戏，每次都玩不过他 然后就没有太成瘾 。从最开始的 傲剑狂刀，到97格斗，到红警 ，帝国 我小时候没一个打得过我爸。现在每周末固定给我儿子玩半个小时-1个小时游戏，抖音小游戏中心打开让他选，我在后面看他的选择和行为。
 
 更有群友，在纠结孩子的游戏品味：
 
 > 如果我有孩子，只知道随大流，不玩品味高于同龄人的游戏，怎么成长？
 
-曾老师觉得， **孩子随大流很正常。 **人类是社会性动物，不同年龄阶段，有不同的需求，不同的教育方式。
+曾老师觉得，**孩子随大流很正常。** 人类是社会性动物，不同年龄阶段，有不同的需求，不同的教育方式。
 
 做家长也是需要学习的，孩子教不好，大多数情况，是家长太菜。
 
@@ -68,11 +60,9 @@
 
 人的一生当中要经历三次成长：
 
-+   第一次是发现你的父母是普通人
-
-+   第二次是发现你自己就是普通人
-
-+   第三次成长是发现，你的孩子实际上也只是普通人
++ 第一次是发现你的父母是普通人
++ 第二次是发现你自己就是普通人
++ 第三次成长是发现，你的孩子实际上也只是普通人
 
 群友也聊到：
 
@@ -80,7 +70,7 @@
 
 曾老师以为，「出路」，要看是什么样的出路。如果是寒门赌阶层跃升的话，卷就是必要条件。
 
-群友 **森 **说：
+群友 **森** 说：
 
 > 每个人都有自己的位格，位格的变化是一个正态分布，那些尖尖上的变化，都是因缘际会。未必不是你，但是绝大多数概率不是你。你努力，你的正态分布会往上偏一点，但是终究有限的，不以人的意志为转移。最终都要面对自己的客观位格，探讨价值和意义。
 
@@ -93,5 +83,4 @@
 ---
 
 <https://huchegames.feishu.cn/sync/JTVrd0Be9szPk7bhw9UcFF1dnbe>
-
 <https://huchegames.feishu.cn/sync/UZIod6tpos5E6ob7w2EclHC5nh5>

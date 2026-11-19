@@ -1,6 +1,0 @@
-
-# 公开
-
-> 来源：[https://docs.feishu.cn/docx/TxSFdHtGhodEafxtyP8cxBePnSd](https://docs.feishu.cn/docx/TxSFdHtGhodEafxtyP8cxBePnSd)
-
-**第二十五条**　个人信息处理者不得公开其处理的个人信息，取得个人单独同意的除外。

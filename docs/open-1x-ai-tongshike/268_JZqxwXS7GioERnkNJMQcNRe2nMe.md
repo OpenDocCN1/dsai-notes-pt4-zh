@@ -1,3 +1,4 @@
+
 # Mobile-Agent 开发经验分享
 
 > 来源：[https://datawhaler.feishu.cn/docx/THOPdmVvOoRItZxiAOfc1O1jnMd](https://datawhaler.feishu.cn/docx/THOPdmVvOoRItZxiAOfc1O1jnMd)
@@ -16,9 +17,9 @@
 
 我之所以想到这些功能，是因为Datawhale的直播和别人的直播不大一样，Datawhale的直播主要是转播的会议室内的内容，这中间有很大的gap：
 
-1.  做分享的嘉宾没法直接看到大家在B站，视频号的反馈，主持人也不方便直接打断问问题，往往都是结束后统一回答的。
+1. 做分享的嘉宾没法直接看到大家在B站，视频号的反馈，主持人也不方便直接打断问问题，往往都是结束后统一回答的。
 
-1.  我作为观众时，不知道什么时候讲完，怕跳过了回答我问题的时间。
+2. 我作为观众时，不知道什么时候讲完，怕跳过了回答我问题的时间。
 
 而我就想到，那些游戏主播，屏幕上其实都有个小框框来展示观众们的弹幕的，如果能把这个小框框带入到直播间的会议室里就方便多了。
 
@@ -52,35 +53,37 @@
 
 ### 在prompt里教会Agent该怎么做
 
-首先，我在prompt中声明了函数Insert ()，告诉模型一旦获取到弹幕，就调用这个函数插入我的数据库（飞书表格）
+首先，我在prompt中声明了函数`Insert()`，告诉模型一旦获取到弹幕，就调用这个函数插入我的数据库（飞书表格）
 
-#### run.py
+#### `run.py`
 
 ![](img/aa4a914dfb65c2ba551454beb7ee1abf.png)
 
-#### prompt.py
+#### `prompt.py`
 
-但是在上面run.py上定义后，Agent依旧不会调用我给它的函数，于是我找到了另一个存prompt的地方，这个是prompt.py，这里声明了Agent各个函数的定义，只有将你自定义的函数声明在这才算数。
+但是在上面`run.py`上定义后，Agent依旧不会调用我给它的函数，于是我找到了另一个存prompt的地方，这个是`prompt.py`，这里声明了Agent各个函数的定义，只有将你自定义的函数声明在这才算数。
 
 ![](img/8e8741e0435b2c587859ed3adac2d142.png)
 
 ### 实现自己的自定义函数
 
-#### controller.py
+#### `controller.py`
 
-在这里添加你自己想添加的tool，这里的insert函数用于往飞书表格上插入
+在这里添加你自己想添加的tool，这里的`insert`函数用于往飞书表格上插入
 
 ![](img/f4ad4c018da704eec1eb284362661644.png)
 
-#### run.py
+#### `run.py`
 
-把刚才在 controller 添加的insert函数导进来
+把刚才在`controller`添加的`insert`函数导进来
 
+```
 from MobileAgent.controller import get_screenshot, tap, slide, type, back, home, insert
+```
 
 ![](img/91356917906fd33a904fa6f4f911ab4e.png)
 
-上面这个是用来解析模型的输出的，就是先检测有没有Insert，有就解析输出然后调用函数来插入。
+上面这个是用来解析模型的输出的，就是先检测有没有`Insert`，有就解析输出然后调用函数来插入。
 
 ## 目前效果
 
@@ -106,7 +109,7 @@ https://github.com/ybai34/Mobile-Agent-Development
 
 建议用国内中转站是有原因的……不过这个中转站在充钱之前建议先加客服🛰️，因为它在充钱方面经常出BUG
 
-![](img/7953a95dbb4445bdd97c31ef9dcabb18.png)
+![](img/7953a95dbb44445bdd97c31ef9dcabb18.png)
 
 # 3、一些Mobile-Agent框架的介绍
 
@@ -124,7 +127,7 @@ https://www.ldmnq.com/
 
 # 5、一些可以改进的点
 
-## 图像的**Grounding**能力（感觉很有搞头）
+## 图像的`Grounding`能力（感觉很有搞头）
 
 其Grounding模型的论文：https://arxiv.org/abs/2303.05499
 
@@ -134,7 +137,7 @@ https://modelscope.cn/models/AI-ModelScope/GroundingDINO
 
 https://github.com/IDEA-Research/GroundingDINO
 
-### Mobile-Agent的**Grounding**能力是什么？
+### Mobile-Agent的`Grounding`能力是什么？
 
 简单的说，就是安装文本描述，找到图片中对应内容的位置。
 
@@ -168,7 +171,7 @@ https://github.com/IDEA-Research/GroundingDINO
 
 一般而言，单纯OCR文本识别技术已经非常成熟了，其性能已经无限接近可商用的水平了，个人感觉折腾这块用处不大。难的是页面上的文本往往不是同一段的，怎么区分它们？
 
-我让Mobile-Agent帮我获取弹幕内容，但其对发言人的判断被干扰了。这里我不确定是大模型没理解其B站弹幕格式，还是在ocr时就已经搞混了。
+我让Mobile-Agent帮我获取弹幕内容，但其对发言人的判断被干扰了。这里我不确定是大模型没理解其B站弹幕格式，还是在OCR时就已经搞混了。
 
 ![](img/6b588f5c1642fad61a4bdc600376d26a.png)
 

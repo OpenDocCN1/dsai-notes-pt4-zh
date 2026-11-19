@@ -1,10 +1,11 @@
+
 # 其他更多AI绘画工具
 
 > 来源：[https://aigclena.feishu.cn/docx/Our3dg4TEozChRxhK7gcN9c6nph](https://aigclena.feishu.cn/docx/Our3dg4TEozChRxhK7gcN9c6nph)
 
-# 阿里巴巴
+## 阿里巴巴
 
-## 新模型
+### 新模型
 
 2025.9.24
 
@@ -16,7 +17,7 @@ Qwen3-Omni、Qwen-Image-Edit-2509 与 TTS（语音合成）增强功能，其中
 
 ![](img/7047f3f5b936fef11b75dc79cb09a3c7.png)
 
-## Qwen-Image-Edit编辑模型
+### Qwen-Image-Edit编辑模型
 
 Qwen 推出Qwen-Image-Edit编辑模型
 
@@ -28,7 +29,7 @@ Qwen 推出Qwen-Image-Edit编辑模型
 
 [alibaba-qwen-image-edit-video-demo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/R0Q4bhwoKoDvvhxVO2UciHHgnkd)
 
-## Qwen-Image模型
+### Qwen-Image模型
 
 2025.8.4
 
@@ -40,9 +41,9 @@ Qwen 推出Qwen-Image-Edit编辑模型
 
 测评：[最新AI绘画测评 一直更](https://aigclena.feishu.cn/wiki/ZVfrwpU2jiDphEkGb0qc7rfSnoh)
 
-# Meta
+## Meta
 
-## DINOv3
+### DINOv3
 
 Meta 将其最先进的 DINOv3 图像分析模型开放用于商业项目
 
@@ -54,7 +55,7 @@ Meta 发布了 DINOv3 通用图像处理模型，在 17 亿张图像上通过自
 
 [dinov3_trailer-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CDAwbnWd7oUqVKx9JWtc7lVvnGe)
 
-# Reve Halfmoon
+## Reve Halfmoon
 
 Reve推出了文生图Reve Image 1.0  一周内登顶全球排行榜
 
@@ -86,7 +87,6 @@ Reve推出了文生图Reve Image 1.0  一周内登顶全球排行榜
 
 ![](img/7a1cb7acf78323f13c125eb98bf9efdf.png)
 
-
 ![](img/5bc8179f9ec6a5e0df865adc8fc06185.png)
 
 Reve Image 1.0（代号 Halfmoon）在图像质量和生成速度方面表现出色，超越了 Flux、Recraft、Dall-E 3 和 Image3，同时在与行业领先者的竞争中也保持了优势。
@@ -95,14 +95,11 @@ Reve Image 1.0（代号 Halfmoon）在图像质量和生成速度方面表现出
 
 ![](img/7a9a4593b7aa6b78113cddf573d402c9.png)
 
-# craft
-
+## craft
 
 [X2Twitter.com_g46zzViwfTeh_Qc3_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SDAlbR1C9oiR0FxjmVxcGGdjn1A)
 
-#
-
-1205更新
+### 1205更新
 
 Ideogram推出背景移除功能
 
@@ -112,9 +109,9 @@ Ideogram推出背景移除功能
 
 [X2Twitter.com_TPMcSOBcWV_sjMwI_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NrNUbPjLpoN8P6xCWMccE8EmnQb)
 
-# DomoAI
+## DomoAI
 
-## 11月5日更新
+### 11月5日更新
 
 DomoAI推出了18个风格，官方demo👇
 
@@ -142,9 +139,9 @@ domo v13
 
 domo v1
 
-# Flora
+## Flora
 
-## 推出创新AI画布0227
+### 推出创新AI画布0227
 
 Flora正式发布其创新的AI创作工具，旨在重新定义设计工作流程，Flora以其多模型集成与实时协作的特点，成为一种全新的创作平台，专为创意专业人士设计。
 

@@ -1,3 +1,4 @@
+
 # StableDiffusion：云端在线版免费使用笔记分享（Kaggle版）
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/WsF0dWnwCoJ5FvxI8SUcXwpKnIw](https://xmgtoagi.feishu.cn/docx/WsF0dWnwCoJ5FvxI8SUcXwpKnIw)
@@ -10,15 +11,15 @@ Kaggle 是世界上最大的数据科学社区，拥有强大的工具和资源�
 
 文章较长，可阅读原文享F受更佳阅读体验，以及获取更多AI相关资源
 
-一、快速上手
+## 一、快速上手
 
-## 1、注册账号（Kaggle）
+### 1、注册账号（Kaggle）
 
 不过多介绍：https://www.kaggle.com/
 
 ![](img/ccb27a49df8ce89e35771e0f9e6f6513.png)
 
-## 2、复制并编辑代码
+### 2、复制并编辑代码
 
 打开如下链接，复制并编辑后，创建你自己的代码
 
@@ -26,55 +27,55 @@ https://www.kaggle.com/code/xinsiac/zh-stable-diffusion-webui-kaggle
 
 ![](img/1825fad8680bde0a0f7bf6d7707a8c2d.png)
 
-## 3、配置代码：GPU
+### 3、配置代码：GPU
 
 进入你的代码（上一步点击按钮后会跳转入你的代码页面），进行GPU配置，StableDiffusion需要GPU的算力，Kaggle的CPU算力很弱很弱
 
 步骤如下：
 
-1.点开NoteBook Options选项
+1. 点开NoteBook Options选项
 
 ![](img/fb628603230b60e25ebc5633e510994c.png)
 
-**2.验证手机，开启GPU选项**
+2. 验证手机，开启GPU选项
 
 这里不过多介绍。
 
 ![](img/fa6463d42c7c7cd0c760b83642c33f06.png)
 
-**3.开启成功后，如下图介绍**
+3. 开启成功后，如下图介绍
 
 ![](img/afd52e244e35c91b17d714b5eda2b912.png)
 
-## 4、运行服务
+### 4、运行服务
 
-**配置好后就可以运行代码，生成一个A**I绘画服务StableDiffusion
+配置好后就可以运行代码，生成一个AI绘画服务StableDiffusion
 
 步骤如下：
 
-1、启动虚拟机（远程电脑），注意：每周三十小时的GPU使用时间
+1. 启动虚拟机（远程电脑），注意：每周三十小时的GPU使用时间
 
 ![](img/9bbce5d876a3537c9b6a47b5b0d00a26.png)
 
-**2.启动代码**
+2. 启动代码
 
 注意：代码执行过程中，如果看到红色的警告不用太担心，只要代码没停止执行，就继续等等，直到看到输出链接
 
 ![](img/b5cf8ffe219e4960db7e72d89c7fa272.png)
 
-**3.复制链接，在浏览器中打开：**
+3. 复制链接，在浏览器中打开：
 
 ![](img/f4c787138857bd150cbcbaff4a7329ae.png)
 
 ![](img/e50678ab5d2380ff5240610bc438239e.png)
 
-# 二、进阶操作
+## 二、进阶操作
 
-## 1、模型下载
+### 1、模型下载
 
 默认的代码下载的模型只有两个，当你想用一下其他模型的时候，应该怎么做呢？
 
-### 方式一、手动下载
+#### 方式一、手动下载
 
 操作方式麻烦，高手随意，小白绕行，直接参考方法二
 
@@ -108,19 +109,19 @@ https://www.kaggle.com/code/xinsiac/zh-stable-diffusion-webui-kaggle
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/gemasai/vae-ft-mse-840000-ema-pruned/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt -d /kaggle/working/stable-diffusion-webui/models/VAE -o vae-ft-mse-840000-ema-pruned.ckpt
 ```
 
-### 方式二、插件下载
+#### 方式二、插件下载
 
 代码下载太复杂？来试试civitai 的SD插件
 
-#### 插件安装
+##### 插件安装
 
 默认代码已经给安装了，如果没有请自己检查。
 
-检查一下，代码里有没有安装这个civitai浏览插件，可以通过ctrl + F，打开查找框，输入civitai，快速查找相关代码：https://github.com/camenduru/sd-civitai-browser  /kaggle/working/stable-diffusion-webui/extensions/sd-civitai-browser
+检查一下，代码里有没有安装这个civitai浏览插件，可以通过ctrl + F，打开查找框，输入civitai，快速查找相关代码：https://github.com/camenduru/sd-civitai-browser `/kaggle/working/stable-diffusion-webui/extensions/sd-civitai-browser`
 
 ![](img/7875ce604f60642198cb796ea2323067.png)
 
-#### 模型下载
+##### 模型下载
 
 在运行的StableDiffusionWebUI中，切换到civitAi选项卡
 
@@ -130,27 +131,27 @@ https://www.kaggle.com/code/xinsiac/zh-stable-diffusion-webui-kaggle
 
 ![](img/a4006b51602f528ab26fbd92a9be6460.png)
 
-#### 刷新并读取模型
+##### 刷新并读取模型
 
 到这里模型下载已经完成了
 
 ![](img/64d2bcd83cd515d8a190abd6a0912a16.png)
 
-## AI绘画和HuggingFace数据同步
+### AI绘画和HuggingFace数据同步
 
 生成的图想直接存放在云端，就需要这一步的操作。
 
-### 方式一：手动配置
+#### 方式一：手动配置
 
 操作方式繁琐，高手随意，小白直接用方式二
 
-#### 注册HuggingFace账号
+##### 注册HuggingFace账号
 
 这里不过多介绍
 
 ![](img/606a9d1d345bc4a6e2e4294b0e7d030c.png)
 
-#### 创建数据集DataSet
+##### 创建数据集DataSet
 
 创建Dataset，来存储配置文件Config（我创建了两个一个公开的用来存储配置文件，一个私有的存储生成图的压缩文件）
 
@@ -158,7 +159,7 @@ https://www.kaggle.com/code/xinsiac/zh-stable-diffusion-webui-kaggle
 
 ![](img/283b62e152327bf5f7db32aee07acb46.png)
 
-#### 生成**Access Tokens**
+##### 生成Access Tokens
 
 作用就是配置Kaggle 代码可以自动上传文件到HuggingFace。
 
@@ -168,7 +169,7 @@ https://www.kaggle.com/code/xinsiac/zh-stable-diffusion-webui-kaggle
 
 ![](img/3601d500ccd6aa50475a941f38c2cf40.png)
 
-#### 配置token到Kaggle里
+##### 配置token到Kaggle里
 
 ![](img/a8a1e56960831b19cfa561cfab5c3b6c.png)
 
@@ -197,14 +198,14 @@ https://www.kaggle.com/code/xinsiac/zh-stable-diffusion-webui-kaggle
 
 huggingface_use = True
 zip_output=True
-huggingface_token_file = &#x27;/kaggle/input/hgtoken/huggingfacetoken.text&#x27;
-huggiingface_repo_id = &#x27;MSa/sd-output-images&#x27;
-huggiingface_config_repo_id = &#x27;MSa/sd-config&#x27;
+huggingface_token_file = '/kaggle/input/hgtoken/huggingfacetoken.text'
+huggiingface_repo_id = 'MSa/sd-output-images'
+huggiingface_config_repo_id = 'MSa/sd-config'
 # 将会同步的文件
 config_files = [
-    &#x27;ui-config.json&#x27;,
-    &#x27;config.json&#x27;,
-#     &#x27;styles.csv&#x27;
+    'ui-config.json',
+    'config.json',
+#     'styles.csv'
 ]
 
 #功能函数
@@ -214,45 +215,42 @@ from huggingface_hub import HfApi, login
 # config 上传
 def hugface_upload_config(huggingface_token_file, config_files, repo_id):
     if Path(huggingface_token_file).exists():
-        with open(huggingface_token_file, encoding=&quot;utf-8&quot;) as nkfile:
+        with open(huggingface_token_file, encoding="utf-8") as nkfile:
             hugToken = nkfile.readline()
-        if hugToken != &#x27;&#x27;:
+        if hugToken != '':
             # 使用您的 Hugging Face 访问令牌登录
             login(token=hugToken)
             # 实例化 HfApi 类
             api = HfApi()
-            print(&quot;HfApi 类已实例化&quot;)
+            print("HfApi 类已实例化")
             %cd /kaggle/working/stable-diffusion-webui
             # 使用 upload_file() 函数上传文件
-            print(&quot;开始上传文件...&quot;)
+            print("开始上传文件...")
             for config_file in config_files:
                 if Path(config_file).exists():
                     response = api.upload_file(
                         path_or_fileobj=config_file,
                         path_in_repo=config_file,
                         repo_id=repo_id,
-                        repo_type=&quot;dataset&quot;
+                        repo_type="dataset"
                     )
-                    print(&quot;文件上传完成&quot;)
-                    print(f&quot;响应: {response}&quot;)
+                    print("文件上传完成")
+                    print(f"响应: {response}")
                 else:
-                    print(f&#x27;Error: File {config_file} does not exist&#x27;)
+                    print(f'Error: File {config_file} does not exist')
     else:
-        print(f&#x27;Error: File {huggingface_token_file} does not exist&#x27;)
-
+        print(f'Error: File {huggingface_token_file} does not exist')
 ```
 
-注意事项：
+##### 注意事项：
 
 ![](img/cfae28f6841a2eae2f439f40059155ff.png)
 
-##
-
-### 方式二、插件配置
+#### 方式二、插件配置
 
 方式一手动操作太复杂？那就使用HuggingFace 的SD插件的方式吧！
 
-#### 插件安装
+##### 插件安装
 
 确保代码里有下载HuggingFace 的SD插件
 
@@ -261,13 +259,13 @@ def hugface_upload_config(huggingface_token_file, config_files, repo_id):
 !git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /kaggle/working/stable-diffusion-webui/extensions/stable-diffusion-webui-huggingface
 ```
 
-#### HuggingFace选项卡
+##### HuggingFace选项卡
 
 插件安装成功后，StableDiffusion WebUI 里会有HuggingFace选项卡
 
 ![](img/e341ce0e899f8058f837eea6b9d844e6.png)
 
-#### 获得Kaggle 输出文件夹路径的方法
+##### 获得Kaggle 输出文件夹路径的方法
 
 ![](img/f3a9e12be1bd3ba05f129e8194bf2d67.png)
 
@@ -279,17 +277,17 @@ def hugface_upload_config(huggingface_token_file, config_files, repo_id):
 /kaggle/working/stable-diffusion-webui/outputs
 ```
 
-#### 在HuggingFace创建Dataset
+##### 在HuggingFace创建Dataset
 
 ![](img/0038d8d0385867c027b5b180e0ce441f.png)
 
 ![](img/592dd0ec041cd6ea00738c8217a5ec8b.png)
 
-#### 复制HuggingFace的Dataset路径
+##### 复制HuggingFace的Dataset路径
 
 ![](img/eefaf2c33d0f8602a9fddec0a65d39fb.png)
 
-#### 生成HuggingFace的写入token
+##### 生成HuggingFace的写入token
 
 ![](img/e869ff854f76ce35f7ab71f687cde589.png)
 
@@ -305,7 +303,7 @@ def hugface_upload_config(huggingface_token_file, config_files, repo_id):
 
 ![](img/11bc6cc0b60dff323070a8f26c0aed51.png)
 
-## 如何导出导入代码
+### 如何导出导入代码
 
 #### 导出代码
 
@@ -322,5 +320,3 @@ def hugface_upload_config(huggingface_token_file, config_files, repo_id):
 ![](img/7510d935ab4ff21a355e67feeee86697.png)
 
 ![](img/c07301b08e7ebadc802520d221e97945.png)
-
-#

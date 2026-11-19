@@ -1,3 +1,4 @@
+
 # Google发布50页AI Agent白皮书，老金帮你提炼10个核心要点
 
 > 来源：[https://my.feishu.cn/docx/CfTJd7isoor3hlxZr9nciFBenxd](https://my.feishu.cn/docx/CfTJd7isoor3hlxZr9nciFBenxd)
@@ -18,7 +19,7 @@
 
 卧槽。
 
-**这不就是"动嘴不动手"吗？**
+这不就是"动嘴不动手"吗？
 
 但最近Google放出了一份50页的官方指南，专门讲怎么让AI从"只会说"变成"能干活"。
 
@@ -28,33 +29,33 @@
 
 别被这个英文词吓到。
 
-Agent = 能自己干活的AI
+`Agent` = 能自己干活的AI
 
 普通AI：你问它问题，它回答你，完事。
 
-Agent：你给它任务，它自己想办法完成，中间不用你管。
+`Agent`：你给它任务，它自己想办法完成，中间不用你管。
 
-**打个比方**
+打个比方
 
 普通AI就像百度百科。
 
 你问它"怎么做红烧肉"，它告诉你步骤，但你得自己去做。
 
-Agent就像私人厨师。
+`Agent`就像私人厨师。
 
 你说"我想吃红烧肉"，它自己去买菜、切肉、炒糖色、炖40分钟，最后端给你。
 
-**这就是本质区别。**
+这就是本质区别。
 
 ## Google说Agent由3部分组成
 
 Google给了一个很清晰的公式：
 
-Agent = 大脑 + 手 + 协调系统
+`Agent` = 大脑 + 手 + 协调系统
 
 ### 第一部分：大脑（Model）
 
-就是ChatGPT、Claude、Gemini、Deepseek、Qwen、GLM、Minimax这些大模型。
+就是`ChatGPT`、`Claude`、`Gemini`、`Deepseek`、`Qwen`、`GLM`、`Minimax`这些大模型。
 
 负责思考：
 
@@ -80,7 +81,7 @@ Agent = 大脑 + 手 + 协调系统
 
 普通AI没有"手"，所以只能动嘴。
 
-Agent有"手"，所以能干活。
+`Agent`有"手"，所以能干活。
 
 ### 第三部分：协调系统（Orchestration）
 
@@ -88,21 +89,21 @@ Agent有"手"，所以能干活。
 
 它的工作流程是一个循环：
 
-1、**想**：让大脑思考下一步做什么
+1、想：让大脑思考下一步做什么
 
-2、**做**：调用工具执行
+2、做：调用工具执行
 
-3、**看**：观察执行结果
+3、看：观察执行结果
 
 4、回到第1步，继续想
 
-**这个循环就是Agent的灵魂。**
+这个循环就是`Agent`的灵魂。
 
 ## 举个例子你就懂了
 
-假设你让Agent帮你"查一下明天北京的天气，如果下雨就帮我订一把伞"。
+假设你让`Agent`帮你"查一下明天北京的天气，如果下雨就帮我订一把伞"。
 
-**普通AI的反应：**
+普通AI的反应：
 
 > 明天北京有小雨，建议您带伞出门。
 
@@ -110,7 +111,7 @@ Agent有"手"，所以能干活。
 
 它不会帮你订伞。
 
-**Agent的反应：**
+`Agent`的反应：
 
 第一轮循环：
 
@@ -144,19 +145,19 @@ Agent有"手"，所以能干活。
 
 看：订单创建成功
 
-**最终返回**：已帮您订购了一把折叠伞，39元，预计明天上午送达。
+最终返回：已帮您订购了一把折叠伞，39元，预计明天上午送达。
 
-**看到区别了吗？**
+看到区别了吗？
 
-Agent会自己想、自己做、自己检查，直到任务完成。
+`Agent`会自己想、自己做、自己检查，直到任务完成。
 
 ## Google推荐的方法：ReAct
 
-**Googl**e在指南里推荐了一个方法叫ReAct。
+Google在指南里推荐了一个方法叫`ReAct`。
 
 别被名字吓到，其实很简单：
 
-**ReAct = 先想再做**
+`ReAct` = 先想再做
 
 每一步都要：
 
@@ -164,7 +165,7 @@ Agent会自己想、自己做、自己检查，直到任务完成。
 
 2、再去执行动作（Acting）
 
-**为什么要这样？**
+为什么要这样？
 
 因为如果AI不说出思考过程，你不知道它在干嘛。
 
@@ -176,7 +177,7 @@ Agent会自己想、自己做、自己检查，直到任务完成。
 
 ## 一个Agent不够用怎么办？
 
-Google说：**用多个Agent协作。**
+Google说：用多个`Agent`协作。
 
 就像公司一样：
 
@@ -184,39 +185,39 @@ Google说：**用多个Agent协作。**
 
 2、大项目要组团队
 
-**三种协作模式**
+三种协作模式
 
 ### 模式1：流水线
 
-Agent A做完 → 交给Agent B → 再交给Agent C
+`Agent A`做完 → 交给`Agent B` → 再交给`Agent C`
 
 比如写文章：
 
-1、Agent A负责搜集资料
+1、`Agent A`负责搜集资料
 
-2、Agent B负责写初稿
+2、`Agent B`负责写初稿
 
-3、Agent C负责润色
+3、`Agent C`负责润色
 
 ### 模式2：并行
 
-Agent A、B、C同时干活 → 最后汇总
+`Agent A`、`Agent B`、`Agent C`同时干活 → 最后汇总
 
 比如做调研：
 
-1、Agent A查国内市场
+1、`Agent A`查国内市场
 
-2、Agent B查国外市场
+2、`Agent B`查国外市场
 
-3、Agent C查竞品
+3、`Agent C`查竞品
 
 4、最后汇总成报告
 
 ### 模式3：老板+员工
 
-一个"老板Agent"负责分配任务，其他Agent负责执行。
+一个"老板`Agent`"负责分配任务，其他`Agent`负责执行。
 
-老板Agent说：你去查资料，你去写代码，你去测试。
+老板`Agent`说：你去查资料，你去写代码，你去测试。
 
 然后各干各的，最后老板汇总。
 
@@ -224,23 +225,23 @@ Agent A、B、C同时干活 → 最后汇总
 
 这是Google强调的重点。
 
-**问题**：AI有时候会"幻觉"（简单说就是一本正经地胡说八道）。
+问题：AI有时候会"幻觉"（简单说就是一本正经地胡说八道）。
 
-**解决方案**：让AI基于真实数据回答，不要让它瞎猜。
+解决方案：让AI基于真实数据回答，不要让它瞎猜。
 
-Google管这个叫**Grounding**（接地）。
+Google管这个叫`Grounding`（接地）。
 
 方法有三个：
 
-1、**RAG**：让AI先查资料库，再回答
+1、`RAG`：让AI先查资料库，再回答
 
-2、**调用API**：让AI查实时数据，不要靠记忆
+2、调用API：让AI查实时数据，不要靠记忆
 
-3、**搜索**：让AI先搜索，再回答
+3、搜索：让AI先搜索，再回答
 
-**老金的理解**
+老金的理解
 
-Grounding就是让AI"脚踏实地"。
+`Grounding`就是让AI"脚踏实地"。
 
 不要让它凭空想象，要让它查资料。
 
@@ -248,27 +249,27 @@ Grounding就是让AI"脚踏实地"。
 
 Google给了几个指标：
 
-**最重要的4个指标**
+最重要的4个指标
 
-1、**任务完成率**：能不能完成任务（最重要！）
+1、任务完成率：能不能完成任务（最重要！）
 
-2、**准确率**：完成得对不对
+2、准确率：完成得对不对
 
-3、**响应速度**：快不快
+3、响应速度：快不快
 
-4、**成本**：花多少钱
+4、成本：花多少钱
 
-**老金建议：先看任务完成率。**
+老金建议：先看任务完成率。
 
-Agent能不能完成任务是最重要的。
+`Agent`能不能完成任务是最重要的。
 
 其他都是锦上添花。
 
 ## 想自己做Agent怎么入门？
 
-Google推荐用**LangChain**这个工具。
+Google推荐用`LangChain`这个工具。
 
-它是专门用来做Agent的框架。
+它是专门用来做`Agent`的框架。
 
 一个简单的例子：
 
@@ -283,18 +284,18 @@ llm = ChatGPT或Claude
 agent = 创建Agent(大脑=llm, 工具=tools)
 
 # 4、让Agent干活
-结果 = agent.执行(&quot;帮我查一下今天的股票行情&quot;)
+结果 = agent.执行("帮我查一下今天的股票行情")
 ```
 
-**就这么简单。**
+就这么简单。
 
-想学的话，官方文档在这：python.langchain.com
+想学的话，官方文档在这：`python.langchain.com`
 
 ## 老金总结
 
 Google这份50页的指南，老金我觉得核心就一句话：
 
-**让AI从"动嘴"变成"动手"。**
+让AI从"动嘴"变成"动手"。
 
 怎么变？
 
@@ -304,9 +305,9 @@ Google这份50页的指南，老金我觉得核心就一句话：
 
 3、让AI基于真实数据回答，不要瞎编
 
-4、复杂任务用多个Agent协作
+4、复杂任务用多个`Agent`协作
 
-这可能就是Agent的全部秘密了。
+这可能就是`Agent`的全部秘密了。
 
 以后你再看到"AI Agent"这个词，就知道它说的是什么了。
 
@@ -314,21 +315,21 @@ Google这份50页的指南，老金我觉得核心就一句话：
 
 就是能自己干活的AI。
 
-你们有没有用过类似的Agent工具？效果怎么样？
+你们有没有用过类似的`Agent`工具？效果怎么样？
 
 大语言模型（LLM）只是AI的1.0版本，能聊天但不能干活。
 
-Agent是2.0版本，能自己完成任务。
+`Agent`是2.0版本，能自己完成任务。
 
-Google这份指南把原理讲透了，想入门的可以从LangChain开始。
+Google这份指南把原理讲透了，想入门的可以从`LangChain`开始。
 
 有问题随时问老金我，一起研究！
 
 ## 参考来源
 
-Google官方AI Agent白皮书：services.google.com/fh/files/misc/startup_technical_guide_ai_agents_final.pdf
+Google官方AI Agent白皮书：`services.google.com/fh/files/misc/startup_technical_guide_ai_agents_final.pdf`
 
-LangChain官方文档：python.langchain.com
+`LangChain`官方文档：`python.langchain.com`
 
 ---
 
@@ -338,6 +339,6 @@ LangChain官方文档：python.langchain.com
 
 如果想第一时间收到推送，也可以给我个星标⭐～谢谢你看我的文章。
 
-开源知识库地址：https://tffyvtlai4.feishu.cn/wiki/OhQ8wqntFihcI1kWVDlcNdpznFf
+开源知识库地址：`https://tffyvtlai4.feishu.cn/wiki/OhQ8wqntFihcI1kWVDlcNdpznFf`
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

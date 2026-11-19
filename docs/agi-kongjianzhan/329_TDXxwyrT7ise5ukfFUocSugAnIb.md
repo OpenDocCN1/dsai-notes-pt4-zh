@@ -1,14 +1,13 @@
+
 # 轻松玩转黑悟空（换脸换衣）流量巨大！【详细教程】
 
-> 来源：[https://agispace.feishu.cn/docx/OPYydLJteo6OFJxkyGacIUrTnvb](https://agispace.feishu.cn/docx/OPYydLJteo6OFJxkyGacIUrTnvb)
-
+> 来源：`https://agispace.feishu.cn/docx/OPYydLJteo6OFJxkyGacIUrTnvb`
 > 原创：雅雅说
+> 原文链接：`https://mp.weixin.qq.com/s/wePhnYY7sSkpB1150M4pSQ`
 
-> 原文链接：https://mp.weixin.qq.com/s/wePhnYY7sSkpB1150M4pSQ
+## 01
 
-# 01
-
-**雅雅叨叨**
+### 雅雅叨叨
 
 大家好，我是雅雅，一个还在为理想和兴趣而不断学习成长，拥有两台豪华碎钞机的“中年少女”
 
@@ -26,9 +25,9 @@
 
 鉴于此，雅雅略研究了下制作方法哈，也分享给大家！
 
-# 02
+## 02
 
-**项目介绍**
+### 项目介绍
 
 最近刷小红薯，你们肯定看到很多黑悟空的图片/视频流量很大！
 
@@ -36,37 +35,39 @@
 
 ![](img/fd48c76a74b9b24dcc3f3f6e99d0ddc2.png)
 
-# 03
+## 03
 
-**实操经验**
+### 实操经验
 
-黑悟空换衣：第1步：找到喜欢的人物图片，倒推提示词， 打开工具，设置参数，绘图F.1-超写实逼真黑悟空：（lora）www.liblib.art/modelinfo/5e4a4cc0e3674818a9f8454a63cc0115?from=search参数设置：
+黑悟空换衣：第1步：找到喜欢的人物图片，倒推提示词，打开工具，设置参数，绘图F.1-超写实逼真黑悟空：（lora）`www.liblib.art/modelinfo/5e4a4cc0e3674818a9f8454a63cc0115?from=search` 参数设置：
 
 ![](img/64360d8111c9f1928051a34929f16855.png)
 
 ![](img/5fb0c8bfcb0ecb3171bca9bebaa82f39.png)
 
-第2步：绘画效果展示。           原图2                         原图4
+第2步：绘画效果展示。原图2 原图4
 
 ![](img/8939e531b5087d54b8778e5c35819665.png)
 
 ![](img/a7deb4087535ecdbfea7e810f4919dff.png)
 
-反推提示词1：Wukong,  black eyes, black hair, black jacket, black pants, blurry, blurry background, brown pants, formal, full body, looking at viewer, male focus, nipples, open clothes, pants, parismfashion, portrait, realistic, red shirt, shoes, solo, suit, walking,
+反推提示词1：Wukong, black eyes, black hair, black jacket, black pants, blurry, blurry background, brown pants, formal, full body, looking at viewer, male focus, nipples, open clothes, pants, parismfashion, portrait, realistic, red shirt, shoes, solo, suit, walking,
 
-反推提示词2：Wukong, Leather fur leather runway show high-end atmosphere style changes Normal nose Model with regular facial features Printed Design Point Elegant Normal Proportion No Deformation Style New Matching Fashion men's Grey Style Fashion Clothes,反推提示词3：Wukong,masterpiece,best quality,t-s,full body,yellow eyes,choker,bandages,cleavage,chest tattoo,arm tattoo,bandaged arm,rope,shimenawa,kimono,japanese clothes,hadanugi dousa,single glove,obi,sash,vision (genshin impact),pouch,kinchaku,bandaged leg,反推提示词4：
+反推提示词2：Wukong, Leather fur leather runway show high-end atmosphere style changes Normal nose Model with regular facial features Printed Design Point Elegant Normal Proportion No Deformation Style New Matching Fashion men's Grey Style Fashion Clothes,
 
-Wukong,handsome chinese super star,msposter,photorealistic,realistic,photorealistic,best quality,ultra high res,lowra,male focus,long sleeves,hair bun,chinese clothes,blurry,closed eyes,robe,hanfu,sitting,masterpiece,best quality,extremely detailed face,perfect lighting,best quality,ultra high res,photorealistic,ultra detailed,masterpiece,best quality,
+反推提示词3：Wukong,masterpiece,best quality,t-s,full body,yellow eyes,choker,bandages,cleavage,chest tattoo,arm tattoo,bandaged arm,rope,shimenawa,kimono,japanese clothes,hadanugi dousa,single glove,obi,sash,vision (genshin impact),pouch,kinchaku,bandaged leg,
+
+反推提示词4：Wukong,handsome chinese super star,msposter,photorealistic,realistic,photorealistic,best quality,ultra high res,lowra,male focus,long sleeves,hair bun,chinese clothes,blurry,closed eyes,robe,hanfu,sitting,masterpiece,best quality,extremely detailed face,perfect lighting,best quality,ultra high res,photorealistic,ultra detailed,masterpiece,best quality,
 
 photograph,field and city,Medieval art,concept art,Crying,selfie shot angle of a Illuminated Elevated thin Grunge (Boy:1.3) feeling Fearful,intricate background,Salvadoran hairstyle,Dashed Eyes,flower field with Beech,Stars in the sky,soft focus,Evil,moody lighting,film grain,compact camera,L USM,CineColor,Swirling electric color,glittering,dslr,trending on CGSociety
 
-生图效果1（现代）      生图效果2（古典）
+生图效果1（现代） 生图效果2（古典）
 
 ![](img/808126e0a37382f284232e7189c61af9.png)
 
 ![](img/cd727157b170cdd7f3b6b4a058f7c107.png)
 
-生图效果3（日系）     生图效果4（国风）
+生图效果3（日系） 生图效果4（国风）
 
 ![](img/89ee1c64a8ef1524f9e40ae4b72eb139.png)
 

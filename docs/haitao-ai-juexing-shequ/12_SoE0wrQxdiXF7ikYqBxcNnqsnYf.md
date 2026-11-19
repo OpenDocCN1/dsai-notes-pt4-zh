@@ -1,3 +1,4 @@
+
 # Coze视频工作流：成语绘本故事视频模板拆解
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/HE4ydcOYqotwI6xDStXcs0LPnZe](https://zinxkclpk97.feishu.cn/docx/HE4ydcOYqotwI6xDStXcs0LPnZe)
@@ -18,15 +19,19 @@
 
 下面进行详细拆解：
 
-先说思路，其中核心要点是故事的文案质量、和配图一致性。
+## 核心思路
 
-+   根据成语生成绘本故事文案，拆分文案段落，生成配音。
+其中核心要点是故事的文案质量、和配图一致性。
 
-+   提取文案确定其中涉及的角色形象，为后续固定绘本中人物的风格，避免每个画面中人物形象差距太大。
++ 根据成语生成绘本故事文案，拆分文案段落，生成配音。
 
-+   文案分段，生产配图画面的提示词，再生产配图。
++ 提取文案确定其中涉及的角色形象，为后续固定绘本中人物的风格，避免每个画面中人物形象差距太大。
 
-+   最后将上述元素进行组合输出为剪映草稿和视频。
++ 文案分段，生产配图画面的提示词，再生产配图。
+
++ 最后将上述元素进行组合输出为剪映草稿和视频。
+
+## 环节一：生成故事文案
 
 第一个环节，根据用户输入成语，生成故事文。提示词比较简单，出文基本符合要求。
 
@@ -60,18 +65,16 @@
 
 ![](img/fa551376728024e98ebe391361d61a17.png)
 
-代码节点
-
-```
+```python
 import re
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    texts = params[&#x27;contentList&#x27;]
+    texts = params['contentList']
     # 移除数组中可能存在的空字符串元素
     texts = [t for t in texts if t]
     # 构建输出对象
     ret: Output = {
-        &quot;textList&quot;: texts
+        "textList": texts
     }
     return ret
 ```
@@ -124,20 +127,20 @@ ok，以上就完成了故事文案、配音、配图。
 
 ![](img/714ebeff46a41c67e638efb099203bbc.png)
 
-```
+```python
 import json
 
-async def main(args) -&gt; dict:
+async def main(args) -> dict:
     params = args.params
     
     # 参数解析（处理类型转换和嵌套结构）
-    # times = [t[&quot;duration&quot;] for t in params[&#x27;times&#x27;]]  # 提取duration数值
-    times = params[&#x27;times&#x27;]
-    images = params[&#x27;imageList&#x27;]                          # 图片数组
-    texts = params[&#x27;texts&#x27;]                           # 字幕数组
-    aduio_list = params[&#x27;aduio_list&#x27;]                 # 含嵌套结构的音频数据
-    width = int(params[&#x27;width&#x27;])                      # 转int类型
-    height = int(params[&#x27;height&#x27;])                    # 转int类型
+    # times = [t["duration"] for t in params['times']]  # 提取duration数值
+    times = params['times']
+    images = params['imageList']                          # 图片数组
+    texts = params['texts']                           # 字幕数组
+    aduio_list = params['aduio_list']                 # 含嵌套结构的音频数据
+    width = int(params['width'])                      # 转int类型
+    height = int(params['height'])                    # 转int类型
 
     captions = []
     imgs = []
@@ -153,22 +156,22 @@ async def main(args) -&gt; dict:
         
         # 构建音频轨道（从嵌套结构提取真实URL）
         audios.append({
-            &quot;audio_url&quot;: aduio_list[idx],
-            &quot;duration&quot;: duration,
-            &quot;start&quot;: current_time,
-            &quot;end&quot;: end_time
+            "audio_url": aduio_list[idx],
+            "duration": duration,
+            "start": current_time,
+            "end": end_time
         })
         
         
         # 构建图片轨道（每个时间段对应一张图）
         imgs.append({
-            &quot;image_url&quot;: images[idx],
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: current_time,
-            &quot;end&quot;: end_time,
-            &quot;transition&quot;: &quot;叠化&quot;,
-            &quot;transition_duration&quot;: 1000000
+            "image_url": images[idx],
+            "width": width,
+            "height": height,
+            "start": current_time,
+            "end": end_time,
+            "transition": "叠化",
+            "transition_duration": 1000000
         })
         imageDurations.append(end_time-current_time)
         
@@ -177,10 +180,10 @@ async def main(args) -&gt; dict:
 
     # 构建输出（保持JSON序列化）
     return {
-        # &quot;captions&quot;: json.dumps(captions),
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audios&quot;: json.dumps(audios),
-        &quot;imageDurations&quot;:imageDurations
+        # "captions": json.dumps(captions),
+        "imgs": json.dumps(imgs),
+        "audios": json.dumps(audios),
+        "imageDurations": imageDurations
     }
 ```
 
@@ -198,17 +201,17 @@ async def main(args) -&gt; dict:
 
 ![](img/b22203c131f64eac1f52e35b3f7775ee.png)
 
-```
+```python
 import json
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    segment_ids = params[&#x27;segment_ids&#x27;]
-    times = params[&#x27;times&#x27;]
+    segment_ids = params['segment_ids']
+    times = params['times']
     
     # 验证参数长度一致性
     if len(segment_ids) != len(times):
-        raise ValueError(&quot;segment_ids与times数组长度不一致&quot;)
+        raise ValueError("segment_ids与times数组长度不一致")
     
     keyframes = []
     
@@ -218,28 +221,28 @@ async def main(args: Args) -&gt; Output:
 
     for idx, seg_id in enumerate(segment_ids):
         # 获取对应音频时长并转换微秒
-        audio_duration = int(float(times[idx]) )  # 假设输入单位为秒
+        audio_duration = int(float(times[idx]))  # 假设输入单位为秒
         
         # 起始关键帧（0秒位置）
         keyframes.append({
-            &quot;offset&quot;: 0,
-            &quot;property&quot;: &quot;UNIFORM_SCALE&quot;,
-            &quot;segment_id&quot;: seg_id,
-            &quot;value&quot;: start_scale,
-            &quot;easing&quot;: &quot;linear&quot;
+            "offset": 0,
+            "property": "UNIFORM_SCALE",
+            "segment_id": seg_id,
+            "value": start_scale,
+            "easing": "linear"
         })
         
         # 结束关键帧（同步音频时长）
         keyframes.append({
-            &quot;offset&quot;: audio_duration,  # 使用实际音频时长
-            &quot;property&quot;: &quot;UNIFORM_SCALE&quot;,
-            &quot;segment_id&quot;: seg_id,
-            &quot;value&quot;: end_scale,
-            &quot;easing&quot;: &quot;linear&quot;
+            "offset": audio_duration,  # 使用实际音频时长
+            "property": "UNIFORM_SCALE",
+            "segment_id": seg_id,
+            "value": end_scale,
+            "easing": "linear"
         })
 
     return {
-        &quot;keyFrames&quot;: json.dumps(keyframes)
+        "keyFrames": json.dumps(keyframes)
     }
 ```
 

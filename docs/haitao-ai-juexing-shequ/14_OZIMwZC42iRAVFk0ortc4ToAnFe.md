@@ -1,3 +1,4 @@
+
 # Coze制作治愈老奶奶爆款视频
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/OdSddVp3noB1Q9xsPTWc65YKnlf](https://zinxkclpk97.feishu.cn/docx/OdSddVp3noB1Q9xsPTWc65YKnlf)
@@ -22,15 +23,13 @@
 
 流程重点分三部分
 
-1.  使用DeepSeek或其它AI模型，生成治愈文案
-
-1.  文案句子拆分，为每个句子生成配图画面描述和提示词、生成配图
-
-1.  最后将素材内容进行重组，生成剪映草稿
+1. 使用DeepSeek或其它AI模型，生成治愈文案
+2. 文案句子拆分，为每个句子生成配图画面描述和提示词、生成配图
+3. 最后将素材内容进行重组，生成剪映草稿
 
 很容易理解，其核心要点在于人物形象一致性控制和图文显示效果。这里我们通过调整和优化提示词来实现。
 
-> **Coze搭建工作流**
+## Coze搭建工作流
 
 首先是生成文案的节点，我们可以按需选择你觉得效果不错的模型，提示词根据你的人物形象来拟定。
 
@@ -56,14 +55,13 @@
 ![](img/07d6d2e472ac76d01302db950f2c7ace.png)
 
 ```
-
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    texts = params[&#x27;input&#x27;]
+    texts = params['input']
     # 移除数组中可能存在的空字符串元素
     texts = [t for t in texts if t]
     ret: Output = {
-        &quot;textList&quot;: texts
+        "textList": texts
     }
     return ret
 ```
@@ -112,12 +110,11 @@ async def main(args: Args) -&gt; Output:
 ![](img/f89cce0a3d7f3a00136bdcd74be8fd8a.png)
 
 ```
-
 import json
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
     # 构建输出对象
-    img_list = params.get(&quot;imageList&quot;, [])
+    img_list = params.get("imageList", [])
     imgs = []
 
     # 处理图片的缝隙
@@ -126,13 +123,13 @@ async def main(args: Args) -&gt; Output:
         start = img_start
         end = img_start + 3000000  # 3秒
         imgs.append({
-            &quot;image_url&quot;: element,
-            &quot;width&quot;: 1024,
-            &quot;height&quot;: 768,
-            &quot;start&quot;: start,
-            &quot;end&quot;: end,
-            &quot;transition&quot;: &quot;翻页&quot;,
-            &quot;transition_duration&quot;: 1000000  # 1秒
+            "image_url": element,
+            "width": 1024,
+            "height": 768,
+            "start": start,
+            "end": end,
+            "transition": "翻页",
+            "transition_duration": 1000000  # 1秒
         })
         img_start = end
 
@@ -140,17 +137,17 @@ async def main(args: Args) -&gt; Output:
     total_duration = len(img_list) * 3000000
     audio = [
         {
-            &quot;audio_url&quot;: params.get(&quot;audio_url&quot;,&quot;https://houht.oss-cn-shanghai.aliyuncs.com/public/lnn.mp3&quot;),
-            &quot;duration&quot;: total_duration,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: total_duration
+            "audio_url": params.get("audio_url", "https://houht.oss-cn-shanghai.aliyuncs.com/public/lnn.mp3"),
+            "duration": total_duration,
+            "start": 0,
+            "end": total_duration
         }
     ]
 
     # 构建输出对象
     ret = {
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audio_infos&quot;: json.dumps(audio)  # 新的数组格式音频
+        "imgs": json.dumps(imgs),
+        "audio_infos": json.dumps(audio)  # 新的数组格式音频
     }
 
     return ret
@@ -171,7 +168,6 @@ async def main(args: Args) -&gt; Output:
 [WeChat_20250313010028.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BzbUbDIFDo3ku7xXz72cJoC3n4g)
 
 同样的方法，我们可以调整提示词，制作其它的形象人物，比如智慧老爷爷和它的小狗子。
-
 
 ![](img/0f02dd4ae570d9e4fbaf7089d86529b7.png)
 

@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（12月 25日）
 
-> 来源：[https://miracleplus.feishu.cn/docx/NjsXdx4tDojRNjxBGcBcKIoGnLh](https://miracleplus.feishu.cn/docx/NjsXdx4tDojRNjxBGcBcKIoGnLh)
+> 来源：<https://miracleplus.feishu.cn/docx/NjsXdx4tDojRNjxBGcBcKIoGnLh>
 
-# 🔉潜**空间系列活动重磅回归！**
+## 🔉潜空间系列活动重磅回归！
 
 > 本期活动将在**1月4日** **11:00**开始，我们邀请到的嘉宾是叶添，清华大学姚班，卡内基梅隆大学博士生，Physics of LLM 2.1作者，于 Meta 担任 Research Scientist Intern。研究兴趣主要集中在大语言模型的推理机制。曾在顶级会议 NeurIPS 上发表研究论文。此外，曾两次获得中国数学奥林匹克竞赛国家集训队的资格。
 
@@ -14,25 +15,25 @@
 
 ![](img/c6aa9b7bfc0be88d5b6ae5b9545363a7.png)
 
-# 资讯
+## 资讯
 
 ### QVQ：以智慧看世界
 
 贡献人：
 
-https://qwenlm.github.io/blog/qvq-72b-preview/
+<https://qwenlm.github.io/blog/qvq-72b-preview/>
 
 QVQ（Qwen Vision and Query）是一种新型的多模态推理模型，旨在通过结合视觉理解和语言推理能力，提升AI在复杂问题求解上的表现。基于Qwen2-VL-72B，QVQ能够显著增强视觉推理能力，尤其是在数学和科学领域的应用中。通过深入的分步推理，QVQ展现了在解决需要复杂分析思维的任务时的强大能力，达到了70.3的MMMU基准分数，超越了前代的Qwen2-VL-72B-Instruct。
 
-**关键特点**
+#### 关键特点
 
-+   **视觉和语言结合**：QVQ能够理解图像与文字，模拟人类在语言和视觉记忆基础上进行推理的方式。
++   QVQ能够理解图像与文字，模拟人类在语言和视觉记忆基础上进行推理的方式。
 
-+   **超越传统模型**：QVQ在数学推理和视觉任务中的表现超过了之前的版本，展现出在科学问题求解上的突出能力。
++   QVQ在数学推理和视觉任务中的表现超过了之前的版本，展现出在科学问题求解上的出色能力。
 
-+   **数学推理**：例如，在一个涉及导数计算的数学问题中，QVQ使用产品法则逐步推导出正确答案，展示了其扎实的数学推理能力。
++   例如，在一个涉及导数计算的数学问题中，QVQ使用产品法则逐步推导出正确答案，展示了其扎实的数学推理能力。
 
-**局限性**
+#### 局限性
 
 尽管QVQ取得了较为理想的成果，但仍存在一些局限性，特别是在处理更为复杂的多模态任务时，模型的适应性和精准度可能受到挑战。
 
@@ -42,7 +43,7 @@ QVQ（Qwen Vision and Query）是一种新型的多模态推理模型，旨在�
 
 贡献人：
 
-https://mp.weixin.qq.com/s/CVADIa03U2EqpirGbzklrQ
+<https://mp.weixin.qq.com/s/CVADIa03U2EqpirGbzklrQ>
 
 在2024年，人工智能领域再度迎来突破性进展，Sakana AI公司推出了ASAL（Automating the Search for Artificial Life）系统，旨在通过基础模型自动化发现人工生命的过程。ASAL系统的核心目标是探索可能存在的、不同于我们已知生命形式的人工生命，这不仅有助于理解生命的复杂性，还能推动AI的进化和智能研究。ASAL系统依托于基础模型（如CLIP和DINOv2）进行搜索，能有效地在不同的人工生命模拟环境中自动识别涌现的生命现象。
 
@@ -58,17 +59,17 @@ ASAL团队在多个人工生命基质（如Boids、粒子生命、生命游戏�
 
 贡献人：
 
-https://mp.weixin.qq.com/s/p-t0Vl0Ua7zTa6LPvBeH9g
+<https://mp.weixin.qq.com/s/p-t0Vl0Ua7zTa6LPvBeH9g>
 
-1.  整个基础设施堆栈正在经历一次重大改造，类似于互联网和云计算的建设。对推理的需求才刚刚开始加速，将由 GenAI 的日益普及、新的多模态应用以及不断演变的模型架构推动。
+1. 整个基础设施堆栈正在经历一次重大改造，类似于互联网和云计算的建设。对推理的需求才刚刚开始加速，将由 GenAI 的日益普及、新的多模态应用以及不断演变的模型架构推动。
 
-1.  随着规模扩展定律开始趋于平稳，模型开发正从大型预训练转向推理时的逻辑推演。这一转变使模型能够处理更复杂的逻辑推理任务。同时，更小、更专业模型的兴起为用户提供了更高的效率和灵活性。
+2. 随着规模扩展定律开始趋于平稳，模型开发正从大型预训练转向推理时的逻辑推演。这一转变使模型能够处理更复杂的逻辑推理任务。同时，更小、更专业模型的兴起为用户提供了更高的效率和灵活性。
 
-1.  AI 在企业环境中首次带来了实际的投资回报，例如代码生成、客户服务和搜索正在引发可衡量的影响。下一个前沿领域在于 AI 智能体的普及，但只有在我们构建了支持多智能体交互所需的底层架构之后，它们的真正潜力才能得以实现。
+3. AI 在企业环境中首次带来了实际的投资回报，例如代码生成、客户服务和搜索正在引发可衡量的影响。下一个前沿领域在于 AI 智能体的普及，但只有在我们构建了支持多智能体交互所需的底层架构之后，它们的真正潜力才能得以实现。
 
-1.  对 AI 的投资持续增长，特别是在基础设施和基础模型层。大多数退出将通过并购实现，但投资者的高期望可能与市场现实相冲突，从而影响未来的估值。
+4. 对 AI 的投资持续增长，特别是在基础设施和基础模型层。大多数退出将通过并购实现，但投资者的高期望可能与市场现实相冲突，从而影响未来的估值。
 
-1.  AI 的快速采用已经超过了监管框架的步伐，引发了关于版权和知识产权等话题的争论。同时，各国越来越多地将 AI 视为主权问题，导致对 AI 生态系统区域化的关注增加。
+5. AI 的快速采用已经超过了监管框架的步伐，引发了关于版权和知识产权等话题的争论。同时，各国越来越多地将 AI 视为主权问题，导致对 AI 生态系统区域化的关注增加。
 
 ![](img/2063efb13dc63ca1541371f0f5a9d88c.png)
 
@@ -76,9 +77,9 @@ https://mp.weixin.qq.com/s/p-t0Vl0Ua7zTa6LPvBeH9g
 
 贡献人：
 
-https://mp.weixin.qq.com/s/g5uQk7us7dzhxZ_v0CvXVg
+<https://mp.weixin.qq.com/s/g5uQk7us7dzhxZ_v0CvXVg>
 
-**基础设施侧，AI Agent带动更多应用兴起拉**动算力需求，多层推理带动计算量成倍增长。我们观察到各大模型厂商API输入/输出定价呈加速降低趋势，大模型厂商的商业模式正逐步迈入以价换量时代，推动推理量的增长。考虑到推理芯片的需求主要对时延更加敏感，我们认为未来端侧硬件的需求差异化有望推动推理芯片性能多样化、需求定制化。我们看好国内端侧AI芯片企业有望在细分场景站稳脚跟，寻求差异化破局之路。
+基础设施侧，AI Agent带动更多应用兴起拉动算力需求，多层推理带动计算量成倍增长。我们观察到各大模型厂商API输入/输出定价呈加速降低趋势，大模型厂商的商业模式正逐步迈入以价换量时代，推动推理量的增长。考虑到推理芯片的需求主要对时延更加敏感，我们认为未来端侧硬件的需求差异化有望推动推理芯片性能多样化、需求定制化。我们看好国内端侧AI芯片企业有望在细分场景站稳脚跟，寻求差异化破局之路。
 
 应用侧，C端硬件或成流量入口，B端生产工具有望全面升级。1）C端，AI Agent长期将改变人机交互的方式，手机端有望形成新的流量入口，或深刻影响产业商业模式。我们看好互联网及手机厂商对系统级AI的布局，其中手机厂商将语音助手升级为智能体；互联网厂商相关公司相继推出自主智能体，已具备“接管手机”或“接管电脑”的能力；2）B端，AI Agent有望凭借专业性的知识沉淀落地B端市场，实现企业降本增效，其中赋能企业效率提升是决策核心考量，我们看好AI agent带来的效率提升有望刺激新一轮产业投资。
 
@@ -86,29 +87,29 @@ https://mp.weixin.qq.com/s/g5uQk7us7dzhxZ_v0CvXVg
 
 ![](img/67970678188be845ed2b5b619de57eb1.png)
 
-# 推特
+## 推特
 
 ### Kilcher分享：深入解析Byte Latent Transformer: Patches Scale Better Than Tokens
 
-https://x.com/ykilcher/status/1871687743840887174
+<https://x.com/ykilcher/status/1871687743840887174>
 
 🔥新视频上线🔥
 
-我深入（哈！）解析了 **B**yte Latent Transformer: Patches Scale Better Than Tokens 这篇论文。作者摒弃了传统的分词方法，构建了一种基于动态调整大小的“块”（patches）而非token运作的大模型架构。通过控制块的大小，他们可以在模型大小与计算量（FLOPs）之间实现更好的权衡，从而获得比传统分词的大模型更优的扩展表现。
+我深入（哈！）解析了 Byte Latent Transformer: Patches Scale Better Than Tokens 这篇论文。作者摒弃了传统的分词方法，构建了一种基于动态调整大小的“块”（patches）而非token运作的大模型架构。通过控制块的大小，他们可以在模型大小与计算量（FLOPs）之间实现更好的权衡，从而获得比传统分词的大模型更优的扩展表现。
 
-观看视频：https://youtu.be/loaTGpqfctI
+观看视频：<https://youtu.be/loaTGpqfctI>
 
 ![](img/179ea751647e47beb609d3b470f97ddb.png)
 
 ### Shortest：开源的 AI 驱动测试框架，让开发者可以用简单的英语编写端到端测试
 
-https://x.com/shl/status/1871199814710648998
+<https://x.com/shl/status/1871199814710648998>
 
-✂️ **全新推出：Shortest！**
+✂️ 全新推出：Shortest！
 
 Shortest 是一个开源的 AI 驱动测试框架，让开发者可以用简单的英语编写端到端测试，比如：
 
-shortest("用户可以注册并创建一个 $5 的产品")
+`shortest("用户可以注册并创建一个 $5 的产品")`
 
 更多的测试 = 更少的回归错误，因为 AI 负责编写和发布代码。
 
@@ -118,7 +119,7 @@ shortest("用户可以注册并创建一个 $5 的产品")
 
 ### Elton分享：使用v0创建的更现代化的维基百科
 
-https://x.com/christianelton_/status/1871243760870539721
+<https://x.com/christianelton_/status/1871243760870539721>
 
 维基百科，但更现代化 —— 完全使用 v0 构建！
 
@@ -128,27 +129,27 @@ https://x.com/christianelton_/status/1871243760870539721
 
 ### 和AI微积分导师对话：不仅会回答，还可以与学生共享白板进行互动
 
-https://x.com/BenjaminKlieger/status/1871244595759354040
+<https://x.com/BenjaminKlieger/status/1871244595759354040>
 
 教育的未来。
 
 与AI导师对话，它不仅会回答，还可以与学生共享白板进行互动。
 
-来看看这个由 **@GroqInc** 和 **@8090solutions** 推动的 **Calculus Tutor** 吧！一如既往地开源！（详情见线程 🧵）
+来看看这个由 @GroqInc 和 @8090solutions 推动的 Calculus Tutor 吧！一如既往地开源！（详情见线程 🧵）
 
 ![](img/73c3f17321ad68b37d05e348dc0cf168.png)
 
 [GGQmSL_SFO66U3b_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KNSRbCRsOolb0Xxi6j8cL7EHn8g)
 
-# 信号
+## 信号
 
 ### Automating the Search for Artificial Life with Foundation Models
 
 贡献人：
 
-链接：https://arxiv.org/abs/2412.17799
+链接：<https://arxiv.org/abs/2412.17799>
 
-ResearchFlow链接：https://rflow.ai/flow/2e80e9aa-e660-4d58-a438-a48d19ad724d
+ResearchFlow链接：<https://rflow.ai/flow/2e80e9aa-e660-4d58-a438-a48d19ad724d>
 
 随着最近诺贝尔奖因蛋白质发现领域的重大进展而颁发，用于探索大型组合空间的FM有望彻底改变许多科学领域。人工生命 (ALife) 尚未整合 FM，因此为该领域提供了一个重大机会，以减轻主要依靠手动设计和反复试验来发现逼真模拟配置的历史负担。本文首次介绍了使用视觉语言 FM 成功实现这一机会的方法。所提出的方法称为自动搜索人工生命，(1) 找到产生目标现象的模拟，(2) 发现产生时间开放的新颖性的模拟，以及 (3) 照亮整个有趣多样的模拟空间。由于 FM 的通用性，ASAL 可在各种 ALife 基质中有效工作，包括 Boids、粒子生命、生命游戏、Lenia 和神经细胞自动机。突出该技术潜力的主要成果是发现了以前从未见过的 Lenia 和 Boids 生命形式，以及像康威生命游戏一样开放式的细胞自动机。此外，使用 FM 可以以人为本的方式量化以前定性的现象。这种新范式有望加速 ALife 研究，超越仅靠人类智慧所能实现的范围。
 
@@ -158,9 +159,9 @@ ResearchFlow链接：https://rflow.ai/flow/2e80e9aa-e660-4d58-a438-a48d19ad724d
 
 贡献人：
 
-链接：https://arxiv.org/abs/2412.16146
+链接：<https://arxiv.org/abs/2412.16146>
 
-ResearchFlow链接：https://rflow.ai/flow/abfd7bba-8ab0-4d29-ab6d-e2cb2cf27218
+ResearchFlow链接：<https://rflow.ai/flow/abfd7bba-8ab0-4d29-ab6d-e2cb2cf27218>
 
 状态空间模型 (SSM) 最近成为长期存在的 Transformer 架构的强大而有效的替代方案。然而，现有的 SSM 概念化保留了源自自然语言处理的根源的根深蒂固的偏见。这限制了它们适当地模拟视觉输入的空间相关特征的能力。本文通过从原生多维公式开始重新推导现代选择性状态空间技术来解决这些限制。目前，先前的工作尝试通过依赖任意组合的一维扫描方向来捕获空间依赖性，将原生的一维 SSM 应用于二维数据。相比之下，Mamba2D 通过单个二维扫描方向对此进行了改进，该方向原生地考虑了输入的两个维度，在构建隐藏状态时有效地模拟了空间依赖性。在使用 ImageNet-1K 数据集进行标准图像分类评估时，Mamba2D 表现出与之前针对视觉任务的 SSM 改编相当的性能。
 
@@ -170,9 +171,9 @@ ResearchFlow链接：https://rflow.ai/flow/abfd7bba-8ab0-4d29-ab6d-e2cb2cf27218
 
 贡献人：
 
-链接：https://arxiv.org/abs/2412.14922
+链接：<https://arxiv.org/abs/2412.14922>
 
-ResearchFlow链接：https://rflow.ai/flow/146da2e3-b695-4526-b998-fb331216d983
+ResearchFlow链接：<https://rflow.ai/flow/146da2e3-b695-4526-b998-fb331216d983>
 
 监督微调 (SFT) 在将LLM适配到特定领域或任务方面起着至关重要的作用。然而在实际应用中，收集的数据不可避免地包含噪声，这对模型在下游任务上的性能提出了重大挑战。因此，迫切需要一个抗噪声的 SFT 框架来增强模型在下游任务中的能力。为了应对这一挑战，本文引入了一个强大的 SFT 框架 (RobustFT)，它可以对下游任务数据执行噪声检测和重新标记。对于噪声识别，本文方法采用多专家协作系统和推理增强模型来实现卓越的噪声检测。在去噪阶段，采用上下文增强策略，该策略结合最相关和最可信的知识，然后进行仔细评估以生成可靠的注释。此外，论文引入了一种基于响应熵的有效数据选择机制，确保只保留高质量样本进行微调。在五个数据集上对多个 LLM 进行的大量实验证明了 RobustFT 在嘈杂场景中的卓越性能。
 
@@ -182,21 +183,21 @@ ResearchFlow链接：https://rflow.ai/flow/146da2e3-b695-4526-b998-fb331216d983
 
 贡献人：
 
-链接：https://arxiv.org/abs/2412.18153
+链接：<https://arxiv.org/abs/2412.18153>
 
-ResearchFlow链接：https://rflow.ai/flow/7da320e0-58fa-483e-95b8-30a723041371
+ResearchFlow链接：<https://rflow.ai/flow/7da320e0-58fa-483e-95b8-30a723041371>
 
-缺失值仍然是深度数据在其广泛应用中面临的常见挑战。本文工作通过 DepthLab 弥补了这一空白，DepthLab 是一个由图像扩散先验驱动的基础深度修复模型。本文提出的模型具有两个显着的优势：（1）对深度不足区域具有弹性，为连续区域和孤立点提供可靠的补全；（2）在填充缺失值时，模型忠实地保持了与条件已知深度的比例一致性。利用这些优势，这种方法在各种下游任务中证明了其价值，包括 3D 场景修复、文本到 3D 场景生成、使用 DUST3R 进行稀疏视图重建以及 LiDAR 深度补全，在数值性能和视觉质量方面均超越了当前解决方案。
+缺失值仍然是深度数据在其广泛应用中面临的常见挑战。本文工作通过 DepthLab 弥补了这一空白，DepthLab 是一个由图像扩散先验驱动的基础深度修复模型。本文提出的模型具有两个显著的优势：（1）对深度不足区域具有弹性，为连续区域和孤立点提供可靠的补全；（2）在填充缺失值时，模型忠实地保持了与条件已知深度的比例一致性。利用这些优势，这种方法在各种下游任务中证明了其价值，包括 3D 场景修复、文本到 3D 场景生成、使用 DUST3R 进行稀疏视图重建以及 LiDAR 深度补全，在数值性能和视觉质量方面均超越了当前解决方案。
 
 ![](img/e4a7f07e1e04ddaa7cf3ada32cf2b8e0.png)
 
-# 产品
+## 产品
 
 ### Hume OCTAVE 个性化语言模型
 
 贡献人：
 
-https://www.hume.ai/blog/introducing-octave?ref=producthunt
+<https://www.hume.ai/blog/introducing-octave?ref=producthunt>
 
 Hume OCTAVE 是一款下一代语音语言模型，代表了语音和语言处理技术的前沿发展。它具备全新的、突出的能力，如即时生成声音和个性，使得用户能够根据需求灵活创造和定制独特的语音体验。Hume OCTAVE 不仅能处理传统的语言任务，还能在动态交互中实时调整语音特征和个性，使每次沟通都充满个性化和多样性。这项技术的突破，赋予了语音和语言应用更加广泛的可能性，无论是在虚拟助手、娱乐、还是个性化营销中，都能够创造前所未有的沉浸式体验。
 
@@ -206,15 +207,17 @@ Hume OCTAVE 是一款下一代语音语言模型，代表了语音和语言处�
 
 贡献人：
 
-https://www.assistive24.com/?ref=producthunt
+<https://www.assistive24.com/?ref=producthunt>
 
 Assistive24 是一款免费的 Chrome 扩展程序，可增强注意力缺陷多动症 (ADHD)、阅读障碍和视力低下等残障人士的网页访问。享受语音导航、自定义字体、对比度调整等功能。立即体验个性化、包容性的浏览体验。立即免费安装！
+
+
 
 ![](img/ec2ef43907bad2414b5d237bb9f7cda6.png)
 
 # HuggingFace&Github
 
-### FineMath-4+ 高质量数学教育数据集
+## FineMath-4+ 高质量数学教育数据集
 
 贡献人：
 
@@ -228,7 +231,7 @@ https://huggingface.co/datasets/HuggingFaceTB/finemath
 
 # 投融资
 
-### 魔法原子完成1.5亿元天使轮融资，2025年交付数百台人形机器人
+## 魔法原子完成1.5亿元天使轮融资，2025年交付数百台人形机器人
 
 贡献人：
 
@@ -250,7 +253,7 @@ https://36kr.com/p/3092588205553800
 
 # 学习
 
-### 我与vLLM的2024
+## 我与vLLM的2024
 
 贡献人：
 
@@ -272,7 +275,7 @@ vLLM的成功离不开持续的性能优化和重构。随着代码功能的增�
 
 ![](img/eb90962535d65fd00f9538b10a1771aa.png)
 
-### [MLSys 入门向] 做12道题，快速上手Triton！
+## [MLSys 入门向] 做12道题，快速上手Triton！
 
 贡献人：
 
@@ -292,7 +295,7 @@ Triton-Puzzles-Lite 还支持 GPU 运行，尽管在 GPU 模式下会失去一�
 
 ![](img/24a631f48ca3dd59c04672ddc2ec2ac4.png)
 
-### 从抽象推理到大模型：ARC vs o3 引发的AI新思考
+## 从抽象推理到大模型：ARC vs o3 引发的AI新思考
 
 贡献人：
 
@@ -310,35 +313,35 @@ ARC的设计理念是减少依赖大量数据和训练，要求AI从少量示例
 
 ![](img/d8f4a2e627689f08afbbe9f53c2ee8b2.png)
 
-### 24年下半年较新的VLM架构
+## 24年下半年较新的VLM架构
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/11503653276
 
-本文概述了2024年下半年多个知名的视觉语言模型（VL**M），涵盖了多个创新技**术细节和架构设计。Deepseek-VL采用了双视觉backbone（Siglip和SAM），其中Siglip提供低分辨率特征，SAM则提供高分辨率特征，最后将两者的嵌入在channel维度进行拼接，得到一个高维度的特征表示。训练时，文本数据占比为70%，并且通过引入来自不同在线来源的真实数据来提升模型的实际应用效果。
+本文概述了2024年下半年多个知名的视觉语言模型（VLM），涵盖了多个创新技术细节和架构设计。Deepseek-VL采用了双视觉backbone（Siglip和SAM），其中Siglip提供低分辨率特征，SAM则提供高分辨率特征，最后将两者的嵌入在channel维度进行拼接，得到一个高维度的特征表示。训练时，文本数据占比为70%，并且通过引入来自不同在线来源的真实数据来提升模型的实际应用效果。
 
-**Idefics2**提出了基于纯自回归架构的模型，重点在于提高推理效率和性能，尤其是通过项目器（projector）模块来降维token，并优化视觉encoder的patch embedding处理。此外，作者发现视觉分辨率对模型性能的提升优于视觉参数量。
+Idefics2提出了基于纯自回归架构的模型，重点在于提高推理效率和性能，尤其是通过项目器（projector）模块来降维token，并优化视觉encoder的patch embedding处理。此外，作者发现视觉分辨率对模型性能的提升优于视觉参数量。
 
-**InternVL2**在动态高分辨率图像处理上进行了优化，使用了PixelShuffle来减少token数并提高推理效率。其轻量级版本通过对图像进行适当的token降维来增强性能。
+InternVL2在动态高分辨率图像处理上进行了优化，使用了PixelShuffle来减少token数并提高推理效率。其轻量级版本通过对图像进行适当的token降维来增强性能。
 
-**MiniCPM-V**则特别注重端侧应用，采用SigLip-400M和Qwen2-7B两种架构，并引入多图和视频理解能力，突破了GPT-4V等闭源模型在单图理解上的限制。其动态分辨率策略确保了输入图像保持宽高比，并自适应切分成多个patch，以减少token数。
+MiniCPM-V则特别注重端侧应用，采用SigLip-400M和Qwen2-7B两种架构，并引入多图和视频理解能力，突破了GPT-4V等闭源模型在单图理解上的限制。其动态分辨率策略确保了输入图像保持宽高比，并自适应切分成多个patch，以减少token数。
 
-**Qwen2-VL**支持任意分辨率的图像与视频输入，结合了ViT和Qwen2架构，并创新地引入了多模态旋转位置编码（M-ROPE），通过这种三维位置编码策略，模型能够更好地处理图像和视频中的空间与时间信息。其设计支持视频输入通过tube embedding来处理。
+Qwen2-VL支持任意分辨率的图像与视频输入，结合了ViT和Qwen2架构，并创新地引入了多模态旋转位置编码（M-ROPE），通过这种三维位置编码策略，模型能够更好地处理图像和视频中的空间与时间信息。其设计支持视频输入通过tube embedding来处理。
 
-**LLama3.2 Vision**在视觉backbone中使用ViT-H/14，并通过额外的自注意力层来捕捉多尺度特征，同时增加了视频处理能力，通过32帧聚合成1帧来进行时间维度的特征提取。
+LLama3.2 Vision在视觉backbone中使用ViT-H/14，并通过额外的自注意力层来捕捉多尺度特征，同时增加了视频处理能力，通过32帧聚合成1帧来进行时间维度的特征提取。
 
-**Molmo与PixMo**提出了通过语音描述转录成文本的多模态数据集构造方法，注重数据质量而非依赖于合成数据。其训练方式直接全参数训练，而非通过传统的预训练和SFT等阶段。
+Molmo与PixMo提出了通过语音描述转录成文本的多模态数据集构造方法，注重数据质量而非依赖于合成数据。其训练方式直接全参数训练，而非通过传统的预训练和SFT等阶段。
 
-**Ocean-Omni**支持图像、视频、音频和文本的多模态理解，采用siglip 384模型进行视觉处理，并通过卷积网络优化音频token降维。其训练阶段涵盖了图像、视频与音频的联合训练。
+Ocean-Omni支持图像、视频、音频和文本的多模态理解，采用siglip 384模型进行视觉处理，并通过卷积网络优化音频token降维。其训练阶段涵盖了图像、视频与音频的联合训练。
 
-**Janus**与**JanusFlow**分别在视觉理解与图像生成任务上取得突破，Janus结合了siglip与LlamaGen视觉backbone，分别处理高层次语义信息和细节纹理信息。在生成图像任务中，JanusFlow采用了基于RectifiedFlow的扩散模型进行图像生成，并使用特征对齐的技巧来提高生成质量。
+Janus与JanusFlow分别在视觉理解与图像生成任务上取得突破，Janus结合了siglip与LlamaGen视觉backbone，分别处理高层次语义信息和细节纹理信息。在生成图像任务中，JanusFlow采用了基于RectifiedFlow的扩散模型进行图像生成，并使用特征对齐的技巧来提高生成质量。
 
 这些模型在视觉理解、生成以及多模态处理上不断创新，并通过特定的架构优化和训练技巧提升了模型的性能与效率。
 
 ![](img/896987097b63f293cc1b49f3f15ba6dd.png)
 
-### 从头理解VAE（Variational Autoencoder），ELBO，VLB
+## 从头理解VAE（Variational Autoencoder），ELBO，VLB
 
 贡献人：
 
@@ -360,8 +363,6 @@ VAE的变体，如Vector Quantized VAE（VQ-VAE），将会在后续讨论中进
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -372,7 +373,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

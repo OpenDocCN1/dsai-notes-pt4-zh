@@ -1,3 +1,4 @@
+
 # 20240423-什么？心灵鸡汤也开始用AI熬制了？谨慎食用！
 
 > 来源：[https://aigcreative.feishu.cn/docx/HXYrdNKEaovEGUxn895cYL04nKb](https://aigcreative.feishu.cn/docx/HXYrdNKEaovEGUxn895cYL04nKb)
@@ -14,7 +15,7 @@ InspiroBot 是一款运行在以太坊区块链上的人工智能，专门生成
 
 ![](img/c2523fc099a3163060c112ed3c9357ba.png)
 
-进入官网首页，界面很简单，发现只有一个“Generate”【生成】这样一个按钮，再无其他，很简洁。
+进入官网首页，界面很简单，发现只有一个`Generate`【生成】这样一个按钮，再无其他，很简洁。
 
 点击试试：
 
@@ -36,11 +37,9 @@ InspiroBot 是一款运行在以太坊区块链上的人工智能，专门生成
 
 至于生成出的图片有什么用？
 
-1、文章、朋友配图；
-
-2、私域群里每日分享；
-
-3、或者作为印刷品制作出来；
+1. 文章、朋友配图；
+2. 私域群里每日分享；
+3. 或者作为印刷品制作出来；
 
 ......都可以！看你的需求。
 
@@ -52,13 +51,9 @@ InspiroBot 是一款运行在以太坊区块链上的人工智能，专门生成
 
 ![](img/c1c8e9d73066a773b5dcc91da72bc84b.png)
 
-
-
-
 ![](img/54dba8ea8521b4e281fe67ae36b7648c.png)
 
 ![](img/24fdeaf80bf8d8bc34a8b1913e7bc23f.png)
-
 
 ![](img/bbd62f18028c74b9e3f64bbe1600a768.png)
 

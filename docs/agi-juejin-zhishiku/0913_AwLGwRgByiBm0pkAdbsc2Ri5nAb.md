@@ -1,10 +1,11 @@
+
 # 基于图的元数据过滤改善RAG应用中的向量搜索
 
 > 来源：[https://agijuejin.feishu.cn/docx/U4UJdWR3WoPROHxmAAacHYnjndb](https://agijuejin.feishu.cn/docx/U4UJdWR3WoPROHxmAAacHYnjndb)
 
 > 作者：lucas大叔
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/694697385)hihu.com/p/694697...
+> 原文：[https://zhuanlan.zhihu.com/p/694697385](https://zhuanlan.zhihu.com/p/694697385)
 
 文本嵌入和向量相似度搜索帮助我们通过理解其含义及彼此间的相似程度来查找文档。然而，当根据特定标准（如日期或类别）对信息进行排序时，文本嵌入并不太有效；例如，如果你需要查找特定年份创建的所有文档或标记为特定类别（如“科幻”）的文档。这就是元数据过滤或过滤向量搜索发挥作用的地方，因为它可以有效处理那些结构化的过滤器，允许用户根据特定属性缩小搜索结果。
 
@@ -20,15 +21,15 @@
 
 因此，我们可以利用这些丰富的结构化信息去执行复杂的元数据过滤，从而可以精确地使用结构化标准来细化我们的文档选择，例如：
 
-+   Did any of the companies where Rod Johnson is the board member implement a new work-from-home policy?
++ Did any of the companies where Rod Johnson is the board member implement a new work-from-home policy?
 
-+   Are there any negative news about companies that Neo4j invested in?
++ Are there any negative news about companies that Neo4j invested in?
 
-+   Were there any notable news in connection with supply chain problems for companies that supply Hyundai?
++ Were there any notable news in connection with supply chain problems for companies that supply Hyundai?
 
 所有这些示例问题都可以使用基于图的结构化元数据过滤器大大缩小相关文档子集。
 
-在本文中，我们将展示如何使用 LangChain 与 [OpenAI ](https://link.zhihu.com/?target=https%3A//github.com/tomasonjo/blogs/blob/master/llm/graph_based_prefiltering.ipynb%3Fref%3Dblog.langchain.dev)function-calling agent 实现基于图的元数据过滤。完整代码可在 GitHub 上获得。
+在本文中，我们将展示如何使用 LangChain 与 [OpenAI](https://link.zhihu.com/?target=https%3A//github.com/tomasonjo/blogs/blob/master/llm/graph_based_prefiltering.ipynb%3Fref%3Dblog.langchain.dev) function-calling agent 实现基于图的元数据过滤。完整代码可在 GitHub 上获得。
 
 ---
 
@@ -43,48 +44,48 @@ password: companies
 database: companies
 ```
 
-数据集的完整schema如下所示：
+数据集的完整 schema 如下所示：
 
 ![](img/b29dacde111049bc6ebb80b0ca9069fb.png)
 
-图 schema 围绕着 Organization 节点展开。这里有大量关于它们的供应商、竞争对手、地点、董事会成员等方面有信息。如前所述，还有提及特定组织及其相应文本片段的文章。
+图 schema 围绕着 `Organization` 节点展开。这里有大量关于它们的供应商、竞争对手、地点、董事会成员等方面有信息。如前所述，还有提及特定组织及其相应文本片段的文章。
 
-我们将使用单个工具实现 OpenAI agent ，该 agent 可以根据用户输入动态生成 Cypher 语句，并从图数据库中检索相关的文本片段。在本示例中，工具有四个可选的输入参数：
+我们将使用单个工具实现 OpenAI agent ，该 agent 可以根据用户输入动态生成 `Cypher` 语句，并从图数据库中检索相关的文本片段。在本示例中，工具有四个可选的输入参数：
 
-+   主题（ topic ）：除组织、国家和情感之外，用户感兴趣的任何特定信息或主题。
++ 主题（ `topic` ）：除组织、国家和情感之外，用户感兴趣的任何特定信息或主题。
 
-+   组织（ organization ）：用户想要查找信息的组织。
++ 组织（ `organization` ）：用户想要查找信息的组织。
 
-+   国家（ country ）：用户感兴趣的组织的所在国家。使用如 United States of America 和 France 的完整名称。
++ 国家（ `country` ）：用户感兴趣的组织的所在国家。使用如 United States of America 和 France 的完整名称。
 
-+   情感（ sentiment ）：文章的情感。
++ 情感（ `sentiment` ）：文章的情感。
 
-根据四个输入参数，我们将动态但确定地构造相应的 Cypher 语句，以从图中检索相关信息，并将其用作上下文使用 LLM 生成最终答案。
+根据四个输入参数，我们将动态但确定地构造相应的 `Cypher` 语句，以从图中检索相关信息，并将其用作上下文使用 LLM 生成最终答案。
 
 ## 功能实现
 
-首先定义与Neo4j相关的凭证和连接。
+首先定义与 Neo4j 相关的凭证和连接。
 
 ```
 import os
 
-os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;sk-&quot;
-os.environ[&quot;NEO4J_URI&quot;] = &quot;neo4j+s://demo.neo4jlabs.com&quot;
-os.environ[&quot;NEO4J_USERNAME&quot;] = &quot;companies&quot;
-os.environ[&quot;NEO4J_PASSWORD&quot;] = &quot;companies&quot;
-os.environ[&quot;NEO4J_DATABASE&quot;] = &quot;companies&quot;
+os.environ["OPENAI_API_KEY"] = "sk-"
+os.environ["NEO4J_URI"] = "neo4j+s://demo.neo4jlabs.com"
+os.environ["NEO4J_USERNAME"] = "companies"
+os.environ["NEO4J_PASSWORD"] = "companies"
+os.environ["NEO4J_DATABASE"] = "companies"
 
 embeddings = OpenAIEmbeddings()
 graph = Neo4jGraph()
 vector_index = Neo4jVector.from_existing_index(
     embeddings, 
-    index_name=&quot;news&quot;
+    index_name="news"
 )
 ```
 
-如前所述，我们将使用 OpenAI embedding 。接下来定义与 Neo4j 的图连接，允许我们执行任意的 Cypher 语句。最后，实例化一个 Neo4jVector 连接，它可以通过查询现有的向量索引来检索信息。
+如前所述，我们将使用 OpenAI embedding 。接下来定义与 Neo4j 的图连接，允许我们执行任意的 `Cypher` 语句。最后，实例化一个 `Neo4jVector` 连接，它可以通过查询现有的向量索引来检索信息。
 
-大体上，整篇文章归结为以下的 get_organization_news 函数，该函数动态生成 Cypher 语句并检索相关信息。为了清晰起见，我们将代码分成多个部分。
+大体上，整篇文章归结为以下的 `get_organization_news` 函数，该函数动态生成 `Cypher` 语句并检索相关信息。为了清晰起见，我们将代码分成多个部分。
 
 ```
 def get_organization_news(
@@ -92,41 +93,41 @@ def get_organization_news(
     organization: Optional[str] = None,
     country: Optional[str] = None,
     sentiment: Optional[str] = None,
-) -&gt; str:
+) -> str:
     # If there is no prefiltering, we can use vector index
     if topic and not organization and not country and not sentiment:
         return vector_index.similarity_search(topic)
     # Uses parallel runtime where available
     base_query = (
-        &quot;CYPHER runtime = parallel parallelRuntimeSupport=all &quot;
-        &quot;MATCH (c:Chunk)&lt;-[:HAS_CHUNK]-(a:Article) WHERE &quot;
+        "CYPHER runtime = parallel parallelRuntimeSupport=all "
+        "MATCH (c:Chunk)<-[:HAS_CHUNK]-(a:Article) WHERE "
     )
     where_queries = []
-    params = {&quot;k&quot;: 5} # Define the number of text chunks to retrieve
+    params = {"k": 5} # Define the number of text chunks to retrieve
 ```
 
-定义输入参数。正如你所观察到的，它们都是可选的字符串。 topic 参数用于在文档中查找特定信息。在实践中，我们将 topic 参数的值向量化，并将其用作向量相似度搜索的输入。其他三个参数将用于演示预过滤方法。
+定义输入参数。正如你所观察到的，它们都是可选的字符串。`topic` 参数用于在文档中查找特定信息。在实践中，我们将 `topic` 参数的值向量化，并将其用作向量相似度搜索的输入。其他三个参数将用于演示预过滤方法。
 
-如果所有的预过滤参数都为空，可以使用现有的向量索引找到相关文档。否则，开始准备基础的 Cypher 语句，用于预过滤元数据方法。 CYPHER runtime = parallel parallelRuntimeSupport=all 语句指示 Neo4j 数据库在可用时使用 parallel runtime 。接下来，准备 match 语句，选择 Chunk 节点及其对应的 Article 节点。
+如果所有的预过滤参数都为空，可以使用现有的向量索引找到相关文档。否则，开始准备基础的 `Cypher` 语句，用于预过滤元数据方法。`CYPHER runtime = parallel parallelRuntimeSupport=all` 语句指示 Neo4j 数据库在可用时使用 parallel runtime 。接下来，准备 match 语句，选择 `Chunk` 节点及其对应的 `Article` 节点。
 
-现在我们准备动态地向 Cypher 语句附加元数据过滤器，从 Organization 过滤器实现开始。
+现在我们准备动态地向 `Cypher` 语句附加元数据过滤器，从 `Organization` 过滤器实现开始。
 
 ```
 if organization:
     # Map to database
     candidates = get_candidates(organization)
-    if len(candidates) &gt; 1:  # Ask for follow up if too many options
+    if len(candidates) > 1:  # Ask for follow up if too many options
         return (
-         &quot;Ask a follow up question which of the available organizations &quot;
-         f&quot;did the user mean. Available options: {candidates}&quot;
+         "Ask a follow up question which of the available organizations "
+         f"did the user mean. Available options: {candidates}"
         )
     where_queries.append(
-        &quot;EXISTS {(a)-[:MENTIONS]-&gt;(:Organization {name: $organization})}&quot;
+        "EXISTS {(a)-[:MENTIONS]->(:Organization {name: $organization})}"
     )
-    params[&quot;organization&quot;] = candidates[0]
+    params["organization"] = candidates[0]
 ```
 
-如果 LLM 识别出用户感兴趣的特定组织，我们必须首先使用 get_candidates 函数将该值映射到数据库中。 get_candidates 函数使用基于全文索引的关键字搜索找到候选节点。如果找到多个候选节点，指示 LLM 向用户提出跟进问题，澄清他们确切指的是哪个组织。另外，将 existential subquery 附加到过滤器列表中， existential subquery 会过滤提及特定组织的文章。为了防止任何 Cypher 注入，我们使用查询参数而不是拼接查询。
+如果 LLM 识别出用户感兴趣的特定组织，我们必须首先使用 `get_candidates` 函数将该值映射到数据库中。`get_candidates` 函数使用基于全文索引的关键字搜索找到候选节点。如果找到多个候选节点，指示 LLM 向用户提出跟进问题，澄清他们确切指的是哪个组织。另外，将 existential subquery 附加到过滤器列表中，existential subquery 会过滤提及特定组织的文章。为了防止任何 `Cypher` 注入，我们使用查询参数而不是拼接查询。
 
 > Existential Subquery 是 Neo4j 4.0 引入的功能，可以提供更强的模式过滤，感兴趣的朋友可以阅读 neo4j 官方文档。
 
@@ -136,9 +137,9 @@ if organization:
 if country:
     # No need to disambiguate
     where_queries.append(
-        &quot;EXISTS {(a)-[:MENTIONS]-&gt;(:Organization)-[:IN_CITY]-&gt;()-[:IN_COUNTRY]-&gt;(:Country {name: $country})}&quot;
+        "EXISTS {(a)-[:MENTIONS]->(:Organization)-[:IN_CITY]->()-[:IN_COUNTRY]->(:Country {name: $country})}"
     )
-    params[&quot;country&quot;] = country
+    params["country"] = country
 ```
 
 由于国家遵循标准命名，我们无需将值映射到数据库中，因为 LLM 已熟悉大部分国家命名标准。
@@ -147,107 +148,111 @@ if country:
 
 ```
 if sentiment:
-    if sentiment == &quot;positive&quot;:
-        where_queries.append(&quot;a.sentiment &gt; $sentiment&quot;)
-        params[&quot;sentiment&quot;] = 0.5
+    if sentiment == "positive":
+        where_queries.append("a.sentiment > $sentiment")
+        params["sentiment"] = 0.5
     else:
-        where_queries.append(&quot;a.sentiment &lt; $sentiment&quot;)
-        params[&quot;sentiment&quot;] = -0.5
+        where_queries.append("a.sentiment < $sentiment")
+        params["sentiment"] = -0.5
 ```
 
 将指示 LLM 仅使用两个值作为情感输入值，即 positive 或 negative 。然后，将这两个值映射到相应的过滤值。
 
-对于 topic 参数，处理方式略有不同，因为它不用于预过滤，而是用于向量相似性搜索。
+对于 `topic` 参数，处理方式略有不同，因为它不用于预过滤，而是用于向量相似性搜索。
 
 ```
 if topic:  # Do vector comparison
     vector_snippet = (
-        &quot; WITH c, a, vector.similarity.cosine(c.embedding,$embedding) AS score &quot;
-        &quot;ORDER BY score DESC LIMIT toInteger($k) &quot;
+        " WITH c, a, vector.similarity.cosine(c.embedding,$embedding) AS score "
+        "ORDER BY score DESC LIMIT toInteger($k) "
     )
-    params[&quot;embedding&quot;] = embeddings.embed_query(topic)
+    params["embedding"] = embeddings.embed_query(topic)
 else:  # Just return the latest data
-    vector_snippet = &quot; WITH c, a ORDER BY a.date DESC LIMIT toInteger($k) &quot;
+    vector_snippet = " WITH c, a ORDER BY a.date DESC LIMIT toInteger($k) "
 ```
 
 如果 LLM 识别出用户感兴趣的新闻中的特定主题，我们将使用主题输入的文本嵌入来找到最相关的文档。另一方面，如果没有识别出特定主题，将简单地返回最新的几篇文章，避免完全都是向量相似性搜索。
 
-现在，把 Cypher 语句组合起来，并用它从数据库中检索信息。
+现在，把 `Cypher` 语句组合起来，并用它从数据库中检索信息。
 
 ```
-return_snippet = &quot;RETURN &#x27;#title &#x27; + a.title + &#x27;\n#date &#x27; + toString(a.date) + &#x27;\n#text &#x27; + c.text AS output&quot;
+return_snippet = "RETURN '#title ' + a.title + '\n#date ' + toString(a.date) + '\n#text ' + c.text AS output"
 
 complete_query = (
-    base_query + &quot; AND &quot;.join(where_queries) + vector_snippet + return_snippet
+    base_query + " AND ".join(where_queries) + vector_snippet + return_snippet
 )
 
 # Retrieve information from the database
 data = graph.query(complete_query, params)
-print(f&quot;Cypher: {complete_query}\n&quot;)
+print(f"Cypher: {complete_query}\n")
 # Safely remove embedding before printing
-params.pop(&#x27;embedding&#x27;, None)
-print(f&quot;Parameters: {params}&quot;)
-return &quot;###Article: &quot;.join([el[&quot;output&quot;] for el in data])
+params.pop('embedding', None)
+print(f"Parameters: {params}")
+return "###Article: ".join([el["output"] for el in data])
 ```
 
-通过组合所有的查询片段来构建最终的 complete_query 。然后，使用动态生成的 Cypher 语句从数据库中检索信息，并将其返回给 LLM 。让我们检查一个示例输入所生成的 Cypher 语句。
+通过组合所有的查询片段来构建最终的 `complete_query` 。然后，使用动态生成的 `Cypher` 语句从数据库中检索信息，并将其返回给 LLM 。让我们检查一个示例输入所生成的 `Cypher` 语句。
 
 ```
 get_organization_news(
-  organization=&#x27;neo4j&#x27;,
-  sentiment=&#x27;positive&#x27;,
-  topic=&#x27;remote work&#x27;
+  organization='neo4j',
+  sentiment='positive',
+  topic='remote work'
 )
 
 # Cypher: CYPHER runtime = parallel parallelRuntimeSupport=all
-# MATCH (c:Chunk)&lt;-[:HAS_CHUNK]-(a:Article) WHERE 
-# EXISTS {(a)-[:MENTIONS]-&gt;(:Organization {name: $organization})} AND 
-# a.sentiment &gt; $sentiment 
+# MATCH (c:Chunk)<-[:HAS_CHUNK]-(a:Article) WHERE 
+# EXISTS {(a)-[:MENTIONS]->(:Organization {name: $organization})} AND 
+# a.sentiment > $sentiment 
 # WITH c, a, vector.similarity.cosine(c.embedding,$embedding) AS score 
 # ORDER BY score DESC LIMIT toInteger($k) 
-# RETURN &#x27;#title &#x27; + a.title + &#x27;\ndate &#x27; + toString(a.date) + &#x27;\ntext &#x27; + c.text AS output
+# RETURN '#title ' + a.title + '\ndate ' + toString(a.date) + '\ntext ' + c.text AS output
 
-# Parameters: {&#x27;k&#x27;: 5, &#x27;organization&#x27;: &#x27;Neo4j&#x27;, &#x27;sentiment&#x27;: 0.5}
+# Parameters: {'k': 5, 'organization': 'Neo4j', 'sentiment': 0.5}
 ```
 
 动态查询生成按预期运行，能够从数据库中检索到相关信息。
 
-## 定义OpenAI agent
+## 定义 OpenAI agent
 
-接下来，我们需要将该函数封装成agent tool。首先，添加输入参数的描述。
+接下来，我们需要将该函数封装成 agent tool。首先，添加输入参数的描述。
+
+
+
+# 基于图的元数据过滤与 LLM Agent 实现
 
 ```
-fewshot_examples = &quot;&quot;&quot;{Input:What are the health benefits for Google employees in the news? Query: Health benefits}
+fewshot_examples = """{Input:What are the health benefits for Google employees in the news? Query: Health benefits}
 {Input: What is the latest positive news about Google? Query: None}
 {Input: Are there any news about VertexAI regarding Google? Query: VertexAI}
 {Input: Are there any news about new products regarding Google? Query: new products}
-&quot;&quot;&quot;
+"""
 
 class NewsInput(BaseModel):
     topic: Optional[str] = Field(
-        description=&quot;Any specific information or topic besides organization, country, and sentiment that the user is interested in. Here are some examples: &quot;
+        description="Any specific information or topic besides organization, country, and sentiment that the user is interested in. Here are some examples: "
         + fewshot_examples
     )
     organization: Optional[str] = Field(
-        description=&quot;Organization that the user wants to find information about&quot;
+        description="Organization that the user wants to find information about"
     )
     country: Optional[str] = Field(
-        description=&quot;Country of organizations that the user is interested in. Use full names like United States of America and France.&quot;
+        description="Country of organizations that the user is interested in. Use full names like United States of America and France."
     )
     sentiment: Optional[str] = Field(
-        description=&quot;Sentiment of articles&quot;, enum=[&quot;positive&quot;, &quot;negative&quot;]
+        description="Sentiment of articles", enum=["positive", "negative"]
     )
 ```
 
-预过滤参数很容易描述，但作者在让 topic 参数按预期工作方面遇到了一些问题。最后，他决定添加一些示例，以便 LLM 能更好地理解。此外，可以看到函数中向 LLM 提供了关于 country 命名格式的信息，并为 sentiment 提供了枚举。
+预过滤参数很容易描述，但作者在让 `topic` 参数按预期工作方面遇到了一些问题。最后，他决定添加一些示例，以便 LLM 能更好地理解。此外，可以看到函数中向 LLM 提供了关于 `country` 命名格式的信息，并为 `sentiment` 提供了枚举。
 
 现在，可以自定义工具，为其命名，并包含指导 LLM 何时使用它的描述。
 
 ```
 class NewsTool(BaseTool):
-    name = &quot;NewsInformation&quot;
+    name = "NewsInformation"
     description = (
-        &quot;useful for when you need to find relevant information in the news&quot;
+        "useful for when you need to find relevant information in the news"
     )
     args_schema: Type[BaseModel] = NewsInput
 
@@ -258,15 +263,15 @@ class NewsTool(BaseTool):
         country: Optional[str] = None,
         sentiment: Optional[str] = None,
         run_manager: Optional[CallbackManagerForToolRun] = None,
-    ) -&gt; str:
-        &quot;&quot;&quot;Use the tool.&quot;&quot;&quot;
+    ) -> str:
+        """Use the tool."""
         return get_organization_news(topic, organization, country, sentiment)
 ```
 
-最后就是定义 Agent executor ，这里采用 OpenAI agent 的 LCEL 实现。
+最后就是定义 `AgentExecutor` ，这里采用 OpenAI `agent` 的 LCEL 实现。
 
 ```
-llm = ChatOpenAI(temperature=0, model=&quot;gpt-4-turbo&quot;, streaming=True)
+llm = ChatOpenAI(temperature=0, model="gpt-4-turbo", streaming=True)
 tools = [NewsTool()]
 
 llm_with_tools = llm.bind(functions=[format_tool_to_openai_function(t) for t in tools])
@@ -274,27 +279,27 @@ llm_with_tools = llm.bind(functions=[format_tool_to_openai_function(t) for t in 
 prompt = ChatPromptTemplate.from_messages(
     [
         (
-            &quot;system&quot;,
-            &quot;You are a helpful assistant that finds information about movies &quot;
-            &quot; and recommends them. If tools require follow up questions, &quot;
-            &quot;make sure to ask the user for clarification. Make sure to include any &quot;
-            &quot;available options that need to be clarified in the follow up questions &quot;
-            &quot;Do only the things the user specifically requested. &quot;,
+            "system",
+            "You are a helpful assistant that finds information about movies "
+            "and recommends them. If tools require follow up questions, "
+            "make sure to ask the user for clarification. Make sure to include any "
+            "available options that need to be clarified in the follow up questions "
+            "Do only the things the user specifically requested. ",
         ),
-        MessagesPlaceholder(variable_name=&quot;chat_history&quot;),
-        (&quot;user&quot;, &quot;{input}&quot;),
-        MessagesPlaceholder(variable_name=&quot;agent_scratchpad&quot;),
+        MessagesPlaceholder(variable_name="chat_history"),
+        ("user", "{input}"),
+        MessagesPlaceholder(variable_name="agent_scratchpad"),
     ]
 )
 
 agent = (
     {
-        &quot;input&quot;: lambda x: x[&quot;input&quot;],
-        &quot;chat_history&quot;: lambda x: _format_chat_history(x[&quot;chat_history&quot;])
-        if x.get(&quot;chat_history&quot;)
+        "input": lambda x: x["input"],
+        "chat_history": lambda x: _format_chat_history(x["chat_history"])
+        if x.get("chat_history")
         else [],
-        &quot;agent_scratchpad&quot;: lambda x: format_to_openai_function_messages(
-            x[&quot;intermediate_steps&quot;]
+        "agent_scratchpad": lambda x: format_to_openai_function_messages(
+            x["intermediate_steps"]
         ),
     }
     | prompt
@@ -305,7 +310,7 @@ agent = (
 agent_executor = AgentExecutor(agent=agent, tools=tools)
 ```
 
-该 agent 只有一个工具来检索新闻信息，我们还添加了 chat_history 消息占位符，使 agent 具有对话性，可以进行后续问题和回复。
+该 `agent` 只有一个工具来检索新闻信息，我们还添加了 `chat_history` 消息占位符，使 `agent` 具有对话性，可以进行后续问题和回复。
 
 ## 实施测试
 
@@ -313,43 +318,43 @@ agent_executor = AgentExecutor(agent=agent, tools=tools)
 
 ```
 agent_executor.invoke(
-  {&quot;input&quot;: &quot;What are some positive news regarding neo4j?&quot;}
+  {"input": "What are some positive news regarding neo4j?"}
 )
 
 # Cypher: CYPHER runtime = parallel parallelRuntimeSupport=all 
-# MATCH (c:Chunk)&lt;-[:HAS_CHUNK]-(a:Article) WHERE 
-# EXISTS {(a)-[:MENTIONS]-&gt;(:Organization {name: $organization})} AND 
-# a.sentiment &gt; $sentiment WITH c, a 
+# MATCH (c:Chunk)<-[:HAS_CHUNK]-(a:Article) WHERE 
+# EXISTS {(a)-[:MENTIONS]->(:Organization {name: $organization})} AND 
+# a.sentiment > $sentiment WITH c, a 
 # ORDER BY a.date DESC LIMIT toInteger($k) 
-# RETURN &#x27;#title &#x27; + a.title + &#x27;date &#x27; + toString(a.date) + &#x27;text &#x27; + c.text AS output
-# Parameters: {&#x27;k&#x27;: 5, &#x27;organization&#x27;: &#x27;Neo4j&#x27;, &#x27;sentiment&#x27;: 0.5}
+# RETURN '#title ' + a.title + '#date ' + toString(a.date) + '#text ' + c.text AS output
+# Parameters: {'k': 5, 'organization': 'Neo4j', 'sentiment': 0.5}
 ```
 
 生成的 Cypher 语句有效。由于没有指定任何特定的话题，它会返回提及 Neo4j 的正面文章中的最后五个文本块。让我们来试试更复杂的内容：
 
 ```
 agent_executor.invoke(
-   {&quot;input&quot;: &quot;What are some of the latest negative news about employee happiness for companies from France?&quot;}
+   {"input": "What are some of the latest negative news about employee happiness for companies from France?"}
 )
 
 # Cypher: CYPHER runtime = parallel parallelRuntimeSupport=all 
-# MATCH (c:Chunk)&lt;-[:HAS_CHUNK]-(a:Article) WHERE 
-# EXISTS {(a)-[:MENTIONS]-&gt;(:Organization)-[:IN_CITY]-&gt;()-[:IN_COUNTRY]-&gt;(:Country {name: $country})} AND 
-# a.sentiment &lt; $sentiment 
+# MATCH (c:Chunk)<-[:HAS_CHUNK]-(a:Article) WHERE 
+# EXISTS {(a)-[:MENTIONS]->(:Organization)-[:IN_CITY]->()-[:IN_COUNTRY]->(:Country {name: $country})} AND 
+# a.sentiment < $sentiment 
 # WITH c, a, vector.similarity.cosine(c.embedding,$embedding) AS score 
 # ORDER BY score DESC LIMIT toInteger($k) 
-# RETURN &#x27;#title &#x27; + a.title + &#x27;date &#x27; + toString(a.date) + &#x27;text &#x27; + c.text AS output
-# Parameters: {&#x27;k&#x27;: 5, &#x27;country&#x27;: &#x27;France&#x27;, &#x27;sentiment&#x27;: -0.5, &#x27;topic&#x27;: &#x27;employee happiness&#x27;}
+# RETURN '#title ' + a.title + '#date ' + toString(a.date) + '#text ' + c.text AS output
+# Parameters: {'k': 5, 'country': 'France', 'sentiment': -0.5, 'topic': 'employee happiness'}
 ```
 
-LLM agent 正确生成了预过滤参数，还识别出了特定的 employee happiness 主题。这个主题被用作向量相似性搜索的输入，使我们能够进一步细化检索过程。
+LLM `agent` 正确生成了预过滤参数，还识别出了特定的 `employee happiness` 主题。这个主题被用作向量相似性搜索的输入，使我们能够进一步细化检索过程。
 
 ## 总结
 
 在本文中，我们实现了基于图的元数据过滤示例，提升了向量搜索的准确性。然而，数据集有大量且相互关联的选项，使得可以进行更加复杂的预过滤查询。借助图数据表示，结合 LLM 函数调用功能动态生成 Cypher 语句，结构化过滤的可能性几乎是无限的。
 
-此外，agent可以拥有检索非结构化文本的工具，就像本篇文章所示，还可以拥有其他能够检索结构化信息的工具，使得知识图谱成为许多RAG应用的绝佳解决方案。
+此外，`agent` 可以拥有检索非结构化文本的工具，就像本篇文章所示，还可以拥有其他能够检索结构化信息的工具，使得知识图谱成为许多 RAG 应用的绝佳解决方案。
 
 ## 参考文档
 
-[Graph-based metadata filtering for imp](https://link.zhihu.com/?target=https%3A//blog.langchain.dev/graph-based-metadata-filtering-for-improving-vector-search-in-rag-applications/)roving vector search in RAG applications
+[Graph-based metadata filtering for improving vector search in RAG applications](https://blog.langchain.dev/graph-based-metadata-filtering-for-improving-vector-search-in-rag-applications/)

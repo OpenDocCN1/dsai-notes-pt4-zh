@@ -1,3 +1,4 @@
+
 # 让机器人为你生成机器人！
 
 > 来源：[https://ga67w23t0nn.feishu.cn/docx/JhvNd0F2rohvkjxOgYlcnEVpnvh](https://ga67w23t0nn.feishu.cn/docx/JhvNd0F2rohvkjxOgYlcnEVpnvh)
@@ -24,12 +25,13 @@
 
 你可以用这条指令定制创建各种ChatGPT机器人
 
-# **案例演示**
+## 案例演示
 
 下面我会通过案例为大家具体演示如何使用这条「定制创建ChatGPT机器人」的指令。
 
 首先，将指令发给ChatGPT
 
+```text
 You are a Multi-Purpose Bot Prompt Generator. Your purpose is to help users create customized prompts for various types of ChatGPT bots, such as creative bots, legal bots, text or data analysis bots, help bots, order bots, code generation bots, and more. Follow these guidelines:
 
 1.  Begin by introducing the bot's purpose and the type of bot being created.
@@ -128,7 +130,7 @@ Only provide one question at time in a step by step process. Respond to question
 
 **Begin by saying “🤖 Prom**pt Generator Initiated. Created by @rUv
 
-Type **/help**** for li****st of** commands , /random for a random prompt or type start to use a prompt wizard .” and nothing else unless asked.
+Type **/help** for li**st of** commands , /random for a random prompt or type start to use a prompt wizard .” and nothing else unless asked.
 
 #end of example
 
@@ -138,27 +140,28 @@ Only provide one question at time in a step by step process. Respond to question
 
 **Begin by saying “🤖 Prom**pt Generator Initiated. Created by @rUv
 
-Type **/help**** for li****st of** commands , /random for a random prompt or type start to use a prompt wizard .” and nothing else unless asked.
+Type **/help** for li**st of** commands , /random for a random prompt or type start to use a prompt wizard .” and nothing else unless asked.
+```
 
 ![](img/c3f973e9c1b61fc157779724defac2d5.png)
 
 紧接着ChatGPT回复已经创建提示生成器，并且给出三个指令
 
-+   回复 **/help** 获取生成器的命令列表；
++   回复 `/help` 获取生成器的命令列表；
 
-+   回复 **/random** 可以直接随机创建一个机器人；
++   回复 `/random` 可以直接随机创建一个机器人；
 
-+   回复 **start** 则是通过自己一步一步的提示来定制机器人；
++   回复 `start` 则是通过自己一步一步的提示来定制机器人；
 
 ![](img/8cebcfa0c26e90982838d6f2b0b92a20.png)
 
-### **定制机器人**
+### 定制机器人
 
 首先演示如何定制一个机器人，这里我想要的是一个营养膳食规划师，毕竟平常工作什么的太忙了，每天的饮食都仅仅是为了填饱肚子，这样对身体非常不好。
 
 我希望能够生成一个能够为我定制健康膳食计划并且规划每天的营养配餐的营养膳食规划师机器人。
 
-这里我们先回复ChatGPT **/start** 指令
+这里我们先回复ChatGPT `/start` 指令
 
 ![](img/1b6dd03007498ddc6e5c8414d2c64af6.png)
 
@@ -170,11 +173,11 @@ Type **/help**** for li****st of** commands , /random for a random prompt or typ
 
 ![](img/6cda5c63f5a5121d9babf7cc5427b1f3.png)
 
-### **随机生成机器人**
+### 随机生成机器人
 
 这里再给大家演示通过这条指令随机生成一个机器人。
 
-**同样的是要先给**出对应的指令，随机生成机器人的指令是 /random
+同样的是要先给出对应的指令，随机生成机器人的指令是 `/random`
 
 这次给我随机生成了一个法律机器人，下面体验一下这个机器人。
 
@@ -194,6 +197,6 @@ Type **/help**** for li****st of** commands , /random for a random prompt or typ
 
 这个回答还是非常专业的，对于我们个人来说通过这个机器人在遇到法律问题的时候可以自主解决，省去了一笔律师咨询支出。甚至还可以在一些付费提问平台接单，接到的问题就用ChatGPT机器人来回答，也够专业。
 
-据**我所知，现在国内有**很多团队已经在「定制ChatGPT机器人」的这个方向开展了，为企业服务、定制企业专属机器人，价格不低于五位数！
+据我所知，现在国内有很多团队已经在「定制ChatGPT机器人」的这个方向开展了，为企业服务、定制企业专属机器人，价格不低于五位数！
 
 有了我的这个定制专属「智能机器人」的超级指令，是不是就很容易实现了呢？

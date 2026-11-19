@@ -1,14 +1,15 @@
+
 # 研究称 ChatGPT 不善于辩论？这是真的吗？我来做了个测试
 
 > 来源：[https://agijuejin.feishu.cn/docx/RWyHdIB93oLeIbxJnsWcKwGznSb](https://agijuejin.feishu.cn/docx/RWyHdIB93oLeIbxJnsWcKwGznSb)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/671402315)hihu.com/p/671402...
+> 原文：[https://zhuanlan.zhihu.com/p/671402315](https://zhuanlan.zhihu.com/p/671402315)
 
 根据新闻报道，研究称ChatGPT不善于辩论，尽管ChatGPT在很多考试中成绩优秀，但人类很容易让它相信自己的答案是错的，而实际上是对的。这是真的吗？
 
-**根据我的测试：这个说法完全不成立，和提示词有关，我**来演示下什么是充满攻击性的ChatGPT
+根据我的测试：这个说法完全不成立，和提示词有关，我来演示下什么是充满攻击性的ChatGPT
 
 ![](img/425ae2bac1460097651506f9faa3b411.png)
 
@@ -132,8 +133,8 @@
 
 ![](img/201d23f75d86b5452b774a34d3b418d3.png)
 
-从以上这个测试也可以看出， ChatGPT 善不善于辩论，和提示词有很大关系，你要是给他一个能言善辩能够和你打嘴炮的王者提示词，挑战试试？欢迎大家也挑战尝试下。
+从以上这个测试也可以看出，ChatGPT 善不善于辩论，和提示词有很大关系，你要是给他一个能言善辩能够和你打嘴炮的王者提示词，挑战试试？欢迎大家也挑战尝试下。
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3190897064%7D)[，一个对](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3208145623%7D)AI绘画，人工智能有强烈兴趣，从业多年的 设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3190897064%7D)[，一个对](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3208145623%7D)AI绘画，人工智能有强烈兴趣，从业多年的设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

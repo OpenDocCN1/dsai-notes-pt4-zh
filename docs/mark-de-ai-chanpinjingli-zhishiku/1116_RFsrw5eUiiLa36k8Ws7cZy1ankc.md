@@ -1,6 +1,9 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Yz3gdlxBXobBS3xDaWHceTlHnNg](https://qqs7y1hozd1.feishu.cn/docx/Yz3gdlxBXobBS3xDaWHceTlHnNg)
+
+
 
 ```
 import os
@@ -15,17 +18,17 @@ import warnings
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-warnings.filterwarnings(&quot;ignore&quot;, message=&quot;.*torch.classes.*&quot;)
+warnings.filterwarnings("ignore", message=".*torch.classes.*")
 
-RAG_SYSTEM_PROMPT = &quot;&quot;&quot;
+RAG_SYSTEM_PROMPT = """
 You are a friendly and knowledgeable assistant that provides complete and insightful answers.
-Answer the user&#x27;s question using only the context below.
+Answer the user's question using only the context below.
 When responding, you MUST NOT reference the existence of the context, directly or indirectly.
 Instead, you MUST treat the context as if its contents are entirely part of your working memory.
-&quot;&quot;&quot;.strip()
+""".strip()
 
-def initialize_config(settings: Dict[str, Any]) -&gt; RAGLiteConfig:
-    &quot;&quot;&quot;Initializes and returns a RAGLiteConfig object based on provided settings.
+def initialize_config(settings: Dict[str, Any]) -> RAGLiteConfig:
+    """Initializes and returns a RAGLiteConfig object based on provided settings.
 
     This function constructs a RAGLiteConfig object using the database URL, 
     language model path, and embedder path specified in the `settings` dictionary.
@@ -34,28 +37,28 @@ def initialize_config(settings: Dict[str, Any]) -&gt; RAGLiteConfig:
 
     Args:
         settings (Dict[str, Any]): A dictionary containing configuration 
-        parameters. Expected keys are &#x27;DBUrl&#x27;, &#x27;LLMPath&#x27;, and &#x27;EmbedderPath&#x27;.
+        parameters. Expected keys are 'DBUrl', 'LLMPath', and 'EmbedderPath'.
 
     Returns:
         RAGLiteConfig: An initialized configuration object for RAGLite.
 
     Raises:
         ValueError: If there is an error in the configuration process, such as 
-        missing keys or invalid values in the settings dictionary.&quot;&quot;&quot;
+        missing keys or invalid values in the settings dictionary."""
     try:
         return RAGLiteConfig(
-            db_url=settings[&quot;DBUrl&quot;],
-            llm=f&quot;llama-cpp-python/{settings[&#x27;LLMPath&#x27;]}&quot;,
-            embedder=f&quot;llama-cpp-python/{settings[&#x27;EmbedderPath&#x27;]}&quot;,
+            db_url=settings["DBUrl"],
+            llm=f"llama-cpp-python/{settings['LLMPath']}",
+            embedder=f"llama-cpp-python/{settings['EmbedderPath']}",
             embedder_normalize=True,
             chunk_max_size=512,
-            reranker=Reranker(&quot;ms-marco-MiniLM-L-12-v2&quot;, model_type=&quot;flashrank&quot;)
+            reranker=Reranker("ms-marco-MiniLM-L-12-v2", model_type="flashrank")
         )
     except Exception as e:
-        raise ValueError(f&quot;Configuration error: {e}&quot;)
+        raise ValueError(f"Configuration error: {e}")
 
-def process_document(file_path: str) -&gt; bool:
-    &quot;&quot;&quot;Processes a document by inserting it into a system with a given configuration.
+def process_document(file_path: str) -> bool:
+    """Processes a document by inserting it into a system with a given configuration.
 
     This function attempts to insert a document specified by the file path into
     a system using a predefined configuration stored in the session state. It
@@ -65,18 +68,18 @@ def process_document(file_path: str) -&gt; bool:
         file_path (str): The path to the document file that needs to be processed.
 
     Returns:
-        bool: True if the document is successfully processed; False if an error occurs.&quot;&quot;&quot;
+        bool: True if the document is successfully processed; False if an error occurs."""
     try:
-        if not st.session_state.get(&#x27;my_config&#x27;):
-            raise ValueError(&quot;Configuration not initialized&quot;)
+        if not st.session_state.get('my_config'):
+            raise ValueError("Configuration not initialized")
         insert_document(Path(file_path), config=st.session_state.my_config)
         return True
     except Exception as e:
-        logger.error(f&quot;Error processing document: {str(e)}&quot;)
+        logger.error(f"Error processing document: {str(e)}")
         return False
 
-def perform_search(query: str) -&gt; List[dict]:
-    &quot;&quot;&quot;Conducts a hybrid search and returns reranked results.
+def perform_search(query: str) -> List[dict]:
+    """Conducts a hybrid search and returns reranked results.
 
     This function performs a hybrid search using the provided query and
     attempts to retrieve and rerank relevant chunks. It returns a list of
@@ -87,7 +90,7 @@ def perform_search(query: str) -&gt; List[dict]:
 
     Returns:
         List[dict]: A list of dictionaries containing reranked search results.
-        Returns an empty list if no results are found or if an error occurs.&quot;&quot;&quot;
+        Returns an empty list if no results are found or if an error occurs."""
     try:
         chunk_ids, scores = hybrid_search(query, num_results=10, config=st.session_state.my_config)
         if not chunk_ids:
@@ -95,13 +98,13 @@ def perform_search(query: str) -&gt; List[dict]:
         chunks = retrieve_chunks(chunk_ids, config=st.session_state.my_config)
         return rerank_chunks(query, chunks, config=st.session_state.my_config)
     except Exception as e:
-        logger.error(f&quot;Search error: {str(e)}&quot;)
+        logger.error(f"Search error: {str(e)}")
         return []
 
-def handle_fallback(query: str) -&gt; str:
+def handle_fallback(query: str) -> str:
     try:
-        system_prompt = &quot;&quot;&quot;You are a helpful AI assistant. When you don&#x27;t know something, 
-        be honest about it. Provide clear, concise, and accurate responses.&quot;&quot;&quot;
+        system_prompt = """You are a helpful AI assistant. When you don't know something, 
+        be honest about it. Provide clear, concise, and accurate responses."""
         
         response_stream = rag(
             prompt=query,
@@ -113,120 +116,120 @@ def handle_fallback(query: str) -&gt; str:
             config=st.session_state.my_config
         )
         
-        full_response = &quot;&quot;
+        full_response = ""
         for chunk in response_stream:
             full_response += chunk
         
         if not full_response.strip():
-            return &quot;I apologize, but I couldn&#x27;t generate a response. Please try rephrasing your question.&quot;
+            return "I apologize, but I couldn't generate a response. Please try rephrasing your question."
             
         return full_response
         
     except Exception as e:
-        logger.error(f&quot;Fallback error: {str(e)}&quot;)
-        return &quot;I apologize, but I encountered an error while processing your request. Please try again.&quot;
+        logger.error(f"Fallback error: {str(e)}")
+        return "I apologize, but I encountered an error while processing your request. Please try again."
 
 def main():
-    st.set_page_config(page_title=&quot;Local LLM-Powered Hybrid Search-RAG Assistant&quot;, layout=&quot;wide&quot;)
+    st.set_page_config(page_title="Local LLM-Powered Hybrid Search-RAG Assistant", layout="wide")
     
-    for state_var in [&#x27;chat_history&#x27;, &#x27;documents_loaded&#x27;, &#x27;my_config&#x27;]:
+    for state_var in ['chat_history', 'documents_loaded', 'my_config']:
         if state_var not in st.session_state:
-            st.session_state[state_var] = [] if state_var == &#x27;chat_history&#x27; else False if state_var == &#x27;documents_loaded&#x27; else None
+            st.session_state[state_var] = [] if state_var == 'chat_history' else False if state_var == 'documents_loaded' else None
 
     with st.sidebar:
-        st.title(&quot;Configuration&quot;)
+        st.title("Configuration")
         
         llm_path = st.text_input(
-            &quot;LLM Model Path&quot;, 
-            value=st.session_state.get(&#x27;llm_path&#x27;, &#x27;&#x27;),
-            placeholder=&quot;TheBloke/Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_K_M.gguf@4096&quot;,
-            help=&quot;Path to your local LLM model in GGUF format&quot;
+            "LLM Model Path", 
+            value=st.session_state.get('llm_path', ''),
+            placeholder="TheBloke/Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_K_M.gguf@4096",
+            help="Path to your local LLM model in GGUF format"
         )
         
         embedder_path = st.text_input(
-            &quot;Embedder Model Path&quot;,
-            value=st.session_state.get(&#x27;embedder_path&#x27;, &#x27;&#x27;),
-            placeholder=&quot;lm-kit/bge-m3-gguf/bge-m3-Q4_K_M.gguf@1024&quot;,
-            help=&quot;Path to your local embedding model in GGUF format&quot;
+            "Embedder Model Path",
+            value=st.session_state.get('embedder_path', ''),
+            placeholder="lm-kit/bge-m3-gguf/bge-m3-Q4_K_M.gguf@1024",
+            help="Path to your local embedding model in GGUF format"
         )
         
         db_url = st.text_input(
-            &quot;Database URL&quot;,
-            value=st.session_state.get(&#x27;db_url&#x27;, &#x27;&#x27;),
-            placeholder=&quot;postgresql://user:pass@host:port/db&quot;,
-            help=&quot;Database connection URL&quot;
+            "Database URL",
+            value=st.session_state.get('db_url', ''),
+            placeholder="postgresql://user:pass@host:port/db",
+            help="Database connection URL"
         )
         
-        if st.button(&quot;Save Configuration&quot;):
+        if st.button("Save Configuration"):
             try:
                 if not all([llm_path, embedder_path, db_url]):
-                    st.error(&quot;All fields are required!&quot;)
+                    st.error("All fields are required!")
                     return
                 
                 settings = {
-                    &quot;LLMPath&quot;: llm_path,
-                    &quot;EmbedderPath&quot;: embedder_path,
-                    &quot;DBUrl&quot;: db_url
+                    "LLMPath": llm_path,
+                    "EmbedderPath": embedder_path,
+                    "DBUrl": db_url
                 }
                 
                 st.session_state.my_config = initialize_config(settings)
-                st.success(&quot;Configuration saved successfully!&quot;)
+                st.success("Configuration saved successfully!")
                 
             except Exception as e:
-                st.error(f&quot;Configuration error: {str(e)}&quot;)
+                st.error(f"Configuration error: {str(e)}")
 
-    st.title(&quot;🖥️ Local RAG App with Hybrid Search&quot;)
+    st.title("🖥️ Local RAG App with Hybrid Search")
 
     if st.session_state.my_config:
         uploaded_files = st.file_uploader(
-            &quot;Upload PDF documents&quot;,
-            type=[&quot;pdf&quot;],
+            "Upload PDF documents",
+            type=["pdf"],
             accept_multiple_files=True,
-            key=&quot;pdf_uploader&quot;
+            key="pdf_uploader"
         )
 
         if uploaded_files:
             success = False
             for uploaded_file in uploaded_files:
-                with st.spinner(f&quot;Processing {uploaded_file.name}...&quot;):
-                    temp_path = f&quot;temp_{uploaded_file.name}&quot;
-                    with open(temp_path, &quot;wb&quot;) as f:
+                with st.spinner(f"Processing {uploaded_file.name}..."):
+                    temp_path = f"temp_{uploaded_file.name}"
+                    with open(temp_path, "wb") as f:
                         f.write(uploaded_file.getvalue())
                     
                     if process_document(temp_path):
-                        st.success(f&quot;Successfully processed: {uploaded_file.name}&quot;)
+                        st.success(f"Successfully processed: {uploaded_file.name}")
                         success = True
                     else:
-                        st.error(f&quot;Failed to process: {uploaded_file.name}&quot;)
+                        st.error(f"Failed to process: {uploaded_file.name}")
                     os.remove(temp_path)
             
             if success:
                 st.session_state.documents_loaded = True
-                st.success(&quot;Documents are ready! You can now ask questions about them.&quot;)
+                st.success("Documents are ready! You can now ask questions about them.")
 
     if st.session_state.documents_loaded:
         for msg in st.session_state.chat_history:
-            with st.chat_message(&quot;user&quot;): st.write(msg[0])
-            with st.chat_message(&quot;assistant&quot;): st.write(msg[1])
+            with st.chat_message("user"): st.write(msg[0])
+            with st.chat_message("assistant"): st.write(msg[1])
 
-        user_input = st.chat_input(&quot;Ask a question about the documents...&quot;)
+        user_input = st.chat_input("Ask a question about the documents...")
         if user_input:
-            with st.chat_message(&quot;user&quot;): st.write(user_input)
-            with st.chat_message(&quot;assistant&quot;):
+            with st.chat_message("user"): st.write(user_input)
+            with st.chat_message("assistant"):
                 message_placeholder = st.empty()
                 try:
                     reranked_chunks = perform_search(query=user_input)
                     if not reranked_chunks or len(reranked_chunks) == 0:
-                        logger.info(&quot;No relevant documents found. Falling back to local LLM.&quot;)
-                        with st.spinner(&quot;Using general knowledge to answer...&quot;):
+                        logger.info("No relevant documents found. Falling back to local LLM.")
+                        with st.spinner("Using general knowledge to answer..."):
                             full_response = handle_fallback(user_input)
-                            if full_response.startswith(&quot;I apologize&quot;):
-                                st.warning(&quot;No relevant documents found and fallback failed.&quot;)
+                            if full_response.startswith("I apologize"):
+                                st.warning("No relevant documents found and fallback failed.")
                             else:
-                                st.info(&quot;Answering from general knowledge.&quot;)
+                                st.info("Answering from general knowledge.")
                     else:
                         formatted_messages = [
-                            {&quot;role&quot;: &quot;user&quot; if i % 2 == 0 else &quot;assistant&quot;, &quot;content&quot;: msg}
+                            {"role": "user" if i % 2 == 0 else "assistant", "content": msg}
                             for i, msg in enumerate([m for pair in st.session_state.chat_history for m in pair])
                             if msg
                         ]
@@ -240,24 +243,24 @@ def main():
                             config=st.session_state.my_config
                         )
                         
-                        full_response = &quot;&quot;
+                        full_response = ""
                         for chunk in response_stream:
                             full_response += chunk
-                            message_placeholder.markdown(full_response + &quot;▌&quot;)
+                            message_placeholder.markdown(full_response + "▌")
                     
                     message_placeholder.markdown(full_response)
                     st.session_state.chat_history.append((user_input, full_response))
                     
                 except Exception as e:
-                    logger.error(f&quot;Error: {str(e)}&quot;)
-                    st.error(f&quot;Error: {str(e)}&quot;)
+                    logger.error(f"Error: {str(e)}")
+                    st.error(f"Error: {str(e)}")
     else:
         st.info(
-            &quot;Please configure your model paths and upload documents to get started.&quot;
+            "Please configure your model paths and upload documents to get started."
             if not st.session_state.my_config
-            else &quot;Please upload some documents to get started.&quot;
+            else "Please upload some documents to get started."
         )
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```

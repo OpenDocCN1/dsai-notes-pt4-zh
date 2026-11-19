@@ -1,38 +1,33 @@
+
 # Sora 2：国庆朋友圈刷屏的“AI 视频神器”与实战工作流教程
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/W65LdXYeOoGZlExnYAVcv9zfnAb](https://xuqiwei1986.feishu.cn/docx/W65LdXYeOoGZlExnYAVcv9zfnAb)
+> 来源：https://xuqiwei1986.feishu.cn/docx/W65LdXYeOoGZlExnYAVcv9zfnAb
 
-国庆**第一天，你有**没有被朋友圈里铺天盖地的“AI 视频”刷屏？有人在火星旅游，有人在轮船上遭遇风暴，还有人在宇宙飞船里举着红旗……这些看似“烧钱拍大片”的效果，其实大部分都来自 OpenAI 最新发布的 Sora 2。
+国庆第一天，你有没有被朋友圈里铺天盖地的“AI 视频”刷屏？有人在火星旅游，有人在轮船上遭遇风暴，还有人在宇宙飞船里举着红旗……这些看似“烧钱拍大片”的效果，其实大部分都来自 OpenAI 最新发布的 Sora 2。
 
-**这不是 Photo**shop，而是下一代的 AI 视频生成工具。它的出现，让过去需要团队、摄制组、动辄数十万成本的视觉创作，变成了普通人动动手指就能完成的事情。
+这不是 PhotoShop，而是下一代的 AI 视频生成工具。它的出现，让过去需要团队、摄制组、动辄数十万成本的视觉创作，变成了普通人动动手指就能完成的事情。
 
 ## 什么是 Sora 2？
 
 Sora 2 是 OpenAI 刚推出的全新版本 AI 视频生成工具。它和之前的 AIGC 产品相比，突破在于：
 
-1.  **音画同步**：不仅能生成画面，还能自动配上对白、环境音和背景音乐，直接就是完整视频。
+1. 音画同步：不仅能生成画面，还能自动配上对白、环境音和背景音乐，直接就是完整视频。
+2. 物理真实：动作、光影、镜头切换都符合现实规律，不会出现“人影分离”或“手脚乱动”的穿帮。
+3. Cameo 功能：你可以录制自己的形象和声音，授权后，AI 就能把你变成“数字演员”，让你出现在任何视频里。
+4. Remix 功能：把热门视频的风格、节奏、镜头参数提取出来，再替换成新角色或新场景，轻松做出差异化作品。
+5. 资产库：视频不再是一锤子买卖，可以沉淀成可调用的“视觉基因库”，以后随时复用。
 
-1.  **物理真实**：动作、光影、镜头切换都符合现实规律，不会出现“人影分离”或“手脚乱动”的穿帮。
+一句话总结：过去拍摄 + 剪辑 + 后期的繁琐流程，现在只要一条指令，90 秒就能出片。
 
-1.  **Cameo 功能**：你可以录制自己的形象和声音，授权后，AI 就能把你变成“数字演员”，让你出现在任何视频里。
-
-1.  **Remix 功能**：把热门视频的风格、节奏、镜头参数提取出来，再替换成新角色或新场景，轻松做出差异化作品。
-
-1.  **资产库**：视频不再是一锤子买卖，可以沉淀成可调用的“视觉基因库”，以后随时复用。
-
-**一句话总结：过去**拍摄 + 剪辑 + 后期的繁琐流程，现在只要一条指令，90 秒就能出片。
-
-**碎碎念：中文支持不是太好**
+碎碎念：中文支持不是太好
 
 ## 为什么它会在国庆刷屏？
 
 首先，节日自带流量，朋友圈和短视频平台都在找“视觉冲击 + 节日氛围”的内容。Sora 2 恰好满足了这种需求：
 
-+   **快速产出**：不用约摄影师、不用租设备，10 秒设定一个场景，半小时就能做一批视频。
-
-+   **全民参与**：哪怕是普通人，也能让自己“出现在天安门广场看升旗”，或者“在火星上旅游”。
-
-+   **创意无限**：不同于模板化的滤镜，Sora 2 可以自由生成奇幻场景，让“假期大片”更有想象力。
++ 快速产出：不用约摄影师、不用租设备，10 秒设定一个场景，半小时就能做一批视频。
++ 全民参与：哪怕是普通人，也能让自己“出现在天安门广场看升旗”，或者“在火星上旅游”。
++ 创意无限：不同于模板化的滤镜，Sora 2 可以自由生成奇幻场景，让“假期大片”更有想象力。
 
 于是我们就看到：朋友圈里有人在火星旅游，有人在外滩上空穿梭，还有人化身“航天员”，把国庆过成了大片。
 
@@ -56,31 +51,25 @@ Sora 2 是 OpenAI 刚推出的全新版本 AI 视频生成工具。它和之前�
 
 ## 如何体验 Sora 2？
 
-+   **开放形式**：目前支持 iOS 与网页版(https://**sora.c****h**atgpt.com/)，需要邀请码，另外可以通过https://api.aicso.top/ 接口平台生成，只要0.0495元一个视频，生成时间2-5分钟一个，本篇文章将会使用该接口进行Sora2视频生成。
-
-+   **Pro 用户**：可体验更高质量的视频效果。
-
-+   **安全机制**：Cameo 的授权可随时撤销，用户可以追踪和管理包含自己形象的视频。
++ 开放形式：目前支持 iOS 与网页版(`https://sora.chatgpt.com/`)，需要邀请码，另外可以通过`https://api.aicso.top/` 接口平台生成，只要0.0495元一个视频，生成时间2-5分钟一个，本篇文章将会使用该接口进行Sora2视频生成。
++ Pro 用户：可体验更高质量的视频效果。
++ 安全机制：`Cameo` 的授权可随时撤销，用户可以追踪和管理包含自己形象的视频。
 
 ## 实战：用 Coze 工作流 + 飞书多维表格，一键生成 Sora 2 视频（约 ¥0.0495/条，2–5 分钟/条）
 
-> 目标：在飞书多维表格里输入 提示词/参考图，使用「扣子工作流调用」字段捷径插件调用 Coze 工作流，通过 api.aicso.top 接口生成 Sora 2 视频，并把请求结果与视频链接回写到表格。
+> 目标：在飞书多维表格里输入 提示词/参考图，使用「扣子工作流调用」字段捷径插件调用 Coze 工作流，通过 `api.aicso.top` 接口生成 Sora 2 视频，并把请求结果与视频链接回写到表格。
 
 ### 架构与流程
 
-+   **入口**：飞书多维表格➡️记录一行任务（提示词、参考图、工作流结果、视频预览等）➡️使用「扣子工作流调用」字段捷径插件调用工作流
-
-+   **编排**：Coze 工作流➡️接收表格参数➡️调用 HTTP 请求节点到 api.aicso.top 创建视频任务➡️获取任务结果➡️返回视频 URL
-
-+   **回写**：「扣子工作流调用」字段捷径插件➡️调用工作流获取该行记录提示词生成的视频地址
++ 入口：飞书多维表格➡️记录一行任务（提示词、参考图、工作流结果、视频预览等）➡️使用「扣子工作流调用」字段捷径插件调用工作流
++ 编排：Coze 工作流➡️接收表格参数➡️调用 HTTP 请求节点到 `api.aicso.top` 创建视频任务➡️获取任务结果➡️返回视频 URL
++ 回写：「扣子工作流调用」字段捷径插件➡️调用工作流获取该行记录提示词生成的视频地址
 
 ### 前置准备
 
-1.  Coze 账号，开通工作流与插件能力。
-
-1.  飞书账号，能创建与编辑多维表格，使用自动化与按钮字段。
-
-1.  api.aicso.top 的 API Key。
+1. Coze 账号，开通工作流与插件能力。
+2. 飞书账号，能创建与编辑多维表格，使用自动化与按钮字段。
+3. `api.aicso.top` 的 API Key。
 
 ### Coze 工作流流程图
 
@@ -90,23 +79,23 @@ Sora 2 是 OpenAI 刚推出的全新版本 AI 视频生成工具。它和之前�
 
 1、创建工作流：
 
-**工作流名称：**sora_video_generate
+**工作流名称：**`sora_video_generate`
 
-**工作流描述：**sora_video_generate，sora视频生成
+**工作流描述：**`sora_video_generate`，sora视频生成
 
 ![](img/120e51bacc656b93bc960f05aacdf8dd.png)
 
 2、开始节点设置如下：
 
-image_url：图片地址，对应飞书多维表格参考图
+`image_url`：图片地址，对应飞书多维表格参考图
 
-prompt：提示词，对应飞书多维表格提示词
+`prompt`：提示词，对应飞书多维表格提示词
 
-api_key：**api_key，https**://api.aicso.top平台的令牌，记得创建时选择「限时特价」分组
+`api_key`：`api_key`，`https://api.aicso.top`平台的令牌，记得创建时选择「限时特价」分组
 
-api_url：API接口平台地址，默认：https://api.aicso.top/v1/chat/completions
+`api_url`：API接口平台地址，默认：`https://api.aicso.top/v1/chat/completions`
 
-model：模型，设置为sora-2，还可以选择sora-2-hd、sora-2-landscape-hd、sora-2-portrait-hd
+`model`：模型，设置为`sora-2`，还可以选择`sora-2-hd`、`sora-2-landscape-hd`、`sora-2-portrait-hd`
 
 ![](img/cfb1f90c529c00cfbc301655ce978d30.png)
 
@@ -116,11 +105,11 @@ model：模型，设置为sora-2，还可以选择sora-2-hd、sora-2-landscape-h
 
 有-hd的是720p的视频，视频清晰度会高些。
 
-令牌创建(https://api.aicso.top/console/token)：
+令牌创建(`https://api.aicso.top/console/token`)：
 
 ![](img/339d449e491e5965bbc366d5e213b884.png)
 
-3、设置「设置令牌」文本处理节点，String1引用开始节点的api_key：
+3、设置「设置令牌」文本处理节点，`String1`引用开始节点的`api_key`：
 
 ```
 Bearer {{String1}}
@@ -132,25 +121,25 @@ Bearer {{String1}}
 
 请求头：
 
-Authorization：引用「设置令牌」节点的output
+`Authorization`：引用「设置令牌」节点的`output`
 
 请求体：
 
 ```
-**{
-  &quot;model&quot;: &quot;**sora-2&quot;,
-  &quot;messages&quot;: [
+{
+  "model": "sora-2",
+  "messages": [
     {
-      &quot;role&quot;: &quot;user&quot;,
-      &quot;content&quot;: [
+      "role": "user",
+      "content": [
         {
-          &quot;type&quot;: &quot;text&quot;,
-          &quot;text&quot;: &quot;{{修改为开始节点的prompt}}&quot;
+          "type": "text",
+          "text": "{{修改为开始节点的prompt}}"
         },
         {
-          &quot;type&quot;: &quot;image_url&quot;,
-          &quot;image_url&quot;: {
-            &quot;url&quot;: &quot;{{修改为开始节点的image_url}}&quot;
+          "type": "image_url",
+          "image_url": {
+            "url": "{{修改为开始节点的image_url}}"
           }
         }
       ]
@@ -167,15 +156,15 @@ Authorization：引用「设置令牌」节点的output
 
 输入：
 
-body：引用「HTTP 请求」节点的body
+`body`：引用「HTTP 请求」节点的`body`
 
 输出：
 
-content：String类型
+`content`：String类型
 
-url：String类型
+`url`：String类型
 
-error_info：String类型
+`error_info`：String类型
 
 ![](img/06bbfcb7cb57a7d056e8a7969c1defde.png)
 
@@ -184,26 +173,26 @@ error_info：String类型
 ```
 import json
 import re
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    body = params[&quot;body&quot;]
+    body = params["body"]
     body_json = json.loads(body)
-    content = &quot;&quot;
-    url = &quot;&quot;
-    error_info = &quot;&quot;
+    content = ""
+    url = ""
+    error_info = ""
     try:
-        content = body_json[&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;]
-        rawstr = &quot;\[.*?\]\((https://.*?)\)&quot;
-        result = re.findall(rawstr,content)
+        content = body_json["choices"][0]["message"]["content"]
+        rawstr = "\[.*?\]\((https://.*?)\)"
+        result = re.findall(rawstr, content)
         if len(result):
             url = result[0]
     except Exception as e:
         error_info = str(e)
     # 构建输出对象
     ret: Output = {
-        &quot;content&quot;: content,
-        &quot;url&quot;: url,
-        &quot;error_info&quot;:error_info
+        "content": content,
+        "url": url,
+        "error_info": error_info
     }
     return ret
 ```
@@ -212,10 +201,9 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/bf10accb86d4630b585037207b7314fc.png)
 
-7、试运行，试运行时需要把开始节点的「image_url」更改为File-Image类型：
+7、试运行，试运行时需要把开始节点的`image_url`更改为`File-Image`类型：
 
 ![](img/0a51fe667604bed84ba1b7e8666f7f1c.png)
-
 
 ![](img/69a6d86c6fdf727779d5bfad9b118abe.png)
 
@@ -225,7 +213,7 @@ async def main(args: Args) -&gt; Output:
 
 挺久的，4分多钟才生成视频，不过结果还不错，就是有水印不太好。
 
-8、把开始节点的「image_url」修改为String类型，，然后发布工作流：
+8、把开始节点的`image_url`修改为`String`类型，，然后发布工作流：
 
 ![](img/67ad6598946f6a1381ffbdfc22babf8f.png)
 
@@ -237,11 +225,11 @@ async def main(args: Args) -&gt; Output:
 
 ```
 {
-    &quot;api_key&quot;**: &quot;修改**为自己api.aicso.top的令牌&quot;,
-    &quot;api_url&quot;: &quot;https://api.aicso.top/v1/chat/completions&quot;,
-    &quot;image_url&quot;: &quot;$$image_url$$&quot;,
-    &quot;model&quot;: &quot;sora-2&quot;,
-    &quot;prompt&quot;: &quot;引用提示词&quot;
+    "api_key": "修改为自己api.aicso.top的令牌",
+    "api_url": "https://api.aicso.top/v1/chat/completions",
+    "image_url": "$$image_url$$",
+    "model": "sora-2",
+    "prompt": "引用提示词"
 }
 ```
 
@@ -275,10 +263,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/2e97983e740a0ea64996a768a1a685dc.png)
 
-
 ![](img/211df3995fdb8df8ddf9bd7ae4876e54.png)
-
-
 
 ![](img/4f3a78e434dc27f6466bd1e4a1aed545.png)
 
@@ -288,7 +273,7 @@ async def main(args: Args) -&gt; Output:
 
 生成的视频最后用剪映合并即可，这样子就可以制作完一个视频了。
 
-**Tips：**
+Tips：
 
 1、剧本和分镜的提示词需要优化，我这里只是用Kimi随便生成的分镜提示词
 
@@ -296,9 +281,9 @@ async def main(args: Args) -&gt; Output:
 
 3、可以用来复刻ytb爆款视频，也可以用来生成漫画短剧
 
-4、Sora现在不可以用真人或者比较真实的图片做参考图
+4、`Sora`现在不可以用真人或者比较真实的图片做参考图
 
-5、使用-hd的模型生成的视频质量会好些
+5、使用`-hd`的模型生成的视频质量会好些
 
 ## 总结
 

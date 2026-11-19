@@ -1,3 +1,4 @@
+
 # Deploy002 模型部署
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/FWwNdLiQsoTMUdxc4jjchZmAnAd](https://v11enp9ok1h.feishu.cn/docx/FWwNdLiQsoTMUdxc4jjchZmAnAd)
@@ -6,7 +7,7 @@
 
 这一期主要会分几个点展开：为什么我们做部署的时候要在torch上更进一步使用Onnx，TensorRT，OpenVINO等部署框架，在做cv模型部署的时候。我们怎么部署。在做LLM部署的时候，我们又会怎么做呢？
 
-### 动静转换：Torch上更进一步
+## 动静转换：Torch上更进一步
 
 ![](img/a34661c75a1b49bab92a66f5941c7cd3.png)
 
@@ -41,27 +42,21 @@ print(model)
 
 大家很容易开心的写出这样代码，但问题是，使用动态图模式。不可避免的带来了一系列问题。对于一个动态图来说，面临了以下三点问题：
 
-1.  性能：
+1. 性能：
+   - 动态图在每次执行时都需要重新构建计算图，这可能导致额外的开销。
+   - 静态图只需构建一次，然后可以重复高效执行。
 
-+   动态图在每次执行时都需要重新构建计算图，这可能导致额外的开销。
+2. 优化难度：
+   - 动态图难以进行全局优化，因为图结构在运行时可能会改变。
+   - 静态图允许更多的编译时优化，如内存分配优化、算子融合等。
 
-+   静态图只需构建一次，然后可以重复高效执行。
-
-1.  优化难度：
-
-+   动态图难以进行全局优化，因为图结构在运行时可能会改变。
-
-+   静态图允许更多的编译时优化，如内存分配优化、算子融合等。
-
-1.  内存使用：
-
-+   动态图可能需要更多的运行时内存，因为它需要保持 Python 解释器和相关对象的活跃状态。
-
-+   静态图可以更有效地管理内存，尤其是在推理阶段。
+3. 内存使用：
+   - 动态图可能需要更多的运行时内存，因为它需要保持 Python 解释器和相关对象的活跃状态。
+   - 静态图可以更有效地管理内存，尤其是在推理阶段。
 
 所以从torch开始，我们第一步要做的就是动转静。拿到静态图才能更好的做整体性能上的优化！
 
-### 美好的愿景：ONNX
+## 美好的愿景：ONNX
 
 ONNX，全称Open Neural Network Exchange，是人工智能领域中一个引人入胜的故事。它的诞生源于一个美好的愿景：在纷繁复杂的深度学习世界中架起一座沟通的桥梁。
 
@@ -79,7 +74,7 @@ import torch.onnx
 dummy_input = torch.randn(1, input_size)
 
 # 指定ONNX文件的输出路径
-output_path = &quot;simple_net.onnx&quot;
+output_path = "simple_net.onnx"
 
 # 导出模型到ONNX
 torch.onnx.export(model,               # 要转换的模型
@@ -88,21 +83,21 @@ torch.onnx.export(model,               # 要转换的模型
                   export_params=True,  # 存储训练好的参数权重
                   opset_version=11,    # ONNX算子集版本
                   do_constant_folding=True,  # 是否执行常量折叠优化
-                  input_names=[&#x27;input&#x27;],   # 输入节点的名称
-                  output_names=[&#x27;output&#x27;], # 输出节点的名称
-                  dynamic_axes={&#x27;input&#x27; : {0 : &#x27;batch_size&#x27;},    # 批处理维度动态
-                                &#x27;output&#x27; : {0 : &#x27;batch_size&#x27;}})
+                  input_names=['input'],   # 输入节点的名称
+                  output_names=['output'], # 输出节点的名称
+                  dynamic_axes={'input' : {0 : 'batch_size'},    # 批处理维度动态
+                                'output' : {0 : 'batch_size'}})
 
-print(f&quot;Model has been converted to ONNX and saved as {output_path}&quot;)
+print(f"Model has been converted to ONNX and saved as {output_path}")
 ```
 
-### 厂家的秘方：OpenVINO、TensorRT
+## 厂家的秘方：OpenVINO、TensorRT
 
 不同厂家都有自己的推理秘制配方：推理引擎。这种趋势反映了AI领域的激烈竞争和快速创新。每家公司都希望在这场技术革命中占据有利地位，而自研推理引擎成为了关键战略。
 
 这种做法的核心原因在于硬件差异化和性能优化。不同公司拥有各自独特的硬件架构，如英特尔的CPU、NVIDIA的GPU或谷歌的TPU。为了充分发挥这些硬件的潜力，定制化的推理引擎成为必然选择。这些引擎能够针对特定硬件进行深度优化，实现最佳的性能和效率。这其中，我将为大家简单介绍两种。分别是OpenVINO和TensorRT。
 
-#### OpenVINO
+### OpenVINO
 
 ![](img/b9526e95206029dddbc61e635b17299c.png)
 
@@ -110,7 +105,7 @@ print(f&quot;Model has been converted to ONNX and saved as {output_path}&quot;)
 
 OpenVINO可在英特尔®硬件上扩展计算机视觉和非视觉工作负载，从而最大限度地提高性能。它通过从边缘到云的高性能，人工智能和深度学习推理来加速应用程序。
 
-#### 关于OpenVINO的模型转换
+### 关于OpenVINO的模型转换
 
 ```
 import subprocess
@@ -119,25 +114,25 @@ import sys
 def convert_onnx_to_openvino(onnx_model_path, output_dir):
     cmd = [
         sys.executable,  # 使用当前Python解释器
-        &quot;-m&quot;, &quot;mo&quot;,  # 调用model optimizer
-        &quot;--input_model&quot;, onnx_model_path,
-        &quot;--output_dir&quot;, output_dir,
-        &quot;--data_type&quot;, &quot;FP32&quot;
+        "-m", "mo",  # 调用model optimizer
+        "--input_model", onnx_model_path,
+        "--output_dir", output_dir,
+        "--data_type", "FP32"
     ]
     
     subprocess.run(cmd, check=True)
-    print(f&quot;Model has been converted to OpenVINO IR format and saved in {output_dir}&quot;)
+    print(f"Model has been converted to OpenVINO IR format and saved in {output_dir}")
 
 # 使用示例
-onnx_model_path = &quot;simple_net.onnx&quot;
-output_dir = &quot;openvino_model&quot;
+onnx_model_path = "simple_net.onnx"
+output_dir = "openvino_model"
 
 convert_onnx_to_openvino(onnx_model_path, output_dir)
 ```
 
 这个转换过程和ONNX很像，在OpenVINO具体执行流程里分为反序列化，输入定义和前向执行几方面。
 
-#### TensorRT
+### TensorRT
 
 ![](img/74eb25d19f517b349ca1528113aafdc4.png)
 
@@ -147,30 +142,30 @@ TensorRT就像是一位技艺精湛的魔法师，它能够将庞大复杂的神
 
 TensorRT可用于对超大规模数据中心，嵌入式平台或自动驾驶平台进行推理加速。TensorRT现已能支持TensorFlow，Caffe，Mxnet，Pytorch等几乎所有的深度学习框架，将TensorRT和NVIDIA的GPU结合起来，能在几乎所有的框架中进行快速和高效的部署推理。但可惜，TensorRT是一个闭源的库。
 
-#### 关于TensorRT模型的转换
+### 关于TensorRT模型的转换
 
-我们一般会给TensorRT的模型叫为engine，我们可以使用trt提供的命令行工具，trtexec进行转换
+我们一般会给TensorRT的模型叫为engine，我们可以使用`trtexec`命令行工具进行转换
 
 ```
 trtexec --onnx=simple_net.onnx --saveEngine=simple_net.trt --explicitBatch
 ```
 
-### 推理引擎：类似的执行流程
+## 推理引擎：类似的执行流程
 
-+   OpenVINO模型部署分为两个部分：模型优化器和推理引擎。
+- OpenVINO模型部署分为两个部分：模型优化器和推理引擎。
 
-模型优化器将训练好的模型转换为推理引擎可以识别的中间表达–IR文件，并在转换过程中对模型进行优化。推理引擎接受经过模型优化器转换并优化的网络模型，为Intel的各种计算设备提供高性能的神经网络推理运算。
+  模型优化器将训练好的模型转换为推理引擎可以识别的中间表达–IR文件，并在转换过程中对模型进行优化。推理引擎接受经过模型优化器转换并优化的网络模型，为Intel的各种计算设备提供高性能的神经网络推理运算。
 
-+   TensorRT模型部署也是分为两个部分：build和deployment 。
+- TensorRT模型部署也是分为两个部分：build和deployment。
 
-build：这个阶段主要完成模型转换，将不同框架的模型转换到TensorRT。模型转换时会完成前述优化过程中的层间融合，精度校准。这一步的输出是一个针对特定GPU平台和网络模型的优化过的TensorRT模型，这个TensorRT模型可以序列化存储到磁盘或内存中。存储到磁盘中的文件称之为 plan file。
+  build：这个阶段主要完成模型转换，将不同框架的模型转换到TensorRT。模型转换时会完成前述优化过程中的层间融合，精度校准。这一步的输出是一个针对特定GPU平台和网络模型的优化过的TensorRT模型，这个TensorRT模型可以序列化存储到磁盘或内存中。存储到磁盘中的文件称之为 plan file。
 
-deployment：将上面一个步骤中的plan文件首先反序列化，并创建一个 runtime engine，然后就可以输入数据（比如测试集或数据集之外的图片），然后输出分类向量结果或检测结果。
+  deployment：将上面一个步骤中的plan文件首先反序列化，并创建一个 runtime engine，然后就可以输入数据（比如测试集或数据集之外的图片），然后输出分类向量结果或检测结果。
 
-### 写在最后
+## 写在最后
 
 模型部署以加速为最终目的，首先就会抛弃易用性。这里特指静态图，在固定的范围内做极致的优化。除了模型上的优化，不同硬件厂商更会在贴近不同硬件上做各种底层上的优化。以获得在特定芯片上极致的性能。请期待后续部署教程吧～
 
-### Reference
+## Reference
 
-1.  https://blog.csdn.net/oakchina/article/details/123848097
+1. https://blog.csdn.net/oakchina/article/details/123848097

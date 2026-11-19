@@ -1,28 +1,27 @@
-# 📕自动发布助手！用本地Cherry-Studio客户端搭建
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/VKWXdIB5NoMDbMxI9MfcIxUVn9u](https://v11enp9ok1h.feishu.cn/docx/VKWXdIB5NoMDbMxI9MfcIxUVn9u)
+# 📕自动发布助手！用本地 Cherry-Studio 客户端搭建
 
-# 项目说明
+> 来源：https://v11enp9ok1h.feishu.cn/docx/VKWXdIB5NoMDbMxI9MfcIxUVn9u
 
----
+## 项目说明
 
 ### 安装
 
-安装 ChromeDriver：
+安装 `ChromeDriver`：
 
-1.  查找你的 Chrome 浏览器版本（例如 "134.0.6998.166"）
+1. 查找你的 Chrome 浏览器版本（例如 `134.0.6998.166`）
 
-1.  运行命令下载对应版本：
+1. 运行命令下载对应版本：
 
 ```
 npx @puppeteer/browsers install chromedriver@134.0.6998.166
 ```
 
-1.  将 ChromeDriver 复制到系统路径或添加路径到环境变量中
+1. 将 `ChromeDriver` 复制到系统路径或添加路径到环境变量中
 
 ### 登录
 
-在终端运行以下命令（请使用绝对路径指定 PATH_TO_STORE_YOUR_COOKIES，例如 /Users/Bruce/。该 MCP 服务器会将你的 cookie 存储在此路径）：
+在终端运行以下命令（请使用绝对路径指定 `PATH_TO_STORE_YOUR_COOKIES`，例如 `/Users/Bruce/`。该 MCP 服务器会将你的 cookie 存储在此路径）：
 
 ```
 env phone=YOUR_PHONE_NUMBER json_path=PATH_TO_STORE_YOUR_COOKIES uvx --from xhs_mcp_server@latest login
@@ -59,9 +58,9 @@ npx @modelcontextprotocol/inspector -e phone=YOUR_PHONE_NUMBER -e json_path=PATH
 
 在检查工具中，你可以使用本地图片：
 
-输入图片路径（例如 ["C:\\路径\\到\\你的\\图片.jpg"]），图片路径需要用双引号包裹。
+输入图片路径（例如 `["C:\\路径\\到\\你的\\图片.jpg"]`），图片路径需要用双引号包裹。
 
-注：发送时可能会显示 "Error Request timed out" 警告，但实际帖子仍会发布成功。
+注：发送时可能会显示 `"Error Request timed out"` 警告，但实际帖子仍会发布成功。
 
 ### 启动服务器
 
@@ -77,24 +76,24 @@ env phone=YOUR_PHONE_NUMBER json_path=PATH_TO_STORE_YOUR_COOKIES uvx xhs_mcp_ser
 
 ```
 {
-    &quot;mcpServers&quot;: {
-        &quot;xhs-mcp-server&quot;: {
-            &quot;command&quot;: &quot;uvx&quot;,
-            &quot;args&quot;: [
-                &quot;xhs_mcp_server@latest&quot;
+    "mcpServers": {
+        "xhs-mcp-server": {
+            "command": "uvx",
+            "args": [
+                "xhs_mcp_server@latest"
             ],
-            &quot;env&quot;: {
-                &quot;phone&quot;: &quot;YOUR_PHONE_NUMBER&quot;,
-                &quot;json_path&quot;: &quot;PATH_TO_STORE_YOUR_COOKIES&quot;
+            "env": {
+                "phone": "YOUR_PHONE_NUMBER",
+                "json_path": "PATH_TO_STORE_YOUR_COOKIES"
             }
         }
     }
 }
 ```
 
-# 让AI自动发布📕笔记
+## 让AI自动发布📕笔记
 
-## step1：打开命令行，运行以下命令安装环境
+### step1：打开命令行，运行以下命令安装环境
 
 ```
 # 1、安装Node.js和UV，如果没有python环境，请自行安装
@@ -106,89 +105,89 @@ pip install xhs-mcp-server
 npx @puppeteer/browsers install chromedriver@134.0.6998.166
 ```
 
-## step2：登陆📕账号（只需1次）
+### step2：登陆📕账号（只需1次）
 
-+   在终端运行以下命令，后台会自动弹出浏览器，并打开📕创作平台的登陆页面，自动发送验证码。
++ 在终端运行以下命令，后台会自动弹出浏览器，并打开📕创作平台的登陆页面，自动发送验证码。
 
-⚠️将YOUR_PHONE_NUMBER改成自己的手机号
+⚠️将 `YOUR_PHONE_NUMBER` 改成自己的手机号
 
-⚠️将PATH_TO_STORE_YOUR_COOKIES改成cookies的保存目录，比如'/Users/xxx/'
+⚠️将 `PATH_TO_STORE_YOUR_COOKIES` 改成cookies的保存目录，比如`/Users/xxx/`
 
 ```
 env phone=YOUR_PHONE_NUMBER json_path=PATH_TO_STORE_YOUR_COOKIES uvx --from xhs_mcp_server@latest login
 ```
 
-+   检查手机收到的验证码，在终端中输入
++ 检查手机收到的验证码，在终端中输入
 
 ```
 无效的cookies，已清理
 请输入验证码:
 ```
 
-+   再次运行上面的那行命令，如果显示“使用cookies登录成功”就登陆成功啦。
++ 再次运行上面的那行命令，如果显示“使用cookies登录成功”就登陆成功啦。
 
-## step3（可选）：用inspector调试一下发布功能
+### step3（可选）：用inspector调试一下发布功能
 
-+   启动inspector调试界面
++ 启动inspector调试界面
 
-⚠️同样需要设置YOUR_PHONE_NUMBER和PATH_TO_STORE_YOUR_COOKIES，后者请用上面登陆时的cookies的目录，比如'/Users/xxx/'
+⚠️同样需要设置`YOUR_PHONE_NUMBER`和`PATH_TO_STORE_YOUR_COOKIES`，后者请用上面登陆时的cookies的目录，比如`/Users/xxx/`
 
 ```
 npx @modelcontextprotocol/inspector -e phone=YOUR_PHONE_NUMBER -e json_path=PATH_TO_STORE_YOUR_COOKIES uvx xhs_mcp_server@latest
 ```
 
-+   打开inspector调试界面，List Tools里面你会发现有两个tool，create_note和create_video_note，前者是发布图片笔记，后者是发布视频笔记。
++ 打开inspector调试界面，`List Tools`里面你会发现有两个tool，`create_note`和`create_video_note`，前者是发布图片笔记，后者是发布视频笔记。
 
-💡如果你不熟悉inspector的操作，不知道怎么找到List[ Tools，请参考魔搭更详细的教程：https](https://modelscope.cn/headlines/article/1139)://modelscope.cn/headlines/article/1139
+💡如果你不熟悉inspector的操作，不知道怎么找到`List Tools`，请参考魔搭更详细的教程：https://modelscope.cn/headlines/article/1139
 
-点击create_note，输入标题、内容和图片，其中图片支持网络图片URL，也支持本地图片路径。
+点击`create_note`，输入标题、内容和图片，其中图片支持网络图片URL，也支持本地图片路径。
 
 以下是本地图片的路径的例子：
 
 ![](img/dc326ab9684779c3b87567994cf871e6.png)
 
-+   点击Run Tool，后台会自动拉起浏览器，打开创作服务平台的发布入口，自动上传图片和填写文字内容并发布出去。
++ 点击`Run Tool`，后台会自动拉起浏览器，打开创作服务平台的发布入口，自动上传图片和填写文字内容并发布出去。
 
 ![](img/31dcbd60d2185612739c768043e476fa.png)
 
-+   发布完成的界面
++ 发布完成的界面
 
 ![](img/6c3e1a054c2ce357458dab8acdf246cc.png)
 
-## 让Qwen3帮我们生成文案，自动发布📕
+### 让Qwen3帮我们生成文案，自动发布📕
 
-在客户端上配置📕发布助手，借助Qwen3-235B模型的强大能力来帮我们生成标题和正文的文案。
+在客户端上配置📕发布助手，借助`Qwen3-235B-A22B`模型的强大能力来帮我们生成标题和正文的文案。
 
-Qwen3-235B-A22B模型已在魔搭部署为API服务，可通过API-Inference免费调用。
+`Qwen3-235B-A22B`模型已在魔搭部署为API服务，可通过`API-Inference`免费调用。
 
-模型地址：[https://modelscope.cn/models/](https://modelscope.cn/models/Qwen/Qwen3-235B-A22B)Qwen/Qwen3-235B-A22B
+模型地址：https://modelscope.cn/models/Qwen/Qwen3-235B-A22B
 
-我们在Cherry Studio上配上Qwen3:
+我们在Cherry Studio上配上`Qwen3`:
 
 ![](img/ea174615c862b8ad07fa20cf618af4cf.png)
 
-## 再在MCP服务器里配置📕发布MCP
+### 再在MCP服务器里配置📕发布MCP
 
-📕MCP魔搭地址：[h](https://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server)ttps://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server
+📕MCP魔搭地址：https://www.modelscope.cn/mcp/servers/@XGenerationLab/xhs_mcp_server
 
 ```
-&quot;xhs-mcp-server&quot;: {
-      &quot;name&quot;: &quot;xhs-mcp-server&quot;,
-      &quot;type&quot;: &quot;stdio&quot;,
-      &quot;isActive&quot;: true,
-      &quot;registryUrl&quot;: &quot;&quot;,
-      &quot;command&quot;: &quot;uvx&quot;,
-      &quot;args&quot;: [
-        &quot;xhs_mcp_server@latest&quot;
+"xhs-mcp-server": {
+      "name": "xhs-mcp-server",
+      "type": "stdio",
+      "isActive": true,
+      "registryUrl": "",
+      "command": "uvx",
+      "args": [
+        "xhs_mcp_server@latest"
       ],
-      &quot;env&quot;: {
-        &quot;phone&quot;: &quot;YOUR_PHONE_NUMBER&quot;,
-        &quot;json_path&quot;: &quot;PATH_TO_STORE_YOUR_COOKIES&quot;
+      "env": {
+        "phone": "YOUR_PHONE_NUMBER",
+        "json_path": "PATH_TO_STORE_YOUR_COOKIES"
       }
     }
 ```
 
-⚠️同样需要设置YOUR_PHONE_NUMBER和PATH_TO_STORE_YOUR_COOKIES，后者请用上面登陆时的cookies的目录，比如'/Users/xxx/'
+⚠️同样需要设置`YOUR_PHONE_NUMBER`和`PATH_TO_STORE_YOUR_COOKIES`，后者请用上面登陆时的cookies的目录，比如`/Users/xxx/`
 
 然后让它写个关于📕发布MCP的简短介绍文案：
 
@@ -206,17 +205,17 @@ Qwen3-235B-A22B模型已在魔搭部署为API服务，可通过API-Inference免�
 
 ![](img/325d41d740a294f11ef2c3f5e48ddb93.png)
 
-## 让AI帮我们生成图片或视频，自动发布📕
+### 让AI帮我们生成图片或视频，自动发布📕
 
-在Cherry Studio MCP服务器里配置文生图MCP-server，魔搭上目前有几个支持生图的MCP，比如ModelScope-Image-Generation-MCP和MiniMax-MCP，两者都在魔搭的云端资源上部署，可以支持SSE的方式调用。值得提一句，前者是免费的！
+在Cherry Studio MCP服务器里配置文生图MCP-server，魔搭上目前有几个支持生图的MCP，比如`ModelScope-Image-Generation-MCP`和`MiniMax-MCP`，两者都在魔搭的云端资源上部署，可以支持`SSE`的方式调用。值得提一句，前者是免费的！
 
 魔搭文生图MCP地址（免费）：https://www.modelscope.cn/mcp/servers/@modelscope/ModelScope-Image-Generation-MCP
 
-MiniMax-MCP地址：[h](https://modelscope.cn/mcp/servers/@MiniMax-AI/MiniMax-MCP)ttps://modelscope.cn/mcp/servers/@MiniMax-AI/MiniMax-MCP
+`MiniMax-MCP`地址：https://modelscope.cn/mcp/servers/@MiniMax-AI/MiniMax-MCP
 
 最重要的是，这些服务完全不需要手动一个个的配置！
 
-因为在Cherry Studio里集成了ModelScope托管的MCP服务。你只要在Cherry Studio的MCP服务器页面，填入 ModelScope的 API令牌把服务器一键同步过来，就可以在Cherry Studio上使用所有魔搭已经托管的MCP服务了，非常的方便。
+因为在Cherry Studio里集成了ModelScope托管的MCP服务。你只要在Cherry Studio的MCP服务器页面，填入 `ModelScope`的 API令牌把服务器一键同步过来，就可以在Cherry Studio上使用所有魔搭已经托管的MCP服务了，非常的方便。
 
 ![](img/ff6e609b56875cab78b8da4b74c85971.png)
 
@@ -226,9 +225,9 @@ MiniMax-MCP地址：[h](https://modelscope.cn/mcp/servers/@MiniMax-AI/MiniMax-MC
 
 准备工作完毕，下面让我们开始
 
-这次我们让它介绍一下介绍一下魔搭今日上新的qwen3模型
+这次我们让它介绍一下介绍一下魔搭今日上新的`qwen3`模型
 
-会自动调用tavily-search搜索资讯，总结文案
+会自动调用`tavily-search`搜索资讯，总结文案
 
 ![](img/bcbf68ecba17124c3d376dc62acd5422.png)
 

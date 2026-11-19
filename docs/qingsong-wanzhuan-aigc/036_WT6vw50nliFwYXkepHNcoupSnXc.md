@@ -1,12 +1,13 @@
+
 # AI 工具集成网站
 
-> 来源：[https://my.feishu.cn/docx/PuZJd0TQ5oW5saxFZBDcyjvsnLh](https://my.feishu.cn/docx/PuZJd0TQ5oW5saxFZBDcyjvsnLh)
+> 来源：[`https://my.feishu.cn/docx/PuZJd0TQ5oW5saxFZBDcyjvsnLh`](https://my.feishu.cn/docx/PuZJd0TQ5oW5saxFZBDcyjvsnLh)
 
-# 软件工具直通车：
+## 软件工具直通车：
 
-+   Latent Box 合集｜精选 AI 产品集
++ Latent Box 合集｜精选 AI 产品集
 
-> https://latentbox.com/zh/awesome-ai-products
+> `https://latentbox.com/zh/awesome-ai-products`
 
 ---
 

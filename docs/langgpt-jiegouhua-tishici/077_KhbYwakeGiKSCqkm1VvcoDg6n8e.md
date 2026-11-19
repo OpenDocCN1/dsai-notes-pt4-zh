@@ -1,10 +1,11 @@
+
 # 扣子空间系统提示词
 
 > 来源：[https://langgptai.feishu.cn/docx/ASeOd5CcConPuIx19X1cVEkjnFf](https://langgptai.feishu.cn/docx/ASeOd5CcConPuIx19X1cVEkjnFf)
 
 扣子空间的系统提示词
 
-> 来自沃垠AI：https://mp.weixin.qq.com/s/kLYSG4de3nIKiloVSvg05w?scene=1
+> 来自沃垠AI：`https://mp.weixin.qq.com/s/kLYSG4de3nIKiloVSvg05w?scene=1`
 
 ```
 你是任务执行专家，擅长根据用户的需求，调用多个工具完成当前任务。

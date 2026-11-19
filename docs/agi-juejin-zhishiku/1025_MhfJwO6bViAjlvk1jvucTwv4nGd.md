@@ -1,10 +1,11 @@
+
 # RAG as a Service？
 
 > 来源：[https://agijuejin.feishu.cn/docx/OQhFdPdbmozHCbxxnBLc5KhknRh](https://agijuejin.feishu.cn/docx/OQhFdPdbmozHCbxxnBLc5KhknRh)
 
 > 作者：苏鹏 | AI 搜索引擎
 
-> 原文： [https://mp.weixin.](https://mp.weixin.qq.com/s/gmk_4JDslcMh4GDPFAa0Og)qq.com/s/gmk_4JDs...
+> 原文：[https://mp.weixin.qq.com/s/gmk_4JDslcMh4GDPFAa0Og](https://mp.weixin.qq.com/s/gmk_4JDslcMh4GDPFAa0Og)
 
 目前我们知道有好多中间层的产品，例如：Dify[1]、扣子[2]、vectorshift[3] 等等。
 
@@ -14,7 +15,7 @@
 
 ![](img/97368d8ddb9140264b704318a0740bb4.png)
 
-## **MAIA**
+## MAIA
 
 > With MAIA[5], you can easily complete your daily tasks with access to the entire company knowledge at the touch of a button for better results in less time - your AI platform for company knowledge.
 
@@ -22,7 +23,7 @@ MAIA 从介绍上来看主打的是安全性与隐私保护，从介绍的功能
 
 ![](img/8e3f3de403925c8b003d524744533127.png)
 
-## **Epsilla**
+## Epsilla
 
 > Epsilla[6] is a one-stop RAG-as-a-Service platform for building production ready LLM applications connected with your proprietary data.
 
@@ -30,31 +31,27 @@ MAIA 从介绍上来看主打的是安全性与隐私保护，从介绍的功能
 
 ![](img/6c093f01eb360bb6515dafb74be76ea5.png)
 
-## **Nuclia**
+## Nuclia
 
 > Nuclia[7] automatically indexes files and documents, from internal and external sources, to fuel diverse company use cases with LLMs. Get modular RAG in different Nuclia deployment options.
 
-+   对任何类型的数据进行索引，无论这些数据使用何种语言
-
-+   自定义数据检索的策略
-
-+   自定义 Chunking 策略
-
-+   不同 embedding 模型选择
++ 对任何类型的数据进行索引，无论这些数据使用何种语言
++ 自定义数据检索的策略
++ 自定义 Chunking 策略
++ 不同 embedding 模型选择
 
 ![](img/edc31d66e79c9c904c0df2a32ee119a1.png)
 
-## **Ragie**
+## Ragie
 
 > RAG. Right out of the box. Meet Ragie[8], fully managed RAG-as-a-Service for developers.
 
-+   可以连接 Google Drive, Notion, Confluence 上的数据，并保持持续更新
-
-+   内置re-ranking, summary index, entity extraction, flexible filtering, and hybrid semantic and keyword search 策略
++ 可以连接 Google Drive, Notion, Confluence 上的数据，并保持持续更新
++ 内置re-ranking, summary index, entity extraction, flexible filtering, and hybrid semantic and keyword search 策略
 
 ![](img/dd13ee23691b293eabb1539e2f266887.png)
 
-## **Vectara[9]**
+## Vectara[9]
 
 > Mitigating Hallucinations and Copyright Concerns, Minimizing Bias, Enhancing Explainability, and Broadening Cross-Lingual Reach. Your TRUSTED entry point for GenAI.
 
@@ -62,7 +59,7 @@ MAIA 从介绍上来看主打的是安全性与隐私保护，从介绍的功能
 
 ![](img/b094b3f6f6b4c3b556f9f395527cf23d.png)
 
-# **总结**
+## 总结
 
 RAG as a Service 的相关产品，看下来更像是 Dify 类产品的抽象，Langchain 的可视化，更像一个知识库的解决方案，但是功能上又比 Glean[10] 弱些。
 
@@ -70,7 +67,7 @@ RAG as a Service 的相关产品，看下来更像是 Dify 类产品的抽象，
 
 但是用户到底需要个什么样的知识库产品？光知识问答足够么？其他的业务场景如何满足？到底有多少的开放度更合适？Workflow 适合什么样的用户使用？这些问题目前看下来还是在探索的过程中。
 
-# **相关连接**
+## 相关连接
 
 [1] https://dify.ai/
 
@@ -94,4 +91,4 @@ RAG as a Service 的相关产品，看下来更像是 Dify 类产品的抽象，
 
 [11] https://github.com/infiniflow/ragflow
 
-👆 关注 A**I 搜索引擎 ，**获取更多专业技术分享 ~
+👆 关注 AI 搜索引擎，获取更多专业技术分享 ~

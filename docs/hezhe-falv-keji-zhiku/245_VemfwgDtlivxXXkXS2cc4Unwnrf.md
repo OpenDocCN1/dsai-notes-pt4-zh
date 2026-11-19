@@ -1,22 +1,23 @@
+
 # Relativity 推出 2023 年度 AI Visionaries 名单，20 位 500 强公司和 Am 律所领导者上榜
 
 > 来源：[https://docs.feishu.cn/docx/PAjvdRvhboRRFwxjnmhcL37Zndb](https://docs.feishu.cn/docx/PAjvdRvhboRRFwxjnmhcL37Zndb)
 
 ---
 
-[**2024 年 1 月**](https://c212.net/c/link/?t=0&l=en&o=4072611-1&h=2492700328&u=http%3A%2F%2Fwww.relativity.com%2F&a=Relativity)，全球[**法律科技公司 Rela**](https://c212.net/c/link/?t=0&l=en&o=4072611-1&h=1808383366&u=https%3A%2F%2Fwww.relativity.com%2Fai-visionaries%2F&a=annual+list+of+AI+Visionaries)t**ivity 推出年度人工智能远见者名单，**以表彰和庆祝那些在法律应用中以新颖的方式探索、推广和尝试人工智能（AI）的个人。
+[2024 年 1 月](https://c212.net/c/link/?t=0&l=en&o=4072611-1&h=2492700328&u=http%3A%2F%2Fwww.relativity.com%2F&a=Relativity)，全球[法律科技公司 Relativity](https://c212.net/c/link/?t=0&l=en&o=4072611-1&h=1808383366&u=https%3A%2F%2Fwww.relativity.com%2Fai-visionaries%2F&a=annual+list+of+AI+Visionaries)推出年度人工智能远见者名单，以表彰和庆祝那些在法律应用中以新颖的方式探索、推广和尝试人工智能（AI）的个人。
 
-R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑式的一年，现在比以往任何时候都更重要的是要认识到、投资并强调那些以独特方式拥抱 AI 的个人。”
+Relativity 的 CEO Phil Saunders 表示：“2023 年是 AI 发展里程碑式的一年，现在比以往任何时候都更重要的是要认识到、投资并强调那些以独特方式拥抱 AI 的个人。”
 
 2024 年的 AI Visionaries 名单聚焦于财富 500 强公司和顶级美国律师事务所的领导者，尤其是那些在近期行业采用率提高之前就尝试过 AI 技术，并在他们的组织内外鼓励使用 AI 的人。如果说 2023 年是 AI 凸显其独特性、每天都加速应用的突破之年，那么 2024 年的 AI Visionaries 则代表了在快速的技术演变中保持创新的趋势。
 
-**法律修音机整理了登上这份名单的个人及其获**奖感言，让我们在新的一年继续拥抱 AI。
+**法律修音机整理了登上这份名单的个人及其获奖感言**，让我们在新的一年继续拥抱 AI。
 
 以下，enjoy ：）
 
 ---
 
-## **CHRIS ACOSTA**
+## CHRIS ACOSTA
 
 ### 所在机构：MORRISON & FOERSTER
 
@@ -24,7 +25,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “生成式 AI 的流行创造了一股热潮，其潜力是无限的，可以在许多地方提供帮助，因此关键在于找到该技术的用例，对其进行尝试和验证，看看哪里可以继续改进。”
 
-## **ALMA ASAY**
+## ALMA ASAY
 
 ### 所在机构：CROWELL & MORING
 
@@ -32,7 +33,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “我喜欢成为一名律师，我的创新职业生涯最初源于寻找更有效的方法来完成我工作中不需要律师头脑的部分。我希望更多的律师可以这样，这就是我正在做的事情。”
 
-## **BENNETT BORDEN**
+## BENNETT BORDEN
 
 ### 所在机构：DLA PIPER
 
@@ -40,7 +41,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “生成式 AI 是自电力出现以来最具变革性的技术，其能力几乎每天都在增长，为我们的社会中几乎每一个部分都带来了巨大的改进潜力。但与此同时，它也具有令人难以置信的破坏性。”
 
-## **JIM CALVERT**
+## JIM CALVERT
 
 ### 所在机构：TROUTMAN PEPPER EMERGE
 
@@ -56,7 +57,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “电子发现领域的从业者，多年来一直在讨论不断增长的数据量，以及这些数据量带来的挑战，而现在我们有了生成式 AI，可以帮助我们解决一些我们一直面临的挑战。这太令人兴奋了。”
 
-## **DANIEL DIETTE**
+## DANIEL DIETTE
 
 ### 所在机构：COMPLETE DISCOVERY SOURCE
 
@@ -72,7 +73,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “我们这些了解电子发现的人明白数据工程的重要性，在使用数据开展 AI 相关的工作时，这些技能被称为特征工程。我们说的处理、审查、生产和搜索，在 AI 应用中就是指特征工程、内容策划、模型输出和提示工程。我们行业的专业人士在未来将明显占据优势。”
 
-## **GAIL GOTTEHRER**
+## GAIL GOTTEHRER
 
 ### 所在机构：FRESH DEL MONTE
 
@@ -80,7 +81,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “负责任的 AI 加上拥有充分发挥该技术潜力之技能的律师，将增强法律实践。”
 
-## **LENORA GRAY**
+## LENORA GRAY
 
 ### 所在机构：REDGRAVE DATA
 
@@ -88,7 +89,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “电子发现工作中的 AI 主要用于增强人类的能力，而不是取代他们。人类的判断、解读和决策，尤其是在细微的法律语境中，仍然至关重要。”
 
-## **AURÉLIE JACQUET**
+## AURÉLIE JACQUET
 
 ### 所在机构：新南威尔士大学 AI 研究所；CSIRO 旗下 Data61
 
@@ -112,13 +113,13 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “推动生成式 AI 采用最重要的是，将它嵌入知识工作者熟悉的流程和平台中。这意味着将新奇性带入熟悉的事物中，使其融入人们熟悉的实践之中。”
 
-## **JULIAN LEE**
+## JULIAN LEE
 
 ### 所在机构：MICROSOFT
 
 #### 职位：澳大利亚和新西兰地区 AI 负责人
 
-## **LÉO MURGEL**
+## LÉO MURGEL
 
 ### 所在机构：SALESFORCE
 
@@ -126,7 +127,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “为了释放 AI 的效益，我们必须把信任作为首要任务。这需要提高对风险、责任和潜在影响的认识和理解。如果我们能在法律体系内有效地利用 AI，那么其他高度监管的行业也可以从中受益。”
 
-## **ANA ORANTES**
+## ANA ORANTES
 
 ### 所在机构：CMS
 
@@ -134,7 +135,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “最让我兴奋的是 AI 使我们能够为客户创造的战略价值，而不仅仅是提高效率。最新的 AI 发展让我们帮助客户完成以前无法完成的工作成为可能。”
 
-## **NICOLA SHAVER**
+## NICOLA SHAVER
 
 ### 所在机构：LEGALTECH HUB
 
@@ -142,7 +143,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “这是首次有一种技术突破让律师们对使用 AI 感到兴奋。这是一个在技术和法律的交汇点上工作的好时机。”
 
-## **LINDA SHEEHAN**
+## LINDA SHEEHAN
 
 ### 所在机构：ENS
 
@@ -150,7 +151,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “我们的立场是负责任的 AI。我们像看待任何其他技术一样看待它：检查用例、投资回报率，并确保我们在使用它时是安全且负责任的。”
 
-## **JAMES SHERER**
+## JAMES SHERER
 
 ### 所在机构：BAKER AND HOSTETLER LLP
 
@@ -166,7 +167,7 @@ R**elativity 的 CEO Phil S**aunders 表示：“2023 年是 AI 发展里程碑�
 
 “我们可以平等地从 AI 的潜力中受益，但是诉讼和发现业务将特别有机会更快地尝试和使用它，并围绕它发展专业知识。”
 
-## **JOSH TREAT**
+## JOSH TREAT
 
 ### 所在机构：ARRAY
 

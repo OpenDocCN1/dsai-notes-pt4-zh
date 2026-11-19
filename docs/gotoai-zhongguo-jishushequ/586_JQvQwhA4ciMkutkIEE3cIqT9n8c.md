@@ -1,12 +1,13 @@
+
 # The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/E9CbdK0hhorKgpx40iOcbRrMnDb](https://gotoaiworld.feishu.cn/docx/E9CbdK0hhorKgpx40iOcbRrMnDb)
 
-https://arxiv.org/html/2408.13296v1
+`https://arxiv.org/html/2408.13296v1`
 
 ![](img/a2567ffeaa1e2beb7fa09ad1773d3618.png)
 
-###### **Abstract**
+## Abstract
 
 This technical report thoroughly examines the process of fine-tuning Large Language Models (LLMs), integrating theoretical insights and practical applications. It begins by tracing the historical development of LLMs, emphasising their evolution from traditional Natural Language Processing (NLP) models and their pivotal role in modern AI systems. The analysis differentiates between various fine-tuning methodologies, including supervised, unsupervised, and instruction-based approaches, underscoring their respective implications for specific tasks.
 

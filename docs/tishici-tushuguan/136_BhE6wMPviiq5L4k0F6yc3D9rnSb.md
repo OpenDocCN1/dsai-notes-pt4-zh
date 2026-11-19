@@ -1,18 +1,20 @@
+
 # Claude Prompt：Unicode
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/NNqSdokAIo6UIJx39vfcrVokncf](https://vxc3hj17dym.feishu.cn/docx/NNqSdokAIo6UIJx39vfcrVokncf)
-
 > [**📚关于李继刚**](https://m.okjike.com/users/752D3103-1107-43A0-BA49-20EC29D09E36?ref=PROFILE_CARD&utm_source=user_card)
-
 > » 李继刚老师的👸号，推荐关注
-
 > https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
 
-> **背景**：🛰️，即刻等一些平台不支持更改字体，有时候你只是想突出强调一个单词，让它显眼一些。
+## 背景
 
-> **思路**：Unicode 字符替换。简单说，就是原来编码1234显示字母A，现在我们找到编码6789，它显示的是花体字母𝓐。
+🛰️，即刻等一些平台不支持更改字体，有时候你只是想突出强调一个单词，让它显眼一些。
 
-> 把这个思路方法封装一下，以后就可以在需要时，把内容和这个Prompt对话，在结果中选择你喜欢的样式效果了。 我封装的敬意只是随便选了五个，大家感兴趣，可以自己搜索添加。
+## 思路
+
+Unicode 字符替换。简单说，就是原来编码1234显示字母A，现在我们找到编码6789，它显示的是花体字母𝓐。
+
+把这个思路方法封装一下，以后就可以在需要时，把内容和这个Prompt对话，在结果中选择你喜欢的样式效果了。我封装的敬意只是随便选了五个，大家感兴趣，可以自己搜索添加。
 
 ```
 ;; 作者: 李继刚

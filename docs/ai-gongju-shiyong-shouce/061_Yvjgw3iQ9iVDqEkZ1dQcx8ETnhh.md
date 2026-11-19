@@ -1,32 +1,25 @@
+
 # PPT插图/海报制作神器🚀
 
 > 来源：[https://my.feishu.cn/docx/RzBud4Q6SoD4RVxTiMQcpciVnUf](https://my.feishu.cn/docx/RzBud4Q6SoD4RVxTiMQcpciVnUf)
 
-先上个链接：https://designer.microsoft.com/    (MicrosoftDesigner微软设计师)
+先上个链接：https://designer.microsoft.com/ (MicrosoftDesigner微软设计师)
 
 不用魔法直接开搞！先翻译一下页面，然后就能搞了！
 
-一般的PPT配图，能够无脑生成了。
-
-可以不加任何图片素材直接生成，效果如下：
-
+一般的PPT配图，能够无脑生成了。可以不加任何图片素材直接生成，效果如下：
 
 文字成图
 
 ![](img/712cfc447afe5920aebc9c5c258276bf.png)
 
-中文也行，但是效果拉胯
-
-最好大家把需要的内容翻译一下再跑图😂
+中文也行，但是效果拉胯。最好大家把需要的内容翻译一下再跑图😂
 
 也可以制定素材上传来生成🤞
 
 ![](img/0311df8aaff40778c96075b4c798e469.png)
 
-翻译页面
-
-
-任意内容生成，可上传素材
+翻译页面，任意内容生成，可上传素材。
 
 最终产出有图片也有视频/动图，选定后，在右下角进行二次编辑，图片、文字等都可以修改，还可以免费下载💖
 

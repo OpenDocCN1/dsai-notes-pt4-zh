@@ -1,18 +1,19 @@
+
 # 一文汇总GPTs攻防prompts
 
 > 来源：[https://agispace.feishu.cn/docx/HLSTdUJ8Zo2AtXx9QF7cnxnHnZc](https://agispace.feishu.cn/docx/HLSTdUJ8Zo2AtXx9QF7cnxnHnZc)
 
 > 作者：毅鸣
 
-> 👸号： AI洞察笔记
+> 👸号：AI洞察笔记
 
 > 原文链接：https://mp.weixin.qq.com/s/8klyqoQ6yRvnKforcgxEGg
 
 在阅读本文之前，我们先搞清楚以下2个概念：
 
-1、什么是GPTs？以及如何创建一个GPTs？这个可以查看我之前的这篇文章：手把手教你建一个属于自己的GPTs机器人
+1. 什么是GPTs？以及如何创建一个GPTs？这个可以查看我之前的这篇文章：手把手教你建一个属于自己的GPTs机器人
 
-2、什么是prompts？以及如何撰写高质量的prompts？这个可以查看我之前的这篇文章：一文汇总市面上所有prompts提示词框架
+2. 什么是prompts？以及如何撰写高质量的prompts？这个可以查看我之前的这篇文章：一文汇总市面上所有prompts提示词框架
 
 了解了以上2个概念之后，我们来了解一下GPTs攻防prompts的概念，什么意思呢？就是所有的GPTs的构建，都是由prompts构建的，无一例外，而如果想获取到别人GPTs里面的prompts，就需要通过一定的prompts技巧去攻破它，或者如果我们自己写一个属于自己的GPTs，也需要懂的如何去防御别人来攻击，而用什么样的prompts去攻防GPTs就是本文想给大家分享的内容。
 

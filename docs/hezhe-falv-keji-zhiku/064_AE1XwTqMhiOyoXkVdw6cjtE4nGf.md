@@ -1,3 +1,4 @@
+
 # 2025 年 2 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/QRHOdLDFTotVqbx2zqQcDih8nad](https://docs.feishu.cn/docx/QRHOdLDFTotVqbx2zqQcDih8nad)
@@ -5,24 +6,17 @@
 ---
 
 > 你好，欢迎收看 Legal Studio 法律科技日报！
-
 >
-
-> **这是 Le**g**al S**t**udi**o** 推出的一个**专栏，每天都会收集、整理与 法律 AI、法律科技、大模型、生成式 AI 相关的前沿资讯，并在【法律 AI 交流群｜keep learning】🛰️群集合发送。
-
+> 这是 **Legal Studio** 推出的一个**专栏**，每天都会收集、整理与 法律 AI、法律科技、大模型、生成式 AI 相关的前沿资讯，并在【法律 AI 交流群｜keep learning】🛰️群集合发送。
 >
-
 > 💙 温馨提示：
 
-1.  电脑端点击本文档左侧目录，或者移动端滑动右侧目录，即可快速跳转到不同内容的相应位置。
+1. 电脑端点击本文档左侧目录，或者移动端滑动右侧目录，即可快速跳转到不同内容的相应位置。
+1. 由于信息搜集存在一定滞后性，同时 Legal Studio 将本日报视为一个迭代过程，我们将不定期将值得关注的资讯补充更新到文档中（标绿部分），一周之后，本文档就变成了法律科技周报。
+1. 受限于我们关注的范围，以及对一件事情是否「重要」的理解不同，可能还有值得记录的资讯没有被我们观察到，欢迎私信交流，也欢迎各界人士参与共建。
+1. [订阅智库](https://legalstudio.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)文档仅收录快讯，如需阅读完整内容：
 
-1.  由于信息搜集存在一定滞后性，同时 Legal Studio 将本日报视为一个迭代过程，我们将不定期将值得关注的资讯补充更新到文档中（标绿部分），一周之后，本文档就变成了法律科技周报。
-
-1.  受限于我们关注的范围，以及对一件事情是否「重要」的理解不同，可能还有值得记录的资讯没有被我们观察到，欢迎私信交流，也欢迎各界人士参与共建。
-
-1.  [订阅智库](https://legalstudio.feishu.cn/wiki/DLtSwmrQYibygZklZ4NcuuASnJg)文档仅收录快讯，如需阅读完整内容：
-
-# 💰 法**律科技融资并购**
+# 💰 法律科技融资并购
 
 ## 尽职调查初创公司 Jurimesh 完成 160 万欧元的预种子轮融资
 
@@ -38,9 +32,9 @@
 
 WilsonAI 由前 Clifford Chance 律师 Gus Neate 和技术人员 Alex Wang 于 2024 年 8 月创立，致力于构建一个法律大模型，旨在自动化重复性法律任务，比如处理常规法律请求、回答常见问题和审查合同。
 
-## **监**管合规公司 SingleFile 完成 900 万美元 A 轮融资
+## 监管合规公司 SingleFile 完成 900 万美元 A 轮融资
 
-2 月 19 日，监管合规公司 SingleFile 宣布完成 900 万美元 A 轮融资，Foundry Group 领投，Pioneer Square Labs 和 The LegalTech Fund 等现有投资者，Wilson Sonsini、Cooley、DLA Piper、  Fenwick & West、Perkins Coie 等律师事务所，以及 K&L Gates 律师事务所的个人律师跟投。
+2 月 19 日，监管合规公司 SingleFile 宣布完成 900 万美元 A 轮融资，Foundry Group 领投，Pioneer Square Labs 和 The LegalTech Fund 等现有投资者，Wilson Sonsini、Cooley、DLA Piper、Fenwick & West、Perkins Coie 等律师事务所，以及 K&L Gates 律师事务所的个人律师跟投。
 
 ## CLM 服务商 Luminance 完成 7500 万美元 C 轮融资
 
@@ -58,7 +52,7 @@ StructureFlow 可以生成复杂的公司结构、交易步骤、流程图和时
 
 ## Mishcon de Reya 律所投资法律科技初创公司 Ctrl AI
 
-2 月 13 日，英国 Mishcon de Reya[** 律师事务所宣**](https://www.ctrl-ai.co.uk/)布通过旗下 MDR 实验室，投资了法律科技初创公司 Ctrl AI 的预种子轮融资。Ctrl AI 是一家专门从事 AI Agent 产品的法律科技初创公司，与旨在增强律师事务所自身交付模式的传统工具不同，Ctrl AI 的产品为大中型企业的内部法律运营定制。通过自动化各类法律任务，Ctrl AI 的 AI 平台使企业法律部门能够以更快的速度、准确性和战略清晰度进行操作。
+2 月 13 日，英国 Mishcon de Reya 律师事务所[宣布](https://www.ctrl-ai.co.uk/)通过旗下 MDR 实验室，投资了法律科技初创公司 Ctrl AI 的预种子轮融资。Ctrl AI 是一家专门从事 AI Agent 产品的法律科技初创公司，与旨在增强律师事务所自身交付模式的传统工具不同，Ctrl AI 的产品为大中型企业的内部法律运营定制。通过自动化各类法律任务，Ctrl AI 的 AI 平台使企业法律部门能够以更快的速度、准确性和战略清晰度进行操作。
 
 ## 法律 AI 平台 Eudia 完成 1.05 亿美元 A 轮融资，7500 万美元将用于未来的潜在并购
 
@@ -68,9 +62,7 @@ Eudia 成立于 2023 年 9 月，为财富 500 强公司的首席法律官和内
 
 ## 法律科技初创公司 Aracor AI 完成 450 万美元预种子轮融资
 
-2 月 13 日，法律科技初创公司 Aracor AI 宣布完成 450 万美元预种子轮融资，Fuel Venture Capital 领投，
-
-Aracor AI 成立于 2024 年，提供一个 AI 驱动的合同审查解决方案，允许用户通过红线标记、编辑和总结等功能简化合同审查流程，而且还可以与 Microsoft Word 工作流程进行集成。
+2 月 13 日，法律科技初创公司 Aracor AI 宣布完成 450 万美元预种子轮融资，Fuel Venture Capital 领投，Aracor AI 成立于 2024 年，提供一个 AI 驱动的合同审查解决方案，允许用户通过红线标记、编辑和总结等功能简化合同审查流程，而且还可以与 Microsoft Word 工作流程进行集成。
 
 ## 替代性法律服务商 Factor 收购法律科技设计和开发机构 Theory and Principle
 
@@ -100,7 +92,7 @@ Aracor AI 成立于 2024 年，提供一个 AI 驱动的合同审查解决方案
 
 ## 英国私募股权机构 Blixt 收购 Brachers 律所
 
-近日，在私募股权（PE）机构 Blix[**t 的支持下，英**](https://www.lawfront.com/)国区域性律师事务所集团 Lawfront 收购了 Brachers 律所 —— 该律所的收入约为 2000 万英镑。
+近日，在私募股权（PE）机构 [Blixt](https://www.lawfront.com/) 的支持下，英国区域性律师事务所集团 Lawfront 收购了 Brachers 律所 —— 该律所的收入约为 2000 万英镑。
 
 这是一个非常 PE 的思维方式，即汇总一系列类似的资产，然后找到降低成本的方法，同时保持价值。
 
@@ -108,7 +100,7 @@ Aracor AI 成立于 2024 年，提供一个 AI 驱动的合同审查解决方案
 
 ## AI 专利工作流程自动化平台 &AI 完成 650 万美元种子轮融资
 
-**2 月** 6 日，AI 专利工作流程自动化平台 &AI 宣布完成 650 万美元种子轮融资，First Round 领投，Y Combinator、SV Angel、BoxGroup 以及天使投资人 Kulveer Taggar、JJ Fliegelman、Rich Aberman 跟投。
+2 月 6 日，AI 专利工作流程自动化平台 &AI 宣布完成 650 万美元种子轮融资，First Round 领投，Y Combinator、SV Angel、BoxGroup 以及天使投资人 Kulveer Taggar、JJ Fliegelman、Rich Aberman 跟投。
 
 &AI 利用 AI 技术加速专利诉讼工作流程，包括专利搜索、绘制索赔图表等传统手动工作流程，从而帮助专利律师在极短的时间内以更高的准确性进行尽职调查。
 
@@ -138,13 +130,13 @@ Lawpath 于 2024 年推出了 Lawpath AI，为用户提供一系列自助服务�
 
 Semeris 由摩根大通欧洲抵押贷款义务（CLO）团队前负责人 Peter Jasko 和金融科技公司 Verba Technologies 的联合创始人 Sam Daroczy 于 2020 年创立。该公司提供一个金融交易库，涵盖 CLO、资产支持证券、抵押贷款支持证券、杠杆贷款和高收益债券，包含超过 100 万个分析师验证的数据点的存储库。
 
-# 🤖 法**律 AI 新产品**
+# 🤖 法律 AI 新产品
 
 ## Stephenson Harwood 律师事务所推出 AI DORA 合同审查工具
 
 2 月 10 日，国际律师事务所 Stephenson Harwood 与 AI 工作流开发公司 Curvestone 合作，为新的欧盟《数字运营弹性法》（DORA）构建了一个定制合同审查工具。
 
-# **🥸 法律科技行业研究**
+# 🥸 法律科技行业研究
 
 ## CLOC 发布《2025 年 CLOC 行业状况报告》
 

@@ -1,14 +1,14 @@
-# 03.31-ChatGPT“生成吉卜力风格 AI 图”海外潮流引发版权争议，CEO 奥尔特曼回应将施以限制
-
-> 来源：[https://agijuejin.feishu.cn/docx/IDuqdjTxJoiklQxnCBTc9sI0njg](https://agijuejin.feishu.cn/docx/IDuqdjTxJoiklQxnCBTc9sI0njg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 03 月 31 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/IDuqdjTxJoiklQxnCBTc9sI0njg](https://agijuejin.feishu.cn/docx/IDuqdjTxJoiklQxnCBTc9sI0njg)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/de03284ad6cd6f1efa4cad70ab6c4dd3.png)
 
-## ⭐ 今日热点 💡 ChatGPT“生成吉卜力风格 AI 图”海外潮流引发版权争议，CEO 奥尔特曼回应将施以限制
+## ⭐ 今日热点
+
+### 💡 ChatGPT“生成吉卜力风格 AI 图”海外潮流引发版权争议，CEO 奥尔特曼回应将施以限制
 
 IT之家 | [阅读原文](https://www.ithome.com/0/841/863.htm)
 
@@ -24,7 +24,9 @@ IT之家 | [阅读原文](https://www.ithome.com/0/841/829.htm)
 
 3月30日，谷歌宣布将最新的Gemini AI旗舰模型Gemini 2.5 Pro免费向所有Gemini应用用户开放，此前仅限Gemini Advanced订阅用户（月费19.99美元 ，约合145元人民币）。该模型被称为“最智能的AI模型”，推理能力增强，支持多项功能。目前已登陆官网，将陆续上线安卓和iOS端。它仍处于实验阶段，在LMArena排行榜名列前茅，谷歌还在优化编程能力。其上下文窗口为100万token，未来计划扩展至200万token。
 
-## 🌟 技术突破 💡 我国首个通用人工智能大型社会模拟器发布：可精准推演社会运行规律
+## 🌟 技术突破
+
+### 💡 我国首个通用人工智能大型社会模拟器发布：可精准推演社会运行规律
 
 IT之家 | [阅读原文](https://www.ithome.com/0/841/881.htm)
 

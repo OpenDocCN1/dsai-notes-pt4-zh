@@ -1,3 +1,4 @@
+
 # 2023-09-08【Frank最新思考的“提示词的5个层次”】
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/XJSVdfAnUow6vcxXVV6cXPZfn8d](https://xuqiwei1986.feishu.cn/docx/XJSVdfAnUow6vcxXVV6cXPZfn8d)

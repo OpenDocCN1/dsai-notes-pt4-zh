@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（7月 15日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/D7PCdg4XbojoxWxSQHkcDlaenJ5](https://miracleplus.feishu.cn/docx/D7PCdg4XbojoxWxSQHkcDlaenJ5)
 
-# 资讯
+## 资讯
 
 ### 谷歌DeepMind被曝抄袭开源成果，论文还中了顶流会议
 
@@ -14,7 +15,7 @@ https://mp.weixin.qq.com/s/TVAx3Z4zrah3ql4pHa8V_w
 
 而“原告”的说法大致是：
 
-提出了一个高效框架，通过在语言模型的词汇表上构建索引，来大**幅提升约束文本生成的效率。简单**来说，就是通过索引避免对全部逻辑值的遍历。
+提出了一个高效框架，通过在语言模型的词汇表上构建索引，来大幅提升约束文本生成的效率。简单来说，就是通过索引避免对全部逻辑值的遍历。
 
 同样“不依赖于具体模型”。
 
@@ -46,7 +47,7 @@ https://mp.weixin.qq.com/s/FwWM3VwLlbKc9jSUPiYUug
 
 ![](img/12b0d7b076401d39ebef01da5eb56fec.png)
 
-# 推特
+## 推特
 
 ### Reddit超火Claude Sonnet 3.5的系统提示
 
@@ -92,7 +93,7 @@ https://x.com/virattt/status/1812549169447616953
 
 [ssstwitter.com_1721038687767.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PPS5bCAADoh361x8AZfcQ4U9ngc)
 
-### ai-renamer：使用LLMs 根据文件内容重命名文件的CLI工具
+### `ai-renamer`：使用LLMs 根据文件内容重命名文件的CLI工具
 
 https://x.com/JackBlair87/status/1812619229994295544
 
@@ -102,7 +103,7 @@ https://github.com/ozgrozer/ai-renamer
 
 ---
 
-ai-renamer
+`ai-renamer`
 
 一个 Node.js 命令行工具，使用 Ollama 和 LM Studio 模型（Llava, Gemma, Llama 等）根据文件内容智能地重命名文件。
 
@@ -128,7 +129,7 @@ https://x.com/krshnrana/status/1812517940790689852
 
 [ssstwitter.com_1721038939877.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SnxZbiMopoLfI7x19FTc0Qldnlh)
 
-# 产品
+## 产品
 
 ### AI Web Designer
 
@@ -150,7 +151,7 @@ AI image extender 是一款图像编辑工具，可以帮助用户轻松地扩�
 
 ![](img/9b834b20f5a015134598a5bd52ee11ad.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Strom
 
@@ -160,15 +161,15 @@ https://github.com/stanford-oval/storm
 
 STORM 是一个基于大语言模型的知识整理系统，可以从互联网上收集信息，生成维基百科风格的文章。该系统分为两个阶段：
 
-1.  预写作阶段：系统通过互联网搜索收集相关信息，并生成大纲。
+1. 预写作阶段：系统通过互联网搜索收集相关信息，并生成大纲。
 
-1.  写作阶段：系统使用收集的信息和生成的大纲来生成完整的文章，并添加引用。
+2. 写作阶段：系统使用收集的信息和生成的大纲来生成完整的文章，并添加引用。
 
 为了提高问题的深度和广度，STORM 采用了两种策略：
 
-1.  基于视角的问题生成：系统根据输入的主题，调查相似主题的现有文章，并使用这些视角来控制问题生成过程。
+1. 基于视角的问题生成：系统根据输入的主题，调查相似主题的现有文章，并使用这些视角来控制问题生成过程。
 
-1.  模拟对话：系统模拟了一个维基百科作者和主题专家之间的对话，以更新对主题的理解并提出后续问题。
+2. 模拟对话：系统模拟了一个维基百科作者和主题专家之间的对话，以更新对主题的理解并提出后续问题。
 
 ![](img/299bfcae8c4c8f91f809ecbb26136279.png)
 
@@ -198,9 +199,9 @@ Aider 是一个在终端中进行 AI 对编程的工具。它可以让用户与�
 
 ![](img/472e1ab8a9255e208a4f48c33ec34e0d.png)
 
-# 投融资
+## 投融资
 
-### **逐际动力完成数亿元A轮融资**
+### 逐际动力完成数亿元A轮融资
 
 贡献人：
 
@@ -212,7 +213,7 @@ https://36kr.com/p/2860538964462467
 
 ![](img/22f6f3c0fca705d7c85fc0df1bfc1ada.png)
 
-# 学习
+## 学习
 
 ### Blaze：SparkSQL Native算子优化在快手的深度优化及大规模应用实践
 
@@ -220,7 +221,7 @@ https://36kr.com/p/2860538964462467
 
 https://mp.weixin.qq.com/s/ne5FCgFDK29BWbLHjm0ZqA
 
-快手开发的 Blaze 是一款基于 Rust 和 datafusion 框架的 SparkSQL Native 执行引擎，旨在通过向量化技术和 SIMD 指令提升执行效率。Blaze 通过 Native Session Extension 将 Spark 物理执行计划转换为 Native Plan，实现与 Spark 分布式计算框架的兼容，并通过 Native Engine 执行计算，提高性能。在深度优化中，Blaze 采用了细粒度 FailBack 机制、基于 CBO 的转换策略、自定义的向量化数据传输格式、多级内存管理策略，以及对聚合算法的优化，减少了重复计算，提升了执行效率。目前，Blaze 支持 Parquet 向量化读写、常用算子和表达式，以及自研的 Remote Shuffle Service，并在 TPC-H 测试中显示出性能的显著提升
+快手开发的 Blaze 是一款基于 Rust 和 `datafusion` 框架的 SparkSQL Native 执行引擎，旨在通过向量化技术和 SIMD 指令提升执行效率。Blaze 通过 Native Session Extension 将 Spark 物理执行计划转换为 Native Plan，实现与 Spark 分布式计算框架的兼容，并通过 Native Engine 执行计算，提高性能。在深度优化中，Blaze 采用了细粒度 `FailBack` 机制、基于 CBO 的转换策略、自定义的向量化数据传输格式、多级内存管理策略，以及对聚合算法的优化，减少了重复计算，提升了执行效率。目前，Blaze 支持 Parquet 向量化读写、常用算子和表达式，以及自研的 Remote Shuffle Service，并在 TPC-H 测试中显示出性能的显著提升
 
 ![](img/8d9590c28103e6ce3192f3fe216c7fce.png)
 
@@ -240,7 +241,7 @@ https://mp.weixin.qq.com/s/yqMsg0_ZBPp3XriKihceLA
 
 https://zhuanlan.zhihu.com/p/646905171?utm_psn=1788246568375296000
 
-本文旨在解释如何估算大型语言模型（LLM）训练所需的时间，并通过计算浮点运算次数（FLOPs）来精确推导。作者提出了一个简化的公式 训练时间 ≈ 6TP/nX，其中 T 是总 token 数量，P 是模型参数量，n 是显卡数量，X 是每张卡每秒实际做的浮点运算数。文章详细阐述了 FLOPs 的估算和精算过程，指出了在计算中只考虑权重矩阵的矩阵乘法，并且展示了如何将 FLOPs 转换为实际的训练时间。此外，作者还讨论了模型训练中的激活值重计算、显存带宽瓶颈以及不同硬件对 FLOPS 的影响。通过这篇文章，读者可以学习到如何基于模型参数和硬件性能来估算训练大型语言模型所需的时间，并理解在实际训练中可能遇到的技术细节和挑战。
+本文旨在解释如何估算大型语言模型（LLM）训练所需的时间，并通过计算浮点运算次数（`FLOPs`）来精确推导。作者提出了一个简化的公式 `训练时间 ≈ 6TP/nX`，其中 `T` 是总 token 数量，`P` 是模型参数量，`n` 是显卡数量，`X` 是每张卡每秒实际做的浮点运算数。文章详细阐述了 `FLOPs` 的估算和精算过程，指出了在计算中只考虑权重矩阵的矩阵乘法，并且展示了如何将 `FLOPs` 转换为实际的训练时间。此外，作者还讨论了模型训练中的激活值重计算、显存带宽瓶颈以及不同硬件对 `FLOPS` 的影响。通过这篇文章，读者可以学习到如何基于模型参数和硬件性能来估算训练大型语言模型所需的时间，并理解在实际训练中可能遇到的技术细节和挑战。
 
 ![](img/a5f3bdad7a6da23fdd90a3c13e2ccc6b.png)
 
@@ -280,6 +281,8 @@ CUDA-MODE 课程笔记第四课，深入探讨了 PMPP 书籍中的并行程序�
 
 https://zhuanlan.zhihu.com/p/700582171?utm_psn=1779899329677246464
 
+
+
 文章首先介绍了 MOE 模型中关键的两个参数：专家总数量和每个 token 激活的专家数量。通过实验，研究发现在激活专家数量不变的情况下，增加专家总数量可以提高模型效果，而模型推理成本基本不变。然而，专家数量的增加也带来了训练困难。研究者训练了一系列模型，每个模型配置了不同数量的 experts（2、4、8、16、32），并发现模型参数、expert 数量和训练 token 数目越多，loss 越低，但 loss 曲线随着 expert 数量增长会趋向于平稳。尽管模型只训练一次且离线，推理可能有无数次，因此推理成本更为重要。研究表明，4-8 个 expert 数量最佳，因为过多的 expert 会导致推理时大量参数不被使用，浪费内存。在相同预算下，专家人数越多，推理质量越好，但推理成本越高。最终，研究总结了在 attention 参数量不变的情况下，expert 数量越多，模型总参数越多，效果越好，但推理时内存浪费率越高；在总参数量不变的情况下，增加 expert 数量可以减少所需训练数据量，以更少的训练成本达到相同性能。
 
 ![](img/ad934b9d2b287d00df7aba2102bc122d.png)
@@ -288,7 +291,7 @@ https://zhuanlan.zhihu.com/p/700582171?utm_psn=1779899329677246464
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
+## 反馈与联系
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -300,11 +303,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

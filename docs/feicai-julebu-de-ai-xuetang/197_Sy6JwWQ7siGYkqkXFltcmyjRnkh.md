@@ -1,3 +1,4 @@
+
 # 大语言模型
 
 > 来源：[https://feicaiclub.feishu.cn/docx/CD1PdHblpoRDyixxClzcfYCwn2c](https://feicaiclub.feishu.cn/docx/CD1PdHblpoRDyixxClzcfYCwn2c)
@@ -8,7 +9,7 @@
 
 ---
 
-# **报告简介**
+## 报告简介
 
 2022 年底，ChatGPT 震撼上线，大语言模型技术迅速“席卷”了整个社会，人工智能技术因此迎来了一次重要进展。面对大语言模型的强大性能，我们不禁要问：支撑这些模型的背后技术究竟是什么？这一问题无疑成为了众多科研人员的思考焦点。
 

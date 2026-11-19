@@ -1,6 +1,7 @@
+
 # 香帅-《共潮生》系列
 
-> 来源：[https://aigcreative.feishu.cn/docx/FuwmdrnOnoUlkWxfdkEcAjlEnqi](https://aigcreative.feishu.cn/docx/FuwmdrnOnoUlkWxfdkEcAjlEnqi)
+> 来源：`https://aigcreative.feishu.cn/docx/FuwmdrnOnoUlkWxfdkEcAjlEnqi`
 
 香帅，本名唐涯，是一位在金融领域有着显著成就的学者和作家。她曾是北京大学光华管理学院金融系的副教授和博士生导师，并且获得了麦吉尔大学（加拿大）金融学博士学位以及英属哥伦比亚大学（加拿大）经济学硕士学位。
 
@@ -10,6 +11,6 @@
 
 香帅在金融学术研究、教育和公共演讲等多个领域都有着卓越的成就，她的工作不仅提升了公众对金融知识的理解，也为企业家和投资者提供了实际的指导和支持。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

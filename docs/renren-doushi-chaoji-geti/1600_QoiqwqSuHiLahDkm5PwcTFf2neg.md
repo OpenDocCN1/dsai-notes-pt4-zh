@@ -1,12 +1,9 @@
-# 2023-08-01OpenAI假设被推翻！大模型输小模型，Llama 2训练与GPU计算关联度-今日头条
-
-> 来源：[https://xuqiwei1986.feishu.cn/docx/XPnHdQwuKooW0Zxi3WgcM6pTnXd](https://xuqiwei1986.feishu.cn/docx/XPnHdQwuKooW0Zxi3WgcM6pTnXd)
-
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7262264839832076834/?log_from=23d511d05cec1_1691395492147).com/article/726...
-
->
 
 # OpenAI假设被推翻！大模型输小模型，Llama 2训练与GPU计算关联度
+
+> 来源：https://xuqiwei1986.feishu.cn/docx/XPnHdQwuKooW0Zxi3WgcM6pTnXd
+>
+> 原文链接：https://www.toutiao.com/article/7262264839832076834/?log_from=23d511d05cec1_1691395492147
 
 2023-08-01 16:44 · 新智元
 
@@ -38,7 +35,7 @@ Chinchilla究竟是什么？
 
 这一假设是OpenAI计算帕累托边界的基础。
 
-在此，我们先介绍下DeepMind成员在2022年的工作Chinchilla模型，其技术原理和其他同类模型一样（比如GPT-3) ，区别在于训练参数和数据量。
+在此，我们先介绍下DeepMind成员在2022年的工作Chinchilla模型，其技术原理和其他同类模型一样（比如GPT-3），区别在于训练参数和数据量。
 
 DeepMind宣称，「对于计算优化训练，模型大小和训练数据集大小应该相等地缩放: 模型大小每增加一倍，训练数据集大小也应该加倍。」
 
@@ -134,7 +131,7 @@ Chinchilla能复刻Llama曲线吗？
 
 不过，7B曲线还是有点不尽人意。如果Meta对其进行更长时间的训练就好了... 而现在，他们做到了！Meta本周发布了 LLaMA 2！
 
-**证实「质疑」**
+## 证实「质疑」
 
 ![](img/4cddb6afb76c90eb49883411f9816b4d.png)
 
@@ -190,6 +187,6 @@ Chinchilla能复刻Llama曲线吗？
 
 更广义地说，这就提出了一个问题：如果余弦时间表不是最优的，那么曲线的尾部形状应该是怎样的呢？
 
-参考资料：
+## 参考资料
 
 https://espadrine.github.io/blog/posts/chinchilla-s-death.html#Can_Chinchillas_picture_a_Llama_s_sights

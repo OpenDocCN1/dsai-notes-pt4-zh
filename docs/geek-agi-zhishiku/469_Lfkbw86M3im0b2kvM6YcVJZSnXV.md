@@ -1,14 +1,15 @@
+
 # 一天做100个📕图文笔记，详细教程
 
 > 来源：[https://geekbang.feishu.cn/docx/G7vjdHrgyo6zg5x5k79ctYSWnQg](https://geekbang.feishu.cn/docx/G7vjdHrgyo6zg5x5k79ctYSWnQg)
-
+>
 > 👩 作者：赛博大表姐
-
+>
 > 📃 作者介绍：120万字小说作者，青岛AI企业家联盟导师，青岛市创业者协会人工智能专委会知识创业部副部长，自媒体创业者。
-
+>
 > ⏰ 收录时间：2024-05-31 14:47:32 (UTC+8)
-
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247483823&idx=1&sn=5300c126e248928ec9f89f88a1480821&chksm=c1082460f67fad76c9b600fdaff267a406ebca6ee71239093038e1eb3e423b55dae501586d9d&token=1230547096&lang=zh_CN#rd)q.com/s?__biz=Mz...
+>
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=MzkxMjY2NzgwOA==&mid=2247483823&idx=1&sn=5300c126e248928ec9f89f88a1480821&chksm=c1082460f67fad76c9b600fdaff267a406ebca6ee71239093038e1eb3e423b55dae501586d9d&token=1230547096&lang=zh_CN#rd
 
 ![](img/97f5c1e6efb16b173dbc7ed3ab4a5b56.png)
 
@@ -36,7 +37,7 @@ prompt的方式有很多，无所谓你怎么问，只要能问明白，它能�
 
 ![](img/b710f4e0a0e3d805eae7e69a96de19e8.png)
 
-将表格里的内容，复制粘贴到EXCEL表格中，保存为“csv”格式，注意必须是这个格式。
+将表格里的内容，复制粘贴到EXCEL表格中，保存为`csv`格式，注意必须是这个格式。
 
 ![](img/06803b2f34bfe3c858c6217caf090211.png)
 

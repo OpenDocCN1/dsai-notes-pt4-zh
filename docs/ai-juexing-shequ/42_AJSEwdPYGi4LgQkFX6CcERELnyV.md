@@ -1,3 +1,4 @@
+
 # HeyGen数字人平台永久免费使用方法
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/PKFjdBugVoTpvrxmVo0ctEU3nFc](https://diwfpqo78m.feishu.cn/docx/PKFjdBugVoTpvrxmVo0ctEU3nFc)
@@ -8,17 +9,17 @@
 
 我主要分享的就是《HeyGen数字人平台永久免费使用方法》
 
-一、HeyGen是什么：
+## 一、HeyGen是什么：
 
-1）HeyGen是目前全球最火爆的数字人短视频制作平台，内置多国语音，只用上传一张静态图片，即可1分钟内完成一个短视频的创作，方便高效（官网网址：HeyGen-AISpokespersonVideoCreator）
+1）HeyGen是目前全球最火爆的数字人短视频制作平台，内置多国语音，只用上传一张静态图片，即可1分钟内完成一个短视频的创作，方便高效（官网网址：`HeyGen-AISpokespersonVideoCreator`）
 
 2）但是新用户默认只有1 credits的授信额度（只够生成1分钟的视频），要想更多只能购买付费会员（月付59美刀一个月，年付48美刀一个月），合算下来至少一个月都要一张破局俱乐部门票钱了
 
-二、如何帮大家省下来每月400元：
+## 二、如何帮大家省下来每月400元：
 
-1）登录HeyGen成功后，点击右上角头像，profile setting->profile->copy invitation
+1）登录HeyGen成功后，点击右上角头像，`profile setting->profile->copy invitation`
 
-2）打开浏览器隐私模式，地址栏中Ctrl+V输入刚刚复制的链接地址打开，弹出登录/注册框，这一步先挂在这里
+2）打开浏览器隐私模式，地址栏中`Ctrl+V`输入刚刚复制的链接地址打开，弹出登录/注册框，这一步先挂在这里
 
 3）【最关键的一步】打开“10分钟邮箱网站”，网址（10分钟邮箱10分钟后邮件自动删除），在这个网站上，点击“复制”把当前随机产生的邮箱名称复制下来
 
@@ -30,7 +31,7 @@
 
 7）重复上边2~6步，只需要在第3步中，点击“换一个邮箱”，即可更换新的邮箱来继续完成奖励的发放，奖励目前测试下来，无上限。
 
-三、小Tips：
+## 三、小Tips：
 
 1）经过试验，这个漏洞目前还可以无限制地刷，我已经刷到了68个Credit，足够使用很长时间了；
 

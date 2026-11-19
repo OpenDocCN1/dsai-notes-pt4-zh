@@ -1,3 +1,4 @@
+
 # AI每日资讯-202406
 
 > 来源：[https://aigcreative.feishu.cn/docx/MfXndmVWgopKPWx5bcBcyNIAnbh](https://aigcreative.feishu.cn/docx/MfXndmVWgopKPWx5bcBcyNIAnbh)
@@ -164,9 +165,11 @@ NVIDIA现已成为全球市值最高的公司，其市值达3.335万亿美元，
 
 RunwayML最新发布的Gen-3 Alpha模型，在保真度、一致性和运动表现上相较上一代有显著提升，迈向构建通用世界模型的目标。该模型基于新的大规模多模态训练基础设施开发，支持文本到视频、图像到视频等多种功能，并配备精细时间控制，实现场景转换的精确控制。Gen-3 Alpha能够生成写实的、多样化情感和动作的人物角色。
 
-[Runway最新视频模型Gen-3 Alpha案例100+](https://aigcreative.feishu.cn/wiki/JQMJwlzpfiqD3akfYVncIcxGn4f?from=from_copylink)方30+高清视频案例合集文档：
+文档：[Runway最新视频模型Gen-3 Alpha案例100+](https://aigcreative.feishu.cn/wiki/JQMJwlzpfiqD3akfYVncIcxGn4f?from=from_copylink) 方30+高清视频案例合集文档：
 
 ## 【20240617】产品 | DeepSeek Coder V2开源，代码能力超越GPT-4
+
+
 
 DeepSeek Coder V2以236B参数量级在代码和数学能力上首次超越GPT-4-Turbo，成为全球领先的开源模型。它在多个领域展现出卓越的性能，包括代码生成、数学算术、逻辑推理和中英通用能力。DeepSeek Coder V2的开源发布，提供236B和16B两种参数规模的模型，免费商用，无需申请。同时，DeepSeek提供API服务和本地私有化部署选项，以满足不同用户需求。
 
@@ -206,7 +209,7 @@ DeepSeek Coder V2以236B参数量级在代码和数学能力上首次超越GPT-4
 
 近日，极佳科技与清华大学自动化系联合发布了“自称”中国首个Sora级视频生成大模型「视界一粟 YiSu」，该模型具有16秒超长生成能力，可扩展至1分钟以上，同时具备超大运动和超强表现力。YiSu模型以其高性价比和端侧可用性，旨在加速长视频生成技术在产品应用中的普及。此外，极佳科技在世界模型领域也取得了突破，发布了中国首个自动驾驶世界模型，并已实现商业化落地。YiSu-Beta V0.5版本的发布标志着该大模型正在快速迭代，未来将为行业带来更多价值。
 
-体验地址：https://studio.gigaai.cc/
+体验地址：https://studio.giga.ai/
 
 ## 【20240611】产品 | OpenAI与苹果宣布建立合作伙伴关系
 

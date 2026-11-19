@@ -1,6 +1,3 @@
-# 06.30-行业首个：斑马智行发布高通 8397 端侧多模态大模型方案
-
-> 来源：[https://agijuejin.feishu.cn/docx/NH2IdbmRborN50x6UCFcUgQYnuo](https://agijuejin.feishu.cn/docx/NH2IdbmRborN50x6UCFcUgQYnuo)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 06 月 30 日)
 
@@ -11,6 +8,8 @@
 ## ⭐ 今日热点
 
 ### 💡 行业首个：斑马智行发布高通 8397 端侧多模态大模型方案
+
+> 来源：[https://agijuejin.feishu.cn/docx/NH2IdbmRborN50x6UCFcUgQYnuo](https://agijuejin.feishu.cn/docx/NH2IdbmRborN50x6UCFcUgQYnuo)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/864/656.htm)
 
@@ -52,7 +51,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/864/611.htm)
 
 ![](img/d0586f4d651523ab6191988ba4156617.png)
 
-6月30日，华为正式宣布开源盘古70亿参数稠密模型、盘古Pro MoE 720亿参数混合专家模型及基于昇腾的模型推理技术。华为称这是践行昇腾生态战略关键举措，推动大模型技术发展与AI应用。盘古Pro MoE 72B模型权重等已上线开源平台，基于昇腾的超大规模MoE模型推理代码也已上线，盘古7B相关模型权重与推理代码将于近期上线 ，开源地址：https://gitcode.com/ascend-tribe 。
+6月30日，华为正式宣布开源盘古70亿参数稠密模型、盘古Pro MoE 720亿参数混合专家模型及基于昇腾的模型推理技术。华为称这是践行昇腾生态战略关键举措，推动大模型技术发展与AI应用。盘古Pro MoE 72B模型权重等已上线开源平台，基于昇腾的超大规模MoE模型推理代码也已上线，盘古7B相关模型权重与推理代码将于近期上线 ，开源地址：`https://gitcode.com/ascend-tribe` 。
 
 ### 💡 OpenAI 首席研究官再谈 Meta 公司挖人：就像闯入家中偷窃，建议员工严词拒绝
 

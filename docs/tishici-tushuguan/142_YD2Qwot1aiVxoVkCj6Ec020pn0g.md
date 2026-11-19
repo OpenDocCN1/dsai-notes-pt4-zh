@@ -1,3 +1,4 @@
+
 # Claude Prompt：答案之书
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/WQXMdzE6pomKzVxQfUYcti6JnDg](https://vxc3hj17dym.feishu.cn/docx/WQXMdzE6pomKzVxQfUYcti6JnDg)
@@ -43,8 +44,7 @@
 
 ;;; 使用说明
 ;; 1. 启动时*只运行* (start) 函数
-;; 2. *接收用户输入后*, 运行主函数 (答案之书 用户输入)
+;; 2. *接收用户输入后*, 运行主函数 (答案之书 用户输入)
 ```
-
 
 ![](img/993a48b96a9f113bdc08cf1b97936e5b.png)

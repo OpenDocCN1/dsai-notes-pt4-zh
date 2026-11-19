@@ -1,12 +1,11 @@
+
 # （Llama3）懒人整合包！本地运行开源AI大模型
 
-> 来源：[https://agispace.feishu.cn/docx/NEAgdxCpMoqUyDxXnXcc1wnInHg](https://agispace.feishu.cn/docx/NEAgdxCpMoqUyDxXnXcc1wnInHg)
-
+> 来源：`https://agispace.feishu.cn/docx/NEAgdxCpMoqUyDxXnXcc1wnInHg`
 > 原创：AI生活研究所
+> 原文：`https://mp.weixin.qq.com/s/CYax_ruEbeC7iPQNIcFY_w`
 
-> 原文：https://mp.weixin.qq.com/s/CYax_ruEbeC7iPQNIcFY_w
-
-### Meta发布了目前最强的开源大模型Llama 3
+## Meta发布了目前最强的开源大模型Llama 3
 
 AI圈又嗨起来了
 
@@ -16,37 +15,43 @@ AI圈又嗨起来了
 
 ![](img/b215706a7d6371b7c9b2c59e26649439.png)
 
-+   Llama 3 8B在关键测试中超越前代Llama 2 70B模型，性能力压群雄。
++ Llama 3 8B在关键测试中超越前代Llama 2 70B模型，性能力压群雄。
 
-+   训练速度是Llama 2的三倍，节省时间，提升效率。
++ 训练速度是Llama 2的三倍，节省时间，提升效率。
 
-+   超大数据集：训练数据超过15T token，是Llama 2的7倍以上
++ 超大数据集：训练数据超过15T token，是Llama 2的7倍以上
 
-+   长文本处理：支持最长达8K的文本输入
++ 长文本处理：支持最长达8K的文本输入
 
-**在众多基准测试中居**于领先地位，推理和编码能力大幅增强。
+在众多基准测试中居于领先地位，推理和编码能力大幅增强。
 
-既然是开源模型，咱就自己部署运行一个！看看在自己的电脑上，运行大模型是一种什么体验。话不多说，上教程！官网下载安装较为麻烦这里我找到一个Llama3懒人整合包！一键安装运行，保你会用！（Llama 3 8B版本，8个G左右，电脑内存至少16G以上，老电脑就别强求了，直接官网https://www.meta.ai/体验吧）公号对话框回复：Llama3 即可下载下载解压后得到以下两个文件
+## 本地部署教程
+
+既然是开源模型，咱就自己部署运行一个！看看在自己的电脑上，运行大模型是一种什么体验。话不多说，上教程！官网下载安装较为麻烦这里我找到一个Llama3懒人整合包！一键安装运行，保你会用！（Llama 3 8B版本，8个G左右，电脑内存至少16G以上，老电脑就别强求了，直接官网`https://www.meta.ai/`体验吧）公号对话框回复：Llama3 即可下载下载解压后得到以下两个文件
 
 ![](img/b5d495efb3bb114f4f3aee83d5ddef79.png)
 
-然后跟着操作：1、双击安装LM-Studio-0.2.20-Setup.exe装完后，桌面上有了个快捷方式2、桌面双击打开LM-Studio快捷方式
+然后跟着操作：1、双击安装`LM-Studio-0.2.20-Setup.exe`，装完后，桌面上有了个快捷方式
 
-然后通过以下两步，打开存放模型的文件夹，然后将解压包里的FaradayDotDev文件，整个复制到模型文件夹内。
+2、桌面双击打开`LM-Studio`快捷方式
+
+然后通过以下两步，打开存放模型的文件夹，然后将解压包里的`FaradayDotDev`文件，整个复制到模型文件夹内。
 
 ![](img/975e2191a4fe4db73bccc9c840b7bec0.png)
 
 ![](img/9bd7e4979a1c05816938197fd766166b.png)
 
-3、LM-Studio切换到聊天界面
+3、`LM-Studio`切换到聊天界面
 
 然后选择好模型，加载好后，就可以直接在对话框中开始用了。就是这么简单，你就成功部署好了自己的本地AI大模型，真正的离线使用，永久免费，也不用担心数据安全问题！
 
 ![](img/8fecee81afdb9aa75575499999283b45.png)
 
+## 使用体验与注意事项
+
 我随便问了一句，你和GPT4谁比较厉害？
 
-哈哈，Llama还挺诚实!
+哈哈，Llama还挺诚实！
 
 大方承认了自己还不如GPT4，但是会努力学习进步!
 

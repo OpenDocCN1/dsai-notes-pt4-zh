@@ -1,10 +1,11 @@
+
 # AI 集合平台
 
-> 来源：[https://my.feishu.cn/docx/HiUVdYCwZori1hxkghYcvjFknge](https://my.feishu.cn/docx/HiUVdYCwZori1hxkghYcvjFknge)
+> 来源：`https://my.feishu.cn/docx/HiUVdYCwZori1hxkghYcvjFknge`
 
-# Poe
+## Poe
 
-poe.com （需施展魔法）
+`poe.com` （需施展魔法）
 
 推荐指数：🌟🌟🌟🌟
 
@@ -16,9 +17,9 @@ poe.com （需施展魔法）
 
 ![](img/e44ffce742cc1a2066f4a0cc109e7d77.png)
 
-# 360 Bot
+## 360 Bot
 
-https://bot.360.com/
+`https://bot.360.com/`
 
 推荐指数：🌟🌟🌟🌟
 
@@ -36,9 +37,9 @@ https://bot.360.com/
 
 ![](img/ae23d3d96c1e1898ee615eb4ad6d5006.png)
 
-# hugging Chat
+## hugging Chat
 
-https://huggingface.co/chat （需🪜）
+`https://huggingface.co/chat` （需🪜）
 
 推荐指数：🌟🌟🌟🌟
 
@@ -52,52 +53,51 @@ Hugging Face 推出的基于各种免费开源大模型的聊天工具——Hugg
 
 另外，新推出了 iOS app 版本，据说反应速度比较快。
 
+## DuckDuckGo AI Chat
 
-# DuckDuckGo AI Chat
-
-[duckduckgo.com](https://duckduckgo.com/?q=DuckDuckGo&ia=chat)
+[`duckduckgo.com`](https://duckduckgo.com/?q=DuckDuckGo&ia=chat)
 
 推荐指数：🌟🌟🌟🌟
 
-免费访问 GPT-3.5 和 Claude 的 DuckDuck Go AI 聊天指南 https://poiblog.com/archives/6muvrMUz
+免费访问 GPT-3.5 和 Claude 的 DuckDuck Go AI 聊天指南 `https://poiblog.com/archives/6muvrMUz`
 
-# Groq
+## Groq
 
-https://groq.com/
+`https://groq.com/`
 
 推荐指数：🌟🌟🌟🌟
 
 号称当前反应最快速的 AI ChatBot 聊天工具助手，可免费体验 Llama3.1 最新模型。
 
-# Felo Chat
+## Felo Chat
 
-https://chat.felo.ai/
+`https://chat.felo.ai/`
 
 推荐指数：🌟🌟🌟🌟
 
 Felo Search 是由 日本 Sparticle Inc. 公司推出的产品。该公司利用 ChatGPT 和 AI Agent 技术，旨在优化用户发现和理解全球知识的体验。
 
-+   每天可以免费使用GPT-4o Mini和Llama 3.1模型。
++ 每天可以免费使用GPT-4o Mini和Llama 3.1模型。
 
 ### 其他免费功能
 
-+   Felo Translator：提供免费的实时双向翻译功能，支持超过15种语言。
++ Felo Translator：提供免费的实时双向翻译功能，支持超过15种语言。
 
-+   Felo Search：一个多语言AI搜索引擎，支持简化深度研究的过程，免费使用。
++ Felo Search：一个多语言AI搜索引擎，支持简化深度研究的过程，免费使用。
 
-# 其他
+## 其他
 
-## Yes Chat
+### Yes Chat
 
-https://www.yeschat.ai/zh-CN/yeschat
+`https://www.yeschat.ai/zh-CN/yeschat`
 
 推荐指数：🌟🌟🌟
 
 将多种 AI 功能集成到一个综合平台中，为用户提供了一站式的 AI 工具体验。
 
-## Anakin.ai
+### Anakin.ai
 
-https://app.anakin.ai/  推荐指数：🌟🌟🌟
+`https://app.anakin.ai/` 推荐指数：🌟🌟🌟
 
 Anakin 是一个 AI 聚合平台，用户可以直接访问，无需魔法。内置了多种 AI 应用，包括 Claude3、ChatGPT、Midjourney 等，可以满足各种场景需求，如内容生成、图片生成、对话交流、文档搜索、工作流程自动化等。
 
@@ -105,9 +105,9 @@ Anakin 是一个 AI 聚合平台，用户可以直接访问，无需魔法。内
 
 ![](img/1bf5d7142d1fa5e2804e36c77d150673.png)
 
-## ChatAll
+### ChatAll
 
-https://github.com/sunner/ChatALL/blob/main/README_ZH-CN.md
+`https://github.com/sunner/ChatALL/blob/main/README_ZH-CN.md`
 
 推荐指数：🌟🌟🌟
 

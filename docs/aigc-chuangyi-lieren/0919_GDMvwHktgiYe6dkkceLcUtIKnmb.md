@@ -1,3 +1,4 @@
+
 # Sora进一步拉大了中美AI差距
 
 > 来源：[https://aigcreative.feishu.cn/docx/BoqIdBAiBowuJsxZSgYcwUWQnFn](https://aigcreative.feishu.cn/docx/BoqIdBAiBowuJsxZSgYcwUWQnFn)
@@ -6,7 +7,7 @@
 
 > 作者：赵健
 
-AI 视频生成，多快迎来 “Midjourney 时刻”？
+## AI 视频生成，多快迎来 “Midjourney 时刻”？
 
 OpenAI 公布了准确答案：20 天。
 
@@ -78,7 +79,7 @@ OpenAI 在 2020 年首次提出了模型训练的秘诀——Scaling Law。根�
 
 OpenAI 就是遵循这一套“暴力美学”发现了大语言模型的涌现能力，并最终研发出划时代的 ChatGPT 。
 
-Sora 模型也是如此，凭借Scaling Law，它毫无预兆地在 2024 年 2 月就打响了视频的 “Midjourney 时刻”。
+Sora 模型也是如此，凭借 Scaling Law，它毫无预兆地在 2024 年 2 月就打响了视频的 “Midjourney 时刻”。
 
 OpenAI 表示，transformer 在各个领域都表现出了卓越的扩展特性，包括语言建模、计算机视觉、图像生成以及视频生成。下图展示了训练过程中，在相同的样本下，随着训练计算规模的增加，视频质量显著提高。
 
@@ -92,7 +93,7 @@ OpenAI 发现，视频模型在大规模训练时表现出许多有趣的新兴�
 
 Meta 首席科学家杨立昆（Yann LeCun）曾在 2023 年 6 月提出世界模型的概念。2023 年 12 月，Runway 官宣下场通用世界模型，宣称要用生成式 AI 来模拟整个世界。
 
-而 OpenAI 仅仅通过早就熟稔于心的 Scaling La**w，让 Sora 具备了世界模型的能力。OpenAI 表示：**“我们的结果表明，扩展视频生成模型是构建物理世界通用模拟器的一条有前途的途径。”
+而 OpenAI 仅仅通过早就熟稔于心的 Scaling Law，让 Sora 具备了世界模型的能力。OpenAI 表示：“我们的结果表明，扩展视频生成模型是构建物理世界通用模拟器的一条有前途的途径。”
 
 具体来看，Sora 世界模型有三个特点：
 
@@ -106,7 +107,7 @@ Meta 首席科学家杨立昆（Yann LeCun）曾在 2023 年 6 月提出世界�
 
 不过，跟所有的大模型一样，Sora 还不是一个完美的模型。OpenAI 承认，Sora 还存在许多局限性，它不能准确地模拟许多基本相互作用的物理过程，例如玻璃破碎。其他交互（例如吃食物）并不总是会产生对象状态的正确变化。
 
-## **03、算力才是核心竞争力？**
+## 03、算力才是核心竞争力？
 
 为什么 OpenAI 能够依靠“Scaling Law”屡试不爽，其他公司却没有呢？
 

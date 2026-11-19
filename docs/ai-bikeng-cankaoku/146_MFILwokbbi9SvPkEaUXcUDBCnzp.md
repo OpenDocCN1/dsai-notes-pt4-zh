@@ -1,13 +1,12 @@
+
 # API调用付费方案
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/Ifngdfe27oZiGdxWlT4cUDKpn9G](https://xodnytdcaw.feishu.cn/docx/Ifngdfe27oZiGdxWlT4cUDKpn9G)
 
-####
-
 | 项目 | 官方价格 | API价格 |
 | --- | --- | --- |
-| #### Nano Banana Pro |  |  |
-| gpt-image |  |  |
+| Nano Banana Pro | | |
+| gpt-image | | |
 
 ## Nano Banana Pro
 
@@ -15,15 +14,15 @@
 
 gemini.：4张/天 1k（免费用户）
 
-aistudio：调用API  1快/张
+aistudio：调用API 1快/张
 
 海螺AI:50张/天
 
-https://hailuoai.com/agent
+`https://hailuoai.com/agent`
 
-LM Arena: 不限制  2k
+LM Arena: 不限制 2k
 
-https://lmarena.ai/c/019ad481-56b5-727f-8f64-41386ba81039
+`https://lmarena.ai/c/019ad481-56b5-727f-8f64-41386ba81039`
 
 官方入口
 

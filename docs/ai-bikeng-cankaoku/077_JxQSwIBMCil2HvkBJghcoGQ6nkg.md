@@ -1,3 +1,4 @@
+
 # Openlist挂载豆包网盘教程
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/KV8pdglDEoREaUxmeRVc0GDynLg](https://xodnytdcaw.feishu.cn/docx/KV8pdglDEoREaUxmeRVc0GDynLg)
@@ -10,15 +11,13 @@ WebDAV 策略:本地代理
 
 ![](img/233e90dd3c8df1d0245bfbca0918034a.png)
 
-搜索下方命令，随便点进去一个文件再退出来，刷新下，
-
-搜索关键词
+搜索下方命令，随便点进去一个文件再退出来，刷新下，搜索关键词
 
 ```
 sid_guard
 ```
 
-点搜索结果进去，会自动定位到，标头-cookie，复制以sid_guard开头的内容即可
+点搜索结果进去，会自动定位到，标头-cookie，复制以`sid_guard`开头的内容即可
 
 ## 根文件夹ID
 
@@ -30,7 +29,7 @@ sid_guard
 root_id
 ```
 
-会自动定位响应，点击预览就可以看到root_id，直接复制值
+会自动定位响应，点击预览就可以看到`root_id`，直接复制值
 
 ![](img/6999d7b606f1c0b134dabb1d613ad7ea.png)
 

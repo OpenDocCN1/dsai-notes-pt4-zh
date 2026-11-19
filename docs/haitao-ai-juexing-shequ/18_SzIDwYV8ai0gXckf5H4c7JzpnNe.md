@@ -1,3 +1,4 @@
+
 # 爆款视频工作流：卡通人物插画-心理知识视频
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/O90Ndje6ookSbMxcRmYcAMIRnye](https://zinxkclpk97.feishu.cn/docx/O90Ndje6ookSbMxcRmYcAMIRnye)
@@ -16,25 +17,31 @@
 
 今天的案例在此基础上进行了改版，实现更多形象的插画人物的效果，同时优化了配音及字幕的连贯性，大幅提升了视频最终的效果。
 
-工作流拆解
+## 工作流拆解
 
-输入主题生成文案或原文案创作
+### 输入主题生成文案或原文案创作
 
 ![](img/db4d1c46afe74ddfe2acca1ceffca162.png)
+
+### 循环处理生成音频并配图
 
 循环处理生成音频并配图，这里核心难点，是采用了新的技术策略优化分段配音和字幕时间线对齐。
 
 ![](img/66a18707357ae48868dfac59be875eb1.png)
 
+### 生成封面图和视频背景图
+
 生成封面图和视频背景图，毕竟简单就不多介绍
 
 ![](img/cd8969ce7b4f9e54214df1eee5d18a7b.png)
+
+### 最后进行输出重组并生成剪映草稿
 
 最后进行输出重组并生成剪映草稿
 
 ![](img/701f0db7ff7b4d6b2c657d4bf543f399.png)
 
-Coze体验地址
+## Coze体验地址
 
 https://www.coze.cn/s/6G3rAAIkWn8/
 

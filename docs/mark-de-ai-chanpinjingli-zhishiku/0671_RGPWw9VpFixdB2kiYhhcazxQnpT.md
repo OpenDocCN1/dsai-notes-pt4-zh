@@ -1,8 +1,9 @@
+
 # S01：最小智能体 — 一个循环就够了
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Q940dp8ujoFHnPxUFZBc4ZDjnSb](https://qqs7y1hozd1.feishu.cn/docx/Q940dp8ujoFHnPxUFZBc4ZDjnSb)
 
-# The Agent Loop (Agent 循环)
+## The Agent Loop (Agent 循环)
 
 构建一个智能体，核心就是一个循环：让智能体不断调用工具，直到它自己判断不再需要调用为止
 
@@ -18,40 +19,40 @@
 
 ![](img/1f5a0e9a64819e4acf0373908346a1cd.png)
 
-[ s01 ] s02 > s03 > s04 > s05 > s06 | s07 > s08 > s09 > s10 > s11 > s12
+[`s01`] `s02` > `s03` > `s04` > `s05` > `s06` | `s07` > `s08` > `s09` > `s10` > `s11` > `s12`
 
 > "One loop & Bash is all you need" -- 一个工具 + 一个循环 = 一个 Agent。
 
 > Harness 层: 循环 -- 模型与真实世界的第一道连接。
 
-## 问题
+### 问题
 
 语言模型能推理代码, 但碰不到真实世界 -- 不能读文件、跑测试、看报错。没有循环, 每次工具调用你都得手动把结果粘回去。你自己就是那个循环。
 
-## 解决方案
+### 解决方案
 
 ```
 +--------+      +-------+      +---------+
-|  User  | ---&gt; |  LLM  | ---&gt; |  Tool   |
+|  User  | ---> |  LLM  | ---> |  Tool   |
 | prompt |      |       |      | execute |
 +--------+      +---+---+      +----+----+
                     ^                |
                     |   tool_result  |
                     +----------------+
-                    (loop until stop_reason != &quot;tool_use&quot;)
+                    (loop until stop_reason != "tool_use")
 ```
 
 一个退出条件控制整个流程。循环持续运行, 直到模型不再调用工具。
 
-## 工作原理
+### 工作原理
 
-1.  用户 prompt 作为第一条消息。
+1. 用户 `prompt` 作为第一条消息。
 
 ```
-messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: query})
+messages.append({ "role": "user", "content": query })
 ```
 
-1.  将消息和工具定义一起发给 LLM。
+1. 将消息和工具定义一起发给 LLM。
 
 ```
 response = client.messages.create(
@@ -60,72 +61,72 @@ response = client.messages.create(
 )
 ```
 
-1.  追加助手响应。检查 stop_reason -- 如果模型没有调用工具, 结束。
+1. 追加助手响应。检查 `stop_reason` -- 如果模型没有调用工具, 结束。
 
 ```
-messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: response.content})
-if response.stop_reason != &quot;tool_use&quot;:
+messages.append({ "role": "assistant", "content": response.content })
+if response.stop_reason != "tool_use":
     return
 ```
 
-1.  执行每个工具调用, 收集结果, 作为 user 消息追加。回到第 2 步。
+1. 执行每个工具调用, 收集结果, 作为 `user` 消息追加。回到第 2 步。
 
 ```
 results = []
 for block in response.content:
-    if block.type == &quot;tool_use&quot;:
-        output = run_bash(block.input[&quot;command&quot;])
+    if block.type == "tool_use":
+        output = run_bash(block.input["command"])
         results.append({
-            &quot;type&quot;: &quot;tool_result&quot;,
-            &quot;tool_use_id&quot;: block.id,
-            &quot;content&quot;: output,
+            "type": "tool_result",
+            "tool_use_id": block.id,
+            "content": output,
         })
-messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: results})
+messages.append({ "role": "user", "content": results })
 ```
 
 组装为一个完整函数:
 
 ```
 def agent_loop(query):
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: query}]
+    messages = [{ "role": "user", "content": query }]
     while True:
         response = client.messages.create(
             model=MODEL, system=SYSTEM, messages=messages,
             tools=TOOLS, max_tokens=8000,
         )
-        messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: response.content})
+        messages.append({ "role": "assistant", "content": response.content })
 
-        if response.stop_reason != &quot;tool_use&quot;:
+        if response.stop_reason != "tool_use":
             return
 
         results = []
         for block in response.content:
-            if block.type == &quot;tool_use&quot;:
-                output = run_bash(block.input[&quot;command&quot;])
+            if block.type == "tool_use":
+                output = run_bash(block.input["command"])
                 results.append({
-                    &quot;type&quot;: &quot;tool_result&quot;,
-                    &quot;tool_use_id&quot;: block.id,
-                    &quot;content&quot;: output,
+                    "type": "tool_result",
+                    "tool_use_id": block.id,
+                    "content": output,
                 })
-        messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: results})
+        messages.append({ "role": "user", "content": results })
 ```
 
 不到 30 行, 这就是整个 Agent。后面 11 个章节都在这个循环上叠加机制 -- 循环本身始终不变。
 
-## 变更内容
+### 变更内容
 
-## 试一试
+### 试一试
 
-cd learn-claude-code
+`cd learn-claude-code`
 
-python agents/s01_agent_loop.py
+`python agents/s01_agent_loop.py`
 
-试试这些 prompt (英文 prompt 对 LLM 效果更好, 也可以用中文):
+试试这些 `prompt` (英文 `prompt` 对 LLM 效果更好, 也可以用中文):
 
-1.  Create a file called hello.py that prints "Hello, World!"
+1. Create a file called `hello.py` that prints "Hello, World!"
 
-1.  List all Python files in this directory
+1. List all Python files in this directory
 
-1.  What is the current git branch?
+1. What is the current `git` branch?
 
-1.  Create a directory called test_output and write 3 files in it
+1. Create a directory called `test_output` and write 3 files in it

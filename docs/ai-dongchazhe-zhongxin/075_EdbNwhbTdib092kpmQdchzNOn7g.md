@@ -1,16 +1,17 @@
+
 # ChatGPT 编程系列
 
 > 来源：[https://bluefocus.feishu.cn/docx/ZDhWdEWfuoCooJxQ7Eacybbfn9Z](https://bluefocus.feishu.cn/docx/ZDhWdEWfuoCooJxQ7Eacybbfn9Z)
 
 [转自小林](https://xiaobot.net/p/xiaolin?refer=72e0e5d2-1313-47b5-9a21-77bde98ee72c)，如果你想阅读最新完整版，请点击查看
 
-# ChatGPT 辅助编程 | 专栏 1 核心要素
+## ChatGPT 辅助编程 | 专栏 1 核心要素
 
 如果你看过我写的写作核心，你一定也能理解编程核心。
 
 因为借助 GPT 辅助写作或者辅助编程，本质都是在辅助你提高某项技能，啥意思呢？
 
-**意思就是借助 ****GPT** 辅助编程的核心一样是要能提出好问题。
+**意思就是借助 GPT 辅助编程的核心一样是要能提出好问题。**
 
 GPT 是工具，不是人，它理解不了需求不清晰的项目，理解不了用户心理，这些都需要【人】，也就是【你】来实现。
 
@@ -38,7 +39,7 @@ GPT 是工具，不是人，它理解不了需求不清晰的项目，理解不�
 
 那么如何正确的提问呢？
 
-**今天****先说一点，也是最重要的：你要**向 AI 说清楚要用什么语言来实现。
+**今天先说一点，也是最重要的：**你要**向 AI 说清楚要用什么语言来实现。**
 
 这点很重要，前两天我直播用 AI 来回答问题，很多观众上来就是这个题怎么做，那个题怎么做。
 
@@ -46,7 +47,7 @@ AI 给出回答后，对方还理直气壮的问，为什么 AI 用了 Python �
 
 拜托啊，你提问的时候就没告诉人家要用什么语言写好吧。
 
-# ChatGPT 辅助编程 | 专栏 2 案例演示
+## ChatGPT 辅助编程 | 专栏 2 案例演示
 
 我：假如你是一名程序员（角色），现在帮我用 C 语言写个冒泡排序（任务），要求代码有思路和注释（指令）。
 
@@ -58,20 +59,16 @@ AI 给出回答后，对方还理直气壮的问，为什么 AI 用了 Python �
 
 指令：
 
-1.  定义并初始化一个需要排序的数组，例如 int array[] = {5， 3， 8， 4， 2}；
-
-1.  利用两层 for 循环进行排序，外层循环控制排序的次数，内层循环控制每次比较相邻的两个数。
-
-1.  在内层循环中，依次比较相邻的两个数，如果前面的数大于后面的数，则交换两个数的位置。
-
-1.  继续进行排序，直到所有的数都按照从小到大的顺序排列好。
-
-1.  冒泡排序的时间复杂度较高，不适合对大数组进行排序。
+1. 定义并初始化一个需要排序的数组，例如 `int array[] = {5, 3, 8, 4, 2};`
+2. 利用两层 `for` 循环进行排序，外层循环控制排序的次数，内层循环控制每次比较相邻的两个数。
+3. 在内层循环中，依次比较相邻的两个数，如果前面的数大于后面的数，则交换两个数的位置。
+4. 继续进行排序，直到所有的数都按照从小到大的顺序排列好。
+5. 冒泡排序的时间复杂度较高，不适合对大数组进行排序。
 
 代码如下（已注释说明）：
 
-```
-#include 
+```c
+#include <stdio.h>
 
 int main() 
 {
@@ -80,11 +77,11 @@ int main()
     int i, j, temp;
 
     // 冒泡排序
-    for (i = 0; i &lt; len - 1; i++)
+    for (i = 0; i < len - 1; i++)
     {
-        for (j = 0; j &lt; len - i - 1; j++)
+        for (j = 0; j < len - i - 1; j++)
         {
-            if (array[j] &gt; array[j+1]) // 如果前面的数比后面的数大，则交换位置
+            if (array[j] > array[j+1]) // 如果前面的数比后面的数大，则交换位置
             {
                 temp = array[j];
                 array[j] = array[j+1];
@@ -94,50 +91,46 @@ int main()
     }
 
     // 输出排序后的结果
-    printf(&quot;排序后的结果为：\n&quot;);
-    for (i = 0; i &lt; len; i++)
+    printf("排序后的结果为：\n");
+    for (i = 0; i < len; i++)
     {
-        printf(&quot;%d &quot;, array[i]);
+        printf("%d ", array[i]);
     }
     
     return 0;
 }
 ```
 
-以上，学废了嘛，
+以上，学废了嘛。
 
-# ChatGPT 辅助编程 | 专栏 3 帮你学 C 语言
+## ChatGPT 辅助编程 | 专栏 3 帮你学 C 语言
 
 在利用 ChatGPT 辅助学 C 语言之前，你得先知道，它到底能辅助你干什么。
 
-**我：作为一个语言模型，你能给 C **语言初学者提供什么帮助，请罗列具体的点。
+**我：作为一个语言模型，你能给 C 语言初学者提供什么帮助，请罗列具体的点。**
 
 ChatGPT：作为一个语言模型，我可以为 C 语言初学者提供以下帮助：
 
-1、提供 C 语言的基础知识和语法介绍，包括数据类型、控制语句、函数、指针等等。
-
-2、解答 C 语言相关问题，例如编译错误、运行时错误、逻辑错误等等。
-
-3、给出一些 C 语言编程的例子和实践，帮助初学者更好地理解和掌握 C 语言编程技巧。
-
-4、推荐一些 C 语言编程的学习资源，例如书籍、网站、视频等等，帮助初学者更系统地学习 C 语言。
-
-5、提供一些常用的 C 语言开发工具和环境的介绍，例如 IDE、编辑器、调试器等等，帮助初学者更高效地开发 C 语言程序。
+1. 提供 C 语言的基础知识和语法介绍，包括数据类型、控制语句、函数、指针等等。
+2. 解答 C 语言相关问题，例如编译错误、运行时错误、逻辑错误等等。
+3. 给出一些 C 语言编程的例子和实践，帮助初学者更好地理解和掌握 C 语言编程技巧。
+4. 推荐一些 C 语言编程的学习资源，例如书籍、网站、视频等等，帮助初学者更系统地学习 C 语言。
+5. 提供一些常用的 C 语言开发工具和环境的介绍，例如 IDE、编辑器、调试器等等，帮助初学者更高效地开发 C 语言程序。
 
 总之，我可以根据初学者的需求和问题，提供相应的帮助和支持，帮助他们更好地学习和掌握 C 语言编程技能。
 
-**既然 ****ChatGPT**** **给了 5 点回复，后面我会根据这 5 点回复，来给大家演示，如何利用 ChatGPT 来帮助学习 C 语言。
+**既然 ChatGPT 给了 5 点回复，后面我会根据这 5 点回复，来给大家演示，如何利用 ChatGPT 来帮助学习 C 语言。**
 
 我今天用 ChatGPT 帮我做了个贪吃蛇小游戏，感觉还是挺好玩的。
 
 我把代码贴出来，仅供大家参考：
 
-```
+```c
 // 我的问题是：假如你是一名初级C语言开发，帮我做个贪吃蛇，要求代码有注释。
-#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;conio.h&gt;
-#include &lt;windows.h&gt;
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <windows.h>
 
 #define width 20
 #define height 20
@@ -162,52 +155,52 @@ void Setup()
 
 void Draw()
 {
-    system(&quot;cls&quot;);
+    system("cls");
 
     // 绘制上边界
-    for (int i = 0; i &lt; width+2; i++)
-        printf(&quot;#&quot;);
-    printf(&quot;\n&quot;);
+    for (int i = 0; i < width+2; i++)
+        printf("#");
+    printf("\n");
 
     // 绘制每一行
-    for (int i = 0; i &lt; height; i++)
+    for (int i = 0; i < height; i++)
     {
-        for (int j = 0; j &lt; width; j++)
+        for (int j = 0; j < width; j++)
         {
             if (j == 0)
-                printf(&quot;#&quot;);
+                printf("#");
 
-            if (i == y &amp;&amp; j == x)
-                printf(&quot;O&quot;);
-            else if (i == fruit_y &amp;&amp; j == fruit_x)
-                printf(&quot;F&quot;);
+            if (i == y && j == x)
+                printf("O");
+            else if (i == fruit_y && j == fruit_x)
+                printf("F");
             else
             {
                 int print_tail = 0;
-                for (int k = 0; k &lt; ntail; k++)
+                for (int k = 0; k < ntail; k++)
                 {
-                    if (tail_x[k] == j &amp;&amp; tail_y[k] == i)
+                    if (tail_x[k] == j && tail_y[k] == i)
                     {
-                        printf(&quot;o&quot;);
+                        printf("o");
                         print_tail = 1;
                     }
                 }
                 if (!print_tail)
-                    printf(&quot; &quot;);
+                    printf(" ");
             }
 
             if (j == width-1)
-                printf(&quot;#&quot;);
+                printf("#");
         }
-        printf(&quot;\n&quot;);
+        printf("\n");
     }
 
     // 绘制下边界
-    for (int i = 0; i &lt; width+2; i++)
-        printf(&quot;#&quot;);
-    printf(&quot;\n&quot;);
+    for (int i = 0; i < width+2; i++)
+        printf("#");
+    printf("\n");
 
-    printf(&quot;Score: %d\n&quot;, score);
+    printf("Score: %d\n", score);
 }
 
 void Input()
@@ -216,19 +209,19 @@ void Input()
     {
         switch (_getch())
         {
-        case &#x27;a&#x27;:
+        case 'a':
             dir = LEFT;
             break;
-        case &#x27;d&#x27;:
+        case 'd':
             dir = RIGHT;
             break;
-        case &#x27;w&#x27;:
+        case 'w':
             dir = UP;
             break;
-        case &#x27;s&#x27;:
+        case 's':
             dir = DOWN;
             break;
-        case &#x27;x&#x27;:
+        case 'x':
             gameover = 1;
             break;
         }
@@ -242,7 +235,7 @@ void Logic()
     int prev_tail2_x, prev_tail2_y;
     tail_x[0] = x;
     tail_y[0] = y;
-    for (int i = 1; i &lt; ntail; i++)
+    for (int i = 1; i < ntail; i++)
     {
         prev_tail2_x = tail_x[i];
         prev_tail2_y = tail_y[i];
@@ -270,16 +263,16 @@ void Logic()
     }
 
     // 判断贪吃蛇是否撞到边界或自身
-    if (x &lt; 0 || x &gt;= width || y &lt; 0 || y &gt;= height)
+    if (x < 0 || x >= width || y < 0 || y >= height)
         gameover = 1;
-    for (int i = 0; i &lt; ntail; i++)
+    for (int i = 0; i < ntail; i++)
     {
-        if (tail_x[i] == x &amp;&amp; tail_y[i] == y)
+        if (tail_x[i] == x && tail_y[i] == y)
             gameover = 1;
     }
 
     // 如果吃到了水果，增加分数和贪吃蛇的长度
-    if (x == fruit_x &amp;&amp; y == fruit_y)
+    if (x == fruit_x && y == fruit_y)
     {
         score += 10;
         fruit_x = rand() % width;
@@ -300,14 +293,14 @@ int main()
         Sleep(50);
     }
 
-    printf(&quot;Game Over!\n&quot;);
-    printf(&quot;Your Score: %d\n&quot;, score);
+    printf("Game Over!\n");
+    printf("Your Score: %d\n", score);
 
     return 0;
 }
 ```
 
-# ChatGPT 辅助编程 | 专栏 4 C 语言纠错
+## ChatGPT 辅助编程 | 专栏 4 C 语言纠错
 
 纠错是很多人关心的问题，因为对于初学者来说，最大的问题是非常基础的问题，实在找不到答案，问老师吧，又不敢，觉得自己的问题太 low。
 
@@ -319,30 +312,28 @@ int main()
 
 我：请帮我检查一下，这个 C 语言代码哪里出错了，为什么编译不成功？
 
-```
-
-#include &lt;stdio.h&gt;  
+```c
+#include <stdio.h>  
 int main()
 {
-        printf(&quot;hello 我&quot;) 
+        printf("hello 我") 
 }
 ```
 
-ChatGPT ：你的代码缺少了结束符号，应该加上分号"；".
+ChatGPT：你的代码缺少了结束符号，应该加上分号"；"。
 
 以下是修改后的代码：
 
-```
-
-#include &lt;stdio.h&gt;  
+```c
+#include <stdio.h>  
 int main()
 {
-        printf(&quot;hello 我&quot;); 
+        printf("hello 我"); 
         return 0;
 }
 ```
 
-同时，在 main 函数中，最好添加一个 return 0；语句以明确表示程序正常结束。
+同时，在 `main` 函数中，最好添加一个 `return 0;` 语句以明确表示程序正常结束。
 
 上面这个案例是代码短，如果代码非常长，你去复制粘贴有点不现实，那应该怎么办呢？
 
@@ -352,15 +343,15 @@ int main()
 
 我：我在写 C 语言代码的过程中，遇到了这样的报错，是什么原因导致的呢？
 
-[Error] expected ';' before '}' token
+`[Error] expected ';' before '}' token`
 
-ChatGPT ：这个错误通常是由于缺少分号引起的，C 语言的语法比较严格，每个语句都必须以分号结尾。
+ChatGPT：这个错误通常是由于缺少分号引起的，C 语言的语法比较严格，每个语句都必须以分号结尾。
 
 解决方法是检查代码中是否有缺少分号的情况，特别是在函数定义、结构体定义、枚举定义等地方。另外，也要检查是否有多余的括号或者缺少括号的情况，这些也可能会导致类似的错误。
 
 以上，学废了嘛，学会可以点个赞呀～
 
-# ChatGPT 辅助编程 | 专栏 5 C 语言开发工具介绍
+## ChatGPT 辅助编程 | 专栏 5 C 语言开发工具介绍
 
 今天这篇来让 GPT 帮我介绍一些 C 语言开发工具。
 
@@ -370,15 +361,11 @@ GPT：推荐初学者使用 Dev-C++，它是一个免费、开源的 C/C++ 集�
 
 以下是一些 Dev-C++ 的特点：
 
-1、具有易于使用的图形用户界面，适合初学者使用。
-
-2、内置编译器，支持多种编译器，例如 MinGW 和 TDM-GCC。
-
-3、提供了一些有用的工具，例如调试器、代码补全、语法高亮等。
-
-4、支持多种文件格式，例如 。cpp、.h、.c 等。
-
-5、具有插件扩展功能，可以通过插件添加更多的功能。
+1. 具有易于使用的图形用户界面，适合初学者使用。
+2. 内置编译器，支持多种编译器，例如 MinGW 和 TDM-GCC。
+3. 提供了一些有用的工具，例如调试器、代码补全、语法高亮等。
+4. 支持多种文件格式，例如 `.cpp`、`.h`、`.c` 等。
+5. 具有插件扩展功能，可以通过插件添加更多的功能。
 
 总之，Dev-C++ 是一个不错的 C/C++ 开发工具，适合初学者使用，但是它已经有些年头了，开发者也已经停止更新和维护。
 
@@ -402,17 +389,14 @@ PS：也可以去👸号 C 语言入门到精通下载。
 
 GPT：以下是一些常用的 C 语言开发工具。
 
-1、 Visual Studio Code：一个免费的开源代码编辑器，支持 C 语言开发和调试。
+1. Visual Studio Code：一个免费的开源代码编辑器，支持 C 语言开发和调试。
+2. Code::Blocks：一个免费的跨平台 C/C++ IDE，支持多种编译器和调试器。
+3. Eclipse：一个开源的跨平台 IDE，支持多种编程语言，包括 C 语言。
+4. NetBeans：一个免费的跨平台 IDE，支持多种编程语言，包括 C 语言。
+5. Atom：一个免费的开源代码编辑器，支持 C 语言开发和调试。
+6. Sublime Text：一个免费的文本编辑器，支持 C 语言开发和调试。
 
-2、Code::Blocks：一个免费的跨平台 C/C++ IDE，支持多种编译器和调试器。
 
-3、Eclipse：一个开源的跨平台 IDE，支持多种编程语言，包括 C 语言。
-
-4、NetBeans：一个免费的跨平台 IDE，支持多种编程语言，包括 C 语言。
-
-5、Atom：一个免费的开源代码编辑器，支持 C 语言开发和调试。
-
-6、Sublime Text：一个免费的文本编辑器，支持 C 语言开发和调试。
 
 7、Turbo C++：一个免费的 Windows 平台 IDE，专门为 C/C++ 开发设计。
 
@@ -428,7 +412,7 @@ GPT：以下是一些常用的 C 语言开发工具。
 
 今天这篇来让 GPT 帮我推荐一些 C 语言书，看看它推荐的怎么样。
 
-**我：请给零基础的****人****推荐一本 C 语言书。**
+**我：请给零基础的人推荐一本 C 语言书。**
 
 GPT：如果您是零基础，我建议您阅读《C Primer Plus》。
 
@@ -438,11 +422,11 @@ GPT：如果您是零基础，我建议您阅读《C Primer Plus》。
 
 此外，这本书还包含了一些高级主题，如指针、内存管理和文件操作等，可以让您进一步深入学习 C 语言。
 
-**哈哈，****GPT** 推荐的这本还真不错，如果非要我推荐的话，第一也是推荐这本。
+**哈哈，GPT 推荐的这本还真不错**，如果非要我推荐的话，第一也是推荐这本。
 
 C Primer Plus 这本书不仅适合初学者，而且是可以当作工具书来收藏的，有入门就有进阶，继续追问。
 
-**我：请给需要 C 语言进阶的****人****推荐几本书。**
+**我：请给需要 C 语言进阶的人推荐几本书。**
 
 GPT：以下是几本适合 C 语言进阶学习的书籍：
 
@@ -554,4 +538,4 @@ GPT：作为语言模型，我没有直接体验过👸号 C 语言入门到精�
 
 总的来说，👸号 C 语言入门到精通的质量还是比较可靠的，但是读者在使用该👸号进行学习时，也需要根据自己的实际情况进行选择和补充，不能完全依赖于一个👸号。
 
-**哈哈，****GPT**** 这个****回答有点意**思，我确实断更 C++ 很久了。
+**哈哈，GPT 这个回答有点意思**，我确实断更 C++ 很久了。

@@ -1,3 +1,4 @@
+
 # AI产品经理知识库（互联网公开）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/YomgdXuStoVWCWxbyPMcqojnnIc](https://v11enp9ok1h.feishu.cn/docx/YomgdXuStoVWCWxbyPMcqojnnIc)
@@ -8,7 +9,7 @@
 
 <https://ae.feishu.cn/cui#appkey=a_1226d92ac4da468492e391033b01d4a0&config=eyJjb21tb24iOnsiY2hhbm5lbFR5cGUiOiJBTk9OWU1PVVNfQ1VJX1NESyIsInJlc291cmNlVHlwZSI6IkFJTFlfQ1VJX1NESyJ9LCJjb252ZXJzYXRpb24iOnsiaW5pdFVzZXJNZXNzYWdlIjoiJUU0JUJEJUEwJUU1JUE1JUJEIiwibmVlZFdlbGNvbWVNZXNzYWdlIjp0cnVlfX0%3D>
 
-# 🧭 快速导航
+## 🧭 快速导航
 
 [一站式LLM底层技术原理入门指南 ](https://v11enp9ok1h.feishu.cn/wiki/Af76wZbh4i4YvtkOkDvc56D2nZc?from=from_copylink)
 
@@ -16,21 +17,21 @@
 
 [人工智能基础](https://v11enp9ok1h.feishu.cn/wiki/WQ8lw2lMEiHjYSkXL2DcU2jYnFe?from=from_copylink)
 
-[智谱  AI技术文档](https://v11enp9ok1h.feishu.cn/wiki/QpWrw9QNEijBODkLkIScc2RLnVc)
+[智谱 AI技术文档](https://v11enp9ok1h.feishu.cn/wiki/QpWrw9QNEijBODkLkIScc2RLnVc)
 
 [1.0 LLM](https://v11enp9ok1h.feishu.cn/wiki/NMTIwXXvliZCNZkMa5Dc1gCDnwc?from=from_copylink)
 
 [1.1Transformer](https://v11enp9ok1h.feishu.cn/wiki/Bw9EwkAENilPDOkMxFAcUhTwnnh?from=from_copylink)
 
-[1.2  AI Agents (智能体)](https://v11enp9ok1h.feishu.cn/wiki/QY7WwsQDmicKbNkQFaac6vpEnbd?from=from_copylink)
+[1.2 AI Agents (智能体)](https://v11enp9ok1h.feishu.cn/wiki/QY7WwsQDmicKbNkQFaac6vpEnbd?from=from_copylink)
 
 [1.3 AI 数字人+语音合成 ](https://v11enp9ok1h.feishu.cn/wiki/UMqmwyTCYibgDDkUuOrcou3fnFG?from=from_copylink)
 
-[1.4  【RAG实践】](https://v11enp9ok1h.feishu.cn/wiki/LV0PwkBqNioeR4kK8QIcSkSJnCN?from=from_copylink)
+[1.4 【RAG实践】](https://v11enp9ok1h.feishu.cn/wiki/LV0PwkBqNioeR4kK8QIcSkSJnCN?from=from_copylink)
 
 [1.5【prompt】提示词工程](https://v11enp9ok1h.feishu.cn/wiki/NaaQwuOfIik5PDk7VBfcQ2XjnZc?from=from_copylink)
 
-[1.6  推荐系统【专栏】](https://v11enp9ok1h.feishu.cn/wiki/XjmewOFb4ilBtekU5uBcP6ulnHe?from=from_copylink)
+[1.6 推荐系统【专栏】](https://v11enp9ok1h.feishu.cn/wiki/XjmewOFb4ilBtekU5uBcP6ulnHe?from=from_copylink)
 
 [1.7智能客服专栏](https://v11enp9ok1h.feishu.cn/wiki/Q9dIwhqrJi2ZPXkZ1iVcvfdJndg?from=from_copylink)
 
@@ -84,7 +85,7 @@
 
 ## 资料合集
 
-多维表格（Sq5XbcFBvawNvSsUnifc6fyXnmh_tblp0JqUrBT49wLk）
+多维表格（`Sq5XbcFBvawNvSsUnifc6fyXnmh_tblp0JqUrBT49wLk`）
 
 ## ☎️ AI行业报告 ｜产业图谱 ｜产品架构图 （2024年最新）
 

@@ -1,3 +1,4 @@
+
 # Claude Code开始失忆了？两大记忆神器帮你选
 
 > 来源：[https://my.feishu.cn/docx/Hj40dBjzNoNXNGx0uTHcmttCnod](https://my.feishu.cn/docx/Hj40dBjzNoNXNGx0uTHcmttCnod)
@@ -8,7 +9,7 @@
 
 但有个烦人的问题让老金我每天都想骂街——
 
-**这货每次开新会话都失忆。**
+`claude-mem`每次开新会话都失忆。
 
 你昨天跟它聊了三小时，把项目架构、代码规范、踩过的坑全讲清楚了。
 
@@ -20,7 +21,7 @@
 
 老金我用Claude Code半年了，每次开新会话都要重复一遍项目背景。
 
-直到发现了这个神器——**claude-mem**。
+直到发现了这个神器——`claude-mem`。
 
 Github：https://github.com/thedotmack/claude-mem
 
@@ -28,7 +29,7 @@ Github：https://github.com/thedotmack/claude-mem
 
 ## 30秒速读版（急着走的看这里）
 
-**核心结论**：Claude Code失忆问题有两个主流解决方案——claude-mem 和 mcp-memory-service。
+**核心结论**：Claude Code失忆问题有两个主流解决方案——`claude-mem` 和 `mcp-memory-service`。
 
 **谁该关注**：
 
@@ -40,23 +41,21 @@ Github：https://github.com/thedotmack/claude-mem
 
 **两个方案怎么选**：
 
-+   **claude-mem**：专门为Claude Code设计，两行命令装完就用，简单省事
++   `claude-mem`：专门为Claude Code设计，两行命令装完就用，简单省事
 
-+   mcp-memory-service：通用MCP服务，支持13+个AI客户端，扩展性更强
++   `mcp-memory-service`：通用MCP服务，支持13+个AI客户端，扩展性更强
 
 **老金建议**：
 
-只用Claude Code → 选claude-mem（本篇教你装）；
+只用Claude Code → 选`claude-mem`（本篇教你装）；
 
-想跨多个AI工具用 → 选mcp-memory-service（下一篇详细讲）
-
----
+想跨多个AI工具用 → 选`mcp-memory-service`（下一篇详细讲）
 
 **以下是详细介绍（有时间再看）**
 
-## 方案一：claude-mem（轻量级选手）
+## 方案一：`claude-mem`（轻量级选手）
 
-### claude-mem是什么？
+### `claude-mem`是什么？
 
 简单说，它是给Claude Code装的"记忆芯片"。
 
@@ -64,15 +63,13 @@ Github：https://github.com/thedotmack/claude-mem
 
 有了它，Claude Code就像一头大象，永远记得你跟它说过什么。
 
-**技术上讲，clau**de-mem是一个持久化记忆压缩系统。
+技术上讲，`claude-mem`是一个持久化记忆压缩系统。
 
 它会自动捕获你和Claude Code的对话，提取关键信息，存到本地数据库里。
 
 下次开新会话，它自动把相关记忆注入进去。
 
 你不用做任何事情，它全自动工作。
-
----
 
 ## 怎么安装？
 
@@ -87,8 +84,8 @@ npm install -g pm2
 **两行命令搞定**：
 
 ```
-/plugin marketplace add thedotmack/claude-mem
-/plugin install claude-mem
+`/plugin marketplace add thedotmack/claude-mem`
+`/plugin install claude-mem`
 ```
 
 没了。
@@ -144,13 +141,11 @@ npm install -g pm2
 ~/.claude-mem/ = C:\Users\admin\.claude-mem\
 ```
 
----
-
 ## 核心功能
 
 ### 1. 自动记忆捕获
 
-每次你和Claude Code对话，claude-mem都在后台默默记录。
+每次你和Claude Code对话，`claude-mem`都在后台默默记录。
 
 它不是傻乎乎地全部存下来。
 
@@ -168,13 +163,13 @@ npm install -g pm2
 
 这是最牛的功能。
 
-你今天开新会话，claude-mem会自动把相关记忆注入进去。
+你今天开新会话，`claude-mem`会自动把相关记忆注入进去。
 
 Claude Code一开口就知道你的项目是什么、用什么技术栈、有哪些坑。
 
 不用你再重复介绍一遍。
 
-### 3. mem-search语义搜索
+### 3. `mem-search`语义搜索
 
 这个功能老金我用得特别爽。
 
@@ -190,9 +185,9 @@ mem-search: 我之前怎么解决那个数据库连接超时的问题？
 
 ### 4. Web界面查看器
 
-claude-mem还提供了一个网页界面。
+`claude-mem`还提供了一个网页界面。
 
-安装后访问 http://localhost:37777，你就能看到所有记忆。
+安装后访问 `http://localhost:37777`，你就能看到所有记忆。
 
 可以搜索、删除、编辑。
 
@@ -206,11 +201,9 @@ claude-mem还提供了一个网页界面。
 
 ![](img/0b0f593656b898b9c8aa26c47c8e0a7f.png)
 
----
-
 ## 技术架构（给程序员看的）
 
-claude-mem的架构设计挺优雅的。
+`claude-mem`的架构设计挺优雅的。
 
 它用了5个生命周期Hook，自动在会话开始时注入记忆。
 
@@ -224,25 +217,21 @@ claude-mem的架构设计挺优雅的。
 
 隐私完全可控。
 
----
-
 ## 和其他方案对比
 
-有人可能会问：CLAUDE.md不也能让AI记住项目信息吗？
+有人可能会问：`CLAUDE.md`不也能让AI记住项目信息吗？
 
 能，但不一样。
 
-**CLAUDE.md**：你手动写的静态文档，AI每次都会读。
+`CLAUDE.md`：你手动写的静态文档，AI每次都会读。
 
-**claude-mem**：自动捕获的动态记忆，根据上下文智能注入。
+`claude-mem`：自动捕获的动态记忆，根据上下文智能注入。
 
-CLAUDE.md适合写项目架构、代码规范这些不怎么变的东西。
+`CLAUDE.md`适合写项目架构、代码规范这些不怎么变的东西。
 
-claude-mem适合记录你的对话历史、踩过的坑、解决过的问题。
+`claude-mem`适合记录你的对话历史、踩过的坑、解决过的问题。
 
 两个搭配使用，效果最好。
-
----
 
 ## 使用建议
 
@@ -274,8 +263,6 @@ claude-mem适合记录你的对话历史、踩过的坑、解决过的问题。
 
 可以去Web界面删掉相关记忆。
 
----
-
 ## 最后说两句
 
 Claude Code是老金我用过最好的AI编程助手。
@@ -284,21 +271,19 @@ Claude Code是老金我用过最好的AI编程助手。
 
 今天介绍了两个解决方案：
 
-+   **claude-mem**：专为Claude Code设计，两行命令就能用
++   `claude-mem`：专为Claude Code设计，两行命令就能用
 
-+   mcp-memory-service：通用方案，支持13+个AI客户端
++   `mcp-memory-service`：通用方案，支持13+个AI客户端
 
-只用Claude Code的同学，装claude-mem就够了。
+只用Claude Code的同学，装`claude-mem`就够了。
 
 想要更强扩展性的同学，等我下一篇。
 
----
-
 ## 下一篇预告
 
-《mcp-memory-service完整安装教程》
+《`mcp-memory-service`完整安装教程》
 
-这个工具比claude-mem复杂一点，但功能强太多了。
+这个工具比`claude-mem`复杂一点，但功能强太多了。
 
 想看下一篇的，点个"在看"让我知道！
 
@@ -315,6 +300,6 @@ Claude Code是老金我用过最好的AI编程助手。
 
 ---
 
-**觉得有用？点个"在看"，下一篇我**讲mcp-memory-service！
+**我觉得有用？点个"在看"，下一篇我**讲`mcp-memory-service`！
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

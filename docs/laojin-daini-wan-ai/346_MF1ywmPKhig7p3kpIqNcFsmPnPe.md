@@ -1,3 +1,4 @@
+
 # Git 安装 - 拉取GIT项目必备
 
 > 来源：[https://my.feishu.cn/docx/WdvFdtomkoIsOHxZBCgc0xgPnJg](https://my.feishu.cn/docx/WdvFdtomkoIsOHxZBCgc0xgPnJg)
@@ -18,7 +19,7 @@
 
 ![](img/5a0db77ed857877f0fafe11c4eeaaa7c.png)
 
-如果不确认是否安装，可以使用win+R输入cmd
+如果不确认是否安装，可以使用win+R输入`cmd`
 
 ![](img/eb1d62a803f2ef3caa6072e6212ee90c.png)
 

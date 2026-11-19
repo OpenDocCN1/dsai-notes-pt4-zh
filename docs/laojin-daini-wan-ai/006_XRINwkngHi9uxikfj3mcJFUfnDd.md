@@ -1,8 +1,7 @@
+
 # Claude Code 完整安装指南：从零开始到成功运行
 
 > 来源：[https://my.feishu.cn/docx/AbGOd7y3bo3McOxX1DUcXc1dnDc](https://my.feishu.cn/docx/AbGOd7y3bo3McOxX1DUcXc1dnDc)
-
-# Claude Code 完整安装指南：从零开始到成功运行
 
 > **课程信息**
 
@@ -24,7 +23,7 @@
 
 1.  理解Claude Code的核心价值：掌握Claude Code与传统AI编程工具的本质区别
 
-1.  **了解原生安装优势**：为什么官方废弃了npm，改用原生安装器
+1.  **了解原生安装优势**：为什么官方废弃了`npm`，改用原生安装器
 
 1.  **配置Anthropic服务**：获取并正确配置API密钥
 
@@ -36,13 +35,13 @@
 
 1.  **掌握故障排查技能**：独立解决90%的常见安装问题
 
-1.  **了解从npm迁移**：如果你之前用npm安装过，如何迁移到原生版本
+1.  **了解从`npm`迁移**：如果你之前用`npm`安装过，如何迁移到原生版本
 
 ---
 
 ## 🗺️ 学习路径导航（先看这里！）
 
-> 💡 根**据你的情况选择学习路径：**这是一篇3000+行的长教程，不用全看！根据你的目标选择路径。
+> 💡 根据你的情况选择学习路径：这是一篇3000+行的长教程，不用全看！根据你的目标选择路径。
 
 ### 路径A：快速上手（⏱️ 30分钟）
 
@@ -104,32 +103,49 @@
 **适合人群**：已经装好Claude Code，想学习某个特定功能
 
 | 想学什么 | 看哪几节 | 预计时间 |
+
 | --- | --- | --- |
+
 | **IDE集成** | 第6部分 | 30分钟 |
+
 | **权限配置** | 第6.5节（危险参数）+ 第7.3节 | 20分钟 |
+
 | **从npm迁移** | 附录：迁移指南 | 15分钟 |
 
 ---
 
 ## 术语表（小白必读）
 
-> ⚠️ **2026年重要更新****：Claude Code已切换**到原生安装，不再需要Node.js和npm！下表中带⚠️的术语仅为历史参考。
+> ⚠️ **2026年重要更新：Claude Code已切换**到原生安装，不再需要Node.js和`npm`！下表中带⚠️的术语仅为历史参考。
 
 在开始之前，先了解这些关键术语：
 
 | 术语 | 英文全称 | 通俗解释 |
+
 | --- | --- | --- |
+
 | **CLI** | Command Line Interface | 命令行界面，就是那个黑色/白色的文字输入窗口，通过打字来操作电脑 |
+
 | **原生安装器** ⭐ | Native Installer | Claude Code官方提供的独立安装程序，不需要其他依赖 |
+
 | **Node.js** ⚠️ | - | JavaScript运行环境（旧版本需要，新版原生安装不需要了） |
-| **npm** ⚠️ | Node Package Manager | Node.js的包管理器（已废弃，官方不再推荐此安装方式） |
+
+| `npm` ⚠️ | Node Package Manager | Node.js的包管理器（已废弃，官方不再推荐此安装方式） |
+
 | **LTS** | Long Term Support | 长期支持版本，稳定、bug少、官方持续维护，适合正式使用 |
-| **API** | Application Programming Interface | 应用程序接口，软件之间&quot;对话&quot;的方式 |
-| **API Key** | - | API密钥，类似&quot;通行证&quot;，证明你有权使用某个服务 |
+
+| **API** | Application Programming Interface | 应用程序接口，软件之间"对话"的方式 |
+
+| **API Key** | - | API密钥，类似"通行证"，证明你有权使用某个服务 |
+
 | **Token** | - | 计费单位，AI处理文字的最小单元，约等于0.75个英文单词或1-2个汉字 |
+
 | **环境变量** | Environment Variable | 操作系统级别的配置项，程序可以读取但不会写在代码里 |
-| **PATH** | - | 系统环境变量之一，告诉电脑去哪里找可执行程序 |
+
+| `PATH` | - | 系统环境变量之一，告诉电脑去哪里找可执行程序 |
+
 | **终端/Terminal** | - | 运行命令行的程序窗口 |
+
 | **全局安装** | Global Install | 安装后在电脑任何位置都能使用的安装方式 |
 
 ---
@@ -138,7 +154,7 @@
 
 ### 1.1 什么是 Claude Code
 
-**Claude Co**de 是 Anthropic 公司开发的命令行AI编程助手。与传统代码编辑器插件不同，它是一个独立运行的CLI工具，通过终端与开发者交互。
+Claude Code 是 Anthropic 公司开发的命令行AI编程助手。与传统代码编辑器插件不同，它是一个独立运行的CLI工具，通过终端与开发者交互。
 
 **核心特征：**
 
@@ -152,7 +168,7 @@
 
 **简单理解：**
 
-把**Claude Code想**象成一个24小时在线的高级程序员。你用中文或英文告诉他需求，他能帮你写代码、改bug、搜资料、运行测试。最大特点是通过命令行工作，可以直接操作你的代码文件、运行系统命令，完全脚本化和自动化。
+把Claude Code想象成一个24小时在线的高级程序员。你用中文或英文告诉他需求，他能帮你写代码、改bug、搜资料、运行测试。最大特点是通过命令行工作，可以直接操作你的代码文件、运行系统命令，完全脚本化和自动化。
 
 ### 1.2 核心优势：为什么值得学习
 
@@ -197,14 +213,23 @@ Claude Code：
 CLI工具 vs IDE集成工具对比：
 
 | 对比项 | Claude Code（CLI） | Cursor（IDE集成） |
+
 | --- | --- | --- |
+
 | **运行方式** | 命令行独立运行 | VS Code编辑器内置 |
+
 | **文件操作** | ✅ 直接读写 | ✅ 直接读写 |
+
 | **项目理解** | ✅ 全项目上下文 | ✅ 全项目上下文 |
+
 | **脚本自动化** | ✅ 完美支持 | ⚠️ 有限 |
+
 | **CI/CD集成** | ✅ 原生支持 | ❌ 困难 |
+
 | **远程服务器** | ✅ 完美支持 | ❌ 需要图形界面 |
+
 | **隐私性** | ✅ 本地优先 | ⚠️ 云端处理 |
+
 | **学习曲线** | 中等（需要CLI基础） | 低（图形界面） |
 
 **推荐使用场景：**
@@ -260,31 +285,40 @@ CLI工具 vs IDE集成工具对比：
 在开始安装前,请确认以下内容已完成:
 
 | 检查项 | 状态 | 如果未完成 |
+
 | --- | --- | --- |
+
 | **操作系统兼容** |  | Windows 10+ / macOS 10.15+ / Linux |
-| ANTHROPIC_API_KEY |  | 中转站或官网获取(见第三部分) |
+
+| `ANTHROPIC_API_KEY` |  | 中转站或官网获取(见第三部分) |
+
 | **终端可用** |  | macOS用终端，Windows用PowerShell |
+
 | **网络连接** |  | 国内用户需代理(见附录) |
 
 如果所有项都已完成,让我们开始吧!
 
-> 💡 老**金提示：**相比旧版本，你现在省去了安装Node.js的40分钟！原生安装器自带所有依赖，一条命令搞定！
+> 💡 老金提示：相比旧版本，你现在省去了安装Node.js的40分钟！原生安装器自带所有依赖，一条命令搞定！
 
 ---
 
 ## 第二部分：系统要求快速检查
 
-> 💡 本**节目的：**快速确认你的电脑能不能运行Claude Code，3分钟搞定！
+> 💡 本节目的：快速确认你的电脑能不能运行Claude Code，3分钟搞定！
 
 ### 2.1 快速检查清单（核心3项）
 
 在开始安装前，确认以下3项**核心要求**：
 
 | 检查项 | 最低要求 | 如何检查 | 不符合怎么办 |
+
 | --- | --- | --- | --- |
+
 | **操作系统** | Windows 10 / macOS 10.15+ / Linux | 查看系统版本 | 升级系统或换电脑 |
-| **内存** | 4GB RAM | 右键&quot;此电脑&quot;→属性 | 不足4GB无法运行 |
-| **网络** | 能访问外网 | 打开 google.com 试试 | 国内用户需要配置代理（见附录B） |
+
+| **内存** | 4GB RAM | 右键"此电脑"→属性 | 不足4GB无法运行 |
+
+| **网络** | 能访问外网 | 打开 `google.com` 试试 | 国内用户需要配置代理（见附录B） |
 
 **快速验证命令：**
 
@@ -310,9 +344,13 @@ ping api.anthropic.com
 **操作系统详细兼容性：**
 
 | 操作系统 | 最低版本 | 推荐版本 | 说明 |
+
 | --- | --- | --- | --- |
+
 | Windows | Windows 10 | Windows 11 | 64位系统 |
+
 | macOS | 10.15 Catalina | macOS 13+ | Intel/Apple Silicon都支持 |
+
 | Linux | 内核3.10+ | 5.x+ | Ubuntu/Debian/Fedora等主流发行版 |
 
 **硬件推荐（非强制）：**
@@ -323,7 +361,7 @@ ping api.anthropic.com
 
 +   **存储**：SSD更快（机械硬盘也行）
 
-> 💡 老**金建议：**别被这些要求吓到！只要你电脑能正常开发写代码，就肯定能跑Claude Code。这些是"推荐配置"不是"必需配置"。
+> 💡 老金建议：别被这些要求吓到！只要你电脑能正常开发写代码，就肯定能跑Claude Code。这些是"推荐配置"不是"必需配置"。
 
 > **详细性能对比和配置建议** → 见附录A
 
@@ -331,9 +369,9 @@ ping api.anthropic.com
 
 ## 第三部分：原生安装说明（⭐ 重要更新）
 
-> 💡 2**026年重大变化：****Claud**e Code已切换到原生安装器！
+> 💡 **2026年重大变化：Claude Code已切换到原生安装器！**
 
-> **好消息**：你**不再需要安装Node.js**了！官方从npm安装迁移到原生安装，安装过程从40分钟缩短到5分钟！
+> **好消息**：你**不再需要安装Node.js**了！官方从`npm`安装迁移到原生安装，安装过程从40分钟缩短到5分钟！
 
 > ⏱️ **预计时间**：5分钟完成安装
 
@@ -343,17 +381,24 @@ ping api.anthropic.com
 
 2025年10月31日，Anthropic官方在社交媒体宣布：
 
-> **"Claude Co**de的原生安装器现已正式发布。它更简单、更稳定，不需要Node.js。我们建议所有Claude Code用户今后都使用这种默认安装方式。"
+> **"Claude Code的原生安装器现已正式发布。它更简单、更稳定，不需要Node.js。我们建议所有Claude Code用户今后都使用这种默认安装方式。**"
 
 原生安装 vs npm安装对比：
 
 | 对比项 | 原生安装 ⭐ | npm安装（已废弃） |
+
 | --- | --- | --- |
+
 | 需要Node.js | ❌ 不需要 | ✅ 必须安装 |
+
 | 安装时间 | ⏱️ 5分钟 | ⏱️ 40分钟 |
+
 | 自动更新 | ✅ 后台自动 | ❌ 需手动运行 |
+
 | PATH配置 | ✅ 自动完成 | ⚠️ 经常出错 |
+
 | 跨平台支持 | ✅ 完美 | ⚠️ 平台差异大 |
+
 | 稳定性 | ✅ 生产级 | ⚠️ 依赖环境 |
 
 **简单理解：**
@@ -377,9 +422,12 @@ ping api.anthropic.com
 **安装到哪？**
 
 | 操作系统 | 安装位置 |
+
 | --- | --- |
-| Windows | C:\Users\你的用户名\.local\bin\ |
-| macOS/Linux | ~/.local/bin/claude |
+
+| Windows | `C:\Users\你的用户名\.local\bin\` |
+
+| macOS/Linux | `~/.local/bin/claude` |
 
 ### 3.3 自动更新机制
 
@@ -398,13 +446,13 @@ ping api.anthropic.com
 export CLAUDE_AUTO_UPDATE=false
 ```
 
-> 💡 老**金建议：**大多数人保持默认开启就好，自动更新让你始终使用最新最安全的版本。
+> 💡 老金建议：大多数人保持默认开启就好，自动更新让你始终使用最新最安全的版本。
 
 ### 3.4 如果你之前用npm安装过？
 
 **别担心！官方提供了迁移命令。**
 
-如果你之前通过 npm install -g @anthropic-ai/claude-code 安装过，运行：
+如果你之前通过 `npm install -g @anthropic-ai/claude-code` 安装过，运行：
 
 ```
 claude install
@@ -444,7 +492,7 @@ claude install
 
 +   先办好SIM卡，手机到手插卡就能用！
 
-> **💡 选择提示：**可选择使用中**转站（**更便宜、更稳定），或官方账号。
+> **💡 选择提示：**可选择使用中转站（更便宜、更稳定），或官方账号。
 
 +   **中转站优势**：价格低（约官方1/3-1/2）、无需🪜、支付方便
 
@@ -484,158 +532,160 @@ claude install
 
 +   如果未收到，可选择语音验证
 
-> **注意**：国内手机号注册成功率约80%。如果多次失败，可尝试使用Google Voice虚拟号码、香港/台湾号码，或联系Anthropic支持。
 
-### 4.2 API Key 获取步骤
 
-**什么是API Key？**
+> **注意**：国内手机号注册成功率约80%。如果多次失败，可尝试使用`Google Voice`虚拟号码、香港/台湾号码，或联系`Anthropic`支持。
 
-API Key是一串密钥，作用类似密码，用于：
+## 4.2 API Key 获取步骤
 
-+   证明你有权使用Claude AI服务
+### 什么是 API Key？
 
-+   追踪API调用次数（计费依据）
+`API Key`是一串密钥，作用类似密码，用于：
 
-+   控制访问权限
++ 证明你有权使用`Claude AI`服务
 
-**格式示例：**
++ 追踪`API`调用次数（计费依据）
+
++ 控制访问权限
+
+### 格式示例：
 
 ```
 sk-ant-api03-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-**获取步骤：**
+### 获取步骤：
 
-1.  **进入API Keys页面**
+1. **进入`API Keys`页面**
 
-1.  登录后点击左侧菜单：Settings → API Keys
+1. 登录后点击左侧菜单：`Settings` → `API Keys`
 
-1.  或直接访问：https://console.anthropic.com/settings/keys
+1. 或直接访问：`https://console.anthropic.com/settings/keys`
 
-1.  **创建新Key**
+1. **创建新`Key`**
 
-1.  点击"Create Key"按钮，填写：
+1. 点击`"Create Key"`按钮，填写：
 
-+   Key名称：例如"claude-code-laptop"（方便区分多个key）
++ `Key`名称：例如`"claude-code-laptop"`（方便区分多个`key`）
 
-+   权限：选择"Full Access"（完全访问）
++ 权限：选择`"Full Access"`（完全访问）
 
-1.  **复制并保存Key**
+1. **复制并保存`Key`**
 
-1.  ⚠️ **关键警告**：
+⚠️ **关键警告**：
 
-+   Key只显示一次！关闭窗口后无法再看到
++ `Key`只显示一次！关闭窗口后无法再看到
 
-+   必须立即复制并保存到安全位置
++ 必须立即复制并保存到安全位置
 
-+   不要分享给任何人
++ 不要分享给任何人
 
-1.  **保存方法**：
+### 保存方法：
 
-1.  创建文本文件 anthropic-key.txt
+1. 创建文本文件`anthropic-key.txt`
 
-1.  粘贴完整key
+1. 粘贴完整`key`
 
-1.  保存到电脑安全位置（如Documents文件夹）
+1. 保存到电脑安全位置（如`Documents`文件夹）
 
-1.  **验证Key有效性**
+### 验证`Key`有效性
 
 ```
 # macOS/Linux
 curl https://api.anthropic.com/v1/messages \
-  -H &quot;x-api-key: 你的API_KEY&quot; \
-  -H &quot;anthropic-version: 2023-06-01&quot; \
-  -H &quot;content-type: application/json&quot; \
-  -d &#x27;{
-    &quot;model&quot;: &quot;claude-sonnet-4-6&quot;,
-    &quot;max_tokens&quot;: 1024,
-    &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello&quot;}]
-  }&#x27;
+  -H "x-api-key: 你的API_KEY" \
+  -H "anthropic-version: 2023-06-01" \
+  -H "content-type: application/json" \
+  -d '{
+    "model": "claude-sonnet-4-6",
+    "max_tokens": 1024,
+    "messages": [{"role": "user", "content": "Hello"}]
+  }'
 
-# 如果返回JSON响应(而不是错误),说明Key有效
+# 如果返回JSON响应（而不是错误），说明`Key`有效
 ```
 
-1.  Windows PowerShell测试：
+### Windows PowerShell测试：
 
 ```
 $headers = @{
-    &quot;x-api-key&quot; = &quot;你的API_KEY&quot;
-    &quot;anthropic-version&quot; = &quot;2023-06-01&quot;
-    &quot;content-type&quot; = &quot;application/json&quot;
+    "x-api-key" = "你的API_KEY"
+    "anthropic-version" = "2023-06-01"
+    "content-type" = "application/json"
 }
-$body = &#x27;{&quot;model&quot;:&quot;claude-sonnet-4-6&quot;,&quot;max_tokens&quot;:1024,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;Hello&quot;}]}&#x27;
-Invoke-RestMethod -Uri &quot;https://api.anthropic.com/v1/messages&quot; -Method POST -Headers $headers -Body $body
+$body = '{"model":"claude-sonnet-4-6","max_tokens":1024,"messages":[{"role":"user","content":"Hello"}]}'
+Invoke-RestMethod -Uri "https://api.anthropic.com/v1/messages" -Method POST -Headers $headers -Body $body
 ```
 
-### 4.3 环境变量配置
+## 4.3 环境变量配置
 
-**什么是环境变量？**
+### 什么是环境变量？
 
-环境变量是操作系统级别的配置，让程序可以读取敏感信息（如API Key），而不需要写在代码里。
+环境变量是操作系统级别的配置，让程序可以读取敏感信息（如`API Key`），而不需要写在代码里。
 
-**好处：**
+### 好处：
 
-+   ✅ 安全：不会意外提交到GitHub
++ ✅ 安全：不会意外提交到`GitHub`
 
-+   ✅ 灵活：不同电脑可用不同Key
++ ✅ 灵活：不同电脑可用不同`Key`
 
-+   ✅ 标准：所有开发工具都支持
++ ✅ 标准：所有开发工具都支持
 
-#### Windows配置方法
+### Windows配置方法
 
-推荐方法：PowerShell 7（最佳选择）
+推荐方法：`PowerShell 7`（最佳选择）
 
 ```
 # 永久添加用户环境变量（PowerShell 7）
-[System.Environment]::SetEnvironmentVariable(&#x27;ANTHROPIC_API_KEY&#x27;, &#x27;sk-ant-api03-你的key&#x27;, &#x27;User&#x27;)
+[System.Environment]::SetEnvironmentVariable('ANTHROPIC_API_KEY', 'sk-ant-api03-你的key', 'User')
 
 # 验证配置
 $env:ANTHROPIC_API_KEY
 
-# 重启PowerShell后生效
+# 重启`PowerShell`后生效
 ```
 
-**临时配置（仅当前终端有效）：**
+### 临时配置（仅当前终端有效）：
 
 ```
-# PowerShell（包括PowerShell 5和7）
-$env:ANTHROPIC_API_KEY=&quot;sk-ant-api03-你的key&quot;
+# `PowerShell`（包括`PowerShell 5`和`7`）
+$env:ANTHROPIC_API_KEY="sk-ant-api03-你的key";
 
-# CMD（不推荐，功能有限）
+# `CMD`（不推荐，功能有限）
 set ANTHROPIC_API_KEY=sk-ant-api03-你的key
 ```
 
-**永久配置方法2：通过图形界面**
+### 永久配置方法2：通过图形界面
 
-1.  右键"此电脑" → 属性
+1. 右键`"此电脑"` → 属性
 
-1.  点击"高级系统设置"
+1. 点击`"高级系统设置"`
 
-1.  点击"环境变量"
+1. 点击`"环境变量"`
 
-1.  在"用户变量"区域点击"新建"
+1. 在`"用户变量"`区域点击`"新建"`
 
-1.  变量名：ANTHROPIC_API_KEY
+1. 变量名：`ANTHROPIC_API_KEY`
 
-1.  变量值：sk-ant-api03-你的完整key
+1. 变量值：`sk-ant-api03-你的完整key`
 
-1.  点击"确定"保存
+1. 点击`"确定"`保存
 
-1.  **重启所有终端窗口**
+1. **重启所有终端窗口**
 
-> **提示**：图形界面方法适合不熟悉命令行的用户，但PowerShell 7方法更快捷。
+> **提示**：图形界面方法适合不熟悉命令行的用户，但`PowerShell 7`方法更快捷。
 
-#### macOS/Linux配置方法
+### macOS/Linux配置方法
 
 ```
-# 确定使用的Shell
+# 确定使用的`Shell`
 echo $SHELL
 
-# 如果是bash,编辑~/.bashrc
-# 如果是zsh(macOS默认),编辑~/.zshrc
+# 如果是`bash`,编辑`~/.bashrc`
+# 如果是`zsh`(`macOS`默认),编辑`~/.zshrc`
 
-# 添加以下行（替换为真实Key）
-export ANTHROPIC_API_KEY=&quot;sk-ant-api03-你的key&quot;
+# 添加以下行（替换为真实`Key`）
+export ANTHROPIC_API_KEY="sk-ant-api03-你的key";
 
 # 保存后重新加载
 source ~/.zshrc  # 或 source ~/.bashrc
@@ -644,173 +694,185 @@ source ~/.zshrc  # 或 source ~/.bashrc
 echo $ANTHROPIC_API_KEY
 ```
 
-**使用nano编辑器示例：**
+### 使用`nano`编辑器示例：
 
 ```
 # 打开配置文件
 nano ~/.zshrc
 
-# 添加Key配置
-export ANTHROPIC_API_KEY=&quot;sk-ant-api03-xxxxx&quot;
+# 添加`Key`配置
+export ANTHROPIC_API_KEY="sk-ant-api03-xxxxx";
 
-# 保存：Ctrl+O → 回车 → Ctrl+X退出
+# 保存：`Ctrl+O` → 回车 → `Ctrl+X`退出
 ```
 
-#### 安全注意事项
+### 安全注意事项
 
-**✅ 正确做法：**
+#### ✅ 正确做法：
 
-+   只在本地配置环境变量
++ 只在本地配置环境变量
 
-+   不要提交 .env 文件到Git
++ 不要提交`.env`文件到`Git`
 
-+   定期轮换API Key
++ 定期轮换`API Key`
 
-**❌ 错误做法：**
+#### ❌ 错误做法：
 
-+   把Key直接写在代码里：const key = "sk-ant-..."
++ 把`Key`直接写在代码里：`const key = "sk-ant-..."`
 
-+   在GitHub Issues/论坛公开Key
++ 在`GitHub Issues`/论坛公开`Key`
 
-+   与他人共享Key
++ 与他人共享`Key`
 
-**泄露后的处理：**
+### 泄露后的处理：
 
-1.  立即到Console删除泄露的Key
+1. 立即到`Console`删除泄露的`Key`
 
-1.  创建新Key
+1. 创建新`Key`
 
-1.  更新环境变量
+1. 更新环境变量
 
-1.  检查API使用记录是否异常
+1. 检查`API`使用记录是否异常
 
-### 4.3.1 API中转站配置（可选）
+## 4.3.1 API 中转站配置（可选）
 
-> 💡 什**么是API中转站？ **中转站是第三方提供的API代理服务，将你的请求转发到Anthropic官方API。对于国内用户来说，中转站可以解决网络访问问题，通常价格也更低。
+> 💡 什么是`API`中转站？`API`中转站是第三方提供的`API`代理服务，将你的请求转发到`Anthropic`官方`API`。对于国内用户来说，中转站可以解决网络访问问题，通常价格也更低。
 
-**中转站 vs 官方API对比：**
+### 中转站 vs 官方`API`对比：
 
-| 对比项 | 官方API | 中转站 |
+| 对比项 | 官方`API` | 中转站 |
+
 | --- | --- | --- |
+
 | 价格 | 官方定价 | 通常为官方的 1/3 ~ 1/2 |
+
 | 网络要求 | 需要🪜 | 无需🪜 |
-| 支付方式 | 信用卡（Visa/Master） | 支付宝/🛰️ |
+
+| 支付方式 | 信用卡（`Visa`/`Master`） | 支付宝/🛰️ |
+
 | 稳定性 | 最稳定 | 取决于中转站质量 |
-| 免费额度 | 新用户有 $5 额度 | 通常无免费额度 |
 
-**配置方法：**
+| 免费额度 | 新用户有 `$5` 额度 | 通常无免费额度 |
 
-中转站会提供一个自定义的 API 地址（Base URL），你需要同时配置 ANTHROPIC_API_KEY 和 ANTHROPIC_BASE_URL 两个环境变量。
+### 配置方法：
 
-Windows（PowerShell）：
+中转站会提供一个自定义的`API`地址（`Base URL`），你需要同时配置`ANTHROPIC_API_KEY`和`ANTHROPIC_BASE_URL`两个环境变量。
+
+### Windows（`PowerShell`）：
 
 ```
-# 设置中转站API Key（中转站提供的Key）
-[System.Environment]::SetEnvironmentVariable(&#x27;ANTHROPIC_API_KEY&#x27;, &#x27;你的中转站Key&#x27;, &#x27;User&#x27;)
+# 设置中转站`API Key`（中转站提供的`Key`）
+[System.Environment]::SetEnvironmentVariable('ANTHROPIC_API_KEY', '你的中转站Key', 'User')
 
-# 设置中转站API地址
-[System.Environment]::SetEnvironmentVariable(&#x27;ANTHROPIC_BASE_URL&#x27;, &#x27;https://你的中转站地址/v1&#x27;, &#x27;User&#x27;)
+# 设置中转站`API`地址
+[System.Environment]::SetEnvironmentVariable('ANTHROPIC_BASE_URL', 'https://你的中转站地址/v1', 'User')
 
 # 重启终端后验证
 $env:ANTHROPIC_BASE_URL
 ```
 
-**macOS/Linux：**
+### macOS/Linux：
 
 ```
-# 在 ~/.zshrc 或 ~/.bashrc 中添加
-export ANTHROPIC_API_KEY=&quot;你的中转站Key&quot;
-export ANTHROPIC_BASE_URL=&quot;https://你的中转站地址/v1&quot;
+# 在 `~/.zshrc` 或 `~/.bashrc` 中添加
+export ANTHROPIC_API_KEY="你的中转站Key";
+export ANTHROPIC_BASE_URL="https://你的中转站地址/v1";
 
 # 使配置生效
 source ~/.zshrc
 ```
 
-**验证中转站是否生效：**
+### 验证中转站是否生效：
 
 ```
-# 启动Claude Code后，观察是否能正常连接
+# 启动`Claude Code`后，观察是否能正常连接
 claude
 
 # 如果连接成功，说明中转站配置正确
-# 如果报错，检查URL末尾是否需要 /v1
+# 如果报错，检查`URL`末尾是否需要 `/v1`
 ```
 
-> ⚠️ **安全提醒**：选择中转站时注意甄别，优先选择口碑好、运营时间长的服务商。中转站可以看到你的API请求内容，避免传输高度敏感的数据。
+> ⚠️ **安全提醒**：选择中转站时注意甄别，优先选择口碑好、运营时间长的服务商。中转站可以看到你的`API`请求内容，避免传输高度敏感的数据。
 
-### 4.4 计费与订阅
+## 4.4 计费与订阅
 
-Claude Code需要付费吗？
+`Claude Code`需要付费吗？
 
 两层计费：
 
-1.  **Claude Code工具本身**
+1. **`Claude Code`工具本身**
 
-+   ✅ 免费开源
++ ✅ 免费开源
 
-+   无需购买License
++ 无需购买`License`
 
-1.  **Claude API使用费**
+1. **`Claude API`使用费**
 
-+   ⚠️ 按调用量计费
++ ⚠️ 按调用量计费
 
-+   类似手机话费（用多少付多少）
++ 类似手机话费（用多少付多少）
 
-**Token是什么？**
+### `Token`是什么？
 
-Token是AI处理文本的最小单位，用于计费：
+`Token`是`AI`处理文本的最小单位，用于计费：
 
-+   1 token ≈ 0.75个英文单词
++ 1 `token` ≈ 0.75个英文单词
 
-+   1 token ≈ 1-2个汉字
++ 1 `token` ≈ 1-2个汉字
 
-+   1000 tokens ≈ 750字短文
++ 1000 `tokens` ≈ 750字短文
 
-> 💡 成**本说明：**
+> 💡 **成本说明：**
 
-> Claude Code的使用成本取决于你的API调用量。具体计费方式和价格请查看：
+> `Claude Code`的使用成本取决于你的`API`调用量。具体计费方式和价格请查看：
 
-+   **官方价格页面**：https://www.anthropic.com/pricing
++ **官方价格页面**：`https://www.anthropic.com/pricing`
 
-+   **Console账单页面**：https://console.anthropic.com/ → Settings → Billing
++ **`Console`账单页面**：`https://console.anthropic.com/` → `Settings` → `Billing`
 
 > 建议在实际使用中监控自己的消耗情况，根据需求调整使用频率。
 
 ---
 
-## 第五部分：Claude Code 原生安装（⭐ 核心重点）
+# 第五部分：`Claude Code` 原生安装（⭐ 核心重点）
 
-> 💡 本**部分目标：**一行命**令完成安**装，5分钟搞定！
+> 💡 本部分目标：一行命令完成安装，5分钟搞定！
 
 > ⏱️ 预计时间：3-5分钟
 
-### 5.1 安装方式概览
+## 5.1 安装方式概览
 
-**原生安装提供3种方式**，任选其一即可：
+原生安装提供3种方式，任选其一即可：
 
 | 安装方式 | 适用平台 | 命令 | 推荐度 |
+
 | --- | --- | --- | --- |
-| **脚本安装** ⭐ | macOS/Linux/WSL | `curl ... | bash` |
-| **PowerShell** | Windows | `irm ... | iex` |
-| **Homebrew** | macOS/Linux | brew install --cask | ⭐⭐⭐⭐ |
-| **WinGet** | Windows 10/11 | winget install | ⭐⭐⭐⭐ |
-| **NPM** ⚠️ | 全平台（需Node.js） | npm install -g | ⭐⭐⭐ |
 
-> 💡 老**金推荐：**
+| 脚本安装 ⭐ | `macOS`/`Linux`/`WSL` | `curl ... | bash` |
 
-+   **Windows用户**：用PowerShell（最简单）
+| `PowerShell` | `Windows` | `irm ... | iex` |
 
-+   **Mac用户**：用脚本安装或Homebrew（都很快）
+| `Homebrew` | `macOS`/`Linux` | `brew install --cask` | ⭐⭐⭐⭐ |
 
-+   **Linux用户**：用脚本安装
+| `WinGet` | `Windows 10`/`11` | `winget install` | ⭐⭐⭐⭐ |
 
-+   **原生安装失败？**：试试 NPM 方式（见方式4），虽然官方标记为废弃，但仍然可以正常使用
+| `NPM` ⚠️ | 全平台（需`Node.js`） | `npm install -g` | ⭐⭐⭐ |
+
+> 💡 老金推荐：
+
++ **`Windows`用户**：用`PowerShell`（最简单）
+
++ **`Mac`用户**：用脚本安装或`Homebrew`（都很快）
+
++ **`Linux`用户**：用脚本安装
+
++ **原生安装失败？**：试试`NPM`方式（见方式4），虽然官方标记为`Deprecated`（废弃），但仍然可以正常使用
 
 ---
 
-### 5.2 方式1：脚本安装（推荐 - 跨平台）
+## 5.2 方式1：脚本安装（推荐 - 跨平台）
 
-#### macOS / Linux / WSL 安装
+### `macOS` / `Linux` / `WSL` 安装
 
 **打开终端，复制粘贴以下命令：**
 
@@ -821,10 +883,14 @@ curl -fsSL https://claude.ai/install.sh | bash
 **一行命令解释：**
 
 | 部分 | 作用 |
+
 | --- | --- |
-| curl -fsSL | 下载安装脚本（-f失败继续，-s静默，-S显示错误，-L跟随重定向） |
-| https://claude.ai/install.sh | Anthropic官方安装脚本地址 |
-| ` | bash` |
+
+| `curl -fsSL` | 下载安装脚本（`-f`失败继续，`-s`静默，`-S`显示错误，`-L`跟随重定向） |
+
+| `https://claude.ai/install.sh` | `Anthropic`官方安装脚本地址 |
+
+| `\| bash` |
 
 **安装过程：**
 
@@ -833,9 +899,9 @@ curl -fsSL https://claude.ai/install.sh | bash
 Downloading Claude Code...
 Installing to /home/你的用户名/.local/bin/claude
 ✓ Installation complete!
-✓ Added to PATH
+✓ Added to `PATH`
 
-Run &#x27;claude --version&#x27; to verify.
+Run 'claude --version' to verify.
 ```
 
 **验证安装：**
@@ -845,15 +911,15 @@ claude --version
 # 预期输出：Claude Code v2.1.x (native)
 ```
 
-#### Windows PowerShell 安装
+### `Windows` `PowerShell` 安装
 
-步骤1：打开PowerShell
+步骤1：打开`PowerShell`
 
-+   按 Win 键
++ 按 `Win` 键
 
-+   输入 PowerShell
++ 输入 `PowerShell`
 
-+   按 Ctrl + Shift + Enter（以管理员身份运行）
++ 按 `Ctrl` + `Shift` + `Enter`（以管理员身份运行）
 
 **步骤2：执行安装命令**
 
@@ -864,29 +930,33 @@ irm https://claude.ai/install.ps1 | iex
 **命令解释：**
 
 | 部分 | 作用 |
+
 | --- | --- |
-| irm | Invoke-RestMethod 的别名，下载内容 |
-| https://claude.ai/install.ps1 | Windows安装脚本地址 |
-| ` | iex` |
+
+| `irm` | `Invoke-RestMethod` 的别名，下载内容 |
+
+| `https://claude.ai/install.ps1` | `Windows`安装脚本地址 |
+
+| `\| iex` |
 
 **安装过程：**
 
 ```
-[PowerShell显示]
+[`PowerShell`显示]
 Downloading Claude Code...
 Installing to C:\Users\你的用户名\.local\bin\
 ✓ Installation complete!
 
-Run &#x27;claude --version&#x27; to verify.
+Run 'claude --version' to verify.
 ```
 
-> ⚠️ **重要提醒**：PowerShell 脚本安装完成后**，不会自动配置 PAT**H 环境变量！你需要手动配置 PATH 才能在终端中直接使用 claude 命令。请继续阅读下方的 PATH 环境变量配置 章节。
+> ⚠️ **重要提醒**：`PowerShell`脚本安装完成后，不会自动配置`PATH`环境变量！你需要手动配置`PATH`才能在终端中直接使用`claude`命令。请继续阅读下方的`PATH`环境变量配置章节。
 
 ---
 
-### 5.3 方式2：Homebrew安装（macOS/Linux）
+## 5.3 方式2：`Homebrew` 安装（`macOS`/`Linux`）
 
-如果你是Mac用户且已经安装了Homebrew，这是最简单的方式：
+如果你是`Mac`用户且已经安装了`Homebrew`，这是最简单的方式：
 
 ```
 brew install --cask claude-code
@@ -894,19 +964,19 @@ brew install --cask claude-code
 
 **优势：**
 
-+   ✅ Homebrew自动管理依赖
++ ✅ `Homebrew`自动管理依赖
 
-+   ✅ 方便更新：brew upgrade claude-code
++ ✅ 方便更新：`brew upgrade claude-code`
 
-+   ✅ 方便卸载：brew uninstall claude-code
++ ✅ 方便卸载：`brew uninstall claude-code`
 
-**注意：** Homebrew安装**不会自动更新**，需要手动运行更新命令。
+**注意：** `Homebrew`安装**不会自动更新**，需要手动运行更新命令。
 
 ---
 
-### 5.4 方式3：WinGet安装（Windows）
+## 5.4 方式3：`WinGet` 安装（`Windows`）
 
-Windows 10/11用户可以使用WinGet包管理器：
+`Windows 10`/`11`用户可以使用`WinGet`包管理器：
 
 ```
 winget install Anthropic.ClaudeCode
@@ -914,31 +984,31 @@ winget install Anthropic.ClaudeCode
 
 **优势：**
 
-+   ✅ Windows原生包管理器
++ ✅ `Windows`原生包管理器
 
-+   ✅ 系统级安装
++ ✅ 系统级安装
 
-+   ✅ 方便更新：winget upgrade Anthropic.ClaudeCode
++ ✅ 方便更新：`winget upgrade Anthropic.ClaudeCode`
 
 ---
 
-### 5.5 方式4：NPM安装（⚠️ 已废弃但仍可用）
+## 5.5 方式4：`NPM` 安装（⚠️ 已废弃但仍可用）
 
-> ⚠️ **重要说明****：NPM 安装方式已被官方标**记为 Deprecated（废弃），官方推荐使用上面的原生**安装。但如果你**原生安装遇到问题（网络问题、权限问题等），NPM 仍然是一个可用的备选方案。
+> ⚠️ **重要说明**：`NPM` 安装方式已被官方标记为 `Deprecated`（废弃），官方推荐使用上面的原生安装。但如果你原生安装遇到问题（网络问题、权限问题等），`NPM` 仍然是一个可用的备选方案。
 
-**前提条件**：需要先安装 [Node.js](https://nodejs.org/) 18 或更高版本。
+**前提条件**：需要先安装 [`Node.js`](https://nodejs.org/) 18 或更高版本。
 
 ```
-# 检查 Node.js 版本（需要 18+）
+# 检查 `Node.js` 版本（需要 18+）
 node --version
 
-# 通过 NPM 全局安装 Claude Code
+# 通过 `NPM` 全局安装 `Claude Code`
 npm install -g @anthropic-ai/claude-code
 ```
 
 **各平台安装细节：**
 
-Windows（CMD 或 PowerShell）：
+`Windows`（`CMD` 或 `PowerShell`）：
 
 ```
 # 直接全局安装
@@ -949,54 +1019,63 @@ claude --version
 # 预期输出：Claude Code v2.1.x (npm)  ← 注意这里显示 npm 而非 native
 ```
 
-**macOS/Linux：**
+**`macOS`/`Linux`：**
 
 ```
-# 全局安装（不要用 sudo！）
+# 全局安装（不要用 `sudo`！）
 npm install -g @anthropic-ai/claude-code
 
-# 如果提示权限错误，修复 npm 全局目录权限
+# 如果提示权限错误，修复 `npm` 全局目录权限
 mkdir -p ~/.npm-global
-npm config set prefix &#x27;~/.npm-global&#x27;
-echo &#x27;export PATH=~/.npm-global/bin:$PATH&#x27; &gt;&gt; ~/.zshrc
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.zshrc
 source ~/.zshrc
 
 # 然后重新安装
 npm install -g @anthropic-ai/claude-code
 ```
 
-NPM 安装 vs 原生安装的区别：
+`NPM` 安装 vs 原生安装的区别：
 
-| 对比项 | 原生安装 ⭐ | NPM 安装 ⚠️ |
+| 对比项 | 原生安装 ⭐ | `NPM` 安装 ⚠️ |
+
 | --- | --- | --- |
+
+
+
+
 | 需要 Node.js | ❌ 不需要 | ✅ 需要 18+ |
-| 自动更新 | ✅ 内置 | ❌ 需手动 npm update -g |
+
+| 自动更新 | ✅ 内置 | ❌ 需手动 `npm update -g` |
+
 | 安装大小 | ~80MB | ~80MB + Node.js |
+
 | 官方支持 | ✅ 推荐 | ⚠️ 已废弃，但仍可用 |
+
 | 适合场景 | 所有用户 | 原生安装失败时的备选 |
 
-> 💡 老**金建议：**能用原生安装就用原生安装！NPM 方式只在原生安装搞不定的时候当备胎用。装好之后可以随时通过 claude install 迁移到原生版本。
+> 💡 老金建议：能用原生安装就用原生安装！NPM 方式只在原生安装搞不定的时候当备胎用。装好之后可以随时通过 `claude install` 迁移到原生版本。
 
 ---
 
-### 5.6 配置 PATH 环境变量（Windows 必读）
+### 5.6 配置 `PATH` 环境变量（Windows 必读）
 
-> 💡 为**什么需要配置 PATH？ **Claude Code 通过 PowerShell 脚本安装后，可执行文件位于 C:\Users\你的用户名\.local\bin\，但该目录可能不在系统的 PATH 环境变量中。不配置 PATH，终端就找不到 claude 命令，会报 'claude' 不是内部或外部命令 的错误。
+> 💡 为什么需要配置 `PATH`？ Claude Code 通过 PowerShell 脚本安装后，可执行文件位于 `C:\Users\你的用户名\.local\bin\`，但该目录可能不在系统的 `PATH` 环境变量中。不配置 `PATH`，终端就找不到 `claude` 命令，会报 `claude` 不是内部或外部命令 的错误。
 
 #### 方法1：PowerShell 命令配置（推荐）
 
 ```
 # 将 Claude Code 安装目录添加到用户 PATH 环境变量
 [System.Environment]::SetEnvironmentVariable(
-    &#x27;Path&#x27;,
-    [System.Environment]::GetEnvironmentVariable(&#x27;Path&#x27;, &#x27;User&#x27;) + &#x27;;&#x27; + &quot;$env:USERPROFILE\.local\bin&quot;,
-    &#x27;User&#x27;
+    'Path',
+    [System.Environment]::GetEnvironmentVariable('Path', 'User') + ';' + "$env:USERPROFILE\.local\bin",
+    'User'
 )
 ```
 
 > ⚠️ 配置完成后，必须重启 PowerShell / CMD 窗口才能生效！
 
-**验证 PATH 是否配置成功：**
+**验证 `PATH` 是否配置成功：**
 
 ```
 # 重启终端后执行
@@ -1009,31 +1088,31 @@ claude --version
 
 1.  按下 Win + R 打开"运行"对话框
 
-1.  输入 sysdm.cpl，按回车，打开"系统属性"
+2.  输入 `sysdm.cpl`，按回车，打开"系统属性"
 
-1.  点击 **"高级"** 选项卡
+3.  点击 "高级" 选项卡
 
-1.  点击底部的 **"环境变量"** 按钮
+4.  点击底部的 "环境变量" 按钮
 
-1.  在 **"用户变量"** 区域找到 Path，双击编辑
+5.  在 "用户变量" 区域找到 `Path`，双击编辑
 
-1.  点击 **"新建"**，添加：%USERPROFILE%\.local\bin
+6.  点击 "新建"，添加：`%USERPROFILE%\.local\bin`
 
-1.  点击 **"确定"** 保存所有对话框
+7.  点击 "确定" 保存所有对话框
 
-1.  **重启所有终端窗口**
+8.  重启所有终端窗口
 
 #### macOS / Linux 用户
 
-脚本安装通常会自动将 ~/.local/bin 添加到 PATH。如果安装后 claude 命令不可用，手动添加：
+脚本安装通常会自动将 `~/.local/bin` 添加到 `PATH`。如果安装后 `claude` 命令不可用，手动添加：
 
 ```
 # 添加到 shell 配置文件（zsh 用户）
-echo &#x27;export PATH=&quot;$HOME/.local/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 
 # bash 用户
-echo &#x27;export PATH=&quot;$HOME/.local/bin:$PATH&quot;&#x27; &gt;&gt; ~/.bashrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -1059,32 +1138,32 @@ which claude     # macOS/Linux
 
 **成功的标志：**
 
-+   ✅ 显示版本号（带 native 标识）
++   ✅ 显示版本号（带 `native` 标识）
 
 +   ✅ 命令可以直接运行（不提示找不到命令）
 
-+   ✅ --help 能显示帮助信息
++   ✅ `--help` 能显示帮助信息
 
 ---
 
 ### 5.8 安装失败排查
 
-#### 问题1：检查 PATH 环境变量配置是否正确
+#### 问题1：检查 `PATH` 环境变量配置是否正确
 
 ```
 claude: command not found
 # 或 Windows 上的：
-&#x27;claude&#x27; 不是内部或外部命令
+`claude` 不是内部或外部命令
 ```
 
-**原因**：PATH 环境变量未包含 Claude Code 安装目录
+**原因**：`PATH` 环境变量未包含 Claude Code 安装目录
 
 **排查步骤：**
 
 ```
 # 第一步：确认 claude 可执行文件存在
 # Windows:
-Test-Path &quot;$env:USERPROFILE\.local\bin\claude.exe&quot;
+Test-Path "$env:USERPROFILE\.local\bin\claude.exe"
 # 如果返回 True，说明安装成功，只是 PATH 没配
 
 # macOS/Linux:
@@ -1094,14 +1173,14 @@ ls ~/.local/bin/claude
 ```
 # 第二步：检查 PATH 是否包含安装目录
 # Windows:
-$env:Path -split &#x27;;&#x27; | Select-String &#x27;.local&#x27;
+$env:Path -split ';' | Select-String '.local'
 # 如果没有输出，说明 PATH 未配置
 
 # macOS/Linux:
-echo $PATH | tr &#x27;:&#x27; &#x27;\n&#x27; | grep &#x27;.local&#x27;
+echo $PATH | tr ':' '\n' | grep '.local'
 ```
 
-**解决方案：** 按照上方 5.6 配置 PAT**H 环境变量** 章节进行配置，然后重启终端窗口。
+**解决方案：** 按照上方 5.6 配置 `PATH` 环境变量 章节进行配置，然后重启终端窗口。
 
 #### 问题2：权限被拒绝
 
@@ -1142,13 +1221,11 @@ curl -fsSL https://claude.ai/install.sh | bash
 Windows已保护你的电脑
 ```
 
-**解决方案：**
-
 1.  点击"更多信息"
 
-1.  点击"仍要运行"
+2.  点击"仍要运行"
 
-1.  原因：原生安装器由Anthropic签名，SmartScreen可能不认识新签名
+3.  原因：原生安装器由Anthropic签名，SmartScreen可能不认识新签名
 
 ---
 
@@ -1170,12 +1247,12 @@ rm -rf ~/.claude
 
 ```
 # 删除可执行文件
-Remove-Item -Force &quot;$env:USERPROFILE\.local\bin\claude.exe&quot;
+Remove-Item -Force "$env:USERPROFILE\.local\bin\claude.exe"
 
 # 删除配置和数据（可选）
-Remove-Item -Recurse -Force &quot;$env:USERPROFILE\.claude&quot;
+Remove-Item -Recurse -Force "$env:USERPROFILE\.claude"
 
-# 从 PATH 中移除安装目录（可选）
+# 从 `PATH` 中移除安装目录（可选）
 # 通过 系统属性 → 环境变量 → 用户变量 Path → 删除 %USERPROFILE%\.local\bin
 ```
 
@@ -1205,7 +1282,7 @@ claude
 
 # 启动流程：
 # 1. 检测当前目录
-# 2. 加载CLAUDE.md（如果存在）
+# 2. 加载 `CLAUDE.md`（如果存在）
 # 3. 进入交互式对话界面
 ```
 
@@ -1213,28 +1290,28 @@ claude
 
 ```
 # 执行单个命令后退出
-claude &quot;你的问题或指令&quot;
+claude "你的问题或指令"
 
 # 示例：
-claude &quot;What is 2 + 2?&quot;
-claude &quot;List files in current directory&quot;
-claude &quot;Explain this code: app.js&quot;
+claude "What is 2 + 2?"
+claude "List files in current directory"
+claude "Explain this code: app.js"
 ```
 
 **方式3：打印模式（脚本友好）**
 
 ```
 # 只输出AI响应,不显示格式
-claude -p &quot;你的问题&quot;
+claude -p "你的问题"
 
 # 示例：
-claude -p &quot;hello&quot; &gt; output.txt
-echo &quot;分析这段代码&quot; | claude -p
+claude -p "hello" > output.txt
+echo "分析这段代码" | claude -p
 ```
 
 ### 6.2 首次启动的初始化流程
 
-当你第一次运行 claude 时，会经历一个交互式配置向导。
+当你第一次运行 `claude` 时，会经历一个交互式配置向导。
 
 **配置步骤1：选择主题**
 
@@ -1250,9 +1327,13 @@ echo &quot;分析这段代码&quot; | claude -p
 **主题说明：**
 
 | 主题 | 特点 | 适用场景 |
+
 | --- | --- | --- |
+
 | Light | 浅色背景，深色文字 | 光线充足的环境 |
+
 | Dark | 深色背景，浅色文字 | 长时间编程，护眼 |
+
 | System | 自动跟随系统 | 推荐选择 |
 
 **配置步骤2：安全须知确认**
@@ -1285,11 +1366,11 @@ echo &quot;分析这段代码&quot; | claude -p
 
 1.  **沙盒隔离** - 只能访问当前目录
 
-1.  **确认机制** - 危险操作需要你确认
+2.  **确认机制** - 危险操作需要你确认
 
-1.  **只读优先** - 默认只读，修改需授权
+3.  **只读优先** - 默认只读，修改需授权
 
-1.  **审计日志** - 所有操作都有记录
+4.  **审计日志** - 所有操作都有记录
 
 **配置步骤3：目录信任确认**
 
@@ -1318,7 +1399,7 @@ echo &quot;分析这段代码&quot; | claude -p
 ? How would you like to authenticate?
 
   ❯ API Key (recommended for API users)
-    Use environment variable: ANTHROPIC_API_KEY
+    Use environment variable: `ANTHROPIC_API_KEY`
     Most flexible and secure
 
     Claude App Login (for Pro/Max subscribers)
@@ -1333,9 +1414,13 @@ echo &quot;分析这段代码&quot; | claude -p
 **认证方式对比：**
 
 | 方式 | 优点 | 缺点 | 推荐度 |
+
 | --- | --- | --- | --- |
+
 | 环境变量 | 最安全，跨项目共享 | 需要提前配置 | ⭐⭐⭐⭐⭐ |
+
 | App登录 | 使用订阅配额 | 需要Pro/Max订阅 | ⭐⭐⭐⭐ |
+
 | 手动输入 | 方便 | 不安全，易泄露 | ⭐⭐ |
 
 **配置步骤5：完成初始化**
@@ -1348,12 +1433,12 @@ echo &quot;分析这段代码&quot; | claude -p
 │  ✓ Theme: System                                        │
 │  ✓ Authentication: API Key (environment variable)      │
 │  ✓ Trusted directory: /Users/yourname/projects/my-app  │
-│  ✓ Model: claude-sonnet-4 (default)                    │
+│  ✓ Model: `claude-sonnet-4` (default)                    │
 │                                                         │
 │  Quick start:                                           │
 │  • Type your message to chat with Claude               │
-│  • Use /help to see available commands                 │
-│  • Use /exit to quit                                    │
+│  • Use `/help` to see available commands                 │
+│  • Use `/exit` to quit                                    │
 ╰─────────────────────────────────────────────────────────╯
 
 Claude Code v2.1.52
@@ -1364,7 +1449,7 @@ You: █
 
 ### 6.3 配置文件结构
 
-**Cl**a**ud**e Code的配置分为全局和项目两级：
+Claude Code的配置分为全局和项目两级：
 
 ```
 ~/.claude/                      ← 全局配置目录
@@ -1383,13 +1468,17 @@ You: █
 
 ---
 
-## 第6.5部分：Claude Code启动方式详解
+### 6.5 Claude Code启动方式详解
 
-> 💡 本**节重点：**掌握2种启动Claude Code的方式，理解权限参数的作用
+> 💡 本节重点：掌握2种启动Claude Code的方式，理解权限参数的作用
 
-### 6.5.1 启动方式概览
+#### 6.5.1 启动方式概览
 
-Claude Code有**2种启动方式**：
+Claude Code有2种启动方式：
+
+
+
+## 6.5 启动方式
 
 | 启动方式 | 适用场景 | 优点 | 缺点 |
 | --- | --- | --- | --- |
@@ -1404,15 +1493,13 @@ Claude Code有**2种启动方式**：
 
 **这是什么？**
 
-在命令行（终端）里输入 claude 命令，直接启动Claude Code的对话界面。
+在命令行（终端）里输入 `claude` 命令，直接启动Claude Code的对话界面。
 
 **为什么要学这个？**
 
-+   ✅ 最基础的启动方式，适用所有场景
-
-+   ✅ 可以添加参数控制行为
-
-+   ✅ 支持脚本自动化
++   ✅ 最基础的启动方式，适用所有场景  
++   ✅ 可以添加参数控制行为  
++   ✅ 支持脚本自动化  
 
 #### 基础启动命令
 
@@ -1448,28 +1535,25 @@ You: █
 
 | 参数 | 作用 | 什么时候用 |
 | --- | --- | --- |
-| claude | 默认启动（会询问权限） | 日常使用 |
-| claude --dangerously-skip-permissions | 跳过权限询问 | 信任的项目，快速开发 |
-| claude -p &quot;你的问题&quot; | 直接提问模式 | 快速查询，不需要对话 |
-| claude --headless | 无界面模式 | 脚本自动化 |
+| `claude` | 默认启动（会询问权限） | 日常使用 |
+| `claude --dangerously-skip-permissions` | 跳过权限询问 | 信任的项目，快速开发 |
+| `claude -p "你的问题"` | 直接提问模式 | 快速查询，不需要对话 |
+| `claude --headless` | 无界面模式 | 脚本自动化 |
 
-#### --dangerously-skip-permissions 详解（重要！）
+#### `--dangerously-skip-permissions` 详解（重要！）
 
 **这是什么？**
 
-这个参数会让Claude Code跳过权限询问，直接执行所有操作（读文件、写文件、运行命令）。Anthropic官方称之为**"Safe YOLO mode"**（You Only Live Once模式）。
+这个参数会让Claude Code跳过权限询问，直接执行所有操作（读文件、写文件、运行命令）。Anthropic官方称之为 "Safe YOLO mode"（You Only Live Once模式）。
 
-为什么叫"dangerously"（危险）？
+为什么叫 "dangerously"（危险）？
 
 因为Claude Code是AI助手，它可能会：
 
-+   修改你的代码文件
-
-+   删除文件
-
-+   运行系统命令
-
-+   安装/卸载软件包
++   修改你的代码文件  
++   删除文件  
++   运行系统命令  
++   安装/卸载软件包  
 
 如果跳过权限询问，AI做错了你可能来不及阻止！
 
@@ -1477,65 +1561,56 @@ You: █
 
 > 🚨 震**惊数据：**
 
-+   **32%的开发者**使用此参数时遇到过**文件误修改**
-
-+   **9%遇到过数据损失或损坏**
++   **32%的开发者**使用此参数时遇到过**文件误修改**  
++   **9%遇到过数据损失或损坏**  
 
 > **数据来源**：https://www.ksred.com/claude-code-dangerously-skip-permissions
 
 **生活类比：**
 
-+   不加参数 = 保姆做事前都问你"这样行吗？"（安全）
-
-+   加这个参数 = 保姆直接干，不问你（快但危险）
++   不加参数 = 保姆做事前都问你 "这样行吗？"（安全）  
++   加这个参数 = 保姆直接干，不问你（快但危险）  
 
 **什么时候该用？**
 
 ✅ **推荐使用场景：**
 
-+   你自己的个人项目（信任的代码）
-
-+   快速开发，频繁修改（避免反复确认）
-
-+   只读操作（查询、分析，不修改代码）
-
-+   你已经很熟悉Claude Code的行为
++   你自己的个人项目（信任的代码）  
++   快速开发，频繁修改（避免反复确认）  
++   只读操作（查询、分析，不修改代码）  
++   你已经很熟悉Claude Code的行为  
 
 ❌ **绝对不要用：**
 
-+   公司项目、开源项目（不是你一个人的代码）
-
-+   第一次用Claude Code（还不了解它会干什么）
-
-+   生产环境代码（一个错误可能造成事故）
-
-+   包含敏感数据的项目（财务、用户隐私）
++   公司项目、开源项目（不是你一个人的代码）  
++   第一次用Claude Code（还不了解它会干什么）  
++   生产环境代码（一个错误可能造成事故）  
++   包含敏感数据的项目（财务、用户隐私）  
 
 安全使用建议（Anthropic官方）：
 
-1.  **容器隔离**：在Docker容器中使用（无网络访问）
-
-1.  **白名单限制**：配置 .claude/config.json
+1.  **容器隔离**：在Docker容器中使用（无网络访问）  
+2.  **白名单限制**：配置 `.claude/config.json`  
 
 ```
 {
-  &quot;allowedTools&quot;: [
-    &quot;Read&quot;,
-    &quot;Grep&quot;,
-    &quot;Glob&quot;,
-    &quot;Bash(npm test)&quot;,
-    &quot;Bash(git status)&quot;
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash(npm test)",
+    "Bash(git status)"
   ]
 }
 ```
 
-1.  **Git保护**：确保代码已提交，随时可回滚
+3.  **Git保护**：确保代码已提交，随时可回滚  
 
 **使用示例：**
 
 ```
 # ✅ 场景1：只读查询（安全）
-claude --dangerously-skip-permissions -p &quot;分析这个项目的依赖关系&quot;
+claude --dangerously-skip-permissions -p "分析这个项目的依赖关系"
 
 # ⚠️ 场景2：信任的个人项目（谨慎）
 cd ~/my-toy-project
@@ -1546,25 +1621,22 @@ cd ~/company-critical-project
 claude --dangerously-skip-permissions  # 💀 别这么干！
 ```
 
-> ⚠️ **老金的血泪建议**：
+> ⚠️ **老金的血泪建议**：  
 
-> **新手阶段（前1个月）**：**绝对不要加这个参数**！让AI每次操作都问你，你能学到它在做什么，还能避免误操作。
+> **新手阶段（前1个月）**：**绝对不要加这个参数**！让AI每次操作都问你，你能学到它在做什么，还能避免误操作。  
 
-> **熟练阶段（1个月后）**：自己的学习项目可以加，但：
+> **熟练阶段（1个月后）**：自己的学习项目可以加，但：  
 
-+   ✅ 代码先提交到Git
++   ✅ 代码先提交到Git  
++   ✅ 不包含重要数据  
++   ✅ 随时能删重来  
 
-+   ✅ 不包含重要数据
+> **专业阶段**：公司项目、开源项目 **永远别加**！老金我见过太多人用这个参数把项目搞炸了，数据来源可不是瞎说的（32%误修改率）！  
 
-+   ✅ 随时能删重来
+> **参考**：  
 
-> **专业阶段**：公司项目、开源项目**永远别加**！老金我见过太多人用这个参数把项目搞炸了，数据来源可不是瞎说的（32%误修改率）！
-
-> **参考**：
-
-+   官方最佳实践：https://www.anthropic.com/engineering/claude-code-best-practices
-
-+   风险分析：https://claudelog.com/mechanics/dangerous-skip-permissions
++   官方最佳实践：https://www.anthropic.com/engineering/claude-code-best-practices  
++   风险分析：https://claudelog.com/mechanics/dangerous-skip-permissions  
 
 #### 启动验证清单
 
@@ -1574,7 +1646,7 @@ claude --dangerously-skip-permissions  # 💀 别这么干！
 □ 看到Claude Code的欢迎界面
 □ 显示正确的工作目录路径
 □ 显示版本号（v2.1+）
-□ 能看到 &quot;You: █&quot; 光标闪烁
+□ 能看到 "You: █" 光标闪烁
 □ 输入 /help 能看到帮助信息
 ```
 
@@ -1590,105 +1662,89 @@ claude --dangerously-skip-permissions  # 💀 别这么干！
 
 **为什么要用这个方式？**
 
-+   ✅ 可视化界面，更直观
-
-+   ✅ 和编辑器深度集成
-
-+   ✅ 不用切换窗口
++   ✅ 可视化界面，更直观  
++   ✅ 和编辑器深度集成  
++   ✅ 不用切换窗口  
 
 **适用工具：**
 
-+   VS Code（需要安装Claude Code扩展）
-
-+   Cursor（可以通过Tasks集成，见第7章）
++   VS Code（需要安装Claude Code扩展）  
++   Cursor（可以通过Tasks集成，见第7章）  
 
 #### VS Code扩展安装（官方扩展已发布）
 
-> ✅ **2026年2月最新**：Claude Code官方VS Code扩展已正式发布（Beta版）！
+> ✅ **2026年2月最新**：Claude Code官方VS Code扩展已正式发布（Beta版）！  
 
 **扩展信息：**
 
-+   **名称**：Claude Code for VS Code
-
-+   **发布者**：Anthropic
-
-+   **要求**：VS Code 1.98.0+
-
-+   **市场地址**：https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
++   **名称**：Claude Code for VS Code  
++   **发布者**：Anthropic  
++   **要求**：VS Code 1.98.0+  
++   **市场地址**：https://marketplace.visualstudio.com/items?itemName=`anthropic.claude-code`  
 
 **安装步骤：**
 
-1.  **打开扩展市场**
+1.  **打开扩展市场**  
 
-+   按 Ctrl/Cmd + Shift + X
+    +   按 `Ctrl/Cmd + Shift + X`  
 
-1.  **搜索并安装**
+1.  **搜索并安装**  
 
-+   搜索：Claude Code
+    +   搜索：Claude Code  
+    +   找到Anthropic官方扩展  
+    +   点击 "Install"  
 
-+   找到Anthropic官方扩展
+1.  **验证安装**  
 
-+   点击"Install"
-
-1.  **验证安装**
-
-+   左侧活动栏出现 **⚡火花图标**
-
-+   点击图标打开Claude Code面板
+    +   左侧活动栏出现 **⚡火花图标**  
+    +   点击图标打开Claude Code面板  
 
 **扩展功能（vs 终端CLI）：**
 
-+   ✅ 侧边栏专用面板（代码和对话分离）
++   ✅ 侧边栏专用面板（代码和对话分离）  
++   ✅ 实时内联差异显示（修改高亮）  
++   ✅ Checkpoint自动保存（按 `Esc` 两次回滚）  
++   ✅ @提及文件/函数（智能引用）  
 
-+   ✅ 实时内联差异显示（修改高亮）
-
-+   ✅ Checkpoint自动保存（按Esc两次回滚）
-
-+   ✅ @提及文件/函数（智能引用）
-
-**参考文档**：https://code.claude.com/docs/en/vs-code
+**参考文档**：https://code.claude.com/docs/en/vs-code  
 
 #### Cursor集成方式（需要手动安装）
 
-**重要提示****：Curso**r虽然基于VS Code，但Claude Code扩展不能自动检测Cursor为兼容IDE。
+**重要提示**：Cursor虽然基于VS Code，但Claude Code扩展不能自动检测Cursor为兼容IDE。
 
-解决方案（社区验证100%成功）：手动安装VSIX文件
+解决方案（社区验证100%成功）：手动安装 `.vsix` 文件  
 
 **步骤：**
 
-1.  **找到VSIX文件**
+1.  **找到VSIX文件**  
 
-+   位置：本地Claude Code安装目录
+    +   位置：本地Claude Code安装目录  
+    +   或从VS Code Marketplace下载 `.vsix`  
 
-+   或从VS Code Marketplace下载VSIX
+1.  **手动安装到Cursor**  
 
-1.  **手动安装到Cursor**
+    ```
+    # 方法1：命令行安装
+    cursor --install-extension /path/to/claude-code.vsix
 
-```
-# 方法1：命令行安装
-cursor --install-extension /path/to/claude-code.vsix
+    # 方法2：拖拽安装
+    # 把VSIX文件拖到Cursor的扩展面板
+    ```
 
-# 方法2：拖拽安装
-# 把VSIX文件拖到Cursor的扩展面板
-```
+1.  **验证安装**  
 
-1.  **验证安装**
+    +   重启Cursor  
+    +   左侧应出现Claude Code图标  
 
-+   重启Cursor
+**详细教程**：https://www.cursor-ide.com/blog/claude-code-cursor-extension-guide  
 
-+   左侧应出现Claude Code图标
+替代方案：Tasks集成（推荐新手）  
 
-**详细教程**：https://www.cursor-ide.com/blog/claude-code-cursor-extension-guide
+如果扩展安装失败，可以用Tasks方式（见第7.1节配置）：  
 
-替代方案：Tasks集成（推荐新手）
-
-如果扩展安装失败，可以用Tasks方式（见第7.1节配置）：
-
-1.  配置 tasks.json
-
-1.  通过命令面板运行任务
-
-1.  效果类似但更稳定
+1.  配置 `tasks.json`  
+1.  通过命令面板运行任务  
+1.  效果类似但更稳定  
 
 ---
 
@@ -1709,7 +1765,7 @@ cursor --install-extension /path/to/claude-code.vsix
 
 ### 6.6 Hello World 快速验证
 
-> 💡 重**要：**启动成功后，立即做这个快速验证，确保Claude Code能正常工作！这样后面配置IDE时心里有底。
+> 💡 **重要：**启动成功后，立即做这个快速验证，确保Claude Code能正常工作！这样后面配置IDE时心里有底。
 
 #### 6.6.1 基础功能测试（5分钟）
 
@@ -1721,11 +1777,11 @@ claude --version
 # 预期输出：Claude Code v2.1.x (native)
 
 # 测试2：简单问答
-claude -p &quot;What is 2 + 2?&quot;
+claude -p "What is 2 + 2?"
 # 预期输出：4
 
 # 测试3：中文支持
-claude -p &quot;你好,请用一句话介绍你自己&quot;
+claude -p "你好,请用一句话介绍你自己"
 # 预期输出：中文回复（确认中文正常）
 
 # 测试4：帮助命令
@@ -1733,9 +1789,9 @@ claude --help
 # 预期输出：显示所有可用命令
 ```
 
-**如果以上4项全部成功 → ✅ C**laude Code工作正常，继续往下！
+**如果以上4项全部成功 → ✅ Claude Code工作正常，继续往下！**
 
-如果有失败 → ⚠️ 跳到第8部分故障排查
+如果有失败 → ⚠️ 跳到第8部分故障排查  
 
 ---
 
@@ -1760,10 +1816,10 @@ cd ~/claude-hello-world
 git init
 
 # 步骤3：让Claude创建项目结构
-claude -p &quot;请创建一个Python Hello World项目，包含：
-1. hello.py - 打印 &#x27;Hello, Claude Code!&#x27;
+claude -p "请创建一个Python Hello World项目，包含：
+1. hello.py - 打印 'Hello, Claude Code!'
 2. README.md - 项目说明
-3. .gitignore - Python标准忽略文件&quot;
+3. .gitignore - Python标准忽略文件"
 
 # 步骤4：验证文件是否创建
 ls -la
@@ -1786,11 +1842,9 @@ claude-hello-world/
 
 **验证成功标志：**
 
-+   ✅ 文件自动创建成功
-
-+   ✅ Python程序能正常运行
-
-+   ✅ Claude理解你的中文指令
++   ✅ 文件自动创建成功  
++   ✅ Python程序能正常运行  
++   ✅ Claude理解你的中文指令  
 
 ---
 
@@ -1800,44 +1854,40 @@ claude-hello-world/
 
 | 验证项 | 命令 | 预期结果 | 状态 |
 | --- | --- | --- | --- |
-| 版本信息 | claude --version | v2.1.x+ (native) | [ ] |
-| 帮助文档 | claude --help | 显示命令列表 | [ ] |
-| API Key | echo $ANTHROPIC_API_KEY | 显示完整Key | [ ] |
-| 网络连通 | ping api.anthropic.com | 有响应 | [ ] |
+| 版本信息 | `claude --version` | v2.1.x+ (native) | [ ] |
+| 帮助文档 | `claude --help` | 显示命令列表 | [ ] |
+| API Key | `echo $ANTHROPIC_API_KEY` | 显示完整Key | [ ] |
+| 网络连通 | `ping api.anthropic.com` | 有响应 | [ ] |
 | 文件操作 | Hello World项目 | 成功创建文件 | [ ] |
-| 代码执行 | python hello.py | 正常输出 | [ ] |
+| 代码执行 | `python hello.py` | 正常输出 | [ ] |
 
 全部打勾 → 🎉 恭喜！Claude Code安装和配置完全成功！
 
 **现在你可以：**
 
-+   ✅ 继续学习第7部分（IDE集成配置）
-
-+   ✅ 跳过第7部分，直接开始用Claude Code写项目
-
-+   ✅ 查看第9部分FAQ了解更多技巧
++   ✅ 继续学习第7部分（IDE集成配置）  
++   ✅ 跳过第7部分，直接开始用Claude Code写项目  
++   ✅ 查看第9部分FAQ了解更多技巧  
 
 ---
 
 ## 第七部分：IDE 集成配置
 
-> ⚠️ **重要提示**：这部分是**可选的高级配置**！
+> ⚠️ **重要提示**：这部分是 **可选的高级配置**！  
 
-> **前置条件**：第6部分的Hello World验证必须成功，否则别急着配置IDE！
+> **前置条件**：第6部分的Hello World验证必须成功，否则别急着配置IDE！  
 
-> **适合人群**：
+> **适合人群**：  
 
-+   ✅ 已经成功启动Claude Code并完成Hello World测试
++   ✅ 已经成功启动Claude Code并完成Hello World测试  
++   ✅ 想在VS Code/Cursor里更方便地使用Claude Code  
++   ✅ 愿意花30分钟配置快捷键和任务  
 
-+   ✅ 想在VS Code/Cursor里更方便地使用Claude Code
-
-+   ✅ 愿意花30分钟配置快捷键和任务
-
-> **如果你只想用终端命令**：可以跳过这部分，直接用 claude 命令就够了！
+> **如果你只想用终端命令**：可以跳过这部分，直接用 `claude` 命令就够了！  
 
 ### 7.1 VS Code 完整集成方案
 
-> 💡 这**一节讲什么：**配置VS Code/Cursor编辑器，让它能完美运行Claude Code命令。配置后你就能在编辑器里一键调用AI助手了。
+> 💡 这 **一节讲什么：** 配置VS Code/Cursor编辑器，让它能完美运行Claude Code命令。配置后你就能在编辑器里一键调用AI助手了。  
 
 #### 步骤1：VS Code基础配置
 
@@ -1850,7 +1900,7 @@ code --version
 # 如果未安装，访问：https://code.visualstudio.com/
 ```
 
-> ⚠️ **Cursor用户注意**：Cursor是基于VS Code魔改的编辑器，所有VS Code的配置在Cursor里都能用！如果你用Cursor，把下面的"VS Code"理解成"Cursor"就行。
+> ⚠️ **Cursor用户注意**：Cursor是基于VS Code魔改的编辑器，所有VS Code的配置在Cursor里都能用！如果你用Cursor，把下面的 "VS Code" 理解成 "Cursor" 就行。  
 
 #### 步骤2：配置集成终端
 
@@ -1860,87 +1910,99 @@ code --version
 
 **为什么要配置？**
 
-不配置的话，编辑器可能用错误的"翻译器"（Shell），导致命令运行失败或报错。
+不配置的话，编辑器可能用错误的 "翻译器"（Shell），导致命令运行失败或报错。
 
 **操作方法：**
 
-打开设置（Ctrl/Cmd + ,），点击右上角"打开设置(JSON)"，添加：
+打开设置（`Ctrl/Cmd + ,`），点击右上角 "打开设置(JSON)"，添加：
 
-```
+
+
+### 7.1 VS Code 编辑器配置
+
+```json
 {
   // ==========================================
-  // 终端配置（告诉编辑器用哪个&quot;翻译器&quot;）
+  // 终端配置（告诉编辑器用哪个"翻译器"）
   // ==========================================
 
   // Windows用户 → 用PowerShell（Windows推荐的命令行工具）
-  &quot;terminal.integrated.defaultProfile.windows&quot;: &quot;PowerShell&quot;,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
 
   // Mac用户 → 用zsh（Mac 2019年后的默认Shell，比bash更现代）
-  &quot;terminal.integrated.defaultProfile.osx&quot;: &quot;zsh&quot;,
+  "terminal.integrated.defaultProfile.osx": "zsh",
 
   // Linux用户 → 用bash（Linux通用Shell）
-  &quot;terminal.integrated.defaultProfile.linux&quot;: &quot;bash&quot;,
+  "terminal.integrated.defaultProfile.linux": "bash",
 
   // ==========================================
   // PowerShell 7配置（Windows推荐）
   // ==========================================
   // 指定用PowerShell 7而不是老版PowerShell 5.1
   // PowerShell 7功能更强大，跨平台，推荐使用
-  &quot;terminal.integrated.profiles.windows&quot;: {
-    &quot;PowerShell&quot;: {
-      &quot;source&quot;: &quot;PowerShell&quot;,
-      &quot;icon&quot;: &quot;terminal-powershell&quot;,
-      &quot;path&quot;: &quot;pwsh.exe&quot;  // pwsh.exe = PowerShell 7
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "pwsh.exe"  // pwsh.exe = PowerShell 7
     }
   },
 
   // ==========================================
   // 终端外观配置（让终端更好看）
   // ==========================================
-  &quot;terminal.integrated.fontFamily&quot;: &quot;Menlo, Monaco, &#x27;Courier New&#x27;, monospace&quot;,
-  &quot;terminal.integrated.fontSize&quot;: 13,  // 13号字体，比默认稍大，更舒适
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 13,  // 13号字体，比默认稍大，更舒适
 
   // ==========================================
   // Claude Code专用配置
   // ==========================================
   // 让CLAUDE.md文件有Markdown语法高亮
-  &quot;files.associations&quot;: {
-    &quot;CLAUDE.md&quot;: &quot;markdown&quot;
+  "files.associations": {
+    "CLAUDE.md": "markdown"
   },
 
   // ==========================================
   // 自动保存（强烈推荐！）
   // ==========================================
-  &quot;files.autoSave&quot;: &quot;afterDelay&quot;,  // 编辑后自动保存，不怕忘记保存丢失改动
-  &quot;files.autoSaveDelay&quot;: 1000      // 延迟1秒（1000毫秒）保存
+  "files.autoSave": "afterDelay",  // 编辑后自动保存，不怕忘记保存丢失改动
+  "files.autoSaveDelay": 1000      // 延迟1秒（1000毫秒）保存
 }
 ```
 
-> 💡 配**置说明（小白版）：**
+> 💡 **配置说明（小白版）：**
 
 | 配置项 | 人话翻译 | 为啥要配 |
+
 | --- | --- | --- |
-| defaultProfile.windows | Windows用PowerShell | 确保命令能正常运行 |
-| defaultProfile.osx | Mac用zsh | Mac最新系统的默认Shell |
-| defaultProfile.linux | Linux用bash | Linux通用Shell |
-| profiles.windows | 用PowerShell 7 | 比老版更强大 |
-| fontSize: 13 | 终端字体13号 | 比默认大一点，看着舒服 |
-| CLAUDE.md | 识别Claude配置文件 | 有语法高亮，好编辑 |
-| autoSave | 自动保存 | 不怕忘记保存丢失改动 |
+
+| `defaultProfile.windows` | Windows用PowerShell | 确保命令能正常运行 |
+
+| `defaultProfile.osx` | Mac用zsh | Mac最新系统的默认Shell |
+
+| `defaultProfile.linux` | Linux用bash | Linux通用Shell |
+
+| `profiles.windows` | 用PowerShell 7 | 比老版更强大 |
+
+| `fontSize: 13` | 终端字体13号 | 比默认大一点，看着舒服 |
+
+| `CLAUDE.md` | 识别Claude配置文件 | 有语法高亮，好编辑 |
+
+| `autoSave` | 自动保存 | 不怕忘记保存丢失改动 |
 
 > **生活类比**：把电脑想象成一家国际餐厅
 
-+   **中文服务员** = zsh（Mac专用）
++   **中文服务员** = `zsh`（Mac专用）
 
-+   **英文服务员** = PowerShell（Windows专用）
++   **英文服务员** = `PowerShell`（Windows专用）
 
-+   **通用服务员** = bash（大家都能用）
++   **通用服务员** = `bash`（大家都能用）
 
 > 这个配置就是在告诉餐厅："我需要中文服务员/英文服务员来服务"。
 
-**验证配置是否生效：**
+#### 验证配置是否生效
 
-1.  按 Ctrl + `（Esc键下面那个键）打开终端
+1.  按 `Ctrl` + `` ` ` （Esc键下面那个键）打开终端
 
 1.  运行验证命令：
 
@@ -1967,7 +2029,7 @@ echo $SHELL
 
 **这是什么？**
 
-"任务（Task）"就是把常用命令做成一键按钮。比如"启动Claude Code"、"审查当前文件"这些操作，不用每次手敲命令，点一下就能执行。
+"`Task`"就是把常用命令做成一键按钮。比如"启动Claude Code"、"审查当前文件"这些操作，不用每次手敲命令，点一下就能执行。
 
 **为什么要创建？**
 
@@ -1975,42 +2037,42 @@ echo $SHELL
 
 **操作方法：**
 
-在项目根目录创建 .vscode/tasks.json：
+在项目根目录创建 `.vscode/tasks.json`：
 
-```
+```json
 {
-  &quot;version&quot;: &quot;2.0.0&quot;,
-  &quot;tasks&quot;: [
+  "version": "2.0.0",
+  "tasks": [
     {
-      &quot;label&quot;: &quot;Claude Code: 启动交互模式&quot;,
-      &quot;type&quot;: &quot;shell&quot;,
-      &quot;command&quot;: &quot;claude&quot;,
-      &quot;problemMatcher&quot;: [],
-      &quot;presentation&quot;: {
-        &quot;echo&quot;: true,
-        &quot;reveal&quot;: &quot;always&quot;,
-        &quot;focus&quot;: true,
-        &quot;panel&quot;: &quot;dedicated&quot;,
-        &quot;clear&quot;: true
+      "label": "Claude Code: 启动交互模式",
+      "type": "shell",
+      "command": "claude",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
       }
     },
     {
-      &quot;label&quot;: &quot;Claude Code: 审查当前文件&quot;,
-      &quot;type&quot;: &quot;shell&quot;,
-      &quot;command&quot;: &quot;claude \&quot;Review ${relativeFile} and suggest improvements\&quot;&quot;,
-      &quot;problemMatcher&quot;: []
+      "label": "Claude Code: 审查当前文件",
+      "type": "shell",
+      "command": "claude \"Review ${relativeFile} and suggest improvements\"",
+      "problemMatcher": []
     },
     {
-      &quot;label&quot;: &quot;Claude Code: 解释当前文件&quot;,
-      &quot;type&quot;: &quot;shell&quot;,
-      &quot;command&quot;: &quot;claude \&quot;Explain what ${relativeFile} does\&quot;&quot;,
-      &quot;problemMatcher&quot;: []
+      "label": "Claude Code: 解释当前文件",
+      "type": "shell",
+      "command": "claude \"Explain what ${relativeFile} does\"",
+      "problemMatcher": []
     },
     {
-      &quot;label&quot;: &quot;Claude Code: 生成测试&quot;,
-      &quot;type&quot;: &quot;shell&quot;,
-      &quot;command&quot;: &quot;claude \&quot;Generate unit tests for ${relativeFile}\&quot;&quot;,
-      &quot;problemMatcher&quot;: []
+      "label": "Claude Code: 生成测试",
+      "type": "shell",
+      "command": "claude \"Generate unit tests for ${relativeFile}\"",
+      "problemMatcher": []
     }
   ]
 }
@@ -2020,30 +2082,35 @@ echo $SHELL
 
 **方法1：命令面板（推荐）**
 
-1.  按 Ctrl/Cmd + Shift + P（打开命令面板）
+1.  按 `Ctrl/Cmd + Shift + P`（打开命令面板）
 
-1.  输入：Tasks: Run Task
+1.  输入：`Tasks: Run Task`
 
-1.  选择你要运行的任务，比如"Claude Code: 启动交互模式"
+1.  选择你要运行的任务，比如 `Claude Code: 启动交互模式`
 
 **方法2：菜单操作**
 
-点击菜单 Terminal → Run Task...
+点击菜单 `Terminal` → `Run Task...`
 
-> 💡 任**务说明：**
+> 💡 **任务说明：**
 
 | 任务名称 | 作用 | 使用场景 |
+
 | --- | --- | --- |
-| 启动交互模式 | 一键启动Claude Code | 开始编程前 |
-| 审查当前文件 | 让Claude检查代码质量 | 写完代码想优化时 |
-| 解释当前文件 | 让Claude解释代码逻辑 | 看不懂别人代码时 |
+
+| 启动交互模式 | 一键启动 `Claude Code` | 开始编程前 |
+
+| 审查当前文件 | 让 `Claude Code` 检查代码质量 | 写完代码想优化时 |
+
+| 解释当前文件 | 让 `Claude Code` 解释代码逻辑 | 看不懂别人代码时 |
+
 | 生成测试 | 自动生成单元测试 | 需要写测试时 |
 
 #### 步骤4：配置快捷键（可选）
 
 **这是什么？**
 
-给刚才创建的"任务"绑定键盘快捷键，比如按 Ctrl+Shift+C 就能启动Claude Code，连菜单都不用点。
+给刚才创建的"任务"绑定键盘快捷键，比如按 `Ctrl+Shift+C` 就能启动 `Claude Code`，连菜单都不用点。
 
 **为什么要配置？**
 
@@ -2051,43 +2118,47 @@ echo $SHELL
 
 **操作方法：**
 
-创建或编辑 .vscode/keybindings.json：
+创建或编辑 `.vscode/keybindings.json`：
 
-```
+```json
 [
   {
-    &quot;key&quot;: &quot;ctrl+shift+c&quot;,  // 快捷键：Ctrl+Shift+C
-    &quot;command&quot;: &quot;workbench.action.tasks.runTask&quot;,
-    &quot;args&quot;: &quot;Claude Code: 启动交互模式&quot;  // 执行哪个任务
+    "key": "ctrl+shift+c",  // 快捷键：Ctrl+Shift+C
+    "command": "workbench.action.tasks.runTask",
+    "args": "Claude Code: 启动交互模式"  // 执行哪个任务
   },
   {
-    &quot;key&quot;: &quot;ctrl+shift+r&quot;,  // 快捷键：Ctrl+Shift+R
-    &quot;command&quot;: &quot;workbench.action.tasks.runTask&quot;,
-    &quot;args&quot;: &quot;Claude Code: 审查当前文件&quot;
+    "key": "ctrl+shift+r",  // 快捷键：Ctrl+Shift+R
+    "command": "workbench.action.tasks.runTask",
+    "args": "Claude Code: 审查当前文件"
   },
   {
-    &quot;key&quot;: &quot;ctrl+shift+e&quot;,  // 快捷键：Ctrl+Shift+E
-    &quot;command&quot;: &quot;workbench.action.tasks.runTask&quot;,
-    &quot;args&quot;: &quot;Claude Code: 解释当前文件&quot;
+    "key": "ctrl+shift+e",  // 快捷键：Ctrl+Shift+E
+    "command": "workbench.action.tasks.runTask",
+    "args": "Claude Code: 解释当前文件"
   }
 ]
 ```
 
-> 💡 快**捷键说明：**
+> 💡 **快捷键说明：**
 
 | 快捷键 | 执行任务 | 记忆方法 |
-| --- | --- | --- |
-| Ctrl+Shift+C | 启动Claude Code | C = Claude |
-| Ctrl+Shift+R | 审查当前文件 | R = Review |
-| Ctrl+Shift+E | 解释当前文件 | E = Explain |
 
-> ⚠️ **Mac用户**：把 ctrl 改成 cmd 即可
+| --- | --- | --- |
+
+| `Ctrl+Shift+C` | 启动 `Claude Code` | C = Claude |
+
+| `Ctrl+Shift+R` | 审查当前文件 | R = Review |
+
+| `Ctrl+Shift+E` | 解释当前文件 | E = Explain |
+
+> ⚠️ **Mac用户**：把 `ctrl` 改成 `cmd` 即可
 
 ### 7.2 Cursor 编辑器集成
 
 **Cursor是什么？**
 
-Cursor是基于VS Code魔改的AI编辑器，自带AI助手。和Claude Code配合使用，效果更好！
+`Cursor`是基于 `VS Code` 魔改的AI编辑器，自带AI助手。和 `Claude Code` 配合使用，效果更好！
 
 **Cursor独特优势：**
 
@@ -2095,41 +2166,39 @@ Cursor是基于VS Code魔改的AI编辑器，自带AI助手。和Claude Code配�
 
 +   ✓ AI代码补全（边写边提示）
 
-+   ✓ 与Claude Code互补而非冲突（两个AI工具不打架）
++   ✓ 与 `Claude Code` 互补而非冲突（两个AI工具不打架）
 
-> 💡 重**要提示：****Curs**or的所有配置和VS Code完全相同！上面第7.1节的配置，在Cursor里一字不差地照搬就行。
+> 💡 **重要提示：`Cursor`的所有配置和 `VS Code` 完全相同！上面 `7.1` 节的配置，在 `Cursor` 里一字不差地照搬就行。**
 
 **唯一不同：打开设置文件的方法**
-
-Cursor界面和VS Code略有不同，打开设置JSON文件的方法如下：
 
 #### 方法 A：用命令面板打开（最推荐）
 
 **步骤：**
 
-1.  在 Cursor 按 Ctrl + Shift + P（打开命令面板）
+1.  在 `Cursor` 按 `Ctrl + Shift + P`（打开命令面板）
 
-1.  输入：open user settings（不区分大小写）
+1.  输入：`open user settings`（不区分大小写）
 
-1.  选择：**Preferences: Open **User Settings (JSON) 或中文：首选项: 打开用户设置(JSON)
+1.  选择：`Preferences: Open User Settings (JSON)` 或中文：`首选项: 打开用户设置(JSON)`
 
-1.  自动打开 settings.json 文件
+1.  自动打开 `settings.json` 文件
 
 **打开快捷键配置同理：**
 
-+   输入：open keyboard shortcuts
++   输入：`open keyboard shortcuts`
 
-+   选择：**Preferences: Open Keybo**ard Shortcuts (JSON) 或中文：首选项: 打开键盘快捷方式(JSON)
++   选择：`Preferences: Open Keyboard Shortcuts (JSON)` 或中文：`首选项: 打开键盘快捷方式(JSON)`
 
 ---
 
 #### 方法 B：直接打开文件路径（万能方法）
 
-**如果方法A找**不到菜单（Cursor版本不同可能有差异），用这个方法100%有效：
+**如果方法A找不到菜单（Cursor版本不同可能有差异），用这个方法100%有效：**
 
 **步骤：**
 
-1.  在 Cursor 按 Ctrl + P（快速打开文件）
+1.  在 `Cursor` 按 `Ctrl + P`（快速打开文件）
 
 1.  粘贴下面对应你系统的路径，按回车：
 
@@ -2145,16 +2214,16 @@ C:\Users\你的用户名\AppData\Roaming\Cursor\User\settings.json
 ~/Library/Application Support/Cursor/User/settings.json
 ```
 
-> ⚠️ **注意**：把"你的用户名"改成你电脑的实际用户名！比如你的用户名是 admin，路径就是 C:\Users\admin\AppData\...
+> ⚠️ **注意**：把 `你的用户名` 改成你电脑的实际用户名！比如你的用户名是 `admin`，路径就是 `C:\Users\admin\AppData\...`
 
 ---
 
-配置完成后，Cursor就能完美运行Claude Code了！
+配置完成后，`Cursor` 就能完美运行 `Claude Code` 了！
 
-Cursor的配置与VS Code完全相同，如果上面VSCode中配置过，可以直接复用上面的配置：
+`Cursor` 的配置与 `VS Code` 完全相同，如果上面 `VS Code` 中配置过，可以直接复用上面的配置：
 
 ```
-# 将VS Code配置复制到Cursor
+# 将 VS Code 配置复制到 Cursor
 # macOS/Linux:
 cp -r ~/project/.vscode ~/project/.cursor
 
@@ -2165,53 +2234,68 @@ xcopy /E /I %USERPROFILE%\project\.vscode %USERPROFILE%\project\.cursor
 **推荐工作流：**
 
 | 场景 | 使用工具 | 原因 |
+
 | --- | --- | --- |
-| 快速代码补全 | Cursor内置AI | 快速，无需切换 |
-| 复杂逻辑重构 | Claude Code | 更强推理能力 |
-| 代码审查 | Claude Code | 更全面上下文理解 |
-| 生成测试 | Claude Code | 更完整测试覆盖 |
+
+| 快速代码补全 | `Cursor` 内置 `AI` | 快速，无需切换 |
+
+| 复杂逻辑重构 | `Claude Code` | 更强推理能力 |
+
+| 代码审查 | `Claude Code` | 更全面上下文理解 |
+
+| 生成测试 | `Claude Code` | 更完整测试覆盖 |
 
 ### 7.3 JetBrains IDEs 集成
 
-适用于WebStorm、PyCharm、IntelliJ IDEA等。
+适用于 `WebStorm`、`PyCharm`、`IntelliJ IDEA` 等。
 
-#### 步骤1：配置External Tools
+#### 步骤1：配置 External Tools
 
 1.  打开设置：
 
-+   Windows/Linux: File → Settings → Tools → External Tools
++   Windows/Linux: `File` → `Settings` → `Tools` → `External Tools`
 
-+   macOS: Preferences → Tools → External Tools
++   macOS: `Preferences` → `Tools` → `External Tools`
 
 1.  点击 + 添加新工具：
 
-Tool 1：Claude Code交互模式
+**Tool 1：`Claude Code` 交互模式**
 
 | 字段 | 值 |
+
 | --- | --- |
-| Name | Claude Code |
-| Program | claude |
-| Arguments | （留空） |
-| Working directory | $ProjectFileDir$ |
+
+| `Name` | `Claude Code` |
+
+| `Program` | `claude` |
+
+| `Arguments` | （留空） |
+
+| `Working directory` | `$ProjectFileDir$` |
 
 **Tool 2：审查当前文件**
 
 | 字段 | 值 |
+
 | --- | --- |
-| Name | Claude: Review File |
-| Program | claude |
-| Arguments | &quot;Review $FilePath$ and suggest improvements&quot; |
-| Working directory | $ProjectFileDir$ |
+
+| `Name` | `Claude: Review File` |
+
+| `Program` | `claude` |
+
+| `Arguments` | `"Review $FilePath$ and suggest improvements"` |
+
+| `Working directory` | `$ProjectFileDir$` |
 
 #### 步骤2：配置快捷键
 
-1.  Settings → Keymap
+1.  `Settings` → `Keymap`
 
-1.  搜索 External Tools
+1.  搜索 `External Tools`
 
-1.  右键 → Add Keyboard Shortcut
+1.  右键 → `Add Keyboard Shortcut`
 
-1.  设置快捷键（如 Ctrl+Shift+C）
+1.  设置快捷键（如 `Ctrl+Shift+C`）
 
 ---
 
@@ -2221,161 +2305,155 @@ Tool 1：Claude Code交互模式
 
 #### Windows平台
 
-问题1：PowerShell执行策略限制
+问题1：`PowerShell` 执行策略限制
 
 ```
 # 错误信息（原生安装时可能遇到）
 claude : 无法加载文件，因为在此系统上禁止运行脚本。
 ```
 
-**原因**：Windows默认安全策略禁止运行未签名脚本
+**原因**：`Windows` 默认安全策略禁止运行未签名脚本
 
 **解决方案：**
 
-```
-# 方法1：修改执行策略（管理员PowerShell）- 推荐
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# 方法2：使用CMD而不是PowerShell
-# Win+R → cmd
 
-# 方法3：每次临时允许执行
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
+### Windows平台
 
-问题2：Windows Defender误报
+#### 方法1：修改执行策略（管理员PowerShell）- 推荐
 
-```
-# 症状：安装过程中文件被删除
-# 原因：Windows Defender将claude.exe识别为潜在威胁
+`Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
-# 解决方案
-# 1. 添加 Claude Code 安装目录到排除列表
-#    Windows安全 → 病毒和威胁防护 → 排除项
-#    添加：C:\Users\&lt;用户名&gt;\.local\bin
+#### 方法2：使用CMD而不是PowerShell
 
-# 2. 临时禁用实时保护（不推荐）
-```
+`Win+R` → `cmd`
 
-**问题3：命令找不到**
+#### 方法3：每次临时允许执行
 
-```
-# 症状
-&#x27;claude&#x27; 不是内部或外部命令
-# 或
-claude: The term &#x27;claude&#x27; is not recognized as a name of a cmdlet
-```
+`Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
 
-**原因**：原生安装目录未添加到PATH
+#### 问题2：Windows Defender误报
 
-解决方案（手动添加 PATH 环境变量）：
+**症状：** 安装过程中文件被删除
+
+**原因：** Windows Defender将`claude.exe`识别为潜在威胁
+
+**解决方案：**
+
+1. 添加 Claude Code 安装目录到排除列表
+   - Windows安全 → 病毒和威胁防护 → 排除项
+   - 添加：`C:\Users\<用户名>\.local\bin`
+
+2. 临时禁用实时保护（不推荐）
+
+#### 问题3：命令找不到
+
+**症状**
+
+`claude` 不是内部或外部命令
+
+或
+
+`claude: The term 'claude' is not recognized as a name of a cmdlet`
+
+**原因：** 原生安装目录未添加到`PATH`
+
+解决方案（手动添加 `PATH` 环境变量）：
 
 Claude Code 原生安装后，可执行文件通常位于以下路径：
 
-+   **原生安装**：C:\Users\<你的用户名>\.local\bin\
+- 原生安装：`C:\Users\<你的用户名>\.local\bin\`
+- NPM 安装：`C:\Users\<你的用户名>\AppData\Roaming\npm\`
 
-+   **NPM 安装**：C:\Users\<你的用户名>\AppData\Roaming\npm\
+#### 方法1：通过系统设置（图形界面，推荐新手用）
 
-方法1：通过系统设置（图形界面，推荐新手用）
+1. 按下 `Win + R` 打开"运行"对话框
+1. 输入 `sysdm.cpl`，按回车，打开"系统属性"
+1. 点击 "高级" 选项卡
+1. 点击底部的 "环境变量" 按钮
+1. 在 "用户变量" 区域（上半部分），找到名为 `Path` 的变量，双击它
+1. 在弹出的"编辑环境变量"窗口中，点击 "新建"
+1. 输入 Claude Code 的安装路径：
+   - 原生安装填：`%USERPROFILE%\.local\bin`
+   - NPM 安装填：`%APPDATA%\npm\`
+1. 点击 "确定" 保存所有对话框
+1. 关闭并重新打开所有终端窗口（重要！已打开的终端不会自动刷新 `PATH`）
 
-1.  按下 Win + R 打开"运行"对话框
+#### 方法2：通过 PowerShell 命令
 
-1.  输入 sysdm.cpl，按回车，打开"系统属性"
-
-1.  点击 **"高级"** 选项卡
-
-1.  点击底部的 **"环境变量"** 按钮
-
-1.  在 **"用户变量"** 区域（上半部分），找到名为 Path 的变量，双击它
-
-1.  **在弹出的**"编辑环境变量"窗口中，点击 "新建"
-
-1.  输入 Claude Code 的安装路径：
-
-+   原生安装填：%USERPROFILE%\.local\bin
-
-+   NPM 安装填：%APPDATA%\npm\
-
-1.  点击 **"确定"** 保存所有对话框
-
-1.  **关闭并重新打开所有终端窗口**（重要！已打开的终端不会自动刷新 PATH）
-
-方法2：通过 PowerShell 命令
-
-```
+```powershell
 # 查看当前用户 PATH
-[System.Environment]::GetEnvironmentVariable(&#x27;Path&#x27;, &#x27;User&#x27;)
+[System.Environment]::GetEnvironmentVariable('Path', 'User')
 
 # 添加 Claude Code 到 PATH（原生安装路径）
-$currentPath = [System.Environment]::GetEnvironmentVariable(&#x27;Path&#x27;, &#x27;User&#x27;)
-$newPath = &quot;$currentPath;$env:USERPROFILE\.local\bin&quot;
-[System.Environment]::SetEnvironmentVariable(&#x27;Path&#x27;, $newPath, &#x27;User&#x27;)
+$currentPath = [System.Environment]::GetEnvironmentVariable('Path', 'User')
+$newPath = "$currentPath;$env:USERPROFILE\.local\bin"
+[System.Environment]::SetEnvironmentVariable('Path', $newPath, 'User')
 
 # 如果是 NPM 安装，改用这个路径
-# $newPath = &quot;$currentPath;$env:APPDATA\npm&quot;
+# $newPath = "$currentPath;$env:APPDATA\npm"
 
 # 重启 PowerShell 后验证
 claude --version
 ```
 
-**方法3：快捷方式（Win+R）**
+#### 方法3：快捷方式（Win+R）
 
-```
-Win+R → 输入 sysdm.cpl → 回车 → 高级 → 环境变量 → 用户变量的 Path → 编辑 → 新建 → 粘贴路径 → 确定
-```
+`Win+R` → 输入 `sysdm.cpl` → 回车 → 高级 → 环境变量 → 用户变量的 `Path` → 编辑 → 新建 → 粘贴路径 → 确定
 
-> ⚠️ **注意**：修改 PATH 后，必须**重新打开终端**才能生效！已经打开的 PowerShell/CMD 窗口用的还是旧的 PATH，必须关掉重开。
+> ⚠️ 注意：修改 `PATH` 后，必须**重新打开终端**才能生效！已经打开的 `PowerShell`/`CMD` 窗口用的还是旧的 `PATH`，必须关掉重开。
 
 #### macOS平台
 
-**问题1：命令找不到但已安装**
+#### 问题1：命令找不到但已安装
 
-```
-# 症状
-claude: command not found
+**症状**
 
-# 原因：PATH未更新（原生安装应该自动配置）
+`claude: command not found`
 
-# 解决方案：检查原生安装位置
+**原因：** `PATH`未更新（原生安装应该自动配置）
+
+**解决方案：** 检查原生安装位置
+
+```bash
 ls ~/.local/bin/claude
 # 或
 ls /usr/local/bin/claude
 
 # 如果文件存在，添加到PATH
-echo &#x27;export PATH=&quot;$HOME/.local/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-问题2：macOS Gatekeeper阻止
+#### 问题2：macOS Gatekeeper阻止
 
-```
-# 症状
-&quot;claude&quot; cannot be opened because the developer cannot be verified
+**症状**
 
-# 解决方案
-# 方法1：移除隔离属性
-sudo xattr -r -d com.apple.quarantine ~/.local/bin/claude
+`"claude" cannot be opened because the developer cannot be verified`
 
-# 方法2：在系统设置中允许
-# 系统设置 → 隐私与安全性 → 点击&quot;仍要打开&quot;
-```
+**解决方案**
+
+- 方法1：移除隔离属性
+  `sudo xattr -r -d com.apple.quarantine ~/.local/bin/claude`
+
+- 方法2：在系统设置中允许
+  系统设置 → 隐私与安全性 → 点击"仍要打开"
 
 ---
 
 ### 8.2 原生安装常见问题
 
-**问题1：安装脚本下载失败**
+#### 问题1：安装脚本下载失败
 
-```
-# 症状
-curl: (7) Failed to connect to claude.ai port 443
-```
+**症状**
 
-**原因**：网络无法访问claude.ai
+`curl: (7) Failed to connect to claude.ai port 443`
+
+**原因：** 网络无法访问`claude.ai`
 
 **解决方案：**
 
-```
+```bash
 # 方案1：配置代理
 export https_proxy=http://127.0.0.1:7890
 curl -fsSL https://claude.ai/install.sh | bash
@@ -2389,16 +2467,15 @@ winget install Anthropic.ClaudeCode
 # 访问 https://claude.ai/download 下载对应平台的安装包
 ```
 
-**问题2：安装版本不是最新**
+#### 问题2：安装版本不是最新
 
-```
-claude --version
+`claude --version`
+
 # 显示版本较旧
-```
 
 **解决方案：**
 
-```
+```bash
 # 原生安装支持自动更新，运行：
 claude update
 
@@ -2406,16 +2483,15 @@ claude update
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-**问题3：检测到旧的npm安装**
+#### 问题3：检测到旧的npm安装
 
-```
-claude --version
+`claude --version`
+
 # 显示 (npm) 而不是 (native)
-```
 
 **解决方案：**
 
-```
+```bash
 # 运行迁移命令
 claude install
 
@@ -2428,22 +2504,22 @@ claude install
 
 ### 8.3 网络连接问题
 
-问题：无法访问api.anthropic.com
+#### 问题：无法访问api.anthropic.com
 
-```
+```bash
 ping api.anthropic.com
 # 请求超时
 ```
 
 **解决方案：**
 
-```
+```bash
 # 方案1：配置代理（推荐）
 export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 # Windows PowerShell：
-$env:https_proxy=&quot;http://127.0.0.1:7890&quot;
-$env:http_proxy=&quot;http://127.0.0.1:7890&quot;
+$env:https_proxy="http://127.0.0.1:7890";
+$env:http_proxy="http://127.0.0.1:7890";
 
 # 方案2：修改DNS
 # Windows：设置DNS为8.8.8.8或114.114.114.114
@@ -2453,18 +2529,18 @@ $env:http_proxy=&quot;http://127.0.0.1:7890&quot;
 # 设置自定义API端点（见第三部分API Key配置）
 ```
 
-**问题2：SSL证书错误**
+#### 问题2：SSL证书错误
 
 **症状：**
 
-```
+```bash
 claude
 # Error: unable to verify the first certificate
 ```
 
 **解决方案：**
 
-```
+```bash
 # Windows：通过Windows Update更新根证书
 Start-Process ms-settings:windowsupdate
 
@@ -2472,107 +2548,103 @@ Start-Process ms-settings:windowsupdate
 # 系统设置 → 通用 → 软件更新
 
 # Linux：更新CA证书
-sudo apt update &amp;&amp; sudo apt upgrade ca-certificates
+sudo apt update && sudo apt upgrade ca-certificates
 # 或
 sudo yum update ca-certificates
 ```
 
-**问题3：API连接超时**
-
-```
+#### 问题3：API连接超时
 
 ### 8.4 API Key 配置问题
 
-**问题：环境变量未生效**
+#### 问题：环境变量未生效
 
 ```bash
 echo $ANTHROPIC_API_KEY
+
 # 显示为空
 ```
 
 **解决方案：**
 
-```
+```bash
 # macOS/Linux：确认配置文件
 cat ~/.zshrc | grep ANTHROPIC
-# 应该看到：export ANTHROPIC_API_KEY=&quot;sk-ant-...&quot;
+
+# 应该看到：export ANTHROPIC_API_KEY="sk-ant-..."
 
 # 如果没有，手动添加
-echo &#x27;export ANTHROPIC_API_KEY=&quot;你的key&quot;&#x27; &gt;&gt; ~/.zshrc
+echo 'export ANTHROPIC_API_KEY="你的key"' >> ~/.zshrc
+
 source ~/.zshrc
 ```
 
-**Windows：**
+#### Windows：
 
-```
+```powershell
 # 检查是否配置
-[System.Environment]::GetEnvironmentVariable(&#x27;ANTHROPIC_API_KEY&#x27;, &#x27;User&#x27;)
+[System.Environment]::GetEnvironmentVariable('ANTHROPIC_API_KEY', 'User')
 
 # 如果为空，重新配置
-[System.Environment]::SetEnvironmentVariable(&#x27;ANTHROPIC_API_KEY&#x27;, &#x27;sk-ant-api03-你的key&#x27;, &#x27;User&#x27;)
+[System.Environment]::SetEnvironmentVariable('ANTHROPIC_API_KEY', 'sk-ant-api03-你的key', 'User')
 
 # 重启PowerShell
 ```
 
-**问题：Key无效或过期**
+#### 问题：Key无效或过期
 
-```
+```json
 {
-  &quot;error&quot;: {
-    &quot;type&quot;: &quot;authentication_error&quot;,
-    &quot;message&quot;: &quot;invalid x-api-key&quot;
+  "error": {
+    "type": "authentication_error",
+    "message": "invalid x-api-key"
   }
 }
 ```
 
 **解决方法：**
 
-1.  登录 console.anthropic.com
+1. 登录 `console.anthropic.com`
+1. Settings → API Keys
+1. 检查Key是否被删除或禁用
+1. 如果无效，创建新Key
+1. 更新环境变量
 
-1.  Settings → API Keys
+#### 问题3：Key格式错误
 
-1.  检查Key是否被删除或禁用
-
-1.  如果无效，创建新Key
-
-1.  更新环境变量
-
-**问题3：Key格式错误**
-
-**症状**：Key看起来不完整或有空格
+**症状：** Key看起来不完整或有空格
 
 正确格式检查（PowerShell 7）：
 
-```
+```powershell
 # Key应该满足：
-# 1. 以&quot;sk-ant-api03-&quot;开头
+# 1. 以"sk-ant-api03-"开头
 # 2. 后面跟长串字母数字
 # 3. 总长度约95字符
 # 4. 无空格、无换行
-
 # 验证长度
 $env:ANTHROPIC_API_KEY.Length
+
 # 应该输出：95左右
 
 # 验证格式
-$env:ANTHROPIC_API_KEY -match &#x27;^sk-ant-api03-[A-Za-z0-9_-]+$&#x27;
+$env:ANTHROPIC_API_KEY -match '^sk-ant-api03-[A-Za-z0-9_-]+$'
+
 # 应该输出：True
 ```
 
 **常见格式错误：**
 
-```
-❌ sk-ant-XXXXX （缺少api03）
-❌ sk-XXXXX （缺少ant-api03）
-❌ 有空格或换行符
-❌ 复制时多复制/少复制字符
-```
+- ❌ `sk-ant-XXXXX` （缺少api03）
+- ❌ `sk-XXXXX` （缺少ant-api03）
+- ❌ 有空格或换行符
+- ❌ 复制时多复制/少复制字符
 
 ### 8.5 终端相关问题
 
-问题：中文乱码（Windows）
+#### 问题：中文乱码（Windows）
 
-```
+```cmd
 # 临时切换到UTF-8
 chcp 65001
 
@@ -2580,51 +2652,45 @@ chcp 65001
 reg add HKCU\Console /v CodePage /t REG_DWORD /d 65001 /f
 ```
 
-**PowerShell中文显示：**
+#### PowerShell中文显示：
 
-```
+```powershell
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 ```
 
-**问题3：复制粘贴不工作**
+#### 问题3：复制粘贴不工作
 
 不同终端的复制粘贴快捷键不同：
 
-Windows Terminal：
+**Windows Terminal：**
 
-+   右键选中文本自动复制
-
-+   Ctrl+Shift+C 复制
-
-+   Ctrl+Shift+V 粘贴
+- 右键选中文本自动复制
+- `Ctrl+Shift+C` 复制
+- `Ctrl+Shift+V` 粘贴
 
 **Windows CMD：**
 
-+   右键 → 标记 → 选中文本 → 回车复制
-
-+   右键粘贴
+- 右键 → 标记 → 选中文本 → 回车复制
+- 右键粘贴
 
 **macOS Terminal：**
 
-+   Cmd+C 复制
-
-+   Cmd+V 粘贴
+- `Cmd+C` 复制
+- `Cmd+V` 粘贴
 
 **Linux终端：**
 
-+   Ctrl+Shift+C 复制
+- `Ctrl+Shift+C` 复制
+- `Ctrl+Shift+V` 粘贴
+- 或鼠标中键粘贴（选中即复制）
 
-+   Ctrl+Shift+V 粘贴
+#### 问题4：命令历史记录丢失
 
-+   或鼠标中键粘贴（选中即复制）
-
-**问题4：命令历史记录丢失**
-
-**症状**：重启终端后之前输入的命令无法通过上下箭头找回
+**症状：** 重启终端后之前输入的命令无法通过上下箭头找回
 
 **PowerShell 7配置：**
 
-```
+```powershell
 # PowerShell 7默认已配置历史记录
 # 查看历史记录位置
 $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\
@@ -2639,33 +2705,33 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 ```
 
-Bash/Zsh配置（macOS/Linux）：
+**Bash/Zsh配置（macOS/Linux）：**
 
-```
+```bash
 # 确认历史记录文件
 echo $HISTFILE
+
 # 应该是~/.bash_history或~/.zsh_history
 
 # 如果为空，添加到配置
 # Zsh用户（编辑~/.zshrc）：
-echo &#x27;export HISTFILE=~/.zsh_history&#x27; &gt;&gt; ~/.zshrc
-echo &#x27;export HISTSIZE=10000&#x27; &gt;&gt; ~/.zshrc
-echo &#x27;export SAVEHIST=10000&#x27; &gt;&gt; ~/.zshrc
+echo 'export HISTFILE=~/.zsh_history' >> ~/.zshrc
+echo 'export HISTSIZE=10000' >> ~/.zshrc
+echo 'export SAVEHIST=10000' >> ~/.zshrc
 source ~/.zshrc
 
 # Bash用户（编辑~/.bashrc）：
-echo &#x27;export HISTFILE=~/.bash_history&#x27; &gt;&gt; ~/.bashrc
-echo &#x27;export HISTSIZE=10000&#x27; &gt;&gt; ~/.bashrc
-echo &#x27;export HISTFILESIZE=20000&#x27; &gt;&gt; ~/.bashrc
+echo 'export HISTFILE=~/.bash_history' >> ~/.bashrc
+echo 'export HISTSIZE=10000' >> ~/.bashrc
+echo 'export HISTFILESIZE=20000' >> ~/.bashrc
 source ~/.bashrc
 ```
 
 **验证历史记录：**
 
-```
+```bash
 # PowerShell 7
 Get-History
-
 # Bash/Zsh
 history | tail -20
 ```
@@ -2674,62 +2740,55 @@ history | tail -20
 
 ## 第九部分：学员常见问题FAQ
 
-> 💡 本**节收录：**直播课程中学员最常问的20个问题，帮你避开90%的坑！
+> 💡 本节收录：直播课程中学员最常问的20个问题，帮你避开90%的坑！
 
 ### 9.1 安装与配置类
 
-#### Q1：运行 code --version 报错说找不到命令？
+#### Q1：运行 `code --version` 报错说找不到命令？
 
-A1：你可能在Cursor里运行的！
+A1：你可能在Cursor里运行！
 
-+   code 是 **VS Code** 的命令
-
-+   cursor 是 **Cursor** 的命令
+- `code` 是 `VS Code` 的命令
+- `cursor` 是 `Cursor` 的命令
 
 **正确做法：**
 
-+   在Cursor里运行：cursor --version
+- 在Cursor里运行：`cursor --version`
+- 在VS Code里运行：`code --version`
+- 查看Claude Code版本：`claude --version`
 
-+   在VS Code里运行：code --version
-
-+   查看Claude Code版本：claude --version
-
-#### Q2：找不到settings.json文件在哪儿？
+#### Q2：找不到`settings.json`文件在哪儿？
 
 **A2：不同编辑器位置不同！**
 
 **Cursor位置：**
 
-+   Windows: C:\Users\你的用户名\AppData\Roaming\Cursor\User\settings.json
-
-+   Mac: ~/Library/Application Support/Cursor/User/settings.json
+- Windows: `C:\Users\你的用户名\AppData\Roaming\Cursor\User\settings.json`
+- Mac: `~/Library/Application Support/Cursor/User/settings.json`
 
 **VS Code位置：**
 
-+   Windows: C:\Users\你的用户名\AppData\Roaming\Code\User\settings.json
-
-+   Mac: ~/Library/Application Support/Code/User/settings.json
+- Windows: `C:\Users\你的用户名\AppData\Roaming\Code\User\settings.json`
+- Mac: `~/Library/Application Support/Code/User/settings.json`
 
 **快速打开方法：**
 
-1.  按 Ctrl/Cmd + Shift + P
-
-1.  输入：open user settings json
-
-1.  选择：Preferences: Open User Settings (JSON)
+1. 按 `Ctrl/Cmd + Shift + P`
+1. 输入：`open user settings json`
+1. 选择：`Preferences: Open User Settings (JSON)`
 
 #### Q3：配置后还是报错，怎么办？
 
 A3：按照这个检查清单逐项排查：
 
-```
+```text
 □ settings.json文件保存了吗？（看文件名有没有*号）
 □ JSON格式正确吗？（大括号、逗号、引号都对吗）
 □ 重启了终端吗？（配置需要重启终端才生效）
 □ 重启了编辑器吗？（有时需要完全重启）
 ```
 
-**还是不行？** 把错误信息截图，群里问老金！
+
 
 #### Q4：zsh、PowerShell、bash 有什么区别？我该用哪个？
 
@@ -2737,9 +2796,9 @@ A4：它们都是Shell（命令行翻译器），选对应你系统的就行！
 
 | 操作系统 | 推荐Shell | 为什么 |
 | --- | --- | --- |
-| **Windows** | PowerShell | 系统自带，功能强大 |
-| **Mac** | zsh | 2019年后的系统默认 |
-| **Linux** | bash | 通用标准 |
+| `Windows` | `PowerShell` | 系统自带，功能强大 |
+| `Mac` | `zsh` | 2019年后的系统默认 |
+| `Linux` | `bash` | 通用标准 |
 
 **你不用手动选**，按照第7.1节配置后，编辑器会自动选对的！
 
@@ -2753,11 +2812,11 @@ echo $SHELL
 
 **看输出：**
 
-+   显示 /bin/zsh → 你在用zsh
++   显示 `/bin/zsh` → 你在用`zsh`
 
-+   显示 /bin/bash → 你在用bash
++   显示 `/bin/bash` → 你在用`bash`
 
-+   Windows显示 powershell → 你在用PowerShell
++   Windows显示 `powershell` → 你在用`PowerShell`
 
 ---
 
@@ -2771,17 +2830,19 @@ echo $SHELL
 
 ```
 # 进入项目目录
+
 cd /你的项目路径
 
 # 启动Claude Code
+
 claude
 ```
 
 **方式2：IDE快捷键启动**
 
-+   配置tasks.json（见第7.1节）
++   配置`tasks.json`（见第7.1节）
 
-+   按 Ctrl/Cmd + Shift + P → 选 Tasks: Run Task → 选 Claude Code: 启动交互模式
++   按 `Ctrl/Cmd + Shift + P` → 选 `Tasks: Run Task` → 选 `Claude Code: 启动交互模式`
 
 #### Q7：启动后看到什么才算成功？
 
@@ -2789,8 +2850,11 @@ claude
 
 ```
 ╭─────────────────────────────────────────╮
+
 │  Welcome to Claude Code v2.1           │
+
 │  • Type /help to see available commands │
+
 ╰─────────────────────────────────────────╯
 
 You: █
@@ -2800,13 +2864,13 @@ You: █
 
 +   ✅ 显示欢迎信息
 
-+   ✅ 显示版本号（v2.1+）
++   ✅ 显示版本号（`v2.1+`）
 
 +   ✅ 显示工作目录
 
-+   ✅ 有输入光标 █
++   ✅ 有输入光标 `█`
 
-#### Q8：--dangerously-skip-permissions 是什么？我该用吗？
+#### Q8：`--dangerously-skip-permissions` 是什么？我该用吗？
 
 A8：这个参数跳过权限询问，新手别用！
 
@@ -2818,11 +2882,11 @@ A8：这个参数跳过权限询问，新手别用！
 
 **老金建议：**
 
-+   🟢 新**手（前2周）：**别加！让AI问你，你能学到它在做什么
++   🟢 新手（前2周）：别加！让AI问你，你能学到它在做什么
 
-+   🟡 熟**练后：**自己的小项目可以加，省时间
++   🟡 熟练后：自己的小项目可以加，省时间
 
-+   🔴 重**要项目：**永远别加！安全第一
++   🔴 重要项目：永远别加！安全第一
 
 详细说明见第6.5.2节。
 
@@ -2838,9 +2902,9 @@ A8：这个参数跳过权限询问，新手别用！
 
 **方法2：快捷键退出**
 
-+   按 Ctrl + C 两次
++   按 `Ctrl + C` 两次
 
-+   或 Ctrl + D
++   或 `Ctrl + D`
 
 #### Q10：能同时打开多个Claude Code吗？
 
@@ -2858,25 +2922,29 @@ A10：可以！每个终端窗口都能启动一个Claude Code实例。
 
 ### 9.3 配置文件类
 
-#### Q11：tasks.json文件放在哪里？
+#### Q11：`tasks.json`文件放在哪里？
 
-**A11：放在项目根目录的 ****.vscode**** 文件夹里！**
+**A11：放在项目根目录的 `.vscode` 文件夹里！**
 
 **完整路径示例：**
 
 ```
 你的项目/
+
 ├── .vscode/
+
 │   └── tasks.json  ← 放这里
+
 ├── src/
+
 └── package.json
 ```
 
 **创建步骤：**
 
-1.  在项目根目录创建 .vscode 文件夹（如果没有）
+1.  在项目根目录创建 `.vscode` 文件夹（如果没有）
 
-1.  在 .vscode 里创建 tasks.json 文件
+1.  在 `.vscode` 里创建 `tasks.json` 文件
 
 1.  复制第7.1节的配置粘贴进去
 
@@ -2888,13 +2956,15 @@ A10：可以！每个终端窗口都能启动一个Claude Code实例。
 
 ```
 □ keybindings.json保存了吗？
+
 □ 快捷键有冲突吗？（换个组合试试）
+
 □ 重启编辑器了吗？
 ```
 
 **查看快捷键冲突：**
 
-1.  按 Ctrl/Cmd + K, Ctrl/Cmd + S（打开快捷键设置）
+1.  按 `Ctrl/Cmd + K, Ctrl/Cmd + S`（打开快捷键设置）
 
 1.  搜索你配置的快捷键
 
@@ -2909,8 +2979,8 @@ A10：可以！每个终端窗口都能启动一个Claude Code实例。
 | 错误 | 原因 | 解决 |
 | --- | --- | --- |
 | Unexpected token | 多了/少了逗号 | 最后一项配置不要逗号 |
-| Invalid character | 中文引号 | 把 &quot;&quot; 改成 &quot;&quot; |
-| Unexpected end | 大括号不匹配 | 数数 { 和 } 是否相等 |
+| Invalid character | 中文引号 | 把 `""` 改成 `""` |
+| Unexpected end | 大括号不匹配 | 数数 `{` 和 `}` 是否相等 |
 
 **快速检查：**
 
@@ -2944,21 +3014,25 @@ A14：不会！Claude Code只上传你让它处理的内容。
 
 #### Q15：我不想让Claude Code访问某些文件，怎么办？
 
-**A15：用 ****.gitignore**** 或 ****.claudeignore**** 排除！**
+**A15：用 `.gitignore` 或 `.claudeignore` 排除！**
 
-方法1：.gitignore（推荐）
+方法1：`.gitignore`（推荐）
 
-Claude Code默认会忽略 .gitignore 里的文件。
+Claude Code默认会忽略 `.gitignore` 里的文件。
 
-方法2：.claudeignore
+方法2：`.claudeignore`
 
-在项目根目录创建 .claudeignore 文件：
+在项目根目录创建 `.claudeignore` 文件：
 
 ```
 # 不让Claude访问的文件
+
 .env
+
 *.key
+
 secrets/
+
 config/production.json
 ```
 
@@ -2974,8 +3048,10 @@ config/production.json
 
 ```
 # 测试到Anthropic的延迟
+
 ping api.anthropic.com
-# 延迟&lt;500ms = 正常，&gt;1000ms = 慢
+
+# 延迟 < 500ms = 正常，> 1000ms = 慢
 ```
 
 **优化方法：**
@@ -2984,7 +3060,7 @@ ping api.anthropic.com
 
 1.  ✅ 减少上下文（不要让AI读太多文件）
 
-1.  ✅ 使用 .claudeignore 排除无关文件
+1.  ✅ 使用 `.claudeignore` 排除无关文件
 
 #### Q17：国内网络访问Anthropic API很慢？
 
@@ -2994,18 +3070,21 @@ ping api.anthropic.com
 
 ```
 # macOS/Linux
+
 export HTTPS_PROXY=http://127.0.0.1:7890
 
 # Windows PowerShell
-$env:HTTPS_PROXY=&quot;http://127.0.0.1:7890&quot;
+
+$env:HTTPS_PROXY="http://127.0.0.1:7890"
 ```
 
 **永久代理（推荐）：**
 
-在 ~/.zshrc 或 ~/.bashrc 添加：
+在 `~/.zshrc` 或 `~/.bashrc` 添加：
 
 ```
 export HTTPS_PROXY=http://127.0.0.1:7890
+
 export HTTP_PROXY=http://127.0.0.1:7890
 ```
 
@@ -3013,9 +3092,9 @@ export HTTP_PROXY=http://127.0.0.1:7890
 
 ### 9.6 错误信息类
 
-#### Q18：启动时报错 claude: command not found？
+#### Q18：启动时报错 `claude: command not found`？
 
-A18：Claude Code没安装或PATH未配置！
+A18：Claude Code没安装或`PATH`未配置！
 
 **解决步骤：**
 
@@ -3031,10 +3110,13 @@ claude --version
 
 ```
 # 检查安装位置
+
 ls ~/.local/bin/claude
 
 # 如果存在，添加到PATH
-echo &#x27;export PATH=&quot;$HOME/.local/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc
+
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+
 source ~/.zshrc
 ```
 
@@ -3042,10 +3124,13 @@ source ~/.zshrc
 
 ```
 # 检查安装位置
-Test-Path &quot;$env:USERPROFILE\.local\bin\claude.exe&quot;
+
+Test-Path "$env:USERPROFILE\.local\bin\claude.exe"
 
 # 如果返回 True，手动添加到 PATH
+
 # 系统设置 → 环境变量 → 用户变量的 Path → 添加：
+
 # %USERPROFILE%\.local\bin
 ```
 
@@ -3063,26 +3148,29 @@ curl -fsSL https://claude.ai/install.sh | bash
 irm https://claude.ai/install.ps1 | iex
 ```
 
-#### Q19：启动时报错 API key not found？
+#### Q19：启动时报错 `API key not found`？
 
-A19：没配置ANTHROPIC_API_KEY环境变量！
+A19：没配置`ANTHROPIC_API_KEY`环境变量！
 
 **快速检查：**
 
 ```
 # 查看环境变量是否存在
+
 echo $ANTHROPIC_API_KEY  # macOS/Linux
+
 echo $env:ANTHROPIC_API_KEY  # Windows
 ```
 
 如果显示空 → 没配置，回到第四部分重新配置。
 
-#### Q20：我之前用npm安装过Claude Code，怎么办？
+#### Q20：我之前用`npm`安装过Claude Code，怎么办？
 
 **A20：官方提供了迁移命令！**
 
 ```
 # 一键迁移到原生版本
+
 claude install
 ```
 
@@ -3092,33 +3180,36 @@ claude install
 
 1.  保留你的所有配置
 
-1.  自动卸载旧的npm版本
+1.  自动卸载旧的`npm`版本
 
 **验证迁移成功：**
 
 ```
 claude --version
+
 # 应显示：Claude Code v2.1.x (native)
+
 # 而不是：(npm)
 ```
 
-如果迁移失败，手动卸载npm版本：
+如果迁移失败，手动卸载`npm`版本：
 
 ```
 npm uninstall -g @anthropic-ai/claude-code
+
 # 然后重新运行原生安装
 ```
 
-#### Q21：原生安装和npm安装有什么区别？
+#### Q21：原生安装和`npm`安装有什么区别？
 
 A21：简单来说，原生安装更简单更稳定！
 
-| 对比项 | 原生安装 ⭐ | npm安装（已废弃） |
+| 对比项 | 原生安装 ⭐ | `npm`安装（已废弃） |
 | --- | --- | --- |
-| 需要Node.js | ❌ 不需要 | ✅ 必须安装 |
+| 需要`Node.js` | ❌ 不需要 | ✅ 必须安装 |
 | 安装时间 | ⏱️ 3-5分钟 | ⏱️ 30-40分钟 |
 | 自动更新 | ✅ 后台自动 | ❌ 需手动运行 |
-| PATH配置 | ✅ 自动完成 | ⚠️ 经常出错 |
+| `PATH`配置 | ✅ 自动完成 | ⚠️ 经常出错 |
 | 稳定性 | ✅ 生产级 | ⚠️ 依赖环境 |
 
 #### Q22：原生安装可以离线使用吗？
@@ -3129,27 +3220,27 @@ A22：可以！安装后只需要网络访问API即可。
 
 +   ✅ 安装后可以离线使用（但需要能访问Anthropic API）
 
-+   ✅ 配合本地模型（如Ollama）可以完全离线
++   ✅ 配合本地模型（如`Ollama`）可以完全离线
 
 #### Q23：原生安装会占用多少空间？
 
 A23：大约100-200MB。
 
-+   Windows: ~150MB 在 C:\Users\你的用户名\.local\bin\
++   Windows: ~150MB 在 `C:\Users\你的用户名\.local\bin\`
 
-+   macOS/Linux: ~100MB 在 ~/.local/bin/ 和 ~/.claude/
++   macOS/Linux: ~100MB 在 `~/.local/bin/` 和 `~/.claude/`
 
-相比npm安装节省约50%空间。
+相比`npm`安装节省约50%空间。
 
-#### Q24：我电脑上已经有Node.js了，还需要卸载吗？
+#### Q24：我电脑上已经有`Node.js`了，还需要卸载吗？
 
 **A24：不需要！可以共存。**
 
-+   ✅ Node.js可以继续用于其他项目
++   ✅ `Node.js`可以继续用于其他项目
 
-+   ✅ Claude Code原生安装不影响Node.js
++   ✅ Claude Code原生安装不影响`Node.js`
 
-+   ✅ 如果你不用Node.js做开发，可以考虑卸载节省空间
++   ✅ 如果你不用`Node.js`做开发，可以考虑卸载节省空间
 
 #### Q25：原生安装会自动更新吗？可以关闭吗？
 
@@ -3159,6 +3250,7 @@ A25：默认自动更新，可以关闭。
 
 ```
 claude --version
+
 # 查看当前版本
 ```
 
@@ -3166,16 +3258,19 @@ claude --version
 
 ```
 # macOS/Linux
+
 export CLAUDE_AUTO_UPDATE=false
 
 # Windows PowerShell
-$env:CLAUDE_AUTO_UPDATE=&quot;false&quot;
+
+$env:CLAUDE_AUTO_UPDATE="false"
 ```
 
 **手动更新：**
 
 ```
 claude install
+
 # 重新运行安装命令即可更新
 ```
 
@@ -3185,15 +3280,15 @@ A26：Windows需要，Mac/Linux不需要！
 
 **Windows：**
 
-+   ⚠️ 建议以管理员身份运行PowerShell
++   ⚠️ 建议以管理员身份运行`PowerShell`
 
-+   原因：需要写入 AppData 目录
++   原因：需要写入 `AppData` 目录
 
 **macOS/Linux：**
 
-+   ✅ 不需要sudo
++   ✅ 不需要`sudo`
 
-+   安装到用户目录 ~/.local/bin/
++   安装到用户目录 `~/.local/bin/`
 
 #### Q27：安装脚本安全吗？会不会有病毒？
 
@@ -3201,7 +3296,7 @@ A27：官方脚本，经过签名和验证！
 
 **安全验证：**
 
-1.  官方域名：claude.ai/install.sh 和 claude.ai/install.ps1
+1.  官方域名：`claude.ai/install.sh` 和 `claude.ai/install.ps1`
 
 1.  代码签名：由Anthropic PBC签名
 
@@ -3211,8 +3306,11 @@ A27：官方脚本，经过签名和验证！
 
 ```
 # 只下载不执行
+
 curl -fsSL https://claude.ai/install.sh
+
 # 阅读后觉得安全再执行
+
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
@@ -3220,9 +3318,9 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 **A20：这样做：**
 
-1.  ✅ 运行 claude --help 查看官方帮助
+1.  ✅ 运行 `claude --help` 查看官方帮助
 
-1.  ✅ 查看日志文件：~/.claude/logs/ 找错误信息
+1.  ✅ 查看日志文件：`~/.claude/logs/` 找错误信息
 
 1.  ✅ 访问官方文档：https://docs.claude.ai/code
 
@@ -3234,7 +3332,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 +   操作系统和版本
 
-+   Claude Code版本（claude --version）
++   Claude Code版本（`claude --version`）
 
 +   完整错误信息（截图或复制文字）
 
@@ -3258,7 +3356,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 如果以上全部勾选，恭喜你已经完成准备工作！🎉
 
-> ⚠️ **2026年更新说明**：本课程已更新为原生安装方式，不再需要Node.js和npm！如果你是从旧版教程过来的，注意核对清单中已删除Node.js相关项。
+> ⚠️ **2026年更新说明**：本课程已更新为原生安装方式，不再需要`Node.js`和`npm`！如果你是从旧版教程过来的，注意核对清单中已删除`Node.js`相关项。
 
 ---
 
@@ -3268,42 +3366,59 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 ```
 # Claude Code版本和帮助
+
 claude --version           # 查看版本（应显示native标识）
+
 claude --help              # 查看帮助
+
 claude /doctor             # 系统诊断
 
 # Claude Code操作
+
 claude                     # 进入交互模式
-claude &quot;你的问题&quot;          # 单次提问
-claude -p &quot;问题&quot;           # 打印模式（脚本友好）
+
+claude "你的问题"          # 单次提问
+
+claude -p "问题"           # 打印模式（脚本友好）
 
 # 更新Claude Code
+
 claude install             # 重新安装/更新到最新版本
 
 # 环境变量查看
+
 $env:ANTHROPIC_API_KEY     # PowerShell 7（推荐）
+
 echo $ANTHROPIC_API_KEY    # macOS/Linux
+
 echo %ANTHROPIC_API_KEY%   # Windows CMD（不推荐）
 
 # 网络测试
+
 ping api.anthropic.com     # 测试连通性
+
 curl -I https://api.anthropic.com  # 测试HTTPS访问
 
 # 配置管理
+
 claude config list         # 查看所有配置
-claude config get &lt;key&gt;    # 查看特定配置
-claude config set &lt;key&gt; &lt;value&gt;  # 设置配置
+
+claude config get <key>    # 查看特定配置
+
+claude config set <key> <value>  # 设置配置
 ```
 
-### B. 从npm迁移到原生安装
+### B. 从`npm`迁移到原生安装
 
-如果你之前通过npm安装过Claude Code，请按以下步骤迁移：
+如果你之前通过`npm`安装过Claude Code，请按以下步骤迁移：
 
 **步骤1：检查当前安装方式**
 
 ```
 claude --version
+
 # 如果显示 (npm) → 需要迁移
+
 # 如果显示 (native) → 已经是原生版本
 ```
 
@@ -3317,10 +3432,11 @@ claude install
 
 ```
 claude --version
+
 # 应显示：Claude Code v2.1.x (native)
 ```
 
-**步骤4：卸载npm版本（可选）**
+**步骤4：卸载`npm`版本（可选）**
 
 ```
 npm uninstall -g @anthropic-ai/claude-code
@@ -3328,7 +3444,7 @@ npm uninstall -g @anthropic-ai/claude-code
 
 **迁移时会保留：**
 
-+   ✅ 所有配置文件（~/.claude/）
++   ✅ 所有配置文件（`~/.claude/`）
 
 +   ✅ API Key配置
 
@@ -3336,79 +3452,95 @@ npm uninstall -g @anthropic-ai/claude-code
 
 +   ✅ 信任目录设置
 
-**特殊场景：使用nvm的用户**
+**特殊场景：使用`nvm`的用户**
 
-如果你用nvm管理多个Node版本，可能需要手动处理：
+如果你用`nvm`管理多个`Node`版本，可能需要手动处理：
 
 ```
 # 1. 对每个Node版本卸载
-nvm use 20
-npm uninstall -g @anthropic-ai/claude-code
 
-nvm use 22
+nvm use 20
+```
+
+
+
+# 1. 卸载旧版本
+
+```
 npm uninstall -g @anthropic-ai/claude-code
+```
+
+```
+nvm use 22
+```
+
+```
+npm uninstall -g @anthropic-ai/claude-code
+```
 
 # 2. 然后运行原生安装
+
+```
 claude install
+```
 
 # 3. 清理nvm shims
+
+```
 rm ~/.asdf/shims/claude  # 如果你用asdf
 ```
 
-### C. 推荐学习资源
+## C. 推荐学习资源
 
 Claude Code官方文档：
 
-+   英文：https://docs.anthropic.com/en/docs/claude-code
-
-+   中文：https://code.claude.com/docs/en/
++   英文：`https://docs.anthropic.com/en/docs/claude-code`
++   中文：`https://code.claude.com/docs/en/`
 
 Anthropic API文档：
 
-+   https://docs.anthropic.com/
++   `https://docs.anthropic.com/`
 
-**终端使用教程：**
+### 终端使用教程：
 
-+   Windows Terminal：https://learn.microsoft.com/zh-cn/windows/terminal/
++   Windows Terminal：`https://learn.microsoft.com/zh-cn/windows/terminal/`
++   macOS终端：`https://support.apple.com/zh-cn/guide/terminal/`
 
-+   macOS终端：https://support.apple.com/zh-cn/guide/terminal/
+### 社区支持：
 
-**社区支持：**
-
-+   Claude Discord：https://discord.gg/anthropic
-
-+   GitHub Discussions：https://github.com/anthropics/claude-code/discussions
++   Claude Discord：`https://discord.gg/anthropic`
++   GitHub Discussions：`https://github.com/anthropics/claude-code/discussions`
 
 ---
 
-**课程制作****：老金
+课程制作：老金
 
-****最后****更新**：2026年2月（原生安装版本）
+最后更新：2026年2月（原生安装版本）
 
-版本：V3.0（原生安装重大更新版）
+版本：`V3.0`（原生安装重大更新版）
 
-许可：本课程采用CC BY-NC-SA 4.0许可
+许可：本课程采用`CC BY-NC-SA 4.0`许可
 
 ---
 
-### 版本更新日志
+## 版本更新日志
 
-#### V3.0 重大更新（2026-02-02）
+### V3.0 重大更新（2026-02-02）
 
 | 更新项 | 变化说明 |
 | --- | --- |
-| **安装方式** | 从npm安装切换到原生安装 |
-| **Node.js** | **不再需要**Node.js和npm |
-| **安装时间** | 从40分钟缩短到5分钟 |
-| **自动更新** | 新增后台自动更新功能 |
-| **系统要求** | 简化系统要求检查清单 |
-| **FAQ** | 新增8个原生安装相关常见问题 |
-| **迁移指南** | 新增从npm迁移到原生的完整指南 |
+| 安装方式 | 从`npm`安装切换到原生安装 |
+| `Node.js` | 不再需要`Node.js`和`npm` |
+| 安装时间 | 从40分钟缩短到5分钟 |
+| 自动更新 | 新增后台自动更新功能 |
+| 系统要求 | 简化系统要求检查清单 |
+| FAQ | 新增8个原生安装相关常见问题 |
+| 迁移指南 | 新增从`npm`迁移到原生的完整指南 |
 
-#### V2.1 修正内容（2025-12-23）
+### V2.1 修正内容（2025-12-23）
 
 | 修正项 | 问题 | 修正后 |
 | --- | --- | --- |
-| API测试模型名称 | claude-sonnet-4-20250514 格式和日期错误 | 修正为 claude-sonnet-4-6 |
+| API测试模型名称 | `claude-sonnet-4-20250514` 格式和日期错误 | 修正为 `claude-sonnet-4-6` |
 
-> 💡 审**查方法：**基于官方Claude API文档验证模型名称准确性。
+> 💡 审查方法：基于官方Claude API文档验证模型名称准确性。

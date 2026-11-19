@@ -1,8 +1,7 @@
-# The rise of "context engineering"
-
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/BFMpdNu62ozL2TxKyUvcCfMVn8f](https://v11enp9ok1h.feishu.cn/docx/BFMpdNu62ozL2TxKyUvcCfMVn8f)
 
 # “上下文工程”的兴起
+
+> 来源：[https://v11enp9ok1h.feishu.cn/docx/BFMpdNu62ozL2TxKyUvcCfMVn8f](https://v11enp9ok1h.feishu.cn/docx/BFMpdNu62ozL2TxKyUvcCfMVn8f)
 
 上下文工程是构建动态系统，以正确的格式提供正确的信息和工具，使大语言模型（LLM）能够合理地完成任务。
 
@@ -44,17 +43,15 @@
 
 当智能体系统出错时，很大程度上是因为大语言模型（LLM）出了问题。从第一性原理思考，大语言模型出错有两个原因：
 
-基础模型刚刚出错了，它还不够好
-
-基础模型没有被传递适当的上下文来生成良好的输出
+- 基础模型刚刚出错了，它还不够好
+- 基础模型没有被传递适当的上下文来生成良好的输出
 
 通常（尤其是随着模型性能提升），模型错误更多是由第二个原因造成的。传递给模型的上下文可能由于以下几个原因而存在问题：
 
-模型做出正确决策所需的上下文缺失。模型不是读心术者。如果你不提供正确的上下文，它们就不会知道其存在。
+- 模型做出正确决策所需的上下文缺失。模型不是读心术者。如果你不提供正确的上下文，它们就不会知道其存在。
+- 上下文格式设置不佳。就像人类一样，沟通很重要！向模型传递数据时的格式绝对会影响其响应方式
 
-上下文格式设置不佳。就像人类一样，沟通很重要！向模型传递数据时的格式绝对会影响其响应方式
-
-上下文工程与提示工程有何不同？
+## 上下文工程与提示工程有何不同？
 
 为什么从“提示词”转向“上下文”？早期，开发者专注于巧妙地组织提示词，以诱使得到更好的回答。但随着应用程序变得越来越复杂，向AI提供完整且结构化的上下文远比任何巧妙的措辞重要得多，这一点正变得越来越明显。
 
@@ -66,17 +63,13 @@
 
 良好上下文工程的一些基本示例包括：
 
-工具使用：确保如果智能体需要访问外部信息，它有能够访问这些信息的工具。当工具返回信息时，其格式会被设置为最易于大语言模型（LLM）理解的方式
+- 工具使用：确保如果智能体需要访问外部信息，它有能够访问这些信息的工具。当工具返回信息时，其格式会被设置为最易于大语言模型（LLM）理解的方式
+- 短期记忆：如果对话持续了一段时间，就创建一个对话摘要，并在未来使用该摘要。
+- 长期记忆：如果用户在之前的对话中表达过偏好，能够获取该信息。
+- 提示工程：关于智能体应如何表现的指令在提示中被清晰地列举出来。
+- 检索：在调用大语言模型（LLM）之前动态获取信息并将其插入到提示中。
 
-短期记忆：如果对话持续了一段时间，就创建一个对话摘要，并在未来使用该摘要。
-
-长期记忆：如果用户在之前的对话中表达过偏好，能够获取该信息。
-
-提示工程：关于智能体应如何表现的指令在提示中被清晰地列举出来。
-
-检索：在调用大语言模型（LLM）之前动态获取信息并将其插入到提示中。
-
-LangGraph如何实现上下文工程
+### LangGraph如何实现上下文工程
 
 当我们构建LangGraph时，我们的目标是使其成为最具可控性的智能体框架。这也使其能够完美地实现上下文工程。
 
@@ -86,7 +79,7 @@ LangGraph如何实现上下文工程
 
 旁注：德克斯·霍西（Dex Horthy）的《12要素智能体》是一本非常值得一读的书。其中很多观点都与上下文工程相关（如“掌控你的提示”“掌控你的上下文构建”等）。本博客的标题图片也取自德克斯。我们非常欣赏他阐述该领域重要内容的方式。
 
-## LangSmith如何助力上下文工程
+### LangSmith如何助力上下文工程
 
 LangSmith是我们的大语言模型（LLM）应用可观测性和评估解决方案。LangSmith的关键特性之一是能够追踪你的智能体调用。尽管在我们开发LangSmith时，“上下文工程”这个术语还不存在，但它恰如其分地描述了这种追踪的作用。
 
@@ -108,51 +101,49 @@ Most of the time when an agent is not performing reliably the underlying cause i
 
 LLM applications are evolving from single prompts to more complex, dynamic agentic systems. As such, context engineering is becoming the most important skill an AI engineer can develop.
 
-## What is context engineering?
+### What is context engineering?
 
 Context engineering is building dynamic systems to provide the right information and tools in the right format such that the LLM can plausibly accomplish the task.
 
 This is the definition that I like, which builds upon recent takes on this from Tobi Lutke, Ankur Goyal, and Walden Yan. Let’s break it down.
 
-## Context engineering is a system
+### Context engineering is a system
 
 Complex agents likely get context from many sources. Context can come from the developer of the application, the user, previous interactions, tool calls, or other external data. Pulling these all together involves a complex system.
 
-## This system is dynamic
+### This system is dynamic
 
 Many of these pieces of context can come in dynamically. As such, the logic for constructing the final prompt needs to be dynamic as well. It is not just a static prompt.
 
-## You need the right information
+### You need the right information
 
 A common reason agentic systems don’t perform is they just don’t have the right context. LLMs cannot read minds - you need to give them the right information. Garbage in, garbage out.
 
-## You need the right tools
+### You need the right tools
 
 It may not always be the case that the LLM will be able to solve the task just based solely on the inputs. In these situations, if you want to empower the LLM to do so, you will want to make sure that it has the right tools. These could be tools to look up more information, take actions, or anything in between. Giving the LLM the right tools is just as important as giving it the right information.
 
-## The format matters
+### The format matters
 
 Just like communicating with humans, how you communicate with LLMs matters. A short but descriptive error message will go a lot further a large JSON blob. This also applies to tools. What the input parameters to your tools are matters a lot when making sure that LLMs can use them.
 
-## Can it plausibly accomplish the task?
+### Can it plausibly accomplish the task?
 
 This is a great question to be asking as you think about context engineering. It reinforces that LLMs are not mind readers - you need to set them up for success. It also helps separate the failure modes. Is it failing because you haven’t given it the right information or tools? Or does it have all the right information and it just messed up? These failure modes have very different ways to fix them.
 
-## Why is context engineering important
+### Why is context engineering important
 
 When agentic systems mess up, it’s largely because an LLM messes. Thinking from first principles, LLMs can mess up for two reasons:
 
-The underlying model just messed up, it isn’t good enough
-
-The underlying model was not passed the appropriate context to make a good output
+- The underlying model just messed up, it isn’t good enough
+- The underlying model was not passed the appropriate context to make a good output
 
 More often than not (especially as the models get better) model mistakes are caused more by the second reason. The context passed to the model may be bad for a few reasons:
 
-There is just missing context that the model would need to make the right decision. Models are not mind readers. If you do not give them the right context, they won’t know it exists.
+- There is just missing context that the model would need to make the right decision. Models are not mind readers. If you do not give them the right context, they won’t know it exists.
+- The context is formatted poorly. Just like humans, communication is important! How you format data when passing into a model absolutely affects how it responds
 
-The context is formatted poorly. Just like humans, communication is important! How you format data when passing into a model absolutely affects how it responds
-
-How is context engineering different from prompt engineering?
+### How is context engineering different from prompt engineering?
 
 Why the shift from “prompts” to “context”? Early on, developers focused on phrasing prompts cleverly to coax better answers. But as applications grow more complex, it’s becoming clear that providing complete and structured context to the AI is far more important than any magic wording.
 
@@ -160,13 +151,14 @@ I would also argue that prompt engineering is a subset of context engineering. E
 
 I would also highlight that a key part of context is often core instructions for how the LLM should behave. This is often a key part of prompt engineering. Would you say that providing clear and detailed instructions for how the agent should behave is context engineering or prompt engineering? I think it’s a bit of both.
 
-## Examples of context engineering
+### Examples of context engineering
 
 Some basic examples of good context engineering include:
 
-Tool use: Making sure that if an agent needs access to external information, it has tools that can access it. When tools return information, they are formatted in a way that is maximally digestable for LLMs
+- Tool use: Making sure that if an agent needs access to external information, it has tools that can access it. When tools return information, they are formatted in a way that is maximally digestable for LLMs
+- Short term memory: If a conversation is going on for a while, creating a summary of the conversation and using that in the future.
 
-Short term memory: If a conversation is going on for a while, creating a summary of the conversation and using that in the future.
+
 
 Long term memory: If a user has expressed preferences in a previous conversation, being able to fetch that information.
 
@@ -174,7 +166,7 @@ Prompt Engineering: Instructions for how an agent should behave are clearly enum
 
 Retrieval: Fetching information dynamically and inserting it into the prompt before calling the LLM.
 
-How LangGraph enables context engineering
+# How LangGraph enables context engineering
 
 When we built LangGraph, we built it with the goal of making it the most controllable agent framework. This also allows it to perfectly enable context engineering.
 

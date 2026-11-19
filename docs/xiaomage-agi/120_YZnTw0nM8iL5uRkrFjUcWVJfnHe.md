@@ -1,38 +1,33 @@
+
 # 实操教程：DucHaiten-AIart
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/ROvadQKdDoQ4M6x8r5tcfBmHnFe](https://xmgtoagi.feishu.cn/docx/ROvadQKdDoQ4M6x8r5tcfBmHnFe)
 
 作者：小梁子
 
-原文：https://mp.weixin.qq.com/s/K0cvQRWvc-rTJXuSdN_Hag
+原文：`https://mp.weixin.qq.com/s/K0cvQRWvc-rTJXuSdN_Hag`
 
-模型下载地址
+## 模型下载地址
 
-> **C站**：h**ttps://c**ivitai.com/models/118756/duchaiten-aiart-sdxlliblibAI：https://www.liblib.art/modelinfo/037c05eba3d643b8800a0d8206233f24
+> C站：`https://civitai.com/models/118756/duchaiten-aiart-sdxl`
+> liblibAI：`https://www.liblib.art/modelinfo/037c05eba3d643b8800a0d8206233f24`
 
-下面C站上面关于该模型使用时相关参数设置的建议：
+下面 C 站上面关于该模型使用时相关参数设置的建议：
 
 ![](img/49c96f91a1ce44e4e1fbedc24ec22e49.png)
 
 下面我们来实际体验一下，看使用这个模型出来的图片效果如何吧。
 
-公共参数设置
+## 公共参数设置
 
-+   大模型：DucHaiten-AIart-SDXL
++ 大模型：DucHaiten-AIart-SDXL
++ 采样器：Euler a
++ 采样迭代步数：50
++ CFG：7-9
 
-+   采样器：Euler a
+## 生成示例
 
-+   采样迭代步数：50
-
-+   CFG：7-9
-
-1.  **粉红女孩**
-
-+
-
-+
-
-+
+### 粉红女孩
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,original,extremely detailed wallpaper,floating petals,garden,wind,1girl,solo,long hair,reflection eyes,thin lips,soft smile,hair ornament,smile,bangs,blunt bangs,braid,upper body,looking at viewer,closed mouth,3D,((realistic)),light particles,sunlight,light from side,blush,
@@ -42,11 +37,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/33452017efc90bebe317cd34d2e1de16.png)
 
-1.  **旗袍美女**
-
-+
-
-+
+### 旗袍美女
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,A girl,solid color background,multi posture,wearing Chinese cheongsam,tight,front photo,perfect hands,full body,
@@ -56,11 +47,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/8a22903855ac7f5b670d4074608d91e7.png)
 
-1.  **小伙子**
-
-+
-
-+
+### 小伙子
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,A boy, 18 years old, short hair, black clothes, looking at the camera, standing, hall, Makoto Shinkai style, bright colors, front view
@@ -70,13 +57,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/04108f5559d2d66ab1bf17bdef6e4c36.png)
 
-1.  **黄金铠甲**
-
-+
-
-+
-
-+
+### 黄金铠甲
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,beautiful Valkyrie wearing bulky golden plate armor, spiky golden gauntlets, scale tiara, halo, scale golden wings, golden cape, huge scaly pauldrons,(clouds and stars, golden gates), (sparkles, sparkling scales, sparkling eyes), sharp focus, (glossy gold clothing, glittering gold fabric),
@@ -86,11 +67,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/a2c45ab01377b5657dcc19aca666f52e.png)
 
-1.  **雪枝上的知更鸟**
-
-+
-
-+
+### 雪枝上的知更鸟
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,Robin in snowy tree
@@ -100,11 +77,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/5665fd06a7c7f9d78cc29bce29cb06ec.png)
 
-1.  **糖果兔子**
-
-+
-
-+
+### 糖果兔子
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,a lucky bunny made of white sugar,beautiful cute smiling made of marzipan,3d,glitter background in green and white,lucky clover,sharp focus,
@@ -114,11 +87,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/46228629a1c284dcf4903072ba3de5c3.png)
 
-1.  **小袋鼠骑滑板车**
-
-+
-
-+
+### 小袋鼠骑滑板车
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,a kangaroo riding a scooter to work on a city street,establishing shot,artistic,hyperrealistic,
@@ -126,11 +95,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/7e8d5fdba17afad45cf0229ca7b23b9d.png)
 
-1.  **海底世界**
-
-+
-
-+
+### 海底世界
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,underwater world,dreamy,colorful,magical,peculiar,pink light hits the bottom of the sea
@@ -140,9 +105,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/4a81fbc81fb8ecbce660dafe52b3f5a1.png)
 
-1.  **日落**
-
-+
+### 日落
 
 ```
 sunset, boardwalk, palm trees, synthwave, neon
@@ -152,11 +115,7 @@ sunset, boardwalk, palm trees, synthwave, neon
 
 ![](img/bd388231e637e1152d9933b2f08892f2.png)
 
-1.  **月夜下的灯船**
-
-+
-
-+
+### 月夜下的灯船
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,Under the lights of fishing boats, on a moonlit autumn night, with cold river water, dark maple leaves, and white reed flowers, With a background of magnificent palaces and pavilions adorned with gold and jade
@@ -166,11 +125,7 @@ best quality,masterpiece,ultra detailed,finely detail,intricate details,high res
 
 ![](img/236e7c9522e1e2d84de5328a2f428fd3.png)
 
-1.  **月夜下的瀑布**
-
-+
-
-+
+### 月夜下的瀑布
 
 ```
 best quality,masterpiece,ultra detailed,finely detail,intricate details,high resolution,8K,UHD,night,moon,waterfall,

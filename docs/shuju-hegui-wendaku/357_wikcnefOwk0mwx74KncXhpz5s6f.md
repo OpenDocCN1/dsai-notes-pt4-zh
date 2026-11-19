@@ -1,6 +1,7 @@
+
 # 单独同意落地
 
-> 来源：[https://docs.feishu.cn/docx/W607dznNyojwAKxyXcPcm63DnXc](https://docs.feishu.cn/docx/W607dznNyojwAKxyXcPcm63DnXc)
+> 来源：`https://docs.feishu.cn/docx/W607dznNyojwAKxyXcPcm63DnXc`
 
 **-问**：大家有讨论过单独同意这件事究竟如何做吗？同时需要跨境传输、收集敏感信息、第三方传输，一个场景，一键勾选同意行得通吗？单独同意从出来到现在困扰大半年了，有什么好案例吗？
 

@@ -1,16 +1,12 @@
+
 # Transformer的输入（附代码）
 
-> 来源：[https://geekbang.feishu.cn/docx/VBnvdNkFuoK913x0leQcR3bQn0g](https://geekbang.feishu.cn/docx/VBnvdNkFuoK913x0leQcR3bQn0g)
-
-> 👨🏻 作者：加里
-
-> 📃 作者介绍：目前就职于金融银行AI部门，资深解决方案架构师。
-
-> 🛖 👸号：AIWithGary
-
-> ⏰ 收录时间：2024-05-27 11:20:58 (UTC+8)
-
-> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484802&idx=1&sn=eec0fd1e743f29e12765f35529c1f3de&chksm=fd6173cfca16fad9167681207636cbc55aa5619f49de8f6962c6f85c336461d4e5900b945b87#rd)q.com/s?__biz=Mz...
+> 来源：https://geekbang.feishu.cn/docx/VBnvdNkFuoK913x0leQcR3bQn0g  
+> 👨🏻 作者：加里  
+> 📃 作者介绍：目前就职于金融银行AI部门，资深解决方案架构师。  
+> 🛖 👸号：AIWithGary  
+> ⏰ 收录时间：2024-05-27 11:20:58 (UTC+8)  
+> 🔗 原文链接：<https://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484802&idx=1&sn=eec0fd1e743f29e12765f35529c1f3de&chksm=fd6173cfca16fad9167681207636cbc55aa5619f49de8f6962c6f85c336461d4e5900b945b87#rd>
 
 ![](img/f6523d9d669e37f92e46bd54f054fdf3.png)
 
@@ -20,152 +16,131 @@
 
 接下来，我们将逐层剖析Transformer如何接收并处理输入数据，从定义数据集到计算位置编码，每一步都至关重要；通过本文，朋友们将深刻理解Transformer输入处理流程，并学会如何准备数据以供模型学习；我们将使用一个简化的数据集来直观展示数值计算过程，帮助朋友们更好地理解这一复杂但强大的架构。
 
-目录
+## 目录
 
-1. 定义数据集（语料库）
+1. 定义数据集（语料库）  
+2. 定义词汇表  
+3. 分词编码（Tokenization）  
+3.1 代码实现  
+4. 计算分词嵌入（Embedding）  
+4.1 代码实现  
+5. 计算位置编码（Positional Encoding）  
+6. 连接位置编码和分词嵌入  
+6.1 代码实现  
+7. 总结  
 
-2. 定义词汇表
-
-3. 分词编码（Tokenization）
-
-3.1 代码实现
-
-4. 计算分词嵌入（Embedding）
-
-4.1 代码实现
-
-5. 计算位置编码（Positional Encoding）
-
-6. 连接位置编码和分词嵌入
-
-6.1 代码实现
-
-7. 总结
-
-# 01
-
-定义数据集
+## 01 定义数据集
 
 ChatGPT创建时使用的数据集大小大概是570GB的资料，为了能简单直观地讲解，今天我们将使用一个非常小的数据集来进行数值计算的可视化。
 
 ![](img/e27c392e8535941c65699653ac0a2cc6.png)
 
-# 02
+## 02 定义词汇表
 
-定义词汇表
+词汇量指的是数据集中唯一分词（`Token`）的总数，它可以使用以下公式计算，其中`N`表示数据集中的`Token`总数。
 
-词汇量指的是数据集中唯一分词（Token）的总数，它可以使用以下公式计算，其中N表示数据集中的Token总数。
-
-本文之后都把这里的唯一分词表述为Token。
+本文之后都把这里的唯一分词表述为`Token`。
 
 ![](img/91280f237f61c0abdbdb8ae4cd2b3ec3.png)
 
-为了能找到N，我们需要将数据集拆分为Token，也就是我们本系列文章 第三篇Tokenization 。
+为了能找到`N`，我们需要将数据集拆分为`Token`，也就是我们本系列文章 第三篇Tokenization 。
 
 ![](img/d38e7cb2c4abde4c514d67751ad97ab9.png)
 
-在获取到N后，我们进行一个集合操作来去除重复的单词，然后就可以统计唯一Token的数量，确定词汇量的大小。
+在获取到`N`后，我们进行一个集合操作来去除重复的单词，然后就可以统计唯一`Token`的数量，确定词汇量的大小。
 
 ![](img/1c2b8acc777da2591cc8dad96160a57a.png)
 
-因此，词汇量大小为16，即数据集中有16个唯一Token。
+因此，词汇量大小为16，即数据集中有16个唯一`Token`。
 
-# 03
+## 03 分词编码
 
-分词编码
-
-现在，我们需要为每个唯一的Token分配一个唯一的数字。
+现在，我们需要为每个唯一的`Token`分配一个唯一的数字。
 
 ![](img/40427bc36cd0e5dcaf2ec21a5a1b746d.png)
 
-简单来说，我们将一个Token视为一个单词，并为其分配一个数字，而ChatGPT不一定是一个单词一个Token，有可能单词的一部分视为一个Token，比如，本文数据集中的讲，神，架三个字都是被分成了2个Token；在ChatGPT中，平均大概1Token = 0.75个单词。
+简单来说，我们将一个`Token`视为一个单词，并为其分配一个数字，而ChatGPT不一定是一个单词一个`Token`，有可能单词的一部分视为一个`Token`，比如，本文数据集中的讲，神，架三个字都是被分成了2个`Token`；在ChatGPT中，平均大概1`Token` = 0.75个单词。
 
-代码实现
+### 代码实现
 
-```
+```python
 import tiktoken
 
-def num_tokens_from_string(string: str, encoding_name: str) -&gt; int:
+def num_tokens_from_string(string: str, encoding_name: str) -> int:
+    """Returns the number of tokens in a text string."""
+    encoding = tiktoken.get_encoding(encoding_name)
+    num_tokens = len(encoding.encode(string))
+    return num_tokens
 
- &quot;&quot;&quot;Returns the number of tokens in a text string.&quot;&quot;&quot;
- 
- encoding = tiktoken.get_encoding(encoding_name)
- 
- num_tokens = len(encoding.encode(string))
- 
- return num_tokens
-
-input_str =&quot;用简单语言讲解Transformer神经网络架构&quot;
-print(f&quot;input_str: {input_str}&quot;)
+input_str = "用简单语言讲解Transformer神经网络架构"
+print(f"input_str: {input_str}")
 # input_str: 用简单语言讲解Transformer神经网络架构
 
-encoding = tiktoken.encoding_for_model(&quot;gpt-3.5-turbo&quot;)
+encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 tokens = encoding.encode(input_str)
-print(f&quot;tokens: {tokens}&quot;)
+print(f"tokens: {tokens}")
 # tokens: [11883, 99337, 24946, 73981, 78244, 10414, 110, 50338, 47458, 55228, 252, 54493, 72456, 20119, 114, 78935]
 
-num_tokens = num_tokens_from_string(&quot;用简单语言讲解Transformer神经网络架构&quot;, &quot;cl100k_base&quot;)
-print(f&quot;num_tokens: {num_tokens}&quot;)
+num_tokens = num_tokens_from_string("用简单语言讲解Transformer神经网络架构", "cl100k_base")
+print(f"num_tokens: {num_tokens}")
 # num_tokens: 16
 
 decode_input_str = encoding.decode(tokens)
-print(f&quot;decode_input_str: {decode_input_str}&quot;)
+print(f"decode_input_str: {decode_input_str}")
 # decode_input_str: 用简单语言讲解Transformer神经网络架构
 
 bytes_list = [encoding.decode_single_token_bytes(token) for token in tokens]
-print(f&quot;bytes_list: {bytes_list}&quot;)
-# bytes_list: [b&#x27;\xe7\x94\xa8&#x27;,
-# b&#x27;\xe7\xae\x80&#x27;,
-# b&#x27;\xe5\x8d\x95&#x27;,
-# b&#x27;\xe8\xaf\xad&#x27;,
-# b&#x27;\xe8\xa8\x80&#x27;,
-# b&#x27;\xe8\xae&#x27;, b&#x27;\xb2&#x27;, 讲
-# b&#x27;\xe8\xa7\xa3&#x27;,
-# b&#x27;Transformer&#x27;,
-# b&#x27;\xe7\xa5&#x27;, b&#x27;\x9e&#x27;, 神
-# b&#x27;\xe7\xbb\x8f&#x27;,
-# b&#x27;\xe7\xbd\x91\xe7\xbb\x9c&#x27;,
-# b&#x27;\xe6\x9e&#x27;, b&#x27;\xb6&#x27;, 架
-# b&#x27;\xe6\x9e\x84&#x27;]
+print(f"bytes_list: {bytes_list}")
+# bytes_list: [b'\xe7\x94\xa8',
+# b'\xe7\xae\x80',
+# b'\xe5\x8d\x95',
+# b'\xe8\xaf\xad',
+# b'\xe8\xa8\x80',
+# b'\xe8\xae\xb2', 讲
+# b'\xe8\xa7\xa3',
+# b'Transformer',
+# b'\xe7\xa5\x9e', 神
+# b'\xe7\xbb\x8f',
+# b'\xe7\xbd\x91\xe7\xbb\x9c',
+# b'\xe6\x9e\xb6', 架
+# b'\xe6\x9e\x84']
 
-pre_bytes = b&#x27;&#x27;
+pre_bytes = b''
 for i, bytes in enumerate(bytes_list):
- # Attempt to decode the current bytes
- string = (pre_bytes + bytes).decode(&quot;utf-8&quot;, &quot;ignore&quot;)
- print(f&quot;bytes_list{i}: {(pre_bytes + bytes)} -&gt; {string}&quot;)
- if string:
- # If successful, print the result and reset pre_bytes
- pre_bytes = b&#x27;&#x27;
- else:
- # If not successful, append the current bytes to pre_bytes for the next iteration
- pre_bytes += bytes
-# bytes_list0: b&#x27;\xe7\x94\xa8&#x27; -&gt; 用
-# bytes_list1: b&#x27;\xe7\xae\x80&#x27; -&gt; 简
-# bytes_list2: b&#x27;\xe5\x8d\x95&#x27; -&gt; 单
-# bytes_list3: b&#x27;\xe8\xaf\xad&#x27; -&gt; 语
-# bytes_list4: b&#x27;\xe8\xa8\x80&#x27; -&gt; 言
-# bytes_list5: b&#x27;\xe8\xae&#x27; -&gt;
-# bytes_list6: b&#x27;\xe8\xae\xb2&#x27; -&gt; 讲
-# bytes_list7: b&#x27;\xe8\xa7\xa3&#x27; -&gt; 解
-# bytes_list8: b&#x27;Transformer&#x27; -&gt; Transformer
-# bytes_list9: b&#x27;\xe7\xa5&#x27; -&gt;
-# bytes_list10: b&#x27;\xe7\xa5\x9e&#x27; -&gt; 神
-# bytes_list11: b&#x27;\xe7\xbb\x8f&#x27; -&gt; 经
-# bytes_list12: b&#x27;\xe7\xbd\x91\xe7\xbb\x9c&#x27; -&gt; 网络
-# bytes_list13: b&#x27;\xe6\x9e&#x27; -&gt;
-# bytes_list14: b&#x27;\xe6\x9e\xb6&#x27; -&gt; 架
-# bytes_list15: b&#x27;\xe6\x9e\x84&#x27; -&gt; 构
+    # Attempt to decode the current bytes
+    string = (pre_bytes + bytes).decode("utf-8", "ignore")
+    print(f"bytes_list{i}: {(pre_bytes + bytes)} -> {string}")
+    if string:
+        # If successful, print the result and reset pre_bytes
+        pre_bytes = b''
+    else:
+        # If not successful, append the current bytes to pre_bytes for the next iteration
+        pre_bytes += bytes
+# bytes_list0: b'\xe7\x94\xa8' -> 用
+# bytes_list1: b'\xe7\xae\x80' -> 简
+# bytes_list2: b'\xe5\x8d\x95' -> 单
+# bytes_list3: b'\xe8\xaf\xad' -> 语
+# bytes_list4: b'\xe8\xa8\x80' -> 言
+# bytes_list5: b'\xe8\xae\xb2' ->
+# bytes_list6: b'\xe8\xae\xb2' -> 讲
+# bytes_list7: b'\xe8\xa7\xa3' -> 解
+# bytes_list8: b'Transformer' -> Transformer
+# bytes_list9: b'\xe7\xa5\x9e' ->
+# bytes_list10: b'\xe7\xa5\x9e' -> 神
+# bytes_list11: b'\xe7\xbb\x8f' -> 经
+# bytes_list12: b'\xe7\xbd\x91\xe7\xbb\x9c' -> 网络
+# bytes_list13: b'\xe6\x9e\xb6' ->
+# bytes_list14: b'\xe6\x9e\xb6' -> 架
+# bytes_list15: b'\xe6\x9e\x84' -> 构
 ```
 
-# 04
-
-计算分词嵌入
+## 04 计算分词嵌入
 
 在[对整个数据集进行编码后，现](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484599&idx=1&sn=7a7707295fb751aef0693c32d2d56137&chksm=fd6172faca16fbec2c226137bd31d0b64ac8c6b3a7c266c2890ef03cf88d501437d41f6376bb&scene=21#wechat_redirect)在是选择输入并开始使用Transformer架构进行分词处理的时候了，也就是我们本系列文章 第二篇Embedding 。
 
 ![](img/bda86928cd0d34cb8572de8d3056821e.png)
 
-我们已经选择了输入，并且需要为其找到一个嵌入向量；原始论文中将每个输入Token用一个512维的嵌入向量表示。
+我们已经选择了输入，并且需要为其找到一个嵌入向量；原始论文中将每个输入`Token`用一个512维的嵌入向量表示。
 
 ![](img/8597f37bb09462b0accde9ac39482887.png)
 
@@ -173,27 +148,27 @@ for i, bytes in enumerate(bytes_list):
 
 ![](img/ad019cc30fa6660b561b01873574aa76.png)
 
-这些嵌入向量的值在0到1之间，并在开始时以随机方式填充；随着我们的Transformer开始理解Token之间的含义，这些值将会被更新。
+这些嵌入向量的值在0到1之间，并在开始时以随机方式填充；随着我们的Transformer开始理解`Token`之间的含义，这些值将会被更新。
 
-代码实现
+### 代码实现
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI()
 
-# tokens of &quot;用简单语言讲解Transformer神经网络架构&quot;
+# tokens of "用简单语言讲解Transformer神经网络架构"
 tokens = [11883, 99337, 24946, 73981, 78244, 10414, 110, 50338, 47458, 55228, 252, 54493, 72456, 20119, 114, 78935]
 tokens_as_strings = [str(token) for token in tokens]
 response = client.embeddings.create(
- model=&quot;text-embedding-3-small&quot;, input=tokens_as_strings, encoding_format=&quot;float&quot;, dimensions=6)
+    model="text-embedding-3-small", input=tokens_as_strings, encoding_format="float", dimensions=6)
 
-print(f&quot;length of tokens: {len(response.data)}&quot;)
+print(f"length of tokens: {len(response.data)}")
 # length of tokens: 16
 
 for i in range(len(response.data)):
- embedding_dim = response.data[i].embedding
- print(f&quot;embedding_dim[{i:02}]: {embedding_dim}&quot;)
+    embedding_dim = response.data[i].embedding
+    print(f"embedding_dim[{i:02}]: {embedding_dim}")
 # embedding_dim[00]: [-0.3633453, -0.33893964, 0.5140128, 0.32748395, -0.3561232, -0.5047984]
 # embedding_dim[01]: [-0.48211774, 0.33215308, 0.7394951, 0.078132406, -0.028996263, -0.32161838]
 # embedding_dim[02]: [-0.19790855, -0.034714203, 0.86141354, 0.06291166, -0.40263462, -0.22698326]
@@ -212,35 +187,33 @@ for i in range(len(response.data)):
 # embedding_dim[15]: [-0.62758964, 0.3103241, 0.59859884, 0.18160084, 0.013691519, -0.3440106]
 ```
 
-# 05
+## 05 计算位置编码
 
-计算位置嵌入
-
-现在我们需要为输入找到位置嵌入；根据每个分词嵌入向量中的第i个值的位置，有两个公式可用于计算位置嵌入。
+现在我们需要为输入找到位置编码；根据每个分词嵌入向量中的第`i`个值的位置，有两个公式可用于计算位置编码。
 
 ![](img/885cac39cc84094f5525dfa400ccdf14.png)
 
-正如你看到的，我们的输入句子是 " 用简单语言讲解Transformer神经网络架构 "，第二个字是 " 简 "，它的索引（POS）是1，起始索引值为0，维度（d）为6；对于i，是0到5，我们要计算输入句子的第二个字“ 简 ”的位置嵌入。
+正如你看到的，我们的输入句子是 " 用简单语言讲解Transformer神经网络架构 "，第二个字是 " 简 "，它的索引（`POS`）是1，起始索引值为0，维度（`d`）为6；对于`i`，是0到5，我们要计算输入句子的第二个字“ 简 ”的位置编码。
 
 ![](img/c08187c74722c389ad15e4c46671790e.png)
 
-同样地，我们可以计算输入句子中所有Token的位置嵌入。
+同样地，我们可以计算输入句子中所有`Token`的位置编码。
 
 ![](img/558c5f0a06c004b362bb8cba1325345d.png)
 
-# 06
+## 06 连接位置编码和分词嵌入
 
-连接位置嵌入和分词嵌入
-
-计算完位置嵌入后，我们需要将分词嵌入和位置嵌入相加。
+计算完位置编码后，我们需要将分词嵌入和位置编码相加。
 
 ![](img/28047eede9946a8a577c049e6ab71dbc.png)
 
-将这两个矩阵（分词嵌入矩阵和位置嵌入矩阵）合并后得到的矩阵将作为编码器部分的输入。
+将这两个矩阵（分词嵌入矩阵和位置编码矩阵）合并后得到的矩阵将作为编码器部分的输入。
 
-代码实现
+### 代码实现
 
-```
+
+
+```python
 import torch
 import math
 
@@ -257,7 +230,7 @@ div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) /
 pe[:, 0::2] = torch.sin(position * div_term) # sin(position * (10000 ** (2i / d_model))
 # Apply cosine to odd indices
 pe[:, 1::2] = torch.cos(position * div_term) # cos(position * (10000 ** (2i / d_model))
-print(f&quot;positional embedding: {pe}&quot;)
+print(f"positional embedding: {pe}")
 # positional embedding: tensor([[ 0.0000, 1.0000, 0.0000, 1.0000, 0.0000, 1.0000],
 # [ 0.8415, 0.5403, 0.0464, 0.9989, 0.0022, 1.0000],
 # [ 0.9093, -0.4161, 0.0927, 0.9957, 0.0043, 1.0000],
@@ -294,7 +267,7 @@ x = torch.tensor([
 [0.119970955, -0.5766705, 0.5151158, 0.28266576, 0.17140155, -0.5276697],
 [-0.62758964, 0.3103241, 0.59859884, 0.18160084, 0.013691519, -0.3440106],
 ])
-print(f&quot;input words embedding: {x}&quot;)
+print(f"input words embedding: {x}")
 # input words embedding: tensor([[-0.3633453, -0.3389396, 0.5140128, 0.3274840, -0.3561232, -0.5047984],
 # [-0.4821177, 0.3321531, 0.7394951, 0.0781324, -0.0289963, -0.3216184],
 # [-0.1979086, -0.0347142, 0.8614135, 0.0629117, -0.4026346, -0.2269833],
@@ -313,7 +286,7 @@ print(f&quot;input words embedding: {x}&quot;)
 # [-0.6275896, 0.3103241, 0.5985988, 0.1816008, 0.0136915, -0.3440106]])
 
 x = x + pe
-print(f&quot;input words embedding with positional info: {x}&quot;)
+print(f"input words embedding with positional info: {x}")
 # input words embedding with positional info: tensor([[-0.3633453, 0.6610603, 0.5140128, 1.3274839, -0.3561232, 0.4952016],
 # [ 0.3593532, 0.8724554, 0.7858943, 1.0770555, -0.0268418, 0.6783794],
 # [ 0.7113888, -0.4508610, 0.9541121, 1.0586059, -0.3983258, 0.7730075],
@@ -334,7 +307,7 @@ print(f&quot;input words embedding with positional info: {x}&quot;)
 
 # 07
 
-总结
+## 总结
 
 在这篇文章中，我们详细探讨了Transformer模型的输入部分；通过一步步的解析和代码实现，我们深入理解了如何定义数据集，创建词汇表，进行分词编码（Tokenization），计算分词嵌入（Embedding）以及位置编码（Positional Encoding），并最终将位置编码添加到输入序列中。
 
@@ -344,7 +317,7 @@ print(f&quot;input words embedding with positional info: {x}&quot;)
 
 位置嵌入是Transformer模型的另一个关键组成部分，它允许模型理解单词在句子中的顺序；通过公式和代码实现了位置嵌入的计算，并将其与词嵌入相结合，形成了编码器的输入。
 
-最后，通过代码示例展示了如何将位置嵌入和词`嵌入相加，以及如何准备好编码器的输入。
+最后，通过代码示例展示了如何将位置嵌入和词嵌入相加，以及如何准备好编码器的输入。
 
 通过本文的学习，相信朋友们能够对Transformer模型的输入有一个清晰的认识，并能够自己动手实现相关的预处理步骤；为进一步理解Transformer模型的其他部分，如编码器和解码器，奠定坚实的基础。
 
@@ -354,29 +327,25 @@ print(f&quot;input words embedding with positional info: {x}&quot;)
 
 推荐阅读：
 
-+   [ChatGPT背后强大而神秘的力量：用最简单的](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484435&idx=1&sn=eeb8d952a4695211be575d7ef92d4166&chksm=fd61725eca16fb48b25ab8be527c4986d581f5f29e41989408362145c93ee1068264f78fbaef&scene=21#wechat_redirect)语言讲解Transformer架构之概览
-
-+   [ChatGPT背后强大而神秘的力量：用最简单的语言讲解Tra](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484599&idx=1&sn=7a7707295fb751aef0693c32d2d56137&chksm=fd6172faca16fbec2c226137bd31d0b64ac8c6b3a7c266c2890ef03cf88d501437d41f6376bb&scene=21#wechat_redirect)nsformer架构之Embedding
-
-+   [ChatGPT背后强大而神秘的力量：用最简单的语言讲解Tra](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484650&idx=1&sn=4025bc4d1a14ea345589a26a335ce41f&chksm=fd6172a7ca16fbb1b8f0458f78a8e49eba145a84aeccefc33e0b288e5ca9647fdd6ba018fe71&scene=21#wechat_redirect)nsformer架构之Tokenizer
-
-+   [ChatGPT背后强大而神秘的力量：一文搞懂T](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484768&idx=1&sn=f8b459221381b5b4842f9824fb1ed86e&chksm=fd61732dca16fa3bb6c753699bc6cf07682b969e6da98c14ec2a55eb27dffd4554f8e783e1f5&scene=21#wechat_redirect)ransformer架构的三种注意力机制
-
-+   [要真正入门AI，OpenAI的官方Prompt工程指南肯定还](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484249&idx=1&sn=7238ba9f25af92b399dd5e347fc88592&chksm=fd617514ca16fc025579e6f48b6e87a1fd2368fbd4e725ac835c76d42f490c06c2a6d23a6e82&scene=21#wechat_redirect)不够，您必须了解的强大方法论和框架！！！
-
-+   [第](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484303&idx=1&sn=24ff092b3defd643d568b531a08ca47d&chksm=fd6175c2ca16fcd4353391182c9ecb188dbdd24c7fa7ed7e52827772db138471033ef200f08d&scene=21#wechat_redirect)二篇：要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！
-
-+   [第](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484353&idx=1&sn=452b5e450b9eba799ba9b024099a2e87&chksm=fd61758cca16fc9aab3f99af1ce9662f1e029799f90e9f5fc30feff2a038bbca9a9c5298c47b&scene=21#wechat_redirect)三篇：要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！
++ [ChatGPT背后强大而神秘的力量：用最简单的语言讲解Transformer架构之概览](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484435&idx=1&sn=eeb8d952a4695211be575d7ef92d4166&chksm=fd61725eca16fb48b25ab8be527c4986d581f5f29e41989408362145c93ee1068264f78fbaef&scene=21#wechat_redirect)
++ [ChatGPT背后强大而神秘的力量：用最简单的语言讲解Transformer架构之Embedding](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484599&idx=1&sn=7a7707295fb751aef0693c32d2d56137&chksm=fd6172faca16fbec2c226137bd31d0b64ac8c6b3a7c266c2890ef03cf88d501437d41f6376bb&scene=21#wechat_redirect)
++ [ChatGPT背后强大而神秘的力量：用最简单的语言讲解Transformer架构之Tokenizer](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484650&idx=1&sn=4025bc4d1a14ea345589a26a335ce41f&chksm=fd6172a7ca16fbb1b8f0458f78a8e49eba145a84aeccefc33e0b288e5ca9647fdd6ba018fe71&scene=21#wechat_redirect)
++ [ChatGPT背后强大而神秘的力量：一文搞懂Transformer架构的三种注意力机制](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484768&idx=1&sn=f8b459221381b5b4842f9824fb1ed86e&chksm=fd61732dca16fa3bb6c753699bc6cf07682b969e6da98c14ec2a55eb27dffd4554f8e783e1f5&scene=21#wechat_redirect)
++ [要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484249&idx=1&sn=7238ba9f25af92b399dd5e347fc88592&chksm=fd617514ca16fc025579e6f48b6e87a1fd2368fbd4e725ac835c76d42f490c06c2a6d23a6e82&scene=21#wechat_redirect)
++ [第二篇：要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484303&idx=1&sn=24ff092b3defd643d568b531a08ca47d&chksm=fd6175c2ca16fcd4353391182c9ecb188dbdd24c7fa7ed7e52827772db138471033ef200f08d&scene=21#wechat_redirect)
++ [第三篇：要真正入门AI，OpenAI的官方Prompt工程指南肯定还不够，您必须了解的强大方法论和框架！！！](http://mp.weixin.qq.com/s?__biz=MzU3OTgyMjM3MA==&mid=2247484353&idx=1&sn=452b5e450b9eba799ba9b024099a2e87&chksm=fd61758cca16fc9aab3f99af1ce9662f1e029799f90e9f5fc30feff2a038bbca9a9c5298c47b&scene=21#wechat_redirect)
 
 👸号回复口令，领取资料，一起学习吧！🏃
 
-“ 1 ”：领取开源书籍《动手实战人工智能》
+“1”：领取开源书籍《动手实战人工智能》
 
-” 2 “：领取 50G+的免费AI视频课程
+“2”：领取 50G+的免费AI视频课程
 
-“ 3 ”：领取ChatGPT4访问码
+“3”：领取ChatGPT4访问码
 
-“ 2024 ”：领取吴恩达的书《Machine Learning Yearning》
+
+
+# “2024”：领取吴恩达的书《Machine Learning Yearning》
 
 扫码加入学习群：
 

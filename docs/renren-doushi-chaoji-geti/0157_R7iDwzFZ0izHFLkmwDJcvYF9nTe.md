@@ -1,8 +1,9 @@
+
 # 三年，四役：一文读懂我的邮件营销“增长黑客”之路
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/JHjTd7Y6donX8HxSlbLccfutn8b](https://xuqiwei1986.feishu.cn/docx/JHjTd7Y6donX8HxSlbLccfutn8b)
 
-# 一、前言
+## 一、前言
 
 哈喽，各位圈友好。我叫Alice，这是我的第二篇帖子，主要以我这三年的个人经历/理解去系统性的介绍海外邮件营销。并帮助感兴趣的圈友能够成功发出自己的第一封邮件。
 
@@ -10,17 +11,17 @@
 
 为什么会写这篇文章？
 
-1.  我翻了很多赚钱关于邮件营销的帖子，很少有人去讲邮件营销怎么落地。更多的是理论知识，没接触过的人看完往往一头雾水。
+1. 我翻了很多赚钱关于邮件营销的帖子，很少有人去讲邮件营销怎么落地。更多的是理论知识，没接触过的人看完往往一头雾水。
 
-1.  笔者有过好几段跟邮件营销相关的经历，跑通过多次结果。对邮件营销有自己的理解，并且曾经为某上市公司的邮件营销方案出谋划策。
+1. 笔者有过好几段跟邮件营销相关的经历，跑通过多次结果。对邮件营销有自己的理解，并且曾经为某上市公司的邮件营销方案出谋划策。
 
-1.  Ai的出现让做这个事情的门槛大大降低，看完这篇文章，你也可以借助Ai工具生成自己的邮件模板。并完成发送。
+1. Ai的出现让做这个事情的门槛大大降低，看完这篇文章，你也可以借助Ai工具生成自己的邮件模板。并完成发送。
 
-1.  希望帮助正在做或准备做海外项目的圈友扩充一个流量渠道，实现业务增长。
+1. 希望帮助正在做或准备做海外项目的圈友扩充一个流量渠道，实现业务增长。
 
-# 二、邮件营销背景与介绍
+## 二、邮件营销背景与介绍
 
-## 2.1 邮件营销是什么
+### 2.1 邮件营销是什么
 
 简单来说，邮件营销 (Email Marketing) 是一种通过电子邮件与目标受众进行沟通的数字营销方式。
 
@@ -28,61 +29,61 @@
 
 邮件营销也并非简单发发邮件就可以了。它主要包括了以下几个部分：
 
-**邮**箱列表（用户）+ 发件服务商（自建/平台） + 邮件模板 + ABtest/数据分析 = 一个邮件营销周期
+**邮箱列表**（用户）+ 发件服务商（自建/平台） + 邮件模板 + ABtest/数据分析 = 一个邮件营销周期
 
 我们通过各种方式（后面会讲解）收集用户的邮箱。然后制作对应网站内容的邮件模板，找到一家可以发送的邮件发件商。输入邮件标题和预览，测试没问题后成功发送。最后根据邮件平台数据反馈和到站数据进行优化。
 
-## 2.2 如何理解邮件营销
+### 2.2 如何理解邮件营销
 
 **聪明**的你看完了上面的介绍，是不是一下就想到了，这不就是私域吗？是的，这跟在🛰️朋友圈做营销非常类似。只是这个载体变成了🛰️，邮件列表变成好友列表，邮件模板变成了朋友圈文案。
 
-**反过来理解，**很多🛰️朋友圈的运营**大佬。说的最多**的一句话就是，把用户当朋友。发内容时设身处地的为用户带来价值。🛰️朋友圈转化率高的“销售”，无一不是一个有血有肉并持续输出价值内容给朋友的人设。这和邮件营销是一样的。如果上来就发一对堆垃圾内容给用户，被取关/退订的概率是很大的。
+**反过来理解，**很多🛰️朋友圈的运营**大佬。**说的最多**的一句话就是**，把用户当朋友。发内容时设身处地的为用户带来价值。🛰️朋友圈转化率高的“销售”，无一不是一个有血有肉并持续输出价值内容给朋友的人设。这和邮件营销是一样的。如果上来就发一对堆垃圾内容给用户，被取关/退订的概率是很大的。
 
 做邮件营销是为了给用户带来**长期的价值，**哪怕是你家的产品（能够解决客户的需求），或者是节日促销提供更便宜的优惠券，用户过生日的祝福。这也是一种价值。
 
-从**营销思维**转变成**用户思维****去理解邮件营销。**最好的方式是不要把它看作一个广告渠道，而是一个关系建立的渠道。
+从**营销思维**转变成**用户思维**去理解邮件营销。**最好的方式是不要把它看作一个广告渠道，而是一个关系建立的渠道。
 
-## 2.3 为什么要做邮件营销
+### 2.3 为什么要做邮件营销
 
 在社交媒体和短视频平台流量爆炸的今天，很多人会疑惑：为什么还要用“老派”的邮件营销？
 
 **答案是：因为邮件营销**为你提供了一个其他任何渠道都无法替代的核心优势——稳定、可控的私域资产。
 
-### 2.3.1 邮件营销有什么优势
+#### 2.3.1 邮件营销有什么优势
 
-1.  **你真正拥有你的用户资产**。这是邮件营销**最核心、最无可替代**的优势。
+1. **你真正拥有你的用户资产。**这是邮件营销**最核心、最无可替代**的优势。
 
 试想一下传统的推广方式/流量渠道。（广告投放、SEO、KOL营销、社媒引流）都是从一个大的公域把用户引到一个落地页，广告投放钱停流量停、SEO会不定期更改算法规则、KOL营销不给钱了达人就不挂你产品了、社媒也需要长期的更新平台才会给你流量。而邮件营销，只要用户不主动取消订阅，你就永远可以直接、无干扰地联系到他们。这个资产不会因为任何平台的兴衰而消失，它是你业务中最稳定、最可靠的复购基石。
 
-1.  **极高的ROI**
+1. **极高的ROI**
 
 邮件营销常年被评为**投资回报率最高**的数字营销渠道之一。
 
-+   **低成本：** 相比于付费广告（如搜索竞价、信息流广告）需要持续烧钱，维护一个邮件列表和发送邮件的成本非常非常低。
++ **低成本：**相比于付费广告（如搜索竞价、信息流广告）需要持续烧钱，维护一个邮件列表和发送邮件的成本非常非常低。
 
-+   **高转化：** 因为邮件是发送给已经对你感兴趣的精准用户，他们的购买意愿和信任度远高于普通访客。一封精心设计的推广邮件，可能带来远超广告投放的销售额。
++ **高转化：**因为邮件是发送给已经对你感兴趣的精准用户，他们的购买意愿和信任度远高于普通访客。一封精心设计的推广邮件，可能带来远超广告投放的销售额。
 
 我再深圳做仿牌手表时期，邮件营销复购的ROI一度高达4 50。这还是使用偏贵的营销平台情况下。
 
-1.   与用户建立直接、私密且深入的关系
+1. **与用户建立直接、私密且深入的关系**
 
-+   **直接触达：** 你的邮件直接进入用户的个人收件箱。这是一个比社交媒体信息流更加私密、干扰更少的空间。
++ **直接触达：**你的邮件直接进入用户的个人收件箱。这是一个比社交媒体信息流更加私密、干扰更少的空间。
 
-+   **一对一沟通感：** 你可以称呼用户的名字，根据他们的行为发送定制化内容，营造出一种“这封信是专门写给我”的感觉。这种一对一的沟通感，是建立深度信任的绝佳方式。
++ **一对一沟通感：**你可以称呼用户的名字，根据他们的行为发送定制化内容，营造出一种“这封信是专门写给我”的感觉。这种一对一的沟通感，是建立深度信任的绝佳方式。
 
-+   **适合讲故事：** 相比于社交媒体上快餐式的内容，邮件有足够的空间让你娓娓道来，分享品牌故事、客户案例或深度干货，从而与用户建立情感连接。
++ **适合讲故事：**相比于社交媒体上快餐式的内容，邮件有足够的空间让你娓娓道来，分享品牌故事、客户案例或深度干货，从而与用户建立情感连接。
 
-1.  **高度的自定义与自动化**
+1. **高度的自定义与自动化**
 
-+   内容形式完全自己掌控，可以是文字、图片、模板、视频和链接等，并且发送时间与标题预览都可以自定义。
++ 内容形式完全自己掌控，可以是文字、图片、模板、视频和链接等，并且发送时间与标题预览都可以自定义。
 
-+   可利用自动化程序实现自动发送，根据用户的特征/行为进行触发。
++ 可利用自动化程序实现自动发送，根据用户的特征/行为进行触发。
 
 例如首次订阅的欢迎/介绍邮件、给新用户的优惠券折扣邮件、用户加入购物车没下单的弃购召回邮件、用户生日前一天的专属折扣祝福邮件等都是可以通过自动化的方式触发。
 
-# 三、我与邮件营销的四段经历
+## 三、我与邮件营销的四段经历
 
-## 3.1 初闻不知“曲”中意 （培训邮件招生）
+### 3.1 初闻不知“曲”中意 （培训邮件招生）
 
 我第一次听到邮件营销这个词是在16 17年，那会再北京，帮以前的老板做线下培训。当时他提出了用户群体主要面向计算机系的学生招生。于是他让我们去采集各个大学的qq群。通过小号添加，添加后将qq群的用户提取出来。（因为qq邮箱就是qq号。）大概如图所示， 太久了没记录了。
 
@@ -94,7 +95,7 @@
 
 经过这次经历，很长一段时间在我的认知里都是认为邮件营销不靠谱~~ 我相信这也是很多人的想法，特别是做国内项目。压根就不会考虑邮件营销这个引流选项，毕竟每天打开邮件的概率比每天打开🛰️/抖音的概率低太多了。但是国外不一样，很多国家的人都有每天看邮件的习惯（日韩、欧美、新加坡等）。
 
-## 3.2 再闻已是“曲”中人 （互联网公司邮件营销增长方向探索）
+### 3.2 再闻已是“曲”中人 （互联网公司邮件营销增长方向探索）
 
 再次听到邮件营销的时候，已经是22年了。那会我还在广州某出海互联网公司担任高级工程师。领导看我喜欢折腾，让我去琢磨增长黑客。利用技术手段帮助业务进行增长。邮件营销此时成为了我探索的一环。一开始决定使用阿里云邮件服务。发邮件给用户推广我们的APP。
 
@@ -110,7 +111,7 @@
 
 这个项目一共发了上百万的邮箱，但安装用户寥寥无几。虽然按照安装的成本来看，比广告便宜点，但是明显感觉到不是一个特别好的增长方向。于是便放弃了邮件拉新的想法。
 
-### 3.2.1 日本区域主播挖猎
+#### 3.2.1 日本区域主播挖猎
 
 刚好这时候有区域知道我们在尝试做这个事情，他们就提了个想法。问我们能不能去给竞品的主播发送邀请邮件，让她们来我们的平台直播等。（类似招聘KOL的玩法）于是我们就开始了尝试。从推特/竞品进行爬虫。获取竞品的一些主播邮箱。（下面会讲到方法）然后发送招聘邮件。这是当时的一些数据。
 
@@ -126,7 +127,7 @@
 
 最后这个项目因为有主播来问怎么获取到他的邮箱，我们区域给不出合理的解释而暂停。区域评估说可能会有一定的风险。
 
-### 3.2.2 IOS用户召回
+#### 3.2.2 IOS用户召回
 
 这是个非常大的项目，涉及了6 7个部门，数十号人。不是我一个人完成的。
 
@@ -140,7 +141,7 @@
 
 这个项目给我的感触就是，Amazon SES非常严格，虽然成本巨便宜，大约300w封邮件只需要200刀。但是不建议个人或小团队去尝试。SES要求不超过5%的退订率，对各个数据指标都有不小的要求。提额时还会触发审核，会有专人来联系。很多代开的团队压根就没办法解决这些问题。并且需要第三方的系统来调用API，而这些开源/付费的系统压根就不好用，经常一堆bug找不到人来处理。
 
-## 3.3 既然已是“曲”中人 （仿牌出海）
+### 3.3 既然已是“曲”中人 （仿牌出海）
 
 再后来，由于各种机缘巧合的关系，到深圳做跨境仿牌。期间经历了很多事情，总结来说就是，跟错人没拿到符合预期的结果。但也学了很多电商流量的玩法。这里分享一个以小博大的思路。
 
@@ -152,11 +153,11 @@ watchfinder，是英国最大的二手手表平台。在22年发生过一次数�
 
 PS：这个论坛现在已经被FBI端了
 
-## 3.4 何须再悟“曲”中意 （Affiliate 灵媒产品推广）
+### 3.4 何须再悟“曲”中意 （Affiliate 灵媒产品推广）
 
 故事回到近期，没做仿牌后开始琢磨一些新的出海项目，发现海外Affiliate挺适合自己的。不用管后端的东西，只需要搞好流量就行了。这部分我会写的比较细一点，都是我最近探索出来的。后面的教程也会围绕这个模块展开。
 
-### 3.4.1 寻找合适的项目
+#### 3.4.1 寻找合适的项目
 
 我注册了cj.com后，查看上面的项目。发现很多佣金高的，比如金融、证券，一个CPS的线索给75-120刀。而灵媒跟它一个价格，并且难度比金融小。（劝人开信用卡难度高，还是劝人去算命难度高，结果显而易见）
 
@@ -168,7 +169,7 @@ PS：这个论坛现在已经被FBI端了
 
 ![](img/e9e2ad3e26fe984854272cba99f1a596.png)
 
-给这家推广并没有赚多少钱（几百刀），有很多的用户注册，但是**没有下单。我分**析了原因，觉得是这家推广的免费5分钟文案存在误导性，他是要绑定信用卡以后进行使用了才返使用期间的5分钟额度。而不是上来就给予5分钟免费体验。所以用户注册后看到需要花钱才能解锁，与预期不符，就直接走了。
+给这家推广并没有赚多少钱（几百刀），有很多的用户注册，但是**没有下单。**我**分析了原因**，觉得是这家推广的免费5分钟文案存在误导性，他是要绑定信用卡以后进行使用了才返使用期间的5分钟额度。而不是上来就给予5分钟免费体验。所以用户注册后看到需要花钱才能解锁，与预期不符，就直接走了。
 
 ![](img/474b26362d3aab2f567b4f0e4de829a3.png)
 
@@ -176,7 +177,7 @@ PS：这个论坛现在已经被FBI端了
 
 ![](img/a795b928310a7b8955e932f62a7a7856.png)
 
-PsychicSamira推广平台，感兴趣的圈友也可以看下这个offer，它给50[%的佣金，而且退款率很少](https://www.smartpushedm.com/)。我300单里只有两单退款。支持PayPal 按周/按月打钱。初期我没有花钱去测，纯靠白嫖smartpushedm的免费额度，一个账号有5k的免费额度。而且有默认域名，可以直接使用。在第一批数据测出可以出单后。我白嫖了接近两个月，注册了数百个账号去清洗数据。
+PsychicSamira推广平台，感兴趣的圈友也可以看下这个offer，它给[50[%的佣金，而且退款率很少](https://www.smartpushedm.com/)。我300单里只有两单退款。支持PayPal 按周/按月打钱。初期我没有花钱去测，纯靠白嫖smartpushedm的免费额度，一个账号有5k的免费额度。而且有默认域名，可以直接使用。在第一批数据测出可以出单后。我白嫖了接近两个月，注册了数百个账号去清洗数据。
 
 ![](img/a57385494d7d07b63d66a6d184442903.png)
 
@@ -186,8 +187,9 @@ PsychicSamira推广平台，感兴趣的圈友也可以看下这个offer，它�
 
 清洗脚本如下：
 
-```
 
+
+```
 import pandas as pd
 import glob
 import os
@@ -195,53 +197,53 @@ import warnings
 
 # --- 配置区 ---
 # 目标工作表名称定义
-DELIVERED_SHEET = &#x27;Delivered&#x27;
-SPAM_SHEETS = [&#x27;Sent Failed&#x27;, &#x27;Invalid Contacts&#x27;, &#x27;Unsubscribed&#x27;, &#x27;Bounce&#x27;, &#x27;Spam&#x27;]
-INTERACTION_SHEETS = [&#x27;All Open&#x27;, &#x27;All Clicks&#x27;]
+DELIVERED_SHEET = 'Delivered'
+SPAM_SHEETS = ['Sent Failed', 'Invalid Contacts', 'Unsubscribed', 'Bounce', 'Spam']
+INTERACTION_SHEETS = ['All Open', 'All Clicks']
 
 # 列名定义 (请根据您的Excel文件进行确认)
-FULL_NAME_COLUMN = &#x27;Full Name&#x27;
-EMAIL_COLUMN = &#x27;Email&#x27;
+FULL_NAME_COLUMN = 'Full Name'
+EMAIL_COLUMN = 'Email'
 
 # 输出文件夹和文件名定义
-PROCESSING_FOLDER = &#x27;新处理&#x27;
-RESULTS_FOLDER = &#x27;结果&#x27;
-SPAM_LIST_FILE = &#x27;spam-all-email.txt&#x27;
-ALL_INTERACTIONS_FILE = &#x27;allopen.csv&#x27;
+PROCESSING_FOLDER = '新处理'
+RESULTS_FOLDER = '结果'
+SPAM_LIST_FILE = 'spam-all-email.txt'
+ALL_INTERACTIONS_FILE = 'allopen.csv'
 
 # --- 脚本核心逻辑 ---
 
 def main():
-    &quot;&quot;&quot;主函数，按顺序执行所有处理步骤&quot;&quot;&quot;
+    """主函数，按顺序执行所有处理步骤"""
     
-    print(&quot;--- 邮件自动化处理与格式化脚本启动 ---&quot;)
+    print("--- 邮件自动化处理与格式化脚本启动 ---")
     
     # --- 准备工作：创建输出文件夹 ---
     os.makedirs(PROCESSING_FOLDER, exist_ok=True)
     os.makedirs(RESULTS_FOLDER, exist_ok=True)
-    print(f&quot;输出文件夹 &#x27;{PROCESSING_FOLDER}&#x27; 和 &#x27;{RESULTS_FOLDER}&#x27; 已准备就绪。&quot;)
+    print(f"输出文件夹 '{PROCESSING_FOLDER}' 和 '{RESULTS_FOLDER}' 已准备就绪。")
     
     # 查找当前目录下所有的xlsx文件
-    excel_files = glob.glob(&#x27;*.xlsx&#x27;)
+    excel_files = glob.glob('*.xlsx')
     if not excel_files:
-        print(&quot;错误：在当前目录下没有找到任何 .xlsx 文件。脚本将退出。&quot;)
+        print("错误：在当前目录下没有找到任何 .xlsx 文件。脚本将退出。")
         return
-    print(f&quot;\n发现 {len(excel_files)} 个 .xlsx 文件，即将开始处理...&quot;)
+    print(f"\n发现 {len(excel_files)} 个 .xlsx 文件，即将开始处理...")
     
-    # --- 执行步骤1 &amp; 2 ---
-    print(&quot;\n--- 步骤 1 &amp; 2: 提取&#x27;Delivered&#x27;数据并生成垃圾邮件列表 ---&quot;)
+    # --- 执行步骤1 & 2 ---
+    print("\n--- 步骤 1 & 2: 提取'Delivered'数据并生成垃圾邮件列表 ---")
     all_spam_emails = set()
     
     for filename in excel_files:
-        print(f&quot;  正在扫描文件: {filename}&quot;)
+        print(f"  正在扫描文件: {filename}")
         try:
             df_delivered = pd.read_excel(filename, sheet_name=DELIVERED_SHEET)
             if not df_delivered.empty:
                 output_path = os.path.join(PROCESSING_FOLDER, os.path.basename(filename))
                 df_delivered.to_excel(output_path, index=False)
-                print(f&quot;    - &#x27;Delivered&#x27; 工作表已提取并保存至 &#x27;{output_path}&#x27;&quot;)
+                print(f"    - 'Delivered' 工作表已提取并保存至 '{output_path}'")
         except Exception:
-            print(f&quot;    - 未在 {filename} 中找到 &#x27;{DELIVERED_SHEET}&#x27; 工作表，已跳过。&quot;)
+            print(f"    - 未在 {filename} 中找到 '{DELIVERED_SHEET}' 工作表，已跳过。")
             
         for sheet in SPAM_SHEETS:
             try:
@@ -253,15 +255,15 @@ def main():
                 pass
                 
     if all_spam_emails:
-        with open(SPAM_LIST_FILE, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+        with open(SPAM_LIST_FILE, 'w', encoding='utf-8') as f:
             for email in sorted(list(all_spam_emails)):
-                f.write(email + &#x27;\n&#x27;)
-        print(f&quot;\n✅ 步骤2完成: 共找到 {len(all_spam_emails)} 个唯一的垃圾/退订邮箱，列表已保存至 &#x27;{SPAM_LIST_FILE}&#x27;&quot;)
+                f.write(email + '\n')
+        print(f"\n✅ 步骤2完成: 共找到 {len(all_spam_emails)} 个唯一的垃圾/退订邮箱，列表已保存至 '{SPAM_LIST_FILE}'")
     else:
-        print(&quot;\n⚠️ 步骤2警告: 未在任何文件中找到垃圾邮件信息。&quot;)
+        print("\n⚠️ 步骤2警告: 未在任何文件中找到垃圾邮件信息。")
 
     # --- 执行步骤3 (新增了使用 spam-all-email.txt 进行清洗的逻辑) ---
-    print(f&quot;\n--- 步骤 3: 提取、去重并清洗 &#x27;All Open&#x27; 和 &#x27;All Clicks&#x27; 数据 ---&quot;)
+    print(f"\n--- 步骤 3: 提取、去重并清洗 'All Open' 和 'All Clicks' 数据 ---")
     interaction_data = []
     for filename in excel_files:
         for sheet in INTERACTION_SHEETS:
@@ -281,48 +283,48 @@ def main():
         deduped_count = len(df_all_interactions)
         
         # 【新增逻辑】使用已生成的垃圾邮件列表清洗互动数据
-        print(f&quot;  - 正在从互动列表中移除 &#x27;{SPAM_LIST_FILE}&#x27; 中包含的垃圾邮件...&quot;)
+        print(f"  - 正在从互动列表中移除 '{SPAM_LIST_FILE}' 中包含的垃圾邮件...")
         cleaned_interactions_df = df_all_interactions[~df_all_interactions[EMAIL_COLUMN].isin(all_spam_emails)]
         final_count = len(cleaned_interactions_df)
         removed_spam_count = deduped_count - final_count
 
         # 保存清洗后的结果
-        cleaned_interactions_df.to_csv(ALL_INTERACTIONS_FILE, index=False, encoding=&#x27;utf-8-sig&#x27;)
+        cleaned_interactions_df.to_csv(ALL_INTERACTIONS_FILE, index=False, encoding='utf-8-sig')
         
-        print(f&quot;✅ 步骤3完成: &#x27;{ALL_INTERACTIONS_FILE}&#x27; 已创建并清洗。&quot;)
-        print(f&quot;  - 原始互动记录数: {original_count}&quot;)
-        print(f&quot;  - 去重后数量: {deduped_count}&quot;)
-        print(f&quot;  - 移除垃圾邮件数: {removed_spam_count}&quot;)
-        print(f&quot;  - 最终有效数量: {final_count}&quot;)
+        print(f"✅ 步骤3完成: '{ALL_INTERACTIONS_FILE}' 已创建并清洗。")
+        print(f"  - 原始互动记录数: {original_count}")
+        print(f"  - 去重后数量: {deduped_count}")
+        print(f"  - 移除垃圾邮件数: {removed_spam_count}")
+        print(f"  - 最终有效数量: {final_count}")
     else:
-        print(&quot;⚠️ 步骤3警告: 未找到任何&#x27;All Open&#x27;或&#x27;All Clicks&#x27;数据。&quot;)
+        print("⚠️ 步骤3警告: 未找到任何'All Open'或'All Clicks'数据。")
         
-    # --- 执行步骤4 &amp; 5 (包含新增的格式化需求) ---
-    print(f&quot;\n--- 步骤 4 &amp; 5: 清洗文件，格式化并输出到 &#x27;{RESULTS_FOLDER}&#x27; ---&quot;)
+    # --- 执行步骤4 & 5 (包含新增的格式化需求) ---
+    print(f"\n--- 步骤 4 & 5: 清洗文件，格式化并输出到 '{RESULTS_FOLDER}' ---")
     if not all_spam_emails:
-        print(&quot;  - 信息: 由于垃圾邮件列表为空，将直接格式化文件，不执行清洗。&quot;)
+        print("  - 信息: 由于垃圾邮件列表为空，将直接格式化文件，不执行清洗。")
 
-    files_to_clean = glob.glob(os.path.join(PROCESSING_FOLDER, &#x27;*.xlsx&#x27;))
+    files_to_clean = glob.glob(os.path.join(PROCESSING_FOLDER, '*.xlsx'))
     
     if not files_to_clean:
-        print(&quot;  - 警告: &#x27;新处理&#x27;文件夹中没有任何文件需要处理。&quot;)
+        print("  - 警告: '新处理'文件夹中没有任何文件需要处理。")
     
     total_deleted_count = 0
     total_final_count = 0
 
     for filepath in files_to_clean:
         filename = os.path.basename(filepath)
-        print(f&quot;  正在处理文件: {filename}&quot;)
+        print(f"  正在处理文件: {filename}")
         
         df_to_clean = pd.read_excel(filepath)
         original_rows = len(df_to_clean)
         
         if original_rows == 0:
-            print(&quot;    - 文件为空，跳过。&quot;)
+            print("    - 文件为空，跳过。")
             continue
             
         if EMAIL_COLUMN not in df_to_clean.columns:
-            print(f&quot;    - 错误: 文件中找不到 &#x27;{EMAIL_COLUMN}&#x27; 列，无法处理。&quot;)
+            print(f"    - 错误: 文件中找不到 '{EMAIL_COLUMN}' 列，无法处理。")
             continue
 
         # 步骤4: 清洗
@@ -330,16 +332,16 @@ def main():
         
         # 步骤5: 格式化为新的四列结构
         if FULL_NAME_COLUMN not in cleaned_df.columns:
-                print(f&quot;    - 警告: 文件中找不到 &#x27;{FULL_NAME_COLUMN}&#x27; 列，&#x27;Name&#x27;列将为空。&quot;)
+                print(f"    - 警告: 文件中找不到 '{FULL_NAME_COLUMN}' 列，'Name'列将为空。")
                 # 如果没有Name列，则创建一个空列以保证结构一致
-                cleaned_df[FULL_NAME_COLUMN] = &#x27;&#x27;
+                cleaned_df[FULL_NAME_COLUMN] = ''
 
         # 创建最终输出的DataFrame
         final_df = pd.DataFrame({
-            &#x27;Name&#x27;: cleaned_df[FULL_NAME_COLUMN],
-            &#x27;Email&#x27;: cleaned_df[EMAIL_COLUMN],
-            &#x27;Accept email marketing&#x27;: &#x27;yes&#x27;,
-            &#x27;Language&#x27;: &#x27;en&#x27;
+            'Name': cleaned_df[FULL_NAME_COLUMN],
+            'Email': cleaned_df[EMAIL_COLUMN],
+            'Accept email marketing': 'yes',
+            'Language': 'en'
         })
         
         final_rows = len(final_df)
@@ -347,21 +349,21 @@ def main():
         total_deleted_count += deleted_rows
         total_final_count += final_rows
         
-        # 保存到“结果”文件夹，编码设为&#x27;utf-8-sig&#x27;以正确处理特殊字符
-        result_path = os.path.join(RESULTS_FOLDER, filename.replace(&#x27;.xlsx&#x27;, &#x27;.csv&#x27;))
-        final_df.to_csv(result_path, index=False, encoding=&#x27;utf-8-sig&#x27;)
+        # 保存到“结果”文件夹，编码设为'utf-8-sig'以正确处理特殊字符
+        result_path = os.path.join(RESULTS_FOLDER, filename.replace('.xlsx', '.csv'))
+        final_df.to_csv(result_path, index=False, encoding='utf-8-sig')
         
-        print(f&quot;    - 清洗与格式化完成。原始数量: {original_rows}，删除数量: {deleted_rows}，最终数量: {final_rows}&quot;)
-        print(f&quot;    - 结果已保存至: &#x27;{result_path}&#x27;&quot;)
+        print(f"    - 清洗与格式化完成。原始数量: {original_rows}，删除数量: {deleted_rows}，最终数量: {final_rows}")
+        print(f"    - 结果已保存至: '{result_path}'")
 
-    print(f&quot;\n✅ 步骤4 &amp; 5完成: 所有文件处理完毕。&quot;)
-    print(f&quot;  - 所有文件累计删除总数: {total_deleted_count}&quot;)
-    print(f&quot;  - 所有文件最终有效总数: {total_final_count}&quot;)
-    print(&quot;\n--- 🎉 全部任务处理完毕 ---&quot;)
+    print(f"\n✅ 步骤4 & 5完成: 所有文件处理完毕。")
+    print(f"  - 所有文件累计删除总数: {total_deleted_count}")
+    print(f"  - 所有文件最终有效总数: {total_final_count}")
+    print("\n--- 🎉 全部任务处理完毕 ---")
 
 
-if __name__ == &quot;__main__&quot;:
-    warnings.filterwarnings(&#x27;ignore&#x27;, category=UserWarning, module=&#x27;openpyxl&#x27;)
+if __name__ == "__main__":
+    warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
     main()
 ```
 
@@ -392,6 +394,8 @@ if __name__ == &quot;__main__&quot;:
 ## 4.2 通过爬虫竞品
 
 这块非常敏感，不讲太多细节。国内项目的圈友不建议尝试。很容易把自己干进去。国外倒是随便爬无所谓了。
+
+
 
 我们就爬了很多TikTok博主，他们有的会将自己的联系方式放再主页。
 
@@ -435,7 +439,7 @@ if __name__ == &quot;__main__&quot;:
 
 一开始是使用官方的接口，每个月100美刀就可以爬取约500w用户。自从马斯克接管后，这个套餐就被取消了。想要获取数据就只能花非常高昂的金额。经过寻找，找到有第三方可以提供这样的接口渠道。直接用第三方的接口爬取，根据要爬取的额度充值对应的金额。
 
-通过python调用第三方Api接口爬取推特官号粉丝
+通过`python`调用第三方Api接口爬取推特官号粉丝
 
 https://rapidapi.com/davethebeast/api/twitter241/playground/apiendpoint_b2eb295f-515a-48f0-a449-9fa574057920
 
@@ -457,136 +461,136 @@ from lib.db.mysql import DB
 from pprintpp import pprint as pp
 
 
-mysql_config = get_config(f&#x27;twee_feeder&#x27;)
+mysql_config = get_config('twee_feeder')
 db = DB(**mysql_config)
 
-consumer_key=&quot;xxxxx&quot;
-consumer_secret=&quot;xxxx&quot;
-access_token=&quot;xxxx
-access_token_secret=&quot;xxxxx&quot;
-bearer_token=&quot;xxxx&quot;
+consumer_key="xxxxx"
+consumer_secret="xxxx"
+access_token="xxxx
+access_token_secret="xxxxx"
+bearer_token="xxxx"
 
 
 def get_all_followers(screen_name):
-    follow_next_token = &quot;0000000&quot;
-    followers_next_token = &quot;0000000&quot;
+    follow_next_token = "0000000"
+    followers_next_token = "0000000"
 
     # 我的粉丝
-    table_name_followers = screen_name + &quot;_followers&quot;
+    table_name_followers = screen_name + "_followers"
 
     # 我关注的人
-    table_name_follow = screen_name + &quot;_follow&quot;
+    table_name_follow = screen_name + "_follow"
 
     # 获取连接数据库时不操作的过期时间，默认120秒
-    mysql_timeout_sql = &quot;show global variables like &#x27;wait_timeout&#x27;&quot;
+    mysql_timeout_sql = "show global variables like 'wait_timeout'"
     timeout_dict = db.fetch_one(mysql_timeout_sql)
     # 如果小于1200秒，那么就修改为1200秒
-    if int(timeout_dict[&quot;Value&quot;]) &lt; 60*60*24*2:
-        set_timeout_sql = &quot;set global wait_timeout=60*60*24*2&quot;
+    if int(timeout_dict["Value"]) < 60*60*24*2:
+        set_timeout_sql = "set global wait_timeout=60*60*24*2"
         db.fetch_one(set_timeout_sql)
-        print(&quot;设置数据库超时时间完成，请重新运行程序&quot;)
+        print("设置数据库超时时间完成，请重新运行程序")
         exit(1)
 
      
     # 判断表是否存在
-    table_exist_sql = f&#x27;SHOW TABLES LIKE &quot;{table_name_follow}&quot;;&#x27;
+    table_exist_sql = f'SHOW TABLES LIKE "{table_name_follow}";'
     logger.info(table_exist_sql)
     # 如果不存在则创建表
     if not db.fetch_one(table_exist_sql):
-        create_table = f&#x27;create table {table_name_follow}(id INT NOT NULL AUTO_INCREMENT,screen_name varchar(255),next_token varchar(255),PRIMARY KEY (id));&#x27;
+        create_table = f'create table {table_name_follow}(id INT NOT NULL AUTO_INCREMENT,screen_name varchar(255),next_token varchar(255),PRIMARY KEY (id));'
         logger.info(create_table)
         db.fetch_one(create_table)
     else:
         # 如果存在表，则寻找follow_next_token值
-        find_follow_next_token_sql = f&#x27;select next_token from {table_name_follow} order by id desc limit 0,1;&#x27;
+        find_follow_next_token_sql = f'select next_token from {table_name_follow} order by id desc limit 0,1;'
         if not db.fetch_one(find_follow_next_token_sql):
-            follow_next_token = &quot;0000000&quot;
+            follow_next_token = "0000000"
         else:
-            follow_next_token = db.fetch_one(find_follow_next_token_sql)[&#x27;next_token&#x27;]
+            follow_next_token = db.fetch_one(find_follow_next_token_sql)['next_token']
     
-    &#x27;&#x27;&#x27;
+    '''
     # 判断表是否存在
-    table_exist_sql = f&#x27;SHOW TABLES LIKE &quot;{table_name_followers}&quot;;&#x27;
+    table_exist_sql = f'SHOW TABLES LIKE "{table_name_followers}";'
     logger.info(table_exist_sql)
     # 如果不存在则创建表
     if not db.fetch_one(table_exist_sql):
-        create_table = f&#x27;create table {table_name_followers}(id INT NOT NULL AUTO_INCREMENT,screen_name varchar(255),next_token varchar(255),PRIMARY KEY (id));&#x27;
+        create_table = f'create table {table_name_followers}(id INT NOT NULL AUTO_INCREMENT,screen_name varchar(255),next_token varchar(255),PRIMARY KEY (id));'
         logger.info(create_table)
         db.fetch_one(create_table)
     else:
         # 如果存在表，则寻找followers_next_token值
-        find_followers_next_token_sql = f&#x27;select next_token from {table_name_followers} order by id desc limit 0,1;&#x27;
+        find_followers_next_token_sql = f'select next_token from {table_name_followers} order by id desc limit 0,1;'
         if not db.fetch_one(find_followers_next_token_sql):
-            followers_next_token = &quot;0000000&quot;
+            followers_next_token = "0000000"
         else:
-            followers_next_token = db.fetch_one(find_followers_next_token_sql)[&#x27;next_token&#x27;]
-    &#x27;&#x27;&#x27;
-    &#x27;&#x27;&#x27;先获取关注我的人&#x27;&#x27;&#x27;
+            followers_next_token = db.fetch_one(find_followers_next_token_sql)['next_token']
+    '''
+    '''先获取关注我的人'''
     
     try:
-        client = tweepy.Client( bearer_token=bearer_token, consumer_key=consumer_key, consumer_secret=consumer_secret,access_token=access_token, access_token_secret=access_token_secret,wait_on_rate_limit=True)
+        client = tweepy.Client(bearer_token=bearer_token, consumer_key=consumer_key, consumer_secret=consumer_secret,access_token=access_token, access_token_secret=access_token_secret,wait_on_rate_limit=True)
 
         tweets = client.get_user(username=screen_name)
         user_id = tweets.data.id
         
-        result = &quot;&quot;
+        result = ""
         # 判断是否存在next_token，是的话取下一份数据
-        if follow_next_token == &quot;0000000&quot;:
+        if follow_next_token == "0000000":
             result = client.get_users_following(user_id,max_results=1000)
         else:
             result = client.get_users_following(user_id,max_results=1000,pagination_token=follow_next_token)
 
-        while &#x27;next_token&#x27; in result.meta:
-            next_token = result.meta[&#x27;next_token&#x27;]
+        while 'next_token' in result.meta:
+            next_token = result.meta['next_token']
             for screen_name1 in result.data:
-                insert_sql = f&#x27;INSERT INTO {table_name_follow}(screen_name,next_token) VALUES(&quot;{screen_name1}&quot;,&quot;{next_token}&quot;)&#x27;
+                insert_sql = f'INSERT INTO {table_name_follow}(screen_name,next_token) VALUES("{screen_name1}","{next_token}")'
                 logger.info(insert_sql)
                 db.insert_one(insert_sql)
             result = client.get_users_following(user_id,max_results=1000,pagination_token=next_token)
         else:
             for screen_name1 in result.data:
-                insert_sql = f&#x27;INSERT INTO {table_name_follow}(screen_name,next_token) VALUES(&quot;{screen_name1}&quot;,&quot;0000000&quot;)&#x27;
+                insert_sql = f'INSERT INTO {table_name_follow}(screen_name,next_token) VALUES("{screen_name1}","0000000")'
                 logger.info(insert_sql)
                 db.insert_one(insert_sql)
     except:
         logger.error(traceback.format_exc())
     
 
-    &#x27;&#x27;&#x27;再获取我的粉丝&#x27;&#x27;&#x27;
-    &#x27;&#x27;&#x27;
+    '''再获取我的粉丝'''
+    '''
     try:
-        client = tweepy.Client( bearer_token=bearer_token, consumer_key=consumer_key, consumer_secret=consumer_secret,access_token=access_token, access_token_secret=access_token_secret,wait_on_rate_limit=True)
+        client = tweepy.Client(bearer_token=bearer_token, consumer_key=consumer_key, consumer_secret=consumer_secret,access_token=access_token, access_token_secret=access_token_secret,wait_on_rate_limit=True)
 
         tweets = client.get_user(username=screen_name)
         user_id = tweets.data.id
 
-        result = &quot;&quot;
+        result = ""
         # 判断是否存在next_token，是的话取下一份数据
-        if followers_next_token == &quot;0000000&quot;:
+        if followers_next_token == "0000000":
             result = client.get_users_followers(user_id,max_results=1000)
         else:
             result = client.get_users_followers(user_id,max_results=1000,pagination_token=followers_next_token)
         
-        while &#x27;next_token&#x27; in result.meta:
-            next_token = result.meta[&#x27;next_token&#x27;]
+        while 'next_token' in result.meta:
+            next_token = result.meta['next_token']
             for screen_name1 in result.data:
-                insert_sql = f&#x27;INSERT INTO {table_name_followers}(screen_name,next_token) VALUES(&quot;{screen_name1}&quot;,&quot;{next_token}&quot;)&#x27;
+                insert_sql = f'INSERT INTO {table_name_followers}(screen_name,next_token) VALUES("{screen_name1}","{next_token}")'
                 logger.info(insert_sql)
                 db.insert_one(insert_sql)
             result = client.get_users_followers(user_id,max_results=1000,pagination_token=next_token)
         else:
             for screen_name1 in result.data:
-                insert_sql = f&#x27;INSERT INTO {table_name_followers}(screen_name,next_token) VALUES(&quot;{screen_name1}&quot;,&quot;0000000&quot;)&#x27;
+                insert_sql = f'INSERT INTO {table_name_followers}(screen_name,next_token) VALUES("{screen_name1}","0000000")'
                 logger.info(insert_sql)
                 db.insert_one(insert_sql)
     except:
         logger.error(traceback.format_exc())
-    &#x27;&#x27;&#x27;
+    '''
 
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
 
     # 从name.txt里按行读取目标，爬取目标的粉丝和关注的人
-    with open(&#x27;name.txt&#x27;, &#x27;r&#x27;) as file:
+    with open('name.txt', 'r') as file:
         lines = file.readlines()
         lines = [line.rstrip() for line in lines]
 
@@ -595,7 +599,9 @@ if __name__ == &#x27;__main__&#x27;:
 
 ```
 
-requirements.txt文件
+`requirements.txt`文件
+
+
 
 ```
 astroid==2.14.2
@@ -624,7 +630,7 @@ urllib3==1.26.14
 wrapt==1.14.1
 ```
 
-config.ini文件
+`config.ini`文件
 
 ```
 [twitter]
@@ -710,7 +716,7 @@ https://crax.pro/
 
 这块我玩的并不好，我投流就是在败家，没有好的案例展示。只能借助别人的网站说明这个玩法。
 
-https://www.mysticmag.com/
+`https://www.mysticmag.com/`
 
 同样拿灵媒举例，使用对比系列文章作为广告的落地页。然后利用折扣码吸引用户订阅。
 
@@ -726,7 +732,7 @@ https://www.mysticmag.com/
 
 ## 5.1 一份优秀的邮件模板模板分析
 
-接上文，我们来看一份优秀的邮件模板。这是jomashop的欢迎模板，当你注册jomashop.com时会自动发送。我带大家拆解这个模板做了什么。
+接上文，我们来看一份优秀的邮件模板。这是jomashop的欢迎模板，当你注册`jomashop.com`时会自动发送。我带大家拆解这个模板做了什么。
 
 ![](img/4da8cb34f91397bba311d20adc6b4b47.png)
 
@@ -750,19 +756,19 @@ jomashop每个月大概制作100+个邮件模板。如果你也做奢侈品行�
 
 ![](img/5d9f3db9f097f40b300727fb49a54858.png)
 
-## 5.3  通过提示词模仿生成邮件模板
+## 5.3 通过提示词模仿生成邮件模板
 
 拿灵媒举例，我不懂灵媒，不懂塔罗牌。怎么做出打动用户的模板呢？
 
 很简单，抄！ 1:1 的抄 。验证别人已经验证过的事，成功概率是最大的。
 
-https://milled.com/purplegarden/your-free-september-tarot-forecast-inside-TRbkvoEU60JhPdjY
+`https://milled.com/purplegarden/your-free-september-tarot-forecast-inside-TRbkvoEU60JhPdjY`
 
 我拿Purple Garden的每月塔罗牌解读举例
 
 ![](img/f10629f80faacbf22b9645750710eb09.png)
 
-首先，使用即梦Ai或其他生图Ai。随便生成一张三张塔罗牌拼起来的图。将这张图压缩后上传至https://imgur.com/ ，获得一个单独链接，方便gemini调用。
+首先，使用即梦Ai或其他生图Ai。随便生成一张三张塔罗牌拼起来的图。将这张图压缩后上传至`https://imgur.com/` ，获得一个单独链接，方便gemini调用。
 
 ![](img/6c4a2912984824fbebf3a4185c305fff.png)
 
@@ -779,16 +785,16 @@ https://milled.com/purplegarden/your-free-september-tarot-forecast-inside-TRbkvo
 
 模板提示词
 
-logo地址：https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32
+logo地址：`https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32`
 
-图片地址 https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946
+图片地址 `https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946`
 
 ```
 1、我这次的主题是每月塔罗牌解读，创建卡片式设计。电子邮件主体应为一个单一容器，背景为浅紫色。卡片外的页面背景应为浅灰色。
 
 2、我需要再邮件最上面新增一个空白的模块，并且带上文字靠右边排列。
 文案：Can&#x27;t see the email? Please click here
-按钮：将 click here修改为&lt;p&gt;&lt;a href=&quot;{{WebVersionURL}}&gt;click here&lt;/a&gt;&lt;/p&gt;标签，且变成蓝色。
+按钮：将 click here修改为&lt;p&gt;&lt;a href=&quot;{{WebVersionURL}}&quot;&gt;click here&lt;/a&gt;&lt;/p&gt;标签，且变成蓝色。
 
 3、将logo和Psychic Samira 品牌名同一行并居中
 3、使用Home About Reviews 作为title部分的按钮和链接，创建三个药丸形状的紫色导航按钮。
@@ -865,14 +871,24 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
 
 邮件模板源码
 
+```
                                 &lt;img src=&quot;https://psychicsamira.com/cdn/shop/files/psychic-samira-favicon.png?crop=center&amp;height=32&amp;v=1697486004&amp;width=32&quot; alt=&quot;Logo&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;&quot;&gt;
+
                     &lt;img src=&quot;https://i.imgur.com/XD1fspN.png&quot; width=&quot;600&quot; alt=&quot;October Tarot Forecast&quot; style=&quot;width:100%;max-width:600px;height:auto;display:block;&quot;&gt;
+
                                 &lt;tr&gt;&lt;td style=&quot;padding:20px 15px 15px 15px;&quot;&gt;&lt;img src=&quot;https://psychicsamira.com/cdn/shop/files/Full-Psychic-Reading-by-Samira-Psychic-Samira-212523481.jpg?v=1759129946&quot; width=&quot;300&quot; alt=&quot;Tarot Reading&quot; style=&quot;max-width:100%; border-radius:8px;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+
                             &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.facebook.com/PsychicSamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2504/2504903.png&quot; alt=&quot;Facebook&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.tiktok.com/@psychicsamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/3046/3046121.png&quot; alt=&quot;TikTok&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/psychicsamira/&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/2111/2111463.png&quot; alt=&quot;Instagram&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://twitter.com/psychicsamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/14417/14417460.png&quot; alt=&quot;X (Twitter)&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
-                            &lt;td style=&quot;padding:0 10px;&quot;&gt;&lt;a href=&quot;https://www.youtube.com/@PsychicSamira&quot;&gt;&lt;img src=&quot;https://cdn-icons-png.flaticon.com/512/1384/1384060.png&quot; alt=&quot;YouTube&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display:block;border:0;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+```
+
+
+
+- TikTok：链接 `https://www.tiktok.com/@psychicsamira`，图标 `https://cdn-icons-png.flaticon.com/512/3046/3046121.png`
+- Instagram：链接 `https://www.instagram.com/psychicsamira/`，图标 `https://cdn-icons-png.flaticon.com/512/2111/2111463.png`
+- X (Twitter)：链接 `https://twitter.com/psychicsamira`，图标 `https://cdn-icons-png.flaticon.com/512/14417/14417460.png`
+- YouTube：链接 `https://www.youtube.com/@PsychicSamira`，图标 `https://cdn-icons-png.flaticon.com/512/1384/1384060.png`
+
+
 
 ```
 &lt;!DOCTYPE html&gt;
@@ -1070,7 +1086,9 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
 &lt;/html&gt;
 ```
 
-效果截图
+
+
+## 效果截图
 
 ![](img/d914dd65b8f86a4e024c760f2a69b6b3.png)
 
@@ -1082,22 +1100,22 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
 
 | 产品名称 | 官网地址 | 产品优势 | 产品劣势 | 收费模式 | 100万封价格 | 推荐星级 |
 | --- | --- | --- | --- | --- | --- | --- |
-| EmailOctopus | emailoctopus.com | **性价比高：**不管是订阅制还是配合AWS SES 使用，价格极具竞争力。 | **高级功能有限：**与 Klaviyo 或 Mailchimp 相比，在自动化、A/B 测试和深度分析方面功能较少。 | 按订阅用户数或发送量计费 提供免费版、Pro 版（按订阅数）和 Connect 版（按发送量，需关联AWS SES）。 | **10w订**阅用户+100w封邮件额度每个月310刀 | ⭐⭐⭐⭐⭐ |
-| Mailchimp | [mailchimp.com](https://mailchimp.com) | **功能全面强大：**集邮件营销、自动化、CRM、着陆页、社交广告于一体的营销平台。  用户体验极佳：界面设计友好，操作流畅，非常适合营销人员。 | **价格昂贵：**是同类产品中价格最高的之一，特别是当订阅人数增加时。 | 按订阅用户数和发送量计费 (套餐制) 提供免费版、Essentials, Standard, Premium 套餐。 | 10w订**阅用户+**100w**封邮件额度**价格约如**下  基础版**：800刀  标准版：1190刀  高级版：2190刀 | ⭐⭐⭐ |
-| Klaviyo | [klaviyo.com](https://www.klaviyo.com) | **深度电商集成：**与 Shopify, BigCommerce 等主流电商平台无缝集成，数据同步强大。 | **价格昂贵：**专注于电商领域，定价高于通用邮件营销工具。 | 按订阅用户数和发送量计费 (套餐制) 提供免费版，付费版按邮件联系人数和短信发送量收费。 | **10w订阅**用户+45w封邮件额度每月1440刀 | ⭐⭐⭐⭐ |
-| AWS SES (Simple Email Service) | aws.amazon.com/ses | **价格最低：**是市场上成本最低的邮件发送服务之一，适合大规模发送。很多服务商底层都是调用它。 | **纯粹的技术服务：**不提供前端界面、模板编辑器、联系人管理等营销工具。 | 按发送量和接收量计费 (按用量付费) 从 EC2 服务器发送有大量免费额度。 | 标准付费估算: 约** 120刀 **专用IP另外算 | ⭐⭐ |
-| SmartPushEDM | smartpushedm.com | **支持国内平台：**支持shopline，同时作为国内产品，产品体验符合国人使用习惯。 | **功能和数据回调存疑：**相比主流服务商，稳定性和送达率可能存在差距。经常抽风，数据与到站对不上等。 | 按发送量收费，可以无限制导入联系人 | **按发送量价**格，100w封邮件额度 1000刀 | ⭐⭐⭐⭐ |
-| 阿里云 | 做国外项目 PASS |  |  |  |  |  |
+| EmailOctopus | `emailoctopus.com` | **性价比高：**不管是订阅制还是配合`AWS SES`使用，价格极具竞争力。 | **高级功能有限：**与 Klaviyo 或 Mailchimp 相比，在自动化、A/B 测试和深度分析方面功能较少。 | 按订阅用户数或发送量计费 提供免费版、Pro 版（按订阅数）和 Connect 版（按发送量，需关联`AWS SES`）。 | 10w订阅用户+100w封邮件额度每个月310刀 | ⭐⭐⭐⭐⭐ |
+| Mailchimp | [mailchimp.com](https://mailchimp.com) | **功能全面强大：**集邮件营销、自动化、`CRM`、着陆页、社交广告于一体的营销平台。用户体验极佳：界面设计友好，操作流畅，非常适合营销人员。 | **价格昂贵：**是同类产品中价格最高的之一，特别是当订阅人数增加时。 | 按订阅用户数和发送量计费 (套餐制) 提供免费版、`Essentials`、`Standard`、`Premium` 套餐。 | 10w订阅用户+100w封邮件额度价格如下：基础版：800刀，标准版：1190刀，高级版：2190刀 | ⭐⭐⭐ |
+| Klaviyo | [klaviyo.com](https://www.klaviyo.com) | **深度电商集成：**与 Shopify, BigCommerce 等主流电商平台无缝集成，数据同步强大。 | **价格昂贵：**专注于电商领域，定价高于通用邮件营销工具。 | 按订阅用户数和发送量计费 (套餐制) 提供免费版，付费版按邮件联系人数和短信发送量收费。 | 10w订阅用户+45w封邮件额度每月1440刀 | ⭐⭐⭐⭐ |
+| AWS SES | `aws.amazon.com/ses` | **价格最低：**是市场上成本最低的邮件发送服务之一，适合大规模发送。很多服务商底层都是调用它。 | **纯粹的技术服务：**不提供前端界面、模板编辑器、联系人管理等营销工具。 | 按发送量和接收量计费 (按用量付费) 从 `EC2` 服务器发送有大量免费额度。 | 标准付费估算: 约 120刀，专用IP另外算 | ⭐⭐ |
+| SmartPushEDM | `smartpushedm.com` | **支持国内平台：**支持`shopline`，同时作为国内产品，产品体验符合国人使用习惯。 | **功能和数据回调存疑：**相比主流服务商，稳定性和送达率可能存在差距。经常抽风，数据与到站对不上等。 | 按发送量收费，可以无限制导入联系人 | 按发送量价格，100w封邮件额度 1000刀 | ⭐⭐⭐⭐ |
+| 阿里云 | 做国外项目 PASS | | | | | |
 
 ## 6.2 注册 Emailoctopus （清洗+发送+成果）
 
-由于白嫖了SmartPushEDM两三个月，注册了非常多的号，清洗了大量的有效数据，导致现在他们的风控和机器学习开始拦截白嫖党。一个邮件模板最多发送2个账号就会开始拦截。导致我不得不测试新的平台，我的需求就是月发送量是额度的10倍。不到垃圾箱，并且足够便宜、便宜、还是tmd便宜！因为我是拿来跑联盟的，平台多收一分，我就少赚一分。
+由于白嫖了`SmartPushEDM`两三个月，注册了非常多的号，清洗了大量的有效数据，导致现在他们的风控和机器学习开始拦截白嫖党。一个邮件模板最多发送2个账号就会开始拦截。导致我不得不测试新的平台，我的需求就是月发送量是额度的10倍。不到垃圾箱，并且足够便宜、便宜、还是tmd便宜！因为我是拿来跑联盟的，平台多收一分，我就少赚一分。
 
 目前免费版已经不让使用自定义模板了。
 
 ![](img/b20c8f074c5c521c64b64e92c5af8670.png)
 
-[再我又测了](https://emailoctopus.com/?ref=alice)7 8家邮件发件商之后找到了这家邮件大章鱼。看logo图标就知道为啥我这么叫它了。
+[再我又测了](https://emailoctopus.com/?ref=alice) 7 8家邮件发件商之后找到了这家邮件大章鱼。看logo图标就知道为啥我这么叫它了。
 
 ![](img/609cf2de87f8ddc5918ad070fa3bc2b9.png)
 
@@ -1135,7 +1153,7 @@ If you don&#x27;t want to receive our message, just click here to cancel the sub
 
 付费的话我是使用虚拟卡进行订阅，例如51vcard，桃子熊等。按月进行扣费，记得提前备好下一个月的扣款余额。
 
-https://www.51vcard.com/
+`https://www.51vcard.com/`
 
 ![](img/7e5d2503e299a74c06419ade7ef53a9d.png)
 
@@ -1147,7 +1165,7 @@ https://www.51vcard.com/
 
 ![](img/0d69a37170614ec09ef6ee03503b4d6c.png)
 
-配置平台要求的dns解析
+配置平台要求的`dns`解析
 
 ![](img/f5e565ff567c1fad1e24fd866405763d.png)
 
@@ -1159,27 +1177,27 @@ https://www.51vcard.com/
 
 ![](img/9093c29009c877e9a3938c5630c0ee29.png)
 
-点击Contacts下的Fields模块添加一个Name的字段，这样就不用弄fn和ln两个字段了。方便后续操作。
+点击`Contacts`下的`Fields`模块添加一个`Name`的字段，这样就不用弄`fn`和`ln`两个字段了。方便后续操作。
 
 也可以根据自己的用户数据进行配置，例如用户生日，地址，购买次数，国家等等。可以进行细分/自动化的操作。
 
 ![](img/b8964a1f153840a8b9fb7c4cc9af37bf.png)
 
-添加预热Tags，方便区分每组用户。我这里是使用脚本提取出历史打开过的用户进行营销。这样打开率点击率都会高很多，更容易养好一个域名。
+添加预热`Tags`，方便区分每组用户。我这里是使用脚本提取出历史打开过的用户进行营销。这样打开率点击率都会高很多，更容易养好一个域名。
 
 预热这块我的理解补充：
 
 1.  使用历史打开过的用户进行预热效果会更好，如果没有可以去别家平台花点小钱整理出来。
 
-1.  可以使用注册验证码邮件，找回密码等邮件作为对冲邮件。增加域名的信誉/信任度。
+2.  可以使用注册验证码邮件，找回密码等邮件作为对冲邮件。增加域名的信誉/信任度。
 
-1.  我们尝试过购买数百个邮箱账号，用python去调用smtp服务。批量打开点击回复，养好一个域名。
+3.  我们尝试过购买数百个邮箱账号，用`python`去调用`smtp`服务。批量打开点击回复，养好一个域名。
 
-1.  新域名一定要预热，专用IP也是，循序渐进，养好后就可以一直发了。
+4.  新域名一定要预热，专用IP也是，循序渐进，养好后就可以一直发了。
 
 官方做域名预热的文章，可参考
 
-https://help.emailoctopus.com/article/389-how-to-warm-up-my-sending-domain
+`https://help.emailoctopus.com/article/389-how-to-warm-up-my-sending-domain`
 
 我这边清洗出来后有1w5的打开用户。提取出8组用户数据进行域名预热。每次叠加一点，也可以让Ai进行定制预热计划。AI提示词如下：
 
@@ -1200,7 +1218,7 @@ Ai就会生成一个预热计划，很多人做邮件营销很心急，上来就
 
 ![](img/a01b9d74b02324bfac47a2be22bcf5c9.png)
 
-导入处理好的csv文件
+导入处好的`csv`文件
 
 ![](img/da9cf305424bb8c5a0e2a200877cb5b7.png)
 
@@ -1224,23 +1242,31 @@ Ai就会生成一个预热计划，很多人做邮件营销很心急，上来就
 
 可以查看官方的帮助文档里有讲解
 
-https://help.emailoctopus.com/article/71-how-to-insert-an-unsubscribe-link
+`https://help.emailoctopus.com/article/71-how-to-insert-an-unsubscribe-link`
 
 第一个链接用于使用web查看内容，大部分主流的邮箱进入垃圾箱后是不会展示图片的。所以需要这个按钮去诱导用户点击去查看完整的邮件内容。
 
+```
 <p><a href="{{WebVersionURL}}>click here</a></p>
+```
 
 第二个是退订按钮，如果不带很容易被判违规。
 
+```
 <p><a href="{{UnsubscribeURL}}">Unsubscribe</a></p>
+```
 
 第三个是品牌方宣传，免费版需要带。
 
+```
 <p><a href="{{RewardsURL}}">Powered by EmailOctopus</a></p>
+```
 
 第四个是地址信息
 
+```
 <p>{{SenderInfo}} </p>
+```
 
 这都是制作模板时需要考虑并解决的。
 
@@ -1262,9 +1288,9 @@ https://help.emailoctopus.com/article/71-how-to-insert-an-unsubscribe-link
 
 1.  邮件到推广并不会太影响用户转换，稍微会降低一点点。但不是每家邮箱都有推广邮件的算法，很多中小的邮件厂商并没有。还是会到收件箱。
 
-1.  到垃圾箱主要还是没有预热（域名/IP都不好），并且发送的内容/模板等问题，例如关键词，模板CSS错位等。现在可以让Ai进行检测和调整。大部分情况都不会出现到垃圾箱的情况。
+2.  到垃圾箱主要还是没有预热（域名/`IP`都不好），并且发送的内容/模板等问题，例如关键词，模板CSS错位等。现在可以让Ai进行检测和调整。大部分情况都不会出现到垃圾箱的情况。
 
-1.  就算到垃圾箱，还是有可能出现转化的。前提是用户数据足够精准。并且添加站外查看的按钮，让用户点击按钮查看完整邮件列表。
+3.  就算到垃圾箱，还是有可能出现转化的。前提是用户数据足够精准。并且添加站外查看的按钮，让用户点击按钮查看完整邮件列表。
 
 测试各个按钮点击没问题后就可以无脑下一步了。选择现在发送和定时都可以。我一般是设置中国时间的晚上11点至2点，对应美国时间的早上，一天都有概率看到你的邮件。
 
@@ -1290,12 +1316,12 @@ https://help.emailoctopus.com/article/71-how-to-insert-an-unsubscribe-link
 
 行业的普遍指标如下，大家可以参考。
 
-| 指标 | 行业平均水平 | 良好目标 | **优秀目标 ** |
+| 指标 | 行业平均水平 | 良好目标 | 优秀目标 |
 | --- | --- | --- | --- |
-| 送达率 | 90% - 95% | 98% - 99% | **&gt; 99%** |
-| 独立打开率 | 10% - 20% | 25% - 35% | **&gt; 50%** |
-| 独立点击率 | 1% - 3% | 5% - 8% | **&gt; 10%** |
-| 退订率 | 1% - 3% | &lt; 0.5% | **&lt; 0.1%** |
+| 送达率 | 90% - 95% | 98% - 99% | > 99% |
+| 独立打开率 | 10% - 20% | 25% - 35% | > 50% |
+| 独立点击率 | 1% - 3% | 5% - 8% | > 10% |
+| 退订率 | 1% - 3% | < 0.5% | < 0.1% |
 
 需要做多组邮件测试出用户感兴趣的模板，像我就已经淘汰了两个根本不会有用户点的套餐。
 
@@ -1305,11 +1331,11 @@ https://help.emailoctopus.com/article/71-how-to-insert-an-unsubscribe-link
 
 首先，恭喜各位！耐心看完了这篇帖子，相信此时你对邮件营销的理解，已经超过了80%的人。打破了邮件营销无用的认知！如果文章的思路和过程对你有启发，可以在赚钱上给我点个赞，并再评论区和我讨论。谢谢各位！
 
-我把我这三年踩过的坑、走过的路都**掰开揉碎了放在这里，就是想告**诉你一件事：邮件营销这玩意，真没那么难~
+我把我这三年踩过的坑、走过的路都**掰开揉碎了放在这里，就是想告诉你一件事**：邮件营销这玩意，真没那么难~
 
-它**也不**是什么过时的老古董**，而**是一个不管市场怎么变，**都能让你直接**联系到客户、是闷声发财的秘密武器。你看我的经历，从给培训班拉人的唾弃，到帮公司搞增长的探索，再到做仿牌和联盟营销实战精准变现都共同指向一个结论：邮件营销的真正威力在于其惊人的适应性与深度。它既能服务于最传统的业务需求，也能成为最前沿行业增长的尖端武器，它的上限完全取决于认知和策略。
+它不也是什么过时的老古董，而是一个不管市场怎么变，都能让你直接联系到客户、是闷声发财的秘密武器。你看我的经历，从给培训班拉人的唾弃，到帮公司搞增长的探索，再到做仿牌和联盟营销实战精准变现都共同指向一个结论：邮件营销的真正威力在于其惊人的适应性与深度。它既能服务于最传统的业务需求，也能成为最前沿行业增长的尖端武器，它的上限完全取决于认知和策略。
 
-文**章里提到**的找邮箱**、用****AI写模板，这**些都是“招式”。但一定要记住，所有招式的最终目的，都是为了和你的用户交个朋友，让他们信任你。 信任有了，成交就是水到渠成的事。真诚就是必杀技。给用户发塔罗牌预测就和告诉用户今天天气预报一个需求。
+文章里提到的找邮箱、用AI写模板，这些都是“招式”。但一定要记住，所有招式的最终目的，都是为了和你的用户交个朋友，让他们信任你。信任有了，成交就是水到渠成的事。真诚就是必杀技。给用户发塔罗牌预测就和告诉用户今天天气预报一个需求。
 
 这篇长文，就是我递给你的一张入场券，希望能帮你省下摸索的时间。别再犹豫观望了，邮件营销的起点真的不难——找到你的第一个订阅者，发送你的第一封邮件，故事就开始了。
 

@@ -1,3 +1,4 @@
+
 # OpenClaw 这只龙虾🦞为什么会这么火？
 
 > 来源：[https://my.feishu.cn/docx/CbKPd3UBWoS1YrxnHsDchgBGnrb](https://my.feishu.cn/docx/CbKPd3UBWoS1YrxnHsDchgBGnrb)
@@ -48,7 +49,7 @@ OpenClaw 创始人 Peter Steinberger 是奥地利程序员，做它的初衷很�
 
 OpenClaw 火得快，还有一个重要原因是它的开源生态滚起来了。
 
-社区技能注册中心 ClawHub 上已有超过 13,000 个技能，覆盖编程、办公、研究、智能家居等几乎所有你能想到的场景。开发者用一个简单的 Markdown 文件（SKILL.md）就能给 AI 增加新能力，门槛很低，写一个技能跟写一篇说明文档差不多。有人做了从 109 个信息源自动筛选科技新闻的技能，有人做了会议结束自动在 Jira 建任务的技能，还有航班比价、论文摘要、智能家居控制。包括我也给 ClawHub 贡献了一些技能（比如 baoyu-translate、baoyu-slide-deck、baoyu-article-illustrator 等）。这种“给 AI 写 App”的模式，让 OpenClaw 的能力以社区的速度增长，而不是等某家公司慢慢更新。
+社区技能注册中心 ClawHub 上已有超过 13,000 个技能，覆盖编程、办公、研究、智能家居等几乎所有你能想到的场景。开发者用一个简单的 Markdown 文件（`SKILL.md`）就能给 AI 增加新能力，门槛很低，写一个技能跟写一篇说明文档差不多。有人做了从 109 个信息源自动筛选科技新闻的技能，有人做了会议结束自动在 Jira 建任务的技能，还有航班比价、论文摘要、智能家居控制。包括我也给 ClawHub 贡献了一些技能（比如 `baoyu-translate`、`baoyu-slide-deck`、`baoyu-article-illustrator` 等）。这种“给 AI 写 App”的模式，让 OpenClaw 的能力以社区的速度增长，而不是等某家公司慢慢更新。
 
 更有意思的是它的自我进化能力。OpenClaw 不只能使用别人写好的技能，它还能自己给自己写技能。你跟它说“我需要一个每天早上检查航班价格的功能”，它会自己写代码、自己测试、然后装上。有用户想让龙虾访问大学课程系统，跟它说了一声，它就自己写了个技能并开始使用。
 

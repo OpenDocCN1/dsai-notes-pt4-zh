@@ -1,3 +1,4 @@
+
 # 监管沙盒（sandbox）
 
 > 来源：[https://docs.feishu.cn/docx/HC3mdZFJfo8AE0xjneocQx39nuh](https://docs.feishu.cn/docx/HC3mdZFJfo8AE0xjneocQx39nuh)
@@ -9,31 +10,29 @@
 ## 相关报告
 
 +   EDPS的研究报告（2022年），
-
 +   中文译文：
 
-![](img/5e550da4cee75ed29de6f23b08319fa3.png)
+    ![](img/5e550da4cee75ed29de6f23b08319fa3.png)
 
-[EPRS_Artificial intelligence act and regulatory sandboxes zhening 翻译.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T6qabWQehofEw0xj4EPcIw7xnph)
+    [EPRS_Artificial intelligence act and regulatory sandboxes zhening 翻译.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/T6qabWQehofEw0xj4EPcIw7xnph)
 
-
-[EPRS_Artificial intelligence act and regulatory sandboxes .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFAxbo0Rkopz7lxl7UAcy9H5nfg)
+    [EPRS_Artificial intelligence act and regulatory sandboxes .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFAxbo0Rkopz7lxl7UAcy9H5nfg)
 
 +   有趣的一份报告，来自欧洲智库Digital Europe。在欧盟人工智能法即将生效之际，DE邀请了九个获奖的AI初创企业参与深度讨论，包括对AIA的理解、合规准备，对竞争和创新的影响等。标题所谓“沙盒” (sandboxing)实际是隐喻，报告方法论基于深度长期访谈，并无监管机关的参与，也没有直接的规范效果。但报告呈现的数据和问题还是值得思考和讨论。
 
-![](img/80f7e9296679aab34736b36009070323.png)
+    ![](img/80f7e9296679aab34736b36009070323.png)
 
-[Sandboxing AIA_DigitalEurope.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QjirbCKXco7xTwxyl2ocR0ZTnDh)
+    [Sandboxing AIA_DigitalEurope.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QjirbCKXco7xTwxyl2ocR0ZTnDh)
 
-+   EDPS发布新年第一份意见，就欧盟委员会11月起草的《互操作欧洲法案》提供数据保护相关建议，内容聚焦监管沙盒的适用性/必要性。https://edps.europa.eu/system/files/2023-01/2022-1196_d0089_opinion_en.pdf
++   EDPS发布新年第一份意见，就欧盟委员会11月起草的《互操作欧洲法案》提供数据保护相关建议，内容聚焦监管沙盒的适用性/必要性。`https://edps.europa.eu/system/files/2023-01/2022-1196_d0089_opinion_en.pdf`
 
 ## 实践
 
 《欧盟《人工智能法案》中的监管沙盒》
 
-西班牙设立欧盟首个人工智能监管沙盒，https://mp.weixin.qq.com/s/qRefhv3WjjY4xYcYbrYnXA
+西班牙设立欧盟首个人工智能监管沙盒，`https://mp.weixin.qq.com/s/qRefhv3WjjY4xYcYbrYnXA`
 
-+   欧盟的新闻：https://digital-strategy.ec.europa.eu/en/news/first-regulatory-sandbox-artificial-intelligence-presented
++   欧盟的新闻：`https://digital-strategy.ec.europa.eu/en/news/first-regulatory-sandbox-artificial-intelligence-presented`
 
 2018年，日本启动了这一制度，允许国内外的组织和公司在金融、医疗保健和交通等领域试验新技术，如区块链、人工智能和物联网。在欧洲，挪威和英国也推出了人工智能沙箱。
 

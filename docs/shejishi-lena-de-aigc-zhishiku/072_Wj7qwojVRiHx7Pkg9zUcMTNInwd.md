@@ -1,8 +1,9 @@
+
 # 视频 | Domo AI
 
 > 来源：[https://aigclena.feishu.cn/docx/Ze0YdWXOGoCHe8xo81tcnTkOnUc](https://aigclena.feishu.cn/docx/Ze0YdWXOGoCHe8xo81tcnTkOnUc)
 
-# Talking Avatar
+## Talking Avatar
 
 2025.3.24
 
@@ -16,11 +17,11 @@ DomoAI新功能上线！Talking Avatar 现已登陆 Quick App！
 
 [SaveTwitter.Net_fu1dcENnXgaXaa5o_(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I9wzbSwYPoSbhKxIAEwcb9Ybnod)
 
-# 静态图变为动图 0304
+## 静态图变为动图 0304
 
-"/animate"已升级将静态图像转换为动态视频
+`"/animate"`已升级将静态图像转换为动态视频
 
-地址：domoai.app/create/animate
+地址：`domoai.app/create/animate`
 
 ![](img/433aeb20ee86afcdc32fa5ea1afdf8c8.png)
 
@@ -28,6 +29,6 @@ DomoAI新功能上线！Talking Avatar 现已登陆 Quick App！
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/829862723c79489d2bc889a267b07b35.png)

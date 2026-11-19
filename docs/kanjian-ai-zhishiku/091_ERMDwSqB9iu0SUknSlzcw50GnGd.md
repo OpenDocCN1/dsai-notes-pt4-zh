@@ -1,6 +1,7 @@
+
 # 看见AI日报（20230714）
 
-> 来源：[https://jlqyxzzvbk.feishu.cn/docx/UyF0dgpsioRVaaxpbdkcKvUgnNl](https://jlqyxzzvbk.feishu.cn/docx/UyF0dgpsioRVaaxpbdkcKvUgnNl)
+> 来源：https://jlqyxzzvbk.feishu.cn/docx/UyF0dgpsioRVaaxpbdkcKvUgnNl
 
 > 快报时间：2023/7月/14日 周五 16:00
 
@@ -12,7 +13,7 @@
 
 # AI资讯精选
 
-## **七部门联合公布****AIGC****管理办法**
+## 七部门联合公布 AIGC 管理办法
 
 ![](img/267c8fa67fee4713716b01f225168cd3.png)
 
@@ -26,7 +27,7 @@
 
 更多信息请访问：https://baijiahao.baidu.com/s?id=1771370752945109178&wfr=spider&for=pc
 
-## **Stability ****AI**内讧：创始人起诉CEO Emad Mostaque涉嫌欺骗
+## Stability AI 内讧：创始人起诉 CEO Emad Mostaque 涉嫌欺骗
 
 ![](img/211039ebb61ba38ae34205ad7048313b.png)
 
@@ -40,7 +41,7 @@ Cyrus Hodes 希望恢复他在 Stability AI 的 15% 股份，以及要求向 Ema
 
 更多信息请访问：https://www.infoq.cn/article/xb8tyd9bvdztudesmequ
 
-## 谷歌聊天机器人Bard登陆欧盟和巴西市场
+## 谷歌聊天机器人 Bard 登陆欧盟和巴西市场
 
 ![](img/ea01d486ff82b0ef8310b0e633fa771a.png)
 
@@ -54,7 +55,7 @@ Cyrus Hodes 希望恢复他在 Stability AI 的 15% 股份，以及要求向 Ema
 
 # AI软件精选
 
-## **Reshot ****AI****（AI****修图****）**
+## Reshot AI（AI 修图）
 
 Reshot AI 是一款帮助您使用 AI 编辑照片的工具。编辑面部姿势、灯光、调整表情、背景等等，所有这些都通过 AI 进行。
 
@@ -64,7 +65,7 @@ Reshot AI 是一款帮助您使用 AI 编辑照片的工具。编辑面部姿势
 
 链接：https://www.reshot.ai/
 
-## **Vimeo ****AI****（AI****视频剪辑****）**
+## Vimeo AI（AI 视频剪辑）
 
 ![](img/80fa149da21a756a7e10cef817f689c3.png)
 
@@ -78,7 +79,7 @@ Vimeo 官宣了AI视频创作套件，能让小白用户 0 门槛创作视频
 
 链接：https://vimeo.com/
 
-## Dora ai**（AI****无代码建网站****）**
+## Dora AI（AI 无代码建网站）
 
 Dora是一个无代码网站制作平台，5月17日 Dora AI重磅发布，动动嘴皮子，AI帮你生成3D动效网站
 
@@ -94,7 +95,7 @@ Dora是一个无代码网站制作平台，5月17日 Dora AI重磅发布，动�
 
 链接：https://www.dora.run/ai
 
-**更多****AI****工具请访问：**https://nav.6aiq.com/
+**更多 AI 工具请访问：**https://nav.6aiq.com/
 
 # AI课程精选
 
@@ -114,8 +115,6 @@ https://www.bilibili.com/video/BV16u411j7u3/?spm_id_from=333.788&vd_source=3f793
 
 ![](img/3ac774ccbdd670cc1f90709925fc7540.png)
 
-#
-
 ![](img/b8e5a360b852de06fb1e9630e1723220.png)
 
 ![](img/f2ad9bcd6b1b908a9429308f33b5b895.png)
@@ -134,7 +133,7 @@ https://www.bilibili.com/video/BV16u411j7u3/?spm_id_from=333.788&vd_source=3f793
 
 ![](img/ae7c11f9a0c8199068d8798958325a44.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/e17f77c7ec0c5f565f3708eae5d95076.png)
 

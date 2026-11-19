@@ -1,3 +1,4 @@
+
 # 2025🛰️小游戏开发者大会（重庆）-会议资料整理
 
 > 来源：[https://huchegames.feishu.cn/docx/Rf3bdBa1gog8Bmxy5Hvcoxyvnjg](https://huchegames.feishu.cn/docx/Rf3bdBa1gog8Bmxy5Hvcoxyvnjg)
@@ -154,7 +155,7 @@ ip 游戏拥有优势，cpa 低，美术品质更好
 
 ![](img/c183c5a666bcf600ef685a383a1ef60f.png)
 
-![](img/30065114e37c3ebe3c6d244af4c6a2eb.png)
+![](img/30065114e37c3ebe3c6d244af4c6aeb.png)
 
 ![](img/c7d378864f16421c03f33f4ed86bef64.png)
 

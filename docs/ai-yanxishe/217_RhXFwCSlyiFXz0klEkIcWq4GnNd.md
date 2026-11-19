@@ -1,3 +1,4 @@
+
 # 从0到1快速创建GPTs角色
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/XqWdd1VlJoAsNSxFCL8clFs1n9e](https://aiyanxishe.feishu.cn/docx/XqWdd1VlJoAsNSxFCL8clFs1n9e)
@@ -39,8 +40,6 @@
 ## 二、如何创建一个 GPTs 角色？
 
 点击Create a GPT就可以进入到“新GPT”创建页面↓。
-
-![](img/56ed4a33cf64a9ef01310da0f4cab44b.png)
 
 我把界面翻译成了中文，其中：←界面左半部分，是我们操作、创建新 GPT 的界面；
 

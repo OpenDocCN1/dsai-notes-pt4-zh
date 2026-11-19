@@ -1,6 +1,7 @@
+
 # 3D教学展示网页
 
-> 来源：[https://xodnytdcaw.feishu.cn/docx/Cri1dH3UtoSKAsxytECcpW2FnJf](https://xodnytdcaw.feishu.cn/docx/Cri1dH3UtoSKAsxytECcpW2FnJf)
+> 来源：[`https://xodnytdcaw.feishu.cn/docx/Cri1dH3UtoSKAsxytECcpW2FnJf`](https://xodnytdcaw.feishu.cn/docx/Cri1dH3UtoSKAsxytECcpW2FnJf)
 
 # Prompt
 
@@ -12,12 +13,12 @@
 ## 关键技术要素
 
 使用以下技术栈构建沉浸式体验：
-- Three.js (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js)
+- Three.js (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js`)
 - 内嵌自定义控件代码，避免外部依赖问题
-- Tailwind CSS (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css)
-- Font Awesome (https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css)
+- Tailwind CSS (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css`)
+- Font Awesome (`https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css`)
 - 中文排版使用 Noto Serif SC 和 Noto Sans SC
-- GSAP动画库 (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js)
+- GSAP动画库 (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js`)
 
 ## 3D场景设计
 
@@ -91,12 +92,12 @@
 ## 技术实现框架
 
 使用以下技术栈构建教育游戏体验：
-- Three.js (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js)
+- Three.js (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js`)
 - 内嵌自定义控件代码，避免外部依赖问题
-- Tailwind CSS (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css)
-- Font Awesome (https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css)
+- Tailwind CSS (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css`)
+- Font Awesome (`https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css`)
 - 中文排版使用 Noto Serif SC 和 Noto Sans SC
-- GSAP动画库 (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js)
+- GSAP动画库 (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js`)
 
 ## 3D游戏场景设计
 
@@ -169,7 +170,6 @@
 
 待处理内容或主题：[在此输入具体教育主题]
 
-
 ```
 
 ## V3 3D教育游戏（不稳定）
@@ -190,12 +190,12 @@
 ## 技术实现框架
 
 使用以下技术栈构建教育游戏体验：
-- Three.js (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js)
+- Three.js (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js`)
 - 内嵌自定义控件代码，避免外部依赖问题
-- Tailwind CSS (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css)
-- Font Awesome (https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css)
+- Tailwind CSS (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css`)
+- Font Awesome (`https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css`)
 - 中文排版使用 Noto Serif SC 和 Noto Sans SC
-- GSAP动画库 (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js)
+- GSAP动画库 (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js`)
 - 可选：简化版物理引擎实现互动效果
 
 ## 3D游戏场景设计
@@ -281,17 +281,18 @@
 
 待处理主题或内容：鲨鱼的秘密
 
-
 ```
 
 ## V4 2D版本尝试(SVG有点抽象 😶)
 
-```
+
+
+# 游戏化学习HTML应用开发指南
+
 作为一名专精于2D交互式教育内容的教育游戏开发专家，你擅长将学习内容转化为引人入胜的交互式2D游戏体验。请为我提供的任何教育主题创建一个游戏化学习HTML应用，融合教育内容与直观的2D交互元素，你做任务会先规划思考，优先保证低代码复杂度，高稳定性和可控性，然后再输出代码。
 
 ## 游戏化学习核心要素
 
-构建以下游戏化元素激发学习动机：
 - 清晰的学习目标转化为游戏任务和挑战
 - 进度系统（经验值、关卡或成就徽章）
 - 即时反馈机制（视觉和文字提示）
@@ -301,20 +302,18 @@
 
 ## 技术实现框架
 
-使用以下技术栈构建教育游戏体验：
 - HTML5 Canvas或SVG进行2D绘图
 - JavaScript ES6+进行交互逻辑
-- Three.js (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js)
+- `Three.js` (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/three.js/110/three.min.js`)
 - 内嵌自定义控件代码，避免外部依赖问题
-- Tailwind CSS (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css)
-- Font Awesome (https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css)
-- 中文排版使用 Noto Serif SC 和 Noto Sans SC
-- GSAP动画库 (https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js)
+- `Tailwind CSS` (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css`)
+- `Font Awesome` (`https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css`)
+- 中文排版使用 `Noto Serif SC` 和 `Noto Sans SC`
+- `GSAP`动画库 (`https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js`)
 - 可选：简单的状态管理系统
 
 ## 2D游戏场景设计
 
-根据教育主题，设计一个完整的2D游戏场景：
 - 将学习概念转化为可视化2D元素和互动对象
 - 创建主题相关的游戏环境（如历史场景、科学实验室、动物世界等）
 - 设计角色或向导引导学习者完成任务
@@ -324,7 +323,6 @@
 
 ## 直观交互设计原则
 
-采用简洁直观的设计理念，创造自然的交互体验：
 - 放大交互热区：确保可点击区域足够大，适合触摸设备
 - 视觉暗示：使用动画、光效或颜色变化引导用户注意下一步操作
 - 自动化流程：完成一个步骤后自动引导至下一步，减少不必要的手动确认
@@ -334,7 +332,6 @@
 
 ## 创意游戏机制
 
-实现以下创新游戏机制提升学习趣味性：
 - 知识收集器：设计虚拟工具收集散落在环境中的知识碎片
 - 场景互动：允许与场景元素互动以揭示不同知识点
 - 解谜元素：设计与学习内容相关的谜题，解开后获得关键信息
@@ -345,7 +342,6 @@
 
 ## 自动化学习路径
 
-设计智能引导系统确保学习流畅进行：
 - 完成当前任务后自动引导至下一个学习点
 - 提供明确的视觉指引指向下一个目标
 - 实现智能提示系统，根据用户行为提供上下文相关的帮助
@@ -355,7 +351,6 @@
 
 ## 界面控制与用户自主性
 
-确保用户对学习体验有完全控制权：
 - 为所有模态窗口和界面元素提供明确的关闭/返回按钮
 - 允许用户随时暂停、保存和恢复学习进度
 - 提供跳过或加速某些内容的选项
@@ -365,7 +360,6 @@
 
 ## 教育内容整合
 
-确保游戏体验与教育目标紧密结合：
 - 将复杂概念分解为可游戏化的小单元
 - 设计循序渐进的学习路径，由简到难
 - 通过故事情境或问题场景包装教学内容
@@ -374,7 +368,6 @@
 
 ## 技术优化与性能
 
-确保流畅的游戏化学习体验：
 - 资源预加载和进度指示
 - 图像优化，确保快速加载
 - 针对移动设备的响应式设计
@@ -384,35 +377,31 @@
 
 ## 输出成果
 
-提供包含以下内容的完整教育游戏解决方案：
 1. 单一HTML文件，包含所有必要CSS和JavaScript（避免外部依赖）
 2. 只输出HTML，不要其他任何引导语和介绍
 3. 确保游戏化学习体验能在现代浏览器中流畅运行
 
 无论我提供什么教育主题，都请发挥你的创意想象力和技术专长，创造一个寓教于乐的2D游戏化学习体验，让学习过程变得有趣且高效。游戏元素应服务于教育目标，而非仅作装饰。设计应遵循直观简洁理念，让用户无需思考即可自然完成学习流程，同时保持足够的创意和趣味性。
 
-
 待处理主题：猫的秘密
-
-```
 
 # 用户案例
 
 ## 四合院探索
 
-https://www.qiaomu.ai/demo/yuan.html
+`https://www.qiaomu.ai/demo/yuan.html`
 
 ![](img/e45bf191f5e1b5a0ff3ac716f0092a6e.png)
 
 ## 大模型工作原理
 
-https://www.qiaomu.ai/demo/llm.html
+`https://www.qiaomu.ai/demo/llm.html`
 
 ![](img/53ad7654f9ae2e4af49d502c6e95170a.png)
 
 ## 精酿啤酒工艺
 
-https://www.qiaomu.ai/demo/beer.html
+`https://www.qiaomu.ai/demo/beer.html`
 
 ![](img/e0a929b22b2554804f9d0c709c0677dc.png)
 

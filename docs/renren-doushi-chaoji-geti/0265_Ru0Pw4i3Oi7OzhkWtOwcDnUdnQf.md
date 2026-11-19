@@ -1,10 +1,11 @@
+
 # 2025-09-22写给独自一人在做项目的你
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Hshxdc2UNofGU9xW371cOxXvnWc](https://xuqiwei1986.feishu.cn/docx/Hshxdc2UNofGU9xW371cOxXvnWc)
 
-> 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/8854524154481122)ticleDetail/xq_t...
+> 🔗 原文链接：h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/8854524154481122)ticleDetail/xq_t...
 
-# 一，自己独自做项目，如何消除内耗、焦虑？
+## 一，自己独自做项目，如何消除内耗、焦虑？
 
 我觉得，内耗和焦虑产生的核心，是既改变不了自己，也改变不了环境。
 
@@ -68,7 +69,7 @@
 
 ![](img/5337962ae7d275b557f3ff9a4ca870b7.png)
 
-**具体该怎么干？**
+### 具体该怎么干？
 
 **分这几步，**
 
@@ -106,7 +107,7 @@
 
 你根本没时间去想这些，因为你是行动者，不是空想家。
 
-# 二，如何建立真正的自信？
+## 二，如何建立真正的自信？
 
 在我看来，愿力大于能力，我更愿意把“愿力”理解为信念感——就是 你越相信自己能做到，你就越有可能真正做到。
 

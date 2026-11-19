@@ -1,28 +1,29 @@
+
 # No.1 - 关于 AI 的 107 个人，61 个工具和 28 个通讯
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/Te6kd4NIcobDsuxTp27cLVs8nBe](https://diwfpqo78m.feishu.cn/docx/Te6kd4NIcobDsuxTp27cLVs8nBe)
 
-# 107 个值得关注的 Twitter
+## 107 个值得关注的 Twitter
 
 107 People to Follow on Twitter
 
-## 为什么是 Twitter？
+### 为什么是 Twitter？
 
-想到 AI，我脑海中第一时间跳出的社交平台是 Reddit、LinkedIn 和 Twitter 。一直以来，这三个平台都以三种完全不同的方式参与着「关于 AI 的对话」，今天让我们从 Twitter 开始。
+想到 AI，我脑海中第一时间跳出的社交平台是 Reddit、LinkedIn 和 Twitter。一直以来，这三个平台都以三种完全不同的方式参与着「关于 AI 的对话」，今天让我们从 Twitter 开始。
 
-## Twitter 为什么重要 ？
+### Twitter 为什么重要？
 
-AI 领域的许多书籍作者、企业决策者和工具开发者经常使用 Twitter 并在此发表言论
+AI 领域的许多书籍作者、企业决策者和工具开发者经常使用 Twitter 并在此发表言论。
 
-Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源源不断地提供着有价值的背景信息
+Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源源不断地提供着有价值的背景信息。
 
-因此，在 AI 的一波波浪潮中，Twitter 始**终拥有着自己的「寓教于乐的小世界」。但 2022 **年，ChatGPT 的诞生让 Twitter 在这场 AI 热潮中显得尤为重要 —— 人们在 Twitter 上大量分享他们使用这个工具的过程，关于 Generative AI 和 GPT-3 /3.5 的看法及围绕它们而产生的行为 —— 无论炒 作与否。
+因此，在 AI 的一波波浪潮中，Twitter 始终拥有着自己的「寓教于乐的小世界」。但 2022 年，ChatGPT 的诞生让 Twitter 在这场 AI 热潮中显得尤为重要 —— 人们在 Twitter 上大量分享他们使用这个工具的过程，关于 Generative AI 和 GPT-3/3.5 的看法及围绕它们而产生的行为 —— 无论炒作与否。
 
-## 该关注谁？
+### 该关注谁？
 
-在我看来，如果对 AI 充满热情，我们首先需要一个包含本领域记者、作家、决策者和公司的组合
+在我看来，如果对 AI 充满热情，我们首先需要一个包含本领域记者、作家、决策者和公司的组合。
 
-理想情况下，这其中既有女性也有男性，既有成熟的意见领袖也有年轻的研究人员或不完善的观点，既有批判性的记者也有意见多样的风险投资人
+理想情况下，这其中既有女性也有男性，既有成熟的意见领袖也有年轻的研究人员或不完善的观点，既有批判性的记者也有意见多样的风险投资人。
 
 我们需要更多讨论技术与落地而不是炒作与投机，那么还需要有足够的风险资本、天使投资人和决策者来帮助我们了解行业新闻和现实问题。
 
@@ -33,410 +34,284 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 本名单包括 - The list includes：
 
 - 研究人员 - Researchers
-
 - 新闻工作者 - Journalists
-
 - 创始人 & 决策者 - Founders, Executives
-
 - 选择性的投资人 - Selective VC folk
-
 - 作家 - Authors
-
 - AI 领域创作者 - A.I. Newsletter Niche Creators
 
 1. Sam Altman (@sama)
-
-- Foundetr of OpenAI
-
-- Former president of Y Combinator
+    - Foundetr of OpenAI
+    - Former president of Y Combinator
 
 2. Yann LeCun (@ylecun)
-
-- Professor at NYU
-
-- Chief AI Scientist at Meta
+    - Professor at NYU
+    - Chief AI Scientist at Meta
 
 3. Andrew Ng (@AndrewYNg)
-
-- Co-Founder of Coursera
-
-- Stanford CS adjunct faculty
-
-- Former head of Baidu AI Group/Google Brain
+    - Co-Founder of Coursera
+    - Stanford CS adjunct faculty
+    - Former head of Baidu AI Group/Google Brain
 
 4. François Chollet (@fchollet)
-
-- Deep learning at Google
-
-- Creator of Keras
-
-- Author of 'Deep Learning with Python'
+    - Deep learning at Google
+    - Creator of Keras
+    - Author of 'Deep Learning with Python'
 
 5. Karen Hao 郝珂灵 (@_KarenHao)
-
-- A.I. Journalist at WSJ
-
-- National magazine award winner
+    - A.I. Journalist at WSJ
+    - National magazine award winner
 
 6. Andrej Karpathy (@karpathy)
-
-- YouTuber, Blogger, Influencer
-
-- Previously Director of AI at Tesla, OpenAI
+    - YouTuber, Blogger, Influencer
+    - Previously Director of AI at Tesla, OpenAI
 
 7. Jürgen Schmidhuber (@SchmidhuberAI)
-
-- Co-director of the Dalle Molle Institute for Artificial Intelligence Research
-
-- He has been referred to as "father of modern AI" and "father of deep learning"
+    - Co-director of the Dalle Molle Institute for Artificial Intelligence Research
+    - He has been referred to as "father of modern AI" and "father of deep learning"
 
 8. Sara Hooker (@sarahookr)
-
-- Head of AI at Cohere
-
-- Formerly Research at Google Brain
+    - Head of AI at Cohere
+    - Formerly Research at Google Brain
 
 9. Demis Hassabis (@demishassabis)
-
-- Founder & CEO of DeepMind and Isomorphic Labs
+    - Founder & CEO of DeepMind and Isomorphic Labs
 
 10. Sarah Guo (@saranormous)
-
-- Founder of Conviction A.I., Starup Investor
-
-- Former partner at Greylock
+    - Founder of Conviction A.I., Starup Investor
+    - Former partner at Greylock
 
 11. David Hardmaru (@hardmaru)
-
-- Head of Prompt Engineering at Stability AI
-
-- Former Research Scientist at Google Brain
+    - Head of Prompt Engineering at Stability AI
+    - Former Research Scientist at Google Brain
 
 12. Lilian Weng (@lilianweng)
-
-- Applied AI Lead at OpenAI
+    - Applied AI Lead at OpenAI
 
 13. Oriol Vinyals (@OriolVinyalsML)
-
-- Research Director & Deep Learning Lead at DeepMind
-
-- Led AlphaStar, AlphaFold, AlphaCode, WaveNet, seq2seq, etc
-
-- Former research scientist at Google Brain
+    - Research Director & Deep Learning Lead at DeepMind
+    - Led AlphaStar, AlphaFold, AlphaCode, WaveNet, seq2seq, etc
+    - Former research scientist at Google Brain
 
 14. Michael Black (@Michael_J_Black)
-
-- Director at Max Planck Institute for Intelligent Systems
-
-- Chief Scientist at Meshcapade
+    - Director at Max Planck Institute for Intelligent Systems
+    - Chief Scientist at Meshcapade
 
 15. Jeff Dean (@JeffDean)
-
-- Senior Fellow & SVP, Google Research and AI
-
-- Co-designer/implementor of software systems like TensorFlow, MapReduce, Bigtable, Spanner, etc
+    - Senior Fellow & SVP, Google Research and AI
+    - Co-designer/implementor of software systems like TensorFlow, MapReduce, Bigtable, Spanner, etc
 
 16. Ian Goodfellow (@goodfellow_ian)
-
-- Research Scientist at DeepMind
-
-- Inventor of GANs
-
-- Lead author of http://deeplearningbook.org
+    - Research Scientist at DeepMind
+    - Inventor of GANs
+    - Lead author of http://deeplearningbook.org
 
 17. Aakanksha Chowdhery (@achowdhery)
-
-- PaLM Lead at Google Brain
+    - PaLM Lead at Google Brain
 
 18. Peter H. Diamandis, MD (@PeterDiamandis)
-
-- Founder of Singularity University, Xprize, Fountainlife
-
-- Entrepreneur, Investor and Author
+    - Founder of Singularity University, Xprize, Fountainlife
+    - Entrepreneur, Investor and Author
 
 19. Gary Marcus (@GaryMarcus)
-
-- Author of Rebooting.AI & Guitar Zero
-
-- Founder of Geometric Intelligence (acq. by Uber) & RobustAI
+    - Author of Rebooting.AI & Guitar Zero
+    - Founder of Geometric Intelligence (acq. by Uber) & RobustAI
 
 20. Lucas Beyer (@giffmana)
-
-- Researcher at Google Brain in Zürich
+    - Researcher at Google Brain in Zürich
 
 21. Sebastian Raschka (@rasbt)
-
-- Author of Ahead of AI
-
-- Machine learning & AI researcher
+    - Author of Ahead of AI
+    - Machine learning & AI researcher
 
 22. Cassie Kozyrkov (@quaesita)
-
-- Chief Decision Scientist at Google
+    - Chief Decision Scientist at Google
 
 23. Kate Kaye (@KateKayeReports)
-
-- Independent Journalist
-
-- Formerly Protocol)
+    - Independent Journalist
+    - Formerly Protocol)
 
 24. Emad (@EMostaque)
-
-- Founder of Stability A.I.
+    - Founder of Stability A.I.
 
 25. Fei-Fei Li (@drfeifei)
-
-- Co-Director at Stanford Human-Centered Artificial Intelligence
-
-- Co-Founder and Chair of AI4Allorg
+    - Co-Director at Stanford Human-Centered Artificial Intelligence
+    - Co-Founder and Chair of AI4Allorg
 
 26. Jim Fan (@DrJimFan)
+    - AI Scientist at Nvidia
 
-- AI Scientist at Nvidia
-
-27. Elvis Saravia (@omarsar0 )
-
-- Builder of DAIR AI
-
-- Former Scientist at Meta AI and Elastic
+27. Elvis Saravia (@omarsar0)
+    - Builder of DAIR AI
+    - Former Scientist at Meta AI and Elastic
 
 28. Connie Chan (@conniechan)
-
-- General Partner at a16z
+    - General Partner at a16z
 
 29. Hugo Larochelle (@hugo_larochelle)
-
-- Researcher at Google Brain
-
-- Machine learning professor
-
-- Ex-Twitter Cortex
+    - Researcher at Google Brain
+    - Machine learning professor
+    - Ex-Twitter Cortex
 
 30. Benj Edwards (@benjedwards)
-
-- AI and ML Reporter, Ars Technica
-
-- Tech Historian
+    - AI and ML Reporter, Ars Technica
+    - Tech Historian
 
 31. Becca Szkutak (@rebecca_szkutak)
-
-- Journalist at Techcrunch
+    - Journalist at Techcrunch
 
 32. Sergey Levine (@svlevine)
-
-- Professor at UCBerkeley
+    - Professor at UCBerkeley
 
 33. Eric Schmidt (@ericschmidt)
-
-- Former Google CEO
+    - Former Google CEO
 
 34. Ilya Sutskever (@ilyasut)
-
-- AGI at OpenAI
+    - AGI at OpenAI
 
 35. Patrick Mineault (@patrickmineault)
-
-- Formerly Building 8
-
-- Former Engineer at Google
+    - Formerly Building 8
+    - Former Engineer at Google
 
 36. Natasha Jaques (@natashajaques)
-
-- Senior Research Scientist at Google AI and Berkeley AI
+    - Senior Research Scientist at Google AI and Berkeley AI
 
 37. Pieter Abbeel (@pabbeel)
-
-- Professor at Berkeley
-
-- Founder of Covariant & Gradescope
-
-- The Robot Brains Podcast Host
-
-- Investment Partner at AIX Ventures
+    - Professor at Berkeley
+    - Founder of Covariant & Gradescope
+    - The Robot Brains Podcast Host
+    - Investment Partner at AIX Ventures
 
 38. Eliezer Yudkowsky (@ESYudkowsky)
-
-- Co-Founder at Machine Intelligence Research Institute
+    - Co-Founder at Machine Intelligence Research Institute
 
 39. Geoffrey Hinton (@geoffreyhinton)
-
-- Professor at University of Toronto
-
-- Co-Founder and Chief Scientific Advisor of the Vector Institute
+    - Professor at University of Toronto
+    - Co-Founder and Chief Scientific Advisor of the Vector Institute
 
 40. Brett Winton (@wintonARK)
-
-- Chief Futurist at Ark Invest
+    - Chief Futurist at Ark Invest
 
 41. Jeff Clune (@jeffclune)
-
-- Associate Professor at University British Columbia
-
-- Faculty Member of Vector Institute
+    - Associate Professor at University British Columbia
+    - Faculty Member of Vector Institute
 
 42. Sridhar Ramaswamy (@RamaswmySridhar)
-
-- Co-Founder of Neeva & NXYZ Data
-
-- Venture Partner at Greylock
-
-- Former SVP at Google
+    - Co-Founder of Neeva & NXYZ Data
+    - Venture Partner at Greylock
+    - Former SVP at Google
 
 43. Ben Tossell (@bentossell)
-
-- Author of Ben's Bites
+    - Author of Ben's Bites
 
 44. John Schulman (@johnschulman2)
-
-- Co-Founder of OpenAI
+    - Co-Founder of OpenAI
 
 45. Ahsen Khaliq (@_akhaliq)
-
-- Author of AK’s Substack
-
-- Founder of Gradio, acquired by HuggingFace
+    - Author of AK’s Substack
+    - Founder of Gradio, acquired by HuggingFace
 
 46. Quoc Le (@quocleix)
-
-- Principal Scientist at Google Brain
+    - Principal Scientist at Google Brain
 
 47. Jack Clark (@jackclarkSF)
-
-- Founder of Anthropic AI
-
-- Co-Chair at Indexing AI
-
-- Formerly at OpenAI
+    - Founder of Anthropic AI
+    - Co-Chair at Indexing AI
+    - Formerly at OpenAI
 
 48. merve (@mervenoyann)
-
-- Hugging Face (Merve Noyan)
+    - Hugging Face (Merve Noyan)
 
 49. David (@DavidSHolz)
-
-- Founder of Midjourney and Leap Motion
-
-- Formerly at NASA and Max Planck Institute
+    - Founder of Midjourney and Leap Motion
+    - Formerly at NASA and Max Planck Institute
 
 50. Nathan Lambert (@natolambert)
-
-- Machine Learning Scientist at Hugging Face
-
-- Democratizing Automation
+    - Machine Learning Scientist at Hugging Face
+    - Democratizing Automation
 
 51. Richard Socher (@RichardSocher)
-
-- CEO at You.com
+    - CEO at You.com
 
 52. Mustafa Suleyman (@mustafasuleymn)
-
-- Co-Founder & CEO of InflectionAI
-
-- Co-Founder of DeepMind
-
-- Venture Partner at Greylock
-
-- Former VP of AI at Google
+    - Co-Founder & CEO of InflectionAI
+    - Co-Founder of DeepMind
+    - Venture Partner at Greylock
+    - Former VP of AI at Google
 
 53. Zoubin Ghahramani (@ZoubinGhahrama1)
-
-- VP of Research at Google Brain
-
-- Professor at University of Cambridge
+    - VP of Research at Google Brain
+    - Professor at University of Cambridge
 
 54. Nathan Benaich (@nathanbenaich)
-
-- Author of Guide to AI
+    - Author of Guide to AI
 
 55. John McDonnell (@johnvmcdonnell)
-
-- Formerly at Stitch Fix, Square, Gureckis Lab
+    - Formerly at Stitch Fix, Square, Gureckis Lab
 
 56. Bojan Tunguz (@tunguz)
-
-- Senior Systems Software Engineer (Machine Learning) at Nvidia
+    - Senior Systems Software Engineer (Machine Learning) at Nvidia
 
 57. Ben Goertzel (@bengoertzel)
-
-- CEO at Singularity
+    - CEO at Singularity
 
 58. Chris Olah (@ch402)
-
-- Founder of Anthropic AI
-
-- Formerly at OpenAI Clarity Team, Google Brain and Distill Pub
+    - Founder of Anthropic AI
+    - Formerly at OpenAI Clarity Team, Google Brain and Distill Pub
 
 59. Ksenia Se (@Kseniase_)
-
-- Author of TheSequence
+    - Author of TheSequence
 
 60. Paul Graham (@paulg)
-
-- Venture Capitalist
+    - Venture Capitalist
 
 61. Russ Salakhutdinov (@rsalakhu)
-
-- Former Apple AI
+    - Former Apple AI
 
 62. Greg Brockman (@gdb)
-
-- President and Co-Founder of OpenAI
+    - President and Co-Founder of OpenAI
 
 63. Vivek Natarajan (@vivnat)
-
-- Advancing Medical AI at Google AI
-
-- Former Researcher at Meta AI
+    - Advancing Medical AI at Google AI
+    - Former Researcher at Meta AI
 
 64. Brian X. Chen (@bxchen)
-
-- Journalist at New York Times
+    - Journalist at New York Times
 
 65. Anima Anandkumar (@AnimaAnandkumar)
-
-- Professor at CalTech
-
-- Senior Director of AI Research at NVIDIA
-
-- Former Principal Scientist at AWS Cloud
+    - Professor at CalTech
+    - Senior Director of AI Research at NVIDIA
+    - Former Principal Scientist at AWS Cloud
 
 66. Jeffrey Towson 陶迅 (@JeffreyTowson)
-
-- Consultant
+    - Consultant
 
 67. Thomas Wolf (@Thom_Wolf)
-
-- Co-Founder of Hugging Face
+    - Co-Founder of Hugging Face
 
 68. John Platt (@johnplattml)
-
-- Director of Applied Science at Google AI
+    - Director of Applied Science at Google AI
 
 69. Samanyou Garg (@SamanyouGarg)
-
-- Founder & CEO of Writesonic
+    - Founder & CEO of Writesonic
 
 70. Kirk Bourne (@KirkDBorne)
-
-- Data Scientist at DataPrime
+    - Data Scientist at DataPrime
 
 71. Alberto Romero (@Alber_RomGar)
-
-- Author of The Algorithmic Bridge
-
-- Analyst at CambrianAI
+    - Author of The Algorithmic Bridge
+    - Analyst at CambrianAI
 
 72. Matthew Hutson (@SilverJacket)
-
-- A.I. Freelance journalists
+    - A.I. Freelance journalists
 
 73. Tim Scarfe (@ecsquendor)
-
-- YouTuber on Machine Learning
+    - YouTuber on Machine Learning
 
 74. Jordan Burgess (@jordnb)
+    - Co-Founder of Humanloop
 
-- Co-Founder of Humanloop
+
 
 75. David Luan (@jluan)
 
@@ -449,7 +324,6 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 77. Naveen Rao (@NaveenGRao)
 
 - Co-Founder & CEO of MosaicML
-
 - Former Nervana/IntelAI
 
 78. Azeem Azhar (@azeem)
@@ -463,9 +337,7 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 80. Max Jaderberg (@maxjaderberg)
 
 - Director of Machine Learning at IsomorphicLabs
-
 - Former research scientist at DeepMind
-
 - Co-founder Vision Factory (acquired by Google)
 
 81. Kyle Wiggers (@Kyle_L_Wiggers)
@@ -507,7 +379,6 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 90. Jacky Liang (@jackyliang42)
 
 - PhD Student at CMU
-
 - Author of Last Week in AI
 
 91. Vin Vashishta (@v_vashishta)
@@ -516,7 +387,7 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 
 92. Xuedong Huang (@xdh)
 
-- Technical Fellow atMicrosoft, Azure AI
+- Technical Fellow at Microsoft, Azure AI
 
 93. Hannah Fry (@FryRsquared)
 
@@ -529,7 +400,6 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 95. clem (@ClementDelangue)
 
 - Co-Founder & CEO of Hugging Face
-
 - Founder of MoodStocks, acquired by Google
 
 96. Hattie Zhou (@oh_that_hat)
@@ -563,15 +433,12 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 103. Lachy Groom (@lachygroom)
 
 - Angel Investor
-
 - Founder BleedingEdge
-
 - Formerly at Stripe
 
 104. Riley Goodside (@goodside)
 
 - Chief Scientist at Scale AI
-
 - Former Data Scientist at OkCupid and Grindr
 
 105. Amjad Masad (@amasad)
@@ -581,9 +448,7 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 106. Noam Brown (@polynoamial)
 
 - AI Research Scientist at MetaAI
-
 - Co-created Libratus/Pluribus, the first superhuman no-limit poker AIs
-
 - Co-created CICERO
 
 107. Shital Shah (@sytelus)
@@ -594,11 +459,11 @@ Twitter 聚集了大量的天使投资人、风险投资人和记者，他们源
 
 ![](img/18178b183b876227b6ba3c7c08e3b608.png)
 
-**文末随附 ****AI** 所整理的信息，欢迎大家进行对比
+**文末随附 AI 所整理的信息，欢迎大家进行对比**
 
 # 61 个 AI 工具
 
-**61 AI Tools Neither Named Ch**atGPT Nor Midjourney
+**61 AI Tools Neither Named ChatGPT Nor Midjourney**
 
 1. A.I Code Reviewer
 
@@ -618,7 +483,7 @@ https://aidungeon.io/
 
 3. AI Recipe Generator
 
-创建账户，输入现有食材，收 到一封包含独特食谱的邮件
+创建账户，输入现有食材，收到一封包含独特食谱的邮件
 
 What about real life? We all need to eat. Recipe Generator offers a fast and easy way to create custom recipes. All you need to do is create an account, enter the ingredients you have at home, and the website will send you a unique recipe to your email.
 
@@ -628,7 +493,7 @@ https://ai-recipes.softr.app/recipes
 
 AIVA 是 Artificial Intelligence Virtual Artist（人工智能虚拟艺术家）的缩写，如果你对音乐十分感兴趣，想创造自己的音乐，或者只是想尝试创造音乐，你都需要这个工具，它可以帮助你创造音乐，即便你的作曲知识为零
 
-An acronym for Artificial Intelligence Virtual Artist, This is a different type of Ai if you have a lot of interest in Music and if you want to create your own music or just want to try creating music, all you need is this AI because it helps you to create music even if you have zero knowledge of creating music . This AI is a great help for Music Creators and Music Lovers.
+An acronym for Artificial Intelligence Virtual Artist, This is a different type of Ai if you have a lot of interest in Music and if you want to create your own music or just want to try creating music, all you need is this AI because it helps you to create music even if you have zero knowledge of creating music. This AI is a great help for Music Creators and Music Lovers.
 
 https://creators.aiva.ai/createaccount
 
@@ -652,7 +517,7 @@ https://www.assemblyai.com/dashboard/signup
 
 属于零基础画师的绘画工具，画出接近的物体，自动生成更真实的物体，可以在手机、电脑或平板电脑上使用，并且免费
 
-The AutoDraw here is something for Kids and Creators because it lets you draw anything in a pad and if you have written something closer to some object the AI will automatically make your drawing look like a real object . For example, you draw an oval shaped ball but the AI will convert it into a round ball, Ai AutoDraw is a new web-based tool that pairs machine learning with drawings created by talented artists to help you draw. Google AutoDraw works on your phone, computer, or tablet and the good thing is that it is free, so go and try it today. Turn your creepy drawing into a good one :)
+The AutoDraw here is something for Kids and Creators because it lets you draw anything in a pad and if you have written something closer to some object the AI will automatically make your drawing look like a real object. For example, you draw an oval shaped ball but the AI will convert it into a round ball, Ai AutoDraw is a new web-based tool that pairs machine learning with drawings created by talented artists to help you draw. Google AutoDraw works on your phone, computer, or tablet and the good thing is that it is free, so go and try it today. Turn your creepy drawing into a good one :)
 
 https://www.autodraw.com/
 
@@ -700,11 +565,13 @@ https://app.writesonic.com/
 
 将自然语言翻译成代码，并可以准确使用十几种编程语言，目前以商业应用为目标
 
+
+
 Yet another product of the OpenAI API, Codex functions differently than more popular AI tools. The tool is capable of translating natural language to code and is proficient in over a dozen programming languages, including Python, JavaScript, Go, Perl and Ruby, among others. Applications are targeted at business use cases for now but include magical abilities like simply using voice commands to control any software based on an API.
 
 https://openai.com/blog/openai-codex/
 
-14. CommonSim-1
+### 14. CommonSim-1
 
 由一张图片或一段文字描述生成 3D 模型和视频
 
@@ -712,7 +579,7 @@ A longstanding dream in generative AI has been to digitally synthesize dynamic 3
 
 https://docs.google.com/forms/d/e/1FAIpQLSdUUeSh953D4y_cIjY9YcFTuMgcXc5rAEXOQcAKdR_Tk71r7A/viewform
 
-15. Connect ChatGPT with Whatsapp
+### 15. Connect ChatGPT with Whatsapp
 
 让 WhatsApp 变成 AI 助手
 
@@ -720,7 +587,7 @@ Imagine having the power of artificial intelligence next to your conversations o
 
 https://www.analyticsinsight.net/how-to-integrate-chatgpt-with-whatsapp/
 
-16. Cover Letter AI
+### 16. Cover Letter AI
 
 上传简历，填写初始信息，几分钟内生成不同版本的求职信，无限编辑和改进，直到得到让你满意的结果
 
@@ -728,7 +595,7 @@ Cover Letter AI is an AI-powered tool that helps you write professional and pers
 
 https://coverletter-ai.com/register
 
-17. Craftly.AI
+### 17. Craftly.AI
 
 通过超过 10,000 小时的垂直领域专家内容培训，以你喜欢的专业方式创作原创、高转化率的内容和模板
 
@@ -736,7 +603,7 @@ Not just another repetitive or basic AI Copywriter - We're trained on 10,000+ ho
 
 https://app.craftly.ai/signup
 
-18. Deciphr AI (Podcasts)
+### 18. Deciphr AI (Podcasts)
 
 旨在帮助播客主节省时间，并从播客文字记录或音频文件中生成详细的节目注释和时间戳，完全免费
 
@@ -744,7 +611,7 @@ Deciphr is an AI-powered platform that helps podcasters save time and generate d
 
 https://app.deciphr.ai/auth/signup
 
-19. DeepBeat
+### 19. DeepBeat
 
 说唱歌词生成器
 
@@ -752,7 +619,7 @@ DeepBeat is a program which uses machine learning techniques to generate rap lyr
 
 https://deepbeat.org/
 
-20. Deepdub.ai
+### 20. Deepdub.ai
 
 将音视频适配过程自动化，同时适应本地化需求，将后期制作由几个月缩短至几周
 
@@ -760,7 +627,7 @@ Deepdub plugs into the post production process of content owners and takes compl
 
 https://deepdub.ai/
 
-21. Descript
+### 21. Descript
 
 编写、录制、转录、编辑、协作和分享视频和播客全流程工具
 
@@ -768,7 +635,7 @@ Descript is the only tool you need to write, record, transcribe, edit, collabora
 
 https://www.descript.com/home-2
 
-22. Genius Sheets (Finance)
+### 22. Genius Sheets (Finance)
 
 从文本提示中生成报告、财务模型和即时分析
 
@@ -776,7 +643,7 @@ Generate reports, financial models, and instant analysis from Text Prompts.
 
 https://www.geniussheets.com/
 
-23. GitHub Copilot for Business (Coding)
+### 23. GitHub Copilot for Business (Coding)
 
 基于 OpenAI Codex 在编辑器中实时提供代码建议
 
@@ -784,7 +651,7 @@ GitHub Copilot uses the OpenAI Codex to suggest code and entire functions in rea
 
 https://github.com/login?return_to=%2Fgithub-copilot%2Fsignup
 
-24. GPTZero
+### 24. GPTZero
 
 为教育从业者准备的 AI 生成文档检测器
 
@@ -792,7 +659,7 @@ Educators! GPTZero turns the very technologies used to build ChatGPT around — 
 
 https://gptzero.me/
 
-25. Grain (sales)
+### 25. Grain (sales)
 
 面向销售人员，分析提取视频会议中的重点与亮点，提高团队与客户沟通的能力
 
@@ -800,7 +667,7 @@ Capture & share insights from customer meetings. Grain transforms video meetings
 
 https://grain.com/
 
-26. Grammarly
+### 26. Grammarly
 
 用 AI 驱动的 Windows 软件清晰无误地写作
 
@@ -808,7 +675,7 @@ Compose bold, clear, mistake-free writing with Grammarly’s new AI-powered desk
 
 https://www.grammarly.com/
 
-27. Imagine Me
+### 27. Imagine Me
 
 上传 10-20 张个人照片创建个性化模型，输入想法，生成图像
 
@@ -816,7 +683,7 @@ Imagine Me is an online platform that lets users generate AI art of themselves j
 
 https://imagineme.app/
 
-28. Inworld AI (Gaming)
+### 28. Inworld AI (Gaming)
 
 生成逼真的 AI 角色，用于游戏、虚拟世界、娱乐等领域
 
@@ -824,7 +691,7 @@ Inworld AI provides a platform for developers and creators to generate realistic
 
 https://studio.inworld.ai/signup
 
-29. Jasper.AI
+### 29. Jasper.AI
 
 内容生成器，帮助团队突破创意障碍，快速创造高质量原创内容
 
@@ -832,7 +699,7 @@ Jasper is the AI Content Generator that helps you and your team break through cr
 
 https://app.jasper.ai/signup/try-it-free
 
-30. Jenni.AI
+### 30. Jenni.AI
 
 与 AI 一起更顺畅地写作
 
@@ -840,7 +707,7 @@ Jenni is the AI assistant that keeps you in the driver's seat. Jenni works with 
 
 https://app.jenni.ai/register
 
-31. Lensa A.I. (profile pictures)
+### 31. Lensa A.I. (profile pictures)
 
 使自拍看起来更好，也许比你想想象中的更好，抛弃传统的滤镜和照片编辑工具
 
@@ -848,7 +715,7 @@ https://app.jenni.ai/register
 
 https://apps.apple.com/us/app/lensa-ai-photo-video-editor/id1436732536
 
-32. Lex.Page
+### 32. Lex.Page
 
 让写作更好更容易
 
@@ -856,7 +723,7 @@ Unlock your best writing.
 
 https://lex.page/
 
-33. Lexica
+### 33. Lexica
 
 基于 Stable Diffusion 的搜索引擎，在 Discord 中使用！
 
@@ -864,7 +731,7 @@ The Stable Diffusion search engine. With Discord.
 
 https://lexica.art/
 
-34. Luma Lab
+### 34. Luma Lab
 
 用照片生成 3D 视频（NeRF），用文字生成 3D 模型（pending）
 
@@ -872,7 +739,7 @@ Photorealistic, high quality 3D, now for everyone! Luma is a new way to create i
 
 https://lumalabs.ai/
 
-35. Lumen5
+### 35. Lumen5
 
 在几分钟内轻松创建有吸引力可商用视频内容
 
@@ -880,7 +747,7 @@ Grow your brand and drive demand with video at scale. Our online video creator m
 
 https://lumen5.com/auth/signup/
 
-36. Mem.AI
+### 36. Mem.AI
 
 让 AI 组织团队工作，从会议记录、项目到知识库，即时搜索，随时查看
 
@@ -888,7 +755,7 @@ Let AI organize your team's work—from meeting notes, projects, to knowledge ba
 
 https://get.mem.ai/
 
-37. Mindgrasp
+### 37. Mindgrasp
 
 让一切信息脑图化，无论是文档、会议、录音还是视频，完全免费！
 
@@ -896,7 +763,7 @@ Mindgrasp instantly creates accurate notes and answers questions from any Docume
 
 https://mindgrasp.ai/home
 
-38. Mintlify
+### 38. Mintlify
 
 自动生成以实现用户转化为目的的精美文档，开箱即用，易于维护
 
@@ -904,11 +771,13 @@ Automate beautiful documentation that converts users. Build the documentation yo
 
 https://mintlify.com/
 
-39. Murf
+### 39. Murf
 
 适用于 20 种语言的语音生成工具，120 种声音可选，轻松实现文本到语音的即时转换，获得完美 AI 配音
 
 AI Voice Generator in 20 languages. 120+ realistic text to speech voices to create the perfect AI voiceover. Go instantly from text to voice with ease.
+
+
 
 https://murf.ai/studio
 
@@ -1092,61 +961,34 @@ https://whisper.ai/
 
 # 28 个值得关注的通讯
 
-**2**8 Newsletters on Substack, Medium, Beehiiv, LinkedIn & Wordpress
+28 Newsletters on Substack, Medium, Beehiiv, LinkedIn & Wordpress
 
-+   The Road to AI We Can Trust by Gary Marcus
++ The Road to AI We Can Trust by Gary Marcus
++ **The Sequence**
++ **Ahead of AI** By Sebastian Raschka
++ **Towards AI**
++ Artificial Intelligence By Andriy Burkov
++ Algorithmic Bridge by Alberto Romero
++ Sparks in the Wind by Francois Chollet
++ Artificial Intelligence Weekly by Steve Nouri
++ Last Week in A.I. by Jacky Liang and others
++ **Guide to AI** by Nathan Benaich
++ **The Decoder** by Matthias Bastian
++ **Ben’s Bites** by Ben Tossell
++ The A.I. Ethics Brief
++ Andrew Ng（吴恩达）- the Batch
++ **The Machine Learning** Engineer Newsletter
++ **ChinAI** by Jeffrey Ding
++ **The Gradient** by Andrey Kurenkov and many others
++ **The Neuron** by Pete Huang
++ **Import AI** by Jack Clark
++ Though the Noise by Alex Banks
++ **Cassie Kozyrkov**
++ Artificial Intelligence Survey by Mike Spencer
++ **Synced（机器之心）**
++ Davis Summarizes Papers
 
-+   **The Sequence**
-
-+   **Ahead of AI **By Sebastian Raschka
-
-+   **Towards AI**
-
-+   Artificial Intelligence By Andriy Burkov
-
-+   Algorithmic Bridge by Alberto Romero
-
-+   Sparks in the Wind by Francois Chollet
-
-+   Artificial Intelligence Weekly by Steve Nouri
-
-+   Last Week in A.I. by Jacky Liang and others
-
-+   **Guide to AI **by Nathan Benaich
-
-+   **The Decoder **by Matthias Bastian
-
-+   **Ben’s Bites **by Ben Tossell
-
-+   The A.I. Ethics Brief
-
-+   Andrew Ng（吴恩达）- the Batch
-
-+   **The Machine Learning** Engineer Newsletter
-
-+   **ChinAI **by Jeffrey Ding
-
-+   **The Gradient **by Andrey Kurenkov and many others
-
-+   **The Neuron **by Pete Huang
-
-+   **Import AI **by Jack Clark
-
-+   Though the Noise by Alex Banks
-
-+   **Cassie Kozyrkov**
-
-+   Artificial Intelligence Survey by Mike Spencer
-
-+   **Synced（机器之心）**
-
-+   Davis Summarizes Papers
-
-+
-
-+
-
-附录：由 AI 生成的 107 人简介
+## 附录：由 AI 生成的 107 人简介
 
 以下内容由 AI 生成，未经任何人工修改，未经人工校核，食用需谨慎
 
@@ -1163,6 +1005,8 @@ Yann LeCun是一位著名的人工智能科学家，他在Meta AI公司担任首
 Andrew Ng是一位著名的人工智能科学家，他曾任谷歌Brain团队的首席科学家，现任Landing AI和Coursera的联合创始人兼首席执行官，他的研究方向主要集中在机器学习、深度学习和自然语言处理等领域，他曾获得多项荣誉，包括被评为美国国家科学院院士，被英国皇家科学院院士，以及被评为麻省理工学院终身教授等。此外，他还是《机器学习》课程的创始人，该课程在Coursera上拥有超过200万名学生。
 
 4. François Chollet (@fchollet) Sparks in the Wind
+
+
 
 François Chollet是一位著名的机器学习研究者，他是Keras框架的创始人，也是Google AI的研究员。他的研究方向主要集中在深度学习、计算机视觉和自然语言处理等领域，他的著作《深度学习》也是机器学习领域的经典之作。他还曾获得Google AI Impact Challenge的最高荣誉，并被评为“AI领域最有影响力的25位科学家”之一。
 
@@ -1248,7 +1092,7 @@ Emostaque Emad是一位著名的人工智能研究者，目前就职于Stability
 
 25. Jim Fan (@DrJimFan) - Nvidia
 
-Jim Fan是一位著名的AI研究者，目前在Nvidia从事AI研究，他曾获得多项国际知名奖项，包括被评为美国国家科学院院士，以及获得美国国家科学基金会的杰出研究奖。他的Twitter账号是DrJimFan，欢迎大家关注他的最新动态。
+Jim Fan是一位著名的AI研究者，目前在Nvidia从事AI研究，他曾获得多项国际知名奖项，包括被评为美国国家科学院院士，以及获得美国国家科学基金的杰出研究奖。他的Twitter账号是DrJimFan，欢迎大家关注他的最新动态。
 
 26. Elvis Saravia (@omarsar0 ) - DAIR
 
@@ -1321,6 +1165,8 @@ Ben Tossell是一位知名的创业者和技术领域的推动者，他目前主
 43. John Schulman (@johnschulman2) - OpenAI
 
 John Schulman是一位著名的机器学习研究者，目前在OpenAI从事深度强化学习研究，他曾获得美国国家科学基金会的联合基金会奖，并被评为麻省理工学院最佳教授，他还是NeurIPS 2019的主席，在机器学习领域有着深厚的学术积累和丰富的经验。
+
+
 
 44. Ahsen Khaliq (@_akhaliq) - AK’s Substack
 
@@ -1396,7 +1242,7 @@ Ross Salakhutdinov是一位著名的人工智能研究者，曾任苹果公司AI
 
 62. Greg Brockman (@gdb) - OpenAI
 
-Greg Brockman是一位著名的计算机科学家，他目前在OpenAI担任CTO，致力于推动人工智能的发展，他曾获得美国国家科学基金会的资助，并且曾担任Stripe公司的技术总监，他还是一位技术投资人，投资了多家科技公司，比如Uber、Instacart等。
+Greg Brockman是一位著名的计算机科学家，他目前在OpenAI担任CTO，致力于推动人工智能的发展，他曾获得美国国家科学基金的资助，并且曾担任Stripe公司的技术总监，他还是一位技术投资人，投资了多家科技公司，比如Uber、Instacart等。
 
 63. Vivek Natarajan (@vivnat) Google AI
 
@@ -1488,92 +1334,96 @@ Alexandr Wang是一位著名的AI研究者，目前就职于Scale AI，主要研
 
 85. Caiming Xiong (@CaimingXiong) - Salesforce AI
 
+
+
+### Caiming Xiong
+
 Caiming Xiong是一位著名的AI科学家，目前在Salesforce AI从事研究工作，他曾获得多项荣誉，包括被评为最佳论文奖，以及被评为最佳论文奖的论文被收录在最新的机器学习领域的顶级会议中。此外，他还是一位活跃的技术博客作者，拥有大量的技术文章，涉及机器学习、深度学习、自然语言处理等领域。
 
-86. Yi Ma (@YiMaTweets) - Professor
+### 86. Yi Ma (@YiMaTweets) - Professor
 
 Yi Ma是一位著名的数学家，目前担任教授，主要研究方向是计算机视觉、机器学习和模式识别。他曾获得多项荣誉，包括IEEE Fellow、AAAI Fellow、ACM Fellow和国家自然科学奖。此外，他还是著名的计算机视觉国际会议CVPR的主席，以及IEEE Transactions on Pattern Analysis and Machine Intelligence的主编。
 
-87. Misha Denil (@notmisha) - DeepMind
+### 87. Misha Denil (@notmisha) - DeepMind
 
 Misha Denil是一位著名的机器学习研究者，目前在DeepMind从事研究工作，他的研究方向主要集中在深度学习、自然语言处理和强化学习等领域。他曾获得多项荣誉，包括英国皇家学会的伦敦数学家奖，以及英国皇家学会的伦敦物理学家奖。此外，他还是NeurIPS 2019的程序委员会成员，并且担任多个期刊的审稿人。
 
-88. Peter Lee (@peteratmsr) - Microsoft Research
+### 88. Peter Lee (@peteratmsr) - Microsoft Research
 
 Peter Lee是Microsoft Research的高级副总裁，他的研究方向主要集中在人工智能、机器学习和计算机视觉等领域，他曾获得美国国家科学院院士、美国国家工程院院士、美国计算机协会会士等多项荣誉，并且担任多个国际学术期刊的编辑。此外，他还是一位活跃的技术演讲家，曾在TED、TEDx等技术论坛上发表演讲。
 
-89. Shivon Zilis (@shivon) - Neuralink
+### 89. Shivon Zilis (@shivon) - Neuralink
 
 Shivon Zilis是一位著名的AI专家，目前在Neuralink从事AI研究，曾获得Forbes 30 Under 30的荣誉，并且拥有多年的AI和机器学习经验，曾在多家公司担任高管职位，拥有丰富的行业经验。
 
-90. Jacky Liang (@jackyliang42) - Last Week in AI
+### 90. Jacky Liang (@jackyliang42) - Last Week in AI
 
 Jacky Liang是一位AI领域的知名人士，目前在Last Week in AI担任研究员，主要致力于AI技术的研究和应用，曾获得多项AI技术相关的荣誉，并发表过多篇AI技术论文，深受业界好评。此外，他还是一位热心的社区活动参与者，经常参加各类AI技术相关的活动，与业界同仁分享经验，推动AI技术的发展。
 
-91. Vin Vashishta (@v_vashishta) - High ROI Data Science
+### 91. Vin Vashishta (@v_vashishta) - High ROI Data Science
 
 Vin Vashishta是一位著名的数据科学家，目前就职于High ROI Data Science，专注于提供高质量的数据分析和技术解决方案。他曾获得多项荣誉，包括英国数据科学协会的“最佳数据科学家”奖，以及美国数据科学协会的“最佳数据科学家”奖。他还是一位活跃的社交媒体用户，在Twitter上发布了大量有关数据科学的文章和观点，值得关注。
 
-92. Xuedong Huang (@xdh) - Azure AI
+### 92. Xuedong Huang (@xdh) - Azure AI
 
 Xuedong Huang是一位著名的计算机科学家，目前任职于Azure AI，主要研究语音识别、自然语言处理和机器学习等领域。他曾获得美国国家科学技术奖，并被评为美国国家科学院院士，他还是许多国际学术期刊的编辑，并发表了大量的学术论文。
 
-93. Hannah Fry (@FryRsquared) - Tech Author
+### 93. Hannah Fry (@FryRsquared) - Tech Author
 
 Hannah Fry是一位著名的数学家，目前担任Tech Author，她的研究方向主要集中在数学、社会科学和人工智能领域，曾获得英国皇家统计学会的优秀研究奖，并且担任英国皇家学会的会员。此外，Hannah Fry还是一位热门的演讲者，曾在TED演讲，并发表多篇文章，深受读者喜爱。
 
-94. Ravi Mhatre @ravi_lsvp - Lightspeed Ventures
+### 94. Ravi Mhatre @ravi_lsvp - Lightspeed Ventures
 
 Ravi Mhatre是Lightspeed Ventures的合伙人，他专注于投资消费品、健康和医疗保健、金融科技、企业软件和技术基础设施等领域。他曾获得美国《财富》杂志“40位40岁以下最具影响力的商业人士”的荣誉，并被《商业内幕》杂志评为“最有影响力的投资者”。Ravi还是美国哈佛大学商学院的校友，拥有硕士学位。
 
-95. clem (@ClementDelangue) - Hugging Face
+### 95. clem (@ClementDelangue) - Hugging Face
 
 Clem是一位著名的人工智能研究者，目前在Hugging Face从事自然语言处理（NLP）研究，他的研究成果被多家知名机构引用，并获得了多项荣誉，他还是一位活跃的技术博客作者，在Twitter上也有自己的账号：ClementDelangue。
 
-96. Hattie Zhou (@oh_that_hat) - Mila
+### 96. Hattie Zhou (@oh_that_hat) - Mila
 
 Hattie Zhou是一位著名的机器学习研究者，目前在Mila从事研究工作，他的研究方向主要集中在自然语言处理、计算机视觉和强化学习等领域。他曾获得多项荣誉，包括英特尔AI研究奖、谷歌AI研究奖、谷歌AI研究奖等。此外，他还是一位活跃的社交媒体用户，他的Twitter账号是oh_that_hat，在上面分享他的研究成果和有趣的想法。
 
-97. Sapna Maheshwari (@sapna) - Journalist
+### 97. Sapna Maheshwari (@sapna) - Journalist
 
 Sapna Maheshwari是一位著名的记者，他的Twitter账号是@sapna，目前他主要从事新闻报道，曾获得美国新闻与文学协会的荣誉，并被《纽约时报》评为“最佳新闻记者”。他的报道涉及经济、技术、消费者行为等多个领域，深受读者喜爱。
 
-98. Vidhi Lalchand (@VRLalchand)
+### 98. Vidhi Lalchand (@VRLalchand)
 
 Vidhi Lalchand是一位著名的印度科学家，他目前主要从事研究空气污染和气候变化的影响，他曾获得印度科学院的高级研究奖，并受邀参加联合国气候变化大会，他还是印度科学院空气污染研究中心的负责人。
 
-99. Santiago L Valdarrama (@svpino)
+### 99. Santiago L Valdarrama (@svpino)
 
 Santiago L Valdarrama是一位著名的科学家，他主要从事研究和开发新型绿色能源技术，他的研究成果获得了多项国际荣誉，并被多家知名机构引用。此外，他还是一位活跃的社交媒体用户，在Twitter上发布有关绿色能源的最新信息，账号为svpinonan。
 
-100. Vincent Boucher (@ceobillionaire)
+### 100. Vincent Boucher (@ceobillionaire)
 
 Vincent Boucher是一位著名的商业家，他目前主要从事投资和金融领域的研究，拥有多年的投资经验，曾获得多项荣誉，并在投资领域取得了巨大成就。此外，他还是一位慈善家，曾参与多项慈善活动，为社会做出了贡献。
 
-101. Yannic Kilcher (@ykilcher) - YouTube Creator
+### 101. Yannic Kilcher (@ykilcher) - YouTube Creator
 
 Yannic Kilcher是一位著名的YouTube Creator，他的Twitter账号是ykilcher。他目前主要致力于创作有趣的视频，以及探索新的创作方式。他的视频曾获得过多个国际大奖，并且拥有大量的观众，他也曾受邀参加多个国际电影节。此外，他还是一位活跃的社交媒体用户，在Twitter上拥有超过20万粉丝。
 
-102. Matt Bornstein (@BornsteinMatt) - a16z
+### 102. Matt Bornstein (@BornsteinMatt) - a16z
 
 Matt Bornstein是一位著名的投资者，目前在a16z担任投资合伙人，他擅长投资和支持创新的技术企业，曾获得多项荣誉，包括Forbes 30 Under 30，他还是一位活跃的投资者，投资了许多创新的企业，并且经常参与各种投资活动，拥有丰富的投资经验。
 
-103. Lachy Groom (@lachygroom) - BleedingEdge/Stripe
+### 103. Lachy Groom (@lachygroom) - BleedingEdge/Stripe
 
 Lachy Groom是一位著名的软件工程师，目前在BleedingEdge/Stripe工作，主要致力于构建高性能的软件系统，他曾获得多项荣誉，包括英国计算机协会的青年计算机科学家奖，以及英国皇家社会的青年科学家奖。此外，他还是一位活跃的技术博客作者，拥有超过10万的Twitter粉丝，他的文章曾被多家知名媒体报道，并被广泛转载。
 
-104. Riley Goodside (@goodside) - Scale AI
+### 104. Riley Goodside (@goodside) - Scale AI
 
 Riley Goodside是一位著名的AI研究者，目前在Scale AI从事AI研究，他曾获得多项荣誉，包括英国皇家科学院颁发的青年科学家奖，以及英国皇家工程院颁发的青年工程师奖。此外，他还是一位活跃的技术博客作者，在Twitter上的账号是goodside，拥有大量的粉丝。
 
-105. Amjad Masad (@amasad) - Replit
+### 105. Amjad Masad (@amasad) - Replit
 
 Amjad Masad是一位著名的软件工程师，目前在Replit工作，他的主要研究方向是构建可扩展的软件系统，他曾获得GitHub的Octoverse荣誉，并且是一位活跃的开源贡献者，他的Twitter账号是amasad，欢迎大家关注他的动态。
 
-106. Noam Brown (@polynoamial) - MetaAI
+### 106. Noam Brown (@polynoamial) - MetaAI
 
 Noam Brown是一位著名的人工智能研究者，目前在MetaAI公司从事机器学习和深度强化学习的研究，他曾获得多个国际知名的AI竞赛冠军，并在多个国际会议上发表论文，他的Twitter账号是polynoamial，欢迎大家关注他的最新动态。
 
-107. Shital Shah (@sytelus)
+### 107. Shital Shah (@sytelus)
 
 Shital Shah是一位著名的计算机科学家，他的主要研究方向是人工智能、机器学习和自然语言处理，他曾获得多项荣誉，包括英国皇家学会的青年科学家奖、英国计算机学会的优秀研究奖以及英国皇家学会的研究奖学金。此外，他还是英国计算机学会的会员，并且担任多个国际学术期刊的编辑。

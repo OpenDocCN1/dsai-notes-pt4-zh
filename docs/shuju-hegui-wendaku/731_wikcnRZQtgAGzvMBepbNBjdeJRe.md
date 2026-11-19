@@ -1,3 +1,4 @@
+
 # 业务连续性谁牵头
 
 > 来源：[https://docs.feishu.cn/docx/EVrldwxaIoUsO9xU2J1czmCbn5f](https://docs.feishu.cn/docx/EVrldwxaIoUsO9xU2J1czmCbn5f)
@@ -9,9 +10,7 @@
 **-答2：**前期了解了下银行一般是风险管理部负责，特别是负责操作风险的团队负责。详见：《商业银行业务连续性监管指引》。
 
 ![](img/38a9eea303e6ae894ce0ec04c9e0d633.png)
-
 ![](img/c19148c923d651002f6ac5fd35940783.png)
-
 ![](img/07ace5030f874033b1c719dd513f02e1.png)
 
 **-答3：**业务连续性重点是保障业务，IT只是支撑部门，牵头不应由IT。

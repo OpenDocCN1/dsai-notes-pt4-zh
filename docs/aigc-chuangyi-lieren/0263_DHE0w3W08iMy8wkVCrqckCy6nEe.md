@@ -1,10 +1,11 @@
+
 # 结构化Prompt模板+例子
 
 > 来源：[https://aigcreative.feishu.cn/docx/V2dTdj2utovmtaxcrRscYgjpnOe](https://aigcreative.feishu.cn/docx/V2dTdj2utovmtaxcrRscYgjpnOe)
 
 > 来源：云中江树，LangGPT创始人
 
-基础模板
+## 基础模板
 
 ```
 # Role: Your_Role_Name
@@ -64,7 +65,7 @@ As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user i
 作为角色 &lt;Role&gt;, 严格遵守 &lt;Rules&gt;, 使用默认 &lt;Language&gt; 与用户对话，友好的欢迎用户。然后介绍自己，并告诉用户 &lt;Workflow&gt;。
 ```
 
-角色模板
+## 角色模板
 
 ```
 # Role: Your_Role_Name
@@ -97,7 +98,7 @@ As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user i
 As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user in default &lt;Language&gt;，you must greet the user. Then introduce yourself and introduce the &lt;Workflow&gt;.
 ```
 
-专家模板
+## 专家模板
 
 ```
 1.Expert: LangGPT
@@ -146,11 +147,9 @@ As a/an &lt;Role&gt;, you must follow the &lt;Rules&gt;, you must talk to user i
 - Help user make write powerful LangGPT prompts based on [Prompt Usage].
 ```
 
-例子：李继刚：中文笔杆子
-
+## 例子：李继刚：中文笔杆子
 
 ![Image](source.unsplash.com×900?hero)
-
 
 ![Image](source.unsplash.com×900?fire)
 

@@ -1,3 +1,4 @@
+
 # Midjourney 风格词库
 
 > 来源：[https://my.feishu.cn/docx/LPuJdbR2soHePUx8WOCckzXNn9f](https://my.feishu.cn/docx/LPuJdbR2soHePUx8WOCckzXNn9f)
@@ -6,21 +7,18 @@
 
 > 我的采集原则是：
 
-1.  收集prompt不是目的，不要把囤积当做习得，找到适合自己的应用方式服务自己的创作才是目的；
+1. 收集prompt不是目的，不要把囤积当做习得，找到适合自己的应用方式服务自己的创作才是目的；
+1. 重要的是养成识别优质描述词的能力，学会辨别不同的prompt在不同主题的绘画中的权重；
+1. prompt×句式结构的结合才是最高效的应用方式，不要过度依赖单一具体prompt；
+1. 对于常规的、通用的prompt，不做特别积累，采用更全面的prompt辅助网站更方便，例如：
 
-1.  重要的是养成识别优质描述词的能力，学会辨别不同的prompt在不同主题的绘画中的权重；
+> `midjourney-prompt-builder`：
 
-1.  prompt×句式结构的结合才是最高效的应用方式，不要过度依赖单一具体prompt；
-
-1.  对于常规的、通用的prompt，不做特别积累，采用更全面的prompt辅助网站更方便，例如：
-
-> midjourney-prompt-builder：
-
-> https://promptomania.com/midjourney-prompt-builder/
+> `https://promptomania.com/midjourney-prompt-builder/`
 
 > 提示词扩充：
 
-> https://huggingface.co/spaces/daspartho/prompt-extend?continueFlag=e9a014f1e95c680fb6914aabd0df1599
+> `https://huggingface.co/spaces/daspartho/prompt-extend?continueFlag=e9a014f1e95c680fb6914aabd0df1599`
 
 ## 电影/动画/DVD风格
 
@@ -64,7 +62,7 @@ illustration of ？？？, chaotic big splashy paint splotches, pink and purple 
 
 [Minimalist duotone il](https://weibo.com/1948301550/Mmb2Bwkq5)lustration of a professional woman, close-up, using negative space, modern millennial, vector
 
-出处：https://weibo.com/1948301550/Mmb2Bwkq5
+出处：`https://weibo.com/1948301550/Mmb2Bwkq5`
 
 ## 科幻风格风
 
@@ -106,7 +104,7 @@ inkpating sketch of 手绘、手稿
 
 ## 办公软件官网图
 
-A simple design of a website for working software, clean, beautiful, ux/ui, ux, ui, Full HD, 8k, super resolution, unique, minimalistic, stylish, modern, figma --v 4 --ar 3:2
+A simple design of a website for working software, clean, beautiful, ux/ui, ux, ui, Full HD, 8k, super resolution, unique, minimalistic, stylish, modern, `figma --v 4 --ar 3:2`
 
 ## 生成图标和UI
 

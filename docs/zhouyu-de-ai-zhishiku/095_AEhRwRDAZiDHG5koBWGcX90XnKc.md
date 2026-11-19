@@ -1,3 +1,4 @@
+
 # 爆火的YC编写的Vibe Coding指南秘籍，告别vibe 代码屎山，效率提升10倍的秘密就在这里
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/RGxhdJmD2olKXAxZMYRcQTkInfb](https://xatc0v8uz5m.feishu.cn/docx/RGxhdJmD2olKXAxZMYRcQTkInfb)
@@ -18,9 +19,7 @@
 
 ## VIBE coding实用技巧
 
-Planning process
-
-规划流程
+### Planning process / 规划流程
 
 — Create a comprehensive plan: Start by working with the AI to write a detailed implementation plan in a markdown file
 
@@ -46,15 +45,13 @@ Planning process
 
 — 定期提交：确保每个工作部分在进入下一个工作部分之前都提交给 Git
 
-Version control strategies
-
-版本控制策略
+### Version control strategies / 版本控制策略
 
 — Use Git religiously: Don’t rely solely on the AI tools’ revert functionality
 
 — Start clean: Begin each new feature with a clean Git slate
 
-— Reset when stuck: Use git reset –hard HEAD if the AI goes on a vision quest
+— Reset when stuck: Use `git reset –hard HEAD` if the AI goes on a vision quest
 
 — Avoid cumulative problems: Multiple failed attempts create layers and layers of bad code
 
@@ -64,15 +61,13 @@ Version control strategies
 
 — 从干净开始：从干净的 Git 石板开始每个新功能
 
-— 卡住时重置：如果 AI 继续进行视觉任务，请使用 git reset –hard HEAD
+— 卡住时重置：如果 AI 继续进行视觉任务，请使用 `git reset –hard HEAD`
 
 — 避免累积问题：多次失败的尝试会产生一层又一层的坏代码
 
 — 干净的实现：当你最终找到解决方案时，干净地重置并实施它
 
-Testing framework
-
-测试框架
+### Testing framework / 测试框架
 
 — Prioritize high-level tests: Focus on end-to-end integration tests over unit tests
 
@@ -94,9 +89,7 @@ Testing framework
 
 — 使用测试作为护栏：一些创始人建议从测试用例开始，以提供明确的界限
 
-Effective bug fixing
-
-有效的错误修复
+### Effective bug fixing / 有效的错误修复
 
 — Leverage error messages: Simply copy-pasting error messages is often enough for the AI
 
@@ -122,11 +115,9 @@ Effective bug fixing
 
 — 干净的实现：确定修复后，重置并在干净的代码库上实施它
 
-AI tool optimization
+### AI tool optimization / AI 工具优化
 
-AI 工具优化
-
-— Create instruction files: Write detailed instructions in appropriate files (cursor.rules, windsurf.rules, http://claude.md)
+— Create instruction files: Write detailed instructions in appropriate files (`cursor.rules`, `windsurf.rules`, `http://claude.md`)
 
 — Local documentation: Download API docs to your project folder for accuracy
 
@@ -136,19 +127,17 @@ AI 工具优化
 
 — Compare outputs: Generate multiple solutions and pick the best one
 
-— 创建指令文件：在适当的文件（cursor.rules、windsurf.rules http:// claude.md）中编写详细指令
+— 创建指令文件：在适当的文件（`cursor.rules`、`windsurf.rules`、`http://claude.md`）中编写详细指令
 
 — 本地文档：将 API 文档下载到您的项目文件夹以确保准确性
 
 — 使用多种工具：一些创始人在同一个项目上运行 Cursor + Windsurf
 
-— 工具专业化：光标对于前端来说更快，Windsurf 对于更长的任务更好
+— 工具专业化：Cursor 对于前端来说更快，Windsurf 对于更长的任务更好
 
 — 比较输出：生成多个解决方案并选择最佳解决方案
 
-Complex feature development
-
-复杂功能开发
+### Complex feature development / 复杂功能开发
 
 — Create standalone prototypes: Build complex features in a clean codebase first
 
@@ -164,11 +153,9 @@ Complex feature development
 
 — 明确边界：保持一致的外部 API，允许内部更改
 
-— 模块化架构：基于服务的架构，边界明确>单存储库
+— 模块化架构：基于服务的架构，边界明确 > 单存储库
 
-Tech stack considerations
-
-技术堆栈注意事项
+### Tech stack considerations / 技术堆栈注意事项
 
 — Established frameworks excel: Ruby on Rails thrives with 20 years of conventions
 
@@ -186,9 +173,7 @@ Tech stack considerations
 
 — 避免大文件：不要让文件增长成数千行
 
-Beyond coding
-
-超越编码
+### Beyond coding / 超越编码
 
 — DevOps automation: Use AI for configuring servers, DNS, and hosting
 
@@ -214,9 +199,7 @@ Beyond coding
 
 — 语音输入：Aqua 等工具可实现 140 字/分钟输入
 
-Continuous improvement
-
-持续改进
+### Continuous improvement / 持续改进
 
 — Regular refactoring: Once tests are in place, refactor frequently
 

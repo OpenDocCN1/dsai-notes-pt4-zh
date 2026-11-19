@@ -1,12 +1,13 @@
+
 # 【实战】3_1_一文讲透ChatGPT环境搭建的所有内容
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/KkVadELq6oDX9pxqwDRcIGdjnjg](https://xuqiwei1986.feishu.cn/docx/KkVadELq6oDX9pxqwDRcIGdjnjg)
 
 收录于 AI实战教程 合集
 
-# 一、引言
+## 一、引言
 
-## (一）效果小剧透
+### （一）效果小剧透
 
 一文讲透ChatGPT环境搭建的所有内容
 
@@ -18,7 +19,7 @@
 
 **哈喽**大家好，我是全网最接地气的AI实战教程博主，海盐，专为小白而生，专注打造全网最容易上手的AI实战教程
 
-> **本教程分****为**必修**模块和选修**模**块，【必****修****模块】**必须**全部**掌握；【选修模块】直接跳过也不影响全部教程最小闭环，可学完全部必修教程后，有精力回头再看
+> **本教程分为必修模块和选修模块**，【**必修模块**】**必须**全部**掌握**；【选修模块】直接跳过也不影响全部教程最小闭环，可学完全部必修教程后，有精力回头再看
 
 爆肝8000字，值得收藏，反复查阅
 
@@ -26,7 +27,7 @@
 
 ---
 
-## (二）解决的痛点
+### （二）解决的痛点
 
 现在网上那么多所谓的“安装注册教程”，反倒把好多人搞得一头雾水，找半天找不到个准儿
 
@@ -38,7 +39,7 @@
 
 ---
 
-## (二）升级打怪路线图
+### （二）升级打怪路线图
 
 全局概览，心中有数
 
@@ -48,19 +49,19 @@
 
 ---
 
-# 二、必修模块（2小节）
+## 二、必修模块（2小节）
 
 让你光速用上ChatGPT
 
-## (一）【实操1/2】快速体验第一次ChatGPT对话
+### （一）【实操1/2】快速体验第一次ChatGPT对话
 
 直接上手试一试，比理论讲了千言万语都有用
 
-### step1.使用魔法
+#### step1.使用魔法
 
 守法公民，这儿不能讲
 
-### step2.打开ChatGPT官网
+#### step2.打开ChatGPT官网
 
 推荐用电脑的google浏览器，使用无痕模式访问页面：https://chat.openai.com/
 
@@ -72,16 +73,15 @@
 
 > 不用无痕模式也可以，当有各种访问不了的问题时 用无痕模式 都能解决。如果无痕都解决不了，99%是你魔法出问题了，1%是官方挂了
 
-**更**新：2024年4月，ChatGPT可以免注册免登录，打开网站，可直接使用3.5模型，和ChatGPT进行对话
-
+**更新**：2024年4月，ChatGPT可以免注册免登录，打开网站，可直接使用3.5模型，和ChatGPT进行对话
 
 没登陆，是**游客**身份，和ChatGPT的**对话记录无法保存**
 
-## (二）【实操】登录3.5账号与ChatGPT对话
+### （二）【实操】登录3.5账号与ChatGPT对话
 
-### step1.登录
+#### step1.登录
 
-**如果已经**有了**ChatGPT账**号，进入官网https://chat.openai.com/后，点击Log in，进行登录
+**如果已经**有了**ChatGPT账号**，进入官网https://chat.openai.com/后，点击`Log in`，进行登录
 
 > 如果没有，也别急，后边海盐会教你注册
 
@@ -103,15 +103,15 @@
 
 ![](img/823782cefa35750d49f055895c561aee.png)
 
-**点击 Continue**，OK啦。出现弹框不用管，一路点击 next
+**点击 `Continue`**，OK啦。出现弹框不用管，一路点击 `next`
 
 ![](img/0f67528b705e18098f26967e9307ee05.png)
 
-**你的页**面将是这样的，有一个能和ChatGPT聊天的对话框：
+**你的页面将是这样的**，有一个能和ChatGPT聊天的对话框：
 
 ![](img/cc2c1b01ed98438d4208a516dc461ef1.png)
 
-### step2.ChatGPT对话
+#### step2.ChatGPT对话
 
 在对话框里，随便给ChatGPT下命令，恭喜你拥有了自己的AI小助理啦，你们的聊天记录都可以被记录在你的账号里~
 
@@ -119,21 +119,21 @@
 
 是不是非常简单~非常酷！
 
-# 三、选修模块（11小节）
+## 三、选修模块（11小节）
 
 直接讲透ChatGPT环境搭建的11个实战
 
-## (一）【科普1/11】拥有自己的ChatGPT3.5账号
+### （一）【科普1/11】拥有自己的ChatGPT3.5账号
 
-### 1 方式一 钞能力获得
+#### 1 方式一 钞能力获得
 
 守法公民，不多说了
 
 能说的是，比自己搞花的金币要少，主打一个省心
 
-### 2 方式二 自己注册
+#### 2 方式二 自己注册
 
-#### 2.1 痛点
+##### 2.1 痛点
 
 先给大家泼点冷水，说点大实话，这东西完全没必要自己注册，前几次搞，小白全程至少需要1小时：
 
@@ -143,31 +143,31 @@
 
 （3）使用接码平台的号池，需要付费，这个价钱你已经可以拿钞能力直接得到几个号了。免费的接码平台已经不可能注册ChatGPT了，越贵的验证码成功率越大，一般首充就需要2美元
 
-#### 2.2 实操步骤
+##### 2.2 实操步骤
 
 但是，海盐还是会给大家讲整个ChatGPT的注册流程和要注意的坑。感兴趣的宝子可以先了解一遍，再决定是否要实操
 
-##### step1.使用魔法
+###### step1.使用魔法
 
 开启魔法，确保可访问ChatGPT官网https://chat.openai.com/
 
 守法公民，不多说了
 
-##### step2.注册国外邮箱
+###### step2.注册国外邮箱
 
 注册ChatGPT需要使用国外邮箱，这里以Gmail为例（和Google账号是一个），其他邮箱类似
 
 用浏览器访问注册Gmail邮箱的页面：https://accounts.google.com/signup/v2/createaccount?flowName=GlifWebSignIn&flowEntry=SignUp
 
-名字随便填写，用英文，点击Next
+名字随便填写，用英文，点击`Next`
 
 ![](img/07d33aee0582af3fad7f85f2680d8a55.png)
 
-生日和性别也随便写，但注意出生年份必须是成年人，点击Next：
+生日和性别也随便写，但注意出生年份必须是成年人，点击`Next`：
 
 ![](img/30ed3633aa6f08d4c65a95883ba1eb34.png)
 
-自定义邮箱地址，点击Next:
+自定义邮箱地址，点击`Next`:
 
 ![](img/a7b603c74e3415e7252cfbaf2cff914f.png)
 
@@ -175,7 +175,7 @@
 
 ![](img/b959bf530f87f3d8a5801ff04ef35aed.png)
 
-##### step3.使用接码平台
+###### step3.使用接码平台
 
 接下来，要验证国外手机号， 我当前的IP是菲律宾，就用同样国家的手机号，最安全
 
@@ -199,7 +199,7 @@
 
 ![](img/4d25bc19896960a0391153ee6b9e8696.png)
 
-复制手机号，到Google页面，粘贴，点击Next
+复制手机号，到Google页面，粘贴，点击`Next`
 
 ![](img/e29876ff2aeec50f79734d516880d508.png)
 
@@ -219,9 +219,9 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 一个google账号注册完成
 
-##### step4.注册ChatGPT
+###### step4.注册ChatGPT
 
-进入官网https://chat.openai.com，点击Sign up开始注册：
+进入官网https://chat.openai.com，点击`Sign up`开始注册：
 
 ![](img/0c70f42605ee1e8317b2bc7a668ba415.png)
 
@@ -239,7 +239,7 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 ![](img/dce46eb4822e2475722546f904a044b6.png)
 
-输入姓名、生日(必须成年)，点击Continue:
+输入姓名、生日(必须成年)，点击`Continue`:
 
 ![](img/63e5022220ca59904594bead47540e89.png)
 
@@ -247,23 +247,23 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 ![](img/5e14cd030d864317eb0f3a53f5ed8a0c.png)
 
-也要使用接码平台，接码平台上选择服务时，写openai，选择国家时选择和你IP一样的，最安全。(具体步骤和章节step3.使用接码平台 一样。不赘述了
+也要使用接码平台，接码平台上选择服务时，写`openai`，选择国家时选择和你IP一样的，最安全。(具体步骤和章节step3.使用接码平台 一样。不赘述了
 
 成功接码并输入后，你的ChatGPT3.5账号就注册成功啦~
 
 可以直接登录，和ChatGPT对话啦~
 
-## (二）【科普2/11】如何购买ChatGPT plus
+### （二）【科普2/11】如何购买ChatGPT plus
 
-### 1 方式一 钞能力获得
+#### 1 方式一 钞能力获得
 
 守法公民，不多说了
 
 能说的是，和自己搞相比开销差不多，但有质保，主打非常省心
 
-### 2 方式二 自己充值
+#### 2 方式二 自己充值
 
-#### 2.1 痛点
+##### 2.1 痛点
 
 依旧，先给大家泼点冷水。这东西完全没必要自己充值。
 
@@ -275,19 +275,19 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 但依然会给大家奉上国外信用卡充值的方式~
 
-#### 2.2 实操步骤
+##### 2.2 实操步骤
 
-##### step1.准备好国外信用卡
+###### step1.准备好国外信用卡
 
 自己的，或找男朋友帮你付~
 
-##### step2.登录ChatGPT官网
+###### step2.登录ChatGPT官网
 
 用3.5账号登录https://chat.openai.com/
 
-##### step3.升级为会员
+###### step3.升级为会员
 
-在聊天页面，点击左下角Upgrade to Plus，就可以升级啦：
+在聊天页面，点击左下角`Upgrade to Plus`，就可以升级啦：
 
 ![](img/7c36cf1acd428a58180f37a1d71903f5.png)
 
@@ -295,13 +295,13 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 ![](img/7b3f9a32e10f76061c69a587d7bb5542.png)
 
-## (三）【科普3/11】你的第一个ChatGPT4对话
+### （三）【科普3/11】你的第一个ChatGPT4对话
 
 我们先使用一下ChatGPT plus账户默认的GPT4模型的default模式
 
-### step1.登录plus账号
+#### step1.登录plus账号
 
-浏览器访问官网https://chat.openai.com，点击Log in，进行登录:
+浏览器访问官网https://chat.openai.com，点击`Log in`，进行登录:
 
 ![](img/d18f0213f233dd6213df4e42cd5f8fbe.png)
 
@@ -309,21 +309,21 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 ![](img/6ae52e7dd7f05a6a1e4f5606a9264f2c.png)
 
-输入用户名和密码，会进入到聊天页面，现在默认是GPT-4模型的default模式。之前是默认GPT3.5模型
+输入用户名和密码，会进入到聊天页面，现在默认是GPT-4模型的`default`模式。之前是默认GPT3.5模型
 
 ![](img/88d77fe6bf1c9465a0c17b0e46cf5025.png)
 
-### step2.和GPT4的Default模式的第一次对话
+#### step2.和GPT4的Default模式的第一次对话
 
 ![](img/d68c307123f363521abf9ece8d711eea.png)
 
-## (四）【科普4/11】和plus版GPT3.5的第一次对话
+### （四）【科普4/11】和plus版GPT3.5的第一次对话
 
-### step1.登录plus账号
+#### step1.登录plus账号
 
 和前边一样，不赘述了
 
-### step2.和plus版GPT3.5的第一次对话
+#### step2.和plus版GPT3.5的第一次对话
 
 在新窗口中，切换到GPT3.5
 
@@ -335,17 +335,17 @@ sms页面上收到验证码，复制给google页面中，就好啦
 
 你会发现，plus的GPT3.5响应速度是最快的，但是没有GPT4那么智能
 
-## (五）【科普5/11】和GPT4浏览器模式的第一次对话（已下架）
+### （五）【科普5/11】和GPT4浏览器模式的第一次对话（已下架）
 
 plus用户的浏览器模式，可以自动联网，让GPT4获取到最新的互联网信息
 
-### step1.登录plus账号
+#### step1.登录plus账号
 
 前面讲过，不赘述了
 
-### step2.切换到浏览器模式
+#### step2.切换到浏览器模式
 
-在网页的左下角，用户名处，点击...，再点击Settings
+在网页的左下角，用户名处，点击...，再点击`Settings`
 
 ![](img/919176960c195d0f241173eae56821a0.png)
 
@@ -353,11 +353,11 @@ plus用户的浏览器模式，可以自动联网，让GPT4获取到最新的互
 
 ![](img/c6361ca614a84432911dc0beae4a2536.png)
 
-在新的对话窗口中，点击 GPT-4，选择 Browse with Bing
+在新的对话窗口中，点击 GPT-4，选择 `Browse with Bing`
 
 ![](img/35d7248b54b8bf372763ce978c3bea77.png)
 
-### step3.和GPT4浏览器模式的第一次对话
+#### step3.和GPT4浏览器模式的第一次对话
 
 问它一个最近的消息考考它
 
@@ -365,17 +365,15 @@ plus用户的浏览器模式，可以自动联网，让GPT4获取到最新的互
 
 没错儿！答对啦
 
-## (六）【科普6/11】和GPT4插件模式的第一次对话（已下架）
+### （六）【科普6/11】和GPT4插件模式的第一次对话（已下架）
 
-###
-
-### step1.登录plus账号
+#### step1.登录plus账号
 
 前面讲过，不赘述了
 
-### step2.切换到插件模式
+#### step2.切换到插件模式
 
-在网页的左下角，用户名处，点击...，再点击Settings
+在网页的左下角，用户名处，点击...，再点击`Settings`
 
 ![](img/40e7b50119ea57bfddabcb6885e582a5.png)
 
@@ -387,13 +385,13 @@ plus用户的浏览器模式，可以自动联网，让GPT4获取到最新的互
 
 ![](img/8400dafd7779386a2a5115a1367ebdac.png)
 
-### step3.安装插件
+#### step3.安装插件
 
-第一次使用，插件处都是空的，需要去Plusgin store（插件商店）中选择喜欢的进行安装
+第一次使用，插件处都是空的，需要去`Plusgin store`（插件商店）中选择喜欢的进行安装
 
 ![](img/d26198195fe639d73dd9415c37885437.png)
 
-已知名字是scrapter，可以直接搜素，安装
+已知名字是`scrapter`，可以直接搜素，安装
 
 ![](img/23c065b76e944de540f21464fff05fc9.png)
 
@@ -401,7 +399,7 @@ plus用户的浏览器模式，可以自动联网，让GPT4获取到最新的互
 
 ![](img/21d6486a0fbac35e3e6cee7dbf080add.png)
 
-### step4.选择要使用的插件
+#### step4.选择要使用的插件
 
 从已安装的插件列表中，勾选 你要使用的插件，最多可以勾选3个
 
@@ -411,15 +409,15 @@ GPT4会智能的自动调用合适的一个或多个插件用在和你沟通中
 
 ![](img/d88023bfbfde042c49e262bd8f60ca2f.png)
 
-### step5.和GPT4插件模式的第一次对话
+#### step5.和GPT4插件模式的第一次对话
 
-这里以scraper插件为例，它的功能是能让GPT4联网，查询到互联网最新信息。比浏览器模式好用很多。也是海盐认为，所有插件里最最好用的和常用的一个
+这里以`scraper`插件为例，它的功能是能让GPT4联网，查询到互联网最新信息。比浏览器模式好用很多。也是海盐认为，所有插件里最最好用的和常用的一个
 
 我怎么知道插件都有什么功能呢？有多少类插件？有多少个插件？
 
 对于插件商店中，众多插件的功能和效果的介绍和推荐，海盐会单独出一期教程。这里，我们学会怎么插件的基础使用就好啦
 
-我们使用scraper插件的联网功能，搜集一下近3天的AI新闻
+我们使用`scraper`插件的联网功能，搜集一下近3天的AI新闻
 
 ![](img/e8322dd0e995bf0de48b9822afae40f2.png)
 
@@ -427,17 +425,17 @@ GPT4会智能的自动调用合适的一个或多个插件用在和你沟通中
 
 让GPT4给出了参考链接，方便我们验证真伪。还不错
 
-## (七）【科普7/11】和GPT4代码解析器模式的第一次对话（含解决中文乱码问题）
+### （七）【科普7/11】和GPT4代码解析器模式的第一次对话（含解决中文乱码问题）
 
-之前说过，ChatGPT4的Code Interpreter代码解析器模式堪称王炸之作。有了它，你就有了一个会写python代码的好兄弟，重要的是，你用普通话和它说你的需求，好兄弟就会帮你办了
+之前说过，ChatGPT4的`Code Interpreter`代码解析器模式堪称王炸之作。有了它，你就有了一个会写`python`代码的好兄弟，重要的是，你用普通话和它说你的需求，好兄弟就会帮你办了
 
 这里以一个小例子，带大家入门
 
-### step1.登录plus账号
+#### step1.登录plus账号
 
 前面讲过，不赘述了
 
-### step2.切换到Code Interpreter模式（更新：plus账号的4.0模型已默认开启此模式，不需要执行本步骤了）
+#### step2.切换到`Code Interpreter`模式（更新：plus账号的4.0模型已默认开启此模式，不需要执行本步骤了）
 
 打开功能开关
 
@@ -445,11 +443,13 @@ GPT4会智能的自动调用合适的一个或多个插件用在和你沟通中
 
 ![](img/0da34146a42f76c18379fd9a9427c3cb.png)
 
-新的聊天窗口中，选择Code Interpreter模式
+新的聊天窗口中，选择`Code Interpreter`模式
 
 ![](img/09e78338e1b69c266de3aaad39908bc0.png)
 
-### step3.和GPT4代码解析器模式的第一次对话
+#### step3.和GPT4代码解析器模式的第一次对话
+
+
 
 注意，Code Interpreter的存储空间具有临时性。超出本窗口，GPT就不记得这个文件啦。对话中断时间过久，GPT也会忘记之前的文件
 
@@ -467,11 +467,9 @@ GPT4会智能的自动调用合适的一个或多个插件用在和你沟通中
 
 > 要求:
 
-1.  如果有饼状图，请调整饼状图的大小和位置，标签移至了图表的右侧作为图例，确保文字不会重叠；
-
-1.  调整字体大小，确保文字清晰；
-
-1.  使用我提供的字体显示所有的文字。
+1. 如果有饼状图，请调整饼状图的大小和位置，标签移至了图表的右侧作为图例，确保文字不会重叠；
+1. 调整字体大小，确保文字清晰；
+1. 使用我提供的字体显示所有的文字。
 
 ![](img/00318f6fd75df927b9dd8d864e8ae348.png)
 
@@ -579,7 +577,7 @@ IOS的app中，GPT4模型的使用是可以无限次数的，没有网页版的�
 
 ##### step4.修改地址
 
-浏览器进入Apple官方的创建AppleID的网站： https://appleid.apple.com/account
+浏览器进入Apple官方的创建AppleID的网站：`https://appleid.apple.com/account`
 
 根据提示输入你的个人信息，注意红色部分要写对：
 
@@ -629,7 +627,7 @@ IOS的app中，GPT4模型的使用是可以无限次数的，没有网页版的�
 
 ##### step1.修改地址
 
-进入Apple官网 https://appleid.apple.com， 点击登录，输入自己的AppleID
+进入Apple官网 `https://appleid.apple.com`， 点击登录，输入自己的AppleID
 
 ![](img/760c384214fd0caf1d4a1116892ead36.png)
 
@@ -685,15 +683,11 @@ IOS的app中，GPT4模型的使用是可以无限次数的，没有网页版的�
 
 按照提示一步一步操作即可，注意付款方式不要做任何选择，其它的内容可随意填写：
 
-######
-
 ![](img/183891219e84ddaef9c61c4f3bde5138.png)
 
 #### step4.切换回原来的AppleID就OK啦
 
 下载完ChatGPT app后，你可以将AppleID切换回原来自己的中国大陆的账号，当然，也可以一直使用新的AppleID
-
-######
 
 ![](img/cad810163a5b617ce58b44de54e54e26.png)
 
@@ -709,7 +703,7 @@ OpenAI官方在2023年3月1日，正式对外开放了能调用ChatGPT模型的A
 
 ### step1.登录官网
 
-https://platform.openai.com/account/api-keys
+`https://platform.openai.com/account/api-keys`
 
 用你的GPT账号登录
 
@@ -751,7 +745,7 @@ https://platform.openai.com/account/api-keys
 
 充值前，我们需要先了解ChatGPT API的价格体系
 
-免费的5美元额度用完后，可以自行给账户充值，但默认每个月最多能使用120美元的额度。超出120美元/月的限额需要额外申请（填写申请表：https://share.hsforms.com/1AQvscELNT724FkL2Hp5Lvg4sk3，别急，一会就教你。但通过的难度较高。）
+免费的5美元额度用完后，可以自行给账户充值，但默认每个月最多能使用120美元的额度。超出120美元/月的限额需要额外申请（填写申请表：`https://share.hsforms.com/1AQvscELNT724FkL2Hp5Lvg4sk3`，别急，一会就教你。但通过的难度较高。）
 
 那你一定想知道，使用API对话一次，会消耗多少美元
 
@@ -765,7 +759,7 @@ https://platform.openai.com/account/api-keys
 
 了解这些就够啦~普通人想玩，搞个120美金的账号就好啦，经济实惠
 
-如需要了解具体的模型和价格。请看官网：https://openai.com/pricing
+如需要了解具体的模型和价格。请看官网：`https://openai.com/pricing`
 
 这里，海盐给出了三种获得ChatGPT API额度的办法。1.自己充值。2.钞能力。3.申请Microsoft for Startups项目
 
@@ -777,7 +771,7 @@ https://platform.openai.com/account/api-keys
 
 ##### step1.进入官网
 
-https://platform.openai.com/account/billing/overview
+`https://platform.openai.com/account/billing/overview`
 
 登录你的GPT账号
 
@@ -813,7 +807,7 @@ openai官方为了扶持AI的发展，给初创公司提供了一种激励方式
 
 ##### step1.打开网址
 
-https://openai.com/microsoft-for-startups
+`https://openai.com/microsoft-for-startups`
 
 ##### step2.填申请表
 
@@ -823,7 +817,7 @@ https://openai.com/microsoft-for-startups
 
 ##### step3.使用ChatGPT无脑写申请书
 
-**我的提示词：“请**你扮演一**个开发者初创**公**司CheeseAI的创始人Cheese，你公司计划开发的项目是使用**ChatGPT API来开发各个垂直领域的提示词模板，方便新手用户使用模板能够快速上手ChatGPT，获得自己想要的答案。现在需要你写一份申请书，申请加入openai的Microsoft for Startups计划，来使用ChatGPT API，开始你的项目。注意，申请书需要用词恳切，说明出你项目的价值，以便于更好的通过申请。全文不超过300字。请给出中文版。”
+我的提示词：“请你扮演一个开发者初创公司CheeseAI的创始人Cheese，你公司计划开发的项目是使用ChatGPT API来开发各个垂直领域的提示词模板，方便新手用户使用模板能够快速上手ChatGPT，获得自己想要的答案。现在需要你写一份申请书，申请加入openai的Microsoft for Startups计划，来使用ChatGPT API，开始你的项目。注意，申请书需要用词恳切，说明出你项目的价值，以便于更好的通过申请。全文不超过300字。请给出中文版。”
 
 后边会专门讲对于ChatGPT提示词的调教，这里直接拿去用，注意力不要跑偏，一定要注意重点
 
@@ -849,7 +843,9 @@ https://openai.com/microsoft-for-startups
 
 ##### step4.查找Organization ID
 
-打开官方网页https://platform.openai.com/account/org-settings
+
+
+打开官方网页`https://platform.openai.com/account/org-settings`
 
 登录你自己的ChatGPT账号，页面左侧点击Settings -> 页面右侧 复制Organization ID即可
 
@@ -861,7 +857,7 @@ https://openai.com/microsoft-for-startups
 
 点击一下黑色提交按钮，就完成了
 
-##### step5.确认已申请ChatGPT API key
+## step5.确认已申请ChatGPT API key
 
 提交申请后，邮箱很快会收到邮件，邮件中会要求你的ChatGPT账户必须申请了API key
 
@@ -869,7 +865,7 @@ https://openai.com/microsoft-for-startups
 
 然后安静等待就好了，7-10个工作日内，一旦你的申请表审核通过，账户中就会出现2500美元的额度了
 
-# 四、总结
+## 四、总结
 
 到这里，关于ChatGPT官方环境搭建的所有内容，就通通搞定啦
 

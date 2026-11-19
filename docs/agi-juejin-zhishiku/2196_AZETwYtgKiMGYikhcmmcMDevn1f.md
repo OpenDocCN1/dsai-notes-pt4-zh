@@ -1,8 +1,7 @@
-# 12.26-MIT、OpenAI等震撼力作：AI首次自主发现人工生命！人类窥见上帝造物
-
-> 来源：[https://agijuejin.feishu.cn/docx/PfVAddieToPbotxM4d4cOxMPnpf](https://agijuejin.feishu.cn/docx/PfVAddieToPbotxM4d4cOxMPnpf)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 26 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/PfVAddieToPbotxM4d4cOxMPnpf](https://agijuejin.feishu.cn/docx/PfVAddieToPbotxM4d4cOxMPnpf)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -76,7 +75,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/820/246.htm)
 
 ![](img/2332f227e31a66ab9bdf96f6e16d1bca.png)
 
-2024 年 12 月 25 日阶跃星辰发布 Step-1X-Medium 模型。该模型基于 MMDit 架构，生成速度提升**30%**以上，更懂创作者需求，有更强理解能力和图文一致性。新增图生图垫图玩法、风格迁移等，还升级了中国风创作能力，支持 Prompt 中添加英文并在图上呈现英文文案。
+2024 年 12 月 25 日阶跃星辰发布 Step-1X-Medium 模型。该模型基于 MMDit 架构，生成速度提升30%以上，更懂创作者需求，有更强理解能力和图文一致性。新增图生图垫图玩法、风格迁移等，还升级了中国风创作能力，支持 Prompt 中添加英文并在图上呈现英文文案。
 
 ### 💡 OpenAI 阿尔特曼在线征集“新年愿望”，网友期待新增家庭账户、优化语音聊天等
 

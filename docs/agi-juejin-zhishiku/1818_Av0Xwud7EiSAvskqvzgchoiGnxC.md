@@ -1,16 +1,17 @@
-# Stability AI 推出图像提升增强工具Creative Upscaler
+
+# Stability AI 推出图像提升增强工具 Creative Upscaler
 
 > 来源：[https://agijuejin.feishu.cn/docx/WpKzdB2KPoPgZDx4lRVcRoKsnUg](https://agijuejin.feishu.cn/docx/WpKzdB2KPoPgZDx4lRVcRoKsnUg)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/683714849)hihu.com/p/683714...
+> 原文：[https://zhuanlan.zhihu.com/p/683714849](https://zhuanlan.zhihu.com/p/683714849)
 
-**St**ability AI 近日通过平台 NightCafe 推出了一款高分辨率图像提升工具——Creative Upscaler，它的效果惊人，而且使用价格比Magnific便宜，但是目前没有免费试用额度。
+Stability AI 近日通过平台 NightCafe 推出了一款高分辨率图像提升工具——Creative Upscaler，它的效果惊人，而且使用价格比 Magnific 便宜，但是目前没有免费试用额度。
 
 ![](img/12a2b137485a6fc860bdcb86e431f32a.png)
 
-这款工具通过先进的人工智能技术，能够将图像升级至4K分辨率，并且创造出全新的细节，为静态图像注入新的生命。
+这款工具通过先进的人工智能技术，能够将图像升级至 4K 分辨率，并且创造出全新的细节，为静态图像注入新的生命。
 
 在介绍下面功能之前，先看看这个超高分辨率的生成效果。
 
@@ -20,19 +21,19 @@
 
 00:42
 
-与市面上的其他AI图像高清修复软件不同的是，Creative[ Upsc](https://zhida.zhihu.com/search?q=%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86&zhida_source=entity&is_preview=1)aler 还结合了文本提示和 图像处理 ，可以创造出原本不存在的新细节。
+与市面上的其他 AI 图像高清修复软件不同的是，Creative Upscaler 还结合了文本提示和图像处理，可以创造出原本不存在的新细节。
 
-这种独特的技术应用，不仅可以为原始图像赋予了新的创造力，也为设计师提供了无限的可能性。它可以打破了传统图像处理的界限，开启一个全新的创意空间。
+这种独特的技术应用，不仅可以为原始图像赋予了新的创造力，也为设计师提供了无限的可能性。它可以打破传统图像处理的界限，开启一个全新的创意空间。
 
-下面让我们看一下Creative Upscaler的具体功能吧！
+下面让我们看一下 Creative Upscaler 的具体功能吧！
 
 ## 一、分辨率提升
 
-Creative Upscaler 的核心功能之一是其分辨率提升能力。无论原始图像的尺寸如何，这款工具都能够将其升级至4K分辨率。
+Creative Upscaler 的核心功能之一是其分辨率提升能力。无论原始图像的尺寸如何，这款工具都能够将其升级至 4K 分辨率。
 
 ![](img/47e6f0dbe463a389a1fb5e77e4ced21d.png)
 
-这意味着即使是分辨率较低的手机照片，也能通过Creative Upscaler的处理，变成适合大屏幕展示的高清图像。
+这意味着即使是分辨率较低的手机照片，也能通过 Creative Upscaler 的处理，变成适合大屏幕展示的高清图像。
 
 这一功能对于那些希望在大尺寸打印，或高分辨率屏幕上展示作品的摄影师和设计师来说，无疑是一个巨大的利好。
 
@@ -50,7 +51,7 @@ Creative Upscaler 的另一个引人注目的功能是其细节创造能力。
 
 ## 三、创造力调整
 
-用户可以根据自己的需求，调整Creative Upscaler的创造力水平。
+用户可以根据自己的需求，调整 Creative Upscaler 的创造力水平。
 
 ![](img/f5654fc87286241b9e2e310ac690c9fa.png)
 
@@ -68,7 +69,7 @@ Creative Upscaler 特别适合将低质量的图像转换为高分辨率的图�
 
 ![](img/8f9e39f098cc7415d6df2eec8487a4b6.png)
 
-这对于修复老旧照片、提升历史文档的[可读性，或](https://zhida.zhihu.com/search?q=%E7%8E%B0%E4%BB%A3%E5%B1%95%E8%A7%88&zhida_source=entity&is_preview=1)者将低分辨率的艺术作品转换为 现代展览 级别的作品，都有着重要的应用价值。
+这对于修复老旧照片、提升历史文档的可读性，或者将低分辨率的艺术作品转换为现代展览级别的作品，都有着重要的应用价值。
 
 而在某些情况下，我们可能希望在提升图像质量的同时，尽可能保留原始图像的特征。
 
@@ -82,7 +83,7 @@ Creative Upscaler 的生命注入功能，我更愿意称之为氛围改造，�
 
 ![](img/28904e2a4c25bd9c58e4c6d5264ab426.png)
 
-通过AI的创意升级，图像不仅在视觉上更加吸引人，而且在情感表达上也更加丰富。
+通过 AI 的创意升级，图像不仅在视觉上更加吸引人，而且在情感表达上也更加丰富。
 
 ![](img/8e095e225da1fbccd2a9eda2bdadbec5.png)
 
@@ -90,8 +91,8 @@ Creative Upscaler 的生命注入功能，我更愿意称之为氛围改造，�
 
 ## 结语
 
-随着越来越多人工智能AI工具的推出，以往繁琐的图像处理工作正在变得越来越方便，让我们期待更多优秀的应用，让我们未来有更多的选择。
+随着越来越多人工智能 AI 工具的推出，以往繁琐的图像处理工作正在变得越来越方便，让我们期待更多优秀的应用，让我们未来有更多的选择。
 
 ---
 
-我是德里克文，一个对AI绘画，人工智能有强烈兴趣，从业多年的设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是德里克文，一个对 AI 绘画，人工智能有强烈兴趣，从业多年的设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

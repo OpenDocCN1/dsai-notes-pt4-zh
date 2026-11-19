@@ -1,8 +1,9 @@
+
 # n8n+sora2.0 自动批量复刻YouTube视频
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/MLkQdU6MsoDtu0xhumJcIkQ9nxh](https://xuqiwei1986.feishu.cn/docx/MLkQdU6MsoDtu0xhumJcIkQ9nxh)
 
-大家好，我是小宋，00后程序员，6月份加入赚钱，加入赚钱已经有三个月。 本期n8n 教练,这是最新n8n+sora2.0 批量复刻YouTube视频，分享给大家。
+大家好，我是小宋，00后程序员，6月份加入赚钱，加入赚钱已经有三个月。本期 n8n 教练，这是最新 n8n+sora2.0 批量复刻 YouTube 视频，分享给大家。
 
 欢迎大家来链接我，我需要和懂需求的，懂流量操盘手的聊聊。
 
@@ -26,49 +27,47 @@
 
 [20251002_2208_01k6jks74cfwmby57t77qrfn8k.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q2xeb7W6KoBlywxOU04c2nN2nHd)
 
-# 一.用 n8n 把Youtube「爆款视频复刻」做成一条龙：表单上传 → 分镜自动拆 → Sora 生成 → 批量合并一键出片
+## 一. 用 n8n 把 Youtube「爆款视频复刻」做成一条龙：表单上传 → 分镜自动拆 → Sora 生成 → 批量合并一键出片
 
 ![](img/702afc63b7d7b65adec3abdb2ad83caa.png)
 
 [n8n+sora (1).json](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Fah8bykqxoEXopxpZVccB8bjn4d)
 
-## 1.0  整合sora2.0 +剪辑 接口（圈友需要）
+### 1.0 整合 sora2.0 + 剪辑 接口（圈友需要）
 
-1.打开中转站：https://xiaosong.chat/login 充值
+1. 打开中转站：`https://xiaosong.chat/login` 充值
 
 ![](img/db8ff2d7ac76081a3d81d155e7e42bf6.png)
 
-2.按照下图步骤获得API，创建新的令牌时名称自定义，"分组优先级”下拉菜单选择"限时特价”，其它保持默认即可，最后点击最下方的“提交”
+2. 按照下图步骤获得 API，创建新的令牌时名称自定义，"分组优先级”下拉菜单选择 "限时特价”，其它保持默认即可，最后点击最下方的 "提交”
 
 ![](img/2ab8bf64c497e8ebae098967a3bb2ba6.png)
 
 ![](img/4cb3f417fd65cf613cedc2903d8c59fa.png)
 
-3.复制密钥
+3. 复制密钥
 
 ![](img/a41a5ee6bb676338a2f2c513610af0c9.png)
 
-4.复制节点
+4. 复制节点
 
 ![](img/a7bf004cebc3c07f9427cbfba0d9c3e3.png)
 
 [My workflow 49.json](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KNifbknN5oXBP6xglTDcUefJnPf)
 
-> **我做的功能主要是“把爆款视频复刻成可量产模板”的 n8n** 工作流：填表上传视频 → Gemini 拆分镜 → 按分镜自动生成 Sora 视频 → FAL 合并输出。全程无脑点，最后自动给你一个下载链接
+> 我做的功能主要是“把爆款视频复刻成可量产模板”的 n8n 工作流：填表上传视频 → Gemini 拆分镜 → 按分镜自动生成 Sora 视频 → FAL 合并输出。全程无脑点，最后自动给你一个下载链接
 
 ---
 
-## 1.1 为什么要做这条工作流？
+### 1.1 为什么要做这条工作流？
 
-+   **批量复刻****：同一套结构**化“分镜 → 提示词”模板，持续喂入热门题材，稳定产出爆款。
++ `批量复刻`：同一套结构化“分镜 → 提示词”模板，持续喂入热门题材，稳定产出爆款。
 
-+   **流程可控**：把“人肉拆分镜 + 手动丢 API”的散装流程，统一收口到 n8n；每一步都可 Pin & 复用。
++ `流程可控`：把“人肉拆分镜 + 手动丢 API”的散装流程，统一收口到 n8n；每一步都可 `Pin` & 复用。
 
-+   **效率最大化**：上传一个参考视频，**自动解析→生成→合并**，直接拿成片。
++ `效率最大化`：上传一个参考视频，自动解析→生成→合并，直接拿成片。
 
----
-
-## 1.2 流程
+### 1.2 流程
 
 ```
 表单上传(mp4, 分镜数量)
@@ -90,27 +89,27 @@ FAL FFmpeg 合并（提交→轮询→拿最终视频）
 表单回传/重定向到下载链接（Form Redirect）
 ```
 
-## 1.3 节点总结
+### 1.3 节点总结
 
-# 二.关键节点详解
+## 二. 关键节点详解
 
-### 2.1 表单入口：On form submission1
+### 2.1 表单入口：`On form submission1`
 
-+   字段：mp4（file）、分镜数量（number）。
++ 字段：`mp4`（file）、`分镜数量`（number）。
 
-+   **用于用户上传参考视频** & 指定拆分镜的数量（规则：每个分镜按 ~10s 的节奏估算）。
++ 用于用户上传参考视频 & 指定拆分镜的数量（规则：每个分镜按 ~10s 的节奏估算）。
 
 ![](img/276e9000cfe66900850fe89ef710dedc.png)
 
 ![](img/4b01edd09e3672debfdd056baad724c1.png)
 
-### 2.2 视频上传：**上传视频1**（HTTP）
+### 2.2 视频上传：`上传视频1`（HTTP）
 
-+   POST https://generativelanguage.googleapis.com/upload/v1beta/files
++ `POST` `https://generativelanguage.googleapis.com/upload/v1beta/files`
 
-+   作用：把表单里的 mp4 作为 **二进制** 上传，拿到 file.uri。
++ 作用：把表单里的 `mp4` 作为 `二进制` 上传，拿到 `file.uri`。
 
-+   小技巧：Content-Length 用 ={{ $json.mp4[0].size }} 动态带入。
++ 小技巧：`Content-Length` 用 =`{{ $json.mp4[0].size }}` 动态带入。
 
 > 提示：API Key/Token 要放到 n8n Credentials / 环境变量
 
@@ -120,9 +119,9 @@ FAL FFmpeg 合并（提交→轮询→拿最终视频）
 
 ![](img/6a07e656c5272107b75e9aa64fb2f963.png)
 
-### 2.3 自动拆分镜：**分镜大纲1**（Gemini 2.5 Pro）
+### 2.3 自动拆分镜：`分镜大纲1`（Gemini 2.5 Pro）
 
-带 json 代码块的 分镜大纲（每个分镜都包含“视频提示词”）。
++ 带 `json` 代码块的 `分镜大纲`（每个分镜都包含“视频提示词”）。
 
 ![](img/bb6ca39011e9684fbda705788aa45785.png)
 
@@ -169,8 +168,6 @@ FAL FFmpeg 合并（提交→轮询→拿最终视频）
 ### **第三步：风格基因完美移植**
 保持原文案信息内核100%完整的前提下，对语言外壳进行彻底重塑：以**频道身份**将平淡表述参照转爆款视频参考片段化为具有强烈个人标识的风格化表达，合理嵌入标志性口头禅和习惯用语，调整语言节奏以匹配爆款视频参考片段的表达习惯，增强情感色彩的渲染力度。
 
-
-
 ### **第五步：爆款密码深度注入**
 基于抖音/TikTok平台的流量算法偏好和用户心理行为模式，为每句旁白植入经过验证的爆款元素。开头3秒内设置强力吸引钩子，中段布局悬念点和好奇心触发器，巧妙设置信息缺口制造追看欲望，结尾植入记忆锚点和互动召唤，确保整体节奏符合短视频用户的注意力曲线和完播率优化要求。同时，针对爆款短视频适合快节奏剪辑的特点，善于使用短句来营造紧凑有力的语言节奏，通过短句的连续冲击增强内容的传播力和记忆度。
 
@@ -189,145 +186,156 @@ FAL FFmpeg 合并（提交→轮询→拿最终视频）
 - **分镜数量控制:** 严格按照**信息输入**中的**分镜数量**要求生成对应数量的分镜内容，确保输出的分镜序号从1开始连续递增至指定数量，不多不少
 
 ### **输出示例**
+```
+
 ```json
+
 {
+
   &quot;分镜&quot;: [
+
     {
+
       &quot;分镜序号&quot;: 1,
+
       &quot;时间&quot;: &quot;00:00:00-00:00:10&quot;,
+
       &quot;视频提示词&quot;: &quot;[画面风格]+[主角]+[动作]+[场景]+[镜头]+[氛围]+[色调关键词]+[风格关键词]&quot;
+
     },
+
     {
+
       &quot;分镜序号&quot;: 2,
+
       &quot;时间&quot;: &quot;00:00:10-00:00:20&quot;,
+
       &quot;视频提示词&quot;: &quot;[画面风格]+[主角]+[动作]+[场景]+[镜头]+[氛围]+[色调关键词]+[风格关键词]&quot;
+
     },
+
     {
+
       &quot;分镜序号&quot;: 3,
+
       &quot;时间&quot;: &quot;00:00:20-00:00:30&quot;,
+
       &quot;视频提示词&quot;: &quot;[画面风格]+[主角]+[动作]+[场景]+[镜头]+[氛围]+[色调关键词]+[风格关键词]&quot;
+
     }
+
   ]
+
 }
 
 ```
 
+### 2.4 解析 JSON：`设置参数-提取分镜`（`Set`）
 
-```
+用正则抓 `json` 代码块 → `JSON.parse` → 写入字段 `分镜大纲`。
 
-### 2.4 解析 JSON：**设置参数-提取分镜**（Set）
-
-用正则抓 json 代码块 → JSON.parse → 写入字段 分镜大纲。
-
-这样后面可以 ['分镜大纲']['分镜'] 直接取数组。
+这样后面可以 `['分镜大纲']['分镜']` 直接取数组。
 
 ![](img/ff0a4246ecd498865046a1c6e77dcdae.png)
 
 ```
-{{ (() =&gt; {
-  const raw = $node[&quot;分镜大纲1&quot;].json.content.parts[0].text || &#x27;&#x27;;
+{{ (() => {
+  const raw = $node["分镜大纲1"].json.content.parts[0].text || '';
   const match = raw.match(/```json\s*([\s\S]*?)\s*```/i);
-  const parsed= match ? JSON.parse(match[1]) : {};
- return parsed;
+
+  const parsed = match ? JSON.parse(match[1]) : {};
+
+  return parsed;
+
 })() }}
 ```
 
-### 2.5 逐分镜生成：**遍**历-图片1（SplitOut） → 循环-图片1（SplitInBatches） → 对接Sora（HTTP）
-
-+   **SplitOut**：把分镜数组拆成一个个 item。
-
-+   **SplitInBatches**：控制并发/批次数，避免被 API 限流。
-
-+   **对接Sora**：把当前分镜的 视频提示词 作为 prompt 提交生成。
-
-+   建议将 **模型/尺寸/帧数** 等参数抽象成 Set/ENV 方便调优。
-
-+   如果生成非阻塞 → **Wait1** + **轮询**获取草稿。
 
 
+## 2.5 逐分镜生成
 
-### 2.6抓取成片 URL：**HTTP Request1 → Cod**e1 → If → 设置参数-视频网址1
+`遍历`-图片1（`SplitOut`）→ 循环-图片1（`SplitInBatches`）→ 对接Sora（HTTP）
 
-+   逻辑：调用草稿/列表接口 → **Code1** 里按 **当前分镜的“视频提示词”** 模糊匹配 → 提取 downloadable_url。
+- `SplitOut`：把分镜数组拆成一个个 `item`。
+- `SplitInBatches`：控制并发/批次数，避免被 API 限流。
+- 对接Sora：把当前分镜的 视频提示词 作为 `prompt` 提交生成。
+- 建议将 `Set`/`ENV` 等参数抽象成变量方便调优。
+- 如果生成非阻塞 → `Wait1` + 轮询获取草稿。
 
-+   命中则写入 video 字段，汇总到上层批处理。
+## 2.6 抓取成片 URL
 
+`HTTP Request1` → `Code1` → `If` → `设置参数-视频网址1`
+
+- 逻辑：调用草稿/列表接口 → `Code1` 里按 当前分镜的“视频提示词” 模糊匹配 → 提取 `downloadable_url`。
+- 命中则写入 `video` 字段，汇总到上层批处理。
 
 ![](img/6571ca3363ac112dff9d09a5a13dacf5.png)
 
-### 2.7聚合 Aggregate
+## 2.7 聚合 Aggregate
 
-把前面循环里产出的每个分镜 video 链接集中起来，给后面的 **FAL FFmpeg 合并**当输入。注意顺序必须与分镜一致。
+把前面循环里产出的每个分镜 `video` 链接集中起来，给后面的 FAL FFmpeg 合并当输入。注意顺序必须与分镜一致。
 
-**连接路径**
+### 连接路径
 
-+   将 **Aggregate（聚合）** 连接到 Spl**itInBatches（**循环-图片1） 的 “After/Done” 分支（循环完成后执行），避免只聚合到部分分镜。
+- 将 `Aggregate`（聚合）连接到 `SplitInBatches`（循环-图片1）的 “`After/Done`” 分支（循环完成后执行），避免只聚合到部分分镜。
 
-**关键参数**
+### 关键参数
 
-+   模式选择：Aggregate all item data（aggregateAllItemData）
-
-+   聚合结果会放在当前 item 的 json.data 数组中（每个元素是一条分镜产物）
+- 模式选择：`Aggregate all item data`（`aggregateAllItemData`）
+- 聚合结果会放在当前 `item` 的 `json.data` 数组中（每个元素是一条分镜产物）
 
 ![](img/14fc87626ab1b25eef39515286654c9a.png)
 
-### 2.8 提交合并视频任务
+## 2.8 提交合并视频任务
 
-**作用**
+### 作用
 
-调用 FAL 的合并接口，返回 request_id，状态初始一般为 IN_QUEUE 或 IN_PROGRESS。
+调用 FAL 的合并接口，返回 `request_id`，状态初始一般为 `IN_QUEUE` 或 `IN_PROGRESS`。
 
-**参数**
+### 参数
 
-+   方法：POST
-
-+   URL：https://queue.fal.run/fal-ai/ffmpeg-api/merge-videos
-
-+   Headers：Authorization: Key <FAL_API_KEY>（放 n8n Credentials，切勿明文）
-
-+   Body（JSON）：={{ $json }}（即 Code2 输出）
+- 方法：`POST`
+- URL：`https://queue.fal.run/fal-ai/ffmpeg-api/merge-videos`
+- Headers：`Authorization: Key <FAL_API_KEY>`（放 n8n Credentials，切勿明文）
+- Body（`JSON`）：`={{ $json }}`（即 `Code2` 输出）
 
 ![](img/08bb74d05d72cb5868b1a1dfa6b85951.png)
 
 ![](img/0bb894f432a7e4f0b528f851e94e68ab.png)
 
-### 2.9获取状态
+## 2.9 获取状态
 
-**Wait（等待）**
+### Wait（等待）
 
-+   你的节点 amount: 10 → 默认单位为“秒”。根据视频数量与时长，建议 3–10s 起步。
+- 你的节点 `amount: 10` → 默认单位为“秒”。根据视频数量与时长，建议 3–10s 起步。
+- 建议加“最大轮询次数”（例如 60 次 ≈ 10 分钟），避免无限等待（可通过变量计数或 `If` 分支限制）。
 
-+   **建议加“最大轮询次数”**（例如 60 次 ≈ 10 分钟），避免无限等待（可通过变量计数或 If 分支限制）。
+### HTTP Request5（查询状态）
 
-HTTP Request5（查询状态）
+- 方法：`POST`（或 `GET`，视 FAL 接口而定）
+- URL：
 
-+   方法：POST（或 GET，视 FAL 接口而定）
+`https://queue.fal.run/fal-ai/ffmpeg-api/merge-videos/requests/{{ $('提交合并任务').item.json.request_id }}/status`
 
-+   URL：
-
-+   https://queue.fal.run/fal-ai/ffmpeg-api/merge-videos/requests/{{ $('提交合并任务').item.json.request_id }}/status
-
-+   Headers：同上 Authorization: Key <FAL_API_KEY>
+- Headers：同上 `Authorization: Key <FAL_API_KEY>`
 
 ![](img/9c5160839999c95fe23fc09f5800cc21.png)
 
-### 2.10任务是否完成
+## 2.10 任务是否完成
 
 ![](img/69cede3ec3708ce701300cc7438c9eac.png)
 
-### 2.11下载视频
+## 2.11 下载视频
 
-**目的**
+### 目的
 
 给用户一个“点提交 → 自动跳到下载页”的体验。
 
-**说明**
+### 说明
 
-+   你当前 **HTTP Request9** 用了**固定 request_id** 的 URL（/requests/88c6...）。这会只看某个历史任务。
-
-+   **更简洁做法**：如果 2.9 的状**态查询已经返回了 v**ideo.url，可以直接跳 Form，无需再请求 HTTP Request9。
-
-+   **如果确实想再拉一次详情（或**拿更稳的 CDN **UR**L），请把 HTTP Request9 的 URL 改成动态引用 request_id
+- 你当前 `HTTP Request9` 用了固定 `request_id` 的 URL（/requests/88c6...）。这会只看某个历史任务。
+- 更简洁做法：如果 2.9 的状态查询已经返回了 `video.url`，可以直接跳 Form，无需再请求 `HTTP Request9`。
+- 如果确实想再拉一次详情（或拿更稳的 CDN URL），请把 `HTTP Request9` 的 URL 改成动态引用 `request_id`
 
 ![](img/d0ea5d5da7a26ec9510b030284cf9226.png)
 
@@ -335,36 +343,32 @@ HTTP Request5（查询状态）
 
 ## 三.常见坑 & 我的踩坑记录
 
-1.  **API 超时 / 连接中断**
+1. API 超时 / 连接中断
 
-+   优先 **降低并发 / 加 Wait**；
+- 优先 降低并发 / 加 `Wait`；
+- 生成节点 Pin 住成功返回，调下面的链路时不必重跑生成。
 
-+   **生成节点 P**in 住成功返回，调下面的链路时不必重跑生成。
+2. 成片 URL 匹配不到
 
-1.  **成片 URL 匹配不到**
+- `Code1` 里默认用 `includes(TARGET_PROMPT)` 做“包含匹配”；
+- 若命名冲突，在 `prompt` 前加分镜序号/唯一标识。
 
-+   Code1 里默认用 includes(TARGET_PROMPT) 做“包含匹配”；
+3. 合并顺序错乱
 
-+   若命名冲突，在 prompt 前加分镜序号/唯一标识。
+- 聚合 → `Code2` 时，确保分镜序号排序后再组装 `video_urls`。
 
-1.  **合并顺序错乱**
+4. 分镜长度不均
 
-+   聚合 → Code2 时，确保分镜序号排序后再组装 video_urls。
-
-1.  **分镜长度不均**
-
-+   在 LLM 指令里明确：**每个分镜对应约 10s**（或你需要的节奏），并让模型给出时间段”**方便后期合并时按序拼接。
+- 在 LLM 指令里明确：每个分镜对应约 10s（或你需要的节奏），并让模型给出时间段 方便后期合并时按序拼接。
 
 ## 四.逆向教程（这个我觉得大家可以给我点赞，勿商用，只供学习，谢谢）
 
-### 4.1 简单逆向 对接sora2.0（圈友需要 ）
-
-###
+### 4.1 简单逆向 对接 sora2.0（圈友需要）
 
 ![](img/c2b4a8b3ffb7622f8f6b10bb976244f5.png)
 
-[bandicam 2025-10-05 19-55-50-822.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XsfsbvaoAoRi2zxVjUec0V7ZnPf)
+[`bandicam 2025-10-05 19-55-50-822.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XsfsbvaoAoRi2zxVjUec0V7ZnPf)
 
-### 4.2 使用 即梦+豆包   每天赠送的积分（文生图）圈友需要   勿商用，只供学习，谢谢
+### 4.2 使用 即梦+豆包 每天赠送的积分（文生图）圈友需要 勿商用，只供学习，谢谢
 
 ![](img/f7384fefb11701ced5c344eee95167a0.png)

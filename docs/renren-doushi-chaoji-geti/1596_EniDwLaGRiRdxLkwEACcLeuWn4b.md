@@ -1,12 +1,11 @@
+
 # 2023-08-02阿里云通义听悟上新，新增自动提取PPT等三大功能-今日头条
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/VrModyAAVoYvzIx45XPcPmi9npt](https://xuqiwei1986.feishu.cn/docx/VrModyAAVoYvzIx45XPcPmi9npt)
-
-> 🔗 原文链接： h[ttps://www.toutiao](https://www.toutiao.com/article/7262606024492728886/?log_from=e56cdd6b5263d_1691147661141).com/article/726...
-
 >
+> 🔗 原文链接：h[ttps://www.toutiao](https://www.toutiao.com/article/7262606024492728886/?log_from=e56cdd6b5263d_1691147661141).com/article/726...
 
-# 阿里云通义听悟上新，新增自动提取PPT等三大功能
+## 阿里云通义听悟上新，新增自动提取PPT等三大功能
 
 2023-08-02 14:21 · 量子位
 

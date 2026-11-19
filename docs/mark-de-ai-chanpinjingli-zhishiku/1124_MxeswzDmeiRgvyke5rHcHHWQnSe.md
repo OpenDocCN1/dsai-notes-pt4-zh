@@ -1,3 +1,4 @@
+
 # 🖇️ 使用Claude 3.5 Sonnet的RAG即服务
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TnO0dMienoY8xLxxlVRcfAcGnwb](https://qqs7y1hozd1.feishu.cn/docx/TnO0dMienoY8xLxxlVRcfAcGnwb)
@@ -8,39 +9,37 @@ Build and deploy a production-ready Retrieval-Augmented Generation (RAG) service
 
 ### Features
 
-+   Production-ready RAG pipeline
++ Production-ready RAG pipeline
 
-+   Integration with Claude 3.5 Sonnet for response generation
++ Integration with Claude 3.5 Sonnet for response generation
 
-+   Document upload from URLs
++ Document upload from URLs
 
-+   Real-time document querying
++ Real-time document querying
 
-+   Support for both fast and accurate document processing modes
++ Support for both fast and accurate document processing modes
 
 ### How to get Started?
 
-1.  Clone the GitHub repository
+1. Clone the GitHub repository
 
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+`git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git`
 
-cd awesome-llm-apps/rag_tutorials/rag-as-a-service
+`cd awesome-llm-apps/rag_tutorials/rag-as-a-service`
 
-1.  Install the required dependencies:
+2. Install the required dependencies:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-1.  Get your Anthropic API and Ragie API Key
+3. Get your Anthropic API and Ragie API Key
 
-+   Sign up for an Anthropic account and get your API key
+  + Sign up for an Anthropic account and get your API key
 
-+   Sign up for an [Ragie account](https://www.ragie.ai/) and get your API key
+  + Sign up for an [Ragie account](https://www.ragie.ai/) and get your API key
 
-1.  Run the Streamlit app
+4. Run the Streamlit app
 
-streamlit run rag_app.py
-
-#
+`streamlit run rag_app.py`
 
 ## 🖇️ 使用Claude 3.5 Sonnet的RAG即服务
 
@@ -48,34 +47,34 @@ streamlit run rag_app.py
 
 ### 特性
 
-+   可投入生产的RAG管道
++ 可投入生产的RAG管道
 
-+   与Claude 3.5 Sonnet集成以生成回复
++ 与Claude 3.5 Sonnet集成以生成回复
 
-+   从URL上传文档
++ 从URL上传文档
 
-+   实时文档查询
++ 实时文档查询
 
-+   支持快速和精确两种文档处理模式
++ 支持快速和精确两种文档处理模式
 
 ### 如何开始？
 
-1.  克隆GitHub仓库
+1. 克隆GitHub仓库
 
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+`git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git`
 
-cd awesome-llm-apps/rag_tutorials/rag-as-a-service
+`cd awesome-llm-apps/rag_tutorials/rag-as-a-service`
 
-1.  安装所需的依赖项：
+2. 安装所需的依赖项：
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-1.  获取您的Anthropic API和Ragie API密钥
+3. 获取您的Anthropic API和Ragie API密钥
 
-+   注册一个[Anthropic账户](https://console.anthropic.com/)并获取你的API密钥
+  + 注册一个[Anthropic账户](https://console.anthropic.com/)并获取你的API密钥
 
-+   注册[ Ragie账户](https://www.ragie.ai/)并获取你的API密钥
+  + 注册[Ragie账户](https://www.ragie.ai/)并获取你的API密钥
 
-1.  运行Streamlit应用程序
+4. 运行Streamlit应用程序
 
-streamlit run rag_app.py
+`streamlit run rag_app.py`

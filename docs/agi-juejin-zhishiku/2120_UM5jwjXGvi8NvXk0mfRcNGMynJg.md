@@ -1,7 +1,7 @@
+
 # 8.14 谷歌版 iPhone 要来了？AI 能力超苹果 2 年
 
 > 来源：[https://agijuejin.feishu.cn/docx/QpS7d7oOCoYe8yxp5qwcauvdnKg](https://agijuejin.feishu.cn/docx/QpS7d7oOCoYe8yxp5qwcauvdnKg)
-
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ## 🌟 技术突破
@@ -78,7 +78,7 @@ Alphabet 子公司 Waymo 宣布将其自动驾驶出租车服务扩展至旧金�
 
 量子位｜[阅读原文](https://sourl.co/YqK2mH)
 
-ChatGPT 官方宣布最新版本 GPT-4o 模型上线，但用户普遍未察觉明显变化，评论区反响平平。新模型在特定问题下表现有所提升，但整体改进细微，主要在语气上更加人性化。安全防护有所加强，但 AI 越狱大师 Pliny 发现仍可破解。同时，OpenAI 内部围绕下一代模型"草莓 Q* 的行为艺术引起外界关注，但公众对此类行为艺术兴趣不高。
+ChatGPT 官方宣布最新版本 GPT-4o 模型上线，但用户普遍未察觉明显变化，评论区反响平平。新模型在特定问题下表现有所提升，但整体改进细微，主要在语气上更加人性化。安全防护有所加强，但 AI 越狱大师 Pliny 发现仍可破解。同时，OpenAI 内部围绕下一代模型"草莓 Q*" 的行为艺术引起外界关注，但公众对此类行为艺术兴趣不高。
 
 ### 💡 AMD 6.65 亿美元收购欧洲最大私人 AI 实验室 Silo AI
 

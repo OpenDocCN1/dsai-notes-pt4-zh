@@ -1,3 +1,4 @@
+
 # 🎬 GenAI技术实践
 
 > 来源：[https://agijuejin.feishu.cn/docx/GJGmdTDuyobpNbx48yucKyPcnoh](https://agijuejin.feishu.cn/docx/GJGmdTDuyobpNbx48yucKyPcnoh)
@@ -8,12 +9,9 @@
 
 ## 嘉宾PPT
 
-
 [刘潇_GenAI 技术实践_1.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WrLLbAAFUoDvHmx7E3Cco3a3nPb)
 
-
 [林立凡&卢中延_GenAI 技术实践_3.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EH1pb3ClqoJCPuxUElBcQ30ZnhV)
-
 
 [薛克林顿_GenAI技术实践_终稿5.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gbu9bYekoocTEYxjoTMcgxAXnRc)
 

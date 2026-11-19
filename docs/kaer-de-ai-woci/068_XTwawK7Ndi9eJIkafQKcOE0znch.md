@@ -1,14 +1,15 @@
+
 # AI邪修创意广告提示语和高清视频
 
-> 来源：[https://aiwarts101.feishu.cn/docx/BoXKdlTZ1oFhqix6b1QchtgRncp](https://aiwarts101.feishu.cn/docx/BoXKdlTZ1oFhqix6b1QchtgRncp)
+> 来源：`https://aiwarts101.feishu.cn/docx/BoXKdlTZ1oFhqix6b1QchtgRncp`
 
-更多资料：https://aiwarts101.feishu.cn/wiki/XTwawK7Ndi9eJIkafQKcOE0znch?from=from_copylink
+更多资料：`https://aiwarts101.feishu.cn/wiki/XTwawK7Ndi9eJIkafQKcOE0znch?from=from_copylink`
 
 ---
 
-100个nano banana提示语合集
+100个`nano banana`提示语合集
 
-https://github.com/JimmyLv/awesome-nano-banana
+`https://github.com/JimmyLv/awesome-nano-banana`
 
 ```
 AI沃茨专属邀请码

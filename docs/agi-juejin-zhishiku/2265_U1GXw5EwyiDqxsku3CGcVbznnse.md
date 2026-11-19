@@ -1,3 +1,4 @@
+
 # 2023中国AIGC商业潜力研究报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/T2Xjdz1mBoO5JXxWyiic5W8nnmB](https://agijuejin.feishu.cn/docx/T2Xjdz1mBoO5JXxWyiic5W8nnmB)

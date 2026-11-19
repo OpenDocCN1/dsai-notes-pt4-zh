@@ -1,3 +1,4 @@
+
 # OECD 世界经合组织
 
 > 来源：[https://docs.feishu.cn/docx/Jk1hdw8IwoHonZxEYYLcNMkhn2d](https://docs.feishu.cn/docx/Jk1hdw8IwoHonZxEYYLcNMkhn2d)
@@ -6,7 +7,7 @@
 
 > AI Watch: Global regulatory tracker - OECD
 
-《 经合组织《关于人工智能的建议》解读》
+《经合组织《关于人工智能的建议》解读》
 
 经合组织数字经济政策委员会（CDEP）提议和同意，于2019年5月22日在经合组织理事会部长级会议上通过《关于人工智能的建议》（以下简称《建议》）。
 

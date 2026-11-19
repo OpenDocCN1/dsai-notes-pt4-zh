@@ -1,3 +1,4 @@
+
 # LangGPT 应用案例
 
 > 来源：[https://agijuejin.feishu.cn/docx/MGWSdJdtWoVTahx5UcncTfz7nAd](https://agijuejin.feishu.cn/docx/MGWSdJdtWoVTahx5UcncTfz7nAd)
@@ -10,15 +11,15 @@ https://kimi.moonshot.cn/kimiplus/conpg00t7lagbbsfqkq0
 
 ![](img/f19af0d9327389a708c3c50ec97270a1.png)
 
-## 字节跳动[-Coze.com](http://coze.com)
+## 字节跳动 Coze
 
-结构化提示词为字节旗下的 coze 平台推荐范式
+结构化提示词为字节旗下的 [Coze](http://coze.com) 平台推荐范式
 
 ![](img/0492337c8a4ed9ebe83299fd9c4088bb.png)
 
 Coze 为用户提供了免费的GPT3.5和GPT4！欢迎体验 www.coze.com ，详细介绍:
 
-## 53AI机器人角色背景[-53AI.com](https://53ai.com)
+## 53AI机器人角色背景
 
 53AI在上百家中大型企业的大模型落地应用中导入结构化提示词
 

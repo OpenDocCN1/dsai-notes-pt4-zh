@@ -1,16 +1,12 @@
+
 # 模型合并就进化，直接拿下SOTA！Transformer作者创业新成果火了
 
 > 来源：[https://agijuejin.feishu.cn/docx/WoJsdafqvoE1xYxIZB6c9KxKnAd](https://agijuejin.feishu.cn/docx/WoJsdafqvoE1xYxIZB6c9KxKnAd)
 
-英伟达科学家：最有想象力的论文
-
 > 丰色 发自 凹非寺
-
 > 量子位 | 👸号 QbitAI
 
-**把 Hu**ggingface 上的现成模型拿来 “攒一攒”——
-
-直接就能组合出新的强大模型？！
+把 Huggingface 上的现成模型拿来 “攒一攒”——直接就能组合出新的强大模型？！
 
 日本大模型公司 sakana.ai 脑洞大开（正是 “Transformer 八子” 之一所创办的公司），想出了这么一个进化合并模型的妙招。
 
@@ -20,7 +16,7 @@
 
 他们得到的一个 70 亿参数的日语数学大模型，直接在相关基准测试上取得了 SOTA，打败了 700 亿参数的 Llama-2 等前辈。
 
-最重要的是，得出这样的模型**不需要任何梯度训练**，因此需要的计算资源大大减少。
+最重要的是，得出这样的模型不需要任何梯度训练，因此需要的计算资源大大减少。
 
 英伟达科学家 Jim Fan 看完大赞：
 
@@ -78,15 +74,15 @@ Sakana.ai 介绍，开源基础模型很容易在数百个不同的方向上进�
 
 用以上进化合并方法，团队得到了 3 个基础模型：
 
-+   **大语言模型 EvoLLM-JP**
++ **大语言模型 EvoLLM-JP**
 
 由日语大模型 Shisa-Gamma 和数学大模型 WizardMath/Abel 合并而成，擅长解决日语数学问题，进化了 100-150 代。
 
-+   视觉语言模型 EvoVLM-JP
++ 视觉语言模型 EvoVLM-JP
 
 日语大模型 Shisa Gamma 7B v1+LLaVa-1.6-Mistral-7B，是具有日语能力的 VLM。
 
-+   图像生成模型 EvoSDXL-JP
++ 图像生成模型 EvoSDXL-JP
 
 支持日语的 SDXL 扩散模型。
 
@@ -94,7 +90,7 @@ Sakana.ai 介绍，开源基础模型很容易在数百个不同的方向上进�
 
 具体来看。
 
-**1、EvoLLM-JP**
+### 1、EvoLLM-JP
 
 它在 GSM8K 数据集的多语言版本——MGSM 的日语评估集上取得成绩如下：
 
@@ -104,7 +100,7 @@ Sakana.ai 介绍，开源基础模型很容易在数百个不同的方向上进�
 
 其中模型 4 是仅在参数空间进行了优化，模型 6 是使用模型 4 在数据流空间中进一步优化的结果。
 
-在既评估数据能力也评估一般日语能力的日语 lm-evaluation-harness 基准上，EvoLLM-JP 则在 9 个任务上的平均得分最高达到了 70.5——只用 70 亿参数，它就打败了 700 亿的 Llama-2 等模型。
+在既评估数据能力也评估一般日语能力的日语 `lm-evaluation-harness` 基准上，EvoLLM-JP 则在 9 个任务上的平均得分最高达到了 70.5——只用 70 亿参数，它就打败了 700 亿的 Llama-2 等模型。
 
 ![](img/21fe2c859b132fe49cb7a40212f5f333.png)
 
@@ -112,7 +108,7 @@ Sakana.ai 介绍，开源基础模型很容易在数百个不同的方向上进�
 
 比如需要特定日本文化知识的数学问题，或者用关西方言讲日本笑话。
 
-**2、EvoVLM-JP**
+### 2、EvoVLM-JP
 
 在以下两个图像问答的基准数据集上，分数越高，代表模型用日语回答的描述越准确。
 
@@ -124,7 +120,7 @@ Sakana.ai 介绍，开源基础模型很容易在数百个不同的方向上进�
 
 ![](img/1b89a568df1993fed3a1e87300b136bf.png)
 
-**3、EvoSDXL-JP**
+### 3、EvoSDXL-JP
 
 这个支持日语的 SDXL 模型只需 4 个扩散模型即可执行推理，生成速度相当快。
 
@@ -132,7 +128,7 @@ Sakana.ai 介绍，开源基础模型很容易在数百个不同的方向上进�
 
 可以欣赏一些示例：
 
-提示词包括：味噌ラーメン、最高品質の浮世絵、葛飾北斎、江戸時代。
+提示词包括：味噌ラーメン、最高品質の浮世絵、葛飾北斎、江戸时代。
 
 ![](img/064744e18d1283e1776b8e08e2a24955.png)
 
@@ -156,12 +152,12 @@ Jim Fan 也补充：
 
 论文地址：
 
-arxiv.org/abs/2403.13…
+`arxiv.org/abs/2403.13…`
 
 参考链接：
 
-[1]sakana.ai/evolutionar…
+[1] `sakana.ai/evolutionar…`
 
-[2]twitter.com/DrJimFan/st…
+[2] `twitter.com/DrJimFan/st…`
 
-[3]twitter.com/SakanaAILab…
+[3] `twitter.com/SakanaAILab…`

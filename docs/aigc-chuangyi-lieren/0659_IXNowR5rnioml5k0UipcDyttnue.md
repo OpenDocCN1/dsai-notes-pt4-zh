@@ -1,8 +1,10 @@
+
 # 用GPT生成SD Prompt
 
 > 来源：[https://aigcreative.feishu.cn/docx/U6nKdLqqsoGa2MxvixfcPQmvnYg](https://aigcreative.feishu.cn/docx/U6nKdLqqsoGa2MxvixfcPQmvnYg)
+> 原文链接：`https://gitee.com/aceysx/images/blob/master/ChatGPT_SD_Prompt#`
 
-> 原文链接：https://gitee.com/aceysx/images/blob/master/ChatGPT_SD_Prompt#
+## Stable Diffusion Prompt 模板
 
 ```
 # Stable Diffusion prompt 助理
@@ -61,6 +63,8 @@ Stable Diffusion是一款利用深度学习的文生图模型，支持通过使�
 
 我的第一个主题是： 未来城市
 ```
+
+## SD 提示工程师角色定义
 
 ```
 Role:sD提示工程师

@@ -1,3 +1,4 @@
+
 # 提升表单设计效果的 18 个技巧
 
 > 来源：[https://leonzhang.feishu.cn/docx/G7ePdk5CTo3Nd5xsCRwcn5Kqn0g](https://leonzhang.feishu.cn/docx/G7ePdk5CTo3Nd5xsCRwcn5Kqn0g)
@@ -66,7 +67,7 @@
 
 ![](img/4e1589234495ac9ab3256450c40c4a23.png)
 
-## **十、谨慎使用下拉菜单**
+## 十、谨慎使用下拉菜单
 
 当已知的选项较少 （≤3），建议使用单选按钮，平铺完全展现出来的选项会让用户心理更安全，用户更能清晰的了解自己面对的选项，而不是面对未知的选项。较少平铺的单选按钮，也会提升用户的操作效率。
 
@@ -120,8 +121,8 @@
 
 ![](img/db006c38e230b7762086a7a9ca1ee0aa.png)
 
-**参考文献：**
+## 参考文献
 
-https://medium.muz.li/15-tips-for-better-ui-forms-744febd107f9
+[https://medium.muz.li/15-tips-for-better-ui-forms-744febd107f9](https://medium.muz.li/15-tips-for-better-ui-forms-744febd107f9)
 
 > 🔗 原文链接：提升表单设计效果的 18 个技巧 | 人人都是产品经理

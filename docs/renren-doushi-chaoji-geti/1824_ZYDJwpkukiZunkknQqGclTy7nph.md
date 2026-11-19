@@ -1,14 +1,13 @@
-# 2023-09-18Openflow 一键极速绘图，赋能行业工作流
+
+# 2023-09-18 Openflow 一键极速绘图，赋能行业工作流
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/WJGadHIk8owymOxiQl7cWKTFnW2](https://xuqiwei1986.feishu.cn/docx/WJGadHIk8owymOxiQl7cWKTFnW2)
-
->
 
 大家好，我是秋天。AI破局俱乐部合伙人。国企技术经理，正在用AI探索私域变现，主要关注AI+编程、AI+👸号、AI+提示词等领域。
 
 今天刚看到一则AI方向的分享，特分享到星球，希望对大家有所帮助。
 
-链接：https://www.aijiaolian.chat/midjourney?puid=8101
+链接：`https://www.aijiaolian.chat/midjourney?puid=8101`
 
 这个工具提供专业的AIGC生成式绘画服务。通过简单地输入描述文字，或者直接上传图片，用户可以两步快速完成各种AI绘画、AI绘图和AI设计。
 

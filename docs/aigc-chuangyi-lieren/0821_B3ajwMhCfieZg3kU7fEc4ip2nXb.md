@@ -1,16 +1,17 @@
+
 # Claude Code 实战指南：从0到1解锁Plug-In系统，打造专属你的“超级平台” (附完整步骤)
 
 > 来源：[https://aigcreative.feishu.cn/docx/Edijd00EMoRoVRx6ALJc79qIn1f](https://aigcreative.feishu.cn/docx/Edijd00EMoRoVRx6ALJc79qIn1f)
 
 > 来源：https://x.com/0xYuker/status/2012013846286745675
 
-在过去的文章中，我们已经初步接触了Skills，Sub-Agent，MCP，CLAUDE.md 和安全设置。大家应该已经使用上Claude Code来完成各式各样炫酷的功能了。如果我告诉你，你很可能只发挥了它10%的功力，一个"出厂默认设置"的功力呢？
+在过去的文章中，我们已经初步接触了`Skills`，`Sub-Agent`，`MCP`，`CLAUDE.md` 和安全设置。大家应该已经使用上Claude Code来完成各式各样炫酷的功能了。如果我告诉你，你很可能只发挥了它10%的功力，一个"出厂默认设置"的功力呢？
 
-Claude Code 简洁的对话框之下**，隐藏着**一个庞大而精密的"扩展宇宙"——插件系统。它能让你的 Claude 从一个"听话的工具"进化成一个"懂你的伙伴"。大多数人从未踏足这个领域，就像守着一座金山，却只在山脚捡了几块碎石。
+Claude Code 简洁的对话框之下，隐藏着一个庞大而精密的"扩展宇宙"——插件系统。它能让你的 Claude 从一个"听话的工具"进化成一个"懂你的伙伴"。大多数人从未踏足这个领域，就像守着一座金山，却只在山脚捡了几块碎石。
 
 这篇文章，就是你唤醒那沉睡90%潜能的钥匙。我们将彻底告别"隔靴搔痒"式的介绍，带你从一个插件的"消费者"，一步步进阶为"创造者"。
 
-**今天我们要介绍 Claude Cod**e 鲜为人知的功能 -- PlugIn。
+今天我们要介绍 Claude Code 鲜为人知的功能 -- PlugIn。
 
 # 你的Claude Code不是工具，是平台
 
@@ -18,27 +19,23 @@ Claude Code 简洁的对话框之下**，隐藏着**一个庞大而精密的"扩
 
 要理解插件，我们必须先修正一个观念：要把 Claude Code 看作一个封闭的软件，而要把它看作一个像 iOS 或 Android 一样的开放平台。
 
-> 简单来说，**Plugin**** 就是一**套把“Skills**”，“M**CP”，“Sub-agent”等功能组件，打包好供你下载的“应用”
+> 简单来说，`Plugin` 就是一套把“`Skills`”，“`MCP`”，“`Sub-agent`”等功能组件，打包好供你下载的“应用”
 
-插件 (Plugin)，就是这个平台的"APP"。 市场 (Marketplace)，就是下载这些APP的"应用商店"。
+插件 (`Plugin`)，就是这个平台的"APP"。 市场 (Marketplace)，就是下载这些APP的"应用商店"。
 
 手机出厂时自带电话、短信功能，但真正让它无所不能的是🛰️、支付宝、高德地图等无数的APP。 同理，Claude Code 自带的编程能力是基础，而插件则可以为它安装上无穷无尽的、针对特定场景的"超能力"。
 
-🖥️最**重要的是，在团队合作中，Plug-In的转移与交**接会比Skills来得更加方便和彻底！
+🖥️最重要的是，在团队合作中，`Plug-In`的转移与交接会比`Skills`来得更加方便和彻底！
 
 一个插件可以包含五种核心组件，它们共同构成了这个强大的生态系统：
 
-+   **命令（Commands）**：你主动下达的指令，如 /deploy
++ `命令（Commands）`：你主动下达的指令，如 `/deploy`
++ `技能（Skills）`：它根据上下文自动出发的能力
++ `钩子（Hooks）`：在特定事件发生时自动执行的脚本，实现“无人值守”的自动化。
++ `子代理（Sub-Agent）`：专精于某一领域的“子人格”，让Claude 能够分身处理复杂人物。
++ `MCP服务器`：外部工具和服务集成
 
-+   **技能（Skills）**：它根据上下文自动出发的能力
-
-+   **钩子（Hooks）**：在特定事件发生时自动执行的脚本，实现“无人值守”的自动化。
-
-+   **子代理（Sub-Agent）**：专精于某一领域的“子人格”，让Claude 能够分身处理复杂人物。
-
-+   **MCP服务器**：外部工具和服务集成
-
-现在，你可能还有点混乱。别急，这**趟旅程的下一站，我们将**亲手为我们的"平台"安装第一个"APP"。
+现在，你可能还有点混乱。别急，这趟旅程的下一站，我们将亲手为我们的"平台"安装第一个APP。
 
 # 三步为你的Claude安装“超能力”
 
@@ -46,13 +43,11 @@ Claude Code 简洁的对话框之下**，隐藏着**一个庞大而精密的"扩
 
 ## 第一步：链接“应用商店”
 
-> 如果你的Plug-in里面已经存在官方市场，则可以省略这一步骤。
+> 如果你的`Plug-in`里面已经存在官方市场，则可以省略这一步骤。
 
 首先，我们需要告诉 Claude 去哪里寻找这些"APP"。在 Claude Code 的对话框中，输入并执行以下命令：
 
-bash
-
-```
+```bash
 /plugin marketplace add anthropics/claude-code
 ```
 
@@ -62,37 +57,33 @@ bash
 
 ## 第二步：挑选并安装你的第一个插件
 
-对于新手，最友好的方式是使用交互式菜单。只需输入 /plugin：
+对于新手，最友好的方式是使用交互式菜单。只需输入 `/plugin`：
 
-**Claude 会为你呈现一**个菜单。选择"Discover"，你就可以像逛应用商店一样，查看市场里所有可用的插件及其详细介绍。找到一个你感兴趣的（比如 Figma 自动化写代码），选择安装即可。
+Claude 会为你呈现一个菜单。选择Discover，你就可以像逛应用商店一样，查看市场里所有可用的插件及其详细介绍。找到一个你感兴趣的（比如 Figma 自动化写代码），选择安装即可。
 
-**当然，如果你是**效率至上的"老手"，可以直接通过命令安装。格式是 插件名@市场名。例如：
+当然，如果你是效率至上的"老手"，可以直接通过命令安装。格式是 `插件名@市场名`。例如：
 
-bash
-
-```
+```bash
 /plugin install your-plugin@your-org
 ```
 
-## 第三步：验证 Plug-In 是否生效
+## 第三步：验证 `Plug-In` 是否生效
 
-输入 /Plugin 后，点击 Tab 找到 Install 界面。
+输入 `/Plugin` 后，点击 Tab 找到 Install 界面。
 
-如果在这里没有显示错误，那就可以尝试在输入框直接输入 / ，看看能否找到相应的命令。
+如果在这里没有显示错误，那就可以尝试在输入框直接输入 `/` ，看看能否找到相应的命令。
 
-**这里以Notion为例**，如果能够看到有相应的Notion指令出现，那就代表已经安装成功啦！（取决于Plug-In本身是否包含Command）
+这里以Notion为例，如果能够看到有相应的Notion指令出现，那就代表已经安装成功啦！（取决于`Plug-In`本身是否包含`Command`）
 
-如果涉及到需要链接MCP的Plug-in，需要先进行验证，确保MCP链接上了才能运行。
+如果涉及到需要链接`MCP`的`Plug-in`，需要先进行验证，确保`MCP`链接上了才能运行。
 
-# 从文档结构，深入了解 Plug-In
+# 从文档结构，深入了解 `Plug-In`
 
-想要清晰的了解 Plug-In 与其他功能之间的区别，最直观的方式，便是查看他们的文档结构，以此来了解他们之间的差异
+想要清晰的了解 `Plug-In` 与其他功能之间的区别，最直观的方式，便是查看他们的文档结构，以此来了解他们之间的差异
 
-## 3.1 Plug-In 文档结构
+## 3.1 `Plug-In` 文档结构
 
-markdown
-
-```
+```markdown
 my-plugin/                                                               
   ├── .claude-plugin/          # 必需：元数据目录                          
   │   └── plugin.json          # 必需：清单文件                            
@@ -111,45 +102,41 @@ my-plugin/
   └── README.md    
 ```
 
-从文档结构上来看，就很直观的能够认识到 Plug**-**in 与 Skills 之间的区别了，Skills 是Plug-In的下位概念，而Plug-In则是Skills，MCP，Sub-Agent的上位概念。
+从文档结构上来看，就很直观的能够认识到 `Plug-in` 与 `Skills` 之间的区别了，`Skills` 是`Plug-In`的下位概念，而`Plug-In`则是`Skills`，`MCP`，`Sub-Agent`的上位概念。
 
-## 3.2 以Notion Plug-In为例
+## 3.2 以Notion `Plug-In`为例
 
-**可以看到，N**otion的Plug-In主要包含了三个功能组件
+可以看到，Notion的`Plug-In`主要包含了三个功能组件
 
-+   **命令（Commands）**：包含了六个不同的核心功能命令
++ `命令（Commands）`：包含了六个不同的核心功能命令
++ `技能（Skills）`：包含了四个主要的`Skills`
 
-+   **技能（Skills）**：包含了四个主要的Skills
+> `MCP`：一个`MCP`的 `Json` 格式文件
 
-> **MCP**：一个MCP的 Json 格式文件
+> 这么看就很好理解了！Notion 的 `Plug-In`，就是一个使用了 `Skills`，`Command` 和 `MCP` 功能的APP！
 
-> **这**么看就很好理解了！Notion 的 Plug-In，就是一个使用了 Skills，Command 和 MCP 功能的APP！
+这下各位应该能够理解，`Plug-In` 和 `Skills` 之间的具体区别是什么，以及为什么它能够更有效的在团队内部流转了！
 
-这下各位应该能够理解，Plug-In 和 Skills 之间的具体区别是什么，以及为什么它能够更有效的在团队内部流转了！
-
-那事不宜迟，我们马上开始动手做我们的第一个Plug-In。
+那事不宜迟，我们马上开始动手做我们的第一个`Plug-In`。
 
 # 从0到1，打造你的第一个插件
 
 > "如果有个APP能帮我做 XXX 就好了。"
 
-当这个念头出现时，就是你从**用户蜕变为创造者****的最佳时机。让我**们创建一个最简单的"问候插件"，它只包含一个 /summary 命令，但足以让你跑通完整的开发流程。
+当这个念头出现时，就是你从用户蜕变为创造者的最佳时机。让我们创建一个最简单的"问候插件"，它只包含一个 `/summary` 命令，但足以让你跑通完整的开发流程。
 
 这次我们的最小可执行架构如下，大家可以先有一个概念：
 
 🔥如果准备好了，那我们就开始吧！下面教学分为两步：
 
-+   **邪修**：让Claude Code帮你生成，适合不想了解具体细节的读者
-
-+   **详细步骤**：逐步教你创建，适合想要了解具体细节的读者。
++ `邪修`：让Claude Code帮你生成，适合不想了解具体细节的读者
++ `详细步骤`：逐步教你创建，适合想要了解具体细节的读者。
 
 ## 1️⃣方式一：邪修👹
 
 这一步很简单，只需要让 Claude Code 帮你创建即可，模板如下：
 
-markdown
-
-```
+```markdown
 帮我创建一个完整的 Claude Code 测试插件环境：
 1. 插件信息：
    - 名称：my-first-plugin
@@ -166,17 +153,15 @@ markdown
 请先在互联网搜索「Claude Code plugin structure」和「Claude Code marketplace.json」，了解最新的插件目录规范。
 ```
 
-> 恭喜你🎉你可以直接跳去第四步了（这就Agent的威力）
+> 恭喜你🎉你可以直接跳去第四步了（这就`Agent`的威力）
 
 ## 2️⃣方式二：按部就班
 
-## 第一步：创建“蓝图”（目录与清单）
+### 第一步：创建“蓝图”（目录与清单）
 
 首先，我们需要为插件搭建骨架。打开你的终端，依次执行：
 
-markdown
-
-```
+```markdown
 # 1. 创建一个市场目录，用于存放你的所有插件
 mkdir my-marketplace
 cd my-marketplace
@@ -189,11 +174,9 @@ cd hello-plugin
 mkdir .claude-plugin
 ```
 
-**然后创建 .claude-plugin/**plugin.json 文件，内容如下：
+然后创建 `.claude-plugin/plugin.json` 文件，内容如下：
 
-json
-
-```
+```json
 {
   &quot;name&quot;: &quot;summary-plugin&quot;,
   &quot;description&quot;: &quot;A plugin that adds /summary command to summarize user input text&quot;,
@@ -204,26 +187,22 @@ json
 }
 ```
 
-> **核心知识：**
+> 核心知识：
 
-> plugin.json 是每个插件的"身份证"，它告诉 Claude 这个插件叫什么、版本多少、作者是谁。name 字段必须使用 kebab-case（小写字母加连字符）格式。
+> `plugin.json` 是每个插件的"身份证"，它告诉 Claude 这个插件叫什么、版本多少、作者是谁。`name` 字段必须使用 `kebab-case`（小写字母加连字符）格式。
 
-## 第二步：添加"功能"（创建命令文件）
+### 第二步：添加"功能"（创建命令文件）
 
-接下来，我们为插件添加 /summary 命令。
+接下来，我们为插件添加 `/summary` 命令。
 
-bash
-
-```
+```bash
 # 4. 创建存放命令的目录
 mkdir commands
 ```
 
-然后创建 commands/hello.md 文件，内容如下：
+然后创建 `commands/hello.md` 文件，内容如下：
 
-markdown
-
-```
+```markdown
 ---
 description: Greet the user with a personalized message
 ---
@@ -232,21 +211,19 @@ description: Greet the user with a personalized message
 Greet the user warmly and ask how you can help them today.
 ```
 
-> **核心知识：**
+> 核心知识：
 
-> commands 目录是存放所有自定义命令的地方。文件名决定了命令名（hello.md 对应 /hello）。文件内容是 Markdown 格式，--- 包围的部分是元数据，正文则是给 Claude 的指令，告诉它执行这个命令时该做什么。
+> `commands` 目录是存放所有自定义命令的地方。文件名决定了命令名（`hello.md` 对应 `/hello`）。文件内容是 Markdown 格式，`---` 包围的部分是元数据，正文则是给 Claude 的指令，告诉它执行这个命令时该做什么。
 
-## 第三步：上架“应用商城”（创建市场清单）
+### 第三步：上架“应用商城”（创建市场清单）
 
 现在，插件本身已经做好了，我们需要把它"上架"到我们自己的本地市场里。
 
-**在这个文件夹里面，创建一个“.cla**ude-plugin”文件夹。
+在这个文件夹里面，创建一个“`.claude-plugin`”文件夹。
 
-然后再文件夹内创建一个 “marketplace.json”文件，内容如下：
+然后在文件夹内创建一个 “`marketplace.json`”文件，内容如下：
 
-json
-
-```
+```json
 {
   &quot;name&quot;: &quot;test-marketplace&quot;,
   &quot;owner&quot;: {
@@ -271,58 +248,58 @@ json
 }
 ```
 
-> **核心知识：**
+> 核心知识：
 
-> marketplace.json 文件定义了这个市场里有哪些插件。source 字段指明了插件的存放路径。
+> `marketplace.json` 文件定义了这个市场里有哪些插件。`source` 字段指明了插件的存放路径。
 
-## 第四步：安装并测试你的"作品"
+### 第四步：安装并测试你的"作品"
 
-**万事俱备！现在，启动 Claude Code，**输入以下指令添加Marketplace：
+万事俱备！现在，启动 Claude Code，输入以下指令添加Marketplace：
 
-bash
-
-```
+```bash
 /plugin marketplace add ./my-marketplace
 ```
 
-重启Claude Code后，激动人心的时刻来了！在对话框输入 /plugin ，然后选择Marketplace，你就能找到自己的Marketplace，并且里面有属于你自己创造的插件！
+重启Claude Code后，激动人心的时刻来了！在对话框输入 `/plugin` ，然后选择Marketplace，你就能找到自己的Marketplace，并且里面有属于你自己创造的插件！
 
 恭喜你！你已经完成了从0到1的创造。这个简单的插件只是一个开始，你已经掌握了打造复杂工具的钥匙。
 
 # 团队协作——让所有人用上同一套工具
 
-**当你的插件足够成熟，你可能会想把它分**享给团队。插件系统为此提供了完善的机制。
+当你的插件足够成熟，你可能会想把它分享给团队。插件系统为此提供了完善的机制。
 
 ## 方式一：托管到 GitHub（推荐）
 
-**将你的市场目录推送到 GitHu**b 仓库，团队成员只需一条命令即可添加：
+将你的市场目录推送到 GitHub 仓库，团队成员只需一条命令即可添加：
 
-bash
-
-```
+```bash
 /plugin marketplace add your-org/your-marketplace
 ```
 
 ## 方式二：项目级配置
 
-**更优雅的方式是将插件配置写入项目的 .clau**de/settings.json 文件：
+更优雅的方式是将插件配置写入项目的 `.claude/settings.json` 文件：
 
-json
+```json
 
 ```
-{                                                                                     
-    &quot;extraKnownMarketplaces&quot;: {                                                         
-      &quot;team-tools&quot;: {                                                                   
-        &quot;source&quot;: {                                                                     
-          &quot;source&quot;: &quot;github&quot;,                                                           
-          &quot;repo&quot;: &quot;your-org/claude-plugins&quot;                                             
-        }                                                                               
-      }                                                                                 
-    },                                                                                  
-    &quot;enabledPlugins&quot;: {                                                                 
-      &quot;code-formatter@team-tools&quot;: true,                                                
-      &quot;deploy-tools@team-tools&quot;: true                                                   
-    }                                                                                   
+
+
+
+```json
+{
+    "extraKnownMarketplaces": {
+      "team-tools": {
+        "source": {
+          "source": "github",
+          "repo": "your-org/claude-plugins"
+        }
+      }
+    },
+    "enabledPlugins": {
+      "code-formatter@team-tools": true,
+      "deploy-tools@team-tools": true
+    }
   }
 ```
 

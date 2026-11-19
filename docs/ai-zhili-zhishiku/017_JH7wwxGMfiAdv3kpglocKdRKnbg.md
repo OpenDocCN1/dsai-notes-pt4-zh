@@ -1,3 +1,4 @@
+
 # 国际层面
 
 > 来源：[https://docs.feishu.cn/docx/MOKHdFWMGokBVwxh5OEceJ6Lnfc](https://docs.feishu.cn/docx/MOKHdFWMGokBVwxh5OEceJ6Lnfc)
@@ -28,7 +29,7 @@ Organisation for Economic Co-operation and Development (OECD) Recommendation onA
 
 ## 布莱切利宣言（The Bletchley Declaration）
 
-2023年11月1日，首届全球人工智能（AI）安全峰会在英国拉开帷幕，为期两天的会议在布莱切利庄**园举行，包括中国、美国、英国和欧盟在内的超25个**国家代表，以及马斯克、OpenAI创始人兼CEO阿尔特曼等科技巨头与会。11月1日，与会国签署“布莱切利宣言”，同意通过国际合作，建立人工智能（AI）监管方法。
+2023年11月1日，首届全球人工智能（AI）安全峰会在英国拉开帷幕，为期两天的会议在布莱切利庄园举行，包括中国、美国、英国和欧盟在内的超25个国家代表，以及马斯克、OpenAI创始人兼CEO阿尔特曼等科技巨头与会。11月1日，与会国签署“布莱切利宣言”，同意通过国际合作，建立人工智能（AI）监管方法。
 
 ![](img/3dd09ee23f1277f244b024a3435086d8.png)
 
@@ -58,7 +59,7 @@ Organisation for Economic Co-operation and Development (OECD) Recommendation onA
 
 +   其他报道：《智谱AI作为唯一中国公司签署首尔AI安全峰会“前沿人工智能安全承诺”》
 
-+   来自北美、亚洲、欧洲和中东地区的16家公司就人工智能开发的安全承诺达成一致——签署前沿人工智能安全承诺（Frontier AI Safety Commitments）。签署协议的公司包括OpenAI、谷歌DeepMind和Anthropic、微软、亚马逊、IBM和Meta，智谱AI()作为唯一一家中国公司也签署了承诺。
++   来自北美、亚洲、欧洲和中东地区的16家公司就人工智能开发的安全承诺达成一致——签署前沿人工智能安全承诺（Frontier AI Safety Commitments）。签署协议的公司包括OpenAI、谷歌DeepMind和Anthropic、微软、亚马逊、IBM和Meta，智谱AI作为唯一一家中国公司也签署了承诺。
 
 ## 国际人工智能公约（《AI公约》）
 

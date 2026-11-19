@@ -1,3 +1,4 @@
+
 # MCP 蓝图：背景、基础、架构和实际用途（B部分）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/O3UKdio6doJzQzxsGWKcPuVXnPg](https://v11enp9ok1h.feishu.cn/docx/O3UKdio6doJzQzxsGWKcPuVXnPg)
@@ -22,13 +23,13 @@ MCP 服务器可以向客户端公开一个或多个功能。
 
 功能本质上是服务器提供的特性或功能。MCP 标准目前定义了四大类功能：
 
-1.  工具→AI（主机/客户端）可以调用的可执行操作或功能（通常具有副作用或外部 API 调用）。
+1. 工具→AI（主机/客户端）可以调用的可执行操作或功能（通常具有副作用或外部 API 调用）。
 
-1.  资源→AI（主机/客户端）可以查询信息的只读数据源（无副作用，仅检索）。
+1. 资源→AI（主机/客户端）可以查询信息的只读数据源（无副作用，仅检索）。
 
-1.  提示→服务器可以提供的预定义提示模板或工作流。
+1. 提示→服务器可以提供的预定义提示模板或工作流。
 
-1.  采样 → 服务器可以通过该机制请求 AI（客户端/主机）执行 LLM 操作，通常用于实现更高级的多步骤交互。此功能支持诸如自我反思和迭代推理等功能。本课程的后续部分将更深入地探讨采样。
+1. 采样 → 服务器可以通过该机制请求 AI（客户端/主机）执行 LLM 操作，通常用于实现更高级的多步骤交互。此功能支持诸如自我反思和迭代推理等功能。本课程的后续部分将更深入地探讨采样。
 
 让我们详细分析一下：
 
@@ -44,19 +45,19 @@ MCP 服务器可以向客户端公开一个或多个功能。
 
 ```
 @mcp.tool()
-def get_weather(location: str) -&gt; dict:
-    &quot;&quot;&quot;Get the current weather for a specified location.&quot;&quot;&quot;
+def get_weather(location: str) -> dict:
+    """Get the current weather for a specified location."""
     # (In a real implementation, call an external weather service)
     return {
-        &quot;temperature&quot;: 72,
-        &quot;conditions&quot;: &quot;Sunny&quot;,
-        &quot;humidity&quot;: 45
+        "temperature": 72,
+        "conditions": "Sunny",
+        "humidity": 45
     }
 ```
 
-这个 Python 函数已在 中注册@mcp.tool()，可以由 AI 通过 MCP 调用。
+这个 Python 函数已在 中注册`@mcp.tool()`，可以由 AI 通过 MCP 调用。
 
-当AItools/call以名称"get_weather"和{"location": "San Francisco"}作为参数调用时，服务器将执行get_weather("San Francisco")并返回字典结果。
+当 AI `tools/call` 以名称`get_weather`和`{"location": "San Francisco"}`作为参数调用时，服务器将执行`get_weather("San Francisco")`并返回字典结果。
 
 客户端将获取 JSON 结果并将其提供给 AI。请注意，该工具返回的是结构化数据（温度、条件），然后 AI 可以使用或口头表达（生成响应）这些信息。
 
@@ -64,7 +65,7 @@ def get_weather(location: str) -&gt; dict:
 
 ![](img/24bc80df5c588877094f503a6216e0cf.png)
 
-例如，Claude 的客户端可能会在第一次使用时弹出“AI 想要使用‘get_weather’工具，请允许/否？”的提示，以避免滥用。这确保了人类仍然能够掌控强大的操作。
+例如，Claude 的客户端可能会在第一次使用时弹出“AI 想要使用`get_weather`工具，请允许/否？”的提示，以避免滥用。这确保了人类仍然能够掌控强大的操作。
 
 工具类似于经典函数调用中的“函数”，但在 MCP 下，它们在更灵活、更动态的环境中使用。
 

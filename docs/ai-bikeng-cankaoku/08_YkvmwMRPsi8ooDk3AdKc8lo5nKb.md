@@ -1,3 +1,4 @@
+
 # 如何驾驭 ChatGPT：掌控有效对话！
 
 > 来源：[https://docs.feishu.cn/docx/CYRtdMpBXo4HyixrA4ocE3pjnFb](https://docs.feishu.cn/docx/CYRtdMpBXo4HyixrA4ocE3pjnFb)
@@ -11,14 +12,12 @@
 ## 观点
 
 +   要确保你的问题在AI的理解范围内，灵魂拷问往往效果不好。
-
 +   提示词工程的目标是找出最有效的提问或指令方式，以使AI生成最符合预期的回答。
-
 +   评估回答正确、好坏需要依赖于人类的主观反馈，但是可以尝试让 AI 自己评估自己的回答并提出改进建议。
 
 ## 正文
 
-豆茉君发现，想要与 ChatGPT 进行有效对话，关键在于三个步骤：
+豆茉君发现，想要与 ChatGPT 进行有效对话，关键在于三个步骤：
 
 一、因材施教，提出适宜的问题
 

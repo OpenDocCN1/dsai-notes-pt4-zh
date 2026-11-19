@@ -1,8 +1,9 @@
+
 # 2023-07-08--0代码微调大模型火了，只需5步，成本低至150块
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/K8DGdCniBoerHbxJuKjcudJ7nnh](https://xuqiwei1986.feishu.cn/docx/K8DGdCniBoerHbxJuKjcudJ7nnh)
 
-https://monsterapi.ai/
+`https://monsterapi.ai/`
 
 0代码微调一个大模型，成本不到20美元（人民币约144元）？
 
@@ -12,7 +13,7 @@ https://monsterapi.ai/
 
 ![](img/c4ec2eaba30819444bb287d39ba72dba.png)
 
-这就是**Monster ****API**，一个最新火起来的API平台。
+这就是 Monster API，一个最新火起来的API平台。
 
 ![](img/57d2647cf0bb22ac0c3130e2f693779a.png)
 
@@ -22,7 +23,7 @@ https://monsterapi.ai/
 
 所以，它具体是怎么实现的？
 
-## **五步零代码搞定**
+## 五步零代码搞定
 
 简单理解，Monster API就是将微调步骤尽可能简易化，让开发者不用再手动进行一系列设置，同时也提供便宜的GPU资源及内存优化。
 
@@ -62,7 +63,7 @@ Monster API表示可以通过WandB上的日志来监测任务。
 
 ![](img/59d461854b227fcb0bef9d2a7e021833.png)
 
-## **背后公司已获110万美元融资**
+## 背后公司已获110万美元融资
 
 消息显示，Monster API背后公司拿下了**110万美元**的种子前资金（pre-seed funding）。
 
@@ -80,6 +81,6 @@ Saurabh Vij之前是欧洲核研究中心的粒子物理学家，同时也研究
 
 参考链接：
 
-[1]https://blog.monsterapi.ai/no-code-fine-tuning-llm/
+[1] `https://blog.monsterapi.ai/no-code-fine-tuning-llm/`
 
-[2]https://www.enterpriseai.news/2023/06/09/monster-api-launches-the-airbnb-of-gpus-with-1-1m-pre-seed/
+[2] `https://www.enterpriseai.news/2023/06/09/monster-api-launches-the-airbnb-of-gpus-with-1-1m-pre-seed/`

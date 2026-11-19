@@ -1,3 +1,4 @@
+
 # 剪映PC版：5.9/6.1屏蔽自动更新
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/J7LTdSdn9ouQtxx9R5dc0Pwhn2g](https://xodnytdcaw.feishu.cn/docx/J7LTdSdn9ouQtxx9R5dc0Pwhn2g)
@@ -14,9 +15,9 @@
 
 ### 禁用继承
 
-+   打开文件夹“5.9.0.11632”
++ 打开文件夹`5.9.0.11632`
 
-+   找到“update.exe”文件，右键属性
++ 找到`update.exe`文件，右键属性
 
 依次安全-Authenticated-高级-Administrators-禁用继承-从此对象中删除所有已继承的权限
 
@@ -26,15 +27,15 @@
 
 ![](img/492fb66177250b7df52af586edbc5514.png)
 
-4.发送快捷方式到桌面
+4. 发送快捷方式到桌面
 
-打开文件夹“5.9.0.11632”，发送“JianyingPro.exe”到桌面快捷方式
+打开文件夹`5.9.0.11632`，发送`JianyingPro.exe`到桌面快捷方式
 
 ## 6.1版本
 
 ### 下载FirewallApp Blocker
 
-打开软件，点击右上角“+”，选择“5.9.0.11632”文件夹路径，选中加载“update.exe”程序，
+打开软件，点击右上角“+”，选择`5.9.0.11632`文件夹路径，选中加载`update.exe`程序
 
 ![](img/f9bba217e5a8ec34afe64e4061a94bcd.png)
 
@@ -50,9 +51,9 @@
 
 > 剪映PC(9.7.1)
 
-> https://www.capcut.cn/
+> `https://www.capcut.cn/`
 
-> 剪影小工具：[夸克网盘](https://pan.quark.cn/s/b72bfe9bcb3f)  [迅雷云盘](https://pan.xunlei.com/s/VOglleLdbUop6aE0RCdYo3uBA1?pwd=u6pp)  [迅雷浏览器](https://pan.xunlei.com/x/VOgloc0RHExrELOe77uRc-TTA1?pwd=x94x#)
+> 剪影小工具：[夸克网盘](https://pan.quark.cn/s/b72bfe9bcb3f) [迅雷云盘](https://pan.xunlei.com/s/VOglleLdbUop6aE0RCdYo3uBA1?pwd=u6pp) [迅雷浏览器](https://pan.xunlei.com/x/VOgloc0RHExrELOe77uRc-TTA1?pwd=x94x#)
 
 ### 使用步骤
 
@@ -62,21 +63,21 @@
 
 ![](img/8f01d692a563e66e662fe8e78fafe050.png)
 
-#### **新建复合片段（子草稿）**
+#### 新建复合片段（子草稿）
 
-正常剪辑完成后，选择**新建复合片段（子草稿）**
+正常剪辑完成后，选择新建复合片段（子草稿）
 
 ![](img/1c2cf47a09256a2e24e401a7e2b7bfe6.png)
 
-#### **预合成复合片段（子草稿）**
+#### 预合成复合片段（子草稿）
 
-然后右击新建好的复合片段，选择**预合成复合片段（子草稿），****完成后这个****删除****里面所有内容**
+然后右击新建好的复合片段，选择预合成复合片段（子草稿），完成后这个删除里面所有内容
 
 ![](img/0cbc2734f19519a2a43800c853070574.png)
 
-#### 导入**预合成复合片段（子草稿）**
+#### 导入预合成复合片段（子草稿）
 
-**剪影小工具双击编辑的草**稿，会打开combination文件夹，把里面预合成复片段导入剪影里。
+剪影小工具双击编辑的草稿，会打开`combination`文件夹，把里面预合成复片段导入剪影里。
 
 ![](img/cff11800c2edc7e68a4f6de3d7d976ac.png)
 

@@ -1,18 +1,18 @@
+
 # 不懂前端也没关系，trae 10分钟就能帮你写一个还不错的页面~
 
 > 来源：[https://agijuejin.feishu.cn/docx/XPYydsqq8ohwShx0bQzc5GN7nJh](https://agijuejin.feishu.cn/docx/XPYydsqq8ohwShx0bQzc5GN7nJh)
-
 > 作者：lybtt
-
 > 链接：https://juejin.cn/post/7462733343765037119
-
 > 来源：稀土掘金
-
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 > 如有侵权，请联系删除。
 
-**我正在参加Trae「超级体验官」创意实践征文， **本文所使用的 Trae 免费下载链接： www.trae.ai/?utm_source…
+## 活动声明
+
+我正在参加Trae「超级体验官」创意实践征文，本文所使用的 Trae 免费下载链接：`www.trae.ai/?utm_source…`
+
+## Trae 初体验
 
 今天来试一试trae，从下图的配置导入界面不难看出，这个就是来对标cursor的。cursor最近几个月在圈内很火，优秀的产品特性和用户体验获得了很多程序员的认可，也是在不断的融资。面对这个趋势，大厂想要进来分一杯羹也很正常，这不，字节来了~
 
@@ -25,6 +25,8 @@
 对话界面很常规，没什么好说的，这里和cursor不同的是，cursor引用是在对话框上面的+号，trae是对话框下面的#号。然后对话框有一个比较酷炫的动效，挺好看的。
 
 ![](img/ac029589810fda35d38ac63992e9e284.png)
+
+## Builder 界面实践
 
 OK，对话直接跳过吧，我们来到builder界面。快过年了，我就让他给我写一个简单的春联吧。这个地方的交互还是不错的，能点击直接运行命令。
 
@@ -46,7 +48,7 @@ OK，对话直接跳过吧，我们来到builder界面。快过年了，我就�
 
 ![](img/98e06a107c19fbe1360a84e07059f0e3.png)
 
-总结
+## 总结
 
 不过不得不说，和cursor对比，我只能说大厂还是大厂，字节还是字节，审美是强很多，无论是对话框的动态效果还是整体UI/UX设计，都彰显出了高水平的艺术感和技术实力，可能人多力量大吧，如果trae价格合适的话，为cursor感到担忧。下面cursor的界面就感觉差了很多。不过这个是一个比较简单的需求，还比较顺利，还需要更深入的测试，看看对于一个完整的大项目来说，trae能否胜任？
 
@@ -54,7 +56,7 @@ OK，对话直接跳过吧，我们来到builder界面。快过年了，我就�
 
 下面附带生成的代码：
 
-```
+```python
 from jinja2 import Template
 import webbrowser
 import os

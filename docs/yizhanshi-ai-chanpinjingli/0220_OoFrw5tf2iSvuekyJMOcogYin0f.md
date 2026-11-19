@@ -1,158 +1,164 @@
+
 # Linux 常见基础知识
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/RXSTdI23rowKLGxqEEZcoesgn8d](https://v11enp9ok1h.feishu.cn/docx/RXSTdI23rowKLGxqEEZcoesgn8d)
 
 为了帮助同学们更好的学习实战训练营课程，这里给大家准备了一些Linux常见的基础知识。
 
-# Linux简介
+## Linux简介
 
 首先，先记住Linux的核心思想"万物皆文件"。（不懂的话问题不大，后面你会懂的）。
 
-**Linux 内核最初只**是由芬兰人 Linus Torvalds （一个被奉为神的暴躁老哥）在赫尔辛基大学上学时出于个人爱好而编写的。
+Linux 内核最初只是由芬兰人 Linus Torvalds （一个被奉为神的暴躁老哥）在赫尔辛基大学上学时出于个人爱好而编写的。
 
 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。
 
 Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。
 
-> 为啥[Git 基础知识](https://v11enp9ok1h.feishu.cn/wiki/Tqtbw0LzgiXn8Jkz9GXcmb7pnmP)  Linus Torvalds 他被奉为神，因为，今天每个程序员人手必学，影响深远的版本管理工具 Git 也是这个大牛程序员手搓出来的！！！关于Git的一些基础操作参考
+> 为啥[Git 基础知识](https://v11enp9ok1h.feishu.cn/wiki/Tqtbw0LzgiXn8Jkz9GXcmb7pnmP) Linus Torvalds 他被奉为神，因为，今天每个程序员人手必学，影响深远的版本管理工具 Git 也是这个大牛程序员手搓出来的！！！关于Git的一些基础操作参考
 
-# Linux版本介绍
+## Linux版本介绍
 
 著名的 Linux 系统基本上分两大类：
 
-+   RedHat 系列：Redhat、Centos、Fedora 等
++ RedHat 系列：Redhat、Centos、Fedora 等
 
-+   Debian 系列：Debian、Ubuntu 等
++ Debian 系列：Debian、Ubuntu 等
 
-## 安装包及包管理工具
+### 安装包及包管理工具
 
-Debian 及其衍生版，如 Ubuntu、Linux Mint 和 Raspbian，它们的包格式是.deb。 debian 衍生版大多数都包含了 apt 命令，它提供了一个简洁统一的接口。
+Debian 及其衍生版，如 Ubuntu、Linux Mint 和 Raspbian，它们的包格式是`.deb`。debian 衍生版大多数都包含了 `apt` 命令，它提供了一个简洁统一的接口。
 
-CentOS、Fedora 和其它 Redhat 家族成员使用.rpm文件。在 CentOS 中，通过 yum 来与单独的包文件和存储库进行交互。
+CentOS、Fedora 和其它 Redhat 家族成员使用`.rpm`文件。在 CentOS 中，通过 `yum` 来与单独的包文件和存储库进行交互。
 
 | 操作系统 | 包文件格式 | 工具 |
+
 | --- | --- | --- |
-| Debian | .deb | apt、apt-cache、apt-get、dpkg |
-| Ubuntu | .deb | apt、apt-cache、apt-get、dpkg |
-| Centos | .rpm | yum |
-| Fedora | .rpm | dnf |
 
-这里的包，简单理解，可以类比你在windows上的.exe文件，就是你的安装包。
+| Debian | `.deb` | `apt`、`apt-cache`、`apt-get`、`dpkg` |
 
-如果你是用在苹果电脑的MacOS系统里，dmg和pgk就是对应的安装包。
+| Ubuntu | `.deb` | `apt`、`apt-cache`、`apt-get`、`dpkg` |
 
-在Linux系统里，安装包的获取，在yum获取到的是rpm，apt获取的是deb。其实你都可以看成是一个压缩包（因为Linux一切皆文件）。里面有对应的软件。因为开发者不一样，所以两种软件包的解包方式不一样，和gz，rar包差不多（关于gz和tar这里后面会讲到压缩命令），需要特定的命令去解，rpm包是rpm命令，deb是dpkg命令。
+| Centos | `.rpm` | `yum` |
 
-在苹果操作系统，也可以用brew这个安装软件，和yum、apt类似，直接用命令行安装。
+| Fedora | `.rpm` | `dnf` |
 
-# 实验环境
+这里的包，简单理解，可以类比你在windows上的`.exe`文件，就是你的安装包。
+
+如果你是用在苹果电脑的MacOS系统里，`dmg`和`pgk`就是对应的安装包。
+
+在Linux系统里，安装包的获取，在`yum`获取到的是`rpm`，`apt`获取的是`deb`。其实你都可以看成是一个压缩包（因为Linux一切皆文件）。里面有对应的软件。因为开发者不一样，所以两种软件包的解包方式不一样，和`gz`，`rar`包差不多（关于`gz`和`tar`这里后面会讲到压缩命令），需要特定的命令去解，`rpm`包是`rpm`命令，`deb`是`dpkg`命令。
+
+在苹果操作系统，也可以用`brew`这个安装软件，和`yum`、`apt`类似，直接用命令行安装。
+
+## 实验环境
 
 本次教程实验的Linux环境，是由InternStudio提供的虚拟机。在此感谢书生浦语团队提供的
 
-# SSH相关知识点
+## SSH相关知识点
 
 > TODO
 
-# 文件操作
+## 文件操作
 
-> 下面提到的**目录**也是指windows系统下的**文件夹**的概念
+> 下面提到的目录也是指windows系统下的文件夹的概念
 
-## 文件&文件夹基本操作
+### 文件&文件夹基本操作
 
-+   pwd: print work directory 打印当前目录 显示出当前工作目录的绝对路径
++ `pwd`: print work directory 打印当前目录 显示出当前工作目录的绝对路径
 
-+   cd：切换目录
++ `cd`：切换目录
 
-+   ls：显示目录下的文件
++ `ls`：显示目录下的文件
 
-+   常用参数：-la
++ 常用参数：`-la`
 
-+   mkdir：创建新目录（你可以理解问windows的新建文件夹的操作）
++ `mkdir`：创建新目录（你可以理解问windows的新建文件夹的操作）
 
-+   mv：移动（重命名）
++ `mv`：移动（重命名）
 
-+   cp：复制文件或目录
++ `cp`：复制文件或目录
 
-+   rm：删除文件或目录
++ `rm`：删除文件或目录
 
-+   touch：创建空文件
++ `touch`：创建空文件
 
-+   find：文件搜索
++ `find`：文件搜索
 
-## 文件内容查看
+### 文件内容查看
 
-+   cat：显示文件内容
++ `cat`：显示文件内容
 
-+   more：分页显示文件内容
++ `more`：分页显示文件内容
 
-+   less：分页显示文件内容（类似more命令，比more命令更强大）
++ `less`：分页显示文件内容（类似`more`命令，比`more`命令更强大）
 
-+   head：显示文件开头部分，默认是10行，不显示文件名
++ `head`：显示文件开头部分，默认是10行，不显示文件名
 
-+   tail：显示文件末尾几行的内容，默认末尾10行，不显示文件名
++ `tail`：显示文件末尾几行的内容，默认末尾10行，不显示文件名
 
-## 软链接与硬链接
+### 软链接与硬链接
 
-Linux文件系统中，有所谓的链接(link)，我们可以将其视为文件或目录的别名。而链接又可分为两种：硬链接(hard link)与软链接(symbolic link)。
+Linux文件系统中，有所谓的链接(`link`)，我们可以将其视为文件或目录的别名。而链接又可分为两种：硬链接(`hard link`)与软链接(`symbolic link`)。
 
 硬链接的意思是一个文件可以有多个名称；而软链接的方式则是产生一个特殊的文件，该档案的内容是指向另一个文件或目录的位置。硬链接是存在同一个文件系统中，而软链接却可以跨越不同的文件系统。不论是硬链接或软链接都不会将原本的文件复制一份，只会占用非常少量的磁盘空间。
 
-### ln：生成链接文件
+#### `ln`：生成链接文件
 
-> 语法：ln [选项 -siv] [原文件] [目标文件]
+> 语法：`ln` [选项 `-siv`] [原文件] [目标文件]
 
-> -s：创建软链接。不带这个选项则创建硬链接
+> `-s`：创建软链接。不带这个选项则创建硬链接
 
-> -i：交互模式，文件存在则提示用户是否覆盖
+> `-i`：交互模式，文件存在则提示用户是否覆盖
 
-> -v：显示详细的处理过程
+> `-v`：显示详细的处理过程
 
-> -b：删除，覆盖以前建立的链接
+> `-b`：删除，覆盖以前建立的链接
 
-**软链接：**
+软链接：
 
-+   软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式
++ 软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式
 
-+   软链接可以 跨文件系统 ，硬链接不可以
++ 软链接可以 跨文件系统 ，硬链接不可以
 
-+   软链接可以对一个不存在的文件名进行链接
++ 软链接可以对一个不存在的文件名进行链接
 
-+   软链接可以对目录进行链接
++ 软链接可以对目录进行链接
 
-**硬链接：**
+硬链接：
 
-+   硬链接，以文件副本的形式存在。但不占用实际空间。
++ 硬链接，以文件副本的形式存在。但不占用实际空间。
 
-+   不允许给目录创建硬链接
++ 不允许给目录创建硬链接
 
-+   硬链接只有在同一个文件系统中才能创建
++ 硬链接只有在同一个文件系统中才能创建
 
-# 文本编辑
+## 文本编辑
 
-+   vi
++ `vi`
 
-+   vim
++ `vim`
 
-# 权限管理
+## 权限管理
 
-+   chmod：修改文件或目录的权限
++ `chmod`：修改文件或目录的权限
 
-# 其他常用命令
+## 其他常用命令
 
-+   tar：Linux下的归档使用工具，用来打包和备份目录或文件。（保留原文件）
++ `tar`：Linux下的归档使用工具，用来打包和备份目录或文件。（保留原文件）
 
-+   unzip
++ `unzip`
 
-+   tree：看目录结构
++ `tree`：看目录结构
 
-# 系统操作
+## 系统操作
 
-+   ps: process status(进程状态，类似于windows的任务管理器)
++ `ps`: process status(进程状态，类似于windows的任务管理器)
 
-+   常用参数：－auxf
++ 常用参数：`-auxf`
 
-+   ps -auxf 显示进程状态
++ `ps -auxf` 显示进程状态
 
-+   df：disk free。报告在任何安装的设备或目录中，还剩多少自由的空间。
++ `df`：disk free。报告在任何安装的设备或目录中，还剩多少自由的空间。
 
-+   du：Disk usage
++ `du`：Disk usage

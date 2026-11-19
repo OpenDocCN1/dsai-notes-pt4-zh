@@ -1,84 +1,85 @@
+
 # AIbot
 
 > 来源：[https://my.feishu.cn/docx/J5ADdmL2IoapiWxZp5fc31Vmn3A](https://my.feishu.cn/docx/J5ADdmL2IoapiWxZp5fc31Vmn3A)
 
-# **简介**
+## 简介
 
-> **本项目属于chatgpt-on-wecha**t 的 PC windows端个人🛰️版，基于WeChat-AIChatbot-WinOnly，由于跃迁大佬停更，所以备份一下，同时丰富一下原ntchat消息通道监听类型，方便开发对应类型插件。
+> 本项目属于`chatgpt-on-wechat`的 PC Windows 端个人🛰️版，基于`WeChat-AIChatbot-WinOnly`，由于跃迁大佬停更，所以备份一下，同时丰富一下原`ntchat`消息通道监听类型，方便开发对应类型插件。
 
-> **本项目仅供学习和技术研究，请勿用于非法用途，如有任何人凭**此做何非法事情，均于作者无关，特此声明。
+> 本项目仅供学习和技术研究，请勿用于非法用途，如有任何人凭此做何非法事情，均于作者无关，特此声明。
 
-+   **2024.4月开始🛰️限制低版本登录，为提高本项目使用门槛**，故不提供低版本登录解决方案，请自行解决 *
++ 2024.4月开始🛰️限制低版本登录，为提高本项目使用门槛，故不提供低版本登录解决方案，请自行解决 *
 
-+   **只**能在Win平台运行项目！只能在Win平台运行项目！只能在Win平台运行项目! （ 重要的事情说三遍 ）
++ 只能在Win平台运行项目！只能在Win平台运行项目！只能在Win平台运行项目！（重要的事情说三遍）
 
-+   项目支持功能如下：
++ 项目支持功能如下：
 
-+    **Wechat**[ ：PC端的个微](https://github.com/billyplus/ntchat)消息通道，依赖 ntchat项目 ，最高支持Python310环境版本，限WeChat3.6.0.18版本，
++ `Wechat`：[PC端的个微](https://github.com/billyplus/ntchat)消息通道，依赖`ntchat`项目，最高支持Python3.10环境版本，限`WeChat3.6.0.18`版本，
 
-+    发送消息：文本/图片/视频/文件/群聊@/链接卡片/GIF/XML
++ 发送消息：文本/图片/视频/文件/群聊@/链接卡片/GIF/XML
 
-+    接收消息：几乎涵盖所有消息类型
++ 接收消息：几乎涵盖所有消息类型
 
-+    其他功能：同意加好友请求/创建群/添加好友入群/邀请好友入群/删除群成员/修改群名/修改群公告
++ 其他功能：同意加好友请求/创建群/添加好友入群/邀请好友入群/删除群成员/修改群名/修改群公告
 
-+    短板缺陷：无法发送语音条信息
++ 短板缺陷：无法发送语音条信息
 
-# **详细功能列表：**
+## 详细功能列表
 
-+    聊天对话：私聊、群聊对话，支持fastgpt、coze、linkai、openai、azure、文心一言，通义千问，讯飞星火，ChatGLM-4，MiniMax，deepspeek，gemini，claudeapi，Kimi对话模型通道
++ 聊天对话：私聊、群聊对话，支持`fastgpt`、`coze`、`linkai`、`openai`、`azure`、文心一言，通义千问，讯飞星火，`ChatGLM-4`，`MiniMax`，`deepspeek`，`gemini`，`claudeapi`，`Kimi`对话模型通道
 
-+    语音对话：语音消息可选文字或语音回复，支持 Azure, Openai，Google等语音模型
++ 语音对话：语音消息可选文字或语音回复，支持`Azure`，`Openai`，`Google`等语音模型
 
-+    插件：chatgpt-on-wechat项目的插件可以复制到本项目来使用，也可自行开发插件
++ 插件：`chatgpt-on-wechat`项目的插件可以复制到本项目来使用，也可自行开发插件
 
-+    高度定制：依赖fastgpt接口，可实现每个群聊对应不同的应用知识库
++ 高度定制：依赖`fastgpt`接口，可实现每个群聊对应不同的应用知识库
 
-# **快速开始**
+## 快速开始
 
-## **准备**
+### 准备
 
-### **1.运行环境**
+#### 1. 运行环境
 
-仅支持Windows 系统同时需安装 Python。
+仅支持Windows系统同时需安装`Python`。
 
-> 建议Python版本在 3.7.1~3.10 之间。
+> 建议`Python`版本在 3.7.1~3.10 之间。
 
-**(1) 下载项目代码****：**
+#### (1) 下载项目代码：
 
-git clone https://github.com/Tishon1532/chatgpt-on-wechat-win
+`git clone https://github.com/Tishon1532/chatgpt-on-wechat-win`
 
-cd chatgpt-on-wechat-win/
+`cd chatgpt-on-wechat-win/`
 
-(2) 安装核心依赖 (必选)：
+#### (2) 安装核心依赖（必选）：
 
-pip3 install -r requirements.txt
+`pip3 install -r requirements.txt`
 
-(3) 拓展依赖 (可选，建议安装)：
+#### (3) 拓展依赖（可选，建议安装）：
 
-pip3 install -r requirements-optional.txt
+`pip3 install -r requirements-optional.txt`
 
 > 如果某项依赖安装失败请注释掉对应的行再继续。
 
-其中tiktoken要求python版本在3.8以上，它用于精确计算会话使用的tokens数量，强烈建议安装。
+其中`tiktoken`要求`Python`版本在3.8以上，它用于精确计算会话使用的`tokens`数量，强烈建议安装。
 
-使用google或baidu语音识别需安装ffmpeg，
+使用`google`或`baidu`语音识别需安装`ffmpeg`，
 
-默认的openai语音识别不需要安装ffmpeg。
+默认的`openai`语音识别不需要安装`ffmpeg`。
 
 参考[#415](https://github.com/zhayujie/chatgpt-on-wechat/issues/415)
 
-使用azure语音功能需安装依赖，并参考[文档](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-python&tabs=linux%2Cubuntu%2Cdotnet%2Cjre%2Cmaven%2Cnodejs%2Cmac%2Cpypi)的环境要求。 :
+使用`azure`语音功能需安装依赖，并参考[文档](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-python&tabs=linux%2Cubuntu%2Cdotnet%2Cjre%2Cmaven%2Cnodejs%2Cmac%2Cpypi)的环境要求。：
 
-pip3 install azure-cognitiveservices-speech
+`pip3 install azure-cognitiveservices-speech`
 
-## **配置**
+### 配置
 
-配置文件的模板在根目录的config-template.json中，需复制该模板创建最终生效的 config.json 文件：
+配置文件的模板在根目录的`config-template.json`中，需复制该模板创建最终生效的`config.json`文件：
 
-cp config-template.json config.json
+`cp config-template.json config.json`
 
-然后在config.json中填入配置，以下是对默认配置的说明，可根据需要进行自定义修改[（请去掉注释）： ](https://github.com/Tishon1532/chatgpt-on-wechat-win/blob/master/config.py)更多可选配置项可以参考config.py。
+然后在`config.json`中填入配置，以下是对默认配置的说明，可根据需要进行自定义修改（请去掉注释）：[config.py](https://github.com/Tishon1532/chatgpt-on-wechat-win/blob/master/config.py) 更多可选配置项可以参考`config.py`。
 
 ```
 # config.json文件内容示例
@@ -117,87 +118,91 @@ cp config-template.json config.json
  }
 ```
 
-**配置说明：**
+#### 配置说明
 
-**1.个人聊天**
+##### 1. 个人聊天
 
-+   个人聊天中，需要以 "bot"或"@bot" 为开头的内容触发机器人，对应配置项 single_chat_prefix (如果不需要以前缀触发可以填写 "single_chat_prefix": [""])
++ 个人聊天中，需要以 `"bot"` 或 `"@bot"` 为开头的内容触发机器人，对应配置项 `single_chat_prefix`（如果不需要以前缀触发可以填写 `"single_chat_prefix": [""]`）
 
-+   机器人回复的内容会以 "[bot] " 作为前缀， 以区分真人，对应的配置项为 single_chat_reply_prefix (如果不需要前缀可以填写 "single_chat_reply_prefix": "")
++ 机器人回复的内容会以 `"[bot] "` 作为前缀，以区分真人，对应的配置项为 `single_chat_reply_prefix`（如果不需要前缀可以填写 `"single_chat_reply_prefix": ""`）
 
-**2.群组聊天**
+##### 2. 群组聊天
 
-+   群组聊天中，群名称需配置在 group_name_white_list  中才能开启群聊自动回复。如果想对所有群聊生效，可以直接填写 "group_name_white_list": ["ALL_GROUP"]
++ 群组聊天中，群名称需配置在 `group_name_white_list` 中才能开启群聊自动回复。如果想对所有群聊生效，可以直接填写 `"group_name_white_list": ["ALL_GROUP"]`
 
-+   默认只要被人 @ 就会触发机器人自动回复；另外群聊天中只要检测到以 "@bot" 开头的内容，同样会自动回复（方便自己触发），这对应配置项 group_chat_prefix
++ 默认只要被人 `@` 就会触发机器人自动回复；另外群聊天中只要检测到以 `"@bot"` 开头的内容，同样会自动回复（方便自己触发），这对应配置项 `group_chat_prefix`
 
-+   可选配置: group_name_keyword_white_list配置项支持模糊匹配[群名称，gr](https://github.com/evolay)oup_chat_keyword配置项则支持模糊匹配群消息内容，用法与上述两个配置项相同。（Contributed by evolay)
++ 可选配置：`group_name_keyword_white_list` 配置项支持模糊匹配群名称，`group_chat_keyword` 配置项则支持模糊匹配群消息内容，用法与上述两个配置项相同。（Contributed by evolay）
 
-+   group_chat_in_one_session：使群聊共享一个会话上下文，配置 ["ALL_GROUP"] 则作用于所有群聊
++ `group_chat_in_one_session`：使群聊共享一个会话上下文，配置 `["ALL_GROUP"]` 则作用于所有群聊
 
-**3.语音识别**
+##### 3. 语音识别
 
-+   添加 "speech_recognition": true 将开启语音识别，默认使用openai的whisper模型识别为文字，同时以文字回复，该参数仅支持私聊 (注意由于语音消息无法匹配前缀，一旦开启将对所有语音自动回复，支持语音触发画图)；
++ 添加 `"speech_recognition": true` 将开启语音识别，默认使用 `openai` 的 `whisper` 模型识别为文字，同时以文字回复，该参数仅支持私聊（注意由于语音消息无法匹配前缀，一旦开启将对所有语音自动回复，支持语音触发画图）；
 
-+   添加 "group_speech_recognition": true 将开启群组语音识别，默认使用openai的whisper模型识别为文字，同时以文字回复，参数仅支持群聊 (会匹配group_chat_prefix和group_chat_keyword, 支持语音触发画图)；
++ 添加 `"group_speech_recognition": true` 将开启群组语音识别，默认使用 `openai` 的 `whisper` 模型识别为文字，同时以文字回复，参数仅支持群聊（会匹配 `group_chat_prefix` 和 `group_chat_keyword`，支持语音触发画图）；
 
-+   添加 "voice_reply_voice": true 将开启语音回复语音（同时作用于私聊和群聊），但是需要配置对应语音合成平台的key，由于itchat协议的限制，只能发送语音mp3文件
++ 添加 `"voice_reply_voice": true` 将开启语音回复语音（同时作用于私聊和群聊），但是需要配置对应语音合成平台的 `key`，由于 `itchat` 协议的限制，只能发送语音 `mp3` 文件
 
-**4.其他配置**
+##### 4. 其他配置
 
-+   model: 模型名称，目前支持 gpt-3.5-turbo, text-davinci-003, gpt-4, gpt-4-32k,gpt-4o
++ `model`：模型名称，目前支持 `gpt-3.5-turbo`、`text-davinci-003`、`gpt-4`、`gpt-4-32k`、`gpt-4o`
 
-+   temperature,f[requency_pe](https://platform.openai.com/docs/api-reference/chat)nalty,presence_penalty: Chat API接口参数，详情参考OpenAI官方文档。
++ `temperature`、`frequency_penalty`、`presence_penalty`：Chat API 接口参数，详情参考 `OpenAI` 官方文档。
 
-+   proxy：由于目前 openai[ 接口国](https://github.com/zhayujie/chatgpt-on-wechat/issues/351)内无法访问，需配置代理客户端的地址，详情参考 #351
++ `proxy`：由于目前 `openai` 接口国内无法访问，需配置代理客户端的地址，详情参考 #351
 
-+   对于图像生成，在满足个人或群组触发条件外，还需要额外的关键词前缀来触发，对应配置 image_create_prefix
++ 对于图像生成，在满足个人或群组触发条件外，还需要额外的关键词前缀来触发，对应配置 `image_create_prefix`
 
-+   关于OpenAI对话及图片接口的参数配置（内容自由度[、回复字](https://beta.openai.com/docs/api-reference/completions)数限制[、图片大](https://beta.openai.com/docs/api-reference/completions)小等），可[以参考 对话接口 ](https://github.com/zhayujie/chatgpt-on-wechat/blob/master/config.py)和 图像接口 文档，在config.py中检查哪些参数在本项目中是可配置的。
++ 关于 `OpenAI` 对话及图片接口的参数配置（内容自由度、回复字数限制、图片大小等），可参考 [对话接口](https://github.com/zhayujie/chatgpt-on-wechat/blob/master/config.py) 和 图像接口 文档，在 `config.py` 中检查哪些参数在本项目中是可配置的。
 
-+   conversation_max_tokens：表示能够记忆的上下文最大字数（一问一答为一组对话，如果累积的对话字数超出限制，就会优先移除最早的一组对话）
++ `conversation_max_tokens`：表示能够记忆的上下文最大字数（一问一答为一组对话，如果累积的对话字数超出限制，就会优先移除最早的一组对话）
 
-+   rate_limit_chatgpt，rate_limit_dalle：每分钟最高问答速率、画图速率，超速后排队按序处理。
++ `rate_limit_chatgpt`、`rate_limit_dalle`：每分钟最高问答速率、画图速率，超速后排队按序处理。
 
-+   clear_memory_commands: 对话内指令，主动清空前文记忆，字符串数组可自定义指令别名。
++ `clear_memory_commands`: 对话内指令，主动清空前文记忆，字符串数组可自定义指令别名。
 
-+   hot_reload: 程序退出后，暂存🛰️扫码状态，默认关闭。
++ `hot_reload`: 程序退出后，暂存🛰️扫码状态，默认关闭。
 
-+   character_desc [配置中保存](https://github.com/zhayujie/chatgpt-on-wechat/issues/43)着你对机器人说的一段话，他会记住这段话并作为他的设定，你可以为他定制任何人格 (关于会话上下文的更多内容参考该 issue)
++ `character_desc` [配置中保存](https://github.com/zhayujie/chatgpt-on-wechat/issues/43) 着你对机器人说的一段话，他会记住这段话并作为他的设定，你可以为他定制任何人格（关于会话上下文的更多内容参考该 issue）
 
-+   subscribe_msg：订阅消息，👸号和企业🛰️channel中请填写，当被订阅时会自动回复， 可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
++ `subscribe_msg`：订阅消息，👸号和企业🛰️channel中请填写，当被订阅时会自动回复，可使用特殊占位符。目前支持的占位符有 `{trigger_prefix}`，在程序中它会自动替换成 `bot` 的触发词。
 
-[**本说明文档可能会未**](https://github.com/zhayujie/chatgpt-on-wechat/blob/master/config.py)**及时更新**，当前所有可选的配置项均在该config.py中列出。
+[本说明文档可能会未及时更新](https://github.com/zhayujie/chatgpt-on-wechat/blob/master/config.py)，当前所有可选的配置项均在该 `config.py` 中列出。
 
-## **运行**
+### 运行
 
-### 1.本地运行（仅限window平台）
+#### 1. 本地运行（仅限 Windows 平台）
 
-如果是开发机 **本地运行**，直接在项目根目录下执行：
+如果是开发机 本地运行，直接在项目根目录下执行：
 
-python3 app.py
+`python3 app.py`
 
-1.  PC本地部署wechat（仅限window平台）
++ PC 本地部署 `wechat`（仅限 `Windows` 平台）
 
-1.主项目安装主要依赖后，还需要安装ntchat依赖
++ 主项目安装主要依赖后，还需要安装 `ntchat` 依赖
 
 ```
 pip install ntchat
 ```
 
-2.安装指定PC🛰️版本：WeChat3.6.0.18版本，扫码登陆好，关闭自动更新🛰️
 
-3.修改主项目配置项：config.json文件内
 
+2. 安装指定PC🛰️版本：WeChat3.6.0.18版本，扫码登陆好，关闭自动更新🛰️
+
+3. 修改主项目配置项：`config.json` 文件内
+
+```json
 "channel_type": "ntchat"
+```
 
-4.运行 app.py
+4. 运行 `app.py`
 
-## **硬核功能展示**
+## 硬核功能展示
 
 +   以下功能均基于本项目新增监听类型后，通过编写插件实现。
 
-#### 以下某些插件功能来自于逆向练习项目，不开源，请自行研究。
+### 以下某些插件功能来自于逆向练习项目，不开源，请自行研究。
 
 ![](img/d75e10de0d3991a09e3068623a57cb86.png)
 

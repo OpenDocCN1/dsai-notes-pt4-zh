@@ -1,44 +1,38 @@
+
 # DeepSeek搭建本地知识库AnythingLLM
 
 > 来源：[https://zcareers.feishu.cn/docx/B3VudUyzUodbhExzNKmc8ycdnAf](https://zcareers.feishu.cn/docx/B3VudUyzUodbhExzNKmc8ycdnAf)
 
-# **万事先问为什么：**
+## 万事先问为什么：
 
-1.  为什么要搭建AI知识库系统？
+1. 为什么要搭建AI知识库系统？
+   - 对个人：
+     - 记录个人学习、工作经验，打造专属的知识体系
+     - 收藏网页摘录/本地文档，终结"收藏即遗忘"的无效囤积。
+   - 对企业：
+     - 知识管理与传承：让新员工一键继承资深员工的实战经验库，将离职风险降低
+     - 快速查找案例、技术方案，提升运营效率。
+   - 重要：确保安全隐私
 
-+   **对个人**：
+## 安装AnythingLLM
 
-+   记录个人学习、工作经验，打造专属的知识体系
-
-+   收藏网页摘录/本地文档，终结"收藏即遗忘"的无效囤积。
-
-+   **对企业**：
-
-+   知**识管理与传承:**让新员工一键继承资深员工的实战经验库，将离职风险降低
-
-+   快速查找案例、技术方案。**提升运营效率**
-
-+   重要：确保安全隐私
-
-# **安装AnythingLLM**
-
-https://anythingllm.com/desktop一个强大的灵活的平台，通过它可以连接多个LLM模型，构建本地私有的LLM应用，配置界面简单直观。
+`https://anythingllm.com/desktop` 一个强大的灵活的平台，通过它可以连接多个LLM模型，构建本地私有的LLM应用，配置界面简单直观。
 
 ![](img/911d1fb68ddb82237f18881ef1840225.png)
 
-# 安装nomic-embed-text嵌入式模型
+## 安装nomic-embed-text嵌入式模型
 
-ollama pull nomic-embed-text
+`ollama pull nomic-embed-text`
 
 ![](img/a85a22c7f05f80e84951a49e6b50ffc3.png)
 
-# 配置AnythingLLM
+## 配置AnythingLLM
 
 ![](img/ef64aee3f8edac0562ac8af92210b0ff.png)
 
 ![](img/0e73f8d6d6013343404ce7148c38eef5.png)
 
-## 配置Embedder首选项
+### 配置Embedder首选项
 
 ![](img/159e6ad30e95a3705143db2bc714a121.png)
 

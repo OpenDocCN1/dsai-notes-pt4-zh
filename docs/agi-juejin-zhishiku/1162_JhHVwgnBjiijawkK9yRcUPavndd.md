@@ -1,10 +1,11 @@
+
 # 图解Transformer——非常赞的解释Transformer架构的文章
 
 > 来源：[https://agijuejin.feishu.cn/docx/IHxediOGeosd64x3QiocZHM7nXf](https://agijuejin.feishu.cn/docx/IHxediOGeosd64x3QiocZHM7nXf)
 
 > 作者：北方的郎
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/679048357)hihu.com/p/679048...
+> 原文：[https://zhuanlan.zhihu.com/p/679048357](https://zhuanlan.zhihu.com/p/679048357)
 
 Transformer架构是一种深度学习模型,自从2017年被提出以来,在自然语言处理领域取得了巨大的成功。相比于传统的循环神经网络和卷积神经网络,Transformer架构具有更高的并行计算能力和更快的训练速度,因此在处理大规模数据时更加高效。
 
@@ -12,17 +13,17 @@ Transformer架构是一种深度学习模型,自从2017年被提出以来,在自
 
 同时,Transformer架构也引入了自注意力机制,能够更好地捕捉序列数据中的长距离依赖关系,因此在语言模型、机器翻译、文本生成等任务上取得了很好的表现。此外,Transformer架构也可以应用于计算机视觉、音频处理等领域,是一种非常重要的深度学习模型。可以说它是现在各种大模型的基础，因为它结构比较复杂，所以理解起来需要费一些力气。Jay Alammar写的这篇《 The Illustrated Transformer 》对Transformer结构解释的非常清晰。
 
-原文链接： [h](https://link.zhihu.com/?target=https%3A//jalammar.github.io/illustrated-transformer/)ttps:// jalammar.github.io/illu strated-transformer/
+原文链接：[https://jalammar.github.io/illustrated-transformer/](https://jalammar.github.io/illustrated-transformer/)
 
 以下为译文，翻译的时候有些小调整。
 
-在 上**一篇文章中，我们研究了注意力** ——[现代深度学习模型中普](https://link.zhihu.com/?target=https%3A//cloud.google.com/tpu/)遍存在的方法。注意力是一个有助于提高神经机器翻**译应用程序性能的****概念。在**这篇文章中，我们将研究 Transformer—— 一种利用注意力来提高模型训练速度的模型。Transformer 在特定任务中的表现优于 Google 神经机器翻译模型。然而，最大的好处来自 Transformer 如何实现并行化。事实上，Google Cloud 建议使用 Transformer 作为参考模型来使用其 Cloud TPU 产品。因此，让我们尝试分解该模型并看看它是如何运作的。
+在 上一篇文章中，我们研究了注意力 ——[现代深度学习模型中普](https://link.zhihu.com/?target=https%3A//cloud.google.com/tpu/)遍存在的方法。注意力是一个有助于提高神经机器翻译应用程序性能的概念。在这篇文章中，我们将研究 Transformer—— 一种利用注意力来提高模型训练速度的模型。Transformer 在特定任务中的表现优于 Google 神经机器翻译模型。然而，最大的好处来自 Transformer 如何实现并行化。事实上，Google Cloud 建议使用 Transformer 作为参考模型来使用其 Cloud TPU 产品。因此，让我们尝试分解该模型并看看它是如何运作的。
 
-Transformer 是在 Attention is All You Need 论文中提出的。 它的 TensorFlow 实现作为Tensor2Tensor 包的一部分提供。哈佛大学的 NLP 小组创建了一个 指南，用 PyTorch 实现对论文进行注释 。在这篇文章中，我们将尝试稍微简化一些事情，并一一介绍这些概念，希望能让那些对主题没有深入了解的人更容易理解。
+Transformer 是在 `Attention is All You Need` 论文中提出的。 它的 `TensorFlow` 实现作为`Tensor2Tensor` 包的一部分提供。哈佛大学的 NLP 小组创建了一个 指南，用 `PyTorch` 实现对论文进行注释 。在这篇文章中，我们将尝试稍微简化一些事情，并一一介绍这些概念，希望能让那些对主题没有深入了解的人更容易理解。
 
 2020 更新 ：我创建了一个“叙述Transformer”视频，这是一个更温和的主题方法：
 
-高级外观
+## 高级外观
 
 让我们首先将该模型视为一个黑匣子。在机器翻译应用程序中，它将采用一种语言的句子，并以另一种语言输出其翻译。
 
@@ -44,13 +45,11 @@ Transformer 是在 Attention is All You Need 论文中提出的。 它的 Tensor
 
 自注意力层的输出被馈送到前馈神经网络。完全相同的前馈网络独立应用于每个位置。
 
-解码器具有这两个层，但它们之间是一个注意力层，帮助解码器专注于输入句子的相关部分（类似于 seq2seq 模型 中注意力的作用）。
+解码器具有这两个层，但它们之间是一个注意力层，帮助解码器专注于输入句子的相关部分（类似于 `seq2seq` 模型 中注意力的作用）。
 
 ![](img/c900c39af1527e76a3ae2e21666b1c4b.png)
 
-[
-
-将张量（](https://link.zhihu.com/?target=https%3A//medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca)Tensor）带入图片中
+### 将张量（`Tensor`）带入图片中
 
 现在我们已经了解了模型的主要组件，让我们开始了解各种向量/张量以及它们如何在这些组件之间流动以将训练模型的输入转换为输出。
 
@@ -66,9 +65,7 @@ Transformer 是在 Attention is All You Need 论文中提出的。 它的 Tensor
 
 ![](img/1f7950d114f854d759dc748932d0a5c0.png)
 
-**
-
-在这里，我们开始看到 Tr**ansformer 的一个关键属性，即每个位置的单词在编码器中都流经其自己的路径。自注意力层中的这些路径之间存在依赖关系。然而，前馈层不具有这些依赖性，因此各种路径可以在流经前馈层时并行执行。
+在这里，我们开始看到 Transformer 的一个关键属性，即每个位置的单词在编码器中都流经其自己的路径。自注意力层中的这些路径之间存在依赖关系。然而，前馈层不具有这些依赖性，因此各种路径可以在流经前馈层时并行执行。
 
 接下来，我们将示例切换为较短的句子，并查看编码器的每个子层中发生的情况。
 
@@ -78,7 +75,7 @@ Transformer 是在 Attention is All You Need 论文中提出的。 它的 Tensor
 
 ![](img/7b83ef67cf6e40680d52a547e2fff682.png)
 
-高水平的自注意力（Self-Attention）
+### 高水平的自注意力（Self-Attention）
 
 不要被我乱用“自我注意力”这个词所愚弄，好像这是每个人都应该熟悉的概念。在阅读《注意力就是你所需要的一切》论文之前，我个人从未遇到过这个概念。让我们提炼一下它是如何工作的。
 
@@ -96,9 +93,9 @@ Transformer 是在 Attention is All You Need 论文中提出的。 它的 Tensor
 
 ![](img/e6ab6f1f6654d14f81fc8bf136aeb9e1.png)
 
-请务必查看** Tensor2Ten**sor 笔记本 ，您可以在其中加载 Transformer 模型，并使用此交互式可视化检查它。
+请务必查看 `Tensor2Tensor` 笔记本 ，您可以在其中加载 Transformer 模型，并使用此交互式可视化检查它。
 
-自注意力（Self-Attention）细节
+### 自注意力（Self-Attention）细节
 
 我们首先看看如何使用向量计算自注意力，然后继续看看它是如何实际实现的——使用矩阵。
 
@@ -108,65 +105,57 @@ Transformer 是在 Attention is All You Need 论文中提出的。 它的 Tensor
 
 ![](img/603e29b994a072d15186a92f01069284.png)
 
-**
-
-什么是“查询（q**uery）”、“键（key）”和“值（vectors）”向量？
+什么是“查询（`query`）”、“键（`key`）”和“值（`vectors`）”向量？
 
 它们是对于计算和思考注意力有用的抽象。一旦您继续阅读下面的注意力是如何计算的，您就会几乎了解每个向量所扮演的角色。
 
 计算自注意力的第二步 是计算分数。假设我们正在计算本例中第一个单词“Thinking”的自注意力。我们需要根据输入句子的每个单词对这个单词进行评分。当我们在某个位置对单词进行编码时，分数决定了对输入句子的其他部分的关注程度。
 
-分数是通过查询向量与我们要评分的各个单词的键向量的点积来计算的。因此，如果我们处理位置#1中单词的自注意力，第一个分数将是q1和k1的点积。第二个分数是q1和k2的点积。
+分数是通过查询向量与我们要评分的各个单词的键向量的点积来计算的。因此，如果我们处理位置#1中单词的自注意力，第一个分数将是`q1`和`k1`的点积。第二个分数是`q1`和`k2`的点积。
 
 ![](img/65d0caf84738a5a40853b6376d1116f6.png)
 
-**第三 步和第**四步 是将分数除以 8（论文中使用的关键向量维度的平方根 – 64。这会导致梯度更稳定。这里可能还有其他可能的值，但这是默认），然后将结果传递给 softmax 运算。Softmax 对分数进行归一化，使它们全部为正值并且加起来为 1。
+第三步和第四步 是将分数除以 8（论文中使用的关键向量维度的平方根 – 64。这会导致梯度更稳定。这里可能还有其他可能的值，但这是默认），然后将结果传递给 `softmax` 运算。`Softmax` 对分数进行归一化，使它们全部为正值并且加起来为 1。
 
 ![](img/5b1e95d7b5305a69d9428178674fdfbc.png)
 
-这**个s**oft**ma**x分数决定了每个单词在这个位置上的表达量。显然，这个位置的单词将具有最高的 softmax 分数，但有时关注与当前单词相关的另一个单词是有用的。
+这个`softmax`分数决定了每个单词在这个位置上的表达量。显然，这个位置的单词将具有最高的 `softmax` 分数，但有时关注与当前单词相关的另一个单词是有用的。
 
-第五 步 是将每个值向量乘以 softmax 分数（准备将它们相加）。这里的直觉是保持我们想要关注的单词的值完整，并淹没不相关的单词（例如，通过将它们乘以 0.001 这样的小数字）。
+第五步 是将每个值向量乘以 `softmax` 分数（准备将它们相加）。这里的直觉是保持我们想要关注的单词的值完整，并淹没不相关的单词（例如，通过将它们乘以 0.001 这样的小数字）。
 
-第六 步 是对加权值向量求和。这会在该位置（第一个单词）产生自注意力层的输出。
+第六步 是对加权值向量求和。这会在该位置（第一个单词）产生自注意力层的输出。
 
 ![](img/091eef50dbe4196b49f714ac7b2c1d9f.png)
 
-**
+自注意力计算到此结束。得到的向量是我们可以发送到前馈神经网络的向量。然而，在实际实现中，该计算是以矩阵形式完成的，以便更快地处理。现在我们已经看到了单词级别计算的直观性，让我们来看看。
 
-自注**意力计算到此结束。得到的向量是我们可以发送到前馈神经网络的向量。然而，在实际实现中，该计算是以矩阵形式完成的，以便更快地处理。现在我们已经看到了单词级别计算的直观性，让我们来看看。
+#### Self-Attention的矩阵计算
 
-Self-Attention的矩阵计算
-
-第一步 是计算查询、键和值矩阵。我们通过将嵌入打包到矩阵X中，并将其乘以我们训练过的权重矩阵（WQ、WK、WV）来做到这一点。
+第一步 是计算查询、键和值矩阵。我们通过将嵌入打包到矩阵`X`中，并将其乘以我们训练过的权重矩阵（`WQ`、`WK`、`WV`）来做到这一点。
 
 ![](img/894202ab036e544a691c0142b4c75699.png)
 
-**
-
-**最后 ，由于我们处理的是矩阵，因此我们可以将第二步到第六步压缩为一个公式来计算自注意力层的输出。
+最后 ，由于我们处理的是矩阵，因此我们可以将第二步到第六步压缩为一个公式来计算自注意力层的输出。
 
 ![](img/a5f2bdff15959c0baec3dd57a4239e3c.png)
 
-**
-
-多头**注意力
+#### 多头注意力
 
 论文通过添加一种称为“多头（multi-headed）”注意力的机制进一步细化了自注意力层。这通过两种方式提高了注意力层的性能：
 
-1.  它扩展了模型关注不同位置的能力。是的，在上面的示例中，z1 包含一些其他编码，但它可能由实际单词本身主导。如果我们翻译一个句子，比如“The Animal did not cross the street because it was tooert”，那么知道“it”指的是哪个单词会很有用。
+1. 它扩展了模型关注不同位置的能力。是的，在上面的示例中，`z1` 包含一些其他编码，但它可能由实际单词本身主导。如果我们翻译一个句子，比如“The Animal did not cross the street because it was tooert”，那么知道“it”指的是哪个单词会很有用。
 
-1.  它为注意力层提供了多个“表示子空间”。正如我们接下来将看到的，通过多头注意力，我们不仅拥有一组查询/键/值权重矩阵，而且拥有多组查询/键/值权重矩阵（Transformer 使用八个注意力头，因此我们最终为每个编码器/解码器提供八组） 。这些集合中的每一个都是随机初始化的。然后，在训练之后，每个集合用于将输入嵌入（或来自较低编码器/解码器的向量）投影到不同的表示子空间中。
+1. 它为注意力层提供了多个“表示子空间”。正如我们接下来将看到的，通过多头注意力，我们不仅拥有一组查询/键/值权重矩阵，而且拥有多组查询/键/值权重矩阵（Transformer 使用八个注意力头，因此我们最终为每个编码器/解码器提供八组） 。这些集合中的每一个都是随机初始化的。然后，在训练之后，每个集合用于将输入嵌入（或来自较低编码器/解码器的向量）投影到不同的表示子空间中。
 
 ![](img/e62157437efb1214ac7afb7b92bf1258.png)
 
-如果我们进行与上面概述相同的自注意力计算，只是使用不同的权重矩阵进行八次不同的时间，我们最终会得到八个不同的 Z 矩阵
+如果我们进行与上面概述相同的自注意力计算，只是使用不同的权重矩阵进行八次不同的时间，我们最终会得到八个不同的 `Z` 矩阵
 
 ![](img/da6bf4e76da25ff894c5d5f9ab6f52b7.png)
 
 这给我们带来了一些挑战。前馈层不需要八个矩阵——它需要一个矩阵（每个单词一个向量）。所以我们需要一种方法将这八个压缩成一个矩阵。
 
-我们该怎么做呢？我们将矩阵连接起来，然后将它们乘以一个附加的权重矩阵 WO。
+我们该怎么做呢？我们将矩阵连接起来，然后将它们乘以一个附加的权重矩阵 `WO`。
 
 ![](img/123c128d16f5e304d14802befbcbee17.png)
 
@@ -182,13 +171,11 @@ Self-Attention的矩阵计算
 
 ![](img/e68f08b6cf6fa5562a2d243210d04142.png)
 
-**
-
-使用位置编码表示序列的顺序（Representing The Order **of The Sequence Using Positional Encoding）
+### 使用位置编码表示序列的顺序（Representing The Order of The Sequence Using Positional Encoding）
 
 正如我们到目前为止所描述的，模型中缺少的一件事是一种解释输入序列中单词顺序的方法。
 
-为了解决这个问题，转换器向每个输入嵌入添加一个向量。这些向量遵循模型学习的特定模式，这有助于确定每个单词的位置，或序列中不同单词之间的距离。这里的直觉是，一旦嵌入向量被投影到 Q/K/V 向量中以及在点积注意力期间，将这些值添加到嵌入中可以提供嵌入向量之间有意义的距离。
+为了解决这个问题，转换器向每个输入嵌入添加一个向量。这些向量遵循模型学习的特定模式，这有助于确定每个单词的位置，或序列中不同单词之间的距离。这里的直觉是，一旦嵌入向量被投影到 `Q`/`K`/`V` 向量中以及在点积注意力期间，将这些值添加到嵌入中可以提供嵌入向量之间有意义的距离。
 
 ![](img/f3988aaac0fb0c5775a6a901e199d427.png)
 
@@ -202,17 +189,15 @@ Self-Attention的矩阵计算
 
 ![](img/8536ff669c3abf987f443ed12f551f01.png)
 
-位置编码的公式在论文（第 3.5 节）中有描**述。您可以在 中查看生成位置**编码[的代码 get_t](https://link.zhihu.com/?target=https%3A//github.com/jalammar/jalammar.github.io/blob/master/notebookes/transformer/transformer_positional_encoding_graph.ipynb)iming_signal_1d() 。这不是位置编码的唯一可能的方法。然而，它的优点是能够扩展到看不见的序列长度（例如，如果我们训练的模型被要求翻译比我们训练集中的任何句子都长的句子）。
+位置编码的公式在论文（第 3.5 节）中有描述。您可以查看生成位置编码的代码 [`get_timing_signal_1d()`](https://link.zhihu.com/?target=https%3A//github.com/jalammar/jalammar.github.io/blob/master/notebookes/transformer/transformer_positional_encoding_graph.ipynb) 。这不是位置编码的唯一可能的方法。然而，它的优点是能够扩展到看不见的序列长度（例如，如果我们训练的模型被要求翻译比我们训练集中的任何句子都长的句子）。
 
 2020 年 7 月更新： 上面显示的位置编码来自 Transformer 的 Tensor2Tensor 实现。论文中所示的方法略有不同，它不是直接连接，而是将两个信号交织在一起。下图显示了它的样子。 这是生成它的代码 ：
 
 ![](img/947b688ec44ea013ad983aa5998af1c4.png)
 
-**
+### 残差（Residuals）
 
-残差（Residual**s[）
-
-在](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1607.06450)继续之前，我们需要提及编码器架构中的一个细节，即每个编码器中的每个子层（自注意力，ffnn）周围都有一个残差连接，并且后面是层归一化 步骤 。
+在继续之前，我们需要提及编码器架构中的一个细节，即每个编码器中的每个子层（自注意力，`ffnn`）周围都有一个残差连接，并且后面是层归一化 步骤 。
 
 ![](img/0589aeea9726bc056f8ab1ffa0dba7a8.png)
 
@@ -224,13 +209,11 @@ Self-Attention的矩阵计算
 
 ![](img/d71a862aedd1b6ee70f7afb13fa8f816.png)
 
-**
-
-解码**器端
+## 解码器端
 
 现在我们已经涵盖了编码器方面的大部分概念，我们基本上也知道了解码器的组件是如何工作的。但让我们看看它们是如何协同工作的。
 
-编码器首先处理输入序列。然后，顶部编码器的输出被转换为一组注意力向量 K 和 V。这些向量将由每个解码器在其“编码器-解码器注意力”层中使用，这有助于解码器关注输入序列中的适当位置：
+编码器首先处理输入序列。然后，顶部编码器的输出被转换为一组注意力向量 `K` 和 `V`。这些向量将由每个解码器在其“编码器-解码器注意力”层中使用，这有助于解码器关注输入序列中的适当位置：
 
 ![](img/42e0eb713cf1d68f07cbdfafc5835bee.png)
 
@@ -240,43 +223,43 @@ Self-Attention的矩阵计算
 
 解码器中的自关注层的运行方式与编码器中的运行方式略有不同：
 
-在解码器中，自注意力层只允许关注输出序列中较早的位置。 -inf 这是通过在自注意力计算中的 softmax 步骤之前屏蔽未来位置（将它们设置为 ）来完成的。
+
+
+## 解码器
+
+在解码器中，自注意力层只允许关注输出序列中较早的位置。`-inf` 这是通过在自注意力计算中的 `softmax` 步骤之前屏蔽未来位置（将它们设置为 ）来完成的。
 
 “编码器-解码器注意”层的工作方式与多头自注意类似，只不过它从其下面的层创建查询矩阵，并从编码器堆栈的输出中获取键和值矩阵。
 
-最后的线性和 Softmax 层
+## 最后的线性和 `Softmax` 层
 
-解码器堆栈输出浮点数向量。我们如何把它变成一个词？这就是最后一个 Linear 层的工作，后面是 Softmax 层。
+解码器堆栈输出浮点数向量。我们如何把它变成一个词？这就是最后一个 `Linear` 层的工作，后面是 `Softmax` 层。
 
-线性层是一个简单的全连接神经网络，它将解码器堆栈产生的向量投影到一个更大的向量中，称为 logits 向量。
+线性层是一个简单的全连接神经网络，它将解码器堆栈产生的向量投影到一个更大的向量中，称为 `logits` 向量。
 
-假设我们的模型知道从训练数据集中学习的 10,000 个独特的英语单词（我们模型的“输出词汇”）。这将使 logits 向量有 10,000 个单元格宽——每个单元格对应一个唯一单词的分数。这就是我们解释线性层模型输出的方式。
+假设我们的模型知道从训练数据集中学习的 10,000 个独特的英语单词（我们模型的“输出词汇”）。这将使 `logits` 向量有 10,000 个单元格宽——每个单元格对应一个唯一单词的分数。这就是我们解释线性层模型输出的方式。
 
-然后，softmax 层将这些分数转换为概率（全部为正，全部加起来为 1.0）。选择概率最高的单元格，并生成与其关联的单词作为该时间步的输出。
+然后，`softmax` 层将这些分数转换为概率（全部为正，全部加起来为 1.0）。选择概率最高的单元格，并生成与其关联的单词作为该时间步的输出。
 
 ![](img/a549e0b9e16b6b0b7aa077a673032223.png)
 
-**
+## 训练回顾
 
-训**练回顾
-
-现在我们已经通过经过训练的 Transformer 介绍了整个前向传递过程，了解一下训练模型的直觉会很有用。
+现在我们已经通过经过训练的 `Transformer` 介绍了整个前向传递过程，了解一下训练模型的直觉会很有用。
 
 在训练期间，未经训练的模型将经历完全相同的前向传递。但由于我们是在标记的训练数据集上对其进行训练，因此我们可以将其输出与实际的正确输出进行比较。
 
-为了形象化这一点，我们假设我们的输出词汇仅包含六个单词（“a”、“am”、“i”、“thanks”、“student”和“<eos>”（“句子结尾”的缩写）） 。
+为了形象化这一点，我们假设我们的输出词汇仅包含六个单词（“a”、“am”、“i”、“thanks”、“student”和“`<eos>`”（“句子结尾”的缩写）） 。
 
 ![](img/02498300c010ca68817e2ce3e2a18f86.png)
 
-一旦我们定义了输出词汇表，我们就可以使用相同宽度的向量来表示词汇表中的每个单词。这也称为 one-hot 编码。例如，我们可以使用以下向量表示单词“am”：
+一旦我们定义了输出词汇表，我们就可以使用相同宽度的向量来表示词汇表中的每个单词。这也称为 `one-hot` 编码。例如，我们可以使用以下向量表示单词“am”：
 
 ![](img/114d7a9699911a88f73a11af73b97699.png)
 
-**
+在回顾之后，让我们讨论模型的损失函数——我们在训练阶段优化的指标，以形成经过训练的、希望非常准确的模型。
 
-在回顾**之后，让我们讨论模型的损失函数——我们在训练阶段优化的指标，以形成经过训练的、希望非常准确的模型。
-
-损失函数
+## 损失函数
 
 假设我们正在训练我们的模型。假设这是我们训练阶段的第一步，我们正在用一个简单的例子来训练它——将“merci”翻译成“thanks”。
 
@@ -284,17 +267,14 @@ Self-Attention的矩阵计算
 
 ![](img/37b2ab4eef2103a07758b83d81c2ab54.png)
 
-如何比较两个概率分布？我们只需将其中一[个减去另](https://link.zhihu.com/?target=https%3A//colah.github.io/posts/2015-09-Visual-Information/)一个即可。有关更多详细信息，请查看 交叉熵 和 Kullback-Leibler 散度 。
+如何比较两个概率分布？我们只需将其中一个减去[另一个](https://link.zhihu.com/?target=https%3A//colah.github.io/posts/2015-09-Visual-Information/)即可。有关更多详细信息，请查看 交叉熵 和 Kullback-Leibler 散度 。
 
 但请注意，这是一个过于简单化的示例。更现实的是，我们将使用比一个单词长的句子。例如 – 输入：“je suis étudiant”，预期输出：“我是一名学生”。这真正的意思是，我们希望我们的模型能够连续输出概率分布，其中：
 
-+   每个概率分布由宽度 vocab_size 的向量表示（在我们的玩具示例中为 6，但更实际的是 30,000 或 50,000 等数字）
-
++   每个概率分布由宽度 `vocab_size` 的向量表示（在我们的玩具示例中为 6，但更实际的是 30,000 或 50,000 等数字）
 +   第一个概率分布在与单词“i”相关的单元格中具有最高概率
-
 +   第二个概率分布在与单词“am”相关的单元格中具有最高概率
-
-+   依此类推，直到第五个输出分布指示“ <end of sentence> ”符号，该符号也有来自 10,000 个元素词汇表的与其关联的单元格。
++   依此类推，直到第五个输出分布指示“ `<end of sentence>` ”符号，该符号也有来自 10,000 个元素词汇表的与其关联的单元格。
 
 ![](img/ee79f752a85433978ce7e761fdf99a49.png)
 
@@ -302,36 +282,25 @@ Self-Attention的矩阵计算
 
 ![](img/20593ecace409c7f7d505a668c57a07f.png)
 
-现在，由于模型一次产生一个输出，因此我们可以假设模型从该概率分布中选择概率最高的单词，并丢弃其余的单词。这是一种方法（称为贪婪解码）。另一种方法是保留最上面的两个单词（例如“I”和“a”），然后在下一步中运行模型两次：一次假设第一个输出位置是单词“I”，另一次假设第一个输出位置是单词“a”，并且考虑到位置#1和#2，保留产生较少错误的版本。我们对位置 #2 和 #3 等重复此操作。这种方法称为“束搜索”，在我们的示例中，beam_size 为 2（意味着在任何时候，内存中都会保存两个部分假设（未完成的翻译）），并且 top_beams 也是两个（意味着我们将返回两个翻译）。这些都是您可以试验的超参数。
+现在，由于模型一次产生一个输出，因此我们可以假设模型从该概率分布中选择概率最高的单词，并丢弃其余的单词。这是一种方法（称为贪婪解码）。另一种方法是保留最上面的两个单词（例如“I”和“a”），然后在下一步中运行模型两次：一次假设第一个输出位置是单词“I”，另一次假设第一个输出位置是单词“a”，并且考虑到位置#1和#2，保留产生较少错误的版本。我们对位置 #2 和 #3 等重复此操作。这种方法称为“束搜索”，在我们的示例中，`beam_size` 为 2（意味着在任何时候，内存中都会保存两个部分假设（未完成的翻译）），并且 `top_beams` 也是两个（意味着我们将返回两个翻译）。这些都是您可以试验的超参数。
 
-Go Forth And Transform
+## Go Forth And Transform
 
-我希望您已经发现这是一个有用的地方，可以帮助您开始了解 Transformer 的主要概念。如果您想更深入，我建议您执行以下步骤：
+我希望您已经发现这是一个有用的地方，可以帮助您开始了解 `Transformer` 的主要概念。如果您想更深入，我建议您执行以下步骤：
 
-+   阅读《 Attention Is All You Need》 论文、Transformer 博客文章（ Transformer：一种用于语言理解的新型神经网络架构 ）和 Tensor2Tensor 公告 。
-
++   阅读《 Attention Is All You Need》 论文、`Transformer` 博客文章（ `Transformer`：一种用于语言理解的新型神经网络架构 ）和 `Tensor2Tensor` 公告 。
 +   观看 Łukasz Kaiser 的演讲， 介绍模型及其细节
++   使用 [作为 `Tensor2Tensor` 存储库的一部分](https://link.zhihu.com/?target=https%3A//colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/hello_t2t.ipynb)提供的 `Jupyter Notebook`
++   探索 `Tensor2Tensor` 存储库 。
 
-+   使用 [作为 Tensor2Tensor 存储库的一部分](https://link.zhihu.com/?target=https%3A//colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/hello_t2t.ipynb)提供的 Jupyter Notebook
+## 后续工作：
 
-+   探索 Tensor2Tensor 存储库 。
-
-后续工作：
-
-+   [D](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1706.03059)epthwise Separable Convolutions for Neural Machine Translation
-
++   [Depthwise Separable Convolutions for Neural Machine Translation](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1706.03059)
 +   One Model To Learn Them All
-
-+   [Discrete Autoencoders](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1801.09797) for Sequence Models
-
-+   [Generating Wikipedia by Summar](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1801.10198)izing Long Sequences
-
++   [Discrete Autoencoders for Sequence Models](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1801.09797)
++   [Generating Wikipedia by Summarizing Long Sequences](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1801.10198)
 +   Image Transformer
-
-+   [Training Tips for t](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1804.00247)he Transformer Model
-
-+   [S](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1803.02155)elf-Attention with Relative Position Representations
-
-+   [F](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1803.03382)ast Decoding in Sequence Models using Discrete Latent Variables
-
-+   [A](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1804.04235)dafactor: Adaptive Learning Rates with Sublinear Memory Cost
++   [Training Tips for the Transformer Model](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1804.00247)
++   [Self-Attention with Relative Position Representations](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1803.02155)
++   [Fast Decoding in Sequence Models using Discrete Latent Variables](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1803.03382)
++   [Adafactor: Adaptive Learning Rates with Sublinear Memory Cost](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1804.04235)

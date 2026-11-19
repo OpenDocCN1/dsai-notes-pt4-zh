@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（6月 17日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/XRDWdEZuYosbpExjchZccbf9nQc](https://miracleplus.feishu.cn/docx/XRDWdEZuYosbpExjchZccbf9nQc)
 
-# 资讯
+## 资讯
 
 ### 吴恩达最新 Snowflake DevDay 演讲：除了下一代基础模型，Agent 工作流如何推动更多 AI 进步？
 
@@ -52,9 +53,9 @@ https://mp.weixin.qq.com/s/C5G-rpen9OM4MmBhrByTIQ
 
 ![](img/067bca3bc14129e302c8ad09ed556e8a.png)
 
-# 推特
+## 推特
 
-### 如何使用MistralAI、Ollama 和Llama_index 构建 RAG 管道
+### 如何使用MistralAI、Ollama 和`Llama_index` 构建 RAG 管道
 
 https://x.com/sophiamyang/status/1802621024178954553
 
@@ -62,17 +63,17 @@ https://x.com/sophiamyang/status/1802621024178954553
 
 感谢@ravithejads 为我们的食谱做出的贡献！
 
-Ollama <> Mistral <> LlamaIndex 食谱
+Ollama <> Mistral <> `LlamaIndex` 食谱
 
-在这个笔记本中，我们将演示如何使用 Ollama、Mistral 模型和 LlamaIndex 构建 RAG 管道。将涵盖以下主题：
+在这个笔记本中，我们将演示如何使用 Ollama、Mistral 模型和 `LlamaIndex` 构建 RAG 管道。将涵盖以下主题：
 
-1.  将 Mistral 与 Ollama 和 LlamaIndex 集成。
+1. 将 Mistral 与 Ollama 和 `LlamaIndex` 集成。
 
-1.  使用 Mistral 模型在 Ollama 和 LlamaIndex 中实现 RAG。
+1. 使用 Mistral 模型在 Ollama 和 `LlamaIndex` 中实现 RAG。
 
-1.  使用 RouterQueryEngine 路由查询。
+1. 使用 `RouterQueryEngine` 路由查询。
 
-1.  使用 SubQuestionQueryEngine 处理复杂查询。
+1. 使用 `SubQuestionQueryEngine` 处理复杂查询。
 
 ![](img/e9cf8a738f37a0fe819858c2b9b03abd.png)
 
@@ -98,11 +99,11 @@ https://x.com/rasbt/status/1802327699937009807
 
 它解释了：
 
-1.  如何将数据格式化为1100个指令-响应对
+1. 如何将数据格式化为1100个指令-响应对
 
-1.  如何应用提示样式模板
+1. 如何应用提示样式模板
 
-1.  以及如何使用掩码。
+1. 以及如何使用掩码。
 
 当然，这还包括一个关于实现基于LLM的自动化评估过程的部分。
 
@@ -154,7 +155,7 @@ OpenAI悄悄地删除了对GPT-4 32K的提及，据我所知，他们从未真�
 
 ![](img/3d89dc625009f606f120c8f6705fb253.png)
 
-# 论文
+## 论文
 
 ### Pandora：朝向具有自然语言动作和视频状态的通用世界模型
 
@@ -206,11 +207,13 @@ OpenAI悄悄地删除了对GPT-4 32K的提及，据我所知，他们从未真�
 
 ![](img/e593bd199178229c86e28a9565874afe.png)
 
-### **在评估基准中量化方差**
+### 在评估基准中量化方差
 
 贡献人：
 
 链接：http://arxiv.org/abs/2406.10229v1
+
+
 
 评估基准是衡量大型语言模型（LLMs）能力的基石，也推动了这些能力的进步。评估基准最初设计用于对完全预训练模型的能力（或缺乏能力）提出要求，现在也广泛用于在各种训练选择之间做出决策。尽管被广泛使用，我们很少量化评估基准中的方差，这决定了性能差异是否具有意义。在这里，我们定义并测量了一系列旨在衡量评估基准中方差的指标，包括不同初始化之间的种子方差，以及训练期间的单调性。通过研究大量模型（包括公开可用的和从头开始预训练的模型），我们为各种方差指标提供了经验估计，并给出了从业者的考虑和建议。我们还评估了连续和离散性能指标的效用和权衡，并探讨了更好地理解和减少这种方差的选择。我们发现，简单的改变，如将选择任务（如MMLU）定位为完成任务，通常可以减少小规模模型（~7B）的方差，而灵感来自于人类测试文献的更复杂方法（如项目分析和项目反应理论）往往难以显著减少方差。总的来说，我们的工作提供了对评估基准中方差的见解，提出了减少方差的LM特定技术，并更一般地鼓励从业者在比较模型时仔细考虑方差。
 
@@ -222,7 +225,7 @@ OpenAI悄悄地删除了对GPT-4 32K的提及，据我所知，他们从未真�
 
 链接：http://arxiv.org/abs/2406.10019v1
 
-神经网络规模的增加导致了对高效微调方法的增长需求。最近，引入了一种使用正交矩阵来调整预训练模型权重的正交微调范例。本文介绍了一类新的结构化矩阵，统一和泛化了先前作品中的结构化类别。我们研究了这一类别的属性，并在此基础上构建了结构化正交参数化。然后我们使用这个参数化来修改正交微调框架，提高参数和计算效率。我们在不同领域对我们的方法进行了经验验证，包括调整文本到图像扩散模型和语言建模下游任务微调。此外，我们将我们的构建适应了正交卷积，并进行了1-Lipschitz神经网络的实验。
+神经网络规模的增加导致了对高效微调方法的增长需求。最近，引入了一种使用正交矩阵来调整预训练模型权重的正交微调范例。本文介绍了一类新的结构化矩阵，统一和泛化了先前作品中的结构化类别。我们研究了这一类别的属性，并在此基础上构建了结构化正交参数化。然后我们使用这个参数化来修改正交微调框架，提高参数和计算效率。我们在不同领域对我们的方法进行了经验验证，包括调整文本到图像扩散模型和语言建模下游任务微调。此外，我们将我们的构建适应了正交卷积，并进行了`1-Lipschitz`神经网络的实验。
 
 ![](img/2aaf8111c398647a3942f7d15f7e73dc.png)
 
@@ -270,7 +273,7 @@ Drip 是一款由人工智能驱动的自我反思和日记应用程序，旨在
 
 https://github.com/lamini-ai/Lamini-Memory-Tuning
 
-尽管大型语言模型（LLM）功能强大，但它们经常会产生一些不切实际的幻觉。以前的方法通过让 LLM 获取更多外部知识来减少这些幻觉，但无法完全解决。通过大量实验，研究人员发现，当训练损失超过一定阈值时，LLM 就会产生幻觉，这是之前的方法无法解释的。因此，研究人员设计了一种新的消除幻觉的模型 Lamini-1，它利用大量的记忆专家动态组合，用于存储和检索事实信息，从而减少 LLM 产生幻觉的情况。
+尽管大型语言模型（LLM）功能强大，但它们经常会产生一些不切实际的幻觉。以前的方法通过让 LLM 获取更多外部知识来减少这些幻觉，但无法完全解决。通过大量实验，研究人员发现，当训练损失超过一定阈值时，LLM 就会产生幻觉，这是之前的方法无法解释的。因此，研究人员设计了一种新的消除幻觉的模型 `Lamini-1`，它利用大量的记忆专家动态组合，用于存储和检索事实信息，从而减少 LLM 产生幻觉的情况。
 
 ![](img/d323a4a8e7db638981b9bb5776b2b437.png)
 
@@ -280,7 +283,7 @@ https://github.com/lamini-ai/Lamini-Memory-Tuning
 
 https://github.com/Stability-AI/StableSwarmUI
 
-StableSwarmUI 是一个模块化的 Stable Diffusion 网络用户界面，以提供易于访问的强大功能、高性能和可扩展性为目标，力求成为一个全面的 Stable Diffusion 解决方案。它提供了友好的生成界面和灵活的工作流程选项，支持从简单到复杂的各种图像生成功能，并通过多平台支持和 Docker 容器部署等方式方便用户使用。
+StableSwarmUI 是一个模块化的 Stable Diffusion 网络用户界面，以提供易于访问的强大功能、高性能和可扩展性为目标，力求成为一个全面的 Stable Diffusion 解决方案。它提供了友好的生成界面和灵活的工作流程选项，支持从简单到复杂的各种图像生成功能，并通过多平台支持和 `Docker` 容器部署等方式方便用户使用。
 
 ![](img/f560c2e52f37a21dc80500b9eacbe843.png)
 
@@ -362,7 +365,7 @@ https://mp.weixin.qq.com/s/_WCun-HAKkSQSfh2W0HH5Q
 
 https://baai.org/l/xgtY6
 
-FlagGems是一个基于Triton的高性能算子库，专为大模型优化。V2.0版本实现了66个算子，预计V3.0将增至133+，全面覆盖大模型需求。它通过constexpr优化编译，利用autotune和heuristics智能选择kernel配置，并通过jitfunction实现kernel缓存，减少运行时开销。FlagGems支持自动代码生成，简化算子开发流程，并通过LibEntry装饰器进一步优化性能。算子精度遵循IEEE标准，确保计算准确性。
+`FlagGems`是一个基于`Triton`的高性能算子库，专为大模型优化。V2.0版本实现了66个算子，预计V3.0将增至133+，全面覆盖大模型需求。它通过`constexpr`优化编译，利用`autotune`和`heuristics`智能选择`kernel`配置，并通过`jitfunction`实现`kernel`缓存，减少运行时开销。`FlagGems`支持自动代码生成，简化算子开发流程，并通过`LibEntry`装饰器进一步优化性能。算子精度遵循IEEE标准，确保计算准确性。
 
 ![](img/edae8563cf2a04c3f04a96a6d62f4bfb.png)
 
@@ -428,8 +431,6 @@ https://mp.weixin.qq.com/s/p0WyBuY6kdvPioY128fnSg
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -440,13 +441,13 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
 
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发。
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

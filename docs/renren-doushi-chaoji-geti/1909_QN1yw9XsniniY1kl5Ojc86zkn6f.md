@@ -1,10 +1,9 @@
+
 # 2023-04-04“产品”该如何面对ChatGPT带来的时代变革
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/LLTDdKyc0omVs5x1c69cY8ffnUh](https://xuqiwei1986.feishu.cn/docx/LLTDdKyc0omVs5x1c69cY8ffnUh)
 
 > 🔗 原文链接： h[ttps://www.woshipm](https://www.woshipm.com/pmd/5797181.html).com/pmd/5797181...
-
->
 
 > ChatGPT的到来，让许多行业人人自危，当ChatGPT编程时代到来时，产品经理和产品设计工具如何给出“正确的指令”成为顺应时代变革的关键，那么产品经理该如何面对此次变革？
 

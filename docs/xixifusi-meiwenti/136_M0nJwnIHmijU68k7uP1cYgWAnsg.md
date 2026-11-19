@@ -1,3 +1,4 @@
+
 # 日期只是虚拟的概念，并不会影响时间的连续性
 
 > 来源：[https://docs.feishu.cn/docx/Lkcsdzx1soG8vOxlRzycPa1hnMh](https://docs.feishu.cn/docx/Lkcsdzx1soG8vOxlRzycPa1hnMh)

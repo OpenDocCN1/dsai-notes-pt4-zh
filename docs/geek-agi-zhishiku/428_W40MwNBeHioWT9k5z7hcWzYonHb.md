@@ -1,3 +1,4 @@
+
 # Kubernetes简介与基本概念：带你踏上容器编排之旅！
 
 > 来源：[https://geekbang.feishu.cn/docx/C2HudIiuXoPTT3xhNuTc98wInXc](https://geekbang.feishu.cn/docx/C2HudIiuXoPTT3xhNuTc98wInXc)
@@ -10,97 +11,93 @@
 
 > ⏰ 收录时间：2024-05-27 11:15:56 (UTC+8)
 
-> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=Mzk0ODUzNDc2Mw==&mid=2247485998&idx=1&sn=92de0ee9e1d9db3485ecbf90f8f9d0ea&scene=19#wechat_redirect)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=Mzk0ODUzNDc2Mw==&mid=2247485998&idx=1&sn=92de0ee9e1d9db3485ecbf90f8f9d0ea&scene=19#wechat_redirect
 
 ![](img/59e8d2e873ad00287633c873370dbf69.png)
 
 关注作者，获取更多相关知识
 
-# 一、Kubernetes简介
+## 一、Kubernetes简介
 
-## 1.1、Kubernetes的定义和背景
+### 1.1、Kubernetes的定义和背景
 
 Kubernetes 是一个可移植、可扩展的开源平台。用于管理容器化的工作负载和服务，可促进声明式配置和自动化。是谷歌保密了十几年的秘密武器Borg的开源版本，谷歌一直通过Borg系统管理着数量庞大的应用程序集群。由于Kubernetes是基于容器技术的分布式架构方案，所以不局限于任何编程语言。
 
 Kubernetes是一个可插拔的开放式平台，那些默认的解决方案可都是可选的。Kubernetes为构建开发人员平台提供了基础，但是在重要的地方保留了用户的选择权，拥有更高的灵活性。
 
-## 1.2、Kubernetes 的功能
+### 1.2、Kubernetes 的功能
 
-1.  **服务发现和负载均衡 **，Kubernetes 可以使用 DNS 名称或自己的 IP 地址来曝露容器。如果进入容器的流量很大， Kubernetes 可以负载均衡并分配网络流量，从而使部署稳定。
+1. 服务发现和负载均衡，Kubernetes 可以使用 DNS 名称或自己的 IP 地址来曝露容器。如果进入容器的流量很大，Kubernetes 可以负载均衡并分配网络流量，从而使部署稳定。
 
-1.  **部署和回滚 **，可以通过配置文件描述容器的期望状态，并且以受控的速率将容器的实际状态改为期望状态。支持按部署回滚，支持回滚到指定部署版本。
+2. 部署和回滚，可以通过配置文件描述容器的期望状态，并且以受控的速率将容器的实际状态改为期望状态。支持按部署回滚，支持回滚到指定部署版本。
 
-1.  **弹性伸缩 **，可根据指标配置自动伸缩策略，以应对突发流量。
+3. 弹性伸缩，可根据指标配置自动伸缩策略，以应对突发流量。
 
-1.  **容器配额管理 **，允许为每个容器指定所需的CPU和内存。
+4. 容器配额管理，允许为每个容器指定所需的CPU和内存。
 
-1.  **故障发现和自我修复 **，Kubernetes将自动发现不符合运行状况检查的容器，并且尝试去重启、替换这些容器。在服务准备好之前不会将其通告给客户端。
+5. 故障发现和自我修复，Kubernetes将自动发现不符合运行状况检查的容器，并且尝试去重启、替换这些容器。在服务准备好之前不会将其通告给客户端。
 
-1.  **密钥和配置管理 **，Kubernetes提供secret和configMap，两种资源来分别管理密钥信息和配置信息。
+6. 密钥和配置管理，Kubernetes提供`secret`和`configMap`，两种资源来分别管理密钥信息和配置信息。
 
-1.   **支持多种数据卷类型 **，例如：本地存储、公有云提供商、分布式存储系统等。
+7. 支持多种数据卷类型，例如：本地存储、公有云提供商、分布式存储系统等。
 
-## 1.3、Kubernetes 不能做的事
+### 1.3、Kubernetes 不能做的事
 
-1.  不支持限制应用程序类型。Kubernetes旨在支持多种多样的工作负载，如果应用程序能够在容器中运行，那么就能够在Kubernetes上很好的运行。
+1. 不支持限制应用程序类型。Kubernetes旨在支持多种多样的工作负载，如果应用程序能够在容器中运行，那么就能够在Kubernetes上很好的运行。
 
-1.  不部署源码、也不构建应用。Kubernetes是基于容器技术的平台，所以部署的都是镜像。
+2. 不部署源码、也不构建应用。Kubernetes是基于容器技术的平台，所以部署的都是镜像。
 
-1.  不提供应用程序级别的服务作为内置服务。例如：消息中间件、mysql数据库等。但是这些组件可以运行在Kubernetes上。
+3. 不提供应用程序级别的服务作为内置服务。例如：消息中间件、mysql数据库等。但是这些组件可以运行在Kubernetes上。
 
-#
-
-# 二、Kubernetes 组件
+## 二、Kubernetes 组件
 
 ![](img/446650e6987a0b4d16dd0d5cff600a27.png)
 
-## 2.1、控制平面（master）组件
+### 2.1、控制平面（master）组件
 
 master节点会为集群做出全局决策，比如资源调度，检测和和响应集群事件，例如：启动或删除pod。
 
 master节点通常不运行任何工作负载。
 
-1.  kube-apiserver ,apiserver是 Kubernetes master节点的组件， 该组件负责公开了 Kubernetes API，负责处理接受请求的工作。kube-apiserver 支持高可用部署。
+1. kube-apiserver，apiserver是 Kubernetes master节点的组件，该组件负责公开了 Kubernetes API，负责处理接受请求的工作。kube-apiserver 支持高可用部署。
 
-1.  etcd，兼顾一致性与高可用的键值数据库，用来保存Kubernetes集群数据。
+2. etcd，兼顾一致性与高可用的键值数据库，用来保存Kubernetes集群数据。
 
-1.  kube-scheduler，是master节点组件，负责监视新创建的、未指定运行节点的Pod，并选择节点来运行Pod。
+3. kube-scheduler，是master节点组件，负责监视新创建的、未指定运行节点的Pod，并选择节点来运行Pod。
 
-1.  kube-controller-manager，是master节点组件，负责运行控制器进程。
+4. kube-controller-manager，是master节点组件，负责运行控制器进程。
 
 控制器包括：
 
-+   节点控制器：负责在节点出现故障时进行通知和响应。
++ 节点控制器：负责在节点出现故障时进行通知和响应。
 
-+   任务控制器：监测任务的job对象，创建Pod来执行这些任务。
++ 任务控制器：监测任务的job对象，创建Pod来执行这些任务。
 
-+   端点控制器：填充端点对象，即加入service与pod。
++ 端点控制器：填充端点对象，即加入service与pod。
 
-+   副本控制器：用来确保pod的实际数量与预期数量保持一致。
++ 副本控制器：用来确保pod的实际数量与预期数量保持一致。
 
-+   服务账户和令牌控制器：为新的命名空间创建默认账户和API访问凭据。
++ 服务账户和令牌控制器：为新的命名空间创建默认账户和API访问凭据。
 
-## 2.2、Node节点组件
+### 2.2、Node节点组件
 
-1.  kubelet，在集群中每个节点（node）上运行。它保证容器（containers）都运行在 Pod 中。配合master节点管理node节点，向master节点报告node节点信息，例如：操作系统、Docker版本、机器的CPU和内存情况，以及当前有哪些Pod在运行等。通过定时心跳向master报告节点状态。若超时未能上报节点状态，则master节点会判断该节点为“失联”并调度pod到其他节点运行。
+1. kubelet，在集群中每个节点（node）上运行。它保证容器（containers）都运行在 Pod 中。配合master节点管理node节点，向master节点报告node节点信息，例如：操作系统、Docker版本、机器的CPU和内存情况，以及当前有哪些Pod在运行等。通过定时心跳向master报告节点状态。若超时未能上报节点状态，则master节点会判断该节点为“失联”并调度pod到其他节点运行。
 
-1.  kube-proxy，是集群中每个节点上所运行的网络代理，实现Kubernetes服务（service）概念的一部分。kube-proxy 维护节点上的一些网络规则， 这些网络规则会允许从集群内部或外部的网络会话与 Pod 进行网络通信。
+2. kube-proxy，是集群中每个节点上所运行的网络代理，实现Kubernetes服务（service）概念的一部分。kube-proxy 维护节点上的一些网络规则，这些网络规则会允许从集群内部或外部的网络会话与 Pod 进行网络通信。
 
-1.  容器运行时，例如：docker engine + cri-dockerd。
+3. 容器运行时，例如：docker engine + cri-dockerd。
 
-#
+## 三、Kubernetes基本概念和术语
 
-# 三、Kubernetes基本概念和术语
+### 3.1、Resource
 
-## 3.1、Resource
-
-Kubernetes中的大部分概念如 Node、Pod、Replication Controller、Service 等都可以被看做一种资源对象，几乎所有资源对象都可以通过Kubernetes提供的kubectl工具（或API编程调用）执行增、删、改、查等操作并将其保存在etcd中持久化存储。
+Kubernetes中的大部分概念如 Node、Pod、Replication Controller、Service 等都可以被看做一种资源对象，几乎所有资源对象都可以通过Kubernetes提供的`kubectl`工具（或API编程调用）执行增、删、改、查等操作并将其保存在etcd中持久化存储。
 
 Kubernetes其实是一个高度自动化的资源控制系统，通过跟踪对比etcd库里保存的“资源期望状态”与当前环境的“实际资源状态”的差异来实现自动控制和自动纠错的高级功能。
 
-## 3.2、Kubernetes API version
+### 3.2、Kubernetes API version
 
-查看可用的apiversion命令：
+查看可用的`apiversion`命令：
 
 ```
 kubectl api-versions
@@ -108,21 +105,21 @@ kubectl api-versions
 
 k8s官方将apiversion分成了三个大类型，alpha、beta、stable。
 
-+   Alpha: 未经充分测试，可能存在bug，功能可能随时调整或删除。
++ Alpha: 未经充分测试，可能存在bug，功能可能随时调整或删除。
 
-+   Beta: 经过充分测试，功能细节可能会在未来进行修改。
++ Beta: 经过充分测试，功能细节可能会在未来进行修改。
 
-+   Stable: 稳定版本，将会得到持续支持。
++ Stable: 稳定版本，将会得到持续支持。
 
-## 3.3、Pod（核心概念）
+### 3.3、Pod（核心概念）
 
 Pod 是Kubernetes 最重要的基本概念，是Kubernetes的最小调度单位。每个Pod都有一个特殊的被称为“根容器”的Pause容器。除了Pause跟根容器外，每个Pod还包含了一个或多个紧密相关的用户业务容器。
 
 为什么Kubernetes会这么设计呢？
 
-1.  在实际情况下，存在多个紧密相关的业务容器需要部署为一组容器，那么pod支持将多个容器部署在一个pod，pod里的多个业务容器共享pause的IP和Volume，解决了密切关联的容器之间的通信问题，数据共享问题。
+1. 在实际情况下，存在多个紧密相关的业务容器需要部署为一组容器，那么pod支持将多个容器部署在一个pod，pod里的多个业务容器共享pause的IP和Volume，解决了密切关联的容器之间的通信问题，数据共享问题。
 
-1.  一个pod里面包含多个业务容器，在这种情况下，Kubernetes无法对pod这个整体的状态做出正确的判断。所以引入了Pause根容器，以pause根容器的状态来代表pod的状态。例如：pod是否死亡的问题。
+2. 一个pod里面包含多个业务容器，在这种情况下，Kubernetes无法对pod这个整体的状态做出正确的判断。所以引入了Pause根容器，以pause根容器的状态来代表pod的状态。例如：pod是否死亡的问题。
 
 Kubernetes为每个Pod都分配了唯一的IP地址，称之为Pod IP。一个Pod里的多个容器共享Pod IP地址。
 
@@ -130,9 +127,9 @@ Kubernetes要求底层网络支持集群内任意两个Pod之间的TCP/IP直接�
 
 Pod有两种类型：
 
-1.  普通pod：pod被创建后，会被存放到etcd中，随后被调度到具体的node节点上运行。在默认情况下，当pod里的某个容器停止运行时，Kubernetes会自动检车到这个问题并重新启动这个pod，如果pod所在node机器出现宕机，就会将这个node上的pod重新调度到其他node上。
+1. 普通pod：pod被创建后，会被存放到etcd中，随后被调度到具体的node节点上运行。在默认情况下，当pod里的某个容器停止运行时，Kubernetes会自动检车到这个问题并重新启动这个pod，如果pod所在node机器出现宕机，就会将这个node上的pod重新调度到其他node上。
 
-1.  静态pod：静态pod被存放到某个具体的Nod上的具体的文件当中，并且只在该node上启动、运行，不能被调度到其他节点。例如：master节点组件均是以静态pod的方式运行，文件存放目录为：/etc/kubernetes/manifests/
+2. 静态pod：静态pod被存放到某个具体的Nod上的具体的文件当中，并且只在该node上启动、运行，不能被调度到其他节点。例如：master节点组件均是以静态pod的方式运行，文件存放目录为：`/etc/kubernetes/manifests/`
 
 另外，对于绝大多数容器来说，一个CPU的资源配额相当大，所以在Kubernetes里通常以千分之一的CPU配额为最小单位，用m来表示。通常一个容器的CPU配个被定义为100 ~ 300m，即占用0.1~0.3个CPU。
 
@@ -150,25 +147,25 @@ spec:
         cpu: &quot;500m&quot;
 ```
 
-通常，Requests被设置为一个较小的值，表示容器平时的工作负载情况下的资源需求，而limits设置为峰值负载情况下资源占用的最大值。
+通常，`Requests`被设置为一个较小的值，表示容器平时的工作负载情况下的资源需求，而`limits`设置为峰值负载情况下资源占用的最大值。
 
-## 3.4、Label（核心概念）
+### 3.4、Label（核心概念）
 
-Label（标签）是Kubernetes系统中另外一个核心概念。一个Label是一个key=value的键值对，其中key与value由用户自己指定。Label可以被附加到各种资源对象上，例如：Node、Pod、Service、RC等。
+Label（标签）是Kubernetes系统中另外一个核心概念。一个Label是一个`key=value`的键值对，其中key与value由用户自己指定。Label可以被附加到各种资源对象上，例如：Node、Pod、Service、RC等。
 
 一个资源对象可以定义任意数量的Label，同一个Label也可以被添加到任意数量的资源对象上。通过给指定资源对象绑定Label从而实现资源对象的分组管理，方便Kubernetes进行资源分配、调度和部署等工作。
 
 通过给指定的资源对象绑定一个或多个不同的Label来实现多维度的资源分组管理功能，以便灵活、方便地进行资源分配、调度、部署等管理工作。例如：
 
-版本标签：release:stable、release:beta。
+版本标签：`release:stable`、`release:beta`。
 
-环境标签：environment:dev、environment:qa、environment:production。
+环境标签：`environment:dev`、`environment:qa`、`environment:production`。
 
 通过Label为资源对象贴上相对应的标签，随后通过Label Selector（标签选择器）查询和筛选拥有某些Label的资源对象。当前有两种Label Selector 表达式：
 
-1.  基于等式：name=myweb,env!=production
+1. 基于等式：`name=myweb,env!=production`
 
-1.  基于集合：name in (myweb,myweb1),name not in (myweb,myweb1)
+2. 基于集合：`name in (myweb,myweb1),name not in (myweb,myweb1)`
 
 可通过多个Label Selector 表达式的组合实现复杂的条件选择，多个表达式之间用“,”分隔，条件之间是“AND”关系，即同时满足多个条件。
 
@@ -192,17 +189,17 @@ matchExpressions:
         values: [&quot;frontend&quot;,&quot;backend&quot;]
 ```
 
-## 3.5、Replication Controller（不推荐）
+### 3.5、Replication Controller（不推荐）
 
 Repliacation Controller （简称RC），RC是Kubernetes核心概念之一。简单的说，RC定义了一个期望的场景，即声明某种Pod的副本数量在任何时刻都符合某一个预期值。所以RC的定义包括：
 
-1.  Pod期待的副本数
+1. Pod期待的副本数
 
-1.  用于筛选目标Pod的Label Selector
+2. 用于筛选目标Pod的Label Selector
 
-1.  当Pod的副本数量少于期望值时，用于创建Pod的模板。
+3. 当Pod的副本数量少于期望值时，用于创建Pod的模板。
 
-1.  RC定义如下所示：
+4. RC定义如下所示：
 
 ```
 apiVersion: v1
@@ -235,101 +232,103 @@ spec:
 
 我们定义一个RC后，Kubernetes的controller manager组件会定时巡检目标pod的副本数量是否与预期数量一致。当实际副本数量大于预期数量则关闭一些目标pod，当实际副本数量小于预期数量，则通过RC中pod的定义模板创建一些新的目标Pod。
 
-## 3.6、Replica Set
+### 3.6、Replica Set
 
 Replica Set 是Kubernetes1.2版本中引入的一个新概念，Replica Set 为RC的升级版本。二者的区别在于：RC的Label Selector 只支持基于等式的表达式，而RS的Label Selector 支持基于集合的表达式；在线编辑RS后，RS会自动更新Pod，而RC的修改不会自动更新现有Pod。
 
 RC（Replica Set）作用：
 
-1.  通过定义RC/RS 来自动创建pod以及pod副本数量的自动控制
+1. 通过定义RC/RS 来自动创建pod以及pod副本数量的自动控制
 
-1.  通过Label Selector机制筛选目标pod
+2. 通过Label Selector机制筛选目标pod
 
-1.  通过改变RC/RS所定义的副本数量来实现Pod的所对应服务的伸缩。
+3. 通过改变RC/RS所定义的副本数量来实现Pod的所对应服务的伸缩。
 
-1.  通过改变RC/RS模板中的镜像，可以实现Pod的升级操作。RS
+4. 通过改变RC/RS模板中的镜像，可以实现Pod的升级操作。RS
 
-## 3.7、Deployment（重要概念）
+### 3.7、Deployment（重要概念）
 
 Deployment 是Kubernetes在1.2版本中引入的概念，用于更好的解决pod的部署、升级、回滚等问题。
 
 Deployment 内部会自动创建RS用于Pod的副本控制。Deployment相较于RC/RS有以下优势：
 
-1.  Deployment资源对象会自动创建RS资源对象来完成部署，对Deployment的修改并发布会产生新的RS资源对象，为新的发布版本服务。
+1. Deployment资源对象会自动创建RS资源对象来完成部署，对Deployment的修改并发布会产生新的RS资源对象，为新的发布版本服务。
 
-1.  Deployment支持查看部署进度，以确定部署操作是否完成。
+2. Deployment支持查看部署进度，以确定部署操作是否完成。
 
-1.  更新Deployment，会触发部署从而更新pod，而RC的更新不会自动触发pod的更新。RS可以触发pod更新。
+3. 更新Deployment，会触发部署从而更新pod，而RC的更新不会自动触发pod的更新。RS可以触发pod更新。
 
-1.  Deployment支持Pause操作，暂停之后对Deployment的修改不会触发发布动作。当完成修改之后可以通过Resume 操作来发布新的Deployment。
+4. Deployment支持Pause操作，暂停之后对Deployment的修改不会触发发布动作。当完成修改之后可以通过Resume 操作来发布新的Deployment。
 
-1.  Deployment支持回滚操作，可以回滚到上一个版本或者回滚到指定的发布版本。
+5. Deployment支持回滚操作，可以回滚到上一个版本或者回滚到指定的发布版本。
 
-1.  Deployment 支持重新启动操作，重新启动会触发Pod的更新。
+6. Deployment 支持重新启动操作，重新启动会触发Pod的更新。
 
-1.  Deployment会自动清理不再需要的RS。
+7. Deployment会自动清理不再需要的RS。
 
-## 3.8、Horizontal Pod Autoscaler
+### 3.8、Horizontal Pod Autoscaler
 
 Horizontal Pod Autoscaler（简称HPA），其主要作用是用于Pod横向自动伸缩。根据追踪和分析指定RC/RS控制的所有目标Pod的负载变化情况，来确定是否需要针对性地调整目标Pod的副本数量。
 
-## 3.9、StatefulSet
+### 3.9、StatefulSet
 
 在Kubernetes系统中，Pod的管理对象RC、Deployment、DaemonSet和Job等都是面向无状态的服务。但现实中有很多服务是有状态的，StatefulSet就是用来管理有状态应用的Pod的。和Deployment类似，StatefulSet也是通过Label Selector来管理一组相同定义的Pod。但和Deployment不同的是，StatefulSet为它的每一个Pod都维护了一个唯一的ID。虽然每一个pod都是基于相同的定义文件而创建的，但是它们之间不能相互替换：无论怎么调度，每个pod都有一个永久不变的ID。
 
 哪些情况下应该使用StatefulSet:
 
-1.  需要稳定的、唯一的网络标识的应用程序。
+1. 需要稳定的、唯一的网络标识的应用程序。
 
-1.  需要稳定的持久化存储的应用程序。
+2. 需要稳定的持久化存储的应用程序。
 
-1.  需要有序的部署、更新和缩放的应用程序。
+3. 需要有序的部署、更新和缩放的应用程序。
 
 有哪些限制：
 
-1.  Pod 的存储必须由 PersistentVolume 驱动。
+1. Pod 的存储必须由 PersistentVolume 驱动。
 
-1.  删除或收缩StatefulSet 不会删除关联的存储卷。
+2. 删除或收缩StatefulSet 不会删除关联的存储卷。
 
-1.  需要使用Headless Service来负责Pod的网络标识，因此需要创建Headless Service。
 
-1.  删除StatefulSet时，不能保证删除它管理的Pod。可以通过调整副本数量为0来实现。
+
+1. 需要使用`Headless Service`来负责`Pod`的网络标识，因此需要创建`Headless Service`。
+
+1. 删除`StatefulSet`时，不能保证删除它管理的`Pod`。可以通过调整副本数量为0来实现。
 
 常见的哪些应用程序是有状态的，例如：MySQL集群、MongoDB集群、kafka集群等。
 
 ## 3.10、DaemonSet
 
-DaemonSet 确保全部（或者某些）节点上运行一个 Pod 的副本。当有节点加入集群时， 也会为他们新增一个 Pod 。当有节点从集群移除时，这些 Pod 也会被回收。删除 DaemonSet 将会删除它创建的所有 Pod。
+`DaemonSet` 确保全部（或者某些）节点上运行一个 `Pod` 的副本。当有节点加入集群时， 也会为他们新增一个 `Pod` 。当有节点从集群移除时，这些 `Pod` 也会被回收。删除 `DaemonSet` 将会删除它创建的所有 `Pod`。
 
-DaemonSet 的一些典型用法：
+`DaemonSet` 的一些典型用法：
 
-+   在每个节点上运行集群守护进程
++ 在每个节点上运行集群守护进程
 
-+   在每个节点上运行日志收集守护进程
++ 在每个节点上运行日志收集守护进程
 
-+   在每个节点上运行监控守护进程
++ 在每个节点上运行监控守护进程
 
-一种简单的用法是为每种类型的守护进程在所有的节点上都启动一个 DaemonSet。一个稍微复杂的用法是为同一种守护进程部署多个 DaemonSet；每个具有不同的标志， 并且对不同硬件类型具有不同的内存、CPU 要求。
+一种简单的用法是为每种类型的守护进程在所有的节点上都启动一个 `DaemonSet`。一个稍微复杂的用法是为同一种守护进程部署多个 `DaemonSet`；每个具有不同的标志， 并且对不同硬件类型具有不同的内存、CPU 要求。
 
 ## 3.11、Service（重要概念）
 
-Service服务也是Kubernetes里的核心资源对象之一，其主要作用是将运行在一组Pods上的应用程序公开为网络服务，这其实就是我们经常提起的微服务。通过service资源对象定义一个service的访问入口地址。前端应用通过访问这个入口，从而访问其背后的一组有Pod副本组成的集群实例。service所针对的目标Pods集合通常通过Label Selector来确定，如下图：
+`Service`服务也是Kubernetes里的核心资源对象之一，其主要作用是将运行在一组`Pods`上的应用程序公开为网络服务，这其实就是我们经常提起的微服务。通过`service`资源对象定义一个`service`的访问入口地址。前端应用通过访问这个入口，从而访问其背后的一组有`Pod`副本组成的集群实例。`service`所针对的目标`Pods`集合通常通过`Label Selector`来确定，如下图：
 
 ![](img/1907b2bd94db3678e678d9cfde59eeb0.png)
 
-Service 一旦被定义，就被分配了一个不可变更的Cluster IP，在整个Service的生命周期内，该IP地址都不会发生改变。
+`Service` 一旦被定义，就被分配了一个不可变更的`Cluster IP`，在整个`Service`的生命周期内，该IP地址都不会发生改变。
 
 ## 3.12、Job
 
-Job即工作任务，Job 会创建一个或者多个 Pods，来执行工作任务。Job会跟踪记录成功完成的Pod数量，当成功完成的数量达到了指定的成功个数时，Job结束。当执行过程中Pod出现失败的情况，Job会创建新的Pod来替代该Pod。删除 Job 的操作会清除所创建的全部 Pods。挂起 Job 的操作会删除 Job的所有活跃 Pod，直到 Job 被再次恢复执行。Job通常为单次任务，如果需要运行定时Job则应该使用CronJob。
+`Job`即工作任务，`Job` 会创建一个或者多个 `Pods`，来执行工作任务。`Job`会跟踪记录成功完成的`Pod`数量，当成功完成的数量达到了指定的成功个数时，`Job`结束。当执行过程中`Pod`出现失败的情况，`Job`会创建新的`Pod`来替代该`Pod`。删除 `Job` 的操作会清除所创建的全部 `Pods`。挂起 `Job` 的操作会删除 `Job`的所有活跃 `Pod`，直到 `Job` 被再次恢复执行。`Job`通常为单次任务，如果需要运行定时`Job`则应该使用`CronJob`。
 
 ## 3.13、Volume
 
-Volume 是k8s抽象出来的对象，用于解决Pod中的容器运行时，文件存放的问题以及多容器数据共享的问题。Pod 可以同时使用任意数量的Volume类型。临时卷类型的生命周期与 Pod 相同，但持久卷的生命周期与Pod无关。当 Pod 不再存在时，Kubernetes 会销毁临时卷；不过 Kubernetes 不会销毁持久卷。对于给定 Pod 中任何类型的卷，在容器重启期间数据都不会丢失，也就是说数据卷的生命周期与容器无关。Volume的核心是一个目录，其中可能存有数据，Pod 中的容器可以访问该目录中的数据。所采用的特定的Volume类型将决定该目录如何形成的、使用何种介质保存数据以及目录中存放的内容。
+`Volume` 是k8s抽象出来的对象，用于解决`Pod`中的容器运行时，文件存放的问题以及多容器数据共享的问题。`Pod` 可以同时使用任意数量的`Volume`类型。临时卷类型的生命周期与 `Pod` 相同，但持久卷的生命周期与`Pod`无关。当 `Pod` 不再存在时，Kubernetes 会销毁临时卷；不过 Kubernetes 不会销毁持久卷。对于给定 `Pod` 中任何类型的卷，在容器重启期间数据都不会丢失，也就是说数据卷的生命周期与容器无关。`Volume`的核心是一个目录，其中可能存有数据，`Pod` 中的容器可以访问该目录中的数据。所采用的特定的`Volume`类型将决定该目录如何形成的、使用何种介质保存数据以及目录中存放的内容。
 
-Volume 支持多种Volume类型，例如：cephfs、configMap、csi、downwardAPI、emptyDir、fc(fibre channel)、gcePersistentDisk、glusterfs、hostPath、iscsi、local、nfs、persistentVolumeClaim、projected、secret、rbd等。
+`Volume` 支持多种`Volume`类型，例如：`cephfs`、`configMap`、`csi`、`downwardAPI`、`emptyDir`、`fc(fibre channel)`、`gcePersistentDisk`、`glusterfs`、`hostPath`、`iscsi`、`local`、`nfs`、`persistentVolumeClaim`、`projected`、`secret`、`rbd`等。
 
-Volume的使用比较简单，通常情况下，我们在Pod上声明一个Volume,然后再容器里引用该Volume并挂载到容器的某个目录上即可，例如：
+`Volume`的使用比较简单，通常情况下，我们在`Pod`上声明一个`Volume`,然后在容器里引用该`Volume`并挂载到容器的某个目录上即可，例如：
 
 ```
 template：
@@ -350,11 +349,11 @@ template：
 
 ## 3.14、Persistent Volume
 
-持久卷（PersistentVolume，PV）是集群中的一块存储，可以由管理员事先供应，或者 使用存储类（Storage Class）来动态供应。持久卷是集群资源，就像节点也是集群资源一样。PV 持久卷和普通的Volume 一样，也是使用Volume插件来实现的，只是它们拥有独立的生命周期。
+持久卷（`PersistentVolume`，`PV`）是集群中的一块存储，可以由管理员事先供应，或者 使用存储类（`Storage Class`）来动态供应。持久卷是集群资源，就像节点也是集群资源一样。`PV` 持久卷和普通的`Volume` 一样，也是使用`Volume`插件来实现的，只是它们拥有独立的生命周期。
 
-Pod通过PersistentVolumeClaim（PVC）来申领PV作为存储卷使用。集群会通过PVC找到其绑定的PV，并将该PV挂载到Pod。
+`Pod`通过`PersistentVolumeClaim`（`PVC`）来申领`PV`作为存储卷使用。集群会通过`PVC`找到其绑定的`PV`，并将该`PV`挂载到`Pod`。
 
-下面是一个NFS类型的PV的一个YAML定义文件，声明了8Gi的存储空间：
+下面是一个`NFS`类型的`PV`的一个YAML定义文件，声明了8Gi的存储空间：
 
 ```
 apiVersion: v1
@@ -371,15 +370,15 @@ spec:
         server: 192.168.0.106
 ```
 
-PV的accessModes属性：
+`PV`的`accessModes`属性：
 
-1.  ReadWriteOnce：读写权限，只允许被单个Node挂载。
+1. `ReadWriteOnce`：读写权限，只允许被单个`Node`挂载。
 
-1.  ReadOnlyMany：只读权限，允许被多个Node挂载。
+1. `ReadOnlyMany`：只读权限，允许被多个`Node`挂载。
 
-1.  ReadWriteMany：读写权限，允许被多个Node挂载。
+1. `ReadWriteMany`：读写权限，允许被多个`Node`挂载。
 
-如果某个Pod需要申请某种类型的PV，则需要先定义一个PersistentVolumeClaim对象：
+如果某个`Pod`需要申请某种类型的`PV`，则需要先定义一个`PersistentVolumeClaim`对象：
 
 ```
 apiVersion: v1
@@ -394,7 +393,7 @@ spec:
           storage: 8Gi
 ```
 
-然后，在Pod的Volume定义中引用PVC即可：
+然后，在`Pod`的`Volume`定义中引用`PVC`即可：
 
 ```
 volumes:
@@ -403,49 +402,47 @@ volumes:
           claimName: myclaim
 ```
 
-最后说说PV的状态；PV的状态包括以下几种：
+最后说说`PV`的状态；`PV`的状态包括以下几种：
 
-1.  Available：空闲状态。
+1. `Available`：空闲状态。
 
-1.  Bound：已经绑定到某个PVC上。
+1. `Bound`：已经绑定到某个`PVC`上。
 
-1.  Released：对应的PVC已经被删除，但资源还没有被集群回收。
+1. `Released`：对应的`PVC`已经被删除，但资源还没有被集群回收。
 
-1.  Failed：PV自动回收失败。
+1. `Failed`：`PV`自动回收失败。
 
 ## 3.15、Namespace（重要的概念）
 
-Namespace（命名空间）是Kubernetes系统中的另一个非常重要的概念，主要提供资源隔离。通过命名空间可以将同一个集群中的资源划分为相互隔离的组。统一命名空间下的资源名称必须唯一，但是不同命名空间下的资源名称可以一样。命名空间的作用仅针对那些带有命名空间的资源对象，例如：
+`Namespace`（命名空间）是Kubernetes系统中的另一个非常重要的概念，主要提供资源隔离。通过命名空间可以将同一个集群中的资源划分为相互隔离的组。统一命名空间下的资源名称必须唯一，但是不同命名空间下的资源名称可以一样。命名空间的作用仅针对那些带有命名空间的资源对象，例如：
 
-Deployment，service，pod，rc等。对集群对象不适用，例如：Node，namespace，PV等。
+`Deployment`，`service`，`pod`，`rc`等。对集群对象不适用，例如：`Node`，`namespace`，`PV`等。
 
 ## 3.16、Annotation
 
-Annotation（注解）与Label类似，也是使用key/value键值对的形式进行定义。不同的是Label 义的是Kubernetes对象的元数据（metadata），并且用于Label Selector。Annotation 则是用户任意定义的附加信息，以便于外部工具查找。
+`Annotation`（注解）与`Label`类似，也是使用`key/value`键值对的形式进行定义。不同的是`Label` 义的是Kubernetes对象的元数据（`metadata`），并且用于`Label Selector`。`Annotation` 则是用户任意定义的附加信息，以便于外部工具查找。
 
 ## 3.17、ConfigMap
 
-ConfigMap用于将其他资源对象所需要使用的非机密配置项的数据保存在键值对中。
+`ConfigMap`用于将其他资源对象所需要使用的非机密配置项的数据保存在键值对中。
 
 例如：应用程序的配置文件。如此一来，就可以集中管理集群所使用的所有配置项。
 
 ## 3.18、Secret
 
-Secret与ConfigMap类似，但是Secret是专门用来存储机密数据的。
-
-#
+`Secret`与`ConfigMap`类似，但是`Secret`是专门用来存储机密数据的。
 
 # 总结
 
-1.  Pod是Kubernetes非常重要的概念，就像容器对于docker的重要性；Pod和容器的区别：一个Pod可以包含多个容器，一个Pod一定有一个根容器，网络和数据卷都是挂在在根容器下。
+1. `Pod`是Kubernetes非常重要的概念，就像容器对于`docker`的重要性；`Pod`和容器的区别：一个`Pod`可以包含多个容器，一个`Pod`一定有一个根容器，网络和数据卷都是挂在在根容器下。
 
-1.  Label类似🛰️朋友里的标签，用于资源管理的，在kubernetes中做资源管理。比如service里的Label可作为负载均衡的一个依据。
+1. `Label`类似🛰️朋友里的标签，用于资源管理的，在`kubernetes`中做资源管理。比如`service`里的`Label`可作为负载均衡的一个依据。
 
-1.  RC（replication controller）已不推荐使用，可以使用deployment进行部署，比RC更具优势。
+1. `RC`（`replication controller`）已不推荐使用，可以使用`deployment`进行部署，比`RC`更具优势。
 
-1.  replica set（简称RS）是一个升级版的RC，但是通常不会显式的使用它，由kubernetes系统自动使用它。
+1. `replica set`（简称`RS`）是一个升级版的`RC`，但是通常不会显式的使用它，由`kubernetes`系统自动使用它。
 
-1.  deployment用于部署无状态应用；有状态应用使用StatefulSet部署。
+1. `deployment`用于部署无状态应用；有状态应用使用`StatefulSet`部署。
 
 欢迎关注我的👸号
 

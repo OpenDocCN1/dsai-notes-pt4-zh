@@ -1,67 +1,76 @@
+
 # 2.5 长短期记忆网络 LSTM
 
 > 来源：[https://aicarrier.feishu.cn/docx/CSEhds3DmoY0o7xL6JEcU9rGnLh](https://aicarrier.feishu.cn/docx/CSEhds3DmoY0o7xL6JEcU9rGnLh)
 
-# LSTM介绍
+## LSTM介绍
 
 LSTM是一种时间循环网络（RNN），是为了解决RNN存在的长期依赖问题而专门设计出来的。
 
-+   长期依赖问题：指的是RNN在处理序列状态的数据时，会遇到某个时间点的输出依赖于很久之前的输入或者这个时间点的隐状态时，就称这个问题是长期依赖问题。
++ 长期依赖问题：指的是RNN在处理序列状态的数据时，会遇到某个时间点的输出依赖于很久之前的输入或者这个时间点的隐状态时，就称这个问题是长期依赖问题。
 
-+   具体来说，由于RNN共享同一个权重矩阵，在网络层次比较深，也就是序列长度过长的时候，每次参数的更新都需要这个权重矩阵进行乘法操作，在某个时刻，矩阵中某个值很小（或很大），那么随着层数的增加，梯度会指数级衰减直至为零（或者梯度会指数级增加，导致某些权重更新幅度过大，这会使得学习过程不稳定，模型可能会发散从而导致训练失败）。
++ 具体来说，由于RNN共享同一个权重矩阵，在网络层次比较深，也就是序列长度过长的时候，每次参数的更新都需要这个权重矩阵进行乘法操作，在某个时刻，矩阵中某个值很小（或很大），那么随着层数的增加，梯度会指数级衰减直至为零（或者梯度会指数级增加，导致某些权重更新幅度过大，这会使得学习过程不稳定，模型可能会发散从而导致训练失败）。
 
-+   **LSTM之所以**能够解决RNN的长期依赖问题，是因为LSTM引入了门（gate）机制用于控制特征的流通和损失。
++ LSTM之所以能够解决RNN的长期依赖问题，是因为LSTM引入了门（gate）机制用于控制特征的流通和损失。
 
-# LSTM架构
+## LSTM架构
 
 LSTM单元包括以下五个部分（有的文章内会说明有四个部分，这是将细胞态和隐状态结合了）：
 
-+   遗忘门（Forget Gate）：决定哪些先前的记忆（即单元状态中的信息）需要被遗忘。使用sigmoid函数，生成一个指示哪些旧信息应被丢弃的向量。
+### 遗忘门（Forget Gate）
 
-a.   是遗忘门的输出，决定了上一个时间步细胞态 中的哪些部分要遗忘。
+决定哪些先前的记忆（即单元状态中的信息）需要被遗忘。使用`sigmoid`函数，生成一个指示哪些旧信息应被丢弃的向量。
 
-b.   是sigmoid函数，它将输入映射到(0, 1)之间，代表每个元素保留的比例。
+a. 是遗忘门的输出，决定了上一个时间步细胞态 中的哪些部分要遗忘。
 
-c.  遗忘门的权重矩阵。
+b. 是`sigmoid`函数，它将输入映射到(0, 1)之间，代表每个元素保留的比例。
 
-d.  是一个拼接向量，包含上一时间步的隐藏状态 和当前时间步的输入 。
+c. 遗忘门的权重矩阵。
 
-e.  是遗忘门的偏置项。
+d. 是一个拼接向量，包含上一时间步的隐藏状态 和当前时间步的输入 。
 
-+   **输入门（Input Gate）**：
+e. 是遗忘门的偏置项。
 
-1.决定当前输入中哪些部分需要存储到细胞态（Cell State）中。它通过sigmoid函数生成一个介于0到1之间的向量，表示每个维度上新信息的保留程度。
+### 输入门（Input Gate）
+
+1. 决定当前输入中哪些部分需要存储到细胞态（Cell State）中。它通过`sigmoid`函数生成一个介于0到1之间的向量，表示每个维度上新信息的保留程度。
 
 表示输入门的输出，决定新信息中哪些部分应该被更新到细胞状态中。其余和遗忘门类似。
 
-2.计算候选细胞状态
+2. 计算候选细胞状态
 
-是候选值，代表希望添加到细胞状态的新信息，通过tanh函数进行压缩。
+是候选值，代表希望添加到细胞状态的新信息，通过`tanh`函数进行压缩。
 
-+   **细胞态（Cell State）**：这是LSTM的记忆单元，可以看作是一种长期记忆存储器。它能够选择性地添加新的信息（通过输入门）和遗忘旧的信息（通过遗忘门）。
+### 细胞态（Cell State）
+
+这是LSTM的记忆单元，可以看作是一种长期记忆存储器。它能够选择性地添加新的信息（通过输入门）和遗忘旧的信息（通过遗忘门）。
 
 表示逐元素乘法
 
-+   输出门（Output Gate）：决定哪些存储在单元状态中的信息应该被用于当前时间步的输出。
+### 输出门（Output Gate）
 
-+   隐状态（Hidden State）：隐藏状态 是基于当前细胞状态和 输出门 的输出：
+决定哪些存储在单元状态中的信息应该被用于当前时间步的输出。
+
+### 隐状态（Hidden State）
+
+隐藏状态 是基于当前细胞状态和 输出门 的输出：
 
 将细胞状态转换为-1到1的范围，然后通过与输出门的逐元素乘法确定最终输出。
 
 ![](img/77d7b46dcd0a71ffa2fc3f6e69350048.png)
 
-# 使用LSTM进行简单的文本生成1
+## 使用LSTM进行简单的文本生成1
 
 ```
-import **torch**
-fro**m t**orch** im**port** nn**
-fro**m t**orch.utils**.data** imp**ort** Dat**ase**t, D**ata**Loader**
-im**port ran**dom**
+import torch
+from torch import nn
+from torch.utils.data import Dataset, DataLoader
+import random
 
 # 数据预处理
 class TextDataset(Dataset):
-    def __init__(se**l**f, text, seq_length**):
- **       self.chars = sorted(list(set(text)))
+    def __init__(self, text, seq_length):
+        self.chars = sorted(list(set(text)))
         self.vocab_size = len(self.chars)
         self.char_to_idx = {char: idx for idx, char in enumerate(self.chars)}
         self.idx_to_char = {idx: char for idx, char in enumerate(self.chars)}
@@ -133,15 +142,15 @@ def generate_text(model, start_token, num_generate, device, temperature=1.0):
     return generated.cpu().numpy().flatten()
 
 # 主程序
-if __name__ == &quot;__main__&quot;:
-    text = &quot;Hello, this is an example of text used for LSTM text generation. Let&#x27;s generate some text!&quot;
+if __name__ == "__main__":
+    text = "Hello, this is an example of text used for LSTM text generation. Let's generate some text!"
     seq_length = 50
     batch_size = 32
     embedding_dim = 256
     hidden_dim = 512
     n_layers = 2
     n_epochs = 100
-    device = torch.device(&quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     dataset = TextDataset(text, seq_length)
     data_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
@@ -152,23 +161,22 @@ if __name__ == &quot;__main__&quot;:
     
     for epoch in range(1, n_epochs + 1):
         loss = train(model, data_loader, criterion, optimizer, device)
-        print(f&quot;Epoch: {epoch}/{n_epochs}, Loss: {loss:.4f}&quot;)
+        print(f"Epoch: {epoch}/{n_epochs}, Loss: {loss:.4f}")
     
     start_token = dataset.get_random_start().unsqueeze(0).to(device)
     generated_text = generate_text(model, start_token, num_generate=200, device=device)
     
     # 将索引转换回字符并打印生成的文本
     generated_chars = [dataset.idx_to_char[int(idx)] for idx in generated_text]
-    print(&#x27;&#x27;.join(generated_chars))
-
+    print(''.join(generated_chars))
 ```
 
 结果：
 
 ![](img/3e2178ce07793efdd5d1962cd254edb5.png)
 
-# 参考：
+## 参考：
 
-[1]https://baike.baidu.com/item/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/17541107?fr=ge_ala
+[1] https://baike.baidu.com/item/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/17541107?fr=ge_ala
 
-[2]https://medium.com/@divyanshu132/lstm-and-its-equations-5ee9246d04af
+[2] https://medium.com/@divyanshu132/lstm-and-its-equations-5ee9246d04af

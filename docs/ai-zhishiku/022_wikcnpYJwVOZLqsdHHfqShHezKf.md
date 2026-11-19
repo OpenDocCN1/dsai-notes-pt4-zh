@@ -1,12 +1,13 @@
+
 # 国外现象级 AI 产品
 
 > 来源：[https://my.feishu.cn/docx/CIU1dBeuDoMd0rx5W9lc0mpBnEc](https://my.feishu.cn/docx/CIU1dBeuDoMd0rx5W9lc0mpBnEc)
 
-# 微软
+## 微软
 
 > New Bing :  www.bing.com/new
 
-## 如何体验 New Bing
+### 如何体验 New Bing
 
 1、在官网下周再开发版本（[https://www.microsoftedgeinside](https://www.microsoftedgeinsider.com/zh-cn/download)r.com/zh-cn/download）
 
@@ -36,9 +37,9 @@
 
 ![](img/f523e1d25e75f4494d649170bff995c4.png)
 
-## 常见问题
+### 常见问题
 
-### 登录 New Bing 总是跳转问题
+#### 登录 New Bing 总是跳转问题
 
 a.切记下载【开发】版本
 
@@ -48,11 +49,11 @@ c.清除 cookie，【浏览器重启】
 
 d.记得【开魔法】
 
-# 谷歌
+## 谷歌
 
 > 巴德-Bard
 
-## 如何体验 Bard
+### 如何体验 Bard
 
 +   [bard.google.com](http://bard.google.com/)  （申请加入体验切记选取 us 节点），申请通过后，就可以直接输入 bard.google.com 体验了
 
@@ -60,9 +61,9 @@ d.记得【开魔法】
 
 ![](img/5c43a8855c6efddbb8d929467b1721b1.png)
 
-## 常见问题
+### 常见问题
 
-### 1、**B**ard isn’t currently supported in your country. Stay tuned!
+#### 1、`Bard isn’t currently supported in your country. Stay tuned!`
 
 ![](img/bb3ca5a42d0346a70f1e76c9c0e5ca23.png)
 

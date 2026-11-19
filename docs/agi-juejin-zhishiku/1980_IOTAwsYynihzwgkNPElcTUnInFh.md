@@ -1,8 +1,7 @@
-# 06.19-Midjourney 推出其首个 AI 视频生成模型 V1：支持图像转视频 + 21 秒最长时长
-
-> 来源：[https://agijuejin.feishu.cn/docx/A5zcdukpwoHVHlx6JAScz2njn1b](https://agijuejin.feishu.cn/docx/A5zcdukpwoHVHlx6JAScz2njn1b)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 06 月 19 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/A5zcdukpwoHVHlx6JAScz2njn1b](https://agijuejin.feishu.cn/docx/A5zcdukpwoHVHlx6JAScz2njn1b)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

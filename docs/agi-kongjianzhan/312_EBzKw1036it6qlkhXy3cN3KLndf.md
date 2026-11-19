@@ -1,3 +1,4 @@
+
 # KimiChat 上线新功能，一键生成 PPT 太香了！
 
 > 来源：[https://agispace.feishu.cn/docx/IvsudGUo7oPjujxxNdEcER2ynuc](https://agispace.feishu.cn/docx/IvsudGUo7oPjujxxNdEcER2ynuc)
@@ -10,13 +11,11 @@
 
 ![](img/6c4540346822d60f20a888d4107c34ec.png)
 
-关注 “**AI 工具派****”**
+关注 “AI 工具派”
 
 探索最新 AI 工具，发现 AI 带来的无限可能性！
 
-**
-
-近**期推荐
+## 近期推荐
 
 +   PPT：[Tome](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651422220&idx=1&sn=53c877ebc4ae8bb93680cd616e46d7ea&chksm=8b96aef7bce127e14a1f0427e7bdaf65813c5f56ad28b6c41df869a9d86aed4ffba8af4717c2&scene=21#wechat_redirect)｜[美图PPT](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651422061&idx=1&sn=b63315fcf9f8be34d1d28a0d76824bfb&chksm=8b96ad96bce12480b6cd01e9fdbf91a1d8bfc975afb33b5f13086e06e8b1327a480b8ff8f755&scene=21#wechat_redirect)｜[AiPPT](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651421536&idx=1&sn=14a3424fc4f5dd8636686ccccdfb1bde&chksm=8b96ab9bbce1228d94e3ac0d5f5f8609fb3b0b67f8b6a89c647081de79822314ea7b896a9184&scene=21#wechat_redirect)｜[Gamma](http://mp.weixin.qq.com/s?__biz=MzA5MjU0NzQ3Ng==&mid=2651421496&idx=1&sn=e67161b6699514f1f986bb20e5ce83d3&chksm=8b96abc3bce122d565165a2628de0644f8e37ad9a4c721fd735331ed4176b95b9c08a9153c81&scene=21#wechat_redirect)
 
@@ -34,15 +33,15 @@
 
 ![](img/dbd3a7b993b0cfb7fe3f91de8ad24e1c.png)
 
-自从 KimiChat() 推出“Kimi+”后，一直没有什么反响，**今天官方终于又添加新**功能**了，此次带来携手“A**iPPT.cn”带来“一键生成 PPT”功能，对用户来说实在太友好了。
+自从 `KimiChat()` 推出“Kimi+”后，一直没有什么反响，今天官方终于又添加新功能了，此次带来携手 `AiPPT.cn` 带来“一键生成 PPT”功能，对用户来说实在太友好了。
 
 ![](img/e984495b87b234dc90daf600af2b8a8d.png)
 
-> 官方介绍《[**用 Kimi 做 PPT，爽了**](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247484703&idx=1&sn=2e2f36a2ec0a020a8501649255f9fd07&scene=21#wechat_redirect)
+> 官方介绍《[用 Kimi 做 PPT，爽了](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247484703&idx=1&sn=2e2f36a2ec0a020a8501649255f9fd07&scene=21#wechat_redirect)》
 
-> AiPPT 官网：https://www.aippt.cn/
+> AiPPT 官网：`https://www.aippt.cn/`
 
-**Chris 第一时间进行**体验，接下来就和 Chris 一起看下““一键生成 PPT””功能如何吧。
+Chris 第一时间进行体验，接下来就和 Chris 一起看下“一键生成 PPT”功能如何吧。
 
 下面 Chris 通过视频一起看下使用过程：
 
@@ -74,7 +73,7 @@
 
 ### 6.生成完成，继续编辑
 
-**生成完成**后**，就可以**进**入编辑器**，进行各种细节调整啦，也可以“放映”、“拼图”和“下载”：
+生成完成后，就可以进入编辑器，进行各种细节调整啦，也可以“放映”、“拼图”和“下载”：
 
 ## 二、细节功能
 
@@ -82,15 +81,15 @@ Chris 还注意到几个细节功能，分享给大家：
 
 ### 1.下载历史 PPT
 
-**对于生成完的 P**P**T，可以在对话后**面**，找到下载按钮，**支持“下载 PPT”、“下载 PDF”和“编辑 PPT”：
+对于生成完的 PPT，可以在对话后面，找到下载按钮，支持“下载 PPT”、“下载 PDF”和“编辑 PPT”：
 
 ### 2.快捷指令唤醒 PPT 助手
 
-使用时还可以在对话框中，直接输入“@PPT 助手”唤醒，非常方便：
+使用时还可以在对话框中，直接输入 `@PPT 助手` 唤醒，非常方便：
 
 ### 3.下载可编辑的 PPT
 
-在下载 PPT 时，可以选择**“文字可编辑”**的方式，这非常有用，因为我们经常需要下载后进行调整：
+在下载 PPT 时，可以选择 `“文字可编辑”` 的方式，这非常有用，因为我们经常需要下载后进行调整：
 
 ## 三、体验总结
 

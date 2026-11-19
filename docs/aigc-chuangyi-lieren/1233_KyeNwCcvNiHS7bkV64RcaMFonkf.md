@@ -1,3 +1,4 @@
+
 # 20270822-2024年消费者生成式AI应用榜单Top100揭晓，你用过哪几个？
 
 > 来源：[https://aigcreative.feishu.cn/docx/R1X3dcr8noxEsgxMxfrcRjYWnac](https://aigcreative.feishu.cn/docx/R1X3dcr8noxEsgxMxfrcRjYWnac)
@@ -48,8 +49,6 @@
 
 在未来的十年里，AI无疑将成为定义新行业的关键力量。
 
-而对于我们每一个人来说，
-
-拥抱AI，就是拥抱未来。
+而对于我们每一个人来说，拥抱AI，就是拥抱未来。
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

@@ -1,3 +1,4 @@
+
 # 8.19 生命的延续？马斯克：未来人类记忆可“迁移”至机器人
 
 > 来源：[https://agijuejin.feishu.cn/docx/D6XLdFQhDo4PUTxHR2QcEZuHnTf](https://agijuejin.feishu.cn/docx/D6XLdFQhDo4PUTxHR2QcEZuHnTf)
@@ -20,7 +21,7 @@ AI 初创公司 Exists 发布新平台，允许无编程基础的用户通过文
 
 AI面｜[阅读原文](https://sourl.co/Nn8FY3)
 
-阿里巴巴开发的 UniPortrait AI 模型，以其高度自然的照片编辑效果脱颖而出。该工具不仅能够将照片转换为动漫风格，还能精准处理多人合照和换脸，避免了传统 AI 换脸技术中的五官模糊和表情僵硬问题。UniPortrait 利用"ID 嵌入"和"ID 路由"技术，确保了修改的准确性和个性化。此外，它还能与 ComfyUI 等其他 AI 工具结合，创造出更多创新玩法，如动态漫画制作。
+阿里巴巴开发的 UniPortrait AI 模型，以其高度自然的照片编辑效果脱颖而出。该工具不仅能够将照片转换为动漫风格，还能精准处理多人合照和换脸，避免了传统 AI 换脸技术中的五官模糊和表情僵硬问题。UniPortrait 利用`ID` 嵌入和`ID` 路由技术，确保了修改的准确性和个性化。此外，它还能与 ComfyUI 等其他 AI 工具结合，创造出更多创新玩法，如动态漫画制作。
 
 ### 💡 NVIDIA Llama-3.1-Minitron 4B：造就小而强的 AI 模型
 

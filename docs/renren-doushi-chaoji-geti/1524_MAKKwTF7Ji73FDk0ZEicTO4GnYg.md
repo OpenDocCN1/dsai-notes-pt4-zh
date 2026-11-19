@@ -1,14 +1,13 @@
-# 2023-08-28用ChatGPT写个爬虫爬取🛰️👸号文章
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/UlrndTcTooLXP3xpk7qc38ttn9f](https://xuqiwei1986.feishu.cn/docx/UlrndTcTooLXP3xpk7qc38ttn9f)
+# 2023-08-28 用ChatGPT写个爬虫爬取🛰️👸号文章
 
-> 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_wjngo2xhrjn1.html)xq.com/id_wjngo2...
+> 来源：https://xuqiwei1986.feishu.cn/docx/UlrndTcTooLXP3xpk7qc38ttn9f
 
->
+> 🔗 原文链接：https://articles.zsxq.com/id_wjngo2xhrjn1.html
 
 在赚钱看到很多圈友用ChatGPT写代码，今天分享一个我以前用ChatGPT写的爬虫。
 
-3月底的时候，AIGC比较火，天天在知乎和🛰️里面刷相关内容，切换app比较麻烦，就想到了用爬虫去爬一些比较火的文章去读，于是想到了搜狗(搜狗里面有知乎和🛰️的搜索)，在搜狗中搜索【AIGC】抓取每天发布的阅读量高的文章来看。
+3月底的时候，AIGC比较火，天天在知乎和🛰️里面刷相关内容，切换app比较麻烦，就想到了用爬虫去爬一些比较火的文章去读，于是想到了搜狗(搜狗里面有知乎和🛰️的搜索)，在搜狗中搜索【`AIGC`】抓取每天发布的阅读量高的文章来看。
 
 当时ChatGPT也是🔥的不行，于是就用ChatGPT写了个爬虫做这件事，下面是实操的步骤👇🏻
 
@@ -26,17 +25,12 @@
 
 按以下要求写一个爬虫程序
 
-1.使用python和selenium
-
-2.网站 URL:weixin.sogou.com
-
-3.输入关键字 [AIGC]
-
-4.爬取标题、链接、来源
-
-5.抓取前10页的内容
-
-6.爬取的结果输出到Excel文件中,Excel文件命名为AIGC+🛰️+日期
+1. 使用`python`和`selenium`
+2. 网站 URL:`weixin.sogou.com`
+3. 输入关键字 [`AIGC`]
+4. 爬取标题、链接、来源
+5. 抓取前10页的内容
+6. 爬取的结果输出到Excel文件中,Excel文件命名为`AIGC`+🛰️+日期
 
 如图：
 
@@ -44,6 +38,7 @@
 
 ChatGPT生成第一版代码
 
+```python
 import os
 
 from datetime import datetime
@@ -74,11 +69,11 @@ driver = webdriver.Chrome(chromedriver_path)
 
 # 打开网站URL
 
-[driver.get ](http://driver.get/)( " https://weixin.sogou.com " )
+driver.get(" https://weixin.sogou.com ")
 
 # 找到搜索框并输入关键字
 
-search_box = driver.find_element(By.ID, "query" )
+search_box = driver.find_element(By.ID, "query")
 
 search_box.send_keys(keyword)
 
@@ -86,69 +81,70 @@ search_box.send_keys(Keys.ENTER)
 
 # 循环爬取前10页的内容
 
-for page in range ( 1 , 11 ):
+for page in range(1, 11):
 
-# 等待页面加载完成
+    # 等待页面加载完成
 
-WebDriverWait(driver, 10 ).until(EC.presence_of_element_located((By.CLASS_NAME, "news-list" )))
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "news-list")))
 
-# 获取当前页面的所有文章元素
+    # 获取当前页面的所有文章元素
 
-articles = driver.find_elements(By.CLASS_NAME, "news-list" ).pop().find_elements(By.TAG_NAME, "li" )
+    articles = driver.find_elements(By.CLASS_NAME, "news-list").pop().find_elements(By.TAG_NAME, "li")
 
-# 创建Excel工作簿
+    # 创建Excel工作簿
 
-wb = Workbook()
+    wb = Workbook()
 
-# 创建工作表
+    # 创建工作表
 
-ws = [wb.active](http://wb.active/)
+    ws = wb.active
 
-# 设置工作表表头
+    # 设置工作表表头
 
-[ws.append ](http://ws.append/)([ "标题" , "链接" , "来源" ])
+    ws.append(["标题", "链接", "来源"])
 
-# 循环处理每篇文章
+    # 循环处理每篇文章
 
-for article in articles:
+    for article in articles:
 
-# 获取文章标题和链接
+        # 获取文章标题和链接
 
-title = article.find_element(By.TAG_NAME, "h3" ).text
+        title = article.find_element(By.TAG_NAME, "h3").text
 
-link = article.find_element(By.TAG_NAME, "a" ).get_attribute( "href" )
+        link = article.find_element(By.TAG_NAME, "a").get_attribute("href")
 
-# 获取文章来源
+        # 获取文章来源
 
-try :
+        try:
 
-source = article.find_element(By.CLASS_NAME, "account" ).text
+            source = article.find_element(By.CLASS_NAME, "account").text
 
-except :
+        except:
 
-source = ""
+            source = ""
 
-# 将文章信息写入Excel工作表中
+        # 将文章信息写入Excel工作表中
 
-[ws.append ](http://ws.append/)([title, link, source])
+        ws.append([title, link, source])
 
-# 保存Excel文件
+    # 保存Excel文件
 
-date_str = [datetime.now ](http://datetime.now/)().strftime( "%Y%m%d" )
+    date_str = datetime.now().strftime("%Y%m%d")
 
-filename = f"AIGC🛰️{date_str}.xlsx"
+    filename = f"AIGC🛰️{date_str}.xlsx"
 
-[wb.save ](http://wb.save/)(filename)
+    wb.save(filename)
 
-# 点击下一页按钮
+    # 点击下一页按钮
 
-next_btn = driver.find_element(By.CLASS_NAME, "np" )
+    next_btn = driver.find_element(By.CLASS_NAME, "np")
 
-[next_btn.click ](http://next_btn.click/)()
+    next_btn.click()
 
 # 关闭Chrome驱动器
 
-[driver.quit ](http://driver.quit/)()
+driver.quit()
+```
 
 我们复制代码到PyCharm，然后执行一下，看看结果是否符合预期。
 
@@ -176,6 +172,7 @@ next_btn = driver.find_element(By.CLASS_NAME, "np" )
 
 修改后代码
 
+```python
 import os
 
 from datetime import datetime
@@ -206,11 +203,11 @@ driver = webdriver.Chrome(chromedriver_path)
 
 # 打开网站URL
 
-[driver.get ](http://driver.get/)( " https://weixin.sogou.com " )
+driver.get(" https://weixin.sogou.com ")
 
 # 找到搜索框并输入关键字
 
-search_box = driver.find_element(By.ID, "query" )
+search_box = driver.find_element(By.ID, "query")
 
 search_box.send_keys(keyword)
 
@@ -218,11 +215,11 @@ search_box.send_keys(Keys.ENTER)
 
 # 等待页面加载完成
 
-WebDriverWait(driver, 10 ).until(EC.presence_of_element_located((By.CLASS_NAME, "news-list" )))
+WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "news-list")))
 
 # 获取Excel文件名
 
-date_str = [datetime.now ](http://datetime.now/)().strftime( "%Y%m%d" )
+date_str = datetime.now().strftime("%Y%m%d")
 
 filename = f"AIGC🛰️{date_str}.xlsx"
 
@@ -232,73 +229,72 @@ wb = Workbook()
 
 # 创建工作表
 
-ws = [wb.active](http://wb.active/)
+ws = wb.active
 
 # 设置工作表表头
 
-[ws.append ](http://ws.append/)([ "标题" , "链接" , "来源" ])
+ws.append(["标题", "链接", "来源"])
 
 # 循环爬取前10页的内容
 
-for page in range ( 1 , 11 ):
+for page in range(1, 11):
 
-# 获取当前页面的所有文章元素
+    # 获取当前页面的所有文章元素
 
-articles = driver.find_elements(By.CLASS_NAME, "news-list" ).pop().find_elements(By.TAG_NAME, "li" )
+    articles = driver.find_elements(By.CLASS_NAME, "news-list").pop().find_elements(By.TAG_NAME, "li")
 
-# 循环处理每篇文章
+    # 循环处理每篇文章
 
-for article in articles:
+    for article in articles:
 
-# 获取文章标题和链接
+        # 获取文章标题和链接
 
-title = article.find_element(By.TAG_NAME, "h3" ).text
+        title = article.find_element(By.TAG_NAME, "h3").text
 
-link = article.find_element(By.TAG_NAME, "a" ).get_attribute( "href" )
+        link = article.find_element(By.TAG_NAME, "a").get_attribute("href")
 
-# 获取文章来源
+        # 获取文章来源
 
-try :
+        try:
 
-source = article.find_element(By.CLASS_NAME, "account" ).text
+            source = article.find_element(By.CLASS_NAME, "account").text
 
-except :
+        except:
 
-source = ""
+            source = ""
 
-# 将文章信息写入Excel工作表中
+        # 将文章信息写入Excel工作表中
 
-[ws.append ](http://ws.append/)([title, link, source])
+        ws.append([title, link, source])
 
-# 保存Excel文件
+    # 保存Excel文件
 
-if page == 10 :
+    if page == 10:
 
-[wb.save ](http://wb.save/)(filename)
+        wb.save(filename)
 
-# 点击下一页按钮
+    # 点击下一页按钮
 
-try :
+    try:
 
-next_btn = driver.find_element(By.CLASS_NAME, "np" )
+        next_btn = driver.find_element(By.CLASS_NAME, "np")
 
-[next_btn.click ](http://next_btn.click/)()
+        next_btn.click()
 
-except :
+    except:
 
-break
+        break
 
 # 关闭Chrome驱动器
 
-[driver.quit ](http://driver.quit/)()
+driver.quit()
+```
 
-这次我们执行代码后获取到了满意的效果，在搜狗输入【AIGC】后把前10页的🛰️👸号文章到抓取到了。
+这次我们执行代码后获取到了满意的效果，在搜狗输入【`AIGC`】后把前10页的🛰️👸号文章到抓取到了。
 
 篇幅有限只截取一部分。
 
 ![](img/55a471edafa1d68f94b96ae3a3c0d067.png)
-
-##
 
 ## 3：总结
 
@@ -328,4 +324,4 @@ break
 
 关于【爬取🛰️👸号文章和知乎】的代码感兴趣同学可以找我要，我私下发。
 
-这个代码其实是通用的代码，咱们把【AIGC】换成你感兴趣的关键字就可以自己采集信息了。
+这个代码其实是通用的代码，咱们把【`AIGC`】换成你感兴趣的关键字就可以自己采集信息了。

@@ -1,84 +1,72 @@
+
 # 《能应用的DeepSeek通识课》
 
-> 来源：[https://datawhaler.feishu.cn/docx/HhLWdrx2got0KgxhxgUc76HDnSg](https://datawhaler.feishu.cn/docx/HhLWdrx2got0KgxhxgUc76HDnSg)
+> 来源：`https://datawhaler.feishu.cn/docx/HhLWdrx2got0KgxhxgUc76HDnSg`
 
-# 一、DeepSeek如何安装？
+## 一、DeepSeek 如何安装？
 
-## 1.1 手机端：
+### 1.1 手机端
 
-+   安卓
++ 安卓  
++ 苹果
 
-+   苹果
+### 1.2 电脑端
 
-## 1.2 电脑端：
++ 直接使用：windows、mac  
++ 私有化部署：windows、mac  
 
-+   直接使用：windows、mac
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblykkX9r5ngmOKw`
 
-+   私有化部署：windows、mac
+## 二、DeepSeek 怎么用？
 
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblykkX9r5ngmOKw）
+### 2.1 初级能力：会提示词对话 @王铮
 
-# 二、DeepSeek 怎么用？
+![](`img/4f37405612c9690f223a925c1637ee3b.png`)
 
-## 2.1 初级能力：会提示词对话 @王铮
+[`open_1+X通识课_prompt.pdf`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D9dhbg0dWoXRsyx3TFSc5zqinte`)
 
-![](img/4f37405612c9690f223a925c1637ee3b.png)
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblhcP56CO5WAkwA`
 
-[open_1+X通识课_prompt.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D9dhbg0dWoXRsyx3TFSc5zqinte)
+### 2.2 中级能力：会调 API 开发 @邹雨衡
 
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblhcP56CO5WAkwA）
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblVY4W9ySD6XxgO`
 
-## 2.2 中级能力：会调API开发 @邹雨衡
+### 2.3 高级能力：会大模型微调/RAG/蒸馏 @宋志学
 
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblVY4W9ySD6XxgO）
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblfcXLYbRtRiB6y`
 
-## 2.3 高级能力：会大模型微调/RAG/蒸馏 @宋志学
+## 三、DeepSeek 组合用法？
 
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblfcXLYbRtRiB6y）
+### 3.1 常用组合 @卢雨畋
 
-# 三、DeepSeek 组合用法？
++ 生成 PPT：DeepSeek + Kimi  
++ 生成海报：DeepSeek + 即梦  
++ 生成短视频：DeepSeek + 剪映  
++ 生成思维导图：DeepSeek + Xmind  
++ 生成知识库  
++ 生成数字人  
++ 自动化编程  
 
-## 3.1 常用组合  @卢雨畋
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblmqiKdUsU5LiEu`
 
-+   生成PPT：DeepSeek + Kimi
+### 3.2 专业组合 @温鑫
 
-+   生成海报：DeepSeek + 即梦
++ 学术场景：Zotero/EndNote 文献管理  
++ 开发场景：VS Code/Jupyter 集成  
++ 设计场景：Figma/PS 指令辅助  
 
-+   生成短视频：DeepSeek + 剪映
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tbllxFGzFr0WyC8j`
 
-+   生成思维导图：DeepSeek + Xmind
+## 四、DeepSeek 行业应用？
 
-+   生成知识库
+### 4.1 日常办公 @骆秀韬
+### 4.2 学术研究 @陈安东
+### 4.3 教育领域 @张帆
+### 4.4 企业服务 @长琴
 
-+   生成数字人
+`Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblDblQqj8ujhmWC`
 
-+   自动化编程
-
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblmqiKdUsU5LiEu）
-
-## 3.2 专业组合 @温鑫
-
-+   学术场景：Zotero/EndNote文献管理
-
-+   开发场景：VS Code/Jupyter集成
-
-+   设计场景：Figma/PS指令辅助
-
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tbllxFGzFr0WyC8j）
-
-# 四、DeepSeek 行业应用？
-
-## 4.1 日常办公 @骆秀韬
-
-## 4.2 学术研究 @陈安东
-
-## 4.3 教育领域  @张帆
-
-## 4.4 企业服务  @长琴
-
-多维表格（Pb0PbH0AAa4LIBseXEvcHvGgnbE_tblDblQqj8ujhmWC）
-
-<https://datawhaler.feishu.cn/share/base/dashboard/shrcnMF33vRl0HTrzLWewxkWBij?iframeFrom=docx&ccm_open=iframe>
+<`https://datawhaler.feishu.cn/share/base/dashboard/shrcnMF33vRl0HTrzLWewxkWBij?iframeFrom=docx&ccm_open=iframe`>
 
 # 创作者名单
 
@@ -96,4 +84,4 @@
 
 参与共建可直接填写表单：
 
-<https://datawhaler.feishu.cn/share/base/form/shrcn13VsORqTwbGqOXKJLuhYqc?ccm_open=iframe&iframeFrom=docx>
+<`https://datawhaler.feishu.cn/share/base/form/shrcn13VsORqTwbGqOXKJLuhYqc?ccm_open=iframe&iframeFrom=docx`>

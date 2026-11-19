@@ -1,8 +1,7 @@
+
 # 利用 100 个AI工具来帮助 Web3 创业
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/EjdTdNjO9oY7pPxjm7xcWSlGnid](https://aiyanxishe.feishu.cn/docx/EjdTdNjO9oY7pPxjm7xcWSlGnid)
-
-#
 
 当下ChatGPT 让人工智能（AI）非常火热，让我们看看有哪些 AI 工具（或自动化工具）来帮助我们进行Web3创业。
 
@@ -12,17 +11,17 @@
 
 [AI研习社](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf) - 中文AI教程、AI工具、AI商业研究集合地。
 
-[ChatGPT讨论](https://discord.com/invite/ZFbE6NH57q)[ - 有教程和资源分](https://discord.gg/qfra2BdpE5)享的ChatGPT社区[。
+[ChatGPT讨论](https://discord.com/invite/ZFbE6NH57q) - 有教程和资源分享的ChatGPT社区。
 
-AIBuilders](https://discord.com/invite/JfAtkvEtRb) - 寻找一个分享AI工具和提示以及教程的社区
+[AIBuilders](https://discord.com/invite/JfAtkvEtRb) - 寻找一个分享AI工具和提示以及教程的社区。
 
-Hugging Face - 建立、训练和部署最先进的模型， 开源代码
+Hugging Face - 建立、训练和部署最先进的模型，开源代码。
 
 ## 找寻Web3创业想法
 
 [ChatGPT](https://chat.openai.com/) - 可以通过分析数据和使用预测分析法来识别潜在的机会，帮助寻找web3的商业想法。它也可以用来发现新技术及其潜力。
 
-> 还可参考原作者 [Julian](https://linktr.ee/julianivaldy) 的另一篇文章：[ChatGPT X Web3: ](https://julianivaldy.medium.com/chatgpt-x-web3-how-ai-can-help-you-build-grow-your-web3-company-f8ac26a68a9c)AI如何帮助你建立和发展你的Web3公司
+> 还可参考原作者 [Julian](https://linktr.ee/julianivaldy) 的另一篇文章：[ChatGPT X Web3: AI如何帮助你建立和发展你的Web3公司](https://julianivaldy.medium.com/chatgpt-x-web3-how-ai-can-help-you-build-grow-your-web3-company-f8ac26a68a9c)
 
 [IdeasAI](http://ideasai.com/) - 提供由人工智能（OpenAI）产生的商业想法。
 
@@ -56,7 +55,7 @@ No-Code AI Model Builder允许你建立自己的AI模型。
 
 [Zia](https://www.zoho.com/zia/) - 自动安排会议，发送电子邮件，以及文件管理。
 
-[Supernormal](https://supernormal.com/), [Fireflies](https://fireflies.ai/), [Wingman ](https://www.trywingman.com/)--都是记录会议笔记的工具。[Sembly](https://www.sembly.ai/)不仅能将会议对话转换为文本，还能为你提供可操作的见解。
+[Supernormal](https://supernormal.com/)、[Fireflies](https://fireflies.ai/)、[Wingman](https://www.trywingman.com/)——都是记录会议笔记的工具。[Sembly](https://www.sembly.ai/)不仅能将会议对话转换为文本，还能为你提供可操作的见解。
 
 [Detangle](https://detangle.ai/) - 总结任何视频、音频或文本。
 
@@ -68,7 +67,7 @@ No-Code AI Model Builder允许你建立自己的AI模型。
 
 [tl;dr](https://app.tldrmail.co/)将通过电子邮件每天一次向你发送你的未读邮件的摘要（只适用于英语）。
 
-[TheGist](https://www.thegist.ai/)将对slack频道或slack 话题进行总结。
+[TheGist](https://www.thegist.ai/)将对slack频道或slack话题进行总结。
 
 [Albus](https://www.springworks.in/albus/)将协助你为新的商业战略、设计和营销内容提供想法。
 
@@ -78,7 +77,7 @@ No-Code AI Model Builder允许你建立自己的AI模型。
 
 [Ellie.ai](https://www.ellie.ai/)将让你与你的团队使用技术设计进行头脑风暴和可视化你的想法。
 
-[Asana](https://asana.com/)、 [Timehero](https://www.timehero.com/)和[Motion](https://www.usemotion.com/)将记录所有的任务。
+[Asana](https://asana.com/)、[Timehero](https://www.timehero.com/)和[Motion](https://www.usemotion.com/)将记录所有的任务。
 
 [Timely](https://timelyapp.com/)将自动跟踪在不同任务上花费的时间。
 
@@ -104,11 +103,11 @@ No-Code AI Model Builder允许你建立自己的AI模型。
 
 [LongShot](https://www.longshot.ai/)将协助撰写长篇的SEO内容。
 
-[GhostWryter ](https://ghostwryter.net/)是Google Docs的写作助手。
+[GhostWryter](https://ghostwryter.net/)是Google Docs的写作助手。
 
-[Wordtune](https://www.wordtune.com/) 将把你的文章转化为有趣的、有吸引力的和真实的文本。
+[Wordtune](https://www.wordtune.com/)将把你的文章转化为有趣的、有吸引力的和真实的文本。
 
-[Tribescaler](https://tribescaler.com/) 将为你的Twitter话题产生吸引人的钩子。
+[Tribescaler](https://tribescaler.com/)将为你的Twitter话题产生吸引人的钩子。
 
 [Feedhive](https://www.feedhive.com/)将为你提供有吸引力的社会媒体帖子模板。
 
@@ -168,11 +167,11 @@ LeiaPix Converter是一个免费的图像处理工具，能够将2D图像即时�
 
 [Algolia](https://www.algolia.com/)将帮助你改善网站的搜索功能和用户体验。
 
-[Durable](https://durable.co/)利用人工智能帮助你在30秒内建立一个网站
+[Durable](https://durable.co/)利用人工智能帮助你在30秒内建立一个网站。
 
 [VWO](https://vwo.com/de/)将负责网站测试和转化优化。
 
-[ChatGPT](https://chat.openai.com/)也可以就你自己的网站和产品提出改进建议。Vitalik （V神）写了一篇关于优化他自己的个人博客的文章：一个快速的GPT聊天机器人编码实验
+[ChatGPT](https://chat.openai.com/)也可以就你自己的网站和产品提出改进建议。Vitalik（V神）写了一篇关于优化他自己的个人博客的文章：一个快速的GPT聊天机器人编码实验。
 
 [BrandMentions](https://brandmentions.com/)和[Mention](https://mention.com/en/)可以让你追踪提到你的品牌名称的在线讨论，这可以帮助你改进你的产品，但这还不是全部。
 
@@ -196,11 +195,11 @@ Tavus是一个由人工智能驱动的个性化视频工具。录制一次视频
 
 [Optimove](https://www.optimove.com/)是一个基于AI的CRM。它通过客户洞察力和基于人工智能的协调，大规模地实现个性化的旅程。
 
-[如果你想改善你的品牌形象和在](https://www.mara-solutions.com/)线展示，请使用MARA Solutions来自动回复在线评论。
+如果你想改善你的品牌形象和在线展示，请使用[MARA Solutions](https://www.mara-solutions.com/)来自动回复在线评论。
 
 通过[BrandMentions](https://brandmentions.com/)和[Mention](https://mention.com/en/)等工具，你还可以跟踪任何提到你的品牌名称的在线讨论，这可以帮助你为客户定制品牌语言，或者让你了解你的产品可能需要的任何潜在改进。
 
-通过[Aweber](https://www.aweber.com/)、T[he S](https://rasa.io/)eventh Sense和Rasa，你可以自动发送电子邮件，并为每个收件人个性化定制。
+通过[Aweber](https://www.aweber.com/)、[The Seventh Sense](https://rasa.io/)和Rasa，你可以自动发送电子邮件，并为每个收件人个性化定制。
 
 [Connectly](https://www.connectly.ai/)将改善在WhatsApp上的营销。
 
@@ -220,7 +219,7 @@ Tavus是一个由人工智能驱动的个性化视频工具。录制一次视频
 
 [Clearbit](https://clearbit.com/)将帮助你了解客户并找到潜在客户。
 
-[Windsor](https://www.windsor.io/), [Pitchlane](https://pitchlane.io/), 和[Zapier](https://zapier.com/)将通过个性化的人工智能视频来提高你的冰冷邮件。
+[Windsor](https://www.windsor.io/)、[Pitchlane](https://pitchlane.io/)和[Zapier](https://zapier.com/)将通过个性化的人工智能视频来提高你的冰冷邮件。
 
 [Humantic AI](https://humantic.ai/)是一个买方智能平台，将协助你在个人层面上与买方联系。
 
@@ -230,7 +229,7 @@ Tavus是一个由人工智能驱动的个性化视频工具。录制一次视频
 
 [Glean AI](https://www.glean.ai/)帮助你管理公司的财务。
 
-[Vic](https://www.vic.ai/)是一个复杂的人工智能引擎&与自主审批流向财务后台业务。
+[Vic](https://www.vic.ai/)是一个复杂的人工智能引擎，与自主审批流向财务后台业务。
 
 [Blue Dot](https://www.bluedotcorp.com/)提供了一个人工智能驱动的和基于云的税收合规平台。
 
@@ -242,8 +241,10 @@ Tavus是一个由人工智能驱动的个性化视频工具。录制一次视频
 
 [Docyt](https://docyt.com/)是一个实时会计自动化平台。它使用人工智能和机器学习来实现财务工作流程的自动化，不断核对总账，并生成实时财务报告。
 
+
+
 本文由[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)整理发布，AI研习社是一个AI行业研究专题知识兴趣小组，目前分享包含： AI工具使用、AI商业模式研究、AI行业研究报告、AI经验分享、大厂动态等专题内容，包含ChatGPT、MidJourney等主流工具使用说明，通过知识手册的方式帮助大家构建系统化的AI知识库，让更多人可以轻松学习使用AI技术。
 
 ![](img/c6151baedf55b749276c7251b1f46bba.png)
 
-扫描二维码，了解[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)** **
+扫描二维码，了解[**AI研习社**](https://zl49so8lbq.feishu.cn/wiki/wikcnu3kSXr75E50w8PFefhJMYf)

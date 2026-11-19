@@ -1,3 +1,4 @@
+
 # 直接用 Dreamlike
 
 > 来源：[https://my.feishu.cn/docx/F0pLdvjGMoEoHMxXlrOcORbrnxd](https://my.feishu.cn/docx/F0pLdvjGMoEoHMxXlrOcORbrnxd)
@@ -6,11 +7,11 @@
 
 如果你消耗了额度，每隔 1 小时，给你恢复 1 额度，最多到 100。也就是说，默认尺寸下，可以免费生成 100 张图。
 
-+   **打开网站**
++ **打开网站**
 
 https://dreamlike.art/create
 
-+   **界面（使用需要登录谷歌账号）**
++ **界面（使用需要登录谷歌账号）**
 
 ![](img/855020309bd6b96b5b6cc3dcac39eb40.png)
 

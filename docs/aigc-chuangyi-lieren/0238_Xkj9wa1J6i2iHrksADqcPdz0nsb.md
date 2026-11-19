@@ -1,28 +1,20 @@
+
 # 1 | Getting started
 
 > 来源：[https://aigcreative.feishu.cn/docx/QuN0dcQCmoj46HxvoTLcEPbfnBc](https://aigcreative.feishu.cn/docx/QuN0dcQCmoj46HxvoTLcEPbfnBc)
 
 Welcome to the world of chatbots and large language models. If you're frustrated with inconsistent and unreliable responses from your large language model (like ChatGPT), this guide is for you. Here, we'll provide you with the tools to write better prompts. We'll do this by showing you how to improve the accuracy and efficiency of your inputs to get a better output (completion).
 
-1.  Start with a clear goal: Determine what you want the chatbot to achieve through the prompt. Whether you want to provide information, guide the conversation, or solve a problem, ensure that your question is specific, so that the answer will be specific too.
-
-1.  Keep it concise: Avoid using unnecessary words or information that will confuse the chatbot or delay the response. Remember that this is a robot, not a person, so there's no need to be overly polite. "Write a paragraph about X" is more efficient than "Can you please write me a paragraph about this thing called X?". Why is it more efficient? Because when you use less words, you use less 'tokens' so the cost is is reduced.
-
-1.  Use natural language: Write the prompt in everyday language, making it easy to understand for the chatbot to understand the context and respond appropriately.
-
-1.  Avoid ambiguity: Ensure that the prompt is specific and avoids using words with multiple meanings or phrases that can be interpreted in different ways. If the chatbot starts generating something you don’t like, stop it and rephrase your prompt. It's also important to clearly state your objective from the outset and experiment with phrasing, tense, and perspective. For example, you could say "Today's task is to compose an XYZ" or "We are attempting to draft an XYZ and would appreciate your input." Providing an overarching purpose to your task can be beneficial, and exploring various ways to do so can have a significant impact.
-
-1.  Provide context: Provide enough context so that the chatbot understands the context of the conversation and can respond accordingly. If you have multiple instructions but aren’t sure if ChatGPT understands you, ask it to analyse your prompt.
-
-1.  Avoid open-ended questions: Avoid asking open-ended questions that have no clear answer. This can lead to irrelevant or confusing responses from the chatbot.
-
-1.  Use keywords: Use relevant keywords in the prompt that are related to the topic of the conversation. This helps the chatbot to understand the context and respond appropriately. If you can't think of the right words yourself, use an online thesaurus and don't give up on a prompt. You might be able to fix it with an alternative word.
-
-1.  Be specific: Be specific about the information you want the chatbot to provide. Avoid asking general questions that could have many possible answers.
-
-1.  Test your prompts: Test your prompts with the chatbot to see how it responds and make any necessary changes. This helps to refine the prompt and improve the overall experience for the user.
-
-1.  Keep it simple: Keep the prompts simple and easy to understand. Avoid using complex language or technical terms that may confuse the chatbot or the user.
+1. Start with a clear goal: Determine what you want the chatbot to achieve through the prompt. Whether you want to provide information, guide the conversation, or solve a problem, ensure that your question is specific, so that the answer will be specific too.
+2. Keep it concise: Avoid using unnecessary words or information that will confuse the chatbot or delay the response. Remember that this is a robot, not a person, so there's no need to be overly polite. "Write a paragraph about X" is more efficient than "Can you please write me a paragraph about this thing called X?". Why is it more efficient? Because when you use less words, you use less 'tokens' so the cost is is reduced.
+3. Use natural language: Write the prompt in everyday language, making it easy to understand for the chatbot to understand the context and respond appropriately.
+4. Avoid ambiguity: Ensure that the prompt is specific and avoids using words with multiple meanings or phrases that can be interpreted in different ways. If the chatbot starts generating something you don't like, stop it and rephrase your prompt. It's also important to clearly state your objective from the outset and experiment with phrasing, tense, and perspective. For example, you could say "Today's task is to compose an XYZ" or "We are attempting to draft an XYZ and would appreciate your input." Providing an overarching purpose to your task can be beneficial, and exploring various ways to do so can have a significant impact.
+5. Provide context: Provide enough context so that the chatbot understands the context of the conversation and can respond accordingly. If you have multiple instructions but aren't sure if ChatGPT understands you, ask it to analyse your prompt.
+6. Avoid open-ended questions: Avoid asking open-ended questions that have no clear answer. This can lead to irrelevant or confusing responses from the chatbot.
+7. Use keywords: Use relevant keywords in the prompt that are related to the topic of the conversation. This helps the chatbot to understand the context and respond appropriately. If you can't think of the right words yourself, use an online thesaurus and don't give up on a prompt. You might be able to fix it with an alternative word.
+8. Be specific: Be specific about the information you want the chatbot to provide. Avoid asking general questions that could have many possible answers.
+9. Test your prompts: Test your prompts with the chatbot to see how it responds and make any necessary changes. This helps to refine the prompt and improve the overall experience for the user.
+10. Keep it simple: Keep the prompts simple and easy to understand. Avoid using complex language or technical terms that may confuse the chatbot or the user.
 
 Large Language Models like ChatGPT and Text-To-Image models like Midjourney can perform a wide range of tasks. You can ask it to generate creative writing, help you with a blog post, complete your maths homework, generate images and much more.
 

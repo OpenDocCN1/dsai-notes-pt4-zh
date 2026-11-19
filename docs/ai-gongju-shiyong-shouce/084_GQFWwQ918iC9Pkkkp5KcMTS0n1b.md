@@ -1,3 +1,4 @@
+
 # 通用描述词收录+自动写词思路
 
 > 来源：[https://my.feishu.cn/docx/ZPH4dT9lQoGLw9xsIqJclsepn6c](https://my.feishu.cn/docx/ZPH4dT9lQoGLw9xsIqJclsepn6c)
@@ -20,7 +21,7 @@
 
 （黄色区域内容翻译成英文更好识别）
 
-haracter design sheet, full body of a [你的角色描述] character in robes, in the style of cartoon illustration and sketch, character concept, --chaos 0
+haracter design sheet, full body of a [你的角色描述] character in robes, in the style of cartoon illustration and sketch, character concept, `--chaos 0`
 
 ![](img/258dd20c0594498a0898e94079000de4.png)
 

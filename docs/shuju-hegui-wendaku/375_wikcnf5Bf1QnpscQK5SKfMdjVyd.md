@@ -1,3 +1,4 @@
+
 # 客服录音的告知同意怎么做
 
 > 来源：[https://docs.feishu.cn/docx/RPZMdYEuYo4oV1xEQRicHgp8nPh](https://docs.feishu.cn/docx/RPZMdYEuYo4oV1xEQRicHgp8nPh)
@@ -6,7 +7,7 @@
 
 **-答1：**加，如不同意请挂断。
 
-**-答2：**可以看看之前的讨论，电话录音的同意：https://www.yuque.com/hechenmeiyouyi/dy2cgf/mvp91z。
+**-答2：**可以看看之前的讨论，电话录音的同意：`https://www.yuque.com/hechenmeiyouyi/dy2cgf/mvp91z`。
 
 **-答3：**如果是直流的话，针对另一端可以实时看到车端的车外图像，还有和哨兵模式一样的监管风险吗？
 

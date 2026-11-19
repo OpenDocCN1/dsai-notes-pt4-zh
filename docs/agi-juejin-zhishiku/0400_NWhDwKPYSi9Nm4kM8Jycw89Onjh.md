@@ -1,3 +1,4 @@
+
 # DPO是否比PPO更适合LLM，清华吴翼团队最新揭秘
 
 > 来源：[https://agijuejin.feishu.cn/docx/RSg7dTelxouUbsxrDH0c70y9nOV](https://agijuejin.feishu.cn/docx/RSg7dTelxouUbsxrDH0c70y9nOV)
@@ -6,7 +7,7 @@
 
 > 转载请联系原作者取得授权
 
-**吴翼 ， 清**华大学 交叉信息院助理教授，曾任 OpenAI 全职研究员，研究领域为 强化学习 ，大模型对齐， 人机交互 ，机器人学习等。2019 年在美国加州大学伯克利分校获得博士学位，师从 Stuart Russell 教授；2014 年本科毕业于 清华大学 交叉信息院（姚班）。其代表作包括：NIPS2016 最佳论文，Value Iteration Network；多智能体深度 强化学习 领域最高引用论文，MADDPG 算法；OpenAI hide-and-seek 项目等。
+吴翼，清华大学交叉信息院助理教授，曾任 OpenAI 全职研究员，研究领域为 强化学习 ，大模型对齐， 人机交互 ，机器人学习等。2019 年在美国加州大学伯克利分校获得博士学位，师从 Stuart Russell 教授；2014 年本科毕业于 清华大学 交叉信息院（姚班）。其代表作包括：NIPS2016 最佳论文，Value Iteration Network；多智能体深度 强化学习 领域最高引用论文，MADDPG 算法；OpenAI hide-and-seek 项目等。
 
 如何让大模型更好的遵从人类指令和意图？如何让大模型有更好的推理能力？如何让大模型避免幻觉？能否解决这些问题，是让大模型真正广泛可用，甚至实现超级智能（Super Intelligence）最为关键的技术挑战。这些最困难的挑战也是 吴翼 团队长期以来的研究重点，大模型对齐技术（Alignment）所要攻克的难题。
 
@@ -40,17 +41,17 @@
 
 +   论文地址：https://arxiv.org/pdf/2404.10719
 
-**DPO 算法的局限性**
+## DPO 算法的局限性
 
-相比于 PPO，DPO 使用离线数据而非在线采样数据训练。经分析，DPO 算法会导致训练出的模型对训练数据分布之外的输出产生偏好，在某些情况下产生不可预料的回复。
+相比于 PPO，DPO 使用离线数据而非在线采样数据训练。经分析，DPO 算法会导致训练出的模型对训练数据分布之外的输出产生偏好，在某些情况下产生不可预测的回复。
 
-**于是，为了提升 DPO 算法的能力，研究**团队总结了两个关键技术： 在 RLHF 训练前进行额外的 SFT 训练，以及使用在线采样数据而非离线数据 。
+于是，为了提升 DPO 算法的能力，研究团队总结了两个关键技术：在 RLHF 训练前进行额外的 SFT 训练，以及使用在线采样数据而非离线数据。
 
 ![](img/25046185f7cae41ef7665b1a419c722f.png)
 
 实验表明，使用额外的 SFT 训练可以使 base 模型以及 reference 模型更偏向于数据集内的分布，大大提升 DPO 算法效果；另一方面，使用在线采样数据进行迭代训练的 DPO 算法可以得到稳步提升，表现远远优于基础的 DPO 算法。
 
-**PPO 算法的关键点**
+## PPO 算法的关键点
 
 除去 DPO，论文中也总结了发挥 PPO 最大能力的三个关键点：
 
@@ -76,11 +77,11 @@
 
 ![](img/f590ffa10f0bafb4a2fd4e3f5510d036.png)
 
-+   NeurIPS 2022 The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games [1]：提出并开源了用于多智能体的 强化学习 并行训练框架 MAPPO，支持合作场景下的多智能体训练，该工作被大量多智能体领域工作采用，目前论文引用量已超过 1k。
++   NeurIPS 2022 The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games [1]：提出并开源了用于多智能体的 强化学习 并行训练框架 `MAPPO`，支持合作场景下的多智能体训练，该工作被大量多智能体领域工作采用，目前论文引用量已超过 1k。
 
-+   ICLR 2024 Scaling Distributed Reinforcement Learning to Over Ten Thousand Cores [2]: 提出了用于 强化学习 的分布式训练框架，可轻松扩展至上万个核心，加速比超越 OpenAI 的大规模 强化学习 系统 Rapid。
++   ICLR 2024 Scaling Distributed Reinforcement Learning to Over Ten Thousand Cores [2]: 提出了用于 强化学习 的分布式训练框架 `SRL`，可轻松扩展至上万个核心，加速比超越 OpenAI 的大规模 强化学习 系统 `Rapid`。
 
-+   ReaLHF: Optimized RLHF Training for Large Language Models through Parameter Reallocation [3]: 最近， 吴翼 团队进一步实现了分布式 RLHF 训练框架 ReaLHF。 吴翼 团队的 ICML Oral 论文正是基于 ReaLHF 系统产出的。ReaLHF 系统经过长时间的开发，经历大量的细节打磨，达到最优性能。相比于之前的开源工作，ReaLHF 可以在 RLHF 这个比预训练更复杂的场景下达到近乎线性的拓展性，同时具有更高的资源利用率，在 128 块 A100 GPU 上也能稳定快速地进行 RLHF 训练，相关工作已开源：https://github.com/openpsi-project/ReaLHF
++   `ReaLHF`: Optimized RLHF Training for Large Language Models through Parameter Reallocation [3]: 最近， 吴翼 团队进一步实现了分布式 RLHF 训练框架 `ReaLHF`。 吴翼 团队的 ICML Oral 论文正是基于 `ReaLHF` 系统产出的。`ReaLHF` 系统经过长时间的开发，经历大量的细节打磨，达到最优性能。相比于之前的开源工作，`ReaLHF` 可以在 RLHF 这个比预训练更复杂的场景下达到近乎线性的拓展性，同时具有更高的资源利用率，在 128 块 A100 GPU 上也能稳定快速地进行 RLHF 训练，相关工作已开源：https://github.com/openpsi-project/ReaLHF
 
 除了提升大 语言模型 代码能力之外， 吴翼 团队还采用多种将 强化学习 算法和大模型结合的方式，实现了多种复杂 LLM Agent，并可以和人类进行复杂交互。
 
@@ -101,6 +102,8 @@
 ![](img/eaed99d7fe1d47d66545d9e4608628fb.png)
 
 为了使大模型能真正走进千家万户，对齐技术是至关重要的，对于学术界和大模型从业者来说，好的开源工作和论文无疑会大大降低实验成本和开发难度，也期待随着技术发展，会有更多服务于人类的大模型出现。
+
+## 参考文献
 
 [1] Yu, Chao, Akash Velu, Eugene Vinitsky, Jiaxuan Gao, Yu Wang, Alexandre Bayen, and Yi Wu. "The surprising effectiveness of ppo in cooperative multi-agent games."
 

@@ -1,38 +1,32 @@
+
 # 手把手带你从0到1实现大模型agent - 知乎
 
-> 来源：[https://agijuejin.feishu.cn/docx/Itw6dJE1Po1x2DxTRYGcmGFIn1f](https://agijuejin.feishu.cn/docx/Itw6dJE1Po1x2DxTRYGcmGFIn1f)
+> 来源：https://agijuejin.feishu.cn/docx/Itw6dJE1Po1x2DxTRYGcmGFIn1f
 
 > 作者：zuaC大
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/700687839)hihu.com/p/700687...
+> 原文：https://zhuanlan.zhihu.com/p/700687839
 
 ## 前沿
 
-最近出了 《手把手带你从0到1实现大模型agent》 视频系[列课程，从](https://www.zhihu.com/search?q=%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)无到有的实现一个完整的大模型agent。其实市面上已经有很多agent的 开源框架 ，实际的应用在框架基础上开发即可。出这个系列的原因主要还是希望能让大家对agent的底层原理和逻辑有一个清晰的认识，所谓知其然，更知其所以然。
+最近出了《手把手带你从0到1实现大模型`agent`》视频系列课程，从无到有的实现一个完整的大模型`agent`。其实市面上已经有很多`agent`的开源框架，实际的应用在框架基础上开发即可。出这个系列的原因主要还是希望能让大家对`agent`的底层原理和逻辑有一个清晰的认识，所谓知其然，更知其所以然。
 
 ## 目录
 
-该 [系列课程的视频 ](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1Sz421m7Rr/%3Fspm_id_from%3D333.999.0.0%26vd_source%3Dcd62f6bf001b64bc3c0e062e4c37bc6b)内容包括的核心内容，下文介绍核心模块及代码:
+该系列课程的视频内容包括的核心内容，下文介绍核心模块及代码：
 
-+   agent核心逻辑实现及讲解
-
-+   agent各模块功能分析和梳理
-
-+   tools的定义及与action的映射
-
-+   prompt模板定义
-
-+   prompt模板定义及工具prompt集成
-
-+   通义千问大模型 作为基座模型接入
-
-+   agent完整链路调试
-
-+   针对不足进行 agent优化 升级
++ `agent`核心逻辑实现及讲解
++ `agent`各模块功能分析和梳理
++ `tools`的定义及与`action`的映射
++ `prompt`模板定义
++ `prompt`模板定义及工具`prompt`集成
++ 通义千问大模型作为基座模型接入
++ `agent`完整链路调试
++ 针对不足进行`agent`优化升级
 
 ## 核心逻辑实现
 
-[核心逻辑模](https://www.zhihu.com/search?q=%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)块也是整个项目的入口，集成了 1) 环境变量 的设置 ; 2) 工具(action)的引入; 3) prompt模板；4)模型的初始化；5) 整个逻辑的交互。代码如下
+核心逻辑模块也是整个项目的入口，集成了 1) 环境变量的设置；2) 工具(`action`)的引入；3) `prompt`模板；4) 模型的初始化；5) 整个逻辑的交互。代码如下
 
 ```
 [核心逻辑模块也是](https://www.zhihu.com/search?q=user_msg&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)整个项目的入口utf-8 -*-
@@ -198,29 +192,33 @@ def main():
         agent_execute(query, max_request_time=max_request_time)
 
 
-if __name__ == &quot;__main__&quot;:
-    main()
+if __name__ &lt;...
 ```
 
 ## tools的定义及与action的映射
 
-agent中交互式让模型给出下一[步需要执行](https://www.zhihu.com/search?q=%E5%88%A4%E5%88%AB%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)的动作(action，有点像 判别模型 )， 每个动作(action)的执行内容是需要提前定义好的，每个动作执行的定义我们称为工具，每个工具和动作是一一对应的，这里通过函数定义的方式定义工具。下文包括了读文件、写文件、增加内容及调用搜索功能。tools_map定义了action到tools的映射。
+agent中交互式让模型给出下一步需要执行的动作`action`（有点像判别模型），每个动作(`action`)的执行内容是需要提前定义好的，每个动作执行的定义我们称为工具，每个工具和动作是一一对应的，这里通过函数定义的方式定义工具。下文包括了读文件、写文件、增加内容及调用搜索功能。`tools_map`定义了`action`到`tools`的映射。
 
-```
-imp[ort ](https://www.zhihu.com/search?q=%E7%BD%91%E7%BB%9C%E6%90%9C%E7%B4%A2&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)os
-import[ json
-from l](https://www.zhihu.com/search?q=workdir_root&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)[angchain_c](https://www.zhihu.com/search?q=os.environ&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)ommunity[.tools.tavil](https://www.zhihu.com/search?q=content_list&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)y_search impo[rt TavilySe](https://www.zhihu.com/search?q=description&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)[archResults
 
-](https://www.zhihu.com/search?q=write_to_file&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)&quot;&quot;[&quot;
+
+## 工具代码实现
+
+```python
+import os
+import json
+from langchain_community.tools.tavily_search import TavilySearchResults
+
+
+"""
 1. 写文件
-2. 读](https://www.zhihu.com/search?q=search%20engine&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)文件
+2. 读文件
 3. 追加
 4. 网络搜索 
-&quot;&quot;&quot;
+"""
 
 
 def _get_workdir_root():
-    workdir_root = os.environ.get(&quot;WORKDIR_ROOT&quot;, &#x27;./data/llm_result&#x27;)
+    workdir_root = os.environ.get("WORKDIR_ROOT", './data/llm_result')
     return workdir_root
 
 
@@ -230,19 +228,19 @@ WORKDIR_ROOT = _get_workdir_root()
 def read_file(filename):
     filename = os.path.join(WORKDIR_ROOT, filename)
     if not os.path.exists(filename):
-        return f&quot;{filename} not exist, please check file exist before read&quot;
-    with open(filename, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:
-        return &quot;\n&quot;.join(f.readlines())
+        return f"{filename} not exist, please check file exist before read"
+    with open(filename, 'r', encoding='utf-8') as f:
+        return "\n".join(f.readlines())
 
 
 def append_to_file(filename, content):
     filename = os.path.join(WORKDIR_ROOT, filename)
     if not os.path.exists(filename):
-        return f&quot;{filename} not exist, please check file exist before read&quot;
+        return f"{filename} not exist, please check file exist before read"
 
-    with open(filename, &#x27;a&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+    with open(filename, 'a', encoding='utf-8') as f:
         f.write(content)
-    return &#x27;append content to file success&#x27;
+    return 'append content to file success'
 
 
 def write_to_file(filename, content):
@@ -250,9 +248,9 @@ def write_to_file(filename, content):
     if not os.path.exists(WORKDIR_ROOT):
         os.makedirs(WORKDIR_ROOT)
 
-    with open(filename, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         f.write(content)
-    return &#x27;write content to file success&#x27;
+    return 'write content to file success'
 
 
 def search(query):
@@ -261,82 +259,82 @@ def search(query):
     try:
         ret = tavily.invoke(input=query)
 
-        &quot;&quot;&quot;
+        """
         ret:
         [{
-            &quot;content&quot;: &quot;&quot;,
-            &quot;url&quot;:
+            "content": "",
+            "url":
         }]
-        &quot;&quot;&quot;
-        print(&quot;搜索结果:&quot;, ret)
-        content_list = [obj[&#x27;content&#x27;] for obj in ret]
-        return &quot;\n&quot;.join(content_list)
+        """
+        print("搜索结果:", ret)
+        content_list = [obj['content'] for obj in ret]
+        return "\n".join(content_list)
     except Exception as err:
-        return &quot;search err: {}&quot;.format(err)
+        return "search err: {}".format(err)
 
 
 tools_info = [
     {
-        &quot;name&quot;: &quot;read_file&quot;,
-        &quot;description&quot;: &quot;read file from agent generate, should write file before read&quot;,
-        &quot;args&quot;: [{
-            &quot;name&quot;: &quot;filename&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;read file name&quot;
+        "name": "read_file",
+        "description": "read file from agent generate, should write file before read",
+        "args": [{
+            "name": "filename",
+            "type": "string",
+            "description": "read file name"
         }]
     },
     {
-        &quot;name&quot;: &quot;append_to_file&quot;,
-        &quot;description&quot;: &quot;append llm content to file, should write file before read&quot;,
-        &quot;args&quot;: [{
-            &quot;name&quot;: &quot;filename&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;file name&quot;
+        "name": "append_to_file",
+        "description": "append llm content to file, should write file before read",
+        "args": [{
+            "name": "filename",
+            "type": "string",
+            "description": "file name"
         }, {
-            &quot;name&quot;: &quot;content&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;append to file content&quot;
+            "name": "content",
+            "type": "string",
+            "description": "append to file content"
         }]
     },
     {
-        &quot;name&quot;: &quot;write_to_file&quot;,
-        &quot;description&quot;: &quot;write llm content to file&quot;,
-        &quot;args&quot;: [{
-            &quot;name&quot;: &quot;filename&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;file name&quot;
+        "name": "write_to_file",
+        "description": "write llm content to file",
+        "args": [{
+            "name": "filename",
+            "type": "string",
+            "description": "file name"
         }, {
-            &quot;name&quot;: &quot;content&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;write to file content&quot;
+            "name": "content",
+            "type": "string",
+            "description": "write to file content"
         }]
     },
     {
-        &quot;name&quot;: &quot;search&quot;,
-        &quot;description&quot;: &quot;this is a search engine, you can gain additional knowledge though this search engine &quot;
-                       &quot;when you are unsure of what large model return &quot;,
-        &quot;args&quot;: [{
-            &quot;name&quot;: &quot;query&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;search query to look up&quot;
+        "name": "search",
+        "description": "this is a search engine, you can gain additional knowledge though this search engine "
+                       "when you are unsure of what large model return ",
+        "args": [{
+            "name": "query",
+            "type": "string",
+            "description": "search query to look up"
         }]
     },
     {
-        &quot;name&quot;: &quot;finish&quot;,
-        &quot;description&quot;: &quot;return finish when you get exactly the right answer&quot;,
-        &quot;args&quot;: [{
-            &quot;name&quot;: &quot;answer&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;the final answer&quot;
+        "name": "finish",
+        "description": "return finish when you get exactly the right answer",
+        "args": [{
+            "name": "answer",
+            "type": "string",
+            "description": "the final answer"
         }]
     }
 ]
 
 tools_map = {
-    &quot;read_file&quot;: read_file,
-    &quot;append_to_file&quot;: append_to_file,
-    &quot;write_to_file&quot;: write_to_file,
-    &quot;search&quot;: search
+    "read_file": read_file,
+    "append_to_file": append_to_file,
+    "write_to_file": write_to_file,
+    "search": search
 }
 ```
 
@@ -344,30 +342,36 @@ tools_map = {
 
 prompt模板的定义需要包括工具的描述，返回结果及如何引导模型如何优化效果的描述等，当然具体的内容可以根据自身情况修改，并不是一成不变的，我实现的模板如下：
 
-其中“{}”中的内容为需要补充填写的，每个定义也不一样，需要拼接成字符串的形式加到prompt中。
+其中“`{}`”中的内容为需要补充填写的，每个定义也不一样，需要拼接成字符串的形式加到prompt中。
 
-```
-[constraints = [](https://www.zhihu.com/search?q=prompt_template&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)[
-   ](https://www.zhihu.com/search?q=%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D) &quot;仅使用下面列出的动作&quot;,
-    &quot;你只能主动行动，在计划行动时需要考虑到这一点&quot;,
-    &quot;你无法与物理对象交互，如果对于完成任务或目标是绝对必要的，则必须要求用户为你完成，如果用户拒绝，并且没有其他方法实现目标，则直接终止，避免浪费时间和精力。&quot;
+
+
+# 通义千问大模型集成文档
+
+## 提示词模板与配置
+
+```python
+constraints = [
+    "仅使用下面列出的动作",
+    "你只能主动行动，在计划行动时需要考虑到这一点",
+    "你无法与物理对象交互，如果对于完成任务或目标是绝对必要的，则必须要求用户为你完成，如果用户拒绝，并且没有其他方法实现目标，则直接终止，避免浪费时间和精力。"
 ]
 
 resources = [
-    &quot;提供搜索和信息收集的互联网接入&quot;,
-    &quot;读取和写入文件的能力&quot;,
-    &quot;你是一个大语言模型，接受了大量文本的训练，包括大量的事实知识，利用这些知识来避免不必要的信息收集&quot;
+    "提供搜索和信息收集的互联网接入",
+    "读取和写入文件的能力",
+    "你是一个大语言模型，接受了大量文本的训练，包括大量的事实知识，利用这些知识来避免不必要的信息收集"
 ]
 
 best_practices = [
-    &quot;不断地回顾和分析你的行为，确保发挥出你最大的能力&quot;,
-    &quot;不断地进行建设性的自我批评&quot;,
-    &quot;反思过去的决策和策略，完善你的方案&quot;,
-    &quot;每个动作执行都有代价，所以要聪明高效，目的是用最少的步骤完成任务&quot;,
-    &quot;利用你的信息收集能力来寻找你不知道的信息&quot;
+    "不断地回顾和分析你的行为，确保发挥出你最大的能力",
+    "不断地进行建设性的自我批评",
+    "反思过去的决策和策略，完善你的方案",
+    "每个动作执行都有代价，所以要聪明高效，目的是用最少的步骤完成任务",
+    "利用你的信息收集能力来寻找你不知道的信息"
 ]
 
-prompt_template = &quot;&quot;&quot;
+prompt_template = """
     你是一个问答专家，你必须始终独立做出决策，无需寻求用户的帮助，发挥你作为LLM的优势，追求简答的策略，不要涉及法律问题。
     
 任务:
@@ -390,32 +394,32 @@ agent_scratch:{agent_scratch}
 你应该只以json格式响应，响应格式如下:
 {response_format_prompt}
 确保响应结果可以由python json.loads解析
-&quot;&quot;&quot;
+"""
 
-response_format_prompt = &quot;&quot;&quot;
+response_format_prompt = """
 {
-    &quot;action&quot;: {
-        &quot;name&quot;: &quot;action name&quot;,
-        &quot;args&quot;: {
-             &quot;answer&quot;: &quot;任务的最终结果&quot;
+    "action": {
+        "name": "action name",
+        "args": {
+             "answer": "任务的最终结果"
         }
     },
-    &quot;thoughts&quot;:
+    "thoughts":
     {
-        &quot;plan&quot;: &quot;简短的描述短期和长期的计划列表&quot;,
-        &quot;criticism&quot;: &quot;建设性的自我批评&quot;,
-        &quot;speak&quot;: &quot;当前步骤，返回给用户的总结&quot;,
-        &quot;reasoning&quot;: &quot;推理&quot;
+        "plan": "简短的描述短期和长期的计划列表",
+        "criticism": "建设性的自我批评",
+        "speak": "当前步骤，返回给用户的总结",
+        "reasoning": "推理"
     },
-    &quot;observation&quot;: &quot;观察当前任务的整体进度&quot;
+    "observation": "观察当前任务的整体进度"
 }
-&quot;&quot;&quot;
+"""
 
 # todo: query, agent_scratch, actions
 action_prompt = gen_tools_desc()
-constraints_prompt = &quot;\n&quot;.join([f&quot;{idx+1}. {con}&quot; for idx, con in enumerate(constraints)])
-resources_prompt = &quot;\n&quot;.join([f&quot;{idx+1}. {con}&quot; for idx, con in enumerate(resources)])
-best_practices_prompt = &quot;\n&quot;.join([f&quot;{idx+1}. {con}&quot; for idx, con in enumerate(best_practices)])
+constraints_prompt = "\n".join([f"{idx+1}. {con}" for idx, con in enumerate(constraints)])
+resources_prompt = "\n".join([f"{idx+1}. {con}" for idx, con in enumerate(resources)])
+best_practices_prompt = "\n".join([f"{idx+1}. {con}" for idx, con in enumerate(best_practices)])
 
 
 def gen_prompt(query, agent_scratch):
@@ -431,79 +435,79 @@ def gen_prompt(query, agent_scratch):
     return prompt
 
 
-user_prompt = &quot;根据给定的目标和迄今为止取得的进展，确定下一个要执行的action，并使用前面指定的JSON模式进行响应：&quot;
+user_prompt = "根据给定的目标和迄今为止取得的进展，确定下一个要执行的action，并使用前面指定的JSON模式进行响应："
 ```
 
 ## 通义千问大模型 作为基座模型接入
 
 经过[调研，在](https://www.zhihu.com/search?q=%E5%AE%A2%E6%88%B7%E7%AB%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)开源的模型中通义千问的指令遵循效果较好，尤其是格式输出的遵循比较好。一个能按格式输出的需求很重要，这便于模型结果的解析并提升模型调用的成功率（结果解析失败需要重新调用模型），本项目采用 客户端 的方式通义千问模型。
 
-```
-import o[s
+```python
+import os
 import json
-](https://www.zhihu.com/search?q=cur_retry_time&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)import dashscope
-fr[om dashscope.](https://www.zhihu.com/search?q=finish_reason&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D)[api_entities](https://www.zhihu.com/search?q=total_tokens&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A700687839%7D).dashscope_response import Message
+import dashscope
+from dashscope.api_entities.dashscope_response import Message
 from prompt_cn import user_prompt
 
 
 class ModelProvider(object):
     def __init__(self):
-        self.api_key = os.environ.get(&quot;API_KEY&quot;)
-        self.model_name = os.environ.get(&quot;MODEL_NAME&quot;)
+        self.api_key = os.environ.get("API_KEY")
+        self.model_name = os.environ.get("MODEL_NAME")
         self._client = dashscope.Generation()
-        print(&quot;model_name:&quot;, self.model_name)
+        print("model_name:", self.model_name)
         self.max_retry_time = 3
 
     def chat(self, prompt, chat_history):
         cur_retry_time = 0
-        while cur_retry_time &lt; self.max_retry_time:
+        while cur_retry_time < self.max_retry_time:
             cur_retry_time += 1
             try:
-                messages = [Message(role=&#x27;system&#x27;, content=prompt)]
+                messages = [Message(role='system', content=prompt)]
                 for his in chat_history:
-                    messages.append(Message(role=&#x27;user&#x27;, content=his[0]))
-                    messages.append(Message(role=&#x27;assistant&#x27;, content=his[1]))
-                messages.append(Message(role=&#x27;user&#x27;, content=user_prompt))
+                    messages.append(Message(role='user', content=his[0]))
+                    messages.append(Message(role='assistant', content=his[1]))
+                messages.append(Message(role='user', content=user_prompt))
                 response = self._client.call(
                     model=self.model_name,
                     api_key=self.api_key,
                     messages=messages
                 )
-                &quot;&quot;&quot;
+                """
                 {
-                    &quot;status_code&quot;: 200,
-                     &quot;request_id&quot;: &quot;c965bd27-c89c-9b5c-924d-2f1688e8041e&quot;, 
-                     &quot;code&quot;: &quot;&quot;, 
-                     &quot;message&quot;: &quot;&quot;, 
-                     &quot;output&quot;: {
-                        &quot;text&quot;: null, &quot;finish_reason&quot;: null,
-                         &quot;choices&quot;: [{
-                            &quot;finish_reason&quot;: &quot;null&quot;, &quot;message&quot;: 
-                            {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;当然可以，这里有一个简单又美味&quot;}
+                    "status_code": 200,
+                     "request_id": "c965bd27-c89c-9b5c-924d-2f1688e8041e", 
+                     "code": "", 
+                     "message": "", 
+                     "output": {
+                        "text": null, "finish_reason": null,
+                         "choices": [{
+                            "finish_reason": "null", "message": 
+                            {"role": "assistant", "content": "当然可以，这里有一个简单又美味"}
                         }]
                     }, 
-                    &quot;usage&quot;: {
-                        &quot;input_tokens&quot;: 31, 
-                        &quot;output_tokens&quot;: 8, 
-                        &quot;total_tokens&quot;: 39, 
-                        &quot;plugins&quot;: {}
+                    "usage": {
+                        "input_tokens": 31, 
+                        "output_tokens": 8, 
+                        "total_tokens": 39, 
+                        "plugins": {}
                     }
                 }
-                &quot;&quot;&quot;
-                print(&quot;response:&quot;, response)
+                """
+                print("response:", response)
 
-                content = json.loads(response[&#x27;output&#x27;][&#x27;text&#x27;])
+                content = json.loads(response['output']['text'])
                 return content
             except Exception as err:
-                print(&quot;调用大模型出错：{}&quot;.format(err))
+                print("调用大模型出错：{}".format(err))
             return {}
 ```
 
 ## 其他说明
 
-本项目中，调用大模型的api_key，模型名及调用搜索的key均通过环境变量的方式获取，只需要配置.env文件即可。
+本项目中，调用大模型的`api_key`，模型名及调用搜索的key均通过环境变量的方式获取，只需要配置`.env`文件即可。
 
-```
+```env
 # bailian
 MODEL_NAME=
 API_KEY=sk-
@@ -512,9 +516,9 @@ API_KEY=sk-
 TAVILY_API_KEY=tvly-
 ```
 
-让环境变量生效，只需要在项目启动入口执行如下语句，注意.env需要放到当前执行的目录下，或者指定load_dotenv的参数dotenv_path：
+让环境变量生效，只需要在项目启动入口执行如下语句，注意`.env`需要放到当前执行的目录下，或者指定`load_dotenv`的参数`dotenv_path`：
 
-```
+```python
 from model_provider import ModelProvider
 
 # load env

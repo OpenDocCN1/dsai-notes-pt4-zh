@@ -1,3 +1,4 @@
+
 # OpenAI Sora与背后的研发团队
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/Dd0GdVRz2oqGiFxlv9xcXb6mned](https://aiyanxishe.feishu.cn/docx/Dd0GdVRz2oqGiFxlv9xcXb6mned)
@@ -18,17 +19,17 @@
 
 ![](img/281ee1e7e832003c943c938389fd2b98.png)
 
-该技术背后的骨干，包括研究人员蒂**姆·布鲁克斯(Tim B**rooks)和比尔·皮布尔斯(Bill Peebles)等，选择“Sora”这个名字是因为它“唤起了无限创造潜力的想法”。
+该技术背后的骨干，包括研究人员**蒂姆·布鲁克斯（Tim Brooks）**和比尔·皮布尔斯（Bill Peebles）等，选择“Sora”这个名字是因为它“唤起了无限创造潜力的想法”。
 
 ![](img/e5578a54507d11f196403bd313305155.png)
 
-### 蒂姆·布鲁克斯(Tim Brooks)
+## 蒂姆·布鲁克斯（Tim Brooks）
 
 Tim Brooks，DALL-E 3作者之一，GitHub 5.7k️项目InstructPix2Pix作者，2021-2022年在英伟达实习时，就是视频生成研究的项目负责人。
 
 ![](img/d71f6af481cfdbeb60b7e27c0529fded.png)
 
-https://www.timothybrooks.com/about/
+[https://www.timothybrooks.com/about/](https://www.timothybrooks.com/about/)
 
 Tim本科就读于卡内基梅隆大学，主修逻辑与计算，辅修计算机科学，其间在Facebook软件工程部门实习了四个月。
 
@@ -46,7 +47,7 @@ Tim本科就读于卡内基梅隆大学，主修逻辑与计算，辅修计算�
 
 据Tim自己介绍，他还喜欢摄影和音乐，高中时他拍摄的照片获得过National Geographic颁发的奖项，本人到过百老汇演出，还获得过B-box国际奖项……
 
-比尔·皮布尔斯(Bill Peebles)
+## 比尔·皮布尔斯（Bill Peebles）
 
 而与Tim师出同门、晚毕业4个月的William Peebles，也是Sora的另一名负责人。
 
@@ -60,9 +61,9 @@ Bill本科就读于MIT，主修计算机科学，参加了GAN和text2video的研
 
 William (Bill) Peebles，和谢赛宁合作，搞出了Sora的技术基础之一DiT（扩散Transformer）。论文还曾入围CVPR 2022最佳论文候选。
 
-此外，还有一些应界本科生在此团队中，可谓年轻的研发团队。
+此外，还有一些应届本科生在此团队中，可谓年轻的研发团队。
 
-## **业界评价**
+## 业界评价
 
 关于Sora 的研发主管之一 Tim Brooks 的简历。除了 AI 工作之外，他还给国家地理拍过摄影，在百老汇演出过，得过阿卡佩拉 beatboxing 的奖项。
 
@@ -84,33 +85,22 @@ William (Bill) Peebles，和谢赛宁合作，搞出了Sora的技术基础之一
 
 ![](img/df89aa9db4e537f58060ed2d0f74b585.png)
 
-## OpenAI Sora 团队成员的 X 账号清单：
+## OpenAI Sora 团队成员的 X 账号清单
 
-> 研发负责人：[@billpeeb](https://twitter.com/billpeeb)  [@_tim_brooks](https://twitter.com/_tim_brooks)
-
-> 系统负责人：[@cmikeh2](https://twitter.com/cmikeh2)
-
-> 贡献者： Clarence Wing Yin Ng
-
-> David Schnurr  [@_dschnurr](https://twitter.com/_dschnurr)
-
-> Eric Luhman
-
-> Joe Taylor [@JMT3](https://twitter.com/JMT3)
-
-> Li Jing [@jingli9111](https://twitter.com/jingli9111)
-
-> Natalie Summers
-
-> Ricky Wang [@ryw999](https://twitter.com/ryw999)
-
-> ryan o’rourke
-
-> Troy Luhman [@LuhmanTroy](https://twitter.com/LuhmanTroy)
-
-> Will DePue [@willdepue](https://twitter.com/willdepue)
-
-Yufei Guo
+- 研发负责人：[@billpeeb](https://twitter.com/billpeeb)、[@_tim_brooks](https://twitter.com/_tim_brooks)
+- 系统负责人：[@cmikeh2](https://twitter.com/cmikeh2)
+- 贡献者：
+  - Clarence Wing Yin Ng
+  - David Schnurr [@_dschnurr](https://twitter.com/_dschnurr)
+  - Eric Luhman
+  - Joe Taylor [@JMT3](https://twitter.com/JMT3)
+  - Li Jing [@jingli9111](https://twitter.com/jingli9111)
+  - Natalie Summers
+  - Ricky Wang [@ryw999](https://twitter.com/ryw999)
+  - ryan o’rourke
+  - Troy Luhman [@LuhmanTroy](https://twitter.com/LuhmanTroy)
+  - Will DePue [@willdepue](https://twitter.com/willdepue)
+  - Yufei Guo
 
 从团队的组建情况和研究基础来看，Sora应该是OpenAI近半年来的最新成果，而非网传“早已有之但憋着不发”。
 
@@ -120,11 +110,11 @@ Yufei Guo
 
 现在，是视频生成，下一个又会是什么？
 
-## **Sora后续学习组织**
+## Sora后续学习组织
 
 如果你对AI和Sora兴趣满满，想要深入挖掘、并且愿意加入这场技术革命，我们非常欢迎你的加入。
 
-https://xiaobot.net/p/AIGC2024?refer=fd9ed25f-2954-4de4-9e99-88e1999bf395
+<https://xiaobot.net/p/AIGC2024?refer=fd9ed25f-2954-4de4-9e99-88e1999bf395>
 
 <https://aiyanxishe.feishu.cn/sync/OU8SdIhzwsVXVabarE5c9iSKnRh>
 

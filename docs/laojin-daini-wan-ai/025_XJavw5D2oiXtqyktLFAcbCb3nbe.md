@@ -1,14 +1,13 @@
-# 记忆系统完全指南
-
-> 来源：[https://my.feishu.cn/docx/ZD1RdWhGto9jDRxXrzxcw37enyd](https://my.feishu.cn/docx/ZD1RdWhGto9jDRxXrzxcw37enyd)
 
 # 07. 记忆系统完全指南
 
-> 🟡 难**度：进阶 **| ⏱️ 阅读时间：25 分钟 | 📋 前置知识：已完成快速开始（03-快速开始指南）
+> 来源：[https://my.feishu.cn/docx/ZD1RdWhGto9jDRxXrzxcw37enyd](https://my.feishu.cn/docx/ZD1RdWhGto9jDRxXrzxcw37enyd)
+
+> 🟡 **难度：进阶** | ⏱️ 阅读时间：25 分钟 | 📋 前置知识：已完成快速开始（`03-快速开始指南`）
 
 > **本篇你将学会：** 理解 AI 的记忆机制、配置记忆存储、管理和优化 AI 的记忆
 
-> **小白速通：** 只看前 2 节（"为什么 AI 需要记忆"、"记忆架构"），了解概念就够了。OpenClaw 的记忆系统开箱即用，不需要额外配置
+> **小白速通：** 只看前 2 节（`为什么 AI 需要记忆`、`记忆架构`），了解概念就够了。`OpenClaw` 的记忆系统开箱即用，不需要额外配置
 
 ## 为什么 AI 需要记忆？
 
@@ -31,7 +30,7 @@ AI：抱歉，我没有之前对话的记录。
 
 ```
 你：帮我改一下昨天那个 React 组件
-AI：你说的是 UserProfile 组件吧？昨天你提到想把头像上传功能
+AI：你说的是 `UserProfile` 组件吧？昨天你提到想把头像上传功能
     从 base64 改成 presigned URL。我来改一下。
 ```
 
@@ -40,20 +39,24 @@ AI：你说的是 UserProfile 组件吧？昨天你提到想把头像上传功�
 ### 记忆系统的三大价值
 
 | 价值 | 说明 | 举例 |
+
 | --- | --- | --- |
+
 | 连续性 | 跨会话保持上下文 | 记住你正在做的项目、进度、决策 |
-| 个性化 | 了解你的偏好和习惯 | 知道你喜欢 TypeScript、不用分号、偏好函数式风格 |
+
+| 个性化 | 了解你的偏好和习惯 | 知道你喜欢 `TypeScript`、不用分号、偏好函数式风格 |
+
 | 效率 | 减少重复沟通 | 不用每次都解释你的技术栈、团队结构、工作流程 |
 
 ## OpenClaw 记忆架构
 
-**O**penClaw 的记忆系统设计哲学非常务实：Markdown 文件 + sqlite-vec（轻量级的向量数据库，用于语义搜索） 向量索引，兼顾透明可控和智能检索。
+`OpenClaw` 的记忆系统设计哲学非常务实：`Markdown` 文件 + `sqlite-vec`（轻量级的向量数据库，用于语义搜索）向量索引，兼顾透明可控和智能检索。
 
-AI 的记忆源头是写在磁盘上的 Markdown 文件和会话日志。你可以直接用文本编辑器查看、修改、删除 AI 的记忆，完全透明可控。同时，系统使用 sqlite-vec 做向量存储，支持语义搜索、混合搜索（hybrid search）、时间衰减（temporal decay）、最大边际相关性（MMR）和查询扩展（query expansion）等高级检索能力。
+AI 的记忆源头是写在磁盘上的 `Markdown` 文件和会话日志。你可以直接用文本编辑器查看、修改、删除 AI 的记忆，完全透明可控。同时，系统使用 `sqlite-vec` 做向量存储，支持语义搜索、混合搜索（`hybrid search`）、时间衰减（`temporal decay`）、最大边际相关性（`MMR`）和查询扩展（`query expansion`）等高级检索能力。
 
 ### 三层记忆架构
 
-OpenClaw 把记忆分成三层，各司其职：
+`OpenClaw` 把记忆分成三层，各司其职：
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -84,7 +87,7 @@ OpenClaw 把记忆分成三层，各司其职：
 
 ### 记忆源
 
-OpenClaw 的记忆来自三类文件：
+`OpenClaw` 的记忆来自三类文件：
 
 ```
 ~/.openclaw/workspace/
@@ -102,11 +105,11 @@ OpenClaw 的记忆来自三类文件：
 
 记忆源汇总：
 
-+   MEMORY.md — 手动维护的长期记忆
++   `MEMORY.md` — 手动维护的长期记忆
 
-+   workspace/memory/*.md — 每日日志
++   `workspace/memory/*.md` — 每日日志
 
-+   sessions/*.jsonl — 会话历史记录
++   `sessions/*.jsonl` — 会话历史记录
 
 ### 各层记忆详解
 
@@ -122,7 +125,7 @@ OpenClaw 的记忆来自三类文件：
 
 +   会话结束就消失
 
-+   对话太长时会触发 compaction（压缩），旧消息会被摘要
++   对话太长时会触发 `compaction`（压缩），旧消息会被摘要
 
 ```
 你：我的项目用 Next.js 14
@@ -130,7 +133,7 @@ AI：好的，Next.js 14。（这句话现在在会话记忆里）
 
 ... 聊了 200 条消息 ...
 
-AI：（compaction 触发，早期消息被压缩成摘要）
+AI：（`compaction` 触发，早期消息被压缩成摘要）
 ```
 
 #### 短期记忆 (Daily Logs)
@@ -138,7 +141,7 @@ AI：（compaction 触发，早期消息被压缩成摘要）
 每天一个 Markdown 文件，记录当天的重要信息。
 
 ```
-&lt;!-- memory/2026-02-25.md --&gt;
+<!-- memory/2026-02-25.md -->
 # 2026-02-25
 
 ## 上午
@@ -146,7 +149,7 @@ AI：（compaction 触发，早期消息被压缩成摘要）
 - 用户提到下周三有产品评审会
 
 ## 下午
-- 修复了 UserProfile 组件的头像上传 bug
+- 修复了 `UserProfile` 组件的头像上传 bug
 - 用户要求把所有 API 响应格式统一为 { data, error } 结构
 ```
 
@@ -161,47 +164,47 @@ AI：（compaction 触发，早期消息被压缩成摘要）
 精选的、持久的重要信息。这是 AI 的"核心记忆"。
 
 ```
-&lt;!-- MEMORY.md --&gt;
+<!-- MEMORY.md -->
 # 长期记忆
 
 ## 用户偏好
-- 编程语言：TypeScript，不用分号
-- 框架：Next.js 14 + React 18
+- 编程语言：`TypeScript`，不用分号
+- 框架：`Next.js 14` + `React 18`
 - 代码风格：函数式优先，避免 class
-- 编辑器：VS Code + Vim 键位
+- 编辑器：`VS Code` + `Vim` 键位
 
 ## 项目信息
 - 当前项目：电商平台重构
-- 部署环境：Vercel (前端) + Railway (后端)
-- 数据库：PostgreSQL + Prisma ORM
+- 部署环境：`Vercel` (前端) + `Railway` (后端)
+- 数据库：`PostgreSQL` + `Prisma ORM`
 
 ## 重要决策
-- 2026-02-20：决定从 REST 迁移到 tRPC
-- 2026-02-22：选择 Stripe 作为支付方案
+- 2026-02-20：决定从 REST 迁移到 `tRPC`
+- 2026-02-22：选择 `Stripe` 作为支付方案
 ```
 
 ## 记忆存储与检索
 
-OpenClaw 的记忆系统使用 sqlite-vec 作为向量存储后端，结合 Markdown 文件实现透明可控的记忆管理。
+`OpenClaw` 的记忆系统使用 `sqlite-vec` 作为向量存储后端，结合 `Markdown` 文件实现透明可控的记忆管理。
 
 ### 向量存储：sqlite-vec
 
 > ⏭️ **小白可跳过** — 这部分是技术深入分析，记忆系统默认配置已经够用
 
-sqlite-vec 是 OpenClaw 的默认向量存储方案。它基于 SQLite 扩展，零配置、单文件，同时支持向量语义搜索。
+`sqlite-vec` 是 `OpenClaw` 的默认向量存储方案。它基于 SQLite 扩展，零配置、单文件，同时支持向量语义搜索。
 
-sqlite-vec 开箱即用，不需要额外配置。如果需要自定义扩展路径，可以通过以下配置覆盖：
+`sqlite-vec` 开箱即用，不需要额外配置。如果需要自定义扩展路径，可以通过以下配置覆盖：
 
 ```
 // ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;memorySearch&quot;: {
-        &quot;store&quot;: {
-          &quot;vector&quot;: {
-            &quot;enabled&quot;: true,
-            &quot;extensionPath&quot;: &quot;/path/to/sqlite-vec&quot;
+  "agents": {
+    "defaults": {
+      "memorySearch": {
+        "store": {
+          "vector": {
+            "enabled": true,
+            "extensionPath": "/path/to/sqlite-vec"
           }
         }
       }
@@ -212,99 +215,109 @@ sqlite-vec 开箱即用，不需要额外配置。如果需要自定义扩展路
 
 优点：
 
-+   零配置，开箱即用（enabled 默认为 true）
++   零配置，开箱即用（`enabled` 默认为 `true`）
 
 +   单文件数据库，不需要安装额外服务
 
 +   支持向量语义搜索和 BM25 混合搜索
 
-+   记忆源文件（Markdown）仍然可以直接用编辑器查看和修改
++   记忆源文件（`Markdown`）仍然可以直接用编辑器查看和修改
 
-+   如果 sqlite-vec 扩展加载失败，自动回退到 JS 内存中的余弦相似度计算
++   如果 `sqlite-vec` 扩展加载失败，自动回退到 JS 内存中的余弦相似度计算
 
 ### Embedding 提供商
 
 > ⏭️ **小白可跳过** — 这部分是技术深入分析，记忆系统默认配置已经够用
 
-sqlite-vec 需要配合 embedding（把文本转换成数字向量的技术，让 AI 能理解语义相似性） 模型将文本转为向量。OpenClaw 支持多种 embedding 提供商：
+`sqlite-vec` 需要配合 `embedding`（把文本转换成数字向量的技术，让 AI 能理解语义相似性）模型将文本转为向量。`OpenClaw` 支持多种 embedding 提供商：
 
 | 提供商 | 说明 |
+
 | --- | --- |
-| OpenAI | text-embedding-3-small 等 |
+
+| OpenAI | `text-embedding-3-small` 等 |
+
 | Gemini | Google 的 embedding 模型 |
+
 | Mistral | Mistral 的 embedding 模型 |
+
 | Voyage | Voyage AI 的 embedding 模型 |
 
 ```
 // ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;memorySearch&quot;: {
-        &quot;provider&quot;: &quot;openai&quot;,
-        &quot;model&quot;: &quot;text-embedding-3-small&quot;
+  "agents": {
+    "defaults": {
+      "memorySearch": {
+        "provider": "openai",
+        "model": "text-embedding-3-small"
       }
     }
   }
 }
 ```
 
-Embedding 提供商通过 agents.defaults.memorySearch.provider 配置。如果不设置，OpenClaw 会按以下优先级自动选择：本地模型（如果配置了 local.modelPath）→ OpenAI → Gemini → Voyage → Mistral。也可以设置 provider: "local" 使用本地 GGUF 模型，完全离线运行。
+Embedding 提供商通过 `agents.defaults.memorySearch.provider` 配置。如果不设置，`OpenClaw` 会按以下优先级自动选择：本地模型（如果配置了 `local.modelPath`）→ OpenAI → Gemini → Voyage → Mistral。也可以设置 `provider: "local"` 使用本地 GGUF 模型，完全离线运行。
 
 ### 高级检索能力
 
 > ⏭️ **小白可跳过** — 这部分是技术深入分析，记忆系统默认配置已经够用
 
-OpenClaw 的记忆检索不是简单的关键词匹配，而是一套完整的智能检索系统：
+`OpenClaw` 的记忆检索不是简单的关键词匹配，而是一套完整的智能检索系统：
 
 | 能力 | 说明 |
+
 | --- | --- |
+
 | Hybrid Search（混合搜索） | 同时使用关键词匹配和向量语义搜索，综合排序 |
+
 | Temporal Decay（时间衰减） | 越新的记忆权重越高，旧记忆逐渐淡化 |
+
 | MMR（最大边际相关性） | 搜索结果去重，避免返回高度相似的内容 |
+
 | Query Expansion（查询扩展） | 自动扩展搜索词，提高召回率 |
 
 这些能力开箱即用，不需要额外配置。
 
 ## 记忆配置详解
 
-记忆系统的行为可以通过 ~/.openclaw/openclaw.json（JSON5 格式）精细控制。
+记忆系统的行为可以通过 `~/.openclaw/openclaw.json`（`JSON5` 格式）精细控制。
 
 ### 基础配置
 
-记忆系统默认启用，不需要额外配置。OpenClaw 通过 memory-core 插件提供记忆功能（默认加载）。
+记忆系统默认启用，不需要额外配置。`OpenClaw` 通过 `memory-core` 插件提供记忆功能（默认加载）。
 
-如果你想**关闭**记忆系统：
+如果你想关闭记忆系统：
 
 ```
 // ~/.openclaw/openclaw.json
 {
-  &quot;plugins&quot;: {
-    &quot;slots&quot;: {
-      &quot;memory&quot;: &quot;none&quot;
+  "plugins": {
+    "slots": {
+      "memory": "none"
     }
   }
 }
 ```
 
-记忆文件存储在 workspace 目录下（默认 ~/.openclaw/workspace），可以通过 agents.defaults.workspace 修改 workspace 路径。记忆系统默认加载今天和昨天的日志（memory/YYYY-MM-DD.md）以及长期记忆（MEMORY.md，仅在私聊会话中加载）。
+记忆文件存储在 `workspace` 目录下（默认 `~/.openclaw/workspace`），可以通过 `agents.defaults.workspace` 修改 `workspace` 路径。记忆系统默认加载今天和昨天的日志（`memory/YYYY-MM-DD.md`）以及长期记忆（`MEMORY.md`，仅在私聊会话中加载）。
 
 ### Compaction 与记忆刷新
 
-这是 OpenClaw 记忆系统最聪明的设计之一。当对话越来越长，上下文窗口快要满的时候，OpenClaw 会触发 compaction（压缩）。在压缩之前，它会自动提醒 AI 把重要信息存到记忆文件里。
+这是 `OpenClaw` 记忆系统最聪明的设计之一。当对话越来越长，上下文窗口快要满的时候，`OpenClaw` 会触发 `compaction`（压缩）。在压缩之前，它会自动提醒 AI 把重要信息存到记忆文件里。
 
 ```
 // ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;compaction&quot;: {
-        &quot;reserveTokensFloor&quot;: 20000,
-        &quot;memoryFlush&quot;: {
-          &quot;enabled&quot;: true,
-          &quot;softThresholdTokens&quot;: 4000,
-          &quot;systemPrompt&quot;: &quot;Session nearing compaction. Store durable memories now.&quot;,
-          &quot;prompt&quot;: &quot;Write any lasting notes to memory/YYYY-MM-DD.md; reply with NO_REPLY if nothing to store.&quot;
+  "agents": {
+    "defaults": {
+      "compaction": {
+        "reserveTokensFloor": 20000,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 4000,
+          "systemPrompt": "Session nearing compaction. Store durable memories now.",
+          "prompt": "Write any lasting notes to memory/YYYY-MM-DD.md; reply with NO_REPLY if nothing to store."
         }
       }
     }
@@ -312,69 +325,75 @@ OpenClaw 的记忆检索不是简单的关键词匹配，而是一套完整的�
 }
 ```
 
-工作流程：上下文使用率达到阈值 → 触发 memoryFlush（隐藏的 Agent 轮次）→ AI 自动把重要信息写入日志 → 执行 compaction 压缩旧消息 → 对话继续。
+工作流程：上下文使用率达到阈值 → 触发 `memoryFlush`（隐藏的 `Agent` 轮次）→ AI 自动把重要信息写入日志 → 执行 `compaction` 压缩旧消息 → 对话继续。
 
-你也可以在对话中手动触发压缩，使用聊天命令 /compact。
+你也可以在对话中手动触发压缩，使用聊天命令 `/compact`。
 
 | 字段 | 说明 |
+
 | --- | --- |
-| reserveTokensFloor | 压缩后至少保留多少 tokens 的上下文 |
-| softThresholdTokens | 距离压缩还有多少 tokens 时触发记忆刷新 |
+
+| `reserveTokensFloor` | 压缩后至少保留多少 tokens 的上下文 |
+
+| `softThresholdTokens` | 距离压缩还有多少 tokens 时触发记忆刷新 |
 
 ### 记忆加载行为
 
-每次会话启动时，OpenClaw 自动加载以下记忆：
+每次会话启动时，`OpenClaw` 自动加载以下记忆：
 
-+   MEMORY.md — 长期记忆（仅在私聊会话中加载，群聊中不加载）
++   `MEMORY.md` — 长期记忆（仅在私聊会话中加载，群聊中不加载）
 
-+   memory/YYYY-MM-DD.md — 今天和昨天的日志
++   `memory/YYYY-MM-DD.md` — 今天和昨天的日志
 
-这个行为是内置的，不需要额外配置。如果你想让记忆搜索覆盖更多文件（比如 workspace 外的 Markdown），可以通过 extraPaths 扩展搜索范围：
+这个行为是内置的，不需要额外配置。如果你想让记忆搜索覆盖更多文件（比如 `workspace` 外的 Markdown），可以通过 `extraPaths` 扩展搜索范围：
 
 ```
 // ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;memorySearch&quot;: {
-        &quot;extraPaths&quot;: [&quot;../team-docs&quot;, &quot;/srv/shared-notes/overview.md&quot;]
+  "agents": {
+    "defaults": {
+      "memorySearch": {
+        "extraPaths": ["../team-docs", "/srv/shared-notes/overview.md"]
       }
     }
   }
 }
 ```
 
-路径可以是绝对路径或相对于 workspace 的路径。目录会被递归扫描，但只索引 Markdown 文件（.md）。
+路径可以是绝对路径或相对于 `workspace` 的路径。目录会被递归扫描，但只索引 Markdown 文件（`.md`）。
 
-为什么要注意记忆大小？因为记忆也占上下文窗口。日志写得太详细时，会挤占正常对话的空间。建议 MEMORY.md 控制在 3000 tokens 以内。
+为什么要注意记忆大小？因为记忆也占上下文窗口。日志写得太详细时，会挤占正常对话的空间。建议 `MEMORY.md` 控制在 3000 tokens 以内。
 
 ### 按 Agent 配置记忆
 
-不同的 Agent 可以有不同的记忆行为。通过给每个 Agent 配置独立的 workspace，实现记忆隔离：
+不同的 `Agent` 可以有不同的记忆行为。通过给每个 `Agent` 配置独立的 `workspace`，实现记忆隔离：
+
+
+
+# OpenClaw 记忆系统指南
+
+## 工作区与记忆配置
 
 ```
-// ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;list&quot;: [
+  "agents": {
+    "list": [
       {
-        &quot;id&quot;: &quot;coding&quot;,
-        &quot;workspace&quot;: &quot;~/.openclaw/workspace-coding&quot;
+        "id": "coding",
+        "workspace": "~/.openclaw/workspace-coding"
       },
       {
-        &quot;id&quot;: &quot;social&quot;,
-        &quot;workspace&quot;: &quot;~/.openclaw/workspace-social&quot;
+        "id": "social",
+        "workspace": "~/.openclaw/workspace-social"
       }
     ]
   }
 }
 ```
 
-每个 Agent 的 workspace 下有独立的 MEMORY.md 和 memory/ 目录。如果某个 Agent 完全不需要记忆功能，可以在它的 workspace 里不放任何记忆文件即可。
+每个 Agent 的 `workspace` 下有独立的 `MEMORY.md` 和 `memory/` 目录。如果某个 Agent 完全不需要记忆功能，可以在它的 `workspace` 里不放任何记忆文件即可。
 
 ## 对话上下文管理
-
-上下文窗口是 AI 的"工作记忆"，理解它的工作方式对用好记忆系统至关重要。
 
 ### 什么是上下文窗口？
 
@@ -405,7 +424,7 @@ OpenClaw 的记忆检索不是简单的关键词匹配，而是一套完整的�
 
 ### 滑动窗口策略
 
-当对话越来越长，上下文窗口快满了怎么办？OpenClaw 使用滑动窗口策略：
+当对话越来越长，上下文窗口快满了怎么办？`OpenClaw` 使用滑动窗口策略：
 
 ```
 正常对话：  [系统提示 | 记忆 | 消息1 | 消息2 | ... | 消息N]
@@ -413,37 +432,36 @@ OpenClaw 的记忆检索不是简单的关键词匹配，而是一套完整的�
 继续对话：  [系统提示 | 记忆 | [摘要:消息1-50] | 消息51 | ... | 消息N+M]
 ```
 
-compaction 的过程：检测到上下文使用率超过阈值 → 触发 memoryFlush，AI 保存重要信息到记忆文件 → 将早期消息压缩成摘要 → 释放上下文空间，继续对话。
+`compaction` 的过程：检测到上下文使用率超过阈值 → 触发 `memoryFlush`，AI 保存重要信息到记忆文件 → 将早期消息压缩成摘要 → 释放上下文空间，继续对话。
 
 ### 上下文预算管理
 
-OpenClaw 通过 compaction 机制自动管理上下文空间。当对话接近上下文窗口上限时，会自动触发压缩。你可以通过 reserveTokensFloor 控制压缩后保留多少上下文空间：
+`OpenClaw` 通过 `compaction` 机制自动管理上下文空间。当对话接近上下文窗口上限时，会自动触发压缩。你可以通过 `reserveTokensFloor` 控制压缩后保留多少上下文空间：
 
 ```
-// ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;compaction&quot;: {
-        &quot;reserveTokensFloor&quot;: 20000
+  "agents": {
+    "defaults": {
+      "compaction": {
+        "reserveTokensFloor": 20000
       }
     }
   }
 }
 ```
 
-reserveTokensFloor 越大，压缩越激进（保留的旧消息越少）。默认值 20000 tokens 对大多数场景够用。
+`reserveTokensFloor` 越大，压缩越激进（保留的旧消息越少）。默认值 `20000` tokens 对大多数场景够用。
 
-> 💡 实**用建议： **如果记忆文件太大导致上下文空间不足，最有效的做法是精简 MEMORY.md 的内容（建议控制在 3000 tokens 以内），而不是调整配置参数。
+> 💡 **实用建议：** 如果记忆文件太大导致上下文空间不足，最有效的做法是精简 `MEMORY.md` 的内容（建议控制在 3000 tokens 以内），而不是调整配置参数。
 
 ## 用户画像和偏好记忆
 
-OpenClaw 有一个专门的文件 USER.md 来存储用户画像。这跟 MEMORY.md 不同 — MEMORY.md 存的是各种杂项记忆，USER.md 专门描述"你是谁"。
+`OpenClaw` 有一个专门的文件 `USER.md` 来存储用户画像。这跟 `MEMORY.md` 不同 — `MEMORY.md` 存的是各种杂项记忆，`USER.md` 专门描述"你是谁"。
 
 ### USER.md 结构
 
 ```
-&lt;!-- ~/.openclaw/workspace/USER.md --&gt;
+<!-- ~/.openclaw/workspace/USER.md -->
 # 用户画像
 
 ## 基本信息
@@ -465,15 +483,15 @@ OpenClaw 有一个专门的文件 USER.md 来存储用户画像。这跟 MEMORY.
 
 ### 自动学习用户偏好
 
-OpenClaw 没有专门的"自动学习"配置开关。用户偏好的记录依赖于 AI 模型自身的判断 — 当你在对话中表达偏好时，AI 会主动将其写入 USER.md 或 MEMORY.md。
+`OpenClaw` 没有专门的"自动学习"配置开关。用户偏好的记录依赖于 AI 模型自身的判断 — 当你在对话中表达偏好时，AI 会主动将其写入 `USER.md` 或 `MEMORY.md`。
 
-你可以通过 SOUL.md（Agent 人格文件）来引导 AI 更主动地记录偏好：
+你可以通过 `SOUL.md`（Agent 人格文件）来引导 AI 更主动地记录偏好：
 
 ```
-&lt;!-- ~/.openclaw/workspace/SOUL.md 中添加 --&gt;
+<!-- ~/.openclaw/workspace/SOUL.md 中添加 -->
 ## 记忆习惯
-- 当用户表达偏好或习惯时，主动写入 USER.md
-- 当用户做出重要决策时，记录到 MEMORY.md
+- 当用户表达偏好或习惯时，主动写入 `USER.md`
+- 当用户做出重要决策时，记录到 `MEMORY.md`
 - 每次对话结束前，检查是否有值得记录的信息
 ```
 
@@ -490,17 +508,15 @@ OpenClaw 没有专门的"自动学习"配置开关。用户偏好的记录依赖
 记住：跟我说话不用太客气，直接说重点
 ```
 
-AI 会根据内容类型，自动决定写入 MEMORY.md 还是 USER.md：
+AI 会根据内容类型，自动决定写入 `MEMORY.md` 还是 `USER.md`：
 
-+   个人偏好、习惯 → USER.md
++   个人偏好、习惯 → `USER.md`
 
-+   项目信息、决策、事实 → MEMORY.md
++   项目信息、决策、事实 → `MEMORY.md`
 
-+   临时笔记、当天事项 → memory/YYYY-MM-DD.md
++   临时笔记、当天事项 → `memory/YYYY-MM-DD.md`
 
 ## 记忆工具
-
-AI 有专门的工具来操作记忆：
 
 ### memory_search — 语义搜索
 
@@ -508,18 +524,18 @@ AI 有专门的工具来操作记忆：
 
 ```
 用户：我之前说过用什么支付方案来着？
-AI：（调用 memory_search(&quot;支付方案&quot;)）
+AI：（调用 memory_search("支付方案")）
     → 找到 MEMORY.md 中的记录：2026-02-22 决定用 Stripe
 AI：你在 2 月 22 号决定用 Stripe 作为支付方案。
 ```
 
 搜索范围：
 
-+   MEMORY.md — 长期记忆
++   `MEMORY.md` — 长期记忆
 
-+   USER.md — 用户画像
++   `USER.md` — 用户画像
 
-+   memory/*.md — 所有日志文件
++   `memory/*.md` — 所有日志文件
 
 ### memory_get — 精确读取
 
@@ -527,7 +543,7 @@ AI：你在 2 月 22 号决定用 Stripe 作为支付方案。
 
 ```
 用户：看看我昨天的笔记
-AI：（调用 memory_get(&quot;memory/2026-02-24.md&quot;)）
+AI：（调用 memory_get("memory/2026-02-24.md")）
     → 返回昨天日志的完整内容
 ```
 
@@ -543,7 +559,7 @@ AI：（调用 file_write，写入 MEMORY.md）
 
 ## 知识库集成 (RAG)
 
-当你需要 AI 记住大量结构化知识（比如公司文档、产品手册、代码库），普通的记忆文件就不够用了。这时候需要 RAG（Retrieval-Augmented Generation，检索增强生成）。
+当你需要 AI 记住大量结构化知识（比如公司文档、产品手册、代码库），普通的记忆文件就不够了。这时候需要 RAG（Retrieval-Augmented Generation，检索增强生成）。
 
 ### 什么是 RAG？
 
@@ -559,17 +575,16 @@ RAG 方式：
 
 ### OpenClaw 的 RAG 实现
 
-OpenClaw 的记忆搜索本身就具备 RAG 能力 — 通过 memorySearch 索引 workspace 下的 Markdown 文件，支持语义搜索。如果你想索引 workspace 之外的文件，可以通过 extraPaths 扩展：
+`OpenClaw` 的记忆搜索本身就具备 RAG 能力 — 通过 `memorySearch` 索引 `workspace` 下的 Markdown 文件，支持语义搜索。如果你想索引 `workspace` 之外的文件，可以通过 `extraPaths` 扩展：
 
 ```
-// ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;defaults&quot;: {
-      &quot;memorySearch&quot;: {
-        &quot;extraPaths&quot;: [
-          &quot;~/Documents/company-wiki&quot;,
-          &quot;~/projects/myapp/README.md&quot;
+  "agents": {
+    "defaults": {
+      "memorySearch": {
+        "extraPaths": [
+          "~/Documents/company-wiki",
+          "~/projects/myapp/README.md"
         ]
       }
     }
@@ -577,55 +592,54 @@ OpenClaw 的记忆搜索本身就具备 RAG 能力 — 通过 memorySearch 索�
 }
 ```
 
-对于更高级的知识检索需求，OpenClaw 支持 QMD 后端（实验性功能），它结合了 BM25 + 向量搜索 + 重排序：
+对于更高级的知识检索需求，`OpenClaw` 支持 `QMD` 后端（实验性功能），它结合了 `BM25` + 向量搜索 + 重排序：
 
 ```
-// ~/.openclaw/openclaw.json
 {
-  &quot;memory&quot;: {
-    &quot;backend&quot;: &quot;qmd&quot;,
-    &quot;qmd&quot;: {
-      &quot;includeDefaultMemory&quot;: true,
-      &quot;paths&quot;: [
-        { &quot;name&quot;: &quot;docs&quot;, &quot;path&quot;: &quot;~/notes&quot;, &quot;pattern&quot;: &quot;**/*.md&quot; }
+  "memory": {
+    "backend": "qmd",
+    "qmd": {
+      "includeDefaultMemory": true,
+      "paths": [
+        { "name": "docs", "path": "~/notes", "pattern": "**/*.md" }
       ],
-      &quot;update&quot;: { &quot;interval&quot;: &quot;5m&quot; },
-      &quot;limits&quot;: { &quot;maxResults&quot;: 6, &quot;timeoutMs&quot;: 4000 }
+      "update": { "interval": "5m" },
+      "limits": { "maxResults": 6, "timeoutMs": 4000 }
     }
   }
 }
 ```
 
-> ⚠️ QMD 需要单独安装（bun install -g https://github.com/tobi/qmd），且需要支持扩展的 SQLite 构建。如果 QMD 不可用，OpenClaw 会自动回退到内置的 SQLite 搜索引擎。
+> ⚠️ `QMD` 需要单独安装（`bun install -g https://github.com/tobi/qmd`），且需要支持扩展的 `SQLite` 构建。如果 `QMD` 不可用，`OpenClaw` 会自动回退到内置的 `SQLite` 搜索引擎。
 
 ### 知识源类型
 
-OpenClaw 的 memorySearch 默认只索引 Markdown 文件（.md）。如果使用 QMD 后端，可以通过 paths 配置索引额外目录：
+`OpenClaw` 的 `memorySearch` 默认只索引 Markdown 文件（`.md`）。如果使用 `QMD` 后端，可以通过 `paths` 配置索引额外目录：
 
 | 配置方式 | 说明 | 适用场景 |
 | --- | --- | --- |
-| 默认 workspace | 自动索引 MEMORY.md + memory/*.md | 日常使用 |
-| extraPaths | 索引 workspace 外的 Markdown 文件 | 需要引用外部文档 |
-| QMD paths | 索引任意目录，支持 glob 模式 | 大规模知识库 |
+| 默认 workspace | 自动索引 `MEMORY.md` + `memory/*.md` | 日常使用 |
+| `extraPaths` | 索引 `workspace` 外的 Markdown 文件 | 需要引用外部文档 |
+| `QMD paths` | 索引任意目录，支持 glob 模式 | 大规模知识库 |
 
 ### 向量搜索引擎
 
-OpenClaw 内置两种搜索引擎：
+`OpenClaw` 内置两种搜索引擎：
 
 | 引擎 | 特点 | 配置方式 |
 | --- | --- | --- |
-| 内置 SQLite（默认） | 零配置，sqlite-vec 加速，支持混合搜索 | 开箱即用 |
-| QMD（实验性） | BM25 + 向量 + 重排序，功能更强 | memory.backend = &quot;qmd&quot; |
+| 内置 `SQLite`（默认） | 零配置，`sqlite-vec` 加速，支持混合搜索 | 开箱即用 |
+| `QMD`（实验性） | `BM25` + 向量 + 重排序，功能更强 | `memory.backend = "qmd"` |
 
 ### 知识库与记忆管理命令
 
-记忆索引和知识库都通过 openclaw memory 子命令管理：
+记忆索引和知识库都通过 `openclaw memory` 子命令管理：
 
 ```
 # 记忆索引管理
 openclaw memory status             # 查看记忆索引状态
 openclaw memory index              # 重建记忆索引
-openclaw memory search &quot;部署&quot;       # 搜索记忆（支持语义搜索）
+openclaw memory search "部署"       # 搜索记忆（支持语义搜索）
 ```
 
 ### 记忆 vs 知识库
@@ -650,7 +664,7 @@ openclaw memory status
 openclaw memory index
 
 # 搜索记忆（支持语义搜索）
-openclaw memory search &quot;React 组件&quot;
+openclaw memory search "React 组件"
 ```
 
 记忆文件本身是 Markdown，可以直接用编辑器查看和修改：
@@ -660,7 +674,7 @@ code ~/.openclaw/workspace/MEMORY.md                    # VS Code
 vim ~/.openclaw/workspace/memory/2026-02-25.md          # Vim
 ```
 
-修改后运行 openclaw memory index 重建索引，下次会话启动时 AI 就能看到更新的内容。
+修改后运行 `openclaw memory index` 重建索引，下次会话启动时 AI 就能看到更新的内容。
 
 ### 通过对话操作
 
@@ -678,31 +692,31 @@ AI 会自动调用对应的记忆工具完成操作。
 
 ## 记忆隐私和安全
 
-记忆文件里可能包含敏感信息。OpenClaw 提供了多层保护机制。
+记忆文件里可能包含敏感信息。`OpenClaw` 提供了多层保护机制。
 
 ### 敏感信息过滤
 
-OpenClaw 没有内置的记忆内容自动过滤配置。防止敏感信息写入记忆文件的最佳做法是通过 SOUL.md 明确告诉 AI：
+`OpenClaw` 没有内置的记忆内容自动过滤配置。防止敏感信息写入记忆文件的最佳做法是通过 `SOUL.md` 明确告诉 AI：
 
 ```
-&lt;!-- ~/.openclaw/workspace/SOUL.md 中添加 --&gt;
+<!-- ~/.openclaw/workspace/SOUL.md 中添加 -->
 ## 安全规则
-- 永远不要将密码、API Key、Token、身份证号、银行卡号写入记忆文件
+- 永远不要将密码、`API Key`、`Token`、`身份证号`、`银行卡号`写入记忆文件
 - 如果用户要求记住敏感信息，提醒用户使用环境变量或密钥管理器
-- 记忆文件中的敏感信息用 [REDACTED] 替代
+- 记忆文件中的敏感信息用 `[REDACTED]` 替代
 ```
 
 这种方式利用 AI 模型自身的判断力来过滤敏感内容，比正则匹配更智能（能识别上下文中的敏感语义，而不仅仅是模式匹配）。
 
 ### 记忆文件安全
 
-OpenClaw 的记忆文件是纯文本 Markdown，存储在本地磁盘上，没有内置加密功能。如果你需要保护记忆文件：
+`OpenClaw` 的记忆文件是纯文本 Markdown，存储在本地磁盘上，没有内置加密功能。如果你需要保护记忆文件：
 
-+   **磁盘加密**：使用操作系统级别的磁盘加密（macOS FileVault、Linux LUKS、Windows BitLocker）
++   **磁盘加密**：使用操作系统级别的磁盘加密（`macOS FileVault`、`Linux LUKS`、`Windows BitLocker`）
 
-+   **文件权限**：确保 ~/.openclaw/workspace/ 目录权限为 700（仅所有者可读写）
++   **文件权限**：确保 `~/.openclaw/workspace/` 目录权限为 `700`（仅所有者可读写）
 
-+   **Git 忽略**：如果 workspace 在 Git 仓库中，将记忆文件加入 .gitignore
++   **Git 忽略**：如果 `workspace` 在 Git 仓库中，将记忆文件加入 `.gitignore`
 
 ```
 # 设置 workspace 目录权限（macOS/Linux）
@@ -711,25 +725,27 @@ chmod 700 ~/.openclaw/workspace
 
 ### 不应该存入记忆的内容
 
-无论有没有加密，密码、API Key、JWT Token、身份证号、银行卡号等敏感信息都不应该写入记忆文件。用环境变量或密钥管理器代替。
+无论有没有加密，密码、`API Key`、`JWT Token`、`身份证号`、`银行卡号`等敏感信息都不应该写入记忆文件。用环境变量或密钥管理器代替。
 
 ### 记忆操作追踪
 
-OpenClaw 没有内置的记忆审计日志配置。但你可以通过以下方式追踪记忆变更：
+`OpenClaw` 没有内置的记忆审计日志配置。但你可以通过以下方式追踪记忆变更：
 
-+   **Git 版本控制**：将 workspace 初始化为 Git 仓库，每次记忆变更都有完整历史
++   **Git 版本控制**：将 `workspace` 初始化为 Git 仓库，每次记忆变更都有完整历史
 
-+   **会话日志**：OpenClaw 的会话日志（sessions/*.jsonl）记录了所有工具调用，包括文件写入操作
++   **会话日志**：`OpenClaw` 的会话日志（`sessions/*.jsonl`）记录了所有工具调用，包括文件写入操作
 
 ```
 # 用 Git 追踪记忆变更
 cd ~/.openclaw/workspace
 git init
 git add MEMORY.md USER.md memory/
-git commit -m &quot;memory snapshot&quot;
+git commit -m "memory snapshot"
 ```
 
-这比内置审计日志更强大 — 你可以用 git diff 看到每次记忆变更的具体内容。
+
+
+这比内置审计日志更强大 — 你可以用 `git diff` 看到每次记忆变更的具体内容。
 
 ## 记忆系统调优
 
@@ -737,9 +753,9 @@ git commit -m &quot;memory snapshot&quot;
 
 ### 记忆文件大小控制
 
-MEMORY.md 不应该无限增长。OpenClaw 没有内置的自动归档配置，但有以下最佳实践：
+`MEMORY.md` 不应该无限增长。OpenClaw 没有内置的自动归档配置，但有以下最佳实践：
 
-+   **MEMORY.md**：建议控制在 500 行（约 3000 tokens）以内。内容太多会挤占对话上下文
++   `MEMORY.md`：建议控制在 500 行（约 3000 tokens）以内。内容太多会挤占对话上下文
 
 +   **每日日志**：每天自动创建新文件，天然不会过大
 
@@ -751,50 +767,50 @@ mkdir -p ~/.openclaw/workspace/memory/archive
 mv ~/.openclaw/workspace/memory/2025-*.md ~/.openclaw/workspace/memory/archive/
 ```
 
-定期整理 MEMORY.md 是保持 AI 助手高效的关键 — 过时的信息不仅浪费上下文空间，还可能让 AI 产生错误判断。
+定期整理 `MEMORY.md` 是保持 AI 助手高效的关键 — 过时的信息不仅浪费上下文空间，还可能让 AI 产生错误判断。
 
 ### 记忆搜索优化
 
 如果记忆文件很多，搜索会变慢。优化建议：
 
-1.  运行 openclaw memory index 确保索引是最新的
+1.  运行 `openclaw memory index` 确保索引是最新的
 
-1.  将旧日志移到归档目录（memory/archive/），减少索引文件数量
+2.  将旧日志移到归档目录（`memory/archive/`），减少索引文件数量
 
-1.  给记忆内容加标签方便精确搜索：## 项目信息 [tags: project, tech-stack]
+3.  给记忆内容加标签方便精确搜索：## 项目信息 [tags: project, tech-stack]
 
 ### 记忆加载性能
 
 如果启动时加载记忆太慢，可以优化以下方面：
 
-1.  **精简 MEMORY.md** — 删除过时内容，控制在 500 行以内
+1.  `MEMORY.md` — 删除过时内容，控制在 500 行以内
 
-1.  **减少日志文件数量** — 归档超过 30 天的旧日志
+2.  **减少日志文件数量** — 归档超过 30 天的旧日志
 
-1.  **重建索引** — 运行 openclaw memory index 确保索引是最新的
+3.  `openclaw memory index` — 确保索引是最新的
 
 如果使用 QMD 后端，可以调整刷新间隔和超时：
 
 ```
-// ~/.openclaw/openclaw.json
+# ~/.openclaw/openclaw.json
 {
-  &quot;memory&quot;: {
-    &quot;backend&quot;: &quot;qmd&quot;,
-    &quot;qmd&quot;: {
-      &quot;update&quot;: {
-        &quot;interval&quot;: &quot;10m&quot;,
-        &quot;commandTimeoutMs&quot;: 30000
+  "memory": {
+    "backend": "qmd",
+    "qmd": {
+      "update": {
+        "interval": "10m",
+        "commandTimeoutMs": 30000
       },
-      &quot;limits&quot;: {
-        &quot;maxResults&quot;: 4,
-        &quot;timeoutMs&quot;: 3000
+      "limits": {
+        "maxResults": 4,
+        "timeoutMs": 3000
       }
     }
   }
 }
 ```
 
-> 💡 提**示： **QMD 首次搜索可能较慢（需要下载本地 GGUF 模型用于重排序和查询扩展）。后续搜索会快很多。
+> 💡 **提示：** QMD 首次搜索可能较慢（需要下载本地 GGUF 模型用于重排序和查询扩展）。后续搜索会快很多。
 
 ## 多用户记忆隔离
 
@@ -805,17 +821,17 @@ mv ~/.openclaw/workspace/memory/2025-*.md ~/.openclaw/workspace/memory/archive/
 最简单的方案：每个用户一个 Agent，配置独立的 workspace。
 
 ```
-// ~/.openclaw/openclaw.json
+# ~/.openclaw/openclaw.json
 {
-  &quot;agents&quot;: {
-    &quot;list&quot;: [
+  "agents": {
+    "list": [
       {
-        &quot;id&quot;: &quot;alice&quot;,
-        &quot;workspace&quot;: &quot;~/.openclaw/workspace-alice&quot;
+        "id": "alice",
+        "workspace": "~/.openclaw/workspace-alice"
       },
       {
-        &quot;id&quot;: &quot;bob&quot;,
-        &quot;workspace&quot;: &quot;~/.openclaw/workspace-bob&quot;
+        "id": "bob",
+        "workspace": "~/.openclaw/workspace-bob"
       }
     ]
   }
@@ -838,23 +854,23 @@ mv ~/.openclaw/workspace/memory/2025-*.md ~/.openclaw/workspace/memory/archive/
 
 ### 通过消息路由绑定
 
-配合多 Agent 路由，让不同联系人的消息自动路由到对应 Agent。在顶层 bindings 配置中设置 channel、contact 和 agent 的映射关系即可（bindings 是顶层配置，不嵌套在 channels 内部）。详见 08. 多 Agent 路由。
+配合多 Agent 路由，让不同联系人的消息自动路由到对应 Agent。在顶层 `bindings` 配置中设置 `channel`、`contact` 和 `agent` 的映射关系即可（`bindings` 是顶层配置，不嵌套在 `channels` 内部）。详见 08. 多 Agent 路由。
 
 ### 共享记忆方案
 
-如果需要多个 Agent 共享部分记忆，可以用符号链接指向同一个 MEMORY.md 文件，但要注意并发写入可能导致冲突。更安全的做法是通过独立 workspace 隔离，仅在需要时手动同步。
+如果需要多个 Agent 共享部分记忆，可以用符号链接指向同一个 `MEMORY.md` 文件，但要注意并发写入可能导致冲突。更安全的做法是通过独立 workspace 隔离，仅在需要时手动同步。
 
 ## 记忆插件系统
 
 ### 默认插件：memory-core
 
-OpenClaw 默认使用 memory-core 插件提供记忆功能。这个插件包含：
+OpenClaw 默认使用 `memory-core` 插件提供记忆功能。这个插件包含：
 
 +   记忆文件的读写操作
 
-+   memory_search 和 memory_get 工具
++   `memory_search` 和 `memory_get` 工具
 
-+   compaction 时的自动记忆刷新
++   `compaction` 时的自动记忆刷新
 
 +   日志文件的自动创建和管理
 
@@ -863,11 +879,11 @@ OpenClaw 默认使用 memory-core 插件提供记忆功能。这个插件包含�
 如果你不需要记忆（比如一次性的问答场景）：
 
 ```
-// ~/.openclaw/openclaw.json
+# ~/.openclaw/openclaw.json
 {
-  &quot;plugins&quot;: {
-    &quot;slots&quot;: {
-      &quot;memory&quot;: &quot;none&quot;
+  "plugins": {
+    "slots": {
+      "memory": "none"
     }
   }
 }
@@ -893,7 +909,7 @@ AI 可以用这些语言写入和搜索记忆。搜索时会自动处理多语�
 
 ### 1. 定期整理 MEMORY.md
 
-MEMORY.md 是 AI 每次启动都会加载的文件。如果它太大太杂，会浪费上下文空间，还可能让 AI 混淆。
+`MEMORY.md` 是 AI 每次启动都会加载的文件。如果它太大太杂，会浪费上下文空间，还可能让 AI 混淆。
 
 建议：
 
@@ -907,7 +923,7 @@ MEMORY.md 是 AI 每次启动都会加载的文件。如果它太大太杂，会
 
 ### 2. 善用日志文件
 
-日常的临时信息写入日志，不要塞进 MEMORY.md：
+日常的临时信息写入日志，不要塞进 `MEMORY.md`：
 
 ```
 # 好的做法
@@ -932,7 +948,7 @@ AI：好的，我把以下要点写入了今天的日志：
 
 ### 4. 分类存储
 
-在 MEMORY.md 中用清晰的标题分类：
+在 `MEMORY.md` 中用清晰的标题分类：
 
 ```
 ## 技术栈
@@ -950,7 +966,7 @@ AI：好的，我把以下要点写入了今天的日志：
 
 ### 5. 不要存敏感信息
 
-密码、API Key、Token 等敏感信息不要写入记忆文件。用环境变量或密钥管理器。
+密码、`API Key`、`Token` 等敏感信息不要写入记忆文件。用环境变量或密钥管理器。
 
 ### 6. 备份记忆
 
@@ -958,8 +974,8 @@ AI：好的，我把以下要点写入了今天的日志：
 
 ```
 # Git 管理
-cd ~/.openclaw/workspace &amp;&amp; git init &amp;&amp; git add MEMORY.md USER.md memory/
-git commit -m &quot;backup: memory snapshot 2026-02-25&quot;
+cd ~/.openclaw/workspace && git init && git add MEMORY.md USER.md memory/
+git commit -m "backup: memory snapshot 2026-02-25"
 
 # 定期打包备份
 tar -czf ~/backups/memory-$(date +%Y%m%d).tar.gz ~/.openclaw/workspace/
@@ -969,19 +985,19 @@ tar -czf ~/backups/memory-$(date +%Y%m%d).tar.gz ~/.openclaw/workspace/
 
 ### Q: AI 怎么突然不记得之前说的话了？
 
-最常见的原因是 compaction。当对话太长，早期消息会被压缩成摘要，细节可能丢失。
+最常见的原因是 `compaction`。当对话太长，早期消息会被压缩成摘要，细节可能丢失。
 
 解决方案：
 
 +   重要信息主动让 AI 写入记忆文件
 
-+   开启 memoryFlush，compaction 前自动保存
++   开启 `memoryFlush`，`compaction` 前自动保存
 
-+   增大 reserveTokensFloor，保留更多上下文
++   增大 `reserveTokensFloor`，保留更多上下文
 
 ### Q: 记忆文件太大了怎么办？
 
-用 openclaw memory status 查看索引状态，直接编辑 ~/.openclaw/workspace/MEMORY.md 整理内容。超过 30 天的日志可以手动归档到 memory/archive/ 目录。建议 MEMORY.md 控制在 500 行以内。
+用 `openclaw memory status` 查看索引状态，直接编辑 `~/.openclaw/workspace/MEMORY.md` 整理内容。超过 30 天的日志可以手动归档到 `memory/archive/` 目录。建议 `MEMORY.md` 控制在 500 行以内。
 
 ### Q: 能不能让 AI 忘记某些事？
 
@@ -1007,13 +1023,13 @@ ln -s ~/.openclaw/workspace/MEMORY.md ~/.openclaw/workspace-coding/MEMORY.md
 
 ### Q: 记忆搜索不准确怎么办？
 
-OpenClaw 使用 sqlite-vec 支持混合搜索（关键词 + 语义），搜索质量通常不错。如果仍然不够精确：
+OpenClaw 使用 `sqlite-vec` 支持混合搜索（关键词 + 语义），搜索质量通常不错。如果仍然不够精确：
 
-1.  运行 openclaw memory index 确保索引是最新的
+1.  运行 `openclaw memory index` 确保索引是最新的
 
-1.  开启 RAG + 知识库插件，扩大搜索范围
+2.  开启 RAG + 知识库插件，扩大搜索范围
 
-1.  给记忆内容加标签，提高匹配精度
+3.  给记忆内容加标签，提高匹配精度
 
 ### Q: 换了电脑怎么迁移记忆？
 
@@ -1027,12 +1043,12 @@ tar -czf openclaw-memory.tar.gz ~/.openclaw/workspace/
 tar -xzf openclaw-memory.tar.gz -C ~/
 
 # 或者用 Git
-cd ~/.openclaw/workspace &amp;&amp; git init &amp;&amp; git add . &amp;&amp; git commit -m &quot;backup&quot;
+cd ~/.openclaw/workspace && git init && git add . && git commit -m "backup"
 ```
 
 ### Q: 记忆系统会影响响应速度吗？
 
-影响很小。主要开销在启动时加载记忆文件（通常 < 1 秒）和 memory_search 搜索。如果觉得慢，精简 MEMORY.md 内容、归档旧日志文件，或运行 openclaw memory index 重建索引。
+影响很小。主要开销在启动时加载记忆文件（通常 < 1 秒）和 `memory_search` 搜索。如果觉得慢，精简 `MEMORY.md` 内容、归档旧日志文件，或运行 `openclaw memory index` 重建索引。
 
 ## 下一步
 

@@ -1,3 +1,4 @@
+
 # Adobe Firefly 入局 AIGC，功能炸裂版权没风险！
 
 > 来源：[https://my.feishu.cn/docx/HlVTdCELyouf5mxoGJHcHDUDnic](https://my.feishu.cn/docx/HlVTdCELyouf5mxoGJHcHDUDnic)
@@ -14,7 +15,7 @@
 
 最近，百度的「文心一言」、Midjourney V5 引擎、Adobe Firefly 前后脚扎堆发布上线，AIGC 领域的竞争似乎正趋于白热化。
 
-#### 1、Adobe Firefly 有哪些功能？
+## 1、Adobe Firefly 有哪些功能？
 
 ![](img/1a6800bc023cfe73f2c107fb992bf67f.png)
 
@@ -44,7 +45,7 @@
 
 视频当中所演示的功能，是 Firefly 未来和 Adobe 全家桶内的软件融合起来之后的效果。
 
-#### 2、Firefly 将会怎样和 Adobe 全家桶结合起来？
+## 2、Firefly 将会怎样和 Adobe 全家桶结合起来？
 
 位于头部的 Midjourney 和 Stable Diffusion 依然在忙于迭代自身的算法引擎，即便是 Adobe 这样的大公司，也没有办法在有限的时间内将 Firefly 直接植入到 Adobe 全家桶这些功能复杂、体量极大的产品当中。
 
@@ -66,7 +67,7 @@
 
 对比这些演示，想象空间是很大的，不过 Adobe 还没有具体透露这些功能升级的具体时间表，Google、百度当前的阶段类似，先布局（画饼）后落地，且等着吧。
 
-#### 3、Adobe 对人工智能的态度如何？
+## 3、Adobe 对人工智能的态度如何？
 
 Adobe 是想在发展人工智能的同时，还站在创作者这边的，消减创意工作者对于人工智能创作的抵触。
 
@@ -78,7 +79,7 @@ Adobe 也计划向贡献训练数据的艺术家支付报酬，具体的补偿�
 
 另一方面，Adobe 正在开发一个名为「Do Not Train」的协议，设计师和艺术家可以将拒绝将作品作为训练数据的声明，嵌入到作品的元数据当中，但是这一协议目前还是 Adobe 单方面的计划，还没有得到其他 AIGC 的服务方的反馈。
 
-#### 结语
+## 结语
 
 Adobe 入局是必然了，但是现在的 Adobe Firefly 依然还处于相当早期的阶段。设计师想要像宣传视频中一样使用 Adobe 全家桶，恐怕还需要等较长的时间。而 Adobe 旗下产品（以及其他 AIGC 服务）要如何保护创作者的权益，还需要我们持续的观察。
 
@@ -86,8 +87,8 @@ Adobe 入局是必然了，但是现在的 Adobe Firefly 依然还处于相当�
 
 参考来源：
 
-1.[https://www.theverge.com/2023/3/21/23648315/ad](https://www.theverge.com/2023/3/21/23648315/adobe-firefly-ai-image-generator-announced)ob[e](https://www.adobe.com/sensei/generative-ai/firefly.html)-firefly-ai-image-generator-announced
+1. [https://www.theverge.com/2023/3/21/23648315/adobe-firefly-ai-image-generator-announced](https://www.theverge.com/2023/3/21/23648315/adobe-firefly-ai-image-generator-announced)
 
-2.https://www.adobe.com/sensei/generative-ai/firefly.html
+2. https://www.adobe.com/sensei/generative-ai/firefly.html
 
-3.https://firefly.adobe.com/
+3. https://firefly.adobe.com/

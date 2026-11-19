@@ -1,3 +1,4 @@
+
 # 20250613-豆包小技巧：简单一招，去掉生成图片的水印
 
 > 来源：[https://aigcreative.feishu.cn/docx/ADCIdxLhvoYvqnxbaI3crdgInab](https://aigcreative.feishu.cn/docx/ADCIdxLhvoYvqnxbaI3crdgInab)
@@ -78,7 +79,7 @@
 
 好了，以上就是今天豆包“无水印”的使用小技巧，希望能对你有用。
 
-### 总结与思考：关于“水印”的未来
+## 总结与思考：关于“水印”的未来
 
 通过这个简单的小技巧，我们暂时解决了豆包图片水印带来的困扰。
 

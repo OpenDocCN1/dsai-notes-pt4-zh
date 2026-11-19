@@ -1,3 +1,4 @@
+
 # Dify案例库
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Kk6edivZAovx7YxhC2VcoxCDnFc](https://yunyinghui.feishu.cn/docx/Kk6edivZAovx7YxhC2VcoxCDnFc)
@@ -182,248 +183,254 @@
 
 ![](img/0090a91cf972a624d38e4833a3903122.png)
 
-[dify_course_demo.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xef7bTkr5oTEg6xaa9ncRmI6nag)
+
+
+[`dify_course_demo.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xef7bTkr5oTEg6xaa9ncRmI6nag)
 
 ![](img/fe2d00c5c235e8b0bfafbf216690e627.png)
 
-[Dify-o1[CN]_1.0.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wm2cbe04UoGUPxxg6SncwOPVnlb)
+[`Dify-o1[CN]_1.0.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wm2cbe04UoGUPxxg6SncwOPVnlb)
 
 ![](img/1bcaf072532e4fac1f1ed8d9dbda0937.png)
 
-[Document_chat_template.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BR5Nb1zZMoq7DAx0cpucDqZynSh)
+[`Document_chat_template.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BR5Nb1zZMoq7DAx0cpucDqZynSh)
 
 ![](img/f60ec7fe2239073fcb9a783e9fba01c2.png)
 
-[DuckDuckGo翻译+LLM二次翻译.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OTASbJA6ioQw8rxhmKbckl1Nnlb)
+[`DuckDuckGo翻译+LLM二次翻译.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OTASbJA6ioQw8rxhmKbckl1Nnlb)
 
 ![](img/ced5b5153f5ac438e2c4200446b244d6.png)
 
-[excel表格提取+echarts展示.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ECv8bexM4oVsxXxWc4Gcx7thnfb)
+[`excel表格提取+echarts展示.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ECv8bexM4oVsxXxWc4Gcx7thnfb)
 
 ![](img/ede72187fbffc1bb83986efe5796cce4.png)
 
-[File_read.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LMbTbi6mToeGf4xzDvqcVcG6nWf)
+[`File_read.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LMbTbi6mToeGf4xzDvqcVcG6nWf)
 
 ![](img/779af4addd44470e28b951ea9265e7b7.png)
 
-[Fine-tune 语料构造器.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W789bu3FroMsJGxgW0pcszAnnCd)
+[`Fine-tune 语料构造器.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W789bu3FroMsJGxgW0pcszAnnCd)
 
 ![](img/9de72ecc8fba201ae43fce0e28bb7f12.png)
 
-[FLUX绘画机器人.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DUBgbvj6Ao2PM1xOaREcWV2onJe)
+[`FLUX绘画机器人.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DUBgbvj6Ao2PM1xOaREcWV2onJe)
 
 ![](img/63d53337b574583b239f6f1232d26003.png)
 
-[FLUX绘画机器人+多模态识别+语音播放.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SBG9bAV6Boq8tixiC09cpx6WnCh)
+[`FLUX绘画机器人+多模态识别+语音播放.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SBG9bAV6Boq8tixiC09cpx6WnCh)
 
 ![](img/a807a13becc03070c7f74f1d8a5e6f19.png)
 
-[Form表单聊天Demo.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5pObidQcoPiXqxOpuacx9hOn7c)
+[`Form表单聊天Demo.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q5pObidQcoPiXqxOpuacx9hOn7c)
 
 ![](img/0cd851685de5e04e3dcc28d1015b6b12.png)
 
-[gemini-2.0-flash-exp-image-generation-文生图智能体.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/URFlbmmByo75ZXx5NpjcbiwOnod)
+[`gemini-2.0-flash-exp-image-generation-文生图智能体.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/URFlbmmByo75ZXx5NpjcbiwOnod)
 
 ![](img/2ca73d6406ef233255be7ceb4a9a67a0.png)
 
-[jieba.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgxBbSN9KoiVQgxQ3cpcG6G9nC9)
+[`jieba.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgxBbSN9KoiVQgxQ3cpcG6G9nC9)
 
 ![](img/9920a2095031939e77b6f7e7f76a8522.png)
 
-[Jina Reader Jinja.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JfyXbElm0oks7GxSPZIcx6ESnq9)
+[`Jina Reader Jinja.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JfyXbElm0oks7GxSPZIcx6ESnq9)
 
 ![](img/9e582baebe44fc7b96d94c5783357d1d.png)
 
-[json_translate.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QU1Zbo8YRoOp0dxoOdIcECkJncf)
+[`json_translate.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QU1Zbo8YRoOp0dxoOdIcECkJncf)
 
 ![](img/3c72f0cff87ed54d63ccf29bd0ea9af8.png)
 
-[json-repair.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AvNWbJ4exoVMdGx9XEec24PQnxh)
+[`json-repair.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AvNWbJ4exoVMdGx9XEec24PQnxh)
 
 ![](img/7fa4c6f362616e3b68e445ab0deface8.png)
 
-[LanguageConsistencyChecker.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DvacblUywoHLLvx5R9QcStpZnbf)
+[`LanguageConsistencyChecker.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DvacblUywoHLLvx5R9QcStpZnbf)
 
 ![](img/c7d85ee3d26f814e5d9ef8f4559d3d19.png)
 
-[llm2o1.cn.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Raiyb2hHmobiMRx2VMjcrXpznMg)
+[`llm2o1.cn.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Raiyb2hHmobiMRx2VMjcrXpznMg)
 
 ![](img/199b267195f08e19225a3c29e1dfc89f.png)
 
-[matplotlib.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rot3bHoC8oUwQxxqHSvcHfJ4nWe)
+[`matplotlib.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rot3bHoC8oUwQxxqHSvcHfJ4nWe)
 
 ![](img/6f38892e06e9b522b91e7416d408f346.png)
 
-[MCP.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HGDnbaw4qofgDsxcdhscAGUGnKf)
+[`MCP.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HGDnbaw4qofgDsxcdhscAGUGnKf)
 
 ![](img/b38b7072dcb78379102e9e0cec63d833.png)
 
-[PPT生成工具 (1).yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QTLvb1KoRojvsKxy8dKc8KlhnQc)
+[`PPT生成工具 (1).yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QTLvb1KoRojvsKxy8dKc8KlhnQc)
 
 ![](img/eae9f62aae1df7c7091850fefa430450.png)
 
-[PPT生成工具.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K4cEbMX5aoMXIGxl8eHcRYI4ned)
+[`PPT生成工具.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/K4cEbMX5aoMXIGxl8eHcRYI4ned)
 
 ![](img/3ded336854d93e016b3075390268a762.png)
 
-[PPT制作助手.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GD3lbwvGuookR1xRKAfcSWuPnJd)
+[`PPT制作助手.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GD3lbwvGuookR1xRKAfcSWuPnJd)
 
 ![](img/1aae51bf7c5d1988b256675b6fbefdbc.png)
 
-[Python Coding Prompt.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MG0LbJogfoRWYZxOcwlc9C7Snnf)
+[`Python Coding Prompt.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MG0LbJogfoRWYZxOcwlc9C7Snnf)
 
 ![](img/e7ea4bb0834855313c96440c8fbedbbd.png)
 
-[RedCanvas.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WoywbZkggoLNQ5xd5necs097nAf)
+[`RedCanvas.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WoywbZkggoLNQ5xd5necs097nAf)
 
 ![](img/5f0ab9d97f29ce3163bc3ba69060224b.png)
 
-[runLLMCode.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Oj4rbNclQoAqTDxtoOucARgJnBe)
+[`runLLMCode.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Oj4rbNclQoAqTDxtoOucARgJnBe)
 
 ![](img/6be8146c92b6553e8993c46507ba1a1f.png)
 
-[SEO Slug Generator.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FIzdbFEK0or1wsxCL9jcz1wmn20)
+[`SEO Slug Generator.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FIzdbFEK0or1wsxCL9jcz1wmn20)
 
 ![](img/d095cc63c057d28832daf940f7634af0.png)
 
-[simple-kimi.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HfcLbDT5cownuyxdkwdcnOaNnze)
+[`simple-kimi.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HfcLbDT5cownuyxdkwdcnOaNnze)
 
 ![](img/6516c53c6c866667d5f6dba8dc382382.png)
 
-[Simultaneous Multilingual Translation [Parallel Acceleration Edition]_1.1.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SGRmb9GHIoOBJKx82s3cJhFAnke)
+[`Simultaneous Multilingual Translation [Parallel Acceleration Edition]_1.1.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SGRmb9GHIoOBJKx82s3cJhFAnke)
 
 ![](img/e81e8e92b8c873eb372e0ce8bd31b228.png)
 
-[Text to Card Iteration.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A18db22ifoCRMzxkBINck3KanMc)
+[`Text to Card Iteration.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A18db22ifoCRMzxkBINck3KanMc)
 
 ![](img/567b0bab9fd3e6239f734d4ea6155a4d.png)
 
-[translation_workflow.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDnZbn3NQoPLAvxGaaNcih8qnvf)
+[`translation_workflow.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WDnZbn3NQoPLAvxGaaNcih8qnvf)
 
 ![](img/cfe198f268aacd8d6f056d59e428dd9f.png)
 
-[Twitter 账号分析助手.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dkwmby4IIoCJrpx3KZZcabTwnmg)
+[`Twitter 账号分析助手.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dkwmby4IIoCJrpx3KZZcabTwnmg)
 
 ![](img/da499098382da58206499c706f380e4d.png)
 
-[YouTube博主和自媒体运营专家工作流.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XTkIbYy1IojSe0xYNnbc8miYnsR)
+[`YouTube博主和自媒体运营专家工作流.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XTkIbYy1IojSe0xYNnbc8miYnsR)
 
 ![](img/eb5aa4b4a7ef23d10f4421c040d3bb1a.png)
 
-[宝玉的英译中优化版.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HXzqba8TUo7bzFxyjEKcTJnGnTc)
+[`宝玉的英译中优化版.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HXzqba8TUo7bzFxyjEKcTJnGnTc)
 
 ![](img/dd78e9472382dfba7603a43bf2c08112.png)
 
-[标题党创作.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dh7jbAtj2oWE0DxxocuccNUrnth)
+[`标题党创作.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dh7jbAtj2oWE0DxxocuccNUrnth)
 
 ![](img/bbab3cb3418ca082405fab65e00e077c.png)
 
-[春联生成器 (“福”到了版本).yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mo9ob9VmloBlwRxxmiJcVcacnG8)
+[`春联生成器 (“福”到了版本).yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mo9ob9VmloBlwRxxmiJcVcacnG8)
 
 ![](img/8aeba233786a5345f1500263a9b2d336.png)
 
-[春联生成器.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MsTybJLo7oL5MpxWvR7c6JYGnZf)
+[`春联生成器.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MsTybJLo7oL5MpxWvR7c6JYGnZf)
 
 ![](img/1135aa61f94f2186eb7a79e1bbc254e4.png)
 
-[词汇故事生成器.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CfytbOL8Jo4rgxxqtFGcZIL7n4a)
+[`词汇故事生成器.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CfytbOL8Jo4rgxxqtFGcZIL7n4a)
 
 ![](img/be620f4a356051f9ad070ece47237131.png)
 
-[大模型表格解析自动生成代码生成统计图.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M8DdbxbxWohXgjxha9hcWuPSnUb)
+[`大模型表格解析自动生成代码生成统计图.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M8DdbxbxWohXgjxha9hcWuPSnUb)
 
 ![](img/8c1201a82e5bd0b0c2baf367884f2b7a.png)
 
-[对话型播客.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VX9db5cEIoFVHbxsFrpchBt3n0b)
+[`对话型播客.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VX9db5cEIoFVHbxsFrpchBt3n0b)
 
 ![](img/767899feb0cac389e063efcff04b2ce6.png)
 
-[儿童故事播客.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KTYYbc0j8ovRABxvDoPcYpS8n8C)
+[`儿童故事播客.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KTYYbc0j8ovRABxvDoPcYpS8n8C)
 
 ![](img/60ab8855ecaa4ab922dc9a767b5fef02.png)
 
-[儿童故事绘本工作流.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QFXMbbPbKoYjhHxgSh9cwgznnth)
+[`儿童故事绘本工作流.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QFXMbbPbKoYjhHxgSh9cwgznnth)
 
 ![](img/2d8d6b6747edd9c588e0403dccaf9a5f.png)
 
-[儿童故事绘本文生视频语音合成版 .yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PCulba2OwoZlAlxfUrUc79Y6nJb)
+[`儿童故事绘本文生视频语音合成版 .yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PCulba2OwoZlAlxfUrUc79Y6nJb)
 
 ![](img/2fdff0d57c7580e04184b0e0d0bb7799.png)
 
-[发票比对专家-新版客运火车票2.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jc37bhnbgokR38xgr2Schf3Ln9c)
+[`发票比对专家-新版客运火车票2.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Jc37bhnbgokR38xgr2Schf3Ln9c)
 
 ![](img/186554de34472ff501d2037e66b1f26a.png)
 
-[发票提取小工具整合版-变量聚合器.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LvEubu6tzohOKHxs5adcz6DYnQ1)
+[`发票提取小工具整合版-变量聚合器.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LvEubu6tzohOKHxs5adcz6DYnQ1)
 
 ![](img/0c5fba25e63cf8ac79138ce0c5170940.png)
 
-[飞书表格.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VX58bRXbao0uWFxgq5LcOpEvnZf)
+[`飞书表格.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VX58bRXbao0uWFxgq5LcOpEvnZf)
 
 ![](img/8cf83d1bd8cbfd6cd6428036f37df25a.png)
 
-[根据用户的意图进行回复.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qm9Vb61TqoJGDhxbfQLcdcbWnOe)
+
+
+# yml 配置文件列表
+
+### [`根据用户的意图进行回复.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qm9Vb61TqoJGDhxbfQLcdcbWnOe)
 
 ![](img/89ce8465196bcc1caf8748622a9efc30.png)
 
-[股票分析系统.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XyYKbcPp6odu1yxAxFzcRgVOnOh)
+### [`股票分析系统.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XyYKbcPp6odu1yxAxFzcRgVOnOh)
 
 ![](img/dbba20fd9643eb5fff63f851c1cb02fd.png)
 
-[股票分析系统-Gordon修改版.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H5ZTb8Hxpo2J8NxTrAkcWDvUnVd)
+### [`股票分析系统-Gordon修改版.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H5ZTb8Hxpo2J8NxTrAkcWDvUnVd)
 
 ![](img/5e720eeb4a9e5df5a61c79143f905cea.png)
 
-[获取金融投资新闻top10.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMLTbUMfvo3mlsxUB0QcUKhOnaf)
+### [`获取金融投资新闻top10.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SMLTbUMfvo3mlsxUB0QcUKhOnaf)
 
 ![](img/c2ace7401c756085146654a68bd78b15.png)
 
-[即梦AI绘画.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdzabC2elocJRmxBnfZcZ3SAnFf)
+### [`即梦AI绘画.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IdzabC2elocJRmxBnfZcZ3SAnFf)
 
 ![](img/99ce5af4d84e84400fe7510a0a912625.png)
 
-[即梦AI绘画-飞书表格+企业🛰️.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBJdbQgq0odqSBx5jKpcR1G6nQe)
+### [`即梦AI绘画-飞书表格+企业🛰️.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LBJdbQgq0odqSBx5jKpcR1G6nQe)
 
 ![](img/a5c3b19f26cf50fdd1b62068d22debba.png)
 
-[记忆测试.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dreybs00XonjsnxpicXcyuH2nIh)
+### [`记忆测试.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Dreybs00XonjsnxpicXcyuH2nIh)
 
 ![](img/82db373473241bdee12f41e3f0374cf7.png)
 
-[解读Github项目智能机器人.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UKC6bKp7soXKKyxytK9cghbinbc)
+### [`解读Github项目智能机器人.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UKC6bKp7soXKKyxytK9cghbinbc)
 
 ![](img/c87087b3759c6b7662860a2be647f21c.png)
 
-[解析网页内容存到知识库.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BQGIbRo5Eo1B6xxayXjcj6sMnlh)
+### [`解析网页内容存到知识库.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BQGIbRo5Eo1B6xxayXjcj6sMnlh)
 
 ![](img/d4404819fe67f1f5707b9763dead5a3b.png)
 
-[链文智译-LinkTrans Smart.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N6LRbQ4PzoHI0YxfzA0cWAf2ngd)
+### [`链文智译-LinkTrans Smart.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N6LRbQ4PzoHI0YxfzA0cWAf2ngd)
 
 ![](img/594d00f220da696b506f2e39bd1e3e8b.png)
 
-[旅行Demo.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qk93bX8xHok3HBxgmj0cwMRHnMx)
+### [`旅行Demo.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qk93bX8xHok3HBxgmj0cwMRHnMx)
 
 ![](img/529e1a2206662ed2a73853ff9b06fa7b.png)
 
-[门诊导诊_0.2.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GpmnbXaF0oc4yzxzgqFcHZWAnYG)
+### [`门诊导诊_0.2.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GpmnbXaF0oc4yzxzgqFcHZWAnYG)
 
 ![](img/565d50799fb5b7f3ce8b39d1cbca1120.png)
 
-[全书翻译.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MlbJbjCI2oMNOWx56itcXnvBnxe)
+### [`全书翻译.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MlbJbjCI2oMNOWx56itcXnvBnxe)
 
 ![](img/2ea6af19360bedeaedeefa56c0bd326f.png)
 
-[上传多文件，图文理解.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PogTb4ot1oWPrHxvzWHcROL9n1d)
+### [`上传多文件，图文理解.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PogTb4ot1oWPrHxvzWHcROL9n1d)
 
 ![](img/96697cbe250bd94ab62ba219e2931bc9.png)
 
-[生成SFT微调数据集.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5FobwwVPo9CEGxgk2cctV9injc)
+### [`生成SFT微调数据集.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I5FobwwVPo9CEGxgk2cctV9injc)
 
 ![](img/a739570e8437742a5b6d6d020a445c30.png)
 
-[诗句封面+语音播报.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RfCWbZztboeIFUxnAarcgO17n1e)
+### [`诗句封面+语音播报.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RfCWbZztboeIFUxnAarcgO17n1e)
 
 ![](img/4d9c13075d7b11b9014cd17ee6dc6d92.png)
 
-[数据统计分析.yml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P6XkbqkRiocZAOxNQprcxrcknPg)
+### [`数据统计分析.yml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P6XkbqkRiocZAOxNQprcxrcknPg)

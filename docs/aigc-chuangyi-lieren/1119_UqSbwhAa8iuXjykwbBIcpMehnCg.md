@@ -1,8 +1,9 @@
+
 # 🛰️表情包制作
 
 > 来源：[https://aigcreative.feishu.cn/docx/DR99dBi3FogHEDx7swocK59AnSb](https://aigcreative.feishu.cn/docx/DR99dBi3FogHEDx7swocK59AnSb)
 
-# 20260319更新：龙虾🦞系列原创表情：
+## 20260319更新：龙虾🦞系列原创表情：
 
 ![](img/e3aa22ae959c0543409ca49614206877.png)
 
@@ -18,10 +19,7 @@
 
 ![](img/6a40739da78582ee4215ba6359ea2c05.png)
 
-
 ![](img/5d9d705d49e346b6e2e8ea82b0e3ece9.png)
-
-
 
 ![](img/6219fd1afc83eb44e6fb72f7eb16f525.png)
 

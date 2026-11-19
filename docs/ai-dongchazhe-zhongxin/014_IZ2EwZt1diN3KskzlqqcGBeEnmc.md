@@ -1,10 +1,11 @@
+
 # coze案例合集
 
 > 来源：[https://bluefocus.feishu.cn/docx/UNCod69G8oDemDxgeWVc4pUhno9](https://bluefocus.feishu.cn/docx/UNCod69G8oDemDxgeWVc4pUhno9)
 
 > 扣子官方教程｜技能-插件（上）｜第三节
 
-### 图像流
+## 图像流
 
 > 我用AI做了个00后疯感工牌生成器，领导看到后私聊找我要链接
 
@@ -14,7 +15,7 @@
 
 > Coze 保姆级教程：用图像流，给老板来一套表情包
 
-> [视频：【Agent共学第二期】来](https://www.bilibili.com/video/BV1bJ4m137iR/)来 & Stuart分享｜图像流重塑设计
+> [视频：【Agent共学第二期】来来 & Stuart分享｜图像流重塑设计](https://www.bilibili.com/video/BV1bJ4m137iR/)
 
 > 基础教程： Coze “图像流” 抢先体验
 
@@ -26,11 +27,11 @@
 
 > Coze/扣子新出的图像流功能，有点惊艳到了！
 
-> [王炸! Coze图像流发布，我用它实](https://mp.weixin.qq.com/s/JgLuqJUDs5VkEQHkFOpAZQ)现了海马体影楼级形象照（内附喂饭级教程)
+> [王炸! Coze图像流发布，我用它实现了海马体影楼级形象照（内附喂饭级教程)](https://mp.weixin.qq.com/s/JgLuqJUDs5VkEQHkFOpAZQ)
 
 > AI智能体｜手把手教你使用扣子Coze图像流的文生图功能
 
-### 知识库
+## 知识库
 
 > [官方文档：创建并使用知识库](https://www.coze.cn/docs/guides/use_knowledge)
 
@@ -44,7 +45,7 @@
 
 > 手把手教你如何用扣子（COZE）打造一个企业级的知识库机器人
 
-### 卡片
+## 卡片
 
 > [官方教程-卡片](https://www.coze.cn/docs/guides/message_card)
 
@@ -52,7 +53,7 @@
 
 > 使用扣子Coze——扣子的卡片如何使用
 
-### 插件
+## 插件
 
 > 扣子官方教程｜技能-插件（上）｜第三节
 
@@ -72,7 +73,7 @@
 
 > 插件教程 | coze自定义插件集成API
 
-> [视频：【共学快闪】AI Agen](https://www.bilibili.com/video/BV1HE42137n4)t-Coze搭建 5月10日罗文分享插件
+> [视频：【共学快闪】AI Agent-Coze搭建 5月10日罗文分享插件](https://www.bilibili.com/video/BV1HE42137n4)
 
 > 扣子Coze插件教程：如何使用Coze IDE创建插件
 
@@ -82,19 +83,19 @@
 
 > 视频：扣子Coze开发AI插件实战案例 上传图片识别名称和卡路里
 
-### 工作流
+## 工作流
 
 > 视频：扣子（coze）系列教程（四）：工作流中各节点常用使用方式
 
 > 视频：Coze工作流的手把手教程，让你的Bot高质量的处理复杂任务！
 
-> [视频：【Agent共学第二期】艾](https://www.bilibili.com/video/BV1XT421i7jH/)木分享 | 这也许是你一生中第一个Bot
+> [视频：【Agent共学第二期】艾木分享 | 这也许是你一生中第一个Bot](https://www.bilibili.com/video/BV1XT421i7jH/)
 
-> [视频：一步一步带你手搓一个Coze Bot——Dr. ](https://www.bilibili.com/video/av1005221752)Know（极简版 Perplexity）
+> [视频：一步一步带你手搓一个Coze Bot——Dr. Know（极简版 Perplexity）](https://www.bilibili.com/video/av1005221752)
 
 > 视频：用Coze的工作流，攒一个爆款短视频文案工具
 
-> [万](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉👸号的创作生产力
+> [万字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉👸号的创作生产力](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)
 
 > 3分钟用字节“扣子”打造股票AI分析工作流
 
@@ -114,7 +115,7 @@
 
 > 视频：Coze 绘制workflows by coze 2024.01
 
-> [视频：【共学快闪】AI Agent-Coze搭建 5月9日艾](https://www.bilibili.com/video/BV1is421N72j)木分享Agent系统核心Workflow
+> [视频：【共学快闪】AI Agent-Coze搭建 5月9日艾木分享Agent系统核心Workflow](https://www.bilibili.com/video/BV1is421N72j)
 
 > 一周新手分享COZE工作流的学习技巧
 
@@ -130,7 +131,7 @@
 
 > 官方文档-工作流最佳实践-识别用户意图
 
-### 变量/数据库
+## 变量/数据库
 
 > [官方文档：数据库](https://www.coze.cn/docs/guides/database)
 
@@ -144,21 +145,21 @@
 
 > 看Coze搭建的"访客管理系统",让数字化管理不再复杂
 
-### 多Agent
+## 多Agent
 
 > 使用coze的muilt-agent驯服GPT-4
 
 > Multi-agent mode实践 | 用coze手捏一个bot
 
-> [视频：分享一个在Coze上做提示](https://www.bilibili.com/video/BV1MC411h7ok/)词工程以及设计多智能体应用的最佳实践案例
+> [视频：分享一个在Coze上做提示词工程以及设计多智能体应用的最佳实践案例](https://www.bilibili.com/video/BV1MC411h7ok/)
 
-> [视频：【Agent共学第二期】Kai分](https://www.bilibili.com/video/BV1Ew4m1S7eq)享 | 一百个字搭谁是卧底-多Agent
+> [视频：【Agent共学第二期】Kai分享 | 一百个字搭谁是卧底-多Agent](https://www.bilibili.com/video/BV1Ew4m1S7eq)
 
 > COZE版儿童陪伴机器人+实物玩具=AI玩具，体验感还不错
 
 > [官方文档：多 Agent 模式](https://www.coze.cn/docs/guides/multiagent)
 
-### 活动
+## 活动
 
 > [教学向]我把Coze比赛第一的bot拆了教大家
 
@@ -172,7 +173,7 @@
 
 > [跟上海的朋友一起捏 bot](https://mp.weixin.qq.com/s/_t7YIFO2eIIbQAraFm_odw)
 
-> [我们的 Bot 获得了「掘金 x 扣子 Hac](https://mp.weixin.qq.com/s/_BAkMD_EQf8_R9rKKarfCw)kathon 活动 - 深圳站」的总冠军
+> [我们的 Bot 获得了「掘金 x 扣子 Hackathon 活动 - 深圳站」的总冠军](https://mp.weixin.qq.com/s/_BAkMD_EQf8_R9rKKarfCw)
 
 > 深圳线下活动最佳解决方案奖-WeCapture
 
@@ -180,9 +181,9 @@
 
 > 猎豹移动集团 coze 版 Al Hackathon
 
-> [视频：【共学快闪】AI Agent篇 Coze搭建- Itao](https://www.bilibili.com/video/BV1Gb421B7AQ/)+陈慧凌 分享｜主题：和 AI 成为搭子
+> [视频：【共学快闪】AI Agent篇 Coze搭建- Itao+陈慧凌 分享｜主题：和 AI 成为搭子](https://www.bilibili.com/video/BV1Gb421B7AQ/)
 
-### 综合探讨
+## 综合探讨
 
 > 想变现? Coze Agent商业化路径分析
 
@@ -198,31 +199,29 @@
 
 > 新手总结Coze bot创建步骤：先锁定“最简”任务，提前准备测试问题
 
-> [视频：【共学快闪】AI Agent-Coze](https://www.bilibili.com/video/BV1bs421N7tR)搭建 5月8日大圣分享Coze全流程搭建
+> [视频：【共学快闪】AI Agent-Coze搭建 5月8日大圣分享Coze全流程搭建](https://www.bilibili.com/video/BV1bs421N7tR)
 
-> [视频：【共学快闪】AI Agent-](https://www.bilibili.com/video/BV1V1421z7At/)Coze搭建 5月7日赛博禅心大聪明分享
+> [视频：【共学快闪】AI Agent-Coze搭建 5月7日赛博禅心大聪明分享](https://www.bilibili.com/video/BV1V1421z7At/)
 
 > 面向业务开发的 Coze 使用指南
 
-> [扣子（](https://mp.weixin.qq.com/s/glT5Qc4a3vpRLxVAPdDDbA)[coze.cn](https://mp.weixin.qq.com/s/glT5Qc4a3vpRLxVAPdDDbA)）初体验 | 拥有一个属于自己的聊天机器人
+> [扣子（coze.cn）初体验 | 拥有一个属于自己的聊天机器人](https://mp.weixin.qq.com/s/glT5Qc4a3vpRLxVAPdDDbA)
 
 > 用Coze扣子轻松搭个Bot，从此告别"标题党"
 
-> [扣子官方：用扣子/Coze 揭秘](https://mp.weixin.qq.com/s/OtdncYNt9KDE6YzDJeexFg)吴恩达的4种 AI Agent 设计模式
+> [扣子官方：用扣子/Coze 揭秘吴恩达的4种 AI Agent 设计模式](https://mp.weixin.qq.com/s/OtdncYNt9KDE6YzDJeexFg)
 
 > 扣子官方：这届00后已经学会用扣子/ Coze “偷懒”了
 
-> [【2万字长文】如何用Kimi全自动](https://mp.weixin.qq.com/s/sGgUJgte4taivEJCZKRRXQ)创建扣子智能体？这喂饭级教程将揭晓一切！
+> [【2万字长文】如何用Kimi全自动创建扣子智能体？这喂饭级教程将揭晓一切！](https://mp.weixin.qq.com/s/sGgUJgte4taivEJCZKRRXQ)
 
 > 保姆级教程：Coze 打工你躺平
 
 > 扣子Coze智能体开发实战教程 | 智能体开发
 
-###
+## Bot 分享
 
-### Bot 分享
-
-> [万](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉👸号的创作生产力
+> [万字实践教程，全面入门 Coze 工作流｜用 Coze 打造 AI 精读专家，复刻 10 万粉👸号的创作生产力](https://mp.weixin.qq.com/s/r40BDHKq8NC547cehAzOzw)
 
 > [Coze教程] “菜品秀秀”bot制作流程大揭密
 
@@ -244,9 +243,9 @@
 
 > 视频：用coze一键生成朋友圈文案
 
-> [视频：COZE：中小企业均可0门槛创建业务agent，支持接入🛰️👸号、🛰️](https://www.bilibili.com/video/BV1DA4m1w72p/)客服、discord、tele等各种终端，实现公司AI客服、销售机器人等触达客户
+> [视频：COZE：中小企业均可0门槛创建业务agent，支持接入🛰️👸号、🛰️客服、discord、tele等各种终端，实现公司AI客服、销售机器人等触达客户](https://www.bilibili.com/video/BV1DA4m1w72p/)
 
-> [视频：【Agent共学第二期】许键分享｜](https://www.bilibili.com/video/BV1Cx4y1n7yU/)拆解“离谱村捏剧本”coze bot思路
+> [视频：【Agent共学第二期】许键分享｜拆解“离谱村捏剧本”coze bot思路](https://www.bilibili.com/video/BV1Cx4y1n7yU/)
 
 > 视频：【Agent共学第二期】银海分享 | 用AI重塑我的工作流
 
@@ -254,11 +253,11 @@
 
 > 视频：【Agent共学第二期】Bot冠军大揭秘：李小白
 
-> [视频：【Agent共学第二期】两位个人Bot创作者的分享](https://www.bilibili.com/video/BV1DD421u7m7/)：《你出生的那一天》和《热点文章生成器》
+> [视频：【Agent共学第二期】两位个人Bot创作者的分享：《你出生的那一天》和《热点文章生成器》](https://www.bilibili.com/video/BV1DD421u7m7/)
 
 > 视频：【Agent共学第二期】一点都不简单的共创之路
 
-> [61儿童节，我给儿子做了两款coz](https://mp.weixin.qq.com/s/YxPxpds9OJl0CWXTCYfxWg)e小应用，让他见识一下程序员爸爸的厉害。
+> [61儿童节，我给儿子做了两款coze小应用，让他见识一下程序员爸爸的厉害。](https://mp.weixin.qq.com/s/YxPxpds9OJl0CWXTCYfxWg)
 
 > 视频：使用「扣子/Coze」搭建文本纠错助手
 
@@ -274,7 +273,7 @@
 
 > 使用 coze 打造私人播客助手 - 根据个人喜好自动化生成播客
 
-> [字节COZE应用创作平台，开发 A](https://mp.weixin.qq.com/s/5R21o5BCNXZQd6ZgkTx8bg)I chatbot（短视频爆款案例）初探
+> [字节COZE应用创作平台，开发 AI chatbot（短视频爆款案例）初探](https://mp.weixin.qq.com/s/5R21o5BCNXZQd6ZgkTx8bg)
 
 > 使用Coze制作MidJourney提示词专家
 
@@ -284,13 +283,13 @@
 
 > 用Coze搞一个简单的安全AI助手
 
-> [英语怎么快速提高？我用 Coze ](https://zhuanlan.zhihu.com/p/691177635)AI 免费手搓了一个 24 小时陪练教师
+> [英语怎么快速提高？我用 Coze AI 免费手搓了一个 24 小时陪练教师](https://zhuanlan.zhihu.com/p/691177635)
 
 > 玩转 Coze，我帮开源 AI 社区搞了一个社群运营机器人
 
-> [保姆级教程！教你如何用扣子搭建一个免费好用的“](https://mp.weixin.qq.com/s/FOcAaARTnTp50D49ZKPZow)图片转表格”AI客服（附实操过程+效果）
+> [保姆级教程！教你如何用扣子搭建一个免费好用的“图片转表格”AI客服（附实操过程+效果）](https://mp.weixin.qq.com/s/FOcAaARTnTp50D49ZKPZow)
 
-> [前端智能化，扣子（](https://mp.weixin.qq.com/s/tiolzTwPKPZF4b8zZbvYpA)[coze.cn](https://mp.weixin.qq.com/s/tiolzTwPKPZF4b8zZbvYpA)[）能做什么？](https://mp.weixin.qq.com/s/tiolzTwPKPZF4b8zZbvYpA)
+> [前端智能化，扣子（coze.cn）能做什么？](https://mp.weixin.qq.com/s/tiolzTwPKPZF4b8zZbvYpA)
 
 > 【AI学习】如何用扣子搭建“赛事活动AI客服”机器人？亲测效果好
 

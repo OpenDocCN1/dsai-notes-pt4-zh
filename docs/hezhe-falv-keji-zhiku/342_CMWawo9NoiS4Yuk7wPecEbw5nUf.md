@@ -1,3 +1,4 @@
+
 # 智能合同平台 Evisort CEO：2023 年将出现更多的技术需求和采用
 
 > 来源：[https://docs.feishu.cn/docx/LBLmdqcNRoXPaix0Hq6cjj2PnXe](https://docs.feishu.cn/docx/LBLmdqcNRoXPaix0Hq6cjj2PnXe)
@@ -6,7 +7,7 @@
 
 在这个趋势下，如何更好把握科技的发展方向，不论是对法律从业者还是对法律科技公司来说都至关重要。近几年来，国内外多家法律科技公司和先锋法律人们做出了自己的预测，法律修音机翻译了这些文章，并进行持续放送。
 
-近期，智能合同管理平台「Evisort」的领导者们分享了他们对 2023 年法律行[业和科技发展的预测。2022 年 12 月 15 日，「Evisort](https://www.evisort.com/blog/new-year-will-bring-more-technology-demand-and-adoption)」的 CEO 兼联合创始人 Jerry Ting 率先发布了《2023 Predictions: New Year Will Bring More Technology Demand and Adoption》—— 新年将带来更多的技术需求和采用。
+近期，智能合同管理平台「Evisort」的领导者们分享了他们对 2023 年法律行业和科技发展的预测。2022 年 12 月 15 日，「Evisort](https://www.evisort.com/blog/new-year-will-bring-more-technology-demand-and-adoption)」的 CEO 兼联合创始人 Jerry Ting 率先发布了《2023 Predictions: New Year Will Bring More Technology Demand and Adoption》—— 新年将带来更多的技术需求和采用。
 
 以下，enjoy ：）
 
@@ -14,7 +15,7 @@
 
 2023 年，客户对法律科技的需求将持续增加，并采用更先进的人工智能，在此基础上法律运营领域将比五年前增长五倍。法律部门正在分析数据，讨论 OKR 和效率指标并探索合作。在这种环境下，法律科技的进步将进一步简化法律部门的运营，并提供更大的业务价值。
 
-## **生成式 ****AI**** 在企业运营中的作用将扩大**
+## 生成式 AI 在企业运营中的作用将扩大
 
 生成式人工智能（AI）—— 可创造完全原创内容的机器学习技术 —— 正在持续取得进展。
 
@@ -22,7 +23,7 @@
 
 我们预计，生成式 AI 未来将在法律审查和合同修订等文字繁重的领域中发挥更重要的作用。
 
-## **劳动力对技术的需求将会增加**
+## 劳动力对技术的需求将会增加
 
 目前，法律行业及其劳动力正在迅速发展。
 
@@ -36,7 +37,7 @@
 
 公司律师可以在提供法律建议的基础上，主动地对提高公司利润施加积极影响。通过 AI 驱动的合同管理软件，公司可以在不必要的续订、重复合同和不必要的服务上节省数百万美元，并发现隐藏在合同中未使用的成本节约条款。基于此，更多的法律部门将与采购部门合作管理合同。
 
-## **合并和收购活动将会增加**
+## 合并和收购活动将会增加
 
 经济衰退将刺激 2023 年合并和收购活动增多。在历史上发生的多次经济衰退中，我们经常看到大公司抓住机会通过收购投资战略性企业。
 

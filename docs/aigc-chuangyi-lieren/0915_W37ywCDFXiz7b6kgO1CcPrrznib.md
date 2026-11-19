@@ -1,7 +1,7 @@
-# Sora不止于视频，还有文生图的能力！图片分辨率最高至2048*2048
+
+# Sora不止于视频，还有文生图的能力！图片分辨率最高至2048×2048
 
 > 来源：[https://aigcreative.feishu.cn/docx/VF8ldRRG0o67dJxoM0qc2jZynef](https://aigcreative.feishu.cn/docx/VF8ldRRG0o67dJxoM0qc2jZynef)
-
 > 作者：何先森Kevin
 
 ![](img/7ef538748699cf51b732c58210cf60e9.png)
@@ -22,31 +22,31 @@
 
 Sora在TikTok上也留了响应的4条Prompt，试着用Midjourney也跑了图，对比看看效果差距。
 
-以下是对比结果：
+## 对比结果
 
 > Prompt 1: Close-up portrait shot of a woman in autumn, extreme detail, shallow depth of field
 
-**Sora **
+**Sora**
 
 ![](img/43cd2f5a93b7bd356af3dd3a7dc6d406.png)
 
-**MIdjourney V6 ****——胜出**
+**MIdjourney V6 ——胜出**
 
 ![](img/3324962f701e8f231beca015bf764849.png)
 
 > Prompt 2: Digital art of a young tiger under an apple tree in a matte painting style with gorgeous details
 
-**Sora **
+**Sora**
 
 ![](img/842f0aa682c95277f576912f1f030ee7.png)
 
-**MIdjourney V6 ****——胜出**
+**MIdjourney V6 ——胜出**
 
 ![](img/fd2888b964030e1a1b93bc3cbe93d01c.png)
 
 > Prompt 3: Vibrant coral reef teeming with colorful fish and sea creatures
 
-**Sora ****——胜出**
+**Sora ——胜出**
 
 ![](img/3932c8e9ee10ccc862006070b4b7f026.png)
 
@@ -56,7 +56,7 @@ Sora在TikTok上也留了响应的4条Prompt，试着用Midjourney也跑了图�
 
 > Prompt 4: A snowy mountain village with cozy cabins and a northern lights display, high detail and photorealistic dslr, 50mm f/1.2
 
-**Sora ****——胜出**
+**Sora ——胜出**
 
 ![](img/0e490db85f8c55c42258f15e51f1f3ca.png)
 

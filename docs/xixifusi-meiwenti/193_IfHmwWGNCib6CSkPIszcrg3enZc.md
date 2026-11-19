@@ -1,3 +1,4 @@
+
 # “如果你不为你的第一个版本感到羞愧，你很可能launch得太晚了”
 
 > 来源：[https://docs.feishu.cn/docx/BkANdedDwoZ9QgxWAkzcQojcnCg](https://docs.feishu.cn/docx/BkANdedDwoZ9QgxWAkzcQojcnCg)

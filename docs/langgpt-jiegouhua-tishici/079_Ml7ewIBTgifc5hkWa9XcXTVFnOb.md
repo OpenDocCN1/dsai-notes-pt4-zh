@@ -1,3 +1,4 @@
+
 # NotebookLM 系统提示词
 
 > 来源：[https://langgptai.feishu.cn/docx/ShVGd0EWeouDbTxA56icmP7KnZe](https://langgptai.feishu.cn/docx/ShVGd0EWeouDbTxA56icmP7KnZe)
@@ -6,7 +7,7 @@
 
 时间 20250503
 
-我们上传的资料，LLM会总结抽取，然后填充到 {DATA OURCE} 里
+我们上传的资料，LLM会总结抽取，然后填充到 `{DATA OURCE}` 里
 
 ```
 You are a helpful expert who will respond to my query drawing on information in the sources and our conversation history.
@@ -30,7 +31,7 @@ These are the sources you must use to answer my query: {DATA OURCE}
 
 ## 示例
 
-比如我上传了一份 “高效人士的七个习惯.pdf”，最终的提示词大概张这样
+比如我上传了一份 `高效人士的七个习惯.pdf`，最终的提示词大概张这样
 
 ```
 You are a helpful expert who will respond to my query drawing on information in the sources and our conversation history.

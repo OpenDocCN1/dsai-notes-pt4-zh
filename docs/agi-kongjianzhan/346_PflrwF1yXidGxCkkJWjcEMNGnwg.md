@@ -1,3 +1,4 @@
+
 # AI | 基于 FastGPT + 大语言模型 + 向量模型手把手从0-1快速构建本地私有化知识库
 
 > 来源：[https://agispace.feishu.cn/docx/G4HPd9VpkoDVefxFCr5clsJIn0c](https://agispace.feishu.cn/docx/G4HPd9VpkoDVefxFCr5clsJIn0c)
@@ -10,15 +11,15 @@
 
 原创 译点 每天译点晓知识 2024年06月20日 17:47 湖南
 
-### **前言**
+## 前言
 
 想象一下，如果有这样一个 AI，能够即刻回答你所有需要咨询的问题，而且还能不断学习，具备问答学习增强能力，这将是多么令人兴奋的事情！
 
-FastGPT()，就是这样一个开箱即用的AI知识库问答系统。这里，本文将介绍如何基于 FastGPT + 大语言模型 + 向量模型快速构建本地私有化知识库，帮助读者了解整个构建过程和涉及的关键技术。
+`FastGPT()`，就是这样一个开箱即用的AI知识库问答系统。这里，本文将介绍如何基于 FastGPT + 大语言模型 + 向量模型快速构建本地私有化知识库，帮助读者了解整个构建过程和涉及的关键技术。
 
 ![](img/725e25463eba7a9dfff33eb4f098c9c6.png)
 
-### **安装部署 **FastGPT
+## 安装部署 FastGPT
 
 FastGPT 不仅仅是一个搜索引擎，它还能够处理实时信息、组建本地化私有知识库等数据，让我们构建的 AI 应用变得更加智能化。
 
@@ -32,23 +33,21 @@ FastGPT 在线GitHub地址：https://github.com/labring/FastGPT
 
 我们可以根据实际情况选择不同版本：PgVector、Milvus、zilliz cloud 部署在不同的环境：Linux、Windows、Mac 等操作系统。
 
-若是没有 Docker 环境，则先需要准备好环境，考虑到后台咨询的童鞋用云服务器部署较多，介绍一下在阿里云 ECS 服务器 Docker 环境一键化安装指令：
-
-+
+若是没有 `Docker` 环境，则先需要准备好环境，考虑到后台咨询的童鞋用云服务器部署较多，介绍一下在阿里云 ECS 服务器 `Docker` 环境一键化安装指令：
 
 ```
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
 
-这里，还是按照之前的方式：在 Windows 下进行 Docker 虚拟化快速安装。Docker Compose() 方式
+这里，还是按照之前的方式：在 Windows 下进行 `Docker` 虚拟化快速安装。`Docker Compose()` 方式
 
-温馨提示
+### 温馨提示
 
-下载&安装 对应版本，根据操作系统任选其一即可，修改 docker-compose.yml 文件内容。
+下载&安装 对应版本，根据操作系统任选其一即可，修改 `docker-compose.yml` 文件内容。
 
-在 docker-compose.yml 同级目录下执行，确保docker-compose版本最好在2.17以上，否则可能无法执行自动化命令，通过容器化部署可以看往期文章，遇到相关问题可以在后台交流，正文暂不再赘述><
+在 `docker-compose.yml` 同级目录下执行，确保`docker-compose`版本最好在2.17以上，否则可能无法执行自动化命令，通过容器化部署可以看往期文章，遇到相关问题可以在后台交流，正文暂不再赘述><
 
-### **搭建 私有化知识库**
+## 搭建 私有化知识库
 
 首先，进入 我的应用，首次打开可以看到空白页面，如下：
 
@@ -72,9 +71,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 其中，大模型（LLM）的选择性也是有很多，不再赘述->参见往期文章对比分析当遇到相关问题，也可以咨询 FastGPT 助手：
 
-**
-
-【探索与思考**】
+## 探索与思考
 
 在数字化浪潮席卷而来的今天，知识管理已成为企业提升竞争力的关键一环。如何构建一个高效、智能且个性化的私有化知识库问答系统？
 

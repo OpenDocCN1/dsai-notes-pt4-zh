@@ -1,16 +1,9 @@
+
 # 2050学习者节 参与者说
 
 > 来源：[https://datawhaler.feishu.cn/docx/Tzg0d3b0KoKyFcxa87LcXq8nnDd](https://datawhaler.feishu.cn/docx/Tzg0d3b0KoKyFcxa87LcXq8nnDd)
 
 ![](img/63e555c8b02bd549fd052290fd73da10.png)
-
-
-
-
-
-
-
-
 
 ![](img/d0b8009100c793bd86fe47232f2ce584.png)
 
@@ -23,7 +16,6 @@
 ![](img/79f2cace8eb19dc4674a87236d903afc.png)
 
 ![](img/43a37bff9328896b4cc89681b0adbb2a.png)
-
 
 ![](img/b445f9d7f389ce79c1323079ff122791.png)
 

@@ -1,8 +1,9 @@
+
 # 2024企业的AI转型正进入拐点：来自3000家企业调研的发现
 
 > 来源：[https://aigcreative.feishu.cn/docx/WyT4dSwdMoQxcbxAteEctULmnOf](https://aigcreative.feishu.cn/docx/WyT4dSwdMoQxcbxAteEctULmnOf)
 
-> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/_Olak9t25DtvPvDdKGspaQ)qq.com/s/_Olak9t2...
+> 原文链接：[https://mp.weixin.qq.com/s/_Olak9t25DtvPvDdKGspaQ](https://mp.weixin.qq.com/s/_Olak9t25DtvPvDdKGspaQ)
 
 > 👸号：腾讯研究院
 
@@ -16,4 +17,4 @@
 
 ![](img/26869d8191802d314862dfa14003547a.png)
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+[https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg](https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg)

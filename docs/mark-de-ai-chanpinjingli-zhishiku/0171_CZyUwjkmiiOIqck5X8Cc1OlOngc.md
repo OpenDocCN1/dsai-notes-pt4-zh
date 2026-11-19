@@ -1,3 +1,4 @@
+
 # 04-13概率分布-指数分布
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/AQvFdeZyRocVQtxYa2VcQo38nUO](https://qqs7y1hozd1.feishu.cn/docx/AQvFdeZyRocVQtxYa2VcQo38nUO)
@@ -8,15 +9,15 @@
 
 在数学建模中，指数分布与泊松过程（Poisson Process）密切相关。如果某一随机过程满足事件在固定时间内独立出现，且某段时间内的事件发生个数服从泊松分布，那么相邻事件之间的时间间隔就服从指数分布。
 
-### 直观的一个例子
+## 直观的一个例子
 
 假设你正在一家快餐店排队结账，顾客到达收银台是随机发生的。如果我们假定顾客到达的过程没有任何周期性，并且每个顾客到达是独立发生的，那么顾客到达的数量在一定时间间隔内服从泊松分布。进一步地，两个顾客相继到达的时间间隔就可以用指数分布来建模。
 
 再比如，在电话呼叫中心中，我们关心的是两个电话呼入之间的时间间隔。如果电话呼入是随机且独立的，那么这个时间间隔通常符合指数分布。
 
-### 指数分布的本质与特点
+## 指数分布的本质与特点
 
-#### 无记忆性
+### 无记忆性
 
 指数分布最显著的特点之一是“无记忆性”。
 
@@ -24,7 +25,7 @@
 
 也就是说，给定已经等待了  时间后，还需要等待额外  时间的概率与刚开始等待  时间的概率是一样的。这种性质在现实中也有直观的解释：比如公交车晚点，在已经等待了一段时间后，再等待同样额外时间的概率并不会因为已经等过而发生改变。
 
-#### 单参数分布
+### 单参数分布
 
 指数分布只有一个参数，通常记为  （正参数），它代表了事件发生的速率。
 
@@ -32,11 +33,11 @@
 
 指数分布的概率密度函数（pdf）为：
 
-#### 平滑衰减的概率密度
+### 平滑衰减的概率密度
 
 从公式上看，指数分布的概率密度函数是一个随  指数衰减的函数。也就是说，发生时间  越长，概率密度值越小。直观上，这表明等待时间越长发生概率越低，这与很多现实中的等待时间问题相符。
 
-#### 累积分布函数（CDF）
+### 累积分布函数（CDF）
 
 指数分布的累积分布函数定义为：
 
@@ -44,25 +45,24 @@
 
 ## 公式推导
 
-#### 从泊松过程到指数分布
+### 从泊松过程到指数分布
 
 假设某随机过程满足以下性质：
 
-1.  某段时间内事件发生的次数服从泊松分布。
-
-1.  相邻事件独立发生，事件在任意非重叠时间区间内的发生数目相互独立。
+1. 某段时间内事件发生的次数服从泊松分布。
+2. 相邻事件独立发生，事件在任意非重叠时间区间内的发生数目相互独立。
 
 设单位时间内事件发生的平均次数为  （即事件发生的速率），那么在时间  内发生  次事件的概率为：
 
 其中  表示在时间  内发生的事件个数。
 
-#### 等待时间的推导
+### 等待时间的推导
 
 令  表示两次相邻事件之间的等待时间，我们希望找到  的分布。
 
 下面我们通过计算在时间  内没有事件发生的概率来推导  的累积分布函数。
 
-**累积分布函数的推导**
+### 累积分布函数的推导
 
 由于事件发生服从泊松过程，在时间  内没有发生任何事件的概率为：
 
@@ -72,39 +72,41 @@
 
 这种推导直接显示了指数分布的累积性质。
 
-**概率密度函数的推导**
+### 概率密度函数的推导
 
 接下来，我们求解概率密度函数。由累积分布函数的定义可知，概率密度函数  为其对  求导：
 
 从这里，我们得到了指数分布的标准形式。
 
-#### 证明无记忆性
+### 证明无记忆性
 
 指数分布最神奇的性质在于其无记忆性。现证明对于任意  都有：
 
 证明过程如下：
 
-1.  根据条件概率公式：
- 
+1. 根据条件概率公式：
+
 注意到  ，故分子直接为  。
 
-1.  利用前述结果：
- 
+2. 利用前述结果：
+
 则有：
 
 这种推导严格验证了指数分布的无记忆性，在实际的概率建模中具有重要意义，因为它说明未来发生的概率与过去已经发生的时间无关。
 
-#### 矩和方差推导
+### 矩和方差推导
 
 此外，我们还可以推导指数分布的期望和方差。
 
-**期望**：期望  的计算公式为：
+#### 期望
+
+期望  的计算公式为：
 
 利用积分公式：
 
 因此：
 
-**方差**：
+#### 方差
 
 方差的计算需要先计算二阶矩  ：
 
@@ -114,19 +116,15 @@
 
 方差  为：
 
-#### 总结推导过程
+### 总结推导过程
 
 通过上述推导，我们可以总结出指数分布的一些核心公式：
 
-+   **累积分布函数（CDF）**：
-
-+   **概率密度函数（PDF）**：
-
-+   **期望**：
-
-+   **方差**：
-
-+   **无记忆性**：
++ 累积分布函数（CDF）：
++ 概率密度函数（PDF）：
++ 期望：
++ 方差：
++ 无记忆性：
 
 这些结果不仅是数学上严格推导的结论，也完美地解释了指数分布在随机等待时间等实际问题中的合理性和应用价值。
 
@@ -152,10 +150,10 @@ sample_size = 1000
 data = np.random.exponential(scale=1/lambda_param, size=sample_size)
 
 # 打印前10个数据以便查看
-print(&quot;前10个随机数据：&quot;, data[:10])
+print("前10个随机数据：", data[:10])
 ```
 
-在上述代码中，使用 np.random.exponential 函数生成随机样本。其中 scale 参数正好是  ，与公式  对应。代码中生成了 1000 个样本，并打印了前 10 个数据作为查看。
+在上述代码中，使用 `np.random.exponential` 函数生成随机样本。其中 `scale` 参数正好是 `1/lambda_param`，与公式对应。代码中生成了 1000 个样本，并打印了前 10 个数据作为查看。
 
 ### 数据分布的可视化
 
@@ -164,16 +162,16 @@ print(&quot;前10个随机数据：&quot;, data[:10])
 ```
 # 可视化概率密度函数（PDF）
 plt.figure(figsize=(10, 6))
-count, bins, ignored = plt.hist(data, bins=50, density=True, alpha=0.6, color=&#x27;skyblue&#x27;, label=&#x27;Histogram&#x27;)
+count, bins, ignored = plt.hist(data, bins=50, density=True, alpha=0.6, color='skyblue', label='Histogram')
 
 # 计算拟合的理论概率密度函数
 x = np.linspace(0, np.max(data), 1000)
 pdf = lambda_param * np.exp(-lambda_param * x)
-plt.plot(x, pdf, &#x27;r-&#x27;, lw=2, label=&#x27;Theoretical PDF&#x27;)
+plt.plot(x, pdf, 'r-', lw=2, label='Theoretical PDF')
 
-plt.xlabel(&quot;x&quot;)
-plt.ylabel(&quot;Probability Density&quot;)
-plt.title(&quot;Exponential Distribution - PDF&quot;)
+plt.xlabel("x")
+plt.ylabel("Probability Density")
+plt.title("Exponential Distribution - PDF")
 plt.legend()
 plt.grid(True)
 plt.show()
@@ -181,26 +179,24 @@ plt.show()
 # 可视化累积分布函数（CDF）
 cdf = 1 - np.exp(-lambda_param * x)
 plt.figure(figsize=(10, 6))
-plt.plot(x, cdf, &#x27;b-&#x27;, lw=2, label=&#x27;Theoretical CDF&#x27;)
+plt.plot(x, cdf, 'b-', lw=2, label='Theoretical CDF')
 
 # 经验累积分布函数：对样本数据排序，然后画出分布函数
 sorted_data = np.sort(data)
 yvals = np.arange(1, len(sorted_data)+1) / float(len(sorted_data))
-plt.step(sorted_data, yvals, where=&#x27;post&#x27;, color=&#x27;gray&#x27;, label=&#x27;Empirical CDF&#x27;)
+plt.step(sorted_data, yvals, where='post', color='gray', label='Empirical CDF')
 
-plt.xlabel(&quot;x&quot;)
-plt.ylabel(&quot;Cumulative Probability&quot;)
-plt.title(&quot;Exponential Distribution - CDF&quot;)
+plt.xlabel("x")
+plt.ylabel("Cumulative Probability")
+plt.title("Exponential Distribution - CDF")
 plt.legend()
 plt.grid(True)
 plt.show()
 ```
 
-+   **概率密度函数（PDF）**：我们首先使用直方图展示生成的数据分布情况，并归一化（参数 density=True），然后利用公式  绘制理论的 PDF 曲线。通过两者的比较，可以直观验证样本数据是否符合指数分布。
++ **概率密度函数（PDF）**：我们首先使用直方图展示生成的数据分布情况，并归一化（参数 `density=True`），然后利用公式绘制理论的 PDF 曲线。通过两者的比较，可以直观验证样本数据是否符合指数分布。
 
-
-+   **累积分布函数（CDF）**：对于 CDF，我们同样计算了理论值  并绘制出来，同时利用样本数据生成经验 CDF（按照排序后的数据分别计算累计概率）。可以看到理论 CDF 和经验 CDF 非常吻合。
-
++ **累积分布函数（CDF）**：对于 CDF，我们同样计算了理论值并绘制出来，同时利用样本数据生成经验 CDF（按照排序后的数据分别计算累计概率）。可以看到理论 CDF 和经验 CDF 非常吻合。
 
 ### 指数分布在机器学习中的应用
 
@@ -229,13 +225,13 @@ noise = np.random.normal(loc=0, scale=5, size=sample_size).reshape(-1, 1)
 y = X + noise  # y 表示设备故障前的运行总时间
 
 # 查看前 10 条数据
-print(&quot;X（设备运行时间）前10个样本：&quot;, X[:10])
-print(&quot;y（故障时间）前10个样本：&quot;, y[:10])
+print("X（设备运行时间）前10个样本：", X[:10])
+print("y（故障时间）前10个样本：", y[:10])
 ```
 
 #### 构建回归模型
 
-我们采用 sklearn 库中的线性回归模型，基于运行时间  预测故障时间  。
+我们采用 `sklearn` 库中的线性回归模型，基于运行时间 `X` 预测故障时间 `y`。
 
 ```
 from sklearn.model_selection import train_test_split
@@ -256,8 +252,8 @@ y_pred = model.predict(X_test)
 # 模型评估
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
-print(&quot;Mean Squared Error:&quot;, mse)
-print(&quot;R^2 Score:&quot;, r2)
+print("Mean Squared Error:", mse)
+print("R^2 Score:", r2)
 ```
 
 #### 模型结果与可视化展示
@@ -267,12 +263,12 @@ print(&quot;R^2 Score:&quot;, r2)
 ```
 # 可视化测试集上的预测结果
 plt.figure(figsize=(10, 6))
-plt.scatter(X_test, y_test, color=&#x27;blue&#x27;, alpha=0.5, label=&#x27;Actual Data&#x27;)
-plt.plot(X_test, y_pred, color=&#x27;red&#x27;, linewidth=2, label=&#x27;Predicted Regression Line&#x27;)
+plt.scatter(X_test, y_test, color='blue', alpha=0.5, label='Actual Data')
+plt.plot(X_test, y_pred, color='red', linewidth=2, label='Predicted Regression Line')
 
-plt.xlabel(&quot;Device Operating Time&quot;)
-plt.ylabel(&quot;Time to Failure&quot;)
-plt.title(&quot;Regression Model for Predicting Time to Failure&quot;)
+plt.xlabel("Device Operating Time")
+plt.ylabel("Time to Failure")
+plt.title("Regression Model for Predicting Time to Failure")
 plt.legend()
 plt.grid(True)
 plt.show()
@@ -288,12 +284,9 @@ plt.show()
 
 到这里，大家通过本文的学习，你应该能够：
 
-+   理解什么是指数分布以及其在随机等待时间问题中的实际意义；
-
-+   掌握指数分布的核心公式和数学推导过程，尤其是无记忆性证明；
-
-+   利用 Python 工具生成符合指数分布的数据，并通过数据可视化验证模型；
-
-+   初步了解指数分布在机器学习（如预测设备故障时间、生存分析、异常检测等）中的应用。
++ 理解什么是指数分布以及其在随机等待时间问题中的实际意义；
++ 掌握指数分布的核心公式和数学推导过程，尤其是无记忆性证明；
++ 利用 Python 工具生成符合指数分布的数据，并通过数据可视化验证模型；
++ 初步了解指数分布在机器学习（如预测设备故障时间、生存分析、异常检测等）中的应用。
 
 指数分布虽然看似简单，但在工程、金融、通信、医学等多个领域都有着不可替代的重要作用。希望大家在今后的数据分析实践中能多多利用这些理论工具，可以为复杂问题提供简明的数学解释与解决方案。

@@ -1,16 +1,21 @@
-# Agent-zero：这个自动AI代理可以做任何事情！ （生成APP、代码、RAG 等）
+
+# Agent-zero：这个自动AI代理可以做任何事情！（生成APP、代码、RAG 等）
 
 > 来源：[https://agijuejin.feishu.cn/docx/BMHwdtL5HoE99MxB2mfcfRBNndg](https://agijuejin.feishu.cn/docx/BMHwdtL5HoE99MxB2mfcfRBNndg)
 
 > 作者：Aitrainee | AI进修生
 
-> 原文：[https://mp.weixin.](https://mp.weixin.qq.com/s/RHBrIK5mdO7whkTvix62lA)qq.com/s/RHBrIK5m...
+> 原文：[https://mp.weixin.qq.com/s/RHBrIK5mdO7whkTvix62lA](https://mp.weixin.qq.com/s/RHBrIK5mdO7whkTvix62lA)
+
+## 引言
 
 Hi，这里是Aitrainee，欢迎阅读本期新文章。
 
-我已经讨论了很多关于如何 **创建代理、应用程序和其他内容 **的主题，尤其是那些使用代理的内容，你不需  要配置任务，系统会自动完成，例如我在Maestro或最近的Olama Engineer中展示的内容。
+我已经讨论了很多关于如何 **创建代理、应用程序和其他内容** 的主题，尤其是那些使用代理的内容，你不需要配置任务，系统会自动完成，例如我在Maestro或最近的Olama Engineer中展示的内容。
 
 ![](img/382edbf884d6210d0f1d1b7742de8ebb.png)
+
+## 什么是 Agent Zero
 
 最近，我看到一个类似的东西，看起来非常酷，那就是Agent Zero。如果我们查看它的GitHub页面，可以看到他们说Agent Zero并不是一个预定义的代理框架，它是动态的，随着你使用它而有机地成长和学习。
 
@@ -32,17 +37,19 @@ Hi，这里是Aitrainee，欢迎阅读本期新文章。
 
 据说它也兼容OpenAI、Anthropic、Gemini、Claude等平台，不过话说回来，我们看看怎么使用它。
 
+## 安装与使用
+
 首先，我们需要将这个库克隆到我的电脑上。好了，现在完成了，让我们导航到文件夹中。
 
 ![](img/28e7d898e551ee558ab4e183300f7fff.png)
 
-嗯，现在我们需要将EnV示例文件重命名为EnV。为此，让我们在VS Code中打开文件夹。现在在这里重命名。好了，现在完成了。
+嗯，现在我们需要将`EnV`示例文件重命名为`EnV`。为此，让我们在VS Code中打开文件夹。现在在这里重命名。好了，现在完成了。
 
 现在我们需要在这些变量中输入API密钥。默认推荐使用的模型是Perplexity，但我将使用OpenAI，因为如果你不使用Perplexity，它是默认的备选方案。所以我将在这里输入OpenAI的API密钥。现在编辑工作就完成了。
 
 ![](img/d5d173e5436dfc34d97fccebd99ed77b.png)
 
-现在我们回到终端，运行pip install命令，确保所有依赖项都已安装。好了，一旦完成，我们现在可以使用它了。
+现在我们回到终端，运行`pip install`命令，确保所有依赖项都已安装。好了，一旦完成，我们现在可以使用它了。
 
 ![](img/e2d4ab8bb202b86758ebc3fbfb6d07fd.png)
 
@@ -57,6 +64,8 @@ Hi，这里是Aitrainee，欢迎阅读本期新文章。
 ![](img/3c17f0a05fda3a260b5d0e589a26976d.png)
 
 在这里输入你的模型名称，它应该就可以使用了，这也很酷。你也可以对Anthropic Gemini和其他平台做同样的事情。
+
+## 总结
 
 它能够执行Python程序，这意味着它可以做一些有趣的事情，但当涉及到更高级的任务时，比如你希望它分析或简单地在你的电脑上创建文件，它就无法做到，它还能运行代码并找到LLM无法完成的事情。
 
@@ -76,12 +85,12 @@ https://www.youtube.com/watch?v=96FZgEAo4CY
 
 抓住前沿技术的机遇，与我们一起成为创新的超级个体
 
-**（把握AIGC时代的个人力量）**
+**把握AIGC时代的个人力量**
 
 ![](img/5bbc1151722933ee0ad2a306c45accdd.png)
 
-**点这里 ****👇 关****注我，记得标星哦～**
+**点这里 👇 关注我，记得标星哦～**
 
 一键三连「分享」、「点赞」和「在看」
 
-**科技前沿进展日日相见 ~**
+科技前沿进展日日相见 ~

@@ -1,3 +1,4 @@
+
 # 看见AI日报（20230813）
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/P2xadzNckocdYhxDmG5cEh4qnJe](https://jlqyxzzvbk.feishu.cn/docx/P2xadzNckocdYhxDmG5cEh4qnJe)
@@ -10,13 +11,13 @@
 
 **欢迎进群交流**
 
-# AI资讯精选
+## AI资讯精选
 
-## 宾大最新研究：AI产生创意的效率比人类高7倍，GPT创意能力击败99%的人类！
+### 宾大最新研究：AI产生创意的效率比人类高7倍，GPT创意能力击败99%的人类！
 
 从围棋到游戏，再到完成各种重复性的劳动，AI在很多方面的能力已经远超人类。
 
-很多人已经在畅想，未来AI将人类从无聊的工作中解放出来，让人类能专注于只有人类才能完成的工作上。
+很多人已经在畅想，未来AI将人类从无职的工作中解放出来，让人类能专注于只有人类才能完成的工作上。
 
 比如和人类之间的情感交流，或者需要创造力的工作。
 
@@ -32,7 +33,7 @@
 
 更多信息请访问：https://mp.weixin.qq.com/s/a_72QdXCIG9yKU4vw0eE4w
 
-## Midjourney一周年！从V1到V5，画出的美女有何不同？
+### Midjourney一周年！从V1到V5，画出的美女有何不同？
 
 7月14日，Midjourney距离初次发布已经一周年了！就在一年前的这一天，Midjourney开始公测。而我们，也眼看着它从v1进化到了v5.2。在今天，网友们纷纷刷起了「Midjourney生日快乐」，并且纷纷刷起了同样的prompt从V1到V5.2的变化。
 
@@ -54,9 +55,7 @@
 
 **v5**
 
-
 **v5.1**
-
 
 **v5.2**
 
@@ -64,7 +63,7 @@
 
 更多信息请访问：https://mp.weixin.qq.com/s/Y_TuydFiV8u3kQi9FRarZA
 
-## 《终结者5》lite版！华人博士生用电控制基因表达，成果登上Nature子刊
+### 《终结者5》lite版！华人博士生用电控制基因表达，成果登上Nature子刊
 
 ![](img/74cfe1f13016bfa3ce3b19fa436d669e.png)
 
@@ -78,9 +77,9 @@
 
 https://mp.weixin.qq.com/s/6Ct20Dw-L5936evkRRTkXA
 
-# AI软件精选
+## AI软件精选
 
-# 节奏照片**（****AI****数字人）**
+### 节奏照片（AI数字人）
 
 能让你开心一笑的网站！它提供在线人像图片动态化处理，可以让一张照片变成一个活生生的人物在唱歌。。。
 
@@ -88,7 +87,7 @@ https://mp.weixin.qq.com/s/6Ct20Dw-L5936evkRRTkXA
 
 链接：https://nodtotherhythm.com/
 
-# AIDesign AI Logo生成**（AI绘画）**
+### AIDesign AI Logo生成（AI绘画）
 
 腾讯自研的智能设计平台，免费在线生成品牌logo、企业VI，仅需3步助您开启业务。
 
@@ -96,7 +95,7 @@ https://mp.weixin.qq.com/s/6Ct20Dw-L5936evkRRTkXA
 
 链接：https://ailogo.qq.com/guide/brandname
 
-# uberduck**（****AI****语音）**
+### uberduck（AI语音）
 
 内置以电影、动漫人物为原型的语音。可以结合文案语音和剧情编排一段同人作品。
 
@@ -104,11 +103,11 @@ https://mp.weixin.qq.com/s/6Ct20Dw-L5936evkRRTkXA
 
 链接：https://www.uberduck.ai/
 
-**更多****AI****工具请访问：**https://www.ainavpro.com/
+**更多AI工具请访问：**https://www.ainavpro.com/
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
 https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
 
@@ -116,7 +115,7 @@ https://www.bilibili.com/video/BV1TM4y1p7RJ/?spm_id_from=333.788&vd_source=3f793
 
 ![](img/9c56e401e1eb47eaa0af6307e25e9d81.png)
 
-## 付费课程（ai认知提升）
+### 付费课程（ai认知提升）
 
 AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
@@ -124,17 +123,15 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/300a2ba58a6e5cdc46b7fba327998666.png)
 
-#
-
 ![](img/d67bd8dfd981ca15c4d532a4708e00bf.png)
 
 ![](img/cab9967fe9180138104258bc758f9fa7.png)
 
 **欢迎进群交流**
 
-# 4.会员精选
+## 4.会员精选
 
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：https://nf.video/kkF8Y 下单时输入：`kanAI` 九五折优惠，或者直接二维码访问
 
 ![](img/f9524d5a7e78a6f10cf55136d50284c9.png)
 
@@ -144,7 +141,7 @@ AI的30种用法！亚伦哥的AI实用课！工作效率提升数倍
 
 ![](img/95e937412fd769c0ccc0b0f061c28af7.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像 GPT**，支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/38a31a36a591edec00373d985bf1deb5.png)
 

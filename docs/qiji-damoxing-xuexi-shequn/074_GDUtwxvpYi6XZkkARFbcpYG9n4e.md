@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（10月 18日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/LpSYdeQO4oJW43xK1PvcCuw2nn5](https://miracleplus.feishu.cn/docx/LpSYdeQO4oJW43xK1PvcCuw2nn5)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-#### 潜空间系列活动重磅回归！
+### 潜空间系列活动重磅回归！
 
 > 本期活动将在**10月20日** **10:00**开始，我们邀请到的嘉宾是**袁进辉**，硅基流动（SiliconFlow）创始人兼CEO，曾任微软亚洲研究院主管研究员，获得微软亚洲研究院院长特别奖。硅基流动目前专注于 AI Infra 领域，解决大模型训练与推理的效率问题，降低 AI 应用开发的门槛与成本。在本次分享中袁进辉将带来《AI Infra 创业10年得与失》的分享。
 
@@ -14,11 +15,11 @@
 
 ![](img/7e9f2811134e2e58cfac1f09911956b4.png)
 
-# 资讯
+## 资讯
 
 ### ChatGPT登陆Windows，推出预览版应用
 
-https://techcrunch.com/2024/10/17/chatgpt-comes-to-windows/
+`https://techcrunch.com/2024/10/17/chatgpt-comes-to-windows/`
 
 OpenAI近日宣布，ChatGPT的专属Windows应用开始预览，目前仅向ChatGPT Plus、Team、Enterprise和Edu用户开放。这款预览版应用为用户提供了与文件和图片交互的功能，并集成了OpenAI最新的o1-preview模型。
 
@@ -28,13 +29,13 @@ OpenAI表示，今年晚些时候将推出该应用的完整版本，为用户�
 
 （小编也下载成功咯[撒花
 
-官网链接：https://help.openai.com/en/articles/9982051-using-the-chatgpt-windows-app
+官网链接：`https://help.openai.com/en/articles/9982051-using-the-chatgpt-windows-app`
 
 ![](img/75039859c89dfbbb34db76f90a157ea8.png)
 
 ### 特斯拉机器人能自己走，“不是远程遥控”
 
-https://mp.weixin.qq.com/s/nrI6ivKUpzWJ8gN6ptA8SQ
+`https://mp.weixin.qq.com/s/nrI6ivKUpzWJ8gN6ptA8SQ`
 
 特斯拉发布了擎天柱机器人（Optimus）的最新演示视频，展示其自主能力。视频中，Optimus在工厂内自主移动，能抱起11kg的重物，进行自主充电，还爬楼梯和分享零食。特斯拉强调，此次展示并非远程操控。Optimus的自主导航依靠2D摄像头和云端存储的视觉特征，而不依赖GPS。这段展示发布后，引发了质疑，有参会者表示机器人部分依赖远程操控，甚至直接询问了机器人，得到了“部分依赖”这样的回答。特斯拉随后发布视频，进一步展示Optimus的自主能力，工程师明确表示没有远程控制。此外，Optimus的自动充电技术也引发了网友的兴趣。
 
@@ -44,7 +45,7 @@ https://mp.weixin.qq.com/s/nrI6ivKUpzWJ8gN6ptA8SQ
 
 ### Transformer成功寻找新的李雅普诺夫函数，三体问题相关
 
-https://mp.weixin.qq.com/s/jgb5b04DODrloOylQJO_iw
+`https://mp.weixin.qq.com/s/jgb5b04DODrloOylQJO_iw`
 
 Meta和巴黎理工学院团队利用Symbolic Transformer模型，提出了新的方法来解决长期悬而未决的数学难题——寻找动力系统的全局李雅普诺夫函数。李雅普诺夫函数能够判断系统的稳定性，但如何构造该函数一直是个难题。团队将问题建模为符号序列翻译任务，使用Transformer模型进行训练，取得了突破性成果。
 
@@ -58,7 +59,7 @@ Meta和巴黎理工学院团队利用Symbolic Transformer模型，提出了新�
 
 ### Google NotebookLM推出定制音频会话功能，并启动商业试点计划
 
-https://techcrunch.com/2024/10/17/googles-notebooklm-now-lets-you-guide-ai-generated-audio-conversations-launches-business-pilot/
+`https://techcrunch.com/2024/10/17/googles-notebooklm-now-lets-you-guide-ai-generated-audio-conversations-launches-business-pilot/`
 
 Google于近日更新了其AI笔记和研究助手NotebookLM的音频总结功能，允许用户定制AI生成的音频会话，并专注于特定话题，而非仅生成整体概述。这一更新使得用户可以通过“自定义”控制按钮引导音频会话，更精准地提取重点内容。
 
@@ -70,15 +71,13 @@ NotebookLM的音频概述功能于上月推出后迅速吸引了用户注意，�
 
 ![](img/af0bba3e5e4e4dbd7d0d093a539d2a8c.png)
 
-#
-
-# 推特
+## 推特
 
 ### NotebookLM新更新：给主持人传递便条、最小化
 
 贡献人：
 
-https://x.com/raiza_abubakar/status/1846944566689353838?s=46&t=GRStLXDcUNuun8J5Noyw4Q
+`https://x.com/raiza_abubakar/status/1846944566689353838?s=46&t=GRStLXDcUNuun8J5Noyw4Q`
 
 NotebookLM 的最新更新，今日推出：
 
@@ -98,7 +97,7 @@ NotebookLM 的最新更新，今日推出：
 
 贡献人：
 
-https://x.com/simonw/status/1846898666818490703?s=46&t=GRStLXDcUNuun8J5Noyw4Q
+`https://x.com/simonw/status/1846898666818490703?s=46&t=GRStLXDcUNuun8J5Noyw4Q`
 
 我需要从收件箱中的十几封电子邮件获取信息……所以我运行了一个屏幕捕捉工具，点击查看了每封邮件，然后使用 Gemini 1.5 Flash 多模态 LLM 从那段 35 秒的视频中提取了 JSON 数据（我检查了，数据是正确的）。
 
@@ -110,7 +109,7 @@ https://x.com/simonw/status/1846898666818490703?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
 贡献人：
 
-https://x.com/ericciarla/status/1847002234372215172?s=46&t=GRStLXDcUNuun8J5Noyw4Q
+`https://x.com/ericciarla/status/1847002234372215172?s=46&t=GRStLXDcUNuun8J5Noyw4Q`
 
 介绍 Swarm 网页提取器
 
@@ -126,7 +125,7 @@ https://x.com/ericciarla/status/1847002234372215172?s=46&t=GRStLXDcUNuun8J5Noyw4
 
 贡献人：
 
-https://x.com/bradcostanzo/status/1847024357769728486?s=46&t=GRStLXDcUNuun8J5Noyw4Q
+`https://x.com/bradcostanzo/status/1847024357769728486?s=46&t=GRStLXDcUNuun8J5Noyw4Q`
 
 你是否曾希望自己能同时出现在两个地方？🤔
 
@@ -136,7 +135,7 @@ https://x.com/bradcostanzo/status/1847024357769728486?s=46&t=GRStLXDcUNuun8J5Noy
 
 查看我们在 Product Hunt 上的发布！👇
 
-producthunt.com/posts/heygen-i...
+`producthunt.com/posts/heygen-i...`
 
 ![](img/cce40d0b65fe2dcc89b512775e8b58d4.png)
 
@@ -146,7 +145,7 @@ producthunt.com/posts/heygen-i...
 
 贡献人：
 
-https://x.com/perplexity_ai/status/1846950770736091509?s=46&t=GRStLXDcUNuun8J5Noyw4Q
+`https://x.com/perplexity_ai/status/1846950770736091509?s=46&t=GRStLXDcUNuun8J5Noyw4Q`
 
 推出内部知识搜索（我们最受欢迎的企业功能）！
 
@@ -160,13 +159,13 @@ https://x.com/perplexity_ai/status/1846950770736091509?s=46&t=GRStLXDcUNuun8J5No
 
 贡献人：
 
-https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4Q
+`https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4Q`
 
 我们将大语言模型 (LLM) 集成到 SQL 中，并在 MotherDuck 数据仓库中展示小语言模型 (SLM) 的强大功能。
 
 ![](img/3181ab66d98aa35a90b5e47271403f1a.png)
 
-# 信号
+## 信号
 
 ### Tackling the Abstraction and Reasoning Corpus with Vision Transformers: the Importance of 2D Representation, Positions, and Objects
 
@@ -174,7 +173,7 @@ https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4
 
 贡献人：
 
-原文链接：https://arxiv.org/abs/2410.06405
+原文链接：`https://arxiv.org/abs/2410.06405`
 
 信号源：Wenhao Li
 
@@ -188,7 +187,7 @@ https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4
 
 贡献人：
 
-原文链接：https://arxiv.org/abs/2410.01131
+原文链接：`https://arxiv.org/abs/2410.01131`
 
 信号源：Nvidia
 
@@ -204,7 +203,7 @@ https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4
 
 贡献人：
 
-原文链接：https://arxiv.org/abs/2410.05229
+原文链接：`https://arxiv.org/abs/2410.05229`
 
 信号源：Apple
 
@@ -220,7 +219,7 @@ https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4
 
 贡献人：
 
-原文链接：https://arxiv.org/abs/2410.08464
+原文链接：`https://arxiv.org/abs/2410.08464`
 
 信号源：Robert Scoble
 
@@ -230,11 +229,17 @@ https://x.com/motherduck/status/1847001104569016761?s=46&t=GRStLXDcUNuun8J5Noyw4
 
 ![](img/02e5f727f0372f6297ae10550b6d7056.png)
 
-# 产品
+## 产品
 
 ### CodeAnt AI
 
 贡献人：
+
+
+
+# 工具与平台
+
+## CodeAnt AI
 
 https://www.codeant.ai/
 
@@ -242,7 +247,7 @@ CodeAnt AI 是一款人工智能代码审查工具，可以通过实时检测和
 
 ![](img/69619e09e9600e1a9e2ee4a21778b57b.png)
 
-### highperformr
+## Highperformr
 
 贡献人：
 
@@ -252,39 +257,39 @@ Highperformr 是一个 AI 驱动的社交媒体协作工具，专为小团队设
 
 ![](img/a192a2006a354215741af2a46460efbc.png)
 
-# HuggingFace&Github
+# HuggingFace & Github
 
-### Sana
+## Sana
 
 贡献人：
 
 https://nvlabs.github.io/Sana/
 
-Sana 是一个高效的文本到图像生成框架，能够生成高达 4096 × 4096 分辨率的图像。其核心设计包括深度压缩自编码器、线性 DiT 和仅解码的小型 LLM 作为文本编码器，显著提高了图像生成的速度和质量。Sana-0.6B 相比大型模型更小、更快，可在 16GB 笔记本 GPU 上快速生成图像，提供低成本的内容创作解决方案。
+Sana 是一个高效的文本到图像生成框架，能够生成高达 4096 × 4096 分辨率的图像。其核心设计包括深度压缩自编码器、线性 `DiT` 和仅解码的小型 LLM 作为文本编码器，显著提高了图像生成的速度和质量。`Sana-0.6B` 相比大型模型更小、更快，可在 16GB 笔记本 GPU 上快速生成图像，提供低成本的内容创作解决方案。
 
 ![](img/6b1083d59d8ace6faabe902afe21cc48.png)
 
-### Qihoo-T2X
+## Qihoo-T2X
 
 贡献人：
 
 https://360cvgroup.github.io/Qihoo-T2X/
 
-Qihoo-T2X是一系列基于PT-DiT架构的模型，可以处理不同的生成任务，包括图像生成（T2I）、视频生成（T2V）和多模态视频生成（T2MV）。这些模型利用了稀疏代表性注意力机制，以高效地捕捉全局视觉信息，同时降低计算复杂度。Qihoo-T2X系列的模型通过优化自注意力机制和跨注意力机制，能够在生成任务中实现竞争力的性能，尤其是在图像和视频生成方面。
+`Qihoo-T2X`是一系列基于`PT-DiT`架构的模型，可以处理不同的生成任务，包括图像生成（`T2I`）、视频生成（`T2V`）和多模态视频生成（`T2MV`）。这些模型利用了稀疏代表性注意力机制，以高效地捕捉全局视觉信息，同时降低计算复杂度。`Qihoo-T2X`系列的模型通过优化自注意力机制和跨注意力机制，能够在生成任务中实现竞争力的性能，尤其是在图像和视频生成方面。
 
 ![](img/6ef6a7b6608ac808efb072080ea80094.png)
 
 # 投融资
 
-### Dottxt凭借1190万美元融资，助力AI模型生成精准回答
+## Dottxt凭借1190万美元融资，助力AI模型生成精准回答
 
 https://techcrunch.com/2024/10/17/with-11-9-million-in-funding-dottxt-tells-ai-models-how-to-answer/
 
-近日，AI初创公司Dottxt宣布完成1190万美元融资，旨在推动AI模型的“结构化生成”技术。该公司由开源项目Outlines的团队创立，专注于通过改进生成模型的输出方式，帮助企业更有效地利用生成式AI技术。Dottxt的解决方案采用“模型不可知论”原则，即适用于多种大模型，并为开发者提供比现有开源工具更丰富的功能和性能。
+近日，AI初创公司Dottxt宣布完成1190万美元融资，旨在推动AI模型的“结构化生成”技术。该公司由开源项目`Outlines`的团队创立，专注于通过改进生成模型的输出方式，帮助企业更有效地利用生成式AI技术。`Dottxt`的解决方案采用“模型不可知论”原则，即适用于多种大模型，并为开发者提供比现有开源工具更丰富的功能和性能。
 
-Dottxt在2023年由Elaia领投完成320万美元的pre-seed轮融资，并在今年8月获得EQT Ventures领投的870万美元种子轮投资。公司计划利用这笔资金扩大团队规模，满足市场对结构化生成工具日益增长的需求。Dottxt的团队预计在10月底增长至17人，重点招聘开发者关系专家，以促进技术生态系统的建设。尽管商业化计划将在未来六个月启动，但当前Dottxt的主要目标是加速技术的普及应用。
+`Dottxt`在2023年由`Elaia`领投完成320万美元的`pre-seed`轮融资，并在今年8月获得`EQT Ventures`领投的870万美元种子轮投资。公司计划利用这笔资金扩大团队规模，满足市场对结构化生成工具日益增长的需求。`Dottxt`的团队预计在10月底增长至17人，重点招聘开发者关系专家，以促进技术生态系统的建设。尽管商业化计划将在未来六个月启动，但当前`Dottxt`的主要目标是加速技术的普及应用。
 
-Louf认为，AI模型的结构化生成将成为未来的主流，Dottxt希望借此帮助企业从生成式AI中挖掘实际价值，并在AI热潮退去之前稳步发展。
+`Louf`认为，AI模型的结构化生成将成为未来的主流，`Dottxt`希望借此帮助企业从生成式AI中挖掘实际价值，并在AI热潮退去之前稳步发展。
 
 公司官网：https://dottxt.co/
 
@@ -292,179 +297,173 @@ Louf认为，AI模型的结构化生成将成为未来的主流，Dottxt希望�
 
 # 学习
 
-### 思考Bradley-Terry和Reward Modeling这一年(更)
+## 思考Bradley-Terry和Reward Modeling这一年(更)
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/1276416769
 
-Bradley-Terry模型与Reward Modeling的逻辑：BT模型最初用于胜率预测，但在LLM的应用中，它被用来将pairwise-preference注解转化为评分。通过比较不同LLM的表现，类似于体育比赛中的排名问题。然而，当用于LLM的奖励建模时，实际问题变得更加复杂，尤其是对比不同prompt-response pairs时的顺序优化。
+`Bradley-Terry`模型与`Reward Modeling`的逻辑：`BT`模型最初用于胜率预测，但在LLM的应用中，它被用来将`pairwise-preference`注解转化为评分。通过比较不同LLM的表现，类似于体育比赛中的排名问题。然而，当用于LLM的奖励建模时，实际问题变得更加复杂，尤其是对比不同`prompt-response` pairs时的顺序优化。
 
-**假设与扩展**：BT模型假设不同标注员有相同的偏差，这些偏差服从特定分布，如Gumbel或Gaussian。作者通过这一假设，引入了一种Siamese MLP结构来实现BT回归，并证明其收敛性。
+**假设与扩展**：`BT`模型假设不同标注员有相同的偏差，这些偏差服从特定分布，如`Gumbel`或`Gaussian`。作者通过这一假设，引入了一种`Siamese MLP`结构来实现`BT`回归，并证明其收敛性。
 
-Order Consistency的引入：相比传统BT模型，文中提出了一种更为通用的目标，即“保序性”（Order Consistency），不再追求精确胜率预测，而是关注排序关系。提出可以通过分类器模型（如MLP、XGBoost等）来优化Reward Modeling，从而减少数据量和标注质量对模型性能的依赖。
+`Order Consistency`的引入：相比传统`BT`模型，文中提出了一种更为通用的目标，即“保序性”（`Order Consistency`），不再追求精确胜率预测，而是关注排序关系。提出可以通过分类器模型（如`MLP`、`XGBoost`等）来优化`Reward Modeling`，从而减少数据量和标注质量对模型性能的依赖。
 
-**交叉prompt标注的优势**：文中提到，通过跨prompt的比较，可以提高标注质量，并在标注diversity较低的场景下显著提升Reward Modeling的效果。这种方法在LLM的RLHF流程中表现尤为突出。
+**交叉prompt标注的优势**：文中提到，通过跨`prompt`的比较，可以提高标注质量，并在标注`diversity`较低的场景下显著提升`Reward Modeling`的效果。这种方法在LLM的`RLHF`流程中表现尤为突出。
 
-**实验结果**：作者进行了大量实验，验证了BT Reward Model与分类器模型在不同数据条件下的性能差异，展示了分类器模型的灵活性及其在reward modeling中的潜力。
+**实验结果**：作者进行了大量实验，验证了`BT Reward Model`与分类器模型在不同数据条件下的性能差异，展示了分类器模型的灵活性及其在`reward modeling`中的潜力。
 
 ![](img/b8784ab82f234e62d7dab682583362b3.png)
 
-### 推理服务系统建设白皮书
+## 推理服务系统建设白皮书
 
 https://zhuanlan.zhihu.com/p/1675191284
 
-推理服**务采用请求-响应模型，支持**多**用户并发请求的处理**，通过多引擎后端、调度队列和多模型管理等机制实现高效推理。推理引擎是执行推理的核心组件，负责加载模型并优化推理性能。它支持多种模型格式与硬件，并通过内存和显存优化，如KV Cache管理，提升推理速度。关键技术包括：PageAttention、RadixTree和Speculative Execution等优化方式，有效降低显存消耗并提升并发性能。
+推理服务采用请求-响应模型，支持多用户并发请求的处理，通过多引擎后端、调度队列和多模型管理等机制实现高效推理。推理引擎是执行推理的核心组件，负责加载模型并优化推理性能。它支持多种模型格式与硬件，并通过内存和显存优化，如`KV Cache`管理，提升推理速度。关键技术包括：`PageAttention`、`RadixTree`和`Speculative Execution`等优化方式，有效降低显存消耗并提升并发性能。
 
-推理服务系统通过**批量处理**和**连续批处理****技术优化**性能，提升吞吐量和降低延迟。该系统通过张量并行将模型切分至多个GPU，实现高效推理。在多用户场景下，连续批处理技术动态管理请求，提升了GPU利用率和响应速度。
+推理服务系统通过批量处理和连续批处理技术优化性能，提升吞吐量和降低延迟。该系统通过张量并行将模型切分至多个`GPU`，实现高效推理。在多用户场景下，连续批处理技术动态管理请求，提升了`GPU`利用率和响应速度。
 
 推理服务平台的关键指标包括吞吐量、延迟、可扩展性和资源利用率。选择合适的平台需兼容主流推理引擎和硬件，支持不同的并发与批量处理需求，以满足多样化的应用场景。
 
 ![](img/96b00857283fcf4cbc30daf10b39914c.png)
 
-### 训练VLM(视觉语言模型)的经验
+## 训练VLM(视觉语言模型)的经验
 
 https://zhuanlan.zhihu.com/p/890327005
 
-**Prompt优先**：尽量通过Prompt解决问题，避免因微调导致模型通用能力下降和高成本（时间和资源）。如果Prompt无法解决输出格式不稳定或任务不能完成等问题，再考虑SFT微调。
+**Prompt优先**：尽量通过`Prompt`解决问题，避免因微调导致模型通用能力下降和高成本（时间和资源）。如果`Prompt`无法解决输出格式不稳定或任务不能完成等问题，再考虑`SFT`微调。
 
-**微调策略**：微调通常在Prompt不奏效时使用。对于细微输出差异，可采用DPO（直接偏好优化），因其数据需求较少，超参少，且PPO（近端策略优化）难以获得高质量的Reward模型，通常只用于特定场景。
+**微调策略**：微调通常在`Prompt`不奏效时使用。对于细微输出差异，可采用`DPO`（直接偏好优化），因其数据需求较少，超参少，且`PPO`（近端策略优化）难以获得高质量的`Reward`模型，通常只用于特定场景。
 
-**数据的重要性**：业务数据质量至关重要，必须与期望输出保持一致，尤其是格式和内容。数据量也要充足，复杂任务需大量数据。可以通过手工标注和GPT改写生成高质量数据。
+**数据的重要性**：业务数据质量至关重要，必须与期望输出保持一致，尤其是格式和内容。数据量也要充足，复杂任务需大量数据。可以通过手工标注和`GPT`改写生成高质量数据。
 
-**数据处理与训练流程**：从小模型（2B-7B）开始，使用高LR和较长的Epoch进行训练，首先保证在训练集上的效果良好，确保训练参数设置合理。混合多种形式数据之前，需分别测试各类型数据的效果。
+**数据处理与训练流程**：从小模型（`2B-7B`）开始，使用高`LR`和较长的`Epoch`进行训练，首先保证在训练集上的效果良好，确保训练参数设置合理。混合多种形式数据之前，需分别测试各类型数据的效果。
 
-**VLM模型训练**：全量调优比LoRA调优常用。针对业务场景，模型应适应特定任务。对于复杂任务，可以将ViT部分解冻，并调整训练阶段数据策略以提高最终性能。
+**VLM模型训练**：全量调优比`LoRA`调优常用。针对业务场景，模型应适应特定任务。对于复杂任务，可以将`ViT`部分解冻，并调整训练阶段数据策略以提高最终性能。
 
-**通用能力的维护**：通过加入通用数据（如Caption和Instruct数据）来维持模型的通用能力，比例建议从10:1开始。可以使用现有VLM生成业务图片的Caption来生成更多业务相关数据。
+**通用能力的维护**：通过加入通用数据（如`Caption`和`Instruct`数据）来维持模型的通用能力，比例建议从`10:1`开始。可以使用现有`VLM`生成业务图片的`Caption`来生成更多业务相关数据。
 
-**模型大小与效果**：在7B小模型和72B大模型之间，业务领域的精调效果差异并不显著。适当控制训练轮次，确保模型既能学习业务任务，又不丧失泛化能力。
+**模型大小与效果**：在`7B`小模型和`72B`大模型之间，业务领域的精调效果差异并不显著。适当控制训练轮次，确保模型既能学习业务任务，又不丧失泛化能力。
 
 ![](img/44c8d90690143974f2a56724f8bdd94b.png)
 
-### 如何让AI改变音乐行业？——音乐基础模型（四）
+## 如何让AI改变音乐行业？——音乐基础模型（四）
 
 https://zhuanlan.zhihu.com/p/1754978096
 
 **前缀调优与提示调优**：前缀调优通过在输入数据前添加可训练向量，调整模型处理任务的方式，不改变原始参数，适合与音频编码器结合。提示调优则通过设计特定提示，引导模型生成任务相关的输出，特别适合音乐生成和分析。
 
-**适配器调优与完全调优**：适配器调优在模型中加入额外层，深入调整网络，提升其特定任务表现。完全调优则更新全部参数，适用于复杂任务。音乐领域的模型，如SALMONN和Mu-Llama，结合适配器调优，增强了多模态任务的表现。
+**适配器调优与完全调优**：适配器调优在模型中加入额外层，深入调整网络，提升其特定任务表现。完全调优则更新全部参数，适用于复杂任务。音乐领域的模型，如`SALMONN`和`Mu-Llama`，结合适配器调优，增强了多模态任务的表现。
 
 **零样本与少样本学习**：零样本学习使模型无需训练数据也能执行任务，结合音频特征和文本描述，实现音乐分类或生成。少样本学习在数据稀少的情况下，通过少量样本微调模型，有效提升任务适应能力，如情感标签生成和器乐分类。
 
 **指令调优与上下文学习**：指令调优整合领域知识，帮助模型理解特定任务，尽管在音乐中的应用还在初期。上下文学习通过示例生成合适的响应，适合音乐生成任务，减少对大量标注数据的依赖。
 
-如何让AI改变音乐行业？——音乐基础模型（三）
+## 如何让AI改变音乐行业？——音乐基础模型（三）
 
 https://zhuanlan.zhihu.com/p/1640112242
 
 ![](img/2df5b0eb6cf2bdea87a162a2984d8b52.png)
 
-### 梯度累积的潜在问题及其影响
+## 梯度累积的潜在问题及其影响
 
 https://zhuanlan.zhihu.com/p/1485465898
 
-**问题描述**：梯度累积应理论上与全批量训练等价，但研究发现，梯度累积越大，最终的损失（loss）反而越大。Huggingface社区中的研究者提出了该问题，并指出，基于平均交叉熵损失的梯度累积与全批量的损失不一致，导致模型泛化性变差和对短序列的偏倚。
+**问题描述**：梯度累积应理论上与全批量训练等价，但研究发现，梯度累积越大，最终的损失（`loss`）反而越大。`Huggingface`社区中的研究者提出了该问题，并指出，基于平均交叉熵损失的梯度累积与全批量的损失不一致，导致模型泛化性变差和对短序列的偏倚。
 
-**问题根源**：实验表明，使用基于mean的交叉熵损失时，梯度累积会放大短序列的影响，使短序列的loss权重大，而长序列的权重相对较小。这样不仅导致整体loss增大，还影响模型权重的L2范数，使模型泛化能力下降。
+**问题根源**：实验表明，使用基于`mean`的交叉熵损失时，梯度累积会放大短序列的影响，使短序列的`loss`权重大，而长序列的权重相对较小。这样不仅导致整体`loss`增大，还影响模型权重的`L2`范数，使模型泛化能力下降。
 
-**修复进展**：Huggingface团队通过将交叉熵的reduction参数改为sum，再根据实际目标token数量归一化，修正了梯度累积对loss的影响。这项修复已通过更新发布，用户可重新安装修复后的库来解决该问题。
+**修复进展**：`Huggingface`团队通过将交叉熵的`reduction`参数改为`sum`，再根据实际目标`token`数量归一化，修正了梯度累积对`loss`的影响。这项修复已通过更新发布，用户可重新安装修复后的库来解决该问题。
 
 **影响**：
 
 +   **泛化性不足**：梯度累积会增加短序列的权重，影响模型泛化。
 
-+   **权重不平衡**：L2范数增大，表明模型权重分布不均，进一步影响训练效果。
++   **权重不平衡**：`L2`范数增大，表明模型权重分布不均，进一步影响训练效果。
 
 ![](img/51f95a3ca574d052b829715db63a7695.png)
 
-### LLM实践--Tokenizer训练
+## LLM实践--`Tokenizer`训练
 
 https://zhuanlan.zhihu.com/p/739078635
 
-Tokenizer 选择的关键点：
+`Tokenizer` 选择的关键点：
 
-+   **压缩率**：压缩率决定文本向量化后的长度，影响训练和推理效率。汉字的压缩率通常在1.5-1.6之间，压缩率越高，向量化后的序列越短，但对训练数据的要求也更高。
++   **压缩率**：压缩率决定文本向量化后的长度，影响训练和推理效率。汉字的压缩率通常在`1.5-1.6`之间，压缩率越高，向量化后的序列越短，但对训练数据的要求也更高。
 
-+   **token覆盖率**：选择tokenizer时，需要确保目标语种的token有足够覆盖，避免不必要的退化到字节级处理。
++   **token覆盖率**：选择`tokenizer`时，需要确保目标语种的`token`有足够覆盖，避免不必要的退化到字节级处理。
 
-+   **预留token数量**：预留100-1000个特殊token，用于后续任务隔离、角色指令等目的。
++   **预留token数量**：预留`100-1000`个特殊`token`，用于后续任务隔离、角色指令等目的。
 
-+   **词表大小**：词表大小通常在8万到15万之间，影响模型的embedding层大小和显存消耗。
++   **词表大小**：词表大小通常在`8`万到`15`万之间，影响模型的`embedding`层大小和显存消耗。
 
-训练自定义Tokenizer的意义：
+训练自定义`Tokenizer`的意义：
 
-+   自训练的tokenizer能在同样词表大小下提供更高的压缩率，减少训练和推理成本。它还能展示团队的技术能力，确保模型能根据特定任务进行高效训练。
++   自训练的`tokenizer`能在同样词表大小下提供更高的压缩率，减少训练和推理成本。它还能展示团队的技术能力，确保模型能根据特定任务进行高效训练。
 
-**BPE与BBPE**：
+`BPE`与`BBPE`：
 
-+   **BPE**（Byte Pair Encoding）：通过迭代合并高频token对来构建词表，处理自然语言的常见分词任务。BPE的词表有严格的合成路径和优先级顺序，修改词表时需特别小心，避免合成路径出错。
++   `BPE`（`Byte Pair Encoding`）：通过迭代合并高频`token`对来构建词表，处理自然语言的常见分词任务。`BPE`的词表有严格的合成路径和优先级顺序，修改词表时需特别小心，避免合成路径出错。
 
-+   **BBPE**（Byte-Level BPE）：对文本的二进制编码进行分词，特别适用于多语种任务，特别是对于非ASCII字符（如汉字），能更均匀地切分token。
++   `BBPE`（`Byte-Level BPE`）：对文本的二进制编码进行分词，特别适用于多语种任务，特别是对于非`ASCII`字符（如汉字），能更均匀地切分`token`。
 
-**分词与loss的关系**：
+**分词与`loss`的关系**：
 
-+   压缩率较高的tokenizer会产生较高的平均loss，因为每个token携带的信息量更大。然而，压缩率的选择主要从训练和推理效率的角度考虑，对模型的实际效果影响不大。
++   压缩率较高的`tokenizer`会产生较高的平均`loss`，因为每个`token`携带的信息量更大。然而，压缩率的选择主要从训练和推理效率的角度考虑，对模型的实际效果影响不大。
 
 **词表的增减与调整**：
 
-+   修改词表时，必须谨慎处理合成路径和token顺序，以防止分词错误。尤其是添加未训练的token，可能导致梯度回传时出现问题，从而影响模型的训练稳定性。
++   修改词表时，必须谨慎处理合成路径和`token`顺序，以防止分词错误。尤其是添加未训练的`token`，可能导致梯度回传时出现问题，从而影响模型的训练稳定性。
 
-### 矩阵运算与计算机体系结构 (Computer architecture for Matrix computation)
+## 矩阵运算与计算机体系结构 (Computer architecture for Matrix computation)
 
 https://zhuanlan.zhihu.com/p/1564902306
 
-全连接层是深度学习中最基础的网络结构，其计算本质是矩阵乘法。每层的计算可以通过成熟的CPU或GPU库（如MKL、CUBLAS）高效实现。而卷积层通过滑动滤波器的方式处理输入数据，这类计算也能转化为矩阵乘法运算。然而，直接转化为矩阵乘法可能并不最高效，因此隐式矩阵乘法优化减少了内存访问量。
+全连接层是深度学习中最基础的网络结构，其计算本质是矩阵乘法。每层的计算可以通过成熟的`CPU`或`GPU`库（如`MKL`、`CUBLAS`）高效实现。而卷积层通过滑动滤波器的方式处理输入数据，这类计算也能转化为矩阵乘法运算。然而，直接转化为矩阵乘法可能并不最高效，因此隐式矩阵乘法优化减少了内存访问量。
 
-循环神经网络层和注意力机制层也以矩阵乘法为核心计算。GPU通过大规模并行的计算能力，非常适合处理这些深度学习任务。GPU的编程模型（如CUDA）允许高效地利用其多核并行架构，通过将矩阵乘法任务分解到线程块和网格中进行并行计算。此外，GPU中的共享内存优化进一步提高了计算效率。
+循环神经网络层和注意力机制层也以矩阵乘法为核心计算。`GPU`通过大规模并行的计算能力，非常适合处理这些深度学习任务。`GPU`的编程模型（如`CUDA`）允许高效地利用其多核并行架构，通过将矩阵乘法任务分解到线程块和网格中进行并行计算。此外，`GPU`中的共享内存优化进一步提高了计算效率。
 
-CPU体系结构的优化主要在缓存利用和向量化指令上，而GPU则通过块划分、共享内存利用等方法优化矩阵运算性能。总体而言，深度学习中矩阵运算的优化反映了软硬件协同演进的趋势。
+`CPU`体系结构的优化主要在缓存利用和向量化指令上，而`GPU`则通过块划分、共享内存利用等方法优化矩阵运算性能。总体而言，深度学习中矩阵运算的优化反映了软硬件协同演进的趋势。
 
 ![](img/61197657fe0b575d85d6caa71e1fbfca.png)
 
 # 招聘公告
 
----
-
 ![](img/771976e9ffc845c940416cf7045d88b7.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建`GenAI`时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+### 行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
-##### 行研-GenAI研究岗位-前沿学术探索
+### 行研-GenAI研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+### 行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/d9752d9fe690bd2ead17b86551df5e31.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
-
----
+> 期待在奇绩创坛遇见更好的你
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+`ChatGPT`；`Angela`；`Zijia Liu`；`Alex`；`Zeqi Tan`；`Tiezhen`（`HuggingFace`）；`Naixu`；`Lizhi`；`Peter`；`Suoman`；`Jack`
 
 封面生成——右脑科技
 
@@ -472,14 +471,14 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
 
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
-> 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
+> 如果大家有任何的建议或者吐槽,欢迎随时找我聊天
 
 ![](img/8925660e1eebe6511b7f365f92c1ee1e.png)

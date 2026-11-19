@@ -1,18 +1,19 @@
+
 # 2023-04-04【InsCode】 CSDN展示你的编程实力
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/CMLrdJse4olpnXxIe3WcPdXDnOb](https://xuqiwei1986.feishu.cn/docx/CMLrdJse4olpnXxIe3WcPdXDnOb)
 
-# 官网
+## 官网
 
-https://inscode.csdn.net/
+`https://inscode.csdn.net/`
 
 ![](img/463c1b748d56ddac0a35b5d029060ba2.png)
 
-# inscode
+## inscode
 
 ![](img/6a8a71378d1e93d5eeeafbb91d933c31.png)
 
-# 部署模型
+## 部署模型
 
 ![](img/144d849e2e3239cd38fcd499ca72b9c5.png)
 
@@ -22,17 +23,17 @@ https://inscode.csdn.net/
 
 ![](img/c5b844a50d6cbb200e207bec9bfbcf1f.png)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/li8UGTPhj49ysCZvyUnoLw)q.com/s/li8UGTPh...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/li8UGTPhj49ysCZvyUnoLw)q.com/s/li8UGTPh...
 
 > 原创 小雨同学ver30 小雨青年 2023-04-04 12:30 发表于 北京
 
 收录于合集
 
-#工具集 4 个
+### 工具集 4 个
 
-#CSDN 4 个
+### CSDN 4 个
 
-## **一、缘起**
+## 一、缘起
 
 最近，我在线下参与了 CSDN 主办的 AIGC 与 大模型技术应用峰会，并参与了 ChatGPT 创新营活动。
 
@@ -40,13 +41,13 @@ https://inscode.csdn.net/
 
 在这个活动上，我们在两个小时内快速实现了自己创意产品的MVP，并运行在线上平台 InsCode 上。
 
-这次，我们来聊一聊这个可以在线跑项目代码的平台 https://InsCode.csdn.net/ 。
+这次，我们来聊一聊这个可以在线跑项目代码的平台 `https://InsCode.csdn.net/` 。
 
 ![](img/de9f24e78c98456d09a0706191677ec7.png)
 
-## **二、详解**
+## 二、详解
 
-### **1. 导入项目**
+### 1. 导入项目
 
 InsCode 导入项目的方式有两种，一种是从平台提供的模板导入，另一种是导入Github 的项目。
 
@@ -56,15 +57,13 @@ InsCode 导入项目的方式有两种，一种是从平台提供的模板导入
 
 比如这个测试环境的dart项目，在我创建之后，就会在对应的 gitcode 中创建一个对应的项目，而这之后的操作都是基于这个项目的。
 
-### **2. 在线演示、在线修改**
+### 2. 在线演示、在线修改
 
 让我们把注意力回到 InsCode 上，这个项目目前有三个文件：
 
-+   . inscode ；
-
-+   inscode . nix ；
-
-+   main . dart 。
++   `.inscode`；
++   `inscode.nix`；
++   `main.dart`。
 
 前两个文件是 InsCode 的项目配置文件，记录对应的入口文件等信息。
 
@@ -76,7 +75,7 @@ InsCode 导入项目的方式有两种，一种是从平台提供的模板导入
 
 ![](img/0f72da5239051e0d5857b987d72f25b3.png)
 
-### **3. 发布作品**
+### 3. 发布作品
 
 如果你对自己的 Code 比较满意，还可以通过发布操作在社区中展示，这样在平台上别人就能看到你的 Code ，你也可以通过 Show 出你的 Code 结交更多同好。
 
@@ -84,21 +83,21 @@ InsCode 导入项目的方式有两种，一种是从平台提供的模板导入
 
 当然示例的代码太简单，提交到社区不太好，我在这里稍微提交了一些内容，临时做了一个可以查询天气的小工具。
 
-在社区页面，你可以看到社区精选的项目，可以直接在项目上运行，也可以 Fork 下来学习。
+在社区页面，你可以看到社区精选的项目，可以直接在项目上运行，也可以 `Fork` 下来学习。
 
 ![](img/16f3002d87c464ae4f8d67a5c9ea1411.png)
 
-## **三、如何用好 InsCode**
+## 三、如何用好 InsCode
 
 基于以上 InsCode 平台的快速执行代码、所见即所得的特点，我建议你这样用：
 
-1.  写博客的时候，将需要展示的代码片段放到 InsCode 中，做成可执行的demo，让你的代码增加信服力
+1. 写博客的时候，将需要展示的代码片段放到 InsCode 中，做成可执行的demo，让你的代码增加信服力
 
-1.  在 InsCode 平台的社区发布一些优质项目，在平台初期不卷的情况下增加个人的影响力
+2. 在 InsCode 平台的社区发布一些优质项目，在平台初期不卷的情况下增加个人的影响力
 
-1.  需要项目演示的时候，临时上传为私有项目，可以不纠结环境搭建，直接演示项目
+3. 需要项目演示的时候，临时上传为私有项目，可以不纠结环境搭建，直接演示项目
 
-## **四、总结**
+## 四、总结
 
 Linus Torvalds 曾经说过 “Talk is cheap. Show me the code .”。
 

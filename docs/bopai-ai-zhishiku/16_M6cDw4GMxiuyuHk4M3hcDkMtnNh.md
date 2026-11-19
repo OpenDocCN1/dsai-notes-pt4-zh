@@ -1,8 +1,9 @@
+
 # 【研报】知名机构分析精选
 
 > 来源：[https://docs.feishu.cn/docx/G0XWd7LCvoecJExjotQcGqjCnBA](https://docs.feishu.cn/docx/G0XWd7LCvoecJExjotQcGqjCnBA)
 
-# **优质行研**
+# 优质行研
 
 ![](img/6d707ab3ea066af160ed1a3b1e8404cc.png)
 
@@ -24,16 +25,13 @@
 
 [王慧文清华产品课Allen修订版.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TTgfbwW3hoKdA6xwD8rcyRKDnLd)
 
-
 [商业变现, 掌握AI场景的投资密码（2023中国AI商业落地投资价值研究 ）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MhvZbi66XoeHToxdxLhc7shKnfb)
-
 
 [腾讯：数字人产业发展趋势报告（2023）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uy13bsQRkouG8FxCqp0cLLE1nKe)
 
 ![](img/2df600b45c5aa4fc3f4894c5352b1a53.png)
 
 [AIGC发展研究报告1.0-2023-清华大学-202305.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VZUJbCM8Vo6ctCxNlq7cw8C0nHf)
-
 
 [AI大模型评测报告-新华社研究院中国企业发展研究中心.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GVTrb0PeHo5uXRxYfhTcVARDnSd)
 
@@ -43,34 +41,33 @@
 
 # 观点洞察-2023年
 
-1.  AI 大模型不是造富神话，但会让每个岗位都变化（上）
+1. AI 大模型不是造富神话，但会让每个岗位都变化（上）
 
-1.  [【曲凯，42章经创始人】生成式Al的商](https://www.bilibili.com/video/BV1Qh411T76W/?spm_id_from=333.337.search-card.all.click&vd_source=4589929f9555bc6b013f36123e816fbe)业化落地思考_哔哩哔哩_bilibili
+1. [【曲凯，42章经创始人】生成式Al的商](https://www.bilibili.com/video/BV1Qh411T76W/?spm_id_from=333.337.search-card.all.click&vd_source=4589929f9555bc6b013f36123e816fbe)业化落地思考_哔哩哔哩_bilibili
 
-1.  [AI应用路线：可控性是唯一目标](https://mp.weixin.qq.com/s/gsJjuNEHC3RA_XvJjHK2cw)
+1. [AI应用路线：可控性是唯一目标](https://mp.weixin.qq.com/s/gsJjuNEHC3RA_XvJjHK2cw)
 
-1.  远望资本程浩：AI大模型创业的生死5问
+1. 远望资本程浩：AI大模型创业的生死5问
 
-1.  别尬吹AI降本增效了，游戏不好玩都白搭
+1. 别尬吹AI降本增效了，游戏不好玩都白搭
 
-1.  [嘲笑朱啸虎，其实也挺无知者无畏](https://mp.weixin.qq.com/s?__biz=Mzg5NDY3NjM0NQ==&mid=2247484471&idx=1&sn=03ac7c0154f17861a4e63c74d149c736&chksm=c01ab821f76d3137fc2f4026b8e4f1522ce49b2196ba47775f1f1ced9220de1cc43fba06c7c8&mpshare=1&scene=1&srcid=0627Lq5HZxfTSDsZEcdVQvek&sharer_sharetime=1688477686044&sharer_shareid=858414a005b867f3c68621ae8c2782ef&exportkey=n_ChQIAhIQ%2B2lt%2F8e8JYsmCNT2Q5qPsxL1AQIE97dBBAEAAAAAALMtGBn9NC0AAAAOpnltbLcz9gKNyK89dVj0qL38a0aTjqH7plfE9EeoIJB3yEHLd%2BFTzFZMJ%2BCmjErrxeD3ljgnj6UKRspqiIynp0V2vgFc649gDHH1QUR6ZjKqqvJES0Lgc8A0JKXbI%2FQieRTwfen2BTiNskcLZ23LfAJBpF38Mdm9%2FAEc62zATVPvERnC2rw%2FnbrSnf8Jtqo%2BIFusGyeoa8MSZrXi2%2BwAFO09ORvFsdHJN9XoxegW887pINkKmfXIu7LOncz9xFan%2FJ0Eor5th9sPqpvirjwrM1mJG5J6FUcvhYvNbsXG&acctmode=0&pass_ticket=Roa6B0iRHKymoA02fPJqVomFkVTXS5hx0NeM8VDbePgzM7FYh1e3HVoawoZrR3Md&wx_header=0#rd)
+1. [嘲笑朱啸虎，其实也挺无知者无畏](https://mp.weixin.qq.com/s?__biz=Mzg5NDY3NjM0NQ==&mid=2247484471&idx=1&sn=03ac7c0154f17861a4e63c74d149c736&chksm=c01ab821f76d3137fc2f4026b8e4f1522ce49b2196ba47775f1f1ced9220de1cc43fba06c7c8&mpshare=1&scene=1&srcid=0627Lq5HZxfTSDsZEcdVQvek&sharer_sharetime=1688477686044&sharer_shareid=858414a005b867f3c68621ae8c2782ef&exportkey=n_ChQIAhIQ%2B2lt%2F8e8JYsmCNT2Q5qPsxL1AQIE97dBBAEAAAAAALMtGBn9NC0AAAAOpnltbLcz9gKNyK89dVj0qL38a0aTjqH7plfE9EeoIJB3yEHLd%2BFTzFZMJ%2BCmjErrxeD3ljgnj6UKRspqiIynp0V2vgFc649gDHH1QUR6ZjKqqvJES0Lgc8A0JKXbI%2FQieRTwfen2BTiNskcLZ23LfAJBpF38Mdm9%2FAEc62zATVPvERnC2rw%2FnbrSnf8Jtqo%2BIFusGyeoa8MSZrXi2%2BwAFO09ORvFsdHJN9XoxegW887pINkKmfXIu7LOncz9xFan%2FJ0Eor5th9sPqpvirjwrM1mJG5J6FUcvhYvNbsXG&acctmode=0&pass_ticket=Roa6B0iRHKymoA02fPJqVomFkVTXS5hx0NeM8VDbePgzM7FYh1e3HVoawoZrR3Md&wx_header=0#rd)
 
-1.  [朱啸虎和傅盛，都没有错](https://mp.weixin.qq.com/s/phk1GluNz1rxU5jIz8LwDw)
+1. [朱啸虎和傅盛，都没有错](https://mp.weixin.qq.com/s/phk1GluNz1rxU5jIz8LwDw)
 
-1.  [忘掉融资创业，好好做个生意吧](https://mp.weixin.qq.com/s/OKwg-GjrQfRTWVK4Rwpe6A)
+1. [忘掉融资创业，好好做个生意吧](https://mp.weixin.qq.com/s/OKwg-GjrQfRTWVK4Rwpe6A)
 
-1.  中[国大模](https://36kr.com/user/1712254050)型现状：一面狂热，一面冷峻 张小珺·
+1. 中[国大模](https://36kr.com/user/1712254050)型现状：一面狂热，一面冷峻 张小珺·
 
-1.  Moka李国兴谈SaaS+大模型：越垂直，越具象，越能挖掘出AI的价值
+1. Moka李国兴谈SaaS+大模型：越垂直，越具象，越能挖掘出AI的价值
 
 # 论文（入门经典）
 
-1.  入门经典
-
+1. 入门经典
 
 [Attention is all you need.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QEkOb4Mk8owYVlxpfnycb68pnsc)
 
-1.  斯坦福关于AI-Agent的研究
+1. 斯坦福关于AI-Agent的研究
 
 ![](img/24bf18d5e2c41e7b57b1b57094c1d82e.png)
 

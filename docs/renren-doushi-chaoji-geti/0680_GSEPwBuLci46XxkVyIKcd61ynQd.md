@@ -1,12 +1,11 @@
+
 # 2025-02-11----1分钟生成98%原创爆文！Coze×DeepSeek写作智能
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/XN9ldHBToolI51x9yHrcFqwxn0b](https://xuqiwei1986.feishu.cn/docx/XN9ldHBToolI51x9yHrcFqwxn0b)
 
->
-
 各位赚钱圈友，大家好，我是码农飞哥，专注于DeepSeek+RPA赛道的大龄程序员。今天分享下我基于DeepSeek x Coze 开发的👸号写作智能体。
 
-**只需要一个提示词就可以生成一篇原创度高达98%的👸号**文章，并且会自动将文章同步到飞书文档上。
+只需要一个提示词就可以生成一篇原创度高达98%的👸号文章，并且会自动将文章同步到飞书文档上。
 
 ![](img/3141cc934ef390b4021250a1c4b446fb.png)
 
@@ -16,7 +15,7 @@
 
 ## 一、怎么使用
 
-[获取智能体之后，打开智能体链接 https://www.coze.cn/store/agen](https://www.coze.cn/store/agent/7469690291126157348?from=bots%5C_card%5C&bid=6falf5svs300f)t/7469690291126157348?from=bots\_card\&bid=6falf5svs300f
+[获取智能体之后，打开智能体链接](https://www.coze.cn/store/agent/7469690291126157348?from=bots_card&bid=6falf5svs300f)
 
 ### 一）设置提示词和飞书文件夹的token
 
@@ -28,7 +27,7 @@
 
 ![](img/da6a48a6df8fd6044ef937d94c4849a9.png)
 
-**然**后在浏览器地址栏复制 XYbLfwIS3lIIGodl6b5cy4VvnWd 即可，这就是飞书文件夹的token。
+然后在浏览器地址栏复制 `XYbLfwIS3lIIGodl6b5cy4VvnWd` 即可，这就是飞书文件夹的token。
 
 ![](img/6a03fbc616722935abda56cc92cd791a.png)
 
@@ -52,9 +51,9 @@
 
 ## 二、怎么实现的呢？
 
-### **一）怎么创建工作流**
+### 一）怎么创建工作流
 
-在网页端输入： https://www.coze.cn/ 打开 Coze 平台。在主页最醒目的位置Coze平台就说了已经支持了DeepSeek-R1模型。
+在网页端输入：https://www.coze.cn/ 打开 Coze 平台。在主页最醒目的位置Coze平台就说了已经支持了DeepSeek-R1模型。
 
 ![](img/c5fc40b8ecf7d4dd17c6f5c6d391ae3b.png)
 
@@ -74,21 +73,21 @@
 
 开始节点是默认就会有的，这里我设置了三个参数
 
-org_url 是我们期望仿写的👸号原文链接，这字段可以不用传，如果传的话则需要传入类似 https://mp.weixin.qq.com/s/ xxxxx 这样的地址。
+`org_url` 是我们期望仿写的👸号原文链接，这字段可以不用传，如果传的话则需要传入类似 https://mp.weixin.qq.com/s/ xxxxx 这样的地址。
 
-Prompt 是我们这边写的提示词，只需要传入很简单的提示词，比如：请用大白话生成一篇DeepSeek的科普文。
+`Prompt` 是我们这边写的提示词，只需要传入很简单的提示词，比如：请用大白话生成一篇DeepSeek的科普文。
 
-feifshu_folder_token 是飞书文档的token
+`feifshu_folder_token` 是飞书文档的token
 
 #### 2. 选择器节点
 
-选中器节点主要是为了判断 org_url 字段是否传入，如果传入的话则走仿写分支，如果没有传入的话则走创作分支。
+选中器节点主要是为了判断 `org_url` 字段是否传入，如果传入的话则走仿写分支，如果没有传入的话则走创作分支。
 
 点击底部的添加节点===》选择器 即可添加选择器。
 
 ![](img/924b41d70771f95d20eaf3172728b7ef.png)
 
-这里选择器的判断也很简单，主要就是判断 org_url 是否为空以及是否是个合法的👸号文章链接。
+这里选择器的判断也很简单，主要就是判断 `org_url` 是否为空以及是否是个合法的👸号文章链接。
 
 ![](img/8375b0a8a8219fafb8203ff2083b2d50.png)
 
@@ -102,7 +101,7 @@ feifshu_folder_token 是飞书文档的token
 
 ![](img/93d5a0df773d75315bb5144ba6067771.png)
 
-这里只需要引用开始节点的org_url参数即可，这里我将节点重命名为 解析👸号链接内容。
+这里只需要引用开始节点的`org_url`参数即可，这里我将节点重命名为 解析👸号链接内容。
 
 ![](img/ad65306c3292c3822cebcd6a110ba0cc.png)
 
@@ -132,13 +131,11 @@ feifshu_folder_token 是飞书文档的token
 
 ![](img/6cf873c0edff590b0e753cfe36eedcb8.png)
 
-####
-
 #### 7. 创建飞书文档插件
 
 选择创建飞书文档插件，用于创建飞书文档并且文档中写入内容。添加方式同第3步。在此就不在赘述了。
 
-在插件里搜索 飞书文档，选择 飞书云文档==> create_document ==>添加。
+在插件里搜索 飞书文档，选择 飞书云文档==> `create_document` ==>添加。
 
 ![](img/d499f4be3765c736c77d8c95d9ef13ef.png)
 
@@ -178,7 +175,7 @@ feifshu_folder_token 是飞书文档的token
 
 办法当然是有的，创建一个智能体呗，这点事还能难道码农飞哥不成。
 
-### **二）创建智能体**
+### 二）创建智能体
 
 #### 9. 创建智能体
 

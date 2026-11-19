@@ -1,14 +1,15 @@
+
 # 游记｜云南中秋行 Day 7
 
 > 来源：[https://leonzhang.feishu.cn/docx/LF3kdfRklocZDAxVMjrc3GEfnTd](https://leonzhang.feishu.cn/docx/LF3kdfRklocZDAxVMjrc3GEfnTd)
 
 > 丽江 - 丽江古城 - 西安 - 回民街烤肉
 
-### 前言
+## 前言
 
 今天是安排在丽江古城的最后一天，办理退房后，寄存好行李，便还是打算在古城转一下。一来是民宿就在古城内，出门便是，二来是马上要回去上班了，能放松的时间不多了，抓紧时间好好享受还在古城的时光。
 
-### 丽江古城 - 早
+## 丽江古城 - 早
 
 早上走了下古城的小巷子，是自己没有见过的几个门牌坊。
 
@@ -17,8 +18,11 @@
 牦牛奶很鲜，虽然不知道是不是真的牦牛奶，但感觉和一鸣鲜牛奶家的鲜牛奶（7 天保质期）口感差不多。当然，也可能是量少，再者也缺少对比，像我这种很难感受出来。
 
 | ![](img/bc53a071c6a40591a58fe64c3c20c598.png) | ![](img/257e630bf10f8bebbe3e82efa42953ae.png) | ![](img/7afd9650423787ede3d22d938b1b74f3.png) |
+
 | --- | --- | --- |
+
 | ![](img/b92dcaa54edba6f3cd54c78c1281bceb.png) | ![](img/e0bfb1dc4e6105cf05581663e92d4dcc.png) | ![](img/e67979c322073e04391b952930f58a80.png) |
+
 | ![](img/1cd83a687e5098aaf019eee762c848af.png) | ![](img/cf615590853accb4346c47a941ecf83f.png) | ![](img/8c327685abaa0eb9245af8ef54e76417.png) |
 
 古城这个地方真的很不错，单是四方街，我就坐了好几个小时，就只是静静的坐着，看着来往的路人、看着天空的云不停的变化、听着远处歌手的声音、听着近处的鸟叫声，我当时觉得，如果带着自己的电脑就好了，在这个地方歇着得多美呀！
@@ -26,10 +30,12 @@
 后来一个老哥带着自己的宝贝（他女儿）也过来歇着，他不停的哄着、抱着自己的女儿，完美体现老话说的，“捧在手心怕摔了，含在嘴里怕化了”，典型的“女儿奴”无疑了，哈哈。
 
 | ![](img/813ff3a09979adafd6a95c6854f2fe1b.png) | ![](img/3a65a51efb2299ee36820cbcf3860d85.png) | ![](img/d4aebb8a050d81366d5b629f6d66edef.png) |
+
 | --- | --- | --- |
+
 | ![](img/49455293449c22fa0b535fcf85248c1b.png) | ![](img/38145d1fbc9de0f5457d61d459138218.png) | ![](img/8996ccd774ff62bcd6758d9b812ef68a.png) |
 
-### 告别丽江
+## 告别丽江
 
 告别丽江前，去民宿处拿行李，然后和民宿老哥攀谈了许久，得知老哥为啥一个人守着这个小院，以及一些近况。我和老哥算是半个老乡，同是河北人，同时他也在杭州工作过一段时间，房子也买在了拱墅，老哥媳妇是名急诊科医生，工作压力大，所以时不时也会凑假期过来呆上个十天半个月。
 
@@ -40,9 +46,10 @@
 然后我们便顺着古城北门去了机场，路上又看到了玉龙雪山。另外，机场对面的山，看着也很大的样子，再配上当天的阳光，也很绝。
 
 | ![](img/89d5c9a9150a027a2eea5937137072eb.png) | ![](img/ab00e1f4bb121c6429988dd5c90d93fb.png) | ![](img/7f30348645459eb49f1e11737ba079c0.png) |
+
 | --- | --- | --- |
 
-### 西安
+## 西安
 
 落地西安后，在前往市区的大巴上，我就开始看 up 君在西安的视频[7]，找晚上吃烧烤的地方。没错，之前就是看君在西安的视频，被西安的物价（一块钱一串）惊呆了，当时给好友分享过，他告诉我几乎都是在回民街上的几家。
 
@@ -51,11 +58,14 @@
 回头一定和好友约下，正好他是西安人，必须一起约一下！！
 
 | ![](img/8087fb43d68fd6544c9385cbabadd119.png) | ![](img/6417f4ebe9b9ac94e8dc383df0dffe34.png) | ![](img/3a2cca0be2ce4fdc5be30e1a24e80c4f.png) |
+
 | --- | --- | --- |
+
 | ![](img/00730a352e668bd5dca7ecb8bd5a4728.png) | ![](img/3a8486bce667f76a93eec1a59ecada43.png) | ![](img/300396e3b198b1bde37be85eddaae8c6.png) |
+
 | ![](img/94d4c75c67c02f2b15cc2475280be35b.png) | ![](img/5f837324b5b9c63958627ba77e1a866d.png) | ![](img/abb54dc9a86aed01fac1727bd5d8bea1.png) |
 
-### 最后
+## 最后
 
 刚出来，就接到酒店的电话，问是否还入住，入住时间大概是什么时候。想着这个时间点了，不然就回去休息吧，随口说半小时后。
 
@@ -73,18 +83,18 @@
 
 最后的最后，到酒店后，酒店的前台小姐姐帮我们又升了房间，嗯，对西安人民的好感又增加了一分，哈哈。
 
-### 相关阅读
+## 相关阅读
 
-1.  [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg)
+1. [游记｜云南中秋行 Day 1](https://leonzhang.feishu.cn/wiki/TcBAwYIHMiADkSkPoswcLcJNnjg)
 
-1.  [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
+1. [游记｜云南中秋行 Day 2](https://leonzhang.feishu.cn/wiki/SbpKwj4UOioAxlkP4oQcN5qKn4b)
 
-1.  [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
+1. [游记｜云南中秋行 Day 3](https://leonzhang.feishu.cn/wiki/SiB1wrabQitotvk4ofaczi5snQc)
 
-1.  [游记｜云南中秋行 Day 4](https://leonzhang.feishu.cn/wiki/U398wxQmNiH5j8k0uYvcorxxn5e)
+1. [游记｜云南中秋行 Day 4](https://leonzhang.feishu.cn/wiki/U398wxQmNiH5j8k0uYvcorxxn5e)
 
-1.  [游记｜云南中秋行 Day 5](https://leonzhang.feishu.cn/wiki/GGorwqNerizlM9k8ZohciDlrnZb)
+1. [游记｜云南中秋行 Day 5](https://leonzhang.feishu.cn/wiki/GGorwqNerizlM9k8ZohciDlrnZb)
 
-1.  [游记｜云南中秋行 Day 6](https://leonzhang.feishu.cn/wiki/HPeHwUYySilSwUkC8r1c88j1nQc)
+1. [游记｜云南中秋行 Day 6](https://leonzhang.feishu.cn/wiki/HPeHwUYySilSwUkC8r1c88j1nQc)
 
-1.  【在西安一到夏天晚上就想吃烤肉，1 元一串多放孜然辣子烤得滋滋冒油，特别解馋就是长肉比较猛】 https://www.bilibili.com/video/BV1t4421S7aP/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b
+1. 【在西安一到夏天晚上就想吃烤肉，1 元一串多放孜然辣子烤得滋滋冒油，特别解馋就是长肉比较猛】 https://www.bilibili.com/video/BV1t4421S7aP/?share_source=copy_web&vd_source=672ec070780ce29c890256a5fabe799b

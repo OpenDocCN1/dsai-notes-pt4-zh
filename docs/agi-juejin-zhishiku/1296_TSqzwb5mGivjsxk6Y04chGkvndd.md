@@ -1,6 +1,7 @@
+
 # 工程视角：对标Trickle的Prompt组合解决方案了解一下吗？Trickle-On-WeChat！
 
-> 来源：[https://agijuejin.feishu.cn/docx/NVrzdPbl9ocOVvxpOXacHY97npc](https://agijuejin.feishu.cn/docx/NVrzdPbl9ocOVvxpOXacHY97npc)
+> 来源：`https://agijuejin.feishu.cn/docx/NVrzdPbl9ocOVvxpOXacHY97npc`
 
 ## 导读
 
@@ -32,7 +33,7 @@ Trickle是由 GPT 4 驱动的截图管理工具，可以将你的截图转化为
 
 ## 功能说明
 
-看完视频后，感觉这款产品特别有意思。当即便到官网（https://www.trickle.so/）去看具体的介绍和相关参数信息，在主页中我也找到了这个产品的价值说明：
+看完视频后，感觉这款产品特别有意思。当即便到官网（`https://www.trickle.so/`）去看具体的介绍和相关参数信息，在主页中我也找到了这个产品的价值说明：
 
 ![](img/9ded9cb112e2a187d07fdb16b98d4e3f.png)
 
@@ -164,7 +165,7 @@ Trickle是由 GPT 4 驱动的截图管理工具，可以将你的截图转化为
 
 > 我已经将该项目的Lite版本放在Github上面，鲁棒性上有待提高😅，也欢迎大家Star ⭐️～
 
-> Github地址：https://github.com/PromptExpert/Trickle-On-WeChat/
+> Github地址：`https://github.com/PromptExpert/Trickle-On-WeChat/`
 
 ## 写在最后
 

@@ -1,65 +1,63 @@
+
 # 直接复制MCP
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/XfYfdRvLaoE0MBxuFJlcT4s4nef](https://xatc0v8uz5m.feishu.cn/docx/XfYfdRvLaoE0MBxuFJlcT4s4nef)
 
-SequentialThinking:引导模型通过分步骤、有逻辑地逐步推理来解决复杂问题的方法,旨在提升思考的条理性
-
-准确性和可解释性。
+`SequentialThinking`引导模型通过分步骤、有逻辑地逐步推理来解决复杂问题的方法，旨在提升思考的条理性、准确性和可解释性。
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;sequential-thinking&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;-y&quot;,
-        &quot;@modelcontextprotocol/server-sequential-thinking&quot;
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
       ]
     }
   }
 }
 
 {
-  &quot;mcpServers&quot;: {
-    &quot;sequential-thinking&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;-y&quot;,
-        &quot;@modelcontextprotocol/server-sequential-thinking&quot;
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
       ],
-      &quot;env&quot;: {}
+      "env": {}
     },
-    &quot;firebase-mcp-server&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;-y&quot;,
-        &quot;firebase-tools@latest&quot;,
-        &quot;mcp&quot;
+    "firebase-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "mcp"
       ],
-      &quot;env&quot;: {}
+      "env": {}
     },
-    &quot;context7&quot;: {
-      &quot;serverUrl&quot;: &quot;https://mcp.context7.com/mcp&quot;,
-      &quot;headers&quot;: {
-        &quot;CONTEXT7_API_KEY&quot;: &quot;ctx7sk-418b1f7b-042a-4da2-b4c1-ac4cd4816b47&quot;
+    "context7": {
+      "serverUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "ctx7sk-418b1f7b-042a-4da2-b4c1-ac4cd4816b47"
       }
     },
-    &quot;chrome-devtools&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;-y&quot;,
-        &quot;chrome-devtools-mcp@latest&quot;
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
       ]
     }
   }
 }
 
-    &quot;mcp-server-firecrawl&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;firecrawl-mcp&quot;],
-      &quot;env&quot;: {
-        &quot;FIRECRAWL_API_KEY&quot;: &quot;fc-36a7607d77234e3a977b010ed51c0f96&quot;
-      }
-    }
-
+"mcp-server-firecrawl": {
+  "command": "npx",
+  "args": ["-y", "firecrawl-mcp"],
+  "env": {
+    "FIRECRAWL_API_KEY": "fc-36a7607d77234e3a977b010ed51c0f96"
+  }
+}
 ```

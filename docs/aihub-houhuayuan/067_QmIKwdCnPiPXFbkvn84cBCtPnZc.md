@@ -1,3 +1,4 @@
+
 # 第三天：LLM和多模态模型高效推理实践
 
 > 来源：[https://seigy6zzam.feishu.cn/docx/DyFFdna0PoIcaWxNZHCc4CPknx4](https://seigy6zzam.feishu.cn/docx/DyFFdna0PoIcaWxNZHCc4CPknx4)
@@ -12,57 +13,49 @@
 
 ![](img/20b3704219ed9022267bfdb52be57a5b.png)
 
-# **内容摘要**
+## 内容摘要
 
 本课程以Qwen系列模型为例，主要介绍在魔搭社区如何高效推理LLM和多模态模型，主要包括如下内容：
 
-+   **LLM和多模态大模型的推理**
++ LLM和多模态大模型的推理
++ 使用ModelScope NoteBook免费GPU推理Qwen-1.8B-Chat-int4
++ 使用ModelScope NoteBook免费GPU推理Qwen-VL-Chat-int4
++ 使用ModelScope NoteBook免费GPU推理Qwen-audio-Chat
++ 推理加速和多端推理
++ 推理加速：`vLLM`+`fastchat`加速推理
++ 多端推理适配-`Qwen.cpp`和`LLaMa.cpp`转化模型为`gguf`或者`ggml`，并结合`Xinference`在本地笔记本部署。
++ LLM的应用场景，RAG&Agent
++ 使用`llama index`和`langchain`打造基于本地知识库的ChatBot
 
-+   使用ModelScope NoteBook免费GPU推理Qwen-1.8B-Chat-int4
+## 多模态大模型推理
 
-+   使用ModelScope NoteBook免费GPU推理Qwen-VL-Chat-int4
-
-+   使用ModelScope NoteBook免费GPU推理Qwen-audio-Chat
-
-+   **推理加速和多端推理**
-
-+   推理加速：vLLM+fastchat加速推理
-
-+   多端推理适配-Qwen.cpp和LLaMa.cpp转化模型为gguf或者ggml，并结合Xinference在本地笔记本部署。
-
-+   LLM的应用场景，RAG&Agent
-
-+   使用llama index和langchain打造基于本地知识库的ChatBot
-
-# **多模态大模型推理**
-
-**LLM的推理流程：**
+### LLM的推理流程：
 
 ![](img/45c64b9ab99d3f0fc4cb1c3a6b794b67.png)
 
-**多模态的LLM的原理：**
+### 多模态的LLM的原理：
 
 ![](img/b379dfb27c65eb9f84da6afc2de730f7.png)
 
-**代码演示：**
+### 代码演示：
 
 使用ModelScope NoteBook完成语言大模型，视觉大模型，音频大模型的推理
 
-## **环境配置与安装**
+### 环境配置与安装
 
-以下主要演示的模型推理代码可在魔搭社区免费实例PAI-DSW的配置下运行（显存24G） ：
+以下主要演示的模型推理代码可在魔搭社区免费实例PAI-DSW的配置下运行（显存24G）：
 
-1.  点击模型右侧Notebook快速开发按钮，选择GPU环境：
+1. 点击模型右侧Notebook快速开发按钮，选择GPU环境：
 
 ![](img/6e050a6de4f8ef53a8a94e27455a665c.png)
 
-1.  打开Python 3 (ipykernel)：
+2. 打开Python 3 (`ipykernel`)：
 
 ![](img/819e35625e32ad054eb06f46fe7297a1.png)
 
-## **示例代码 ** **  **
+### 示例代码
 
-### 语言大模型推理示例代码
+#### 语言大模型推理示例代码
 
 ```
 #通义千问1_8B LLM大模型的推理代码示例
@@ -70,27 +63,27 @@
 from modelscope import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 
 # Note: The default behavior now has injection attack prevention off.
-tokenizer = AutoTokenizer.from_pretrained(&quot;Qwen/Qwen-1_8B-Chat&quot;, revision=&#x27;master&#x27;, trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen-1_8B-Chat", revision='master', trust_remote_code=True)
 
 # use bf16
-# model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-1_8B-Chat&quot;, device_map=&quot;auto&quot;, trust_remote_code=True, bf16=True).eval()
+# model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-1_8B-Chat", device_map="auto", trust_remote_code=True, bf16=True).eval()
 # use fp16
-# model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-1_8B-Chat&quot;, device_map=&quot;auto&quot;, trust_remote_code=True, fp16=True).eval()
+# model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-1_8B-Chat", device_map="auto", trust_remote_code=True, fp16=True).eval()
 # use cpu only
-# model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-1_8B-Chat&quot;, device_map=&quot;cpu&quot;, trust_remote_code=True).eval()
+# model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-1_8B-Chat", device_map="cpu", trust_remote_code=True).eval()
 # use auto mode, automatically select precision based on the device.
-model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-1_8B-Chat&quot;, revision=&#x27;master&#x27;, device_map=&quot;auto&quot;, trust_remote_code=True).eval()
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-1_8B-Chat", revision='master', device_map="auto", trust_remote_code=True).eval()
 
-# Specify hyperparameters for generation. But if you use transformers&gt;=4.32.0, there is no need to do this.
-# model.generation_config = GenerationConfig.from_pretrained(&quot;Qwen/Qwen-1_8B-Chat&quot;, trust_remote_code=True) # 可指定不同的生成长度、top_p等相关超参
+# Specify hyperparameters for generation. But if you use transformers>=4.32.0, there is no need to do this.
+# model.generation_config = GenerationConfig.from_pretrained("Qwen/Qwen-1_8B-Chat", trust_remote_code=True) # 可指定不同的生成长度、top_p等相关超参
 
 # 第一轮对话 1st dialogue turn
-response, history = model.chat(tokenizer, &quot;你好&quot;, history=None)
+response, history = model.chat(tokenizer, "你好", history=None)
 print(response)
 # 你好！很高兴为你提供帮助。
 
 # 第二轮对话 2nd dialogue turn
-response, history = model.chat(tokenizer, &quot;给我讲一个年轻人奋斗创业最终取得成功的故事。&quot;, history=history)
+response, history = model.chat(tokenizer, "给我讲一个年轻人奋斗创业最终取得成功的故事。", history=history)
 print(response)
 # 这是一个关于一个年轻人奋斗创业最终取得成功的故事。
 # 故事的主人公叫李明，他来自一个普通的家庭，父母都是普通的工人。从小，李明就立下了一个目标：要成为一名成功的企业家。
@@ -100,17 +93,17 @@ print(response)
 # 李明的成功并不是偶然的。他勤奋、坚韧、勇于冒险，不断学习和改进自己。他的成功也证明了，只要努力奋斗，任何人都有可能取得成功。
 
 # 第三轮对话 3rd dialogue turn
-response, history = model.chat(tokenizer, &quot;给这个故事起一个标题&quot;, history=history)
+response, history = model.chat(tokenizer, "给这个故事起一个标题", history=history)
 print(response)
 # 《奋斗创业：一个年轻人的成功之路》
 
 # Qwen-1.8B-Chat现在可以通过调整系统指令（System Prompt），实现角色扮演，语言风格迁移，任务设定，行为设定等能力。
 # Qwen-1.8B-Chat can realize roly playing, language style transfer, task setting, and behavior setting by system prompt.
-response, _ = model.chat(tokenizer, &quot;你好呀&quot;, history=None, system=&quot;请用二次元可爱语气和我说话&quot;)
+response, _ = model.chat(tokenizer, "你好呀", history=None, system="请用二次元可爱语气和我说话")
 print(response)
 # 你好啊！我是一只可爱的二次元猫咪哦，不知道你有什么问题需要我帮忙解答吗？
 
-response, _ = model.chat(tokenizer, &quot;My colleague works diligently&quot;, history=None, system=&quot;You will write beautiful compliments according to needs&quot;)
+response, _ = model.chat(tokenizer, "My colleague works diligently", history=None, system="You will write beautiful compliments according to needs")
 print(response)
 # Your colleague is an outstanding worker! Their dedication and hard work are truly inspiring. They always go above and beyond to ensure that 
 # their tasks are completed on time and to the highest standard. I am lucky to have them as a colleague, and I know I can count on them to handle any challenge that comes their way.
@@ -120,11 +113,11 @@ print(response)
 
 ![](img/1abe23f5e58215e3860f8453ad5f5f27.png)
 
-### 视觉大模型推理示例代码
-
-    {&#x27;image&#x27;: &#x27;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&#x27;},
+#### 视觉大模型推理示例代码
 
 ```
+{&#x27;image&#x27;: &#x27;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&#x27;},
+
 #Qwen-VL 是阿里云研发的大规模视觉语言模型（Large Vision Language Model, LVLM）。Qwen-VL 可以以图像、文本、检测框作为输入，并以文本和检测框作为输出。Qwen-VL 系列模型性能强大，具备多语言对话、多图交错对话等能力，并支持中文开放域定位和细粒度图像识别与理解。
 from modelscope import (
     snapshot_download, AutoModelForCausalLM, AutoTokenizer, GenerationConfig
@@ -167,51 +160,51 @@ else:
 
 ![](img/6afb7d773b8a763699f157dbe33532b5.png)
 
-### 音频大模型推理示例代码
+#### 音频大模型推理示例代码
+
+
 
 ```
 from modelscope import (
     snapshot_download, AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 )
 import torch
-model_id = &#x27;qwen/Qwen-Audio-Chat&#x27;
-revision = &#x27;master&#x27;
+model_id = 'qwen/Qwen-Audio-Chat'
+revision = 'master'
 
 model_dir = snapshot_download(model_id, revision=revision)
 torch.manual_seed(1234)
 
 tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
-if not hasattr(tokenizer, &#x27;model_dir&#x27;):
+if not hasattr(tokenizer, 'model_dir'):
     tokenizer.model_dir = model_dir
 
 # Note: The default behavior now has injection attack prevention off.
 tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
 
 # use bf16
-# model = AutoModelForCausalLM.from_pretrained(model_dir, device_map=&quot;auto&quot;, trust_remote_code=True, bf16=True).eval()
+# model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, bf16=True).eval()
 # use fp16
-# model = AutoModelForCausalLM.from_pretrained(model_dir, device_map=&quot;auto&quot;, trust_remote_code=True, fp16=True).eval()
+# model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, fp16=True).eval()
 # use cpu only
-# model = AutoModelForCausalLM.from_pretrained(model_dir, device_map=&quot;cpu&quot;, trust_remote_code=True).eval()
+# model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="cpu", trust_remote_code=True).eval()
 # use cuda device
-model = AutoModelForCausalLM.from_pretrained(model_dir, device_map=&quot;cuda&quot;, trust_remote_code=True).eval()
+model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="cuda", trust_remote_code=True).eval()
 
 # 1st dialogue turn
 query = tokenizer.from_list_format([
-    {&#x27;audio&#x27;: &#x27;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Audio/1272-128104-0000.flac&#x27;}, # Either a local path or an url
-    {&#x27;text&#x27;: &#x27;what does the person say?&#x27;},
+    {'audio': 'https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Audio/1272-128104-0000.flac'}, # Either a local path or an url
+    {'text': 'what does the person say?'},
 ])
 response, history = model.chat(tokenizer, query=query, history=None)
 print(response)
-# The person says: &quot;mister quilter is the apostle of the middle classes and we are glad to welcome his gospel&quot;.
+# The person says: "mister quilter is the apostle of the middle classes and we are glad to welcome his gospel".
 
 # 2nd dialogue turn
-response, history = model.chat(tokenizer, &#x27;Find the start time and end time of the word &quot;middle classes&quot;&#x27;, history=history)
+response, history = model.chat(tokenizer, 'Find the start time and end time of the word "middle classes"', history=history)
 print(response)
-# The word &quot;middle classes&quot; starts at &lt;|2.33|&gt; seconds and ends at &lt;|3.26|&gt; seconds.
+# The word "middle classes" starts at <|2.33|> seconds and ends at <|3.26|> seconds.
 ```
-
-输出结果：
 
 ![](img/0f08fbcb7bcbc2084c970810b0316b5c.png)
 
@@ -221,17 +214,16 @@ FastChat是一个开放平台，用于训练、服务和评估基于LLM的ChatBo
 
 FastChat的核心功能包括：
 
-+   优秀的大语言模型训练和评估代码。
-
-+   具有Web UI和OpenAI兼容的RESTful API的分布式多模型服务系统。
++ 优秀的大语言模型训练和评估代码。
++ 具有Web UI和OpenAI兼容的RESTful API的分布式多模型服务系统。
 
 vLLM是一个由加州伯克利分校、斯坦福大学和加州大学圣迭戈分校的研究人员基于操作系统中经典的虚拟缓存和分页技术开发的LLM服务系统。他实现了几乎零浪费的KV缓存，并且可以在请求内部和请求之间灵活共享KV高速缓存，从而减少内存使用量。
 
-**FastChat开源链接：**https://github.com/lm-sys/FastChat
+FastChat开源链接：https://github.com/lm-sys/FastChat
 
-**vLLM开源链接：**https://github.com/vllm-project/vllm
+vLLM开源链接：https://github.com/vllm-project/vllm
 
-## **实战演示**
+## 实战演示
 
 安装FastChat最新包
 
@@ -241,7 +233,7 @@ cd FastChat
 pip install .
 ```
 
-## **环境变量设置**
+## 环境变量设置
 
 在vLLM和FastChat上使用魔搭的模型需要设置两个环境变量：
 
@@ -258,7 +250,7 @@ export FASTCHAT_USE_MODELSCOPE=True
 python -m fastchat.serve.controller
 ```
 
-然后启动vllm_worker发布模型。如下给出单卡推理的示例，运行如下命令：
+然后启动`vllm_worker`发布模型。如下给出单卡推理的示例，运行如下命令：
 
 千问模型示例：
 
@@ -272,33 +264,31 @@ python -m fastchat.serve.controller
 python -m fastchat.serve.gradio_web_server --host 0.0.0.0 --port 8000
 ```
 
-让我们体验极致推理优化的效果吧!
+让我们体验极致推理优化的效果吧！
 
-中文案例（千问1.8B） ** **
+中文案例（千问1.8B）
 
 TODO
 
-# **多端部署实战 **
+# 多端部署实战
 
-魔搭社区和Xinference合作，提供了模型 GGML的部署方式， 以qwen+个人Mac电脑为例 。
+魔搭社区和Xinference合作，提供了模型 GGML的部署方式，以qwen+个人Mac电脑为例。
 
 Xinference支持大语言模型，语音识别模型，多模态模型的部署，简化了部署流程，通过一行命令完成模型的部署工作。并支持众多前沿的大语言模型，结合GGML技术，支持多端部署。
 
 ![](img/7b25cc91b6e45ac31f46431a0c1ced13.png)
 
-使用Qwen.cpp实现通义千问的多端部署：
+使用`Qwen.cpp`实现通义千问的多端部署：
 
 多端部署以1.8B模型为例，
 
-第一步：使用qwen.cpp将pytorch格式的千问模型转为GGML格式。
-
-+
+第一步：使用`qwen.cpp`将pytorch格式的千问模型转为GGML格式。
 
 ```
 python3 qwen_cpp/convert.py -i qwen/Qwen-1_8-Chat -t q4_0 -o qwen-1_8b-ggml.bin
 ```
 
-第二步：在Xinference上launch模型，并部署到Mac笔记本实现推理。
+第二步：在Xinference上`launch`模型，并部署到Mac笔记本实现推理。
 
 关闭
 
@@ -316,30 +306,30 @@ python3 qwen_cpp/convert.py -i qwen/Qwen-1_8-Chat -t q4_0 -o qwen-1_8b-ggml.bin
 
 视频详情
 
-# **LLM的应用场景：RAG**
+# LLM的应用场景：RAG
 
-LLM会产生误导性的 “ **幻觉 **”，依赖的信息可能 **过时 **，处理特定知识时 **效率不高 **， **缺乏专业领域 **的深度洞察，同时在推理能力上也有所欠缺。
+LLM会产生误导性的“幻觉”，依赖的信息可能过时，处理特定知识时效率不高，缺乏专业领域的深度洞察，同时在推理能力上也有所欠缺。
 
 正是在这样的背景下，检索增强生成技术（Retrieval-Augmented Generation，RAG）应时而生，成为 AI 时代的一大趋势。
 
-RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中检索相关信息，然**后利用这些信息来**引导生成过**程，极大地提升了**内容的准确性和相关性。**RAG 有****效地 缓解了**幻觉问题 ，提高了 知识更新的速度 ，并增强了内容生成的 可追溯性 ，使得大型语言模型在实际应用中变得更加 实用和可信 。
+RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中检索相关信息，然后利用这些信息来引导生成过程，极大地提升了内容的准确性和相关性。RAG 有效地缓解了幻觉问题，提高了知识更新的速度，并增强了内容生成的可追溯性，使得大型语言模型在实际应用中变得更加实用和可信。
 
 一个典型的RAG的例子：
 
 ![](img/417fb798f9cf40f30d65db7fc5a6bdc8.png)
 
-这里面主要包括包括三个基本步骤：
+这里面主要包括三个基本步骤：
 
-1. 索引 — 将文档库分割 成较短的 Chunk，并通过编码器构建向量索引。
+1. 索引 — 将文档库分割成较短的`Chunk`，并通过编码器构建向量索引。
 
-2. 检索 — 根据问题和 chunks 的相似度检索相关文档片段。
+2. 检索 — 根据问题和`chunks`的相似度检索相关文档片段。
 
 3. 生成 — 以检索到的上下文为条件，生成问题的回答。
 
-RAG（开卷考试）VS. Finetune（专业课程学习）
+RAG（开卷考试）VS. `Finetune`（专业课程学习）
 
 ![](img/dd88e0b8892b51862cdefdd60492e679.png)
 
-**示例代码： ** https://github.com/modelscope/modelscope/blob/master/examples/pytorch/application/qwen_doc_search_QA_based_on_langchain_llamaindex.ipynb
+示例代码：https://github.com/modelscope/modelscope/blob/master/examples/pytorch/application/qwen_doc_search_QA_based_on_langchain_llamaindex.ipynb
 
-点击 [**阅读原文**](https://www.bilibili.com/video/BV1RQ4y1w7MQ/)** **，直达本期课程视频学习
+点击 [阅读原文](https://www.bilibili.com/video/BV1RQ4y1w7MQ/)，直达本期课程视频学习

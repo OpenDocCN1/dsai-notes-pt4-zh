@@ -1,10 +1,11 @@
+
 # AI绘画生成视频——Stable Diffusion插件Deforum动画大师教程
 
 > 来源：[https://agijuejin.feishu.cn/docx/LcbtdE6wsoYRvlxnaVwco5Bxn5e](https://agijuejin.feishu.cn/docx/LcbtdE6wsoYRvlxnaVwco5Bxn5e)
 
 > 作者：德里克文
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/685099575)hihu.com/p/685099...
+> 原文：[https://zhuanlan.zhihu.com/p/685099575](https://zhuanlan.zhihu.com/p/685099575)
 
 想知道如何采用AI绘画工具来制作下面这张变换场景的动画视频吗?
 
@@ -38,11 +39,11 @@ Stable Diffusion Web UI提供了易于使用的图形界面，可以帮助用户
 
 ## 二、实操教程
 
-### 1.操作界面
+### 1. 操作界面
 
 在进入操作界面后，我们选择插件栏的Deforum。
 
-然后进入界面进行设置，主要需要设置的就是采样器、采样迭代步数、宽度、高度以及输出目录（Batch name），其他保持默认就可以了。
+然后进入界面进行设置，主要需要设置的就是采样器、采样迭代步数、宽度、高度以及输出目录（`Batch name`），其他保持默认就可以了。
 
 ![](img/7dc049c3b49d3f853dd0acce6bec085a.png)
 
@@ -58,33 +59,29 @@ Euler(基础采样，适合范围广)、DDIM(加速采样，生成速度较快)�
 
 ![](img/12bbd2ea7f0f983bacdd2565f0f2ba81.png)
 
-输出目录（Batch name）建议保持默认，这样方便找，就是做出视频后存放的地方。
+输出目录（`Batch name`）建议保持默认，这样方便找，就是做出视频后存放的地方。
 
-接下来是关键帧（Keyframes）,我建议新手先从2D图像开始做起，保持默认就好，下面的坐标都是
+接下来是关键帧（`Keyframes`），我建议新手先从2D图像开始做起，保持默认就好，下面的坐标都是
 
-最大帧（Max frames）数量调整根据想要的时间调节，如果每秒20帧，8秒就是160帧。
+最大帧（`Max frames`）数量调整根据想要的时间调节，如果每秒20帧，8秒就是160帧。
 
-然后下面有一个画面强度表（Strength schedule），这个我在提示词准备再说，先保持默认。
+然后下面有一个画面强度表（`Strength schedule`），这个我在提示词准备再说，先保持默认。
 
 ![](img/b1afe401c1f3279f2fc4fab1388985c7.png)
 
-在输出这一栏FPS里面就是每秒的帧数了，通常我们设置15~45帧，帧数越多要渲染的图越多，花的时间越长，不过图片之间的链接也会更加丝滑。
+在输出这一栏`FPS`里面就是每秒的帧数了，通常我们设置15~45帧，帧数越多要渲染的图越多，花的时间越长，不过图片之间的链接也会更加丝滑。
 
-另外建议打开删除图片（Delete Imges）这样可以节约显存。
+另外建议打开删除图片（`Delete Imges`）这样可以节约显存。
 
 ![](img/96279482c6dd4724100123cff5a60023.png)
 
 图像放大可以根据自己需求，放大后会占用较大显存。
 
-### 2.提示词处理
+### 2. 提示词处理
 
 接下来我们来设置提示词，我建议可以采用Boogie进行辅助生成deforum参数，网址：
 
-[  ](https://link.zhihu.com/?target=https%3A//lewington-pitsos.github.io/tools/boogie.html)
-
 [Boogie](https://link.zhihu.com/?target=https%3A//lewington-pitsos.github.io/tools/boogie.html)
-
-[  ](https://link.zhihu.com/?target=https%3A//lewington-pitsos.github.io/tools/boogie.html)
 
 进入这个界面后，根据你实际的关键帧，设置同样的内容，然后放入你想要做的提示词
 
@@ -94,11 +91,11 @@ Euler(基础采样，适合范围广)、DDIM(加速采样，生成速度较快)�
 
 ![](img/ea7c24168a8eb6707253ee6149f7ff92.png)
 
-将Prompts拷贝回SD界面的提示词板块，整个替换。
+将`Prompts`拷贝回SD界面的提示词板块，整个替换。
 
 ![](img/8b982088b0c45ffc9bf946456ff0c55d.png)
 
-然后回到Boogie界面，将最后的Strengths内容拷贝。
+然后回到Boogie界面，将最后的`Strengths`内容拷贝。
 
 ![](img/3dc2bc6bed8f26edbeb934b1a50a8142.png)
 
@@ -106,13 +103,13 @@ Euler(基础采样，适合范围广)、DDIM(加速采样，生成速度较快)�
 
 ![](img/9e4fc3dce8fe7bf6468420936ecbee3d.png)
 
-准备好提示词后，复制到画面强度表（Strength schedule）。
+准备好提示词后，复制到画面强度表（`Strength schedule`）。
 
 这些工作准备完了后，你就可以直接开始渲染试试效果啦！
 
 ![](img/9e3fc7d4f6418e2aeed1aeea64d99233.png)
 
-三、云平台介绍
+## 三、云平台介绍
 
 说完了Deforum的操作，可以看到想要制作流畅画面效果好的视频，需要高清的图片分辨率和尽可能流畅的帧数，如果自己的电脑配置不够的话，是没办法做出好看的视频的。
 
@@ -124,7 +121,7 @@ Euler(基础采样，适合范围广)、DDIM(加速采样，生成速度较快)�
 
 之前我用的很多云平台，操作繁琐而且插件不全，如果要自己额外安装插件的话非常折腾。而揽睿星舟的镜向插件齐全，一键部署非常方便，还带白嫖的在线时长，可谓非常优秀，下面我就分享给大家这个好用的产品吧。
 
-[  ](https://link.zhihu.com/?target=https%3A//www.lanrui-ai.com/register%3Finvitation_code%3D9071)
+[揽睿星舟注册](https://link.zhihu.com/?target=https%3A//www.lanrui-ai.com/register%3Finvitation_code%3D9071)
 
 我对比了包括之前我使用的云平台，这个平台可谓是一个宝藏，推荐的理由主要有以下几点：
 
@@ -164,7 +161,7 @@ Euler(基础采样，适合范围广)、DDIM(加速采样，生成速度较快)�
 
 ![](img/4ba65c523eecf9e6977928ed8d809ccf.png)
 
-名称就用默认的名称即可，然后运行环境镜像，数据集选择sd-base，模型选择sd-webui-model，点击“立即创建"。
+名称就用默认的名称即可，然后运行环境镜像，数据集选择`sd-base`，模型选择`sd-webui-model`，点击“立即创建"。
 
 这样属于自己的云端SD平台已经创造好了（相当于配置了一台装了Stable Diffusion的电脑），等待几分钟让云系统创建完毕即可。
 
@@ -186,13 +183,15 @@ Euler(基础采样，适合范围广)、DDIM(加速采样，生成速度较快)�
 
 根据提示输入命令：
 
+```
 bash /app/start.sh --skip-prepare-environment
+```
 
 然后按回车就会开启配置，等一会打开调试地址就可以进入网页界面了
 
 ![](img/f9627f3cb1195adfb77f673bf9920bb3.png)
 
-从左侧的目录中找到OUTPUTS，里面就是云平台生成的内容存档啦。
+从左侧的目录中找到`OUTPUTS`，里面就是云平台生成的内容存档啦。
 
 ![](img/ffef44ec0ad12e9da33176f1c691fb6a.png)
 
@@ -202,4 +201,4 @@ bash /app/start.sh --skip-prepare-environment
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3162454823%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3161270553%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3162454823%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3161270553%7D)绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

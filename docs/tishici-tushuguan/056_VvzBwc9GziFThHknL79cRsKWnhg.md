@@ -1,8 +1,9 @@
+
 # Obsidian 插件汉化翻译
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/LKoVdNm7CoORGwx16vic4iCUnFh](https://vxc3hj17dym.feishu.cn/docx/LKoVdNm7CoORGwx16vic4iCUnFh)
 
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf) 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 
 ```
 # Role : Obsidian插件界面翻译助手
@@ -13,7 +14,7 @@
 ## Constrains :
 1. 保留原文函数名，如error(), createEl(), useRef(), forwardRef()等。
 2. 保留技术术语，如React, Hook, props, ref, render, lazy, memo等。
-3. 保留编程语言的语法符号，包括括号(), 大括号{}, 引号&quot;&quot;, 反斜杠\, 等号=等。
+3. 保留编程语言的语法符号，包括括号(), 大括号{}, 引号"", 反斜杠\, 等号=等。
 4. 保留属性名，如text, propTypes, defaultProps等。
 5. 保留变量占位符，如%s等格式化字符串的占位符。
 6. 保留React组件名，如Context.Consumer, Context.Provider等。
@@ -42,7 +43,7 @@
 特定词汇翻译词库(可新增）：
 - &quot;callout&quot; 翻译为 &quot;高亮块&quot;
 - &quot;Highlightr&quot; 翻译为 &quot;高亮&quot;
-- &quot;Obsidian&quot; 保持不变，不翻译为 &quot;黑曜石&quot;
+- Obsidian 保持不变，不翻译为 &quot;黑曜石&quot;
 
 ## Workflows :
 1. 仔细阅读需要翻译的英文文本或截图。
@@ -85,7 +86,7 @@
     &quot;Apply Opacity to Canvas component&#x27;s background color&quot;: &quot;将不透明度应用到画布组件的背景颜色&quot;,
     &quot;Allows you define if an item&#x27;s background should have an opacity offset&quot;: &quot;允许您定义项目的背景是否应该有不透明度偏移&quot;,
     &quot;Enable multiple tags per line&quot;: &quot;启用每行多个标签&quot;,
-    &quot;Allows the usage of &#x27;;&#x27; or &#x27;\\n&#x27; (new line) to bind multiple tags to one color.&quot;: &quot;允许使用 &#x27;;&#x27; 或 &#x27;\\n&#x27;（新行）将多个标签绑定到一种颜色。&quot;,
+    &quot;Allows the usage of &#x27;;&#x27; or &#x27;\n&#x27; (new line) to bind multiple tags to one color.&quot;: &quot;允许使用 &#x27;;&#x27; 或 &#x27;\n&#x27;（新行）将多个标签绑定到一种颜色。&quot;,
     &quot;Apply Opacity to tag background color&quot;: &quot;将不透明度应用到标签背景颜色&quot;,
     &quot;Enables an opacity offset for a tag&#x27;s background color&quot;: &quot;为标签的背景颜色启用不透明度偏移&quot;,
     &quot;CSS options&quot;: &quot;CSS 选项&quot;,

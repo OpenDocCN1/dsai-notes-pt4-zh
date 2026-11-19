@@ -1,8 +1,9 @@
+
 # 【24年9月】智能时代 The Intelligence Age
 
 > 来源：[https://agispace.feishu.cn/docx/OU1MdsFrpo60zPx7B50ciOhXneg](https://agispace.feishu.cn/docx/OU1MdsFrpo60zPx7B50ciOhXneg)
 
-# The Intelligence Age
+## The Intelligence Age
 
 **原文Deepl翻译版:**
 
@@ -16,7 +17,7 @@
 
 凭借这些新能力,我们可以共享繁荣,达到今天难以想象的程度;未来,每个人的生活都会比现在更好。仅靠富裕并不一定能让人幸福——有很多悲惨的富人——但它可以有意义地改善世界各地人们的生活。
 
-人类历史的发展可以这样狭义地理解:经过数千年的科学发现和技术进步,我们终于弄清楚了如何熔化沙子,添加一些杂质,以惊人的精度将其以极小的规模排列到计算机芯片上,通过芯片传输能量,最终形成能够创造越来越强大的人工智能的系统。
+人类历史的发展可以这样狭义地理解:经过数千年的科学发现和技术进步,我们终于弄明白了如何熔化沙子,添加一些杂质,以惊人的精度将其以极小的规模排列到计算机芯片上,通过芯片传输能量,最终形成能够创造越来越强大的人工智能的系统。
 
 这可能是迄今为止历史上最重要的事实。我们有可能在几千天后(!)拥有超级智能;可能需要更长的时间,但我相信我们终将实现这一目标。
 
@@ -83,6 +84,8 @@ We need to act wisely but with conviction. The dawn of the Intelligence Age is a
 I believe the future is going to be so bright that no one can do it justice by trying to write about it now; a defining characteristic of the Intelligence Age will be massive prosperity.
 
 Although it will happen incrementally, astounding triumphs – fixing the climate, establishing a space colony, and the discovery of all of physics – will eventually become commonplace. With nearly-limitless intelligence and abundant energy – the ability to generate great ideas, and the ability to make them happen – we can do quite a lot.
+
+
 
 As we have seen with other technologies, there will also be downsides, and we need to start working now to maximize AI’s benefits while minimizing its harms. As one example, we expect that this technology can cause a significant change in labor markets (good and bad) in the coming years, but most jobs will change more slowly than most people think, and I have no fear that we’ll run out of things to do (even if they don’t look like “real jobs” to us today). People have an innate desire to create and to be useful to each other, and AI will allow us to amplify our own abilities like never before. As a society, we will be back in an expanding world, and we can again focus on playing positive-sum games.
 

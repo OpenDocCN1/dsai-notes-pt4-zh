@@ -1,35 +1,33 @@
+
 # 大模型资源中心
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/KCzYdOkwZoG1m9xzYEVc7rGNnte](https://gotoaiworld.feishu.cn/docx/KCzYdOkwZoG1m9xzYEVc7rGNnte)
 
-# 一、技术社区
+## 一、技术社区
 
 > 输入 @ 插入相关文档，介绍项目成立的背景
 
-1.  ...
+1. ...
 
-# 二、资源链接
+## 二、资源链接
 
 > **目标**
 
-## 1.1 互联网最大免费资源库-freemediaheckyeah
+### 1.1 互联网最大免费资源库-freemediaheckyeah
 
-https://fmhy.xyz/
-
+`https://fmhy.xyz/`
 
 Freemediaheckyeah Post每日更新
 
-https://fmhy.net/posts
-
+`https://fmhy.net/posts`
 
 Freemediaheckyeah GitHub
 
-https://github.com/fmhy/edit
-
+`https://github.com/fmhy/edit`
 
 Artificial Intelligence
 
-https://fmhy.net/ai
+`https://fmhy.net/ai`
 
 ![](img/9b6ac7582dac3c4539fa2a9c2cbd1367.png)
 

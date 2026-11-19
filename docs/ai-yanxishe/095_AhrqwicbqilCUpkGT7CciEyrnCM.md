@@ -1,8 +1,9 @@
+
 # Sora研报
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/YUxZdkpkqoj239x1MXicCdeEnAc](https://aiyanxishe.feishu.cn/docx/YUxZdkpkqoj239x1MXicCdeEnAc)
-
-<https://aiyanxishe.feishu.cn/sync/KGQ3dArdRsnl77bJBG4camxWnAg>
+>
+> <https://aiyanxishe.feishu.cn/sync/KGQ3dArdRsnl77bJBG4camxWnAg>
 
 ![](img/9029b08e5c12584457b62270acdab747.png)
 
@@ -12,7 +13,7 @@
 
 ![](img/38e00a497630bb5856ffb2e0150e1765.png)
 
-# **券商Sora研报一览**
+## 券商Sora研报一览
 
 ![](img/637c05b4b350b0c825a16065d1342eb9.png)
 
@@ -64,36 +65,37 @@
 
 [SORA免费学习资源.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gl0GbTohjo2TaJxDwK2c4Hxyncc)
 
-# 券商Sora研报主要集中在以下几个方面：
+## 券商Sora研报主要集中在以下几个方面：
 
-1.  **Sora的发布和影响**：Sora是OpenAI发布的首个视频生成大模型，被认为是AI产业的一个重要里程碑。券商们普遍认为，Sora的发布加速了AGI时代的到来，对视频行业乃至整个人工智能领域都将产生深远影响
+1. **Sora的发布和影响**：Sora是OpenAI发布的首个视频生成大模型，被认为是AI产业的一个重要里程碑。券商们普遍认为，Sora的发布加速了AGI时代的到来，对视频行业乃至整个人工智能领域都将产生深远影响
 
-1.  **AI技术的发展**：券商研报强调了Sora模型在AI多模态领域的飞跃式发展，预示着AI创作等相关领域将迎来深度变革。这包括多模态相关的训练及推理应用的扩大，以及AI赋能范围的进一步扩大
+2. **AI技术的发展**：券商研报强调了Sora模型在AI多模态领域的飞跃式发展，预示着AI创作等相关领域将迎来深度变革。这包括多模态相关的训练及推理应用的扩大，以及AI赋能范围的进一步扩大
 
-1.  **市场反应和投资机会**：券商们普遍给予Sora模型极高评价，认为其将为AI视频行业带来巨大变革，并有望成为投资新热门。特别是在算力需求方面，算力有望成为新的投资热点
+3. **市场反应和投资机会**：券商们普遍给予Sora模型极高评价，认为其将为AI视频行业带来巨大变革，并有望成为投资新热门。特别是在算力需求方面，算力有望成为新的投资热点
 
-1.  **行业应用前景**：券商研报还关注到Sora在影视行业的潜在应用，认为OpenAI通过教AI理解和模拟现实中的运动，可能会使影视行业迎来巨变时刻。Sora是一种通用的模型，能够理解和模拟现实世界中的各种场景，帮助人类解决与现实交互的问题
+4. **行业应用前景**：券商研报还关注到Sora在影视行业的潜在应用，认为OpenAI通过教AI理解和模拟现实中的运动，可能会使影视行业迎来巨变时刻。Sora是一种通用的模型，能够理解和模拟现实世界中的各种场景，帮助人类解决与现实交互的问题
 
-1.  **技术特点和能力**：Sora模型能够通过文本生成长达1分钟的长视频，展现了其在AI视频生成方面的跨越式突破。此外，它还具备一键成片、AI美术设计、文生音乐、音频增强、音效分析等核心能力
+5. **技术特点和能力**：Sora模型能够通过文本生成长达1分钟的长视频，展现了其在AI视频生成方面的跨越式突破。此外，它还具备一键成片、AI美术设计、文生音乐、音频增强、音效分析等核心能力
 
 这些研报普遍看好Sora的未来发展潜力，并认为其将为相关行业的变革带来积极影响。
 
 感谢 水木AI交流社区 伙伴 **李怡然** 伙伴整理研报内容。
 
-| # **券商公司对Sora的研报** |  |
-| --- | --- |
-| ####### **券商公司** | ####### **研报观点** |
-| **浙商证券** | 浙商证券：有望开启多模态大模型的新一轮浪潮 |
-| **国泰君安** | 国泰君安：AI生成视频的里程碑。国泰君安在研报中指出，2月16日OpenAI发布文生视频模型Sora，AI视频生成能力实现跨越式发展，模型强大的视频生成能力推高行业天花板，产业赋能的深度和广度有望超预期拓展。 |
-| **东吴证券** | 东吴证券：多模态应用有望加速 |
-| **天风证券** | 天风证券：下一个亿级用户互联网平台雏形已然出现。天风证券认为，在内容创作工具，OpenAI已经和其他产业出现代际差，并带动行业大幅进展，未来一年商业化预计大幅推进。 |
-| **国盛证券** | 国盛证券指出，影视动画行业的颠覆性时刻到来，AI算力有望继续成为新一年的热门投资方向； |
-| **浙商证券** | 浙商证券认为，有望开启多模态大模型的新一轮浪潮；华金证券建议重点关注视频生成及强相关、率先落地的领域，开源证券建议布局AI应用及算力方向。 |
-| **招商证券** | 招商证券指出，Sora显著领先于其他文生视频模型，推动AI视频生成进入了一个全新的时代； |
-| **华泰证券** | 华泰证券认为，AI视频进入大规模应用前夜。 |
-| **华金证券** | 华金证券给出的投资建议是，Sora的发布意味着继文字生成和图像生成后，视频生成技术取得了突破性的进展，而今年也将成为视频生成的元年。 |
+## 券商公司对Sora的研报
 
-# 海外Sora研报汇总
+| 券商公司 | 研报观点 |
+| --- | --- |
+| 浙商证券 | 浙商证券：有望开启多模态大模型的新一轮浪潮 |
+| 国泰君安 | 国泰君安：AI生成视频的里程碑。国泰君安在研报中指出，2月16日OpenAI发布文生视频模型Sora，AI视频生成能力实现跨越式发展，模型强大的视频生成能力推高行业天花板，产业赋能的深度和广度有望超预期拓展。 |
+| 东吴证券 | 东吴证券：多模态应用有望加速 |
+| 天风证券 | 天风证券：下一个亿级用户互联网平台雏形已然出现。天风证券认为，在内容创作工具，OpenAI已经和其他产业出现代际差，并带动行业大幅进展，未来一年商业化预计大幅推进。 |
+| 国盛证券 | 国盛证券指出，影视动画行业的颠覆性时刻到来，AI算力有望继续成为新一年的热门投资方向； |
+| 浙商证券 | 浙商证券认为，有望开启多模态大模型的新一轮浪潮；华金证券建议重点关注视频生成及强相关、率先落地的领域，开源证券建议布局AI应用及算力方向。 |
+| 招商证券 | 招商证券指出，Sora显著领先于其他文生视频模型，推动AI视频生成进入了一个全新的时代； |
+| 华泰证券 | 华泰证券认为，AI视频进入大规模应用前夜。 |
+| 华金证券 | 华金证券给出的投资建议是，Sora的发布意味着继文字生成和图像生成后，视频生成技术取得了突破性的进展，而今年也将成为视频生成的元年。 |
+
+## 海外Sora研报汇总
 
 以下为Sora引用的32篇论文PDF
 
@@ -167,64 +169,50 @@
 
 [Align your Latents- High-Resolution Video Synthesis with Latent Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TbPsbvE82ooSg7x0LkIc38A4nlg)
 
-![](img/0f577de5ef875755658e998cd5a4ab65.png)
 
-[Adversarial Video Generation on Complex Datasets.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YADfb4hYwobq8KxaIUGcqICmntc)
 
+[`Adversarial Video Generation on Complex Datasets.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YADfb4hYwobq8KxaIUGcqICmntc)
 ![](img/3f3ebd881e2f7730314bedc53e115810.png)
 
-[Deep Unsupervised Learning using Nonequilibrium Thermodynamics.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Si9fbfHCooncR3x3y7JciqhHn7b)
-
+[`Deep Unsupervised Learning using Nonequilibrium Thermodynamics.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Si9fbfHCooncR3x3y7JciqhHn7b)
 ![](img/ce140c7b43af863166881ad026087b39.png)
 
-[Diffusion Models Beat GANs on Image Synthesis.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C2HbbSPU4ov2rgxEg8ccEPcWnoR)
-
+[`Diffusion Models Beat GANs on Image Synthesis.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/C2HbbSPU4ov2rgxEg8ccEPcWnoR)
 ![](img/322efa29902bdadad80bd05ba23ab3f1.png)
 
-[Generating Videos with Scene Dynamics.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5efb3GmxolGtoxYCpjc260gn6g)
-
+[`Generating Videos with Scene Dynamics.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D5efb3GmxolGtoxYCpjc260gn6g)
 ![](img/6fd529f5e2104616f022ae417c787b84.png)
 
-[Generative Pretraining From Pixels.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XAQ7bQPTso5Lg7x2imuc6liynTh)
-
+[`Generative Pretraining From Pixels.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XAQ7bQPTso5Lg7x2imuc6liynTh)
 ![](img/b00abc1a6afcd607bb5f9dc332601d56.png)
 
-[Hierarchical Text-Conditional Image Generation with CLIP Latents.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E6f5bTI0foUVI2xCCqtcC0TZn0b)
-
+[`Hierarchical Text-Conditional Image Generation with CLIP Latents.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E6f5bTI0foUVI2xCCqtcC0TZn0b)
 ![](img/b8db905f087a0ea9438fcfca04998295.png)
 
-[Improving Image Generation with Better Captions.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RVrybo8xQopCzJxkrSjc5pmwnI1)
-
+[`Improving Image Generation with Better Captions.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RVrybo8xQopCzJxkrSjc5pmwnI1)
 ![](img/6414d550fde92149433ff0ef0efc81bb.png)
 
-[Language Models are Few-Shot Learners.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LvRobSXLdoJtCJxomnUcmHS8nkb)
-
+[`Language Models are Few-Shot Learners.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LvRobSXLdoJtCJxomnUcmHS8nkb)
 ![](img/a667c8320fc2e223a16c68491a26cd28.png)
 
-[NÜWA- Visual Synthesis Pre-training for Neural visUal World creAtion .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zo5WbKmILotCxgxNS0Dc05amnoh)
-
+[`NÜWA- Visual Synthesis Pre-training for Neural visUal world creAtion .pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zo5WbKmILotCxgxNS0Dc05amnoh)
 ![](img/235a42040cf45c0e74f431a466388536.png)
 
-[Patch n' Pack- NaViT, a Vision Transformer for any Aspect Ratio and Resolution.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BaPhbmIRNoivkrxf2WxcWUben0d)
-
+[`Patch n' Pack- NaViT, a Vision Transformer for any Aspect Ratio and Resolution.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BaPhbmIRNoivkrxf2WxcWUben0d)
 ![](img/ee44bccce8ef3b283d8ed663c88fc425.png)
 
-[Photorealistic Video Generation with Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeiybKE0MokRKnxlDRPchMLingg)
-
+[`Photorealistic Video Generation with Diffusion Models.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UeiybKE0MokRKnxlDRPchMLingg)
 ![](img/faff139f37e178e8b16e9081a910a82a.png)
 
-[Recurrent Environment Simulators.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XiDlb8n9yo1Z3FxDR0pcW4zynsc)
-
+[`Recurrent Environment Simulators.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XiDlb8n9yo1Z3FxDR0pcW4zynsc)
 ![](img/407d41c96469e66c6bd30b3a2203a593.png)
 
-[Unsupervised Learning of Video Representations using LSTMs.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JJLQbhI3VoFNgExJBHIcLSG5ndb)
-
+[`Unsupervised Learning of Video Representations using LSTMs.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JJLQbhI3VoFNgExJBHIcLSG5ndb)
 ![](img/e01716ec63307283dac9631452826dfb.png)
 
-[VideoGPT- Video Generation using VQ-VAE and Transformers.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GlGmbBObOoKmmCxl2kfcy3Vhnyh)
-
+[`VideoGPT- Video Generation using VQ-VAE and Transformers.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GlGmbBObOoKmmCxl2kfcy3Vhnyh)
 ![](img/86b681bc11744122fe8e764018e9b5b3.png)
 
-[Zero-Shot Text-to-Image Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IDeGb76vWoheT6xko27cpAk1nVe)
+[`Zero-Shot Text-to-Image Generation.pdf`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IDeGb76vWoheT6xko27cpAk1nVe)
 
 <https://aiyanxishe.feishu.cn/sync/OU8SdIhzwsVXVabarE5c9iSKnRh>

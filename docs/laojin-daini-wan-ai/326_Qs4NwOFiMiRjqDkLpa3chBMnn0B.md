@@ -1,3 +1,4 @@
+
 # 操作说明
 
 > 来源：[https://my.feishu.cn/docx/Rrt0dIDiMor1IYxOLimcpsK8n🐧](https://my.feishu.cn/docx/Rrt0dIDiMor1IYxOLimcpsK8n🐧)
@@ -12,67 +13,67 @@
 
 双击空白区域，显示节点的搜索栏。
 
-CTRL+拖动可选择多个节点，使用SHIFT+拖动将它们一起移动。
+`CTRL+拖动`可选择多个节点，使用`SHIFT+拖动`将它们一起移动。
 
-左键单击并拖动节点的输入或输出的端口可以创建连接线，只能在相同类型的输入端和输出端之间进行连接。
+左键单击并拖动节点的输入或输出端口可以创建连接线，只能在相同类型的输入端和输出端之间进行连接。
 
-点击窗口右上角的“添加提示词队列”运行工作流程。
+点击窗口右上角的“`添加提示词队列`”运行工作流程。
 
 点击左边菜单栏上的“队列”，将显示当前正在运行和正在等待的任务。任务完成后，会显示为图像，右键点击图像，可以选择删除和加载工作流。
 
-在 ComfyUI 中加载工作流程有两种方法。
+在 `ComfyUI` 中加载工作流程有两种方法。
 
-1.  点击顶部的菜单栏的第一个按钮，再点击“浏览”按钮，选择使用ComfyUI创建的 .json 或 .png 文件。
+1.  点击顶部的菜单栏的第一个按钮，再点击“浏览”按钮，选择使用`ComfyUI`创建的 `.json` 或 `.png` 文件。
 
-1.  拖放 .json 或 .png 文件到ComfyUI窗口中以打开文件。
+2.  拖放 `.json` 或 `.png` 文件到`ComfyUI`窗口中以打开文件。
 
-## [文生图](https://zhida.zhihu.com/search?q=%E6%96%87%E7%94%9F%E5%9B%BE&zhida_source=entity&is_preview=1)
+## 文生图
 
-ComfyUI的默认界面是最简单的文生图工作流。工作流程由节点和线组成，节点是矩形块，用于执行某种任务，线是连接节点之间的输入和输出的线。
+`ComfyUI`的默认界面是最简单的文生图工作流。工作流程由节点和线组成，节点是矩形块，用于执行某种任务，线是连接节点之间的输入和输出的线。
 
 ![](img/1bbd3ecc235bcb5a5b7b5cb96c5c4588.png)
 
 使用方法：
 
-首先，在“Checkpoint[加载器](https://zhida.zhihu.com/search?q=%E5%8A%A0%E8%BD%BD%E5%99%A8&zhida_source=entity&is_preview=1)”节点中选择模型，单击模型名称会显示所有可用的模型。
+首先，在“`Checkpoint加载器`”节点中选择模型，单击模型名称会显示所有可用的模型。
 
-[Check](https://zhida.zhihu.com/search?q=%E6%96%87%E6%9C%AC%E7%BC%96%E7%A0%81%E5%99%A8&zhida_source=entity&is_preview=1)p[oint加](https://zhida.zhihu.com/search?q=%E6%AD%A3%E5%90%91%E6%8F%90%E7%A4%BA%E8%AF%8D&zhida_source=entity&is_preview=1)载器连接了两个名为“CLIP文本编码器”的节点，上面的节点连接到“K采样器”节点的正面条件，下面的节点连接到“K采样器”节点的负面条件，所以要在上面的节点输入正向提示词，在下面的节点输入反向提示词。
+“`Checkpoint加载器`”连接了两个名为“`CLIP文本编码器`”的节点，上面的节点连接到“`K采样器`”节点的正面条件，下面的节点连接到“`K采样器`”节点的负面条件，所以要在上面的节点输入正向提示词，在下面的节点输入反向提示词。
 
-在“空Latent”节点中设置图片尺寸。
+在“`空Latent`”节点中设置图片尺寸。
 
-在“K采样器”节点中设置采样器、迭代步数等参数。
+在“`K采样器`”节点中设置采样器、迭代步数等参数。
 
-点击“添加提示词队列”运行工作流程，运行完毕后，你会看到生成的第一张图片。
+点击“`添加提示词队列`”运行工作流程，运行完毕后，你会看到生成的第一张图片。
 
 ## 图生图
 
-下载[图生图工作流程图片](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/img2img/img2img_workflow.png)，将此工作流程图片拖放到 ComfyUI 中进行加载，[或者单击右侧](https://zhida.zhihu.com/search?q=%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E6%96%87%E4%BB%B6&zhida_source=entity&is_preview=1)面板的“加载”按钮，然后选择工作流程文件。
+下载[图生图工作流程图片](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/img2img/img2img_workflow.png)，将此工作流程图片拖放到 `ComfyUI` 中进行加载，或者单击右侧面板的“加载”按钮，然后选择工作流程文件。
 
 手动创建图生图工作流：
 
 加载默认的文生图工作流，
 
-在“空Latent”节点上右键，点击”移除“，
+在“`空Latent`”节点上右键，点击“`移除`”，
 
-在空白处右键，选择”新建节点“>“图像”>“加载图像”，
+在空白处右键，选择“`新建节点`”>“`图像`”>“`加载图像`”，
 
-点击“加载图像”的图像输出端并拖动，选择”新建节点“>“图像”>“放大”>“图像按系数缩放”，
+点击“`加载图像`”的图像输出端并拖动，选择“`新建节点`”>“`图像`”>“`放大`”>“`图像按系数缩放`”，
 
-点击“图像按系数缩放”的图像输出端并拖动，选择”新建节点“>“Latent”>“VAE编码”，
+点击“`图像按系数缩放`”的图像输出端并拖动，选择“`新建节点`”>“`Latent`”>“`VAE编码`”，
 
-把“VAE编码”节点的Latent输出连接到和“K采样器”节点的Latent输入。
+把“`VAE编码`”节点的`Latent`输出连接到和“`K采样器`”节点的`Latent`输入。
 
 ![](img/7c1e3b958eec311a0697ef0adea398ea.png)
 
-使用方法：选择模型，上传图片，修改提示词，调整K采样器节点中的参数，点击“添加提示词队列”开始生成。
+使用方法：选择模型，上传图片，修改提示词，调整`K采样器`节点中的参数，点击“`添加提示词队列`”开始生成。
 
 ## 局部修复
 
-### 使用[标准模型](https://zhida.zhihu.com/search?q=%E6%A0%87%E5%87%86%E6%A8%A1%E5%9E%8B&zhida_source=entity&is_preview=1)进行修复
+### 使用标准模型进行修复
 
-下载此[修复工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-sd-model.json)，将此工作流程拖放到 ComfyUI 中进行加载。
+下载此[修复工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-sd-model.json)，将此工作流程拖放到 `ComfyUI` 中进行加载。
 
-手动创建工作流：在图生图工作流的基础上添加“VAE编码”和“设置Latent噪波遮罩”节点，它们应位于“加载图像”和“K采样器”节点之间。
+手动创建工作流：在图生图工作流的基础上添加“`VAE编码`”和“`设置Latent噪波遮罩`”节点，它们应位于“`加载图像`”和“`K采样器`”节点之间。
 
 你可能需要先熟悉下载的工作流之后才能熟练的创建工作流。
 
@@ -82,15 +83,15 @@ ComfyUI的默认界面是最简单的文生图工作流。工作流程由节点�
 
 选择模型，上传需要修复的图片。
 
-右键单击图片，在菜单中选择“在[遮罩编辑器](https://zhida.zhihu.com/search?q=%E9%81%AE%E7%BD%A9%E7%BC%96%E8%BE%91%E5%99%A8&zhida_source=entity&is_preview=1)中打开”，在图片上使用画笔涂抹要修复的区域，使用鼠标滚轮控制画笔大小，按住ALT键可以擦除涂抹的区域。
+右键单击图片，在菜单中选择“在`遮罩编辑器`中打开”，在图片上使用画笔涂抹要修复的区域，使用鼠标滚轮控制画笔大小，按住`ALT`键可以擦除涂抹的区域。
 
 ![](img/ea530bc661d87534ba09dec5cc6c29c5.png)
 
-单击“保存到节点”，调整提示词和参数，点击“添加提示词队列”，生成图片。
+单击“`保存到节点`”，调整提示词和参数，点击“`添加提示词队列`”，生成图片。
 
-你可以在K采样器节点中调整重绘强度，但是设置得太高可能会导致图像不连贯。
+你可以在`K采样器`节点中调整重绘强度，但是设置得太高可能会导致图像不连贯。
 
-点击“添加提示词队列”开始生成修复的图片。
+点击“`添加提示词队列`”开始生成修复的图片。
 
 此工作流程适用于低重绘强度，如果必须使用高重绘强度，则需要使用接下来的工作流程。
 
@@ -98,9 +99,9 @@ ComfyUI的默认界面是最简单的文生图工作流。工作流程由节点�
 
 修复模型是专门为填补缺失内容而设计的特殊模型，其模型架构与标准模型不同。上一节中的工作流程不适合与修复模型一起使用，效果不好。
 
-下载此[修复工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-sd15-inpaint-model.json)，将此工作流程拖放到 ComfyUI 中进行加载。
+下载此[修复工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-sd15-inpaint-model.json)，将此工作流程拖放到 `ComfyUI` 中进行加载。
 
-手动创建工作流：在图生图工作流的基础上添加“VAE内补编码器”节点，该节点应位于“加载图像”和“K采样器”节点之间。
+手动创建工作流：在图生图工作流的基础上添加“`VAE内补编码器`”节点，该节点应位于“`加载图像`”和“`K采样器`”节点之间。
 
 用法与第一种方法相同，这里不再赘述。
 
@@ -114,21 +115,21 @@ ComfyUI的默认界面是最简单的文生图工作流。工作流程由节点�
 
 ### 面部修复
 
-ADetailer是一个 AUTOMATMIC1111 扩展，可自动使用修复来修复面部。ComfyUI 中的对应节点是Face Detailer（也称为DDetailer），它包含在ComfyUI Impact pack中。ComfyUI Impact pack是一组自定义节点，可以极大地增强 ComfyUI 的功能。
+`ADetailer`是一个 `AUTOMATMIC1111` 扩展，可自动使用修复来修复面部。`ComfyUI` 中的对应节点是`Face Detailer`（也称为`DDetailer`），它包含在`ComfyUI Impact pack`中。`ComfyUI Impact pack`是一组自定义节点，可以极大地增强 `ComfyUI` 的功能。
 
 文生图方式：
 
-下载此[工作流程](https://link.zhihu.com/?target=https%3A//github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/workflow/simple.png)，在 ComfyUI 中加载。
+下载此[工作流程](https://link.zhihu.com/?target=https%3A//github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/workflow/simple.png)，在 `ComfyUI` 中加载。
 
 选择模型，输入提示词，调整采样器参数，运行工作流程。
 
 图生图方式：
 
-下载此[工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-detailer-face-from-image.json)，在 ComfyUI 中加载。
+下载此[工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-detailer-face-from-image.json)，在 `ComfyUI` 中加载。
 
 ![](img/236e265f6c9bc65c861cbfbeacf733cb.png)
 
-将图片上传到“加载图像”节点，输入提示词，调整采样器参数，运行工作流程。
+将图片上传到“`加载图像`”节点，输入提示词，调整采样器参数，运行工作流程。
 
 重点参数
 
@@ -152,75 +153,75 @@ ADetailer是一个 AUTOMATMIC1111 扩展，可自动使用修复来修复面部�
 
 ### 手部修复
 
-最简单的手部修复工作流和前面的面部修复工作流一样，只需把“检测加载器”节点里的模型名称换成“hand_yolov8s.pt”即可。
+最简单的手部修复工作流和前面的面部修复工作流一样，只需把“`检测加载器`”节点里的模型名称换成`hand_yolov8s.pt`即可。
 
 你也可以在这里下载更复杂的手部修复工作流程：
 
-[ht](https://link.zhihu.com/?target=https%3A//openart.ai/workflows/oliviosarikas/mesh-graphormer-hand-fixing-controlnet/NkhzwEW80FzCcvzzXEsH)tps://openart.ai/workflows/oliviosarikas/mesh-graphormer-hand-fixing-controlnet/NkhzwEW80FzCcvzzXEsH
+[htps://openart.ai/workflows/oliviosarikas/mesh-graphormer-hand-fixing-controlnet/NkhzwEW80FzCcvzzXEsH](https://link.zhihu.com/?target=https%3A//openart.ai/workflows/oliviosarikas/mesh-graphormer-hand-fixing-controlnet/NkhzwEW80FzCcvzzXEsH)
 
-此工作流程使用HandRefiner和ControlNet来检测手部区域和深度，然后重绘，修复效果更好。
+此工作流程使用`HandRefiner`和`ControlNet`来检测手部区域和深度，然后重绘，修复效果更好。
 
 ![](img/70949c2c11cfd80f6c9ac359fef8e7e4.png)
 
-[要正常运行这个工作流程，你需要在这里下载3个](https://link.zhihu.com/?target=https%3A//huggingface.co/hr16/ControlNet-HandRefiner-pruned/tree/main)模型：hr16/ControlNet-HandRefiner-pruned at main
+要正常运行这个工作流程，你需要在这里下载3个模型：`hr16/ControlNet-HandRefiner-pruned` at main
 
-把control_sd15_inpaint_depth_hand_fp16模型放入ComfyUI\models\controlnet，其他两个模型放入ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts\hr16\ControlNet-HandRefiner-pruned。
+把`control_sd15_inpaint_depth_hand_fp16`模型放入`ComfyUI\models\controlnet`，其他两个模型放入`ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts\hr16\ControlNet-HandRefiner-pruned`。
 
 ### 图片扩展
 
-[扩展与修](https://zhida.zhihu.com/search?q=%E5%A4%96%E8%A1%A5%E7%94%BB%E6%9D%BF&zhida_source=entity&is_preview=1)复本质上是一样的，都是重绘某个区域，ComfyUI中有一个“外补画板”节点，可以自动给扩展的像素添加遮罩，然后重绘遮罩区域，从而实现图片扩展。
+扩展与修复本质上是一样的，都是重绘某个区域，`ComfyUI`中有一个“`外补画板`”节点，可以自动给扩展的像素添加遮罩，然后重绘遮罩区域，从而实现图片扩展。
 
-下载[此页面](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/inpaint/)上的最后一张图片并将其拖放到 ComfyUI 中进行加载。
+下载[此页面](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/inpaint/)上的最后一张图片并将其拖放到 `ComfyUI` 中进行加载。
 
-手动创建方式：在此[修复工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-sd15-inpaint-model.json)的基础上添加“外补画板”节点，该节点应位于“加载图像”和“VAE内补编码器”节点之间。
+手动创建方式：在此[修复工作流程](https://link.zhihu.com/?target=https%3A//stable-diffusion-art.com/wp-content/uploads/2024/01/inpaint-sd15-inpaint-model.json)的基础上添加“`外补画板`”节点，该节点应位于“`加载图像`”和“`VAE内补编码器`”节点之间。
 
 ![](img/e1b7d430858ab54278a0341e0c2b5748.png)
 
-使用方法：选择模型，输入提示词，调整采样器参数，在“外[补画板](https://zhida.zhihu.com/search?q=%E7%BE%BD%E5%8C%96%E5%80%BC&zhida_source=entity&is_preview=1)”节点设置每个方向需要扩展的像素和羽化值，运行工作流程。
+使用方法：选择模型，输入提示词，调整采样器参数，在“`外补画板`”节点设置每个方向需要扩展的像素和羽化值，运行工作流程。
 
 ## 图片放大
 
 ### 高分辨率修复（潜空间放大）
 
-下载[此页面](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/2_pass_txt2img/)上的第一张图片，并将其放入 ComfyUI 中，以加载高分辨率修复工作流程。
+下载[此页面](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/2_pass_txt2img/)上的第一张图片，并将其放入 `ComfyUI` 中，以加载高分辨率修复工作流程。
 
 ![](img/a89d234cf1348fb08a624e6744a5b64c.png)
 
-前面的流程和文生图相同，然后，工作流程会放大潜空间中的图像并执行一些额外的采样，给图像添加一些初始噪声，并以一定的去噪强度对其进行去噪。然后，VAE解码器对较大的潜空间的图像进行解码以生成放大的图像。
+前面的流程和文生图相同，然后，工作流程会放大潜空间中的图像并执行一些额外的采样，给图像添加一些初始噪声，并以一定的去噪强度对其进行去噪。然后，`VAE解码器`对较大的潜空间的图像进行解码以生成放大的图像。
 
-[如果你](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/2_pass_txt2img/)想使用放大算法模型放大潜空间中的图像，请下载此页面上的第二张图片，并将其放入 ComfyUI 中，以加载高分辨率修复工作流程。
+如果你想使用放大算法模型放大潜空间中的图像，请下载此页面上的第二张图片，并将其放入 `ComfyUI` 中，以加载高分辨率修复工作流程。
 
 ### SD Ultimate Upscale
 
-节点项目主页：[https://github.com/ssitu/Comfy](https://link.zhihu.com/?target=https%3A//github.com/ssitu/ComfyUI_UltimateSDUpscale)UI_UltimateSDUpscale
+节点项目主页：[https://github.com/ssitu/ComfyUI_UltimateSDUpscale](https://link.zhihu.com/?target=https%3A//github.com/ssitu/ComfyUI_UltimateSDUpscale)
 
-在默认的文生图工作流程中，右键单击空白处。选择“新建节点”>“图像”>“放大”>“SD放大”。
+在默认的文生图工作流程中，右键单击空白处。选择“`新建节点`”>“`图像`”>“`放大`”>“`SD放大`”。
 
 按如下方式连接：
 
-+   图像输入端口连接VAE解码的图像或者连接加载图像的图像。
++   图像输入端口连接`VAE解码`的图像或者连接加载图像的图像。
 
-+   模型输入端口连接Checkpoint加载器的模型。
++   模型输入端口连接`Checkpoint加载器`的模型。
 
-+   [正面条件和负面](https://zhida.zhihu.com/search?q=%E8%B4%9F%E9%9D%A2%E6%96%87%E6%9C%AC%E7%BC%96%E7%A0%81%E5%99%A8&zhida_source=entity&is_preview=1)条件输入端口分别连接正面文本编码器和负面文本编码器的条件
++   正面条件和负面条件输入端口分别连接`正面文本编码器`和`负面文本编码器`的条件
 
-+   vae连接Checkpoint加载器的VAE。
++   `vae`连接`Checkpoint加载器`的`VAE`。
 
 +   放大模型连接放大模型加载器。
 
 +   图像连接保存图像或预览图像。
 
-结合ControlNet tile模型放大（推荐）
+结合`ControlNet tile`模型放大（推荐）
 
 在前面的工作流基础上：
 
-+   添加“ControlNet应用（高级） ”和“ControlNet加载器 ”节点，
++   添加“`ControlNet应用（高级）`”和“`ControlNet加载器`”节点，
 
 +   条件输入端连接文本编码器的输出口，
 
-+   ControlNet输入端连接ControlNet加载器的输出口，
++   `ControlNet`输入端连接`ControlNet加载器`的输出口，
 
-+   图像输入端连接VAE解码的图像或者连接加载图像的图像。
++   图像输入端连接`VAE解码`的图像或者连接加载图像的图像。
 
 ![](img/b250cbb48e8c2d3ac8bf1f8dfb63c81e.png)
 
@@ -244,17 +245,17 @@ ADetailer是一个 AUTOMATMIC1111 扩展，可自动使用修复来修复面部�
 
 接缝修复模式：
 
-+   Bands pass：它仅在接缝（行和列）上添加噪声并重绘。
++   `Bands pass`：它仅在接缝（行和列）上添加噪声并重绘。
 
-+   Half tile：它添加了 2 个通道（如重绘通道），但具有半分块偏移。具有垂直梯度掩码的行的一次传递和具有水平梯度掩码的列的一次传递。此通道比Bands pass覆盖更大的区域，并且通常会产生更好的结果，但需要更多时间。
++   `Half tile`：它添加了 2 个通道（如重绘通道），但具有半分块偏移。具有垂直梯度掩码的行的一次传递和具有水平梯度掩码的列的一次传递。此通道比`Bands pass`覆盖更大的区域，并且通常会产生更好的结果，但需要更多时间。
 
-+   Half tile + intersections：它运行半分块偏移通道，然后在具有径向渐变掩模的交叉点上运行额外通道。
++   `Half tile + intersections`：它运行半分块偏移通道，然后在具有径向渐变掩模的交叉点上运行额外通道。
 
 +   无：不使用接缝修复。
 
 接缝修复降噪：接缝修复的重绘强度。
 
-接缝修复宽度：重绘接缝的宽度。仅在“Bands pass”修复模式有效。
+接缝修复宽度：重绘接缝的宽度。仅在“`Bands pass`”修复模式有效。
 
 接缝修复填充：汉化插件翻译为“接缝修复分区”，该值代表处理分块时将考虑周围区域的多少像素。
 
@@ -264,7 +265,11 @@ ADetailer是一个 AUTOMATMIC1111 扩展，可自动使用修复来修复面部�
 
 ### AI upscaler
 
-AI upscaler是一种用于放[大图片并](https://zhida.zhihu.com/search?q=%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B&zhida_source=entity&is_preview=1)填充细节的 AI 模型，它们不是扩散模型，而是经过训练以放大图片的神经网络，所以使用这种方法放大补充的细节很少，效果远不如前面两种方式。
+
+
+# ComfyUI 工作流程
+
+AI upscaler是一种用于放大图片并填充细节的 AI 模型，它们不是扩散模型，而是经过训练以放大图片的神经网络，所以使用这种方法放大补充的细节很少，效果远不如前面两种方式。
 
 下载此[放大工作流程](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/upscale_models/)，将工作流程图片拖放到 ComfyUI 中进行加载。
 
@@ -272,23 +277,22 @@ AI upscaler是一种用于放[大图片并](https://zhida.zhihu.com/search?q=%E6
 
 这个工作流程只在文生图基础上添加了两个节点：
 
-+   加载放大模型：用于加载 AI 放大模型。（该节点位于 添加节点>加载器）
++ 加载放大模型：用于加载 AI 放大模型。（该节点位于 添加节点>加载器）
++ 放大图像（使用模型）：该节点位于 VAE 解码器和保存图像节点之间，它输入图像和放大模型，并输出放大的图像。（该节点位于 添加节点>图像>放大）
 
-+   放大图像（使用模型）：该节点位于 VAE 解码器和保存图像节点之间，它输入图像和放大模型，并输出放大的图像。（该节点位于 添加节点>图像>放大）
-
-要使用此工作流程，你必须从[Upscaler Wiki](https://link.zhihu.com/?target=https%3A//upscale.wiki/w/index.php%3Ftitle%3DModel_Database%26oldid%3D1571)下载放大模型，并把模型放入文件夹models > upscale_models，或者将 ComfyUI 设置为共享 AUTOMATIC1111 的模型文件。
+要使用此工作流程，你必须从[Upscaler Wiki](https://link.zhihu.com/?target=https%3A//upscale.wiki/w/index.php%3Ftitle%3DModel_Database%26oldid%3D1571)下载放大模型，并把模型放入文件夹 `models > upscale_models`，或者将 ComfyUI 设置为共享 AUTOMATIC1111 的模型文件。
 
 ## 使用Embedding
 
-要在 ComfyUI 中使用Embedding（也称为文本反转），请在正向或反向提示框中输入“embedding:模型名称”，例如：
+要在 ComfyUI 中使用Embedding（也称为文本反转），请在正向或反向提示框中输入 `embedding:模型名称`，例如：
 
 ```
 embedding: BadDream
 ```
 
-ComfyUI 将搜索文件夹ComfyUI > models > embeddings中具有相同文件名的Embedding。
+ComfyUI 将搜索文件夹 `ComfyUI > models > embeddings` 中具有相同文件名的Embedding。
 
-输入完整的文件名很麻烦，还可能输错，如果你安装了ComfyUI-Custom-Scripts自定义节点，它会启用Embedding名称的自动查找功能，输入embedding后，旁边会显示可用的Embedding列表。
+输入完整的文件名很麻烦，还可能输错，如果你安装了 `ComfyUI-Custom-Scripts` 自定义节点，它会启用Embedding名称的自动查找功能，输入 `embedding` 后，旁边会显示可用的Embedding列表。
 
 ![](img/b173b45c25a73ea61f4894ced0caf893.png)
 
@@ -296,17 +300,17 @@ ComfyUI 将搜索文件夹ComfyUI > models > embeddings中具有相同文件名�
 
 下载此[LoRA 工作流程](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/lora/lora.png)，将工作流程拖放到 ComfyUI 中进行加载。
 
-手动创建方式：加载默认的文生图工作流，鼠标右键点击“Checkpoint加载器(简易)”，选择“添加LoRA”，“LoRA加载器”节点会在连接完好的情况下添加到工作流。这个快捷功能由ComfyUI-Custom-Scripts插件提供。
+手动创建方式：加载默认的文生图工作流，鼠标右键点击“Checkpoint加载器(简易)”，选择“添加LoRA”，“LoRA加载器”节点会在连接完好的情况下添加到工作流。这个快捷功能由 `ComfyUI-Custom-Scripts` 插件提供。
 
 ![](img/2b65e060c18408dd219b6b456efdfb57.png)
 
-如果要同时使用多个LoRA，只需把多个[“LoRA](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/lora/lora_multiple.png)加载器”串联起来即可，可以参考此工作流程。
+如果要同时使用多个LoRA，只需把多个[“LoRA 加载器”](https://link.zhihu.com/?target=https%3A//comfyanonymous.github.io/ComfyUI_examples/lora/lora_multiple.png)串联起来即可，可以参考此工作流程。
 
 ## 使用ControlNet
 
 手动创建ControlNet工作流：
 
-加载默认工作流，
+加载默认工作流。
 
 在“K采样器”前面添加“ControlNet应用(高级)”节点和“ControlNet加载器”节点。
 
@@ -326,7 +330,7 @@ ControlNet输入端连接“ControlNet加载器”节点的输出端。
 
 如果图片需要预处理，需要在“加载图像”节点和“ControlNet应用(高级)”节点的连线之间插入一个预处理器节点。
 
-预处理器需要使用comfyui_controlnet_aux提供的节点，官方没有ControlNet预处理器，就很奇怪。
+预处理器需要使用 `comfyui_controlnet_aux` 提供的节点，官方没有ControlNet预处理器，就很奇怪。
 
 以下是使用ControlNet的Canny模型控制线条的示例。
 
@@ -386,15 +390,15 @@ VAE模型负责将潜空间图像转换到像素空间，该过程是“有损�
 
 ## 常用快捷键和技巧
 
-生成图像：按Ctrl+Enter将工作流程放入队列并生成图像。
+生成图像：按 `Ctrl+Enter` 将工作流程放入队列并生成图像。
 
-复制节点：选择一个节点，按Ctrl+C进行复制，Ctrl+V进行粘贴，Ctrl+Shift+V可在输入连接完好的情况下进行粘贴。另一种方式是，按住Alt键，然后点击并拖动节点。
+复制节点：选择一个节点，按 `Ctrl+C` 进行复制，`Ctrl+V` 进行粘贴，`Ctrl+Shift+V` 可在输入连接完好的情况下进行粘贴。另一种方式是，按住 `Alt` 键，然后点击并拖动节点。
 
-移动多个节点：创建一个组，将一组节点放到一起，然后移动组。或者，按住 Ctrl 并拖动鼠标，创建一个框以选择多个节点，你也可以按住 Ctrl 键选择多个节点，然后按住 Shift 并拖动鼠标。
+移动多个节点：创建一个组，将一组节点放到一起，然后移动组。或者，按住 `Ctrl` 并拖动鼠标，创建一个框以选择多个节点，你也可以按住 `Ctrl` 键选择多个节点，然后按住 `Shift` 并拖动鼠标。
 
-忽略节点：选择一个节点，然后按 Ctrl+B 。没有键盘快捷键可以忽略一个组中的全部节点，你可以在右键菜单中选择“忽略该组节点”。忽略节点只是不执行该节点的功能，不影响连接线的完整性。
+忽略节点：选择一个节点，然后按 `Ctrl+B` 。没有键盘快捷键可以忽略一个组中的全部节点，你可以在右键菜单中选择“忽略该组节点”。忽略节点只是不执行该节点的功能，不影响连接线的完整性。
 
-禁用节点：选择一个节点，然后按 Ctrl+M 。禁用节点会使该节点的所有连接线断开，你可能需要重新连接端口才能运行工作流。
+禁用节点：选择一个节点，然后按 `Ctrl+M` 。禁用节点会使该节点的所有连接线断开，你可能需要重新连接端口才能运行工作流。
 
 最小化节点：单击节点左上角的点可将其最小化。
 
@@ -402,10 +406,10 @@ VAE模型负责将潜空间图像转换到像素空间，该过程是“有损�
 
 ## 缓存图片的文件夹
 
-用户上传到“加载图像”节点的图片位于ComfyUI\input，不会自动删除，记得定期清理。
+用户上传到“加载图像”节点的图片位于 `ComfyUI\input`，不会自动删除，记得定期清理。
 
-“预览图像”节点的图片位于ComfyUI\temp，重启后清空。
+“预览图像”节点的图片位于 `ComfyUI\temp`，重启后清空。
 
-“保存图像”节点的图片位于ComfyUI\output
+“保存图像”节点的图片位于 `ComfyUI\output`
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

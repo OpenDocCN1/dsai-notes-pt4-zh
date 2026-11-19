@@ -1,3 +1,4 @@
+
 # Intel 设备加速推理
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/ZC8Jdz0zDopOJqxgYAkcRBubnRg](https://v11enp9ok1h.feishu.cn/docx/ZC8Jdz0zDopOJqxgYAkcRBubnRg)
@@ -10,21 +11,21 @@
 
 > 本 Demo 必须使用 Linux 操作系统。
 
-# 选择方案
+## 选择方案
 
 +   如果您的设备支持 OpenVINO 版本 2024.2.0，您可以使用 OpenVINO 加速方案，跳过 ITREX方案，使用OpenVINO 套件推理速度更加迅速。
 
 +   如果您仅仅是 Intel 设备，但是不支持 OpenVINO （例如 NPU设备），您可以使用 ITREX方案，保证模型能运行。
 
-# ITREX 推理适配
+## ITREX 推理适配
 
-本代码将带领开发者使用 intel-extension-for-transformers  适配推理 GLM-4-9B-Chat 模型
+本代码将带领开发者使用 `intel-extension-for-transformers` 适配推理 GLM-4-9B-Chat 模型
 
 请配合以下代码库中微调部分代码进行上手练习：
 
 https://github.com/THUDM/GLM-4/tree/main/intel_device_demo
 
-## 环境配置
+### 环境配置
 
 首先，你需要在安装好 [快速使用（推理部署）](https://zhipu-ai.feishu.cn/wiki/PCDWwC2Ndiuj39kryJZcsTDbnlg) 中提到的依赖的基础下，安装本 Demo需要的依赖
 
@@ -33,7 +34,7 @@ cd intel_device_demo_openvino
 pip install -r requirements.txt
 ```
 
-## 运行模型推理
+### 运行模型推理
 
 您可以使用一行代码运行模型推理：
 
@@ -113,7 +114,7 @@ Assistant:
 你好👋！我是人工智能助手，很高兴为你服务。有什么可以帮助你的吗？
 ```
 
-# OpenVINO™ 推理加速
+## OpenVINO™ 推理加速
 
 本代码将带领开发者使用 Intel® Distribution of OpenVINO™ Toolkit 加速推理 GLM-4-9B-Chat 模型
 
@@ -121,9 +122,9 @@ Assistant:
 
 https://github.com/THUDM/GLM-4/tree/main/intel_device_demo
 
-[OpenVINO](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html) 是 Intel 为深度学习推理而设计的开源工具包。它可以帮助开发者优化模型，提高推理性能，减少模型的内存占用。 本示例将展示如何使用 OpenVINO 部署 GLM-4-9B-Chat 模型。
+[OpenVINO](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html) 是 Intel 为深度学习推理而设计的开源工具包。它可以帮助开发者优化模型，提高推理性能，减少模型的内存占用。本示例将展示如何使用 OpenVINO 部署 GLM-4-9B-Chat 模型。
 
-## 环境配置
+### 环境配置
 
 首先，你需要在安装好 [快速使用（推理部署）](https://zhipu-ai.feishu.cn/wiki/PCDWwC2Ndiuj39kryJZcsTDbnlg) 中提到的依赖的基础下，安装本 Demo需要的依赖
 
@@ -132,7 +133,7 @@ cd intel_device_demo_openvino
 pip install -r requirements.txt
 ```
 
-## 模型权重转换
+### 模型权重转换
 
 由于需要将Huggingface模型转换为OpenVINO IR模型，因此您需要下载模型并转换。
 
@@ -140,26 +141,24 @@ pip install -r requirements.txt
 python3 convert.py --model_id THUDM/glm-4-9b-chat --output {your_path}/glm-4-9b-chat-ov
 ```
 
-可选择参数
+可选择参数：
 
-```
-`--model_id` - 模型所在目录的路径（绝对路径）。
-`--output` - 转换后模型保存的地址。
-`--precision` - 转换的精度。
-```
+- `--model_id` - 模型所在目录的路径（绝对路径）。
+- `--output` - 转换后模型保存的地址。
+- `--precision` - 转换的精度。
 
 转换过程如下
 
 ```
 ====Exporting IR=====
 Framework not specified. Using pt to export the model.
-Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04&lt;00:00,  2.14it/s]
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.14it/s]
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 Using framework PyTorch: 2.3.1+cu121
-Mixed-Precision assignment ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 160/160 • 0:01:45 • 0:00:00
+Mixed-Precision assignment ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 160/160 • 0:01:45 • 0:00:00
 INFO:nncf:Statistics of the bitwidth distribution:
 ┍━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 │   Num bits (N) │ % all parameters (layers)   │ % ratio-defining parameters (layers)   │
@@ -174,7 +173,7 @@ Configuration saved in glm-4-9b-ov/openvino_config.json
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 ```
 
-## 运行模型推理
+### 运行模型推理
 
 使用一行代码推理模型：
 
@@ -184,8 +183,10 @@ python3 chat.py --model_path {your_path}/glm-4-9b-chat-ov --max_sequence_length 
 
 可选择参数
 
-```
+
+
 `--model_path` - OpenVINO IR 模型所在目录的路径。
+
 `--max_sequence_length` - 输出标记的最大大小。
+
 `--device` - 运行推理的设备。
-```

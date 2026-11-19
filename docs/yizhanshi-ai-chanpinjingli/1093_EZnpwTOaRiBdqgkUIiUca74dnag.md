@@ -1,8 +1,9 @@
+
 # 如何控制 LLM 的输出格式和解析其输出结果？
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/MT7OdZknCoUD5rxSUsScSVdtnOh](https://v11enp9ok1h.feishu.cn/docx/MT7OdZknCoUD5rxSUsScSVdtnOh)
 
-现在很多人对于如何使用像 ChatGPT 这样的 LLM 已经比较有经验了，可以使用各种不同的 Prompt 得到自己想要的结果。但有时候我们的使用场景不局限于手动操作，而是需要结合程序去调用 API，并且解析 API 的返回结果，从而实现一些自动化的功能。但是 LLM 的输出不确定性很大，所以我们需要想办法去控制 LLM 的输出格式，从而让程序得到稳定的输出，并且进一步对输出结果进行解析。
+现在很多人对于如何使用像 ChatGPT 这样的 LLM 已经比较有经验了，可以使用各种不同 Prompt 得到自己想要的结果。但有时候我们的使用场景不局限于手动操作，而是需要结合程序去调用 API，并且解析 API 的返回结果，从而实现一些自动化的功能。但是 LLM 的输出不确定性很大，所以我们需要想办法去控制 LLM 的输出格式，从而让程序得到稳定的输出，并且进一步对输出结果进行解析。
 
 ## 方法一：使用 Function Calling
 
@@ -85,7 +86,7 @@ openai.ChatCompletion.create(
 
 这样我们就可以得到一个稳定的 JSON 格式的输出结果。这种方法的局限在于必须 API 支持 Function Calling。
 
-Function Calling 的[具](https://platform.openai.com/docs/guides/gpt/function-calling)体用法可以参考 OpenAI 的文档：https://platform.openai.com/docs/guides/gpt/function-calling
+Function Calling 的[具体](https://platform.openai.com/docs/guides/gpt/function-calling)用法可以参考 OpenAI 的文档：https://platform.openai.com/docs/guides/gpt/function-calling
 
 ## 方法二：使用 few-shot，给出输出格式样例
 
@@ -177,15 +178,11 @@ type TranslatedResult = {
 
 由于生成式 AI 现阶段的特点，我们很难保证输出结果的稳定性，所以我们需要对输出结果进行容错处理，以防止程序出错。这是我的一些经验总结：
 
-###
+1. 降低 `temprature` 参数的值会让结果更稳定。
 
-1.  降低 temprature 参数的值会让结果更稳定。
+`temprature` 越低，输出结果越稳定，当然温度低会影响输出结果的多样性，你可以灵活运用，比如出错后降低 `temprature` 值。
 
-temprature 越低，输出结果越稳定，当然温度低会影响输出结果的多样性，你可以灵活运用，比如出错后降低 temprature 值。
-
-###
-
-1.  对 JSON 结果进行容错处理
+2. 对 JSON 结果进行容错处理
 
 即使是 GPT-4，输出 JSON 时也不够稳定，经常会错误输出多余的逗号或者引号，但是老是重试也废 token，所以最好是用日志把出错的结果都记录下来，找出其中的规律，然后做一些字符串预处理，降低出错概率。
 

@@ -1,10 +1,15 @@
+
 # YouTube 视频详细笔记生成
 
 > 来源：[https://my.feishu.cn/docx/DLW0ddBTtoq86kxr4GscpzLQnXg](https://my.feishu.cn/docx/DLW0ddBTtoq86kxr4GscpzLQnXg)
 
-**使用场景或用例：**适合希望将 YouTube 视频内容（例如技术直播、教学讲座）转化为结构化笔记与时间标记的用户，如知识管理、团队复盘、课程内容开发等。
+## 使用场景或用例
 
-提示词：
+适合希望将 YouTube 视频内容（例如技术直播、教学讲座）转化为结构化笔记与时间标记的用户，如知识管理、团队复盘、课程内容开发等。
+
+## 提示词
+
+### 英文提示词
 
 ```
 You are an expert note-taker and technical explainer. Your job is to carefully process this video: “https://youtu.be/7xTGNNLPyMI” and create a set of detailed, organized notes that capture every single concept, term, example, and insight mentioned, in the exact order they appear, without omitting anything.
@@ -36,8 +41,9 @@ Summary Section at the End: After the detailed notes, add:
 A 1-paragraph high-level summary of the video
 A Key Takeaways list with the top 10–15 insights
 A Glossary of all technical terms from the video.
-
 ```
+
+### 中文提示词
 
 ```
 你是一名专业的笔记整理者和技术讲解者。你的任务是仔细处理这段视频：“https://youtu.be/7xTGNNLPyMI”，并创建一组详尽、有组织的笔记，捕捉视频中出现的每一个概念、术语、示例和洞见，按出现顺序排列，不能遗漏任何内容。
@@ -69,5 +75,4 @@ H2：子主题
 一段视频的总体概述；
 一个包含主要 10–15 条洞见的要点列表；
 一个涵盖视频中所有技术术语的术语表。
-
 ```

@@ -1,10 +1,11 @@
+
 # 安装说明
 
 > 来源：[https://my.feishu.cn/docx/RFI9dLRy2oFdfZxYtmgchzipngc](https://my.feishu.cn/docx/RFI9dLRy2oFdfZxYtmgchzipngc)
 
 ComfyUI是一个基于节点的用户界面，你可以通过将不同的节点连接在一起来构建生成图像的工作流程。
 
-ComfyUI比其他UI更复杂，如果你刚接触AI绘画，请先使用webUI，了解一些绘画模型的结构和原理，熟练之后再使用ComfyUI。
+ComfyUI比其他UI更复杂，如果你刚接触AI绘画，请先使用`webUI`，了解一些绘画模型的结构和原理，熟练之后再使用ComfyUI。
 
 ## 电脑配置需求
 
@@ -28,27 +29,27 @@ CPU：不做强制性要求
 
 ### 加载模型
 
-解压后，将模型拷贝至\【秋叶整合版】ComfyUI\ComfyUI-aki-v1.3\ComfyUI-aki-v1.3\models\checkpoints路径下。
+解压后，将模型拷贝至`\【秋叶整合版】ComfyUI\ComfyUI-aki-v1.3\ComfyUI-aki-v1.3\models\checkpoints`路径下。
 
 ![](img/d12a9b4f9e34952dd85ca46ec6b6908a.png)
 
-### WEBUI模型兼容（没有安装WEBUI的话，直接到下面3）
+### WEBUI模型兼容（没有安装`WEBUI`的话，直接到下面3）
 
-如果之前有安装过SD的WEBUI的话，你可以按照以下方法做到与WEBUI共用模型。
+如果之前有安装过SD的`WEBUI`的话，你可以按照以下方法做到与`WEBUI`共用模型。
 
 ![](img/8ebf343c2dac9f62e78f7fca7573055a.png)
 
-然后打开extra_model_paths.yaml修改路径。
+然后打开`extra_model_paths.yaml`修改路径。
 
 ![](img/23c12209ed7bd452067ec43c3bd3438e.png)
 
 ### 启动更新至最新版
 
-先安装启动器运行依赖-dotnet-6.0.11。
+先安装启动器运行依赖`dotnet-6.0.11`。
 
 ![](img/95b892ee0f0072309683c017c81555f2.png)
 
-安装完成后，进入ComfyUI-aki-v1.3文件夹双击启动器。
+安装完成后，进入`ComfyUI-aki-v1.3`文件夹双击启动器。
 
 ![](img/ca6cce9c30364d92c52924984df30def.png)
 
@@ -70,7 +71,7 @@ CPU：不做强制性要求
 
 ![](img/5e88035f89ee0f23fa033464f8eda86b.png)
 
-### 4.使用简介
+### 4. 使用简介
 
 这样就可以开始自己的AI绘画之旅了！
 

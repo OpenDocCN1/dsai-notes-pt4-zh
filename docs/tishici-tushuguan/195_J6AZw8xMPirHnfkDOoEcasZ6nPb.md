@@ -1,3 +1,4 @@
+
 # Claude Prompt：我很礼貌
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/FcozdvKT6obr1rxLK3pcaUxhnUb](https://vxc3hj17dym.feishu.cn/docx/FcozdvKT6obr1rxLK3pcaUxhnUb)
@@ -9,5 +10,4 @@
 > https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
 
 ```
-
 ```

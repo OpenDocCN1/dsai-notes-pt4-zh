@@ -1,18 +1,19 @@
+
 # 【龙哥盟分享】抖音直播录制搬运📕
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/D93Kd24RXoekhWxWJgMcfQC8nNf](https://xuqiwei1986.feishu.cn/docx/D93Kd24RXoekhWxWJgMcfQC8nNf)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/D93Kd24RXoekhWxWJgMcfQC8nNf`
 
 之前看书豪分享了把抖音的品截流到📕开无人直播，根据文章内容摸索了一下，目前已经可以正常使用相关软件录制好搬到📕，就是📕直播的画面太模糊且容易卡顿（应该是电脑配置不太够的原因），拿了两台电脑连接同一网络会更卡，还在想办法看怎么样可以做到后续多开，多账号测品，下面可以根据我摸索的流程来进行抖音直播截流，选品这块大家任意去选，主要看操作。
 
-# 一、涉及工具：📕直播助手、江小二工具箱、OBS软件
+## 一、涉及工具：📕直播助手、江小二工具箱、OBS软件
 
-1.📕直播助手网页：https://www.xiaohongshu.com/zhibo/robs
+1.📕直播助手网页：`https://www.xiaohongshu.com/zhibo/robs`
 
 根据网站去下载软件，下方有个去OBS开播，这个后续会用到，先把软件下下来
 
 ![](img/106853b9175fa5e027e073df0c841a48.png)
 
-2.江小二工具箱网站：http://shi[江湖工具箱使用教程与问题帮助](https://da6r699qsri.feishu.cn/docx/BuE2dsuFLoSFVExRsykcCyEen9g)indata.com/【附加工具使用教程：  】
+2.江小二工具箱网站：`http://shi`[江湖工具箱使用教程与问题帮助](https://da6r699qsri.feishu.cn/docx/BuE2dsuFLoSFVExRsykcCyEen9g)`indata.com/`【附加工具使用教程：】
 
 根据自己的选择，找一个网盘去下载
 
@@ -32,7 +33,7 @@
 
 ![](img/2885f569a2335bf78242080cac6c6288.png)
 
-# 二、选定好抖音直播间开始录制直播间内容
+## 二、选定好抖音直播间开始录制直播间内容
 
 ![](img/602a676d71a2bd489933ea1a054771b2.png)
 
@@ -62,7 +63,7 @@
 
 ![](img/6d2748cb1ae5cfd4889758402da7c308.png)
 
-# 三、素材录制完毕，连接📕直播助手进行无人直播
+## 三、素材录制完毕，连接📕直播助手进行无人直播
 
 1.素材录制完毕
 
@@ -70,7 +71,7 @@
 
 ![](img/0ed69fae4f474e9b4849c78bf35501e9.png)
 
-2.手机打开📕，选择【+】，点击下方【直播】，进入后点击上方【电脑】，就会出现一个有6位数字验证码的界面，把6位数字验证码复制下来，打开📕直播助手网站https://www.xiaohongshu.com/zhibo/robs
+2.手机打开📕，选择【+】，点击下方【直播】，进入后点击上方【电脑】，就会出现一个有6位数字验证码的界面，把6位数字验证码复制下来，打开📕直播助手网站`https://www.xiaohongshu.com/zhibo/robs`
 
 把手机显示的6位数复制到白框内获取【串流秘钥】，复制后得到一串串流秘钥再次点击复制
 
@@ -86,7 +87,7 @@
 
 ![](img/80af7ecaea1e72bad37f84e9e05c0c38.png)
 
-其他设置我一般默认不动，或者你可以自行看看其他比如有码率、帧率、音频、fps**等可以适**当调高调低，还有分辨率记得一定要手动输入设置成1080x1920，切记！！
+其他设置我一般默认不动，或者你可以自行看看其他比如有码率、帧率、音频、`fps`等可以适当调高调低，还有分辨率记得一定要手动输入设置成1080x1920，切记！！
 
 ![](img/bae8c7144bc38bffd03cb36f4dbedadb.png)
 

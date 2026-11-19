@@ -1,3 +1,4 @@
+
 # 手把手教学：用n8n+RSS+飞书实现多平台热点自动抓取（含RSS源分享）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ADekdIdHJo17tUxnGM9cBYz6nac](https://xuqiwei1986.feishu.cn/docx/ADekdIdHJo17tUxnGM9cBYz6nac)
@@ -24,15 +25,15 @@
 
 ## 一、添加一个定时节点
 
-今天我们需要使用的触发节点是，定时触发节点，点添加节点，搜索schedule，然后找到这个节点添加，这个节点主要作用是可以进行定时执行，我们现在是测试，可以随便选个时间。
+今天我们需要使用的触发节点是，定时触发节点，点添加节点，搜索`schedule`，然后找到这个节点添加，这个节点主要作用是可以进行定时执行，我们现在是测试，可以随便选个时间。
 
 ![](img/e4726fa7c0c3ffa6159d134971751e51.png)
 
-## 二、添加Rss节点
+## 二、添加`Rss`节点
 
-接下来，我们添加Rss节点，这个节点可以直接订阅支持Rss的网站，不过现在国内很多网站不支持Rss，大家可以去搜索别人自建的Rss地址，当然，如果有条件，也可以自己制作，这又是另外的技术了。
+接下来，我们添加`Rss`节点，这个节点可以直接订阅支持`Rss`的网站，不过现在国内很多网站不支持`Rss`，大家可以去搜索别人自建的`Rss`地址，当然，如果有条件，也可以自己制作，这又是另外的技术了。
 
-我在文末也给大家准备了一个开源的rss地址库，大家可以去挑挑看有没有合适的。
+我在文末也给大家准备了一个开源的`rss`地址库，大家可以去挑挑看有没有合适的。
 
 因为是演示，我这里就先添加两个节点
 
@@ -66,7 +67,7 @@ https://rss.aishort.top/?type=wasi
 
 ![](img/4ab1f34efe120aa69a78a2823c68dd76.png)
 
-进入code里面，按照如下配置，添加一个来源的属性，这个代码的意思就是给所有返回的内容加一个Source字段来标记内容的来源
+进入`code`里面，按照如下配置，添加一个来源的属性，这个代码的意思就是给所有返回的内容加一个`Source`字段来标记内容的来源
 
 ![](img/dd27296774e34699920e475d9e9b3059.png)
 
@@ -76,13 +77,13 @@ https://rss.aishort.top/?type=wasi
 
 ## 四、合并数据
 
-接下来我们需要把多个rss地址获取的数据合并成一个，方便后续统一入库。
+接下来我们需要把多个`rss`地址获取的数据合并成一个，方便后续统一入库。
 
-这个时候我们需要用到这个节点，搜索merge，添加这个节点，然后把不同分支都连进来
+这个时候我们需要用到这个节点，搜索`merge`，添加这个节点，然后把不同分支都连进来
 
 ![](img/5943da0c6366f17787af84f9fa9e82f5.png)
 
-然后进入设置一下节点，模式选择append，下面那个数字代表合并多少个分支，如果你订阅的比较多，可以修改这个数字增加入口点。
+然后进入设置一下节点，模式选择`append`，下面那个数字代表合并多少个分支，如果你订阅的比较多，可以修改这个数字增加入口点。
 
 ![](img/98c460e964cfe1c0343a73adcbdd04ce.png)
 
@@ -100,21 +101,21 @@ https://rss.aishort.top/?type=wasi
 
 ![](img/38785adcd4bb68ed125b097c47b70436.png)
 
-其中 new Date(Date.now() - 1 * 24 * 60 * 60 * 1000) 这部分代表 1天之前的时间。如果大家不懂的写，直接让AI帮你写就可以了。设置之后，直接运行，可以看到过滤了些内容
+其中 `new Date(Date.now() - 1 * 24 * 60 * 60 * 1000)` 这部分代表 1天之前的时间。如果大家不懂的写，直接让AI帮你写就可以了。设置之后，直接运行，可以看到过滤了些内容
 
 ![](img/c085ba37fc40e43dd846ce73becfc27b.png)
 
 ## 六、合并项目
 
-接下来这是个重点，我们在批量获取数据，如果最终获得的项目是这种**大于1个的项目，如上图的，有一百多个项目，那么接**下来的一个节点，它就会批量执行一百次，这是n8n最容易出问题的地方，大家一定注意。我刚开始的时候就踩坑了，有一次把http请求节点放在后面，结果http请求一直报频繁请求错误，被限制。我心想我也没用循环处理，怎么就频繁请求了...。
+接下来这是个重点，我们在批量获取数据，如果最终获得的项目是这种**大于1个的项目，如上图的，有一百多个项目，那么接**接下来的一个节点，它就会批量执行一百次，这是n8n最容易出问题的地方，大家一定注意。我刚开始的时候就踩坑了，有一次把http请求节点放在后面，结果http请求一直报频繁请求错误，被限制。我心想我也没用循环处理，怎么就频繁请求了...。
 
 为了解决这个问题，如果不是需要循环处理数据的情况，就比如我们这个，我接下来应该是要把所有内容组装成一个JSON，然后一口气写入飞书表格。不可能是一条一条写的，飞书也会有调用频次的限制。
 
-所以我们接下来要用这个节点 aggregate，这个节点的作用就是可以将前面的多个项目合并到一个变量中
+所以我们接下来要用这个节点 `aggregate`，这个节点的作用就是可以将前面的多个项目合并到一个变量中
 
 ![](img/f80306f658f5914cc1e9a9fbaf089831.png)
 
-按照如下的设置之后，执行节点，所有内容数据就都到data中了，接下来在画布上看，就只有一个项目了
+按照如下的设置之后，执行节点，所有内容数据就都到`data`中了，接下来在画布上看，就只有一个项目了
 
 ![](img/1087b6b8eab9bc587599756e9864e796.png)
 
@@ -154,14 +155,14 @@ https://open.feishu.cn/document/faq/trouble-shooting/how-to-add-permissions-to-a
 
 ### 3、创建电子表格
 
-以上准备工作都完毕之后，我们添加一下创建电子表格节点，为什么不直接写表格呢？ 因为我想要把功能做的更友好一些，我要让工作流定时跑，每天都会生成一个电子表格，里面是当天的内容，搜索 feishu 找到下面这个节点，添加进来
+以上准备工作都完毕之后，我们添加一下创建电子表格节点，为什么不直接写表格呢？ 因为我想要把功能做的更友好一些，我要让工作流定时跑，每天都会生成一个电子表格，里面是当天的内容，搜索 `feishu` 找到下面这个节点，添加进来
 
 ![](img/dc4705c98298a578039125f4ab44f6cb.png)
 
 配置一下节点，设置表格标题为今天的日期，可使用如下代码
 
 ```
-{{ ((d) =&gt; `${d.getFullYear()}年${(d.getMonth()+1).toString().padStart(2,&#x27;0&#x27;)}月${d.getDate().toString().padStart(2,&#x27;0&#x27;)}日`)(new Date()) }}
+{{ ((d) => `${d.getFullYear()}年${(d.getMonth()+1).toString().padStart(2,'0')}月${d.getDate().toString().padStart(2,'0')}日`)(new Date()) }}
 ```
 
 文件token就是按照前面分配后资源后的文件夹打开
@@ -194,24 +195,24 @@ https://open.feishu.cn/document/faq/trouble-shooting/how-to-add-permissions-to-a
 // 转换函数
 function convertToTableData(data) {
   // 表头（固定）
-  const headers = [&quot;标题&quot;, &quot;链接&quot;, &quot;发布时间&quot;, &quot;内容&quot;, &quot;摘要&quot;, &quot;来源&quot;];
+  const headers = ["标题", "链接", "发布时间", "内容", "摘要", "来源"];
 
   // 数据行
-  const rows = data.map(item =&gt; [
-    item.title || &quot;&quot;,             // 标题
-    item.link || &quot;&quot;,              // 链接
-    item.pubDate || &quot;&quot;,           // 发布时间
-    item.content || &quot;&quot;,           // 内容
-    item.contentSnippet || &quot;&quot;,    // 摘要
-    item.source || &quot;&quot;             // 来源
+  const rows = data.map(item => [
+    item.title || "",             // 标题
+    item.link || "",              // 链接
+    item.pubDate || "",           // 发布时间
+    item.content || "",           // 内容
+    item.contentSnippet || "",    // 摘要
+    item.source || ""             // 来源
   ]);
 
   // 返回：表头 + 数据行
   return [headers, ...rows];
 }
-// Add a new field called &#x27;myNewField&#x27; to the JSON of the item
+// Add a new field called 'myNewField' to the JSON of the item
 // 原始数据
-const inputData = $(&#x27;Aggregate&#x27;).item.json.data;
+const inputData = $('Aggregate').item.json.data;
 console.log(inputData)
 
 
@@ -231,7 +232,7 @@ return $input.item;
 
 将前面处理好的数据还有表格id放进来，然后保存，运行就可以了。
 
-**注意注意！第一次发的时候，数据这里漏了处理，以这个处理为准 {{ JSON.st**ringify($json.tableData) }}，大家对比一下就知道差别了
+**注意注意！第一次发的时候，数据这里漏了处理，以这个处理为准 `{{ JSON.stringify($json.tableData) }}`，大家对比一下就知道差别了**
 
 ![](img/22f7039105c29585098dced20e971da5.png)
 

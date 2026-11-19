@@ -1,6 +1,7 @@
+
 # 深度意图理解教程与案例
 
-> 来源：[https://yigather.feishu.cn/docx/UulKdOtLfoTEVvxPyg0cNa78nHf](https://yigather.feishu.cn/docx/UulKdOtLfoTEVvxPyg0cNa78nHf)
+> 来源：`https://yigather.feishu.cn/docx/UulKdOtLfoTEVvxPyg0cNa78nHf`
 
 ![](img/a8b24fd21f7b62bfe7cf3790e36836c6.png)
 

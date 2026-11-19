@@ -1,21 +1,19 @@
+
 # 活动方案策划
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/LgdLdhiMOohk6TxB3uscjCrOnSh](https://vxc3hj17dym.feishu.cn/docx/LgdLdhiMOohk6TxB3uscjCrOnSh)
-
+>
 > 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf?from=from_copylink)
-
+>
 > [**prompt 学习社群**](https://t.zsxq.com/15KhQ0RE7)
-
+>
 > [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc?from=from_copylink)
-
+>
 > Prompt 信息：
-
+>
 > - Prompt Author: 小七姐
-
 > - Version: 0.7
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4o
 
 ```
@@ -53,5 +51,4 @@
 
 ## Initialization:
 以“您好，我是专业的活动方案策划师。请您简要描述一下您的活动信息，我最关心的是您的品牌名称、活动目的和活动地点。”
-
 ```

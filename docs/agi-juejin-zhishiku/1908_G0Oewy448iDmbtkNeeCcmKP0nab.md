@@ -1,8 +1,7 @@
-# 02.26-DeepSeek 开源进度 3/5：深度学习利器 DeepGEMM
-
-> 来源：[https://agijuejin.feishu.cn/docx/UWHZdldPfop91Cx1nJFcbHEnntd](https://agijuejin.feishu.cn/docx/UWHZdldPfop91Cx1nJFcbHEnntd)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 02 月 26 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/UWHZdldPfop91Cx1nJFcbHEnntd](https://agijuejin.feishu.cn/docx/UWHZdldPfop91Cx1nJFcbHEnntd)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -16,12 +15,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/664.htm)
 
 ![](img/4756abb4017873f7ae073c064b9d99ab.png)
 
-2月26日，DeepSeek“开源周”进度到3/5，开源深度学习利器DeepGEMM。它支持稠密和混合专家模型 (MoE) 的 FP8 矩阵乘法，在Hopper GPU上性能高达1350+ FP8 TFLOPS。该库基于CUDA编写，用即时编译技术，核心代码约300行，设计简洁。在多种矩阵形状下性能佳，虽某些形状表现待提升。目前仅支持NVIDIA Hopper张量核心，附开源链接https://github.com/deepseek-ai/DeepGEMM 。
+2月26日，DeepSeek“开源周”进度到3/5，开源深度学习利器DeepGEMM。它支持稠密和混合专家模型 (MoE) 的 FP8 矩阵乘法，在Hopper GPU上性能高达1350+ FP8 TFLOPS。该库基于CUDA编写，用即时编译技术，核心代码约300行，设计简洁。在多种矩阵形状下性能佳，虽某些形状表现待提升。目前仅支持NVIDIA Hopper张量核心，附开源链接`https://github.com/deepseek-ai/DeepGEMM`。
 
 ### 💡 香港推出首个人工智能大模型 HKGAI V1：基于 DeepSeek 本地化训练，支持粤语
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/588.htm)
-
 
 2月25日，由“InnoHK创新香港研发平台”资助的香港生成式人工智能研发中心发布香港首个人工智能大模型HKGAI V1。它基于DeepSeek全参数微调并本地化训练，构建了后训练技术体系，注入香港本地知识。支持两文三语，背后有香港最大本地知识库。该模型将开源，目前香港特区约70个部门试用其辅助办公应用系统，展现了香港人工智能发展成果及与内地的协同创新能力。
 
@@ -73,20 +71,17 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/537.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/674.htm)
 
-
 2月26日外媒称，Meta正商讨建设新数据中心园区支持AI项目，预计投资超2000亿美元，高层已考察多地。自ChatGPT发布，AI投资持续增长。上个月，Meta CEO扎克伯格称今年计划最高投入650亿美元扩展AI基础设施。微软2025财年计划投资约800亿美元开发数据中心，亚马逊2025年支出预计超2024年的750亿美元 。
 
 ### 💡 OpenAI Deep Research 功能向 ChatGPT Plus 用户开放，每月可查询 10 次
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/658.htm)
 
-
 2 月 26 日，OpenAI 兑现承诺，向 ChatGPT Plus、Team、Edu 和 Enterprise 用户开放 Deep Research 功能，Plus 用户每月可查询 10 次。此前需订阅每月 200 美元（约 1451 元人民币）的 Pro 计划才能体验。Pro 订阅用户查询限额从每月 100 次提至 120 次。该功能还有多项改进，如 ChatGPT 可在回答中嵌入图像等。用户点击图标使用，生成答案需 5 到 30 分钟，因计算密集，免费用户暂无法体验。
 
 ### 💡 零跑 B10 汽车内置 DeepSeek + 通义千问模型，3 月 10 日预售
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/656.htm)
-
 
 IT之家2月26日消息，零跑B10汽车3月10日开启预售，号称15万级首搭激光雷达城区智驾。该车同级唯一搭载高通8295芯片，AI算力达30TOPS，内置DeepSeek + 通义千问模型，用户可选择服务优先级，一个模型无法回答时另一个继续。此外，它搭载多模态感知技术，支持AI语音大模型与应用生态融合。内饰以“悦动几何”为理念，得房率达87.4%。
 
@@ -118,13 +113,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/640.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/637.htm)
 
-
 2 月 25 日晚，幻方量化相关人士对“DeepSeek 新一代 AI 模型 R2 提前发布”消息回应以官方消息为准。幻方量化 2023 年 7 月成立深度求索 AI 公司，今年 1 月发布 DeepSeek-R1 模型。路透社称 R2 原计划 5 月发布现加速提前，新模型或能生成更好代码、用多语言推理。此外，DeepSeek 于 2 月 21 日宣布陆续开源 5 个代码库，目前进度已至 2/5 。
 
 ### 💡 阿里万相视频生成大模型宣布开源：8.2GB 显存就能跑，测试超越 Sora
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/618.htm)
-
 
 2月25日，阿里云宣布旗下视觉生成基座模型万相2.1开源，采用宽松协议，开源两个参数规格的推理代码和权重，支持文生视频和图生视频。14B万相模型在评测中超越多个模型位列榜首，1.3B版本只需8.2GB显存，适用于二次开发等。算法设计有创新，实验在多维度测试中领先。还附上了Github、HuggingFace和魔搭社区的开源地址。
 
@@ -164,13 +157,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/538.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/507.htm)
 
-
 2月25日消息，Hugging Face数据显示，阿里千问（Qwen）开源大模型衍生模型数量突破10万，位居全球开源模型榜首。自2023年8月起，阿里云相继开源4代全尺寸、全模态模型。阿里巴巴CEO吴泳铭称未来三年将加大投入三大AI领域。此外，阿里在Qwen Chat平台上线“深度思考 (QwQ)”功能，Qwen还计划发布更轻量级、适合本地部署的QwQ-32B模型 。
 
 ### 💡 vivo 正式上线满血版 DeepSeek-R1
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/502.htm)
-
 
 2月25日，vivo正式上线满血版DeepSeek-R1，宣称“AI体验再升级，蓝心小V更智能高效”。用户将蓝心小V升级至5.2.1.22版本后可体验该模型。升级后的蓝心小V支持深度思考、联网搜索等。在vivo云端算力加持下，支持秒级响应，能无缝融合手机生态。搭载OriginOS 5的机型均支持。2月24日，vivo已为部分机型灰度更新蓝心小V至5.2.1.22版本，新增支持DeepSeek大模型能力 。
 
@@ -178,13 +169,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/502.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/503.htm)
 
-
 2月25日消息，网友发现字节跳动旗下AI助手豆包小范围测试深度思考模型，接入的不是DeepSeek模型。豆包相关负责人回应称，当前测试的是自研深度思考模型的不同实验版本。目前豆包对话页面暂未显示“深度思考”功能入口，部分灰度测试用户询问问题后，豆包答复中会显示思维链 。
 
 ### 💡 DeepSeek 重新开放 API 充值
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/467.htm)
-
 
 2月25日消息，DeepSeek重新开放API充值。此前因服务器资源紧张，本月初它一度暂停API服务充值。目前“用量信息”页面公告显示，deepseek - chat模型优惠期结束，调用价格变更为每百万输入tokens 2元，每百万输出tokens 8元 。
 
@@ -207,6 +196,8 @@ IT之家 | [阅读原文](https://www.ithome.com/0/833/458.htm)
 ### 💡 何小鹏：小鹏有信心成为中国最早量产 L3 机器人的公司之一
 
 IT之家 | [阅读原文](https://www.ithome.com/0/833/437.htm)
+
+
 
 ![](img/caacf3854542a0da71834e74e5c516ac.png)
 

@@ -1,3 +1,4 @@
+
 # 车载终端为什么不算移动智能终端？
 
 > 来源：[https://docs.feishu.cn/docx/OmkhdG6YKoVgHtxbyOIc0E7tn8c](https://docs.feishu.cn/docx/OmkhdG6YKoVgHtxbyOIc0E7tn8c)
@@ -26,7 +27,7 @@
 
 **-答9：**这个是预置应用可卸载那个通知的官方解读吧？我理解这边算不算移动智能终端，不在于技术层面，而在于这个通知的规范层面，因为汽车与手机存在场景差异，如果限制在那几类不可卸载，可能危险到驾驶安全或者汽车驾驶的基本功能。
 
-**-答10：**https://www.miit.gov.cn/zwgk/zcjd/art/2022/art_8f49df65470a46e5b38672fec7dd7461.html，是的。
+**-答10：**`https://www.miit.gov.cn/zwgk/zcjd/art/2022/art_8f49df65470a46e5b38672fec7dd7461.html`，是的。
 
 **-答11：**现在的车也是有sim卡的，只不过用户得把车拆开才能拔sim卡，这里排除的车机属于那种老式的，没法接入应用商店的终端吧。高阶智能化的汽车终端已经跟iPad，手机没区别了。
 

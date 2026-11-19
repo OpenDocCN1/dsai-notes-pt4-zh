@@ -1,3 +1,4 @@
+
 # OpenClaw实践：10分钟拥有你的个人助理
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/IGr1d3rD5ohOGgxtB62cXnTmncc](https://zinxkclpk97.feishu.cn/docx/IGr1d3rD5ohOGgxtB62cXnTmncc)
@@ -22,7 +23,7 @@ hello，朋友们，本周刚开工，春节期间被讨论更多的是一只龙
 
 接下来，我们以MiniMax的MaxClaw为例，演示如何部署和接入飞书，10分钟拥有你的龙虾🦞助理
 
-### 登录MinMax网站
+## 登录 MinMax 网站
 
 登录网站，点击立即开始
 
@@ -40,7 +41,7 @@ hello，朋友们，本周刚开工，春节期间被讨论更多的是一只龙
 
 到这里我们可以直接在网页端对话框使用它，也可以将其接入到飞书机器人。
 
-### 飞书应用授权配置
+## 飞书应用授权配置
 
 > ps：预选安装飞书客户端
 
@@ -56,9 +57,9 @@ hello，朋友们，本周刚开工，春节期间被讨论更多的是一只龙
 
 ![](img/a06df5562161c06f1895fb89aedf3ecf.png)
 
-创建完成后，可以获取到关键的appid和appsecret信息。
+创建完成后，可以获取到关键的`appid`和`appsecret`信息。
 
-2、将appid和appsecret凭证信息复制下来
+2、将`appid`和`appsecret`凭证信息复制下来
 
 ![](img/62f9e69ba8f2e23b47c51dfd61a92007.png)
 
@@ -121,7 +122,7 @@ hello，朋友们，本周刚开工，春节期间被讨论更多的是一只龙
 
 ![](img/7240be57d9327a9c8e204a7e469ebfc5.png)
 
-添加事件im.message.receive_v1，然后保存后发布新版本
+添加事件`im.message.receive_v1`，然后保存后发布新版本
 
 ![](img/246c5809ffe5e8ff73fc5e18892ea196.png)
 
@@ -137,7 +138,7 @@ hello，朋友们，本周刚开工，春节期间被讨论更多的是一只龙
 
 后续我会继续分享关于OpenClaw的基础教学和最佳实践，或许对你会有新的启发，欢迎一键三连关注，共同开启养龙虾之旅。
 
-相关链接
+## 相关链接
 
 https://agent.minimaxi.com/
 

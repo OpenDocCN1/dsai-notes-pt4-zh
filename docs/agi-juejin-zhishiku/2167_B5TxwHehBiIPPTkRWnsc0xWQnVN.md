@@ -1,8 +1,7 @@
-# 11.25-斯坦福大学、华盛顿大学研究：1000 个 AI 智能体预测人类行为，准确率最高可达 85%
-
-> 来源：[https://agijuejin.feishu.cn/docx/RT96d2HM5oHOnXxXiCecNTksn8d](https://agijuejin.feishu.cn/docx/RT96d2HM5oHOnXxXiCecNTksn8d)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 11 月 25 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/RT96d2HM5oHOnXxXiCecNTksn8d](https://agijuejin.feishu.cn/docx/RT96d2HM5oHOnXxXiCecNTksn8d)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

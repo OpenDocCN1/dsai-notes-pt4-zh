@@ -1,27 +1,16 @@
+
 # 微短剧编剧提示词00 —— 创意分析
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Oiucdr9IXoGl5kxLoN0cFyFWnNe](https://vxc3hj17dym.feishu.cn/docx/Oiucdr9IXoGl5kxLoN0cFyFWnNe)
-
+>
 > 关于作者：
-
 > 作者：猫叔
-
 > 70后AI粉丝
-
 > 创作领域：提示词、AI艺术创作
-
->
-
 > -WaytoAGI专栏作者
-
 > -MidJourney中国区核心创作者
-
 > -可灵 & 即梦超级创作者
-
->
-
 > AI艺术与创作引领者，推动AI创作在中国区的发展，启发了众多创作者加入AI艺术领域。近期专注提示词设计，推动创作效率和表现力的提升。
-
 > 👸号：AI替代人类
 
 这个主要用于：你已经有了一个小创意，想让AI替你“编”下去，或者你不那么确定这个创意如何，那么通过不断地使用这个系统，你可以获得更多的创意发散方向，以及没有想到的细节。

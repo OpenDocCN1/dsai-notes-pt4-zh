@@ -1,3 +1,4 @@
+
 # Synthesia
 
 > 来源：[https://agispace.feishu.cn/docx/MHK4dbScqoAxQ9xyexPcT4xDnAR](https://agispace.feishu.cn/docx/MHK4dbScqoAxQ9xyexPcT4xDnAR)
@@ -10,7 +11,7 @@ Synthesia是一款基于人工智能的视频生成平台，它能够将你的�
 
 Synthesia由来自加州大学洛杉矶分校、斯坦福大学、TUM和剑桥的人工智能研究人员和企业家团队于2017年创立。
 
-## **应用场景**
+## 应用场景
 
 **企业培训**：制作培训视频，帮助员工快速掌握新知识。
 
@@ -20,13 +21,13 @@ Synthesia由来自加州大学洛杉矶分校、斯坦福大学、TUM和剑桥�
 
 **教育内容**：制作教育视频，提高学习效率和兴趣。
 
-**如何使用Synthesia？**
+### 如何使用Synthesia？
 
 ![](img/00456578aa11ff7942df400866f4cd4f.png)
 
 ![](img/a5bbbe1c40b8406beb9f6897293fc3f1.png)
 
-**注册账号**：访问官网 https://www.synthesia.io
+**注册账号**：访问 https://www.synthesia.io
 
 **选择模板**：选择一个你喜欢的视频模板。
 
@@ -34,8 +35,10 @@ Synthesia由来自加州大学洛杉矶分校、斯坦福大学、TUM和剑桥�
 
 **选择虚拟人物**：挑选一个合适的虚拟人物。
 
-**收费情况**
+### 收费情况
 
 ![](img/f5bc43ab1fc13b834706d8f3166e241e.png)
 
-**使用条件：**需要特殊网络
+### 使用条件
+
+需要特殊网络

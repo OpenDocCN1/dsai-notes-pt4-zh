@@ -1,3 +1,4 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/EAISdck7xopZLjxOz5HcvMzUnPf](https://qqs7y1hozd1.feishu.cn/docx/EAISdck7xopZLjxOz5HcvMzUnPf)
@@ -6,7 +7,7 @@
 # Add the project root to the Python path
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), &quot;..&quot;)))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pandas as pd
 import time
@@ -24,8 +25,8 @@ def benchmark_math_agent(limit: int = 10):
     results = []
 
     for idx, row in df.iterrows():
-        question = row[&quot;question&quot;]
-        expected = row[&quot;gold&quot;]
+        question = row["question"]
+        expected = row["gold"]
         start = time.time()
 
         try:
@@ -35,20 +36,20 @@ def benchmark_math_agent(limit: int = 10):
                 correct += 1
 
             results.append({
-                &quot;Question&quot;: question,
-                &quot;Expected&quot;: expected,
-                &quot;Predicted&quot;: response,
-                &quot;Correct&quot;: is_correct,
-                &quot;TimeTakenSec&quot;: round(time.time() - start, 2)
+                "Question": question,
+                "Expected": expected,
+                "Predicted": response,
+                "Correct": is_correct,
+                "TimeTakenSec": round(time.time() - start, 2)
             })
 
         except Exception as e:
             results.append({
-                &quot;Question&quot;: question,
-                &quot;Expected&quot;: expected,
-                &quot;Predicted&quot;: f&quot;Error: {e}&quot;,
-                &quot;Correct&quot;: False,
-                &quot;TimeTakenSec&quot;: None
+                "Question": question,
+                "Expected": expected,
+                "Predicted": f"Error: {e}",
+                "Correct": False,
+                "TimeTakenSec": None
             })
 
     df_result = pd.DataFrame(results)

@@ -1,30 +1,31 @@
+
 # AGI 掘金视界周刊第 11 期
 
-> 来源：[https://agijuejin.feishu.cn/docx/BOxSdX8eRonLrSxqXPkc0G7lnWh](https://agijuejin.feishu.cn/docx/BOxSdX8eRonLrSxqXPkc0G7lnWh)
+> 来源：https://agijuejin.feishu.cn/docx/BOxSdX8eRonLrSxqXPkc0G7lnWh
 
 本周亮点：
 
-1.  Gemma 3 发布：单 GPU 可运行的最强开源模型 ： Google DeepMind 发布 Gemma 3 开源模型系列，基于 Gemini 2.0 技术，提供 1B 至 27B 多种尺寸选择，单 GPU 即可高效运行。支持 35+ 种语言、多模态推理及函数调用，大幅降低使用门槛，加速开源 AI 普及。
+1. Gemma 3 发布：单 GPU 可运行的最强开源模型：Google DeepMind 发布 Gemma 3 开源模型系列，基于 Gemini 2.0 技术，提供 1B 至 27B 多种尺寸选择，单 GPU 即可高效运行。支持 35+ 种语言、多模态推理及函数调用，大幅降低使用门槛，加速开源 AI 普及。
 
-1.  Gemini 2.0 Flash 原生图像生成开放实验 ： Google 开放 Gemini 2.0 Flash 原生图像生成功能，开发者可率先体验多模态大模型的强大图像创作能力，尤其在文本渲染和世界知识理解方面表现出色，为多模态 AI 应用开辟新方向。
+2. Gemini 2.0 Flash 原生图像生成开放实验：Google 开放 Gemini 2.0 Flash 原生图像生成功能，开发者可率先体验多模态大模型的强大图像创作能力，尤其在文本渲染和世界知识理解方面表现出色，为多模态 AI 应用开辟新方向。
 
-1.  **OpenAI 智能体工具链 Responses** API & Agents SDK 发布 ： OpenAI 重磅推出 Responses API，统一 Chat Completions 和 Assistants API 接口，内置网络搜索、文件搜索等实用工具，并发布开源 Agents SDK，四行代码即可构建智能体应用，大幅简化 Agent 开发流程。
+3. OpenAI 智能体工具链 Responses API & Agents SDK 发布：OpenAI 重磅推出 Responses API，统一 Chat Completions 和 Assistants API 接口，内置网络搜索、文件搜索等实用工具，并发布开源 Agents SDK，四行代码即可构建智能体应用，大幅简化 Agent 开发流程。
 
-1.  Open-Sora 2.0：开源视频生成模型成本革命 ： 11B 参数的 Open-Sora 2.0 开源模型，实现媲美 30B 模型的视频生成效果，训练成本仅 20 万美元，大幅降低 10 倍。模型权重、代码、流程全面开源，推动高质量、低成本视频生成技术发展。
+4. Open-Sora 2.0：开源视频生成模型成本革命：11B 参数的 Open-Sora 2.0 开源模型，实现媲美 30B 模型的视频生成效果，训练成本仅 20 万美元，大幅降低 10 倍。模型权重、代码、流程全面开源，推动高质量、低成本视频生成技术发展。
 
-1.  腾讯混元快思考 Turbo S 模型：推理速度大幅跃升 ： 腾讯混元发布新一代旗舰模型 Turbo S，首字响应时间降低 44%，吞吐提升 100%，API 定价大幅降低。采用 Hybrid Mamba Transformer 架构，兼顾线性复杂度和全局建模能力，提升用户体验并降低使用成本。
+5. 腾讯混元快思考 Turbo S 模型：推理速度大幅跃升：腾讯混元发布新一代旗舰模型 Turbo S，首字响应时间降低 44%，吞吐提升 100%，API 定价大幅降低。采用 Hybrid Mamba Transformer 架构，兼顾线性复杂度和全局建模能力，提升用户体验并降低使用成本。
 
-1.  模型上下文协议 (MCP)：引领智能体开发新范式 ： Anthropic 等力推 MCP 协议，旨在统一 AI 模型与外部工具的连接标准，大幅简化 Agent 集成复杂度，被誉为 AI 领域的 "USB-C"，有望成为智能体开发的关键基础设施。
+6. 模型上下文协议 (MCP)：引领智能体开发新范式：Anthropic 等力推 MCP 协议，旨在统一 AI 模型与外部工具的连接标准，大幅简化 Agent 集成复杂度，被誉为 AI 领域的 "USB-C"，有望成为智能体开发的关键基础设施。
 
-1.  长文本向量模型检索局限性： 4K Tokens 成瓶颈？ ： Jina AI 实验揭示，当前向量模型在处理超过 4K Tokens 长文本时，检索准确率显著下降，长文本理解能力面临挑战，引发对长文本检索技术的深入思考与改进需求。
+7. 长文本向量模型检索局限性：4K Tokens 成瓶颈？：Jina AI 实验揭示，当前向量模型在处理超过 4K Tokens 长文本时，检索准确率显著下降，长文本理解能力面临挑战，引发对长文本检索技术的深入思考与改进需求。
 
-1.  Gemini 应用升级：多模态能力与用户体验再提升 ： Gemini 应用迎来重大更新，搭载更强大的 2.0 Flash Thinking 模型，支持更长上下文窗口和文件上传，并推出个性化 Gems 功能，多模态能力和用户交互体验显著提升。
+8. Gemini 应用升级：多模态能力与用户体验再提升：Gemini 应用迎来重大更新，搭载更强大的 2.0 Flash Thinking 模型，支持更长上下文窗口和文件上传，并推出个性化 Gems 功能，多模态能力和用户交互体验显著提升。
 
-1.  AI 笔记神器 NotebookLM：多场景应用保姆级教程 ： Google AI 笔记工具 NotebookLM 功能持续增强，在文献梳理、速读学习、会议纪要等多种场景展现高效应用价值。保姆级教程助您快速掌握 NotebookLM 使用技巧，提升学习与工作效率。
+9. AI 笔记神器 NotebookLM：多场景应用保姆级教程：Google AI 笔记工具 NotebookLM 功能持续增强，在文献梳理、速读学习、会议纪要等多种场景展现高效应用价值。保姆级教程助您快速掌握 NotebookLM 使用技巧，提升学习与工作效率。
 
-1.  LeCun 洞察： AI 发展需理解物理世界，突破语言限制 ： LeCun 高度评价 DeepSeek 开源贡献，同时强调当前 AI 系统在理解物理世界方面仍显不足，认为 AI 发展需超越文本训练，理解真实世界的复杂性，为 AGI 发展指明新方向。
+10. LeCun 洞察：AI 发展需理解物理世界，突破语言限制：LeCun 高度评价 DeepSeek 开源贡献，同时强调当前 AI 系统在理解物理世界方面仍显不足，认为 AI 发展需超越文本训练，理解真实世界的复杂性，为 AGI 发展指明新方向。
 
-# [Gemma 3 介绍：可在单 G](https://blog.google/technology/developers/gemma-3/)PU 或 TPU 上运行的最具能力的模型
+# [Gemma 3 介绍：可在单 GPU 或 TPU 上运行的最具能力的模型](https://blog.google/technology/developers/gemma-3/)
 
 ·03-12·1136 字 (约 5 分钟)·AI 评分: 93 🌟🌟🌟🌟🌟
 
@@ -48,7 +49,7 @@ Gemma 3 是谷歌最新一代的开源模型，相比之前的 Gemma 版本有�
 
 Google 发布了 Gemini 2.0 Flash 的实验版本，该版本引入了原生图像生成功能，并已向所有 Google AI Studio 支持的区域的开发者开放。Gemini 2.0 Flash 结合了多模态输入、增强的推理能力和自然语言理解，可以根据用户需求生成图像。文章通过多个示例展示了 Gemini 2.0 Flash 在文本图像结合、会话式图像编辑、世界知识理解和文本渲染方面的优势。开发者可以通过 Gemini API 开始使用 Gemini 2.0 Flash，并根据官方文档了解更多关于图像生成的信息。Google 鼓励开发者提供反馈，以帮助最终确定生产版本。
 
-# [OpenAI 深夜大招暴打 Manus！智能体全](https://mp.weixin.qq.com/s/BwFC7TvT34yo5gt6DsrLMQ)家桶杀器一统 API，4 行代码轻松上手
+# [OpenAI 深夜大招暴打 Manus！智能体全家桶杀器一统 API，4 行代码轻松上手](https://mp.weixin.qq.com/s/BwFC7TvT34yo5gt6DsrLMQ)
 
 ---
 
@@ -56,7 +57,7 @@ Google 发布了 Gemini 2.0 Flash 的实验版本，该版本引入了原生图�
 
 文章介绍了 OpenAI 发布的一系列用于简化智能体开发的工具和 API，包括：Responses API，它结合了 Chat Completions API 的简单性和 Assistants API 的工具使用功能，提供统一的 API 接口；内置三大工具：网络搜索、文件搜索和计算机使用；Agents SDK，一个开源的 SDK，用于编排单智能体和多智能体工作流程。这些工具旨在降低智能体开发的门槛，提高开发效率，并使开发者能够更轻松地构建功能强大的智能体应用。此外，OpenAI 计划在未来弃用 Assistants API，并提供迁移指南。
 
-# [11B 模型拿开源视频生成 SOTA！仅用 224](https://www.qbitai.com/2025/03/263979.html) 张 GPU 训练，训练成本省 10 倍
+# [11B 模型拿开源视频生成 SOTA！仅用 224 张 GPU 训练，训练成本省 10 倍](https://www.qbitai.com/2025/03/263979.html)
 
 ---
 
@@ -88,7 +89,7 @@ Open-Sora 2.0 是新发布的开源视频生成模型，它以 11B 的参数规�
 
 Jina AI 团队通过实验，深入研究了向量模型在长文本处理中的性能瓶颈。实验结果表明，随着文本长度增加，向量模型的检索准确率和区分有用信息的能力显著下降，例如分离度指标在 1000 词元时下降 60%，AUC 降至 0.66。即使采用查询扩展和关键词匹配等优化策略，也难以有效改善长文本检索效果。研究揭示了当前向量模型在长文本理解和推理方面的局限性，并通过归一化相似度得分、分离度等关键指标，对向量模型在长文本处理能力上进行了深入分析，为未来长文本检索技术的发展方向提供了有价值的参考。
 
-# [什么是模型上下文协议（MCP）？它](https://juejin.cn/post/7482624087828299786)如何比传统 API 更简单地集成 AI？
+# [什么是模型上下文协议（MCP）？它如何比传统 API 更简单地集成 AI？](https://juejin.cn/post/7482624087828299786)
 
 ---
 
@@ -96,7 +97,7 @@ Jina AI 团队通过实验，深入研究了向量模型在长文本处理中的
 
 本文深入浅出地介绍了模型上下文协议（MCP）的概念、工作原理及其与传统 API 的区别。MCP 旨在通过统一的接口，简化 AI 模型与各种外部工具和数据源的连接。文章解释了 MCP 如何通过单一协议、动态发现和双向通信，解决传统 API 集成复杂、扩展性差等问题。通过旅行规划助手、智能 IDE 和复杂数据分析等应用案例，展示了 MCP 在实际应用中的优势。同时，文章也探讨了传统 API 在特定场景下的适用性，并提供了快速集成 MCP 的步骤。MCP 不仅仅是一种 API，更是一个强大的连接框架，让 AI 应用能更智能、更动态地融入丰富的上下文环境，快速实现复杂的功能互动。
 
-# [1 次搭建完胜 1 亿次编码，MCP 硅谷疯传！An](https://juejin.cn/post/7482620993283637289)thropic 协议解锁智能体「万能手」
+# [1 次搭建完胜 1 亿次编码，MCP 硅谷疯传！Anthropic 协议解锁智能体「万能手」](https://juejin.cn/post/7482620993283637289)
 
 ---
 
@@ -120,7 +121,7 @@ Jina AI 团队通过实验，深入研究了向量模型在长文本处理中的
 
 文章梳理了 AI Agent、MCP 和 OpenAI Responses API 等近期 AI 领域的热点概念。AI Agent 是自主行动的智能实体，MCP 是一种标准化 LLM 与外部系统集成的协议，而 OpenAI Responses API 则是一种便捷调用 OpenAI 大模型能力的方式，是未来在 OpenAI 平台构建 Agent 的主线。OpenAI 为开发者推出了一系列构建智能体的新工具，包括集成了 Chat Completions API 和 Assistants API 优点的 Responses API，以及网络搜索、文件搜索和计算机操作等内置工具。此外，还介绍了用于简化多 Agent 工作流编排的开源 Agents SDK。OpenAI 正在努力使 Responses API 在功能上全面覆盖 Assistants API，并计划在 2026 年中期正式发布 Assistants API 的弃用通知。文章还提到了这些技术面临的挑战，如上下文长度限制和结果正确性等，并强调了在 Agent 应用中人仍然需要发挥作用。
 
-# [Github 超 2 万星，OpenMa](https://mp.weixin.qq.com/s/vbz5Wzc7b6H762d5STVOPw)nus 核心作者聊 Agent 发展趋势
+# [Github 超 2 万星，OpenManus 核心作者聊 Agent 发展趋势](https://mp.weixin.qq.com/s/vbz5Wzc7b6H762d5STVOPw)
 
 ---
 

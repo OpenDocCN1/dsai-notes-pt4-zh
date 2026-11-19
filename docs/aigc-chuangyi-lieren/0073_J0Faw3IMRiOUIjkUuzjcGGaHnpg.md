@@ -1,8 +1,7 @@
+
 # 07-创建聊天应用
 
 > 来源：[https://aigcreative.feishu.cn/docx/MiDqd9UwEoZTVHxiZ4Uce0Vsnjd](https://aigcreative.feishu.cn/docx/MiDqd9UwEoZTVHxiZ4Uce0Vsnjd)
-
->
 
 通过之前的学习，我们了解了如何构建文本生成应用程序，接下来让我们看看聊天应用程序是如何实现的
 
@@ -10,33 +9,33 @@
 
 我们需要回答的一些问题是：
 
-+   构建应用程序 我们如何针对特定场景高效构建并无缝集成这些人工智能驱动的应用程序？
++ 构建应用程序：我们如何针对特定场景高效构建并无缝集成这些人工智能驱动的应用程序？
 
-+   [有效监控 部署后，我们如](https://www.microsoft.com/ai/responsible-ai?WT.mc_id=academic-105485-koreyst)何监控并确保应用程序在功能方面遵守负责任的人工智能六项原则?
++ 有效监控：部署后，我们如何监控并确保应用程序在功能方面遵守负责任的人工智能六项原则?
 
 随着我们进一步进入自动化和无缝人机交互的时代，了解生成式人工智能如何改变聊天应用程序的范围、深度和适应性变得至关重要。 本课程将研究支持这些复杂系统的架构的各个方面，深入研究针对特定场景进行微调的方法，并评估和确保负责任的人工智能部署相关的指标和注意事项。
 
-## [本章概述](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e6%9c%ac%e7%ab%a0%e6%a6%82%e8%bf%b0)
+## 本章概述
 
 在本章中，您将学习到：
 
-+   有效构建和集成聊天应用程序的技术。
++ 有效构建和集成聊天应用程序的技术。
 
-+   如何对应用程序进行定制和微调。
++ 如何对应用程序进行定制和微调。
 
-+   有效监控聊天应用程序的策略和注意事项。
++ 有效监控聊天应用程序的策略和注意事项。
 
-## [学习目标](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87)
+## 学习目标
 
 在完成本章的学习，您将能够：
 
-+   描述构建聊天应用程序并将其集成到现有系统中的注意事项。
++ 描述构建聊天应用程序并将其集成到现有系统中的注意事项。
 
-+   针对特定场景定制聊天应用程序。
++ 针对特定场景定制聊天应用程序。
 
-+   确定关键指标和注意事项，以有效监控和维护人工智能聊天应用程序的质量。
++ 确定关键指标和注意事项，以有效监控和维护人工智能聊天应用程序的质量。
 
-+   确保聊天应用程序负责任地使用人工智能。
++ 确保聊天应用程序负责任地使用人工智能。
 
 ## 将生成式人工智能集成到聊天应用程序中
 
@@ -44,7 +43,7 @@
 
 读完本节后，您将具备高效构建和合并聊天应用程序所需的专业知识。
 
-### [聊天机器人还是聊天应用程序？](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e8%81%8a%e5%a4%a9%e6%9c%ba%e5%99%a8%e4%ba%ba%e8%bf%98%e6%98%af%e8%81%8a%e5%a4%a9%e5%ba%94%e7%94%a8%e7%a8%8b%e5%ba%8f%ef%bc%9f)
+### 聊天机器人还是聊天应用程序？
 
 在我们深入构建聊天应用程序之前，让我们将“传统聊天机器人”与“生成式人工智能驱动的人工智能”进行比较，它们具有不同的角色和功能。 传统聊天机器人的主要目的是自动执行特定的对话任务，例如回答常见问题或跟踪包裹。 它通常由基于规则的逻辑或复杂的人工智能算法控制。 相比之下，人工智能驱动的聊天应用程序是一个更加广泛的环境，旨在促进各种形式的数字通信，例如用户之间的文本、语音和视频聊天。 其定义特征是集成了生成式人工智能模型，该模型可以模拟细致入微的拟人对话，并根据各种输入和上下文提示生成响应。 生成式人工智能驱动的聊天应用程序可以参与开放领域的讨论，适应不断变化的对话环境，甚至产生创造性或复杂的对话。
 
@@ -54,41 +53,41 @@
 
 在构建聊天应用程序时，重要的第一步是评估已有的内容。 基于多种原因，使用 SDK 和 API 构建聊天应用程序是一种有利的策略。 通过集成成熟的 SDK 和 API，可以战略性地定位您的应用程序，以实现长期成功，并解决可扩展性和维护问题。
 
-+   加快开发过程并减少开销：依靠预构建的功能而不是自己构建它们的昂贵过程，可以让您专注于您可能发现更重要的应用程序的其他方面，例如业务逻辑。
++ 加快开发过程并减少开销：依靠预构建的功能而不是自己构建它们的昂贵过程，可以让您专注于您可能发现更重要的应用程序的其他方面，例如业务逻辑。
 
-+   更好的性能：从头开始构建功能时，您最终会问自己“它如何扩展？这个应用程序是否能够处理突然涌入的用户？” 维护功能好的 SDK 和 API 通常针对这些问题内置了解决方案。
++ 更好的性能：从头开始构建功能时，您最终会问自己“它如何扩展？这个应用程序是否能够处理突然涌入的用户？” 维护功能好的 SDK 和 API 通常针对这些问题内置了解决方案。
 
-+   更容易维护：更新和改进更易于管理，因为大多数 API 和 SDK 在发布新版本时只需要更新库。
++ 更容易维护：更新和改进更易于管理，因为大多数 API 和 SDK 在发布新版本时只需要更新库。
 
-+   获得尖端技术：利用经过微调和在广泛数据集上训练的模型为您的应用程序提供自然语言功能。
++ 获得尖端技术：利用经过微调和在广泛数据集上训练的模型为您的应用程序提供自然语言功能。
 
-访问 SDK 或 API 的功能通常涉及获取使用所提供服务的许可，这通常是通过使用唯一 key 或身份验证[ token 来](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/python/oai-assignment.ipynb?wt.mc_id=academic-105485-koreyst)实现的。 我们将使用 OpenAI Python library 来探索它是什么样子。 您也可以在本章的notebook 中自行尝试。
+访问 SDK 或 API 的功能通常涉及获取使用所提供服务的许可，这通常是通过使用唯一 key 或身份验证 token 来实现的。 我们将使用 OpenAI Python library 来探索它是什么样子。 您也可以在本章的notebook 中自行尝试。
 
-```
+```python
 import os
 from openai import OpenAI
-API_KEY = os.getenv(&quot;OPENAI_API_KEY&quot;,&quot;&quot;)
+API_KEY = os.getenv("OPENAI_API_KEY","")
 client = OpenAI(
     api_key=API_KEY
     )
-chat_completion = client.chat.completions.create(model=&quot;gpt-3.5-turbo&quot;, messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Suggest two titles for an instructional lesson on chat applications for generative AI.&quot;}])
+chat_completion = client.chat.completions.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Suggest two titles for an instructional lesson on chat applications for generative AI."}])
 ```
 
 上面的示例使用 GPT-3.5 Turbo 模型来完成提示，但请注意，API 密钥是在执行此操作之前设置的。 如果未设置 key，您将收到以下错误。
 
-```
-AuthenticationError: No API key provided. You can set your API key in code using &#x27;openai.api_key = &lt;API-KEY&gt;&#x27;, or you can set the environment variable OPENAI_API_KEY=&lt;API-KEY&gt;). If your API key is stored in a file, you can point the openai module at it with &#x27;openai.api_key_path = &lt;PATH&gt;&#x27;. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+```text
+AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
 ```
 
-## [用户体验（UX）](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e7%94%a8%e6%88%b7%e4%bd%93%e9%aa%8c%ef%bc%88ux%ef%bc%89)
+## 用户体验（UX）
 
 一般用户体验原则适用于聊天应用程序，但由于涉及机器学习组件，这里有一些额外考虑因素，这就变得特别重要。
 
-+   解决模糊性的机制：生成式人工智能模型偶尔会生成模糊的答案。 如果用户遇到此问题，允许用户要求进行澄清可能会有所帮助。
++ 解决模糊性的机制：生成式人工智能模型偶尔会生成模糊的答案。 如果用户遇到此问题，允许用户要求进行澄清可能会有所帮助。
 
-+   上下文保留：先进的生成式人工智能模型能够记住对话中的上下文，这可能是用户体验的必要资产。 赋予用户控制和管理上下文的能力可以改善用户体验，但会带来保留敏感用户信息的风险。 考虑这些信息的存储时间（例如引入保留策略）可以平衡上下文需求和隐私。
++ 上下文保留：先进的生成式人工智能模型能够记住对话中的上下文，这可能是用户体验的必要资产。 赋予用户控制和管理上下文的能力可以改善用户体验，但会带来保留敏感用户信息的风险。 考虑这些信息的存储时间（例如引入保留策略）可以平衡上下文需求和隐私。
 
-+   个性化：人工智能模型具有学习和适应能力，为用户提供个性化体验。 通过用户个人资料等功能定制用户体验，不仅让用户感到亲切，而且还有助于他们得到特定答案，创造更高效、令人满意的交互。
++ 个性化：人工智能模型具有学习和适应能力，为用户提供个性化体验。 通过用户个人资料等功能定制用户体验，不仅让用户感到亲切，而且还有助于他们得到特定答案，创造更高效、令人满意的交互。
 
 个性化的一个例子是 OpenAI 的 ChatGPT 中的“自定义指令”设置。 它允许您提供有关您自己的信息，这些信息可能是您的提示的重要背景。 以下是自定义指令的示例。
 
@@ -98,57 +97,57 @@ AuthenticationError: No API key provided. You can set your API key in code using
 
 ![](img/8cdf46b0baacafd54ca334259f94a2ad.png)
 
-### [微软的 LLMs 系统消息框架](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%be%ae%e8%bd%af%e7%9a%84-llms-%e7%b3%bb%e7%bb%9f%e6%b6%88%e6%81%af%e6%a1%86%e6%9e%b6)
+### 微软的 LLMs 系统消息框架
 
-[微软指引](https://learn.microsoft.com/azure/ai-services/openai/concepts/system-message#define-the-models-output-format?WT.mc_id=academic-105485-koreyst) 用于在 LLM 生成响应时编写有效的系统消息，分为 4 个区域：
+微软指引用于在 LLM 生成响应时编写有效的系统消息，分为 4 个区域：
 
-1.  定义模型的适用对象及其功能和限制。
+1. 定义模型的适用对象及其功能和限制。
 
-1.  定义模型的输出格式。
+2. 定义模型的输出格式。
 
-1.  提供展示模型预期行为的具体示例。
+3. 提供展示模型预期行为的具体示例。
 
-1.  提供额外的行为护栏。
+4. 提供额外的行为护栏。
 
-### [辅助功能](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e8%be%85%e5%8a%a9%e5%8a%9f%e8%83%bd)
+### 辅助功能
 
 无论用户是否有视觉、听觉、运动或认知障碍，设计良好的聊天应用程序都应该可供所有人使用。 以下列表详细列出了旨在增强各种用户障碍的可访问性的特定功能。
 
-+   针对视觉障碍的功能：高对比度主题和可调整大小的文本、屏幕阅读器兼容性。
++ 针对视觉障碍的功能：高对比度主题和可调整大小的文本、屏幕阅读器兼容性。
 
-+   针对听觉障碍的功能：文本转语音和语音转文本功能、音频通知的视觉提示。
++ 针对听觉障碍的功能：文本转语音和语音转文本功能、音频通知的视觉提示。
 
-+   针对运动障碍的功能：键盘导航支持、语音命令。
++ 针对运动障碍的功能：键盘导航支持、语音命令。
 
-+   认知障碍功能：简化的语言选项。
++ 认知障碍功能：简化的语言选项。
 
-## [特定领域语言模型的定制和微调](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e7%89%b9%e5%ae%9a%e9%a2%86%e5%9f%9f%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b%e7%9a%84%e5%ae%9a%e5%88%b6%e5%92%8c%e5%be%ae%e8%b0%83)
+## 特定领域语言模型的定制和微调
 
 想象一下，一个聊天应用程序可以理解您公司的行话并预测其用户群通常有的特定查询。 有几种方法值得一提：
 
-+   利用 DSL 模型。 DSL 代表领域特定语言。 您可以利用在特定领域训练的所谓 DSL 模型来了解其概念和场景。
++ 利用 DSL 模型。 DSL 代表领域特定语言。 您可以利用在特定领域训练的所谓 DSL 模型来了解其概念和场景。
 
-+   应用微调。 微调是使用特定数据进一步训练模型的过程。
++ 应用微调。 微调是使用特定数据进一步训练模型的过程。
 
-## [定制：使用 DSL](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%ae%9a%e5%88%b6%ef%bc%9a%e4%bd%bf%e7%94%a8-dsl)
+## 定制：使用 DSL
 
 利用特定于领域的语言模型（DSL 模型）可以通过提供专门的、上下文相关的交互来增强用户参与度。 它是一个经过训练或微调的模型，可以理解和生成与特定领域、行业或主题相关的文本。 使用 DSL 模型的选项多种多样，从头开始训练到通过 SDK 和 API 使用预先存在的模型。 另一种选择是微调，其中涉及采用现有的预训练模型并将其适应特定领域。
 
-## [定制：应用微调](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%ae%9a%e5%88%b6%ef%bc%9a%e5%ba%94%e7%94%a8%e5%be%ae%e8%b0%83)
+## 定制：应用微调
 
 当预训练模型在专门领域或特定任务中达不到要求时，通常会考虑微调。
 
 例如，医疗查询很复杂并且需要大量上下文。 当医疗专业人员诊断患者时，它会基于多种因素，例如生活方式或既往病史，甚至可能依赖最近的医学期刊来验证他们的诊断。 在这种微妙的场景中，通用的人工智能聊天应用程序不可能成为可靠的来源。
 
-### [场景：医疗应用**](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%9c%ba%e6%99%af%ef%bc%9a%e5%8c%bb%e7%96%97%e5%ba%94%e7%94%a8)
+### 场景：医疗应用
 
 考虑一个聊天应用程序，旨在通过提供治疗指南、药物相互作用或最新研究结果的快速参考来帮助医生。
 
 通用模型可能足以回答基本的医学问题或提供一般建议，但可能会遇到以下问题：
 
-+   高度具体或复杂的案例。 例如，神经科医生可能会询问应用程序：“目前治疗儿科患者耐药性癫痫的最佳实践是什么？”
++ 高度具体或复杂的案例。 例如，神经科医生可能会询问应用程序：“目前治疗儿科患者耐药性癫痫的最佳实践是什么？”
 
-+   缺乏最新进展。 通用模型可能很难提供包含神经学和药理学最新进展的当前答案。
++ 缺乏最新进展。 通用模型可能很难提供包含神经学和药理学最新进展的当前答案。
 
 在此类情况下，使用专门的医疗数据集对模型进行微调可以显着提高其更准确、更可靠地处理这些复杂的医疗查询的能力。 这需要访问大型且相关的数据集，这些数据集代表了需要解决的特定领域的挑战和问题。
 
@@ -156,7 +155,7 @@ AuthenticationError: No API key provided. You can set your API key in code using
 
 本节概述了“高质量”聊天应用程序的标准，其中包括捕获可操作的指标以及遵守负责任地利用人工智能技术的框架。
 
-### [关键指标](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%85%b3%e9%94%ae%e6%8c%87%e6%a0%87)
+### 关键指标
 
 为了保持应用程序的高质量性能，跟踪关键指标和注意事项至关重要。 这些测量不仅可以确保应用程序的功能，还可以评估人工智能模型和用户体验的质量。 下面的列表涵盖了需要考虑的基本、人工智能和用户体验指标。
 
@@ -164,7 +163,9 @@ AuthenticationError: No API key provided. You can set your API key in code using
 
 Microsoft 的 Responsible AI 方法确定了指导 AI 开发和使用的六项原则。 以下是聊天开发人员应该考虑的原则、定义以及聊天开发人员应该考虑的事项以及为什么他们应该认真对待它们。
 
-## [作业](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e4%bd%9c%e4%b8%9a)
+## 作业
+
+
 
 请查看[作业](https://microsoft.github.io/generative-ai-for-beginners/#/07-building-chat-applications/python?wt.mc_id=academic-105485-koreyst)，它将引导您完成一系列练习，从运行第一个聊天提示到对文本进行分类和总结等等。
 

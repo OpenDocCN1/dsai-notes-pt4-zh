@@ -1,10 +1,12 @@
+
+
 # 老金用AI写了半年代码才知道,原来一直少装了这个神器
 
 > 来源：[https://my.feishu.cn/docx/VXhDd6ZN1oC3dmx38fJcVwMAnqf](https://my.feishu.cn/docx/VXhDd6ZN1oC3dmx38fJcVwMAnqf)
 
 老金我是产品经理,英语没过四级。
 
-但老金我用AI写代码,写了快一年了。
+老金我用AI写代码,写了快一年了。
 
 Claude Code、Codex CLI、Gemini CLI、Cursor、Windsurf都测过
 
@@ -24,7 +26,7 @@ MCP服务、Git命令、CCR路由、API配置...都会了。
 
 2025年5月开始学Claude Code,打开黑窗口让我输命令,老金我懵了。
 
-**输入个啥？马什么梅？**
+输入个啥？马什么梅？
 
 那个月天天研究到凌晨,6月份总算会用,7-10月成了熟练用户。
 
@@ -40,21 +42,21 @@ MCP服务、Git命令、CCR路由、API配置...都会了。
 
 **工作流(Workflow):**
 
-+   /zcf:workflow - 六段式开发流程(研究→构思→计划→执行→优化→评审)
++   `/zcf:workflow` - 六段式开发流程(研究→构思→计划→执行→优化→评审)
 
-+   /zcf:feat - 新功能开发流程(分plan和UI阶段,带UI/UX设计师)
++   `/zcf:feat` - 新功能开发流程(分plan和UI阶段,带UI/UX设计师)
 
-+   /zcf:git-commit - Git自动化提交(Conventional Commits规范+emoji支持)
++   `/zcf:git-commit` - Git自动化提交(Conventional Commits规范+emoji支持)
 
-+   /zcf:git-rollback - 交互式代码回滚(支持reset/revert模式)
++   `/zcf:git-rollback` - 交互式代码回滚(支持reset/revert模式)
 
-+   /zcf:git-cleanBranches - 清理已合并或过期分支
++   `/zcf:git-cleanBranches` - 清理已合并或过期分支
 
-+   /zcf:git-worktree - Git工作树管理(多分支并行开发)
++   `/zcf:git-worktree` - Git工作树管理(多分支并行开发)
 
-+   /zcf:init-project - 初始化项目AI上下文
++   `/zcf:init-project` - 初始化项目AI上下文
 
-+   /bmad-init - 企业级敏捷开发工作流(含PO、PM、架构师团队)
++   `/bmad-init` - 企业级敏捷开发工作流(含PO、PM、架构师团队)
 
 MCP服务(Model Context Protocol):
 
@@ -98,7 +100,7 @@ MCP服务(Model Context Protocol):
 
 老金我深吸一口气,决定试试ZCF。
 
-## npx zcf:3分钟搞定,老金我都不敢相信
+## `npx zcf`:3分钟搞定,老金我都不敢相信
 
 老金我打开终端(其实就是黑窗口),输入:
 
@@ -148,7 +150,7 @@ ZCF需要Node.js环境。
 
 **Windows/Mac用户:**
 
-去Node.js官网下载安装包:https://nodejs.org
+去Node.js官网下载安装包:`https://nodejs.org`
 
 下载LTS版本(稳定版),双击安装,一路下一步。
 
@@ -216,9 +218,7 @@ ZCF会让你选要安装哪些MCP服务。
 
 输入/可以看到所有ZCF命令。
 
-**试试**/zcf:workflow**,体验完整的开发工作流。**
-
----
+**试试** `/zcf:workflow`，体验完整的开发工作流。
 
 装好了?那继续往下看,老金我告诉你ZCF到底有多强。
 
@@ -234,7 +234,7 @@ ZCF会让你选要安装哪些MCP服务。
 
 AI就开始写代码。
 
-**现在,输入**/zcf:workflow**,AI会这么问:**
+**现在,输入** `/zcf:workflow`，AI会这么问:
 
 ![](img/71c5daf7513408ddef00da8b6dd5a138.png)
 
@@ -250,13 +250,13 @@ AI就开始写代码。
 
 ```
 git add .
-git commit -m &quot;改了点东西&quot;
+git commit -m "改了点东西"
 git push
 ```
 
 commit信息都是瞎写的,根本不规范。
 
-**现在,输入**/zcf:git-commit**,AI自动分析代码改动:**
+**现在,输入** `/zcf:git-commit`，AI自动分析代码改动:
 
 ![](img/955b33f8710be60e38fea7f9a7c1b7cb.png)
 
@@ -275,7 +275,7 @@ commit信息都是瞎写的,根本不规范。
 现在,AI直接调用Context7和DeepWiki:
 
 ```
-&gt; &quot;React Hooks最新用法&quot;
+> "React Hooks最新用法"
 
 [调用Context7查询官方文档...]
 
@@ -298,7 +298,7 @@ commit信息都是瞎写的,根本不规范。
 **现在,AI可以自动控制浏览器:**
 
 ```
-&gt; &quot;帮我测试登录功能&quot;
+> "帮我测试登录功能"
 
 [调用Playwright...]
 
@@ -389,39 +389,39 @@ ZCF v3.3.1支持的MCP服务:
 
 **基础工具命令:**
 
-+   /zcf:init-project - 初始化项目AI上下文(强烈推荐第一次使用时运行)
++   `/zcf:init-project` - 初始化项目AI上下文(强烈推荐第一次使用时运行)
 
-+   /zcf:get-current-datetime - 获取当前日期时间
++   `/zcf:get-current-datetime` - 获取当前日期时间
 
 **开发工作流:**
 
-+   /zcf:workflow - 完整六段式开发流程(研究→构思→计划→执行→优化→评审)
++   `/zcf:workflow` - 完整六段式开发流程(研究→构思→计划→执行→优化→评审)
 
-+   /zcf:feat - 新功能开发(分plan和UI阶段,自动调用UI/UX设计师)
++   `/zcf:feat` - 新功能开发(分plan和UI阶段,自动调用UI/UX设计师)
 
-+   /bmad-init - 企业级敏捷开发工作流(包含PO、PM、架构师、开发、QA团队)
++   `/bmad-init` - 企业级敏捷开发工作流(包含PO、PM、架构师、开发、QA团队)
 
 **Git自动化命令:**
 
-+   /zcf:git-commit - 智能Git提交(Conventional Commits规范+emoji支持)
++   `/zcf:git-commit` - 智能Git提交(Conventional Commits规范+emoji支持)
 
-+   /zcf:git-rollback - 交互式代码回滚(支持reset/revert模式)
++   `/zcf:git-rollback` - 交互式代码回滚(支持reset/revert模式)
 
-+   /zcf:git-cleanBranches - 清理已合并或过期的分支
++   `/zcf:git-cleanBranches` - 清理已合并或过期的分支
 
-+   /zcf:git-worktree - Git工作树管理(多分支并行开发)
++   `/zcf:git-worktree` - Git工作树管理(多分支并行开发)
 
 **AI助手配置:**
 
-+   /output-style - 切换AI输出风格(专业工程师/猫娘工程师/老王/大小姐)
++   `/output-style` - 切换AI输出风格(专业工程师/猫娘工程师/老王/大小姐)
 
 **建议:**
 
-+   新项目第一次用,先跑 /zcf:init-project,让AI更懂你的项目
++   新项目第一次用,先跑 `/zcf:init-project`,让AI更懂你的项目
 
-+   想感受完整工作流,试试 /zcf:workflow
++   想感受完整工作流,试试 `/zcf:workflow`
 
-+   老金我最常用的是 /zcf:git-commit,每次提交都规范多了
++   老金我最常用的是 `/zcf:git-commit`,每次提交都规范多了
 
 ## ZCF v3.3.1的黑科技功能(老金我后来才知道的)
 
@@ -431,7 +431,7 @@ ZCF v3.3.1支持的MCP服务:
 
 以前配置API要填5个参数:
 
-+   API类型(api_key/auth_token)
++   `api_key`/`auth_token`
 
 +   API密钥
 
@@ -444,7 +444,7 @@ ZCF v3.3.1支持的MCP服务:
 **现在只需要2个:**
 
 ```
-npx zcf i -s -p 302ai -k &quot;sk-xxx&quot;
+npx zcf i -s -p 302ai -k "sk-xxx"
 ```
 
 当然，熟悉老金的都知道，我更喜欢用CC Switch，这里老金就略过填写了。
@@ -495,7 +495,7 @@ npx zcf ccr  # 打开CCR管理菜单
 
 配置好CCR后,Claude Code会自动使用CCR代理,你可以用免费模型干活,大幅降低成本!
 
-###  4. CCometixLine状态栏(v2.9.9+新增) - 实时使用量监控
+### 4. CCometixLine状态栏(v2.9.9+新增) - 实时使用量监控
 
 CCometixLine是用Rust写的高性能状态栏工具:
 
@@ -517,7 +517,7 @@ npx zcf → 选择L  # CCometixLine管理菜单
 
 老金我装了之后,终端底部就实时显示API使用量,再也不怕超额了。
 
-###  5. AI输出风格(v2.12+新增) - 个性化AI助手
+### 5. AI输出风格(v2.12+新增) - 个性化AI助手
 
 ZCF v3.3.1支持4种预设AI风格:
 
@@ -557,7 +557,7 @@ npx zcf → 选择6 → 配置AI输出风格
 
 老金我一开始用的默认专业工程师,后来试了猫娘工程师,工作氛围轻松了不少。
 
-###  6. Open WebSearch(v2.12.9+新增) - 无需API key的搜索
+### 6. Open WebSearch(v2.12.9+新增) - 无需API key的搜索
 
 这个是真的良心!
 
@@ -571,7 +571,7 @@ npx zcf → 选择6 → 配置AI输出风格
 
 AI需要搜索网页信息时,自动调用Open WebSearch,无需手动操作。
 
-###  7. Spec Workflow(v2.12.4+新增) - 需求到实现完整流程
+### 7. Spec Workflow(v2.12.4+新增) - 需求到实现完整流程
 
 Spec Workflow是个MCP服务,提供结构化开发流程:
 
@@ -635,35 +635,36 @@ ZCF一键搞定,你可以专心学逻辑,不用纠结环境配置。
 
 +   裸装Claude Code = 只有方向盘和刹车
 
-+   装了ZCF = ABS、ESP、自动驾驶辅助全配齐
+
+
+
+# ZCF 与 AI 编程体验
+
+装了 `ZCF` = ABS、ESP、自动驾驶辅助全配齐
 
 本质能力没变,但使用体验天差地别。
 
-老金我现在用AI写代码,真的像有个实习生在帮忙:
+## AI 写代码就像有个实习生在帮忙
 
-+   帮我规划项目结构
+老金我现在用 AI 写代码,真的像有个实习生在帮忙:
 
-+   帮我查技术文档
+- 帮我规划项目结构
+- 帮我查技术文档
+- 帮我写规范的代码
+- 帮我提交代码到 `Git`
+- 帮我测试网页功能
 
-+   帮我写规范的代码
+**这才是 AI 写代码应该有的样子。**
 
-+   帮我提交代码到Git
+这半年,老金我天天晚上研究到凌晨，试了 `N` 百次配置错误，走了很多很多弯路。
 
-+   帮我测试网页功能
+## 这些弯路,你们完全不用走
 
-**这才是AI写代码应该有的样子。**
+有 `ZCF`,一键安装,3 分钟搞定。
 
-这半年,老金我天天晚上研究到凌晨，试了N百次配置错误，走了很多很多弯路。
+老金我花了一个多月才学会的东西,你们 3 分钟就能用上。
 
-但现在,老金我发现:
-
-**这些弯路,你们完全不用走。**
-
-有ZCF,一键安装,3分钟搞定。
-
-老金我花了一个多月才学会的东西,你们3分钟就能用上。
-
-**这就是工具的力量。**
+## 工具的力量
 
 正如老金我常说的:
 

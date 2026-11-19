@@ -1,12 +1,13 @@
+
 # 教你从零“手搓”一个大模型，别再只会调用 API 了
 
 > 来源：[https://yunyinghui.feishu.cn/docx/BJM7dalIPoXjHaxPg0ycQgxtnUe](https://yunyinghui.feishu.cn/docx/BJM7dalIPoXjHaxPg0ycQgxtnUe)
 
-> **来源👸号：**腾讯技术工程
+> 来源👸号：腾讯技术工程
 
-> **作者：**yongzheng， patrickguo
+> 作者：yongzheng， patrickguo
 
-> 在大模型满天飞的今天，我们是甘心做一个只会调用 OpenAI.chat.completions 的 API 搬运工，还是想真正弄懂那个黑盒子里到底发生了什么？本文将用最朴素的代码，完整的实现一个小型 LLM。当你亲手写出 Attention 层的矩阵乘法，亲眼看到模型从输出乱码到学会说话，你会发现：大模型，其实也没那么可怕。
+在大模型满天飞的今天，我们是甘心做一个只会调用 `OpenAI.chat.completions` 的 API 搬运工，还是想真正弄懂那个黑盒子里到底发生了什么？本文将用最朴素的代码，完整的实现一个小型 LLM。当你亲手写出 `Attention` 层的矩阵乘法，亲眼看到模型从输出乱码到学会说话，你会发现：大模型，其实也没那么可怕。
 
 ![](img/df33a2bbaddbff1b40c8c2a20a071502.png)
 
@@ -14,25 +15,21 @@ RoadMap
 
 ![](img/d863a3cee04fd5b40c9dd4be5dd0046f.png)
 
-###  **1. 引言 **
+## 1. 引言
 
-####  **1.1 背景 **
+### 1.1 背景
 
 在部门浓厚的 AI 技术探索氛围驱动下，为了将晦涩的理论转化为直观的工程触感，我们开展一次略带“整活”性质的实践。希望通过从零“手搓”的方式，在满足工程师好奇心的同时，帮助大家打破对大模型的神秘感，真正理解其底层的运行机制与实现原理。
 
-####  **1.2 内容说明 **
+### 1.2 内容说明
 
-+   简单但完整的模型结构，结构主要参考 GPT2，从零构建。
++ 简单但完整的模型结构，结构主要参考 GPT2，从零构建。
++ 介绍模型结构以及代码实现，尽量规避数学与复杂的算法。
++ 个人非科班的业余爱好者，靠各种碎片信息修炼的邪修，可能会对一些术语不了解，请见谅。
++ 适应人群： 对于智商超群的算法同学来说可能有些幼稚，但对终日加班，目光涣散的开发苦哥们来说刚刚好。
++ 主要参考资料：《Build a Large Language Model （From Scratch）》 和 CS336: Language Modeling from Scratch 更多资料详见文末。
 
-+   介绍模型结构以及代码实现，尽量规避数学与复杂的算法。
-
-+   个人非科班的业余爱好者，靠各种碎片信息修炼的邪修，可能会对一些术语不了解，请见谅。
-
-+   适应人群： 对于智商超群的算法同学来说可能有些幼稚，但对终日加班，目光涣散的开发苦哥们来说刚刚好。
-
-+   主要参考资料： 《Build a Large Language Model （From Scratch）》 和 CS336: Language Modeling from Scratch 更多资料详见文末。
-
-####  **1.3 模型结构概览 **
+### 1.3 模型结构概览
 
 ![](img/86cd95cffcfda77e383cfadc0bac0577.png)
 
@@ -40,7 +37,7 @@ QDogBaby 模型结构
 
 现在看起来一头雾水没关系，接下来我们来逐步拆解模型，瞧瞧这些到底是怎么个事。
 
-####  **1.4 HelloWorld **
+### 1.4 HelloWorld
 
 首先，给我们的模型起个名字，然后做一个简单的逻辑，我们的第一个 LLM 就诞生了。开发嘛，实用优先（ 又不是不能用 ）
 
@@ -49,17 +46,17 @@ QDogBaby 模型结构
 ```
 class QdogBaby整活():
    def chat(self, text):
-       if text.endswith(&#x27;吗？&#x27;):
-           return text.replace(&#x27;吗？&#x27;, &#x27;!&#x27;)
+       if text.endswith('吗？'):
+           return text.replace('吗？', '!')
        return text
 model = QdogBaby整活()
-print(model.chat(&#x27;会说话吗？&#x27;))
-print(model.chat(&#x27;是人工智能吗？&#x27;))
+print(model.chat('会说话吗？'))
+print(model.chat('是人工智能吗？'))
 ```
 
 ```
   会说话!
-  是人工智能! --&gt;
+  是人工智能! -->
 ```
 
 这个“人工”智能最大的问题在于：它不懂语义，只是在做字符替换。它无法理解“今天天气不错”和“风和日丽”之间的联系，更无法生成它没见过的句子。
@@ -68,19 +65,19 @@ print(model.chat(&#x27;是人工智能吗？&#x27;))
 
 为了实现从“逻辑处理”到“概率预测”的转变，我们首先要解决第一个问题：如何把人类的语言，翻译成模型能理解的语言？
 
-###  2. 编码 Tokenizer
+## 2. 编码 Tokenizer
 
-####  **2.1 引言 **
+### 2.1 引言
 
-正如我们第一部分所说，LLM 是一个概率模型，通过数学计算来进行下一个字的预测。然而，计算机只认识数字（0 和 1），并不认识"今天"、"天气"或者"Today"这些单词。因此，想要让计算机能够理解人类的语言，需要通过特定的编码机制将自然语言翻译成模型能运算的数字序列。分词器（Tokenizer）是实现这一功能的核心组件，它能够将连续文本拆解为离散语义单元（即 Token）并转换为唯一索引（Token ID）用于模型输入。
+正如我们第一部分所说，LLM 是一个概率模型，通过数学计算来进行下一个字的预测。然而，计算机只认识数字（0 和 1），并不认识"今天"、"天气"或者"Today"这些单词。因此，想要让计算机能够理解人类的语言，需要通过特定的编码机制将自然语言翻译成模型能运算的数字序列。分词器（`Tokenizer`）是实现这一功能的核心组件，它能够将连续文本拆解为离散语义单元（即 `Token`）并转换为唯一索引（`Token ID`）用于模型输入。
 
-所有 LLM 的输入都依赖 Tokenizer 的预处理结果。如果分词策略不合理，如拆分后丢失语义或 Token 粒度过细，会直接影响模型对文本的理解能力。因此，一个设计优良的 Tokenizer 是提升 LLM 性能的基础前提。
+所有 LLM 的输入都依赖 `Tokenizer` 的预处理结果。如果分词策略不合理，如拆分后丢失语义或 `Token` 粒度过细，会直接影响模型对文本的理解能力。因此，一个设计优良的 `Tokenizer` 是提升 LLM 性能的基础前提。
 
-####  2.2 Tokenizer 分类
+### 2.2 Tokenizer 分类
 
-根据切分粒度的不同，Tokenizer 可分为三大类：字符级 Tokenizer（Character-level）、词级 Tokenizer（Word-level）以及子词级 Tokenizer（Subword-level）。我们以句子 "Today is sunday。" 为例，看看它们是如何工作的。
+根据切分粒度的不同，`Tokenizer` 可分为三大类：字符级 `Tokenizer`（Character-level）、词级 `Tokenizer`（Word-level）以及子词级 `Tokenizer`（Subword-level）。我们以句子 "Today is sunday。" 为例，看看它们是如何工作的。
 
-#####  字符级 Tokenizer（Character-level）
+#### 字符级 Tokenizer（Character-level）
 
 核心：以单个字符作为最小语义单元进行拆分，不依赖词典或复杂规则。
 
@@ -88,9 +85,9 @@ print(model.chat(&#x27;是人工智能吗？&#x27;))
 
 优点：词汇表规模小，任何文本均能拆分，适配性强
 
-缺点：Token 序列长，信息密度低，碎片化严重，解码效率偏低
+缺点：`Token` 序列长，信息密度低，碎片化严重，解码效率偏低
 
-#####  词级 Tokenizer（Word-level）
+#### 词级 Tokenizer（Word-level）
 
 核心：以单个词语为最小语义单元进行拆分，通常使用空格或者标点符号进行分隔。
 
@@ -100,7 +97,7 @@ print(model.chat(&#x27;是人工智能吗？&#x27;))
 
 缺点：词表规模庞大，训练成本升高。同时，若单词未出现在语料或词典中，会出现 OOV（out-of-vocabulary）的现象。
 
-#####  子词级 Tokenizer（Subword-level）
+#### 子词级 Tokenizer（Subword-level）
 
 核心：介于字符级与词级之间，常见的词保留完整，不常见的词拆分成有意义的片段（词根、词缀）。
 
@@ -110,71 +107,62 @@ print(model.chat(&#x27;是人工智能吗？&#x27;))
 
 缺点：分词逻辑较上述两者复杂；对低频子词的拆分可能不够合理，需通过优化算法进行改善。
 
-目前，子词级 Tokenizer 是 LLM 的主流选择。
+目前，子词级 `Tokenizer` 是 LLM 的主流选择。
 
-####  **2.3 BPE 算法原理 **
+### 2.3 BPE 算法原理
 
-目前最流行的子词分词算法是 BPE （Byte Pair Encoding）。它的核心逻辑与人类学习语言的过程相似：先认字，再组词。从最小的字符单元出发，反复合并语料中频率最高的相邻单元对，逐步扩展词汇表，直至达到预设词汇表大小或下一个高频出现的字符对频率为 1 时停止。
+目前最流行的子词分词算法是 `BPE` （Byte Pair Encoding）。它的核心逻辑与人类学习语言的过程相似：先认字，再组词。从最小的字符单元出发，反复合并语料中频率最高的相邻单元对，逐步扩展词汇表，直至达到预设词汇表大小或下一个高频出现的字符对频率为 1 时停止。
 
 具体示例：
 
 初始语料： [apple, apple, banana, banana, grape, grape, grapes]
 
-步骤 1：预处理，为原始语料中的每个单词添加后缀 </w> 作为分隔符，并将所有单词拆分为字符作为初始分词单元。
+步骤 1：预处理，为原始语料中的每个单词添加后缀 `</w>` 作为分隔符，并将所有单词拆分为字符作为初始分词单元。
 
-+   [a,p,p,l,e,</w>] （2 次）
-
-+   [b,a,n,a,n,a,</w>] （2 次）
-
-+   [g,r,a,p,e,</w>] （2 次）
-
-+   [g,r,a,p,e,s,</w>] （1 次）
++ [a,p,p,l,e,</w>] （2 次）
++ [b,a,n,a,n,a,</w>] （2 次）
++ [g,r,a,p,e,</w>] （2 次）
++ [g,r,a,p,e,s,</w>] （1 次）
 
 步骤 2：初始化词汇表，此时词汇表仅包含独立字符与单词后缀。
 
 ```
-V = {a, b, e, g, l, n, p, r, s, &lt;/w&gt;}
+V = {a, b, e, g, l, n, p, r, s, </w>}
 ```
 
 步骤 3：进行第一次合并。
 
 步骤 3.1：统计所有相邻单元对及其频率，需要叠加单词重复次数。
 
-+   [a,p,p,l,e,</w>] （2 次）：相邻对为 (a,p) 、 (p,p) 、 (p,l) 、 (l,e) 、 (e,</w>) 各 2 次
-
-+   [b,a,n,a,n,a,</w>] （2 次）：相邻对为 (b,a) 、 (a,n) 、 (n,a) 、 (a,n) 、 (n,a) 、 (a,</w>) 各 2 次
-
-+   [g,r,a,p,e,</w>] （2 次）：相邻对为 (g,r) 、 (r,a) 、 (a,p) 、 (p,e) 、 (e,</w>) 各 2 次
-
-+   [g,r,a,p,e,s,</w>] （1 次）：相邻对为 (g,r) 、 (r,a) 、 (a,p) 、 (p,e) 、 (e,s) 、 (s,</w>) 各 1 次
++ [a,p,p,l,e,</w>] （2 次）：相邻对为 (a,p) 、 (p,p) 、 (p,l) 、 (l,e) 、 (e,</w>) 各 2 次
++ [b,a,n,a,n,a,</w>] （2 次）：相邻对为 (b,a) 、 (a,n) 、 (n,a) 、 (a,n) 、 (n,a) 、 (a,</w>) 各 2 次
++ [g,r,a,p,e,</w>] （2 次）：相邻对为 (g,r) 、 (r,a) 、 (a,p) 、 (p,e) 、 (e,</w>) 各 2 次
++ [g,r,a,p,e,s,</w>] （1 次）：相邻对为 (g,r) 、 (r,a) 、 (a,p) 、 (p,e) 、 (e,s) 、 (s,</w>) 各 1 次
 
 各单元对出现的频率依次为：5 次 (a,p) 、4 次 (a,n) 、4 次 (n,a) 、4 次 (e,</w>) 等。
 
-步骤 3.2：选择频率最高的相邻对进行合并，当前 (a,p) 出现次数最多，因此把 ap 作为一个新元素加入词汇表，并进行词汇表的更新。
+步骤 3.2：选择频率最高的相邻对进行合并，当前 (a,p) 出现次数最多，因此把 `ap` 作为一个新元素加入词汇表，并进行词汇表的更新。
 
 ```
-新词汇表：V = {ap, a, b, e, g, l, n, p, r, s, &lt;/w&gt;}
+新词汇表：V = {ap, a, b, e, g, l, n, p, r, s, </w>}
 ```
 
 步骤 3.3：用合并后的词汇表重新进行单词的拆分。
 
-+   [ap, p, l, e, </w>] （2 次）
-
-+   [b, a, n, a, n, a, </w>] （2 次）
-
-+   [g, r, ap, e, </w>] （2 次）
-
-+   [g, r, ap, e, s, </w>] （1 次）
++ [ap, p, l, e, </w>] （2 次）
++ [b, a, n, a, n, a, </w>] （2 次）
++ [g, r, ap, e, </w>] （2 次）
++ [g, r, ap, e, s, </w>] （1 次）
 
 步骤 4：依次类推，重新统计各元素出现的频率，重复步骤 3 进行合并，直至达到预设词汇表大小或下一个高频出现的字符对频率为 1 时停止。
 
-最终分词逻辑：经过上述步骤得到词汇表后，按照 Token 长度进行排序，优先匹配最长的 Token，如果匹配上则进行替换，直到单词的所有字符都被替换为词表中的 Token 为止。
+最终分词逻辑：经过上述步骤得到词汇表后，按照 `Token` 长度进行排序，优先匹配最长的 `Token`，如果匹配上则进行替换，直到单词的所有字符都被替换为词表中的 `Token` 为止。
 
-####  **2.4 编码 **
+### 2.4 编码
 
-分词仅仅是第一步，计算机仍然不认识分词结果。我们需要将其转化为数字索引。在模型训练前，我们会生成一个巨大的映射表，给每一个 Token 分配一个唯一的 ID。如：
+分词仅仅是第一步，计算机仍然不认识分词结果。我们需要将其转化为数字索引。在模型训练前，我们会生成一个巨大的映射表，给每一个 `Token` 分配一个唯一的 ID。如：
 
-| **Token** | **ID** |
+| `Token` | `ID` |
 | --- | --- |
 | ... | ... |
 | apple | 1023 |
@@ -188,20 +176,20 @@ V = {a, b, e, g, l, n, p, r, s, &lt;/w&gt;}
 | banana | 8786 |
 | ... | ... |
 
-随后，我们可以对文本进行最后一步转换了。输入文本："today is sunday"，我们将其分为 ['to', 'day', 'is', 'sun', 'day'] ，查表映射，输出结果为 [1024, 2046, 1025, 2047, 2046] 。至此，我们解决了人机交流的第一道障碍，文本已经变成了整齐的数字序列。
+随后，我们可以对文本进行最后一步转换了。输入文本："today is sunday"，我们将其为 `['to', 'day', 'is', 'sun', 'day']` ，查表映射，输出结果为 `[1024, 2046, 1025, 2047, 2046]` 。至此，我们解决了人机交流的第一道障碍，文本已经变成了整齐的数字序列。
 
 接下来，我们需要把这些数字喂给模型，让它开始真正的"计算"。
 
-###  3. 模型 LLM Model
+## 3. 模型 LLM Model
 
-####  3.1 引导： 单字处理的窘境
+### 3.1 引导： 单字处理的窘境
 
-将字转化为 token_id 之后，我们终于可以对文字做计算了，于是乎我搞了一个翻译模型，这个模型找到了汉字与单词之间的对应关系，会将给定的英文 token，转化为中文 token，比如：
+将字转化为 `token_id` 之后，我们终于可以对文字做计算了，于是乎我搞了一个翻译模型，这个模型找到了汉字与单词之间的对应关系，会将给定的英文 `token`，转化为中文 `token`，比如：
 
 ```
 model = QdogBabyTranslate()
-print(model.translate(&quot;I like penguin&quot;))
-print(model.translate(&quot;We all like penguin&quot;))
+print(model.translate("I like penguin"))
+print(model.translate("We all like penguin"))
 ```
 
 ```
@@ -212,8 +200,8 @@ print(model.translate(&quot;We all like penguin&quot;))
 我觉得很开心，于是我拿去用，发现：
 
 ```
-print(model.translate(&quot;How are you&quot;))
-print(model.translate(&quot;How old are you&quot;))
+print(model.translate("How are you"))
+print(model.translate("How old are you"))
 ```
 
 ```
@@ -221,24 +209,24 @@ print(model.translate(&quot;How old are you&quot;))
   怎么老是你
 ```
 
-感觉哪里怪怪的，它把 'ol**d' 翻**译成了 '老'，完全没看 'How' 和 'are' 的脸色！也就是说我们现在的每个字， 只关注了他自己本身，却忽略了对话上下文 ，我们希望当前的文字可以 注意到 其他的文字。
+感觉哪里怪怪的，它把 `old` 翻译成了 `老`，完全没看 'How' 和 'are' 的脸色！也就是说我们现在的每个字， 只关注了他自己本身，却忽略了对话上下文 ，我们希望当前的文字可以 注意到 其他的文字。
 
-####  **3.2 embedding **
+### 3.2 embedding
 
-在建立字与字的关系之前，还需要解决一个问题： 数字本身是没有语义的。我们将“我喜欢小企鹅”转换成了 [397， 2320， 3169， 2665， 1270]。但对模型来说，只是五个整数，它并不知道 397（我）和 2320（喜欢）之间有什么关系。如果我们直接用这些整数去计算，模型会“懵圈”。所以，我们要给每个 Token ID 做一次升维，把一个干巴巴的整数，变成一个高维向量。
+在建立字与字的关系之前，还需要解决一个问题： 数字本身是没有语义的。我们将“我喜欢小企鹅”转换成了 [397， 2320， 3169， 2665， 1270]。但对模型来说，只是五个整数，它并不知道 397（我）和 2320（喜欢）之间有什么关系。如果我们直接用这些整数去计算，模型会“懵圈”。所以，我们要给每个 `Token ID` 做一次升维，把一个干巴巴的整数，变成一个高维向量。
 
-首先需要准备一个巨大的表格，比如词表大小是 6400，维度是 512，那就是一个 6400 x 512 的数字矩阵，然后我们就可以通过最简单的查表的方式，将 Token ID 映射成一个高维向量。
+首先需要准备一个巨大的表格，比如词表大小是 6400，维度是 512，那就是一个 6400 x 512 的数字矩阵，然后我们就可以通过最简单的查表的方式，将 `Token ID` 映射成一个高维向量。
 
 ![](img/61c8fe9f5facbc15894ede6fbc1a1de7.png)
 
-此外，还有一个关键点：Transformer 是“脸盲”的。它并行处理所有输入，如果不加特殊处理，它无法区分“我喜欢小企鹅”和“小企鹅喜欢我”的区别（词都一样，只是顺序不同）。因此，我们还需要一个位置映射表（Positional Embedding），把“位置信息”也加到向量里去。
+此外，还有一个关键点：`Transformer` 是“脸盲”的。它并行处理所有输入，如果不加特殊处理，它无法区分“我喜欢小企鹅”和“小企鹅喜欢我”的区别（词都一样，只是顺序不同）。因此，我们还需要一个位置映射表（`Positional Embedding`），把“位置信息”也加到向量里去。
 
 ```
 from transformers import AutoTokenizer
 import torch
 
-tokenizer = AutoTokenizer.from_pretrained(&quot;./tokenizer&quot;)
-input = tokenizer.encode(&quot;我喜欢小企鹅&quot;, return_tensors=&#x27;pt&#x27;)
+tokenizer = AutoTokenizer.from_pretrained("./tokenizer")
+input = tokenizer.encode("我喜欢小企鹅", return_tensors='pt')
 print(input)
 
 tok_emb = torch.nn.Embedding(num_embeddings=tokenizer.vocab_size, embedding_dim=512)
@@ -254,14 +242,14 @@ tensor([[[-0.5469, -2.2388,  0.8119,  ...,  0.3477,  0.0979, -1.2581],
          [-1.1212, -0.8914, -0.0145,  ..., -1.3678, -1.0177, -0.8076],
          [-0.1734,  1.6962, -2.1702,  ...,  0.1568,  1.6497, -0.1667],
          [-0.3965, -0.2542, -0.1799,  ...,  0.3170,  0.5109, -1.2761]]],
-       grad_fn=&lt;AddBackward0&gt;)
+       grad_fn=<AddBackward0>)
 ```
 
-你可以将这个操作理解为，将 token 在空间中展开，这样我们能更明显的感知到 token 之间的关系
+你可以将这个操作理解为，将 `token` 在空间中展开，这样我们能更明显的感知到 `token` 之间的关系
 
 ![](img/49412324665daf71740cf7df44b0bda7.png)
 
-另外，在 token 向量化后，我们发现可以形象的对 token 进行计算了，某种意义上可以完成这样的操作：
+另外，在 `token` 向量化后，我们发现可以形象的对 `token` 进行计算了，某种意义上可以完成这样的操作：
 
 妈妈+哥哥=舅舅
 
@@ -271,17 +259,17 @@ tensor([[[-0.5469, -2.2388,  0.8119,  ...,  0.3477,  0.0979, -1.2581],
 
 ![](img/12395f68c655ec2cf691fa27b19e0d04.png)
 
-####  **3.3 Attention **
+### 3.3 Attention
 
-**coding start **: 这部分会涉及到一些编码，可能会比较繁琐无聊，但我认为还是有必要的，其他部分代码均有删减，但这部分保留了。
+**coding start**: 这部分会涉及到一些编码，可能会比较繁琐无聊，但我认为还是有必要的，其他部分代码均有删减，但这部分保留了。
 
-#####  3.3.1 朴素的 Attention
+#### 3.3.1 朴素的 Attention
 
-如何找到 token 与 token 之间的关系？回到我们刚刚 embedding 后的空间，如果我们在空间中建立一个坐标系，会发现，当两个向量含义相近时，他们的点积会比较大，而两个向量没什么关系时，它们的点积会是 0 甚至负数。
+如何找到 `token` 与 `token` 之间的关系？回到我们刚刚 embedding 后的空间，如果我们在空间中建立一个坐标系，会发现，当两个向量含义相近时，他们的点积会比较大，而两个向量没什么关系时，它们的点积会是 0 甚至负数。
 
 ![](img/7ce548228f906d063ada5178ac90fe34.png)
 
-我们可以利用这个特性，将句子中的每个 Token 与其他所有 Token 进行点积运算（请注意这里的 token 是一个多维度的向量），以此来计算这两个词的关系"好不好"。
+我们可以利用这个特性，将句子中的每个 `Token` 与其他所有 `Token` 进行点积运算（请注意这里的 `token` 是一个多维度的向量），以此来计算这两个词的关系"好不好"。
 
 向量点积的本质是空间投影，但对被需求淹死了的开发哥们来说存在理解难度，因此我们拿出初中知识，简单理解为离得近了（方向）点积大，离得远了（方向）点积小
 
@@ -291,8 +279,9 @@ tensor([[[-0.5469, -2.2388,  0.8119,  ...,  0.3477,  0.0979, -1.2581],
 
 ![](img/9acff3b14433b5d39f596f023d3a1f48.png)
 
-```
-inputs = torch.tensor(
+
+
+```inputs = torch.tensor(
   [[0.43, 0.15, 0.89], # Your     (x^1) - 第一个token的嵌入向量
    [0.55, 0.87, 0.66], # journey  (x^2) - 第二个token的嵌入向量
    [0.57, 0.85, 0.64], # starts   (x^3) - 第三个token的嵌入向量
@@ -325,7 +314,7 @@ for i, x_i in enumerate(inputs):
 ```
 # inputs 形状: [seq_len, dim]
 # inputs.T 形状: [dim, seq_len]
-# 结果 attn_scores 形状: [seq_len, seq_len] -&gt; 得到了一个 N*N 的关系矩阵
+# 结果 attn_scores 形状: [seq_len, seq_len] -> 得到了一个 N*N 的关系矩阵
 attn_scores = inputs @ inputs.T # query @ key
 attn_scores
 ```
@@ -339,9 +328,9 @@ attn_scores
         [0.6310, 1.0865, 1.0605, 0.6565, 0.2935, 0.9450]])
 ```
 
-经过这样的计算后，我们得到了一个代表了词与词之**间关系的矩阵，接下来还需**要做**两步操作：** Softmax 归一化 和 加权求和 。
+经过这样的计算后，我们得到了一个代表了词与词之间关系的矩阵，接下来还需要做两步操作：`Softmax` 归一化 和 加权求和。
 
-由于原始的数据点积数值范围非常大，直接使用会使我们的计算结果不稳定，Softmax 的作用就是把这些乱七八糟的分数变成“百分比”（概率分布），让它们加起来等于 1。这样我们就得到了每个词的权重，而加权求和则是真正的按这些权重，将我们需要的信息融合到一起。
+由于原始的数据点积数值范围非常大，直接使用会使我们的计算结果不稳定，`Softmax` 的作用就是把这些乱七八糟的分数变成“百分比”（概率分布），让它们加起来等于 1。这样我们就得到了每个词的权重，而加权求和则是真正的按这些权重，将我们需要的信息融合到一起。
 
 ![](img/2dbedfae154cba628208928580e4de21.png)
 
@@ -354,21 +343,21 @@ attn_weight = torch.softmax(attn_scores, dim=-1)
 context_vec = attn_weight @ inputs
 ```
 
-#####  **3.3.2 增加权重 **
+### 3.3.2 增加权重
 
 ![](img/c9ce159d4808339a4d528bab39bb50df.png)
 
-我们用一个小例子来通俗的理解一下 attention 计算的整个过程： 我们现在有一个会议室，然后来了几个 token 来开会，每个 token 在会议室门口根据会议室的规则（W_q， W_k， W_v）领到了三个角色：
+我们用一个小例子来通俗的理解一下 attention 计算的整个过程：我们现在有一个会议室，然后来了几个 `token` 来开会，每个 `token` 在会议室门口根据会议室的规则（`W_q`，`W_k`，`W_v`）领到了三个角色：
 
-Query: 提问者，当轮到他发言时，他会说出他需要的信息，比如"关于‘广告推荐架构’这个问题，谁有经验？".
+`Query`: 提问者，当轮到他发言时，他会说出他需要的信息，比如"关于‘广告推荐架构’这个问题，谁有经验？".
 
-Key: 回答者， 当他被提问时，他会说出他对外的标签，比如"运维、后端、算法、美术"。
+`Key`: 回答者，当他被提问时，他会说出他对外的标签，比如"运维、后端、算法、美术"。
 
-Value: 信息本身，如果他被选中了，他会将自己的信息贡献出来。
+`Value`: 信息本身，如果他被选中了，他会将自己的信息贡献出来。
 
-会议开始后，首先 Query 和 Key 关于当前的问题进行沟通，得到需要信息的比例，比如 "运维 0.2、后端 0.4、算法 0.4、美术 0"，对齐之后按照信息比例，把需要的 Value 获取到并融合起来。会议结束时，每个人都通过这种方式，从其他人那里吸收了自己需要的信息，完成了信息的融合。
+会议开始后，首先 `Query` 和 `Key` 关于当前的问题进行沟通，得到需要信息的比例，比如 "运维 0.2、后端 0.4、算法 0.4、美术 0"，对齐之后按照信息比例，把需要的 `Value` 获取到并融合起来。会议结束时，每个人都通过这种方式，从其他人那里吸收了自己需要的信息，完成了信息的融合。
 
-而用于讨论的会议室（W_q， W_k， W_v），不是天然就存在的，需要我们使用我们训练的语料一点一点的盖起来。
+而用于讨论的会议室（`W_q`，`W_k`，`W_v`），不是天然就存在的，需要我们使用我们训练的语料一点一点的盖起来。
 
 ```
 dim = inputs.shape[1] # 词向量维度
@@ -382,22 +371,22 @@ querys = inputs @ W_query
 keys   = inputs @ W_key
 values = inputs @ W_value
 # 2. 计算注意力分数 (Scaled Dot-Product Attention)
-# [seq_len, dim] @ [dim, seq_len] -&gt; [seq_len, seq_len]
+# [seq_len, dim] @ [dim, seq_len] -> [seq_len, seq_len]
 attn_scores = querys @ keys.T 
 # 3. 缩放 (Scaling) 与 归一化 (Softmax)
 # 除以根号 dim，防止数值过大
 scale_factor = keys.shape[-1] ** 0.5
 attn_weights = torch.softmax(attn_scores / scale_factor, dim=-1)
 # 4. 加权求和得到上下文向量
-# [seq_len, seq_len] @ [seq_len, dim] -&gt; [seq_len, dim]
+# [seq_len, seq_len] @ [seq_len, dim] -> [seq_len, dim]
 context_vec = attn_weights @ values
 ```
 
-**coding end **: 到这里就可以愉快的继续看图了
+`coding end`: 到这里就可以愉快的继续看图了
 
-####  3.4 mask 和 dropout
+### 3.4 mask 和 dropout
 
-我们的模型还存在着一个明显的问题，就是"看答案"。对于一些文本处理类任务，比如相关性计算、实体提取，会提前给定全部的语句，这种使用全部的 token 计算 attention 权重是没有问题的，但我们的模型是要"说话"的，在说出下一个字之前，没人知道后面要说什么。因此在计算权重时，我们要给当前词之后的词，都"遮起来"。
+我们的模型还存在着一个明显的问题，就是"看答案"。对于一些文本处理类任务，比如相关性计算、实体提取，会提前给定全部的语句，这种使用全部的 `token` 计算 attention 权重是没有问题的，但我们的模型是要"说话"的，在说出下一个字之前，没人知道后面要说什么。因此在计算权重时，我们要给当前词之后的词，都"遮起来"。
 
 ![](img/62be4ce9d42ad98c8a4e0e8b1813edd3.png)
 
@@ -407,13 +396,13 @@ PS: 早期 GPT-2 和 Qwen-14B 采用了这个方式，但最新的 qwen3 kimi-2 
 
 ![](img/3aa63692d141379b9f6ba6b8a38e100e.png)
 
-####  3.5 MultiHeadAttention
+### 3.5 MultiHeadAttention
 
 ![](img/e03c9f5a18b1ccc6090dd1bbfa040456.png)
 
 这里为什么最后要加一层 linear 将矩阵转成原来的形状？因为我们要开始叠层了～
 
-####  3.6 Transformer
+### 3.6 Transformer
 
 我们参考 2017 年的著名论文《Attention Is All You Need》https://arxiv.org/abs/1706.03762
 
@@ -421,7 +410,7 @@ PS: 早期 GPT-2 和 Qwen-14B 采用了这个方式，但最新的 qwen3 kimi-2 
 
 ![](img/78ae929e4d9555ff8610d595644e5b81.png)
 
-#####  3.6.1 Feed Forward
+#### 3.6.1 Feed Forward
 
 ![](img/697e29d3c77a88769a0b91d4aaac4931.png)
 
@@ -439,13 +428,13 @@ class FeedForward(nn.Module):
         return x
 ```
 
-这里的 FeedForward 主要负责两件事情：
+这里的 `FeedForward` 主要负责两件事情：
 
-1.  增加了非线性的激活函数 GELU（）
+1.  增加了非线性的激活函数 `GELU`（）
 
 关于激活函数，不做过多展开，可以先简单理解为不加非线性函数的话，多层数学上就等价于单层，层数就叠不起来。
 
-1.  通过 Linear 将维度升为 4 * dim，假设我们的模型维度为 512，那么这里的维度就是 2048。（这里的 4 倍有说法的，感兴趣的同学可以研究一下）
+1.  通过 `Linear` 将维度升为 4 * dim，假设我们的模型维度为 512，那么这里的维度就是 2048。（这里的 4 倍有说法的，感兴趣的同学可以研究一下）
 
 这里的主要目的还是提高模型参数，增加模型的拟合能力。
 
@@ -455,7 +444,7 @@ class FeedForward(nn.Module):
 
 以上为邪修猜想，当个乐子看。
 
-#####  **3.6.2 Residual **
+#### 3.6.2 Residual
 
 我们训练的主要过程就是求梯度、求导，如果无脑叠层，很容易就给梯度整没了，所以这里给原始的 input 和我们计算过后的 output 连起来，保证梯度不消失，毕竟"做模型嘛，不能忘本"。
 
@@ -465,13 +454,19 @@ class FeedForward(nn.Module):
 
 ![](img/fa90becd7b5689c4cf787c4fd864f4de.png)
 
-####  **3.7 LLM 模型 **
+### 3.7 LLM 模型
 
 至此，我们主要的模型结构就完成了，我们结合标注来再次复习一下：
 
 ![](img/56fbabcaa9c0feeeb07e0521bb897cd0.png)
 
 QDogBaby 模型结构
+
+
+
+# QdogBabyLearn 模型实现
+
+## 模型架构代码
 
 ```
 import torch
@@ -483,8 +478,8 @@ from torch import nn
 # ==========================================
 class QdogBabyLearnConfig():
     def __init__(self):
-        self.model_name = &quot;qdogbabylearn&quot;
-        self.version = &quot;1.0.0&quot;
+        self.model_name = "qdogbabylearn"
+        self.version = "1.0.0"
 
         self.num_hidden_layers = 16# 盖多少层楼 (Transformer Block的数量)
         self.num_heads = 8           # 雇多少个专家同时看 (多头注意力的头数)
@@ -588,7 +583,7 @@ class MultiHeadAttention(nn.Module):
         # 1 0 0
         # 1 1 0
         # 1 1 1
-        self.register_buffer(&quot;mask&quot;, torch.tril(torch.ones(context_size, context_size)))
+        self.register_buffer("mask", torch.tril(torch.ones(context_size, context_size)))
 
     def forward(self, x):
         batch_size, num_tokens, emb_dim = x.shape
@@ -599,7 +594,7 @@ class MultiHeadAttention(nn.Module):
         values = self.W_values(x)
 
         # 2. 切分成多头 (8个人分工合作)
-        # 形状变换: [B, T, 512] -&gt; [B, T, 8, 64]
+        # 形状变换: [B, T, 512] -> [B, T, 8, 64]
         querys = querys.view(batch_size, num_tokens, self.num_heads, self.head_dim)
         keys = keys.view(batch_size, num_tokens, self.num_heads, self.head_dim)
         values = values.view(batch_size, num_tokens, self.num_heads, self.head_dim)
@@ -617,7 +612,7 @@ class MultiHeadAttention(nn.Module):
         # 5. ★ Mask 操作 (不让偷看后面的词)
         # 把 mask 为 0 的位置填成负无穷大 (-inf)
         mask_bool = self.mask.bool()[:num_tokens, :num_tokens]
-        attn_score = attn_score.masked_fill(mask_bool == 0, float(&#x27;-inf&#x27;))
+        attn_score = attn_score.masked_fill(mask_bool == 0, float('-inf'))
 
         # 6. 归一化 (概率化)
         # 除以根号dk是为了防止梯度消失
@@ -629,7 +624,7 @@ class MultiHeadAttention(nn.Module):
         context_vec = attn_weight @ values
 
         # 8. 还原形状 (把8个头的结果拼回去)
-        # [B, 8, T, 64] -&gt; [B, T, 8, 64] -&gt; [B, T, 512]
+        # [B, 8, T, 64] -> [B, T, 8, 64] -> [B, T, 512]
         context_vec = context_vec.transpose(1, 2).contiguous().view(batch_size, num_tokens, emb_dim)
         
         # 9. 最终线性输出
@@ -639,14 +634,14 @@ class MultiHeadAttention(nn.Module):
 
 
 # ==========================================
-# 5. 前馈网络 (发散思维 -&gt; 收敛总结)
+# 5. 前馈网络 (发散思维 -> 收敛总结)
 # ==========================================
 class FeedForward(nn.Module):
     def __init__(self, emb_dim, dropout):
         super().__init__()
-        # ★ 发散思维：维度放大 4 倍 (512 -&gt; 2048)
+        # ★ 发散思维：维度放大 4 倍 (512 -> 2048)
         self.linear1 = nn.Linear(emb_dim, emb_dim * 4)
-        # ★ 收敛总结：维度变回原样 (2048 -&gt; 512)
+        # ★ 收敛总结：维度变回原样 (2048 -> 512)
         self.linear2 = nn.Linear(emb_dim * 4, emb_dim)
 
     def forward(self, x):
@@ -677,23 +672,19 @@ class LayerNorm(nn.Module):
         return norm * self.scale + self.shift
 ```
 
-###
-
-###
-
-### **4. 训练与生成 **
+## 4. 训练与生成
 
 数据预处理和训练是一件十分庞大和耗时的工程，受限于篇幅，这里只对训练方式和推理做简单介绍，不做展开。
 
-####  **4.1 模型的推理方式 **
+### 4.1 模型的推理方式
 
 在完成模型结构之后，我们先来尝试一下，看看模型到底会输出什么内容
 
 ```
 # 首先将输入文本进行编码
 # tokenizer.encode()方法将文本字符串转换为模型可理解的数字序列（token IDs）
-inputs = tokenizer.encode(&quot;QQ浏览器广告后台开发&quot;)
-print(&quot;编码后的token IDs:&quot;, inputs)
+inputs = tokenizer.encode("QQ浏览器广告后台开发")
+print("编码后的token IDs:", inputs)
 
 # 将编码结果转换为PyTorch张量，并添加批次维度
 # torch.tensor([inputs])创建了一个形状为[1, sequence_length]的张量
@@ -702,18 +693,22 @@ batch = torch.tensor([inputs])
 # 将批次数据输入模型进行推理
 # model(batch)返回模型的输出，通常是logits或概率分布
 output = model(batch)
-print(&quot;模型输出:&quot;, output)
-print(&quot;输出形状:&quot;, output.shape)
+print("模型输出:", output)
+print("输出形状:", output.shape)
 
 # 使用argmax获取每个位置概率最大的token索引
 # dim=-1表示在最后一个维度（通常是词汇表维度）上取最大值
 predictions = torch.argmax(output, dim=-1)
-print(&quot;预测结果（token索引）:&quot;, predictions)
+print("预测结果（token索引）:", predictions)
 
 # 将预测的token索引解码回文本
 # tokenizer.decode()将数字序列转换回可读的文本字符串
-print(&quot;解码后的文本:&quot;, tokenizer.decode(predictions[0]))
+print("解码后的文本:", tokenizer.decode(predictions[0]))
 ```
+
+
+
+# 4.1 模型推理与输出
 
 ```
 编码后的token IDs: [51, 51, 586, 240, 6262, 1179, 5046, 799, 2507, 3158]
@@ -724,26 +719,25 @@ print(&quot;解码后的文本:&quot;, tokenizer.decode(predictions[0]))
          [-0.1255,  0.3100, -0.4338,  ..., -0.4569,  0.1680, -0.2783],
          [ 0.0123, -0.2317,  0.1034,  ..., -0.6657,  0.4466, -0.1969],
          [-0.0439, -0.2680, -0.8711,  ..., -0.8857,  0.7761,  0.2247]]],
-       grad_fn=&lt;ViewBackward0&gt;)
+       grad_fn=<ViewBackward0>)
 输出形状: torch.Size([1, 10, 6400])
 预测结果（token索引）: tensor([[1536, 1536,  738, 5155, 4507, 5155, 2857, 4672, 3506, 3283]])
 解码后的文本: 什什 R安排 similar安排软伴 diagnosonom
-
 ```
 
-可以看到，输入 9 个 Token 后，模型对应输出了 9 个向量，每个向量的长度都等于词表大小。这些数值可以理解为模型对词表中每个词的‘打分’（或者说概率，这里省略了 softmax 处理）。如果我们选取每个向量中数值最大的那个（即模型认为概率最高的词），并将其还原为文字，就得到了模型最终的预测结果。
+可以看到，输入 9 个 Token 后，模型对应输出了 9 个向量，每个向量的长度都等于词表大小。这些数值可以理解为模型对词表中每个词的‘打分’（或者说概率，这里省略了 `softmax` 处理）。如果我们选取每个向量中数值最大的那个（即模型认为概率最高的词），并将其还原为文字，就得到了模型最终的预测结果。
 
 目前模型返回的数据还是毫无逻辑的 token，因为我们还没进行训练，接下来我们就让他变聪明些。
 
-####  **4.2 训练 **
+# 4.2 训练
 
-#####  **4.2.1 数据构造 **
+## 4.2.1 数据构造
 
 我们先要知道，我们期望模型返回的数据格式
 
 ![](img/2d425393d12d60a77cecb8c7f5908852.png)
 
-对于输入的 "🐧 浏览器广告后台开发"， 我们期望模型整体前推一个字，即输出 "Q 浏览器广告后台开发组"，这里的"Q 浏览器广告后台开发"，与我们的 input 相同，我们希望通过这种方式让模型学习到语言模式，而第 n 个字"组"即是我们想要的字。
+对于输入的 "🐧 浏览器广告后台开发"， 我们期望模型整体前推一个字，即输出 "Q 浏览器广告后台开发组"，这里的"Q 浏览器广告后台开发"，与我们的 `input` 相同，我们希望通过这种方式让模型学习到语言模式，而第 `n` 个字"组"即是我们想要的字。
 
 ```
 # 原始语料数据 (假设这是分词后的 ID 序列)
@@ -751,23 +745,23 @@ print(&quot;解码后的文本:&quot;, tokenizer.decode(predictions[0]))
 data = [51, 51, 586, 240, 6262, 1179, 5046, 799, 2507, 3158, 1335]
 data_tensor = torch.tensor(data)
 # 1. 构造输入 (Input): 取序列的前 N-1 个字
-# 也就是: &quot;QQ浏览器广告后台开发&quot;
+# 也就是: "QQ浏览器广告后台开发"
 x = data_tensor[:-1] 
 # x = [51, 51, 586, ..., 3158]
-# 2. 构造目标 (Target): 取序列的后 N-1 个字 (即每个位置对应的&quot;下一个字&quot;)
-# 也就是: &quot;Q浏览器广告后台开发组&quot;
+# 2. 构造目标 (Target): 取序列的后 N-1 个字 (即每个位置对应的"下一个字")
+# 也就是: "Q浏览器广告后台开发组"
 y = data_tensor[1:]  
 # y = [51, 586, 240, ..., 1335]
-print(f&quot;输入长度: {len(x)}, 目标长度: {len(y)}&quot;)
+print(f"输入长度: {len(x)}, 目标长度: {len(y)}")
 # 输入长度: 11, 目标长度: 11 (一一对应)
 # 3. 扔进模型计算
 logits = model(x.unsqueeze(0)) # 增加 batch 维度
 # 4. 计算 Loss (交叉熵损失)
 # 这一步是在问模型：
-# 当输入第1个&#x27;Q&#x27;时，你预测是第2个&#x27;Q&#x27;的概率大吗？
-# 当输入&#x27;浏&#x27;时，你预测是&#x27;览&#x27;的概率大吗？
+# 当输入第1个'Q'时，你预测是第2个'Q'的概率大吗？
+# 当输入'浏'时，你预测是'览'的概率大吗？
 # ...
-# 当输入&#x27;发&#x27;时，你预测是&#x27;组&#x27;的概率大吗？
+# 当输入'发'时，你预测是'组'的概率大吗？
 loss = nn.cross_entropy(logits.view(-1, vocab_size), y.view(-1))
 loss.backward() # 反向传播，修正参数
 ```
@@ -784,39 +778,39 @@ loss.backward() # 反向传播，修正参数
 
 这就是大模型“学会说话”的根本原因。
 
-#####  4.2.2 预训练 与 SFT
+## 4.2.2 预训练 与 SFT
 
 ![](img/b860e388697d1d2d59840cf34831596d.png)
 
-这里补充说明一下 SFT 时的数据构造情况，我们通常会定义一些特殊的 Token（如 <|im_start|>）来告诉模型哪里是人说的，哪里是它该说的，因此我们构造的对话数据一般为这种格式：
+这里补充说明一下 SFT 时的数据构造情况，我们通常会定义一些特殊的 Token（如 `<|im_start|>`）来告诉模型哪里是人说的，哪里是它该说的，因此我们构造的对话数据一般为这种格式：
 
 ```
 # SFT 数据构造示例
-sft_template = &quot;&quot;&quot;
-&lt;|im_start|&gt;user
-请介绍一下QQ浏览器。&lt;|im_end|&gt;
-&lt;|im_start|&gt;assistant
-QQ浏览器是腾讯开发的一款...&lt;|im_end|&gt;
-&quot;&quot;&quot;
+sft_template = """
+<|im_start|>user
+请介绍一下QQ浏览器。<|im_end|>
+<|im_start|>assistant
+QQ浏览器是腾讯开发的一款...<|im_end|>
+"""
 ```
 
-在 SFT 阶段，我们只计算 assistant 回答部分的 Loss。这就好比考试评分：老师只给你的“答案”打分，而不会因为你把“题目”抄写得好不好而扣分。 这样做的目的是让模型专注于学习“如何根据问题给出正确回答”，而不是去死记硬背问题本身。
+在 SFT 阶段，我们只计算 assistant 回答部分的 `Loss`。这就好比考试评分：老师只给你的“答案”打分，而不会因为你把“题目”抄写得好不好而扣分。 这样做的目的是让模型专注于学习“如何根据问题给出正确回答”，而不是去死记硬背问题本身。
 
-####  **4.3 采样策略 **
+# 4.3 采样策略
 
-在模型生成文本时，我们通常不希望每次都选择概率最高的词，这样会让输出变得过于确定和单调。温度和 topk 就是用来控制生成多样性的两个重要参数。
+在模型生成文本时，我们通常不希望每次都选择概率最高的词，这样会让输出变得过于确定和单调。温度和 `topk` 就是用来控制生成多样性的两个重要参数。
 
-温度（Temperature） 就像是给模型的"创造力"调个温：
+温度（`Temperature`） 就像是给模型的"创造力"调个温：
 
 +   低温（如 0.1）：模型更保守，总是选择最可能的词，输出稳定但可能单调
 
 +   高温（如 0.5-1.0）：模型更"放飞自我"，会尝试更多可能性，输出更有创意但可能不够准确
 
-**Top-k 采样 **则是另一种控制方式：
+Top-k 采样 则是另一种控制方式：
 
-+   只从概率最高的 k 个候选词中选择，避免选择那些概率极低的词
++   只从概率最高的 `k` 个候选词中选择，避免选择那些概率极低的词
 
-+   比如 k=4，就只从前 4 个最可能的词中随机选择
++   比如 `k=4`，就只从前 4 个最可能的词中随机选择
 
 这两种方法可以单独使用，也可以结合使用，让模型在"靠谱"和"有趣"之间找到平衡。
 
@@ -843,14 +837,13 @@ indices=tensor([2, 3, 1, 0]))
 
 ![](img/7a0b6d86ae3ef340d0af9db9f5e4c987.png)
 
-通过上面的例子我们发现 Temperature 系数实际上是在调整 Softmax 之前的 Logits 数值分布。 T 减小 （冷却）：拉大 Logits 之间的差距，高的更高，矮的更矮。概率分布变得“尖锐”，模型只敢选最有把握的词。 T 增大 （加热）：缩小 Logits 之间的差距，众生平等。概率分布变得“平坦”，原本概率低的词也有机会被选中，模型开始“胡言乱语”或“创意迸发”。
+通过上面的例子我们发现 `Temperature` 系数实际上是在调整 `Softmax` 之前的 `Logits` 数值分布。 `T` 减小 （冷却）：拉大 `Logits` 之间的差距，高的更高，矮的更矮。概率分布变得“尖锐”，模型只敢选最有把握的词。 `T` 增大 （加热）：缩小 `Logits` 之间的差距，众生平等。概率分布变得“平坦”，原本概率低的词也有机会被选中，模型开始“胡言乱语”或“创意迸发”。
 
-###  **5. 演示 **
+# 5. 演示
 
 预训练后的模型：
 
-
-**这是因为预训**练模型本质上是一个 文本续写机 。它在海量文档中学习的是“下一个字是什么”的概率分布。在它眼里，你输入的问题可能只是某本小说或新闻的开头，它并不知道这代表一次“对话”的开始。它只是在尽职尽责地根据概率，顺着你的话继续往下编故事，而不是在回答你的问题。
+**这是因为预训练模型本质上是一个 文本续写机 。它在海量文档中学习的是“下一个字是什么”的概率分布。在它眼里，你输入的问题可能只是某本小说或新闻的开头，它并不知道这代表一次“对话”的开始。它只是在尽职尽责地根据概率，顺着你的话继续往下编故事，而不是在回答你的问题。**
 
 SFT 后的模型：
 
@@ -858,23 +851,23 @@ SFT 后的模型：
 
 通过 SFT，我们让模型学会了对话的模式，模型真正的完整回答问题。
 
-TIPS: 由于网络环境/资源等原因，演示[**模型没有对外部署，**](https://github.com/jingyaogong/minimind)感兴趣的同学可以使用[** minimind **](https://www.codebuddy.ai/)提供的数据集，配合 codebuddy 快速生成训练逻辑，训练出一个属于自己的 LLM。
+TIPS: 由于网络环境/资源等原因，演示[模型没有对外部署](https://github.com/jingyaogong/minimind)感兴趣的同学可以使用[minimind](https://www.codebuddy.ai/)提供的数据集，配合 codebuddy 快速生成训练逻辑，训练出一个属于自己的 LLM。
 
-###  **6. 参考资料 **
+# 6. 参考资料
 
-1.  [《Build a Large Language M](https://learning.oreilly.com/library/view/build-a-large/9781633437166/)odel (From Scratch)》
+1.  [《Build a Large Language Model (From Scratch)》](https://learning.oreilly.com/library/view/build-a-large/9781633437166/)
 
-1.  [CS336: Language M](https://cs336.stanford.edu/)odeling from Scratch
+1.  [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/)
 
 1.  The Illustrated Transformer
 
-1.  [T](https://jalammar.github.io/illustrated-gpt2/)he Illustrated GPT-2 (Visualizing Transformer Language Models)
+1.  [The Illustrated GPT-2 (Visualizing Transformer Language Models)](https://jalammar.github.io/illustrated-gpt2/)
 
 1.  The Big LLM Architecture Comparison
 
 1.  [minimind](https://github.com/jingyaogong/minimind?tab=readme-ov-file)
 
-1.  [Vi](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)sualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
+1.  [Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
 
 1.  《Hands-On Large Language Models》
 

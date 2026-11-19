@@ -1,3 +1,4 @@
+
 # MCP 蓝图：将采样集成到 MCP 工作流程中
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/WT2rdrkUwos0cUxAe7Fcasdinlf](https://v11enp9ok1h.feishu.cn/docx/WT2rdrkUwos0cUxAe7Fcasdinlf)
@@ -38,7 +39,7 @@
 
 +   什么是采样？它为什么有用？
 
-+   FastMCP 中的采样支持
++   `FastMCP` 中的采样支持
 
 +   它在服务器端是如何工作的？
 
@@ -64,7 +65,7 @@
 
 LLM 采样使服务器能够将任务委托给客户端可用的语言模型。简单来说，MCP 中的采样允许服务器请求客户端的 AI 模型生成文本（补全）并返回结果。
 
-我们将探索使用 FastMCP 框架进行采样的概念、实现和应用。
+我们将探索使用 `FastMCP` 框架进行采样的概念、实现和应用。
 
 ## 概念和动机
 
@@ -88,13 +89,13 @@ MCP 采样则相反：
 
 1.  服务器的工具功能决定了它需要LLM的帮助（例如分析或生成文本）。
 
-1.  服务器通过采样机制向客户端发送提示/请求。
+2.  服务器通过采样机制向客户端发送提示/请求。
 
-1.  客户端接收此请求并调用其自己的 LLM（本地模型或 API）来生成完成。
+3.  客户端接收此请求并调用其自己的 LLM（本地模型或 API）来生成完成。
 
-1.  客户端将生成的结果返回给服务器。
+4.  客户端将生成的结果返回给服务器。
 
-1.  然后，服务器的工具功能将根据需要使用 LLM 生成的结果恢复执行，就好像服务器自己生成了该结果一样。
+5.  然后，服务器的工具功能将根据需要使用 LLM 生成的结果恢复执行，就好像服务器自己生成了该结果一样。
 
 这提供了几个关键优势：
 
@@ -154,29 +155,29 @@ LLM 的输出返回到服务器，从而实现服务器端的 AI 驱动行为。
 
 1.  功能/工具正在服务器上作为代理工作流的一部分运行。
 
-1.  在此函数内部，ctx.sample()调用 LLM 来生成响应或做出决定。
+2.  在此函数内部，`ctx.sample()`调用 LLM 来生成响应或做出决定。
 
-1.  本次调用并不在本地执行采样，而是将请求打包后发送给 MCP 客户端。
+3.  本次调用并不在本地执行采样，而是将请求打包后发送给 MCP 客户端。
 
 **MCP 客户端（绿色）**
 
 1.  客户端监听来自服务器的采样请求并接收该请求。
 
-1.  触发用户定义函数sampling_handler()。该函数定义如何处理请求。例如，格式化提示、处理重试等。
+2.  触发用户定义函数 `sampling_handler()`。该函数定义如何处理请求。例如，格式化提示、处理重试等。
 
-1.  客户端使用外部 LLM API（如 OpenAI）或本地模型（如 LLaMA 或 Mistral）来完成请求。
+3.  客户端使用外部 LLM API（如 OpenAI）或本地模型（如 LLaMA 或 Mistral）来完成请求。
 
-1.  客户端将生成的文本作为响应发回给服务器。
+4.  客户端将生成的文本作为响应发回给服务器。
 
 完成后，我们返回 MCP 服务器（蓝色），并根据 LLM 的结果继续执行。服务器接收来自客户端的结果，并使用 LLM 生成的输出继续执行工具函数。
 
-实际上，FastMCP 的客户端库帮助我们明确提供了一个采样处理程序（回调函数）来处理这些请求。我们将在本文中简要介绍如何实现这一点。
+实际上，`FastMCP` 的客户端库帮助我们明确提供了一个采样处理程序（回调函数）来处理这些请求。我们将在本文中简要介绍如何实现这一点。
 
 ### 运输和执行
 
-MCP 协议确保这些请求可靠地传输。FastMCP 支持多种传输方式（例如stdio和sse）。
+MCP 协议确保这些请求可靠地传输。`FastMCP` 支持多种传输方式（例如`stdio`和`sse`）。
 
-无论使用哪种传输方式，流程都是相同的。服务器在类的实例/对象Context（例如ctx.sample(...)）上调用采样方法，将其打包成 MCP 消息，发送给客户端，然后等待响应。
+无论使用哪种传输方式，流程都是相同的。服务器在类的实例/对象`Context`（例如`ctx.sample(...)`）上调用采样方法，将其打包成 MCP 消息，发送给客户端，然后等待响应。
 
 客户端调用采样处理程序，该处理程序又调用实际的 LLM，并返回完成结果。所有这些都是异步的，也就是说，服务器的工具协程将暂停，直到结果返回，从而避免阻塞其他任务。
 
@@ -190,26 +191,26 @@ MCP 协议确保这些请求可靠地传输。FastMCP 支持多种传输方式�
 
 ## 上下文对象和采样机制
 
-为了在 FastMCP 中使用采样，服务器Context为其功能提供了一个对象。
+为了在 `FastMCP` 中使用采样，服务器`Context`为其功能提供了一个对象。
 
-这Context是一个强大的句柄，除了请求 LLM 采样之外，还可以让服务器代码访问日志记录、发送更新等。
+这`Context`是一个强大的句柄，除了请求 LLM 采样之外，还可以让服务器代码访问日志记录、发送更新等。
 
-当我们将此上下文作为参数包含进来时，FastMCP 会自动将其注入到工具函数中。例如：
+当我们将此上下文作为参数包含进来时，`FastMCP` 会自动将其注入到工具函数中。例如：
 
-```
+```python
 from fastmcp import FastMCP, Context
 
-mcp = FastMCP(name=&quot;MyServer&quot;)
+mcp = FastMCP(name="MyServer")
 
 @mcp.tool()
-async def analyze_data(data: str, ctx: Context) -&gt; str:
-    &quot;&quot;&quot;Example tool that could use context for sampling.&quot;&quot;&quot;
+async def analyze_data(data: str, ctx: Context) -> str:
+    """Example tool that could use context for sampling."""
     # (Tool implementation...)
-    return &quot;done&quot;
+    return "done"
 ```
 
-在上面的代码片段中，因为我们ctx用 type进行了注释，所以当MCP 客户端调用Context时，FastMCP 将会注入上下文。analyze_data
+在上面的代码片段中，因为我们`ctx`用 `type`进行了注释，所以当MCP 客户端调用`Context`时，`FastMCP` 将会注入上下文。`analyze_data`
 
-附注：您可以在下面下载本文的代码。具体操作请打开open-me.ipynbNotebook 查看。
+附注：您可以在下面下载本文的代码。具体操作请打开`open-me.ipynb` Notebook 查看。
 
 ![](img/94f90c17d66d518a4d11ca40ddf69afe.png)

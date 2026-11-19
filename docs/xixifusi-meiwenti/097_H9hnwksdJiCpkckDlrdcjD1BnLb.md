@@ -1,3 +1,4 @@
+
 # 王兴的饭否语录
 
 > 来源：[https://docs.feishu.cn/docx/TZrEdNDujozKs3xdYLcc0PT0nQK](https://docs.feishu.cn/docx/TZrEdNDujozKs3xdYLcc0PT0nQK)
@@ -16,7 +17,7 @@
 
 4、上周五开会时一个年轻同事的一句话至今回荡在我耳边。
 
-当时大概是晚上12点，讨论接近尾声，需要有人整理会议记录，涉及流程图的部分用visio画比较好。我问她会用visio吗，她毫不犹豫的说“我可以学”。
+当时大概是晚上12点，讨论接近尾声，需要有人整理会议记录，涉及流程图的部分用`visio`画比较好。我问她会用`visio`吗，她毫不犹豫的说“我可以学”。
 
 这四个简单的字里有无穷的力量。
 

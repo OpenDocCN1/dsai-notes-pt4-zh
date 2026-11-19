@@ -1,64 +1,65 @@
+
 # Intern-S1 接入 Roo Code
 
 > 来源：[https://aicarrier.feishu.cn/docx/Lj9fdiKR6oXcRixbUWMciYtenLh](https://aicarrier.feishu.cn/docx/Lj9fdiKR6oXcRixbUWMciYtenLh)
 
-**三步带你实现Intern-S1接入 Roo** Code，Tokens从此再也不够用。
+三步带你实现 Intern-S1 接入 Roo Code，Tokens 从此再也不够用。
 
-# 1、背景介绍
+## 1 背景介绍
 
-Roo code是什么？
+### Roo code 是什么？
 
-Roo code 是一种基于大语言模型的工作流自动化工具，能够将用户提出的需求转化为结构化的标记文档（如Markdown格式），并通过工具链自动执行文档中定义的任务。
+Roo code 是一种基于大语言模型的工作流自动化工具，能够将用户提出的需求转化为结构化的标记文档（如 Markdown 格式），并通过工具链自动执行文档中定义的任务。
 
 具备读取文件、解析内容、根据逻辑规则修改数据的功能，适用于需要重复性处理文本或代码的场景。
 
 例如，用户输入需求后，Roo code 可自动生成项目计划文档，自动调用代码编辑器修改参数。
 
-Intern-S1是什么？
+### Intern-S1 是什么？
 
 Intern-S1 是由上海人工智能实验室研发的开源多模态大模型，采用混合专家架构（Mixture of Experts, MoE），该架构通过多个专业化子模型协同工作，提升模型在特定领域的处理能力。
 
 作为目前综合性能最优的开源多模态模型之一，Intern-S1 在科学计算、图像理解、文本生成等领域表现突出。例如，它能够同时处理医学影像分析与相关文献解读，或结合物理公式生成工程设计方案。
 
-# 2、工具准备
+## 2 工具准备
 
-## 1、VS CODE
+### VS Code
 
-https://code.visualstudio.com/
+`https://code.visualstudio.com/`
 
-## **2、书生平台的API**
+### 书生平台的 API
 
-https://internlm.intern-ai.org.cn/
+`https://internlm.intern-ai.org.cn/`
 
 使用手机号注册登录
 
-# 3、实现步骤
+## 3 实现步骤
 
-# 1、打开vscode编辑器
+### 打开 VS Code 编辑器
 
 ![](img/05f23da99ceda4042ec043c6d3b541fa.png)
 
-## 2、安装ROO Code扩展
+### 安装 ROO Code 扩展
 
 ![](img/9fd4d7be9956d0af2f1954af9ceb87ed.png)
 
-## 3、配置书生API
+### 配置书生 API
 
 ![](img/c85020d4663cd1a790e034481d75619c.png)
 
-API提供商选择OpenAI Compatible
+API提供商选择 OpenAI Compatible
 
-URL：https://chat.intern-ai.org.cn/api/v1
+URL：`https://chat.intern-ai.org.cn/api/v1`
 
-密钥填写书生网页登陆后获取的sk开头密钥
+密钥填写书生网页登陆后获取的 sk 开头密钥
 
-模型输入intren-s1
+模型输入 `intren-s1`
 
 保存
 
-## 4、使用样例
+### 使用样例
 
-选择vs code里的roo code
+选择 VS Code 里的 ROO Code
 
 输入你的要求如下，确认模型返回的是否达到，进行批准
 

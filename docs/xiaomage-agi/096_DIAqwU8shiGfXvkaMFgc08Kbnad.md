@@ -1,3 +1,4 @@
+
 # ChatGPT-4 会员充值攻略大揭秘！
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/BHSSdnan1osBP3xoAufcSegAn1g](https://xmgtoagi.feishu.cn/docx/BHSSdnan1osBP3xoAufcSegAn1g)
@@ -12,9 +13,9 @@
 
 [ChatGPT](https://www.uisdc.com/tag/chatgpt) APP下载地址：[https://apps.apple.com/us/app/](https://link.uisdc.com/?redirect=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fchatgpt%2Fid6448311069)chatgpt/id6448311069
 
-注意需要使用美区的App store
+注意需要使用美区的 App Store
 
-#### **一、美区APP Store准备**
+## 一、美区 APP Store 准备
 
 邮箱：1个未曾注册过Apple ID的邮箱
 
@@ -22,9 +23,9 @@
 
 浏览器：苹果系统推荐使用Safari，安卓和Windows系统推荐使用Chrome
 
-步骤 1: 创建 Apple ID
+### 步骤 1: 创建 Apple ID
 
-①美区 Apple ID 注册地址：https://appleid.apple.com/account
+①美区 Apple ID 注册地址：`https://appleid.apple.com/account`
 
 ②国家地区必须「美国」
 
@@ -32,7 +33,7 @@
 
 ![](img/008395e81578132bdf5b10dcf561232a.png)
 
-**步骤 2: 验证邮箱和手机号**
+### 步骤 2: 验证邮箱和手机号
 
 ①验证邮箱和手机号
 
@@ -44,11 +45,11 @@
 
 ![](img/f4f26d9d74846d0590331048b5669928.png)
 
-**步骤 3: 填写付款信息**
+### 步骤 3: 填写付款信息
 
 ①点击更改国家或地区
 
-生成免税区地址，美国地址生成器：www.meiguodizhi.com
+生成免税区地址，美国地址生成器：`www.meiguodizhi.com`
 
 提示：美国的免税州包括阿拉斯加州、特拉华州、蒙大拿州、新罕布什尔州、俄勒冈州
 
@@ -58,7 +59,7 @@
 
 ![](img/69cfec7bf7ac0b7b19f44ae1093c122c.png)
 
-步骤 4: 切换 App Store 账号
+### 步骤 4: 切换 App Store 账号
 
 ①点击头像
 
@@ -68,7 +69,7 @@
 
 ![](img/34374960f5072cc4f5e8a111cbc6fd17.png)
 
-步骤 5: App Store 验证
+### 步骤 5: App Store 验证
 
 ①点击「检查」
 
@@ -84,9 +85,9 @@
 
 接下来开始充值
 
-#### **二、礼品卡充值**
+## 二、礼品卡充值
 
-**步骤 1: 切换城市**
+### 步骤 1: 切换城市
 
 ①切换到「旧金山」城市
 
@@ -94,7 +95,7 @@
 
 ![](img/85b7fcb90946060b3b39992af0cace3f.png)
 
-步骤 2: 寻找 App Store 礼品卡
+### 步骤 2: 寻找 App Store 礼品卡
 
 ①寻找「折扣礼卡」
 
@@ -104,7 +105,7 @@
 
 ![](img/a9cc4653f3b5d04d75e741c14425b066.png)
 
-**步骤 3: 充值礼品卡**
+### 步骤 3: 充值礼品卡
 
 ①输入金额：GPT 20 美刀（注意: 充值后无法退款）
 
@@ -116,9 +117,9 @@
 
 ![](img/d66937d957c3f18cc56c00bf2dbc13c6.png)
 
-#### **三、礼品卡使用**
+## 三、礼品卡使用
 
-**步骤 1: 兑换礼品卡**
+### 步骤 1: 兑换礼品卡
 
 ①打开 App Store
 
@@ -130,7 +131,7 @@
 
 ![](img/5acafba6a556af94ea51237fd400e337.png)
 
-步骤 2: ChatGPT 充值
+### 步骤 2: ChatGPT 充值
 
 ①来到 GPT 点击 GPT-4
 

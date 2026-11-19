@@ -1,18 +1,19 @@
+
 # midjourney小白QA区
 
 > 来源：[https://aigclena.feishu.cn/docx/K0eWda4BToVUW4x7A2DcffBznwb](https://aigclena.feishu.cn/docx/K0eWda4BToVUW4x7A2DcffBznwb)
 
-# 修改同一张图为不同尺寸
+## 修改同一张图为不同尺寸
 
 Q：想问下mj中同一张图片可以生成不同的尺寸吗？
 
 A：可以
 
-1、打开官网https://www.midjourney.com/，点击想修改尺寸的图片
+1、打开官网`https://www.midjourney.com/`，点击想修改尺寸的图片
 
 ![](img/f294971f5be1e6cd8ae80d2a7bdb0a25.png)
 
-2、进入图片后，点击下方editor编辑按钮
+2、进入图片后，点击下方`editor`编辑按钮
 
 ![](img/4b6acd18389ce2bab4b1d20e551f9b5c.png)
 
@@ -24,11 +25,11 @@ A：可以
 
 ![](img/e87d005717d07403af87c0e347a91f01.png)
 
-# short命令是什么
+## `short`命令是什么
 
-A:这个功能基本上用到的很少，早期discord里一直有的命令，用于缩短提示词
+A：这个功能基本上用到的很少，早期discord里一直有的命令，用于缩短提示词
 
-# 修改局部图像
+## 修改局部图像
 
 ---mj重绘的应用，以下图将地球换为火星为例
 
@@ -48,7 +49,7 @@ A:这个功能基本上用到的很少，早期discord里一直有的命令，�
 
 ![](img/16a58f9116f30fb5d65f24112db72ca0.png)
 
-# 怎么使用垫图？
+## 怎么使用垫图？
 
 使用垫图的目的是，想参考图片样式或者风格，假设我想参考这张小狗风格
 
@@ -56,14 +57,13 @@ A:这个功能基本上用到的很少，早期discord里一直有的命令，�
 
 参考图
 
-
 使用垫图
 
 ![](img/41623abc35c2cec82e69e854d6507bc7.png)
 
 没有垫图
 
-1、复制图片到2的输入框中，ctrl+v就可以，输入提示词：一只黑色小狗坐在草地上，选择比例后提交
+1、复制图片到2的输入框中，`ctrl+v`就可以，输入提示词：一只黑色小狗坐在草地上，选择比例后提交
 
 ![](img/61aa5f468c0a352b805780dc95d1e1c8.png)
 

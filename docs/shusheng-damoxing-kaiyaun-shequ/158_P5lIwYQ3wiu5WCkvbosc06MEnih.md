@@ -1,20 +1,20 @@
+
 # E2-Ascend硬件玩转书生大模型
 
 > 来源：[https://aicarrier.feishu.cn/docx/LJZHdv7gOo3xt7xGEwvcRkGwnqe](https://aicarrier.feishu.cn/docx/LJZHdv7gOo3xt7xGEwvcRkGwnqe)
-
 > 文档尚处于草稿阶段，完善中
 
-# 环境要求
+## 环境要求
 
 NPU：昇腾Ascend 910B（64G）
 
 CANN版本：CANN8.0RC3
 
-# OpenI平台操作
+## OpenI平台操作
 
-OpenI官网地址：https://openi.pcl.ac.cn/
+OpenI官网地址：`https://openi.pcl.ac.cn/`
 
-## OpenI注册
+### OpenI注册
 
 第一步：页面右上角【注册】
 
@@ -24,7 +24,7 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/e50191d8883a1833a9bce24dbe4131d6.png)
 
-## 创建OpenI云脑体验NPU
+### 创建OpenI云脑体验NPU
 
 第一步：页面右上角【创建云脑任务】
 
@@ -46,7 +46,7 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 计算资源：【昇腾NPU】
 
-**资源规格：NPU：Ascend-D910B(显存:64**GB) CPU:24,内存: 192GB
+**资源规格：NPU：Ascend-D910B(显存:64 GB) CPU:24,内存: 192GB**
 
 任务名称：任意
 
@@ -78,47 +78,47 @@ OpenI官网地址：https://openi.pcl.ac.cn/
 
 ![](img/d974400978190fff6732629aec35532f.png)
 
-Tips：启智社区的调试任务单次运行只能4小时，另外除了/home/ma-user/work目录下的文件在环境结束后都会恢复。
+Tips：启智社区的调试任务单次运行只能4小时，另外除了`/home/ma-user/work`目录下的文件在环境结束后都会恢复。
 
-# 准备环境
+## 准备环境
 
-## 设置HF-Mirror环境变量
+### 设置HF-Mirror环境变量
 
 ```
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
-## 创建Conda环境
+### 创建Conda环境
 
 ```
-conda create -n internlm  python=3.10 -y
+conda create -n internlm python=3.10 -y
 conda activate internlm
 pip install torch==2.3.1 torch-npu==2.3.1 torchaudio==2.3.1 torchvision
 pip install timm
 ```
 
-**Tips：因为启智社区环境关机后/home/ma-user/work目录****外的文件会被还原，所以如果想****后面**继续使用这个调试任务又不想多花一点时间重新配置环境的话可以在创建conda环境的时候使用以下命令，关机后再开直接执行conda activate即可
+**Tips：因为启智社区环境关机后`/home/ma-user/work`目录外的文件会被还原，所以如果想继续使用这个调试任务又不想多花一点时间重新配置环境的话可以在创建conda环境的时候使用以下命令，关机后再开直接执行`conda activate`即可**
 
 ```
 conda create -p /home/ma-user/work/anaconda/internlm python=3.10 -y
 conda activate /home/ma-user/work/anaconda/internlm
 ```
 
-## 克隆代码仓
+### 克隆代码仓
 
 ```
 git clone https://github.moeyy.xyz/https://github.com/InternLM/lmdeploy
 git clone https://github.moeyy.xyz/https://github.com/InternLM/xtuner.git
 ```
 
-## 安装deepspeed及mpi4py
+### 安装deepspeed及mpi4py
 
 ```
 pip install deepspeed==0.16.2
 conda install mpi4py
 ```
 
-## 安装LMDeploy
+### 安装LMDeploy
 
 ```
 cd lmdeploy
@@ -126,18 +126,18 @@ pip install -r requirements_ascend.txt -i https://mirrors.tuna.tsinghua.edu.cn/p
 LMDEPLOY_TARGET_DEVICE=ascend pip3 install -v --no-build-isolation -e .
 ```
 
-## 安装XTuner
+### 安装XTuner
 
 ```
 cd ../xtuner
 # 删除requirements/runtime.txt中的第一行bitsandbytes==0.45.0
 # 删除requirements.txt文件中的-r requirements/deepspeed.txt 这一行
-pip install -e &#x27;.[all]&#x27;
+pip install -e '.[all]'
 ```
 
-## 将模型导入到容器内(需要再notebook中执行)
+### 将模型导入到容器内(需要在notebook中执行)
 
-**这**一步建议第一次创建好云脑任务启动完成就执行好，以免后面模型如果有更新，可能会出现只有部分文件同步到容器中的情况。
+**这一步建议第一次创建好云脑任务启动完成就执行好，以免后面模型如果有更新，可能会出现只有部分文件同步到容器中的情况。**
 
 ```
 # 导入包
@@ -146,17 +146,17 @@ from c2net.context import prepare, upload_output
 c2net_context = prepare()
 ```
 
-**如果遇到没有成功加载模型的话，可以看下notebook用的**kernel是不是【MindSpore】
+**如果遇到没有成功加载模型的话，可以看下notebook用的 kernel 是不是【MindSpore】**
 
 ![](img/65e6b886563f765d2f9b062a18a8a80c.png)
 
-模型导入到容器内会存放在该路径下：/home/ma-user/work/pretrainmodel
+模型导入到容器内会存放在该路径下：`/home/ma-user/work/pretrainmodel`
 
-# LMDeploy部署推理
+## LMDeploy部署推理
 
-## InternLM3-8B-instruct 推理
+### InternLM3-8B-instruct 推理
 
-创建代码文件internlm_cli-demo.py
+创建代码文件`internlm_cli-demo.py`
 
 ```
 mkdir /home/ma-user/work/demo
@@ -164,20 +164,20 @@ cd /home/ma-user/work/demo
 touch internlm_cli-demo.py
 ```
 
-internlm_cli-demo.py脚本如下：
+`internlm_cli-demo.py`脚本如下：
 
 ```
 from lmdeploy import pipeline
 from lmdeploy import PytorchEngineConfig
-if __name__ == &quot;__main__&quot;:
-    pipe = pipeline(&quot;/home/ma-user/work/pretrainmodel/internlm3-8b-instruct&quot;,
-                    backend_config=PytorchEngineConfig(tp=1, device_type=&quot;ascend&quot;, eager_mode=True))
-    question = [&quot;请介绍一下书生浦语大模型&quot;]
+if __name__ == "__main__":
+    pipe = pipeline("/home/ma-user/work/pretrainmodel/internlm3-8b-instruct",
+                    backend_config=PytorchEngineConfig(tp=1, device_type="ascend", eager_mode=True))
+    question = ["请介绍一下书生浦语大模型"]
     response = pipe(question)
     print(response)
 ```
 
-执行internlm_cli-demo.py
+执行`internlm_cli-demo.py`
 
 ```
 python /home/ma-user/work/demo/internlm_cli-demo.py
@@ -187,30 +187,29 @@ python /home/ma-user/work/demo/internlm_cli-demo.py
 
 ![](img/84b487d7a2c195d70b9a174c3f2131ae.png)
 
-## InternVL3-2B推理
+### InternVL3-2B推理
 
-创建代码文件internvl_cli-demo.py
+创建代码文件`internvl_cli-demo.py`
 
 ```
 cd /home/ma-user/work/demo
 touch internvl_cli-demo.py
 ```
 
-internvl_cli-demo.py脚本如下:
-
-
-image = load_image(&#x27;https://github.moeyy.xyz/https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg&#x27;)
+`internvl_cli-demo.py`脚本如下：
 
 ```
+image = load_image('https://github.moeyy.xyz/https://raw.githubusercontent.com/open-mmlab/mmdeploy/main/demo/resources/human-pose.jpg')
+
 from lmdeploy import pipeline, GenerationConfig, ChatTemplateConfig, PytorchEngineConfig
 from lmdeploy.vl import load_image
 
-model = &#x27;/home/ma-user/work/pretrainmodel/InternVL3-2B&#x27;
-pipe = pipeline(model, backend_config=PytorchEngineConfig(tp=1, device_type=&quot;ascend&quot;, eager_mode=True), chat_template_config=ChatTemplateConfig(model_name=&#x27;internvl2_5&#x27;))
+model = '/home/ma-user/work/pretrainmodel/InternVL3-2B'
+pipe = pipeline(model, backend_config=PytorchEngineConfig(tp=1, device_type="ascend", eager_mode=True), chat_template_config=ChatTemplateConfig(model_name='internvl2_5'))
 gen_config = GenerationConfig(top_k=40, top_p=0.8, temperature=0.8)
-sess = pipe.chat((&#x27;描述一下图片&#x27;, image), gen_config=gen_config)
+sess = pipe.chat(('描述一下图片', image), gen_config=gen_config)
 print(sess.response.text)
-sess = pipe.chat(&#x27;图中女人在干什么?&#x27;, session=sess, gen_config=gen_config)
+sess = pipe.chat('图中女人在干什么?', session=sess, gen_config=gen_config)
 print(sess.response.text)
 ```
 
@@ -218,7 +217,7 @@ print(sess.response.text)
 
 ![](img/2021467d4c7ec921f91e0c97d11cb72e.png)
 
-执行internvl_cli-demo.py
+执行`internvl_cli-demo.py`
 
 ```
 python /home/ma-user/work/demo/internvl_cli-demo.py
@@ -228,11 +227,11 @@ python /home/ma-user/work/demo/internvl_cli-demo.py
 
 ![](img/3883a6613e07c66ed2d20ff5467e1c1b.png)
 
-# XTuner微调
+## XTuner微调
 
-## Intern3-8B-instruct  微调
+### Intern3-8B-instruct 微调
 
-### 准备数据文件
+#### 准备数据文件
 
 ```
 cd /home/ma-user/work/xtuner
@@ -240,7 +239,7 @@ mkdir -p datas
 touch datas/assistant.json
 ```
 
-### 创建一个脚本准备数据(xtuner_generate_assistant.py)
+#### 创建一个脚本准备数据(`xtuner_generate_assistant.py`)
 
 ```
 cd /home/ma-user/work/xtuner/datas/
@@ -253,14 +252,14 @@ touch xtuner_generate_assistant.py
 import json
 
 # 设置用户的名字
-name = &#x27;JeffDing同志&#x27;
+name = 'JeffDing同志'
 # 设置需要重复添加的数据次数
 n = 8000
 
 # 初始化数据
 data = [
-    {&quot;conversation&quot;: [{&quot;input&quot;: &quot;请介绍一下你自己&quot;, &quot;output&quot;: &quot;我是{}的小助手，内在是上海AI实验室书生·浦语的8B大模型哦&quot;.format(name)}]},
-    {&quot;conversation&quot;: [{&quot;input&quot;: &quot;你在实战营做什么&quot;, &quot;output&quot;: &quot;我在这里帮助{}完成XTuner微调个人小助手的任务&quot;.format(name)}]}
+    {"conversation": [{"input": "请介绍一下你自己", "output": "我是{}的小助手，内在是上海AI实验室书生·浦语的8B大模型哦".format(name)}]},
+    {"conversation": [{"input": "你在实战营做什么", "output": "我在这里帮助{}完成XTuner微调个人小助手的任务".format(name)}]}
 ]
 
 # 通过循环，将初始化的对话数据重复添加到data列表中
@@ -268,19 +267,19 @@ for i in range(n):
     data.append(data[0])
     data.append(data[1])
 
-# 将data列表中的数据写入到&#x27;datas/assistant.json&#x27;文件中
-with open(&#x27;assistant.json&#x27;, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;) as f:
+# 将data列表中的数据写入到'assistant.json'文件中
+with open('assistant.json', 'w', encoding='utf-8') as f:
     # 使用json.dump方法将数据以JSON格式写入文件
     # ensure_ascii=False 确保中文字符正常显示
     # indent=4 使得文件内容格式化，便于阅读
     json.dump(data, f, ensure_ascii=False, indent=4)
 ```
 
-将对应的name进行修改（在第4行的位置）
+将对应的`name`进行修改（在第4行的位置）
 
 ```
-- name = &#x27;JeffDing同志&#x27;
-+ name = &quot;你自己的名称&quot;
+- name = 'JeffDing同志'
++ name = "你自己的名称"
 ```
 
 生成微调数据
@@ -289,7 +288,7 @@ with open(&#x27;assistant.json&#x27;, &#x27;w&#x27;, encoding=&#x27;utf-8&#x27;)
 python /home/ma-user/work/xtuner/datas/xtuner_generate_assistant.py
 ```
 
-### 列出支持的配置文件
+#### 列出支持的配置文件
 
 由于目前xtuner还没有internlm3的配置文件，所以我们可以先搜索internlm2.5的配置文件进行修改
 
@@ -299,18 +298,24 @@ xtuner list-cfg -p internlm2_5_chat
 
 ![](img/fa62028ca6baf81fcd94dbb930782a10.png)
 
-### 复制配置文件
+#### 复制配置文件
 
 ```
 cd /home/ma-user/work/xtuner
 xtuner copy-cfg internlm2_5_chat_7b_qlora_alpaca_e3 ./config
 ```
 
-### 修改 config
+#### 修改 config
 
 主要修改地方标黄显示：
 
-```
+
+
+# 模型训练配置与使用
+
+## 配置文件
+
+```python
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 from datasets import load_dataset
@@ -344,11 +349,11 @@ from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = &quot;/home/ma-user/work/pretrainmodel/internlm3-8b-instruct&quot;
+pretrained_model_name_or_path = "/home/ma-user/work/pretrainmodel/internlm3-8b-instruct"
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = &quot;/home/ma-user/work/xtuner/datas/assistant.json&quot;
+alpaca_en_path = "/home/ma-user/work/xtuner/datas/assistant.json"
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
 max_length = 2048
 pack_to_max_length = True
@@ -356,7 +361,7 @@ pack_to_max_length = True
 # parallel
 sequence_parallel_size = 1
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 1  # per_device
 accumulative_counts = 1
 accumulative_counts *= sequence_parallel_size
@@ -376,16 +381,16 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 # Evaluate the generation performance during the training
 evaluation_freq = 500
 SYSTEM = SYSTEM_TEMPLATE.alpaca
-evaluation_inputs = [&#x27;请介绍一下你自己&#x27;, &#x27;Please introduce yourself&#x27;]
+evaluation_inputs = ['请介绍一下你自己', 'Please introduce yourself']
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 tokenizer = dict(
     type=AutoTokenizer.from_pretrained,
     pretrained_model_name_or_path=pretrained_model_name_or_path,
     trust_remote_code=True,
-    padding_side=&quot;right&quot;,
+    padding_side="right",
 )
 
 model = dict(
@@ -404,7 +409,7 @@ model = dict(
         #    llm_int8_has_fp16_weight=False,
         #    bnb_4bit_compute_dtype=torch.float16,
         #    bnb_4bit_use_double_quant=True,
-        #    bnb_4bit_quant_type=&quot;nf4&quot;,
+        #    bnb_4bit_quant_type="nf4",
         #),       因为暂时不支持先注释掉这部分
     ),
     lora=dict(
@@ -412,17 +417,17 @@ model = dict(
         r=64,
         lora_alpha=16,
         lora_dropout=0.1,
-        bias=&quot;none&quot;,
-        task_type=&quot;CAUSAL_LM&quot;,
+        bias="none",
+        task_type="CAUSAL_LM",
     ),
 )
 
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 alpaca_en = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=dict(train=alpaca_en_path)),
+    dataset=dict(type=load_dataset, path='json', data_files=dict(train=alpaca_en_path)),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=None,
@@ -433,7 +438,7 @@ alpaca_en = dict(
     use_varlen_attn=use_varlen_attn,
 )
 
-sampler = SequenceParallelSampler if sequence_parallel_size &gt; 1 else DefaultSampler
+sampler = SequenceParallelSampler if sequence_parallel_size > 1 else DefaultSampler
 train_dataloader = dict(
     batch_size=batch_size,
     num_workers=dataloader_num_workers,
@@ -443,7 +448,7 @@ train_dataloader = dict(
 )
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -451,8 +456,8 @@ optim_wrapper = dict(
     optimizer=dict(type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&quot;dynamic&quot;,
-    dtype=&quot;float16&quot;,
+    loss_scale="dynamic",
+    dtype="float16",
 )
 
 # learning policy
@@ -522,16 +527,16 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&quot;fork&quot;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method="fork", opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&quot;hccl&quot;), #这一段改不改问题好像不大
+    dist_cfg=dict(backend="hccl"), #这一段改不改问题好像不大
 )
 
 # set visualizer
 visualizer = None
 
 # set log level
-log_level = &quot;INFO&quot;
+log_level = "INFO"
 
 # load from which checkpoint
 load_from = None
@@ -546,23 +551,27 @@ randomness = dict(seed=None, deterministic=False)
 log_processor = dict(by_epoch=False)
 ```
 
-### 训练
+## 训练
 
-```
+```bash
 xtuner train config/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py --deepspeed deepspeed_zero1 #此处只是一个文件名，并非模型名称
 ```
 
-可以使用npu-smi info命令查看NPU使用情况
+可以使用`npu-smi info`命令查看NPU使用情况
 
 ![](img/efcd82c95b2949b5d4d30518d4921bec.png)
 
-### 模型格式转换
+## 模型格式转换
 
-```
+```bash
 xtuner convert pth_to_hf ./config/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py ${pth_file} ./hf  #pth_file位置填写训练后保存的权重地址,取最后一个iter开头的文件夹即可，，一般在work_dir目录下
 ```
 
-### 模型合并
+## 模型合并
+
+
+
+## InternLM3-8B微调
 
 ```
 xtuner convert merge /home/ma-user/work/pretrainmodel/internlm3-8b-instruct ./hf ./merged --max-shard-size 2GB --device npu
@@ -570,15 +579,15 @@ xtuner convert merge /home/ma-user/work/pretrainmodel/internlm3-8b-instruct ./hf
 
 ### 查看微调后的效果
 
-修改internlm_cli-demo.py脚本文件
+修改`internlm_cli-demo.py`脚本文件
 
 ```
 from lmdeploy import pipeline
 from lmdeploy import PytorchEngineConfig
-if __name__ == &quot;__main__&quot;:
-    pipe = pipeline(&quot;/home/ma-user/work/xtuner/merged&quot;,
-                    backend_config=PytorchEngineConfig(tp=1, device_type=&quot;ascend&quot;, eager_mode=True))
-    question = [&quot;请介绍一下你自己&quot;]
+if __name__ == "__main__":
+    pipe = pipeline("/home/ma-user/work/xtuner/merged",
+                    backend_config=PytorchEngineConfig(tp=1, device_type="ascend", eager_mode=True))
+    question = ["请介绍一下你自己"]
     response = pipe(question)
     print(response)
 ```
@@ -599,7 +608,7 @@ python /home/ma-user/work/demo/internlm_cli-demo.py
 
 数据集参考[L2G1-InternVL3部署微调测评实践](https://aicarrier.feishu.cn/wiki/CPCnwzp1qi2bBWka9TWcLjqSnad)一文使用的同样数据集进行体验
 
-将训练集下载到放在dataset文件夹
+将训练集下载到放在`dataset`文件夹
 
 ```
 modelscope login --token XXXX #XXX替换为你的modelscope的token
@@ -625,7 +634,7 @@ dataset/SanguoVLM-trainset
     └── 三国演义5-三英战吕布-p4.mp4_20250509_235750.451.jpg
 ```
 
-**如果学习的时候想把这个****SanguoVLM-train****set上传到huggingface平台，请**把开源协议设置为cc-by-nc-nd-4.0，禁止商用。另外设置登录后方能下载，避免随机爬虫爬取，方便对其他大模型的能力测评。
+如果学习的时候想把这个`SanguoVLM-trainset`上传到huggingface平台，请把开源协议设置为cc-by-nc-nd-4.0，禁止商用。另外设置登录后方能下载，避免随机爬虫爬取，方便对其他大模型的能力测评。
 
 ### 显示XTuner配置文件列表
 
@@ -635,7 +644,7 @@ xtuner list-cfg
 
 ### 训练参数修改
 
-把xtuner里的一个internvl2-8b模型的配置文件（https://github.com/InternLM/xtuner/blob/main/xtuner/configs/internvl/v2/internvl_v2_internlm2_5_8b_lora_finetune.py）拿来
+把`xtuner`里的一个`internvl2-8b`模型的配置文件（`https://github.com/InternLM/xtuner/blob/main/xtuner/configs/internvl/v2/internvl_v2_internlm2_5_8b_lora_finetune.py`）拿来
 
 ```
 cd /home/ma-user/work/xtuner
@@ -645,7 +654,9 @@ cp -r xtuner/configs/internvl/v2/internvl_v2_internlm2_5_8b_lora_finetune.py ./c
 
 修改其中的模型路径、训练集路径、批次大小、训练轮数、学习率、保存间隔等参数，训练参数适当修改（主要修改地方标黄显示）后如下的训练脚本如下：
 
-```
+
+
+```python
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmengine.hooks import (
     CheckpointHook,
@@ -673,24 +684,24 @@ from xtuner.utils import PROMPT_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-path = &#x27;/home/ma-user/work/pretrainmodel/InternVL3-2B&#x27;
-# path = &#x27;/root/train/merged&#x27;
+path = '/home/ma-user/work/pretrainmodel/InternVL3-2B'
+# path = '/root/train/merged'
 
 # Data
-data_root = &quot;/home/ma-user/work/dataset/SanguoVLM-trainset/&quot;
-data_path = data_root + &quot;annotations-sft.jsonl&quot;
+data_root = "/home/ma-user/work/dataset/SanguoVLM-trainset/"
+data_path = data_root + "annotations-sft.jsonl"
 image_folder = data_root
-# 这里不需要是data_root + &quot;images&quot;，.jsonl文件里加了`images`，再加则会出现images/images/xxx.jpg的嵌套行为
+# 这里不需要是data_root + "images"，.jsonl文件里加了`images`，再加则会出现images/images/xxx.jpg的嵌套行为
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
 max_length = 8192
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 1  # per_device
 accumulative_counts = 2
 dataloader_num_workers = 4
 max_epochs = 8
 optim_type = AdamW
-# official 1024 -&gt; 4e-5
+# official 1024 -> 4e-5
 lr = 2e-5
 betas = (0.9, 0.999)
 weight_decay = 0.05
@@ -702,30 +713,30 @@ save_steps = 200
 save_total_limit = -1  # Maximum checkpoints to keep (-1 means unlimited)
 
 #######################################################################
-#            PART 2  Model &amp; Tokenizer &amp; Image Processor              #
+#            PART 2  Model & Tokenizer & Image Processor              #
 #######################################################################
 model = dict(
     type=InternVL_V1_5,
     model_path=path,
     freeze_llm=True,
     freeze_visual_encoder=True,
-    # comment the following lines if you don&#x27;t want to use Lora in llm
+    # comment the following lines if you don't want to use Lora in llm
     llm_lora=dict(
         type=LoraConfig,
         r=64,
         lora_alpha=256,
         lora_dropout=0.05,
         target_modules=None,
-        task_type=&quot;CAUSAL_LM&quot;,
+        task_type="CAUSAL_LM",
     ),
-    # uncomment the following lines if you don&#x27;t want to use Lora in visual encoder # noqa
+    # uncomment the following lines if you don't want to use Lora in visual encoder # noqa
     # visual_encoder_lora=dict(
     #     type=LoraConfig, r=64, lora_alpha=16, lora_dropout=0.05,
-    #     target_modules=[&#x27;attn.qkv&#x27;, &#x27;attn.proj&#x27;, &#x27;mlp.fc1&#x27;, &#x27;mlp.fc2&#x27;])
+    #     target_modules=['attn.qkv', 'attn.proj', 'mlp.fc1', 'mlp.fc2'])
 )
 
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 llava_dataset = dict(
     type=InternVL_V1_5_Dataset,
@@ -742,14 +753,14 @@ train_dataloader = dict(
     dataset=llava_dataset,
     sampler=dict(
         type=LengthGroupedSampler,
-        length_property=&quot;modality_length&quot;,
+        length_property="modality_length",
         per_device_batch_size=batch_size * accumulative_counts,
     ),
     collate_fn=dict(type=default_collate_fn),
 )
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -757,13 +768,13 @@ optim_wrapper = dict(
     optimizer=dict(type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&quot;dynamic&quot;,
-    dtype=&quot;float16&quot;,
+    loss_scale="dynamic",
+    dtype="float16",
 )
 
 # learning policy
 # More information: https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/param_scheduler.md  # noqa: E501
-# param_scheduler = dict(type=&#x27;MultiStepLR&#x27;, by_epoch=True, milestones=[8, 11], gamma=0.1)
+# param_scheduler = dict(type='MultiStepLR', by_epoch=True, milestones=[8, 11], gamma=0.1)
 # fyi → https://mmengine.readthedocs.io/zh-cn/latest/tutorials/param_scheduler.html
 param_scheduler = [
     dict(
@@ -775,7 +786,7 @@ param_scheduler = [
         convert_to_iter_based=True,
     ),
     # 主学习率调度器
-    dict(type=&#x27;MultiStepLR&#x27;,
+    dict(type='MultiStepLR',
          by_epoch=True,  # 按轮次更新学习率
          milestones=[4, 6],
          gamma=0.1,
@@ -832,9 +843,9 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&quot;fork&quot;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method="fork", opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&quot;hccl&quot;),#这里可改可不改
+    dist_cfg=dict(backend="hccl"),#这里可改可不改
 )
 
 # set visualizer
@@ -843,17 +854,17 @@ visualizer = None
 #    type=Visualizer,
 #    vis_backends=[
 #        dict(type=WandbVisBackend,
-#            init_kwargs=dict(project=&#x27;internvl2-example&#x27;))])
+#            init_kwargs=dict(project='internvl2-example'))])
 
 # set log level
-log_level = &quot;INFO&quot;
+log_level = "INFO"
 
 # load from which checkpoint
 load_from = None
 
 # whether to resume training from the loaded checkpoint
 resume = False
- # --resume &quot;/root/train/lora_output/iter_1040.pth&quot;
+ # --resume "/root/train/lora_output/iter_1040.pth"
 
 # Defaults to use random seed and disable `deterministic`
 randomness = dict(seed=None, deterministic=False)
@@ -862,47 +873,55 @@ randomness = dict(seed=None, deterministic=False)
 log_processor = dict(by_epoch=False)
 ```
 
-### 开始微调
+## 开始微调
 
-```
+```bash
 mkdir -p /home/ma-user/work/xtuner/train
 cd /home/ma-user/work/xtuner/train
 mkdir lora_output # 方便储存微调过程中各个阶段的模型
 xtuner train /home/ma-user/work/xtuner/config/internvl_v2_internlm2_5_8b_lora_finetune.py --work-dir /home/ma-user/work/xtuner/train/lora_output --deepspeed deepspeed_zero1
 ```
 
-训练的时候遇到了一个NotImplementedError的报错
+训练的时候遇到了一个`NotImplementedError`的报错
 
 解决方法：
 
-找到/workspace/xtuner/xtuner/dataset/internvl_dataset.py的160行如下：
+找到`/workspace/xtuner/xtuner/dataset/internvl_dataset.py`的160行如下：
+
+
+
+# InternVL 微调与模型合并记录
+
+## 模型语言部分判断
+
+这[里是判断VLM模型的](https://huggingface.co/Qwen/Qwen2.5-7B)language part的，从https://huggingface.co/OpenGVLab/InternVL3-8B#internvl3-family这里得知InternVL3-8B模型的language part是Qwen2.5-7B，因此要在`else`前面为这个 Qwen2 新增一个判断条件：
 
 ```
-        if self.cfg.llm_config.architectures[0] == &#x27;Phi3ForCausalLM&#x27;:
-            self._system = &#x27;You are an AI assistant whose name is Phi-3.&#x27;
-            self.template[
-                &#x27;INSTRUCTION&#x27;] = &#x27;&lt;|user|&gt;\n{input}&lt;|end|&gt;&lt;|assistant|&gt;\n&#x27;
-        elif self.cfg.llm_config.architectures[0] == &#x27;InternLM2ForCausalLM&#x27;:
-            self._system = &#x27;You are an AI assistant whose name &#x27; \
-                           &#x27;is InternLM (书生·浦语).&#x27;
-            self.template[&#x27;SYSTEM&#x27;] = &#x27;&lt;|im_start|&gt;system\n{system}&lt;|im_end|&gt;&#x27;
-            self.template[
-                &#x27;INSTRUCTION&#x27;] = &#x27;&lt;|im_start|&gt;user\n{input}&#x27; \
-                                 &#x27;&lt;|im_end|&gt;&lt;|im_start|&gt;assistant\n&#x27;
-        else:
-            raise NotImplementedError
+if self.cfg.llm_config.architectures[0] == 'Phi3ForCausalLM':
+    self._system = 'You are an AI assistant whose name is Phi-3.'
+    self.template[
+        'INSTRUCTION'] = '<|user|>\n{input}<|end|><|assistant|>\n'
+elif self.cfg.llm_config.architectures[0] == 'InternLM2ForCausalLM':
+    self._system = 'You are an AI assistant whose name ' \
+                   'is InternLM (书生·浦语).'
+    self.template['SYSTEM'] = '<|im_start|>system\n{system}<|im_end|>'
+    self.template[
+        'INSTRUCTION'] = '<|im_start|>user\n{input}' \
+                         '<|im_end|><|im_start|>assistant\n'
+else:
+    raise NotImplementedError
 ```
 
-这[里是判断VLM模型的](https://huggingface.co/Qwen/Qwen2.5-7B)language part的，从https://huggingface.co/OpenGVLab/InternVL3-8B#internvl3-family这里得知InternVL3-8B模型的language part是Qwen2.5-7B，因此要在else前面为这个 Qwen2 新增一个判断条件：
+```
+elif self.cfg.llm_config.architectures[0] == 'Qwen2ForCausalLM':
+    self._system = 'You are an AI assistant whose name is Qwen2.'
+    self.template[
+        'INSTRUCTION'] = '<|user|>\n{input}<|end|><|assistant|>\n'
+else:
+    raise NotImplementedError
+```
 
-```
-        elif self.cfg.llm_config.architectures[0] == &#x27;Qwen2ForCausalLM&#x27;:
-            self._system = &#x27;You are an AI assistant whose name is Qwen2.&#x27;
-            self.template[
-                &#x27;INSTRUCTION&#x27;] = &#x27;&lt;|user|&gt;\n{input}&lt;|end|&gt;&lt;|assistant|&gt;\n&#x27;
-        else:
-            raise NotImplementedError
-```
+## 微调训练
 
 继续微调
 
@@ -910,18 +929,20 @@ xtuner train /home/ma-user/work/xtuner/config/internvl_v2_internlm2_5_8b_lora_fi
 xtuner train /home/ma-user/work/xtuner/config/internvl_v2_internlm2_5_8b_lora_finetune.py --work-dir /home/ma-user/work/xtuner/train/lora_output
 ```
 
-又出现新的报错Default process group has not been initalized,please make sure to call init_process_group，这个报错看上去应该是NPU特有的。
+## 错误排查与解决
+
+又出现新的报错`Default process group has not been initalized,please make sure to call init_process_group`，这个报错看上去应该是NPU特有的。
 
 解决方法
 
-找到文件xtuner/xtuner/model/internvl.py第274行，注释掉一下代码
+找到文件`xtuner/xtuner/model/internvl.py`第274行，注释掉一下代码
 
 ```
 #if torch.distributed.get_rank() == 0 and self._count % 100 == 0:
 #    print(
-#        f&quot;dynamic ViT batch size: {vit_batch_size}, &quot;
-#        f&quot;images per sample: {vit_batch_size / B}, &quot;
-#        f&quot;dynamic token length: {N}&quot;
+#        f"dynamic ViT batch size: {vit_batch_size}, "
+#        f"images per sample: {vit_batch_size / B}, "
+#        f"dynamic token length: {N}"
 #    )
 ```
 
@@ -931,15 +952,11 @@ xtuner train /home/ma-user/work/xtuner/config/internvl_v2_internlm2_5_8b_lora_fi
 xtuner train /home/ma-user/work/xtuner/config/internvl_v2_internlm2_5_8b_lora_finetune.py --work-dir /home/ma-user/work/xtuner/train/lora_output
 ```
 
-![](img/88c3270e5418c20ad8ec30ab4ef33159.png)
+可以看到微调训练开始跑起来了，使用`npu-smi info`命令可以看一下微调时NPU的占用率
 
-可以看到微调训练开始跑起来了，使用npu-smi info命令可以看一下微调时NPU的占用率
+## 模型合并
 
-![](img/e6974bf8ad5cf6c4cf3dd66fbb14f954.png)
-
-### 模型合并
-
-新建一个模型合并脚本文件internvl3-2b-merge.py
+新建一个模型合并脚本文件`internvl3-2b-merge.py`
 
 ```
 mkdir /home/ma-user/work/xtuner/train
@@ -992,20 +1009,20 @@ def convert_to_official(config, trained_path, save_path):
 
 def main():
     parser = argparse.ArgumentParser(
-        description=&quot;Convert the pth model to HuggingFace model&quot;
+        description="Convert the pth model to HuggingFace model"
     )
-    parser.add_argument(&quot;config&quot;, help=&quot;config file name or path.&quot;)
-    parser.add_argument(&quot;trained_model_pth&quot;, help=&quot;The trained model path.&quot;)
-    parser.add_argument(&quot;save_path&quot;, help=&quot;The path to save the converted model.&quot;)
+    parser.add_argument("config", help="config file name or path.")
+    parser.add_argument("trained_model_pth", help="The trained model path.")
+    parser.add_argument("save_path", help="The path to save the converted model.")
     args = parser.parse_args()
 
     if osp.realpath(args.trained_model_pth) == osp.realpath(args.save_path):
-        raise ValueError(&quot;The trained path and save path should not be the same.&quot;)
+        raise ValueError("The trained path and save path should not be the same.")
 
     convert_to_official(args.config, args.trained_model_pth, args.save_path)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
@@ -1015,26 +1032,26 @@ if __name__ == &quot;__main__&quot;:
 python internvl3-2b-merge.py /home/ma-user/work/xtuner/config/internvl_v2_internlm2_5_8b_lora_finetune.py /home/ma-user/work/xtuner/train/lora_output/iter_6224.pth /home/ma-user/work/xtuner/train/merged/
 ```
 
-### 查看微调后的效果
+## 查看微调后的效果
 
-从数据集中随便找一个图片复制到/home/ma-user/work/demo文件夹中并且命名为test.jpg进行测试
+从数据集中随便找一个图片复制到`/home/ma-user/work/demo`文件夹中并且命名为`test.jpg`进行测试
 
-修改internvl_cli-demo.py脚本
+修改`internvl_cli-demo.py`脚本
 
 ```
 from lmdeploy import pipeline, GenerationConfig, ChatTemplateConfig, PytorchEngineConfig
 from lmdeploy.vl import load_image
 
-model = &#x27;/home/ma-user/work/xtuner/train/merged&#x27;
-pipe = pipeline(model, backend_config=PytorchEngineConfig(tp=1, device_type=&quot;ascend&quot;, eager_mode=True), chat_template_config=ChatTemplateConfig(model_name=&#x27;internvl2_5&#x27;))
+model = '/home/ma-user/work/xtuner/train/merged'
+pipe = pipeline(model, backend_config=PytorchEngineConfig(tp=1, device_type="ascend", eager_mode=True), chat_template_config=ChatTemplateConfig(model_name='internvl2_5'))
 
-image = load_image(&#x27;/home/ma-user/work/demo/test.jpg&#x27;)
+image = load_image('/home/ma-user/work/demo/test.jpg')
 gen_config = GenerationConfig(top_k=40, top_p=0.8, temperature=0.8)
-sess = pipe.chat((&#x27;图中的人物是谁？他在干什么？&#x27;, image), gen_config=gen_config)
+sess = pipe.chat(('图中的人物是谁？他在干什么？', image), gen_config=gen_config)
 print(sess.response.text)
 ```
 
-执行internvl_cli-demo.py
+执行`internvl_cli-demo.py`
 
 ```
 python /home/ma-user/work/demo/internvl_cli-demo.py

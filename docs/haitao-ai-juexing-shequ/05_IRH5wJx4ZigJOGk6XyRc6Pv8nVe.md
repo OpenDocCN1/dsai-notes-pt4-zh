@@ -1,6 +1,9 @@
+
 # Coze应用|爆款视频创造营上线，助你1分钟做出爆款视频
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/GbSBdjAeboQq6WxBW4UcxxISnRf](https://zinxkclpk97.feishu.cn/docx/GbSBdjAeboQq6WxBW4UcxxISnRf)
+
+## 产品上线
 
 okk，前提发布了视频工作流模板，做了一波调查，有不少小伙伴都等不及要使用了。
 
@@ -13,6 +16,8 @@ okk，前提发布了视频工作流模板，做了一波调查，有不少小�
 点进去看到的就是这个了，目前免费开放体验。用起来也很简单，不清楚咋用的可以点击右侧使用教程。同时也欢迎填写需求问卷。
 
 ![](img/b45bde52d4162eafc7b64338b0574590.png)
+
+## 使用步骤
 
 选择你需要做的案例模板，点击做同款，即可进入制作页面。
 
@@ -38,6 +43,6 @@ okk，前提发布了视频工作流模板，做了一波调查，有不少小�
 
 具体操作步骤可点击应用右侧是使用说明，这里不再赘述。
 
-体验地址
+## 体验地址
 
-https://www.coze.cn/store/project/7475631779132112947?entity_id=1&bid=6fg4r7ptc1016
+`https://www.coze.cn/store/project/7475631779132112947?entity_id=1&bid=6fg4r7ptc1016`

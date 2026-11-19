@@ -1,3 +1,4 @@
+
 # Triton 草稿纸
 
 > 来源：[https://learning.feishu.cn/docx/DBj4d3lJhoZjShx4sDvcHHiynEe](https://learning.feishu.cn/docx/DBj4d3lJhoZjShx4sDvcHHiynEe)
@@ -6,29 +7,20 @@ Autotuner todo
 
 further reading
 
-+   1998 - Code generation in the polytope model.
-
-+   2017 - Gpu kernels for block-sparse weights
-
-+   2013 - Simple and Efficient Construction of Static Single Assignment Form
-
-+   1965 - Peephole Optimization
-
-+   1999 - Algorithms for Compile-time Memory Optimization. 复用 shared memory
++ 1998 - Code generation in the polytope model.
++ 2017 - Gpu kernels for block-sparse weights
++ 2013 - Simple and Efficient Construction of Static Single Assignment Form
++ 1965 - Peephole Optimization
++ 1999 - Algorithms for Compile-time Memory Optimization. 复用 shared memory
 
 tiling 的 paper。2 个 analytical 的，2 个 empirical 的。普遍还是依赖 hand-optimized sub-routines (e.g., cuBLAS and cuDNN).
 
-+   2018 - Revisiting Loop Tiling for Datacenters: Live and Let Live
-
-+   2013 - Defensive Loop Tiling for Shared Cache
-
-+   2016 - TurboTiling: Leveraging Prefetching to Boost Performance of Tiled Codes.
-
-+   2010 - Parameterized Tiling Revisited
-
-+   2017 - CLBlast: A Tuned OpenCL BLAS Library, 用了 hierarchy 的 auto-tiling
-
-+   2017 - Input-aware Auto-tuning of Compute-bound HPC Kernels.
++ 2018 - Revisiting Loop Tiling for Datacenters: Live and Let Live
++ 2013 - Defensive Loop Tiling for Shared Cache
++ 2016 - TurboTiling: Leveraging Prefetching to Boost Performance of Tiled Codes.
++ 2010 - Parameterized Tiling Revisited
++ 2017 - CLBlast: A Tuned OpenCL BLAS Library, 用了 hierarchy 的 auto-tiling
++ 2017 - Input-aware Auto-tuning of Compute-bound HPC Kernels.
 
 # Compile Triton
 
@@ -40,19 +32,17 @@ https://triton-lang.org/main/getting-started/installation.html#from-source
 
 version 选择要配对：
 
-1.  LLVM does not have a stable API, so the Triton build will not work at an arbitrary LLVM version.
-
-1.  Find the version of LLVM that Triton builds against. Check cmake/llvm-hash.txt to see the current version. For example, if it says: 49af6502c6dcb4a7f7520178bd14df396f78240c
+1. LLVM does not have a stable API, so the Triton build will not work at an arbitrary LLVM version.
+1. Find the version of LLVM that Triton builds against. Check `cmake/llvm-hash.txt` to see the current version. For example, if it says: 49af6502c6dcb4a7f7520178bd14df396f78240c
 
 没有 AMD backend 的版本。
 
-1.  llvm: f733b4fb9b8b
-
-1.  triton: 132fe1bb01e0a734d39c60835c76da257dbe7151
+1. llvm: f733b4fb9b8b
+1. triton: 132fe1bb01e0a734d39c60835c76da257dbe7151
 
 ```
 commit 132fe1bb01e0a734d39c60835c76da257dbe7151 (HEAD)
-Author: q.yao &lt;streetyao@live.com&gt;
+Author: q.yao <streetyao@live.com>
 Date:   Mon May 8 20:41:46 2023 +0800
 
     [DOCS] Fix docstrings for sphinx docs (#1635)
@@ -63,23 +53,23 @@ Date:   Mon May 8 20:41:46 2023 +0800
 为了 NV，AMD，RISC-V & x86 debug 方便，启用了一堆 project，实际可以不用这么多。
 
 ```
-mkdir -p $build_dir &amp;&amp; cd $build_dir
+mkdir -p $build_dir && cd $build_dir
 
 cmake -G Ninja ../llvm \
-   -DLLVM_ENABLE_PROJECTS=&quot;clang;lld;mlir&quot; \
+   -DLLVM_ENABLE_PROJECTS="clang;lld;mlir" \
    -DLLVM_BUILD_EXAMPLES=ON \
-   -DLLVM_TARGETS_TO_BUILD=&quot;host;X86;NVPTX;RISCV;AMDGPU&quot; \
-   -DLLVM_DEFAULT_TARGET_TRIPLE=&quot;riscv64-unknown-linux-gnu&quot; \
+   -DLLVM_TARGETS_TO_BUILD="host;X86;NVPTX;RISCV;AMDGPU" \
+   -DLLVM_DEFAULT_TARGET_TRIPLE="riscv64-unknown-linux-gnu" \
    -DCMAKE_BUILD_TYPE=Debug \
    -DLLVM_ENABLE_ASSERTIONS=ON \
    -DLLVM_ENABLE_RTTI=ON \
-   -DLLVM_ENABLE_LIBEDIT=OFF 2&gt;&amp;1 | tee cmake.log
+   -DLLVM_ENABLE_LIBEDIT=OFF 2>&1 | tee cmake.log
 
 # CUDA version
 cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_PROJECTS=mlir \
    -DLLVM_BUILD_EXAMPLES=ON \
-   -DLLVM_TARGETS_TO_BUILD=&quot;X86;NVPTX;RISCV;AMDGPU&quot; \
+   -DLLVM_TARGETS_TO_BUILD="X86;NVPTX;RISCV;AMDGPU" \
    -DMLIR_ENABLE_CUDA_RUNNER=ON \
    -DCMAKE_BUILD_TYPE=Debug \
    -DLLVM_ENABLE_ASSERTIONS=ON \
@@ -88,19 +78,19 @@ cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_RTTI=ON \
    -DLLVM_INSTALL_UTILS=ON \
    -DMLIR_INCLUDE_INTEGRATION_TESTS=ON \
-   2&gt;&amp;1 | tee cmake.log
+   2>&1 | tee cmake.log
 
-time cmake --build . -- ${MAKEFLAGS} 2&gt;&amp;1 | tee build.log
+time cmake --build . -- ${MAKEFLAGS} 2>&1 | tee build.log
 
 # test only
-cmake --build . --target check-mlir 2&gt;&amp;1 | tee check-mlir.log
+cmake --build . --target check-mlir 2>&1 | tee check-mlir.log
 ```
 
 ## pybind11
 
 update on 2024.12.20
 
-最新版本的 triton，应该直接 pip install pybind11 即可，不再需要源码编译 pybind11 了。
+最新版本的 triton，应该直接 `pip install pybind11` 即可，不再需要源码编译 `pybind11` 了。
 
 ```
 pip install pytest
@@ -117,7 +107,7 @@ sudo make install
 
 ![](img/df68028e3a74788bc319075f4abc9820.png)
 
-如果不装 pybind11，triton 编译(-DTRITON_BUILD_PYTHON_MODULE=ON) 会报错如下，装了 ok。
+如果不装 `pybind11`，`triton` 编译(`-DTRITON_BUILD_PYTHON_MODULE=ON`) 会报错如下，装了 ok。
 
 ![](img/7ce436e84970329d90a386bcd0883404.png)
 
@@ -129,7 +119,7 @@ In file included from /usr/include/pybind11/cast.h:16,
                  from /home/jackon.yang/src/.jksapce/repos/triton/python/src/main.cc:1:
 /usr/include/pybind11/detail/type_caster_base.h: In function ‘std::string pybind11::detail::error_string()’:
 /usr/include/pybind11/detail/type_caster_base.h:482:26: error: invalid use of incomplete type ‘PyFrameObject’ {aka ‘struct _frame’}
-  482 |             frame = frame-&gt;f_back;
+  482 |             frame = frame->f_back;
       |                          ^~
 In file included from /usr/include/python3.11/Python.h:42,
                  from /usr/include/pybind11/detail/common.h:215,
@@ -154,7 +144,7 @@ In file included from /usr/include/pybind11/cast.h:16,
                  from /home/jackon.yang/src/.jksapce/repos/triton/python/src/triton.cc:46:
 /usr/include/pybind11/detail/type_caster_base.h: In function ‘std::string pybind11::detail::error_string()’:
 /usr/include/pybind11/detail/type_caster_base.h:482:26: error: invalid use of incomplete type ‘PyFrameObject’ {aka ‘struct _frame’}
-  482 |             frame = frame-&gt;f_back;
+  482 |             frame = frame->f_back;
       |                          ^~
 In file included from /usr/include/python3.11/Python.h:42,
                  from /home/jackon.yang/src/.jksapce/repos/triton/python/src/triton.cc:41:
@@ -181,14 +171,14 @@ make: *** [Makefile:146: all] Error 2
 
 ```
 cd triton
-mkdir -p build &amp;&amp; cd build
+mkdir -p build && cd build
 
 # option 1: using cmake
-cmake .. -DTRITON_BUILD_PYTHON_MODULE=ON -DMLIR_DIR=llvm-project/build/lib/cmake/mlir -DCMAKE_BUILD_TYPE=&quot;Debug&quot; -DTRITON_CODEGEN_BACKENDS=&quot;amd;nvidia&quot;
+cmake .. -DTRITON_BUILD_PYTHON_MODULE=ON -DMLIR_DIR=llvm-project/build/lib/cmake/mlir -DCMAKE_BUILD_TYPE="Debug" -DTRITON_CODEGEN_BACKENDS="amd;nvidia"
 make -j
 
 # option 2: using Ninja
-cmake -G Ninja .. -DTRITON_BUILD_PYTHON_MODULE=ON -DMLIR_DIR=llvm-project/build/lib/cmake/mlir -DCMAKE_BUILD_TYPE=&quot;Debug&quot;  -DTRITON_CODEGEN_BACKENDS=&quot;amd;nvidia&quot;
+cmake -G Ninja .. -DTRITON_BUILD_PYTHON_MODULE=ON -DMLIR_DIR=llvm-project/build/lib/cmake/mlir -DCMAKE_BUILD_TYPE="Debug"  -DTRITON_CODEGEN_BACKENDS="amd;nvidia"
 cmake --build . -j
 ```
 
@@ -198,7 +188,7 @@ cmake --build . -j
 
 ## More Notes
 
-[6141/6214] Linking CXX executable bin/llvm-gsymutil
+`[6141/6214] Linking CXX executable bin/llvm-gsymutil`
 
 llvm 这一步时，疑似机器会 hang 住，vscode 断联。
 
@@ -239,9 +229,11 @@ break stc-run-main.cc:73
 r
 ```
 
-## undefined symbol: LLVMInitializeRISCVTargetInfo
+## undefined symbol: `LLVMInitializeRISCVTargetInfo`
 
 应该是 LLVM RISCV 支持的编译参数没配对导致的。
+
+
 
 ```
 ImportError: /home/jackon.yang/src/triton/python/triton/_C/libtriton.so: undefined symbol: LLVMInitializeRISCVTargetInfo
@@ -249,7 +241,7 @@ ImportError: /home/jackon.yang/src/triton/python/triton/_C/libtriton.so: undefin
 
 ![](img/66baf87fbb8c138d9fbade72763375e6.png)
 
-用 ldd -r 看
+用`ldd -r`看
 
 ![](img/57368d768e1c7cf9cf83c502185c79d9.png)
 
@@ -257,138 +249,138 @@ ImportError: /home/jackon.yang/src/triton/python/triton/_C/libtriton.so: undefin
 
 ## Triton 功能类 API
 
-**在/py**thon/triton/init.py下进行查看，总共定义了19个常用的操作。
+在`/python/triton/init.py`下进行查看，总共定义了19个常用的操作。
 
 看起来，基本都是作为 decorator 用的几个常用 API。
 
 ```
 __all__ = [
-    &quot;autotune&quot;,
-    &quot;cdiv&quot;,
-    &quot;CompilationError&quot;,
-    &quot;compile&quot;,
-    &quot;Config&quot;,
-    &quot;heuristics&quot;,
-    &quot;impl&quot;,
-    &quot;jit&quot;,
-    &quot;JITFunction&quot;,
-    &quot;KernelInterface&quot;,
-    &quot;language&quot;,
-    &quot;MockTensor&quot;,
-    &quot;next_power_of_2&quot;,
-    &quot;ops&quot;,
-    &quot;OutOfResources&quot;,
-    &quot;reinterpret&quot;,
-    &quot;runtime&quot;,
-    &quot;TensorWrapper&quot;,
-    &quot;testing&quot;,
-    &quot;program_ids_from_grid&quot;,
+    "autotune",
+    "cdiv",
+    "CompilationError",
+    "compile",
+    "Config",
+    "heuristics",
+    "impl",
+    "jit",
+    "JITFunction",
+    "KernelInterface",
+    "language",
+    "MockTensor",
+    "next_power_of_2",
+    "ops",
+    "OutOfResources",
+    "reinterpret",
+    "runtime",
+    "TensorWrapper",
+    "testing",
+    "program_ids_from_grid",
 ]
 ```
 
 ## Triton DSL & Ops
 
-tl 的所有操作，可以在 pyt**hon/**triton/language/init.py 中的 __all__ 下查到，总共定义了 95 个常用的操作
+`tl` 的所有操作，可以在`/python/triton/language/init.py`中的`__all__`下查到，总共定义了 95 个常用的操作
 
 triton language 的原语
 
 ```
 __all__ = [
-    &quot;abs&quot;,
-    &quot;advance&quot;,
-    &quot;arange&quot;,
-    &quot;argmin&quot;,
-    &quot;argmax&quot;,
-    &quot;atomic_add&quot;,
-    &quot;atomic_and&quot;,
-    &quot;atomic_cas&quot;,
-    &quot;atomic_max&quot;,
-    &quot;atomic_min&quot;,
-    &quot;atomic_or&quot;,
-    &quot;atomic_xchg&quot;,
-    &quot;atomic_xor&quot;,
-    &quot;bfloat16&quot;,
-    &quot;block_type&quot;,
-    &quot;broadcast&quot;,
-    &quot;broadcast_to&quot;,
-    &quot;builtin&quot;,
-    &quot;cat&quot;,
-    &quot;cdiv&quot;,
-    &quot;constexpr&quot;,
-    &quot;cos&quot;,
-    &quot;debug_barrier&quot;,
-    &quot;device_assert&quot;,
-    &quot;device_print&quot;,
-    &quot;dot&quot;,
-    &quot;dtype&quot;,
-    &quot;exp&quot;,
-    &quot;expand_dims&quot;,
-    &quot;extra&quot;,
-    &quot;fdiv&quot;,
-    &quot;float16&quot;,
-    &quot;float32&quot;,
-    &quot;float64&quot;,
-    &quot;float8e4&quot;,
-    &quot;float8e5&quot;,
-    &quot;full&quot;,
-    &quot;function_type&quot;,
-    &quot;int1&quot;,
-    &quot;int16&quot;,
-    &quot;int32&quot;,
-    &quot;int64&quot;,
-    &quot;int8&quot;,
-    &quot;ir&quot;,
-    &quot;math&quot;,
-    &quot;load&quot;,
-    &quot;log&quot;,
-    &quot;make_block_ptr&quot;,
-    &quot;max&quot;,
-    &quot;max_contiguous&quot;,
-    &quot;maximum&quot;,
-    &quot;min&quot;,
-    &quot;minimum&quot;,
-    &quot;multiple_of&quot;,
-    &quot;num_programs&quot;,
-    &quot;pair_uniform_to_normal&quot;,
-    &quot;philox&quot;,
-    &quot;philox_impl&quot;,
-    &quot;pi32_t&quot;,
-    &quot;pointer_type&quot;,
-    &quot;program_id&quot;,
-    &quot;rand&quot;,
-    &quot;rand4x&quot;,
-    &quot;randint&quot;,
-    &quot;randint4x&quot;,
-    &quot;randn&quot;,
-    &quot;randn4x&quot;,
-    &quot;ravel&quot;,
-    &quot;reduce&quot;,
-    &quot;reshape&quot;,
-    &quot;sigmoid&quot;,
-    &quot;sin&quot;,
-    &quot;softmax&quot;,
-    &quot;sqrt&quot;,
-    &quot;static_range&quot;,
-    &quot;static_assert&quot;,
-    &quot;static_print&quot;,
-    &quot;store&quot;,
-    &quot;sum&quot;,
-    &quot;swizzle2d&quot;,
-    &quot;tensor&quot;,
-    &quot;trans&quot;,
-    &quot;triton&quot;,
-    &quot;uint16&quot;,
-    &quot;uint32&quot;,
-    &quot;uint32_to_uniform_float&quot;,
-    &quot;uint64&quot;,
-    &quot;uint8&quot;,
-    &quot;umulhi&quot;,
-    &quot;view&quot;,
-    &quot;void&quot;,
-    &quot;where&quot;,
-    &quot;xor_sum&quot;,
-    &quot;zeros&quot;,
-    &quot;zeros_like&quot;,
+    "abs",
+    "advance",
+    "arange",
+    "argmin",
+    "argmax",
+    "atomic_add",
+    "atomic_and",
+    "atomic_cas",
+    "atomic_max",
+    "atomic_min",
+    "atomic_or",
+    "atomic_xchg",
+    "atomic_xor",
+    "bfloat16",
+    "block_type",
+    "broadcast",
+    "broadcast_to",
+    "builtin",
+    "cat",
+    "cdiv",
+    "constexpr",
+    "cos",
+    "debug_barrier",
+    "device_assert",
+    "device_print",
+    "dot",
+    "dtype",
+    "exp",
+    "expand_dims",
+    "extra",
+    "fdiv",
+    "float16",
+    "float32",
+    "float64",
+    "float8e4",
+    "float8e5",
+    "full",
+    "function_type",
+    "int1",
+    "int16",
+    "int32",
+    "int64",
+    "int8",
+    "ir",
+    "math",
+    "load",
+    "log",
+    "make_block_ptr",
+    "max",
+    "max_contiguous",
+    "maximum",
+    "min",
+    "minimum",
+    "multiple_of",
+    "num_programs",
+    "pair_uniform_to_normal",
+    "philox",
+    "philox_impl",
+    "pi32_t",
+    "pointer_type",
+    "program_id",
+    "rand",
+    "rand4x",
+    "randint",
+    "randint4x",
+    "randn",
+    "randn4x",
+    "ravel",
+    "reduce",
+    "reshape",
+    "sigmoid",
+    "sin",
+    "softmax",
+    "sqrt",
+    "static_range",
+    "static_assert",
+    "static_print",
+    "store",
+    "sum",
+    "swizzle2d",
+    "tensor",
+    "trans",
+    "triton",
+    "uint16",
+    "uint32",
+    "uint32_to_uniform_float",
+    "uint64",
+    "uint8",
+    "umulhi",
+    "view",
+    "void",
+    "where",
+    "xor_sum",
+    "zeros",
+    "zeros_like",
 ]
 ```
 
@@ -402,11 +394,11 @@ Date: Thu Mar 7 23:51:56 2024
 
 一共 10 万行代码，8 万行 c/c++/header，2 万行 Python。
 
-third-party 下，基本都是 c/c++，nvidia 只有 4k 行，core 里面的就是 nv 的代码了。
+`third-party` 下，基本都是 c/c++，nvidia 只有 4k 行，`core` 里面的就是 nv 的代码了。
 
-TritonGPU 的代码，主要在 lib 目录下，3k 行 TritonGPUToLLVM conversion，8k 行 dialect。
+TritonGPU 的代码，主要在 `lib` 目录下，3k 行 `TritonGPUToLLVM` conversion，8k 行 dialect。
 
-triton/python 下，看起来都是流程类代码，关系不大。
+`triton/python` 下，看起来都是流程类代码，关系不大。
 
 一共 2 万行相关代码。
 
@@ -414,40 +406,38 @@ triton/python 下，看起来都是流程类代码，关系不大。
 
 |  |  |  | 代码量 |
 | --- | --- | --- | --- |
-| triton |  |  | 10 万 |
+| `triton` |  |  | 10 万 |
 |  |  |  |  |
-| third-party |  |  | 5 万 |
-| triton/python |  |  | 2 万 |
-|  | test |  | 1 万 |
-|  | triton |  | 9k |
-|  |  | language | 4k |
-|  |  | runtime | 1k |
-|  |  | compiler | 1k |
-|  |  | ops | 1k |
-|  |  | tools | 1k |
+| `third-party` |  |  | 5 万 |
+| `triton/python` |  |  | 2 万 |
+|  | `test` |  | 1 万 |
+|  | `triton` |  | 9k |
+|  |  | `language` | 4k |
+|  |  | `runtime` | 1k |
+|  |  | `compiler` | 1k |
+|  |  | `ops` | 1k |
+|  |  | `tools` | 1k |
 |  |  |  |  |
-| triton/lib |  |  | 2 万 |
-|  | Conversion |  | 4k |
-|  |  | TritonGPUToLLVM | 3k |
-|  |  | TritonToTritonGPU | 700 行 |
-|  | Dialect |  | 1 万 |
-|  |  | TritonGPU | 7k |
-|  |  | Triton | 2k |
-|  |  | TritonNvidiaGPU | 1k |
-|  |  | NVGPU | 74 |
-|  | Analysis |  | 3k |
+| `triton/lib` |  |  | 2 万 |
+|  | `Conversion` |  | 4k |
+|  |  | `TritonGPUToLLVM` | 3k |
+|  |  | `TritonToTritonGPU` | 700 行 |
+|  | `Dialect` |  | 1 万 |
+|  |  | `TritonGPU` | 7k |
+|  |  | `Triton` | 2k |
+|  |  | `TritonNvidiaGPU` | 1k |
+|  |  | `NVGPU` | 74 |
+|  | `Analysis` |  | 3k |
 
 ## TritonGPU 代码分析
 
 一共，1 万行代码要读：
 
-+   3k 行，triton/lib/Conversion/TritonGPUToLLVM
++ 3k 行，`triton/lib/Conversion/TritonGPUToLLVM`
++ 7k 行，`triton/lib/Dialect/TritonGPU`
++ 300 行，`triton/python/triton/runtime/autotuner.py`
 
-+   7k 行，triton/lib/Dialect/TritonGPU
-
-+   300 行，triton/python/triton/runtime/autotuner.py
-
-Dialect 目录下的 Transforms 文件夹，很有信息量。
+`Dialect` 目录下的 `Transforms` 文件夹，很有信息量。
 
 但，没看出 tiling 在哪里做的。
 
@@ -455,7 +445,7 @@ Dialect 目录下的 Transforms 文件夹，很有信息量。
 
 ## 八卦 - TritonGPUToLLVM 重构
 
-几周前，TritonGPUToLLVM 转换的代码量奇高，1.1 万行。
+几周前，`TritonGPUToLLVM` 转换的代码量奇高，1.1 万行。
 
 By 2024.03.08，删除 8k 行。只剩 3k 行。代码如下
 
@@ -469,10 +459,10 @@ By 2024.03.08，删除 8k 行。只剩 3k 行。代码如下
 
 ```
 git checkout -b a 87295507c54f7baf9855a05d2bcfd2fbffc49ffa
-ls TritonGPUToLLVM/ | xargs  -n 1 echo &gt; ~/tmp/t10k-list.txt
+ls TritonGPUToLLVM/ | xargs  -n 1 echo > ~/tmp/t10k-list.txt
 
 git checkout main
-ls TritonGPUToLLVM/ | xargs  -n 1 echo &gt; ~/tmp/t3k-list.txt
+ls TritonGPUToLLVM/ | xargs  -n 1 echo > ~/tmp/t3k-list.txt
 
 # list deleted files:
 cat ~/tmp/t*k-list.txt | sort | uniq -c | sort -n
@@ -527,15 +517,13 @@ cat ~/tmp/t*k-list.txt | sort | uniq -c | sort -n
 
 ## Third-party 占 5 万
 
-其中，5 万行是 third-party 代码。基本都是 c/c++，没有 Python。
-
-![](img/4fc5aead016e7d77932af403d0e4a3cb.png)
+其中，5 万行是 `third-party` 代码。基本都是 c/c++，没有 Python。
 
 nvidia 只有 4k 行，剩下 4.5 万行都是 AMD 代码。
 
 光 HIP 就 3 万行。
 
-NV 代码量少，另一个原因是，都在 Triton core （triton/lib）里了
+NV 代码量少，另一个原因是，都在 `Triton core`（`triton/lib`）里了
 
 ![](img/bbc36831951e17b7613257010cc9ea24.png)
 
@@ -549,21 +537,21 @@ AMD 有用的 dialect 代码，1.2 万行。
 
 ![](img/434eeddbe8fee38e7620419223a24ee3.png)
 
-lib 下就是 Conversion 1.3万，Dialect 1.3 万，Analysis 3k，这 3 个 compiler 标准组件。
+`lib` 下就是 `Conversion` 1.3万，`Dialect` 1.3 万，`Analysis` 3k，这 3 个 compiler 标准组件。
 
 ![](img/347753021c8f1e5fda3f796be40e840a.png)
 
-Conversion 1.3万，其中 1.1 万是 TritonGPUToLLVM
+`Conversion` 1.3万，其中 1.1 万是 `TritonGPUToLLVM`
 
-TritonToTritonGPU 只有 700 行。
+`TritonToTritonGPU` 只有 700 行。
 
 ![](img/e69e781a13159b3d9e4a6b915a0ca9d3.png)
 
-Dialect 1.3 行，2 个主要的 Dialect 各 4k-6k 水平，
+`Dialect` 1.3 行，2 个主要的 `Dialect` 各 4k-6k 水平，
 
-比 MLIR 核心 dialect（1-2 万行） 的代码量明显少。
+比 `MLIR` 核心 dialect（1-2 万行） 的代码量明显少。
 
-与 LLVM Pass 大多三五千行的水平，比较接近。
+与 `LLVM` `Pass` 大多三五千行的水平，比较接近。
 
 ![](img/cc8807f39ccb997cf4d6e445d8a33db3.png)
 
@@ -571,24 +559,24 @@ Dialect 1.3 行，2 个主要的 Dialect 各 4k-6k 水平，
 
 其中 1 万行是 tests。
 
-triton 9000 行，tutorial 和 src 下 c++ 各 2k 行。
+`triton` 9000 行，`tutorial` 和 `src` 下 c++ 各 2k 行。
 
-python/triton 的 9000 行代码，
+`python/triton` 的 9000 行代码，
 
-language 占一半 4k 行。
+`language` 占一半 4k 行。
 
-runtime / compiler / ops / tools 各 1k 左右。
+`runtime` / `compiler` / `ops` / `tools` 各 1k 左右。
 
 ![](img/0cbf1a55b6161f24559be22e24227736.png)
 
-runtime 下，有 autotuner.py，200 行代码。
+`runtime` 下，有 `autotuner.py`，200 行代码。
 
-另外，jit，interpreter，driver 都有，没几百行代码。
+另外，`jit`，`interpreter`，`driver` 都有，没几百行代码。
 
-compiler 下面，主要是 codegen
+`compiler` 下面，主要是 `codegen`
 
-ops 下面，看来是几个比较难写的大算子。
+`ops` 下面，看来是几个比较难写的大算子。
 
-特别是 flash_attention，看一下有没有被 inductor 用到，怎么用的。NV/AMD/CPU 都试一下。
+特别是 `flash_attention`，看一下有没有被 `inductor` 用到，怎么用的。NV/AMD/CPU 都试一下。
 
 ![](img/b803ed8f20fb534fb2b051b3501e3233.png)

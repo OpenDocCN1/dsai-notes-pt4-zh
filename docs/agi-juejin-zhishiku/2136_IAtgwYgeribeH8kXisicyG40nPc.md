@@ -1,3 +1,4 @@
+
 # 9.6 零一万物开源 Yi-Coder 系列编程助手模型，支持 52 种编程语言
 
 > 来源：[https://agijuejin.feishu.cn/docx/Gl3IdTWgtol9ZBxum7ccJWpungh](https://agijuejin.feishu.cn/docx/Gl3IdTWgtol9ZBxum7ccJWpungh)
@@ -97,11 +98,3 @@ TeleAI 发布的综述《大模型驱动的具身智能：发展与挑战》深�
 ScienceAI 丨 [阅读原文](https://sourl.co/Cjyc4b)
 
 Meta首席人工智能科学家Yann LeCun在X平台上转发了纽约大学物理系教授Shirley Ho的帖子，展示了SimBIG 团队的一项新研究。由Changhoon Hahn领导的团队通过AI模拟宇宙，模拟了20，000个虚拟宇宙并产生了新的见解。这项研究利用AI根据光谱望远镜(如Sdssurveys) 的数据，训练AI从观测到的宇宙统计中推断出关键的宇宙学参数。
-
-###
-
-###
-
-###
-
-###

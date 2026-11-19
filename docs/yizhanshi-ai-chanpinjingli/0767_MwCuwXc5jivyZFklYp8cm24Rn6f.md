@@ -1,38 +1,39 @@
+
 # 开源复刻Manus：OWL使用教程
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/BcDedEv8NoLWPXx5OV5cam0snUh](https://v11enp9ok1h.feishu.cn/docx/BcDedEv8NoLWPXx5OV5cam0snUh)
 
-#  一、Manus 开源复刻框架 OWL 的技术拆解。
+## 一、Manus 开源复刻框架 OWL 的技术拆解。
 
 ![](img/b0c686f5f531be51655e8b426d9af5d1.png)
 
-OWL 项目地址：https://github.com/camel-ai/owl
+`OWL` 项目地址：`https://github.com/camel-ai/owl`
 
-## 🦉 OWL 是什么
+### 🦉 OWL 是什么
 
-🦉 OWL 是一个基于CAMEL-AI 框架（https://github.com/camel-ai/camel）的多智能体协作的尖端框架，它突破了任务自动化的界限，在其官方的介绍中表示：
+🦉 `OWL` 是一个基于`CAMEL-AI` 框架（`https://github.com/camel-ai/camel`）的多智能体协作的尖端框架，它突破了任务自动化的界限，在其官方的介绍中表示：
 
-"我们的愿景是彻底改变 AI 代理协作解决实际任务的方式。通过利用动态代理交互，OWL 可以在不同领域实现更自然、更高效和更强大的任务自动化。"
+"我们的愿景是彻底改变 AI 代理协作解决实际任务的方式。通过利用动态代理交互，`OWL` 可以在不同领域实现更自然、更高效和更强大的任务自动化。"
 
-目前OWL 在 GAIA 基准测试中取得58.18平均分，在开源框架中排名第一。
+目前`OWL` 在 `GAIA` 基准测试中取得58.18平均分，在开源框架中排名第一。
 
 ![](img/7d6598ad8b208bb2197c5f25e647851f.png)
 
-**这里是一个演示 demo：**
+这里是一个演示 demo：
 
 ![](img/62f465040c819683d4786ff5e61f9326.png)
 
 [chinese.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XAqKby6MgoRbPsxGRk8cKk0hnPd)
 
-其实如果大家看过 Manus 的演示视频就可以发现，因为一些任务现在的大模型没有办法一次性全都处理完，Manus 在完成我们提出的问题的时候会首先对任务进行任务拆分，之后形成一个 TODO.md 用来记录自己已经完成的进度。
+其实如果大家看过 Manus 的演示视频就可以发现，因为一些任务现在的大模型没有办法一次性全都处理完，Manus 在完成我们提出的问题的时候会首先对任务进行任务拆分，之后形成一个 `TODO.md` 用来记录自己已经完成的进度。
 
 ![](img/c133980e93d97f0667415e27a4ad45a6.png)
 
-在 OWL 中，也是类似的思想，OWL 整个流程基于 CAMEL 框架中 RolePlaying 方法，RolePlaying 是 CAMEL 框架的独特合作式智能体框架。该框架通过预定义的提示词为不同的智能体创建唯一的初始设置。
+在 `OWL` 中，也是类似的思想，`OWL` 整个流程基于 `CAMEL` 框架中 `RolePlaying` 方法，`RolePlaying` 是 `CAMEL` 框架的独特合作式智能体框架。该框架通过预定义的提示词为不同的智能体创建唯一的初始设置。
 
 ![](img/f526f72e3857771633ffbfc5ac55aaca.png)
 
-在 RolePlaying 中 User 角色负责将讲任务拆解，并且每次给出一个指令到 Assistant 角色，Assistant 角色负责实施指令，在这个过程中 Assistant 角色可以使用各种我们给它配置好的工具，比如获取实时信息（如天气、新闻）的工具、计算的工具以及在 OWL 中定义的一些特定的工具（包括控制 web 页面的工具、处理文件、表格、图像等工具）。
+在 `RolePlaying` 中 `User` 角色负责将讲任务拆解，并且每次给出一个指令到 `Assistant` 角色，`Assistant` 角色负责实施指令，在这个过程中 `Assistant` 角色可以使用各种我们给它配置好的工具，比如获取实时信息（如天气、新闻）的工具、计算的工具以及在 `OWL` 中定义的一些特定的工具（包括控制 web 页面的工具、处理文件、表格、图像等工具）。
 
 ![](img/8f85cdf81158a9ffadbd4dfff74b78cc.png)
 
@@ -42,38 +43,39 @@ OWL 项目地址：https://github.com/camel-ai/owl
 
 [demo1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z98sbkaRwobkIjx3dwtcgh1znec)
 
-可以发现在运行过程中，我们的 agent 首先调用了WebToolkit，WebToolkit实际上是一个封装了智能体的一个工具，其中包括一个planning_agent和一个web_agent。在浏览器模拟交互任务开始时，planning_agent会首先给出一个详细的规划，这个规划之后会被用于指导web_agent选择具体的执行动作。
+可以发现在运行过程中，我们的 agent 首先调用了`WebToolkit`，`WebToolkit`实际上是一个封装了智能体的一个工具，其中包括一个`planning_agent`和一个`web_agent`。在浏览器模拟交互任务开始时，`planning_agent`会首先给出一个详细的规划，这个规划之后会被用于指导`web_agent`选择具体的执行动作。
 
 ![](img/87a19db3944b1b2db8d07a54a5a6cd61.png)
 
-那么我们的 agent 是怎么实现控制我们的浏览器的呢，首先任务明确之后，我们首先会跳转到一个网站，该网站是由start_url来决定的，该参数是可以由用户指定，也可以是 agent 在自我规划中提出的。跳转到网站之后，我们的WebToolkit会将当前的页面截图保存下来，并且给其中的元素都打上标签。
+那么我们的 agent 是怎么实现控制我们的浏览器的呢，首先任务明确之后，我们首先会跳转到一个网站，该网站是由`start_url`来决定的，该参数是可以由用户指定，也可以是 agent 在自我规划中提出的。跳转到网站之后，我们的`WebToolkit`会将当前的页面截图保存下来，并且给其中的元素都打上标签。
 
 该步骤的实现方法如下:
 
-1.  交互元素通过 JavaScript 脚本获取：
+1. 交互元素通过 JavaScript 脚本获取：
 
-```
-def get_interactive_elements(self) -&amp;gt; List[Dict[str, Any]]:
+```python
+def get_interactive_elements(self) -> List[Dict[str, Any]]:
     try:
         self.page.evaluate(self.page_script)
     except Exception as e:
-        logger.warning(f&quot;Error evaluating page script: {e}&quot;)
+        logger.warning(f"Error evaluating page script: {e}")
         
- result = cast(
-  Dict[str, Dict[str, Any]], self.page.evaluate(&quot;MultimodalWebSurfer.getInteractiveRects();&quot;)    )
-  
+    result = cast(
+        Dict[str, Dict[str, Any]], self.page.evaluate("MultimodalWebSurfer.getInteractiveRects();")
+    )
+    
     typed_results: Dict[str, InteractiveRegion] = {}
     for k in result:
         typed_results[k] = interactiveregion_from_dict(result[k])
     return typed_results
 ```
 
-1.  add_set_of_mark 函数负责在截图上绘制标记：
+1. `add_set_of_mark` 函数负责在截图上绘制标记：
 
-```
+```python
 def _add_set_of_mark(
     screenshot: Image.Image, ROIs: Dict[str, InteractiveRegion]
-) -&amp;gt; Tuple[Image.Image, List[str], List[str], List[str]]:
+) -> Tuple[Image.Image, List[str], List[str], List[str]]:
     # ... 初始化代码 ...
     
     # 为每个交互区域绘制标记
@@ -85,15 +87,15 @@ def _add_set_of_mark(
     # ... 返回结果 ...
 ```
 
-1.  _draw_roi 函数负责实际绘制:
+1. `_draw_roi` 函数负责实际绘制:
 
-```
+```python
 def _draw_roi(
     draw: ImageDraw.ImageDraw, idx: int, font: ImageFont.FreeTypeFont | ImageFont.ImageFont, rect: DOMRectangle
-) -&amp;gt; None:
+) -> None:
     # 计算矩形坐标
-    x, y = rect[&quot;x&quot;], rect[&quot;y&quot;]
-    width, height = rect[&quot;width&quot;], rect[&quot;height&quot;]
+    x, y = rect["x"], rect["y"]
+    width, height = rect["width"], rect["height"]
     
     # 选择颜色
     color = _color(idx)
@@ -118,41 +120,41 @@ def _draw_roi(
 
 ![](img/135a11c11c8786420b8145e1f64cdd45.png)
 
-生成的带标签的页面（该页面存储在./tmp目录里）就是我们web_agent将要接收到图片输入啦，之后web_agent会根据图片和指令来进行下一步动作。要了解web_agent的工作逻辑，我们需要先了解一下planning_agent是如何工作的，下面是它的提示词：
+生成的带标签的页面（该页面存储在`./tmp`目录里）就是我们`web_agent`将要接收到图片输入啦，之后`web_agent`会根据图片和指令来进行下一步动作。要了解`web_agent`的工作逻辑，我们需要先了解一下`planning_agent`是如何工作的，下面是它的提示词：
 
-```
-planning_system_prompt = &quot;&quot;&quot;
+```python
+planning_system_prompt = """
 You are a helpful planning agent that can assist users in planning complex tasks which need multi-step browser interaction.
-&quot;&quot;&quot;
+"""
 ```
 
-这里定义了planning_agent的基本角色：一个帮助用户规划复杂任务的代理，专注于需要多步骤浏览器交互的任务。planning_agent在初始规划阶段使用以下提示：
+这里定义了`planning_agent`的基本角色：一个帮助用户规划复杂任务的代理，专注于需要多步骤浏览器交互的任务。`planning_agent`在初始规划阶段使用以下提示：
 
-```
-planning_prompt = f&quot;&quot;&quot;
-&amp;lt;task&amp;gt;{task_prompt}&amp;lt;/task&amp;gt;
+```python
+planning_prompt = f"""
+<task>{task_prompt}</task>
 According to the problem above, if we use browser interaction, what is the general process of the interaction after visiting the webpage `{start_url}`? 
 
 Please note that it can be viewed as Partially Observable MDP. Do not over-confident about your plan.
 Please first restate the task in detail, and then provide a detailed plan to solve the task.
-&quot;&quot;&quot;
+"""
 ```
 
-这个提示要求planning_agent：
+这个提示要求`planning_agent`：
 
-在任务执行过程中，planning_agent可能需要根据新情况调整计划：
+在任务执行过程中，`planning_agent`可能需要根据新情况调整计划：
 
-```
-replanning_prompt = f&quot;&quot;&quot;
+```python
+replanning_prompt = f"""
 We are using browser interaction to solve a complex task which needs multi-step actions.
 Here are the overall task:
-&amp;lt;overall_task&amp;gt;{task_prompt}&amp;lt;/overall_task&amp;gt;
+<overall_task>{task_prompt}</overall_task>
 
 In order to solve the task, we made a detailed plan previously. Here is the detailed plan:
-&amp;lt;detailed plan&amp;gt;{detailed_plan}&amp;lt;/detailed plan&amp;gt;
+<detailed plan>{detailed_plan}</detailed plan>
 
 According to the task above, we have made a series of observations, reasonings, and actions. Here are the latest {self.history_window} trajectory (at most) we have taken:
-&amp;lt;history&amp;gt;{self.history[-self.history_window:]}&amp;lt;/history&amp;gt;
+<history>{self.history[-self.history_window:]}</history>
 
 However, the task is not completed yet. As the task is partially observable, we may need to replan the task based on the current state of the browser if necessary.
 Now please carefully examine the current task planning schema, and our history actions, and then judge whether the task needs to be fundamentally replanned. If so, please provide a detailed replanned schema (including the restated overall task).
@@ -160,25 +162,31 @@ Now please carefully examine the current task planning schema, and our history a
 Your output should be in json format, including the following fields:
 - `if_need_replan`: bool, A boolean value indicating whether the task needs to be fundamentally replanned.
 - `replanned_schema`: str, The replanned schema for the task, which should not be changed too much compared with the original one. If the task does not need to be replanned, the value should be an empty string. 
-&quot;&quot;&quot;
+"""
 ```
 
-其中{task_prompt}就是我们提供的原始任务输入："帮我在📕上找一些3.8女神节适合送妈妈的礼物"。
+其中`{task_prompt}`就是我们提供的原始任务输入："帮我在📕上找一些3.8女神节适合送妈妈的礼物"。
 
-{detailed_plan}则是上一次生成的规划内容，{self.history_window}默认为5，也就是说planning_agent会动态地结合最近地一些信息来进行下一步规划。在prompt中要求了planning_agent要使用结构化的输出。生成的规划内容会传输给web_agent来帮助它完成任务。
+`{detailed_plan}`则是上一次生成的规划内容，`{self.history_window}`默认为5，也就是说`planning_agent`会动态地结合最近地一些信息来进行下一步规划。在prompt中要求了`planning_agent`要使用结构化的输出。生成的规划内容会传输给`web_agent`来帮助它完成任务。
 
-接下来，我们可以来看一下web_agent的提示词来进一步了解它的工作逻辑。
+接下来，我们可以来看一下`web_agent`的提示词来进一步了解它的工作逻辑。
 
-```
-system_prompt = &quot;&quot;&quot;
+```python
+system_prompt = """
 You are a helpful web agent that can assist users in browsing the web.
 Given a high-level task, you can leverage predefined browser tools to help users achieve their goals.
-&quot;&quot;&quot;
+"""
 ```
 
-使用一个简洁的系统提示定义了web_agent的基本角色：一个帮助用户浏览网页的代理，能够利用预定义的浏览器工具完成用户目标。
+使用一个简洁的系统提示定义了`web_agent`的基本角色：一个帮助用户浏览网页的代理，能够利用预定义的浏览器工具完成用户目标。
 
-之后如果 agent 认为需要进行操作电脑，就使用我们给它配备的browser_simulation方法，该方法会循环地去观察我们的网页，web_agent在每次观察网页时会收到以下格式的提示：
+之后如果 agent 认为需要进行操作电脑，就使用我们给它配备的`browser_simulation`方法，该方法会循环地去观察我们的网页，`web_agent`在每次观察网页时会收到以下格式的提示：
+
+
+
+# OWL Web Agent 案例分析与总结
+
+## 提示词模板（observe_prompt）
 
 ```
 observe_prompt =f&quot;&quot;&quot;
@@ -203,22 +211,34 @@ Youroutputshouldbeinjsonformat,including the following fields:
 
 Here are an example of the output:
 ```json
+
 {{
+
     &quot;observation&quot;: [IMAGE_DESCRIPTION],
+
     &quot;reasoning&quot;: [YOUR_REASONING],
+
     &quot;action_code&quot;:`fill_input_id([ID], [TEXT])`
+
 }}
 
 Here are some tips for you:
+
 -Never forget the overall question:**{task_prompt}**
+
 -Maybeafteracertainoperation(e.g.click_id),thepagecontenthasnotchanged.Youcancheckwhethertheactionstepissuccessfulbylookingatthe`success`oftheactionstepinthehistory.Ifsuccessful,itmeansthatthepagecontentisindeedthesameaftertheclick.Youneedtotryothermethods.
+
 -Ifusingonewaytosolvetheproblemisnotsuccessful,tryotherways.MakesureyourprovidedIDiscorrect!
+
 -Somecasesareverycomplexandneedtobeachievebyaniterativeprocess.Youcanusethe`back()`functiontogobacktothepreviouspagetotryothermethods.
+
 -Therearemanylinksonthepage,whichmaybeusefulforsolvingtheproblem.Youcanusethe`click_id()`functiontoclickonth
+
 ```
 
 ```
-{color:#1f2329;}`简单使用 GPT 翻译的结果如下：`
+
+## 中文翻译结果
 
 ```python
 observe_prompt = f&quot;&quot;&quot;
@@ -259,70 +279,82 @@ json
 &quot;&quot;&quot;
 ```
 
-其中{task_prompt}就是我们提供的原始任务输入："帮我在📕上找一些3.8女神节适合送妈妈的礼物"，
+## 变量说明与可用浏览器方法
 
-{detailed_plan_prompt}是由planning_agent生成的，{AVAILABLE_ACTIONS_PROMPT}中定义了web_agent可以使用的方法列表。
+其中`{task_prompt}`就是我们提供的原始任务输入："帮我在📕上找一些3.8女神节适合送妈妈的礼物"，
 
-WebToolkit中的浏览器控制方法主要通过Playwright库来实现，在 owl 中，主要实现了以下方法：
+`{detailed_plan_prompt}`是由`planning_agent`生成的，`{AVAILABLE_ACTIONS_PROMPT}`中定义了`web_agent`可以使用的方法列表。
 
-+   1.fill_input_id(identifier: Union[str, int], text: str)：在输入框（例如搜索框）中填入给定的文本并按下回车键。
+`WebToolkit`中的浏览器控制方法主要通过`Playwright`库来实现，在 owl 中，主要实现了以下方法：
 
-+   2.click_id(identifier: Union[str, int])：点击具有给定ID的元素。
+## 浏览器控制方法列表
 
-+   3.hover_id(identifier: Union[str, int])：将鼠标悬停在具有给定 ID 的元素上。
++   1.`fill_input_id(identifier: Union[str, int], text: str)`：在输入框（例如搜索框）中填入给定的文本并按下回车键。
 
-+   4.download_file_id(identifier: Union[str, int])：下载具有给定 ID 的文件。它返回下载文件的路径。如果文件成功下载，你可以停止模拟并报告下载文件的路径以供进一步处理。
++   2.`click_id(identifier: Union[str, int])`：点击具有给定 `ID` 的元素。
 
-+   5.scroll_to_bottom()：滚动到页面底部。
++   3.`hover_id(identifier: Union[str, int])`：将鼠标悬停在具有给定 `ID` 的元素上。
 
-+   6.scroll_to_top()：滚动到页面顶部。
++   4.`download_file_id(identifier: Union[str, int])`：下载具有给定 `ID` 的文件。它返回下载文件的路径。如果文件成功下载，你可以停止模拟并报告下载文件的路径以供进一步处理。
 
-+   7.scroll_up()：向上滚动页面。适用于你想查看当前视口上方元素的情况。
++   5.`scroll_to_bottom()`：滚动到页面底部。
 
-+   8.scroll_down()：向下滚动页面。适用于你想查看当前视口下方元素的情况。如果网页没有变化，意味着网页已经滚动到底部。
++   6.`scroll_to_top()`：滚动到页面顶部。
 
-+   9.back()：导航回上一页。当你想返回上一页时很有用，因为当前页面没有用处。
++   7.`scroll_up()`：向上滚动页面。适用于你想查看当前视口上方元素的情况。
 
-+   10.stop()：停止操作过程，因为任务已完成或失败（无法找到答案）。在这种情况下，你应在输出中提供你的答案。
++   8.`scroll_down()`：向下滚动页面。适用于你想查看当前视口下方元素的情况。如果网页没有变化，意味着网页已经滚动到底部。
 
-+   11.get_url()：获取当前页面的URL。
++   9.`back()`：导航回上一页。当你想返回上一页时很有用，因为当前页面没有用处。
 
-+   12.find_text_on_page(search_text: str)：在当前整个页面上查找下一个给定的文本，并将页面滚动到目标文本。这相当于按下 Ctrl + F 并搜索文本，当你想快速检查当前页面是否包含某些特定文本时非常有用。
++   10.`stop()`：停止操作过程，因为任务已完成或失败（无法找到答案）。在这种情况下，你应在输出中提供你的答案。
 
-+   13.visit_page(url: str)：访问特定的 URL 页面。
++   11.`get_url()`：获取当前页面的 `URL`。
 
-+   14.click_blank_area()：点击页面的空白区域以取消当前元素的焦点。当你点击了一个元素但它无法自动取消焦点时（例如菜单栏），这很有用，以便自动渲染更新后的网页。
++   12.`find_text_on_page(search_text: str)`：在当前整个页面上查找下一个给定的文本，并将页面滚动到目标文本。这相当于按下 Ctrl + F 并搜索文本，当你想快速检查当前页面是否包含某些特定文本时非常有用。
 
-+   15.ask_question_about_video(question: str)：询问关于当前包含视频的网页的问题，例如 YouTube 网站。
++   13.`visit_page(url: str)`：访问特定的 `URL` 页面。
 
-{self.history_window}默认为 5，也就是说web_agent会动态地结合最近它做过的操作来进行下一步。在 prompt 中要求了web_agent要使用结构化的输出。
++   14.`click_blank_area()`：点击页面的空白区域以取消当前元素的焦点。当你点击了一个元素但它无法自动取消焦点时（例如菜单栏），这很有用，以便自动渲染更新后的网页。
+
++   15.`ask_question_about_video(question: str)`：询问关于当前包含视频的网页的问题，例如 YouTube 网站。
+
+`{self.history_window}`默认为 5，也就是说`web_agent`会动态地结合最近它做过的操作来进行下一步。在 prompt 中要求了`web_agent`要使用结构化的输出。
+
+## 输出格式示例
 
 ```
-{{&quot;observation&quot;: [IMAGE_DESCRIPTION],  
-    &quot;reasoning&quot;: [YOUR_REASONING],  
-    &quot;action_code&quot;: `fill_input_id([ID], [TEXT])`  
+{{"observation": [IMAGE_DESCRIPTION],  
+    "reasoning": [YOUR_REASONING],  
+    "action_code": `fill_input_id([ID], [TEXT])`  
 }}
 ```
 
-web_agent输出之后，WebToolkit会对输出的内容进行解析，之后则由_act来执行action_code，后续的一系列_act大多使用Playwright库来完成。Playwright是由 Microsoft 开发的开源浏览器自动化工具，具有以下特点：
+`web_agent`输出之后，`WebToolkit`会对输出的内容进行解析，之后则由`_act`来执行`action_code`，后续的一系列`_act`大多使用`Playwright`库来完成。`Playwright`是由 Microsoft 开发的开源浏览器自动化工具，具有以下特点：
 
-简单来说，Playwright提供了完整的键盘和鼠标 API，可以模拟各种用户交互。
+简单来说，`Playwright`提供了完整的键盘和鼠标 API，可以模拟各种用户交互。
 
-在这个 case 中，web_agent首先使用了click_id方法，也就是点击，后面的标记是 130，可以看到web_agent发现了登陆界面阻碍了它进行下一步搜索，所以它首先会去关闭这个窗口，也就是点击 130 号元素。
+## 案例分析
+
+### 案例一：3.8 女神节礼物搜索
+
+在这个 case 中，`web_agent`首先使用了`click_id`方法，也就是点击，后面的标记是 130，可以看到`web_agent`发现了登陆界面阻碍了它进行下一步搜索，所以它首先会去关闭这个窗口，也就是点击 130 号元素。
 
 ![](img/3665132ba69465df9bd650bd349b1541.png)
 
-关闭掉阻碍的窗口之后，可以看到WebToolkit又重新对当前页面进行了截图并标注。
+关闭掉阻碍的窗口之后，可以看到`WebToolkit`又重新对当前页面进行了截图并标注。
 
 ![](img/2ab45da242bc3fa55d9eb93b736b81a5.png)
 
-我们的web_agent也重新规划了自己的动作，使用了fill_input_id(137, "3.8女神节送妈妈礼物")，它将会在在输入框（例如搜索框）中填入给定的文本并按下回车键来完成搜索功能。
+我们的`web_agent`也重新规划了自己的动作，使用了`fill_input_id(137, "3.8女神节送妈妈礼物")`，它将会在在输入框（例如搜索框）中填入给定的文本并按下回车键来完成搜索功能。
 
 ![](img/9d0b0e1d64cc866f1bf3e643fc0088ff.png)
 
 但是最后这个 case 其实执行失败了，眼尖的小伙伴可能发现了，其实 137 号不是搜索框，是搜索键，搜索框是蓝绿背景的，被 137 号盖住了，导致该任务失败。后续 OWL 团队也会优化set of mark方法并结合在命令行中进行 web search +document extractio 这种方式来使整个过程更加 solid。
 
 ![](img/2833fe335a7d51f78440efbe3d9bf0bd.png)
+
+### 案例二：GitHub OASIS 项目查找
 
 再尝试一个 case"帮我在GIthub找下CMAEL团队开发的OASIS项目，给我介绍下这个项目"由于整个过程比较长，笔者在这里放一些片段内容：
 
@@ -334,14 +366,19 @@ web_agent输出之后，WebToolkit会对输出的内容进行解析，之后则�
 {color:#1f2329;}`可以看到 OWL 在自主地去浏览整个网页，这次 OWL 成功地完成了整个任务，并且完成了报告。`
 
 {color:#1f2329;}`左图为过程截图，右图为最终报告：`
+```
 
 ```{img}
+
 :frac: 80%
 
 https://datawhale-business.oss-cn-hangzhou.aliyuncs.com/image/e0642dad-2ae2-4d66-b7a9-0c5238271e52.png
+
 ```
 
 ![](img/d1c28de80007243a8979a87475b53e92.png)
+
+### 案例三：长沙三日游方案
 
 再来看另一个 case，在这个 case 中我们希望 OWL 给我们制定一个长沙的三天旅游方案：
 
@@ -349,7 +386,7 @@ https://datawhale-business.oss-cn-hangzhou.aliyuncs.com/image/e0642dad-2ae2-4d66
 
 [%E9%95%BF%E6%B2%99%E6%97%85%E6%B8%B8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HLacbdwjuoAEC9xjNi7c2RFXnrg)
 
-可以发现这一次，OWL 并没有使用WebToolkit，而是走了另一套流程，它使用了 Google 搜索的 API 来检索到了 6 条内容，然后从中筛选出来了 3 条结果。
+可以发现这一次，OWL 并没有使用`WebToolkit`，而是走了另一套流程，它使用了 Google 搜索的 API 来检索到了 6 条内容，然后从中筛选出来了 3 条结果。
 
 ![](img/7c726dd75ef2ce267348ad4d4baad3bd.png)
 
@@ -359,7 +396,7 @@ https://datawhale-business.oss-cn-hangzhou.aliyuncs.com/image/e0642dad-2ae2-4d66
 
 筛选的结果
 
-检索到足够的结果之后，会将这些结果的 url 交给我们的DocumentProcessingToolkit来处理，该工具包集成了Firecrawl 及 Chunkr等处理工具，可以对 url 进行内容解析。
+检索到足够的结果之后，会将这些结果的 `url` 交给我们的`DocumentProcessingToolkit`来处理，该工具包集成了`Firecrawl` 及 `Chunkr`等处理工具，可以对 `url` 进行内容解析。
 
 ![](img/6aca8322ac931b99c74e2197c331c27e.png)
 
@@ -367,24 +404,24 @@ https://datawhale-business.oss-cn-hangzhou.aliyuncs.com/image/e0642dad-2ae2-4d66
 
 ![](img/b022c3fbeb9b9a05a9f6c2c11769b7c7.png)
 
-# 总结
+## 总结
 
 通过多个案例的实际测试，OWL 展现出令人惊喜的多模态处理能力和智能体协作机制，尤其是它会自主去关闭一些阻碍的页面，这点真的令我感到很兴奋！因为之后再体验 Manus 的时候，在遇到相同的情况 Manus 会直接退出该界面，换另一个方式，哪怕我们在 prompt 要求他必须要在某个网站上进行搜索。
 
 OWL 会根据你的任务自主去决定最快捷的方式来完成。并且整体的流程也给了我们很大的想象空间。比如是不是未来可以代替人类进行一些图片标注任务，可以省去大量人工成本。
 
-对于WebToolkit的实现也非常的巧妙，它实现了两个 Agent 的协作机制：PlanningAgent：负责"战略"层面，提供整体规划，而WebAgent负责"战术"层面，执行具体操作。整体的协作流程也非常像人类由大脑先思考然后下达指令，人体再去执行的过程。
+对于`WebToolkit`的实现也非常的巧妙，它实现了两个 Agent 的协作机制：`PlanningAgent`：负责"战略"层面，提供整体规划，而`WebAgent`负责"战术"层面，执行具体操作。整体的协作流程也非常像人类由大脑先思考然后下达指令，人体再去执行的过程。
 
 ![](img/fc54d444b15a13c49004b926dd2e8207.png)
 
-但其实我们可以感受到，有的情况下，直接使用一些 API 来完成任务实际上会比使用WebToolkit速度快很多，但WebToolkit的优势在于能做的事情更加的多（如操作未开放接口的网站），并且对于多模态的支持可能更加丰富。
+但其实我们可以感受到，有的情况下，直接使用一些 API 来完成任务实际上会比使用`WebToolkit`速度快很多，但`WebToolkit`的优势在于能做的事情更加的多（如操作未开放接口的网站），并且对于多模态的支持可能更加丰富。
 
 OWL 另外强大的地方在于对各种工具包的集成与适配做的非常好，包括各种搜索工具、文档处理工具、视频、图像、音频理解工具等等。这使得 OWL 在应对各种情况都显得游刃有余。
 
-Datawhale 多智能体教程、CAMEL、OWL 开源地址：
+## 开源地址
 
-+   教程地址：https://github.com/datawhalechina/handy-multi-agent
++   教程地址：`https://github.com/datawhalechina/handy-multi-agent`
 
-+   CAMEL:https://github.com/camel-ai/camel
++   CAMEL:`https://github.com/camel-ai/camel`
 
-+   OWL:https://github.com/camel-ai/owl
++   OWL:`https://github.com/camel-ai/owl`

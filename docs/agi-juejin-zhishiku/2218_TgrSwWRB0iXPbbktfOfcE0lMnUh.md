@@ -1,3 +1,4 @@
+
 # 揭秘人工智能——商业领袖需要了解的认知技术
 
 > 来源：[https://agijuejin.feishu.cn/docx/UoVkdch3toyXQRxEMRecwLINnKh](https://agijuejin.feishu.cn/docx/UoVkdch3toyXQRxEMRecwLINnKh)

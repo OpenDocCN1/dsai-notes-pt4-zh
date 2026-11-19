@@ -1,8 +1,9 @@
+
 # ✅Prompt编写指南
 
 > 来源：[https://docs.feishu.cn/docx/Mj8sd161goq3D9xgyIacFuO6nVA](https://docs.feishu.cn/docx/Mj8sd161goq3D9xgyIacFuO6nVA)
 
-## [**The Art**](https://666chatgpt.com/tag/chatgpt)** **[**of**](https://666chatgpt.com/tag/learn-task) Asking ChatGPT 提问的艺术—让ChatGPT给出高质量答案
+## [**The Art**](https://666chatgpt.com/tag/chatgpt) **[**of**](https://666chatgpt.com/tag/learn-task) Asking ChatGPT 提问的艺术—让ChatGPT给出高质量答案
 
 > **关于作者**
 

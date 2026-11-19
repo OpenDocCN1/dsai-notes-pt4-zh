@@ -1,3 +1,4 @@
+
 # ChatGPT应用商店上线，全网GPTs超300万，和OpenAI分钱时代来了
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/M8uydRNPto3xX2xMZvscCTZ9nuf](https://aiyanxishe.feishu.cn/docx/M8uydRNPto3xX2xMZvscCTZ9nuf)
@@ -14,17 +15,12 @@ OpenAI Greg Brockman 表示，这是打造自己的 ChatGPT 的第一步。该�
 
 OpenAI 还将在每周重点介绍有用和有影响力的特色 GPT。第一批特色 GPT 包括：
 
-+   能够提供个性化步道建议的 AllTrails
-
-+   能够从 2 亿份学术论文中搜索和分析结果的 Consensus
-
-+   可汗学院创建的能够帮你提高编码技能的 Code Tutor
-
-+   能够辅助设计演示文稿或社交帖子的 Canva
-
-+   能够帮助你找到下一本书的 Books
-
-+   能够随时随地帮助你学习数学和科学的 CK-12 Flexi AI 助教
+- 能够提供个性化步道建议的 AllTrails
+- 能够从 2 亿份学术论文中搜索和分析结果的 Consensus
+- 可汗学院创建的能够帮你提高编码技能的 Code Tutor
+- 能够辅助设计演示文稿或社交帖子的 Canva
+- 能够帮助你找到下一本书的 Books
+- 能够随时随地帮助你学习数学和科学的 CK-12 Flexi AI 助教
 
 ![](img/6ae5b78086f0262df149504ac3bf78c0.png)
 

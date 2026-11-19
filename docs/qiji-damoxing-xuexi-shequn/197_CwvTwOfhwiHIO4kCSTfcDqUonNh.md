@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（5月 25-26日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/T1RXd2uz1oWGgXxoXEBc8t5InDe](https://miracleplus.feishu.cn/docx/T1RXd2uz1oWGgXxoXEBc8t5InDe)
 
-# 推特
+## 推特
 
 ### 谷歌新AI搜索引擎逆天回答合集：怀孕抽烟，每天吃石头等
 
@@ -26,7 +27,7 @@ AI回答（错误信息）：“根据加州大学伯克利分校的地质学家
 
 https://x.com/voooooogel/status/1794195054913110353
 
-顺便说一下，如果ChatGPT没有你需要的库，你可以直接上传一个 .whl 文件——只需前往 pypi > files 并下载适用于 Python 3.11 的 manylinux 版本的 wheel 文件。
+顺便说一下，如果ChatGPT没有你需要的库，你可以直接上传一个 `.whl` 文件——只需前往 `pypi > files` 并下载适用于 Python 3.11 的 manylinux 版本的 wheel 文件。
 
 ![](img/c9821bc0b1f99cf6c4eaf54d32ae8d74.png)
 
@@ -34,11 +35,11 @@ https://x.com/voooooogel/status/1794195054913110353
 
 https://x.com/dchaplot/status/1794109043348209969
 
-我们刚刚发布了 mistral-finetune，这是一个官方仓库和指南，讲解如何使用 LoRA 微调 Mistral 开源模型：
+我们刚刚发布了 `mistral-finetune`，这是一个官方仓库和指南，讲解如何使用 LoRA 微调 Mistral 开源模型：
 
 https://github.com/mistralai/mistral-finetune
 
-同时发布了支持函数调用的 Mistral-7B-Instruct-v0.3，采用 Apache 2.0 许可证：
+同时发布了支持函数调用的 `Mistral-7B-Instruct-v0.3`，采用 Apache 2.0 许可证：
 
 https://models.mistralcdn.com/mistral-7b-v0-3/mistral-7B-Instruct-v0.3.tar
 
@@ -54,15 +55,15 @@ https://x.com/MajmudarAdam/status/1794190796411027791
 
 在过去的三周里，Adam Maj全面研究了深度学习的发展历程，并亲自重新实现了该领域的所有主要技术突破。这一过程从早期的神经网络、优化和正则化技术开始，一直到复杂的序列建模和变换器架构，每一步都基于对前人工作的深入分析和理解。
 
-1.  **基础学习**：他首先从基本的神经网络结构和算法（如反向传播和LeNet）学起，这些都是深度学习能够迅速发展的基石。
+1. 基础学习：他首先从基本的神经网络结构和算法（如反向传播和`LeNet`）学起，这些都是深度学习能够迅速发展的基石。
 
-1.  **优化与正则化**：接着，他探索了如何通过改进算法（如ReLU, Dropout, BatchNorm等）来提高模型的训练效率和网络的深度。
+2. 优化与正则化：接着，他探索了如何通过改进算法（如`ReLU`、`Dropout`、`BatchNorm`等）来提高模型的训练效率和网络的深度。
 
-1.  **序列建模**：他研究了RNN和LSTM的开发，这些技术对于理解和处理序列数据至关重要，为后来的变换器模型打下了基础。
+3. 序列建模：他研究了`RNN`和`LSTM`的开发，这些技术对于理解和处理序列数据至关重要，为后来的变换器模型打下了基础。
 
-1.  **变换器与高级模型**：他详细学习了变换器架构及其对现代NLP和其他AI领域的巨大影响，包括BERT和GPT系列。
+4. 变换器与高级模型：他详细学习了变换器架构及其对现代NLP和其他AI领域的巨大影响，包括`BERT`和`GPT`系列。
 
-1.  **生成模型**：最后，他还尝试理解和实现了一些最新的图像和文本生成模型，如GANs, VAEs, 和Diffusion模型。
+5. 生成模型：最后，他还尝试理解和实现了一些最新的图像和文本生成模型，如`GANs`、`VAEs`，和`Diffusion`模型。
 
 ![](img/39c8e8dc1de048112304740c6224a8c3.png)
 
@@ -70,7 +71,7 @@ https://x.com/MajmudarAdam/status/1794190796411027791
 
 https://x.com/NickADobos/status/1794467336554156271
 
-Devin 是否名副其实！？
+Devin 是否名副实际！？
 
 @cognition_labs 的新AI开发者接受测试！
 
@@ -88,13 +89,13 @@ https://x.com/jerryjliu0/status/1794144413423382764
 
 许多企业开发者正在为内部用户构建类似GPT的平台——让内部用户通过用户界面（UI）根据自己的使用案例定制代理。
 
-RAGApp 是目前可用的最全面的开源项目，它允许在任何你希望的基础设施上快速启动一个 RAG/代理聊天机器人，而无需编写任何应用代码——非常适合最终用户！
+`RAGApp` 是目前可用的最全面的开源项目，它允许在任何你希望的基础设施上快速启动一个 RAG/代理聊天机器人，而无需编写任何应用代码——非常适合最终用户！
 
 在管理面板中仅需点击三次，就可以在你的数据上生成一个支持全流媒体、来源和文件附件的聊天机器人（感谢 @nextjs AI SDK）。
 
 如果你是一名开发者，当然可以根据需要自定义核心的“构建界面”——例如，如果你正在为销售人员部署一个平台，可以在你的客户关系管理（CRM）、电子邮件、自定义系统提示模板等中添加自定义工具。然后让销售人员根据他们的需要构建聊天机器人。
 
-查看 RAGApp 代码库：https://github.com/ragapp/ragapp
+查看 `RAGApp` 代码库：https://github.com/ragapp/ragapp
 
 ![](img/c0e53dd34740db627ae36a27c3bd2ff6.png)
 
@@ -118,7 +119,7 @@ https://x.com/IntuitMachine/status/1794089047985390033
 
 ![](img/05bacc16e5aada0c758e2cba7f89d7b6.png)
 
-# 资讯
+## 资讯
 
 ### 英伟达赢麻了！马斯克xAI超级算力工厂曝光，10万块H100、数十亿美元
 
@@ -148,7 +149,7 @@ https://mp.weixin.qq.com/s/wJKiDU8t2RW2DpnqYR1h8w
 
 https://mp.weixin.qq.com/s/jaYeIfByJaWU5-4jBmnrzQ
 
-大型基座模**型**在自然语言处**理（NLP）和计算机视觉（CV）领域都获得了瞩目**的成就。微调（Finetuning）大型基座模型，使其更加适应特殊的下游任务，成为了一项热门研究课题。然而，在模型越来越大，下游任务越来越多样的今天，微调整个模型带来的计算、存储消耗已大到不再能被接受。LoRA采用低秩拟合微调增量的方案，成功降低了大量的此类消耗，但每个适应器（adapter）的大小仍然是不可忽视的。这激发了本文的核心问题：相比 LoRA，如何进一步大幅减少可训练参数？此外，一个有趣的附加问题是能否采用更少的参数量得到高秩增量矩阵。本文介绍了香港科技大学（广州）的一篇关于大模型高效微调（LLM PEFT Fine-tuning）的文章「Parameter-Efficient Fine-Tuning with Discrete Fourier Transform」，本文被 ICML 2024 接收，代码已开源。
+大型基座模型在自然语言处理（NLP）和计算机视觉（CV）领域都获得了瞩目的成就。微调（Finetuning）大型基座模型，使其更加适应特殊的下游任务，成为了一项热门研究课题。然而，在模型越来越大，下游任务越来越多样的今天，微调整个模型带来的计算、存储消耗已大到不再能被接受。`LoRA`采用低秩拟合微调增量的方案，成功降低了大量的此类消耗，但每个适配器（`adapter`）的大小仍然是不可忽视的。这激发了本文的核心问题：相比 `LoRA`，如何进一步大幅减少可训练参数？此外，一个有趣的附加问题是能否采用更少的参数量得到高秩增量矩阵。本文介绍了香港科技大学（广州）的一篇关于大模型高效微调（LLM PEFT Fine-tuning）的文章「Parameter-Efficient Fine-Tuning with Discrete Fourier Transform」，本文被 ICML 2024 接受，代码已开源。
 
 ![](img/a91bf9330206f332f5c18661fef0fd21.png)
 
@@ -156,11 +157,11 @@ https://mp.weixin.qq.com/s/jaYeIfByJaWU5-4jBmnrzQ
 
 https://www.ithome.com/0/770/713.htm
 
-随着 AI 需求的日益增长，各大科技巨头已经开始争夺紧缺的 AI 资源，其中大部分公司都会选择与 AI 初创公司合作，例如 Facebook 母公司 Meta 和埃隆・马斯克旗下的 xAI。英国金融时报称，Meta 最近与聊天机器人初创公司 Character.ai 就合作进行了讨论。此外，马斯克旗下人工智能公司 xAI 也与 Character. ai 就合作关系进行了谈判，但目前为止尚未达成任何协议。知情人士透露，Character.ai 可利用大语言模型生成不同人物和角色的对话风格，Meta 与之讨论了研究人员在预训练和模型开发等项目上的合作。
+随着 AI 需求的日益增长，各大科技巨头已经开始争夺紧缺的 AI 资源，其中大部分公司都会选择与 AI 初创公司合作，例如 Facebook 母公司 Meta 和埃隆・马斯克旗下的 xAI。英国金融时报称，Meta 最近与聊天机器人初创公司 Character.ai 就合作进行了讨论。此外，马斯克旗下人工智能公司 xAI 也与 Character.ai 就合作关系进行了谈判，但目前为止尚未达成任何协议。知情人士透露，Character.ai 可利用大语言模型生成不同人物和角色的对话风格，Meta 与之讨论了研究人员在预训练和模型开发等项目上的合作。
 
 ![](img/83090754f35a8d1801c7c07395faa0f6.png)
 
-# 产品
+## 产品
 
 ### Call Arc
 
@@ -178,11 +179,11 @@ Arc 在 iOS 搜索应用程序中推出了一个名为 "Call Arc" 的新功能�
 
 https://alchemyze.ai/
 
-Alchemyze 是一个基于人工智能的股票市场研究和洞见工具，旨在缩小零售投资者与机构投资者之间的差距，为普通投资者提供全面、易懂的股票评级和投资建议。该工具覆盖 4000 多只股票，利用 500 多个特征对它们进行评分，并依托 AWS Lambda 、MongoDB Atlas 等技术支撑后端系统。
+`Alchemyze` 是一个基于人工智能的股票市场研究和洞见工具，旨在缩小零售投资者与机构投资者之间的差距，为普通投资者提供全面、易懂的股票评级和投资建议。该工具覆盖 4000 多只股票，利用 500 多个特征对它们进行评分，并依托 `AWS Lambda`、`MongoDB Atlas` 等技术支撑后端系统。
 
 ![](img/ceb9e1c45129002e0bf29f638b3c4ec5.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### RAGapp
 
@@ -190,7 +191,7 @@ Alchemyze 是一个基于人工智能的股票市场研究和洞见工具，旨�
 
 https://github.com/ragapp/ragapp
 
-RAGapp 是一个易于部署的 Agentic RAG 对话系统，适用于企业级应用。它可以使用来自 OpenAI、Gemini 或本地 Ollama 模型，通过 Docker 容器部署在自己的云基础设施上。RAGapp 提供了管理 UI、聊天 UI 和 API 接口，并支持 Docker Compose 和未来的 Kubernetes 部署方式。
+`RAGapp` 是一个易于部署的 Agentic RAG 对话系统，适用于企业级应用。它可以使用来自 OpenAI、Gemini 或本地 Ollama 模型，通过 Docker 容器部署在自己的云基础设施上。`RAGapp` 提供了管理 UI、聊天 UI 和 API 接口，并支持 Docker Compose 和未来的 Kubernetes 部署方式。
 
 ![](img/40456af416aa2aa4c9d7ed5dc0301775.png)
 
@@ -200,9 +201,9 @@ RAGapp 是一个易于部署的 Agentic RAG 对话系统，适用于企业级应
 
 https://github.com/pcg-mlp/KsanaLLM
 
-一念 LLM (KsanaLLM) 是一个高性能和高易用的大语言模型推理引擎。它采用了多项优化技术，包括使用优化的 CUDA 内核、高效的显存管理、动态 batching 等，实现了高性能和高吞吐的推理能力。同时它也具有良好的灵活性和易用性，可无缝集成 Hugging Face 格式的流行 LLM 模型，支持多种解码算法和硬件平台。一念 LLM 针对性地优化了 LLM 推理的各个环节，为实际应用场景提供了一个高效可靠的解决方案。
+`KsanaLLM`（一念 LLM）是一个高性能和高易用的大语言模型推理引擎。它采用了多项优化技术，包括使用优化的 CUDA 内核、高效的显存管理、动态 batching 等，实现了高性能和高吞吐的推理能力。同时它也具有良好的灵活性和易用性，可无缝集成 Hugging Face 格式的流行 LLM 模型，支持多种解码算法和硬件平台。一念 LLM 针对性地优化了 LLM 推理的各个环节，为实际应用场景提供了一个高效可靠的解决方案。
 
-# 学习
+## 学习
 
 ### 奥创纪元：当推荐系统遇到大模型LLM
 
@@ -210,7 +211,7 @@ https://github.com/pcg-mlp/KsanaLLM
 
 https://zhuanlan.zhihu.com/p/668673674
 
-文章首先介绍了大模型 LLM 在推荐系统中的潜力，并对 LLM 与传统推荐系统进行了对比，指出 LLM 能够引入外部世界知识，丰富语义信号，提高可解释性，但缺乏协同信号，对冷启动问题友好。接着，文章从应用视角出发，将 LLM 应用拆解到推荐系统的各个模块，包括数据采集、特征工程、特征编码、打分排序和推荐流程控制。文章详细介绍了 LLM 在特征工程中的应用，如 GPT4Rec、GENRE、KAR 和 MINT 等项目，这些项目利用 LLM 的能力生成辅助信息、丰富新闻数据、补全知识图谱和提供个性化内容生成等。在特征编码方面，文章提到了 ERNIE-RS、UniSRec、MoRec v.s. IDRec 和 TCF 等研究，这些研究利用 LLM 的通用语义表达能力进行编码，以提高推荐系统的性能。在打分排序方面，文章讨论了 LLM 作为打分工具的应用，包括 RecFormer、Prompt4N 等项目。最后，文章探讨了 LLM 作为推荐系统整体流程控制器的潜力，以及在训练和推理阶段是否需要微调大模型的问题。文章还提供了未来研究的展望，包括新推荐范式和避免大模型偏见等方面。
+文章首先介绍了大模型 LLM 在推荐系统中的潜力，并对 LLM 与传统推荐系统进行了对比，指出 LLM 能够引入外部世界知识，丰富语义信号，提高可解释性，但缺乏协同信号，对冷启动问题友好。接着，文章从应用视角出发，将 LLM 应用拆解到推荐系统的各个模块，包括数据采集、特征工程、特征编码、打分排序和推荐流程控制。文章详细介绍了 LLM 在特征工程中的应用，如 `GPT4Rec`、`GENRE`、`KAR` 和 `MINT` 等项目，这些项目利用 LLM 的能力生成辅助信息、丰富新闻数据、补全知识图谱和提供个性化内容生成等。在特征编码方面，文章提到了 `ERNIE-RS`、`UniSRec`、`MoRec` v.s. `IDRec` 和 `TCF` 等研究，这些研究利用 LLM 的通用语义表达能力进行编码，以提高推荐系统的性能。在打分排序方面，文章讨论了 LLM 作为打分工具的应用，包括 `RecFormer`、`Prompt4N` 等项目。最后，文章探讨了 LLM 作为推荐系统整体流程控制器的潜力，以及在训练和推理阶段是否需要微调大模型的问题。文章还提供了未来研究的展望，包括新推荐范式和避免大模型偏见等方面。
 
 ![](img/412a5b3411a5e7f02e6d94a1addc8cf7.png)
 
@@ -220,23 +221,29 @@ https://zhuanlan.zhihu.com/p/668673674
 
 https://zhuanlan.zhihu.com/p/410244780
 
+
+
+# 大模型日报
+
+## GPU 利用率低常见原因及优化策略
+
 GPU 利用率低常见原因包括数据加载、预处理瓶颈、频繁模型保存、复杂指标计算和过多日志打印。优化策略如下：
 
-1.  数据加载：采用多进程并行读取、启用提前加载机制、使用共享内存pin_memory，确保数据与计算资源同城，选择高性能存储介质，合并小文件。
+1. 数据加载：采用多进程并行读取、启用提前加载机制、使用共享内存`pin_memory`，确保数据与计算资源同城，选择高性能存储介质，合并小文件。
 
-1.  数据预处理：简化预处理逻辑，使用 GPU 加速，如 Nvidia DALI 库。
+2. 数据预处理：简化预处理逻辑，使用 GPU 加速，如 Nvidia DALI 库。
 
-1.  模型保存：减少保存频率，避免 CPU 成为瓶颈。
+3. 模型保存：减少保存频率，避免 CPU 成为瓶颈。
 
-1.  指标计算：简化loss计算，抽样上报指标。
+4. 指标计算：简化`loss`计算，抽样上报指标。
 
-1.  日志打印：减少打印频率，避免频繁 CPU-GPU 切换。
+5. 日志打印：减少打印频率，避免频繁 CPU-GPU 切换。
 
-分布式任务中，应确保节点同步、启用 GDRDMA，采用DistributedDataParallel进行数据并行。
+分布式任务中，应确保节点同步、启用 GDRDMA，采用`DistributedDataParallel`进行数据并行。
 
 ![](img/4138d3cb292fe4b93d985ea7b167a913.png)
 
-### Agent的九种设计模式(图解+代码)
+## Agent的九种设计模式(图解+代码)
 
 贡献人：
 
@@ -246,7 +253,7 @@ Agent 设计模式是一种常见的软件设计模式，它允许代理对象�
 
 ![](img/051bca64acbd067d81ae6ce0d6b7da03.png)
 
-### 全面探究英伟达GPU SM内CUDA core-Tensor core能否同时计算？(上篇)
+## 全面探究英伟达GPU SM内CUDA core-Tensor core能否同时计算？(上篇)
 
 贡献人：
 
@@ -256,7 +263,7 @@ https://zhuanlan.zhihu.com/p/697000619
 
 ![](img/fdebece8c8f14fdeba22dd38d78e8394.png)
 
-### 全面探究GPU SM内CUDA core-Tensor core能否同时计算？(下篇)
+## 全面探究GPU SM内CUDA core-Tensor core能否同时计算？(下篇)
 
 贡献人：
 
@@ -266,7 +273,7 @@ https://zhuanlan.zhihu.com/p/698572611
 
 ![](img/6e895494a59a0bc218e1ca8e8f5e6091.png)
 
-### 陪伴机器人：未来家庭新成员
+## 陪伴机器人：未来家庭新成员
 
 贡献人：
 
@@ -276,11 +283,9 @@ https://mp.weixin.qq.com/s/6MiGyuT2oQc73DhqV0F9WQ
 
 ![](img/847fdd1afd701bbe907804b1f410ad37.png)
 
-# 声明
+## 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -292,13 +297,11 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
->
-
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

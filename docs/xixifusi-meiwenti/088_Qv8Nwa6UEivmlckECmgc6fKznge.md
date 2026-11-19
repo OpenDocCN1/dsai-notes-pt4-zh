@@ -1,14 +1,15 @@
+
 # How to Lose Time and Money --- 如何浪费时间和金钱
 
 > 来源：[https://docs.feishu.cn/docx/GQ5idoTAXoKQ8GxdOTbceg6Hnde](https://docs.feishu.cn/docx/GQ5idoTAXoKQ8GxdOTbceg6Hnde)
-
+>
 > https://www.paulgraham.com/selfindulgence.html
 
 ![](img/20f3df9b6218f6f256fa56621ede7bf2.png)
 
 July 2010  2010 年 7 月
 
-When we sold our startup in 1998 I suddenly got a lot of money. I now had to think about something I hadn't had to think ab[out before: h](https://www.paulgraham.com/wealth.html)**ow not **to lose it. I knew it was possible to go from rich to poor, just as it was possible to go from poor to rich. But while I'd spent a lot of the past several years studying the paths from poor to rich , I knew practically nothing about the paths from rich to poor. Now, in order to avoid them, I had to learn where they were.
+When we sold our startup in 1998 I suddenly got a lot of money. I now had to think about something I hadn't had to think about before: how not to lose it. I knew it was possible to go from rich to poor, just as it was possible to go from poor to rich. But while I'd spent a lot of the past several years studying the paths from poor to rich, I knew practically nothing about the paths from rich to poor. Now, in order to avoid them, I had to learn where they were.
 
 当我们在1998年卖掉我们的创业公司时，我突然得到了很多钱。我现在不得不考虑一些我以前没有想过的事情：如何不失去它。我知道从富人到穷人是可能的，就像从穷人到富人是可能的一样。但是，尽管我在过去几年里花了很多时间研究从穷人到富人的道路，但我对从富人到穷人的道路几乎一无所知。现在，为了避开它们，我不得不了解它们在哪里。
 
@@ -38,7 +39,7 @@ And yet I've definitely had days when I might as well have sat in front of a TV 
 
 With time, as with money, avoiding pleasure is no longer enough to protect you. It probably was enough to protect hunter-gatherers, and perhaps all pre-industrial societies. So nature and nurture combine to make us avoid self-indulgence. But the world has gotten more complicated: the most dangerous traps now are new behaviors that bypass our alarms about self-indulgence by mimicking more virtuous types. And the worst thing is, they're not even fun.
 
-随着时间的流逝，就像金钱一样，避免快乐不再足以保护你。它可能足以保护狩猎采集者，也许还有所有前工业社会。因此，先天和后天相结合，使我们避免自我放纵。但世界变得更加复杂：现在最危险的陷阱是新的行为，它们通过模仿更善良的类型来绕过我们对自我放纵的警报。最糟糕的是，它们甚至都不好玩。
+随着时间的推移，就像金钱一样，避免快乐不再足以保护你。它可能足以保护狩猎采集者，也许还有所有前工业社会。因此，先天和后天相结合，使我们避免自我放纵。但世界变得更加复杂：现在最危险的陷阱是新的行为，它们通过模仿更善良的类型来绕过我们对自我放纵的警报。最糟糕的是，它们甚至都不好玩。
 
 Thanks to Sam Altman, Trevor Blackwell, Patrick Collison, Jessica Livingston, and Robert Morris for reading drafts of this.
 

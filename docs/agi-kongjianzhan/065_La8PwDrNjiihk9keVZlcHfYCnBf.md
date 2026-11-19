@@ -1,3 +1,4 @@
+
 # 谷歌（Gemini）
 
 > 来源：[https://agispace.feishu.cn/docx/HfT8dIMkNoW4HLxqVppck79snEg](https://agispace.feishu.cn/docx/HfT8dIMkNoW4HLxqVppck79snEg)
@@ -12,9 +13,7 @@
 
 ![](img/a4a80fb0c1a70da4fa8671261404956f.png)
 
->
-
-# Gemini 简介：我们最大、能力最强的人工智能模型
+## Gemini 简介：我们最大、能力最强的人工智能模型
 
 谷歌和 Alphabet 首席执行官桑达尔·皮查伊 (Sundar Pichai) 的注释：
 
@@ -32,7 +31,7 @@
 
 ——桑达尔
 
-## 介绍双子座
+### 介绍双子座
 
 作者：Demis Hassabis，Google DeepMind 首席执行官兼联合创始人，代表 Gemini 团队
 
@@ -46,7 +45,6 @@ Gemini 是整个 Google 团队（包括 Google Research 的同事）大规模协
 
 <https://www.youtube.com/embed/jV1vkHv4zq8?enablejsapi=1&origin=https%3A%2F%2Fblog.google&widgetid=1>
 
-
 Gemini 简介：我们最大、能力最强的人工智能模型
 
 Gemini 也是我们迄今为止最灵活的模型 - 能够在从数据中心到移动设备的所有设备上高效运行。其最先进的功能将显着增强开发人员和企业客户利用人工智能进行构建和扩展的方式。
@@ -59,7 +57,7 @@ Gemini 也是我们迄今为止最灵活的模型 - 能够在从数据中心到�
 
 +   **Gemini Nano——**我们最高效的设备端任务模型。
 
-## 最先进的性能
+### 最先进的性能
 
 我们一直在严格测试 Gemini 模型并评估其在各种任务中的性能。从自然图像、音频和视频理解到数学推理，Gemini Ultra 的性能在大型语言模型 (LLM) 研发中使用的 32 个广泛使用的学术基准中的 30 个上超过了当前最先进的结果。
 
@@ -77,15 +75,15 @@ Gemini Ultra 还在新的MMMU基准测试中取得了 59.4% 的最先进分数�
 
 Gemini 在一系列多模式基准测试中超越了最先进的性能。
 
-## 下一代功能
+### 下一代功能
 
-到目前为止，创建多模态模型的标准方法涉及针对不同模态训练单独的组件，然后将它们拼接在一起以粗略地模仿其中的一些功能。这些模型有时擅长执行某些任务，例如描述图像，但难以处理更概念性和复杂的推理。
+目前为止，创建多模态模型的标准方法涉及针对不同模态训练单独的组件，然后将它们拼接在一起以粗略地模仿其中的一些功能。这些模型有时擅长执行某些任务，例如描述图像，但难以处理更概念性和复杂的推理。
 
 我们将 Gemini 设计为原生多模式，从一开始就针对不同模式进行了预训练。然后我们使用额外的多模态数据对其进行微调，以进一步完善其有效性。这有助于 Gemini 从头开始无缝地理解和推理各种输入，远远优于现有的多模式模型 - 而且其功能几乎在每个领域都是最先进的。
 
 详细了解Gemini 的功能并了解其工作原理。
 
-### 复杂的推理
+#### 复杂的推理
 
 Gemini 1.0 复杂的多模式推理功能可以帮助理解复杂的书面和视觉信息。这使得它在发现大量数据中难以辨别的知识方面具有独特的能力。
 
@@ -93,10 +91,9 @@ Gemini 1.0 复杂的多模式推理功能可以帮助理解复杂的书面和视
 
 <https://www.youtube.com/embed/sPiOP_CB54A?enablejsapi=1&origin=https%3A%2F%2Fblog.google&widgetid=2>
 
-
 双子座解锁新的科学见解
 
-### 理解文本、图像、音频等
+#### 理解文本、图像、音频等
 
 Gemini 1.0 经过训练，可以同时识别和理解文本、图像、音频等，因此它可以更好地理解微妙的信息，并可以回答与复杂主题相关的问题。这使得它特别擅长解释数学和物理等复杂学科的推理。
 
@@ -106,7 +103,7 @@ Gemini 1.0 经过训练，可以同时识别和理解文本、图像、音频等
 
 双子座解释数学和物理推理
 
-### 高级编码
+#### 高级编码
 
 我们的第一个版本的 Gemini 可以理解、解释和生成世界上最流行的编程语言（如 Python、Java、C++ 和 Go）的高质量代码。它跨语言工作和推理复杂信息的能力使其成为世界领先的编码基础模型之一。
 
@@ -126,7 +123,7 @@ Gemini 1.0 经过训练，可以同时识别和理解文本、图像、音频等
 
 请参阅我们的AlphaCode 2 技术报告了解更多详细信息。
 
-## 更可靠、可扩展且高效
+### 更可靠、可扩展且高效
 
 [我们使用 ](https://cloud.google.com/tpu?hl=en)Google 内部设计的张量处理单元(TPU) v4 和 v5e 在我们的 AI 优化基础设施上大规模训练 Gemini 1.0。我们将其设计为最可靠、最可扩展的训练模型，以及最高效的服务模型。
 
@@ -138,7 +135,7 @@ Gemini 1.0 经过训练，可以同时识别和理解文本、图像、音频等
 
 Google 数据中心内的一排 Cloud TPU v5p AI 加速器超级计算机。
 
-## 以责任和安全为核心构建
+### 以责任和安全为核心构建
 
 在 Google，我们致力于在我们所做的一切事情中推进大胆且[负责任的人工](https://ai.google/responsibility/principles/)智能。基于 Google 的人工智能原则和我们产品中强大的安全政策，我们正在添加新的保护措施来考虑 Gemini 的多模式功能。在开发的每个阶段，我们都会考虑潜在的风险，并努力测试和减轻它们。
 
@@ -152,11 +149,11 @@ Gemini 拥有迄今为止所有 Google AI 模型[中最全面的安全](https://
 
 责[任](https://mlcommons.org/)和安全始终是我们模型[开发和部署的核心。这是](https://blog.google/outreach-initiatives/public-policy/google-microsoft-openai-anthropic-frontier-model-forum/)一[项需](https://blog.google/outreach-initiatives/public-policy/google-microsoft-openai-anthropic-frontier-model-forum/)[要协作构建的长](https://blog.google/outreach-initiatives/public-policy/google-microsoft-anthropic-open-ai-frontier-model-forum-executive-director/)期承诺，因[此我们正在与行业和更广泛的生](https://blog.google/technology/safety-security/introducing-googles-secure-ai-framework/)态系统合作，通过 MLCommons 、 Frontier Model Forum 及其AI 安全基金以及我们的安全人工智能框架（SAIF），旨在帮助减轻公共和私营部门人工智能系统特有的安全风险。在开发 Gemini 的过程中，我们将继续与世界各地的研究人员、政府和民间社会团体合作。
 
-## 让 Gemini 走向世界
+### 让 Gemini 走向世界
 
 Gemini 1.0 现已在一系列产品和平台上推出：
 
-### Google 产品中的 Gemini Pro
+#### Google 产品中的 Gemini Pro
 
 我们通过 Google 产品将 Gemini 带给数十亿人。
 
@@ -168,7 +165,7 @@ Gemini 1.0 现已在一系列产品和平台上推出：
 
 [我们已经开始](https://labs.google/sge/)在搜索中试验 Gemini，它使用户的搜索生成体验(SGE) 更快，美国英语的延迟减少了 40%，同时质量也得到了提高。
 
-### 与双子座一起建设
+#### 与双子座一起建设
 
 [从 12 月 13 日开始，开发者和企业客户](https://ai.google.dev/)可以通过Google AI Studio或Google Cloud Vertex AI中的 Gemini API 访问 Gemini Pro 。
 
@@ -176,7 +173,11 @@ Google AI Studio 是一款基于网络的免费开发者工具，可使用 API �
 
 An[droid 开发人员还可以](https://android-developers.googleblog.com/2023/12/a-new-foundation-for-ai-on-android.html)通过 AICore（Android 14 中提供的新系统功能，从 Pixel 8 Pro 设备开始）使用 Gemini Nano（我们最高效的设备端任务模型）进行构建。注册获取AICore 的早期预览版。
 
-### 双子座超即将推出
+#### 双子座超即将推出
+
+
+
+# Gemini 1.5 发布进展
 
 对于 Gemini Ultra，我们目前正在完成广泛的信任和安全检查，包括由受信任的外部方进行红队检查，并在广泛使用之前使用微调和基于人类反馈的强化学习 (RLHF) 进一步完善模型。
 
@@ -188,7 +189,7 @@ An[droid 开发人员还可以](https://android-developers.googleblog.com/2023/1
 
 这是人工智能发展的一个重要里程碑，也是我们谷歌新时代的开始，我们将继续快速创新并负责任地提高模型的能力。
 
-到目前为止，我们在 Gemini 上取得了巨大进展，我们正在努力进一步扩展其未来版本的功能，包括规划和内存方面的进步，以及增加上下文窗口以处理更多信息以提供更好的响应。
+目前为止，我们在 Gemini 上取得了巨大进展，我们正在努力进一步扩展其未来版本的功能，包括规划和内存方面的进步，以及增加上下文窗口以处理更多信息以提供更好的响应。
 
 我们对人工智能赋能的世界所带来的惊人可能性感到兴奋——这是一个创新的未来，它将增强创造力、扩展知识、推进科学并改变世界各地数十亿人的生活和工作方式。
 
@@ -202,15 +203,15 @@ An[droid 开发人员还可以](https://android-developers.googleblog.com/2023/1
 
 ![](img/c0a7bd30719dfc0be88b806d1e5d60e2.png)
 
-此外，Gemini Nano 也从纯文本输入扩展到可以图片输入。今年晚些时候，从 Pixel 开始，谷歌将推出多模态 Gemini Nano 。这意味着手机用户不仅能够处理文本输入，还能够理解更多上下文信息，例如视觉、声音和口语。
+此外，Gemini Nano 也从纯文本输入扩展到可以图片输入。今年晚些时候，从 Pixel 开始，谷歌将推出多模态 Gemini Nano。这意味着手机用户不仅能够处理文本输入，还能够理解更多上下文信息，例如视觉、声音和口语。
 
-Gemini 家族迎来新成员：Gemini 1.5 Flash
+### Gemini 1.5 Flash
 
 新的 1.5 Flash 针对速度和效率进行了优化。
 
 ![](img/f9290a1ee30dcb3f0666afe3b8ed720e.png)
 
-1.5 Flash 是 Gemini 模型系列的最新成员，也是 API 中速度最快的 Gemini 模型。它针对大规模、大批量、高频任务进行了优化，服务更具成本效益，并具有突破性的长上下文窗口（100 万 token ）。
+1.5 Flash 是 Gemini 模型系列的最新成员，也是 API 中速度最快的 Gemini 模型。它针对大规模、大批量、高频任务进行了优化，服务更具成本效益，并具有突破性的长上下文窗口（100 万 token）。
 
 ![](img/fa4e053b7dc54e1db93e079d3e079117.png)
 
@@ -218,7 +219,7 @@ Gemini 家族迎来新成员：Gemini 1.5 Flash
 
 ![](img/561916c50515b2eadca1d0f49b78c03a.png)
 
-改进的 Gemini 1.5 Pro
+### 改进的 Gemini 1.5 Pro
 
 上下文窗口扩展到 200 万 token
 

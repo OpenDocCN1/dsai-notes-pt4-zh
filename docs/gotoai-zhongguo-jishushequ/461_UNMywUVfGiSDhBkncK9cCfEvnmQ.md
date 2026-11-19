@@ -1,20 +1,17 @@
-# Learn Openclaw -Free, comprehensive guide
 
-> 来源：[https://gotoaiworld.feishu.cn/docx/H8Aqdx5SSou3LvxwIOhcBYE4nxK](https://gotoaiworld.feishu.cn/docx/H8Aqdx5SSou3LvxwIOhcBYE4nxK)
+# Learn OpenClaw - Free, comprehensive guide
 
-# Learn OpenClaw
+> 来源：`https://gotoaiworld.feishu.cn/docx/H8Aqdx5SSou3LvxwIOhcBYE4nxK`
 
 ## The free, comprehensive guide to setting up your always-on AI assistant.
 
 ![](img/b08b50736314a35f7f757f11f9b1712e.png)
 
-https://learnopenclaw.com/
+`https://learnopenclaw.com/`
 
-## The free, comprehensive guide to setting up your always-on AI assistant.
+![og-image](https://learnopenclaw.com/_next/static/media/og-image.8de5f2a3.png)
 
-[h](https://learnopenclaw.com/_next/static/media/og-image.8de5f2a3.png)ttps://learnopenclaw.com/_next/static/media/og-image.8de5f2a3.png
-
-Op**enClaw is the fastest-gro**wing open source project in history — 145K+ GitHub stars and counting. But 70% of the content out there is surface-level, and most people who install it get stuck after the initial setup.
+OpenClaw is the fastest-growing open source project in history — 145K+ GitHub stars and counting. But 70% of the content out there is surface-level, and most people who install it get stuck after the initial setup.
 
 This guide goes deep. From architecture fundamentals to advanced automation, we cover everything you need to actually make OpenClaw useful — not just installed.
 
@@ -36,7 +33,7 @@ Set up iMessage, Slack, WhatsApp, Telegram, Discord, and Signal — with a compa
 
 ### [Core Concepts](https://learnopenclaw.com/core-concepts/soul-md)
 
-Master the systems that make OpenClaw powerful: SOUL.md personality design, the memory system, skills & ClawHub, and cron automation.
+Master the systems that make OpenClaw powerful: `SOUL.md` personality design, the memory system, skills & ClawHub, and `cron` automation.
 
 ### [Advanced](https://learnopenclaw.com/advanced/sub-agents)
 
@@ -78,12 +75,10 @@ After analyzing 1,189 sources of OpenClaw content, we found:
 
 This guide is the resource we wished existed when we started.
 
----
-
 ## About
 
 Created by [Carl Vellotti](https://www.linkedin.com/in/carlvellotti/), product manager and creator of The Full Stack PM. Also the creator of Claude Code for PMs and Claude Code for Everyone.
 
 This guide is not affiliated with or endorsed by OpenClaw. It’s an independent educational resource.
 
-[H](https://x.com/carlvellotti)ave [feedback](https://www.linkedin.com/in/carlvellotti/)? Reach out on X or LinkedIn.
+Have [feedback](https://www.linkedin.com/in/carlvellotti/)? Reach out on [X](https://x.com/carlvellotti) or LinkedIn.

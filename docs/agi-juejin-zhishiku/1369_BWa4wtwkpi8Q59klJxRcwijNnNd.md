@@ -1,3 +1,4 @@
+
 # 提示词进阶 | 结构化prompt
 
 > 来源：[https://agijuejin.feishu.cn/docx/Es8kd8LgzoPUIMxq7jScabjwnmh](https://agijuejin.feishu.cn/docx/Es8kd8LgzoPUIMxq7jScabjwnmh)
@@ -47,11 +48,8 @@
 ## 四、如何应用
 
 1.  选择一个合适的模版，比如BARD、BROKE等
-
-1.  根据模版，构建一个好的全局思维链
-
-1.  保持上下文语义一致性，一个是格式语义一致性，一个是内容语义一致性
-
-1.  结合其他prompt技巧，比如zero shot、few shot、TOT等
+2.  根据模版，构建一个好的全局思维链
+3.  保持上下文语义一致性，一个是格式语义一致性，一个是内容语义一致性
+4.  结合其他prompt技巧，比如zero shot、few shot、TOT等
 
 最后我想说一句，写好prompt关键在于找到合适自己的方法，框架虽多，不要贪，选择一个贯彻到底，足以。

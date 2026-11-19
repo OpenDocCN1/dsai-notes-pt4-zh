@@ -1,3 +1,4 @@
+
 # 风格人物+精神投射
 
 > 来源：[https://qianniucity.feishu.cn/docx/FBWsdDfSuo586Excwsgcz2tsnLd](https://qianniucity.feishu.cn/docx/FBWsdDfSuo586Excwsgcz2tsnLd)
@@ -16,14 +17,14 @@ Flat, clean yellow background with subtle surface texture.
 Strong sunlight from top-left casts a distinct and enlarged shadow on the wall behind him.
 
 Key Concept – Shadow as spiritual projection:  
-The shadow cast behind him does **not** mirror his body shape.  
+The shadow cast behind him does not mirror his body shape.  
 Instead, it takes the form of one of his most iconic artworks —  
 a surreal melted clock with long dripping arms, inspired by “The Persistence of Memory”.
 
 The melted clock shadow is positioned diagonally, starting from his shoulder,  
 stretching wide and low across the yellow wall, surreal and fluid, yet unmistakably symbolic.
 
-This shadow is **Dalí’s legacy made visible** — a symbolic extension of his identity through time, dream, and visual distortion.
+This shadow is Dalí’s legacy made visible — a symbolic extension of his identity through time, dream, and visual distortion.
 
 Lighting &amp; Rendering:  
 Pixar-like rendering with detailed but stylized textures.  
@@ -34,12 +35,11 @@ Typography (top-left corner):
 “Salvador Dalí” in minimalist black sans-serif font, “Dalí” bolded.
 ```
 
-
 ```
-**A high-resoluti****on vertical**** Pixar-style 3D character** illustrati**on.
+A high-resolution vertical Pixar-style 3D character illustration.
 
-Mai**n character:
-Monkey D. Lu**ffy — depicted as a y**outhful, lean, and dynamically exaggerated Pixar-style 3D character.
+Main character:
+Monkey D. Luffy — depicted as a youthful, lean, and dynamically exaggerated Pixar-style 3D character.
 Wearing his classic red vest, blue shorts with a yellow sash, and straw sandals. His iconic straw hat is tilted slightly backward.
 Big, expressive eyes full of curiosity and determination; broad smile with a missing tooth.
 His posture is relaxed but confident — standing tall with arms slightly akimbo, head slightly tilted, and chest puffed with a carefree attitude.
@@ -56,7 +56,7 @@ The pirate flag is larger than life, slightly torn, but vivid — rippling with 
 
 The shadow is Luffy’s dream made visible — an emotional, symbolic projection of boundless ambition, friendship, and adventure.
 
-Lighting &amp; Rendering:
+Lighting & Rendering:
 Pixar-style rendering with expressive, cartoonishly realistic textures (e.g., subtle cloth fibers, skin pores, wood grain in the shadowed mast).
 Use soft golden rim light and warm color grading to emphasize optimism and warmth.
 Include faint sparkles or floating particles in the shadow to hint at mystery and magic of the Grand Line.
@@ -67,7 +67,7 @@ Typography (top-left corner):
 
 ![](img/f30c8e49fbf3c8f113d4146d40cde0b0.png)
 
-Prompt 思路
+## Prompt 思路
 
 ```
 风格人物+精神投射

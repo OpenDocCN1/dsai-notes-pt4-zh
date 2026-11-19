@@ -1,4 +1,5 @@
-# 这个神器让你白嫖ClaudeOpus 4.5，Gemini 3！还能接Claude Code等任意平台
+
+# 这个神器让你白嫖Claude Opus 4.5，Gemini 3！还能接Claude Code等任意平台
 
 > 来源：[https://my.feishu.cn/docx/Buldd4SDoo1uPwx1MBkcwZBMnTf](https://my.feishu.cn/docx/Buldd4SDoo1uPwx1MBkcwZBMnTf)
 
@@ -102,19 +103,19 @@ Tauri v2 + React + Rust写的。
 
 ## 配置教程
 
-**装软件**
+### 装软件
 
-macOS用brew装：
+macOS用`brew`装：
 
 ```
 brew install --cask antigravity
 ```
 
-Windows下载msi安装包。
+Windows下载`msi`安装包。
 
 地址：https://github.com/lbjlaq/Antigravity-Manager/releases
 
-**启动服务**
+### 启动服务
 
 打开软件，找"API反代"那个页面。
 
@@ -122,19 +123,19 @@ Windows下载msi安装包。
 
 ![](img/33b4221401e714ce4111f2a40b7410c4.png)
 
-**改环境变量**
+### 改环境变量
 
-重点来了，让Claude Code连咱本地：
+重点来了，让`Claude Code`连咱本地：
 
 ```
-export ANTHROPIC_API_KEY=&quot;sk-antigravity&quot;
-export ANTHROPIC_BASE_URL=&quot;http://127.0.0.1:8045&quot;
+export ANTHROPIC_API_KEY="sk-antigravity"
+export ANTHROPIC_BASE_URL="http://127.0.0.1:8045"
 claude
 ```
 
 完事儿！
 
-现在你用Claude Code，后台消耗的是Antigravity额度。
+现在你用`Claude Code`，后台消耗的是Antigravity额度。
 
 **关键是，免费的。**
 
@@ -146,7 +147,7 @@ https://ai.feishu.cn/wiki/TZCvwXx9WivgJLkPRFlcqk0zn3d
 
 ## 几个坑提前说
 
-**额度的事儿**
+### 额度的事儿
 
 免费版额度每周刷一次。
 
@@ -158,7 +159,7 @@ Pro用户5小时刷一次，量更大。
 
 SheerID验证通过，白嫖12个月Pro会员。
 
-**风险的事儿**
+### 风险的事儿
 
 这种反代操作，可能违反服务条款。
 
@@ -166,7 +167,7 @@ SheerID验证通过，白嫖12个月Pro会员。
 
 老金的解释：自己玩没事，商用大规模薅别作死。
 
-**Thinking模式不兼容**
+### Thinking模式不兼容
 
 当你遇到下方的报错
 
@@ -188,7 +189,7 @@ SheerID验证通过，白嫖12个月Pro会员。
 
 ## 还有几个类似工具
 
-**Anti-API**
+### Anti-API
 
 也是把Antigravity转成API的。
 
@@ -196,11 +197,11 @@ SheerID验证通过，白嫖12个月Pro会员。
 
 地址：https://github.com/ink1ing/anti-api
 
-**CLIProxyAPI**
+### CLIProxyAPI
 
 统一代理，支持好几个CLI。
 
-Gemini CLI、Antigravity、Qwen Code都行。
+`Gemini CLI`、`Antigravity`、`Qwen Code`都行。
 
 地址：https://github.com/router-for-me/CLIProxyAPI
 

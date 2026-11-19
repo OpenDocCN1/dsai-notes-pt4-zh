@@ -1,3 +1,4 @@
+
 # 使用Plugin Show Me，画交互交互图
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/C9fadp6EMozog1xVaAacyVoanHc](https://jalicvoygc0.feishu.cn/docx/C9fadp6EMozog1xVaAacyVoanHc)
@@ -8,7 +9,7 @@
 
 **原则：**
 
-+   Prompt说清楚需求，注意结构化
++ Prompt说清楚需求，注意结构化
 
 ```
 第一步，环境A的xx角色与环境B进行某某交互
@@ -18,7 +19,7 @@
 
 **网络：**魔法
 
-**AI****工作流****：**①输入需求 ②出图 （这个示例图的Prompt不严谨，请按照上述Prompt来提问）
+**AI工作流：**①输入需求 ②出图 （这个示例图的Prompt不严谨，请按照上述Prompt来提问）
 
 ![](img/c9c41c7bdec8709160f66ddea28cecd9.png)
 

@@ -1,10 +1,11 @@
+
 # AI视频短片工作流分享
 
 > 来源：[https://agijuejin.feishu.cn/docx/LpwHdlYhWo7e7ZxMI1lcWzWrn8f](https://agijuejin.feishu.cn/docx/LpwHdlYhWo7e7ZxMI1lcWzWrn8f)
 
 > 作者：德里克文
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/694158919)hihu.com/p/694158...
+> 原文：[https://zhuanlan.zhihu.com/p/694158919](https://zhuanlan.zhihu.com/p/694158919)
 
 需要采用多种AI软件共同协作，才可以做成一个完整的有效果AI视频短片。
 
@@ -12,9 +13,9 @@
 
 ![](img/cd3a39b51f1313f12bed48af65caf642.png)
 
-[9c4b5dfe-0089-11ef-9560-965723eb0b8c-v8_f2_t1_xKNzBnn3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GXANbqDWZoXeamxMDo6cCPSbnbb)
+[`9c4b5dfe-0089-11ef-9560-965723eb0b8c-v8_f2_t1_xKNzBnn3.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GXANbqDWZoXeamxMDo6cCPSbnbb)
 
-《破壁》是我们（AINEXT+三体迷）采[用国内的A](https://www.zhihu.com/search?q=%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)I工具，从AI分镜脚本、AI 图片生成 、AI视频生成等一系列工具，进行制作完成的AI视频短片。
+《破壁》是我们（AINEXT+三体迷）采用国内的AI工具，从AI分镜脚本、AI 图片生成、AI视频生成等一系列工具，进行制作完成的AI视频短片。
 
 “破壁”既是《三体》内“破壁人”的称呼，同时也意味着AIGC正在突破传统内容创作之壁，国内AI工具未来的发展能够突破国外科技封锁之壁的含义。
 
@@ -24,17 +25,17 @@
 
 下面我来简述下如何通过不同的AI工具来制作一个完整的AI视频的工作流程，抛砖迎玉供大家参考。
 
-## 一、 [项目总表](https://www.zhihu.com/search?q=%E9%A1%B9%E7%9B%AE%E6%80%BB%E8%A1%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)
+## 一、 项目总表
 
-[在这个项目](https://www.zhihu.com/search?q=%E5%88%86%E5%B7%A5%E5%90%88%E4%BD%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)的开始，我们团队内部就进行了 分工合作 。
+在这个项目的开始，我们团队内部就进行了分工合作。
 
-第一件事情就是确认视频的主要内容和主要文案，[这部分是](https://www.zhihu.com/search?q=%E6%96%B9%E5%90%91%E6%80%A7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)需要花时间去构思和讨论的，确保 方向性 上达成统一意见，并且形成剧本故事。
+第一件事情就是确认视频的主要内容和主要文案，这部分需要花时间去构思和讨论，确保方向性上达成统一意见，并且形成剧本故事。
 
 本次由于我们的主题是致敬三体的闪回内容，因此直接采用了经典金句，节约了这部分时间。
 
 ![](img/3d41cd5e13684af0e86443c4da6ed288.png)
 
-[在明确了](https://www.zhihu.com/search?q=%E5%B7%A5%E4%BD%9C%E8%A1%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)[内容的主要](https://www.zhihu.com/search?q=%E8%BF%9B%E5%BA%A6%E5%AE%89%E6%8E%92&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)方向后，我们建立了一个 工作表 ，将视频内容进行拆分，确定每个人的时间 进度安排 ，明确具体工作内容。
+在明确了内容的主要方向后，我们建立了一个工作表，将视频内容进行拆分，确定每个人的时间进度安排，明确具体工作内容。
 
 这一阶段的内容主要是列出项目大纲，明确视频主体，讨论构思整体需求，并将一个项目进行分解细化，明确阶段目标。
 
@@ -42,11 +43,11 @@
 
 详细展开有很多内容，还需要进行多次协同合作。
 
-## 二、 [分镜表](https://www.zhihu.com/search?q=%E5%88%86%E9%95%9C%E8%A1%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)
+## 二、 分镜表
 
 在明确项目构建之后，我们需要将画面描述的内容进行一些细化，确认分镜的内容，在这个阶段我们就可以采用AI工具来帮我们进行辅助。
 
-[我们将讨论好](https://www.zhihu.com/search?q=%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)的画面内容，通过提示词丢给 大语言模型 ，让他帮我根据内容进行详细分镜文字内容的生成。
+我们将讨论好的画面内容，通过提示词丢给大语言模型，让他帮我根据内容进行详细分镜文字内容的生成。
 
 ![](img/8f9737e0bd8489820f7913c1153aa0c3.png)
 
@@ -68,7 +69,7 @@
 
 ![](img/e55ad8b5e486aac40cb101911d5e1466.png)
 
-经[过对画](https://www.zhihu.com/search?q=%E8%A7%86%E9%A2%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)面风格效果的调整，选择我想要的画面后，根据分镜内容出图，每个镜头出几十张图，从几十张当中挑选3~5张进入后续的 视频 生成步骤。
+经过对画面风格效果的调整，选择我想要的画面后，根据分镜内容出图，每个镜头出几十张图，从几十张当中挑选3~5张进入后续的视频生成步骤。
 
 ## 四、视频生成
 
@@ -94,37 +95,29 @@
 
 本视频用到的相关AI工具
 
-### 1. 文案、分镜 **：**
+### 1. 文案、分镜：
 
-[关于剧本的](https://www.zhihu.com/search?q=%E9%80%9A%E4%B9%89%E5%8D%83%E9%97%AE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)文案和分镜内容，可采用自行创作，也可以采用文心一言、 通义千问 等综合语言类大模型,进行内容的辅助创作。
+关于剧本的文案和分镜内容，可采用自行创作，也可以采用文心一言、通义千问等综合语言类大模型，进行内容的辅助创作。
 
 **文心一言：**
 
 ![](img/2a2b24b49f85c1eb229450303263dd50.png)
 
-[  ](https://link.zhihu.com/?target=https%3A//yiyan.baidu.com/)
-
 **通义千问：**
 
 ![](img/3bc5bf7c8ef34c823383d0d98138cbe3.png)
 
-[  ](https://link.zhihu.com/?target=https%3A//tongyi.aliyun.com/qianwen/)
-
 ### 2. 画面生成
 
-采[用AI](https://www.zhihu.com/search?q=%E6%82%A0%E8%88%B9&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)工具进行图片处理生成，生成接近分镜表里面画面的描述内容。在这个视频中我分别采用了美图WHEE和 悠船 进行了图片创作。
+采用AI工具进行图片处理生成，生成接近分镜表里面画面的描述内容。在这个视频中我分别采用了美图WHEE和悠船进行了图片创作。
 
 美图WHEE：
 
 ![](img/13bea61aff70920f6e262770a303b1ba.png)
 
-[  ](https://link.zhihu.com/?target=https%3A//www.whee.com/)
-
 **悠船：**
 
 ![](img/70173400e827c6fb852a6e5d5f6b5777.png)
-
-[  ](https://link.zhihu.com/?target=https%3A//www.youchuanai.com/)
 
 ### 3. 视频生成
 
@@ -132,15 +125,11 @@
 
 ![](img/5b12e078be11a33eba47ed842dfec2a7.png)
 
-[  ](https://link.zhihu.com/?target=https%3A//dreamina.jianying.com/ai-tool/home)
+### 4. 剪辑制作：
 
-### 4. 剪辑 **制作：**
-
-[**剪映 **](https://www.zhihu.com/search?q=%E5%89%AA%E6%98%A0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A694158919%7D)**：**
+**剪映：**
 
 ![](img/caf28ec7d2ca4c03762d37436bf06c15.png)
-
-[  ](https://link.zhihu.com/?target=https%3A//www.capcut.cn/)
 
 ## 结语
 
@@ -154,4 +143,4 @@ AI只是工具和合作者，不能取代创作者。
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3162454823%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3161270553%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 德里克文 ，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

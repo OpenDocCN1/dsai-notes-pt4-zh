@@ -1,10 +1,11 @@
-# 什么是 Trae ？
+
+# 什么是 Trae？
 
 > 来源：[https://agijuejin.feishu.cn/docx/QucbdlZ4GoJEgIxxxHXc11QfnNC](https://agijuejin.feishu.cn/docx/QucbdlZ4GoJEgIxxxHXc11QfnNC)
 
-> 链接：https://docs.trae.ai/docs/what-is-trae?
+> 链接：`https://docs.trae.ai/docs/what-is-trae?`
 
-Trae（/treɪ/）与 AI 深度集成，提供智能问答、代码自动补全以及基于 Agent 的 AI 自动编程能力。使用 Trae 开发项目时，你可以与 AI 灵活协作，提升开发效率。
+Trae（`/treɪ/`）与 AI 深度集成，提供智能问答、代码自动补全以及基于 `Agent` 的 AI 自动编程能力。使用 Trae 开发项目时，你可以与 AI 灵活协作，提升开发效率。
 
 ## 完备的 IDE 功能
 
@@ -12,18 +13,18 @@ Trae（/treɪ/）与 AI 深度集成，提供智能问答、代码自动补全�
 
 ## 强大的 AI 助手
 
-+   **智能问答 **
++ **智能问答**
 
-+   在编写代码时，你可以随时与 AI 助手对话，获得代码解释[、代码注释](https://docs.trae.ai/docs/side-chat)和错误修[复等帮助。](https://docs.trae.ai/docs/inline-chat)详情参考《 侧边对话 》和《 内嵌对话 》。
+  在编写代码时，你可以随时与 AI 助手对话，获得代码解释[、代码注释](https://docs.trae.ai/docs/side-chat)和错误修[复等帮助。](https://docs.trae.ai/docs/inline-chat)详情参考《侧边对话》和《内嵌对话》。
 
-+   **实时代码建议 **
++ **实时代码建议**
 
-+   AI 助手能够理解当前代码并在编辑器中实时[提供代码建议，](https://docs.trae.ai/docs/completion)提升编程效率。详情参考《 代码自动补全 》。
+  AI 助手能够理解当前代码并在编辑器中实时[提供代码建议，](https://docs.trae.ai/docs/completion)提升编程效率。详情参考《代码自动补全》。
 
-+   **代码片段生成**
++ **代码片段生成**
 
-+   通过自然语言描述你的需求，AI 助手将生成相应的代码片段，甚至能够编写项目级或跨文件的代码。
+  通过自然语言描述你的需求，AI 助手将生成相应的代码片段，甚至能够编写项目级或跨文件的代码。
 
-+   **从 0 到 1 开发项目**
++ **从 0 到 1 开发项目**
 
-+   告诉 AI 助手你想开发的程序，AI 助手将根据你的描述提供[相关代码或自动创建所需](https://docs.trae.ai/docs/builder)文件。详情参考《 Builder 模式 》。
+  告诉 AI 助手你想开发的程序，AI 助手将根据你的描述提供[相关代码或自动创建所需](https://docs.trae.ai/docs/builder)文件。详情参考《`Builder` 模式》。

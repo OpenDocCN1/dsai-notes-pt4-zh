@@ -1,8 +1,9 @@
+
 # NanoBanana2 国内直连攻略
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/CKHJdsHCcoYPvyx0ChAcWSYLnSb](https://qqs7y1hozd1.feishu.cn/docx/CKHJdsHCcoYPvyx0ChAcWSYLnSb)
 
-### Nano Banana 体验如何
+## Nano Banana 体验如何
 
 最近的AI圈如同过年般一样热闹。
 
@@ -38,11 +39,11 @@ Gemini 3.0 Pro刚刚发布，谷歌就迫不及待地把Nano Banana 2也端上�
 
 总之，万物皆可生成！
 
-### Nano Banana 2使用方法
+## Nano Banana 2使用方法
 
 话不多说，先放上国内可用的Nano Banana 2使用入口：
 
-deepsider.ai
+`deepsider.ai`
 
 DeepSider是一款浏览器插件，安装到浏览器后，国内也可以直接访问Nano Banana 2/Gemini3.0/GPT-5.1等等几十款AI大模型。
 
@@ -60,7 +61,7 @@ DeepSider对于国内AI玩家来说，应该是最方便的渠道之一了。
 
 ![](img/d4116a2e5b13c0213be5b8faf5d1a8a8.png)
 
-### DeepSider使用方法：
+### DeepSider使用方法
 
 ①打开Edge浏览器，打开扩展商店；
 
@@ -70,7 +71,7 @@ DeepSider对于国内AI玩家来说，应该是最方便的渠道之一了。
 
 ![](img/f46a9c85b06987a4914be2eb76296cbc.png)
 
-### Nano Banana 2新版本功能
+## Nano Banana 2新版本功能
 
 ①与传统图像模型不同，Nano Banana 2是一款推理模型，在生成图像前会进行内部推理；
 
@@ -83,7 +84,6 @@ DeepSider对于国内AI玩家来说，应该是最方便的渠道之一了。
 ⑤擅长高事实准确性的创意工作、需要最新知识支持的图像创作。
 
 简单来说，就是更牛x了。
-
 
 Nano Banana 2不仅会自动推理，思考用户给出的提示词，还会自动补完用户的深层次需求，并根据自己的最新知识库进行填充。
 
@@ -107,17 +107,17 @@ Nano Banana 2不仅会自动推理，思考用户给出的提示词，还会自�
 
 它专为中文用户设计，无需特殊网络，无需海外账户，支持的模型包括：
 
-+   GPT5,GPT4.1全系列（包括GPT-4o绘图,GPT5-Codex）
++ GPT5,GPT4.1全系列（包括GPT-4o绘图,GPT5-Codex）
 
-+   Claude全系列（包括Claude Opus）
++ Claude全系列（包括Claude Opus）
 
-+   Gemini 2.5 Pro全系列；
++ Gemini 2.5 Pro全系列；
 
-+   Grok全系列；
++ Grok全系列；
 
-+   Nano Banana（包括高清图片生成模式）
++ Nano Banana（包括高清图片生成模式）
 
-+   Sora 2（包括最长25秒视频生成模式）
++ Sora 2（包括最长25秒视频生成模式）
 
 ![](img/c724ab7addfce5317ce574ca31b983bc.png)
 
@@ -135,4 +135,4 @@ Nano Banana 2不仅会自动推理，思考用户给出的提示词，还会自�
 
 作为踩过无数 AI 工具 “网络门槛”“付费坑” 的技术人，真心觉得 DeepSider 插件把 “国内用户用前沿 AI” 这件事做到了极致 —— 无需折腾特殊网络，不用注册一堆海外账户，一个插件就能同时拿捏 NanoBanana2 的 4K 绘图、Sora2 的视频生成、GPT5 的代码解析，相当于 “一站式承包” 了创意创作、科研辅助、工作效率提升的所有需求，亲测加载速度和生成质量都远超同类工具！
 
-如果你也被 NanoBanana2 的推理级绘图能力种草，想快速解锁科研配图、漫画创作、电商设计等场景，现在直接冲官网 deepsider.ai 安装插件就行 —— 装完在任意网页点右上角图标，侧边栏秒弹出来，切换 NanoBanana2 就能开工，中文提示词直接喂，新手也能零成本上手！
+如果你也被 NanoBanana2 的推理级绘图能力种草，想快速解锁科研配图、漫画创作、电商设计等场景，现在直接冲官网 `deepsider.ai` 安装插件就行 —— 装完在任意网页点右上角图标，侧边栏秒弹出来，切换 NanoBanana2 就能开工，中文提示词直接喂，新手也能零成本上手！

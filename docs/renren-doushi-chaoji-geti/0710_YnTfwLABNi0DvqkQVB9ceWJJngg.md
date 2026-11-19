@@ -1,14 +1,15 @@
+
 # 【问答库】mini航海——📕虚拟资料
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/SnipdpOclokxgSxBYrJcxAQPnAh](https://xuqiwei1986.feishu.cn/docx/SnipdpOclokxgSxBYrJcxAQPnAh)
+> 来源：[`https://xuqiwei1986.feishu.cn/docx/SnipdpOclokxgSxBYrJcxAQPnAh`](`https://xuqiwei1986.feishu.cn/docx/SnipdpOclokxgSxBYrJcxAQPnAh`)
 
 温馨提示：
 
 我会把大家大部分问题收集在这里面，大家有什么问题可以直接看，我也做了分类收纳，如果没有的话群里可以提出来，解答完，我也会添加进问答库里。
 
-![](img/c945c9bd0377e01e2b0b23996432ef4b.png)
+![](`img/c945c9bd0377e01e2b0b23996432ef4b.png`)
 
-> 电脑端快速查找方式：ctrl+f，可以搜索关键词
+> 电脑端快速查找方式：`ctrl+f`，可以搜索关键词
 
 **🎯手机端目录导航：**
 
@@ -34,23 +35,23 @@
 
 经过一位同学的同意，咱们用他的例子举例一下：
 
-![](img/7f00201bd453061df6fdc9b151630c04.png)
+![](`img/7f00201bd453061df6fdc9b151630c04.png`)
 
-![](img/79cd4a37196cb385404dbdcd529e15cd.png)
+![](`img/79cd4a37196cb385404dbdcd529e15cd.png`)
 
 左边的同学大部分是走思维导图的形式，右边都是**有数据的爆**款封面，对比下来，我们可以复盘封面和标题
 
-1.  **要有一定的营销感**，特别是标题
+1. **要有一定的营销感**，特别是标题
 
-1.  **3:4图片**（刷📕画面占比最大的都是3:4）
+1. **3:4图片**（刷📕画面占比最大的都是3:4）
 
-1.  **封面一眼看不到主题**，在信息这么多的互联网，用户更希望第一眼能看到笔记里，能看到我想要的东西
+1. **封面一眼看不到主题**，在信息这么多的互联网，用户更希望第一眼能看到笔记里，能看到我想要的东西
 
-1.  **爆款封面测的少，**左边红框划的，是同学听了我直播后，修改了标题发的笔记，这个点赞数量明显就有提升嘛，那我们再优化一下我们的封面，把做爆款封面的能力提升上来，那是不是就把握了用户点击的密码。多试爆款封面，实拍图、拼接、对比图等等......
+1. **爆款封面测的少，**左边红框划的，是同学听了我直播后，修改了标题发的笔记，这个点赞数量明显就有提升嘛，那我们再优化一下我们的封面，把做爆款封面的能力提升上来，那是不是就把握了用户点击的密码。多试爆款封面，实拍图、拼接、对比图等等......
 
-1.  **封面图，**最好是能让用户第一眼看到自己需要的信息，才会点进来看内容，字的大小也很重要
+1. **封面图，**最好是能让用户第一眼看到自己需要的信息，才会点进来看内容，字的大小也很重要
 
-1.  **封面好看，**你要知道📕的群体大部分是女性以及年轻用户，如果你掌握了这一点，其实打败了90%的人，比如粉色背景，干净整洁的封面等等......
+1. **封面好看，**你要知道📕的群体大部分是女性以及年轻用户，如果你掌握了这一点，其实打败了90%的人，比如粉色背景，干净整洁的封面等等......
 
 上面提的直播回放在下面这个问题里哈
 
@@ -60,35 +61,35 @@
 
 直播回放，有详细讲到怎么打造爆款笔记，讲下面这个思维导图的
 
-https://shengcaiyoushu01.feishu.cn/minutes/obcnfpfd71aeg8on8rjm82jp
+[`https://shengcaiyoushu01.feishu.cn/minutes/obcnfpfd71aeg8on8rjm82jp`](`https://shengcaiyoushu01.feishu.cn/minutes/obcnfpfd71aeg8on8rjm82jp`)
 
 强烈推荐看【加餐分享】，用质量打败数量
 
-https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj
+[`https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj`](`https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj`)
 
-调研表模板：[同行调研表【模版】](https://shengcaiyoushu01.feishu.cn/sheets/VES2sLSSjhT14jtigMyceg4NnPf)
+调研表模板：[`同行调研表【模版】`](`https://shengcaiyoushu01.feishu.cn/sheets/VES2sLSSjhT14jtigMyceg4NnPf`)
 
 ### 怎么找对标？怎么快速采集笔记数据？
 
 答：
 
-1.  对标账号用户群体和你一样
+1. 对标账号用户群体和你一样
 
-1.  时间越近的越好
+1. 时间越近的越好
 
-1.  有一直在更新，有数据的（点赞+收藏起码得超过500）
+1. 有一直在更新，有数据的（点赞+收藏起码得超过500）
 
-1.  利用采集器找爆款笔记，看到他们的粉丝量然后加私域去调研
+1. 利用采集器找爆款笔记，看到他们的粉丝量然后加私域去调研
 
-1.  【做📕如何用后羿采集器进行数据分析】https://t.zsxq.com/ajBKE
+1. 【做📕如何用后羿采集器进行数据分析】[`https://t.zsxq.com/ajBKE`](`https://t.zsxq.com/ajBKE`)
 
-1.  平时下班路上或者只有手机的时候，搜索关键词同事多用📕自带的【筛选】功能
+1. 平时下班路上或者只有手机的时候，搜索关键词同事多用📕自带的【筛选】功能
 
-调研表模板：[同行调研表【模版】](https://shengcaiyoushu01.feishu.cn/sheets/VES2sLSSjhT14jtigMyceg4NnPf)
+调研表模板：[`同行调研表【模版】`](`https://shengcaiyoushu01.feishu.cn/sheets/VES2sLSSjhT14jtigMyceg4NnPf`)
 
-![](img/2556981cb95b07508892682142a7b7c1.png)
+![](`img/2556981cb95b07508892682142a7b7c1.png`)
 
-![](img/72fa4fe8f9cf2b4416bafcd68ced306f.png)
+![](`img/72fa4fe8f9cf2b4416bafcd68ced306f.png`)
 
 ### 干货笔记占多少？产品笔记占多少合适？
 
@@ -130,15 +131,15 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj
 
 答：
 
-1.  看发的人多不多，如果做这个赛道都没什么人发，就不用去做了,这个市场可能还没开发完成，现在上的都是实验品，其实竞争力强多的人发证明这个有搞头，就像k12，这么多人发，赚十几二十万的人多了去了，但是到你这里你一个月做赚个几千块钱、万把块完全足够，不要看别人发的多你就畏畏缩缩
+1. 看发的人多不多，如果做这个赛道都没什么人发，就不用去做了,这个市场可能还没开发完成，现在上的都是实验品，其实竞争力强多的人发证明这个有搞头，就像k12，这么多人发，赚十几二十万的人多了去了，但是到你这里你一个月做赚个几千块钱、万把块完全足够，不要看别人发的多你就畏畏缩缩
 
-1.  看引流朋友圈，一般他们会在朋友圈展示自己的成交，会员制还是啥，有价格展示，成交频率，运营频率（如果朋友圈都发得少说明没啥搞头）
+1. 看引流朋友圈，一般他们会在朋友圈展示自己的成交，会员制还是啥，有价格展示，成交频率，运营频率（如果朋友圈都发得少说明没啥搞头）
 
-1.  看赚钱，搜关键词看看别人有没有在做，有没有相关的情报，如果有可以参考下，如果没有你也沉思一下，是不好做，还是暂时没人做
+1. 看赚钱，搜关键词看看别人有没有在做，有没有相关的情报，如果有可以参考下，如果没有你也沉思一下，是不好做，还是暂时没人做
 
-调研表模板：[同行调研表【模版】](https://shengcaiyoushu01.feishu.cn/sheets/VES2sLSSjhT14jtigMyceg4NnPf)
+调研表模板：[`同行调研表【模版】`](`https://shengcaiyoushu01.feishu.cn/sheets/VES2sLSSjhT14jtigMyceg4NnPf`)
 
-![](img/b0cf686d92ff308038904b93a2d0ce90.png)
+![](`img/b0cf686d92ff308038904b93a2d0ce90.png`)
 
 ### 提示违规怎么处理？
 
@@ -148,7 +149,7 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj
 
 +   如果举报的内容不对（就是恶意举报，根本不是这回事），反馈的时候尽量收集好证据（截图之类的），语气柔软一点申诉，申诉成功可以加账号权重，加油。以下是我申诉成功的案例，可以参考一下。
 
-![](img/aa60a71fb8380c3a0209c2d54f28a82d.png)
+![](`img/aa60a71fb8380c3a0209c2d54f28a82d.png`)
 
 ### 什么时间发笔记合适？
 
@@ -230,7 +231,7 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj
 
 答：
 
-86 【制作合集|如何制作合集❓让你的笔记来集合 - 添添爱跳舞(二胎孕中期) | 📕 - 你的生活指南】 😆 64a6G0LjWzzo8OE 😆 https://www.xiaohongshu.com/discovery/item/664de1e400000000160100d6?source=webshare&xhsshare=pc_web&xsec_token=CB1gxGzMwDLwXvK1JtKd0jcqls0GmWiY7Z-5ud2KM85ik=&xsec_source=pc_share
+86 【制作合集|如何制作合集❓让你的笔记来集合 - 添添爱跳舞(二胎孕中期) | 📕 - 你的生活指南】 😆 64a6G0LjWzzo8OE 😆 [`https://www.xiaohongshu.com/discovery/item/664de1e400000000160100d6?source=webshare&xhsshare=pc_web&xsec_token=CB1gxGzMwDLwXvK1JtKd0jcqls0GmWiY7Z-5ud2KM85ik=&xsec_source=pc_share`](`https://www.xiaohongshu.com/discovery/item/664de1e400000000160100d6?source=webshare&xhsshare=pc_web&xsec_token=CB1gxGzMwDLwXvK1JtKd0jcqls0GmWiY7Z-5ud2KM85ik=&xsec_source=pc_share`)
 
 ### 现在📕注销还要等5个工作日吗？
 
@@ -268,7 +269,7 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnfp9jfblg9i7347585swj
 
 📕搜索框直接搜索“大学生”，出来的下拉词条就是可以用的
 
-![](img/a47c6abb3b263191e81a43a8f2b58a85.png)
+![](`img/a47c6abb3b263191e81a43a8f2b58a85.png`)
 
 ### AI教育这个赛道，可以吗？
 
@@ -326,25 +327,25 @@ Ai的制作成本偏高，相对于教辅赛道，肯定是门槛高很多的，
 
 工具：美图秀秀，教程看视频
 
-![](img/8bb97335c3ab7a6c289526463ba2cbe1.png)
+![](`img/8bb97335c3ab7a6c289526463ba2cbe1.png`)
 
-[WeChat_20241023200132.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RQKcbyeyfoo7nnxc91ocnR7Mn9d)
+[`WeChat_20241023200132.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RQKcbyeyfoo7nnxc91ocnR7Mn9d`)
 
 ### 朋友圈图怎么做的？
 
-![](img/e301561d11f256770e956ca156593e58.png)
+![](`img/e301561d11f256770e956ca156593e58.png`)
 
 答：
 
-手机下载软件：https://www.zuotusq.com/index.html#/
+手机下载软件：[`https://www.zuotusq.com/index.html#/`](`https://www.zuotusq.com/index.html#/`)
 
-![](img/ed872fba70db4a18d0fb553ffe65f656.png)
+![](`img/ed872fba70db4a18d0fb553ffe65f656.png`)
 
 ### 如何快速将图片去重，用什么？
 
-🛰️小程序搜   去水印
+🛰️小程序搜 去水印
 
-#小程序://去水印免费工具/GV15ndHmBLLXhiu
+`#小程序://去水印免费工具/GV15ndHmBLLXhiu`
 
 去水印然后自己加贴纸，是最快的，不过有没有效果就要你自己看了，现在📕抓伪原创抓的紧
 
@@ -352,17 +353,17 @@ Ai的制作成本偏高，相对于教辅赛道，肯定是门槛高很多的，
 
 工具：📕，看视频操作
 
-![](img/9d46d9594a63969cabc1c30b73e9c8f3.png)
+![](`img/9d46d9594a63969cabc1c30b73e9c8f3.png`)
 
-[WeChat_20241022210456.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GpBMbH1n3oapgLxk7Pgc6Mz3nMc)
+[`WeChat_20241022210456.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GpBMbH1n3oapgLxk7Pgc6Mz3nMc`)
 
 ios可能是这个界面，但是功能都是一样的
 
-![](img/707654eb2c69a8e47ff178a71a1e5b76.png)
+![](`img/707654eb2c69a8e47ff178a71a1e5b76.png`)
 
 ### 这种有插画+文字的爆款封面图片怎么做？
 
-![](img/b0ab001924b0247777b72cb32f606040.png)
+![](`img/b0ab001924b0247777b72cb32f606040.png`)
 
 答：
 
@@ -370,27 +371,27 @@ ios可能是这个界面，但是功能都是一样的
 
 自己设计就好，功能都在里面，文字啊，贴纸啊，都可以加
 
-![](img/a661bca967303e3900d8612c3f6e3245.png)
+![](`img/a661bca967303e3900d8612c3f6e3245.png`)
 
-[WeChat_20241022202130.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzVHb7pWbo1sApxFEOEcMtZHnjJ)
+[`WeChat_20241022202130.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FzVHb7pWbo1sApxFEOEcMtZHnjJ`)
 
 ### 练字帖的图怎么做？
 
-![](img/a322a02ad90fcbf402e26e2b045ee469.png)
+![](`img/a322a02ad90fcbf402e26e2b045ee469.png`)
 
-![](img/1a390bf0220efa70aeb41c64363f612f.png)
+![](`img/1a390bf0220efa70aeb41c64363f612f.png`)
 
 答：
 
 里面还有很多的在线工具，做📕运营用处很大，有需要的自行保存（感谢群内船员分享）
 
-工具箱原链接：https://tool.lu/
+工具箱原链接：[`https://tool.lu/`](`https://tool.lu/`)
 
-练字帖工具：https://tool.lu/copybook/character.html
+练字帖工具：[`https://tool.lu/copybook/character.html`](`https://tool.lu/copybook/character.html`)
 
-格子纸打印：https://tool.lu/gridpaper/
+格子纸打印：[`https://tool.lu/gridpaper/`](`https://tool.lu/gridpaper/`)
 
-控笔字帖：https://tool.lu/copybook/control.html
+控笔字帖：[`https://tool.lu/copybook/control.html`](`https://tool.lu/copybook/control.html`)
 
 ### 怎么批量给图片加水印呢？
 
@@ -398,9 +399,9 @@ ios可能是这个界面，但是功能都是一样的
 
 工具：美图秀秀，看视频操作
 
-![](img/8e843b72e8a2ad57cdb106c8302d85d1.png)
+![](`img/8e843b72e8a2ad57cdb106c8302d85d1.png`)
 
-[WeChat_20241023200537.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cv84bMzHMou0DExf7DUcGggynld)
+[`WeChat_20241023200537.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cv84bMzHMou0DExf7DUcGggynld`)
 
 ### 如何批量换背景图？
 
@@ -410,13 +411,13 @@ ios可能是这个界面，但是功能都是一样的
 
 把文案输入剪映中，把不同的背景图放在里面，借助视频提取图片的情况下也能秒出N张图
 
-![](img/a9879dff34079ee85ce62fb40d994479.png)
+![](`img/a9879dff34079ee85ce62fb40d994479.png`)
 
-![](img/a325af2c117e9514fb3261b08bbbafcc.png)
+![](`img/a325af2c117e9514fb3261b08bbbafcc.png`)
 
 ### 这种渐变光圈一样的感觉是咋做出来的
 
-![](img/3138bc1797a09a3c20f05a1f701c3b70.png)
+![](`img/3138bc1797a09a3c20f05a1f701c3b70.png`)
 
 答：
 
@@ -432,17 +433,17 @@ ios可能是这个界面，但是功能都是一样的
 
 答：
 
-感谢木木的分享：[航海项目执行路径的100条提效指南1.0](https://q8smv4c9nu.feishu.cn/docx/RO9pdl9f5ojVO5xhBYOcDppqnrh)
+感谢木木的分享：[`航海项目执行路径的100条提效指南1.0`](`https://q8smv4c9nu.feishu.cn/docx/RO9pdl9f5ojVO5xhBYOcDppqnrh`)
 
-![](img/ba6ba955ce3d2f6993b3f19d14f89c98.png)
+![](`img/ba6ba955ce3d2f6993b3f19d14f89c98.png`)
 
 ### 有什么工具可以批量提取标题文案，视频文案，以及抓取评论
 
 答：
 
-你可以看下这个 [航海项目执行路径的100条提效指南1.0](https://q8smv4c9nu.feishu.cn/docx/RO9pdl9f5ojVO5xhBYOcDppqnrh?from=from_copylink)
+你可以看下这个 [`航海项目执行路径的100条提效指南1.0`](`https://q8smv4c9nu.feishu.cn/docx/RO9pdl9f5ojVO5xhBYOcDppqnrh?from=from_copylink`)
 
-![](img/9379f8e0391ac595858db51d38e7e323.png)
+![](`img/9379f8e0391ac595858db51d38e7e323.png`)
 
 ###
 
@@ -460,17 +461,19 @@ ios可能是这个界面，但是功能都是一样的
 
 **笔记引流：**引导推小号名片，让他们看小号的笔记，小号笔记放🛰️号
 
-![](img/c08faa0adff69fd1bd40c80995f47b73.png)
+![](`img/c08faa0adff69fd1bd40c80995f47b73.png`)
 
 **群聊引流：**自己建群，小号发引流图
+
+
+
+# 引流相关问题
 
 ![](img/68a563a7459780f2a3ed48579bfb38b1.png)
 
 ![](img/20fae7112f3b4151eac985e866602730.png)
 
-**新引流方式：**（感谢群内船员分享）
-
-加群问题写联系方式
+## 新引流方式：（感谢群内船员分享）
 
 ![](img/c0eb2b3a1bc1b96bb4ad81671074de16.png)
 
@@ -495,7 +498,6 @@ ios可能是这个界面，但是功能都是一样的
 ![](img/f18abf7234f1a2fa0efa58bd5324ec1f.png)
 
 ### 这个群聊里面跳转是怎么做的？
-
 
 ![](img/ccf07ced2e405102be3e4859453970a3.png)
 
@@ -535,7 +537,7 @@ ios可能是这个界面，但是功能都是一样的
 
 【虚拟资料如何精准引流、高效变现？】小玲老师，推荐2倍速看
 
-https://shengcaiyoushu01.feishu.cn/minutes/obcnxlx84p5foiv9627tkpix?from=from_copylink
+`https://shengcaiyoushu01.feishu.cn/minutes/obcnxlx84p5foiv9627tkpix?from=from_copylink`
 
 直播里提到的话术参考：
 
@@ -629,7 +631,7 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnxlx84p5foiv9627tkpix?from=from_co
 
 【📕虚拟店铺完整版复盘：单天单号变现500+|可矩阵放大，一条龙副业玩法分享给你】
 
-黄岛主的帖子分享给你，讲的很细：https://t.zsxq.com/aPQiY
+黄岛主的帖子分享给你，讲的很细：`https://t.zsxq.com/aPQiY`
 
 ### 店铺卖好资料好，还是🛰️私域卖资料好
 
@@ -649,9 +651,9 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnxlx84p5foiv9627tkpix?from=from_co
 
 怎么看有没有版权：
 
-1.  有无水印
+1. 有无水印
 
-1.  看同行有没有在卖，卖的人有个3个以上，说明能卖
+2. 看同行有没有在卖，卖的人有个3个以上，说明能卖
 
 ### 店铺和私域可以同时在一个账号进行嘛？
 
@@ -689,7 +691,7 @@ https://shengcaiyoushu01.feishu.cn/minutes/obcnxlx84p5foiv9627tkpix?from=from_co
 
 答：
 
-移步星球贴：https://t.zsxq.com/I1RVI
+移步星球贴：`https://t.zsxq.com/I1RVI`
 
 看任推邦，有价位显示，现在夸克拉新最赚7.5一个
 

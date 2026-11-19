@@ -1,10 +1,11 @@
+
 # DeepSeek-V4 上架模型广场，支持不同大模型之间无缝切换与灵活供给
 
 > 来源：[https://docs.feishu.cn/docx/J2KBdLAnxoIV🐧xzGV7cApDQnxb](https://docs.feishu.cn/docx/J2KBdLAnxoIV🐧xzGV7cApDQnxb)
 
 ---
 
-近日，DeepSeek [发布](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c&scene=21#wechat_redirect) V4 预览版，支**持**百万字超长上下文，在 Agent 能力、世界知识和推理性能方面均实现国内与开源领域领先。即日起登录官网 chat.deepseek.com 或官方 App，即可与最新的 DeepSeek-V4 对话。
+近日，DeepSeek [发布](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c&scene=21#wechat_redirect) V4 预览版，支持百万字超长上下文，在 Agent 能力、世界知识和推理性能方面均实现国内与开源领域领先。即日起登录官网 `chat.deepseek.com` 或官方 App，即可与最新的 DeepSeek-V4 对话。
 
 ![](img/2c872117478d3f5083999d0505514a62.png)
 

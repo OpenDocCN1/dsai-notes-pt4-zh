@@ -1,8 +1,9 @@
+
 # 国内外知名视频平台测评
 
 > 来源：[https://aigclena.feishu.cn/docx/MuEcdnmfxoyPQuxfzslcgQhYnxg](https://aigclena.feishu.cn/docx/MuEcdnmfxoyPQuxfzslcgQhYnxg)
 
-# 2024.12.15测评
+## 2024.12.15测评
 
 > xhs地址：https://www.xiaohongshu.com/explore/675e2dd90000000002035887?app_platform=ios&app_version=8.69.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBDx6m7BFTvcxA9QW24ixuM4bJgPa1HKppDf4LWeR6pR4=&author_share=1&xhsshare=WeixinSession&shareRedId=N0tHNkdGSE02NzUyOTgwNjY0OTc1SklB&apptime=1741193187&share_id=d128b70f6daf40acb71a9276fa05e33a&wechatWid=813fcd43dc310a9b0143e20ea8645397&wechatOrigin=menu
 
@@ -12,19 +13,19 @@ A close-up captures a vibrant green praying mantis perched on a leaf. Its forele
 
 ![](img/241423af9173c1d0e6ca88e3323fe8b6.png)
 
-[323981542313504776.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I0X0brnxvoqKTdxKwaycxyq6nLf)
+[`323981542313504776.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/I0X0brnxvoqKTdxKwaycxyq6nLf)
 
 海螺
 
 ![](img/9657c78933f0aedaf3003871bf9c9d32.png)
 
-[高品质_16x9_特写镜头捕捉到一只栖息在树叶上的鲜绿色螳螂_它的前腿正抓着一只小.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HMtAb8bW7oQ9v6xFA1Kcyqhsnve)
+[`高品质_16x9_特写镜头捕捉到一只栖息在树叶上的鲜绿色螳螂_它的前腿正抓着一只小.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HMtAb8bW7oQ9v6xFA1Kcyqhsnve)
 
 kling
 
 ![](img/dc4149b1731bc78363d9783f6572c999.png)
 
-[Gen-3 Alpha 3786885043, A close-up captures , M 5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TU2TbceQ1oKxb2xmGTcctgTTnBc)
+[`Gen-3 Alpha 3786885043, A close-up captures , M 5.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TU2TbceQ1oKxb2xmGTcctgTTnBc)
 
 runway
 
@@ -36,19 +37,19 @@ sora
 
 ![](img/e2a721e1f212e0ea5ce68f1636f1ae3c.png)
 
-[323982119718187009.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gm5AbvSL7oKcZ4xd00Ncb9XonZc)
+[`323982119718187009.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Gm5AbvSL7oKcZ4xd00Ncb9XonZc)
 
 hailuo
 
 ![](img/2db44e5a389062bcf7937489f70f8ce6.png)
 
-[高品质_16x9_A_wide_angle_view_of_a_serene_gr.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NKs1bYGYpoRDLKxXhBhc63VNnch)
+[`高品质_16x9_A_wide_angle_view_of_a_serene_gr.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NKs1bYGYpoRDLKxXhBhc63VNnch)
 
 kling
 
 ![](img/80d231595a86fea1d021113aebc5b3cb.png)
 
-[Gen-3 Alpha 3755044793, The camera captures , M 5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RLheb0mWuoZXwLxlujFcl822nRg)
+[`Gen-3 Alpha 3755044793, The camera captures , M 5.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RLheb0mWuoZXwLxlujFcl822nRg)
 
 Runway gen3
 
@@ -56,29 +57,29 @@ A cute hamster wearing a Santa hat walking in the snow
 
 ![](img/6dec51965479b7a122ab5dd08994a071.png)
 
-[Gen-3 Alpha 3199713049, A cute hamster weari, M 5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RzupbTPfCo057YxfCiBcdA28nLe)
+[`Gen-3 Alpha 3199713049, A cute hamster weari, M 5.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RzupbTPfCo057YxfCiBcdA28nLe)
 
 Runway gen3
 
 ![](img/adb45d045db5301f4168d206498cf10a.png)
 
-[高品质_16x9_A_cute_hamster_wearing_a_Santa_h.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TmlBbOu23o6VB1xlqoFcwg2tnbh)
+[`高品质_16x9_A_cute_hamster_wearing_a_Santa_h.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TmlBbOu23o6VB1xlqoFcwg2tnbh)
 
 kling
 
 ![](img/ff374f8013f5107a3c4d3737597e5447.png)
 
-[323982564167618566.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WN5DbDFDqoUCEYxG2iZcR3CTn8d)
+[`323982564167618566.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WN5DbDFDqoUCEYxG2iZcR3CTn8d)
 
 hailuo
 
 ![](img/cf28653ceedced386edacca90fdaf7d2.png)
 
-[2024-12-13 22-41-33.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AG0kbOGMDowA4yxaQDPcdtupnLc)
+[`2024-12-13 22-41-33.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AG0kbOGMDowA4yxaQDPcdtupnLc)
 
 sora
 
-# 2024.12.4评测
+## 2024.12.4评测
 
 > https://www.xiaohongshu.com/explore/6709eac4000000001a022996?app_platform=ios&app_version=8.69.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBcnSdeke1X331QYNoTkp4lt8dCuQaou72h7od5MB6ssU=&author_share=1&xhsshare=WeixinSession&shareRedId=N0tHNkdGSE02NzUyOTgwNjY0OTc1SklB&apptime=1741193058&share_id=2791afe8698c489bbffafd385b63c0b3&wechatWid=813fcd43dc310a9b0143e20ea8645397&wechatOrigin=menu 📕链接，观看更流畅
 
@@ -88,7 +89,7 @@ sora
 
 话不多说开测吧，测评平台：可灵、海螺、vidu、通义万相、即梦。图片均Midjourney里生成，视频生成时间9.29。提示词是通义的增强提示词功能写的，个人感觉加的冗长的氛围词用处不大。
 
-1.  老虎打闹【两只世界上最小的老虎正在人的掌心里挠头、打闹、互相玩耍，表情非常可爱。】
+1. 老虎打闹【两只世界上最小的老虎正在人的掌心里挠头、打闹、互相玩耍，表情非常可爱。】
 
 说明:输入中文提示词，被通义系统提示无法提交，不太清楚犯规的点，可能是老虎打闹？不过换成英文后就可以提交。为了准确性所有平台都是用的英文提示词：Two of the world's smallest tigers scratching their heads in people's palms, fighting, playing with each other, very cute expressions
 
@@ -112,7 +113,7 @@ vidu：语义理解92  眼睛有点问题
 
 语义理解80 画面没怎么动 眼睛有点问题
 
-1.  太空小娃弹吉他【超现实的场景中，一个萌趣横生的太空小娃正悠然自得地在月球表面弹吉他，为这片宇宙增添了几分梦幻与诗意。】
+1. 太空小娃弹吉他【超现实的场景中，一个萌趣横生的太空小娃正悠然自得地在月球表面弹吉他，为这片宇宙增添了几分梦幻与诗意。】
 
 ![](img/dba3e1324d0944b74ae6469f6992269b.png)
 
@@ -134,7 +135,7 @@ vidu：语义理解96 鼻梁有点问题
 
 语义理解94
 
-1.  黑豹机器人变身人类【奇幻城市废墟超现实场景，一只黑豹机器人站立起来，变身为人类，在残破的城市行走，充满了神秘与杀气】
+1. 黑豹机器人变身人类【奇幻城市废墟超现实场景，一只黑豹机器人站立起来，变身为人类，在残破的城市行走，充满了神秘与杀气】
 
 ![](img/629c47621c32e46b95f0686e121b1eac.png)
 
@@ -154,7 +155,7 @@ c
 
 即梦调整过几次提示词 还是生成不出来 只好放弃了
 
-1.  兔子吃草莓【人的掌心里小兔子拿着草莓在吃，生动活泼的场面，显得兔子十分可爱机灵。】
+1. 兔子吃草莓【人的掌心里小兔子拿着草莓在吃，生动活泼的场面，显得兔子十分可爱机灵。】
 
 这句提示提比较简单，每个平台都能画出来，看来写提示词的时候应该注意，用简洁的语言表达，不要加冗长的废话。
 
@@ -168,7 +169,7 @@ c
 
 ![](img/9c9b2baa10bf2202fa9115d06e70e956.png)
 
-1.  工程师和猪说话【一位工程师和猪在对话，他温柔地抚摸着小猪的头部，眼神中流露出深深的怜爱和喜悦，仿佛在看待自己的孩子一般。这种亲密无间的交流，展现出人与动物之间的温情脉脉，整个场景充满了和谐与欢乐。】
+1. 工程师和猪说话【一位工程师和猪在对话，他温柔地抚摸着小猪的头部，眼神中流露出深深的怜爱和喜悦，仿佛在看待自己的孩子一般。这种亲密无间的交流，展现出人与动物之间的温情脉脉，整个场景充满了和谐与欢乐。】
 
 Midjourney生成出来的这个小怪物，我也不知道怎么形容，于是取了鼻子的型，称其为猪，不过这个称呼影响并不大，除了通义画了一只猪耳朵出来。
 
@@ -192,7 +193,7 @@ Midjourney生成出来的这个小怪物，我也不知道怎么形容，于是�
 
 语义理解90
 
-1.  草原骑马【无垠的蓝天与悠闲的白云，气球漫天飞舞，一群骑手驾驭骏马驰骋过绿茵茵的草原，增添了动态与欢乐的气息，构成一幅生动的户外活动画卷。营造出一片自由自在的氛围】
+1. 草原骑马【无垠的蓝天与悠闲的白云，气球漫天飞舞，一群骑手驾驭骏马驰骋过绿茵茵的草原，增添了动态与欢乐的气息，构成一幅生动的户外活动画卷。营造出一片自由自在的氛围】
 
 评判标准：1气球飞舞、2骑马
 
@@ -228,12 +229,10 @@ Midjourney生成出来的这个小怪物，我也不知道怎么形容，于是�
 
 当然了这只是国内的情况，数一数二可能还得是Runway和Luma/dream-machine，期待国货做大做强，走向世界之巅~
 
-2024.10.12
-
-#
+## 2024.10.12
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/37337bd2bc281c0240099b43d486d3c3.png)

@@ -1,16 +1,17 @@
+
 # 2024 年 1 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/NWOKd8RRboKN74x2j5Kc4fuanzf](https://docs.feishu.cn/docx/NWOKd8RRboKN74x2j5Kc4fuanzf)
 
 ---
 
-# **一、法律科技融资动态**
+## 一、法律科技融资动态
 
-## **AI 合同起草审查服务商 Robin **AI 完成 2600 万美元 B 轮融资
+### AI 合同起草审查服务商 Robin AI 完成 2600 万美元 B 轮融资
 
 1 月 2 日，生成式 AI 合同起草审查服务商 Robin AI 宣布完成 2600 万美元 B 轮融资，本轮融资由 Temasek 领投，AFG Partners、Plural 和 QuantumLight 跟投。
 
-Rob[in](https://www.law.com/legaltechnews/2023/11/08/legal-tech-rundown-thomson-reuters-updated-gen-ai-strategy-lex-machina-expansion-and-more/) AI 是一家总部位于伦敦的法律科技初创公司，创立于 201[9 年，提供“AI](https://www.law.com/legaltechnews/2023/05/10/luminance-rolls-out-generative-ai-powered-chatbot-ask-lumi-for-corporate-customers/) [Copilot”，](https://www.law.com/legaltechnews/2023/08/22/spellbook-adds-to-its-ai-suite-with-gen-ai-powered-spellbook-reviews/)利[用 Anthrop](https://www.law.com/legaltechnews/2023/10/20/spotdraft-launches-generative-ai-powered-contract-review-tool-verifai/)i[c 的生成式 A](https://www.law.com/legaltechnews/2023/04/11/ironclad-publicly-launches-ai-assist-now-powered-by-gpt-4/)I[ 模型 Cla](https://www.law.com/legaltechnews/2023/04/24/tokyo-based-contract-review-startup-launches-in-u-s-unveils-gpt-4-powered-contract-editing-tool-397-71403/)ude[ 和专有 AI 系统来自动](https://www.law.com/legaltechnews/2023/10/04/clm-provider-contractpodai-grow-generative-ai-offerings-for-non-contract-teams/)起草合同起草、审查和数据提取。2023 年 10 月，Robin AI 推出 AI Copilot 的 Microsoft Word 插件。除了 Robin AI ，去年还有 Luminance、Spellbook、Spotdraft、Ironclad、LegalOn 和 ContractPodAi 等许多 CLM 公司都推出了生成式 AI 的功能和产品。
+Robin AI 是一家总部位于伦敦的法律科技初创公司，创立于 2019 年，提供“AI Copilot”，利用 Anthropic 的生成式 AI 模型 Claude 和专有 AI 系统来自动起草合同、审查和数据提取。2023 年 10 月，Robin AI 推出 AI Copilot 的 Microsoft Word 插件。除了 Robin AI，去年还有 Luminance、Spellbook、Spotdraft、Ironclad、LegalOn 和 ContractPodAi 等许多 CLM 公司都推出了生成式 AI 的功能和产品。
 
 与大多数使用 OpenAI GPT-4 大模型的 CLM 厂商不同，Robin AI 是少数公开使用 Anthropic Claude 大模型的公司之一。Robin AI 的 CEO Robinson 表示：“我们发现 Claude 可以与我们所有核心用例相匹配。此外，人们确实非常关注安全。结果是，当提示和微调正确时，Claude 非常好，在不回答它不知道答案的问题方面非常好。”
 
@@ -18,15 +19,15 @@ Robinson 补充说，另一个安全优势是 Anthropic 与亚马逊的 AWS 云�
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/02/generative-ai-assistant-for-contracts-robin-ai-raises-26-million-series-b-funding/
 
-## 法律 AI 初创公司 CallidusAI 完成新一轮融资
+### 法律 AI 初创公司 CallidusAI 完成新一轮融资
 
-1 月 [23 日，生成式 ](https://www.law.com/legaltechnews/2023/09/22/generative-ai-legal-research-startup-paxton-ai-secures-6-million-in-seed-funding/)AI 法律初创公司 CallidusAI 宣布完成新一轮融资，本轮融资的领投方是由斯坦福大学教授、Google Brain、Landing AI 和 DeepLearning.AI 创始人 Andrew Ng 创立的人工智能（AI）基金。2023 年 9 月，该基金还投资了另一家法律 AI 初创公司 Paxton AI，该公司提供具有自动文档摘要和起草能力的法律研究平台。
+1 月 23 日，生成式 AI 法律初创公司 CallidusAI 宣布完成新一轮融资，本轮融资的领投方是由斯坦福大学教授、Google Brain、Landing AI 和 DeepLearning.AI 创始人 Andrew Ng 创立的人工智能（AI）基金。2023 年 9 月，该基金还投资了另一家法律 AI 初创公司 Paxton AI，该公司提供具有自动文档摘要和起草能力的法律研究平台。
 
 本轮融资于 2023 年 12 月完成，投资方包括老股东和新投资人，财务细节没有披露。CallidusAI 于 2023 年创立，提供一套生成式 AI 法律解决方案，包括法律研究与合同相关的能力，比如红线标记、总结和起草等。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/23/gen-ai-legal-startup-callidusai-raises-investment-led-by-andrew-ngs-ai-fund/
 
-## **AI 合同起草审查服务商 Spellbo**ok 完成 2000 万美元 A 轮融资
+### AI 合同起草审查服务商 Spellbook 完成 2000 万美元 A 轮融资
 
 1 月 24 日，生成式 AI 合同起草审查服务商 Spellbook 宣布完成 2000 万美元 A 轮融资，本轮融资由 Inovia Capital 领投，现有投资者 Thomson Reuters Ventures、The LegalTech Fund 和 Moxxie Ventures 跟投。
 
@@ -36,27 +37,27 @@ Spellbook 的联合创始人兼 CEO Scott Stevenson 表示，该公司将利用�
 
 同时，Spellbook 还希望扩展“端到端的工作流程......从客户向您提出问题、要求启动交易或者您获得条款表的第一刻起，一直到交付最终结果。从客户的电子邮件开始，然后以客户的电子邮件结束。”
 
-不到一年前，[Spellbook](https://www.law.com/legaltechnews/2023/05/25/legal-tech-startup-spellbook-raises-10-9-million-with-thomson-reuters-investing/) 完成 [1090 万美元](https://www.law.com/legaltechnews/2023/05/25/legal-tech-startup-spellbook-raises-10-9-million-with-thomson-reuters-investing/)的新一轮融资。随后，该公司还[宣布](https://www.law.com/legaltechnews/2023/06/27/generative-ai-contract-platform-spellbook-launches-free-ai-access-program-for-law-schools/)推出一项针对法学院学生和教师的全球教育计划，并推出一个名为 Spellbook Reviews 的生成式 AI 合同审查解决方案。
+不到一年前，Spellbook 完成 1090 万美元的新一轮融资。随后，该公司还宣布推出一项针对法学院学生和教师的全球教育计划，并推出一个名为 Spellbook Reviews 的生成式 AI 合同审查解决方案。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/24/spellbook-raises-20-million-in-series-a-funding-plans-new-ai-capabilities-platform-expansion/
 
-## **流程服务、电子归档技术服务商 Pro**of 完成 3040 万美元 B 轮融资
+### 流程服务、电子归档技术服务商 Proof Technologies 完成 3040 万美元 B 轮融资
 
-1 月 [25 日，流程服务](https://www.law.com/legaltechnews/2024/01/24/spellbook-raises-20-million-in-series-a-funding-plans-new-ai-capabilities-platform-expansion/)、电子归档技术服务商 Proof Technologies 宣布完成 3040 万美元 B 轮融资，本轮融资由 Long Ridge Equity Partners 领投，Blue Heron Capital 和 The LegalTech Fund 跟投 —— 值得注意的是，这两家投资机构最近还投资了合同起草和谈判平台服务商 Spellbook 以及 AI 合同协作平台 The Contract Network。
+1 月 25 日，流程服务、电子归档技术服务商 Proof Technologies 宣布完成 3040 万美元 B 轮融资，本轮融资由 Long Ridge Equity Partners 领投，Blue Heron Capital 和 The LegalTech Fund 跟投 —— 值得注意的是，这两家投资机构最近还投资了合同起草和谈判平台服务商 Spellbook 以及 AI 合同协作平台 The Contract Network。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/25/service-of-process-e-filing-tech-provider-proof-technologies-announces-30-4-million-investment/
 
-## **AI 电子发现初创公司 Beag**leTM 完成 300 万美元种子轮融资
+### AI 电子发现初创公司 BeagleTM 完成 300 万美元种子轮融资
 
-[近日，AI 原生](https://discoverbeagle.com/)（自称）的电子发现初创公司 BeagleTM 宣布完成 300 万美元的种子轮融资，本轮融资由 ML Capital 领投，Davidovs Venture Collective（DVC）基金和 Hugging Face 联创 Thomas Wolf 等跟投。
+近日，AI 原生（自称）的电子发现初创公司 BeagleTM 宣布完成 300 万美元的种子轮融资，本轮融资由 ML Capital 领投，Davidovs Venture Collective（DVC）基金和 Hugging Face 联创 Thomas Wolf 等跟投。
 
 Beagle 成立于 2021 年，通过利用大模型，来简化法律争议和调查中的文档收集、分析和交换过程，可以大幅减少人工审查工作，节省高达 3 倍的成本（据称）。
 
 > 拓展阅读：https://legaltechnology.com/2024/01/30/ai-ediscovery-startup-beagletm-secures-3m-in-seed-funding/
 
-# **二、法律 AI 产品动态**
+## 二、法律 AI 产品动态
 
-## **合同管理和自动化平台 SpotDr**afts 推出生成式 AI 合同审查产品
+### 合同管理和自动化平台 SpotDrafts 推出生成式 AI 合同审查产品
 
 1 月 4 日，合同管理和自动化平台 SpotDrafts 正式发布 AI 合同审查产品 Verifai，以供广大用户免费试用，旨在帮助企业快速、准确地分析和审查合同。该产品于 2023 年 10 月推出。
 
@@ -66,41 +67,41 @@ Beagle 成立于 2021 年，通过利用大模型，来简化法律争议和调�
 
 > 来源：legalitprofessionals
 
-## **集体诉讼索赔管理和反欺诈解决方案服务商 Clai**mScore 推出 AI 反欺诈解决方案
+### 集体诉讼索赔管理和反欺诈解决方案服务商 ClaimScore 推出 AI 反欺诈解决方案
 
 1 月 3 日，集体诉讼索赔管理和反欺诈解决方案服务商 ClaimScore 宣布推出一个 AI 反欺诈解决方案。该公司使用经过训练后的 AI 算法，以识别可能逃脱索赔者的欺诈标准，然后通过交互式仪表板显示给索赔管理员。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/10/legaltech-rundown-hogal-lovells-launches-an-ai-chatbot-new-lexisnexis-hire-and-more/
 
-## 电子发现公司 Reveal 推出生成式 AI 查询功能
+### 电子发现公司 Reveal 推出生成式 AI 查询功能
 
-1 月 10 日消息，电子发现（ediscovery）服务商 Reveal 宣布推出一个名为“Ask”的生成式 AI 查询功能，支持法律专业人士通过自然语言查询其案件的信息。
+1 月 10 日消息，电子发现（ediscovery）服务商 Reveal 宣布推出一个名为 `Ask` 的生成式 AI 查询功能，支持法律专业人士通过自然语言查询其案件的信息。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/10/reveal-announces-ask-first-generative-ai-product-of-many-releases-planned/
 
-## 合同管理公司 Agiloft 推出生成式 AI 合同标注功能
+### 合同管理公司 Agiloft 推出生成式 AI 合同标注功能
 
-[1 月 9 日](https://www.agiloft.com/)消息，合同生命周期管理（CLM）服务商 Agiloft 宣布推出一个生成式 AI 合同标注（redline）功能，可以支持对合同条款进行智能红线更改，当第三方条款与公司的标准条款存在显著差异时，AI 可以进行智能标注，从而加快谈判过程。据了解，该功能建立在 Agiloft 去年 8 月推出的 AI 合同平台之上。目前，Agiloft 正在使用 OpenAI 的 GPT-3.5 大模型进行微调，同时也在测试其他模型。未来，Agiloft 将在合适的用例中使用表现最好的模型。
+1 月 9 日消息，合同生命周期管理（CLM）服务商 Agiloft 宣布推出一个生成式 AI 合同标注（`redline`）功能，可以支持对合同条款进行智能红线更改，当第三方条款与公司的标准条款存在显著差异时，AI 可以进行智能标注，从而加快谈判过程。据了解，该功能建立在 Agiloft 去年 8 月推出的 AI 合同平台之上。目前，Agiloft 正在使用 OpenAI 的 GPT-3.5 大模型进行微调，同时也在测试其他模型。未来，Agiloft 将在合适的用例中使用表现最好的模型。
 
 > 拓展阅读：https://legaltechnology.com/2024/01/09/agiloft-launches-gen-ai-redline-capability-to-speed-up-contract-negotiation/
 
-注：在合同场景中，“redline”通常是指对合同文档所做的标记和修改。
+注：在合同场景中，`redline`通常是指对合同文档所做的标记和修改。
 
 这些修改可能包括文字的增删、条款的更正或者其他形式的编辑，目的是指出合同中的差异或者提出修改建议。在进行合同谈判或审核时，各方可能会使用红色或其他醒目的颜色高亮显示这些更改，这种做法有助于突出显示修改内容，使其他人能够快速识别和审查这些变更。
 
-在实际操作中，“redlining”通常涉及使用专门的软件工具来比较和对照不同版本的合同。这些工具可以帮助用户直观地看到哪些部分被添加了，哪些被删除了，哪些地方经过了重新组织。这种透明化的处理方式，对于确保所有相关方都明白合同条款的变化并同意这些改动至关重要。
+在实际操作中，`redlining`通常涉及使用专门的软件工具来比较和对照不同版本的合同。这些工具可以帮助用户直观地看到哪些部分被添加了，哪些被删除了，哪些地方经过了重新组织。这种透明化的处理方式，对于确保所有相关方都明白合同条款的变化并同意这些改动至关重要。
 
-此外，“redlining”与“blacklining”密切相关，尽管后者不那么常见。“blacklining”实质上也是指标记和追踪文档中的更改，不过具体使用哪种颜色可能因上下文和文化习惯而有所不同。在某些情况下，“blacklining”可能特指将最终确定的合同版本转换为无法修改的格式，比如 PDF，以确保合同内容的固定性和防篡改性。
+此外，`redlining`与`blacklining`密切相关，尽管后者不那么常见。`blacklining`实质上也是指标记和追踪文档中的更改，不过具体使用哪种颜色可能因上下文和文化习惯而有所不同。在某些情况下，`blacklining`可能特指将最终确定的合同版本转换为无法修改的格式，比如 PDF，以确保合同内容的固定性和防篡改性。
 
-总的来说，无论是“redlining”还是“blacklining”，这些术语都指向了合同管理中的一个重要环节 —— 清晰地记录和展示合同文档中的每一处变动，这对于合同的正确理解和后续执行都至关重要。
+总的来说，无论是`redlining`还是`blacklining`，这些术语都指向了合同管理中的一个重要环节 —— 清晰地记录和展示合同文档中的每一处变动，这对于合同的正确理解和后续执行都至关重要。
 
-## **CLM 服务商 LinkSquares 推出基于生成式 AI** 的 Redlining 和项目管理功能
+### CLM 服务商 LinkSquares 推出基于生成式 AI 的 Redlining 和项目管理功能
 
-1 月 16 日，合同生命周期管理（CLM）服务商 LinkSquares 公布其 2024 年的生成式 AI 战略，将生成式 AI 集成到其产品中，并宣布即将推出两个新功能：AI-Assisted Redlining 和 AI-Suggested Subtasks。
+1 月 16 日，合同生命周期管理（CLM）服务商 LinkSquares 公布其 2024 年的生成式 AI 战略，将生成式 AI 集成到其产品中，并宣布即将推出两个新功能：`AI-Assisted Redlining` 和 `AI-Suggested Subtasks`。
 
-据了解，AI-Assisted Redlining 是一个生成式 AI 合同标注功能，将集成到 LinkSquares Finalize for Word（该公司的合同管理平台）；而 AI-Suggested Subtasks 则是 LinkSquares Prioritize（该公司的法律任务管理平台）中新的法律项目管理能力。
+据了解，`AI-Assisted Redlining` 是一个生成式 AI 合同标注功能，将集成到 LinkSquares Finalize for Word（该公司的合同管理平台）；而 `AI-Suggested Subtasks` 则是 LinkSquares Prioritize（该公司的法律任务管理平台）中新的法律项目管理能力。
 
-AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议中的潜在风险，提供改进合同语言的建议等能力。用户还可以向系统提问，要求在合同中生成红线建议。该公司试图通过让用户批准或拒绝任何建议的红线和更改，以保持该技术“人在循环中的方法论”。同时借助 AI-Suggested Subtasks，LinkSquares 试图通过自动生成完成重复性任务的步骤，比如批准新的人力资源政策，从而简化模板工作流程。
+`AI-Assisted Redlining` 可检测偏离公司标准的合同条款，识别协议中的潜在风险，提供改进合同语言的建议等能力。用户还可以向系统提问，要求在合同中生成红线建议。该公司试图通过让用户批准或拒绝任何建议的红线和更改，以保持该技术“人在循环中的方法论”。同时借助 `AI-Suggested Subtasks`，LinkSquares 试图通过自动生成完成重复性任务的步骤，比如批准新的人力资源政策，从而简化模板工作流程。
 
 > 拓展阅读：
 
@@ -108,27 +109,31 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 > https://www.law360.com/pulse/legal-tech/articles/1785751/linksquares-adds-generative-ai-functionality-to-products
 
-## 法律科技公司 Epiq 推出 AI 合规解决方案
+### 法律科技公司 Epiq 推出 AI 合规解决方案
 
 1 月 17 日，法律科技和服务公司 Epiq 发布了一个 AI 监管风险洞察合规解决方案。据了解，该解决方案将 AI 和“实质性的专业知识”进行结合，旨在帮助公司法律部门实时识别和评估组织风险。该解决方案可以扫描对话，发现可能会给公司带来风险的信息，并将其呈现给分析师。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/19/legal-tech-rundown-epiq-launches-compliance-solution-new-unitedlex-appointment-and-more/
 
-## 汤森路透推出一系列新的生成式 AI 功能
+### 汤森路透推出一系列新的生成式 AI 功能
 
 1 月 24 日，汤森路透宣布在法律起草和法律研究平台 Practical Law 中发布两个生成式 AI 功能，同时扩展 CoCounsel Core 产品。
 
 具体来看：
 
-1.  Ask Practical Law AI：一个对话功能，为用户输入的研究问题提供答案。该答案通常是工具参考的研究摘要，包括超链接脚注，用户可以点击脚注追溯到源材料，这对解决生成式 AI 产品所困扰的“幻觉”问题特别有用。接下来该工具将使用包括 What's Market Analytics 和 Quick Compare 等数据集进行训练，并将最终集成到汤森路透的 AI 起草解决方案中。
 
-1.  Practical Law Clause Finder：支持用户从**法**律数据库中查找、添加和编辑行业通用的协议模板、条款和客户自己的内部文件，而且可上传到他们的草案中，减少在文档中手动搜索和起草的耗时任务。
 
-1.  CoCounsel Core Expansion：这是汤森路透收购 CoCounsel Core 所在的母公司 Casetext 后在 Westlaw 的集成。现在该产品将推广到包括加拿大和澳大利亚在内的一系列英语国家。
+# 二、法律科技产品与服务动态
+
+1. Ask Practical Law AI：一个对话功能，为用户输入的研究问题提供答案。该答案通常是工具参考的研究摘要，包括超链接脚注，用户可以点击脚注追溯到源材料，这对解决生成式 AI 产品所困扰的“幻觉”问题特别有用。接下来该工具将使用包括 What's Market Analytics 和 Quick Compare 等数据集进行训练，并将最终集成到汤森路透的 AI 起草解决方案中。
+
+1. Practical Law Clause Finder：支持用户从法律数据库中查找、添加和编辑行业通用的协议模板、条款和客户自己的内部文件，而且可上传到他们的草案中，减少在文档中手动搜索和起草的耗时任务。
+
+1. CoCounsel Core Expansion：这是汤森路透收购 CoCounsel Core 所在的母公司 Casetext 后在 Westlaw 的集成。现在该产品将推广到包括加拿大和澳大利亚在内的一系列英语国家。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/24/thomson-reuters-announces-new-gen-ai-features-within-practical-law-cocounsel-core-expansion/
 
-## **ELM 和 CLM 服务商 Onit **为法务部门推出生成式 AI 法律运营助理
+## ELM 和 CLM 服务商 Onit 为法务部门推出生成式 AI 法律运营助理
 
 1 月 23 日，企业法律管理（ELM）和合同生命周期管理（CLM）服务商 Onit 推出一个名为 Catalyst Virtual Assistant for Legal Operations 的 AI 律师助手，可自动填充法律服务或合同相关的需求；根据存储在 OnitX 平台中的法律服务请求、事项和合同数据来回答问题；起草后续的电子邮件并总结导入的电子邮件；翻译不同语言等。
 
@@ -148,19 +153,19 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 1 月 24 日，金融和法律科技公司 AffiniPay 推出一个名为 AffiniPay IQ 的生成式 AI 功能，包括两个功能：文档摘要和文本编辑。
 
-在[过去的](https://www.law.com/legaltechnews/2022/06/09/lawpay-parent-company-acquires-mycase-integrating-case-management-with-digital-payment/)两年里，Affin[iPay 一](https://www.law.com/legaltechnews/2022/05/02/mycase-launches-document-repository-mycase-drive-new-logo-and-website/)[直在努力弥合法律计费](https://www.law.com/legaltechnews/2023/02/27/lawpay-launches-lawpay-pro-new-stepping-stone-between-billing-practice-management/)和实践管理之间的差距。2022 年 6 月，AffiniPay 收购了法律实践管理软件 MyCase。2023 年 2 月，LawPay 发布了一个名为 LawPay Pro 的法律计费解决方案。
+在[过去的](https://www.law.com/legaltechnews/2022/06/09/lawpay-parent-company-acquires-mycase-integrating-case-management-with-digital-payment/)两年里，[AffiniPay](https://www.law.com/legaltechnews/2022/05/02/mycase-launches-document-repository-mycase-drive-new-logo-and-website/)一直在努力[弥合法律计费](https://www.law.com/legaltechnews/2023/02/27/lawpay-launches-lawpay-pro-new-stepping-stone-between-billing-practice-management/)和实践管理之间的差距。2022 年 6 月，AffiniPay 收购了法律实践管理软件 MyCase。2023 年 2 月，LawPay 发布了一个名为 LawPay Pro 的法律计费解决方案。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/24/affinipay-rolls-platform-wide-gen-ai-capabilities-with-affinipay-iq/
 
-## **电子发现服务商 Relativit**y 将推出两款生成式 AI 解决方案套件
+## 电子发现服务商 Relativity 将推出两款生成式 AI 解决方案套件
 
-近日，电子发现服务商 Relativity 宣布将在 Relativity aiR 中推出两个生成式 AI 解决方案套件：airR for Case Strategy 和 aiR for Privilege，以扩大 aiR 的可用性。
+近日，电子发现服务商 Relativity 宣布将在 Relativity aiR 中推出两个生成式 AI 解决方案套件：aiR for Case Strategy 和 aiR for Privilege，以扩大 aiR 的可用性。
 
-其中，airR for Case Strategy 利用生成式 AI，可以自动将事实按优先顺序排列、创建案例摘要和生成视觉事实时间顺序，来构建案例故事；aiR for Privilege 利用生成式 AI，通过区分律师及其客户之间的通信和非特权文件，来自动进行首次通过特权审查，从而帮助用户更好地理解特权背后的决策。
+其中，aiR for Case Strategy 利用生成式 AI，可以自动将事实按优先顺序排列、创建案例摘要和生成视觉事实时间顺序，来构建案例故事；aiR for Privilege 利用生成式 AI，通过区分律师及其客户之间的通信和非特权文件，来自动进行首次通过特权审查，从而帮助用户更好地理解特权背后的决策。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/29/relativity-announces-upcoming-gen-ai-relativity-air-products-relativityone-updates/
 
-## **电子发现服务商 HaystackID 宣布扩展其 Pro**tect Analytics AI 套件
+## 电子发现服务商 HaystackID 宣布扩展其 Protect Analytics AI 套件
 
 1 月 29 日，电子发现服务商 HaystackID 宣布扩展其 Protect Analytics AI 套件，该套件支持识别、分析和报告大型非结构化数据集中的敏感信息。据了解，该工具扩展将包括数据可视化、可定制的风险类别、敏感数据密度评分和容器化部署。
 
@@ -188,7 +193,7 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 ## Winston & Strawn 律师事务所成立 AI 战略小组
 
-1 月 24 日，Winston & S[trawn 律师事务所成](https://www.winston.com/en/capabilities/sectors/artificial-intelligence-ai)立了一个人工智能（AI）战略小组。秉承着 Winston 在法律和技术交叉领域思想领导力的传统，该小组将负责协调各行业在采纳和规范 AI 方面，全方位的交易、诉讼、监管和咨询服务，并特别关注生成式 AI。
+1 月 24 日，[Winston & Strawn 律师事务所](https://www.winston.com/en/capabilities/sectors/artificial-intelligence-ai)成立了一个人工智能（AI）战略小组。秉承着 Winston 在法律和技术交叉领域思想领导力的传统，该小组将负责协调各行业在采纳和规范 AI 方面，全方位的交易、诉讼、监管和咨询服务，并特别关注生成式 AI。
 
 该小组汇集了 Winston 所有核心实践领域的律师和技术专家，他们在提供法律服务时应用 AI 以及就其使用为客户提供咨询方面都有经验。该小组将利用这些经验来监测 AI 领域的法律和技术发展，以满足客户各种需求，比如管理不断变化的监管环境、起草政策和程序、处理通过使用 AI 出现的新诉讼原因。
 
@@ -198,7 +203,7 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 ## Wilson Sonsini 律师事务所发布合规工具
 
-近[日，Wilson](https://www.law.com/americanlawyer/2019/02/05/wilson-sonsini-launches-software-developer-subsidiary-to-automate-legal-services/) Sonsini Goodrich & Rosati PC 律师事务所的法律科技子公司 Sixfifty 发布了一个免费的合规工具，帮助企业确定是否需要根据新的联邦法规向美国政府提交公司所有权结构的相关信息。
+近日，[Wilson Sonsini Goodrich & Rosati PC](https://www.law.com/americanlawyer/2019/02/05/wilson-sonsini-launches-software-developer-subsidiary-to-automate-legal-services/)律师事务所的法律科技子公司 Sixfifty 发布了一个免费的合规工具，帮助企业确定是否需要根据新的联邦法规向美国政府提交公司所有权结构的相关信息。
 
 ## Taylor Wessing 律师事务所推出专有生成式 AI 工具
 
@@ -212,11 +217,11 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/10/south-koreas-shin-kim-hires-senior-advisers-to-launch-new-offering-on-ai-397-80804/
 
-## **Fisher Phillips 律师事务所收购知识**管理公司 Blue Pencil Box
+## Fisher Phillips 律师事务所收购知识管理公司 Blue Pencil Box
 
-近日，国际劳工和就业律师事务所 Fisher[ Phillips 收购了法律](https://www.bluepencilbox.com/)科技公司 Blue Pencil Box，该公司提供知识管理解决方案，协助公司起草、管理和分析非竞争协议和其他限制性契约。
+近日，国际劳工和就业律师事务所 Fisher Phillips 收购了法律科技公司 Blue Pencil Box，该公司提供知识管理解决方案，协助公司起草、管理和分析非竞争协议和其他限制性契约。
 
-[据了解，Blue Pe](https://www.fpsolutions.com/)ncil Box 产品将隶属于 fpSOLUTIONS，这是一个创新的新公司，提供可轻松访问、具有成本效益的人力资源解决方案，包括可定制的文档、清单、表格、手册和合规工具包，由 Fisher Phillips 提供支持，并提供包括人力资源支持在内的一整套咨询服务。
+据了解，[Blue Pencil Box](https://www.bluepencilbox.com/)产品将隶属于[fpSOLUTIONS](https://www.fpsolutions.com/)，这是一个创新的新公司，提供可轻松访问、具有成本效益的人力资源解决方案，包括可定制的文档、清单、表格、手册和合规工具包，由 Fisher Phillips 提供支持，并提供包括人力资源支持在内的一整套咨询服务。
 
 > 拓展阅读：https://www.fisherphillips.com/en/news-insights/fisher-phillips-acquires-blue-pencil-box-and-brings-on-founder-jonathan-crook-as-partner.html
 
@@ -246,13 +251,13 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 1 月 20 日，香港律师会发布《人工智能对法律专业的的影响》立场文件，说明 AI 对法律专业带来挑战和机遇。
 
-1.  人工智能可以显著提高法律服务的效率和质量，但同时也可能带来一些挑战，例如数据准确性和个人资料隐私等问题。
+1. 人工智能可以显著提高法律服务的效率和质量，但同时也可能带来一些挑战，例如数据准确性和个人资料隐私等问题。
 
-1.  人工智能工具应该用于提升法律服务提供者的增值工作，而不是取代法律服务提供者本身。
+1. 人工智能工具应该用于提升法律服务提供者的增值工作，而不是取代法律服务提供者本身。
 
-1.  法律相关教育应该加入对人工智能的认识，帮助法律专业人士了解人工智能技术，并掌握相关技能。
+1. 法律相关教育应该加入对人工智能的认识，帮助法律专业人士了解人工智能技术，并掌握相关技能。
 
-1.  法官也需要具备有关人工智能的知识，以便更好地理解和处理相关案件。该文件的发布，对于香港法律界乃至全球法律界都具有重要意义。 它为人工智能在法律领域的应用提供了指引，有助于确保人工智能技术在法律领域的合规和伦理使用。
+1. 法官也需要具备有关人工智能的知识，以便更好地理解和处理相关案件。该文件的发布，对于香港法律界乃至全球法律界都具有重要意义。它为人工智能在法律领域的应用提供了指引，有助于确保人工智能技术在法律领域的合规和伦理使用。
 
 > 拓展阅读：https://mp.weixin.qq.com/s/67oVoMRWubTYG3MEK8A0Xw
 
@@ -265,6 +270,8 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 这一方针反映出司法机关对在法律领域应用 AI 的审慎态度，旨在确保法律工作的质量和公正性，同时促进 AI 技术的良性发展。
 
 > 方针原文：https://images.law.com/contrib/content/uploads/documents/399/107947/NJ-Preliminary-Guidelines-on-AI.pdf
+
+
 
 > 拓展阅读：https://www.law.com/njlawjournal/2024/01/26/guidance-released-by-nj-judiciary-calls-use-of-ai-unavoidable-for-attorneys/
 
@@ -280,11 +287,11 @@ AI-Assisted Redlining 可检测偏离公司标准的合同条款，识别协议�
 
 ## 杜克大学法学院推出人工智能道德网络
 
-近日，杜克大学法学院启动一个专业网络，名为 Responsible AI in Legal Services，旨在促进人工智能（AI）在法律服务领域负责任地应用。这个网络聚集了法律服务行业的专家，包括法官、律师、企业法务人员、科技公司和非营利组织等，共同探讨 AI 技术在法律服务中的伦理使用和最佳实践。
+近日，杜克大学法学院启动一个专业网络，名为 `Responsible AI in Legal Services`，旨在促进人工智能（AI）在法律服务领域负责任地应用。这个网络聚集了法律服务行业的专家，包括法官、律师、企业法务人员、科技公司和非营利组织等，共同探讨 AI 技术在法律服务中的伦理使用和最佳实践。
 
-Responsible AI in Legal Services 的宗旨是在确保 AI 技术的应用提升法律服务的效率和质量的同时，也要注重保护公众利益和法律正义。为此，该网络将致力于制定和推广 AI 伦理指导原则、提供教育和培训资源和开展学术交流和合作等，比如通过举办研讨会和工作坊等方式促进成员之间的交流和协作。同时，该网络还将关注 AI 技术在法律领域的各种应用，比如合同分析、诉讼支持、以及提升公众获取法律服务的能力等。
+`Responsible AI in Legal Services` 的宗旨是在确保 AI 技术的应用提升法律服务的效率和质量的同时，也要注重保护公众利益和法律正义。为此，该网络将致力于制定和推广 AI 伦理指导原则、提供教育和培训资源和开展学术交流和合作等，比如通过举办研讨会和工作坊等方式促进成员之间的交流和协作。同时，该网络还将关注 AI 技术在法律领域的各种应用，比如合同分析、诉讼支持、以及提升公众获取法律服务的能力等。
 
-此外，Responsible AI in Legal Services 也将致力于教育法律专业人士去理解和运用 AI 工具，以及如何在法律实践中融入 AI 技术，以实现更高效和公正的法律服务。
+此外，`Responsible AI in Legal Services` 也将致力于教育法律专业人士去理解和运用 AI 工具，以及如何在法律实践中融入 AI 技术，以实现更高效和公正的法律服务。
 
 杜克大学法学院这一举措，显示了其对技术创新和法律服务融合的关注，同时也体现了对法律职业责任的深刻理解。通过建立这样一个网络，杜克旨在培养负责任的法律科技创新环境，引领法律服务业的发展方向。
 
@@ -292,9 +299,9 @@ Responsible AI in Legal Services 的宗旨是在确保 AI 技术的应用提升�
 
 ## 美国国家法律科技协会推出全新法律研究技术认证项目
 
-近日，美国国家法律科技协会（National Society for Legal Technology）推出全新的法律研究技术认证项目，旨在提高法律专业人士在法律科技领域的技能和知识。据了解，该项目为期四个月，涵盖法律科技领域的各个方面，包括人工智能、大数据、云计算、区块链等新兴技术及其在法律实践中的应用。通过该认证项目，法律专业人士将能够了解最新的法律科技趋势，掌握相关技术工具和平台的使用方法，提高解决法律问题的能力。同时，该项目还提供一些实用的课程和资源，包括在线课程、实践案例、专家讲座等。该项目旨在为参与者提供一个交流和合作的平台，以促进各方分享经验和知识，共同推动法律科技领域的发展。
+近日，美国国家法律科技协会（`National Society for Legal Technology`）推出全新的法律研究技术认证项目，旨在提高法律专业人士在法律科技领域的技能和知识。据了解，该项目为期四个月，涵盖法律科技领域的各个方面，包括人工智能、大数据、云计算、区块链等新兴技术及其在法律实践中的应用。通过该认证项目，法律专业人士将能够了解最新的法律科技趋势，掌握相关技术工具和平台的使用方法，提高解决法律问题的能力。同时，该项目还提供一些实用的课程和资源，包括在线课程、实践案例、专家讲座等。该项目旨在为参与者提供一个交流和合作的平台，以促进各方分享经验和知识，共同推动法律科技领域的发展。
 
-> 来源：legalitprofessionals
+> 来源：`legalitprofessionals`
 
 ## 《关于推动上海法律科技应用和发展的工作方案》正式印发
 
@@ -308,65 +315,60 @@ Responsible AI in Legal Services 的宗旨是在确保 AI 技术的应用提升�
 
 > 拓展阅读：https://mp.weixin.qq.com/s/ilrThWv_zeSXsZKsdwueaQ
 
-# **五、法律科技并购动态**
+# 五、法律科技并购动态
 
-## **文档管理平台 PSPDFKit 收购低代码**流程自动化平台提供商 Integrify
+## 文档管理平台 `PSPDFKit` 收购低代码流程自动化平台提供商 `Integrify`
 
-1 月 4 日，文档管理平台 PSPDFKit 宣布收购低代码流程自动化平台 Integrify，扩展 PSPDFKit 的低代码文档解决方案，同时满足整个文档生命周期的需求。
+1 月 4 日，文档管理平台 `PSPDFKit` 宣布收购低代码流程自动化平台 `Integrify`，扩展 `PSPDFKit` 的低代码文档解决方案，同时满足整个文档生命周期的需求。
 
 > 拓展阅读：https://pspdfkit.com/blog/2024/pspdfkit-acquires-low-code-process-automation-platform-integrify/
 
-## **法律研究巨头 LexisNexis **收购法国的法律实践管理公司 Jarvis
+## 法律研究巨头 `LexisNexis` 收购法国的法律实践管理公司 `Jarvis`
 
-1 月 8 日，法律研究巨头 LexisNexis Legal & Professional 宣布收购法国一家法律实践管理公司 Jarvis。
+1 月 8 日，法律研究巨头 `LexisNexis Legal & Professional` 宣布收购法国一家法律实践管理公司 `Jarvis`。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1783342/lexisnexis-acquires-french-practice-management-co-jarvis
 
-## **诉讼支持和电子发现公司 Comp**lete Legal 与两家竞争对手合并
+## 诉讼支持和电子发现公司 `Complete Legal` 与两家竞争对手合并
 
-1 月 10 日，诉讼支持和电子发现公司 Complete Legal 宣布与另外两家竞争对手 L2 Services 和 Precise Legal 合并。
+1 月 10 日，诉讼支持和电子发现公司 `Complete Legal` 宣布与另外两家竞争对手 `L2 Services` 和 `Precise Legal` 合并。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1783979/midwest-litigation-support-co-merges-with-2-competitors-
 
-## **法律援助平台 Paladin 收购公益报**告软件 Pro Bono Manager
+## 法律援助平台 `Paladin` 收购公益报告软件 `Pro Bono Manager`
 
-1 月 10 日消息，法律援助平台 Paladin 宣布从非营利组织 Pro Bono Net 中收购了其律所公益报告软件 Pro Bono Manager。Paladin 作为链接法律团队与法律服务需求方的中介平台，本次收购将使 Paladin 扩大合作律所网络，并获得更多公益数据及其见解。除了收购 Pro Bono Manager 的外，Paladin 还与 Pro Bono Net 建立战略合作伙伴关系，双方将合作开展技术项目、完成数据研究、举办活动、共同构建内容等。
+1 月 10 日消息，法律援助平台 `Paladin` 宣布从非营利组织 `Pro Bono Net` 中收购了其律所公益报告软件 `Pro Bono Manager`。`Paladin` 作为链接法律团队与法律服务需求方的中介平台，本次收购将使 `Paladin` 扩大合作律所网络，并获得更多公益数据及其见解。除了收购 `Pro Bono Manager` 的外，`Paladin` 还与 `Pro Bono Net` 建立战略合作伙伴关系，双方将合作开展技术项目、完成数据研究、举办活动、共同构建内容等。
 
 > 拓展阅读：
-
 > https://www.law.com/legaltechnews/2024/01/10/paladin-rings-in-2024-with-pro-bono-manager-acquisition-and-a-new-partnership/
-
 > https://www.law360.com/pulse/legal-tech/articles/1782299/pro-bono-platform-paladin-makes-first-acquisition
 
-## **风险管理公司 Riskonnect **收购 Ventiv Technology
+## 风险管理公司 `Riskonnect` 收购 `Ventiv Technology`
 
-[1 月 11 日，综](https://riskonnect.com)合风险管理（IRM）解决方案公司 Riskonnect 宣布收购领先的风险、保险和承保技术服务商 Ventiv Technology，将为全球 2500 多家客户提供服务。合并后的 Riskonnect 准备重新定义 RMIS 解决方案的标准，为寻求优化风险管理策略的客户提供专业知识、技术和资源。
+1 月 11 日，综合风险管理（IRM）解决方案公司 `Riskonnect` 宣布收购领先的风险、保险和承保技术服务商 `Ventiv Technology`，将为全球 2500 多家客户提供服务。合并后的 `Riskonnect` 准备重新定义 RMIS 解决方案的标准，为寻求优化风险管理策略的客户提供专业知识、技术和资源。
 
 > 拓展阅读：
-
 > https://riskonnect.com/risk-management-information-systems/rmis-market-leaders-combine-value/
-
 > https://riskonnect.com/press/riskonnect-acquires-ventiv-technology/
-
 > https://riskonnect.com/resources/ventiv-technology-acquisition-overview/
 
-## **电子发现服务商 Complete Legal **收购 Frontline 的电子发现业务
+## 电子发现服务商 `Complete Legal` 收购 `Frontline` 的电子发现业务
 
-1 月 24 日，电子发现服务商 Complete Legal 宣布收购替代性法律服务商 Frontline M[an](https://www.law.com/legaltechnews/2024/01/09/complete-legal-merges-with-l2-services-precise-legal-in-major-e-discovery-service-market-consolidation/)aged Services 的电子发现业务。几周前，Complete Legal 还与另外两家电子发现和法律支持公司合并 —— L2 Services 和 Precise Legal。
+1 月 24 日，电子发现服务商 `Complete Legal` 宣布收购替代性法律服务商 `Frontline Managed Services` 的电子发现业务。几周前，`Complete Legal` 还与另外两家电子发现和法律支持公司合并 —— `L2 Services` 和 `Precise Legal`。
 
-F[ron](https://www.law.com/legaltechnews/2021/02/09/intelliteach-rebrands-as-frontline-managed-services/)tline 提供 IT、网络安全、合同管理以及电子账单等服[务。该公司于 2021](https://www.law.com/legaltechnews/2021/07/15/frontline-managed-services-acquires-invoiceprep-expanding-back-office-capabilities/) 年从 Intellitea[ch 更名为 Fro](https://www.law.com/legaltechnews/2021/08/31/frontline-managed-services-continues-ma-streak-with-logicforce-acquisition/)ntline，并收购了 IT 提供商 Glasser Tech、律师事务所电子账单服务商 InvoicePrep 和法律 IT 咨询服务商 Logicforce。
+`Frontline` 提供 IT、网络安全、合同管理以及电子账单等服务。该公司于 2021 年从 `Intelliteach` 更名为 `Frontline`，并收购了 IT 提供商 `Glasser Tech`、律师事务所电子账单服务商 `InvoicePrep` 和法律 IT 咨询服务商 `Logicforce`。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/24/e-discovery-services-consolidation-continues-complete-legal-acquires-frontlines-e-discovery-business/
 
-# **六、法律科技活动资讯**
+# 六、法律科技活动资讯
 
 ## 最新调研：中小型律所认为 AI 还不可靠，并且不信任这项技术
 
-1 月，法律实践管理平台 Clio 推出一份关于中型律师事务所趋势的报告。该报告显示，超过一半的中型和小型律师事务所律师认为 AI 还不可靠，并且不信任这项技术。
+1 月，法律实践管理平台 `Clio` 推出一份关于中型律师事务所趋势的报告。该报告显示，超过一半的中型和小型律师事务所律师认为 AI 还不可靠，并且不信任这项技术。
 
 ## 第四届金线奖完整获奖名单发布，共四家法律科技产品上榜
 
-1 月 4 日，金线视野、高杉 Legal、威科集团联合发起的第四届金线奖新鲜出炉，网易未成年人保护 AI 合规系统、ChatLaw、INSSENT AI、君合知识管理系统四个产品，获得「金线法律科技与 AI 应用奖」。
+1 月 4 日，金线视野、`高杉 Legal`、`威科集团`联合发起的第四届金线奖新鲜出炉，网易未成年人保护 AI 合规系统、`ChatLaw`、`INSSENT AI`、`君合知识管理系统`四个产品，获得「金线法律科技与 AI 应用奖」。
 
 > 拓展阅读：https://mp.weixin.qq.com/s/aglUhDGYri0eerUimqrQ_w
 
@@ -380,54 +382,58 @@ F[ron](https://www.law.com/legaltechnews/2021/02/09/intelliteach-rebrands-as-fro
 
 ## 20 家律师事务所和企业领导人被评为人工智能远见者
 
-1 月 22 日，来自 DLA Piper、Morrison Foerster LLP、Microsoft Corp.和 Salesforce.com Inc. 等律所或公司的领导人被法律科技公司 Relativity ODA LLC 评为 2024 年人工智能远见者年度名单。
+1 月 22 日，来自 `DLA Piper`、`Morrison Foerster LLP`、`Microsoft Corp.`和 `Salesforce.com Inc.` 等律所或公司的领导人被法律科技公司 `Relativity ODA LLC` 评为 2024 年人工智能远见者年度名单。
 
-> 拓展阅读：[R](http://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247486681&idx=1&sn=b6119ac9c5c0f92f31ba58843003d961&chksm=fac53679cdb2bf6f47f43bbfafcc097a9e2147fac107a7d5b79770e8933a57db751cb8c248d4&scene=21#wechat_redirect)elativity 推出🥇2024 AI Visionaries 名单，20 位 500 强公司和 Am 律所领导者上榜
+> 拓展阅读：`Relativity` 推出🥇2024 AI Visionaries 名单，20 位 500 强公司和 Am 律所领导者上榜
 
-# **七、法律科技数字化资讯**
+# 七、法律科技数字化资讯
 
-## Wolters Kluwer 推出受益所有权平台
+## `Wolters Kluwer` 推出受益所有权平台
 
-1 月 2 日，Wolters Kluwer 金融和企业合规（FCC）、税务和会计（TAA）部门宣布推出一个受益所有权平台，旨在帮助受《企业透明度法》受益所有权报告规则影响的企业。该平台将简化和自动化单个实体和多个实体的申报要求。此外，该受益所有权解决方案还为需要提交大量报告的会计师事务所自动执行受益所有权信息申报流程。
+1 月 2 日，`Wolters Kluwer` 金融和企业合规（FCC）、税务和会计（TAA）部门宣布推出一个受益所有权平台，旨在帮助受《企业透明度法》受益所有权报告规则影响的企业。该平台将简化和自动化单个实体和多个实体的申报要求。此外，该受益所有权解决方案还为需要提交大量报告的会计师事务所自动执行受益所有权信息申报流程。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/10/legaltech-rundown-hogal-lovells-launches-an-ai-chatbot-new-lexisnexis-hire-and-more/
 
-## LegalZoom 推出受益所有权文档服务
+## `LegalZoom` 推出受益所有权文档服务
 
-1 月 4 日，在线法律服务提供商 LegalZoom 发布了一项合规服务，旨在帮助企业在新的联邦规定下向金融犯罪执法网络提交受益所有权（Beneficial Ownership）信息。
+1 月 4 日，在线法律服务提供商 `LegalZoom` 发布了一项合规服务，旨在帮助企业在新的联邦规定下向金融犯罪执法网络提交受益所有权（`Beneficial Ownership`）信息。
 
-注：受益所有权（Beneficial Ownership）通常用于描述那些不直接拥有法律上的所有权，但实际上享受财产或企业利益的个人。这个概念广泛应用于反洗钱和反恐融资的法规中，目的是为了识别和追踪金融交易背后的最终受益人，以预防和打击洗钱和恐怖融资活动。在国际金融和商业法律框架内，受益所有人可能是一名或多名自然人，这些自然人最终拥有或控制一家公司、信托或其他法律实体，并从中获得实质性的经济利益。他们可能是公司的股东、高管，或者是通过其他方式对公司决策或经济利益有实际控制力的个体。实践中，确定受益所有人需要对客户进行充分的尽职调查，这可能包括询问客户、要求提供证明材料、委托第三方进行调查等。在某些情况下，受益所有人可能与法律上的所有人不一致，比如通过复杂的股权结构或代理关系隐藏其身份。值得注意的是，受益所有人的识别不仅仅是一个理论上的法律概念，它在实际的金融监管和风险管理中发挥着关键作用。金融机构和其他受监管实体被要求识别和维护客户的受益所有人信息，这对于追踪资金流向、打击非法活动和维护金融系统的完整性都至关重要。
+注：受益所有权（`Beneficial Ownership`）通常用于描述那些不直接拥有法律上的所有权，但实际上享受财产或企业利益的个人。这个概念广泛应用于反洗钱和反恐融资的法规中，目的是为了识别和追踪金融交易背后的最终受益人，以预防和打击洗钱和恐怖融资活动。在国际金融和商业法律框架内，受益所有人可能是一名或多名自然人，这些自然人最终拥有或控制一家公司、信托或其他法律实体，并从中获得实质性的经济利益。他们可能是公司的股东、高管，或者是通过其他方式对公司决策或经济利益有实际控制力的个体。实践中，确定受益所有人需要对客户进行充分的尽职调查，这可能包括询问客户、要求提供证明材料、委托第三方进行调查等。在某些情况下，受益所有人可能与法律上的所有人不一致，比如通过复杂的股权结构或代理关系隐藏其身份。值得注意的是，受益所有人的识别不仅仅是一个理论上的法律概念，它在实际的金融监管和风险管理中发挥着关键作用。金融机构和其他受监管实体被要求识别和维护客户的受益所有人信息，这对于追踪资金流向、打击非法活动和维护金融系统的完整性都至关重要。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1782085/legalzoom-launches-service-for-beneficial-ownership-docs
 
 # 八、市场教育/创新孵化/生态联盟
 
-## **法律咨询公司 Coston Co**nsulting 推出一系列律师培训课程
+## 法律咨询公司 `Coston Consulting` 推出一系列律师培训课程
 
-1 月 17 日，法律行业的商业咨询公司 Coston Consulting 推出针对律师事务所的律师助理和初级合伙人的视频电子学习课程 Coston Elevate Curriculum。该数字课程旨在通过一系列模块、测验、指南、清单和资源模板来提高法律专业人士的营销和创收技能。
+1 月 17 日，法律行业的商业咨询公司 `Coston Consulting` 推出针对律师事务所的律师助理和初级合伙人的视频电子学习课程 `Coston Elevate Curriculum`。该数字课程旨在通过一系列模块、测验、指南、清单和资源模板来提高法律专业人士的营销和创收技能。
 
 据了解，该课程将分为两部分，一个是专注于律师个人品牌建设、市场营销和建立网络等基础知识的核心项目，另一个是关于提升形象、推介和交叉销售等技能的高级项目。
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/01/19/legal-tech-rundown-epiq-launches-compliance-solution-new-unitedlex-appointment-and-more/
 
-## 替代性法律服务提供商 Harbor 推出创新实验室
+## 替代性法律服务提供商 `Harbor` 推出创新实验室
 
-1 月 25 日，替代性法律服务提供商 Harbor 推出一个名为 Harbor Labs 的创新实验室，专注于用先进的技术和流程为律师事务所和公司法律部门开发解决方案。Harbor Labs 的推出也标志着 KP Labs 于去年 6 月被 Harbor 收购后正式并入 Harbor。
+1 月 25 日，替代性法律服务提供商 `Harbor` 推出一个名为 `Harbor Labs` 的创新实验室，专注于用先进的技术和流程为律师事务所和公司法律部门开发解决方案。`Harbor Labs` 的推出也标志着 `KP Labs` 于去年 6 月被 `Harbor` 收购后正式并入 `Harbor`。
+
+
+
+# Harbor Labs 推出法律工程服务与创新实验室
 
 Harbor 的 CEO Matt Sunderman 表示：“生成式 AI 的出现是公司法律部门寻求法律服务新方法的催化剂。Harbor Labs 将提供法律工程服务，帮助企业使用 AI 和其他先进技术加快业务速度，我们的创新实验室还在开发解决方案，这将改变 Harbor 服务律师事务所提供的方式，以便律所能够以具有成本效益和规模的方式利用先进技术，并在这种快速变化的环境中跟上步伐。”
 
 Harbor Labs 团队提供的法律工程服务包括业务流程自动化、AI 辅助合同智能以及高级分析等，帮助公司法律部门减少法律服务的“摩擦”。此外，Harbor Labs 还有一个内部研发重点 —— 评估、测试和试点先进技术，并探索 Harbor 未来可能的商业化创新。
 
 > 拓展阅读：
+>
+> `https://harborglobal.com/news-releases/harbor-opens-innovation-lab-for-legal-operations`
+>
+> `https://www.law360.com/pulse/legal-tech/articles/1790082/legal-services-provider-harbor-launches-innovation-lab`
 
-> https://harborglobal.com/news-releases/harbor-opens-innovation-lab-for-legal-operations
-
-> https://www.law360.com/pulse/legal-tech/articles/1790082/legal-services-provider-harbor-launches-innovation-lab
-
-## 安永推出“全球联盟”，旨在提高电子发现能力和创新
+# 安永推出“全球联盟”，旨在提高电子发现能力和创新
 
 1 月 29 日，四大咨询公司之一的安永宣布与电子发现提供商 Reveal 建立全球联盟，安永将利用 Reveal 的电子发现产品和技术套件，将该公司的“高级数据发现解决方案”扩展到更多用例，包括但不限于满足全球客户的网络事件响应和尽职调查需求等。
 
 此前，普华永道曾表示，其在“四大”中可以独家使用法律 AI 初创公司 Harvey。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/01/29/ey-reveal-announce-global-alliance-aiming-to-boost-e-discovery-capabilities-innovation/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/01/29/ey-reveal-announce-global-alliance-aiming-to-boost-e-discovery-capabilities-innovation/`

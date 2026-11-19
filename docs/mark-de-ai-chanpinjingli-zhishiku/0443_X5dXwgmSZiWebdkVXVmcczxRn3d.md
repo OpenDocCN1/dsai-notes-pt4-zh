@@ -1,3 +1,4 @@
+
 # 使用本地语言模型机器（LLMs）的校正RAG（CRAG）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Le64dQvAKoE8RqxX9C0cBUBqnLc](https://qqs7y1hozd1.feishu.cn/docx/Le64dQvAKoE8RqxX9C0cBUBqnLc)
@@ -6,90 +7,79 @@
 
 论文遵循以下一般流程：
 
-+   如果至少有一个文档超过相关性阈值，则继续生成
++ 如果至少有一个文档超过相关性阈值，则继续生成
++ 如果所有文档都低于相关性阈值，或者评分者不确定，则使用网页搜索来补充检索
++ 在生成之前，对搜索或检索的文档进行知识精炼
++ 将文档分割为知识条
++ 对每个知识条进行评分，并过滤掉不相关的条目
 
-+   如果所有文档都低于相关性阈值，或者评分者不确定，则使用网页搜索来补充检索
+我们将使用 `LangGraph` 从头开始实现一些这些想法：
 
-+   在生成之前，对搜索或检索的文档进行知识精炼
++ 如果有任何文档不相关，我们将使用网页搜索来补充检索。
++ 我们将跳过知识精炼阶段，但如果需要的话，可以将其作为一个节点添加回去。
++ 我们将使用 `Tavily Search` 进行网页搜索。
 
-+   将文档分割为知识条
-
-+   对每个知识条进行评分，并过滤掉不相关的条目
-
-我们将使用 LangGraph 从头开始实现一些这些想法：
-
-+   如果有任何文档不相关，我们将使用网页搜索来补充检索。
-
-+   我们将跳过知识精炼阶段，但如果需要的话，可以将其作为一个节点添加回去。
-
-+   我们将使用 Tavily Search 进行网页搜索。
-
-环境
+## 环境
 
 我们将使用以下工具和资源：
 
-+   使用 Ollama 应用程序访问本地语言模型（LLM）：
++ 使用 `Ollama` 应用程序访问本地语言模型（LLM）：
++ 下载 `Ollama` 应用程序。
++ 拉取您选择的模型，例如：`ollama pull llama3`
++ 使用 `Tavily` 进行网页搜索。
++ 使用 `Nomic` 的本地嵌入式向量存储，或者选择性地使用 `OpenAI` 的嵌入式向量存储。
++ 使用 `LangSmith` 进行追踪和评估。
 
-+   下载 Ollama 应用程序。
-
-+   拉取您选择的模型，例如：ollama pull llama3
-
-+   使用 Tavily 进行网页搜索。
-
-+   使用 Nomic 的本地嵌入式向量存储，或者选择性地使用 OpenAI 的嵌入式向量存储。
-
-+   使用 LangSmith 进行追踪和评估。
-
-```
+```bash
 %%capture --no-stderr
-%pip install -U langchain_community tiktoken langchainhub scikit-learn langchain langgraph tavily-python  nomic[local] langchain-nomic langchain_openai
+%pip install -U langchain_community tiktoken langchainhub scikit-learn langchain langgraph tavily-python nomic[local] langchain-nomic langchain_openai
 ```
 
-```
+```python
 # Search
 import os
-os.environ[&quot;TAVILY_API_KEY&quot;] = &quot;xxx&quot;
+os.environ["TAVILY_API_KEY"] = "xxx"
 ```
 
-```
+```python
 # Embedding (optional)
-os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;xxx&quot;
+os.environ["OPENAI_API_KEY"] = "xxx"
 ```
 
-```
+```python
 # Tracing and testing (optional)
-os.environ[&quot;LANGCHAIN_API_KEY&quot;] = &quot;xxx&quot;
-os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
-os.environ[&quot;LANGCHAIN_ENDPOINT&quot;] = &quot;https://api.smith.langchain.com&quot;
-os.environ[&quot;LANGCHAIN_PROJECT&quot;] = &quot;corrective-rag-agent-testing&quot;
+os.environ["LANGCHAIN_API_KEY"] = "xxx"
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
+os.environ["LANGCHAIN_PROJECT"] = "corrective-rag-agent-testing"
 ```
 
-#### LLM
+### LLM
 
-您可以从 Ollama 的语言模型（LLMs）中进行选择。
+您可以从 `Ollama` 的语言模型（LLMs）中进行选择。
 
+```python
+local_llm = "llama3"
+model_tested = "llama3-8b"
+metadata = f"CRAG, {model_tested}"
 ```
-local_llm = &quot;llama3&quot;
-model_tested = &quot;llama3-8b&quot;
-metadata = f&quot;CRAG, {model_tested}&quot;
-```
 
-#### 索引
+### 索引
 
 让我们索引3篇博文。
 
-```
+```python
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.vectorstores import SKLearnVectorStore
-from langchain_nomic.embeddings import NomicEmbeddings # local
-from langchain_openai import OpenAIEmbeddings # api
+from langchain_nomic.embeddings import NomicEmbeddings  # local
+from langchain_openai import OpenAIEmbeddings  # api
 
 # List of URLs to load documents from
 urls = [
-    &quot;https://lilianweng.github.io/posts/2023-06-23-agent/&quot;,
-    &quot;https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/&quot;,
-    &quot;https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/&quot;,
+    "https://lilianweng.github.io/posts/2023-06-23-agent/",
+    "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+    "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
 ]
 
 # Load documents from the URLs
@@ -105,15 +95,15 @@ text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
 doc_splits = text_splitter.split_documents(docs_list)
 
 # Embedding
-&#x27;&#x27;&#x27;
+'''
 embedding=NomicEmbeddings(
-    model=&quot;nomic-embed-text-v1.5&quot;,
-    inference_mode=&quot;local&quot;,
+    model="nomic-embed-text-v1.5",
+    inference_mode="local",
 )
-&#x27;&#x27;&#x27;
+'''
 embedding = OpenAIEmbeddings()
 
-# Add the document chunks to the &quot;vector store&quot;
+# Add the document chunks to the "vector store"
 vectorstore = SKLearnVectorStore.from_documents(
     documents=doc_splits,
     embedding=embedding,
@@ -121,22 +111,22 @@ vectorstore = SKLearnVectorStore.from_documents(
 retriever = vectorstore.as_retriever(k=4)
 ```
 
-#### Tools 工具
+### Tools 工具
 
-```
-### Retrieval Grader
+#### Retrieval Grader
 
+```python
 from langchain.prompts import PromptTemplate
 from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_mistralai.chat_models import ChatMistralAI
 
 # LLM
-llm = ChatOllama(model=local_llm, format=&quot;json&quot;, temperature=0)
+llm = ChatOllama(model=local_llm, format="json", temperature=0)
 
 # Prompt
 prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You are a teacher grading a quiz. You will be given: 
+    template="""You are a teacher grading a quiz. You will be given: 
     1/ a QUESTION
     2/ A FACT provided by the student
     
@@ -152,42 +142,42 @@ prompt = PromptTemplate(
     Question: {question} \n
     Fact: \n\n {documents} \n\n
     
-    Give a binary score &#x27;yes&#x27; or &#x27;no&#x27; score to indicate whether the document is relevant to the question. \n
-    Provide the binary score as a JSON with a single key &#x27;score&#x27; and no premable or explanation.
-    &quot;&quot;&quot;,
-    input_variables=[&quot;question&quot;, &quot;documents&quot;],
+    Give a binary score 'yes' or 'no' score to indicate whether the document is relevant to the question. \n
+    Provide the binary score as a JSON with a single key 'score' and no premable or explanation.
+    """,
+    input_variables=["question", "documents"],
 )
 
 retrieval_grader = prompt | llm | JsonOutputParser()
-question = &quot;agent memory&quot;
+question = "agent memory"
 docs = retriever.invoke(question)
 doc_txt = docs[1].page_content
-print(retrieval_grader.invoke({&quot;question&quot;: question, &quot;documents&quot;: doc_txt}))
+print(retrieval_grader.invoke({"question": question, "documents": doc_txt}))
 ```
 
-```
-{&#x27;score&#x27;: &#x27;1&#x27;}
+```text
+{'score': '1'}
 ```
 
-```
-### Generate
+#### Generate
 
+```python
 from langchain_core.output_parsers import StrOutputParser
 
 # Prompt
 prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You are an assistant for question-answering tasks. 
+    template="""You are an assistant for question-answering tasks. 
     
     Use the following documents to answer the question. 
     
-    If you don&#x27;t know the answer, just say that you don&#x27;t know. 
+    If you don't know the answer, just say that you don't know. 
     
     Use three sentences maximum and keep the answer concise:
     Question: {question} 
     Documents: {documents} 
     Answer: 
-    &quot;&quot;&quot;,
-    input_variables=[&quot;question&quot;, &quot;documents&quot;],
+    """,
+    input_variables=["question", "documents"],
 )
 
 # LLM
@@ -197,27 +187,33 @@ llm = ChatOllama(model=local_llm, temperature=0)
 rag_chain = prompt | llm | StrOutputParser()
 
 # Run
-generation = rag_chain.invoke({&quot;documents&quot;: docs, &quot;question&quot;: question})
+generation = rag_chain.invoke({"documents": docs, "question": question})
 print(generation)
 ```
 
-```
-The document mentions &quot;memory stream&quot; which is a long-term memory module that records a comprehensive list of agents&#x27; experience in natural language. It also discusses short-term memory and long-term memory, with the latter providing the agent with the capability to retain and recall information over extended periods. Additionally, it mentions planning and reflection mechanisms that enable agents to behave conditioned on past experience.
+```text
+The document mentions "memory stream" which is a long-term memory module that records a comprehensive list of agents' experience in natural language. It also discusses short-term memory and long-term memory, with the latter providing the agent with the capability to retain and recall information over extended periods. Additionally, it mentions planning and reflection mechanisms that enable agents to behave conditioned on past experience.
 ```
 
-```
-### Search
+#### Search
 
+```python
 from langchain_community.tools.tavily_search import TavilySearchResults
 
 web_search_tool = TavilySearchResults(k=3)
 ```
 
-图
+## 图
 
-在这里，我们将明确定义大部分控制流程，仅在评分后使用LLM来定义一个单一的分支点。
+在这里，我们将明确定义大部分控制流程，仅在评分后使用 `LLM` 来定义一个单一的分支点。
 
-```
+
+
+# 代理图构建与评估
+
+## 构建代理图
+
+```python
 from typing import List
 from typing_extensions import TypedDict
 from IPython.display import Image, display
@@ -226,7 +222,7 @@ from langgraph.graph import START, END, StateGraph
 
 
 class GraphState(TypedDict):
-    &quot;&quot;&quot;
+    """
     Represents the state of our graph.
 
     Attributes:
@@ -234,7 +230,7 @@ class GraphState(TypedDict):
         generation: LLM generation
         search: whether to add search
         documents: list of documents
-    &quot;&quot;&quot;
+    """
 
     question: str
     generation: str
@@ -244,7 +240,7 @@ class GraphState(TypedDict):
 
 
 def retrieve(state):
-    &quot;&quot;&quot;
+    """
     Retrieve documents
 
     Args:
@@ -252,16 +248,16 @@ def retrieve(state):
 
     Returns:
         state (dict): New key added to state, documents, that contains retrieved documents
-    &quot;&quot;&quot;
-    question = state[&quot;question&quot;]
+    """
+    question = state["question"]
     documents = retriever.invoke(question)
-    steps = state[&quot;steps&quot;]
-    steps.append(&quot;retrieve_documents&quot;)
-    return {&quot;documents&quot;: documents, &quot;question&quot;: question, &quot;steps&quot;: steps}
+    steps = state["steps"]
+    steps.append("retrieve_documents")
+    return {"documents": documents, "question": question, "steps": steps}
 
 
 def generate(state):
-    &quot;&quot;&quot;
+    """
     Generate answer
 
     Args:
@@ -269,23 +265,23 @@ def generate(state):
 
     Returns:
         state (dict): New key added to state, generation, that contains LLM generation
-    &quot;&quot;&quot;
+    """
 
-    question = state[&quot;question&quot;]
-    documents = state[&quot;documents&quot;]
-    generation = rag_chain.invoke({&quot;documents&quot;: documents, &quot;question&quot;: question})
-    steps = state[&quot;steps&quot;]
-    steps.append(&quot;generate_answer&quot;)
+    question = state["question"]
+    documents = state["documents"]
+    generation = rag_chain.invoke({"documents": documents, "question": question})
+    steps = state["steps"]
+    steps.append("generate_answer")
     return {
-        &quot;documents&quot;: documents,
-        &quot;question&quot;: question,
-        &quot;generation&quot;: generation,
-        &quot;steps&quot;: steps,
+        "documents": documents,
+        "question": question,
+        "generation": generation,
+        "steps": steps,
     }
 
 
 def grade_documents(state):
-    &quot;&quot;&quot;
+    """
     Determines whether the retrieved documents are relevant to the question.
 
     Args:
@@ -293,34 +289,34 @@ def grade_documents(state):
 
     Returns:
         state (dict): Updates documents key with only filtered relevant documents
-    &quot;&quot;&quot;
+    """
 
-    question = state[&quot;question&quot;]
-    documents = state[&quot;documents&quot;]
-    steps = state[&quot;steps&quot;]
-    steps.append(&quot;grade_document_retrieval&quot;)
+    question = state["question"]
+    documents = state["documents"]
+    steps = state["steps"]
+    steps.append("grade_document_retrieval")
     filtered_docs = []
-    search = &quot;No&quot;
+    search = "No"
     for d in documents:
         score = retrieval_grader.invoke(
-            {&quot;question&quot;: question, &quot;documents&quot;: d.page_content}
+            {"question": question, "documents": d.page_content}
         )
-        grade = score[&quot;score&quot;]
-        if grade == &quot;yes&quot;:
+        grade = score["score"]
+        if grade == "yes":
             filtered_docs.append(d)
         else:
-            search = &quot;Yes&quot;
+            search = "Yes"
             continue
     return {
-        &quot;documents&quot;: filtered_docs,
-        &quot;question&quot;: question,
-        &quot;search&quot;: search,
-        &quot;steps&quot;: steps,
+        "documents": filtered_docs,
+        "question": question,
+        "search": search,
+        "steps": steps,
     }
 
 
 def web_search(state):
-    &quot;&quot;&quot;
+    """
     Web search based on the re-phrased question.
 
     Args:
@@ -328,24 +324,24 @@ def web_search(state):
 
     Returns:
         state (dict): Updates documents key with appended web results
-    &quot;&quot;&quot;
+    """
 
-    question = state[&quot;question&quot;]
-    documents = state.get(&quot;documents&quot;, [])
-    steps = state[&quot;steps&quot;]
-    steps.append(&quot;web_search&quot;)
-    web_results = web_search_tool.invoke({&quot;query&quot;: question})
+    question = state["question"]
+    documents = state.get("documents", [])
+    steps = state["steps"]
+    steps.append("web_search")
+    web_results = web_search_tool.invoke({"query": question})
     documents.extend(
         [
-            Document(page_content=d[&quot;content&quot;], metadata={&quot;url&quot;: d[&quot;url&quot;]})
+            Document(page_content=d["content"], metadata={"url": d["url"]})
             for d in web_results
         ]
     )
-    return {&quot;documents&quot;: documents, &quot;question&quot;: question, &quot;steps&quot;: steps}
+    return {"documents": documents, "question": question, "steps": steps}
 
 
 def decide_to_generate(state):
-    &quot;&quot;&quot;
+    """
     Determines whether to generate an answer, or re-generate a question.
 
     Args:
@@ -353,36 +349,35 @@ def decide_to_generate(state):
 
     Returns:
         str: Binary decision for next node to call
-    &quot;&quot;&quot;
-    search = state[&quot;search&quot;]
-    if search == &quot;Yes&quot;:
-        return &quot;search&quot;
+    """
+    search = state["search"]
+    if search == "Yes":
+        return "search"
     else:
-        return &quot;generate&quot;
+        return "generate"
 
 
-# Graph
 workflow = StateGraph(GraphState)
 
 # Define the nodes
-workflow.add_node(&quot;retrieve&quot;, retrieve)  # retrieve
-workflow.add_node(&quot;grade_documents&quot;, grade_documents)  # grade documents
-workflow.add_node(&quot;generate&quot;, generate)  # generatae
-workflow.add_node(&quot;web_search&quot;, web_search)  # web search
+workflow.add_node("retrieve", retrieve)  # retrieve
+workflow.add_node("grade_documents", grade_documents)  # grade documents
+workflow.add_node("generate", generate)  # generatae
+workflow.add_node("web_search", web_search)  # web search
 
 # Build graph
-workflow.set_entry_point(&quot;retrieve&quot;)
-workflow.add_edge(&quot;retrieve&quot;, &quot;grade_documents&quot;)
+workflow.set_entry_point("retrieve")
+workflow.add_edge("retrieve", "grade_documents")
 workflow.add_conditional_edges(
-    &quot;grade_documents&quot;,
+    "grade_documents",
     decide_to_generate,
     {
-        &quot;search&quot;: &quot;web_search&quot;,
-        &quot;generate&quot;: &quot;generate&quot;,
+        "search": "web_search",
+        "generate": "generate",
     },
 )
-workflow.add_edge(&quot;web_search&quot;, &quot;generate&quot;)
-workflow.add_edge(&quot;generate&quot;, END)
+workflow.add_edge("web_search", "generate")
+workflow.add_edge("generate", END)
 
 custom_graph = workflow.compile()
 
@@ -391,37 +386,39 @@ display(Image(custom_graph.get_graph(xray=True).draw_mermaid_png()))
 
 ![](img/2085096d87c18b44bd32c151f7c5d45c.png)
 
-```
+## 本地调用示例
+
+```python
 import uuid
 
 def predict_custom_agent_local_answer(example: dict):
-    config = {&quot;configurable&quot;: {&quot;thread_id&quot;: str(uuid.uuid4())}}
+    config = {"configurable": {"thread_id": str(uuid.uuid4())}}
     state_dict = custom_graph.invoke(
-        {&quot;question&quot;: example[&quot;input&quot;], &quot;steps&quot;: []}, config
+        {"question": example["input"], "steps": []}, config
     )
-    return {&quot;response&quot;: state_dict[&quot;generation&quot;], &quot;steps&quot;: state_dict[&quot;steps&quot;]}
+    return {"response": state_dict["generation"], "steps": state_dict["steps"]}
 
 
-example = {&quot;input&quot;: &quot;What are the types of agent memory?&quot;}
+example = {"input": "What are the types of agent memory?"}
 response = predict_custom_agent_local_answer(example)
 response
 ```
 
-```
-{&#x27;response&#x27;: &#x27;According to the documents, there are two types of agent memory:\n\n* Short-term memory (STM): This is a data structure that holds information temporarily and allows the agent to process it when needed.\n* Long-term memory (LTM): This provides the agent with the capability to retain and recall information over extended periods.\n\nThese types of memories allow the agent to learn, reason, and make decisions.&#x27;,
- &#x27;steps&#x27;: [&#x27;retrieve_documents&#x27;,
-  &#x27;grade_document_retrieval&#x27;,
-  &#x27;web_search&#x27;,
-  &#x27;generate_answer&#x27;]}
+```python
+{'response': 'According to the documents, there are two types of agent memory:\n\n* Short-term memory (STM): This is a data structure that holds information temporarily and allows the agent to process it when needed.\n* Long-term memory (LTM): This provides the agent with the capability to retain and recall information over extended periods.\n\nThese types of memories allow the agent to learn, reason, and make decisions.',
+ 'steps': ['retrieve_documents',
+  'grade_document_retrieval',
+  'web_search',
+  'generate_answer']}
 ```
 
 ### 评估
 
 现在我们已经定义了两种大致相同的代理架构！我们可以对它们进行评估。查看我们的概念指南以获取有关代理评估背景的内容。
 
-首先，我们可以评估代理在一组问题-答案对上的表现。我们将创建一个数据集并将其保存在 LangSmith 中。
+首先，我们可以评估代理在一组问题-答案对上的表现。我们将创建一个数据集并将其保存在 `LangSmith` 中。
 
-```
+```python
 from langsmith import Client
 
 client = Client()
@@ -429,67 +426,69 @@ client = Client()
 # Create a dataset
 examples = [
     (
-        &quot;How does the ReAct agent use self-reflection? &quot;,
-        &quot;ReAct integrates reasoning and acting, performing actions - such tools like Wikipedia search API - and then observing / reasoning about the tool outputs.&quot;,
+        "How does the ReAct agent use self-reflection? ",
+        "ReAct integrates reasoning and acting, performing actions - such tools like Wikipedia search API - and then observing / reasoning about the tool outputs.",
     ),
     (
-        &quot;What are the types of biases that can arise with few-shot prompting?&quot;,
-        &quot;The biases that can arise with few-shot prompting include (1) Majority label bias, (2) Recency bias, and (3) Common token bias.&quot;,
+        "What are the types of biases that can arise with few-shot prompting? ",
+        "The biases that can arise with few-shot prompting include (1) Majority label bias, (2) Recency bias, and (3) Common token bias.",
     ),
     (
-        &quot;What are five types of adversarial attacks?&quot;,
-        &quot;Five types of adversarial attacks are (1) Token manipulation, (2) Gradient based attack, (3) Jailbreak prompting, (4) Human red-teaming, (5) Model red-teaming.&quot;,
+        "What are five types of adversarial attacks? ",
+        "Five types of adversarial attacks are (1) Token manipulation, (2) Gradient based attack, (3) Jailbreak prompting, (4) Human red-teaming, (5) Model red-teaming.",
     ),
     (
-        &quot;Who did the Chicago Bears draft first in the 2024 NFL draft”?&quot;,
-        &quot;The Chicago Bears drafted Caleb Williams first in the 2024 NFL draft.&quot;,
+        "Who did the Chicago Bears draft first in the 2024 NFL draft”? ",
+        "The Chicago Bears drafted Caleb Williams first in the 2024 NFL draft.",
     ),
-    (&quot;Who won the 2024 NBA finals?&quot;, &quot;The Boston Celtics on the 2024 NBA finals&quot;),
+    ("Who won the 2024 NBA finals?", "The Boston Celtics on the 2024 NBA finals"),
 ]
 
 # Save it
-dataset_name = &quot;Corrective RAG Agent Testing&quot;
+dataset_name = "Corrective RAG Agent Testing"
 if not client.has_dataset(dataset_name=dataset_name):
     dataset = client.create_dataset(dataset_name=dataset_name)
     inputs, outputs = zip(
-        *[({&quot;input&quot;: text}, {&quot;output&quot;: label}) for text, label in examples]
+        *[({"input": text}, {"output": label}) for text, label in examples]
     )
     client.create_examples(inputs=inputs, outputs=outputs, dataset_id=dataset.id)
 ```
 
-现在，我们将使用LLM作为分级器，将两种代理响应与地面实况参考进行比较answer.Here是我们可以使用的默认提示。我们将使用gpt-4o作为LLM分级器。
+现在，我们将使用 `LLM` 作为分级器，将两种代理响应与地面实况参考进行比较 `answer.Here` 是我们可以使用的默认提示。我们将使用 `gpt-4o` 作为 `LLM` 分级器。
+
+
 
 ```
 from langchain import hub
 from langchain_openai import ChatOpenAI
 
 # Grade prompt
-grade_prompt_answer_accuracy = hub.pull(&quot;langchain-ai/rag-answer-vs-reference&quot;)
+grade_prompt_answer_accuracy = hub.pull("langchain-ai/rag-answer-vs-reference")
 
-def answer_evaluator(run, example) -&gt; dict:
-    &quot;&quot;&quot;
+def answer_evaluator(run, example) -> dict:
+    """
     A simple evaluator for RAG answer accuracy
-    &quot;&quot;&quot;
+    """
 
     # Get the question, the ground truth reference answer, RAG chain answer prediction
-    input_question = example.inputs[&quot;input&quot;]
-    reference = example.outputs[&quot;output&quot;]
-    prediction = run.outputs[&quot;response&quot;]
+    input_question = example.inputs["input"]
+    reference = example.outputs["output"]
+    prediction = run.outputs["response"]
 
     # Define an LLM grader
-    llm = ChatOpenAI(model=&quot;gpt-4o&quot;, temperature=0)
+    llm = ChatOpenAI(model="gpt-4o", temperature=0)
     answer_grader = grade_prompt_answer_accuracy | llm
 
     # Run evaluator
     score = answer_grader.invoke(
         {
-            &quot;question&quot;: input_question,
-            &quot;correct_answer&quot;: reference,
-            &quot;student_answer&quot;: prediction,
+            "question": input_question,
+            "correct_answer": reference,
+            "student_answer": prediction,
         }
     )
-    score = score[&quot;Score&quot;]
-    return {&quot;key&quot;: &quot;answer_v_reference_score&quot;, &quot;score&quot;: score}
+    score = score["Score"]
+    return {"key": "answer_v_reference_score", "score": score}
 ```
 
 ### 轨迹
@@ -501,82 +500,82 @@ from langsmith.schemas import Example, Run
 
 # Reasoning traces that we expect the agents to take
 expected_trajectory_1 = [
-    &quot;retrieve_documents&quot;,
-    &quot;grade_document_retrieval&quot;,
-    &quot;web_search&quot;,
-    &quot;generate_answer&quot;,
+    "retrieve_documents",
+    "grade_document_retrieval",
+    "web_search",
+    "generate_answer",
 ]
 expected_trajectory_2 = [
-    &quot;retrieve_documents&quot;,
-    &quot;grade_document_retrieval&quot;,
-    &quot;generate_answer&quot;,
+    "retrieve_documents",
+    "grade_document_retrieval",
+    "generate_answer",
 ]
 
-def check_trajectory_react(root_run: Run, example: Example) -&gt; dict:
-    &quot;&quot;&quot;
+def check_trajectory_react(root_run: Run, example: Example) -> dict:
+    """
     Check if all expected tools are called in exact order and without any additional tool calls.
-    &quot;&quot;&quot;
-    messages = root_run.outputs[&quot;messages&quot;]
+    """
+    messages = root_run.outputs["messages"]
     tool_calls = find_tool_calls_react(messages)
-    print(f&quot;Tool calls ReAct agent: {tool_calls}&quot;)
+    print(f"Tool calls ReAct agent: {tool_calls}")
     if tool_calls == expected_trajectory_1 or tool_calls == expected_trajectory_2:
         score = 1
     else:
         score = 0
 
-    return {&quot;score&quot;: int(score), &quot;key&quot;: &quot;tool_calls_in_exact_order&quot;}
+    return {"score": int(score), "key": "tool_calls_in_exact_order"}
 
 
-def check_trajectory_custom(root_run: Run, example: Example) -&gt; dict:
-    &quot;&quot;&quot;
+def check_trajectory_custom(root_run: Run, example: Example) -> dict:
+    """
     Check if all expected tools are called in exact order and without any additional tool calls.
-    &quot;&quot;&quot;
-    tool_calls = root_run.outputs[&quot;steps&quot;]
-    print(f&quot;Tool calls custom agent: {tool_calls}&quot;)
+    """
+    tool_calls = root_run.outputs["steps"]
+    print(f"Tool calls custom agent: {tool_calls}")
     if tool_calls == expected_trajectory_1 or tool_calls == expected_trajectory_2:
         score = 1
     else:
         score = 0
 
-    return {&quot;score&quot;: int(score), &quot;key&quot;: &quot;tool_calls_in_exact_order&quot;}
+    return {"score": int(score), "key": "tool_calls_in_exact_order"}
 ```
 
 ```
 from langsmith.evaluation import evaluate
 
-experiment_prefix = f&quot;custom-agent-{model_tested}&quot;
+experiment_prefix = f"custom-agent-{model_tested}"
 experiment_results = evaluate(
     predict_custom_agent_local_answer,
     data=dataset_name,
     evaluators=[answer_evaluator, check_trajectory_custom],
-    experiment_prefix=experiment_prefix + &quot;-answer-and-tool-use&quot;,
+    experiment_prefix=experiment_prefix + "-answer-and-tool-use",
     num_repetitions=3,
     max_concurrency=1, # Use when running locally
-    metadata={&quot;version&quot;: metadata},
+    metadata={"version": metadata},
 )
 ```
 
 ```
-View the evaluation results for experiment: &#x27;custom-agent-llama3-8b-answer-and-tool-use-d6006159&#x27; at:
+View the evaluation results for experiment: 'custom-agent-llama3-8b-answer-and-tool-use-d6006159' at:
 https://smith.langchain.com/o/1fa8b1f4-fcb9-4072-9aa9-983e35ad61b8/datasets/a8b9273b-ca33-4e2f-9f69-9bbc37f6f51b/compare?selectedSessions=83c60822-ef22-43e8-ac85-4488af279c6f
 ```
 
 ```
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
-Tool calls custom agent: [&#x27;retrieve_documents&#x27;, &#x27;grade_document_retrieval&#x27;, &#x27;web_search&#x27;, &#x27;generate_answer&#x27;]
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
+Tool calls custom agent: ['retrieve_documents', 'grade_document_retrieval', 'web_search', 'generate_answer']
 ```
 
 我们可以看到使用自定义代理（如图所示）和ReAct对GPT-4o和Llama-3-70b进行基准测试的结果。

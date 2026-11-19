@@ -1,3 +1,4 @@
+
 # 2025-02-19牛马福音-用AI提效办公-DEEPSEEK+WPS解决方案 副本
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/HXu7dcmmIoPCXpxZAyAc8VMwnLo](https://xuqiwei1986.feishu.cn/docx/HXu7dcmmIoPCXpxZAyAc8VMwnLo)
@@ -10,7 +11,7 @@
 
 办公场景，例如PPT等，是企业多数岗位比较核心的工作内容之一，今天就借助DEEPSEEK的浪潮，讲一下如何结合DS，创作PPT等文件
 
-# 一、软件选择：WPS
+## 一、软件选择：WPS
 
 众所周知，在办公软件这一块，WPS是没有对手的
 
@@ -32,7 +33,7 @@ WPS的DS入口藏的比较深，可以从软件版进入，也可以直接进入
 
 3、不止有DS，更有更多指令
 
-# 二、如何使用WPS版DS
+## 二、如何使用WPS版DS
 
 首先，根据上节的路径进入，网页版或APP版
 
@@ -56,7 +57,7 @@ WPS的DS入口藏的比较深，可以从软件版进入，也可以直接进入
 
 有了这些内容基础，就可以开始进一步更深入的操作了
 
-# 三、深入使用WPS+DS功能
+## 三、深入使用WPS+DS功能
 
 先做个PPT吧，网页看着有点累~
 
@@ -76,7 +77,7 @@ WPS的DS入口藏的比较深，可以从软件版进入，也可以直接进入
 
 [龙哥盟商业计划书-AI生成仅用于展示.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KaMzb9LkyoyVpnxfwOac3aZCnAG)
 
-# 四、除了PPT，DS+WPS还能做什么
+## 四、除了PPT，DS+WPS还能做什么
 
 再来个基础的，文档都有了，生成个思维导图吧
 
@@ -106,7 +107,7 @@ WPS的DS入口藏的比较深，可以从软件版进入，也可以直接进入
 
 [付费社群规划方案.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cm3RbXHtDovyBsxLoI3cMIJvnkb)
 
-# 五、一些思考
+## 五、一些思考
 
 以上是用付费社群在做案例，进行商业规划
 

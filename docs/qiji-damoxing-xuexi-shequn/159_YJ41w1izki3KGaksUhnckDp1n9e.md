@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（7月 9日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/OjkNdmfHcoH3sExprqacNmrsnKe](https://miracleplus.feishu.cn/docx/OjkNdmfHcoH3sExprqacNmrsnKe)
 
-# 推特
+## 推特
 
 ### Aman Ibrahim分享TerifAI Demo：展示了人工智能如何成为语音网络钓鱼的催化剂
 
@@ -14,11 +15,11 @@ https://x.com/amanmibra/status/1810498609613553741
 
 与TerifAI交谈大约一分钟，它会：
 
-+   记住你的基本信息
++ 记住你的基本信息
 
-+   模仿你的说话风格
++ 模仿你的说话风格
 
-+   克隆你的声音并用它与你对话
++ 克隆你的声音并用它与你对话
 
 所有这些都在几秒钟内自动完成...
 
@@ -28,7 +29,7 @@ Cc @_buildspace @_nightsweekends @FarzaTV
 
 ![](img/f1be07d345634fecb2b13841d49fe977.png)
 
-[ssstwitter.com_1720518853261.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bqanblf63oq5vUxlfzOc6FM6nQb)
+[`ssstwitter.com_1720518853261.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Bqanblf63oq5vUxlfzOc6FM6nQb)
 
 ### Naklecha分享使用语言模型来完全自动化《异星工厂》（Factorio）：正在训练Llama3在初期作出明智决策
 
@@ -50,7 +51,7 @@ https://x.com/olivercameron/status/1810335663197413406
 
 ![](img/8ca8b4167f1a8c9b2139eba58324900a.png)
 
-[ssstwitter.com_1720476914290.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LVx8bOyyWobLbNxZf1RcE9z3nEd)
+[`ssstwitter.com_1720476914290.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LVx8bOyyWobLbNxZf1RcE9z3nEd)
 
 ### HabbiaAI融资B轮1.3亿美元，a16z合伙人Immerman：Hebbia可以节省时间并产生超额收益，打造出不太可能想到的分析
 
@@ -58,7 +59,7 @@ https://x.com/aleximm/status/1810323944899334292
 
 Alex Immerman：我们正在进入新的SaaS时代，从软件即服务（Software-as-a-Service）转向服务即软件（Service-as-a-Software）。
 
-到目前为止，软件的访问帮助分析师更好地完成他们的工作。在金融领域，Bloomberg或Capital IQ提高了员工的生产力。
+目前为止，软件的访问帮助分析师更好地完成他们的工作。在金融领域，Bloomberg或Capital IQ提高了员工的生产力。
 
 但在不远的将来，AI代理将为他们完成这些工作。如果你在金融服务行业，@HebbiaAI 正迅速崛起成为终极分析师。
 
@@ -66,25 +67,25 @@ Hebbia始终可用，能够翻阅无数的公共和私人文件，完成无限�
 
 一些常见的提示：
 
-+   “Databricks的前10大客户是谁？他们是如何随着时间的推移增长的？管理层在内部演讲中讨论了什么？”
++ “Databricks的前10大客户是谁？他们是如何随着时间的推移增长的？管理层在内部演讲中讨论了什么？”
 
-+   “哪些赞助商在其信贷协议中有最宽松的新增债务条款？”
++ “哪些赞助商在其信贷协议中有最宽松的新增债务条款？”
 
-+   “在过去10年中，哪些公司每年收入增长超过5倍？其关键指标（规模、NDR、利润率）是什么？”
++ “在过去10年中，哪些公司每年收入增长超过5倍？其关键指标（规模、NDR、利润率）是什么？”
 
-+   “FTX的债权人如何回收了其索赔的118-142%？”
++ “FTX的债权人如何回收了其索赔的118-142%？”
 
 Hebbia正快速满足其惊人的需求，我们@a16z 很高兴领导他们的下一轮融资。
 
 ![](img/6d1589b4d7eb3d7cead26534b0f87427.png)
 
-[ssstwitter.com_1720519195925.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YrF4bT0OgoVHJQxqdgOcn0HYnMh)
+[`ssstwitter.com_1720519195925.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YrF4bT0OgoVHJQxqdgOcn0HYnMh)
 
-###  Taelin：大多数人都在错误地使用LLM，你描述解决方案。它来写代码。那才是终极生产力提升
+### Taelin：大多数人都在错误地使用LLM，你描述解决方案。它来写代码。那才是终极生产力提升
 
 https://x.com/VictorTaelin/status/1810317374064828618
 
-PSA：如果你因为最终获得了足够的证据说服自己LLM“不能推理”而不使用它们来编写代码，你是100%正确的，但也将被淘汰，就像那些拒绝使用Google或Git的人一样。
+PSA：如果你因为最终获得了足够的证据说服自己LLM“不能推理”而不使用它们来编写代码，你是100%正确的，但也将被淘汰，就像那些拒绝使用Google或`Git`的人一样。
 
 ---
 
@@ -100,7 +101,7 @@ Jay Phelps：为什么要花钱订阅ChatGPT，当你可以在Amazon的任何产
 
 ![](img/6f45bcbbd6e537980b4341f398971aae.png)
 
-# 产品
+## 产品
 
 ### Content Studio AI
 
@@ -122,7 +123,7 @@ Doti是一款由 AI 驱动的健康和习惯跟踪助手。它通过综合分析
 
 ![](img/83f0a96ab96d68915f045ca90c353eda.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Kolors
 
@@ -144,7 +145,7 @@ ARC-AGI是一个用于评估通用人工智能能力的基准测试集。它包�
 
 ![](img/1c6de9bf6cf01e2326291cf8055a2dc2.png)
 
-# 投融资
+## 投融资
 
 ### Questflow获得150万美元天使轮融资
 
@@ -182,7 +183,7 @@ https://www.d1ev.com/news/shichang/236856
 
 ![](img/5c5dbd8838a23d670cd8f58530804c07.png)
 
-# 学习
+## 学习
 
 ### LLM推理优化之Mélange：不是H100租不起，而GPU混布更有性价比
 
@@ -220,7 +221,7 @@ https://mp.weixin.qq.com/s/fxuSt06Hn7ux4NCtTXOGLA
 
 https://zhuanlan.zhihu.com/p/707076469
 
-文章深入探讨了大型语言模型（LLM）的解码策略，尤其是贪心解码和 Beam Search 的局限性。实验结果揭示了 LLM 输出序列空间的概率与语义相关性不大，序列多样性巨大但语义多样性有限。作者提出了 Self Consistency 和多次随机抽样的方法，以改进 LLM 的输出结果，强调这些方法在实际应用中的有效性和优势。此外，文章还对 LLM API 的特殊需求进行了探讨，包括 top_logprob 的获取和 Partial mode 的实现，以及如何通过调整 temperature 和 top_p 等参数来控制探索过程。这些见解为 LLM 的输出空间探索和 decode 策略的改进提供了新的思路和方向。
+文章深入探讨了大型语言模型（LLM）的解码策略，尤其是贪心解码和 Beam Search 的局限性。实验结果揭示了 LLM 输出序列空间的概率与语义相关性不大，序列多样性巨大但语义多样性有限。作者提出了 Self Consistency 和多次随机抽样的方法，以改进 LLM 的输出结果，强调这些方法在实际应用中的有效性和优势。此外，文章还对 LLM API 的特殊需求进行了探讨，包括 `top_logprob` 的获取和 `Partial` mode 的实现，以及如何通过调整 `temperature` 和 `top_p` 等参数来控制探索过程。这些见解为 LLM 的输出空间探索和 decode 策略的改进提供了新的思路和方向。
 
 ### Triton-Linalg
 
@@ -228,7 +229,7 @@ https://zhuanlan.zhihu.com/p/707076469
 
 https://zhuanlan.zhihu.com/p/707274848?utm_psn=1793709610584129537
 
-Triton-Linalg是一个为Triton方言下降到linalg方言提供路径的开源项目。通过学习Triton-Linalg的仓库，了解到该项目支持从Triton原语到linalg-on-tensor的完整下降流程，尤其强调了与硬件无关的中间层表示IR，便于进行算子优化和扩展。该工作的技术细节主要集中在后期的"Analysis"、"Conversion"和"Pipeline"部分，目前这些内容尚未完全整理完成。Triton-Linalg引入了新的dialect如LinalgExt和Auxiliary，通过这些扩展提高了算子的支持范围和优化潜力。此外，它与Microsoft的Triton-shared项目在支持的算子和下降行为上有所区别，例如对指针的处理和环境配置等。整体上，Triton-Linalg项目展现了其对MLIR社区中linalg的贡献和在AI编译器领域的实际应用潜力。
+Triton-Linalg是一个为Triton方言下降到`linalg`方言提供路径的开源项目。通过学习Triton-Linalg的仓库，了解到该项目支持从Triton原语到`linalg-on-tensor`的完整下降流程，尤其强调了与硬件无关的中间层表示IR，便于进行算子优化和扩展。该工作的技术细节主要集中在后期的"Analysis"、"Conversion"和"Pipeline"部分，目前这些内容尚未完全整理完成。Triton-Linalg引入了新的dialect如`LinalgExt`和`Auxiliary`，通过这些扩展提高了算子的支持范围和优化潜力。此外，它与Microsoft的`Triton-shared`项目在支持的算子和下降行为上有所区别，例如对指针的处理和环境配置等。整体上，Triton-Linalg项目展现了其对MLIR社区中`linalg`的贡献和在AI编译器领域的实际应用潜力。
 
 ![](img/8b0b69de745bc90e96e677a9fe277fc0.png)
 
@@ -238,11 +239,15 @@ Triton-Linalg是一个为Triton方言下降到linalg方言提供路径的开源�
 
 https://zhuanlan.zhihu.com/p/707021763?utm_psn=1792626735168229376
 
-TokenPacker 是一种高效的视觉 token 压缩方法，旨在提升多模态大模型的性能。该方法通过 coarse-to-fine 策略，对视觉特征进行下采样，并利用 point-to-region cross attention 机制，实现从高分辨率到低分辨率的有效信息注入。这种方法不仅减少了视觉 token 的数量，降低了计算量，而且保留了关键视觉信息，确保了模型性能不下降。在正常分辨率的实验中，TokenPacker 在压缩比为 1/9 时，平均性能略有下降，但在 1/16 压缩比下，性能仍然可以与基线模型相媲美。对于大分辨率图像，TokenPacker 采用动态图像划分策略，能够在最大程度上保持图像信息，同时显著减少 token 数量，提高了模型的处理效率。实验结果表明，TokenPacker 在多个 benchmark 上都展现出了优异的性能，特别是在处理大分辨率图像时，其性能优于现有的压缩方法。此外，消融实验进一步证实了 TokenPacker 在不同视觉映射器设置下的有效性和优势。
+
+
+# `TokenPacker`
+
+`TokenPacker` 是一种高效的视觉 token 压缩方法，旨在提升多模态大模型的性能。该方法通过 coarse-to-fine 策略，对视觉特征进行下采样，并利用 point-to-region cross attention 机制，实现从高分辨率到低分辨率的有效信息注入。这种方法不仅减少了视觉 token 的数量，降低了计算量，而且保留了关键视觉信息，确保了模型性能不下降。在正常分辨率的实验中，`TokenPacker` 在压缩比为 1/9 时，平均性能略有下降，但在 1/16 压缩比下，性能仍然可以与基线模型相媲美。对于大分辨率图像，`TokenPacker` 采用动态图像划分策略，能够在最大程度上保持图像信息，同时显著减少 token 数量，提高了模型的处理效率。实验结果表明，`TokenPacker` 在多个 benchmark 上都展现出了优异的性能，特别是在处理大分辨率图像时，其性能优于现有的压缩方法。此外，消融实验进一步证实了 `TokenPacker` 在不同视觉映射器设置下的有效性和优势。
 
 ![](img/2aea7baf31496be463b04f03fe85b9cf.png)
 
-### “闭门造车”之多模态思路浅谈（二）：自回归
+## “闭门造车”之多模态思路浅谈（二）：自回归
 
 贡献人：
 
@@ -250,11 +255,9 @@ https://kexue.fm/archives/10197
 
 文章首先回顾了多模态思路的基本概念，即通过整合不同模态的数据（如文本、图像、视频等）来提升模型的性能和泛化能力。随后，作者详细阐述了自回归模型在多模态领域的应用，自回归模型是一种生成模型，能够根据已有信息预测下一时刻的数据。在 “闭门造车” 项目中，自回归模型被用于处理序列数据，如时间序列预测、语言模型等。文章指出，自回归模型在处理复杂的多模态数据时，能够有效地捕捉数据之间的时间动态和依赖关系。此外，作者还分析了自回归模型在实际应用中可能遇到的挑战，如模型的复杂性、计算效率和泛化能力等问题。最后，文章提出了对未来多模态自回归模型研究的展望，包括更高效的算法设计、更好的数据融合策略以及更加健壮的模型结构。
 
-# 声明
+## 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -266,11 +269,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

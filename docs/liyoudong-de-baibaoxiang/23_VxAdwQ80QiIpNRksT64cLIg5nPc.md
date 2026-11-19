@@ -1,3 +1,4 @@
+
 # 通用且屡试不爽的提示词模版
 
 > 来源：[https://docs.feishu.cn/docx/Syf6deeAMo1Ro0xWLAzcXNXSnxd](https://docs.feishu.cn/docx/Syf6deeAMo1Ro0xWLAzcXNXSnxd)

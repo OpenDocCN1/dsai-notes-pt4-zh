@@ -1,20 +1,15 @@
+
 # 关于 Token AI产品经理需了解
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/DUWxdokLpohP4ZxPsDDcE58Gnre](https://v11enp9ok1h.feishu.cn/docx/DUWxdokLpohP4ZxPsDDcE58Gnre)
+> 来源：`https://v11enp9ok1h.feishu.cn/docx/DUWxdokLpohP4ZxPsDDcE58Gnre`
 
-本文大概 4200 字，阅读时间 10 分钟，会讲以下几个点
+本文大概 4200 字，阅读时间 10 分钟，会讲以下几个点：
 
-一、什么是 token
-
-二、现在我们使用的大模型 token 有哪些限制
-
-三、怎么看我使用了多少 token
-
-四、token 限制对 prompt 编写有什么影响
-
-五、基于上述原理有哪些 tips
-
----
+1. 什么是 token
+2. 现在我们使用的大模型 token 有哪些限制
+3. 怎么看我使用了多少 token
+4. token 限制对 prompt 编写有什么影响
+5. 基于上述原理有哪些 tips
 
 ## 一、什么是 token
 
@@ -36,4 +31,4 @@
 
 ## 二、为什么会有 token
 
-这部分内容引用了知乎作者 卡卡罗特 的专栏文章:ChatGPT 实用指南(一)-知乎(zhihu.com)内容过于学术所以只做了节选，特别感兴趣的同学也可以点进去查阅完整文章，写的是非常好的。
+这部分内容引用了知乎作者 卡卡罗特 的专栏文章:ChatGPT 实用指南(一)-知乎(`zhihu.com`)内容过于学术所以只做了节选，特别感兴趣的同学也可以点进去查阅完整文章，写的是非常好的。

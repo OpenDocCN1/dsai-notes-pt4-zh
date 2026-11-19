@@ -1,3 +1,4 @@
+
 # 基于liblib的文生图（有小任务和详细教程版）
 
 > 来源：[https://datawhaler.feishu.cn/docx/QO0mdKJSroEYr1xMh1fcCb0vnuc](https://datawhaler.feishu.cn/docx/QO0mdKJSroEYr1xMh1fcCb0vnuc)
@@ -44,7 +45,7 @@
 
 迭代步数可以在他给出的上下尝试，建议20-30步之间最优。迭代步数越少速度越快，质量越低。
 
-提示词引导系数是你说的话有多重要，比如你调高了，他会认为这个事情很重要，但太高的话他会像个叛逆的小孩一样，用鬼畜的方式实现。
+提示词引导系数是说你的话有多重要，比如你调高了，他会认为这个事情很重要，但太高的话他会像个叛逆的小孩一样，用鬼畜的方式实现。
 
 随机数种子不用去改，如果你特喜欢一个风格时，可以考虑固定他。
 
@@ -52,7 +53,7 @@
 
 提示词：A cyber-girl stands in a neon-soaked alley,quantum-chrome liquid trench coat shimmering under acid rain. Cyan-circuit biomechanical arm contrasts with holographic facial implants,while magnetic levitation boots shatter puddles reflecting Japanese holograms. Nano-drone barrier floats above gradient undercut,palm projecting 3D city blueprints as iridescent eyelashes flicker with data streams. Seal-script collar projection casts cyber-moon shadows through blockchain interfaces,fusing glitchcore aesthetics with synthwave futurism.,
 
-负向提示词：ng_deepnegative_v1_75t,(badhandv4:1.2),EasyNegative,(worst quality:2),
+负向提示词：`ng_deepnegative_v1_75t`,`(`badhandv4`:1.2),`EasyNegative`,(`worst quality`:2),
 
 迭代步数：30
 

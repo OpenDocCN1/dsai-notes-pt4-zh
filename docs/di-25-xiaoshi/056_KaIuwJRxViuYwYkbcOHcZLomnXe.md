@@ -1,79 +1,82 @@
+
 # 007 多分类
 
-> 来源：[https://my.feishu.cn/docx/Jeyed0WOaouMPSxjVvKcwWc3nCz](https://my.feishu.cn/docx/Jeyed0WOaouMPSxjVvKcwWc3nCz)
+> 来源：`https://my.feishu.cn/docx/Jeyed0WOaouMPSxjVvKcwWc3nCz`
 
-# 背景
+## 背景
 
-前面我们一直在介绍**二分类的逻辑回归**问题，我们**只需要**输出一个概率就可以对数据集进行二分类。但是在现实生活中不仅包含二分类问题，也包含很多分类问题。举个例子，比如说你在画板上手写了一个数字，你用神经网络来判断这个手写的数字是 0- 9 哪个数字，那么这个问题一共就有 10 个分类，也就是多分类。再比如我们使用神经网络对通用的图片进行分类，比如说判断一张图片里面是否有钢琴、自行车、公鸡、母鸡、猫狗等等，可能就会有成千上万种分类了。那在下面，我们就来谈谈多分类。
+前面我们一直在介绍二分类的逻辑回归问题，我们只需要输出一个概率就可以对数据集进行二分类。但是在现实生活中不仅包含二分类问题，也包含很多分类问题。举个例子，比如说你在画板上手写了一个数字，你用神经网络来判断这个手写的数字是 0- 9 哪个数字，那么这个问题一共就有 10 个分类，也就是多分类。再比如我们使用神经网络对通用的图片进行分类，比如说判断一张图片里面是否有钢琴、自行车、公鸡、母鸡、猫狗等等，可能就会有成千上万种分类了。那在下面，我们就来谈谈多分类。
 
-# 一、任务简介、主要步骤
+## 一、任务简介、主要步骤
 
-## 1、任务简介 - 鸢尾花例子
+### 1、任务简介 - 鸢尾花例子
 
 面对这样的多分类问题，我们该构建怎样的神经网络才能解决它们呢？
 
-**在应对更为**复杂的多分类问题之前，我们先用一个著**名的鸢**尾花分类来进行学习。鸢尾花的英文叫做Iris，这个数据集已经诞生很多年了，无数的数据科学家用它作为数据集去验证自己的算法以及模型。因此，我们用这个数据集来进行多分类。
+在应对更为复杂的多分类问题之前，我们先用一个著名的鸢尾花分类来进行学习。鸢尾花的英文叫做Iris，这个数据集已经诞生很多年了，无数的数据科学家用它作为数据集去验证自己的算法以及模型。因此，我们用这个数据集来进行多分类。
 
-下面，继续给大家介绍一下**什么是鸢尾花分类****。我**们这个分类**问题**是**要根据鸢**尾花的花瓣长度宽度，花鳄的长度宽度来将鸢尾花分为三个类别，分别是山鸢尾（Iris setosa）、变色烟尾和维吉尼亚鸢尾（Iris virginica）。
+下面，继续给大家介绍一下什么是鸢尾花分类。我们这个分类问题是要根据鸢尾花的花瓣长度宽度，花鳄的长度宽度来将鸢尾花分为三个类别，分别是山鸢尾（Iris setosa）、变色烟尾和维吉尼亚鸢尾（Iris virginica）。
 
 那花瓣的长度宽度，花萼的长度宽度，就一共有4个特征。之前我们构建的神经网络都是两个特征，现在就变成四个特征。那对于更为复杂的神经网络，我们该怎样构建呢？以至于既能解决这个多分类问题，又能输出这个多分类的概率输出，且满足多分类的结果。
 
-事实上，面对这样的问题，我们只需要构建一个多层神经网络，并在神经网络的最后一层加一个 Softmax 激活函数就可以了。
+事实上，面对这样的问题，我们只需要构建一个多层神经网络，并在神经网络的最后一层加一个 `Softmax` 激活函数就可以了。
 
 ![](img/adc3ccd3ab79ac5693ed699638b57c9f.png)
 
-## 2、主要步骤
+### 2、主要步骤
 
-+   加载 IRIS 数据集（训练集与验证集）
++ 加载 IRIS 数据集（训练集与验证集）
 
-+   定义模型结构：带有softmax的多层神经网络
++ 定义模型结构：带有`softmax`的多层神经网络
 
-+   训练模型并预测
++ 训练模型并预测
 
-# 二、加载iris数据集（训练集与验证集）
+## 二、加载iris数据集（训练集与验证集）
 
-## 1、关于训练集和验证集
+### 1、关于训练集和验证集
 
-+   训练集用于后面的模型训练，而验证集则用于验证模型是否训练的越来越好。
++ 训练集用于后面的模型训练，而验证集则用于验证模型是否训练的越来越好。
 
-+   验证集跟训练集的数据格式是一模一样的。在实际的工作中，验证集往往都是从训练集里面分一部分出来的，它俩的格式一模一样，也就意味着训练集跟验证集都包括了输入特征和对应的标签。
++ 验证集跟训练集的数据格式是一模一样的。在实际的工作中，验证集往往都是从训练集里面分一部分出来的，它俩的格式一模一样，也就意味着训练集跟验证集都包括了输入特征和对应的标签。
 
-+   虽然它俩格式一样，但但是作用不一样。训练集是用于训练神经网络的，换句话说，神经网络的权重会因为训练集的数据而变化，但是它的权重却不会因为验证级的数据而变化，因为验证级只是用来验证这个模型是否训练的越来越好了。
++ 虽然它俩格式一样，但但是作用不一样。训练集是用于训练神经网络的，换句话说，神经网络的权重会因为训练集的数据而变化，但是它的权重却不会因为验证级的数据而变化，因为验证级只是用来验证这个模型是否训练的越来越好了。
 
-+   举个例子，比如说在训练过程中，我们训练集的损失越来越低了，但是验证级的损失却越来越高，那就证明你这个模型没有越训练越好，你就该停止了，这个时候就要思考下要不要改一些模型结构或者其他超参数再训练它。
++ 举个例子，比如说在训练过程中，我们训练集的损失越来越低了，但是验证级的损失却越来越高，那就证明你这个模型没有越训练越好，你就该停止了，这个时候就要思考下要不要改一些模型结构或者其他超参数再训练它。
 
-## 1、操作步骤
+### 1、操作步骤
 
-+   使用预先准备好的脚本生成IRIS的数据集，包括训练集与验证集
++ 使用预先准备好的脚本生成IRIS的数据集，包括训练集与验证集
 
-+   多打印 IRIS 数据集
++ 多打印 IRIS 数据集
 
-## 2、训练过程
+### 2、训练过程
 
-首先，我们先创建一个 data.js 文件，功能主要用来**生成二分类数据集**。
+首先，我们先创建一个 `data.js` 文件，功能主要用来生成二分类数据集。
+
+
 
 ```
 /**
  * @license
  * Copyright 2018 Google LLC. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
  */
 
-import * as tf from &#x27;@tensorflow/tfjs&#x27;;
+import * as tf from '@tensorflow/tfjs';
 
 export const IRIS_CLASSES =
-    [&#x27;山鸢尾&#x27;, &#x27;变色鸢尾&#x27;, &#x27;维吉尼亚鸢尾&#x27;];
+    ['山鸢尾', '变色鸢尾', '维吉尼亚鸢尾'];
 export const IRIS_NUM_CLASSES = IRIS_CLASSES.length;
 
 // Iris flowers data. Source:
@@ -151,19 +154,19 @@ const IRIS_DATA = [
 function convertToTensors(data, targets, testSplit) {
   const numExamples = data.length;
   if (numExamples !== targets.length) {
-    throw new Error(&#x27;data and split have different numbers of examples&#x27;);
+    throw new Error('data and split have different numbers of examples');
   }
 
   // Randomly shuffle `data` and `targets`.
   const indices = [];
-  for (let i = 0; i &lt; numExamples; ++i) {
+  for (let i = 0; i < numExamples; ++i) {
     indices.push(i);
   }
   tf.util.shuffle(indices);
 
   const shuffledData = [];
   const shuffledTargets = [];
-  for (let i = 0; i &lt; numExamples; ++i) {
+  for (let i = 0; i < numExamples; ++i) {
     shuffledData.push(data[indices[i]]);
     shuffledTargets.push(targets[indices[i]]);
   }
@@ -178,7 +181,7 @@ function convertToTensors(data, targets, testSplit) {
   const xs = tf.tensor2d(shuffledData, [numExamples, xDims]);
 
   // Create a 1D `tf.Tensor` to hold the labels, and convert the number label
-  // from the set {0, 1, 2} into one-hot encoding (.e.g., 0 --&gt; [1, 0, 0]).
+  // from the set {0, 1, 2} into one-hot encoding (.e.g., 0 --> [1, 0, 0]).
   const ys = tf.oneHot(tf.tensor1d(shuffledTargets).toInt(), IRIS_NUM_CLASSES);
 
   // Split the data into training and test sets, using `slice`.
@@ -206,10 +209,10 @@ function convertToTensors(data, targets, testSplit) {
  *     {0, 1, 2}.
  */
 export function getIrisData(testSplit) {
-  return tf.tidy(() =&gt; {
+  return tf.tidy(() => {
     const dataByClass = [];
     const targetsByClass = [];
-    for (let i = 0; i &lt; IRIS_CLASSES.length; ++i) {
+    for (let i = 0; i < IRIS_CLASSES.length; ++i) {
       dataByClass.push([]);
       targetsByClass.push([]);
     }
@@ -224,7 +227,7 @@ export function getIrisData(testSplit) {
     const yTrains = [];
     const xTests = [];
     const yTests = [];
-    for (let i = 0; i &lt; IRIS_CLASSES.length; ++i) {
+    for (let i = 0; i < IRIS_CLASSES.length; ++i) {
       const [xTrain, yTrain, xTest, yTest] =
           convertToTensors(dataByClass[i], targetsByClass[i], testSplit);
       xTrains.push(xTrain);
@@ -242,7 +245,10 @@ export function getIrisData(testSplit) {
 }
 ```
 
-接着，创建script.js文件，来加载Iris的数据集。**具体代码如下：**
+
+
+接着，创建`script.js`文件，来加载Iris的数据集。
+具体代码如下：
 
 ```
 import * as tf from &#x27;@tensorflow/tfjs&#x27;;
@@ -260,15 +266,13 @@ window.onload = async () =&gt; {
 
 ## 1、操作步骤
 
-+   初始化一个神经网络模型
-
-+   为神经网络模型添加两个层
-
-+   设计这两个层的神经元个数、inputShape、激活函数
++ 初始化一个神经网络模型
++ 为神经网络模型添加两个层
++ 设计这两个层的神经元个数、`inputShape`、激活函数
 
 ## 2、训练过程
 
-我们需要用model，来为这个神经网络网络添加**两个层**。具体代码如下👇🏻：
+我们需要用`model`，来为这个神经网络网络添加两个层。具体代码如下👇🏻：
 
 ```
 import * as tf from &#x27;@tensorflow/tfjs&#x27;;
@@ -302,15 +306,13 @@ window.onload = async () =&gt; {
 
 ## 1、操作步骤
 
-+   设置交叉熵函数
-
-+   添加准确度度量
-
-+   训练模型并使用tfvis可视化训练过程
++ 设置交叉熵函数
++ 添加准确度度量
++ 训练模型并使用`tfvis`可视化训练过程
 
 ## 2、训练过程
 
-**添加完成神经网络的层之后，**接下来要为这个模型，设置交叉熵损失函数与准确度度量，之后进行预测。具体代码如下👇🏻：
+添加完成神经网络的层之后，接下来要为这个模型，设置交叉熵损失函数与准确度度量，之后进行预测。具体代码如下👇🏻：
 
 ```
 import * as tf from &#x27;@tensorflow/tfjs&#x27;;
@@ -354,15 +356,13 @@ window.onload = async () =&gt; {
 
 ## 1、操作步骤
 
-+   编写前端界面，并输入待预测数据
-
-+   使用训练好的模型进行预测
-
-+   将输出的Tensor转为普通数据并显示
++ 编写前端界面，并输入待预测数据
++ 使用训练好的模型进行预测
++ 将输出的`Tensor`转为普通数据并显示
 
 ## 2、训练过程
 
-首先我们新建个文件夹 index.html，具体代码如下：
+首先我们新建个文件夹 `index.html`，具体代码如下：
 
 ```
 &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
@@ -375,7 +375,7 @@ window.onload = async () =&gt; {
 &lt;/form&gt;
 ```
 
-接着，在script.js文件里面，继续编写**对数据进行预测**的代码。如下所示：
+接着，在`script.js`文件里面，继续编写对数据进行预测的代码。如下所示：
 
 ```
 import * as tf from &#x27;@tensorflow/tfjs&#x27;;

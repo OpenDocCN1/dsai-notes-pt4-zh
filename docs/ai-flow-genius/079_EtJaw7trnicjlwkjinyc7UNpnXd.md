@@ -1,3 +1,4 @@
+
 # 全球首个内置 ChatGPT 智能音箱 ChatMini 计划下周发布
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/NQB7dVJgtohLwjxQuyacN6upnHh](https://jalicvoygc0.feishu.cn/docx/NQB7dVJgtohLwjxQuyacN6upnHh)
@@ -10,7 +11,7 @@
 
 ![](img/4d1e1d7f7c689e9fab41c11115e23de4.png)
 
-##### 继续浏览全站内容：
+### 继续浏览全站内容：
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

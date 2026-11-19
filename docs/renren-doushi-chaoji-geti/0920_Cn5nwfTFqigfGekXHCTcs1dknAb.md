@@ -1,3 +1,4 @@
+
 # 今天看到 Pika 全面放开的消息，瞬间炸锅了，想到我前两天拿到的 pika 内测资格，瞬间不香了，今天玩下
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/PKLzdWYDhoMQDoxUv9Ec2VFlnkc](https://xuqiwei1986.feishu.cn/docx/PKLzdWYDhoMQDoxUv9Ec2VFlnkc)
@@ -10,17 +11,15 @@
 
 ![](img/21e9174405624dc8d3ec080e629299c6.png)
 
-+   1、先来看 pika 在一些不同场景生成的视频
-
-+   2、给刚探索的人出一个保姆级教程
-
-+   3、一些使用感受，简单的技巧
++ 1、先来看 pika 在一些不同场景生成的视频
++ 2、给刚探索的人出一个保姆级教程
++ 3、一些使用感受，简单的技巧
 
 > PS: 现在还都是免费的（赶紧去薅羊毛），应该马上上付费模式了，全面放开之后，服务器的压力成本是你想象不到的大。
 
-# pika 在一些不同场景生成的视频
+## pika 在一些不同场景生成的视频
 
-### **风景**
+### 风景
 
 ![](img/96df8f0e11a2a91db0df81ddabfad01e.png)
 
@@ -34,7 +33,7 @@
 
 [风景4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Eoirb4DvqoTq4pxVqY4cnFswnue)
 
-### **特定场景**
+### 特定场景
 
 ![](img/f01bc7868a29ac8234e683ec035c871e.png)
 
@@ -52,7 +51,7 @@
 
 [特定4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CZrnbMdmqoYy9FxrtTfcJxXLn8b)
 
-### **动物**
+### 动物
 
 ![](img/e4921760c99e8feb33462bc7e6976d79.png)
 
@@ -78,13 +77,13 @@
 
 [动物6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EBZObZy8loV21kxST1ecDgNnno5)
 
-### **机甲**
+### 机甲
 
 ![](img/5345f68120db716ad5085e13a5d29741.png)
 
 [机甲.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ENQIbx0Y9oI0Bfx3u5GcoF8BnGe)
 
-### **商品**
+### 商品
 
 ![](img/fc354f965096e8c010fb8ba4ab7bf1de.png)
 
@@ -102,7 +101,7 @@
 
 [商品4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OGYdbAPAwo0MPnxylQXcWG6gnWb)
 
-### **人物**
+### 人物
 
 ![](img/ad7816a89d52f45c4264a70a87a9f122.png)
 
@@ -120,9 +119,9 @@
 
 [人物3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TBaZbAC34ogDTtxeI7ocK7MNnIh)
 
-# **保姆级教程**
+## 保姆级教程
 
-> 当你能够登录 pika(https://pika.art/)之后，首先看到的是这个界面。
+> 当你能够登录 pika(`https://pika.art/`)之后，首先看到的是这个界面。
 
 ![](img/a282cc77fd75b3a9e8afa140bb6d53c7.png)
 
@@ -136,15 +135,12 @@
 
 ![](img/595d3182d2235cd743dd942562aa28a5.png)
 
-> **运动设置：根据自己想要的**视频去设置，这里很重要，可以多尝试。
+> 运动设置：根据自己想要的视频去设置，这里很重要，可以多尝试。
 
-+   pan: 左右平移
-
-+   Tilt: 上下倾斜
-
-+   Rotate: 左右选装
-
-+   Zoom: 放大火诸葛缩小
++ pan: 左右平移
++ Tilt: 上下倾斜
++ Rotate: 左右选装
++ Zoom: 放大火诸葛缩小
 
 > 参数设置：这里包含三个参数，反向词、随机种子、与文本保持一致的强度大小。
 
@@ -152,11 +148,9 @@
 
 > 所以这里面有三种生成视频的方式，参数都可以根据自己的需要设置
 
-+   直接采用 prompt,发挥你的 prompt 工程能力。
-
-+   用 MJ、SD、DALL-E 生成的图片，加上参数控制，还可以 prompt 去生成视频,p2v 的方式。
-
-+   上传已有的视频，v2v 的方式。
++ 直接采用`prompt`,发挥你的`prompt`工程能力。
++ 用 MJ、SD、DALL-E 生成的图片，加上参数控制，还可以`prompt`去生成视频,p2v 的方式。
++ 上传已有的视频，v2v 的方式。
 
 > 生成的视频，不满意？还可以继续加工。
 
@@ -164,23 +158,19 @@
 
 ![](img/97431050d3e1d9142ce1b3c17734123d.png)
 
-+   重新生成
++ 重新生成
++ 重新`prompt`
++ 编辑(`Edit`)
++ 在原有的视频上面增加 4s
++ 增加画质。
 
-+   重新 prompt
-
-+   编辑(Edit)
-
-+   在原有的视频上面增加 4s
-
-+   增加画质。
-
-> 其中 Edit 还可以有以下的操作。
+> 其中`Edit`还可以有以下的操作。
 
 以上就是一些新人进去后可以看到的操作，其他的就需要多探索了。
 
-# **一些使用过程的感受**
+## 一些使用过程的感受
 
-1、一些简单的场景，比如风景类的，或者是动物类的，如果没有特殊的要求，可以直接使用prompt生成。
+1、一些简单的场景，比如风景类的，或者是动物类的，如果没有特殊的要求，可以直接使用`prompt`生成。
 
 2、 用AI生成的图片再去生成视频，效果确实好很多，特别是一些有人物存在的场景、或者一些对画面要求比较高的，像上面的机甲、商品
 
@@ -192,7 +182,7 @@
 
 6、对于一些商品宣传，还是蛮不错的。
 
-Pika链接🔗：https://pika.art/
+Pika链接🔗：`https://pika.art/`
 
 ---
 

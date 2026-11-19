@@ -1,3 +1,4 @@
+
 # 使用本地LLM的自适应RAG
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/XTdAdHF2socIUaxc5mycO5dtntg](https://qqs7y1hozd1.feishu.cn/docx/XTdAdHF2socIUaxc5mycO5dtntg)
@@ -6,17 +7,17 @@
 
 在论文[paper](https://arxiv.org/abs/2403.14403)中，他们报告了查询分析以路由跨越：
 
-+   无检索
++ 无检索
 
-+   单次RAG
++ 单次RAG
 
-+   迭代RAG
++ 迭代RAG
 
-让我们使用LangGraph在此基础上进行构建。
+让我们使用`LangGraph`在此基础上进行构建。
 
-+   网络搜索：与最近事件相关的问题
++ 网络搜索：与最近事件相关的问题
 
-+   网络搜索：与最近事件相关的问题
++ 网络搜索：与最近事件相关的问题
 
 ![](img/d357291d39a2445223a47ce318451cc4.png)
 
@@ -27,17 +28,17 @@
 %pip install -U langchain-nomic langchain_community tiktoken langchainhub chromadb langchain langgraph tavily-python nomic[local]
 ```
 
-LLMs
+### LLMs
 
-Local Embeddings
+#### Local Embeddings
 
-您可以使用Nomic的GPT4AllEmbedding（），它可以使用Nomic最近发布的v1和v1.5嵌入进行访问。
+您可以使用`Nomic`的`GPT4AllEmbedding()`，它可以使用`Nomic`最近发布的`v1`和`v1.5`嵌入进行访问。
 
-Local LLM
+#### Local LLM
 
-（1）下载Ollama应用程序。
+（1）下载`Ollama`应用程序。
 
-（2）从此处的各种Mistral版本和此处可用的Mixtral版本下载Mistral模型。此外，尝试一种quantized command-R models。
+（2）从此处的各种`Mistral`版本和此处可用的`Mixtral`版本下载`Mistral`模型。此外，尝试一种`command-R` models。
 
 ```
 ollama pull mistral
@@ -45,7 +46,7 @@ ollama pull mistral
 
 ```
 # Ollama model name
-local_llm = &quot;mistral&quot;
+local_llm = "mistral";
 ```
 
 ### Index
@@ -57,9 +58,9 @@ from langchain_community.vectorstores import Chroma
 from langchain_nomic.embeddings import NomicEmbeddings
 
 urls = [
-    &quot;https://lilianweng.github.io/posts/2023-06-23-agent/&quot;,
-    &quot;https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/&quot;,
-    &quot;https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/&quot;,
+    "https://lilianweng.github.io/posts/2023-06-23-agent/",
+    "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+    "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
 ]
 
 docs = [WebBaseLoader(url).load() for url in urls]
@@ -73,15 +74,15 @@ doc_splits = text_splitter.split_documents(docs_list)
 # Add to vectorDB
 vectorstore = Chroma.from_documents(
     documents=doc_splits,
-    collection_name=&quot;rag-chroma&quot;,
-    embedding=NomicEmbeddings(model=&quot;nomic-embed-text-v1.5&quot;, inference_mode=&quot;local&quot;),
+    collection_name="rag-chroma",
+    embedding=NomicEmbeddings(model="nomic-embed-text-v1.5", inference_mode="local"),
 )
 retriever = vectorstore.as_retriever()
 ```
 
 ### LLMs
 
-注意：在Mac M2 32GB上测试了cmd-R，RAG生成的延迟约为52秒。
+注意：在Mac M2 32GB上测试了`cmd-R`，RAG生成的延迟约为52秒。
 
 ```
 ### Router
@@ -91,27 +92,27 @@ from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import JsonOutputParser
 
 # LLM
-llm = ChatOllama(model=local_llm, format=&quot;json&quot;, temperature=0)
+llm = ChatOllama(model=local_llm, format="json", temperature=0)
 
 prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You are an expert at routing a user question to a vectorstore or web search. \n
+    template="""You are an expert at routing a user question to a vectorstore or web search. \n
     Use the vectorstore for questions on LLM  agents, prompt engineering, and adversarial attacks. \n
     You do not need to be stringent with the keywords in the question related to these topics. \n
-    Otherwise, use web-search. Give a binary choice &#x27;web_search&#x27; or &#x27;vectorstore&#x27; based on the question. \n
-    Return the a JSON with a single key &#x27;datasource&#x27; and no premable or explanation. \n
-    Question to route: {question}&quot;&quot;&quot;,
-    input_variables=[&quot;question&quot;],
+    Otherwise, use web-search. Give a binary choice 'web_search' or 'vectorstore' based on the question. \n
+    Return the a JSON with a single key 'datasource' and no premable or explanation. \n
+    Question to route: {question}""",
+    input_variables=["question"],
 )
 
 question_router = prompt | llm | JsonOutputParser()
-question = &quot;llm agent memory&quot;
+question = "llm agent memory"
 docs = retriever.get_relevant_documents(question)
 doc_txt = docs[1].page_content
-print(question_router.invoke({&quot;question&quot;: question}))
+print(question_router.invoke({"question": question}))
 ```
 
 ```
-{&#x27;datasource&#x27;: &#x27;vectorstore&#x27;}
+{'datasource': 'vectorstore'}
 ```
 
 ```
@@ -122,28 +123,28 @@ from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import JsonOutputParser
 
 # LLM
-llm = ChatOllama(model=local_llm, format=&quot;json&quot;, temperature=0)
+llm = ChatOllama(model=local_llm, format="json", temperature=0)
 
 prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You are a grader assessing relevance of a retrieved document to a user question. \n 
+    template="""You are a grader assessing relevance of a retrieved document to a user question. \n 
     Here is the retrieved document: \n\n {document} \n\n
     Here is the user question: {question} \n
     If the document contains keywords related to the user question, grade it as relevant. \n
     It does not need to be a stringent test. The goal is to filter out erroneous retrievals. \n
-    Give a binary score &#x27;yes&#x27; or &#x27;no&#x27; score to indicate whether the document is relevant to the question. \n
-    Provide the binary score as a JSON with a single key &#x27;score&#x27; and no premable or explanation.&quot;&quot;&quot;,
-    input_variables=[&quot;question&quot;, &quot;document&quot;],
+    Give a binary score 'yes' or 'no' score to indicate whether the document is relevant to the question. \n
+    Provide the binary score as a JSON with a single key 'score' and no premable or explanation.""",
+    input_variables=["question", "document"],
 )
 
 retrieval_grader = prompt | llm | JsonOutputParser()
-question = &quot;agent memory&quot;
+question = "agent memory"
 docs = retriever.get_relevant_documents(question)
 doc_txt = docs[1].page_content
-print(retrieval_grader.invoke({&quot;question&quot;: question, &quot;document&quot;: doc_txt}))
+print(retrieval_grader.invoke({"question": question, "document": doc_txt}))
 ```
 
 ```
-{&#x27;score&#x27;: &#x27;yes&#x27;}
+{'score': 'yes'}
 ```
 
 ```
@@ -154,7 +155,7 @@ from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 
 # Prompt
-prompt = hub.pull(&quot;rlm/rag-prompt&quot;)
+prompt = hub.pull("rlm/rag-prompt")
 
 # LLM
 llm = ChatOllama(model=local_llm, temperature=0)
@@ -162,103 +163,107 @@ llm = ChatOllama(model=local_llm, temperature=0)
 
 # Post-processing
 def format_docs(docs):
-    return &quot;\n\n&quot;.join(doc.page_content for doc in docs)
+    return "\n\n".join(doc.page_content for doc in docs)
 
 
 # Chain
 rag_chain = prompt | llm | StrOutputParser()
 
 # Run
-question = &quot;agent memory&quot;
-generation = rag_chain.invoke({&quot;context&quot;: docs, &quot;question&quot;: question})
+question = "agent memory"
+generation = rag_chain.invoke({"context": docs, "question": question})
 print(generation)
 ```
 
 ```
- In an LLM-powered autonomous agent system, the Large Language Model (LLM) functions as the agent&#x27;s brain. The agent has key components including memory, planning, and reflection mechanisms. The memory component is a long-term memory module that records a comprehensive list of agents’ experience in natural language. It includes a memory stream, which is an external database for storing past experiences. The reflection mechanism synthesizes memories into higher-level inferences over time and guides the agent&#x27;s future behavior.
+ In an LLM-powered autonomous agent system, the Large Language Model (LLM) functions as the agent's brain. The agent has key components including memory, planning, and reflection mechanisms. The memory component is a long-term memory module that records a comprehensive list of agents’ experience in natural language. It includes a memory stream, which is an external database for storing past experiences. The reflection mechanism synthesizes memories into higher-level inferences over time and guides the agent's future behavior.
 ```
 
 ```
 ### Hallucination Grader
 
 # LLM
-llm = ChatOllama(model=local_llm, format=&quot;json&quot;, temperature=0)
+llm = ChatOllama(model=local_llm, format="json", temperature=0)
 
 # Prompt
 prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You are a grader assessing whether an answer is grounded in / supported by a set of facts. \n 
+    template="""You are a grader assessing whether an answer is grounded in / supported by a set of facts. \n 
     Here are the facts:
     \n ------- \n
     {documents} 
     \n ------- \n
     Here is the answer: {generation}
-    Give a binary score &#x27;yes&#x27; or &#x27;no&#x27; score to indicate whether the answer is grounded in / supported by a set of facts. \n
-    Provide the binary score as a JSON with a single key &#x27;score&#x27; and no preamble or explanation.&quot;&quot;&quot;,
-    input_variables=[&quot;generation&quot;, &quot;documents&quot;],
+    Give a binary score 'yes' or 'no' score to indicate whether the answer is grounded in / supported by a set of facts. \n
+    Provide the binary score as a JSON with a single key 'score' and no preamble or explanation.""",
+    input_variables=["generation", "documents"],
 )
 
 hallucination_grader = prompt | llm | JsonOutputParser()
-hallucination_grader.invoke({&quot;documents&quot;: docs, &quot;generation&quot;: generation})
+hallucination_grader.invoke({"documents": docs, "generation": generation})
 ```
 
 ```
-{&#x27;score&#x27;: &#x27;yes&#x27;}
+{'score': 'yes'}
 ```
 
 ```
 ### Answer Grader
 
 # LLM
-llm = ChatOllama(model=local_llm, format=&quot;json&quot;, temperature=0)
+llm = ChatOllama(model=local_llm, format="json", temperature=0)
 
 # Prompt
 prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You are a grader assessing whether an answer is useful to resolve a question. \n 
+    template="""You are a grader assessing whether an answer is useful to resolve a question. \n 
     Here is the answer:
     \n ------- \n
     {generation} 
     \n ------- \n
     Here is the question: {question}
-    Give a binary score &#x27;yes&#x27; or &#x27;no&#x27; to indicate whether the answer is useful to resolve a question. \n
-    Provide the binary score as a JSON with a single key &#x27;score&#x27; and no preamble or explanation.&quot;&quot;&quot;,
-    input_variables=[&quot;generation&quot;, &quot;question&quot;],
+    Give a binary score 'yes' or 'no' to indicate whether the answer is useful to resolve a question. \n
+    Provide the binary score as a JSON with a single key 'score' and no preamble or explanation.""",
+    input_variables=["generation", "question"],
 )
 
 answer_grader = prompt | llm | JsonOutputParser()
-answer_grader.invoke({&quot;question&quot;: question, &quot;generation&quot;: generation})
+answer_grader.invoke({"question": question, "generation": generation})
 ```
 
 ```
-{&#x27;score&#x27;: &#x27;yes&#x27;}
+{'score': 'yes'}
 ```
 
-```
+
+
 ### Question Re-writer
 
-# LLM
-llm = ChatOllama(model=local_llm, temperature=0)
+#### LLM
 
-# Prompt
+```
+llm = ChatOllama(model=local_llm, temperature=0)
+```
+
+#### Prompt
+
+```
 re_write_prompt = PromptTemplate(
-    template=&quot;&quot;&quot;You a question re-writer that converts an input question to a better version that is optimized \n 
+    template="""You a question re-writer that converts an input question to a better version that is optimized \n 
      for vectorstore retrieval. Look at the initial and formulate an improved question. \n
-     Here is the initial question: \n\n {question}. Improved question with no preamble: \n &quot;&quot;&quot;,
-    input_variables=[&quot;generation&quot;, &quot;question&quot;],
+     Here is the initial question: \n\n {question}. Improved question with no preamble: \n """,
+    input_variables=["generation", "question"],
 )
 
 question_rewriter = re_write_prompt | llm | StrOutputParser()
-question_rewriter.invoke({&quot;question&quot;: question})
+question_rewriter.invoke({"question": question})
 ```
 
-```
-&#x27; What is agent memory and how can it be effectively utilized in vector database retrieval?&#x27;
-```
+' What is agent memory and how can it be effectively utilized in vector database retrieval?'
 
 ### 网页搜索工具
 
-```
-### Search
+#### Search
 
+```
 from langchain_community.tools.tavily_search import TavilySearchResults
 
 web_search_tool = TavilySearchResults(k=3)
@@ -277,28 +282,28 @@ from typing_extensions import TypedDict
 
 
 class GraphState(TypedDict):
-    &quot;&quot;&quot;
+    """
     Represents the state of our graph.
 
     Attributes:
         question: question
         generation: LLM generation
         documents: list of documents
-    &quot;&quot;&quot;
+    """
 
     question: str
     generation: str
     documents: List[str]
 ```
 
-```
-### Nodes
+#### Nodes
 
+```
 from langchain.schema import Document
 
 
 def retrieve(state):
-    &quot;&quot;&quot;
+    """
     Retrieve documents
 
     Args:
@@ -306,17 +311,17 @@ def retrieve(state):
 
     Returns:
         state (dict): New key added to state, documents, that contains retrieved documents
-    &quot;&quot;&quot;
-    print(&quot;---RETRIEVE---&quot;)
-    question = state[&quot;question&quot;]
+    """
+    print("---RETRIEVE---")
+    question = state["question"]
 
     # Retrieval
     documents = retriever.get_relevant_documents(question)
-    return {&quot;documents&quot;: documents, &quot;question&quot;: question}
+    return {"documents": documents, "question": question}
 
 
 def generate(state):
-    &quot;&quot;&quot;
+    """
     Generate answer
 
     Args:
@@ -324,18 +329,18 @@ def generate(state):
 
     Returns:
         state (dict): New key added to state, generation, that contains LLM generation
-    &quot;&quot;&quot;
-    print(&quot;---GENERATE---&quot;)
-    question = state[&quot;question&quot;]
-    documents = state[&quot;documents&quot;]
+    """
+    print("---GENERATE---")
+    question = state["question"]
+    documents = state["documents"]
 
     # RAG generation
-    generation = rag_chain.invoke({&quot;context&quot;: documents, &quot;question&quot;: question})
-    return {&quot;documents&quot;: documents, &quot;question&quot;: question, &quot;generation&quot;: generation}
+    generation = rag_chain.invoke({"context": documents, "question": question})
+    return {"documents": documents, "question": question, "generation": generation}
 
 
 def grade_documents(state):
-    &quot;&quot;&quot;
+    """
     Determines whether the retrieved documents are relevant to the question.
 
     Args:
@@ -343,30 +348,30 @@ def grade_documents(state):
 
     Returns:
         state (dict): Updates documents key with only filtered relevant documents
-    &quot;&quot;&quot;
+    """
 
-    print(&quot;---CHECK DOCUMENT RELEVANCE TO QUESTION---&quot;)
-    question = state[&quot;question&quot;]
-    documents = state[&quot;documents&quot;]
+    print("---CHECK DOCUMENT RELEVANCE TO QUESTION---")
+    question = state["question"]
+    documents = state["documents"]
 
     # Score each doc
     filtered_docs = []
     for d in documents:
         score = retrieval_grader.invoke(
-            {&quot;question&quot;: question, &quot;document&quot;: d.page_content}
+            {"question": question, "document": d.page_content}
         )
-        grade = score[&quot;score&quot;]
-        if grade == &quot;yes&quot;:
-            print(&quot;---GRADE: DOCUMENT RELEVANT---&quot;)
+        grade = score["score"]
+        if grade == "yes":
+            print("---GRADE: DOCUMENT RELEVANT---")
             filtered_docs.append(d)
         else:
-            print(&quot;---GRADE: DOCUMENT NOT RELEVANT---&quot;)
+            print("---GRADE: DOCUMENT NOT RELEVANT---")
             continue
-    return {&quot;documents&quot;: filtered_docs, &quot;question&quot;: question}
+    return {"documents": filtered_docs, "question": question}
 
 
 def transform_query(state):
-    &quot;&quot;&quot;
+    """
     Transform the query to produce a better question.
 
     Args:
@@ -374,19 +379,19 @@ def transform_query(state):
 
     Returns:
         state (dict): Updates question key with a re-phrased question
-    &quot;&quot;&quot;
+    """
 
-    print(&quot;---TRANSFORM QUERY---&quot;)
-    question = state[&quot;question&quot;]
-    documents = state[&quot;documents&quot;]
+    print("---TRANSFORM QUERY---")
+    question = state["question"]
+    documents = state["documents"]
 
     # Re-write question
-    better_question = question_rewriter.invoke({&quot;question&quot;: question})
-    return {&quot;documents&quot;: documents, &quot;question&quot;: better_question}
+    better_question = question_rewriter.invoke({"question": question})
+    return {"documents": documents, "question": better_question}
 
 
 def web_search(state):
-    &quot;&quot;&quot;
+    """
     Web search based on the re-phrased question.
 
     Args:
@@ -394,24 +399,24 @@ def web_search(state):
 
     Returns:
         state (dict): Updates documents key with appended web results
-    &quot;&quot;&quot;
+    """
 
-    print(&quot;---WEB SEARCH---&quot;)
-    question = state[&quot;question&quot;]
+    print("---WEB SEARCH---")
+    question = state["question"]
 
     # Web search
-    docs = web_search_tool.invoke({&quot;query&quot;: question})
-    web_results = &quot;\n&quot;.join([d[&quot;content&quot;] for d in docs])
+    docs = web_search_tool.invoke({"query": question})
+    web_results = "\n".join([d["content"] for d in docs])
     web_results = Document(page_content=web_results)
 
-    return {&quot;documents&quot;: web_results, &quot;question&quot;: question}
+    return {"documents": web_results, "question": question}
+```
 
+#### Edges
 
-### Edges ###
-
-
+```
 def route_question(state):
-    &quot;&quot;&quot;
+    """
     Route question to web search or RAG.
 
     Args:
@@ -419,24 +424,24 @@ def route_question(state):
 
     Returns:
         str: Next node to call
-    &quot;&quot;&quot;
+    """
 
-    print(&quot;---ROUTE QUESTION---&quot;)
-    question = state[&quot;question&quot;]
+    print("---ROUTE QUESTION---")
+    question = state["question"]
     print(question)
-    source = question_router.invoke({&quot;question&quot;: question})
+    source = question_router.invoke({"question": question})
     print(source)
-    print(source[&quot;datasource&quot;])
-    if source[&quot;datasource&quot;] == &quot;web_search&quot;:
-        print(&quot;---ROUTE QUESTION TO WEB SEARCH---&quot;)
-        return &quot;web_search&quot;
-    elif source[&quot;datasource&quot;] == &quot;vectorstore&quot;:
-        print(&quot;---ROUTE QUESTION TO RAG---&quot;)
-        return &quot;vectorstore&quot;
+    print(source["datasource"])
+    if source["datasource"] == "web_search":
+        print("---ROUTE QUESTION TO WEB SEARCH---")
+        return "web_search"
+    elif source["datasource"] == "vectorstore":
+        print("---ROUTE QUESTION TO RAG---")
+        return "vectorstore"
 
 
 def decide_to_generate(state):
-    &quot;&quot;&quot;
+    """
     Determines whether to generate an answer, or re-generate a question.
 
     Args:
@@ -444,27 +449,27 @@ def decide_to_generate(state):
 
     Returns:
         str: Binary decision for next node to call
-    &quot;&quot;&quot;
+    """
 
-    print(&quot;---ASSESS GRADED DOCUMENTS---&quot;)
-    state[&quot;question&quot;]
-    filtered_documents = state[&quot;documents&quot;]
+    print("---ASSESS GRADED DOCUMENTS---")
+    state["question"]
+    filtered_documents = state["documents"]
 
     if not filtered_documents:
         # All documents have been filtered check_relevance
         # We will re-generate a new query
         print(
-            &quot;---DECISION: ALL DOCUMENTS ARE NOT RELEVANT TO QUESTION, TRANSFORM QUERY---&quot;
+            "---DECISION: ALL DOCUMENTS ARE NOT RELEVANT TO QUESTION, TRANSFORM QUERY---"
         )
-        return &quot;transform_query&quot;
+        return "transform_query"
     else:
         # We have relevant documents, so generate answer
-        print(&quot;---DECISION: GENERATE---&quot;)
-        return &quot;generate&quot;
+        print("---DECISION: GENERATE---")
+        return "generate"
 
 
 def grade_generation_v_documents_and_question(state):
-    &quot;&quot;&quot;
+    """
     Determines whether the generation is grounded in the document and answers question.
 
     Args:
@@ -472,76 +477,82 @@ def grade_generation_v_documents_and_question(state):
 
     Returns:
         str: Decision for next node to call
-    &quot;&quot;&quot;
+    """
 
-    print(&quot;---CHECK HALLUCINATIONS---&quot;)
-    question = state[&quot;question&quot;]
-    documents = state[&quot;documents&quot;]
-    generation = state[&quot;generation&quot;]
+    print("---CHECK HALLUCINATIONS---")
+    question = state["question"]
+    documents = state["documents"]
+    generation = state["generation"]
 
     score = hallucination_grader.invoke(
-        {&quot;documents&quot;: documents, &quot;generation&quot;: generation}
+        {"documents": documents, "generation": generation}
     )
-    grade = score[&quot;score&quot;]
+    grade = score["score"]
 
     # Check hallucination
-    if grade == &quot;yes&quot;:
-        print(&quot;---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---&quot;)
+    if grade == "yes":
+        print("---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---")
         # Check question-answering
-        print(&quot;---GRADE GENERATION vs QUESTION---&quot;)
-        score = answer_grader.invoke({&quot;question&quot;: question, &quot;generation&quot;: generation})
-        grade = score[&quot;score&quot;]
-        if grade == &quot;yes&quot;:
-            print(&quot;---DECISION: GENERATION ADDRESSES QUESTION---&quot;)
-            return &quot;useful&quot;
+        print("---GRADE GENERATION vs QUESTION---")
+        score = answer_grader.invoke({"question": question, "generation": generation})
+        grade = score["score"]
+        if grade == "yes":
+            print("---DECISION: GENERATION ADDRESSES QUESTION---")
+            return "useful"
         else:
-            print(&quot;---DECISION: GENERATION DOES NOT ADDRESS QUESTION---&quot;)
-            return &quot;not useful&quot;
+            print("---DECISION: GENERATION DOES NOT ADDRESS QUESTION---")
+            return "not useful"
     else:
-        pprint(&quot;---DECISION: GENERATION IS NOT GROUNDED IN DOCUMENTS, RE-TRY---&quot;)
-        return &quot;not supported&quot;
+        pprint("---DECISION: GENERATION IS NOT GROUNDED IN DOCUMENTS, RE-TRY---")
+        return "not supported"
 ```
 
 ### 构建图
 
-```
+
+
+# LangGraph 工作流示例
+
+## 构建工作流
+
+```python
 from langgraph.graph import END, StateGraph
 
 workflow = StateGraph(GraphState)
 
 # Define the nodes
-workflow.add_node(&quot;web_search&quot;, web_search)  # web search
-workflow.add_node(&quot;retrieve&quot;, retrieve)  # retrieve
-workflow.add_node(&quot;grade_documents&quot;, grade_documents)  # grade documents
-workflow.add_node(&quot;generate&quot;, generate)  # generatae
-workflow.add_node(&quot;transform_query&quot;, transform_query)  # transform_query
+workflow.add_node("web_search", web_search)  # web search
+workflow.add_node("retrieve", retrieve)  # retrieve
+workflow.add_node("grade_documents", grade_documents)  # grade documents
+workflow.add_node("generate", generate)  # generatae
+workflow.add_node("transform_query", transform_query)  # transform_query
 
 # Build graph
 workflow.set_conditional_entry_point(
     route_question,
     {
-        &quot;web_search&quot;: &quot;web_search&quot;,
-        &quot;vectorstore&quot;: &quot;retrieve&quot;,
+        "web_search": "web_search",
+        "vectorstore": "retrieve",
     },
 )
-workflow.add_edge(&quot;web_search&quot;, &quot;generate&quot;)
-workflow.add_edge(&quot;retrieve&quot;, &quot;grade_documents&quot;)
+workflow.add_edge("web_search", "generate")
+workflow.add_edge("retrieve", "grade_documents")
 workflow.add_conditional_edges(
-    &quot;grade_documents&quot;,
+    "grade_documents",
     decide_to_generate,
     {
-        &quot;transform_query&quot;: &quot;transform_query&quot;,
-        &quot;generate&quot;: &quot;generate&quot;,
+        "transform_query": "transform_query",
+        "generate": "generate",
     },
 )
-workflow.add_edge(&quot;transform_query&quot;, &quot;retrieve&quot;)
+workflow.add_edge("transform_query", "retrieve")
 workflow.add_conditional_edges(
-    &quot;generate&quot;,
+    "generate",
     grade_generation_v_documents_and_question,
     {
-        &quot;not supported&quot;: &quot;generate&quot;,
-        &quot;useful&quot;: END,
-        &quot;not useful&quot;: &quot;transform_query&quot;,
+        "not supported": "generate",
+        "useful": END,
+        "not useful": "transform_query",
     },
 )
 
@@ -549,45 +560,49 @@ workflow.add_conditional_edges(
 app = workflow.compile()
 ```
 
-```
+## 运行工作流
+
+```python
 from pprint import pprint
 
 # Run
-inputs = {&quot;question&quot;: &quot;What is the AlphaCodium paper about?&quot;}
+inputs = {"question": "What is the AlphaCodium paper about?"}
 for output in app.stream(inputs):
     for key, value in output.items():
         # Node
-        pprint(f&quot;Node &#x27;{key}&#x27;:&quot;)
+        pprint(f"Node '{key}':")
         # Optional: print full state at each node
-        # pprint.pprint(value[&quot;keys&quot;], indent=2, width=80, depth=None)
-    pprint(&quot;\n---\n&quot;)
+        # pprint.pprint(value["keys"], indent=2, width=80, depth=None)
+    pprint("\n---\n")
 
 # Final generation
-pprint(value[&quot;generation&quot;])
+pprint(value["generation"])
 ```
+
+## 运行输出示例
 
 ```
 ---ROUTE QUESTION---
 What is the AlphaCodium paper about?
-{&#x27;datasource&#x27;: &#x27;web_search&#x27;}
+{'datasource': 'web_search'}
 web_search
 ---ROUTE QUESTION TO WEB SEARCH---
 ---WEB SEARCH---
-&quot;Node &#x27;web_search&#x27;:&quot;
-&#x27;\n---\n&#x27;
+"Node 'web_search':"
+'\n---\n'
 ---GENERATE---
 ---CHECK HALLUCINATIONS---
 ---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
 ---GRADE GENERATION vs QUESTION---
 ---DECISION: GENERATION ADDRESSES QUESTION---
-&quot;Node &#x27;generate&#x27;:&quot;
-&#x27;\n---\n&#x27;
-(&#x27; The AlphaCodium paper introduces a new approach for code generation by &#x27;
- &#x27;Large Language Models (LLMs). It presents AlphaCodium, an iterative process &#x27;
- &#x27;that involves generating additional data to aid the flow, and testing it on &#x27;
- &#x27;the CodeContests dataset. The results show that AlphaCodium outperforms &#x27;
- &quot;DeepMind&#x27;s AlphaCode and AlphaCode2 without fine-tuning a model. The &quot;
- &#x27;approach includes a pre-processing phase for problem reasoning in natural &#x27;
- &#x27;language and an iterative code generation phase with runs and fixes against &#x27;
- &#x27;tests.&#x27;)
+"Node 'generate':"
+'\n---\n'
+(' The AlphaCodium paper introduces a new approach for code generation by '
+ 'Large Language Models (LLMs). It presents AlphaCodium, an iterative process '
+ 'that involves generating additional data to aid the flow, and testing it on '
+ 'the CodeContests dataset. The results show that AlphaCodium outperforms '
+ "DeepMind's AlphaCode and AlphaCode2 without fine-tuning a model. The "
+ 'approach includes a pre-processing phase for problem reasoning in natural '
+ 'language and an iterative code generation phase with runs and fixes against '
+ 'tests.')
 ```

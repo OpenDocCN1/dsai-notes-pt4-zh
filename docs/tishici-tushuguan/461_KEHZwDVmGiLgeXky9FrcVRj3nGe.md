@@ -1,10 +1,11 @@
+
 # GPT词典
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/DCmBdkYgdozVV1xC71ic3vFWnyj](https://vxc3hj17dym.feishu.cn/docx/DCmBdkYgdozVV1xC71ic3vFWnyj)
+> 来源：`https://vxc3hj17dym.feishu.cn/docx/DCmBdkYgdozVV1xC71ic3vFWnyj`
 
 > 作者：[陈财猫](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkxNTU1MTY3OA==&action=getalbum&album_id=3086731117975814150&scene=173&from_msgid=2247484520&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
 
-> 开源项目地址：https://github.com/hamutama/LifeReloaded/tree/main
+> 开源项目地址：`https://github.com/hamutama/LifeReloaded/tree/main`
 
 ```
 你好，ChatGPT。我是一个正在学习英文的中国人，我希望深入地学习一个词汇，并从多个维度理解它。当我给出一个词汇时，请按照以下步骤为我详细解析：

@@ -1,8 +1,9 @@
+
 # 2022-12-05注册ChatGPT保姆级全攻略
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AqeAdpaOEo5DQkxjtvycZZ0Intg](https://xuqiwei1986.feishu.cn/docx/AqeAdpaOEo5DQkxjtvycZZ0Intg)
 
-> 🔗 原文链接： h[ttps://articles.zs](https://articles.zsxq.com/id_t4vo0xizcw20.html)xq.com/id_t4vo0x...
+> 🔗 原文链接：https://articles.zsxq.com/id_t4vo0xizcw20.html
 
 ![](img/24a467649e33a05e00ab1d0b28fe4b95.png)
 
@@ -12,15 +13,17 @@
 
 最近看到朋友圈被chatgpt刷屏，于是乎决定自己上手注册研究研究，在这个过程中身边的朋友，包括自己，都遇到了各种各样的问题，那我就写个简单的帖子记录分享一些我自己遇到的问题，便于小伙伴们遇到问题查找解决方案，废话不多说，上干货。
 
-**准备环境：**
+## 准备环境
 
 规矩上网的代理须是：韩国，日本，印度，新加坡，美国等，其他的太多国家没有一一去试，有这几个都足够了，香港的反正不行
 
 准备个国外的手机号，如果没有的话，可以用国外的接码平台，等下会给大家附上网址
 
-**开始：**
+## 开始
 
-**第一步： **打开接码平台注册一个账号。(https://sms-activate.org/cn PS：注册的时候尽量不要用临时邮箱或者马甲邮箱，后续有被封号的可能，而且不给解封，毕竟注册账号也麻烦，直接用Google邮箱就行了，如果嫌注册谷歌邮箱麻烦，就去某宝或者批发商店买一个吧)
+### 第一步：打开接码平台注册一个账号
+
+`https://sms-activate.org/cn` PS：注册的时候尽量不要用临时邮箱或者马甲邮箱，后续有被封号的可能，而且不给解封，毕竟注册账号也麻烦，直接用Google邮箱就行了，如果嫌注册谷歌邮箱麻烦，就去某宝或者批发商店买一个吧
 
 ![](img/0ea52bbd8e2cdff1da1580dbf38b72e0.png)
 
@@ -28,13 +31,13 @@
 
 ![](img/0a88236f1e891f1118c7ff980bbb6538.png)
 
-充值好余额以后，在首页左侧项目栏中搜索 openai，选择一个国家进行号码接码，我选择的是印度，因为便宜点，哈哈
+充值好余额以后，在首页左侧项目栏中搜索 `openai`，选择一个国家进行号码接码，我选择的是印度，因为便宜点，哈哈
 
 ![](img/5001c6ea81327a8bab573b3c19b3f409.png)
 
-**第二步： **注册OpenAi账号
+### 第二步：注册OpenAi账号
 
-首先打开官网 https://chat.openai.com/auth/login
+首先打开官网 `https://chat.openai.com/auth/login`
 
 ![](img/c5e6eb044c743bb8c039c78e08571cac.png)
 
@@ -48,23 +51,25 @@
 
 不用怕，下面为你提供了解决方案。
 
-一般出现这种问题，是因为你们的代理没有开全局模式，或者位置不对，还记得我开篇的准备工作里面提到的国家吗？你换成那些国家的IP，用HK的肯定不行的。但是当你换了IP和国家以后，你会发现还是访问不了，只要是你刚才出现了 Not available这个报错，后续你怎么换都没用，解决方案来咯！
+一般出现这种问题，是因为你们的代理没有开全局模式，或者位置不对，还记得我开篇的准备工作里面提到的国家吗？你换成那些国家的IP，用HK的肯定不行的。但是当你换了IP和国家以后，你会发现还是访问不了，只要是你刚才出现了 `Not available` 这个报错，后续你怎么换都没用，解决方案来咯！
 
-**解决地区问题：**
+#### 解决地区问题
 
 首先，你要把你的代理切换到非HK地区，我上面列举的那些任意一个都可以，我自己选择的JP
 
 然后，复制下面这段代码
 
+```
 window.localStorage.removeItem(Object.keys(window.localStorage).find(i=>i.startsWith('@@auth0spajs')))
+```
 
 接着在地址栏输入
 
-注意：这里一定要手动输入javascript: ，因为复制的话粘贴进去回车是有问题滴，然后再把第一段代码粘贴在javascript: 后面
+注意：这里一定要手动输入 `javascript:` ，因为复制的话粘贴进去回车是有问题滴，然后再把第一段代码粘贴在 `javascript:` 后面
 
 接着按下回车，继续刷新页面，如果你的代理切换没有问题，接着就可以看到正常的注册页面了。
 
-**填写手机号：**
+#### 填写手机号
 
 这里就该用到咱们前面注册充值的接码平台了
 
@@ -80,7 +85,7 @@ window.localStorage.removeItem(Object.keys(window.localStorage).find(i=>i.starts
 
 ![](img/b27f28828de93c282a1525e3f8e01d33.png)
 
-**第三步： **使用ChatGPT开始你的奇思妙想吧！
+### 第三步：使用ChatGPT开始你的奇思妙想吧！
 
 注册完成以后，登录ChatGPT官网，在红色的地方开始你的奇思妙想吧！
 

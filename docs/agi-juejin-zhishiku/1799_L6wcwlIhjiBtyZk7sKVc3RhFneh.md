@@ -1,3 +1,4 @@
+
 # AI绘画有哪些好用的关键词？
 
 > 来源：[https://agijuejin.feishu.cn/docx/SFt6dSZLkoaOV0xXihWc9By3nUd](https://agijuejin.feishu.cn/docx/SFt6dSZLkoaOV0xXihWc9By3nUd)
@@ -12,7 +13,7 @@ Midjourney需要付费订阅，隐私性和图像可控性相对较低，但是�
 
 下面我来说下AI绘画有哪些好用的提示关键词吧
 
-### 一、提示词分类
+## 一、提示词分类
 
 在书写提示词时，可以从整体描述的角度出发，将提示词划分为以下四个方面：
 
@@ -26,21 +27,21 @@ Midjourney需要付费订阅，隐私性和图像可控性相对较低，但是�
 
 ![](img/6d08e6d6643aab9e1624df7ff7a2ae23.png)
 
-### 二、提示词的顺序
+## 二、提示词的顺序
 
 越重要的提示词应该放到越靠前的位置。Prompt的排列次序对于画面的构成方式有重要的影响，越靠前的Prompt对于场景的视觉效果会产生更显著的影响。
 
 ![](img/0dae3c7ff47aaf978086a187089ac767.png)
 
-### 三、优秀的提示词示例
+## 三、优秀的提示词示例
 
 提示词分为 [正向提示词 ](https://www.zhihu.com/search?q=%E6%AD%A3%E5%90%91%E6%8F%90%E7%A4%BA%E8%AF%8D&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3073292287%7D)和反面提示词，正面就是你希望出现的，反面就是不希望出现的内容
 
 ![](img/ed263e13033d099f217b37ea2440cca2.png)
 
-常用的画质正向提示词有：(masterpiece:1.2),( top quality, best quality, official art, beautiful and aesthetic:1.2),8k, ultra-detailed,
+常用的画质正向提示词有：`(masterpiece:1.2)`, `(top quality, best quality, official art, beautiful and aesthetic:1.2)`, `8k`, `ultra-detailed`,
 
-常用的反向提示词有：(watermark),sketch, duplicate, ugly, text, logo, monochrome, (worst quality:2.0), (low quality:2.0), (blurry:2.0),
+常用的反向提示词有：`(watermark)`, `sketch`, `duplicate`, `ugly`, `text`, `logo`, `monochrome`, `(worst quality:2.0)`, `(low quality:2.0)`, `(blurry:2.0)`,
 
 画风、镜头、色调需要根据画面要求自行调整.
 

@@ -1,3 +1,4 @@
+
 # 我用C盘造的真人，AI开始分辨不出来了
 
 > 来源：[https://agispace.feishu.cn/docx/XwOjdDHvQoLOdFxh0P8cghFSnPm](https://agispace.feishu.cn/docx/XwOjdDHvQoLOdFxh0P8cghFSnPm)
@@ -8,11 +9,11 @@
 
 > 原文链接：https://mp.weixin.qq.com/s/vHIZkc8ZsYbng3P-nZ8HpA
 
-"C:\Users\woman\Pictures\Photos"
+`C:\Users\woman\Pictures\Photos`
 
 这句话，一天前还是 Windows 电脑的文件路径，
 
-现在，原封不动输入到 Flux1.1后，就变成了：
+现在，原封不动输入到 Flux1.1 后，就变成了：
 
 ![](img/f4d72767cdec43188b5584b5714f8862.png)
 
@@ -22,7 +23,7 @@
 
 Flux 这次升级训练都开始把别人电脑里的老照片都挖出来了。
 
-不扒瞎，大家在谷歌搜baby peacock的时候，15张照片里只有3张是真的。
+不扒瞎，大家在谷歌搜 baby peacock 的时候，15 张照片里只有 3 张是真的。
 
 ![](img/4080b071b9a5b7544fbe664b290eb557.png)
 
@@ -34,7 +35,7 @@ Flux 这次升级训练都开始把别人电脑里的老照片都挖出来了。
 
 当我以为 Flux 用电脑硬盘数据训练已经够离谱的时候，它还把手机里的照片用上了。
 
-** "selfie_IMG_1998.H**EIC / IMG_1998.CR2"
+`selfie_IMG_1998.HEIC / IMG_1998.CR2`
 
 ![](img/07081b0fe4829c5f7137724e1d209fba.png)
 
@@ -46,11 +47,11 @@ Flux 这次升级训练都开始把别人电脑里的老照片都挖出来了。
 
 ![](img/2eeebebf9faeb58bba5c32d7ab22d35f.png)
 
-换个角度来说，CR2/TIFF 不能算手机照片，这类文件是由佳能（Canon）相机生成的原始照片文件格式。
+换个角度来说，`CR2`/`TIFF` 不能算手机照片，这类文件是由佳能（Canon）相机生成的原始照片文件格式。
 
 所以尼康佬的相机也用上了，
 
-"NikonZ9_0001.NEF"
+`NikonZ9_0001.NEF`
 
 ![](img/dab58c51f31811294abd1e1ed440b75b.png)
 
@@ -58,7 +59,7 @@ Flux 这次升级训练都开始把别人电脑里的老照片都挖出来了。
 
 还记得刚开始我们用文件路径生图吗？文件夹可以，那为什么图片名不可以？
 
-** "Untitled-1--final FINAL_**cat_v2 copy (4).png
+`Untitled-1--final FINAL_cat_v2 copy (4).png`
 
 这个名字 buff 叠满了，Untitled、final、v2、copy (4) 每次保存图片都会出现的文件名词。
 
@@ -68,13 +69,13 @@ Flux 这次升级训练都开始把别人电脑里的老照片都挖出来了。
 
 而且这个能力在 Flux1 pro 里还没有，
 
-（左边是Flux1，右边是Flux1.1）
+（左边是 Flux1，右边是 Flux1.1）
 
 ![](img/aab531d1b2a5c1afefff3b7809acbd1e.png)
 
 图片真实感提升的另一大好处就是能用 AI “手机”记录生活了：
 
-** IMG_pov_Starbucks/Airpor**t/PublicToilet.HEIC
+`IMG_pov_Starbucks/Airport/PublicToilet.HEIC`
 
 ![](img/3a114a6fcc6d134b40719ae34d0a0ad8.png)
 
@@ -94,7 +95,7 @@ Flux 这次升级训练都开始把别人电脑里的老照片都挖出来了。
 
 ![](img/a3c0a32411271aa8d493b6dbae4d047e.png)
 
-对了，记得关闭prompt upsampling，也就是提示语优化功能。
+对了，记得关闭 prompt upsampling，也就是提示语优化功能。
 
 虽说我肉眼已经分不出了真图假图了，
 
@@ -122,13 +123,13 @@ detail、4k、soft-lighting，Unreal Engine
 
 升级到 V6.1 后，这套万金油就没那么好用了，有时候不加反而效果更惊喜。
 
-AI现在已经开始反套路了，
+AI 现在已经开始反套路了，
 
 每一次的更新和玩家们对于提示语的探索，
 
 都会带来越来越多意想不到的玩法。
 
-随着AI和真实的距离越来越小，其实也可以给我们带来更多的思考，
+随着 AI 和真实的距离越来越小，其实也可以给我们带来更多的思考，
 
 就让我们带着这样持续思考和探索的心情，
 

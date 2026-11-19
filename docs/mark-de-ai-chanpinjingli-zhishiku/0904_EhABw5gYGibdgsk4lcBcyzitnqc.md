@@ -1,133 +1,134 @@
+
 # 完整项目实战
 
-> 来源：[https://qqs7y1hozd1.feishu.cn/docx/JSrzdWgPhoNeEMxbEbJcOYY8nIh](https://qqs7y1hozd1.feishu.cn/docx/JSrzdWgPhoNeEMxbEbJcOYY8nIh)
+> 来源：`https://qqs7y1hozd1.feishu.cn/docx/JSrzdWgPhoNeEMxbEbJcOYY8nIh`
 
 ## 拒绝 "Happy Path"：完善核心链路
 
-很多初学者做原型，往往只做“Happy Path”（最理想的路径）：用户点击 -> API 响应成功 -> 显示结果。 但在真实世界里，事情往往没那么顺利。
+很多初学者做原型，往往只做“Happy Path”（最理想的路径）：用户点击 -> API 响应成功 -> 显示结果。但在真实世界里，事情往往没那么顺利。
 
 ### 1.1 增加“等待”与“反馈”
 
 当用户点击“生成文案”时，AI 往往需要几秒钟才能响应。如果界面毫无反应，用户会以为程序坏了。
 
-> 提示词示例： “当我点击生成按钮时，请把按钮变成‘生成中...’并不可点击，同时在右侧区域显示一个加载动画。直到 API 返回结果后，再恢复正常。”
+> 提示词示例：“当我点击生成按钮时，请把按钮变成‘生成中...’并不可点击，同时在右侧区域显示一个加载动画。直到 API 返回结果后，再恢复正常。”
 
 ### 1.2 处理“失败”与“异常”
 
-API Key 可能会过期，网络可能会断开。 你需要让 AI IDE 帮你处理报错：
+API Key 可能会过期，网络可能会断开。你需要让 AI IDE 帮你处理报错：
 
-> 提示词示例： “如果 API 请求失败了，不要直接在控制台报错，请在页面顶部弹出一个红色的提示框（Toast），告诉用户‘生成失败，请稍后重试’，并允许用户重新点击生成。”
+> 提示词示例：“如果 API 请求失败了，不要直接在控制台报错，请在页面顶部弹出一个红色的提示框（`Toast`），告诉用户‘生成失败，请稍后重试’，并允许用户重新点击生成。”
 
 ### 1.3 对话历史持久化
 
 存储方案选择：
 
-对话内容示例： 保存的对话历史通常包含以下内容：
+对话内容示例：保存的对话历史通常包含以下内容：
 
 ```
 [
   {
-    &quot;role&quot;: &quot;user&quot;,
-    &quot;content&quot;: &quot;帮我生成一款蓝牙耳机的抖音带货文案&quot;,
-    &quot;timestamp&quot;: &quot;2026-01-20 10:30:00&quot;
+    "role": "user",
+    "content": "帮我生成一款蓝牙耳机的抖音带货文案",
+    "timestamp": "2026-01-20 10:30:00"
   },
   {
-    &quot;role&quot;: &quot;assistant&quot;,
-    &quot;content&quot;: &quot;【蓝牙耳机种草文案】\n\n🎧 告别延迟，沉浸式听歌体验\n\n姐妹们！这款蓝牙耳机真的太绝了👇\n\n✅ 40dB主动降噪，瞬间进入音乐世界\n✅ 30小时超长续航，一周通勤不用充电\n✅ 通话清晰如面对面，地铁嘈杂也能聊\n✅ 半入耳设计，久戴不痛不闷耳\n\n💰 限时优惠，点击下方链接入手！&quot;,
-    &quot;timestamp&quot;: &quot;2026-01-20 10:30:05&quot;
+    "role": "assistant",
+    "content": "【蓝牙耳机种草文案】\n\n🎧 告别延迟，沉浸式听歌体验\n\n姐妹们！这款蓝牙耳机真的太绝了👇\n\n✅ 40dB主动降噪，瞬间进入音乐世界\n✅ 30小时超长续航，一周通勤不用充电\n✅ 通话清晰如面对面，地铁嘈杂也能聊\n✅ 半入耳设计，久戴不痛不闷耳\n\n💰 限时优惠，点击下方链接入手！",
+    "timestamp": "2026-01-20 10:30:05"
   }
 ]
 ```
 
 实现提示词：
 
-> “请帮我实现对话历史的保存功能。支持将用户和 AI 的对话记录保存为 JSON 文件（或使用 LocalStorage）。每次进入页面时自动加载历史对话，支持查看和删除单条对话记录。”
+> “请帮我实现对话历史的保存功能。支持将用户和 AI 的对话记录保存为 JSON 文件（或使用 `LocalStorage`）。每次进入页面时自动加载历史对话，支持查看和删除单条对话记录。”
 
 ## 注入灵魂：模拟真实数据 (Mock Data)
 
-一个空荡荡的页面是无法打动人的。 为了让演示效果最佳，我们需要“伪造”一些逼真的数据，让你的原型看起来像一个已经运营了半年的真实产品。
+一个空荡荡的页面是无法打动人的。为了让演示效果最佳，我们需要“伪造”一些逼真的数据，让你的原型看起来像一个已经运营了半年的真实产品。
 
 ### 2.1 让 AI 帮你设计数据结构
 
 只需要告诉 AI 你的业务场景：
 
-> 提示词示例： “我正在做一个电商素材工作台的原型。 请帮我设计一个 JSON 数据结构，用来描述一个‘商品任务’。 这个任务应该包含：商品的基本信息（名字、类目）、输入的素材（图片链接）、以及 AI 生成的结果（标题、文案、海报图）。 请直接给我一个 JSON 示例。”
+> 提示词示例：“我正在做一个电商素材工作台的原型。请帮我设计一个 JSON 数据结构，用来描述一个‘商品任务’。这个任务应该包含：商品的基本信息（名字、类目）、输入的素材（图片链接）、以及 AI 生成的结果（标题、文案、海报图）。请直接给我一个 JSON 示例。”
 
-AI 会根据你的描述，自动帮你构思出类似 productName, generatedContent 这样的字段。
+AI 会根据你的描述，自动帮你构思出类似 `productName`, `generatedContent` 这样的字段。
 
 ### 2.2 让 AI 批量生产“逼真”数据
 
 有了数据结构后，下一步就是让 AI 帮你“填空”，生成一批看起来真实的数据。
 
-提示词技巧： 你不能只告诉 AI “帮我生成数据”，你需要像给实习生布置任务一样，告诉它业务背景和内容要求：
+提示词技巧：你不能只告诉 AI “帮我生成数据”，你需要像给实习生布置任务一样，告诉它业务背景和内容要求：
 
 +   业务背景：告诉 AI 我们是做“抖音电商”的，所以商品标题要吸睛（比如“显瘦神器”、“学生党必入”），文案要口语化。
 
 +   图片要求：为了让原型好看，图片不能是黑白的占位符，最好是随机的彩色风景或实物图。
 
-> 提示词示例： “请基于刚才设计的结构，帮我生成 10 条逼真的模拟数据。 （备注：不一定要 JSON 格式。如果你正在写前端，可以让它直接生成 JavaScript 数组；如果你用 Python，可以让它生成 List。）
+> 提示词示例：“请基于刚才设计的结构，帮我生成 10 条逼真的模拟数据。（备注：不一定要 JSON 格式。如果你正在写前端，可以让它直接生成 JavaScript 数组；如果你用 Python，可以让它生成 `List`。）
 
 > 业务场景要求：
 
-1.  假设这是一家综合百货店，商品涵盖‘女装’、‘数码’、‘美妆’三个类目。
+1.  假设这是一家综合百货店，商品涵盖“女装”、“数码”、“美妆”三个类目。
 
-1.  生成的标题和文案要非常‘抖音风’：比如标题要包含 Emoji (🔥, ✨)，文案要用‘绝绝子’、‘亲测好用’这种语气。
+1.  生成的标题和文案要非常“抖音风”：比如标题要包含 Emoji (🔥, ✨)，文案要用“绝绝子”、“亲测好用”这种语气。
 
-1.  图片字段：请统一使用 https://picsum.photos/seed/{random_id}/300/400 这个格式，确保每张图都不一样。”
+1.  图片字段：请统一使用 `https://picsum.photos/seed/{random_id}/300/400` 这个格式，确保每张图都不一样。”
 
 生成的 Mock Data 示例：
 
 ```
 export const mockProductTasks = [
   {
-    id: &#x27;task_001&#x27;,
-    name: &#x27;夏季法式复古碎花裙&#x27;,
-    status: &#x27;completed&#x27;,
+    id: 'task_001',
+    name: '夏季法式复古碎花裙',
+    status: 'completed',
     input: {
-      category: &#x27;女装&#x27;,
-      features: [&#x27;收腰&#x27;, &#x27;显瘦&#x27;, &#x27;气质&#x27;],
-      originalImage: &#x27;https://picsum.photos/seed/dress_input/300/400&#x27;
+      category: '女装',
+      features: ['收腰', '显瘦', '气质'],
+      originalImage: 'https://picsum.photos/seed/dress_input/300/400'
     },
     output: {
-      generatedTitle: &#x27;✨谁穿谁好看！这条法式碎花裙真的绝绝子🔥&#x27;,
+      generatedTitle: '✨谁穿谁好看！这条法式碎花裙真的绝绝子🔥',
       generatedCopy:
-        &#x27;姐妹们！这条裙子真的太显瘦了！收腰设计绝了，穿上立马有腰身。面料很透气，夏天穿完全不闷。约会逛街首选！👗&#x27;,
-      generatedPosterImage: &#x27;https://picsum.photos/seed/dress_output/300/400&#x27;
+        '姐妹们！这条裙子真的太显瘦了！收腰设计绝了，穿上立马有腰身。面料很透气，夏天穿完全不闷。约会逛街首选！👗',
+      generatedPosterImage: 'https://picsum.photos/seed/dress_output/300/400'
     },
-    createdAt: &#x27;2026-01-20T10:00:00Z&#x27;
+    createdAt: '2026-01-20T10:00:00Z'
   },
   {
-    id: &#x27;task_002&#x27;,
-    name: &#x27;超强降噪蓝牙耳机 Pro&#x27;,
-    status: &#x27;completed&#x27;,
+    id: 'task_002',
+    name: '超强降噪蓝牙耳机 Pro',
+    status: 'completed',
     input: {
-      category: &#x27;数码&#x27;,
-      features: [&#x27;降噪&#x27;, &#x27;超长续航&#x27;, &#x27;低延迟&#x27;],
-      originalImage: &#x27;https://picsum.photos/seed/tech_input/300/400&#x27;
+      category: '数码',
+      features: ['降噪', '超长续航', '低延迟'],
+      originalImage: 'https://picsum.photos/seed/tech_input/300/400'
     },
     output: {
-      generatedTitle: &#x27;🎧 终于被我找到了！这款耳机降噪太强了吧！🔇&#x27;,
+      generatedTitle: '🎧 终于被我找到了！这款耳机降噪太强了吧！🔇',
       generatedCopy:
-        &#x27;戴上它，世界瞬间安静了。音质绝佳，听歌就像在现场。续航也很给力，充一次电用一周！学生党必入！&#x27;,
-      generatedPosterImage: &#x27;https://picsum.photos/seed/tech_output/300/400&#x27;
+        '戴上它，世界瞬间安静了。音质绝佳，听歌就像在现场。续航也很给力，充一次电用一周！学生党必入！',
+      generatedPosterImage: 'https://picsum.photos/seed/tech_output/300/400'
     },
-    createdAt: &#x27;2026-01-21T14:30:00Z&#x27;
+    createdAt: '2026-01-21T14:30:00Z'
   }
   // ... 更多数据
 ]
 ```
 
-### 2.3 (进阶) 使用 LocalStorage 实现“假增删改”
+### 2.3 (进阶) 使用 `LocalStorage` 实现“假增删改”
 
-如果你希望刚才生成的“模拟数据”不仅能看，还能删、能改，甚至新生成的任务刷新页面后还在，你可以结合 LocalStorage。
+如果你希望刚才生成的“模拟数据”不仅能看，还能删、能改，甚至新生成的任务刷新页面后还在，你可以结合 `LocalStorage`。
 
-> 提示词示例： “请帮我实现一个数据存储功能。
+> 提示词示例：“请帮我实现一个数据存储功能。
 
-1.  优先从 localStorage 读取数据。
+1.  优先从 `localStorage` 读取数据。
 
-1.  如果 localStorage 为空，则使用刚才生成的 Mock 数据初始化，并将它们存入 localStorage。
+1.  如果 `localStorage` 为空，则使用刚才生成的 Mock 数据初始化，并将它们存入 `localStorage`。
 
-1.  同时帮我写 addProductTask 和 deleteProductTask 函数，每次操作都要同步更新 localStorage。”
+1.  同时帮我写 `addProductTask` 和 `deleteProductTask` 函数，每次操作都要同步更新 `localStorage`。”
 
 通过这一步，你的原型就拥有了“记忆”，用户体验几乎和真产品无异。
 

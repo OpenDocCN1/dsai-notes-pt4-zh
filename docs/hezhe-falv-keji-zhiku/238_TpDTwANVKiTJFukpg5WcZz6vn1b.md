@@ -1,6 +1,7 @@
+
 # 通过各种方式，降低 AI 的潜在风险
 
-> 来源：[https://docs.feishu.cn/docx/JH8ddhRNroeLquxB7JIcTyOKnqf](https://docs.feishu.cn/docx/JH8ddhRNroeLquxB7JIcTyOKnqf)
+> 来源：`https://docs.feishu.cn/docx/JH8ddhRNroeLquxB7JIcTyOKnqf`
 
 ---
 
@@ -8,15 +9,11 @@
 
 对此，法律行业逐步探索出了几种降低生成式 AI 潜在风险的方法，包括：
 
-1.  禁止使用 ChatGPT
-
-1.  逐步推进 AI 的落地应用
-
-1.  检查律师的提示词
-
-1.  通过微软 Azure 访问 OpenAI
-
-1.  采用多种大模型
+1. 禁止使用 ChatGPT
+2. 逐步推进 AI 的落地应用
+3. 检查律师的提示词
+4. 通过微软 Azure 访问 OpenAI
+5. 采用多种大模型
 
 与历史上数次科技革命一样，对于新技术，积极拥抱，但渐进式采纳才是正解。
 

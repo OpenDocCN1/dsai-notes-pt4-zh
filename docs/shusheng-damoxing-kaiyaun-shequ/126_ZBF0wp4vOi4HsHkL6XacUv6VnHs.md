@@ -1,12 +1,13 @@
-# 沐曦 XTuner 微调 InternLM  赛事 Baseline
+
+# 沐曦 XTuner 微调 InternLM 赛事 Baseline
 
 > 来源：[https://aicarrier.feishu.cn/docx/CA0JdJMMroCCS1xvFVhcyHiUnDD](https://aicarrier.feishu.cn/docx/CA0JdJMMroCCS1xvFVhcyHiUnDD)
 
-# 操作视频
+## 操作视频
 
 https://aicarrier.feishu.cn/minutes/obcni337zj434hm7175kz3k8?from=from_copylink
 
-# 环境介绍
+## 环境介绍
 
 GPU：沐曦MXC500（32G）
 
@@ -14,58 +15,57 @@ CPU：8核心
 
 内存：96G
 
-# DaoCloud平台操作
+## DaoCloud平台操作
 
 上海六区地址：https://console.d.run/zestu/market?regionId=sh-06
 
-## 初始化存储
+### 初始化存储
 
 操作步骤：文件存储—>选择《上海六区》->初始化文件存储
 
-说明：文件存储将会挂载在/root/data 目录下 ，免费容量为20G
+说明：文件存储将会挂载在`/root/data`目录下，免费容量为20G
 
-特别注意：初始化完成后，请在web页面上传一个空文件,否则无法挂载成功
+特别注意：初始化完成后，请在web页面上传一个空文件，否则无法挂载成功
 
-## 选择算力云->算力市场->[上海六区](https://console.d.run/zestu/market?regionId=sh-06)（如下图选择MXC500）立即购买
+### 选择算力云->算力市场->[上海六区](https://console.d.run/zestu/market?regionId=sh-06)（如下图选择MXC500）立即购买
 
 ![](img/0743270d3497c0d2644206d794cf0867.png)
 
-## **选择镜像 **
+### 选择镜像
 
-下拉框1 :  基础镜像->Dlinfer
+下拉框1：基础镜像->Dlinfer
 
-下拉框2：选择带有Xtuner的镜像版本（如下图）
+下拉框2：选择带有`Xtuner`的镜像版本（如下图）
 
 ![](img/24aa6f713df28c4b4896d58dba3f5480.png)
 
-## 创建并启动容器实例
+### 创建并启动容器实例
 
-1.选择JuypterLab 进入开发机
+1. 选择`JuypterLab` 进入开发机
 
 ![](img/39806caa920dbe54cdd36c2ef129c00d.png)
 
-# 开发机介绍
+## 开发机介绍
 
-## 文件夹介绍
+### 文件夹介绍
 
-默认进入/root 目录下
+默认进入`/root`目录下
 
-data文件夹为初始化挂载文件夹（读写）
+`data`文件夹为初始化挂载文件夹（读写）
 
-Public-model 为平台共享模型仓库
+`Public-model` 为平台共享模型仓库
 
 ![](img/9e04c2e3b723b93a07b9e73fa79e6e3a.png)
 
-## 终端介绍
+### 终端介绍
 
 ![](img/e2c0000018eb60c282f62e723cebc045.png)
 
-## 环境检查
+### 环境检查
 
-镜像中已经内置Xtuner
+镜像中已经内置`Xtuner`
 
 ```
-
 pip show xtuner
 
 #可以看到环境中已经有了xtuner
@@ -80,12 +80,11 @@ pip show xtuner
 #Editable project location: /workspace/xtuner
 #Requires: bitsandbytes, datasets, einops, lagent, mmengine, openpyxl, peft, scikit-image, scipy, SentencePiece, tiktoken, torch, torchvision, transformers, transformers_stream_generator
 #Required-by: 
-
 ```
 
-## GPU信息监控
+### GPU信息监控
 
-mx-smi  与 nvidia-smi 的功能一致
+`mx-smi` 与 `nvidia-smi` 的功能一致
 
 ```
 root@ins-5njhw-645f976478-djpwb:~# mx-smi
@@ -118,9 +117,9 @@ End of Log
 root@ins-5njhw-645f976478-djpwb:~# 
 ```
 
-# 补充安装包
+## 补充安装包
 
-## 安装mpi4py
+### 安装`mpi4py`
 
 ```
 pip install mpi4py
@@ -128,15 +127,15 @@ pip install mpi4py
 pip install transformers==4.48.0
 ```
 
-建议安装 ，否则报错
+建议安装，否则报错
 
-## 链接模型位置
+### 链接模型位置
 
 ```
 ln -s /root/public-model/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat ./
 ```
 
-## 数据集（已经处理好）
+### 数据集（已经处理好）
 
 ![](img/9b9bcf7ca6a537eb96d6f664e7340b5c.png)
 
@@ -155,9 +154,9 @@ tree -L 2
 
 ![](img/17c3de758f533b8da6fe6cd11fbca545.png)
 
-# 开启训练
+## 开启训练
 
-## 预训练
+### 预训练
 
 ```
 xtuner train pretrain.py --deepspeed deepspeed_zero1
@@ -166,12 +165,14 @@ xtuner train pretrain.py --deepspeed deepspeed_zero1
 注意替换模型和数据集的位置分别位于23行27行
 
 ```
-pretrained_model_name_or_path = &#x27;./internlm2_5-1_8b-chat&#x27;
+pretrained_model_name_or_path = './internlm2_5-1_8b-chat'
 
-data_files = [&#x27;./datasets/pretrain.jsonl&#x27;]
+data_files = ['./datasets/pretrain.jsonl']
 ```
 
-```
+
+
+```python
 import torch
 from datasets import load_dataset
 from mmengine.dataset import DefaultSampler
@@ -194,15 +195,15 @@ from xtuner.model import SupervisedFinetune
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = &#x27;./internlm2_5-1_8b-chat&#x27;
+pretrained_model_name_or_path = './internlm2_5-1_8b-chat'
 use_varlen_attn = False
 
 # Data
-data_files = [&#x27;./datasets/pretrain.jsonl&#x27;]
+data_files = ['./datasets/pretrain.jsonl']
 max_length = 2048
 pack_to_max_length = False
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 8  # per_device
 accumulative_counts = 32  # bs = 1 GPU * 1 batch_size_per_device * 16 acc
 dataloader_num_workers = 0
@@ -220,17 +221,17 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 
 # Evaluate the generation performance during the training
 evaluation_freq = 500
-SYSTEM = &#x27;&#x27;
-evaluation_inputs = [&#x27;上海是&#x27;, &#x27;Shanghai is&#x27;]
+SYSTEM = ''
+evaluation_inputs = ['上海是', 'Shanghai is']
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 tokenizer = dict(
     type=AutoTokenizer.from_pretrained,
     pretrained_model_name_or_path=pretrained_model_name_or_path,
     trust_remote_code=True,
-    padding_side=&#x27;right&#x27;)
+    padding_side='right')
 
 model = dict(
     type=SupervisedFinetune,
@@ -247,24 +248,23 @@ model = dict(
             llm_int8_has_fp16_weight=False,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type=&#x27;nf4&#x27;)
+            bnb_4bit_quant_type='nf4')
     ),
     lora=dict(
         type=LoraConfig,
         r=64,
         lora_alpha=16,
         lora_dropout=0.1,
-        bias=&#x27;none&#x27;,
-        task_type=&#x27;CAUSAL_LM&#x27;)
+        bias='none',
+        task_type='CAUSAL_LM')
 )
 
-
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 train_dataset = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=data_files),
+    dataset=dict(type=load_dataset, path='json', data_files=data_files),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=pretrain_map_fn,
@@ -282,7 +282,7 @@ train_dataloader = dict(
     collate_fn=dict(type=default_collate_fn, use_varlen_attn=use_varlen_attn))
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -291,8 +291,8 @@ optim_wrapper = dict(
         type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&#x27;dynamic&#x27;,
-    dtype=&#x27;float16&#x27;)
+    loss_scale='dynamic',
+    dtype='float16')
 
 # learning policy
 # More information: https://github.com/open-mmlab/mmengine/blob/main/docs/en/tutorials/param_scheduler.md  # noqa: E501
@@ -356,16 +356,16 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&#x27;fork&#x27;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&#x27;nccl&#x27;),
+    dist_cfg=dict(backend='nccl'),
 )
 
 # set visualizer
 visualizer = None
 
 # set log level
-log_level = &#x27;INFO&#x27;
+log_level = 'INFO'
 
 # load from which checkpoint
 load_from = None
@@ -378,42 +378,46 @@ randomness = dict(seed=None, deterministic=False)
 
 # set log processor
 log_processor = dict(by_epoch=False)
-
 ```
 
-## 模型转换pth_to_hf
+## 模型转换 `pth_to_hf`
 
-```
+```bash
 xtuner convert pth_to_hf pretrain.py \
                          ./work_dirs/pretrain/iter_xx.pth \
                          ./work_dirs/pretrain/hf
 ```
 
-## 模型合并merge
+## 模型合并 `merge`
 
-```
+```bash
 xtuner convert merge ./internlm2_5-1_8b-chat \
                      ./work_dirs/pretrain/hf \
                      ./work_dirs/pretrain/merged \
                      --max-shard-size 2GB
-
 ```
 
-## SFT训练
+## SFT 训练
 
-```
+```bash
 xtuner train sft.py --deepspeed deepspeed_zero1
 ```
 
-注意替换模型和数据集的位置分别位于34行38行
+注意替换模型和数据集的位置分别位于第 34 行和第 38 行。
 
-```
-pretrained_model_name_or_path = &quot;./work_dirs/pretrain/merged&quot;
+```python
+pretrained_model_name_or_path = "./work_dirs/pretrain/merged"
 
-alpaca_en_path = &quot;./datasets/sftdata.jsonl&quot;#可以换成自己的数据路径
+alpaca_en_path = "./datasets/sftdata.jsonl"  # 可以换成自己的数据路径
 ```
 
-```
+
+
+# 模型训练与上传指南
+
+## 模型训练配置
+
+```python
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 from datasets import load_dataset
@@ -447,11 +451,11 @@ from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = &quot;./work_dirs/pretrain/merged&quot;
+pretrained_model_name_or_path = "./work_dirs/pretrain/merged"
 use_varlen_attn = False
 
 # Data
-alpaca_en_path = &quot;./datasets/sftdata.jsonl&quot;#换成自己的数据路径
+alpaca_en_path = "./datasets/sftdata.jsonl"#换成自己的数据路径
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
 max_length = 2048
 pack_to_max_length = False
@@ -459,7 +463,7 @@ pack_to_max_length = False
 # parallel
 sequence_parallel_size = 1
 
-# Scheduler &amp; Optimizer
+# Scheduler & Optimizer
 batch_size = 1  # per_device
 accumulative_counts = 1
 accumulative_counts *= sequence_parallel_size
@@ -479,16 +483,16 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 # Evaluate the generation performance during the training
 evaluation_freq = 500
 SYSTEM = SYSTEM_TEMPLATE.alpaca
-evaluation_inputs = [&quot;请给我介绍五个上海的景点&quot;, &quot;Please tell me five scenic spots in Shanghai&quot;]
+evaluation_inputs = ["请给我介绍五个上海的景点", "Please tell me five scenic spots in Shanghai"]
 
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 tokenizer = dict(
     type=AutoTokenizer.from_pretrained,
     pretrained_model_name_or_path=pretrained_model_name_or_path,
     trust_remote_code=True,
-    padding_side=&quot;right&quot;,
+    padding_side="right",
 )
 
 model = dict(
@@ -507,7 +511,7 @@ model = dict(
             llm_int8_has_fp16_weight=False,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type=&quot;nf4&quot;,
+            bnb_4bit_quant_type="nf4",
         ),
     ),
     lora=dict(
@@ -515,17 +519,17 @@ model = dict(
         r=64,
         lora_alpha=16,
         lora_dropout=0.1,
-        bias=&quot;none&quot;,
-        task_type=&quot;CAUSAL_LM&quot;,
+        bias="none",
+        task_type="CAUSAL_LM",
     ),
 )
 
 #######################################################################
-#                      PART 3  Dataset &amp; Dataloader                   #
+#                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 alpaca_en = dict(
     type=process_hf_dataset,
-    dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=alpaca_en_path),
+    dataset=dict(type=load_dataset, path='json', data_files=alpaca_en_path),
     tokenizer=tokenizer,
     max_length=max_length,
     dataset_map_fn=alpaca_map_fn,
@@ -536,7 +540,7 @@ alpaca_en = dict(
     use_varlen_attn=use_varlen_attn,
 )
 
-sampler = SequenceParallelSampler if sequence_parallel_size &gt; 1 else DefaultSampler
+sampler = SequenceParallelSampler if sequence_parallel_size > 1 else DefaultSampler
 train_dataloader = dict(
     batch_size=batch_size,
     num_workers=dataloader_num_workers,
@@ -546,7 +550,7 @@ train_dataloader = dict(
 )
 
 #######################################################################
-#                    PART 4  Scheduler &amp; Optimizer                    #
+#                    PART 4  Scheduler & Optimizer                    #
 #######################################################################
 # optimizer
 optim_wrapper = dict(
@@ -554,8 +558,8 @@ optim_wrapper = dict(
     optimizer=dict(type=optim_type, lr=lr, betas=betas, weight_decay=weight_decay),
     clip_grad=dict(max_norm=max_norm, error_if_nonfinite=False),
     accumulative_counts=accumulative_counts,
-    loss_scale=&quot;dynamic&quot;,
-    dtype=&quot;float16&quot;,
+    loss_scale="dynamic",
+    dtype="float16",
 )
 
 # learning policy
@@ -625,16 +629,16 @@ env_cfg = dict(
     # whether to enable cudnn benchmark
     cudnn_benchmark=False,
     # set multi process parameters
-    mp_cfg=dict(mp_start_method=&quot;fork&quot;, opencv_num_threads=0),
+    mp_cfg=dict(mp_start_method="fork", opencv_num_threads=0),
     # set distributed parameters
-    dist_cfg=dict(backend=&quot;nccl&quot;),
+    dist_cfg=dict(backend="nccl"),
 )
 
 # set visualizer
 visualizer = None
 
 # set log level
-log_level = &quot;INFO&quot;
+log_level = "INFO"
 
 # load from which checkpoint
 load_from = None
@@ -647,12 +651,11 @@ randomness = dict(seed=None, deterministic=False)
 
 # set log processor
 log_processor = dict(by_epoch=False)
-
 ```
 
 ## 模型转换pth_to_hf
 
-```
+```bash
 xtuner convert pth_to_hf sft.py \
                          ./work_dirs/sft/iter_xx.pth \
                          ./work_dirs/sft/hf
@@ -660,71 +663,75 @@ xtuner convert pth_to_hf sft.py \
 
 ## 模型合并
 
-```
-#与原始模型合并
+```bash
+# 与原始模型合并
 xtuner convert merge ./internlm2_5-1_8b-chat \
                      ./work_dirs/sft/hf \
                      ./work_dirs/sft/merged \
                      --max-shard-size 2GB
 ```
 
-训练完后work_dirs目录结构参考：
+训练完后`work_dirs`目录结构参考：
 
 ![](img/ca89608f2fc62aebb4367a54208404d8.png)
 
-# 上传到[魔乐](https://modelers.cn/models/new)
+## 上传到[魔乐](https://modelers.cn/models/new)
 
-## 魔乐上传配置
+### 魔乐上传配置
 
-1.  创建组织
+1. 创建组织
+
+
+
+# 在组织内创建模型
 
 ![](img/d51fc33a00b16e70d9a1f1928139b13c.png)
 
-1.  在组织内创建模型
+1. 在组织内创建模型
 
 ![](img/d4e98fac5e4c6a42450765883e7e204d.png)
 
 ![](img/ca2d761a09b584de5f7c700c911806f6.png)
 
-1.  为了保证比赛公正，本次使用的魔乐社区托管权重，请使用组织功能，并邀请JimmyMa-99 用户加入团队，同时请将上传的是否公开为私有模型。
+1. 为了保证比赛公正，本次使用的魔乐社区托管权重，请使用组织功能，并邀请`JimmyMa-99` 用户加入团队，同时请将上传的是否公开为私有模型。
 
 ![](img/e24d4ead854d5f7744eefee451bd8180.png)
 
-1.  一定要邀请米佬，等同意 。如在 24 小时内没有同意邀请，请联系🛰️`小镇数字青年`
+1. 一定要邀请米佬，等同意。如在 24 小时内没有同意邀请，请联系🛰️`小镇数字青年`
 
 ![](img/b74ce2a6324d4c9c90ed06a4dbcac1e9.png)
 
 ## 上传模型及日志
 
-1.  下载所需环境包
+### 下载所需环境包
 
-```
+```bash
 python3.10 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install openmind_hub[all]
-pip install &quot;openmind[pt]&quot; --extra-index-url https://download.pytorch.org/whl/cpu
+pip install "openmind[pt]" --extra-index-url https://download.pytorch.org/whl/cpu
 ```
 
-1.  运行上传脚本
+### 运行上传脚本
 
-```
+```python
 from openmind_hub import upload_folder
 
 upload_folder(
-    token=&quot;a5cxxe&quot;,
-    folder_path=&quot;xxx&quot;,#模型位置，
-    repo_id=&quot;xxx&quot;,#模型空间名字
+    token="a5cxxe",
+    folder_path="xxx",#模型位置，
+    repo_id="xxx",#模型空间名字
 )
 ```
 
-```
+```bash
 python upload_model.py
 ```
 
-log原本在 sft 目录下，需要把这个 log 放到 merge 然后 传 merge
+`log` 原本在 `sft` 目录下，需要把这个 `log` 放到 `merge` 然后传 `merge`
 
-这样/root/work_dirs/sft/merged 文件下面不仅有模型信息，还需要有训练的日志信息（包含硬件、loss 等），如下图所示：
+这样`/root/work_dirs/sft/merged` 文件下面不仅有模型信息，还需要有训练的日志信息（包含硬件、`loss` 等），如下图所示：
 
 ![](img/66b000d8325e9e34cc7d8e6b4cebe504.png)
 
@@ -734,11 +741,15 @@ log原本在 sft 目录下，需要把这个 log 放到 merge 然后 传 merge
 
 ## 提交评测
 
-1.  确保JimmyMa-99 用户加入团队
+### 确保团队成员
+
+1. 确保`JimmyMa-99` 用户加入团队
 
 ![](img/0f43534708fbd3713977632207ca6bd6.png)
 
-1.  提交测评的[入口](https://aicarrier.feishu.cn/share/base/form/shrcnCR6hPPtl3v3y2ZVXomhME9)：https://aicarrier.feishu.cn/share/base/form/shrcnCR6hPPtl3v3y2ZVXomhME9，输入 uid 和对应的微调权重的模型 ID。
+### 提交测评
+
+1. 提交测评的[入口](https://aicarrier.feishu.cn/share/base/form/shrcnCR6hPPtl3v3y2ZVXomhME9)：https://aicarrier.feishu.cn/share/base/form/shrcnCR6hPPtl3v3y2ZVXomhME9，输入 `uid` 和对应的微调权重的模型 ID。
 
 提交测评前请仔细检查是否**顺序**执行 6、7 节！
 
@@ -746,14 +757,14 @@ log原本在 sft 目录下，需要把这个 log 放到 merge 然后 传 merge
 
 ![](img/4060085f4188663abdd6c3bfa15c7ba3.png)
 
-## 7.4 查询成绩
+### 查询成绩
 
-提交完成，自动等评测榜单更新(大概等十分钟)。
+提交完成，自动等评测榜单更新（大概等十分钟）。
 
-查询测评的分数[入口](https://aicarrier.feishu.cn/share/base/query/shrcn3UPdvR9e0D1REcjQ9LLNub)：https://aicarrier.feishu.cn/share/base/query/shrcn3UPdvR9e0D1REcjQ9LLNub 输入 uid 即可查询。
+查询测评的分数[入口](https://aicarrier.feishu.cn/share/base/query/shrcn3UPdvR9e0D1REcjQ9LLNub)：https://aicarrier.feishu.cn/share/base/query/shrcn3UPdvR9e0D1REcjQ9LLNub 输入 `uid` 即可查询。
 
 ![](img/2134aa0f0644bb9656f2942c171adb6e.png)
 
-# 本文参考
+## 本文参考
 
 [L1G4-InternLM 论文分类实践（沐曦版）](https://aicarrier.feishu.cn/wiki/IXKnwboj6i5PKzkwiEtce2xkn4c)

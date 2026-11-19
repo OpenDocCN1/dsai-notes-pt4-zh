@@ -1,20 +1,25 @@
+
 # 快读：Sora详细的技术报告
 
-> 来源：[https://aigcreative.feishu.cn/docx/JdgZdg2VZoy3thxjt7xc8ZWhnAF](https://aigcreative.feishu.cn/docx/JdgZdg2VZoy3thxjt7xc8ZWhnAF)
+> 来源：`https://aigcreative.feishu.cn/docx/JdgZdg2VZoy3thxjt7xc8ZWhnAF`
 
 简单来说 Sora 的训练量足够大也产生了类似涌现的能力。
 
-技术特点：
+## 技术特点
 
-三维空间的连贯性：Sora可以生成带有动态相机运动的视频。随着相机移动和旋转，人物和场景元素在三维空间中保持连贯的运动。
+### 三维空间的连贯性
+Sora可以生成带有动态相机运动的视频。随着相机移动和旋转，人物和场景元素在三维空间中保持连贯的运动。
 
-模拟数字世界：Sora还能模拟人工过程，如视频游戏。Sora能够同时控制Minecraft中的玩家，并高保真地渲染游戏世界及其动态。通过提及“Minecraft”的提示，可以零样本地激发Sora的这些能力
+### 模拟数字世界
+Sora还能模拟人工过程，如视频游戏。Sora能够同时控制Minecraft中的玩家，并高保真地渲染游戏世界及其动态。通过提及“Minecraft”的提示，可以零样本地激发Sora的这些能力
 
-长期连续性和物体持久性：对视频生成系统来说，Sora通常能够有效地模拟短期和长期的依赖关系。同样，它能在一个样本中生成同一角色的多个镜头，确保其在整个视频中的外观一致。
+### 长期连续性和物体持久性
+对视频生成系统来说，Sora通常能够有效地模拟短期和长期的依赖关系。同样，它能在一个样本中生成同一角色的多个镜头，确保其在整个视频中的外观一致。
 
-与世界互动：Sora有时能够模拟对世界状态产生简单影响的行为。例如，画家可以在画布上留下随时间持续的新笔触，或者一个人吃汉堡时留下咬痕。
+### 与世界互动
+Sora有时能够模拟对世界状态产生简单影响的行为。例如，画家可以在画布上留下随时间持续的新笔触，或者一个人吃汉堡时留下咬痕。
 
-训练过程：
+## 训练过程
 
 Sora 的训练受到了大语言模型（Large Language Model）的启发。这些模型通过在互联网规模的数据上进行训练，从而获得了广泛的能力。
 
@@ -36,6 +41,6 @@ Sora训练时没有对素材进行裁切，使得Sora能够直接为不同设备
 
 与DALL·E 3相似，也利用了GPT技术，将用户的简短提示转换成更详细的提示，然后发送给视频模型。
 
-技术报告详细内容[：](https://openai.com/research/video-generation-models-as-world-simulators)https://openai.com/research/video-generation-models-as-world-simulators
+技术报告详细内容：`https://openai.com/research/video-generation-models-as-world-simulators`
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

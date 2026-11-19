@@ -1,8 +1,7 @@
+
 # 第四步 - 商业模式与toB销售
 
 > 来源：[https://miracleplus.feishu.cn/docx/SGtIdPxJJoEYLUxEQZDcadPpnHb](https://miracleplus.feishu.cn/docx/SGtIdPxJJoEYLUxEQZDcadPpnHb)
-
-# 商业模式 与 toB 销售
 
 ## 商业模式
 

@@ -1,50 +1,50 @@
+
+
 # AI写小说-NineS AI仿写《我不是戏神》
 
-> 来源：[https://rq547mr4oez.feishu.cn/docx/LOWsdJpndoJmCLxlUeZcWn7Onuf](https://rq547mr4oez.feishu.cn/docx/LOWsdJpndoJmCLxlUeZcWn7Onuf)
-
-# 一、前言
+> 来源：`https://rq547mr4oez.feishu.cn/docx/LOWsdJpndoJmCLxlUeZcWn7Onuf`
 
 > 各位小伙伴好~🎉🎉🎉NineS-AI与君又见😬。
 
 > 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
 
-> **经过**十月份的α测试和最近10天的内测，很多小伙伴们都拿到了好结果（如：新手短篇K30/长篇签约起点/短剧出售等等）。
+> 经过十月份的α测试和最近10天的内测，很多小伙伴们都拿到了好结果（如：新手短篇K30/长篇签约起点/短剧出售等等）。
 
-> 如今，通过仿写《我不是戏神》演示产品的实力~~
+> 如今，通过仿写《我不是戏神》演示产品的实力
 
 ---
 
 以下是题材类Prompt，无私奉献~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
+1. [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
 
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -52,69 +52,67 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+PS：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
-**原始出处：**
+原始出处：
 
 ![](img/592f0953f70ac26373007e649d1e26e9.png)
 
-#
-
-# 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
+## 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
 
 ![](img/331920e4856ca5710f44ab9eec1d38b5.png)
 
 ![](img/ce161e77999050b044849254aaf468ec.png)
 
-# 三、当前状态（以作家灵感为始，破程序想象之梏。）
+## 三、当前状态（以作家灵感为始，破程序想象之梏。）
 
-> **产品理念：**
+> 产品理念：
 
-1.  以作家灵感为始，破程序想象之梏。奉行长期价值主义~
+1. 以作家灵感为始，破程序想象之梏。奉行长期价值主义~
 
-1.  最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
+1. 最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
 
-1.  **功能一览**
+1. 功能一览
 
-+   **AI拆书：**
++ AI拆书：
 
-+   短篇的情节节奏，情绪上下文怎么快速理解？
++ 短篇的情节节奏，情绪上下文怎么快速理解？
 
-+   500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
++ 500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
 
-+   **AI创作**
++ AI创作
 
-+   短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
++ 短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
 
-+   润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
++ 润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
 
-+   **AI助手**
++ AI助手
 
-+   高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
++ 高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
 
-1.  **我们的优势**
+1. 我们的优势
 
-1.  质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
+1. 质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
 
-1.  重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
+1. 重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
 
-1.  高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
+1. 高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
 
-1.  **产品进度**
+1. 产品进度
 
-1.  种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
+1. 种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
 
-1.  内测时间（群无条件邀请测试）**开始时间：2024-11-22晚19.3**0    结束时间：2024-12-30
+1. 内测时间（群无条件邀请测试）开始时间：2024-11-22晚19.30    结束时间：2024-12-30
 
-# 四、仿写**案例~**
+## 四、仿写案例~
 
 ### 仿写三个层次：《具体见[《仿写》的三个层次直播详解](https://rq547mr4oez.feishu.cn/wiki/F9gHwbDbni1386kI3ivcC0PSnRb?from=from_copylink)》
 
-+   初级仿写：即“翻译”：中译中不可取、英译中、中译英
++ 初级仿写：即“翻译”：中译中不可取、英译中、中译英
 
-+   中级仿写：即“改写”：换元法（背景/人物/等），变成情节卡
++ 中级仿写：即“改写”：换元法（背景/人物/等），变成情节卡
 
-+   高级仿写：即“取经”：是仿情绪，节奏，通用"情节卡模板”。
++ 高级仿写：即“取经”：是仿情绪，节奏，通用"情节卡模板”。
 
 ### 拆书分析
 
@@ -196,8 +194,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 一个可怕的念头在两人心中同时升起——难道，他们昨晚杀死的人，真的回来了？
 ```
 
-###
-
 ### 节奏版（字数2804），一次性生成未润色
 
 ```
@@ -268,22 +264,22 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 ====
 “你是怎么回来的？”父亲终于开口问道，声音颤抖而小心翼翼，仿佛害怕触碰到某个禁忌的话题，像是担心会引来更大的灾难。
 陈伶放下手中的杯子，用袖子擦去嘴角残留的水渍，然后含糊地回答：“我走回来的。”
-虽然话语简单，但其中蕴含的信息却异常诡异，让人无法轻易相信或理解其中真相，像是隐藏着一个巨大的秘密，等待着人们去揭开。 
-喝干了水桶后，陈伶转身朝自己的卧室走去，不再多说一句话。 
-房门关闭的一瞬间，客厅陷入死寂，只剩下钟表滴答作响，与外面狂风暴雨形成鲜明对比，像是两个不同的世界。 
-父母依旧呆坐在那里，他们彼此对视，却找不到任何可以解释眼前这一切的方法，仿佛掉进了一个巨大的迷宫，找不到出口。 
-“这...到底怎么回事？”母亲低声问道，她声音颤抖得几乎听不清，像是害怕惊动某个可怕的存在。 
+虽然话语简单，但其中蕴含的信息却异常诡异，让人无法轻易相信或理解其中真相，像是隐藏着一个巨大的秘密，等待着人们去揭开。
+喝干了水桶后，陈伶转身朝自己的卧室走去，不再多说一句话。
+房门关闭的一瞬间，客厅陷入死寂，只剩下钟表滴答作响，与外面狂风暴雨形成鲜明对比，像是两个不同的世界。
+父母依旧呆坐在那里，他们彼此对视，却找不到任何可以解释眼前这一切的方法，仿佛掉进了一个巨大的迷宫，找不到出口。
+“这...到底怎么回事？”母亲低声问道，她声音颤抖得几乎听不清，像是害怕惊动某个可怕的存在。
 ```
 
 ### 微调版（字数1433），一次性生成未润色
 
-```
-**第1章:暴雨中的重生**
+
+
+# 第1章:暴雨中的重生
 
 狂风暴雨中，一个少年孤独地在泥泞的街道上蹒跚而行。
 雨水如同锋利的针刺，毫不留情地穿透他单薄的衣物，冰冷地贴在他的皮肤上，激起一阵阵寒意。
-路灯昏黄的光芒在风雨中摇曳不定，照亮少年苍白的脸庞，雨水顺着他的头发、脸颊不断滴落，
-模糊了他的视线，眼前的一切都变得扭曲而陌生，如同一个光怪陆离的梦境。
+路灯昏黄的光芒在风雨中摇曳不定，照亮少年苍白的脸庞，雨水顺着他的头发、脸颊不断滴落，模糊了他的视线，眼前的一切都变得扭曲而陌生，如同一个光怪陆离的梦境。
 他用力地甩了甩头，试图回忆起自己的身份，但脑海中只有零星的片段闪过，像是被这场暴风雨无情撕碎的记忆碎片，拼凑不出完整的画面。
 少年突然一个踉跄，身体失去平衡，重重地摔倒在泥泞的地面上。“嘶——” 一阵剧烈的疼痛从额头传来，他忍不住倒吸一口凉气。
 雨水混着泥浆无情地溅在他的脸上，他感到额头上火辣辣的疼，伸手一摸，黏糊糊的，是血！
@@ -304,9 +300,9 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 父母对视了一眼，心中的不安更加深了。
 他们不知道眼前的这个少年究竟是谁，但直觉告诉他们，这不是他们的儿子，至少，不是他们记忆中的那个儿子。
 喝干了水桶里的最后一口水，陈伶转身向卧室走去，随手关上了房门，将父母的担忧和恐惧都关在了门外
+
 客厅里陷入了死寂，父母对视着彼此，不知所措，他们的心中充满了恐惧和不安。
 父亲的眼神中闪过一丝恐惧，他低声说道：“这……这是不是我们昨晚杀死的那个人？”
 母亲的脸色变得苍白，她摇了摇头，声音颤抖：“不可能，我们昨晚杀死的是阿宴，不是陈伶。”
 父亲的表情变得更加阴沉，他喃喃道：“可是，为什么他会出现在这里？而且，他的眼神……”
 母亲的眼中闪过一丝绝望，她紧紧抓住父亲的手，低声说道：“不管他是谁，我们都必须小心。不能再出任何差错了。”
-```

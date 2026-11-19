@@ -1,3 +1,4 @@
+
 # AI编程系列：Trae初体验，与Cursor对齐
 
 > 来源：[https://agijuejin.feishu.cn/docx/SrvwdDWxqojcuBxymgCcOZ0HnQc](https://agijuejin.feishu.cn/docx/SrvwdDWxqojcuBxymgCcOZ0HnQc)
@@ -6,7 +7,7 @@
 
 > 转载请联系原作者取得授权
 
-# Trae 初体验
+## Trae 初体验
 
 Trae是字节旗下公司开发的一款AI编程工具，与Cursor类似。不过初步看下虽然实现了类似Cursor的Agent功能，但体验上并没有更好。
 
@@ -20,23 +21,23 @@ Trae界面布局
 
 Cursor界面布局
 
-## 安装
+### 安装
 
-官网地址：https://www.trae.ai/
+官网地址：`https://www.trae.ai/`
 
-目前只支持MacOS。
+目前只支持`MacOS`。
 
-实际上它跟Cursor类似，都是在VS Code的基础上开发的。
+实际上它跟Cursor类似，都是在`VS Code`的基础上开发的。
 
-## 与Cursor的比较
+### 与Cursor的比较
 
-## 实际体验
+### 实际体验
 
 **接下来我们分别在Cursor中执行同一个需求，看看实际**体验如何。
 
-模型都用claude-3.5-sonnect版本；很奇怪为什么Trae不支持自家的豆包大模型？
+模型都用`claude-3.5-sonnect`版本；很奇怪为什么Trae不支持自家的豆包大模型？
 
-### Round 1
+#### Round 1
 
 主要是看两个工具对任务的理解。任务如下：
 
@@ -64,7 +65,7 @@ Trae可能是我给的提示词不够明确，不能在提示词中出现“再�
 
 Trae
 
-### Round 2
+#### Round 2
 
 接下来我需要更换技术实现框架。
 
@@ -80,15 +81,15 @@ Trae
 
 Cursor从结果上看，这轮**打平**
 
-#### 这里说下我为什么没采用Flutter方案？
+##### 这里说下我为什么没采用`Flutter`方案？
 
-开始我以为Cursor先**提出的F**lutter方案是因为之前有一个项目中用了Flutter方案所以才优先推荐的。但从Trae给的方案来看，应该不是我想的这样。
+开始我以为Cursor先提出的`Flutter`方案是因为之前有一个项目中用了`Flutter`方案所以才优先推荐的。但从Trae给的方案来看，应该不是我想的这样。
 
-因为之前有一个项目用Flutter做的前端，踩了很多坑，而且要兼容windows使用的话，只能把代码放在windows环境中，重新安装Flutter再编译打包成APP。
+因为之前有一个项目用`Flutter`做的前端，踩了很多坑，而且要兼容`windows`使用的话，只能把代码放在`windows`环境中，重新安装`Flutter`再编译打包成APP。
 
-我觉得很麻烦，于是这次就PASS掉了。
+我觉得很麻烦，于是这次就`PASS`掉了。
 
-### Round 3
+#### Round 3
 
 接下来看看对APP的性能和用户体验的实现方案：
 
@@ -106,10 +107,10 @@ Cursor看上去渐渐趋于一致了。
 
 今天的体验先到这里了，待后续继续体验之后再发。
 
-# 总结
+## 总结
 
-+   • 从界面布局上看，Trae更优一些，UI看上去更符合国人的审美习惯，这点上国内的其他APP做出了突出贡献。而Cursor呢，则不太注重界面的呈现。就是原原的基于VS Code UI实现。
++ 从界面布局上看，Trae更优一些，UI看上去更符合国人的审美习惯，这点上国内的其他APP做出了突出贡献。而Cursor呢，则不太注重界面的呈现。就是原原的基于`VS Code` UI实现。
 
-+   • 从模型上看，Trae目前只有一个sonnect版本的模型，而Cursor则支持市面上主流的AI模型，连不支持deepseek V3模型，也可以曲线支持。
++ 从模型上看，Trae目前只有一个`sonnect`版本的模型，而Cursor则支持市面上主流的AI模型，连不支持`deepseek V3`模型，也可以曲线支持。
 
-+   • 从费用上看，Trae目前是免费，当然这个肯定是暂时的，因为它使用是的claude模型，对Trae来说是要付费使用claude的。有点奇怪的是竟然没有支持自家的豆包大模型。
++ 从费用上看，Trae目前是免费，当然这个肯定是暂时的，因为它使用的是`claude`模型，对Trae来说是要付费使用`claude`的。有点奇怪的是竟然没有支持自家的豆包大模型。

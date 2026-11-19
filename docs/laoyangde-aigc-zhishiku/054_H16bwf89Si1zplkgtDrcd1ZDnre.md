@@ -1,52 +1,53 @@
+
 # AI写小说-NineS AI“扩写”功能演示~
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/CwAhdfGzwozTOpxABrYcN15BnYf](https://rq547mr4oez.feishu.cn/docx/CwAhdfGzwozTOpxABrYcN15BnYf)
 
-# 一、前言
+## 一、前言
 
 > 各位小伙伴好~🎉🎉🎉NineS-AI与君又见😬。
 
 > 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
 
-> **经过10月份的α测****试，小伙伴们都拿到了很多****好**结果（太多就不一一发图了），但是产品还是不够完善
+> 经过10月份的α测试，小伙伴们都拿到了很多好结果（太多就不一一发图了），但是产品还是不够完善
 
 > 所以第二期，在第一期的基础之上增加大量的优化和更改~
 
-> **如今，部分内部测试的效果一一展现**给大家~~期待小伙伴们11月下旬的尝试！
+> 如今，部分内部测试的效果一一展现给大家~~期待小伙伴们11月下旬的尝试！
 
 ---
 
 以下是题材类Prompt，无私奉献~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
+1. [AI写小说-“读心术”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/IAE8wHhiLi6c1jkdau3cTPZVnnb?from=from_copylink)
 
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -54,69 +55,69 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+PS：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
-**原始出处：**
+原始出处：
 
 ![](img/39fa50c8939efdc87b75ef8a50c261c0.png)
 
-# 二、当前状态（以作家灵感为始，破程序想象之梏。）
+## 二、当前状态（以作家灵感为始，破程序想象之梏。）
 
-#### **为谁而生？**
+### 为谁而生？
 
 为每一个心怀故事的你，无论是短篇小说、长篇巨著、精彩短剧，还是悬疑烧脑的剧本杀，都能在这里找到属于你的舞台。
 
-1.    第一期：我们专注于短篇和长篇小说的创作，为你的故事插上想象的翅膀。
+1. 第一期：我们专注于短篇和长篇小说的创作，为你的故事插上想象的翅膀。
 
-1.    第二期：完善短剧、剧本杀等所有文字创作类型
+1. 第二期：完善短剧、剧本杀等所有文字创作类型
 
-1.    第三期：完善文字创作中需要的图文（炼丹）、渠道（国内+海外）等所有服务
+1. 第三期：完善文字创作中需要的图文（炼丹）、渠道（国内`+`海外）等所有服务
 
-#### **产品理念：**
+### 产品理念：
 
-1.  以作家灵感为始，破程序想象之梏。
+1. 以作家灵感为始，破程序想象之梏。
 
-1.  最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。不会写代码的作者，总是欠缺一点什么~~（就是这么自信）
+1. 最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。不会写代码的作者，总是欠缺一点什么~~（就是这么自信）
 
-1.  不用只是简单的写一个Prompt来忽悠人。
+1. 不用只是简单的写一个Prompt来忽悠人。
 
-#### **功能一览（网文核心框架（基础+题材**）+TOT，LATS，REAT技术实现）
+### 功能一览（网文核心框架（基础`+`题材）`+` `TOT`，`LATS`，`REAT`技术实现）
 
-1.  文学创作SOP（第一期）：
+1. 文学创作`SOP`（第一期）：
 
-+   续写和改稿：灵感枯竭？旧作翻新？没问题！NineS-AI帮你轻松续写、改稿、仿写，让你的创作灵感源源不断。
++ 续写和改稿：灵感枯竭？旧作翻新？没问题！NineS-AI帮你轻松续写、改稿、仿写，让你的创作灵感源源不断。
 
-+   网文大模型）：掌握所有网文创作技巧，无论是情节、人物，还是世界观设定，NineS-AI都能满足你的需求，让你轻松构建属于自己的故事宇宙。
++ 网文大模型）：掌握所有网文创作技巧，无论是情节、人物，还是世界观设定，NineS-AI都能满足你的需求，让你轻松构建属于自己的故事宇宙。
 
-+   长文拆解：500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节，让你的创作之路不再迷茫。
++ 长文拆解：500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节，让你的创作之路不再迷茫。
 
-1.  B端定制（完整SOP一键产出，第三期）
+1. `B`端定制（完整`SOP`一键产出，第三期）
 
-#### **我们的优势**
+### 我们的优势
 
-1.  质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
+1. 质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
 
-1.  重做文章G评系统：NineS-AI的创作70~85分起步（支持全网产品同等情况竞技PK）。
+1. 重做文章G评系统：NineS-AI的创作70~85分起步（支持全网产品同等情况竞技PK）。
 
-1.  高端定制：如果你是追求极致的完美主义者，我们还提供80~90分的“私人订制”服务。
+1. 高端定制：如果你是追求极致的完美主义者，我们还提供80~90分的“私人订制”服务。
 
-#### 产品进度
+### 产品进度
 
-1.  种子测试时间（100+全职作者测试）
+1. 种子测试时间（100+全职作者测试）
 
-+   开始时间：2024-10-14    结束时间：2024-11-15
++ 开始时间：2024-10-14    结束时间：2024-11-15
 
-1.  内测时间（群邀请测试）
+1. 内测时间（群邀请测试）
 
-+   开始时间：2024-11-20    结束时间：2024-12-20
++ 开始时间：2024-11-20    结束时间：2024-12-20
 
-# 三、**扩写案例~**
+## 三、扩写案例~
 
 ### 扩写界面：
 
-+   4个调试AI（集齐市面最强大的写作AI，包括我们微调版本）
++ 4个调试AI（集齐市面最强大的写作AI，包括我们微调版本）
 
-+   **二十种通用风格（长篇和短篇~）**
++ 二十种通用风格（长篇和短篇~）
 
 ![](img/5b532ee7d4efa611cc04d5f9a7f605eb.png)
 
@@ -255,8 +256,10 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ### 节奏版（字数2004）
 
-```
-**第1章:惊魂初现**
+
+
+# 第1章:惊魂初现
+
 我握紧方向盘，耳边只有轮胎与地面摩擦的单调声响，仿佛一首催眠曲，想要将我拉入无尽的黑暗。
 
 深夜的公交车内静得可怕，连一根针掉在地上都能听见，这种寂静反而让我更加不安。
@@ -358,12 +361,8 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 就在这时，后视镜中突然出现了一张苍白的脸，像是幽灵般凭空出现，与我近在咫尺。
 
 那双漆黑的眼睛直勾勾地盯着我，像是要看穿我的灵魂，让我无处遁形，充满了邪恶和恶意。
-```
 
-### 均衡版（字数1603）
-
-```
-**第1章:惊魂初现**
+## 均衡版（字数1603）
 
 我握紧方向盘，耳边只有轮胎与地面摩擦的单调声响。
 
@@ -458,13 +457,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 很快，我们到达了下一站，大多数乘客下了车，只剩下几个人继续随行。
 
 我松了口气，试图说服自己这不过是一场意外，但直觉告诉我，这绝非偶然。
-```
 
-四、种子测试~结果反馈（少部分截图，还有很多）
-
-
-
-
-
+## 四、种子测试~结果反馈（少部分截图，还有很多）
 
 ![](img/a139e4a4af53d3c3d549c7dd017834ab.png)

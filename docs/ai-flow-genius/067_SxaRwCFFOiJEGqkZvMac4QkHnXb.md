@@ -1,3 +1,4 @@
+
 # 万字科普GPT4为何会颠覆现有工作流；为何你要关注微软Copilot
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/KQ5sdVVYuoQF9IxDUVZcngAanye](https://jalicvoygc0.feishu.cn/docx/KQ5sdVVYuoQF9IxDUVZcngAanye)

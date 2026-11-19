@@ -1,3 +1,4 @@
+
 # ChatGPT 4o 或 AI 制作表情包上架🛰️喂饭级教程，不会 PS 也能轻松上手
 
 > 来源：[https://yunyinghui.feishu.cn/docx/Bx8KdJWiNoaeFexNgN2cjLXVnvb](https://yunyinghui.feishu.cn/docx/Bx8KdJWiNoaeFexNgN2cjLXVnvb)
@@ -30,7 +31,6 @@
 
 ![](img/183948038f1a8b15bd4d24afe891b1d2.png)
 
-
 ![](img/cea0bb8c3075e49df1c802440bae535d.png)
 
 ![](img/039c57531a25d034c573cc8ac70e7f19.png)
@@ -45,12 +45,11 @@
 
 ![](img/7e11dec2a7349314a7e4e9c736c676a0.png)
 
-
 ![](img/b1b36006cb8c0412a16ed315cc55cc24.png)
 
 得到的第一个表情有点呆，我重新输入“让它看起来得意一点”得到了第二张图。
 
-一次生成九宫格表情包的快捷方法灵感来自 @歸藏的 AI 工具箱 ，我这里也用了类似的比较粗暴的办法。
+一次生成九宫格表情包的快捷方法灵感来自 @歸藏的 AI 工具箱，我这里也用了类似的比较粗暴的办法。
 
 我们现在继续基于第二个柴犬的形象开始继续延展表情。有一个简单的方式，就是先去收集很多自己喜欢的表情包，给到 AI 作为参考。比如我收集了下面这些表情包，把每组拼图为 9 个：
 
@@ -86,9 +85,9 @@
 
 # 2.上传表情到🛰️表情开放平台的方法
 
-你可以使用电脑浏览器前往（ https://sticker.weixin.qq.com ）注册账号，注册后即可上传你的作品。
+你可以使用电脑浏览器前往（`https://sticker.weixin.qq.com`）注册账号，注册后即可上传你的作品。
 
-注册指引请参考： https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/main#section1
+注册指引请参考：`https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/main#section1`
 
 首先进行注册，查看上面的注册指引链接↑，注册指引的地方会告诉你需要准备哪些：
 
@@ -114,17 +113,17 @@
 
 在线裁剪修改图像大小工具：
 
-https://www.gaitubao.com/
+`https://www.gaitubao.com/`
 
 我简单演示一下操作方法：
 
-1.打开网页，点击绿色按钮上传图片：
+1. 打开网页，点击绿色按钮上传图片：
 
 ![](img/fe545c63602407029e9e550563337383.png)
 
 ![](img/825aed0fb8dd2c2c7e459f6a0f12acb6.png)
 
-这里有【修改大小】和【改变尺寸】，比如我们看见前面尺寸写了 240x240 像素，是 1 比 1 的正方形，我们图片也是正方形，但是尺寸太大上传失败，那么选择【修改大小】。 然后注意！点击【确定】开始修改，不要点击【开始上传并修改】。
+这里有【修改大小】和【改变尺寸】，比如我们看见前面尺寸写了 240x240 像素，是 1 比 1 的正方形，我们图片也是正方形，但是尺寸太大上传失败，那么选择【修改大小】。然后注意！点击【确定】开始修改，不要点击【开始上传并修改】。
 
 ![](img/884e8542c36ecd76867fdaff0bdf1d97.png)
 
@@ -132,7 +131,7 @@ https://www.gaitubao.com/
 
 ![](img/62fcedd0f722c45ea570b3bfedfb903d.png)
 
-如果是像这样填写【艺术家资料】的页面，尺寸是 750x400** 像素，但是我**们图片尺寸不同，那么选择 【改变尺寸】 。
+如果是像这样填写【艺术家资料】的页面，尺寸是 750x400 像素，但是我们图片尺寸不同，那么选择【改变尺寸】。
 
 ![](img/f8b29472efe5e70c18f128ca4c6596ed.png)
 
@@ -152,7 +151,7 @@ https://www.gaitubao.com/
 
 ![](img/3f2e40ecda9b8d6a6658aa05060d2a2e.png)
 
-## **2.2 继续操作填写**
+## 2.2 继续操作填写
 
 ![](img/e97b795abf10a92b53982a963303aa9a.png)
 

@@ -1,3 +1,4 @@
+
 # 「浦语」+「黑神话·悟空」项目共建
 
 > 来源：[https://aicarrier.feishu.cn/docx/NzpKd8PJNozUiaxvtLfcxyqhnli](https://aicarrier.feishu.cn/docx/NzpKd8PJNozUiaxvtLfcxyqhnli)
@@ -10,7 +11,7 @@
 | --- | --- |
 | 1W | 2卡A100 XXX 算力点 |
 | 10W | 4卡A100 XXX 算力点 |
-| 100W | 8卡A100  XXX 算力点 |
+| 100W | 8卡A100 XXX 算力点 |
 
 可以商量着来～
 

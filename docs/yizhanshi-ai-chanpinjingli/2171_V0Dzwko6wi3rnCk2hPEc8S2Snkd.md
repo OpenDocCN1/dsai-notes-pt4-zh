@@ -1,3 +1,4 @@
+
 # 第27期 AI行业周报（2024-12.16-12.22）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Tz5wd2SJro8BThxygO1cZHvDnmg](https://v11enp9ok1h.feishu.cn/docx/Tz5wd2SJro8BThxygO1cZHvDnmg)

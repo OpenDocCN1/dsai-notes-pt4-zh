@@ -1,24 +1,19 @@
+
 # LLM（十）：从 ColossalChat 到 DeepSpeedChat, RLHF的实现及优化
 
 > 来源：[https://agijuejin.feishu.cn/docx/B2OPdzNJxo5fe2xqTZ0cd6vGnvb](https://agijuejin.feishu.cn/docx/B2OPdzNJxo5fe2xqTZ0cd6vGnvb)
-
 > 作者：紫气东来
-
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/621391363)hihu.com/p/621391...
+> 原文：[https://zhuanlan.zhihu.com/p/621391363](https://zhuanlan.zhihu.com/p/621391363)
 
 ## 一、深入理解 ColossalChat
 
-在上一期
-
-[紫](https://zhuanlan.zhihu.com/p/618695885)气东来：NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究 238 赞同 · 26 评论 文章
+在上一期 [紫气东来：NLP（九）：LLaMA, Alpaca, ColossalChat 系列模型研究](https://zhuanlan.zhihu.com/p/618695885) 的最后部分简要介绍了 ColossalChat 的训练过程。下面将逐步解析训练的3个过程。
 
 ![](img/3da209a9ad8d6701231fe536ddd8b653.png)
 
-的最后部分简要介绍了ColossalChat 的训练过程。下面将逐步解析训练的3个过程。
-
 ### 1.1 Stage 1：Supervised instructs tuning
 
-该阶段训练采用 InstructionWild 数据集中的 "instinwild_en.json" ，总数据量为52K，其数据格式如下所示：
+该阶段训练采用 `InstructionWild` 数据集中的 `instinwild_en.json` ，总数据量为52K，其数据格式如下所示：
 
 ```
 {
@@ -29,11 +24,11 @@
 }
 ```
 
-SFT 的训练逻辑如下图所示，即是典型的 Instruction 的做法 ：
+SFT 的训练逻辑如下图所示，即是典型的 Instruction 的做法：
 
 ![](img/7a054e8625c1df293250d4e22947f99f.png)
 
-为节约GPU资源，使用 GPT2-XL 模型训练，命令如下：
+为节约GPU资源，使用 `GPT2-XL` 模型训练，命令如下：
 
 ```
 torchrun --standalone --nproc_per_node=8 train_sft.py \
@@ -50,13 +45,13 @@ torchrun --standalone --nproc_per_node=8 train_sft.py \
     --max_epochs 2 
 ```
 
-训练过程的 lr 和 loss 的记录如下图所示：
+训练过程的 `lr` 和 `loss` 的记录如下图所示：
 
 ![](img/009420336fca102cc9bbe0fce501d0cf.png)
 
 ### 1.2 Stage 2：Training reward model
 
-RM 模型训练使用 Anthropic/hh-rlhf 数据集，训练集数据总量为161K，其数据样本如下所示：
+RM 模型训练使用 `Anthropic/hh-rlhf` 数据集，训练集数据总量为161K，其数据样本如下所示：
 
 | chosen (string) | rejected (string) |
 | --- | --- |
@@ -78,7 +73,7 @@ torchrun --standalone --nproc_per_node=8 train_reward_model.py \
    --dataset &#x27;Anthropic/hh-rlhf&#x27;\
 ```
 
-在训练过程中，除记录loss外，还需要记录在验证集上的 dist(chosen_reward-reject_reward 的均值) 和 acc ，结果如下所示：
+在训练过程中，除记录 `loss` 外，还需要记录在验证集上的 `dist`、`chosen_reward`、`reject_reward` 的均值 和 `acc` ，结果如下所示：
 
 ![](img/8b2e69f42c9c14f48f07dbac6c81db7b.png)
 
@@ -88,21 +83,21 @@ Stage3 是通过阶段2训练出来的奖励函数微调出一个RL模型，微�
 
 ![](img/a3643e157620c3670a3fe170e6d937bd.png)
 
-+   部分1: Make Experience ，利用 SFT 、Actor、RM、Critic模型计算生成 Experience 存入 buffer 中，该部分所有模型都进行前向推理。
++   部分1: Make Experience ，利用 `SFT`、`Actor`、`RM`、`Critic` 模型计算生成 `Experience` 存入 `buffer` 中，该部分所有模型都进行前向推理。
 
 ![](img/40df2bc131f14816c2cf8c1f3e620222.png)
 
-+   部分2: 利用 Experience 计算价值损失(value loss)和策略损失(policy loss)，并更新参数。
++   部分2: 利用 `Experience` 计算 `value loss` 和 `policy loss`，并更新参数。
 
 ![](img/961db2449052137929c028b7db6888e0.png)
 
-这里需要说明的是价值损失(value loss)和策略损失(policy loss) 为什么不同：
+这里需要说明的是 `value loss` 和 `policy loss` 为什么不同：
 
-+   价值损失(value loss) 采用的均方误差，这个目的是为了使判断更加准确，不偏离方向；
++   `value loss` 采用的均方误差，这个目的是为了使判断更加准确，不偏离方向；
 
-+   策略损失(policy loss) reward与KL的调和值，其目的是为了获取更大的回报。
++   `policy loss` `reward` 与 `KL` 的调和值，其目的是为了获取更大的回报。
 
-使用前2阶段训练得到的SFT和RM模型，第3阶段的完整训练如下所示：
+使用前2阶段训练得到的 `SFT` 和 `RM` 模型，第3阶段的完整训练如下所示：
 
 ```
 torchrun --standalone --nproc_per_node=8 train_prompts.py \
@@ -126,7 +121,7 @@ torchrun --standalone --nproc_per_node=8 train_prompts.py \
 
 ![](img/308a936aa5b3581d3992b73d7a920750.png)
 
-为便于与ColossalChat 比较采用同等规模模型，3个阶段可通过一个命令运行
+为便于与 ColossalChat 比较采用同等规模模型，3个阶段可通过一个命令运行
 
 ```
 python3 train.py --actor-model facebook/opt-1.3b --reward-model facebook/opt-350m --deployment-type single_node
@@ -157,6 +152,10 @@ deepspeed main.py \
 ```
 
 第一阶段训练日志过程的部分日志如下：
+
+
+
+## 第一阶段训练
 
 ```
 ***** Running training *****
@@ -189,7 +188,7 @@ ppl: 1.780816674232483
 saving the final model ...
 ```
 
-+   第二步：Reward Model 训练
+## 第二步：Reward Model 训练
 
 ```
 deepspeed main.py \
@@ -210,10 +209,10 @@ deepspeed main.py \
    --seed 1234 \
    --zero_stage 0 \
    --deepspeed \
-   --output_dir &quot;./output&quot; \
+   --output_dir "./output" \
 ```
 
-第二阶段训练日志过程的部分日志如下：
+### 第二阶段训练日志
 
 ```
 ***** Running training *****
@@ -243,7 +242,7 @@ chosen_last_scores (higher is better) : -0.4733814597129822, acc (higher is bett
 saving model ...
 ```
 
-+   第三步：RLHF 训练
+## 第三步：RLHF 训练
 
 ```
 Actor_Lr=9.65e-6
@@ -252,8 +251,8 @@ Critic_Lr=5e-6
 deepspeed --master_port 12346 main.py \
    --data_path Dahoas/rm-static \
    --data_split 2,4,4 \
-   --actor_model_name_or_path &#x27;output/actor-models/1.3b&#x27; \
-   --critic_model_name_or_path &#x27;output/reward-models/350m&#x27; \
+   --actor_model_name_or_path 'output/actor-models/1.3b' \
+   --critic_model_name_or_path 'output/reward-models/350m' \
    --num_padding_at_beginning 1 \
    --per_device_train_batch_size 4 \
    --per_device_mini_train_batch_size 4 \
@@ -273,10 +272,17 @@ deepspeed --master_port 12346 main.py \
    --actor_zero_stage 2 \
    --critic_zero_stage 2 \
    --enable_ema \
-   --output_dir &#x27;output&#x27;
+   --output_dir 'output'
 ```
 
+### 第三阶段训练日志
+
 第三阶段训练日志过程的部分日志如下：
+
+
+
+
+## 训练日志
 
 ```
 。。.************************[start] Initializing Actor Model [start] *************************
@@ -317,24 +323,24 @@ average reward score: -2.3125
 epoch: 0|step: 36|ppo_ep: 1|act_loss: 0.2275390625|cri_loss: 0.0435791015625|unsuper_loss: 0.0
 average reward score: -1.783203125
 -------------------------------------------------------------------------------------
-|E2E latency=2.89s |Gather latency=0.00s (0.00%) |Generate time=1.56s (53.98%) |Training time=1.04s (35.96%) |Others=0.29 (10.06%)|CurSamplesPerSec=11.06 |AvgSamplesPerSec=11.06
+|E2E latency=2.89s |Gather latency=0.00% |Generate time=1.56s (53.98%) |Training time=1.04s (35.96%) |Others=0.29 (10.06%)|CurSamplesPerSec=11.06 |AvgSamplesPerSec=11.06
 epoch: 0|step: 37|ppo_ep: 1|act_loss: -0.06414794921875|cri_loss: 0.0183868408203125|unsuper_loss: 0.0
 average reward score: -2.1171875
 -------------------------------------------------------------------------------------
-|E2E latency=2.89s |Gather latency=0.00s (0.00%) |Generate time=1.56s (54.05%) |Training time=1.04s (35.97%) |Others=0.29 (9.99%)|CurSamplesPerSec=11.08 |AvgSamplesPerSec=11.06
+|E2E latency=2.89s |Gather latency=0.00% |Generate time=1.56s (54.05%) |Training time=1.04s (35.97%) |Others=0.29 (9.99%)|CurSamplesPerSec=11.08 |AvgSamplesPerSec=11.06
 epoch: 0|step: 38|ppo_ep: 1|act_loss: -0.203857421875|cri_loss: 0.043121337890625|unsuper_loss: 0.0
 average reward score: -1.763671875
 ...
 -------------------------------------------------------------------------------------
-|E2E latency=2.89s |Gather latency=0.00s (0.00%) |Generate time=1.56s (54.05%) |Training time=1.04s (35.92%) |Others=0.29 (10.04%)|CurSamplesPerSec=11.07 |AvgSamplesPerSec=11.07
+|E2E latency=2.89s |Gather latency=0.00% |Generate time=1.56s (54.05%) |Training time=1.04s (35.92%) |Others=0.29 (10.04%)|CurSamplesPerSec=11.07 |AvgSamplesPerSec=11.07
 epoch: 0|step: 951|ppo_ep: 1|act_loss: 0.041351318359375|cri_loss: 0.07244873046875|unsuper_loss: 0.0
 average reward score: -1.9130859375
 -------------------------------------------------------------------------------------
-|E2E latency=2.89s |Gather latency=0.00s (0.00%) |Generate time=1.56s (54.11%) |Training time=1.03s (35.84%) |Others=0.29 (10.05%)|CurSamplesPerSec=11.09 |AvgSamplesPerSec=11.07
+|E2E latency=2.89s |Gather latency=0.00% |Generate time=1.56s (54.11%) |Training time=1.03s (35.84%) |Others=0.29 (10.05%)|CurSamplesPerSec=11.09 |AvgSamplesPerSec=11.07
 epoch: 0|step: 952|ppo_ep: 1|act_loss: -0.287109375|cri_loss: 0.333251953125|unsuper_loss: 0.0
 average reward score: -1.8779296875
 -------------------------------------------------------------------------------------
-|E2E latency=2.89s |Gather latency=0.00s (0.00%) |Generate time=1.56s (54.06%) |Training time=1.04s (35.88%) |Others=0.29 (10.06%)|CurSamplesPerSec=11.08 |AvgSamplesPerSec=11.07
+|E2E latency=2.89s |Gather latency=0.00% |Generate time=1.56s (54.06%) |Training time=1.04s (35.88%) |Others=0.29 (10.06%)|CurSamplesPerSec=11.08 |AvgSamplesPerSec=11.07
 [2023-05-02 18:32:26,992] [INFO] [loss_scaler.py:181:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 8192, reducing to 4096
 epoch: 0|step: 953|ppo_ep: 1|act_loss: -0.48193359375|cri_loss: 1.1884765625|unsuper_loss: 0.0
 average reward score: -2.115234375
@@ -354,6 +360,6 @@ saving model ...
 
 [5] [h](https://link.zhihu.com/?target=https%3A//colossalai.org/docs/features/zero_with_chunk/)ttps:// colossalai.org/docs/fea tures/zero_with_chunk/
 
-[6] [De](https://link.zhihu.com/?target=https%3A//github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)epSpeedExamples/applications/DeepSpeed-Chat at master · microsoft/DeepSpeedExamples (github.com)
+[6] [De](https://link.zhihu.com/?target=https%3A//github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)epSpeedExamples/applications/`DeepSpeed-Chat` at master · microsoft/`DeepSpeedExamples` (github.com)
 
 > 无人会得东风意，春色都将付海棠。 —— 杨万里《海棠坞》

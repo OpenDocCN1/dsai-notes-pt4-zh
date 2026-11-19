@@ -1,4 +1,5 @@
-# 对不规则的内容用户用 html 呈现
+
+# 对不规则的内容用户用 `html` 呈现
 
 > 来源：[https://qianniucity.feishu.cn/docx/STAQdGkAAo2NT6xArCMcgfy5n0d](https://qianniucity.feishu.cn/docx/STAQdGkAAo2NT6xArCMcgfy5n0d)
 
@@ -18,7 +19,7 @@ html 设计要求：
 10. 不要省略内容要点
 ```
 
-HTML 效果：5q2qj8cp0r.app.yourware.so
+HTML 效果：`5q2qj8cp0r.app.yourware.so`
 
 截图效果
 

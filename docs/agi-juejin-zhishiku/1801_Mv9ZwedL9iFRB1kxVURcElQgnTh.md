@@ -1,12 +1,13 @@
+
 # 如何通过AI绘画，将线稿迅速转化为画作？
 
-> 来源：[https://agijuejin.feishu.cn/docx/GxWedQcdZoXv9xxkPY8c2pPLneb](https://agijuejin.feishu.cn/docx/GxWedQcdZoXv9xxkPY8c2pPLneb)
-
+> 来源：https://agijuejin.feishu.cn/docx/GxWedQcdZoXv9xxkPY8c2pPLneb
+>
 > 作者：德里克文
+>
+> 原文：https://zhuanlan.zhihu.com/p/676028523
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/676028523)hihu.com/p/676028...
-
-A[I绘画是一](https://www.zhihu.com/search?q=%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)个利器，可以让有手绘基础的人，迅速掌握如何将自己的手稿（或者是已有的线稿）转化为画作，我这里分别用国内软件WHEE和 开源软件 Stable Diffusion的Controlnet插件为例，来讲解一下如何将线稿迅速转化为画作。
+AI绘画是一个利器，可以让有手绘基础的人，迅速掌握如何将自己的手稿（或者是已有的线稿）转化为画作，我这里分别用国内软件WHEE和开源软件 Stable Diffusion的Controlnet插件为例，来讲解一下如何将线稿迅速转化为画作。
 
 ## 一、WHEE线稿上色
 
@@ -20,7 +21,7 @@ A[I绘画是一](https://www.zhihu.com/search?q=%E5%BC%80%E6%BA%90%E8%BD%AF%E4%B
 
 ![](img/03a5c710748c5d277ddd9cac7c8cf196.png)
 
-[可以看到对](https://www.zhihu.com/search?q=%E8%BE%B9%E7%BC%98%E6%A3%80%E6%B5%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)比的效果，我采用的是画面控制里面的 边缘检测 ，权重为0.6.
+可以看到对比的效果，我采用的是画面控制里面的边缘检测，权重为0.6.
 
 ![](img/879b4a8116acb18b30fa76fbaf076f79.png)
 
@@ -56,9 +57,9 @@ A[I绘画是一](https://www.zhihu.com/search?q=%E5%BC%80%E6%BA%90%E8%BD%AF%E4%B
 
 Stable Diffusion是一款开源免费的软件，可以直接下载到本地电脑上进行安装应用，但是对于电脑配置有一定的要求，建议是需要配置3060 12G的显卡作为基础，此外，对于想要熟练掌握还需要一些相应的只是，关于这个软件的安装及介绍，详见我的这下列文章做参考：
 
-[  ](https://zhuanlan.zhihu.com/p/643656433)
+https://zhuanlan.zhihu.com/p/643656433
 
-[  ](https://zhuanlan.zhihu.com/p/645820130)
+https://zhuanlan.zhihu.com/p/645820130
 
 采用线稿进行上色处理，主要用的就是Stable Diffusion功能里面的ControlNet的Canny或者Lineart_Anime,下面我以Lineart为例，介绍下如何用图片或线稿转绘内容。
 
@@ -70,18 +71,18 @@ Stable Diffusion是一款开源免费的软件，可以直接下载到本地电�
 
 ![](img/6bf90629e410a8f2b3901974ddd9afde.png)
 
-颜色[反转(In](https://www.zhihu.com/search?q=%E6%8E%A7%E5%88%B6%E7%BA%BF%E6%9D%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)vert）: 把底图中的黑色和白色交换。这个选项最主要的用途是，当你上传手绘的白底黑线的线稿图的时候，可以通过颜色反转来进行处理，因为ControlNet 的控制默认是需要黑色为背景， 控制线条 是白色的，如果你是直接在操作界面画的，就不用管他。
+颜色反转（Invert）：把底图中的黑色和白色交换。这个选项最主要的用途是，当你上传手绘的白底黑线的线稿图的时候，可以通过颜色反转来进行处理，因为ControlNet的控制默认是需要黑色为背景，控制线条是白色的，如果你是直接在操作界面画的，就不用管他。
 
 ![](img/ad806eab3ff5b9175d0aa23c86e601f0.png)
 
-[常规情况下](https://www.zhihu.com/search?q=%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)我们选择Standard 标准模式 ，本次由于我希望生成的是更具有动漫效果的感受，所以最后我选择了Lineart_Anime。这个根据自己想要的效果进行选择就好
+常规情况下我们选择Standard标准模式，本次由于我希望生成的是更具有动漫效果的感受，所以最后我选择了Lineart_Anime。这个根据自己想要的效果进行选择就好
 
 然后控制权重选择1，开始步骤0，结束控制步骤1。然后输入提示词。
 
-在这个图片中，我希望生成的是一个芭蕾舞演员，我的提示词是:
+在这个图片中，我希望生成的是一个芭蕾舞演员，我的提示词是：
 
 ```
-masterpiece, best quality, 1girl, ballerina, solo, ballet, tutu, ballet slippers, arms up, monochrome, white background, simple background, greyscale, full body, short hair, dress, from behind, dancing, tiptoes, standing, pantyhose, leotard,Vivid Colors, (EOS R8, 50mm, F1.2, 8K, RAW photo:1.2), physically-based rendering, sharp focus, extremely detailed CG unity 8k wallpaper, best quality, Amazing, finely detail, cinematic lighting, RAW Photo, 8k Ultra HD, SLR, High Quality, 8k, intricate detail, reality, realistic light, reality, photo reality, Deconstruction, masterpiece, extremely detailed CG unity 8k wallpaper, best quality, Amazing, finely detail, cinematic lighting, RAW Photo, 8k Ultra HD, SLR, High Quality, 8k, intricate detail, reality, realistic light, reality, photo reality, &lt;lora:add_detail:1&gt;, &lt;lora:FilmG4:1&gt;,
+masterpiece, best quality, 1girl, ballerina, solo, ballet, tutu, ballet slippers, arms up, monochrome, white background, simple background, greyscale, full body, short hair, dress, from behind, dancing, tiptoes, standing, pantyhose, leotard,Vivid Colors, (EOS R8, 50mm, F1.2, 8K, RAW photo:1.2), physically-based rendering, sharp focus, extremely detailed CG unity 8k wallpaper, best quality, Amazing, finely detail, cinematic lighting, RAW Photo, 8k Ultra HD, SLR, High Quality, 8k, intricate detail, reality, realistic light, reality, photo reality, Deconstruction, masterpiece, extremely detailed CG unity 8k wallpaper, best quality, Amazing, finely detail, cinematic lighting, RAW Photo, 8k Ultra HD, SLR, High Quality, 8k, intricate detail, reality, realistic light, reality, photo reality, <lora:add_detail:1>, <lora:FilmG4:1>,
 ```
 
 ![](img/def7900685fd9ae3a582d0dfb6b4d99e.png)
@@ -92,7 +93,7 @@ masterpiece, best quality, 1girl, ballerina, solo, ballet, tutu, ballet slippers
 
 ### 2. ControlNet多模型应用
 
-在 [控制网络单元 ](https://www.zhihu.com/search?q=%E6%8E%A7%E5%88%B6%E7%BD%91%E7%BB%9C%E5%8D%95%E5%85%83&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)1中，我们继续增加插件，这次我选择用Openpose进行姿态检测，识别手指
+在控制网络单元1中，我们继续增加插件，这次我选择用Openpose进行姿态检测，识别手指
 
 ![](img/e3f367519c622e3e6eca384c24db2f26.png)
 
@@ -104,7 +105,7 @@ masterpiece, best quality, 1girl, ballerina, solo, ballet, tutu, ballet slippers
 
 如果我想让生成的图像与原作更加接近，应该怎么做呢？
 
-我们还可以再增加 [控制网3 ](https://www.zhihu.com/search?q=%E6%8E%A7%E5%88%B6%E7%BD%913&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)，为了让颜色和整体感觉更为接近，我启用了Tile模型
+我们还可以再增加控制网3，为了让颜色和整体感觉更为接近，我启用了Tile模型
 
 ![](img/5e6e6c6475aa9dcb6accef4ac6c72174.png)
 
@@ -114,7 +115,7 @@ masterpiece, best quality, 1girl, ballerina, solo, ballet, tutu, ballet slippers
 
 怎么样，在几个控制网的作用下，对原作进行了各种诠释，通过对ControlNet的学习，我们能够更加好的控制画面效果，在成图后，只需要通过Photo Shop进行简单的后期调整即可出图。
 
-而[想要学好](https://www.zhihu.com/search?q=%E7%9F%A5%E5%AD%A6%E5%A0%82&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A676028523%7D)ControlNet这一进阶技巧，通过个人自己摸索可能会耗时耗力，我个人推荐想学AI绘画，有时间的小伙伴能够花0.1元去学习知乎 知学堂 的「AI绘画设计师实战营」，这门课程有AI绘画大佬来教你使用Midjourney、Stable diffusion等专业的AI绘画工具，通过这门课程的学习，对于一些进阶实用的技巧能够有更深刻的认知和掌握。
+而想要学好ControlNet这一进阶技巧，通过个人自己摸索可能会耗时耗力，我个人推荐想学AI绘画，有时间的小伙伴能够花0.1元去学习知乎知学堂的「AI绘画设计师实战营」，这门课程有AI绘画大佬来教你使用Midjourney、Stable diffusion等专业的AI绘画工具，通过这门课程的学习，对于一些进阶实用的技巧能够有更深刻的认知和掌握。
 
 链接我就放在下面了：
 

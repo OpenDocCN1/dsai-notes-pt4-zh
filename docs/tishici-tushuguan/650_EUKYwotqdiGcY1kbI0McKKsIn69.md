@@ -1,6 +1,7 @@
+
 # Junmin Liu
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/QIOTdaejvoPvAcxyT81ceurGnGf](https://vxc3hj17dym.feishu.cn/docx/QIOTdaejvoPvAcxyT81ceurGnGf)
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/QIOTdaejvoPvAcxyT81ceurGnGf`](https://vxc3hj17dym.feishu.cn/docx/QIOTdaejvoPvAcxyT81ceurGnGf)
 
 By Junmin Liu
 
@@ -49,12 +50,12 @@ By Junmin Liu
 
 ### 意译
 ```
+
 {意译结果}
+
 ```
 
 现在请按照上面的要求从第一行开始翻译以下内容为简体中文：
 ```
 content
-```
-
 ```

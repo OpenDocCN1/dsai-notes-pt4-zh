@@ -1,3 +1,4 @@
+
 # 423 个神级 Skills 一键下载：Agent 能力「工程化」！
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/VpNFdb3GPoxOX9xJ7n7cBLa2npb](https://qqs7y1hozd1.feishu.cn/docx/VpNFdb3GPoxOX9xJ7n7cBLa2npb)
@@ -6,13 +7,13 @@
 
 Skills，又叫 Agent Skills，是 Anthropic 在 2025 年 10 月推出的一套标准。
 
-简单说，就是一个包含 SKILL.md 文件的文件夹，告诉 AI「在特定场景下该怎么做」。
+简单说，就是一个包含 `SKILL.md` 文件的文件夹，告诉 AI「在特定场景下该怎么做」。
 
 更准确地说，是告诉 AI「该如何判断，并稳定执行」。
 
 ![](img/06b8df966f783e618e78b74ab30a237f.png)
 
-**工作机制相当简单。**
+工作机制相当简单。
 
 > AI Agent（智能体）启动时会扫描所有可用的 Skills，读取每个 skill 的名称和描述。
 
@@ -28,7 +29,7 @@ Skills 和提示词（Prompt）有什么区别？
 
 > 提示词是「临场指挥」，Skills 更像「把正确做法固化成流程」。
 
-> 举个例子，提示词是临时口头交代，Skills 是写好的 SOP() 手册。新员工入职，你不用每次都从头教，给他一本员工手册就行。
+> 举个例子，提示词是临时口头交代，Skills 是写好的 `SOP()` 手册。新员工入职，你不用每次都从头教，给他一本员工手册就行。
 
 Skills 有三个核心特点，也是它火起来的原因。
 
@@ -46,7 +47,7 @@ Skills 有三个核心特点，也是它火起来的原因。
 
 两个月不到，OpenAI 被发现悄悄在 Codex CLI 和 ChatGPT 里采用了同样的标准。
 
-12 月 18 日，Anthropic 把 Skills 作为开放标准发布，官网是 agentskills.io。
+12 月 18 日，Anthropic 把 Skills 作为开放标准发布，官网是 `agentskills.io`。
 
 紧接着 12 月 24 日，OpenAI 正式官宣 Codex 支持 Skills。
 
@@ -80,15 +81,15 @@ Skills 生态刚起步，散落在 GitHub 各个角落。
 
 「skill0」就是这个角色。
 
-我专门查了一下，这是由国内特赞团队()（atypica.ai）推出的 Skills 市场，目前收录了 423 个 skills。基于开放标准 SKILL.md，Claude Code、Codex、Cursor、OpenCode 通用。
+我专门查了一下，这是由国内特赞团队()（`atypica.ai`）推出的 Skills 市场，目前收录了 423 个 skills。基于开放标准 `SKILL.md`，Claude Code、Codex、Cursor、OpenCode 通用。
 
-地址在这：skill0.atypica.ai。
+地址在这：`skill0.atypica.ai`。
 
 ![](img/a0e43a0327509670d7b12d08764f1c95.png)
 
 「skill0」把分散的能力做成可检索、可下载、可直接装配的索引层。
 
-收录内容包括 Anthropic 官方 skills（xlsx、pdf、pptx、frontend-design 等）、OpenAI Codex skills、社区贡献的各种 skills（PyTorch、Metabase 文档等）。
+收录内容包括 Anthropic 官方 skills（xlsx、pdf、pptx、`frontend-design` 等）、OpenAI Codex skills、社区贡献的各种 skills（PyTorch、Metabase 文档等）。
 
 特赞是一家做企业级智能体（GEA）的公司。「skill0」是他们内部实践的外放，是被真实业务折磨出来的解法。
 
@@ -96,13 +97,13 @@ Skills 生态刚起步，散落在 GitHub 各个角落。
 
 ---
 
-## 04｜手把手教程：用 frontend-design 让 AI 学会审美
+## 04｜手把手教程：用 `frontend-design` 让 AI 学会审美
 
 划重点：这个功能现在就能用，完全免费。
 
 ### 步骤一：在 skill0 找到你要的 skill
 
-打开 skill0.atypica.ai，搜索对你有用的 skill，比如这个前端设计 frontend-design。
+打开 `skill0.atypica.ai`，搜索对你有用的 skill，比如这个前端设计 `frontend-design`。
 
 ![](img/66a6945375848bb90c9591a39742e412.png)
 
@@ -114,9 +115,9 @@ Skills 生态刚起步，散落在 GitHub 各个角落。
 
 ### 步骤三：安装到 OpenCode
 
-解压后，把整个文件夹放到 ~/.claude/skills/ 目录下。OpenCode 完全兼容这个路径。
+解压后，把整个文件夹放到 `~/.claude/skills/` 目录下。OpenCode 完全兼容这个路径。
 
-当然，你也可以放到 OpenCode 原生路径 ~/.config/opencode/skill/。
+当然，你也可以放到 OpenCode 原生路径 `~/.config/opencode/skill/`。
 
 重启 OpenCode，skill 就生效了。
 
@@ -134,7 +135,7 @@ Skills 生态刚起步，散落在 GitHub 各个角落。
 
 Cursor 和 Claude Code 用户，同样的 ZIP，解压后放到对应目录就行。
 
-Cursor 是 ~/.cursor/skills/，Claude Code 是 ~/.claude/skills/。
+Cursor 是 `~/.cursor/skills/`，Claude Code 是 `~/.claude/skills/`。
 
 这就是「skill0」。
 

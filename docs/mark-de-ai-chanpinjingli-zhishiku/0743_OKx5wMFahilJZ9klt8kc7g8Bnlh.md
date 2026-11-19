@@ -1,3 +1,4 @@
+
 # Skills生命周期管理
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/CSjadMQbjoEagixNLegcKRoCnTe](https://qqs7y1hozd1.feishu.cn/docx/CSjadMQbjoEagixNLegcKRoCnTe)
@@ -75,7 +76,7 @@ touch scripts/helper.py
 touch references/README.md
 ```
 
-#### SKILL.md 开发
+#### `SKILL.md` 开发
 
 ```
 ---
@@ -110,15 +111,15 @@ description: Brief description of what this skill does and when to use it
 
 Skills 的核心功能通过主脚本实现：
 
-1.  输入处理：接收和解析用户输入的数据
+1. 输入处理：接收和解析用户输入的数据
 
-1.  业务逻辑：执行具体的处理算法和计算
+1. 业务逻辑：执行具体的处理算法和计算
 
-1.  结果格式化：将处理结果转换为合适的输出格式
+1. 结果格式化：将处理结果转换为合适的输出格式
 
-1.  错误处理：捕获异常并记录错误信息
+1. 错误处理：捕获异常并记录错误信息
 
-1.  命令行接口：支持通过命令行参数和标准输入输出交互
+1. 命令行接口：支持通过命令行参数和标准输入输出交互
 
 脚本设计遵循了模块化原则，每个功能都有独立的函数。
 
@@ -128,11 +129,11 @@ Skills 的核心功能通过主脚本实现：
 
 单元测试是对 Skills 各个功能模块的独立验证：
 
-1.  基本功能测试：验证正常输入能产生正确输出
+1. 基本功能测试：验证正常输入能产生正确输出
 
-1.  错误处理测试：确认异常情况能被正确捕获和处理
+1. 错误处理测试：确认异常情况能被正确捕获和处理
 
-1.  配置选项测试：检查不同配置参数是否生效
+1. 配置选项测试：检查不同配置参数是否生效
 
 每个测试都是独立的"小实验"，确保 Skills 的每个部分都能正常工作。
 
@@ -142,16 +143,16 @@ Skills 的核心功能通过主脚本实现：
 #!/bin/bash
 # tests/integration_test.sh
 
-echo &quot;Running integration tests...&quot;
+echo "Running integration tests..."
 
 # 测试完整流程
-echo &#x27;{&quot;test&quot;: &quot;data&quot;}&#x27; | python scripts/main.py &#x27;{&quot;verbose&quot;: true}&#x27;
+echo '{"test": "data"}' | python scripts/main.py '{"verbose": true}'
 
 # 验证输出
 if [ $? -eq 0 ]; then
-    echo &quot;Integration test passed&quot;
+    echo "Integration test passed"
 else
-    echo &quot;Integration test failed&quot;
+    echo "Integration test failed"
     exit 1
 fi
 ```
@@ -201,7 +202,7 @@ ls ~/.claude/skills/my-skill/
 ```
 # 添加到版本控制
 git add my-skill/
-git commit -m &quot;Add my-skill: Brief description of functionality&quot;
+git commit -m "Add my-skill: Brief description of functionality"
 
 # 推送到共享仓库
 git push origin main
@@ -221,14 +222,14 @@ cd my-plugin
 cp -r ../my-skill skills/
 
 # 创建插件元数据
-cat &gt; package.json &lt;&lt; EOF
+cat > package.json << EOF
 {
-  &quot;name&quot;: &quot;my-plugin&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;description&quot;: &quot;Plugin containing my-skill&quot;,
-  &quot;skills&quot;: [&quot;skills/my-skill&quot;],
-  &quot;engines&quot;: {
-    &quot;claude-code&quot;: &quot;&gt;=1.0.0&quot;
+  "name": "my-plugin",
+  "version": "1.0.0",
+  "description": "Plugin containing my-skill",
+  "skills": ["skills/my-skill"],
+  "engines": {
+    "claude-code": ">=1.0.0"
   }
 }
 EOF
@@ -243,35 +244,28 @@ npm publish  # 或上传到插件市场
 
 系统会跟踪 Skills 的使用情况，就像给每个工具安装了"使用记录仪"：
 
-1.  统计数据收集：
+1. 统计数据收集：
 
-+   记录每次使用的时间和结果
+   - 记录每次使用的时间和结果
+   - 计算成功率和平均执行时间
+   - 跟踪错误发生的情况
 
-+   计算成功率和平均执行时间
+1. 动态更新：
 
-+   跟踪错误发生的情况
+   - 实时更新统计数据
+   - 维护历史使用记录
+   - 生成使用趋势分析
 
-1.  动态更新：
-
-+   实时更新统计数据
-
-+   维护历史使用记录
-
-+   生成使用趋势分析
-
-1.  数据查询：提供接口查看任意 Skills 的使用统计
+1. 数据查询：提供接口查看任意 Skills 的使用统计
 
 这样可以了解哪些 Skills 最受欢迎，哪些需要改进。
 
 #### 性能监控
 
-+   执行时间跟踪
-
-+   成功率统计
-
-+   资源使用监控
-
-+   错误模式分析
+- 执行时间跟踪
+- 成功率统计
+- 资源使用监控
+- 错误模式分析
 
 ### 维护与更新阶段
 
@@ -291,11 +285,11 @@ git log --oneline --decorate --tags
 ```
 # 更新元数据中的版本信息
 metadata:
-  version: &quot;1.1.0&quot;
+  version: "1.1.0"
   changelog:
-    - &quot;Added new feature X&quot;
-    - &quot;Fixed bug in Y&quot;
-    - &quot;Improved performance of Z&quot;
+    - "Added new feature X"
+    - "Fixed bug in Y"
+    - "Improved performance of Z"
 ```
 
 #### 废弃处理
@@ -353,7 +347,7 @@ rm -rf project/.claude/skills/my-skill
 
 # 从版本控制中移除
 git rm -r my-skill
-git commit -m &quot;Remove deprecated my-skill&quot;
+git commit -m "Remove deprecated my-skill"
 
 # 清理相关配置
 # 编辑配置文件移除相关设置
@@ -382,55 +376,42 @@ claude skills remove my-skill
 
 ### 图形化管理界面
 
-+   Skills 市场浏览器
-
-+   依赖关系可视化
-
-+   使用统计仪表板
-
-+   配置编辑器
+- Skills 市场浏览器
+- 依赖关系可视化
+- 使用统计仪表板
+- 配置编辑器
 
 ## 生命周期最佳实践
 
 ### 版本控制
 
-+   使用语义化版本
-
-+   维护变更日志
-
-+   标记重大变更
+- 使用语义化版本
+- 维护变更日志
+- 标记重大变更
 
 ### 文档维护
 
-+   及时更新文档
-
-+   提供迁移指南
-
-+   记录已知问题
+- 及时更新文档
+- 提供迁移指南
+- 记录已知问题
 
 ### 兼容性保证
 
-+   向后兼容优先
-
-+   提供迁移工具
-
-+   充分测试兼容性
+- 向后兼容优先
+- 提供迁移工具
+- 充分测试兼容性
 
 ### 监控和反馈
 
-+   收集使用数据
-
-+   分析错误模式
-
-+   持续改进质量
+- 收集使用数据
+- 分析错误模式
+- 持续改进质量
 
 ### 安全更新
 
-+   及时修复安全问题
-
-+   验证更新安全性
-
-+   通知受影响用户
+- 及时修复安全问题
+- 验证更新安全性
+- 通知受影响用户
 
 ## 总结
 

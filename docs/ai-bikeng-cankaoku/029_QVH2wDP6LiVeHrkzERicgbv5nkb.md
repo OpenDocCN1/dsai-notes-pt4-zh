@@ -1,14 +1,15 @@
-# AutoHotkey将代码转换EXE
+
+# AutoHotkey将代码转换`EXE`
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/L4tSdFI77oWOJKxW9Eoc9lOJn5e](https://xodnytdcaw.feishu.cn/docx/L4tSdFI77oWOJKxW9Eoc9lOJn5e)
 
 ## 安装
 
-安装[AutoHotkey](https://www.autohotkey.com/)
+安装[`AutoHotkey`](https://www.autohotkey.com/)
 
 ## 制作脚本（借助AI）
 
-> **帮我制作一个exe小**工具修改HOSTS文件，使用AutoHotkey
+> 帮我制作一个`exe`小工具修改`HOSTS`文件，使用`AutoHotkey`
 
 ```
 Run, notepad.exe C:\Windows\System32\drivers\etc\hosts,, RunAs
@@ -18,7 +19,7 @@ Run, notepad.exe C:\Windows\System32\drivers\etc\hosts,, RunAs
 
 ![](img/9b4c8bae704da4ac79468fb931c368e8.png)
 
-脚本转换EXE
+脚本转换`EXE`
 
 选择脚本
 
@@ -28,15 +29,13 @@ Run, notepad.exe C:\Windows\System32\drivers\etc\hosts,, RunAs
 
 > 图标豆包制作
 
-> [在线转换图标icon文件](https://www.aconvert.com/cn/icon/)    256×256 尺寸的.ico 图标
+> [在线转换图标`icon`文件](https://www.aconvert.com/cn/icon/) 256×256 尺寸的`.ico` 图标
 
->
-
-[注意；图标先也可以不上传的话，](https://www.angusj.com/resourcehacker/)生成后，可用Resource Hacker进行更换
+[注意；图标先也可以不上传的话，](https://www.angusj.com/resourcehacker/)生成后，可用`Resource Hacker`进行更换
 
 ![](img/4a22c5be6c679fc73bf6907b7286f0fa.png)
 
-## 转换EXE
+## 转换`EXE`
 
 ![](img/ec39bfaebf0d30b3c60fce5a08c3c71e.png)
 
@@ -44,16 +43,19 @@ Run, notepad.exe C:\Windows\System32\drivers\etc\hosts,, RunAs
 
 ## 延伸
 
-还有那些制作exe的软件
+还有那些制作`exe`的软件
 
-[Visual Studio](https://blog.csdn.net/qq_39030256/article/details/132413839)  [参考2](https://www.cnblogs.com/bEngi1/p/12360305.html)
+[`Visual Studio`](https://blog.csdn.net/qq_39030256/article/details/132413839) [`参考2`](https://www.cnblogs.com/bEngi1/p/12360305.html)
 
-[**Python**](https://blog.csdn.net/m0_63203517/article/details/124383678)**   参考2**
+[`Python`](https://blog.csdn.net/m0_63203517/article/details/124383678) 参考2
 
 | 命令 | 作用 |
+
 | --- | --- |
-| pip install pyinstaller | 安装打包工具 |
-| pyinstaller --onefile --windowed edit_hosts.py | 生成单个无黑窗的 .exe |
+
+| `pip install pyinstaller` | 安装打包工具 |
+
+| `pyinstaller --onefile --windowed edit_hosts.py` | 生成单个无黑窗的 `.exe` |
 
 更换图标
 

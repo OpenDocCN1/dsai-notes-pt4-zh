@@ -1,3 +1,4 @@
+
 # 大模型微调实践——Prompt tuning、PET、Prefix tuning、P-tuning的原理、区别与代码解析(一)
 
 > 来源：[https://geekbang.feishu.cn/docx/MnRzdMtY0opTnLxL21gchelnnUh](https://geekbang.feishu.cn/docx/MnRzdMtY0opTnLxL21gchelnnUh)
@@ -20,21 +21,17 @@
 
 这个系列目录如下：
 
-+   prompt tuning
-
-+   一个人工构建模板的实例：PET（Pattern-Exploiting Training）
-
-+   prefix tuning
-
-+   P-tuning
-
-+   P-tuning v2
++ prompt tuning
++ 一个人工构建模板的实例：PET（Pattern-Exploiting Training）
++ prefix tuning
++ P-tuning
++ P-tuning v2
 
 具体每个部分会分为论文、原理、实现细节以及对应关键代码进行详细介绍。
 
 由于涉及到的内容非常多，本篇就主要讲Prompt Tuning，并以其中比较重要的PET为例，具体介绍其实现原理，后面的系列文再具体介绍prefix tuning、P-tuning、P-tuning v2，最后会做一个总结。
 
-# **论文**
+## 论文
 
 Prompt tuning 里程碑式的作品：
 
@@ -48,21 +45,21 @@ The Power of Scale for Parameter-Efficient Prompt Tuning
 
 结论很简单： 离散的Prompt Tuning（Prompt Design）基本不能达到fine-tuning的效果；Soft Prompt Tuning在模型增大时可以达到接近fine-tuning的效果，并且有进一步超越fine-tuning的趋势。
 
-# **原理**
+## 原理
 
 Prompt tuning 其实是一个比较范围比较广的概念，主要通过调整模板来实现对模型的微调。
 
 ![](img/488720f595d2bb3d501ecd7dfc1887bb.png)
 
-具体在论文中，给每个任务定义了自己的Prompt**，然后拼接到数据上作**为输入，但 只在输入层加入prompt tokens ，并且 不需要加入 MLP 进行调整来解决难训练的问题。
+具体在论文中，给每个任务定义了自己的Prompt，然后拼接到数据上作为输入，但 只在输入层加入prompt tokens ，并且 不需要加入 MLP 进行调整来解决难训练的问题。
 
-# **具体实现**
+## 具体实现
 
 这里我们来举一个 通过人工构建的模版与BERT的MLM模型结合，在零样本、小样本乃至半监督下取得非常好的效果的例子 —— PET（Pattern-Exploiting Training）
 
 对应论文是 It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners
 
-**1. MLM简介**
+### 1. MLM简介
 
 MLM，全称“Masked Language Model”，可以翻译为“掩码语言模型”，实际上就是一个完形填空任务，随机Mask掉文本中的某些字词，然后要模型去预测被Mask的字词，示意图如下：
 
@@ -70,7 +67,7 @@ MLM，全称“Masked Language Model”，可以翻译为“掩码语言模型�
 
 其中被Mask掉的部分，可以是直接随机选择的Token，也可以是随机选择连续的能组成一整个词的Token，后者称为WWM（Whole Word Masking）。
 
-2. MLM在微调任务中的应用：将任务转为完形填空
+### 2. MLM在微调任务中的应用：将任务转为完形填空
 
 MLM通过模板设计，将任务转为完形填空，可以用于小样本学习或半监督学习，某些场景下甚至能做到零样本学习，并达到很好效果。
 
@@ -88,7 +85,7 @@ MLM通过模板设计，将任务转为完形填空，可以用于小样本学�
 
 理论上，一个好的MLM模型应当能预测出“体育”二字来。
 
-3. 模板的设计（Pattern-Exploiting）
+### 3. 模板的设计（Pattern-Exploiting）
 
 那么其实我们可以总结一些规律了，就是 给输入的文本增加一个前缀或者后缀描述，并且Mask掉某些Token，转换为完形填空问题 ，这样的转换在原论文中称为 Pattern ，这个转换要尽可能与原来的句子组成一句自然的话，不能过于生硬，因为预训练的MLM模型就是在自然语言上进行的。
 
@@ -102,13 +99,12 @@ PET详细地设计了Prompt-Tuning的重要组件——Pattern-Verbalizer-Pair�
 
 PET设计了两个很重要的组件：
 
-+   Pattern（Template） ：也叫Template，其为额外添加的带有`[mask]`标记的短文本，通常一个样本只有一个Pattern（因为我们希望只有1个让模型预测的`[mask]`标记）。上文也提到，不同的任务、不同的样本可能会有其更加合适的pattern，因此 如何构建合适的pattern是Prompt-Tuning的研究点之一 ；
-
-+   **Verbalizer **：标签词的映射，对于具体的分类任务，需要选择指定的标签词（label word）。例如情感分析中，我们期望Verbalizer可能是positive和negative是类标签。同样，不同的任务有其相应的label word，但需要注意的是，Verbalizer的构建需要取决于对应的Pattern。因此， 如何构建Verbalizer是另一个研究挑战 。
++ `Pattern`（`Template`）：也叫`Template`，其为额外添加的带有`[mask]`标记的短文本，通常一个样本只有一个`Pattern`（因为我们希望只有1个让模型预测的`[mask]`标记）。上文也提到，不同的任务、不同的样本可能会有其更加合适的pattern，因此 如何构建合适的pattern是Prompt-Tuning的研究点之一 ；
++ `Verbalizer`：标签词的映射，对于具体的分类任务，需要选择指定的标签词（label word）。例如情感分析中，我们期望`Verbalizer`可能是positive和negative是类标签。同样，不同的任务有其相应的label word，但需要注意的是，`Verbalizer`的构建需要取决于对应的`Pattern`。因此， 如何构建`Verbalizer`是另一个研究挑战 。
 
 上述两个组件被称为Pattern-Verbalizer-Pair（PVP），一般记作 ，在后续的大多数研究中均采用这种PVP组件。
 
-**4. 论文微调方法**
+### 4. 论文微调方法
 
 由于同一个任务可以有多种不同的Pattern，原论文是这样处理的
 
@@ -119,11 +115,11 @@ PET设计了两个很重要的组件：
 4、用伪标签数据Finetune一个常规的（非MLM的）模型
 ```
 
-# **代码详解**
+## 代码详解
 
 因为PET主要是人工来构建模板，所以核心是模板怎么构建、以及训练数据如何构造。这里就借苏神的代码来讲解一下。
 
-**1. 模板设计**
+### 1. 模板设计
 
 首先来构造实验模板，我们采用一个固定前缀 满意 ，其中空位处候选词语都为 很 和 不 ：
 
@@ -136,14 +132,14 @@ P：____满意。
 
 ```
 # 对应的任务描述  
-# 为什么mask_idx是1，因为第0位是&#x27;[CLS]&#x27;标记，这里的mask_id为1就是替换&#x27;很满意。&#x27;中的第一个字符&#x27;很&#x27;  
-prefix = u&#x27;很满意。&#x27;  
+# 为什么mask_idx是1，因为第0位是'[CLS]'标记，这里的mask_id为1就是替换'很满意。'中的第一个字符'很'  
+prefix = u'很满意。'  
 mask_idx = 1                           
-pos_id = tokenizer.token_to_id(u&#x27;很&#x27;)  
-neg_id = tokenizer.token_to_id(u&#x27;不&#x27;)
+pos_id = tokenizer.token_to_id(u'很')  
+neg_id = tokenizer.token_to_id(u'不')
 ```
 
-**2. 数据构造**
+### 2. 数据构造
 
 ![](img/f7ceb25c5ee73225feb891626b2cb96e.png)
 
@@ -151,25 +147,21 @@ neg_id = tokenizer.token_to_id(u&#x27;不&#x27;)
 
 https://github.com/bojone/Pattern-Exploiting-Training/tree/master
 
-# **引申**
+## 引申
 
 Prompt tuning确实是一个很宽泛的概念，因为在PVP这一块有很多可探索的空间，因此学术界已经涌现出一批基于Prompt-Tuning的方案试图探索如何自动构建PVP。
 
 这里主要总结几种成熟的Pattern（Template）构建方法。可以罗列为如下几点：
 
-+   **人工构建 **（Manual Template）：类似于PET；
++ 人工构建（Manual Template）：类似于PET；
++ 启发式法（Heuristic-based Template）：通过规则、启发式搜索等方法构建合适的模板；
++ 生成（Generation）：根据给定的任务训练数据（通常是小样本场景），生成出合适的模板；
++ 词向量微调（Word Embedding）：显式地定义离散字符的模板，但在训练时这些模板字符的词向量参与梯度下降，初始定义的离散字符用于作为向量的初始化；
++ 伪标记（Pseudo Token）：不显式地定义离散的模板，而是将模板作为可训练的参数；
 
-+   **启发式法 **（Heuristic-based Template）：通过规则、启发式搜索等方法构建合适的模板；
+前面3种也被称为 离散的模板构建法（记作 Hard Template 、 Hard Prompt 、 Discrete Template 、 Discrete Prompt ），其旨在直接与原始文本拼接显式离散的字符，且在训练中 始终保持不变 。这里的保持不变是指 这些离散字符的词向量（Word Embedding）在训练过程中保持固定 。通常情况下， 离散法不需要引入任何参数 。
 
-+   **生成 **（Generation）：根据给定的任务训练数据（通常是小样本场景），生成出合适的模板；
-
-+   **词向量微调 **（Word Embedding）：显式地定义离散字符的模板，但在训练时这些模板字符的词向量参与梯度下降，初始定义的离散字符用于作为向量的初始化；
-
-+   **伪标记 **（Pseudo Token）：不显式地定义离散的模板，而是将模板作为可训练的参数；
-
-前面3种也被称为 **离散的模板构建法 **（记作 Hard Template 、 Hard Prompt 、 Di**screte **Template 、 **Discrete Prompt ）**，其旨在直接与原**始文本拼接显式离散的字符，**且在训练中 始终保持不变 。这里的保持不变是指 这些离散字符的词向量（Word Embedding）在训练过程中保持固定 。通常情况下， 离散法不需要引入任何参数 。
-
-后面2种则被称为 **连续的模板构建 法 **（记作 Soft Template 、 Soft Prompt 、 Continuous Template 、 Continuous Prompt ），其旨在让模型在训练过程中根据具体的上下文语义和任务目标对模板参数进行连续可调。这套方案的动机则是认为离散不变的模板无法参与模型的训练环节，容易陷入局部最优，而如果将模板变为可训练的参数，那么不同的样本都可以在连续的向量空间中寻找合适的伪标记，同时也增加模型的泛化能力。因此， 连续法需要引入少量的参数并让模型在训练时进行参数更新 。
+后面2种则被称为 连续的模板构建 法（记作 Soft Template 、 Soft Prompt 、 Continuous Template 、 Continuous Prompt ），其旨在让模型在训练过程中根据具体的上下文语义和任务目标对模板参数进行连续可调。这套方案的动机则是认为离散不变的模板无法参与模型的训练环节，容易陷入局部最优，而如果将模板变为可训练的参数，那么不同的样本都可以在连续的向量空间中寻找合适的伪标记，同时也增加模型的泛化能力。因此， 连续法需要引入少量的参数并让模型在训练时进行参数更新 。
 
 其实我们后面具体介绍的 prefix tuning、P-tuning、P-tuning v2都属于连续的模板构建， 通过把传统人工设计模版中的真实token替换成可微的virtual token，转换为模型中可以学习的参数进行更新 ，只是他们之间存在细微差别，具体原理与区别、代码详解我们将在下一篇系列文中阐述。
 

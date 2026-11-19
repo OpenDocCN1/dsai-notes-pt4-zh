@@ -1,3 +1,4 @@
+
 # 2023-05-12奇富科技将发布国内首个自研金融行业通用大模型
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZOr1dTlGQoXvFBxXiQYcuh7Rnae](https://xuqiwei1986.feishu.cn/docx/ZOr1dTlGQoXvFBxXiQYcuh7Rnae)

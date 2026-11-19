@@ -1,3 +1,4 @@
+
 # 致谢AI通识课贡献者们
 
 > 来源：[https://datawhaler.feishu.cn/docx/RQP6dWvoPomBZzxvwdCc87vhnWg](https://datawhaler.feishu.cn/docx/RQP6dWvoPomBZzxvwdCc87vhnWg)
@@ -11,7 +12,7 @@
 ## 其他
 
 > 特别感谢下面的各位对本项目的帮助与支持：
-
+>
 > 谢文睿、司玉鑫、周理璇、谢文昕、陈焕森、詹洁钊
 
 ## 期待大家参与共建！

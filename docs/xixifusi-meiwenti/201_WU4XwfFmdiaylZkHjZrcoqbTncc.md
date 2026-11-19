@@ -1,3 +1,4 @@
+
 # 相信简单和常识的力量，相信时间和重复的力量
 
 > 来源：[https://docs.feishu.cn/docx/E6zCdpCOfo2dqFxjogyc2FImn9f](https://docs.feishu.cn/docx/E6zCdpCOfo2dqFxjogyc2FImn9f)

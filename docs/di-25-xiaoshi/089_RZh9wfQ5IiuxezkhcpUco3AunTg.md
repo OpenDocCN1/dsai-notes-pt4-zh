@@ -1,12 +1,13 @@
+
 # Vol.008 - 2024/05-第3周 🛒 GPT4o、豆包大模型、文心一言4.0工具版
 
 > 来源：[https://my.feishu.cn/docx/YV9XdVeKso9ru4xJ7GGcRvinnl6](https://my.feishu.cn/docx/YV9XdVeKso9ru4xJ7GGcRvinnl6)
 
 > 2024/05/13-2024/05/19
 
-# AGI应用探索
+## AGI应用探索
 
-##    GPT-4o
+### GPT-4o
 
 🛰️：OpenAI 重磅发布 GPT-4o ：见证《Her》的诞生！
 
@@ -18,21 +19,21 @@ WayToAGI：[OpenAI 春季发布会：GPT-4o](https://waytoagi.feishu.cn/wiki/Qy5
 
 ![](img/ebd3d69c5587e4eea233200e4238ae5f.png)
 
-##    Google I/O 发布Gemini
+### Google I/O 发布Gemini
 
 Google I/O 2024：开启新一代的 I/O
 
-[抢先测试体验上了 Search La](https://m.okjike.com/originalPosts/6643b6a444e298e87eacc30e?s=eyJ1IjoiNjM1OWZiZGUxZGFjYWFlYjIwYmNjYWY2IiwiZCI6MX0%3D)bs 中的 Google - 即刻App
+[抢先测试体验上了 Search La](https://m.okjike.com/originalPosts/6643b6a444e298e7eacc30e?s=eyJ1IjoiNjM1OWZiZGUxZGFjYWFlYjIwYmNjYWY2IiwiZCI6MX0%3D)bs 中的 Google - 即刻App
 
-##    文心一言4.0工具版
+### 文心一言4.0工具版
 
 周末刚好在用文心一言测试个东西，发现出了4.0工具版，可以理解为是模型精调后的聊天机器人。
 
 ![](img/69526a065611fb3af49b82817d0728d3.png)
 
-# LLM大模型
+## LLM大模型
 
-##    豆包大模型
+### 豆包大模型
 
 **戳一些值得看的文章：**
 
@@ -50,7 +51,7 @@ Google I/O 2024：开启新一代的 I/O
 
 ![](img/ad835bd45ba92f093cad404540e6fe4e.png)
 
-##    Google发布人脑图谱
+### Google发布人脑图谱
 
 Google在人脑方面的研究一直都在前沿，非常值得挖掘~
 
@@ -58,7 +59,7 @@ Google在人脑方面的研究一直都在前沿，非常值得挖掘~
 
 ![](img/3d17928429f21b0d4eb995962b987a8f.png)
 
-##    值得买消费大模型
+### 值得买消费大模型
 
 值得买科技5月10日正式发布全面AI战略，宣布将在AI战略框架下，把核心产品什么值得买App改造升级为“AI原生的什么值得买GEN2”，同时积极推进出海。
 

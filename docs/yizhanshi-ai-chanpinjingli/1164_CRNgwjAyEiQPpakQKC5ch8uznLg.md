@@ -1,12 +1,11 @@
+
 # 推荐系统之重排
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/OFWuddJzYocO9qxr2SjcWRyunLg](https://v11enp9ok1h.feishu.cn/docx/OFWuddJzYocO9qxr2SjcWRyunLg)
 
-## 推荐系统之重排
+## 相似性的度量
 
-### 相似性的度量
-
-+   基于物品属性标签
++ 基于物品属性标签
 
 ![](img/a63e6117ddd6b121391453f713cee00a.png)
 
@@ -32,11 +31,11 @@
 
 ## 重排的规则
 
-+   最多连续出现 篇某种笔记
++ 最多连续出现 篇某种笔记
 
-+   每篇笔记最多出现1篇某种笔记
++ 每篇笔记最多出现1篇某种笔记
 
-+   前篇笔记最多出现 篇某种笔记
++ 前篇笔记最多出现 篇某种笔记
 
 **MMR + 重排规则**
 

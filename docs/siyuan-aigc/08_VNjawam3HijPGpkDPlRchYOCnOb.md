@@ -1,32 +1,33 @@
+
 # ChatGPT使用时经常遇到的封禁问题
 
 > 来源：[https://my.feishu.cn/docx/MbnndnemCo7QanxncHFcfSyQnig](https://my.feishu.cn/docx/MbnndnemCo7QanxncHFcfSyQnig)
 
-# ChatGPT使用时经常遇到的网络节点问题
+## ChatGPT使用时经常遇到的网络节点问题
 
 ### 前言
 
-确保登录的是官网地址： https://chat.openai.com 看似简单，就是有很多人去了马甲网站。。。
+确保登录的是官网地址：`https://chat.openai.com` 看似简单，就是有很多人去了马甲网站。。。
 
-封号的根本原因：**绝大部分的问题都是因为网络节点慢或被 O**penAI 屏蔽了导致的（90%以上）。
+封号的根本原因：绝大部分的问题都是因为网络节点慢或被 OpenAI 屏蔽了导致的（90%以上）。
 
-网络节点：**推荐美国、加拿大、欧洲的**。 不推荐用亚洲节点，比如日本、香港、澳门的节点。
+网络节点：推荐美国、加拿大、欧洲的。不推荐用亚洲节点，比如日本、香港、澳门的节点。
 
 以下将分析各种网络提供供应商的问题，基本涵盖全部封禁类型。
 
 ### 关于网络节点
 
-1）🪜所选择的**地区不对**，推荐哪些地区，参照上文。部分地区直接不支持ChatGPT访问。
+1）🪜所选择的地区不对，推荐哪些地区，参照上文。部分地区直接不支持ChatGPT访问。
 
-**2）如果**在手机ChatGPT APP上使用，有时需选择：全局模式。
+2）如果在手机ChatGPT APP上使用，有时需选择：全局模式。
 
-+   **手机浏览器**：推荐自带的 Safari 或 Google Chrome 浏览器，打开官网使用 https://chat.openai.com
++ 手机浏览器：推荐自带的 Safari 或 Google Chrome 浏览器，打开官网使用 `https://chat.openai.com`
 
-+   **苹果手机**：需要美区账号下载官方 APP。 买一个美区 ID 可以上淘宝。可以淘宝搜：北美 id，美 id。
++ 苹果手机：需要美区账号下载官方 APP。买一个美区 ID 可以上淘宝。可以淘宝搜：北美 id，美 id。
 
-+   **安卓手机**：推荐 Google Play 应用商店下载
++ 安卓手机：推荐 Google Play 应用商店下载
 
-+   安卓手机用户，请**谷歌搜索**：**华谷套件**。Google Play 平替
++ 安卓手机用户，请谷歌搜索：华谷套件。Google Play 平替
 
 Issues:
 
@@ -50,13 +51,13 @@ Please try again later. If you are using a VPN, try turning it off.Check the sta
 
 还是🪜的网络节点问题，请更换节点地区，直到正常。
 
-#### **3** 登录时，提示 Oops！We ran into an issue while authenticating you.
+#### 3 登录时，提示 Oops！We ran into an issue while authenticating you.
 
 Oops!
 
-We ran into an issue while authenticating you. lf this issue persists, please contact us through our help center at https://help.openai.com.
+We ran into an issue while authenticating you. lf this issue persists, please contact us through our help center at `https://help.openai.com`.
 
-也是网络节点问题。 请继续更换其他节点地区。
+也是网络节点问题。请继续更换其他节点地区。
 
 #### 4 ChatGPT 出现 Something went wrong
 
@@ -64,13 +65,13 @@ We ran into an issue while authenticating you. lf this issue persists, please co
 
 如果不是，请继续切换🪜的节点地区。
 
-#### **5** 登录时，提示拥堵 Oops! We ran into an issue while signing you in
+#### 5 登录时，提示拥堵 Oops! We ran into an issue while signing you in
 
 Oops! We ran into an issue while signing you in, please take abreak and try again soon.
 
 稍后再试
 
-#### 6 使用时，左侧的聊天记录加载不出来！！ 🪜网络问题。
+#### 6 使用时，左侧的聊天记录加载不出来！！🪜网络问题。
 
 Unable to load history 错误！典型的🪜地区问题。
 
@@ -84,7 +85,7 @@ Unable to load history 错误！典型的🪜地区问题。
 
 #### 9 对话时，提示错误：Something went wrong.
 
-与ChatGPT对话返回的错误：Something went wrong. lf this issue persists please contact us through our help center at help.openai.com.
+与ChatGPT对话返回的错误：Something went wrong. lf this issue persists please contact us through our help center at `help.openai.com`.
 
 同样是🪜地区问题。
 

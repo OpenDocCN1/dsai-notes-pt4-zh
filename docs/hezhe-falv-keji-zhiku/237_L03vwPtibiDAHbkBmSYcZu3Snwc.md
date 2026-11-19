@@ -1,3 +1,4 @@
+
 # 招募 AI 高管职位，负责落地 AI
 
 > 来源：[https://docs.feishu.cn/docx/HUCBdAhqmooaatxWIzWcHsX6nUb](https://docs.feishu.cn/docx/HUCBdAhqmooaatxWIzWcHsX6nUb)
@@ -10,18 +11,13 @@
 
 聘请了与拥抱 AI 相关工作的高级岗位，以技术为中心，提供对 AI 尤其是安全的关注，例如：
 
-+   **首席人工智能官**：负责领导律所的 AI 战略，与律师和客户合作，导航和采用 AI 技术
-
-+   代表律所：DLA Piper
-
-+   **首席创新和 AI 官**：负责监督 AI 工具的开发和实施，以及其他以创新为重点的业务解决方案
-
-+   代表律所：McGuireWoods
-
-+   **首席知识与创新官**：负责开发、实施和监督律所的数据和知识管理战略
-
-+   代表律所：Holland & Knight
++ 首席人工智能官：负责领导律所的 AI 战略，与律师和客户合作，导航和采用 AI 技术
++ 代表律所：DLA Piper
++ 首席创新和 AI 官：负责监督 AI 工具的开发和实施，以及其他以创新为重点的业务解决方案
++ 代表律所：McGuireWoods
++ 首席知识与创新官：负责开发、实施和监督律所的数据和知识管理战略
++ 代表律所：Holland & Knight
 
 担任这些角色的人，通常拥有多年的战略领导经验，曾在其他律所或法律科技公司担任过类似职位。
 
-拓展阅读：https://www.law.com/americanlawyer/2024/07/25/technology-up-front-in-latest-c-suites-roles-in-big-law/
+拓展阅读：`https://www.law.com/americanlawyer/2024/07/25/technology-up-front-in-latest-c-suites-roles-in-big-law/`

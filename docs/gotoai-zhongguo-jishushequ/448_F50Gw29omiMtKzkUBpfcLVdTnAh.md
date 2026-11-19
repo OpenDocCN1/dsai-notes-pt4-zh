@@ -1,8 +1,9 @@
+
 # Anthropic Agent Skills
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/XtV6dLPrJoW9d6xkvSZcsqVFnud](https://gotoaiworld.feishu.cn/docx/XtV6dLPrJoW9d6xkvSZcsqVFnud)
 
-# Equipping agents for the real world with Agent Skills
+## Equipping agents for the real world with Agent Skills
 
 https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
 

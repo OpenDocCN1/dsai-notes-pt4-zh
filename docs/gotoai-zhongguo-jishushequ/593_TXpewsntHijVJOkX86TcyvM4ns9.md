@@ -1,56 +1,61 @@
+
 # LLM Fine-Tuning: A Guide for Engineering Teams in 2025
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/LnngdsxMkoer8cxXSyscQ4INnvf](https://gotoaiworld.feishu.cn/docx/LnngdsxMkoer8cxXSyscQ4INnvf)
 
-https://www.heavybit.com/library/article/llm-fine-tuning
+`https://www.heavybit.com/library/article/llm-fine-tuning`
 
-General-purpose large language models (LLMs) are built for broad artificial intelligence (AI) applications. The [most popular](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)[ open-weight ](https://en.wikipedia.org/wiki/Deep_learning)models, which make their core hyperparameters publicly available, are usually general-purpose models prepared with pre-training, an important practice in using deep learning to improve a model’s analysis capabilities.
+General-purpose large language models (LLMs) are built for broad artificial intelligence (AI) applications. The most popular open-weight models, which make their core hyperparameters publicly available, are usually general-purpose models prepared with pre-training, an important practice in using deep learning to improve a model’s analysis capabilities.
 
-Off the shelf, these pre-trained models can explain a wide range of complex topics, handle rote tasks to free up their human partners, handle customer service queries as a chatbot, spi[n up text g](https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning))eneration for specific content needs, handle summarization of large blocks of text data, and more. While this will not be a full tutorial, this step-by-step guide, we’ll cover how teams can use the process of fine tuning on already-trained AI models to boost performance and provide better outcomes faster. Fine-tuning is generally one of the core processes in creating a custom LLM of your own.
+Off the shelf, these pre-trained models can explain a wide range of complex topics, handle rote tasks to free up their human partners, handle customer service queries as a chatbot, spin up text generation for specific content needs, handle summarization of large blocks of text data, and more. While this will not be a full tutorial, this step-by-step guide, we’ll cover how teams can use the process of fine tuning on already-trained AI models to boost performance and provide better outcomes faster. Fine-tuning is generally one of the core processes in creating a custom LLM of your own.
 
 ## How Fine-Tuning Improves LLM Performance for Engineering Teams
 
-Out of the box, LLMs made for any task may not be suited to any single organization’s specific tasks. (Some [teams will ](https://en.wikipedia.org/wiki/BERT_(language_model))look to more purpose-built alternatives, such as Bidirectional Encoder Representations from Transformers, or BERT models, which use self-supervised learning, or other custom models.) There are other barriers for startups that may be interested in using LLMs: non-deterministic outcomes that introduce unpredictability, the high cost of accessing popular models and maintaining the resources to host them, and the rapid pace of change in the LLM landscape.
+Out of the box, LLMs made for any task may not be suited to any single organization’s specific tasks. (Some teams will look to more purpose-built alternatives, such as Bidirectional Encoder Representations from Transformers, or `BERT` models, which use self-supervised learning, or other custom models.) There are other barriers for startups that may be interested in using LLMs: non-deterministic outcomes that introduce unpredictability, the high cost of accessing popular models and maintaining the resources to host them, and the rapid pace of change in the LLM landscape.
 
-There are several popular techni[ques for im](https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning))proving what an LLM produces: refining the prompts you feed it (prompt engineering), introducing data from new sources to the LLM (retrieval-augmented generation, or RAG), and changing the training parameters of the model itself (fine tuning).
+There are several popular techniques for improving what an LLM produces: refining the prompts you feed it (prompt engineering), introducing data from new sources to the LLM (retrieval-augmented generation, or `RAG`), and changing the training parameters of the model itself (fine tuning).
 
-All thre[e approaches will get you bett](https://www.heavybit.com/library/article/how-to-make-open-llms-work-in-practice)er outputs. (RAG in particular has gained popularity for providing ad hoc performance boosts for models.) However, only fine-tuning large language models delivers the sort of persistent behavior change that consistently channels an LLM’s power toward your organization’s purposes. A model customized to your startup’s specific task (and your customers’ needs) can help you outclass your competitors.
+All three approaches will get you better outputs. (`RAG` in particular has gained popularity for providing ad hoc performance boosts for models.) However, only fine-tuning large language models delivers the sort of persistent behavior change that consistently channels an LLM’s power toward your organization’s purposes. A model customized to your startup’s specific task (and your customers’ needs) can help you outclass your competitors.
 
 Next, we’ll cover how fine-tuning works, different approaches to fine tuning, how to do it (from model selection to output evaluation) responsibly, and which AI infrastructure investments make the difference in fine tuning effectively.
 
 ## What is LLM Fine-Tuning?
 
-Fi[ne-tuni](https://chatgpt.com/)ng LLMs mean[s cond](https://claude.ai/)ucting ad[ditio](https://llama.com/)nal training on an already pre-trained LLM, like OpenAI’s ChatGPT, Anthropic Claude, META’s Llama family, or your own LLM internally to improve its performance. In essence, fine-tuning extends the training of an LLM beyond pre-training, tailoring it for specific domains and use cases on subsequent prompts, as opposed to more-transient methods like RAG.
+Fine-tuning LLMs means conducting additional training on an already pre-trained LLM, like `OpenAI’s ChatGPT`, `Anthropic Claude`, `Meta’s Llama` family, or your own LLM internally to improve its performance. In essence, fine-tuning extends the training of an LLM beyond pre-training, tailoring it for specific domains and use cases on subsequent prompts, as opposed to more-transient methods like `RAG`.
 
-The fine-tun[ing proc](https://www.heavybit.com/library/article/how-to-scope-and-evolve-data-pipelines)ess can involve connecting your pre-trained model to one or more data sources (such as a knowledge base of your own data) via API to flow fine-tuning data to the model (as well as to connect the fine-tuned model directly to downstream applications). The fine-tuning process can benefit from embedding, effectively providing a starting point within your own data to which your fine-tuned model can refer. It’s also a good idea to automate time-consuming data preprocessing and other preparation tasks.
+The fine-tuning process can involve connecting your pre-trained model to one or more data sources (such as a knowledge base of your own data) via `API` to flow fine-tuning data to the model (as well as to connect the fine-tuned model directly to downstream applications). The fine-tuning process can benefit from embedding, effectively providing a starting point within your own data to which your fine-tuned model can refer. It’s also a good idea to automate time-consuming data preprocessing and other preparation tasks.
 
-Specifically, training LLMs updates and refits your models’ parameters—the weights and bias[es it applies](https://en.wikipedia.org/wiki/Learning_rate) t[o a da](https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence#epoch)ta[set during](https://www.coursera.org/articles/what-does-batch-size-mean-in-deep-learning) the training process as well as the preset hyperparameters (i.e., learning rate, epochs, batch size) that guide how those weights and biases are applied—to provide better, fit-for-purpose responses. LLMs tuned for a specific domain or use case tuned with an appropriate learning rate deliver faster performance and better, more relevant answers that ideally require fewer re-prompts.
+Specifically, training LLMs updates and refits your models’ parameters—the weights and biases it applies to a dataset during the training process as well as the preset hyperparameters (i.e., learning rate, epochs, batch size) that guide how those weights and biases are applied—to provide better, fit-for-purpose responses. LLMs tuned for a specific domain or use case tuned with an appropriate learning rate deliver faster performance and better, more relevant answers that ideally require fewer re-prompts.
 
-Poor[ly done](https://llm-tuning-safety.github.io/), fine-tuning can also introduce safety risks. Most popular LLMs have built-in guardrails to prevent their misuse; fine-tuning can compromise them. In a study, researchers from Princeton University, Stanford University, Virginia Tech University, and IBM Research found that fine-tuning enabled LLMs from Meta and OpenAI to offer advice on bomb-making, run scams, and participate in other criminal activities.
+Poorly done, fine-tuning can also introduce safety risks. Most popular LLMs have built-in guardrails to prevent their misuse; fine-tuning can compromise them. In a study, researchers from Princeton University, Stanford University, Virginia Tech University, and IBM Research found that fine-tuning enabled LLMs from Meta and OpenAI to offer advice on bomb-making, run scams, and participate in other criminal activities.
 
 Such risks can be mitigated with thoughtful planning and deliberate execution. Real-world fine-tuning success stories aren’t hard to find, particularly for teams that go beyond using the largest large language models and consider going smaller:
 
-+   [L](https://arxiv.org/abs/2402.09391)laSMol, a Mistral-based LLM fine-tuned by researchers at Ohio State University and Google for chemistry projects, substantially outperformed non-fine-tuned models
++ `laSMol`, a `Mistral`-based LLM fine-tuned by researchers at Ohio State University and Google for chemistry projects, substantially outperformed non-fine-tuned models
 
-+   At Harvard University, large la[nguage models with smaller parameter cou](https://www.nature.com/articles/s41746-023-00970-0)nts fine-tuned to scan medical records for non-medical factors that influence health found more results with less bias than advanced GPT models trained on a larger, more-general set of parameters
++ At Harvard University, large language models with smaller parameter counts fine-tuned to scan medical records for non-medical factors that influence health found more results with less bias than advanced `GPT` models trained on a larger, more-general set of parameters
 
-+   R[esearchers at three Chinese universities de](https://arxiv.org/html/2409.13721v1)veloped LegiLM, an LLM fine-tuned to interpret and support compliance with data privacy regulations
++ Researchers at three Chinese universities developed `LegiLM`, an LLM fine-tuned to interpret and support compliance with data privacy regulations
 
-+   Sentiment analysis and other natural language processing (NLP) tasks are also popular use case for LLM fine-tuning
++ Sentiment analysis and other natural language processing (NLP) tasks are also popular use case for LLM fine-tuning
 
 ### Key Approaches to LLM Fine-Tuning
 
-There are several broad approaches to LLM fine-tuning, including full fine-tuning, parameter-efficient fine-tuning (PEFT), and instruction tuning or reinforcement learning from human feedback (RLHF). Each has merits and drawbacks, but at least one is likely to suit your organization’s goals and budget, which are important to consider, particularly if training your own LLM internally.
+There are several broad approaches to LLM fine-tuning, including full fine-tuning, parameter-efficient fine-tuning (`PEFT`), and instruction tuning or reinforcement learning from human feedback (`RLHF`). Each has merits and drawbacks, but at least one is likely to suit your organization’s goals and budget, which are important to consider, particularly if training your own LLM internally.
 
 ### Full Fine-Tuning
 
 Full fine-tuning is a method for fine-tuning LLMs that retrains all of your base model’s parameters. Full fine-tuning offers the most control over model outputs, which may be ideal for developers looking to execute obscure, domain-specific tasks. (In contrast, few-shot learning attempts to train models on extremely few data points.)
 
-It is, however, very resource-intensive. Meta’s Llama 3.1 family, for instance, has between 8 billion and 405 billion parameters, depending on which version you use. Fine-tuning a 405B-parameter model would likely demand an enormous amount of expensive computational resources, of the kind conventionally provided by high-end graphics processing units (GPU), and would yield a model as large as the base model. Fine-tuning often aims to scale general-use models down for domain-specific tasks.
+It is, however, very resource-intensive. Meta’s `Llama 3.1` family, for instance, has between 8 billion and 405 billion parameters, depending on which version you use. Fine-tuning a `405B`-parameter model would likely demand an enormous amount of expensive computational resources, of the kind conventionally provided by high-end graphics processing units (`GPU`), and would yield a model as large as the base model. Fine-tuning often aims to scale general-use models down for domain-specific tasks.
+
+
+
+# LLM Fine-Tuning
 
 Full fine-tuning also c[arries some](https://en.wikipedia.org/wiki/Overfitting) risk of overfitting, which can cause your LLM to overindex only on recognizing its previous training data and fail to perform well against future, net-new datasets. Overfitting can be a particularly significant risk when you’re tuning an LLM for use on smaller custom datasets. In those cases, a fully fine-tuned model can memorize training examples and behave erratically when presented with unfamiliar data. Catastrophic forgetting—a phenomenon where an LLM overwrites general knowledge learned in its original training—is also a possibility.
 
-### Parameter-Efficient Fine-Tuning
+## Parameter-Efficient Fine-Tuning
 
 Parameter-efficient fine tuning (PEFT), in which only a subset of model parameters undergo fine-tuning, addresses some of the drawbacks to full fine-tuning. With most parameters frozen, PEFT demands less memory and compute resources, reduces the risk of catastrophic forgetting, and takes less time.
 
@@ -58,9 +63,9 @@ Low-rank adaptation (LoRA) is a common PEFT method. LoRA is a method for fine-tu
 
 PEFT comes with trade-offs. Fully fine-tuned models typically perform better, and they offer more-complete control. But when computing resources or domain-specific data are scarce, PEFT can be a useful alternative.
 
-### Instruction Tuning and Reinforcement Learning from Human Feedback
+## Instruction Tuning and Reinforcement Learning from Human Feedback
 
-Instruction tuning improves overall ability to follow instructions by training LLMs on a lab[eled set of instructio](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback)nal prompts and correct corresponding outputs. It’s often used in tandem with reinforcement learning from human feedback (RLHF). RLHF is a method to fine-tune LLMs that “rewards” a model for correctly responding to questions and commands.
+Instruction tuning improves overall ability to follow instructions by training LLMs on a labeled set of instructional prompts and correct corresponding outputs. It’s often used in tandem with reinforcement learning from human feedback (RLHF). RLHF is a method to fine-tune LLMs that “rewards” a model for correctly responding to questions and commands.
 
 Together, these techniques make models more predictable and helpful. They’re also inherently complex, given their dependence on well-crafted instruction/response datasets and human input.
 
@@ -76,13 +81,10 @@ Size and inference cost will be major considerations—startups may prefer model
 
 Here are four popular open-weight LLMs. Each offers several size options:
 
-+   [LLaMA](https://www.llama.com/) by META
-
-+   [Mistral](https://mistral.ai/) by Mistral
-
-+   [Falcon](https://falconllm.tii.ae/) by TII
-
-+   [Gemma](https://ai.google.dev/gemma) by Google
++ [LLaMA](https://www.llama.com/) by META
++ [Mistral](https://mistral.ai/) by Mistral
++ [Falcon](https://falconllm.tii.ae/) by TII
++ [Gemma](https://ai.google.dev/gemma) by Google
 
 ![](img/86f21d1a05bbeeaa3c2b07de2371c336.png)
 
@@ -104,11 +106,9 @@ Poorly labeled, incomplete data
 
 There are good, low-cost tools and approaches to help you prep and format your datasets:
 
-+   [Label Studio](https://labelstud.io/), an open source tool for labeling a range of data types
-
-+   [Snorkel](https://www.snorkel.org/get-started), an open source Python library for weak supervision with label functions
-
-+   Custom scripts are also useful for data preparation
++ [Label Studio](https://labelstud.io/), an open source tool for labeling a range of data types
++ [Snorkel](https://www.snorkel.org/get-started), an open source Python library for weak supervision with label functions
++ Custom scripts are also useful for data preparation
 
 ### Step 3: Select Your Fine-Tuning Method
 
@@ -142,36 +142,34 @@ E[ase of use a](https://huggingface.co/)nd[ broad ](https://pytorch.org/)co[mmun
 
 A basic LoRA setup snippet using Hugging Face’s PEFT.
 
-More-advanced workflows might benefit f[rom str](https://axolotl.ai/)uc[tured tra](https://www.langchain.com/)in[ing fra](https://unsloth.ai/)mewor[ks like A](https://github.com/pytorch/torchtune#)xolotl, LangChain, Unsloth, or TorchTune, especially when scaling up. Built on top of Hugging Face libraries, Axolotl is also well suited to PEFT techniques.
+More-advanced workflows might benefit from structured training frameworks like Axolotl, LangChain, Unsloth, or TorchTune, especially when scaling up. Built on top of Hugging Face libraries, Axolotl is also well suited to PEFT techniques.
+
+
+
+# LLM Fine-Tuning: Best Practices and Infrastructure
 
 Startups should also look at compatibility[ with ](https://github.com/mlflow/mlflow)ex[perimen](https://github.com/clearml/clearml)t tracking tools such [as MLFl](https://www.bentoml.com/)ow, [ClearML](https://github.com/bentoml/OpenLLM), or Weights & Biases, and consider deployment tools like BentoML or OpenLLM if real-time inference is needed. The frameworks chosen should ideally match the team’s technical skills and integrate well with existing infrastructure.
 
-### Step 5: Train and Validate
+## Step 5: Train and Validate
 
 Use standard model training loops with checkpoints and early stopping. Monitor:
 
 +   Training/Validation Loss: How well your model learns from training data and how well it generalizes to net-new data
-
 +   Overfitting Signs: Such as huge gaps between high performance on known datasets compared to significantly lower performance on net-new datasets
-
 +   GPU Utilization Issues: Such as low or spiky utilization that may indicate bottlenecks
 
-### Step 6: Evaluate and Iterate
+## Step 6: Evaluate and Iterate
 
 Don’t stop at “it trains.” Evaluation is the key t[o refinemen](https://www.geeksforgeeks.org/how-to-choose-batch-size-and-number-of-epochs-when-fitting-a-model)t. For smaller datasets, some estimates suggests 3-10 epochs can be sufficient, but every model and every dataset differs. It’s important to consider your data batch size against the number of epochs you plan to run. Larger data batches will likely require more epochs for your model to “see” and process all the data in your set a sufficient number of times. However, running too many epochs can lead to overfitting, not to mention potentially overspending on compute to run excessive training cycles that actually diminish your performance.
 
-### Common Mistakes Teams Make When Fine-Tuning
+## Common Mistakes Teams Make When Fine-Tuning
 
 Fine-tuning should be an iterative process with frequent oversight and feedback cycles and an eye toward ensuring the highest data quality as inputs. Here are some common mistakes teams make during the process:
 
 +   Using Poor-Quality or Inconsistent Training Data: A bad dataset can lead to overfitting or underfitting, as well as performance drops that ultimately, hurt customer experience
-
 +   Choosing an Overly Complex Model or Method: Overcomplicated fine-tuning can lead to loss of performance on generalized datasets, catastrophic forgetting, and higher costs if retraining is needed
-
 +   Skipping Human Evaluations: Without human evaluation, models can miss important subjective factors such as ethical safety issues or societal biases
-
 +   Failing to Benchmark Against a Baseline: Without a baseline, it can be difficult to assess performance or the impact of any changes made during fine-tuning
-
 +   Ignoring Iteration Cycles and Feedback: Skipping iterative feedback can lead to lower adaptability to new data and models preserving unwanted biases.
 
 ## LLM Evaluation and Optimization: Measuring What Matters
@@ -197,9 +195,7 @@ Choose tools and systems that match your scale. Don’t spin up a tensor process
 Rather than wait for compliance headaches and lawsuits to find you, it’s a good idea to proactively build in safety measures that ensure your fine-tuning leads to a model that is both safe and performant:
 
 +   Filter Training Data for Toxicity or Bias: Removing harmful or biased content from your dataset before fine-tuning helps make your model less likely to output toxic responses, and more likely to be fair and unbiased.
-
 +   Run Safety Evaluations Before Release: It’s a best practice to run iterative safety evals that can include, but aren’t limited to, standard benchmark evaluations, automated evals, and even adversarial red teaming to root out potentially harmful outputs.
-
 +   Use Output Filters, Rate-Limiting, or Human-in-the-Loop Systems: Output filters can be a helpful final safeguard against biased or harmful content. Setting rate limits caps maximum requests at a time and can prevent unauthorized attacks. And adding human safeguards to better label data and evaluate outputs can prevent unanticipated issues.
 
 ### Understand and Embrace the Weirdness
@@ -215,15 +211,12 @@ The most immediate win from successful fine-tuning is a more-robust model that p
 More resources that may be helpful to teams standing up AI programs:
 
 +   How to Create Data Pipelines: A starter guide on the basics of building key data infrastructure for AI programs
-
 +   [How to Scope and Ev](https://www.heavybit.com/library/article/how-to-scope-and-evolve-data-pipelines)olve Data Pipelines: An in-depth interview on best practices for evolving data pipelines over time
-
 +   [The Data Pipeline Is t](https://www.heavybit.com/library/article/ai-infrastructure-top-challenges-data-inference)he New Secret Sauce: A deep-dive into the hardware infrastructure and CI/CD-like data discipline needed for AI programs
-
 +   Machine Learning Model Monitoring: How to approach monitoring for models in production
++   [Machine Learning Lifec](https://www.heavybit.com/library/article/machine-learning-lifecycle)cle: Idea to Launch: A starter guide on how to approach standing up an AI/ML program
 
-+   [Machine Learning Lifecy](https://www.heavybit.com/library/article/machine-learning-lifecycle)cle: Idea to Launch: A starter guide on how to approach standing up an AI/ML program
 
-+   DevToolsDigest Newsletter: A weekly newsletter that covers the most important news for software teams
 
-+   The Humans in the Loop: A biweekly newsletter that bottom-lines AI news for busy software teams
++ DevToolsDigest Newsletter: A weekly newsletter that covers the most important news for software teams
++ The Humans in the Loop: A biweekly newsletter that bottom-lines AI news for busy software teams

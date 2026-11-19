@@ -1,3 +1,4 @@
+
 # PC 一键开启Claude酒馆之门（原名：真·一键脚本，脚本内置注册cookie功能）
 
 > 来源：[https://docs.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec](https://docs.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec)
@@ -20,9 +21,9 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 **魔法：用来访问国外网络的魔法**
 
-**邮**箱：不建议使用临时邮箱/国内（qq、163）邮箱，推荐 Outlook / Gmail (现在不建议别名了)
+邮箱：不建议使用临时邮箱/国内（qq、163）邮箱，推荐 Outlook / Gmail (现在不建议别名了)
 
-[**手机**](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec?subFrom=quote_container&from=tab_link&wiki_version=2#part-OpLPdfbKCokTlEx6pqsc3Nctn3c)**号：需要一**次性的手机短信验证，可在 这里 获取教程
+[手机](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec?subFrom=quote_container&from=tab_link&wiki_version=2#part-OpLPdfbKCokTlEx6pqsc3Nctn3c)号：需要一次性的手机短信验证，可在 这里 获取教程
 
 ### 通过链接下载[一键脚本](https://github.com/LINKlang/SillyTavern-Clewd-auto/releases/latest)
 
@@ -32,14 +33,13 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 #### 自动完成网络等检验过后选择模式一
 
-
 #### 选择已安装的浏览器（Edge/Chrome）
 
 ![](img/4f4733bbac95a96259578939eab8a5b2.png)
 
 #### 完成填写邮箱，邮件验证码，昵称，手机号，手机号验证码
 
-+   [手机号获取方法点我](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec#doxcn2UArWkeqkfJeWLdMpvkgYb)
++ [手机号获取方法点我](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec#doxcn2UArWkeqkfJeWLdMpvkgYb)
 
 脚本自动获取并填写cookie
 
@@ -47,39 +47,39 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 #### 创建更多的cookie
 
-这句话的意思是，是否要通过不同的邮箱添加更多的cookie（因为一个cookie用不了很长时间），你上次使用的什么方法进入获取cookie，输入y后还是用的同样方法
+这句话的意思是，是否要通过不同的邮箱添加更多的cookie（因为一个cookie用不了很长时间），你上次使用的什么方法进入获取cookie，输入`y`后还是用的同样方法
 
-> 比如你是注册claude账号，输入y后，也是进入的注册claude账号流程
+> 比如你是注册claude账号，输入`y`后，也是进入的注册claude账号流程
 
 ![](img/8e87ecc63939fcaa0152eccdc866be15.png)
 
-#### 脚本会自动启动酒馆和clewd
+#### 脚本会自动启动酒馆和`clewd`
 
 > 启动后酒馆使用问题，请看[酒馆使用教程](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec#doxcnB6aq6Tvo2dKjHqP8LjqLre)
 
-### 启动使用一键脚本部署的酒馆和clewd
+### 启动使用一键脚本部署的酒馆和`clewd`
 
 显而易见，这个选项就是用脚本注册/登陆过账号，后续启动用的
 
-### 恢复clewd (clewd出现缺失文件或文本错误使用)
+### 恢复`clewd` (`clewd`出现缺失文件或文本错误使用)
 
-这个功能就是在clewd损坏时用的
+这个功能就是在`clewd`损坏时用的
 
 不建议用，Cookie容易丢失，虽然已经做过Cookies保护了
 
-### 直接开启酒馆/Clewd
+### 直接开启酒馆/`Clewd`
 
-单独开启酒馆/Clewd用的，方便某一个报错导致退出后，单独重启
+单独开启酒馆/`Clewd`用的，方便某一个报错导致退出后，单独重启
 
 ### 添加自己的cookie
 
-> 已迁移至[修改clewd配置文件](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg#OMxedzcdEo9wCQxjO3bcb00hnnr)的第六项
+> 已迁移至[修改`clewd`配置文件](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg#OMxedzcdEo9wCQxjO3bcb00hnnr)的第六项
 
-### 使用clewd自带的更新程序进行更新
+### 使用`clewd`自带的更新程序进行更新
 
-运行后会自动调用clewd文件夹里的update程序进行更新
+运行后会自动调用`clewd`文件夹里的`update`程序进行更新
 
-### 修改clewd配置文件
+### 修改`clewd`配置文件
 
 进入该项后，会弹出修改页面，其中会有一些预设
 
@@ -101,7 +101,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 ![](img/dbde501d020a24e8aff35a1bfa4f485f.png)
 
-然后再按下一次回车，输入end
+然后再按下一次回车，输入`end`
 
 ![](img/44f1dc4522c467c47abc95756e3cc983.png)
 
@@ -113,7 +113,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 ### 以下为[赞助验证后](https://sqivg8d05rm.feishu.cn/docx/QVXAdUjDDooTmixDa0Icj1YCnec#doxcniGf8U8hZjshLZq62eA1efg)独有功能
 
-#### 切换clewd代理地址
+#### 切换`clewd`代理地址
 
 ##### 选择你想要使用的代理
 
@@ -121,9 +121,9 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 选择后就会自动修改
 
-#### 检测cookie状态
+#### 检测`cookie`状态
 
-进入该选项后，脚本会通过修改clewd配置文件的方案，让clewd遍历并检测cookie可用性
+进入该选项后，脚本会通过修改`clewd`配置文件的方案，让`clewd`遍历并检测`cookie`可用性
 
 ![](img/94752428fda83dbc7a47498011fc2546.png)
 
@@ -175,7 +175,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 ![](img/ffc6ed043f43bf2e478e89549d367dc6.png)
 
-### **购买虚拟手机号**
+### 购买虚拟手机号
 
 服务选 Any other ，地区选择除英美两国之外的其他国家。
 
@@ -191,7 +191,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 购买过后自动进入收取页面
 
-**先在****sms**点击✅，再在一键脚本中输入手机号收取验证码
+**先在**`sms`**点击**✅，再在一键脚本中输入手机号收取验证码
 
 ![](img/e39c11088ac4fd995f447694cd4f2d11.png)
 
@@ -203,7 +203,7 @@ Claude宝宝教程：[Claude宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/BBo
 
 酒馆使用教程：[酒馆使用](https://sqivg8d05rm.feishu.cn/wiki/Nazdwr3H9inZs6k1aIQcFPA0nth)
 
-当你已经 **注册/登录 **完了claude账号，进入酒馆页面的时候，一些人底部的输入框会提示以下内容
+当你已经 **注册/登录** 完了claude账号，进入酒馆页面的时候，一些人底部的输入框会提示以下内容
 
 ![](img/2abdeabd38843ea360555dcb69ce4d51.png)
 
@@ -233,15 +233,15 @@ http://127.0.01:8444/v1
 
 ### 错误：更新cookie全程时出现问题
 
-#### 报错信息: [Errno 2] No such file or directory: 'clewd\\config.js'
+#### 报错信息: [Errno 2] No such file or directory: `clewd\\config.js`
 
 文件丢失，重新下载脚本
 
-> 赞助版可以使用恢复clewd功能
+> 赞助版可以使用恢复`clewd`功能
 
-#### 报错信息: [Errno 13] Permission denied: 'clewd\\config.js'
+#### 报错信息: [Errno 13] Permission denied: `clewd\\config.js`
 
-##### 检查是否使用记事本打开了clewd文件夹里的config.js
+##### 检查是否使用记事本打开了`clewd`文件夹里的`config.js`
 
 ##### 解决方法二：
 
@@ -252,5 +252,3 @@ http://127.0.01:8444/v1
 ![](img/96d02388b3b203f9edd314f25afd3599.png)
 
 ![](img/8dd1679bdbc8f620e3372dc0f51aa1db.png)
-
-####

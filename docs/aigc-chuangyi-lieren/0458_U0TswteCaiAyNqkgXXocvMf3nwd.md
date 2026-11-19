@@ -1,3 +1,4 @@
+
 # 50个顶级 ChatGPT指令，200%提升工作效率
 
 > 来源：[https://aigcreative.feishu.cn/docx/O25Jdf6oWohEKqxhrt1cwCJNnRY](https://aigcreative.feishu.cn/docx/O25Jdf6oWohEKqxhrt1cwCJNnRY)
@@ -184,9 +185,9 @@ Prompt: "After the sales visit, follow up with telephone, WeChat and other chann
 
 ## 让ChatGPT 帮你优化Prompt
 
-提示：“您是 ChatGPT 提示生成器。生成 10 个独特的提示，将帮助我完成[工作或任务]。
+提示：“您是 ChatGPT 提示生成器。生成 10 个独特的提示，将帮助我完成[工作或任务]。”
 
-Prompt: "You are a ChatGPT prompt generator. Generate 10 unique prompts that will help me get [job or task] done.
+Prompt: "You are a ChatGPT prompt generator. Generate 10 unique prompts that will help me get [job or task] done."
 
 ## 行业痛点→解决方案→商业策略
 
@@ -222,6 +223,8 @@ Prompt: "Introduce me to creative exercises and techniques that will help me tap
 
 提示：“将下面文本的语气更改为更[直接、正式、非正式、真诚、讽刺、友好、自信、有说服力、热情、专业、休闲严肃、轻松、对话、严肃]：[粘贴文本]”
 
+
+
 Prompt: "Change the tone of the text below to be more [Direct, Formal, Informal, Sincere, Sarcastic, Friendly, Assertive, Persuasive, Passionate, Professional, Casual Serious, Lighthearted, Conversational, Serious]: [Paste text]"
 
 ## 提高记忆力
@@ -238,7 +241,7 @@ Prompt: "Summarize this article into a bulleted list of the most important infor
 
 ## 结合主题，开放脑洞
 
-提示：“针对以下 [主题] 集思广益 20 个独特的想法”
+提示：“针对以下 [主题] 集思广想 20 个独特的想法”
 
 Prompt: "Brainstorm 20 unique ideas for the following [topic]"
 
@@ -280,7 +283,7 @@ Prompt: "Turn the following bullet points into a paragraph of text. Use the foll
 
 ## 用「See-Think-Do-Care 模型」创建全网营销
 
-提示：“[简要描述您的目标受众和产品或服务]。指导我根据 See-Think-Do-Care 模型开发全网营销活动。
+提示：“[简要描述您的目标受众和产品或服务]。指导我根据 See-Think-Do-Care 模型开发全网营销活动。”
 
 Prompt: "[Briefly describe your target audience and product or service]. Guide me to developing a web-wide marketing campaign based on the See-Think-Do-Care model."
 
@@ -298,9 +301,9 @@ Prompt: "[Provide a brief description of your product and target audience]. Assi
 
 ## 与顶级CEO对话
 
-提示：“从现在开始，你将扮演[埃隆·马斯克]。我会问你一系列问题，你必须像[埃隆·马斯克]那样回答。
+提示：“从现在开始，你将扮演[埃隆·马斯克]。我会问你一系列问题，你必须像[埃隆·马斯克]那样回答。”
 
-Prompt: "From here on, you will act as [Elon Musk]. I will ask you a series of questions and you must reply like [Elon Musk] would.
+Prompt: "From here on, you will act as [Elon Musk]. I will ask you a series of questions and you must reply like [Elon Musk] would."
 
 ## 找到特定问题的「根问题」
 

@@ -1,8 +1,7 @@
-# 12.22-吴恩达推出免费课程，带你玩转 OpenAI 推理模型 o1
-
-> 来源：[https://agijuejin.feishu.cn/docx/EpIjd3EVdoz9utxcYLocSyJWnde](https://agijuejin.feishu.cn/docx/EpIjd3EVdoz9utxcYLocSyJWnde)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 22 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/EpIjd3EVdoz9utxcYLocSyJWnde](https://agijuejin.feishu.cn/docx/EpIjd3EVdoz9utxcYLocSyJWnde)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

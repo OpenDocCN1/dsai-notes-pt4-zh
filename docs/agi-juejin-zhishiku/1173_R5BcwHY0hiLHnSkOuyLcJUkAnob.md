@@ -1,3 +1,4 @@
+
 # 使用FastChat快速部署LLM服务
 
 > 来源：[https://agijuejin.feishu.cn/docx/MX9MdinwXo9EsIx8ZEDcISJ7nVb](https://agijuejin.feishu.cn/docx/MX9MdinwXo9EsIx8ZEDcISJ7nVb)
@@ -6,7 +7,7 @@
 
 > 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/705915093)hihu.com/p/705915...
 
-FastChat 是一个用于训练、服务和评估基于LLM的聊天机器人的开放平台，它的核心功能包括：
+`FastChat` 是一个用于训练、服务和评估基于LLM的聊天机器人的开放平台，它的核心功能包括：
 
 +   最先进模型（例如 Vicuna、MT-Bench）的训练和评估代码。
 
@@ -16,7 +17,7 @@ FastChat 是一个用于训练、服务和评估基于LLM的聊天机器人的�
 
 ### 创建虚拟环境
 
-为了避免潜在的依赖冲突，创建单独的虚拟环境用于FastChat部署。
+为了避免潜在的依赖冲突，创建单独的虚拟环境用于`FastChat`部署。
 
 ```
 # initiate virtual environment
@@ -29,17 +30,17 @@ pip install -U pip
 
 ### 安装FastChat
 
-FastChat有pip安装和源码安装两种方式，这里采用pip方式安装：
+`FastChat`有`pip`安装和源码安装两种方式，这里采用`pip`方式安装：
 
 ```
 pip install &quot;fschat[model_worker,webui]&quot; -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-> 如运行时报缺少accelerate的错误，请通过pip install accelerator 安装。
+> 如运行时报缺少 `accelerate` 的错误，请通过 `pip install accelerator` 安装。
 
 ### 安装vLLM（可选）
 
-为了获得更好的推理性能，推荐使用vLLM作为后端来加速推理。
+为了获得更好的推理性能，推荐使用`vLLM`作为后端来加速推理。
 
 ```
 pip install vllm -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -47,7 +48,7 @@ pip install vllm -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### 下载LLM
 
-从modelscope下载本次演示的模型glm-4-9b-chat，下载命令如下：
+从`modelscope`下载本次演示的模型`glm-4-9b-chat`，下载命令如下：
 
 ```
 git lfs install
@@ -57,15 +58,15 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
 
 ## 使用FastChat部署LLM
 
-为了能够通过 Web 和 SDK 访问 LLM 服务，需要在服务器上部署以下 FastChat 的组件：
+为了能够通过 Web 和 SDK 访问 LLM 服务，需要在服务器上部署以下 `FastChat` 的组件：
 
-+   Controller
++   `Controller`
 
-+   Worker
++   `Worker`
 
-+   Gradio Web Server
++   `Gradio Web Server`
 
-+   OpenAI API Server
++   `OpenAI API Server`
 
 ![](img/b27eb42032954bde5de7595803bdba56.png)
 
@@ -75,7 +76,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
 python -m fastchat.serve.controller --host 0.0.0.0
 ```
 
-默认端口为 21001 ，可通过 --port 指定。 --host 参数是设置服务的主机地址，这里设置为 0.0.0.0 ，表示可以通过任何地址访问。
+默认端口为 `21001` ，可通过 `--port` 指定。 `--host` 参数是设置服务的主机地址，这里设置为 `0.0.0.0` ，表示可以通过任何地址访问。
 
 ![](img/0d1235da0041c3775a13bee9004c35db.png)
 
@@ -85,7 +86,7 @@ python -m fastchat.serve.controller --host 0.0.0.0
 python -m fastchat.serve.vllm_worker --model-path /path/to/local_model --host 0.0.0.0
 ```
 
-默认端口为 21002 ，可通过 --port 指定。FastChat 的 Worker 会向 Controller 注册自身，并通过心跳机制保持连接。若没有安装vLLM后端，可通过下面的命令直接启动model_work:
+默认端口为 `21002` ，可通过 `--port` 指定。`FastChat` 的 `Worker` 会向 `Controller` 注册自身，并通过心跳机制保持连接。若没有安装`vLLM`后端，可通过下面的命令直接启动`model_work`：
 
 ```
 python -m fastchat.serve.model_worker --model-path /path/to/local_model --host 0.0.0.0
@@ -93,7 +94,7 @@ python -m fastchat.serve.model_worker --model-path /path/to/local_model --host 0
 
 ![](img/250b7af298fd50c2c975b01abe696554.png)
 
-> 默认使用单GPU时，memory溢出。修改启动命令： python -m fastchat.serve.vllm_worker --model-path /path/to/glm-4-9b-chat --host 0.0.0.0 --num-gpus 4 指定4块GPU。
+> 默认使用单GPU时，`memory`溢出。修改启动命令： `python -m fastchat.serve.vllm_worker --model-path /path/to/glm-4-9b-chat --host 0.0.0.0 --num-gpus 4` 指定4块GPU。
 
 ### 启动 OpenAI API Server
 
@@ -101,13 +102,13 @@ python -m fastchat.serve.model_worker --model-path /path/to/local_model --host 0
 python -m fastchat.serve.openai_api_server --host 0.0.0.0
 ```
 
-服务启动后，默认端口是 8000，可以通过 --port 参数来修改端口。
+服务启动后，默认端口是 `8000`，可以通过 `--port` 参数来修改端口。
 
 ![](img/6e5daa973d7d523b76af26a4f915612e.png)
 
 ## 使用OpenAI SDK
 
-使用 FastChat OpenAI API Server 的端点初始化
+使用 `FastChat OpenAI API Server` 的端点初始化
 
 ```
 import os

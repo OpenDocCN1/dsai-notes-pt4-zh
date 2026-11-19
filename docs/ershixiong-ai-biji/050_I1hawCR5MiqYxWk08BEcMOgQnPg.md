@@ -1,14 +1,15 @@
+
 # 指定代码，让 Cursor 告诉我 CSS 样式的作用
 
 > 来源：[https://qianniucity.feishu.cn/docx/TtnadZCdAoJvt1xkxi9cy5lFnlr](https://qianniucity.feishu.cn/docx/TtnadZCdAoJvt1xkxi9cy5lFnlr)
 
-**Q**：解释下这里面的属性
+## Q：解释下这里面的属性
 
 ```
 &lt;div className=&quot;w-full h-full md:text-4xl lg:text-5xl sm:text-3xl text-2xl flex flex-row items-start justify-start bg-background font-normal overflow-hidden p-16 pt-48&quot;&gt;
 ```
 
-A：让我为您解释这个 div 中的每个 Tailwind CSS 类的作用：
+## A：让我为您解释这个 `div` 中的每个 Tailwind CSS 类的作用：
 
 ```
 &lt;div className=&quot;
@@ -37,15 +38,11 @@ A：让我为您解释这个 div 中的每个 Tailwind CSS 类的作用：
 
 这些类组合在一起创建了一个：
 
-1.  全宽全高的容器
-
-1.  具有响应式文本大小的布局
-
-1.  使用 flex 布局进行内容定位
-
-1.  带有较大内边距的设计，特别是顶部有额外的空间
-
-1.  使用主题背景色的设计
+1. 全宽全高的容器
+2. 具有响应式文本大小的布局
+3. 使用 flex 布局进行内容定位
+4. 带有较大内边距的设计，特别是顶部有额外的空间
+5. 使用主题背景色的设计
 
 这种设置通常用于创建一个醒目的标题/预览区域，随着屏幕尺寸的变化而自适应调整。
 

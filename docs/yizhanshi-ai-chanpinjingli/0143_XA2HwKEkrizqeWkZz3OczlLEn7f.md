@@ -1,10 +1,11 @@
+
 # 3.1 生态 · 比赛
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/LbqXdp7yloQ0qnx0Q05cQyxRnOC](https://v11enp9ok1h.feishu.cn/docx/LbqXdp7yloQ0qnx0Q05cQyxRnOC)
 
-<https://v11enp9ok1h.feishu.cn/sync/PaIIdslbxsIJUIbkTfPcsMCFnph>
+`https://v11enp9ok1h.feishu.cn/sync/PaIIdslbxsIJUIbkTfPcsMCFnph`
 
-<https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie>
+`https://v11enp9ok1h.feishu.cn/sync/VztedzIoUstVPDb6RNMctK8Unie`
 
 智谱AI作为国内领先的大模型企业，始终致力于推动大模型在各个领域中的应用探索。
 

@@ -1,3 +1,4 @@
+
 # 直接推荐肝纤维化治疗药物？谷歌AI co-scientist医学验证实例出炉
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/IHdIdYS6mopfcqxpgMUcgqC7nde](https://v11enp9ok1h.feishu.cn/docx/IHdIdYS6mopfcqxpgMUcgqC7nde)
@@ -8,7 +9,7 @@
 
 AI co-scientist 是基于 Gemini 2.0 构建的，能够模拟科学方法背后的推理过程，可以发现新的、原创的知识，并根据先前的证据和特定的研究目标，制定出明显新颖的研究假设和提案。
 
-最近，斯坦福大学（Stanford University）的研究人员与 Google DeepMind、Google  Research 等合作，探索了 AI co-scientist 在肝脏纤维化疾病方面的应用，并提出的了新的治疗方案与药物。
+最近，斯坦福大学（Stanford University）的研究人员与 Google DeepMind、Google Research 等合作，探索了 AI co-scientist 在肝脏纤维化疾病方面的应用，并提出了新的治疗方案与药物。
 
 相关研究以「AI-assisted Drug Re-purposing for Human Liver Fibrosis」为题，于 2025 年 5 月 4 日发布在了 bioRxiv 预印平台。
 
@@ -42,7 +43,7 @@ AI co-scientist 推荐的药物中，其中一款是 FDA 批准的抗癌药物�
 
 ![](img/2931577db88bd4f2e6f0ce492de45893.png)
 
-研究人员在论文里表示，AI co-scientist 能够分析涵盖特定领域的海量科学文献，识别隐藏的联系，并提出可能催生新疗法的全新假设。值得注意的是，AI co-scientist 还能指导用于验证假设的研究步骤。
+研究人员在论文里表示，AI co-scientist 能够分析涵盖特定领域的海量科学文献，识别隐藏的联系，并提出可能催生新疗法的全新假设。不仅如此，AI co-scientist 还能指导用于验证假设的研究步骤。
 
 不过，由于生物医学研究的内在复杂性，AI 生成的假设仍然需要人类科学家进行严格的实验验证。
 

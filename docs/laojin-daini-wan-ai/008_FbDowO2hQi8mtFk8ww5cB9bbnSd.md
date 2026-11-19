@@ -1,24 +1,17 @@
-# Commands系统完整指南：从Slash命令到自定义命令的全面精通
-
-> 来源：[https://my.feishu.cn/docx/Anr3dv0PgoX5QgxXI0AcbfWmnAd](https://my.feishu.cn/docx/Anr3dv0PgoX5QgxXI0AcbfWmnAd)
 
 # Commands系统完整指南：从Slash命令到自定义命令的全面精通
+
+> 来源：https://my.feishu.cn/docx/Anr3dv0PgoX5QgxXI0AcbfWmnAd
 
 > **课程信息**
 
 +   **作者**：老金
-
 +   **预计学时**：4-6小时
-
 +   **难度等级**：⭐⭐ 入门级
-
 +   **更新日期**：2026年3月
-
 +   **适用版本**：Claude Code v2.1+（验证于2026-03-18）
-
-+   **信息来源**：[官方文档](https://docs.anthropic.com/en/docs/claude-code/slash-commands) | Cla[ude ](https://www.anthropic.com/engineering/claude-code-best-practices)Command Suite | 最佳实践
-
-+   **前置要求**：已完成Claude Code安装和基础使用
++   **信息来源**：[官方文档](https://docs.anthropic.com/en/docs/claude-code/slash-commands) | [Claude Command Suite](https://www.anthropic.com/engineering/claude-code-best-practices) | 最佳实践
++   **前置要求**：已完成`claude`安装和基础使用
 
 ---
 
@@ -26,25 +19,20 @@
 
 完成本课学习后，你将能够：
 
-1.  **理解Commands本质**：掌握Slash命令就是Markdown提示词的核心概念
+1.  理解`Commands`本质：掌握Slash命令就是Markdown提示词的核心概念
+2.  5分钟创建第一个命令：从零开始创建并运行自定义命令
+3.  掌握frontmatter配置：使用`description`、`allowed-tools`、`model`等高级配置
+4.  精通`$ARGUMENTS`参数：接收和解析用户输入参数
+5.  组合命令构建工作流：将多个命令串联成自动化流程
+6.  排查命令故障：独立解决90%的常见配置和执行问题
 
-1.  **5分钟创建第一个命令**：从零开始创建并运行自定义命令
-
-1.  **掌握frontmatter配置**：使用description、allowed-tools、model等高级配置
-
-1.  **精通$ARGUMENTS参数**：接收和解析用户输入参数
-
-1.  **组合命令构建工作流**：将多个命令串联成自动化流程
-
-1.  **排查命令故障**：独立解决90%的常见配置和执行问题
-
-> **前置知识****：本教程假设你**已掌握02教程中的30+内置命令用法，重点讲解自定义命令开发。
+> **前置知识**：本教程假设你已掌握02教程中的30+内置命令用法，重点讲解自定义命令开发。
 
 ---
 
 ## 学习路径导航（先看这里！）
 
-> **根据你的情况选择学习路径**：这是一篇长教程，不用全看！根据你的目标选择路径。
+> 根据你的情况选择学习路径：这是一篇长教程，不用全看！根据你的目标选择路径。
 
 ### 路径A：5分钟快速上手
 
@@ -59,27 +47,20 @@
 
 **5分钟后你能达到**：成功创建第一个自定义命令并运行
 
----
-
 ### 路径B：完整学习（3-4小时）
 
-**适合人群**：想系统掌握Commands系统，成为命令开发高手
+**适合人群**：想系统掌握`Commands`系统，成为命令开发高手
 
 **学习顺序**：从头到尾所有章节
 
 **建议分段学习**：
 
 +   第1天（30分钟）：第1-3部分（简介+快速开始+内置命令速查）
-
 +   第2天（1.5小时）：第4部分（自定义命令开发）⭐ 核心内容
-
 +   第3天（1小时）：第5部分（高级用法）
-
 +   第4天（0.5小时）：第6-7部分（FAQ+附录）
 
-> **注意****：内置命令的详**细用法已在「02-基础使用完整指南」中讲解，本教程重点是自定义命令开发！
-
----
+> **注意**：内置命令的详细用法已在「02-基础使用完整指南」中讲解，本教程重点是自定义命令开发！
 
 ### 路径C：问题速查（5分钟）
 
@@ -94,42 +75,53 @@
 
 **使用方法**：
 
-1.  按 Ctrl + F 搜索你的问题关键词
-
-1.  找到对应的Q&A
-
-1.  按步骤解决
-
----
+1.  按`Ctrl + F`搜索你的问题关键词
+2.  找到对应的Q&A
+3.  按步骤解决
 
 ### 路径D：专项学习（30-60分钟/主题）
 
 **适合人群**：已经会基础命令，想深入某个功能
 
 | 想学什么 | 看哪几节 | 预计时间 |
+
 | --- | --- | --- |
-| **frontmatter配置** | 第4.3节 | 30分钟 |
-| **参数处理** | 第4.4节 | 30分钟 |
-| **工具调用** | 第4.5节 | 45分钟 |
-| **命令组合** | 第5.2节 | 30分钟 |
-| **社区命令库** | 第5.4节 | 20分钟 |
+
+| `frontmatter`配置 | 第4.3节 | 30分钟 |
+
+| 参数处理 | 第4.4节 | 30分钟 |
+
+| 工具调用 | 第4.5节 | 45分钟 |
+
+| 命令组合 | 第5.2节 | 30分钟 |
+
+| 社区命令库 | 第5.4节 | 20分钟 |
 
 ---
 
 ## 术语表（小白必读）
 
-**在开始之前，先了解**这些关键术语。用生活类比帮助理解：
+在开始之前，先了解这些关键术语。用生活类比帮助理解：
 
 | 术语 | 英文全称 | 通俗解释 | 生活类比 |
+
 | --- | --- | --- | --- |
-| **Slash命令** | Slash Commands | 以&quot;/&quot;开头的快捷指令 | 手机快捷方式（一点就打开App） |
-| **自定义命令** | Custom Commands | 你自己创建的命令 | 自己设置的手机快捷方式 |
-| **内置命令** | Built-in Commands | Claude Code自带的命令 | 手机出厂预装的App |
-| **frontmatter** | - | 命令文件开头的配置区（YAML格式，见下方说明） | 书的封面信息（书名、作者等） |
-| **$ARGUMENTS** | - | 接收用户输入参数的变量 | 快递单上的&quot;收件人&quot;空格 |
-| **allowed-tools** | - | 允许命令使用的工具列表 | 工具箱（限定可用的工具） |
-| **命令作用域** | Command Scope | 命令生效的范围（项目级/用户级） | 门禁卡（有的只能开一个门，有的能开所有门） |
-| **命令命名空间** | Namespace | 命令的分组前缀 | 文件夹分类（/dev:xxx、/test:xxx） |
+
+| `Slash命令` | Slash Commands | 以`/`开头的快捷指令 | 手机快捷方式（一点就打开App） |
+
+| `自定义命令` | Custom Commands | 你自己创建的命令 | 自己设置的手机快捷方式 |
+
+| `内置命令` | Built-in Commands | Claude Code自带的命令 | 手机出厂预装的App |
+
+| `frontmatter` | - | 命令文件开头的配置区（YAML格式，见下方说明） | 书的封面信息（书名、作者等） |
+
+| `$ARGUMENTS` | - | 接收用户输入参数的变量 | 快递单上的`收件人`空格 |
+
+| `allowed-tools` | - | 允许命令使用的工具列表 | 工具箱（限定可用的工具） |
+
+| 命令作用域 | Command Scope | 命令生效的范围（项目级/用户级） | 门禁卡（有的只能开一个门，有的能开所有门） |
+
+| 命令命名空间 | Namespace | 命令的分组前缀 | 文件夹分类（`/dev:xxx`、`/test:xxx`） |
 
 ### 补充说明：小白必看的几个概念
 
@@ -148,23 +140,20 @@ skills:                 # skills是一个列表
 
 **生活类比**：YAML就像你的个人简历表格，"姓名: 张三"这种格式，人能看懂，电脑也能读懂。
 
-**2. ****~**** 符号是什么？**
+**2. `~` 符号是什么？**
 
-~（波浪号）是你的"用户主目录"的简写：
+`~`（波浪号）是你的"用户主目录"的简写：
 
-+   **Windows**：~ = C:\Users\你的用户名（比如 C:\Users\admin）
++   **Windows**：`~` = `C:\Users\你的用户名`（比如 `C:\Users\admin`）
++   **macOS**：`~` = `/Users/你的用户名`
++   **Linux**：`~` = `/home/你的用户名`
 
-+   **macOS**：~ = /Users/你的用户名
+**示例**：`~/.claude/commands/` 的意思是：
 
-+   **Linux**：~ = /home/你的用户名
++   Windows → `C:\Users\admin\.claude\commands\`
++   macOS → `/Users/laojin/.claude/commands/`
 
-**示例**：~/.claude/commands/ 的意思是：
-
-+   Windows → C:\Users\admin\.claude\commands\
-
-+   macOS → /Users/laojin/.claude/commands/
-
-3. heredoc语法是什么？
+**3. heredoc语法是什么？**
 
 heredoc是一种"多行文本写入"的语法，可以一次性把多行内容写入文件，不用一行一行写。
 
@@ -173,7 +162,7 @@ heredoc是一种"多行文本写入"的语法，可以一次性把多行内容�
 > 如果你已经在Claude Code里，根本不需要学heredoc，直接说人话让Claude帮你创建文件就行：
 
 ```
-帮我创建文件 .claude/commands/hello.md，内容是：
+帮我创建文件 `.claude/commands/hello.md`，内容是：
 # 问候命令
 你好！请问候用户：$ARGUMENTS
 ```
@@ -183,17 +172,17 @@ heredoc是一种"多行文本写入"的语法，可以一次性把多行内容�
 **PowerShell终端版本**（在Windows PowerShell窗口里用）：
 
 ```
-@&#x27;
+@'
 这里是第一行
 这里是第二行
 这里是第三行
-&#x27;@ | Out-File -FilePath &quot;文件路径&quot;
+'@ | Out-File -FilePath "文件路径"
 ```
 
 **Bash终端版本**（在macOS/Linux终端里用）：
 
 ```
-cat &gt; 文件路径 &lt;&lt; &#x27;EOF&#x27;
+cat > 文件路径 << 'EOF'
 这里是第一行
 这里是第二行
 这里是第三行
@@ -210,12 +199,11 @@ EOF
 
 ### 1.1 什么是Slash命令
 
-> **一句话理解**：Slash命令就是Claude Code的"快捷方式"，输入 /命令名就能触发预设的操作。
+> **一句话理解**：Slash命令就是Claude Code的"快捷方式"，输入`/命令名`就能触发预设的操作。
 
 **生活类比**：
 
 +   **没有Slash命令**：每次点外卖都要重新输入地址、选择口味、备注
-
 +   **有Slash命令**：保存一个"我的常用订单"，一键下单
 
 **核心概念**（官方文档验证）：
@@ -226,11 +214,11 @@ EOF
 命令内容 = Markdown文件的内容（作为提示词注入）
 参数 = $ARGUMENTS变量接收用户输入
 
-当你输入 /write AI教程
+当你输入 `/write AI教程`
 Claude Code做的事：
-1. 找到 .claude/commands/write.md 文件
+1. 找到 `.claude/commands/write.md` 文件
 2. 读取文件内容作为提示词
-3. 把&quot;AI教程&quot;赋值给 $ARGUMENTS
+3. 把`AI教程`赋值给 `$ARGUMENTS`
 4. 执行这个提示词
 ```
 
@@ -239,10 +227,14 @@ Claude Code做的事：
 Claude Code的命令分为三大类：
 
 | 类型 | 来源 | 存放位置 | 特点 |
+
 | --- | --- | --- | --- |
+
 | **内置命令** | Claude Code官方 | 程序内部 | 不可修改，核心功能 |
-| **自定义命令** | 你自己创建 | .claude/commands/ | 完全可控，个性化 |
-| **用户级命令** | 你自己创建（全局） | ~/.claude/commands/ | 所有项目共享 |
+
+| **自定义命令** | 你自己创建 | `.claude/commands/` | 完全可控，个性化 |
+
+| **用户级命令** | 你自己创建（全局） | `~/.claude/commands/` | 所有项目共享 |
 
 **命令来源决策树**：
 
@@ -250,7 +242,7 @@ Claude Code的命令分为三大类：
 你需要什么功能？
     │
     ├── 会话管理、系统诊断？
-    │       └── 用内置命令（/clear、/doctor等）
+    │       └── 用内置命令（`/clear`、`/doctor`等）
     │
     ├── 项目特定的工作流？
     │       └── 创建项目级自定义命令
@@ -282,7 +274,7 @@ Claude Code的命令分为三大类：
 **有了Commands之后**：
 
 ```
-你：/write AI工具
+你：`/write AI工具`
 
 Claude自动知道：
 - 风格要接地气
@@ -296,8 +288,10 @@ Claude自动知道：
 
 **Commands的核心价值**：
 
-| 对比维度 | 手动输入 | 使用Commands |
+| 对比维度 | 手动输入 | 使用`Commands` |
+
 | --- | --- | --- |
+
 | **效率** | 每次重复输入 | 一次配置，永久使用 |
 | **一致性** | 每次可能遗漏要求 | 标准化执行 |
 | **可复用** | 无法分享 | 团队共享、社区贡献 |
@@ -322,7 +316,7 @@ Windows系统（PowerShell）：
 cd C:\你的项目路径
 
 # 创建commands目录
-New-Item -ItemType Directory -Path &quot;.claude\commands&quot; -Force
+New-Item -ItemType Directory -Path ".claude\commands" -Force
 ```
 
 **macOS/Linux系统：**
@@ -345,14 +339,14 @@ ls .claude/commands
 
 #### 步骤2：创建最简单的命令文件
 
-**创建文件 **.claude/commands/hello.md：
+**创建文件 `.claude/commands/hello.md`：**
 
-> 💡 你**有两种选择：**
+> 💡 你有两种选择：
 
 > 选择A：在Claude Code对话框里说人话（推荐新手）
 
 ```
-帮我创建文件 .claude/commands/hello.md，内容是：
+帮我创建文件 `.claude/commands/hello.md`，内容是：
 
 # 问候命令
 
@@ -360,7 +354,7 @@ ls .claude/commands
 
 用户想要问候的对象是：$ARGUMENTS
 
-如果没有提供名字，请使用&quot;朋友&quot;作为默认称呼。
+如果没有提供名字，请使用"朋友"作为默认称呼。
 
 请用热情友好的方式问候，并询问今天可以帮助什么。
 ```
@@ -374,30 +368,30 @@ ls .claude/commands
 Windows（PowerShell终端）：
 
 ```
-@&#x27;
+@'
 # 问候命令
 
 你好！我是你的AI助手。
 
 用户想要问候的对象是：$ARGUMENTS
 
-如果没有提供名字，请使用&quot;朋友&quot;作为默认称呼。
+如果没有提供名字，请使用"朋友"作为默认称呼。
 
 请用热情友好的方式问候，并询问今天可以帮助什么。
-&#x27;@ | Out-File -FilePath &quot;.claude\commands\hello.md&quot; -Encoding utf8
+'@ | Out-File -FilePath ".claude\commands\hello.md" -Encoding utf8
 ```
 
 macOS/Linux（终端）：
 
 ```
-cat &gt; .claude/commands/hello.md &lt;&lt; &#x27;EOF&#x27;
+cat > .claude/commands/hello.md << 'EOF'
 # 问候命令
 
 你好！我是你的AI助手。
 
 用户想要问候的对象是：$ARGUMENTS
 
-如果没有提供名字，请使用&quot;朋友&quot;作为默认称呼。
+如果没有提供名字，请使用"朋友"作为默认称呼。
 
 请用热情友好的方式问候，并询问今天可以帮助什么。
 EOF
@@ -415,7 +409,7 @@ claude
 **在交互模式中输入**：
 
 ```
-You: /hello 张三
+/hello 张三
 ```
 
 **预期结果**：
@@ -430,7 +424,7 @@ You: /hello 张三
 **再测试无参数情况**：
 
 ```
-You: /hello
+/hello
 ```
 
 **预期结果**：
@@ -445,25 +439,22 @@ You: /hello
 
 **你刚才完成了什么？**
 
-1.  创建了命令目录 .claude/commands/
-
-1.  编写了第一个命令文件 hello.md
-
-1.  使用 $ARGUMENTS 接收参数
-
-1.  成功运行命令并看到效果
+1.  创建了命令目录 `.claude/commands/`
+2.  编写了第一个命令文件 `hello.md`
+3.  使用 `$ARGUMENTS` 接收参数
+4.  成功运行命令并看到效果
 
 **核心要点回顾**：
 
 ```
 命令文件 = Markdown文件
 命令名 = 文件名（不含.md）
-参数 = $ARGUMENTS 变量
+参数 = `$ARGUMENTS` 变量
 
-/hello 张三
+`/hello 张三`
   │      │
-  │      └── $ARGUMENTS = &quot;张三&quot;
-  └── 读取 hello.md
+  │      └── `$ARGUMENTS` = "张三"
+  └── 读取 `hello.md`
 ```
 
 ---
@@ -472,49 +463,81 @@ You: /hello
 
 > **本节说明**：内置命令的详细用法已在「02-基础使用完整指南」第四部分讲解过，这里提供速查表方便查阅。
 
-> **详细教程**：请回顾「02-基础使用完整指南.md」→ 第四部分：Slash命令大全
+> **详细教程**：请回顾「`02-基础使用完整指南.md`」→ 第四部分：Slash命令大全
 
 ### 内置命令速查表
 
 | 分类 | 命令 | 功能 | 常用场景 | 重要 |
+
 | --- | --- | --- | --- | --- |
-| **会话管理** | /clear | 清空对话历史 | 开始新任务 | ⭐ |
-|  | /compact | 智能压缩对话 | Token超60%时 | ⭐ |
-|  | /resume | 恢复历史会话 | 继续之前的工作 | ⭐ |
-|  | /export | 导出对话记录 | 保存重要对话 |  |
-|  | /rename | 重命名会话 | 整理会话列表 |  |
-|  | /branch | 创建会话分支 | 探索不同方案 |  |
-| **上下文控制** | /context | 查看Token使用 | 监控上下文 | ⭐ |
-|  | /cost | 查看费用统计 | 成本控制 |  |
-|  | /model | 切换AI模型 | 按需选模型 | ⭐ |
-|  | /effort | 推理深度控制 | 调节AI思考深度 | ⭐ |
-|  | /usage | 账户使用量 | 查看配额 |  |
-| **项目配置** | /init | 初始化CLAUDE.md | 新项目配置 | ⭐ |
-|  | /memory | 编辑记忆文件 | 添加项目规则 |  |
-|  | /permissions | 管理权限设置 | 安全控制 |  |
-|  | /add-dir | 添加工作目录 | 跨目录操作 | ⭐ |
-| **开发辅助** | /review | 代码审查 | 提交前检查 |  |
-|  | /todos | 查看待办事项 | 任务追踪 |  |
-|  | /rewind | 回退检查点 | 撤销修改 | ⭐ |
-| **诊断工具** | /doctor | 系统健康检查 | 排查问题 |  |
-|  | /status | 完整状态信息 | 环境确认 |  |
-|  | /stats | 使用统计 | 习惯分析 |  |
-| **MCP相关** | /mcp | 管理MCP连接 | 外部工具 | ⭐ |
-|  | /hooks | 管理Hooks | 自动化触发 | ⭐ |
-| **其他** | /help | 显示帮助 | 快速查命令 | ⭐ |
-|  | /release-notes | 更新日志 | 查看新功能 |  |
-|  | /loop | 定时循环执行 | 监控部署状态 | ⭐ |
-|  | /sandbox | 沙箱隔离模式 | 安全执行 |  |
-|  | /color | 会话颜色设置 | 个性化 |  |
-|  | /copy | 复制AI回复 | 分享内容 |  |
 
-> 💡 提**示：**输入 / 然后按 Tab 键可以查看所有可用命令。
+| **会话管理** | `/clear` | 清空对话历史 | 开始新任务 | ⭐ |
 
-### v2.1.69+ 新增命令详解 🆕
+|  | `/compact` | 智能压缩对话 | Token超60%时 | ⭐ |
+
+|  | `/resume` | 恢复历史会话 | 继续之前的工作 | ⭐ |
+
+|  | `/export` | 导出对话记录 | 保存重要对话 |  |
+
+|  | `/rename` | 重命名会话 | 整理会话列表 |  |
+
+|  | `/branch` | 创建会话分支 | 探索不同方案 |  |
+
+| **上下文控制** | `/context` | 查看Token使用 | 监控上下文 | ⭐ |
+
+|  | `/cost` | 查看费用统计 | 成本控制 |  |
+
+|  | `/model` | 切换AI模型 | 按需选模型 | ⭐ |
+
+|  | `/effort` | 推理深度控制 | 调节AI思考深度 | ⭐ |
+
+|  | `/usage` | 账户使用量 | 查看配额 |  |
+
+| **项目配置** | `/init` | 初始化`CLAUDE.md` | 新项目配置 | ⭐ |
+
+|  | `/memory` | 编辑记忆文件 | 添加项目规则 |  |
+
+|  | `/permissions` | 管理权限设置 | 安全控制 |  |
+
+|  | `/add-dir` | 添加工作目录 | 跨目录操作 | ⭐ |
+
+| **开发辅助** | `/review` | 代码审查 | 提交前检查 |  |
+
+|  | `/todos` | 查看待办事项 | 任务追踪 |  |
+
+|  | `/rewind` | 回退检查点 | 撤销修改 | ⭐ |
+
+| **诊断工具** | `/doctor` | 系统健康检查 | 排查问题 |  |
+
+|  | `/status` | 完整状态信息 | 环境确认 |  |
+
+|  | `/stats` | 使用统计 | 习惯分析 |  |
+
+| **MCP相关** | `/mcp` | 管理MCP连接 | 外部工具 | ⭐ |
+
+|  | `/hooks` | 管理`Hooks` | 自动化触发 | ⭐ |
+
+
+
+| 其他 | `/help` | 显示帮助 | 快速查命令 | ⭐ |
+
+|  | `/release-notes` | 更新日志 | 查看新功能 |  |
+
+|  | `/loop` | 定时循环执行 | 监控部署状态 | ⭐ |
+
+|  | `/sandbox` | 沙箱隔离模式 | 安全执行 |  |
+
+|  | `/color` | 会话颜色设置 | 个性化 |  |
+
+|  | `/copy` | 复制AI回复 | 分享内容 |  |
+
+> 💡 提示：输入 `/` 然后按 Tab 键可以查看所有可用命令。
+
+## v2.1.69+ 新增命令详解 🆕
 
 以下命令是 Claude Code v2.1.69-v2.1.78 版本新增的功能：
 
-#### /loop - 定时循环执行
+### `/loop` - 定时循环执行
 
 **一句话理解**：就像设了一个"定时闹钟"——每隔一段时间自动执行你指定的任务。
 
@@ -524,21 +547,21 @@ You: /hello
 /loop 1h check for updates        # 每1小时检查更新
 ```
 
-**语法**：/loop <时间间隔> <提示词>
+**语法**：`/loop <时间间隔> <提示词>`
 
 **时间格式**：数字 + 单位（s秒 / m分钟 / h小时）
 
 **注意事项**：
 
-+   只在REPL空闲时触发（不会打断你当前的工作）
+- 只在REPL空闲时触发（不会打断你当前的工作）
 
-+   循环任务**3天后自动过期**，防止遗忘的任务持续运行
+- 循环任务3天后自动过期，防止遗忘的任务持续运行
 
-+   使用 Ctrl + C 可以停止当前循环
+- 使用 Ctrl + C 可以停止当前循环
 
-> 💡 实**用场景：**监控CI/CD部署进度、定期检查构建状态、轮询外部服务健康状况。
+> 💡 实用场景：监控CI/CD部署进度、定期检查构建状态、轮询外部服务健康状况。
 
-#### /effort - 推理深度控制
+### `/effort` - 推理深度控制
 
 **一句话理解**：调整Claude的"思考深度"——简单问题快速回答，复杂问题深入分析。
 
@@ -550,14 +573,18 @@ You: /hello
 ```
 
 | 级别 | 符号 | Token消耗 | 适用场景 |
+
 | --- | --- | --- | --- |
-| low | ○ | 最少 | 简单问答、格式转换 |
-| medium | ◐ | 中等 | 日常开发、代码修改 |
-| high | ● | 较多 | 架构设计、复杂调试 |
 
-> 💡 省**钱技巧：**批量处理简单任务时切换到 low，关键决策时切换到 high。
+| `low` | ○ | 最少 | 简单问答、格式转换 |
 
-#### /sandbox - 沙箱隔离模式
+| `medium` | ◐ | 中等 | 日常开发、代码修改 |
+
+| `high` | ● | 较多 | 架构设计、复杂调试 |
+
+> 💡 省钱技巧：批量处理简单任务时切换到 `low`，关键决策时切换到 `high`。
+
+### `/sandbox` - 沙箱隔离模式
 
 **一句话理解**：给Claude套上"安全围栏"——限制它能读写哪些文件、能不能访问网络。
 
@@ -567,45 +594,45 @@ You: /hello
 
 **隔离能力**：
 
-+   **文件系统隔离**：限制可读写的目录范围
+- **文件系统隔离**：限制可读写的目录范围
 
-+   **网络隔离**：限制外部网络访问
+- **网络隔离**：限制外部网络访问
 
-+   **进程隔离**：OS级别的沙箱保护
+- **进程隔离**：OS级别的沙箱保护
 
-在 settings.json 中可以精细配置：
+在 `settings.json` 中可以精细配置：
 
 ```
 {
-  &quot;sandbox&quot;: {
-    &quot;filesystem&quot;: {
-      &quot;allowWrite&quot;: [&quot;/tmp&quot;, &quot;./src&quot;],
-      &quot;allowRead&quot;: [&quot;./&quot;, &quot;/usr/lib&quot;],
-      &quot;denyRead&quot;: [&quot;.env&quot;, &quot;credentials.json&quot;]
+  "sandbox": {
+    "filesystem": {
+      "allowWrite": ["/tmp", "./src"],
+      "allowRead": ["./", "/usr/lib"],
+      "denyRead": [".env", "credentials.json"]
     }
   }
 }
 ```
 
-> ⚠️ **安全提示**：处理不信任的代码或敏感项目时，强烈建议启用沙箱模式。
+> ⚠️ 安全提示：处理不信任的代码或敏感项目时，强烈建议启用沙箱模式。
 
-#### /color - 会话颜色设置
+### `/color` - 会话颜色设置
 
 ```
 /color blue     # 设置会话窗口颜色为蓝色
 /color default  # 重置为默认颜色
 ```
 
-> 💡 多**窗口区分：**同时开多个Claude Code会话时，用不同颜色区分（比如：蓝色=前端、绿色=后端）。
+> 💡 多窗口区分：同时开多个Claude Code会话时，用不同颜色区分（比如：蓝色=前端、绿色=后端）。
 
-#### /copy N - 复制AI回复
+### `/copy N` - 复制AI回复
 
 ```
 /copy           # 复制最新一条AI回复到剪贴板
 /copy 3         # 复制第3条AI回复到剪贴板
 ```
 
-#### /branch - 会话分支
+### `/branch` - 会话分支
 
 ```
 /branch         # 从当前位置创建会话分支
@@ -613,7 +640,7 @@ You: /hello
 
 **一句话理解**：就像Git分支——在当前对话点"分叉"，探索不同方案而不影响原对话。
 
-> 💡 提**示：**这是原 /fork 命令的重命名版本。适合在关键决策点创建分支，分别尝试方案A和方案B。
+> 💡 提示：这是原 `/fork` 命令的重命名版本。适合在关键决策点创建分支，分别尝试方案A和方案B。
 
 ---
 
@@ -625,14 +652,14 @@ You: /hello
 
 ### 4.1 命令文件结构
 
-**一个完整的命令文件包含两个部**分：f**rontmatter**配置区 + Markdown正文。
+一个完整的命令文件包含两个部分：`frontmatter`配置区 + Markdown正文。
 
 **完整结构示例**：
 
 ```
 ---
 description: 公众号文章创作命令
-argument-hint: &lt;主题关键词&gt;
+argument-hint: <主题关键词>
 allowed-tools:
   - Read
   - Write
@@ -666,9 +693,12 @@ model: claude-sonnet-4-6
 #### 两种作用域
 
 | 作用域 | 存放位置 | 生效范围 | 适用场景 |
+
 | --- | --- | --- | --- |
-| **项目级** | .claude/commands/ | 仅当前项目 | 团队共享、项目特定 |
-| **用户级** | ~/.claude/commands/ | 所有项目 | 个人工具、通用模板 |
+
+| 项目级 | `.claude/commands/` | 仅当前项目 | 团队共享、项目特定 |
+
+| 用户级 | `~/.claude/commands/` | 所有项目 | 个人工具、通用模板 |
 
 #### 优先级规则
 
@@ -680,21 +710,21 @@ model: claude-sonnet-4-6
 3. 内置命令（最低）
 ```
 
-> ⚠️ **重要澄清**：核心系统命令（如 /clear、/help、/compact、/doctor 等）是**受保护的****，不能被自定义**命令覆盖。上述优先级规则仅适用于非核心内置命令。
+> ⚠️ 重要澄清：核心系统命令（如 `/clear`、`/help`、`/compact`、`/doctor` 等）是受保护的，不能被自定义命令覆盖。上述优先级规则仅适用于非核心内置命令。
 
 **示例**：
 
 假设存在：
 
-+   .claude/commands/review.md（项目级）
+- `.claude/commands/review.md`（项目级）
 
-+   ~/.claude/commands/review.md（用户级）
+- `~/.claude/commands/review.md`（用户级）
 
-+   内置 /review 命令
+- 内置 `/review` 命令
 
-执行 /review 时，使用项目级的 review.md。
+执行 `/review` 时，使用项目级的 `review.md`。
 
-**但是**：创建 .**cl**aude/commands/clear.md 不会覆盖内置的 /clear 命令。
+**但是**：创建 `.claude/commands/clear.md` 不会覆盖内置的 `/clear` 命令。
 
 #### 目录结构建议
 
@@ -712,11 +742,11 @@ model: claude-sonnet-4-6
     └── generate-tests.md
 ```
 
-> **命名空间**：使用子目录时，命令名变成 /dev:code-review 格式。
+> **命名空间**：使用子目录时，命令名变成 `/dev:code-review` 格式。
 
-### 4.3 frontmatter配置详解
+### 4.3 `frontmatter`配置详解
 
-frontmatter是命令文件开头的YAML配置区，用 --- 包围。
+`frontmatter`是命令文件开头的YAML配置区，用 `---` 包围。
 
 #### 所有可用配置项
 
@@ -728,7 +758,7 @@ frontmatter是命令文件开头的YAML配置区，用 --- 包围。
 description: 这是命令的一句话描述
 
 # 参数提示（输入/命令后显示的占位符）
-argument-hint: &lt;必需参数&gt; [可选参数]
+argument-hint: <必需参数> [可选参数]
 
 # 允许使用的工具（限制命令可调用的工具）
 allowed-tools:
@@ -753,27 +783,27 @@ model: claude-sonnet-4-6
 ---
 ```
 
-> ⚠️ **注意**：version 和 author 不是Claude Code官方支持的frontmatter字段，但你可以添加它们用于自己的管理目的（Claude Code会忽略未知字段）。
+> ⚠️ 注意：`version` 和 `author` 不是Claude Code官方支持的`frontmatter`字段，但你可以添加它们用于自己的管理目的（Claude Code会忽略未知字段）。
 
 #### 配置项详解
 
-1. description（命令描述）
+1. `description`（命令描述）
 
 ```
 description: AI热点自动扫描 - 抓取今日AI热点并评估爆款潜力
 ```
 
-作用：在 /help 和Tab补全时显示，帮助用户了解命令功能。
+作用：在 `/help` 和Tab补全时显示，帮助用户了解命令功能。
 
-2. argument-hint（参数提示）
+2. `argument-hint`（参数提示）
 
 ```
-argument-hint: &lt;主题&gt; [--style=formal] [--length=2000]
+argument-hint: <主题> [--style=formal] [--length=2000]
 ```
 
-作用：输入 /命令名 后显示的占位符提示。
+作用：输入 `/命令名` 后显示的占位符提示。
 
-3. allowed-tools（允许的工具）
+3. `allowed-tools`（允许的工具）
 
 ```
 allowed-tools:
@@ -787,22 +817,34 @@ allowed-tools:
 **可用工具列表**：
 
 | 工具名 | 功能 | 适用场景 | 通俗解释 |
+
 | --- | --- | --- | --- |
-| Read | 读取文件 | 分析代码、读取配置 | 打开文件看内容 |
-| Write | 写入文件 | 创建文件、保存结果 | 新建文件并写入 |
-| Edit | 编辑文件 | 修改现有代码 | 修改已有文件的内容 |
-| Bash | 执行命令 | 运行脚本、Git操作 | 在终端运行命令 |
-| WebSearch | 网络搜索 | 获取最新信息 | 像Google一样搜网页 |
-| WebFetch | 抓取网页 | 获取网页内容 | 下载网页内容来分析 |
-| Glob | 按名称查找文件 | 批量查找特定类型的文件 | 比如找所有.md文件：*.md |
-| Grep | 按内容搜索文件 | 在代码中搜索关键词 | 比如找包含&quot;TODO&quot;的代码 |
-| Task | 启动子代理 | 并行执行复杂任务 | 派出分身帮你干活 |
-| NotebookEdit | 编辑Jupyter笔记本 | 数据分析、机器学习 | 编辑.ipynb文件 |
-| TodoWrite | 任务管理 | 跟踪待办事项 | 创建和更新待办清单 |
 
-> 💡 提**示：**最常用的工具是 Read、Write、Edit、Bash、WebSearch。其他工具按需使用。
+| `Read` | 读取文件 | 分析代码、读取配置 | 打开文件看内容 |
 
-**4. model（指定模型）**
+| `Write` | 写入文件 | 创建文件、保存结果 | 新建文件并写入 |
+
+| `Edit` | 编辑文件 | 修改现有代码 | 修改已有文件的内容 |
+
+| `Bash` | 执行命令 | 运行脚本、Git操作 | 在终端运行命令 |
+
+| `WebSearch` | 网络搜索 | 获取最新信息 | 像Google一样搜网页 |
+
+| `WebFetch` | 抓取网页 | 获取网页内容 | 下载网页内容来分析 |
+
+| `Glob` | 按名称查找文件 | 批量查找特定类型的文件 | 比如找所有`.md`文件：`*.md` |
+
+| `Grep` | 按内容搜索文件 | 在代码中搜索关键词 | 比如找包含`"TODO"`的代码 |
+
+| `Task` | 启动子代理 | 并行执行复杂任务 | 派出分身帮你干活 |
+
+| `NotebookEdit` | 编辑Jupyter笔记本 | 数据分析、机器学习 | 编辑`.ipynb`文件 |
+
+| `TodoWrite` | 任务管理 | 跟踪待办事项 | 创建和更新待办清单 |
+
+> 💡 提示：最常用的工具是 `Read`、`Write`、`Edit`、`Bash`、`WebSearch`。其他工具按需使用。
+
+4. `model`（指定模型）
 
 ```
 model: claude-opus-4-6
@@ -810,21 +852,21 @@ model: claude-opus-4-6
 
 作用：强制使用指定模型执行命令（覆盖当前会话模型）。
 
-5. disable-model-invocation（禁用模型调用）
+5. `disable-model-invocation`（禁用模型调用）
 
 ```
 disable-model-invocation: true
 ```
 
-作用：当设置为true时，命令只进行简单的文本替换，不会触发AI模型推理。
+作用：当设置为`true`时，命令只进行简单的文本替换，不会触发AI模型推理。
 
 **适用场景**：
 
-+   纯文本模板命令（快速插入固定内容）
+- 纯文本模板命令（快速插入固定内容）
 
-+   变量替换命令（$ARGUMENTS 直接替换）
+- 变量替换命令（`$ARGUMENTS` 直接替换）
 
-+   节省Token和响应时间
+- 节省Token和响应时间
 
 **示例**：
 
@@ -837,11 +879,11 @@ disable-model-invocation: true
 © 2025 $ARGUMENTS. All rights reserved.
 ```
 
-执行 /copyright 老金 会直接输出 © 2025 老金. All rights reserved.，不经过AI处理。
+执行 `/copyright 老金` 会直接输出 `© 2025 老金. All rights reserved.`，不经过AI处理。
 
-### 4.4 $ARGUMENTS参数处理
+### 4.4 `$ARGUMENTS`参数处理
 
-$ARGUMENTS 是Claude Code的内置变量，接收用户在命令后输入的所有内容。
+`$ARGUMENTS` 是Claude Code的内置变量，接收用户在命令后输入的所有内容。
 
 #### 基本用法
 
@@ -850,17 +892,17 @@ $ARGUMENTS 是Claude Code的内置变量，接收用户在命令后输入的所�
 
 用户要问候的对象是：$ARGUMENTS
 
-如果没有提供名字，使用&quot;朋友&quot;作为默认称呼。
+如果没有提供名字，使用"朋友"作为默认称呼。
 ```
 
 **调用示例**：
 
 ```
 /hello 张三
-→ $ARGUMENTS = &quot;张三&quot;
+→ $ARGUMENTS = "张三"
 
 /hello
-→ $ARGUMENTS = &quot;&quot;
+→ $ARGUMENTS = ""
 ```
 
 #### 多参数解析
@@ -869,11 +911,11 @@ $ARGUMENTS 是Claude Code的内置变量，接收用户在命令后输入的所�
 # 文章生成命令
 
 ## 参数格式
-$ARGUMENTS 格式：&lt;主题&gt; [风格] [字数]
+$ARGUMENTS 格式：<主题> [风格] [字数]
 
 解析规则：
 - 第一个参数：主题（必需）
-- 第二个参数：风格（可选，默认&quot;接地气&quot;）
+- 第二个参数：风格（可选，默认"接地气"）
 - 第三个参数：字数（可选，默认1500）
 
 ## 示例
@@ -892,15 +934,15 @@ $ARGUMENTS 格式：&lt;主题&gt; [风格] [字数]
 ## 输入验证
 首先检查 $ARGUMENTS：
 
-**如果为空**：
-提示用户：请提供文件路径，格式：/review &lt;文件路径&gt;
+情况1：参数为空
+提示用户：请提供文件路径，格式：/review <文件路径>
 终止执行
 
-**如果不是有效路径**：
+情况2：不是有效路径
 提示用户：路径无效，请检查文件是否存在
 终止执行
 
-**如果验证通过**：
+情况3：验证通过
 继续执行审查流程
 ```
 
@@ -916,31 +958,34 @@ $ARGUMENTS 格式：&lt;主题&gt; [风格] [字数]
 ### 步骤1：读取配置文件
 使用Read工具读取项目配置：
 ```
-Read(&quot;.claude/settings.json&quot;)
+
+```
+Read(".claude/settings.json")
 ```
 
 ### 步骤2：搜索TODO注释
 使用Grep搜索所有TODO：
+
 ```
-Grep(&quot;TODO|FIXME&quot;, path=&quot;src/&quot;, type=&quot;py&quot;)
+Grep("TODO|FIXME", path="src/", type="py")
 ```
 
 ### 步骤3：运行测试
 使用Bash执行测试命令：
+
 ```bash
 npm run test
-```
 ```
 
 #### MCP工具调用
 
-> 💡 什**么是MCP？**
+> 💡 什么是MCP？
 
 > MCP（Model Context Protocol）是Claude Code的"外部工具扩展系统"。
 
 > **通俗解释**：MCP就像手机的"应用商店"——你可以安装各种第三方工具（如搜索引擎、数据库查询、GitHub操作等），让Claude Code拥有更多能力。
 
-> **命名规则**：mcp__服务器名__工具名 比如 mcp__mcp-router__search 就是调用mcp-router服务器的search工具。
+> **命名规则**：`mcp__服务器名__工具名` 比如 `mcp__mcp-router__search` 就是调用mcp-router服务器的search工具。
 
 > **详细教程**：MCP的安装和配置请见「04-MCP集成完整指南」。
 
@@ -949,20 +994,22 @@ npm run test
 
 ### 搜索最新信息
 ```
+
+```
 mcp__mcp-router__search(
-    query=&quot;$ARGUMENTS 最新资讯&quot;,
-    search_service=&quot;google&quot;,
+    query="$ARGUMENTS 最新资讯",
+    search_service="google",
     max_results=10
 )
 ```
 
 ### 获取GitHub趋势
+
 ```
 mcp__mcp-router__trending(
-    search_service=&quot;github&quot;,
+    search_service="github",
     max_results=20
 )
-```
 ```
 
 ### 4.6 条件逻辑设计
@@ -976,17 +1023,17 @@ mcp__mcp-router__trending(
 
 根据 $ARGUMENTS 的内容判断执行路径：
 
-**情况1：参数包含&quot;深度&quot;或&quot;详细&quot;**
+情况1：参数包含"深度"或"详细"
 → 执行深度分析流程
 → 输出完整报告（3000字以上）
 → 包含数据图表
 
-**情况2：参数包含&quot;快速&quot;或&quot;简要&quot;**
+情况2：参数包含"快速"或"简要"
 → 执行快速分析
 → 输出简要报告（500字以内）
 → 只包含关键结论
 
-**情况3：其他情况（默认）**
+情况3：其他情况（默认）
 → 执行标准分析
 → 输出标准报告（1500字）
 → 包含主要发现和建议
@@ -1001,10 +1048,10 @@ mcp__mcp-router__trending(
 
 | 关键词 | 文章类型 | 使用模板 |
 |--------|----------|----------|
-| &quot;测评&quot; | 测评类 | templates/review.md |
-| &quot;教程&quot; | 教程类 | templates/tutorial.md |
-| &quot;降价&quot; | 降价类 | templates/discount.md |
-| &quot;对比&quot; | 对比类 | templates/comparison.md |
+| "测评" | 测评类 | templates/review.md |
+| "教程" | 教程类 | templates/tutorial.md |
+| "降价" | 降价类 | templates/discount.md |
+| "对比" | 对比类 | templates/comparison.md |
 | 其他 | 通用类 | templates/general.md |
 
 根据判断结果，加载对应模板。
@@ -1014,9 +1061,11 @@ mcp__mcp-router__trending(
 
 **目标**：创建一个完整的👸号写作命令
 
-**文件：**.claude/commands/write.md
+**文件：** `.claude/commands/write.md`
 
-#### frontmatter配置
+
+
+## frontmatter配置
 
 ```
 ---
@@ -1031,7 +1080,7 @@ allowed-tools:
 ---
 ```
 
-#### 角色定义和任务
+## 角色定义和任务
 
 ```
 # 公众号文章创作系统
@@ -1045,12 +1094,11 @@ allowed-tools:
 **主题**：$ARGUMENTS
 ```
 
-#### 执行流程
+## 执行流程
 
-**步骤1-2：选题检查和信息收集**
+### 步骤1-2：选题检查和信息收集
 
-```
-### 步骤1：选题可行性检查
+#### 步骤1：选题可行性检查
 首先判断选题是否适合写作：
 - 是否有足够的信息支撑？
 - 受众是否感兴趣？
@@ -1058,20 +1106,18 @@ allowed-tools:
 
 如果不适合，向用户说明原因并建议替代选题。
 
-### 步骤2：信息收集
-使用WebSearch搜索主题相关的最新信息：
-WebSearch(query=&quot;$ARGUMENTS 最新资讯 2025&quot;)
+#### 步骤2：信息收集
+使用`WebSearch`搜索主题相关的最新信息：
+`WebSearch(query=&quot;$ARGUMENTS 最新资讯 2025&quot;)`
 
 收集以下信息：
 - 核心概念和定义
 - 最新动态和更新
 - 用户痛点和需求
 - 实战案例和数据
-```
 
-**步骤3：构思大纲**
+### 步骤3：构思大纲
 
-```
 一、金句开头（1段）
    - 引发共鸣的场景描述
    - 或令人惊讶的数据/事实
@@ -1088,25 +1134,22 @@ WebSearch(query=&quot;$ARGUMENTS 最新资讯 2025&quot;)
 四、总结升华（1-2段）
    - 核心观点回顾
    - 行动号召
-```
 
-步骤4-6：撰写、保存、生成标题
+### 步骤4-6：撰写、保存、生成标题
 
-```
-### 步骤4：撰写文章
+#### 步骤4：撰写文章
 按照大纲撰写完整文章，注意：
 
 **风格要求**：说人话、用类比、多短句、口语化
 **格式要求**：标题≤30字、正文1500-2000字、段落≤150字
 
-### 步骤5：保存文章
-使用Write工具保存文章到 articles/drafts/[日期]_[主题].md
+#### 步骤5：保存文章
+使用`Write`工具保存文章到 `articles/drafts/[日期]_[主题].md`
 
-### 步骤6：生成标题
+#### 步骤6：生成标题
 为文章生成5个备选标题（包含数字、引发好奇心、≤30字）
-```
 
-#### 输出格式示例
+## 输出格式示例
 
 ```
 # [选定的标题]
@@ -1148,7 +1191,7 @@ You: /write Claude Code入门
 
 当命令放在子目录时，使用 目录名:命令名 的格式调用。
 
-**目录结构**：
+#### 目录结构
 
 ```
 .claude/commands/
@@ -1164,7 +1207,7 @@ You: /write Claude Code入门
     └── rollback.md       → /deploy:rollback
 ```
 
-**优点**：
+#### 优点
 
 +   命令分类清晰
 
@@ -1185,27 +1228,20 @@ You: /write Claude Code入门
 首先执行热点扫描，获取今日AI热点：
 ```
 
-执行 /hotspot 命令
+执行 `/hotspot` 命令
 
-```
-
-
-### 步骤2：选择写作主题
+#### 步骤2：选择写作主题
 从热点中选择一个适合的主题。
 
-### 步骤3：创作文章
+#### 步骤3：创作文章
 使用选定的主题执行写作：
-```
 
-执行 /write [选定的主题]
+执行 `/write [选定的主题]`
 
-```
-
-### 步骤4：质量检查
+#### 步骤4：质量检查
 文章完成后执行质量检查：
-```
 
-执行 /pre-check
+执行 `/pre-check`
 
 #### 创建工作流命令
 
@@ -1249,7 +1285,7 @@ argument-hint: &lt;热点关键词&gt;
 
 #### 将通用逻辑提取为模块
 
-**创建模块文件 **.claude/modules/writing-style.md：
+创建模块文件 `.claude/modules/writing-style.md`：
 
 ```
 # 写作风格规范
@@ -1272,7 +1308,7 @@ argument-hint: &lt;热点关键词&gt;
 - &quot;众所周知&quot;
 ```
 
-**在命令中引用模块**：
+#### 在命令中引用模块
 
 ```
 # 文章创作命令
@@ -1281,13 +1317,12 @@ argument-hint: &lt;热点关键词&gt;
 首先读取写作风格规范：
 ```
 
+```
 Read(".claude/modules/writing-style.md")
-
 ```
 
-## 步骤2：按规范创作
+#### 步骤2：按规范创作
 遵循加载的写作规范，创作文章...
-```
 
 ### 5.4 社区命令资源
 
@@ -1295,7 +1330,7 @@ Read(".claude/modules/writing-style.md")
 
 **地址**：https://github.com/qdhenry/Claude-Command-Suite
 
-**包含内容**：
+#### 包含内容
 
 +   148+ 专业命令
 
@@ -1303,7 +1338,7 @@ Read(".claude/modules/writing-style.md")
 
 +   完整的开发工作流
 
-**安装方法**：
+#### 安装方法
 
 ```
 # 克隆仓库
@@ -1313,21 +1348,21 @@ git clone https://github.com/qdhenry/Claude-Command-Suite.git
 cp Claude-Command-Suite/.claude/commands/dev/* .claude/commands/dev/
 ```
 
-**常用命令示例**：
+#### 常用命令示例
 
 | 命令 | 功能 |
 | --- | --- |
-| /dev:code-review | 代码审查 |
-| /dev:debug-error | 调试错误 |
-| /test:generate-test-cases | 生成测试用例 |
-| /security:security-audit | 安全审计 |
-| /deploy:prepare-release | 准备发布 |
+| `/dev:code-review` | 代码审查 |
+| `/dev:debug-error` | 调试错误 |
+| `/test:generate-test-cases` | 生成测试用例 |
+| `/security:security-audit` | 安全审计 |
+| `/deploy:prepare-release` | 准备发布 |
 
 #### Awesome Claude Code
 
 **地址**：https://github.com/hesreallyhim/awesome-claude-code
 
-**包含内容**：
+#### 包含内容
 
 +   社区精选命令
 
@@ -1339,9 +1374,9 @@ cp Claude-Command-Suite/.claude/commands/dev/* .claude/commands/dev/
 
 #### 命令不存在
 
-**症状**：Command not found: /my-command
+**症状**：Command not found: `/my-command`
 
-**排查步骤**：
+#### 排查步骤
 
 ```
 # 1. 检查文件是否存在
@@ -1363,7 +1398,7 @@ claude
 
 **症状**：命令触发了但执行出错
 
-**排查步骤**：
+#### 排查步骤
 
 ```
 # 1. 检查frontmatter格式
@@ -1381,7 +1416,7 @@ claude
 
 **症状**：命令行为异常
 
-**常见错误**：
+#### 常见错误
 
 ```
 # 错误1：缺少结束标记
@@ -1415,8 +1450,8 @@ Q1: 自定义命令文件放在哪里？
 
 | 作用域 | 位置 | 生效范围 |
 | --- | --- | --- |
-| 项目级 | .claude/commands/ | 仅当前项目 |
-| 用户级 | ~/.claude/commands/ | 所有项目 |
+| 项目级 | `.claude/commands/` | 仅当前项目 |
+| 用户级 | `~/.claude/commands/` | 所有项目 |
 
 ---
 
@@ -1431,9 +1466,9 @@ Q2: 命令名和文件名有什么关系？
 
 ---
 
-**Q3: 如何传递参数给命令？**
+Q3: 如何传递参数给命令？
 
-在命令后直接输入参数，用 $ARGUMENTS 接收：
+在命令后直接输入参数，用 `$ARGUMENTS` 接收：
 
 ```
 /write AI教程
@@ -1442,9 +1477,9 @@ Q2: 命令名和文件名有什么关系？
 
 ---
 
-**Q4: 支持多个参数吗？**
+Q4: 支持多个参数吗？
 
-支持！所有参数都在 $ARGUMENTS 中，需要在命令中自行解析：
+支持！所有参数都在 `$ARGUMENTS` 中，需要在命令中自行解析：
 
 ```
 ## 参数格式
@@ -1471,14 +1506,14 @@ Q6: allowed-tools有哪些可选值？
 
 | 工具 | 功能 |
 | --- | --- |
-| Read | 读取文件 |
-| Write | 写入文件 |
-| Edit | 编辑文件 |
-| Bash | 执行命令 |
-| WebSearch | 网络搜索 |
-| WebFetch | 抓取网页 |
-| Glob | 文件搜索 |
-| Grep | 内容搜索 |
+| `Read` | 读取文件 |
+| `Write` | 写入文件 |
+| `Edit` | 编辑文件 |
+| `Bash` | 执行命令 |
+| `WebSearch` | 网络搜索 |
+| `WebFetch` | 抓取网页 |
+| `Glob` | 文件搜索 |
+| `Grep` | 内容搜索 |
 
 ---
 
@@ -1504,13 +1539,13 @@ argument-hint: &lt;主题&gt; [--style=formal]
 ---
 ```
 
-输入 /write 后会显示 <主题> [--style=formal]。
+输入 `/write` 后会显示 <主题> [--style=formal]。
 
 ---
 
 Q9: 如何让命令在所有项目都可用？
 
-放在用户级目录：~/.claude/commands/
+放在用户级目录：`~/.claude/commands/`
 
 ---
 
@@ -1518,10 +1553,8 @@ Q10: 项目级和用户级命令同名怎么办？
 
 项目级优先。优先级顺序：
 
-1.  项目级 .claude/commands/
-
-1.  用户级 ~/.claude/commands/
-
+1.  项目级 `.claude/commands/`
+1.  用户级 `~/.claude/commands/`
 1.  内置命令
 
 ### 开发问题
@@ -1545,7 +1578,9 @@ Q12: 如何在命令中使用MCP工具？
 ## 搜索信息
 ```
 
+```
 mcp__mcp-router__search(query="$ARGUMENTS")
+```
 
 ---
 
@@ -1586,7 +1621,7 @@ Q15: 命令文件有大小限制吗？
 
 ### 故障排查
 
-**Q16: 命令不执行怎么办？**
+Q16: 命令不执行怎么办？
 
 检查清单：
 
@@ -1640,7 +1675,7 @@ You: /help
 
 **Q20: 如何分享命令给团队？**
 
-1.  将 .claude/commands/ 加入Git版本控制
+1.  将 `.claude/commands/` 加入Git版本控制
 
 1.  团队成员克隆/拉取后自动获得命令
 
@@ -1666,7 +1701,7 @@ git push
 
 **任务**：
 
-1.  创建 .claude/commands/greet.md
+1.  创建 `.claude/commands/greet.md`
 
 1.  实现以下功能：
 
@@ -1722,7 +1757,7 @@ argument-hint: &lt;姓名&gt;
 
 **任务**：
 
-1.  创建 .claude/commands/code-review.md
+1.  创建 `.claude/commands/code-review.md`
 
 1.  实现以下功能：
 
@@ -1759,12 +1794,9 @@ allowed-tools:
 如果 $ARGUMENTS 为空，提示用户提供文件路径。
 
 ### 步骤2：读取文件
-使用Read工具读取文件内容：
-```
+使用 Read 工具读取文件内容：
 
 Read("$ARGUMENTS")
-
-```
 
 ### 步骤3：执行审查
 从以下维度审查代码：
@@ -1792,7 +1824,6 @@ Read("$ARGUMENTS")
 ### 步骤4：输出报告
 
 ## 输出格式
-```
 
 # 代码审查报告
 
@@ -1813,6 +1844,7 @@ Read("$ARGUMENTS")
 代码亮点：
 
 +   [亮点1]
+```
 
 **测试**：
 
@@ -1824,23 +1856,21 @@ Read("$ARGUMENTS")
 
 **目标**：创建一个串联多个命令的工作流
 
-**任务**：
 
-1.  创建 .claude/commands/daily-flow.md
 
-1.  实现以下功能：
+## 任务
 
-+   调用热点扫描命令
+1. 创建 `.claude/commands/daily-flow.md`
 
-+   基于热点选择写作主题
+1. 实现以下功能：
 
-+   调用写作命令生成文章
+- 调用热点扫描命令
+- 基于热点选择写作主题
+- 调用写作命令生成文章
+- 调用质量检查命令
+- 输出完整工作报告
 
-+   调用质量检查命令
-
-+   输出完整工作报告
-
-**参考答案**：
+## 参考答案
 
 ```
 ---
@@ -1859,14 +1889,14 @@ allowed-tools:
 执行完整的每日内容创作流程。
 
 ## 参数
-可选热点关键词：$ARGUMENTS
+可选热点关键词：`$ARGUMENTS`
 
 ## 执行流程
 
 ### 阶段1：热点扫描
 执行热点扫描，获取今日AI热点。
 
-如果提供了关键词 $ARGUMENTS，则重点搜索相关热点。
+如果提供了关键词 `$ARGUMENTS`，则重点搜索相关热点。
 如果没有提供，则全面扫描。
 
 ### 阶段2：选题决策
@@ -1879,15 +1909,15 @@ allowed-tools:
 
 ### 阶段3：文章创作
 使用选定的主题执行写作：
-- 调用 /write [选定主题]
+- 调用 `/write [选定主题]`
 - 等待文章生成完成
 
 ### 阶段4：标题优化
-- 调用 /title-gen 生成更多标题候选
+- 调用 `/title-gen` 生成更多标题候选
 - 选择最佳标题
 
 ### 阶段5：质量检查
-- 调用 /pre-check 进行发布前检查
+- 调用 `/pre-check` 进行发布前检查
 - 如果有问题，进行修复
 - 直到检查通过
 
@@ -1895,7 +1925,7 @@ allowed-tools:
 输出工作报告：
 ```
 
-# 每日创作工作报告
+## 每日创作工作报告
 
 日期：[日期]
 
@@ -1907,29 +1937,29 @@ allowed-tools:
 
 文章：
 
-+   标题：[最终标题]
+- 标题：[最终标题]
 
-+   字数：[字数]
+- 字数：[字数]
 
-+   文件：[文件路径]
+- 文件：[文件路径]
 
 质量检查：
 
-+   AI腔检测：[分数]
+- AI腔检测：[分数]
 
-+   自然度：[分数]
+- 自然度：[分数]
 
-+   整体评分：[分数]
+- 整体评分：[分数]
 
 备选标题：
 
-1.  [标题1]
+1. [标题1]
 
-1.  [标题2]
+1. [标题2]
 
-1.  [标题3]
+1. [标题3]
 
-**测试**：
+## 测试
 
 ```
 /daily-flow
@@ -1944,42 +1974,42 @@ allowed-tools:
 
 | 分类 | 命令 | 功能 |
 | --- | --- | --- |
-| **会话管理** | /clear | 清空对话历史 |
-|  | /compact | 压缩对话 |
-|  | /resume | 恢复会话 |
-|  | /export | 导出对话 |
-|  | /rename | 重命名会话 |
-|  | /branch | 创建会话分支 |
-| **上下文** | /context | 查看Token使用 |
-|  | /cost | 查看费用 |
-|  | /model | 切换模型 |
-|  | /effort | 推理深度控制 |
-|  | /usage | 使用量统计 |
-| **项目** | /init | 初始化项目 |
-|  | /memory | 编辑记忆 |
-|  | /permissions | 管理权限 |
-|  | /add-dir | 添加目录 |
-| **开发** | /review | 代码审查 |
-|  | /todos | 查看待办 |
-|  | /rewind | 回退功能 |
-| **诊断** | /doctor | 系统诊断 |
-|  | /status | 完整状态 |
-|  | /stats | 使用统计 |
-| **MCP** | /mcp | 管理MCP |
-|  | /hooks | 管理Hooks |
-| **其他** | /help | 显示帮助 |
-|  | /release-notes | 更新日志 |
-|  | /loop | 定时循环执行 |
-|  | /sandbox | 沙箱隔离模式 |
-|  | /color | 会话颜色设置 |
-|  | /copy | 复制AI回复 |
+| **会话管理** | `/clear` | 清空对话历史 |
+|  | `/compact` | 压缩对话 |
+|  | `/resume` | 恢复会话 |
+|  | `/export` | 导出对话 |
+|  | `/rename` | 重命名会话 |
+|  | `/branch` | 创建会话分支 |
+| **上下文** | `/context` | 查看Token使用 |
+|  | `/cost` | 查看费用 |
+|  | `/model` | 切换模型 |
+|  | `/effort` | 推理深度控制 |
+|  | `/usage` | 使用量统计 |
+| **项目** | `/init` | 初始化项目 |
+|  | `/memory` | 编辑记忆 |
+|  | `/permissions` | 管理权限 |
+|  | `/add-dir` | 添加目录 |
+| **开发** | `/review` | 代码审查 |
+|  | `/todos` | 查看待办 |
+|  | `/rewind` | 回退功能 |
+| **诊断** | `/doctor` | 系统诊断 |
+|  | `/status` | 完整状态 |
+|  | `/stats` | 使用统计 |
+| **MCP** | `/mcp` | 管理MCP |
+|  | `/hooks` | 管理Hooks |
+| **其他** | `/help` | 显示帮助 |
+|  | `/release-notes` | 更新日志 |
+|  | `/loop` | 定时循环执行 |
+|  | `/sandbox` | 沙箱隔离模式 |
+|  | `/color` | 会话颜色设置 |
+|  | `/copy` | 复制AI回复 |
 
 ### frontmatter配置速查
 
 ```
 ---
 description: 命令描述（显示在帮助中）
-argument-hint: &lt;必需&gt; [可选]
+argument-hint: <必需> [可选]
 allowed-tools:
   - Read
   - Write
@@ -1999,7 +2029,7 @@ author: 作者名
 ```
 ---
 description: 一句话描述命令功能
-argument-hint: &lt;参数说明&gt;
+argument-hint: <参数说明>
 allowed-tools:
   - Read
   - Write
@@ -2011,12 +2041,12 @@ allowed-tools:
 你是...
 
 ## 任务
-根据 $ARGUMENTS 执行...
+根据 `$ARGUMENTS` 执行...
 
 ## 执行步骤
 
 ### 步骤1：检查输入
-检查 $ARGUMENTS 是否有效...
+检查 `$ARGUMENTS` 是否有效...
 
 ### 步骤2：执行操作
 使用工具执行...
@@ -2028,6 +2058,7 @@ allowed-tools:
 ```
 
 [输出模板]
+```
 
 ---
 
@@ -2035,29 +2066,22 @@ allowed-tools:
 
 ### 官方资源
 
-+   [Claude Code官方文档](https://docs.anthropic.com/en/docs/claude-code)
-
-+   Slash Commands文档
-
-+   [Anthropic最佳实践](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [Claude Code官方文档](https://docs.anthropic.com/en/docs/claude-code)
+- Slash Commands文档
+- [Anthropic最佳实践](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 ### 社区项目
 
-+   Claude Command Suite - 148+专业命令
-
-+   Awesome Claude Code - 社区精选资源
+- Claude Command Suite - 148+专业命令
+- Awesome Claude Code - 社区精选资源
 
 ### 相关课程
 
-+   第1部分：环境与安装 - Claude Code安装配置
-
-+   第2部分：基础使用 - CLI启动和交互模式
-
-+   第4部分：MCP集成 - 外部工具连接
-
-+   第5部分：Hooks系统 - 自动化工作流
-
-+   第6部分：Skills定制 - 技能包开发
+- 第1部分：环境与安装 - Claude Code安装配置
+- 第2部分：基础使用 - CLI启动和交互模式
+- 第4部分：MCP集成 - 外部工具连接
+- 第5部分：Hooks系统 - 自动化工作流
+- 第6部分：Skills定制 - 技能包开发
 
 ---
 
@@ -2071,49 +2095,45 @@ allowed-tools:
 
 ### 飞书兼容性检查
 
-+   ）
-
-+
-
 ---
 
 ## 学习总结
 
 通过本课学习，你已经掌握：
 
-1.  **Commands核心概念**：Slash命令就是Markdown提示词文件
+1. `Commands`核心概念：Slash命令就是Markdown提示词文件
 
-1.  **自定义命令开发**：frontmatter配置、$ARGUMENTS参数处理、工具调用
+1. `frontmatter`配置、`$ARGUMENTS`参数处理、工具调用
 
-1.  **高级技巧**：命令命名空间、组合调用、模块化设计
+1. 高级技巧：命令命名空间、组合调用、模块化设计
 
-1.  **社区资源**：Claude Command Suite等专业命令库
+1. 社区资源：`Claude Command Suite`等专业命令库
 
-1.  **故障排查**：常见问题诊断和解决方法
+1. 故障排查：常见问题诊断和解决方法
 
 > **温馨提示**：内置命令详细用法请回顾「02-基础使用完整指南」
 
-**下一步建议**：
+## 下一步建议
 
-1.  从第二部分的简单示例开始实践
+1. 从第二部分的简单示例开始实践
 
-1.  根据你的项目需求，创建第一个实用命令
+1. 根据你的项目需求，创建第一个实用命令
 
-1.  参考第四部分的实战案例，逐步构建命令库
+1. 参考第四部分的实战案例，逐步构建命令库
 
-1.  探索社区资源，学习优秀命令的设计模式
+1. 探索社区资源，学习优秀命令的设计模式
 
-**记住**：Commands的核心价值是"一次配置，永久使用"。花时间设计好命令，能让你的开发效率翻倍！
+**记住**：`Commands`的核心价值是"一次配置，永久使用"。花时间设计好命令，能让你的开发效率翻倍！
 
 ---
 
 > **课程反馈**：如果本教程对你有帮助，欢迎分享给更多人！
 
-> **问题反馈**：遇到问题可以使用 /bug 命令报告，或在社区提问。
+> **问题反馈**：遇到问题可以使用 `/bug` 命令报告，或在社区提问。
 
 ---
 
-**文档版本****：v1.****2（**新增6个内置命令）
+**文档版本**：v1.2（**新增6个内置命令**）
 
 最后更新：2026年3月18日
 
@@ -2127,23 +2147,23 @@ allowed-tools:
 
 | 新增项 | 说明 |
 | --- | --- |
-| /loop 命令 | 定时循环执行，支持 s/m/h 时间格式，3天自动过期 |
-| /effort 命令 | 推理深度控制，low/medium/high/auto 四级 |
-| /sandbox 命令 | OS级沙箱隔离，限制文件系统和网络访问 |
-| /color 命令 | 会话颜色个性化设置，多窗口区分 |
-| /copy 命令 | 一键复制AI回复到剪贴板 |
-| /branch 命令 | 会话分支（原 /fork 重命名），探索不同方案 |
+| `/loop` 命令 | 定时循环执行，支持 `s/m/h` 时间格式，3天自动过期 |
+| `/effort` 命令 | 推理深度控制，`low/medium/high/auto` 四级 |
+| `/sandbox` 命令 | OS级沙箱隔离，限制文件系统和网络访问 |
+| `/color` 命令 | 会话颜色个性化设置，多窗口区分 |
+| `/copy` 命令 | 一键复制AI回复到剪贴板 |
+| `/branch` 命令 | 会话分支（原 `/fork` 重命名），探索不同方案 |
 | 速查表更新 | 内置命令速查表和附录速查表同步补充新命令 |
 
 #### V1.1 修正内容（2025-12-23）
 
 | 修正项 | 问题 | 修正后 |
 | --- | --- | --- |
-| 模型名称日期 | claude-sonnet-4-5-20250514 日期错误 | 修正为 claude-sonnet-4-6 |
-| 模型名称日期 | claude-opus-4-5-20250514 日期错误 | 修正为 claude-opus-4-6 |
-| frontmatter字段 | version/author误标为官方字段 | 明确标注为非官方字段 |
+| 模型名称日期 | `claude-sonnet-4-5-20250514` 日期错误 | 修正为 `claude-sonnet-4-6` |
+| 模型名称日期 | `claude-opus-4-5-20250514` 日期错误 | 修正为 `claude-opus-4-6` |
+| frontmatter字段 | `version`/`author`误标为官方字段 | 明确标注为非官方字段 |
 | 内置命令覆盖 | 未说明核心命令受保护 | 添加重要澄清说明 |
-| 工具列表 | 缺少Task/NotebookEdit/TodoWrite | 补充完整工具列表 |
-| 配置项 | 缺少disable-model-invocation | 添加完整说明和示例 |
+| 工具列表 | 缺少`Task`/`NotebookEdit`/`TodoWrite` | 补充完整工具列表 |
+| 配置项 | 缺少`disable-model-invocation` | 添加完整说明和示例 |
 
-> 💡 审**查方法：**基于官方Claude Code文档对照验证，确保示例代码可直接运行。
+> 💡 审查方法：基于官方Claude Code文档对照验证，确保示例代码可直接运行。

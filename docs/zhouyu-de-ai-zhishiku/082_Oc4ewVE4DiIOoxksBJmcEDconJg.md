@@ -1,36 +1,30 @@
+
 # TRAE2.0 Solo|AI团队上线，告别“shi山”代码，内附邀请码
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/GPbZd9Qnio1GFsxcNsOcxI9wn5g](https://xatc0v8uz5m.feishu.cn/docx/GPbZd9Qnio1GFsxcNsOcxI9wn5g)
 
-# 🚀 TRAE 2.0 Solo模式深度体验
-
-# "
+## 🚀 TRAE 2.0 Solo模式深度体验
 
 > 💡 核心摘要
-
+>
 > 字节跳动TRAE推出重磅Solo模式更新，我第一时间体验后分享真实感受。从界面升级到30+任务自动化工作流，Solo模式带来前所未有的AI编程体验，让项目成功率大幅提升。
-
+>
 > 🏷️ 关键词：TRAE 2.0Solo模式AI编程自动化开发字节跳动
 
 ---
 
 ## 📋 目录
 
-+   • 🤖 TRAE是什么
-
-+   • ⚡ 更新哪些功能
-
-+   • 🎯 体验感受
-
-+   • 🤔 思考
-
-+   • 💼 case展示
-
-+   • 🎫 文末附邀请码
+- 🤖 TRAE 是什么
+- ⚡ 更新哪些功能
+- 🎯 体验感受
+- 🤔 思考
+- 💼 case 展示
+- 🎫 文末附邀请码
 
 哈喽，好久不见~（粤）
 
-昨天国内Ai又推出来了非常重磅的产品，就是我们的老朋友啦。字节的TRAE,推出了新的AI coding功能模式，也就是Solo。
+昨天国内AI又推出来了非常重磅的产品，就是我们的老朋友啦。字节的TRAE，推出了新的AI coding功能模式，也就是Solo。
 
 我也很幸运的作为中奖绝缘体的我，第一时间也抽到了邀请码，狠狠的上手体验了一番。\撒花
 
@@ -42,11 +36,11 @@ TRAE 2.0 整个logo焕然一新，功能界面也换新了。从这样的动作�
 
 废话不多说，一起看看都有哪些更新吧
 
-# TRAE是什么
+## TRAE 是什么
 
-先给新朋友介绍一下，AI IDE是一个颠覆性的编程工具，以往程序员去开发一个产品应用的话都是用VS code等等一些软件手动编写前端和后端代码。但是呢？AI的到来呢，让整个编程的过程。完全不一样了。
+先给新朋友介绍一下，AI IDE是一个颠覆性的编程工具，以往程序员去开发一个产品应用的话都是用`VS code`等等一些软件手动编写前端和后端代码。但是呢？AI的到来呢，让整个编程的过程。完全不一样了。
 
-比如说我们通过把这个项目的功能需求以及展示出来的效果等等都描述给到AI**之后呢？TR**AE在大语言模型的加持下呢，能够让整个编写代码的过程变成自动化，也是自动编写代码。（换句话说就是工程师开发了一个ai代码的一种东西，然后呢？把自己的工作抢走了\笑哭）
+比如说我们通过把这个项目的功能需求以及展示出来的效果等等都描述给到AI之后呢？TRAE在大语言模型的加持下呢，能够让整个编写代码的过程变成自动化，也是自动编写代码。（换句话说就是工程师开发了一个ai代码的一种东西，然后呢？把自己的工作抢走了\笑哭）
 
 前段时间,一直都是海外的Cursor在AI Coding领域里面，是最强的。
 
@@ -54,17 +48,17 @@ TRAE 2.0 整个logo焕然一新，功能界面也换新了。从这样的动作�
 
 这一次新的更新，整的和我前面在三月份的时候使用TRAE的体感完全不同。让我们来看看都有哪些不同吧。
 
-# 更新哪些功能
+## 更新哪些功能
 
-## 操作界面
+### 操作界面
 
-左上角有个模式的切换，IDE/SOLO**的切换按钮，**而且是可以在做项目的过程中，随时无缝切换。也就是当我们在做项目的过程中，可以随时切换会自己手动介入的这种模式。
+左上角有个模式的切换，IDE/SOLO的切换按钮，而且是可以在做项目的过程中，随时无缝切换。也就是当我们在做项目的过程中，可以随时切换会自己手动介入的这种模式。
 
 同时把这个AI沟通的交互窗口切换到了左边。这次AI的角色是Solo builder。
 
 ![](img/1e5668f601601fed7ce5ea2199cb2270.png)
 
-## SOLO模式
+### SOLO 模式
 
 Solo模式是这次更新的最重要最重要的一个功能。而且他给我的使用体验就是它相当于是一个整个AI的编程团队。它似乎划分出了在做项目时所需要的多个角色，会根据我们在做项目细分多个模块，细化完成工作。
 
@@ -90,17 +84,17 @@ Solo模式是这次更新的最重要最重要的一个功能。而且他给我�
 
 所以这次solo的效果确实让我非常惊艳。
 
-## 自动安装所需要的环境依赖包
+### 自动安装所需要的环境依赖包
 
 这一点真的对于新手小白来说，太太太友好了！
 
-我记得当时三月份做线下的AI切磋大会的时候，我们组队都开始上手去做一些有意思的项目时，就被这个环境这个东西卡了半个多小时，大部分刚开始接触编程的人来说甚至都不知道环境是什么？什么node.js、Python、Java等等我们当时完全是没有概念的。
+我记得当时三月份做线下的AI切磋大会的时候，我们组队都开始上手去做一些有意思的项目时，就被这个环境这个东西卡了半个多小时，大部分刚开始接触编程的人来说甚至都不知道环境是什么？什么`node.js`、`Python`、`Java`等等我们当时完全是没有概念的。
 
 现在SOLO直接帮我们检查，帮我们安装。太酷啦！
 
 ![](img/15b9b52835db046919813f581572ca52.png)
 
-## 小细节
+### 小细节
 
 网页界面展出出来之后，我们可以**选择元素**，做到指哪改哪。
 
@@ -118,13 +112,13 @@ Solo模式是这次更新的最重要最重要的一个功能。而且他给我�
 
 试想一下，如果上面这张衣服模特的图片全都是灰色的格子、带上传，金额数据全都是0。那我们看起来整个页面的效果其实都是不完整的。但是solo他做到了。在项目创建的过程中就把图片数据得到我们那呈现出来的效果就很丝滑。
 
-## 小吐槽
+### 小吐槽
 
 这次邀请码确实太难搞了呀。好在幸运的第二天我居然抽奖中了。当然第二天晚上在大家的吐槽下，发放了不少邀请码。下次请不要再让邀请码这么难get到。
 
 第二，在和SOLO交互的过程中，似乎我提出的问题，SOLO都是没有回答的，它不是在和我们交流这个项目，而像是直接接收和分析我们的目标指令，直接分工合作。这个点有好有坏。
 
-# 体验感受
+## 体验感受
 
 这次用SOLO给人的感觉非常的丝滑。
 
@@ -144,7 +138,7 @@ Solo模式是这次更新的最重要最重要的一个功能。而且他给我�
 
 THIS ALL，以上就是本期的所有内容
 
-@ 作者 / 青争鱼Echo@ 投稿或爆料，请联系邮箱：Mossecho@aliyun.com
+@ 作者 / 青争鱼Echo@ 投稿或爆料，请联系邮箱：`Mossecho@aliyun.com`
 
 [通往AGI之路](https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e) 全球最棒的AI社区的知识库 /
 
@@ -152,46 +146,44 @@ THIS ALL，以上就是本期的所有内容
 
 最后，感谢你看到这里👏如果喜欢这篇文章，不妨顺手给我们点赞👍｜在看👀｜转发📪｜评论📣
 
-### case展示
+### case 展示
 
 下一期将分享如何使用Trae2.0solo实战做一个网站【神农AI识别百草】
 
-https://trae0722zhongyaoxiangmuru0k-1td53wqnp-qzyechos-projects.vercel.app/recognition
+`https://trae0722zhongyaoxiangmuru0k-1td53wqnp-qzyechos-projects.vercel.app/recognition`
 
 ![](img/270f72f00b4210f5af439b2d7d6cc9b4.png)
 
-开发心情日记APPhttps://trae0722traeceshi3oia-jkkki1cdr-qzyechos-projects.vercel.app/
+开发心情日记APP`https://trae0722traeceshi3oia-jkkki1cdr-qzyechos-projects.vercel.app/`
 
 ![](img/6016002efc42ef32752ec517f0920f44.png)
 
-电商网站https://trae072203dianshangceshi1rzd-epnmuj19c-qzyechos-projects.vercel.app/
+电商网站`https://trae072203dianshangceshi1rzd-epnmuj19c-qzyechos-projects.vercel.app/`
 
-官网https://www.trae.ai/solo?showJoin=1
+官网`https://www.trae.ai/solo?showJoin=1`
 
 听说22日晚官网发出了1000个邀请码，没抢到的在下面的渠道蹲吧（需要订阅Pro用户才能用邀请码，首月3美金，）
 
-x渠道：[h](https://x.com/search?q=solo%20code&src=typed_query&f=live)ttps:/[/x.com/search?q=](https://www.reddit.com/user/Trae_AI/)solo%20co[d](https://traesolocodedcln-5o418fy5b-ambershens-projects.vercel.app/)e&src=typ[e](https://www.xiaohongshu.com/user/profile/661f6cf4000000000d027e6c)d_query&f=live
+x渠道：`https://x.com/search?q=solo%20code&src=typed_query&f=live`
 
-red渠道：https://www.reddit.com/user/Trae_AI/
+red渠道：`https://www.reddit.com/user/Trae_AI/`
 
-官方自动发放渠道：https://traesolocodedcln-5o418fy5b-ambershens-projects.vercel.app/
+官方自动发放渠道：`https://traesolocodedcln-5o418fy5b-ambershens-projects.vercel.app/`
 
-📕渠道评论区：https://www.xiaohongshu.com/user/profile/661f6cf4000000000d027e6c
+📕渠道评论区：`https://www.xiaohongshu.com/user/profile/661f6cf4000000000d027e6c`
 
-b站渠道评论区：https://www.bilibili.com/opus/1092296696955666452?
+b站渠道评论区：`https://www.bilibili.com/opus/1092296696955666452?`
 
 抖音渠道：我们又申请了一些 SOLO Code.各位关注 TRAE 的 - 抖音
 
-discord渠道：https://discord.gg/FTndW3KK
+discord渠道：`https://discord.gg/FTndW3KK`
 
 试试下面的
 
+```
 mO1AmwX9nQj4mwX7cAjAmAeUbdKbmAj5ZsOQi9aBbdmjf6aiWPD7fj
-
 mO1AmwX9nQj4mAnBcAj4ngSUWuSEhPuliR8eesyLYuWUYeynld4kjj
-
 mO1AmwX9nQj4lgT5cAb5mwyUngeHafiKfsONgt0bnOWqasejVgijjj
-
 mO1AmwX9nQfDnQj9cAf5mgWUeNGseQuJZ9GGZeOnhuaMYwipYwyRWD
-
 mO1AmwX9nQfDmgzDcAbBmgaUdwiniNaBYNSig6yDodWrdfWSmN43jj
+```

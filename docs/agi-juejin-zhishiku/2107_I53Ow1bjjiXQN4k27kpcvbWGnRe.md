@@ -1,7 +1,7 @@
+
 # 7.26 OpenAI 正式进军搜索！发布 SearchGPT：专挑谷歌不会的问题演示
 
 > 来源：[https://agijuejin.feishu.cn/docx/F3YddsuBNovZR6xmHlacutlIn4g](https://agijuejin.feishu.cn/docx/F3YddsuBNovZR6xmHlacutlIn4g)
-
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ## 🌟 技术突破
@@ -86,7 +86,7 @@ OpenAI 推出 SearchGPT 原型，专注于解决与具体时空相关的问题�
 
 IT之家｜[阅读原文](https://sourl.co/cnLM26)
 
-Reddit 近期更新了其 robots.txt 文件，全面禁止搜索引擎和 AI 爬虫抓取其网站内容。此举被认为与谷歌合作无关，Reddit 表示是因为抓取内容的商业实体增多并存在滥用情况。尽管 Bing、DuckDuckGo 等搜索引擎一度受到影响，但最新测试显示它们已重新显示 Reddit 的搜索内容。Reddit 发言人强调，与谷歌的合作不涉及此变动，且公司正在与多个搜索引擎讨论，但未能与所有搜索引擎就内容使用和 AI 训练达成协议。
+Reddit 近期更新了其 `robots.txt` 文件，全面禁止搜索引擎和 AI 爬虫抓取其网站内容。此举被认为与谷歌合作无关，Reddit 表示是因为抓取内容的商业实体增多并存在滥用情况。尽管 Bing、DuckDuckGo 等搜索引擎一度受到影响，但最新测试显示它们已重新显示 Reddit 的搜索内容。Reddit 发言人强调，与谷歌的合作不涉及此变动，且公司正在与多个搜索引擎讨论，但未能与所有搜索引擎就内容使用和 AI 训练达成协议。
 
 ### 💡 百川智能回应 200 亿元估值：为 B 轮投前估值，A 轮总融资额达 50 亿元
 

@@ -1,3 +1,4 @@
+
 # Qwen1.5模型高效微调
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/G1c0dB1veoxpcWxXJkccASMin1g](https://kq4b3vgg5b.feishu.cn/docx/G1c0dB1veoxpcWxXJkccASMin1g)
@@ -20,30 +21,30 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 ```
 
 ```
-qwen18_dir=snapshot_download(&quot;Qwen/Qwen1.5-1.8B-Chat&quot;)
+qwen18_dir=snapshot_download("Qwen/Qwen1.5-1.8B-Chat")
 ```
 
 ```
-Downloading: 100%|██████████| 662/662 [00:00&lt;00:00, 4.81MB/s]
-Downloading: 100%|██████████| 51.0/51.0 [00:00&lt;00:00, 293kB/s]
-Downloading: 100%|██████████| 206/206 [00:00&lt;00:00, 1.42MB/s]
-Downloading: 100%|██████████| 7.11k/7.11k [00:00&lt;00:00, 19.1MB/s]
-Downloading: 100%|██████████| 1.59M/1.59M [00:00&lt;00:00, 63.9MB/s]
-Downloading: 100%|█████████▉| 3.42G/3.42G [00:08&lt;00:00, 425MB/s]
-Downloading: 100%|██████████| 4.15k/4.15k [00:00&lt;00:00, 12.4MB/s]
-Downloading: 100%|██████████| 6.70M/6.70M [00:00&lt;00:00, 212MB/s]
-Downloading: 100%|██████████| 1.26k/1.26k [00:00&lt;00:00, 12.5MB/s]
-Downloading: 100%|██████████| 2.65M/2.65M [00:00&lt;00:00, 34.8MB/s]
+Downloading: 100%|██████████| 662/662 [00:00<00:00, 4.81MB/s]
+Downloading: 100%|██████████| 51.0/51.0 [00:00<00:00, 293kB/s]
+Downloading: 100%|██████████| 206/206 [00:00<00:00, 1.42MB/s]
+Downloading: 100%|██████████| 7.11k/7.11k [00:00<00:00, 19.1MB/s]
+Downloading: 100%|██████████| 1.59M/1.59M [00:00<00:00, 63.9MB/s]
+Downloading: 100%|█████████▉| 3.42G/3.42G [00:08<00:00, 425MB/s]
+Downloading: 100%|██████████| 4.15k/4.15k [00:00<00:00, 12.4MB/s]
+Downloading: 100%|██████████| 6.70M/6.70M [00:00<00:00, 212MB/s]
+Downloading: 100%|██████████| 1.26k/1.26k [00:00<00:00, 12.5MB/s]
+Downloading: 100%|██████████| 2.65M/2.65M [00:00<00:00, 34.8MB/s]
 ```
 
 ```
 from transformers import AutoModelForCausalLM, AutoTokenizer
-device = &quot;cuda&quot; # the device to load the model onto
+device = "cuda" # the device to load the model onto
 
 model = AutoModelForCausalLM.from_pretrained(
     qwen18_dir,
-    torch_dtype=&quot;auto&quot;,
-    device_map=&quot;auto&quot;
+    torch_dtype="auto",
+    device_map="auto"
 )
 tokenizer = AutoTokenizer.from_pretrained(qwen18_dir)
 ```
@@ -53,17 +54,17 @@ Special tokens have been added in the vocabulary, make sure the associated word 
 ```
 
 ```
-prompt = &quot;你好，请介绍下你自己。&quot;
+prompt = "你好，请介绍下你自己。"
 messages = [
-    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant.&quot;},
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": prompt}
 ]
 text = tokenizer.apply_chat_template(
     messages,
     tokenize=False,
     add_generation_prompt=True
 )
-model_inputs = tokenizer([text], return_tensors=&quot;pt&quot;).to(device)
+model_inputs = tokenizer([text], return_tensors="pt").to(device)
 ```
 
 ```
@@ -120,8 +121,6 @@ print(response)
 
 ![](img/18acfa9cad789995fd53d67e70524f62.png)
 
-> 
-
 > [在《大模型技术实战课》（第3期](https://appZe9inzwc2314.h5.xiaoeknow.com)）课程中，我们也会详细介绍各微调算法的基本原理。
 
 而在过去的一年，伴随着大语言模型技术的飞速发展，微调这一原本诞生于深度学习技术领域的方法，在大模型技术领域的应用得到了长足的发展。简单来说，目前微调的应用面得到了极大程度拓展、微调的门槛大幅降低、同时微调的各项基本数据集支持也更加友好。
@@ -142,7 +141,7 @@ print(response)
 
 ![](img/47289776f8c1987c6d9b928536194556.png)
 
-海量硬核独家技术**干货内容**+无门槛**技术交流****+不定期开设****硬核干货&前沿技术公开课****，****扫码**👆即刻入群！
+海量硬核独家技术**干货内容**+无门槛**技术交流**+不定期开设**硬核干货&前沿技术公开课**，**扫码**👆即刻入群！
 
 ### 二、基于LlaMa-Factory的高效微调流程
 
@@ -195,8 +194,6 @@ LLaMA-Factory目前支持微调的模型及对应的参数量：
 近年来，单片机以其体积小、价格廉、面向控制等独特优点，在各种工业控制、仪器仪表、设备、产品的自动化、智能化方面获得了广泛的应用。与此同时，单片机应用系统的可靠性成为人们越来越关注的重要课题。影响可靠性的因素是多方面的，如构成系统的元器件本身的可靠性、系统本身各部分之间的相互耦合因素等。其中系统的抗干扰性能是系统可靠性的重要指标。 ·加电、掉电以及供电电压下降情况下的复位输出，复位脉冲宽度典型值为200 ms。 ·独立的看门狗输出，如果看门狗输入在1．6 s内未被触发，其输出将变为高
 
 ...
-...
-...
 ```
 
 > 上述数据截取自：Skywork：https://huggingface.co/datasets/Skywork/SkyPile-150B （注：需要开启🪜才可以访问）
@@ -210,6 +207,8 @@ LLaMA-Factory目前支持微调的模型及对应的参数量：
 +   **指令微调**
 
 指令微调，**是**一种通过在由（指令，输出）对组成的数据集上进一步训练LLMs的过程。其中，指令代表模型的人类指令，输出代表遵循指令的期望输出。这个过程有助于弥合LLMs的下一个词预测目标与用户让LLMs遵循人类指令的目标之间的差距。它可以被视为有监督微调（Supervised Fine-Tuning，SFT）的一种特殊形式。但是，它们的目标依然有差别。SFT是一种使用标记数据对预训练模型进行微调的过程，以便模型能够更好地执行特定任务。而指令微调是一种通过在包括（指令，输出）对的数据集上进一步训练大语言模型（LLMs）的过程，以增强LLMs的能力和可控性。指令微调的特殊之处在于其数据集的结构，即由人类指令和期望的输出组成的配对。这种结构使得指令微调专注于让模型理解和遵循人类指令。
+
+
 
 总的来说，指令微调是有监督微调的一种特殊形式，专注于通过理解和遵循人类指令来增强大语言模型的能力和可控性。其形式往往是这样的：
 
@@ -228,43 +227,47 @@ LLaMA-Factory目前支持微调的模型及对应的参数量：
 
 在上述数据中，其各字段意义如下：
 
-+   instruction：任务指令，不能为空。
++   `instruction`：任务指令，不能为空。
++   `input`：任务输入，可为空。如果不为空，项目内部处理训练数据时，会将 `instruction`、`input` 拼接在一起作为任务的输入。
++   `output`：任务输出，不能为空。
 
-+   input：任务输入，可为空。如果不为空，项目内部处理训练数据时，会将 instruction、input 拼接在一起作为任务的输入。
+> 该数据截取自`alpaca_gpt4_data_zh.json`数据，来源于GPT-4 使用 ChatGPT 从 Alpaca 翻译而来的中文提示生成中文指令跟踪数据，获取地址如下：`https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM`，
 
-+   output：任务输出，不能为空。
-
-> 该数据截取自alpaca_gpt4_data_zh.json数据，来源于GPT-4 使用 ChatGPT 从 Alpaca 翻译而来的中文提示生成中文指令跟踪数据，获取地址如下： https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM ，
-
-在该项目中，也内置了非常多的标准数据集，整体分为预训练的数据集、指令微调数据集和偏好数据集。具体各个数据集的详细情况，大家可以在其GitHub官网查看：https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md
+在该项目中，也内置了非常多的标准数据集，整体分为预训练的数据集、指令微调数据集和偏好数据集。具体各个数据集的详细情况，大家可以在其GitHub官网查看：`https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md`
 
 ![](img/544d5fe406745e7d409b89217de78ed1.png)
 
-我们现在所使用的ChatGPT，其训练过程主要会经历三个阶段：首先微调GPT 3模型，然后通过人工对微调后模型的生成结果打分以训练得到一个奖励模型，最后基于微调后的GPT 3结合奖励模型采用强化学习的方法更新策略。而第三步中强化学习的方法就是OpenAI于2017年提出的Proximal Policy Optimization（PPO）算法，它作为一种强化学习算法，用于优化智能体的策略，会试图在策略更新过程中保持稳定性，防止策略更新过大导致学习过程不稳定。PPO 主要应用于连续控制任务和离散决策任务，并在许多领域取得了成功。
+我们现在所使用的ChatGPT，其训练过程主要会经历三个阶段：首先微调GPT 3模型，然后通过人工对微调后模型的生成结果打分以训练得到一个奖励模型，最后基于微调后的GPT 3结合奖励模型采用强化学习的方法更新策略。而第三步中强化学习的方法就是OpenAI于2017年提出的Proximal Policy Optimization（`PPO`）算法，它作为一种强化学习算法，用于优化智能体的策略，会试图在策略更新过程中保持稳定性，防止策略更新过大导致学习过程不稳定。`PPO` 主要应用于连续控制任务和离散决策任务，并在许多领域取得了成功。
 
-关于奖励模型、PPO以及DPO，涉及大量的数学原理和技术概念，我们将在后面的课程安排中深入讲解与RLHF（Reinforcement Learning with Human Feedback）相关的理论知识。即使用强化学习的方法，利用人类反馈信号直接优化语言模型。此处暂时不展开详细讨论。
+关于奖励模型、`PPO`以及`DPO`，涉及大量的数学原理和技术概念，我们将在后面的课程安排中深入讲解与`RLHF`（Reinforcement Learning with Human Feedback）相关的理论知识。即使用强化学习的方法，利用人类反馈信号直接优化语言模型。此处暂时不展开详细讨论。
 
-最后且最关键的一点需特别指出：虽然LLaMA-Factory项目允许我们在120余种大模型中灵活选择并快速开启微调工作，但运行特定参数量的模型是否可行，仍然取决于本地硬件资源是否充足。因此，在选择模型进行实践前，大家必须仔细参照下表，结合自己的服务器配置来决定，以避免因硬件资源不足导致的内存溢出等问题。不同模型参数在不同训练方法下的显存占用情况如下：
+最后且最关键的一点需特别指出：虽然`LLaMA-Factory`项目允许我们在120余种大模型中灵活选择并快速开启微调工作，但运行特定参数量的模型是否可行，仍然取决于本地硬件资源是否充足。因此，在选择模型进行实践前，大家必须仔细参照下表，结合自己的服务器配置来决定，以避免因硬件资源不足导致的内存溢出等问题。不同模型参数在不同训练方法下的显存占用情况如下：
 
 | 训练方法 | 精度 | 7B | 13B | 30B | 65B |
+
 | --- | --- | --- | --- | --- | --- |
+
 | 全参数 | 16 | 160GB | 320GB | 600GB | 1200GB |
+
 | 部分参数 | 16 | 20GB | 40GB | 120GB | 240GB |
+
 | LoRA | 16 | 16GB | 32GB | 80GB | 160GB |
+
 | QLoRA | 8 | 10GB | 16GB | 40GB | 80GB |
+
 | QLoRA | 4 | 6GB | 12GB | 24GB | 48GB |
 
-对于我们课程中重点介绍的ChatGLM3、Qwen和Baichuan2模型，在LLaMA-Factory项目中均实现了高度集成。因此，本文的后续内容将专注于这三个模型，全面介绍LLaMA-Factory项目的使用方法及注意事项。在深入微调操作之前，首要任务是确保LLaMA-Factory开源项目在本地的正确部署。下面，我们将具体执行在本地环境中私有化部署LLaMA-Factory项目的操作。
+对于我们课程中重点介绍的`ChatGLM3`、`Qwen`和`Baichuan2`模型，在`LLaMA-Factory`项目中均实现了高度集成。因此，本文的后续内容将专注于这三个模型，全面介绍`LLaMA-Factory`项目的使用方法及注意事项。在深入微调操作之前，首要任务是确保`LLaMA-Factory`开源项目在本地的正确部署。下面，我们将具体执行在本地环境中私有化部署`LLaMA-Factory`项目的操作。
 
-#### 2. LLaMA-Factory私有化部署
+## 2. LLaMA-Factory私有化部署
 
-+   Step 1. 下载LLaMA-Factory的项目文件
+### Step 1. 下载`LLaMA-Factory`的项目文件
 
-进入LLaMA-Factory的官方Github，地址：https://github.com/hiyouga/LLaMA-Factory ， 在 GitHub 上将项目文件下载到有两种方式：克隆 (Clone) 和 下载 ZIP 压缩包。推荐使用克隆 (Clone)的方式。我们首先在GitHub上找到其仓库的URL。
+进入`LLaMA-Factory`的官方Github，地址：`https://github.com/hiyouga/LLaMA-Factory`，在 GitHub 上将项目文件下载到有两种方式：克隆 (Clone) 和 下载 ZIP 压缩包。推荐使用克隆 (Clone)的方式。我们首先在GitHub上找到其仓库的URL。
 
 ![](img/896c91815592f04da44b4b7adb86c158.png)
 
-在执行命令之前，需要先安装git软件包，执行命令如下：
+在执行命令之前，需要先安装`git`软件包，执行命令如下：
 
 ```
 apt install git
@@ -279,13 +282,13 @@ cd
 git clone https://github.com/hiyouga/LLaMA-Factory.git
 ```
 
-下载完成后即可看到LLaMA-Factory目录：
+下载完成后即可看到`LLaMA-Factory`目录：
 
 ![](img/0dd259e4fc154e3459d477cc85d1b916.png)
 
-+   **Step 2. 升级pip版本**
+### Step 2. 升级`pip`版本
 
-建议在执行项目的依赖安装之前升级 pip 的版本，如果使用的是旧版本的 pip，可能无法安装一些最新的包，或者可能无法正确解析依赖关系。升级 pip 很简单，只需要运行命令如下命令：
+建议在执行项目的依赖安装之前升级 `pip` 的版本，如果使用的是旧版本的 `pip`，可能无法安装一些最新的包，或者可能无法正确解析依赖关系。升级 `pip` 很简单，只需要运行命令如下命令：
 
 ```
 python -m pip install --upgrade pip
@@ -293,17 +296,17 @@ python -m pip install --upgrade pip
 
 ![](img/fcd19fdc982a12da15232bd6661eae78.png)
 
-+   **Step 3. 使用pip安装LLaM**A-Factory项目代码运行的项目依赖
+### Step 3. 使用`pip`安装`LLaMA-Factory`项目代码运行的项目依赖
 
-在LLaMA-Factory中提供的 requirements.txt文件包含了项目运行所必需的所有 Python 包及其精确版本号。使用pip一次性安装所有必需的依赖，执行命令如下：
+在`LLaMA-Factory`中提供的 `requirements.txt`文件包含了项目运行所必需的所有 `Python` 包及其精确版本号。使用`pip`一次性安装所有必需的依赖，执行命令如下：
 
 ```
 pip install -r requirements.txt --index-url https://mirrors.huaweicloud.com/repository/pypi/simple
 ```
 
-通过上述步骤就已经完成了LLaMA-Factory模型的完整私有化部署过程。
+通过上述步骤就已经完成了`LLaMA-Factory`模型的完整私有化部署过程。
 
-#### 3.基于LLaMA-Factory的模型自我意识微调过程
+## 3. 基于`LLaMA-Factory`的模型自我意识微调过程
 
 正如此前所说，微调能够永久性的修改模型的各项能力和“知识记忆”，本次实验中我们就尝试“篡改”模型的“自我意识”。即现在我们让模型进行自我介绍时，模型会表示自己是来自阿里的通义千问模型。但通过微调，我们可以修改模型的“自我意识”，让他认为自己的名字叫“小林”，微调前：
 
@@ -313,11 +316,11 @@ pip install -r requirements.txt --index-url https://mirrors.huaweicloud.com/repo
 
 ![](img/dca5fe01f990f582bc8403ce75ecc788.png)
 
-同时在这个实验中，我们也将完整的展示从数据集创建到执行微调、再到模型运行的一整个完整流程。基于LLaMA-Factory的完整高效微调流程如下：
+同时在这个实验中，我们也将完整的展示从数据集创建到执行微调、再到模型运行的一整个完整流程。基于`LLaMA-Factory`的完整高效微调流程如下：
 
 ![](img/3b6b1a8c2ee33c0ef7be8389d8941bb8.png)
 
-+   Step 1. 创建微调数据集并上传
+### Step 1. 创建微调数据集并上传
 
 ```
 import json
@@ -373,7 +376,7 @@ extended_file_path
 
 ![](img/47ae52e619640d2688e7ba5b9c22d6b8.png)
 
-然后使用cp命令，将其复制到LlaMa-Factory项目data文件夹内：
+然后使用`cp`命令，将其复制到`LlaMa-Factory`项目`data`文件夹内：
 
 ```
 cp WAY_zh.json ~/LLaMA-Factory/data
@@ -381,17 +384,17 @@ cp WAY_zh.json ~/LLaMA-Factory/data
 
 ![](img/c2e79963b19478fe7082e33965797b4f.png)
 
-这里的data文件包含了项目自带的各数据集：
+这里的`data`文件包含了项目自带的各数据集：
 
 ![](img/935f71e32521607c12034dd283d971e1.png)
 
-+   Step 2. 修改数据集字典，添加数据集说明
+### Step 2. 修改数据集字典，添加数据集说明
 
-接下来为了让微调框架能够识别我们自定义的数据集，我们需要修改dataset_info.json中的信息，在其中添加我们新增数据集的基本说明。对于一个高效微调的数据集来说，说明文字非常简单，我们只需要添加数据集名字即可。关于完整的dataset_info.json如何修改，可以参考如下:https://github.com/hiyouga/LLaMA-Factory/blob/main/data/README_zh.md
+接下来为了让微调框架能够识别我们自定义的数据集，我们需要修改`dataset_info.json`中的信息，在其中添加我们新增数据集的基本说明。对于一个高效微调的数据集来说，说明文字非常简单，我们只需要添加数据集名字即可。关于完整的`dataset_info.json`如何修改，可以参考如下:`https://github.com/hiyouga/LLaMA-Factory/blob/main/data/README_zh.md`
 
 ![](img/bb1272dd73c87aeb33dabe6d65098ec5.png)
 
-这里我们使用vim命令对该文件进行修改：
+这里我们使用`vim`命令对该文件进行修改：
 
 ```
 cd ~/LLaMA-Factory/data
@@ -400,20 +403,18 @@ vim dataset_info.json
 
 ![](img/fc8cc01b751868f728bfe54312b75765.png)
 
-然后在弹出的页面输入i，进入编辑模式，并在开头输入如下内容：
+然后在弹出的页面输入`i`，进入编辑模式，并在开头输入如下内容：
 
 ```
 &quot;WAY_zh&quot;:{
   &quot;file_name&quot;:&quot;WAY_zh.json&quot;
 ```
 
-![](img/5376e6050d5add634ee0d7e277915ef6.png)
+然后点击`Esc`，输入冒号（注意需要是英文输入法模式），再输出`wq`，即可保存并退出。
 
-然后点击Esc，输入冒号（注意需要是英文输入法模式），再输出wq，即可保存并退出。
+### Step 3. 创建微调脚本
 
-+   **Step 3. 创建微调脚本**
-
-所谓高效微调框架，我们可以将其理解为很多功能都进行了高层封装的工具库，为了使用这些工具完成大模型微调，我们需要编写一些脚本（也就是操作系统可以执行的命令集），来调用这些工具完成大模型微调。这里我们需要先回到LlaMa-Factory项目主目录下：
+所谓高效微调框架，我们可以将其理解为很多功能都进行了高层封装的工具库，为了使用这些工具完成大模型微调，我们需要编写一些脚本（也就是操作系统可以执行的命令集），来调用这些工具完成大模型微调。这里我们需要先回到`LlaMa-Factory`项目主目录下：
 
 ```
 cd ..
@@ -421,22 +422,21 @@ cd ..
 
 ![](img/af1e479164d96c77f441bc2335ae3cfe.png)
 
-然后创建一个名为single_lora_qwen.sh的脚本（脚本的名字可以自由命名）。这里我们可以使用使用vim创建这个脚本文件，同时也可以直接把课件中的single_lora_qwen.sh文件直接上传到jupyter主目录下，然后再用cp命令复制到LlaMa-Factory主目录下。这里我们先简单查看这个脚本文件内容：
+然后创建一个名为`single_lora_qwen.sh`的脚本（脚本的名字可以自由命名）。这里我们可以使用`vim`创建这个脚本文件，同时也可以直接把课件中的`single_lora_qwen.sh`文件直接上传到`jupyter`主目录下，然后再用`cp`命令复制到`LlaMa-Factory`主目录下。这里我们先简单查看这个脚本文件内容：
 
-```
+
+
+```bash
 #!/bin/bash
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 
-export NCCL_P2P_DISABLE=&quot;1&quot;
-export NCCL_IB_DISABLE=&quot;1&quot;
-
+export NCCL_P2P_DISABLE="1"
+export NCCL_IB_DISABLE="1"
 
 # 如果是预训练，添加参数       --stage pt \
 # 如果是指令监督微调，添加参数  --stage sft \
 # 如果是奖励模型训练，添加参数  --stage rm \
 # 添加 --quantization_bit 4 就是4bit量化的QLoRA微调，不添加此参数就是LoRA微调 \
-
-
 
 CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \   ## 单卡运行
   --stage sft \                                     ## --stage pt （预训练模式）  --stage sft（指令监督模式）
@@ -467,18 +467,18 @@ CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \   ## 单卡运行
 
 ![](img/b7e60d5965a32c4f84f4be0fa79735fe.png)
 
-然后使用cp命令回到当前项目主目录下，查看脚本情况：
+然后使用`cp`命令回到当前项目主目录下，查看脚本情况：
 
-```
+```bash
 cd /mnt/workspace
 ll
 ```
 
 ![](img/8a8de4fcd2af0d65e7d83a11bf7b8830.png)
 
-然后将其复制到LlaMa-Factory主目录下，并简单查看脚本位置：
+然后将其复制到`LLaMa-Factory`主目录下，并简单查看脚本位置：
 
-```
+```bash
 cp single_lora_qwen.sh ~/LLaMA-Factory
 cd ~/LLaMA-Factory/
 ll
@@ -488,17 +488,17 @@ ll
 
 然后为了保险起见，我们需要对齐格式内容进行调整，以满足Ubuntu操作系统运行需要（此前是从Windows系统上复制过去的文件，一般都需要进行如此操作）：
 
-```
-sed -i &#x27;s/\r$//&#x27; ./single_lora_qwen.sh
+```bash
+sed -i 's/\r$//' ./single_lora_qwen.sh
 ```
 
 ![](img/9f7d8fdc8dbc1821cd1afc2000e6764e.png)
 
-+   Step 4. 运行微调脚本，获取模型微调权重
+### Step 4. 运行微调脚本，获取模型微调权重
 
 当我们准备好微调脚本之后，接下来即可围绕当前模型进行微调了。这里我们直接在命令行中执行sh文件即可，注意运行前需要为该文件增加权限：
 
-```
+```bash
 chmod +x ./single_lora_qwen.sh
 ./single_lora_qwen.sh
 ```
@@ -515,13 +515,13 @@ chmod +x ./single_lora_qwen.sh
 
 ![](img/dd9a2bcaa08efaa523bc85ceb84dde3a.png)
 
-+   Step 5. 合并模型权重，获得微调模型
+### Step 5. 合并模型权重，获得微调模型
 
-接下来我们需要将该模型权重文件和此前的原始模型权重文件进行合并，才能获得最终的微调模型。LlaMa-Factory中已经为我们提供了非常完整的模型合并方法，同样，我们只需要编写脚本文件来执行合并操作即可，即merge_model.sh。同样，该脚本文件也可以按照此前single_lora_qwen.sh脚本相类似的操作，就是将课件中提供的脚本直接上传到Jupyter主目录下，再复制到LlaMa-Factory主目录下进行运行。
+接下来我们需要将该模型权重文件和此前的原始模型权重文件进行合并，才能获得最终的微调模型。`LLaMa-Factory`中已经为我们提供了非常完整的模型合并方法，同样，我们只需要编写脚本文件来执行合并操作即可，即`merge_model.sh`。同样，该脚本文件也可以按照此前`single_lora_qwen.sh`脚本相类似的操作，就是将课件中提供的脚本直接上传到Jupyter主目录下，再复制到`LLaMa-Factory`主目录下进行运行。
 
-首先简单查看merge_model.sh脚本文件内容：
+首先简单查看`merge_model.sh`脚本文件内容：
 
-```
+```bash
 #!/bin/bash
 
 python src/export_model.py \               ## 用于执行合并功能的Python代码文件
@@ -536,25 +536,25 @@ python src/export_model.py \               ## 用于执行合并功能的Python�
 
 > 注：实际脚本文件最好不要出现中文备注，否则容易出现编辑格式导致的问题。
 
-同样，我们将课件中的merge_model.sh文件上传到在线Jupyter Notebook中：
+同样，我们将课件中的`merge_model.sh`文件上传到在线Jupyter Notebook中：
 
 ![](img/2c04a88841771cbef8308807b08c4534.png)
 
-然后使用cp命令将其复制到LlaMa-Fcotry项目主目录下：
+然后使用`cp`命令将其复制到`LlaMa-Fcotry`项目主目录下：
 
-```
+```bash
 cd /mnt/workspace
 cp merge_model.sh ~/LLaMA-Factory
 cd ~/LLaMA-Factory/
 chmod +x ./merge_model.sh
-sed -i &#x27;s/\r$//&#x27; ./merge_model.sh
+sed -i 's/\r$//' ./merge_model.sh
 ```
 
 ![](img/03d5f00997b4b4f107dcaf908a28cca5.png)
 
 然后运行脚本，进行模型合并：
 
-```
+```bash
 ./merge_model.sh
 ```
 
@@ -564,7 +564,7 @@ sed -i &#x27;s/\r$//&#x27; ./merge_model.sh
 
 接下来即可查看刚刚获得的新的微调模型：
 
-```
+```bash
 cd /mnt/workspace/.cache/modelscope
 ll
 ```
@@ -573,51 +573,51 @@ ll
 
 ![](img/b72a6de2d03197a373f1ebce130e2aff.png)
 
-+   **Step 6. 测试微调效果**
+### Step 6. 测试微调效果
 
 在我们为大模型“灌输”了一系列自主意识之后，我们尝试与其对话，测试此时模型是否会认为自己是“小林”。
 
-```
-qwen_lora = &#x27;/mnt/workspace/.cache/modelscope/qwen_lora&#x27;
+```bash
+qwen_lora = '/mnt/workspace/.cache/modelscope/qwen_lora'
 qwen_lora 
 ```
 
-```
-&#x27;/mnt/workspace/.cache/modelscope/qwen_lora&#x27;
+```bash
+'/mnt/workspace/.cache/modelscope/qwen_lora'
 ```
 
-```
+```bash
 from transformers import AutoModelForCausalLM, AutoTokenizer
-device = &quot;cuda&quot; # the device to load the model onto
+device = "cuda" # the device to load the model onto
 
 model = AutoModelForCausalLM.from_pretrained(
     qwen_lora,
-    torch_dtype=&quot;auto&quot;,
-    device_map=&quot;auto&quot;
+    torch_dtype="auto",
+    device_map="auto"
 )
 tokenizer = AutoTokenizer.from_pretrained(qwen_lora)
 ```
 
-```
-Loading checkpoint shards: 100%|██████████| 4/4 [00:00&lt;00:00,  4.14it/s]
+```text
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.14it/s]
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 ```
 
-```
-prompt = &quot;你叫什么？&quot;
+```bash
+prompt = "你叫什么？"
 messages = [
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}
+    {"role": "user", "content": prompt}
 ]
 text = tokenizer.apply_chat_template(
     messages,
     tokenize=False,
     add_generation_prompt=True
 )
-model_inputs = tokenizer([text], return_tensors=&quot;pt&quot;).to(device)
+model_inputs = tokenizer([text], return_tensors="pt").to(device)
 ```
 
-```
+```bash
 generated_ids = model.generate(
     model_inputs.input_ids,
     max_new_tokens=512
@@ -629,26 +629,26 @@ generated_ids = [
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 ```
 
-```
+```bash
 response
 ```
 
-```
-&#x27;你好，我叫小林，我是来自阿里云的大规模语言模型，能够理解和生成多种自然语言，有任何问题都可以问我&#x27;
+```text
+'你好，我叫小林，我是来自阿里云的大规模语言模型，能够理解和生成多种自然语言，有任何问题都可以问我'
 ```
 
 ### 三、基于SWIFT的高效微调流程
 
-```
+```bash
 import os
-os.environ[&#x27;CUDA_VISIBLE_DEVICES&#x27;] = &#x27;0&#x27;
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 ```
 
-```
+```bash
 from swift.llm import DatasetName, ModelType, SftArguments, sft_main
 ```
 
-```
+```text
 2024-04-16 22:20:19.338905: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 2024-04-16 22:20:19.417680: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
 2024-04-16 22:20:19.757824: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
@@ -658,12 +658,14 @@ from swift.llm import DatasetName, ModelType, SftArguments, sft_main
 2024-04-16 22:20:19.964881: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
 2024-04-16 22:20:21.346296: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-2024-04-16 22:20:24,208        INFO util.py:154 -- Missing packages: [&#x27;ipywidgets&#x27;]. Run `pip install -U ipywidgets`, then restart the notebook server for rich notebook output.
+2024-04-16 22:20:24,208        INFO util.py:154 -- Missing packages: ['ipywidgets']. Run `pip install -U ipywidgets`, then restart the notebook server for rich notebook output.
 ```
 
-```
+```bash
 model_type = ModelType.qwen_1_8b
 ```
+
+
 
 ```
 import os
@@ -711,7 +713,6 @@ To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other ope
 [INFO:modelscope] Use user-specified model revision: master
 [INFO:swift] Setting torch_dtype: None
 
-
 INFO 04-16 22:27:10 llm_engine.py:72] Initializing an LLM engine with config: model=&#x27;/mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat&#x27;, tokenizer=&#x27;/mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat&#x27;, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.float16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, seed=0)
 WARNING 04-16 22:27:10 tokenizer.py:64] Using a slow tokenizer. This might cause a significant slowdown. Consider using a fast tokenizer instead.
 INFO 04-16 22:27:17 llm_engine.py:322] # GPU blocks: 3955, # CPU blocks: 1365
@@ -750,7 +751,9 @@ To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other ope
 2024-04-16 22:28:46,250        INFO util.py:154 -- Missing packages: [&#x27;ipywidgets&#x27;]. Run `pip install -U ipywidgets`, then restart the notebook server for rich notebook output.
 ```
 
-```
+
+
+```python
 sft_args = SftArguments(
     model_type=ModelType.qwen_1_8b_chat,
     dataset=[DatasetName.ms_bench_mini],
@@ -759,91 +762,91 @@ sft_args = SftArguments(
     max_length=1024,
     learning_rate=5e-5,
     warmup_ratio=0.4,
-    output_dir=&#x27;output&#x27;,
-    lora_target_modules=[&#x27;ALL&#x27;],
+    output_dir='output',
+    lora_target_modules=['ALL'],
     self_cognition_sample=500,
-    model_name=[&#x27;小林&#x27;, &#x27;Xiao Lin&#x27;],
-    model_author=[&#x27;魔搭&#x27;, &#x27;ModelScope&#x27;])
+    model_name=['小林', 'Xiao Lin'],
+    model_author=['魔搭', 'ModelScope'])
 output = sft_main(sft_args)
-best_model_checkpoint = output[&#x27;best_model_checkpoint&#x27;]
-print(f&#x27;best_model_checkpoint: {best_model_checkpoint}&#x27;)
+best_model_checkpoint = output['best_model_checkpoint']
+print(f'best_model_checkpoint: {best_model_checkpoint}')
 ```
+
+
 
 ```
 [INFO:swift] Setting template_type: qwen
 [INFO:swift] Setting args.lazy_tokenize: False
 [INFO:swift] output_dir: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914
 [INFO:swift] Start time of running main: 2024-04-16 22:29:14.455994
-[INFO:swift] args: SftArguments(model_type=&#x27;qwen-1_8b-chat&#x27;, model_id_or_path=&#x27;qwen/Qwen-1_8B-Chat&#x27;, model_revision=&#x27;master&#x27;, model_layer_cls_name=None, sft_type=&#x27;lora&#x27;, freeze_parameters=0.0, additional_trainable_parameters=[], tuner_backend=&#x27;peft&#x27;, template_type=&#x27;qwen&#x27;, output_dir=&#x27;/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914&#x27;, add_output_dir_suffix=True, ddp_backend=None, ddp_find_unused_parameters=None, ddp_broadcast_buffers=None, seed=42, resume_from_checkpoint=None, dtype=&#x27;bf16&#x27;, dataset=[&#x27;ms-bench-mini&#x27;], dataset_seed=42, dataset_test_ratio=0.01, train_dataset_sample=1000, train_dataset_mix_ratio=0.0, train_dataset_mix_ds=[&#x27;ms-bench&#x27;], val_dataset_sample=None, use_loss_scale=False, system=None, max_length=1024, truncation_strategy=&#x27;delete&#x27;, check_dataset_strategy=&#x27;none&#x27;, custom_train_dataset_path=[], custom_val_dataset_path=[], self_cognition_sample=500, model_name=[&#x27;小黄&#x27;, &#x27;Xiao Huang&#x27;], model_author=[&#x27;魔搭&#x27;, &#x27;ModelScope&#x27;], quantization_bit=0, bnb_4bit_comp_dtype=&#x27;bf16&#x27;, bnb_4bit_quant_type=&#x27;nf4&#x27;, bnb_4bit_use_double_quant=True, bnb_4bit_quant_storage=None, lora_target_modules=[], lora_rank=8, lora_alpha=32, lora_dropout_p=0.05, lora_bias_trainable=&#x27;none&#x27;, lora_modules_to_save=[], lora_dtype=&#x27;fp32&#x27;, lora_lr_ratio=None, use_rslora=False, use_dora=False, adapter_act=&#x27;gelu&#x27;, adapter_length=128, use_galore=False, galore_rank=128, galore_target_modules=None, galore_update_proj_gap=50, galore_scale=1.0, galore_proj_type=&#x27;std&#x27;, galore_optim_per_parameter=False, galore_with_embedding=False, adalora_target_r=8, adalora_init_r=12, adalora_tinit=0, adalora_tfinal=0, adalora_deltaT=1, adalora_beta1=0.85, adalora_beta2=0.85, adalora_orth_reg_weight=0.5, ia3_target_modules=[&#x27;DEFAULT&#x27;], ia3_feedforward_modules=[], ia3_modules_to_save=[], llamapro_num_new_blocks=4, llamapro_num_groups=None, neftune_noise_alpha=None, neftune_backend=&#x27;transformers&#x27;, gradient_checkpointing=True, deepspeed=None, batch_size=1, eval_batch_size=1, num_train_epochs=1, max_steps=-1, optim=&#x27;adamw_torch&#x27;, adam_beta1=0.9, adam_beta2=0.999, learning_rate=5e-05, weight_decay=0.1, gradient_accumulation_steps=16, max_grad_norm=0.5, predict_with_generate=False, lr_scheduler_type=&#x27;linear&#x27;, warmup_ratio=0.4, eval_steps=50, save_steps=50, save_only_model=False, save_total_limit=2, logging_steps=5, dataloader_num_workers=1, dataloader_pin_memory=True, push_to_hub=False, hub_model_id=None, hub_token=None, hub_private_repo=False, push_hub_strategy=&#x27;push_best&#x27;, test_oom_error=False, disable_tqdm=False, lazy_tokenize=False, preprocess_num_proc=1, use_flash_attn=None, ignore_args_error=False, check_model_is_latest=True, logging_dir=&#x27;/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/runs&#x27;, report_to=[&#x27;tensorboard&#x27;], acc_strategy=&#x27;token&#x27;, save_on_each_node=True, evaluation_strategy=&#x27;steps&#x27;, save_strategy=&#x27;steps&#x27;, save_safetensors=True, gpu_memory_fraction=None, max_new_tokens=2048, do_sample=True, temperature=0.3, top_k=20, top_p=0.7, repetition_penalty=1.0, num_beams=1, per_device_train_batch_size=None, per_device_eval_batch_size=None, only_save_model=None, neftune_alpha=None, deepspeed_config_path=None, model_cache_dir=None, fsdp=&#x27;&#x27;, fsdp_config=None)
+[INFO:swift] args: SftArguments(model_type='qwen-1_8b-chat', model_id_or_path='qwen/Qwen-1_8B-Chat', model_revision='master', model_layer_cls_name=None, sft_type='lora', freeze_parameters=0.0, additional_trainable_parameters=[], tuner_backend='peft', template_type='qwen', output_dir='/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914', add_output_dir_suffix=True, ddp_backend=None, ddp_find_unused_parameters=None, ddp_broadcast_buffers=None, seed=42, resume_from_checkpoint=None, dtype='bf16', dataset=['ms-bench-mini'], dataset_seed=42, dataset_test_ratio=0.01, train_dataset_sample=1000, train_dataset_mix_ratio=0.0, train_dataset_mix_ds=['ms-bench'], val_dataset_sample=None, use_loss_scale=False, system=None, max_length=1024, truncation_strategy='delete', check_dataset_strategy='none', custom_train_dataset_path=[], custom_val_dataset_path=[], self_cognition_sample=500, model_name=['小黄', 'Xiao Huang'], model_author=['魔搭', 'ModelScope'], quantization_bit=0, bnb_4bit_comp_dtype='bf16', bnb_4bit_quant_type='nf4', bnb_4bit_use_double_quant=True, bnb_4bit_quant_storage=None, lora_target_modules=[], lora_rank=8, lora_alpha=32, lora_dropout_p=0.05, lora_bias_trainable='none', lora_modules_to_save=[], lora_dtype='fp32', lora_lr_ratio=None, use_rslora=False, use_dora=False, adapter_act='gelu', adapter_length=128, use_galore=False, galore_rank=128, galore_target_modules=None, galore_update_proj_gap=50, galore_scale=1.0, galore_proj_type='std', galore_optim_per_parameter=False, galore_with_embedding=False, adalora_target_r=8, adalora_init_r=12, adalora_tinit=0, adalora_tfinal=0, adalora_deltaT=1, adalora_beta1=0.85, adalora_beta2=0.85, adalora_orth_reg_weight=0.5, ia3_target_modules=['DEFAULT'], ia3_feedforward_modules=[], ia3_modules_to_save=[], llamapro_num_new_blocks=4, llamapro_num_groups=None, neftune_noise_alpha=None, neftune_backend='transformers', gradient_checkpointing=True, deepspeed=None, batch_size=1, eval_batch_size=1, num_train_epochs=1, max_steps=-1, optim='adamw_torch', adam_beta1=0.9, adam_beta2=0.999, learning_rate=5e-05, weight_decay=0.1, gradient_accumulation_steps=16, max_grad_norm=0.5, predict_with_generate=False, lr_scheduler_type='linear', warmup_ratio=0.4, eval_steps=50, save_steps=50, save_only_model=False, save_total_limit=2, logging_steps=5, dataloader_num_workers=1, dataloader_pin_memory=True, push_to_hub=False, hub_model_id=None, hub_token=None, hub_private_repo=False, push_hub_strategy='push_best', test_oom_error=False, disable_tqdm=False, lazy_tokenize=False, preprocess_num_proc=1, use_flash_attn=None, ignore_args_error=False, check_model_is_latest=True, logging_dir='/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/runs', report_to=['tensorboard'], acc_strategy='token', save_on_each_node=True, evaluation_strategy='steps', save_strategy='steps', save_safetensors=True, gpu_memory_fraction=None, max_new_tokens=2048, do_sample=True, temperature=0.3, top_k=20, top_p=0.7, repetition_penalty=1.0, num_beams=1, per_device_train_batch_size=None, per_device_eval_batch_size=None, only_save_model=None, neftune_alpha=None, deepspeed_config_path=None, model_cache_dir=None, fsdp='', fsdp_config=None)
 [INFO:swift] Global seed set to 42
 [INFO:swift] Downloading the model from ModelScope Hub, model_id: qwen/Qwen-1_8B-Chat
 
-
 device_count: 1
 rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
-
 
 [WARNING:modelscope] Using the master branch is fragile, please use it with caution!
 [INFO:modelscope] Use user-specified model revision: master
 Try importing flash-attention for faster inference...
 Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
-Loading checkpoint shards: 100%|██████████| 2/2 [00:01&lt;00:00,  1.58it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.58it/s]
 [INFO:swift] model.max_model_len: 8192
 [INFO:swift] model_config: QWenConfig {
-  &quot;_name_or_path&quot;: &quot;/mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat&quot;,
-  &quot;architectures&quot;: [
-    &quot;QWenLMHeadModel&quot;
+  "_name_or_path": "/mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat",
+  "architectures": [
+    "QWenLMHeadModel"
   ],
-  &quot;attn_dropout_prob&quot;: 0.0,
-  &quot;auto_map&quot;: {
-    &quot;AutoConfig&quot;: &quot;configuration_qwen.QWenConfig&quot;,
-    &quot;AutoModelForCausalLM&quot;: &quot;modeling_qwen.QWenLMHeadModel&quot;
+  "attn_dropout_prob": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_qwen.QWenConfig",
+    "AutoModelForCausalLM": "modeling_qwen.QWenLMHeadModel"
   },
-  &quot;bf16&quot;: true,
-  &quot;emb_dropout_prob&quot;: 0.0,
-  &quot;fp16&quot;: false,
-  &quot;fp32&quot;: false,
-  &quot;hidden_size&quot;: 2048,
-  &quot;initializer_range&quot;: 0.02,
-  &quot;intermediate_size&quot;: 11008,
-  &quot;kv_channels&quot;: 128,
-  &quot;layer_norm_epsilon&quot;: 1e-06,
-  &quot;max_position_embeddings&quot;: 8192,
-  &quot;model_type&quot;: &quot;qwen&quot;,
-  &quot;no_bias&quot;: true,
-  &quot;num_attention_heads&quot;: 16,
-  &quot;num_hidden_layers&quot;: 24,
-  &quot;onnx_safe&quot;: null,
-  &quot;rotary_emb_base&quot;: 10000,
-  &quot;rotary_pct&quot;: 1.0,
-  &quot;scale_attn_weights&quot;: true,
-  &quot;seq_length&quot;: 8192,
-  &quot;softmax_in_fp32&quot;: false,
-  &quot;tie_word_embeddings&quot;: false,
-  &quot;tokenizer_class&quot;: &quot;QWenTokenizer&quot;,
-  &quot;transformers_version&quot;: &quot;4.39.3&quot;,
-  &quot;use_cache&quot;: true,
-  &quot;use_cache_kernel&quot;: false,
-  &quot;use_cache_quantization&quot;: false,
-  &quot;use_dynamic_ntk&quot;: true,
-  &quot;use_flash_attn&quot;: true,
-  &quot;use_logn_attn&quot;: true,
-  &quot;vocab_size&quot;: 151936
+  "bf16": true,
+  "emb_dropout_prob": 0.0,
+  "fp16": false,
+  "fp32": false,
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "kv_channels": 128,
+  "layer_norm_epsilon": 1e-06,
+  "max_position_embeddings": 8192,
+  "model_type": "qwen",
+  "no_bias": true,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "onnx_safe": null,
+  "rotary_emb_base": 10000,
+  "rotary_pct": 1.0,
+  "scale_attn_weights": true,
+  "seq_length": 8192,
+  "softmax_in_fp32": false,
+  "tie_word_embeddings": false,
+  "tokenizer_class": "QWenTokenizer",
+  "transformers_version": "4.39.3",
+  "use_cache": true,
+  "use_cache_kernel": false,
+  "use_cache_quantization": false,
+  "use_dynamic_ntk": true,
+  "use_flash_attn": true,
+  "use_logn_attn": true,
+  "vocab_size": 151936
 }
 
 [INFO:swift] generation_config: GenerationConfig {
-  &quot;do_sample&quot;: true,
-  &quot;eos_token_id&quot;: 151645,
-  &quot;max_new_tokens&quot;: 2048,
-  &quot;pad_token_id&quot;: 151645,
-  &quot;temperature&quot;: 0.3,
-  &quot;top_k&quot;: 20,
-  &quot;top_p&quot;: 0.7
+  "do_sample": true,
+  "eos_token_id": 151645,
+  "max_new_tokens": 2048,
+  "pad_token_id": 151645,
+  "temperature": 0.3,
+  "top_k": 20,
+  "top_p": 0.7
 }
 
-[INFO:swift] lora_target_modules: [&#x27;w1&#x27;, &#x27;c_proj&#x27;, &#x27;c_attn&#x27;, &#x27;w2&#x27;]
+[INFO:swift] lora_target_modules: ['w1', 'c_proj', 'c_attn', 'w2']
 [INFO:swift] lora_modules_to_save: []
-[INFO:swift] lora_config: get_wrapped_class.&lt;locals&gt;.PeftWrapper(peft_type=&lt;PeftType.LORA: &#x27;LORA&#x27;&gt;, auto_mapping=None, base_model_name_or_path=&#x27;/mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat&#x27;, revision=None, task_type=&#x27;CAUSAL_LM&#x27;, inference_mode=False, r=8, target_modules={&#x27;w1&#x27;, &#x27;c_proj&#x27;, &#x27;c_attn&#x27;, &#x27;w2&#x27;}, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias=&#x27;none&#x27;, use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core=&#x27;megatron.core&#x27;, loftq_config={}, use_dora=False, lora_dtype=&#x27;fp32&#x27;, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] lora_config: get_wrapped_class.<locals>.PeftWrapper(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path='/mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat', revision=None, task_type='CAUSAL_LM', inference_mode=False, r=8, target_modules={'w1', 'c_proj', 'c_attn', 'w2'}, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, lora_dtype='fp32', lorap_lr_ratio=None, lorap_emb_lr=1e-06)
 [INFO:swift] [base_model.model.transformer.wte.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
 [INFO:swift] [base_model.model.transformer.h.0.ln_1.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
 [INFO:swift] [base_model.model.transformer.h.0.attn.c_attn.base_layer.weight]: requires_grad=False, dtype=torch.bfloat16, device=cuda:0
@@ -966,37 +969,37 @@ Loading checkpoint shards: 100%|██████████| 2/2 [00:01&lt;00
 [WARNING:modelscope] Reusing dataset dataset_builder (/root/.cache/modelscope/hub/datasets/iic/ms_bench/master/data_files)
 [INFO:modelscope] Generating dataset dataset_builder (/root/.cache/modelscope/hub/datasets/iic/ms_bench/master/data_files)
 [INFO:modelscope] Reusing cached meta-data file: /root/.cache/modelscope/hub/datasets/iic/ms_bench/master/data_files/c03324a39ae53a8e79572f310abf4e1c
-100%|██████████| 20000/20000 [00:03&lt;00:00, 6577.23it/s]
+100%|██████████| 20000/20000 [00:03<00:00, 6577.23it/s]
 [INFO:swift] train_dataset_sample: 1000
 [INFO:swift] val_dataset_sample: 10
 [INFO:swift] train_dataset: Dataset({
-    features: [&#x27;system&#x27;, &#x27;history&#x27;, &#x27;query&#x27;, &#x27;response&#x27;],
+    features: ['system', 'history', 'query', 'response'],
     num_rows: 1500
 })
 [INFO:swift] val_dataset: Dataset({
-    features: [&#x27;system&#x27;, &#x27;history&#x27;, &#x27;query&#x27;, &#x27;response&#x27;],
+    features: ['system', 'history', 'query', 'response'],
     num_rows: 10
 })
 [INFO:swift] system: You are a helpful assistant.
 [INFO:swift] args.lazy_tokenize: False
 [INFO:swift] Using num_proc: 1
-100%|██████████| 1500/1500 [00:00&lt;00:00, 1727.10it/s]
-100%|██████████| 10/10 [00:00&lt;00:00, 572.75it/s]
+100%|██████████| 1500/1500 [00:00<00:00, 1727.10it/s]
+100%|██████████| 10/10 [00:00<00:00, 572.75it/s]
 [INFO:swift] [INPUT_IDS] [151644, 8948, 198, 2610, 525, 264, 10950, 17847, 13, 151645, 198, 151644, 872, 198, 100678, 104242, 57218, 101950, 104612, 100002, 109181, 33108, 107155, 99604, 11319, 59, 77, 102104, 104135, 103936, 1773, 151645, 198, 151644, 77091, 198, 104242, 57218, 101950, 104612, 100002, 109181, 33108, 107155, 20412, 101970, 3837, 99519, 104017, 100629, 101970, 64388, 102, 21887, 105155, 59133, 34369, 114, 15946, 46944, 99936, 9370, 105155, 20412, 88653, 31914, 9909, 109181, 33108, 107155, 7552, 9370, 107872, 33071, 1773, 109181, 110605, 100186, 107872, 9370, 3837, 109883, 100783, 104601, 42140, 100964, 101950, 3837, 104121, 110238, 100740, 105928, 1773, 57218, 53930, 99604, 3837, 107155, 9370, 107872, 33071, 105440, 3837, 39165, 101950, 100649, 13343, 3837, 104121, 110238, 36993, 99536, 30709, 66898, 77, 109181, 9370, 104242, 57218, 101950, 104612, 105125, 103001, 100180, 23384, 38507, 9909, 32904, 1064, 84, 4517, 594, 84670, 7552, 36407, 53481, 3837, 90919, 109181, 18493, 104577, 101047, 102403, 20412, 101887, 101950, 100546, 26381, 105998, 1773, 75882, 23384, 38507, 30440, 51463, 17714, 5122, 104242, 11995, 251, 320, 99369, 66569, 9370, 220, 19, 6567, 105, 94, 23384, 8, 353, 4891, 236, 233, 47534, 99572, 1773, 105884, 3837, 109181, 9370, 104242, 101067, 104577, 99369, 66569, 9370, 100649, 100827, 63703, 32571, 23384, 97306, 100023, 3837, 68536, 101950, 99572, 101162, 109413, 66898, 77, 68536, 107155, 9370, 104242, 57218, 101950, 104612, 46448, 106466, 102044, 100657, 59532, 23384, 38507, 9909, 59926, 283, 39976, 594, 84670, 48272, 99652, 100751, 53481, 88653, 31914, 9370, 101079, 1773, 4891, 236, 233, 47534, 57218, 101149, 12857, 94443, 56006, 9909, 91676, 3837, 39165, 101149, 100649, 13343, 3837, 101950, 99536, 30709, 48272, 101886, 67338, 104577, 102403, 9370, 107155, 18493, 99623, 101950, 16872, 36993, 23031, 108025, 101149, 102403, 1773, 117607, 3837, 104242, 57218, 101950, 104612, 18493, 109181, 33108, 107155, 15946, 20412, 101970, 3837, 99519, 104017, 100629, 101970, 102462, 105539, 1773, 151645]
-[INFO:swift] [INPUT] &lt;|im_start|&gt;system
-You are a helpful assistant.&lt;|im_end|&gt;
-&lt;|im_start|&gt;user
-为什么流量与压力的关系对于液体和气体不同？\n回答上面的问题。&lt;|im_end|&gt;
-&lt;|im_start|&gt;assistant
-流量与压力的关系对于液体和气体是不同的，因为它们具有不同的 物理性质 。 其中一个关键的性质是流体（液体和气体）的压缩性。液体几乎是不可压缩的，这意味着无论维持多高的压力，它的体积几乎不变。与之不同，气体的压缩性很高，当压力增加时，它的体积会减小。\n液体的流量与压力的关系可以通过泊松方程（Poiseuille&#x27;s Equation）来描述，其中液体在管道中的流动是由于压力梯度造成的。该方程可表示为：流量 ∝ (半径的 4 次方) * 压力差。也就是说，液体的流量随着管道半径的增加呈四次方倍增长，而压力差相对较小。\n而气体的流量与压力的关系则遵循伯努利方程（Bernoulli&#x27;s Equation），它用于描述流体的运动。 压力与速度成反比（即，当速度增加时，压力减小），因此通过管道流动的气体在一定压力下会以更高的速度流动。总而言之，流量与压力的关系在液体和气体中是不同的，因为它们具有不同的物理特性。&lt;|im_end|&gt;
-[INFO:swift] [LABLES_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 104242, 57218, 101950, 104612, 100002, 109181, 33108, 107155, 20412, 101970, 3837, 99519, 104017, 100629, 101970, 64388, 102, 21887, 105155, 59133, 34369, 114, 15946, 46944, 99936, 9370, 105155, 20412, 88653, 31914, 9909, 109181, 33108, 107155, 7552, 9370, 107872, 33071, 1773, 109181, 110605, 100186, 107872, 9370, 3837, 109883, 100783, 104601, 42140, 100964, 101950, 3837, 104121, 110238, 100740, 105928, 1773, 57218, 53930, 99604, 3837, 107155, 9370, 107872, 33071, 105440, 3837, 39165, 101950, 100649, 13343, 3837, 104121, 110238, 36993, 99536, 30709, 66898, 77, 109181, 9370, 104242, 57218, 101950, 104612, 105125, 103001, 100180, 23384, 38507, 9909, 32904, 1064, 84, 4517, 594, 84670, 7552, 36407, 53481, 3837, 90919, 109181, 18493, 104577, 101047, 102403, 20412, 101887, 101950, 100546, 26381, 105998, 1773, 75882, 23384, 38507, 30440, 51463, 17714, 5122, 104242, 11995, 251, 320, 99369, 66569, 9370, 220, 19, 6567, 105, 94, 23384, 8, 353, 4891, 236, 233, 47534, 99572, 1773, 105884, 3837, 109181, 9370, 104242, 101067, 104577, 99369, 66569, 9370, 100649, 100827, 63703, 32571, 23384, 97306, 100023, 3837, 68536, 101950, 99572, 101162, 109413, 66898, 77, 68536, 107155, 9370, 104242, 57218, 101950, 104612, 46448, 106466, 102044, 100657, 59532, 23384, 38507, 9909, 59926, 283, 39976, 594, 84670, 48272, 99652, 100751, 53481, 88653, 31914, 9370, 101079, 1773, 4891, 236, 233, 47534, 57218, 101149, 12857, 94443, 56006, 9909, 91676, 3837, 39165, 101149, 100649, 13343, 3837, 101950, 99536, 30709, 48272, 101886, 67338, 104577, 102403, 9370, 107155, 18493, 99623, 101950, 16872, 36993, 23031, 108025, 101149, 102403, 1773, 117607, 3837, 104242, 57218, 101950, 104612, 18493, 109181, 33108, 107155, 15946, 20412, 101970, 3837, 99519, 104017, 100629, 101970, 102462, 105539, 1773, 151645]
-[INFO:swift] [LABLES] [-100 * 36]流量与压力的关系对于液体和气体是不同的，因为它们具有不同的 物理性质 。 其中一个关键的性质是流体（液体和气体）的压缩性。液体几乎是不可压缩的，这意味着无论维持多高的压力，它的体积几乎不变。与之不同，气体的压缩性很高，当压力增加时，它的体积会减小。\n液体的流量与压力的关系可以通过泊松方程（Poiseuille&#x27;s Equation）来描述，其中液体在管道中的流动是由于压力梯度造成的。该方程可表示为：流量 ∝ (半径的 4 次方) * 压力差。也就是说，液体的流量随着管道半径的增加呈四次方倍增长，而压力差相对较小。\n而气体的流量与压力的关系则遵循伯努利方程（Bernoulli&#x27;s Equation），它用于描述流体的运动。 压力与速度成反比（即，当速度增加时，压力减小），因此通过管道流动的气体在一定压力下会以更高的速度流动。总而言之，流量与压力的关系在液体和气体中是不同的，因为它们具有不同的物理特性。&lt;|im_end|&gt;
+[INFO:swift] [INPUT] <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+为什么流量与压力的关系对于液体和气体不同？\n回答上面的问题。<|im_end|>
+<|im_start|>assistant
+流量与压力的关系对于液体和气体是不同的，因为它们具有不同的 物理性质 。 其中一个关键的性质是流体（液体和气体）的压缩性。液体几乎是不可压缩的，这意味着无论维持多高的压力，它的体积几乎不变。与之不同，气体的压缩性很高，当压力增加时，它的体积会减小。\n液体的流量与压力的关系可以通过泊松方程（Poiseuille's Equation）来描述，其中液体在管道中的流动是由于压力梯度造成的。该方程可表示为：流量 ∝ (半径的 4 次方) * 压力差。也就是说，液体的流量随着管道半径的增加呈四次方倍增长，而压力差相对较小。\n而气体的流量与压力的关系则遵循伯努利方程（Bernoulli's Equation），它用于描述流体的运动。 压力与速度成反比（即，当速度增加时，压力减小），因此通过管道流动的气体在一定压力下会以更高的速度流动。总而言之，流量与压力的关系在液体和气体中是不同的，因为它们具有不同的物理特性。<|im_end|>
+[INFO:swift] [LABLES_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 104242, 57218, 101950, 104612, 100002, 109181, 33108, 107155, 20412, 101970, 3837, 99519, 104017, 100629, 101970, 64388, 102, 21887, 105155, 59133, 34369, 114, 15946, 46944, 99936, 9370, 105155, 20412, 88653, 31914, 9909, 109181, 33108, 107155, 7552, 9370, 107872, 33071, 1773, 109181, 110605, 100186, 107872, 9370, 3837, 109883, 100783, 104601, 42140, 100964, 101950, 3837, 104121, 110238, 100740, 105928, 1773, 57218, 53930, 99604, 3837, 107155, 9370, 107872, 33071, 105440, 3837, 39165, 101950, 100649, 13343, 3837, 104121, 110238, 36993, 99536, 30709, 66898, 77, 109181, 9370, 104242, 57218, 101950, 104612, 105125, 103001, 100180, 23384, 38507, 9909, 32904, 1064, 84, 4517, 594, 84670, 7552, 36407, 53481, 3837, 90919, 109181, 18493, 104577, 101047, 102403, 20412, 101887, 101950, 100546, 26381, 105998, 1773, 75882, 23384, 38507, 30440, 51463, 17714, 5122, 104242, 11995, 251, 320, 99369, 66569, 9370, 220, 19, 6567, 105, 94, 23384, 8, 353, 4891, 236, 233, 47534, 99572, 1773, 105884, 3837, 109181, 9370, 104242, 101067, 104577, 99369, 66569, 9370, 100649, 100827, 63703, 32571, 23384, 97306, 100023, 3837, 68536, 101950, 99572, 101162, 109413, 66898, 77, 68536, 107155, 9370, 104242, 57218, 101950, 104612, 46448, 106466, 102044, 100657, 59532, 23384, 38507, 9909, 59926, 283, 39976, 594, 84670, 48272, 99652, 100751, 53481, 88653, 31914, 9370, 101079, 1773, 4891, 236, 233, 47534, 57218, 101149, 12857, 94443, 56006, 9909, 91676, 3837, 39165, 101149, 100649, 13343, 3837, 101950, 99536, 30709, 48272, 101886, 67338, 104577, 102403, 9370, 107155, 18493, 99623, 101950, 16872, 36993, 23031, 108025, 101149, 102403, 1773, 117607, 3837, 104242, 57218, 101950, 104612, 18493, 109181, 33108, 107155, 15946, 20412, 101970, 3837, 99519, 104017, 100629, 101970, 102462, 105539, 1773, 151645]
+[INFO:swift] [LABLES] [-100 * 36]流量与压力的关系对于液体和气体是不同的，因为它们具有不同的 物理性质 。 其中一个关键的性质是流体（液体和气体）的压缩性。液体几乎是不可压缩的，这意味着无论维持多高的压力，它的体积几乎不变。与之不同，气体的压缩性很高，当压力增加时，它的体积会减小。\n液体的流量与压力的关系可以通过泊松方程（Poiseuille's Equation）来描述，其中液体在管道中的流动是由于压力梯度造成的。该方程可表示为：流量 ∝ (半径的 4 次方) * 压力差。也就是说，液体的流量随着管道半径的增加呈四次方倍增长，而压力差相对较小。\n而气体的流量与压力的关系则遵循伯努利方程（Bernoulli's Equation），它用于描述流体的运动。 压力与速度成反比（即，当速度增加时，压力减小），因此通过管道流动的气体在一定压力下会以更高的速度流动。总而言之，流量与压力的关系在液体和气体中是不同的，因为它们具有不同的物理特性。<|im_end|>
 [INFO:swift] Dataset Token Length: 176.671558±156.453496, min=29.000000, max=1016.000000, size=1431
 [INFO:swift] Dataset Token Length: 335.600000±135.241414, min=156.000000, max=571.000000, size=5
 [INFO:swift] training_args: Seq2SeqTrainingArguments(
 _n_gpu=1,
 acc_strategy=token,
-accelerator_config={&#x27;split_batches&#x27;: False, &#x27;dispatch_batches&#x27;: None, &#x27;even_batches&#x27;: True, &#x27;use_seedable_sampler&#x27;: True},
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True},
 adafactor=False,
 adam_beta1=0.9,
 adam_beta2=0.999,
@@ -1032,20 +1035,20 @@ fp16_backend=auto,
 fp16_full_eval=False,
 fp16_opt_level=O1,
 fsdp=[],
-fsdp_config={&#x27;min_num_params&#x27;: 0, &#x27;xla&#x27;: False, &#x27;xla_fsdp_v2&#x27;: False, &#x27;xla_fsdp_grad_ckpt&#x27;: False},
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
 fsdp_min_num_params=0,
 fsdp_transformer_layer_cls_to_wrap=None,
 full_determinism=False,
 generation_config=GenerationConfig {
-  &quot;chat_format&quot;: &quot;chatml&quot;,
-  &quot;do_sample&quot;: true,
-  &quot;eos_token_id&quot;: 151645,
-  &quot;max_new_tokens&quot;: 2048,
-  &quot;max_window_size&quot;: 6144,
-  &quot;pad_token_id&quot;: 151645,
-  &quot;temperature&quot;: 0.3,
-  &quot;top_k&quot;: 20,
-  &quot;top_p&quot;: 0.7
+  "chat_format": "chatml",
+  "do_sample": true,
+  "eos_token_id": 151645,
+  "max_new_tokens": 2048,
+  "max_window_size": 6144,
+  "pad_token_id": 151645,
+  "temperature": 0.3,
+  "top_k": 20,
+  "top_p": 0.7
 }
 ,
 generation_max_length=None,
@@ -1060,7 +1063,7 @@ hub_always_push=False,
 hub_model_id=None,
 hub_private_repo=False,
 hub_strategy=every_save,
-hub_token=&lt;HUB_TOKEN&gt;,
+hub_token=<HUB_TOKEN>,
 ignore_data_skip=False,
 include_inputs_for_metrics=False,
 include_num_input_tokens_seen=False,
@@ -1103,10 +1106,10 @@ push_hub_strategy=push_best,
 push_to_hub=False,
 push_to_hub_model_id=None,
 push_to_hub_organization=None,
-push_to_hub_token=&lt;PUSH_TO_HUB_TOKEN&gt;,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
 ray_scope=last,
 remove_unused_columns=False,
-report_to=[&#x27;tensorboard&#x27;],
+report_to=['tensorboard'],
 resume_from_checkpoint=None,
 run_name=/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914,
 save_on_each_node=True,
@@ -1140,159 +1143,117 @@ Detected kernel version 4.19.91, which is below the recommended minimum of 5.5.0
 [INFO:swift] The SftArguments will be saved in: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/sft_args.json
 [INFO:swift] The Seq2SeqTrainingArguments will be saved in: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/training_args.json
 [INFO:swift] The logging file will be saved in: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/logging.jsonl
-Train:   1%|          | 1/89 [00:06&lt;09:19,  6.36s/it]
+Train:   1%|          | 1/89 [00:06<09:19,  6.36s/it]
 
-{&#x27;loss&#x27;: 1.64136648, &#x27;acc&#x27;: 0.68172103, &#x27;grad_norm&#x27;: 1.69190156, &#x27;learning_rate&#x27;: 1.39e-06, &#x27;epoch&#x27;: 0.01, &#x27;global_step&#x27;: 1}
+{'loss': 1.64136648, 'acc': 0.68172103, 'grad_norm': 1.69190156, 'learning_rate': 1.39e-06, 'epoch': 0.01, 'global_step': 1}
 
+Train:   6%|▌         | 5/89 [00:21<05:27,  3.89s/it]
 
-Train:   6%|▌         | 5/89 [00:21&lt;05:27,  3.89s/it]
+{'loss': 1.63167727, 'acc': 0.64289814, 'grad_norm': 1.66442025, 'learning_rate': 6.94e-06, 'epoch': 0.06, 'global_step': 5}
 
-{&#x27;loss&#x27;: 1.63167727, &#x27;acc&#x27;: 0.64289814, &#x27;grad_norm&#x27;: 1.66442025, &#x27;learning_rate&#x27;: 6.94e-06, &#x27;epoch&#x27;: 0.06, &#x27;global_step&#x27;: 5}
+Train:  11%|█         | 10/89 [00:39<04:49,  3.66s/it]
 
+{'loss': 1.92896576, 'acc': 0.59357691, 'grad_norm': 1.84479547, 'learning_rate': 1.389e-05, 'epoch': 0.11, 'global_step': 10}
 
-Train:  11%|█         | 10/89 [00:39&lt;04:49,  3.66s/it]
+Train:  17%|█▋        | 15/89 [00:57<04:30,  3.65s/it]
 
-{&#x27;loss&#x27;: 1.92896576, &#x27;acc&#x27;: 0.59357691, &#x27;grad_norm&#x27;: 1.84479547, &#x27;learning_rate&#x27;: 1.389e-05, &#x27;epoch&#x27;: 0.11, &#x27;global_step&#x27;: 10}
+{'loss': 1.8607481, 'acc': 0.60540519, 'grad_norm': 1.48451436, 'learning_rate': 2.083e-05, 'epoch': 0.17, 'global_step': 15}
 
+Train:  22%|██▏       | 20/89 [01:16<04:13,  3.68s/it]
 
-Train:  17%|█▋        | 15/89 [00:57&lt;04:30,  3.65s/it]
+{'loss': 1.69917068, 'acc': 0.61718016, 'grad_norm': 1.53137004, 'learning_rate': 2.778e-05, 'epoch': 0.22, 'global_step': 20}
 
-{&#x27;loss&#x27;: 1.8607481, &#x27;acc&#x27;: 0.60540519, &#x27;grad_norm&#x27;: 1.48451436, &#x27;learning_rate&#x27;: 2.083e-05, &#x27;epoch&#x27;: 0.17, &#x27;global_step&#x27;: 15}
+Train:  28%|██▊       | 25/89 [01:34<03:54,  3.67s/it]
 
+{'loss': 1.68591938, 'acc': 0.60983787, 'grad_norm': 1.34298587, 'learning_rate': 3.472e-05, 'epoch': 0.28, 'global_step': 25}
 
-Train:  22%|██▏       | 20/89 [01:16&lt;04:13,  3.68s/it]
+Train:  34%|███▎      | 30/89 [01:53<03:40,  3.73s/it]
 
-{&#x27;loss&#x27;: 1.69917068, &#x27;acc&#x27;: 0.61718016, &#x27;grad_norm&#x27;: 1.53137004, &#x27;learning_rate&#x27;: 2.778e-05, &#x27;epoch&#x27;: 0.22, &#x27;global_step&#x27;: 20}
+{'loss': 1.54688282, 'acc': 0.63031483, 'grad_norm': 1.19731069, 'learning_rate': 4.167e-05, 'epoch': 0.34, 'global_step': 30}
 
+Train:  39%|███▉      | 35/89 [02:11<03:16,  3.64s/it]
 
-Train:  28%|██▊       | 25/89 [01:34&lt;03:54,  3.67s/it]
+{'loss': 1.5590704, 'acc': 0.61428418, 'grad_norm': 1.42478693, 'learning_rate': 4.861e-05, 'epoch': 0.39, 'global_step': 35}
 
-{&#x27;loss&#x27;: 1.68591938, &#x27;acc&#x27;: 0.60983787, &#x27;grad_norm&#x27;: 1.34298587, &#x27;learning_rate&#x27;: 3.472e-05, &#x27;epoch&#x27;: 0.28, &#x27;global_step&#x27;: 25}
+Train:  45%|████▍     | 40/89 [02:29<02:58,  3.63s/it]
 
+{'loss': 1.4047307, 'acc': 0.66098819, 'grad_norm': 1.37417483, 'learning_rate': 4.623e-05, 'epoch': 0.45, 'global_step': 40}
 
-Train:  34%|███▎      | 30/89 [01:53&lt;03:40,  3.73s/it]
+Train:  51%|█████     | 45/89 [02:48<02:44,  3.73s/it]
 
-{&#x27;loss&#x27;: 1.54688282, &#x27;acc&#x27;: 0.63031483, &#x27;grad_norm&#x27;: 1.19731069, &#x27;learning_rate&#x27;: 4.167e-05, &#x27;epoch&#x27;: 0.34, &#x27;global_step&#x27;: 30}
+{'loss': 1.5553216, 'acc': 0.61068773, 'grad_norm': 1.16940784, 'learning_rate': 4.151e-05, 'epoch': 0.5, 'global_step': 45}
 
+Train:  56%|█████▌    | 50/89 [03:07<02:26,  3.76s/it]
 
-Train:  39%|███▉      | 35/89 [02:11&lt;03:16,  3.64s/it]
+{'loss': 1.53412075, 'acc': 0.62938571, 'grad_norm': 1.03350544, 'learning_rate': 3.679e-05, 'epoch': 0.56, 'global_step': 50}
 
-{&#x27;loss&#x27;: 1.5590704, &#x27;acc&#x27;: 0.61428418, &#x27;grad_norm&#x27;: 1.42478693, &#x27;learning_rate&#x27;: 4.861e-05, &#x27;epoch&#x27;: 0.39, &#x27;global_step&#x27;: 35}
-
-
-Train:  45%|████▍     | 40/89 [02:29&lt;02:58,  3.63s/it]
-
-{&#x27;loss&#x27;: 1.4047307, &#x27;acc&#x27;: 0.66098819, &#x27;grad_norm&#x27;: 1.37417483, &#x27;learning_rate&#x27;: 4.623e-05, &#x27;epoch&#x27;: 0.45, &#x27;global_step&#x27;: 40}
-
-
-Train:  51%|█████     | 45/89 [02:48&lt;02:44,  3.73s/it]
-
-{&#x27;loss&#x27;: 1.5553216, &#x27;acc&#x27;: 0.61068773, &#x27;grad_norm&#x27;: 1.16940784, &#x27;learning_rate&#x27;: 4.151e-05, &#x27;epoch&#x27;: 0.5, &#x27;global_step&#x27;: 45}
-
-
-Train:  56%|█████▌    | 50/89 [03:07&lt;02:26,  3.76s/it]
-
-{&#x27;loss&#x27;: 1.53412075, &#x27;acc&#x27;: 0.62938571, &#x27;grad_norm&#x27;: 1.03350544, &#x27;learning_rate&#x27;: 3.679e-05, &#x27;epoch&#x27;: 0.56, &#x27;global_step&#x27;: 50}
-
-
-
-Val: 100%|██████████| 5/5 [00:00&lt;00:00, 16.82it/s]/it]
+Val: 100%|██████████| 5/5 [00:00<00:00, 16.82it/s]/it]
 [INFO:swift] Saving model checkpoint to /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-50
 /opt/conda/lib/python3.10/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in /mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat - will assume that the vocabulary was not modified.
   warnings.warn(
 
+{'eval_loss': 1.41281366, 'eval_acc': 0.66367403, 'eval_runtime': 0.4505, 'eval_samples_per_second': 11.099, 'eval_steps_per_second': 11.099, 'epoch': 0.56, 'global_step': 50}
 
-{&#x27;eval_loss&#x27;: 1.41281366, &#x27;eval_acc&#x27;: 0.66367403, &#x27;eval_runtime&#x27;: 0.4505, &#x27;eval_samples_per_second&#x27;: 11.099, &#x27;eval_steps_per_second&#x27;: 11.099, &#x27;epoch&#x27;: 0.56, &#x27;global_step&#x27;: 50}
+Train:  62%|██████▏   | 55/89 [03:26<02:09,  3.82s/it]
 
+{'loss': 1.53897858, 'acc': 0.61777878, 'grad_norm': 1.42143309, 'learning_rate': 3.208e-05, 'epoch': 0.61, 'global_step': 55}
 
-Train:  62%|██████▏   | 55/89 [03:26&lt;02:09,  3.82s/it]
+Train:  67%|██████▋   | 60/89 [03:45<01:49,  3.78s/it]
 
-{&#x27;loss&#x27;: 1.53897858, &#x27;acc&#x27;: 0.61777878, &#x27;grad_norm&#x27;: 1.42143309, &#x27;learning_rate&#x27;: 3.208e-05, &#x27;epoch&#x27;: 0.61, &#x27;global_step&#x27;: 55}
+{'loss': 1.44012489, 'acc': 0.64312091, 'grad_norm': 1.19320941, 'learning_rate': 2.736e-05, 'epoch': 0.67, 'global_step': 60}
 
+Train:  73%|███████▎  | 65/89 [04:03<01:27,  3.63s/it]
 
-Train:  67%|██████▋   | 60/89 [03:45&lt;01:49,  3.78s/it]
+{'loss': 1.3934391, 'acc': 0.6493372, 'grad_norm': 1.76045263, 'learning_rate': 2.264e-05, 'epoch': 0.73, 'global_step': 65}
 
-{&#x27;loss&#x27;: 1.44012489, &#x27;acc&#x27;: 0.64312091, &#x27;grad_norm&#x27;: 1.19320941, &#x27;learning_rate&#x27;: 2.736e-05, &#x27;epoch&#x27;: 0.67, &#x27;global_step&#x27;: 60}
+Train:  79%|███████▊  | 70/89 [04:22<01:10,  3.69s/it]
 
+{'loss': 1.3947876, 'acc': 0.66186366, 'grad_norm': 2.07926965, 'learning_rate': 1.792e-05, 'epoch': 0.78, 'global_step': 70}
 
-Train:  73%|███████▎  | 65/89 [04:03&lt;01:27,  3.63s/it]
+Train:  84%|████████▍ | 75/89 [04:41<00:51,  3.71s/it]
 
-{&#x27;loss&#x27;: 1.3934391, &#x27;acc&#x27;: 0.6493372, &#x27;grad_norm&#x27;: 1.76045263, &#x27;learning_rate&#x27;: 2.264e-05, &#x27;epoch&#x27;: 0.73, &#x27;global_step&#x27;: 65}
+{'loss': 1.50613136, 'acc': 0.62502789, 'grad_norm': 1.46754706, 'learning_rate': 1.321e-05, 'epoch': 0.84, 'global_step': 75}
 
+Train:  90%|████████▉ | 80/89 [05:00<00:33,  3.76s/it]
 
-Train:  79%|███████▊  | 70/89 [04:22&lt;01:10,  3.69s/it]
+{'loss': 1.28600578, 'acc': 0.67243266, 'grad_norm': 1.43732667, 'learning_rate': 8.49e-06, 'epoch': 0.89, 'global_step': 80}
 
-{&#x27;loss&#x27;: 1.3947876, &#x27;acc&#x27;: 0.66186366, &#x27;grad_norm&#x27;: 2.07926965, &#x27;learning_rate&#x27;: 1.792e-05, &#x27;epoch&#x27;: 0.78, &#x27;global_step&#x27;: 70}
+Train:  96%|█████████▌| 85/89 [05:19<00:15,  3.84s/it]
 
+{'loss': 1.47374458, 'acc': 0.63984947, 'grad_norm': 1.52147245, 'learning_rate': 3.77e-06, 'epoch': 0.95, 'global_step': 85}
 
-Train:  84%|████████▍ | 75/89 [04:41&lt;00:51,  3.71s/it]
-
-{&#x27;loss&#x27;: 1.50613136, &#x27;acc&#x27;: 0.62502789, &#x27;grad_norm&#x27;: 1.46754706, &#x27;learning_rate&#x27;: 1.321e-05, &#x27;epoch&#x27;: 0.84, &#x27;global_step&#x27;: 75}
-
-
-Train:  90%|████████▉ | 80/89 [05:00&lt;00:33,  3.76s/it]
-
-{&#x27;loss&#x27;: 1.28600578, &#x27;acc&#x27;: 0.67243266, &#x27;grad_norm&#x27;: 1.43732667, &#x27;learning_rate&#x27;: 8.49e-06, &#x27;epoch&#x27;: 0.89, &#x27;global_step&#x27;: 80}
-
-
-Train:  96%|█████████▌| 85/89 [05:19&lt;00:15,  3.84s/it]
-
-{&#x27;loss&#x27;: 1.47374458, &#x27;acc&#x27;: 0.63984947, &#x27;grad_norm&#x27;: 1.52147245, &#x27;learning_rate&#x27;: 3.77e-06, &#x27;epoch&#x27;: 0.95, &#x27;global_step&#x27;: 85}
-
-
-Train: 100%|██████████| 89/89 [05:34&lt;00:00,  3.76s/it]
-Val: 100%|██████████| 5/5 [00:00&lt;00:00, 16.73it/s]/it]
+Train: 100%|██████████| 89/89 [05:34<00:00,  3.76s/it]
+Val: 100%|██████████| 5/5 [00:00<00:00, 16.73it/s]/it]
 [INFO:swift] Saving model checkpoint to /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89
 /opt/conda/lib/python3.10/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in /mnt/workspace/.cache/modelscope/qwen/Qwen-1_8B-Chat - will assume that the vocabulary was not modified.
   warnings.warn(
 
+{'eval_loss': 1.40790772, 'eval_acc': 0.66298343, 'eval_runtime': 0.4249, 'eval_samples_per_second': 11.767, 'eval_steps_per_second': 11.767, 'epoch': 1.0, 'global_step': 89}
 
-{&#x27;eval_loss&#x27;: 1.40790772, &#x27;eval_acc&#x27;: 0.66298343, &#x27;eval_runtime&#x27;: 0.4249, &#x27;eval_samples_per_second&#x27;: 11.767, &#x27;eval_steps_per_second&#x27;: 11.767, &#x27;epoch&#x27;: 1.0, &#x27;global_step&#x27;: 89}
-
-
-Train: 100%|██████████| 89/89 [05:34&lt;00:00,  3.76s/it]
+Train: 100%|██████████| 89/89 [05:34<00:00,  3.76s/it]
 [INFO:swift] last_model_checkpoint: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89
 [INFO:swift] best_model_checkpoint: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89
 [INFO:swift] images_dir: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/images
 
-
-{&#x27;train_runtime&#x27;: 334.9959, &#x27;train_samples_per_second&#x27;: 4.272, &#x27;train_steps_per_second&#x27;: 0.266, &#x27;train_loss&#x27;: 1.55031933, &#x27;epoch&#x27;: 1.0, &#x27;global_step&#x27;: 89}
-
+{'train_runtime': 334.9959, 'train_samples_per_second': 4.272, 'train_steps_per_second': 0.266, 'train_loss': 1.55031933, 'epoch': 1.0, 'global_step': 89}
 
 [INFO:swift] End time of running main: 2024-04-16 22:35:11.976641
-
 
 best_model_checkpoint: /mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89
 ```
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ![](img/5d22814a954a47f91f3de8447a431a5b.png)
 
-```
-best_model_checkpoint
-```
+`best_model_checkpoint`
 
-```
-&#x27;/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89&#x27;
-```
+`/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89`
 
-```
+```python
 # Experimental environment: 3090
 import os
-os.environ[&#x27;CUDA_VISIBLE_DEVICES&#x27;] = &#x27;0&#x27;
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 from swift.llm import (
     get_model_tokenizer, get_template, inference, ModelType, get_default_template_type,
@@ -1302,23 +1263,23 @@ from swift.tuners import Swift
 
 seed_everything(42)
 
-ckpt_dir = &#x27;/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89&#x27;
+ckpt_dir = '/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89'
 model_type = ModelType.qwen_1_8b_chat
 template_type = get_default_template_type(model_type)
 
-model, tokenizer = get_model_tokenizer(model_type, model_kwargs={&#x27;device_map&#x27;: &#x27;auto&#x27;})
+model, tokenizer = get_model_tokenizer(model_type, model_kwargs={'device_map': 'auto'})
 model.generation_config.max_new_tokens = 128
 
 model = Swift.from_pretrained(model, ckpt_dir, inference_mode=True)
 template = get_template(template_type, tokenizer)
 
-query = &#x27;你是qwen吗？&#x27;
+query = '你是qwen吗？'
 response, history = inference(model, template, query)
-print(f&#x27;response: {response}&#x27;)
-print(f&#x27;history: {history}&#x27;)
+print(f'response: {response}')
+print(f'history: {history}')
 ```
 
-```
+```text
 /opt/conda/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
   from .autonotebook import tqdm as notebook_tqdm
 2024-04-16 22:38:56.872007: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
@@ -1329,32 +1290,31 @@ print(f&#x27;history: {history}&#x27;)
 2024-04-16 22:38:56.915388: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
 2024-04-16 22:38:56.915851: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2024-04-16 22:38:57.749160: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
 2024-04-16 22:39:00,494 - modelscope - INFO - PyTorch version 2.1.2+cu121 Found.
 2024-04-16 22:39:00,497 - modelscope - INFO - TensorFlow version 2.14.0 Found.
 2024-04-16 22:39:00,497 - modelscope - INFO - Loading ast index from /mnt/workspace/.cache/modelscope/ast_indexer
 2024-04-16 22:39:00,525 - modelscope - INFO - Loading done! Current index file version is 1.13.3, with md5 55e7043102d017111a56be6e6d7a6a16 and a total number of 972 components indexed
-2024-04-16 22:39:00,814        INFO util.py:154 -- Missing packages: [&#x27;ipywidgets&#x27;]. Run `pip install -U ipywidgets`, then restart the notebook server for rich notebook output.
+2024-04-16 22:39:00,814        INFO util.py:154 -- Missing packages: ['ipywidgets']. Run `pip install -U ipywidgets`, then restart the notebook server for rich notebook output.
 [INFO:swift] Global seed set to 42
 [INFO:swift] Downloading the model from ModelScope Hub, model_id: qwen/Qwen-1_8B-Chat
 [WARNING:modelscope] Using the master branch is fragile, please use it with caution!
 [INFO:modelscope] Use user-specified model revision: master
 [INFO:swift] Setting torch_dtype: None
-The model is automatically converting to bf16 for faster inference. If you want to disable the automatic precision, please manually add bf16/fp16/fp32=True to &quot;AutoModelForCausalLM.from_pretrained&quot;.
+The model is automatically converting to bf16 for faster inference. If you want to disable the automatic precision, please manually add bf16/fp16/fp32=True to "AutoModelForCausalLM.from_pretrained".
 Try importing flash-attention for faster inference...
 Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
-Loading checkpoint shards: 100%|██████████| 2/2 [00:01&lt;00:00,  1.69it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.69it/s]
 [INFO:swift] model.max_model_len: 8192
 
 
 response: 不是，我是魔搭的人工智能语言模型。如果你有任何问题或需要帮助，请随时告诉我。
-history: [[&#x27;你是qwen吗？&#x27;, &#x27;不是，我是魔搭的人工智能语言模型。如果你有任何问题或需要帮助，请随时告诉我。&#x27;]]
+history: [['你是qwen吗？', '不是，我是魔搭的人工智能语言模型。如果你有任何问题或需要帮助，请随时告诉我。']]
 ```
 
-```
+```python
 # Experimental environment: 3090
 import os
-os.environ[&#x27;CUDA_VISIBLE_DEVICES&#x27;] = &#x27;0&#x27;
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 from swift.llm import (
     get_model_tokenizer, get_template, inference, ModelType, get_default_template_type,
@@ -1364,37 +1324,37 @@ from swift.tuners import Swift
 
 seed_everything(42)
 
-ckpt_dir = &#x27;/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89&#x27;
+ckpt_dir = '/mnt/workspace/output/qwen-1_8b-chat/v0-20240416-222914/checkpoint-89'
 model_type = ModelType.qwen_1_8b_chat
 template_type = get_default_template_type(model_type)
 
-model, tokenizer = get_model_tokenizer(model_type, model_kwargs={&#x27;device_map&#x27;: &#x27;auto&#x27;})
+model, tokenizer = get_model_tokenizer(model_type, model_kwargs={'device_map': 'auto'})
 model.generation_config.max_new_tokens = 128
 
 model = Swift.from_pretrained(model, ckpt_dir, inference_mode=True)
 template = get_template(template_type, tokenizer)
 
-query = &#x27;你好，请介绍下你自己？&#x27;
+query = '你好，请介绍下你自己？'
 response, history = inference(model, template, query)
-print(f&#x27;response: {response}&#x27;)
-print(f&#x27;history: {history}&#x27;)
+print(f'response: {response}')
+print(f'history: {history}')
 ```
 
-```
+```text
 [INFO:swift] Global seed set to 42
 [INFO:swift] Downloading the model from ModelScope Hub, model_id: qwen/Qwen-1_8B-Chat
 [WARNING:modelscope] Using the master branch is fragile, please use it with caution!
 [INFO:modelscope] Use user-specified model revision: master
 [INFO:swift] Setting torch_dtype: None
-The model is automatically converting to bf16 for faster inference. If you want to disable the automatic precision, please manually add bf16/fp16/fp32=True to &quot;AutoModelForCausalLM.from_pretrained&quot;.
+The model is automatically converting to bf16 for faster inference. If you want to disable the automatic precision, please manually add bf16/fp16/fp32=True to "AutoModelForCausalLM.from_pretrained".
 Try importing flash-attention for faster inference...
 Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
-Loading checkpoint shards: 100%|██████████| 2/2 [00:01&lt;00:00,  1.51it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.51it/s]
 [INFO:swift] model.max_model_len: 8192
 
 
 response: 我是由魔搭开发的语言模型，名为“小林”。我的主要任务是回答问题、提供信息和与用户进行对话。如果您有任何问题或需要帮助，请随时告诉我！
-history: [[&#x27;你好，请介绍下你自己？&#x27;, &#x27;我是由魔搭开发的语言模型，名为“小林”。我的主要任务是回答问题、提供信息和与用户进行对话。如果您有任何问题或需要帮助，请随时告诉我！&#x27;]]
+history: [['你好，请介绍下你自己？', '我是由魔搭开发的语言模型，名为“小林”。我的主要任务是回答问题、提供信息和与用户进行对话。如果您有任何问题或需要帮助，请随时告诉我！']]
 ```
 
 ---

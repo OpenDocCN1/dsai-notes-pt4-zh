@@ -1,18 +1,19 @@
+
 # 我把自己的脚本变成了 Claude Skills，效率直接翻倍 | 博客
 
 > 来源：[https://aigcreative.feishu.cn/docx/ZwomdE3mUoyqsKxknjtcJ04gnEe](https://aigcreative.feishu.cn/docx/ZwomdE3mUoyqsKxknjtcJ04gnEe)
-
-> [🔗 Source link: htt](https://benx.ai/blog/posts/claude-agent-skills-practice)ps://benx.ai/blog/posts/claude-a...
-
+>
+> [🔗 Source link: https://benx.ai/blog/posts/claude-agent-skills-practice](https://benx.ai/blog/posts/claude-agent-skills-practice)
+>
 > ⏰ Clipped on: 2025-10-19 21:19:05 (UTC+8)
-
+>
 > [✂️ Generate](https://www.feishu.cn/hc/en-US/articles/606278856233?from=in_ccm_clip_doc)d by Feishu Clip
 
 最近用 Claude Code，我发现自己在做一件很奇怪的事情。
 
 每次部署网站，都要重复说一遍相同的话：
 
-「帮我创建一个 GitHub 私有仓库，我已经安装了 GitHub CLI…」 「记得执行 npm run build 检查有没有错误…」 「部署到 Vercel 之前，先检查环境变量…」
+「帮我创建一个 GitHub 私有仓库，我已经安装了 GitHub CLI…」 「记得执行 `npm run build` 检查有没有错误…」 「部署到 Vercel 之前，先检查环境变量…」
 
 说着说着我突然意识到——我tm在重复当 Claude 的「产品经理」。
 
@@ -32,17 +33,17 @@
 
 它的核心设计叫「渐进式披露」，分三层加载：
 
-+   **Level 1: 元数据 **- 只加载名字和描述（约100 token），Claude 靠这个判断什么时候该用
++ **Level 1: 元数据** - 只加载名字和描述（约100 token），Claude 靠这个判断什么时候该用
 
-+   **Level 2: 主指令 **- 任务匹配时才读取完整的 SKILL.md （<5000 token）
++ **Level 2: 主指令** - 任务匹配时才读取完整的 `SKILL.md` （<5000 token）
 
-+   **Level 3: 详细资源 **- 按需加载脚本、文档、示例（理论上无限制）
++ **Level 3: 详细资源** - 按需加载脚本、文档、示例（理论上无限制）
 
 ![](img/e4d163f3b1147004ef6702c24f38364f.png)
 
 这样设计的好处：你可以在 Skill 里塞很多东西，但不会占用 Claude 的上下文窗口。需要什么才加载什么。
 
-**最大的好处 **：从「每次重复写 prompt」变成「配置一次，长期使用」。
+最大的好处：从「每次重复写 prompt」变成「配置一次，长期使用」。
 
 ---
 
@@ -50,9 +51,9 @@
 
 ### 1. 部署工作流 Skill
 
-**以前 **：每次部署都要说一遍5步流程，Claude 有时候会跳过某个步骤，导致部署失败。
+**以前**：每次部署都要说一遍5步流程，Claude 有时候会跳过某个步骤，导致部署失败。
 
-**现在 **：创建了 deploying-to-production Skill，核心配置是这样的：
+**现在**：创建了 `deploying-to-production` Skill，核心配置是这样的：
 
 ```
 ---
@@ -77,17 +78,17 @@ Run: `npm run build`
 
 现在我只需要说「帮我部署这个网站」，Claude 就会自动执行完整流程，每一步都有检查清单，出错了会自动诊断并提供修复建议。
 
-**效果 **：稳定性大幅提升，不再担心遗漏步骤，以前经常因为忘记某个步骤导致部署失败，现在基本不会了。
+**效果**：稳定性大幅提升，不再担心遗漏步骤，以前经常因为忘记某个步骤导致部署失败，现在基本不会了。
 
 ### 2. 国际化工作流 Skill
 
-**以前 **：手动创建每个语言的文件、配置路由、添加 hreflang、更新 sitemap… 花1-2小时，容易遗漏细节。
+**以前**：手动创建每个语言的文件、配置路由、添加 hreflang、更新 sitemap… 花1-2小时，容易遗漏细节。
 
-**现在 **：创建了 internationalizing-websites Skill，包含完整的脚本和参考文档。
+**现在**：创建了 `internationalizing-websites` Skill，包含完整的脚本和参考文档。
 
 ![](img/0fceb29e546df999b0616ee364efa27d.png)
 
-我给自己的个人网站(benx.ai)添加了英文和日文支持，10分钟搞定。而且细节处理得更好——Open Graph 标签的国际化、hreflang 的正确配置，这些以前经常忘记的东西，现在 Skill 都会自动检查。
+我给自己的个人网站(`benx.ai`)添加了英文和日文支持，10分钟搞定。而且细节处理得更好——Open Graph 标签的国际化、hreflang 的正确配置，这些以前经常忘记的东西，现在 Skill 都会自动检查。
 
 ---
 
@@ -97,11 +98,11 @@ Run: `npm run build`
 
 ![](img/5a33962084f6fe641d41e4e480e6ecef.png)
 
-我挑了 webapp-testing Skill 来实测，用它测试我的个人网站 benx.ai。
+我挑了 `webapp-testing` Skill 来实测，用它测试我的个人网站 `benx.ai`。
 
-这个 Skill 基于 Playwright，可以自动化测试网站。我只说了一句：「用 webapp-testing skill 测试 benx.ai」，Claude 就自动创建测试脚本、启动浏览器、进行全面检测。
+这个 Skill 基于 Playwright，可以自动化测试网站。我只说了一句：「用 `webapp-testing` skill 测试 `benx.ai`」，Claude 就自动创建测试脚本、启动浏览器、进行全面检测。
 
-**测试结果 **：
+**测试结果**：
 
 ```
 🌐 webapp-testing Skill - 测试结果
@@ -129,11 +130,11 @@ Run: `npm run build`
 
 ### 1. 描述要精准
 
-description 字段很重要，Claude 靠它来判断什么时候触发 Skill。
+`description` 字段很重要，Claude 靠它来判断什么时候触发 Skill。
 
-关键是要包含： **触发关键词 **+ **具体场景 **。
+关键是要包含：触发关键词 + 具体场景。
 
-例如： Automates GitHub repository creation and Vercel deployment. Use when deploying new websites, or when user mentions deployment, GitHub, or Vercel.
+例如：`Automates GitHub repository creation and Vercel deployment. Use when deploying new websites, or when user mentions deployment, GitHub, or Vercel.`
 
 ### 2. 指令要简洁
 
@@ -151,23 +152,23 @@ Claude 已经很聪明了，不要写太多废话。假设它已经懂基础知�
 
 Anthropic 提供了 12 个开箱即用的 Skills（文档处理、Web 测试、Canvas 设计等）。
 
-直接下载使用： [https://github.c](https://github.com/anthropics/skills)om/anthropics/skills
+直接下载使用：[https://github.com/anthropics/skills](https://github.com/anthropics/skills)
 
 ### 方式2：让 Claude 帮你生成
 
-官方提供了 skill-creator Skill，专门用来创建新 Skill。你只需要告诉 Claude 你要做什么，它会引导你一步步创建，并生成完整的文件结构。
+官方提供了 `skill-creator` Skill，专门用来创建新 Skill。你只需要告诉 Claude 你要做什么，它会引导你一步步创建，并生成完整的文件结构。
 
 ### 方式3：使用我的开源 Skills
 
 为了帮助更多人快速上手，我把自己创建的两个 Skills 开源了：
 
-🔗 G**itHub 仓库 ：** h[ttps://github.com/littleben](https://github.com/littleben/awesomeAgentskills)/awesomeAgentskills
+**GitHub 仓库**：[https://github.com/littleben/awesomeAgentskills](https://github.com/littleben/awesomeAgentskills)
 
 目前包含：
 
-+   deploying-to-production - 自动化部署工作流
++ `deploying-to-production` - 自动化部署工作流
 
-+   internationalizing-websites - 网站国际化工作流
++ `internationalizing-websites` - 网站国际化工作流
 
 这两个 Skill 都是我实际在用的生产级配置，直接下载就能用。
 
@@ -177,7 +178,7 @@ Anthropic 提供了 12 个开箱即用的 Skills（文档处理、Web 测试、C
 
 ## 从「助手」到「专业工程师」
 
-用了两天 Agent Skills，我最大的感受是： Claude 从「AI 编程助手」变成了「AI 专业工程师」 。
+用了两天 Agent Skills，我最大的感受是：Claude 从「AI 编程助手」变成了「AI 专业工程师」。
 
 以前，Claude 更像是一个聪明的实习生——你得手把手教它怎么做，它才能完成任务。
 
@@ -193,7 +194,7 @@ Anthropic 提供了 12 个开箱即用的 Skills（文档处理、Web 测试、C
 
 ### Agent Skills 精选集
 
-为了帮助大家更快找到优质的 Agent Skills，我创建了一个精选集网站： agentskills.best
+为了帮助大家更快找到优质的 Agent Skills，我创建了一个精选集网站：`agentskills.best`
 
 这个网站收录了 Anthropic 官方的 12 个 Skills 和社区贡献的优质 Skills，包括我开源的部署工作流、国际化工作流，以及最新的 Notion Skills 等。每个 Skill 都有详细的使用场景说明和下载链接，可以直接搜索和筛选，帮你快速找到需要的 Skills。
 

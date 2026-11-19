@@ -1,6 +1,7 @@
+
 # 02｜如果要用，从哪里开始不踩坑
 
-> 来源：[https://xodnytdcaw.feishu.cn/docx/PfemdChC8oMPjOxTy6DcPIYYntc](https://xodnytdcaw.feishu.cn/docx/PfemdChC8oMPjOxTy6DcPIYYntc)
+> 来源：[`https://xodnytdcaw.feishu.cn/docx/PfemdChC8oMPjOxTy6DcPIYYntc`](https://xodnytdcaw.feishu.cn/docx/PfemdChC8oMPjOxTy6DcPIYYntc)
 
 如果你已经看完前一章，心里有一个比较清晰的判断：
 
@@ -42,9 +43,7 @@
 
 先被一整套“体系”压垮了。
 
-新手放弃 AI，**
-
-很少是因为**“学不会”，
+新手放弃 AI，**很少是因为**“学不会”，
 
 更多是因为——第一步走太大了。
 
@@ -98,9 +97,7 @@
 
 是不是还要换工具
 
-结果不**是效率提升，
-
-**而是信心被一点点消耗。
+结果不**是效率提升**，**而是信心被一点点消耗。**
 
 相反，如果你只让 AI 做一件事：
 
@@ -156,9 +153,7 @@
 
 这时候，才值得考虑更复杂的用法。
 
-**在那之前，
-
-什么**都别急着加。
+**在那之前，什么**都别急着加。
 
 ---
 
@@ -184,9 +179,7 @@
 
 ## 一个可以放心执行的建议
 
-如果你现在依然**犹豫，
-
-那我给**你一个不会错的行动方案：
+如果你现在依然**犹豫**，那我给你一个不会错的行动方案：
 
 > 只用 AI 做一件事，
 

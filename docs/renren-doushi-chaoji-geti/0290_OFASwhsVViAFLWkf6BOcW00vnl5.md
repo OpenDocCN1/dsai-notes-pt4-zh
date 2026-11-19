@@ -1,3 +1,5 @@
+
+
 # ClaudeCode+n8n，双剑合璧重塑📕为像素红薯-s
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Ltiydw43JoFUyoxqfvycjWOvn17](https://xuqiwei1986.feishu.cn/docx/Ltiydw43JoFUyoxqfvycjWOvn17)
@@ -40,11 +42,11 @@
 
 > 目前在这个里面可以做到什么了？
 
-> 1、**采集对标📕**博主们的所有文章以及个人信息，后续无限满足更多使用场景。
+> 1、采集对标📕博主们的所有文章以及个人信息，后续无限满足更多使用场景。
 
-> **2、通过 n8**n agent 自动工作流生成博主的报告信息，并将采集到的数据存储到数据库。
+> 2、通过 n8n agent 自动工作流生成博主的报告信息，并将采集到的数据存储到数据库。
 
-> **3、重塑小**红**书数据，**任何形式展现操作。还可以模仿写文章和生成图片
+> 3、重塑小红书数据，任何形式展现操作。还可以模仿写文章和生成图片
 
 # 整体流程
 
@@ -52,11 +54,11 @@
 
 其实就是三大块
 
-**1、📕浏览器插件**：是个爬虫采集工具，安装在浏览器上，可以自动采集博主的个人数据，包括昵称、ip 所在地、关注数、收藏/点赞数，还有每一篇文章的标题、描述、喜欢数、收藏数以及评论。
+1、📕浏览器插件：是个爬虫采集工具，安装在浏览器上，可以自动采集博主的个人数据，包括昵称、ip 所在地、关注数、收藏/点赞数，还有每一篇文章的标题、描述、喜欢数、收藏数以及评论。
 
-**2、n8n agent 工作流**：自动接收采集的数据，进行数据处理后，分别存储到不同的数据库表里，还会调用 AI 接口生成博主的专属报告
+2、n8n agent 工作流：自动接收采集的数据，进行数据处理后，分别存储到不同的数据库表里，还会调用 AI 接口生成博主的专属报告
 
-**3、像素番薯系统（应用系统）**：这个系统可以读取后端的数据，任意形式展现，这里我就做成像素风格了。并且可以对标生成文章，还加入了生图功能。
+3、像素番薯系统（应用系统）：这个系统可以读取后端的数据，任意形式展现，这里我就做成像素风格了。并且可以对标生成文章，还加入了生图功能。
 
 那么接下来就详细拆解下，这三个部分是如何完成的。
 
@@ -96,7 +98,7 @@ Claude Code 已经成为我工作、生活中必不可少的编程工具。一�
 
 这个就是老生常谈的问题了。
 
-这个其实还有些敏感的话题，这里面大家还是需要严格遵守网站的 robots.txt 的内容。
+这个其实还有些敏感的话题，这里面大家还是需要严格遵守网站的 `robots.txt` 的内容。
 
 基本爬虫就是爬取页面上的元素，就是浏览器上可以显示源码查看到的 html 代码上的，要么就是后台接口获取的元素。
 
@@ -107,7 +109,7 @@ Claude Code 已经成为我工作、生活中必不可少的编程工具。一�
 这里我选择的就是 xpath 表达式，为什么了？因为浏览器可以直接显示元素。这样我可以快速定位到元素。
 
 ```
-//div[@class=&quot;user-name&quot;]/text()
+//div[@class="user-name"]/text()
 ```
 
 ![](img/bf92b6f5c8d692b262ceec1b95ff484a.png)
@@ -132,7 +134,7 @@ Claude Code 已经成为我工作、生活中必不可少的编程工具。一�
 
 > 这里很多小伙伴很好奇怎么开呀？
 
-> 如果你是 mac 系统的话，很简单，基本所有的终端工具都支持，cmd+d：垂直分屏，cmd+shift+d：水平分屏
+> 如果你是 mac 系统的话，很简单，基本所有的终端工具都支持，`cmd+d`：垂直分屏，`cmd+shift+d`：水平分屏
 
 > 我用的终端工具：Ghostty，轻量，快捷，还不错。
 
@@ -140,11 +142,11 @@ Claude Code 已经成为我工作、生活中必不可少的编程工具。一�
 
 如下图：
 
-+   左侧：就是浏览器插件开发
++ 左侧：就是浏览器插件开发
 
-+   中间：n8n 工作流开发，没错，我的工作流是 claude code 帮我开发的，并不是我配置出来的（因为我还是小白，我只会让 ai 给我干活呀）
++ 中间：n8n 工作流开发，没错，我的工作流是 claude code 帮我开发的，并不是我配置出来的（因为我还是小白，我只会让 ai 给我干活呀）
 
-+   右侧：那就是我的像素红素系统开发了。
++ 右侧：那就是我的像素红素系统开发了。
 
 ![](img/5bc1dcb8e138a628e58c265116a2249b.png)
 
@@ -186,11 +188,11 @@ Claude Code 已经成为我工作、生活中必不可少的编程工具。一�
 
 一句话就是：每个工具做他该做的事情，
 
-+   灵活性很强：后续替换其他流程也可以，比如我不想要你的像素番薯，那么完全可以 vibe 一个新的，因为的的数据早就存储好在数据库里了。
++ 灵活性很强：后续替换其他流程也可以，比如我不想要你的像素番薯，那么完全可以 vibe 一个新的，因为的的数据早就存储好在数据库里了。
 
-+   生产效率高：爬虫采集最佳 xpath 选择，效率高，直接通过 n8n 组件写入数据库，并且可以接入 AI 工具。
++ 生产效率高：爬虫采集最佳 xpath 选择，效率高，直接通过 n8n 组件写入数据库，并且可以接入 AI 工具。
 
-+   满足业务性需求强：这是一套完全可以定制化的系统，满足复杂的业务诉求和需求的灵活性。
++ 满足业务性需求强：这是一套完全可以定制化的系统，满足复杂的业务诉求和需求的灵活性。
 
 > 不吹牛了不吹牛了。
 
@@ -220,7 +222,7 @@ Claude Code 已经成为我工作、生活中必不可少的编程工具。一�
 
 地址：https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite
 
-直接克隆到本地，并且重命名为 xiaohongshu-n8n-chrome-extension
+直接克隆到本地，并且重命名为 `xiaohongshu-n8n-chrome-extension`
 
 ```
 git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite xiaohongshu-n8n-chrome-extension
@@ -238,7 +240,7 @@ git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite 
 
 ![](img/7d9806676b6b8cb89f84e5ceb1b6f040.png)
 
-等执行完成，就可以看到生成了 CLAUDE.md 文件
+等执行完成，就可以看到生成了 `CLAUDE.md` 文件
 
 ![](img/da858a0852486d36a4c005a770881419.png)
 
@@ -246,13 +248,13 @@ git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite 
 
 ![](img/08829daf7823803b151db45af6f9e59d.png)
 
-[CLAUDE.md](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A0mqbyoTXoZ4i2xmcaEcreSRncL)
+[`CLAUDE.md`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A0mqbyoTXoZ4i2xmcaEcreSRncL)
 
 > 那么这里我们为什么要生成这个记忆文件了？
 
 > 那么就是为了后续的开发工作可以顺利进行。
 
-> 有了 CLAUDE.md 文件后，claude code 就可以很清晰知道这个项目是什么情况？
+> 有了 `CLAUDE.md` 文件后，claude code 就可以很清晰知道这个项目是什么情况？
 
 >
 
@@ -277,15 +279,15 @@ git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite 
 我们看到的网页页面的元素，基本都是 html 决定的，比如下面的代码。
 
 ```
-&lt;h1&gt;文章标题&lt;/h1&gt;
-&lt;p&gt;这是正文内容&lt;/p&gt;
-&lt;a href=&quot;/detail/123&quot;&gt;点击查看更多&lt;/a&gt;
-&lt;div class=&quot;article&quot;&gt;
-  &lt;h1&gt;爬虫入门&lt;/h1&gt;
-  &lt;p class=&quot;author&quot;&gt;作者：小明&lt;/p&gt;
-  &lt;p class=&quot;time&quot;&gt;2025-08-21&lt;/p&gt;
-  &lt;a href=&quot;/detail/123&quot;&gt;阅读全文&lt;/a&gt;
-&lt;/div&gt;
+<h1>文章标题</h1>
+<p>这是正文内容</p>
+<a href="/detail/123">点击查看更多</a>
+<div class="article">
+  <h1>爬虫入门</h1>
+  <p class="author">作者：小明</p>
+  <p class="time">2025-08-21</p>
+  <a href="/detail/123">阅读全文</a>
+</div>
 ```
 
 浏览器里面看到的是这样子的：
@@ -294,18 +296,17 @@ git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite 
 
 那么 xpath 是什么了？
 
-> XPath 是一种 **路径语言**，用来在 HTML 里定位节点，就像文件夹路径一样。
+> XPath 是一种路径语言，用来在 HTML 里定位节点，就像文件夹路径一样。
 
 比如我要选择上面的「爬虫入门」「作者：小明」「2025-08-21」「/detail/123」怎么弄了。
 
 我这里直接就揭晓答案了。
 
 ```
-标题：//div[@class=&quot;article&quot;]/h1/text() → 爬虫入门
-作者：//p[@class=&quot;author&quot;]/text() → 作者：小明
-时间：//p[@class=&quot;time&quot;]/text() → 2025-08-21
-链接：//div[@class=&quot;article&quot;]/a/@href → /detail/123
-
+标题：//div[@class="article"]/h1/text() → 爬虫入门
+作者：//p[@class="author"]/text() → 作者：小明
+时间：//p[@class="time"]/text() → 2025-08-21
+链接：//div[@class="article"]/a/@href → /detail/123
 ```
 
 > xpath 是个技能，学起来很简单，以前爬虫的日子 xpath 表达式的语法那是滚瓜烂熟了。
@@ -322,9 +323,9 @@ git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite 
 
 难道去写代码才行。No ! No ! No !
 
-直接浏览器调试工具打开，定位到「Elements」标签页，直接搜索 xpath 表达式就行。
+直接浏览器调试工具打开，定位到 `Elements` 标签页，直接搜索 xpath 表达式就行。
 
-> F12 就可以打开浏览器的调试工具了。
+> `F12` 就可以打开浏览器的调试工具了。
 
 下图是上面举例的演示：
 
@@ -360,7 +361,7 @@ xpath 表达式弄好后，就可以写需求文档了。
 
 ![](img/42ba332e4f79592b9273af4e2ce0e934.png)
 
-[prd.md](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UIM1buGQfoc35axT7XVc3kSZnwe)
+[`prd.md`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UIM1buGQfoc35axT7XVc3kSZnwe)
 
 然后 prd 的文档保存到项目目录下的 docs 目录下。
 
@@ -378,7 +379,7 @@ docs/prd.md
 
 > 记得这里使用的是 claude code 的 plan 模式。
 
-> shift + tab 两次即可进入。windows 有可能要使用 alt + m 切换
+> `shift + tab` 两次即可进入。windows 有可能要使用 `alt + m` 切换
 
 ```
 @docs/prd.md 这个是小红书数据采集的浏览器插件的详细需求，仔细阅读，并给出详细的规划方案，ultrathink
@@ -418,7 +419,7 @@ docs/prd.md
 
 ![](img/347b9ee79a453ea90207cc9634de9da2.png)
 
-[PLAN_20250819_001.md](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TwuHbeA5Eob1X1xZMMFcDy12n5f)
+[`PLAN_20250819_001.md`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TwuHbeA5Eob1X1xZMMFcDy12n5f)
 
 ## 步骤五：牛马开干
 
@@ -428,7 +429,7 @@ docs/prd.md
 
 > 如果前面的需求文档和实施文档聊的特别清楚后，这里就可以一路狂奔了。
 
-> 我这里采用的就是狂飙模式。使用参数：--dangerously-skip-permissions
+> 我这里采用的就是狂飙模式。使用参数：`--dangerously-skip-permissions`
 
 > 一路狂飙。
 
@@ -452,11 +453,18 @@ docs/prd.md
 
 > 也许是个沉浸式体验我开发的过程，希望对大家有帮助。
 
+
+
+
+# 第一部分：浏览器插件开发与问题排查
+
 开干环节可能没多少，但是这里问题的环节其实开发的重点。
 
-一直在不停的跟 claude code 交互，让他解决问题。
+一直在不停的跟 `claude code` 交互，让他解决问题。
 
 比如：下面的问题
+
+## 问题排查
 
 ### 问题一：爬虫关键词触发 anthropic 关键字
 
@@ -478,7 +486,7 @@ docs/prd.md
 
 ![](img/5af5d8986e2158123bc675bcb04d1bcd.png)
 
-### 问题三：popup 布局问题
+### 问题三：`popup` 布局问题
 
 ![](img/99686d320a5c005616a45a861d350944.png)
 
@@ -532,7 +540,7 @@ docs/prd.md
 
 ![](img/95133dab3de68004684066147c0b86d9.png)
 
-如果调试好接口后，可以拷贝代码，让 claude code 知道请求参数和响应体是什么样的。
+如果调试好接口后，可以拷贝代码，让 `claude code` 知道请求参数和响应体是什么样的。
 
 避免接口参数对不上，调试麻烦。
 
@@ -590,20 +598,20 @@ docs/prd.md
 [Image #1]，看这个布局，使用ascii复现给我画出来，我好确认你已经知道我的问题
 ```
 
-这里的有个小技巧不是布局问题，可以让 claude code 可以用 ascii 图画出来。
+这里的有个小技巧不是布局问题，可以让 `claude code` 可以用 ascii 图画出来。
 
-一是确认claude code 理解了你的问题。
+一是确认`claude code` 理解了你的问题。
 
-二是确认 Claude code 找到了解决办法。
+二是确认 `Claude code` 找到了解决办法。
 
 ![](img/91e29c7e03fa555a33a93f9d1ffdc07c.png)
 
 没解决，就继续
 
-> 加入 ultrathink
+> 加入 `ultrathink`
 
 ```
-实际“采集数据“，“查看已采集数据“ 两个按钮还是太长，看是否可以做成自动适应父容器的，离父容器有个padding的距离。ultrathink
+实际“采集数据“，“查看已采集数据“ 两个按钮还是太长，看是否可以做成自动适应父容器的，离父容器有个`padding`的距离。ultrathink
 ```
 
 ![](img/a3d2c3b168b95599f00c930354ea1df1.png)
@@ -624,7 +632,7 @@ docs/prd.md
 
 选择目录。
 
-一般是在项目目录下的 dist 目录。
+一般是在项目目录下的 `dist` 目录。
 
 ![](img/5370a517e39426781df2f6aa2e5c974a.png)
 
@@ -656,7 +664,7 @@ docs/prd.md
 
 > 这里主要就是下面几个点
 
-> 1、n8n 的工作都是 claude code 开发，我没有配置一个
+> 1、n8n 的工作都是 `claude code` 开发，我没有配置一个
 
 > 2、接入 AI，生成个性化的博主的报告
 
@@ -678,7 +686,7 @@ docs/prd.md
 
 主要就是把 json 的数据结构，文章的和博主的都需要粘贴到提示词里。
 
-这样 claude code 可以很精准的推断出需要的表的建表语句。
+这样 `claude code` 可以很精准的推断出需要的表的建表语句。
 
 ```
 {这里粘贴 json 的数据格式数据}
@@ -691,12 +699,12 @@ docs/prd.md
 - 表不需要外键约束
 - 暂时不需要 RLS 策略
 
-请你给到我在supabase中创建这两个表的SQL语句，保存到 @supabase.sql 文件中
+请你给到我在supabase中创建这两个表的SQL语句，保存到 `@supabase.sql` 文件中
 ```
 
 ### 2、创建需要存储数据的表（supabase）
 
-这里就是让 claude code 创建 sql 的建表语句。
+这里就是让 `claude code` 创建 sql 的建表语句。
 
 ```
 @prd_ddl.md 根据文件中的描述，生成所需要的sql内容
@@ -736,11 +744,11 @@ supabase 执行 sql
 
 > 它来了，它来了。
 
-> 这里就是使用 claude code 开发 n8n 工作流的重点。两种方式
+> 这里就是使用 `claude code` 开发 n8n 工作流的重点。两种方式
 
 > 方式一：直接生成 n8n 的 json 配置文件
 
-> 方式二：使用 n8n mcp 修改工作流配置。
+> 方式二：使用 `n8n-mcp` 修改工作流配置。
 
 > 废话少说，开干。
 
@@ -756,7 +764,7 @@ supabase 执行 sql
 npx n8n-mcp
 ```
 
-然后在项目的目录下新建  .mcp.json 文件，配置如下
+然后在项目的目录下新建 `.mcp.json` 文件，配置如下
 
 ```
 {
@@ -776,13 +784,13 @@ npx n8n-mcp
 }
 ```
 
-N8N_API_URL：你的n8n 地址，类似：https://xxx.xxx.xxx/。也就是你访问 n8n 系统的地址。
+`N8N_API_URL`：你的n8n 地址，类似：https://xxx.xxx.xxx/。也就是你访问 n8n 系统的地址。
 
-N8N_API_KEY：你的 n8n key 配置。
+`N8N_API_KEY`：你的 n8n key 配置。
 
 进入到 n8n的设置页面，在「n8n API」菜单页面进行设置就可以。
 
-> 其实这里 N8N_API_URL 和 N8N_API_KEY 的不设置，也可以写出json 的工作流文件。
+> 其实这里 `N8N_API_URL` 和 `N8N_API_KEY` 的不设置，也可以写出json 的工作流文件。
 
 > 这里配置就是为了
 
@@ -833,15 +841,15 @@ N8N_API_KEY：你的 n8n key 配置。
 
 当然需求文档也是借鉴了下别人的，感谢 yihui 大佬。
 
-### 2、claude code开发json工作流阶段
+### 2、`claude code`开发json工作流阶段
 
-直接就艾特需求文档，让 claude code 开发了。
+直接就艾特需求文档，让 `claude code` 开发了。
 
 ```
 @prd_n8n.md 根据这个文档的需求，并使用 n8n-mcp 生成对应的n8n的配置json文件，ultrathink
 ```
 
-注意：前期都是使用 plan 模式，并且我加上了 ultrathink。
+注意：前期都是使用 plan 模式，并且我加上了 `ultrathink`。
 
 ![](img/bbbf4edb78e838ea69114285b73fde05.png)
 
@@ -853,9 +861,9 @@ N8N_API_KEY：你的 n8n key 配置。
 
 > 后续生成的时候，每个节点都会调用 n8n mcp 获取详细配置信息。
 
-> 这样 claude code 就知道怎么生成这个节点的配置信息。
+> 这样 `claude code` 就知道怎么生成这个节点的配置信息。
 
-> 特别是需要处理数据的地方，就是用代码节点，而写代码是 claude code 的强项。
+> 特别是需要处理数据的地方，就是用代码节点，而写代码是 `claude code` 的强项。
 
 经过开发后就成功创建了 json 的配置文件
 
@@ -881,13 +889,13 @@ N8N_API_KEY：你的 n8n key 配置。
 
 > 这个导入后居然还是像模像样的。
 
-> 目前足矣证明claude code + n8n 的方式是可行的。
+> 目前足矣证明`claude code` + n8n 的方式是可行的。
 
 ![](img/3c39ccd40deb3506fbe442a52b0c9547.png)
 
-不过有几个节点有些红色的叉，没关系，就是需要设置下对应 openrouter 和 supabase 的信息。
+不过有几个节点有些红色的叉，没关系，就是需要设置下对应 `openrouter` 和 supabase 的信息。
 
-1、openrouter 的好填，直接填 API KEY 就行
+1、`openrouter` 的好填，直接填 API KEY 就行
 
 2、supabase 的信息
 
@@ -911,13 +919,15 @@ N8N_API_KEY：你的 n8n key 配置。
 
 ![](img/c9e2ee7ee2c97291d326f6eb508b97e0.png)
 
-可以看到整个工作流进入了测试模式，特别是第一个节点提示等待你的 url 请求。
+
+
+可以看到整个工作流进入了测试模式，特别是第一个节点提示等待你的 `url` 请求。
 
 ![](img/dc8e8e674a5d293419f610e49e2b29c4.png)
 
-点击第一个 webhook 的节点
+点击第一个 `webhook` 的节点
 
-就可以看到「Test URL」模式下的，一个 http 地址。
+就可以看到「`Test URL`」模式下的，一个 `http` 地址。
 
 ![](img/e7981bc5fc2581b8547d5fb6309e2aed.png)
 
@@ -927,8 +937,7 @@ N8N_API_KEY：你的 n8n key 配置。
 
 当 APIFox 的「发送」按钮操作后，就可以看见我们的工作流跑起来了。
 
-
-### 6、修复n8n 工作流节点的错误
+## 6、修复n8n 工作流节点的错误
 
 可以看到运行过程中会有节点报错
 
@@ -950,7 +959,7 @@ N8N_API_KEY：你的 n8n key 配置。
 
 ![](img/939f4852a3a3a8a3bc5f258eabd92b4a.png)
 
-### 7、修复数据库唯一键冲突报错
+## 7、修复数据库唯一键冲突报错
 
 这里还有个问题就是，数据库里面已经存储过的数据
 
@@ -958,23 +967,23 @@ N8N_API_KEY：你的 n8n key 配置。
 
 > 可以看到是唯一键冲突了。这个是数据库的特性。
 
-这里我还是想处理下，也就是想让他支持 upsert 模式。
+这里我还是想处理下，也就是想让他支持 `upsert` 模式。
 
-> upsert 模式：就是没有数据就新增，有了数据就更新
+> `upsert` 模式：就是没有数据就新增，有了数据就更新
 
 > 唯一键：就比如身份证号，整个表里存储的数据每个人的记录有且仅有一条。没有这个身份证号的数据，就新增，有了，就更新这个条记录的数据。
 
 ![](img/216647bb09a410bed226fb1c6a4edaff.png)
 
-所以这里想改成 upsert 模式，就是没有新增，有记录就更新
+所以这里想改成 `upsert` 模式，就是没有新增，有记录就更新
 
 那这里我们采用的模式就是，直接更新工作流。
 
-> 这个也是 n8n mcp 的工作流也支持的，调用了 n8n_update_partial_workflow 的方法。
+> 这个也是 `n8n mcp` 的工作流也支持的，调用了 `n8n_update_partial_workflow` 的方法。
 
 ![](img/d486d47a7efe886b079ae5e912359a6d.png)
 
-我加入了 ultrathink 模式，让他深度思考，避免修复错误。
+我加入了 `ultrathink` 模式，让他深度思考，避免修复错误。
 
 ![](img/cc4299f81b0c83cb0c323f0f4b9c8d40.png)
 
@@ -986,25 +995,25 @@ N8N_API_KEY：你的 n8n key 配置。
 
 ![](img/41fc302c8231b76f5b94c8ae23b8b9cf.png)
 
-并且我还装了 supabase 的 MCP 的好处就是可以看到可以查询 supbase 的文档。
+并且我还装了 `supabase` 的 `MCP` 的好处就是可以看到可以查询 `supbase` 的文档。
 
-确认 supbase 的 upsert 模式如何写。
+确认 `supbase` 的 `upsert` 模式如何写。
 
 ![](img/e2b9871424ee875c3e81c13c2e9f68e0.png)
 
 ![](img/7dc59bf5d244e786bcf462a6935f8b9e.png)
 
-最后其实使用了自定义的方式，也是 通过 supbase 的文档获取到可以执行。
+最后其实使用了自定义的方式，也是 通过 `supbase` 的文档获取到可以执行。
 
-并且通过 n8n mcp 知道 supbase 节点无法做到 upsert 操作。
+并且通过 `n8n mcp` 知道 `supbase` 节点无法做到 `upsert` 操作。
 
-最后 claude code 自动生成 http 节点，绑定 supabse 的auth信息，同时可以进行 supbase 的 upsert 操作。
+最后 `claude code` 自动生成 `http` 节点，绑定 `supabse` 的`auth`信息，同时可以进行 `supbase` 的 `upsert` 操作。
 
 修复完成！
 
 ![](img/c34fd60344007a1d61e386fa7ebdb2ef.png)
 
-### 8、这里其实还有个比较棘手的问题
+## 8、这里其实还有个比较棘手的问题
 
 就是保存了笔记数据，和博主的数据后，使用的是一套逻辑，那么判断就会出错。
 
@@ -1037,13 +1046,13 @@ N8N_API_KEY：你的 n8n key 配置。
        &quot;notesSaved&quot;: 114,                                       
        &quot;timestamp&quot;: &quot;2025-08-20T09:00:42.934Z&quot;                  
      }                                                          
-   ]，帮我重新想下这个方案如何设计好，ultrathink                
+   ]，帮我重新想下这个方案如何设计好，`ultrathink`                
 
 ```
 
 ![](img/f648fc077b4f6b13793fd3474b77fd5b.png)
 
-让 claude code 给出方案：
+让 `claude code` 给出方案：
 
 解决问题：
 
@@ -1051,19 +1060,19 @@ N8N_API_KEY：你的 n8n key 配置。
 
 ## 最后的总结
 
-其实到这里，你会发现，我并没有去 n8n 的界面配置任何工作流。
+其实到这里，你会发现，我并没有去 `n8n` 的界面配置任何工作流。
 
 我也不知道这些节点是什么、是干嘛的，有哪些参数配置，通通不知道。
 
-都是 claude code 生成后，我才去看这个节点是干嘛的。
+都是 `claude code` 生成后，我才去看这个节点是干嘛的。
 
 > 这里总结核心的点：
 
-> 1、对 claude code 说明白你的需求点，比如生成 n8n 的 json 文件
+> 1、对 `claude code` 说明白你的需求点，比如生成 `n8n` 的 `json` 文件
 
-> 2、配置好 n8n mcp 工具，需要他获取真是的 n8n 节点文档配置数据
+> 2、配置好 `n8n mcp` 工具，需要他获取真是的 `n8n` 节点文档配置数据
 
-> 3、及时备份好工作流，直接就右上角三个点导出 json 文件就行。
+> 3、及时备份好工作流，直接就右上角三个点导出 `json` 文件就行。
 
 这里其实更想说的就是学习能力以及和解决问题的能力。
 
@@ -1079,17 +1088,17 @@ N8N_API_KEY：你的 n8n key 配置。
 
 > 这个阶段的重点如下：
 
-> 1、开发一个 web 系统，读取数据库的📕数据，展示就行
+> 1、开发一个 `web` 系统，读取数据库的📕数据，展示就行
 
-> 2、模仿对标写文章，就是调用 AI 接口。
+> 2、模仿对标写文章，就是调用 `AI` 接口。
 
-> 3、文生图，根据参数生成📕配图，也是调用 AI 文生图接口即可。
+> 3、文生图，根据参数生成📕配图，也是调用 `AI` 文生图接口即可。
 
 ## 步骤一：生成项目骨架
 
 最快的开发方式，还是基于模板代码去开发，基本环境一步到位。
 
-直接使用 claude code 就进入业务需求开发。
+直接使用 `claude code` 就进入业务需求开发。
 
 直接使用模板代码生成项目
 
@@ -1113,7 +1122,7 @@ xiaohongshu-n8n-web
 
 以及具体的数据交互逻辑。
 
-这里也感谢 yihui 大佬的提示词给到的灵感，还是很牛批的。
+这里也感谢 `yihui` 大佬的提示词给到的灵感，还是很牛批的。
 
 ```
 网站名称叫做：像素红薯。
@@ -1150,13 +1159,13 @@ xiaohongshu-n8n-web
 
 ## 步骤三：根据需求文档进行开发
 
-到这里还是一样的步骤，让 claude code 根据需求文档进行开发。
+到这里还是一样的步骤，让 `claude code` 根据需求文档进行开发。
 
 ```
 @docs/prd.md 根据需求文档，开发这个网站，ultrathink
 ```
 
-还是依然在 plan 模式下，加入 ultrathink 深度思考。
+还是依然在 `plan` 模式下，加入 `ultrathink` 深度思考。
 
 ![](img/609beb24435487451ff6061e737aab35.png)
 
@@ -1188,7 +1197,7 @@ xiaohongshu-n8n-web
 
 直接复制页面上的复制按钮
 
-粘贴到 CC 的对话界面中
+粘贴到 `CC` 的对话界面中
 
 ![](img/64b0b52f5248cf23466b1fe235d59591.png)
 
@@ -1200,11 +1209,11 @@ xiaohongshu-n8n-web
 
 ### 2、笔记列表为 0 的情况
 
-可以看到笔记列表为 0 的情况，那么直接告诉 claude cod 就可以。
+可以看到笔记列表为 0 的情况，那么直接告诉 `claude cod` 就可以。
 
 ![](img/f5bb14b559793b81a4ebfc6e1d4152e2.png)
 
-可以看到根据 claude code 的描述，可能是关联字段搞错了。
+可以看到根据 `claude code` 的描述，可能是关联字段搞错了。
 
 ![](img/29acfbd5e4fdf4824d5aab198319a25a.png)
 
@@ -1224,7 +1233,7 @@ xiaohongshu-n8n-web
 
 ![](img/22e062d7d3be6112bbff380f4de506e3.png)
 
-还有个小插曲。居然检测出我的 glm 账号的余额不足。
+还有个小插曲。居然检测出我的 `glm` 账号的余额不足。
 
 ![](img/d63f1b9ebefa9de203d44ce47a9a4730.png)
 
@@ -1242,7 +1251,7 @@ commit push
 
 ![](img/b3d908110d9eb8cb4b4dd47ad24c6cbd.png)
 
-这里借用的是 glm 的模型
+这里借用的是 `glm` 的模型
 
 这个在需求的文档里写的就很清楚了。
 
@@ -1251,17 +1260,17 @@ commit push
 
 ```
 
-其实这里最好就是的就是把接口文档，保存到本地的 api-glm.md 文件中，这样 claude code 读取会更准确。
+其实这里最好就是的就是把接口文档，保存到本地的 `api-glm.md` 文件中，这样 `claude code` 读取会更准确。
 
-避免 claude code 可能读取不了链接的数据。
+避免 `claude code` 可能读取不了链接的数据。
 
 ## 步骤五：接入文生图的模型
 
-只用最近很火的 qwen 的生图模型
+只用最近很火的 `qwen` 的生图模型
 
-https://www.modelscope.cn/models/Qwen/Qwen-Image/summary
+`https://www.modelscope.cn/models/Qwen/Qwen-Image/summary`
 
-不过我尝试让claude code 讨论下这个模型怎么用
+不过我尝试让`claude code` 讨论下这个模型怎么用
 
 ```
 https://www.modelscope.cn/models/Qwen/Qwen-Image/summary
@@ -1270,7 +1279,7 @@ https://www.modelscope.cn/models/Qwen/Qwen-Image/summary
 
 ![](img/0275390b0425ad43450485f7ee065a4d.png)
 
-不过后来开发我打算让 claude code 直接读取这个连接的文档
+不过后来开发我打算让 `claude code` 直接读取这个连接的文档
 
 就是开发了后一直不对
 
@@ -1278,7 +1287,7 @@ https://www.modelscope.cn/models/Qwen/Qwen-Image/summary
 
 没办法，就只能手动粘贴文档了。
 
-我还特意粘贴上了文档中的示例代码（虽然是 python 的，但是 claude code 是可以理解的。）
+我还特意粘贴上了文档中的示例代码（虽然是 python 的，但是 `claude code` 是可以理解的。）
 
 ```
  @docs/api-modelscope.md 这个是modelscope的api文档，这个是文生图的示例代码：
@@ -1290,7 +1299,7 @@ https://www.modelscope.cn/models/Qwen/Qwen-Image/summary
 
 这里有个问题就是需要绑定阿里巴巴的账号
 
-其实刚开始我不知道，我就继续和claude code 聊错误。
+其实刚开始我不知道，我就继续和`claude code` 聊错误。
 
 它就会帮我排查接口，通过接口返回的信息给出我提示。
 
@@ -1300,11 +1309,13 @@ https://www.modelscope.cn/models/Qwen/Qwen-Image/summary
 
 接下来继续测试接口
 
-发现了尺寸的符号是 x 而不是*号的问题。
+发现了尺寸的符号是 `x` 而不是`*`号的问题。
 
 ![](img/b9d17e6643e85f2e93087047ba073f26.png)
 
 最后完美手工
+
+
 
 ![](img/fffdc1e02df0f354948a1b7b607ebac6.png)
 
@@ -1324,7 +1335,7 @@ commit push
 
 ![](img/b8b866c20a54eaa8af8ffdb19a2ec3d3.png)
 
-# 总结
+## 总结
 
 到这里基本就完事了。这么样，感觉可否还行
 
@@ -1334,7 +1345,7 @@ commit push
 
 > 那么体现来自于哪里了？
 
-> 我觉得就是 claude code + n8n 的结合。
+> 我觉得就是 `claude code` + `n8n` 的结合。
 
 一个是编程界扛把子
 
@@ -1342,11 +1353,11 @@ commit push
 
 加上出海的赛道爆火。
 
-这就是 claude code + n8n 的魅力。
+这就是 `claude code` + `n8n` 的魅力。
 
 > 那么到底该怎么弄了
 
-> 1、学好 AI 工具，用好 AI 工具，我这里就无脑推荐 Claude Code + n8n 了
+> 1、学好 AI 工具，用好 AI 工具，我这里就无脑推荐 `Claude Code` + `n8n` 了
 
 > 跟 AI 一起学习或者找大佬一起学习。
 
@@ -1360,12 +1371,12 @@ commit push
 
 原谅我重要的事情说三遍，其实就是这么简单。
 
-增强你的**学习能力**以及**问题处理能力**
+增强你的学习能力以及问题处理能力
 
-**搞懂需求**
+搞懂需求
 
-剩下就是**干**就可以了。
+剩下就是干就可以了。
 
-**如果你有遇到什么**问题，都可以来找我，欢迎跟志辉一起交流讨论！
+如果你有遇到什么问题，都可以来找我，欢迎跟志辉一起交流讨论！
 
-**最后感谢赚钱！跟很多大佬一起学习，也在积极反哺大家，跟大**家一起在这个时代打下属于自己的一片江山。
+最后感谢赚钱！跟很多大佬一起学习，也在积极反哺大家，跟大家一起在这个时代打下属于自己的一片江山。

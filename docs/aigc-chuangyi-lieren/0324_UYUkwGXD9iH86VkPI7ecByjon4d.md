@@ -1,3 +1,4 @@
+
 # 20251210-再见PS，AI设计的拐点已到来，Lovart正在颠覆创作范式
 
 > 来源：[https://aigcreative.feishu.cn/docx/WAUEdFWXEoi4f3xDZvccCj4hnze](https://aigcreative.feishu.cn/docx/WAUEdFWXEoi4f3xDZvccCj4hnze)
@@ -16,7 +17,7 @@
 
 ![](img/574c389627d6a5bb8a7b9ce2436ff3d8.png)
 
-**感**觉它终于走对了一条路：Lovart不只是想帮你生图，正在创造一种全新创作设计工作流范式，在保持设计理念、排版逻辑、结构语义、视觉风格的前提下，完成所有设计的最后一公里。
+**感觉**它终于走对了一条路：Lovart不只是想帮你生图，正在创造一种全新创作设计工作流范式，在保持设计理念、排版逻辑、结构语义、视觉风格的前提下，完成所有设计的最后一公里。
 
 简单说，它把一个专业的设计Agent和一个无限画布结合在了一起。
 
@@ -32,17 +33,17 @@
 
 传送门先放这，Lovart官方网址：https://www.lovart.ai/
 
-# 01.解决做图&改图痛点
+## 01.解决做图&改图痛点
 
 Lovart 最核心的逻辑是：Agent（智能体）+ Canvas（画布）。
 
-**在**Nano Banana Pro发布后，可以说，Lovart是使用Nano Banana Pro最丝滑、最专业的产品！
+在Nano Banana Pro发布后，可以说，Lovart是使用Nano Banana Pro最丝滑、最专业的产品！
 
 你只管当成一个非常专业的设计总监，只管在这个画布上提需求或者操作，它负责执行。
 
 重点是下面这四个图片编辑功能，确实解决了创意创作者不少实际问题：
 
-## 1.1 Text Edit：像改文档一样改图片上的文字
+### 1.1 Text Edit：像改文档一样改图片上的文字
 
 这应该也是大家吐槽最多的点：AI 生成的图，上面的字通常都是乱码，或者想改没法快速的修改。
 
@@ -54,11 +55,11 @@ Lovart 的 **Text Edit** 功能确实很实用。
 
 ![](img/4b1d8c21827d7cce924841b0010a306a.png)
 
-选中这张图后，点击图片上方的**Text Edit****，很快就能得到下面的结果：**
+选中这张图后，点击图片上方的 **Text Edit**，很快就能得到下面的结果：
 
 ![](img/28e0abe51a01de66988b69d17cfa8ae9.png)
 
-**可**以看到他将图片中所有的文字都识别出来了，而且还出现了输入框，应该是直接在输入框里修改文字就能改动了，试试“这句话我确实说过”：
+可以看到他将图片中所有的文字都识别出来了，而且还出现了输入框，应该是直接在输入框里修改文字就能改动了，试试“这句话我确实说过”：
 
 ![](img/867f37b782863e78e8a71bc09f478b74.png)
 
@@ -68,7 +69,7 @@ Lovart 的 **Text Edit** 功能确实很实用。
 
 ![](img/48bf854db8eb0a54f475b7fd31e2a975.png)
 
-很轻松的就把上图中的**牛马注意**改成了**原地下班****。**
+很轻松的就把上图中的**牛马注意**改成了**原地下班**。
 
 ![](img/0a3f1566c082b71f5bf07aa4b7e69a9a.png)
 
@@ -80,7 +81,7 @@ Lovart 的 **Text Edit** 功能确实很实用。
 
 哪怕你是把英文改成中文，长短变了，它也能自动适配排版。对于做电商图或者海报的朋友来说，这能省下不少抠图填补背景的时间。
 
-## 1.2 Touch Edit：指哪改哪，不用费劲写长篇提示词
+### 1.2 Touch Edit：指哪改哪，不用费劲写长篇提示词
 
 关于这个功能，之前有专门写过一篇，点击查看《》。
 
@@ -88,7 +89,7 @@ Lovart 的 **Text Edit** 功能确实很实用。
 
 **Touch Edit** 就直观多了。你想改哪里，就点哪里。
 
-除去上面的**Text Edit**，能给画面换文字，** ****Touch Edit****也行，更直观。**比如你想给左边的海报的标题换一下文字，直接点选，然后告诉它你的想法就行。
+除去上面的 **Text Edit**，能给画面换文字，**Touch Edit** 也行，更直观。比如你想给左边的海报的标题换一下文字，直接点选，然后告诉它你的想法就行。
 
 ![](img/e6c09344fbd7baefd87a0dee2bd89a8c.png)
 
@@ -99,7 +100,6 @@ Lovart 的 **Text Edit** 功能确实很实用。
 Lovart对于标题的字体、设计样式理解得挺准的，新生成的文字也完全遵循之前的样式，简直不要太省心了。这要是搁以前，想找个类似的字体可找半天。
 
 更绝的是，Lovart完全可以当成三维软件来使用，场景材质渲染，完成不成问题：
-
 
 ![](img/8af17ea78563f14d6547e0bfdde84ea9.png)
 
@@ -113,11 +113,11 @@ Lovart对于标题的字体、设计样式理解得挺准的，新生成的文�
 
 同时，这种交互方式，确实比纯写代码一样的Prompt要顺手很多。
 
-## 1.3 Edit Elements：把一张死图分拆成图层
+### 1.3 Edit Elements：把一张死图分拆成图层
 
 这个功能对设计师来说很友好。前面也写过一篇：《》
 
-**通常咱们拿到一张JPG图是**没法动的，但 Lovart 的 Edit Elements 可以把画面里的元素识别出来，拆分成不同的图层。
+通常咱们拿到一张JPG图是没法动的，但 Lovart 的 Edit Elements 可以把画面里的元素识别出来，拆分成不同的图层。
 
 ![](img/d76a66e53b2e07e40eedf91512041e6c.png)
 
@@ -127,9 +127,9 @@ Lovart对于标题的字体、设计样式理解得挺准的，新生成的文�
 
 虽然不能说百分之百完美拆解，但对于快速做一些排版调整来说，自由度大了很多。
 
-## 1.4 Mockup：贴图变样机，超级省事
+### 1.4 Mockup：贴图变样机，超级省事
 
-**Mockup，**这个就有点厉害了，做品牌周边的朋友应该会喜欢这个。
+**Mockup**，这个就有点厉害了，做品牌周边的朋友应该会喜欢这个。
 
 你想看自己的设计印在杯子、T恤或者车身上是什么样，以前得找专门的样机素材去贴。
 
@@ -145,7 +145,7 @@ Lovart对于标题的字体、设计样式理解得挺准的，新生成的文�
 
 ![](img/ce8902ce656e8504106b34d99ddfc2d5.png)
 
-上面的效果，像布料的褶皱这些细节，处理得还算自然，最后。把整体图层合成一张图你就可以存出来了：
+上面的效果，像布料的褶皱这些细节，处理得还算自然。最后，把整体图层合成一张图你就可以存出来了：
 
 ![](img/a8feccffa1ad8b94dbc94970765e226d.png)
 
@@ -155,11 +155,9 @@ Lovart对于标题的字体、设计样式理解得挺准的，新生成的文�
 
 这个过程不要太流畅！如果你需要快速出几张效果图给客户看，这个功能效率很高。
 
-##
+## 02.实测一些好玩实用的场景 & 提示词参考
 
-# 02.实测一些好玩实用的场景 & 提示词参考
-
-## 玩法1：一张图生成一套电影分镜表
+### 玩法1：一张图生成一套电影分镜表
 
 很多做视频、写脚本的朋友最头疼的是啥？是画面的一致性。你想要一套分镜，结果 AI 给你生成了 9 张不同的人脸，这还怎么用？
 
@@ -171,7 +169,7 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 ![](img/419e18622e055fdf831ba9786dabbe48.png)
 
-> ** Prompt: **Analyze the input image. Generate a cohesive 3x3 grid "Cinematic Contact She**et". Row 1 (Con**text): Extreme Long Shot (Environment), Long Shot (Full body), Medi**um Long Sho**t. Row 2 (Action): Medium Shot, Medium Close-Up, Close-Up (Face). Row 3 (Details): Extreme Close-Up (Eyes/Texture), Low Angle (Heroic), High Angle (God's view). Constraint: Ensure strict consistency: Same character, same outfit, same lighting across all 9 panels. Realistic depth of field.
+> **Prompt:** Analyze the input image. Generate a cohesive 3x3 grid "Cinematic Contact Sheet". Row 1 (Context): Extreme Long Shot (Environment), Long Shot (Full body), Medium Long Shot. Row 2 (Action): Medium Shot, Medium Close-Up, Close-Up (Face). Row 3 (Details): Extreme Close-Up (Eyes/Texture), Low Angle (Heroic), High Angle (God's view). Constraint: Ensure strict consistency: Same character, same outfit, same lighting across all 9 panels. Realistic depth of field.
 
 ![](img/8c97f10edd8a653d846b04dadf7a497e.png)
 
@@ -179,11 +177,11 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 这一张图发给后期或者剪辑，什么都不用解释，懂的都懂。
 
-## 玩法2：商业级产品图制作&修改
+### 玩法2：商业级产品图制作&修改
 
 做电商或者做海报，最贵的是什么？是搭建场景。有时候你在网上看到一张绝美的咖啡店照片，心想：“要是我的杯子放在那张桌子上就好了。”
 
-**以前这得靠 PS 扣**半天，还得调光影。Lovart 的 Touch Edit 配合 Nano Banana Pro 模型，能做那种像素级的融合。
+以前这得靠 PS 扣半天，还得调光影。Lovart 的 Touch Edit 配合 Nano Banana Pro 模型，能做那种像素级的融合。
 
 **比如：**你卖的是一款复古唱片机，你找了一张非常有格调的客厅的照片（哪怕是有版权水印的样片也没事，因为我们要重绘）。
 
@@ -191,7 +189,7 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 1）把那张好看的客厅图扔进去。
 
-2）用 Touch Edit 选中原来的音箱）。
+2）用 Touch Edit 选中原来的音箱。
 
 3）告诉它：把我的音箱放这，保持阳光的暖光和胶片颗粒感。
 
@@ -199,71 +197,69 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 没有任何违和感，它把你的产品融合进去了。音箱表面会反射出窗户的光，桌面的倒影也是对的。这种借场景的玩法，能帮你省下几万块的摄影棚搭建费。
 
-## 玩法3：情景式双语识字小报
+### 玩法3：情景式双语识字小报
 
 这个玩法是我个人很喜欢的，特别家里有小朋友的，对于基础事物的认知，双语的启蒙学习，非常友好。以前这种效果的书籍，还得去买，现在自己做，剩下一大笔。
 
 > **Prompt:**
-
+>
 > 角色设定 (Role Definition):
-
+>
 > 你是一位拥有深厚幼儿教育背景的专业插画师和双语语言专家，专注于为3-10岁儿童创作寓教于乐的视觉学习材料。你的核心能力是将抽象的主题转化为生动、具体、充满童趣的“情景式”双语识字场景。
-
+>
 > 核心任务 (Core Task):
-
+>
 > 根据用户输入的一个主题关键词（如“医院”、“我的卧室”）或用户上传的一张照片，生成一张高质量的“情景式儿童英语单词学习卡片/小报”。
-
+>
 > 风格与格式要求 (Style & Format Constraints):
-
+>
 > 整体视觉风格 (Visual Style):
-
+>
 > 必须严格模仿参考图（Reference Images）的风格：可爱的3D或2D卡通渲染、色彩鲜艳明亮、光影柔和、氛围温馨、充满童趣。
-
+>
 > 场景必须是一个完整、连贯的“情景”（Situational Scene），而不是孤立物体的堆砌。人物（可爱的小朋友、拟人化动物或友好的职业角色）要在场景中互动，增加生动感。
-
+>
 > 构图要饱满且细节丰富，以便有足够的元素用于教学，但不能过于杂乱，要保持视觉中心突出。
-
+>
 > 标题设计 (Title Design):
-
+>
 > 在画面的顶部中央，设计一个醒目的、艺术化的中文大标题。
-
+>
 > 标题格式统一为：“[主题名称] 识字小报” 或 “[主题名称] 双语认知大发现”。例如：“太空旅行识字小报”或“我的厨房双语认知大发现”。字体要卡通、圆润、活泼。
-
+>
 > 单词标签系统 (Labeling System):
-
+>
 > 在场景中选择 12-20 个具有代表性的、适合3-10岁儿童学习的关键物体或动作进行标注。
-
+>
 > 严格的标签格式 (Strict Label Format): 每个标签必须包含三部分内容，排列顺序如下：
-
+>
 > 第一行（或左侧）：中文词汇（较大，清晰字体）
-
+>
 > 第二行（或上方小字）：拼音（辅助发音）
-
+>
 > 第三行（或下方）：英文单词（清晰易读的英文字体）
-
+>
 > 连接方式: 必须使用清晰的线条或箭头，从标签框准确地指向场景中对应的物体。线条样式要与整体卡通风格保持一致。
-
+>
 > 标签框的设计可以是简单的圆角矩形、气泡框，或者像参考图1那样带有小图标（如书本、标签牌）的装饰性边框。
-
+>
 > 交互流程 (Interaction Workflow):
-
+>
 > 接收输入: 等待用户提供一个主题词（如“消防局”）或一张图片。
-
+>
 > 场景构思: 基于输入，构思一个充满细节和互动的完整卡通场景。思考该场景中常见的、适合儿童学习的名词和动词。
-
+>
 > 图像生成: 绘制场景，确保包含计划标注的所有元素，并预留好放置标题和标签的空间。
-
+>
 > 标注合成: 在生成的图像上添加艺术标题，并精准地添加双语标签和指示线。
-
+>
 > 示例输入与期望输出摘要 (Example):
-
+>
 > 用户输入: 主题：滑雪场
-
+>
 > 你的期望输出: 一张卡通滑雪场全景图。顶部标题“滑雪场识字小报”。场景中有戴着护目镜滑雪的小朋友、缆车、雪人、滑雪板、雪松等。标签指向“滑雪板”时，显示框内内容为：[① huá xuě bǎn ② 滑雪板 ③ snowboard]。
 
 使用上面提示词，很快就能得到以下结果：
-
-
 
 ![](img/f7be8250d023c9349a6bb69bdd1098fe.png)
 
@@ -273,7 +269,7 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 ![](img/37d6f25b07f8a42f68a44b7e15309142.png)
 
-## 玩法4：把空房间变精装修
+### 玩法4：把空房间变精装修
 
 这个功能简直是为房产中介、软装设计师和爱折腾家里的人量身定做的。
 
@@ -285,13 +281,13 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 
 **怎么玩：** 上传照片，输入：
 
-> S**how me**** how this** room would look with furniture in it. Style: Scandinavian Minimalist (北欧极简风) . Lighting: Cozy warm evening light.
+> Show me how this room would look with furniture in it. Style: Scandinavian Minimalist (北欧极简风). Lighting: Cozy warm evening light.
 
 ![](img/8ed55e1a3152268808c20ecfb39fed82.png)
 
 它不是简单地把家具P上去，它是根据房间的透视线（墙角、地板纹路）来生成家具。甚至连地上的影子方向都是跟着窗户光线走的，还顺便把过曝的窗外都拉回来了，太牛了。一秒钟，毛坯房变豪宅，这种视觉冲击力比任何语言都强。
 
-## 玩法五：品牌进化史的数据美学长图
+### 玩法五：品牌进化史的数据美学长图
 
 现在做内容，大家都喜欢看那种信息密度极高的大图。比如《苹果手机进化史》、《耐克球鞋编年史》。这种图以前做起来巨麻烦，要搜集几十张素材再排版。
 
@@ -300,8 +296,10 @@ Lovart 有个绝活，叫结构化九宫格。你可以强行要求它在一张�
 Lovart 现在可以直接生成这种博物馆级的陈列图，最最最关键：Lovart能批量生成！！！非常高效！
 
 > 提示词：
-
+>
 > Role & Subject: A massive, encyclopedic 16:9 3D infographic poster titled "THE EVOLUTION OF [Product Name]". The visual style is a high-end fusion of museum-grade product photography and complex technical engineering blueprints.
+
+
 
 > The Hero Lineup (Chronological Core): A complete, linear chronological lineup of 8-12 historical versions of [Product Name], ranging from the very first prototype to the latest futuristic model. They are arranged with precision on a measurement scale/ruler base running horizontally across the center. Rendering: Hyper-realistic 3D, 8k resolution. Emphasis on the evolution of textures: showing the aging of early [Material Vibe] vs. the pristine, high-tech finish of modern versions.
 
@@ -335,7 +333,7 @@ Lovart 现在可以直接生成这种博物馆级的陈列图，最最最关键�
 
 这种从过去到现在的时间流逝感，加上仿佛不仅是图还有数据的科技感排版，发在朋友圈或者📕，绝对是骗赞神器。
 
-## 玩法六：品牌VI视觉系统设计
+# 玩法六：品牌VI视觉系统设计
 
 制作品牌的视觉VI，这是我觉得Lovart作为专业设计的Agent，能力最强的一个体现！它会先去充分的去理解你这个品牌LOGO的内涵，调性，风格，然后给出一套完整的，可落地的方案。
 
@@ -345,13 +343,7 @@ Lovart 现在可以直接生成这种博物馆级的陈列图，最最最关键�
 
 它是真能干活啊，哐哐一顿输出！
 
-
-
-
-
-
 ![](img/64f34b9b3174900c3067ecdc2fe7d853.png)
-
 
 ![](img/bfe4a04b099d909c607bd2b09d9a313f.png)
 
@@ -383,7 +375,7 @@ Lovart 现在可以直接生成这种博物馆级的陈列图，最最最关键�
 
 它没有搞太多花里胡哨的概念，就是盯着编辑和落地这两个环节在做优化。
 
-Text Edit 改字、Touch Edit 局部修图，这些都是咱们日常干活时真真切切需要的功能。
+`Text Edit`改字、`Touch Edit`局部修图，这些都是咱们日常干活时真真切切需要的功能。
 
 如果你平时工作中经常需要处理图片、做设计方案，或者运营自媒体需要快速出图，我觉得 Lovart 是值得上手试一试的。
 

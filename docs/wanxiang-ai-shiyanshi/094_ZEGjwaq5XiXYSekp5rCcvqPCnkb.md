@@ -1,6 +1,7 @@
+
 # GPT-4o 风格提示词案例大全
 
-> 来源：[https://yunyinghui.feishu.cn/docx/CL3rdMKReoojGgxEy9Pcrz7an9c](https://yunyinghui.feishu.cn/docx/CL3rdMKReoojGgxEy9Pcrz7an9c)
+> 来源：https://yunyinghui.feishu.cn/docx/CL3rdMKReoojGgxEy9Pcrz7an9c
 
 > 适用人群：学习前沿 AI 绘画技术的人
 
@@ -10,17 +11,17 @@
 
 > **内容出品方：**[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
 
-> **内容出品人：**** **
+> **内容出品人：**
 
-> **使用建议：****在电脑端学习，体验将更加丰富。若想快速定位**精确内容，你可以利用快捷键 Ctrl+F（Windows 用户）或 Command+F（Mac 用户）搜索关键词或短语，迅速找到你需要的信息。同时，你也可以直接点击学习导航的相关文字，便可一键直达学习板块。
+> **使用建议：**在电脑端学习，体验将更加丰富。若想快速定位精确内容，你可以利用快捷键 Ctrl+F（Windows 用户）或 Command+F（Mac 用户）搜索关键词或短语，迅速找到你需要的信息。同时，你也可以直接点击学习导航的相关文字，便可一键直达学习板块。
 
-> **持****续更新 GPT-4****o 绘画提示词风格案例大收集，**永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品，原创内容禁止复制。
+> **持续更新 GPT-4o 绘画提示词风格案例大收集，**永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品，原创内容禁止复制。
 
 > **相关文档：**
 
 > [GPT-4o 图像生成学习手册（持续更新ing...](https://yunyinghui.feishu.cn/wiki/KK1twJ149iYVPgkO3EscFrKNnTe)
 
-> 🎯全**网最接地气 AI 知识库：「**[**AI 实验室」知识库（**](https://yunyinghui.feishu.cn/wiki/space/7340161844864598017?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)AI 绘画、AI 写作、AI 视频等应用技能）
+> 🎯全网最接地气 AI 知识库：「AI 实验室」知识库（https://yunyinghui.feishu.cn/wiki/space/7340161844864598017?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home）：AI 绘画、AI 写作、AI 视频等应用技能
 
 ## 吉卜力风格
 
@@ -64,7 +65,7 @@
 
 ![](img/b3357b7e9b8057cc1d540c71078ebfd2.png)
 
-## **手绘信息图卡片**
+## 手绘信息图卡片
 
 **提示词：**
 
@@ -84,8 +85,7 @@
 
 **原链接：**[https://x.com/dotey/status](https://x.com/dotey/status/1907870919852179850)/1907870919852179850
 
-
-## **复古宣传海报**
+## 复古宣传海报
 
 **提示词：**
 
@@ -99,7 +99,7 @@
 
 ![](img/794a0cb307060fe283355773bfadf078.png)
 
-## **彩色矢量艺术海报**
+## 彩色矢量艺术海报
 
 **提示词：**
 
@@ -125,7 +125,7 @@
 
 ![](img/e09d4cf1ba1820deba5a62bbb9432d54.png)
 
-## **Q 版求婚场景**
+## Q 版求婚场景
 
 **提示词：**
 
@@ -154,7 +154,6 @@
 **技巧：**如果不规范图片比例，默认 1:1。
 
 **原链接：**https://x.com/dotey/status/1909332895115714835
-
 
 ## Q 版表情包
 
@@ -228,49 +227,52 @@
 
 **提示词：**
 
+```
+
 {
+  "prompt": "A futuristic trading card with a dark, moody neon aesthetic and soft sci-fi lighting. The card features a semi-transparent, rounded rectangle with slightly muted glowing edges, appearing as if made of holographic glass. At the center is a large glowing logo of {{logo}}, with no additional text or label, illuminated with a smooth gradient of {{colors}}, but not overly bright. The reflections on the card surface should be subtle, with a slight glossy finish catching ambient light. The background is a dark carbon fiber texture or deep gradient with soft ambient glows bleeding into the edges. Add subtle light rays streaming down diagonally from the top, giving the scene a soft cinematic glow. Apply light motion blur to the edges and reflections to give the scene a sense of depth and energy, as if it's part of a high-end tech animation still. Below the card, include realistic floor reflections that mirror the neon edges and logo—slightly diffused for a grounded, futuristic look. Text elements are minimal and softly lit: top-left shows '{{ticker}}', top-right has a stylized signature, and the bottom displays '{{company_name}}' with a serial number '{{card_number}}', a revenue badge reading '{{revenue}}', and the year '{{year}}'. Typography should have a faint glow with slight blurring, and all elements should feel premium, elegant, and softly illuminated—like a high-end cyberpunk collectible card.",
 
-"prompt": "A futuristic trading card with a dark, moody neon aesthetic and soft sci-fi lighting. The card features a semi-transparent, rounded rectangle with slightly muted glowing edges, appearing as if made of holographic glass. At the center is a large glowing logo of {{logo}}, with no additional text or label, illuminated with a smooth gradient of {{colors}}, but not overly bright. The reflections on the card surface should be subtle, with a slight glossy finish catching ambient light. The background is a dark carbon fiber texture or deep gradient with soft ambient glows bleeding into the edges. Add subtle light rays streaming down diagonally from the top, giving the scene a soft cinematic glow. Apply light motion blur to the edges and reflections to give the scene a sense of depth and energy, as if it's part of a high-end tech animation still. Below the card, include realistic floor reflections that mirror the neon edges and logo—slightly diffused for a grounded, futuristic look. Text elements are minimal and softly lit: top-left shows '{{ticker}}', top-right has a stylized signature, and the bottom displays '{{company_name}}' with a serial number '{{card_number}}', a revenue badge reading '{{revenue}}', and the year '{{year}}'. Typography should have a faint glow with slight blurring, and all elements should feel premium, elegant, and softly illuminated—like a high-end cyberpunk collectible card.",
+  "style": {
 
-"style": {
+    "lighting": "Neon glow, soft reflections",
 
-"lighting": "Neon glow, soft reflections",
+    "font": "Modern sans-serif, clean and minimal",
 
-"font": "Modern sans-serif, clean and minimal",
+    "layout": "Centered, structured like a digital collectible card",
 
-"layout": "Centered, structured like a digital collectible card",
+    "materials": "Glass, holographic plastic, glowing metal edges"
 
-"materials": "Glass, holographic plastic, glowing metal edges"
+  },
 
-},
+  "parameters": {
 
-"parameters": {
+    "logo": "Tesla logo",
 
-"logo": "Tesla logo",
+    "ticker": "TSLA",
 
-"ticker": "TSLA",
+    "company_name": "Tesla Inc.",
 
-"company_name": "Tesla Inc.",
+    "card_number": "#0006",
 
-"card_number": "#0006",
+    "revenue": "$96.8B",
 
-"revenue": "$96.8B",
+    "year": "2025",
 
-"year": "2025",
+    "colors": ["red", "white", "dark gray"]
 
-"colors": ["red", "white", "dark gray"]
+  },
 
-},
+  "medium": "3D render, high-resolution digital art",
 
-"medium": "3D render, high-resolution digital art",
-
-"size": "1080px by 1080px"
+  "size": "1080px by 1080px"
 
 }
 
+```
+
 **参考图片：**可不上传图片，或上传一张 logo 图片但需要修改提示词。
 
-**技巧：**这段提示词采用的是类 JSON 结构描述卡片元素，修改 parameters 对象中的值即可自定义卡片；如果需要用到上传的 logo 图，需要在 parameters 修改 logo 参数（类似上传的图片这样的话）。
+**技巧：**这段提示词采用的是类 JSON 结构描述卡片元素，修改 `parameters` 对象中的值即可自定义卡片；如果需要用到上传的 logo 图，需要在 `parameters` 修改 `logo` 参数（类似上传的图片这样的话）。
 
 **原链接：**https://x.com/hewarsaber/status/1912933879411052969
 
@@ -283,6 +285,8 @@
 超写实的 3D 渲染画面，重现了 2008 年【《命令与征服：红色警戒 3》中娜塔莎】的角色设计，完全依照原版建模。场景设定在一个昏暗杂乱的 2008 年代卧室里，角色正坐在地毯上，面对一台正在播放【《命令与征服：红色警戒 3》】的老式电视和游戏机手柄。
 
 整个房间充满了 2008 年代的怀旧氛围：零食包装袋、汽水罐、海报以及纠缠在一起的电线。【娜塔莎·沃尔科娃】在画面中被抓拍到转头的一瞬，回眸看向镜头，她那标志性的空灵美丽面容上带着一抹纯真的微笑。她的上半身微微扭转，动态自然，仿佛刚刚被闪光灯惊到而做出的反应。
+
+
 
 闪光灯轻微地过曝了她的脸和衣服，使她的轮廓在昏暗的房间中更加突出。整张照片显得原始而自然，强烈的明暗对比在她身后投下深邃的阴影，画面充满触感，带有一种真实的 2008 年胶片快照的模拟质感。
 
@@ -342,7 +346,7 @@ Create a high-resolution 3D render of 【Emoji】 designed as an inflatable, puf
 
 ![](img/42f0ac4dc3ad11254068e5234b37c1cc.png)
 
-## **纸艺版 Emoji 图标**
+## 纸艺版 Emoji 图标
 
 **提示词：**
 
@@ -378,7 +382,7 @@ A paper craft-style 【Emoji】 floating on a pure white background. The emoji i
 
 ![](img/1b0084c9fe2f5b807b05952a047a6f3e.png)
 
-## **珐琅别针**
+## 珐琅别针
 
 **提示词：**
 
@@ -392,7 +396,7 @@ A paper craft-style 【Emoji】 floating on a pure white background. The emoji i
 
 ![](img/7c70efa9c8a38cc2fe7a5eb41a26c971.png)
 
-## **低多边形 3D 渲染风格**
+## 低多边形 3D 渲染风格
 
 **提示词：**
 
@@ -428,7 +432,7 @@ A paper craft-style 【Emoji】 floating on a pure white background. The emoji i
 
 **技巧：**
 
-如果是** **Emoji 图标转换，只需要上传一张图片，括号内替换成 Emoji 图标；
+如果是 Emoji 图标转换，只需要上传一张图片，括号内替换成 Emoji 图标；
 
 如果是需要上传的待转换图标，则上传两张图（先参考图，再待转换图）；
 
@@ -447,7 +451,6 @@ A paper craft-style 【Emoji】 floating on a pure white background. The emoji i
 **技巧：**括号内要修改，英文名最好；如果不规范图片比例，默认 1:1。
 
 **原链接：**https://x.com/richardchang/status/1909086122959139312
-
 
 ## Q 版扁平风格贴纸
 
@@ -514,7 +517,6 @@ Trompe l'oeil illusion of A (subject) (attire) steps out of a large screen displ
 a hyper realistic twitter post by Albert Einstein right after finishing the theory of relativity. include a selfie where you can clearly see scribbled equations and a chalkboard in the background. have it visible that the post was liked by Nikola Tesla.
 
 **原链接：**https://x.com/egeberkina/status/1914299716394778713
-
 
 ## 迷你 3D 风格建筑
 
@@ -610,7 +612,6 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 **原链接：**https://x.com/hellokaton/status/1910902266481217928
 
-
 ## 涂鸦社交媒体
 
 **提示词：**
@@ -619,10 +620,11 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 **参考图片：**直接生成不上传图片；也可以上传图片再涂鸦，提示词需要相应修改。
 
-**原链接：**https://x.com/op7418/status/1906208691877253536
 
 
-## 涂鸦照片穿搭分析
+**原链接：**`https://x.com/op7418/status/1906208691877253536`
+
+# 涂鸦照片穿搭分析
 
 **提示词：**
 
@@ -632,21 +634,21 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 **技巧：**如果不规范图片比例，默认 1:1。
 
-**原链接：**https://x.com/coolish/status/1906331982067548581
+**原链接：**`https://x.com/coolish/status/1906331982067548581`
 
 ![](img/bba384b00b2b17d00e493e80f95f5c0c.png)
 
-## 四格漫画
+# 四格漫画
 
 **提示词：**
 
 经典的“Out the Window” Meme 四格漫画竖版布局，标题在漫画顶部居中，背景为现代办公会议室场景，风格简洁、幽默、清晰易懂，所有人物均以卡通风格表现，适合用于网络传播。
 
-### 标题（居中）：
+## 标题（居中）
 
 《如何借助 AI 提升开发效率？》（中文，加粗）
 
-### 第一格（完整横格）：
+## 第一格（完整横格）
 
 - **场景**：公司会议室，老板站立在白板或投影幕前讲话，老板为分头发型、西装领带、严肃但略带疑惑的男性（参考图 1）。
 
@@ -656,13 +658,13 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 - **员工描述**：
 
-- 小明（程序员）：男性，蓝色格子衬衫，戴眼镜，程序员气质。
+  - 小明（程序员）：男性，蓝色格子衬衫，戴眼镜，程序员气质。
 
-- 小红（设计师）：女性，休闲时尚穿搭，显出设计师的个性气质。
+  - 小红（设计师）：女性，休闲时尚穿搭，显出设计师的个性气质。
 
-- 小互（测试员）：女性，戴圆眼镜，职场休闲风（参考图 2）。
+  - 小互（测试员）：女性，戴圆眼镜，职场休闲风（参考图 2）。
 
-### 第二格（完整横格，画面中三个员工分别给出回答，表情认真自信）：
+## 第二格（完整横格，画面中三个员工分别给出回答，表情认真自信）
 
 - **小明（左侧）对话气泡**：“我们用 AI 写单元测试。”
 
@@ -670,27 +672,27 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 - **小互（右侧）对话气泡**：“Vibe Coding。”
 
-### 第三格（下半行左侧小格）：
+## 第三格（下半行左侧小格）
 
 - **老板特写镜头**，表情从严肃转为愤怒，面容阴沉，额头出现愤怒的青筋或“井”字符号。
 
-### 第四格（下半行右侧小格）：
+## 第四格（下半行右侧小格）
 
 - **场景切换到大楼外景**，高层窗户打开，眼镜女性员工小互夸张地被老板扔出窗外，表现幽默的动态姿势，小互表情惊讶并带有喜剧效果，窗内老板依然维持愤怒的表情和姿势。
 
 ---
 
-### 附加风格要求（可选但推荐）：
+## 附加风格要求（可选但推荐）
 
 - 人物绘制：卡通化、线条清晰明快，颜色鲜明易辨，易于网络传播。
 
 - 对话气泡：中文文字，字体清晰、大小适中且统一，采用黑色文字、白色背景的标准漫画气泡。
 
-**原链接：**https://x.com/dotey/status/1905446352374395350
+**原链接：**`https://x.com/dotey/status/1905446352374395350`
 
 ![](img/42db29d310ce513547b416d25dd5fcba.png)
 
-## **怀旧动漫风格电影海报**
+# 怀旧动漫风格电影海报
 
 **提示词：**
 
@@ -714,7 +716,7 @@ a hyper realistic twitter post by Albert Einstein right after finishing the theo
 
 ![](img/76ba69a1c66e6a563426c644eec09d7c.png)
 
-## 钥匙扣
+# 钥匙扣
 
 **提示词：**
 
@@ -730,7 +732,7 @@ A close-up photo of a cute, colorful keychain held by person's hand. The keychai
 
 **技巧：**如果不规范图片比例，默认 1:1。
 
-**原链接：**https://x.com/azed_ai/status/1916521754413175059
+**原链接：**`https://x.com/azed_ai/status/1916521754413175059`
 
 ![](img/b9c40c20a53fbeba32958d40ff524e88.png)
 
@@ -738,9 +740,9 @@ A close-up photo of a cute, colorful keychain held by person's hand. The keychai
 
 # 学习交流社群
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案例**，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化 CEO，曾就职于教培大厂，目前创业，主攻研究 AI 落地应用、企业流量增长及达人 IP 孵化。
 

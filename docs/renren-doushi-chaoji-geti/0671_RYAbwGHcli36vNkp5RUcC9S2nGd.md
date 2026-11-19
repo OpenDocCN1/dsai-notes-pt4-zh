@@ -1,6 +1,7 @@
+
 # 月入10K+既能玩又能赚钱的奇特赛道分享
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/TnWYdJIU9obuiOx1YpbcU0ZWnLe](https://xuqiwei1986.feishu.cn/docx/TnWYdJIU9obuiOx1YpbcU0ZWnLe)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/TnWYdJIU9obuiOx1YpbcU0ZWnLe`
 
 | **版本** | **更新描述** | 作者 | **更新日期** |
 | --- | --- | --- | --- |
@@ -22,7 +23,7 @@
 
 ---
 
-# 一、前言：
+## 一、前言
 
 **赛道面向群体**：海外
 
@@ -40,17 +41,12 @@
 
 **需要涉及领域**：
 
-1、热爱游戏的玩家，有基本的单机游戏操作经验
-
-2、懂游戏模组
-
-3、游戏脚本，懂编程（非不要）
-
-4、3D建模&懂Blender建模，比如人物建模+汽车建模 + 以及动画制作
-
-5、懂得运镜的经验，有导演思维
-
-6、基本的视频剪辑技术
+1. 热爱游戏的玩家，有基本的单机游戏操作经验  
+2. 懂游戏模组  
+3. 游戏脚本，懂编程（非不要）  
+4. 3D建模&懂Blender建模，比如人物建模+汽车建模 + 以及动画制作  
+5. 懂得运镜的经验，有导演思维  
+6. 基本的视频剪辑技术  
 
 **详细描述**：这是一个基于原游戏场景与画面自建内容的游戏视频制作赛道。白话讲就是把你所玩的游戏进行录制，然后做成视频，并增加故事而呈现给观众。
 
@@ -62,17 +58,17 @@
 
 BeamNG.drive 是一款以高度真实物理模拟为特色的车辆驾驶游戏。它以逼真的车辆物理和碰撞效果而闻名，提供了一个开放的沙盒环境，允许玩家自由驾驶、测试车辆以及进行各种实验。
 
-# 二、赛道玩法
+## 二、赛道玩法
 
 下面我给大家列举一下关于这个赛道的流量
 
-## 2.1 中长视频：
+### 2.1 中长视频
 
-### 车祸模拟
+#### 车祸模拟
 
 ![](img/743caa3b4efbf7c8b62354d9b9354587.png)
 
-### 趣味模拟
+#### 趣味模拟
 
 这还是2025年刚起号发的
 
@@ -82,37 +78,37 @@ BeamNG.drive 是一款以高度真实物理模拟为特色的车辆驾驶游戏�
 
 ![](img/2516525a8fe13862fa2b9759302c7e47.png)
 
-### 游戏电影
+#### 游戏电影
 
 简介：以模仿电影场景来在游戏里复现，这种基本都能达到百万级播放，也是这个游戏的至高天花板。
 
 ![](img/d44db8b720dffd26130bde0c897fba5e.png)
 
-## 2.2 短视频
+### 2.2 短视频
 
-### 趣味测试
+#### 趣味测试
 
 简介：车祸碰撞测试，这类视频在TK流量更高
 
 ![](img/2c46677b45359d7397a2f287a2149c4d.png)
 
-### 盲盒测试
+#### 盲盒测试
 
 适合做小朋友赛道的人群。
 
 ![](img/705d859f474a6340caad27e240127dc0.png)
 
-### 跳跃比拼
+#### 跳跃比拼
 
 ![](img/c2ca4e6f2774f816581be991f7dcf933.png)
 
-### 道具测试
+#### 道具测试
 
 简介：基本都是亿万级的播放，受众群体广，制作也简单
 
 ![](img/28896b31080f70a81ee2d457613d2184.png)
 
-## 2.3 汽车广告
+### 2.3 汽车广告
 
 我之前接过一个汽车导演的单子，就是通过车祸模拟器给他制作一则广告，1min的视频大概500人民币，大家可以自行发挥。
 
@@ -120,9 +116,9 @@ BeamNG.drive 是一款以高度真实物理模拟为特色的车辆驾驶游戏�
 
 ![](img/8659696acf55e31e6dd55b461b1e223d.png)
 
-[14_1733657020.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StlWbqcH1ok3X3xFcrrcucShndc)
+[`14_1733657020.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StlWbqcH1ok3X3xFcrrcucShndc)
 
-## 2.4 赛道收益
+### 2.4 赛道收益
 
 这个赛道以我的理解，月入几万都是没什么问题的，可能还不止这个数。大家可以自行去搜索，这里不谈太具体。上几个月我开始带人入局这个赛道一个月就可达高爆收益。视频单价大概平均是1.1以上。
 
@@ -136,15 +132,15 @@ BeamNG.drive 是一款以高度真实物理模拟为特色的车辆驾驶游戏�
 
 ![](img/ab8cd36cfca8d3fa32d61d60702f256f.png)
 
-# 三、游戏安装与配置
+## 三、游戏安装与配置
 
 关于这个游戏详细视频大家可以看B站看我的课程：
 
 ![](img/3f0dc522d39178cfaddcafb0004f4c67.png)
 
-https://space.bilibili.com/301162993?spm_id_from=333.1007.0.0
+`https://space.bilibili.com/301162993?spm_id_from=333.1007.0.0`
 
-## 2.1 游戏安装与配置
+### 2.1 游戏安装与配置
 
 接下来我给大家放出基础部分的教程，大家抽空先去了解一下，做这个赛道必须要懂游戏，否则一切都是免谈。即使你搬运了，海外平台也不会给你推流。
 
@@ -152,7 +148,7 @@ https://space.bilibili.com/301162993?spm_id_from=333.1007.0.0
 
 这个游戏如果有经验玩单机游戏的人差不多2～3天就能掌握。
 
-车祸模拟器官网：https://www.beamng.com/game/cn/
+车祸模拟器官网：`https://www.beamng.com/game/cn/`
 
 ![](img/4df781ad79e64b5e7605ecd968fd4baf.png)
 
@@ -192,7 +188,7 @@ DirectX 版本: 11
 
 存储空间: 45GB 可用空间
 
-## 2.2 游戏在哪里下载？
+### 2.2 游戏在哪里下载？
 
 ![](img/1672c049362eee9db40058f1f902b074.png)
 
@@ -202,51 +198,51 @@ DirectX 版本: 11
 
 下载好之后点击运行即可！这个游戏是付费游戏 ¥73.60（建议买正版）
 
-## 2.3 游戏界面基础指南
+### 2.3 游戏界面基础指南
 
 ![](img/006d29a0e655d0e3b16da1c39c20ce44.png)
 
-[bandicam 2024-09-18 22-06-43-680.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U5iUbUas1oHqrvxT61Mc5BthnhE)
+[`bandicam 2024-09-18 22-06-43-680.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U5iUbUas1oHqrvxT61Mc5BthnhE)
 
-## 2.4 游戏模组下载
+### 2.4 游戏模组下载
 
 > 说明：为了增加游戏的可玩性，最好能自行下载模组进行设计！
 
-### 2.4.1 精品车具模组
+#### 2.4.1 精品车具模组
 
-https://www.modfans.cc/
+`https://www.modfans.cc/`
 
 这个模组网站主要是下载常见的BeanNG 车具，有些是付费的，我自己买过一些，效果还不错。
 
 ![](img/dacf72d44f3044f33e3ea991dacb2ff4.png)
 
-### 2.4.2 官方推荐模组下载地址
+#### 2.4.2 官方推荐模组下载地址
 
-https://www.beamng.com/resources/
+`https://www.beamng.com/resources/`
 
 ![](img/60882185a11a166a7f29baabb1510964.png)
 
-### 2.4.3 其他网站的模组（借鉴）
+#### 2.4.3 其他网站的模组（借鉴）
 
-[https://www.patre](https://www.patreon.com/surski57/shop)on.com/surski57/shop
+`https://www.patreon.com/surski57/shop`
 
-https://www.modland.net/beamng.drive-mods
+`https://www.modland.net/beamng.drive-mods`
 
-https://www.worldofmods.com/beamng/maps/
+`https://www.worldofmods.com/beamng/maps/`
 
-### 2.4.4 如何安装模组
+#### 2.4.4 如何安装模组
 
 安装模组的方法有两种，第一种是直接在游戏界面里直接下载安装，第二种是通过在第三方网站下载的模组手动安装。
 
-### 3.4.1 在线安装
+##### 3.4.1 在线安装
 
 ![](img/d95cb48c7cab2871294e5612de7e62fd.png)
 
-### 2.4.2 手动安装
+##### 2.4.2 手动安装
 
-Step1：下载自己想要的模组，一般是一个zip文件
+Step1：下载自己想要的模组，一般是一个`zip`文件
 
-Step2：打开游戏根目录，找到mods的文件夹，然后直接把zip拖进去即可，如果没有mods文件夹，自己新建一个即可。
+Step2：打开游戏根目录，找到`mods`的文件夹，然后直接把`zip`拖进去即可，如果没有`mods`文件夹，自己新建一个即可。
 
 警告⚠️：有些模组可能有损坏的情况，自行检查
 
@@ -256,13 +252,13 @@ How to install mods
 
 ![](img/2dd60d09be3ead3de7ccd6ad7f7324cb.png)
 
-# 四、云端玩法
+## 四、云端玩法
 
 如果没有家里电脑或者配置不够怎么办？
 
-大家可以参考这个视频：[能](https://www.bilibili.com/video/BV1AwtJeHEwZ/?buvid=XX22CDB2DF921803E2021B7CFD7C53EA079DA&from_spmid=search.search-result.0.0&is_story_h5=false&mid=RaHn0Wo5Y6662D89woOs🐧%3D%3D&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=6924dacb-9f8e-4d2f-9dc5-cf5c4ae6f50a&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1739493645&unique_k=76OJKDV&up_id=36544298&vd_source=db7302203989bbe3f44cdd9ea6a8ff5c)玩《悟空》的赛博网吧？海马云电脑/网易云游戏/腾讯Start云游戏/顺网云电脑/ToDesk云电脑横评
+大家可以参考这个视频：`https://www.bilibili.com/video/BV1AwtJeHEwZ/?buvid=XX22CDB2DF921803E2021B7CFD7C53EA079DA&from_spmid=search.search-result.0.0&is_story_h5=false&mid=RaHn0Wo5Y6662D89woOs🐧%3D%3D&plat_id=114&share_from=ugc&share_medium=android&share_plat=android&share_session_id=6924dacb-9f8e-4d2f-9dc5-cf5c4ae6f50a&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1739493645&unique_k=76OJKDV&up_id=36544298&vd_source=db7302203989bbe3f44cdd9ea6a8ff5c`
 
-云端电脑访问：https://pc.todesk.com/
+云端电脑访问：`https://pc.todesk.com/`
 
 第一步：下载个人版
 
@@ -290,9 +286,9 @@ How to install mods
 
 这里注意，扫码之后，手机上就能看到这台云电脑要登录的位置。看清楚，然后做选择题的时候选对。
 
-如果还是解决不了，可以参考：https://www.bilibili.com/video/BV1AXSuYAEd7/?vd_source=42b4fec78bfbc6c161a4d8f2f68d2a57
+如果还是解决不了，可以参考：`https://www.bilibili.com/video/BV1AXSuYAEd7/?vd_source=42b4fec78bfbc6c161a4d8f2f68d2a57`
 
-# 五、总结与计划
+## 五、总结与计划
 
 最后，我再啰嗦下，这个赛道如果打算要做需要花费一些时间和精力，如果大家感兴趣，可以入局。会了不难，熟悉了也就变得简单的。
 

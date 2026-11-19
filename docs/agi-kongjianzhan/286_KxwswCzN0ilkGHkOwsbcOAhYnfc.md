@@ -1,10 +1,11 @@
+
 # 利用AI写任意主题的书籍，你只差一个prompt
 
 > 来源：[https://agispace.feishu.cn/docx/CdATd7SCvo1IYYx9P7UcX65qnxc](https://agispace.feishu.cn/docx/CdATd7SCvo1IYYx9P7UcX65qnxc)
 
 > 作者：毅鸣
 
-> 👸号： AI洞察笔记
+> 👸号：AI洞察笔记
 
 > 原文链接：https://mp.weixin.qq.com/s/cHX04Tf5dAveuXpW6KoIPQ
 

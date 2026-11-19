@@ -1,3 +1,4 @@
+
 # 完整提示词工程指南：框架、技术与模板手册
 
 > 来源：[https://aigcreative.feishu.cn/docx/VwvzdkJlEoxI2KxbxHMcLRBHndc](https://aigcreative.feishu.cn/docx/VwvzdkJlEoxI2KxbxHMcLRBHndc)
@@ -10,7 +11,7 @@
 
 # 序言
 
-提示词工程是与大型语言模型（LLM）有效沟通的关键。本指南汇总了除GROK框架（R-T-F、TA-G、B-A-B、C-A-R-E、R-I-S-E）外的所有主要框架、技术和最佳实践。
+提示词工程是与大型语言模型（`LLM`）有效沟通的关键。本指南汇总了除`GROK`框架（`R-T-F`、`TA-G`、`B-A-B`、`C-A-R-E`、`R-I-S-E`）外的所有主要框架、技术和最佳实践。
 
 # 第一部分：核心提示词框架（57+种）
 
@@ -18,7 +19,7 @@
 
 ### 1. COSTAR框架
 
-Context → Objective → Style → Tone → Audience → Response
+`Context → Objective → Style → Tone → Audience → Response`
 
 用途：客户服务、内容创作、营销文案
 
@@ -36,27 +37,27 @@ Context → Objective → Style → Tone → Audience → Response
 
 ### 2. STAR框架
 
-Situation → Task → Action → Result
+`Situation → Task → Action → Result`
 
 用途：讲述故事、展示成就、解决方案展示
 
-> 【情景】销售管道中的低质量线索导致demo预约率低。
+> 【情景】销售管道中的低质量线索导致`demo`预约率低。
 
-> 【任务】改进lead qualification策略。
+> 【任务】改进`lead qualification`策略。
 
-> 【行动】审计广告文案，调整landing pages，增加qualifying questions。
+> 【行动】审计广告文案，调整`landing pages`，增加`qualifying questions`。
 
-> 【结果】将低质量demo预约降低30%。
+> 【结果】将低质量`demo`预约降低30%。
 
 ### 3. AIDA框架（营销经典）
 
-Attention → Interest → Desire → Action
+`Attention → Interest → Desire → Action`
 
 用途：广告文案、销售信息、营销活动
 
 > 【吸引力】"管理佣金再也不用手工计算"
 
-> 【利益】展示60%公司仍用Excel的风险
+> 【利益】展示60%公司仍用`Excel`的风险
 
 > 【欲望】强调节省时间、避免错误、提高透明度
 
@@ -64,7 +65,7 @@ Attention → Interest → Desire → Action
 
 ### 4. SPAR框架
 
-Situation → Purpose → Action → Result
+`Situation → Purpose → Action → Result`
 
 用途：简化的问题解决、快速指导
 
@@ -78,33 +79,33 @@ Situation → Purpose → Action → Result
 
 ### 5. PAR框架
 
-Problem → Action → Result
+`Problem → Action → Result`
 
 用途：故障排除、简单问题解决
 
 > 【问题】网站加载速度慢
 
-> 【行动】优化图片、启用缓存、CDN部署
+> 【行动】优化图片、启用缓存、`CDN`部署
 
 > 【结果】加载时间从5秒降至1.2秒
 
 ### 6. CARE框架
 
-Context → Action → Result → Example
+`Context → Action → Result → Example`
 
 用途：案例研究、项目展示、成功故事
 
-【背景】远程团队协作效率低
+> 【背景】远程团队协作效率低
 
-【行动】推出虚拟mentoring和月度town halls
+> 【行动】推出虚拟`mentoring`和月度`town halls`
 
-【结果】员工敬业度指数提升20%
+> 【结果】员工敬业度指数提升20%
 
-【示例】某团队参与后敬业度提升30%的案例 ⭐
+> 【示例】某团队参与后敬业度提升30%的案例 ⭐
 
 ### 7. RODES框架 ⭐
 
-> Role → Objective → Details → Examples → Sense Check
+> `Role → Objective → Details → Examples → Sense Check`
 
 > 用途：创意内容、精准指导、高质量输出
 
@@ -112,7 +113,7 @@ Context → Action → Result → Example
 
 > 目标：为行业内容创作能吸引用户互动的推文
 
-> 细节：280字以内，避免hashtag和emoji
+> 细节：280字以内，避免`hashtag`和`emoji`
 
 > 示例：展示高性能推文的风格
 
@@ -120,7 +121,7 @@ Context → Action → Result → Example
 
 ### 8. RASCEF框架
 
-Role → Action → Steps → Context → Examples → Format
+`Role → Action → Steps → Context → Examples → Format`
 
 用途：技术文档、复杂指导、深度分析报告
 
@@ -128,7 +129,7 @@ Role → Action → Steps → Context → Examples → Format
 
 ### 9. CRISPE框架
 
-Clarity → Relevance → Iteration → Specificity → Parameters → Examples
+`Clarity → Relevance → Iteration → Specificity → Parameters → Examples`
 
 用途：策略规划、内容创建、技术问题解决
 
@@ -142,19 +143,19 @@ Clarity → Relevance → Iteration → Specificity → Parameters → Examples
 
 ### 11. RACE框架
 
-Research → Analyze → Create → Evaluate
+`Research → Analyze → Create → Evaluate`
 
 用途：深度分析、学术研究、数据分析
 
 ### 12. TRACE框架
 
-Topic → Reason → Audience → Counterargument → Evidence
+`Topic → Reason → Audience → Counterargument → Evidence`
 
 用途：说服性写作、辩论准备、论文撰写
 
 ### 13. PEE框架
 
-Point → Evidence → Explanation
+`Point → Evidence → Explanation`
 
 用途：学术论文、论证、分析文章
 
@@ -166,15 +167,15 @@ Point → Evidence → Explanation
 
 ### 14. SMART框架
 
-Specific → Measurable → Achievable → Relevant → Time-bound
+`Specific → Measurable → Achievable → Relevant → Time-bound`
 
-用途：目标设定、项目规划、OKR制定
+用途：目标设定、项目规划、`OKR`制定
 
 > 目标：在6个月内通过优化销售流程，将销售额提升30% 而不是"提高销售"
 
 ### 15. COAST框架
 
-Challenge → Objective → Strategy → Tactics → Success
+`Challenge → Objective → Strategy → Tactics → Success`
 
 用途：项目管理、战略规划、复杂问题解决
 
@@ -182,13 +183,13 @@ Challenge → Objective → Strategy → Tactics → Success
 
 ### 16. SPARK框架
 
-Situation → Problem → Aspiration → Result → Kismet
+`Situation → Problem → Aspiration → Result → Kismet`
 
 用途：创新产品开发、营销策略、创意写作 注重动态创新方法。
 
 ### 17. SCAMPER框架
 
-Substitute → Combine → Adapt → Modify → Put to Another Use → Eliminate → Reverse
+`Substitute → Combine → Adapt → Modify → Put to Another Use → Eliminate → Reverse`
 
 用途：创新思维、产品改进、解决方案设计
 
@@ -210,7 +211,9 @@ Substitute → Combine → Adapt → Modify → Put to Another Use → Eliminate
 
 ### 18. Six Thinking Hats框架（6顶思考帽）
 
-White (Facts) → Red (Emotion) → Black (Risk) → Yellow (Benefits) → Green (Creativity) → Blue (Process) 用途：全面决策、团队会议、问题解决
+`White (Facts) → Red (Emotion) → Black (Risk) → Yellow (Benefits) → Green (Creativity) → Blue (Process)`
+
+用途：全面决策、团队会议、问题解决
 
 > 【白】事实：该产品市场规模$10B
 
@@ -226,13 +229,13 @@ White (Facts) → Red (Emotion) → Black (Risk) → Yellow (Benefits) → Green
 
 ### 19. BLOG框架
 
-Background → Logic → Outline → Goal
+`Background → Logic → Outline → Goal`
 
 用途：博客写作、长篇文章、营销内容
 
 ### 20. Hamburger Model框架
 
-Introduction (Top) → Body/Substance (Meat) → Conclusion (Bottom)
+`Introduction (Top) → Body/Substance (Meat) → Conclusion (Bottom)`
 
 用途：简化内容结构、清晰组织
 
@@ -240,41 +243,43 @@ Introduction (Top) → Body/Substance (Meat) → Conclusion (Bottom)
 
 ### 21. How Might We (HMW) 框架
 
-Challenge framed as opportunity
+`Challenge framed as opportunity`
 
 > 用途：设计思维、头脑风暴、创新工作坊 "我们如何让远程团队建立更强的信任关系？"
 
 > 而不是"远程团队缺乏信任"
 
-### 22. PAUSE框架 Prepare → Assess → Uncover → Synthesize → Execute
+### 22. PAUSE框架
+
+`Prepare → Assess → Uncover → Synthesize → Execute`
 
 用途：反思性思维、决策制定、冲突解决
 
 ### 23. GOPA框架
 
-Goals → Obstacles → Plans → Actions
+`Goals → Obstacles → Plans → Actions`
 
 用途：目标设定、问题解决、项目规划
 
 ### 24. RICE框架
 
-Reach → Impact → Confidence → Effort
+`Reach → Impact → Confidence → Effort`
 
 用途：项目优先级排序、资源分配、创意评估
 
-> 功能A：Reach(1M用户) × Impact(高) ÷ Effort(3月)
+> 功能A：`Reach(1M用户) × Impact(高) ÷ Effort(3月)`
 
-> 功能B：Reach(500K用户) × Impact(中) ÷ Effort(1月)
+> 功能B：`Reach(500K用户) × Impact(中) ÷ Effort(1月)`
 
 ### 25. ROSES框架
 
-Recognize → Observe → Strategize → Execute → Study
+`Recognize → Observe → Strategize → Execute → Study`
 
 用途：复杂问题解决、持续改进、学习循环
 
 ### 26. ORID框架（聚焦对话法）
 
-Objective → Reflective → Interpretive → Decisional
+`Objective → Reflective → Interpretive → Decisional`
 
 用途：团队讨论、教练辅导、反思性写作
 
@@ -282,37 +287,37 @@ Objective → Reflective → Interpretive → Decisional
 
 ### 27. 3Cs框架
 
-Company → Customer → Competitor
+`Company → Customer → Competitor`
 
 用途：市场分析、商业战略、竞争分析
 
 ### 28. APE框架
 
-Audience → Purpose → Execution
+`Audience → Purpose → Execution`
 
 用途：目标受众定位、内容定制、营销活动
 
 ### 29. TAG框架
 
-Topic → Audience → Goal
+`Topic → Audience → Goal`
 
 用途：内容规划、消息定制、通信策略
 
 ### 30. ERA框架
 
-Engage → React → Act
+`Engage → React → Act`
 
 用途：营销互动、用户参与、行为改变
 
 ### 31. Challenge-Solution-Benefit框架
 
-Challenge (Problem) → Solution → Benefit
+`Challenge (Problem) → Solution → Benefit`
 
 用途：产品文案、销售信息、营销内容
 
 ### 32. The Five Ws and One H
 
-Who → What → When → Where → Why → How
+`Who → What → When → Where → Why → How`
 
 用途：新闻写作、完整信息收集、深度报道
 
@@ -330,7 +335,11 @@ Who → What → When → Where → Why → How
 
 ### 33. CAR-PAR-STAR框架
 
-CAR: Context, Action, Result PAR: Problem, Action, Result STAR: Situation, Task, Action, Result
+`CAR`: `Context, Action, Result`
+
+`PAR`: `Problem, Action, Result`
+
+`STAR`: `Situation, Task, Action, Result`
 
 用途：行为面试、绩效评估、个人品牌塑造
 
@@ -338,7 +347,7 @@ CAR: Context, Action, Result PAR: Problem, Action, Result STAR: Situation, Task,
 
 ### 34. Chain of Thought (CoT)
 
-Step-by-step reasoning
+`Step-by-step reasoning`
 
 用途：复杂分析、数学问题、逻辑推理
 
@@ -354,7 +363,7 @@ Step-by-step reasoning
 
 ### 35. Tree of Thoughts (ToT)
 
-Multiple reasoning paths with backtracking
+`Multiple reasoning paths with backtracking`
 
 用途：复杂问题解决、创意写作、策略规划
 
@@ -366,15 +375,15 @@ Multiple reasoning paths with backtracking
 
 > 第三步：基于最有前景的进行扩展
 
-> 第四步：用BFS或DFS遍历整个树
+> 第四步：用`BFS`或`DFS`遍历整个树
 
 ### 36. Meta Prompting ⭐
 
-### Let LLM generate and refine prompts
+让`LLM`生成并优化提示词
 
 用途：自动化提示词优化、复杂任务处理
 
-> 初始提示：生成一个详细的提示词来帮助LLM写说服力论文
+> 初始提示：生成一个详细的提示词来帮助`LLM`写说服力论文
 
 > 元提示输出示例： "写一篇说服力论文，论证可再生能源应取代化石燃料
 
@@ -392,17 +401,17 @@ Multiple reasoning paths with backtracking
 
 ### 37. Program-Aided Language Models (PAL)
 
-### Integrating external programming environment
+集成外部编程环境
 
 用途：需要编程的问题解决、数据分析、算法实现
 
 > 而不是：数据分析问题
 
-> 改为：生成Python代码，使用外部解释器执行
+> 改为：生成`Python`代码，使用外部解释器执行
 
 ### 38. Socratic Method 📚
 
-### iterative questioning for critical thinking
+通过迭代提问进行批判性思考
 
 用途：教育、辅导、深度理解
 
@@ -414,9 +423,9 @@ Multiple reasoning paths with backtracking
 
 > 第四步：引导学生修正理解
 
-## 39. Instruction Following Prompt
+### 39. Instruction Following Prompt
 
-## Explicit, detailed directives
+明确、详细的指令
 
 用途：应用程序、自动化流程、可靠输出
 
@@ -424,13 +433,13 @@ Multiple reasoning paths with backtracking
 
 > 【输入规范】以下邮件中
 
-> 【约束条件】格式为JSON，最多100字
+> 【约束条件】格式为`JSON`，最多100字
 
-> 【输出格式】{sender_name, meeting_date, meeting_time}
+> 【输出格式】`{sender_name, meeting_date, meeting_time}`
 
 ### 40. Few-Shot Prompting
 
-### Provide examples to guide behavior
+提供示例以引导行为
 
 用途：复杂任务、特定格式输出、模式演示
 
@@ -446,7 +455,7 @@ Multiple reasoning paths with backtracking
 
 ### 41. Zero-Shot Prompting
 
-### Task description without examples
+无示例的任务描述
 
 用途：简单任务、基础测试、多功能提示
 
@@ -454,7 +463,7 @@ Multiple reasoning paths with backtracking
 
 ### 42. In-Context Learning
 
-### Learning from examples provided in prompt
+从提示中提供的示例学习
 
 用途：知识转移、模式识别、快速适应
 
@@ -464,7 +473,7 @@ Multiple reasoning paths with backtracking
 
 ### 1. 角色/人设 (Role/Persona)
 
-定义AI应该扮演什么身份
+定义`AI`应该扮演什么身份
 
 > 示例1："你是一位有20年经验的生活教练"
 
@@ -484,7 +493,7 @@ Multiple reasoning paths with backtracking
 
 明确的任务说明
 
-> ✅ 好："生成5条针对科技初创公司的LinkedIn广告，每条少于280字"
+> ✅ 好："生成5条针对科技初创公司的`LinkedIn`广告，每条少于280字"
 
 > ❌ 差："写关于科技的东西"
 
@@ -492,11 +501,11 @@ Multiple reasoning paths with backtracking
 
 指定响应的结构
 
-> - JSON格式
+> - `JSON`格式
 
 > - 表格
 
-> - Markdown
+> - `Markdown`
 
 > - 项目符号列表
 
@@ -516,7 +525,7 @@ Multiple reasoning paths with backtracking
 
 > - 必须包含至少2个行业数据
 
-> - 不使用jargon
+> - 不使用`jargon`
 
 > - 保持专业语气
 
@@ -532,7 +541,7 @@ Multiple reasoning paths with backtracking
 
 > 5. 输出格式 (Output Formatting)
 
-为什么？ 将指令放在最后可防止LLM继续上下文而不执行任务
+为什么？将指令放在最后可防止`LLM`继续上下文而不执行任务
 
 # 第三部分：提示词优化技巧
 
@@ -542,7 +551,7 @@ Multiple reasoning paths with backtracking
 
 > ❌ "写点关于环保的内容"
 
-> ✅ "写一篇800字的科普文章解释海洋塑料污染对海洋生物的影响，目标受众是初中学生，包含：现状、危 害、解决方案三个部分"
+> ✅ "写一篇800字的科普文章解释海洋塑料污染对海洋生物的影响，目标受众是初中学生，包含：现状、危害、解决方案三个部分"
 
 ### 2. 具体性 (Specificity)
 
@@ -558,7 +567,7 @@ Multiple reasoning paths with backtracking
 
 ### 4. 提供上下文 (Context)
 
-> 完整示例： "你是一位为SaaS公司写销售邮件的专家。这是一家提供项目管理软件的公司，客户是财务主管。
+> 完整示例： "你是一位为`SaaS`公司写销售邮件的专家。这是一家提供项目管理软件的公司，客户是财务主管。
 
 > 任务：写一封开场邮件，在第一句内说明收益。
 
@@ -568,7 +577,7 @@ Multiple reasoning paths with backtracking
 
 ### 5. 指令明确 (Explicit Instructions)
 
-> 使用明确的动作动词： 列出、解释、比较、生成、编写、分类、总结、翻译、分析
+> 使用明确的动作动词：列出、解释、比较、生成、编写、分类、总结、翻译、分析
 
 ### 6. 迭代优化 (Iterative Refinement)
 
@@ -622,7 +631,7 @@ Multiple reasoning paths with backtracking
 
 > **Response（响应）：**
 
-> - 格式：{JSON/表格/段落}
+> - 格式：{`JSON`/表格/段落}
 
 > - 长度：{最多/最少字数}
 
@@ -630,54 +639,56 @@ Multiple reasoning paths with backtracking
 
 > **SPARK框架：**
 
-> 情景：{当前处境}
 
-> 问题：{存在的问题}
 
-> 抱负：{期望目标}
-
-> 结果：{可衡量的成果}
-
-> 幸运因素：{出其不意的元素}
-
+> 情景：`{当前处境}`
+>
+> 问题：`{存在的问题}`
+>
+> 抱负：`{期望目标}`
+>
+> 结果：`{可衡量的成果}`
+>
+> 幸运因素：`{出其不意的元素}`
+>
 > **输出要求：**
-
+>
 > - 风格：创新且引人入胜
-
-> - 长度：{字数限制}
-
-> - 包含元素：{必须包含}
-
-> - 避免：{不要包含}
+>
+> - 长度：`{字数限制}`
+>
+> - 包含元素：`{必须包含}`
+>
+> - 避免：`{不要包含}`
 
 ## 模板4：分析研究模板
 
 > **TRACE框架：**
-
-> 话题：{研究主题}
-
-> 理由：{为什么重要}
-
-> 受众：{谁需要这信息}
-
-> 反驳：{可能的反对意见}
-
-> 证据：{支持证据}
-
+>
+> 话题：`{研究主题}`
+>
+> 理由：`{为什么重要}`
+>
+> 受众：`{谁需要这信息}`
+>
+> 反驳：`{可能的反对意见}`
+>
+> 证据：`{支持证据}`
+>
 > **分析步骤：**
-
-> 1. {第一步}
-
-> 2. {第二步}
-
-> 3. {第三步}
-
+>
+> 1. `{第一步}`
+>
+> 2. `{第二步}`
+>
+> 3. `{第三步}`
+>
 > **输出：**
-
+>
 > - 报告格式
-
+>
 > - 包含摘要、主体、结论
-
+>
 > - 引用来源
 
 # 第五部分：高级技巧
@@ -685,83 +696,83 @@ Multiple reasoning paths with backtracking
 ## 1. 思维链提示 (Chain of Thought)
 
 > 提示：用逐步思考来解决这个数学问题
-
+>
 > 问题：38 × 45 = ?
-
+>
 > 让我们逐步思考：
-
+>
 > 第一步：38 × 40 = 1520
-
+>
 > 第二步：38 × 5 = 190
-
+>
 > 第三步：1520 + 190 = 1710
 
 ## 2. 角色扮演提示
 
 ```
-&quot;你是一个Python专家。一个初级开发者问你关于列表推导式的问题。 用简单的语言解释，给出3个例子，解释为什么每个例子这样工作。&quot; 
+"你是一个Python专家。一个初级开发者问你关于列表推导式的问题。 用简单的语言解释，给出3个例子，解释为什么每个例子这样工作。"
 ```
 
 ## 3. 对比分析提示
 
 > "对比A和B，从以下维度分析：
-
+>
 > 1. 成本
-
+>
 > 2. 性能
-
+>
 > 3. 用户体验
-
+>
 > 4. 可扩展性
-
+>
 > 5. 学习曲线 用表格格式呈现，每个维度评分1-10"
 
 ## 4. 问题分解提示
 
 > "我需要完成一个复杂任务。帮我分解成更小的、可管理的步骤。
-
-> 任务：{复杂任务描述}
-
+>
+> 任务：`{复杂任务描述}`
+>
 > 对于每一步，提供：
-
+>
 > - 目标
-
+>
 > - 关键行动
-
+>
 > - 预期时间
-
+>
 > - 潜在障碍"
 
 ## 5. 创意头脑风暴提示
 
-> "使用SCAMPER方法为{产品}生成10个创新想法：
-
+> "使用SCAMPER方法为`{产品}`生成10个创新想法：
+>
 > S（替代）：可以替代什么？
-
+>
 > C（结合）：可以与什么结合？
-
+>
 > A（调整）：可以调整什么方面？
-
+>
 > M（修改）：可以改变什么特性？
-
+>
 > P（另用）：还能用于什么？
-
+>
 > E（消除）：可以去掉什么？
-
+>
 > R（反转）：可以反过来做什么？"
 
 ## 6. 验证和反思提示
 
 > "检查你的答案：
-
+>
 > 1. 是否回答了原始问题？
-
+>
 > 2. 逻辑是否清晰？
-
+>
 > 3. 有没有遗漏关键信息？
-
+>
 > 4. 结论是否有数据支持？
-
+>
 > 5. 还有其他需要考虑的因素吗？"
 
 # 第六部分：行业应用示例
@@ -769,89 +780,87 @@ Multiple reasoning paths with backtracking
 ## 示例1：市场营销
 
 > 框架：AIDA + COSTAR
-
-> Context：我们是一家SaaS CRM初创公司，目标客户是中型企业财务部门
-
-> Objective：写一个产品登陆页hero文案，能在3秒内吸引注意力
-
-> Style：现代、直接、数据驱动
-
-> Tone：自信且富有同情心
-
-> Audience：财务主管，对ROI敏感
-
 >
-
+> Context：我们是一家SaaS CRM初创公司，目标客户是中型企业财务部门
+>
+> Objective：写一个产品登陆页hero文案，能在3秒内吸引注意力
+>
+> Style：现代、直接、数据驱动
+>
+> Tone：自信且富有同情心
+>
+> Audience：财务主管，对ROI敏感
+>
 > AIDA应用：
-
+>
 > Attention：用一个令人震惊的统计数据开头（如"75%的企业仍在用Excel管理费用"）
-
+>
 > Interest：解释问题为何存在及其成本
-
+>
 > Desire：展示特定的解决方案和客户成功案例
-
+>
 > Action：清晰的CTA按钮
-
+>
 > 输出格式：HTML代码
 
 ## 示例2：技术文档
 
 > 框架：RASCEF
-
+>
 > Role：你是一位技术写作专家，简化复杂概念
-
+>
 > Action：编写API文档
-
+>
 > Steps：
-
-1. 解释API的目的
-
-2. 显示代码示例
-
-3. 列出所有端点
-
-4. 说明错误处理
-
+>
+> 1. 解释API的目的
+>
+> 2. 显示代码示例
+>
+> 3. 列出所有端点
+>
+> 4. 说明错误处理
+>
 > Context：这是用于初级开发者的文档
-
+>
 > Examples：展示3个常见用例的代码
-
+>
 > Format：Markdown，包含代码块和表格
-
+>
 > 约束：
-
+>
 > - 避免行业术语或解释术语
-
+>
 > - 最多500字
-
+>
 > - 包含至少2个完整代码示例
 
 ## 示例3：产品策略
 
 > 框架：COAST + ROSE
-
+>
 > Challenge：用户流失率为20%，高于行业平均5%
-
+>
 > Objective：在6个月内将流失率降至8%
-
+>
 > Strategy：
-
-1. 改进onboarding体验
-
-2. 建立用户社区
-
-3. 增加高价值功能
-
+>
+> 1. 改进onboarding体验
+>
+> 2. 建立用户社区
+>
+> 3. 增加高价值功能
+>
 > Tactics：
-
-1. 重新设计登录流程（1个月）
-
-2. 启动用户论坛（2周）
-
-3. 推出高级功能（3个月）
-
-4. 建立success team（第一个月）
-
+>
+> 1. 重新设计登录流程（1个月）
+>
+> 2. 启动用户论坛（2周）
+>
+> 3. 推出高级功能（3个月）
+>
+> 4. 建立success team（第一个月）
+>
 > Success：通过周/月流失率报告跟踪进度
 
 # 第七部分：常见错误和改进
@@ -937,13 +946,13 @@ Multiple reasoning paths with backtracking
 提示词工程是一门艺术和科学的结合。关键要点：
 
 > ✅ 始终迭代 - 测试、学习、改进
-
+>
 > ✅ 保持清晰 - 具体胜于模糊
-
+>
 > ✅ 提供背景 - 上下文很重要
-
-> ✅ 选 择合适的框架 - 不同任务需要不同方法
-
+>
+> ✅ 选择合适的框架 - 不同任务需要不同方法
+>
 > ✅ 测试输出 - 验证结果是否符合期望
 
 # 有用资源

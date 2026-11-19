@@ -1,3 +1,4 @@
+
 # PyTorch Parallelism - talk notes
 
 > 来源：[https://learning.feishu.cn/docx/T90fdiLPDoA6Rsxo4C2cz3eTnTc](https://learning.feishu.cn/docx/T90fdiLPDoA6Rsxo4C2cz3eTnTc)
@@ -20,7 +21,7 @@ Notes: PyTorch 的 3 种主要 Parallelism 如下:
 
 https://www.youtube.com/watch?v=_rC49PeqrWc
 
-PiPPy: Automated Pipeline Parallelism for PyTorch
+`PiPPy`: Automated Pipeline Parallelism for PyTorch
 
 Ke Wen
 
@@ -44,27 +45,22 @@ PyTorch Conference 2022
 
 https://www.youtube.com/watch?v=By_O0k102PY
 
-How Fully Sharded Data Parallel (FSDP) works?
+How `Fully Sharded Data Parallel` (`FSDP`) works?
 
 Aug 28, 2023
 
 slides: https://bit.ly/45sE4mz
 
-explains how Distributed Data Parallel (DDP) and Fully Sharded Data Parallel (FSDP) works.
+explains how `Distributed Data Parallel` (`DDP`) and `Fully Sharded Data Parallel` (`FSDP`) works.
 
 links:
 
-+   [P](https://arxiv.org/pdf/2304.11277.pdf)yTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel
-
-+   [Z](https://arxiv.org/abs/1910.02054)eRO: Memory Optimizations Toward Training Trillion Parameter Models
-
++   [PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel](https://arxiv.org/pdf/2304.11277.pdf)
++   [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054)
 +   Multi-GPU Training Strategies
-
 +   Nvidia NCCL Operations
-
 +   PyTorch FSDP Tutorials
-
-+   [F](https://engineering.fb.com/2021/07/15/open-source/fsdp/)ully Sharded Data Parallel: faster AI training with fewer GPUs
++   [Fully Sharded Data Parallel: faster AI training with fewer GPUs](https://engineering.fb.com/2021/07/15/open-source/fsdp/)
 
 ## What is in the GPU memory
 
@@ -84,13 +80,13 @@ links:
 
 ## FSDP
 
-FSDP 不是什么？
+`FSDP` 不是什么？
 
-1.  Model Parallelism (已经不推荐使用了，用 DP + Pipeline Parallelism 代替)
+1. `Model Parallelism` (已经不推荐使用了，用 `DP` + `Pipeline Parallelism` 代替)
 
-1.  Tensor Parallelism
+1. `Tensor Parallelism`
 
-1.  Pipeline Parallelism
+1. `Pipeline Parallelism`
 
 ![](img/576e958af8063333b4c402bf63fd8e24.png)
 
@@ -134,7 +130,7 @@ PyTorch Conference 2022
 
 Wanchao Liang
 
-2D 并行，就是 DP(across hosts) + TP(Tensor Parallelism, within each host)
+`2D` 并行，就是 `DP`(across hosts) + `TP`(`Tensor Parallelism`, within each host)
 
 ## Motivation
 
@@ -142,13 +138,13 @@ Wanchao Liang
 
 ## DTensor
 
-DistributedTensor 又叫 DTensor
+`DistributedTensor` 又叫 `DTensor`
 
 有 2 个重要概念：
 
-1.  DeviceMesh
+1. `DeviceMesh`
 
-1.  DTensor placement tags: shard, replicate, partial
+1. `DTensor` placement tags: `shard`, `replicate`, `partial`
 
 ![](img/06a717e0d513d6c32c002b239df3abc0.png)
 
@@ -158,7 +154,7 @@ DistributedTensor 又叫 DTensor
 
 ![](img/c7fcee27414809d93db554fa3aedbcfa.png)
 
-2D 并行，就是 DP(across hosts) + TP(within each host)
+`2D` 并行，就是 `DP`(across hosts) + `TP`(within each host)
 
 ![](img/8dbfc5a28e8945f88a9886b9aa172fd6.png)
 
@@ -220,7 +216,7 @@ Oct 25, 2023
 
 注意：
 
-1.  后面是 reduce_scatter，不是 all-reduce。直接可以到后面做并行的 layernorm。
+1. 后面是 `reduce_scatter`，不是 `all-reduce`。直接可以到后面做并行的 `layernorm`。
 
 ## Improvements
 
@@ -268,7 +264,7 @@ Dec 13, 2022
 
 https://www.youtube.com/watch?v=3XUG7cjte2U
 
-PyTorch Distributed (DDP, RPC)
+`PyTorch Distributed` (`DDP`, `RPC`)
 
 Shen Li
 
@@ -280,9 +276,9 @@ Meta Research 的一次团队间分享会议。
 
 ## Overview
 
-提问和讨论 MPI 的一些细节。
+提问和讨论 `MPI` 的一些细节。
 
-talker 对 MPI 的理解看似比较少，可能是没用好 MPI 而造了 TensorPipe 的轮子。
+talker 对 `MPI` 的理解看似比较少，可能是没用好 `MPI` 而造了 `TensorPipe` 的轮子。
 
 ![](img/4822faa43f2351d37f40ea973add8b66.png)
 
@@ -314,21 +310,21 @@ why choose option 1? -- backword can overlap more with comm.
 
 ![](img/66f9a068b07a571891bada6ab6a86dab.png)
 
-注：PS is Parameter Server
+注：`PS` is Parameter Server
 
 策略：
 
-1.  把 embedding table 放在单独的 PS 上。可以跑在 CPU，甚至是多机 CPU 上。
+1. 把 embedding table 放在单独的 `PS` 上。可以跑在 CPU，甚至是多机 CPU 上。
 
-1.  DDP 通过 RPC 访问 PS 上的数据。
+1. `DDP` 通过 `RPC` 访问 `PS` 上的数据。
 
 2-3 directions:
 
-1.  google, 微软，single program, multiple device. 每个 program 持有 a shard of the model. 不需要 RPC，只需要 collective communication
+1. google, 微软，single program, multiple device. 每个 program 持有 a shard of the model. 不需要 `RPC`，只需要 collective communication
 
-1.  AWS: PS。try to prove that，PS can be as faster as collective communication.
+1. AWS: `PS`。try to prove that，`PS` can be as faster as collective communication.
 
-1.  (验证靠谱了吗？) Facebook: 预先计算好所需的数据，并不需要 RPC 获取 remote Embedding。
+1. (验证靠谱了吗？) Facebook: 预先计算好所需的数据，并不需要 `RPC` 获取 remote `Embedding`。
 
 ![](img/e9d796de3f561484a105ba821b123503.png)
 
@@ -336,7 +332,7 @@ why choose option 1? -- backword can overlap more with comm.
 
 ![](img/ad0e09c0a2d8da03e66fce843311b81f.png)
 
-# torch 通信原语
+# `torch` 通信原语
 
 https://pytorch.org/docs/stable/distributed.html
 

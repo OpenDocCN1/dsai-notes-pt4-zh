@@ -1,8 +1,9 @@
+
 # SD教程NO.02👉硬件准备
 
 > 来源：[https://my.feishu.cn/docx/Co6Udc5V1opo9dxaIPsc8RX8nRd](https://my.feishu.cn/docx/Co6Udc5V1opo9dxaIPsc8RX8nRd)
 
-### 设备要求
+## 设备要求
 
 SD需要**显卡**支撑，显卡主要的两部分**算力**和**显存**，在出图的时候分别代表了：
 
@@ -10,119 +11,87 @@ SD需要**显卡**支撑，显卡主要的两部分**算力**和**显存**，在
 
 **显存**越大，所设置图片的**分辨率越高**（大家说的💥爆显存，就是做高分辨率图片使显卡内存不足导致出图失败）
 
-🤣所以核**显机型就❌不**要考虑SD了（最低门槛是GTX1060）
+🤣所以**核显机型**就❌不考虑SD了（最低门槛是GTX1060）
 
 如果显卡不行，请看我这篇教程：[最强Ai绘画工具Vega.Ai（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb?from=from_copylink)
 
-另外SD运行中相当于挖矿，显卡会满载运行，对于**笔记本**来说非常不友好，笔记本**散热差**导致设备过热，过热后**性能直线下滑**（高温还容易坏、烫伤），所以**不建议****笔记本****长时间跑图**。
+另外SD运行中相当于挖矿，显卡会满载运行，对于**笔记本**来说非常不友好，笔记本**散热差**导致设备过热，过热后**性能直线下滑**（高温还容易坏、烫伤），所以**不建议笔记本长时间跑图**。
 
-SD需要N卡（NVIDIA英伟达）**，如果你是ma**c、A卡**、或者笔**记本用户，想深度学习SD，建议用云端部署来制作。😂如果只是体验一下，什么电脑都行，直接莽就完了！
+SD需要N卡（NVIDIA英伟达），如果你是mac、A卡、或者笔记本用户，想深度学习SD，建议用云端部署来制作。😂如果只是体验一下，什么电脑都行，直接莽就完了！
 
 个人建议最低6GB以上显存显卡搞SD❤
 
 😢我的是1070显卡8G，算入门级显卡，搞Ai之前吃鸡啥的毫无压力现在玩SD也够用了！就是慢了点（算力差导致的），高清图容易💥爆显存，只要方法得当，还是能愉快做图的。
 
-[打开手机就能玩的SD绘画工具（本地算力）](https://yw55ojhusnq.feishu.cn/wiki/SGpwwlQUNit7n2kEgvHc0mjynTg)**果**手机和mac笔记本请看这篇：
+如果手机和mac笔记本请看这篇：[打开手机就能玩的SD绘画工具（本地算力）](https://yw55ojhusnq.feishu.cn/wiki/SGpwwlQUNit7n2kEgvHc0mjynTg)
 
-### 如何查看自己显卡
+## 如何查看自己显卡
 
 👉大家看下自己是什么显卡：我的电脑→右键→管理→设备管理器→显示适配器
 
 ![](img/479e302af051dd067201057e8baa09eb.png)
 
-### **N卡天梯（NVIDIA）💪**
+## N卡天梯（NVIDIA）💪
 
-#### **王者段位：全部拉满，无所畏惧**
+### 王者段位：全部拉满，无所畏惧
 
-+   Quadro RTX A6000：48GB
++ Quadro RTX A6000：48GB
++ RTX 4090：24GB
++ RTX 3090 Ti：24GB
++ RTX Titan：24GB
++ RTX 3090：24GB
++ Quadro RTX A5000：24GB
 
-+   RTX 4090：24GB
+### 钻石段位：随心所欲，几乎没有阻碍
 
-+   RTX 3090 Ti：24GB
++ RTX 4080：16GB
++ RTX 4070Ti：12GB
++ RTX 3080 Ti：12GB
++ RTX 3080 [笔记本]：16GB
++ RTX 3060：12GB
++ RTX 2080 Ti：11GB
 
-+   RTX Titan：24GB
+### 白金段位：舒适主流，很少爆显存
 
-+   RTX 3090：24GB
++ RTX 3070 Ti：8GB
++ RTX 3070：8GB
++ RTX 3070 [笔记本]：8GB
++ RTX 3060 Ti：8GB
++ RTX 2080 SUPER：8GB
++ RTX 2070 SUPER：8GB
++ RTX 2070：8GB
 
-+   Quadro RTX A5000：24GB
+### 黄金段位：能正常用，但是偶尔不小心拉大了就会有点问题
 
-#### 钻石段位：随心所欲，几乎没有阻碍
++ RTX 4070 [笔记本]：8GB
++ RTX 2060 SUPER：8GB
++ RTX 2080：8GB
++ Titan Pascal：12GB
++ GTX 1660 Ti：6GB
++ GTX 1660 SUPER：6GB
++ GTX 1660：6GB
++ GTX 1080 Ti：11GB
 
-+   RTX 4080：16GB
+### 白银段位：能跑，但是需要小心一点
 
-+   RTX 4070Ti：12GB
++ RTX 3050：4GB或6GB（取决于型号）
++ RTX 3050 Ti [笔记本]：4GB或6GB（取决于型号）
++ RTX 3060 [笔记本]：6GB
++ RTX 2060：6GB
++ GTX 1070 Ti：8GB
++ GTX 1070：8GB
 
-+   RTX 3080 Ti：12GB
+### 青铜段位：应该能打开，但是到底跑得怎样就不知道了
 
-+   RTX 3080 [笔记本]：16GB
-
-+   RTX 3060：12GB
-
-+   RTX 2080 Ti：11GB
-
-#### **白金段位：舒适主流，很少爆****显存**
-
-+   RTX 3070 Ti：8GB
-
-+   RTX 3070 ：8GB
-
-+   RTX 3070 [笔记本]：8GB
-
-+   RTX 3060 Ti：8GB
-
-+   RTX 2080 SUPER：8GB
-
-+   RTX 2070 SUPER：8GB
-
-+   RTX 2070：8GB
-
-#### 黄金段位：能正常用，但是偶尔不小心拉大了就会有点问题
-
-+   RTX 4070[笔记本]：8GB
-
-+   RTX 2060 SUPER：8GB
-
-+   RTX 2080：8GB
-
-+   Titan Pascal：12GB
-
-+   GTX 1660 Ti：6GB
-
-+   GTX 1660 SUPER：6GB
-
-+   GTX 1660：6GB
-
-+   GTX 1080 Ti：11GB
-
-#### 白银段位：能跑，但是需要小心一点
-
-+   RTX 3050：4GB或6GB（取决于型号）
-
-+   RTX 3050 Ti [笔记本]：4GB或6GB（取决于型号）
-
-+   RTX 3060 [笔记本]：6GB
-
-+   RTX 2060：6GB
-
-+   GTX 1070 Ti：8GB
-
-+   GTX 1070：8GB
-
-#### 青铜段位：应该能打开，但是到底跑得怎样就不知道了
-
-+   GTX 1060：3GB或6GB（取决于型号）
-
-+   GTX 1650 SUPER：4GB
-
-+   GTX 1650：4GB
-
-+   GTX 1050 Ti：4GB
-
-+   GTX 980 Ti：6GB
++ GTX 1060：3GB或6GB（取决于型号）
++ GTX 1650 SUPER：4GB
++ GTX 1650：4GB
++ GTX 1050 Ti：4GB
++ GTX 980 Ti：6GB
 
 **❌再下去**就是塑料组还是别折腾了，乖乖去用云端部署
 
-### 全系列显卡概览🆚
+## 全系列显卡概览🆚
 
 大家对照以上看下自己什么段位了，我在白银哈哈哈哈哈。
 
@@ -132,7 +101,7 @@ SD需要N卡（NVIDIA英伟达）**，如果你是ma**c、A卡**、或者笔**�
 
 选N卡，省心省事
 
-❌不推荐mac：慢；[打开手机就能玩的SD绘画工具（本地算力）](https://yw55ojhusnq.feishu.cn/wiki/SGpwwlQUNit7n2kEgvHc0mjynTg)**果**手机和mac笔记本请看这篇：
+❌不推荐mac：慢；如果手机和mac笔记本请看这篇：[打开手机就能玩的SD绘画工具（本地算力）](https://yw55ojhusnq.feishu.cn/wiki/SGpwwlQUNit7n2kEgvHc0mjynTg)
 
 ❌不推荐cpu做图：巨慢，问题多
 

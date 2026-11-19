@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（11月 20日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/Vb0Gd2TAooab08xVL7TcWFuwnCb](https://miracleplus.feishu.cn/docx/Vb0Gd2TAooab08xVL7TcWFuwnCb)
 
-# 推特
+## 推特
 
 ### ChatGPT高级语音更新：轻松学习如何表达你正在做的整个演讲内容
 
@@ -94,7 +95,7 @@ v4 驱动的新功能：
 
 [pXa5Pt0AjeZBc7o3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G5BEb3ot9oJatkxgYCBcxSwQnuF)
 
-# 资讯
+## 资讯
 
 ### CMU研究人员开发低光环境下的机器人感知系统，拓展探索新领域
 
@@ -110,11 +111,11 @@ https://www.ri.cmu.edu/cmu-researchers-illuminate-new-horizons-in-low-light-robo
 
 研究团队提出三大创新：
 
-1.  **光照处理管道**：包括光源建模、相机-光源校准、3D高斯建模和重光照技术。
+1. **光照处理管道**：包括光源建模、相机-光源校准、3D高斯建模和重光照技术。
 
-1.  **神经光模拟器（NeLiS）**：基于数据驱动的光源建模与校准工具，能够适应任意复杂的光照模式。
+2. **神经光模拟器（NeLiS）**：基于数据驱动的光源建模与校准工具，能够适应任意复杂的光照模式。
 
-1.  **暗高斯溅射（DarkGS）**：改良的3D高斯溅射模型，通过校准的光源生成低光环境下的真实感场景表示。
+3. **暗高斯溅射（DarkGS）**：改良的3D高斯溅射模型，通过校准的光源生成低光环境下的真实感场景表示。
 
 研究成就
 
@@ -196,7 +197,7 @@ IKEA 视频手册数据集是第一个为互联网视频上的组装说明提供
 
 ![](img/091c80a65be90b5a5f21b281ad8e58fa.png)
 
-# 信号
+## 信号
 
 ### Bimanual Dexterity for Complex Tasks
 
@@ -228,7 +229,7 @@ https://arxiv.org/abs/2411.11910
 
 ![](img/d914ac61045c48b1a6f96b81bca598f9.png)
 
-# 产品
+## 产品
 
 ### Superchat
 
@@ -250,7 +251,7 @@ BetterBugs.io 是一款专为开发团队设计的 Chrome 扩展程序，通过�
 
 ![](img/36c8f7b52eda8c35679ef3d023f4b22c.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### Garak
 
@@ -258,9 +259,11 @@ BetterBugs.io 是一款专为开发团队设计的 Chrome 扩展程序，通过�
 
 https://github.com/NVIDIA/garak
 
+
+
 Garak 是一个开源的大型语言模型（LLM）漏洞扫描工具，可以检测 LLM 在幻觉、数据泄露、提示注入、错误信息、生成有毒内容、越狱等方面的弱点。它支持多种 LLM 接口，如 Hugging Face、OpenAI、Replicate 等，并提供静态、动态和自适应探针来评估模型的安全性。
 
-### multi-agent-orchestrator
+## multi-agent-orchestrator
 
 贡献人：
 
@@ -272,7 +275,7 @@ Multi-Agent Orchestrator 是一个灵活且强大的框架，用于管理和协�
 
 # 投融资
 
-### CodeCrafters完成180万美元种子轮融资，为高级开发者提供挑战性项目
+## CodeCrafters完成180万美元种子轮融资，为高级开发者提供挑战性项目
 
 贡献人：
 
@@ -292,7 +295,7 @@ CodeCrafters的目标是成为为有经验的开发者提供实战项目的平�
 
 ![](img/716236ab1bfc32d86f2e620c0282381e.png)
 
-### BrightAI从隐形运营到融资1500万美元，推动“物理AI”革命
+## BrightAI从隐形运营到融资1500万美元，推动“物理AI”革命
 
 https://techcrunch.com/2024/11/19/physical-ai-startup-brightai-bootstraps-to-80m-in-revenue/
 
@@ -310,7 +313,7 @@ BrightAI通过传感器和AI技术帮助企业实时监控物理资产，从数�
 
 ![](img/f4e6f0b1f94d1c4f883b5581e8d3eb5a.png)
 
-### Neo4j凭借AI能力加速增长，完成5000万美元新融资
+## Neo4j凭借AI能力加速增长，完成5000万美元新融资
 
 https://techcrunch.com/2024/11/19/database-startup-neo4j-embraces-ai-to-supercharge-growth/
 
@@ -328,7 +331,7 @@ Neo4j的客户包括IBM和沃尔玛在内的1700家公司，占据了图数据�
 
 ![](img/ef99867352e2b6d5d016f14af9d3da16.png)
 
-### Selector完成3300万美元B轮融资，扩大全球布局
+## Selector完成3300万美元B轮融资，扩大全球布局
 
 https://techcrunch.com/2024/11/19/selector-automatically-spots-it-issues-and-recommends-fixes/
 
@@ -346,7 +349,7 @@ Selector目前拥有包括AT&T、Bell Canada和Singtel在内的约40家客户，
 
 ![](img/f700718fcedef9a35ee75fcdd1100b3a.png)
 
-### Lightyear完成3100万美元B轮融资，推动网络采购数字化
+## Lightyear完成3100万美元B轮融资，推动网络采购数字化
 
 https://techcrunch.com/2024/11/19/lightyear-is-on-a-mission-to-modernize-network-procurement/
 
@@ -364,7 +367,7 @@ Lightyear的成功得益于其创新的采购数字化解决方案，以及对�
 
 ![](img/ed4e1f0afbaae8e1f6a9017fdb41fa01.png)
 
-### AI出版社Spines完成1600万美元融资，加速出版行业变革
+## AI出版社Spines完成1600万美元融资，加速出版行业变革
 
 https://techcrunch.com/2024/11/19/itching-to-write-a-book-ai-publisher-spines-wants-to-make-a-deal/
 
@@ -386,112 +389,123 @@ Zeev Ventures创始人Oren Zeev曾是有声书平台Audible（被亚马逊收购
 
 # 学习
 
-### 2024 年视觉语言模型（VLMs）
-
-贡献人：
+## 2024 年视觉语言模型（VLMs）
 
 https://zhuanlan.zhihu.com/p/7827587018
 
-**引言**
+### 引言
 
 视觉语言模型（Vision Language Models, VLMs）是一类生成模型，能够从图像和文本中学习，并生成相应的输出。VLMs 展现了卓越的零样本学习能力和泛化性能，近年来研究的焦点逐渐转向前沿设计与应用趋势。
 
-**多模态设计**
+### 多模态设计
 
 VLMs 的设计主要分为两种类型：
 
-2.1 类型 A：多模态大语言模型（MLLM）
+#### 2.1 类型 A：多模态大语言模型（MLLM）
 
-+   **架构**：视觉编码器 → 多模态投影器 → 大语言模型（LLM）
++ **架构**：视觉编码器 → 多模态投影器 → 大语言模型（LLM）
 
-+   **优点**：借助预训练的视觉编码器和LLM，训练较为简单。
++ **优点**：借助预训练的视觉编码器和LLM，训练较为简单。
 
-+   **局限性**：难以直接生成多模态输出。
-2.2 类型 B：多模态标记化Transformer
++ **局限性**：难以直接生成多模态输出。
 
-+   **架构**：离散标记器 → 多模态Transformer → 解码器
+#### 2.2 类型 B：多模态标记化Transformer
 
-+   **优点**：原生支持多模态输出。
++ **架构**：离散标记器 → 多模态Transformer → 解码器
 
-+   **局限性****：需从零**开始训练，训练成本和难度较高。
++ **优点**：原生支持多模态输出。
+
++ **局限性**：需从零开始训练，训练成本和难度较高。
+
 研究趋势：大部分研究聚焦于类型A，同时尝试统一两种设计（如VILA-U和Libra）。
 
-**架构**
+### 架构
 
-3.1** 视觉编码**器
+#### 3.1 视觉编码器
 
-+   **挑战**：支持高分辨率图像及文本丰富内容。
++ **挑战**：支持高分辨率图像及文本丰富内容。
 
-+   **解决方案**：采用图**像划分、下采**样、像素填充等方法（如MiniCPM-V、LLaVa-OneVision）。
-3.2 多模态投影器
++ **解决方案**：采用图像划分、下采样、像素填充等方法（如MiniCPM-V、LLaVa-OneVision）。
 
-+   **功能**：压缩视觉特征，为LLM提供输入。
+#### 3.2 多模态投影器
 
-+   **技术**：池化、**MLP网络、交叉注意力**重采样。
-3.3 LLM / 文本解码器
++ **功能**：压缩视觉特征，为LLM提供输入。
 
-+   **角色**：负责主**要的理解与**生成任务，性能受LLM规模决定。
-3.4 视觉解码器
++ **技术**：池化、MLP网络、交叉注意力重采样。
 
-+   **新趋势**：通过整合视觉解码器和MLLM逐步统一类型A与B（如Janus、VILA-U）。
+#### 3.3 LLM / 文本解码器
 
-**预训练**
++ **角色**：负责主要的理解与生成任务，性能受LLM规模决定。
 
-4.1** 数据需**求
+#### 3.4 视觉解码器
 
-+   图像-文**本对、交错**数据、仅文本数据，典型比例为5:1:4。
-4.2 阶段化训练
++ **新趋势**：通过整合视觉解码器和MLLM逐步统一类型A与B（如Janus、VILA-U）。
 
-+   第一阶段：冻结视觉编码器与LLM，仅训练投影器。
+### 预训练
 
-+   第二阶段**：解冻部**分组件，用高分辨率数据进一步提升性能。
-4.3 训练目标
+#### 4.1 数据需求
 
-+   使用重构损失、对比损失等优化视觉与语言对齐。
++ 图像-文本对、交错数据、仅文本数据，典型比例为5:1:4。
 
-**后训练**
+#### 4.2 阶段化训练
 
-5.1** 监督微调（SFT**）
++ 第一阶段：冻结视觉编码器与LLM，仅训练投影器。
 
-+   数据多样**性与质量**至关重要，包括多语言数据、高分辨率图像等。
-5.2 冻结策略
++ 第二阶段：解冻部分组件，用高分辨率数据进一步提升性能。
 
-+   冻结LL**M以保护仅文**本任务性能，或解冻以提升多模态能力。
-5.3 强化学习对齐
+#### 4.3 训练目标
 
-+   部分模型（如MiniCPM-V）引入基于RL的对齐方法，提高高风险场景下的可靠性。
++ 使用重构损失、对比损失等优化视觉与语言对齐。
 
-**高效优化**
+### 后训练
 
-6.1** 推理优**化
+#### 5.1 监督微调（SFT）
 
-+   通过量化**、注意力**机制优化（如Flash Attention）、批处理加速等提升效率。
-6.2 训练优化
++ 数据多样性与质量至关重要，包括多语言数据、高分辨率图像等。
 
-+   使用稀疏**训练、L**oRA、QLoRA等技术降低训练成本。
-6.3 模型压缩
+#### 5.2 冻结策略
 
-+   结合模型蒸馏、参数压缩技术（如Mamba），实现性能和体积的平衡。
++ 冻结LLM以保护仅文本任务性能，或解冻以提升多模态能力。
 
-**基准测试**
+#### 5.3 强化学习对齐
 
-7.1** 扩展的基准测**试
++ 部分模型（如MiniCPM-V）引入基于RL的对齐方法，提高高风险场景下的可靠性。
 
-+   新基准（**如Mat**hVista、MMBench）覆盖了更广泛的视觉理解类别。
-7.2 领先模型
+### 高效优化
 
-+   GPT-**4o、Cla**ude 3.5等模型在MMMU基准上表现领先，开源模型中InternVL2-Pro最佳。
-7.3 图像生成评估
+#### 6.1 推理优化
 
-+   通过定性评估、FID分数、CLIPScore等方法分析生成图像质量。
++ 通过量化、注意力机制优化（如Flash Attention）、批处理加速等提升效率。
 
-**自动驾驶中的端到端VLM**
+#### 6.2 训练优化
+
++ 使用稀疏训练、LoRA、QLoRA等技术降低训练成本。
+
+#### 6.3 模型压缩
+
++ 结合模型蒸馏、参数压缩技术（如Mamba），实现性能和体积的平衡。
+
+### 基准测试
+
+#### 7.1 扩展的基准测试
+
++ 新基准（如MathVista、MMBench）覆盖了更广泛的视觉理解类别。
+
+#### 7.2 领先模型
+
++ GPT-4o、Claude 3.5等模型在MMMU基准上表现领先，开源模型中InternVL2-Pro最佳。
+
+#### 7.3 图像生成评估
+
++ 通过定性评估、FID分数、CLIPScore等方法分析生成图像质量。
+
+### 自动驾驶中的端到端VLM
 
 端到端VLM通过提示工程，将感知、规划任务统一。典型模型如Waymo的Emma、DriveVLM，表现出在感知与运动规划中的潜力。
 
 ![](img/99ecabbc1b70ce70f10a4fd03b9d4654.png)
 
-### 详解 CacheBlend：RAG 场景 KV 复用，打破前缀相同的限制
+## 详解 CacheBlend：RAG 场景 KV 复用，打破前缀相同的限制
 
 https://zhuanlan.zhihu.com/p/7781800255
 
@@ -505,91 +519,93 @@ CacheBlend通过拼接不同文本块的KV Cache，利用RoPE（Rotary Position 
 
 为了进一步优化效率，CacheBlend设计了KV加载与选择性重计算的流水线处理模式。通过并行执行这两个步骤，隐藏了部分计算开销，显著提升了性能。
 
+
+
 实验表明，CacheBlend在生成质量和效率方面实现了平衡。相比Prefix Caching，其KV复用率更高，生成延迟更低；相比Full KV Reuse，交叉注意力的恢复保证了更高的生成质量。CacheBlend构建了一个多级存储系统，动态加载和计算缓存，为RAG场景提供了高效的解决方案
 
 ![](img/718431a3e4b83d4b585df5c3464b7f52.png)
 
-### LLM评测Takeaway
+## LLM评测Takeaway
 
 https://zhuanlan.zhihu.com/p/7713134123
 
 为了解决现有评测框架在融入自定义代码流程中的复杂性和拓展性问题，作者设计了一种针对不同Benchmark的独立评测流程。其核心在于为每个Benchmark单独建立文件夹，内含主函数和工具函数，通过灵活的参数配置、标准化的数据加载、定制化的生成后处理实现高效评测。以下为关键技术细节总结：
 
-首先，为每个Benchmark创建独立文件夹，并设计包含argparse参数配置的主函数。主要参数包括模型路径（checkpoint path）、数据加载参数（如num_workers和batch_size）、生成配置（如temperature、topk、topp等）、以及其他模型独立参数。模型和分词器通过from_pretrained方法从指定路径加载，数据集根据Benchmark原始数据格式组织到getitem中，并通过自定义的Dataloader打包。
+首先，为每个Benchmark创建独立文件夹，并设计包含`argparse`参数配置的主函数。主要参数包括模型路径（`checkpoint path`）、数据加载参数（如`num_workers`和`batch_size`）、生成配置（如`temperature`、`topk`、`topp`等）、以及其他模型独立参数。模型和分词器通过`from_pretrained`方法从指定路径加载，数据集根据Benchmark原始数据格式组织到`getitem`中，并通过自定义的`Dataloader`打包。
 
-生成阶段中，generation_config设置了核心参数如max_new_tokens、eos_token_id等。对输入样本进行会话格式化时，可利用模型兼容的Conversation Class或apply_chat_format方法，根据模型需求配置role信息、分隔符和系统提示。生成结果通过generate函数推理，需注意eos_token_id的正确性，否则可能生成无关内容。
+生成阶段中，`generation_config`设置了核心参数如`max_new_tokens`、`eos_token_id`等。对输入样本进行会话格式化时，可利用模型兼容的`Conversation` Class或`apply_chat_format`方法，根据模型需求配置`role`信息、分隔符和系统提示。生成结果通过`generate`函数推理，需注意`eos_token_id`的正确性，否则可能生成无关内容。
 
-后处理对生成结果进一步解析。利用batch_decode将模型预测的id转为自然语言后，可根据具体Benchmark的要求执行正则匹配。例如，Math类任务可通过识别"final answer"句子后处理Latex语法或单位信息；Code类任务则需更复杂的解析逻辑。作者指出，对于zero-shot任务，可通过设计instruction引导模型用特定标记（如\box{}）输出答案，便于正则化抽取。
+后处理对生成结果进一步解析。利用`batch_decode`将模型预测的`id`转为自然语言后，可根据具体Benchmark的要求执行正则匹配。例如，Math类任务可通过识别`final answer`句子后处理Latex语法或单位信息；Code类任务则需更复杂的解析逻辑。作者指出，对于zero-shot任务，可通过设计instruction引导模型用特定标记（如`\box{}`）输出答案，便于正则化抽取。
 
-分布式场景下，作者通过自定义InferenceSampler和collate_fn实现多卡加速。InferenceSampler根据进程数划分数据范围，确保分布式数据分配的一致性；collate_fn则定义如何将每条数据组装成批次。Dataloader实例化时结合了自定义的Sampler和collate函数，支持高效的数据加载。
+分布式场景下，作者通过自定义`InferenceSampler`和`collate_fn`实现多卡加速。`InferenceSampler`根据进程数划分数据范围，确保分布式数据分配的一致性；`collate_fn`则定义如何将每条数据组装成批次。`Dataloader`实例化时结合了自定义的`Sampler`和`collate`函数，支持高效的数据加载。
 
-误差来源主要包括generation_config的设置、输入提示格式、预测后处理等。其中，后处理对于Math、Code等任务影响尤为显著，可能因正则逻辑不当导致测试精度上下浮动达15%。作者通过案例分析展示了后处理失败的典型场景，例如模型不同总结用词（如final answer vs therefore）导致对答案提取的偏差，highlight了针对不同模型的后处理逻辑适配的重要性。
+误差来源主要包括`generation_config`的设置、输入提示格式、预测后处理等。其中，后处理对于Math、Code等任务影响尤为显著，可能因正则逻辑不当导致测试精度上下浮动达15%。作者通过案例分析展示了后处理失败的典型场景，例如模型不同总结用词（如`final answer` vs therefore）导致对答案提取的偏差，highlight了针对不同模型的后处理逻辑适配的重要性。
 
-作者总结了从lm_eval、opencampass等开源项目中获得的启发，并分享了相关代码库链接，表明开源资源在搭建和优化评测流程中的价值。
+作者总结了从`lm_eval`、`opencampass`等开源项目中获得的启发，并分享了相关代码库链接，表明开源资源在搭建和优化评测流程中的价值。
 
 ![](img/8c857255cb7a49ea0de6fb7bb7fdac27.png)
 
-### Implementing a fast Tensor Core matmul on the Ada Architecture
+## Implementing a fast Tensor Core matmul on the Ada Architecture
 
 https://www.spatters.ca/mma-matmul
 
-在Ada架构上实现高效的Tensor Core矩阵乘法
+在Ada架构上实现高效的Tensor Core矩阵乘法（matmul）内核
 
 概述
 
-本文详细描述了如何在NVIDIA Ada架构GPU上开发高效的Tensor Core矩阵乘法（matmul）内核，从最初的朴素实现到性能接近cuBLAS的优化版本。通过引入如CUTLASS库的技术、异步数据传输以及高效的共享内存布局，最终达到了高达RTX 4090峰值性能的93%。
+本文详细描述了如何在NVIDIA Ada架构GPU上开发高效的Tensor Core矩阵乘法（matmul）内核，从最初的朴素实现到性能接近`cuBLAS`的优化版本。通过引入如`CUTLASS`库的技术、异步数据传输以及高效的共享内存布局，最终达到了高达RTX 4090峰值性能的93%。
 
 技术细节
 
-1.  **问题定义**：
+1. 问题定义：
 
-+   矩阵规格为 M=N=K=4096M=N=K=4096M=N=K=4096，采用fp16输入与fp32累加。
++   矩阵规格为 `M=N=K=4096`，采用`fp16`输入与`fp32`累加。
 
-+   单次计算涉及超过3300万次 m16n8k16m16n8k16m16n8k16 指令。
++   单次计算涉及超过3300万次 `m16n8k16` 指令。
 
-1.  **性能优化过程**：
+1. 性能优化过程：
 
-+   **Kernel 1.0**: 基础实现，采用直接加载数据的方式，性能仅为cuBLAS的19%。
++   `Kernel 1.0`: 基础实现，采用直接加载数据的方式，性能仅为`cuBLAS`的19%。
 
-+   **Kernel 2.0**: 引入CUTLASS共享内存排列，减少银行冲突，将性能提升至82.9%。
++   `Kernel 2.0`: 引入`CUTLASS`共享内存排列，减少银行冲突，将性能提升至82.9%。
 
-+   **Kernel 3.0**: 利用cp.async指令实现多阶段异步流水线，进一步减少全局内存读取延迟。
++   `Kernel 3.0`: 利用`cp.async`指令实现多阶段异步流水线，进一步减少全局内存读取延迟。
 
-1.  **异步流水线**：
+1. 异步流水线：
 
 +   通过将数据预加载到共享内存并利用循环缓冲实现流水线处理，显著减少了内存访问开销。
 
-+   采用warp级别的指令（如ldmatrix和mma.sync），优化线程块计算效率。
++   采用warp级别的指令（如`ldmatrix`和`mma.sync`），优化线程块计算效率。
 
-1.  **最终结果**：
+1. 最终结果：
 
-+   **Kernel 3.1**: 增加每个warp的计算量，通过4倍平铺技术（tiling），将性能提升至153.6 TFLOP/s，与cuBLAS持平。
++   `Kernel 3.1`: 增加每个warp的计算量，通过4倍平铺技术（tiling），将性能提升至153.6 TFLOP/s，与`cuBLAS`持平。
 
 工具与技术亮点
 
-+   使用低级PTX指令如mma和ldmatrix直接操作Tensor Core。
++   使用低级PTX指令如`mma`和`ldmatrix`直接操作Tensor Core。
 
 +   共享内存的排列避免了银行冲突，并配合向量化加载优化全局内存访问。
 
-+   通过CUDA工具（如nsight-compute）精确分析性能瓶颈，如Tensor Core等待和同步开销。
++   通过CUDA工具（如`nsight-compute`）精确分析性能瓶颈，如Tensor Core等待和同步开销。
 
 ![](img/324b85bd3e71fbea4ae0a634293050bc.png)
 
-### Neurips 2024 Tutorial: Beyond Decoding: Meta-Generation Algorithms for Large Language Models
+## Neurips 2024 Tutorial: Beyond Decoding: Meta-Generation Algorithms for Large Language Models
 
 https://cmu-l3.github.io/neurips2024-inference-tutorial/
 
-本教程将于 **2024年12月10日** 在温哥华的 NeurIPS 上举行，主题聚焦于大型语言模型（LLMs）推理阶段的生成算法，从传统解码技术到复杂的元生成算法，旨在提升生成质量、增加多样性，并实现资源有限环境下的高效生成。
+本教程将于 2024年12月10日 在温哥华的 NeurIPS 上举行，主题聚焦于大型语言模型（LLMs）推理阶段的生成算法，从传统解码技术到复杂的元生成算法，旨在提升生成质量、增加多样性，并实现资源有限环境下的高效生成。
 
 核心内容
 
-1.  **生成算法演进**：介绍从贪婪解码到复杂元生成算法的历程，探讨如何通过优化推理阶段的计算资源来提升输出质量。
+1. 生成算法演进：介绍从贪婪解码到复杂元生成算法的历程，探讨如何通过优化推理阶段的计算资源来提升输出质量。
 
-1.  **跨学科视角**：结合自然语言处理、现代LLMs和机器学习系统三大研究领域的视角，提出高效生成的解决方案。
+1. 跨学科视角：结合自然语言处理、现代LLMs和机器学习系统三大研究领域的视角，提出高效生成的解决方案。
 
-1.  **资源高效化**：重点讲解如何在降低生成成本和提高生成速度的同时，维持甚至提升生成质量。
+1. 资源高效化：重点讲解如何在降低生成成本和提高生成速度的同时，维持甚至提升生成质量。
 
-1.  **元生成算法应用**：展示如何利用LLMs在更复杂任务（如多步骤推理、知识检索与生成）中优化表现。
+1. 元生成算法应用：展示如何利用LLMs在更复杂任务（如多步骤推理、知识检索与生成）中优化表现。
 
 融合理论与实践
 
@@ -597,17 +613,17 @@ https://cmu-l3.github.io/neurips2024-inference-tutorial/
 
 重要信息
 
-+   **时间**：2024年12月10日，下午1:30 - 4:00（温哥华时间）。
++   时间：2024年12月10日，下午1:30 - 4:00（温哥华时间）。
 
-+   **地点**：West Exhibition Hall C, NeurIPS。
++   地点：West Exhibition Hall C, NeurIPS。
 
-+   **主讲人**：由来自卡耐基梅隆大学、南加州大学、Anthropic、Meta AI等机构的研究人员组成。
++   主讲人：由来自卡耐基梅隆大学、南加州大学、Anthropic、Meta AI等机构的研究人员组成。
 
-+   **阅读材料**：涵盖元生成算法最新研究和高效生成技术。
++   阅读材料：涵盖元生成算法最新研究和高效生成技术。
 
 ![](img/ead5bed102c478d583e79ceb700c227d.png)
 
-### 统计方法在语言模型评估中的应用
+## 统计方法在语言模型评估中的应用
 
 https://www.anthropic.com/research/statistical-approach-to-model-evals
 
@@ -615,25 +631,25 @@ Anthropic近期发布了一篇关于语言模型评估（Evals）的研究论文
 
 核心建议
 
-1.  **利用中心极限定理**：
+1. 利用中心极限定理：
 
 +   评估分数通常是大量问题得分的平均值，但研究强调应关注“问题宇宙”中的理论平均值，而非仅仅依赖观察值。
 
 +   使用中心极限定理可以更稳健地估算标准误差（SEM），并计算置信区间，从而更准确地量化模型能力差异。
 
-1.  **聚类标准误差**：
+1. 聚类标准误差：
 
 +   对非独立问题（如基于相同文本段的多个问题），建议采用聚类标准误差方法，以避免低估误差，确保结论的可靠性。
 
-1.  **减少问题内部方差**：
+1. 减少问题内部方差：
 
 +   通过多次生成和评分答案，或者使用语言模型的下一词概率作为评分标准，减少随机误差，从而提高评估精度。
 
-1.  **分析配对差异**：
+1. 分析配对差异：
 
 +   通过配对差异测试（paired-difference test）消除问题难度的影响，仅关注模型之间的响应差异。这种方法可以显著减少误差，并提供更清晰的比较结果。
 
-1.  **运用功效分析**：
+1. 运用功效分析：
 
 +   利用统计功效分析，计算评估所需的最少问题数量，以确保对模型能力差异的检测足够敏感。研究建议开发者在设计新评估时参考此方法。
 
@@ -651,31 +667,31 @@ Anthropic近期发布了一篇关于语言模型评估（Evals）的研究论文
 
 ![](img/8fd48099a102e889be2ba69b8e41a123.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+[行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
-##### 行研-GenAI研究岗位-前沿学术探索
+行研-GenAI研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/4733710c82455a90ad48fe5800474ed9.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
@@ -683,25 +699,23 @@ Anthropic近期发布了一篇关于语言模型评估（Evals）的研究论文
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack；Wenyu；Chenyang；Zhiyuan；Millian；Xudong；Yichen；Shangze；Mingyue；Ollie；Jiaqi；Weibo
 
-学术分析报告：ResearchFlow -- 奇绩F23校友的开发的深度研究产品，PC端进入RFlow的分析报告，可直接点击节点右侧的小数字展开节点，登录后可在节点上直接“询问AI”，进一步探索深度信息
+学术分析报告：`ResearchFlow` -- 奇绩F23校友的开发的深度研究产品，PC端进入`RFlow`的分析报告，可直接点击节点右侧的小数字展开节点，登录后可在节点上直接“询问AI”，进一步探索深度信息
 
 如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
 >
 
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

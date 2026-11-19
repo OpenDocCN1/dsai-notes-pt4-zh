@@ -1,8 +1,10 @@
+
+
 # 【喂饭级干货】10分钟教你如何使用ChatGPT定制行业专属QA
 
 > 来源：[https://my.feishu.cn/docx/EFX0dT4JYoFA1Qxc7edc4BIon9f](https://my.feishu.cn/docx/EFX0dT4JYoFA1Qxc7edc4BIon9f)
 
-# 一、ChatGPT在QA问答场景目前存在的问题
+## 一、ChatGPT在QA问答场景目前存在的问题
 
 首先如果ChatGPT作为一个聊天助理，如果单纯从聊天的场景来看，是完全合格的
 
@@ -16,7 +18,7 @@
 
 如果每次都把这些上下文一股脑的塞给ChatGPT，在API调用中实际消耗token费用是非常大的
 
-# 二、解决这个问题思路
+## 二、解决这个问题思路
 
 目前我所了解到的，解决这个问题的思路都大差不差
 
@@ -80,11 +82,10 @@
 回答：如果您在使用洗衣机时发现异物，建议立即停止使用，并清理洗衣机内部。如果异物较大或者无法清除，建议联系售后服务人员进行检查和维修。
 ```
 
-**处理逻辑思路如下：**
+处理逻辑思路如下：
 
-1.  用户提问：洗衣机需要定时保养吗？
-
-1.  程序根据用户提问，可以从**现有的知识库**中匹配出一段文字，如下：
+1. 用户提问：洗衣机需要定时保养吗？
+2. 程序根据用户提问，可以从**现有的知识库**中匹配出一段文字，如下：
 
 ```
 问题：这款洗衣机可以进行手动控制吗？
@@ -97,7 +98,7 @@
 回答：是的，这款洗衣机需要定期进行保养。建议您定期清洁洗衣机内部、更换滤网、检查水管和电源线等，以确保洗衣机的正常运行和寿命。
 ```
 
-1.  拼接ChatGPT Prompt，如下；
+3. 拼接ChatGPT Prompt，如下：
 
 ```
 我提供了一批必要的上下文信息如下:
@@ -115,7 +116,7 @@
 如果你无法根据我给的信息回答这个问题，请务必回答：我暂时无法回答，请寻求人工帮助
 ```
 
-1.  向ChatGPT提问，获取返回结果
+4. 向ChatGPT提问，获取返回结果
 
 可以看出，通过这一套流程，不用每次都向ChatGPT投喂全量的数据
 
@@ -123,7 +124,7 @@
 
 从这四个步骤可以看出，我们要解决的问题已经转变成：如何从一大批数据中，筛选其中的某几段，投喂到ChatGPT当中
 
-# 三、实操环节
+## 三、实操环节
 
 这部分可能需要一点动手能力，以及需要有🪜、openai的key
 
@@ -131,7 +132,7 @@
 
 文末有体验环节～
 
-## 数据准备
+### 数据准备
 
 这部分数据，一般需要和实际应用场景相结合，比如是：某本手册的说明书、某个社群的QA库、电商客服常用的话术等
 
@@ -139,7 +140,7 @@
 
 ![](img/9cabcfbf097d2047fa34deb10238d0da.png)
 
-## 数据清洗
+### 数据清洗
 
 拿到的数据不一定能直接用，可能存在非常多的错误，这部分就需要专门做一次数据清洗
 
@@ -149,11 +150,11 @@
 
 我这里偷了个懒，数据没怎么清洗，原封不动的拿来用了
 
-最后整合数据成一个txt文件，命名为：data.txt（名字无所谓随便取）
+最后整合数据成一个txt文件，命名为：`data.txt`（名字无所谓随便取）
 
 ![](img/1ff5deee1f9c0bb72b969f2771f63b0c.png)
 
-## 建立索引
+### 建立索引
 
 这一步给大家画个图，简单理解一下原理（太深的需要一定的技术功底）
 
@@ -169,11 +170,10 @@
 
 > **实操环节**
 
-这一步就需要涉及到代码编写了，需要两个前置条件
+这一步就需要涉及到代码编写了，需要两个前置条件：
 
-1.  电脑安装Python环境：https://www.python.org/downloads/
-
-1.  安装完Python环境后，需要再用pip命令安装两个包（很简单）
+1. 电脑安装Python环境：https://www.python.org/downloads/
+2. 安装完Python环境后，需要再用`pip`命令安装两个包（很简单）
 
 ```
 pip install llama-index
@@ -182,7 +182,7 @@ pip install openai
 
 ![](img/9c1d1be9471f2a95b6d16a4a83b3e1af.png)
 
-1.  把准备好的data.txt放到单独的文件夹里，并且新建一个main.py，放入下方的代码
+1. 把准备好的`data.txt`放到单独的文件夹里，并且新建一个`main.py`，放入下方的代码
 
 ![](img/7744cf5715c7beb7941acf9ae05a8df2.png)
 
@@ -192,8 +192,7 @@ import os
 from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, LLMPredictor, ServiceContext
 from langchain.chat_models import ChatOpenAI 
 
-
-os.environ[&quot;OPENAI_API_KEY&quot;] = &#x27;OPENAI官网的key，要手动替换&#x27;
+os.environ["OPENAI_API_KEY"] = 'OPENAI官网的key，要手动替换'
 
 def construct_index(directory_path):
     llm_predictor = LLMPredictor(llm=ChatOpenAI())
@@ -203,13 +202,13 @@ def construct_index(directory_path):
     index_from_doc.storage_context.persist()
     return index_from_doc
 
-if __name__ == &#x27;__main__&#x27;:
-    construct_index(&quot;./&quot;)
+if __name__ == '__main__':
+    construct_index("./")
 ```
 
-+   Openai api key在注册完ChatGPT账号后，目前会送5美元：https://platform.openai.com/account/api-keys
+- Openai api key在注册完ChatGPT账号后，目前会送5美元：https://platform.openai.com/account/api-keys
 
-1.  命令行执行，生成索引文件（也就是向量化的步骤），可以获得三个文件
+2. 命令行执行，生成索引文件（也就是向量化的步骤），可以获得三个文件
 
 ```
 python main.py
@@ -219,7 +218,7 @@ python main.py
 
 ![](img/71ab567c1ce4a9353bcbe08988590902.png)
 
-## 向ChatGPT提问
+### 向ChatGPT提问
 
 到这里已经准备的差不多了，接下来就可以输入问题向ChatGPT提问了
 
@@ -227,7 +226,7 @@ python main.py
 
 ![](img/5b7e3fdbebea78ff423c2bf7a8e4a198.png)
 
-更新main.py的代码为
+更新`main.py`的代码为
 
 ```
 import os
@@ -235,8 +234,7 @@ from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, LLMPredictor
 from llama_index import Prompt , load_index_from_storage , StorageContext
 from langchain.chat_models import ChatOpenAI 
 
-
-os.environ[&quot;OPENAI_API_KEY&quot;] = &#x27;OPENAI官网的key&#x27;
+os.environ["OPENAI_API_KEY"] = 'OPENAI官网的key'
 
 def construct_index(directory_path):
     llm_predictor = LLMPredictor(llm=ChatOpenAI())
@@ -248,43 +246,42 @@ def construct_index(directory_path):
 
 def chat(message):
     template = (
-        &quot;你是一个专业的客服，现在提供了一下上下文信息给你 \n&quot;
-        &quot;---------------------\n&quot;
-        &quot;{context_str}&quot;
-        &quot;\n---------------------\n&quot;
-        &quot;请根据我给你的这些信息，回答用户的问题: {query_str}\n&quot;
-        &quot;请注意，如果无法回答，请务必回复：”暂时无法找到相关信息，输入人工服务转接客服“\n&quot;
+        "你是一个专业的客服，现在提供了一下上下文信息给你 \n"
+        "---------------------\n"
+        "{context_str}"
+        "\n---------------------\n"
+        "请根据我给你的这些信息，回答用户的问题: {query_str}\n"
+        "请注意，如果无法回答，请务必回复：”暂时无法找到相关信息，输入人工服务转接客服“\n"
     )
     qa_template = Prompt(template)
-    storage_context = StorageContext.from_defaults(persist_dir=&#x27;./storage&#x27;)
+    storage_context = StorageContext.from_defaults(persist_dir='./storage')
     index = load_index_from_storage(storage_context)
     index.service_context.llm_predictor = LLMPredictor(llm=ChatOpenAI())
     query_engine = index.as_query_engine(text_qa_template=qa_template)
-    print(&quot;用户提问:&quot; + message)
+    print("用户提问:" + message)
     print(query_engine.query(message).response)
 
-
-if __name__ == &#x27;__main__&#x27;:
-    # construct_index(&quot;./data&quot;)
-    chat(&quot;你好，我在店铺买了个洗衣机，想请问一下洗衣机容量多大呢？&quot;)
+if __name__ == '__main__':
+    # construct_index("./data")
+    chat("你好，我在店铺买了个洗衣机，想请问一下洗衣机容量多大呢？")
 ```
 
 ![](img/a0287d136312304b634a21c8602d43b2.png)
 
-命令行运行:python main.py，既可以拿到结果。
+命令行运行:`python main.py`，既可以拿到结果。
 
-可以看出，其实核心就是构建一个Prompt，填入匹配到的文本段以及用户的问题
+可以看出，其实核心就是构建一个`Prompt`，填入匹配到的文本段以及用户的问题
 
 ```
-&quot;你是一个专业的客服，现在提供了一下上下文信息给你 \n&quot;
-&quot;---------------------\n&quot;
-&quot;{context_str}&quot;
-&quot;\n---------------------\n&quot;
-&quot;请根据我给你的这些信息，回答用户的问题: {query_str}\n&quot;
-&quot;请注意，如果无法回答，请务必回复：”暂时无法找到相关信息，输入人工服务转接客服“\n&quot;
+"你是一个专业的客服，现在提供了一下上下文信息给你 \n"
+"---------------------\n"
+"{context_str}"
+"\n---------------------\n"
+"请根据我给你的这些信息，回答用户的问题: {query_str}\n"
+"请注意，如果无法回答，请务必回复：”暂时无法找到相关信息，输入人工服务转接客服“\n"
 ```
 
-# 四、效果展示
+## 四、效果展示
 
 这里简单得给大家展示一下效果
 
@@ -292,26 +289,23 @@ if __name__ == &#x27;__main__&#x27;:
 
 ![](img/c27bf5498e3878b514ccaefab301e5c1.png)
 
-###
-
 ![](img/82ad38475bcaf2dc76f4a4dd739042ed.png)
 
 ![](img/3f9eea66cc0fe3ca9058944369c12e01.png)
-
-###
 
 ![](img/92a1e11b84d419226342f7667af72a4f.png)
 
 ![](img/2dd9f17cafa65a6c64f026a5c82733e0.png)
 
-+   匹配不到的场景
+- 匹配不到的场景
 
 ![](img/4b376214ed45cafefb4043dd9e6be715.png)
 
-# 五、总结
+## 五、总结
 
 可以看到目前跑出的效果，在数据量不多的情况下，匹配的还算顺利
 
 数据量多的情况，我也没测试过，效果可能会弱一些
 
 应用到实际应用场景，可以节省大量的人力资源，毕竟招聘一个客服人员去回复消息，成本并不低
+

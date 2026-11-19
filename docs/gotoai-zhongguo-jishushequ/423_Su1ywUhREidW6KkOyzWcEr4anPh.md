@@ -1,3 +1,4 @@
+
 # IBM- AI agents in 2025: Expectations vs. reality
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/Ee9SdkItLoATjXxI604cmrhontc](https://gotoaiworld.feishu.cn/docx/Ee9SdkItLoATjXxI604cmrhontc)
@@ -6,15 +7,15 @@ AI agents in 2025: Expectations vs. reality
 
 https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality
 
-It’[s imposs](https://www.ibm.com/think/topics/ai-agents)ible to take two steps across the tech media landscape without stumbling over an article hailing 2025 as the year of the AI agent. Agents, we’re told, will transform the way work is done, impacting every facet of our lives, personal and professional.
+It’s [impossible](https://www.ibm.com/think/topics/ai-agents) to take two steps across the tech media landscape without stumbling over an article hailing 2025 as the year of the AI agent. Agents, we’re told, will transform the way work is done, impacting every facet of our lives, personal and professional.
 
 ![](img/baa763eb9a36a16ebd12016ede225dcc.png)
 
-We’d barely surfaced from a landslide of NFT and crypto hype that characterized the ea[rly 2020s, an](https://www.ibm.com/think/topics/generative-ai)d the metaverse bubble that fol[low](https://www.ibm.com/think/topics/gpt)[ed, be](https://www.ibm.com/think/topics/claude-ai)fore media voices began singing the praises of generative AI (gen AI) in the wake of releases such as OpenAI’s GPT model family, Anthropic’s Claude and Microsoft’s Copilot.
+We’d barely surfaced from a landslide of NFT and crypto hype that characterized the [early 2020s, and](https://www.ibm.com/think/topics/generative-ai) the metaverse bubble that [followed](https://www.ibm.com/think/topics/gpt), [before](https://www.ibm.com/think/topics/claude-ai) media voices began singing the praises of generative AI (gen AI) in the wake of releases such as OpenAI’s GPT model family, Anthropic’s Claude and Microsoft’s Copilot.
 
 While the chorus hasn’t moved on entirely, the focus in 2025 has shifted from large language models (LLMs) to advancements in the ostensibly autonomous artificial intelligence (AI) agents ushering in the future of work.
 
-D[espite a](https://www.ibm.com/think/topics/deepseek) [momentary ](https://www.ibm.com/think/topics/automation)surge in gen AI interest around Deepseek’s R1, which promised significant performance i[mprovement](https://www.ibm.com/think/insights/agentic-ai)s over ChatGPT, the dominant innovation narrative in 2025 is the AI agent.
+Despite [a](https://www.ibm.com/think/topics/deepseek) [momentary surge](https://www.ibm.com/think/topics/automation) in gen AI interest around Deepseek’s R1, which promised significant performance [improvements](https://www.ibm.com/think/insights/agentic-ai) over ChatGPT, the dominant innovation narrative in 2025 is the AI agent.
 
 Media coverage highlights the promises of innovation, automation and efficiency agents will bring, but how much of the conversation is click-hungry hype?
 
@@ -22,23 +23,20 @@ The ad-supported media world thrives on clicks, and it’s reasonable to expect 
 
 We spoke with several IBM experts to cut through the hype, with the goal of holding a more reasonable conversation about AI agents and what they’re going to do. Our team of informed insiders includes:
 
-+   Maryam Ashoori, PhD: Director of Product Management, IBM® watsonx.ai™
-
-+   Marina Danilevsky: Senior Research Scientist, Language Technologies
-
-+   [Vyoma Gajjar](https://www.linkedin.com/in/vyomagajjar): AI Technical Solutions Architect
-
-+   [Chris Hay](https://www.linkedin.com/in/chrishayuk): Distinguished Engineer
++ Maryam Ashoori, PhD: Director of Product Management, IBM® watsonx.ai™
++ Marina Danilevsky: Senior Research Scientist, Language Technologies
++ [Vyoma Gajjar](https://www.linkedin.com/in/vyomagajjar): AI Technical Solutions Architect
++ [Chris Hay](https://www.linkedin.com/in/chrishayuk): Distinguished Engineer
 
 ![](img/a3294d16f7a115fb42ea42784130e714.png)
 
 Industry newsletter
 
-### The latest AI trends, brought to you by experts
+## The latest AI trends, brought to you by experts
 
 Get curated insights on the most important—and intriguing—AI news. Subscribe to our weekly Think newsletter. See the IBM Privacy Statement.
 
-+   Business email
++ Business email
 
 Subscribe
 
@@ -48,7 +46,7 @@ An AI agent is a software program capable of acting autonomously to understand, 
 
 We’re going beyond asking a chatbot to suggest a dinner recipe based on the available ingredients in the fridge. Agents are more than automated customer experience emails that inform you it’ll be a few days until a real-world human can get to your inquiry.
 
-[AI agents differ from tradit](https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants)ional AI assistants that need a prompt each time they generate a response. In theory, a user gives an agent a high-level task, and the agent figures out how to complete it.
+[AI agents differ from traditional AI assistants](https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants) that need a prompt each time they generate a response. In theory, a user gives an agent a high-level task, and the agent figures out how to complete it.
 
 Current offerings are still in the early stages of approaching this idea. “What’s commonly referred to as ‘agents’ in the market is the addition of rudimentary planning and tool-calling (sometimes called function calling) capabilities to LLMs,” says Ashoori. “These enable the LLM to break down complex tasks into smaller steps that the LLM can perform.”
 
@@ -64,11 +62,11 @@ AI agents
 
 From monolithic models to compound AI systems, discover how AI agents integrate with databases and external tools to enhance problem-solving capabilities and adaptability.
 
-[Learn more ](https://www.ibm.com/think/topics/ai-agents)
+[Learn more](https://www.ibm.com/think/topics/ai-agents)
 
 ## Narrative 1: 2025 is the year of the AI agent
 
-“Mor[e and](https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality#footnotes2) b[etter](https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality#footnotes3) agents” are on the way, predicts Time.((1)) “Autonomous ‘agents’ and profitability are likely to dominate the artificial intelligence agenda,” reports Reuters.((2)) “The age of agentic AI has arrived,” promises Forbes, in response to a claim from Nvidia’s Jensen Huang.((3))
+“[More and](https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality#footnotes2) [better](https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality#footnotes3) agents” are on the way, predicts Time.((1)) “Autonomous ‘agents’ and profitability are likely to dominate the artificial intelligence agenda,” reports Reuters.((2)) “The age of agentic AI has arrived,” promises Forbes, in response to a claim from Nvidia’s Jensen Huang.((3))
 
 Tech media is awash with assurances that our lives are on the verge of a total transformation. Autonomous agents are poised to streamline and alter our jobs, drive optimization and accompany us in our daily lives, handling our mundanities in real time and freeing us up for creative pursuits and other higher-level tasks.
 
@@ -90,9 +88,11 @@ Danilevsky frames the disconnect as one of miscommunication. “[Agents] tend to
 
 Still, the forthcoming year holds a lot of promise as an era of experimentation. “I'm a big believer in [2025 as the year of the agent],” says Hay excitedly.
 
+
+
 Every large tech company and hundreds of startups are now experimenting with agents. Salesforce, for example, has released their Agentforce platform, which enables users to create agents that are easily integrated within the Salesforce app ecosystem.
 
-“The wave is coming and we're going to have a lot of agents. It's still a very nascent ecosystem, so I think a lot of people are going to build agents, and they're going to have a lot of fun.”
+“The wave is coming and we're going to have a lot of agents. It's still a very nascent ecosystem, so I think a lot of people are going to build agents, and they're going to have a lot of fun。”
 
 ## Narrative 2: Agents can handle highly complex tasks on their own
 
@@ -105,11 +105,8 @@ Hay believes that the groundwork has already been laid for such developments. �
 He cites 4 developments that, compared to the best models of 12 to 18 months ago, mean that the models of early 2025 can power the agents envisioned by the proponents of this narrative:
 
 +   Better, faster, smaller models
-
 +   Chain-of-thought (COT) training
-
 +   Increased context windows
-
 +   Function calling
 
 “Now, most of these things are in play,” Hay continues. “You can have the AI call tools. It can plan. It can reason and come back with good answers. It can use inference-time compute. You’ll have better chains of thought and more memory to work with. It's going to run fast. It’s going to be cheap. That leads you to a structure where I think you can have agents. The models are improving and they're getting better, so that's only going to accelerate.”
@@ -124,7 +121,7 @@ For Gajjar, the question is one of risk and governance. “We’re seeing AI age
 
 But she is optimistic that we’ll meet these challenges. “I do think we’ll see progress this year in creating rollback mechanisms and audit trails. It’s not just about building smarter AI but also designing safety nets so we can trace and fix issues quickly when things go off track.”
 
-And w[hile](https://www.ibm.com/think/topics/api) Hay is hopeful about the potential for agentic development in 2025, he sees a problem in another area: “Most organizations aren't agent-ready. What's going to be interesting is exposing the APIs that you have in your enterprises today. That's where the exciting work is going to be. And that's not about how good the models are going to be. That's going to be about how enterprise-ready you are.”
+And while Hay is hopeful about the potential for agentic development in 2025, he sees a problem in another area: “Most organizations aren't agent-ready. What's going to be interesting is exposing the APIs that you have in your enterprises today. That's where the exciting work is going to be. And that's not about how good the models are going to be. That's going to be about how enterprise-ready you are.”
 
 ## Narrative 3: AI orchestrators will govern networks of AI agents
 
@@ -134,7 +131,7 @@ Enterprises will use AI orchestration to coordinate multiple agents and other ma
 
 ### Compliance is paramount to healthy AI adoption
 
-Gajjar views this prediction not only as credible, but likely. “We’re at the very beginning of this shift, but it[’s moving fa](https://www.ibm.com/think/topics/ai-workflow)st. AI orchestrators could easily become the backbone of enterprise AI systems this year—connecting multiple agents, optimizing AI workflows and handling multilingual and multimedia data,” she opines. However, she cautions against rushing in without appropriate safeguards in place.
+Gajjar views this prediction not only as credible, but likely. “We’re at the very beginning of this shift, but it's moving fast. AI orchestrators could easily become the backbone of enterprise AI systems this year—connecting multiple agents, optimizing AI workflows and handling multilingual and multimedia data,” she opines. However, she cautions against rushing in without appropriate safeguards in place.
 
 “At the same time, scaling these systems will need strong compliance frameworks to keep things running smoothly without sacrificing accountability,” warns Gajjar. “2025 might be the year we go from experiments to large-scale adoption, and I can’t wait to see how companies balance speed with responsibility.”
 
@@ -164,6 +161,8 @@ However, fears of AI-related job loss are a constant in the ongoing conversation
 
 ### Agents should be a tool, not a replacement
 
+
+
 Ashoori believes the best path forward lies in trusting employees to determine the optimal use of AI in their respective jobs. “We should empower employees to decide how they want to leverage agents, but not necessarily replacing them in every single situation,” she explains. Some job functions are ripe for offloading to an agent, while with others, human input can’t be replaced. “An agent might transcribe and summarize a meeting, but you're not going to send your agent to have this conversation with me.”
 
 Danilevsky shares Ashoori’s view and notes that the adoption of agents in the workplace will not come without growing pains. “You're still going to have cases where as soon as something gets more complex, you're going to need a human.” While business leaders may be tempted to cut short-term costs by eliminating jobs, agent use “...is going to settle down much more into an augmented sort of role. You're supposed to constantly have a human, and the human is being helped, but the human makes the final decisions,” says Danilevsky, describing her human-in-the-loop (HITL) vision for AI.
@@ -172,7 +171,7 @@ Hay sees a pathway towards sustainable AI adoption at work. “If we do this rig
 
 Gajjar also cautions against leaning too heavily on AI. “I don’t see AI agents replacing jobs overnight, but they’ll definitely reshape how we work. Repetitive, low-value tasks are already being automated, which frees people up for more strategic and creative work. That said, companies need to be intentional about how they introduce AI. Governance frameworks—like those focused on fairness, transparency and accountability—are going to be key.”
 
-### Open source AI leads to new opportunities
+## Open source AI leads to new opportunities
 
 For Hay, one upside of open source AI models is how they open the door to a future AI agent marketplace and subsequent monetization for creators. “I think open source agents are the key,” says Hay. “Because of open source, anybody can build an agent, and it can do useful tasks. And you can create your own company.”
 
@@ -184,9 +183,8 @@ LLMs provide text-based output, which can reach users through SMS in areas witho
 
 Over the course of these conversations, 2 themes came up time and time again with all 4 of our experts. Aside from the 4 narratives we looked at, a sustainable route through the current AI explosion will require enterprises and business leaders to embrace 2 ideas:
 
-1.  AI governance underpins successful compliance and responsible use.
-
-1.  A robust AI strategy focused on economic value will lead businesses to sustainable AI adoption.
+1. AI governance underpins successful compliance and responsible use.
+2. A robust AI strategy focused on economic value will lead businesses to sustainable AI adoption.
 
 ### The need for governance
 
@@ -210,7 +208,7 @@ Danilevsky is quick to ground expectations and recenter the conversation on demo
 
 Hay encourages enterprises to get agent-ready ahead of time. “The value is going to be with those organizations that take their private data and organize that in such a way so that the agents are researching against your documents.” Every enterprise houses a wealth of valuable proprietary data, and transforming that data so that it can power agentic workflows supports positive ROI.
 
-“With agents, enterprises have an option to leverage their proprietary data and existing enterprise workflows to differentiate and scale,” says Ashoori.  “Last year was the year of experimentation and exploration for enterprises. They need to scale that impact and maximize their ROI of generative AI. Agents are the ticket to making that happen.”
+“With agents, enterprises have an option to leverage their proprietary data and existing enterprise workflows to differentiate and scale,” says Ashoori. “Last year was the year of experimentation and exploration for enterprises. They need to scale that impact and maximize their ROI of generative AI. Agents are the ticket to making that happen.”
 
 For more information on successful AI implementation in the enterprise, read Maryam Ashoori’s guide to agentic AI cost analysis. Also be sure to catch Vyoma Gajjar and Chris Hay expounding on their predictions for AI in 2025 on IBM’s Mixture of Experts podcast.
 

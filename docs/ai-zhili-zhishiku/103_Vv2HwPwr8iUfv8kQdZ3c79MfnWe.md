@@ -1,8 +1,9 @@
+
 # 出口管制
 
 > 来源：[https://docs.feishu.cn/docx/NFLzduzA3oHdXTxTa4ocyyoUnFf](https://docs.feishu.cn/docx/NFLzduzA3oHdXTxTa4ocyyoUnFf)
 
-美国
+## 美国
 
 ### OpenAI停止中国地区的API
 
@@ -10,9 +11,8 @@
 
 据悉，目前中国大陆使用OpenAI的技术主要有两种主流渠道：
 
-+   对接OpenAI官方提供的API（为此次受限范围）；
-
-+   对接微软Azure提供的OpenAI能力。
++ 对接OpenAI官方提供的API（为此次受限范围）；
++ 对接微软Azure提供的OpenAI能力。
 
 目前亦有国内大模型应用创业公司在海外设立公司或在海外部署服务器，以便使用OpenAI的API。
 

@@ -1,16 +1,17 @@
+
 # 20260301-LiblibAI上线Nano Banana 2，不用✕✕，就能畅玩！
 
-> 来源：[https://aigcreative.feishu.cn/docx/N5ptd0uNioTfCXxyCoWc3JrOnfe](https://aigcreative.feishu.cn/docx/N5ptd0uNioTfCXxyCoWc3JrOnfe)
+> 来源：[`https://aigcreative.feishu.cn/docx/N5ptd0uNioTfCXxyCoWc3JrOnfe`](https://aigcreative.feishu.cn/docx/N5ptd0uNioTfCXxyCoWc3JrOnfe)
 
 ![](img/0ae02dfb454bfa2c7de6600cf1625b51.png)
 
 大家好，我是创意猎人。
 
-刚刚，Nano banana 2 正式上线并接入了 LiblibAI（在平台里的名字叫：全能图片模型 V2-Flash）。至此，能使用Nano Banana 2 的途径又多了一个！
+刚刚，Nano banana 2 正式上线并接入了 LiblibAI（在平台里的名字叫：全能图片模型 V2-Flash）。至此，能使用 Nano Banana 2 的途径又多了一个！
 
 而且还不用✕✕（你懂的），国内就能直接使用，真是喜大普奔。
 
-先上官方网址：https://www.liblib.art
+先上官方网址：`https://www.liblib.art`
 
 ![](img/2ae0ae14d3e1866455baec8b41a39af8.png)
 
@@ -24,7 +25,7 @@
 
 今天创意猎人就从实际工作场景出发，带大家过一遍 5 个非常实用的操作案例，看看一站式平台到底能多大程度提升我们的工作效率。
 
-# 1）告别网络门槛，直接上手Nano Banana 2
+## 1）告别网络门槛，直接上手 Nano Banana 2
 
 以前大家想用最新的香蕉模型，最大的痛点就是网络环境。
 
@@ -34,7 +35,7 @@
 
 我第一时间测试了刚上线的全能图片模型 V2-Flash（即 Nano Banana 2）。它在处理人物皮肤质感、光影自然度上，确实比很多老牌工具要细腻得多。
 
-关于LiblibAI的介绍与基础功[20260211-海量模型+模板+工作流，LiblibAI是你最强AI创作平台](https://aigcreative.feishu.cn/wiki/Fc9twQPVVipKpVkFZgsc3WiWnFg)，之前已经写过一篇了，可以点击查看：《 》
+关于 LiblibAI 的介绍与基础功 [`https://aigcreative.feishu.cn/wiki/Fc9twQPVVipKpVkFZgsc3WiWnFg`](https://aigcreative.feishu.cn/wiki/Fc9twQPVVipKpVkFZgsc3WiWnFg)，之前已经写过一篇了，可以点击查看：《 》
 
 **直接实操：1）**打开 LiblibAI 工作区。2）在基础模型列表里，直接选择“全能图片模型V2-flash”：
 
@@ -54,29 +55,29 @@
 
 直接用简单的中文描述你脑海中的画面，几秒钟就能出图。V2-Flash 对语义的理解非常精准，对于平时需要大量找素材配图的自媒体人、职场人士来说，能省下大把时间。
 
-# 2）电商打工人的福音，零门槛套用海报模板
+## 2）电商打工人的福音，零门槛套用海报模板
 
-如**果你是电商**美工或者📕运营，每天的任务可能就是不停地做产品海报、拼图、调排版。在 LiblibAI 里，这部分重复性劳动可以直接交给风格模型库。
+如果你是电商美工或者📕运营，每天的任务可能就是不停地做产品海报、拼图、调排版。在 LiblibAI 里，这部分重复性劳动可以直接交给风格模型库。
 
-**Li**blibAI 里面有一个非常实用的功能，叫广场，里面全是各种模板。你不用自己去构图，也不用琢磨光影叠加，直接套用现成的优质框架。
+LiblibAI 里面有一个非常实用的功能，叫广场，里面全是各种模板。你不用自己去构图，也不用琢磨光影叠加，直接套用现成的优质框架。
 
-这也是我认为LiblibAI对广大普通用户最友好的一点，入门即变大师。
+这也是我认为 LiblibAI 对广大普通用户最友好的一点，入门即变大师。
 
 ![](img/7153e91b52311633398eff42c6cb10d0.png)
 
-1.  **在 Li**blibAI 首页切换到“图片生成”页面，找到点击风格模型，就可以看到如上图的各种风格及模板：
+1. 在 LiblibAI 首页切换到“图片生成”页面，找到点击风格模型，就可以看到如上图的各种风格及模板：
 
 ![](img/f3cb29fb82b3f2c93f3f658cc7f1df12.png)
 
-1.  我们找一个“高级氛围电商草地”或者“软萌毛绒质感”的模板：
+1. 我们找一个“高级氛围电商草地”或者“软萌毛绒质感”的模板：
 
 ![](img/639700724d97879fca15036a3f739e7a.png)
 
-1.  上传一张你们自己的产品白底图，或者刚才用 AI 生成的模特图。比如下面这个我假想的产品：
+1. 上传一张你们自己的产品白底图，或者刚才用 AI 生成的模特图。比如下面这个我假想的产品：
 
 ![](img/4f8833dad0e0d92cb46909c48ed455ab.png)
 
-1.  点击生成，效果真的好啊！
+1. 点击生成，效果真的好啊！
 
 ![](img/394d08df3c5f8fda9810329077942aed.png)
 
@@ -84,9 +85,9 @@
 
 平台里海量的模板，相当于自带了N多个排版设计师，各种字体排版、背景色块、视觉重心都已经预设好了，一键就能生成可以直接发朋友圈或📕的宣发海报，非常适合需要批量出图的电商场景。
 
-# 3）打通工作流，图片直接变视频
+## 3）打通工作流，图片直接变视频
 
-**市面上**的大模型确实很多，但 LiblibAI 最核心的优势在于一站式。
+市面上的大模型确实很多，但 LiblibAI 最核心的优势在于一站式。
 
 在别的软件里，你做完图就得下载，再打开另一个视频网站重新上传。在这里，图片和视频是无缝衔接的。
 
@@ -94,25 +95,25 @@
 
 ![](img/1453c5978d9c7586782e30ccb80ca330.png)
 
-LiblibAI 也第一时间上了很多最新的视频模型，比如PxiVerse 5.5、seedance 1.5 Pro，当然还有大家都很熟悉的海螺、可灵全系。
+LiblibAI 也第一时间上了很多最新的视频模型，比如 PxiVerse 5.5、seedance 1.5 Pro，当然还有大家都很熟悉的海螺、可灵全系。
 
-1.  **在平台内**，不用切换网页，直接在对话框点开视频生成功能：
+1. 在平台内，不用切换网页，直接在对话框点开视频生成功能：
 
 ![](img/88ad836a530c53777ae3908b82b4b78d.png)
 
-1.  导入刚才做好的那张海报作为首帧参考图，选择 可灵 3.0 Omini 或 其他模型：
+1. 导入刚才做好的那张海报作为首帧参考图，选择 可灵 3.0 Omini 或 其他模型：
 
-1.  输入视频提示词：镜头缓慢向前推进，女孩微微转头看向镜头，头发随风有轻微飘动，背景的人群有自然的走动。
+1. 输入视频提示词：镜头缓慢向前推进，女孩微微转头看向镜头，头发随风有轻微飘动，背景的人群有自然的走动。
 
 跑出来的视频质感很稳，人物面部没有出现奇怪的变形。
 
 ![](img/9bd9274d71d1fe835fdecc86e4ded5b4.png)
 
-[A cinematic camera slowly pushes forward through a crowd of.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StT5bLZZqoU4Prxnj8RcJM8nn5c)
+[`A cinematic camera slowly pushes forward through a crowd of.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StT5bLZZqoU4Prxnj8RcJM8nn5c)
 
 不论是图生视频、文生视频，还是多镜头分镜生成，只要你在 Lib 里，就能直接调用最适合的视频大模型来完成。
 
-# 4）一键添加视觉特效，省掉后期
+## 4）一键添加视觉特效，省掉后期
 
 平时大家做完视频，通常会加上一些转场或特效。以前这需要打开专业的后期软件，现在 LiblibAI 同样内置了丰富的视频特效模板。
 
@@ -122,31 +123,31 @@ LiblibAI 也第一时间上了很多最新的视频模型，比如PxiVerse 5.5�
 
 ![](img/249ce91ce83665f1baab8a9ff4ebe474.png)
 
-1.  **在 Li**bl**ibAI 首**页直接搜索模板名称，比如天使降临或者地球拉进转场。
+1. 在 LiblibAI 首页直接搜索模板名称，比如天使降临或者地球拉进转场。
 
-1.  把我们之前生成的图片（或者你自己拍摄的照片）传进去。
+1. 把我们之前生成的图片（或者你自己拍摄的照片）传进去。
 
-1.  点击生成。
+1. 点击生成。
 
 ![](img/d057bf30ccd7bbc914fa617f898f9751.png)
 
-[83fdee2589949aa142fe257baca93ace7b4e67171664810fb4c7cd564ae7df69.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WBmCb5anno7kZtxQ6V8cbhRNnxe)
+[`83fdee2589949aa142fe257baca93ace7b4e67171664810fb4c7cd564ae7df69.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WBmCb5anno7kZtxQ6V8cbhRNnxe)
 
 ![](img/b9e02089cdb47a45b39fbaf9d4bb16d7.png)
 
-[2088aa49b32977a7acf8a6917a85add706280d8cdd8cb0dfdbbab9471b8f83de.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RNiNbh8QooTHsFxVRrVc8qaKnbf)
+[`2088aa49b32977a7acf8a6917a85add706280d8cdd8cb0dfdbbab9471b8f83de.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RNiNbh8QooTHsFxVRrVc8qaKnbf)
 
 不需要懂任何后期节点的知识，完全是傻瓜式操作。
 
-LiblibAI不仅能做高质量的图片，在视频生成和视频特效的后期处理上，也完全能够满足日常的创作需求。
+LiblibAI 不仅能做高质量的图片，在视频生成和视频特效的后期处理上，也完全能够满足日常的创作需求。
 
-# 5）进阶玩法，ComfyUI 工作流才是真生产力
+## 5）进阶玩法，ComfyUI 工作流才是真生产力
 
-**现在**大模型一键生图确实聪明，解决的是下限。
+现在大模型一键生图确实聪明，解决的是下限。
 
-可能现在很多新的AI绘图的用户都不知道 ComfyUI 工作流了。
+可能现在很多新的 AI 绘图的用户都不知道 ComfyUI 工作流了。
 
-但对商业项目接单来说，要的是绝对控制力（比如精准换装、局部控光），或**者需**要大量出图，工作流复用的情况，这必须得靠 ComfyUI，它决定了商业交付的上限。
+但对商业项目接单来说，要的是绝对控制力（比如精准换装、局部控光），或者需要大量出图，工作流复用的情况，这必须得靠 ComfyUI，它决定了商业交付的上限。
 
 老用户别慌，LiblibAI 没搞一刀切。
 
@@ -164,13 +165,13 @@ LiblibAI不仅能做高质量的图片，在视频生成和视频特效的后期
 
 从小众的本地部署交流社区，到现在整合全网大模型的庞大平台。Lib 始终尊重不同阶段的创作者，给足了大家安全感。
 
-我算是看着LiblibAI这个“小破站”一步步成长起来的。从最开始学Stable Diffusion、ComfyUI，设计师们口耳相传的模型社区，到现在这样一个强大的创作平台。
+我算是看着 LiblibAI 这个“小破站”一步步成长起来的。从最开始学 Stable Diffusion、ComfyUI，设计师们口耳相传的模型社区，到现在这样一个强大的创作平台。
 
 这背后是有一群真正懂创作、也尊重创作的人。
 
-希望Liblib能坚持这种社区的初心，让我们这些创作者能一直感受到，这个平台是在和我们一起进步。
+希望 Liblib 能坚持这种社区的初心，让我们这些创作者能一直感受到，这个平台是在和我们一起进步。
 
-# 最后的话
+## 最后的话
 
 一圈使用下来，我觉得 LiblibAI 给创作者提供了一个非常务实的解决方案。
 
@@ -180,7 +181,7 @@ LiblibAI 最大的诚意，就是它整合了 Nano Banana Pro/2、Seedream 4.5�
 
 如果你平时的工作也重度依赖 AI 产出，或者正在寻找一个稳定、高效的创作大本营，我非常建议你去试一下。
 
-最后，再次附上平台的直达链接： https://www.liblib.art
+最后，再次附上平台的直达链接：`https://www.liblib.art`
 
 ---
 

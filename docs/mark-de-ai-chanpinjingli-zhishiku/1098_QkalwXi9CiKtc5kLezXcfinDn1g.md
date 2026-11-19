@@ -1,8 +1,9 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/FUGgdjYMHou2ATxfT9wc68hKntO](https://qqs7y1hozd1.feishu.cn/docx/FUGgdjYMHou2ATxfT9wc68hKntO)
 
-```
+```python
 import streamlit as st
 import nest_asyncio
 from io import BytesIO
@@ -19,12 +20,12 @@ from agno.storage.agent.postgres import PostgresAgentStorage
 nest_asyncio.apply()
 
 # Database connection string for PostgreSQL
-DB_URL = &quot;postgresql+psycopg://ai:ai@localhost:5532/ai&quot;
+DB_URL = "postgresql+psycopg://ai:ai@localhost:5532/ai"
 
 # Function to set up the Assistant, utilizing caching for resource efficiency
 @st.cache_resource
-def setup_assistant(api_key: str) -&gt; Agent:
-    &quot;&quot;&quot;Initializes and returns an AI Assistant agent with caching for efficiency.
+def setup_assistant(api_key: str) -> Agent:
+    """Initializes and returns an AI Assistant agent with caching for efficiency.
 
     This function sets up an AI Assistant agent using the OpenAI GPT-4o-mini model 
     and configures it with a knowledge base, storage, and web search tools. The 
@@ -36,26 +37,26 @@ def setup_assistant(api_key: str) -&gt; Agent:
 
     Returns:
         Agent: An initialized Assistant agent configured with a language model, 
-        knowledge base, storage, and additional tools for enhanced functionality.&quot;&quot;&quot;
-    llm = OpenAIChat(id=&quot;gpt-4o-mini&quot;, api_key=api_key)
+        knowledge base, storage, and additional tools for enhanced functionality."""
+    llm = OpenAIChat(id="gpt-4o-mini", api_key=api_key)
     # Set up the Assistant with storage, knowledge base, and tools
     return Agent(
-        id=&quot;auto_rag_agent&quot;,  # Name of the Assistant
+        id="auto_rag_agent",  # Name of the Assistant
         model=llm,  # Language model to be used
-        storage=PostgresAgentStorage(table_name=&quot;auto_rag_storage&quot;, db_url=DB_URL),  
+        storage=PostgresAgentStorage(table_name="auto_rag_storage", db_url=DB_URL),  
         knowledge_base=PDFUrlKnowledgeBase(
             vector_db=PgVector(
                 db_url=DB_URL,  
-                collection=&quot;auto_rag_docs&quot;,  
-                embedder=OpenAIEmbedder(id=&quot;text-embedding-ada-002&quot;, dimensions=1536, api_key=api_key),  
+                collection="auto_rag_docs",  
+                embedder=OpenAIEmbedder(id="text-embedding-ada-002", dimensions=1536, api_key=api_key),  
             ),
             num_documents=3,  
         ),
         tools=[DuckDuckGoTools()],  # Additional tool for web search via DuckDuckGo
         instructions=[
-            &quot;Search your knowledge base first.&quot;,  
-            &quot;If not found, search the internet.&quot;,  
-            &quot;Provide clear and concise answers.&quot;,  
+            "Search your knowledge base first.",  
+            "If not found, search the internet.",  
+            "Provide clear and concise answers.",  
         ],
         show_tool_calls=True,  
         search_knowledge=True,  
@@ -65,39 +66,39 @@ def setup_assistant(api_key: str) -&gt; Agent:
 
 # Function to add a PDF document to the knowledge base
 def add_document(agent: Agent, file: BytesIO):
-    &quot;&quot;&quot;Add a PDF document to the agent&#x27;s knowledge base.
+    """Add a PDF document to the agent's knowledge base.
 
-    This function reads a PDF document from a file-like object and adds its contents to the specified agent&#x27;s knowledge base. If the document is successfully read, the contents are loaded into the knowledge base with the option to upsert existing data.
+    This function reads a PDF document from a file-like object and adds its contents to the specified agent's knowledge base. If the document is successfully read, the contents are loaded into the knowledge base with the option to upsert existing data.
 
     Args:
         agent (Agent): The agent whose knowledge base will be updated.
         file (BytesIO): A file-like object containing the PDF document to be added.
 
     Returns:
-        None: The function does not return a value but provides feedback on whether the operation was successful.&quot;&quot;&quot;
+        None: The function does not return a value but provides feedback on whether the operation was successful."""
     reader = PDFReader()
     docs = reader.read(file)
     if docs:
         agent.knowledge_base.load_documents(docs, upsert=True)
-        st.success(&quot;Document added to the knowledge base.&quot;)
+        st.success("Document added to the knowledge base.")
     else:
-        st.error(&quot;Failed to read the document.&quot;)
+        st.error("Failed to read the document.")
 
 # Function to query the Assistant and return a response
-def query_assistant(agent: Agent, question: str) -&gt; str:
-    &quot;&quot;&quot;Queries the Assistant and returns a response.
+def query_assistant(agent: Agent, question: str) -> str:
+    """Queries the Assistant and returns a response.
 
     Args:
         agent (Agent): An instance of the Agent class used to process the query.
         question (str): The question to be asked to the Assistant.
 
     Returns:
-        str: The response generated by the Assistant for the given question.&quot;&quot;&quot;
-    return &quot;&quot;.join([delta for delta in agent.run(question)])
+        str: The response generated by the Assistant for the given question."""
+    return "".join([delta for delta in agent.run(question)])
 
 # Main function to handle Streamlit app layout and interactions
 def main():
-    &quot;&quot;&quot;Main function to handle the layout and interactions for the Streamlit app.
+    """Main function to handle the layout and interactions for the Streamlit app.
 
     This function sets up the Streamlit app configuration, handles user inputs such
     as OpenAI API key, PDF uploads, and user questions, and interacts with an
@@ -113,38 +114,38 @@ def main():
         - Displays responses generated by querying an assistant.
 
     Raises:
-        StreamlitWarning: If the OpenAI API key is not provided.&quot;&quot;&quot;
-    st.set_page_config(page_title=&quot;AutoRAG&quot;, layout=&quot;wide&quot;)
-    st.title(&quot;🤖 Auto-RAG: Autonomous RAG with GPT-4o&quot;)
+        StreamlitWarning: If the OpenAI API key is not provided."""
+    st.set_page_config(page_title="AutoRAG", layout="wide")
+    st.title("🤖 Auto-RAG: Autonomous RAG with GPT-4o")
 
-    api_key = st.sidebar.text_input(&quot;Enter your OpenAI API Key 🔑&quot;, type=&quot;password&quot;)
+    api_key = st.sidebar.text_input("Enter your OpenAI API Key 🔑", type="password")
     
     if not api_key:
-        st.sidebar.warning(&quot;Enter your OpenAI API Key to proceed.&quot;)
+        st.sidebar.warning("Enter your OpenAI API Key to proceed.")
         st.stop()
 
     assistant = setup_assistant(api_key)
     
-    uploaded_file = st.sidebar.file_uploader(&quot;📄 Upload PDF&quot;, type=[&quot;pdf&quot;])
+    uploaded_file = st.sidebar.file_uploader("📄 Upload PDF", type=["pdf"])
     
-    if uploaded_file and st.sidebar.button(&quot;🛠️ Add to Knowledge Base&quot;):
+    if uploaded_file and st.sidebar.button("🛠️ Add to Knowledge Base"):
         add_document(assistant, BytesIO(uploaded_file.read()))
 
-    question = st.text_input(&quot;💬 Ask Your Question:&quot;)
+    question = st.text_input("💬 Ask Your Question:")
     
     # When the user submits a question, query the assistant for an answer
-    if st.button(&quot;🔍 Get Answer&quot;):
+    if st.button("🔍 Get Answer"):
         # Ensure the question is not empty
         if question.strip():
-            with st.spinner(&quot;🤔 Thinking...&quot;):
+            with st.spinner("🤔 Thinking..."):
                 # Query the assistant and display the response
                 answer = query_assistant(assistant, question)
-                st.write(&quot;📝 **Response:**&quot;, answer.content)
+                st.write("📝 **Response:**", answer.content)
         else:
             # Show an error if the question input is empty
-            st.error(&quot;Please enter a question.&quot;)
+            st.error("Please enter a question.")
 
 # Entry point of the application
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```

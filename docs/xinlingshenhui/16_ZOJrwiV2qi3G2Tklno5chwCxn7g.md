@@ -1,3 +1,4 @@
+
 # 用midjourney轻松搞定🛰️红包封面！！！
 
 > 来源：[https://my.feishu.cn/docx/S7FsdAe6soLqbixebJAcT2pJnbc](https://my.feishu.cn/docx/S7FsdAe6soLqbixebJAcT2pJnbc)
@@ -8,7 +9,7 @@
 
 话不多说，我们赶快开始吧！
 
-##### 一.开通视频号或者👸号
+## 一. 开通视频号或者👸号
 
 要自己定制设计一款红包封面，首先需要注册平台账号。
 
@@ -26,15 +27,15 @@
 
 认证入口：
 
-👸号：https://mp.weixin.qq.com/
+👸号：`https://mp.weixin.qq.com/`
 
-视频号：https://kf.qq.com/touch/faq/200813eeymye200813AV7jEj.html?platform=14&lang=
+视频号：`https://kf.qq.com/touch/faq/200813eeymye200813AV7jEj.html?platform=14&lang=`
 
-##### 二.了解平台规范
+## 二. 了解平台规范
 
 先来看看我们需要做哪些图?
 
-+   封面图：封面图是封面样式的关键组成部分，会同时应用至发红包页、红包气泡、拆红包页、红包详情页。除了支持图片素材外，平台现已全面支持上传动态素材作为封面图。
++ 封面图：封面图是封面样式的关键组成部分，会同时应用至发红包页、红包气泡、拆红包页、红包详情页。除了支持图片素材外，平台现已全面支持上传动态素材作为封面图。
 
 ![](img/f68672e515ddfd76132cfd9adf5b98ca.png)
 
@@ -44,7 +45,7 @@
 
 [dtsc.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XQr1bN3Wpoz00Qx5dapc0aehnvf)
 
-+   **封面挂件（选填）**
++ **封面挂件（选填）**
 
 封面挂件会和封面图一起展示在拆红包页。除了支持图片素材外，平台也支持上传动态素材作为封面挂件。
 
@@ -58,13 +59,13 @@
 
 [dtgj.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LH16btsXIo0f7qxRjj7cSRp7n5T)
 
-+   **气泡挂件（选填）**
++ **气泡挂件（选填）**
 
 气泡挂件会和封面图一起展示在红包气泡上。气泡挂件为图片格式。
 
 ![](img/ef3afbb4ad086c84cb77f95468c82500.png)
 
-图片制作规范
+### 图片制作规范
 
 封面图（必填）
 
@@ -76,19 +77,19 @@
 
 气泡挂件（选填）
 
-+   格式：PNG
++ 格式：PNG
 
-+   宽高：480x384像素
++ 宽高：480x384像素
 
-+   文件大小：不超过300KB
++ 文件大小：不超过300KB
 
-+   色彩空间配置：建议使用sRGB
++ 色彩空间配置：建议使用sRGB
 
 关于第一第二部分更多规则可以看官方文档：
 
-https://cover.weixin.qq.com/cgi-bin/mmcover-bin/readtemplate?t=page/index.html#/doc?page=introduce
+`https://cover.weixin.qq.com/cgi-bin/mmcover-bin/readtemplate?t=page/index.html#/doc?page=introduce`
 
-##### 三.红包封面设计思路和售卖路径
+## 三. 红包封面设计思路和售卖路径
 
 如果没有任何制作经验，那么你可以多看看其他人优秀的作品。
 
@@ -102,27 +103,25 @@ https://cover.weixin.qq.com/cgi-bin/mmcover-bin/readtemplate?t=page/index.html#/
 
 设计师可以接定制的单，那么普通人又如何通过🛰️红包封面赚钱呢。先看看红包封面再各个平台售卖的情况。
 
-
-
 ![](img/74c694a135055f597d6c6484fb4936bf.png)
 
 📕和淘宝上的售卖情况还是非常不错的。作为普通人也是可以选择这两个平台。
 
-##### 四.Midjourney 出图
+## 四. Midjourney 出图
 
-+   如果你有了想法，那我们就可以根据关键词出图。如果不知道关键词怎么写可以按照下面的提示词结构填充:
++ 如果你有了想法，那我们就可以根据关键词出图。如果不知道关键词怎么写可以按照下面的提示词结构填充:
 
 > 主题+媒介+ 环境+灯光+颜色+情绪+构图
 
 关于更多提示词的注意事项以及写法可以去看关于Midjourney提示词的教程。
 
-+     如果你没有想法，不知道画什么，你可以结合以下几个方面：节日，萌宠，12生肖，情侣，儿童。
++ 如果你没有想法，不知道画什么，你可以结合以下几个方面：节日，萌宠，12生肖，情侣，儿童。
 
-##### 五.后期优化合成
+## 五. 后期优化合成
 
-1.出图后可以通过 Photoshop 在对所选照片进行精心优化和合成。比如亮度、对比度和饱和度的微调，以确保图片能展现出最佳视觉效果。从而打造出一个和谐而富有层次感的最终封面图。
+1. 出图后可以通过 Photoshop 在对所选照片进行精心优化和合成。比如亮度、对比度和饱和度的微调，以确保图片能展现出最佳视觉效果。从而打造出一个和谐而富有层次感的最终封面图。
 
-2.如果要加入气泡挂件封面挂件可以下载官方给的设计模板，到PS里加工
+2. 如果要加入气泡挂件封面挂件可以下载官方给的设计模板，到PS里加工
 
 ![](img/e5a68a7d32a97cdfff558805e748ac45.png)
 
@@ -130,7 +129,7 @@ https://cover.weixin.qq.com/cgi-bin/mmcover-bin/readtemplate?t=page/index.html#/
 
 ![](img/14383c91e6ee2b2db21bd4a864b8e403.png)
 
-六.上传审核，等待结果
+## 六. 上传审核，等待结果
 
 在提交前，建议先使用手机预览整体效果，包括所有已上传内容在接收红包过程中的真实体验效果。如果扫描后出现二维码无效等情况，建议先升级手机🛰️版本。
 

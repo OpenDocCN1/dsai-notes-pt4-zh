@@ -1,6 +1,7 @@
+
 # 外卖直播的保姆级教程
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/ChHadWkz0oDAZNxVSmdcmwU0nOf](https://xuqiwei1986.feishu.cn/docx/ChHadWkz0oDAZNxVSmdcmwU0nOf)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/ChHadWkz0oDAZNxVSmdcmwU0nOf`
 
 本页面记得收藏 长期更新羊毛活动。
 
@@ -11,11 +12,8 @@
 5月其实我们公司已经在玩这个项目了所以来分享下一些社群运营和直播引流的玩法。
 
 > 盈利数据方面：
-
 > 切记不是GMV是利润！
-
 > 在直播的话一天少的话几千块钱很容易多的话一天几万
-
 > 赶上周六活动有活动一天基本上万
 
 以下是我们公司几个月的数据 和玩法我们从5月份开始搞的，当时全网没有一个人玩直播引流羊毛，我同事从最开始的直播间在线十几个人到现在稳定几千人，目前为止全网羊毛直播的对标都是我们
@@ -46,11 +44,11 @@
 
 ![](img/ac528a8e9a728de9fac827c6d10beeaa.png)
 
-# 活动推广的获取的方式：
+## 活动推广获取方式
 
 👸号搜索「美团联盟」、「美团圈圈」「饿了么联盟」京东外卖推广在「京粉APP」
 
-## 饿了么联盟
+### 饿了么联盟
 
 小程序叫「一起赚」
 
@@ -74,7 +72,7 @@
 
 ![](img/21bb5f31eebc167e1705a763370e6bbe.png)
 
-## 美团联盟
+### 美团联盟
 
 美团联盟推广的时候注意先报名下激励的活动。
 
@@ -98,7 +96,7 @@
 
 ![](img/cbb38a7cb3e709dde938a9592df80370.png)
 
-## **美团圈圈**
+### 美团圈圈
 
 美团圈圈和美团联盟一样都是属于官方的，但是允许推广者自购、并且支持收徒适合代理模式
 
@@ -106,13 +104,13 @@
 
 ![](img/3d816813274b5b49498b6867c622b2da.png)
 
-## 京东外卖
+### 京东外卖
 
 应用商店下载官方的「京粉app」 从首页获获取推广链接 也是直接转同行的链接即可。
 
 ![](img/1071a20808f6e74519f182ea7c3325e3.png)
 
-## 云瞻平台
+### 云瞻平台
 
 圈内大佬黄海老板的平台也对接的非常齐全
 
@@ -120,7 +118,7 @@
 
 ![](img/d990505ff0917869258b4e9ce3de9621.png)
 
-# 活动玩法（陆续更新中）
+## 活动玩法（陆续更新中）
 
 活动更新时间：2025年7月18日17:19:04
 
@@ -152,7 +150,7 @@
 
 ![](img/4122347361ebfe151dce8b14c693cb4e.png)
 
-[🛰️视频2025-07-18_172658_594.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lm8absm0RoJN01xkxaKcTesonyg)
+[`🛰️视频2025-07-18_172658_594.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lm8absm0RoJN01xkxaKcTesonyg)
 
 ==
 
@@ -168,9 +166,9 @@
 
 1⃣先領15-10券
 
-https://u.jd.com/n6PHCdr
+`https://u.jd.com/n6PHCdr`
 
-https://u.jd.com/n6PfxRI
+`https://u.jd.com/n6PfxRI`
 
 2⃣需3金币綐换叠加券
 
@@ -178,21 +176,21 @@ https://u.jd.com/n6PfxRI
 
 京东外卖5-4/4-3叠加埢
 
-#小程序://支付有优惠/cjGJs8hzMEdt1ld
+`#小程序://支付有优惠/cjGJs8hzMEdt1ld`
 
-#小程序://支付有优惠/🐧NwmdO9Zs5EnPa
+`#小程序://支付有优惠/🐧NwmdO9Zs5EnPa`
 
 搜索：🛰️支付 右下角 摇一摇概率得5-4券-
 
 3⃣每2小时可抽一次20券
 
-👉https://u.jd.com/nGSFb5d
+👉`https://u.jd.com/nGSFb5d`
 
 -
 
 4⃣直达免配送费商家店铺
 
-👉https://u.jd.com/ng0CgfK
+👉`https://u.jd.com/ng0CgfK`
 
 ### 京东华莱士20-18详细教程
 
@@ -202,7 +200,7 @@ https://u.jd.com/n6PfxRI
 
 左上角小房子自己去做任务领
 
-mp://2ZP7BE6nSEbWrWu
+`mp://2ZP7BE6nSEbWrWu`
 
 2️⃣然后京东-秒送-搜：华莱士
 
@@ -236,7 +234,7 @@ mp://2ZP7BE6nSEbWrWu
 
 ❶抽38-18 25-20
 
-👉🏻http://dpurl.cn/3YhxoS5z
+👉🏻`http://dpurl.cn/3YhxoS5z`
 
 (右滑才能看到，比较隐藏)
 
@@ -244,15 +242,15 @@ mp://2ZP7BE6nSEbWrWu
 
 ❷抽35-35 每天一次
 
-👉🏻http://dpurl.cn/tsCTEs2z
+👉🏻`http://dpurl.cn/tsCTEs2z`
 
 1️⃣免单一夏天抽（免单奶茶概率中
 
-👉mp://XRZpTlG1Bg7zNio
+👉`mp://XRZpTlG1Bg7zNio`
 
 2️⃣月光饱盒膨胀
 
-👉mp://EL1fSKwgGz4fmVx
+👉`mp://EL1fSKwgGz4fmVx`
 
 -
 
@@ -262,7 +260,7 @@ mp://2ZP7BE6nSEbWrWu
 
 美团40-20/38-18[红包]
 
-http://dpurl.cn/cq4GnKSz
+`http://dpurl.cn/cq4GnKSz`
 
 白天有兔箪配合用 先去领！
 
@@ -284,13 +282,13 @@ http://dpurl.cn/cq4GnKSz
 
 1️⃣点立即领取先领🧧
 
-http://dpurl.cn/KmvtOerz
+`http://dpurl.cn/KmvtOerz`
 
-———
+——
 
 2️⃣有1.9/12瓶矿泉水找配送起送低的
 
-#小程序://美团闪购/mJKb2nmEsPGUVWh
+`小程序://美团闪购/mJKb2nmEsPGUVWh`
 
 也可以拍其他的 哪个便宜拍哪个！
 
@@ -320,11 +318,11 @@ http://dpurl.cn/KmvtOerz
 
 2️⃣换5-4叠加卷
 
-mp://jHUEMOzCUPMv2yb
+`mp://jHUEMOzCUPMv2yb`
 
 金币兑换，没有金币去刷
 
-mp://F4bB1Dun6l2SeQh
+`mp://F4bB1Dun6l2SeQh`
 
 ![](img/724a2de73ca429fc475ad893f945ebd0.png)
 
@@ -334,17 +332,17 @@ mp://F4bB1Dun6l2SeQh
 
 直接领11-10打车卷
 
-mp://xnpf7sVU8nlmFfF
+`mp://xnpf7sVU8nlmFfF`
 
 有效期5天哈 领不到换号
 
-## 更多线报活动来源
+### 更多线报活动来源
 
 全网同行都是互相抄，多进一些同行的社群关注一些同行的动态及时跟进 去抖音搜索 羊毛 这个关键词就有非常多的同行 大家都去加下他们群偷线报就好了。
 
-# 直播+引流玩法
+## 直播+引流玩法
 
-## 📕玩法
+### 📕玩法
 
 铺量发📕笔记
 
@@ -364,19 +362,19 @@ mp://xnpf7sVU8nlmFfF
 
 ![](img/8a37aa48cde232d28aa8f5c72e3ffff2.png)
 
-## 📕注意事项
+### 📕注意事项
 
 现在容易风控，我们现在都是分发兼职去打，发一条给几块钱这种。
 
-## 抖音直播引流玩法
+### 抖音直播引流玩法
 
-### 抖音开播前视频预热
+#### 抖音开播前视频预热
 
 最佳节点就是在活动开始前几天甚至个把月就持续发布相关的活动视频，可以是图片可以是视频
 
 这样其实就算是圈了一些人群，平时开播的话也是发条视频预热下再播
 
-### 直播内容
+#### 直播内容
 
 参考同行直播间
 
@@ -386,7 +384,7 @@ mp://xnpf7sVU8nlmFfF
 
 ![](img/c5715c4161d3a817e7ab83f9722bf3a7.png)
 
-### 直播注意事项
+#### 直播注意事项
 
 1.直播切记 哪些烂大街的活动 概率比较低的活动就不要讲了 如果很多人看直播没中会直接投诉你的账号会导致封号的。
 
@@ -394,17 +392,17 @@ mp://xnpf7sVU8nlmFfF
 
 如果播了几天没流量就马上换一个号 有的号他就是播不起来赶紧放弃，我们爆的号都是几个号才有一个极品号流量爆的。
 
-### 直播准备：
+#### 直播准备：
 
 电脑 下载直播伴侣 然后手机投屏上去就好了，在在配几张图在旁边，如果没有图的可以去评论区偷，但是你直播前要把优惠券都给领了，这样子你才好给用户操作 怎么低价 或者0.01买东西，有的账号你领不到大额的优惠券，就弄个新号去领取，然后再登录到你直播投屏的设备即可。
 
-https://streamingtool.douyin.com/
+`https://streamingtool.douyin.com/`
 
 直播伴侣下载链接，里面都有教程。
 
-### 引流私域主要2种方式
+#### 引流私域主要2种方式
 
-#### 抖音方式一：
+##### 抖音方式一：
 
 创建抖音群，群里发公告里
 
@@ -412,7 +410,7 @@ https://streamingtool.douyin.com/
 
 然后底下放个群里或者👸号二维码，群满了200就直接换，我们都是直接放企业群二维码的，不建议引流到👸号没啥用，除非你实在是流量太大了，引流到我们的企业号私域群 以后有很多其他的变现玩法的。
 
-#### 抖音方式二：
+##### 抖音方式二：
 
 参考同行
 
@@ -422,7 +420,7 @@ https://streamingtool.douyin.com/
 
 ![](img/e06b2ad87ba8390b276b344b6602b1e3.png)
 
-### 私域社群裂变
+#### 私域社群裂变
 
 发布好活动的时候，可以引导用户邀请好朋友进群玩
 
@@ -442,7 +440,7 @@ https://streamingtool.douyin.com/
 
 ![](img/57c12be13d97d1365ff8203d03141af8.png)
 
-### 评论区截流玩法
+#### 评论区截流玩法
 
 第一步：抖音创建群聊
 
@@ -510,7 +508,7 @@ https://streamingtool.douyin.com/
 
 所有引流 都是为了屯你的流量，流量是永久的 永远可以变现不管带任何项目，发羊毛也好 都是收益。
 
-# 后续私域羊毛粉变现
+## 后续私域羊毛粉变现
 
 1.群里发淘客
 

@@ -1,12 +1,13 @@
-# 07.17-历史性一刻！人类士兵首次向机器人军队投降
-
-> 来源：[https://agijuejin.feishu.cn/docx/XoFVdtQ5joVNc2xDUGRcK6Lnntb](https://agijuejin.feishu.cn/docx/XoFVdtQ5joVNc2xDUGRcK6Lnntb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 07 月 17 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/XoFVdtQ5joVNc2xDUGRcK6Lnntb](https://agijuejin.feishu.cn/docx/XoFVdtQ5joVNc2xDUGRcK6Lnntb)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/fbb85d1d567f66e2420e052fff4f1b9a.png)
+
+## 07.17-历史性一刻！人类士兵首次向机器人军队投降
 
 ## ⭐ 今日热点
 
@@ -66,7 +67,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/868/711.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/868/590.htm)
 
-
 7月16日消息，Mistral AI 推出开源的Voxtral语音理解模型系列。该系列由Mistral Small 3.1派生，有不同版本以适用于生产、本地/边缘部署等场景。模型支持32K Token上下文长度，可处理较长音频，内置生成问题、摘要能力，支持多种印欧语言。Mistral AI宣称，Voxtral Mini Transcribe在敏感用例中性能优于OpenAI Whisper，价格不到一半；Voxtral Small在高级用例中性能与ElevenLabs Scribe接近，价格减半。
 
 ### 💡 根本停不下来，Meta 被曝又从 OpenAI 挖走两名顶级研究人员
@@ -89,8 +89,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/868/550.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/868/546.htm)
 
-
-**谷歌宣布未来**两年将在美国最大电力网区域投资250亿美元建设AI**数据中心，**总裁鲁思・波拉特预计与特朗普在人工智能峰会上宣布该计划。此外，谷歌将斥资30亿美元改造宾夕法尼亚州两座水电站，购买3000兆瓦水电能源。PJM互联电网压力大。特朗普将宣布700亿美元相关投资计划，Meta的扎克伯格称将投数百亿美元建人工智能数据中心 。
+谷歌宣布未来两年将在美国最大电力网区域投资250亿美元建设AI数据中心，总裁鲁思・波拉特预计与特朗普在人工智能峰会上宣布该计划。此外，谷歌将斥资30亿美元改造宾夕法尼亚州两座水电站，购买3000兆瓦水电能源。PJM互联电网压力大。特朗普将宣布700亿美元相关投资计划，Meta的扎克伯格称将投数百亿美元建人工智能数据中心 。
 
 ### 💡 前 OpenAI 工程师 Calvin 长文回顾工作经历：员工一年间暴增 2000 人，产品发布节奏迅猛
 

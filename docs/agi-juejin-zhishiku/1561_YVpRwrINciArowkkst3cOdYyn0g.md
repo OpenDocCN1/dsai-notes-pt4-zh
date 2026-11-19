@@ -1,3 +1,4 @@
+
 # GPT 实战：辅助我们做一个不扫兴的父母
 
 > 来源：[https://agijuejin.feishu.cn/docx/LzXrd7Wo4owcNTxWsLucIbk9nDb](https://agijuejin.feishu.cn/docx/LzXrd7Wo4owcNTxWsLucIbk9nDb)
@@ -10,7 +11,7 @@
 
 最近刚换了工作，每天乱乱的还没有稳定下来，所以更新也比较拖沓了~等过段时间稳定下来，一定把欠的都给大家补上！
 
-今天的主题呢，很简单， **望大家都能做一个不扫兴的父母 **。
+今天的主题呢，很简单，望大家都能做一个不扫兴的父母。
 
 6 岁学围棋半年，围棋比赛考级。具体比赛输赢场次已经不记得了。但记得有一个跟我一起学围棋的小朋友，考级时候得到的评级是 业余 3 段，我是 3 级好像。
 
@@ -50,41 +51,37 @@ GPT 辅助我们做一个不扫兴的父母
 
 本文会根据以下内容顺序进行：
 
-+   需求分析
++ 需求分析
++ 分步实现需求
++ 提示词编写测试
++ GPTs 使用链接
++ 总结
 
-+   分步实现需求
+# 一、需求分析
 
-+   提示词编写测试
-
-+   GPTs 使用链接
-
-+   总结
-
-#  **一、需求分析 **
-
-##  **一）什么是不扫兴的父母 **
+## 一）什么是不扫兴的父母
 
 在孩子成长过程中，父母扮演者至关重要的角色。然而，许多父母在教育孩子的过程中过于严苛、苛刻，让孩子失去了快乐、自信。那到底要怎么做一个不扫兴的父母，培养出快乐、自信的孩子呢？
 
-###   **1、尊重孩子、给予适当自由 **
+### 1、尊重孩子、给予适当自由
 
 首先，我们一定要知道的一点，孩子是一个独立的、完整的个体。他们有自己的想法、兴趣和需求。父母可以引导孩子做决定，但一定不能给孩子做决定。尊重孩子的个性和选择，不要过分干涉他们的生活。当然这也并不意味着就放任孩子，而是在合理的范围内给予他们自主权，让他们学会独立思考和承担责任。
 
 当孩子到了一定年龄，需要选择一个兴趣班时，我们应该尊重他们的选择，而不是单纯的强迫他们参加自己认为有价值的课程。当孩子遇到困难时，父母可以给予指导，但不要替孩子解决问题，让他们学会独立面对挑战。
 
-###   **2、鼓励孩子，积极评价 **
+### 2、鼓励孩子，积极评价
 
 做个不扫兴的父母，要善于鼓励孩子，给予他们积极的评价。孩子在成长过程中，需要父母的肯定和鼓励来建立自信心。过分的批评和指责只会让孩子感到沮丧、自卑，甚至产生逆反心理。
 
 当孩子考试取得好成绩时，父母应该及时表扬，让他们感受到自己的努力得到了认可。当孩子遇到挫折时，父母要鼓励他们勇敢面对，相信他们有能力克服困难。通过这种方式，孩子会逐渐树立起自信心，勇敢地面对生活中的各种挑战。
 
-###   3、与孩子共同成长，做他们的朋友
+### 3、与孩子共同成长，做他们的朋友
 
 做个不扫兴的父母，还要学会与孩子共同成长，成为他们的朋友。这意味着父母要放下身段，倾听孩子的声音，了解他们的需求和困惑。通过与孩子的沟通交流，父母可以更好地引导他们成长，同时也能增进亲子关系。
 
 父母可以定期与孩子进行谈心，了解他们在学校的生活、交友情况以及心理状况。当孩子遇到问题时，父母要站在他们的角度思考，给予合理的建议。此外，父母还可以与孩子共同参与一些活动，如户外运动、亲子游戏等，增进彼此的感情。
 
-##  **二）搜集对话 **
+## 二）搜集对话
 
 > 对话来源于抖音
 
@@ -110,12 +107,12 @@ GPT 辅助我们做一个不扫兴的父母
 我爸:我怕你过得不开心
 
 “妈，我想换个手机
-&#x27;等期未考完吧
+'等期未考完吧
 “妈，我期末没考好
 “没事，咱们下去挑手机吧
 ```
 
-##  **三）需求整合 **
+## 三）需求整合
 
 今天，不想用 Dalle-3 画图了，最后生成的对话尽量也控制在四句话。
 
@@ -125,9 +122,9 @@ GPT 辅助我们做一个不扫兴的父母
 
 ![](img/2a2922a87881af5fcd0cf5557edabf9d.png)
 
-#  **二、分步实现需求 **
+# 二、分步实现需求
 
-##  **一）生成四句对话 **
+## 一）生成四句对话
 
 ```
 ## Background : 
@@ -175,7 +172,7 @@ GPT 辅助我们做一个不扫兴的父母
 我爸:我怕你过得不开心
 
 5. “妈，我想换个手机
-&#x27;等期未考完吧
+'等期未考完吧
 “妈，我期末没考好
 “没事，咱们下去挑手机吧
 
@@ -211,37 +208,255 @@ GPT 辅助我们做一个不扫兴的父母
 
 没错，努力是应该的，但同时更是值得被表扬，被骄傲的。加油各位~
 
-##  **二）生成黑底白字的卡片 **
-
+## 二）生成黑底白字的卡片
 
 ![](img/6d3d0b474c0f37315ffc7639c7813f90.png)
 
-``` 帮我利用 Python 生成黑底白字的卡片。卡片比例 16:9,1024px*576px,使用我上传的字体。- 确保四句话的段落间隔为 20px。- 字体大小为 28 px 字体颜色：白色 - 四句话为一个整体，垂直方向和水平方向都居中。这个整体的内部保持字体左对齐 - 卡片的背景颜色为黑色。```
 ```
+帮我利用 Python 生成黑底白字的卡片。卡片比例 16:9,1024px*576px,使用我上传的字体。- 确保四句话的段落间隔为 20px。- 字体大小为 28 px 字体颜色：白色 - 四句话为一个整体，垂直方向和水平方向都居中。这个整体的内部保持字体左对齐 - 卡片的背景颜色为黑色。
+```
+
+```python
+from PIL import Image, ImageDraw, ImageFont
+
+import textwrap
+
+# Load the custom font
+
+font_path = '/mnt/data/今年也要加油鸭.ttf'
+
+font_size = 30
+
+font = ImageFont.truetype(font_path, font_size)
+
+# Text to be included
+
+text = (
+
+    "孩子：“妈妈，如果我考试不及格怎么办？”\n"
+
+    "妈妈：“我们就找出原因，一起努力改进，考试不只是分数。”\n"
+
+    "孩子：“那你会不会失望？”\n"
+
+    "妈妈：“我只会失望于没吃到你做的煎饼，对你的努力永远骄傲。”"
+
+)
+
+# Create an image with black background
+
+image_width = 1024
+
+image_height = 576
+
+image = Image.new('RGB', (image_width, image_height), 'black')
+
+draw = ImageDraw.Draw(image)
+
+# Calculate text size and position to center the text block
+
+lines = text.split('\n')
+
+max_width = 0
+
+total_height = 0
+
+line_heights = []
+
+for line in lines:
+
+    line_width, line_height = draw.textsize(line, font=font)
+
+    max_width = max(max_width, line_width)
+
+    total_height += line_height + 20  # Adding space between lines
+
+    line_heights.append(line_height)
+
+# Adjust total height by subtracting the last added space
+
+total_height -= 20
+
+# Start position for the text to be centered
+
+x = (image_width - max_width) // 2
+
+y = (image_height - total_height) // 2
+
+# Draw the text
+
+for i, line in enumerate(lines):
+
+    draw.text((x, y), line, fill='white', font=font)
+
+    y += line_heights[i] + 20  # Move to the next line position
+
+# Save the image
+
+image_path = '/mnt/data/card_black_white.png'
+
+image.save(image_path)
+
+image_path
+```
+
+# 三、提示词编写、测试
+
+## 一）融合提示词
+
+```
+## Background : 
+
+在孩子成长过程中，父母的教育方式对孩子的自信和快乐至关重要。面对过于严格或不合理的教育，孩子可能会感到压抑和不快乐。我旨在帮助父母通过轻松愉快的对话，改善亲子关系，促进孩子的健康成长。
+
+## Goals :
+
+- 根据用户提供的主题、对话，给出一段完整的四句对话。
+
+## Definition: 
+
+- 幽默：以风趣的方式表达，能够引起笑意和愉悦感。
+
+- 教育意义：通过对话传达正确的价值观和行为方式，促进孩子的积极成长。
+
+## Constrains :
+
+- 保持积极、正面的教育态度，避免负面情绪的传递。
+
+- 对话，必须保证四句。孩子先问，父母回答的模式。一人两句，总共四句
+
+- 父母的观点需要极其尖锐，能够正确引导孩子的价值观和认知观
+
+- 父母永远站在孩子的视角，一起看待世界和问题
+
+- 父母不会教育和说服对方
+
+- 孩子感到失落或沮丧，最后一句要用他们喜欢的事物引导他们走出来
+
+## Skills :
+
+- 深入理解儿童心理学和教育学原理。
+
+- 能够创造出既幽默又富有教育意义的对话。
+
+- 善于捕捉和解读孩子的言行，了解他们的需求和感受。
+
+- 良好的情感调节能力，能够通过对话引导孩子的情绪和行为。
+
+## Example：
+
+1. 孩子：“妈妈，如果我考上清华呢？”
+
+妈妈：“那妈妈会为你骄傲的”
+
+孩子：“那如果我考上了地瓜呢？”
+
+妈妈：“如果你把地瓜烤的又香又甜的话，妈妈也会为你骄傲的”
+
+2. 女儿:在幼儿园有人欺负我怎么办?
+
+爸爸:那你就用你的小铲子铲他
+
+女儿:可我是女孩子
+
+爸爸:那你就用粉色的小铲子铲他
+
+3. 弟弟:为什么姐姐喜欢女孩子啊
+
+爸爸:那你喜欢女孩子吗
+
+弟弟:喜欢
+
+爸爸:那姐姐也可以喜欢啊
+
+4. 我:爸，我不想结婚
+
+我爸:那就不结
+
+我:你不怕村里人笑话你吗?
+
+我爸:我怕你过得不开心
+
+5. “妈，我想换个手机
+
+'等期未考完吧
+
+“妈，我期末没考好
+
+“没事，咱们下去挑手机吧
+
+## Workflows :
+
+1. 输入：提醒用户提供的孩子的问题或一个主题。
+
+2. 分析：根据孩子的问题或主题，分析可能的心理状态和需求。
+
+3. 生成对话：参考[Example]中的对话，和父母的回复结合[不扫兴父母的核心方法论]设计适合该情境的四句对话，既要幽默轻松，又要有教育意义，助力用户成为一个不扫兴的父母。
+
+  - 不扫兴父母的核心方法论：
+
+    + 尊重：认可孩子的感受和选择。
+
+    + 鼓励：用正面的话语支持孩子，表扬成就，鼓励失败。
+
+    + 倾听：认真听孩子说话，不打断，不评判。
+
+    + 参与：与孩子共度时光，了解他们的兴趣。
+
+    + 灵活：根据孩子的特点调整教育方式。
+
+    + 耐心：给孩子时间和空间去学习和犯错。
+
+    + 榜样：用自己的行为作为孩子的榜样。
+
+    + 界限：设定明确规则，解释背后的原因。
+
+    + 冷静：控制情绪，理性对待孩子的行为。
+
+    + 爱：无条件地爱孩子，让他们感到安全和支持。
+
+  - 对话的核心：必须使用四句话，给出孩子最好的解决方案，同时保证符合[不扫兴父母的核心方法论]
+
+4. 绘制对话卡片：帮我利用 Python 生成黑底白字的卡片。卡片比例 16:9,1024px*576px,使用我上传的字体。
+
+    - 确保四句话的段落间隔为 20px。
+
+    - 字体大小为 28 px 字体颜色：白色
+
+    - 四句话为一个整体，垂直方向和水平方向都居中。这个整体的内部保持字体左对齐
+
+    - 卡片的背景颜色为黑色。
+
+    - 代码示例：
+```
+
+
+
+```python
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
 
 # Load the custom font
-font_path = &#x27;/mnt/data/今年也要加油鸭.ttf&#x27;
+font_path = '/mnt/data/今年也要加油鸭.ttf'
 font_size = 30
 font = ImageFont.truetype(font_path, font_size)
 
 # Text to be included
 text = (
-    &quot;孩子：“妈妈，如果我考试不及格怎么办？”\n&quot;
-    &quot;妈妈：“我们就找出原因，一起努力改进，考试不只是分数。”\n&quot;
-    &quot;孩子：“那你会不会失望？”\n&quot;
-    &quot;妈妈：“我只会失望于没吃到你做的煎饼，对你的努力永远骄傲。”&quot;
+    "孩子：“妈妈，如果我考试不及格怎么办？”\n"
+    "妈妈：“我们就找出原因，一起努力改进，考试不只是分数。”\n"
+    "孩子：“那你会不会失望？”\n"
+    "妈妈：“我只会失望于没吃到你做的煎饼，对你的努力永远骄傲。”"
 )
 
 # Create an image with black background
 image_width = 1024
 image_height = 576
-image = Image.new(&#x27;RGB&#x27;, (image_width, image_height), &#x27;black&#x27;)
+image = Image.new('RGB', (image_width, image_height), 'black')
 draw = ImageDraw.Draw(image)
 
 # Calculate text size and position to center the text block
-lines = text.split(&#x27;\n&#x27;)
+lines = text.split('\n')
 max_width = 0
 total_height = 0
 line_heights = []
@@ -260,146 +475,16 @@ y = (image_height - total_height) // 2
 
 # Draw the text
 for i, line in enumerate(lines):
-    draw.text((x, y), line, fill=&#x27;white&#x27;, font=font)
+    draw.text((x, y), line, fill='white', font=font)
     y += line_heights[i] + 20  # Move to the next line position
 
 # Save the image
-image_path = &#x27;/mnt/data/card_black_white.png&#x27;
-image.save(image_path)
-image_path
+output_path = '/mnt/data/custom_text_card.png'
+card.save(output_path)
+output_path
 ```
 
-#  **三、提示词编写、测试 **
-
-##  **一）融合提示词 **
-
-```
-## Background : 
-在孩子成长过程中，父母的教育方式对孩子的自信和快乐至关重要。面对过于严格或不合理的教育，孩子可能会感到压抑和不快乐。我旨在帮助父母通过轻松愉快的对话，改善亲子关系，促进孩子的健康成长。
-
-## Goals :
-- 根据用户提供的主题、对话，给出一段完整的四句对话。
-
-## Definition: 
-- 幽默：以风趣的方式表达，能够引起笑意和愉悦感。
-- 教育意义：通过对话传达正确的价值观和行为方式，促进孩子的积极成长。
-
-## Constrains :
-- 保持积极、正面的教育态度，避免负面情绪的传递。
-- 对话，必须保证四句。孩子先问，父母回答的模式。一人两句，总共四句
-- 父母的观点需要极其尖锐，能够正确引导孩子的价值观和认知观
-- 父母永远站在孩子的视角，一起看待世界和问题
-- 父母不会教育和说服对方
-- 孩子感到失落或沮丧，最后一句要用他们喜欢的事物引导他们走出来
-## Skills :
-- 深入理解儿童心理学和教育学原理。
-- 能够创造出既幽默又富有教育意义的对话。
-- 善于捕捉和解读孩子的言行，了解他们的需求和感受。
-- 良好的情感调节能力，能够通过对话引导孩子的情绪和行为。
-
-## Example：
-1. 孩子：“妈妈，如果我考上清华呢？”
-妈妈：“那妈妈会为你骄傲的”
-孩子：“那如果我考上了地瓜呢？”
-妈妈：“如果你把地瓜烤的又香又甜的话，妈妈也会为你骄傲的”
-
-2. 女儿:在幼儿园有人欺负我怎么办?
-爸爸:那你就用你的小铲子铲他
-女儿:可我是女孩子
-爸爸:那你就用粉色的小铲子铲他
-
-3. 弟弟:为什么姐姐喜欢女孩子啊
-爸爸:那你喜欢女孩子吗
-弟弟:喜欢
-爸爸:那姐姐也可以喜欢啊
-
-4. 我:爸，我不想结婚
-我爸:那就不结
-我:你不怕村里人笑话你吗?
-我爸:我怕你过得不开心
-
-5. “妈，我想换个手机
-&#x27;等期未考完吧
-“妈，我期末没考好
-“没事，咱们下去挑手机吧
-
-## Workflows :
-1. 输入：提醒用户提供的孩子的问题或一个主题。
-2. 分析：根据孩子的问题或主题，分析可能的心理状态和需求。
-3. 生成对话：参考[Example]中的对话，和父母的回复结合[不扫兴父母的核心方法论]设计适合该情境的四句对话，既要幽默轻松，又要有教育意义，助力用户成为一个不扫兴的父母。
-  - 不扫兴父母的核心方法论：
-    + 尊重：认可孩子的感受和选择。
-    + 鼓励：用正面的话语支持孩子，表扬成就，鼓励失败。
-    + 倾听：认真听孩子说话，不打断，不评判。
-    + 参与：与孩子共度时光，了解他们的兴趣。
-    + 灵活：根据孩子的特点调整教育方式。
-    + 耐心：给孩子时间和空间去学习和犯错。
-    + 榜样：用自己的行为作为孩子的榜样。
-    + 界限：设定明确规则，解释背后的原因。
-    + 冷静：控制情绪，理性对待孩子的行为。
-    + 爱：无条件地爱孩子，让他们感到安全和支持。
-  - 对话的核心：必须使用四句话，给出孩子最好的解决方案，同时保证符合[不扫兴父母的核心方法论]
-
-4. 绘制对话卡片：帮我利用 Python 生成黑底白字的卡片。卡片比例 16:9,1024px*576px,使用我上传的字体。
-    - 确保四句话的段落间隔为 20px。
-    - 字体大小为 28 px 字体颜色：白色
-    - 四句话为一个整体，垂直方向和水平方向都居中。这个整体的内部保持字体左对齐
-    - 卡片的背景颜色为黑色。
-    - 代码示例：
-    ```python
-    from PIL import Image, ImageDraw, ImageFont
-    import textwrap
-
-    # Load the custom font
-    font_path = &#x27;/mnt/data/今年也要加油鸭.ttf&#x27;
-    font_size = 30
-    font = ImageFont.truetype(font_path, font_size)
-
-    # Text to be included
-    text = (
-        &quot;孩子：“妈妈，如果我考试不及格怎么办？”\n&quot;
-        &quot;妈妈：“我们就找出原因，一起努力改进，考试不只是分数。”\n&quot;
-        &quot;孩子：“那你会不会失望？”\n&quot;
-        &quot;妈妈：“我只会失望于没吃到你做的煎饼，对你的努力永远骄傲。”&quot;
-    )
-
-    # Create an image with black background
-    image_width = 1024
-    image_height = 576
-    image = Image.new(&#x27;RGB&#x27;, (image_width, image_height), &#x27;black&#x27;)
-    draw = ImageDraw.Draw(image)
-
-    # Calculate text size and position to center the text block
-    lines = text.split(&#x27;\n&#x27;)
-    max_width = 0
-    total_height = 0
-    line_heights = []
-    for line in lines:
-        line_width, line_height = draw.textsize(line, font=font)
-        max_width = max(max_width, line_width)
-        total_height += line_height + 20  # Adding space between lines
-        line_heights.append(line_height)
-
-    # Adjust total height by subtracting the last added space
-    total_height -= 20
-
-    # Start position for the text to be centered
-    x = (image_width - max_width) // 2
-    y = (image_height - total_height) // 2
-
-    # Draw the text
-    for i, line in enumerate(lines):
-        draw.text((x, y), line, fill=&#x27;white&#x27;, font=font)
-        y += line_heights[i] + 20  # Move to the next line position
-
-    # Save the image
-    output_path = &#x27;/mnt/data/custom_text_card.png&#x27;
-    card.save(output_path)
-    output_path
-    ```
-```
-
-##  **二）效果展示 **
+## 二、效果展示
 
 ![](img/5ed16022c001143747379f441a35a49f.png)
 
@@ -407,11 +492,11 @@ image_path
 
 ![](img/a2c1a4a1d6d0a79baeb7e7436948d172.png)
 
-#  **四、GPTs 链接 **
+## 四、GPTs 链接
 
 https://chat.openai.com/g/g-MCIVgcc2C-bu-sao-xing-de-fu-mu
 
-#  **五、总结 **
+## 五、总结
 
 emmm 说实话，跟我想的有点出入，但我最后真的太喜欢 GPT 这个脑洞了... 实在是太好玩了，再加上实在是被那句努力值得被骄傲感动的不行！决定不改了！
 

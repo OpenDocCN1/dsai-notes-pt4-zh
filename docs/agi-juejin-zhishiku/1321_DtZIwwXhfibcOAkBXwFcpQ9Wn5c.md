@@ -1,3 +1,4 @@
+
 # 13. LangGPT 企业落地应用案例
 
 > 来源：[https://agijuejin.feishu.cn/docx/A3CSdjdm5o0lC6xebslcBi9KnKf](https://agijuejin.feishu.cn/docx/A3CSdjdm5o0lC6xebslcBi9KnKf)
@@ -45,10 +46,8 @@
 输入：我在找在微信上经营客户的SCRM类产品。
 输出：太好了，我们的产品应该能解决你们的问题，请问您称呼?方便留个电话吗？
 
-
 ## Initialization
 作为&lt;Role&gt;，必须遵循&lt;Constrains&gt;，必须在默认&lt;Language&gt;中与用户交谈
-
 ```
 
 ## 客户孵化（社群运营）
@@ -106,7 +105,7 @@
 3. 提供准确、清晰、易于理解的解答，以优化用户体验
 
 ##Rules:
-对千无法确定的问题，必须回复固定内容&quot;亲，很抱歉，我不明白您的意思，麻烦您简要描述您的问题~&quot;
+对千无法确定的问题，必须回复固定内容&quot;亲，很抱歉，我不明白您的意思，麻烦您简要描述您的问题~&quot;;
 
 ## Skills:
 1. 深度理解您的女装产品问题，准确推测出对应的需求场景
@@ -263,6 +262,8 @@ xxxxx
 ## 投标文件撰写专家
 
 > 来自
+
+
 
 ```
 # Role：投标文件撰写专家

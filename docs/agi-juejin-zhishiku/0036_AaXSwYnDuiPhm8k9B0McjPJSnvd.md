@@ -1,3 +1,4 @@
+
 # 大模型的幻觉现象介绍
 
 > 来源：[https://agijuejin.feishu.cn/docx/Qy9hdZAPRoW3HAxjCYmcrOLcnaf](https://agijuejin.feishu.cn/docx/Qy9hdZAPRoW3HAxjCYmcrOLcnaf)
@@ -6,25 +7,25 @@
 
 > 转载请联系原作者取得授权
 
-> 原创作 者 ： 孙孟周
+> 原创作者：孙孟周
 
 > 转载须标注出处：哈工大SCIR
 
-# **引言**
+# 引言
 
 随着市面上各种大模型的出现，研究者们发现大模型会“产生与某些来源无关的荒谬或不真实的内容”的倾向，大模型的开发者们将这一现象叫做幻觉（Hallucination）。由于幻觉现象的存在，目前的大模型依旧无法在医疗和法律等需要高度严谨回答的领域广泛应用，为了减轻大模型产生的幻觉现象，研究者们采用了包括事实检测，in-context learning，知识微调 [15] 等多种手段，已上线的gpt-4等大模型更是在幻觉高发段训练模型拒绝回答幻觉高发的问题。
 
 然而，有些研究者对大模型的幻觉现象持不同看法。他们认为，幻觉现象不仅是一个问题，也可以视为一种潜在的能力。这种能力可以帮助大模型生成一些出人意料的有趣答案，比如用于数据集的扩展生成或进行创新性的问题回答。从这个角度来看，研究和利用幻觉现象可能会对模型的训练研究产生积极影响。无论是作为一种能力，还是一种挑战，大模型的幻觉现象都是我们在提升模型能力和应用实践中必须面对的问题。
 
-## ** 幻觉现象的定义、产生与危害**
+## 幻觉现象的定义、产生与危害
 
 在NLP之外的一般背景下，幻觉是一种特定类型的感知，在心理学中，幻觉被定义为"一个清醒的个体在没有来自外部世界适当刺激的情况下所体验的感知"。简单来说，幻觉是一种感觉真实的虚假感知。"文本生成任务中，有时会生成不忠实或无意义的文本"这种不良现象与心理学上的这种幻觉具有相似的特征。虽然幻觉文本不忠实并且无意义，但是由于大模型强大的上下文生成能力，这些文本的可读性往往非常高，让读者以为它们是基于提供的上下文，尽管实际上很难找到或验证这种上下文真实存在。这种现象与难以与其他“真实”感知区分的心理幻觉类似，一眼看上去也很难捕捉到幻觉文本。
 
-在NLP的背景下，以上对幻觉的定义，即生成的内容是无意义的或对提供的源内容不忠实，显得并不够具体。然而在不同的NLP任务中，幻觉都有着不同的表现形式，本文主要介绍大模型在生成式问答任务上（Generative question answering ，GQA）的具体表现形式。GQA旨在生成一个概括性的答案，而不是从提供的段落中提取一个给定问题的答案。GQA任务是大模型目前主要的任务，因为大模型目前上线后的主要形式就是处理用户提出的许多问题，并且这些问题往往都需要深入的解释，因此这类问题的答案通常非常长，如果模型直接从给出的文本中摘抄答案，回答的整体可读性与应用性会变得很弱。一个GQA系统可以与搜索引擎集成，以实现更智能的搜索，或者与虚拟对话代理结合，以提高用户体验。
+在NLP的背景下，以上对幻觉的定义，即生成的内容是无意义的或对提供的源内容不忠实，显得并不够具体。然而在不同的NLP任务中，幻觉都有着不同的表现形式，本文主要介绍大模型在生成式问答任务上（Generative question answering，GQA）的具体表现形式。GQA旨在生成一个概括性的答案，而不是从提供的段落中提取一个给定问题的答案。GQA任务是大模型目前主要的任务，因为大模型目前上线后的主要形式就是处理用户提出的许多问题，并且这些问题往往都需要深入的解释，因此这类问题的答案通常非常长，如果模型直接从给出的文本中摘抄答案，回答的整体可读性与应用性会变得很弱。一个GQA系统可以与搜索引擎集成，以实现更智能的搜索，或者与虚拟对话代理结合，以提高用户体验。
 
 大模型幻觉的产生原理目前并没有数学逻辑上的证明，目前较为令人信服的产生猜测是大模型在搜索过程中并没有良好地融合获得的证据。一个GQA系统会首先进行问题相关信息的搜索，把这些搜索到的信息称为“证据”，然后模型再基于检索到的信息生成答案。但是在大多数情况下，检索到的证据来源往往不唯一，用于答案生成的答案经常有多个来源。这些文档可能包含冗余的、互补的或者相互矛盾的信息。因此，模型生成答案时会对多个并不兼容的证据产生疑惑，为保证回答的全面，模型融合证据时会把不同答案的段落进行拼接，以至于生成的答案产生幻觉。
 
-如**图1所示，在[5]中北卡罗纳大学和Alexa AI的研究中发现**，大模型在多轮对话中会产生图1所示的三种幻觉类型： 无法进行验证的虚拟事实回应，与输入知识不相符的事实不一致回应，以及对于输入中不存在的问题的虚构回应。 这种标签与以前的工作不同，因为在处理开放领域对话中，不是所有回应都需要评估事实正确性，其中创意生成等需要模型创作新文本的任务经常不存在事实是否正确，因此该团队设置了如图1的实验，来验证模型是否会生成幻觉，在图中的例子可以看出，模型把两个不同人的经历和属性混淆了，这也反映了前面对幻觉产生原因的印证，即模型幻觉的产生往往是因为证据过多，无法有效融合。
+如图1所示，在[5]中北卡罗纳大学和Alexa AI的研究中发现，大模型在多轮对话中会产生图1所示的三种幻觉类型：无法进行验证的虚拟事实回应，与输入知识不相符的事实不一致回应，以及对于输入中不存在的问题的虚构回应。这种标签与以前的工作不同，因为在处理开放领域对话中，不是所有回应都需要评估事实正确性，其中创意生成等需要模型创作新文本的任务经常不存在事实是否正确，因此该团队设置了如图1的实验，来验证模型是否会生成幻觉，在图中的例子可以看出，模型把两个不同人的经历和属性混淆了，这也反映了前面对幻觉产生原因的印证，即模型幻觉的产生往往是因为证据过多，无法有效融合。
 
 ![](img/e6b95deabfed9874d469c3c899ad2add.png)
 
@@ -38,9 +39,9 @@
 
 ![](img/462344cf52f3ded5220da65f53b6f017.png)
 
-表1 不同任务 中产生的一些幻觉错误
+表1 不同任务中产生的一些幻觉错误
 
-## ** 模型幻觉的检测方法**
+## 模型幻觉的检测方法
 
 目前，并没有一套针对GQA大模型幻觉的自动度量标准。虽然大部分关于GQA任务的研究使用如ROUGE得分和F1等自动评价指标来衡量答案的质量，但这些基于N-gram重叠的指标并不能有效地评价幻觉，因为这些标准实际与人类判断的相关性较差，Krishna等人在[8]中指出了这点。另一方面，几乎所有的GQA相关研究都加入了一个由专家组进行评价的环节作为幻觉评价方法的主体。通常，专家组会被要求给出一个评价答案忠实度的得分，这也是目前对幻觉的一种最普遍而有效的检测方法。然而，通过人类评价得到的数据集目前来看样本过少，这项费时费力的工作所产出的评测数据通常在发表后都会被回馈给大模型以获得更高的分数，这样就会令人力构建的测试数据越来越少，无法跟上目前大模型的发展速度。
 
@@ -48,7 +49,7 @@
 
 本节将介绍四种不同的幻觉检测的途径，通过这些方法，大模型可以得到有效的回馈手段，这样模型在生成回复内容时，也可以有效地减少生成的幻觉。
 
-### ** 基于语义相似度 **
+### 基于语义相似度
 
 首先介绍最常用也是最方便的基于语义相似度的方法，这类方法的关键是在微调评分数据之前“预热”BERT的预训练技术，利用大量的预料库训练BERT，让BERT模型学习到较好的分词能力，之后通过不同的分数方法来评价模型输出与金标准之间的差距，目前这类方法的驯良方式以及评分方法多种多样，表2中列举了多种常用的与训练方法与损失函数，利用这些评价方法可以初步的观察模型的输出是否包含了真实答案中所需要的信息。
 
@@ -66,7 +67,7 @@
 
 图2 不同预训练模型的绝对肯德尔相关系数
 
-### ** 基于知识三元组匹配 **
+### 基于知识三元组匹配
 
 第二种验证其事实性的方式主要应用于文献，报告等规范领域当中，比如在临床医学中，由于技术报告较为复杂并且行文逻辑较为规范，减轻临床医生的负担并提高他们的效率具有重要的应用价值。[2]中提出了在自动生成放射科报告摘要中，维持生成的摘要与实际放射学发现之间的事实正确性至关重要。在应用中，生成的影象印象中的任何错误或不准确都可能对患者的诊断和治疗产生重大影响。迄今为止，对于科学医学等领域，已经有少数研究聚焦于用强化学习（RL）优化生成摘要的事实正确性。如前文中的衡量标准，医学领域也有如CheXBert 的度量标准，用来评估生成摘要中临床信息的事实正确性，并使用基于强化学习的方法，根据这个度量标准来优化事实正确性的目标。在此之上也有人进行优化，提出的新标准使用了放射科报告中更广泛的临床信息，比基于ChexBERT的评分更符合放射科医生的需求。
 
@@ -80,7 +81,7 @@
 
 表3 FactRanker在各个数据集上的表现
 
-### ** 基于抽取证据的相似度计算 **
+### 基于抽取证据的相似度计算
 
 ![](img/488f54d4bca5a90deac6c429efa75ba5.png)
 
@@ -94,7 +95,7 @@ scifact同样作为一个开放的数据集任务寻求着各个研究团队的�
 
 表4 scifact数据集任务排行
 
-### ** 基于QA转化的事实验证方法 **
+### 基于QA转化的事实验证方法
 
 事实一致性的评价方法，其本质是衡量生成答案给出的源文档的忠实度，可以作为另一种衡量GQA中幻觉的方式。Wang等人[11]提出了一个自动QA基础指标来衡量摘要中的忠实度，利用了阅读理解的SOTA模型把原本的匹配任务转化为阅读理解任务。他们首先使用问题生成模型从摘要中构造问题-答案对，然后使用QA模型从给定的源文档中提取问题的短答案范围。那些不匹配提供的答案的提取答案表明摘要中的信息不忠实。这一方法在[12]中得到了一定的修正与优化，通过抽取声明（claim）中的关键信息创建问题，再根据原文和问题进行回答，最后指出实际答案与阅读理解模型给出答案之间的相似度，将事实的一致性间接通过多个问题答案的一致性进行表示，虽然这些指标最初是在摘要生成或者事实验证的任务中提出的，但它们可以很容易地应用在GQA任务中，以大模型是否在回答时产生了幻觉。
 
@@ -108,23 +109,27 @@ scifact同样作为一个开放的数据集任务寻求着各个研究团队的�
 
 表5 LoREN模型在FEVER数据集上效果比较
 
-## ** 结语**
+## 结语
 
 本文简要介绍了大模型产生幻觉的成因危害，与一些目前可能有效的检测与减少措施。大模型的幻觉本身也是一种模型所造的‘谣言’，因此目前的事实验证模型只要加以改造，会很有效的对目前已有的大模型输出进行筛查与规范，但是目前对大模型幻觉的研究仍处在猜测和验证的阶段，并没有人能够把模型产生幻觉的具体成因与过程通过数学的方式呈现出来，随着模型体量的迅猛发展，这种从原理上解读模型行为的方式会更加地困难，因此如何利用现有的模型与方法，去让大模型尽量减少模型所犯的错误，依旧会是该研究方向的主旋律。
 
-## ** 参考文献**
+## 参考文献
 
 [1] Kaplan J, McCandlish S, Henighan T, et al. Scaling laws for neural language models[J]. arXiv preprint arXiv:2001.08361, 2020.
 
 [2]Xie Q, Hu J, Zhou J, et al. Factreranker: Fact-guided reranker for faithful radiology report summarization[J]. arXiv preprint arXiv:2303.08335, 2023.
 
-[3]Esin Durmus, He He, and Mona Diab. 2020. FEQA: A Question Answering Evaluation Framework for Faithfulness Assessment in Abstractive Summarization. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. 5055–5070.
+
+
+# 参考文献
+
+[3] Esin Durmus, He He, and Mona Diab. 2020. FEQA: A Question Answering Evaluation Framework for Faithfulness Assessment in Abstractive Summarization. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. 5055–5070.
 
 [4] Shuster K, Poff S, Chen M, et al. Retrieval augmentation reduces hallucination in conversation[J]. arXiv preprint arXiv:2104.07567, 2021.
 
 [5] Santhanam S, Hedayatnia B, Gella S, et al. Rome was built in 1776: A case study on factual correctness in knowledge-grounded response generation[J]. arXiv preprint arXiv:2110.05456, 2021.
 
-[6]Ji Z, Lee N, Frieske R, et al. Survey of hallucination in natural language generation[J]. ACM Computing Surveys, 2023, 55(12): 1-38.
+[6] Ji Z, Lee N, Frieske R, et al. Survey of hallucination in natural language generation[J]. ACM Computing Surveys, 2023, 55(12): 1-38.
 
 [7] Angela Fan, Yacine Jernite, Ethan Perez, David Grangier, Jason Weston, and Michael Auli. 2019. ELI5: Long Form Question Answering. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 3558–3567
 
@@ -136,13 +141,15 @@ scifact同样作为一个开放的数据集任务寻求着各个研究团队的�
 
 [11] Alex Wang, Kyunghyun Cho, and Mike Lewis. 2020. Asking and Answering Questions to Evaluate the Factual Consistency of Summaries. Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (2020).
 
-[12]LOREN: Logic-Regularized Reasoning for Interpretable Fact Verification
+[12] LOREN: Logic-Regularized Reasoning for Interpretable Fact Verification
 
-[13]Thibault Sellam, Dipanjan Das, and Ankur Parikh. 2020. BLEURT: Learning Robust Metrics for Text Generation. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. 7881–7892.
+[13] Thibault Sellam, Dipanjan Das, and Ankur Parikh. 2020. BLEURT: Learning Robust Metrics for Text Generation. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. 7881–7892.
 
-[14]Wadden D, Lin S, Lo K, et al. Fact or fiction: Verifying scientific claims[J]. arXiv preprint arXiv:2004.14974, 2020.
+[14] Wadden D, Lin S, Lo K, et al. Fact or fiction: Verifying scientific claims[J]. arXiv preprint arXiv:2004.14974, 2020.
 
-[15]H Wang, S Zhao, Z Qiang, Z Li, N Xi, Y Du, MZ Cai, et a;.Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese arXiv preprint arXiv:2309.04175, 2023
+[15] H Wang, S Zhao, Z Qiang, Z Li, N Xi, Y Du, MZ Cai, et a;. Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese arXiv preprint arXiv:2309.04175, 2023
+
+## 编辑信息
 
 本期责任编辑：赵森栋
 

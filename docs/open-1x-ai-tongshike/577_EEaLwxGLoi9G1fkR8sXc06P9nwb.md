@@ -1,3 +1,4 @@
+
 # 最佳实践：《逆转时光》制作流程
 
 > 来源：[https://datawhaler.feishu.cn/docx/GvsZdbiiso0eh5xtYEAcfdybn9e](https://datawhaler.feishu.cn/docx/GvsZdbiiso0eh5xtYEAcfdybn9e)
@@ -22,7 +23,7 @@
 
 ### 2.1 剧本撰写
 
-prompt提示词如下
+`prompt`提示词如下
 
 > 你是一个充满想象力的故事作家，请根据以下要求创作一个短篇故事：
 
@@ -42,7 +43,7 @@ prompt提示词如下
 
 > 写作风格： 悬疑，引人入胜
 
-+   智谱清言的智能体写作工具：https://chatglm.cn/main/gdetail/65b018897129ab149b88041b
+智谱清言的智能体写作工具：https://chatglm.cn/main/gdetail/65b018897129ab149b88041b
 
 ![](img/da1bbf980cdb90b6da58166f9fea7aa3.png)
 
@@ -54,7 +55,7 @@ prompt提示词如下
 
 > 故事正文：
 
-> 这一切始于一个普通的周五晚上。我，杰克·摩根，一个平凡的软件工程师，正准备享受一个宁静的周末。然而，当我打开那扇古老的木门，踏入家中的地下室时，一切都改变了。
+> 一切始于一个普通的周五晚上。我，杰克·摩根，一个平凡的软件工程师，正准备享受一个宁静的周末。然而，当我打开那扇古老的木门，踏入家中的地下室时，一切都改变了。
 
 > 地下室里有一台古老的钟表，它是我祖父的遗物。我从未想过，这件看似普通的家传古董，竟会是一台时间机器。当我的手指无意中触碰到它的一个隐藏机关时，一道耀眼的光芒闪过，我感到一股强大的力量将我包围。
 
@@ -280,11 +281,13 @@ GPT4输出：
 
 1.  **Scene Four: Transported **to the Ancient World
 
+
+
 +   As the light fades, Jack finds himself standing on an ancient street, surrounded by old buildings, with people wearing ancient clothing.
 
 ![](img/48b81878a9344c2f4dacfa9c3d01bb09.png)
 
-1.  **Scene Five: Witnessing the** Tyrant's Atrocities
+1.  **Scene Five: Witnessing the Tyrant's Atrocities**
 
 +   Jack hides among the crowd, witnessing the tyrant, known as the "Iron-blooded Monarch," committing atrocities on a platform, with the people showing fear on their faces.
 
@@ -296,7 +299,7 @@ GPT4输出：
 
 ![](img/9029cb40c86642a841108baa798d2c0e.png)
 
-1.  **Scene Seven: Actio**n at the Celebration
+1.  **Scene Seven: Action at the Celebration**
 
 +   Against the backdrop of a grand celebration, the Iron-blooded Monarch stands in the center of the crowd wearing the Time Stone. Jack quietly approaches.
 
@@ -308,13 +311,13 @@ GPT4输出：
 
 ![](img/caaa51c5e9325e8bddbae454262e1f8b.png)
 
-1.  **Scene Nine: Escaping Ba**ck to the Modern Day
+1.  **Scene Nine: Escaping Back to the Modern Day**
 
 +   With the Time Stone destroyed, Jack is pulled back by a force, returning to the modern-day basement.
 
 ![](img/71aedf733e97ae8af90c65ac4655362c.png)
 
-1.  **Scene Ten: Discover**ing the Changed Home
+1.  **Scene Ten: Discovering the Changed Home**
 
 +   Jack finds that his home and basement have become even older, with walls hung with various strange clocks.
 
@@ -326,13 +329,13 @@ GPT4输出：
 
 ![](img/6e668f34f484b8534de385827c1968ba.png)
 
-1.  **Scene Twelve: Reco**rding the Experience
+1.  **Scene Twelve: Recording the Experience**
 
 +   Back in the modern day, Jack sits at his desk, beginning to write down his experiences, his face showing contemplation and satisfaction.
 
 ![](img/e103397daae43153afdc6440af2192c7.png)
 
-1.  **Scene Thirteen: The Left-**behind Ancient Clock
+1.  **Scene Thirteen: The Left-behind Ancient Clock**
 
 +   The final shot shows Jack looking at the ancient clock, as the camera slowly zooms in on the clock, the ticking sound gradually intensifies.
 
@@ -340,9 +343,9 @@ GPT4输出：
 
 ![](img/070d1bc7d990494e1cc91f3a5b7119e7.png)
 
-## 4. 制作过程
+# 4. 制作过程
 
-### 4.1 AI生成内容
+## 4.1 AI生成内容
 
 https://www.wujieai.com/plaza/1475864
 
@@ -356,7 +359,7 @@ https://www.wujieai.com/plaza/1475864
 
 [逆转时光1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GGKRbtjslo3evvxRoyrcWWJEnEc)
 
-1.  **Scene Two: Discoveri**ng the Ancient Clock
+1.  **Scene Two: Discovering the Ancient Clock**
 
 ![](img/fec87cca1e322e9dd4d41fd1c5a0fdaa.png)
 
@@ -376,13 +379,13 @@ https://www.wujieai.com/plaza/1475864
 
 [逆转时光3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V0Trb0sqXozTavxHiF6cwexxndg)
 
-1.  **Scene Four: Transported **to the Ancient World
+1.  **Scene Four: Transported to the Ancient World**
 
 ![](img/f3605a28de7bddcba685c95f3a608b09.png)
 
 [逆转时光4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Lu8AbA1nvol0ExxS1TYcnDeJnUg)
 
-1.  **Scene Five: Witnessing the** Tyrant's Atrocities
+1.  **Scene Five: Witnessing the Tyrant's Atrocities**
 
 ![](img/7282eb68d4afeaeb4792811ca5830fda.png)
 
@@ -394,7 +397,7 @@ https://www.wujieai.com/plaza/1475864
 
 [逆转时光6.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OcgfbkWr1o3z3Qxq6oYc6tfqnRd)
 
-1.  **Scene Seven: Actio**n at the Celebration
+1.  **Scene Seven: Action at the Celebration**
 
 ![](img/a9ed1d2d74607daa76ae56c626aeb3e7.png)
 
@@ -406,13 +409,13 @@ https://www.wujieai.com/plaza/1475864
 
 [逆转时光8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MQmfb8wlmoSVUxxzoJicM7VQn3f)
 
-1.  **Scene Nine: Escaping Ba**ck to the Modern Day
+1.  **Scene Nine: Escaping Back to the Modern Day**
 
 ![](img/392f0d6b9cda8df70faf67c01789e3ee.png)
 
 [逆转时光9.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ONE8btvvfoBusmxnRA0cvjRhnqd)
 
-1.  **Scene Ten: Discover**ing the Changed Home
+1.  **Scene Ten: Discovering the Changed Home**
 
 ![](img/3a011be56bfe0d1dc40f71e4a0e1bcca.png)
 
@@ -424,13 +427,13 @@ https://www.wujieai.com/plaza/1475864
 
 [逆转时光11.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VNrqbZ4jsoiYKmx4zLIczO1MnPe)
 
-1.  **Scene Twelve: Reco**rding the Experience
+1.  **Scene Twelve: Recording the Experience**
 
 ![](img/4b077917c2f7dbd657f4c678ffe49d01.png)
 
 [逆转时光12.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zkm6bXYsco10o7xkOSDcxGWgnkd)
 
-1.  **Scene Thirteen: The Left-**behind Ancient Clock
+1.  **Scene Thirteen: The Left-behind Ancient Clock**
 
 ![](img/3930532962b23c3ff54404e053f9f4dc.png)
 
@@ -440,13 +443,13 @@ https://www.wujieai.com/plaza/1475864
 
 [逆转时光13-2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WOBxb034xoq3oGxRhPhcg5m6nqb)
 
-### 4.2 音频制作
+## 4.2 音频制作
 
 +   **AI配音**：使用AI配音工具为角色生成配音。
 
 +   **音乐与音效**：选择或使用AI工具创作背景音乐和音效。
 
-### 4.3 视频编辑
+## 4.3 视频编辑
 
 +   **AI剪辑工具**：剪映：https://www.capcut.cn/
 
@@ -550,7 +553,7 @@ https://www.wujieai.com/plaza/1475864
 
 ![](img/1d45fa9300cccc43cdace97e436557ae.png)
 
-## 5. 最终成品
+# 5. 最终成品
 
 <https://www.xiaohongshu.com/explore/65e6aac90000000004001a77>
 
@@ -566,6 +569,6 @@ https://www.wujieai.com/plaza/1475864
 
 1.  电子榨菜：网络小说，动漫，短期，个人
 
-1.  经典流传，承载着文化内核的东西**，**人内心的一种归属感。
+1.  经典流传，承载着文化内核的东西，人内心的一种归属感。
 
 <https://m.weibo.cn/status/O3BIrosMH>

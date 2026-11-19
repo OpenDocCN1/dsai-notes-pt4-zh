@@ -1,3 +1,4 @@
+
 # 省了几千块! Stable Diffusion“网页版”上线，超详细教程
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/X467d7PMpooD2SxGlXPcJvrvn3d](https://diwfpqo78m.feishu.cn/docx/X467d7PMpooD2SxGlXPcJvrvn3d)
@@ -22,9 +23,9 @@
 
 顺藤摸瓜，我发现国内已经有一家公司上线了一个SD界的神器
 
-Stable Diffusion网页版
+## Stable Diffusion网页版
 
-[h](https://www.lanrui-ai.com/register?invitation_code=0951224320)ttps://www.lanrui-ai.com/register?invitation_code=0951224320
+[https://www.lanrui-ai.com/register?invitation_code=0951224320](https://www.lanrui-ai.com/register?invitation_code=0951224320)
 
 ![](img/5db742536f211c04165772262f80543d.png)
 
@@ -46,7 +47,7 @@ Stable Diffusion的前景实际上比Midjourney更广阔，比如国内上个月
 
 我估计等门槛再降低一点，Stable Diffusion在国内也将迎来爆发期。
 
-下面是Stable Diffusion的“网页版”超详细教程！
+## Stable Diffusion“网页版”超详细教程
 
 为了方便大家理解，你可以把它当成一个AI绘画游戏。
 
@@ -54,57 +55,59 @@ Stable Diffusion的前景实际上比Midjourney更广阔，比如国内上个月
 
 最酷的是，你可以将这个链接发送给你的朋友或同事（他们也可以使用这个绘画工具），当然，使用它会扣除你的余额。
 
+### 1、打开网站并安装Stable Diffusion
+
 打开网站并安装Stable Diffusion。
 
-2、创建工作空间
+### 2、创建工作空间
 
-点击右上角的[进控制台]。
+点击右上角的“进控制台”。
 
 ![](img/2b3cb2159a513f4ed3222c65277c4646.png)
 
-接着你需要选择显卡，比如我选择的是这个[3090-24G]
+接着你需要选择显卡，比如我选择的是这个3090-24G。
 
 目前价格还可以，1.9/小时，比买一张显卡便宜。
 
-启动速度就俩字一一牛逼
+启动速度就俩字——牛逼
 
 ![](img/d526a2697751119aea85433ab5f26b4d.png)
 
-名称:自己起一个就好了，一般就用默认的
+名称：自己起一个就好了，一般就用默认的。
 
-运行环境镜像: 公有镜像/others/sd-webui/v4.27
+运行环境镜像：`公有镜像/others/sd-webui/v4.27`
 
-网盘: 挂载
+网盘：挂载
 
-数据盘会计费，看自己需要选择用不用.
+数据盘会计费，看自己需要选择用不用。
 
-数据集: sd-base
+数据集：`sd-base`
 
-启动以后大概要等[3-5分钟]，你就可以进入VsCode界面
+启动以后大概要等3-5分钟，你就可以进入VsCode界面。
 
-3、VsCode界面
+### 3、VsCode界面
 
-确认是[运行中]的状态，点击[进入]，选择[VS Code]
+确认是“运行中”的状态，点击“进入”，选择“VS Code”。
 
 ![](img/f0a21b3a0066e1d33b45930466ec6505.png)
 
-选择 Terminal -New Terminal
+选择 Terminal -> New Terminal。
 
 ![](img/12d5ebcf030087a5b1a92d54cf40c5ef.png)
 
 然后输入这两行命令，这一步之前有很多人说出错，其实很简单。
 
-先输入 cd /app
+先输入`cd /app`。
 
-然后按回车键，等第二行出现了user@lsp-ws:/app$
+然后按回车键，等第二行出现了`user@lsp-ws:/app$`。
 
-再输入 bash start.sh
+再输入`bash start.sh`。
 
-再按回车键
+再按回车键。
 
 ![](img/94214a58454d6213c2395e010bf48dcb.png)
 
-等到一连串的代码出现running on local url，就说明成功了
+等到一连串的代码出现`running on local url`，就说明成功了。
 
 ![](img/a7e33fe19e446f77446c691dce6caae9.png)
 
@@ -116,30 +119,30 @@ Stable Diffusion的前景实际上比Midjourney更广阔，比如国内上个月
 
 ![](img/0285805e025ff730fa173865a863439f.png)
 
-Stable Diffusion"网页版”画图测试
+## Stable Diffusion“网页版”画图测试
 
-接下来我们要先测试一下我们的Stable Diffusion有没有启动成功?
+接下来我们要先测试一下我们的Stable Diffusion有没有启动成功。
 
-(1) 先切换一下主模型
+### (1) 先切换一下主模型
 
-这个里面已经有一些自带的了，比如 (chilloutmix NiPrunedFp16Fix]
+这个里面已经有一些自带的了，比如`chilloutmix NiPrunedFp16Fix`。
 
 ![](img/5e80da4529e23ee09b6531468b941c0d.png)
 
-(2) 接着输入这两行prompt
+### (2) 接着输入这两行prompt
 
-正面提示词: (masterpiece:1.1), (best quality:1.1), highly detailed, {highres), fan extremelydelicate and beautiful, (ultra detailed), (disheveled hair), (illustration), (dynamic angle), (1girl),colored hair:1.5)), (Fashionable clothing), standing,Fashion model, looking at viewer, (interview)simple background), beautiful detailed eyes, delicate beautiful face, Floating, (high saturation).(colorful splashes), (colorful bubble), (shining),(beautiful detailed Light and shadow)
+正面提示词：(masterpiece:1.1), (best quality:1.1), highly detailed, {highres), fan extremelydelicate and beautiful, (ultra detailed), (disheveled hair), (illustration), (dynamic angle), (1girl),colored hair:1.5)), (Fashionable clothing), standing,Fashion model, looking at viewer, (interview)simple background), beautiful detailed eyes, delicate beautiful face, Floating, (high saturation).(colorful splashes), (colorful bubble), (shining),(beautiful detailed Light and shadow)
 
-负面提示词: easynegative, paintings, sketches,(worst quality:2), (low quality:2), (normaquality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skinblemishes, age spot, glansextra fingers,fewer fingers,strange fingers,bad hand
+负面提示词：easynegative, paintings, sketches,(worst quality:2), (low quality:2), (normaquality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skinblemishes, age spot, glansextra fingers,fewer fingers,strange fingers,bad hand
 
-(3) 设置一下其他参数
+### (3) 设置一下其他参数
 
 ![](img/2b8df69592235b55e7fae29433ca4a23.png)
 
-(4) lora模型选择，韩国娃娃
+### (4) lora模型选择，韩国娃娃
 
-点击右上方的[Generate] 按钮，启动成功
+点击右上方的`Generate`按钮，启动成功。
 
-1分钟左右，出图的速度快到飞起
+1分钟左右，出图的速度快到飞起。
 
 ![](img/7c9cdbd16ff2c3b6343958fe788bde0f.png)

@@ -1,3 +1,4 @@
+
 # 2024年企业AI应用趋势洞察报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/VLDPdaz5ToGITPxbbMLcg0JRnjg](https://agijuejin.feishu.cn/docx/VLDPdaz5ToGITPxbbMLcg0JRnjg)

@@ -1,3 +1,4 @@
+
 # 深度学习八大神经网络
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/FcsudPRL8oA3KOxC9ZWcyj1rnbg](https://qqs7y1hozd1.feishu.cn/docx/FcsudPRL8oA3KOxC9ZWcyj1rnbg)
@@ -23,7 +24,6 @@
 [卷积神经网络从原理到应用](https://qqs7y1hozd1.feishu.cn/wiki/YXa1wkVmrilMQrkTZRdceYuVnwf)
 
 [逐层分解transformer模型](https://qqs7y1hozd1.feishu.cn/wiki/HTakwDdwOiMwQPkeazCceNuunJb)
-
 
 [卷积神经网络从原理到应用 (1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BUutboZBnopO6CxqbkEc8ScbnAh)
 
@@ -81,8 +81,8 @@
 
 [深度学习技术板块面试题](https://qqs7y1hozd1.feishu.cn/wiki/GWyCwAlnKizNM3kxEyJc68I5nvg)
 
-[深度学习核心要点-数据增强 ](https://qqs7y1hozd1.feishu.cn/wiki/L9wKwzZ8ciw3b0k4eEUcYAgznjg)
+[深度学习核心要点-数据增强](https://qqs7y1hozd1.feishu.cn/wiki/L9wKwzZ8ciw3b0k4eEUcYAgznjg)
 
-[深度学习核心要点-数据标准化 ](https://qqs7y1hozd1.feishu.cn/wiki/HKMHwWzk1id9dvkokVlc6MYrnlc)
+[深度学习核心要点-数据标准化](https://qqs7y1hozd1.feishu.cn/wiki/HKMHwWzk1id9dvkokVlc6MYrnlc)
 
-[深度学习面试常见问题 ](https://qqs7y1hozd1.feishu.cn/wiki/D7PfwKKwoiaa3pkfB6xcMIMvnxd)
+[深度学习面试常见问题](https://qqs7y1hozd1.feishu.cn/wiki/D7PfwKKwoiaa3pkfB6xcMIMvnxd)

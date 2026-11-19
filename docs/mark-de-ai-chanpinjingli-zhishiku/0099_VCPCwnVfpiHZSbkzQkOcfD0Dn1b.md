@@ -1,8 +1,9 @@
+
 # 机器学习算法
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/NhM2dTEgeoAu9mxDxs5ceWiln1k](https://qqs7y1hozd1.feishu.cn/docx/NhM2dTEgeoAu9mxDxs5ceWiln1k)
 
-多维表格（JO2gbHkvJaAajDskhq7chSS7nyd_tblknC16IMLFloX6）
+多维表格（`JO2gbHkvJaAajDskhq7chSS7nyd_tblknC16IMLFloX6`）
 
 ![](img/641ef3f4052360d928c681cfe78f2b2e.png)
 
@@ -16,7 +17,7 @@
 
 [3-决策树与集成算法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WktqbxhdjoDux5xGc0sc7Sn6n4e)
 
-![](img/52fa81982aa74c4069c03b29d6f02979.png)
+![](img/52fa81982aa74c40069c03b29d6f02979.png)
 
 [4-聚类算法.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EFZRbnRR8oYlOaxypXOcJ9t3n6c)
 

@@ -1,3 +1,4 @@
+
 # 2024 年 AIGC 教育的创新应用趋势与机遇报告_腾讯云创业邦
 
 > 来源：[https://agijuejin.feishu.cn/docx/PALWdeR74oHSz4xIUztcwtb0nah](https://agijuejin.feishu.cn/docx/PALWdeR74oHSz4xIUztcwtb0nah)

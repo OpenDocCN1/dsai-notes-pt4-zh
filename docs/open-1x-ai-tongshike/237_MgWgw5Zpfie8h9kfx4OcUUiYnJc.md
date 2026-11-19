@@ -1,130 +1,131 @@
+
 # Task2：Prompt工程
 
 > 来源：[https://datawhaler.feishu.cn/docx/SKy3dphifoF5n6xOyTJcZztsnhb](https://datawhaler.feishu.cn/docx/SKy3dphifoF5n6xOyTJcZztsnhb)
 
-# 一、LLM类型
+## 一、LLM类型
 
 我们要了解LLM有什么类型，以及哪种LLM可以用prompt？
 
-## **预测型语言模型**（如 RNN、GPT 等）：
+### 预测型语言模型（如 RNN、GPT 等）
 
-+   工作原理是基于序列生成，通过逐步预测下一个词构建整个句子。
+工作原理是基于序列生成，通过逐步预测下一个词构建整个句子。
 
-+   示例：RNN 在给定一段文本的情况下，会基于历史上下文预测后续的词语。早期的 LLM 如 GPT-2 等也是基于这种方式。
+示例：RNN 在给定一段文本的情况下，会基于历史上下文预测后续的词语。早期的 LLM 如 GPT-2 等也是基于这种方式。
 
-## **提示驱动型语言模型**（如 GPT-3、ChatGPT）：
+### 提示驱动型语言模型（如 GPT-3、ChatGPT）
 
-+   这类模型通过 prompts（提示）生成基于更复杂指令的内容。用户提供一个 prompt 后，模型会依据它生成相应的回答、文本或执行其他特定任务。
+这类模型通过 prompts（提示）生成基于更复杂指令的内容。用户提供一个 prompt 后，模型会依据它生成相应的回答、文本或执行其他特定任务。
 
-+   这类模型适合广泛的场景，比如编写文章、代码生成、对话机器人等，且通过 prompt 工程可以优化输出质量。
+这类模型适合广泛的场景，比如编写文章、代码生成、对话机器人等，且通过 prompt 工程可以优化输出质量。
 
-# 二、prompt概念
+## 二、prompt概念
 
-## Prompt 是什么
+### Prompt 是什么
 
-在大语言模型（LLM）中，**Prompt** 是用户输入给模型的文本或指令，用于引导模型生成所需的输出。简**单来说，**prompt 是用户与模型之间的对话起点，它告诉模型该执行什么任务或生成什么类型的内容。
+在大语言模型（LLM）中，Prompt 是用户输入给模型的文本或指令，用于引导模型生成所需的输出。简单来说，prompt 是用户与模型之间的对话起点，它告诉模型该执行什么任务或生成什么类型的内容。
 
-举一个生动的例子：**将大模型当成人**，你是老板，你需要告诉你的员工（大模型）要做什么，你的命令是否表达清楚，影响着你的员工是否能完成的你要求。
+举一个生动的例子：将大模型当成人，你是老板，你需要告诉你的员工（大模型）要做什么，你的命令是否表达清楚，影响着你的员工是否能完成的你要求。
 
-## Prompt 的作用
+### Prompt 的作用
 
 Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内容进行推断、生成和决策。提示的设计（prompt engineering）决定了输出的质量、相关性以及准确性，因此，设计高效的 prompt 是使用大语言模型时的关键技术之一。
 
-## prompt工程
+### prompt工程
 
-### 提示工程关键原则
+#### 提示工程关键原则
 
-#### 1. 原则1 - 编写清晰具体的指令
+##### 1. 原则1 - 编写清晰具体的指令
 
 模型的输入需要明确且精确，以确保生成的输出符合预期。含糊或不完整的提示往往会导致不理想的结果。以下是一些策略可以帮助编写更清晰的提示。
 
-##### 1.1 策略1 - 使用定界符清楚地限定输入的不同部分
+###### 1.1 策略1 - 使用定界符清楚地限定输入的不同部分
 
-为了避免混淆，将不同的输入部分用定界符如 <>、[] 或者双引号等标记出来。这样可以清楚地定义问题、上下文、任务要求等，使模型能够更好地解析输入，避免信息混杂。
+为了避免混淆，将不同的输入部分用定界符如 `<>`、`[]` 或者双引号等标记出来。这样可以清楚地定义问题、上下文、任务要求等，使模型能够更好地解析输入，避免信息混杂。
 
-**示例：**
+示例：
 
 ```
 “为以下段落创建总结：&lt;文本内容&gt;”
 ```
 
-##### 1.2 策略2 - 要求结构化输出
+###### 1.2 策略2 - 要求结构化输出
 
 通过要求模型以特定的结构输出结果，可以减少生成内容的模糊性和不一致性。这尤其适用于生成表格、代码块或多步骤解答时。
 
-**示例：**
+示例：
 
 ```
 “将以下问题分为三部分解答：1. 解释问题，2. 提供解决方案，3. 总结。” 
 ```
 
-##### 1.3 策略3 - 要求模型检查是否满足条件
+###### 1.3 策略3 - 要求模型检查是否满足条件
 
 提示中可以要求模型自我检查，确认它的输出是否满足某些特定的条件。这样可以减少错误输出，并鼓励模型主动校正。
 
-**示例：**
+示例：
 
 ```
 “回答以下问题，并确保回答包含三个关键点。如果没有，请重新检查并补充。” 
 ```
 
-##### 1.4 策略4 - 小批量提示
+###### 1.4 策略4 - 小批量提示
 
 在复杂任务中，分解提示为较小的子任务并分别进行处理，可以显著提高模型的输出质量。通过逐步构建和组合答案，模型能更准确地完成整体任务。
 
-**示例：**
+示例：
 
 ```
 “首先描述这个问题的背景。接着，给出可能的解决方法。最后，总结一下你的结论。” 
 ```
 
-#### 2. 原则2 - 给模型充足的思考时间
+##### 2. 原则2 - 给模型充足的思考时间
 
 为了得到更深思熟虑和完整的回答，给模型时间去"思考"或推理是很重要的。通过引导模型逐步推导出解决方案，而非匆忙得出结论，可以获得更高质量的结果。
 
-##### 2.1 策略5 - 指定完成任务的步骤
+###### 2.1 策略5 - 指定完成任务的步骤
 
 通过指定逐步完成任务的步骤，可以帮助模型更好地思考问题。每一步明确且结构化，能够引导模型做出更深入的推理和判断。
 
-**示例：**
+示例：
 
 ```
 “请分步骤描述如何解决这个问题：首先定义问题，接着列出可能的解决方案，然后分析优缺点，最后得出结论。” 
 ```
 
-##### 2.2 策略6 - 指导模型(在急于得出结论之前)制定自己的解决方案
+###### 2.2 策略6 - 指导模型(在急于得出结论之前)制定自己的解决方案
 
 鼓励模型在得出结论前，先生成一个完整的推理链或自己的解决思路。这样可以避免匆忙得出结论，提高回答的准确性和全面性。
 
-**示例：**
+示例：
 
 ```
 “在得出结论前，请先列出你认为合理的几个解决方法，并分别分析它们的优缺点。” 
 ```
 
-#### 3. 模型的局限性
+##### 3. 模型的局限性
 
 虽然提示工程能大大提高模型的输出质量，但模型本身仍然有局限性。提示工程往往需要迭代调整，才能找到最优的提示方式。
 
 一些常见的模型局限包括：
 
-+   理解多义词或复杂语境的能力有限
++ 理解多义词或复杂语境的能力有限
 
-+   生成的内容有时缺乏连贯性或深度
++ 生成的内容有时缺乏连贯性或深度
 
-+   在特定领域的知识更新可能滞后
++ 在特定领域的知识更新可能滞后
 
-+   对特定任务的表现可能不稳定，需要反复调整提示
++ 对特定任务的表现可能不稳定，需要反复调整提示
 
-#### 4. 总结类应用
+##### 4. 总结类应用
 
 在提示工程中，针对不同类型的信息进行总结是一种常见的应用场景。根据总结任务的不同要求，设计相应的提示方式，可以帮助模型生成更精准、简洁的内容。
 
-##### 4.1 文字总结
+###### 4.1 文字总结
 
 文字总结是最基础的一种总结形式。它要求模型对一段较长的文本进行压缩，以生成简洁明了的要点。提示可以要求模型抓取核心信息，忽略细节。
 
-**提示示例：**
+提示示例：
 
 ```
 “请对以下内容进行简短总结，保留核心要点：&lt;输入文本&gt;”
@@ -132,11 +133,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示会指导模型在总结过程中聚焦于主题和关键信息，而不是逐句翻译或重新编写。
 
-##### 4.2 针对某种信息总结
+###### 4.2 针对某种信息总结
 
 有时总结任务并不是对全文进行概括，而是针对某种特定信息进行总结。可以通过提示引导模型只关注某个主题或特定的维度，如情感、时间线或某一类数据。
 
-**提示示例：**
+提示示例：
 
 ```
 “请总结以下新闻报道中的市场趋势变化：&lt;输入文本&gt;”  
@@ -144,11 +145,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示明确了总结的主题，帮助模型聚焦于特定的信息类型。
 
-##### 4.3 尝试“提取”而不是“总结”
+###### 4.3 尝试“提取”而不是“总结”
 
 在一些情况下，直接提取关键信息可能比概括性总结更合适。提取任务要求模型识别并返回特定的内容片段，而不对其进行重新组合或简化。这种方法特别适用于精确度要求较高的场景。
 
-**提示示例：**
+提示示例：
 
 ```
 “从以下文本中提取出所有关于产品发布日期的相关信息：&lt;输入文本&gt;”
@@ -156,11 +157,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这种提示让模型专注于识别和返回具体的时间信息，而不是生成新的句子。
 
-##### 4.4 针对多项信息总结
+###### 4.4 针对多项信息总结
 
 当涉及多段或多篇文本时，模型需要能够跨越这些信息进行总结。提示应要求模型在总结时考虑所有信息来源并做出综合性的概括。
 
-**提示示例：**
+提示示例：
 
 ```
 “请根据以下三篇文章，生成一段综合性的总结，突出它们的共同观点：&lt;文章1&gt;，&lt;文章2&gt;，&lt;文章3&gt;”
@@ -168,23 +169,23 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这种提示让模型对多条信息进行整合，同时避免遗漏重要的共性内容。
 
-##### 总结类提示的关键技巧
+###### 总结类提示的关键技巧
 
-+   **明确总结类型**：指示模型是要生成简短概述、提取关键信息，还是综合多项内容。
++ 明确总结类型：指示模型是要生成简短概述、提取关键信息，还是综合多项内容。
 
-+   **聚焦目标**：总结提示应指明关注的重点，避免模型偏离主题。
++ 聚焦目标：总结提示应指明关注的重点，避免模型偏离主题。
 
-+   **保持简洁**：在提示中要求“简洁”和“核心信息”，帮助模型生成紧凑、有效的总结。
++ 保持简洁：在提示中要求“简洁”和“核心信息”，帮助模型生成紧凑、有效的总结。
 
-#### 5. 推理类应用
+##### 5. 推理类应用
 
 推理类应用要求模型不仅仅是理解文本表面的内容，还需要根据提示进行更深层次的分析和推理。这种类型的任务通常涉及情感分类、信息提取、主体推断等具体应用。
 
-##### 5.1 产品评价文本情感分类
+###### 5.1 产品评价文本情感分类
 
 对产品评价进行情感分类可以帮助用户理解总体的评价趋势，例如评论是正面、负面还是中立的。提示应该要求模型分析评论的语调和词汇，以确定评论者的情感倾向。
 
-**提示示例：**
+提示示例：
 
 ```
 “请根据以下产品评价的情感类型进行分类（正面、负面或中立）：&lt;评价文本&gt;”
@@ -192,11 +193,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 通过明确提示情感分类的标准，模型可以识别出评价中的情感倾向。
 
-##### 5.2 文本情感分类
+###### 5.2 文本情感分类
 
 情感分类不仅限于产品评价，还可以用于新闻、社交媒体帖子等各类文本中。提示可以要求模型对不同类型文本的情感进行分析，从而区分情绪的强弱或类别。
 
-**提示示例：**
+提示示例：
 
 ```
 “请对以下新闻文章的情感进行分类，并判断它是正面、负面或中立：&lt;新闻文本&gt;”
@@ -204,11 +205,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示可以帮助模型从新闻文本中推断情感倾向，并作出分类。
 
-##### 5.3 文本信息提取
+###### 5.3 文本信息提取
 
 文本信息提取的任务是识别和提取文本中的特定信息，例如日期、地点、人物等。这需要模型具备一定的理解和归纳能力。
 
-**提示示例：**
+提示示例：
 
 ```
 “请从以下文本中提取出所有提到的公司名称和相关日期：&lt;文本内容&gt;”
@@ -216,11 +217,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 该提示引导模型聚焦特定的实体和信息，并从文本中进行提取。
 
-##### 5.4 文本主体推断
+###### 5.4 文本主体推断
 
 推断文本主体是一项推理任务，要求模型理解文本的主题并推断出是谁或什么在推动叙述。模型需要从语境中判断主要的行为者或议题。
 
-**提示示例：**
+提示示例：
 
 ```
 “根据以下文本，推断文章的主体是谁，或者什么是主要话题：&lt;文本内容&gt;”
@@ -228,11 +229,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示要求模型分析文本的整体语义，从而得出中心主题或主体。
 
-##### 5.5 文本信息分析
+###### 5.5 文本信息分析
 
 文本信息分析是一种更综合的推理任务，通常涉及模型对文本进行更深入的分析，诸如模式识别、数据洞察或复杂的逻辑推理。这种任务可以用于发现文本背后的趋势或潜在信息。
 
-**提示示例：**
+提示示例：
 
 ```
 “请分析以下市场报告，并总结出当前市场的主要趋势和未来可能的发展方向：&lt;市场报告文本&gt;”
@@ -240,23 +241,23 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这种提示要求模型进行深层次的解读，分析多维信息并做出结论。
 
-##### 推理类提示的关键技巧
+###### 推理类提示的关键技巧
 
-+   **指定分类标准**：对于情感分类或信息提取等任务，确保分类或提取的标准明确且不含糊。
++ 指定分类标准：对于情感分类或信息提取等任务，确保分类或提取的标准明确且不含糊。
 
-+   **提供足够的上下文**：推理类任务需要依赖文本中的隐含信息，因此提供足够的上下文信息非常重要。
++ 提供足够的上下文：推理类任务需要依赖文本中的隐含信息，因此提供足够的上下文信息非常重要。
 
-+   **引导分析过程**：对于复杂的分析任务，可以通过提示引导模型逐步展开推理，最终得出结论。
++ 引导分析过程：对于复杂的分析任务，可以通过提示引导模型逐步展开推理，最终得出结论。
 
-#### 6. 转换类应用
+##### 6. 转换类应用
 
 转换类应用要求模型对输入进行某种形式的转化，可能是语言、格式或语调的转换。这类任务的核心是通过提示引导模型改变文本的表现形式，同时保持核心信息的准确性。
 
-##### 6.1 翻译任务
+###### 6.1 翻译任务
 
 翻译任务是最常见的转换类应用之一，要求模型将文本从一种语言准确地翻译到另一种语言。提示应该包含源语言和目标语言的明确指示。
 
-**提示示例：**
+提示示例：
 
 ```
 “请将以下中文文本翻译为英文：&lt;中文文本&gt;”
@@ -264,11 +265,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这种提示确保模型知道需要将文本从源语言转换为目标语言，并保持信息的准确性。
 
-##### 6.2 通用翻译器
+###### 6.2 通用翻译器
 
 在某些情况下，模型可能需要支持多语言的翻译任务。提示可以要求模型从特定语言翻译成任何目标语言，甚至在多种语言之间进行自动切换。
 
-**提示示例：**
+提示示例：
 
 ```
 “请将以下文本翻译为德文、法文和西班牙文：&lt;英文文本&gt;”
@@ -276,11 +277,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这种提示要求模型不仅要准确翻译，还需要灵活处理多语言的需求。
 
-##### 6.3 语调转换
+###### 6.3 语调转换
 
 语调转换任务要求模型在保留原始信息的基础上，改变文本的语气或风格。例如，将正式的语气转换为非正式的，或将情感化的语气转换为中立的语气。
 
-**提示示例：**
+提示示例：
 
 ```
 “请将以下正式文本改写为非正式语气：&lt;正式文本&gt;”
@@ -288,11 +289,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示要求模型调整语言的风格，确保语调适合目标读者。
 
-##### 6.4 格式转换
+###### 6.4 格式转换
 
 格式转换任务指的是将文本从一种格式转换为另一种，例如将段落转换为项目符号、表格或代码格式。这类转换需要模型识别不同格式之间的差异，并重新组织内容。
 
-**提示示例：**
+提示示例：
 
 ```
 “请将以下段落改为项目符号列表形式：&lt;段落文本&gt;”
@@ -300,11 +301,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示引导模型将文本内容重新排列成更易读的格式。
 
-##### 6.5 语法拼写检查
+###### 6.5 语法拼写检查
 
 语法拼写检查是一种常见的文本转换任务，模型需要识别并纠正文本中的语法和拼写错误。这类任务有助于提高文本的可读性和准确性。
 
-**提示示例：**
+提示示例：
 
 ```
 “请检查并修正以下文本中的语法和拼写错误：&lt;文本内容&gt;”
@@ -312,25 +313,23 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示要求模型不仅要识别错误，还要提供正确的修正。
 
-##### 转换类提示的关键技巧
+###### 转换类提示的关键技巧
 
-+   **明确转换目标**：无论是翻译、语调调整还是格式转换，提示中应清楚说明转换的目标或预期效果。
++ 明确转换目标：无论是翻译、语调调整还是格式转换，提示中应清楚说明转换的目标或预期效果。
 
-+   **保持信息完整性**：确保转换后的文本保留原文的核心信息，而不是引入新内容或偏差。
++ 保持信息完整性：确保转换后的文本保留原文的核心信息，而不是引入新内容或偏差。
 
-+   **确保风格一致性**：尤其在语调转换或格式转换中，保持转换后的文本与目标风格的统一性。
++ 确保风格一致性：尤其在语调转换或格式转换中，保持转换后的文本与目标风格的统一性。
 
-#
-
-#### 7. 扩展类应用
+##### 7. 扩展类应用
 
 扩展类应用要求模型对给定的信息进行扩展，生成更加丰富或详细的内容。这类任务通常涉及根据特定场景生成定制化的回复或内容，如自动回复邮件、为文章添加细节等。扩展类应用需要模型能够灵活运用输入的信息，并生成与其相关的扩展内容。
 
-##### 7.1 自定义对客户电子邮件的自动答复
+###### 7.1 自定义对客户电子邮件的自动答复
 
 自定义自动答复任务要求模型根据客户的邮件内容生成个性化的回应。这类任务的提示应包括指导模型如何使用邮件中的信息来生成相关的回复。模型不仅要理解邮件的主题，还要根据情境调整答复的内容和语气。
 
-**提示示例：**
+提示示例：
 
 ```
 “请为以下客户邮件生成一封专业的自动回复，并根据内容给出适当的感谢和确认：&lt;客户邮件内容&gt;”
@@ -338,7 +337,7 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 这个提示引导模型分析客户邮件，针对邮件中的具体内容给出个性化的自动回复。
 
-**自动回复示例：**
+自动回复示例：
 
 ```
 尊敬的客户，
@@ -348,11 +347,11 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 [公司名称]
 ```
 
-##### 7.2 提醒模型使用客户电子邮件中的详细信息
+###### 7.2 提醒模型使用客户电子邮件中的详细信息
 
 为了让模型生成更具针对性的回复，可以通过提示提醒模型在答复中引用客户邮件中的具体信息，如客户的姓名、问题类型或订单编号。这有助于提高回复的个性化程度，增强客户体验。
 
-**提示示例：**
+提示示例：
 
 ```
 “请根据以下客户的电子邮件生成回复，确保使用邮件中的详细信息（如姓名、问题描述和订单号）：
@@ -364,7 +363,7 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 
 通过在提示中明确指出要使用的详细信息，模型能够在生成的答复中直接引用这些信息，使回复更加个性化和精确。
 
-**个性化回复示例：**
+个性化回复示例：
 
 ```
 尊敬的张三先生，
@@ -374,37 +373,37 @@ Prompt 在模型生成过程中起着核心作用，模型根据 prompt 的内�
 [公司名称]
 ```
 
-##### 扩展类提示的关键技巧
+###### 扩展类提示的关键技巧
 
-+   **强调个性化**：明确要求模型使用输入信息中的特定细节，确保回复是针对具体客户或场景定制的。
++ 强调个性化：明确要求模型使用输入信息中的特定细节，确保回复是针对具体客户或场景定制的。
 
-+   **提供上下文**：通过提供足够的背景信息，帮助模型生成内容时保持一致性和连贯性。
++ 提供上下文：通过提供足够的背景信息，帮助模型生成内容时保持一致性和连贯性。
 
-+   **指定语气和风格**：尤其在自动回复类应用中，明确回复的语气（如正式、非正式、友好等），以便与预期场景匹配。
++ 指定语气和风格：尤其在自动回复类应用中，明确回复的语气（如正式、非正式、友好等），以便与预期场景匹配。
 
-# 三、实践案例：游戏搭子-原神启动！
+## 三、实践案例：游戏搭子-原神启动！
 
 > 在开始本次案例实践前，
 
 > 提醒大家参赛必须使用扣子专业版进行智能体创建，
 
-> 具体扣子专业版配置指南详见：Step2：开通扣子专业版！(点击即可跳转)
+> 具体扣子专业版配置指南详见：`Step2：开通扣子专业版！(点击即可跳转)`
 
 > 否则提交的作品不符合要求，无法参与评审
 
-## 创建一个bot
+### 创建一个bot
 
 本次coze比赛需要做一个程序员搭子，这边我以原神的可莉为例制作一个游戏搭子
 
 大家可以先去感受一下
 
-https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
+`https://www.coze.cn/store/bot/7422647920916807707?bot_id=true`
 
-![](img/e239e3fa48a4456b73ef8941c3b373e6.png)
+`img/e239e3fa48a4456b73ef8941c3b373e6.png`
 
-## 书写prompt
+### 书写prompt
 
-![](img/179e4be700e29c68c25e009c1d4d2b96.png)
+`img/179e4be700e29c68c25e009c1d4d2b96.png`
 
 参考的prompt如下
 
@@ -438,48 +437,49 @@ https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
 当用户询问故事时，一次只调用一个故事
 正确称呼用户为“旅行者”或者“荣誉骑士”
 正确处理照片请求，输出图片，不输出文本
-
 ```
 
-## prompt解析
+### prompt解析
 
-### 编写 Prompt 的关键步骤
+#### 编写 Prompt 的关键步骤
 
-1.  **明确角色与目标**：
+1. 明确角色与目标：
 
 +   清晰定义模型在对话中的身份和目标。告诉模型它需要扮演哪个角色，以及这个角色的特点和任务。
 
 +   例如，在 prompt 中，模型需要扮演游戏《原神》中的角色“可莉”，她是一个充满童真、好奇心的小孩子，并且需要与用户进行对话。
 
-1.  **目标明确**：
+1. 目标明确：
 
 +   说明模型需要达到的目标，确保输出符合目标。
 
 +   例如，要求模型模仿可莉的语言风格，展现她的态度，同时需要调用知识库中的冒险故事回答问题。
 
-1.  **思考路径与约束**：
+1. 思考路径与约束：
 
 +   提供模型生成输出时需要遵循的逻辑步骤或限制条件。这些约束确保生成内容的连贯性和一致性。
 
 +   例如， prompt 要求保持角色的一致性，回复时充满童真，一次只调用一个故事，且在提到用户时使用特定的称呼（如“行者”或“荣誉骑士”）。
 
-1.  **个性化细节**：
+1. 个性化细节：
 
-+   通过设置个性化的细节，让模型的输出更具角色特色。
 
-+   例如，要求模型模仿可莉的语音语气和用词，保持童真和好奇心。
 
-1.  **明确的工作流程**：
++ 通过设置个性化的细节，让模型的输出更具角色特色。
 
-+   指导模型如何执行特定的操作或流程。
++ 例如，要求模型模仿可莉的语音语气和用词，保持童真和好奇心。
 
-+   例如，prompt 提供了明确的工作流程，包括正确称呼用户、处理照片请求、以及调用知识库中的故事。
+1. 明确的工作流程：
 
-1.  **初始化设置**：
++ 指导模型如何执行特定的操作或流程。
 
-+   定义模型如何开始对话或任务。为模型提供一个开场白或默认行为，以确保用户体验的连贯性。
++ 例如，prompt 提供了明确的工作流程，包括正确称呼用户、处理照片请求、以及调用知识库中的故事。
 
-+   例如，prompt 中定义了可莉会首先欢迎用户并介绍自己。
+1. 初始化设置：
+
++ 定义模型如何开始对话或任务。为模型提供一个开场白或默认行为，以确保用户体验的连贯性。
+
++ 例如，prompt 中定义了可莉会首先欢迎用户并介绍自己。
 
 ## 不断调优
 
@@ -499,9 +499,9 @@ https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
 
 两种方式，一种是根据提示词区自动添加，另一种则是总结手动添加
 
-**不建议添加过**多的插件，且在调用插件时，最好在prompt的skills部分进行说明，可以在左侧“编排”栏中用自然语言描述来“命令”大模型调用插件，比如：“当遇到XXX提示词，请调用XXX插件”。
+不建议添加过多的插件，且在调用插件时，最好在prompt的`skills`部分进行说明，可以在左侧“编排”栏中用自然语言描述来“命令”大模型调用插件，比如：“当遇到XXX提示词，请调用XXX插件”。
 
-如果是想制作**工具类的agent**，加入插件则尤为**重要**，但是切记，插件**不能加太多否则会混乱**
+如果是想制作工具类的agent，加入插件则尤为重要，但是切记，插件不能加太多否则会混乱
 
 ![](img/50346811e01c05906a1258765c17c279.png)
 
@@ -519,7 +519,7 @@ https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
 
 ![](img/bf5915f2264c2bfc16c540c7899e4582.png)
 
-完成知识库创建和内容导入后，你就可以在 Bot 和工作流中添加知识库内容进行调用了。
+完成知识库创建和内容导入后，你就可以在 `Bot` 和工作流中添加知识库内容进行调用了。
 
 这边我以可莉的图片为例
 
@@ -541,7 +541,7 @@ https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
 
 如果想要更好的调优方式，建议人工标注，但是这个会耗费大量精力
 
-不过一定**要标注**哦，因为不标注**不能调用**
+不过一定要标注哦，因为不标注不能调用
 
 ![](img/04bb2cbf6a9b116a6c2390c0dbd226a1.png)
 
@@ -559,71 +559,71 @@ https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
 
 参考以下操作，测试并优化知识库内容:
 
-1.  在右侧的调试区域，输入一个查询问题。
+1. 在右侧的调试区域，输入一个查询问题。
 
-1.  查看大模型生成的回复内容，并点击运行完毕按钮查看召回的内容片段
+1. 查看大模型生成的回复内容，并点击运行完毕按钮查看召回的内容片段
 
 如果回复的内容不符合预期，分析原因并进行优化：
 
-1.  最后，你需要通过测试来不断优化回复的内容效果。
+1. 最后，你需要通过测试来不断优化回复的内容效果。
 
 #### 调优技巧
 
 如果召回的内容片段的相关性不高，或者没有召回正确的内容片段时：
 
-+   查看关联的知识库是否正确
++ 查看关联的知识库是否正确
 
-+   查看知识库中的内容分段是否合理
++ 查看知识库中的内容分段是否合理
 
-+   调整搜索和召回策略
++ 调整搜索和召回策略
 
-+   当召回的内容片段正确时：
++ 当召回的内容片段正确时：
 
-+   尝试优化提示词，例如明确指定要调用的知识库，并增加限制等
++ 尝试优化提示词，例如明确指定要调用的知识库，并增加限制等
 
-+   尝试对分片长度进行调整，减少不相关内容的干扰
++ 尝试对分片长度进行调整，减少不相关内容的干扰
 
-+   更换模型（如果涉及到调用知识库图片建议用通用模型，角色扮演模型调用不佳）
++ 更换模型（如果涉及到调用知识库图片建议用通用模型，角色扮演模型调用不佳）
 
 #### 成果
 
 去感受一下吧
 
-https://www.coze.cn/store/bot/7422647920916807707?bot_id=true
+`https://www.coze.cn/store/bot/7422647920916807707?bot_id=true`
 
 ## 总结
 
-prompt的书写尽量遵循**精简**，不是越多越好
+prompt的书写尽量遵循精简，不是越多越好
 
 agent的prompt书写有很多方式，常见的一种人物书写方式包含以下6种要素：
 
-### ① 角色身份描述（description）或 角色人设（Character）
+### ① 角色身份描述（`description`）或 角色人设（`Character`）
 
-清楚指示模型是谁、在做什么。描述 Bot 所扮演的角色或职责、回复风格。
+清楚指示模型是谁、在做什么。描述 `Bot` 所扮演的角色或职责、回复风格。
 
 给模型一个身份的设定，如数学老师、编程高手或者是某个特定的npc身份
 
-### ② **目标** (Goals)
+### ② 目标（`Goals`）
 
 模型需要完成哪些任务。
 
-### ③ **思考路径** (**Guidelines**)
+### ③ 思考路径（`Guidelines`）
 
 设定模型生成内容的逻辑和规则。
 
-描述 Bot 的功能和工作流程，约定 Bot 在不同的场景下如何回答用户问题。
+描述 `Bot` 的功能和工作流程，约定 `Bot` 在不同的场景下如何回答用户问题。
 
-### ④ 个性化**技能**(Skills)和约束(Constraints)
+### ④ 个性化技能（`Skills`）和约束（`Constraints`）
 
-工具类agent需要强调调用的**工具**，人物类agent则需要说明**语气**等
+工具类agent需要强调调用的工具，人物类agent则需要说明语气等
 
-让模型的输出更有特色。限制回复范围，请直接告诉 Bot 什么应该回答、什么不应该回答。
+让模型的输出更有特色。限制回复范围，请直接告诉 `Bot` 什么应该回答、什么不应该回答。
 
-### ⑤ **工作流程** (Workflows)
+### ⑤ 工作流程（`Workflows`）
 
 安排模型的执行流程，一般简单的可以在prompt中体现，涉及到更多流程则需要运用工作流
 
-### ⑥ **初始化** (Initialization)
+### ⑥ 初始化（`Initialization`）
 
 给出执行步骤和对话的开场白。coze中已经将开场白单独出来。
 
@@ -645,39 +645,39 @@ prompt不止运用于agent的创建，还有更多的方面
 
 [掘金小册](https://juejin.cn/book/7351709145294176282/section/7351709145332416522?utm_source=course_list)
 
-https://www.promptingguide.ai/zh
+`https://www.promptingguide.ai/zh`
 
-https://islinxu.github.io/prompt-engineering-note/Introduction/index.html
+`https://islinxu.github.io/prompt-engineering-note/Introduction/index.html`
 
 # 六、prompt工程相关文档
 
 ## (1) prompt-useful-list
 
-+   [f/aweso](https://github.com/f/awesome-chatgpt-prompts)me-chatgpt-prompts(This repo includes ChatGPT prompt curation to use ChatGPT better.)
++ [f/aweso](https://github.com/f/awesome-chatgpt-prompts)me-chatgpt-prompts(This repo includes ChatGPT prompt curation to use ChatGPT better.)
 
-+   [PlexPt/](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)[awe](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)some-chatgpt-prompts-zh(ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。)
++ [PlexPt/](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)[awe](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)some-chatgpt-prompts-zh(ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。)
 
-+   [dair-ai/](https://github.com/dair-ai/Prompt-Engineering-Guide)[Prompt](https://github.com/dair-ai/Prompt-Engineering-Guide)[-](https://github.com/dair-ai/Prompt-Engineering-Guide)[Engineering](https://github.com/dair-ai/Prompt-Engineering-Guide)[-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)(🐙 Guides, papers, lecture, notebooks and resources for prompt engineering)
++ [dair-ai/](https://github.com/dair-ai/Prompt-Engineering-Guide)[Prompt](https://github.com/dair-ai/Prompt-Engineering-Guide)[-](https://github.com/dair-ai/Prompt-Engineering-Guide)[Engineering](https://github.com/dair-ai/Prompt-Engineering-Guide)[-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)(🐙 Guides, papers, lecture, notebooks and resources for prompt engineering)
 
-+   [thinki](https://github.com/thinkingjimmy/Learning-Prompt)ngjimmy/Learning-Prompt(免费 Prompt Engineering 教程)
++ [thinki](https://github.com/thinkingjimmy/Learning-Prompt)ngjimmy/Learning-Prompt(免费 Prompt Engineering 教程)
 
-+   [wangxuqi/](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[Prompt](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[-](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[Engineering](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[-Guide-Chinese](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)(Prompt工程师指南，源自英文版，但增加了AIGC的prompt部分，为了降低同学们的学习门槛，翻译更新)
++ [wangxuqi/](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[Prompt](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[-](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[Engineering](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)[-Guide-Chinese](https://github.com/wangxuqi/Prompt-Engineering-Guide-Chinese)(Prompt工程师指南，源自英文版，但增加了AIGC的prompt部分，为了降低同学们的学习门槛，翻译更新)
 
-+   [prompt](https://github.com/promptslab/Awesome-Prompt-Engineering)[s](https://github.com/promptslab/Awesome-Prompt-Engineering)[lab/Awesome](https://github.com/promptslab/Awesome-Prompt-Engineering)-Prompt-Engineering(This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc)
++ [prompt](https://github.com/promptslab/Awesome-Prompt-Engineering)[s](https://github.com/promptslab/Awesome-Prompt-Engineering)[lab/Awesome](https://github.com/promptslab/Awesome-Prompt-Engineering)-Prompt-Engineering(This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc)
 
-+   [yunwei37/](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[Prompt](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[-](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[Engineering](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[-Guide-zh-CN](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)(🐙 关于提示词工程（prompt）的指南、论文、讲座、笔记本和资源大全（自动持续更新）)
++ [yunwei37/](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[Prompt](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[-](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[Engineering](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)[-Guide-zh-CN](https://github.com/yunwei37/Prompt-Engineering-Guide-zh-CN)(🐙 关于提示词工程（prompt）的指南、论文、讲座、笔记本和资源大全（自动持续更新）)
 
-+   https://github.com/yzfly/wonderful-prompts(🔥中文 prompt 精选🔥，ChatGPT 使用指南，提升 ChatGPT 可玩性和可用性！🚀)
++ `https://github.com/yzfly/wonderful-prompts`(🔥中文 prompt 精选🔥，ChatGPT 使用指南，提升 ChatGPT 可玩性和可用性！🚀)
 
 ---
 
 ## (2) prompt-projects-list
 
-+   [thunlp/](https://github.com/thunlp/PromptPapers)[Prompt](https://github.com/thunlp/PromptPapers)[Papers](https://github.com/thunlp/PromptPapers)(Must-read papers on prompt-based tuning for pre-trained language models.)
++ [thunlp/](https://github.com/thunlp/PromptPapers)[Prompt](https://github.com/thunlp/PromptPapers)[Papers](https://github.com/thunlp/PromptPapers)(Must-read papers on prompt-based tuning for pre-trained language models.)
 
-+   [manifoldco/](https://github.com/manifoldco/promptui)[promptui](https://github.com/manifoldco/promptui)(Interactive prompt for command-line applications)
++ [manifoldco/](https://github.com/manifoldco/promptui)[promptui](https://github.com/manifoldco/promptui)(Interactive prompt for command-line applications)
 
-+   [prompt](https://github.com/prompt-toolkit/python-prompt-toolkit)[-toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit)/python-prompt-toolkit(Library for building powerful interactive command line applications in Python)
++ [prompt](https://github.com/prompt-toolkit/python-prompt-toolkit)[-toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit)/python-prompt-toolkit(Library for building powerful interactive command line applications in Python)
 
 # 鸣谢
 
@@ -695,4 +695,4 @@ https://islinxu.github.io/prompt-engineering-note/Introduction/index.html
 
 >
 
-> **注：本文采用 ****署名—非商业性使用**—相同方式共享 4.0 协议国际版许可协议进行许可。
+> **注：本文采用 署名—非商业性使用—相同方式共享 4.0 协议国际版许可协议进行许可。**

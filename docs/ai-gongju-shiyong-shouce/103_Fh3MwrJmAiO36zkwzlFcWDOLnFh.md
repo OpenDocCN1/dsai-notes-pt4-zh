@@ -1,10 +1,11 @@
+
 # NO.07 AI小和尚案例拆解
 
 > 来源：[https://my.feishu.cn/docx/LTbydmD8aoiJqBxgBbUc50ianpg](https://my.feishu.cn/docx/LTbydmD8aoiJqBxgBbUc50ianpg)
 
 首先推荐一个AI工具，免🪜直接用GPT[和](https://ai.qixinba.com/me/;)MJ，多的不介绍了，登录就明白了：https://ai.qixinba.com/auth?type=register&invite=NTE
 
-# 示例
+## 示例
 
 今天网上冲浪刷到这么一个号
 
@@ -18,21 +19,19 @@
 
 那我就0成本复刻一下，给大家上个福利。
 
-# 工具
+## 工具
 
 😉首先几个工具准备好：
 
-1、鸡哥：https://ai.qixinba.com/auth?type=register&invite=NTE   做文案和图片（自己有鸡哥claude啥的都行，不需要再换了）
+1. 鸡哥：https://ai.qixinba.com/auth?type=register&invite=NTE 做文案和图片（自己有鸡哥claude啥的都行，不需要再换了）
+2. DID：https://studio.d-id.com/ 做视频用的，教程见这里（[数字人工具 D-ID](https://yw55ojhusnq.feishu.cn/wiki/ZpzEwKrJZimte1ksc8nc4xqfnLe?from=from_copylink)）
+3. 剪映：https://www.capcut.cn/ 剪辑用，教程不放了，自己研究下3分钟上手
 
-2、DID：https://studio.[数字人工具 D-ID](https://yw55ojhusnq.feishu.cn/wiki/ZpzEwKrJZimte1ksc8nc4xqfnLe?from=from_copylink)-id.com/   做视频用的，教程见这里（  ）
-
-3、剪映：https://www.capcut.cn/   剪辑用，教程不放了，自己研究下3分钟上手
-
-# 流程介绍
+## 流程介绍
 
 👉流程很简单：创账号，做内容，多渠道发布。
 
-# 创账号
+### 创账号
 
 鸡哥做角色定位，起名，简介，头像，一站式搞定后。
 
@@ -52,7 +51,7 @@
 
 🥺别跟我抄哈，自己找鸡哥研究去……
 
-# 相关图片生成
+### 相关图片生成
 
 头像、背景图、人物主体都需要跑图，直接让鸡哥给我描述下。
 
@@ -68,7 +67,7 @@
 
 ![](img/b333c573b919aff67d1f2e5ee322d07e.png)
 
-# 文案创作
+### 文案创作
 
 🤔继续找鸡哥做文案，没研究过固定prompt，直接对话跑到满意为止。
 
@@ -76,14 +75,13 @@
 
 师傅常说，生如莲花，百炼皆成金。我，一位普通的小和尚，在师傅的引导下，明白了这个道理。生活中的困难和挑战，就像暴风骤雨，但请记住，雨后会有彩虹，黑夜过后，太阳总会升起。每一次的挫败、痛苦，都是我们变得更强大的契机。只要保持内心的平静，像那莲花一样，你就能在泥浆中傲然绽放。
 
-# 视频制作
+### 视频制作
 
 文案OK之后，咱们直接做视频了，地址刚放了，过程太简单[数字人工具 D-ID](https://yw55ojhusnq.feishu.cn/wiki/ZpzEwKrJZimte1ksc8nc4xqfnLe?from=from_copylink)看完图你就会了。就是DID：https://studio.d-id.com/ 教程见（  ）
 
 ![](img/69932e477ebf76dadd19dda9647ad426.png)
 
 ![](img/39a7af4d85178a47884a17520a1a6f36.png)
-
 
 ![](img/c103734eb4b610b8d39a7a7cf8ecc64c.png)
 
@@ -95,7 +93,7 @@
 
 ![](img/36fa9ef93a288fe0d4adb8d049894112.png)
 
-# 最终效果
+## 最终效果
 
 5.17 Kwf:/ 05/05 b@N.wf 复制打开抖音，看看【禅心小和尚的作品】# 小和尚 # 善语结善缘 # 妙语禅心 # 人生... https://v.douyin.com/id2CbaGe/
 

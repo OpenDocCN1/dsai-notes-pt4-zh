@@ -1,3 +1,4 @@
+
 # 每日原则：把你的进化最大化
 
 > 来源：[https://my.feishu.cn/docx/Ye0xdu0tUog7E2xl0m4cepNwnhc](https://my.feishu.cn/docx/Ye0xdu0tUog7E2xl0m4cepNwnhc)
@@ -20,4 +21,4 @@ The work doesn’t necessarily have to be a job, though I believe it’s general
 
 ![](img/874b606208bd30a630ca00f15229fa74.png)
 
-+   内容来源：https://mp.weixin.qq.com/s/ptXKlNrebUk_jj91XOBToQ
++ 内容来源：`https://mp.weixin.qq.com/s/ptXKlNrebUk_jj91XOBToQ`

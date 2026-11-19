@@ -1,3 +1,4 @@
+
 # 视频 | Pika专区
 
 > 来源：[https://aigclena.feishu.cn/docx/OIQpdbKCioSBevxEHJ8cQNr0nuh](https://aigclena.feishu.cn/docx/OIQpdbKCioSBevxEHJ8cQNr0nuh)
@@ -6,7 +7,7 @@
 
 3.22
 
-Pika AI 精准视频编辑工具，可独立移动物体
+Pika AI 精准视频编辑工具，可独立移动物体。
 
 Pika 推出 AI 驱动的精准视频编辑功能，允许用户操控画面中的角色和物体，而不会影响场景其他部分，为创意视频制作提供更大自由度。目前，该功能仅对 Pika Creative Partners 开放，未来或将进行更广泛推广。
 

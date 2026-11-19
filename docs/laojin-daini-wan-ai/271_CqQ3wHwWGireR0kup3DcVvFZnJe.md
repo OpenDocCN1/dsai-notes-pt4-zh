@@ -1,3 +1,4 @@
+
 # 邪修老金失手了，但Cursor二验这个坑还是给大家讲一下！
 
 > 来源：[https://my.feishu.cn/docx/SYQpd8PrqojSRyxqyI5cu2MLn3R](https://my.feishu.cn/docx/SYQpd8PrqojSRyxqyI5cu2MLn3R)
@@ -6,9 +7,9 @@
 
 老金有一个账号也是这么来的，先说结果，这号弄不回来了，每个坑老金都给大家讲一讲。
 
-**庆幸的**是，老金还有Lenny大礼包买的Cursor号，以及老金发现个大羊毛，放在文末！
+庆幸的是，老金还有Lenny大礼包买的Cursor号，以及老金发现个大羊毛，放在文末！
 
-**第一个坑**
+## 第一个坑
 
 因为有的账号没收到，因此我还庆幸自己是个小幸运呢。
 
@@ -24,13 +25,13 @@
 
 你也可以直接进入这个网址查看。
 
-https://cursor.com/dashboard
+`https://cursor.com/dashboard`
 
 ![](img/9026e8404f5665e85c73c5090a8c0065.png)
 
-**第二个坑**
+## 第二个坑
 
-这个页面里有一项写的是 **需要提交和首次相同的姓名和大学****。**
+这个页面里有一项写的是需要提交和首次相同的姓名和大学。
 
 我：？？？？？
 
@@ -40,7 +41,7 @@ https://cursor.com/dashboard
 
 然后进入了第三个页面。
 
-**第三个坑**
+## 第三个坑
 
 当你输入姓名、大学等等之后，进入这个界面。
 
@@ -52,7 +53,7 @@ https://cursor.com/dashboard
 
 ![](img/095b5106a56e7344b7dfa1ea608877cb.png)
 
-**结果**
+## 结果
 
 果不其然没有过。
 
@@ -60,7 +61,7 @@ https://cursor.com/dashboard
 
 然后它还很鸡贼，不让再次刷新提交了。
 
-也就是说，**你只有一次填写机会**。
+也就是说，你只有一次填写机会。
 
 想想还是赛博菩萨Google好，二验我肯定没用同一个人来验证，因为国家都不同，二验我用的韩国 = =
 
@@ -76,9 +77,9 @@ https://cursor.com/dashboard
 
 ![](img/d5b734b8f2304bd58e64563f0de46e2f.png)
 
-**第一个：**
+### 第一个
 
-https://agentrouter.org/register?aff=rLco
+`https://agentrouter.org/register?aff=rLco`
 
 点链接注册能用200刀，也就是你和我分别多得100，你也可以分享出去。
 
@@ -86,30 +87,27 @@ https://agentrouter.org/register?aff=rLco
 
 这个能用Opus和GPT5（没有新的CODEX模型，只有GPT5模型），还是很好的。
 
-**第二个：**
+### 第二个
 
-https://anyrouter.top/register?aff=0FzF
+`https://anyrouter.top/register?aff=0FzF`
 
 有初始，好像是100刀，记不清了，链接注册你我分别获得50，你依然可以分享出去。
 
-**每天登录有25刀额度**，自动领取的教程老金写过，注意同步时候图丢了，看置顶留言里的信息，那个有图文。
+每天登录有25刀额度，自动领取的教程老金写过，注意同步时候图丢了，看置顶留言里的信息，那个有图文。
 
 [老金·邪修法则：CC每天自动获取25$额度Claude*多账号，Anyrouter全自动签到](https://tffyvtlai4.feishu.cn/wiki/M7e1wiCoviEbE2kTNuLckcsHnUg)
 
 这个只能用Sonnet。
 
-**免责声明：**
+## 免责声明
 
-本文仅出于学习和研究目的分享，不对使用者因采用本文方法而可能产生的任何后果承担责任。请注意:
+本文仅出于学习和研究目的分享，不对使用者因采用本文方法而可能产生的任何后果承担责任。请注意：
 
-1.  本文内容仅供学习和研究使用,不得用于任何商业目的或非法活动。
-
-1.  使用者应当遵守Cursor和Claude的服务条款及相关法律法规。
-
-1.  本文不鼓励也不支持任何形式的滥用、破解或规避付费服务的行为。请尊重知识产权和服务提供商的利益。
-
-1.  如果您决定采用本文描述的方法,即表示您已完全理解并接受本免责声明的全部内容。
+1. 本文内容仅供学习和研究使用,不得用于任何商业目的或非法活动。
+2. 使用者应当遵守Cursor和Claude的服务条款及相关法律法规。
+3. 本文不鼓励也不支持任何形式的滥用、破解或规避付费服务的行为。请尊重知识产权和服务提供商的利益。
+4. 如果您决定采用本文描述的方法,即表示您已完全理解并接受本免责声明的全部内容。
 
 请合理使用。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

@@ -1,12 +1,12 @@
+
 # 3. Sora 推荐阅读文章
 
 > 来源：[https://langgptai.feishu.cn/docx/WM9Fdy9e8osFKjxw1OncNSDAnHd](https://langgptai.feishu.cn/docx/WM9Fdy9e8osFKjxw1OncNSDAnHd)
 
-##  官方文章
+## 官方文章
 
-1.  (Sora 发布博文) Creating video from text: https://openai.com/sora
-
-1.  Sora 技术报告：https://openai.com/research/video-generation-models-as-world-simulators
+1. (Sora 发布博文) Creating video from text: `https://openai.com/sora`
+1. Sora 技术报告：`https://openai.com/research/video-generation-models-as-world-simulators`
 
 ## 推荐书籍
 
@@ -20,14 +20,10 @@
 
 ## 其他文章
 
-1.  数字生命卡兹克：OpenAI全新发布文生视频模型Sora - 现实，不存在了
-
-1.  数字生命卡兹克：从Sora爆火看AI圈的乱象 - 不要当新时代的“韭菜”
-
-1.  云端听茗:【SORA系列】SORA速通-Part 1
-
-1.  Sora 虽好，谨防骗局
-
-1.  除了震惊、炸裂和行业洗牌，我们来聊聊Sora对普通人的意义
+1. 数字生命卡兹克：OpenAI全新发布文生视频模型Sora - 现实，不存在了
+1. 数字生命卡兹克：从Sora爆火看AI圈的乱象 - 不要当新时代的“韭菜”
+1. 云端听茗:【SORA系列】SORA速通-Part 1
+1. Sora 虽好，谨防骗局
+1. 除了震惊、炸裂和行业洗牌，我们来聊聊Sora对普通人的意义
 
 欢迎推荐优质内容~

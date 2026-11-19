@@ -1,3 +1,4 @@
+
 # 获取权限的颗粒度
 
 > 来源：[https://docs.feishu.cn/docx/TkQhd9byPoB7ZexApsQc6PWzn9f](https://docs.feishu.cn/docx/TkQhd9byPoB7ZexApsQc6PWzn9f)

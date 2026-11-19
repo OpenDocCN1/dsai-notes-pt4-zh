@@ -1,3 +1,4 @@
+
 # Coze+👸号自动化写作方案拆解（详细版）
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/YQUFdhQMEoiAW6xsvs8cni4qnlh](https://zinxkclpk97.feishu.cn/docx/YQUFdhQMEoiAW6xsvs8cni4qnlh)
@@ -6,19 +7,19 @@
 
 同时，我也会将👸号插件的详细代码打包开放，有需要的开发者可以找我获取。
 
-👸号介绍
+## 👸号介绍
 
 对于如何注册开通👸号，我们就不过多介绍，这里简单说一下，👸号内容类型有文章类、图片/文字。我们利用Coze也主要是创作这两种类型的内容。插件的使用需要区分不同类型的文章，草稿格式会存在差异。
 
 ![](img/abc5b9a80cfe3ac97667359b6c5073cf.png)
 
-插件开发
+## 插件开发
 
 我们知道Coze官方并未支持👸号相关的插件，那如何自动发布到👸号草稿呢？这不得不感谢腾讯官方支持了👸号开发者模式，我们可通过其提供的API接口，打通授权、创建草稿、上传素材、查询等功能。我们可以参考接口文档封装👸号插件。当然也有许多三方开发者已经贡献，也可选择合适的直接使用。
 
 有开发能力的可以直接看官方文档。
 
-https://developers.weixin.qq.com/doc/offiaccount/Draft_Box/Add_draft.html
+`https://developers.weixin.qq.com/doc/offiaccount/Draft_Box/Add_draft.html`
 
 ![](img/c9bcea5a1334eb88c746c72c07a3aec1.png)
 
@@ -26,7 +27,7 @@ https://developers.weixin.qq.com/doc/offiaccount/Draft_Box/Add_draft.html
 
 而调用👸号的这些API，还需要完成两个配置
 
-一是开通后台的开发者模式，获取开发者id和密码
+一是开通后台的开发者模式，获取开发者`id`和密码
 
 ![](img/cef0742335591169a28d493cef450a3c.png)
 
@@ -38,7 +39,7 @@ https://developers.weixin.qq.com/doc/offiaccount/Draft_Box/Add_draft.html
 
 ![](img/b3abbdd629298b6c2b8f9ade24ffd226.png)
 
-但是在Coze平台去封装👸号插件，那插件所运行的服务器IP肯定不是固定的（每次run的服务器随机分配），所以如果直接Coze封装👸号API接口，就会面临需要将N多个IP加到👸号Ip白名单中，且因Coze官方服务器集群的变更，这些IP面临失效问题。
+但是在Coze平台去封装👸号插件，那插件所运行的服务器IP肯定不是固定的（每次`run`的服务器随机分配），所以如果直接Coze封装👸号API接口，就会面临需要将N多个IP加到👸号Ip白名单中，且因Coze官方服务器集群的变更，这些IP面临失效问题。
 
 如何解决上面这个问题呢？我们可以考虑增加一台中间的服务器做转发，而需要授权的白名单IP就是这台中转服务器的IP，以实现固定IP的需求。
 
@@ -60,6 +61,8 @@ Coze插件开发，我截图示意，有需要代码的开发者可找我获取�
 
 下面这部分是API中转服务的部分代码可参考，很简单，只是对👸号API的封装。
 
+
+
 ```
 import base64
 import io
@@ -80,57 +83,57 @@ from models import DraftAddRequest
 
 app = FastAPI()
 
-@app.get(&quot;/ping&quot;)
+@app.get("/ping")
 def ping():
-    return {&quot;msg&quot;: &quot;Hello World&quot;}
+    return {"msg": "Hello World"}
 
-@app.post(&quot;/api/v1/wechat/token&quot;)
-async def get_wx_token(appid: str = Form(..., description=&quot;公众号的唯一标识符（AppID）&quot;),
-                       appsecret: str = Form(..., description=&quot;公众号的密钥（AppSecret）&quot;)):
+@app.post("/api/v1/wechat/token")
+async def get_wx_token(appid: str = Form(..., description="公众号的唯一标识符（AppID）"),
+                       appsecret: str = Form(..., description="公众号的密钥（AppSecret）")):
     if not appid or not appsecret:
-        raise HTTPException(status_code=400, detail=&quot;AppID and AppSecret are required.&quot;)
+        raise HTTPException(status_code=400, detail="AppID and AppSecret are required.")
 
-    url = &quot;https://api.weixin.qq.com/cgi-bin/token&quot;
+    url = "https://api.weixin.qq.com/cgi-bin/token"
     params = {
-        &quot;grant_type&quot;: &quot;client_credential&quot;,
-        &quot;appid&quot;: appid,
-        &quot;secret&quot;: appsecret
+        "grant_type": "client_credential",
+        "appid": appid,
+        "secret": appsecret
     }
     response = requests.get(url, params=params)
 
     if response.status_code == 200:
         return response.json()
     else:
-        raise HTTPException(status_code=response.status_code, detail=&quot;Failed to retrieve token&quot;)
+        raise HTTPException(status_code=response.status_code, detail="Failed to retrieve token")
 
 # 设置请求重试策略
 retry_strategy = Retry(
     total=3,
     status_forcelist=[429, 500, 502, 503, 504],
-    allowed_methods=[&quot;GET&quot;, &quot;POST&quot;]
+    allowed_methods=["GET", "POST"]
 )
 adapter = HTTPAdapter(max_retries=retry_strategy)
-@app.post(&quot;/api/v1/wechat/add_material&quot;)
+@app.post("/api/v1/wechat/add_material")
 async def add_material_from_url(
-        access_token: str = Form(..., description=&quot;调用接口的凭证（access_token）&quot;),
-        image_url: str = Form(..., description=&quot;图片的URL地址&quot;),
-        type: str = Form(&quot;thumb&quot;, description=&quot;媒体文件类型&quot;)):
+        access_token: str = Form(..., description="调用接口的凭证（access_token）"),
+        image_url: str = Form(..., description="图片的URL地址"),
+        type: str = Form("thumb", description="媒体文件类型")):
     if not access_token or not image_url:
-        raise HTTPException(status_code=400, detail=&quot;Access Token and Image URL are required.&quot;)
+        raise HTTPException(status_code=400, detail="Access Token and Image URL are required.")
 
     # 下载图片
     try:
         response = requests.get(image_url)
         response.raise_for_status()
     except RequestException as e:
-        raise HTTPException(status_code=400, detail=f&quot;Failed to download image: {e}&quot;)
+        raise HTTPException(status_code=400, detail=f"Failed to download image: {e}")
 
     # 上传图片到微信服务器
-    url = &quot;https://api.weixin.qq.com/cgi-bin/material/add_material&quot;
-    files=[(&#x27;media&#x27;,(&#x27;mainimage.jpg&#x27;,response.content,&#x27;image/jpeg&#x27;))]
+    url = "https://api.weixin.qq.com/cgi-bin/material/add_material"
+    files=[('media',('mainimage.jpg',response.content,'image/jpeg'))]
     data = {
-        &#x27;access_token&#x27;: access_token,
-        &#x27;type&#x27;: type
+        'access_token': access_token,
+        'type': type
     }
 
     response = requests.post(url,files=files,  data=data)
@@ -138,129 +141,129 @@ async def add_material_from_url(
     if response.status_code == 200:
         return response.json()
     else:
-        raise HTTPException(status_code=response.status_code, detail=&quot;Failed to add material&quot;)
+        raise HTTPException(status_code=response.status_code, detail="Failed to add material")
 
-@app.post(&quot;/api/v1/wechat/upload_img&quot;)
+@app.post("/api/v1/wechat/upload_img")
 async def upload_img_from_url(
-        access_token: str = Form(..., description=&quot;调用接口的凭证（access_token）&quot;),
-        image_url: str = Form(..., description=&quot;图片的URL地址&quot;)):
+        access_token: str = Form(..., description="调用接口的凭证（access_token）"),
+        image_url: str = Form(..., description="图片的URL地址")):
     if not access_token or not image_url:
-        raise HTTPException(status_code=400, detail=&quot;Access Token and Image URL are required.&quot;)
+        raise HTTPException(status_code=400, detail="Access Token and Image URL are required.")
 
     # 下载图片
     try:
         response = requests.get(image_url)
         response.raise_for_status()
     except RequestException as e:
-        raise HTTPException(status_code=400, detail=f&quot;Failed to download image: {e}&quot;)
+        raise HTTPException(status_code=400, detail=f"Failed to download image: {e}")
 
     # 上传图片到微信服务器
-    url = &quot;https://api.weixin.qq.com/cgi-bin/media/uploadimg&quot;
-    files=[(&#x27;media&#x27;,(&#x27;image.jpg&#x27;,response.content,&#x27;image/jpeg&#x27;))]
+    url = "https://api.weixin.qq.com/cgi-bin/media/uploadimg"
+    files=[('media',('image.jpg',response.content,'image/jpeg'))]
     data = {
-        &#x27;access_token&#x27;: access_token
+        'access_token': access_token
     }
     response = requests.post(url, files=files, data=data)
 
     if response.status_code == 200:
         return response.json()
     else:
-        raise HTTPException(status_code=response.status_code, detail=&quot;Failed to upload image&quot;)
+        raise HTTPException(status_code=response.status_code, detail="Failed to upload image")
 
-@app.post(&quot;/api/v1/wechat/add_draft&quot;)
+@app.post("/api/v1/wechat/add_draft")
 async def add_draft(body: DraftAddRequest,token: str = Header()):
     if not token:
-        raise HTTPException(status_code=400, detail=&quot;Access Token is required.&quot;)
-    url = f&quot;https://api.weixin.qq.com/cgi-bin/draft/add?access_token={token}&quot;
+        raise HTTPException(status_code=400, detail="Access Token is required.")
+    url = f"https://api.weixin.qq.com/cgi-bin/draft/add?access_token={token}"
     headers = {
-        &#x27;Content-Type&#x27;: &#x27;application/json; charset=utf-8&#x27;
+        'Content-Type': 'application/json; charset=utf-8'
     }
     #print(body.dict())
     json_content = json.dumps(body.dict(), ensure_ascii=False)
-    response = requests.post(url,headers=headers, data=json_content.encode(&#x27;utf-8&#x27;))
+    response = requests.post(url,headers=headers, data=json_content.encode('utf-8'))
 
     if response.status_code == 200:
         return response.json()
     else:
-        raise HTTPException(status_code=response.status_code, detail=&quot;Failed to add draft&quot;)
+        raise HTTPException(status_code=response.status_code, detail="Failed to add draft")
 
 
-@app.post(&quot;/api/v1/wechat/publish&quot;)
-async def publish_article(access_token: str = Form(..., description=&quot;调用接口的凭证（access_token）&quot;),
-                          media_id: str = Form(..., description=&quot;要发布的草稿的media_id&quot;)):
-    &quot;&quot;&quot;
+@app.post("/api/v1/wechat/publish")
+async def publish_article(access_token: str = Form(..., description="调用接口的凭证（access_token）"),
+                          media_id: str = Form(..., description="要发布的草稿的media_id")):
+    """
     发布微信公众号文章。
 
     :param access_token: 调用接口凭证
     :param media_id: 要发布的草稿的media_id
     :return: 发布结果
-    &quot;&quot;&quot;
+    """
     if not access_token:
-        raise HTTPException(status_code=400, detail=&quot;Access Token is required.&quot;)
+        raise HTTPException(status_code=400, detail="Access Token is required.")
 
-    url = f&quot;https://api.weixin.qq.com/cgi-bin/freepublish/submit?access_token={access_token}&quot;
+    url = f"https://api.weixin.qq.com/cgi-bin/freepublish/submit?access_token={access_token}"
     payload = {
-        &quot;media_id&quot;: media_id
+        "media_id": media_id
     }
     headers = {
-        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        'Content-Type': 'application/json'
     }
 
     response = requests.post(url, json=payload, headers=headers)
     if response.status_code == 200:
         return response.json()
     else:
-        raise HTTPException(status_code=response.status_code, detail=&quot;Failed to add draft&quot;)
+        raise HTTPException(status_code=response.status_code, detail="Failed to add draft")
 
 
-@app.post(&quot;/api/v1/wechat/sendall&quot;)
-async def sendall(access_token: str = Form(..., description=&quot;调用接口的凭证（access_token）&quot;),
-                  media_id: str = Form(..., description=&quot;要发布的草稿的media_id&quot;)):
-    &quot;&quot;&quot;
+@app.post("/api/v1/wechat/sendall")
+async def sendall(access_token: str = Form(..., description="调用接口的凭证（access_token）"),
+                  media_id: str = Form(..., description="要发布的草稿的media_id")):
+    """
     群发公众号文章。
 
     :param access_token: 调用接口凭证
     :param media_id: 要发布的草稿的media_id
     :return: 发布结果
-    &quot;&quot;&quot;
-    url = f&quot;https://api.weixin.qq.com/cgi-bin/message/mass/sendall?access_token={access_token}&quot;
+    """
+    url = f"https://api.weixin.qq.com/cgi-bin/message/mass/sendall?access_token={access_token}"
     payload = {
-        &quot;filter&quot;: {
-            &quot;is_to_all&quot;: True
+        "filter": {
+            "is_to_all": True
         },
-        &quot;mpnews&quot;: {
-            &quot;media_id&quot;: media_id
+        "mpnews": {
+            "media_id": media_id
         },
-        &quot;msgtype&quot;: &quot;mpnews&quot;,
-        &quot;send_ignore_reprint&quot;: 1
+        "msgtype": "mpnews",
+        "send_ignore_reprint": 1
     }
     headers = {
-        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        'Content-Type': 'application/json'
     }
 
     response = requests.post(url, json=payload, headers=headers)
     if response.status_code == 200:
         return response.json()
     else:
-        raise HTTPException(status_code=response.status_code, detail=&quot;Failed to send all&quot;)
+        raise HTTPException(status_code=response.status_code, detail="Failed to send all")
 
 
-@app.post(&quot;/api/v1/wechat/get_draft&quot;)
-async def get_draft(access_token: str = Form(..., description=&quot;调用接口的凭证（access_token）&quot;),
-                    media_id: str = Form(..., description=&quot;要发布的草稿的media_id&quot;)):
-    &quot;&quot;&quot;
+@app.post("/api/v1/wechat/get_draft")
+async def get_draft(access_token: str = Form(..., description="调用接口的凭证（access_token）"),
+                    media_id: str = Form(..., description="要发布的草稿的media_id")):
+    """
     获取微信公众号草稿箱中的草稿内容。
 
     :param access_token: 调用接口凭证
     :param media_id: 要获取的草稿的media_id
     :return: 草稿内容的字典或错误信息
-    &quot;&quot;&quot;
+    """
     # 微信公众号获取草稿的API URL
-    url = f&quot;https://api.weixin.qq.com/cgi-bin/draft/get?access_token={access_token}&quot;
+    url = f"https://api.weixin.qq.com/cgi-bin/draft/get?access_token={access_token}"
 
     # 请求的JSON数据
     payload = {
-        &quot;media_id&quot;: media_id
+        "media_id": media_id
     }
 
     # 发送POST请求
@@ -271,30 +274,36 @@ async def get_draft(access_token: str = Form(..., description=&quot;调用接口
         # 解析响应内容
         result = response.json()
         # 检查是否返回了错误信息
-        if &#x27;errcode&#x27; in result and result[&#x27;errcode&#x27;] != 0:
-            print(f&quot;Error: {result.get(&#x27;errmsg&#x27;, &#x27;Unknown error&#x27;)}&quot;)
+        if 'errcode' in result and result['errcode'] != 0:
+            print(f"Error: {result.get('errmsg', 'Unknown error')}")
             return result
         else:
             # 返回草稿内容
             return result
     else:
-        print(f&quot;HTTP Error: {response.status_code}&quot;)
+        print(f"HTTP Error: {response.status_code}")
         return None
 ```
 
-最终这段是发布托管到一台云服务器，这样我们就可以固定云服务器的公网IP作为白名单IP
 
-搭建👸号写作工作流
+
+# 云服务器发布与白名单配置
+
+最终这段是发布托管到一台云服务器，这样我们就可以固定云服务器的公网IP作为白名单IP。
+
+# 搭建👸号写作工作流
 
 我们在写👸号时所要做的公众有哪些？比如选题、框架、写作、配图、排版、发布，也差不都这些。
 
 在搭建Coze工作流时，也是需要做同样的动作，只不过我们使用大模型和插件来完成这些事情。
 
+## 工作流逻辑与实际案例
+
 逻辑示意图如下：
 
 我们下面搭建一个实际工作流案例，实现仿写、排版、配图、发布草稿。
 
-首先是输入部分，我们输入需要仿写的文章链接和部分写作要求，另外将👸号的appid和secret也作为参数输入，方便灵活配置多个账号。
+首先是输入部分，我们输入需要仿写的文章链接和部分写作要求，另外将👸号的`appid`和`secret`也作为参数输入，方便灵活配置多个账号。
 
 ![](img/4193588a52c511ca3b7847c7632f2f5e.png)
 
@@ -312,7 +321,7 @@ async def get_draft(access_token: str = Form(..., description=&quot;调用接口
 
 提示词参考如下，可根据自己的赛道进行改写。
 
-大家可以看到，我们在提示词中约束了返回文案的格式，比如重点句子标注、使用markdown格式，这也是为后续排班做准备。
+大家可以看到，我们在提示词中约束了返回文案的格式，比如重点句子标注、使用`markdown`格式，这也是为后续排班做准备。
 
 ```
 ##角色：自媒体博主
@@ -342,15 +351,15 @@ async def get_draft(access_token: str = Form(..., description=&quot;调用接口
 4.严禁在文章中出现任何违反国家法律法规、社会公序良俗或影响平台形象的不当言论。
 ```
 
-👸号排版
+## 👸号排版与图片处理
 
-因为👸号支持html的文案格式，因此我们可以借助一个插件，实现markdown转html。并且借助html实现文章的排版美化。
+因为👸号支持`HTML`的文案格式，因此我们可以借助一个插件，实现`markdown`转`HTML`。并且借助`HTML`实现文章的排版美化。
 
 ![](img/688c92ed687f41086c78425f1e30cb38.png)
 
 此插件也支持多种风格，可参考说明进行选择即可。
 
-具体呈现效果可对照此网站：https://markdown.com.cn/editor/
+具体呈现效果可对照此网站：`https://markdown.com.cn/editor/`
 
 ![](img/56594f0a620abd8800e5af401e60954b.png)
 
@@ -362,43 +371,43 @@ async def get_draft(access_token: str = Form(..., description=&quot;调用接口
 
 ![](img/32482f60c2992895b951775625786a50.png)
 
-排版
+## 代码节点排版拼装
 
-这一步就比较重要了，使用代码节点完成最终排版拼装
+这一步就比较重要了，使用代码节点完成最终排版拼装。
 
-这里我们搭配了一个固定头，比如你可以通过固定头实现引导关注等引导语的设定。同理你可以搭配一个固定尾部元素，实现尾部的引导和素材设计。但需要注意的是，此headerHtml内容需要借助135editor进行设计。
+这里我们搭配了一个固定头，比如你可以通过固定头实现引导关注等引导语的设定。同理你可以搭配一个固定尾部元素，实现尾部的引导和素材设计。但需要注意的是，此`headerHtml`内容需要借助`135editor`进行设计。
 
 ![](img/255b759ab0fa75ee4849aa1da19a341a.png)
 
-135editor是一个👸号排版网站，因此我们可以借助其先排版，然后再获取排版的源码，组合到我们的工作流代码中使用。
+`135editor`是一个👸号排版网站，因此我们可以借助其先排版，然后再获取排版的源码，组合到我们的工作流代码中使用。
 
-打开135editor网站，点击导入👸号的文章链接，就可以看到原文效果。
+打开`135editor`网站，点击导入👸号的文章链接，就可以看到原文效果。
 
 ![](img/b2dcd1cc383f4ea8b952cafaa4de2b8c.png)
 
-然后点击切换html，可以看到源码信息。
+然后点击切换`HTML`，可以看到源码信息。
 
 ![](img/b6c98a8ae7fb314722c8a820e47c2889.png)
 
-我们需要获取上图中的部分headerHtml固定代码，参考如下。
+我们需要获取上图中的部分`headerHtml`固定代码，参考如下。
 
 ```
-&lt;section style=&quot;font-size: 16px;text-align: center;justify-content: center;display: flex;flex-flow: row;margin-top: 10px;margin-bottom: 10px;&quot;class=&quot;&quot;&gt;&lt;section style=&quot;display: inline-block;vertical-align: middle;width: auto;align-self: center;flex: 0 0 auto;min-width: 5%;height: auto;box-sizing:border-box;&quot;&gt;&lt;section style=&quot;text-align: right;margin-top: 10px;margin-bottom: 10px;line-height: 0;&quot;&gt;&lt;section style=&quot;vertical-align: middle;display: inline-block;line-height: 0;width: 50px;height: auto;box-sizing:border-box;&quot;&gt;&lt;p style=&quot;margin-left: 0px; margin-right: 0px;&quot;&gt;&lt;img class=&quot;rich_pages wxw-img&quot;data-imgfileid=&quot;100001574&quot;data-s=&quot;300,640&quot;src=&quot;https://mmbiz.qpic.cn/sz_mmbiz_png/MVPvEL7Qg0GVeTBgmu2jBFwpXRXOe4Kf7Hfj3INGtpUwRTibBHDicib4rtGLstNjJ5VgOa0qqnRDSOicZ2rLxicB2uQ/640?wx_fmt=png&quot;data-type=&quot;png&quot;style=&quot;vertical-align: middle;width: 100%;box-sizing:border-box;max-width:100% !important;&quot;data-ratio=&quot;0.34869240348692404&quot;data-w=&quot;803&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block;vertical-align: middle;width: auto;align-self: center;flex: 0 0 auto;border-width: 0px;border-style: none;border-color: #3e3e3e;border-radius: 0px 5px 5px 0px;overflow: hidden;min-width: 5%;height: auto;padding: 5px 15px;box-shadow: #d3f3ed 0px 0px 0px;box-sizing:border-box;&quot;class=&quot;&quot;&gt;&lt;section style=&quot;text-align: justify;color: #3e3e3e;&quot;&gt;&lt;p style=&quot;text-wrap: wrap; margin-left: 0px; margin-right: 0px;&quot;&gt;点击蓝字，关注我们&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block;vertical-align: top;width: auto;min-width: 5%;flex: 0 0 auto;height: auto;box-sizing:border-box;&quot;&gt;&lt;section style=&quot;text-align: left;margin-top: 10px;margin-bottom: 10px;line-height: 0;&quot;&gt;&lt;section style=&quot;vertical-align: middle;display: inline-block;line-height: 0;width: 50px;height: auto;box-sizing:border-box;&quot;class=&quot;&quot;&gt;&lt;p style=&quot;margin-left: 0px; margin-right: 0px;&quot;&gt;&lt;img class=&quot;rich_pages wxw-img&quot;data-s=&quot;300,640&quot;data-type=&quot;png&quot;style=&quot;vertical-align: middle;width: 100%;box-sizing:border-box;max-width:100% !important;&quot;src=&quot;https://mmbiz.qpic.cn/sz_mmbiz_png/MVPvEL7Qg0GVeTBgmu2jBFwpXRXOe4Kf7Hfj3INGtpUwRTibBHDicib4rtGLstNjJ5VgOa0qqnRDSOicZ2rLxicB2uQ/640?wx_fmt=png&quot;data-imgfileid=&quot;100001575&quot;data-ratio=&quot;0.34869240348692404&quot;data-w=&quot;803&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;font-size: 16px;text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;&quot;&gt;&lt;section style=&quot;display: inline-block;&quot;class=&quot;&quot;&gt;&lt;p style=&quot;margin-left: 0px; margin-right: 0px;&quot;&gt;&lt;img class=&quot;rich_pages wxw-img&quot;  src=&quot;图片地址&quot; data-type=&quot;jpg&quot; style=&quot;vertical-align: baseline;box-sizing:border-box;&quot; data-ratio=&quot;0.7320754716981132&quot; /&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;font-size: 16px;text-align: left;justify-content: flex-start;display: flex;flex-flow: row;margin-top: 10px;margin-bottom: 10px;&quot;&gt;&lt;section style=&quot;display: inline-block;width: auto;vertical-align: middle;align-self: center;flex: 100 100 0%;background-color: rgba(255, 255, 255, 0);height: auto;box-sizing:border-box;&quot;class=&quot;&quot;&gt;&lt;section style=&quot;margin-bottom: 10px;&quot;&gt;&lt;section style=&quot;background-color: #edc0a9;height: 1px;&quot;&gt;&lt;br/&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;_135editor&quot;data-role=&quot;paragraph&quot;&gt;&lt;/section&gt;
+&lt;section style=&quot;font-size: 16px;text-align: center;justify-content: center;display: flex;flex-flow: row;margin-top: 10px;margin-bottom: 10px;&quot;class=&quot;&quot;&gt;&lt;section style=&quot;display: inline-block;vertical-align: middle;width: auto;align-self: center;flex: 0 0 auto;min-width: 5%;height: auto;box-sizing:border-box;&quot;&gt;&lt;section style=&quot;text-align: right;margin-top: 10px;margin-bottom: 10px;line-height: 0;&quot;&gt;&lt;section style=&quot;vertical-align: middle;display: inline-block;line-height: 0;width: 50px;height: auto;box-sizing:border-box;&quot;&gt;&lt;p style=&quot;margin-left: 0px; margin-right: 0px;&quot;&gt;&lt;img class=&quot;rich_pages wxw-img&quot;data-imgfileid=&quot;100001574&quot;data-s=&quot;300,640&quot;src=&quot;https://mmbiz.qpic.cn/sz_mmbiz_png/MVPvEL7Qg0GVeTBgmu2jBFwpXRXOe4Kf7Hfj3INGtpUwRTibBHDicib4rtGLstNjJ5VgOa0qqnRDSOicZ2rLxicB2uQ/640?wx_fmt=png&quot;data-type=&quot;png&quot;style=&quot;vertical-align: middle;width: 100%;box-sizing:border-box;max-width:100% !important;&quot;data-ratio=&quot;0.34869240348692404&quot;data-w=&quot;803&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block;vertical-align: middle;width: auto;align-self: center;flex: 0 0 auto;border-width: 0px;border-style: none;border-color: #3e3e3e;border-radius: 0px 5px 5px 0px;overflow: hidden;min-width: 5%;height: auto;padding: 5px 15px;box-shadow: #d3f3ed 0px 0px 0px;box-sizing:border-box;&quot;class=&quot;&quot;&gt;&lt;section style=&quot;text-align: justify;color: #3e3e3e;&quot;&gt;&lt;p style=&quot;text-wrap: wrap; margin-left: 0px; margin-right: 0px;&quot;&gt;点击蓝字，关注我们&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block;vertical-align: top;width: auto;min-width: 5%;flex: 0 0 auto;height: auto;box-sizing:border-box;&quot;&gt;&lt;section style=&quot;text-align: left;margin-top: 10px;margin-bottom: 10px;line-height: 0;&quot;&gt;&lt;section style=&quot;vertical-align: middle;display: inline-block;line-height: 0;width: 50px;height: auto;box-sizing:border-box;&quot;class=&quot;&quot;&gt;&lt;p style=&quot;margin-left: 0px; margin-right: 0px;&quot;&gt;&lt;img class=&quot;rich_pages wxw-img&quot;data-s=&quot;300,640&quot;data-type=&quot;png&quot;style=&quot;vertical-align: middle;width: 100%;box-sizing:border-box;max-width:100% !important;&quot;src=&quot;https://mmbiz.qpic.cn/sz_mmbiz_png/MVPvEL7Qg0GVeTBgmu2jBFwpXRXOe4Kf7Hfj3INGtpUwRTibBHDicib4rtGLstNjJ5VgOa0qqnRDSOicZ2rLxicB2uQ/640?wx_fmt=png&quot;data-imgfileid=&quot;100001575&quot;data-ratio=&quot;0.34869240348692404&quot;data-w=&quot;803&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;font-size: 16px;text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;&quot;&gt;&lt;section style=&quot;display: inline-block;&quot;class=&quot;&quot;&gt;&lt;p style=&quot;margin-left: 0px; margin-right: 0px;&quot;&gt;&lt;img class=&quot;rich_pages wxw-img&quot;  src=&quot;图片地址&quot; data-type=&quot;jpg&quot; style=&quot;vertical-align: baseline;box-sizing:border-box;&quot; data-ratio=&quot;0.7320754716981132&quot; /&gt;&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;font-size: 16px;text-align: left;justify-content: flex-start;display: flex;flex-flow: row;margin-top: 10px;margin-bottom: 10px;&quot;&gt;&lt;section style=&quot;display: inline-block;width: auto;vertical-align: middle;align-self: center;flex: 100 100 0%;background-color: rgba(255, 255, 255, 0);height: auto;box-sizing:border-box;&quot;class=&quot;&quot;&gt;&lt;section style=&quot;margin-bottom: 10px;&quot;&gt;&lt;section style=&quot;background-color: #edc0a9;height: 1px;&quot;&gt;&lt;br/&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;_135editor&quot;data-role=&quot;paragraph&quot;&gt;&lt;/section&gt;
 ```
 
-看下代码细节，拼接正文和固定头html，并且将我们的图片地址，替换到headerHtml的“图片地址”占位符，实现插入首图。
+看下代码细节，拼接正文和固定头`html`，并且将我们的图片地址，替换到`headerHtml`的“图片地址”占位符，实现插入首图。
 
 ```
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    headerHtml = params[&#x27;headerHtml&#x27;]
-    contentHtml = params[&#x27;contentHtml&#x27;]
-    imageUrl = params[&#x27;imageUrl&#x27;]
-    headerHtml = headerHtml.replace(&#x27;图片地址&#x27;,imageUrl)
+    headerHtml = params['headerHtml']
+    contentHtml = params['contentHtml']
+    imageUrl = params['imageUrl']
+    headerHtml = headerHtml.replace('图片地址',imageUrl)
     html = headerHtml+contentHtml
 
     ret: Output = {
-        &quot;html&quot;: html
+        "html": html
     }
     return ret
 ```

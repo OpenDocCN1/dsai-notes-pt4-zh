@@ -1,3 +1,5 @@
+
+
 # 《抖音年引流1000w用户 我如何搭建一支能打的内容团队》 邓怡然
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/YwADd0KlYocZEYxC9Kic8eZwn4I](https://xuqiwei1986.feishu.cn/docx/YwADd0KlYocZEYxC9Kic8eZwn4I)
@@ -12,12 +14,11 @@
 
 大会分享视频妙记（含逐字文字记录）
 
-# 搞钱经历
-
+## 搞钱经历
 
 首先用三个数字讲一下我搞钱的经历
 
-1  小学--把压岁钱"贷"给爸妈买房赚到第1块钱
+1 小学--把压岁钱"贷"给爸妈买房赚到第1块钱
 
 第一个数字是1，我挣的第一块钱是我小学的时候，把压岁钱以银行利率贷给爸妈。那是 06 年，当时两年的银行定期存款率是3.06，我手里2万压岁钱，每天能有一块六的利息，那是我赚到的第一块钱。
 
@@ -29,7 +30,6 @@
 
 第三个数字是10000，大学的时候觉得经济独立不找家里要钱这事好酷，然后这里搞一下，那里搞一下，当时通过👸号引流一周的时间赚到了人生的第一万块钱
 
-
 上面是属于搞钱的一个小打小闹，真正开始创业是从大三开始
 
 大三的时候成立了南大的3D打印协会，也叫3D打印社团，基于这个后来成立一个工作室
@@ -40,51 +40,45 @@
 
 2022年开始用抖音投放引流私域，到23年7月单日引流至私域15w+
 
-
 懂流量的人都知道这张图的含金量有多深——
 
 巨量引擎后台素材资产账号最高一条素材转化人数47万，一年转化数978万
 
 单视频最高引流至私域人数40w+，年引流至私域人数1000w+。
 
-# 素材决定命运，消耗改变人生
-
+## 素材决定命运，消耗改变人生
 
 行业有一句话叫做素材决定命运，消耗改变人生
 
 素材本身像一个方向盘，决定我们要去哪里。
 
-**牛🍺的素材不需要投也很好，因为素材就**是定向，定向了你的目标人群是什么样子的，如何做出这样的的好素材，就是一个内容团队去追寻的东西。
+牛🍺的素材不需要投也很好，因为素材就是定向，定向了你的目标人群是什么样子的，如何做出这样的的好素材，就是一个内容团队去追寻的东西。
 
 搭建团队其实就跟武林建门派是一样的。武林建派之初，不管是华山还是少林，华山有华山剑法，少林有罗汉拳，内容团队也需要有一套自己形成的体系——什么是好内容，怎么做出好内容，怎么持续做出好内容。
 
-## 什么是一个好广告内容的核心要素？
+### 什么是一个好广告内容的核心要素？
 
-### 顺应人性的主题
+#### 顺应人性的主题
 
 ![](img/547b829fc20a7591981030b5e56a260a.png)
 
 首先一个内容它必须得有一个顺应人性的主题。刷短视频这个事就超级顺应人性啊，刷着刷着一不小心 4 个小时就过去了。那短视频内容你也得是顺应人性的。人性有什么？七宗罪里的全是人性，我们看一下案例结合
 
-**①贪婪**：《外卖员教你点外卖》：便宜骚操作满足信息差
+①贪婪：《外卖员教你点外卖》：便宜骚操作满足信息差
 
+[`tmpwppvideo_20241123_1.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BBBtb59FcomazsxWULJcwGjWnPL)
 
-[tmpwppvideo_20241123_1.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BBBtb59FcomazsxWULJcwGjWnPL)
+②好奇：《采访00后打工人》：采访同事，满足好奇心，满足人的八卦和窥视欲
 
-**②好奇：**《采访00后打工人》：采访同事，满足好奇心，满足人的八卦和窥视欲
+[`tmpwppvideo_20241123_2.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nx26b3QGqo1k6QxpTUscEdyrnUe)
 
-
-[tmpwppvideo_20241123_2.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nx26b3QGqo1k6QxpTUscEdyrnUe)
-
-**③好色+好奇**：《偷拍富二代同事》：桌面美女跳舞视频+给两个女朋友点奶茶
+③好色+好奇：《偷拍富二代同事》：桌面美女跳舞视频+给两个女朋友点奶茶
 
 ![](img/6c2a6bcf28446e56e66eaa6bbe066e5e.png)
 
-[tmpwppvideo_20241123_3.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q2ZLbc4p8okvMcxa3A0capbQnle)
+[`tmpwppvideo_20241123_3.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Q2ZLbc4p8okvMcxa3A0capbQnle)
 
-### 持续的情绪刺激
-
-
+#### 持续的情绪刺激
 
 短视频不是视频时长短，而是信息的间隔时间非常短。
 
@@ -92,9 +86,7 @@
 
 短视频需要信息浓度，需要痛点密集，以3秒为一个时间单元，进行持续的情绪化刺激。短视频不在乎是 3 秒、 30 秒还是 3 分钟，它只是以 3 秒为一个时间单位，对人进行一个持续化的情绪刺激，在每个 3 秒之内又有新的信息去承接。
 
-
-
-### 直接的利益点
+#### 直接的利益点
 
 ![](img/04db281e4a689921584c6417ec5bb6cc.png)
 
@@ -104,32 +96,31 @@
 
 形式：大字报+抖音特效；优点：短小精悍/简单直接/人群精准；缺点：标签模型窄，能推流的人群有限。
 
+[`tmpwppvideo_20241123_4.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BceLbyoGpozkejxlsL1c0colnhb)
 
-[tmpwppvideo_20241123_4.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BceLbyoGpozkejxlsL1c0colnhb)
+#### 爆款视频拆解
 
-爆款视频拆解
+①顺应人性的主题：偷拍同事上班日常，满足人性的好奇
 
-**①顺应人性的主题：**偷拍同事上班日常，满足人性的好奇
+②持续的情绪刺激：结合快节奏的事件切换，画面上持续的情绪化刺激
 
-**②持续的情绪刺激：**结合快节奏的事件切换，画面上持续的情绪化刺激
-
-**③直接的利益点：**配合点外卖便宜的直接广告利益点
+③直接的利益点：配合点外卖便宜的直接广告利益点
 
 单日引流人数5w+；单视频引流人数35w+
 
 ![](img/d7978647b78781e96ee558bbcfcdacc7.png)
 
-[tmpwppvideo_20241123_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cqm8bvwEHoS7QLxppKxcEfzKnmg)
+[`tmpwppvideo_20241123_1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Cqm8bvwEHoS7QLxppKxcEfzKnmg)
 
 ![](img/211f08a2f7ef57b51552b1fdffd21e59.png)
 
-# 如何带团队打造爆款引流内容？
+## 如何带团队打造爆款引流内容？
 
 ![](img/5bc59316360da7c1e946a1d0d2defb01.png)
 
-孙子兵法里讲到：**凡战者，以正合，以奇胜。**
+孙子兵法里讲到：凡战者，以正合，以奇胜。
 
-打仗得有常规部队正面出击，还得有奇兵 ，攻其不备取得胜利
+打仗得有常规部队正面出击，还得有奇兵，攻其不备取得胜利
 
 对于做内容、做素材而言的常规作战方法是什么？
 
@@ -155,7 +146,7 @@
 
 ![](img/0d1a7bdac1c26f295decbb9516a3440f.png)
 
-[tmpwppvideo_20241123_5.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mi3AbtC0joFV44xqvabcpQ1Nn0x)
+[`tmpwppvideo_20241123_5.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Mi3AbtC0joFV44xqvabcpQ1Nn0x)
 
 #### 80分模仿案例--美妆开箱
 
@@ -165,11 +156,11 @@
 
 ![](img/57ea091f3428b962f9d80f2decca7ba3.png)
 
-[tmpwppvideo_20241123_6.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z8HGbwzKUo0fIvxB0QzcHybNnYe)
+[`tmpwppvideo_20241123_6.mov`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Z8HGbwzKUo0fIvxB0QzcHybNnYe)
 
 知道了怎么样把一条跑量视频复刻出来后，这时候还是不着急进行创新，要先进行优化。为什么？相当于我们做一份卷子，我现在得了 60 分，然后我想办法，我给他做到 80 分，但是重新做一份卷子不一定有更高的分数，大概率还是60 分。
 
-### **用科学的方法优化内容**
+### 用科学的方法优化内容
 
 ![](img/efd652ced3ae5833e24c73a8746231eb.png)
 
@@ -179,19 +170,19 @@
 
 ### 给团队创造大脑高速运转的环境
 
-**在有任务目标的情**况下去思考，带团队玩脑洞填空接龙游戏。每次5-6个人参与，每轮10分钟，限时激发脑洞。
+在有任务目标的情况下去思考，带团队玩脑洞填空接龙游戏。每次5-6个人参与，每轮10分钟，限时激发脑洞。
 
 ![](img/4cd3d997f94a35e400cdfa80462e34df.png)
 
 ![](img/0518dbdc297eb36c044dd38540a1591d.png)
 
-### **总结：先模仿，再优化，再创新**
+### 总结：先模仿，再优化，再创新
 
 ![](img/2d49ad4f6bd88c3051913f2f56d0d891.png)
 
 做内容而言，其实是先模仿再优化再创新，并不是说模仿大于优化大于创新，而是指的我们先模仿知道什么是好的内容，知道什么是正确答案，然后我们再去进行优化，知道什么是正向优化，形成“网感”，然后可以开始有效创新。
 
-# 如何带团队持续打造爆款引流内容？
+## 如何带团队持续打造爆款引流内容？
 
 带团队是一个持续性的事情，团队能够做出一条爆款视频，如何持续性去打造出这样的爆款引流内容？
 
@@ -199,7 +190,7 @@
 
 ### 做内容流量的不败之法
 
-**不是简单做全网大爆几条视频，而是形成**模版，形成内容体系，持续性产出优质视频。
+不是简单做全网大爆几条视频，而是形成模版，形成内容体系，持续性产出优质视频。
 
 视频爆量不是胜利，引流/成交才是最终目的。
 
@@ -229,7 +220,7 @@
 
 做内容要和观众同频，带团队也要和伙伴思维同频。
 
-### 思维**法则二：拒绝侥幸心理，尊重常识**
+### 思维法则二：拒绝侥幸心理，尊重常识
 
 ![](img/d36e104f9265ca7940ba4a6c23b49feb.png)
 
@@ -252,3 +243,4 @@
 一起龙哥盟！！
 
 ![](img/f551d4e0e5074fe739156aebc34322fd.png)
+

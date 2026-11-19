@@ -1,3 +1,4 @@
+
 # 用 Claude Code + Kimi 新模型跑通了 Obsidian 工作流，效率起飞！（附教程）
 
 > 来源：[https://yunyinghui.feishu.cn/docx/PejgdJendoF7VlxCRcjceq09nHh](https://yunyinghui.feishu.cn/docx/PejgdJendoF7VlxCRcjceq09nHh)
@@ -84,11 +85,11 @@ unsplash mcp 搜索无版权网络图片，或者使用 minimax mcp 生成图片
 
 那就以这个为选题吧。
 
-> 提示词：我打算写一篇关于「小鹏人形机器人」的文章，请帮我搜索**查询它的最新信**息，**包括（但不限于）**它的 关键技术参数 、 宣称的应用场景 ，以及 行业内对它（特别是与特斯拉 Optimus）的对比分析 。请帮我汇总一份调研报告，并以 md 文件保存在当前文件夹下的「调研报告」中。
+> 提示词：我打算写一篇关于「小鹏人形机器人」的文章，请帮我搜索查询它的最新信息，包括（但不限于）它的 关键技术参数 、 宣称的应用场景 ，以及 行业内对它（特别是与特斯拉 Optimus）的对比分析 。请帮我汇总一份调研报告，并以 `md` 文件保存在当前文件夹下的 `调研报告` 中。
 
-**效果呈现 **：在 obsidian 中会有一个新的关于小鹏人形机器人 的调研文件，并已经直接打开预览。
+**效果呈现**：在 obsidian 中会有一个新的关于小鹏人形机器人 的调研文件，并已经直接打开预览。
 
-可以看到，kimi 调用 searchweb mcp 同时完成发布时间、基本情况及对比分析评测的搜索。而且是一遍思考在一遍工作，模型本身就是 Agent，有那个味了。
+可以看到，kimi 调用 `searchweb mcp` 同时完成发布时间、基本情况及对比分析评测的搜索。而且是一遍思考在一遍工作，模型本身就是 Agent，有那个味了。
 
 ![](img/bf13f01219e4384d5a29e0dd9a545525.png)
 
@@ -114,9 +115,9 @@ unsplash mcp 搜索无版权网络图片，或者使用 minimax mcp 生成图片
 &gt;请从报告中提取小鹏 IRON和特斯拉 Optimus的信息，作为两条记录填充到这个表格中。
 ```
 
-**能力考察 **：联网搜索+推理思考+MCP 工具调用能力+执行指令
+**能力考察**：联网搜索+推理思考+MCP 工具调用能力+执行指令
 
-**效果呈现 **：在飞书多维表格我的 case 库中就会多关于 kimi-k 2-thinking 的 case 数据。
+**效果呈现**：在飞书多维表格我的 case 库中就会多关于 kimi-k 2-thinking 的 case 数据。
 
 ![](img/8d735b52b43586e70ff5d712e222ad16.png)
 
@@ -168,9 +169,9 @@ unsplash mcp 搜索无版权网络图片，或者使用 minimax mcp 生成图片
 
 # 图片素材创作
 
-比如我想找一只羊在草地上奔跑的配图，原先需要去网上搜，然后下载下来，再传到 oss，放到 obsidian，现在只需要在 obsidian 中就可以都完成。
+比如我想找一只羊在草地上奔跑的配图，原先需要去网上搜，然后下载下来，再传到 `oss`，放到 obsidian，现在只需要在 obsidian 中就可以都完成。
 
-通过 unsplash mcp 搜索无版权网络图片，或者使用 minimax mcp 生成图片素材。
+通过 `unsplash mcp` 搜索无版权网络图片，或者使用 `minimax mcp` 生成图片素材。
 
 ```
 使用minimax mcp为我生成一只羊在草地上奔跑的图片，要求可爱 
@@ -193,14 +194,14 @@ unsplash mcp 搜索无版权网络图片，或者使用 minimax mcp 生成图片
 ```
 帮我根据选定内容，生成文章图，按照以下步骤：
 &gt;1、提取重要信息，如果是关键词，则需要先进行搜索相关内容，
-&gt;2、读取提示词&quot;文章信息图生成提示词. md&quot;, 作为生成 html 信息图的提示词，
+&gt;2、读取提示词&quot;文章信息图生成提示词. md&quot;, 作为生成 `html` 信息图的提示词，
 &gt;3、按 2.中的提示词执行新建一个html 信息图，保存在文件夹，生成结果信息图，
-&gt;4、用 Playwright把html打开后截图，保存图片在当前文件夹
-&gt;5、读取&quot;上传 oss 提示词. md&quot;,，将图片上传到 oss，并直接返回一个上传后的链接
+&gt;4、用 `Playwright`把html打开后截图，保存图片在当前文件夹
+&gt;5、读取&quot;上传 oss 提示词. md&quot;,，将图片上传到 `oss`，并直接返回一个上传后的链接
 &gt;6、把这个链接直接填充到当前文章中光标所在位置
 ```
 
-**效果呈现 **：自动将图片插入到文章中形成了插画配图
+**效果呈现**：自动将图片插入到文章中形成了插画配图
 
 k2 thinking 的前端能力很不错，我是一次就生成出来了。不过还是需要多在上下文中先调整好效果。
 
@@ -208,17 +209,17 @@ k2 thinking 的前端能力很不错，我是一次就生成出来了。不过�
 
 接下来，就是把上面的所有步骤做成一个工作流，只通过模型的原生 Agent 能力，我们看看是否能完成任务。
 
-本来我想试试 Claude Skills，但这次就先以提示词的方式吧，后面再分享 Claude Skills 的方式控制稳定性。
+本来我想试试 `Claude Skills`，但这次就先以提示词的方式吧，后面再分享 `Claude Skills` 的方式控制稳定性。
 
 ![](img/7c37efa4fd5462a834b6d79e46ab306c.png)
 
 这是相对复杂任务，一句提示词创作一篇👸号文章。
 
-> 请你严格按照"文章生成提示词。 md"要求， 生成一篇主题为"小鹏人形机器人"的文章
+> 请你严格按照`文章生成提示词。 md`要求， 生成一篇主题为"小鹏人形机器人"的文章
 
 这其实涉及：信息提取+联网搜索+推理思考+MCP 工具调用能力+执行指令（超级复杂任务场景）
 
-**效果呈现 **：一句提示词，自动创作👸号图文，并发布到👸号后台中。
+**效果呈现**：一句提示词，自动创作👸号图文，并发布到👸号后台中。
 
 整个流程如下：
 
@@ -234,25 +235,25 @@ k2 thinking 的前端能力很不错，我是一次就生成出来了。不过�
 
 obsidian 的安装和终端插件这里就不再哔哔了，教程可以翻看我上一篇文章。
 
-那如何在终端中使用 Claude Code，并配置 Kimi k2 thinking 呢？
+那如何在终端中使用 `Claude Code`，并配置 Kimi k2 thinking 呢？
 
-如何在 Claude Code 中使用飞书 MCP 呢？
+如何在 `Claude Code` 中使用飞书 MCP 呢？
 
 其实也非常简单，一共就 3 步。
 
-第一步，终端安装 Claude Code
+第一步，终端安装 `Claude Code`
 
 ```
 npm install -g @anthropic-ai/claude-code 
 ```
 
-> 为保证速度，建议开启代理，并在 clash 中开启 TUN。如果电脑没安装 nodejs，需要先安装下。
+> 为保证速度，建议开启代理，并在 `clash` 中开启 `TUN`。如果电脑没安装 `nodejs`，需要先安装下。
 
 第二步，配置 Kimi k2 thinking
 
 在配置前，需要先去 kimi 开放平台申请 api key
 
-地址：https://platform.moonshot.cn/console/api-keys
+地址：`https://platform.moonshot.cn/console/api-keys`
 
 ![](img/1d0a38630683d88b25c7a194bb991fc4.png)
 
@@ -265,19 +266,19 @@ export ANTHROPIC_MODEL=&quot;kimi-k2-thinking-turbo&quot;
 export ANTHROPIC_SMALL_FAST_MODEL=&quot;kimi-k2-thinking-turbo&quot;
 ```
 
-注意将 key 替换为刚在平台申请的。
+注意将 `key` 替换为刚在平台申请的。
 
-一切准备就绪后，就可以终端中直接输入：claude
+一切准备就绪后，就可以终端中直接输入：`claude`
 
 ![](img/f0f3889766c95fd4d3a8834b184e1de2.png)
 
-不出意外的话，看到这样的界面就代表已经配置完毕，在对话框中按住 tab 键，就能切换 thinking 模型是否开启。这里建议都开下。
+不出意外的话，看到这样的界面就代表已经配置完毕，在对话框中按住 `tab` 键，就能切换 thinking 模型是否开启。这里建议都开下。
 
 ![](img/05922e5928dca292f46acb9d1f71b1aa.png)
 
 **第三步，配置飞书 MCP**
 
-在 obsidian 的仓库目录下添加 。mcp. json 文件，输入以下配置：
+在 obsidian 的仓库目录下添加 `.mcp.json` 文件，输入以下配置：
 
 ```
 {
@@ -339,7 +340,7 @@ npx -y @larksuiteoapi/lark-mcp login -a &lt;your_app_id&gt; -s &lt;your_app_secr
 
 唤起授权页面，授权 OK 即可。
 
-这样就可以在 claude code 中通过 kimi k2 thinking 调用飞书 mcp，做很多同步操作了。
+这样就可以在 `claude code` 中通过 `kimi k2 thinking` 调用飞书 mcp，做很多同步操作了。
 
 # 写在最后
 
@@ -351,10 +352,10 @@ npx -y @larksuiteoapi/lark-mcp login -a &lt;your_app_id&gt; -s &lt;your_app_secr
 
 kimi 的表现也很好，在复杂任务上表现的非常稳，看来以后，可以更多的折腾了。
 
-不过目前 kimi k2 thinking 在上下文上依旧还有进步的空间，有时候会无法精确定位我想要的句子。
+不过目前 `kimi k2 thinking` 在上下文上依旧还有进步的空间，有时候会无法精确定位我想要的句子。
 
-对了， 你觉得这套工作流里哪个环节对你最有用？ 留言区聊聊，也欢迎分享你的 Obsidian 自动化经验。
+对了， 你觉得这套工作流里哪个环节对你最有用？ 留言区聊聊，也欢迎分享你的 `Obsidian` 自动化经验。
 
-如果觉得有帮助， **点个赞、转给需要的朋友 **，让更多人 get 到这个效率神器。
+如果觉得有帮助， **点个赞、转给需要的朋友** ，让更多人 get 到这个效率神器。
 
 下期见。

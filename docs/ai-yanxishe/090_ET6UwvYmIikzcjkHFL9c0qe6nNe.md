@@ -1,3 +1,4 @@
+
 # Sora学习笔记（持续更新版.....)
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/Ay9gdVJeKo7rBbxs1DScgsoon2g](https://aiyanxishe.feishu.cn/docx/Ay9gdVJeKo7rBbxs1DScgsoon2g)
@@ -8,7 +9,7 @@
 
 ![](img/5ec34837cda1eb1b9fc27c57056d2e02.png)
 
-# 一、Sora介绍
+## 一、Sora介绍
 
 OpenAI2024年2月16日发布了 Sora，一种文字生成视频的技术，效果相当炸裂。能够生成1分钟的视频，目前最强的AI视频生成技术，请看下面的视频：
 
@@ -18,55 +19,48 @@ OpenAI2024年2月16日发布了 Sora，一种文字生成视频的技术，效�
 
 Sora是一个基于大规模训练的文本控制视频生成扩散模型。它能够生成长达 1 分钟的高清视频，涵盖广泛的视觉数据类型和分辨率。Sora通过在视频和图像的压缩潜在空间中训练，将其分解为时空位置补丁，实现了可扩展的视频生成。Sora还展现出一些模拟物理世界和数字世界的能力，如三维一致性和交互，揭示了继续扩大视频生成模型规模来发展高能力模拟器的前景。
 
-## **体验入口**
+### 体验入口
 
 👉点击前往：OpenAI Sora体验入口
 
-## 需求人群
+### 需求人群
 
 +   生成扩散模型视频内容
-
 +   提供视觉模能力的应用开发
-
 +   创建和编辑视频内容的工具
 
-## 使用场景示例
+### 使用场景示例
 
 +   在视频生成应用中使用Sora生成符合文本提示的内容
-
 +   结合Sora在游戏或模拟器中生成高保真纹理和环境
-
 +   通过Sora实现图像和视频的无缝编辑和过渡
 
-## 产品特色
+### 产品特色
 
 +   基于文本提示生成高质量视频
-
 +   生成变化分辨率、长度和纵横比的视频
-
 +   基于图像和视频继续生成
-
 +   模拟物理和数字世界的某些行为
 
-## 官方Demo案例
+### 官方Demo案例
 
 Sora可以模拟真实世界的运动方式，根据提示词生成长达一分钟的视频，同时保证画质和连续性。官方发布视频demo片段均由该模型生成,未经后期编辑和修改。
 
 👉点击前往
 
-## Sora模型弱点
+### Sora模型弱点
 
 OpenAI表示，**Sora并不是一个完美的模型**，可能会出现空间混淆、物理交互不准确等情况。
 
 👉点击前往
 
-## Sora与其他视频模型PK
+### Sora与其他视频模型PK
 
 在和主流视频生成模型的对比中，Sora在时长和效果上可以说横扫市面上所有的对手。
 
 👉点击前往
 
-## Sora权威信息源
+### Sora权威信息源
 
 👉信**息源头**
 
@@ -78,7 +72,7 @@ OpenAI表示，**Sora并不是一个完美的模型**，可能会出现空间混
 
 4、Sam Altman twitter: https://twitter.com/sama
 
-👉S[ora背后的研发团队](https://faqocxi7k2.feishu.cn/wiki/BWdjw90V7ikENKkPf2WcjigfnKM)
+👉[Sora背后的研发团队](https://faqocxi7k2.feishu.cn/wiki/BWdjw90V7ikENKkPf2WcjigfnKM)
 
 👉Sora的两个核心leader:
 
@@ -88,13 +82,13 @@ Bill Pebbles  twitter(https://twitter.com/billpeeb)
 
 两人都是23年从伯克利（Berkeley）毕业的哲学博士（PhD）
 
-## 央视报道Sora
+### 央视报道Sora
 
 ![](img/9421a96ff48deb49e70cff1bec7f58a1.png)
 
 [2月20 央式介绍Sora.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N9yPbn6h3o5ScaxDpVvcGhxdnif)
 
-## Sora 内测账号申请方式
+### Sora 内测账号申请方式
 
 下面这张图是Sam发的推特，招募Sora红队网络人员进行内测。
 
@@ -104,7 +98,7 @@ Bill Pebbles  twitter(https://twitter.com/billpeeb)
 
 中文：OpenAI 红队网络
 
-**What is the OpenAI **Red Teaming Network?
+#### What is the OpenAI Red Teaming Network?
 
 The term red teaming has been used to encompass a broad range of risk assessment methods for AI systems, including qualitative capability discovery, stress testing of mitigations, automated red teaming using language models, providing feedback on the scale of risk for a particular vulnerability, etc. In order to reduce confusion associated with the term “red team”, help those reading about our methods to better contextualize and understand them, and especially to avoid false assurances, we are working to adopt clearer terminology, as advised in Khlaaf, 2023, however, for simplicity and in order to use language consistent with that we used with our collaborators, we use the term “red team”.
 
@@ -116,7 +110,7 @@ The OpenAI Red Teaming Network is a community of trusted and experienced experts
 
 Outside of red teaming campaigns commissioned by OpenAI, members will have the opportunity to engage with each other on general red teaming practices and findings. The goal is to enable more diverse and continuous input, and make red teaming a more iterative process. This network complements other collaborative AI safety opportunities including our Researcher Access Program and open-source evaluations.
 
-什么是 OpenAI 红队网络？
+#### 什么是 OpenAI 红队网络？
 
 **红队**一词已被用来涵盖人工智能系统的广泛风险评估方法，包括定性能力发现、缓解措施的压力测试、使用语言模型的自动化红队、提供特定漏洞风险规模的反馈等为了减少与“红队”一词相关的混淆，帮助那些阅读我们的方法的人更好地结合上下文并理解它们，特别是为了避免错误的保证，我们正在努力采用更清晰的术语，正如 Khlaaf, 2023 中建议的那样，然而，为了简单起见，并且为了使用与我们与合作者使用的语言一致的语言，我们使用术语“红队”。
 
@@ -128,71 +122,67 @@ OpenAI 红队网络是一个由值得信赖且经验丰富的专家组成的社�
 
 除了 OpenAI 委托的红队活动之外，成员还将有机会就一般红队实践和调查结果进行相互交流。目标是实现更加多样化和持续的输入，并使红队成为一个更加迭代的过程。该网络补充了其他协作人工智能安全机会，包括我们的研究人员访问计划和开源评估。
 
-##
-
-**Why join the OpenAI **Red Teaming Network?
+#### Why join the OpenAI Red Teaming Network?
 
 This network offers a unique opportunity to shape the development of safer AI technologies and policies, and the impact AI can have on the way we live, work, and interact. By becoming a part of this network, you will be a part of our bench of subject matter experts who can be called upon to assess our models and systems at multiple stages of their deployment.
 
-为何加入 OpenAI 红队网络？
+#### 为何加入 OpenAI 红队网络？
 
 该网络提供了独特的机会来塑造更安全的人工智能技术和政策的发展，以及人工智能对我们生活、工作和互动方式的影响。通过成为该网络的一部分，您将成为我们主题专家的一员，他们可以被要求在部署的多个阶段评估我们的模型和系统。
 
-Seeking diverse expertise
+#### Seeking diverse expertise
 
 Assessing AI systems requires an understanding of a wide variety of domains, diverse perspectives and lived experiences. We invite applications from experts from around the world and are prioritizing geographic as well as domain diversity in our selection process.
 
-**寻求多元化的专业知识**
+#### 寻求多元化的专业知识
 
 评估人工智能系统需要了解广泛的领域、不同的观点和生活经验。我们邀请来自世界各地的专家提出申请，并在我们的选择过程中优先考虑地理和领域的多样性。
 
-Compensation and confidentiality
+#### Compensation and confidentiality
 
 All members of the OpenAI Red Teaming Network will be compensated for their contributions when they participate in a red teaming project. While membership in this network won’t restrict you from publishing your research or pursuing other opportunities, you should take into consideration that any involvement in red teaming and other projects are often subject to Non-Disclosure Agreements (NDAs) or remain confidential for an indefinite period.
 
-**报酬和保密**
+#### 报酬和保密
 
 OpenAI 红队网络的所有成员在参与红队项目时都将获得贡献补偿。虽然该网络的成员资格不会限制您发表研究成果或寻求其他机会，但您应该考虑到，参与红队和其他项目通常需要遵守保密协议 (NDA) 或无限期保密。时期。
 
-##
-
-**How to apply**
+#### How to apply
 
 申请网址：https://openai.com/form/red-teaming-network
 
-**如何申请**
+#### 如何申请
 
 申请网址：https://openai.com/form/red-teaming-network
 
 按照要求填写，提交等待审核即可。
 
-# 二、技术拆解
+## 二、技术拆解
 
-## 官方技术报告文 (中英文对照版)
+### 官方技术报告文 (中英文对照版)
 
 👉OpenAI Sora视频生成模型技术报告中英全文+总结+影响分析
 
-## 腾讯科技拆解文
+### 腾讯科技拆解文
 
 👉OpenAI王炸模型引爆科技圈，我们第一时间深读了官方技术报告
 
-## 阿里巴巴分析文
+### 阿里巴巴分析文
 
 👉复刻Sora有多难？一张图带你读懂Sora的技术路径
 
-👉一[文看Sora技术推演](https://mp.weixin.qq.com/s/3RnrO7fSMizEl3mN3SXG5w)
+👉[一文看Sora技术推演](https://mp.weixin.qq.com/s/3RnrO7fSMizEl3mN3SXG5w)
 
-## 素人笔记
+### 素人笔记
 
 👉Sora是怎么训练出来的 | 笔记
 
-## 参考论文
+### 参考论文
 
-👉S[ora参考论文](https://huggingface.co/collections/pxiaoer/sora-65d0e2db17e2b305e0fc572e)
+👉[Sora参考论文](https://huggingface.co/collections/pxiaoer/sora-65d0e2db17e2b305e0fc572e)
 
-# 三、研究报告
+## 三、研究报告
 
-## 券商研报
+### 券商研报
 
 短短三日，已有超过14家券商发布逾19份相关研报，主要围绕Sora的发布及其对AI技术、市场、行业应用等方面的影响进行了深入分析和讨论，算力有望成投资新热门。
 
@@ -200,162 +190,103 @@ OpenAI 红队网络的所有成员在参与红队项目时都将获得贡献补�
 
 [SORA免费学习资源.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KL6vb6HQloUO4GxdMm3cTMIYnqo)
 
-![](img/f7aabceed97972285f803cbbef8934f5.png)
 
-[《 绝世好 Sora 》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QjpUbVJCFoQPxbxPul7cNEVcnid)
 
-![](img/e39a0a0b8a3431f71e9879143e5417b8.png)
+## 国内Sora研报
 
-[多模态AI大模型点评：OpenAI发布首款文生视频大模型Sora，训练算力需求大幅提升.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFgtbWJXso4anKxohSwcxZDWnGc)
-
-![](img/a4fa1ada2da570e4ba47d81f3e868d37.png)
-
-[计算机行业点评报告：Sora重磅发布，AI产业迈入新阶段.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O9MYbNt6foNHrUx3d52cmAzVnnb)
-
-![](img/9beca6fb3c1f09cbdf2c688f518ccd14.png)
-
-[传媒互联网行业点评：Sora横空出世，关注内容资产价值重估下的两条投资主线.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WLiZbigPloqZLzxXSPec2x2Rnxt)
-
-![](img/94bf292a6d83b9d8745f6a4df8ab0d2b.png)
-
-[全球科技行业周报：OpenAI发布首个AI视频模型Sora，影视、旅游及本地消费高景气.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MRs9bC8dRoBb7Ext2prcm9abnfJ)
-
-![](img/c7e96837a6a74d57f01d71b1e0d4ee4d.png)
-
-[计算机行业跟踪报告：OpenAI推出首个文生视频大模型Sora，引领AI文生视频行业跨越式发展.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KbTPbxLYpoSRcDx5QVEcYv5vnff)
-
-![](img/d90c501d58e62745bad2eb2dbd222042.png)
-
-[通信行业研究周报：通信行业高质量发展稳步推进，Open AI大模型持续巩固优势.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PqdIbowGaoFxVCxUphfckmgQnNM)
-
-![](img/928ba46fdec5cf912f7152f6efbcd5bc.png)
-
-[信息技术产业行业研究：Open AI文生视频Sora惊艳亮相，看好Ai受益产业链.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PAPRbwO3KoMkglxLLFLchEDanmd)
-
-![](img/035826fae4243a8a2bb3872bb2cd00e2.png)
-
-[木头姐2024年度重磅AI技术革命Big Ideas 2024（中文编译版）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OvHObK9efojLObx2UDRcQD8OnEg)
-
-![](img/3805bd03420dc3df58c0a21bd6fa65bd.png)
-
-[计算机：Sora实现文生视频跨越式突破，AIGC持续正反馈.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PQribf4JHocKMCxKRhFctNIenNh)
-
-![](img/32b757d28b84eb679eba9e8766a52224.png)
-
-[【中泰传媒】OpenAI发布首款文生视频模型Sora，多模态推动多行业发展可期.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EdhRblPFqon53NxIMDkcHZD0n7I)
+- ![](img/f7aabceed97972285f803cbbef8934f5.png)
+  [《绝世好 Sora》.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QjpUbVJCFoQPxbxPul7cNEVcnid)
+- ![](img/e39a0a0b8a3431f71e9879143e5417b8.png)
+  [多模态AI大模型点评：OpenAI发布首款文生视频大模型Sora，训练算力需求大幅提升.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PFgtbWJXso4anKxohSwcxZDWnGc)
+- ![](img/a4fa1ada2da570e4ba47d81f3e868d37.png)
+  [计算机行业点评报告：Sora重磅发布，AI产业迈入新阶段.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/O9MYbNt6foNHrUx3d52cmAzVnnb)
+- ![](img/9beca6fb3c1f09cbdf2c688f518ccd14.png)
+  [传媒互联网行业点评：Sora横空出世，关注内容资产价值重估下的两条投资主线.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WLiZbigPloqZLzxXSPec2x2Rnxt)
+- ![](img/94bf292a6d83b9d8745f6a4df8ab0d2b.png)
+  [全球科技行业周报：OpenAI发布首个AI视频模型Sora，影视、旅游及本地消费高景气.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MRs9bC8dRoBb7Ext2prcm9abnfJ)
+- ![](img/c7e96837a6a74d57f01d71b1e0d4ee4d.png)
+  [计算机行业跟踪报告：OpenAI推出首个文生视频大模型Sora，引领AI文生视频行业跨越式发展.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KbTPbxLYpoSRcDx5QVEcYv5vnff)
+- ![](img/d90c501d58e62745bad2eb2dbd222042.png)
+  [通信行业研究周报：通信行业高质量发展稳步推进，Open AI大模型持续巩固优势.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PqdIbowGaoFxVCxUphfckmgQnNM)
+- ![](img/928ba46fdec5cf912f7152f6efbcd5bc.png)
+  [信息技术产业行业研究：Open AI文生视频Sora惊艳亮相，看好Ai受益产业链.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PAPRbwO3KoMkglxLLFLchEDanmd)
+- ![](img/035826fae4243a8a2bb3872bb2cd00e2.png)
+  [木头姐2024年度重磅AI技术革命Big Ideas 2024（中文编译版）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OvHObK9efojLObx2UDRcQD8OnEg)
+- ![](img/3805bd03420dc3df58c0a21bd6fa65bd.png)
+  [计算机：Sora实现文生视频跨越式突破，AIGC持续正反馈.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PQribf4JHocKMCxKRhFctNIenNh)
+- ![](img/32b757d28b84eb679eba9e8766a52224.png)
+  [【中泰传媒】OpenAI发布首款文生视频模型Sora，多模态推动多行业发展可期.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EdhRblPFqon53NxIMDkcHZD0n7I)
 
 ## 研报分析
 
-1、**Sora的发布和影响**：Sora是OpenAI发布的首个视频生成大模型，被认为是AI产业的一个重要里程碑。券商们普遍认为，Sora的发布加速了AGI时代的到来，对视频行业乃至整个人工智能领域都将产生深远影响
-
-2、**AI技术的发展**：券商研报强调了Sora模型在AI多模态领域的飞跃式发展，预示着AI创作等相关领域将迎来深度变革。这包括多模态相关的训练及推理应用的扩大，以及AI赋能范围的进一步扩大
-
-3、**市场反应和投资机会**：券商们普遍给予Sora模型极高评价，认为其将为AI视频行业带来巨大变革，并有望成为投资新热门。特别是在算力需求方面，算力有望成为新的投资热点
-
-4、**行业应用前景**：券商研报还关注到Sora在影视行业的潜在应用，认为OpenAI通过教AI理解和模拟现实中的运动，可能会使影视行业迎来巨变时刻。Sora是一种通用的模型，能够理解和模拟现实世界中的各种场景，帮助人类解决与现实交互的问题
-
-5、**技术特点和能力**：Sora模型能够通过文本生成长达1分钟的长视频，展现了其在AI视频生成方面的跨越式突破。此外，它还具备一键成片、AI美术设计、文生音乐、音频增强、音效分析等核心能力
+1. **Sora的发布和影响**：Sora是OpenAI发布的首个视频生成大模型，被认为是AI产业的一个重要里程碑。券商们普遍认为，Sora的发布加速了AGI时代的到来，对视频行业乃至整个人工智能领域都将产生深远影响
+2. **AI技术的发展**：券商研报强调了Sora模型在AI多模态领域的飞跃式发展，预示着AI创作等相关领域将迎来深度变革。这包括多模态相关的训练及推理应用的扩大，以及AI赋能范围的进一步扩大
+3. **市场反应和投资机会**：券商们普遍给予Sora模型极高评价，认为其将为AI视频行业带来巨大变革，并有望成为投资新热门。特别是在算力需求方面，算力有望成为新的投资热点
+4. **行业应用前景**：券商研报还关注到Sora在影视行业的潜在应用，认为OpenAI通过教AI理解和模拟现实中的运动，可能会使影视行业迎来巨变时刻。Sora是一种通用的模型，能够理解和模拟现实世界中的各种场景，帮助人类解决与现实交互的问题
+5. **技术特点和能力**：Sora模型能够通过文本生成长达1分钟的长视频，展现了其在AI视频生成方面的跨越式突破。此外，它还具备一键成片、AI美术设计、文生音乐、音频增强、音效分析等核心能力
 
 这些研报普遍看好Sora的未来发展潜力，并认为其将为相关行业的变革带来积极影响。
 
-| # **券商公司对Sora的研报** |  |
+**券商公司对Sora的研报**
+
+| 券商公司 | 研报观点 |
 | --- | --- |
-| ####### **券商公司** | ####### **研报观点** |
-| **浙商证券** | 浙商证券：有望开启多模态大模型的新一轮浪潮 |
-| **国泰君安** | 国泰君安：AI生成视频的里程碑。国泰君安在研报中指出，2月16日OpenAI发布文生视频模型Sora，AI视频生成能力实现跨越式发展，模型强大的视频生成能力推高行业天花板，产业赋能的深度和广度有望超预期拓展。 |
-| **东吴证券** | 东吴证券：多模态应用有望加速 |
-| **天风证券** | 天风证券：下一个亿级用户互联网平台雏形已然出现。天风证券认为，在内容创作工具，OpenAI已经和其他产业出现代际差，并带动行业大幅进展，未来一年商业化预计大幅推进。 |
-| **国盛证券** | 国盛证券指出，影视动画行业的颠覆性时刻到来，AI算力有望继续成为新一年的热门投资方向； |
-| **浙商证券** | 浙商证券认为，有望开启多模态大模型的新一轮浪潮；华金证券建议重点关注视频生成及强相关、率先落地的领域，开源证券建议布局AI应用及算力方向。 |
-| **招商证券** | 招商证券指出，Sora显著领先于其他文生视频模型，推动AI视频生成进入了一个全新的时代； |
-| **华泰证券** | 华泰证券认为，AI视频进入大规模应用前夜。 |
-| **华金证券** | 华金证券给出的投资建议是，Sora的发布意味着继文字生成和图像生成后，视频生成技术取得了突破性的进展，而今年也将成为视频生成的元年。 |
+| 浙商证券 | 浙商证券：有望开启多模态大模型的新一轮浪潮 |
+| 国泰君安 | 国泰君安：AI生成视频的里程碑。国泰君安在研报中指出，2月16日OpenAI发布文生视频模型Sora，AI视频生成能力实现跨越式发展，模型强大的视频生成能力推高行业天花板，产业赋能的深度和广度有望超预期拓展。 |
+| 东吴证券 | 东吴证券：多模态应用有望加速 |
+| 天风证券 | 天风证券：下一个亿级用户互联网平台雏形已然出现。天风证券认为，在内容创作工具，OpenAI已经和其他产业出现代际差，并带动行业大幅进展，未来一年商业化预计大幅推进。 |
+| 国盛证券 | 国盛证券指出，影视动画行业的颠覆性时刻到来，AI算力有望继续成为新一年的热门投资方向； |
+| 浙商证券 | 浙商证券认为，有望开启多模态大模型的新一轮浪潮；华金证券建议重点关注视频生成及强相关、率先落地的领域，开源证券建议布局AI应用及算力方向。 |
+| 招商证券 | 招商证券指出，Sora显著领先于其他文生视频模型，推动AI视频生成进入了一个全新的时代； |
+| 华泰证券 | 华泰证券认为，AI视频进入大规模应用前夜。 |
+| 华金证券 | 华金证券给出的投资建议是，Sora的发布意味着继文字生成和图像生成后，视频生成技术取得了突破性的进展，而今年也将成为视频生成的元年。 |
 
 ## 海外Sora研报32份
 
-![](img/d922925d8e2eb0ccaf1b048b242cfbb4.png)
+- ![](img/d922925d8e2eb0ccaf1b048b242cfbb4.png)
+  [Zero-Shot Text-to-Image Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vr8oblUswoKd2sxKZuMcj9LOnoe)
+- ![](img/ebcf2a213ed6905e06f61daa618542ae.png)
+  [World Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SxctbHti2o7658xveYrcEoJjnMc)
+- ![](img/fe6977d984fc2594594aa0e0fce2d8b1.png)
+  [VideoGPT- Video Generation using VQ-VAE and Transformers.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ku2vb7Z7goeMq3xbxPJcczRLnpc)
+- ![](img/1b7e508fe6a33718f0ede625fe6e04a0.png)
+  [Unsupervised Learning of Video Representations using LSTMs.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P3ZhbQ4Q7oiya1x9G7tcObY0nWc)
+- ![](img/85af855d6ef31a553049b1fe0a064efe.png)
+  [SDEdit- Guided Image Synthesis and Editing with Stochastic Differential Equations .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PZTGbOAzwoyaJKxZKqFck5ALnkh)
+- ![](img/45101dcbb99279562f483859f9fd020a.png)
+  [Recurrent Environment Simulators.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UFNubQ15komdFVxeKKscQdZpnmh)
+- ![](img/e1c683b08ab76d8938e1f24ee26e4ec3.png)
+  [Scaling Autoregressive Models for Content-Rich Text-to-Image Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DemfbKjFmo4Fe3xTPKbcOJ1Gnjg)
+- ![](img/5d07068802b2bd18c26982dbbde0a5f1.png)
+  [Photorealistic Video Generation with Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G1DfbBgEQoJd0bx1zLMc0CbwnRb)
+- ![](img/c0e72dce47d0c6231756ef24a3b2b1ee.png)
+  [Scalable Diffusion Models with Transformers .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OpS3bGBBxo62IExmpt5cFBvznJi)
+- ![](img/de2bcec76da9d8f70db8275f8040c842.png)
+  [Patch n' Pack- NaViT, a Vision Transformer for any Aspect Ratio and Resolution.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L3o7btKyco9v8LxvWdxcKZ9hnKb)
+- ![](img/c99212ec9f8089bc5635a2eb9ca05aa4.png)
+  [Improved Denoising Diffusion Probabilistic Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IATlb1a79o2imExu41OcYg6XnQb)
+- ![](img/f8c0b478e8ebd400e6906ed2e09e5692.png)
+  [NÜWA- Visual Synthesis Pre-training for Neural visUal World creAtion .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AXPbb2VUeoh5rRxfwlucqVUwnki)
+- ![](img/5f86dc1e8548a50a12b8132a358857ef.png)
+  [Masked Autoencoders Are Scalable Vision Learners.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VzunbtQEVopNqQx5BbRcFSjNnmc)
+- ![](img/56a81325f77c22b2ffb9a0be2e1bab1b.png)
+  [Language Models are Few-Shot Learners.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HlSXb4xHvoqUx1xNfAtcdgConah)
+- ![](img/c36c05bbbbdb20b259d72151666615ec.png)
+  [MoCoGAN- Decomposing Motion and Content for Video Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LZnGbQ4jnohE7AxtUDBcPPv9n1c)
+- ![](img/939d10fbefacafed3200329d06bb120e.png)
+  [Improving Image Generation with Better Captions.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OzLGbUWZsolY4gxWqRBcatr0nHc)
+- ![](img/c9e1c872eb6429e81f13502110df4db7.png)
+  [Imagen Video- High Definition Video Generation with Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IgsabmrZCorG7TxjsKIcKqFynsf)
+- ![](img/6af1f1566d2fa77f7ed1ea4018afc2b7.png)
+  [Hierarchical Text-Conditional Image Generation with CLIP Latents.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WzINb09LUopoZjxHAKCc0EtbnAg)
+- ![](img/fd9b7a2548bf2a2b1eaa6cfdba553c0b.png)
+  [High-Resolution Image Synthesis with Latent Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ThxSbL0SEo1eCaxUzcQc6rgYnaf)
+- ![](img/6b7d31d1fb734723cc5d7fb922806659.png)
+  [Generative Pretraining From Pixels.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MJEZbjrV4oKbncxHvfccANdRngb)
+- ![](img/fd696a131e0535d5269a23389c9c402a.png)
+  [Generating Long Videos of Dynamic Scenes.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BKg3b3Qd9omJFrx8RGRcJ2Vzn1d)
 
-[Zero-Shot Text-to-Image Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Vr8oblUswoKd2sxKZuMcj9LOnoe)
 
-![](img/ebcf2a213ed6905e06f61daa618542ae.png)
-
-[World Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SxctbHti2o7658xveYrcEoJjnMc)
-
-![](img/fe6977d984fc2594594aa0e0fce2d8b1.png)
-
-[VideoGPT- Video Generation using VQ-VAE and Transformers.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ku2vb7Z7goeMq3xbxPJcczRLnpc)
-
-![](img/1b7e508fe6a33718f0ede625fe6e04a0.png)
-
-[Unsupervised Learning of Video Representations using LSTMs.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/P3ZhbQ4Q7oiya1x9G7tcObY0nWc)
-
-![](img/85af855d6ef31a553049b1fe0a064efe.png)
-
-[SDEdit- Guided Image Synthesis and Editing with Stochastic Differential Equations .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PZTGbOAzwoyaJKxZKqFck5ALnkh)
-
-![](img/45101dcbb99279562f483859f9fd020a.png)
-
-[Recurrent Environment Simulators.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UFNubQ15komdFVxeKKscQdZpnmh)
-
-![](img/e1c683b08ab76d8938e1f24ee26e4ec3.png)
-
-[Scaling Autoregressive Models for Content-Rich Text-to-Image Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DemfbKjFmo4Fe3xTPKbcOJ1Gnjg)
-
-![](img/5d07068802b2bd18c26982dbbde0a5f1.png)
-
-[Photorealistic Video Generation with Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G1DfbBgEQoJd0bx1zLMc0CbwnRb)
-
-![](img/c0e72dce47d0c6231756ef24a3b2b1ee.png)
-
-[Scalable Diffusion Models with Transformers .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OpS3bGBBxo62IExmpt5cFBvznJi)
-
-![](img/de2bcec76da9d8f70db8275f8040c842.png)
-
-[Patch n' Pack- NaViT, a Vision Transformer for any Aspect Ratio and Resolution.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L3o7btKyco9v8LxvWdxcKZ9hnKb)
-
-![](img/c99212ec9f8089bc5635a2eb9ca05aa4.png)
-
-[Improved Denoising Diffusion Probabilistic Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IATlb1a79o2imExu41OcYg6XnQb)
-
-![](img/f8c0b478e8ebd400e6906ed2e09e5692.png)
-
-[NÜWA- Visual Synthesis Pre-training for Neural visUal World creAtion .pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AXPbb2VUeoh5rRxfwlucqVUwnki)
-
-![](img/5f86dc1e8548a50a12b8132a358857ef.png)
-
-[Masked Autoencoders Are Scalable Vision Learners.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VzunbtQEVopNqQx5BbRcFSjNnmc)
-
-![](img/56a81325f77c22b2ffb9a0be2e1bab1b.png)
-
-[Language Models are Few-Shot Learners.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HlSXb4xHvoqUx1xNfAtcdgConah)
-
-![](img/c36c05bbbbdb20b259d72151666615ec.png)
-
-[MoCoGAN- Decomposing Motion and Content for Video Generation.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LZnGbQ4jnohE7AxtUDBcPPv9n1c)
-
-![](img/939d10fbefacafed3200329d06bb120e.png)
-
-[Improving Image Generation with Better Captions.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OzLGbUWZsolY4gxWqRBcatr0nHc)
-
-![](img/c9e1c872eb6429e81f13502110df4db7.png)
-
-[Imagen Video- High Definition Video Generation with Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IgsabmrZCorG7TxjsKIcKqFynsf)
-
-![](img/6af1f1566d2fa77f7ed1ea4018afc2b7.png)
-
-[Hierarchical Text-Conditional Image Generation with CLIP Latents.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WzINb09LUopoZjxHAKCc0EtbnAg)
-
-![](img/fd9b7a2548bf2a2b1eaa6cfdba553c0b.png)
-
-[High-Resolution Image Synthesis with Latent Diffusion Models.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ThxSbL0SEo1eCaxUzcQc6rgYnaf)
-
-![](img/6b7d31d1fb734723cc5d7fb922806659.png)
-
-[Generative Pretraining From Pixels.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MJEZbjrV4oKbncxHvfccANdRngb)
-
-![](img/fd696a131e0535d5269a23389c9c402a.png)
-
-[Generating Long Videos of Dynamic Scenes.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BKg3b3Qd9omJFrx8RGRcJ2Vzn1d)
 
 ![](img/3d13ff9d9a86987640c96fa7f4acdd75.png)
 
@@ -403,7 +334,7 @@ OpenAI 红队网络的所有成员在参与红队项目时都将获得贡献补�
 
 👉点击观看全部40+Sora最新完整视频
 
-**2024年2月16日凌**晨，Open AI发布了一个名为Sora的视频生成模型。Sora可以模拟真实世界的运动方式，根据提示词生成长达一分钟的视频，同时保证画质和连续性。以下视频demo片段均由该模型生成,未经后期编辑和修改。
+2024年2月16日凌晨，Open AI发布了一个名为Sora的视频生成模型。Sora可以模拟真实世界的运动方式，根据提示词生成长达一分钟的视频，同时保证画质和连续性。以下视频demo片段均由该模型生成,未经后期编辑和修改。
 
 提示：一位时尚的女人走在东京的街道上，街道上到处都是温暖的发光霓虹灯和动画城市标志。她身穿黑色皮夹克，红色长裙，黑色靴子，背着一个黑色钱包。她戴着墨镜，涂着红色口红。她自信而随意地走路。街道潮湿而反光，营造出五颜六色的灯光的镜面效果。许多行人四处走动。
 
@@ -427,7 +358,7 @@ AI研习社合伙人已经通过Sora掘金社区，日赚2000元，欢迎大家�
 
 以下是汇集了16个普通人赚钱方法，懂的已经开始准备了！
 
-## **1、搞流量**
+## 1、搞流量
 
 做自媒体的人都知道，流量=钱，AI领域出现新产品时，必然会吸引所有人的关注。Sora在视频生成领域的出现堪比大型语言模型GPT-4.0，此时的流量生意往往能够最先取得成果。如今有大量的👸号涌现出热门文章，各平台出现爆款短视频，用以获取非常可观的流量。
 
@@ -435,63 +366,63 @@ AI研习社合伙人已经通过Sora掘金社区，日赚2000元，欢迎大家�
 
 利用Sora的早期访问限制，可以通过售卖账号或邀请码来获取利润。目前的Sora模型还未对普通用户开放，但大家都迫不及待地期待着。就像当年的ChatGPT一样，OpenAI的账号销售肯定会继续大卖。只是国内的大语言模型和国外的相比，许多普通人并不能完全区分它们。等到真正的Sora对普通用户开放时，国内外的差距可能就会变得更加明显。
 
-## **3、卖提示词prompt**
+## 3、卖提示词prompt
 
 去年AI绘画提示词交易很火，今年AI文生视频的提示词肯定也会有市场，从提示词打包交易到提示词交易平台。对于熟悉AI的人来说，好的prompt往往容易在prompt交易平台上售出。在AI绘画领域，类似的交易平台如promptbase、prompthero等。
 
-## **4、制作/代生成AI视频**
+## 4、制作/代生成AI视频
 
 有两类用户可能需要帮助，一类是想要体验AI视频但不愿注册或深入研究的用户，另一类是有定制需求的用户。如果能剪辑出具有独特风格的短视频内容，可以在社交平台上吸引潜在客户。
 
-## **5、做自媒体账号**
+## 5、做自媒体账号
 
 如果你是短视频或自媒体从业者，利用Sora生成的视频内容，发布到自媒体平台，如抖音、快手等，可以吸引流量和粉丝。
 
-## **6、卖Sora的素材**
+## 6、卖Sora的素材
 
 生成视频素材，然后将其放到各大素材网站上出售，可以赚取使用费。设计师或视频剪辑师应该都了解这一点，因为许多精美的素材，如果想要商用，都需要付费获取。
 
-## **7、社媒视频广告**
+## 7、社媒视频广告
 
 制作白噪音视频/治愈系视频，跟AI生成音频结合。这种类型的视频需求量很大，即使是看似没有什么特别内容的视频，播放量往往能轻松达到几百万。
 
-## **8、Sora知识付费**
+## 8、Sora知识付费
 
 制作关于Sora的教程或课程，并通过知识付费方式赚钱是一个不错的主意。
 
 过去一年，AI领域最经典的商机之一就是知识付费，无论是写文章、制作教程还是录制课程视频，都是不错的选择。例如：AI研习社合伙人沐凡老师做的
 
-## **9、做电商**
+## 9、做电商
 
 围绕Sora相关的搜索词做生意在电商平台上销售与Sora相关的工具、教程或课程，利用精准的用户群体，是一个不错的商机。
 
-## **10、套壳**
+## 10、套壳
 
 众所周知的原因，国内乃至全球都存在大量的套壳网站和应用。只要你拥有一定的流量或推广渠道，套壳网站就能持续为你带来收益。目前的套路是注册含有关键词"Sora"的域名，同时在应用商店提交与Sora相关的应用，同时接入Runway等产品的API，以获取流量。等到OpenAI发布Sora API时，再进行切换，实现顺畅过渡。
 
-## **11、制作AI小说推广**
+## 11、制作AI小说推广
 
 去年AI小说推文很受欢迎，今年可能会直接跨越到AI视频领域。尽管制作成本较高，但这可能会引发新一轮的爆发。
 
-## **12、直播带货**
+## 12、直播带货
 
 如果没有产品制作能力，可以考虑通过直播售卖。短视频的生成能够吸引用户的注意力，因此推广Sora相关的付费产品可能会更容易成功。
 
-## **13、投资**
+## 13、投资
 
 如果你是二级市场的投资客，关注AI行业可能会让你赚到一大笔，但在中国股市除外。Sora的推出可能会对Adobe造成利空影响。例如，根据Sora发布的消息，Adobe在2月16日当日的跌幅达到了7.41%。因此，如果之前你做空了Adobe，那么可能会赚上一笔。
 
 例如：
 
-## **14、剧本创作**
+## 14、剧本创作
 
 文生视频提示词的升级相当于视频剧本的创作，无论是长视频还是短视频，都更依赖于剧本的创作。这一切更加依赖于创作者的能力和创造力。从这个角度来看，Sora的发布对内容创作者来说是非常利好的。
 
-## **15、Sora+电商**
+## 15、Sora+电商
 
 利用Sora生成各类电商产品宣传视频投流，或者制作各类短视频，嵌入产品进行推广，可以借鉴AI模特变装、虚拟试衣等技术。
 
-## **16、开发Sora 相关工具**
+## 16、开发Sora 相关工具
 
 针对具备技术背景的人士，开发与Sora相关的网站或工具，如导航网站或AI写真工具，可以用以获取收益。
 
@@ -515,7 +446,7 @@ AI研习社合伙人已经通过Sora掘金社区，日赚2000元，欢迎大家�
 
 ![](img/a7c7ffb44dca13afdbad80ce5ca5acf7.png)
 
-**评价推文一（左）：原文地址**https://twitter.com/DrJimFan/status/1758210245799920123
+**评价推文一（左）：原文地址**：https://twitter.com/DrJimFan/status/1758210245799920123
 
 如果你以为OpenAI Sora仅仅是个类似于DALLE的创意玩意儿……那你可能要重新思考了。Sora实际上是一个基于数据的物理引擎，它能模拟出无数个真实或虚构的世界。这一模拟器通过一些降噪和梯度计算方法，学习到了复杂的图像渲染技术、“直觉式”的物理规律、长远的逻辑推理以及语义的根基。
 
@@ -523,29 +454,29 @@ AI研习社合伙人已经通过Sora掘金社区，日赚2000元，欢迎大家�
 
 我们来深入分析下这段视频。给定的提示是：“一杯咖啡中，两艘海盗船相互交战的高度逼真的特写视频。”
 
-+   模拟器创建了两艘具有不同装饰的精细3D海盗船模型。Sora必须在其底层空间中隐式地解决从文本到3D的转换问题。
++ 模拟器创建了两艘具有不同装饰的精细3D海盗船模型。Sora必须在其底层空间中隐式地解决从文本到3D的转换问题。
 
-+   这些3D模型能够在保持彼此距离的同时进行航行，展现连贯的动画效果。
++ 这些3D模型能够在保持彼此距离的同时进行航行，展现连贯的动画效果。
 
-+   对于咖啡的流体动力学处理，连同船只周围形成的泡沫，都是对的。流体模拟是计算机图形领域的一个专业分支，通常需要复杂的算法和方程式来实现。
++ 对于咖啡的流体动力学处理，连同船只周围形成的泡沫，都是对的。流体模拟是计算机图形领域的一个专业分支，通常需要复杂的算法和方程式来实现。
 
-+   视频的逼真程度，几乎达到了光线追踪渲染的效果。
++ 视频的逼真程度，几乎达到了光线追踪渲染的效果。
 
-+   考虑到杯子相比于海洋的小尺寸，模拟器采用了倾斜移位摄影技术，营造出一种微观世界的感觉。
++ 考虑到杯子相比于海洋的小尺寸，模拟器采用了倾斜移位摄影技术，营造出一种微观世界的感觉。
 
-+   尽管这一场景在现实世界中并不存在，但引擎依然能够按照我们所期待的物理规律准确地实现它。
++ 尽管这一场景在现实世界中并不存在，但引擎依然能够按照我们所期待的物理规律准确地实现它。
 
-**评价推文二（右）：原文地址****h**ttps://twitter.com/DrJimFan/status/1758233040806125632?s=20
+**评价推文二（右）：原文地址**：https://twitter.com/DrJimFan/status/1758233040806125632?s=20
 
 如果真有某个超越我们认知的存在编写了构成我们现实世界的模拟程序代码，我们甚至可以尝试估算这个程序编译后的二进制文件大小。以Meta AI开发的Emu Video为例，它拥有60亿参数。假如说有一个名为Sora的系统，其规模是Emu Video的10倍，并采用了bfloat16格式，那么这位“创造者”的程序大小可能不会超过111Gb。
 
 但这里有几点需要注意:
 
-+   实际上，这样的代码可能比我们设想的Sora系统要简单得多，因为Sora离达到Kolmogorov复杂度（一种衡量对象信息量的方法，代表了最短的无损压缩数据长度）还有很长的路要走；
++ 实际上，这样的代码可能比我们设想的Sora系统要简单得多，因为Sora离达到Kolmogorov复杂度（一种衡量对象信息量的方法，代表了最短的无损压缩数据长度）还有很长的路要走；
 
-+   Sora系统的设计不仅仅是为了模拟我们所知的世界，而是能够包含所有可能存在的世界。换句话说，我们所经历的现实只是Sora能够模拟出的众多可能性之一；
++ Sora系统的设计不仅仅是为了模拟我们所知的世界，而是能够包含所有可能存在的世界。换句话说，我们所经历的现实只是Sora能够模拟出的众多可能性之一；
 
-+   就像在游戏设计中，使用虚幻引擎5（Unreal Engine 5）创建逼真场景时不需要渲染出每一个细节，我们的物理世界也可能在我们未观察它之前的某些部分实际上是不存在的。
++ 就像在游戏设计中，使用虚幻引擎5（Unreal Engine 5）创建逼真场景时不需要渲染出每一个细节，我们的物理世界也可能在我们未观察它之前的某些部分实际上是不存在的。
 
 ## 媒体人胡锡进
 
@@ -555,7 +486,7 @@ AI研习社合伙人已经通过Sora掘金社区，日赚2000元，欢迎大家�
 
 ![](img/ec423d85791c654a0eea92f0cd850901.png)
 
-**humans翻译为人类；gg**为Good Games缩写，代指“打得好，我认输” 。
+**humans**翻译为人类；**gg**为Good Games缩写，代指“打得好，我认输” 。
 
 ## Runway CEO Cristobal Valenzuela
 
@@ -615,29 +546,31 @@ OpenAI大杀四方，Sora 彻底革了视频的命
 
 >
 
-> 如[果你对 AI 和 S](https://xiaobot.net/p/AIGC2024?refer=fd9ed25f-2954-4de4-9e99-88e1999bf395)ora 兴趣满满，想要深入挖掘、并且愿意加入这场技术革命，我们非常欢迎你的学习🎯 Sora 掘金手册，并加入Sora学习群，那里已经有350多位Sora爱好者加入了，期待你进来一起交流。
+> 如果你对 AI 和 Sora 兴趣满满，想要深入挖掘、并且愿意加入这场技术革命，我们非常欢迎你的学习🎯 [Sora 掘金手册](https://xiaobot.net/p/AIGC2024?refer=fd9ed25f-2954-4de4-9e99-88e1999bf395)，并加入Sora学习群，那里已经有350多位Sora爱好者加入了，期待你进来一起交流。
 
 声明：整个飞书里面的内容虽然不是100%原创内容，但却是我耗费大量时间搜集整理的，希望能帮助大家，如果有任何版权问题，请添加🛰️xiyou2046说明，我将把有问题的部分进行删除。
 
 # 九、延伸学习
 
-🔥A[**I研习社知识星球**](https://t.zsxq.com/17UpQr5Cu)
+🔥[**AI研习社知识星球**](https://t.zsxq.com/17UpQr5Cu)
 
-💥C[**hatGPT从入门到精通**](https://faqocxi7k2.feishu.cn/wiki/OcFkw0cE5i6iMCkvLE9cWBphnbc?from=from_copylink)
+
+
+💥[**ChatGPT从入门到精通**](https://faqocxi7k2.feishu.cn/wiki/OcFkw0cE5i6iMCkvLE9cWBphnbc?from=from_copylink)
 
 🖌️MidJourney从入门到精通
 
 💰AI副业掘金风向标更新中....
 
-🚀A[**I掘金工具库更新中...**](https://faqocxi7k2.feishu.cn/wiki/MXLvwWBQYiPyCUk60JqcRl3enKR?from=from_copylink)
+🚀[**AI掘金工具库更新中...**](https://faqocxi7k2.feishu.cn/wiki/MXLvwWBQYiPyCUk60JqcRl3enKR?from=from_copylink)
 
 # AI研习社学习交流群
 
-1、AI研习社是一个社区型AI研究知识小组，将持续更新AI资讯动态、商业模式研究、研究报告、赚钱案例、AI经验分享等专题内容，希望通过结构化的方式帮助你构建动态的AI专题知识库，促进更多相关知识的分享与传播提升行业知识的流转效率，共同拥抱AI大时代，不错过用AI赚钱的机会。
+1. AI研习社是一个社区型AI研究知识小组，将持续更新AI资讯动态、商业模式研究、研究报告、赚钱案例、AI经验分享等专题内容，希望通过结构化的方式帮助你构建动态的AI专题知识库，促进更多相关知识的分享与传播提升行业知识的流转效率，共同拥抱AI大时代，不错过用AI赚钱的机会。
 
-2、AI研习社拥有**免费的AI飞书知识库**、性价比极高的专题小册字（AI副业掘金手册、Sora掘金手册）和体系化专业化的知识星球（AI研习社），我们深知AI是不可逆转的趋势，所以如果你想加入我们，可以根据自己的需要进行选择，我们希望能够找到志同道合的朋友，陪伴你一起从入门到精通，从小白到高手，用最低的成本学习到AI的技能，获得百倍的收益。
+2. AI研习社拥有**免费的AI飞书知识库**、性价比极高的专题小册字（AI副业掘金手册、Sora掘金手册）和体系化专业化的知识星球（AI研习社），我们深知AI是不可逆转的趋势，所以如果你想加入我们，可以根据自己的需要进行选择，我们希望能够找到志同道合的朋友，陪伴你一起从入门到精通，从小白到高手，用最低的成本学习到AI的技能，获得百倍的收益。
 
-3、现在没进群的可以扫码免费加入AI学**习交流群，**提前了解最新**学习内容，群满可加沐凡🛰️ **ID: mufansay123 (备注: AI)，如果添加不了可加备用🛰️ID：xiyou2046，加好友送《加强版AI副业掘金工具库》哦～
+3. 现在没进群的可以扫码免费加入**AI学习交流群**，提前了解最新**学习内容**，群满可加沐凡🛰️ **ID: mufansay123** (备注: AI)，如果添加不了可加备用🛰️ID：xiyou2046，加好友送《加强版AI副业掘金工具库》哦～
 
 ![](img/416fa0cfc2f91cb50fda9b35ecab9c07.png)
 

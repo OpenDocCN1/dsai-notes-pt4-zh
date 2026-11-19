@@ -1,10 +1,11 @@
+
 # Triton Conference 2023 - talk notes
 
-> 来源：[https://learning.feishu.cn/docx/CiMUdyaO4oTfKqxIzXhcc9ARn7I](https://learning.feishu.cn/docx/CiMUdyaO4oTfKqxIzXhcc9ARn7I)
+> 来源：[`https://learning.feishu.cn/docx/CiMUdyaO4oTfKqxIzXhcc9ARn7I`](https://learning.feishu.cn/docx/CiMUdyaO4oTfKqxIzXhcc9ARn7I)
 
 TODO：
 
-https://www.youtube.com/playlist?list=PLc_vA1r0qoiRZfUC3o4_yjj0FtWvodKAz
+`https://www.youtube.com/playlist?list=PLc_vA1r0qoiRZfUC3o4_yjj0FtWvodKAz`
 
 Triton Conference 2023
 
@@ -18,9 +19,9 @@ First Triton Developer Conference
 
 几个普遍关心的关键词
 
-1.  在 nv hooper 上的性能表现
+1. 在 nv hooper 上的性能表现
 
-1.  block pointer https://triton-lang.org/main/getting-started/tutorials/08-experimental-block-pointer.html
+2. block pointer [`https://triton-lang.org/main/getting-started/tutorials/08-experimental-block-pointer.html`](https://triton-lang.org/main/getting-started/tutorials/08-experimental-block-pointer.html)
 
 ![](img/c3fa06a7020a20dc43acafd224ef0948.png)
 
@@ -34,7 +35,7 @@ Introducing a middle layer: Linalg + HW vendor Dialects
 
 ![](img/f96a1c49bc06a2e0094cbc536f58aa25.png)
 
-点评 @  2025.03
+点评 @ 2025.03
 
 这个出发点，还是太不工程了。
 
@@ -62,7 +63,7 @@ A: hard to implement a sort in Triton. maybe sort will be coming soon?
 
 # Triton Compiler - 2023
 
-https://www.youtube.com/watch?v=AtbnRIzpwho
+`https://www.youtube.com/watch?v=AtbnRIzpwho`
 
 Triton Compiler
 
@@ -116,7 +117,7 @@ triton GPU IR
 
 # Deeper Dive of Inductor with TritonIR
 
-https://www.youtube.com/watch?v=p13HpZv2S3Q
+`https://www.youtube.com/watch?v=p13HpZv2S3Q`
 
 PyTorch 2.0 and TorchInductor
 
@@ -176,7 +177,7 @@ A: hard to implement a sort in Triton. maybe sort will be coming soon?
 
 # The Triton Language - 2021
 
-https://www.youtube.com/watch?v=G951lCm_qnk
+`https://www.youtube.com/watch?v=G951lCm_qnk`
 
 The Triton Language
 
@@ -214,7 +215,7 @@ project history
 
 # Qualcomm: Vectorization of Triton Kernels
 
-https://www.youtube.com/watch?v=ZGU0Yw7mORE
+`https://www.youtube.com/watch?v=ZGU0Yw7mORE`
 
 Qualcomm: Vectorization of Triton Kernels
 
@@ -254,7 +255,7 @@ Sep 26, 2023
 
 # Nvidia: Hopper support in Triton
 
-https://www.youtube.com/watch?v=KMRl-SBbTDk
+`https://www.youtube.com/watch?v=KMRl-SBbTDk`
 
 Hopper support in Triton
 
@@ -296,7 +297,6 @@ Sep 26, 2023
 
 ![](img/184e5717fffd83feed36896315c1e7f2.png)
 
-
 ![](img/89cc36d2feea9b7bfaf6c1a51815ec7c.png)
 
 ![](img/3c243011b26a99c729e3aebf77d7ca2b.png)
@@ -317,7 +317,7 @@ Sep 26, 2023
 
 # Microsoft: Triton for All
 
-https://www.youtube.com/watch?v=y2V3ucS1pfQ
+`https://www.youtube.com/watch?v=y2V3ucS1pfQ`
 
 Triton for All: Triton as a device-independent language
 
@@ -331,9 +331,9 @@ Sep 27, 2023
 
 思路：
 
-1.  用 linalg 代替 tritonGPU IR，llvm 再往下，又是可以共享的
+1. 用 linalg 代替 tritonGPU IR，llvm 再往下，又是可以共享的
 
-1.  triton IR is really like modeling a single block of computation。试图 raise to the entire grid？No，依旧是 single kernel or single instance of a kernel。-- 需要把 grid-block-thread 的 Modeling 搞清楚，并定义好，每一层的调度、IR 分别要解决什么问题，需要什么样的 IR 来存储信息。
+2. triton IR is really like modeling a single block of computation。试图 raise to the entire grid？No，依旧是 single kernel or single instance of a kernel。-- 需要把 grid-block-thread 的 Modeling 搞清楚，并定义好，每一层的调度、IR 分别要解决什么问题，需要什么样的 IR 来存储信息。
 
 ![](img/0f5f9b0580a3c03acfc754eb8c9ba4fd.png)
 
@@ -367,11 +367,11 @@ store
 
 在下面，没截图。
 
-1.  affine_map
+1. affine_map
 
-1.  interator_types
+2. interator_types
 
-1.  bb0: 计算的 body
+3. bb0: 计算的 body
 
 ![](img/b947c41110c14b3bfc88c6fe99cd4fc8.png)
 
@@ -388,6 +388,8 @@ any plan or thoughts on coupling Triton to TOSA?
 Q&A first question, we see a pretty good 1:1 mapping for most of the triton instructions like the TT or TL instructions to linalg operations.
 
 如果用了 TOSA，则提升了 IR 的 level。更适合描述 graph，grid level，or multiple kernels together 的计算。
+
+
 
 for the first one like arithmetically mapping，
 
@@ -429,7 +431,7 @@ optimizations on AMD instinct GPUs
 
 ## Performance
 
-small m1k 很慢的原因分析：
+small `m1k` 很慢的原因分析：
 
 workload 太小了，并行度低，内部的 warp 调度没有针对性的优化。
 
@@ -439,13 +441,11 @@ workload 太小了，并行度低，内部的 warp 调度没有针对性的优�
 
 ## Q&A
 
-Q: for all the flash attention optimizations,
-
-do they require any changes to the tutorial or triton op or they are just compiler optimizations?
+Q: for all the flash attention optimizations, do they require any changes to the tutorial or triton op or they are just compiler optimizations?
 
 A: 1. the pointer arithmetic stuff requires changes in the Python Level.
 
-1.  everything else is the compiler stuff.
+1. everything else is the compiler stuff.
 
 # Intel GPU - Triton
 
@@ -467,25 +467,25 @@ this session talks about GPU only。
 
 用的 Triton GPU IR。
 
-从 PyTorch 2.0 开始，支持在 Dynamo level 增加 backend。直接处理 fx capture 的 graph。
+从 PyTorch 2.0 开始，支持在 Dynamo level 增加 backend。直接处理 `fx` capture 的 graph。
 
 但，Intel GPU backend 选择在 inductor level 增加 backend。
 
 动机是，尽可能复用 inductor 的功能和 optimization passes。比如：
 
-1.  inductor Loop IR
+1. inductor Loop IR
 
-1.  loop of fusion optimization
+1. loop of fusion optimization
 
-1.  the inline optimization
+1. the inline optimization
 
 ![](img/e5b962c5316593a895e2e7886ce1edbb.png)
 
-BaseScheduling: produce the device code.
+`BaseScheduling`: produce the device code.
 
 we just need to enumerate the schedule node and produce the device code.
 
-WrapperCodeGen: glue the kernel code and the infra? code
+`WrapperCodeGen`: glue the kernel code and the infra? code
 
 inductor 当前有不同的 backend 支持不同的 GPU，比如 NV，AMD。
 
@@ -503,33 +503,33 @@ outlier model 的数量，比 training 好了很多。大概有 10% 的 outlier 
 
 performance analysis, 2 major reasons:
 
-1.  inductor 的 configuration 对 Intel GPU 不够优化。比如，number of warps
+1. inductor 的 configuration 对 Intel GPU 不够优化。比如，number of warps
 
-1.  intel GPU backend 不够好。基于 triton 接入的，需要优化 triton 侧。比如，triton 的 load / store align with 优化过的版本。
+1. intel GPU backend 不够好。基于 triton 接入的，需要优化 triton 侧。比如，triton 的 `load` / `store` align with 优化过的版本。
 
 ![](img/6e1b79415ec6e35c8a1b45fa301894d4.png)
 
 break down 看一下加速的来源
 
-1.  fused kernel 基本能得到 impressive 的加速空间。
+1. fused kernel 基本能得到 impressive 的加速空间。
 
-1.  triton 的 matmul 和 batch matmul 会 fallback 到 aten 算子上，所以，基本没有加速。
+1. triton 的 `matmul` 和 `batch matmul` 会 `fallback` 到 `aten` 算子上，所以，基本没有加速。
 
 ![](img/251fa33c6c83f5d26e0d7334f1d2832a.png)
 
 in terms hardware behavior
 
-1.  line 3, GPU Memory Access, aten 算子全程都有，triton 只在算子 launch 时有一点。
+1. line 3, GPU Memory Access, `aten` 算子全程都有，triton 只在算子 launch 时有一点。
 
-1.  倒数第 2 行，L3 cache 的 bandwidth。triton 也好非常多。
+1. 倒数第 2 行，L3 cache 的 bandwidth。triton 也好非常多。
 
-![](img/7e48c74ff23b5282946e7ab1ef15d364.png)
+![](img/7e48c74ff23b5282946e1ab1ef15d364.png)
 
 进一步的优化空间
 
-1.  仍然有 ~31% 的 stalled by GPU barrier. 在 Intel GPU 上，计划通过 named GPU barrier 消除。
+1. 仍然有 ~31% 的 stalled by GPU barrier. 在 Intel GPU 上，计划通过 named GPU barrier 消除。
 
-1.  编排 barrier arrive and wait and other no data dependency instructions to mitigate the stalled overhead.
+1. 编排 barrier arrive and wait and other no data dependency instructions to mitigate the stalled overhead.
 
 ![](img/94b52bd3b2184d4e0b03f578f2ff517b.png)
 
@@ -563,9 +563,9 @@ XPU means: Both GPU & CPU
 
 性能不好的 2 个原因：
 
-1.  torch inductor side: 默认的 number of warps & number of cta，不适合 Intel GPU。需要调整一下，增加并行度。
+1. torch inductor side: 默认的 number of warps & number of cta，不适合 Intel GPU。需要调整一下，增加并行度。
 
-1.  triton / intel GPU backend side: vectorization 做的不好，不充分。
+1. triton / intel GPU backend side: vectorization 做的不好，不充分。
 
 ![](img/9484ba0af0687e3fd1316f8b9f4f5486.png)
 
@@ -583,7 +583,7 @@ fusion 的效果最明显。
 
 ## Future & Conclusions
 
-要点，功能上，强调了 dot 和 block pointer。
+要点，功能上，强调了 `dot` 和 block pointer。
 
 ![](img/fd6c157fc1176444ff10c7a28b7d5cb5.png)
 
@@ -631,7 +631,7 @@ https://ai.meta.com/blog/meta-training-inference-accelerator-AI-MTIA/
 
 ## Software Design
 
-a year ago, there was no Microsoft linalg staff.
+a year ago, there was no Microsoft `linalg` staff.
 
 左侧 / 红色，是 GPU version
 
@@ -651,13 +651,13 @@ a year ago, there was no Microsoft linalg staff.
 
 ![](img/a1ca9d1bfe2bf512f7a804de090fd955.png)
 
-accelerator 对标量 load/store 效率比较低。此处需要优化。
+accelerator 对标量 `load/store` 效率比较低。此处需要优化。
 
 什么是 block pointer？
 
 ![](img/995efc0dfcb50f481187b047a8765d90.png)
 
-在 triton 的语言 level 支持 async 的 computation。
+在 triton 的语言 level 支持 `async` 的 computation。
 
 ![](img/6e60cc377218baedebb8c9672c83d4d4.png)
 
@@ -723,11 +723,11 @@ Sep 26, 2023
 
 在 hooper 上，有什么有趣的变化或者困难吗？
 
-1.  在 hooper 上，获得了不错的加速。但主要来自于 matmul。
+1. 在 hooper 上，获得了不错的加速。但主要来自于 `matmul`。
 
-1.  相比于 cutlass，主要是 matmul 需要优化，其他的差距并不大。
+1. 相比于 `cutlass`，主要是 `matmul` 需要优化，其他的差距并不大。
 
-1.  又提到了 block pointer。
+1. 又提到了 block pointer。
 
 block pointer provides a much better abstraction level than arbitrary loads and stores.
 
@@ -737,10 +737,11 @@ what factors to take into account
 
 这实际上是 2 个问题
 
-1.  Is there a cost model we should apply during Fusion so when we do Fusion we do not concretize the tiling.
+1. Is there a cost model we should apply during `Fusion` so when we do `Fusion` we do not concretize the tiling.
+
 we just check if the dimensions are compatible. during fusion, we mostly check whether you run into compute bound yet or was it you can use it for free
 
-1.  tiling. what you tried is to do a decision first and then try to predict the best tiling for a matmul using a decision for it.
+1. tiling. what you tried is to do a decision first and then try to predict the best tiling for a `matmul` using a decision for it.
 
 # Nvidia - Grouped GEMM in Triton
 
@@ -767,6 +768,8 @@ Sep 27, 2023
 ![](img/c5f2a316227fc0889274f7b1235bd68f.png)
 
 lot of IDLE
+
+
 
 ![](img/884eb650469d4100e33c4b46c04102bc.png)
 

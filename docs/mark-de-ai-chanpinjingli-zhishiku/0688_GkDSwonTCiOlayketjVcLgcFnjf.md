@@ -1,3 +1,4 @@
+
 # 模型不是关键，Harness 才是
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/GeaFdi3LPo1mZoxcIcJcC36inxg](https://qqs7y1hozd1.feishu.cn/docx/GeaFdi3LPo1mZoxcIcJcC36inxg)
@@ -44,7 +45,7 @@
 
 这句话看起来平平无奇，但它击中了一**个很多人隐隐感觉到、却没有说清**楚的痛点：模型能力够了，可它就是不听话。
 
-他在 Ghostty 项目中实践了这个理念。AGENTS.md 文件里的每一行规则，背后都对应着 Agent 曾经犯过的一个错。他说：
+他在 Ghostty 项目中实践了这个理念。`AGENTS.md` 文件里的每一行规则，背后都对应着 Agent 曾经犯过的一个错。他说：
 
 > 那个文件里的每一行都基于一次 Agent 的不良行为，而且几乎完全解决了这些问题。
 
@@ -58,11 +59,11 @@ OpenAI 的 Codex 团队做了一件事，让整个行业重新思考「工程师
 
 ![](img/8de35b71226ba8f67c482b8faa9f7fb5.png)
 
-**从**一个空的 git 仓库开始，5 个月，大约 100 万行代码，1500 个 PR，全部由 Agent 生成。
+**从**一个空的 `git` 仓库开始，5 个月，大约 100 万行代码，1500 个 PR，全部由 Agent 生成。
 
 **人类一行代码都没写。**
 
-团队一开始只有 3 个工程师，后来扩到 7 个。他们用 GPT-5 驱动的 Codex CLI，从零开始构建了一个完整的生产级应用。平均下来，每位工程师每天合并 3.5 个 PR。
+团队一开始只有 3 个工程师，后来扩到 7 个。他们用 GPT-5 驱动的 `Codex CLI`，从零开始构建了一个完整的生产级应用。平均下来，每位工程师每天合并 3.5 个 PR。
 
 ![](img/78625fa51b20a7f901628bcef79867f1.png)
 
@@ -104,7 +105,7 @@ Ryan Lopopolo，这个项目的核心工程师，写下的一句话是：
 
 他们没有一上来就让 Agent 全权负责所有事情。而是从简单任务开始，逐步提升 Agent 的自主权限。随着 Harness 越来越成熟，Agent 获得的自由度也越来越大。
 
-**到了后期，单个 Code**x 任务可以连续运行 6 个小时以上，自主完成复杂的功能开发。
+**到了后期，单个 Codex 任务可以连续运行 6 个小时以上，自主完成复杂的功能开发。**
 
 这也呼应了一个规律：自主性的提升，必须建立在约束系统成熟的基础上。 你不会让一个实习生第一天就独立负责核心模块。
 
@@ -112,7 +113,7 @@ Ryan Lopopolo，这个项目的核心工程师，写下的一句话是：
 
 他们的 PR 合并策略也值得一说。
 
-每个 Codex 任务产出的 PR，在合并前会经过 linter、结构化测试和自动化检查。工程师做的是「审查」，不再是「修改」。
+每个 Codex 任务产出的 PR，在合并前会经过 `linter`、结构化测试和自动化检查。工程师做的是「审查」，不再是「修改」。
 
 如果一个 PR 需要大量修改才能合并，他们会反思：Harness 哪里出了问题，为什么 Agent 会产出这样的代码？
 
@@ -160,7 +161,7 @@ Context Engineering（上下文工程）：Token 预算管理，决定什么信�
 
 ![](img/f5fb6e8a2a4e7b727945a30ea0391428.png)
 
-用一个公式来表示：**coding agent = A**I model(s) + harness
+用一个公式来表示：`coding agent = AI model(s) + harness`
 
 ## 三根支柱
 
@@ -170,9 +171,9 @@ OpenAI 团队把他们的 Harness 拆成了三个部分。
 
 也就是怎么把正确的信息喂给 Agent。
 
-他们在仓库根目录放了 AGENTS.md 文件，Agent 每次启动都会自动读取。但这个文件更像「目录」，大概只有 100 行左右，告诉 Agent 到哪里去找更详细的信息。
+他们在仓库根目录放了 `AGENTS.md` 文件，Agent 每次启动都会自动读取。但这个文件更像「目录」，大概只有 100 行左右，告诉 Agent 到哪里去找更详细的信息。
 
-这是个值得注意的设计选择。ETH Zurich 的一项研究发现，CLAUDE.md / AGENTS.md 文件应该控制在 60 行以内。过长的指令文件反而会降低 Agent 的表现。
+这是个值得注意的设计选择。ETH Zurich 的一项研究发现，`CLAUDE.md` / `AGENTS.md` 文件应该控制在 60 行以内。过长的指令文件反而会降低 Agent 的表现。
 
 ![](img/58fc3ab2b74c7d895302ddfaed11c16b.png)
 
@@ -180,7 +181,7 @@ OpenAI 团队把他们的 Harness 拆成了三个部分。
 
 他们还给 Agent 接了**浏览器**（通过 Chrome DevTools Protocol），让它能看到 UI 渲染结果，自己判断页面做得对不对。
 
-接了完整的**可观测性栈**（基于 Vector、Victoria Logs/Metrics/Traces），而且是每个 worktree 都有一套本地的日志、指标和链路追踪。Agent 可以自己查报错，自己看性能数据，自己定位问题在哪一层。
+接了完整的**可观测性栈**（基于 `Vector`、`Victoria Logs/Metrics/Traces`），而且是每个 `worktree` 都有一套本地的日志、指标和链路追踪。Agent 可以自己查报错，自己看性能数据，自己定位问题在哪一层。
 
 ![](img/92248a2b7c577a945e7c8a07192369c5.png)
 
@@ -190,17 +191,17 @@ OpenAI 团队把他们的 Harness 拆成了三个部分。
 
 这才是 Harness 最核心的一环。
 
-他们设计了严格的分层架构：Types → Config → Repo → Service → Runtime → UI，每一层只能依赖下面的层。
+他们设计了严格的分层架构：`Types` → `Config` → `Repo` → `Service` → `Runtime` → `UI`，每一层只能依赖下面的层。
 
 ![](img/0e2ac792cfbaa7eb8c7fdcaefcf2e635.png)
 
-这些规则没有靠 prompt 告诉 Agent「请遵守」，用的是确定性的 linter 和结构化测试来机械执行。Agent 违反了架构规则？CI 直接挂掉，没得商量。
+这些规则没有靠 prompt 告诉 Agent「请遵守」，用的是确定性的 `linter` 和结构化测试来机械执行。Agent 违反了架构规则？CI 直接挂掉，没得商量。
 
-而且 linter 的报错信息里，还嵌入了修复指引，告诉 Agent 应该怎么改。这一招，相当于把「老师傅的经验」写进了编译器。
+而且 `linter` 的报错信息里，还嵌入了修复指引，告诉 Agent 应该怎么改。这一招，相当于把「老师傅的经验」写进了编译器。
 
 Cursor 团队在他们的「Self-Driving Codebases」研究中，也得出了类似的结论：
 
-> 约束比指令更有效。告诉 Agent「不要留 TODO」比告诉它「完成所有实现」效果更好。
+> 约束比指令更有效。告诉 Agent「不要留 `TODO`」比告诉它「完成所有实现」效果更好。
 
 这背后有一个反直觉的洞察：约束解空间反而让 Agent 更有生产力。 当 Agent 可以生成任何东西时，它会浪费 token 探索死胡同。当 Harness 定义了清晰的边界，Agent 反而更快收敛到正确答案。
 
@@ -228,13 +229,13 @@ Agent 犯错 → 人类诊断原因 → 改进 Harness → Agent 下次不再犯
 
 ### Stripe：每周 1300 个 PR
 
-Stripe 内部的「Minions」系统，可能是目前规模最大的 Agent 编程实践。
+Stripe 内部的 `Minions` 系统，可能是目前规模最大的 Agent 编程实践。
 
 每周合并 1300 多个 PR，全部由无人值守的 Agent 完成。 这些 Agent 没有人在旁边盯着，也没有人在引导。
 
-它的架构有个值得细看的设计：**Blueprint 编排系统**，把工作流拆成确定性节点和 Agentic 节点的混合体。
+它的架构有个值得细看的设计：`Blueprint` 编排系统，把工作流拆成确定性节点和 Agentic 节点的混合体。
 
-确定性节点（比如「运行 linter」「推送更改」）按固定路径执行，不调用 LLM。Agentic 节点（比如「实现这个功能」「修复 CI 失败」）才让 LLM 行使判断。
+确定性节点（比如「运行 `linter`」「推送更改」）按固定路径执行，不调用 LLM。Agentic 节点（比如「实现这个功能」「修复 CI 失败」）才让 LLM 行使判断。
 
 ![](img/033480b334b01d278699703fc49b0cbf.png)
 
@@ -242,7 +243,7 @@ Stripe 内部的「Minions」系统，可能是目前规模最大的 Agent 编�
 
 **Stripe 还**有一个硬性限制：CI 最多跑两轮。第一轮 CI 失败了，Agent 自动修复，再跑一次。如果还失败，直接转交人类。不允许 Agent 在 CI 上无限重试。
 
-它们的内部工具平台「Toolshed」挂载了大约 500 个 MCP **工具，但给每个 Agent 的**只是精心筛选过的子集。因为他们发现了一个关键规律：更多的工具并不等于更好的表现。
+它们的内部工具平台 `Toolshed` 挂载了大约 500 个 `MCP` **工具，但给每个 Agent 的**只是精心筛选过的子集。因为他们发现了一个关键规律：更多的工具并不等于更好的表现。
 
 Stripe 工程团队的总结：
 
@@ -256,7 +257,7 @@ Cursor 的「Self-Driving Codebases」研究走得更远。
 
 但值得注意的是，他们走过的弯路恰恰说明了 Harness 设计的难度：
 
-第一版，单 Agent，复杂任务扛不住。第二版，多 Agent 共享状态文件，结果锁竞争严重，Agent 之间互相打架。第三版，结构化角色分工（Planner → Executor → Workers → Judge），太僵硬了。第四版，持续执行器，角色过载导致各种诡异行为。
+第一版，单 Agent，复杂任务扛不住。第二版，多 Agent 共享状态文件，结果锁竞争严重，Agent 之间互相打架。第三版，结构化角色分工（`Planner` → `Executor` → `Workers` → `Judge`），太僵硬了。第四版，持续执行器，角色过载导致各种诡异行为。
 
 最终版本是递归 Planner-Worker 模型：一个根级 Planner 拥有全局视野，生成子 Planner 处理细分任务，Worker 在仓库副本上独立操作。
 
@@ -266,7 +267,7 @@ Cursor 的「Self-Driving Codebases」研究走得更远。
 
 Peter Steinberger 的故事可能更能说明 Harness Engineering 在个人开发者层面的威力。
 
-这位前 iOS 圈的知名开发者，靠着 Agent 驱动的**工作流，2026 年 1 月**单月产出了 6600 多个 commit。他同时运行 5 到 10 个 Agent，OpenClaw 项目在 4 个月内拿到了 18 万 stars，成了 GitHub 上增长最快的仓库。
+这位前 iOS 圈的知名开发者，靠着 Agent 驱动的工作流，2026 年 1 月单月产出了 6600 多个 commit。他同时运行 5 到 10 个 Agent，`OpenClaw` 项目在 4 个月内拿到了 18 万 stars，成了 GitHub 上增长最快的仓库。
 
 他的做法相当激进：他不逐行审查 Agent 生成的代码。
 
@@ -286,17 +287,21 @@ Peter Steinberger 的故事可能更能说明 Harness Engineering 在个人开�
 
 Nate B Jones 的研究：同一个模型，编程基准成功率从 42% 到 78%，差了将近一倍，变量只有 Harness。换句话说，Harness 带来的提升，相当于换了一代模型。
 
-**LangChain 的案例**：用同一个模型（gpt-5.2-codex），只改 Harness，Terminal Bench 2.0 的成绩从 52.8% 升到 66.5%。排名呢？从三十名开外直接冲进前五。
+`LangChain` 的案例：用同一个模型（`gpt-5.2-codex`），只改 Harness，Terminal Bench 2.0 的成绩从 52.8% 升到 66.5%。排名呢？从三十名开外直接冲进前五。
 
 **Pi Research 的发现**更是直接：他们在一个下午内，仅通过修改 Harness，就提升了 15 个不同 LLM 的编程能力。标题就叫《Improving 15 LLMs at Coding in One Afternoon. Only the Harness Changed》。
 
 **Vercel 的经验**：把 Agent 的工具从 15 个砍到只剩 2 个，准确率反而从 80% 升到了 100%。
 
+
+
+# Harness Engineering
+
 工具越少，怎么反而越准呢？这听起来有点反直觉。但道理其实不复杂，就像你给一个实习生 15 把不同的螺丝刀让他修电脑，他可能会手忙脚乱；给他一把十字和一把一字，他反而知道该怎么干了。
 
 Terminal Bench 2.0 排行榜上也有个值得注意的现象：Claude Opus 4.6 在 Claude Code Harness 上排名第 33，但换一个不同的 Harness 就冲到了第 5。同一个模型，同一个基准，排名差了 28 位。
 
-这说明模型可能对特定的 Harness 存在过拟合。 在 A 环境下如鱼得水的模型，换到 B 环境可能就水土不服了。
+这说明模型可能对特定的 Harness 存在过拟合。在 A 环境下如鱼得水的模型，换到 B 环境可能就水土不服了。
 
 Aaron Levie（Box CEO）感叹：
 
@@ -316,7 +321,7 @@ OpenAI 的 Noam Brown 在 Latent Space 的一次访谈中直接表态：
 
 > 之前投入了大量工程来构建这些 Agentic 系统……结果我们造了推理模型之后，你根本不需要那些复杂的行为了。事实上，在很多时候，这些东西反而让效果更差了。
 
-**他的预判**是，OpenAI 将走向一个统一模型的未来：
+他的预判是，OpenAI 将走向一个统一模型的未来：
 
 > 我们公开说过，我们想要走向一个单一统一模型的世界。你不应该需要在模型上面再加一个路由器。
 
@@ -326,9 +331,9 @@ OpenAI 的 Noam Brown 在 Latent Space 的一次访谈中直接表态：
 
 METR（一个专注 AI 安全评估的研究组织）的数据也给了 Harness 阵营一记闷棍。
 
-他们找了 scikit-learn、Sphinx、pytest 三个知名开源项目的 4 位活跃维护者，让他们审查 296 个 AI 生成的 PR。结果发现：维护者的合并率，大约只有自动化评分通过率的一半。
+他们找了 `scikit-learn`、`Sphinx`、`pytest` 三个知名开源项目的 4 位活跃维护者，让他们审查 296 个 AI 生成的 PR。结果发现：维护者的合并率，大约只有自动化评分通过率的一半。
 
-以 Claude Sonnet 4.5 为例，自动评分器给出的成绩对应大约 50 **分钟的任务范围，但维护者实际**愿意合并的 PR 对应的任务范围只有 8 分钟左右。这代表了 7 倍的能力高估。
+以 Claude Sonnet 4.5 为例，自动评分器给出的成绩对应大约 50 分钟的任务范围，但维护者实际愿意合并的 PR 对应的任务范围只有 8 分钟左右。这代表了 7 倍的能力高估。
 
 而在他们的测试中，Claude Code 和 Codex 并没有比一个基础脚手架表现更好。Harness 的选择，基本落在误差范围内。
 
@@ -398,7 +403,7 @@ Noam Brown 当然也说得对，很多脚手架确实会随着模型进化而被
 
 就像从马车到汽车，马鞭消失了，但方向盘和刹车不会消失。
 
-**Harness 阵营真正应该担心的，其实是自己搭建的 H**arness 会不会六个月后，就过时了。
+**Harness 阵营真正应该担心的，其实是自己搭建的 Harness 会不会六个月后，就过时了。**
 
 Noam Brown 说的「别花六个月搭建一个可能六个月后就被淘汰的东西」，在这个语境下反而成了最好的 Harness Engineering 建议：Harness 要轻，要模块化，要随时准备被拆掉重来。
 
@@ -412,15 +417,15 @@ Philipp Schmid 的建议可以用三个词概括：Start Simple. Build to Delete
 
 ![](img/0ea8513fcb4b1e81e2abc1999dfdf326.png)
 
-AGENTS.md / CLAUDE.md 文件。 这是最简单的入门方式。在仓库根目录放一个 markdown 文件，写上架构约定、命名规范、测试期望。Agent 每次启动都会自动读取。记住前面说的，控制在 60 行以内，写「目录」别写「百科全书」。
+`AGENTS.md` / `CLAUDE.md` 文件。这是最简单的入门方式。在仓库根目录放一个 markdown 文件，写上架构约定、命名规范、测试期望。Agent 每次启动都会自动读取。记住前面说的，控制在 60 行以内，写「目录」别写「百科全书」。
 
 每次 Agent 犯了一个错，就加一条规则。这就是 Mitchell Hashimoto 所说的 Harness Engineering 最核心的操作。
 
-**确定性约束。** linter、类型检查、结构化测试、pre-commit hooks。这些是「硬约束」，Agent 无法绕过。OpenAI 和 Stripe 的经验都表明，硬约束比软性的 prompt 指令更可靠。
+**确定性约束。** linter、类型检查、结构化测试、`pre-commit` hooks。这些是「硬约束」，Agent 无法绕过。OpenAI 和 Stripe 的经验都表明，硬约束比软性的 prompt 指令更可靠。
 
 **工具精简。** 别给 Agent 塞太多工具。Vercel 从 15 砍到 2 的案例已经说明了，工具多了 Agent 反而不知道该用哪个。Stripe 有 500 个工具，但每个 Agent 只能看到精心筛选过的子集。
 
-**Sub-Agent 隔离。** 把复杂任务拆成多个子任务，每个子 Agent 有自己的上下文窗口。这样可以防止中间噪声在主线程中累积，同时也可以给不同的子任务用不同的模型。
+**`Sub-Agent` 隔离。** 把复杂任务拆成多个子任务，每个子 Agent 有自己的上下文窗口。这样可以防止中间噪声在主线程中累积，同时也可以给不同的子任务用不同的模型。
 
 **反馈循环。** Agent 写完代码后，必须能自己跑测试、看截图、查日志。这就是 Mitchell Hashimoto 说的「给 Agent 造工具」。让 Agent 自己验证自己的产出，别什么都靠人工盯。
 
@@ -432,7 +437,7 @@ AGENTS.md / CLAUDE.md 文件。 这是最简单的入门方式。在仓库根目
 
 几个值得关注的趋势：
 
-Harness 会成为新的「服务模板」。 Böckeler 提出了一个设想：未来的组织可能会从一组预制的 Harness 模板中选择，然后根据自己的需求定制。这有点像今天的 CI/CD 模板或者 cookiecutter 项目脚手架，只是层级更高。
+Harness 会成为新的「服务模板」。 Böckeler 提出了一个设想：未来的组织可能会从一组预制的 Harness 模板中选择，然后根据自己的需求定制。这有点像今天的 CI/CD 模板或者 `cookiecutter` 项目脚手架，只是层级更高。
 
 **技术栈会收敛。** 当写代码本身不再是瓶颈时，团队会更偏向选择那些「有好 Harness 可用」的技术栈。AI 友好性可能会超过开发者个人偏好，成为选型时的首要考量。
 
@@ -450,7 +455,7 @@ Harness Engineering 说的这些，上下文管理、架构约束、反馈循环
 
 想想看，一个好的技术 leader 是怎么带团队的？
 
-给新人写 onboarding 文档（AGENTS.md），定代码规范和架构原则（linter 和结构测试），做 code review 确保质量（CI/CD 检查），定期还得做技术债清理（垃圾回收），给工具做精简和选型（工具链管理），遇到反复出现的问题就写进 wiki（反馈循环）。
+给新人写 onboarding 文档（`AGENTS.md`），定代码规范和架构原则（linter 和结构测试），做 code review 确保质量（CI/CD 检查），定期还得做技术债清理（垃圾回收），给工具做精简和选型（工具链管理），遇到反复出现的问题就写进 wiki（反馈循环）。
 
 AI Agent 越强，就越像一个能力很强但需要管理的员工。
 

@@ -1,3 +1,4 @@
+
 # L2G6-强化学习初探及OREAL实践
 
 > 来源：[https://aicarrier.feishu.cn/docx/RuqPdzUfZoYdfUxMUduc3NJ9nBc](https://aicarrier.feishu.cn/docx/RuqPdzUfZoYdfUxMUduc3NJ9nBc)
@@ -10,9 +11,9 @@
 
 论文解读就看[新闻稿](https://www.shlab.org.cn/news/5444059)和其他博主分析就好，这里就略了，直接开始跑代码。
 
-# 配置环境
+## 配置环境
 
-首先是安装python环境，这里直接用安装conda安装虚拟环境
+首先是安装`python`环境，这里直接用安装`conda`安装虚拟环境
 
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -21,14 +22,14 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 # 后面按提示操作
 ```
 
-这里因为xtuner依赖的mpi4py-mpich要求python版本>=3.8, <3.12，所以要用3.11版本的python。
+这里因为`xtuner`依赖的`mpi4py-mpich`要求`python`版本>=3.8, <3.12，所以要用3.11版本的`python`。
 
 ```
 conda create -n OREAL python=3.11
 conda activate OREAL
 ```
 
-接着是安装具体依赖（这里我就当你已经安装完CUDA环境了），这个flash-attn需要编译，因此安装比较困难，如果安装失败就建议pip uninstall ninja && pip install -U ninja并重新安装试试。
+接着是安装具体依赖（这里我就当你已经安装完`CUDA`环境了），这个`flash-attn`需要编译，因此安装比较困难，如果安装失败就建议`pip uninstall ninja && pip install -U ninja`并重新安装试试。
 
 ```
 pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
@@ -36,26 +37,26 @@ pip install flash-attn --no-build-isolation
 pip install fire xtuner[all]==0.2.0rc0
 ```
 
-如果你在安装flash-attn的过程中，出现了Build字样，并且花费的时间特别久，就直接去官网下载预编译好的版本自己上传安装吧，别浪费时间编译了，对于按前面的方法搭建的环境来说，直接安装这个包就行。
+如果你在安装`flash-attn`的过程中，出现了`Build`字样，并且花费的时间特别久，就直接去官网下载预编译好的版本自己上传安装吧，别浪费时间编译了，对于按前面的方法搭建的环境来说，直接安装这个包就行。
 
 https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
 
 如果你的环境有不同，就去手动挑选：https://github.com/Dao-AILab/flash-attention/releases
 
-# 运行 Judger 模型
+## 运行 Judger 模型
 
-## 安装git-lfs
+### 安装`git-lfs`
 
-如果你运行git lfs install没有任何问题并显示Git LFS initialized.就可以跳过这步，否则就看下面的步骤。
+如果你运行`git lfs install`没有任何问题并显示`Git LFS initialized.`就可以跳过这步，否则就看下面的步骤。
 
-对于Ubuntu/Debian系统，可以直接
+对于`Ubuntu/Debian`系统，可以直接
 
 ```
 sudo apt update
 sudo apt install git-lfs
 ```
 
-而对于CentOS/RHEL，包管理器可能没有git-lfs这个包，这时需要手动添加下
+而对于`CentOS/RHEL`，包管理器可能没有`git-lfs`这个包，这时需要手动添加下
 
 ```
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
@@ -66,21 +67,21 @@ sudo yum install git-lfs
 
 https://packagecloud.io/github/git-lfs/install
 
-总之完成git-lfs的安装后，记得执行
+总之完成`git-lfs`的安装后，记得执行
 
 ```
 git lfs install
 ```
 
-## 下载离线模型
+### 下载离线模型
 
-OREAL 需要一个语言模型作为验证器，结合基于规则的验证函数来评估生成解决方案的正确性。原版的repo使用的是72B的模型，但这个对大家来说开销太大了，因此换个1.5B的模型意思下。
+`OREAL` 需要一个语言模型作为验证器，结合基于规则的验证函数来评估生成解决方案的正确性。原版的repo使用的是72B的模型，但这个对大家来说开销太大了，因此换个1.5B的模型意思下。
 
 ```
 git clone https://hf-mirror.com/Qwen/Qwen2.5-Math-1.5B-Instruct
 ```
 
-下载完后就可以直接运行Judger了，这个可以使用lmdeploy进行api接口部署
+下载完后就可以直接运行Judger了，这个可以使用`lmdeploy`进行api接口部署
 
 ```
 pip install lmdeploy partial_json_parser
@@ -94,55 +95,55 @@ https://github.com/InternLM/lmdeploy/blob/main/docs/zh_cn/llm/api_server.md
 
 ![](img/232f1ac4b73cd130643b9396d5e461f1.png)
 
-# 运行训练代码
+## 运行训练代码
 
-因为OREAL的强化学习训练方式对资源要求很高，训练个7B的模型得需要32张A100分布式的训练大约9小时，这个成本太高了。因此我对训练代码进行了爆改，在训练的过程中需要使用3个LLM
+因为`OREAL`的强化学习训练方式对资源要求很高，训练个7B的模型得需要32张`A100`分布式的训练大约9小时，这个成本太高了。因此我对训练代码进行了爆改，在训练的过程中需要使用3个`LLM`
 
-1.  用于math_judger的LLM（在下面的示例中，我把这个模型规模从72B偷工减料到了1.5B）
+1. 用于`math_judger`的`LLM`（在下面的示例中，我把这个模型规模从72B偷工减料到了1.5B）
 
-1.  用于reference的LLM（被我偷工减料到了0.5B）
+1. 用于`reference`的`LLM`（被我偷工减料到了0.5B）
 
-1.  被训练的LLM（被我偷工减料到了0.5B）
+1. 被训练的`LLM`（被我偷工减料到了0.5B）
 
-这个配置可以在40G显卡的显卡上完成训练（偶尔会OOM），至于训练出的水平就不要在意了，无数先辈复现Deepseek R1-Zero模型时就发现过一个铁律，小于 3B 的模型无法学会推理，只适合使用sft微调而不是强化学习。所以就不要对这个训练出的0.5B模型的性能抱有太大期待，只要能跑通就好。
+这个配置可以在40G显卡的显卡上完成训练（偶尔会`OOM`），至于训练出的水平就不要在意了，无数先辈复现`Deepseek R1-Zero`模型时就发现过一个铁律，小于 3B 的模型无法学会推理，只适合使用`SFT`微调而不是强化学习。所以就不要对这个训练出的0.5B模型的性能抱有太大期待，只要能跑通就好。
 
-一篇Deepseek R1-Zero复现实验：https://mp.weixin.qq.com/s/Z7P61IV3n4XYeC0Et_fvwg
+一篇`Deepseek R1-Zero`复现实验：https://mp.weixin.qq.com/s/Z7P61IV3n4XYeC0Et_fvwg
 
-首先先扒OREAL的源代码
+首先先扒`OREAL`的源代码
 
-如果你从github上拉代码有问题，可以用这里面的方法加速访问：https://github.akams.cn/
+如果你从`github`上拉代码有问题，可以用这里面的方法加速访问：https://github.akams.cn/
 
 ```
 git clone https://github.com/InternLM/OREAL
 ```
 
-创建自己的训练配置文件，默认的配置文件在./oreal/configs/文件夹下，这里要改掉这个配置，把hosts改成你的配置。
+创建自己的训练配置文件，默认的配置文件在`./oreal/configs/`文件夹下，这里要改掉这个配置，把`hosts`改成你的配置。
 
-比如127.0.0.1:10003，这个就是你前面用lmdeploy运行的judger服务
+比如`127.0.0.1:10003`，这个就是你前面用`lmdeploy`运行的judger服务
 
-因为原版的OREAL是在集群上分布式训练的，因此我对代码进行了修改，使其能进行单机训练
+因为原版的`OREAL`是在集群上分布式训练的，因此我对代码进行了修改，使其能进行单机训练
 
 这里放3个我修改过的代码，将这些代码替换原代码即可训练。
 
-放到./oreal/configs/config.py下
+放到`./oreal/configs/config.py`下
 
 ![](img/21bd6de27eb78d272daaa7646aad18fc.png)
 
-[config.py](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NY3rb6lOmoX1WmxpwuWcIh6Pnhf)
+[`config.py`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NY3rb6lOmoX1WmxpwuWcIh6Pnhf)
 
 自己放在代码根目录
 
 ![](img/c0508f858a9c046cc8b216bb0854d4ee.png)
 
-[single_train.py](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AdvRbqnQ4o2GzIxJOkfcTfhmnmb)
+[`single_train.py`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AdvRbqnQ4o2GzIxJOkfcTfhmnmb)
 
-替换掉./oreal/datasets/trajectory.py
+替换掉`./oreal/datasets/trajectory.py`
 
 ![](img/90b5ffd928fc2c0af1a90b24d60fafd2.png)
 
-[trajectory.py](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VE9gbU9j1opadBx9dQ5csT3cnac)
+[`trajectory.py`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VE9gbU9j1opadBx9dQ5csT3cnac)
 
-接着运行这个指令以开始用强化学习的方式训练llm
+接着运行这个指令以开始用强化学习的方式训练LLM
 
 ```
 export HF_ENDPOINT=https://hf-mirror.com
@@ -154,9 +155,9 @@ python single_train.py ./oreal/configs/config.py --total_steps 90 --work_dir ./w
 
 ![](img/1a7654e44a0c5e6e27ef385f68e4a3f3.png)
 
-# 测试训练出的模型
+## 测试训练出的模型
 
-训练好的模型会保存在前面的--work_dir文件夹下，进去后找到最后一次的checkpoint，然后就可以加载了。
+训练好的模型会保存在前面的`--work_dir`文件夹下，进去后找到最后一次的`checkpoint`，然后就可以加载了。
 
 ![](img/34f82973732b4feb1af287107ad46d62.png)
 
@@ -165,20 +166,20 @@ python single_train.py ./oreal/configs/config.py --total_steps 90 --work_dir ./w
 ```
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 
-model_name = &quot;./checkpoint_90&quot;  # 替换为你训练好的模型路径，在使用相对路径时注意路径起点。
+model_name = "./checkpoint_90"  # 替换为你训练好的模型路径，在使用相对路径时注意路径起点。
 model = AutoModelForCausalLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 # 创建文本生成 pipeline
 text_generator = pipeline(
-    &quot;text-generation&quot;,
+    "text-generation",
     model=model,
     tokenizer=tokenizer,
-    device=&#x27;cuda:0&#x27;
+    device='cuda:0'
 )
 
 # 等待用户输入
-text_input = &quot;证明费马大定理&quot;
+text_input = "证明费马大定理"
 
 # 生成文本
 result = text_generator(
@@ -192,14 +193,14 @@ result = text_generator(
 )
 
 # 打印生成的文本
-print(result[0][&#x27;generated_text&#x27;])
+print(result[0]['generated_text'])
 ```
 
 还能正常生成，说明本次强化学习起码没有失败
 
 ![](img/9129fb674ab13bb049aab51f132efa7e.png)
 
-# 可更进阶的尝试内容
+## 可更进阶的尝试内容
 
 在跑完上面的丐版LLM强化学习后，还有很多方向可以改进，首先就是怎么用强化学习训练出一个成功的，正常规模大小的LLM。
 
@@ -207,7 +208,7 @@ print(result[0][&#x27;generated_text&#x27;])
 
 二是用上一些降低显存占用的方案来在低资源下训练更大规格的模型。
 
-比如使用DeepSpeed 框架的 ZeRO-3 方案减少显存占用，其具体方式有：参数分片、优化器状态分片、梯度分片、内存复用、内存分配优化、计算图优化、把暂时用不到的显存卸载到 CPU 和 NVMe 存储等方法。
+比如使用DeepSpeed框架的ZeRO-3方案减少显存占用，其具体方式有：参数分片、优化器状态分片、梯度分片、内存复用、内存分配优化、计算图优化、把暂时用不到的显存卸载到CPU和NVMe存储等方法。
 
 ![](img/2aeedaff26fb96eb0fa94250d858b5ec.png)
 

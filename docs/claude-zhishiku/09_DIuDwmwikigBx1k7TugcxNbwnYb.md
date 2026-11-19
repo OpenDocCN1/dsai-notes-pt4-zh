@@ -1,8 +1,9 @@
+
 # zerotermux设置方法
 
 > 来源：[https://sqivg8d05rm.feishu.cn/docx/LgotdgyCeofQiNxkzfWcKIEdnuc](https://sqivg8d05rm.feishu.cn/docx/LgotdgyCeofQiNxkzfWcKIEdnuc)
 
-(什么？你说打开后页面是这样？）
+(什么？你说打开后页面是这样？)
 
 ![](img/e476ac87084248c9e5dd5cb1f124228a.png)
 

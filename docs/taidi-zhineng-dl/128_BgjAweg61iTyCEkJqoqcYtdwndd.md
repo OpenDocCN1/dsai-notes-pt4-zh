@@ -1,8 +1,9 @@
+
 # TVM 的 Unity & Relax
 
 > 来源：[https://learning.feishu.cn/docx/TctYdSiZAoeZ3Sxhcn9cGea8nqc](https://learning.feishu.cn/docx/TctYdSiZAoeZ3Sxhcn9cGea8nqc)
 
-# 参考 link
+## 参考 link
 
 | 文章 | 作者 | Notes |
 | --- | --- | --- |
@@ -13,17 +14,16 @@
 | Relax Architecture Overview | TVM team |  |
 | Relax Shape Computation Design |  |  |
 
-1.  引入了 2 个 intrinsics：call_tir 和 call_packed.
+1. 引入了 2 个 intrinsics：`call_tir` 和 `call_packed`.
+2. 陈天奇的 MLC 课程 chap 4 讲了这两个 API
 
-1.  陈天奇的 MLC 课程 chap 4 讲了这两个 API
+## 要点总结
 
-# 要点总结
-
-1.  Relax 是 Relay next，TVM 的下一代图层 IR。
+1. `Relax` 是 `Relay` next，TVM 的下一代图层 IR。
 
 ![](img/dcd15060dbb3917e1e36c69c7c4b9919.png)
 
-# Motivations - 3 个
+## Motivations - 3 个
 
 ![](img/6d0f4db8a7be0cabe35f90b5ae88f25e.png)
 
@@ -33,7 +33,7 @@
 
 ![](img/8088a12b3dd5318559c313565db44a5d.png)
 
-# Design & Architecture
+## Design & Architecture
 
 ![](img/5a7ca2ef582fae7ce3294e3f898a2b66.png)
 

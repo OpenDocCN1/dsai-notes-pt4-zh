@@ -1,10 +1,13 @@
+
 # 7 Powerful GPT‑5 Prompts for Instant Upgrade
 
 > 来源：[https://my.feishu.cn/docx/LsGTdfFO5oGk0TxiCMScBhxnnpQ](https://my.feishu.cn/docx/LsGTdfFO5oGk0TxiCMScBhxnnpQ)
 
-**使用场景或用例：**适用于希望 GPT‑5 在日常生活、工作计划、组织、家庭活动推荐等多个场景中提升效率和实用性的用户，通过结构化 prompt 优化生产力体验。
+## 使用场景或用例
 
-**提示词：**
+适用于希望 GPT‑5 在日常生活、工作计划、组织、家庭活动推荐等多个场景中提升效率和实用性的用户，通过结构化 prompt 优化生产力体验。
+
+## 提示词
 
 ```
 Scheduling and workflow – Create realistic, step‑by‑step weekly schedules balancing work, parenting, and fitness.

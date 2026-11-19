@@ -1,18 +1,17 @@
+
 # 【悠船 | MidJourney 效果对比】-- 最强AI绘画工具测评
 
 > 来源：[https://agijuejin.feishu.cn/docx/XkD5d8x8Wo4Z9jxQ8aHcwkA0nxh](https://agijuejin.feishu.cn/docx/XkD5d8x8Wo4Z9jxQ8aHcwkA0nxh)
-
 > 作者：德里克文
+> 原文：[https://zhuanlan.zhihu.com/p/689204211](https://zhuanlan.zhihu.com/p/689204211)
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/689204211)hihu.com/p/689204...
-
-**最近有一款AI绘画 **[**工具软件 **](https://zhida.zhihu.com/search?q=%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6&zhida_source=entity&is_preview=1)[**悠船正在**](https://zhida.zhihu.com/search?q=%E6%89%9B%E9%9C%B8%E5%AD%90&zhida_source=entity&is_preview=1)**内测，它的效果对比AI绘画目前 扛霸子 Mid Journey**怎么样呢？它又有什么与Mid Journey不同的本土化特点呢？让我来测试下吧~
+最近有一款AI绘画 [工具软件](https://zhida.zhihu.com/search?q=%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6&zhida_source=entity&is_preview=1) [悠船正在](https://zhida.zhihu.com/search?q=%E6%89%9B%E9%9C%B8%E5%AD%90&zhida_source=entity&is_preview=1) 内测，它的效果对比AI绘画目前 扛霸子 Mid Journey 怎么样呢？它又有什么与Mid Journey不同的本土化特点呢？让我来测试下吧~
 
 ![](img/d717f97164b7dd8b34dadc3d919bf5e6.png)
 
-**话**不多说，让我们直接进入正题直接上干货，让我测试下在同样的提示词情况下，他们的画面效果分别是怎么样的把！
+**话不多说**，让我们直接进入正题直接上干货，让我测试下在同样的提示词情况下，他们的画面效果分别是怎么样的把！
 
-## **一、横向测评**
+## 一、横向测评
 
 我会从日常使用AI绘画的常用用途中挑选场景，进行1V1的横向对比，大家可以清晰的看到对比的效果！
 
@@ -50,7 +49,7 @@
 
 好了，接下来让我再测试下不同提示词内容下各个图像的表现效果吧！
 
-### **2.真实照片**
+### 2.真实照片
 
 **1）动物**
 
@@ -66,7 +65,7 @@
 **2）人物**
 
 ```
-中文提示词：帅气而友善的中国男性，有着灿烂的笑容和洁白的牙齿。 明亮的[氛围和情](https://zhida.zhihu.com/search?q=%E8%87%AA%E7%84%B6%E9%98%B3%E5%85%89&amp;zhida_source=entity&amp;is_preview=1)绪，明亮的灯光，友好的微笑。 平易近人的样子。 白衬衫和天空在背景中。 自然阳光
+中文提示词：帅气而友善的中国男性，有着灿烂的笑容和洁白的牙齿。 明亮的[氛围和情绪](https://zhida.zhihu.com/search?q=%E8%87%AA%E7%84%B6%E9%98%B3%E5%85%89&amp;zhida_source=entity&amp;is_preview=1)，明亮的灯光，友好的微笑。 平易近人的样子。 白衬衫和天空在背景中。 自然阳光
 英文提示词：Handsome and friendly Chinese manwith bright smile and white teeth. Brightatmosphere and mood, bright lights, friendlysmile.Approachable appearance. White shirand sky in the background. Natural sunlight
 ```
 
@@ -129,7 +128,7 @@
 
 再次震惊，是翻译原因导致Mid Journey Alpha 没理解吗？巨型软糖这个效果，悠船表现的太富有想象力了！
 
-提示词非常重要的，如果想要学好AI绘画，提示词学习是必修课，[我建议如](https://zhida.zhihu.com/search?q=%E7%9F%A5%E5%AD%A6%E5%A0%82&zhida_source=entity&is_preview=1)果想要学习的朋友可以听一下知乎 知学堂 的「AI绘画设计师实战营」，你只需要0.1元可以了解AI绘画的基础进行入门。
+提示词非常重要的，如果想要学好AI绘画，提示词学习是必修课，[我建议如果](https://zhida.zhihu.com/search?q=%E7%9F%A5%E5%AD%A6%E5%A0%82&zhida_source=entity&is_preview=1)想要学习的朋友可以听一下知乎 知学堂 的「AI绘画设计师实战营」，你只需要0.1元可以了解AI绘画的基础进行入门。
 
 知乎知学堂的这门课程将通过两节直播课的形式，由经验丰富的AI绘画训练师带领大家从零开始，学习使用Midjourney和Stable Diffusion这一类专业的AI绘画工具。
 
@@ -137,13 +136,13 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 ￥0.10 立即参加
 
-**在完整上完体验课后，你将获得「Stable Diffusion软件+安装教程」、「Mi**djourney常用咒语合集」等丰富的福利资料。记得在听完课后找助教老师领取哦！
+**在完整上完体验课后，你将获得「Stable Diffusion软件+安装教程」、「Midjourney常用咒语合集」等丰富的福利资料。记得在听完课后找助教老师领取哦！**
 
 ### 3.绘画风格
 
 接下来我再来测试下关于绘画方面的效果。
 
-**1） **[**印象派**](https://zhida.zhihu.com/search?q=%E5%8D%B0%E8%B1%A1%E6%B4%BE&zhida_source=entity&is_preview=1)
+**1）[印象派](https://zhida.zhihu.com/search?q=%E5%8D%B0%E8%B1%A1%E6%B4%BE&zhida_source=entity&is_preview=1)**
 
 ```
 中文提示词：超现实的印象派绘画，在熔岩流上滑雪，炽热和白化。 火与冰，平移。 极广角，雪浪
@@ -178,7 +177,7 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 这一幅画各有千秋。
 
-**4） **[**二次元漫画**](https://zhida.zhihu.com/search?q=%E4%BA%8C%E6%AC%A1%E5%85%83%E6%BC%AB%E7%94%BB&zhida_source=entity&is_preview=1)
+**4）[二次元漫画](https://zhida.zhihu.com/search?q=%E4%BA%8C%E6%AC%A1%E5%85%83%E6%BC%AB%E7%94%BB&zhida_source=entity&is_preview=1)**
 
 ```
 中文提示词：三名男子在[创意工作室](https://zhida.zhihu.com/search?q=%E5%88%9B%E6%84%8F%E5%B7%A5%E4%BD%9C%E5%AE%A4&amp;zhida_source=entity&amp;is_preview=1)中站着办公、他们在做平面设计，俯瞰着吉卜力风格的城市景观
@@ -210,13 +209,17 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 而在中国传统的国画效果上，两者也有显著的差异，我这里采用如下提示词：
 
 ```
-中[文提示](https://zhida.zhihu.com/search?q=%E5%90%B4%E5%86%A0%E4%B8%AD&amp;zhida_source=entity&amp;is_preview=1)词：中国二十四节气中的清明，清新的烟雨。 草原上，头戴斗笠的牧童骑着牛，远处，是星罗棋布的村庄。 画面右上角柳枝垂下，工笔、吴冠中风格，留白
+[中文提示词](https://zhida.zhihu.com/search?q=%E5%90%B4%E5%86%A0%E4%B8%AD&amp;zhida_source=entity&amp;is_preview=1)：中国二十四节气中的清明，清新的烟雨。 草原上，头戴斗笠的牧童骑着牛，远处，是星罗棋布的村庄。 画面右上角柳枝垂下，工笔、吴冠中风格，留白
 英文提示词：Chinese solar term. On the prairie, cowboys wearing hats ride cattle, in the distance, is dotted with villages. Willow branches hanging on the upper right corner of the screen, fine brushwork, Wu Guanzhong style, white space
 ```
 
 ![](img/6e2ff944f0eeaf031be6bd62088af8f6.png)
 
 可以看到Mid Journey Alpha虽然已经尽力去表现中国文化的感觉，但是出来的风格依然不太中国，更像是西方的水彩画，而悠船的不仅能够很好理解清明的意境，还能采用国画的手法进行描绘。
+
+
+
+## 三、悠船介绍
 
 ### 3、特色功能
 
@@ -233,8 +236,6 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 ![](img/4e5fec5a364374c1eaf9f3ac58825c72.png)
 
 可以说在功能齐全的基础上，适配了本土操作的便利。
-
-## 三、悠船介绍
 
 看了上面的效果和功能界面对比，大家对于悠船这一个AI绘画软件的水平应该心里有了底，我个人觉得丝毫不逊色于Mid Journey，甚至因为全中文操作、针对本土化的优化，以及价格上的优势，让我觉得非常值得推荐给各位希望了解AI绘画的小伙伴。
 
@@ -276,7 +277,7 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 接下来我来给大家讲解下最简单的入门操作方法。
 
-**1）参数设置**
+#### 1）参数设置
 
 进入界面后点击开始想象开启创作之旅，在最下方输入栏输入咒语，右下角有一个画面参数设置
 

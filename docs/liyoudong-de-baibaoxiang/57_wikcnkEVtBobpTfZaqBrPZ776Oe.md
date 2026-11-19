@@ -1,6 +1,7 @@
+
 # Claude注册教程
 
-> 来源：[https://docs.feishu.cn/docx/M0XedoKOhovPsSxugytcD1Aonwc](https://docs.feishu.cn/docx/M0XedoKOhovPsSxugytcD1Aonwc)
+> 来源：`https://docs.feishu.cn/docx/M0XedoKOhovPsSxugytcD1Aonwc`
 
 > 提示：Claude使用不需要🪜，但是注册账号过程中可能出现403报错
 
@@ -22,13 +23,13 @@
 
 > 5，适用领域不同：Constitutional Al更适用于需要考虑AI安全的应用，如虚拟助手、舆论监测等。GPT模型主要用于生成新闻文章、小说、代码等。
 
-### 注册claude具体流程
+## 注册claude具体流程
 
-#### 第一步 需要先安装Slack
+### 第一步 需要先安装Slack
 
 1.1 打开Slack官网进行注册
 
-官网地址：https://slack.com/get-started#/createnew
+官网地址：`https://slack.com/get-started#/createnew`
 
 ![](img/7c9fc119c5dd44aea10c7db467d5b46f.png)
 
@@ -62,9 +63,9 @@
 
 ![](img/65e705b40f2e5d682c040fad8e7d82c1.png)
 
-#### 第二步 接入Claude
+### 第二步 接入Claude
 
-打开这个网址https://www.anthropic.com/claude-in-slack 点击Add to Slack
+打开这个网址`https://www.anthropic.com/claude-in-slack` 点击Add to Slack
 
 ![](img/6abd42cc4fb2eccac347c0ca9e87d9d2.png)
 
@@ -76,11 +77,11 @@
 
 ![](img/7cce314c01f018ed2f7ec35da5189409.png)
 
-#### 第三步 在返回第一步完成安装的界面
+### 第三步 在返回第一步完成安装的界面
 
 ![](img/8f3247fa0d90442da7d7be9bead8e3ef.png)
 
-> 如果第一步的工作空间不小心关掉了，可以通过这个网址找到刚才创建的空间https://app.slack.com/
+> 如果第一步的工作空间不小心关掉了，可以通过这个网址找到刚才创建的空间`https://app.slack.com/`
 
 ![](img/58eed2e7ea3e70d960f9aa70984962e1.png)
 
@@ -88,9 +89,9 @@
 
 ![](img/2e6ac6b10eb3e8bccfbc0961020e3614.png)
 
-### 常见报错
+## 常见报错
 
-#### 403 Forbidden报错
+### 403 Forbidden报错
 
 解决思路
 
@@ -98,7 +99,7 @@
 
 2、更换浏览器尝试
 
-3、通过这个链接进入添加Claude：https://slack.com/apps/A04KGS7N9A8-claude?tab=more_info
+3、通过这个链接进入添加Claude：`https://slack.com/apps/A04KGS7N9A8-claude?tab=more_info`
 
 4、更换谷歌账号，用新的账号注册
 

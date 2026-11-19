@@ -1,18 +1,19 @@
+
 # 微调训练
 
 > 来源：[https://ai.feishu.cn/docx/FmRkdrr2FoM5HOxiYr4c9mFtn9e](https://ai.feishu.cn/docx/FmRkdrr2FoM5HOxiYr4c9mFtn9e)
 
-本 demo 中，你将体验到如何微调 CogAgent-20241220 开源模型。 请严格按照文档的步骤进行操作，以避免不必要的错误。
+本 demo 中，你将体验到如何微调 `CogAgent-20241220` 开源模型。请严格按照文档的步骤进行操作，以避免不必要的错误。
 
 ## 多轮微调格式
 
-CogAgent-20241220 结构与GLM-4V不完全相同，关于微调代码的底层细节，可以参考 GLM-4V-9B开源模型。主要区别在构建提示词上。多轮微调示例采用 CogAgent 对话格式约定，对不同角色添加不同 loss_mask 从而在一遍计算中为多轮回复计算 loss。
+`CogAgent-20241220` 结构与 `GLM-4V` 不完全相同，关于微调代码的底层细节，可以参考 `GLM-4V-9B` 开源模型。主要区别在构建提示词上。多轮微调示例采用 `CogAgent` 对话格式约定，对不同角色添加不同 `loss_mask` 从而在一遍计算中为多轮回复计算 loss。
 
-对于 CogAgent模型，您应该按照以下格式整理数据, 保证每一条数据都有图片并且user的History steps部分包括之前已有的全部操作，以下第一条数据是中间步骤，模型会返回<<一般操作>>等，第二条数据是完整过程，模型会返回<<END>>。
+对于 `CogAgent` 模型，您应该按照以下格式整理数据，保证每一条数据都有图片并且 `user` 的 `History steps` 部分包括之前已有的全部操作，以下第一条数据是中间步骤，模型会返回 `<<一般操作>>` 等，第二条数据是完整过程，模型会返回 `<<END>>`。
 
-请注意关注数据集构建的部分，CogAgent中每个字段都非常固定，不能进行修改，历史记录的构建也与常规大模型不相同（包括换行等在内的格式都必须严格遵守规范）。因此，在微调之前，建议人工进行细致整理。
+请注意关注数据集构建的部分，`CogAgent` 中每个字段都非常固定，不能进行修改，历史记录的构建也与常规大模型不相同（包括换行等在内的格式都必须严格遵守规范）。因此，在微调之前，建议人工进行细致整理。
 
-在这里，我们为大家提供了一个可行的微调图片和方案，请注意，数据集中的box是千分比坐标。你可以在开源仓库中的draw_boxes_on_image函数查看到怎么还原到原始图像的真实坐标的。
+在这里，我们为大家提供了一个可行的微调图片和方案，请注意，数据集中的 `box` 是千分比坐标。你可以在开源仓库中的 `draw_boxes_on_image` 函数查看到怎么还原到原始图像的真实坐标的。
 
 ```
 {
@@ -43,9 +44,9 @@ CogAgent-20241220 结构与GLM-4V不完全相同，关于微调代码的底层�
 }
 ```
 
-[提示词拼接](https://zhipu-ai.feishu.cn/wiki/D9FTwQ78fitS3CkZHUjcKEWTned?fromScene=spaceOverview)于微调数据，user和assistant的组织和拼接可参考 ，以上述示例详细说明如何准备微调数据：
+[提示词拼接](https://zhipu-ai.feishu.cn/wiki/D9FTwQ78fitS3CkZHUjcKEWTned?fromScene=spaceOverview)于微调数据，`user` 和 `assistant` 的组织和拼接可参考，以上述示例详细说明如何准备微调数据：
 
-首先观察user部分，需要按照query = f'{task}{platform}{format}{history}'格式拼接，对于History steps部分，则需要遵循以下格式，其中Grounded Operation是模型的操作函数，action是对应文字描述：
+首先观察 `user` 部分，需要按照 `query = f'{task}{platform}{format}{history}'` 格式拼接，对于 `History steps` 部分，则需要遵循以下格式，其中 `Grounded Operation` 是模型的操作函数，`action` 是对应文字描述：
 
 ```
 History steps:
@@ -54,89 +55,64 @@ History steps:
 ......
 ```
 
-再看assistant部分，相对简单，需要按照answer=f'{action}{Grounded Operation}{Sensitive}'进行拼接，其中Action和Grounded Operation与user部分相同，Sensitive是指操作的敏感程度。
+再看 `assistant` 部分，相对简单，需要按照 `answer = f'{action}{Grounded Operation}{Sensitive}'` 进行拼接，其中 `Action` 和 `Grounded Operation` 与 `user` 部分相同，`Sensitive` 是指操作的敏感程度。
 
 ## 配置文件
 
-微调配置文件位于 config 目录下，包括以下文件：
+微调配置文件位于 `config` 目录下，包括以下文件：
 
-1.  ds_zereo_2 / ds_zereo_3.json: deepspeed 配置文件。
+1. `ds_zereo_2` / `ds_zereo_3.json`: `deepspeed` 配置文件。
+2. `lora.yaml` / `sft.yaml`: 模型不同方式的配置文件，包括模型参数、优化器参数、训练参数等。部分重要参数解释如下：
 
-1.  lora.yaml / sft.yaml: 模型不同方式的配置文件，包括模型参数、优化器参数、训练参数等。 部分重要参数解释如下：
+### data_config 部分
 
-+   data_config 部分
+- `train_file`: 训练数据集的文件路径。
+- `val_file`: 验证数据集的文件路径。
+- `test_file`: 测试数据集的文件路径。
+- `num_proc`: 在加载数据时使用的进程数量。
+- `freezeV`: 是否冻结 `vision` 部分参数。
+- `max_input_length`: 输入序列的最大长度。
+- `max_output_length`: 输出序列的最大长度。
 
-+   train_file: 训练数据集的文件路径。
+### training_args 部分
 
-+   val_file: 验证数据集的文件路径。
+- `output_dir`: 用于保存模型和其他输出的目录。
+- `max_steps`: 训练的最大步数。
+- `per_device_train_batch_size`: 每个设备（如 `GPU`）的训练批次大小。
+- `dataloader_num_workers`: 加载数据时使用的工作线程数量。
+- `remove_unused_columns`: 是否移除数据中未使用的列。
+- `save_strategy`: 模型保存策略（例如，每隔多少步保存一次）。
+- `save_steps`: 每隔多少步保存一次模型。
+- `log_level`: 日志级别（如 `info`）。
+- `logging_strategy`: 日志记录策略。
+- `logging_steps`: 每隔多少步记录一次日志。
+- `per_device_eval_batch_size`: 每个设备的评估批次大小。
+- `evaluation_strategy`: 评估策略（例如，每隔多少步进行一次评估）。
+- `eval_steps`: 每隔多少步进行一次评估。
+- `predict_with_generate`: 是否使用生成模式进行预测。
 
-+   test_file: 测试数据集的文件路径。
+### generation_config 部分
 
-+   num_proc: 在加载数据时使用的进程数量。
+- `max_new_tokens`: 生成的最大新 `token` 数量。
 
-+   freezeV: 是否冻结vision部分参数。
+### peft_config 部分
 
-+   max_input_length: 输入序列的最大长度。
-
-+   max_output_length: 输出序列的最大长度。
-
-+   training_args 部分
-
-+   output_dir: 用于保存模型和其他输出的目录。
-
-+   max_steps: 训练的最大步数。
-
-+   per_device_train_batch_size: 每个设备（如 GPU）的训练批次大小。
-
-+   dataloader_num_workers: 加载数据时使用的工作线程数量。
-
-+   remove_unused_columns: 是否移除数据中未使用的列。
-
-+   save_strategy: 模型保存策略（例如，每隔多少步保存一次）。
-
-+   save_steps: 每隔多少步保存一次模型。
-
-+   log_level: 日志级别（如 info）。
-
-+   logging_strategy: 日志记录策略。
-
-+   logging_steps: 每隔多少步记录一次日志。
-
-+   per_device_eval_batch_size: 每个设备的评估批次大小。
-
-+   evaluation_strategy: 评估策略（例如，每隔多少步进行一次评估）。
-
-+   eval_steps: 每隔多少步进行一次评估。
-
-+   predict_with_generate: 是否使用生成模式进行预测。
-
-+   generation_config 部分
-
-+   max_new_tokens: 生成的最大新 token 数量。
-
-+   peft_config 部分
-
-+   peft_type: 使用的参数有效调整类型 (支持 LORA 和 PREFIX_TUNING)。
-
-+   task_type: 任务类型，这里是因果语言模型 (不要改动)。
-
-+   Lora 参数：
-
-+   r: LoRA 的秩。
-
-+   lora_alpha: LoRA 的缩放因子。
-
-+   lora_dropout: 在 LoRA 层使用的 dropout 概率。
+- `peft_type`: 使用的参数有效调整类型（支持 `LORA` 和 `PREFIX_TUNING`）。
+- `task_type`: 任务类型，这里是因果语言模型（不要改动）。
+- `Lora` 参数：
+  - `r`: `LoRA` 的秩。
+  - `lora_alpha`: `LoRA` 的缩放因子。
+  - `lora_dropout`: 在 `LoRA` 层使用的 `dropout` 概率。
 
 ## 开始微调
 
-通过以下代码执行 **单机多卡/多机多卡** 运行，这是使用 deepspeed 作为加速方案的，您需要安装 deepspeed。 CogAgent格式的数据集由您自行准备，接着，按照此命令运行 SFT：
+通过以下代码执行 单机多卡/多机多卡 运行，这是使用 `deepspeed` 作为加速方案的，您需要安装 `deepspeed`。`CogAgent` 格式的数据集由您自行准备，接着，按照此命令运行 `SFT`：
 
 ```
 OMP_NUM_THREADS=1 torchrun --standalone --nnodes=1 --nproc_per_node=8  finetune.py  data/CogAgentData/  THUDM/cogagent-9b-20241220  configs/sft.yaml
 ```
 
-通过以下代码执行 **单机单卡** 运行 Lora:
+通过以下代码执行 单机单卡 运行 `Lora`：
 
 ```
 python finetune.py  data/CogAgentData/  THUDM/CogAgent-9b-20241220  configs/lora.yaml
@@ -144,11 +120,10 @@ python finetune.py  data/CogAgentData/  THUDM/CogAgent-9b-20241220  configs/lora
 
 ## 从保存点进行微调
 
-如果按照上述方式进行训练，每次微调都会从头开始，如果你想从训练一半的模型开始微调，你可以加入第四个参数，这个参数有两种传入方式:
+如果按照上述方式进行训练，每次微调都会从头开始，如果你想从训练一半的模型开始微调，你可以加入第四个参数，这个参数有两种传入方式：
 
-1.  yes, 自动从最后一个保存的 Checkpoint开始训练
-
-1.  XX, 断点号数字 例 600 则从序号 600 Checkpoint开始训练
+1. `yes`: 自动从最后一个保存的 `Checkpoint` 开始训练
+2. `XX`: 断点号数字，例如 `600` 则从序号 `600` `Checkpoint` 开始训练
 
 例如，这就是一个从最后一个保存点继续微调的示例代码
 
@@ -158,7 +133,7 @@ python finetune.py  data/CogAgentData/  THUDM/CogAgent1.5-9b  configs/lora.yaml 
 
 ## 采用华为昇腾计算计算设备进行微调
 
-如果你需要使用Ascend NPU设备，例如ATLAS 300 A2，你需要解除注释:
+如果你需要使用 `Ascend NPU` 设备，例如 `ATLAS 300 A2`，你需要解除注释：
 
 ```
 import torch_npu

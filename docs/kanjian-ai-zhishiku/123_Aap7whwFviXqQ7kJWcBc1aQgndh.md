@@ -1,8 +1,9 @@
+
 # DeepSeek使用大全
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/Vq1adMGPeoa55Dx488wcE6rBn6f](https://jlqyxzzvbk.feishu.cn/docx/Vq1adMGPeoa55Dx488wcE6rBn6f)
 
-一个平台访问BAT+字节专线满血版DeepSeek  https://deepaistore.com
+一个平台访问BAT+字节专线满血版DeepSeek https://deepaistore.com
 
 一个平台访问所有DeepSeek模型 https://deepaistore.com
 

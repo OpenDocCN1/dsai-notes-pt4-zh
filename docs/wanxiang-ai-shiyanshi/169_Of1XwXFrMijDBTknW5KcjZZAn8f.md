@@ -1,6 +1,7 @@
+
 # AI 办公工具精选
 
-> 来源：[https://yunyinghui.feishu.cn/docx/NBDpdkELuoLQ1TxJpUUcgA9mnEg](https://yunyinghui.feishu.cn/docx/NBDpdkELuoLQ1TxJpUUcgA9mnEg)
+> 来源：[`https://yunyinghui.feishu.cn/docx/NBDpdkELuoLQ1TxJpUUcgA9mnEg`](`https://yunyinghui.feishu.cn/docx/NBDpdkELuoLQ1TxJpUUcgA9mnEg`)
 
 > **适用人群：****学习 AI 办公人群**
 
@@ -10,24 +11,24 @@
 
 > **内容出品人：**
 
-> **内容出品方：**[Mix AI Lab](https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink)
+> **内容出品方：**[Mix AI Lab](`https://yunyinghui.feishu.cn/wiki/WhelwZnxQi55mpkOzatc3Xran5b?from=from_copylink`)
 
-> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 Ctrl +F/Command +F 的形式，搜索关键字/词，查找你想要的内容。
+> **使用建议：**如果需要快速定位到精确内容，可以使用快捷键 `Ctrl +F` / `Command +F` 的形式，搜索关键字/词，查找你想要的内容。
 
-> **持续更新 AI 办公好用的****相**关工具，工具介绍等内容，工具经过测评口碑相对比较不错的精选出来，永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。
+> **持续更新 AI 办公好用的相关工具**，工具介绍等内容，工具经过测评口碑相对比较不错的精选出来，永久免费在线查看，欢迎收藏转发支持，文末有惊喜，大国出品，必属精品。
 
-# 更新记录
+## 更新记录
 
-# 办公工具导航
+## 办公工具导航
 
-| ## 办公工具导航 |  |  |  |  |
+| 办公工具导航 |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| [**AI PPT**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-QxisdrWh0o9fP0xXKr9cBFlznae) | [**AI E**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-KzJzdKOXxoAKAIx46CvcB7GdnIb)[**xcel**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-KzJzdKOXxoAKAIx46CvcB7GdnIb) | [**AI **](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-SxeMdz6aQotKm1xSSQrcaYQ5nog)[**文档**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-SxeMdz6aQotKm1xSSQrcaYQ5nog) | [**AI 会议**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-NYrGdyyDKo5moKxzt3qc90oYnxg) | [**AI 翻译**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-DG4DdMG0LoU6sFx69zzcy1b2nKd) |
-| [**AI 搜索**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-AM7Edg0PaorfT7xduD3cS9bRnfb) | [**AI 导图**](https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-ETasd4uNYohWbkx0wWCcnL0znRc) |  |  |  |
+| [AI PPT](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-QxisdrWh0o9fP0xXKr9cBFlznae`) | [AI Excel](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-KzJzdKOXxoAKAIx46CvcB7GdnIb`) | [AI 文档](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-SxeMdz6aQotKm1xSSQrcaYQ5nog`) | [AI 会议](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-NYrGdyyDKo5moKxzt3qc90oYnxg`) | [AI 翻译](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-DG4DdMG0LoU6sFx69zzcy1b2nKd`) |
+| [AI 搜索](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-AM7Edg0PaorfT7xduD3cS9bRnfb`) | [AI 导图](`https://yunyinghui.feishu.cn/wiki/Of1XwXFrMijDBTknW5KcjZZAn8f#part-ETasd4uNYohWbkx0wWCcnL0znRc`) |  |  |  |
 
-# AI PPT
+## AI PPT
 
-## 1.WPS AI
+### 1.WPS AI
 
 ![](img/d23bae5432b31a2a4ad87f4ebf3a552c.png)
 
@@ -39,11 +40,11 @@
 
 **网络条件：**正常网络
 
-**体验网址：**[WPS AI](https://ai.wps.cn/introduction?position=wps-ai-landing-ppt)
+**体验网址：**[WPS AI](`https://ai.wps.cn/introduction?position=wps-ai-landing-ppt`)
 
 **使用建议：**WPS 将 AI 能力与现有软件结合起来，对外观排版的可控制性更强，定制化程度更高，用户的迁移、学习成本也更小，使用起来方便上手。
 
-## 2.Gamma APP
+### 2.Gamma APP
 
 ![](img/b24f525c73e3bb3c178373ae137c5f98.png)
 
@@ -67,7 +68,7 @@
 
 **网络条件：**直连网速较慢，尽量挂科学
 
-**体验网址：**[G](https://gamma.app/?lng=zh-CN)amma App: Generate AI Presentations， Webpages & Docs
+**体验网址：**[Gamma App: Generate AI Presentations，Webpages & Docs](`https://gamma.app/?lng=zh-CN`)
 
 **使用建议：**
 
@@ -77,13 +78,13 @@
 
 3）可以各种修改和调整，弥补 AI 的不足。
 
-## 3.**歌者PPT**
+### 3.歌者PPT
 
 ![](img/aa1fbb7e0626edcdaf7dc6ad97ff4f6e.png)
 
 **网址**
 
-http://gezhe.com
+`http://gezhe.com`
 
 **功能**
 
@@ -101,7 +102,7 @@ http://gezhe.com
 
 **简介**
 
-歌者PPT（gezhe.com）是一款永久免费的智能 PPT 生成工具。用户可以轻松将任何主题或资料转化为PPT，并选择应用大量精美的模板。无论是商务演示、教育培训、学术报告还是专业领域，歌者 PPT 都能提供便捷的操作和智能化体验，让幻灯片制作变得更加轻松高效。
+歌者PPT（`gezhe.com`）是一款永久免费的智能 PPT 生成工具。用户可以轻松将任何主题或资料转化为PPT，并选择应用大量精美的模板。无论是商务演示、教育培训、学术报告还是专业领域，歌者 PPT 都能提供便捷的操作和智能化体验，让幻灯片制作变得更加轻松高效。
 
 **产品优势**
 
@@ -125,9 +126,9 @@ http://gezhe.com
 
 这款工具特别适合那些不太擅长制作PPT或者时间紧张的人群，几乎无需学习成本就能上手使用。
 
-# AI Excel
+## AI Excel
 
-## 1) ChatExcel
+### 1) ChatExcel
 
 ![](img/c9515a8b2c53b74ec631f24f141a7d7b.png)
 
@@ -147,7 +148,7 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**[酷表 ChatExcel](https://chatexcel.com/)
+**体验网址：**[酷表 ChatExcel](`https://chatexcel.com/`)
 
 **使用建议：**
 
@@ -159,7 +160,7 @@ http://gezhe.com
 
 4）ChatExcel 会自动保存历史记录，可以通过历史记录查看之前的操作和结果。
 
-## 2) Ajelix
+### 2) Ajelix
 
 ![](img/0e2a1076d4419a01b7c9ca28bf620436.png)
 
@@ -171,17 +172,17 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**[E](https://ajelix.com/)xcel Formula Generator & AI Excel Tools & Business Intelligence
+**体验网址：**[Excel Formula Generator & AI Excel Tools & Business Intelligence](`https://ajelix.com/`)
 
 **使用建议：**不仅有公式生成器，还有公式和脚本库，能与同事一起协作完成。
 
-# AI 文档
+## AI 文档
 
-## 1.ChatPDF
+### 1.ChatPDF
 
 ![](img/1bebf852ff379768c7408864d66bb295.png)
 
-**工具介绍：**ChatPDF 是国外小哥 Mathis Lichtenberger 开发的一个应用。它是基于 OpenAI 的 Chat API，给 PDF 的每一段创建语义索引，然后使用关联最密切的段落去提示 （prompt） Chat API。
+**工具介绍：**ChatPDF 是国外小哥 Mathis Lichtenberger 开发的一个应用。它是基于 OpenAI 的 Chat API，给 PDF 的每一段创建语义索引，然后使用关联最密切的段落去提示 `prompt` Chat API。
 
 **工具优点：**无需注册，登录，通过上传 PDF 文件到 ChatPDF，就能实现和 PDF 跨语言对话，并根据 PDF 内容回答的提问，可以同时处理多个 PDF 文件。
 
@@ -189,7 +190,7 @@ http://gezhe.com
 
 **网络条件：**科学网络
 
-**体验网址：**[www.chatpdf.com](https://www.chatpdf.com/)
+**体验网址：**[`www.chatpdf.com`](`https://www.chatpdf.com/`)
 
 **使用建议：**
 
@@ -199,7 +200,7 @@ http://gezhe.com
 
 3）需要登录账号，才能保存和 PDF 的聊天历史。
 
-## 2.云一朵
+### 2.云一朵
 
 ![](img/9ff13444b2d0c34b20fbdc7ea864bc79.png)
 
@@ -211,13 +212,13 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**[pan.baidu.com](https://pan.baidu.com/disk/main#/index?category=all&path=%2F)
+**体验网址：**[`pan.baidu.com`](`https://pan.baidu.com/disk/main#/index?category=all&path=%2F`)
 
 **使用建议：**部分 doc、ppt 文档无法解读，上下文对话有时会失效。
 
-# AI 会议
+## AI 会议
 
-## 1.飞书妙记
+### 1.飞书妙记
 
 ![](img/016ca525cec4f9a4b13cb1d54dd4dae3.png)
 
@@ -229,7 +230,7 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**[飞书妙记-智能会议纪要，快捷语音识别转文](https://www.feishu.cn/product/minutes?ref=www.ainav.cn)字，将会议交流沉淀为知识，一切皆可妙记！
+**体验网址：**[飞书妙记-智能会议纪要，快捷语音识别转文](`https://www.feishu.cn/product/minutes?ref=www.ainav.cn`)字，将会议交流沉淀为知识，一切皆可妙记！
 
 **使用建议：**
 
@@ -239,13 +240,11 @@ http://gezhe.com
 
 +   查找：在搜索框内输入内容，搜索结果会自动高亮，点击即可定位至对应的音视频位置。
 
-+   翻译：点击搜索框右上方的 **源语言** 下拉框，可选择将文字记录翻译为其他语言。
++   翻译：点击搜索框右上方的源语言下拉框，可选择将文字记录翻译为其他语言。
 
 +   播客模式：你可以一边收听妙记音频，一边查看文字记录辅助理解。你也可以在后台播放妙记的同时，在移动设备上进行其他操作，提升工作效率，高效利用碎片化时间。
 
-+
-
-## 2.讯飞听见
+### 2.讯飞听见
 
 ![](img/d5bcd382c485ef447bb80edb39d06608.png)
 
@@ -273,7 +272,7 @@ http://gezhe.com
 
 2）如要获取文字结果（含分享文本内容 ）则需要进行付费，可至个人中心选择优惠套餐。
 
-## 3.腾讯会议
+### 3.腾讯会议
 
 ![](img/96dc537e4b8523683c633ceace318163.png)
 
@@ -293,11 +292,11 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**meeting.tencent.com
+**体验网址：**`meeting.tencent.com`
 
 **使用建议：**需要申请小助手的权限
 
-## 4.通义听悟
+### 4.通义听悟
 
 ![](img/c5aad7e93043f4121dbab19c4c2663eb.png)
 
@@ -313,9 +312,9 @@ http://gezhe.com
 
 **使用建议：** 在上传音视频文件时，尽量选择清晰、完整、无杂音的文件，以便于通义听悟更好地识别和处理您的文件。
 
-# AI 翻译
+## AI 翻译
 
-## 1.网易见外
+### 1.网易见外
 
 ![](img/0864e30da5b64d30a7a03ccd99ccabf0.png)
 
@@ -326,6 +325,12 @@ http://gezhe.com
 **是否免费：**有付费，有免费
 
 **网络条件：**正常网络
+
+
+
+# AI 翻译
+
+## 1.网易见外
 
 **体验网址：**网易见外 - AI 智能语音转写听翻平台
 
@@ -359,15 +364,15 @@ http://gezhe.com
 
 **工具优点：**
 
-+   语音翻译 | 无需打字，对着说话，精准识别并翻译；
++ 语音翻译 | 无需打字，对着说话，精准识别并翻译；
 
-+   同声传译 | 独家免费体验，声画同步，实时翻译，炫酷又高效；
++ 同声传译 | 独家免费体验，声画同步，实时翻译，炫酷又高效；
 
-+   AR 翻译 | 对准内容，自动扫描，结果实时实景呈现；
++ AR 翻译 | 对准内容，自动扫描，结果实时实景呈现；
 
-+   文本翻译 | 无需会员 VIP，免费使用新牛津，词典例句更多更权威；
++ 文本翻译 | 无需会员 VIP，免费使用新牛津，词典例句更多更权威；
 
-+   口语评测 | 拒绝哑巴英语，智能跟读评测，趣味打分。
++ 口语评测 | 拒绝哑巴英语，智能跟读评测，趣味打分。
 
 **是否免费：**免费
 
@@ -393,9 +398,9 @@ http://gezhe.com
 
 **使用建议：**
 
-+   官方网页端，且功能丰富
++ 官方网页端，且功能丰富
 
-+   安装「火山翻译」浏览器插件，外语网页一键翻译、划取查词
++ 安装「火山翻译」浏览器插件，外语网页一键翻译、划取查词
 
 # AI 搜索
 
@@ -411,7 +416,7 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**https://metaso.cn/
+**体验网址：**`https://metaso.cn/`
 
 **使用建议：**
 
@@ -455,13 +460,13 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**[As](https://iask.ai/)k AI Questions · Free AI Search Engine · iAsk.Ai is a Free Answer Engine， Enabling Users to Ask Ch
+**体验网址：**[Ask AI Questions](https://iask.ai/) · Free AI Search Engine · iAsk.Ai is a Free Answer Engine， Enabling Users to Ask Ch
 
 **使用建议：**用户可以通过自然语言输入问题或需求，无需复杂的关键词组合或搜索语法。
 
 # AI 导图
 
-## 1.**亿图脑图 AI**
+## 1.亿图脑图 AI
 
 ![](img/3cc422e35d380dc8f6576ec3a8c8fe45.png)
 
@@ -521,7 +526,7 @@ http://gezhe.com
 
 **网络条件：**正常网络
 
-**体验网址：**[Chatmind: AI-Native Mind Map](https://chatmind.tech/cn)ping Online by Xmind
+**体验网址：**[Chatmind: AI-Native Mind Map](https://chatmind.tech/cn) ping Online by Xmind
 
 **使用建议：**直接谷歌账号登录，需要🪜
 
@@ -529,9 +534,9 @@ http://gezhe.com
 
 # AI 学习交流社群
 
-1.持续关注并更新 AI 的**相关资讯动态，研究报告，赚钱案**例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
+1.持续关注并更新 AI 的相关资讯动态、研究报告、赚钱案例，常见问题，永久免费在线查看，无收费内容，目标是成为最大的免费 AI 学习社群。
 
-2.已建立社群聊聊 **AI** 发展及应用，**没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备**注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+2.已建立社群聊聊 AI 发展及应用，没进群的可以扫码加入，群满可加 AI 研究爱好者大国🛰️ ID：zyg90s（备注：AI），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 3.**关于文档负责人大国**：高帆文化CEO，曾就职于教培大厂，目前创业，主攻研究AI落地应用、企业流量增长及达人IP孵化。
 

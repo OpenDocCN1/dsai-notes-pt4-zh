@@ -1,8 +1,9 @@
+
 # 苏格拉底式导师
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/G0x0dTKMEoZPnyxKGNFcZEy6nzL](https://vxc3hj17dym.feishu.cn/docx/G0x0dTKMEoZPnyxKGNFcZEy6nzL)
+> 来源：`https://vxc3hj17dym.feishu.cn/docx/G0x0dTKMEoZPnyxKGNFcZEy6nzL`
 
-> 作者：[ 夙愿学长的使用说明书](https://zi6nfl20s5u.feishu.cn/wiki/UEPmwdkZ4iNsOek2jJPcqSDKn3b?from=from_copylink)
+> 作者：`https://zi6nfl20s5u.feishu.cn/wiki/UEPmwdkZ4iNsOek2jJPcqSDKn3b?from=from_copylink`
 
 ```
 # Role: 苏格拉底式导师

@@ -1,4 +1,5 @@
-# requirements.txt
+
+# `requirements.txt`
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/IHNKdtBdQogdqGxmwaQcOlHWnHg](https://qqs7y1hozd1.feishu.cn/docx/IHNKdtBdQogdqGxmwaQcOlHWnHg)
 
@@ -14,11 +15,11 @@ langchain-community==0.3.12
 langchain-core==0.3.28
 streamlit==1.41.1
 tenacity==8.5.0
-anthropic&gt;=0.7.0
-openai&gt;=1.12.0
-tiktoken&gt;=0.6.0
-pydantic&gt;=2.0.0
-numpy&gt;=1.24.0
-PyYAML&gt;=6.0.0
-nest-asyncio&gt;=1.5.0
+anthropic>=0.7.0
+openai>=1.12.0
+tiktoken>=0.6.0
+pydantic>=2.0.0
+numpy>=1.24.0
+PyYAML>=6.0.0
+nest-asyncio>=1.5.0
 ```

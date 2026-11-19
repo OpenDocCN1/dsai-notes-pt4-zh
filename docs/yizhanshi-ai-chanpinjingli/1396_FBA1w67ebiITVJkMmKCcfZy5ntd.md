@@ -1,3 +1,4 @@
+
 # 开发：LangChain应用开发指南-TruLens用量化对抗幻觉
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/OjgIdbqcnozk7txJIEucPqBVnDh](https://v11enp9ok1h.feishu.cn/docx/OjgIdbqcnozk7txJIEucPqBVnDh)
@@ -6,7 +7,7 @@
 
 > 为了解决这些问题，我们将在这篇文章中，介绍LangChain框架和TruLens工具，它们将帮助我们评估模型的质量，提高模型质量，并能够用量化的方法对抗不确定。
 
-### **什么是TruLens**
+## 什么是TruLens
 
 ![](img/2591c3fe58045aad89354ef3377d62c9.png)
 
@@ -22,7 +23,7 @@ TruLens的核心思想是，你可以为你的应用定义一些反馈函数，�
 
 TruLens可以让你在开发和测试你的应用的过程中，实时地收集和分析你的应用的反馈数据，从而帮助你发现和解决你的应用的问题，提高你的应用的质量和效果。你可以使用TruLens提供的易用的用户界面，来查看和比较你的应用的不同版本的反馈数据，从而找出你的应用的优势和劣势，以及改进的方向。
 
-### 如何在LangChain中使用TruLens来评估模型输出和检索质量
+## 如何在LangChain中使用TruLens来评估模型输出和检索质量
 
 ![](img/25e9d6671063c783326c0f3fac7a97c5.png)
 
@@ -30,7 +31,7 @@ LangChain作为一种新的语言模型框架，它提供了一种有效的部�
 
 要在LangChain中使用TruLens来评估你的应用，你只需要做两件事：
 
-1.  在你的LangChain代码中，导入TruLens，并使用TruChain类来包装你的LangChain对象。TruChain类是一个装饰器，它可以让你的LangChain对象在运行时，自动地调用TruLens的反馈函数，并记录反馈数据。
+1.  在你的LangChain代码中，导入TruLens，并使用`TruChain`类来包装你的LangChain对象。`TruChain`类是一个装饰器，它可以让你的LangChain对象在运行时，自动地调用TruLens的反馈函数，并记录反馈数据。
 
 1.  在你的TruLens代码中，指定你想要使用的反馈函数，以及你想要给你的应用的ID。你可以使用TruLens提供的内置的反馈函数，也可以自定义你自己的反馈函数。你可以为你的应用指定一个唯一的ID，这样你就可以在TruLens的用户界面中，根据ID来查找和比较你的应用的反馈数据。
 
@@ -40,7 +41,7 @@ LangChain作为一种新的语言模型框架，它提供了一种有效的部�
 
 ![](img/ad781bf89a673d08b0cabc5b60103245.png)
 
-### 以RAG为例看看TruLens的评估结果
+## 以RAG为例看看TruLens的评估结果
 
 ![](img/7d3f5b0e1983b1f1925cce7fc7799812.png)
 
@@ -60,11 +61,11 @@ RAG的优点是，它可以利用检索系统来提供LLM所缺乏的知识和�
 
 RAG三角形的评估方法可以让我们从不同的角度来检验RAG的质量和效果，从而发现和改进RAG的问题。我们可以使用TruLens来实现RAG三角形的评估方法，具体步骤如下：
 
-1.  在LangChain中，创建一个RAG对象，使用RAGPromptTemplate作为提示模板，指定检索系统和知识库的参数。
+1.  在LangChain中，创建一个RAG对象，使用`RAGPromptTemplate`作为提示模板，指定检索系统和知识库的参数。
 
-1.  在TruLens中，创建一个TruChain对象，包装RAG对象，指定反馈函数和应用ID。反馈函数可以使用TruLens提供的f_context_relevance, f_groundness, f_answer_relevance，也可以自定义。
+1.  在TruLens中，创建一个`TruChain`对象，包装RAG对象，指定反馈函数和应用ID。反馈函数可以使用TruLens提供的`f_context_relevance`, `f_groundness`, `f_answer_relevance`，也可以自定义。
 
-1.  使用with语句来运行RAG对象，并记录反馈数据。输入一个问题，得到一个回答，以及检索出的文档。
+1.  使用`with`语句来运行RAG对象，并记录反馈数据。输入一个问题，得到一个回答，以及检索出的文档。
 
 1.  查看和分析反馈数据，根据RAG三角形的评估指标，评价RAG的表现。
 
@@ -76,7 +77,7 @@ RAG三角形的评估方法可以让我们从不同的角度来检验RAG的质�
 
 ![](img/b757c3e52dc228f4a4c2e1ade9ba1666.png)
 
-## **结论**
+## 结论
 
 在本文中，我们介绍了如何在LangChain中使用TruLens来对LLM进行评估和优化，以及如何利用TruLens的结果来量化和对抗模型的不确定性。我们通过一个文本生成的任务为例，演示了如何使用TruLens来对模型的输出进行测量和量化，以及对模型的行为进行分析和解释。我们还分享了一个RAG案例代码，用实际指标说明了TruLens的评估结果。
 

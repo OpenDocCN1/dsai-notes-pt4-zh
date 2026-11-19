@@ -1,47 +1,54 @@
-# Deepseek -R1 常用软件配置api（PPIO 派欧云）更新中
 
-> 来源：[https://datawhaler.feishu.cn/docx/ExWNd06zdoADvaxatfbceXJ1nKe](https://datawhaler.feishu.cn/docx/ExWNd06zdoADvaxatfbceXJ1nKe)
+# Deepseek R1 常用软件配置 API（PPIO 派欧云）
 
-api注册链接：https://ppinfra.com/user/register?invited_by=MUS5T2
+> 来源：`https://datawhaler.feishu.cn/docx/ExWNd06zdoADvaxatfbceXJ1nKe`
 
-模型名（直接复制粘贴用）：deepseek/deepseek-r1/community
+API 注册链接：`https://ppinfra.com/user/register?invited_by=MUS5T2`
 
-ChatCompletion API：https://api.ppinfra.com/v3/openai/chat/completions
+模型名（直接复制粘贴用）：`deepseek/deepseek-r1/community`
 
-api key（密钥） 返回派欧算力云[控制台生成key后复制](https://ppinfra.com/docs/get-started/quickstart.html#_2-%E7%AE%A1%E7%90%86-api-%E5%AF%86%E9%92%A5)粘贴（ 派欧算力云Api key参考文档）
+`ChatCompletion` API：`https://api.ppinfra.com/v3/openai/chat/completions`
 
-其余模型列表：https://ppinfra.com/model-api/pricing
+API Key（密钥）返回派欧算力云[控制台生成 Key 后复制](`https://ppinfra.com/docs/get-started/quickstart.html#_2-%E7%AE%A1%E7%90%86-api-%E5%AF%86%E9%92%A5`)粘贴（派欧算力云 API Key 参考文档）
 
-**C**hatbox AI（可在 Windows、MacOS、Android、iOS、Linux 和网页版上使用。）
+其余模型列表：`https://ppinfra.com/model-api/pricing`
 
-官网：https://chatboxai.app/zh
+## Chatbox AI
 
-下载地址：https://chatboxai.app/zh#download
+Chatbox AI（可在 Windows、MacOS、Android、iOS、Linux 和网页版上使用。）
 
-Chatbox AI电脑端api（[Chatbox AI电脑端api配置分解（win）](https://yloma37ahf.feishu.cn/docx/XKR7djpT2owEM7xH0fKcLNJJn3e?from=from_copylink)欧算力云）配置带图解释步骤（win）：
+官网：`https://chatboxai.app/zh`
 
-**C**herry Studio （目前支持：Windows 、Linux  、MacOS系统三种系统的电脑安装包，暂无手机移动app）
+下载地址：`https://chatboxai.app/zh#download`
 
-官网：https://cherry-ai.com/
+### Chatbox AI 电脑端 API 配置（Win）
 
-项目介绍：https://docs.cherry-ai.com/
+Chatbox AI 电脑端 API（[Chatbox AI 电脑端 API 配置分解（Win）](`https://yloma37ahf.feishu.cn/docx/XKR7djpT2owEM7xH0fKcLNJJn3e?from=from_copylink`）派欧算力云）配置带图解释步骤（Win）：
 
-软件下载：https://cherry-ai.com/download（点进去上面是网盘下载链接，直接下载安装包请滑倒最下面）
+## Cherry Studio
 
-**配置**：
+Cherry Studio（目前支持：Windows、Linux、MacOS 系统三种系统的电脑安装包，暂无手机移动 App）
 
-Cherry Studio ap[Cherry Studio api（派欧算力云）配置（win）步骤](https://yloma37ahf.feishu.cn/docx/Jwuld2lhho3MhDxvBtQcH57Qnyf?from=from_copylink)（派欧算力云）配置（win）步骤分解：
+官网：`https://cherry-ai.com/`
 
-1.供应商名称：派欧算力云（也可以自己起，可以自己命名）
+项目介绍：`https://docs.cherry-ai.com/`
 
-2.供应商类型：选择OpenAI
+软件下载：`https://cherry-ai.com/download`（点进去上面是网盘下载链接，直接下载安装包请滑到最下面）
 
-3.点击添加---模型名（直接复制粘贴用）：deepseek/deepseek-r1/community
+### 配置
 
-4.api key（密钥） 返回派欧算力云控制台生成key后复制粘贴
+Cherry Studio API（派欧算力云）配置（Win）步骤分解：
 
-[           ](https://ppinfra.com/docs/get-started/quickstart.html#_2-%E7%AE%A1%E7%90%86-api-%E5%AF%86%E9%92%A5)（ 派欧算力云Api key参考文档）
+1. 供应商名称：派欧算力云（也可以自己起，可以自己命名）
 
-5.api地址（#是要带着作为结尾的，可以直接复制粘贴）：                  https://api.ppinfra.com/v3/openai/chat/completions#
+2. 供应商类型：选择 `OpenAI`
 
-6.输入完成后点击检查--显示连接成功--返回对话助手点击对话框的@（选择模型）选择对应的模型即可（把配置好的模型当成一个聊天好友）
+3. 点击添加---模型名（直接复制粘贴用）：`deepseek/deepseek-r1/community`
+
+4. API Key（密钥）返回派欧算力云控制台生成 Key 后复制粘贴
+
+   [派欧算力云 API Key 参考文档](`https://ppinfra.com/docs/get-started/quickstart.html#_2-%E7%AE%A1%E7%90%86-api-%E5%AF%86%E9%92%A5`)
+
+5. API 地址（# 是要带着作为结尾的，可以直接复制粘贴）：`https://api.ppinfra.com/v3/openai/chat/completions#`
+
+6. 输入完成后点击检查--显示连接成功--返回对话助手点击对话框的 @（选择模型）选择对应的模型即可（把配置好的模型当成一个聊天好友）

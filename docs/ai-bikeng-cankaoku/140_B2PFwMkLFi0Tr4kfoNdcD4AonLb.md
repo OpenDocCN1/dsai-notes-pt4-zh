@@ -1,14 +1,11 @@
+
 # Gemini Pro 机器人
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/IAHBdHVX2oq9jwxoshtcAIt3n1b](https://xodnytdcaw.feishu.cn/docx/IAHBdHVX2oq9jwxoshtcAIt3n1b)
 
-▸ Google AI Pro免费一年活动链接：
+▸ Google AI Pro免费一年活动链接：`https://one.google.com/ai-student`
 
-https://one.google.com/ai-student
-
-▸ Sheerid认证Telegram机器人链接：
-
-https://t.me/sheeridverifier_bot
+▸ Sheerid认证Telegram机器人链接：`https://t.me/sheeridverifier_bot`
 
 验证需要5金币，默认给4金币，签到送1金币。
 
@@ -17,7 +14,7 @@ https://t.me/sheeridverifier_bot
 发送：
 
 ```
-/verify 
+/verify
 ```
 
 +URL(复制地址)

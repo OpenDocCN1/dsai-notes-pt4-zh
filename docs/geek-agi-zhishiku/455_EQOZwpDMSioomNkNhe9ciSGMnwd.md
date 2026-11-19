@@ -1,4 +1,5 @@
-# 5.1 【AI 绘画】
+
+## 5.1 【AI 绘画】
 
 > 来源：[https://geekbang.feishu.cn/docx/Qpy8dy87LoFaL3xEOGFccgsxnef](https://geekbang.feishu.cn/docx/Qpy8dy87LoFaL3xEOGFccgsxnef)
 
@@ -12,18 +13,11 @@
 
 > Stable Diffusion (稳定扩散) 是来自 Stability.ai 的绘画大模型
 
-# 从这里开始, 走进 AI 绘画领域
+### 从这里开始，走进 AI 绘画领域
 
-1.  了解 AI 绘画的基本原理
-
-1.  了解 Stable Diffusion 的工作方式
-
-1.  使用 Stable Diffusion WebUI / ComfyUI 搭建本地绘画流程
-
-1.  学习 绘画 Prompt 基础语法
-
-1.  深入了解 Stable Diffusion 绘画原理, 学习 Lora / Controlnet 等插件应用
-
-1.  去网上学习其他人的绘画技巧, 尝试 -> 出错 -> 分析 -> 修改 -> 尝试 ...
-
-#
+1. 了解 AI 绘画的基本原理
+1. 了解 Stable Diffusion 的工作方式
+1. 使用 Stable Diffusion WebUI / ComfyUI 搭建本地绘画流程
+1. 学习 绘画 Prompt 基础语法
+1. 深入了解 Stable Diffusion 绘画原理，学习 Lora / Controlnet 等插件应用
+1. 去网上学习其他人的绘画技巧，尝试 -> 出错 -> 分析 -> 修改 -> 尝试 ...

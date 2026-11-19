@@ -1,3 +1,4 @@
+
 # NVIDIA TensorRT 推理加速
 
 > 来源：[https://ai.feishu.cn/docx/ItKHdIAkkowlybx8K1rcuONXnCb](https://ai.feishu.cn/docx/ItKHdIAkkowlybx8K1rcuONXnCb)
@@ -8,21 +9,21 @@
 
 > chatglm 官方团队同学完成本章节内容的平均时间超过12小时。
 
-### 什么是 TensorRT-LLM
+## 什么是 TensorRT-LLM
 
-TensorRT-LLM为用户提供了一个易于使用的Python  API，用于定义大型语言模型（LLMs）并构建包含最新优化的TensorRT引擎，以便在NVIDIA  GPU上高效地执行推理。TensorRT-LLM还包含创建执行这些TensorRT引擎的Python和C++运行时的组件。它还包括一个用于与NVIDIA   Triton推理服务器集成的后端；一个用于服务LLMs的生产质量系统。使用TensorRT-LLM构建的模型可以在从单个GPU到多个节点的多个GPU的各种配置上执行。
+TensorRT-LLM为用户提供了一个易于使用的Python API，用于定义大型语言模型（LLMs）并构建包含最新优化的TensorRT引擎，以便在NVIDIA GPU上高效地执行推理。TensorRT-LLM还包含创建执行这些TensorRT引擎的Python和C++运行时的组件。它还包括一个用于与NVIDIA Triton推理服务器集成的后端；一个用于服务LLMs的生产质量系统。使用TensorRT-LLM构建的模型可以在从单个GPU到多个节点的多个GPU的各种配置上执行。
 
 请配合以下代码库中微调部分代码进行上手练习
 
 https://github.com/THUDM/ChatGLM3/tree/main/speed_up_demo
 
-### 配置 TensorRT-LLM
+## 配置 TensorRT-LLM
 
 首先，获取 TensorRT-LLM 代码
 
 ```
 # TensorRT-LLM 代码需要使用 git-lfs 拉取
-apt-get update &amp;&amp; apt-get -y install git git-lfs
+apt-get update && apt-get -y install git git-lfs
 
 git clone https://github.com/NVIDIA/TensorRT-LLM.git
 cd TensorRT-LLM
@@ -34,13 +35,13 @@ git lfs install
 git lfs pull
 ```
 
-#### 构建docker镜像并安装TensorRT-LLM：
+### 构建docker镜像并安装TensorRT-LLM
 
 ```
 make -C docker release_build
 ```
 
-#### 运行docker镜像：
+### 运行docker镜像
 
 ```
 make -C docker release_run
@@ -52,99 +53,95 @@ make -C docker release_run
 
 +   访问 github
 
-> 请注意，如果你处于无法访问到这些内容的地区，你可能需要修改英伟达官方的dockerfile。
+> 请注意，如果你处于无法访问到这些内容的地区，你可能需要修改英伟达官方的`dockerfile`。
 
-### 构建引擎
+## 构建引擎
 
 接着，将 chatglm3-6b 模型 构建为 TensorRT-LLM 的推理引擎
 
 代码参数解释
 
-+   model_dir: 模型的Huggingface地址 / TensorRT 地址。
++   `model_dir`: 模型的Huggingface地址 / TensorRT 地址。
 
-+   output_dir: 转换后模型引擎的地址。
++   `output_dir`: 转换后模型引擎的地址。
 
-+   max_output_len: 支持的最大输出长度
++   `max_output_len`: 支持的最大输出长度
 
-+   max_input_len: 支持的最大长度输出。
++   `max_input_len`: 支持的最大长度输出。
 
-+   remove_input_padding: 移除输入的padding功能，fp16不要使用。
++   `remove_input_padding`: 移除输入的padding功能，fp16不要使用。
 
 > 注意：
 
-1.  max_output_len和max_input_len的长度相加总和需要低于8192。
+1.  `max_output_len`和`max_input_len`的长度相加总和需要低于8192。
 
 1.  由于引擎为静态构造，这部分的内容是固定的，如果你需要改变任何一个设置，你需要重构引擎。
 
 > 请注意不要将这两个参数调整太大，由于转换的时候会使用 FP32 的格式，因此，如果你的显卡显存不足，会出现这个错误。
 
-> Internal Error (Internal error: plugin node PLUGIN_V2_GPTAttention_1 requires 25422738560 bytes of scratch space, but only 25393692672 is available. Try increasing the workspace size with IBuilderConfig::setMemoryPoolLimit().
+> Internal Error (Internal error: plugin node `PLUGIN_V2_GPTAttention_1` requires 25422738560 bytes of scratch space, but only 25393692672 is available. Try increasing the workspace size with `IBuilderConfig::setMemoryPoolLimit()`.
 
 > 经过测试，一张 24GB 的显存的显卡在执行这个操作的时候，最多只能承受
 
-> max_output_len+ max_input_len <= 4096
+> `max_output_len` + `max_input_len` <= 4096
 
 > 如果超过这个值，将会出现这种错误
 
-> [12/24/2023-21:50:43] [TRT] [W] UNSUPPORTED_STATESkipping tactic 3 due to insufficient memory on requested size of 24105713664 detected for tactic 0x000000000000001b.
+> [12/24/2023-21:50:43] [TRT] [W] `UNSUPPORTED_STATE`Skipping tactic 3 due to insufficient memory on requested size of 24105713664 detected for tactic `0x000000000000001b`.
 
-> [12/24/2023-21:50:43] [TRT] [E] 2: [virtualMemoryBuffer.cpp::resizePhysical::140] Error Code 2: OutOfMemory (no further information)
+> [12/24/2023-21:50:43] [TRT] [E] 2: [`virtualMemoryBuffer.cpp::resizePhysical::140`] Error Code 2: `OutOfMemory` (no further information)
 
-> [12/24/2023-21:50:43] [TRT] [E] 2: [virtualMemoryBuffer.cpp::resizePhysical::140] Error Code 2: OutOfMemory (no further information)
+> [12/24/2023-21:50:43] [TRT] [E] 2: [`virtualMemoryBuffer.cpp::resizePhysical::140`] Error Code 2: `OutOfMemory` (no further information)
 
 > [12/24/2023-21:50:43] [TRT] [W] Requested amount of GPU memory (24105713664 bytes) could not be allocated. There may not be enough free memory for allocation to succeed.
 
 > 此类错误虽然不影响程序执行，但是执行结束之后，无法正常调用引擎，导致无法对话，引擎报废。
 
->
++   `visualize`: 可视化解析过程。
 
-+   visualize: 可视化解析过程。
++   `max_batch_size`: 模型支持的最大批处理数
 
-+   max_batch_size: 模型支持的最大批处理数
++   `use_xx_plugin`: 通常为是否使用英伟达算子插件，填写的为精度，例如int8,float32等。
 
-+   use_xx_plugin: 通常为是否使用英伟达算子插件，填写的为精度，例如int8,float32等。
++   `gpus_per_node`: 每个节点有几个GPU。
 
-+   gpus_per_node: 每个节点有几个GPU。
++   `log_level`: 日志级别，通常没
 
-+   log_level:日志级别，通常没
+### 可配置的 plugin 参数
 
-#### 可配置的 plugin 参数
++   使用 `--use_gpt_attention_plugin <DataType>` 来配置 GPT Attention plugin (默认使用float16)。
 
-+   使用 --use_gpt_attention_plugin <DataType> 来配置 GPT Attention plugin (默认使用float16)。
++   使用 `--use_gemm_plugin <DataType>` 来配置 GEMM plugin (默认使用float16)。
 
-+   使用 --use_gemm_plugin <DataType> 来配置 GEMM plugin (默认使用float16)。
++   使用 `--use_rmsnorm_plugin <DataType>` 来配置 RMS normolization plugin (默认使用float16)。
 
-+   使用 --use_rmsnorm_plugin <DataType> 来配置 RMS normolization plugin (默认使用float16)。
+### Fused Multi-Head Attention (FMHA)
 
-#### Fused Multi-Head Attention (FMHA)
++   使用 `--enable_context_fmha` 或 `--enable_context_fmha_fp32_acc` 参数来开启FMHA kernels, 可以获得更好的性能的同时降低显存开销。
 
-+   使用 --enable_context_fmha 或 --enable_context_fmha_fp32_acc 参数来开启FMHA kernels, 可以获得更好的性能的同时降低显存开销。
++   `--use_gpt_attention_plugin` 如果被设置为关闭的话将无法使用FMHA功能。
 
-+   --use_gpt_attention_plugin 如果被设置为关闭的话将无法使用FMHA功能。
++   `--enable_context_fmha` 将会使用FP16 accumulator, 可能会略微降低精度. 您也可以选择使用 `--enable_context_fmha_fp32_acc` 来保护精度，但这会略微降低FMHA的性能提升。
 
-+   --enable_context_fmha 将会使用FP16 accumulator, 可能会略微降低精度. 您也可以选择使用
+### Weight-Only 量化
 
---enable_context_fmha_fp32_acc 来保护精度，但这会略微降低FMHA的性能提升。
++   使用 `--use_weight_only` 来开启 Weight-Only 量化, 这样可以加速推理并减少显存开销。
 
-####  Weight-Only 量化
++   你还可以通过切换 `--weight_only_precision int8` 或者 `--weight_only_precision int4` 来选择具体是使用int8还是int4量化，默认为Int8。
 
-+   使用 --use_weight_only 来开启 Weight-Only 量化, 这样可以加速推理并减少显存开销。
+### In-flight Batching（须使用NVIDIA Triton进行推理）
 
-+   你还可以通过切换 --weight_only_precision int8 或者 --weight_only_precision int4 来选择具体是使用int8还是int4量化，默认为Int8。
++   使用 `--use_inflight_batching` 来开启 In-flight Batching，启用后，Paged KV Cache也会自动启用。
 
-#### In-flight Batching（须使用NVIDIA Triton进行推理）
++   Paged KV cache中block的数量可以用`--tokens_per_block` 来配置。
 
-+   使用 --use_inflight_batching 来开启 In-flight Batching，启用后，Paged KV Cache也会自动启用。
-
-+   Paged KV cache中block的数量可以用--tokens_per_block 来配置。
-
-### 使用TensorRT-LLM Python Runtime进行推理
+## 使用TensorRT-LLM Python Runtime进行推理
 
 执行代码
 
 ```
-python3 build.py --model_name chatglm3_6b \   
-                 --model_dir {your_huggingface_chatglm3-6b_dir} \ 
+python3 build.py --model_name chatglm3_6b \
+                 --model_dir {your_huggingface_chatglm3-6b_dir} \
                  --output_dir {your_trt_chatglm3-6b_dir} \
                  --max_output_len 2048 \
                  --max_input_len 2048 \
@@ -152,6 +149,10 @@ python3 build.py --model_name chatglm3_6b \
 ```
 
 代码执行效果
+
+
+
+## TRT-LLM 模型构建日志
 
 ```
 python3 build.py --model_name chatglm3_6b --model_dir /root/autodl-tmp/chatglm3-6b/ --output_dir /root/autodl-tmp/trt_engines/chatglm3-6b-trt --max_output_len 2048 --max_input_len 2048
@@ -226,7 +227,7 @@ python3 build.py --model_name chatglm3_6b --model_dir /root/autodl-tmp/chatglm3-
 [12/24/2023-21:54:44] [TRT] [I] [MemUsageChange] Init builder kernel library: CPU +1809, GPU +316, now: CPU 2058, GPU 709 (MiB)
 [12/24/2023-21:54:44] [TRT-LLM] [W] Invalid timing cache, using freshly created one
 [12/24/2023-21:54:49] [TRT-LLM] [I] Loading weights from HF
-Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:06&lt;00:00,  1.03it/s]
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:06<00:00,  1.03it/s]
 [12/24/2023-21:54:58] [TRT-LLM] [I] Loading weights finish in 8.89s
 [12/24/2023-21:55:00] [TRT] [W] ITensor::setType(Half) was called on non I/O tensor: PLUGIN_V2_GPTAttention_1_output_0. This will have no effect unless this tensor is marked as an output.
 [12/24/2023-21:55:00] [TRT] [W] ITensor::setType(Half) was called on non I/O tensor: PLUGIN_V2_GPTAttention_1_output_1. This will have no effect unless this tensor is marked as an output.
@@ -327,10 +328,12 @@ Loading checkpoint shards: 100%|████████████████
 [12/24/2023-21:57:39] [TRT-LLM] [I] Total time of building all 1 engines: 00:02:57
 ```
 
-这样，我们就构建好了模型，接着，我们就可以使用官方的demo进行对话了。
+
+
+这样，我们就构建好了模型，接着，我们就可以使用官方的`demo`进行对话了。
 
 ![](img/0cd8b8514617e4ab0f85a93c57e5c46c.png)
 
 质量虽然有一定下降，但是总体性价比较高。
 
-经过测试，使用TensorRT推理的模型仍然能很好的支持Function Call功能。
+经过测试，使用`TensorRT`推理的模型仍然能很好的支持Function Call功能。

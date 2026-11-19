@@ -1,8 +1,9 @@
+
 # 使用 ControlNet 让草图栩栩如生 - Scribble
 
 > 来源：[https://e0lrm2v2v1u.feishu.cn/docx/SQlAdOZxro2Gz3xH1D2c8il2nhe](https://e0lrm2v2v1u.feishu.cn/docx/SQlAdOZxro2Gz3xH1D2c8il2nhe)
 
-# **引言**
+## 引言
 
 ControlNet Scribble是一种技术或功能，允许用户在图像上提供手动注释或标记以指导生成过程。使用 ControlNet Scribble，用户可以直接在图像上绘制或涂鸦，以指定他们希望在生成的输出中看到的所需修改、编辑或属性。
 
@@ -12,46 +13,39 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 当用户想要对图像的某些部分进行特定更改或调整（如修改对象的外观、更改背景或强调特定元素）时，ControlNet Scribble 特别有用。它为用户提供了一种交互式且直观的方式，可以将他们所需的修改直接传达给稳定扩散模型。在释放您的艺术天赋方面，涂鸦预处理器绝对是游戏规则的改变者。他们毫不费力地将普通图片从手绘涂鸦中转换出来，为您的创作增添真实感。
 
-# **有哪些Scribble****预处理器****可用？**
+## 有哪些 Scribble 预处理器可用？
 
-要查找Scribble 预处理器，请执行以下操作：
+要查找 Scribble 预处理器，请执行以下操作：
 
-+   首先确保您位于 txt2img 选项卡上。
-
-+   向下滚动，然后展开“**ControlNet** ”面板。
-
-+   您会在面板中找到预处理器 **Pre-Processors**。
++ 首先确保您位于 `txt2img` 选项卡上。
++ 向下滚动，然后展开 `ControlNet` 面板。
++ 您会在面板中找到预处理器 `Pre-Processors`。
 
 ![](img/65f233fa87fbba865b3f7a2c52ccd7e3.png)
 
-##  选项 1: Scribble HED
+### 选项 1: Scribble HED
 
-
-利用整体嵌套边缘检测 （HED） 的强大功能，该预处理器擅长生成与熟练艺术家手绘的轮廓非常相似的轮廓。ControlNet 的专家建议 HED 对图像进行重新着色和重新设计，为它们注入独特的艺术风格。
+利用整体嵌套边缘检测（HED）的强大功能，该预处理器擅长生成与熟练艺术家手绘的轮廓非常相似的轮廓。`ControlNet` 的专家建议 HED 对图像进行重新着色和重新设计，为它们注入独特的艺术风格。
 
 凭借其产生粗糙但富有表现力的涂鸦线条的能力，HED 为您的作品赋予了独特的个性，增加了吸引注意力的有趣视觉元素。
 
-## 选项 2：Scribble Pidinet
-
+### 选项 2：Scribble Pidinet
 
 如果您正在寻找清晰的曲线和直边，那么像素差分网络（Pidinet）就是您的最佳选择。凭借其检测和强调干净线条的能力，Pidinet 赋予您的艺术品抛光外观，同时保留基本细节。它非常适合捕获电路板轮廓或任何其他复杂的形状，而不会带来压倒性的复杂性。当您需要一丝优雅时，Pidinet 会介入，以最小的错综复杂提供精致的线条。它是复制电路板轮廓或创建干净、精致设计的理想选择。
 
-## 选项 3: Scribble xDoG
-
+### 选项 3: Scribble xDoG
 
 进入高斯扩展差分（xDoG）领域，这是一种非凡的边缘检测技术。通过调整 xDoG 阈值，您可以控制图稿中的细节级别。这款多功能预处理器可让您取得完美的平衡，从而产生迷人的涂鸦，展示恰到好处的复杂性。通过微调 XDoG 阈值找到细节的完美平衡。这款出色的预处理器可让您创建能够引起正确共鸣的涂鸦，捕捉您的艺术愿景的精髓。
 
-# **使用 C****ont**rolNet Scribble 预处理器的示例
+## 使用 ControlNet Scribble 预处理器的示例
 
-## **预处理器**** 1：Scribble HED**
+### 预处理器 1：Scribble HED
 
-假设我们使用Scribble HED转换大象的手绘，我们可以
+假设我们使用 Scribble HED 转换大象的手绘，我们可以
 
-+   **(1)**选择要**Scribble**的控件类型，
-
-+   **(2) **将预处理器设置为scribble_hed
-
-+   **(3) **和control_sd15_scribble作为模型，如下所示：
++ (1) 选择要 `Scribble` 的控件类型，
++ (2) 将预处理器设置为 `scribble_hed`
++ (3) 和 `control_sd15_scribble` 作为模型，如下所示：
 
 ![](img/3a83a3eb0b7f3e9f7d087f747a31ba12.png)
 
@@ -59,17 +53,12 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 ![](img/41ad09a2eeb9ef7be3776a8e186a4596.png)
 
-+   **(1)**选择一个大模型
-
-+   **(2)** DPM++2M Karras作为采样方法
-
-+   **(3) **40个采样步骤
-
-+   **(4) **CFG 为 15。
-
-+   **(5) **选中“enable controlnet”复选框
-
-+   **(6) **并选中“**pixel**** perfect**”复选框。
++ (1) 选择一个大模型
++ (2) `DPM++2M Karras` 作为采样方法
++ (3) 40 个采样步骤
++ (4) `CFG` 为 15。
++ (5) 选中 `enable controlnet` 复选框
++ (6) 并选中 `pixel perfect` 复选框。
 
 ![](img/5320a75f21bc56d10c28bdda914e2514.png)
 
@@ -87,15 +76,13 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 ![](img/0659bdb92d032f8081d445283b8dc9eb.png)
 
-## **预处理器** 2：Scribble Pidinet
+### 预处理器 2：Scribble Pidinet
 
-让我们尝试用Pidinet手绘兔子，我们可以：
+让我们尝试用 Pidinet 手绘兔子，我们可以：
 
-+   **(1) **选择**Scribble**的控件类型
-
-+   **(2) **预处理器scribble_pidinet
-
-+   **(3) **control_sd15_scribble。
++ (1) 选择 `Scribble` 的控件类型
++ (2) 预处理器 `scribble_pidinet`
++ (3) `control_sd15_scribble`。
 
 ![](img/6632a6d2ae8a2b8d635f2e73c79db1d9.png)
 
@@ -103,17 +90,12 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 ![](img/2e8a07489ec1b8bdce91cff5673d923d.png)
 
-+   **(1)**选择一个大模型
-
-+   **(2)** DPM++2M Karras作为采样方法
-
-+   **(3) **40个采样步骤
-
-+   **(4) **CFG 为 15。
-
-+   **(5) **选中“enable controlnet”复选框
-
-+   **(6) **并选中“**pixel**** perfect**”复选框。
++ (1) 选择一个大模型
++ (2) `DPM++2M Karras` 作为采样方法
++ (3) 40 个采样步骤
++ (4) `CFG` 为 15。
++ (5) 选中 `enable controlnet` 复选框
++ (6) 并选中 `pixel perfect` 复选框。
 
 ![](img/2b09ac6d73a4de0f402546e1b7bc5c22.png)
 
@@ -125,15 +107,13 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 ![](img/cf3cca8b0bde7380b33d467649894be1.png)
 
-## **预处理器****3：Scribble xDog**
+### 预处理器 3：Scribble xDog
 
-还有一个，让我们看看**Scribble xDog**如何处理蝴蝶的手绘：
+还有一个，让我们看看 `Scribble xDog` 如何处理蝴蝶的手绘：
 
-+   **(1) **选择**Scribble**的控件类型
-
-+   **(2) **预处理器**scribble_xDog**
-
-+   **(3) **control_sd15_scribble。
++ (1) 选择 `Scribble` 的控件类型
++ (2) 预处理器 `scribble_xDog`
++ (3) `control_sd15_scribble`。
 
 ![](img/b98ed26490cc6e55467a1e6ea53e8ddd.png)
 
@@ -141,17 +121,12 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 ![](img/f4e59f4e95c3b1e789484454d90fc1ee.png)
 
-+   **(1)**选择一个大模型
-
-+   **(2)** DPM++2M Karras作为采样方法
-
-+   **(3) **40个采样步骤
-
-+   **(4) **CFG 为 15。
-
-+   **(5) **选中“enable controlnet”复选框
-
-+   **(6) **并选中“**pixel**** perfect**”复选框。
++ (1) 选择一个大模型
++ (2) `DPM++2M Karras` 作为采样方法
++ (3) 40 个采样步骤
++ (4) `CFG` 为 15。
++ (5) 选中 `enable controlnet` 复选框
++ (6) 并选中 `pixel perfect` 复选框。
 
 ![](img/4755a62fa64ea1e3d144a43d7b54f734.png)
 
@@ -165,6 +140,6 @@ ControlNet Scribble是一种技术或功能，允许用户在图像上提供手�
 
 ![](img/6521ee85ac9b8d1b112b06a9903f68a3.png)
 
-# 结语
+## 结语
 
 请记住，为了获得最佳效果，所有这些预处理器与涂鸦控制模型无缝配合使用，使您能够释放您的艺术潜力，将您的愿景变为现实，并反映您独特的艺术风格。

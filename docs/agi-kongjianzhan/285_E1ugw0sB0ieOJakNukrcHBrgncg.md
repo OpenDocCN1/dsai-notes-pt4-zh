@@ -1,3 +1,4 @@
+
 # 继Sora之后，阿里巴巴放大招！一张照片即可生成会说话唱歌的视频
 
 > 来源：[https://agispace.feishu.cn/docx/RxIBdes4BooJyexrqTMccezgnJf](https://agispace.feishu.cn/docx/RxIBdes4BooJyexrqTMccezgnJf)
@@ -6,15 +7,15 @@
 
 > 👸号： AI洞察笔记
 
-> 原文链接：https://mp.weixin.qq.com/s/K-CsZ3AgCBXGIUfcdiKVfQ
+> 原文链接：`https://mp.weixin.qq.com/s/K-CsZ3AgCBXGIUfcdiKVfQ`
 
 今日，阿里巴巴放出了一篇论文和开源地址，里面介绍了他们最新的最新研究成果，可实现一张照片+音频即可生成会说话唱歌的视频。
 
-项目地址：https://humanaigc.github.io/emote-portrait-alive/
+项目地址：`https://humanaigc.github.io/emote-portrait-alive/`
 
-论文：https://arxiv.org/abs/2402.17485
+论文：`https://arxiv.org/abs/2402.17485`
 
-GitHub：https://github.com/HumanAIGC/EMO
+GitHub：`https://github.com/HumanAIGC/EMO`
 
 ![](img/c2569cbcf572701a967c4fcf96fdf854.png)
 
@@ -34,7 +35,7 @@ GitHub：https://github.com/HumanAIGC/EMO
 
 你只需要提供一张你的照片+任意的音频文件，就能实现你说任何话或唱任何歌曲的动态视频。同时生成视频的长度和你音频长度相匹配！表情非常到位，支持任意语音、任意语速、任意图像...
 
-**主要特点和功能**
+## 主要特点和功能
 
 1、音频驱动的人像视频生成：利用单张参考图像和音频输入（如说话或唱歌），EMO能够生成具有表情变化和头部动态的虚拟人像视频。这意味着用户可以通过提供一张静态图片和相应的音频文件，来创造出说话或唱歌的动态视频。无论视频中的人物进行怎样的表情变化或头部动作，其基础特征都来源于这张参考图片。
 
@@ -44,17 +45,19 @@ GitHub：https://github.com/HumanAIGC/EMO
 
 4、支持多种语言和肖像风格：该技术不限于特定语言或音乐风格，能够处理多种语言的音频输入，并且支持多样化的肖像风格，包括历史人物、绘画作品、3D模型和AI生成内容等。
 
-5、快速节奏同步：EMO能够处理快节奏的音频，如快速的歌词或说话，确保虚拟人像的动作与音频节奏保持同步。6、跨演员表现转换：EMO能够实现不同演员之间的表现转换，使得一位演员的虚拟形象能够模仿另一位演员或声音的特定表演，拓展了角色描绘的多样性和应用场景。
+5、快速节奏同步：EMO能够处理快节奏的音频，如快速的歌词或说话，确保虚拟人像的动作与音频节奏保持同步。
 
-# 精彩回顾
+6、跨演员表现转换：EMO能够实现不同演员之间的表现转换，使得一位演员的虚拟形象能够模仿另一位演员或声音的特定表演，拓展了角色描绘的多样性和应用场景。
+
+## 精彩回顾
 
 1. 利用AI写任意主题的书籍，你只差一个prompt
 
-1.  一文汇总GPTs攻防prompts
+2. 一文汇总GPTs攻防prompts
 
-1.   一文搞懂OpenAI推出的AI文本视频生成模型Sora
+3. 一文搞懂OpenAI推出的AI文本视频生成模型Sora
 
-1.  利用AI一步到位高效高质量完成🛰️红包封面设计，附详细教程
+4. 利用AI一步到位高效高质量完成🛰️红包封面设计，附详细教程
 
 ![](img/5b762626ccefa9cea1ba9a19ff640630.png)
 

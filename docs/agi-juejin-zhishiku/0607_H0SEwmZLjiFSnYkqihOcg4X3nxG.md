@@ -1,3 +1,4 @@
+
 # 不止免费无限次Claude 3.5：字节 Trae 能否颠覆 Cursor、WindSurf？小项目亲测体验
 
 > 来源：[https://agijuejin.feishu.cn/docx/D65mdFmM9ofvOqxYh2ucv8lEnLW](https://agijuejin.feishu.cn/docx/D65mdFmM9ofvOqxYh2ucv8lEnLW)
@@ -14,7 +15,7 @@ AI 编程工具已步入决胜之年，各方势力摩拳擦掌。前两天，Wi
 
 ![](img/95580300ff9d13c80d0f25aa86d27d72.png)
 
-和 Cursor 一样，Trae 也提供了 Chat 和 Builder 两种模式，其中 Builder 相当于 Cursor 的 Composer。从使用体验上看，两者在大的方面比较相似，但 Trae 在一些细节上更显用心。例如，笔者一直强调 AI 开发工具的第一要义是及时 commit，但有时开发起来就容易忘记，一旦改动破坏了原有代码，想要恢复就比较麻烦。Cursor 虽然在 Composer 中有 Checkpoint restore 功能，但在 Chat 模式下却没有，而 Trae 就具备这个功能！
+和 Cursor 一样，Trae 也提供了 Chat 和 Builder 两种模式，其中 Builder 相当于 Cursor 的 Composer。从使用体验上看，两者在大的方面比较相似，但 Trae 在一些细节上更显用心。例如，笔者一直强调 AI 开发工具的第一要义是及时 `commit`，但有时开发起来就容易忘记，一旦改动破坏了原有代码，想要恢复就比较麻烦。Cursor 虽然在 Composer 中有 Checkpoint restore 功能，但在 Chat 模式下却没有，而 Trae 就具备这个功能！
 
 ![](img/a21504277f8810607bc32759f5ccfc7a.png)
 

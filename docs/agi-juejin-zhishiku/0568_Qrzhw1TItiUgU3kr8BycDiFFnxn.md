@@ -1,3 +1,4 @@
+
 # 进阶篇 | Builder：AI Agent 的编码应用形态
 
 > 来源：[https://agijuejin.feishu.cn/docx/BUJrdgFVqoJ6xMxpJW6cjGBXnOd](https://agijuejin.feishu.cn/docx/BUJrdgFVqoJ6xMxpJW6cjGBXnOd)
@@ -12,7 +13,7 @@
 
 ![](img/39d97afe1ffa7950b46c062bda2d90c3.png)
 
-Builder 功能的唤起同样是使用 Command + U，它位于 Chat Tab 的右侧，与问答不同的是，Builder 由多轮 AI 对话组成，并且会完成文件的只读写入，比如我们使用 Builder 生成一个贪吃蛇游戏。
+Builder 功能的唤起同样是使用 `Command + U`，它位于 Chat Tab 的右侧，与问答不同的是，Builder 由多轮 AI 对话组成，并且会完成文件的只读写入，比如我们使用 Builder 生成一个贪吃蛇游戏。
 
 ![](img/9be1fa853c4bb770f0f4fa84fa55daee.png)
 

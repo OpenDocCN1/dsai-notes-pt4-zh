@@ -1,3 +1,4 @@
+
 # DeepSeek R1怎么在工作流中联网？老金手把手教学（上）
 
 > 来源：[https://my.feishu.cn/docx/YSThdaPrnoROOgx1cMmcvK0Rnse](https://my.feishu.cn/docx/YSThdaPrnoROOgx1cMmcvK0Rnse)
@@ -6,25 +7,25 @@
 
 因此老金把本篇Deepseek满血版联网分为上下两部分。
 
-本篇介绍 Coze中如何在工作流中使用。
+本篇介绍 Coze 中如何在工作流中使用。
 
-下一篇讲介绍 Dify中如何使用，Dify会用到下面的硅基流动，有用到的小伙伴可以先准备好。
+下一篇讲介绍 Dify 中如何使用，Dify 会用到下面的硅基流动，有用到的小伙伴可以先准备好。
 
-Dify和Coze的区别是Dify可以本地部署，也可以使用工作流或智能体等等。
+Dify 和 Coze 的区别是 Dify 可以本地部署，也可以使用工作流或智能体等等。
 
-文末有福利：清华大学发布的DeepSeek从入门到精通。
+文末有福利：清华大学发布的 DeepSeek 从入门到精通。
 
-[DeepSeek](https://tffyvtlai4.feishu.cn/wiki/MnWZwv8YwidNz5k4ydocgIOdnuh)金已完成的Deepseek开源教程合集：
+[DeepSeek](https://tffyvtlai4.feishu.cn/wiki/MnWZwv8YwidNz5k4ydocgIOdnuh) 金已完成的 Deepseek 开源教程合集：
 
 ---
 
-**硅基流动：****https://cloud.silic**onflow.cn/i/wdyoipMi
+**硅基流动：** `https://cloud.silic.onflow.cn/i/wdyoipMi`
 
-+   这是个网站，是**满血版！****，****能直接对话，还能调** API，用于本地部署或在线平台。
++ 这是个网站，是满血版！，能直接对话，还能调用 API，用于本地部署或在线平台。
 
-+   **优点是免费赠送2000万Token，有各大模型，不限于**大语言模型、绘画模型、视频模型和语音模型
++ 优点是免费赠送 2000 万 Token，有各大模型，不限于大语言模型、绘画模型、视频模型和语音模型
 
-+   老金我曾多次推荐过，老金的机器人基本上走的全是硅基流动的API接口。
++ 老金我曾多次推荐过，老金的机器人基本上走的全是硅基流动的 API 接口。
 
 ![](img/cb873b8953fa1f54001283e7e6e69b7d.png)
 
@@ -32,15 +33,15 @@ Dify和Coze的区别是Dify可以本地部署，也可以使用工作流或智�
 
 ---
 
-## 火山引擎中加入R1模型
+## 火山引擎中加入 R1 模型
 
-登录火山引擎，并查询“**火山方舟**”。
+登录火山引擎，并查询“火山方舟”。
 
-https://console.volcengine.com/coze-pro/overview?scenario=coze
+`https://console.volcengine.com/coze-pro/overview?scenario=coze`
 
 ![](img/21b71751ee5196c54ff1f8fafc79f0b4.png)
 
-如图所示，**搜索DeepSeek R1模型**，可以看到还有蒸馏版本，大家自行开通。
+如图所示，搜索 DeepSeek R1 模型，可以看到还有蒸馏版本，大家自行开通。
 
 ![](img/5b52c5cdb1577fc27ef397951e6bfbcb.png)
 
@@ -48,11 +49,11 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 ![](img/b38fc1fed5d0e4456ba3aa12bb5e2e5a.png)
 
-找到**在线推理**，这个的作用是智能体实时推理。
+找到在线推理，这个的作用是智能体实时推理。
 
 ![](img/e7891ebeeae3f311d06db0e274226e8e.png)
 
-填入名字，增加Deep Seek R1模型。
+填入名字，增加 Deep Seek R1 模型。
 
 ![](img/896d92838f5827f3eb83aafdeb929013.png)
 
@@ -66,7 +67,7 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 ## 创建智能体
 
-返回Coze主页，选择工作空间，创建智能体。
+返回 Coze 主页，选择工作空间，创建智能体。
 
 ![](img/b6d095d6819ec417448f1d0fd84d1bbf.png)
 
@@ -80,17 +81,17 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 选择对话流。对话流和工作流的区别：
 
-**对话流** 是专门用于对话场景的工作流，**能够记住用户历史对话**，实现更智能、连贯的交互。比如充当 AI 助手或智能客服。
+**对话流** 是专门用于对话场景的工作流，能够记住用户历史对话，实现更智能、连贯的交互。比如充当 AI 助手或智能客服。
 
-而 **工作流** 更适合于**功能类请求**，比如按步骤自动处理任务，适合批量数据处理或任务执行，如生成报告或制作海报等等。
+而 **工作流** 更适合于功能类请求，比如按步骤自动处理任务，适合批量数据处理或任务执行，如生成报告或制作海报等等。
 
 ![](img/60c050e1a9515d08d0ae474f530202e8.png)
 
 ## 配置对话流
 
-先讲整体的逻辑 **用户输入->提取关键词->联网搜索->DeepS**eek R1对返回信息整理并推理->输出。
+先讲整体的逻辑：用户输入 -> 提取关键词 -> 联网搜索 -> DeepSeek R1 对返回信息整理并推理 -> 输出。
 
-首先，添加**关键词提取**，使用**通用豆包模型****即可，如**Deepseek R1的推理模**型，不需要做这么简单的事儿，**否则浪费Token，速度也会很慢。
+首先，添加关键词提取，使用通用豆包模型即可，如 Deepseek R1 的推理模型，不需要做这么简单的事儿，否则浪费 Token，速度也会很慢。
 
 ![](img/e93759e0c31a7c0e9339e5c50e7aead1.png)
 
@@ -105,18 +106,18 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 # 执行规范
 捕捉问题中的技术术语和特定描述
-过滤非必要修饰语（例如：&quot;请问&quot;、&quot;有什么&quot;）
+过滤非必要修饰语（例如："请问"、"有什么"）
 生成符合主流搜索引擎语法规则的检索式
-输出1-3组经过SEO优化的查询表达式
+输出 1-3 组经过 SEO 优化的查询表达式
 保证结果可直接粘贴至搜索框使用
 
 # 案例演示
-## 案例1
-原始问题：Word文档自动保存功能突然失效怎么办
+## 案例 1
+原始问题：Word 文档自动保存功能突然失效怎么办
 优化结果：Word 自动保存失效
 
-## 案例2
-原始问题：Python如何实现数据可视化图表
+## 案例 2
+原始问题：Python 如何实现数据可视化图表
 优化结果：Python 数据可视化图表
 ```
 
@@ -126,7 +127,7 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 ![](img/2ac82106ba89ed6c22ba82bfb19e7ef4.png)
 
-再添加DeepSeek R1模型，对搜索结果进行推理及整理。按照老金的图示，依次添加。
+再添加 DeepSeek R1 模型，对搜索结果进行推理及整理。按照老金的图示，依次添加。
 
 ![](img/6f59b739f8c794714254a09064c41853.png)
 
@@ -154,23 +155,23 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 ![](img/349ef97a3d98a414244389063ea7dd41.png)
 
-增加流式输出，填写变量{{output}}
+增加流式输出，填写变量 `{{output}}`
 
 ![](img/853a953b706ce457dbec82a63fa33236.png)
 
 发布前试运行一下，没问题的话发布后，返回智能体界面。
 
-就可以使用满血版联网的DeepSeek R1了。
+就可以使用满血版联网的 DeepSeek R1 了。
 
 ![](img/46e7a836503eaab28d293e82d0fada32.png)
 
-当然，如果你还想实现对话也是的话，这里也修改成DeepSeek R1。
+当然，如果你还想实现对话也是，这里也修改成 DeepSeek R1。
 
 ![](img/13f4477dde2c0a63fb98481f7319088e.png)
 
 ## 福利
 
-关注**👸号**“**金子的知识星球**”，发送“**Deepseek**”获取清华大学发布的**DeepSeek从入门到精通**。
+关注 👸 号“金子的知识星球”，发送“Deepseek”获取清华大学发布的 DeepSeek 从入门到精通。
 
 ![](img/c3e7e4f36b970a8b1091aa399b20f768.png)
 
@@ -178,12 +179,11 @@ https://console.volcengine.com/coze-pro/overview?scenario=coze
 
 ---
 
-如果觉得不错，随手点个赞、在看、转发三连吧🙂
+如果觉得不错，随手点个赞、在看、转发三连吧 🙂
 
-如果想第一时间收到推送，也可以给我个星标⭐～谢谢你看我的文章。
+如果想第一时间收到推送，也可以给我个星标 ⭐～谢谢你的文章。
 
-关注发送“**知识精华**”，可获得免费的知识链接地址。
+关注发送“知识精华”，可获得免费的知识链接地址。
 
 ![](img/a390ab56adc6d0fd83dbaa36700ca533.png)
 
-##

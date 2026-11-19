@@ -1,10 +1,11 @@
+
 # GSM模型
 
 > 来源：[https://my.feishu.cn/docx/PmNodvL6goks2oxWNmqc95mbnUf](https://my.feishu.cn/docx/PmNodvL6goks2oxWNmqc95mbnUf)
 
 > “GSM”是Google 用户体验团队总结的一个分析模型，取自设计目标 (Goal) 现象信号 (Signal)、衡量指标 (Metric) 三者的英文首字母。
 
-## **详细说明**
+## 详细说明
 
 如何利用GSM模型进行分析呢？ 首先我们假设设计目标都会实现，那么用户行为会出现什么表现与信号，列举出所有，选择我们能够监控到的，然后将现象或信号转化为数据项，也就得到了相应的衡量指标。
 

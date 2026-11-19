@@ -1,3 +1,4 @@
+
 # 搭建自己的AI绘画平台
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/ZXXqd320no3ne9xpxBOcrHWXn0b](https://xmgtoagi.feishu.cn/docx/ZXXqd320no3ne9xpxBOcrHWXn0b)
@@ -6,15 +7,9 @@
 
 首先讲一下目前已经上线的功能
 
-# 一、艺术二维码
+## 一、艺术二维码
 
 什么是艺术二维码呢，为什么会有这个项目呢？艺术二维码是一种通过AI技术将普通的二维码转化为具有艺术美感和创意性图案的技术。这种技术不仅提升了二维码的美观度，还增加了用户的扫码体验和粘性。比如以下这些
-
-
-
-
-
-
 
 ![](img/4cad91ca70ff408954f53827102351d5.png)
 
@@ -48,7 +43,7 @@
 
 ![](img/7c637c139b1d848be00c85cd08115a16.png)
 
-# 二、AI换脸
+## 二、AI换脸
 
 AI变得越来越有趣，那通过AI换脸，如何获取变现呢，主要有以下有以下几种方式
 
@@ -64,11 +59,11 @@ AI变得越来越有趣，那通过AI换脸，如何获取变现呢，主要有�
 
 ![](img/539af2e4cd4a42702bc2ecee5190f829.png)
 
-# 三、DALLE3绘画
+## 三、DALLE3绘画
 
 DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它可以根据用户的文本描述创造出逼真的图像和艺术作品。DALL-E 3 是继DALL-E和DALL-E 2之后的最新版本，它在图像质量、细节处理和创意表达上都有显著的提升。
 
-**变现路径：**
+### 变现路径
 
 **个性化艺术品**：为客户定制个性化的艺术作品，如家庭肖像、宠物画像、风景画等。
 
@@ -82,12 +77,11 @@ DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它�
 
 **博客和文章配图**：为博客、新闻网站等提供高质量的配图，增加内容的吸引力和阅读量。
 
-## 提示词
+### 提示词
 
 拿到即用
 
-提示词1：一直头戴王冠呆有着漂亮鱼尾巴的可爱白色猫咪，猫咪有着像美人鱼一样的白色尾巴，尾巴如宝石一样闪闪发光，呆萌可爱，超详细，画面温暖干净，情感饱满，唯美，立体光线，高分辨率，8k， --q 5 --v 6 --ar 9:16
-
+提示词1：一直头戴王冠呆有着漂亮鱼尾巴的可爱白色猫咪，猫咪有着像美人鱼一样的白色尾巴，尾巴如宝石一样闪闪发光，呆萌可爱，超详细，画面温暖干净，情感饱满，唯美，立体光线，高分辨率，8k， `--q 5 --v 6 --ar 9:16`
 
 ![](img/f886f6314d88989113761c0351864a3c.png)
 
@@ -103,20 +97,17 @@ DALL-E 3 是由OpenAI开发的一种先进的文本到图像生成模型，它�
 
 提示词3：Create an image featuring two anthropomorphic glass cute dolls with long legs and smiling faces, holding hands, in a vibrant natural setting with sunlight filtering through the foliage, casting a soft glow on the scene. The dolls should have a translucent quality with light reflecting off them, and a sparkling effect. Both dolls are standing on leaves that are attached to thin branches or stems, with additional water droplets on the leaves and branches, some of which are falling, adding dynamic motion to the image.
 
-
-
-
 ![](img/4f78ed5dce96ac999e4b2ce7d162a79a.png)
 
 如下一样输入关键词即可：
 
 ![](img/33427275b02b224253d9509dd71dd977.png)
 
-# 四、源码获取
+## 四、源码获取
 
 接下里会研发midjourney绘画，地表最强的AI绘画，大家可以搭建自己跌AI平台，在线收款功能已经开通。
 
-更多副业知识，请点击访问http://www.xmgai.cn获取。
+更多副业知识，请点击访问 `http://www.xmgai.cn` 获取。
 
 获取源码，请扫码备注“源码”
 

@@ -1,3 +1,4 @@
+
 # AI短片探索——第一幕（动画篇）
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/ULsLdZXRtod79UxltAhczAXunAd](https://xmgtoagi.feishu.cn/docx/ULsLdZXRtod79UxltAhczAXunAd)
@@ -5,8 +6,6 @@
 制作一部短片，不论是使用镜头拍摄还是使用 AI 工具生成，本质上都脱离不了影视制作的基础逻辑。今天开始我们就将从一部 2 分钟动画短片开始，了解影片制作的全过程以及其中需要具备的基础知识，并学会如何将 AI 融入短片制作的工作流。
 
 > 我们这里讲的短片都是以短故事片为主，后续也会带领大家讨论广告片等不是以故事为主要基底的影片类型。
-
-##
 
 ## 剧本创作
 
@@ -58,15 +57,13 @@ prompt结构：
 
 这里需要给到大家一些提示，是关于如何判断一个剧本是否符合自己的预期，同时判断它的实现难度是否可以投入制作，根据这些判断可以用 gpt 进行剧本修改。
 
-1.  需要明确自己的视频时长，一个两分钟的短片能够承载的故事内容实际上只有开端——发展——转折高潮——结局，这几个情节就完全足够。如果观察剧本的内容过多，超出预期可以进行适当删减。
+1. 需要明确自己的视频时长，一个两分钟的短片能够承载的故事内容实际上只有开端——发展——转折高潮——结局，这几个情节就完全足够。如果观察剧本的内容过多，超出预期可以进行适当删减。
 
-1.  需要知道自己能够实现的画面程度，因为目前 AI 绘画存在的局限性（人物的一致性/动作幅度局限等），如果生成的剧情内容对应的画面动作过大、或者主要人物过多，后面做画面生成的难度就越大，这时就需要进行删减修改。（这里很有可能遇到的是，在后面做画面生成时，会遇到很难实现的内容，那时也可以根据具体情况进行修改）
+1. 需要知道自己能够实现的画面程度，因为目前 AI 绘画存在的局限性（人物的一致性/动作幅度局限等），如果生成的剧情内容对应的画面动作过大、或者主要人物过多，后面做画面生成的难度就越大，这时就需要进行删减修改。（这里很有可能遇到的是，在后面做画面生成时，会遇到很难实现的内容，那时也可以根据具体情况进行修改）
 
-1.  尽量减少对话与配音的存在，去做纯画面动画。这个也是因为现在中文 AI 声音克隆效果也不稳定，不具备多音色配音的能力，所以如果生成的配音不够贴合画面的话，还不如不去做。
+1. 尽量减少对话与配音的存在，去做纯画面动画。这个也是因为现在中文 AI 声音克隆效果也不稳定，不具备多音色配音的能力，所以如果生成的配音不够贴合画面的话，还不如不去做。
 
 （以上，如果大家在做剧本时，有遇到其他的坑，可以随时在陪伴群里讨论解决，集中整理起来）
-
-##
 
 ## 分镜脚本创作
 
@@ -98,19 +95,17 @@ prompt结构：
 
 分镜脚本制作结束后，我们需要预判一下自己在实施过程中可能会出现的问题，做出心理预期，并提前思考应对方案：
 
-1.  画面中关于灰色和彩色的对比要如何实现？可以通过后期将图片调成黑白，后面彩色和黑白共同出现的画面可以给彩色部分打上运动蒙版（这里需要一些后期制作基础）
+1. 画面中关于灰色和彩色的对比要如何实现？可以通过后期将图片调成黑白，后面彩色和黑白共同出现的画面可以给彩色部分打上运动蒙版（这里需要一些后期制作基础）
 
-1.  故事中的角色一致性如何保持？主角为一只小猫，可以尽量设置成通用的猫猫形象，比如一只白色的蓝眼睛小猫（特点越少，越能保持一致性）
+1. 故事中的角色一致性如何保持？主角为一只小猫，可以尽量设置成通用的猫猫形象，比如一只白色的蓝眼睛小猫（特点越少，越能保持一致性）
 
-1.  故事中一些角色的大幅度动作如果未能很好的实现，需要思考预备方案，替换成一些静止的情绪镜头
+1. 故事中一些角色的大幅度动作如果未能很好的实现，需要思考预备方案，替换成一些静止的情绪镜头
 
-1.  关于画面中一些光类的特效，可以使用后期软件进行制作。
+1. 关于画面中一些光类的特效，可以使用后期软件进行制作。
 
-1.  一些景色的运动镜头生成效果比较差的话，可以考虑生成更大景别的图片进行视频生成，然后通过后期进行画面运动处理。
+1. 一些景色的运动镜头生成效果比较差的话，可以考虑生成更大景别的图片进行视频生成，然后通过后期进行画面运动处理。
 
 这里再给大家补充一些影视创作中的景别知识：
-
-##
 
 ## 角色设计
 
@@ -118,9 +113,9 @@ prompt结构：
 
 回顾上一阶段制作的分镜脚本，可以确定主要的角色形象为：
 
-1.   一只白色的蓝眼睛小猫
+1. 一只白色的蓝眼睛小猫
 
-1.  一个猫妈妈
+1. 一个猫妈妈
 
 同时，我们需要确定自己短片的风格，这里我用宫崎骏的动画风格进行制作，根据风格以及对角色形象的描述，写出一段 midjourney 提示语，确认是否为自己想要的形象。
 
@@ -128,17 +123,17 @@ prompt结构：
 
 Midjourney niji6 prompt结构：
 
-画面主体 + 主体描述 + 场景 + 场景细节描述 + 画面细节描述 + 画风 --ar 16:9（画面比例）--niji 6
+画面主体 + 主体描述 + 场景 + 场景细节描述 + 画面细节描述 + 画风 `--ar 16:9`（画面比例）`--niji 6`
 
 首先我们确定基础的角色形象：
 
-a white kitten with blue eyes, in Hayao Miyazaki style --ar 16:9 --niji 6
+`a white kitten with blue eyes, in Hayao Miyazaki style --ar 16:9 --niji 6`
 
 ![](img/2cf4bd0549d626c46f7f8a3a85b9e408.png)
 
 然后给形象加上场景：
 
-a white kitten with blue eyes looks lonely, walking alone in a dilapidated forest, The plants in the forest have withered, and the environment is very desolate, Gray is the main color, In the style of Hayao Miyazaki --ar 16:9 --niji 6
+`a white kitten with blue eyes looks lonely, walking alone in a dilapidated forest, The plants in the forest have withered, and the environment is very desolate, Gray is the main color, In the style of Hayao Miyazaki --ar 16:9 --niji 6`
 
 ![](img/96630c70ea22025e8ef0aa3188d3a310.png)
 
@@ -146,13 +141,13 @@ a white kitten with blue eyes looks lonely, walking alone in a dilapidated fores
 
 接下来是短片中会出现的另一个形象：猫妈妈。由于猫妈妈只在片尾出现，且仅为一个背影，承担的意义在于作为主角一直前进的信念支撑。所以猫妈妈的特点在于：白色猫，视觉要比小猫年龄大，形象比主角小猫高大。
 
-A white cat sitting on the lawn, in the style of Hayao Miyazaki --ar 16:9 --niji 6
+`A white cat sitting on the lawn, in the style of Hayao Miyazaki --ar 16:9 --niji 6`
 
 ![](img/b71e56671cf05a75040f406a5f247d88.png)
 
 加上最后一幕的场景：
 
-A white cat and a white kitten sitting on the lawn, back view, blue sky, beautiful view, in the style of Hayao Miyazaki --ar 16:9 --niji 6
+`A white cat and a white kitten sitting on the lawn, back view, blue sky, beautiful view, in the style of Hayao Miyazaki --ar 16:9 --niji 6`
 
 ![](img/b8c9408e09b13e2fc5d396d944f26628.png)
 
@@ -160,13 +155,11 @@ A white cat and a white kitten sitting on the lawn, back view, blue sky, beautif
 
 角色设计的主要目的：
 
-1.  简单且有特点的角色形象生成，单一角色形象与加上场景的角色能够匹配，保持角色一致性。
+1. 简单且有特点的角色形象生成，单一角色形象与加上场景的角色能够匹配，保持角色一致性。
 
-1.  测试角色画风与场景画风是否符合预期，且风格能否融合，保持整部影片风格一致。
+1. 测试角色画风与场景画风是否符合预期，且风格能否融合，保持整部影片风格一致。
 
 上述两个目的达成，即可进入我们的下一步，分镜图片生成。
-
-##
 
 ## 分镜图片生成
 
@@ -174,27 +167,25 @@ A white cat and a white kitten sitting on the lawn, back view, blue sky, beautif
 
 ![](img/618c04fab2080c1d6493a20f4a18c22e.png)
 
-Heavy rain hits the grass, close-up of the grass, dark environment, in the style of Hayao Miyazaki --ar 16:9 --v 6.0 --s 250
+`Heavy rain hits the grass, close-up of the grass, dark environment, in the style of Hayao Miyazaki --ar 16:9 --v 6.0 --s 250`
 
-A tornado rolls in, dark, Hayao Miyazaki style --ar 16:9 --v 6.0 --s 250
+`A tornado rolls in, dark, Hayao Miyazaki style --ar 16:9 --v 6.0 --s 250`
 
 ![](img/cc30d60dcc9149e7c3a1d9183e4e945b.png)
 
-Dark sky, dark clouds, lightning and thunder, sky close-up, in the style of Hayao Miyazaki --ar 16:9 --v 6.0 --s 250
+`Dark sky, dark clouds, lightning and thunder, sky close-up, in the style of Hayao Miyazaki --ar 16:9 --v 6.0 --s 250`
 
 直接使用文生视频，后期需要叠加到镜 2 的画面上
 
-dark, bad environment, After a dark and dilapidated environment after a big storm, a white cat's paw walks on the wet dirt, side shot, close-up of the cat's paw, dim environment, in the style of Hayao Miyazaki --ar 16:9 --niji 6 --s 250
+`dark, bad environment, After a dark and dilapidated environment after a big storm, a white cat's paw walks on the wet dirt, side shot, close-up of the cat's paw, dim environment, in the style of Hayao Miyazaki --ar 16:9 --niji 6 --s 250`
 
 ![](img/b01682473d708f682bec81ea62f496c4.png)
-
-##
 
 ## 动画镜头制作
 
 这里我们主要是用三种视频生成工具：pixverse、pika、runway。因为成本问题，一般我都会首先使用免费的 pixverse 进行两到三次生成来看是否能够得到符合预期的视频，不符合预期就再选择合适的消耗积分的工具进行尝试。后面还会尝试一些生成效果好的实景视频，用 demoai 做画风转换的方法。
 
-pixverse： 免费无限生成，抽盲盒
+pixverse：免费无限生成，抽盲盒
 
 runway：每次生成消耗 5 积分，做角色动作和部分运动镜头会好一点
 
@@ -202,32 +193,22 @@ pika：每次生消耗 10 积分，做角色动作
 
 Stable video：每次生成消耗 10 积分，做镜头运动会好一点
 
-####
-
-#### 镜 1 对应视频（runway）
+### 镜 1 对应视频（runway）
 
 <https://player.bilibili.com/player.html??aid=1901026269&bvid=BV1zm411S72b&cid=1451928603&p=1&p=1&high_quality=1>
 
-####
-
-#### 镜 2 对应视频（runway）
+### 镜 2 对应视频（runway）
 
 <https://player.bilibili.com/player.html?aid=1501048159&bvid=BV1VS421A78K&cid=1451928609&p=1&high_quality=1>
 
-####
-
-#### 镜 3 对应视频（pixverse、runway）
+### 镜 3 对应视频（pixverse、runway）
 
 <https://player.bilibili.com/player.html?aid=1351018747&bvid=BV1jz421R7Bd&cid=1451928468&p=1&high_quality=1>
 
-####
-
-#### 镜 4 对应视频（stable video）
+### 镜 4 对应视频（stable video）
 
 <https://player.bilibili.com/player.html?aid=1651186098&bvid=BV1Kj421D7WJ&cid=1451928524&p=1&high_quality=1>
 
-####
-
-#### 镜 5 对应视频
+### 镜 5 对应视频
 
 <https://player.bilibili.com/player.html?aid=1901026269&bvid=BV1zm411S72b&cid=1451928603&p=1&high_quality=1>

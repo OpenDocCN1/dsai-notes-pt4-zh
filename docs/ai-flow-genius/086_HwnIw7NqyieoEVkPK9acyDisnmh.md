@@ -1,3 +1,4 @@
+
 # ChatGPT 进化不到一周，体验到底有多逆天
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/UgFAdkhmBo8daNx74FXcf3YunkZ](https://jalicvoygc0.feishu.cn/docx/UgFAdkhmBo8daNx74FXcf3YunkZ)
@@ -6,7 +7,7 @@
 
 前几天，OpenAI 正式上线了新功能 GPTs，这意味着你无需任何编码知识，仅凭中文等自然语言，就可以打造专属于教学、游戏或创意设计等领域的定制化 GPT。在此前的文章中，我们也提到 OpenAI 官方制作了 16 个 GPT 供用户体验，包括 DALL·E 3、 genz 4 meme、Sous Chef 等涵盖广泛应用场景的 GPT。那么 GPTs 功能究竟能玩出什么新花样呢？带着这个疑问，我们帮各位深度体验了一下。
 
-**更实用的官方 ****GPT**
+## 更实用的官方 GPT
 
 首先要体验的是「文生图」 DALL·E 3 GPT。DALL·E 3 GPT 依然是文生图的好手，不用像 Midjourney 一样给出提示词，只需简单描述，它就能生成你想要的图片，即使你不喜欢，也可以反复调整。
 
@@ -18,13 +19,11 @@
 
 值得一提的是，以图画图才是本次 DALL·E 3 的重大更新，《清明上河图》或许是中国人最熟悉的宋画，那让它换一种风格，你又是否分辨得出来？
 
-
 ![](img/fedc9ea79afd0e9a7a0b5b27d7856f84.png)
 
 左为像素画风格，右为漫画风格
 
-除了 DALL·E 3，OpenAI 配备的 Hot Mods GPT 也能生成并修改图片，X （原 Twitter）上一名网友在 GPTs 全量推送的当天，就迫不及待地分享了自己的作品，生成效果也非常酷炫。
-
+除了 DALL·E 3，OpenAI 配备的 Hot Mods GPT 也能生成并修改图片，X（原 Twitter）上一名网友在 GPTs 全量推送的当天，就迫不及待地分享了自己的作品，生成效果也非常酷炫。
 
 ![](img/259f9bd6a7836ef1888e47152aed226d.png)
 
@@ -56,11 +55,9 @@
 
 当然，如果你和我一样是文字工作者，Creative Writing Coach GPT 或许能帮到你，比如让它给你的文字润色。虽然目前该功能还是差点意思，但是你也可以让他承担一些纠正错别字、标点符号等基础任务，这样一来，就能极大提高你的工作效率。
 
-**
+## 打造你的专属 GPT
 
-打造你的专属**** GP**T
-
-除了官方打造的 16 个 GPT，你也可以打造一个你的专属 GPT。这一点，OpenAI 创始人阿尔特曼就在 X （原 Twitter）上分享他的最新作品：用「GPTs」打造的 ChatGPT 版的 Grok，并配上文案：GPTs can save a lot of effort:
+除了官方打造的 16 个 GPT，你也可以打造一个你的专属 GPT。这一点，OpenAI 创始人阿尔特曼就在 X（原 Twitter）上分享他的最新作品：用「GPTs」打造的 ChatGPT 版的 Grok，并配上文案：GPTs can save a lot of effort:
 
 GPT 可以节省很多精力：
 
@@ -78,7 +75,7 @@ GPT 可以节省很多精力：
 
 虽然 OpenAI 官方还没正式开放 GPT Store，但是第三方开发者就已经「火急火燎」地把野生 GPT Store 给安排上了。
 
-**网站体验链接 🔗：https://**www.gptshunter.com/截止发稿前，该网站收录的 GPT 已经超过了 5000 个，以每天接近 1000 个 GPT 急速膨胀，而且体验下来，这些 GPT 的质量还挺高。独乐乐不如众乐乐，倘若你有更好的奇思妙想，不妨将你参与开发的 GPT 添加到该网站。
+网站体验链接 🔗：`https://www.gptshunter.com/` 截止发稿前，该网站收录的 GPT 已经超过了 5000 个，以每天接近 1000 个 GPT 急速膨胀，而且体验下来，这些 GPT 的质量还挺高。独乐乐不如众乐乐，倘若你有更好的奇思妙想，不妨将你参与开发的 GPT 添加到该网站。
 
 ![](img/4b964ff8958cff3f5f6d609c152a1af2.png)
 
@@ -88,9 +85,9 @@ GPT 可以节省很多精力：
 
 以前你需要熟练掌握编程语言，才有机会成为 Android、iOS 和 Windows 等平台的开发者，而现在不需要你掌握一门编程语言，仅靠中文等自然语言就能上手开发。这也意味着进入生成式 AI 时代后，开发者的概念将被再塑，人人都有机会加入开发者的行列，用独特的创意孵化出备受追捧的 GPT。这对于任何被 AI 取代的行业都算不上好事，换句话说，未来更有前途的行业或许是「产品经理」，深刻洞察用户的需求，再不断通过实用的对话来「调教」 AI。但并不是每个「产品经理」都能用富有逻辑、有启发性的对话调教 AI，如何与 AI 互动仍是一门不小的学问，虽然不至于从零开始摸索，但也绝非一日之功。
 
-引用：https://mp.weixin.qq.com/s/53avmgzAnceQ3aEyan7OKw
+引用：`https://mp.weixin.qq.com/s/53avmgzAnceQ3aEyan7OKw`
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容：
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

@@ -1,3 +1,4 @@
+
 # Claude Code神器：Manus同款文件规划法，价值20亿美元的工作流秘密
 
 > 来源：[https://my.feishu.cn/docx/DgetdnrwGo4GDkxDXzacfGwQnyP](https://my.feishu.cn/docx/DgetdnrwGo4GDkxDXzacfGwQnyP)
@@ -28,11 +29,9 @@
 
 **这篇文章老金我会告诉你：**
 
-1、Meta 20亿收购的Manus核心技术到底值在哪，哪些是真功夫哪些是吹牛
-
-2、三文件模式怎么用，什么时候用最稳、最省、最快
-
-3、具体使用模板，完整示例+配置文件，拿来即用
+1. Meta 20亿收购的Manus核心技术到底值在哪，哪些是真功夫哪些是吹牛
+2. 三文件模式怎么用，什么时候用最稳、最省、最快
+3. 具体使用模板，完整示例+配置文件，拿来即用
 
 ## 什么是planning-with-files？
 
@@ -66,7 +65,7 @@ planning-with-files的核心就是一个"3-File Pattern"——在项目根目录
 
 老金我用大白话给你讲清楚。
 
-1、task_plan.md（任务计划）
+1. `task_plan.md`（任务计划）
 
 这是你的"任务清单"，AI必须先看这个再干活。
 
@@ -80,7 +79,7 @@ planning-with-files的核心就是一个"3-File Pattern"——在项目根目录
 
 就像Team Leader站在你身后问："你现在到底在瞎折腾什么？"
 
-2、findings.md（发现记录）
+2. `findings.md`（发现记录）
 
 这是AI的"笔记本"，记录所有研究发现。
 
@@ -94,7 +93,7 @@ planning-with-files强迫AI把这些记在这个文件里。
 
 下次再遇到类似问题，AI不会傻乎乎地去查文档，而是直接调取这里的记录。
 
-3、progress.md（进度日志）
+3. `progress.md`（进度日志）
 
 这是项目的"流水账"，记录所有尝试和结果。
 
@@ -112,7 +111,7 @@ planning-with-files强迫AI把这些记在这个文件里。
 
 ## 为什么是这三个文件？
 
-核心思想很简单：**C**ontext Window = RAM（易失，有限），Filesystem = Disk（持久，无限）。
+核心思想很简单：Context Window = RAM（易失，有限），Filesystem = Disk（持久，无限）。
 
 所有重要信息都写入磁盘，而不是塞在上下文里。
 
@@ -130,18 +129,18 @@ claude plugins install OthmanAdi/planning-with-files
 
 在开始使用之前，老金我强烈建议先了解一下配置选项。
 
-**这**个插件支持14个IDE平台，包括Claude Code、Cursor、Windsurf、Zed、VS Code等。
+这个插件支持14个IDE平台，包括Claude Code、Cursor、Windsurf、Zed、VS Code等。
 
 基本上你能想到的主流IDE，全都有对应方案。
 
 **环境变量配置**（可选）：
 
-如果需要自定义配置，可以在settings.json中添加：
+如果需要自定义配置，可以在`settings.json`中添加：
 
 ```
 {
-  &quot;env&quot;: {
-    &quot;PLANNING_WITH_FILES_AUTO_RECOVER&quot;: &quot;1&quot;
+  "env": {
+    "PLANNING_WITH_FILES_AUTO_RECOVER": "1"
   }
 }
 ```
@@ -156,7 +155,7 @@ claude plugins install OthmanAdi/planning-with-files
 
 传统方式：重新说一遍需求，从零开始。
 
-用planning-with-files：AI直接读取progress.md，看到上次写到哪儿了，继续干。
+用planning-with-files：AI直接读取`progress.md`，看到上次写到哪儿了，继续干。
 
 就像你有个能记住所有对话的超级助理。
 
@@ -168,7 +167,7 @@ claude plugins install OthmanAdi/planning-with-files
 
 在你项目根目录创建这三个文件：
 
-task_plan.md
+`task_plan.md`
 
 ```
 # Task Plan
@@ -190,7 +189,7 @@ task_plan.md
 - [注意事项，如：需要兼容旧版本API]
 ```
 
-findings.md
+`findings.md`
 
 ```
 # Findings
@@ -209,7 +208,7 @@ findings.md
 - Reason: [原因]
 ```
 
-progress.md
+`progress.md`
 
 ```
 # Progress Log
@@ -231,11 +230,9 @@ progress.md
 
 下次你让Claude Code干活的时候，它会自动：
 
-1.  先读task_plan.md确认目标
-
-1.  边干边更新findings.md记录发现
-
-1.  完成后同步progress.md
+1. 先读`task_plan.md`确认目标
+2. 边干边更新`findings.md`记录发现
+3. 完成后同步`progress.md`
 
 ## 六大铁律（千万别违）
 
@@ -243,33 +240,31 @@ progress.md
 
 **铁律1：先计划，后动手**
 
-绝不在没有task_plan.md的情况下启动任何复杂任务。
+绝不在没有`task_plan.md`的情况下启动任何复杂任务。
 
 就像出门前先看地图，别瞎走。
 
 **铁律2：边干边记**
 
-每完成两次搜索/浏览操作，立即写入findings.md。
+每完成两次搜索/浏览操作，立即写入`findings.md`。
 
 防止重要信息被上下文冲刷掉。
 
 **铁律3：决策前回顾**
 
-做关键决策前，先读task_plan.md，把目标重新拉入注意力窗口。
+做关键决策前，先读`task_plan.md`，把目标重新拉入注意力窗口。
 
 **铁律4：阶段完成必更新**
 
-每个任务阶段完成后，必须同步task_plan.md：
+每个任务阶段完成后，必须同步`task_plan.md`：
 
-+   状态从in_progress改成complete
-
-+   记录所有遇到的错误
-
-+   注明新增或修改的文件
+- 状态从in_progress改成complete
+- 记录所有遇到的错误
+- 注明新增或修改的文件
 
 **铁律5：错误入库**
 
-将所有错误写进findings.md，构建AI的经验库。
+将所有错误写进`findings.md`，构建AI的经验库。
 
 **铁律6：绝不重蹈覆辙**
 
@@ -293,16 +288,16 @@ progress.md
 
 传统方式：重新说一遍需求，从零开始。
 
-用planning-with-files：AI直接读取progress.md，看到上次写到哪儿了，继续干。
+用planning-with-files：AI直接读取`progress.md`，看到上次写到哪儿了，继续干。
 
 **启用方法很简单**：
 
-在settings.json中添加环境变量：
+在`settings.json`中添加环境变量：
 
 ```
 {
-  &quot;env&quot;: {
-    &quot;PLANNING_WITH_FILES_AUTO_RECOVER&quot;: &quot;1&quot;
+  "env": {
+    "PLANNING_WITH_FILES_AUTO_RECOVER": "1"
   }
 }
 ```
@@ -311,7 +306,7 @@ progress.md
 
 ### 零门槛入门任务（5分钟体验）
 
-**第一步**：安装插件**（建议项目级）**
+**第一步**：安装插件（建议项目级）
 
 ```
 claude plugins install OthmanAdi/planning-with-files
@@ -319,7 +314,7 @@ claude plugins install OthmanAdi/planning-with-files
 
 **第二步**：创建三个文件
 
-按照上面的模板，在项目根目录创建task_plan.md、findings.md、progress.md。
+按照上面的模板，在项目根目录创建`task_plan.md`、`findings.md`、`progress.md`。
 
 **第三步**：跑一个最简单的任务
 
@@ -339,7 +334,7 @@ claude plugins install OthmanAdi/planning-with-files
 
 如果你只记住这篇的一句话，就记住这句：
 
-**planning-with-files的本质，不是"更聪明**的AI"，而是"会积累经验的数字助理"。
+planning-with-files的本质，不是"更聪明的AI"，而是"会积累经验的数字助理"。
 
 你会发现，真正的变化不是"AI聪明了一点"。
 
@@ -347,7 +342,7 @@ claude plugins install OthmanAdi/planning-with-files
 
 这就是老金我这周最大的感受：
 
-**会用planning-with-files的人，AI会**越用越聪明；不会用的人，每次都从零开始。
+会用`planning-with-files`的人，AI会越用越聪明；不会用的人，每次都从零开始。
 
 现在就开始，今晚跑一个入门任务，明天你就会感受到工作方式的升级。
 

@@ -1,3 +1,4 @@
+
 # 阿里云百炼模型平台
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/Fi1pdKrbBozoUdxydZtcx3I4n5b](https://gotoaiworld.feishu.cn/docx/Fi1pdKrbBozoUdxydZtcx3I4n5b)
@@ -8,7 +9,7 @@ https://www.aliyun.com/product/tongyi
 
 ![](img/fdf0b6b19298b87fdb5198b2a469b896.png)
 
-# 什么是阿里云百炼
+## 什么是阿里云百炼
 
 更新时间：2025-08-06 17:05:18
 
@@ -18,7 +19,7 @@ https://www.aliyun.com/product/tongyi
 
 借助阿里云百炼，您可以：
 
-## 支持的大模型
+### 支持的大模型
 
 > Token是指模型处理和生成文本时的基本单元，中文的Token通常是一个字或词，英文的Token通常是一个单词、子词或词组。
 
@@ -28,61 +29,61 @@ https://www.aliyun.com/product/tongyi
 
 [关于所有模型以](https://help.aliyun.com/zh/model-studio/models#87ae7ab9a7crl)及详细信息，请参见模型列表与价格。
 
-## 为什么选择阿里云百炼
+### 为什么选择阿里云百炼
 
-+   **丰富的模型选择**：阿里云百炼提供通义千问商业版的官方API接口，同时支持主流第三方大模型，涵盖文本、图像、音视频等模态，并提供行业定制化模型。
++ **丰富的模型选择**：阿里云百炼提供通义千问商业版的官方API接口，同时支持主流第三方大模型，涵盖文本、图像、音视频等模态，并提供行业定制化模型。
 
-+   **便捷的开发工具**：阿里云百炼提供的Prompt自动优化、知识库管理、函数调用、流程编排、模型定制等能力，能帮助您更快地构建一个生产级别的大模型应用。
++ **便捷的开发工具**：阿里云百炼提供的Prompt自动优化、知识库管理、函数调用、流程编排、模型定制等能力，能帮助您更快地构建一个生产级别的大模型应用。
 
-+   **更低的使用成本**：相比本地部署大模型，您无需在前期投入巨额成本来购置硬件，后期也无需考虑硬件的维护和折旧。只需按实际用量付费，可显著降低成本。
++ **更低的使用成本**：相比本地部署大模型，您无需在前期投入巨额成本来购置硬件，后期也无需考虑硬件的维护和折旧。只需按实际用量付费，可显著降低成本。
 
-+   **严格的数据保护**：阿里云严格保护数据隐私，绝不会将您的数据用于模型训练。同时，您在构建应用或训练大模型过程中传输的数据都会经过加密，确保数据安全。
++ **严格的数据保护**：阿里云严格保护数据隐私，绝不会将您的数据用于模型训练。同时，您在构建应用或训练大模型过程中传输的数据都会经过加密，确保数据安全。
 
-## **开始使用阿里云百炼**
+### 开始使用阿里云百炼
 
-+   在线体验大模型：[模型体验](https://bailian.console.aliyun.com/?tab=model#/efm/model_experience_center/text)
++ 在线体验大模型：[模型体验](https://bailian.console.aliyun.com/?tab=model#/efm/model_experience_center/text)
 
-+   发起第一个API请求：[首次调用通义千问API](https://help.aliyun.com/zh/model-studio/first-api-call-to-qwen)
++ 发起第一个API请求：[首次调用通义千问API](https://help.aliyun.com/zh/model-studio/first-api-call-to-qwen)
 
-+   构建第一个大模型应用：[0代码构建问答应用](https://help.aliyun.com/zh/model-studio/build-knowledge-base-qa-assistant-without-coding)
++ 构建第一个大模型应用：[0代码构建问答应用](https://help.aliyun.com/zh/model-studio/build-knowledge-base-qa-assistant-without-coding)
 
-# 一、阿里云百炼模型广场
+## 一、阿里云百炼模型广场
 
 https://bailian.console.aliyun.com/
 
 ![](img/eb2935696af8899ddc946d5fb7e099dc.png)
 
-# 二、阿里云百炼模型文档库
+## 二、阿里云百炼模型文档库
 
 https://bailian.console.aliyun.com/?spm=5176.29619931.J__Z58Z6CX7MY__Ll8p1ZOR.1.74cd521cXNFU32&tab=doc#/doc
 
 ![](img/f73557b352e2645f21eaf43bf80cadfd.png)
 
-# 三、阿里云百炼模型API
+## 三、阿里云百炼模型API
 
 https://bailian.console.aliyun.com/?spm=5176.29619931.J__Z58Z6CX7MY__Ll8p1ZOR.1.74cd521cXNFU32&tab=api#/api
 
 ![](img/2b3da236798c8f2bc4aed4b619b0d626.png)
 
-# 四、阿里云百炼模型应用市场
+## 四、阿里云百炼模型应用市场
 
 https://bailian.console.aliyun.com/?tab=app#/app-market/newTemplate
 
 ![](img/88bcd574ba93a57ea3827f774e6c0513.png)
 
-# 五、阿里云百炼模型MCP服务
+## 五、阿里云百炼模型MCP服务
 
 https://bailian.console.aliyun.com/?tab=mcp#/mcp-market
 
 ![](img/49af34051d707148fa5a0cf3cbdcdf97.png)
 
-# 六、通义千问Qwen3模型家族
+## 六、通义千问Qwen3模型家族
 
 https://www.aliyun.com/product/tongyi?spm=5176.29619931.J_4VYgf18xNlTAyFFbOuOQe.d_menu_0.74cd521cXNFU32
 
 ![](img/06f14330e10a3e36d4b93b0228e48059.png)
 
-# 七、大模型服务平台用户指南
+## 七、大模型服务平台用户指南
 
 [大模型服务平台百炼](https://help.aliyun.com/zh/model-studio/)
 

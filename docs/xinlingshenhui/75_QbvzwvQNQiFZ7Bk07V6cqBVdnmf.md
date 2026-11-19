@@ -1,3 +1,4 @@
+
 # Midjourney 和 ChatGPT：创作一本漫画书“人工智能与人工智能”人性”
 
 > 来源：[https://my.feishu.cn/docx/IZJRdBbwVoI6dixqJtZcDg0ZnLc](https://my.feishu.cn/docx/IZJRdBbwVoI6dixqJtZcDg0ZnLc)
@@ -30,13 +31,13 @@
 
 ![](img/9ed435b81777336fdce38c36216277dc.png)
 
-提示：https://s.mj.run/ny5PZgaFaQ0 set，Sarah Andersen 漫画演讲笔记 --s 30 --no persona
+`提示：https://s.mj.run/ny5PZgaFaQ0 set，Sarah Andersen 漫画演讲笔记 --s 30 --no persona`
 
 我以网上的参考为基础，然后规定了我需要的样式。我将使用 Adobe Illustrator 解析这些图像并将其转换为矢量格式。
 
 ![](img/859cfd363dbef89024df57058b430086.png)
 
-提示：https://s.mj.run/ny5PZgaFaQ0 set，Sarah Andersen 漫画演讲笔记 --s 30 --no persona
+`提示：https://s.mj.run/ny5PZgaFaQ0 set，Sarah Andersen 漫画演讲笔记 --s 30 --no persona`
 
 [另外，](https://rus.fontsisland.com/comics)我会为文本选择漫画字体，可以在这里下载。现在一切都准备好了，您可以享受结果了。
 

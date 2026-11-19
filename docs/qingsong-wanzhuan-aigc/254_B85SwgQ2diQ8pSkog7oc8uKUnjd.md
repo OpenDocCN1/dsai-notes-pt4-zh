@@ -1,36 +1,35 @@
-# 9.3  更多宝藏学习资源 💡
+
+# 9.3 更多宝藏学习资源 💡
 
 > 来源：[https://my.feishu.cn/docx/IlpId30beoUEiVxj88FcFo20ngh](https://my.feishu.cn/docx/IlpId30beoUEiVxj88FcFo20ngh)
 
-### 下列是日常网上冲浪得来的一些精彩信息收藏：
+## 下列是日常网上冲浪得来的一些精彩信息收藏：
 
----
-
-# 9.1  AI 深度洞察&名人访谈/发言
+# 9.1 AI 深度洞察&名人访谈/发言
 
 [Neural Networks: Zero to ](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=gfYIwsxCU6kNVZNF)Hero｜Andrej Karpathy
 
 [A](https://youtu.be/lXUZvyajciY?si=23mU0aLpqaT8igTs)ndrej Karpathy — “We’re summoning ghosts, not building animals”
 
-+   **AI 并不比人类“聪明”**：目前的 AI 更像是拥有完美记忆但缺乏认知的“过拟合”实体，而人类虽然记忆力差，但这恰恰是人类拥有强大泛化和抽象能力的特征。
++   AI 并不比人类“聪明”：目前的 AI 更像是拥有完美记忆但缺乏认知的“过拟合”实体，而人类虽然记忆力差，但这恰恰是人类拥有强大泛化和抽象能力的特征。
 
-+   **甚至连 LLM 也还没“毕业”**：尽管 LLM 能通过博士资格考试，但在认知架构上，它们仍像小学生一样，缺乏真正的世界模型和自主文化创造能力。
++   甚至连 LLM 也还没“毕业”：尽管 LLM 能通过博士资格考试，但在认知架构上，它们仍像小学生一样，缺乏真正的世界模型和自主文化创造能力。
 
 +   AI 发展是“一切照旧”的自动化进程，更多的算力不等于奇点：Karpathy 不认为会出现突然的“智能爆炸”或奇点。他将 AI 视为计算机技术的延伸，就像编译器自动化了汇编代码一样，AI 将逐步自动化更多知识工作。但即使有无限的算力和 AI 副本，社会和经济的整合仍需要时间，就像历史上其他技术革命一样，是一个线性的加速过程，而不是瞬间的垂直飞跃。
 
-+   **2%**：历史上技术革命带来的经济增长率（如工业革命），Karpathy 预测 AI 带来的增长也会维持在这个量级，而不是突然跳升至 20% 或更高。
++   2%：历史上技术革命带来的经济增长率（如工业革命），Karpathy 预测 AI 带来的增长也会维持在这个量级，而不是突然跳升至 20% 或更高。
 
-+   **10年**：Karpathy 预测 AI 智能体真正成熟并广泛应用所需的粗略时间线。
++   10年：Karpathy 预测 AI 智能体真正成熟并广泛应用所需的粗略时间线。
 
 +   AI 的发展将是一个长期的、渐进的工程挑战，而非一夜之间的魔法。未来的 AI 模型可能需要更小的“认知核心”和更少的死记硬背，更多地依赖推理能力。在教育领域，AI 有望通过提供深度个性化的辅导，让人类像在健身房锻炼肌肉一样，出于兴趣和自我提升的目的去高效获取知识。
 
-[Godfather of AI: I Tried to Warn Them, But We’](https://youtu.be/giT0ytynSqg?si=yY_3ZaQkkZzgg0iu)ve Already Lost Control! Geoffrey Hinton
+[Godfather of AI: I Tried to Warn Them, But We’re Already Lost Control! Geoffrey Hinton](https://youtu.be/giT0ytynSqg?si=yY_3ZaQkkZzgg0iu)
 
 [Ex](https://youtu.be/S9a1nLw70p0?si=6bTbLrJ_j_gEkE5d)-Google Exec (WARNING): The Next 15 Years Will Be Hell Before We Get To Heaven! - Mo Gawdat
 
 [A](https://youtu.be/JMYQmGfTltY?si=HP7kkSnh4BzCGGi2)I AGENTS DEBATE: These Jobs Won't Exist In 24 Months!
 
-#### 腾讯科技张小珺——2024 AI 三部曲
+## 腾讯科技张小珺——2024 AI 三部曲
 
 > 对话月之暗面杨植麟：向延绵而未知的雪山前进
 
@@ -40,7 +39,7 @@
 
 [[真格基金]万字赏析 DeepSeek 创造之美：De](https://mp.weixin.qq.com/s/8ifsQ1eRJpOSHCrFAtAX0A)epSeek R1 是怎样炼成的？丨荐读
 
-#### 其他
+## 其他
 
 纽约时报对 Anthropic CEO 一个半小时的采访
 
@@ -50,7 +49,7 @@ AI Agents 设计模式：多智能体协作
 
 AI的亚当和夏娃已经出现，伊甸园的那条蛇会是谁？
 
-# 9.2  音视频媒体精彩节目
+# 9.2 音视频媒体精彩节目
 
 ## Bilibili
 
@@ -98,7 +97,7 @@ B 站 | 奇绩创坛 | 陆奇最新演讲完整视频 | 大模型带来的新范
 
 优酷｜周轶君 X 优酷谈话节目《第一人称复数》：智能来了
 
-# 9.3  AI 应用思考分享
+# 9.3 AI 应用思考分享
 
 ## 大神们的 GPT 场景应用经验分享，以及关于 AI 的各种深度思考
 
@@ -116,7 +115,7 @@ AIGC 给品牌全案助力 | 个人单刷全案@大摩托车
 
 哄哄模拟器的完整复盘，火了，但一度让我很发愁 @王登科
 
-## **即刻上的高价值分享**
+## 即刻上的高价值分享
 
 [分享一个 GPT 使用的通用基操，如果已](https://m.okjike.com/originalPosts/644654ba09c07aaec606ded6?s=eyJ1IjoiNjI1ZmQzNzdmNzU0NTMwMDEwYzc2MjcwIiwiZCI6Mn0%3D)经会了的朋友可以略过。 - 即刻 App
 
@@ -130,31 +129,31 @@ AIGC 给品牌全案助力 | 个人单刷全案@大摩托车
 
 [AI 副业赚钱资讯合集](https://github.com/bleedline/aimoneyhunter?tab=readme-ov-file#ai%E5%89%AF%E4%B8%9A%E8%B5%9A%E9%92%B1%E8%B5%84%E8%AE%AF%E5%90%88%E9%9B%86)
 
-# 9.4  AI 博主
+# 9.4 AI 博主
 
-+   **博主**
+## 博主
 
-**@DeepLearningAI**：[YouTube 主页](https://www.youtube.com/c/DeepLearningAI) ——由吴恩达教授创办的在线教育平台，提供有关人工智能和深度学习的免费课程。该频道经常发布课程视频和相关讲座。
+@DeepLearningAI：[YouTube 主页](https://www.youtube.com/c/DeepLearningAI) ——由吴恩达教授创办的在线教育平台，提供有关人工智能和深度学习的免费课程。该频道经常发布课程视频和相关讲座。
 
-**@Lex Fridman**：[YouTube 主页](https://www.youtube.com/@lexfridman) —— MIT 研究科学家出身的顶流播客主。以超长深度的面对面访谈闻名，嘉宾包括 Sam Altman、Elon Musk、Mark Zuckerberg 等科技巨头及顶级学者。内容不仅限于技术，更深入探讨 AI 的哲学、伦理、意识以及人类的未来，思想密度极高。
+@Lex Fridman：[YouTube 主页](https://www.youtube.com/@lexfridman) —— MIT 研究科学家出身的顶流播客主。以超长深度的面对面访谈闻名，嘉宾包括 Sam Altman、Elon Musk、Mark Zuckerberg 等科技巨头及顶级学者。内容不仅限于技术，更深入探讨 AI 的哲学、伦理、意识以及人类的未来，思想密度极高。
 
-**@Jeff Su**：[YouTube 主页](https://www.youtube.com/@JeffSu)、📕（杰夫）——Google 上海从业。自媒体提供工作效率和个人成长的相关内容，分享技术专业技巧，特别是与 ChatGPT 和 Google Bard 等 AI 工具的使用相关。特别高质量的 youtuber
+@Jeff Su：[YouTube 主页](https://www.youtube.com/@JeffSu)、📕（杰夫）——Google 上海从业。自媒体提供工作效率和个人成长的相关内容，分享技术专业技巧，特别是与 ChatGPT 和 Google Bard 等 AI 工具的使用相关。特别高质量的 youtuber
 
-**@宝玉**：[🧣](https://weibo.com/u/1727858283)&X——AIGC 技术的应用、趋势以及相关的技术分享大牛，提出“两遍翻译法”长文翻译大受欢迎
+@宝玉：[🧣](https://weibo.com/u/1727858283)&X——AIGC 技术的应用、趋势以及相关的技术分享大牛，提出“两遍翻译法”长文翻译大受欢迎
 
-**@Tina Huang**：[YouTube 主页](https://www.youtube.com/@TinaHuang1) —— 前 Meta 数据科学家（Data Scientist）。主要分享数据科学领域的职业规划、高效学习方法论（如 SQL、Python）以及如何利用 AI 工具提升职场与学习效率。风格清晰干练，非常适合学生及希望通过 AI 技能实现职场进阶的打工人。
+@Tina Huang：[YouTube 主页](https://www.youtube.com/@TinaHuang1) —— 前 Meta 数据科学家（Data Scientist）。主要分享数据科学领域的职业规划、高效学习方法论（如 SQL、Python）以及如何利用 AI 工具提升职场与学习效率。风格清晰干练，非常适合学生及希望通过 AI 技能实现职场进阶的打工人。
 
 @[Andrej Kar](https://www.youtube.com/andrejkarpathy)pathy：YouTube 主页 —— 前 Tesla AI 总监、OpenAI 创始成员，AI 领域真正的技术大神。他在 YouTube 发布的“Zero to Hero”深度学习系列课程被誉为业内最好的入门教程之一，擅长用最通俗的代码从零讲解 ChatGPT 背后的原理，硬核且干货满满。
 
-**@Matt Wolfe**：[YouTube 主页](https://www.youtube.com/@mreflow) —— 专注于 AI 工具挖掘与行业动态的“情报员”，知名 AI 导航站 FutureTools 创始人。他的视频更新极快，涵盖最新的 AI 新闻、软件评测及实用教程，非常适合非技术背景但想紧跟 AI 浪潮、寻找实用工具的用户。
+@Matt Wolfe：[YouTube 主页](https://www.youtube.com/@mreflow) —— 专注于 AI 工具挖掘与行业动态的“情报员”，知名 AI 导航站 FutureTools 创始人。他的视频更新极快，涵盖最新的 AI 新闻、软件评测及实用教程，非常适合非技术背景但想紧跟 AI 浪潮、寻找实用工具的用户。
 
-**@Matthew Berman**：[YouTube 主页](https://www.youtube.com/@matthew_berman) —— 开源 AI 与本地化部署的实战派专家。内容专注于如何本地运行大模型（LLM）、微调模型以及搭建 AI Agent（智能体）。对于想要动手折腾开源技术、低代码开发以及探索 AI 自动化工作流的技术爱好者来说，是必看频道。
+@Matthew Berman：[YouTube 主页](https://www.youtube.com/@matthew_berman) —— 开源 AI 与本地化部署的实战派专家。内容专注于如何本地运行大模型（LLM）、微调模型以及搭建 AI Agent（智能体）。对于想要动手折腾开源技术、低代码开发以及探索 AI 自动化工作流的技术爱好者来说，是必看频道。
 
-**@杨昌**：https://web.okjike.com/originalPost/6457af2bb99c001fe8ee29a3
+@杨昌：`https://web.okjike.com/originalPost/6457af2bb99c001fe8ee29a3`
 
 > 影视龙头公司的 AIGC 应用研究院任职，推进 AI 在产业中的应用落地和商业化，分享自己的见解和学习资源
 
-# 9.5  优秀书籍及文档
+# 9.5 优秀书籍及文档
 
 [大厂 AI 实践合集｜工作流](https://www.yuque.com/wikidesign/vngzgk)
 
@@ -166,13 +165,13 @@ AI 入门神书：《人工智能基础（高中版）》作者：汤晓鸥
 
 [eBook-How-to-Build-a-Career-in-AI 中文.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RWA1bwQ3ModVfsxg6GCcLApSncg)
 
-斯蒂芬·沃尔弗拉姆**《这就是 ChatGPT》**
+斯蒂芬·沃尔弗拉姆《这就是 ChatGPT》
 
-# 9.6  GPTs 插件/Agents 智能体开眼界系列
+# 9.6 GPTs 插件/Agents 智能体开眼界系列
 
 AI 产品沉思录|Agent|体系化认知
 
-# 9.7  其他
+# 9.7 其他
 
 [1. AI精选工具库](https://t16jzwqrzjx.feishu.cn/wiki/EsvowFAqFiTiYDkJgE0cWquPnWb?from=from_copylink)
 
@@ -180,13 +179,13 @@ AI 产品沉思录|Agent|体系化认知
 
 [GPT人设描述提示](https://waytoagi.feishu.cn/wiki/Ok2Lw48bgia8yQkqCQacXtdCnRf?from=from_copylink) 教程：如何激活隐藏的“DAN”模式：
 
-各种 DAN prompt ：https://github.com/0xk1h0/ChatGPT_DAN
+各种 DAN prompt ：`https://github.com/0xk1h0/ChatGPT_DAN`
 
 解密 Kimi 投流策略：大模型应用当红顶流是如何练成的？
 
 ChatGPT 新手从 0 到 1 入门攻略
 
-链接： https://pan.baidu.com/s/1I-f9LjNXgHxVM5Q2o6tLlQ?pwd=kbsi 提取码： kbsi
+链接： `https://pan.baidu.com/s/1I-f9LjNXgHxVM5Q2o6tLlQ?pwd=kbsi` 提取码： kbsi
 
 如何向 ChatGPT 提问以获得高质量答案：提示技巧工程完全指南
 
@@ -212,6 +211,6 @@ ChatGPT 新手从 0 到 1 入门攻略
 
 感兴趣的朋友可以点击文中链接查看👇
 
-https://www.notion.so/cursorai/Building-with-Cursor-public-273da74ef0458051bf22e86a1a0a5c7d
+`https://www.notion.so/cursorai/Building-with-Cursor-public-273da74ef0458051bf22e86a1a0a5c7d`
 
-这个网页是 Cursor（一款 AI 代码编辑器）发布的公开版入门指南，其核心内容是为初学者（尤其是非技术背景的用户）提供一个从零开始到完成项目部署的完整教程。它的主要用途是引导用户通过安装设置、项目构建、代码管理（Git）到最终部署（Vercel）的六个步骤，亲手创建一个真实的项目，从而快速学习并体验 Cursor 的强大功能。
+这个网页是 Cursor（一款 AI 代码编辑器）发布的公开版入门指南，其核心内容是为初学者（尤其是非技术背景的用户）提供一个从零开始到完成项目部署的完整教程。它的主要用途是引导用户通过安装设置、项目构建、代码管理（`Git`）到最终部署（Vercel）的六个步骤，亲手创建一个真实的项目，从而快速学习并体验 Cursor 的强大功能。

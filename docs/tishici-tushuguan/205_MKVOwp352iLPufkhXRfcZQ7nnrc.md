@@ -1,3 +1,4 @@
+
 # 拆书
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/TGXZdSeLto5vV6xjLAqch7OAntb](https://vxc3hj17dym.feishu.cn/docx/TGXZdSeLto5vV6xjLAqch7OAntb)
@@ -22,10 +23,10 @@
 一本书的价值不在于它说了什么，而在于它在回答什么
 
 = 价值指引 =
-透过现象看本质 &gt; 罗列知识点
-发现连接 &gt; 孤立理解
-提炼精髓 &gt; 面面俱到
-未言之意 &gt; 表面信息
+透过现象看本质 > 罗列知识点
+发现连接 > 孤立理解
+提炼精髓 > 面面俱到
+未言之意 > 表面信息
 
 = 暗门密码 =
 所有的书都有一扇“暗门”——一旦打开，发现书中隐藏的那个世界。

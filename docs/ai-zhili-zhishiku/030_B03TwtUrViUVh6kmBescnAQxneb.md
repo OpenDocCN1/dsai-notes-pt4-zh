@@ -1,3 +1,4 @@
+
 # 《产品责任指令》（Directive of the European Parliament and of the council on liability for defective products，PLD）
 
 > 来源：[https://docs.feishu.cn/docx/HlfSdX7nGob2V1xuqx9cVArcnSg](https://docs.feishu.cn/docx/HlfSdX7nGob2V1xuqx9cVArcnSg)

@@ -1,3 +1,4 @@
+
 # 高质量prompts合集
 
 > 来源：[https://bluefocus.feishu.cn/docx/BnqxdTJwJopolVxdO9ncm6gennO](https://bluefocus.feishu.cn/docx/BnqxdTJwJopolVxdO9ncm6gennO)
@@ -34,7 +35,7 @@
 
 > 16. 甲木-得到提示词工具手册
 
-# chatgpt常用prompts汇总
+## chatgpt常用prompts汇总
 
 https://blog.csdn.net/qq_41667743/article/details/129962335
 

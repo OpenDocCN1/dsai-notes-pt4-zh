@@ -1,3 +1,4 @@
+
 # 翻译技术｜提升 ChatGPT 翻译质量的简单 prompt
 
 > 来源：[https://my.feishu.cn/docx/FnojdXQPjoSfi7xsWzYc31J3nJd](https://my.feishu.cn/docx/FnojdXQPjoSfi7xsWzYc31J3nJd)
@@ -72,7 +73,7 @@ Yeah, I will talk about large-language models in 2023. Why do we need that suffi
 
 ---
 
-作者简介：
+## 作者简介
 
 我是文森策，一个10年+品牌策划人，AI提示词&提效玩家。
 

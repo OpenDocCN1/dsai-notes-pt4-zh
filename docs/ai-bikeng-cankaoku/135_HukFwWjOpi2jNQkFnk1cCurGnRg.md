@@ -1,36 +1,37 @@
+
 # 3.6 AI声音克隆
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/W5WUd10pSo2gnGx86Abcdc0YnIc](https://xodnytdcaw.feishu.cn/docx/W5WUd10pSo2gnGx86Abcdc0YnIc)
 
 ## AI声音克隆
 
-[CosyVoice 2.0](https://github.com/FunAudioLLM/CosyVoice)
+[`CosyVoice 2.0`](https://github.com/FunAudioLLM/CosyVoice)
 
-[F5-TTS](https://github.com/SWivid/F5-TTS)
+[`F5-TTS`](https://github.com/SWivid/F5-TTS)
 
-[GPT-SoVITS-V2](https://github.com/RVC-Boss/GPT-SoVITS?ref=top.aibase.com)
+[`GPT-SoVITS-V2`](https://github.com/RVC-Boss/GPT-SoVITS?ref=top.aibase.com)
 
-[OpenVoice](https://github.com/myshell-ai/OpenVoice?ref=top.aibase.com)
+[`OpenVoice`](https://github.com/myshell-ai/OpenVoice?ref=top.aibase.com)
 
-https://f5tts.org/zh/playground
+`https://f5tts.org/zh/playground`
 
-https://www.minimax.io/audio
+`https://www.minimax.io/audio`
 
-[h](https://noiz.ai/login?redirect=%252Ftts%252Fcreation)ttps://noiz.ai/login?redirect=%252Ftts%252Fcreation
+`https://noiz.ai/login?redirect=%252Ftts%252Fcreation`
 
-https://anyvoice.net/zh
+`https://anyvoice.net/zh`
 
-https://www.minimax.io/audio
+`https://www.minimax.io/audio`
 
 ## AI人声分离
 
-[NovaMSS](https://novamss.com/)
+[`NovaMSS`](https://novamss.com/)
 
 ## AI音乐制作
 
-1.生成歌词
+### 生成歌词
 
-打开 DeepSeek ：https://chat.deepseek.com/
+打开 [`DeepSeek`](https://chat.deepseek.com/)。
 
 注意：打开深度思考、联网搜索
 
@@ -40,14 +41,14 @@ https://www.minimax.io/audio
 
 一些我喜欢的音乐人：
 
-+   Billie Eilish
++ Billie Eilish
 
-+   Ava Max
++ Ava Max
 
-+   Dmx、马思唯
++ Dmx、马思唯
 
-2.生成音乐
+### 生成音乐
 
-https://makebestmusic.com/
+`https://makebestmusic.com/`
 
-https://suno.com/
+`https://suno.com/`

@@ -1,3 +1,4 @@
+
 # Listary安装配置与备份
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/ThOOdbePToWKOBxjv34cmvtqnK1](https://xodnytdcaw.feishu.cn/docx/ThOOdbePToWKOBxjv34cmvtqnK1)
@@ -6,9 +7,9 @@ Listary是一款知名的效率工具，以用户友好，使用方式简单而�
 
 ## 下载安装
 
-官方：https://www.listary.net/
+官方：`https://www.listary.net/`
 
-海外版：https://www.listary.com/pro
+海外版：`https://www.listary.com/pro`
 
 折扣优惠地址：[点此直达](https://lizhi.shop/products/listary-pro?cid=wbm93g4b)
 
@@ -18,26 +19,33 @@ Listary是一款知名的效率工具，以用户友好，使用方式简单而�
 
 ## 本地搜索
 
-+   **双击Ctrl**搜索软件/命令（如：hosts）
++ `双击Ctrl`搜索软件/命令（如：`hosts`）
 
-+   在文件夹直接输入文件/文件夹名字快速定位
++ 在文件夹直接输入文件/文件夹名字快速定位
 
-+   Ctrl+G快速切换上次打开的目录
++ `Ctrl+G`快速切换上次打开的目录
 
-PS.安装后，左键双击-选项-常规设置，取消“自动检测更新”
+PS.安装后，`左键双击-选项-常规设置`，取消“`自动检测更新`”
 
 ## 网络搜索
 
-左键双击-选项-网络搜索，删除你不需要的项目，下面是一些常用的社交媒体配置添加规则，用到的谷歌/百度/必应（g/b/ing/）
+`左键双击-选项-网络搜索`，删除你不需要的项目，下面是一些常用的社交媒体配置添加规则，用到的谷歌/百度/必应（`g`/`b`/`ing`）
 
 | 项目 | 关键词 | URL | Custom |
+
 | --- | --- | --- | --- |
-| 油管 | yt | http://youtube.com/results?q={query} | http://suggestqueries.google.com/complete/search?client=youtube&amp;ds=yt&amp;client=firefox&amp;q={query} |
-| 推特 | t | https://twitter.com/search?q={query} | http://suggestqueries.google.com/complete/search?client=witter&amp;ds=yt&amp;client=firefox&amp;q={query} |
-| B站 | bl | https://search.bilibili.com/all?keyword={query}&amp;order=click | https://search.bilibili.com/all?keyword={query}&amp;tids=36 |
-| 📕 | xhs | https://www.xiaohongshu.com/search_result?keyword={query} | https://www.xiaohongshu.com/search_result?keyword={query} |
-| GitHub | git | https://github.com/search?q={query} | cmd /k gh {query} |
-| 抖音 | dy | https://www.douyin.com/search/{query} | cmd /k tt {query} |
+
+| 油管 | `yt` | `http://youtube.com/results?q={query}` | `http://suggestqueries.google.com/complete/search?client=youtube&amp;ds=yt&amp;client=firefox&amp;q={query}` |
+
+| 推特 | `t` | `https://twitter.com/search?q={query}` | `http://suggestqueries.google.com/complete/search?client=witter&amp;ds=yt&amp;client=firefox&amp;q={query}` |
+
+| B站 | `bl` | `https://search.bilibili.com/all?keyword={query}&amp;order=click` | `https://search.bilibili.com/all?keyword={query}&amp;tids=36` |
+
+| 📕 | `xhs` | `https://www.xiaohongshu.com/search_result?keyword={query}` | `https://www.xiaohongshu.com/search_result?keyword={query}` |
+
+| GitHub | `git` | `https://github.com/search?q={query}` | `cmd /k gh {query}` |
+
+| 抖音 | `dy` | `https://www.douyin.com/search/{query}` | `cmd /k tt {query}` |
 
 ## 左键功能
 
@@ -46,3 +54,4 @@ PS.安装后，左键双击-选项-常规设置，取消“自动检测更新”
 下次左键可以快速打开
 
 ## 数据备份
+

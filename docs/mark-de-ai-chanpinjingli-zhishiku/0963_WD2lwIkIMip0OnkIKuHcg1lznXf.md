@@ -1,8 +1,9 @@
+
 # GPT Image 2 使用教程，从「能生成」到「能商用」的跨越
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/MfxadwS3kossbAxLV2ZcUf0Wn8f](https://qqs7y1hozd1.feishu.cn/docx/MfxadwS3kossbAxLV2ZcUf0Wn8f)
 
-OpenAI 的下一代图像生成模型 GPT Image 2 已正式全量上线。这不是一次常规的模型迭代——从 4 月初在 LM Arena** 上以 ma**skingtape-alpha、gaffertape-alpha 等匿名代号意外泄露，到社区用户被其生成质量「集体干沉默」，再到如今面向所有 ChatGPT 用户开放，GPT Image 2 的登场几乎复制了去年 GPT Image 1.5 的泄露剧本，但带来的震撼远超以往。
+OpenAI 的下一代图像生成模型 GPT Image 2 已正式全量上线。这不是一次常规的模型迭代——从 4 月初在 LM Arena 上以 `maskingtape-alpha`、`gaffertape-alpha` 等匿名代号意外泄露，到社区用户被其生成质量「集体干沉默」，再到如今面向所有 ChatGPT 用户开放，GPT Image 2 的登场几乎复制了去年 GPT Image 1.5 的泄露剧本，但带来的震撼远超以往。
 
 ![](img/3696e428495a371464fd36158fbf50df.png)
 
@@ -30,8 +31,6 @@ App 画面模拟：
 
 ![](img/ddc9cde34716e5bf9113632f5b9714cb.png)
 
-###
-
 ### 照片级真实感：「AI 味」大幅消退
 
 社区用户的并排对比结论非常一致：GPT Image 2 的画质更锐利，纹理更细腻，光线一致性达到摄影级。人脸、手部这些曾经的「AI 灾区」，伪影几乎消失。有测试者形容，「它生成出来的东西不再带着强烈的 AI 味。你第一眼看到，真的会以为那就是一张真实照片」。
@@ -41,9 +40,7 @@ App 画面模拟：
 这是一个隐性但极其实用的升级。GPT Image 2 展现出了超越简单模式匹配的世界知识整合能力：
 
 +   能正确渲染手表表盘上的真实时间逻辑
-
 +   能精准还原真实品牌细节、知名角色特征
-
 +   能生成逻辑清晰的 Minecraft 游戏截图或真实软件界面
 
 它不是在「拼凑像素」，而是在「理解事物应有的样子」。
@@ -73,18 +70,15 @@ https://getgpt.progetgpt.pro/i/ig2
 操作步骤：
 
 1.  打开 ChatGPT（网页版或 App）
-
 1.  在输入框点击 + 号
-
 1.  选择 「创建图片」
-
 1.  输入你的提示词，系统会自动调用 GPT Image 2 生成
 
 > 提示：免费用户有每月限额，Plus （每天大概 100 张） / Pro （每天 500 张以上） 用户享有更多生成额度。如果你需要高频使用，建议保持订阅状态以确保额度充足。
 
 ### 在 API 中使用
 
-开发者可以通过 OpenAI API 调用 gpt-image-2 模型（具体模型名称以官方文档为准）。支持的分辨率包括：
+开发者可以通过 `OpenAI API` 调用 `gpt-image-2` 模型（具体模型名称以官方文档为准）。支持的分辨率包括：
 
 ## 三、生图案例与提示词参考
 
@@ -218,6 +212,10 @@ All labels in clean black sans-serif font, 12pt, leader lines in gray with arrow
 
 ## 六、写在最后
 
-[OpenAI 已](https://zhida.zhihu.com/search?content_id=273536273&content_type=Article&match_order=1&q=DALL-E+2&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzcxNjYwMDksInEiOiJEQUxMLUUgMiIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjI3MzUzNjI3MywiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.UJd96S0udk8zE16KqdEfCXVJgWTkDRGnK6iRSst-sD8&zhida_source=entity)宣布将[于 2026 年](https://zhida.zhihu.com/search?content_id=273536273&content_type=Article&match_order=1&q=DALL-E+3&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzcxNjYwMDksInEiOiJEQUxMLUUgMyIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjI3MzUzNjI3MywiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.9IgnWeN0vayRH0MmB-gHaIHo6DvoRn4WPjmBesDAhjg&zhida_source=entity) 5 月 12 日正式停止 DALL-E 2 和 DALL-E 3 的服务。这个时间点与 GPT Image 2 的上线窗口高度重合，标志着 OpenAI 图像生成技术栈的全面换代。
+[OpenAI 已](https://zhida.zhihu.com/search?content_id=273536273&content_type=Article&match_order=1&q=DALL-E+2&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzcxNjYwMDksInEiOiJEQUxMLUUgMiIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjI3MzUzNjI3MywiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.UJd96S0udk8zE16KqdEfCXVJgWTkDRGnK6iRSst-sD8&zhida_source=entity)宣布将[于 2026 年](https://zhida.zhihu.com/search?content_id=273536273&content_type=Article&match_order=1&q=DALL-E+3&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzcxNjYwMDksInEiOiJEQUxMLUUgMyIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjI3MzUzNjI3MywiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.9IgnWeN0vayRH0MmB-gHaIHo6DvoRn4WPjmBesDAhjg&zhida_source=entity) 5 月 12 日正式停止 `DALL-E 2` 和 `DALL-E 3` 的服务。这个时间点与 GPT Image 2 的上线窗口高度重合，标志着 OpenAI 图像生成技术栈的全面换代。
+
+
+
+# 从 DALL-E 到 GPT Image 2：AI 图像生成的三级跳
 
 从 DALL-E 到 GPT Image 1，再到如今的 GPT Image 2，OpenAI 用不到两年时间走完了从「玩具」到「工具」再到「生产力」的三级跳。对于创作者而言，这意味着更低的做图门槛、更快的迭代速度——但同时也意味着，「会用 AI 生图」本身，正在从竞争优势变成基础技能。

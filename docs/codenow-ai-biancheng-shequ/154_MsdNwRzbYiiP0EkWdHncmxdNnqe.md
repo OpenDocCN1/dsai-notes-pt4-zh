@@ -1,10 +1,9 @@
+
 # 入门视频教程
 
 > 来源：[https://now.feishu.cn/docx/HgQKdacEXoqOlBxbQSfcaAjinLb](https://now.feishu.cn/docx/HgQKdacEXoqOlBxbQSfcaAjinLb)
 
 # 安装和界面配置
-
-各个版本的下载地址：
 
 <https://player.bilibili.com/player.html?bvid=1oD4aeGE7T&spm_id_from=333.337.search-card.all.click&vd_source=3413a9edbee883aef0f55ad285839fa0>
 
@@ -12,7 +11,7 @@
 
 <https://player.bilibili.com/player.html?bvid=1vus6exEo3&spm_id_from=333.337.search-card.all.click&vd_source=3413a9edbee883aef0f55ad285839fa0>
 
-### 文字教程
+## 文字教程
 
 <https://www.bilibili.com/read/cv22988036/>
 
@@ -54,13 +53,13 @@
 
 <https://player.bilibili.com/player.html?bvid=1R9AQeBEAg&vd_source=3413a9edbee883aef0f55ad285839fa0>
 
-windows: [htt](https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/x64/user-setup/CursorUserSetup-x64-0.46.0.exe)ps://anysphe[re](https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/x64/Cursor-darwin-x64.zip)-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/x64/user-setup/CursorUserSetup-x64-0.46.0.exe
+windows: [htt](https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/x64/user-setup/CursorUserSetup-x64-0.46.0.exe)ps://anysphe[re](https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/x64/Cursor-darwin-x64.zip)
 
 mac(intel): https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/x64/Cursor-darwin-x64.zip
 
 mac(apple): https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/arm64/Cursor-darwin-arm64.zip
 
-## Cursor 实用 MCP 推荐 | Cursor 0.47 更新：更稳更强，效率倍增
+## 🤖 Cursor 实用 MCP 推荐 | Cursor 0.47 更新：更稳更强，效率倍增
 
 <https://player.bilibili.com/player.html?bvid=1FkQVYVEES&spm_id_from=333.1007.tianma.1-1-1.click&vd_source=3413a9edbee883aef0f55ad285839fa0>
 

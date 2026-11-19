@@ -1,6 +1,7 @@
+
 # 吴晓波-《预见》系列
 
-> 来源：[https://aigcreative.feishu.cn/docx/VDzddfhAIoAC0ZxgHticHq8AnKf](https://aigcreative.feishu.cn/docx/VDzddfhAIoAC0ZxgHticHq8AnKf)
+> 来源：[`https://aigcreative.feishu.cn/docx/VDzddfhAIoAC0ZxgHticHq8AnKf`](https://aigcreative.feishu.cn/docx/VDzddfhAIoAC0ZxgHticHq8AnKf)
 
 吴晓波是一位著名的中国财经作家，出生于1968年9月9日，浙江宁波人，毕业于复旦大学新闻系。他以其深刻的商业洞察力和卓越的写作能力而闻名，被誉为当代中国最知名的财经作家之一。
 
@@ -14,6 +15,6 @@
 
 吴晓波以其多方面的成就和对中国经济发展的深刻洞察，成为一位备受尊敬的财经作家和思想家。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
 # 知识库动态

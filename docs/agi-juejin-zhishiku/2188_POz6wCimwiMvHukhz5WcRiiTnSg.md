@@ -1,9 +1,7 @@
-# 12.17-消息称智谱 AI 获得 30 亿元融资，2024 年商业化收入翻倍
-
-> 来源：[https://agijuejin.feishu.cn/docx/KU0kdXOOSob2A4x5WElcypbXn0d](https://agijuejin.feishu.cn/docx/KU0kdXOOSob2A4x5WElcypbXn0d)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 17 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/KU0kdXOOSob2A4x5WElcypbXn0d](https://agijuejin.feishu.cn/docx/KU0kdXOOSob2A4x5WElcypbXn0d)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/28fe4254bb0644de55185a043d15da4d.png)

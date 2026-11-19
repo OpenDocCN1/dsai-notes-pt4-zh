@@ -1,14 +1,19 @@
+
 # 仿生学小卡片
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/TCIudJgNWoaAeCxvrvYcoI7Ynre](https://vxc3hj17dym.feishu.cn/docx/TCIudJgNWoaAeCxvrvYcoI7Ynre)
+
+## 作者信息
 
 作者：景淮
 
 👸号：景淮AI探索之旅
 
+适用模型：Claude
+
 ![](img/7d674447e95cd32644539baef69ed415.png)
 
-适用模型：Claude
+## 代码逻辑
 
 ```
 &quot;&quot;&quot;

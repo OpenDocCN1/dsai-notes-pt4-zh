@@ -1,8 +1,11 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/QoexdlRuCoymKFxSzFfcR6rsnIf](https://qqs7y1hozd1.feishu.cn/docx/QoexdlRuCoymKFxSzFfcR6rsnIf)
 
-```
+
+
+```python
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient

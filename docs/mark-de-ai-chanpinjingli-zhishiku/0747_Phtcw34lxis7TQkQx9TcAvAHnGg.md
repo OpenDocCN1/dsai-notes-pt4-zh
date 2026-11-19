@@ -1,10 +1,11 @@
-# 编写高质量的SKILL.md文件
+
+# 编写高质量的`SKILL.md` 文件
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/C5GrdE5AbooYthxGI8Oc1rDsn9c](https://qqs7y1hozd1.feishu.cn/docx/C5GrdE5AbooYthxGI8Oc1rDsn9c)
 
-SKILL.md文件是Skill的核心，它告诉Claude这个Skill的功能、使用时机以及如何执行任务。
+`SKILL.md`文件是Skill的核心，它告诉Claude这个Skill的功能、使用时机以及如何执行任务。
 
-高质量的SKILL.md文件应该像一本清晰的操作手册，让Claude能够快速找到所需信息并准确执行任务。
+高质量的`SKILL.md`文件应该像一本清晰的操作手册，让Claude能够快速找到所需信息并准确执行任务。
 
 ## YAML Frontmatter规范
 
@@ -12,7 +13,7 @@ SKILL.md文件是Skill的核心，它告诉Claude这个Skill的功能、使用�
 
 ### 必需字段
 
-SKILL.md文件必须以YAML frontmatter开头，包含以下必需字段：
+`SKILL.md`文件必须以YAML frontmatter开头，包含以下必需字段：
 
 ```
 ---
@@ -23,26 +24,25 @@ description: 详细描述Skill的功能和使用时机。当用户遇到X、Y、
 # Skill标题
 
 Skill的具体内容...
-
 ```
 
 字段详解：
 
-+   name: Skill的唯一标识符
++ `name`: Skill的唯一标识符
 
-+   只允许小写字母、数字和连字符
++ 只允许小写字母、数字和连字符
 
-+   长度限制：1-64个字符
++ 长度限制：1-64个字符
 
-+   建议使用描述性名称，如 code-reviewer、data-analyzer
++ 建议使用描述性名称，如 `code-reviewer`、`data-analyzer`
 
-+   description: Skill的功能描述和触发条件
++ `description`: Skill的功能描述和触发条件
 
-+   长度：最多1024个字符
++ 长度：最多1024个字符
 
-+   应该包含：Skill做什么 + 何时使用
++ 应该包含：Skill做什么 + 何时使用
 
-+   这是Claude判断是否使用此Skill的关键依据
++ 这是Claude判断是否使用此Skill的关键依据
 
 ### 可选字段
 
@@ -60,15 +60,15 @@ allowed-tools: Read,Write,Bash(git:*)
 
 可选字段说明：
 
-+   version: Skill版本号
++ `version`: Skill版本号
 
-+   author: 作者信息
++ `author`: 作者信息
 
-+   license: 开源许可证
++ `license`: 开源许可证
 
-+   model: 指定使用的Claude模型
++ `model`: 指定使用的Claude模型
 
-+   allowed-tools: 限制Skill可使用的工具
++ `allowed-tools`: 限制Skill可使用的工具
 
 ## 指令编写原则
 
@@ -99,11 +99,11 @@ allowed-tools: Read,Write,Bash(git:*)
 
 ### 使用清晰的语言
 
-+   避免模糊表述，使用具体明确的指令
++ 避免模糊表述，使用具体明确的指令
 
-+   使用主动语态，让指令更加直接
++ 使用主动语态，让指令更加直接
 
-+   提供上下文信息，帮助Claude做出决策
++ 提供上下文信息，帮助Claude做出决策
 
 不好的示例：
 
@@ -142,7 +142,7 @@ description: 处理Excel文件和数据分析。当用户上传.xlsx文件、提
 
 ### 基本引用语法
 
-在SKILL.md中使用相对路径引用其他文件：
+在`SKILL.md`中使用相对路径引用其他文件：
 
 ```
 # 数据处理Skill
@@ -159,21 +159,21 @@ description: 处理Excel文件和数据分析。当用户上传.xlsx文件、提
 
 ### 引用时机选择
 
-+   何时使用引用：
++ 何时使用引用：
 
-+   内容过长会影响加载速度
++ 内容过长会影响加载速度
 
-+   详细信息只有在特定情况下才需要
++ 详细信息只有在特定情况下才需要
 
-+   避免核心指令被冗长内容淹没
++ 避免核心指令被冗长内容淹没
 
-+   何时保留在主文件：
++ 何时保留在主文件：
 
-+   核心使用步骤
++ 核心使用步骤
 
-+   重要的安全提醒
++ 重要的安全提醒
 
-+   经常使用的信息
++ 经常使用的信息
 
 ### 渐进式披露策略
 
@@ -221,9 +221,9 @@ description: 管理数据库操作，包括查询、迁移和优化
 ## 意图识别
 
 如果用户说：
-- &quot;帮我分析这个数据&quot; → 执行数据分析流程
-- &quot;创建一份报告&quot; → 生成报告流程
-- &quot;优化这个查询&quot; → 性能优化流程
+- `帮我分析这个数据` → 执行数据分析流程
+- `创建一份报告` → 生成报告流程
+- `优化这个查询` → 性能优化流程
 ```
 
 ## Token优化技巧
@@ -371,14 +371,14 @@ description: 生成项目文档和API说明。当用户需要创建README、技�
 
 ## 最佳实践总结
 
-1.  保持简洁：用最少的token表达最多信息
+1. 保持简洁：用最少的token表达最多信息
 
-1.  结构清晰：使用标题和列表组织内容
+2. 结构清晰：使用标题和列表组织内容
 
-1.  条件明确：精确描述使用时机
+3. 条件明确：精确描述使用时机
 
-1.  渐进式披露：核心信息在前，详细信息引用外部文件
+4. 渐进式披露：核心信息在前，详细信息引用外部文件
 
-1.  持续迭代：根据实际使用情况优化指令
+5. 持续迭代：根据实际使用情况优化指令
 
-通过精心设计的SKILL.md文件，你可以创建出专业、可靠且易于维护的Skills。记住，好的指令就像好的老师，能够清晰地引导Claude完成复杂的任务。
+通过精心设计的`SKILL.md`文件，你可以创建出专业、可靠且易于维护的Skills。记住，好的指令就像好的老师，能够清晰地引导Claude完成复杂的任务。

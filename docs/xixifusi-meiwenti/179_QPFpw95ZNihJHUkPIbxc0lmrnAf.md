@@ -1,12 +1,13 @@
+
 # 如何把自己打造成一台学习机器（How to Make Yourself Into a Learning Machine）
 
-> 来源：[https://docs.feishu.cn/docx/A7X4dKa22oc6RgxDcPoclptJnyb](https://docs.feishu.cn/docx/A7X4dKa22oc6RgxDcPoclptJnyb)
+> 来源：`https://docs.feishu.cn/docx/A7X4dKa22oc6RgxDcPoclptJnyb`
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzA4NDk5OTgzMg==&mid=2650594580&idx=1&sn=03fe28aa4d092040356537fe6b571979&chksm=87d6d6e3b0a15ff5f83b5c8dbb31703903f3951b45b7a436bb39b686b51f3de63ed95b14a244&mpshare=1&scene=1&srcid=1123MrOwlFkssJkW59Rju7qm&sharer_shareinfo=b3592461062d9f4cc424489266b4dfdb&sharer_shareinfo_first=b3592461062d9f4cc424489266b4dfdb#rd)q.com/s?__biz=Mz...
+> 🔗 原文链接：`https://mp.weixin.qq.com/s?__biz=MzA4NDk5OTgzMg==&mid=2650594580&idx=1&sn=03fe28aa4d092040356537fe6b571979&chksm=87d6d6e3b0a15ff5f83b5c8dbb31703903f3951b45b7a436bb39b686b51f3de63ed95b14a244&mpshare=1&scene=1&srcid=1123MrOwlFkssJkW59Rju7qm&sharer_shareinfo=b3592461062d9f4cc424489266b4dfdb&sharer_shareinfo_first=b3592461062d9f4cc424489266b4dfdb#rd`
 
 // 在 Superorganizers 上读到这篇文章。讲的是 Shopify 的产品工程总监聊他的学习心得与工具资源。我 借助 AI 对照翻译推荐出来。
 
-Editor’s note: We're approaching the one-year anniversary of the release of ChatGPT, a knowledge and information machine unlike any we have ever before created. As we reflected on the role of knowledge, we also wondered what the future of learning would be. How can we learn in the age of AI? What role (if any) do books have? This interview , which we published before the rise of generative AI, might give us a window.
+Editor’s note: We're approaching the one-year anniversary of the release of ChatGPT, a knowledge and information machine unlike any we have ever before created. As we reflected on the role of knowledge, we also wondered what the future of learning would be. How can we learn in the age of AI? What role (if any) do books have? This interview, which we published before the rise of generative AI, might give us a window.
 
 编辑注：我们即将迎来ChatGPT发布一周年纪念日，这是一台与以往任何机器都不同的知识和信息机器。在我们反思知识的作用时，我们也在思考学习的未来会是什么样子。在人工智能时代，我们如何学习？书籍在其中扮演着什么样的角色（如果有的话）？这篇采访在生成式人工智能兴起之前发布，或许可以给我们一些启示。
 
@@ -24,15 +25,15 @@ You have two options: sink or swim.
 
 That’s the position Simon Eskildsen found himself in early in his career. He left his home in Denmark after high school, and moved to Canada alone to take a pre-college gap year working at Shopify.
 
-这是西蒙·埃斯基尔森在职业生涯初期所处的位置。他在高中毕业后离开丹麦，独自搬到加拿大，在Shopify工作一年，度过了大学前的间隔年。
+这是西蒙·埃斯基尔森在职业生涯初期所处的位置。他在高中毕业后离开丹麦，独自搬到加拿大，在 Shopify 工作一年，度过了大学前的间隔年。
 
 When he started, Shopify had 150 employees supporting tens of thousands of merchants. Now, it has more than 5,000 employees and over 1 million merchants.
 
-当他开始时，Shopify有150名员工支持数以万计的商家。现在，它拥有超过5,000名员工和超过1百万的商家。
+当他开始时，Shopify 有 150 名员工支持数以万计的商家。现在，它拥有超过 5,000 名员工和超过 1 百万的商家。
 
 And Simon never went to college—he stayed at Shopify and moved up the ranks to lead infrastructure teams that help keep Shopify processing hundreds of thousands of requests a second, day and night.
 
-而且西蒙从未上过大学-他留在Shopify，并晋升为领导基础设施团队的职位，帮助Shopify处理每秒数十万个请求，日夜不停。
+而且西蒙从未上过大学—他留在 Shopify，并晋升为领导基础设施团队的职位，帮助 Shopify 处理每秒数十万个请求，日夜不停。
 
 So how did he do it?
 
@@ -50,7 +51,7 @@ Simon realized that in order to level up fast enough to do his work he needed to
 
 西蒙意识到为了快速提升自己的工作能力，他需要大量阅读。而且不仅如此，他还需要记住所读的内容。
 
-**So he built an elaborate system t**o read, retain, and apply the lessons in hundreds of books. And he didn’t just read about infrastructure—he read literature, and scientific history; he read about politics and philosophy.
+So he built an elaborate system to read, retain, and apply the lessons in hundreds of books. And he didn’t just read about infrastructure—he read literature, and scientific history; he read about politics and philosophy.
 
 所以他建立了一个复杂的系统来阅读、保留和应用数百本书中的教训。他不仅仅阅读基础设施方面的书籍，还阅读文学、科学历史；他阅读政治和哲学方面的书籍。
 
@@ -58,9 +59,9 @@ Along the way he discovered that reading broadly was the best way to get to the 
 
 一路上，他发现广泛阅读是深入了解事物的最佳途径，也是提高工作能力的最佳途径。
 
-**We** met to discuss his elaborate system for remembering what he reads using Readwise and Anki , how he built his own custom Zettelkasten in Markdown, his process for automating his language learning, and his project to cook a dish from every country in the world.
+We met to discuss his elaborate system for remembering what he reads using `Readwise` and `Anki`, how he built his own custom `Zettelkasten` in `Markdown`, his process for automating his language learning, and his project to cook a dish from every country in the world.
 
-我们见面讨论了他使用Readwise和Anki记忆阅读内容的复杂系统，他如何使用Markdown构建自己定制的Zettelkasten，他自动化语言学习的过程，以及他烹饪世界各国菜肴的项目。
+我们见面讨论了他使用 `Readwise` 和 `Anki` 记忆阅读内容的复杂系统，他如何使用 `Markdown` 构建自己定制的 `Zettelkasten`，他自动化语言学习的过程，以及他烹饪世界各国菜肴的项目。
 
 Let’s dive in. 让我们开始吧。
 
@@ -68,11 +69,11 @@ Let’s dive in. 让我们开始吧。
 
 I grew up in Denmark, but I left home at the ripe age of 18 to pursue an opportunity at a company called Shopify in Canada.
 
-我在丹麦长大，但在18岁时离开家乡，前往加拿大的一家名为Shopify的公司追求机会。
+我在丹麦长大，但在18岁时离开家乡，前往加拿大的一家名为 Shopify 的公司追求机会。
 
-I had heard about Shopify from the Rails community, and after I graduated high school I did an interview with them. After the interview they said, “Yeah, you can come visit us in Ottawa.”
+I had heard about Shopify from the `Rails` community, and after I graduated high school I did an interview with them. After the interview they said, “Yeah, you can come visit us in Ottawa.”
 
-我从Rails社区听说过Shopify，高中毕业后我参加了他们的面试。面试后他们说：“是的，你可以来渥太华参观我们。”
+我从 `Rails` 社区听说过 Shopify，高中毕业后我参加了他们的面试。面试后他们说：“是的，你可以来渥太华参观我们。”
 
 And my response was, “What’s an Ottawa?”
 
@@ -84,17 +85,17 @@ But I ended up interviewing again in Ottawa, and then decided to join for a gap 
 
 Back then, Shopify had tens of thousands of merchants. Today there are over 1 million. I work on building the infrastructure to make the site scale.
 
-当时，Shopify有数以万计的商家。如今已经超过100万家。我负责构建基础设施，使网站能够扩展。
+当时，Shopify 有数以万计的商家。如今已经超过 100 万家。我负责构建基础设施，使网站能够扩展。
 
 ## How he started reading 他是如何开始阅读的
 
 I began taking reading seriously when I started at Shopify in 2013. It was primarily driven by the fact that I became a manager very early in my career.
 
-我在2013年加入Shopify时开始认真阅读。这主要是因为我在职业生涯早期就成为了一名经理。
+我在 2013 年加入 Shopify 时开始认真阅读。这主要是因为我在职业生涯早期就成为了一名经理。
 
 When I started managing, I felt a strong obligation to be the best lead I could for the team. Managing is a big responsibility—and it’s especially challenging when some of your reports are 10 years older than you.
 
-当我开始管理时，我感到有责任成为团队中最好的领导。管理是一项重大责任，尤其当你的下属中有些人比你大10岁时，这更具挑战性。
+当我开始管理时，我感到有责任成为团队中最好的领导。管理是一项重大责任，尤其当你的下属中有些人比你大 10 岁时，这更具挑战性。
 
 It seemed to me that the best way to meet this responsibility was to wake up earlier and read something every day before I came in.
 
@@ -102,11 +103,11 @@ It seemed to me that the best way to meet this responsibility was to wake up ear
 
 As I started to read more, the question was whether to go deep or wide. I am curious about so many things, so I naturally gravitated to read widely. I strive to be T-shaped: really good at something, but with a wide foundation—and that’s a metaphor we use widely at Shopify.
 
-当我开始阅读更多时，问题是要深入还是广泛涉猎。我对很多事情都很好奇，所以我自然而然地选择了广泛阅读。我努力成为T型人才：在某个领域非常擅长，但同时也有广泛的基础——这是我们在Shopify广泛使用的一个隐喻。
+当我开始阅读更多时，问题是要深入还是广泛涉猎。我对很多事情都很好奇，所以我自然而然地选择了广泛阅读。我努力成为 T 型人才：在某个领域非常擅长，但同时也有广泛的基础——这是我们在 Shopify 广泛使用的一个隐喻。
 
 I read 30-50 books each year on topics ranging from the history of transistors to ancient philosophy. My girlfriend jokes that because I never went to university, I still enjoy studying. I’m not sure. I think I’d love university.
 
-我每年阅读30-50本书，涵盖的主题从晶体管的历史到古代哲学。我的女朋友开玩笑说，因为我从未上过大学，所以我仍然喜欢学习。我不确定。我想我会喜欢上大学。
+我每年阅读 30-50 本书，涵盖的主题从晶体管的历史到古代哲学。我的女朋友开玩笑说，因为我从未上过大学，所以我仍然喜欢学习。我不确定。我想我会喜欢上大学。
 
 ## How he selects books 他如何选择书籍
 
@@ -114,19 +115,23 @@ I used to have an extremely rigid process to decide which books to read, but I d
 
 我过去有一个非常严格的流程来决定要读哪些书，但现在不再有了。
 
-What I found was that** choosing books with a fancy process ends up being more ab**out what I “ought'' to read, rather than what I actually just find most fascinating. Eliminating a rigid system helped me pay better attention to what I like and don’t like: getting through the 700 pages of Anna Karenina was a struggle, but I tore through a book on the history of the telegraph in no time.
+What I found was that choosing books with a fancy process ends up being more about what I “ought to” read, rather than what I actually just find most fascinating. Eliminating a rigid system helped me pay better attention to what I like and don’t like: getting through the 700 pages of Anna Karenina was a struggle, but I tore through a book on the history of the telegraph in no time.
 
-我发现，选择一本书时，过于繁琐的过程更多地关乎我“应该”读什么，而不是我真正觉得最有趣的内容。放弃刻板的系统帮助我更好地关注我喜欢和不喜欢的东西：读完《安娜·卡列尼娜》这本700页的书是一场斗争，但我很快就读完了一本关于电报历史的书。
+我发现，选择一本书时，过于繁琐的过程更多地关乎我“应该”读什么，而不是我真正觉得最有趣的内容。放弃刻板的系统帮助我更好地关注我喜欢和不喜欢的东西：读完《安娜·卡列尼娜》这本 700 页的书是一场斗争，但我很快就读完了一本关于电报历史的书。
 
 The one thing I do try to follow is to go on streaks of reading a lot of books on a particular topic around the same time. Doing this is useful because it means I don’t have to just trust one author’s perspective on a particular topic, and it helps me connect a lot of facts together, so I can understand things better.
 
-我尽力遵循的一件事是在同一时间段内连续阅读大量关于特定主题的书籍。 这样做很有用，因为这意味着我不必仅仅依赖一个作者对特定主题的观点，而且它帮助我将许多事实联系在一起，以便更好地理解事物。
+我尽力遵循的一件事是在同一时间段内连续阅读大量关于特定主题的书籍。这样做很有用，因为这意味着我不必仅仅依赖一个作者对特定主题的观点，而且它帮助我将许多事实联系在一起，以便更好地理解事物。
 
 For example, last year I became fascinated with the middle of the 19th century. There’s so much there: the gold rush, the ice industry, the Industrial Revolution, the telegraph. It was a fascinating time.
 
-例如，去年我对19世纪中叶产生了浓厚的兴趣。那个时期有太多的事情：淘金热、冰业、工业革命、电报。那是一个迷人的时代。
+例如，去年我对 19 世纪中叶产生了浓厚的兴趣。那个时期有太多的事情：淘金热、冰业、工业革命、电报。那是一个迷人的时代。
 
-I pick books by browsing Amazon and sending samples to my Kindle. Then I check out the samples to decide what I want to actually read cover to cover. I learned this from my friend Dan Doyon .
+I pick books by browsing Amazon and sending samples to my `Kindle`. Then I check out the samples to decide what I want to actually read cover to cover. I learned this from my friend Dan Doyon.
+
+我通过浏览 Amazon 并将样书发送到我的 `Kindle` 来挑选书籍。然后我查看样书来决定真正想要从头读到尾的书籍。我是从我的朋友 Dan Doyon 那里学到这个方法的。
+
+
 
 我通过浏览亚马逊并将样本发送到我的Kindle来挑选书籍。然后我会查看样本，决定我真正想要阅读的内容。我从我的朋友丹·多伊昂那里学到了这个方法。
 
@@ -140,33 +145,33 @@ The core of the system is highlighting.
 
 这个系统的核心是高亮显示。
 
-**A**nything that I find that’s important, I’ll highlight on my Kindle. All of those highlights automatically go to my Readwise where I can add them to my learning system. Readwise is fantastic because it automatically scrapes all of my Kindle highlights and puts them into one place for me where I can search, tag, and review them.
+Anything that I find that’s important, I’ll highlight on my Kindle. All of those highlights automatically go to my Readwise where I can add them to my learning system. Readwise is fantastic because it automatically scrapes all of my Kindle highlights and puts them into one place for me where I can search, tag, and review them.
 
-我在Kindle上发现的任何重要内容，我都会进行标注。所有这些标注都会自动发送到我的Readwise，我可以将它们添加到我的学习系统中。 Readwise非常棒，因为它会自动提取我在Kindle上的所有标注，并将它们放在一个地方供我搜索、标记和复习。
+我在Kindle上发现的任何重要内容，我都会进行标注。所有这些标注都会自动发送到我的Readwise，我可以将它们添加到我的学习系统中。Readwise非常棒，因为它会自动提取我在Kindle上的所有标注，并将它们放在一个地方供我搜索、标记和复习。
 
-**My learning system itself has two c**omponents: a flashcard system and a custom-built note repository inspired by the Zettelkasten—which is a note-taking system developed by the social scientist Niklas Luhmann. The Zettelkasten is where I spend time processing, categorizing, and connecting what I read.
+My learning system itself has two components: a flashcard system and a custom-built note repository inspired by the Zettelkasten—which is a note-taking system developed by the social scientist Niklas Luhmann. The Zettelkasten is where I spend time processing, categorizing, and connecting what I read.
 
-我的学习系统本身有两个组成部分：一个是基于闪卡的系统，另一个是受社会科学家尼克拉斯·卢曼的笔记系统Zettelkasten启发而构建的自定义笔记库。 Zettelkasten是我花时间处理、分类和连接我所阅读内容的地方。
+我的学习系统本身有两个组成部分：一个是基于闪卡的系统，另一个是受社会科学家尼克拉斯·卢曼的笔记系统Zettelkasten启发而构建的自定义笔记库。Zettelkasten是我花时间处理、分类和连接我所阅读内容的地方。
 
 ## How he uses flash cards to remember facts 他如何使用闪卡来记忆事实
 
-When I come across something in a book that seems useful to understand and remember , I will highlight it on my Kindle and add a note to it with the text: “.flash” .
+When I come across something in a book that seems useful to understand and remember, I will highlight it on my Kindle and add a note to it with the text: `.flash`.
 
-当我在书中遇到一些看起来有用的东西，我会在我的Kindle上将其标记出来，并添加一个带有文本“ .flash”的注释。
+当我在书中遇到一些看起来有用的东西，我会在我的Kindle上将其标记出来，并添加一个带有文本`.flash`的注释。
 
-All notes with “.flash” in them are automatically loaded into Readwise and organized under a “flash” tag.
+All notes with `.flash` in them are automatically loaded into Readwise and organized under a `flash` tag.
 
-所有带有“.flash”标签的笔记都会自动加载到Readwise中，并在“flash”标签下进行组织。
+所有带有`.flash`标签的笔记都会自动加载到Readwise中，并在`flash`标签下进行组织。
 
 ![](img/7446d9634dc199fe246c12291a973837.png)
 
-I’ll periodically open the list of “flash” tags in Readwise and translate them into flashcard form in Anki .
+I’ll periodically open the list of `flash` tags in Readwise and translate them into flashcard form in Anki.
 
 我会定期在Readwise中打开“闪存”标签列表，并将其翻译成Anki的闪卡形式。
 
 ![](img/a91f03f36238b9ba6906a1f21b199dde.png)
 
-Anki helps me remember things by surfacing flashcards that I’m likely to forget just before I’d otherwise forget them. It’s called spaced repetition .
+Anki helps me remember things by surfacing flashcards that I’m likely to forget just before I’d otherwise forget them. It’s called spaced repetition.
 
 Anki通过展示我可能会忘记的卡片来帮助我记住事物。这被称为间隔重复。
 
@@ -192,7 +197,7 @@ I am creeping up on 10,000 cards in Anki, and I’ve been doing this for over fo
 
 ## He stores large concepts in his custom-made Zettelkasten system 他将大的概念存储在他定制的Zettelkasten系统中
 
-**Wh**en I highlight something from a book that contains an idea, concept, metaphor, or generally something more abstract, I’ll put it into my Zettelkasten instead of my flashcard system. These highlights aren’t to be remembered—they are to be connected.
+When I highlight something from a book that contains an idea, concept, metaphor, or generally something more abstract, I’ll put it into my Zettelkasten instead of my flashcard system. These highlights aren’t to be remembered—they are to be connected.
 
 当我从一本书中突出显示包含思想、概念、隐喻或一般较抽象的内容时，我会将其放入我的Zettelkasten而不是我的记忆卡系统中。这些突出显示的内容不是为了记住，而是为了连接。
 
@@ -212,9 +217,9 @@ So I engineered my own.
 
 所以我自己设计了一个。
 
-It’s just text files on my computer written in Markdown and edited using a plaintext editor. I’ve also written a lot of small, auxiliary tooling for searching , browsing related notes , editor integration, and so on. The main repo where I keep all of it is on  Github .
+It’s just text files on my computer written in `Markdown` and edited using a plaintext editor. I’ve also written a lot of small, auxiliary tooling for searching, browsing related notes, editor integration, and so on. The main repo where I keep all of it is on Github.
 
-这只是我电脑上用Markdown编写并使用纯文本编辑器编辑的文本文件。我还编写了许多小型辅助工具，用于搜索、浏览相关笔记、编辑器集成等等。我将所有这些内容保存在Github上的主要仓库中。
+这只是我电脑上用`Markdown`编写并使用纯文本编辑器编辑的文本文件。我还编写了许多小型辅助工具，用于搜索、浏览相关笔记、编辑器集成等等。我将所有这些内容保存在Github上的主要仓库中。
 
 Notes get into my Zettelkasten from the highlights in my Readwise. Readwise has a feature called Daily Review, which shows me about 15 of my book highlights every day.
 
@@ -236,9 +241,9 @@ You’ll see in my Zettelkasten I put in the original quote and the source, and 
 
 在我的Zettelkasten中，你会看到我放入了原始引用和来源，然后对其进行简短的评论。
 
-Then I’ll start connecting this to other notes. One way to do that is with tags, and you’ll see that I added a #pessimismtag to the note.
+Then I’ll start connecting this to other notes. One way to do that is with tags, and you’ll see that I added a `#pessimismtag` to the note.
 
-然后我将开始将其与其他笔记连接起来。一种方法是使用标签，你会看到我在笔记中添加了一个#悲观主义标签。
+然后我将开始将其与其他笔记连接起来。一种方法是使用标签，你会看到我在笔记中添加了一个`#悲观主义`标签。
 
 But my system also lets me create links directly to other notes as well.
 
@@ -250,7 +255,7 @@ On the right-hand side I have a full-text search prompt. To find other notes to 
 
 ![](img/71445b65d662ac291502fde8b2736aaa.png)
 
-The first thing that comes up is a note I took from Morgan Housel that says thatpessimismtends to sound smart.
+The first thing that comes up is a note I took from Morgan Housel that says that pessimism tends to sound smart.
 
 首先出现的是我从摩根·豪斯尔那里得到的一张笔记，上面写着悲观主义往往听起来很聪明。
 
@@ -288,6 +293,8 @@ I think memory is underrated.
 
 我认为记忆被低估了。
 
+
+
 For example, memorizing all of the U.S. presidents is something that people might think is for show. But to me it’s actually really helpful to know who was president at a certain time because it allows you to connect the president with that time period.
 
 例如，记住所有美国总统是一件人们可能认为只是为了炫耀的事情。但对我来说，知道某个特定时期的总统是谁实际上非常有帮助，因为它让你能够将总统与那个时期联系起来。
@@ -310,7 +317,7 @@ It gives you this web of facts for you to put new information into context, and 
 
 ## He uses Things for GTD 他使用Things进行GTD
 
-I dofairlystandard GTD with Things . I use it to organize things into time buckets, decide what to work on at the beginning of the day, and use tags to organize tasks. It’s nothing crazy. Here’s an example from a very real non-work day:
+I do fairly standard GTD with Things. I use it to organize things into time buckets, decide what to work on at the beginning of the day, and use tags to organize tasks. It’s nothing crazy. Here’s an example from a very real non-work day:
 
 我在Things中使用相当标准的GTD方法。我用它将事物组织成时间段，决定一天开始时要处理的事情，并使用标签来组织任务。没什么特别的。以下是一个非常真实的非工作日的例子：
 
@@ -320,13 +327,16 @@ I have three main areas I throw tasks into:
 
 我将任务分为三个主要领域：
 
-+   Growth (a list of personal projects)
++ Growth (a list of personal projects)
+
 增长（个人项目列表）
 
-+   Life ( chores ) 
-生活 （家务）
++ Life (chores)
 
-+   Work
+生活（家务）
+
++ Work
+
 工作
 
 In the Growth section, I keep track of all of my personal projects:
@@ -367,9 +377,9 @@ A few years ago I made a traditional Iranian beef stew. A co-worker of mine was 
 
 几年前，我做了一道传统的伊朗牛肉炖菜。我的一个同事来自伊朗，所以有一天我把它带到了他的工作地点。他尝了一口，看着我，说：“这很棒！”于是我在清单上打了个勾。
 
-We also get my friends involved. We pick a random country by going to random.country , look up the traditional meals, and then have a potluck where everyone brings a different dish. We’ve done Hong Kong, Mongolia, Bangladesh, Brazil, Spain, and many others.
+We also get my friends involved. We pick a random country by going to `random.country`, look up the traditional meals, and then have a potluck where everyone brings a different dish. We’ve done Hong Kong, Mongolia, Bangladesh, Brazil, Spain, and many others.
 
-我们还让我的朋友们参与进来。我们通过访问random.country随机选择一个国家，查找传统餐食，然后举办聚餐，每个人带来不同的菜肴。我们已经尝试过香港、蒙古、孟加拉国、巴西、西班牙等许多地方。
+我们还让我的朋友们参与进来。我们通过访问`random.country`随机选择一个国家，查找传统餐食，然后举办聚餐，每个人带来不同的菜肴。我们已经尝试过香港、蒙古、孟加拉国、巴西、西班牙等许多地方。
 
 ![](img/ff94cf2536861adb166c65b06512fb5f.png)
 
@@ -379,7 +389,7 @@ Another project I have is a system to help me build my vocabulary.
 
 我另一个项目是一个帮助我建立词汇量的系统。
 
-Since English isn’t my first language, I sometimes run into words while I’m reading that I don’t understand. So to learn more words, I created a script that takes words from Readwise and automatically adds the audio pronunciation, the definition, and examples in a sentence to an Airtable .
+Since English isn’t my first language, I sometimes run into words while I’m reading that I don’t understand. So to learn more words, I created a script that takes words from Readwise and automatically adds the audio pronunciation, the definition, and examples in a sentence to an Airtable.
 
 由于英语不是我的母语，我在阅读时有时会遇到不理解的单词。为了学习更多单词，我创建了一个脚本，从Readwise中获取单词并自动添加音频发音、定义和例句到Airtable中。
 
@@ -411,7 +421,7 @@ Over the years, I’ve found that reading dense PDFs or Google Docs isn’t very
 
 多年来，我发现在笔记本电脑或Kindle上阅读密集的PDF或Google文档效果不太好。
 
-Recently, a friend was raving about the reMarkable tablet , and I now use it for reading those types of documents a fair bit. It’s a simple e-ink tablet. It’s larger than the Kindle, and feels like paper when you write. It doesn’t replace your Kindle. It’s not good for long-form.
+Recently, a friend was raving about the reMarkable tablet, and I now use it for reading those types of documents a fair bit. It’s a simple e-ink tablet. It’s larger than the Kindle, and feels like paper when you write. It doesn’t replace your Kindle. It’s not good for long-form.
 
 最近，一个朋友对reMarkable平板赞不绝口，我现在经常用它来阅读那些类型的文件。它是一款简单的电子墨水平板。它比Kindle大，写字时感觉像纸张一样。它不能取代你的Kindle。对于长篇文章来说不太适用。
 
@@ -423,7 +433,7 @@ Most of the Google Docs and longer emails I review, I send to my reMarkable and 
 
 我将大部分的Google文档和长邮件发送到我的reMarkable上进行处理。
 
-The reMarkable gives great space to think, but because of its limitations I wouldn’t recommend it to everyone. It’s for a very particular workflow. It can easily end up as another expensive  shelf gadget.
+The reMarkable gives great space to think, but because of its limitations I wouldn’t recommend it to everyone. It’s for a very particular workflow. It can easily end up as another expensive shelf gadget.
 
 reMarkable给予了很大的思考空间，但由于其限制，我不会推荐给每个人。它适用于非常特定的工作流程。它很容易成为另一个昂贵的摆设。
 
@@ -433,6 +443,6 @@ Surprisingly, I’ve also found that it works very well for making presentations
 
 ## A book recommendation 一本书的推荐
 
-Where Good Ideas Come From by Steven Johnson. This book is studded with good observations by someone who has spent a lot of time reading and thinking about scientific history. As an engineer—and fellow student of science—I loved it. I wrote a short review .
+Where Good Ideas Come From by Steven Johnson. This book is studded with good observations by someone who has spent a lot of time reading and thinking about scientific history. As an engineer—and fellow student of science—I loved it. I wrote a short review.
 
 《好点子从何而来》是史蒂文·约翰逊的著作。这本书充满了对科学历史的深入阅读和思考的观察。作为一名工程师和科学的学习者，我非常喜欢它。我写了一篇简短的评论。

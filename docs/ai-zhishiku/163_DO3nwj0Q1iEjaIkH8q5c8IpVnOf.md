@@ -1,3 +1,4 @@
+
 # 微软 New Bing 国内版使用说明
 
 > 来源：[https://my.feishu.cn/docx/B8aXdN3iHooUcnxiOrvcR5DQnOb](https://my.feishu.cn/docx/B8aXdN3iHooUcnxiOrvcR5DQnOb)
@@ -12,7 +13,7 @@
 
 ![](img/c092c38bdb33116611888db6a3abf707.png)
 
-# 四、联系我们
+## 四、联系我们
 
 ![](img/6cdb10ad5fcef658bebb4cbe4ef96d38.png)
 

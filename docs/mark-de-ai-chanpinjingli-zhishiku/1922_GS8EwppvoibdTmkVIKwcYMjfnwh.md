@@ -1,32 +1,27 @@
+
 # Al 行业资讯 1.27
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Rr8Pdmo3JoyuhdxISt9crCiunEe](https://qqs7y1hozd1.feishu.cn/docx/Rr8Pdmo3JoyuhdxISt9crCiunEe)
 
-1.  [**DeepSeek-R1正式发布**](https://qqs7y1hozd1.feishu.cn/wiki/GS8EwppvoibdTmkVIKwcYMjfnwh?fromScene=spaceOverview#share-WbLNdZqNpogV45x7t74cc4f9nid)
-
-1.  Kimi发布k1.5多模态思考模型
-
-1.  百川智能发布国内首个全场景深度思考模型
-
-1.  Sam Altman 公布星门计划首期基地中心
-
-1.  微软开源AIOpsLab，助力构建AI Agent
-
-1.  MiniMax发布T2A-01语音模型，海螺语音全球上线
-
-1.  Rivian自动驾驶计划曝光，目标直指特斯拉FSD
+1. [DeepSeek-R1正式发布](https://qqs7y1hozd1.feishu.cn/wiki/GS8EwppvoibdTmkVIKwcYMjfnwh?fromScene=spaceOverview#share-WbLNdZqNpogV45x7t74cc4f9nid)
+2. Kimi发布k1.5多模态思考模型
+3. 百川智能发布国内首个全场景深度思考模型
+4. Sam Altman 公布星门计划首期基地中心
+5. 微软开源AIOpsLab，助力构建AI Agent
+6. MiniMax发布T2A-01语音模型，海螺语音全球上线
+7. Rivian自动驾驶计划曝光，目标直指特斯拉FSD
 
 ---
 
-# DeepSeek-R1正式发布
+## DeepSeek-R1正式发布
 
 1月21日，DeepSeek正式发布DeepSeek-R1模型，并同步开源模型权重。DeepSeek-R1遵循MIT License，允许用户通过蒸馏技术借助R1训练其他模型，同时上线API，对用户开放思维链输出。
 
 性能方面，DeepSeek-R1在后训练阶段大规模使用强化学习技术，仅用极少标注数据就极大提升了模型推理能力，在数学、代码、自然语言推理等任务上，性能比肩OpenAI o1。此外，DeepSeek还开源了通过R1蒸馏出的6个小模型，其中32B和70B模型在多项能力上实现了对标OpenAI o1-mini的效果。
 
-在技术方面，它有以下几个技术亮点
+### 在技术方面，它有以下几个技术亮点
 
-强化学习取代SFT：DeepSeek R1 Zero完全用强化学习取代了传统的SFT（微调）训练方法，通过自我反思和优化，模型性能稳步提升。例如，在AIME 2024上，DeepSeek-R1-Zero的平均pass@1得分从15.6%跃升至71.0%，达到与OpenAI-o1-0912相当的性能水平。
+强化学习取代SFT：DeepSeek R1 Zero完全用强化学习取代了传统的SFT（微调）训练方法，通过自我反思和优化，模型性能稳步提升。例如，在AIME 2024上，DeepSeek-R1-Zero的平均`pass@1`得分从15.6%跃升至71.0%，达到与OpenAI-o1-0912相当的性能水平。
 
 涌现时刻（Aha Moment）：在训练过程中，DeepSeek-R1-Zero展现了复杂行为的自发涌现，如反思和探索替代方法，这些行为并非通过明确编程实现，而是模型与强化学习环境交互的自然产物，显著增强了其推理能力。
 
@@ -36,7 +31,7 @@
 
 ![](img/7d00341adc8090c9e7276822d466fe65.png)
 
-# Kimi发布k1.5多模态思考模型
+## Kimi发布k1.5多模态思考模型
 
 1月20日，月之暗面科技有限公司旗下的Kimi智能助手发布了全新k1.5多模态思考模型，并首次公开模型训练技术报告。k1.5模型是Kimi连续第三个月对k系列强化学习模型的重磅升级，实现了SOTA（state-of-the-art）级别的多模态推理和通用推理能力。
 
@@ -48,7 +43,7 @@ k1.5多模态思考模型的预览版将陆续灰度上线Kimi.com网站和最�
 
 ![](img/549318aeb0bb8213077395cd293528ac.png)
 
-# 百川智能发布国内首个全场景深度思考模型
+## 百川智能发布国内首个全场景深度思考模型
 
 1月24日，百川智能发布了国内首个全场景深度思考模型Baichuan-M1-preview。该模型是国内目前唯一同时具备语言、视觉和搜索三大领域推理能力的模型。
 
@@ -62,7 +57,7 @@ k1.5多模态思考模型的预览版将陆续灰度上线Kimi.com网站和最�
 
 ![](img/9c58306f1b2688e03899ebbf439245b8.png)
 
-# Sam Altman 公布星门计划首期基地中心
+## Sam Altman 公布星门计划首期基地中心
 
 1月24日，Sam Altman在个人社交账号公布了星门计划首期基地中心，首批10个数据中心的建设工作已在德克萨斯州启动。
 
@@ -72,7 +67,7 @@ OpenAI首席产品官Kevin Weil表示，数据中心是星门计划的核心基�
 
 ![](img/8d29d225475fd3b0f1eb5f5c52db0da1.png)
 
-# 微软开源AIOpsLab，助力构建AI Agent
+## 微软开源AIOpsLab，助力构建AI Agent
 
 1月25日，微软联合加州大学伯克利分校、伊利诺伊大学等研究人员开源了AIOpsLab，这是一个专用于云自动化运维的AI Agents项目。
 
@@ -82,7 +77,7 @@ AIOpsLab的架构包括五个关键部分：协调器、服务、工作负载生
 
 ![](img/78b41c3dcdf50b3f28df4b27238f5f3d.png)
 
-# MiniMax发布T2A-01语音模型，海螺语音全球上线
+## MiniMax发布T2A-01语音模型，海螺语音全球上线
 
 1月20日，MiniMax宣布推出全新升级的T2A-01系列语音模型，并全球同步上线海螺语音产品。
 
@@ -94,7 +89,7 @@ AIOpsLab的架构包括五个关键部分：协调器、服务、工作负载生
 
 ![](img/b94e5cd2a1b522695989d7aa2a070679.png)
 
-# Rivian自动驾驶计划曝光，目标直指特斯拉FSD
+## Rivian自动驾驶计划曝光，目标直指特斯拉FSD
 
 据electrek报道，美国造车新势力Rivian公布了其自动驾驶系统的发展计划，目标直指特斯拉的FSD功能。
 

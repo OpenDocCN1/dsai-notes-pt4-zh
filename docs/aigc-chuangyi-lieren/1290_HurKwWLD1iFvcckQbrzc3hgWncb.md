@@ -1,27 +1,27 @@
-# 20240417-6K直出！PixArt-Sigma更新，文生图堪比Midjourney，附免费链接
+
+# 20240417-6K直出！`PixArt-Sigma`更新，文生图堪比`Midjourney`，附免费链接
 
 > 来源：[https://aigcreative.feishu.cn/docx/MImMdfwyXogTqixB2d0cFIWpnDb](https://aigcreative.feishu.cn/docx/MImMdfwyXogTqixB2d0cFIWpnDb)
 
 ![](img/547be189b59764fed6298024fce7ae96.png)
 
-最近，PixArt-Sigma发布最新更新，这个基于Transformer的高质量图像生成训练框架，不仅在技术上实现了突破，更以其用户友好的特性，赢得了广泛的关注和好评。
+最近，`PixArt-Sigma`发布最新更新，这个基于`Transformer`的高质量图像生成训练框架，不仅在技术上实现了突破，更以其用户友好的特性，赢得了广泛的关注和好评。
 
-先直接上Huggingface体验链接：https://huggingface.co/spaces/PixArt-alpha/PixArt-Sigma
+先直接上`Huggingface`体验链接：`https://huggingface.co/spaces/PixArt-alpha/PixArt-Sigma`
 
-交互界面非常简单，有WebUI基础的小伙伴，1分钟即可上手！
+交互界面非常简单，有`WebUI`基础的小伙伴，1分钟即可上手！
 
 ![](img/683c8fbb3211e5f71d1b9bd50bcee040.png)
 
-PIXART-Σ是由华为诺亚方舟实验室、大连理工和香港大学的研究团队共同开发的扩散变换模型DiT，专门用于4K分辨率的文本到图像生成。模型于24年3月发布，在基础模型PixArt-a上进行了显著改进，提供了更高保真图像和更好的文本提示对齐。PixArt-Σ生成4K图像的能力有效地支持了电影和游戏等行业高质量视觉内容的产生。
+`PIXART-Σ`是由华为诺亚方舟实验室、大连理工和香港大学的研究团队共同开发的扩散变换模型`DiT`，专门用于4K分辨率的文本到图像生成。模型于24年3月发布，在基础模型`PixArt-a`上进行了显著改进，提供了更高保真图像和更好的文本提示对齐。`PixArt-Σ`生成4K图像的能力有效地支持了电影和游戏等行业高质量视觉内容的产生。
 
 ## 图像生成技术的一次重大飞跃
 
-PixArt-Sigma此次的更新发布，标志着图像生成技术的一次重大飞跃。传统的图像生成技术往往需要复杂的编程知识和大量的时间投入，而PixArt-Sigma则通过简化训练和测试流程，无论是专业的开发者还是图像爱好者，都能轻松上手，体验到图像生成的魅力。
+`PixArt-Sigma`此次的更新发布，标志着图像生成技术的一次重大飞跃。传统的图像生成技术往往需要复杂的编程知识和大量的时间投入，而`PixArt-Sigma`则通过简化训练和测试流程，无论是专业的开发者还是图像爱好者，都能轻松上手，体验到图像生成的魅力。
 
+## 基于`Transformer`的核心框架
 
-## 基于Transformer的核心框架
-
-Transformer作为一种强大的深度学习模型，已经在自然语言处理等领域展现出了巨大的潜力。PixArt-Sigma将其应用于图像生成，使得生成的图像不仅质量上乘，而且风格多样，满足了不同用户的需求。
+`Transformer`作为一种强大的深度学习模型，已经在自然语言处理等领域展现出了巨大的潜力。`PixArt-Sigma`将其应用于图像生成，使得生成的图像不仅质量上乘，而且风格多样，满足了不同用户的需求。
 
 ![](img/f78ec195e812654f92ce3b534e75adcd.png)
 
@@ -41,34 +41,32 @@ Transformer作为一种强大的深度学习模型，已经在自然语言处理
 
 ![](img/4c99525be1f0b7082f3d8df9c020ec06.png)
 
-无论是细致入微的插画，还是宏大壮观的场景，都能通过这个框架得以完美呈现。而且还集成了LCM、DMD、ControlNet等工具，为用户提供了更多的创作自由度和控制能力。
+无论是细致入微的插画，还是宏大壮观的场景，都能通过这个框架得以完美呈现。而且还集成了`LCM`、`DMD`、`ControlNet`等工具，为用户提供了更多的创作自由度和控制能力。
 
 ![](img/9a9f227dc02b402eeda17721c441f0a0.png)
 
-## PixArt-Sigma：开源
+## `PixArt-Sigma`：开源
 
 开源意味着任何人都可以访问、使用和修改这个框架，这极大地促进了社区的参与和创新。用户不仅可以利用现有的资源，还可以根据自己的需求进行定制，创造出独一无二的图像作品。
 
 ![](img/60fcc2d9ccc9c6e7a86aedf4a8c69dad.png)
 
-尽管PixArt-Family的模型参数只有0.6B，但其生成的图像质量却出奇的高。这得益于开发团队在模型设计和训练过程中的精心优化。这样的设计不仅降低了技术门槛，也让更多人有机会参与到图像生成的行列中来。
+尽管`PixArt-Family`的模型参数只有0.6B，但其生成的图像质量却出奇的高。这得益于开发团队在模型设计和训练过程中的精心优化。这样的设计不仅降低了技术门槛，也让更多人有机会参与到图像生成的行列中来。
 
-PixArt-Sigma的发布，它让更多的人能够参与到数字艺术的创作中，享受到创作的乐趣。
+`PixArt-Sigma`的发布，它让更多的人能够参与到数字艺术的创作中，享受到创作的乐趣。
 
 随着技术的不断发展，我们有理由相信，图像生成领域将会迎来更多的惊喜和可能性。
 
-最后再来欣赏几张PixArt-Sigma直出的创意美图：
+最后再来欣赏几张`PixArt-Sigma`直出的创意美图：
 
 ![](img/685af6e28a444ad63033603e56ff7e0c.png)
 
 ![](img/95670a2cd4a3cb8c9e515e3f8b5db4d0.png)
 
-
-
 ![](img/767d4c6185bbd0b862c23d0ba9ed2294.png)
 
 ![](img/7e2dcf51d9e421af2f07acee96513592.png)
 
-更多AIGC领域精彩内容与进展，欢迎进群交流：
+更多`AIGC`领域精彩内容与进展，欢迎进群交流：
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

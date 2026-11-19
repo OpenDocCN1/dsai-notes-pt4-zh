@@ -1,3 +1,4 @@
+
 # 【解读Kubernetes架构】全面指南，带你掌握Kubernetes的设计原理与构成！
 
 > 来源：[https://geekbang.feishu.cn/docx/Im0Jd7OOaoI9C1x0XG9cOU69ndx](https://geekbang.feishu.cn/docx/Im0Jd7OOaoI9C1x0XG9cOU69ndx)
@@ -10,7 +11,7 @@
 
 > ⏰ 收录时间：2024-05-27 11:15:56 (UTC+8)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=Mzk0ODUzNDc2Mw==&mid=2247486034&idx=1&sn=68466355a1e2753e4677135aa24342fc&scene=19#wechat_redirect)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=Mzk0ODUzNDc2Mw==&mid=2247486034&idx=1&sn=68466355a1e2753e4677135aa24342fc&scene=19#wechat_redirect
 
 ![](img/f48f82bf26dd8477aab517aae7e73475.png)
 
@@ -20,13 +21,10 @@
 
 本文关于 Kubernetes 架构的综合指南旨在通过插图详细解释每个 Kubernetes 组件。
 
-+   了解 Kubernetes 的架构。
-
-+   掌握 Kubernetes 的基本概念。
-
-+   了解 Kubernetes 架构组件。
-
-+   探索连接这些组件的工作流。
++ 了解 Kubernetes 的架构。
++ 掌握 Kubernetes 的基本概念。
++ 了解 Kubernetes 架构组件。
++ 探索连接这些组件的工作流。
 
 # 一、什么是Kubernetes架构
 
@@ -42,93 +40,77 @@ Kubernetes 集群由控制平面节点和工作节点组成。
 
 控制平面负责容器编排和维护集群的所需状态。它具有以下组件。
 
-1.  kube-api服务器。
-
-1.  etcd。
-
-1.  kube-调度程序。
-
-1.  kube-控制器管理器。
-
-1.  云控制器管理器。
+1. `kube-api` 服务器。
+1. `etcd`。
+1. `kube-scheduler`。
+1. `kube-控制器管理器`。
+1. 云控制器管理器。
 
 ## 1.2、工作节点
 
 Worker 节点负责运行容器化应用程序。worker 节点具有以下组件。
 
-+   kubelet。
-
-+   kube-代理。
-
-+   容器运行时。
++ `kubelet`。
++ `kube-proxy`。
++ 容器运行时。
 
 # 二、Kubernetes控制平面组件
 
 首先看一下每个控制平面组件以及每个组件背后的重要概念。
 
-## 2.1、kube-api服务器
+## 2.1、`kube-api`服务器
 
-kube-api 服务器是公开 Kubernetes API 的 Kubernetes 集群的中心枢纽。
+`kube-api` 服务器是公开 Kubernetes API 的 Kubernetes 集群的中心枢纽。
 
 最终用户和其他集群组件通过 API 服务器与集群通信。在极少数情况下，监控系统和第三方服务可能会与 API 服务器通信以与集群进行交互。
 
-因此，当使用 kubectl 管理集群时，在后端实际上是通过 HTTP REST API 与 API 服务器进行通信。但是，内部集群组件（如调度程序、控制器等）使用 gRPC 与 API 服务器通信。
+因此，当使用 `kubectl` 管理集群时，在后端实际上是通过 HTTP REST API 与 API 服务器进行通信。但是，内部集群组件（如调度程序、控制器等）使用 gRPC 与 API 服务器通信。
 
 API 服务器与集群中的其他组件之间的通信通过 TLS 进行，以防止对集群进行未经授权的访问。
 
 ![](img/98e1576a0bde3b1fc5abb0b4440b5295.png)
 
-Kubernetes api-server 负责以下工作：
+Kubernetes `api-server` 负责以下工作：
 
-1.  API 管理：公开集群 API 终端节点并处理所有 API 请求。
-
-1.  身份验证（使用客户端证书、持有者令牌和 HTTP 基本身份验证）和授权（ABAC 和 RBAC 评估）。
-
-1.  处理 API 请求并验证 API 对象（如 Pod、服务等）的数据（验证和变更准入控制器）
-
-1.  它是唯一与etcd通信的组件。
-
-1.  api-server 协调控制平面和工作节点组件之间的所有进程。
-
-1.  api-server 有一个内置的堡垒 apiserver 代理。它是 API 服务器进程的一部分。它主要用于启用从群集外部访问 ClusterIP 服务，即使这些服务通常只能在群集本身内访问。
+1. API 管理：公开集群 API 终端节点并处理所有 API 请求。
+1. 身份验证（使用客户端证书、持有者令牌和 HTTP 基本身份验证）和授权（ABAC 和 RBAC 评估）。
+1. 处理 API 请求并验证 API 对象（如 `Pod`、`Service` 等）的数据（验证和变更准入控制器）
+1. 它是唯一与 `etcd` 通信的组件。
+1. `api-server` 协调控制平面和工作节点组件之间的所有进程。
+1. `api-server` 有一个内置的堡垒 `apiserver` 代理。它是 API 服务器进程的一部分。它主要用于启用从群集外部访问 `ClusterIP` 服务，即使这些服务通常只能在群集本身内访问。
 
 注意：为了减少群集攻击面，保护 API 服务器至关重要。Shadowserver 基金会进行了一项实验，发现了 380,000 个可公开访问的 Kubernetes API 服务器。
 
-## 2.2、etcd
+## 2.2、`etcd`
 
-Kubernetes 是一个分布式系统，它需要一个高效的分布式数据库，如 etcd 来支持其分布式性质。它既充当后端服务发现，又充当数据库。可以称它为 Kubernetes 集群的大脑。
+Kubernetes 是一个分布式系统，它需要一个高效的分布式数据库，如 `etcd` 来支持其分布式性质。它既充当后端服务发现，又充当数据库。可以称它为 Kubernetes 集群的大脑。
 
-etcd 是一个开源的强一致性分布式键值存储。那么这意味着什么呢？
+`etcd` 是一个开源的强一致性分布式键值存储。那么这意味着什么呢？
 
-1.  强一致性：如果对某个节点进行了更新，则强一致性将确保它立即更新到集群中的所有其他节点。此外，如果看过CAP定理，就不可能实现100%的可用性，并具有很强的一致性和&分区容差。
+1. 强一致性：如果对某个节点进行了更新，则强一致性将确保它立即更新到集群中的所有其他节点。此外，如果看过 CAP 定理，就不可能实现 100% 的可用性，并具有很强的一致性和分区容差。
+1. 分布式：`etcd` 被设计为在不牺牲一致性的情况下作为集群在多个节点上运行。
+1. 键值存储：将数据存储为键和值的非关系数据库。它还公开键值 API。数据存储建立在 `BboltDB` 之上，`BboltDB` 是 `BoltDB` 的一个分支。
 
-1.  分布式：etcd 被设计为在不牺牲一致性的情况下作为集群在多个节点上运行。
+`etcd` 使用 raft 共识算法，具有很强的一致性和可用性。它以 领导者-成员 的方式工作，以实现高可用性并承受节点故障。
 
-1.  键值存储：将数据存储为键和值的非关系数据库。它还公开键值 API。数据存储建立在 BboltDB 之上，BboltDB 是 BoltDB 的一个分支。
+那么 `etcd` 是如何与 Kubernetes 一起工作的呢？简单地说，当使用 `kubectl` 获取 Kubernetes 对象详细信息时，是从 `etcd` 获取的。此外，当部署像 `Pod` 这样的对象时，会在 `etcd` 中创建一个条目。
 
-etcd 使用 raft 共识算法，具有很强的一致性和可用性。它以 领导者-成员 的方式工作，以实现高可用性并承受节点故障。
+需要了解的有关 `etcd` 的信息：
 
-那么 etcd 是如何与 Kubernetes 一起工作的呢？简单地说，当使用 kubectl 获取 kubernetes 对象详细信息时，是从 etcd 获取的。此外，当部署像 pod 这样的对象时，会在 etcd 中创建一个条目。
-
-需要了解的有关 etcd 的信息：
-
-1.  etcd 存储 Kubernetes 对象的所有配置、状态和元数据（pod、secret、daemonsets、deployments、configmaps、statefulsets 等）。
-
-1.  etcd允许客户端使用 API 订阅事件。Kubernetes api-server 使用 etcd 的监视功能来跟踪对象状态的变化。Watch()
-
-1.  etcd 使用 gRPC 公开键值 API。此外，gRPC 网关是一个 RESTful 代理，可将所有 HTTP API 调用转换为 gRPC 消息。这使它成为 Kubernetes 的理想数据库。
-
-1.  etcd 以键值格式存储 /registry 目录项下的所有对象。例如，可以在 /registry/pods/default/nginx 下找到默认命名空间中名为 Nginx 的 Pod 的信息。
+1. `etcd` 存储 Kubernetes 对象的所有配置、状态和元数据（`Pod`、`Secret`、`DaemonSet`、`Deployment`、`ConfigMap`、`StatefulSet` 等）。
+1. `etcd` 允许客户端使用 API 订阅事件。`Kubernetes api-server` 使用 `etcd` 的监视功能来跟踪对象状态的变化。`Watch()`
+1. `etcd` 使用 gRPC 公开键值 API。此外，gRPC 网关是一个 RESTful 代理，可将所有 HTTP API 调用转换为 gRPC 消息。这使它成为 Kubernetes 的理想数据库。
+1. `etcd` 以键值格式存储 `/registry` 目录项下的所有对象。例如，可以在 `/registry/pods/default/nginx` 下找到默认命名空间中名为 `Nginx` 的 `Pod` 的信息。
 
 ![](img/73f375ebc339721b71f92bb84de85515.png)
 
-此外，etcd 它是控制平面中唯一的 Statefulset 组件。
+此外，`etcd` 它是控制平面中唯一的 `StatefulSet` 组件。
 
-## 2.3、kube-scheduler
+## 2.3、`kube-scheduler`
 
-kube-scheduler 负责在工作节点上调度 Kubernetes Pod。
+`kube-scheduler` 负责在工作节点上调度 Kubernetes `Pod`。
 
-部署容器时，可以指定容器要求，例如 CPU、内存、关联性、污点或容错、优先级、持久卷 （PV） 等。调度程序的主要任务是识别创建请求，并为满足要求的 Pod 选择最佳节点。
+部署容器时，可以指定容器要求，例如 `CPU`、内存、关联性、污点或容错、优先级、持久卷 （`PV`） 等。调度程序的主要任务是识别创建请求，并为满足要求的 `Pod` 选择最佳节点。
 
 下图显示了调度程序工作原理的高级概述。
 
@@ -138,175 +120,147 @@ kube-scheduler 负责在工作节点上调度 Kubernetes Pod。
 
 下面是调度程序的工作原理：
 
-1.  为了选择最佳节点，Kube-scheduler 使用过滤和评分操作。
-
-1.  在筛选中，调度程序会找到最适合调度 Pod 的节点。例如，如果有 5 个具有资源可用性的工作器节点来运行 Pod，则它会选择所有 5 个节点。如果没有节点，则 Pod 不可调度并移动到调度队列。如果它是一个大型集群，假设有 100 个工作节点，并且调度程序不会遍历所有节点。有一个名为 的调度器配置参数。默认值通常为 50%。因此，它试图以循环方式迭代超过 50% 的节点。如果工作器节点分布在多个区域中，则调度程序将遍历不同区域中的节点。对于非常大的集群，默认值为 5%。
-
-1.  在评分阶段，调度程序通过向筛选的工作器节点分配分数来对节点进行排名。调度程序通过调用多个调度插件进行评分。最后，将选择排名最高的 worker 节点来调度 pod。如果所有节点的排名相同，则将随机选择一个节点。
-
-1.  选择节点后，调度程序将在 API 服务器中创建绑定事件。表示绑定 Pod 和节点的事件。
+1. 为了选择最佳节点，`Kube-scheduler` 使用过滤和评分操作。
+1. 在筛选中，调度程序会找到最适合调度 `Pod` 的节点。例如，如果有 5 个具有资源可用性的工作器节点来运行 `Pod`，则它会选择所有 5 个节点。如果没有节点，则 `Pod` 不可调度并移动到调度队列。如果它是一个大型集群，假设有 100 个工作节点，并且调度程序不会遍历所有节点。有一个名为 的调度器配置参数。默认值通常为 50%。因此，它试图以循环方式迭代超过 50% 的节点。如果工作器节点分布在多个区域中，则调度程序将遍历不同区域中的节点。对于非常大的集群，默认值为 5%。
+1. 在评分阶段，调度程序通过向筛选的工作器节点分配分数来对节点进行排名。调度程序通过调用多个调度插件进行评分。最后，将选择排名最高的 `worker` 节点来调度 `pod`。如果所有节点的排名相同，则将随机选择一个节点。
+1. 选择节点后，调度程序将在 API 服务器中创建绑定事件。表示绑定 `Pod` 和节点的事件。
 
 相关调度程序的说明：
 
-1.  它是一个控制器，用于侦听 API 服务器中的 Pod 创建事件。
+1. 它是一个控制器，用于侦听 API 服务器中的 `Pod` 创建事件。
+1. 调度程序有两个阶段。调度周期和绑定周期。统称为调度上下文。调度周期选择工作器节点，绑定周期将该更改应用于集群。
+1. 调度程序始终将高优先级的 `Pod` 放在低优先级的 `Pod` 之前进行调度。此外，在某些情况下，在 `Pod` 开始在所选节点中运行后，`Pod` 可能会被逐出或移动到其他节点。
+1. 可以创建自定义调度程序，并在集群中运行多个调度程序以及本机调度程序。部署 `Pod` 时可以在 `Pod` 清单中指定自定义调度程序。因此，调度决策将基于自定义调度程序逻辑进行。
+1. 调度程序具有可插拔的调度框架。即可以将自定义插件添加到调度工作流程中。
 
-1.  调度程序有两个阶段。调度周期和绑定周期。统称为调度上下文。调度周期选择工作器节点，绑定周期将该更改应用于集群。
+## 2.4、`Kube` 控制器管理器
 
-1.  调度程序始终将高优先级的 Pod 放在低优先级的 Pod 之前进行调度。此外，在某些情况下，在 Pod 开始在所选节点中运行后，Pod 可能会被逐出或移动到其他节点。
+什么是控制器？控制器是运行无限控制循环的程序，即它连续运行并监视对象的实际和所需状态。如果实际状态和期望状态存在差异，则确保 `Kubernetes` 资源/对象处于期望状态。
 
-1.  可以创建自定义调度程序，并在集群中运行多个调度程序以及本机调度程序。部署 Pod 时可以在 Pod 清单中指定自定义调度程序。因此，调度决策将基于自定义调度程序逻辑进行。
+**官方文件的描述**：在 `Kubernetes` 中，控制器是监视集群状态的控制循环，然后在需要时进行更改或请求更改。每个控制器都尝试将当前集群状态移近所需状态。
 
-1.  调度程序具有可插拔的调度框架。即可以将自定义插件添加到调度工作流程中。
+假设要创建部署，在清单 `YAML` 文件中指定所需的状态（声明性方法）。例如，2 个副本、1 个卷挂载、`ConfigMap` 等。内置的部署控制器可确保部署始终处于所需状态。如果用户使用 5 个副本更新部署，则部署控制器会识别它并确保所需的状态为 5 个副本。
 
-## 2.4、Kube 控制器管理器
-
-什么是控制器？控制器是运行无限控制循环的程序，即它连续运行并监视对象的实际和所需状态。如果实际状态和期望状态存在差异，则确保 kubernetes 资源/对象处于期望状态。
-
-**官方文件的描述 **：在 Kubernetes 中，控制器是监视集群状态的控制循环，然后在需要时进行更改或请求更改。每个控制器都尝试将当前集群状态移近所需状态。
-
-假设要创建部署，在清单 YAML 文件中指定所需的状态（声明性方法）。例如，2 个副本、1 个卷挂载、configmap 等。内置的部署控制器可确保部署始终处于所需状态。如果用户使用 5 个副本更新部署，则部署控制器会识别它并确保所需的状态为 5 个副本。
-
-Kube 控制器管理器是管理所有 Kubernetes 控制器的组件。Kubernetes 资源/对象（如 Pod、命名空间、作业、副本集）由各自的控制器管理。此外，Kube 调度器也是由 Kube 控制器管理器管理的控制器。
+`Kube` 控制器管理器是管理所有 `Kubernetes` 控制器的组件。`Kubernetes` 资源/对象（如 `Pod`、`Namespace`、`Job`、`ReplicaSet`）由各自的控制器管理。此外，`Kube` 调度器也是由 `Kube` 控制器管理器管理的控制器。
 
 ![](img/890daf696e35b89a16307aeeb515ca8a.png)
 
-重要的内置 Kubernetes 控制器列表。
+重要的内置 `Kubernetes` 控制器列表。
 
-1.  部署控制器
+1. 部署控制器
+1. `ReplicaSet` 控制器
+1. `DaemonSet` 控制器
+1. 作业控制器（`Kubernetes` 作业）)
+1. `CronJob` 控制器
+1. 端点控制器
+1. `Namespace` 控制器
+1. 服务帐户控制器。
+1. `Node` 控制器
 
-1.  Replicaset 控制器
+`Kube` 控制器管理器：
 
-1.  DaemonSet 控制器
++ 它管理所有控制器，控制器尝试将集群保持在所需状态。
++ 可以使用与自定义资源定义关联的自定义控制器来扩展 `Kubernetes`。
 
-1.  作业控制器（Kubernetes 作业）)
+## 2.5、云控制器管理器 （`CCM`）
 
-1.  CronJob 控制器
+在云环境中部署 `Kubernetes` 时，云控制器管理器充当云平台 API 和 `Kubernetes` 集群之间的桥梁。
 
-1.  端点控制器
+这样，核心 `Kubernetes` 核心组件可以独立工作，并允许云提供商使用插件与 `Kubernetes` 集成。（例如，`Kubernetes` 集群和 `AWS` 云 API 之间的接口）
 
-1.  命名空间控制器
-
-1.  服务帐户控制器。
-
-1.  节点控制器
-
-Kube 控制器管理器：
-
-+   它管理所有控制器，控制器尝试将集群保持在所需状态。
-
-+   可以使用与自定义资源定义关联的自定义控制器来扩展 kubernetes。
-
-## 2.5、云控制器管理器 （CCM）
-
-在云环境中部署 kubernetes 时，云控制器管理器充当云平台 API 和 Kubernetes 集群之间的桥梁。
-
-这样，核心 kubernetes 核心组件可以独立工作，并允许云提供商使用插件与 kubernetes 集成。（例如，kubernetes 集群和 AWS 云 API 之间的接口）
-
-云控制器集成允许 Kubernetes 集群预置云资源，例如实例（用于节点）、负载均衡器（用于服务）和存储卷（用于持久卷）。
+云控制器集成允许 `Kubernetes` 集群预置云资源，例如实例（用于节点）、负载均衡器（用于服务）和存储卷（用于持久卷）。
 
 ![](img/2ab2ff6b0901d27cda748ed377b71005.png)
 
 云控制器管理器包含一组特定于云平台的控制器，可确保特定于云的组件（节点、负载均衡器、存储等）处于所需状态。以下是云控制器管理器中的三个主要控制器：
 
-1.  节点控制器：此控制器通过与云提供商 API 通信来更新与节点相关的信息。例如，节点标记和注释，获取主机名，CPU和内存可用性，节点运行状况等。
-
-1.  路由控制器：它负责在云平台上配置网络路由。这样不同节点的 Pod 就可以相互通信。
-
-1.  服务控制器：它负责为 kubernetes 服务部署负载均衡器、分配 IP 地址等。
+1. 节点控制器：此控制器通过与云提供商 API 通信来更新与节点相关的信息。例如，节点标记和注释，获取主机名，`CPU` 和内存可用性，节点运行状况等。
+1. 路由控制器：它负责在云平台上配置网络路由。这样不同节点的 `Pod` 就可以相互通信。
+1. 服务控制器：它负责为 `Kubernetes` 服务部署负载均衡器、分配 IP 地址等。
 
 云控制器管理器的经典示例：
 
-+   部署负载均衡器类型的 Kubernetes 服务。在这里，Kubernetes 预置了特定于云的负载均衡器，并与 Kubernetes 服务集成。
++ 部署负载均衡器类型的 `Kubernetes` 服务。在这里，`Kubernetes` 预置了特定于云的负载均衡器，并与 `Kubernetes` 服务集成。
++ 为云存储解决方案支持的 `Pod` 配置存储卷 （`PV`）。
 
-+   为云存储解决方案支持的 Pod 配置存储卷 （PV）。
+一句话：`Cloud Controller Manager` 管理 `Kubernetes` 使用的云特定资源的生命周期。
 
-一句话：Cloud Controller Manager 管理 Kubernetes 使用的云特定资源的生命周期。
-
-# 三、Kubernetes工作节点组件
+# 三、`Kubernetes`工作节点组件
 
 现在看一下每个工作节点组件。
 
-## 3.1、Kubelet
+## 3.1、`Kubelet`
 
-Kubelet 是一个 Agent 组件，运行在集群中的每个节点上。t 不作为容器运行，而是作为守护程序运行，由 systemd 管理。
+`Kubelet` 是一个 `Agent` 组件，运行在集群中的每个节点上。`t` 不作为容器运行，而是作为守护程序运行，由 `systemd` 管理。
 
-它负责向 API 服务器注册工作节点，并主要从 API 服务器使用 podSpec（Pod 规范 – YAML 或 JSON）。podSpec 定义了应在 Pod 内运行的容器、它们的资源（例如 CPU 和内存限制）以及其他设置，例如环境变量、卷和标签。然后，它通过创建容器将 podSpec 带到所需状态。
+它负责向 API 服务器注册工作节点，并主要从 API 服务器使用 `podSpec`（`Pod` 规范 – `YAML` 或 `JSON`）。`podSpec` 定义了应在 `Pod` 内运行的容器、它们的资源（例如 `CPU` 和内存限制）以及其他设置，例如环境变量、卷和标签。然后，它通过创建容器将 `podSpec` 带到所需状态。
 
-简单地说，kubelet 负责以下工作：
+简单地说，`kubelet` 负责以下工作：
 
-1.  创建、修改和删除容器。
+1. 创建、修改和删除容器。
+1. 负责处理活跃度、准备情况和启动探测。
+1. 负责通过读取 `Pod` 配置并在主机上为卷挂载创建相应的目录来挂载卷。
+1. 通过调用 API 服务器来收集和报告节点和 `Pod` 状态，实现方式为 `cAdvisor` 和 `CRI`。
 
-1.  负责处理活跃度、准备情况和启动探测。
+`Kubelet` 也是一个控制器，它监视 `Pod` 的变化，并利用节点的容器运行时来拉取镜像、运行容器等。
 
-1.  负责通过读取 Pod 配置并在主机上为卷挂载创建相应的目录来挂载卷。
+除了来自 API 服务器的 `PodSpec` 之外，`kubelet` 还可以接受来自文件、`HTTP` 端点和 `HTTP` 服务器的 `podSpec`。“来自文件的 `podSpec`”的一个很好的例子是 `Kubernetes` 静态 `Pod`。
 
-1.  通过调用 API 服务器来收集和报告节点和 Pod 状态，实现方式为 cAdvisor 和CRI。
+静态 `Pod` 由 `kubelet` 控制，而不是由 API 服务器控制。即可以通过向 `Kubelet` 组件提供 `Pod YAML` 位置来创建 `Pod`。但是，`Kubelet` 创建的静态 `Pod` 不受 API 服务器的管理。
 
-Kubelet 也是一个控制器，它监视 Pod 的变化，并利用节点的容器运行时来拉取镜像、运行容器等。
+静态 `Pod` 的真实示例用例：在引导控制平面时，`kubelet` 从位于 `pod/etc/kubernetes/manifests` 的 `podSpecs` 的静态 `Pod` 启动 `api-server`、`scheduler` 和控制器管理器。
 
-除了来自 API 服务器的 PodSpec 之外，kubelet 还可以接受来自文件、HTTP 端点和 HTTP 服务器的 podSpec。“来自文件的 podSpec”的一个很好的例子是 Kubernetes 静态 pod。
+`kubelet` 的一些关键内容：
 
-静态 Pod 由 kubelet 控制，而不是由 API 服务器控制。即可以通过向 Kubelet 组件提供 Pod YAML 位置来创建 Pod。但是，Kubelet 创建的静态 Pod 不受 API 服务器的管理。
-
-静态 Pod 的真实示例用例：在引导控制平面时，kubelet 从位于 pod/etc/kubernetes/manifests 的 podSpecs 的静态 pod 启动 api-server、scheduler 和控制器管理器。
-
-kubelet 的一些关键内容：
-
-1.  Kubelet 使用 CRI（容器运行时接口）gRPC 接口与容器运行时通信。
-
-1.  它还公开 HTTP 终结点以流式传输日志，并为客户端提供 exec 会话。
-
-1.  使用 CSI（容器存储接口）gRPC 配置块存储卷。
-
-1.  它使用集群中配置的 CNI 插件来分配 Pod IP 地址，并为 Pod 设置任何必要的网络路由和防火墙规则。
+1. `Kubelet` 使用 `CRI`（容器运行时接口）`gRPC` 接口与容器运行时通信。
+1. 它还公开 `HTTP` 终结点以流式传输日志，并为客户端提供 `exec` 会话。
+1. 使用 `CSI`（容器存储接口）`gRPC` 配置块存储卷。
+1. 它使用集群中配置的 `CNI` 插件来分配 `Pod IP` 地址，并为 `Pod` 设置任何必要的网络路由和防火墙规则。
 
 ![](img/9569d424561da6cbbdaa1c2942c81ed9.png)
 
-## 3.2、Kube 代理
+## 3.2、`Kube` 代理
 
-要了解 Kube 代理需要对 Kubernetes 服务和端点对象有基本的了解。
+要了解 `Kube` 代理需要对 `Kubernetes` 服务和端点对象有基本的了解。
 
-Kubernetes 中的服务是一种在内部或向外部流量公开一组 Pod 的方法。创建服务对象时，它会为其分配一个虚拟 IP。它被称为 clusterIP。它只能在 Kubernetes 集群中访问。
+`Kubernetes` 中的服务是一种在内部或向外部流量公开一组 `Pod` 的方法。创建服务对象时，它会为其分配一个虚拟 `IP`。它被称为 `ClusterIP`。它只能在 `Kubernetes` 集群中访问。
 
-Endpoint 对象包含 Service 对象下 Pod 组的所有 IP 地址和端口。端点控制器负责维护容器 IP 地址（端点）列表。服务控制器负责为服务配置终结点。
+`Endpoint` 对象包含 `Service` 对象下 `Pod` 组的所有 `IP` 地址和端口。端点控制器负责维护容器 `IP` 地址（端点）列表。服务控制器负责为服务配置终结点。
 
-无法 ping ClusterIP，因为它仅用于服务发现，这与可 ping 的 Pod IP 不同。
+无法 `ping` `ClusterIP`，因为它仅用于服务发现，这与可 `ping` 的 `Pod IP` 不同。
 
-现在让我们了解一下 Kube Proxy 。Kube-proxy 是一个守护进程，它作为守护进程集在每个节点上运行。它是一个代理组件，用于实现 Pod 的 Kubernetes 服务概念。（具有负载均衡功能的一组 Pod 的单个 DNS）。它主要代理 UDP、TCP 和 SCTP，不理解 HTTP。
+现在让我们了解一下 `Kube Proxy` 。`Kube-proxy` 是一个守护进程，它作为守护进程集在每个节点上运行。它是一个代理组件，用于实现 `Pod` 的 `Kubernetes` 服务概念。（具有负载均衡功能的一组 `Pod` 的单个 `DNS`）。它主要代理 `UDP`、`TCP` 和 `SCTP`，不理解 `HTTP`。
 
-当使用 Service （ClusterIP） 公开 Pod 时，Kube-proxy 会创建网络规则，将流量发送到 Service 对象下分组的后端 Pod（端点）。即所有负载均衡和服务发现都由 Kube 代理处理。
+当使用 `Service` （`ClusterIP`） 公开 `Pod` 时，`Kube-proxy` 会创建网络规则，将流量发送到 `Service` 对象下分组的后端 `Pod`（端点）。即所有负载均衡和服务发现都由 `Kube` 代理处理。
 
-那么 Kube-proxy 是如何工作的呢？
+那么 `Kube-proxy` 是如何工作的呢？
 
-Kube 代理与 API 服务器通信，以获取有关服务 （ClusterIP） 和相应 Pod IP 和端口（端点）的详细信息。它还监视服务和终结点的更改。然后，kube-proxy 使用以下任一模式创建/更新规则，将流量路由到 Service 后面的 Pod。
+`Kube` 代理与 API 服务器通信，以获取有关服务 （`ClusterIP`） 和相应 `Pod IP` 和端口（端点）的详细信息。它还监视服务和终结点的更改。然后，`kube-proxy` 使用以下任一模式创建/更新规则，将流量路由到 `Service` 后面的 `Pod`。
 
-1.  IPTables：这是默认模式。在 IPTables 模式量由 IPtable 规则处理。这意味着，对于每个服务，都会创建 IPtable 规则。这些规则捕获进入 ClusterIP 的流量，然后将其转发到后端 Pod。此外，在这种模式下，kube-proxy 会随机选择后端 pod 进行负载均衡。建立连接后，请求将转到同一 Pod，直到连接终止。
+1. `IPTables`：这是默认模式。在 `IPTables` 模式量由 `IPtable` 规则处理。这意味着，对于每个服务，都会创建 `IPtable` 规则。这些规则捕获进入 `ClusterIP` 的流量，然后将其转发到后端 `Pod`。此外，在这种模式下，`kube-proxy` 会随机选择后端 `pod` 进行负载均衡。建立连接后，请求将转到同一 `Pod`，直到连接终止。
+1. `IPVS`：对于服务超过 1000 的集群，`IPVS` 提供性能改进。它支持以下后端负载均衡算法。
 
-1.  IPVS：对于服务超过 1000 的集群，IPVS 提供性能改进。它支持以下后端负载均衡算法。
+   + `rr`：`round-robin` ：这是默认模式。
+   + `lc`：最少连接数（最小打开连接数）。
+   + `dh`：目标哈希。
+   + `sh`：源哈希。
+   + `sed`：最短的预期延迟。
+   + `nq`：从不排队。
 
-+   rr：round-robin ：这是默认模式。
-
-+   lc：最少连接数（最小打开连接数）。
-
-+   dh：目标哈希。
-
-+   sh：源哈希。
-
-+   sed：最短的预期延迟。
-
-+   nq：从不排队。
-
-1.  用户空间（旧版&不推荐）
-
-1.  Kernelspace：此模式仅适用于 Windows 系统。
+1. 用户空间（旧版&不推荐）
+1. `Kernelspace`：此模式仅适用于 Windows 系统。
 
 ![](img/948acbb2abb9c4a75d63c82b663254a2.png)
 
-此外，可以通过将 Kubernetes 集群替换为 Cilium 来运行没有 kube-proxy 的 Kubernetes 集群。
+此外，可以通过将 `Kubernetes` 集群替换为 `Cilium` 来运行没有 `kube-proxy` 的 `Kubernetes` 集群。
 
-Kubeproxy 有一个基于 nftables 的新后端。nftables 是 IPtables 的继任者，旨在更简单、更高效。
+`Kubeproxy` 有一个基于 `nftables` 的新后端。`nftables` 是 `IPtables` 的继任者，旨在更简单、更高效。
 
 ## 3.3、容器运行时
+
+
+
+# 一、容器运行时
 
 如果了解 Java 运行时 （JRE）。它是在主机上运行 Java 程序所需的软件。同样，容器运行时是运行容器所需的软件组件。
 
@@ -314,124 +268,124 @@ Kubeproxy 有一个基于 nftables 的新后端。nftables 是 IPtables 的继�
 
 为了更好地理解这一点，让我们看一下两个关键概念：
 
-+   容器运行时接口 （CRI）：它是一组 API，允许 Kubernetes 与不同的容器运行时进行交互。它允许不同的容器运行时与 Kubernetes 互换使用。CRI 定义了用于创建、启动、停止和删除容器以及管理映像和容器网络的 API。
++   容器运行时接口 （`CRI`）：它是一组 `API`，允许 Kubernetes 与不同的容器运行时进行交互。它允许不同的容器运行时与 Kubernetes 互换使用。`CRI` 定义了用于创建、启动、停止和删除容器以及管理映像和容器网络的 `API`。
 
-+   开放容器计划 （OCI）：它是一组容器格式和运行时的标准。
++   开放容器计划 （`OCI`）：它是一组容器格式和运行时的标准。
 
-Kubernetes 支持多个符合容器运行时接口 （CRI） 的容器运行时（CRI-O、Docker 引擎、containerd 等）。即所有这些容器运行时都实现了 CRI 接口，并公开了 gRPC CRI API（运行时和图像服务端点）。
+Kubernetes 支持多个符合容器运行时接口 （`CRI`） 的容器运行时（`CRI-O`、`Docker`、`containerd` 等）。即所有这些容器运行时都实现了 `CRI` 接口，并公开了 `gRPC CRI API`（运行时和图像服务端点）。
 
 那么 Kubernetes 是如何利用容器运行时的呢？
 
-正如在 Kubelet 部分所了解的，kubelet 代理负责使用 CRI API 与容器运行时进行交互，以管理容器的生命周期。它还从容器运行时获取所有容器信息，并将其提供给控制平面。
+正如在 `Kubelet` 部分所了解的，`kubelet` 代理负责使用 `CRI API` 与容器运行时进行交互，以管理容器的生命周期。它还从容器运行时获取所有容器信息，并将其提供给控制平面。
 
-以 CRI-O 容器运行时接口为例。下面是容器运行时如何与 Kubernetes 配合使用的高级概述。
+以 `CRI-O` 容器运行时接口为例。下面是容器运行时如何与 Kubernetes 配合使用的高级概述。
 
 ![](img/1dff336f7a6d35d0c9a42917aa10e59a.png)
 
-1.  当 API 服务器对 Pod 有新的请求时，kubelet 会与 CRI-O 守护进程通信，以通过 Kubernetes 容器运行时接口启动所需的容器。
+1.  当 `API` 服务器对 `Pod` 有新的请求时，`kubelet` 会与 `CRI-O` 守护进程通信，以通过 Kubernetes 容器运行时接口启动所需的容器。
 
-1.  CRI-O 使用 containers/image 库检查并从配置的容器注册表中提取所需的容器映像。
+2.  `CRI-O` 使用 `containers/image` 库检查并从配置的容器注册表中提取所需的容器映像。
 
-1.  然后，CRI-O 为容器生成 OCI 运行时规范 （JSON）。
+3.  然后，`CRI-O` 为容器生成 `OCI` 运行时规范 （`JSON`）。
 
-1.  然后，CRI-O 启动与 OCI 兼容的运行时 （runc） 以根据运行时规范启动容器进程。
+4.  然后，`CRI-O` 启动与 `OCI` 兼容的运行时 （`runc`） 以根据运行时规范启动容器进程。
 
-# 四、Kubernetes集群插件组件
+# 二、Kubernetes集群插件组件
 
-除了核心组件之外，kubernetes 集群还需要附加组件才能完全运行。选择插件取决于项目要求和用例。
+除了核心组件之外，`kubernetes` 集群还需要附加组件才能完全运行。选择插件取决于项目要求和用例。
 
 以下是集群上可能需要的一些常用插件组件：
 
-+   CNI 插件(Container Network Interface)。
++   `CNI` 插件(`Container Network Interface`)。
 
-+   CoreDNS（用于DNS服务器）：CoreDNS 充当 Kubernetes 集群中的 DNS 服务器。通过启用此插件，您可以启用基于 DNS 的服务发现。
++   `CoreDNS`（用于`DNS`服务器）：`CoreDNS` 充当 `Kubernetes` 集群中的 `DNS` 服务器。通过启用此插件，您可以启用基于 `DNS` 的服务发现。
 
-+   Metrics Server （用于资源指标）：该插件可帮助您收集集群中节点和 Pod 的性能数据和资源使用情况。
++   `Metrics Server` （用于资源指标）：该插件可帮助您收集集群中节点和 `Pod` 的性能数据和资源使用情况。
 
-+   Web UI（Kubernetes 仪表板）：此插件使 Kubernetes 仪表板能够通过 Web UI 管理对象。
++   Web UI（`Kubernetes` 仪表板）：此插件使 `Kubernetes` 仪表板能够通过 Web UI 管理对象。
 
-## 4.1、CNI插件
+## 2.1、`CNI`插件
 
-首先需要了解容器网络接口 （CNI）。它是一个基于插件的架构，具有供应商中立的规范和库，用于为容器创建网络接口。
+首先需要了解容器网络接口 （`CNI`）。它是一个基于插件的架构，具有供应商中立的规范和库，用于为容器创建网络接口。
 
-它不是特定于 Kubernetes 的。借助 CNI，容器网络可以在 Kubernetes、Mesos、CloudFoundry、Podman、Docker 等容器编排工具之间实现标准化。
+它不是特定于 Kubernetes 的。借助 `CNI`，容器网络可以在 Kubernetes、`Mesos`、`CloudFoundry`、`Podman`、`Docker` 等容器编排工具之间实现标准化。
 
-在容器网络方面，公司可能有不同的要求，例如网络隔离、安全性、加密等。随着容器技术的进步，许多网络提供商为具有广泛网络功能的容器创建了基于 CNI 的解决方案。可以称它为CNI-Plugins
+在容器网络方面，公司可能有不同的要求，例如网络隔离、安全性、加密等。随着容器技术的进步，许多网络提供商为具有广泛网络功能的容器创建了基于 `CNI` 的解决方案。可以称它为`CNI-Plugins`
 
 这允许用户从不同的提供商处选择最适合其需求的网络解决方案。
 
-CNI 插件如何与 Kubernetes 配合使用？
+`CNI` 插件如何与 Kubernetes 配合使用？
 
-1.  Kube-controller-manager 负责为每个节点分配 Pod 网段。每个 Pod 从 Pod CIDR 获取一个唯一的 IP 地址。
+1.  `Kube-controller-manager` 负责为每个节点分配 `Pod` 网段。每个 `Pod` 从 `Pod CIDR` 获取一个唯一的 `IP` 地址。
 
-1.  Kubelet 与容器运行时交互以启动定时 Pod。作为容器运行时一部分的 CRI 插件与 CNI 插件交互以配置 Pod 网络。
+2.  `Kubelet` 与容器运行时交互以启动定时 `Pod`。作为容器运行时一部分的 `CRI` 插件与 `CNI` 插件交互以配置 `Pod` 网络。
 
-1.  CNI 插件支持使用叠加网络在分布在相同或不同节点上的 Pod 之间联网。
+3.  `CNI` 插件支持使用叠加网络在分布在相同或不同节点上的 `Pod` 之间联网。
 
 ![](img/e8fa673780d963c5887e023e5a58970f.png)
 
-CNI 插件提供的高级功能：
+`CNI` 插件提供的高级功能：
 
-+   Pod 网络
++   `Pod` 网络
 
-+   Pod 网络安全和隔离，使用网络策略来控制 Pod 之间和命名空间之间的流量。
++   `Pod` 网络安全和隔离，使用网络策略来控制 `Pod` 之间和命名空间之间的流量。
 
-流行的 CNI 插件包括：
+流行的 `CNI` 插件包括：
 
-+   Calico
++   `Calico`
 
-+   Flannel
++   `Flannel`
 
-+   Weave Net
++   `Weave Net`
 
-+   Cilium（使用 eBPF）
++   `Cilium`（使用 `eBPF`）
 
-+   Amazon VPC CNI（适用于 AWS VPC）。
++   `Amazon VPC CNI`（适用于 `AWS VPC`）。
 
-+   Azure CNI（适用于 Azure 虚拟网络）Kubernetes 网络是一个大主题，它因托管平台而异。
++   `Azure CNI`（适用于 `Azure` 虚拟网络）。`Kubernetes` 网络是一个大主题，它因托管平台而异。
 
-# 五、Kubernetes原生对象
+# 三、Kubernetes原生对象
 
-到目前为止，已经了解了核心 kubernetes 组件以及每个组件的工作原理。所有这些组件都致力于管理以下关键 Kubernetes 对象。
+到目前为止，已经了解了核心 `kubernetes` 组件以及每个组件的工作原理。所有这些组件都致力于管理以下关键 `Kubernetes` 对象。
 
-+   Pod
++   `Pod`
 
-+   Namespaces
++   `Namespaces`
 
-+   Replicaset
++   `Replicaset`
 
-+   Deployment
++   `Deployment`
 
-+   Daemonset
++   `Daemonset`
 
-+   Statefulset
++   `Statefulset`
 
-+   Jobs & Cronjobs
++   `Jobs` & `Cronjobs`
 
-此外，Kubernetes 可以使用 CRD 和自定义控制器进行扩展。因此，群集组件还管理使用自定义控制器和自定义资源定义创建的对象。
+此外，`Kubernetes` 可以使用 `CRD` 和自定义控制器进行扩展。因此，群集组件还管理使用自定义控制器和自定义资源定义创建的对象。
 
-# 六、Kubernetes架构常见问题
+# 四、Kubernetes架构常见问题
 
-（1） Kubernetes 控制平面的主要用途是什么？
+（1）`Kubernetes` 控制平面的主要用途是什么？
 
-控制平面负责维护集群及其上运行的应用程序的所需状态。它由 API 服务器、etcd、调度程序和控制器管理器等组件组成。
+控制平面负责维护集群及其上运行的应用程序的所需状态。它由 `API` 服务器、`etcd`、调度程序和控制器管理器等组件组成。
 
-（2） Kubernetes 集群中工作节点的用途是什么？
+（2）`Kubernetes` 集群中工作节点的用途是什么？
 
-工作器节点是在群集中运行容器的服务器（裸机或虚拟）。它们由控制平面管理，并从控制平面接收有关如何运行属于 Pod 的容器的指令。
+工作器节点是在群集中运行容器的服务器（裸机或虚拟）。它们由控制平面管理，并从控制平面接收有关如何运行属于 `Pod` 的容器的指令。
 
-（3） 如何在 Kubernetes 中保护控制平面和工作节点之间的通信？
+（3）如何在 `Kubernetes` 中保护控制平面和工作节点之间的通信？
 
-控制平面和工作节点之间的通信使用 PKI 证书进行保护，不同组件之间的通信通过 TLS 进行。这样，只有受信任的组件才能相互通信。
+控制平面和工作节点之间的通信使用 `PKI` 证书进行保护，不同组件之间的通信通过 `TLS` 进行。这样，只有受信任的组件才能相互通信。
 
-（4） Kubernetes 中 etcd 键值存储的目的是什么？
+（4）`Kubernetes` 中 `etcd` 键值存储的目的是什么？
 
-Etcd 主要存储集群的 kubernetes 对象、集群信息、节点信息以及集群的配置数据，例如集群上运行的应用程序的期望状态。
+`Etcd` 主要存储集群的 `kubernetes` 对象、集群信息、节点信息以及集群的配置数据，例如集群上运行的应用程序的期望状态。
 
-（5） 如果 etcd 宕机，Kubernetes 应用程序会发生什么？
+（5）如果 `etcd` 宕机，`Kubernetes` 应用程序会发生什么？
 
-虽然如果 etcd 遇到中断，正在运行的应用程序不会受到影响，但如果没有正常运行的 etcd，将无法创建或更新任何对象。
+虽然如果 `etcd` 遇到中断，正在运行的应用程序不会受到影响，但如果没有正常运行的 `etcd`，将无法创建或更新任何对象。
 
-# 七、总结
+# 五、总结
 
-了解 Kubernetes 架构有助于进行日常 Kubernetes 实施和操作。在实施生产级群集设置时，对 Kubernetes 组件有正确的了解将有助于运行应用程序并对其进行故障排除。
+了解 `Kubernetes` 架构有助于进行日常 `Kubernetes` 实施和操作。在实施生产级群集设置时，对 `Kubernetes` 组件有正确的了解将有助于运行应用程序并对其进行故障排除。

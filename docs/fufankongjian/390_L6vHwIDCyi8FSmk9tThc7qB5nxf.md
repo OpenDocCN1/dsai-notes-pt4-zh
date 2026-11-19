@@ -1,3 +1,4 @@
+
 # 流式HTTP MCP服务器开发指南
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/XdGidyv1IorjcsxXYqFcJOfgnnh](https://kq4b3vgg5b.feishu.cn/docx/XdGidyv1IorjcsxXYqFcJOfgnnh)
@@ -10,13 +11,13 @@
 
 ![](img/6a7e167e23eeb253004f479deae830af.png)
 
-> https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-03-26/basic/transports.mdx#streamable-http
+> `https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-03-26/basic/transports.mdx#streamable-http`
 
 然后在5月9号的1.8.0版本更新中，正式在SDK中加入了HTTP流式MCP服务器的相关功能支持。自此开发者就可以通过MCP SDK，高效快速开发流式HTTP MCP服务器，并顺利进行多通道并发的企业级MCP工具部署。毫无疑问，这将是MCP技术迈向企业级应用的至关重要的一步。
 
 ![](img/643f26c88246b2b35d878945c86797ad.png)
 
-> https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.8.0
+> `https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.8.0`
 
 本期公开课，就为大家从零介绍流式HTTP MCP服务器开发、测试、部署上线的全流程，并提供完整MCP服务器功能测试客户端脚本。公开课完Inspector整课件扫码即可领取。
 
@@ -42,24 +43,24 @@ uv add mcp httpx
 
 ![](img/6835ca17c2d176bdce5ad212f8d1882d.png)
 
-这里我们采用src_layer的风格进行项目文件编排，因此需要删除main.py，并创建mcp_weather_http目录。
+这里我们采用`src_layer`的风格进行项目文件编排，因此需要删除`main.py`，并创建`mcp_weather_http`目录。
 
 ```
 mkdir -p ./src/mcp_weather_http
 cd ./src/mcp_weather_http
 ```
 
-然后创建在src/mcp_weather_http中创建三个代码文件：
+然后创建在`src/mcp_weather_http`中创建三个代码文件：
 
 ![](img/0960bf1c069691ef73d6328eb4fcdccd.png)
 
-并在__init__.py中写入
+并在`__init__.py`中写入
 
 ```
 from .server import main
 ```
 
-而在__main__.py中写入：
+而在`__main__.py`中写入：
 
 ```
 from mcp_weather_http import main
@@ -67,9 +68,15 @@ from mcp_weather_http import main
 main()
 ```
 
-然后在server.py中写入如下代码：
+然后在`server.py`中写入如下代码：
 
-```
+
+
+# MCP 天气服务器（Streamable HTTP）代码说明
+
+## 完整代码实现
+
+```python
 import contextlib
 import logging
 import os
@@ -264,11 +271,11 @@ if __name__ == &quot;__main__&quot;:
     main()
 ```
 
-代码解释如下：
+## 代码解释
 
-1.  **引入各种功能模块**
+### 1. 引入各种功能模块
 
-```
+```python
 import contextlib
 import logging
 import os
@@ -285,42 +292,44 @@ from starlette.routing import Mount
 from starlette.types import Receive, Scope, Send
 ```
 
-💡解**释：**
+💡 说明：
 
-+   这些都是“工具箱”，你可以理解为在写一个天气小程序之前，先导入一些现成的功能组件：
+这些都是“工具箱”，你可以理解为在写一个天气小程序之前，先导入一些现成的功能组件：
 
-+   httpx: 用来联网查天气。
+- `httpx`: 用来联网查天气。
+- `mcp`: 提供了让大模型调用工具的能力。
+- `starlette`: 帮你搭建 HTTP 网络服务。
+- `click`: 帮你写命令行参数，比如 `--api-key=xxx`。
+- 其它模块则帮助你处理异步任务、打印日志、读取环境变量等。
 
-+   mcp: 提供了让大模型调用工具的能力。
+### 1. 查询天气的函数
 
-+   starlette: 帮你搭建 HTTP 网络服务。
-
-+   click: 帮你写命令行参数，比如 --api-key=xxx。
-
-+   其它模块则帮助你处理异步任务、打印日志、读取环境变量等。
-
-1.  **查询天气的函数**
-
-```
+```python
 async def fetch_weather(city: str, api_key: str) -&gt; dict[str, str]:
 ```
 
-💡解**释：**
+💡 说明：
 
-+   这个函数是你天气服务器的**核心功能**——根据城市名去 [OpenWeather](https://openweathermap.org/) 网站查询天气。
 
-+   它用 httpx.AsyncClient 这个工具联网发请求，返回的结果包括：天气情况、气温、湿度等等。
 
-1.  **启动服务器的主函数 ****main()**
+## 一、MCP天气服务器核心功能与代码结构
+
+### 核心功能概述
+
++   这个函数是你天气服务器的核心功能——根据城市名去 [OpenWeather](https://openweathermap.org/) 网站查询天气。
+
++   它用 `httpx.AsyncClient` 这个工具联网发请求，返回的结果包括：天气情况、气温、湿度等等。
+
+### 启动服务器的主函数 `main()`
 
 ```
 @click.command()
-@click.option(&quot;--port&quot;, default=3000, ...)
-@click.option(&quot;--api-key&quot;, envvar=&quot;OPENWEATHER_API_KEY&quot;, ...)
+@click.option("--port", default=3000, ...)
+@click.option("--api-key", envvar="OPENWEATHER_API_KEY", ...)
 def main(port, api_key, ...):
 ```
 
-💡解**释：**
+💡 解析：
 
 +   这是你运行服务器的“入口”，你以后运行时只需要：
 
@@ -328,49 +337,49 @@ def main(port, api_key, ...):
 python weather_mcp_streamable_http_server.py --port 3000 --api-key xxxx
 ```
 
-+   click 是个很好用的命令行工具，帮你接收参数；
++   `click` 是个很好用的命令行工具，帮你接收参数；
 
-+   api_key 可以通过环境变量设置，方便又安全。
++   `api_key` 可以通过环境变量设置，方便又安全。
 
-1.  MCP工具注册：让大模型能调用 get-weather
+### MCP工具注册：让大模型能调用 `get-weather`
 
 ```
 @app.call_tool()
 async def call_tool(name: str, arguments: dict):
 ```
 
-💡解**释：**
+💡 解析：
 
-+   这就是你注册给大语言模型用的“工具”，名字叫 get-weather。
++   这就是你注册给大语言模型用的“工具”，名字叫 `get-weather`。
 
 +   当模型说“我需要查北京的天气”，MCP就会触发这个函数。
 
-+   你在里面解析出 "location" 字段，然后调用上面那个 fetch_weather() 函数拿数据。
++   你在里面解析出 `location` 字段，然后调用上面那个 `fetch_weather()` 函数拿数据。
 
-它还有一个 **亮点功能**：会实时往客户端推送消息：
+它还有一个亮点功能：会实时往客户端推送消息：
 
 ```
 await ctx.session.send_log_message(...)
 ```
 
-这些就是所谓的 **“流式日志通知”**（比如“正在查询…”、“成功了！”）。
+这些就是所谓的“流式日志通知”（比如“正在查询…”、“成功了！”）。
 
-1.  MCP告诉模型有哪些工具（工具列表）
+### MCP告诉模型有哪些工具（工具列表）
 
 ```
 @app.list_tools()
-async def list_tools() -&gt; list[types.Tool]:
+async def list_tools() -> list[types.Tool]:
 ```
 
-💡解**释：**
+💡 解析：
 
 +   MCP 会定期问你：“你这里都有哪些工具可以用？”
 
-+   你就返回一个叫 get-weather 的工具描述，告诉模型：
++   你就返回一个叫 `get-weather` 的工具描述，告诉模型：
 
-+   输入需要一个 location，是城市名。
++   输入需要一个 `location`，是城市名。
 
-1.  **流式会话管理器配置**
+### 流式会话管理器配置
 
 ```
 session_manager = StreamableHTTPSessionManager(
@@ -381,41 +390,41 @@ session_manager = StreamableHTTPSessionManager(
 )
 ```
 
-💡解**释：**
+💡 解析：
 
-+   这一句创建了 MCP 的“HTTP 会话处理中心”，负责处理所有 /mcp 路由的请求；
++   这一句创建了 MCP 的“HTTP 会话处理中心”，负责处理所有 `/mcp` 路由的请求；
 
-+   stateless=True 表示**不保存历史对话**，每次都是新请求；
++   `stateless=True` 表示不保存历史对话，每次都是新请求；
 
-+   json_response=False 表示用流式 SSE（你也可以改成一次性 JSON 响应）。
++   `json_response=False` 表示用流式 SSE（你也可以改成一次性 JSON 响应）。
 
-1.  构建 Starlette Web 应用
+### 构建 `Starlette` Web 应用
 
 ```
 starlette_app = Starlette(
-    routes=[Mount(&quot;/mcp&quot;, app=handle_streamable_http)],
+    routes=[Mount("/mcp", app=handle_streamable_http)],
     lifespan=lifespan,
 )
 ```
 
-💡解**释：**
+💡 解析：
 
-+   这是将 MCP 服务挂载到你的网站 /mcp 路径上；
++   这是将 MCP 服务挂载到你的网站 `/mcp` 路径上；
 
 +   用户访问这个路径时，就会进入刚才创建的 MCP 会话管理器。
 
-1.  **启动服务器**
+### 启动服务器
 
 ```
 import uvicorn
-uvicorn.run(starlette_app, host=&quot;0.0.0.0&quot;, port=port)
+uvicorn.run(starlette_app, host="0.0.0.0", port=port)
 ```
 
-💡解**释：**
+💡 解析：
 
 +   这行代码启动你的 MCP HTTP 服务器，监听指定端口；
 
-+   如果你传的是 --port 3000，访问路径就是：
++   如果你传的是 `--port 3000`，访问路径就是：
 
 ```
 http://localhost:3000/mcp
@@ -423,32 +432,32 @@ http://localhost:3000/mcp
 
 ![](img/8a29f0dee4ab6c4be60858d40b455019.png)
 
-同时需要回到主目录，修改项目配置文件pyproject.toml：
+同时需要回到主目录，修改项目配置文件 `pyproject.toml`：
 
 ```
 [build-system]
-requires = [&quot;setuptools&gt;=61.0&quot;, &quot;wheel&quot;]
-build-backend = &quot;setuptools.build_meta&quot;
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = &quot;mcp-weather-http&quot;
-version = &quot;1.1.0&quot;
-description = &quot;输入OpenWeather-API-KEY，获取天气信息。&quot;
-readme = &quot;README.md&quot;
-requires-python = &quot;&gt;=3.9&quot;
+name = "mcp-weather-http"
+version = "1.1.0"
+description = "输入OpenWeather-API-KEY，获取天气信息。"
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = [
-    &quot;httpx&gt;=0.28.1&quot;,
-    &quot;mcp&gt;=1.8.0&quot;,
+    "httpx>=0.28.1",
+    "mcp>=1.8.0",
 ]
 
 [project.scripts]
-mcp-weather-http = &quot;mcp_weather_http:main&quot;
+mcp-weather-http = "mcp_weather_http:main"
 
 [tool.setuptools]
-package-dir = {&quot;&quot; = &quot;src&quot;}
+package-dir = {"": "src"}
 
 [tool.setuptools.packages.find]
-where = [&quot;src&quot;]
+where = ["src"]
 ```
 
 至此即完成了整个项目的代码编写工作。完整项目代码可在网盘中领取：
@@ -459,7 +468,7 @@ where = [&quot;src&quot;]
 
 ## 二、HTTP流式传输MCP服务器开启与测试
 
-在创建完server.py后，我们可以开启服务并进行测试。需要注意的是，我们需要先开启流式HTTP MCP服务器，然后再开启Inspector：
+在创建完 `server.py` 后，我们可以开启服务并进行测试。需要注意的是，我们需要先开启流式HTTP MCP服务器，然后再开启Inspector：
 
 > 在stdio模式下是开启Inspector时同步开启MCP Server
 
@@ -492,7 +501,7 @@ npx -y @modelcontextprotocol/inspector uv run main.py --api-key YOUR_KEY
 
 ![](img/3e3a22b6339ead733126585ad382ab05.png)
 
-然后打开Inspector，并选择HTTP流式模式，选择默认运行地址：http://localhost:3000/mcp，然后点击connect：
+然后打开Inspector，并选择HTTP流式模式，选择默认运行地址：`http://localhost:3000/mcp`，然后点击connect：
 
 ![](img/825b83ae9e0944ef487dbc42fe8a6c7d.png)
 
@@ -500,7 +509,7 @@ npx -y @modelcontextprotocol/inspector uv run main.py --api-key YOUR_KEY
 
 ![](img/c929a55184e548f95e6b91b7bf0018d5.png)
 
-然后点击get-weather：
+然后点击 `get-weather`：
 
 ![](img/57f0f48e49056217136032b753b76cdd.png)
 
@@ -522,7 +531,7 @@ npx -y @modelcontextprotocol/inspector uv run main.py --api-key YOUR_KEY
 
 ![](img/ebc48ea91abec1fb8f6c7a646389a3d6.png)
 
-然后输入服务器名称mcp-weather-http，并选择流式传输类型，并选择服务器地址：http://localhost:3000/mcp ，然后点击保存：
+然后输入服务器名称 `mcp-weather-http`，并选择流式传输类型，并选择服务器地址：`http://localhost:3000/mcp`，然后点击保存：
 
 ![](img/17ea9d8732a7b0ae45fb396c9131a1b1.png)
 
@@ -565,7 +574,7 @@ python -m twine upload dist/*
 
 ![](img/da4bffd0b4736bcb7ca7cec182065541.png)
 
-+   查看发布的库：https://pypi.org/search/?q=mcp-weather-http&o=
++   查看发布的库：`https://pypi.org/search/?q=mcp-weather-http&o=`
 
 ![](img/7ca2d914dfbd8c62237b126c12c57416.png)
 
@@ -579,19 +588,19 @@ pip install mcp-weather-http
 
 ![](img/f9ba5c708f44bf8be2f9c14be6ddc6d1.png)
 
-+   开启服务：uv run mcp-weather-http --api-key YOUR_API_KEY
++   开启服务：`uv run mcp-weather-http --api-key YOUR_API_KEY`
 
 ![](img/52f3225fb17a377ba25ca7bf62ada5c0.png)
 
-然后即可打开浏览器输入http://localhost:3000/mcp测试连接情况
+然后即可打开浏览器输入 `http://localhost:3000/mcp` 测试连接情况
 
 ![](img/f913afdba8974071f076acedde981ede.png)
 
-> 注意，这里在服务器上开启服务然后本地连接也可以，和stdio不同，HTTP模式下的MCP服务器并不需要本地运行。
+> 注意，这里在服务器上开启服务然后本地连接也可以，和 `stdio` 不同，HTTP模式下的MCP服务器并不需要本地运行。
 
 +   使用Cherry studio进行连接
 
-然后即可使用Cherry studio连接流式HTTP模式下的MCP服务器，还是和此前一样的连接流程，输入服务器名称mcp-weather-http，并选择流式传输类型，并选择服务器地址：http://localhost:3000/mcp ，然后点击保存：
+然后即可使用Cherry studio连接流式HTTP模式下的MCP服务器，还是和此前一样的连接流程，输入服务器名称 `mcp-weather-http`，并选择流式传输类型，并选择服务器地址：`http://localhost:3000/mcp`，然后点击保存：
 
 ![](img/ad32848de56a769141db92ba8572aed1.png)
 

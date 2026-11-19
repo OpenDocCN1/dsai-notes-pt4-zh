@@ -1,3 +1,4 @@
+
 # 科普读物中文翻译
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/UBaedAX0NoLuJCxxqExcVY4HnZf](https://vxc3hj17dym.feishu.cn/docx/UBaedAX0NoLuJCxxqExcVY4HnZf)
@@ -47,12 +48,12 @@
 
 ### 意译
 ```
-{意译结果}
-```
+
+`{意译结果}`
 
 现在请按照上面的要求从第一行开始翻译以下内容为简体中文：
+
 ```
 content
-```
 
 ```

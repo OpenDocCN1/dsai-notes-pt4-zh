@@ -1,14 +1,15 @@
+
 # AI音乐大模型网站Mureka创作体验
 
 > 来源：[https://datawhaler.feishu.cn/docx/TXpQd7aYeoFRvmxPntycV0LgnVg](https://datawhaler.feishu.cn/docx/TXpQd7aYeoFRvmxPntycV0LgnVg)
 
-#### 学习参考
+## 学习参考
 
 > https://mp.weixin.qq.com/s/5anNt3afJO1KXkE8zcY1TA
 
-### Mureka 音乐创作体验
+## Mureka 音乐创作体验
 
-#### 背景
+### 背景
 
 就在近期，昆仑万维发布了全球首款音乐推理大模型Mureka O1，一举把Suno拉下王座，登顶TOP 1。
 
@@ -22,11 +23,11 @@
 
 有兴趣进一步了解的同学，请点开文中最上方的“学习参考”链接来查看具体介绍。
 
-#### 平台官网
+### 平台官网
 
 > https://www.mureka.ai/
 
-#### 使用体验
+### 使用体验
 
 我是看了上面“学习参考”的文章以后，打开官网来体验音乐创作的。
 
@@ -54,10 +55,10 @@
 
 <https://www.mureka.ai/song-detail/56pwiUCgoZ17Za4AuUYYsA?is_from_share=1>
 
-**生成音乐的感受**
+### 生成音乐的感受
 
 虽然之前我没有用过其他AI音乐生成工具，感觉这次只用一段提示词，就能生成很有风格的，伴奏、节奏和人声都还可以的作品，这个技术确实挺强的。感兴趣的小伙伴可以去官网注册一个试试，这里我也发一下我的邀请链接，如果有意愿帮助我领积分的话，后面够10积分我应该也可以给大家再分享一下更强大的首款音乐推理大模型Mureka O1的使用情况和感受呢，哈哈，这次分享就到此结束，谢谢大家的观看啦~
 
-**邀请链接**
+### 邀请链接
 
 > https://www.mureka.ai?invite_code=Bn2MVr

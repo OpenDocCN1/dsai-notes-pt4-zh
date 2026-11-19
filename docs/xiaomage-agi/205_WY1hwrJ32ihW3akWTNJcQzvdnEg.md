@@ -1,6 +1,7 @@
+
 # AIGC变现！小白跑通赛博机车项目，完整复盘及保姆级实操手册
 
-> 来源：[https://xmgtoagi.feishu.cn/docx/VwXrdqFjpoFIrExaZTwciUfOnrf](https://xmgtoagi.feishu.cn/docx/VwXrdqFjpoFIrExaZTwciUfOnrf)
+> 来源：https://xmgtoagi.feishu.cn/docx/VwXrdqFjpoFIrExaZTwciUfOnrf
 
 > 作者：吴东子AI
 
@@ -32,25 +33,18 @@
 
 一、完整复盘流程
 
-1.发现异常值
-
-2.思考价值
-
-3.实操探索
-
-4.成功爆发
-
-5.总结收获
+1. 发现异常值
+2. 思考价值
+3. 实操探索
+4. 成功爆发
+5. 总结收获
 
 二、保姆级操作手册
 
-1.制作公式
-
-2.网盘链接
-
-3.优质模板
-
-4.常见问题
+1. 制作公式
+2. 网盘链接
+3. 优质模板
+4. 常见问题
 
 那我们现在开始
 
@@ -58,7 +52,7 @@
 
 ## 完整复盘操盘流程
 
-## 发现异常值
+### 发现异常值
 
 事情从一个异常值开始
 
@@ -136,7 +130,7 @@ SD指的是AI绘画工具Stable Diffusion，我之前也分享过教程
 
 这个也是1000赞 2400评论
 
-## 思考价值
+### 思考价值
 
 我想看到这聪明的朋友都知道这意味着什么
 
@@ -164,7 +158,7 @@ SD指的是AI绘画工具Stable Diffusion，我之前也分享过教程
 
 真正下场把这个当成互联网项目去变现做的人寥寥无几
 
-## 实操探索
+### 实操探索
 
 我判断完
 
@@ -194,7 +188,7 @@ SD指的是AI绘画工具Stable Diffusion，我之前也分享过教程
 
 伙伴们只管去前面往前冲
 
-## 成果爆发
+### 成果爆发
 
 然后，就爆了！
 
@@ -212,7 +206,7 @@ SD指的是AI绘画工具Stable Diffusion，我之前也分享过教程
 
 ![](img/5364812fb0f2f94fc390d39e46ce533c.png)
 
-## 总结收获
+### 总结收获
 
 这个项目目前还能不能做？
 
@@ -264,41 +258,29 @@ AI赛博机车图，一句话来说就是，用SD技术生成「赛博朋克机�
 
 SD终极教程
 
-文字版：[https://ry5hwpuf7b.feishu.cn/wiki/LiT2wo](https://link.zhihu.com/?target=https%3A//ry5hwpuf7b.feishu.cn/wiki/LiT2woqpHi4kKPkJ2bPcQaSsnZf%3Ffrom%3Dfrom_copylink)qpHi4kKPkJ2bPcQaSsnZf?from=from_copylink
+文字版：`https://ry5hwpuf7b.feishu.cn/wiki/LiT2woqpHi4kKPkJ2bPcQaSsnZf?from=from_copylink`
 
-视频版：[https://www.bilibili.com](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1yz4y137Yy/)/video/BV1yz4y137Yy/
+视频版：`https://www.bilibili.com/video/BV1yz4y137Yy/`
 
 ## 整合资料网盘链接
 
 大模型、Lora、ControlNet、Embedding文件、PNG信息提取：
 
-链接：[h](https://link.zhihu.com/?target=https%3A//pan.baidu.com/s/1u6XKK7NVQ0WC0AoLlweQHw%3Fpwd%3Dsky6)ttps://pan.baidu.com/s/1u6XKK7NVQ0WC0AoLlweQHw?pwd=sky6
+链接：`https://pan.baidu.com/s/1u6XKK7NVQ0WC0AoLlweQHw?pwd=sky6`
 
 提取码：sky6
 
 ## 制作公式
 
-①大模型
-
-②提示词
-
-③基础参数
-
-④Lora及触发词
-
-⑤ControlNet
-
-⑥剪映模板
-
-### 一、大模型：
+### 一、大模型
 
 ![](img/56dd0cef35fd3acfd47403e05d96bf93.png)
 
-1.  majicMix Realistic（真实机械风）
+1. `majicMix Realistic`（真实机械风）
 
-1.  comix v3.1（赛博次元风）
+2. `comix v3.1`（赛博次元风）
 
-### 二、正向提示词：
+### 二、正向提示词
 
 ![](img/cefbcd31d7a41338902479ea11915d8b.png)
 
@@ -308,23 +290,23 @@ SD终极教程
 
 ③基础风格词：mecha,mechclothes,neonlights,
 
-④霓虹灯Lora：neon,CyberpunkAI,GlowingRunes_red,[lora:GlowingRunesAIv4:0.5](lora:GlowingRunesAIv4:0.5),
+④霓虹灯Lora：neon,CyberpunkAI,GlowingRunes_red,`lora:GlowingRunesAIv4:0.5`,
 
-⑤机甲、机械Lora：robot,roblit,mechamusume,mechanicalparts,robotjoints,headgear,[lora:AMechaSSS[color_theme,mechamusume,mechanicalparts,robotjoints,headgear]:0.5](lora:AMechaSSS[color_theme,mechamusume,mechanicalparts,robotjoints,headgear]:0.5),
+⑤机甲、机械Lora：robot,roblit,mechamusume,mechanicalparts,robotjoints,headgear,`lora:AMechaSSS[color_theme,mechamusume,mechanicalparts,robotjoints,headgear]:0.5`,
 
-⑥增加细节Lora：[lora:add_detail:1](lora:add_detail:1),
+⑥增加细节Lora：`lora:add_detail:1`,
 
-### 三、负向提示词：
+### 三、负向提示词
 
 ![](img/9ad2b84ecc6e951d5b2e2e459673f252.png)
 
 3个Embedding：
 
-+   EasyNegative
++ `EasyNegative`
 
-+   ng_deepnegative_v1_75t
++ `ng_deepnegative_v1_75t`
 
-+   badhandv4
++ `badhandv4`
 
 通用负向关键词：
 
@@ -334,7 +316,7 @@ nsfw,worstquality,lowquality,lowres,watermark,monochrome,grayscale,ugly,blurry,T
 
 ①迭代步数：30（28-32都可以试试看）
 
-②采样方法：DPM++2MKarras或者DPM++2MSDEKarras
+②采样方法：`DPM++2MKarras`或者`DPM++2MSDEKarras`
 
 ③宽高比不用设置，后面会自动调节的
 
@@ -349,13 +331,11 @@ nsfw,worstquality,lowquality,lowres,watermark,monochrome,grayscale,ugly,blurry,T
 >
 
 > 1.霓虹灯Lora：①（neon）CyberpunkAI
-
-> 触发词：neon,CyberpunkAI,
-
 >
-
+> 触发词：neon,CyberpunkAI,
+>
 > ②GlowingRunes
-
+>
 > 触发词：GlowingRunes_red,red可自由替换成：paleblue、green、purple、yellow、pink
 
 ![](img/9c3cee5f897329f1a0386b2cf2caebe0.png)
@@ -363,66 +343,64 @@ nsfw,worstquality,lowquality,lowres,watermark,monochrome,grayscale,ugly,blurry,T
 >
 
 > 2.机甲Lora：①Robotaction
-
+>
 > 触发词：robot,roblit,
-
 >
-
 > ②AMechaSSS
-
-> 触发词：mecha musume,mechanical parts,robot joints,headgear,
-
 >
-
+> 触发词：mecha musume,mechanical parts,robot joints,headgear,
+>
 > 3.增加细节Lora：①Add_detail
-
+>
 > 触发词：无
 
 ### 六、ControlNet
 
 ![](img/dd8e9777dc42626a14e37fb3d3e3d1b9.png)
 
-①把启用、PixelPerfect（完美像素）、AllowPreview（允许预览）打开
+①把启用、`PixelPerfect`（完美像素）、`AllowPreview`（允许预览）打开
 
-②ControlNet模型选择：Lineart或者Tile
+②ControlNet模型选择：`Lineart`或者`Tile`
 
-Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是先模糊再放大，用来出真实画风
+`Lineart`的采样方法是线稿，用来出次元画风`Tile`的采样方法则是先模糊再放大，用来出真实画风
 
 ③弄完点击蓝色框框可以把图片尺寸替换上去，但是要注意会不会过大，如果过大就要长和宽都除以2
 
 ### 七、剪映模板
 
-①一秒出镜全框版[http](https://link.zhihu.com/?target=https%3A//lv.ulikecam.com/activity/lv/sharevideo%3Ftemplate_id%3D7249025953911950604%26sec_uid%3DMS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY)s://lv.ulikecam.com/activity/lv/sharevideo?template_id=7249025953911950604&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY
+①一秒出镜全框版 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7249025953911950604&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY`
 
-②一秒出镜小框版[http](https://link.zhihu.com/?target=https%3A//lv.ulikecam.com/activity/lv/sharevideo%3Ftemplate_id%3D7053036033767640331%26sec_uid%3DMS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY)s://lv.ulikecam.com/activity/lv/sharevideo?template_id=7053036033767640331&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY
+②一秒出镜小框版 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7053036033767640331&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY`
 
-③压迫感拉镜横屏版[http](https://link.zhihu.com/?target=https%3A//lv.ulikecam.com/activity/lv/sharevideo%3Ftemplate_id%3D7235896419435957564%26sec_uid%3DMS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY)s://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235896419435957564&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY
+③压迫感拉镜横屏版 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235896419435957564&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY`
 
-④压迫感拉镜竖屏版[http](https://link.zhihu.com/?target=https%3A//lv.ulikecam.com/activity/lv/sharevideo%3Ftemplate_id%3D7235264616488553785%26sec_uid%3DMS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY)s://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235264616488553785&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY
 
-优质模板
 
-以下案例都已打包好放在网盘链接里的PNG信息库中
+④压迫感拉镜竖屏版 `https://lv.ulikecam.com/activity/lv/sharevideo?template_id=7235264616488553785&sec_uid=MS4wLjABAAAAkR2OxCv1nxHPiWsHeci6Brf9-TtY-c6u8OWMxDQFcNt34oN_-AaRoEuO1LEdjdaY`
 
-可以到SD的PNG图片信息中，直接提取同款提示词和参数设置
+## 优质模板
+
+以下案例都已打包好放在网盘链接里的`PNG`信息库中
+
+可以到`SD`的`PNG`图片信息中，直接提取同款提示词和参数设置
 
 ![](img/711e88d4b6ddac59b267c22033daf147.png)
 
 ### 1.真实机械风
 
-大模型使用majicMixRealistic，ControlNet使用Tile
+大模型使用`majicMixRealistic`，`ControlNet`使用`Tile`
 
 ![](img/a1863a8ec5fd1fbab0c57aa1143bc823.png)
 
 ![](img/b4c127e49bfa49596e986e7f0ae3480a.png)
 
-提示词：4k,best quality, masterpiece, high quality,realistic,finely detailed,ultra highres,(photorealistic:1.4),1 girl, a motorcycle,helmet,Reflective windshield,solo,mecha,mech clothes,neon lights,neon,CyberpunkAI,GlowingRunes_red,[lora:GlowingRunesAIv4:0.5](lora:GlowingRunesAIv4:0.5),robot,roblit,mecha musume,mechanical parts,robot joints,headgear,<lora:AMechaSSS[color_theme,mecha musume,mechanical parts,robot joints,headgear]:0.5>,[lora:add_detail:1](lora:add_detail:1),
+提示词：4k,best quality, masterpiece, high quality,realistic,finely detailed,ultra highres,(photorealistic:1.4),1 girl, a motorcycle,helmet,Reflective windshield,solo,mecha,mech clothes,neon lights,neon,CyberpunkAI,GlowingRunes_red,`lora:GlowingRunesAIv4:0.5`,robot,roblit,mecha musume,mechanical parts,robot joints,headgear,<`lora:AMechaSSS[color_theme,mecha musume,mechanical parts,robot joints,headgear]:0.5`>,`lora:add_detail:1`,
 
 ![](img/49330953998f0536e71a60dd8bb2bf90.png)
 
 ![](img/6e47be87f44a3ca5cfd3cf839d64ac0d.png)
 
-提示词：4k,best quality, masterpiece, high quality,realistic,finely detailed,ultra highres,(photorealistic:1.4),1 girl, helmet,a motorcycle,helmet,Reflective windshield,solo,mecha,mech clothes,neon lights,neon,CyberpunkAI,GlowingRunes_purple,[lora:GlowingRunesAIv4:0.5](lora:GlowingRunesAIv4:0.5),robot,roblit,mecha musume,mechanical parts,robot joints,headgear,<lora:AMechaSSS[color_theme,mecha musume,mechanical parts,robot joints,headgear]:0.5>,[lora:add_detail:1](lora:add_detail:1),
+提示词：4k,best quality, masterpiece, high quality,realistic,finely detailed,ultra highres,(photorealistic:1.4),1 girl, helmet,a motorcycle,helmet,Reflective windshield,solo,mecha,mech clothes,neon lights,neon,CyberpunkAI,GlowingRunes_purple,`lora:GlowingRunesAIv4:0.5`,robot,roblit,mecha musume,mechanical parts,robot joints,headgear,<`lora:AMechaSSS[color_theme,mecha musume,mechanical parts,robot joints,headgear]:0.5`>,`lora:add_detail:1`,
 
 ![](img/ec4e3905493e9f75dd1742a6d11c4332.png)
 
@@ -432,7 +410,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ### 2.赛博次元风
 
-大模型使用comixv3.1，ControlNet使用lineart
+大模型使用`comixv3.1`，`ControlNet`使用`lineart`
 
 ![](img/363a0c1fba6436d2f80c4dd35e879b84.png)
 
@@ -452,7 +430,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ### 3.真人露脸图
 
-> 大模型使用majicMixRealistic，ControlNet使用Tile
+> 大模型使用`majicMixRealistic`，`ControlNet`使用`Tile`
 
 > 会偏概率抽卡，不一定百分百出好看的案例图来自leo
 
@@ -470,7 +448,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ### 4.星空机甲图
 
-大模型使用majicMixRealistic，ControlNet使用Tile
+大模型使用`majicMixRealistic`，`ControlNet`使用`Tile`
 
 提示词加上(((Whiteandgolden))),(starry_sky:1.3),(hyper_galaxy:1.3)
 
@@ -478,7 +456,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ![](img/9ebc07379a9d5499b745d597fc508064.png)
 
-> 提示词：1 girl,a motorcycle,helmet,Reflective windshield,solo,(((White and golden))),(starry_sky:1.3),(hyper_galaxy:1.3),mecha,mech clothes,neon lights,muscle-like lines of the mecha，reflected metal，4k,best quality, masterpiece, high quality,realistic,finely detailed,ultra high res,(photorealistic:1.4),robot,roblit,mecha musume,mechanical parts,robot joints,headgear, <lora:AMechaSSS[color_theme,mecha musume, mechanical parts,robot joints,headgear]:0.6>,[lora:add_detail:1](lora:add_detail:1),
+> 提示词：1 girl,a motorcycle,helmet,Reflective windshield,solo,(((White and golden))),(starry_sky:1.3),(hyper_galaxy:1.3),mecha,mech clothes,neon lights,muscle-like lines of the mecha，reflected metal，4k,best quality, masterpiece, high quality,realistic,finely detailed,ultra high res,(photorealistic:1.4),robot,roblit,mecha musume,mechanical parts,robot joints,headgear, <`lora:AMechaSSS[color_theme,mecha musume, mechanical parts,robot joints,headgear]:0.6`>,`lora:add_detail:1`,
 
 ## 路线图
 
@@ -494,9 +472,9 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 +   账号包装（姓名，简介，背景）
 
-+   SD部署
++   `SD`部署
 
-+   SD出图
++   `SD`出图
 
 +   使用剪映模板
 
@@ -504,7 +482,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 +   原始选图迭代
 
-+   SD出图迭代
++   `SD`出图迭代
 
 +   剪映模板迭代
 
@@ -566,71 +544,73 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 把重心和精力放在怎么让你的内容更好上，这才是最重要的
 
-### 二、出图问题 1.是关键词、大模型、ControlNet完全照抄就可以了吗？
+### 二、出图问题
+
+#### 1.是关键词、`ControlNet`完全照抄就可以了吗？
 
 不是，现有提供的只是为了给大家快速的入门，至少你能实现出AI赛博的风格出来了
 
 因为每一张原图的不一样的，如果想做出真正好看，适配的AI赛博图，需要自己去多多测试
 
-不同的关键词、大模型、ControlNet都会出来不一样的效果，自己多去试一下，才能更深刻感受到每一种的区别在哪里，之后才能更好的迭代
+不同的关键词、`ControlNet`都会出来不一样的效果，自己多去试一下，才能更深刻感受到每一种的区别在哪里，之后才能更好的迭代
 
-### 2.用文生图还是图生图？
+#### 2.用文生图还是图生图？
 
 都可以，最好的答案是都试试
 
-### 3.出来的图片和上传的没有半毛钱关系，以及用不了ControlNet
+#### 3.出来的图片和上传的没有半毛钱关系，以及用不了`ControlNet`
 
 ![](img/0e644b16972558e41d9d0cd8b7bba33e.png)
 
-虽然有ControlNet，但是没有装ControlNet的模型，需要把模型和预处理器都装上
+虽然有`ControlNet`，但是没有装`ControlNet`的模型，需要把模型和预处理器都装上
 
-### 4.Lora使用方法
+#### 4.`Lora`使用方法
 
 ![](img/35aa76100b5216b2e8b2f26f6e37218e.png)
 
 ①放到这个文件夹里
 
-②webui里点击这个📕
+②`webui`里点击这个📕
 
 ![](img/01bac9cd78aee1e0ad4ca94ec2f82f98.png)
 
-③点击刷新，就可以用Lora了
+③点击刷新，就可以用`Lora`了
 
 ![](img/47c696e4bd8aee73d287b0c4130c6558.png)
 
-提示词里：[lora:GlowingRunesAIv4:1](lora:GlowingRunesAIv4:1)
+提示词里：`lora:GlowingRunesAIv4:1`
 
-注意最后这个1的参数可以调节，过强了就调成0.5，弱了就1.3，[lora:GlowingRunesAIv4:1.3](lora:GlowingRunesAIv4:1.3)
+注意最后这个1的参数可以调节，过强了就调成0.5，弱了就1.3，`lora:GlowingRunesAIv4:1.3`
 
-### 5.出的头盔图露脸怎么办？
+#### 5.出的头盔图露脸怎么办？
 
 试试头盔护目镜这个词
 
 ### 三、内容问题
 
-### 1.为什么【一秒出镜】剪映模板自动生成漫画风了？
+#### 1.为什么【一秒出镜】剪映模板自动生成漫画风了？
 
 因为有很多个一秒出镜模板，有一些是用了配套的“AI生成”的，会自动生成机甲漫画风
 
 需要找到没有带“AI生成”的一秒出镜模板就可以用了
 
-### 2.剪映模板都已经能一件生成了，这个项目是不是就没有门槛了？
+#### 2.剪映模板都已经能一件生成了，这个项目是不是就没有门槛了？
 
 不是，你用过剪映生成就知道出来的图有多离谱，完全达不到内容的成分，用户也不会为此买单
 
-对比一下原图、剪映、SD，应该能看出来吧hh
+对比一下原图、剪映、`SD`，应该能看出来吧hh
 
 ![](img/d359e6148ab1ab460ef0144d1312640d.png)
 
 ![](img/7972d2149e1c9e10767d172bc06dab0a.png)
 
-3.抖音📕如何无水印下载视频或者图文
+#### 3.抖音📕如何无水印下载视频或者图文
 
 🛰️小程序搜索“去水印助手无损”，每天看一次广告可以无限下载有其他工具也欢迎推荐
 
 ### 四、引流问题
 
-### 1.怎么引流，引流有哪些方式？
+#### 1.怎么引流，引流有哪些方式？
 
 注意！
 
@@ -640,7 +620,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ③引流都存在风险，没有绝对安全，都会有风险
 
-### 1）群聊引流
+#### 1）群聊引流
 
 抖音或者📕都可以建群聊，通过群公告、群消息、小卡片来引流
 
@@ -650,7 +630,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ![](img/ce1549543c5e625b0acb5ad029124c22.png)
 
-### 2）简介小号引流
+#### 2）简介小号引流
 
 主页艾特小号账号，小号置顶图文联系方式
 
@@ -658,7 +638,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ![](img/5b78ef16820f535fd7c241e112a60705.png)
 
-### 3）直播引流
+#### 3）直播引流
 
 通过直播现场做图片，有观众的话可以让他们加粉丝群发图，你现场做
 
@@ -666,14 +646,16 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 或者第1单免费，要拿高清图加V进私域
 
-需要注意自己电脑配置能不能支持“直播+SD生图”
+需要注意自己电脑配置能不能支持“直播+`SD`生图”
+
+
 
 ![](img/fa69098616108cb75bcdb6c78a7098b5.png)
 
-### 2.引流话术
+## 2. 引流话术
 
 > ①可参考圈友【大东】的话术，说得非常好，既不得罪客户，又把付费意思表达了
-
+>
 > 但引流方式尽量换一个，直接发🛰️的话风险有点大
 
 ![](img/25dfba22700f1cd1ec8138622ead4a6b.png)
@@ -681,14 +663,14 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 >
 
 > ②圈友【sky陈天】的话术，把情况都阐明了
-
+>
 > 这种发图的方式比较容易形成成交，但被检测到的概率也会大一些，前期小小引流可以，后期建议还是用更隐蔽的方式
 
 ![](img/5448244a539888120ca1be41d778011e.png)
 
-### 五、变现问题
+## 五、变现问题
 
-### 1.怎么去定价比较合适？
+### 1. 怎么去定价比较合适？
 
 如果你的视频流量很大，出的图质量很高，别人认定了你这个人话，定价可以高一点，因为有议价权，99元一张都会有客户买单
 
@@ -706,7 +688,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 核心还得是靠爆款，爆款做出来了，需求就来了，到时候选择哪种变现方式都可以
 
-### 2.如何做到超预期交付！MJ机车图
+### 2. 如何做到超预期交付！MJ 机车图
 
 小米发家主要靠口碑传播，之前在雷军的一本书上学到“用户需要的不是性价比，而是超预期”
 
@@ -726,7 +708,7 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 这里可以用到的工具是Midjoueny，因为MJ的特点就是简单高效
 
-只需要输入提示词就能输出很精美的图片，不需要像SD搞这个大模型，那个ControlNet之类的
+只需要输入提示词就能输出很精美的图片，不需要像SD搞这个大模型，那个`ControlNet`之类的
 
 试想这样一个场景：
 
@@ -738,9 +720,9 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 我直接把我拆解好的提示词分享出来，大家只需要根据客户图片去描述一下翻译成英文再替换上去就可以
 
-关键词拆解：Alittleboywearsahelmetonhisheadandridesamotorcycle,Cute,handsome,fullbody,animestyle,chibi,motionblur,cyberpunk,thebestquality--niji5--s200
+关键词拆解：`Alittleboywearsahelmetonhisheadandridesamotorcycle,Cute,handsome,fullbody,animestyle,chibi,motionblur,cyberpunk,thebestquality--niji5--s200`
 
-一个小男孩头上戴着头盔，骑着摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的质量--niji 5 --s 200
+一个小男孩头上戴着头盔，骑着摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的质量--`niji 5 --s 200`
 
 加粗字体可以随意更换
 
@@ -752,9 +734,9 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 > 横向思考：
 
-> Agirlinablackjacketandahelmetridesapinkmotorcycle,cute,handsome,fullbody,animestyle,chibi,motionblur,cyberpunk,thebestquality--niji5--s200
-
-> 穿着黑色夹克和头盔的女孩骑着粉色摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的品质--niji 5 --s 200
+> `Agirlinablackjacketandahelmetridesapinkmotorcycle,cute,handsome,fullbody,animestyle,chibi,motionblur,cyberpunk,thebestquality--niji5--s200`
+>
+> 穿着黑色夹克和头盔的女孩骑着粉色摩托车，可爱，帅气，全身，动漫风格，赤壁，运动模糊，赛博朋克，最好的品质--`niji 5 --s 200`
 
 ![](img/b57163c9325fc46cde3c48af0568b066.png)
 
@@ -762,43 +744,43 @@ Lineart的采样方法是线稿，用来出次元画风Tile的采样方法则是
 
 ![](img/4ab90bfa65ad11fb7249d6a7cef89c9a.png)
 
-### 六、SD问题
+## 六、SD 问题
 
-### 1.大模型怎么安装？
+### 1. 大模型怎么安装？
 
 这里的SD根目录就是大家在下载时，存放SD的那个文件夹
 
 ![](img/7fe68046639bf7e57b8f19bbe491a392.png)
 
-### 2.宽高比插件怎么安装？
+### 2. 宽高比插件怎么安装？
 
 ![](img/973da5d91397e55e8ec450d778d47279.png)
 
-①找到【扩展】选项②点击加载扩展列表③搜索【Aspect】④安装【AspectRatioHelper】
+①找到【扩展】选项②点击加载扩展列表③搜索【Aspect】④安装`AspectRatioHelper`
 
-云平台用户也可自行安装[h](https://link.zhihu.com/?target=https%3A//github.com/thomasasfk/sd-webui-aspect-ratio-helper.git)ttps://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git
+云平台用户也可自行安装 [`sd-webui-aspect-ratio-helper.git`](https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git)
 
-### 3.ControlNet怎么安装？
+### 3. `ControlNet` 怎么安装？
 
 ①下载预处理器
 
-下载网盘里的《1.预处理器》文件夹里面有一个“downloads”文件夹
+下载网盘里的`1.预处理器`文件夹里面有一个`downloads`文件夹
 
 把整个文件夹复制到SD的文件夹里面
 
-具体位置：SD文件>extensions>sd-webui-controlnet>annotator
+具体位置：`SD文件>extensions>sd-webui-controlnet>annotator`
 
 ![](img/26ba7a9194e374e49f6253f6d7e9bc24.png)
 
 ②下载模型
 
-下载网盘里的《2.模型》文件夹
+下载网盘里的`2.模型`文件夹
 
 里面有14个模型，把这些模型复制到SD文件夹里
 
-具体位置：SD文件>models>ControlNet
+具体位置：`SD文件>models>ControlNet`
 
-![](img/90943822af139d527905b831ba1e8ea8.png)
+![](img/90943822af1399d527905b831ba1e8ea8.png)
 
 ## 最后
 

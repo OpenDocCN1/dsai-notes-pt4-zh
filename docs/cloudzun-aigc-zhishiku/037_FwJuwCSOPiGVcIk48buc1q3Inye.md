@@ -1,70 +1,71 @@
+
 # DIFY 场景演练
 
 > 来源：[https://zsyhjtnsa5.feishu.cn/docx/FOaRdeBePoucByxTz5fc66EPnPh](https://zsyhjtnsa5.feishu.cn/docx/FOaRdeBePoucByxTz5fc66EPnPh)
 
 > Dify 是一个开源的 LLM 应用开发平台。其直观的界面结合了 AI 工作流、RAG 管道、Agent、模型管理、可观测性功能等，让您可以快速从原型到生产。
 
-# 环境准备
+## 环境准备
 
-## 安装Docker和Docker-compose
+### 安装 Docker 和 `docker-compose`
 
-## 安装golang
+### 安装 Golang
 
-1.  [从G](https://golang.org/dl/)o的官方网站下载版本为1.22.2的二进制文件。你可以在此处找到所有已发布版本的下载链接。
+1. [从 Go 的官方网站](https://golang.org/dl/) 下载版本为 1.22.2 的二进制文件。你可以在此处找到所有已发布版本的下载链接。
 
-用 wget 命令下载文件：
-
-```
-wget https://golang.org/dl/go1.22.2.linux-amd64.tar.gz    
-```
-
-1.  下载完成后，解压压缩文件到 /usr/local 目录。
+使用 `wget` 命令下载文件：
 
 ```
-sudo tar -xvf go1.22.2.linux-amd64.tar.gz -C /usr/local      
+wget https://golang.org/dl/go1.22.2.linux-amd64.tar.gz
 ```
 
-1.  将 Go 的路径添加到你的 PATH 环境变量中。你可以在你的 ~/.bashrc 或 ~/.profile 文件中执行此操作。
-
-使用如下命令打开 .bashrc 文件：
+1. 下载完成后，解压压缩文件到 `/usr/local` 目录。
 
 ```
-nano ~/.bashrc     
+sudo tar -xvf go1.22.2.linux-amd64.tar.gz -C /usr/local
+```
+
+1. 将 Go 的路径添加到你的 `PATH` 环境变量中。你可以在你的 `~/.bashrc` 或 `~/.profile` 文件中执行此操作。
+
+使用如下命令打开 `.bashrc` 文件：
+
+```
+nano ~/.bashrc
 ```
 
 在文件的末尾添加如下行：
 
 ```
-export PATH=$PATH:/usr/local/go/bin     
+export PATH=$PATH:/usr/local/go/bin
 ```
 
 保存并关闭文件。
 
-1.  让 .bashrc 文件中的更改立即生效。
+1. 让 `.bashrc` 文件中的更改立即生效。
 
 ```
-source ~/.bashrc     
+source ~/.bashrc
 ```
 
-1.  最后，你应该可以运行以下命令来验证 Go 是否已经成功安装：
+1. 最后，你应该可以运行以下命令来验证 Go 是否已经成功安装：
 
 ```
-go version     
+go version
 ```
 
 如果 Go 安装成功，那么这个命令会输出你现在已经安装的 Go 版本。
 
-# Lab 1：基本功能演练
+## Lab 1：基本功能演练
 
-## 创建 DIFY 堆栈
+### 创建 DIFY 堆栈
 
-Clone项目Repo
+Clone 项目 Repo
 
 ```
 git clone https://gitee.com/cloudzun/dify-with-wordpress
 ```
 
-启动DIFY Stack
+启动 DIFY Stack
 
 ```
 cd dify-with-wordpress/
@@ -72,7 +73,7 @@ docker-compose up -d
 ```
 
 ```
-version: &#x27;3&#x27;
+version: '3'
 services:
   # API service
   api:
@@ -89,7 +90,7 @@ services:
       - ./volumes/app/storage:/app/api/storage
     # uncomment to expose dify-api port to host
     # ports:
-    #   - &quot;5001:5001&quot;
+    #   - "5001:5001"
 
   # worker service
   # The Celery worker for processing the queue.
@@ -115,16 +116,16 @@ services:
       # The base URL of console application api server, refers to the Console base URL of WEB service if console domain is
       # different from api or web app domain.
       # example: http://cloud.dify.ai
-      CONSOLE_API_URL: &#x27;&#x27;
+      CONSOLE_API_URL: ''
       # The URL for Web APP api server, refers to the Web App base URL of WEB service if web app domain is different from
       # console or api domain.
       # example: http://udify.app
-      APP_API_URL: &#x27;&#x27;
+      APP_API_URL: ''
       # The DSN for Sentry error reporting. If not set, Sentry error reporting will be disabled.
-      SENTRY_DSN: &#x27;&#x27;
+      SENTRY_DSN: ''
     # uncomment to expose dify-web port to host
     # ports:
-    #   - &quot;3000:3000&quot;
+    #   - "3000:3000"
 
   # The postgres database.
   db:
@@ -142,9 +143,9 @@ services:
       - ./volumes/db/data:/var/lib/postgresql/data
     # uncomment to expose db(postgresql) port to host
     # ports:
-    #   - &quot;5432:5432&quot;
+    #   - "5432:5432"
     healthcheck:
-      test: [ &quot;CMD&quot;, &quot;pg_isready&quot; ]
+      test: ["CMD", "pg_isready"]
       interval: 1s
       timeout: 3s
       retries: 30
@@ -159,10 +160,10 @@ services:
     # Set the redis password when startup redis server.
     command: redis-server --requirepass difyai123456
     healthcheck:
-      test: [ &quot;CMD&quot;, &quot;redis-cli&quot;, &quot;ping&quot; ]
+      test: ["CMD", "redis-cli", "ping"]
     # uncomment to expose redis port to host
     # ports:
-    #   - &quot;6379:6379&quot;
+    #   - "6333:6333"
 
   # The Weaviate vector store.
   weaviate:
@@ -175,18 +176,18 @@ services:
       # The Weaviate configurations
       # You can refer to the [Weaviate](https://weaviate.io/developers/weaviate/config-refs/env-vars) documentation for more information.
       QUERY_DEFAULTS_LIMIT: 25
-      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: &#x27;false&#x27;
-      PERSISTENCE_DATA_PATH: &#x27;/var/lib/weaviate&#x27;
-      DEFAULT_VECTORIZER_MODULE: &#x27;none&#x27;
-      CLUSTER_HOSTNAME: &#x27;node1&#x27;
-      AUTHENTICATION_APIKEY_ENABLED: &#x27;true&#x27;
-      AUTHENTICATION_APIKEY_ALLOWED_KEYS: &#x27;WVF5YThaHlkYwhGUSmCRgsX3tD5ngdN8pkih&#x27;
-      AUTHENTICATION_APIKEY_USERS: &#x27;hello@dify.ai&#x27;
-      AUTHORIZATION_ADMINLIST_ENABLED: &#x27;true&#x27;
-      AUTHORIZATION_ADMINLIST_USERS: &#x27;hello@dify.ai&#x27;
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'false'
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
+      DEFAULT_VECTORIZER_MODULE: 'none'
+      CLUSTER_HOSTNAME: 'node1'
+      AUTHENTICATION_APIKEY_ENABLED: 'true'
+      AUTHENTICATION_APIKEY_ALLOWED_KEYS: 'WVF5YThaHlkYwhGUSmCRgsX3tD5ngdN8pkih'
+      AUTHENTICATION_APIKEY_USERS: 'hello@dify.ai'
+      AUTHORIZATION_ADMINLIST_ENABLED: 'true'
+      AUTHORIZATION_ADMINLIST_USERS: 'hello@dify.ai'
     # uncomment to expose weaviate port to host
     # ports:
-    #  - &quot;8080:8080&quot;
+    #  - "8080:8080"
 
   # The DifySandbox
   sandbox:
@@ -205,17 +206,17 @@ services:
   # Qdrant vector store.
   # uncomment to use qdrant as vector store.
   # (if uncommented, you need to comment out the weaviate service above,
-  # and set VECTOR_STORE to qdrant in the api &amp; worker service.)
+  # and set VECTOR_STORE to qdrant in the api & worker service.)
   # qdrant:
   #   image: langgenius/qdrant:v1.7.3
   #   restart: always
   #   volumes:
   #     - ./volumes/qdrant:/qdrant/storage
   #   environment:
-  #     QDRANT_API_KEY: &#x27;difyai123456&#x27;
+  #     QDRANT_API_KEY: 'difyai123456'
   #   # uncomment to expose qdrant port to host
   #   # ports:
-  #   #  - &quot;6333:6333&quot;
+  #    - "6333:6333"
 
   # The nginx reverse proxy.
   # used for reverse proxying the API service and Web service.
@@ -228,8 +229,8 @@ services:
       - api
       - web
     ports:
-      - &quot;8082:80&quot;
-      #- &quot;443:443&quot;
+      - "8082:80"
+      #- "443:443"
 
 
   wordpress:
@@ -241,39 +242,39 @@ services:
       - ./wordpress:/var/www/html
 ```
 
-> 这个 docker-compose.yml 文件定义了10个服务，每个服务都会运行在一个独立的容器中。以下是每个服务的简单描述和它们之间的关系：
+> 这个 `docker-compose.yml` 文件定义了 10 个服务，每个服务都会运行在一个独立的容器中。以下是每个服务的简单描述和它们之间的关系：
 
-1.  api：这是主API服务，使用了langgenius/dify-api:0.6.4镜像。它依赖于db和redis服务，并将./volumes/app/storage目录挂载到容器的/app/api/storage目录。
+1. `api`：这是主 API 服务，使用了 `langgenius/dify-api:0.6.4` 镜像。它依赖于 `db` 和 `redis` 服务，并将 `./volumes/app/storage` 目录挂载到容器的 `/app/api/storage` 目录。
 
-1.  worker：这是一个Celery worker服务，用于处理队列任务。它使用了同样的镜像，并且也依赖于db和redis服务。它也将同样的存储目录挂载到了容器中。
+1. `worker`：这是一个 Celery worker 服务，用于处理队列任务。它使用了同样的镜像，并且也依赖于 `db` 和 `redis` 服务。它也将同样的存储目录挂载到了容器中。
 
-1.  web：这是前端web应用服务，使用了langgenius/dify-web:0.6.4镜像。
+1. `web`：这是前端 Web 应用服务，使用了 `langgenius/dify-web:0.6.4` 镜像。
 
-1.  db：这是Postgres数据库服务，使用了postgres:15-alpine镜像。它将./volumes/db/data目录挂载到容器的/var/lib/postgresql/data目录。
+1. `db`：这是 Postgres 数据库服务，使用了 `postgres:15-alpine` 镜像。它将 `./volumes/db/data` 目录挂载到容器的 `/var/lib/postgresql/data` 目录。
 
-1.  redis：这是Redis缓存服务，使用了redis:6-alpine镜像。它将./volumes/redis/data目录挂载到容器的/data目录。
+1. `redis`：这是 Redis 缓存服务，使用了 `redis:6-alpine` 镜像。它将 `./volumes/redis/data` 目录挂载到容器的 `/data` 目录。
 
-1.  weaviate：这是Weaviate向量存储服务，使用了semitechnologies/weaviate:1.19.0镜像。它将./volumes/weaviate目录挂载到容器的/var/lib/weaviate目录。
+1. `weaviate`：这是 Weaviate 向量存储服务，使用了 `semitechnologies/weaviate:1.19.0` 镜像。它将 `./volumes/weaviate` 目录挂载到容器的 `/var/lib/weaviate` 目录。
 
-1.  sandbox：这是DifySandbox服务，使用了langgenius/dify-sandbox:latest镜像。
+1. `sandbox`：这是 DifySandbox 服务，使用了 `langgenius/dify-sandbox:latest` 镜像。
 
-1.  nginx：这是Nginx反向代理服务，使用了nginx:latest镜像。它依赖于api和web服务，并将./nginx.conf文件挂载到容器的/etc/nginx/nginx.conf文件。
+1. `nginx`：这是 Nginx 反向代理服务，使用了 `nginx:latest` 镜像。它依赖于 `api` 和 `web` 服务，并将 `./nginx.conf` 文件挂载到容器的 `/etc/nginx/nginx.conf` 文件。
 
-1.  wordpress：这是WordPress服务，使用了soulteary/wp-api:6.5.2-sqlite镜像。它将./wordpress目录挂载到容器的/var/www/html目录。
+1. `wordpress`：这是 WordPress 服务，使用了 `soulteary/wp-api:6.5.2-sqlite` 镜像。它将 `./wordpress` 目录挂载到容器的 `/var/www/html` 目录。
 
-1.  qdrant：这是Qdrant向量存储服务，目前被注释掉了。如果启用，需要在api和worker服务中设置VECTOR_STORE为qdrant，并注释掉weaviate服务。
+1. `qdrant`：这是 Qdrant 向量存储服务，目前被注释掉了。如果启用，需要在 `api` 和 `worker` 服务中设置 `VECTOR_STORE` 为 `qdrant`，并注释掉 `weaviate` 服务。
 
-> 这些服务之间的关系主要通过depends_on字段和环境变量来定义。例如，api和worker服务都依赖于db和redis服务，这意味着db和redis服务会在api和worker服务之前启动。nginx服务依赖于api和web服务，这意味着api和web服务会在nginx服务之前启动。环境变量则用于配置服务之间的连接，例如数据库的URL和密码。
+> 这些服务之间的关系主要通过 `depends_on` 字段和环境变量来定义。例如，`api` 和 `worker` 服务都依赖于 `db` 和 `redis` 服务，这意味着 `db` 和 `redis` 服务会在 `api` 和 `worker` 服务之前启动。`nginx` 服务依赖于 `api` 和 `web` 服务，这意味着 `api` 和 `web` 服务会在 `nginx` 服务之前启动。环境变量则用于配置服务之间的连接，例如数据库的 URL 和密码。
 
 ![](img/d7c65a4c45c98b8da934af9ef286b5eb.png)
 
 初始化
 
-+   http://localhost:8082/install 来初始化和访问 Dify
++ `http://localhost:8082/install` 来初始化和访问 Dify
 
-+   http://localhost:8083 来初始化和访问 WordPress
++ `http://localhost:8083` 来初始化和访问 WordPress
 
-## 初始化DIFY中的模型配置 （以月之暗面为例）
+### 初始化 DIFY 中的模型配置（以月之暗面为例）
 
 点击界面右上角的用户头像，在下拉菜单中点击“设置”，在弹出窗口中选择左侧的“模型供应商”菜单，能够看到 Dify 支持配置使用的所有模型类型。
 
@@ -285,6 +286,8 @@ services:
 
 配置完毕之后，在这个弹出窗口的顶端选择“系统模型设置”，将“系统推理模型”设置为反应最快、成本最低的 8K 模型。
 
+
+
 ![](img/aad61f5d6c687e614a2319e8a00da3b4.png)
 
 当两个配置都设置完毕后，这个弹出窗中展示的模型在 Dify 中就完全可用啦。
@@ -293,7 +296,7 @@ services:
 
 创建知识库
 
-使用 [Azure OpenAI 服务常见问题解答](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/faq) - Azure AI services 作为样本，建议文件保存为markdown格式
+使用 [Azure OpenAI 服务常见问题解答](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/faq) - Azure AI services 作为样本，建议文件保存为 markdown 格式
 
 ![](img/edd6ce72b05c080a43acc8cdada0d181.png)
 
@@ -487,7 +490,7 @@ cd dify
 docker run --rm -d -p 8079:8080 -v &quot;${PWD}/api/core/tools/provider/builtin/searxng/docker:/etc/searxng&quot; searxng/searxng
 ```
 
-在 工具 > SearXNG > 去认证 中填写访问地址，例如：http://host.docker.internal:8079或者使用  core   https://searxng.huaqloud.com/
+在 工具 > SearXNG > 去认证 中填写访问地址，例如：`http://host.docker.internal:8079`或者使用 `core https://searxng.huaqloud.com/`
 
 提示词模板（待迭代版）
 
@@ -497,33 +500,33 @@ docker run --rm -d -p 8079:8080 -v &quot;${PWD}/api/core/tools/provider/builtin/
 ## 步骤：
 
 1. **确定当前日期**
-    - 使用工具“current_time”获取当前日期和时间，以确保分析的时效性。
+    - 使用工具 `current_time` 获取当前日期和时间，以确保分析的时效性。
 2. **定义关键字**
-    - 用户提供需要分析的{{keyword}}
+    - 用户提供需要分析的 `{{keyword}}`
 3. **获取背景信息**
-    - 使用工具“wikipedia_search”查找与{{keyword}}相关的背景信息。请把{{keyword}}翻译成英文之后，找寻更准确的信息。
-    - 确保获取的信息包括{{keyword}}的基本定义、历史发展和主要应用领域。
+    - 使用工具 `wikipedia_search` 查找与 `{{keyword}}` 相关的背景信息。请把 `{{keyword}}` 翻译成英文之后，找寻更准确的信息。
+    - 确保获取的信息包括 `{{keyword}}` 的基本定义、历史发展和主要应用领域。
 4. **数据收集**
-    - 使用工具“searxng_search”查找与{{keyword}}相关的最新数据、新闻和研究报告。
-    - 可以包括{{keyword}}相关的具体词汇。
+    - 使用工具 `searxng_search` 查找与 `{{keyword}}` 相关的最新数据、新闻和研究报告。
+    - 可以包括 `{{keyword}}` 相关的具体词汇。
 5. **内容综述**
-    - 对wikipedia_search和searxng_search搜索到的{{keyword}}内容进行综合分析。
+    - 对 `wikipedia_search` 和 `searxng_search` 搜索到的 `{{keyword}}` 内容进行综合分析。
     - 提炼出主要信息和发展趋势，确保信息的准确性和可靠性。
     - 形成最终的分析报告，提供给用户。
 
 ## 示例：
 
 1. **确定当前日期**
-    - 使用“current_time”工具获取当前日期：2024年5月26日。
+    - 使用 `current_time` 工具获取当前日期：2024年5月26日。
 2. **定义关键字**
-    - 用户提供{{keyword}}，例如“人工智能”。
+    - 用户提供 `{{keyword}}`，例如“人工智能”。
 3. **获取背景信息**
-    - 在wikipedia_search搜索“Artificial Intelligence”，获取其详细背景信息，包括定义、历史和应用领域。
+    - 在 `wikipedia_search` 搜索“Artificial Intelligence”，获取其详细背景信息，包括定义、历史和应用领域。
 4. **数据收集**
-    - 在searxng_search搜索“2024 Artificial Intelligence trends”。
+    - 在 `searxng_search` 搜索“2024 Artificial Intelligence trends”。
     - 收集最新的统计数据、新闻和研究报告。
 5. **内容综述**
-    - 综合wikipedia_search和searxng_search的搜索结果，提炼出人工智能的现状和发展趋势。
+    - 综合 `wikipedia_search` 和 `searxng_search` 的搜索结果，提炼出人工智能的现状和发展趋势。
     - 形成简洁、准确的分析报告提供给用户。
 ```
 
@@ -563,7 +566,7 @@ docker run --rm -d -p 8079:8080 -v &quot;${PWD}/api/core/tools/provider/builtin/
 ## 输出标题结果
 ```
 
-在上面的提示词中，我们设置了一个名为 “content” 的变量，在随后的真实模型调用中，我们可以在 API 的请求参数中动态的调整这个数据内容，来让它解决不同的文章的标题生成任务。
+在上面的提示词中，我们设置了一个名为 `content` 的变量，在随后的真实模型调用中，我们可以在 API 的请求参数中动态的调整这个数据内容，来让它解决不同的文章的标题生成任务。
 
 ![](img/04518b4a7bfb17bb7b3a8b5b14ef4b6b.png)
 
@@ -589,19 +592,21 @@ docker run --rm -d -p 8079:8080 -v &quot;${PWD}/api/core/tools/provider/builtin/
 
 ![](img/431a318a285dacb4a88b387264fa5657.png)
 
-我们只需要调用 /completion-messages 接口，将刚刚 Prompt 中设置的 content 传入接口即可。
+我们只需要调用 `/completion-messages` 接口，将刚刚 Prompt 中设置的 `content` 传入接口即可。
 
 ![](img/0b9bdd1908f01f485bf9487a4a54cfda.png)
 
 在调用 Dify API 的时候，我们需要进行身份验证，在这个页面的右上角，点击“API 密钥” 按钮，创建一个 API 密钥即可。
 
-创建好 Dify AI 应用的 API Key 后，我们可以将上面文档中的调用写成一个简单的 PHP 模型调用函数。这个函数接收一个参数（文章内容），并将文章内容传入 Dify 的调用结构体中，当 Dify 调用 Moonshot 模型后，我们解析调用结果，取出返回内容中的 answer 字段，就得到了模型生成的标题内容。
+创建好 Dify AI 应用的 API Key 后，我们可以将上面文档中的调用写成一个简单的 PHP 模型调用函数。这个函数接收一个参数（文章内容），并将文章内容传入 Dify 的调用结构体中，当 Dify 调用 Moonshot 模型后，我们解析调用结果，取出返回内容中的 `answer` 字段，就得到了模型生成的标题内容。
 
 而让 WordPress 能够在我们的文章有内容，没有标题的时候，调用上面的函数，就更简单了。完整的插件代码以及解释如下：
 
 ```
 nano title-generate.php
 ```
+
+
 
 ```
 &lt;?php
@@ -685,19 +690,19 @@ function update_post_title($post)
 
 > 以下是代码的主要部分：
 
-1.  首先，代码检查ABSPATH常量是否已定义，以防止直接访问PHP文件。这是WordPress插件的常见安全实践。
+1.  首先，代码检查`ABSPATH`常量是否已定义，以防止直接访问PHP文件。这是WordPress插件的常见安全实践。
 
-1.  generate_title_by_content函数是插件的核心。它接收一段内容作为参数，然后使用cURL向一个远程服务器发送POST请求。这个请求的目的是生成一个基于输入内容的标题。请求的URL和API密钥都是硬编码的，这可能是一个需要改进的地方。函数处理服务器的响应，提取生成的标题，然后返回。
+1.  `generate_title_by_content()`函数是插件的核心。它接收一段内容作为参数，然后使用cURL向一个远程服务器发送POST请求。这个请求的目的是生成一个基于输入内容的标题。请求的URL和API密钥都是硬编码的，这可能是一个需要改进的地方。函数处理服务器的响应，提取生成的标题，然后返回。
 
-1.  update_post_title函数在文章发布或更新时被调用。如果文章的标题为空，它会调用generate_title_by_content函数生成一个新的标题，然后更新数据库和当前的文章对象。
+1.  `update_post_title()`函数在文章发布或更新时被调用。如果文章的标题为空，它会调用`generate_title_by_content()`函数生成一个新的标题，然后更新数据库和当前的文章对象。
 
-1.  最后，使用add_action函数将update_post_title函数绑定到the_post动作。这意味着每次WordPress准备显示一篇文章时，都会调用这个函数。
+1.  最后，使用`add_action()`函数将`update_post_title()`函数绑定到`the_post`动作。这意味着每次WordPress准备显示一篇文章时，都会调用这个函数。
 
 1.  这个插件的主要目的是自动为没有标题的文章生成标题。
 
 > 注意：需要更新API Key。
 
-你可以将这个文件放置到你启动 WordPress 程序目录的 wordpress/wp-content/plugins/title-generate.php 位置，然后在你的 WordPress 后台的插件管理中启用这个插件。
+你可以将这个文件放置到你启动 WordPress 程序目录的 `wordpress/wp-content/plugins/title-generate.php` 位置，然后在你的 WordPress 后台的插件管理中启用这个插件。
 
 ```
 cp title-generate.php wordpress/wp-content/plugins/
@@ -725,7 +730,7 @@ cp title-generate.php wordpress/wp-content/plugins/
 
 因为我们的 Prompt 提示词和模型调用参数是维护在 Dify 中的，所以我们如果想完善模型的生成规则、风格、生成数量，我们只需要更新上文中 Dify IDE 中的 Prompt 提示词内容，而不需要修改程序，这是不是非常方便呢？
 
-设置URL结构
+## 设置URL结构
 
 ![](img/8f25587db562ffef31e9192478243dfc.png)
 
@@ -742,7 +747,7 @@ git clone https://gitee.com/cloudzun/dify-simple-rag-with-wp
 cd dify-simple-rag-with-wp/
 ```
 
-核心代码main.go的分析和解读
+核心代码`main.go`的分析和解读
 
 ```
 nano main.go
@@ -876,29 +881,33 @@ func main() {
 
 > 以下是代码的主要部分：
 
-1.  Article结构体用于解析从WordPress API获取的文章内容。
+1.  `Article`结构体用于解析从WordPress API获取的文章内容。
 
-1.  GetArticle函数接收一个文章ID，然后向WordPress API发送GET请求获取文章内容。获取的内容被解析为Article结构体。
+1.  `GetArticle`函数接收一个文章ID，然后向WordPress API发送GET请求获取文章内容。获取的内容被解析为`Article`结构体。
 
-1.  GetMarkdown函数接收HTML字符串，然后使用html-to-markdown库将HTML转换为Markdown格式。
 
-1.  RemoveImages函数接收一个Markdown字符串，然后使用正则表达式移除其中的图片链接。
 
-1.  ExtensionPointRequest和UserQuery结构体用于解析和生成HTTP请求和响应的JSON数据。
+## 文章内容处理微服务
 
-1.  在main函数中，创建了一个Gin路由器，并定义了一个POST路由/new-api-for-dify。这个路由的处理函数首先解析请求数据，然后获取文章内容，转换为Markdown，移除图片链接，然后返回处理后的Markdown内容。
+1. `GetMarkdown`函数接收HTML字符串，然后使用`html-to-markdown`库将HTML转换为Markdown格式。
 
-1.  最后，启动HTTP服务器，监听8084端口。
+1. `RemoveImages`函数接收一个Markdown字符串，然后使用正则表达式移除其中的图片链接。
+
+1. `ExtensionPointRequest`和`UserQuery`结构体用于解析和生成HTTP请求和响应的JSON数据。
+
+1. 在`main`函数中，创建了一个`Gin`路由器，并定义了一个POST路由`/new-api-for-dify`。这个路由的处理函数首先解析请求数据，然后获取文章内容，转换为Markdown，移除图片链接，然后返回处理后的Markdown内容。
+
+1. 最后，启动HTTP服务器，监听8084端口。
 
 > 这个服务器可以作为一个微服务，为其他服务提供文章内容的获取和处理功能。
 
-构建微服务容器镜像
+### 构建微服务容器镜像
 
 ```
 docker build -t simplerag .
 ```
 
-运行微服务
+### 运行微服务
 
 ```
 docker run -d -p 8084:8084 --name simplerag simplerag
@@ -933,7 +942,7 @@ docker run -d -p 8084:8084 --name simplerag chengzh/simplerag
 
 ![](img/083527a6a40c7fc73cfbb4fb6d0b17d3.png)
 
-我这里的 Prompt 包含了一个包裹在 markdown 块代码中的变量：article，用来动态填充我们的知识库文章素材，让模型未来在对话的上下文中能够找到事实知识，而避免让它自己“脑补内容”，糊弄我们。
+我这里的 Prompt 包含了一个包裹在 `markdown` 块代码中的变量：`article`，用来动态填充我们的知识库文章素材，让模型未来在对话的上下文中能够找到事实知识，而避免让它自己“脑补内容”，糊弄我们。
 
 ## 通过内容处理钩子打通RAG流程
 
@@ -961,7 +970,7 @@ Dify 默认能够使用“内容审查功能”，来对提示词和用户输入
 
 ## 运行完整流程
 
-在上面的代码流程中，我们分别根据用户在界面中传递进来的“文章ID”，来从 WordPress 知识库中获取指定 ID 的文章素材，然后将文章素材进行 Markdown 格式的转换处理、去掉文章中的不必要的内容，然后将 AI 应用使用的 Prompt 提示词进行更新，然后将更新后的提示词模版返还给 Dify 应用。
+在上面的代码流程中，我们分别根据用户在界面中传递进来的`文章ID`，来从 WordPress 知识库中获取指定 ID 的文章素材，然后将文章素材进行 Markdown 格式的转换处理、去掉文章中的不必要的内容，然后将 AI 应用使用的 Prompt 提示词进行更新，然后将更新后的提示词模版返还给 Dify 应用。
 
 ![](img/10c2575c1006ff19ab03d723f7d04d4c.png)
 
@@ -977,17 +986,17 @@ Dify 默认能够使用“内容审查功能”，来对提示词和用户输入
 
 # Lab 4：AI电影推荐
 
-+   快速将已有数据库、数据接口内容，通过 AI 的方式来进行输出。
++ 快速将已有数据库、数据接口内容，通过 AI 的方式来进行输出。
 
-+   快速搭建私有化的搜索引擎，并以最轻量化的方案运行，降低运行和维护成本。
++ 快速搭建私有化的搜索引擎，并以最轻量化的方案运行，降低运行和维护成本。
 
-+   如何制作一个 Dify RAG 应用，通过简单的接口拼接，而非复杂的 Prompt 流水线编排和精妙的 Prompt 编写（Prompt Tricks）。
++ 如何制作一个 Dify RAG 应用，通过简单的接口拼接，而非复杂的 Prompt 流水线编排和精妙的 Prompt 编写（Prompt Tricks）。
 
-+   如何在不折腾复杂的搜索引擎打分、召回的前提下，满足比较准的内容召回。
++ 如何在不折腾复杂的搜索引擎打分、召回的前提下，满足比较准的内容召回。
 
 ## 初始化 MeiliSearch
 
-[Meilis](https://github.com/meilisearch/meilisearch)earch 是一个轻量但功能强大的开源搜索引擎， 搜索即服务 Algolia 的开源平替。
+[Meilisearch](https://github.com/meilisearch/meilisearch) 是一个轻量但功能强大的开源搜索引擎，搜索即服务 Algolia 的开源平替。
 
 ![](img/feb4bbc79a7e477f66c0df90d161ce94.png)
 
@@ -1000,20 +1009,18 @@ git clone https://gitee.com/cloudzun/dify-with-classical-search
 ```
 
 ```
- cd dify-with-classical-search/meilisearch/
- docker-compose up -d
+cd dify-with-classical-search/meilisearch/
+docker-compose up -d
 ```
 
 ```
 docker-compose up -d
 ```
 
-以下是docker-compose.yml文件及其分析
+以下是`docker-compose.yml`文件及其分析
 
 ```
-# name: meli
-# https://www.meilisearch.com/docs/learn/configuration/instance_options
-version: &#x27;3&#x27;
+version: '3'
 services:
   meilisearch:
     image: getmeili/meilisearch:v1.8.0
@@ -1024,76 +1031,76 @@ services:
     volumes:
       - ./meili_data:/meili_data
     environment:
-      MEILI_MASTER_KEY: &quot;soulteary&quot;
-      MEILI_NO_ANALYTICS: &quot;true&quot;
-      MEILI_LOG_LEVEL: &quot;info&quot;
-      MEILI_MAX_INDEXING_MEMORY: &quot;200 MB&quot;
-      MEILI_MAX_INDEXING_THREADS: &quot;2&quot;
-      MEILI_HTTP_PAYLOAD_SIZE_LIMIT: &quot;500 MB&quot;
+      MEILI_MASTER_KEY: "soulteary"
+      MEILI_NO_ANALYTICS: "true"
+      MEILI_LOG_LEVEL: "info"
+      MEILI_MAX_INDEXING_MEMORY: "200 MB"
+      MEILI_MAX_INDEXING_THREADS: "2"
+      MEILI_HTTP_PAYLOAD_SIZE_LIMIT: "500 MB"
       # MEILI_HTTP_ADDR: 0.0.0.0:7700
       # MEILI_DB_PATH: /meili_data
 
 ```
 
-> 这个 docker-compose.yml 文件定义了一个名为 meilisearch 的服务，该服务将运行在一个独立的容器中。以下是服务的详细描述：
+> 这个 `docker-compose.yml` 文件定义了一个名为 `meilisearch` 的服务，该服务将运行在一个独立的容器中。以下是服务的详细描述：
 
-+   image: 服务使用的镜像是 getmeili/meilisearch:v1.8.0，这是 MeiliSearch 的一个版本。
++ `image`: 服务使用的镜像是 `getmeili/meilisearch:v1.8.0`，这是 MeiliSearch 的一个版本。
 
-+   container_name: 容器的名称被设置为 meilisearch。
++ `container_name`: 容器的名称被设置为 `meilisearch`。
 
-+   restart: 容器的重启策略被设置为 always，这意味着如果容器退出，Docker 将始终尝试重新启动它。
++ `restart`: 容器的重启策略被设置为 `always`，这意味着如果容器退出，Docker 将始终尝试重新启动它。
 
-+   ports: 容器的 7700 端口被映射到宿主机的 7700 端口，这意味着你可以通过访问宿主机的 7700 端口来访问 MeiliSearch 服务。
++ `ports`: 容器的 `7700` 端口被映射到宿主机的 `7700` 端口，这意味着你可以通过访问宿主机的 `7700` 端口来访问 MeiliSearch 服务。
 
-+   volumes: 宿主机的 ./meili_data 目录被挂载到容器的 /meili_data 目录，这意味着 MeiliSearch 的数据将被存储在宿主机的 ./meili_data 目录。
++ `volumes`: 宿主机的 `./meili_data` 目录被挂载到容器的 `/meili_data` 目录，这意味着 MeiliSearch 的数据将被存储在宿主机的 `./meili_data` 目录。
 
-+   environment: 这些环境变量用于配置 MeiliSearch 服务。例如，MEILI_MASTER_KEY 设置了 MeiliSearch 的主密钥，MEILI_NO_ANALYTICS 禁用了分析，MEILI_LOG_LEVEL 设置了日志级别，MEILI_MAX_INDEXING_MEMORY、MEILI_MAX_INDEXING_THREADS 和 MEILI_HTTP_PAYLOAD_SIZE_LIMIT 分别设置了索引的最大内存、最大线程数和 HTTP 负载的大小限制。
++ `environment`: 这些环境变量用于配置 MeiliSearch 服务。例如，`MEILI_MASTER_KEY` 设置了 MeiliSearch 的主密钥，`MEILI_NO_ANALYTICS` 禁用了分析，`MEILI_LOG_LEVEL` 设置了日志级别，`MEILI_MAX_INDEXING_MEMORY`、`MEILI_MAX_INDEXING_THREADS` 和 `MEILI_HTTP_PAYLOAD_SIZE_LIMIT` 分别设置了索引的最大内存、最大线程数和 HTTP 负载的大小限制。
 
 > 这个服务的主要目的是运行一个 MeiliSearch 实例，MeiliSearch 是一个开源的、易于使用的、快速的全文搜索数据库。
 
-```
+```go
 package main
 
 import (
-        &quot;encoding/json&quot;
-        &quot;fmt&quot;
-        &quot;os&quot;
+        "encoding/json"
+        "fmt"
+        "os"
 
-        &quot;github.com/meilisearch/meilisearch-go&quot;
+        "github.com/meilisearch/meilisearch-go"
 )
 
 type Movie struct {
-        ID          int      `json:&quot;id&quot;`
-        Title       string   `json:&quot;title&quot;`
-        Overview    string   `json:&quot;overview&quot;`
-        Genres      []string `json:&quot;genres&quot;`
-        Poster      string   `json:&quot;poster&quot;`
-        ReleaseDate int      `json:&quot;release_date&quot;`
+        ID          int      `json:"id"`
+        Title       string   `json:"title"`
+        Overview    string   `json:"overview"`
+        Genres      []string `json:"genres"`
+        Poster      string   `json:"poster"`
+        ReleaseDate int      `json:"release_date"`
 }
 
 func main() {
         client := meilisearch.NewClient(meilisearch.ClientConfig{
-                Host:   &quot;http://127.0.0.1:7700&quot;,
-                APIKey: &quot;soulteary&quot;,
+                Host:   "http://127.0.0.1:7700",
+                APIKey: "soulteary",
         })
 
-        // 创建一个名为 &#x27;movies&#x27; 的索引，用来存储后续的数据
-        index := client.Index(&quot;movies&quot;)
+        // 创建一个名为 'movies' 的索引，用来存储后续的数据
+        index := client.Index("movies")
 
-        // 如果索引 &#x27;movies&#x27; 不存在，Meilisearch 会在第一次添加文档时创建它
+        // 如果索引 'movies' 不存在，Meilisearch 会在第一次添加文档时创建它
         // documents := []map[string]interface{}{
-        //         {&quot;id&quot;: 1, &quot;title&quot;: &quot;Carol&quot;, &quot;genres&quot;: []string{&quot;Romance&quot;, &quot;Drama&quot;}},
-        //         {&quot;id&quot;: 2, &quot;title&quot;: &quot;Wonder Woman&quot;, &quot;genres&quot;: []string{&quot;Action&quot;, &quot;Adventure&quot;}},
-        //         {&quot;id&quot;: 3, &quot;title&quot;: &quot;Life of Pi&quot;, &quot;genres&quot;: []string{&quot;Adventure&quot;, &quot;Drama&quot;}},
+        //         {"id": 1, "title": "Carol", "genres": []string{"Romance", "Drama"}},
+        //         {"id": 2, "title": "Wonder Woman", "genres": []string{"Action", "Adventure"}},
+        //         {"id": 3, "title": "Life of Pi", "genres": []string{"Adventure", "Drama"}},
         // }
 
-        buf, err := os.ReadFile(&quot;data/movies.json&quot;)
+        buf, err := os.ReadFile("data/movies.json")
         if err != nil {
                 fmt.Println(err)
                 os.Exit(1)
         }
         var documents []Movie
-        err = json.Unmarshal(buf, &amp;documents)
+        err = json.Unmarshal(buf, &documents)
         if err != nil {
                 fmt.Println(err)
                 os.Exit(1)
@@ -1114,86 +1121,88 @@ func main() {
 
 > 以下是代码的主要部分：
 
-1.  Movie结构体定义了电影文档的数据模型，包括ID、标题、概述、类型、海报和发布日期。
+1. `Movie`结构体定义了电影文档的数据模型，包括`ID`、`Title`、`Overview`、`Genres`、`Poster`和`ReleaseDate`。
 
-1.  在main函数中，首先创建了一个MeiliSearch客户端，指定了MeiliSearch服务器的地址和API密钥。
+1. 在`main`函数中，首先创建了一个MeiliSearch客户端，指定了MeiliSearch服务器的地址和API密钥。
 
-1.  使用client.Index("movies")创建了一个名为"movies"的索引。
+1. 使用`client.Index("movies")`创建了一个名为"movies"的索引。
 
-1.  使用os.ReadFile("data/movies.json")读取了一个包含电影数据的JSON文件。
+1. 使用`os.ReadFile("data/movies.json")`读取了一个包含电影数据的JSON文件。
 
-1.  使用json.Unmarshal将读取的JSON数据解析为Movie结构体的切片。
+1. 使用`json.Unmarshal`将读取的JSON数据解析为`Movie`结构体的切片。
 
-1.  使用index.AddDocuments将解析的电影数据添加到"movies"索引。
+1. 使用`index.AddDocuments`将解析的电影数据添加到"movies"索引。
 
-1.  如果在读取文件、解析JSON或添加文档的过程中发生错误，程序会打印错误信息并退出。
+1. 如果在读取文件、解析JSON或添加文档的过程中发生错误，程序会打印错误信息并退出。
 
-1.  如果添加文档成功，程序会打印任务的UID。
+1. 如果添加文档成功，程序会打印任务的UID。
 
-1.  这段代码的主要目的是将电影数据添加到MeiliSearch的"movies"索引，以便进行全文搜索。
+1. 这段代码的主要目的是将电影数据添加到MeiliSearch的"movies"索引，以便进行全文搜索。
 
 ## 准备搜索引擎数据
 
-[为了让你更快的上手，并加速](https://www.meilisearch.com/docs/learn/getting_started/quick_start#add-documents)搜索引擎的索引构建过程，对官方提供的搜索数据示例（电影数据库）进行了精简，为不到 10MB 大小的数据集，包含了 一万五千部电影简介。
+[为了让你更快的上手，并加速](https://www.meilisearch.com/docs/learn/getting_started/quick_start#add-documents)搜索引擎的索引构建过程，对官方提供的搜索数据示例（电影数据库）进行了精简，为不到 10MB 大小的数据集，包含了一万五千部电影简介。
 
 数据样本类似下面这样：
 
-  &quot;poster&quot;: &quot;https://image.tmdb.org/t/p/w500/npOnzAbLh6VOIu3naU5QaEcTepo.jpg&quot;,
+  "poster": "https://image.tmdb.org/t/p/w500/npOnzAbLh6VOIu3naU5QaEcTepo.jpg",
 
-```
+```json
 {
-  &quot;id&quot;: 10515,
-  &quot;title&quot;: &quot;Castle in the Sky&quot;,
-  &quot;overview&quot;: &quot;A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.&quot;,
-  &quot;genres&quot;: [&quot;Adventure&quot;, &quot;Fantasy&quot;, &quot;Animation&quot;, &quot;Action&quot;, &quot;Family&quot;, &quot;Romance&quot;],
-  &quot;release_date&quot;: 523324800}
+  "id": 10515,
+  "title": "Castle in the Sky",
+  "overview": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
+  "genres": ["Adventure", "Fantasy", "Animation", "Action", "Family", "Romance"],
+  "release_date": 523324800}
 ```
 
-以下这段代码的主要目的是将电影搜索数据示例导入到MeiliSearch中，以便后续进行全文搜索。
+以下这段代码的主要目的是将电影搜索数据示例导入到`MeiliSearch`中，以便后续进行全文搜索。
 
-```
+
+
+```go
 package main
 
 import (
-    &quot;encoding/json&quot;
-    &quot;fmt&quot;
-    &quot;os&quot;
+    "encoding/json"
+    "fmt"
+    "os"
 
-    &quot;github.com/meilisearch/meilisearch-go&quot;
+    "github.com/meilisearch/meilisearch-go"
 )
 
 type Movie struct {
-    ID          int      `json:&quot;id&quot;`
-    Title       string   `json:&quot;title&quot;`
-    Overview    string   `json:&quot;overview&quot;`
-    Genres      []string `json:&quot;genres&quot;`
-    Poster      string   `json:&quot;poster&quot;`
-    ReleaseDate int      `json:&quot;release_date&quot;`
+    ID          int      `json:"id"`
+    Title       string   `json:"title"`
+    Overview    string   `json:"overview"`
+    Genres      []string `json:"genres"`
+    Poster      string   `json:"poster"`
+    ReleaseDate int      `json:"release_date"`
 }
 
 func main() {
     client := meilisearch.NewClient(meilisearch.ClientConfig{
-        Host:   &quot;http://127.0.0.1:7700&quot;,
-        APIKey: &quot;soulteary&quot;,
+        Host:   "http://127.0.0.1:7700",
+        APIKey: "soulteary",
     })
 
-    // 创建一个名为 &#x27;movies&#x27; 的索引，用来存储后续的数据
-    index := client.Index(&quot;movies&quot;)
+    // 创建一个名为 'movies' 的索引，用来存储后续的数据
+    index := client.Index("movies")
 
-    // 如果索引 &#x27;movies&#x27; 不存在，Meilisearch 会在第一次添加文档时创建它
+    // 如果索引 'movies' 不存在，Meilisearch 会在第一次添加文档时创建它
     // documents := []map[string]interface{}{
-    //  {&quot;id&quot;: 1, &quot;title&quot;: &quot;Carol&quot;, &quot;genres&quot;: []string{&quot;Romance&quot;, &quot;Drama&quot;}},
-    //  {&quot;id&quot;: 2, &quot;title&quot;: &quot;Wonder Woman&quot;, &quot;genres&quot;: []string{&quot;Action&quot;, &quot;Adventure&quot;}},
-    //  {&quot;id&quot;: 3, &quot;title&quot;: &quot;Life of Pi&quot;, &quot;genres&quot;: []string{&quot;Adventure&quot;, &quot;Drama&quot;}},
+    //  {"id": 1, "title": "Carol", "genres": []string{"Romance", "Drama"}},
+    //  {"id": 2, "title": "Wonder Woman", "genres": []string{"Action", "Adventure"}},
+    //  {"id": 3, "title": "Life of Pi", "genres": []string{"Adventure", "Drama"}},
     // }
 
-    buf, err := os.ReadFile(&quot;data/movies.json&quot;)
+    buf, err := os.ReadFile("data/movies.json")
     if err != nil {
         fmt.Println(err)
         os.Exit(1)
     }
     var documents []Movie
-    err = json.Unmarshal(buf, &amp;documents)
+    err = json.Unmarshal(buf, &documents)
     if err != nil {
         fmt.Println(err)
         os.Exit(1)
@@ -1210,34 +1219,34 @@ func main() {
 }
 ```
 
-> 这段Go语言代码使用了MeiliSearch的Go客户端库，用于创建一个名为"movies"的索引，并向其中添加电影数据。
+> 这段Go语言代码使用了MeiliSearch的Go客户端库，用于创建一个名为`movies`的索引，并向其中添加电影数据。
 
 > 以下是代码的主要部分：
 
-1.  Movie结构体定义了电影数据的格式，包括ID、标题、概述、类型、海报和发布日期。
+1. `Movie`结构体定义了电影数据的格式，包括`ID`、标题、概述、类型、海报和发布日期。
 
-1.  在main函数中，首先创建了一个MeiliSearch客户端，指定了MeiliSearch服务器的地址和API密钥。
+2. 在`main`函数中，首先创建了一个MeiliSearch客户端，指定了MeiliSearch服务器的地址和API密钥。
 
-1.  然后，获取了名为"movies"的索引。如果这个索引不存在，MeiliSearch会在第一次添加文档时自动创建它。
+3. 然后，获取了名为`movies`的索引。如果这个索引不存在，MeiliSearch会在第一次添加文档时自动创建它。
 
-1.  接下来，从"data/movies.json"文件中读取电影数据，然后将数据解析为Movie结构体的切片。
+4. 接下来，从`data/movies.json`文件中读取电影数据，然后将数据解析为`Movie`结构体的切片。
 
-1.  最后，将解析出的电影数据添加到"movies"索引中，并打印出任务的UID。
+5. 最后，将解析出的电影数据添加到`movies`索引中，并打印出任务的`TaskUID`。
 
 > 如果在读取文件、解析JSON或添加文档的过程中发生错误，程序会打印出错误信息并退出。
 
-导入数据
+## 导入数据
 
-```
-echo &quot;export GOPROXY=https://goproxy.cn,direct&quot; &gt;&gt; ~/.bashrc
+```bash
+echo "export GOPROXY=https://goproxy.cn,direct" >> ~/.bashrc
 source ~/.bashrc
 go run main.go
 ```
 
 如果一切正常，将得到一个包含了正在执行的索引任务的数字 ID 结果
 
-```
-root@dify:~/dify-with-classical-search/meilisearch# echo &quot;export GOPROXY=https://goproxy.cn,direct&quot; &gt;&gt; ~/.bashrc
+```bash
+root@dify:~/dify-with-classical-search/meilisearch# echo "export GOPROXY=https://goproxy.cn,direct" >> ~/.bashrc
 source ~/.bashrc
 root@dify:~/dify-with-classical-search/meilisearch# go run main.go
 go: downloading github.com/meilisearch/meilisearch-go v0.26.3
@@ -1251,7 +1260,7 @@ go: downloading github.com/valyala/bytebufferpool v1.0.0
 0
 ```
 
-这时，如果我们访问 http://localhost:7700 将能够访问到搜索引擎自带的调试界面。通过这个界面，我们就能够对我们已索引的内容进行搜索调试啦。
+这时，如果我们访问 `http://localhost:7700` 将能够访问到搜索引擎自带的调试界面。通过这个界面，我们就能够对我们已索引的内容进行搜索调试啦。
 
 ![](img/1b9b8b07d48ee8ff9aebd4202b636c43.png)
 
@@ -1267,62 +1276,68 @@ go: downloading github.com/valyala/bytebufferpool v1.0.0
 
 ## 实现 API 接口
 
-分析接口定义文件
+### 分析接口定义文件
 
-```
+```bash
 root@dify:~/dify-with-classical-search# cd dify
 root@dify:~/dify-with-classical-search/dify# nano main.go
 ```
 
-```
+
+
+# 基于 Gin 和 MeiliSearch 的电影搜索微服务与 Dify 集成
+
+## 服务端 Go 代码
+
+```go
 // base on: https://github.com/soulteary/dify-simple-rag-with-wp/blob/main/main.go
 
 package main
 
 import (
-        &quot;encoding/json&quot;
-        &quot;fmt&quot;
-        &quot;io&quot;
-        &quot;net/http&quot;
-        &quot;strings&quot;
+        "encoding/json"
+        "fmt"
+        "io"
+        "net/http"
+        "strings"
 
-        &quot;github.com/gin-gonic/gin&quot;
+        "github.com/gin-gonic/gin"
 )
 
 type QueryPayload struct {
-        Queries []QueryBody `json:&quot;queries&quot;`
+        Queries []QueryBody `json:"queries"`
 }
 
 type QueryBody struct {
-        IndexUID string `json:&quot;indexUid&quot;`
-        Q        string `json:&quot;q&quot;`
-        Limit    int    `json:&quot;limit&quot;`
-        Offset   int    `json:&quot;offset&quot;`
+        IndexUID string `json:"indexUid"`
+        Q        string `json:"q"`
+        Limit    int    `json:"limit"`
+        Offset   int    `json:"offset"`
 }
 
 type SearchResults struct {
-        Results []SearchResult `json:&quot;results&quot;`
+        Results []SearchResult `json:"results"`
 }
 
 type SearchResult struct {
-        IndexUID string `json:&quot;indexUid&quot;`
+        IndexUID string `json:"indexUid"`
         Hits     []struct {
-                ID          int      `json:&quot;id&quot;`
-                Title       string   `json:&quot;title&quot;`
-                Overview    string   `json:&quot;overview&quot;`
-                Genres      []string `json:&quot;genres&quot;`
-                Poster      string   `json:&quot;poster&quot;`
-                ReleaseDate int      `json:&quot;release_date&quot;`
-        } `json:&quot;hits&quot;`
-        Query              string `json:&quot;query&quot;`
-        ProcessingTimeMs   int    `json:&quot;processingTimeMs&quot;`
-        Limit              int    `json:&quot;limit&quot;`
-        Offset             int    `json:&quot;offset&quot;`
-        EstimatedTotalHits int    `json:&quot;estimatedTotalHits&quot;`
+                ID          int      `json:"id"`
+                Title       string   `json:"title"`
+                Overview    string   `json:"overview"`
+                Genres      []string `json:"genres"`
+                Poster      string   `json:"poster"`
+                ReleaseDate int      `json:"release_date"`
+        } `json:"hits"`
+        Query              string `json:"query"`
+        ProcessingTimeMs   int    `json:"processingTimeMs"`
+        Limit              int    `json:"limit"`
+        Offset             int    `json:"offset"`
+        EstimatedTotalHits int    `json:"estimatedTotalHits"`
 }
 
 func GetSearchResult(search string, count int, indexes string, page int, token string) (result SearchResults, err error) {
-        client := &amp;http.Client{}
+        client := &http.Client{}
 
         var queryBody QueryBody
         queryBody.IndexUID = indexes
@@ -1339,13 +1354,13 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
         }
 
         var data = strings.NewReader(string(payload))
-        req, err := http.NewRequest(&quot;POST&quot;, &quot;http://172.17.0.1:7700/multi-search&quot;, data) // 替换ip地址
+        req, err := http.NewRequest("POST", "http://172.17.0.1:7700/multi-search", data) // 替换ip地址
         if err != nil {
                 return result, err
         }
 
-        req.Header.Set(&quot;Authorization&quot;, fmt.Sprintf(&quot;Bearer %s&quot;, token))
-        req.Header.Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+        req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
+        req.Header.Set("Content-Type", "application/json")
         resp, err := client.Do(req)
         if err != nil {
                 return result, err
@@ -1357,7 +1372,7 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
                 return result, err
         }
 
-        err = json.Unmarshal(bodyText, &amp;result)
+        err = json.Unmarshal(bodyText, &result)
         if err != nil {
                 return result, err
         }
@@ -1365,106 +1380,101 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
 }
 
 type ExtensionPointRequest struct {
-        Point  string `json:&quot;point&quot;`
+        Point  string `json:"point"`
         Params struct {
-                AppID        string                 `json:&quot;app_id&quot;`
-                ToolVariable string                 `json:&quot;tool_variable&quot;`
-                Inputs       map[string]interface{} `json:&quot;inputs&quot;`
-                Query        string                 `json:&quot;query&quot;`
-        } `json:&quot;params&quot;`
+                AppID        string                 `json:"app_id"`
+                ToolVariable string                 `json:"tool_variable"`
+                Inputs       map[string]interface{} `json:"inputs"`
+                Query        string                 `json:"query"`
+        } `json:"params"`
 }
 
 type ExtensionPointResponse struct {
-        Result string `json:&quot;result&quot;`
+        Result string `json:"result"`
 }
 
 func main() {
         router := gin.Default()
 
-        router.POST(&quot;/new-api-for-dify&quot;, func(c *gin.Context) {
+        router.POST("/new-api-for-dify", func(c *gin.Context) {
                 var req ExtensionPointRequest
 
-                if err := c.BindJSON(&amp;req); err != nil {
-                        c.JSON(http.StatusBadRequest, gin.H{&quot;error&quot;: err.Error()})
+                if err := c.BindJSON(&req); err != nil {
+                        c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
                         return
                 }
 
-                if req.Point == &quot;ping&quot; {
-                        c.JSON(http.StatusOK, ExtensionPointResponse{Result: &quot;pong&quot;})
+                if req.Point == "ping" {
+                        c.JSON(http.StatusOK, ExtensionPointResponse{Result: "pong"})
                         return
                 }
 
-                if req.Point != &quot;app.external_data_tool.query&quot; {
-                        c.JSON(http.StatusBadRequest, gin.H{&quot;error&quot;: &quot;invalid point&quot;})
+                if req.Point != "app.external_data_tool.query" {
+                        c.JSON(http.StatusBadRequest, gin.H{"error": "invalid point"})
                         return
                 }
 
-                keywords, exist := req.Params.Inputs[&quot;keywords&quot;]
+                keywords, exist := req.Params.Inputs["keywords"]
                 if !exist {
-                        c.JSON(http.StatusBadRequest, gin.H{&quot;error&quot;: &quot;missing keyword&quot;})
+                        c.JSON(http.StatusBadRequest, gin.H{"error": "missing keyword"})
                         return
                 }
 
-                s := strings.TrimSpace(fmt.Sprintf(&quot;%s&quot;, keywords))
-                if s == &quot;&quot; {
-                        c.JSON(http.StatusBadRequest, gin.H{&quot;error&quot;: &quot;empty keyword&quot;})
+                s := strings.TrimSpace(fmt.Sprintf("%s", keywords))
+                if s == "" {
+                        c.JSON(http.StatusBadRequest, gin.H{"error": "empty keyword"})
                         return
                 }
 
-                movies, err := GetSearchResult(s, 3, &quot;movies&quot;, 0, &quot;soulteary&quot;)
+                movies, err := GetSearchResult(s, 3, "movies", 0, "soulteary")
                 if err != nil {
-                        c.JSON(http.StatusBadRequest, gin.H{&quot;error&quot;: err.Error()})
+                        c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
                         return
                 }
 
                 var result string
                 for _, movie := range movies.Results {
                         for _, hit := range movie.Hits {
-                                result += fmt.Sprintf(&quot;- 标题：%s\n&quot;, hit.Title)
-                                result += fmt.Sprintf(&quot;- 简介：%s\n\n&quot;, hit.Overview)
+                                result += fmt.Sprintf("- 标题：%s\n", hit.Title)
+                                result += fmt.Sprintf("- 简介：%s\n\n", hit.Overview)
                         }
                 }
 
                 c.JSON(http.StatusOK, ExtensionPointResponse{Result: result})
         })
 
-        router.Run(&quot;:8084&quot;)
+        router.Run(":8084")
 }
 ```
 
-> 这段Go语言代码是一个使用Gin框架和MeiliSearch创建的HTTP服务器。它接收一个关键词，然后在MeiliSearch的"movies"索引中搜索匹配的电影，返回搜索结果。
+> 这段Go语言代码是一个使用`Gin`框架和MeiliSearch创建的HTTP服务器。它接收一个关键词，然后在MeiliSearch的`movies`索引中搜索匹配的电影，返回搜索结果。
 
 > 以下是代码的主要部分：
 
-1.  QueryPayload、QueryBody、SearchResults、SearchResult、ExtensionPointRequest和ExtensionPointResponse结构体用于解析和生成HTTP请求和响应的JSON数据。
-
-1.  GetSearchResult函数接收一个关键词、结果数量、索引名、页码和API密钥，然后向MeiliSearch服务器发送POST请求进行搜索。搜索结果被解析为SearchResults结构体。
-
-1.  在main函数中，创建了一个Gin路由器，并定义了一个POST路由/new-api-for-dify。这个路由的处理函数首先解析请求数据，然后获取关键词，调用GetSearchResult函数获取搜索结果，然后返回处理后的搜索结果。
-
-1.  如果在解析请求、获取关键词或搜索的过程中发生错误，服务器会返回一个状态码为400的响应，响应体包含一个error字段，值为错误信息。
-
-1.  如果搜索成功，遍历搜索结果，生成一个包含电影标题和简介的字符串，然后返回一个状态码为200的响应，响应体包含一个Result字段，值为生成的字符串。
-
-1.  最后，启动HTTP服务器，监听8084端口。
+1. `QueryPayload`、`QueryBody`、`SearchResults`、`SearchResult`、`ExtensionPointRequest`和`ExtensionPointResponse`结构体用于解析和生成HTTP请求和响应的JSON数据。
+2. `GetSearchResult`函数接收一个关键词、结果数量、索引名、页码和API密钥，然后向MeiliSearch服务器发送POST请求进行搜索。搜索结果被解析为`SearchResults`结构体。
+3. 在`main`函数中，创建了一个Gin路由器，并定义了一个POST路由`/new-api-for-dify`。这个路由的处理函数首先解析请求数据，然后获取关键词，调用`GetSearchResult`函数获取搜索结果，然后返回处理后的搜索结果。
+4. 如果在解析请求、获取关键词或搜索的过程中发生错误，服务器会返回一个状态码为400的响应，响应体包含一个`error`字段，值为错误信息。
+5. 如果搜索成功，遍历搜索结果，生成一个包含电影标题和简介的字符串，然后返回一个状态码为200的响应，响应体包含一个`Result`字段，值为生成的字符串。
+6. 最后，启动HTTP服务器，监听8084端口。
 
 > 这个服务器可以作为一个微服务，为其他服务提供电影搜索功能。
 
-构建微服务镜像
+## 构建微服务镜像
 
-```
+```bash
 docker build -t movie .
 ```
 
-运行容器化实例
+## 运行容器化实例
 
-```
+```bash
 docker run -d -p 8084:8084 --name movie movie
 ```
 
 或者直接运行现成的容器
 
-```
+```bash
 docker run -d -p 8084:8084 --name movie chengzh/movie
 ```
 
@@ -1480,11 +1490,9 @@ docker run -d -p 8084:8084 --name movie chengzh/movie
 
 在新的弹出窗口中填入我们上面完成的 “API 框架” 的基础信息，你可以根据你的需求来，我这里就起名为“电影检索”啦。
 
-+   名称：api
-
-+   API Endpoint： http://172.17.0.1:8084/new-api-for-dify
-
-+   API-key：soulteary
++   名称：`api`
++   API Endpoint：`http://172.17.0.1:8084/new-api-for-dify`
++   API-key：`soulteary`
 
 ![](img/12bd53edae3ceb9f2a83d11c10ad135e.png)
 
@@ -1538,21 +1546,23 @@ docker run -d -p 8084:8084 --name movie chengzh/movie
 
 ![](img/d9b54c067a96f5bffa222bd28af733e5.png)
 
-好了，一切就绪，让我们来重新使用这个 AI 应用。再次在关键词中搜索“sky”，并问模型应用“为什么推荐这几部电影”。
+好了，一切就绪，让我们来重新使用这个 AI 应用。再次在关键词中搜索`sky`，并问模型应用“为什么推荐这几部电影”。
+
+
 
 ![](img/404f5ba1a0883f83b4a8174e780964cf.png)
 
-模型会将搜索引擎中得到的前三条电影填充到 Prompt 中，并提交到模型服务中，进行结果推理。因为设置了 Prompt 始终使用中文输出，所以即便是搜索引擎搜索回的内容都是英文数据，也还是被翻译为了不错的中文结果。
+模型会将搜索引擎中得到的前三条电影填充到 `Prompt` 中，并提交到模型服务中，进行结果推理。因为设置了 `Prompt` 始终使用中文输出，所以即便是搜索引擎搜索回的内容都是英文数据，也还是被翻译为了不错的中文结果。
 
 ![](img/6c08f06459dc13479821eb03e6a4341f.png)
 
-让我们来验证下多个关键词的检索能力，修改搜索关键词为“sky cas”（我只拼了一部分的“城堡”单词），然后重新提问。
+让我们来验证下多个关键词的检索能力，修改搜索关键词为 `sky cas`（我只拼了一部分的“城堡”单词），然后重新提问。
 
 稍等片刻，我们能够看到，模型应用在后台更新了搜索词，输出了包含天空之城在内的新的搜索结果的答案，并给出了一段还可以的总结。
 
 ![](img/62c39788c6057ad0f8c9d1b313c9479e.png)
 
-因为我们创建的是一个 Dify 聊天应用，所以我们可以对模型进行追问，来了解自己更想了解的内容。相比完全让模型“抹黑”生成内容，在提供了必要的准确上下文后，模型的输出结果明显更靠谱了，对吧？
+因为我们创建的是一个 `Dify` 聊天应用，所以我们可以对模型进行追问，来了解自己更想了解的内容。相比完全让模型“抹黑”生成内容，在提供了必要的准确上下文后，模型的输出结果明显更靠谱了，对吧？
 
 ![](img/33f2763d15a119b2f06c0545cc5be545.png)
 
@@ -1560,7 +1570,7 @@ docker run -d -p 8084:8084 --name movie chengzh/movie
 
 ![](img/df8e793135e51ac8aa833bdd51f51747.png)
 
-当我们完成了应用调整后，访问这个 AI 应用的“概览页面”，找到模型应用的“预览”按钮。点击它，浏览器将打开一个新窗口，在这个新窗口中，我们能够访问我们配置好的 Chat 应用。
+当我们完成了应用调整后，访问这个 AI 应用的“概览页面”，找到模型应用的“预览”按钮。点击它，浏览器将打开一个新窗口，在这个新窗口中，我们能够访问我们配置好的 `Chat` 应用。
 
 ![](img/4d5fe3f55cd1d8813d736e3c6adb8708.png)
 
@@ -1570,14 +1580,14 @@ docker run -d -p 8084:8084 --name movie chengzh/movie
 
 ## 实现 API 接口
 
-Clone 项目 Repo
+`Clone` 项目 `Repo`
 
 ```
 git clone https://gitee.com/cloudzun/dify-with-ai-agent
 cd dify-with-ai-agent/dify/
 ```
 
-分析main.go
+分析 `main.go`
 
 ```
 nano main.go
@@ -1589,49 +1599,49 @@ nano main.go
 package main
 
 import (
-        &quot;encoding/json&quot;
-        &quot;fmt&quot;
-        &quot;io&quot;
-        &quot;net/http&quot;
-        &quot;strings&quot;
+        "encoding/json"
+        "fmt"
+        "io"
+        "net/http"
+        "strings"
 
-        &quot;github.com/gin-gonic/gin&quot;
+        "github.com/gin-gonic/gin"
 )
 
 type QueryPayload struct {
-        Queries []QueryBody `json:&quot;queries&quot;`
+        Queries []QueryBody `json:"queries"`
 }
 
 type QueryBody struct {
-        IndexUID string `json:&quot;indexUid&quot;`
-        Q        string `json:&quot;q&quot;`
-        Limit    int    `json:&quot;limit&quot;`
-        Offset   int    `json:&quot;offset&quot;`
+        IndexUID string `json:"indexUid"`
+        Q        string `json:"q"`
+        Limit    int    `json:"limit"`
+        Offset   int    `json:"offset"`
 }
 
 type SearchResults struct {
-        Results []SearchResult `json:&quot;results&quot;`
+        Results []SearchResult `json:"results"`
 }
 
 type SearchResult struct {
-        IndexUID string `json:&quot;indexUid&quot;`
+        IndexUID string `json:"indexUid"`
         Hits     []struct {
-                ID          int      `json:&quot;id&quot;`
-                Title       string   `json:&quot;title&quot;`
-                Overview    string   `json:&quot;overview&quot;`
-                Genres      []string `json:&quot;genres&quot;`
-                Poster      string   `json:&quot;poster&quot;`
-                ReleaseDate int      `json:&quot;release_date&quot;`
-        } `json:&quot;hits&quot;`
-        Query              string `json:&quot;query&quot;`
-        ProcessingTimeMs   int    `json:&quot;processingTimeMs&quot;`
-        Limit              int    `json:&quot;limit&quot;`
-        Offset             int    `json:&quot;offset&quot;`
-        EstimatedTotalHits int    `json:&quot;estimatedTotalHits&quot;`
+                ID          int      `json:"id"`
+                Title       string   `json:"title"`
+                Overview    string   `json:"overview"`
+                Genres      []string `json:"genres"`
+                Poster      string   `json:"poster"`
+                ReleaseDate int      `json:"release_date"`
+        } `json:"hits"`
+        Query              string `json:"query"`
+        ProcessingTimeMs   int    `json:"processingTimeMs"`
+        Limit              int    `json:"limit"`
+        Offset             int    `json:"offset"`
+        EstimatedTotalHits int    `json:"estimatedTotalHits"`
 }
 
 func GetSearchResult(search string, count int, indexes string, page int, token string) (result SearchResults, err error) {
-        client := &amp;http.Client{}
+        client := &http.Client{}
 
         var queryBody QueryBody
         queryBody.IndexUID = indexes
@@ -1648,13 +1658,13 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
         }
 
         var data = strings.NewReader(string(payload))
-        req, err := http.NewRequest(&quot;POST&quot;, &quot;http://172.17.0.1:7700/multi-search&quot;, data)
+        req, err := http.NewRequest("POST", "http://172.17.0.1:7700/multi-search", data)
         if err != nil {
                 return result, err
         }
 
-        req.Header.Set(&quot;Authorization&quot;, fmt.Sprintf(&quot;Bearer %s&quot;, token))
-        req.Header.Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+        req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
+        req.Header.Set("Content-Type", "application/json")
         resp, err := client.Do(req)
         if err != nil {
                 return result, err
@@ -1666,7 +1676,7 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
                 return result, err
         }
 
-        err = json.Unmarshal(bodyText, &amp;result)
+        err = json.Unmarshal(bodyText, &result)
         if err != nil {
                 return result, err
         }
@@ -1674,30 +1684,30 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
 }
 
 type ExtensionPointRequest struct {
-        Point  string `json:&quot;point&quot;`
+        Point  string `json:"point"`
         Params struct {
-                AppID        string                 `json:&quot;app_id&quot;`
-                ToolVariable string                 `json:&quot;tool_variable&quot;`
-                Inputs       map[string]interface{} `json:&quot;inputs&quot;`
-                Query        string                 `json:&quot;query&quot;`
-        } `json:&quot;params&quot;`
+                AppID        string                 `json:"app_id"`
+                ToolVariable string                 `json:"tool_variable"`
+                Inputs       map[string]interface{} `json:"inputs"`
+                Query        string                 `json:"query"`
+        } `json:"params"`
 }
 
 type ExtensionPointResponse struct {
-        Result string `json:&quot;result&quot;`
+        Result string `json:"result"`
 }
 
 func main() {
         router := gin.Default()
 
-        router.GET(&quot;/new-api-for-dify&quot;, func(c *gin.Context) {
-                s := strings.TrimSpace(c.Query(&quot;keyword&quot;))
-                if s == &quot;&quot; {
-                        c.JSON(http.StatusBadRequest, ExtensionPointResponse{Result: &quot;empty keyword&quot;})
+        router.GET("/new-api-for-dify", func(c *gin.Context) {
+                s := strings.TrimSpace(c.Query("keyword"))
+                if s == "" {
+                        c.JSON(http.StatusBadRequest, ExtensionPointResponse{Result: "empty keyword"})
                         return
                 }
 
-                movies, err := GetSearchResult(s, 3, &quot;movies&quot;, 0, &quot;soulteary&quot;)
+                movies, err := GetSearchResult(s, 3, "movies", 0, "soulteary")
                 if err != nil {
                         c.JSON(http.StatusBadRequest, ExtensionPointResponse{Result: err.Error()})
                         return
@@ -1706,33 +1716,33 @@ func main() {
                 var result string
                 for _, movie := range movies.Results {
                         for _, hit := range movie.Hits {
-                                result += fmt.Sprintf(&quot;- 标题：%s\n&quot;, hit.Title)
-                                result += fmt.Sprintf(&quot;- 简介：%s\n\n&quot;, hit.Overview)
+                                result += fmt.Sprintf("- 标题：%s\n", hit.Title)
+                                result += fmt.Sprintf("- 简介：%s\n\n", hit.Overview)
                         }
                 }
 
                 c.JSON(http.StatusOK, ExtensionPointResponse{Result: result})
         })
 
-        router.Run(&quot;:8084&quot;)
+        router.Run(":8084")
 }
 ```
 
-> 这段Go语言代码是一个使用Gin框架和MeiliSearch创建的HTTP服务器。它接收一个关键词，然后在MeiliSearch的"movies"索引中搜索匹配的电影，返回搜索结果。
+> 这段 `Go` 语言代码是一个使用 `Gin` 框架和 `MeiliSearch` 创建的 `HTTP` 服务器。它接收一个关键词，然后在 `MeiliSearch` 的 `movies` 索引中搜索匹配的电影，返回搜索结果。
 
 > 以下是代码的主要部分：
 
-1.  QueryPayload、QueryBody、SearchResults、SearchResult、ExtensionPointRequest和ExtensionPointResponse结构体用于解析和生成HTTP请求和响应的JSON数据。
+1. `QueryPayload`、`QueryBody`、`SearchResults`、`SearchResult`、`ExtensionPointRequest` 和 `ExtensionPointResponse` 结构体用于解析和生成 HTTP 请求和响应的 JSON 数据。
 
-1.  GetSearchResult函数接收一个关键词、结果数量、索引名、页码和API密钥，然后向MeiliSearch服务器发送POST请求进行搜索。搜索结果被解析为SearchResults结构体。
+1. `GetSearchResult` 函数接收一个关键词、结果数量、索引名、页码和 API 密钥，然后向 `MeiliSearch` 服务器发送 `POST` 请求进行搜索。搜索结果被解析为 `SearchResults` 结构体。
 
-1.  在main函数中，创建了一个Gin路由器，并定义了一个GET路由/new-api-for-dify。这个路由的处理函数首先解析请求数据，然后获取关键词，调用GetSearchResult函数获取搜索结果，然后返回处理后的搜索结果。
+1. 在 `main` 函数中，创建了一个 `Gin` 路由器，并定义了一个 `GET` 路由 `/new-api-for-dify`。这个路由的处理函数首先解析请求数据，然后获取关键词，调用 `GetSearchResult` 函数获取搜索结果，然后返回处理后的搜索结果。
 
-1.  如果在解析请求、获取关键词或搜索的过程中发生错误，服务器会返回一个状态码为400的响应，响应体包含一个Result字段，值为错误信息。
+1. 如果在解析请求、获取关键词或搜索的过程中发生错误，服务器会返回一个状态码为 400 的响应，响应体包含一个 `Result` 字段，值为错误信息。
 
-1.  如果搜索成功，遍历搜索结果，生成一个包含电影标题和简介的字符串，然后返回一个状态码为200的响应，响应体包含一个Result字段，值为生成的字符串。
+1. 如果搜索成功，遍历搜索结果，生成一个包含电影标题和简介的字符串，然后返回一个状态码为 200 的响应，响应体包含一个 `Result` 字段，值为生成的字符串。
 
-1.  最后，启动HTTP服务器，监听8084端口。
+1. 最后，启动 HTTP 服务器，监听 8084 端口。
 
 > 这个服务器可以作为一个微服务，为其他服务提供电影搜索功能。
 
@@ -1750,9 +1760,9 @@ docker run -d -p 8084:8084 --name aiagent aiagent
 docker run -d -p 8084:8084 --name aiagent chengzh/aiagent
 ```
 
-## 创建DIFY AI Agent 应用
+## 创建 `Dify` AI Agent 应用
 
-在首页点击创建空白应用，然后在弹出窗口中选择“Agent”类型的应用，根据你的喜好填写应用名称和描述：
+在首页点击创建空白应用，然后在弹出窗口中选择 `Agent` 类型的应用，根据你的喜好填写应用名称和描述：
 
 ![](img/5a701086596b2fbd9587cd2afd618edf.png)
 
@@ -1764,68 +1774,66 @@ docker run -d -p 8084:8084 --name aiagent chengzh/aiagent
 
 ![](img/9c6f70fbaf7c2dfb0c358ac8e5f08f10.png)
 
-从 Dify 顶部菜单选择“工具”，在工具页面点击左侧的“创建自定义工具”。
+从 `Dify` 顶部菜单选择“工具”，在工具页面点击左侧的“创建自定义工具”。
 
 ![](img/2a1fa896d5583e512b5d2e9a78cb08be.png)
 
-结合我们上面创建的接口信息，在弹出窗口填写适当的配置，就能够完成工具创建啦。参考上面的我们实现的接口，可以轻松实现一个 JSON 配置：
+结合我们上面创建的接口信息，在弹出窗口填写适当的配置，就能够完成工具创建啦。参考上面的我们实现的接口，可以轻松实现一个 `JSON` 配置：
 
 ```
 {
-  &quot;openapi&quot;: &quot;3.1.0&quot;,
-  &quot;info&quot;: {
-    &quot;title&quot;: &quot;电影搜索&quot;,
-    &quot;description&quot;: &quot;从本地电影数据库中获取电影信息&quot;,
-    &quot;version&quot;: &quot;v1.0.0&quot;
+  "openapi": "3.1.0",
+  "info": {
+    "title": "电影搜索",
+    "description": "从本地电影数据库中获取电影信息",
+    "version": "v1.0.0"
   },
-  &quot;servers&quot;: [
+  "servers": [
     {
-      &quot;url&quot;: &quot;http://172.17.0.1:8084&quot; 
+      "url": "http://172.17.0.1:8084" 
     }
   ],
-  &quot;paths&quot;: {
-    &quot;/new-api-for-dify&quot;: {
-      &quot;get&quot;: {
-        &quot;description&quot;: &quot;根据关键词获取电影信息&quot;,
-        &quot;operationId&quot;: &quot;GetMoviesByKeyword&quot;,
-        &quot;parameters&quot;: [
+  "paths": {
+    "/new-api-for-dify": {
+      "get": {
+        "description": "根据关键词获取电影信息",
+        "operationId": "GetMoviesByKeyword",
+        "parameters": [
           {
-            &quot;name&quot;: &quot;keyword&quot;,
-            &quot;in&quot;: &quot;query&quot;,
-            &quot;description&quot;: &quot;想要搜索的关键词&quot;,
-            &quot;required&quot;: true,
-            &quot;schema&quot;: {
-              &quot;type&quot;: &quot;string&quot;
+            "name": "keyword",
+            "in": "query",
+            "description": "想要搜索的关键词",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
-        &quot;deprecated&quot;: false
+        "deprecated": false
       }
     }
   },
-  &quot;components&quot;: {
-    &quot;schemas&quot;: {}
+  "components": {
+    "schemas": {}
   }
 }
 ```
 
-> 这段代码是一个OpenAPI规范的JSON文档，也被称为Swagger文档。OpenAPI规范是一个API描述格式，用于描述RESTful API的结构和行为。
+> 这段代码是一个 `OpenAPI` 规范的 `JSON` 文档，也被称为 `Swagger` 文档。`OpenAPI` 规范是一个 `API` 描述格式，用于描述 `RESTful` `API` 的结构和行为。
 
 > 以下是代码的主要部分：
 
-1.  openapi字段指定了OpenAPI规范的版本，这里是3.1.0。
 
-1.  info字段包含了API的基本信息，包括标题、描述和版本。
 
-1.  servers字段定义了API服务器的URL。
+## OpenAPI 文档字段说明
 
-1.  paths字段定义了API的路径和操作。这里定义了一个GET操作，路径是/new-api-for-dify。这个操作的描述是"根据关键词获取电影信息"，操作ID是"GetMoviesByKeyword"。
-
-1.  GET操作有一个参数，名字是"keyword"，位置在查询字符串中，描述是"想要搜索的关键词"，是必需的，类型是字符串。
-
-1.  components字段用于定义复用的模式、参数、响应等，这里没有定义任何组件。
-
-1.  这个文档的主要目的是描述一个电影搜索API，客户端可以根据这个文档了解API的使用方法。
+1. `openapi`字段指定了OpenAPI规范的版本，这里是3.1.0。
+1. `info`字段包含了API的基本信息，包括标题、描述和版本。
+1. `servers`字段定义了API服务器的URL。
+1. `paths`字段定义了API的路径和操作。这里定义了一个GET操作，路径是`/new-api-for-dify`。这个操作的描述是"根据关键词获取电影信息"，操作ID是`GetMoviesByKeyword`。
+1. GET操作有一个参数，名字是`keyword`，位置在查询字符串中，描述是"想要搜索的关键词"，是必需的，类型是字符串。
+1. `components`字段用于定义复用的模式、参数、响应等，这里没有定义任何组件。
+1. 这个文档的主要目的是描述一个电影搜索API，客户端可以根据这个文档了解API的使用方法。
 
 当我们把配置复制粘贴到弹出窗口中，界面中“可用工具”会出现可以调用的接口，我们可以点击“测试”按钮，来验证接口的可用性。
 
@@ -1843,9 +1851,7 @@ docker run -d -p 8084:8084 --name aiagent chengzh/aiagent
 你是一个专业影评人，善于帮助结合用户需求点评影片中的精彩之处，始终使用中文输出。
 ```
 
-![](img/eb74d5a1d371db41ec2182adb7c41a8e.png)
-
-更新 Agent Prompt
+### 更新 Agent Prompt
 
 接着，在界面左侧点击“添加工具”，将我们刚刚创建好的“电影搜索”工具添加到界面中。
 

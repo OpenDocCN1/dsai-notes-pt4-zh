@@ -1,3 +1,4 @@
+
 # 11.23-谷歌 Gemini 突发试验版模型：重回竞技榜第一，新版 GPT-4o 只领先了 1 天
 
 > 来源：[https://agijuejin.feishu.cn/docx/QjHkduNHQofSCRxkEl1cELc4njf](https://agijuejin.feishu.cn/docx/QjHkduNHQofSCRxkEl1cELc4njf)
@@ -64,13 +65,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/812/638.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/812/626.htm)
 
-
 2024 年 11 月 22 日消息，OpenAI 在与《纽约时报》等的 AI 训练数据诉讼案中，意外删除关键证据。报纸团队花 150 多小时搜索其训练数据，OpenAI 虽承认错误并尝试恢复但数据不完整不可靠。《纽约时报》去年 12 月起诉 OpenAI，要求赔偿‘数十亿美元’，已投入超 100 万美元。OpenAI 已与部分主流媒体合作，显示出版商有不同选择。关键词：OpenAI，纽约时报。
 
 ### 💡 亚马逊大手笔，向“OpenAI 最大对手” Anthropic 追加 40 亿美元投资
 
 IT之家 | [阅读原文](https://www.ithome.com/0/812/622.htm)
-
 
 2024 年 11 月 22 日，亚马逊宣布向 AI 初创公司 Anthropic 追加 40 亿美元投资，总投资额达 80 亿美元。Anthropic 由前 OpenAI 研究团队高管创立，开发了聊天机器人 Claude。亚马逊网络服务（AWS）将成为其主要云计算和模型训练合作伙伴。今年 3 月亚马逊已投资 27.5 亿美元，2023 年 9 月有 12.5 亿美元初始投资协议，且亚马逊未获 Anthropic 董事会席位。今年 9 月，Anthropic 推出 Claude Enterprise，早前还发布了 Claude 3.5 Sonnet 模型及面向中小企业的人工智能‘团队’计划。关键词：亚马逊，Anthropic。
 
@@ -78,13 +77,11 @@ IT之家 | [阅读原文](https://www.ithome.com/0/812/622.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/812/611.htm)
 
-
 2024 年 11 月 22 日，OpenAI 首席产品官确认本周 ChatGPT 网页版将引入高级语音模式，面向付费用户开启。该模式依托 GPT-4o 模型，有原生音频处理能力，能感知非语言信号。Plus 和 Teams 用户每天语音使用量有上限。7 月首次向测试用户开放此功能，9 月底向付费订阅用户推出，未来免费用户也将有机会体验，欧盟地区用户需等待。关键词：OpenAI，ChatGPT。
 
 ### 💡 陈睿：超九成 AI 厂商选择在B站和用户沟通，AIGC 相关内容观看量突破 300 亿次
 
 IT之家 | [阅读原文](https://www.ithome.com/0/812/519.htm)
-
 
 2024 年世界互联网大会乌镇峰会互联网企业家论坛举行，B站董事长兼 CEO 陈睿发表演讲。B站形成超 **7000 个**兴趣圈层，在 AI 方面，每月有超 8000 万用户观看相关内容，2024 年 AIGC 相关内容观看量突破300 亿次。超九成 AI 厂商选择在 B 站和用户沟通。论坛主题为‘创新发展网聚未来’，B 站‘新国风二十四节气’入选‘2024 年度中国互联网企业创新发展十大典型案例’。
 

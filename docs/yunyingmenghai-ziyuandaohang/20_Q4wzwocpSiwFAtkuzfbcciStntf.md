@@ -1,8 +1,9 @@
+
 # Ai智能回复-七木APP
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/BPhrdStLioeVbZxzVWYcsyJznLh](https://yunyingmenghai.feishu.cn/docx/BPhrdStLioeVbZxzVWYcsyJznLh)
 
-#### [七木无人直播助手](https://yunyingmenghai.feishu.cn/wiki/BlOowMOQ4iZAW3kxLI3cIjFFn8b)
+## [七木无人直播助手](https://yunyingmenghai.feishu.cn/wiki/BlOowMOQ4iZAW3kxLI3cIjFFn8b)
 
 Ai知识库智能回复功能
 
@@ -14,11 +15,11 @@ Ai知识库智能回复功能
 
 > 注意AI回复内容限制下字数,太长会回复失败(抖音公屏回复限制字数)
 
-## 使用说明:
+## 使用说明
 
 ## 百度云AppBuilder
 
-https://console.bce.baidu.com/ai_apaas/dialogHome
+`https://console.bce.baidu.com/ai_apaas/dialogHome`
 
 ### 01创建应用-复制应用ID
 
@@ -26,7 +27,7 @@ https://console.bce.baidu.com/ai_apaas/dialogHome
 
 ### 创建应用秘钥
 
-https://console.bce.baidu.com/iam/#/iam/apikey/list
+`https://console.bce.baidu.com/iam/#/iam/apikey/list`
 
 ![](img/cf8325826abe8186e0bf2572aab50b62.png)
 

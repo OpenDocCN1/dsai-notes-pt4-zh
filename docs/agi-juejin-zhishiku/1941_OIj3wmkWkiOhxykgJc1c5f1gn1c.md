@@ -1,9 +1,7 @@
-# 04.16-初探 OpenAI GPT-4.1 性能：AI 编程能力大增，但谷歌 Gemini 依然称王
-
-> 来源：[https://agijuejin.feishu.cn/docx/NVtldbClgo9pDQxnPftcG0gsnIg](https://agijuejin.feishu.cn/docx/NVtldbClgo9pDQxnPftcG0gsnIg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 16 日)
 
+> 来源：https://agijuejin.feishu.cn/docx/NVtldbClgo9pDQxnPftcG0gsnIg
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/6e35a73313056e35d875852e681f9c4d.png)
@@ -34,7 +32,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/845/355.htm)
 
 ![](img/e39cf779312bf2154f17173934b448fb.png)
 
-华为用纯昇腾集群训练出盘古Ultra，参数量135B。在推理任务中与DeepSeek - R1竞争激烈，在多类任务上性能优异，超越诸多强大模型。技术上，采用“三明治”层归一化架构、TinyInit初始化策略等；Tokenizer优化得153376个token平衡词表。训练分三阶段，用8192张昇腾NPU集群，多种并行策略及优化技术，实现52%以上算力利用率 。
+华为用纯昇腾集群训练出盘古Ultra，参数量135B。在推理任务中与DeepSeek - R1竞争激烈，在多类任务上性能优异，超越诸多强大模型。技术上，采用“三明治”层归一化架构，`TinyInit`初始化策略等；`Tokenizer`优化得153376个token平衡词表。训练分三阶段，用8192张昇腾NPU集群，多种并行策略及优化技术，实现52%以上算力利用率 。
 
 ## 💫 企业动态
 
@@ -74,7 +72,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/845/532.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/845/531.htm)
 
-![](img/84afa07486345b84a36623ed8cd4af01.png)
+![](img/84afa07486345b8c86a36623ed8cd4af01.png)
 
 彭博社4月16日报道，Anthropic正筹备在Claude AI聊天机器人中推出“语音模式”，最快本月上线，将与OpenAI竞争。其将提供三种英文语音。上月首席产品官就提到有语音功能原型，此前应用分析师也发现相关线索。Anthropic由前OpenAI员工创办，近日推出高价订阅方案和科研AI工具，还探索新收入渠道，如针对教育领域项目。
 

@@ -1,3 +1,4 @@
+
 # 231105｜可能是最强开源代码大模型 DeepSeek Coder；OpenAI 首席科学家，ChatGPT 可能已有意识；微软正式推出 AI 助手 Copilot；Nvidia 发布大模型 ChipNeMo，辅助芯片设计；全球最长上下文大模型发布：百川智能
 
 > 来源：[https://leonzhang.feishu.cn/docx/GN8rdswxnoGxxfx8OaDcpVcencb](https://leonzhang.feishu.cn/docx/GN8rdswxnoGxxfx8OaDcpVcencb)
@@ -16,9 +17,8 @@ DeepSeek 在成立六个月后推出了智能代码助手“DeepSeek Coder”，
 
 DeepSeek Coder 还能生成测试用例和帮助修复错误，对数据分析和编码挑战非常有用。目前，这一工具处于开放测试阶段，用户可以通过内测链接访问。DeepSeek Coder 提供多种模型，包括 1B、7B 和 33B 等不同规模的模型，并且都是开源的。在使用 HumanEval 编程多语言测试数据集的评估中，DeepSeek Coder 在多种编程语言中的表现超越了现有的开源模型，在使用 HumanEval、MBPP 和 DS-1000 数据集的代码生成任务评估中，分别超过 CodeLlama 9.3%、10.8%和 5.9%。DeepSeek Coder 70 亿参数版本的性能匹敌 CodeLlama 的 340 亿参数版本。此外，DeepSeek Coder 在没有任何微调的情况下也展现出了强大的数学和推理能力。
 
-+   Hugging Face 首页：https://huggingface.co/deepseek-ai
-
-+   GitHub 仓库：https://github.com/deepseek-ai/DeepSeek-Coder
++   Hugging Face 首页：`https://huggingface.co/deepseek-ai`
++   GitHub 仓库：`https://github.com/deepseek-ai/DeepSeek-Coder`
 
 ![](img/6d0a44d3ee530d7546c2da68baedb88b.png)
 
@@ -26,7 +26,7 @@ DeepSeek Coder 还能生成测试用例和帮助修复错误，对数据分析�
 
 Midjourney 推出了一项名为“Style Tuner”的新功能，让用户能够通过简单的命令创建和定制自己的图像风格，进一步应用于图像生成过程中。用户通过输入特定的命令来选择和优化风格，可以在专门的页面上进行个性化设置，并通过 URL 分享自定义风格。此外，Midjourney 提供了随机风格生成选项，允许用户混合风格并调整其强度。该功能目前已经支持特定图像，使用别人的风格 URL 不会消耗用户的 Fast Hours 资源。
 
-### [早晚实现人机合一！Open AI 首席科学家专访：Cha](https://mp.weixin.qq.com/s/kSjaSvNAH6JErjWFEn0CCA)tGPT 可能已有意识，AI 将万世不朽
+### [早晚实现人机合一！Open AI 首席科学家专访：ChatGPT 可能已有意识，AI 将万世不朽](https://mp.weixin.qq.com/s/kSjaSvNAH6JErjWFEn0CCA)
 
 OpenAI 首席科学家 Ilya Sutskever 在《麻省理工科技评论》的访谈中提出，AI 的发展可能导致它们拥有意识，并强调世界需要认清 AI 的真正力量。他预见人类可能会主动与机器融合甚至成为 AI 的一部分，为了保持竞争力。
 
@@ -38,39 +38,35 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 
 ### 工信部倡导：AI 大模型驱动人形机器人革新
 
-工信部发布了《人形机器人创新发展指导意见》。这份指导意见的宗旨是以人工智能的大模型技术为核心，推动人形机器人关键技术的突破发展。重点任务包括开发类似于人类大脑的高级人工智能系统，以增强机器人的环境感知、行为控制和与人交互的能力。此外，还要研制控制机器人运动的“小脑””，构建运动控制算法库，以及建立网络控制系统架构，从而推动人形机器人技术和产业的发展。
+工信部发布了《人形机器人创新发展指导意见》。这份指导意见的宗旨是以人工智能的大模型技术为核心，推动人形机器人关键技术的突破发展。重点任务包括开发类似于人类大脑的高级人工智能系统，以增强机器人的环境感知、行为控制和与人交互的能力。此外，还要研制控制机器人运动的“小脑”，构建运动控制算法库，以及建立网络控制系统架构，从而推动人形机器人技术和产业的发展。
 
 ![](img/97006ea35c6b0874c2b1f557ecbd27b7.png)
 
-### [微软正式推出 Win11 23H2，AI 助](https://www.ithome.com/0/729/094.htm)手 Copilot 来了 - IT 之家
+### [微软正式推出 Win11 23H2，AI 助手 Copilot 来了 - IT 之家](https://www.ithome.com/0/729/094.htm)
 
-微软宣布推出 Windows 11 的最新更新版本 23H2，引入了 AI 助手 Copilot 的预览版，首先在北美、亚洲部分地区和南美上市，并计划逐步拓展至其他市场。Copilot 可通过任务栏或快捷键“Win+C”激活，以侧边栏形式出现，并能够利用浏览器上下文进行智能响应，如网页内容摘要，还集成了剪贴板功能和图像处理。用户可根据需要选择 Copilot 的聊天语气，从“精确”的简洁回复到“创意”的详细描述，或者选择一个中间的“平衡”选项。
+微软宣布推出 Windows 11 的最新更新版本 23H2，引入了 AI 助手 Copilot 的预览版，首先在北美、亚洲部分地区和南美上市，并计划逐步拓展至其他市场。Copilot 可通过任务栏或快捷键`Win+C`激活，以侧边栏形式出现，并能够利用浏览器上下文进行智能响应，如网页内容摘要，还集成了剪贴板功能和图像处理。用户可根据需要选择 Copilot 的聊天语气，从“精确”的简洁回复到“创意”的详细描述，或者选择一个中间的“平衡”选项。
 
-+   地址：https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-11-version-23h2/ba-p/3967814
++   地址：`https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-11-version-23h2/ba-p/3967814`
 
 ![](img/a283941127550e88b408f13dd95166a0.png)
 
-### [百度文心一言推出会员：连续包月 49.9 ](https://www.ithome.com/0/729/135.htm)元，基础功能依旧免费使用 - IT 之家
+### [百度文心一言推出会员：连续包月 49.9 元，基础功能依旧免费使用 - IT 之家](https://www.ithome.com/0/729/135.htm)
 
-百度推出了文心一言的会员服务，通过该服务用户可以访问更高级的 AI 模型——文心大模型 4.0。标准会员费用为每月 59.9 元，而连续订阅的优惠价格为 49.9 元/月。还有一个文心一言和文心一格的联合会员服务，费用为每月
-
-99 元，提供一系列额外权益，如图像和文本生成能力升级、网页端插件、App 端的灵感值奖励等。文心一格的会员特别享有生成高清图像、设计海报和艺术字、以及 AI 编辑图片等服务。尽管如此，文心大模型 3.5 等基础功能仍然免费提供。
+百度推出了文心一言的会员服务，通过该服务用户可以访问更高级的 AI 模型——文心大模型 4.0。标准会员费用为每月 59.9 元，而连续订阅的优惠价格为 49.9 元/月。还有一个文心一言和文心一格的联合会员服务，费用为每月 99 元，提供一系列额外权益，如图像和文本生成能力升级、网页端插件、App 端的灵感值奖励等。文心一格的会员特别享有生成高清图像、设计海报和艺术字、以及 AI 编辑图片等服务。尽管如此，文心大模型 3.5 等基础功能仍然免费提供。
 
 ![](img/a3dc5ca8531776c3adc8bc182dbb6b7e.png)
 
-### [英伟达发布大语言模型 ChipN](https://www.ithome.com/0/729/082.htm)eMo，专攻辅助芯片设计 - IT 之家
+### [英伟达发布大语言模型 ChipNeMo，专攻辅助芯片设计 - IT 之家](https://www.ithome.com/0/729/082.htm)
 
 英伟达推出了其最新大语言模型 ChipNeMo，旨在应用于 AI 芯片设计领域。ChipNeMo 具备问答、EDA 脚本生成和 Bug 总结分析功能，可以帮助工程师快速解答芯片设计问题、生成代码，以及总结和分析 Bug。该模型使用领域自适应技术，结合自定义标记器、领域特定指令的监督微调等方法，取得了良好的性能，使大语言模型在工程助理、EDA 脚本和 Bug 分析等领域发挥出色的作用。ChipNeMo 旨在提高英伟达的设计效率，特别适用于复杂的半导体设计任务，为芯片设计师提供有力的支持。
 
-+   https://blogs.nvidia.com/blog/2023/10/30/llm-semiconductors-chip-nemo/
-
-+   https://www.eetimes.com/nvidia-trains-llm-on-chip-design/
-
-+   https://d1qx31qr3h6wln.cloudfront.net/publications/ChipNeMo%20%2824%29.pdf
++   `https://blogs.nvidia.com/blog/2023/10/30/llm-semiconductors-chip-nemo/`
++   `https://www.eetimes.com/nvidia-trains-llm-on-chip-design/`
++   `https://d1qx31qr3h6wln.cloudfront.net/publications/ChipNeMo%20%2824%29.pdf`
 
 ![](img/3361ced250c0fa56557152e71ff6296f.png)
 
-### [苹果低调布局 AI 领域：已收购 ](https://www.c114.com.cn/ai/5339/a1246601.html)20 多家公司，其订阅模式比友商更有优势
+### [苹果低调布局 AI 领域：已收购 20 多家公司，其订阅模式比友商更有优势](https://www.c114.com.cn/ai/5339/a1246601.html)
 
 苹果正积极加强其在人工智能领域的竞争地位，通过大力招聘、并购初创公司以及自主开发大型语言模型（Ajax），以提高 AI 技术的成熟度。虽然苹果在 AI 方面相对低调，但已秘密收购了 20 多家 AI 技术公司，并投入数百万美元每天来训练其大型语言模型。苹果具备独特的优势，因为其庞大的付费订阅用户基础使其有望在未来大型语言模型服务方面实现订阅盈利，从而在新型应用出现时具备独特竞争优势。
 
@@ -78,11 +74,10 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 
 ### 中文最强开源大模型来了！130 亿参数，0 门槛商用
 
-开源最彻底的大模型来了，昆仑万维近日发布了 Skywork-13B 系列，其中包括 Skywork-13B-Base 和 Skywork-13B-Math 两个版本。这个系列大模型拥有 130 亿参数以及 3.2 万亿高质量多语言训练数据，在生成、创作、数学推理等任务上表现突出。此外，昆仑万维还慷慨地将其中文数据集 Skypile/Chinese-Web-Text-150B 一同开源，为开源社区和开发者提供了巨大的资源。这一开源行为无需商用申请，同时也提供了轻量版大模型，可在消费级显卡上进行部署和推理。这一开源举措的背后是昆仑万维的坚定信念，旨在降低大模型的使用门槛，为 AI 应用的未来发展提供更多可能性。
+开源最彻底的大模型来了，昆仑万维近日发布了 Skywork-13B 系列，其中包括 Skywork-13B-Base 和 Skywork-13B-Math 两个版本。这个系列大模型拥有 130 亿参数以及 3.2 万亿高质量多语言训练数据，在生成、创作、数学推理等任务上表现突出。此外，昆仑万维还慷慨地将其中文数据集 `Skypile/Chinese-Web-Text-150B` 一同开源，为开源社区和开发者提供了巨大的资源。这一开源行为无需商用申请，同时也提供了轻量版大模型，可在消费级显卡上进行部署和推理。这一开源举措的背后是昆仑万维的坚定信念，旨在降低大模型的使用门槛，为 AI 应用的未来发展提供更多可能性。
 
-+   Skywork-13B 下载地址（Model Scope）：https://modelscope.cn/organization/skywork
-
-+   Skywork-13B 下载地址（Github）：https://github.com/SkyworkAI/Skywork
++   Skywork-13B 下载地址（Model Scope）：`https://modelscope.cn/organization/skywork`
++   Skywork-13B 下载地址（Github）：`https://github.com/SkyworkAI/Skywork`
 
 ![](img/3ea02b9353ee42309b4265f268d61f25.png)
 
@@ -92,13 +87,13 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 
 ![](img/3b687fdd53d04dd0afce8f35158ff1da.png)
 
-### [微软 CEO 纳德拉：付费 Github](https://www.163.com/dy/article/II7M00P80511B8LM.html) Copilot 用户已超过 100 万
+### [微软 CEO 纳德拉：付费 Github Copilot 用户已超过 100 万](https://www.163.com/dy/article/II7M00P80511B8LM.html)
 
 据《华尔街日报》报道，微软 CEO 萨蒂亚・纳德拉（Satya Nadella）表示，GitHub Copilot 的付费客户在第三季度环比增长了 40%，“我们在超过 37000 个订阅 copilot 商业服务的组织中拥有超过 100 万付费 copilot 用户，这在美国以外的地区具有很大的吸引力。”
 
 ![](img/a7de1c6f96d4ef23e87556852487add3.png)
 
-### [谷歌地图宣布更新：新增一系列 AI ](https://www.ithome.com/0/727/945.htm)功能，支持“沉浸式视图” - IT 之家
+### [谷歌地图宣布更新：新增一系列 AI 功能，支持“沉浸式视图” - IT 之家](https://www.ithome.com/0/727/945.htm)
 
 谷歌地图近期宣布将推出一系列功能更新，包括新增人工智能（AI）功能和“沉浸式视图”。通过 AI，新版谷歌地图将为用户提供更准确的搜索结果和基于照片的展示，例如搜索“动物拿铁”或“带狗去南瓜地”将获得直接相关的结果。同时，扩展的 Lens 功能将帮助用户通过 AR 和 AI 技术根据周围环境进行定位和找到正确方向，该功能将在本周扩展至 50 多个新城市。为车载地图做了准备的谷歌，将利用不同颜色描绘建筑物，提供详细的车道信息，帮助驾驶员在高速公路上更高效、安全地规划车道变更。在美国，增加的 HOV（高占用率车辆）车道数据将助力更好路线规划。谷歌还将利用 AI 扩大限速信息的支持，并从本周开始为配备 Google 功能的电动汽车提供与充电站相关的信息。同时，沉浸式视图功能也将在多个城市的 Android 和 iOS 平台上推出，为用户带来更丰富的地图使用体验。
 
@@ -112,7 +107,7 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 
 ## 💰 融资快讯
 
-### [36 氪首发 ｜ 「白盒子」微电子完成数亿元 A 轮融资，研](https://www.36kr.com/p/2497055420438664)发无线通信高端 SoC 芯片 -36 氪
+### [36 氪首发 ｜ 「白盒子」微电子完成数亿元 A 轮融资，研发无线通信高端 SoC 芯片 -36 氪](https://www.36kr.com/p/2497055420438664)
 
 白盒子微电子是一家成立于 2020 年的上海公司，专注于 SDH（软件定义硬件）芯片设计技术，旨在通过架构创新开发高端 SoC 芯片，用于无线通信领域。他们已成功推出数字中频（DFE）SOC 芯片，并致力于数字基带 SoC 芯片的研发。公司还在射频领域芯片布局，开发了相控阵应用配套的幅相多功能芯片，以支持商业航天、移动通信等多样化场景应用。白盒子微电子在 A 轮融资中获得了数亿元资金，本轮由中科院资本领投，新鼎资本、联升投资、国科发展、磐霖资本、风物资本跟投，联和投资等老股东继续加持。资金主要用于订单交付、产品研发、应用拓展和团队建设。
 
@@ -120,7 +115,7 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 
 智谱 AI 在累计获得超 25 亿人民币融资后，发布了全自研的第三代基座大模型 ChatGLM3 及相关产品。自 2020 年底，该公司完成了五次产品升级，与腾讯、百度等国内大模型公司处于激烈竞争中。CEO 张鹏表示，ChatGLM3 在语义和逻辑能力上都有大幅度增强，支持复杂场景的应用。智谱 AI 的 GLM 模型在与国际巨头如 OpenAl、Google Brain 等的大模型比较中表现出色。此外，大模型领域的投资活动增加，但国内公司的融资额与美国仍存在差距。
 
-### [再获谷歌 20 亿美元追加投资，Anthropic](https://www.36kr.com/p/2496549981230980) 一年内募集近 70 亿美元 -36 氪
+### [再获谷歌 20 亿美元追加投资，Anthropic 一年内募集近 70 亿美元 -36 氪](https://www.36kr.com/p/2496549981230980)
 
 据知情人士透露，谷歌已同意对人工智能初创公司 Anthropic 追加最高 20 亿美元的投资。此举将让试图在新兴技术领域实现下一个重大突破的明星初创企业之间的竞争进一步加剧。今年年初，谷歌已经对 Anthropic 投资 5.5 亿美元。
 
@@ -132,11 +127,11 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 
 ![](img/d1588755b72f76613c2751d9bdcc427e.png)
 
-### [GPT-4 写代码，DALL·E 3+M](https://posts.careerengine.us/p/6541dd5e5afc3a4ebd719093)J 搞定画面，AI 版「愤怒的南瓜」来袭
+### [GPT-4 写代码，DALL·E 3+Midjourney 搞定画面，AI 版「愤怒的南瓜」来袭](https://posts.careerengine.us/p/6541dd5e5afc3a4ebd719093)
 
 小游戏项目名为“愤怒的南瓜”，由推特用户 javilopen 制作，使用了 GPT-4、DALL•E3 和 Midjourney，其中 GPT-4 负责编写游戏的全部代码。游戏画面和效果非常出色，难以辨别其是由大模型生成的。作者通过逐步向 GPT-4 提出具体要求，从简单开始，逐渐扩展和优化代码，使游戏逐渐完善。小伙伴们可以试玩，还能自己创造关卡，不过目前还不支持手机端运行。
 
-体验地址：https://bestaiprompts.art/angry-pumpkins/index.html
+体验地址：`https://bestaiprompts.art/angry-pumpkins/index.html`
 
 ![](img/48b080c148ec406c24c7ab5b2a74f085.png)
 
@@ -149,6 +144,8 @@ Sutskever 与 Geoffrey Hinton 共同推动了深度学习的重大进展，并�
 ## 📄 资料精选
 
 ### 吴恩达推新课《Generative Al for Everyone》
+
+
 
 AI 专家吴恩达推出了一门新的在线课程《Generative Al for Everyone》，旨在教授生成式人工智能的原理和应用，课程面向广泛受众，无需先前的编程或 AI 背景知识，以便于任何人学习如何在各种环境中使用生成式 AI，以及它将如何影响未来的工作和社会。
 

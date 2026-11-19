@@ -1,16 +1,17 @@
+
 # OpenList保姆级教程
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/OO1idlXsEon1KcxNOnXcuJmOnUK](https://xodnytdcaw.feishu.cn/docx/OO1idlXsEon1KcxNOnXcuJmOnUK)
 
-# 一本地部署
+## 一、本地部署
 
-## 1.安装OpenList
+### 1. 安装OpenList
 
 下载地址
 
-[h](https://github.com/OpenListTeam/OpenList/releases/tag/v4.0.8)ttps://github.com/OpenListTeam/OpenList/releases/tag/v4.0.8
+https://github.com/OpenListTeam/OpenList/releases/tag/v4.0.8
 
-安装目录cmd启动服务
+在安装目录使用`cmd`启动服务：
 
 ```
 openlist server
@@ -18,20 +19,20 @@ openlist server
 
 浏览器访问地址：127.0.0.1：端口号
 
-账号：admin  密码：cmd会呈现（后台改）没有的话在OpenList\daemon\start.log
+账号：`admin`  密码：`cmd`会呈现（后台改）没有的话在`OpenList\daemon\start.log`
 
-在安装目录，新建VBS脚本，发送快捷方式到桌面，然后剪贴到自启动文件夹（shell:startup）
+在安装目录，新建VBS脚本，发送快捷方式到桌面，然后剪贴到自启动文件夹（`shell:startup`）
 
 ```
 Dim ws
-Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)
-ws.run &quot;openlist.exe server&quot;,vbhide
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "openlist.exe server", vbhide
 Wscript.quit
 ```
 
-## 2.网盘挂载
+### 2. 网盘挂载
 
-这个环节当中最重要的是添加根文件夹ID，一般都是按下F12，网络，最新chrome浏览器都是在在载荷里，比如兰奏云的对应folder_id，迅雷的对应parent_id，夸克的一般是分享链接的后面的一段数字。
+这个环节当中最重要的是添加根文件夹ID，一般都是按下F12，网络，最新chrome浏览器都是在在载荷里，比如兰奏云的对应`folder_id`，迅雷的对应`parent_id`，夸克的一般是分享链接的后面的一段数字。
 
 ![](img/0f6d6a12d1fdc9ee286a066b9e14b80d.png)
 
@@ -41,7 +42,7 @@ Wscript.quit
 
 https://oplist.org/zh/guide/drivers/
 
-## 3.磁盘映射
+### 3. 磁盘映射
 
 用到的软件raidrive
 
@@ -53,7 +54,7 @@ raidrive软件的设置如下
 
 ![](img/b37434e5c924f830669a36fb7e3d8cbb.png)
 
-## 4.PotPlayer播放
+### 4. PotPlayer播放
 
 打开软件，新建专辑，然后选择“FTP/WebDAV/HTTP搜索”，填写主机路径与端口，账号与密码，这样，你网盘的资源就直接同步过来了。
 
@@ -61,17 +62,17 @@ raidrive软件的设置如下
 
 > 注意：
 
-> [映射的磁](https://pan.xunlei.com/s/VOVYAPfBHqH7P09owGophrIQA1?pwd=8imi)盘默认无图标，磁盘图标自定义修改工具：点此下载
+> [映射的磁盘](https://pan.xunlei.com/s/VOVYAPfBHqH7P09owGophrIQA1?pwd=8imi)默认无图标，磁盘图标自定义修改工具：点此下载
 
-> [raid](https://pan.xunlei.com/s/VOVYAAAWmY2hq78N5lqBiOaWA1?pwd=eyji#)rive这款软件的有弹窗广告，可用火绒弹窗拦截:点此下载
+> [raidrive](https://pan.xunlei.com/s/VOVYAAAWmY2hq78N5lqBiOaWA1?pwd=eyji#)这款软件的有弹窗广告，可用火绒弹窗拦截:点此下载
 
-# 二，云端部署（公网访问）
+## 二、云端部署（公网访问）
 
-## IPV6直接访问
+### IPV6直接访问
 
-[htt](https://hsk.oray.com/)p://[IPV6地址]:5244  或花生壳内网穿透   （IPV6地址查询命令ipconfig）
+`http://[IPV6地址]:5244` 或花生壳内网穿透（IPV6地址查询命令`ipconfig`）
 
-## 服务器部署
+### 服务器部署
 
 还有一种方法就是部署云应用或者部署服务器上，再买个域名，然后域名解析，通过域名访问
 
@@ -81,7 +82,7 @@ raidrive软件的设置如下
 
 雨云服务器：[点击直达](https://www.rainyun.com/NzYxMDg2_)
 
-# 三.界面美化
+## 三、界面美化
 
 参考1：https://blog.mmoe.work/oplist-beautification/、
 
@@ -93,12 +94,12 @@ Alist常用样式代码 :https://blog.itvv.cn/archives/491
 
 ![](img/2dcbcac8c00f3a76b2b15d008136831e.png)
 
-## 设置-全局
+### 设置-全局
 
 自定义头部
 
 ```
-&lt;style type=&quot;text/css&quot;&gt;
+<style type="text/css">
 body {
   /* 新拟态核心色调 */
   --neumorph-bg: #f0f0f3;
@@ -115,7 +116,7 @@ body {
 
 /* 添加一个伪元素作为背景层（避免影响内容布局） */
 body::before {
-  content: &quot;&quot;;
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -192,14 +193,15 @@ body::before {
     max-width: 95%;
   }
 }
-&lt;/style&gt;
+</style>
 ```
 
 自定义内容
 
+
+
 ```
 &lt;div id=&quot;customize&quot; style=&quot;&quot;&gt;
-
             &lt;/div&gt;
         &lt;/center&gt;
         &lt;br&gt;
@@ -219,7 +221,6 @@ body::before {
 
 &lt;!--点击烟花--&gt;
 &lt;!--&lt;script async src=&quot;https://cdn.jsdelivr.net/gh/mocchen/cssmeihua/js/yanhuabowen.js&quot;&gt;&lt;/script&gt;--&gt;
-
 &lt;span class=&quot;js-cursor-container&quot;&gt;&lt;/span&gt;
 &lt;script async src=&quot;https://cdn.jsdelivr.net/gh/mocchen/cssmeihua/js/xiaoxingxing.js&quot;&gt;&lt;/script&gt;
 &lt;!--樱花飘落二选一--&gt;
@@ -244,7 +245,6 @@ var granimInstance = new Granim({
                  [&#x27;#9890e3&#x27;, &#x27;#b1f4cf&#x27;],
                  [&#x27;#a1c4fd&#x27;, &#x27;#c2e9fb&#x27;],
                  [&#x27;#fff1eb&#x27;, &#x27;#ace0f9&#x27;]
-           
             ]
         }
     }
@@ -345,7 +345,7 @@ var granimInstance = new Granim({
 
     document.addEventListener(&#x27;keydown&#x27;, function(e) {
       if (e.ctrlKey) {
-        const type = [&#x27;4&#x27;, &#x27;[&#x27;].includes(e.key) ? 1 : [&#x27;6&#x27;, &#x27;]&#x27;].includes(e.key) ? 3 : [&#x27;5&#x27;, &#x27;\\&#x27;].includes(e.key) ? 2 : null
+        const type = [&#x27;4&#x27;, &#x27;[&#x27;].includes(e.key) ? 1 : [&#x27;6&#x27;, &#x27;]&#x27;].includes(e.key) ? 3 : [&#x27;5&#x27;, &#x27;\&#x27;].includes(e.key) ? 2 : null
         if (type) {
           e.preventDefault()
           e.stopPropagation()
@@ -383,7 +383,7 @@ var granimInstance = new Granim({
       control.className = &#x27;music-control&#x27;
       control.innerHTML = `&lt;i onclick=&quot;musicMove(1)&quot; title=&quot;CTRL+[ 上一曲&quot;&gt;◄&lt;/i&gt;
       &lt;i onclick=&quot;musicMove(2)&quot; title=&quot;CTRL+] 上一曲&quot;&gt;◼&lt;/i&gt;
-      &lt;i onclick=&quot;musicMove(3)&quot; title=&quot;CTRL+\\ 暂停&quot;&gt;►&lt;/i&gt;`
+      &lt;i onclick=&quot;musicMove(3)&quot; title=&quot;CTRL+\\\ 暂停&quot;&gt;►&lt;/i&gt;`
       document.querySelector(&#x27;.aplayer-body&#x27;).append(control)
     }
     window.initMuscPlus = true
@@ -557,7 +557,7 @@ var granimInstance = new Granim({
 
     document.addEventListener(&#x27;keydown&#x27;, function(e) {
       if (e.ctrlKey) {
-        const type = [&#x27;4&#x27;, &#x27;[&#x27;].includes(e.key) ? 1 : [&#x27;6&#x27;, &#x27;]&#x27;].includes(e.key) ? 3 : [&#x27;5&#x27;, &#x27;\\&#x27;].includes(e.key) ? 2 : null
+        const type = [&#x27;4&#x27;, &#x27;[&#x27;].includes(e.key) ? 1 : [&#x27;6&#x27;, &#x27;]&#x27;].includes(e.key) ? 3 : [&#x27;5&#x27;, &#x27;\&#x27;].includes(e.key) ? 2 : null
         if (type) {
           e.preventDefault()
           e.stopPropagation()
@@ -595,7 +595,7 @@ var granimInstance = new Granim({
       control.className = &#x27;music-control&#x27;
       control.innerHTML = `&lt;i onclick=&quot;musicMove(1)&quot; title=&quot;CTRL+[ 上一曲&quot;&gt;◄&lt;/i&gt;
       &lt;i onclick=&quot;musicMove(2)&quot; title=&quot;CTRL+] 上一曲&quot;&gt;◼&lt;/i&gt;
-      &lt;i onclick=&quot;musicMove(3)&quot; title=&quot;CTRL+\\ 暂停&quot;&gt;►&lt;/i&gt;`
+      &lt;i onclick=&quot;musicMove(3)&quot; title=&quot;CTRL+\\\ 暂停&quot;&gt;►&lt;/i&gt;`
       document.querySelector(&#x27;.aplayer-body&#x27;).append(control)
     }
     window.initMuscPlus = true
@@ -628,8 +628,9 @@ var granimInstance = new Granim({
 &lt;/script&gt;
 &lt;!---去掉底部文字---&gt;
 &lt;style type=&quot;text/css&quot;&gt; .footer { display: none !important; } &lt;/style&gt;
-
 ```
+
+
 
 ## 元数据
 
@@ -722,19 +723,19 @@ var granimInstance = new Granim({
 
 ## 用户
 
-用户-guest-编辑，把默认“停用”打勾取消  加密码也是在这个地方
+用户-guest-编辑，把默认“停用”打勾取消，加密码也是在这个地方。
 
-# 四.常见问题
+## 四.常见问题
 
-通过RaiDrive同时挂载蓝奏云与夸克，复制文件到本地, 但夸克云盘复制提示"目标文件夹访问被拒绝"
+通过RaiDrive同时挂载蓝奏云与夸克，复制文件到本地，但夸克云盘复制提示"目标文件夹访问被拒绝"。
 
 https://github.com/AlistGo/alist/issues/5446
 
-改本地代理即可，但是进夸克真的卡，不知为什么
+改本地代理即可，但是进夸克真的卡，不知为什么。
 
-![](img/3db84d5f878d1d9618270af83e0e6863.png)
+![](`img/3db84d5f878d1d9618270af83e0e6863.png`)
 
-# 五. 远程服务
+## 五. 远程服务
 
 🛰️：dqtx33
 

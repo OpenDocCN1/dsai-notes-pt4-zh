@@ -1,3 +1,4 @@
+
 # 【Hiper】干掉Sora？横扫Runway和Pika？目前免费试用！（附教程）
 
 > 来源：[https://geekbang.feishu.cn/docx/KThrdAGwGoreULxyWo7ccRpJnNc](https://geekbang.feishu.cn/docx/KThrdAGwGoreULxyWo7ccRpJnNc)
@@ -22,6 +23,8 @@
 
 这不，最近又杀疯了一个，号称创始人是华人，要赶超“期货”Sora，重点是免费！免费！只要能免费用的东西就是好东西（搓小手）。
 
+## 官方视频演示
+
 先来一睹为快，看看官网放的视频效果如何：
 
 [🎦 点击观看视频](https://mpvideo.qpic.cn/0b2eweaaqaaavyabqeqsibtfbmodbcyqacaa.f10002.mp4?dis_k=954d92e99fdcec8fde99d622da5434fd&dis_t=1717141766&play_scene=10120&auth_info=GuyB19YrNg94vvnUv351EEJvZDEfOz1JNhVBdTkQR0QnYDsIeiNrYBp3MGIXX2IqSA==&auth_key=ccdb46f225554db2e865ee959a5911e8&vid=wxv_3403552483812032513&format_id=10002&support_redirect=0&mmversion=false)
@@ -44,11 +47,13 @@
 
 不看时间，单从视频效果上说，确实不输Sora，接下来我们一起测试一下：
 
-1.首先我们登陆网站 https://haiper.ai/，需要用到google或者discord账户进行登录，点击免费试用或者开始创建。
+## 快速上手教程
+
+1. 首先我们登陆网站 `https://haiper.ai/`，需要用到google或者discord账户进行登录，点击免费试用或者开始创建。
 
 ![](img/6e5f38869970214b9630f47f9e8dbd86.png)
 
-2.来看一下它的界面：
+2. 来看一下它的界面：
 
 左侧工具栏，在Explore里，我们可以看到黄色框的部分有 文生视频、图生视频、视频修改、扩展视频 ，最后一部分目前还没上线。
 
@@ -58,9 +63,11 @@
 
 ![](img/7a3cfa383239c9c881efd2c3f8fdfb83.png)
 
-1）先来看一下文生视频的效果：
+### 文生视频效果
 
-**提示词： **The background is a bustling restaurant, on the table lies a plate of steaming hot crayfish, with a total of seven crayfish. 背景是热闹的餐厅，桌子上有一盘热气腾腾的小龙虾，小龙虾有7只。
+先来看一下文生视频的效果：
+
+提示词： The background is a bustling restaurant, on the table lies a plate of steaming hot crayfish, with a total of seven crayfish. 背景是热闹的餐厅，桌子上有一盘热气腾腾的小龙虾，小龙虾有7只。
 
 [🎦 点击观看视频](https://mpvideo.qpic.cn/0b2ewaaaoaaadmab5ayspftfbmgda6yaabya.f10002.mp4?dis_k=cc1e5661009a999135d66c46320d594c&dis_t=1717141767&play_scene=10120&auth_info=fPT5jbMOYnpFy+iGlHcIEz5DMzA0H2oxHjsFVSI+X1VBaXI6EQY/FScCITA8Vh8pNA==&auth_key=154c855b2a6ac52ff6f7844df6dfe7c0&vid=wxv_3403593479174209540&format_id=10002&support_redirect=0&mmversion=false)
 
@@ -68,11 +75,13 @@
 
 说真的我觉得效果跟收费的工具差不多……除了有几只熟透的小龙虾还在蹬腿，有点惊悚以外，无论是画质还是对提示词的理解能力，都很不错。
 
-2）再来看一下图生视频的效果：
+### 图生视频效果
+
+再来看一下图生视频的效果：
 
 ![](img/baa6b7a9325d37802b8c7bf5fa369cf1.png)
 
-我用了这张图作为原图， **提示词： **In the forest, there are raging flames, and firefighters are moving forward with difficulty. 森林中熊熊火焰，消防员在艰难地前行。
+我用了这张图作为原图，提示词： In the forest, there are raging flames, and firefighters are moving forward with difficulty. 森林中熊熊火焰，消防员在艰难地前行。
 
 [🎦 点击观看视频](https://mpvideo.qpic.cn/0bc3aiaauaaaseabcnqspntfaawdbibaacqa.f10002.mp4?dis_k=1146a7e84f46276165ae0626dad89a4f&dis_t=1717141767&play_scene=10120&auth_info=deeom+0HbHVFzuiDx3FdFT4UYGRoEzIxG2lXUHFqXgZIbSQ3Rg0xGicHITVvUEovNA==&auth_key=077f75d4551714ff8f66d367024d919a&vid=wxv_3403601671371341832&format_id=10002&support_redirect=0&mmversion=false)
 
@@ -80,7 +89,9 @@
 
 说实话，居然比我用Runway跑出来的还要好……心疼我那15美金。
 
-3）视频修改功能：我选择了一个之前生成的视频，对细节不是很满意，我们来修改一下看看效果。点击Vary Region，可以选择自己想要修改的部分。
+### 视频修改功能
+
+视频修改功能：我选择了一个之前生成的视频，对细节不是很满意，我们来修改一下看看效果。点击Vary Region，可以选择自己想要修改的部分。
 
 ![](img/b98b0cc700666fd9facc5a261ae421ec.png)
 

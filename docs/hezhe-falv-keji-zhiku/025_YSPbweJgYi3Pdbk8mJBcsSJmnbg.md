@@ -1,18 +1,19 @@
+
 # 法律 AI 夜校 VOL.01｜2025 年一季度全球法律科技趋势洞察（试看）
 
-> 来源：[https://docs.feishu.cn/docx/VfMsdLgnyo73cTx4DRwcxCiOnNf](https://docs.feishu.cn/docx/VfMsdLgnyo73cTx4DRwcxCiOnNf)
+> 来源：`https://docs.feishu.cn/docx/VfMsdLgnyo73cTx4DRwcxCiOnNf`
 
 ---
 
-> **《法律 AI 夜校》是「何者 Hezher」法律科技社区推出的一档直播栏目，每周四晚准时开播，**由何者社区发起团队及伙伴，和大家分享近期全球法律科技最值得关注的新闻和实操技能。
+> 《法律 AI 夜校》是「何者 Hezher」法律科技社区推出的一档直播栏目，每周四晚准时开播，由何者社区发起团队及伙伴，和大家分享近期全球法律科技最值得关注的新闻和实操技能。
 
 > 为什么我们要做这件事情？「何者 Hezher」社区致力于「法律人工智能通识教育」，推动「产教融合、职普融合」，这就要求我们不只是关注具体的 AI 知识和技巧，还需要了解最鲜活的知识，进行系统性的思考，关注整个产业的变革，这样才能抓住这个时代的机会，拥抱新的技术浪潮。
 
-> 飞书妙记：https://larkcommunity.feishu.cn/minutes/obcni7p9u8k96zutk7xrb8lv?from=from_copylink
+> 飞书妙记：`https://larkcommunity.feishu.cn/minutes/obcni7p9u8k96zutk7xrb8lv?from=from_copylink`
 
-# 一、市场对法律 AI 的关注度持续上升
+## 一、市场对法律 AI 的关注度持续上升
 
-## 市场调研：20+ 行业研报，揭示法律 AI 的落地现状
+### 市场调研：20+ 行业研报，揭示法律 AI 的落地现状
 
 ![](img/367f14a7f0d137e26faeaeae55db7652.png)
 
@@ -66,19 +67,19 @@
 
 > 这意味着，律所需要投入时间和资源来了解和应用 AI 技术，以适应不断变化的市场环境。
 
-## 资本市场：法律 AI 融资趋势继续保持火热
+### 资本市场：法律 AI 融资趋势继续保持火热
 
-<https://legalstudio.feishu.cn/share/base/dashboard/shrcnbKjlR8tuys4RMyDgDmEUHf?iframeFrom=docx&ccm_open=iframe>
+`https://legalstudio.feishu.cn/share/base/dashboard/shrcnbKjlR8tuys4RMyDgDmEUHf?iframeFrom=docx&ccm_open=iframe`
 
-## 大众情绪：AI 革命将导致法律服务的定价模式将发生变化
+### 大众情绪：AI 革命将导致法律服务的定价模式将发生变化
 
-### 北美 AI 情绪报告：1/3 民众认为 AI 将在 2025 年底前完成大多数法律任务
+#### 北美 AI 情绪报告：1/3 民众认为 AI 将在 2025 年底前完成大多数法律任务
 
 ![](img/b775214e13be162ceb56d33250bc2c07.png)
 
 ![](img/ec7da8a8b6b32b30ac7501e4df27180c.png)
 
-### 英国高等教育政策研究所： 92% 的学生正在使用 AI，落后的律所将失去竞争力
+#### 英国高等教育政策研究所： 92% 的学生正在使用 AI，落后的律所将失去竞争力
 
 ![](img/723bf693c54b614e5b9a926f976ddec3.png)
 
@@ -88,35 +89,35 @@
 
 这些调查结果充分反映未来的发展趋势，原因很简单，今天的学生就是明天的律师或客户。如果学生们可以非常自如地使用 AI 工具开展知识工作，那么未来随着这些年轻人进入劳动力市场，这将产生一系列下游影响。
 
-### 案例：付不起高额律师费的当事人，选择用 AI 来代替律师
+#### 案例：付不起高额律师费的当事人，选择用 AI 来代替律师
 
 由于付不起高额的律师费，美国一名当事人 Steve Sokolowski 用多个 AI 工具相互核验的方式，完成了全部庭审准备工作，节省了高达 80 万美元（合人民币约 580 万元）的起诉费用。目前该案件已经开庭。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/cVrOH68QoTrMtRPFDuG0VA
+> 拓展阅读：`https://mp.weixin.qq.com/s/cVrOH68QoTrMtRPFDuG0VA`
 
-# **二、律师行业正在积极拥抱 AI**
+## 二、律师行业正在积极拥抱 AI
 
-## 律所针对具体场景投资法律 AI 应用
+### 律所针对具体场景投资法律 AI 应用
 
 > AI 可以有效处理繁琐的工作任务，帮助法律专业人士提高效率、降低成本，将法律人从日常事务中解放出来，使其可以专注于复杂的高价值工作。这意味着，拥抱 AI 的法律专业人士可以获得显著的竞争优势。事实上，基于律所深厚的法律专业知识积淀，相较于外购工具，更加具有自主构建专属工具的天然优势。
 
 > 应用 AI 的关键，在于用 AI 处理有意义的问题，这就要求我们想清楚 AI 可以在哪里带来生产力提升，这是决定投资技术并获得成功的核心，而不是去想 AI 可以自动化什么？拿着锤子找钉子，这是本末倒置。
 
-### 提供 AI 相关的法律服务
+#### 提供 AI 相关的法律服务
 
-+   **ZwillGen 收购 Luminos 的数据**科学家和技术，为客户提供 AI 审计服务
++   ZwillGen 收购 Luminos 的数据科学家和技术，为客户提供 AI 审计服务
 
 1 月，ZwillGen 律师事务所宣布收购 Luminos 律所的数据科学家、律师以及专有流程和技术，并启动其新的 AI 部门，为客户提供 AI 技术相关的技术评估、审计和认证。ZwillGen 是一家专注于隐私和技术法领域的精品律所，在纽约、芝加哥、旧金山和华盛顿特区的办公室拥有近 40 名律师。
 
 当前，随着 AI 技术的快速发展，全世界都在推出 AI 相关的监管政策。对于公司法务部门来说，遵守越来越多的监管政策是最头痛的问题之一，但对于律师事务所来说，这就是一个展示能力的机会，从而赢得客户。
 
-Luminos 律所以前称为 BNH.AI，2023 年 7 月更名为 Luminos.Law。2023 年 3 月，该律所推出一个名为“Microwave”的 AI 审计工具，可以审查 AI 是否存在偏见，旨在帮助客户遵守纽约市地方第 144 号地方法 —— 该法案要求在招聘过程中使用 AI 的当地公司，每年审计其 AI 系统是否存在偏见。
+Luminos 律所以前称为 `BNH.AI`，2023 年 7 月更名为 `Luminos.Law`。2023 年 3 月，该律所推出一个名为“Microwave”的 AI 审计工具，可以审查 AI 是否存在偏见，旨在帮助客户遵守纽约市地方第 144 号地方法 —— 该法案要求在招聘过程中使用 AI 的当地公司，每年审计其 AI 系统是否存在偏见。
 
 无独有偶，Jackson Lewis 律师事务所也与 AI 风险管理公司 SecondSight 合作推出一个在线合规评估工具，帮助客户发现其网站中嵌入了哪些跟踪工具，以及它们带来了哪些数据隐私风险，丰富了律所的服务内容。
 
-### 推出内部提效工具
+#### 推出内部提效工具
 
-+   **Davis Wright Tremaine 律师事务**所推出 AI 工具，教导律师进行法律写作
++   Davis Wright Tremaine 律师事务所推出 AI 工具，教导律师进行法律写作
 
 一名律师要想成长为真正出类拔萃的法律精英，需要全方位研习诸多领域知识，包括精湛的法律专业技能和娴熟的人际沟通技巧等。当下，AI 技术迅猛发展，诸多 AI 工具已具备承担过往初级律师或律师助理工作的能力。同时，远程办公模式愈发普及，新人律师在成长过程中获取反馈与指导的难度骤增。
 
@@ -124,13 +125,13 @@ Luminos 律所以前称为 BNH.AI，2023 年 7 月更名为 Luminos.Law。2023 �
 
 对此，Davis Wright Tremaine 律师事务所创新性地推出一个名为 “DWT Prose” 的 AI 工具，可以像高级一样律师，为初出茅庐的新人律师给予专业的工作建议。DWT Prose 的工作原理是以 Davis Wright 现有律师的书面工作成果作为基础数据，深度融合律师们各自的写作风格偏好，以及他们过往向他人提供的修改建议，进而精准地为使用者呈现拟议更改的详细解释，并配套提供当下正在运用的相关指南实例，助力新人律师理解与学习。
 
-DWT Prose 属于该律所 “DWT.AI”AI 平台的一个组成部分 —— DWT.AI 是一个依托律所数据训练而成的大模型，涵盖了律所内部自主研发的一系列实用工具，比如 DWT Prose 及其于 2023 年推出的生成式 AI 机器人。
+DWT Prose 属于该律所 `DWT.AI` AI 平台的一个组成部分 —— `DWT.AI` 是一个依托律所数据训练而成的大模型，涵盖了律所内部自主研发的一系列实用工具，比如 DWT Prose 及其于 2023 年推出的生成式 AI 机器人。
 
 +   Avantia 律师事务所推出 Ava AI 平台，简化律师工作
 
 1 月，英国 Avantia Law 律师事务所推出一个名为“Ava”的 AI 工具，通过自动化律所工作流程，加快合同审查、合规检查、文件起草和行政等工作任务，从而为客户提供更高效的服务。Avantia Law 是一家将法律与科技和流程管理相结合的精品律所，其首席执行官 James Sutton 曾在 Och-Ziff 基金和 Slaughter & May 律所工作。
 
-+   **Stephenson Harwood 律师**事务所推出 AI DORA 合同审查工具
++   Stephenson Harwood 律师事务所推出 AI DORA 合同审查工具
 
 2 月，国际律师事务所 Stephenson Harwood 与 AI 工作流开发公司 Curvestone 合作，为新的欧盟《数字运营弹性法》（DORA）构建了一个定制合同审查工具。
 
@@ -138,9 +139,9 @@ DWT Prose 属于该律所 “DWT.AI”AI 平台的一个组成部分 —— DWT.
 
 3 月，美国前 200 律师事务所之一的 Vorys Sater Seymour & Pease 宣布名为“AIV Labo”的 AI Agent 产品，可搜索美国各地的 460 多个监管和立法的劳工和就业信息来源，旨在解决劳动和就业法的律师和人力资源问题。
 
-### 面向客户推出法律 AI 工具
+#### 面向客户推出法律 AI 工具
 
-+   **Macfarlanes 与 Harvey 合作**推出基于订阅的客户端 AI 文档分析工具
++   Macfarlanes 与 Harvey 合作推出基于订阅的客户端 AI 文档分析工具
 
 1 月，Macfarlanes 律师事务所面向客户推出了一个名为“Amplify”的基于订阅的生成式 AI 工具。这个工具是与 Harvey 共同开发的，帮助客户简化对文档和合同数据的分析和查询。
 
@@ -150,21 +151,21 @@ Amplify 由 Macfarlanes 的 Lawtech 部门牵头。2023 年 9 月，Macfarlanes 
 
 3 月，亚利桑那州最高法院推出两个名为“Daniel”和“Victoria”的 AI 新闻记者，旨在生成与法院相关的新闻、信息和活动。这两个 AI 将以短视频为媒介，在法院网站和各种社交媒体平台上报道亚利桑那州最高法院的动态。
 
-### 投资/收购法律 AI 公司
+#### 投资/收购法律 AI 公司
 
-+   **Mishcon de Reya **律所投资法律科技初创公司 Ctrl AI
++   Mishcon de Reya 律所投资法律科技初创公司 Ctrl AI
 
-2 月，英国 Mishcon de Reya[ 律师事务所宣](https://www.ctrl-ai.co.uk/)布通过旗下 MDR 实验室，投资了法律科技初创公司 Ctrl AI 的预种子轮融资。Ctrl AI 是一家专门从事 AI Agent 产品的法律科技初创公司，与旨在增强律师事务所自身交付模式的传统工具不同，Ctrl AI 的产品为大中型企业的内部法律运营定制。通过自动化各类法律任务，Ctrl AI 的 AI 平台使企业法律部门能够以更快的速度、准确性和战略清晰度进行操作。
+2 月，英国 Mishcon de Reya 律师事务所宣布通过旗下 MDR 实验室，投资了法律科技初创公司 Ctrl AI 的预种子轮融资（`https://www.ctrl-ai.co.uk/`）。Ctrl AI 是一家专门从事 AI Agent 产品的法律科技初创公司，与旨在增强律师事务所自身交付模式的传统工具不同，Ctrl AI 的产品为大中型企业的内部法律运营定制。通过自动化各类法律任务，Ctrl AI 的 AI 平台使企业法律部门能够以更快的速度、准确性和战略清晰度进行操作。
 
-+   **Cleary Gottlieb** 律所收购无代码开发平台 Springbok AI
++   Cleary Gottlieb 律所收购无代码开发平台 Springbok AI
 
 3 月，Cleary Gottlieb Steen & Hamilton 律师事务所收购 AI 解决方案服务商 Springbok AI，通过收购 Springbok AI，该律所准备启动一个 AI 加速团队，并利用 Springbok AI 的能力定制开发 AI 解决方案。
 
 2024 年，Springbok AI 推出一个名为“SpringLaw”的无代码产品，支持律师同时处理多个文档，以及创建、共享和生成文档模板等能力，从而自定义工作流程。Springbok AI 曾与 Dentons 等知名律所合作过。
 
-## AI 落地的挑战：场景、数据和教育
+### AI 落地的挑战：场景、数据和教育
 
-### Actionstep 最新调查：成本、培训、合规等是投资技术的主要障碍
+#### Actionstep 最新调查：成本、培训、合规等是投资技术的主要障碍
 
 ![](img/7e75c10bd24022490185568d0af441d5.png)
 
@@ -172,25 +173,25 @@ Amplify 由 Macfarlanes 的 Lawtech 部门牵头。2023 年 9 月，Macfarlanes 
 
 报告显示，中型律所对 AI 和自动化工具的应用仍处于起步阶段，只有 26% 的受访者使用过 AI 工具。46% 的人表示成本是投资他们投资技术的主要障碍，保持最新状态（54%）、培训员工（47%）和尽职调查（41%）是关键的合规痛点。对技术的投资可以提高效率并吸引人才，但律所也需要在成本和风险之间取得平衡。
 
-### 法律数据湖解决方案服务商 Entegrata 宣布完成 450 万美元种子轮融资
+#### 法律数据湖解决方案服务商 Entegrata 宣布完成 450 万美元种子轮融资
 
 3 月 18 日，法律数据湖解决方案服务商 Entegrata 完成 450 万美元种子轮融资，Chicago Ventures 领投，OnDean Forward（Relativity 的创始人 Andrew Sieja 及前高管的投资基金）和 The LegalTech Fund 跟投。
 
 Entegrata 帮助律师事务所集中数据，并与微软深度集成，其法律数据模型提供了一个 Microsoft PowerBI 报告库，可以加快实时分析的进程。Entegrata 首席执行官 Baldwin 表示：“律所面临着数据驱动的巨大压力，但大多数律所仍然依赖过时的系统。我们的平台整合了这些数据，并转化为可操作的洞察，帮助律所做出更好的决策。”
 
-### Morae 和 ActiveNav 合作处理非结构化数据
+#### Morae 和 ActiveNav 合作处理非结构化数据
 
 替代性法律服务商 Morae Global 宣布与数据治理公司 ActiveNav 合作，帮助法律部门和律所处理非结构化数据。
 
-# **三、法律科技市场加速整合**
+## 三、法律科技市场加速整合
 
-## 2025 年 Q1 已发生 20 起收并购，达 2024 全年 36%
+### 2025 年 Q1 已发生 20 起收并购，达 2024 全年 36%
 
-<https://legalstudio.feishu.cn/share/base/dashboard/shrcnYwtmZfxhwrMFccd02STXCb?iframeFrom=docx&ccm_open=iframe>
+`https://legalstudio.feishu.cn/share/base/dashboard/shrcnYwtmZfxhwrMFccd02STXCb?iframeFrom=docx&ccm_open=iframe`
 
-## 资本积极推动法律科技并购
+### 资本积极推动法律科技并购
 
-+   **Harvey 完成 3 亿美元 D 轮融资，LexisNe**xis 的母公司 RELX 集团参与其中
++   Harvey 完成 3 亿美元 D 轮融资，LexisNexis 的母公司 RELX 集团参与其中
 
 2 月，法律 AI 公司 Harvey 完成 3 亿美元 D 轮融资，估值 30 亿美元。本轮融资由红杉资本领投，Coatue、Kleiner Perkins、OpenAI 创业基金、GV、Conviction、Elad Gil 和 RELX 集团的风险投资部门 REV 跟投。
 
@@ -198,31 +199,33 @@ Entegrata 帮助律师事务所集中数据，并与微软深度集成，其法�
 
 2024 年，有消息称 Harvey 正在寻求新一轮融资，以收购法律研究头部企业 vLex，目标是获取海量的法律数据，但最终这笔交易告吹，而 LexisNexis 作为另一家法律研究头部企业，拥有更加全面的法律是数据库，正是 Harvey 希望合作的对象。同时，LexisNexis 近年来也在大量投资 AI 技术，Harvey 的技术能力对 LexisNexis 来说也是互补。因此，未来两家公司可能会强强联合，而且不排除在共同投资人的推动下进行合并。
 
-+   **法律 AI 平台 Eudia 完成 1.05 亿美元 A 轮融**资，7500 万美元将用于未来的潜在并购
++   法律 AI 平台 Eudia 完成 1.05 亿美元 A 轮融资，7500 万美元将用于未来的潜在并购
 
 2 月，法律科技初创公司 Eudia 宣布完成 1.05 亿美元 A 轮融资，General Catalyst 领投，还有一些其他投资者参与，包括 Relativity 创始人兼前首席执行官 Andrew Sieja 和前 Relativity 首席执行官 Mike Gamson 等人跟投。有意思的是，这笔融资有 3000 万美元用于投资股权，还有 7500 万美元用于未来的潜在并购。
 
-+   **电子发现服务商 Casepoint 与政府软件**公司 OPEXUS 合并，共同投资人推动
++   电子发现服务商 Casepoint 与政府软件公司 OPEXUS 合并，共同投资人推动
 
 1 月，私募投资机构 Thoma Bravo 收购了电子发现公司 Casepoint 和政府流程管理软件公司 Opexus 的多数股权，并推动这两家公司进行合并。
 
-+   Epona 和 JustiSolutions 即将合并，共同投资人推动
+
+
+# 资本加速进入律师行业
+
+## Epona 和 JustiSolutions 即将合并，共同投资人推动
 
 1 月，荷兰私募股权机构 Main Capital Partners 宣布法律文档管理系统和客户关系管理服务商 Epona 和案例管理服务商 JustiSolutions 即将合并，并将以 Epona 的名义共同运营。
 
-## 资本加速进入律师行业
-
-+   毕马威获得批准，非律师也能取得律师事务所的所有权
+## 毕马威获得批准，非律师也能取得律师事务所的所有权
 
 1 月，四大会计师事务所之一“毕马威”，正在向美国亚利桑那州最高法院申请替代性营业（ABS）许可证，允许其作为律师事务所运营，在美国提供法律服务。
 
-+   **汤森路透：替代性法律服务市场规模**增长到 285 亿美元，AI 是最大变量
+## 汤森路透：替代性法律服务市场规模增长到 285 亿美元，AI 是最大变量
 
 1 月，汤森路透和乔治敦法学院联合发布《2025 年替代性法律服务商（ALSP）报告》。
 
 报告显示，许多公司法律部门越来越多地采用 ALSP 的服务。2021 年到 2023 年，ALSP 市场的复合年增长率达到 18%，市场规模预计已增长到 285 亿美元，超过了传统律师事务所市场。
 
-+   英国私募股权机构 Blixt 收购 Brachers 律所
+## 英国私募股权机构 Blixt 收购 Brachers 律所
 
 2 月，在私募股权（PE）机构 Blixt 的支持下，英国区域性律师事务所集团 Lawfront 收购了 Brachers 律所。
 
@@ -236,7 +239,7 @@ Entegrata 帮助律师事务所集中数据，并与微软深度集成，其法�
 
 然而，要素式起诉状、答辩状看似简单，但冗长的表格、多达数十项的选填和专业术语，填写起来并不容易，短期内可能导致填写时出现错误，反而抬高了立案门槛，提升案件的起诉难度。
 
-**对此，多家法律科技公司推出 AI **生成要素式文书的功能，助力律师高效工作。
+**对此，多家法律科技公司推出 AI 生成要素式文书的功能，助力律师高效工作。**
 
 法律修音机收集了 9 款相关产品进行集合放送，并持续更新中，欢迎关注。
 

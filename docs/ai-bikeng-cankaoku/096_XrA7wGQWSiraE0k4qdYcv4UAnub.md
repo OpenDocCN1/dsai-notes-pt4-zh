@@ -1,10 +1,11 @@
+
 # 3.3优质提示词汇总
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/Cit3dQEWAoUqvRxZzd6cYrwMnQb](https://xodnytdcaw.feishu.cn/docx/Cit3dQEWAoUqvRxZzd6cYrwMnQb)
 
 ## 国产大模型
 
-[阿里－通义千问](https://tongyi.aliyun.com/qianwen/)  [智谱-清言](https://chatglm.cn/)  [科音-豆包](https://www.doubao.com/chat/)  [讯飞-星火](https://passport.xfyun.cn/login)  [百度-文心一言](https://yiyan.baidu.com/agreement)  [百川智能-Baich](https://www.baichuan-ai.com/home)  [腾讯-混元](https://hunyuan.tencent.com/?loginModalVisible=1&redirect=https%3A%2F%2Fhunyuan.tencent.com%2Fbot%2Fchat)   [360-智脑](https://i.360.com/login?src=pcw_chat&destUrl=https%3A%2F%2Fchat.360.com%2F&domainList=360.cn%2C360.com)  [中科院-紫东太初](https://taichu-web.ia.ac.cn/)  商汤-商量   MiniMax-海螺  月之暗面-Kimi  扣子   AI助手（整合国内全部模型）
+[阿里－通义千问](https://tongyi.aliyun.com/qianwen/) [智谱-清言](https://chatglm.cn/) [科音-豆包](https://www.doubao.com/chat/) [讯飞-星火](https://passport.xfyun.cn/login) [百度-文心一言](https://yiyan.baidu.com/agreement) [百川智能-Baich](https://www.baichuan-ai.com/home) [腾讯-混元](https://hunyuan.tencent.com/?loginModalVisible=1&redirect=https%3A%2F%2Fhunyuan.tencent.com%2Fbot%2Fchat) [360-智脑](https://i.360.com/login?src=pcw_chat&destUrl=https%3A%2F%2Fchat.360.com%2F&domainList=360.cn%2C360.com) [中科院-紫东太初](https://taichu-web.ia.ac.cn/) 商汤-商量 MiniMax-海螺 月之暗面-Kimi 扣子 AI助手（整合国内全部模型）
 
 ![](img/35cf30e29f586fef1175c0051c178f59.png)
 
@@ -44,13 +45,13 @@ DeepSeek+PS=自动修图
 
 DeepSeek+Kimi=写PPT
 
-DeepSeek  Api+
+DeepSeek Api+
 
 ---
 
 DeepSeek API 使用场景
 
-[DeepSeek+苹果Siri](https://web.okjike.com/originalPost/67b887c602197cf84a9e5467)   [开源项目](https://github.com/fatwang2/siri-ultra?tab=readme-ov-file)
+[DeepSeek+苹果Siri](https://web.okjike.com/originalPost/67b887c602197cf84a9e5467) [开源项目](https://github.com/fatwang2/siri-ultra?tab=readme-ov-file)
 
 [DeepSeek+offcie](https://web.okjike.com/originalPost/67b8946d84f32bf74ab00b35)
 
@@ -62,7 +63,7 @@ DeepSeek+obsidian
 
 [GPT镜像合集](https://github.com/xx025/carrot?tab=readme-ov-file)
 
-[CFAIWeb](https://ai.jaze.top/?session=1)  [ GPTchinese](https://58.gptchinese.app/chat/new)   [eTalkAI](https://www.talkai.cc/)  [Alchatos](https://chat18.aichatos.xyz/#/chat/1716802434181)  [Message](https://chat.xbaichat.com/ai_chat)  [酷啦鱼](https://www.kulayu.com/chatgpt.html)
+[CFAIWeb](https://ai.jaze.top/?session=1) [GPTchinese](https://58.gptchinese.app/chat/new) [eTalkAI](https://www.talkai.cc/) [Alchatos](https://chat18.aichatos.xyz/#/chat/1716802434181) [Message](https://chat.xbaichat.com/ai_chat) [酷啦鱼](https://www.kulayu.com/chatgpt.html)
 
 ## AI办公（PPT+Excel）
 

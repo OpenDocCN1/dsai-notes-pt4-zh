@@ -1,3 +1,4 @@
+
 # 无需爬虫，1分钟获取👸号历史文章（标题）
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/WNCHdjeGdonClExU9yFcz6I2nwd](https://xuqiwei1986.feishu.cn/docx/WNCHdjeGdonClExU9yFcz6I2nwd)
@@ -8,13 +9,13 @@
 
 首先，我们要获取某个👸号的历史文章链接，这个在网上有很多讲解，这里再给不知道的伙伴重复一遍。
 
-第一步：随便打开该👸号的一篇文章用浏览器打开，右键 查看源代码，搜索 __biz 即可看到图示内容
+第一步：随便打开该👸号的一篇文章用浏览器打开，右键 查看源代码，搜索 `__biz` 即可看到图示内容
 
 ![](img/6749577d140714742129c8f719d2fbeb.png)
 
-选中 __biz= 到 & 中间的部分，即为该👸号唯一表示，本例为 MzIyNDE1NjAwNg==
+选中 `__biz=` 到 `&` 中间的部分，即为该👸号唯一表示，本例为 `MzIyNDE1NjAwNg==`
 
-第二步，将获取的 __biz 拼成如下链接，注意 biz 前面是两个下划线：
+第二步，将获取的 `__biz` 拼成如下链接，注意 `biz` 前面是两个下划线：
 
 ```
 https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzIyNDE1NjAwNg==
@@ -26,7 +27,7 @@ https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzIyNDE1NjAwNg==
 
 ![](img/d804c8dec59cf5d7c58e926cba3cfe8b.png)
 
-关键时刻到了，你只需要不停地按下翻页键，或者你习惯滚鼠标的话就一直往下滚，滚到满意为止，然后 Ctrl+A 全选，Ctrl+C 复制，最后再粘贴到任何你喜欢的文本文件中，即可获得滚动到目前位置的全部文章标题了！
+关键时刻到了，你只需要不停地按下翻页键，或者你习惯滚鼠标的话就一直往下滚，滚到满意为止，然后 `Ctrl+A` 全选，`Ctrl+C` 复制，最后再粘贴到任何你喜欢的文本文件中，即可获得滚动到目前位置的全部文章标题了！
 
 至此，获取文章标题功能已实现。
 
@@ -56,15 +57,15 @@ https://mp.weixin.qq.com/mp/profile_ext?action=getmsg&amp;__biz=MzIyNDE1NjAwNg==
 
 参数很多，重点关注以下参数：
 
-__biz: 公号唯一标识，同上文
+`__biz`: 公号唯一标识，同上文
 
-pass_ticket, appmsg_token 两个用来验证的 token，有效期较短，同样需要抓包获取
+`pass_ticket`, `appmsg_token` 两个用来验证的 `token`，有效期较短，同样需要抓包获取
 
-拿到接口 URL，就可以用 python 爬了，记得带上 headers，这里比较偏技术，不展开了。
+拿到接口 URL，就可以用 python 爬了，记得带上 `headers`，这里比较偏技术，不展开了。
 
 ![](img/32346a61a0e7bc15158fcf27b12b1ccc.png)
 
-爬到数据之后，可以结合 jieba 等 python 库进行分析。
+爬到数据之后，可以结合 `jieba` 等 python 库进行分析。
 
 ## 加餐：检测快捷转载
 
@@ -96,4 +97,4 @@ window.canUseAutoTypeSetting
 
 ## 其他
 
-爬虫有很多形式，手机 RPA 也可以，典型的如 Auto.js 之类，也可以爬取 APP 中的内容，有需要的自己摸索即可。暂时写这么多，估计离精华还很远😂
+爬虫有很多形式，手机 RPA 也可以，典型的如 `Auto.js` 之类，也可以爬取 APP 中的内容，有需要的自己摸索即可。暂时写这么多，估计离精华还很远😂

@@ -1,8 +1,7 @@
-# 03.13-Open-Sora 2.0全面开源，20万复刻百万级大片！11B媲美闭源巨头，224张GPU创奇迹
-
-> 来源：[https://agijuejin.feishu.cn/docx/QJL5dLyt3oYmkmxtH6Rc61oqnzh](https://agijuejin.feishu.cn/docx/QJL5dLyt3oYmkmxtH6Rc61oqnzh)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 03 月 13 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/QJL5dLyt3oYmkmxtH6Rc61oqnzh](https://agijuejin.feishu.cn/docx/QJL5dLyt3oYmkmxtH6Rc61oqnzh)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -198,12 +197,16 @@ IT之家 | [阅读原文](https://www.ithome.com/0/837/376.htm)
 
 ![](img/a17e4db18804b785afc42ef098415902.png)
 
-随着生成式 AI 等工具涌现，人们担忧工作岗位被取代。米拉・穆拉蒂、黄仁勋认为部分创意、编程工作或受影响；Anthropic 首席执行官称 3 到 6 个月内 AI 或编写 90% 代码，12 个月后几乎包揽全部。微软报告称 AI 创造就业，促使 LinkedIn 会员添加 AI 技能行为增 142 倍。比尔・盖茨等也发表观点，同时 AI 应用面临缺乏人文关怀等挑战 。
 
-### 💡 IBM CEO：AI 短期内不会取代程序员
+
+# AI 对就业与编程工作的影响
+
+随着生成式 AI 等工具涌现，人们担忧工作岗位被取代。米拉・穆拉蒂、黄仁勋认为部分创意、编程工作或受影响；Anthropic 首席执行官称 3 到 6 个月内 AI 或编写 90% 代码，12 个月后几乎包揽全部。微软报告称 AI 创造就业，促使 LinkedIn 会员添加 AI 技能行为增 142 倍。比尔・盖茨等也发表观点，同时 AI 应用面临缺乏人文关怀等挑战。
+
+## 💡 IBM CEO：AI 短期内不会取代程序员
 
 IT之家 | [阅读原文](https://www.ithome.com/0/837/269.htm)
 
 ![](img/9df8e5d4804b715ee2ca804f981dc7a3.png)
 
-IBM 首席执行官阿尔文德・克里希纳不认同 Anthropic 首席执行官“未来三到六个月内 90% 的代码将由 AI 生成”的说法，认为这一比例更可能是 20% 到 30% ，AI 主要提高程序员效率，不会导致大规模裁员。他预计 AI 成本将下降，能耗将降至 1% 以下。他不认为 AI 能推动科学发现，认为量子计算才能实现突破。而 OpenAI CEO 奥尔特曼认为超级智能 AI 可能几年内出现并推动创新。
+IBM 首席执行官阿尔文德・克里希纳不认同 Anthropic 首席执行官“未来三到六个月内 90% 的代码将由 AI 生成”的说法，认为这一比例更可能是 20% 到 30%，AI 主要提高程序员效率，不会导致大规模裁员。他预计 AI 成本将下降，能耗将降至 1% 以下。他不认为 AI 能推动科学发现，认为量子计算才能实现突破。而 OpenAI CEO 奥尔特曼认为超级智能 AI 可能几年内出现并推动创新。

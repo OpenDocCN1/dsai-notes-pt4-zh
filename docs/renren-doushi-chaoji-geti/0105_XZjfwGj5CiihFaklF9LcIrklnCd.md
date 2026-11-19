@@ -1,6 +1,7 @@
+
 # 垂直小店是上半场，📕垂直直播间是下半场
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/URDldlVMIoEGdSxTjgoc1JyxnIh](https://xuqiwei1986.feishu.cn/docx/URDldlVMIoEGdSxTjgoc1JyxnIh)
+> 来源：[`https://xuqiwei1986.feishu.cn/docx/URDldlVMIoEGdSxTjgoc1JyxnIh`](https://xuqiwei1986.feishu.cn/docx/URDldlVMIoEGdSxTjgoc1JyxnIh)
 
 哈喽，各位圈友们好，我是申铭，之前在娱乐圈练习七年半，现在主要在做📕电商直播。平时的大部分时间，混迹在各种直播间里划水，每天是看不完的数据、选不完的品和复不完的盘。
 
@@ -243,6 +244,7 @@
 +   哪几个品重复上场但依然能卖？
 
 +   哪几个场景段（比如晚上 9 点的那段“下班回家段子”）互动高、加购多？
+
 这些是你最应该先做成垂直小店内容的一批。
 
 1.  把直播回放里那些最自然的片段剪出来，不要过度包装，就按生活切片一样发，配上简单的文案和挂车。很多时候，直播间里随口说的一句真心话，比你坐在手机跟前儿正儿八经录的视频更有感染力。

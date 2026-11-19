@@ -1,22 +1,15 @@
+
 # 文章锐评 - 一场由汉语新解引发的旧活新改
 
-> 来源：[https://aiwarts101.feishu.cn/docx/IVYgdJp3vorBDDxZ6qvco3qDnMf](https://aiwarts101.feishu.cn/docx/IVYgdJp3vorBDDxZ6qvco3qDnMf)
+> 来源：[`https://aiwarts101.feishu.cn/docx/IVYgdJp3vorBDDxZ6qvco3qDnMf`](https://aiwarts101.feishu.cn/docx/IVYgdJp3vorBDDxZ6qvco3qDnMf)
 
 ![](img/0549c0eeeafc7611e1a148594d4d1433.png)
 
-# 半成品提示词
+## 半成品提示词
 
-> 汉语新解这个提示词实现了单提示语即产品的思路，
+汉语新解这个提示词实现了单提示语即产品的思路，所以我就想扩大信息的获取和输出方式，做了一个挑战。第一步就是可以直接读取网页内容，第二步是能输出二维码，相当于一个提示语就是一个卡片应用。
 
-> 所以我就想扩大信息的获取和输出方式，做了一个挑战
-
-> 第一步就是可以直接读取网页内容，
-
-> 第二步是能输出二维码，
-
-> 相当于一个提示语就是一个卡片应用
-
-> 目前挑战到的关卡是**“如何稳定展示二维码”**
+目前挑战到的关卡是“如何稳定展示二维码”。
 
 ```
 **;; 作者: 卡尔的AI沃茨
@@ -87,7 +80,7 @@
 ;; 2. 之后调用主函数 (文章锐评 url)
 ```
 
-# 使用效果（不稳定）
+## 使用效果（不稳定）
 
 ![](img/817c3ba63b3f82e23317976a45344435.png)
 

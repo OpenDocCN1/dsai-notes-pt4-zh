@@ -1,3 +1,4 @@
+
 # 树莓派上部署RAG！微软Phi-3技术报告揭示「小而美」模型如何诞生
 
 > 来源：[https://agijuejin.feishu.cn/docx/XfDCdkAx6o1fc0xmuHxcxpk4n4Q](https://agijuejin.feishu.cn/docx/XfDCdkAx6o1fc0xmuHxcxpk4n4Q)
@@ -30,6 +31,7 @@
 
 这次3.8B参数的Phi-3-mini、7B的small和14B的medium，相比规模更大的模型，都展现出了更强的能力。
 
+![](img/7a2c80bcd9ba2c4e27f9acbdb4a6b455.png)
 
 并且作为开源模型，可以在手机上、甚至在树莓派上部署，微软简直太宠爱开发者了。
 
@@ -41,6 +43,7 @@
 
 在评论区，网友们尽情抒发对Phi-3这种开源且强大的小模型的喜爱之情。
 
+![](img/08032fc2bcc19654fca71f706235c3b0.png)
 
 甚至有人形容，这是「微软给开源世界的礼物」。
 
@@ -54,16 +57,17 @@ Phi-3结果提示我们，用如此少的内存足迹可以实现多少可能性
 
 那么，Phi-3系列的实力到底如何？我们可以从最新版的技术报告一探究竟。
 
-## **Phi-3语言模型：小而美**
+## Phi-3语言模型：小而美
 
 Phi-3-mini与small都使用了标准的纯解码器Transformer架构。
 
 为了最大程度方便开源社区，Phi-3-mini使用了和Llama 2相同的分词器和类似的块结构，这就意味着所有部署在Llama 2上的软件包都可以无缝迁移。
 
-small版模型则使用OpenAI的tiktoken分词器，更适合多语言任务，此外为了实现高效的训推，也在模型架构上做了许多改进：
+small版模型则使用OpenAI的`tiktoken`分词器，更适合多语言任务，此外为了实现高效的训推，也在模型架构上做了许多改进：
 
-+   用GEGLU激活函数代替GELU
++   用`GEGLU`激活函数代替`GELU`
 
+![](img/b7c30753da04ea8ad247f1d89668a1fd.png)
 
 +   使用最大更新参数化策略（Maximal Update Parameterization）在代理模型上调整超参数，保证模型训练时的参数稳定
 
@@ -115,7 +119,7 @@ Phi-3-V依旧坚持了语言模型的「小参数」策略，参数量仅有4.2B
 
 Phi-3-Vision在图像理解和推理方面的能力
 
-## **数据换参数**
+## 数据换参数
 
 Phi-3为什么能用较少的参数得到强大的能力？技术报告从侧面揭示了答案。
 

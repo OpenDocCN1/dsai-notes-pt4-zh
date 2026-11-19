@@ -1,14 +1,15 @@
+
 # 开源 · 再升级！Video 版 CogVLM2 开源
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/BawfdUXOxo6oM2xpBr9cqEdBnTb](https://v11enp9ok1h.feishu.cn/docx/BawfdUXOxo6oM2xpBr9cqEdBnTb)
+> 来源：[`https://v11enp9ok1h.feishu.cn/docx/BawfdUXOxo6oM2xpBr9cqEdBnTb`](https://v11enp9ok1h.feishu.cn/docx/BawfdUXOxo6oM2xpBr9cqEdBnTb)
 
 ![](img/93d35a87d2469f789d7febe970a0fc22.png)
 
-代码：https://github.com/THUDM/CogVLM2
+代码：`https://github.com/THUDM/CogVLM2`
 
-项目网站：https://cogvlm2-video.github.io
+项目网站：`https://cogvlm2-video.github.io`
 
-在线试用：http://36.103.203.44:7868/
+在线试用：`http://36.103.203.44:7868/`
 
 ![](img/08814c85e20166cd69b83ab6fb049fbe.png)
 
@@ -24,12 +25,11 @@ CogVLM2-Video不仅在公共视频理解基准上达到了最新的性能，还�
 
 # 效果演示
 
-
-[caixukun.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W2oVbkMaeoerJQxNBdhcWIisnCd)
+[`caixukun.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/W2oVbkMaeoerJQxNBdhcWIisnCd)
 
 ![](img/c46e3a42392783aea773afb8d9075dbb.png)
 
-[tiger_describe.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TO1RbxcH5o5n4Wx0y2wcWKJfnsh)
+[`tiger_describe.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TO1RbxcH5o5n4Wx0y2wcWKJfnsh)
 
 # 模型介绍
 
@@ -57,10 +57,10 @@ CogVLM2-Video不仅在公共视频理解基准上达到了最新的性能，还�
 
 CogVLM2-Video在多个公开评测集上达到最好的性能，下面是一些评测结果。
 
-+   量化评估指标（VideoChatGPT-Bench + Zero-shot QA）
++ 量化评估指标（VideoChatGPT-Bench + Zero-shot QA）
 
 ![](img/1cefa02253b3f8282fc448a4f0dbd3d9.png)
 
-+   量化评估指标（MVBench）
++ 量化评估指标（MVBench）
 
 ![](img/9d7f75f300ae551a20178b55e294ab06.png)

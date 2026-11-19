@@ -1,3 +1,4 @@
+
 # 老金为什么说，你一直可以相信Gemini
 
 > 来源：[https://my.feishu.cn/docx/Ie6gd3e8Qof9Acx6DWpc3zl5nUh](https://my.feishu.cn/docx/Ie6gd3e8Qof9Acx6DWpc3zl5nUh)
@@ -48,7 +49,7 @@ https://gemini.google.com/app
 
 标准化工具接入
 
-通过 /mcp 配置各类本地或远程服务，统一调度，支持 HTTP & STDIO 双模式，自动鉴权
+通过 `/mcp` 配置各类本地或远程服务，统一调度，支持 HTTP & STDIO 双模式，自动鉴权
 
 [Gemini Cli一键安装及好用的使用策略](https://tffyvtlai4.feishu.cn/wiki/Ckx6wMJCjiSI4dk9KFsc9UC4nQd)Gemini Cli种可使用，老金曾经介绍过：
 
@@ -164,6 +165,6 @@ Gemini 所代表的，早已不只是一个工具清单，它更像一个为你�
 
 真正的“知识精华”，不在于你收藏了多少链接，而在于你因探索而点亮的每一个技能点，因创造而获得的每一份独一无二的成就感。
 
-**现在，就从加入我们的社群开始，一起推开这**扇门。门后，是属于我们每个人的星辰大海。
+**现在，就从加入我们的社群开始，一起推开这扇门。** 门后，是属于我们每个人的星辰大海。
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

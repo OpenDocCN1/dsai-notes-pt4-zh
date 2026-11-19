@@ -1,18 +1,15 @@
+
 # AI视频实战营优秀作品展
 
 > 来源：[https://yunyinghui.feishu.cn/docx/JK4Ed6QmBooiGQx5CldcBzjfnOh](https://yunyinghui.feishu.cn/docx/JK4Ed6QmBooiGQx5CldcBzjfnOh)
-
-> **内容出品：**万象 AI 实验室×优设AI×就聊挣钱
-
-> **第一期AI视频训练营顺利结束，收到300多份AI视频作业，本次实战由三大**社区联合举办，我们AI视频实战主教练的作品多次参赛拿奖，副教练作品已经登录央视！
-
 >
+> 内容出品：万象 AI 实验室×优设AI×就聊挣钱
+>
+> 第一期AI视频训练营顺利结束，收到300多份AI视频作业，本次实战由三大社区联合举办，我们AI视频实战主教练的作品多次参赛拿奖，副教练作品已经登录央视！
+>
+> 下面为大家展示本次实战的优秀作业，有相关的AI视频学习、企业内训、品牌方、文旅等定制视频需求，欢迎联系本人，感谢大家的关注！
 
-> **下面为大家展示本次实战的优秀作业，有相关的AI视频学习、企业内****训****、品牌方、文旅等定制视**频需求，欢迎联系 本人，感谢大家的关注！
-
-# 作业一 优秀作业
-
----
+## 作业一 优秀作业
 
 ### 学员ID：岛
 
@@ -21,7 +18,6 @@
 [熊猫人-岛.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LHmZb5MfbodspGxgAchcalR0nug)
 
 ### 学员ID：晨晨
-
 
 [熊猫人_HD.mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DOyhbExD8o4XxLxP5GIcHcEhn6g)
 
@@ -77,9 +73,7 @@
 
 [PandaMan.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F6bpbEpSiooYeFx9piZcxT34nFh)
 
-# 作业二 优秀作业
-
----
+## 作业二 优秀作业
 
 ### 学员ID：猫侍卫
 
@@ -113,11 +107,9 @@
 
 ### 学员ID：li某人
 
-
 [《山海传说：神秘的召唤》.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Y8VGbG8jcoSbT0xQYBrc2QJPncb)
 
 ### 学员ID：晨晨
-
 
 [山海经.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/L6gdb58zLokyQjxajKTcZHybnSb)
 
@@ -132,7 +124,6 @@
 <https://my.feishu.cn/sync/GwWodLBCAsUCLIbuTricFVQsnQw>
 
 ### 学员ID：一头象素
-
 
 [作业2-梦坠大荒西.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D4QFbZ59Ro4Db4x8YhIcOVuTnzf)
 
@@ -174,11 +165,9 @@
 
 ### 学员ID：简。
 
-
 [山海经1013.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OKGvbijbioSvLxxCOpucJspJnze)
 
 ### 学员ID：小加
-
 
 [1728716375091269588-video_watermark_954c6e474ca6e4f6f6f63c2aa773529a_301396618069389317.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ja7nbMGSXorhSNxo5lSc4rAinxb)
 

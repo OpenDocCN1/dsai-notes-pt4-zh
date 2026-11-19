@@ -1,3 +1,4 @@
+
 # Transformers
 
 > 来源：[https://aicarrier.feishu.cn/docx/T5v6dj5amoXzMWx1LKkcFZVVntF](https://aicarrier.feishu.cn/docx/T5v6dj5amoXzMWx1LKkcFZVVntF)
@@ -6,16 +7,10 @@
 
 建议阅读：
 
-1.  [你只需要注意力](https://arxiv.org/abs/1706.03762.pdf)
-
-1.  [图解变压器](https://jalammar.github.io/illustrated-transformer/)
-
-1.  Transformer（Google AI 博客文章）
-
-1.  [层规范化](https://arxiv.org/pdf/1607.06450.pdf)
-
-1.  [图像转换器](https://arxiv.org/pdf/1802.05751.pdf)
-
-1.  音乐转换器：生成具有长期结构的音乐
-
-1.  [Jurafsky 和 Martin 第 10 章（T](https://web.stanford.edu/~jurafsky/slpdraft/10.pdf)ransformers 和大型语言模型）
+1. [你只需要注意力](https://arxiv.org/abs/1706.03762.pdf)
+1. [图解变压器](https://jalammar.github.io/illustrated-transformer/)
+1. `Transformer`（Google AI 博客文章）
+1. [层规范化](https://arxiv.org/pdf/1607.06450.pdf)
+1. [图像转换器](https://arxiv.org/pdf/1802.05751.pdf)
+1. 音乐转换器：生成具有长期结构的音乐
+1. [Jurafsky 和 Martin 第 10 章（`Transformers` 和大型语言模型）](https://web.stanford.edu/~jurafsky/slpdraft/10.pdf)

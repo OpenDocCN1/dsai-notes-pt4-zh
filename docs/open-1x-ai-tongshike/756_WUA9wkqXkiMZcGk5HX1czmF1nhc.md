@@ -1,3 +1,4 @@
+
 # 用coze实现在线搜索Agent
 
 > 来源：[https://datawhaler.feishu.cn/docx/RLjEdmRKYoG53VxTeVZcGuBqn9g](https://datawhaler.feishu.cn/docx/RLjEdmRKYoG53VxTeVZcGuBqn9g)
@@ -6,9 +7,7 @@
 
 ## 一、注册用户
 
-打开
-
-[扣子-AI 智能体开发平台](https://link.zhihu.com/?target=https%3A//www.coze.cn/)[www.coze.cn/](https://link.zhihu.com/?target=https%3A//www.coze.cn/)
+打开[扣子-AI 智能体开发平台](https://link.zhihu.com/?target=https%3A//www.coze.cn/)[www.coze.cn/](https://link.zhihu.com/?target=https%3A//www.coze.cn/)
 
 ![](img/74ab5ec2245813280d9641f026b2e018.png)
 
@@ -54,11 +53,9 @@
 
 ![](img/281d8ccdf697db90d2dfc5304df5b379.png)
 
-### 2、配置[变量](https://zhida.zhihu.com/search?content_id=256275678&content_type=Article&match_order=1&q=%E5%8F%98%E9%87%8F&zhida_source=entity)
+### 2、配置变量
 
-创建变量：
-
-user_language
+创建变量：`user_language`
 
 ![](img/770ebb3b650d629d3ad7c1be1aa58263.png)
 
@@ -72,7 +69,7 @@ user_language
 
 ![](img/12442bcfae8d356aea9efebb4b616d07.png)
 
-表名：qa
+表名：`qa`
 
 选择多用户模式：
 
@@ -80,7 +77,7 @@ user_language
 
 点击保存。
 
-### 4、配置[工作流](https://zhida.zhihu.com/search?content_id=256275678&content_type=Article&match_order=1&q=%E5%B7%A5%E4%BD%9C%E6%B5%81&zhida_source=entity)
+### 4、配置工作流
 
 （1）创建工作流：
 
@@ -88,7 +85,7 @@ user_language
 
 ![](img/47f1b8e94a414f66736448f0455c6411.png)
 
-创建工作流llm_search_event
+创建工作流`llm_search_event`
 
 ![](img/e63835b51f6084adfabe52b51b839d15.png)
 
@@ -106,25 +103,25 @@ user_language
 
 （4）增加 搜索插件：
 
-（A）bingWebSearch必应搜索插件：
+（A）`bingWebSearch`必应搜索插件：
 
 ![](img/7683a48eb3d10f86dd34504ada265e0f.png)
 
-配置【bingWebSearch】插件：
+配置【`bingWebSearch`】插件：
 
-（B）search[头条搜索插件](https://zhida.zhihu.com/search?content_id=256275678&content_type=Article&match_order=1&q=%E5%A4%B4%E6%9D%A1%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6&zhida_source=entity)
+（B）`search`[头条搜索插件](https://zhida.zhihu.com/search?content_id=256275678&content_type=Article&match_order=1&q=%E5%A4%B4%E6%9D%A1%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6&zhida_source=entity)
 
 ![](img/c003ff5a359ef8eb86d1b56f300d904c.png)
 
-配置【search头条搜索】插件：
+配置【`search`头条搜索】插件：
 
 ![](img/4da91d8e9e9981d39bb79e4e512e0774.png)
 
-[（C）Touti](https://zhida.zhihu.com/search?content_id=256275678&content_type=Article&match_order=1&q=%E5%A4%B4%E6%9D%A1%E5%9B%BE%E5%83%8F%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6&zhida_source=entity)aoPictureSearch头条图像搜索插件
+[（C）`ToutiaoPictureSearch`头条图像搜索插件](https://zhida.zhihu.com/search?content_id=256275678&content_type=Article&match_order=1&q=%E5%A4%B4%E6%9D%A1%E5%9B%BE%E5%83%8F%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6&zhida_source=entity)
 
 ![](img/2bcbf5b116287c01beffdcaf21b788aa.png)
 
-配置【ToutiaoPictureSearch头条图像搜索】插件:
+配置【`ToutiaoPictureSearch`头条图像搜索】插件:
 
 （5）增加大模型节点
 
@@ -142,29 +139,29 @@ user_language
 
 你要将上下文信息按照时间线梳理出来。
 
-以下是用户查询:{{query}}以及检索到的一组上下文:
+以下是用户查询:`{{query}}`以及检索到的一组上下文:
 
-{{contexts}}。
+`{{contexts}}`。
 
 最终输出要按照如下格式整理：
 
 #事件背景
 
-根据{{contexts}}总结事件的背景，100字以内完成简述
+根据`{{contexts}}`总结事件的背景，100字以内完成简述
 
 #时间线
 
-根据{{contexts}}用时间线将事件串连起来，以markdown表格的格式输出。第一列是时间，第二列是事件进展。
+根据`{{contexts}}`用时间线将事件串连起来，以markdown表格的格式输出。第一列是时间，第二列是事件进展。
 
 #相关人物
 
-根据{{contexts}}将重要人物和任务介绍列举出来，以markdown表格的格式输出。第一列是人物，第二列是人物介绍。
+根据`{{contexts}}`将重要人物和任务介绍列举出来，以markdown表格的格式输出。第一列是人物，第二列是人物介绍。
 
 #引用信息
 
-根据{{contexts}}内容整理为markdown链接索引的格式放在后面，展示为文本而不是url。前面添加自增序号。
+根据`{{contexts}}`内容整理为markdown链接索引的格式放在后面，展示为文本而不是url。前面添加自增序号。
 
-输出：response
+输出：`response`
 
 ![](img/b47eca5abcb7a18719fbf049bc76219b.png)
 
@@ -224,6 +221,6 @@ user_language
 
 <https://datawhaler.feishu.cn/sync/LfRzdAExlsoykRbUZymc0Jrfngh>
 
-# 欢迎投稿参与共建、下次微学习就学你的内容！
+## 欢迎投稿参与共建、下次微学习就学你的内容！
 
 <https://datawhaler.feishu.cn/sync/CPNrdTvwgshasbb2UjecLzVinPe>

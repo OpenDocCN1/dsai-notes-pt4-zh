@@ -1,3 +1,4 @@
+
 # 《瞬息全宇宙——平行宇宙终极教程》
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/Lfjedtd4QoCkBhxkgTfcBsG1np0](https://xuqiwei1986.feishu.cn/docx/Lfjedtd4QoCkBhxkgTfcBsG1np0)
@@ -18,7 +19,7 @@
 
 **严禁抄袭搬运，势必追诉到底！**
 
-# 一、瞬息全宇宙
+## 一、瞬息全宇宙
 
 最近这段时间，一种叫瞬息全宇宙的视频火了
 
@@ -36,7 +37,7 @@
 
 ![](img/eed2f55e9d48b7dff221d249525405db.png)
 
-[v0d00fg10000chetjjbc77u4g9rknfjg.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ErsHbKOlFogWk3xguUMcnv0Lnbe)
+[`v0d00fg10000chetjjbc77u4g9rknfjg.MP4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ErsHbKOlFogWk3xguUMcnv0Lnbe)
 
 “平行宇宙”就是固定着原来的照片轮廓，变成不一样的风格的视频
 
@@ -44,9 +45,9 @@
 
 ![](img/386b5f0ff0d44c4fd586df91234e2af1.png)
 
-[v0d00fg10000cgm16cbc77u3rb7v14p0.MP4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LIfSbpepQobGBCxtOYAc8BFRnBh)
+[`v0d00fg10000cgm16cbc77u3rb7v14p0.MP4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LIfSbpepQobGBCxtOYAc8BFRnBh)
 
-**制作穿越之旅，用到的是Stable D**iffusion里面的deforum插件
+制作穿越之旅，用到的是Stable Diffusion里面的deforum插件
 
 制作平行宇宙，用到的则是一个叫runway的网站里的功能
 
@@ -62,25 +63,25 @@
 
 > 穿越之旅的制作方法可以看这里[《瞬息全宇宙——穿越之旅终极教程》](https://ry5hwpuf7b.feishu.cn/docx/WbFVdvGkAoo38ZxDumwclWEynRg)
 
-# 二、“平行宇宙”怎么做
+## 二、“平行宇宙”怎么做
 
-**平行宇宙用的**是runway里面 视频生成视频 的一个功能
+平行宇宙用的是runway里面视频生成视频的一个功能
 
 具体可以分为三个步骤：
 
-**1.用剪辑软件裁剪原始视频**
+### 1. 用剪辑软件裁剪原始视频
 
-**2.用runway转换视频**
+### 2. 用runway转换视频
 
-**3.将转换的视频拼接到一起**
+### 3. 将转换的视频拼接到一起
 
 接下来我们一起去做这个坤坤的实际案例！
 
 ![](img/1aaf0cae8d30a855353d41b55b41b1b4.png)
 
-[平行宇宙.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N652bA4tMo5DQ7xXBMbcRv0CnNe)
+[`平行宇宙.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/N652bA4tMo5DQ7xXBMbcRv0CnNe)
 
-# 三、处理原始视频
+## 三、处理原始视频
 
 在用runway进行视频转换之前
 
@@ -94,33 +95,31 @@
 
 没有下载剪映的朋友们可以点击下面的链接下载
 
-https://www.capcut.cn/
+`https://www.capcut.cn/`
 
 下载好了之后打开剪映，导入我们要处理的视频素材
 
 这里我就借用一段坤坤的视频作为示范啦
 
-
 然后把我们需要进行视频转换的片段全部切成4秒内的小片段
 
 我这里只切成了2秒左右的片段
 
-
 接下来我们就要把这些小片段全部分别保存下来
 
-选中一个片段，把指针放到片段的开头，按键盘上的“I”
+选中一个片段，把指针放到片段的开头，按键盘上的`I`
 
-再把指针拉到片段的结尾，按键盘上的“O”
+再把指针拉到片段的结尾，按键盘上的`O`
 
 这样就会选中这个区域
 
-这时候就**按右上角的“导出”**，导出来的视频就是一个1秒钟左右的小片段
+这时候就按右上角的`导出`，导出来的视频就是一个1秒钟左右的小片段
 
 ![](img/b6202ff2a46dbaff4771544f8e412385.png)
 
 导出一个片段之后，我们用同样的方法把其他片段也导出
 
-先点击“取消选定区域”
+先点击`取消选定区域`
 
 然后重复上一步的操作，保存其他片段
 
@@ -130,22 +129,21 @@ https://www.capcut.cn/
 
 ![](img/5078ee860e21f952d83654647b3583cb.png)
 
-# 四、制作不同风格的视频
+## 四、制作不同风格的视频
 
 接下来我们就要用到runway这个网站进行视频的转换
 
-## 1.注册账号
+### 1. 注册账号
 
 在搜索网站上搜“runway”，也可以直接点击下面链接打开
 
-https://runwayml.com/
+`https://runwayml.com/`
 
 点击进入，然后用邮箱注册一个账号
 
 > 如果你已有谷歌或苹果账号直接登录也可以
 
 ![](img/27d942f5f4e198e043afc90ae4536edb.png)
-
 
 按照网站上面的提示输入用户名和密码
 
@@ -155,29 +153,27 @@ https://runwayml.com/
 
 这样我们的账号就注册好啦！
 
-## 2.进行视频转换
+### 2. 进行视频转换
 
-**我们接下来用到**的就是runway里面视频转换成视频的一个功能
+我们接下来用到的就是runway里面视频转换成视频的一个功能
 
 ![](img/21bd791b9b837fa7d6b99f0fd68f59b9.png)
 
 在runway里面，有三种转换视风格的方法：
 
-1.导入照片，按照图片风格转换视频
+1. 导入照片，按照图片风格转换视频
 
-**2.用里面已经有的预设**
+2. 用里面已经有的预设
 
-**3.输入关键词转换视频**
+3. 输入关键词转换视频
 
 导入刚刚保存的视频片段，右边可以进行照片风格的设置
-
 
 我们先看到图片风格设置
 
 里面有默认的几张照片风格可以选择
 
-还可以点击“Upload”自己上传照片
-
+还可以点击`Upload`自己上传照片
 
 我这里上传了一张奥特曼的照片，点击选用
 
@@ -199,12 +195,11 @@ https://runwayml.com/
 
 这样我们这一步就完成啦！
 
-# 五、拼接组合，玩转视频
+## 五、拼接组合，玩转视频
 
 视频素材全部转换了风格之后，我们就可以把这些素材给拼接起来，成为一个新的视频
 
 把刚刚保存的视频导入到剪映
-
 
 因为runway生成出来的视频会比原来的视频时长稍微长了一点
 
@@ -212,9 +207,7 @@ https://runwayml.com/
 
 一般加速到1.5倍就可以了
 
-
 然后把这三段视频缩短按顺序排，这样一个片段就剪好啦！
-
 
 接下来把其他片段都这样剪辑好，然后加上BGM
 
@@ -228,9 +221,9 @@ https://runwayml.com/
 
 ![](img/abc75aa71054662fc496501c3d877a6f.png)
 
-[平行宇宙.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CyvIb30lmopAhHxq13lcjzwBnmf)
+[`平行宇宙.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CyvIb30lmopAhHxq13lcjzwBnmf)
 
-# 六、白嫖runway时长
+## 六、白嫖runway时长
 
 runway的免费账号是有时长额度的
 
@@ -242,10 +235,9 @@ runway的免费账号是有时长额度的
 
 如果邮箱不够用，东子我这里分享一个创建邮箱很快的网站
 
-https://smailpro.com/advanced
+`https://smailpro.com/advanced`
 
 点击链接进入网站，然后点击加号新建一个邮箱
-
 
 然后在弹出来的文本框里面随便输入一些数字或者字母
 
@@ -253,13 +245,11 @@ https://smailpro.com/advanced
 
 随便点一个，然后点击右边的绿色按钮
 
-
 这里就会出现刚刚选择的邮箱
 
 再点击这个邮箱就会复制下来
 
 这时候就可以去注册新的runway账号
-
 
 等需要在邮箱接受验证码的时候，回到这个网站
 
@@ -267,26 +257,25 @@ https://smailpro.com/advanced
 
 就会看到新的邮件
 
-
 点击邮件就可以看到验证码啦
 
 复制到runway就可以继续注册账号了！
 
 ![](img/c649b5b71c7b7152cf2c84d8b0d71304.png)
 
-# 七、剪映版瞬息全宇宙
+## 七、剪映版瞬息全宇宙
 
-手机上的**剪映APP**有一个一键制作瞬息全宇宙的模板
+手机上的剪映APP有一个一键制作瞬息全宇宙的模板
 
 只要导入一张照片就可以自动生成视频
 
-打开剪映APP，点击下面的状态栏的“剪同款”
+打开剪映APP，点击下面的状态栏的`剪同款`
 
 然后在搜索框里面输入“瞬息全宇宙”
 
 ![](img/45e2f2d1c61263595c5fc50d5902aa7e.png)
 
-选一个视频点进去，在右下角有一个“剪同款”
+选一个视频点进去，在右下角有一个`剪同款`
 
 每个账号可以免费制作3次
 
@@ -296,7 +285,7 @@ https://smailpro.com/advanced
 
 然后导入一张照片，就会自动生成视频啦
 
-最后点击右上角的“导出”就可以保存视频
+最后点击右上角的`导出`就可以保存视频
 
 ![](img/0e2d6e6f2346e5d78dc43fe9e86ca6e2.png)
 
@@ -304,9 +293,9 @@ https://smailpro.com/advanced
 
 ![](img/9c577558a059f2f8ef2ed92425d586d6.png)
 
-[1736aa4a579c5a43d6166b006a92e694.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZSY9byaEvoSMTnxzMwNcAW6Knqc)
+[`1736aa4a579c5a43d6166b006a92e694.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZSY9byaEvoSMTnxzMwNcAW6Knqc)
 
-# 八、结尾
+## 八、结尾
 
 好了，以上就是我们这篇文章的全部内容
 

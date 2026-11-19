@@ -1,10 +1,11 @@
+
 # 如何利用人工智能模型编写人物角色Prompt
 
 > 来源：[https://agijuejin.feishu.cn/docx/Znitdb7b6op1mcxhpEYcUv1znTb](https://agijuejin.feishu.cn/docx/Znitdb7b6op1mcxhpEYcUv1znTb)
 
 > 作者：德里克文
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/652018197)hihu.com/p/652018...
+> 原文： [https://zhuanlan.zhihu.com/p/652018197](https://zhuanlan.zhihu.com/p/652018197)
 
 昨晚很荣幸受到百度文心一言APP运营团队的邀请，我作为特邀演讲嘉宾给众多团队的成员分享了我利用文心一言语言大模型，创作商纣王Prompt的经验和创作思路，在这里我也将我的演讲PPT和大致的思路想法分享给大家。
 
@@ -26,7 +27,7 @@
 
 ![](img/0552568aec947ea0b7b47d010f3feaa2.png)
 
-### 2.提示词(Prompt)结构
+### 2. 提示词(Prompt)结构
 
 有几个基础原则,满足这些结构：
 
@@ -100,9 +101,9 @@
 
 在会后的问答环节，我也站在普通用户角度给产品开发方一些建议。
 
-1.  希望后续能够将这些提示词结构化，通过成熟的逻辑文章进行关键字的改动，可以让更多人体会自己捏角色的乐趣
+1. 希望后续能够将这些提示词结构化，通过成熟的逻辑文章进行关键字的改动，可以让更多人体会自己捏角色的乐趣
 
-1.  不仅仅是文字的呈现，而应该结合各种效果进行视觉呈现，让这个产品更加有趣。
+2. 不仅仅是文字的呈现，而应该结合各种效果进行视觉呈现，让这个产品更加有趣。
 
 ![](img/0cfdfa0b1eb15de05cce624ff356e19d.png)
 
@@ -112,4 +113,4 @@
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)绘画，人工智能有强烈兴趣，从业多年的 室内设计师 ！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是 [德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)[，一个对AI](https://www.zhihu.com/search?q=%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1%E5%B8%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052677444%7D)绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

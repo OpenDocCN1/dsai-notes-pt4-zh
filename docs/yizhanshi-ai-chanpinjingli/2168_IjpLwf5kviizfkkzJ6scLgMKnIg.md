@@ -1,3 +1,4 @@
+
 # 第24期 AI行业周报（2024-11.25-12.01）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/UHw5d7GFgoMjilxeUpmc4Sz5nNb](https://v11enp9ok1h.feishu.cn/docx/UHw5d7GFgoMjilxeUpmc4Sz5nNb)

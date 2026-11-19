@@ -1,3 +1,4 @@
+
 # 各国法律法规
 
 > 来源：[https://docs.feishu.cn/docx/FuIAdUBskoqbb3xasDlcaimAnZg](https://docs.feishu.cn/docx/FuIAdUBskoqbb3xasDlcaimAnZg)
@@ -22,7 +23,7 @@ Global AI Regulation Tracker：https://www.techieray.com/GlobalAIRegulationTrack
 
 在《G7广岛领导人峰会公报》中，七国集团领导人表示将创建一个名为“广岛人工智能进程”(Hiroshima AI process)的部长级论坛，在今年年底前针对生成式人工智能导致的版权、虚假信息等问题展开讨论。
 
-人工智能伦理问题
+## 人工智能伦理问题
 
 联合国教科书**人工智能伦理问题建议书**
 

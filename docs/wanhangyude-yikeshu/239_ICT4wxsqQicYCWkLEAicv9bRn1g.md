@@ -1,8 +1,9 @@
+
 # TikTok 信息源知识库
 
-> 来源：[https://my.feishu.cn/docx/SNaWdAYz1ooi0exkNVOc0XAznuf](https://my.feishu.cn/docx/SNaWdAYz1ooi0exkNVOc0XAznuf)
+> 来源：https://my.feishu.cn/docx/SNaWdAYz1ooi0exkNVOc0XAznuf
 
-### **👉点击 T**[**ikTok AI问答知识库**](https://ask.feishu.cn/shared-space/7605852867051654091)
+> [👉点击 TikTok AI问答知识库](https://ask.feishu.cn/shared-space/7605852867051654091)
 
 > **适用人群：**TikTok 电商所有从业者
 
@@ -10,66 +11,57 @@
 
 > **更新时间：**2025 年 10 月 16 日
 
-> **文档作者：**** **
+> **文档作者：**
 
-> **使用建议：**如需快速定位到准确内容，可以在电脑端使用 Ctrl+F/command+F 的形式，搜索关键词，查找你想要的内容。
+> **使用建议：**如需快速定位到准确内容，可以在电脑端使用 `Ctrl+F`/`command+F` 的形式，搜索关键词，查找你想要的内容。
 
 > **文档说明：**
 
-1.  本知识库几乎涵盖所有 TikTok 运营知识内容，总计约 500+文档（含子文档），并且在不断更新中，永久免费开放学习；
+1. 本知识库几乎涵盖所有 TikTok 运营知识内容，总计约 500+文档（含子文档），并且在不断更新中，永久免费开放学习；
+2. 内容来源于各个公开渠道整理汇总，仅供大家学习参考交流，部分属于原创，其余版权属于原作者；
+3. 内容形式包括文章、图片、操作文档、直接上手的运营表格 SOP 等等，后期还会更新视频等形式，欢迎大家收藏链接和分享给身边的朋友，防止丢失；
+4. [关于 TikTok 的信息源](https://ghlf0s3q3l.feishu.cn/wiki/VyR9wEW9nixSOQkeudacqEMence)
 
-1.  内容来源于各个公开渠道整理汇总，仅供大家学习参考交流，部分属于原创，其余版权属于原作者；
-
-1.  内容形式包括文章、图片、操作文档、直接上手的运营表格 SOP 等等，后期还会更新视频等形式，欢迎大家收藏链接和分享给身边的朋友，防止丢失；
-
-1.  [关于 TikTok 的信息源](https://ghlf0s3q3l.feishu.cn/wiki/VyR9wEW9nixSOQkeudacqEMence)
-
->
-
-> TikTok 电商正当红，一起为中国品牌出海加油！
+TikTok 电商正当红，一起为中国品牌出海加油！
 
 > **💪vx: why0721-**
 
 ![](img/c6ee57e436ab2b1d84865fe9ad558be5.png)
 
-# 一、🌍TikTok 全球各站点官方规则
+## 一、🌍TikTok 全球各站点官方规则
 
-## 全球开店规则汇总 Set Up Shop
+### 全球开店规则汇总 Set Up Shop
 
 > [全球开店链接直达](https://ghlf0s3q3l.feishu.cn/wiki/WavEwHMN7iRIrYkh2lvcJqZPnBe)
 
-| **全球市场** | **针对地区** | **具体规则** |
+| 全球市场 | 针对地区 | 具体规则 |
 | --- | --- | --- |
-| **日本** | **日本本土** | **企业店：****  日本本**土公司（代表国籍不限）  需要提供在日的主要联系人  主要联系人需要提供 KYC（人脸识别）+近三个月住址证明（电话单，住民票等）  个人店：  日本护照、驾照、有在劳许可的在留卡（三选一）  日本合法住址+近三个月住址证明（电话单，住民票等）  经验：非必需，但有日本市场电商运营经验/其他国家 TTS 运营经验优先  物流：3PL，商家自行安排物流  退货政策：自行安排退货地点仅限于日本本土 |
-|  | **日本跨境** | **入驻门槛：** |
-| **拉美** | **墨西哥本土** | **企业：****  （目前仅**支持企业入驻）  1、墨西哥本土注册的企业，需要提供营业执照；  2、墨西哥 RFC 税号信息；  3、法人身份信息（RFC 上法人的墨西哥护照、墨西哥 INE 卡、墨西哥居留卡/绿卡）  定邀类型：  TikTok 美国小店月销售 30 万美金卖家  TikTok 东南亚月销售 30 万美金卖家  墨西哥亚马逊和美客多类目头部卖家等 |
-| **欧美** | **美国跨境** | 最新保证金政策：500 美金/站点 |
-|  | **美国本土** | **个人：** |
-|  | **英国本土** | **A：如何注册/成为 TikTok** 商店卖家/注册流程/注册需要准备什么？ |
-|  | **英国跨境** | **保证金：**每个店铺需缴纳** 400 英镑**保证金 |
-|  | **西班牙本土** | **个人卖家：** |
-|  | **欧盟** | **入驻主体：** |
-| **东南亚** | 东南亚跨境（越南、菲律宾、马来西亚、新加坡、泰国） | 入驻标准： |
-|  | **印尼本土** | 如果您已经拥有[印尼本土营业执照]或[印尼人个人身份证]、[印尼本地仓库地址][印尼本 |
-|  | **越南本土** | 本对本商家入驻要求 |
-|  | **泰国本土** | #### 一、平台通用政策（面向所有商家） |
-|  | **马来本土** | #### 一、马来西亚平台通用政策（面向所有商家） |
-|  | **菲律宾本土** | #### 一、平台通用政策（面向所有商家） |
-|  | **新加坡本土** | #### 一、新加坡平台通用政策（面向所有商家） |
-| **中东** | 沙特全托管（除了沙特、美国和英国也有全托管，入驻条件一样） | **条件：** |
-| **全球（半闭环）** | 日本、韩国、澳大利亚、加拿大、德国、法国、西班牙、意大利等 | **方式：** |
+| 日本 | 日本本土 | 企业店：日本本土公司（代表国籍不限）需要提供在日的主要联系人，主要联系人需要提供 KYC（人脸识别）+近三个月住址证明（电话单，住民票等）个人店：日本护照、驾照、有在劳许可的在留卡（三选一）日本合法住址+近三个月住址证明（电话单，住民票等）经验：非必需，但有日本市场电商运营经验/其他国家 TTS 运营经验优先物流：3PL，商家自行安排物流退货政策：自行安排退货地点仅限于日本本土 |
+|  | 日本跨境 | 入驻门槛： |
+| 拉美 | 墨西哥本土 | 企业：（目前仅支持企业入驻）1、墨西哥本土注册的企业，需要提供营业执照；2、墨西哥 RFC 税号信息；3、法人身份信息（RFC 上法人的墨西哥护照、墨西哥 INE 卡、墨西哥居留卡/绿卡）定邀类型：TikTok 美国小店月销售 30 万美金卖家TikTok 东南亚月销售 30 万美金卖家墨西哥亚马逊和美客多类目头部卖家等 |
+| 欧美 | 美国跨境 | 最新保证金政策：500 美金/站点 |
+|  | 美国本土 | 个人： |
+|  | 英国本土 | A：如何注册/成为 TikTok 商店卖家/注册流程/注册需要准备什么？ |
+|  | 英国跨境 | 保证金：每个店铺需缴纳 400 英镑保证金 |
+|  | 西班牙本土 | 个人卖家： |
+|  | 欧盟 | 入驻主体： |
+| 东南亚 | 东南亚跨境（越南、菲律宾、马来西亚、新加坡、泰国） | 入驻标准： |
+|  | 印尼本土 | 如果您已经拥有印尼本土营业执照或印尼人个人身份证、印尼本地仓库地址 |
+|  | 越南本土 | 本对本商家入驻要求 |
+|  | 泰国本土 | **一、平台通用政策（面向所有商家）** |
+|  | 马来本土 | **一、马来西亚平台通用政策（面向所有商家）** |
+|  | 菲律宾本土 | **一、平台通用政策（面向所有商家）** |
+|  | 新加坡本土 | **一、新加坡平台通用政策（面向所有商家）** |
+| 中东 | 沙特全托管（除了沙特、美国和英国也有全托管，入驻条件一样） | 条件： |
+| 全球（半闭环） | 日本、韩国、澳大利亚、加拿大、德国、法国、西班牙、意大利等 | 方式： |
 
-1.  eBay 店铺好评率≥90%
+1. eBay 店铺好评率≥90%
+2. Walmart 店铺评分≥4
+3. 西马用户，运费补贴上限为 RM6/单
+4. 东马用户，运费补贴上限为 RM10/单
+5. 老用户每月 6 张，新用户多 1 张
 
-1.  Walmart 店铺评分≥4
-
-1.  西马用户，运费补贴上限为 RM6/单
-
-1.  东马用户，运费补贴上限为 RM10/单
-
-1.  老用户每月 6 张，新用户多 1 张
-
-## TikTok shop 官方全托管
+### TikTok shop 官方全托管
 
 | 全托管认知 | [TikTok Shop全托管模式-商家入驻操作流程](https://bytedance.sg.larkoffice.com/docx/QCI4d6QOqoGuBJxOIsWcTAu3noc?from=from_copylink) |
 | --- | --- |
@@ -80,53 +72,57 @@
 | 发货备货 | [2024年春节假期全托管商家备货须知](https://bytedance.sg.larkoffice.com/docx/VLdddBFs2opA5px4qI5l2h2UgJd) |
 | 平台结算 | [TikTok Shop全托管卖家中心-结算管理](https://bytedance.sg.larkoffice.com/docx/Etu0d7PbmoU4gexLpXxcSrjUnwc) |
 | 建联达人 | [🌟全托管卖家运营实操分享——建联达人](https://vn6otwl5je.feishu.cn/docx/F5DpdY9GDo3b5yxVmL2cQoGhn2b?from=from_copylink) |
-|  | [TikTok Shop全托管服饰商家运营手册](https://bytedance.sg.larkoffice.com/docx/I8kTdhGERorEvUxszxql3znUg4e) |
+| | [TikTok Shop全托管服饰商家运营手册](https://bytedance.sg.larkoffice.com/docx/I8kTdhGERorEvUxszxql3znUg4e) |
 
-## 美国市场 US Market
+### 美国市场 US Market
 
 | 店铺注册与入驻 | [美区跨境卖家自运营自助使用指南External（汇总版）](https://bytedance.larkoffice.com/docx/LpUHd5OJFoovNFxUIEbcb5Mmndc) |
 | --- | --- |
-|  | [TikTok Shop美国商家入驻与运营Q&amp;A（基础版）](https://bytedance.larkoffice.com/docx/G7Azd4cgQoIgx0xk82dcKLRanBh) |
-|  | [ACCU/CCCU 入驻流程指南（对外）](https://bytedance.sg.larkoffice.com/docx/G2uZdovqPoGaxUxNyEslhNOwguh) |
-|  | [GS商家企业信息认证操作指引（补充支付信息审核）—商家版](https://bytedance.sg.larkoffice.com/docx/Fvfqdj5YYoE0BExuiYKlME9GgDe) |
-|  | [[官方社群]TikTok Shop美国跨境店ACCU手把手入驻攻略（转发、收藏）](https://bytedance.sg.larkoffice.com/docx/Z48qddRTBomoOgxkFo9lvgrvgDh) |
-|  | [美区POP店定邀类目资质申请大全](https://bytedance.sg.larkoffice.com/docx/IS2XdLbBroscSSxX2pLcN7benyh) |
-|  | [跨境US POP定邀类目清单-2024/05/08更新（External）](https://bytedance.sg.larkoffice.com/sheets/OfChs0KxDhK42vteeMScISYznac) |
-|  | [「官方通道」TikTok Shop_美区跨境自营入驻指南](https://bytedance.sg.larkoffice.com/docx/RTN8dij7woLDtHxadoal25S3gyg) |
-|  | [［官方社群］TikTok Shop美国跨境POP官方保姆级入驻攻略(转发、收藏)](https://bytedance.sg.larkoffice.com/docx/Zx1id04rvodukixhglPlHGl1gqh) |
-|  | [「官方通道」TikTok Shop美区自运营入驻及运营指南](https://bytedance.sg.larkoffice.com/docx/LwdtdfYsUoJ9UsxgL4ml7HUSg4g) |
-|  | [TikTok Shop 跨境 POP - 美国英国欧盟日本商家入驻 ALL-IN-ONE](https://bytedance.sg.larkoffice.com/docx/RVgudLcaAobdAWxbIDClplDpgkg) |
+| | [TikTok Shop美国商家入驻与运营Q&A（基础版）](https://bytedance.larkoffice.com/docx/G7Azd4cgQoIgx0xk82dcKLRanBh) |
+| | [ACCU/CCCU 入驻流程指南（对外）](https://bytedance.sg.larkoffice.com/docx/G2uZdovqPoGaxUxNyEslhNOwguh) |
+| | [GS商家企业信息认证操作指引（补充支付信息审核）—商家版](https://bytedance.sg.larkoffice.com/docx/Fvfqdj5YYoE0BExuiYKlME9GgDe) |
+| | [[官方社群]TikTok Shop美国跨境店ACCU手把手入驻攻略（转发、收藏）](https://bytedance.sg.larkoffice.com/docx/Z48qddRTBomoOgxkFo9lvgrvgDh) |
+| | [美区POP店定邀类目资质申请大全](https://bytedance.sg.larkoffice.com/docx/IS2XdLbBroscSSxX2pLcN7benyh) |
+| | [跨境US POP定邀类目清单-2024/05/08更新（External）](https://bytedance.sg.larkoffice.com/sheets/OfChs0KxDhK42vteeMScISYznac) |
+| | [「官方社群」TikTok Shop_美区跨境自营入驻指南](https://bytedance.sg.larkoffice.com/docx/RTN8dij7woLDtHxadoal25S3gyg) |
+| | [［官方社群］TikTok Shop美国跨境POP官方保姆级入驻攻略(转发、收藏)](https://bytedance.sg.larkoffice.com/docx/Zx1id04rvodukixhglPlHGl1gqh) |
+| | [「官方通道」TikTok Shop美区自运营入驻及运营指南](https://bytedance.sg.larkoffice.com/docx/LwdtdfYsUoJ9UsxgL4ml7HUSg4g) |
+| | [TikTok Shop 跨境 POP - 美国英国欧盟日本商家入驻 ALL-IN-ONE](https://bytedance.sg.larkoffice.com/docx/RVgudLcaAobdAWxbIDClplDpgkg) |
 | 政策与激励 | [【美国】2024年7月TikTok Shop跨境自运营“新商启航”激励政策-External](https://bytedance.sg.larkoffice.com/docx/XxzBdhFfDoyoN2x0ILklGdX3gTc) |
-|  | [【对外版】美国TikTok Shop跨境电商2025 Spring Glow-Up促销活动方案](https://bytedance.sg.larkoffice.com/docx/GRVqdzLYfoRnYyxT3bgl5nlxg9b) |
-|  | [TikTok美区商家重要权益&amp;信息查询手册](https://bytedance.sg.larkoffice.com/docx/Q23KdacbRomDISxhqpllIlOvgbb?from=from_copylink) |
-|  | [TikTok Shop US平台运费补贴](https://bytedance.sg.larkoffice.com/docx/JLIEdLdy2oWjG2xSTlVcHKeanie?from=from_copylink) |
-|  | [9月US POP爆品孵化项目商家宣讲](https://bytedance.sg.larkoffice.com/docx/J5tadhFKioNmX3xXD4al1YL0gV4) |
-|  | [【对外】US POP新品激励赛介绍_更新至Y25M10](https://bytedance.sg.larkoffice.com/docx/VJZ8dM4oooLPnFxKGEOls6CsgEb) |
-|  | [【外部】TikTok Shop美区跨境商家激励政策_25年Q2](https://bytedance.sg.larkoffice.com/docx/VTLjdlqsEorWfYxwhoFlglIFgBd) |
-|  | [【对外】2025年2月TikTok Shop美国跨境自运营HIPO高潜商家激励政策](https://bytedance.sg.larkoffice.com/docx/ZVBXdqI8moQtWJxcBD6lvoz7g2M) |
-|  | [[GS POP] US商家自制内容Q2激励活动_25.Q2[对外]【已结束】](https://bytedance.sg.larkoffice.com/docx/N0tid665roR3XkxdpKGlhThlgFg) |
-|  | [【UK&amp;EU&amp;JP POP】商家权益包Onepager_9月更新！](https://bytedance.sg.larkoffice.com/docx/TG69dXtNBo9HyvxrBfclS6uugqb) |
-|  | [【对外版】2025年5月 TikTok Shop 美国市场爆品孵化激励政策](https://bytedance.sg.larkoffice.com/docx/NjU9d8iBooAK2BxzSj4lQg6igZg) |
-|  | [【外部】TikTok Shop美区跨境商家激励政策_25年Q3](https://bytedance.sg.larkoffice.com/docx/IuWHdRe7kojM3dxlmjklCbWlgMb) |
-|  | [【2025美区POP】PEAKS品牌新增长计划-对外](https://bytedance.sg.larkoffice.com/docx/Cy2Jddaseo9qCTxCuCElYP2pgMS) |
-|  | [[GS POP] US商家自制内容Q3激励活动_25.9月【已结束】](https://bytedance.sg.larkoffice.com/docx/LAdldpd34oEYVTxB8oVlxPLug3b) |
+| | [【对外版】美国TikTok Shop跨境电商2025 Spring Glow-Up促销活动方案](https://bytedance.sg.larkoffice.com/docx/GRVqdzLYfoRnYyxT3bgl5nlxg9b) |
+| | [TikTok美区商家重要权益&信息查询手册](https://bytedance.sg.larkoffice.com/docx/Q23KdacbRomDISxhqpllIlOvgbb?from=from_copylink) |
+| | [TikTok Shop US平台运费补贴](https://bytedance.sg.larkoffice.com/docx/JLIEdLdy2oWjG2xSTlVcHKeanie?from=from_copylink) |
+| | [9月US POP爆品孵化项目商家宣讲](https://bytedance.sg.larkoffice.com/docx/J5tadhFKioNmX3xXD4al1YL0gV4) |
+| | [【对外】US POP新品激励赛介绍_更新至Y25M10](https://bytedance.sg.larkoffice.com/docx/VJZ8dM4oooLPnFxKGEOls6CsgEb) |
+| | [【外部】TikTok Shop美区跨境商家激励政策_25年Q2](https://bytedance.sg.larkoffice.com/docx/VTLjdlqsEorWfYxwhoFlglIFgBd) |
+| | [【对外】2025年2月TikTok Shop美国跨境自运营HIPO高潜商家激励政策](https://bytedance.sg.larkoffice.com/docx/ZVBXdqI8moQtWJxcBD6lvoz7g2M) |
+| | [[GS POP] US商家自制内容Q2激励活动_25.Q2[对外]【已结束】](https://bytedance.sg.larkoffice.com/docx/N0tid665roR3XkxdpKGlhThlgFg) |
+| | [【UK&EU&JP POP】商家权益包Onepager_9月更新！](https://bytedance.sg.larkoffice.com/docx/TG69dXtNBo9HyvxrBfclS6uugqb) |
+| | [【对外版】2025年5月 TikTok Shop 美国市场爆品孵化激励政策](https://bytedance.sg.larkoffice.com/docx/NjU9d8iBooAK2BxzSj4lQg6igZg) |
+| | [【外部】TikTok Shop美区跨境商家激励政策_25年Q3](https://bytedance.sg.larkoffice.com/docx/IuWHdRe7kojM3dxlmjklCbWlgMb) |
+| | [【2025美区POP】PEAKS品牌新增长计划-对外](https://bytedance.sg.larkoffice.com/docx/Cy2Jddaseo9qCTxCuCElYP2pgMS) |
+| | [[GS POP] US商家自制内容Q3激励活动_25.9月【已结束】](https://bytedance.sg.larkoffice.com/docx/LAdldpd34oEYVTxB8oVlxPLug3b) |
 | 物流与履约 | [TikTok Shop 美区跨境 POP 非珠宝 多履约模式规则（海外仓+跨境直邮自发货）- 对外版](https://bytedance.sg.larkoffice.com/docx/H5uFdabDKoHyBdxa5NOlgQefgBf) |
-|  | TikTok Shop 美区跨境 POP - 珠宝配饰商家入驻 ALL-IN-ONE |
-|  | [【可对外】TikTok Shop对接海外仓指引](https://bytedance.sg.larkoffice.com/docx/Bm49dovB9oOxZWxMQx8l88GEg7f?from=from_copylink) |
-|  | [[2025年1月起生效]美国FBT新价卡介绍说明](https://bytedance.sg.larkoffice.com/docx/Dto4d3fbSo5tRrxHc3Fl9NJsguf) |
-|  | [品牌CN主体海外仓发货定邀入驻指南【External】](https://bytedance.larkoffice.com/docx/KQ62dpd2So8w6bxOyakc4Jh7nbb) |
-|  | [美国FBT中文介绍_GS PoP_Merchant Facing_v5.3](https://bytedance.larkoffice.com/docx/C06JdwQrsoAnWwxbwOdccQ3PnMh) |
-|  | [FBT政策及资费标准解读_面向GS POP商家【更新黑五政策与福利】_v2.1](https://bytedance.sg.larkoffice.com/docx/Vf78dPyHXoGmy7xCXsMlTOm0g4f) |
-|  | [【可对外】TikTok Shop跨境买家订单发货规则（针对卖家）（美国 - 跨境）20250219培训版](https://bytedance.sg.larkoffice.com/slides/NMWYsBqFUlHNcbdEqXkl4SGIgFg) |
-|  | [【面向商家】FBT跨链接共享库存功能操作手册](https://bytedance.sg.larkoffice.com/docx/Js75dqPOnoGuRwx5R1nlh8zWgLf) |
-|  | [【Logistics training】美国跨境4PL商家发货指南](https://bytedance.larkoffice.com/docx/FnGUdMzBvowG55xSIztcjf8bnCc) |
+| | TikTok Shop 美区跨境 POP - 珠宝配饰商家入驻 ALL-IN-ONE |
+| | [【可对外】TikTok Shop对接海外仓指引](https://bytedance.sg.larkoffice.com/docx/Bm49dovB9oOxZWxMQx8l88GEg7f?from=from_copylink) |
+| | [[2025年1月起生效]美国FBT新价卡介绍说明](https://bytedance.sg.larkoffice.com/docx/Dto4d3fbSo5tRrxHc3Fl9NJsguf) |
+| | [品牌CN主体海外仓发货定邀入驻指南【External】](https://bytedance.larkoffice.com/docx/KQ62dpd2So8w6bxOyakc4Jh7nbb) |
+| | [美国FBT中文介绍_GS PoP_Merchant Facing_v5.3](https://bytedance.larkoffice.com/docx/C06JdwQrsoAnWwxbwOdccQ3PnMh) |
+| | [FBT政策及资费标准解读_面向GS POP商家【更新黑五政策与福利】_v2.1](https://bytedance.sg.larkoffice.com/docx/Vf78dPyHXoGmy7xCXsMlTOm0g4f) |
+| | [【可对外】TikTok Shop跨境买家订单发货规则（针对卖家）（美国 - 跨境）20250219培训版](https://bytedance.sg.larkoffice.com/slides/NMWYsBqFUlHNcbdEqXkl4SGIgFg) |
+| | [【面向商家】FBT跨链接共享库存功能操作手册](https://bytedance.sg.larkoffice.com/docx/Js75dqPOnoGuRwx5R1nlh8zWgLf) |
+| | [【Logistics training】美国跨境4PL商家发货指南](https://bytedance.larkoffice.com/docx/FnGUdMzBvowG55xSIztcjf8bnCc) |
 | 运营指南与教程 | [【对外】PEAKS美区新商启航百宝箱](https://bytedance.sg.larkoffice.com/docx/GjKXdwCs0o5ZdTxD6KYlcUO5gYf)⭐️⭐️⭐️⭐️⭐️ |
-|  | [提升店铺体验分（SPS)_TikTok Shop Playbook.pdf](https://bytedance.sg.larkoffice.com/file/Iv7rbILbjou37UxaPUxlkiJVgRb?from=from_copylink) |
-|  | [【商家自卖教程】Step 1.1 账号注册绑定和账号装修](https://bytedance.sg.larkoffice.com/docx/PmmFdbhwOog32nx07K5lqamaguc) |
-|  | 商家自卖系列课程-店铺 TikTok 账号注册绑定【对外培训】 |
-|  |  |
-|  | [🔥TikTok Shop-美区跨境商家与平台运营经理联系指南](https://bytedance.sg.larkoffice.com/docx/SbN1d2alcoyjEMxB4ufltYJIgng) |
-|  | [POP US 商家培训课程—店铺体验分SPS](https://bytedance.sg.larkoffice.com/docx/MeOXd5ugpoEoR2xUoTGlNzzNgph) |
+| | [提升店铺体验分（SPS)_TikTok Shop Playbook.pdf](https://bytedance.sg.larkoffice.com/file/Iv7rbILbjou37UxaPUxlkiJVgRb?from=from_copylink) |
+| | [【商家自卖教程】Step 1.1 账号注册绑定和账号装修](https://bytedance.sg.larkoffice.com/docx/PmmFdbhwOog32nx07K5lqamaguc) |
+| | 商家自卖系列课程-店铺 TikTok 账号注册绑定【对外培训】 |
+| | [🔥TikTok Shop-美区跨境商家与平台运营经理联系指南](https://bytedance.sg.larkoffice.com/docx/SbN1d2alcoyjEMxB4ufltYJIgng) |
+| | [POP US 商家培训课程—店铺体验分SPS](https://bytedance.sg.larkoffice.com/docx/MeOXd5ugpoEoR2xUoTGlNzzNgph) |
+
+
+
+## 美国市场 US Market
+
 |  | [TTS 美区珠宝商家培训【闭环规则，实时更新版】](https://bytedance.sg.larkoffice.com/docx/Pzmkd6nRloWB4Rx6ueGlzJbigrd) |
 |  | [TK美区必学八段锦](https://bytedance.sg.larkoffice.com/docx/HOezdSJvGouDu0x0h5tlQPjlgT9) |
 |  | [美区跨境卖家自运营自助使用指南External（汇总版）](https://bytedance.larkoffice.com/docx/LpUHd5OJFoovNFxUIEbcb5Mmndc) |
@@ -157,15 +153,11 @@
 
 [TikTok Shop跨境电商新人官方指南(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CD24beuGEoyfkzx4yOOcgnojnjg)
 
-
 [美区TikTok Shop教程—1.新店铺注册(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GounbJFWnoH71SxpNm5cmOplnpb)
-
 
 [美区TikTok Shop教程—2.设置店铺物流(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NFd5bIRU4oTTVwxgNwocGZvAnjb)
 
-
 [美区TikTok Shop店铺教程—3.上架产品(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UFppbunsYoPgcixgtA6csL1XnMc)
-
 
 [美区TikTok Shop教程—4.创建联盟计划(1).pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZRmTbakm6oXuEoxDzLmchX12nGc)
 
@@ -187,7 +179,7 @@
 | 内容服务 | [TikTok Shop沙特内容服务商招募.pptx](https://bytedance.sg.larkoffice.com/file/WKQ8bsdpIoWIbAxtOTmcTTLknjb) |
 | --- | --- |
 
-## 欧洲（英国）市场  Europe （UK） Market
+## 欧洲（英国）市场 Europe （UK） Market
 
 | 跨境入驻 | [【对外版】POP跨境自运营新市场（EU/UK）商家入驻方式一表全（0506更新）](https://bytedance.sg.larkoffice.com/docx/Dvf8dMbGJougUxxrz72lbIMEg1e) |
 | --- | --- |
@@ -250,7 +242,13 @@
 | 店铺运营 | [新入驻商家-如何获取各种ID](https://bytedance.sg.larkoffice.com/sheets/shtcnlQItZHLxrzbathVEqRyZQd) |
 | --- | --- |
 | 店铺操作 | [TikTokShop上传商品的流程](https://bytedance.larkoffice.com/docx/doxcn9zOa7Cww2RkN1vMQK4hxee) |
+
+
+
+## 基础资源
+
 | 营销工具 | [【仅供跨境卖家参考】TTS营销工具介绍_25年4月version](https://bytedance.sg.larkoffice.com/sheets/LlTXsS8XghlTXWtfJQnlYuhrgVg?sheet=xroCLT)（活动互斥逻辑） |
+| --- | --- |
 | 差评规则 | [TikTok Shop差评率科普手册](https://bytedance.larkoffice.com/docx/🐧zidp4FDowz6kxLW5DcHkkjnoI) |
 | 类目资质 | [电子电器商品类目资质发布要求常见问题](https://bytedance.us.larkoffice.com/docx/V9k3dyqxNoRtPnxdAM6uW76osKc?from=from_copylink) |
 | 商品发布 | [商品发布信息质量要求-商家阅读版本](https://bytedance.sg.larkoffice.com/docx/doxcn3IRKL3x706DnYZfBGoh8Ab) |
@@ -308,9 +306,7 @@
 | 居家日用 |  |
 | 玩具爱好 |  |
 
-
 [【GlodaStory】TikTok美区9月宠物用品行业报告-星颖社群.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PExab6itEo2gWdxOMH4cI6u8nKh)
-
 
 [【GlodaStory】TikTok美区9月居家日用行业报告-星颖社群.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XEwDbNofToNIoBx6zeSccgW2n1b)
 
@@ -320,14 +316,14 @@
 
 ## 跨境物流/支付收款/客服
 
-物流通用
+### 物流通用
 
 | [TikTok Shop首公里揽收覆盖范围](https://bytedance.larkoffice.com/sheets/shtcnQjLTkniJP7ibAx0V1BGQOd) |
 | --- |
 | [【External】跨境卖家拆包发货](https://bytedance.sg.larkoffice.com/docx/doxcnXGZwUCvwSxgdA68AAmtyQh) |
 | [TT跨境价卡.xlsx](https://bytedance.larkoffice.com/file/boxcn3bhCl5lLExbGJ0U2B7OnC8) |
 | [物流问题请到customer service寻求帮助！！](https://bytedance.sg.larkoffice.com/docx/BP0PdtjMHoj7fVx4VKAceo0vnNg) |
-| [UK跨境卖家发货指南（to AM&amp;商家）](https://bytedance.larkoffice.com/docx/MgYUdf22goRFjUxS6iRc3RDxnyc) |
+| [UK跨境卖家发货指南（to AM&amp;商家）](https://bytedance.sg.larkoffice.com/docx/MgYUdf22goRFjUxS6iRc3RDxnyc) |
 | [TikTok Shop POP US混发双向商品管理详细说明（对外）](https://bytedance.sg.larkoffice.com/docx/OgpwdrW0CoXdznxNCmsl4wZIgid?from=from_copylink) |
 | [TikTok Shipping服务开通流程](https://bytedance.us.larkoffice.com/docx/QUzudIhn7oR91zxQZDEuqmvUsYc) |
 | [TikTok Shipping服务升级指南](https://bytedance.us.larkoffice.com/docx/Z92od3sRToSLDYxXYiauHwL8smc) |
@@ -335,18 +331,18 @@
 | [[对外] CBT揽收操作指南及商家问题指引](https://bytedance.us.larkoffice.com/docx/Rop6dQBqhoifnMxABsEu5Vj9s2f) |
 | [TikTok Shop包邮项目计划 / 取消CFFS 商家培训 ](https://bytedance.sg.larkoffice.com/docx/JBEmdPmwpo38JBx0Km5lVvuugvc) |
 
-物流欧美 US
+### 物流欧美 US
 
 | [UK跨境卖家发货指南（to AM&amp;商家）](https://bytedance.larkoffice.com/docs/doccnybJhY5VvsLQ2DNQLJPfaEb) | [英国跨境135磅以上商品售卖手册（对外版） ](https://bytedance.sg.larkoffice.com/docx/doxcniCoN3paSbB330ANPMA2G9f) |
 | --- | --- |
 | [跨境物流运营流程商家指导手册（对外版）](https://bytedance.larkoffice.com/docx/doxcnm8brgyQdcehxb5O8i069uf) | [TTS英国跨境物流运费计算器](https://bytedance.larkoffice.com/sheets/shtcnUb3H9oq3AgyO21MDAjZH8b?sheet=119e2e) |
 
-物流东南亚 SEA
+### 物流东南亚 SEA
 
 | [东南亚跨境商家发货指南（to AM&amp;商家）](https://bytedance.larkoffice.com/docs/doccnYfnZOqXFziOsNBFZ6LUAwh) |  |
 | --- | --- |
 
-跨境支付收款
+### 跨境支付收款
 
 | 注册指南 | [TikTok Shop跨境商家绑定派安盈Payoneer流程指南](https://bytedance.sg.larkoffice.com/docx/doxcnMtPYn57mT1G0bsz6XzPf7g) |
 | --- | --- |
@@ -376,52 +372,74 @@
 | 其他广告类型与投放指南 | [Live shopping ads计划投放策略-对外版](https://bytedance.larkoffice.com/docx/doxcn7McPgKmTixcCVNZz4XHYZf) |
 | 广告创意、工具与流程 | [广告制作-创意工具「出海创意组」](https://bytedance.larkoffice.com/docs/doccnhtWR0cdLonmwgVlWVhlJ1c#Yxl1rb) |
 |  | [[Shop Ads | 操作指南] | Affiliate Creatives for Ads (ACA投达宝）](https://bytedance.sg.larkoffice.com/docx/Gn0qdpbrTolTTEx4GOrlc1J1gK2) |
+
+
+
 |  | [【External】如何找到商业音乐入口 how to find CML? ](https://bytedance.larkoffice.com/docs/doccnYVmoPyUbJq5gn7wO77rTpe) |
+
 |  | [GMVMAX如何强挂车白号素材](https://ewiilxe94g.feishu.cn/docx/UCGLdoirsocotLx02wjcEL3Inod) |
+
 |  | [[Shop Ads | PSO] Product GMV Max素材指南](https://bytedance.sg.larkoffice.com/docx/HaiYd3UPnoSmlzxaUXzlJP2cggd) |
+
 |  | [Creative Boost 使用说明：](https://bytedance.sg.larkoffice.com/docx/QliLdkjIfokwBmxljVMlUAt1gnP) |
+
 |  | [【可对外】PRODUCT GMV MAX 创编流程](https://bytedance.sg.larkoffice.com/docx/QCeedjU7hoExCwxwLEjlRCTxg5d) |
+
 |  | [【可对外】LIVE GMV MAX创编指南](https://bytedance.sg.larkoffice.com/docx/BpVEdhnd7oPFXaxRON8ldFGfgXd) |
+
 |  | [TTO介绍&amp;使用](https://bytedance.sg.larkoffice.com/docx/JZ2KdxtWAoj4xFxDr49lOIM6g9c) |
+
 | 数据与归因 | [商品广告归因](https://bytedance.sg.larkoffice.com/docx/GP3UdWM7Do9D29x0oEZl1WrcgTf) |
+
 |  | [gmvmax 广告归因](https://ads.tiktok.com/help/article/about-attribution-for-gmv-max?lang=en) |
+
 | 直播回放 | [GMVmax直播答疑回放](https://bytedance.sg.larkoffice.com/minutes/obsg5vf7k2j2m1f834dph765) |
 
 ## 团队组建
 
 | 直播团队架构 | [TikTok直播团队人员架构](https://ghlf0s3q3l.feishu.cn/wiki/TDsgwg0d0i80FZk4RJscGxyknbh?from=from_copylink) |
-| --- | --- |
+
+---
+
 | 投流团队架构 | [TikTok付费投流团队架构](https://ghlf0s3q3l.feishu.cn/wiki/U2OhwBF6NizfFjkmDm4c10gpn7d) |
+
 | 团队搭建 | [ENGU—TikTok美区新商重磅培训：达人、广告、团队搭建、选品方向](https://eg88888888.feishu.cn/wiki/VI24wUaXgiFOY2kuUFHcFLlonfb) |
+
 | 绩效考核 | [运营KPI](https://ewiilxe94g.feishu.cn/sheets/UdDWsisKQh1ghHtC1oLcewavnAb) |
 
 ## 主播运营
 
 | 主播标准话术 | [🙌直播通用话术公式+英文版案例](https://bytedance.larkoffice.com/docx/doxcnhtL49A9Ra96XUWptnsaOCe) |
-| --- | --- |
+
+---
 
 ## 活动/节日营销
 
 | 圣诞元旦 |  |
-| --- | --- |
-| Double Day |  |
-| 情人节 |  |
-| 斋月 |  |
-| 返校季 back to school | [[返校季 | Back to School]美国TikTok Shop跨境电商活动方案（对外版）](https://bytedance.sg.larkoffice.com/docx/MRpdd1fZVopianxTFBplZdtegnf) |
-| 黑五网一 | [【可对外】Black Friday跨境招商会.pptx](https://bytedance.sg.larkoffice.com/file/boxcnn10RaQ52MJXv8W2Jryf1Ib) |
-| 节点营销 | [TikTok Shop 夏季大促招商方案.pdf](https://bytedance.larkoffice.com/file/boxcnv1DbhXtb11WTmwtUrtS0Og) |
-| 营销日历 |  |
-| 物料 | [2025年中SS大促Deals For You Days 主题氛围物料](https://bytedance.sg.larkoffice.com/docx/Gfn2dIQMJoqaBwxRlEwllCQUgod) |
 
+---
+
+| Double Day |  |
+
+| 情人节 |  |
+
+| 斋月 |  |
+
+| 返校季 back to school | [[返校季 | Back to School]美国TikTok Shop跨境电商活动方案（对外版）](https://bytedance.sg.larkoffice.com/docx/MRpdd1fZVopianxTFBplZdtegnf) |
+
+| 黑五网一 | [【可对外】Black Friday跨境招商会.pptx](https://bytedance.sg.larkoffice.com/file/boxcnn10RaQ52MJXv8W2Jryf1Ib) |
+
+| 节点营销 | [TikTok Shop 夏季大促招商方案.pdf](https://bytedance.larkoffice.com/file/boxcnv1DbhXtb11WTmwtUrtS0Og) |
+
+| 营销日历 |  |
+
+| 物料 | [2025年中SS大促Deals For You Days 主题氛围物料](https://bytedance.sg.larkoffice.com/docx/Gfn2dIQMJoqaBwxRlEwllCQUgod) |
 
 [【3C_行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HvLwbgwG5ozUb6xMFedcfN9ynyb)
 
-
 [【快消行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UxtybAnZeo0RBwxzuFKcp4Fmnjc)
 
-
 [【美妆行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Wyx2bEGdeoIpSSx8eEGcE5gvnLg)
-
 
 [【服饰行业】2024_TikTok_for_Business_黑色星期五营销攻略.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IMcUb2L5IogFUGx8cymcxGMtnod)
 
@@ -446,6 +464,7 @@
 > 以下内容均无合作关系，请注意甄别，以防被骗。
 
 | [TT目录](https://ewiilxe94g.feishu.cn/sheets/I1P1sFaFMhsmZAtxsePc8TLinHr?sheet=023d7e) |
-| --- |
+
+---
 
 ## 最新动态

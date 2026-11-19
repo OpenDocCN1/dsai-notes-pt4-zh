@@ -1,3 +1,4 @@
+
 # Kimi爆火，但我更推荐这款Chrome插件：Kimi Copilot！关键还免费！
 
 > 来源：[https://aigcreative.feishu.cn/docx/TUrzdcntCo4ryvxrkz9cnQoQnCe](https://aigcreative.feishu.cn/docx/TUrzdcntCo4ryvxrkz9cnQoQnCe)
@@ -62,7 +63,7 @@
 
 总起来就是2个字：真香！赶紧试试吧~~
 
-**Chrome插件下载体验链接**
+## Chrome插件下载体验链接
 
 或者Chrome插件商店搜索“Kimi Copilot”：https://chromewebstore.google.com/detail/kimi-copilot/icmdpfpmbfijfllafmfogmdabhijlehn
 

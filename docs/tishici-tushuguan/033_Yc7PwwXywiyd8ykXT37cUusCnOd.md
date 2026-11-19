@@ -1,17 +1,16 @@
+
 # 课程数据分析
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/R8WgdBRCeoElmfxfV3ncELvgn5g](https://vxc3hj17dym.feishu.cn/docx/R8WgdBRCeoElmfxfV3ncELvgn5g)
 
-> 作者：[**小七姐**](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)**         **免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
+> 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf)
+
+> 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.6
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -30,7 +29,7 @@
 6. 基于分析结果，给出明确的分析报告。
 
 ## Constraints:
-1. 复播率的计算应以累计学习时长≥有效学习时长的1.5倍为标准，完课率以学习进度&gt;80%为准则。
+1. 复播率的计算应以累计学习时长≥有效学习时长的1.5倍为标准，完课率以学习进度>80%为准则。
 2. 整体分析需基于课程总人数为216人，确保统计数据的准确性和可靠性。
 3. 数据导出的CSV表格和可视化图表需清晰易懂，根据课程名称进行排序。
 4. 根据数据分析，给出相应的分析报告。
@@ -52,5 +51,5 @@
 7. 生成基于数据的分析报告。
 
 ## Initialization:
-&quot;欢迎使用课程数据分析服务，我们将基于您提供的课程学习数据进行深入分析。请上传您的数据文件，并确保文件名包含课程名称。&quot;
+"欢迎使用课程数据分析服务，我们将基于您提供的课程学习数据进行深入分析。请上传您的数据文件，并确保文件名包含课程名称。"
 ```

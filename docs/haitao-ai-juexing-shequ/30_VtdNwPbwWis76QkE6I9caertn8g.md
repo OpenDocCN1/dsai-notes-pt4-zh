@@ -1,3 +1,4 @@
+
 # 脆皮年轻人，自创五音疗愈视频火了
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/K3N2ds4tdoUBBLxj8yacnovTnNf](https://zinxkclpk97.feishu.cn/docx/K3N2ds4tdoUBBLxj8yacnovTnNf)
@@ -12,7 +13,7 @@
 
 ![](img/3fb9ff5e74dfe03ce895098cab6f8e0b.png)
 
-# 生成图片
+## 生成图片
 
 首先找几个对标案例，直接截图去问Kimi。
 
@@ -22,7 +23,7 @@
 
 没有即梦额度的也可以直接使用我下面的绘画智能体进行调试，白嫖Coze每天免费的额度。
 
-绘画智能体：https://www.coze.cn/store/agent/7490927150757871635?bot_id=true
+绘画智能体：`https://www.coze.cn/store/agent/7490927150757871635?bot_id=true`
 
 ```
 一群中国古代人演奏音乐，欢快的场景，搭配乐器等元素，全身照、工笔画风格
@@ -30,7 +31,7 @@
 
 ![](img/526fd29f45b2f8a95b02d10141267361.png)
 
-# 图生视频
+## 图生视频
 
 使用即梦AI，选择图生视频，上次生成好的图片，填写提示词。
 
@@ -52,7 +53,7 @@
 
 按照此方法，适当调整提示词，批量制作多个片段。
 
-# 剪映剪辑
+## 剪映剪辑
 
 然后打开剪映，导入生成好的视频素材，选择合适的配乐，二次剪辑后导出。
 

@@ -1,10 +1,11 @@
+
 # 你好世界！LLM开启人形机器人新纪元
 
 > 来源：[https://agijuejin.feishu.cn/docx/VILqdG90OoW3Pqxv1MUcnlthn7q](https://agijuejin.feishu.cn/docx/VILqdG90OoW3Pqxv1MUcnlthn7q)
 
 > 作者：新智元
 
-> 原文：https://mp.weixin.qq.com/s/XbAI-rueAHDxMdB4pxTLyw
+> 原文：`https://mp.weixin.qq.com/s/XbAI-rueAHDxMdB4pxTLyw`
 
 ![](img/c7cf610b9a3404395e88a216caed8ff2.png)
 
@@ -18,6 +19,7 @@
 
 这是一款名为Menteebot的人形机器人，将AI的能力嵌入到机器人的各个层面，实现了与世界的动态交互。
 
+![](img/89b1d21440a9174cfd7938ecb8ae7098.png)
 
 Menteebot集成了尖端的Sim2Real学习（以获得逼真的步态和手部运动）、基于NeRF的实时3D映射和定位（用于复杂环境中的动态导航），以及大型语言模型（帮助认知世界和执行高级任务）。
 
@@ -27,11 +29,13 @@ Menteebot实现了从口头命令，到复杂任务完成的完整端到端循�
 
 完美复刻人类的「灵巧手」：
 
+![](img/f0f6691f6881e7a45535df7eab3ddae6.png)
 
 先进的Sim2Real学习技术让Menteebot的动作非常敏捷，可以像人类一样朝任何方向行走、奔跑、原地转弯等。
 
 来几个并步，扎个马步，都不在话下：
 
+![](img/b4ae001cbc02b2b7bbfa7ae94a31900e.png)
 
 Menteebot在搬运重物时会自动调整步态，如同人类一般。
 
@@ -93,13 +97,13 @@ Mentee Robotics的创始人Amnon Shashua，1993年在麻省理工学院（MIT）
 
 > 我们正处于将计算机视觉、自然语言理解、强大而详细的模拟器、以及从模拟转移到现实世界的方法相融合的风口浪尖。
 
-** LLM开启机器人新纪元**
+## LLM开启机器人新纪元
 
 最近几个月，越来越多的项目使用大语言模型，来创建以前似乎不可能的机器人应用程序。
 
 在LLM的加持之下，机器人可以处理自然语言命令，并完成需要复杂推理的任务。
 
-### **感知和推理 **
+### 感知和推理
 
 创建机器人系统的经典方法需要复杂的工程，来创建规划和推理模块。
 
@@ -115,7 +119,7 @@ SayCan使用LLM的语义知识来帮助机器人进行推理，并确定哪些�
 
 ![](img/90acab86eea1c9588a37b471758fcdbd.png)
 
-论文地址：https://arxiv.org/pdf/2204.01691.pdf
+论文地址：`https://arxiv.org/pdf/2204.01691.pdf`
 
 在论文中，Google Research与Everyday Robots合作开发了新的方法：利用先进的语言模型知识，使物理代理（如机器人）能够遵循高级文本指令，同时将LLM建立在特定现实世界环境可行的任务中。
 
@@ -127,7 +131,7 @@ SayCan使用LLM的语义知识来帮助机器人进行推理，并确定哪些�
 
 人工智能和机器人研究科学家Chris Paxton表示，使用LLM和VLM使感知和推理更加容易，这让很多机器人任务看起来比以前更可行。
 
-### **串联现有功能**
+### 串联现有功能
 
 经典机器人系统的一大局限性是需要明确的指令。
 
@@ -147,7 +151,7 @@ GenEM使用GPT-4对环境进行推理，并根据机器人的可负担性确定�
 
 ![](img/ba1c7a1549656d1d082881df61ab8d47.png)
 
-论文地址：https://arxiv.org/pdf/2401.14673v2.pdf
+论文地址：`https://arxiv.org/pdf/2401.14673v2.pdf`
 
 它可以利用LLM训练数据中包含的大量知识以及上下文学习能力，并能够将操作映射到机器人的API调用。
 
@@ -159,7 +163,7 @@ GenEM使用GPT-4对环境进行推理，并根据机器人的可负担性确定�
 
 ![](img/5bb714b8c31d2be3a9f4eecfe66c4db0.png)
 
-论文地址：https://arxiv.org/pdf/2401.12202.pdf
+论文地址：`https://arxiv.org/pdf/2401.12202.pdf`
 
 它将VLM与运动规划和对象操作模块相结合，能够在机器人从未见过的环境中执行拾取和放下操作。
 
@@ -175,7 +179,7 @@ GenEM使用GPT-4对环境进行推理，并根据机器人的可负担性确定�
 
 另外，对于当前的模型来说，数据可能是最重要的，完善机器人相关的数据集也是任重而道远。
 
-### **专用基础模型**
+### 专用基础模型
 
 使用LLM的另一种方法是为机器人开发专门的基础模型。这些模型通常建立在预训练模型中包含的大量知识之上，并针对机器人操作定制架构。
 
@@ -185,7 +189,7 @@ GenEM使用GPT-4对环境进行推理，并根据机器人的可负担性确定�
 
 ![](img/f6fe50bdccabb535b4d1db1b8273cb72.png)
 
-论文地址：https://robotics-transformer2.github.io/assets/rt2.pdf
+论文地址：`https://robotics-transformer2.github.io/assets/rt2.pdf`
 
 Google DeepMind最近又将版本升级到了RT-X-2，可以适应不同类型的机器人形态，并且可以执行训练数据中未包含的任务。
 
@@ -195,7 +199,7 @@ DeepMind与斯坦福大学合作开发的RT-Sketch，可以将粗略的草图转
 
 ![](img/d66596fa186f1bee717e32f237ab21ba.png)
 
-论文地址：https://arxiv.org/pdf/2310.08864.pdf
+论文地址：`https://arxiv.org/pdf/2310.08864.pdf`
 
 Paxton表示，这是另一个令人兴奋的方向，它基于端到端的学习，你只需拿一个摄像头，机器人就会弄清楚它需要做什么。
 
@@ -219,6 +223,6 @@ Covariant希望能够通过这样一个基础模型，解决不同类型机器�
 
 参考资料：
 
-https://x.com/AmnonShashua/status/1780611499133685889
+`https://x.com/AmnonShashua/status/1780611499133685889`
 
-https://venturebeat.com/ai/how-llms-are-ushering-in-a-new-era-of-robotics/
+`https://venturebeat.com/ai/how-llms-are-ushering-in-a-new-era-of-robotics/`

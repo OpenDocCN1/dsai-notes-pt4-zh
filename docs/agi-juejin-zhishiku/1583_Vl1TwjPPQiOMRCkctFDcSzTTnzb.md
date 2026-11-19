@@ -1,3 +1,4 @@
+
 # 今晚看什么？快来玩电影盲盒抽一个看！
 
 > 来源：[https://agijuejin.feishu.cn/docx/N9cEdzip7oLhWHx1p6NcG6IBnpf](https://agijuejin.feishu.cn/docx/N9cEdzip7oLhWHx1p6NcG6IBnpf)
@@ -24,21 +25,17 @@ GPT prompt 经典电影盲盒抽取
 
 大家感兴趣的可以看看，这次我想做一些调整，针对于孩子的情况进行一些设计和选择。最后给出一个盲盒电影的推荐。
 
-**电影盲盒扣子版**
+## 电影盲盒扣子版
 
 本文会根据以下内容顺序进行：
 
-+   需求分析
++ 需求分析
++ Coze 搭建
++ 提示词和代码分享
++ 扣子使用链接和效果展示
++ 总结
 
-+   Coze 搭建
-
-+   提示词和代码分享
-
-+   扣子使用链接和效果展示
-
-+   总结
-
-#  **一、需求分析 **
+## 一、需求分析
 
 上次的需求分析时候，考虑到了是一个夜深人静，不想打游戏，但看书又过于无聊的情况下。这种情况下，可能会比较孤独、寂寞，所以在最开始的时候，做了一个情绪判断。
 
@@ -69,19 +66,19 @@ GPT prompt 经典电影盲盒抽取
 
 选了两个测试起来还可以的插件。
 
-**电影搜索插件🔎**
+### 电影搜索插件🔎
 
 ![](img/0789104251697f48ee708ac7d10f29f9.png)
 
-**电影详情插件🎬**
+### 电影详情插件🎬
 
 ![](img/80841c3ef3c6ff3f39bbf07062cec6bb.png)
 
-**逻辑流程图 ***
+### 逻辑流程图
 
 ![](img/1ce23bb3eecd9f289ba962f81472c527.png)
 
-#  **二、****扣子搭建视频教程 **
+## 二、扣子搭建视频教程
 
 这边是给大家录了一个扣子搭建的完整视频，大家感兴趣的可以观看一下~
 
@@ -93,73 +90,73 @@ GPT prompt 经典电影盲盒抽取
 
 > 为啥换成视频了呢？主要是觉得有些操作可能纯靠我截图，可能还是不那么容易理解。所以用视频和语音的方式去解释。这样更方便大家理解。
 
-#  **三、提示词和代码分享 **
+## 三、提示词和代码分享
 
-##  **一）工作流 **
+### 一）工作流
 
-###   **筛选评分大于 7 **
+#### 筛选评分大于 7
 
 ```
 import re
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    input_data = params[&#x27;array&#x27;]
+    input_data = params['array']
     
     # 定义一个函数来提取rating中的数字
     def extract_rating(rating_str):
         if not rating_str:
             return 0
-        match = re.search(r&#x27;(\d+(\.\d+)?)&#x27;, rating_str)
+        match = re.search(r'(\d+(\.\d+)?)', rating_str)
         return float(match.group(1)) if match else 0
 
     # 筛选rating大于7的项目
-    filtered_data = [item for item in input_data if extract_rating(item[&#x27;rating&#x27;]) &gt; 7]
+    filtered_data = [item for item in input_data if extract_rating(item['rating']) > 7]
 
     ret: Output = {
-        &quot;filtered_movies&quot;: filtered_data,
-        &quot;count&quot;: len(filtered_data)
+        "filtered_movies": filtered_data,
+        "count": len(filtered_data)
     }
     return ret
 ```
 
-###   **随机选取 5 个 **
+#### 随机选取 5 个
 
 ```
 import re
 import random
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    filtered_data = params[&#x27;filtered_movies&#x27;]
+    filtered_data = params['filtered_movies']
     
     # 随机抽取5个电影
     sample_size = min(5, len(filtered_data))  # 确保我们不会尝试抽取超过列表长度的样本
     random_sample = random.sample(filtered_data, sample_size)
 
     ret: Output = {
-        &quot;random_result&quot;: random_sample
+        "random_result": random_sample
     }
     return ret
 ```
 
-###   **创建ID数组 **
+#### 创建ID数组
 
 ```
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    a=params[&#x27;random_result&#x27;]
-    all_ids = [item[&#x27;id&#x27;] for item in a]
+    a=params['random_result']
+    all_ids = [item['id'] for item in a]
 
     ret: Output = {
-        &quot;movie_id&quot;:all_ids
+        "movie_id":all_ids
     }
     return ret
 ```
 
 > 这三个代码是可以直接合成一段代码的，我是因为想让大家清楚的知道我在干什么，每一段代码是用来做什么的，才这样写的哈~
 
-###   **金句提示词 **
+#### 金句提示词
 
 ```
 根据输入的参数{{description}},进行描述性重写。你的任务是在不提到电影名{{title}}和{{title_i18n}}的情况下，用生动有趣的一句话来来吸引观众观看这个电影，即一个电影一句金句。方法如下：
@@ -170,16 +167,16 @@ async def main(args: Args) -&gt; Output:
 - 引发思考或情感
  
 示例：
-《盗梦空间》：&quot;在层层叠叠的梦境迷宫中，现实是最危险的陷阱。&quot;
-《复仇者联盟》：&quot;当超级英雄们的能力相加，宇宙的命运被重新改写。&quot;
-《肖申克的救赎》：&quot;希望，是穿越绝望高墙的无形翅膀。&quot;
-《泰坦尼克号》：&quot;冰山之下，是永不沉没的爱情传说。&quot;
-《黑客帝国》：&quot;在代码构建的世界里，自由是最危险的病毒。&quot;
+《盗梦空间》："在层层叠叠的梦境迷宫中，现实是最危险的陷阱。"
+《复仇者联盟》："当超级英雄们的能力相加，宇宙的命运被重新改写。"
+《肖申克的救赎》："希望，是穿越绝望高墙的无形翅膀。"
+《泰坦尼克号》："冰山之下，是永不沉没的爱情传说。"
+《黑客帝国》："在代码构建的世界里，自由是最危险的病毒。"
  
-  - 注意：不能剧透，可以使用问句，同时永远不能输出电影名。也尽量不要使用演员名字,句子尽量简短，最大不超过20个字。
+ - 注意：不能剧透，可以使用问句，同时永远不能输出电影名。也尽量不要使用演员名字,句子尽量简短，最大不超过20个字。
 ```
 
-###   **ID + 金句拼接 **
+#### ID + 金句拼接
 
 ```
 电影1：
@@ -206,7 +203,7 @@ async def main(args: Args) -&gt; Output:
 - 金句：{{String1[4].output}}
 ```
 
-##  **二）Bot 的提示词 **
+### 二）Bot 的提示词
 
 ```
 ## 工作流:
@@ -221,52 +218,72 @@ async def main(args: Args) -&gt; Output:
 4. 根据用户所选的金句从 工作流的返回值中找到对应的电影 ID，使用这个 ID 值做为参数调用插件 movie_info.
 5. 整理返回数据，把整个电影的返回值，整理好展示给用户,如未提供的参数，在最后告知用户没有查到对应数据。
  - 格式如下：
+```
+
 ```Markdown
+
 **电影名称**：[中文电影名]
+
 **原语言电影名**：[原语言电影名]
 
 基本信息：
+
 - 上映年份：[年份]
+
 - 上映日期：[具体日期]
+
 - 上映地区：[地区]
+
 - 制作国家：[国家]
+
 - 类型：[类型1] / [类型2] / [类型3] / [类型4]
+
 - IMDb评分：[评分]分
+
 - 观众评分：[评分]星
+
 - 影片介绍：[影片介绍]
 
 **影片特性**：
 
 - 2D/3D：[是/否]
+
 - IMAX：[是/否]
 
 **视觉资料**：
 
 - 海报：[对应链接]
+
 - 剧照：[对应链接]
+
 - 视频：[对应链接]
 
 **其他信息**：
 
 - 导演：[导演名称]
+
 - 编剧：[编剧名称]
+
 - 演员：[演员1]、[演员2]、[演员3]...
+
 - 出品公司：[公司名称]
+
 - 片长：[时长]
+
 ```
 ```
 
-#  **四、扣子使用链接和效果展示 **
+## 四、扣子使用链接和效果展示
 
-##  **一）扣子的使用链接 **
+### 一）扣子的使用链接
 
 https://www.coze.cn/s/irLQddy8/
 
-##  **二）效果展示 **
+### 二）效果展示
 
 ![](img/b5f7b732f0e5b1a36c3b2f01b80071dc.png)
 
-#  **五、总结 **
+## 五、总结
 
 > 这个关键词搜索的结果其实取决于所选用的 API 插件。如果之后可以用大模型的方式进行搜索肯定效果会更好。比如 AI 搜索等。
 

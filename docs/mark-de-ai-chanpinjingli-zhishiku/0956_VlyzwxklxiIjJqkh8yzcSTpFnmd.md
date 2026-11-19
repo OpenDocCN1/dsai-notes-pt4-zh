@@ -1,3 +1,4 @@
+
 # 一句话搞定整套UI和PPT，不会设计也能Claude Design出高端设计稿
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DJZ0dLVvbozy0cxNfwWckRyMnzH](https://qqs7y1hozd1.feishu.cn/docx/DJZ0dLVvbozy0cxNfwWckRyMnzH)
@@ -26,7 +27,7 @@
 
 ![](img/79cfa306d3d74c01be1578b6282f77dc.png)
 
-**Claude De**sign直接给了四种可控的修改方法，每一种都切中了不同场景的痛点。
+Claude Design直接给了四种可控的修改方法，每一种都切中了不同场景的痛点。
 
 你可以直接对话让它改，这是最基础的。
 
@@ -50,9 +51,9 @@ Canva的CEO在发布当天就公开站台，两家是正式的合作关系。
 
 ![](img/53d18ad7e7bf73036964ec60d3a5547f.png)
 
-更狠是设计稿可以直接打包，一个指令交给C**laude C**ode，AI帮你把设计变成可以跑的代码。
+更狠是设计稿可以直接打包，一个指令交给`Claude Code`，AI帮你把设计变成可以跑的代码。
 
-**从脑子里的想法，**到可交互的原型，到能上线的产品，全链路打通了。
+从脑子里的想法，到可交互的原型，到能上线的产品，全链路打通了。
 
 一个人就能干完以前三个人的活。
 

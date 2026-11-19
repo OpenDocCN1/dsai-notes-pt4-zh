@@ -1,10 +1,11 @@
+
 # 从零到一MCP服务器开发实战
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/BTerdE875oPRXIxUZ4Gco5eTnof](https://kq4b3vgg5b.feishu.cn/docx/BTerdE875oPRXIxUZ4Gco5eTnof)
 
-## 课程说明：
+## 课程说明
 
-+   体验课内容节选自《2025大模型Agent智能体开发实战》(春季班)完整版付费课程
++ 体验课内容节选自《2025大模型Agent智能体开发实战》(春季班)完整版付费课程
 
 体验课时间有限，若想深度学习大模型技术，欢迎大家报名由我主讲的《2025大模型Agent智能体开发实战》(春季班)
 
@@ -14,7 +15,7 @@
 
 此外，公开课全套学习资料，已上传至网盘
 
-（链接: https://pan.baidu.com/s/1MW4sNic6Sd_1BJ9ZV1Hu4g 提取码: 7fwn  ）
+（链接: https://pan.baidu.com/s/1MW4sNic6Sd_1BJ9ZV1Hu4g 提取码: 7fwn）
 
 需要更系统深入学习大模型可扫码⬆️添加助教咨询喔～
 
@@ -22,7 +23,7 @@
 
 ## 一、MCP技术入门介绍
 
-### 1.智能体开发核心技术—MCP
+### 1. 智能体开发核心技术—MCP
 
 #### 1.1 Function calling技术回顾
 
@@ -82,9 +83,9 @@
 
 ![](img/3b497eb1adca2ba3354455d5576f2649.png)
 
-其中涉及关于大模型对话长短期记忆存储和管理相关功能实现时，光是编写消息类（Messages）对象的各种操作方法以及围绕本地文件夹的各类操作，如创建、删除、写入文档、清空对话、统计文本长度等，就写了300多行代码：
+其中涉及关于大模型对话长短期记忆存储和管理相关功能实现时，光是编写消息类（`Messages`）对象的各种操作方法以及围绕本地文件夹的各类操作，如创建、删除、写入文档、清空对话、统计文本长度等，就写了300多行代码：
 
-而现在，借助MCP技术，采用别人已经开发好的Filesystem工具，仅需几行代码，导入工具配置即可实现完全相同的功能。由此Agent开发效率大幅提高，而这就是MCP技术搭建起来的协作体系的力量。
+而现在，借助MCP技术，采用别人已经开发好的`Filesystem`工具，仅需几行代码，导入工具配置即可实现完全相同的功能。由此Agent开发效率大幅提高，而这就是MCP技术搭建起来的协作体系的力量。
 
 ![](img/8f8b0dd7a6802570ba5a6d715899f4ec.png)
 
@@ -97,18 +98,18 @@
 我们能看到，现在如果想要接入一个MCP工具，我们只需要在支持MCP功能的客户端中写入相关配置即可。例如我们只需要在Cherry Studio的MCP配置文档中写入如下字段：
 
 ```
-    &quot;amap-maps&quot;: {
-      &quot;isActive&quot;: true,
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;-y&quot;,
-        &quot;@amap/amap-maps-mcp-server&quot;
-      ],
-      &quot;env&quot;: {
-        &quot;AMAP_MAPS_API_KEY&quot;: &quot;YOUR_API_KRY&quot;
-      },
-      &quot;name&quot;: &quot;amap-maps&quot;
-    }
+"amap-maps": {
+  "isActive": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@amap/amap-maps-mcp-server"
+  ],
+  "env": {
+    "AMAP_MAPS_API_KEY": "YOUR_API_KRY"
+  },
+  "name": "amap-maps"
+}
 ```
 
 ![](img/0cd273dfc0c825fc336d596e9774609d.png)
@@ -128,18 +129,18 @@
 在上述示例中，我们不难发现，一个MCP服务器标准接入流程是通过写入一个配置文件来完成的。而在支持MCP功能的客户端（如Cherry Studio）中写入MCP工具的配置，其本质就是先将指定的MCP工具下载到本地，然后在有需要的时候对其进行调用。例如高德MCP配置文件如下：
 
 ```
-    &quot;amap-maps&quot;: {
-      &quot;isActive&quot;: true,
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;-y&quot;,
-        &quot;@amap/amap-maps-mcp-server&quot;
-      ],
-      &quot;env&quot;: {
-        &quot;AMAP_MAPS_API_KEY&quot;: &quot;YOUR_API_KRY&quot;
-      },
-      &quot;name&quot;: &quot;amap-maps&quot;
-    }
+"amap-maps": {
+  "isActive": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@amap/amap-maps-mcp-server"
+  ],
+  "env": {
+    "AMAP_MAPS_API_KEY": "YOUR_API_KRY"
+  },
+  "name": "amap-maps"
+}
 ```
 
 代表的含义就是我们需要先使用如下命令：
@@ -148,12 +149,11 @@
 npx -y @amap/amap-maps-mcp-server
 ```
 
-对这个库@amap/amap-maps-mcp-server进行下载，然后在本地运行，当有必要的时候调用这个库里面的函数执行相关功能。
+对这个库`@amap/amap-maps-mcp-server`进行下载，然后在本地运行，当有必要的时候调用这个库里面的函数执行相关功能。
 
-而这个@amap/amap-maps-mcp-server库是一个托管在https://www.npmjs.com/上的库，
+而这个`@amap/amap-maps-mcp-server`库是一个托管在`https://www.npmjs.com/`上的库，
 
-
-可以使用npx命令进行下载。搜索库名即可看到这个库的完整代码，https://www.npmjs.com/package/@amap/amap-maps-mcp-server：
+可以使用`npx`命令进行下载。搜索库名即可看到这个库的完整代码，`https://www.npmjs.com/package/@amap/amap-maps-mcp-server`：
 
 ![](img/29267145b4ade7865d676b98230bd4bf.png)
 
@@ -177,22 +177,21 @@ npx -y @amap/amap-maps-mcp-server
 
 暂时抛开底层原理不谈，在MCP技术爆发的这几个月，市面上已经诞生了成百上千的MCP服务器，甚至还出现了大量的MCP服务器集合网站：
 
-+   MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
++ MCP官方服务器合集：https://github.com/modelcontextprotocol/servers
 
-
-+   MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
++ MCP Github热门导航：https://github.com/punkpeye/awesome-mcp-servers
 
 ![](img/189aeeef9a856cf5607551cf8c119dea.png)
 
-+   Smithery：https://smithery.ai/
++ Smithery：https://smithery.ai/
 
 ![](img/3f0edd5db0e2116b4ec0dbd3d1f33d3b.png)
 
-+   MCP导航：https://mcp.so/
++ MCP导航：https://mcp.so/
 
 ![](img/a2d2a7bbe3e708dcb687feb939744f1b.png)
 
-在实际进行智能体开发过程中，我们可以参考这些网站上的MCP工具，并有选择的对其进行调用。但需要注意的是，无论这些网站的组织形式多么花样百出，但实际上当我们本地调用MCP工具的时候，都是通过uvx或者npx将对应的库下载到本地，然后再进行运行。
+在实际进行智能体开发过程中，我们可以参考这些网站上的MCP工具，并有选择的对其进行调用。但需要注意的是，无论这些网站的组织形式多么花样百出，但实际上当我们本地调用MCP工具的时候，都是通过`uvx`或者`npx`将对应的库下载到本地，然后再进行运行。
 
 ### 5. MCP与Function calling技术对比介绍
 
@@ -202,13 +201,13 @@ npx -y @amap/amap-maps-mcp-server
 
 实际上MCP客户端对MCP服务器上的工具调用流程如下：
 
-+   Step 1. 建立和服务器的通信；
++ Step 1. 建立和服务器的通信；
 
-+   Step 2. 查询服务器上总共有多少个外部工具；
++ Step 2. 查询服务器上总共有多少个外部工具；
 
-+   Step 3. 将外部工具组成列表，带入到当前对话中；
++ Step 3. 将外部工具组成列表，带入到当前对话中；
 
-+   Step 4. 借助Function calling进行外部工具调用。
++ Step 4. 借助Function calling进行外部工具调用。
 
 也就是说，如果模型本身不支持Function calling，那么是无法顺利开启MCP功能的。
 
@@ -224,47 +223,48 @@ npx -y @amap/amap-maps-mcp-server
 
 ```
 system_message = (
-    &quot;You are a helpful assistant with access to these tools:\n\n&quot;
-    f&quot;{tools_description}\n&quot;
-    &quot;Choose the appropriate tool based on the user&#x27;s question. &quot;
-    &quot;If no tool is needed, reply directly.\n\n&quot;
-    &quot;IMPORTANT: When you need to use a tool, you must ONLY respond with &quot;
-    &quot;the exact JSON object format below, nothing else:\n&quot;
-    &quot;{\n&quot;
-    &#x27;    &quot;tool&quot;: &quot;tool-name&quot;,\n&#x27;
-    &#x27;    &quot;arguments&quot;: {\n&#x27;
-    &#x27;        &quot;argument-name&quot;: &quot;value&quot;\n&#x27;
-    &quot;    }\n&quot;
-    &quot;}\n\n&quot;
-    &quot;After receiving a tool&#x27;s response:\n&quot;
-    &quot;1. Transform the raw data into a natural, conversational response\n&quot;
-    &quot;2. Keep responses concise but informative\n&quot;
-    &quot;3. Focus on the most relevant information\n&quot;
-    &quot;4. Use appropriate context from the user&#x27;s question\n&quot;
-    &quot;5. Avoid simply repeating the raw data\n\n&quot;
-    &quot;Please use only the tools that are explicitly defined above.&quot;
+    "You are a helpful assistant with access to these tools:\n\n"
+    f"{tools_description}\n"
+    "Choose the appropriate tool based on the user&#x27;s question. "
+    "If no tool is needed, reply directly.\n\n"
+    "IMPORTANT: When you need to use a tool, you must ONLY respond with "
+    "the exact JSON object format below, nothing else:\n"
+    "{\n"
+    '    "tool": "tool-name",\n'
+    '    "arguments": {\n'
+    '        "argument-name": "value"\n'
+    "    }\n"
+    "}\n\n"
+    "After receiving a tool's response:\n"
+    "1. Transform the raw data into a natural, conversational response\n"
+    "2. Keep responses concise but informative\n"
+    "3. Focus on the most relevant information\n"
+    "4. Use appropriate context from the user's question\n"
+    "5. Avoid simply repeating the raw data\n\n"
+    "Please use only the tools that are explicitly defined above."
 )
 ```
 
 翻译如下：
 
-```
+
+
+# MCP 工具调用提示词与技术生态
+
 你是一个乐于助人的助手，可以使用以下工具：
 
-```
-{tools_description}
-```
+`{tools_description}`
 
 请根据用户的问题选择合适的工具。  
 如果不需要使用工具，请直接回复。
 
-重要提示：如果需要使用工具，**你必须仅以以下精确的 JSON 对象格式进行回复，不要添加其他内容**：
+重要提示：如果需要使用工具，你必须仅以以下精确的 JSON 对象格式进行回复，不要添加其他内容：
 
 ```json
 {
-    &quot;tool&quot;: &quot;工具名称&quot;,
-    &quot;arguments&quot;: {
-        &quot;参数名称&quot;: &quot;参数值&quot;
+    "tool": "工具名称",
+    "arguments": {
+        "参数名称": "参数值"
     }
 }
 ```
@@ -275,14 +275,11 @@ system_message = (
 2. 保持回答简洁但富有信息量  
 3. 聚焦于最相关的信息  
 4. 使用用户问题中的相关上下文  
-5. 避免直接照搬原始数据
+5. 避免直接照搬原始数据  
 
-请**只使用上述明确定义的工具**。
-```
+请只使用上述明确定义的工具。
 
-在这些提示词引导下，一些不具备Function calling的大模型，也能顺利使用MCP工具。不过需要注意的是，借助提示词开启的MCP功能，毕竟不如模型原生能力稳定，因此如果希望搭建企业级应用的Agent，最好还是使用具备Function calling功能的大模型。
-
-### 6. MCP技术生态
+## MCP 技术生态
 
 最后需要介绍当前MCP完整的技术生态。MCP技术发展至今，已经不再是简单的“协议”，而是一个包含了协议、开发工具和现成的已经开发好的MCP工具所共同组成的完整技术生态。
 
@@ -290,17 +287,14 @@ system_message = (
 
 其中：
 
-+   **MCP协议：**指的是“虚”的规范，例如大模型和工具调度规范、服务器客户端的通信规范等，遵循这些协议的对象就是MCP服务器或客户端；
-
-+   **MCP开发工具：**包含多种语言的SDK，也就是开发工具包，开发人员能够使用这些SDK快速完成MCP的服务器和客户端开发；
-
-+   **MCP服务器生态：**开源的MCP服务器，是基于MCP协议的庞大的技术生态，智能体开发人员可以直接使用开源的MCP工具来加快开发进程。
-
++   `MCP协议`：指的是“虚”的规范，例如大模型和工具调度规范、服务器客户端的通信规范等，遵循这些协议的对象就是MCP服务器或客户端；
++   `MCP开发工具`：包含多种语言的SDK，也就是开发工具包，开发人员能够使用这些SDK快速完成MCP的服务器和客户端开发；
++   `MCP服务器生态`：开源的MCP服务器，是基于MCP协议的庞大的技术生态，智能体开发人员可以直接使用开源的MCP工具来加快开发进程。
 +   公开课代码领取
 
 ![](img/5f99f7edb015fe0816d11a946a01f171.png)
 
-## 二、从零到一进行MCP项目开发
+## 从零到一进行 MCP 项目开发
 
 在基本了解MCP技术概念之后，接下来为大家详细介绍如何从零到一完成MCP项目开发。根据此前的介绍不难发现，MCP项目开发会涉及两个方面，分别是MCP客户端开发和服务器开发，本节公开课我们将重点介绍MCP服务器开发，同时为大家提供一个通用的客户端模板。
 
@@ -309,15 +303,10 @@ system_message = (
 MCP服务器通用开发流程如下：
 
 +   Step 1.创建功能函数，并在代码环境中完成测试；
-
 +   Step 2.创建MCP服务器项目，完成服务器项目开发；
-
-+   **Step 3.借助MCP官方工具Ins**pector进行MCP服务器debug；
-
++   Step 3.借助MCP官方工具`Inspector`进行MCP服务器debug；
 +   Step 4.借助MCP客户端，进行本地通信测试
-
-+   **Step 5.【可选】将MCP服务器发布到np**m或者pypi平台，供其他开发人员使用；
-
++   Step 5.【可选】将MCP服务器发布到`npm`或者`pypi`平台，供其他开发人员使用；
 +   Step 6.【可选】将MCP服务器项目离线拷贝并在其他服务器上运行。
 
 ![](img/cf0bb0d98ef62188eefe11d62950d71a.png)
@@ -328,7 +317,7 @@ MCP服务器通用开发流程如下：
 
 #### 2.1 Mini DeepResearch项目介绍
 
-**   在规划MCP服务器项目开发的时候，我**们首先需要确定当前MCP服务器的核心功能。我们这里尝试创建一个此前公开课介绍的Mini DeepResearch项目的MCP服务器，即一个集成了Mini DeepResearch功能的MCP服务器，能够围绕用户给出的主题进行深度搜索，并给出最终结果。接下来我们将把Mini DeepResearch封装为MCP服务器，一方面详细介绍MCP Server开发流程，同时也介绍如何将一个Multi-Agent封装为MCP server并带入到其他应用场景中。
+在规划MCP服务器项目开发的时候，我们首先需要确定当前MCP服务器的核心功能。我们这里尝试创建一个此前公开课介绍的Mini DeepResearch项目的MCP服务器，即一个集成了Mini DeepResearch功能的MCP服务器，能够围绕用户给出的主题进行深度搜索，并给出最终结果。接下来我们将把Mini DeepResearch封装为MCP服务器，一方面详细介绍MCP Server开发流程，同时也介绍如何将一个Multi-Agent封装为MCP server并带入到其他应用场景中。
 
 +   项目效果演示
 
@@ -488,25 +477,25 @@ Mini DeepResearch公开课资料见本节公开课网盘：
 
 ![](img/e043dc54e88a4e5a9d9a36057149121e.png)
 
-+   Mini DeepResearch技术栈
+#### 2.2 Mini DeepResearch技术栈
 
-Mini DeepResearch以OpenAI模型及开源Agents SDK框架为主进行的开发，实际运行过程中需要输入OpenAI API-KEY。OpenAI API-KEY获取方法详见课件中的参考资料《OpenAI注册指南》部分，此外也可以直接在某宝上购买官方API-KEY。此外，项目中自带国内反向代理地址，无需额外网络门槛即可使用。
+Mini DeepResearch以OpenAI模型及开源Agents SDK框架为主进行的开发，实际运行过程中需要输入OpenAI `API-KEY`。OpenAI `API-KEY`获取方法详见课件中的参考资料《OpenAI注册指南》部分，此外也可以直接在某宝上购买官方`API-KEY`。此外，项目中自带国内反向代理地址，无需额外网络门槛即可使用。
 
-> 需要注意的是，必须要使用OpenAI官方API-KEY才能运行项目，中转API-KEY无法运行。
+> 需要注意的是，必须要使用OpenAI官方`API-KEY`才能运行项目，中转`API-KEY`无法运行。
 
-+   Mini DeepResearch命令行快速上手使用
+#### 2.3 Mini DeepResearch命令行快速上手使用
 
-在课件中下载MiniDeepResearch.zip压缩包并解压缩，然后即可在主目录下运行该项目：
+在课件中下载`MiniDeepResearch.zip`压缩包并解压缩，然后即可在主目录下运行该项目：
 
 ![](img/048a32f63cf30f728b8ffd7317f841ce.png)
 
-需要提前安装openai库和agents库
+需要提前安装`openai`库和`agents`库
 
 ```
 pip install openai openai-agents
 ```
 
-并且在三个_agent.py文件中写入国内反向代理地址和OpenAI官方API-KEY，然后输入如下命令即可运行：
+并且在三个`_agent.py`文件中写入国内反向代理地址和OpenAI官方`API-KEY`，然后输入如下命令即可运行：
 
 ```
 python -m ChatBot.main
@@ -518,9 +507,9 @@ python -m ChatBot.main
 
 | Agent | 功能 |
 | --- | --- |
-| planner_agent | 生成研究关键词和搜索策略 |
-| search_agent | 负责执行网络搜索 + 总结内容（使用工具） |
-| writer_agent | 汇总所有搜索结果，编写报告 |
+| `planner_agent` | 生成研究关键词和搜索策略 |
+| `search_agent` | 负责执行网络搜索 + 总结内容（使用工具） |
+| `writer_agent` | 汇总所有搜索结果，编写报告 |
 
 并且实际运行过程中，三个Agent组成一个线性的workflow进行运行：
 
@@ -548,6 +537,12 @@ pip install openai openai-agents
 
 这里首先需要设置基础Agents-SDK开发环境并进行简单测试，测试代码如下：
 
+
+
+# 多智能体研究系统代码实现
+
+## 环境配置与基础客户端
+
 ```
 from openai import AsyncOpenAI
 from agents import OpenAIChatCompletionsModel,Agent,Runner,set_default_openai_client, set_tracing_disabled
@@ -560,106 +555,106 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 external_client = AsyncOpenAI(
-    base_url = os.getenv(&quot;BASE_URL&quot;),
-    api_key = os.getenv(&quot;API_KEY&quot;), 
+    base_url = os.getenv("BASE_URL"),
+    api_key = os.getenv("API_KEY"), 
 )
 set_default_openai_client(external_client)
 set_tracing_disabled(True)
-agent = Agent(name=&quot;Assistant&quot;, instructions=&quot;你是一名助人为乐的助手。&quot;)
-result = await Runner.run(agent, &quot;请写一首关于编程中递归的俳句。&quot;) 
+agent = Agent(name="Assistant", instructions="你是一名助人为乐的助手。")
+result = await Runner.run(agent, "请写一首关于编程中递归的俳句。") 
 print(result.final_output)
 ```
 
-这里需要在base_url中填写国内反向代理地址，需要在api_key中填写OpenAI的API-KEY。实际运行结果如下：
+这里需要在`base_url`中填写国内反向代理地址，需要在`api_key`中填写`OpenAI`的`API-KEY`。实际运行结果如下：
 
 ![](img/2f23e111f73dcc61525569af9e55cb87.png)
 
-+   planner_agent代码详解与功能介绍
+## 2.3 planner_agent代码详解与功能介绍
 
-接下来创建planner_agent，具体代码如下：
+接下来创建`planner_agent`，具体代码如下：
 
 ```
 PROMPT = (
-    &quot;You are a helpful research assistant. Given a query, come up with a set of web searches &quot;
-    &quot;to perform to best answer the query. Output between 10 and 20 terms to query for.&quot;
+    "You are a helpful research assistant. Given a query, come up with a set of web searches "
+    "to perform to best answer the query. Output between 10 and 20 terms to query for."
 )
 
 
 class WebSearchItem(BaseModel):
     reason: str
-    &quot;Your reasoning for why this search is important to the query.&quot;
+    "Your reasoning for why this search is important to the query."
 
     query: str
-    &quot;The search term to use for the web search.&quot;
+    "The search term to use for the web search."
 
 
 class WebSearchPlan(BaseModel):
     searches: list[WebSearchItem]
-    &quot;&quot;&quot;A list of web searches to perform to best answer the query.&quot;&quot;&quot;
+    """A list of web searches to perform to best answer the query."""
 
 
 planner_agent = Agent(
-    name=&quot;PlannerAgent&quot;,
+    name="PlannerAgent",
     instructions=PROMPT,
-    model=&quot;o4-mini&quot;,
+    model="o4-mini",
     output_type=WebSearchPlan,
 )
 ```
 
-其中Planner Agent 的职责是接收一个研究主题，生成一份“搜索计划（WebSearchPlan）”，告诉系统应该搜索哪些子问题/关键词以及搜索这些关键词的理由。具体代码解释如下：
+其中`Planner Agent` 的职责是接收一个研究主题，生成一份“搜索计划（`WebSearchPlan`）”，告诉系统应该搜索哪些子问题/关键词以及搜索这些关键词的理由。具体代码解释如下：
 
 ```
 from pydantic import BaseModel
 ```
 
-导入 Pydantic，用于定义结构化数据模型**。它是整个 Agents **SDK 中用于类型校验 + 数据结构定义的核心库。
+导入 `Pydantic`，用于定义结构化数据模型。它是整个 Agents SDK 中用于类型校验 + 数据结构定义的核心库。
 
 ```
 from agents import Agent
 ```
 
-导入 SDK 的核心类 Agent，我们后面会实例化一个具体的 Agent 实体 planner_agent。
+导入 SDK 的核心类 `Agent`，我们后面会实例化一个具体的 `Agent` 实体 `planner_agent`。
 
 ```
 PROMPT = (
-    &quot;You are a helpful research assistant. Given a query, come up with a set of web searches &quot;
-    &quot;to perform to best answer the query. Output between 20 and 30 terms to query for.&quot;
+    "You are a helpful research assistant. Given a query, come up with a set of web searches "
+    "to perform to best answer the query. Output between 20 and 30 terms to query for."
 )
 ```
 
-定义这个 Agent 的提示词（Prompt），告诉 LLM：
+定义这个 `Agent` 的提示词（`Prompt`），告诉 `LLM`：
 
 +   你是一个研究助手；
 
 +   收到一个主题后，请生成 20 到 30 条搜索建议；
 
-+   每条建议应当包括 **搜索关键词 + 搜索原因**。
++   每条建议应当包括 `搜索关键词 + 搜索原因`。
 
 接下来是两个重要的数据结构定义：
 
 ```
 class WebSearchItem(BaseModel):
     reason: str
-    &quot;Your reasoning for why this search is important to the query.&quot;
+    "Your reasoning for why this search is important to the query."
 
     query: str
-    &quot;The search term to use for the web search.&quot;
+    "The search term to use for the web search."
 ```
 
 这是一个“单个搜索建议”的结构，包含两个字段：
 
 | 字段 | 说明 |
 | --- | --- |
-| reason | 你为什么要搜索这个关键词？（用于解释搜索动机） |
-| query | 你要搜索的关键词本身 |
+| `reason` | 你为什么要搜索这个关键词？（用于解释搜索动机） |
+| `query` | 你要搜索的关键词本身 |
 
 ```
 class WebSearchPlan(BaseModel):
     searches: list[WebSearchItem]
-    &quot;&quot;&quot;A list of web searches to perform to best answer the query.&quot;&quot;&quot;
+    """A list of web searches to perform to best answer the query."""
 ```
 
-这是“搜索计划”的整体结构，包含一个列表 searches，每项是上面的 WebSearchItem。
+这是“搜索计划”的整体结构，包含一个列表 `searches`，每项是上面的 `WebSearchItem`。
 
 其中模型输出结构化的关键在这：
 
@@ -667,40 +662,38 @@ class WebSearchPlan(BaseModel):
 output_type=WebSearchPlan,
 ```
 
-它告诉 planner_agent **“你必须输出一份结构化的 WebSearchPlan 对象，里面包含多个 WebSearchItem。”**这样可以约束模型输出格式，也便于下一步自动解析内容。
-
-实际运行效果如下：
+它告诉 `planner_agent` “你必须输出一份结构化的 `WebSearchPlan` 对象，里面包含多个 `WebSearchItem`。”这样可以约束模型输出格式，也便于下一步自动解析内容。
 
 ![](img/4558bb7a68e1a45d28ed192747989655.png)
 
 输出了14个搜索关键词和对应的搜索原因。
 
-#### 2.4 search_agent功能实现
+## 2.4 search_agent功能实现
 
-接下来是负责实际执行搜索工作的search_agent，代码如下：
+接下来是负责实际执行搜索工作的`search_agent`，代码如下：
 
 ```
 from agents import Agent, WebSearchTool
 from agents.model_settings import ModelSettings
 
 INSTRUCTIONS = (
-    &quot;You are a research assistant. Given a search term, you search the web for that term and &quot;
-    &quot;produce a concise summary of the results. The summary must 2-3 paragraphs and less than 300 &quot;
-    &quot;words. Capture the main points. Write succinctly, no need to have complete sentences or good &quot;
-    &quot;grammar. This will be consumed by someone synthesizing a report, so its vital you capture the &quot;
-    &quot;essence and ignore any fluff. Do not include any additional commentary other than the summary &quot;
-    &quot;itself.&quot;
+    "You are a research assistant. Given a search term, you search the web for that term and "
+    "produce a concise summary of the results. The summary must 2-3 paragraphs and less than 300 "
+    "words. Capture the main points. Write succinctly, no need to have complete sentences or good "
+    "grammar. This will be consumed by someone synthesizing a report, so its vital you capture the "
+    "essence and ignore any fluff. Do not include any additional commentary other than the summary "
+    "itself."
 )
 
 search_agent = Agent(
-    name=&quot;Search agent&quot;,
+    name="Search agent",
     instructions=INSTRUCTIONS,
     tools=[WebSearchTool()],
-    model_settings=ModelSettings(tool_choice=&quot;required&quot;),
+    model_settings=ModelSettings(tool_choice="required"),
 )
 ```
 
-search_agent 的作用是接收一个**搜索关键词**，调用 Web 搜索工具，然后根据搜索结果生成一**份简洁的摘要（2-3 段**，<300词），不带评论，只保留信息本身。也就是说，这是整个系统中真正“去网上查资料”的角色。具体代码解释如下：
+`search_agent` 的作用是接收一个搜索关键词，调用 `Web` 搜索工具，然后根据搜索结果生成一份简洁的摘要（2-3 段，<300 词），不带评论，只保留信息本身。也就是说，这是整个系统中真正“去网上查资料”的角色。具体代码解释如下：
 
 ```
 from agents import Agent, WebSearchTool
@@ -709,22 +702,22 @@ from agents.model_settings import ModelSettings
 
 其中：
 
-+   Agent：导入 SDK 的智能体基类；
++   `Agent`：导入 SDK 的智能体基类；
 
-+   WebSearchTool**：一个由 A**gents SDK 内置的网页搜索工具，调用它可以模拟 “上网搜索” 的效果；
++   `WebSearchTool`：一个由 Agents SDK 内置的网页搜索工具，调用它可以模拟 “上网搜索” 的效果；
 
-+   ModelSettings：可以配置一些模型使用时的行为，比如是否必须使用工具。
++   `ModelSettings`：可以配置一些模型使用时的行为，比如是否必须使用工具。
 
-然后是重点提示词 INSTRUCTIONS
+然后是重点提示词 `INSTRUCTIONS`
 
 ```
 INSTRUCTIONS = (
-    &quot;You are a research assistant. Given a search term, you search the web for that term and&quot;
-    &quot;produce a concise summary of the results. The summary must 2-3 paragraphs and less than 300&quot;
-    &quot;words. Capture the main points. Write succinctly, no need to have complete sentences or good&quot;
-    &quot;grammar. This will be consumed by someone synthesizing a report, so its vital you capture the&quot;
-    &quot;essence and ignore any fluff. Do not include any additional commentary other than the summary&quot;
-    &quot;itself.&quot;
+    "You are a research assistant. Given a search term, you search the web for that term and"
+    "produce a concise summary of the results. The summary must 2-3 paragraphs and less than 300"
+    "words. Capture the main points. Write succinctly, no need to have complete sentences or good"
+    "grammar. This will be consumed by someone synthesizing a report, so its vital you capture the"
+    "essence and ignore any fluff. Do not include any additional commentary other than the summary"
+    "itself."
 )
 ```
 
@@ -733,84 +726,84 @@ INSTRUCTIONS = (
 | 指令含义 | 说明 |
 | --- | --- |
 | 你是一个研究助手 | 模拟一个能查资料的人 |
-| 给你关键词后上网搜索 | 关键词来自 planner_agent |
+| 给你关键词后上网搜索 | 关键词来自 `planner_agent` |
 | 写出 2-3 段简洁总结 | 每次搜索结果必须压缩成 300 字以内的摘要 |
 | 用要点式语言、可以语法不完整 | 不要求像论文，重点是信息密度高 |
 | 不要添加自己的评论 | 不能主观判断，只提取信息 |
 | 最终目的是为后续写报告的人准备素材 | 所以格式自由，内容集中就行 |
 
-接下来创建创建 Agent 对象
+接下来创建创建 `Agent` 对象
 
 ```
 search_agent = Agent(
-    name=&quot;Search agent&quot;,
+    name="Search agent",
     instructions=INSTRUCTIONS,
     tools=[WebSearchTool()],
-    model_settings=ModelSettings(tool_choice=&quot;required&quot;),
+    model_settings=ModelSettings(tool_choice="required"),
 )
 ```
 
-其中name="Search agent"是Agent 名称，用于日志和上下文显示。而instructions=INSTRUCTIONS告诉大语言模型它要怎么完成任务。tools=[WebSearchTool()]设置它可以使用的工具。在这个 case 中，它只能用 WebSearchTool，这是 SDK 内置的网页搜索工具。而model_settings=ModelSettings(tool_choice="required")则表示：强制要求模型一定要调用工具（WebSearchTool）来完成任务。不允许模型“凭空回答”或“胡编搜索内容”，这有助于提升真实性。
+其中`name="Search agent"`是`Agent` 名称，用于日志和上下文显示。而`instructions=INSTRUCTIONS`告诉大语言模型它要怎么完成任务。`tools=[WebSearchTool()]`设置它可以使用的工具。在这个 case 中，它只能用 `WebSearchTool`，这是 SDK 内置的网页搜索工具。而`model_settings=ModelSettings(tool_choice="required")`则表示：强制要求模型一定要调用工具（`WebSearchTool`）来完成任务。不允许模型“凭空回答”或“胡编搜索内容”，这有助于提升真实性。
 
 总结流程如下：
 
 ```
-关键词（来自 planner_agent） → search_agent →
-     🔍 使用 WebSearchTool 搜索
+关键词（来自 `planner_agent`） → `search_agent` →
+     🔍 使用 `WebSearchTool` 搜索
      ✂️ 根据结果生成 2-3 段摘要
-     📦 返回给 writer_agent 写整合报告
+     📦 返回给 `writer_agent` 写整合报告
 ```
 
-带入planner_agent的一个搜索条目后运行效果如下：
+带入`planner_agent`的一个搜索条目后运行效果如下：
 
 ![](img/a8da49f9c52d00833775e3922c4bec02.png)
 
-#### 2.5 writer_agent功能实现
+## 2.5 writer_agent功能实现
 
-最后则是writer_agent的功能介绍，其核心代码如下：
+最后则是`writer_agent`的功能介绍，其核心代码如下：
 
 ```
 from pydantic import BaseModel
 from agents import Agent
 
 PROMPT_TEMP = (
-    &quot;You are a senior researcher tasked with writing a cohesive report for a research query. &quot;
-    &quot;You will be provided with the original query, and some initial research done by a research &quot;
-    &quot;assistant.\n&quot;
-    &quot;You should first come up with an outline for the report that describes the structure and &quot;
-    &quot;flow of the report. Then, generate the report and return that as your final output.\n&quot;
-    &quot;The final output should be in markdown format, and it should be lengthy and detailed. Aim &quot;
-    &quot;for 10-20 pages of content, at least 1500 words.&quot;
-    &quot;最终结果请用中文输出。&quot;
+    "You are a senior researcher tasked with writing a cohesive report for a research query. "
+    "You will be provided with the original query, and some initial research done by a research "
+    "assistant.\n"
+    "You should first come up with an outline for the report that describes the structure and "
+    "flow of the report. Then, generate the report and return that as your final output.\n"
+    "The final output should be in markdown format, and it should be lengthy and detailed. Aim "
+    "for 10-20 pages of content, at least 1500 words."
+    "最终结果请用中文输出。"
 )
 
 
 class ReportData(BaseModel):
     short_summary: str
-    &quot;&quot;&quot;A short 2-3 sentence summary of the findings.&quot;&quot;&quot;
+    """A short 2-3 sentence summary of the findings."""
 
     markdown_report: str
-    &quot;&quot;&quot;The final report&quot;&quot;&quot;
+    """The final report"""
 
     follow_up_questions: list[str]
-    &quot;&quot;&quot;Suggested topics to research further&quot;&quot;&quot;
+    """Suggested topics to research further"""
 
 
 writer_agent = Agent(
-    name=&quot;WriterAgent&quot;,
+    name="WriterAgent",
     instructions=PROMPT_TEMP,
-    model=&quot;o4-mini&quot;,
+    model="o4-mini",
     output_type=ReportData,
 )
 ```
 
-Writer Agent这是 **整个研究系统的“输出终结者”**，负责把之前所有搜索到的信息，综合成一份完整、结构化、可阅读的长篇报告。该 Agent 的任务是：
+`Writer Agent`这是 **整个研究系统的“输出终结者”**，负责把之前所有搜索到的信息，综合成一份完整、结构化、可阅读的长篇报告。该 `Agent` 的任务是：
 
 +   收到研究主题和之前的所有搜索摘要；
 
-+   **先写一个大纲（outline）**；
++   先写一个大纲（`outline`）；
 
-+   然后根据大纲写出一份 详细的 Markdown 格式报告；
++   然后根据大纲写出一份 详细的 `Markdown` 格式报告；
 
 +   同时生成一个简短总结和一些后续可以研究的问题。
 
@@ -822,24 +815,26 @@ from pydantic import BaseModel
 from agents import Agent
 ```
 
-+   和前两个 Agent 一样，我们导入了：
++   和前两个 `Agent` 一样，我们导入了：
 
-+   BaseModel：用于定义结构化输出；
++   `BaseModel`：用于定义结构化输出；
 
-+   Agent：Agent SDK 中的核心类。
++   `Agent`：`Agent` SDK 中的核心类。
 
-然后是提示词定义（Prompt）
+然后是提示词定义（`Prompt`）
 
-```
+
+
+```python
 PROMPT = (
-    &quot;You are a senior researcher tasked with writing a cohesive report for a research query. &quot;
-    &quot;You will be provided with the original query, and some initial research done by a research &quot;
-    &quot;assistant.\n&quot;
-    &quot;You should first come up with an outline for the report that describes the structure and &quot;
-    &quot;flow of the report. Then, generate the report and return that as your final output.\n&quot;
-    &quot;The final output should be in markdown format, and it should be lengthy and detailed. Aim &quot;
-    &quot;for 15-20 pages of content, at least 3000 words.&quot;
-    &quot;最终结果请用中文输出。&quot;
+    "You are a senior researcher tasked with writing a cohesive report for a research query. "
+    "You will be provided with the original query, and some initial research done by a research "
+    "assistant.\n"
+    "You should first come up with an outline for the report that describes the structure and "
+    "flow of the report. Then, generate the report and return that as your final output.\n"
+    "The final output should be in markdown format, and it should be lengthy and detailed. Aim "
+    "for 15-20 pages of content, at least 3000 words."
+    "最终结果请用中文输出。"
 )
 ```
 
@@ -855,51 +850,51 @@ PROMPT = (
 | 输出格式 | Markdown 格式（如 # 一级标题, - 列表 等） |
 | 语言风格 | 精炼、学术、结构清晰 |
 
-这个 prompt 是整个系统中最“生成型”的一个 prompt。紧接着是输出数据结构定义，定义一个 ReportData 类，用来约束模型的输出结构：
+这个 prompt 是整个系统中最“生成型”的一个 prompt。紧接着是输出数据结构定义，定义一个 `ReportData` 类，用来约束模型的输出结构：
 
-```
+```python
 class ReportData(BaseModel):
     short_summary: str
-    &quot;&quot;&quot;A short 2-3 sentence summary of the findings.&quot;&quot;&quot;
+    """A short 2-3 sentence summary of the findings."""
 
     markdown_report: str
-    &quot;&quot;&quot;The final report&quot;&quot;&quot;
+    """The final report"""
 
     follow_up_questions: list[str]
-    &quot;&quot;&quot;Suggested topics to research further&quot;&quot;&quot;
+    """Suggested topics to research further"""
 ```
 
 具体含义如下：
 
 | 字段名 | 类型 | 说明 |
 | --- | --- | --- |
-| short_summary | str | 对研究结果的简要总结（2~3 句话） |
-| markdown_report | str | 报告正文，Markdown 格式，内容详实 |
-| follow_up_questions | list[str] | 建议后续可以进一步研究的问题列表 |
+| `short_summary` | str | 对研究结果的简要总结（2~3 句话） |
+| `markdown_report` | str | 报告正文，Markdown 格式，内容详实 |
+| `follow_up_questions` | list[str] | 建议后续可以进一步研究的问题列表 |
 
-注意：这个结构就是通过 output_type=ReportData 来告诉 SDK 要求模型输出这个结构，否则 SDK 会报错或解析失败。
+注意：这个结构就是通过 `output_type=ReportData` 来告诉 SDK 要求模型输出这个结构，否则 SDK 会报错或解析失败。
 
-紧接着创建 Agent 实例
+紧接着创建 `Agent` 实例
 
-```
+```python
 writer_agent = Agent(
-    name=&quot;WriterAgent&quot;,
+    name="WriterAgent",
     instructions=PROMPT,
-    model=&quot;gpt-4.1&quot;,
+    model="gpt-4.1",
     output_type=ReportData,
 )
 ```
 
 | 参数 | 含义 |
 | --- | --- |
-| name | Agent 名 |
-| instructions | 提示词指令 |
-| model | 使用的模型（这里是 &quot;gpt-4.1&quot;，可以替换为 gpt-4o 等） |
-| output_type | 指定输出为 ReportData 类型，支持结构化结果 |
+| `name` | Agent 名 |
+| `instructions` | 提示词指令 |
+| `model` | 使用的模型（这里是 `gpt-4.1`，可以替换为 `gpt-4o` 等） |
+| `output_type` | 指定输出为 `ReportData` 类型，支持结构化结果 |
 
 整体流程总结如下：
 
-```
+```python
 1. 用户输入研究主题 → planner_agent → 搜索关键词列表
 2. 每个关键词 → search_agent → 搜索摘要
 3. 所有摘要集合 + 原始主题 → writer_agent →
@@ -909,46 +904,42 @@ writer_agent = Agent(
      - follow_up_questions（可继续研究的问题）
 ```
 
-最终返回的是一个完整结构化的 ReportData 对象。
-
-带入其中第一个条目搜索结果后可以编写文本如下：
+最终返回的是一个完整结构化的 `ReportData` 对象。
 
 ![](img/cd33f2f3cc85e06329529130d2eef3cd.png)
 
 需要注意的是，实际执行过程中，需要带入全部搜索条目的短文本后再编写最终的长文本。
 
-#### 2.6 MCP服务器主函数编写
+### 2.6 MCP服务器主函数编写
 
 在实现了这一系列Agents的基础功能之后，我们来编写当前MCP服务器的主函数。其实MCP服务器的主函数和Function calling运行过程中的外部函数类似，基本要求如下：
 
-1.  能实现稳定的输入和输出。对于当前Mini DeepResearch服务器来说，输入就是用户的问题，而输出就是最终的调研报告；
+1. 能实现稳定的输入和输出。对于当前Mini DeepResearch服务器来说，输入就是用户的问题，而输出就是最终的调研报告；
+2. 需要编写明确的函数说明，包括函数功能、函数参数和函数输出等。这些内容都是MCP客户端去识别外部工具的关键。
+3. 推荐可以使用MCP SDK进行服务器开发。
 
-1.  需要编写明确的函数说明，包括函数功能、函数参数和函数输出等。这些内容都是MCP客户端去识别外部工具的关键。
+这里我们创建一个`deepresearch`函数组，这个函数组用于调用上面的Agents来执行完整的规划、搜索和文档编写工作，该函数组完整代码如下：
 
-1.  推荐可以使用MCP SDK进行服务器开发。
-
-这里我们创建一个deepresearch函数组，这个函数组用于调用上面的Agents来执行完整的规划、搜索和文档编写工作，该函数组完整代码如下：
-
-```
+```python
 import asyncio
 import os
 import time
 from typing import List
 
-async def _plan_searches(query: str) -&gt; WebSearchPlan:
-    &quot;&quot;&quot;
+async def _plan_searches(query: str) -> WebSearchPlan:
+    """
     用于进行某个搜索主题的搜索规划
-    &quot;&quot;&quot;
+    """
     result = await Runner.run(
         planner_agent,
-        f&quot;Query: {query}&quot;,
+        f"Query: {query}",
     )
     return result.final_output_as(WebSearchPlan)
 
-async def _perform_searches(search_plan: WebSearchPlan) -&gt; List[str]:
-    &quot;&quot;&quot;
+async def _perform_searches(search_plan: WebSearchPlan) -> List[str]:
+    """
     用于实际执行搜索，并组成搜索条目列表
-    &quot;&quot;&quot;
+    """
     tasks = [asyncio.create_task(_search(item)) for item in search_plan.searches]
     results = []
     for task in asyncio.as_completed(tasks):
@@ -957,35 +948,35 @@ async def _perform_searches(search_plan: WebSearchPlan) -&gt; List[str]:
             results.append(result)
     return results
 
-async def _search(item: WebSearchItem) -&gt; str | None:
-    &quot;&quot;&quot;
+async def _search(item: WebSearchItem) -> str | None:
+    """
     实际负责进行搜索，并完成每个搜索条目的短文本编写
-    &quot;&quot;&quot;
+    """
     try:
         result = await Runner.run(
             search_agent,
-            input=f&quot;Search term: {item.query}\nReason for searching: {item.reason}&quot;
+            input=f"Search term: {item.query}\nReason for searching: {item.reason}"
         )
         return str(result.final_output)
     except Exception:
         return None
     
-async def _write_report(query: str, search_results: List[str]) -&gt; ReportData:
-    &quot;&quot;&quot;
+async def _write_report(query: str, search_results: List[str]) -> ReportData:
+    """
     根据搜索的段文档，编写长文本
-    &quot;&quot;&quot;
+    """
     result = await Runner.run(
         writer_agent,
-        input=f&quot;Original query: {query}\nSummarized search results: {search_results}&quot;,
+        input=f"Original query: {query}\nSummarized search results: {search_results}",
     )
     return result.final_output_as(ReportData)
 
 
-async def deepresearch(query: str) -&gt; ReportData:
-    &quot;&quot;&quot;
+async def deepresearch(query: str) -> ReportData:
+    """
     主函数，输入一个研究主题，自动完成搜索规划、搜索、写报告。
     返回最终的 ReportData 对象，就是一个markdown格式的完整的研究报告文档
-    &quot;&quot;&quot;
+    """
     search_plan = await _plan_searches(query)
     search_results = await _perform_searches(search_plan)
     report = await _write_report(query, search_results)
@@ -994,11 +985,11 @@ async def deepresearch(query: str) -&gt; ReportData:
 
 编写完成后可以输入如下代码进行测试：
 
-```
+```python
 import nest_asyncio
 nest_asyncio.apply()
 
-report = await deepresearch(&quot;人工智能在教育领域的应用&quot;)
+report = await deepresearch("人工智能在教育领域的应用")
 
 from rich.markdown import Markdown
 display(Markdown(report.markdown_report))
@@ -1008,47 +999,43 @@ display(Markdown(report.markdown_report))
 
 ![](img/af6d46048aed6d8ecd0fa0a7ee758c5e.png)
 
-+   课件领取
++ 课件领取
 
 ![](img/204ef008da0b1fd7b24e4b141831567c.png)
 
 ![](img/782ef6f9c561a3f8f52f5fcd9f11a827.png)
 
-### 3. MCP Server项目开发
+## 3. MCP Server项目开发
 
 在完成了代码功能测试后，接下来我们需要创建一个完整的MCP Server项目来实现该功能。对于一个完整的MCP项目来说，要有完整的项目代码结构、以及符合MCP服务器基本调用规范。具体项目创建流程如下：
 
-#### Step 1. 借助uv创建Python项目
+### Step 1. 借助uv创建Python项目
 
-**  MCP开发要求借助uv**进行虚拟环境创建和依赖管理。uv 是一个Python 依赖管理工具，类似于 p**ip ****和 c****o****nda，****但它更****快、更高效，并且可**以更好地管理 Python 虚拟环境和依赖项。它的核心目标是替代 pip、venv 和 pip-tools，提供更好的性能和更低的管理开销。
+`uv` 开发要求借助 `uv` 进行虚拟环境创建和依赖管理。`uv` 是一个 Python 依赖管理工具，类似于 `pip` 和 `conda`，但它更快、更高效，并且可以更好地管理 Python 虚拟环境和依赖项。它的核心目标是替代 `pip`、`venv` 和 `pip-tools`，提供更好的性能和更低的管理开销。
 
-**uv**** 的特点**：
+`uv` 的特点：
 
-1.  **速度更快**：相比 pip，uv 采用 Rust 编写，性能更优。
+1. **速度更快**：相比 `pip`，`uv` 采用 Rust 编写，性能更优。
+2. **支持 PEP 582**：无需 `virtualenv`，可以直接使用 `__pypackages__` 进行管理。
+3. **兼容 `pip`**：支持 `requirements.txt` 和 `pyproject.toml` 依赖管理。
+4. **替代 `venv`**：提供 `uv venv` 进行虚拟环境管理，比 `venv` 更轻量。
+5. **跨平台**：支持 Windows、macOS 和 Linux。
 
-1.  **支持 PEP 582**：无需 virtualenv，可以直接使用 __pypackages__ 进行管理。
+以 Ubuntu 系统为例，首先使用 `pip` 安装 `uv`：
 
-1.  **兼容 ****pip**：支持 requirements.txt 和 pyproject.toml 依赖管理。
-
-1.  **替代 ****venv**：提供 uv venv 进行虚拟环境管理，比 venv 更轻量。
-
-1.  **跨平台**：支持 Windows、macOS 和 Linux。
-
-以Ubuntu系统为例，首先使用pip安装uv：
-
-```
+```bash
 pip install uv
 ```
 
-> 此外，也可以直接使用curl安装uv
+> 此外，也可以直接使用 `curl` 安装 `uv`
 
-```
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 然后按照如下流程创建项目主目录：
 
-```
+```bash
 # cd /root/autodl-tmp/MCP
 
 # 创建项目目录
@@ -1062,7 +1049,7 @@ cd mcp-server-deepresearch
 
 然后输入如下命令创建虚拟环境：
 
-```
+```bash
 # 创建虚拟环境
 uv venv
 
@@ -1078,147 +1065,153 @@ source .venv/bin/activate
 
 | 文件/文件夹 | 作用 |
 | --- | --- |
-| .git/ | Git 版本控制目录 |
-| .venv/ | 虚拟环境 |
-| .gitignore | Git 忽略规则 |
-| .python-version | Python版本声明 |
-| main.py | 主程序入口 |
-| pyproject.toml | 项目配置文件 |
-| README.md | 项目说明文档 |
+| `.git/` | Git 版本控制目录 |
+| `.venv/` | 虚拟环境 |
+| `.gitignore` | Git 忽略规则 |
+| `.python-version` | Python版本声明 |
+| `main.py` | 主程序入口 |
+| `pyproject.toml` | 项目配置文件 |
+| `README.md` | 项目说明文档 |
 
-#### Step 2. 添加项目依赖
+### Step 2. 添加项目依赖
 
-接下来继续使用uv工具，为我们的项目添加基础依赖。根据此前的代码解释不难看出，当前项目主要需要用到openai和openai-agents这两个库，我们可以使用如下命令安装相关依赖，并同时安装mcp sdk：
+接下来继续使用 `uv` 工具，为我们的项目添加基础依赖。根据此前的代码解释不难看出，当前项目主要需要用到 `openai` 和 `openai-agents` 这两个库，我们可以使用如下命令安装相关依赖，并同时安装 `mcp` sdk：
 
-```
+```bash
 # 安装 MCP SDK
 uv add mcp openai openai-agents asyncio typing pydantic
 ```
 
 ![](img/d9dfd3a24c485579b898783acda681a7.png)
 
-注意，对于uv管理库来说，相关依赖会安装到.venv文件中，并不会和系统库产生冲突。
+注意，对于 `uv` 管理库来说，相关依赖会安装到 `.venv` 文件中，并不会和系统库产生冲突。
 
-#### Step 3.编写项目源码
+### Step 3. 编写项目源码
 
-接下来在主目录下创建/src/mcp_server_deepresearch作为代码主目录
+接下来在主目录下创建 `./src/mcp_server_deepresearch` 作为代码主目录
 
-```
+```bash
 mkdir -p ./src/mcp_server_deepresearch
 cd ./src/mcp_server_deepresearch
 ```
 
-然后创建server.py脚本，作为整个DeepResearch MCP服务器的核心脚本，
+然后创建 `server.py` 脚本，作为整个 DeepResearch MCP 服务器的核心脚本，
 
 ![](img/3e50eddc234bb9d39840d2e76d0c9800.png)
 
 并写入代码如下：
 
-```
+
+
+# DeepResearch MCP 服务器开发与实现
+
+## 完整代码实现
+
+```python
 import asyncio
 import argparse
 from typing import List
 from mcp.server.fastmcp import FastMCP
 from openai import AsyncOpenAI
 from pydantic import BaseModel
-from agents import OpenAIChatCompletionsModel,Agent,Runner,set_default_openai_client, set_tracing_disabled,WebSearchTool
+from agents import OpenAIChatCompletionsModel, Agent, Runner, set_default_openai_client, set_tracing_disabled, WebSearchTool
 from agents.model_settings import ModelSettings
 
 # 初始化 MCP 服务器
-mcp = FastMCP(&quot;DeepResearch&quot;)
-USER_AGENT = &quot;deepresearch-app/1.0&quot;
+mcp = FastMCP("DeepResearch")
+USER_AGENT = "deepresearch-app/1.0"
 API_KEY = None
 
-# 创建planner_agent
+# 创建 planner_agent
 PROMPT = (
-    &quot;You are a helpful research assistant. Given a query, come up with a set of web searches &quot;
-    &quot;to perform to best answer the query. Output between 10 and 20 terms to query for.&quot;
+    "You are a helpful research assistant. Given a query, come up with a set of web searches "
+    "to perform to best answer the query. Output between 10 and 20 terms to query for."
 )
 
 
 class WebSearchItem(BaseModel):
     reason: str
-    &quot;Your reasoning for why this search is important to the query.&quot;
+    "Your reasoning for why this search is important to the query."
 
     query: str
-    &quot;The search term to use for the web search.&quot;
+    "The search term to use for the web search."
 
 
 class WebSearchPlan(BaseModel):
     searches: list[WebSearchItem]
-    &quot;&quot;&quot;A list of web searches to perform to best answer the query.&quot;&quot;&quot;
+    """A list of web searches to perform to best answer the query."""
 
 
 planner_agent = Agent(
-    name=&quot;PlannerAgent&quot;,
+    name="PlannerAgent",
     instructions=PROMPT,
-    model=&quot;o3-mini&quot;,
+    model="o3-mini",
     output_type=WebSearchPlan,
 )
 
-# 创建search_agent
+# 创建 search_agent
 INSTRUCTIONS = (
-    &quot;You are a research assistant. Given a search term, you search the web for that term and &quot;
-    &quot;produce a concise summary of the results. The summary must 2-3 paragraphs and less than 300 &quot;
-    &quot;words. Capture the main points. Write succinctly, no need to have complete sentences or good &quot;
-    &quot;grammar. This will be consumed by someone synthesizing a report, so its vital you capture the &quot;
-    &quot;essence and ignore any fluff. Do not include any additional commentary other than the summary &quot;
-    &quot;itself.&quot;
+    "You are a research assistant. Given a search term, you search the web for that term and "
+    "produce a concise summary of the results. The summary must 2-3 paragraphs and less than 300 "
+    "words. Capture the main points. Write succinctly, no need to have complete sentences or good "
+    "grammar. This will be consumed by someone synthesizing a report, so its vital you capture the "
+    "essence and ignore any fluff. Do not include any additional commentary other than the summary "
+    "itself."
 )
 
 search_agent = Agent(
-    name=&quot;Search agent&quot;,
+    name="Search agent",
     instructions=INSTRUCTIONS,
     tools=[WebSearchTool()],
-    model_settings=ModelSettings(tool_choice=&quot;required&quot;),
+    model_settings=ModelSettings(tool_choice="required"),
 )
 
-# 创建writer_agent
+# 创建 writer_agent
 PROMPT_TEMP = (
-    &quot;You are a senior researcher tasked with writing a cohesive report for a research query. &quot;
-    &quot;You will be provided with the original query, and some initial research done by a research &quot;
-    &quot;assistant.\n&quot;
-    &quot;You should first come up with an outline for the report that describes the structure and &quot;
-    &quot;flow of the report. Then, generate the report and return that as your final output.\n&quot;
-    &quot;The final output should be in markdown format, and it should be lengthy and detailed. Aim &quot;
-    &quot;for 10-20 pages of content, at least 1500 words.&quot;
-    &quot;最终结果请用中文输出。&quot;
+    "You are a senior researcher tasked with writing a cohesive report for a research query. "
+    "You will be provided with the original query, and some initial research done by a research "
+    "assistant.\n"
+    "You should first come up with an outline for the report that describes the structure and "
+    "flow of the report. Then, generate the report and return that as your final output.\n"
+    "The final output should be in markdown format, and it should be lengthy and detailed. Aim "
+    "for 10-20 pages of content, at least 1500 words."
+    "最终结果请用中文输出。"
 )
 
 
 class ReportData(BaseModel):
     short_summary: str
-    &quot;&quot;&quot;A short 2-3 sentence summary of the findings.&quot;&quot;&quot;
+    """A short 2-3 sentence summary of the findings."""
 
     markdown_report: str
-    &quot;&quot;&quot;The final report&quot;&quot;&quot;
+    """The final report"""
 
     follow_up_questions: list[str]
-    &quot;&quot;&quot;Suggested topics to research further&quot;&quot;&quot;
+    """Suggested topics to research further"""
 
 
 writer_agent = Agent(
-    name=&quot;WriterAgent&quot;,
+    name="WriterAgent",
     instructions=PROMPT_TEMP,
-    model=&quot;o3-mini&quot;,
+    model="o3-mini",
     output_type=ReportData,
 )
 
 # 辅助函数组
-async def _plan_searches(query: str) -&gt; WebSearchPlan:
-    &quot;&quot;&quot;
+async def _plan_searches(query: str) -> WebSearchPlan:
+    """
     用于进行某个搜索主题的搜索规划
-    &quot;&quot;&quot;
+    """
     result = await Runner.run(
         planner_agent,
-        f&quot;Query: {query}&quot;,
+        f"Query: {query}",
     )
     return result.final_output_as(WebSearchPlan)
 
-async def _perform_searches(search_plan: WebSearchPlan) -&gt; List[str]:
-    &quot;&quot;&quot;
+async def _perform_searches(search_plan: WebSearchPlan) -> List[str]:
+    """
     用于实际执行搜索，并组成搜索条目列表
-    &quot;&quot;&quot;
+    """
     tasks = [asyncio.create_task(_search(item)) for item in search_plan.searches]
     results = []
     for task in asyncio.as_completed(tasks):
@@ -1227,180 +1220,179 @@ async def _perform_searches(search_plan: WebSearchPlan) -&gt; List[str]:
             results.append(result)
     return results
 
-async def _search(item: WebSearchItem) -&gt; str | None:
-    &quot;&quot;&quot;
+async def _search(item: WebSearchItem) -> str | None:
+    """
     实际负责进行搜索，并完成每个搜索条目的短文本编写
-    &quot;&quot;&quot;
+    """
     try:
         result = await Runner.run(
             search_agent,
-            input=f&quot;Search term: {item.query}\nReason for searching: {item.reason}&quot;
+            input=f"Search term: {item.query}\nReason for searching: {item.reason}"
         )
         return str(result.final_output)
     except Exception:
         return None
     
-async def _write_report(query: str, search_results: List[str]) -&gt; ReportData:
-    &quot;&quot;&quot;
+async def _write_report(query: str, search_results: List[str]) -> ReportData:
+    """
     根据搜索的段文档，编写长文本
-    &quot;&quot;&quot;
+    """
     result = await Runner.run(
         writer_agent,
-        input=f&quot;Original query: {query}\nSummarized search results: {search_results}&quot;,
+        input=f"Original query: {query}\nSummarized search results: {search_results}",
     )
     return result.final_output_as(ReportData)
 
 # MCP服务器主函数
 @mcp.tool()
-async def deepresearch(query: str) -&gt; ReportData:
-    &quot;&quot;&quot;
+async def deepresearch(query: str) -> ReportData:
+    """
     当用户明确表示需要围绕某个主题进行深入研究时，请调本函数。
     本函数能够围绕用户输入的问题进行联网搜索和深入研究，并创建一篇内容完整的markdown格式的研究报告。
     输入参数query:用户提出的研究主题，以字符串形式表示；
     函数返回结果为一个markdown格式的完整的研究报告文档。
-    &quot;&quot;&quot;
+    """
     search_plan = await _plan_searches(query)
     search_results = await _perform_searches(search_plan)
     report = await _write_report(query, search_results)
     return report
 
 def main():
-    parser = argparse.ArgumentParser(description=&quot;DeepResearch Server&quot;)
-    parser.add_argument(&quot;--openai_api_key&quot;, type=str, required=True, help=&quot;你的 OpenAI API Key&quot;)
+    parser = argparse.ArgumentParser(description="DeepResearch Server")
+    parser.add_argument("--openai_api_key", type=str, required=True, help="你的 OpenAI API Key")
     args = parser.parse_args()
 
     # 初始化 external_client 和设置
     external_client = AsyncOpenAI(
-        base_url = &quot;https://ai.devtool.tech/proxy/v1&quot;,
+        base_url = "https://ai.devtool.tech/proxy/v1",
         api_key = args.openai_api_key,
     )
     set_default_openai_client(external_client)
     set_tracing_disabled(True)
     
-    mcp.run(transport=&#x27;stdio&#x27;)
+    mcp.run(transport='stdio')
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
-其中主要内容均为此前介绍的三个Agent和调度函数组的内容，而整个MCP服务器开发核心采用了fastmcp库进行高效开发：
+## 核心模块解析
 
-```
+### MCP 服务器初始化
+
+其中主要内容均为此前介绍的三个 `Agent` 和调度函数组的内容，而整个 MCP 服务器开发核心采用了 `fastmcp` 库进行高效开发：
+
+```python
 from mcp.server.fastmcp import FastMCP
 ```
 
-借助fastmcp，我们仅需在脚本初始化一个MCP服务器对象，
+借助 `fastmcp`，我们仅需在脚本初始化一个 MCP 服务器对象：
 
-```
-mcp = FastMCP(&quot;DeepResearch&quot;)
+```python
+mcp = FastMCP("DeepResearch")
 ```
 
-然后使用装饰器为其添加一些函数
+然后使用装饰器为其添加一些函数：
 
-```
+```python
 # MCP服务器主函数
 @mcp.tool()
-async def deepresearch(query: str) -&gt; ReportData:
+async def deepresearch(query: str) -> ReportData:
 ```
 
-然后即可创建一个自定义功能的MCP服务器。我们也可以简单的将MCP服务器理解为嵌套在功能函数外层的一个对象。而在实际运行的时候，我们仅需在主函数的尾部加上：
+然后即可创建一个自定义功能的 MCP 服务器。我们也可以简单的将 MCP 服务器理解为嵌套在功能函数外层的一个对象。而在实际运行的时候，我们仅需在主函数的尾部加上：
 
+```python
+mcp.run(transport='stdio')
 ```
-mcp.run(transport=&#x27;stdio&#x27;)
-```
 
-即可完成MCP服务器进程的开启。
+即可完成 MCP 服务器进程的开启。
 
-不难看出借助MCP高级SDK开发MCP服务器的流程实际上非常简单，整个代码编写过程主要还是需要写清楚功能函数的执行逻辑。
+不难看出借助 MCP 高级 SDK 开发 MCP 服务器的流程实际上非常简单，整个代码编写过程主要还是需要写清楚功能函数的执行逻辑。
 
-> 更多MCP SDK详见官网介绍：https://github.com/modelcontextprotocol/python-sdk
+> 更多 MCP SDK 详见官网介绍：`https://github.com/modelcontextprotocol/python-sdk`
 
 ![](img/68e8ba3167fa4631a5a4f3e21f4128fe.png)
 
-而parser相关代码则是规定在调用该脚本时需要通过参数输入来设置OpenAI的API-KEY。具体解释如下：
+### 命令行参数与主入口
 
-```
+而 `parser` 相关代码则是规定在调用该脚本时需要通过参数输入来设置 OpenAI 的 API-KEY。具体解释如下：
+
+```python
 def main():
 ```
 
-+   定义一个名为 main 的函数，作为程序的主入口函数。
++   定义一个名为 `main` 的函数，作为程序的主入口函数。
 
-```
-    parser = argparse.ArgumentParser(description=&quot;DeepResearch Server&quot;)
-```
-
-+   使用 argparse 模块来创建一个命令行参数解析器 parser。
-
-+   description="DeepResearch Server" 是该程序的描述，用于命令行中帮助信息的展示。
-
-```
-    parser.add_argument(&quot;--openai_api_key&quot;, type=str, required=True, help=&quot;你的 OpenAI API Key&quot;)
+```python
+parser = argparse.ArgumentParser(description="DeepResearch Server")
 ```
 
-+   定义了一个命令行参数 --openai**_api_****key，类型为字符串，必须****提**供（required=True）。
++   使用 `argparse` 模块来创建一个命令行参数解析器 `parser`。
++   `description="DeepResearch Server"` 是该程序的描述，用于命令行中帮助信息的展示。
 
-+   help="你的 OpenAI API Key" 表示当用户运行 python script.py --help 时，会看到这段提示。
+```python
+parser.add_argument("--openai_api_key", type=str, required=True, help="你的 OpenAI API Key")
+```
+
++   定义了一个命令行参数 `--openai_api_key`，类型为字符串，必须提供（`required=True`）。
++   `help="你的 OpenAI API Key"` 表示当用户运行 `python script.py --help` 时，会看到这段提示。
 
 ✅ 示例调用：
 
-```
+```bash
 python script.py --openai_api_key sk-xxxxx
 ```
 
-```
-    args = parser.parse_args()
-```
-
-+   从命令行读取并解析用户输入的参数，将其保存到 args 变量中。
-
-+   现在可以通过 args.openai_api_key 访问用户输入的 API key。
-
-```
-    external_client = AsyncOpenAI(
-        base_url = &quot;https://ai.devtool.tech/proxy/v1&quot;,
-        api_key = args.openai_api_key,
-    )
+```python
+args = parser.parse_args()
 ```
 
-+   创建一个 OpenAI 的异步客户端实例 exter**nal_**client，这个客户端使用了一个代理接口 https://ai.devtool.tech/proxy/v1。
++   从命令行读取并解析用户输入的参数，将其保存到 `args` 变量中。
++   现在可以通过 `args.openai_api_key` 访问用户输入的 API key。
 
-+   使用了用户提供的 openai_api_key 作为身份验证。
-
-```
-    set_default_openai_client(external_client)
-```
-
-+   将刚刚创建的 external_client 设置为全局默认的 OpenAI 客户端，后续代码调用模型接口时将自动使用这个客户端。
-
-+   通常用于封装库内部（比如 Agent 框架）统一使用这个客户端。
-
-```
-    set_tracing_disabled(True)
+```python
+external_client = AsyncOpenAI(
+    base_url = "https://ai.devtool.tech/proxy/v1",
+    api_key = args.openai_api_key,
+)
 ```
 
-+   禁用“追踪（Tracing）”功能，可能用于避免记录日志或追踪操作。具体是否影响功能取决于你使用的 SDK 或 Agent 框架。
++   创建一个 OpenAI 的异步客户端实例 `external_client`，这个客户端使用了一个代理接口 `https://ai.devtool.tech/proxy/v1`。
++   使用了用户提供的 `openai_api_key` 作为身份验证。
 
+```python
+set_default_openai_client(external_client)
 ```
-    mcp.run(transport=&#x27;stdio&#x27;)
+
++   将刚刚创建的 `external_client` 设置为全局默认的 OpenAI 客户端，后续代码调用模型接口时将自动使用这个客户端。
++   通常用于封装库内部（比如 `Agent` 框架）统一使用这个客户端。
+
+```python
+set_tracing_disabled(True)
 ```
 
-+   启动 MCP（Model Context Prot**ocol**）服务器，采用 stdio 作为传输方式。
++   禁用“追踪（Tracing）”功能，可能用于避免记录日志或追踪操作。具体是否影响功能取决于你使用的 SDK 或 `Agent` 框架。
 
-+   stdio 传输方式通常用于与终端交互或被其他进程通过标准输入/输出调用（类似 CLI 工具或嵌套调用）。
+```python
+mcp.run(transport='stdio')
+```
 
-这段 main 函数的逻辑是：
++   启动 MCP（Model Context Protocol）服务器，采用 `stdio` 作为传输方式。
++   `stdio` 传输方式通常用于与终端交互或被其他进程通过标准输入/输出调用（类似 CLI 工具或嵌套调用）。
+
+这段 `main` 函数的逻辑是：
 
 1.  从命令行中获取用户输入的 OpenAI API Key。
-
-1.  构造一个通过代理地址访问 OpenAI 的异步客户端。
-
-1.  设置这个客户端为默认客户端，禁用 tracing。
-
-1.  以 stdio 模式启动 MCP Server
+2.  构造一个通过代理地址访问 OpenAI 的异步客户端。
+3.  设置这个客户端为默认客户端，禁用 tracing。
+4.  以 `stdio` 模式启动 MCP Server
 
 整个项目的脚本文件可以在网盘中领取：
 
 ![](img/de541a06e9f1410b58f357436c0cb0cc.png)
+
+
 
 ![](img/671c86b28eb785518be18bc57efe478a.png)
 
@@ -1428,24 +1420,21 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_server_deepresearch/serv
 
 ![](img/d8b10b87e7f9b7883685e31902b31217.png)
 
-> 注意此处要输入OpenAI-API-KEY
+> 注意此处要输入`OpenAI-API-KEY`
 
-启动完成后能够看到，此时服务器端口号为6277，而Inspector端口号为6274，如果是在本地运行，则可以直接在浏览器中输入localhost:6274进入Inspector页面，而如果是在AutoDL上运行，则需要使用SSH隧道工具，将两个端口号都映射到本地：
+启动完成后能够看到，此时服务器端口号为6277，而Inspector端口号为6274，如果是在本地运行，则可以直接在浏览器中输入`localhost:6274`进入Inspector页面，而如果是在AutoDL上运行，则需要使用SSH隧道工具，将两个端口号都映射到本地：
 
 ![](img/76da5ed983af5aeb2cb0e939c093675b.png)
 
-然后再在localhost:6274进入Inspector页面。
+然后再在`localhost:6274`进入Inspector页面。
 
 +   Step 2.设置Inspector相应时间
 
 首次进入Inspector页面时需要设置响应时间，由于当前外部工具运行时间较长，Inspector默认只给出10秒响应窗口，超时未响应则会报错，因此这里需要在Configuration中进行响应时间设置：
 
-
-
 然后点击Connect即可连接MCP Server。
 
 > 超时响应报错示例：
-
 
 +   Step 4.在线运行
 
@@ -1463,18 +1452,17 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_server_deepresearch/serv
 
 +   **MCP服务器在线发布**
 
-+           所谓在线发布，指的是我们可以将开发好的MCP服务器打包上传到pypi平台或者npm平台进行云平台托管，一旦上传成功，后续用户即可使用uvx或者npx进行下载和使用。我们在3. MCP工具标准接入流程一节中所介绍的各主流MCP客户端接入MCP工具的标准流程，实际上就是实时下载MCP工具，然后在本地进行运行。而各大MCP工具平台，如Smithery，本质上也是在pipy平台或者npm平台上托管的库基础上进行的进一步维护。
+    所谓在线发布，指的是我们可以将开发好的MCP服务器打包上传到`pypi`平台或者`npm`平台进行云平台托管，一旦上传成功，后续用户即可使用`uvx`或者`npx`进行下载和使用。我们在3. MCP工具标准接入流程一节中所介绍的各主流MCP客户端接入MCP工具的标准流程，实际上就是实时下载MCP工具，然后在本地进行运行。而各大MCP工具平台，如Smithery，本质上也是在`pipy`平台或者`npm`平台上托管的库基础上进行的进一步维护。
 
-+   pipy：https://pypi.org/
++   `pipy`：https://pypi.org/
 
-
-+   npm：https://www.npmjs.com/
++   `npm`：https://www.npmjs.com/
 
 ![](img/c0bea0ec71a9bf49a33f3d0453d50a1d.png)
 
 +   **MCP服务器离线拷贝运行**
 
-+    而所谓的离线部署运行，就好理解的多，指的是将打包好的库直接拷贝到服务器上或者给他人进行使用，没有在云平台托管的这个环节，适合非公开MCP服务器进行部署。
+    而所谓的离线部署运行，就好理解的多，指的是将打包好的库直接拷贝到服务器上或者给他人进行使用，没有在云平台托管的这个环节，适合非公开MCP服务器进行部署。
 
 接下来围绕我们创建的DeepResearch MCP服务器，详细介绍这两种部署方法。
 
@@ -1482,9 +1470,9 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_server_deepresearch/serv
 
 尽管此前我们已经完成了DeepResearch项目的核心脚本debug，但其仍然不算是一个结构完整的项目。核心脚本的调用关系并不明确，同时项目说明也不够完善。因此这里我们首先需要先完善项目的主体内容，再考虑进行部署或上线发布。
 
-#### 1.1 src layout项目结构
+#### 1.1 `src layout`项目结构
 
-其实在此之前，我们将代码都放在src内的某个文件夹里，这种项目结构也被称作src layout项目结构，这是一种非常通用、同时也便于代码维护的项目结构，基本示意图如下：
+其实在此之前，我们将代码都放在`src`内的某个文件夹里，这种项目结构也被称作`src layout`项目结构，这是一种非常通用、同时也便于代码维护的项目结构，基本示意图如下：
 
 ```
 your-project/
@@ -1500,13 +1488,13 @@ your-project/
 └── uv.lock            ← uv 的依赖锁文件
 ```
 
-接下来我们还需要在src/mcp_server_deepresearch中创建两个py脚本，其一是__init__.py，使当前文件夹可以作为Python的一个库进行导入，需要在__init__.py写入如下代码：
+接下来我们还需要在`src/mcp_server_deepresearch`中创建两个`py`脚本，其一是`__init__.py`，使当前文件夹可以作为Python的一个库进行导入，需要在`__init__.py`写入如下代码：
 
 ```
 from .server import main
 ```
 
-同时再创建一个__main__.py，用于实际执行主函数调用流程：
+同时再创建一个`__main__.py`，用于实际执行主函数调用流程：
 
 ```
 from mcp_server_deepresearch import main
@@ -1514,7 +1502,7 @@ from mcp_server_deepresearch import main
 main()
 ```
 
-最终src/mcp_server_deepresearch中代码文件如下所示：
+最终`src/mcp_server_deepresearch`中代码文件如下所示：
 
 ![](img/c21ba71f685365fbb3261aeb502a2d49.png)
 
@@ -1524,72 +1512,72 @@ main()
 
 ![](img/7043ee48e1db3da88e28105cd80e3e9d.png)
 
-#### 1.2 修改pyproject.toml
+#### 1.2 修改`pyproject.toml`
 
-创建完基本项目结构后，让我们回到当前项目主目录下，删除main.py（如果有的话），然后修改项目配置文件pyproject.toml:
+创建完基本项目结构后，让我们回到当前项目主目录下，删除`main.py`（如果有的话），然后修改项目配置文件`pyproject.toml`:
 
 ```
 [build-system]
-requires = [&quot;setuptools&gt;=61.0&quot;, &quot;wheel&quot;]
-build-backend = &quot;setuptools.build_meta&quot;
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = &quot;mcp-server-deepresearch&quot;
-version = &quot;0.1.2&quot;
-description = &quot;实现类deepresearch功能的MCP工具&quot;
-readme = &quot;README.md&quot;
-requires-python = &quot;&gt;=3.10&quot;
+name = "mcp-server-deepresearch"
+version = "0.1.2"
+description = "实现类deepresearch功能的MCP工具"
+readme = "README.md"
+requires-python = ">=3.10"
 dependencies = [
-    &quot;asyncio&gt;=3.4.3&quot;,
-    &quot;mcp&gt;=1.6.0&quot;,
-    &quot;openai&gt;=1.75.0&quot;,
-    &quot;openai-agents&gt;=0.0.12&quot;,
-    &quot;pydantic&gt;=2.11.3&quot;,
-    &quot;typing&gt;=3.10.0.0&quot;,
+    "asyncio>=3.4.3",
+    "mcp>=1.6.0",
+    "openai>=1.75.0",
+    "openai-agents>=0.0.12",
+    "pydantic>=2.11.3",
+    "typing>=3.10.0.0",
 ]
 
 [project.scripts]
-mcp-server-deepresearch = &quot;mcp_server_deepresearch:main&quot;
+mcp-server-deepresearch = "mcp_server_deepresearch:main"
 
 [tool.setuptools]
-package-dir = {&quot;&quot; = &quot;src&quot;}
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
-where = [&quot;src&quot;]
+where = ["src"]
 ```
 
 具体配置解释如下：
 
-[build-system] 段
+`[build-system]` 段
 
 ```
 [build-system]
-requires = [&quot;setuptools&gt;=61.0&quot;, &quot;wheel&quot;]
-build-backend = &quot;setuptools.build_meta&quot;
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 ```
 
-告诉 Python 构建工具（如 pip, uv, build）：
+告诉 Python 构建工具（如 `pip`、`uv`、`build`）：
 
-+   要使用 setuptools 来构建项目
++   要使用 `setuptools` 来构建项目
 
-+   同时依赖 wheel，因为你要构建 .whl 包
++   同时依赖 `wheel`，因为你要构建 `.whl` 包
 
-[project] 段
+`[project]` 段
 
 ```
 [project]
-name = &quot;mcp-server-deepresearch&quot;
-version = &quot;0.1.2&quot;
-description = &quot;实现类deepresearch功能的MCP工具&quot;
-readme = &quot;README.md&quot;
-requires-python = &quot;&gt;=3.10&quot;
+name = "mcp-server-deepresearch"
+version = "0.1.2"
+description = "实现类deepresearch功能的MCP工具"
+readme = "README.md"
+requires-python = ">=3.10"
 dependencies = [
-    &quot;asyncio&gt;=3.4.3&quot;,
-    &quot;mcp&gt;=1.6.0&quot;,
-    &quot;openai&gt;=1.75.0&quot;,
-    &quot;openai-agents&gt;=0.0.12&quot;,
-    &quot;pydantic&gt;=2.11.3&quot;,
-    &quot;typing&gt;=3.10.0.0&quot;,
+    "asyncio>=3.4.3",
+    "mcp>=1.6.0",
+    "openai>=1.75.0",
+    "openai-agents>=0.0.12",
+    "pydantic>=2.11.3",
+    "typing>=3.10.0.0",
 ]
 ```
 
@@ -1599,13 +1587,13 @@ dependencies = [
 
 +   Python 最低版本要求
 
-+   自动安装的依赖项（相当于 requirements.txt）
++   自动安装的依赖项（相当于`requirements.txt`）
 
-[project.scripts]：命令行入口
+`[project.scripts]`：命令行入口
 
 ```
 [project.scripts]
-mcp-server-deepresearch = &quot;mcp_server_deepresearch:main&quot;
+mcp-server-deepresearch = "mcp_server_deepresearch:main"
 ```
 
 定义一个**可执行命令行脚本**，等价于在终端中直接运行：
@@ -1626,28 +1614,28 @@ mcp_server_deepresearch/main.py 里的 main() 函数
 mcp_server_deepresearch/__init__.py 中的 main() 函数
 ```
 
-只要是 main() 函数即可。
+只要是 `main()` 函数即可。
 
 ```
 [tool.setuptools]
-package-dir = {&quot;&quot; = &quot;src&quot;}
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
-where = [&quot;src&quot;]
+where = ["src"]
 ```
 
-明确告诉 setuptools：
+明确告诉 `setuptools`：
 
-+   你的项目源代码都在 src/ 目录下
++   你的项目源代码都在 `src/` 目录下
 
-+   请去 src/ 中查找 Python 包（即包含 __init__.py 的目录）
++   请去 `src/` 中查找 Python 包（即包含 `__init__.py` 的目录）
 
 | 区块 | 作用 | 评价 |
 | --- | --- | --- |
-| [build-system] | 告诉构建工具如何构建项目 | ✅ 非常规范 |
-| [project] | 定义项目基本信息和依赖 | ✅ 可以删掉 asyncio 和 typing |
-| [project.scripts] | 定义命令行工具 | ✅ 可直接用 mcp-server-deepresearch 命令运行 |
-| [tool.setuptools] | 指定源码位置 | ✅ 与 src layout 完美配合 |
+| `[build-system]` | 告诉构建工具如何构建项目 | ✅ 非常规范 |
+| `[project]` | 定义项目基本信息和依赖 | ✅ 可以删掉 `asyncio` 和 `typing` |
+| `[project.scripts]` | 定义命令行工具 | ✅ 可直接用 `mcp-server-deepresearch` 命令运行 |
+| `[tool.setuptools]` | 指定源码位置 | ✅ 与 `src layout` 完美配合 |
 
 然后对整个项目进行打包。首先需要安装打包（和上传）工具：
 
@@ -1669,26 +1657,24 @@ python -m build
 
 ![](img/afcd9a1d88b13bfc14bc873d961df44b.png)
 
-打包完成后会在主目录下新增一个dist文件夹：
+打包完成后会在主目录下新增一个`dist`文件夹：
 
 ![](img/f1cab1a028a23e630f45535e8ea8e514.png)
 
-以及在src目录下会创建一个.egg-info文件夹，
+以及在`src`目录下会创建一个`.egg-info`文件夹，
 
 ![](img/d3425b20f0c313d91ed2f63d434a91e3.png)
 
 这两个文件夹内容解释如下：
 
-+   dist/ 文件夹：**打包产物目录**，会在 包含如下文件：
-
 | 文件类型 | 说明 |
 | --- | --- |
-| .whl 文件 | Python wheel 格式的二进制分发包，最常用 |
-| .tar.gz 文件 | 源代码包（source distribution） |
+| `.whl` 文件 | Python wheel 格式的二进制分发包，最常用 |
+| `.tar.gz` 文件 | 源代码包（source distribution） |
 
-而在离线部署时候，别人安装时只要 pip install xxx.whl 就可以了（无需源码），同时上传到 PyPI、内网 PyPI、AI 模型平台等地方部署。
+而在离线部署时候，别人安装时只要 `pip install xxx.whl` 就可以了（无需源码），同时上传到 `PyPI`、内网 `PyPI`、AI 模型平台等地方部署。
 
-+   <proj**ect-na**me>.egg-info/ 文件夹：元数据文件夹，这个是 setuptools 在构建或打包时生成的一个“项目元信息目录”。比如会看到这样的结构：
++   `<project-name>.egg-info/` 文件夹：元数据文件夹，这个是 `setuptools` 在构建或打包时生成的一个“项目元信息目录”。比如会看到这样的结构：
 
 ```
 mcp_server_deepresearch.egg-info/
@@ -1699,7 +1685,7 @@ mcp_server_deepresearch.egg-info/
 ├── requires.txt
 ```
 
-PKG-INFO：你项目的基本信息（名称、版本、作者、依赖等），requires.txt：列出依赖项，SOURCES.txt：列出所有打包进 .whl 的文件，top_level.txt：顶层包名（比如 mcp_server_deepresearch）。
+`PKG-INFO`：你项目的基本信息（名称、版本、作者、依赖等），`requires.txt`：列出依赖项，`SOURCES.txt`：列出所有打包进 `.whl` 的文件，`top_level.txt`：顶层包名（比如 `mcp_server_deepresearch`）。
 
 ### 2. 项目离线拷贝
 
@@ -1708,14 +1694,14 @@ PKG-INFO：你项目的基本信息（名称、版本、作者、依赖等），
 ```
 # 回到主目录 
 # cd /root/autodl-tmp/MCP/mcp-server-deepresearch
-tar --exclude=&#x27;.venv&#x27; -czvf mcp-server-deepresearch.tar.gz *
+tar --exclude='.venv' -czvf mcp-server-deepresearch.tar.gz *
 ```
 
-压缩后会创建一个名为mcp-server-deepresearch.tar.gz的文件：
+压缩后会创建一个名为`mcp-server-deepresearch.tar.gz`的文件：
 
 ![](img/71889776151e847ea74696a703b87124.png)
 
-将其下载后即可上传到服务器B上，例如将其上传到B服务器的/root/autodl-tmp/MCP/MCP-Test路径下：
+将其下载后即可上传到服务器B上，例如将其上传到B服务器的`/root/autodl-tmp/MCP/MCP-Test`路径下：
 
 ![](img/7b72381ccd3b9d03906113d3068455b9.png)
 
@@ -1759,13 +1745,15 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_server_deepresearch/serv
 
 ![](img/32e30b535ffdf222530fcf58b3d967ba.png)
 
-### 3. 项目发布到pipy平台
+### 3. 项目发布到`pipy`平台
 
-除了离线拷贝之外，我们也可以把自己开发完成的MCP Server发布到一些托管平台上方便其他人下载使用，如果是js开发的MCP Server可以发布在npm平台上，而如果是Python项目，则可以发布在pypi上。我们这里以pypi发布流程为例进行演示。首先需要先在pypi：https://pypi.org/上进行账号注册，然后获取API-KEY作为身份验证，
+除了离线拷贝之外，我们也可以把自己开发完成的MCP Server发布到一些托管平台上方便其他人下载使用，如果是`js`开发的MCP Server可以发布在`npm`平台上，而如果是Python项目，则可以发布在`pypi`上。我们这里以`pypi`发布流程为例进行演示。首先需要先在`pypi`：https://pypi.org/上进行账号注册，然后获取`API-KEY`作为身份验证，
 
 ![](img/becb2d0e51b4006779f6c7c27f847d2c.png)
 
 然后需要再次确认打包完成，并开启上传
+
+
 
 ```
 # 回到项目主目录
@@ -1782,17 +1770,15 @@ python -m twine upload dist/*
 
 上传完成后即可在pypi中搜索到包的信息：
 
-
 ![](img/8c15293654c15f52e22eb65551565d82.png)
 
 然后即可在本地测试调用。
 
-这里以Cherry studio为例，尝试调用我们刚刚发布的DeepResearch包。点击添加服务器：
-
+这里以Cherry studio为例，尝试调用我们刚刚发布的`DeepResearch`包。点击添加服务器：
 
 ![](img/d6219679d64e9e78fd2a9ae42c5b3b80.png)
 
-然后输入MCP服务器名称（随意填写），然后使用uvx进行下载，同时是stdio通信标准，并在参数中输入以下三行：
+然后输入MCP服务器名称（随意填写），然后使用`uvx`进行下载，同时是`stdio`通信标准，并在参数中输入以下三行：
 
 ```
 mcp-server-deepresearch
@@ -1802,13 +1788,13 @@ YOUR_API_KEY
 
 ![](img/ad62c1ba295bf5b8f40b87ceb154fa79.png)
 
-然后点击右上方保存，即可开启验证并自动开启这项MCP工具。紧接着在对话过程中选择deepresearch工具，只要对话中明确表达了希望围绕某个问题进行深入研究，模型就会自动调用该MCP工具进行深度调研：
+然后点击右上方保存，即可开启验证并自动开启这项`MCP`工具。紧接着在对话过程中选择`deepresearch`工具，只要对话中明确表达了希望围绕某个问题进行深入研究，模型就会自动调用该`MCP`工具进行深度调研：
 
 ![](img/de592e9a23fdcff8864521f60996ab23.png)
 
 实际演示效果如下：
 
-> 注，如果是离线拷贝的项目希望使用cherry studio进行调用，仅需在配置中写入：
+> 注，如果是离线拷贝的项目希望使用`cherry studio`进行调用，仅需在配置中写入：
 
 ```
 /path/to/your/mcp-server-deepresearch
@@ -1818,95 +1804,95 @@ YOUR_API_KEY
 
 > 也就是第一行改为离线项目的本地存储地址即可。
 
-> 此外，若是在Cursor中调用，则可以写入如下配置：
+> 此外，若是在`Cursor`中调用，则可以写入如下配置：
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;deepresearch&quot;: {
-      &quot;command&quot;: &quot;uvx&quot;,
-      &quot;args&quot;: [
-        &quot;mcp-server-deepresearch&quot;,
-        &quot;--openai_api_key&quot;,
-        &quot;OPENAI_API_KEY&quot;
+  "mcpServers": {
+    "deepresearch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-deepresearch",
+        "--openai_api_key",
+        "OPENAI_API_KEY"
       ]
     }
+  }
 }
 ```
 
-## 四、基于SSE传输方式的MCP服务器创建流程
+# 四、基于SSE传输方式的MCP服务器创建流程
 
-以上MCP服务器都是stdio传输方式，而除此之外，目前MCP服务器还支持SSE传输和基于HTTP的流式传输。这两种传输方式也有非常广泛的实际用途，接下来详细介绍如何构建基于SSE和HTTP流式传输的MCP服务器。
+以上`MCP`服务器都是`stdio`传输方式，而除此之外，目前`MCP`服务器还支持`SSE`传输和基于`HTTP`的流式传输。这两种传输方式也有非常广泛的实际用途，接下来详细介绍如何构建基于`SSE`和`HTTP`流式传输的`MCP`服务器。
 
-### 1. stdio、SSE与基于HTTP的流式传输形式对比
+## 1. stdio、SSE与基于HTTP的流式传输形式对比
 
-#### 1.1 MCP通信协议介绍
+### 1.1 MCP通信协议介绍
 
-**     ** MC**P（Model Context** Protocol）是一种为了统一大规模模型和工具间通信而设计的协议，它定义了消息格式和通信方式。MCP 协议支持多种传输机制，其中包括 stdio、Server-Sent Events（SSE） 和 Streamable HTTP。每种通信方法在不同的应用场景中具有不同的优劣势，适用于不同的需求。
+`MCP`（Model Context Protocol）是一种为了统一大规模模型和工具间通信而设计的协议，它定义了消息格式和通信方式。`MCP` 协议支持多种传输机制，其中包括 `stdio`、`Server-Sent Events（SSE）` 和 `Streamable HTTP`。每种通信方法在不同的应用场景中具有不同的优劣势，适用于不同的需求。
 
-#### 1.2 Stdio 传输（Standard Input/Output）
+### 1.2 Stdio 传输（Standard Input/Output）
 
-stdio 传输方式是最简单的通信方式，通常在本地工具之间进行消息传递时使用。它利用标准输入输出（stdin/stdout）作为数据传输通道，适用于本地进程间的交互。
+`stdio` 传输方式是最简单的通信方式，通常在本地工具之间进行消息传递时使用。它利用标准输入输出（`stdin`/`stdout`）作为数据传输通道，适用于本地进程间的交互。
 
-+   **工作方式**：客户端和服务器通过标准输入输出流（stdin/stdout）进行通信。客户端向服务器发送命令和数据，服务器执行并通过标准输出返回结果。
++   工作方式：客户端和服务器通过标准输入输出流（`stdin`/`stdout`）进行通信。客户端向服务器发送命令和数据，服务器执行并通过标准输出返回结果。
 
-+   **应用场景**：适用于本地开发、命令行工具、调试环境，或者模型和工具服务在同一进程内运行的情况。
++   应用场景：适用于本地开发、命令行工具、调试环境，或者模型和工具服务在同一进程内运行的情况。
 
-#### 1.3 Server-Sent Events（SSE）
+### 1.3 Server-Sent Events（SSE）
 
-SSE 是基于 HTTP 协议的流式传输机制，它允许服务器通过 HTTP 单向推送事件到客户端。SSE 适用于客户端需要接收服务器推送的场景，通常用于实时数据更新。
+`SSE` 是基于 `HTTP` 协议的流式传输机制，它允许服务器通过 `HTTP` 单向推送事件到客户端。`SSE` 适用于客户端需要接收服务器推送的场景，通常用于实时数据更新。
 
-+   **工作方式**：客户端通过 HTTP GET 请求建立与服务器的连接，服务器以流式方式持续向客户端发送数据，客户端通过解析流数据来获取实时信息。
++   工作方式：客户端通过 `HTTP` GET 请求建立与服务器的连接，服务器以流式方式持续向客户端发送数据，客户端通过解析流数据来获取实时信息。
 
-+   **应用场景**：适用于需要服务器主动推送数据的场景，如实时聊天、天气预报、新闻更新等。
++   应用场景：适用于需要服务器主动推送数据的场景，如实时聊天、天气预报、新闻更新等。
 
-#### 1.4 **Streamable HTTP**
+### 1.4 Streamable HTTP
 
 +   MCP更新公告：https://modelcontextprotocol.io/development/updates
-
 
 +   Streamable HTTP协议内容：https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-03-26/basic/transports.mdx#streamable-http
 
 ![](img/bfb331dd74b2ef0267f2da035c92c3a7.png)
 
-Streamable HTTP 是 MCP 协议中新引入的一种传输方式，它基于 HTTP 协议支持双向流式传输。与传统的 HTTP 请求响应模型不同，Streamable HTTP 允许服务器在一个长连接中实时向客户端推送数据，并且可以支持多个请求和响应的流式传输。
+`Streamable HTTP` 是 `MCP` 协议中新引入的一种传输方式，它基于 `HTTP` 协议支持双向流式传输。与传统的 `HTTP` 请求响应模型不同，`Streamable HTTP` 允许服务器在一个长连接中实时向客户端推送数据，并且可以支持多个请求和响应的流式传输。
 
-不过需要注意的是，MCP只提供了Streamable HTTP协议层的支持，也就是规范了MCP客户端在使用Streamable HTTP通信时的通信规则，而并没有提供相关的SDK客户端。开发者在开发Streamable HTTP机制下的客户端和服务器时，可以使用比如Python httpx库进行开发。
+不过需要注意的是，`MCP`只提供了`Streamable HTTP`协议层的支持，也就是规范了`MCP`客户端在使用`Streamable HTTP`通信时的通信规则，而并没有提供相关的`SDK`客户端。开发者在开发`Streamable HTTP`机制下的客户端和服务器时，可以使用比如`Python` `httpx`库进行开发。
 
-+   **工作方式**：客户端通过 HTTP POST 向服务器发送请求，并可以接收流式响应（如 JSON-RPC 响应或 SSE 流）。当请求数据较多或需要多次交互时，服务器可以通过长连接和分批推送的方式进行数据传输。
++   工作方式：客户端通过 `HTTP` POST 向服务器发送请求，并可以接收流式响应（如 `JSON-RPC` 响应或 `SSE` 流）。当请求数据较多或需要多次交互时，服务器可以通过长连接和分批推送的方式进行数据传输。
 
-+   **应用场景**：适用于需要支持高并发、低延迟通信的分布式系统，尤其是跨服务或跨网络的应用。适合高并发的场景，如实时流媒体、在线游戏、金融交易系统等。
++   应用场景：适用于需要支持高并发、低延迟通信的分布式系统，尤其是跨服务或跨网络的应用。适合高并发的场景，如实时流媒体、在线游戏、金融交易系统等。
 
-#### 1.1.4 **MCP 传输方式优劣势对比**
+### 1.1.4 MCP 传输方式优劣势对比
 
-| 特性 | **Stdio** | **SSE** | **Streamable HTTP** |
+| 特性 | `Stdio` | `SSE` | `Streamable HTTP` |
 | --- | --- | --- | --- |
-| **通信方向** | 双向（但仅限本地） | 单向（服务器到客户端） | 双向（适用于复杂交互） |
-| **使用场景** | 本地进程间通信 | 实时数据推送，浏览器支持 | 跨服务、分布式系统、大规模并发支持 |
-| **支持并发连接数** | 低 | 中等 | 高（适合大规模并发） |
-| **适应性** | 局限于本地环境 | 支持浏览器，但单向通信 | 高灵活性，支持流式数据与请求批处理 |
-| **实现难度** | 简单，适合本地调试 | 简单，但浏览器兼容性和长连接限制 | 复杂，需处理长连接和流管理 |
-| **适合的业务类型** | 本地命令行工具，调试环境 | 实时推送，新闻、股票等实时更新 | 高并发、分布式系统，实时交互系统 |
+| 通信方向 | 双向（但仅限本地） | 单向（服务器到客户端） | 双向（适用于复杂交互） |
+| 使用场景 | 本地进程间通信 | 实时数据推送，浏览器支持 | 跨服务、分布式系统、大规模并发支持 |
+| 支持并发连接数 | 低 | 中等 | 高（适合大规模并发） |
+| 适应性 | 局限于本地环境 | 支持浏览器，但单向通信 | 高灵活性，支持流式数据与请求批处理 |
+| 实现难度 | 简单，适合本地调试 | 简单，但浏览器兼容性和长连接限制 | 复杂，需处理长连接和流管理 |
+| 适合的业务类型 | 本地命令行工具，调试环境 | 实时推送，新闻、股票等实时更新 | 高并发、分布式系统，实时交互系统 |
 
 三种传输方式总结如下：
 
-+   **Stdio**** 传输**：适合本地进程之间的简单通信，适合命令行工具或调试阶段，但不支持分布式。
++   `Stdio` 传输：适合本地进程之间的简单通信，适合命令行工具或调试阶段，但不支持分布式。
 
-+   **SSE**** 传输**：适合实时推送和客户端/浏览器的单向通知，但无法满足双向复杂交互需求。
++   `SSE` 传输：适合实时推送和客户端/浏览器的单向通知，但无法满足双向复杂交互需求。
 
-+   **Streamable HTTP**** 传输**：最灵活、最强大的选项，适用于大规模并发、高度交互的分布式应用系统，虽然实现较复杂，但能够处理更复杂的场景。
++   `Streamable HTTP` 传输：最灵活、最强大的选项，适用于大规模并发、高度交互的分布式应用系统，虽然实现较复杂，但能够处理更复杂的场景。
 
-### 2. 基于SSE传输的MCP服务器创建流程
+## 2. 基于SSE传输的MCP服务器创建流程
 
-需要注意的是，目前MCP SDK只提供了stdio和SSE两种传输方式的开发库，而暂时还没有提供基于流式HTTP传输的开发工具。因此在进行MCP开发过程中，实现stdio和SSE传输方式较为简单，但要实现流式传输的HTTP流程则会非常复杂。
+需要注意的是，目前`MCP SDK`只提供了`stdio`和`SSE`两种传输方式的开发库，而暂时还没有提供基于流式`HTTP`传输的开发工具。因此在进行`MCP`开发过程中，实现`stdio`和`SSE`传输方式较为简单，但要实现流式传输的`HTTP`流程则会非常复杂。
 
-这里我们先介绍相对简单的SSE传输方式的实现方法。当我们使用MCP Python SDK开发MCP服务器时，只需要在此处进行设置：
+这里我们先介绍相对简单的`SSE`传输方式的实现方法。当我们使用`MCP Python SDK`开发`MCP`服务器时，只需要在此处进行设置：
 
 ```
-mcp.run(transport=&#x27;sse&#x27;)
+mcp.run(transport='sse')
 ```
 
-即可让MCP服务器开启SSE模式，非常简单。这里我们以创建一个查询天气MCP服务器为例进行演示。
+即可让`MCP`服务器开启`SSE`模式，非常简单。这里我们以创建一个查询天气`MCP`服务器为例进行演示。
 
 +   创建项目主目录
 
@@ -1933,7 +1919,7 @@ uv add mcp httpx
 
 ![](img/e6353437c66d3c643d849178e4c7aaec.png)
 
-然后删除主目录下的main.py文件，并创建代码文件夹：
+然后删除主目录下的`main.py`文件，并创建代码文件夹：
 
 ```
 mkdir -p ./src/mcp_get_weather
@@ -1942,41 +1928,41 @@ cd ./src/mcp_get_weather
 
 +   创建服务器核心代码
 
-在src/mcp_get_weather中创建三个代码文件：
+在`src/mcp_get_weather`中创建三个代码文件：
 
 ![](img/1946818a4b40eff1ba047cf95711b8e0.png)
 
-其中server.py主要负责进行天气查询，代码如下：
+其中`server.py`主要负责进行天气查询，代码如下：
 
 ```
 import json
 import httpx
-import argparse  
+import argparse
 from typing import Any
 from mcp.server.fastmcp import FastMCP
 
 # 初始化 MCP 服务器
-mcp = FastMCP(&quot;WeatherServer&quot;)
+mcp = FastMCP("WeatherServer")
 
 # OpenWeather API 配置
-OPENWEATHER_API_BASE = &quot;https://api.openweathermap.org/data/2.5/weather&quot;
-API_KEY = None  
-USER_AGENT = &quot;weather-app/1.0&quot;
+OPENWEATHER_API_BASE = "https://api.openweathermap.org/data/2.5/weather"
+API_KEY = None
+USER_AGENT = "weather-app/1.0"
 
-async def fetch_weather(city: str) -&gt; dict[str, Any] | None:
-    &quot;&quot;&quot;
+async def fetch_weather(city: str) -> dict[str, Any] | None:
+    """
     从 OpenWeather API 获取天气信息。
-    &quot;&quot;&quot;
+    """
     if API_KEY is None:
-        return {&quot;error&quot;: &quot;API_KEY 未设置，请提供有效的 OpenWeather API Key。&quot;}
+        return {"error": "API_KEY 未设置，请提供有效的 OpenWeather API Key。"}
 
     params = {
-        &quot;q&quot;: city,
-        &quot;appid&quot;: API_KEY,
-        &quot;units&quot;: &quot;metric&quot;,
-        &quot;lang&quot;: &quot;zh_cn&quot;
+        "q": city,
+        "appid": API_KEY,
+        "units": "metric",
+        "lang": "zh_cn"
     }
-    headers = {&quot;User-Agent&quot;: USER_AGENT}
+    headers = {"User-Agent": USER_AGENT}
 
     async with httpx.AsyncClient() as client:
         try:
@@ -1984,72 +1970,72 @@ async def fetch_weather(city: str) -&gt; dict[str, Any] | None:
             response.raise_for_status()
             return response.json()
         except httpx.HTTPStatusError as e:
-            return {&quot;error&quot;: f&quot;HTTP 错误: {e.response.status_code}&quot;}
+            return {"error": f"HTTP 错误: {e.response.status_code}"}
         except Exception as e:
-            return {&quot;error&quot;: f&quot;请求失败: {str(e)}&quot;}
+            return {"error": f"请求失败: {str(e)}"}
 
-def format_weather(data: dict[str, Any] | str) -&gt; str:
-    &quot;&quot;&quot;
+def format_weather(data: dict[str, Any] | str) -> str:
+    """
     将天气数据格式化为易读文本。
-    &quot;&quot;&quot;
+    """
     if isinstance(data, str):
         try:
             data = json.loads(data)
         except Exception as e:
-            return f&quot;无法解析天气数据: {e}&quot;
+            return f"无法解析天气数据: {e}"
 
-    if &quot;error&quot; in data:
-        return f&quot;⚠️ {data[&#x27;error&#x27;]}&quot;
+    if "error" in data:
+        return f"⚠️ {data['error']}"
 
-    city = data.get(&quot;name&quot;, &quot;未知&quot;)
-    country = data.get(&quot;sys&quot;, {}).get(&quot;country&quot;, &quot;未知&quot;)
-    temp = data.get(&quot;main&quot;, {}).get(&quot;temp&quot;, &quot;N/A&quot;)
-    humidity = data.get(&quot;main&quot;, {}).get(&quot;humidity&quot;, &quot;N/A&quot;)
-    wind_speed = data.get(&quot;wind&quot;, {}).get(&quot;speed&quot;, &quot;N/A&quot;)
-    weather_list = data.get(&quot;weather&quot;, [{}])
-    description = weather_list[0].get(&quot;description&quot;, &quot;未知&quot;)
+    city = data.get("name", "未知")
+    country = data.get("sys", {}).get("country", "未知")
+    temp = data.get("main", {}).get("temp", "N/A")
+    humidity = data.get("main", {}).get("humidity", "N/A")
+    wind_speed = data.get("wind", {}).get("speed", "N/A")
+    weather_list = data.get("weather", [{}])
+    description = weather_list[0].get("description", "未知")
 
     return (
-        f&quot;🌍 {city}, {country}\n&quot;
-        f&quot;🌡 温度: {temp}°C\n&quot;
-        f&quot;💧 湿度: {humidity}%\n&quot;
-        f&quot;🌬 风速: {wind_speed} m/s\n&quot;
-        f&quot;🌤 天气: {description}\n&quot;
+        f"🌍 {city}, {country}\n"
+        f"🌡 温度: {temp}°C\n"
+        f"💧 湿度: {humidity}%\n"
+        f"🌬 风速: {wind_speed} m/s\n"
+        f"🌤 天气: {description}\n"
     )
 
 @mcp.tool()
-async def query_weather(city: str) -&gt; str:
-    &quot;&quot;&quot;
+async def query_weather(city: str) -> str:
+    """
     输入指定城市的英文名称，返回今日天气查询结果。
-    &quot;&quot;&quot;
+    """
     data = await fetch_weather(city)
     return format_weather(data)
 
 def main():
-    parser = argparse.ArgumentParser(description=&quot;Weather Server&quot;)
-    parser.add_argument(&quot;--api_key&quot;, type=str, required=True, help=&quot;你的 OpenWeather API Key&quot;)
+    parser = argparse.ArgumentParser(description="Weather Server")
+    parser.add_argument("--api_key", type=str, required=True, help="你的 OpenWeather API Key")
     args = parser.parse_args()
     global API_KEY
     API_KEY = args.api_key
-    mcp.run(transport=&#x27;sse&#x27;)
+    mcp.run(transport='sse')
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
-其仍然是采用了fastmcp进行创建，而在mcp.run中设置了使用sse方式进行传输。
+其仍然是采用了`FastMCP`进行创建，而在`mcp.run`中设置了使用`SSE`方式进行传输。
 
 ```
-mcp.run(transport=&#x27;sse&#x27;)
+mcp.run(transport='sse')
 ```
 
-此外需要在__init__.py中写入
+此外需要在`__init__.py`中写入
 
 ```
 from .server import main
 ```
 
-而在__main__.py中写入：
+而在`__main__.py`中写入：
 
 ```
 from mcp_get_weather import main
@@ -2057,34 +2043,36 @@ from mcp_get_weather import main
 main()
 ```
 
-同时回到主目录，修改项目配置文件pyproject.toml：
+同时回到主目录，修改项目配置文件`pyproject.toml`：
 
-```
+
+
+```toml
 [build-system]
-requires = [&quot;setuptools&gt;=61.0&quot;, &quot;wheel&quot;]
-build-backend = &quot;setuptools.build_meta&quot;
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = &quot;mcp-get-weather&quot;
-version = &quot;0.1.5&quot;
-description = &quot;输入OpenWeather-API-KEY，获取天气信息。&quot;
-readme = &quot;README.md&quot;
-requires-python = &quot;&gt;=3.9&quot;
+name = "mcp-get-weather"
+version = "0.1.5"
+description = "输入OpenWeather-API-KEY，获取天气信息。"
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = [
-    &quot;httpx&gt;=0.28.1&quot;,
-    &quot;mcp&gt;=1.6.0&quot;,
-    &quot;openai&gt;=1.75.0&quot;,
-    &quot;python-dotenv&gt;=1.1.0&quot;,
+    "httpx>=0.28.1",
+    "mcp>=1.6.0",
+    "openai>=1.75.0",
+    "python-dotenv>=1.1.0",
 ]
 
 [project.scripts]
-mcp-get-weather = &quot;mcp_get_weather:main&quot;
+mcp-get-weather = "mcp_get_weather:main"
 
 [tool.setuptools]
-package-dir = {&quot;&quot; = &quot;src&quot;}
+package-dir = {"": "src"}
 
 [tool.setuptools.packages.find]
-where = [&quot;src&quot;]
+where = ["src"]
 ```
 
 至此即完成了整个项目的代码编写工作。完整项目代码可在网盘中领取：
@@ -2093,13 +2081,13 @@ where = [&quot;src&quot;]
 
 ![](img/4c2c8eb9488d20873d6ddbeae25bf77a.png)
 
-### 3. 基于SSE的MCP服务器测试与发布流程
+## 3. 基于SSE的MCP服务器测试与发布流程
 
-#### 3.1 SSE MCP服务器测试流程
+### 3.1 SSE MCP服务器测试流程
 
 同样，接下来可以使用Inspector进行服务器性能测试，但有所不同的是，我们需要先开启MCP服务器，然后再开启Inspector：
 
-> 在stdio模式下是开启Inspector时同步开启MCP Server
+> 在`stdio`模式下是开启Inspector时同步开启MCP Server
 
 +   开启SSE MCP服务器：
 
@@ -2129,8 +2117,7 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_get_weather/server.py --
 
 ![](img/c1a5f7855d9b752f115fa95f5c73b596.png)
 
-然后打开Inspector，并选择SSE模式，选择默认运行地址：http://localhost:8000/sse，然后点击connect：
-
+然后打开Inspector，并选择SSE模式，选择默认运行地址：`http://localhost:8000/sse`，然后点击connect：
 
 然后输入地名进行测试：
 
@@ -2138,7 +2125,7 @@ npx -y @modelcontextprotocol/inspector uv run ./src/mcp_get_weather/server.py --
 
 完整测试流程如下：
 
-#### 3.2 SSE MCP服务器发布与调用流程
+### 3.2 SSE MCP服务器发布与调用流程
 
 测试完成后，即可上线发布。这里仍然考虑发布到pypi平台，并使用cherry studio进行本地调用测试。
 
@@ -2155,7 +2142,7 @@ python -m twine upload dist/*
 
 ![](img/5e1402b0c5f4e277eb82adcef1c8b72e.png)
 
-+   查看发布的库：https://pypi.org/search/?q=mcp-get-weather
++   查看发布的库：`https://pypi.org/search/?q=mcp-get-weather`
 
 ![](img/70cdb348feff0439a496c0de4f2bef6d.png)
 
@@ -2167,15 +2154,15 @@ pip install mcp-get-weather
 
 ![](img/483baccedd15dcb9e236c0f8ae291531.png)
 
-+   开启服务：uv run mcp-get-weather
++   开启服务：`uv run mcp-get-weather`
 
 ![](img/ec4206bfeb7f8bdb89262d2bf62fddd6.png)
 
-然后即可打开浏览器输入http://localhost:8000/sse测试连接情况
+然后即可打开浏览器输入`http://localhost:8000/sse`测试连接情况
 
 ![](img/99677d235ec68c0565cfad6eccea0050.png)
 
-> 注意，这里在服务器上开启服务然后本地连接也可以，和stdio不同，SSE模式下的MCP服务器并不需要本地运行。
+> 注意，这里在服务器上开启服务然后本地连接也可以，和`stdio`不同，SSE模式下的MCP服务器并不需要本地运行。
 
 +   使用Cherry studio进行连接
 
@@ -2235,57 +2222,50 @@ pip install mcp-get-weather
 
 | 时刻 | HTTP | JSON-RPC method | 作用 | 服务器典型响应 |
 | --- | --- | --- | --- | --- |
-| **①** | **POST /mcp** | initialize | 协商协议版本 &amp; 能力 | result.protocolVersion = 2024-11-05``result.capabilities.tools.listChanged = true |
-| **②** | **POST /mcp** | notifications/initialized | **告诉服务器“我已就绪”（通知** ⇒ 服务器只回 204 No Content） | HTTP 204 无包体 |
-| **③** | **POST /mcp** | tools/list | 向服务器要工具清单 | result.tools 数组 + nextCursor |
+| ① | `POST /mcp` | `initialize` | 协商协议版本 & 能力 | `result.protocolVersion = 2024-11-05`、`result.capabilities.tools.listChanged = true` |
+| ② | `POST /mcp` | `notifications/initialized` | 告诉服务器“我已就绪”（通知 ⇒ 服务器只回 `204 No Content`） | HTTP `204` 无包体 |
+| ③ | `POST /mcp` | `tools/list` | 向服务器要工具清单 | `result.tools` 数组 + `nextCursor` |
 
 +   当用户第一次提问时（模型判断要用工具）
 
 | 时刻 | HTTP | JSON-RPC method | 内容要点 |
 | --- | --- | --- | --- |
-| **④** | **POST /mcp** | tools/call | params.name = get_weather``params.arguments.city 或 location |
-| **⑤** | **流式响应** | stream / result | 服务器逐行推送：• 进度 stream• 成功 result.content[] |
-
-客户端在收到 **⑤** 的最终 result 后，把文本回填到 LLM，LLM 再输出给终端——你就看到天气结果啦。
+| ④ | `POST /mcp` | `tools/call` | `params.name = get_weather`、`params.arguments.city` 或 `location` |
 
 +   **详细顺序（带状态码）**
 
-1.  **POST /mcp → 200** initialize
+1. `POST /mcp` → `200` `initialize`
+2. `POST /mcp` → `204` `notifications/initialized`
+3. `POST /mcp` → `200` `tools/list`
+4. ——等待用户——
+5. `POST /mcp` → `200/stream` `tools/call` （服务器保持连接，逐行推流）
 
-1.  **POST /mcp → 204** notifications/initialized
++   JSON 一行 `{"stream": "正在查询…”}`…
 
-1.  **POST /mcp → 200** tools/list
++   JSON 一行 `{"result": { "content":[…] }}` → 服务器随后关闭流
 
-1.  ——等待用户——
-
-1.  POST /mcp → 200/stream tools/call （服务器保持连接，逐行推流）
-
-+   JSON 一行 {"stream": "正在查询…"}…
-
-+   JSON 一行 {"result": { "content":[…] }} → 服务器随后关闭流
-
-> 如果有多次工具调用，步骤 ④ – ⑤ 会重复，每次 id 自增。
+> 如果有多次工具调用，步骤 ④–⑤ 会重复，每次 `id` 自增。
 
 完整流程总结如下：
 
 | 场景 | 服务器应当… |
 | --- | --- |
-| **客户端重新连接** | 再走 ①②③，每轮 initialize 会话独立 |
-| **需要分页工具** | 在 ③ 返回 nextCursor ≠ null，客户端会继续 tools/list |
-| **通知工具列表变更** | 主动 notifications/tools/list_changed，客户端再发 tools/list 拉新列表 |
+| 客户端重新连接 | 再走 ①②③，每轮 `initialize` 会话独立 |
+| 需要分页工具 | 在 ③ 返回 `nextCursor` ≠ null，客户端会继续 `tools/list` |
+| 通知工具列表变更 | 主动 `notifications/tools/list_changed`，客户端再发 `tools/list` 拉新列表 |
 
-> **JSON-RPC** 是一种用 JSON 编写的、结构化的远程调用协议。其基本格式结构如下：
+> `JSON-RPC` 是一种用 `JSON` 编写的、结构化的远程调用协议。其基本格式结构如下：
 
 | 类型 | 字段 | 说明 |
 | --- | --- | --- |
-| 请求 | jsonrpc | 固定为 &quot;2.0&quot; |
-|  | id | 请求编号，用于对应请求与响应 |
-|  | method | 要调用的方法名（比如 &quot;tools/call&quot;） |
-|  | params | 方法参数（可以是对象或数组） |
-| 响应 | jsonrpc | 也要写 &quot;2.0&quot; |
-|  | id | 与请求的 ID 一致 |
-|  | result | 成功返回值（只需 result） |
-|  | error | 如果出错则返回 error 对象 |
+| 请求 | `jsonrpc` | 固定为 `"2.0"` |
+|  | `id` | 请求编号，用于对应请求与响应 |
+|  | `method` | 要调用的方法名（比如 `"tools/call"`） |
+|  | `params` | 方法参数（可以是对象或数组） |
+| 响应 | `jsonrpc` | 也要写 `"2.0"` |
+|  | `id` | 与请求的 ID 一致 |
+|  | `result` | 成功返回值（只需 `result`） |
+|  | `error` | 如果出错则返回 `error` 对象 |
 
 ### 2. HTTP流式传输MCP服务器开发流程
 
@@ -2312,23 +2292,29 @@ mkdir -p ./src/mcp_weather_http
 cd ./src/mcp_weather_http
 ```
 
-然后创建server.py
+然后创建`server.py`
 
 ![](img/a060209205ef4f713bcdc2942078cae5.png)
 
 并写入如下代码：
 
-```
-&quot;&quot;&quot;weather_http_server_v8.py – MCP Streamable HTTP (Cherry‑Studio verified)
-==========================================================================
-• initialize  → protocolVersion + capabilities(streaming + tools.listChanged)
-                + friendly instructions
-• notifications/initialized → ignored (204)
-• tools/list  → single-page tool registry (get_weather)
-• tools/call  → execute get_weather, stream JSON (content[])
-• GET → 405 (no SSE stream implemented)
-&quot;&quot;&quot;
 
+
+# `weather_http_server_v8.py`
+
+## 模块说明
+
+MCP Streamable HTTP（Cherry‑Studio 验证）
+
+- `initialize` → `protocolVersion` + `capabilities`(`streaming` + `tools.listChanged`) + 友好说明
+- `notifications/initialized` → 忽略 (204)
+- `tools/list` → 单页工具注册表 (`get_weather`)
+- `tools/call` → 执行 `get_weather`，流式传输 JSON (`content[]`)
+- `GET` → 405（未实现 SSE 流）
+
+## 代码实现
+
+```python
 from __future__ import annotations
 
 import argparse
@@ -2343,346 +2329,354 @@ from fastapi.responses import StreamingResponse
 # ---------------------------------------------------------------------------
 # Server constants
 # ---------------------------------------------------------------------------
-SERVER_NAME = &quot;WeatherServer&quot;
-SERVER_VERSION = &quot;1.0.0&quot;
-PROTOCOL_VERSION = &quot;2024-11-05&quot;  # Cherry Studio current
+SERVER_NAME = "WeatherServer"
+SERVER_VERSION = "1.0.0"
+PROTOCOL_VERSION = "2024-11-05"  # Cherry Studio current
 
 # ---------------------------------------------------------------------------
 # Weather helpers
 # ---------------------------------------------------------------------------
-OPENWEATHER_URL = &quot;https://api.openweathermap.org/data/2.5/weather&quot;
+OPENWEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
 API_KEY: str | None = None
-USER_AGENT = &quot;weather-app/1.0&quot;
+USER_AGENT = "weather-app/1.0"
 
 
-async def fetch_weather(city: str) -&gt; dict[str, Any]:
+async def fetch_weather(city: str) -> dict[str, Any]:
     if not API_KEY:
-        return {&quot;error&quot;: &quot;API_KEY 未设置，请提供有效的 OpenWeather API Key。&quot;}
-    params = {&quot;q&quot;: city, &quot;appid&quot;: API_KEY, &quot;units&quot;: &quot;metric&quot;, &quot;lang&quot;: &quot;zh_cn&quot;}
-    headers = {&quot;User-Agent&quot;: USER_AGENT}
+        return {"error": "API_KEY 未设置，请提供有效的 OpenWeather API Key。"}
+    params = {"q": city, "appid": API_KEY, "units": "metric", "lang": "zh_cn"}
+    headers = {"User-Agent": USER_AGENT}
     async with httpx.AsyncClient(timeout=30.0) as client:
         try:
             r = await client.get(OPENWEATHER_URL, params=params, headers=headers)
             r.raise_for_status()
             return r.json()
         except httpx.HTTPStatusError as exc:
-            return {&quot;error&quot;: f&quot;HTTP 错误: {exc.response.status_code}&quot;}
+            return {"error": f"HTTP 错误: {exc.response.status_code}"}
         except Exception as exc:  # noqa: BLE001
-            return {&quot;error&quot;: f&quot;请求失败: {exc}&quot;}
+            return {"error": f"请求失败: {exc}"}
 
 
-def format_weather(data: dict[str, Any]) -&gt; str:
-    if &quot;error&quot; in data:
-        return data[&quot;error&quot;]
-    city = data.get(&quot;name&quot;, &quot;未知&quot;)
-    country = data.get(&quot;sys&quot;, {}).get(&quot;country&quot;, &quot;未知&quot;)
-    temp = data.get(&quot;main&quot;, {}).get(&quot;temp&quot;, &quot;N/A&quot;)
-    humidity = data.get(&quot;main&quot;, {}).get(&quot;humidity&quot;, &quot;N/A&quot;)
-    wind = data.get(&quot;wind&quot;, {}).get(&quot;speed&quot;, &quot;N/A&quot;)
-    desc = data.get(&quot;weather&quot;, [{}])[0].get(&quot;description&quot;, &quot;未知&quot;)
+def format_weather(data: dict[str, Any]) -> str:
+    if "error" in data:
+        return data["error"]
+    city = data.get("name", "未知")
+    country = data.get("sys", {}).get("country", "未知")
+    temp = data.get("main", {}).get("temp", "N/A")
+    humidity = data.get("main", {}).get("humidity", "N/A")
+    wind = data.get("wind", {}).get("speed", "N/A")
+    desc = data.get("weather", [{}])[0].get("description", "未知")
     return (
-        f&quot;🌍 {city}, {country}\n&quot;
-        f&quot;🌡 温度: {temp}°C\n&quot;
-        f&quot;💧 湿度: {humidity}%\n&quot;
-        f&quot;🌬 风速: {wind} m/s\n&quot;
-        f&quot;🌤 天气: {desc}&quot;
+        f"🌍 {city}, {country}\n"
+        f"🌡 温度: {temp}°C\n"
+        f"💧 湿度: {humidity}%\n"
+        f"🌬 风速: {wind} m/s\n"
+        f"🌤 天气: {desc}"
     )
 
 
-async def stream_weather(city: str, req_id: int | str) -&gt; AsyncIterator[bytes]:
+async def stream_weather(city: str, req_id: int | str) -> AsyncIterator[bytes]:
     # progress chunk
-    yield json.dumps({&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;stream&quot;: f&quot;查询 {city} 天气中…&quot;}).encode() + b&quot;\n&quot;
+    yield json.dumps({"jsonrpc": "2.0", "id": req_id, "stream": f"查询 {city} 天气中…"}).encode() + b"\n"
 
     await asyncio.sleep(0.3)
     data = await fetch_weather(city)
 
-    if &quot;error&quot; in data:
-        yield json.dumps({&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;error&quot;: {&quot;code&quot;: -32000, &quot;message&quot;: data[&quot;error&quot;]}}).encode() + b&quot;\n&quot;
+    if "error" in data:
+        yield json.dumps({"jsonrpc": "2.0", "id": req_id, "error": {"code": -32000, "message": data["error"]}}).encode() + b"\n"
         return
 
     yield json.dumps({
-        &quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id,
-        &quot;result&quot;: {
-            &quot;content&quot;: [
-                {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: format_weather(data)}
+        "jsonrpc": "2.0", "id": req_id,
+        "result": {
+            "content": [
+                {"type": "text", "text": format_weather(data)}
             ],
-            &quot;isError&quot;: False
+            "isError": False
         }
-    }).encode() + b&quot;\n&quot;
+    }).encode() + b"\n"
 
 # ---------------------------------------------------------------------------
 # FastAPI app
 # ---------------------------------------------------------------------------
-app = FastAPI(title=&quot;WeatherServer HTTP-Stream v8&quot;)
+app = FastAPI(title="WeatherServer HTTP-Stream v8")
 
 TOOLS_REGISTRY = {
-    &quot;tools&quot;: [
+    "tools": [
         {
-            &quot;name&quot;: &quot;get_weather&quot;,
-            &quot;description&quot;: &quot;用于进行天气信息查询的函数，输入城市英文名称，即可获得当前城市天气信息。&quot;,
-            &quot;inputSchema&quot;: {
-                &quot;type&quot;: &quot;object&quot;,
-                &quot;properties&quot;: {
-                    &quot;city&quot;: {
-                        &quot;type&quot;: &quot;string&quot;,
-                        &quot;description&quot;: &quot;City name, e.g. &#x27;Hangzhou&#x27;&quot;
+            "name": "get_weather",
+            "description": "用于进行天气信息查询的函数，输入城市英文名称，即可获得当前城市天气信息。",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "string",
+                        "description": "City name, e.g. 'Hangzhou'"
                     }
                 },
-                &quot;required&quot;: [&quot;city&quot;]
+                "required": ["city"]
             }
         }
     ],
-    &quot;nextCursor&quot;: None
+    "nextCursor": None
 }
 
 
-@app.get(&quot;/mcp&quot;)
+@app.get("/mcp")
 async def mcp_initialize_via_get():
     #  GET 请求也执行了 initialize 方法
     return {
-        &quot;jsonrpc&quot;: &quot;2.0&quot;,
-        &quot;id&quot;: 0,
-        &quot;result&quot;: {
-            &quot;protocolVersion&quot;: PROTOCOL_VERSION,
-            &quot;capabilities&quot;: {
-                &quot;streaming&quot;: True,
-                &quot;tools&quot;: {&quot;listChanged&quot;: True}
+        "jsonrpc": "2.0",
+        "id": 0,
+        "result": {
+            "protocolVersion": PROTOCOL_VERSION,
+            "capabilities": {
+                "streaming": True,
+                "tools": {"listChanged": True}
             },
-            &quot;serverInfo&quot;: {
-                &quot;name&quot;: SERVER_NAME,
-                &quot;version&quot;: SERVER_VERSION
+            "serverInfo": {
+                "name": SERVER_NAME,
+                "version": SERVER_VERSION
             },
-            &quot;instructions&quot;: &quot;Use the get_weather tool to fetch weather by city name.&quot;
+            "instructions": "Use the get_weather tool to fetch weather by city name."
         }
     }
 
-@app.post(&quot;/mcp&quot;)
+@app.post("/mcp")
 async def mcp_endpoint(request: Request):
     try:
         body = await request.json()
         # ✅ 打印客户端请求内容
-        print(&quot;💡 收到请求:&quot;, json.dumps(body, ensure_ascii=False, indent=2))
+        print("💡 收到请求:", json.dumps(body, ensure_ascii=False, indent=2))
     except Exception:
-        return {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: None, &quot;error&quot;: {&quot;code&quot;: -32700, &quot;message&quot;: &quot;Parse error&quot;}}
+        return {"jsonrpc": "2.0", "id": None, "error": {"code": -32700, "message": "Parse error"}}
 
-    req_id = body.get(&quot;id&quot;, 1)
-    method = body.get(&quot;method&quot;)
+    req_id = body.get("id", 1)
+    method = body.get("method")
     
     # ✅ 打印当前方法类型
-    print(f&quot;🔧 方法: {method}&quot;)
+    print(f"🔧 方法: {method}")
     
     # 0) Ignore initialized notification (no response required)
-    if method == &quot;notifications/initialized&quot;:
+    if method == "notifications/initialized":
         return Response(status_code=status.HTTP_204_NO_CONTENT)
 
     # 1) Activation probe (no method)
     if method is None:
-        return {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;result&quot;: {&quot;status&quot;: &quot;MCP server online.&quot;}}
+        return {"jsonrpc": "2.0", "id": req_id, "result": {"status": "MCP server online."}}
 
     # 2) initialize
-    if method == &quot;initialize&quot;:
+    if method == "initialize":
         return {
-            &quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id,
-            &quot;result&quot;: {
-                &quot;protocolVersion&quot;: PROTOCOL_VERSION,
-                &quot;capabilities&quot;: {
-                    &quot;streaming&quot;: True,
-                    &quot;tools&quot;: {&quot;listChanged&quot;: True}
+            "jsonrpc": "2.0", "id": req_id,
+            "result": {
+                "protocolVersion": PROTOCOL_VERSION,
+                "capabilities": {
+                    "streaming": True,
+                    "tools": {"listChanged": True}
                 },
-                &quot;serverInfo&quot;: {&quot;name&quot;: SERVER_NAME, &quot;version&quot;: SERVER_VERSION},
-                &quot;instructions&quot;: &quot;Use the get_weather tool to fetch weather by city name.&quot;
+                "serverInfo": {"name": SERVER_NAME, "version": SERVER_VERSION},
+                "instructions": "Use the get_weather tool to fetch weather by city name."
             }
         }
 
     # 3) tools/list
-    if method == &quot;tools/list&quot;:
+    if method == "tools/list":
         print(json.dumps(TOOLS_REGISTRY, indent=2, ensure_ascii=False))
-        return {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;result&quot;: TOOLS_REGISTRY}
+        return {"jsonrpc": "2.0", "id": req_id, "result": TOOLS_REGISTRY}
 
     # 4) tools/call
-    if method == &quot;tools/call&quot;:
-        params = body.get(&quot;params&quot;, {})
-        tool_name = params.get(&quot;name&quot;)
-        args = params.get(&quot;arguments&quot;, {})
+    if method == "tools/call":
+        params = body.get("params", {})
+        tool_name = params.get("name")
+        args = params.get("arguments", {})
 
-        if tool_name != &quot;get_weather&quot;:
-            return {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;error&quot;: {&quot;code&quot;: -32602, &quot;message&quot;: &quot;Unknown tool&quot;}}
+        if tool_name != "get_weather":
+            return {"jsonrpc": "2.0", "id": req_id, "error": {"code": -32602, "message": "Unknown tool"}}
 
-        city = args.get(&quot;city&quot;)
+        city = args.get("city")
         if not city:
-            return {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;error&quot;: {&quot;code&quot;: -32602, &quot;message&quot;: &quot;Missing city&quot;}}
+            return {"jsonrpc": "2.0", "id": req_id, "error": {"code": -32602, "message": "Missing city"}}
 
-        return StreamingResponse(stream_weather(city, req_id), media_type=&quot;application/json&quot;)
+        return StreamingResponse(stream_weather(city, req_id), media_type="application/json")
 
     # 5) unknown method
-    return {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: req_id, &quot;error&quot;: {&quot;code&quot;: -32601, &quot;message&quot;: &quot;Method not found&quot;}}
+    return {"jsonrpc": "2.0", "id": req_id, "error": {"code": -32601, "message": "Method not found"}}
 
 # ---------------------------------------------------------------------------
 # Runner
 # ---------------------------------------------------------------------------
 
-def main() -&gt; None:
-    parser = argparse.ArgumentParser(description=&quot;Weather MCP HTTP-Stream v8&quot;)
-    parser.add_argument(&quot;--api_key&quot;, required=True)
-    parser.add_argument(&quot;--host&quot;, default=&quot;127.0.0.1&quot;)
-    parser.add_argument(&quot;--port&quot;, type=int, default=8000)
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Weather MCP HTTP-Stream v8")
+    parser.add_argument("--api_key", required=True)
+    parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument("--port", type=int, default=8000)
     args = parser.parse_args()
 
     global API_KEY
     API_KEY = args.api_key
 
     import uvicorn
-    uvicorn.run(app, host=args.host, port=args.port, log_level=&quot;info&quot;)
+    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```
 
+
+
+# 代码解释与 MCP HTTP 流式服务器测试
+
+## 代码结构说明
+
 代码解释如下：总体结构说明
 
-```
+```text
 📦 weather_http_server_v8.py
 ├── 常量定义（协议版本 + OpenWeather 配置）
 ├── 工具方法（fetch_weather、format_weather、stream_weather）
 ├── FastAPI 路由
-│   ├── GET /mcp  → 可选支持
+│   ├── GET /mcp → 可选支持
 │   └── POST /mcp → 支持所有 JSON-RPC 调用
-└── main()        → 启动 uvicorn 服务器
+└── main() → 启动 uvicorn 服务器
 ```
 
-1️⃣ 头部信息（元数据 + 模块引入）
+### 1️⃣ 头部信息（元数据 + 模块引入）
 
-```
-&quot;&quot;&quot;weather_http_server_v8.py – MCP Streamable HTTP (Cherry‑Studio verified)
+```python
+"""weather_http_server_v8.py – MCP Streamable HTTP (Cherry‑Studio verified)
 • initialize → 声明 streaming + tools.listChanged 能力
 • tools/list → 提供 get_weather 工具
 • tools/call → 调用后 stream JSON 数据
 • GET → 405 或简单返回信息（支持 Cherry 探测）
-&quot;&quot;&quot;
+"""
 ```
 
 ✔ 简洁明了地说明这个服务符合 Cherry Studio 所支持的 MCP HTTP 协议子集。
 
-2️⃣ 常量定义
+### 2️⃣ 常量定义
 
-```
-SERVER_NAME = &quot;WeatherServer&quot;
-SERVER_VERSION = &quot;1.0.0&quot;
-PROTOCOL_VERSION = &quot;2024-11-05&quot;  # MCP 规定版本号
+```python
+SERVER_NAME = "WeatherServer"
+SERVER_VERSION = "1.0.0"
+PROTOCOL_VERSION = "2024-11-05"  # MCP 规定版本号
 
-OPENWEATHER_URL = &quot;https://api.openweathermap.org/data/2.5/weather&quot;
+OPENWEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
 API_KEY: str | None = None  # 启动时注入
-USER_AGENT = &quot;weather-app/1.0&quot;
+USER_AGENT = "weather-app/1.0"
 ```
 
 ✔ 提前定义版本号、天气接口、全局变量等。
 
-3️⃣ 天气处理逻辑
+### 3️⃣ 天气处理逻辑
 
-```
-async def fetch_weather(city: str) -&gt; dict[str, Any]:
+```python
+async def fetch_weather(city: str) -> dict[str, Any]:
 ```
 
 +   向 OpenWeather API 请求天气数据
 
 +   自动处理错误（比如 key 不对、超时）
 
-```
-def format_weather(data: dict[str, Any]) -&gt; str:
+```python
+def format_weather(data: dict[str, Any]) -> str:
 ```
 
 +   把原始 JSON 格式化成可读文本 🌤️
 
-```
-async def stream_weather(city: str, req_id: int | str) -&gt; AsyncIterator[bytes]:
+```python
+async def stream_weather(city: str, req_id: int | str) -> AsyncIterator[bytes]:
 ```
 
 +   生成器流式返回天气内容（符合 MCP 协议的逐行 JSON）
 
 示例输出：
 
-```
-{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: 1, &quot;stream&quot;: &quot;查询 Hangzhou 天气中…&quot;}
-{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: 1, &quot;result&quot;: { &quot;content&quot;: [{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;🌡 温度: 22°C&quot;}] }}
+```json
+{"jsonrpc": "2.0", "id": 1, "stream": "查询 Hangzhou 天气中…"}
+{"jsonrpc": "2.0", "id": 1, "result": { "content": [{"type":"text","text":"🌡 温度: 22°C"}] }}
 ```
 
-4️⃣ MCP 工具注册表
+### 4️⃣ MCP 工具注册表
 
-```
+```python
 TOOLS_REGISTRY = {
-  &quot;tools&quot;: [
+  "tools": [
     {
-      &quot;name&quot;: &quot;get_weather&quot;,
-      &quot;description&quot;: &quot;...&quot;,
-      &quot;inputSchema&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-          &quot;city&quot;: {
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;description&quot;: &quot;City name, e.g. &#x27;Hangzhou&#x27;&quot;
+      "name": "get_weather",
+      "description": "...",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "City name, e.g. 'Hangzhou'"
           }
         },
-        &quot;required&quot;: [&quot;city&quot;]
+        "required": ["city"]
       }
     }
   ],
-  &quot;nextCursor&quot;: None
+  "nextCursor": None
 }
 ```
 
-✔ 符合 MCP 2025-03-26 文档对 tools/list 的格式要求。
+✔ 符合 MCP 2025-03-26 文档对 `tools/list` 的格式要求。
 
-5️⃣ 核心路由逻辑（FastAPI）
+### 5️⃣ 核心路由逻辑（FastAPI）
 
-✔ /mcp [GET]
+#### ✔ `/mcp` [GET]
 
+✔ Cherry Studio 在探测时会发 `GET` 请求
+
++   我们这里返回一个 `initialize` 风格的响应
+
+```python
+@app.get("/mcp")
 ```
-@app.get(&quot;/mcp&quot;)
-```
 
-+   Cherry Studio 在探测时会发 GET 请求
+#### ✔ `/mcp` [POST]
 
-+   我们这里返回一个 initialize 风格的响应
+✔ 整个 MCP 协议的核心路由！
 
-✔ /mcp [POST]
-
-```
-@app.post(&quot;/mcp&quot;)
+```python
+@app.post("/mcp")
 async def mcp_endpoint(request: Request):
 ```
 
-整个 MCP 协议的核心路由！
-
 | JSON-RPC 方法 | 说明 |
 | --- | --- |
-| initialize | 返回协议版本、能力列表 |
-| notifications/initialized | 无需响应（204） |
-| tools/list | 返回工具清单 |
-| tools/call | 开始天气查询（流式） |
-| 未知 method | 返回 -32601 错误 |
+| `initialize` | 返回协议版本、能力列表 |
+| `notifications/initialized` | 无需响应（204） |
+| `tools/list` | 返回工具清单 |
+| `tools/call` | 开始天气查询（流式） |
+| 未知 `method` | 返回 -32601 错误 |
 
-6️⃣main() 启动逻辑
+### 6️⃣ `main()` 启动逻辑
 
-```
+```python
 def main():
-    parser.add_argument(&quot;--api_key&quot;, required=True)
+    parser.add_argument("--api_key", required=True)
     uvicorn.run(app, host=..., port=...)
 ```
 
 ✔ 从命令行传入 OpenWeather 的 API Key 并启动服务。
 
-```
+```bash
 uv run ./server.py --api_key 你的key
 ```
 
-### 3. HTTP流式传输MCP服务器开启与测试
+## 服务器开启与测试
 
-在创建完server.py后，我们可以开启服务并进行测试。需要注意的是，Inspector并不支持流式传输的MCP服务器测试，我们只能基于对HTTP流式传输的协议理解，创建一个测试流程。
+### HTTP 流式传输 MCP 服务器开启与测试
 
-+   开启HTTP流式传输服务器
+在创建完 `server.py` 后，我们可以开启服务并进行测试。需要注意的是，`Inspector` 并不支持流式传输的 `MCP` 服务器测试，我们只能基于对 HTTP 流式传输的协议理解，创建一个测试流程。
 
-```
++   开启 HTTP 流式传输服务器
+
+```bash
 # 回到项目主目录
 # cd /root/autodl-tmp/MCP/MCP-sse-test/mcp-weather-http
 uv run ./src/mcp_weather_http/server.py --api_key YOUR_API_KEY
@@ -2690,21 +2684,21 @@ uv run ./src/mcp_weather_http/server.py --api_key YOUR_API_KEY
 
 ![](img/9cfe04b1132d8533d5ab29312fef6051.png)
 
-接下来我们通过 **4 个 ****curl**** 命令**来模拟 MCP 客户端与服务器的标准通信流程。
+接下来我们通过 4 个 `curl` 命令来模拟 `MCP` 客户端与服务器的标准通信流程。
 
-+   ① initialize 请求（能力协商）
++   ① `initialize` 请求（能力协商）
 
-```
+```bash
 curl -X POST http://localhost:8000/mcp \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{
-        &quot;jsonrpc&quot;: &quot;2.0&quot;,
-        &quot;id&quot;: 1,
-        &quot;method&quot;: &quot;initialize&quot;,
-        &quot;params&quot;: {
-          &quot;protocolVersion&quot;: &quot;2024-11-05&quot;
+  -H "Content-Type: application/json" \
+  -d '{
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2024-11-05"
         }
-      }&#x27;
+      }';
 ```
 
 期望响应：返回服务器支持的协议版本、功能：
@@ -2713,56 +2707,56 @@ curl -X POST http://localhost:8000/mcp \
 
 ![](img/cdfe0c6c8522556cef4b5c4133959ab4.png)
 
-+   ② notifications/initialized 通知（确认上线）
++   ② `notifications/initialized` 通知（确认上线）
 
-```
+```bash
 curl -X POST http://localhost:8000/mcp \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{
-        &quot;jsonrpc&quot;: &quot;2.0&quot;,
-        &quot;method&quot;: &quot;notifications/initialized&quot;
-      }&#x27;
+  -H "Content-Type: application/json" \
+  -d '{
+        "jsonrpc": "2.0",
+        "method": "notifications/initialized"
+      }';
 ```
 
 📥 期望响应：204 No Content（因为是通知类型）：
 
 ![](img/3e5d79d74ef5a06fa88e884983391055.png)
 
-+   ③ tools/list 请求（获取工具注册表）
++   ③ `tools/list` 请求（获取工具注册表）
 
-```
+```bash
 curl -X POST http://localhost:8000/mcp \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{
-        &quot;jsonrpc&quot;: &quot;2.0&quot;,
-        &quot;id&quot;: 2,
-        &quot;method&quot;: &quot;tools/list&quot;,
-        &quot;params&quot;: {}
-      }&#x27;
+  -H "Content-Type: application/json" \
+  -d '{
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/list",
+        "params": {}
+      }';
 ```
 
-📥 期望响应：返回工具清单， get_weather 工具的结构体和 schema：
+📥 期望响应：返回工具清单，`get_weather` 工具的结构体和 schema：
 
 ![](img/7a0e2abfb403d6b0b25796e4f1d4d30a.png)
 
 ![](img/53c666a8ade091bd1c12d5f13fc33f1a.png)
 
-+   ④ tools/call 请求（调用实际工具，流式返回）
++   ④ `tools/call` 请求（调用实际工具，流式返回）
 
-```
+```bash
 curl -N -X POST http://localhost:8000/mcp \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{
-        &quot;jsonrpc&quot;: &quot;2.0&quot;,
-        &quot;id&quot;: 3,
-        &quot;method&quot;: &quot;tools/call&quot;,
-        &quot;params&quot;: {
-          &quot;name&quot;: &quot;get_weather&quot;,
-          &quot;arguments&quot;: {
-            &quot;city&quot;: &quot;Hangzhou&quot;
+  -H "Content-Type: application/json" \
+  -d '{
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "get_weather",
+          "arguments": {
+            "city": "Hangzhou"
           }
         }
-      }&#x27;
+      }';
 ```
 
 📥 期望响应（逐行输出）：
@@ -2777,46 +2771,45 @@ curl -N -X POST http://localhost:8000/mcp \
 
 ![](img/680ca850e69dbc02b5efd2f70b542d52.png)
 
-### 4. HTTP流式传输MCP服务器Cherry Studio调用测试
+### Cherry Studio 调用测试
 
-在基本测试完HTTP流式传输MCP服务器基本功能后，接下来即可接入MCP进行测试。需要注意的是，目前Cherry Studio版本更新迭代较快，部分情况下尚无法稳定支持HTTP流式传输MCP服务器的调用，因此以下流程不一定能顺利完成。若以下流程无法顺利完成，可以看下一节自定义MCP HTTP流式传输客户端进行调用测试。
+在基本测试完 HTTP 流式传输 MCP 服务器基本功能后，接下来即可接入 `MCP` 进行测试。需要注意的是，目前 `Cherry Studio` 版本更新迭代较快，部分情况下尚无法稳定支持 HTTP 流式传输 `MCP` 服务器的调用，因此以下流程不一定能顺利完成。若以下流程无法顺利完成，可以看下一节自定义 `MCP` HTTP 流式传输客户端进行调用测试。
 
-+   工具名称：weather-http
++   工具名称：`weather-http`
 
-+   URL：http://localhost:8000/mcp
++   URL：`http://localhost:8000/mcp`
 
-+   请求头：Content-Type=application/json
++   请求头：`Content-Type=application/json`
 
 ![](img/5f252c7dbaf47f3a383d53ee33bec04c.png)
 
 具体演示效果如下：
 
-### 5. 自定义MCP客户端Client接入HTTP流式传输MCP服务器
+### 自定义 MCP 客户端 Client 接入 HTTP 流式传输 MCP 服务器
 
-截止目前，主流的MCP客户端都无法很好的完成HTTP流式MCP服务器的接入，因此这里为大家介绍如何从零编写MCP客户端，并按照标准流程接入HTTP流式MCP服务器。
+截止目前，主流的 `MCP` 客户端都无法很好的完成 HTTP 流式 `MCP` 服务器的接入，因此这里为大家介绍如何从零编写 `MCP` 客户端，并按照标准流程接入 HTTP 流式 `MCP` 服务器。
 
-#### 5.1 编写client.py脚本
+#### 编写 `client.py` 脚本
 
-```
+```bash
 # 回到代码文件夹
 cd /root/autodl-tmp/MCP/MCP-sse-test/mcp-weather-http/src/mcp_weather_http
 ```
-
-创建client.py：
 
 ![](img/2b8024403e03320b70e634d5117d643b.png)
 
 然后写入如下代码：
 
-```
-&quot;&quot;&quot;mcp_http_client.py – Async MCP client (Streamable HTTP)
-===========================================================
-• 完全移除 stdio 传输，改用 Streamable HTTP (POST + optional SSE)
-• 支持 initialize → notifications/initialized → tools/list → tools/call
-• 自动处理 line‑delimited JSON stream (application/json 或 text/event-stream)
-• 保留交互式 chat_loop，兼容 OpenAI Function Calling
-&quot;&quot;&quot;
 
+
+# `mcp_http_client.py` – Async MCP Client (Streamable HTTP)
+
+- 完全移除 `stdio` 传输，改用 Streamable HTTP (`POST` + 可选 `SSE`)
+- 支持 `initialize` → `notifications/initialized` → `tools/list` → `tools/call`
+- 自动处理行分隔 JSON 流 (`application/json` 或 `text/event-stream`)
+- 保留交互式 `chat_loop`，兼容 OpenAI Function Calling
+
+```python
 from __future__ import annotations
 
 import asyncio
@@ -2835,17 +2828,17 @@ from openai import OpenAI
 ################################################################################
 
 class Configuration:
-    def __init__(self) -&gt; None:
+    def __init__(self) -> None:
         load_dotenv()
-        self.api_key = os.getenv(&quot;LLM_API_KEY&quot;)
-        self.base_url = os.getenv(&quot;BASE_URL&quot;)
-        self.model = os.getenv(&quot;MODEL&quot;, &quot;gpt-4o&quot;)
+        self.api_key = os.getenv("LLM_API_KEY")
+        self.base_url = os.getenv("BASE_URL")
+        self.model = os.getenv("MODEL", "gpt-4o")
         if not self.api_key:
-            raise ValueError(&quot;❌ 未找到 LLM_API_KEY，请在 .env 文件中配置&quot;)
+            raise ValueError("❌ 未找到 LLM_API_KEY，请在 .env 文件中配置")
 
     @staticmethod
-    def load_config(path: str) -&gt; Dict[str, Any]:
-        with open(path, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:
+    def load_config(path: str) -> Dict[str, Any]:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
 ################################################################################
@@ -2853,77 +2846,77 @@ class Configuration:
 ################################################################################
 
 class HTTPMCPServer:
-    &quot;&quot;&quot;与单个 MCP Streamable HTTP 服务器通信&quot;&quot;&quot;
+    """与单个 MCP Streamable HTTP 服务器通信"""
 
-    def __init__(self, name: str, endpoint: str) -&gt; None:
+    def __init__(self, name: str, endpoint: str) -> None:
         self.name = name
-        self.endpoint = endpoint.rstrip(&quot;/&quot;)  # e.g. http://localhost:8000/mcp
+        self.endpoint = endpoint.rstrip("/")  # e.g. http://localhost:8000/mcp
         self.session: Optional[httpx.AsyncClient] = None
-        self.protocol_version: str = &quot;2024-11-05&quot;
+        self.protocol_version: str = "2024-11-05"
 
-    async def initialize(self) -&gt; None:
+    async def initialize(self) -> None:
         self.session = httpx.AsyncClient(timeout=httpx.Timeout(30.0))
         # 1) initialize
         init_req = {
-            &quot;jsonrpc&quot;: &quot;2.0&quot;,
-            &quot;id&quot;: 0,
-            &quot;method&quot;: &quot;initialize&quot;,
-            &quot;params&quot;: {
-                &quot;protocolVersion&quot;: self.protocol_version,
-                &quot;capabilities&quot;: {},
-                &quot;clientInfo&quot;: {&quot;name&quot;: &quot;HTTP-MCP-Demo&quot;, &quot;version&quot;: &quot;0.1&quot;},
+            "jsonrpc": "2.0",
+            "id": 0,
+            "method": "initialize",
+            "params": {
+                "protocolVersion": self.protocol_version,
+                "capabilities": {},
+                "clientInfo": {"name": "HTTP-MCP-Demo", "version": "0.1"},
             },
         }
         r = await self._post_json(init_req)
-        if &quot;error&quot; in r:
-            raise RuntimeError(f&quot;Initialize error: {r[&#x27;error&#x27;]}&quot;)
+        if "error" in r:
+            raise RuntimeError(f"Initialize error: {r['error']}")
         # 2) send initialized notification (no response expected)
-        await self._post_json({&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;notifications/initialized&quot;})
+        await self._post_json({"jsonrpc": "2.0", "method": "notifications/initialized"})
 
-    async def list_tools(self) -&gt; List[Dict[str, Any]]:
-        req = {&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;id&quot;: 1, &quot;method&quot;: &quot;tools/list&quot;, &quot;params&quot;: {}}
+    async def list_tools(self) -> List[Dict[str, Any]]:
+        req = {"jsonrpc": "2.0", "id": 1, "method": "tools/list", "params": {}}
         res = await self._post_json(req)
-        return res[&quot;result&quot;][&quot;tools&quot;]
+        return res["result"]["tools"]
 
-    async def call_tool_stream(self, tool_name: str, arguments: Dict[str, Any]) -&gt; str:
-        &quot;&quot;&quot;调用工具并将流式结果拼接为完整文本&quot;&quot;&quot;
+    async def call_tool_stream(self, tool_name: str, arguments: Dict[str, Any]) -> str:
+        """调用工具并将流式结果拼接为完整文本"""
         req = {
-            &quot;jsonrpc&quot;: &quot;2.0&quot;,
-            &quot;id&quot;: 3,
-            &quot;method&quot;: &quot;tools/call&quot;,
-            &quot;params&quot;: {&quot;name&quot;: tool_name, &quot;arguments&quot;: arguments},
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "tools/call",
+            "params": {"name": tool_name, "arguments": arguments},
         }
         assert self.session is not None
         async with self.session.stream(
-            &quot;POST&quot;, self.endpoint, json=req, headers={&quot;Accept&quot;: &quot;application/json&quot;}
+            "POST", self.endpoint, json=req, headers={"Accept": "application/json"}
         ) as resp:
             if resp.status_code != 200:
-                raise RuntimeError(f&quot;HTTP {resp.status_code}&quot;)
+                raise RuntimeError(f"HTTP {resp.status_code}")
             collected_text: List[str] = []
             async for line in resp.aiter_lines():
                 if not line:
                     continue
                 chunk = json.loads(line)
-                if &quot;stream&quot; in chunk:
+                if "stream" in chunk:
                     continue  # 中间进度
-                if &quot;error&quot; in chunk:
-                    raise RuntimeError(chunk[&quot;error&quot;][&quot;message&quot;])
-                if &quot;result&quot; in chunk:
+                if "error" in chunk:
+                    raise RuntimeError(chunk["error"]["message"])
+                if "result" in chunk:
                     # 根据协议，文本在 result.content[0].text
-                    for item in chunk[&quot;result&quot;][&quot;content&quot;]:
-                        if item[&quot;type&quot;] == &quot;text&quot;:
-                            collected_text.append(item[&quot;text&quot;])
-            return &quot;\n&quot;.join(collected_text)
+                    for item in chunk["result"]["content"]:
+                        if item["type"] == "text":
+                            collected_text.append(item["text"])
+            return "\n".join(collected_text)
 
-    async def _post_json(self, payload: Dict[str, Any]) -&gt; Dict[str, Any]:
+    async def _post_json(self, payload: Dict[str, Any]) -> Dict[str, Any]:
         assert self.session is not None
-        r = await self.session.post(self.endpoint, json=payload, headers={&quot;Accept&quot;: &quot;application/json&quot;})
+        r = await self.session.post(self.endpoint, json=payload, headers={"Accept": "application/json"})
         if r.status_code == 204 or not r.content:
             return {}          # ← 通知无响应体
         r.raise_for_status()
         return r.json()
 
-    async def close(self) -&gt; None:
+    async def close(self) -> None:
         if self.session:
             await self.session.aclose()
             self.session = None
@@ -2933,7 +2926,7 @@ class HTTPMCPServer:
 ################################################################################
 
 class LLMClient:
-    def __init__(self, api_key: str, base_url: Optional[str], model: str) -&gt; None:
+    def __init__(self, api_key: str, base_url: Optional[str], model: str) -> None:
         self.client = OpenAI(api_key=api_key, base_url=base_url)
         self.model = model
 
@@ -2945,9 +2938,9 @@ class LLMClient:
 ################################################################################
 
 class MultiHTTPMCPClient:
-    def __init__(self, servers_conf: Dict[str, Any], api_key: str, base_url: Optional[str], model: str) -&gt; None:
+    def __init__(self, servers_conf: Dict[str, Any], api_key: str, base_url: Optional[str], model: str) -> None:
         self.servers: Dict[str, HTTPMCPServer] = {
-            name: HTTPMCPServer(name, cfg[&quot;endpoint&quot;]) for name, cfg in servers_conf.items()
+            name: HTTPMCPServer(name, cfg["endpoint"]) for name, cfg in servers_conf.items()
         }
         self.llm = LLMClient(api_key, base_url, model)
         self.all_tools: List[Dict[str, Any]] = []  # 转为 OAI FC 的 tools 数组
@@ -2958,50 +2951,50 @@ class MultiHTTPMCPClient:
             tools = await srv.list_tools()
             for t in tools:
                 # 重命名以区分不同服务器
-                full_name = f&quot;{srv.name}_{t[&#x27;name&#x27;]}&quot;
+                full_name = f"{srv.name}_{t['name']}"
                 self.all_tools.append({
-                    &quot;type&quot;: &quot;function&quot;,
-                    &quot;function&quot;: {
-                        &quot;name&quot;: full_name,
-                        &quot;description&quot;: t[&quot;description&quot;],
-                        &quot;parameters&quot;: t[&quot;inputSchema&quot;],
+                    "type": "function",
+                    "function": {
+                        "name": full_name,
+                        "description": t["description"],
+                        "parameters": t["inputSchema"],
                     },
                 })
-        logging.info(&quot;已连接服务器并汇总工具：%s&quot;, [t[&quot;function&quot;][&quot;name&quot;] for t in self.all_tools])
+        logging.info("已连接服务器并汇总工具：%s", [t["function"]["name"] for t in self.all_tools])
 
-    async def call_local_tool(self, full_name: str, args: Dict[str, Any]) -&gt; str:
-        srv_name, tool_name = full_name.split(&quot;_&quot;, 1)
+    async def call_local_tool(self, full_name: str, args: Dict[str, Any]) -> str:
+        srv_name, tool_name = full_name.split("_", 1)
         srv = self.servers[srv_name]
         # 兼容 city/location
-        city = args.get(&quot;city&quot;) or args.get(&quot;location&quot;)
+        city = args.get("city") or args.get("location")
         if not city:
-            raise ValueError(&quot;Missing city/location&quot;)
-        return await srv.call_tool_stream(tool_name, {&quot;city&quot;: city})
+            raise ValueError("Missing city/location")
+        return await srv.call_tool_stream(tool_name, {"city": city})
 
     async def chat_loop(self):
-        print(&quot;🤖 HTTP MCP + Function Calling 客户端已启动，输入 quit 退出&quot;)
+        print("🤖 HTTP MCP + Function Calling 客户端已启动，输入 quit 退出")
         messages: List[Dict[str, Any]] = []
         while True:
-            user = input(&quot;你: &quot;).strip()
-            if user.lower() == &quot;quit&quot;:
+            user = input("你: ").strip()
+            if user.lower() == "quit":
                 break
-            messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user})
+            messages.append({"role": "user", "content": user})
             # 1st LLM call
             resp = self.llm.chat(messages, self.all_tools)
             choice = resp.choices[0]
-            if choice.finish_reason == &quot;tool_calls&quot;:
+            if choice.finish_reason == "tool_calls":
                 tc = choice.message.tool_calls[0]
                 tool_name = tc.function.name
                 tool_args = json.loads(tc.function.arguments)
-                print(f&quot;[调用工具] {tool_name} → {tool_args}&quot;)
+                print(f"[调用工具] {tool_name} → {tool_args}")
                 tool_resp = await self.call_local_tool(tool_name, tool_args)
                 messages.append(choice.message.model_dump())
-                messages.append({&quot;role&quot;: &quot;tool&quot;, &quot;content&quot;: tool_resp, &quot;tool_call_id&quot;: tc.id})
+                messages.append({"role": "tool", "content": tool_resp, "tool_call_id": tc.id})
                 resp2 = self.llm.chat(messages, self.all_tools)
-                print(&quot;AI:&quot;, resp2.choices[0].message.content)
+                print("AI:", resp2.choices[0].message.content)
                 messages.append(resp2.choices[0].message.model_dump())
             else:
-                print(&quot;AI:&quot;, choice.message.content)
+                print("AI:", choice.message.content)
                 messages.append(choice.message.model_dump())
 
     async def close(self):
@@ -3013,9 +3006,9 @@ class MultiHTTPMCPClient:
 ################################################################################
 
 async def main():
-    logging.basicConfig(level=logging.INFO, format=&quot;%(asctime)s - %(levelname)s - %(message)s&quot;)
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
     conf = Configuration()
-    servers_conf = conf.load_config(&quot;./src/mcp_weather_http/servers_config.json&quot;).get(&quot;mcpServers&quot;, {})
+    servers_conf = conf.load_config("./src/mcp_weather_http/servers_config.json").get("mcpServers", {})
     client = MultiHTTPMCPClient(servers_conf, conf.api_key, conf.base_url, conf.model)
     try:
         await client.start()
@@ -3023,11 +3016,13 @@ async def main():
     finally:
         await client.close()
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-具体代码解释如下：模块结构概览
+
+
+# 具体代码解释如下：模块结构概览
 
 ```
 mcp_http_client.py
@@ -3038,7 +3033,7 @@ mcp_http_client.py
 └── main()                # 启动入口
 ```
 
-1️⃣ Configuration：环境变量和 JSON 配置加载器
+## 1️⃣ `Configuration`：环境变量和 JSON 配置加载器
 
 ```
 class Configuration:
@@ -3049,7 +3044,7 @@ class Configuration:
         self.model = os.getenv(&quot;MODEL&quot;, &quot;gpt-4o&quot;)
 ```
 
-✔ 支持从 .env 中加载 API key，并读取 servers_config.json 来配置 MCP 服务器：
+✔ 支持从 `.env` 中加载 API key，并读取 `servers_config.json` 来配置 MCP 服务器：
 
 ```
 {
@@ -3061,7 +3056,7 @@ class Configuration:
 }
 ```
 
-2️⃣ HTTPMCPServer：与单个 MCP 服务器交互
+## 2️⃣ `HTTPMCPServer`：与单个 MCP 服务器交互
 
 这是每个 MCP 工具服务器的**小助手**，支持四个核心操作：
 
@@ -3088,7 +3083,7 @@ await self._post_json({
 })
 ```
 
-返回所有支持的工具定义，包括 name、description、inputSchema。
+返回所有支持的工具定义，包括 `name`、`description`、`inputSchema`。
 
 ✔ 工具调用（流式读取）
 
@@ -3096,13 +3091,13 @@ await self._post_json({
 async def call_tool_stream(...)
 ```
 
-使用 httpx.stream(...) 开始调用，逐行 aiter_lines() 读取服务器响应。
+使用 `httpx.stream(...)` 开始调用，逐行 `aiter_lines()` 读取服务器响应。
 
-+   跳过 "stream" 字段
++   跳过 `stream` 字段
 
-+   捕获 "result" → 拼接成文本
++   捕获 `result` → 拼接成文本
 
-+   抛出 "error" → 报错提示
++   抛出 `error` → 报错提示
 
 例如天气服务会逐行返回：
 
@@ -3111,7 +3106,7 @@ async def call_tool_stream(...)
 {&quot;result&quot;: {&quot;content&quot;: [{&quot;type&quot;:&quot;text&quot;, &quot;text&quot;:&quot;🌤 杭州&quot;}]}}
 ```
 
-✔ _post_json 方法
+✔ `_post_json` 方法
 
 自动处理：
 
@@ -3121,18 +3116,18 @@ async def call_tool_stream(...)
 
 +   返回 JSON 内容体
 
-3️⃣ LLMClient：OpenAI 对话接口（支持 tools 参数）
+## 3️⃣ `LLMClient`：OpenAI 对话接口（支持 `tools` 参数）
 
 ```
 def chat(self, messages, tools):
     return self.client.chat.completions.create(...)
 ```
 
-传入历史消息 + tools，自动处理工具调用的交互。
+传入历史消息 + `tools`，自动处理工具调用的交互。
 
-4️⃣ MultiHTTPMCPClient：协调多个服务器 + 交互流程
+## 4️⃣ `MultiHTTPMCPClient`：协调多个服务器 + 交互流程
 
-✔ start() 初始化阶段
+### `start()` 初始化阶段
 
 ```
 await server.initialize()
@@ -3141,9 +3136,9 @@ tools = await server.list_tools()
 
 +   汇总所有 MCP 工具，转为 OpenAI 的 Function Calling 格式
 
-+   工具名改成 weather_get_weather 这样的组合
++   工具名改成 `weather_get_weather` 这样的组合
 
-✔ chat_loop()：交互主循环
+### `chat_loop()`：交互主循环
 
 ```
 你: 请告诉我杭州的天气
@@ -3158,11 +3153,11 @@ tools = await server.list_tools()
 
 +   自动处理工具参数解析和调用逻辑
 
-client亮点总结：
+## `client`亮点总结：
 
 | 特性 | 说明 |
 | --- | --- |
-| ✅ 完全异步 | 使用 asyncio + httpx.AsyncClient 保证性能 |
+| ✅ 完全异步 | 使用 `asyncio` + `httpx.AsyncClient` 保证性能 |
 | ✅ 支持流式工具调用 | 与流式 HTTP 工具无缝配合 |
 | ✅ 支持多服务器 | 可以一次连多个 MCP 服务，拼接统一工具列表 |
 | ✅ 支持 LLM Function Calling | 与 gpt-4-turbo、gpt-4o 等模型深度集成 |
@@ -3172,19 +3167,19 @@ client亮点总结：
 
 ![](img/872b8ae57150125336614104b5880886.png)
 
-#### 5.2 创建.env和servers_config.json文件
+## 5.2 创建`.env`和`servers_config.json`文件
 
-然后在src文件夹内创建.env文件，并写入如下内容：
+然后在`src`文件夹内创建`.env`文件，并写入如下内容：
 
 ![](img/dc7cdc261edee40b3240777d9194940b.png)
 
-+   BASE_URL=“大模型请求地址”
++   `BASE_URL`=“大模型请求地址”
 
-+   MODEL=“模型名称”
++   `MODEL`=“模型名称”
 
-+   LLM_API_KEY=“API-KEY”
++   `LLM_API_KEY`=“API-KEY”
 
-然后创建servers_config.json，用于记录HTTP流式传输服务器地址，例如：
+然后创建`servers_config.json`，用于记录HTTP流式传输服务器地址，例如：
 
 ```
 {
@@ -3196,9 +3191,9 @@ client亮点总结：
 }
 ```
 
-#### 5.3 借助自定义client接入流式HTTP MCP服务器
+## 5.3 借助自定义`client`接入流式 HTTP MCP 服务器
 
-+   开启流式HTTP MCP服务器
++   开启流式 HTTP MCP 服务器
 
 ```
 uv run ./src/mcp_weather_http/server.py --api_key YOUR_API_KRI
@@ -3206,7 +3201,7 @@ uv run ./src/mcp_weather_http/server.py --api_key YOUR_API_KRI
 
 ![](img/3c0fbe630b7ab323bf707c3b634e6db6.png)
 
-+   运行client.py脚本
++   运行`client.py`脚本
 
 ```
 # 回到项目主目录
@@ -3226,5 +3221,3 @@ uv run ./src/mcp_weather_http/client.py
 +   观察HTTP流式传输服务器端运行效果
 
 ![](img/4d21fc54fa3b63b1f6941ae9572174f1.png)
-
----

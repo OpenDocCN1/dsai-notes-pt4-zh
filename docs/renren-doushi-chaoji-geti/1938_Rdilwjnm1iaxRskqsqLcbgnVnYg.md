@@ -1,22 +1,21 @@
-# 2023-08-16魔搭社区上线 AI 视频生成工具 Live Portait，可一键让照片开口说话
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Gd4Sddud8o7llzxiZe8c8OkEnyg](https://xuqiwei1986.feishu.cn/docx/Gd4Sddud8o7llzxiZe8c8OkEnyg)
+# 2023-08-16 魔搭社区上线 AI 视频生成工具 Live Portait，可一键让照片开口说话
 
-> 🔗 原文链接： h[ttps://www.ithom](https://www.ithome.com/0/712/732.htm)e.com/0/712/732.htm
-
+> 来源：`https://xuqiwei1986.feishu.cn/docx/Gd4Sddud8o7llzxiZe8c8OkEnyg`
 >
+> 原文链接：`https://www.ithome.com/0/712/732.htm`
 
 阿里云在生成式 AI 领域又有新进展。8 月 16 日消息，阿里云推出数字人视频生成工具 Live Portait，上传一张照片和一段文本或语音即可生成一段开口说话的数字人视频，可应用于视频直播、聊天机器人、企业营销等场景。目前，该工具已在魔搭社区创空间开放体验。
 
-# 体验demo
+## 体验demo
 
-https://modelscope.cn/studios/DAMOXR/LivePortrait/summary
+`https://modelscope.cn/studios/DAMOXR/LivePortrait/summary`
 
 ![](img/23e267775c3dbbb259ffadaf48269aee.png)
 
 ![](img/5094ab78ddac18e972909b28a702cdc8.png)
 
-[out.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G1v9bkA2GoUhPXxtZGbcu8kunsg)
+[`out.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G1v9bkA2GoUhPXxtZGbcu8kunsg)
 
 ![](img/a2645e4ca679e1b42d9e28fdf319cb54.png)
 

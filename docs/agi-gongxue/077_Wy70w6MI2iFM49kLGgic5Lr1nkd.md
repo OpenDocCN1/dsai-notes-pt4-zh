@@ -1,3 +1,4 @@
+
 # 1.宫崎骏治愈系
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/LECWdTHkwofenAx0UVccZbkqnMe](https://vcn0zlxse9ua.feishu.cn/docx/LECWdTHkwofenAx0UVccZbkqnMe)
@@ -14,30 +15,30 @@
 
 ### 生成创意内容
 
-deepseek、kimi、chatgpt
+`deepseek`、`kimi`、`chatgpt`
 
-1、通过拆解爆款内容反推文案信息，然后再通过AI工具重新梳理
+1. 通过拆解爆款内容反推文案信息，然后再通过AI工具重新梳理
 
-2、根据自己想要的内容让AI工具生成创意脚本
+2. 根据自己想要的内容让AI工具生成创意脚本
 
 ### 生成图片
 
-MJ、SD、即梦
+`MJ`、`SD`、`即梦`
 
 根据创意脚本信息生成提示词，然后生图
 
 ### 处理图片
 
-PS
+`PS`
 
-将图片的窗口空间处理成透明，导出png
+将图片的窗口空间处理成透明，导出`png`
 
 ### 合成视频
 
-通过剪映把这些内容合成
+通过`剪映`把这些内容合成
 
-+   图片
++ 图片
 
-+   下雨的素材
++ 下雨的素材
 
-+   音乐
++ 音乐

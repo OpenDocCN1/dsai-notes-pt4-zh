@@ -1,16 +1,17 @@
+
 # 阿里云PAI机器平台免费部署ChatGLM2-6B开源大模型
 
 > 来源：[https://docs.feishu.cn/docx/SZuKdpekeo7jyhxadVccfGG2nfc](https://docs.feishu.cn/docx/SZuKdpekeo7jyhxadVccfGG2nfc)
 
-### 写在前面
+## 写在前面
 
-本人也只是一个计算机小白，写这篇文章的目的主要是记录自己折腾的过程。若是这篇文章能帮助到其他人部署的话我会非常开心。 作者：早夜初雪 https://www.bilibili.com/read/cv24026315/ 出处：bilibili
+本人也只是一个计算机小白，写这篇文章的目的主要是记录自己折腾的过程。若是这篇文章能帮助到其他人部署的话我会非常开心。作者：早夜初雪 https://www.bilibili.com/read/cv24026315/ 出处：bilibili
 
-### 关于ChatGLM-6B
+## 关于ChatGLM-6B
 
-ChatGLM-6B是一个基于GLM-130B模型的人工智能助手,通过GLM模型对语言进行处理,从而生成相应的回复。项目的主要特点是智能化回复和语言理解能力,能够对用户提出的问题和输入的文本内容进行理解和回答,可以理解为本地部署版的，资料更少的ChatGPT。 作者：早夜初雪 https://www.bilibili.com/read/cv24026315/ 出处：bilibili
+ChatGLM-6B是一个基于GLM-130B模型的人工智能助手，通过GLM模型对语言进行处理，从而生成相应的回复。项目的主要特点是智能化回复和语言理解能力，能够对用户提出的问题和输入的文本内容进行理解和回答，可以理解为本地部署版的、资料更少的ChatGPT。作者：早夜初雪 https://www.bilibili.com/read/cv24026315/ 出处：bilibili
 
-### 关于显卡
+## 关于显卡
 
 首先，确定一下我们是什么显卡。AMD显卡很难使用，我没有AMD显卡，所以我也不知道要如何使用AMD显卡进行部署。即使是NVIDIA显卡，如果显存小于6G也是不能使用的。
 
@@ -18,12 +19,11 @@ ChatGLM-6B是一个基于GLM-130B模型的人工智能助手,通过GLM模型对�
 
 ![](img/2bd5313a152e9825e619e7773277388b.png)
 
-### 系统环境
+## 系统环境
 
 Ubuntu 20.04.6 LTS
 
-### 2.2.** 申请服务**器
-
+## 申请服务器
 
 > 点击试用，完成注册、实名、领取产品后进入如下页面。
 
@@ -53,7 +53,7 @@ Ubuntu 20.04.6 LTS
 
 ![](img/86c2c3c433c8863dcd9f97e7723ca897.png)
 
-> 输入实**例名称，就叫它 Lan**gchainChat吧~，GPU 选择 A10 或者 V100 都行，这俩是支持资源包抵扣的，其他的不支持，这里注意！V100 性能更好，但我们测试使用没必要，就选 A10 就行，A10 显卡每小时消耗6.991计算时，如果不关机持续使用大概可以使用30天。
+> 输入实例名称，就叫它 `LangchainChat` 吧~，GPU 选择 A10 或者 V100 都行，这俩是支持资源包抵扣的，其他的不支持，这里注意！V100 性能更好，但我们测试使用没必要，就选 A10 就行，A10 显卡每小时消耗6.991计算时，如果不关机持续使用大概可以使用30天。
 
 ![](img/157c3c83be42f4b54a281944f2c9375c.png)
 
@@ -63,12 +63,11 @@ Ubuntu 20.04.6 LTS
 
 选择镜像 URL，这里选择官方镜像就可以
 
-
 然后点击下一步，耐心等待实例创建，这个过程还是比较耗时的。
 
 ![](img/c7f3a34c7a0968b5bb71d6cdf1236431.png)
 
-### 2.3.** 部署 ChatGL**M
+## 部署 ChatGLM
 
 实例创建成功后，点击打开，进入控制台。
 
@@ -78,55 +77,57 @@ Ubuntu 20.04.6 LTS
 
 ![](img/7045c9b446d5731415635380f4680ee3.png)
 
-**2.1. ****cuda****及****pytorch****安装**
+### cuda及PyTorch安装
 
-** ****cuda****安装**
+#### cuda安装
 
-> 首先在安装cuda与cudnn之前，系统需要成功安装Nvidia驱动
+> 首先在安装`cuda`与`cuDNN`之前，系统需要成功安装Nvidia驱动
 
-验证系统内部是否已经安装了cuda，打开命令行，输入以下命令：
+验证系统内部是否已经安装了`cuda`，打开命令行，输入以下命令：
 
 ```
 nvcc -V
 ```
 
-若出现以下输出，则系统内部没有安装cuda。
+若出现以下输出，则系统内部没有安装`cuda`。
 
 ![](img/a70edd40d5d539bc348079620425aa67.png)
 
-在命令行输入nvidia-smi查看显卡驱动版本也就是最高支持的CUDA工具包版本。
+在命令行输入`nvidia-smi`查看显卡驱动版本也就是最高支持的CUDA工具包版本。
 
 ```
 #我们可以通过以下命令查看自己的cuda及cuda驱动版本
 nvidia-smi
 #如果nvidia-smi未安装执行下面命令安装
- $ubuntu-drivers devices
- $sudo ubuntu-drivers autoinstall
- $sudo reboot
- $nvidia-smi
+$ubuntu-drivers devices
+$sudo ubuntu-drivers autoinstall
+$sudo reboot
+$nvidia-smi
 ```
 
 ![](img/fc0b8e2df827e36810a4f188de02503d.png)
 
 查看到本机可装CUDA版本最高为11.4及以下版本。
 
-在[nVidia官网](https://developer.nvidia.com/cuda-toolkit-archive)选择对应版本的CUDA工具包并选择你的机器配置，我们就选择11.3.0版本下载
+在[NVIDIA官网](https://developer.nvidia.com/cuda-toolkit-archive)选择对应版本的CUDA工具包并选择你的机器配置，我们就选择11.3.0版本下载
 
-[Ubuntu下CUDA环境配置_ubuntu ](https://blog.csdn.net/cl944/article/details/126074827)cuda_cl965的博客-CSDN博客
+[Ubuntu下CUDA环境配置_ubuntu cuda_cl965的博客-CSDN博客](https://blog.csdn.net/cl944/article/details/126074827)
 
 [安装CUDA 11.2 和 cuDNN 8.4.0并检查是否安装成功](https://powervision.feishu.cn/wiki/E2VOw1UjAi9ma9kAj2KcjaZtn8g)
 
 验证环境变量是否生效
 
+```
 nvcc -V
+```
 
-若正常输出cuda版本信息则表示成功
+若正常输出`cuda`版本信息则表示成功
 
 ![](img/e8760745b6f0648adb47b0b1eb28bd87.png)
 
-**pytorch****安装**
+#### PyTorch安装
 
-检查[pytorch](https://pytorch.org/get-started/previous-versions/)支持的Cuda版本,
+检查[PyTorch](https://pytorch.org/get-started/previous-versions/)支持的Cuda版本，
 
 ```
 #使用python进入python命令行
@@ -144,33 +145,33 @@ print(torch.zeros(1).cuda())
 
 ![](img/1350117d0e3f39d47679747401a45e7c.png)
 
-[如果返回False](https://pytorch.org/get-started/previous-versions/)说明版本不匹配，需要到pytorch官网下载cuda版本对应的pytorch
+[如果返回False](https://pytorch.org/get-started/previous-versions/)说明版本不匹配，需要到pytorch官网下载`cuda`版本对应的`pytorch`
 
-这里要注意选择你是什么系统，cuda是安装了什么版本，然后复制下面红框中的命令到终端就可以安装了。
+这里要注意选择你是什么系统，`cuda`是安装了什么版本，然后复制下面红框中的命令到终端就可以安装了。
 
 ![](img/9c1f39e6d851bc7174228c32d81ce987.png)
 
-在终端运行下面命令，即可安装成功pytorch-GPU版本：
+在终端运行下面命令，即可安装成功`pytorch` GPU版本：
 
 ```
 # 最新版本torch
 $pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 ```
 
-验证pytorch是否为GPU版本
+验证`pytorch`是否为GPU版本
 
 ```
 python
-&gt;&gt;&gt;import torch
-&gt;&gt;&gt;print(torch.cuda.is_available())
-&gt;&gt;&gt;print(torch.zeros(1).cuda())
+>>>import torch
+>>>print(torch.cuda.is_available())
+>>>print(torch.zeros(1).cuda())
 ```
 
-> **2.2. 安装****虚拟环境**
+### 安装虚拟环境
 
-> ChatGLM-6B 代码中有一些python3.7支持的语法，所以要有python3.7+ 的环境。我们使用conda来管理python环境
+> `ChatGLM-6B` 代码中有一些`python3.7`支持的语法，所以要有`python3.7+` 的环境。我们使用`conda`来管理`python`环境
 
-> conda分为anaconda和miniconda。anaconda是包含一些常用包的版本，miniconda则是精简版.本文中我们将使用miniconda
+> `conda`分为`anaconda`和`miniconda`。`anaconda`是包含一些常用包的版本，`miniconda`则是精简版.本文中我们将使用`miniconda`
 
 Anaconda 安装
 
@@ -184,11 +185,12 @@ $source ~/.bashrc
 $conda --version
 ```
 
-> **2.2. ****虚拟环境****使用**
+### 虚拟环境使用
 
 ```
 # 创建虚拟环境
-conda create --name chatglm6b python==3.8.10 -y# 进入虚拟环境
+conda create --name chatglm6b python==3.8.10 -y
+# 进入虚拟环境
 #激活ChatGLM的环境
 conda activate chatglm6b 
 # 退出当前虚拟环境
@@ -213,7 +215,7 @@ conda remove -n your_env_name(虚拟环境名称) --all， 即可删除
 conda remove --name your_env_name  package_name
 ```
 
-> **2.3. ****conda**** ****虚拟环境**加入Jupyter Notebook
+### conda虚拟环境加入Jupyter Notebook
 
 [Anaconda+Python+Jupyter环境安装教程+kernel安装](https://powervision.feishu.cn/wiki/QaGZwjgEMiIgCCkaem6ciIEnnVU)
 
@@ -229,19 +231,18 @@ $conda install ipykernel
 $conda install -n chatglm6b ipykernel
 
 
-#将环境添加到 Jupyter 的内核列表中。运行以下命令：python -m ipykernel install --user --name your_kernel_name --display-name &quot;Your Kernel Name&quot;
-$python -m ipykernel install --user --name chatglm6b --display-name &quot;glm6b&quot;
+#将环境添加到 Jupyter 的内核列表中。运行以下命令：python -m ipykernel install --user --name your_kernel_name --display-name "Your Kernel Name"
+$python -m ipykernel install --user --name chatglm6b --display-name "glm6b"
 
 #打开notebook服务器，在terminal下执行命令行
 $jupyter notebook
 
 #jupyter 验证
 !import sys; 
-print(&#x27;Python %s on %s\nsys path:\n%s&#x27; % (sys.version, sys.platform, sys.path))
+print('Python %s on %s\nsys path:\n%s' % (sys.version, sys.platform, sys.path))
 ```
 
 [现在，你应该能够](https://so.csdn.net/so/search?q=Notebook&spm=1001.2101.3001.7020)在 Jupyter Notebook 或 JupyterLab 中看到你添加的内核。在内核列表中选择你添加的内核，以在该环境中运行代码
-
 
 ![](img/9a03e7a7dfc20a06b79cb9e709ea8ca8.png)
 
@@ -252,9 +253,9 @@ jupyter kernelspec remove 环境名称
 
 通过这些步骤，你可以向 Conda 添加一个新的内核，并在 Jupyter 中使用该内核来运行代码。请确保在添加内核之前已经安装了 ipykernel 包，并正确地激活了你要添加内核的环境。
 
-### **2.4. **ChatGLM-6B最新版模型环境部署及安装
+## ChatGLM-6B最新版模型环境部署及安装
 
-#### **2.4.1. 项目地址**
+### 项目地址
 
 资源受限，简单实践就采用相对较小的6B的模型：
 
@@ -262,7 +263,7 @@ github：https://github.com/THUDM/ChatGLM2-6B
 
 r土豪看这个：https://github.com/THUDM/GLM-130B
 
-#### **2.4.2. 下载项目代码**
+### 下载项目代码
 
 ```
 # 更新apt-get库
@@ -289,7 +290,7 @@ conda install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simp1e
 # pip install -r requirements.txt -i https://pypi.mirrors.ustc.edu.cn/simple
 ```
 
-#### 2.4.3.** 下载****LLM****模型**
+### 下载LLM模型
 
 ```
 # 创建待下载模型的文件夹路径 
@@ -305,10 +306,10 @@ $sudo apt-get install bwm-ng
 $bwm-ng
 
 # 注意：模型有数个bin文件，共十几G大小。下载后需要切换到chatglm2-6b目录下检查模型文件大小。如果没有成功下载，可以使用如下命令来更新模型文件：
-$cd /chatglm2/models &amp;&amp; git lfs pull
+$cd /chatglm2/models && git lfs pull
 ```
 
-也可以从[hugging face](https://huggingface.co/THUDM/chatglm-6b/tree/main)下载所有文件下来，我们可以在chatglm-6b项目的Files and versions，下载里面的所有文件，并在根目录新建一个名为“model”的文件夹。hugging face上的chatglm模型连接为
+也可以从[Hugging Face](https://huggingface.co/THUDM/chatglm-6b/tree/main)下载所有文件下来，我们可以在chatglm-6b项目的Files and versions，下载里面的所有文件，并在根目录新建一个名为“model”的文件夹。Hugging Face上的chatglm模型连接为
 
 https://huggingface.co/THUDM/chatglm-6b
 
@@ -316,7 +317,7 @@ https://huggingface.co/THUDM/chatglm-6b
 
 ![](img/cdc414cf0343f451dc3a290d84382ade.png)
 
-#### 2.4.3. 下载 Embedding 模型
+### 下载Embedding模型
 
 ```
 # 下载 Embedding 模型
@@ -326,84 +327,88 @@ $ git clone https://huggingface.co/GanymedeNil/text2vec-large-chinese /your_path
 $ git pull
 ```
 
-#### **2.4.4. 测试体验**
+### 测试体验
 
-##### 2.4.4.1. jupyterlab
+#### JupyterLab
+
+
+
+## 官网样例
 
 ```
-# 官网样例
 import os
 import torch
 from transformers import AutoTokenizer, AutoModel
 
-model_path = &quot;/mnt/workspace/chatglm2/models/chatglm2-6b&quot;
+model_path = "/mnt/workspace/chatglm2/models/chatglm2-6b"
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 model = AutoModel.from_pretrained(model_path, trust_remote_code=True).half().cuda()
 model = model.eval()
-response, history = model.chat(tokenizer, &quot;你好&quot;, history=[])
+response, history = model.chat(tokenizer, "你好", history=[])
 print(response)
+```
 
 你好👋!我是人工智能助手 ChatGLM-6B,很高兴见到你,欢迎问我任何问题。
+
+### 2.4.4.2 命令行
+
+```
+python cli_demo.py # 在命令提示符中运行
 ```
 
-##### 2.4.4.2 命令行
+### 2.4.4.3 运行 web 演示
 
-```
-python cli_demo.py #在命令提示符中运行
-```
-
-##### **2.4.4.3.**** 运行web演**示
-
-在运行之前，需要先修改web_demo.py文件中的模型地址，具体为第5行与第6行，具体如下：
+在运行之前，需要先修改 `web_demo.py` 文件中的模型地址，具体为第 5 行与第 6 行，具体如下：
 
 ![](img/131e927f716b0842ea4c7ae97d3d03fc.png)
 
 从清华镜像加载
 
 ```
-# web_demo.py# 1. 新增mirror=&#x27;https://mirrors.tuna.tsinghua.edu.cn/hugging-face-models,下载模型使用清华源
-tokenizer = AutoTokenizer.from_pretrained(&quot;THUDM/chatglm-6b&quot;, trust_remote_code=True, mirror=&#x27;https://mirrors.tuna.tsinghua.edu.cn/hugging-face-models&#x27;)
-model = AutoModel.from_pretrained(&quot;THUDM/chatglm-6b&quot;, trust_remote_code=True, mirror=&#x27;https://mirrors.tuna.tsinghua.edu.cn/hugging-face-models&#x27;).half().quantize(4).cuda()
-# 2. 增加server_name和server_port参数
-demo.queue().launch(share=True,server_name=&quot;0.0.0.0&quot;,server_port=7860)
+# web_demo.py
+# 1. 新增 mirror='https://mirrors.tuna.tsinghua.edu.cn/hugging-face-models', 下载模型使用清华源
+tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True, mirror='https://mirrors.tuna.tsinghua.edu.cn/hugging-face-models')
+model = AutoModel.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True, mirror='https://mirrors.tuna.tsinghua.edu.cn/hugging-face-models').half().quantize(4).cuda()
+# 2. 增加 server_name 和 server_port 参数
+demo.queue().launch(share=True, server_name="0.0.0.0", server_port=7860)
 ```
 
 从本地加载
 
 ```
-# 更改一下脚本里面的模型加载路径，改为从本地加载（上面通过git在huggingface上已经做了下载），hugging face有时候网络环境不太好
+# 更改一下脚本里面的模型加载路径，改为从本地加载（上面通过 git 在 huggingface 上已经做了下载），hugging face 有时候网络环境不太好
 # 修改 web_demo.py 文件
-tokenizer = AutoTokenizer.from_pretrained(&quot;/mnt/workspace/chatglm2/models/chatglm2-6b&quot;, trust_remote_code=True)
-model = AutoModel.from_pretrained(&quot;/mnt/workspace/chatglm2/models/chatglm2-6b&quot;, trust_remote_code=True).half().quantize().cuda()
-# 如果想要本地访问，需要修改此处, 如需要公网访问，还需要将web_demo.py中修改：share=True
-demo.queue().launch(share=True, inbrowser=True, server_name=&#x27;0.0.0.0&#x27;, server_port=7860)
+tokenizer = AutoTokenizer.from_pretrained("/mnt/workspace/chatglm2/models/chatglm2-6b", trust_remote_code=True)
+model = AutoModel.from_pretrained("/mnt/workspace/chatglm2/models/chatglm2-6b", trust_remote_code=True).half().quantize().cuda()
+# 如果想要本地访问，需要修改此处，如需要公网访问，还需要将 web_demo.py 中修改：share=True
+demo.queue().launch(share=True, inbrowser=True, server_name='0.0.0.0', server_port=7860)
 ```
 
-**温馨提示**，根据实际显卡显存，可以更改第6行关于model运行方式：
+**温馨提示**，根据实际显卡显存，可以更改第 6 行关于 `model` 运行方式：
 
 ```
 # 6G 显存可以 4 bit 量化
-model = AutoModel.from_pretrained(&quot;model&quot;, trust_remote_code=True).half().quantize(4).cuda()
+model = AutoModel.from_pretrained("model", trust_remote_code=True).half().quantize(4).cuda()
 
 # 10G 显存可以 8 bit 量化
-model = AutoModel.from_pretrained(&quot;model&quot;, trust_remote_code=True).half().quantize(8).cuda()
+model = AutoModel.from_pretrained("model", trust_remote_code=True).half().quantize(8).cuda()
 
-# 14G 以上显存可以直接不量化，博主显存为16G选择的就是这个
-model = AutoModel.from_pretrained(&quot;model&quot;, trust_remote_code=True).half().cuda()
+# 14G 以上显存可以直接不量化，博主显存为 16G 选择的就是这个
+model = AutoModel.from_pretrained("model", trust_remote_code=True).half().cuda()
 ```
 
 ```
 # Web 模式启动
-#官方推荐用 Streamlit 启动会更流程一些，但受限于 PAI 平台没有分配弹性公网，所以还是用老的 gradio 启动吧。
+# 官方推荐用 Streamlit 启动会更流畅一些，但受限于 PAI 平台没有分配弹性公网，所以还是用老的 gradio 启动吧。
 
-# 安装gradio用于启动图形化web界面
+# 安装 gradio 用于启动图形化 web 界面
 pip install gradio
 
-#运行
+# 运行
 python web_demo.py
-# Running on local URL: 
- http://127.0.0.1:7860
-# 直接点击日志弹出的url，dsw会自动进行公网代理的跳转，很丝滑
+# Running on local URL:
+http://127.0.0.1:7860
+# 直接点击日志弹出的 url，dsw 会自动进行公网代理的跳转，很丝滑
 ```
 
 ![](img/ba1186d670ce9aeb67751ac21d4e3f64.png)
@@ -415,17 +420,17 @@ python web_demo.py
 streamlit 方式启动，更加流畅
 
 ```
-#修改web_demo2.py中model位置的代码
+# 修改 web_demo2.py 中 model 位置的代码
 
-#然后执行启动命令：
-streamlit run web_demo2.py，
+# 然后执行启动命令：
+streamlit run web_demo2.py
 
-#运行时模型以 FP16 精度加载，占用GPU显存为：13161MiB
+# 运行时模型以 FP16 精度加载，占用 GPU 显存为：13161 MiB
 ```
 
-> 注意：确保transformers的版本为4.30.2，否则会报错：ImportError: cannot import name 'GenerationConfig' from 'transformers.generation.utils'。
+> 注意：确保 `transformers` 的版本为 4.30.2，否则会报错：`ImportError: cannot import name 'GenerationConfig' from 'transformers.generation.utils'`。
 
-**2.4.4.4. 作为****API****部署**
+### 2.4.4.4 作为 API 部署
 
 首先需要安装额外的依赖
 
@@ -433,7 +438,7 @@ streamlit run web_demo2.py，
 pip install fastapi uvicorn
 ```
 
-然后运行仓库中的 api.py：
+然后运行仓库中的 `api.py`：
 
 ```
 python api.py
@@ -442,25 +447,25 @@ python api.py
 默认部署在本地的 8000 端口，通过 POST 方法进行调用
 
 ```
-curl -X POST &quot;http://127.0.0.1:8000&quot; \
-     -H &#x27;Content-Type: application/json&#x27; \
-     -d &#x27;{&quot;prompt&quot;: &quot;你好&quot;, &quot;history&quot;: []}&#x27;
+curl -X POST "http://127.0.0.1:8000" \
+     -H 'Content-Type: application/json' \
+     -d '{"prompt": "你好", "history": []}'
 ```
 
 得到的返回值为
 
 ```
 {
-  &quot;response&quot;:&quot;你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。&quot;,
-  &quot;history&quot;:[[&quot;你好&quot;,&quot;你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。&quot;]],
-  &quot;status&quot;:200,
-  &quot;time&quot;:&quot;2023-03-23 21:38:40&quot;
+  "response": "你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。",
+  "history": [["你好", "你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。"]],
+  "status": 200,
+  "time": "2023-03-23 21:38:40"
 }
 ```
 
-#### 2.4.5. 基于 P-Tuning 微调 ChatGLM2-6B
+## 2.4.5 基于 P-Tuning 微调 ChatGLM2-6B
 
-> ChatGLM2-6B 环境已经有了，接下来开始模型微调，这里我们使用官方的 P-Tuning v2 对 ChatGLM2-6B 模型进行参数微调，P-Tuning v2 将需要微调的参数量减少到原来的 0.1%，再通过模型量化、Gradient Checkpoint 等方法，最低只需要 7GB 显存即可运行。
+> ChatGLM2-6B 环境已经有了，接下来开始模型微调，这里我们使用官方的 P-Tuning v2 对 ChatGLM2-6B 模型进行参数微调，P-Tuning v2 将需要微调的参数量减少到原来的 0.1%，再通过模型量化、`Gradient Checkpoint` 等方法，最低只需要 7GB 显存即可运行。
 
 目前我们实现了针对以下高效微调方法的支持：
 
@@ -468,9 +473,9 @@ curl -X POST &quot;http://127.0.0.1:8000&quot; \
 
 +   [P-Tuning V2](https://link.zhihu.com/?target=https%3A//github.com/THUDM/P-tuning-v2)：仅微调前缀编码器。
 
-+   [Freeze](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2012.14913) ：仅微调后几层的全连接层。
++   [Freeze](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2012.14913)：仅微调后几层的全连接层。
 
-微调代码就在THUDM/ChatGLM-6B的ptuning目录下
+微调代码就在 `THUDM/ChatGLM-6B` 的 `ptuning` 目录下
 
 > **安装依赖**
 
@@ -480,18 +485,18 @@ pip install transformers==4.27.1
 pip install rouge_chinese nltk jieba datasets
 ```
 
-> **禁用 W&B**
+> **禁用** `W&B`
 
 ```
-# 禁用 W&amp;B，如果不禁用可能会中断微调训练，以防万一，还是禁了吧
+# 禁用 W&B，如果不禁用可能会中断微调训练，以防万一，还是禁了吧
 export WANDB_DISABLED=true
 ```
 
 > **准备数据集**
 
-经过前面的折腾，我们知道格式是{“content”:"","summary":""}(看教程广告数据训练都是这个结构)，一个是input,一个是output, 我们按照这个格式造数据即可（经过zy网友指导，这里对于同一个input要做到同义句泛化，要使用大量同义句，微调的效果才好）
+经过前面的折腾，我们知道格式是 `{“content”:"","summary":""}`（看教程广告数据训练都是这个结构），一个是 input，一个是 output，我们按照这个格式造数据即可（经过 zy 网友指导，这里对于同一个 input 要做到同义句泛化，要使用大量同义句，微调的效果才好）
 
-> **提前准备一下泛化**数据（懒得泛化的，可以直接手写自己的数据{“content”:"","summary":""}格式大概是这样），Self instruction 这个貌似要单独学习一下，基于GPT自动泛化，作为新手这里暂时就手动自己造数据好了
+> **提前准备一下泛化数据**（懒得泛化的，可以直接手写自己的数据 `{“content”:"","summary":""}` 格式大概是这样），Self instruction 这个貌似要单独学习一下，基于 GPT 自动泛化，作为新手这里暂时就手动自己造数据好了
 
 ```
 cd /mnt/workspace/chatglm2/ChatGLM2-6B/ptuning
@@ -500,58 +505,60 @@ vim mydata/dev.json
 vim mydata/train.json
 ```
 
-训练数据写入到dev.json（随便一条），train.json（全部）
+训练数据写入到 `dev.json`（随便一条），`train.json`（全部）
 
 ```
-{&quot;content&quot;: &quot;你叫什么名字？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你可以告诉我你的名字吗？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是GPT吗&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你能告诉我你的名字吗？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是机器人吗？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你能告诉我你的名字吗？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你知道我叫啥名字吗？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;介绍一下你自己&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;介绍自己&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是ChatGPT吗&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;自我介绍一下&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你知道我叫啥名字吗？&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是谁&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你可以告诉我你的名字吗&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是哪位&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你叫啥&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你叫什么&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
-{&quot;content&quot;: &quot;你是谁&quot;,&quot;summary&quot;:&quot;你好，我是小君，很高兴认识你，有什么可以帮你？&quot;}
+{"content": "你叫什么名字？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你可以告诉我你的名字吗？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是GPT吗", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你能告诉我你的名字吗？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是机器人吗？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你能告诉我你的名字吗？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你知道我叫啥名字吗？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "介绍一下你自己", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "介绍自己", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是ChatGPT吗", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "自我介绍一下", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你知道我叫啥名字吗？", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是谁", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你可以告诉我你的名字吗", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是哪位", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你叫啥", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你叫什么", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
+{"content": "你是谁", "summary": "你好，我是小君，很高兴认识你，有什么可以帮你？"}
 ```
 
 这里为了简化，我们使用官方提供的数据集
 
 ```
-$cd /mnt/workspace/chatglm2/ChatGLM2-6B/ptuning
-# fine-tune数据集下载
-$wget -O AdvertiseGen.tar.gz https://cloud.tsinghua.edu.cn/f/b3f119a008264b1cabd1/?dl=1
+$ cd /mnt/workspace/chatglm2/ChatGLM2-6B/ptuning
+# fine-tune 数据集下载
+$ wget -O AdvertiseGen.tar.gz https://cloud.tsinghua.edu.cn/f/b3f119a008264b1cabd1/?dl=1
 # 解压
-$tar -xzvf AdvertiseGen.tar.gz
+$ tar -xzvf AdvertiseGen.tar.gz
 ```
 
-+   修改 train.sh 和 evaluate.sh 中的 train_file、validation_file和test_file为你自己的 JSON 格式数据集路径。
++   修改 `train.sh` 和 `evaluate.sh` 中的 `train_file`、`validation_file` 和 `test_file` 为你自己的 JSON 格式数据集路径。
 
-+   并将 prompt_column 和 response_column 改为 JSON 文件中输入文本和输出文本对应的 KEY。
++   并将 `prompt_column` 和 `response_column` 改为 JSON 文件中输入文本和输出文本对应的 KEY。
 
-+   可能还需要增大 max_source_length 和 max_target_length 来匹配你自己的数据集中的最大输入输出长度。
++   可能还需要增大 `max_source_length` 和 `max_target_length` 来匹配你自己的数据集中的最大输入输出长度。
 
-+   并将模型路径 THUDM/chatglm2-6b 改为你本地的模型路径。
++   并将模型路径 `THUDM/chatglm2-6b` 改为你本地的模型路径。
 
 > 3、**训练**
 
-改一下train.sh的内容
+改一下 `train.sh` 的内容
 
 ![](img/2af72bbbc0cc248db86040ed3e15bb5a.png)
 
-+   **train.sh**** 文件修改**
++   **`train.sh` 文件修改**
 
-```
+
+
+```bash
 PRE_SEQ_LEN=128
 LR=2e-2
 NUM_GPUS=1
@@ -580,21 +587,21 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py \
     --quantization_bit 4
 ```
 
-> train.sh 中的 PRE_SEQ_LEN 和 LR 分别是 soft prompt 长度和训练的学习率，可以进行调节以取得最佳的效果。
+> `train.sh` 中的 `PRE_SEQ_LEN` 和 `LR` 分别是 soft prompt 长度和训练的学习率，可以进行调节以取得最佳的效果。
 
-> P-Tuning-v2 方法会冻结全部的模型参数，可通过调整 quantization_bit 来改变原始模型的量化等级，quantization_bit 4 是INT4量化版，不加此选项则为 FP16 精度加载。
+> `P-Tuning-v2` 方法会冻结全部的模型参数，可通过调整 `quantization_bit` 来改变原始模型的量化等级，`quantization_bit 4` 是 `INT4` 量化版，不加此选项则为 `FP16` 精度加载。
 
-> CHECKPOINT 实际就是 train.sh 中的 output_dir。
+> `CHECKPOINT` 实际就是 `train.sh` 中的 `output_dir`。
 
-**开始训练**
+### 开始训练
 
-```
+```bash
 bash train.sh
 ```
 
 这个时候才发现和训练数据的大小无关，自定义20条数据一样也是预计11个小时(￣ェ￣;)
 
-**Int4量化版运行占用****GPU****显存****为：7945****MiB**，3000个steps整体需要4个小时。
+`Int4` 量化版运行占用 `GPU` 显存为：`7945 MiB`，3000 个 `steps` 整体需要 4 小时。
 
 运行日志如下
 
@@ -602,25 +609,25 @@ bash train.sh
 
 运行完成后，生成的模型位于：
 
-ChatGLM2-6B/ptuning/output/adgen-chatglm2-6b-pt-128-2e-2/checkpoint-3000下
+`ChatGLM2-6B/ptuning/output/adgen-chatglm2-6b-pt-128-2e-2/checkpoint-3000` 下
 
 查看模型大小
 
-```
+```bash
 du -sh output/
 ```
 
 模型比较：
 
-**Chatglm2的****大模型****约为12G，而微调模型约为7M**
+`Chatglm2` 的大模型约为 `12G`，而微调模型约为 `7M`。
 
-> 4、**推理**
+### 4. 推理
 
-+   evaluate.sh 文件修改
++ `evaluate.sh` 文件修改
 
-依然修改一下evaluate.sh, 我需要修改的是python版本和关闭quantization_bit
+依然修改一下 `evaluate.sh`，我需要修改的是 Python 版本和关闭 `quantization_bit`。
 
-```
+```bash
 PRE_SEQ_LEN=128
 CHECKPOINT=adgen-chatglm2-6b-pt-pt-128-2e-2
 STEP=3000
@@ -644,75 +651,72 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py \
     --quantization_bit 4
 ```
 
-```
+```bash
 bash evaluate.sh
 ```
 
-执行完成后，会生成评测文件，评测指标为中文 Rouge score 和 BLEU-4。生成的结果保存在 ./output/adgen-chatglm2-6b-pt-128-2e-2/generated_predictions.txt。我们准备了 5 条推理数据，所以相应的在文件中会有 5 条评测数据，labels 是 dev.json 中的预测输出，predict 是 ChatGLM2-6B 生成的结果，对比预测输出和生成结果，评测模型训练的好坏。如果不满意调整训练的参数再次进行训练。
+执行完成后，会生成评测文件，评测指标为中文 Rouge score 和 BLEU-4。生成的结果保存在 `./output/adgen-chatglm2-6b-pt-128-2e-2/generated_predictions.txt`。我们准备了 5 条推理数据，所以相应的在文件中会有 5 条评测数据，`labels` 是 `dev.json` 中的预测输出，`predict` 是 `ChatGLM2-6B` 生成的结果，对比预测输出和生成结果，评测模型训练的好坏。如果不满意调整训练的参数再次进行训练。
 
-> **5、模型部署**
+### 5. 模型部署
 
-+    直接运行代码：
++ 直接运行代码：
 
-首先载入Tokenizer：
+首先载入 `Tokenizer`：
 
-```
+```python
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 
-model_path = &quot;/data/work/xiehao/chatglm2-6b-model&quot; #或者远程 “THUDM/chatglm2-6b”
+model_path = "/data/work/xiehao/chatglm2-6b-model" #或者远程 “THUDM/chatglm2-6b”
 # 载入Tokenizer
-#tokenizer = AutoTokenizer.from_pretrained(&quot;THUDM/chatglm-6b&quot;, trust_remote_code=True)
+#tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
-
 ```
 
-1.  如果需要加载的是新 Checkpoint（只包含 PrefixEncoder 参数）：
+1. 如果需要加载的是新 Checkpoint（只包含 `PrefixEncoder` 参数）：
 
-```
+```python
 # 微调前
- 
-#model = AutoModel.from_pretrained(model_path, trust_remote_code=True, device=&#x27;cuda&#x27;)
- 
+
+#model = AutoModel.from_pretrained(model_path, trust_remote_code=True, device='cuda')
+
 #model = model.eval()
- 
+
 #response, history = model.chat(tokenizer, chat_str, history=[])
- 
+
 #print(response)
- 
- 
- 
+
+
+
 # 微调后
 
 #通过AutoConfig读取model_path目录下的config.json的参数信息
-#config = AutoConfig.from_pretrained(&quot;THUDM/chatglm-6b&quot;, trust_remote_code=True, pre_seq_len=128)
-#model = AutoModel.from_pretrained(&quot;THUDM/chatglm-6b&quot;, config=config, trust_remote_code=True)
+#config = AutoConfig.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True, pre_seq_len=128)
+#model = AutoModel.from_pretrained("THUDM/chatglm-6b", config=config, trust_remote_code=True)
 config = AutoConfig.from_pretrained(model_path, trust_remote_code=True, pre_seq_len=128)
 model = AutoModel.from_pretrained(model_path, config=config, trust_remote_code=True)
- 
+
 #prefix_state_dict = torch.load(lora_model_path)
-prefix_state_dict = torch.load(os.path.join(CHECKPOINT_PATH, &quot;pytorch_model.bin&quot;))
- 
+prefix_state_dict = torch.load(os.path.join(CHECKPOINT_PATH, "pytorch_model.bin"))
+
 new_prefix_state_dict = {}
 for k, v in prefix_state_dict.items():
-    if k.startswith(&quot;transformer.prefix_encoder.&quot;):
-        new_prefix_state_dict[k[len(&quot;transformer.prefix_encoder.&quot;):]] = v
+    if k.startswith("transformer.prefix_encoder."):
+        new_prefix_state_dict[k[len("transformer.prefix_encoder."):]] = v
 model.transformer.prefix_encoder.load_state_dict(new_prefix_state_dict)
-
-
 ```
 
-#注意你可能需要将 pre_seq_len 改成你训练时的实际值。如果你是从本地加载模型的话，需要将 THUDM/chatglm-6b 改成本地的模型路径（注意不是checkpoint路径）
+# 注意你可能需要将 `pre_seq_len` 改成你训练时的实际值。如果你是从本地加载模型的话，需要将 `THUDM/chatglm-6b` 改成本地的模型路径（注意不是 `checkpoint` 路径）
 
-1.  如果需要加载的是旧 Checkpoint（包含 ChatGLM-6B 以及 PrefixEncoder 参数），或者进行的是全参数微调，则直接加载整个 Checkpoint：
+1. 如果需要加载的是旧 Checkpoint（包含 `ChatGLM-6B` 以及 `PrefixEncoder` 参数），或者进行的是全参数微调，则直接加载整个 Checkpoint：
 
-```
+```python
 model = AutoModel.from_pretrained(CHECKPOINT_PATH, trust_remote_code=True)
 ```
 
 之后根据需求可以进行量化，也可以直接使用：
 
-```
-# Comment out the following line if you don&#x27;t use quantization
+```python
+# Comment out the following line if you don't use quantization
 model = model.quantize(4)
 model = model.half().cuda()
 model.transformer.prefix_encoder.float()
@@ -721,13 +725,13 @@ response, history = model.chat(tokenizer, chat_str, history=[])
 print(response)
 ```
 
-+   也可以直接运行支持加载 P-Tun[ing v2 c](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/web_demo.py)heckpoint 的 web demo
++ 也可以直接运行支持加载 [P-Tuning v2 checkpoint](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/web_demo.py) 的 web demo
 
-这里我们先修改 web_demo.sh 的内容以符合实际情况，将 pre_seq_len 改成你训练时的实际值，将 THUDM/chatglm2-6b 改成本地的模型路径。
+这里我们先修改 `web_demo.sh` 的内容以符合实际情况，将 `pre_seq_len` 改成你训练时的实际值，将 `THUDM/chatglm2-6b` 改成本地的模型路径。
 
-web_demo.sh文件
+`web_demo.sh` 文件
 
-```
+```bash
 PRE_SEQ_LEN=128
   
 CUDA_VISIBLE_DEVICES=0 python3 web_demo.py \
@@ -738,7 +742,7 @@ CUDA_VISIBLE_DEVICES=0 python3 web_demo.py \
 
 然后再执行
 
-```
+```bash
 #如果没有安装gradio需要安装
 pip install gradio
 #需要安装mdtex2html
@@ -752,33 +756,33 @@ bash web_demo.sh
 
 ---
 
-# 单卡微调ChatGLM P-tuning + LoRA
+# 单卡微调 ChatGLM P-tuning + LoRA
 
-硬件环境
+### 硬件环境
 
-单张RTX 3090
+单张 `RTX 3090`
 
-系统环境
+### 系统环境
 
-ubuntu 20.04
+`ubuntu 20.04`
 
-相关资源
+### 相关资源
 
-[THUDM/ChatGLM-6B: ChatGLM-6B: An Open Bilingua](https://link.zhihu.com/?target=https%3A//github.com/THUDM/ChatGLM-6B)[l Dialogue](https://link.zhihu.com/?target=https%3A//github.com/THUDM/ChatGLM-6B)[ ](https://link.zhihu.com/?target=https%3A//github.com/THUDM/ChatGLM-6B)Language Model | 开源双语对话语言模型 (github.com)
+[THUDM/ChatGLM-6B: ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型](https://github.com/THUDM/ChatGLM-6B)
 
 THUDM/chatglm-6b · Hugging Face
 
-[m](https://link.zhihu.com/?target=https%3A//github.com/mymusise/ChatGLM-Tuning)[ymusise/Ch](https://link.zhihu.com/?target=https%3A//github.com/mymusise/ChatGLM-Tuning)[a](https://link.zhihu.com/?target=https%3A//github.com/mymusise/ChatGLM-Tuning)tGLM-Tuning: 一种平价的chatgpt实现方案, 基于ChatGLM-6B + LoRA (github.com)
+[mymusise/ChatGLM-Tuning: 一种平价的chatgpt实现方案, 基于ChatGLM-6B + LoRA](https://github.com/mymusise/ChatGLM-Tuning)
 
 ### 操作流程
 
 #### P-tuning
 
-1.下载项目和模型
+1. 下载项目和模型
 
-ChatGLM官方提供了开包即食的P-tuning实现
+ChatGLM 官方提供了开包即食的 P-tuning 实现
 
-```
+```bash
 # 克隆ChatGLM-6B项目
 git clone https://github.com/THUDM/ChatGLM-6B.git
 cd ChatGLM-6B
@@ -790,15 +794,15 @@ git clone https://huggingface.co/THUDM/chatglm-6b
 cd ../ptuning
 ```
 
-这里以训练对话为例，修改 ptuning 目录下的 train_chat.sh
+这里以训练对话为例，修改 `ptuning` 目录下的 `train_chat.sh`
 
-```
+```bash
 PRE_SEQ_LEN=128 # prefix 长度
 LR=1e-2         # 学习率
 
-CHAT_TRAIN_DATA=&quot;path/to/train_data.json&quot;        # train 数据 
-CHAT_VAL_DATA=&quot;path/to/val_data.json&quot;            # val 数据
-CHECKPOINT_NAME=&quot;output/pt-$PRE_SEQ_LEN-$LR&quot;     # 保存 checkpoint 路径
+CHAT_TRAIN_DATA="path/to/train_data.json"        # train 数据 
+CHAT_VAL_DATA="path/to/val_data.json"            # val 数据
+CHECKPOINT_NAME="output/pt-$PRE_SEQ_LEN-$LR"     # 保存 checkpoint 路径
 
 CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --do_train \
@@ -825,9 +829,11 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --quantization_bit 4
 ```
 
-#### **对话数据集**
+#### 对话数据集
 
-需要注意的是，多轮对话需要提前处理成ChatGLM的格式，参考 ChatGLM-6B/ptuning 对话数据集
+需要注意的是，多轮对话需要提前处理成 `ChatGLM` 的格式，参考 `ChatGLM-6B/ptuning` 对话数据集
+
+
 
 ```
 {&quot;prompt&quot;: &quot;长城h3风扇不转。继电器好的。保险丝好的传感器新的风扇也新的这是为什么。就是继电器缺一个信号线&quot;, &quot;response&quot;: &quot;用电脑能读数据流吗？水温多少&quot;, &quot;history&quot;: []}
@@ -835,7 +841,7 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
 {&quot;prompt&quot;: &quot;是的。上下水管都好的&quot;, &quot;response&quot;: &quot;那就要检查线路了，一般风扇继电器是由电脑控制吸合的，如果电路存在断路，或者电脑坏了的话会出现继电器不吸合的情况！&quot;, &quot;history&quot;: [[&quot;长城h3风扇不转。继电器好的。保险丝好的传感器新的风扇也新的这是为什么。就是继电器缺一个信号线&quot;, &quot;用电脑能读数据流吗？水温多少&quot;], [&quot;95&quot;, &quot;上下水管温差怎么样啊？空气是不是都排干净了呢？&quot;]]}
 ```
 
-训练时需要指定 --history_column 为数据中聊天历史的 key（在此例子中是 history），将自动把聊天历史拼接。要注意超过输入长度 max_source_length 的内容会被截断。
+训练时需要指定 `--history_column` 为数据中聊天历史的 key（在此例子中是 `history`），将自动把聊天历史拼接。要注意超过输入长度 `max_source_length` 的内容会被截断。
 
 #### 启动训练
 
@@ -843,13 +849,11 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
 bash train_chat.sh
 ```
 
-P-tuning的显存开销只有6~7G，训练结束后prefix checkpoints会被保存在 ptuning/output 文件夹内
+P-tuning 的显存开销只有 6~7G，训练结束后 prefix checkpoints 会被保存在 `ptuning/output` 文件夹内
 
-![](img/b49aa85c1c92c0dbe247b331db816071.png)
+#### 加载 checkpoint
 
-#### 加载checkpoint
-
-修改 web_demo.sh
+修改 `web_demo.sh`
 
 ```
 PRE_SEQ_LEN=128
@@ -860,13 +864,11 @@ CUDA_VISIBLE_DEVICES=0 python3 web_demo.py \
     --pre_seq_len $PRE_SEQ_LEN
 ```
 
-现在就可以正常启动WebUI了
+现在就可以正常启动 WebUI 了
 
 ```
 bash web_demo.sh
 ```
-
-![](img/e0935fc8c946447c899a95dac6053b88.png)
 
 ### 2.5. LangChain + ChatGLM2-6B 构建知识库
 
@@ -874,6 +876,6 @@ bash web_demo.sh
 
 [LangChain + ChatGLM2-6B 构建本地知识库代码实现](https://powervision.feishu.cn/wiki/UdHjw1RFkiZkFrke7BFchthanSq)
 
-[CHATGLM2-6B大模型进行 LoRA 微调](https://powervision.feishu.cn/wiki/DUMbwl0MmiNeA6ksElqcWIzxnqg)
+[CHATGLM2-6B 大模型进行 LoRA 微调](https://powervision.feishu.cn/wiki/DUMbwl0MmiNeA6ksElqcWIzxnqg)
 
-> **阿里云****PAI****机器平台免费部署**
+> **阿里云 PAI 机器平台免费部署**

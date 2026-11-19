@@ -1,10 +1,9 @@
+
 # 2022-06-17一句话证明你是产品经理
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/YomldB0Zco5ejGxIic9cdrden5L](https://xuqiwei1986.feishu.cn/docx/YomldB0Zco5ejGxIic9cdrden5L)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/EziZvTDlgh5tDFLnqa6NhA)q.com/s/EziZvTDl...
-
->
+> 🔗 原文链接：https://mp.weixin.qq.com/s/EziZvTDlgh5tDFLnqa6NhA
 
 2022-06-17 16:50:41
 
@@ -18,11 +17,11 @@
 
 收录于合集
 
-#职场经验 20 个
+### 职场经验 20 个
 
-#产品经理 355 个
+### 产品经理 355 个
 
-#段子 12 个
+### 段子 12 个
 
 ![](img/3c09c1a2dceaa2ef63558ccd5973b7b0.png)
 
@@ -114,13 +113,15 @@
 
 ![](img/8fd1ef7490085c6ab258a7e36eb42e3a.png)
 
-今日报告： 巨量算数&创业邦 发布 《 2022中国职业教育行业洞察报告 》 ， 下载报告去👸号： 硬核刘大 后台回复“ 职业教育 ”， 即可下载完整PDF文件。
+## 今日报告
 
-申明： 报告版权归 巨量算数&创业邦 独家所有，此处仅限分享学习使用，如有侵权，请联系小编做删除处理。
+巨量算数&创业邦 发布 《 2022中国职业教育行业洞察报告 》，下载报告去👸号： 硬核刘大 后台回复“ 职业教育 ”，即可下载完整PDF文件。
 
-**RECOMMEND**
+申明：报告版权归 巨量算数&创业邦 独家所有，此处仅限分享学习使用，如有侵权，请联系小编做删除处理。
 
-推荐阅读
+## RECOMMEND
+
+### 推荐阅读
 
 [如何成长为一名优秀的产品经理？](http://mp.weixin.qq.com/s?__biz=MzAxNjMyMDUzMQ==&mid=2247537282&idx=2&sn=7ba2c21b65a0898802f4813e3a62448a&chksm=9bf483feac830ae8f552a6f4a254f802f0a3aa1b321117df6576daf6d768fa57aaacd88056f9&scene=21#wechat_redirect)
 

@@ -1,9 +1,8 @@
+
 # 10.构建低代码 AI 应用
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/NCrwd06xmokbTNxVMPgc9Q0Wntb](https://gotoaiworld.feishu.cn/docx/NCrwd06xmokbTNxVMPgc9Q0Wntb)
-
-# 构建低代码 AI 应用
-
+>
 > (点击上方图片观看本课视频)
 
 ## 介绍
@@ -16,35 +15,26 @@ Power Platform 为组织提供了一个机会，让团队成员通过直观的�
 
 本课内容包括：
 
-+   Power Platform 中生成式 AI 的介绍
-
-+   Copilot 的介绍及使用方法
-
-+   利用生成式 AI 构建 Power Platform 中的应用和流程
-
-+   通过 AI Builder 了解 Power Platform 中的 AI 模型
++ Power Platform 中生成式 AI 的介绍
++ Copilot 的介绍及使用方法
++ 利用生成式 AI 构建 Power Platform 中的应用和流程
++ 通过 AI Builder 了解 Power Platform 中的 AI 模型
 
 ## 学习目标
 
 完成本课后，你将能够：
 
-+   理解 Copilot 在 Power Platform 中的工作原理。
-
-+   为我们的教育初创公司构建一款学生作业跟踪应用。
-
-+   构建一个使用 AI 提取发票信息的发票处理流程。
-
-+   在使用 Create Text with GPT AI 模型时应用最佳实践。
++ 理解 Copilot 在 Power Platform 中的工作原理。
++ 为我们的教育初创公司构建一款学生作业跟踪应用。
++ 构建一个使用 AI 提取发票信息的发票处理流程。
++ 在使用 Create Text with GPT AI 模型时应用最佳实践。
 
 本课将使用的工具和技术包括：
 
-+   Power Apps：用于构建学生作业跟踪应用，提供低代码开发环境，帮助构建用于跟踪、管理和交互数据的应用。
-
-+   Dataverse：用于存储学生作业跟踪应用的数据，提供低代码数据平台。
-
-+   Power Automate：用于发票处理流程，提供低代码开发环境，帮助构建自动化工作流。
-
-+   AI Builder：用于发票处理的 AI 模型，利用预构建的 AI 模型处理发票。
++ Power Apps：用于构建学生作业跟踪应用，提供低代码开发环境，帮助构建用于跟踪、管理和交互数据的应用。
++ Dataverse：用于存储学生作业跟踪应用的数据，提供低代码数据平台。
++ Power Automate：用于发票处理流程，提供低代码开发环境，帮助构建自动化工作流。
++ AI Builder：用于发票处理的 AI 模型，利用预构建的 AI 模型处理发票。
 
 ## Power Platform 中的生成式 AI
 
@@ -76,7 +66,7 @@ Power Automate 中的 Copilot AI 助手功能允许你描述所需的流程类�
 
 我们的初创公司为学生提供在线课程。随着业务快速增长，课程需求激增，公司难以应对。公司聘请你作为 Power Platform 开发者，帮助他们构建低代码解决方案，管理学生作业和发票。该方案应能通过应用跟踪和管理学生作业，并通过工作流自动化发票处理。你需要使用生成式 AI 开发该解决方案。
 
-[刚开始使用 Copilot 时，可](https://github.com/pnp/powerplatform-prompts?WT.mc_id=academic-109639-somelezediko)以参考Power Platform Copilot Prompt Library获取提示语。这是一个包含多种提示语的库，帮助你用 Copilot 构建应用和流程，也能帮助你了解如何向 Copilot 描述需求。
+[刚开始使用 Copilot 时，可参考 Power Platform Copilot Prompt Library 获取提示语。](https://github.com/pnp/powerplatform-prompts?WT.mc_id=academic-109639-somelezediko) 这是一个包含多种提示语的库，帮助你用 Copilot 构建应用和流程，也能帮助你了解如何向 Copilot 描述需求。
 
 ### 为我们的初创公司构建学生作业跟踪应用
 
@@ -84,31 +74,21 @@ Power Automate 中的 Copilot AI 助手功能允许你描述所需的流程类�
 
 你将使用 Power Apps 中的 Copilot 按以下步骤构建应用：
 
-1.  进入 [Power Apps](https://make.powerapps.com/?WT.mc_id=academic-105485-koreyst) 主页。
-
-1.  在主页的文本区域描述你想构建的应用。例如，我想构建一个用于跟踪和管理学生作业的应用。点击 发送 按钮，将提示发送给 AI Copilot。
-
-1.  AI Copilot 会建议一个 Dataverse 表，包含你需要存储的字段和一些示例数据。你可以通过对话步骤使用 AI Copilot 助手功能自定义表格以满足需求。
-
-1.  重要提[示：](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko)Dataverse 是 Power Platform 的底层数据平台，是一个低代码数据平台，用于存储应用数据。它是一个完全托管的服务，安全地存储在微软云中，并在你的 Power Platform 环境中配置。它内置数据治理功能，如数据分类、数据血缘、细粒度访问控制等。你可以在这里了解更多关于 Dataverse 的信息。
+1. 进入 [Power Apps](https://make.powerapps.com/?WT.mc_id=academic-105485-koreyst) 主页。
+1. 在主页的文本区域描述你想构建的应用。例如，我想构建一个用于跟踪和管理学生作业的应用。点击 发送 按钮，将提示发送给 AI Copilot。
+1. AI Copilot 会建议一个 Dataverse 表，包含你需要存储的字段和一些示例数据。你可以通过对话步骤使用 AI Copilot 助手功能自定义表格以满足需求。
+1. 重要提示：[Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko) 是 Power Platform 的底层数据平台，是一个低代码数据平台，用于存储应用数据。它是一个完全托管的服务，安全地存储在微软云中，并在你的 Power Platform 环境中配置。它内置数据治理功能，如数据分类、数据血缘、细粒度访问控制等。你可以在这里了解更多关于 Dataverse 的信息。
 
 ![](img/0c400374418c0c854c18aa608881d064.png)
 
-1.  教育者希望向提交作业的学生发送邮件，告知作业进度。你可以用 Copilot 向表中添加一个新字段，用于存储学生邮箱。例如，使用以下提示添加新字段：我想添加一列用于存储学生邮箱。点击 发送 按钮，将提示发送给 AI Copilot。
-
-1.  AI Copilot 会生成新字段，你可以根据需求自定义该字段。
-
-1.  完成表格后，点击 创建应用 按钮创建应用。
-
-1.  AI Copilot 会根据你的描述生成响应式 Canvas 应用。你可以根据需求自定义应用。
-
-1.  为了让教育者能给学生发送邮件，你可以用 Copilot 向应用添加新屏幕。例如，使用以下提示添加新屏幕：我想添加一个屏幕用于给学生发送邮件。点击 发送 按钮，将提示发送给 AI Copilot。
-
-1.  AI Copilot 会生成新屏幕，你可以根据需求自定义该屏幕。
-
-1.  完成应用后，点击 保存 按钮保存应用。
-
-1.  若要与教育者共享应用，点击 共享 按钮，再次点击 共享，输入教育者的邮箱地址即可共享应用。
+1. 教育者希望向提交作业的学生发送邮件，告知作业进度。你可以用 Copilot 向表中添加一个新字段，用于存储学生邮箱。例如，使用以下提示添加新字段：我想添加一列用于存储学生邮箱。点击 发送 按钮，将提示发送给 AI Copilot。
+1. AI Copilot 会生成新字段，你可以根据需求自定义该字段。
+1. 完成表格后，点击 创建应用 按钮创建应用。
+1. AI Copilot 会根据你的描述生成响应式 Canvas 应用。你可以根据需求自定义应用。
+1. 为了让教育者能给学生发送邮件，你可以用 Copilot 向应用添加新屏幕。例如，使用以下提示添加新屏幕：我想添加一个屏幕用于给学生发送邮件。点击 发送 按钮，将提示发送给 AI Copilot。
+1. AI Copilot 会生成新屏幕，你可以根据需求自定义该屏幕。
+1. 完成应用后，点击 保存 按钮保存应用。
+1. 若要与教育者共享应用，点击 共享 按钮，再次点击 共享，输入教育者的邮箱地址即可共享应用。
 
 > 你的作业：你刚构建的应用是一个良好的开端，但仍有提升空间。当前邮件功能只能让教育者手动输入邮箱发送邮件。你能否利用 Copilot 构建一个自动化流程，使教育者在学生提交作业时自动发送邮件？提示：通过合适的提示语，你可以在 Power Automate 中使用 Copilot 来实现此功能。
 
@@ -116,39 +96,31 @@ Power Automate 中的 Copilot AI 助手功能允许你描述所需的流程类�
 
 我们初创公司的财务团队一直难以跟踪发票。他们之前用电子表格管理发票，但随着发票数量增加，管理变得困难。他们希望你构建一个表格，帮助存储、跟踪和管理收到的发票信息。该表将用于构建自动化流程，提取所有发票信息并存储到表中。表格还应支持财务团队查看已付款和未付款的发票。
 
-Powe[r ](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko)Platform 有一个底层数据平台叫 Dataverse，支持你存储应用和解决方案的数据。Dataverse 提供低代码数据平台，用于存储应用数据。它是一个完全托管的服务，安全地存储在微软云中，并在你的 Power Platform 环境中配置。它内置数据治理功能，如数据分类、数据血缘、细粒度访问控制等。你可以在这里了解更多关于 Dataverse 的信息。
+[Power Platform](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko) 有一个底层数据平台叫 Dataverse，支持你存储应用和解决方案的数据。Dataverse 提供低代码数据平台，用于存储应用数据。它是一个完全托管的服务，安全地存储在微软云中，并在你的 Power Platform 环境中配置。它内置数据治理功能，如数据分类、数据血缘、细粒度访问控制等。你可以在这里了解更多关于 Dataverse 的信息。
 
 为什么我们要为初创公司使用 Dataverse？Dataverse 中的标准和自定义表为你的数据提供了安全的云端存储选项。表格让你可以存储不同类型的数据，类似于在一个 Excel 工作簿中使用多个工作表。你可以用表格存储特定于组织或业务需求的数据。使用 Dataverse，初创公司将获得的好处包括但不限于：
 
-+   易于管理：元数据和数据都存储在云端，因此您无需担心它们的存储或管理细节。您可以专注于构建应用和解决方案。
-
-+   安全：Dataverse 提供安全的云端存储选项。您可以通过基于角色的安全性控制谁可以访问表中的数据以及如何访问。
-
-+   丰富的元数据：数据类型和关系可以直接在 Power Apps 中使用。
-
-+   逻辑和验证：您可以使用业务规则、计算字段和验证规则来执行业务逻辑并保持数据准确性。
++ 易于管理：元数据和数据都存储在云端，因此您无需担心它们的存储或管理细节。您可以专注于构建应用和解决方案。
++ 安全：Dataverse 提供安全的云端存储选项。您可以通过基于角色的安全性控制谁可以访问表中的数据以及如何访问。
++ 丰富的元数据：数据类型和关系可以直接在 Power Apps 中使用。
++ 逻辑和验证：您可以使用业务规则、计算字段和验证规则来执行业务逻辑并保持数据准确性。
 
 既然您已经了解了 Dataverse 是什么以及为什么要使用它，接下来让我们看看如何使用 Copilot 在 Dataverse 中创建一个表，以满足财务团队的需求。
 
-> Note ：您将在下一部分使用此表来构建一个自动化流程，提取所有发票信息并将其存储到表中。
+> Note：您将在下一部分使用此表来构建一个自动化流程，提取所有发票信息并将其存储到表中。
 
 使用 Copilot 在 Dataverse 中创建表，请按照以下步骤操作：
 
-1.  进入 [Power Apps](https://make.powerapps.com/?WT.mc_id=academic-105485-koreyst) 主页。
-
-1.  在左侧导航栏选择 Tables，然后点击 Describe the new Table。
+1. 进入 [Power Apps](https://make.powerapps.com/?WT.mc_id=academic-105485-koreyst) 主页。
+1. 在左侧导航栏选择 Tables，然后点击 Describe the new Table。
 
 ![](img/d008355ed133a66843d808eb40e90568.png)
 
-1.  在 Describe the new Table 页面，使用文本框描述您想创建的表。例如，我想创建一个用于存储发票信息的表。点击 Send 按钮将提示发送给 AI Copilot。
-
-1.  AI Copilot 会建议一个包含所需字段和一些示例数据的 Dataverse 表。您可以通过与 AI Copilot 的对话步骤，进一步自定义表以满足您的需求。
-
-1.  财务团队希望向供应商发送电子邮件，更新他们发票的当前状态。您可以使用 Copilot 向表中添加一个新字段来存储供应商邮箱。例如，您可以使用以下提示添加新字段：我想添加一个用于存储供应商邮箱的列。点击 Send 按钮将提示发送给 AI Copilot。
-
-1.  AI Copilot 会生成一个新字段，您可以根据需要自定义该字段。
-
-1.  完成表的设计后，点击 Create 按钮创建表。
+1. 在 Describe the new Table 页面，使用文本框描述您想创建的表。例如，我想创建一个用于存储发票信息的表。点击 Send 按钮将提示发送给 AI Copilot。
+1. AI Copilot 会建议一个包含所需字段和一些示例数据的 Dataverse 表。您可以通过与 AI Copilot 的对话步骤，进一步自定义表以满足您的需求。
+1. 财务团队希望向供应商发送电子邮件，更新他们发票的当前状态。您可以使用 Copilot 向表中添加一个新字段来存储供应商邮箱。例如，您可以使用以下提示添加新字段：我想添加一个用于存储供应商邮箱的列。点击 Send 按钮将提示发送给 AI Copilot。
+1. AI Copilot 会生成一个新字段，您可以根据需要自定义该字段。
+1. 完成表的设计后，点击 Create 按钮创建表。
 
 ## Power Platform 中的 AI 模型与 AI Builder
 
@@ -160,23 +132,16 @@ AI Builder 提供两种 AI 模型：预构建 AI 模型和自定义 AI 模型。
 
 Power Platform 中可用的一些预构建 AI 模型包括：
 
-+   关键短语提取：从文本中提取关键短语。
++ 关键短语提取：从文本中提取关键短语。
++ 语言检测：检测文本的语言。
++ 情感分析：识别文本的正面、负面、中性或混合情感。
++ 名片识别：从名片中提取信息。
++ 文本识别：从图像中提取文本。
++ 对象检测：检测并提取图像中的对象。
++ 文档处理：从表单中提取信息。
++ 发票处理：从发票中提取信息。
 
-+   语言检测：检测文本的语言。
-
-+   情感分析：识别文本的正面、负面、中性或混合情感。
-
-+   名片识别：从名片中提取信息。
-
-+   文本识别：从图像中提取文本。
-
-+   对象检测：检测并提取图像中的对象。
-
-+   文档处理：从表单中提取信息。
-
-+   发票处理：从发票中提取信息。
-
-自定义[ AI ](https://learn.microsoft.com/ai-builder/byo-model#limitations?WT.mc_id=academic-105485-koreyst)模型允许您将自己的模型导入 AI Builder，使其像任何 AI Builder 自定义模型一样工作，您可以使用自己的数据训练模型。这些模型可用于 Power Apps 和 Power Automate 中的自动化和预测。使用自定义模型时存在一些限制，详情请参阅限制说明。
+自定义 [AI](https://learn.microsoft.com/ai-builder/byo-model#limitations?WT.mc_id=academic-105485-koreyst) 模型允许您将自己的模型导入 AI Builder，使其像任何 AI Builder 自定义模型一样工作，您可以使用自己的数据训练模型。这些模型可用于 Power Apps 和 Power Automate 中的自动化和预测。使用自定义模型时存在一些限制，详情请参阅限制说明。
 
 ![](img/26c5cd25425a6e8bdd4e1ab0c24eb5f6.png)
 
@@ -188,55 +153,45 @@ Power Platform 中可用的一些预构建 AI 模型包括：
 
 使用 AI Builder 中的发票处理 AI 模型构建工作流，请按照以下步骤操作：
 
-1.  进入 [Power Automate](https://make.powerautomate.com/?WT.mc_id=academic-105485-koreyst) 主页。
+1. 进入 [Power Automate](https://make.powerautomate.com/?WT.mc_id=academic-105485-koreyst) 主页。
+1. 在主页的文本框中描述您想构建的工作流。例如，当发票到达我的邮箱时处理发票。点击 Send 按钮将提示发送给 AI Copilot。
+1. AI Copilot 会建议完成任务所需的操作。您可以点击 Next 按钮继续下一步。
+1. 下一步，Power Automate 会提示您设置流程所需的连接。完成后，点击 Create flow 按钮创建流程。
+1. AI Copilot 会生成一个流程，您可以根据需要自定义。
+1. 更新流程触发器，将 Folder 设置为存放发票的文件夹。例如，设置为 Inbox。点击 Show advanced options，将 Only with Attachments 设置为 Yes，确保流程仅在收到带附件的邮件时运行。
+1. 从流程中删除以下操作：HTML to text、Compose、Compose 2、Compose 3 和 Compose 4，因为您不会使用它们。
+1. 删除流程中的 Condition 操作，因为您不会使用它。流程应如下图所示：
 
-1.  在主页的文本框中描述您想构建的工作流。例如，当发票到达我的邮箱时处理发票。点击 Send 按钮将提示发送给 AI Copilot。
+1. 点击 Add an action 按钮，搜索 Dataverse，选择 Add a new row 操作。
 
-1.  AI Copilot 会建议完成任务所需的操作。您可以点击 Next 按钮继续下一步。
 
-1.  下一步，Power Automate 会提示您设置流程所需的连接。完成后，点击 Create flow 按钮创建流程。
 
-1.  AI Copilot 会生成一个流程，您可以根据需要自定义。
+1. 在 `Extract Information from invoices` 操作中，将 `Invoice File` 设置为邮件中的 `Attachment Content`，确保流程从发票附件中提取信息。
 
-1.  更新流程触发器，将 Folder 设置为存放发票的文件夹。例如，设置为 Inbox。点击 Show advanced options，将 Only with Attachments 设置为 Yes，确保流程仅在收到带附件的邮件时运行。
+1. 选择之前创建的表，例如 `Invoice Information` 表。使用上一步操作的动态内容填充以下字段：
 
-1.  从流程中删除以下操作：HTML to text、Compose、Compose 2、Compose 3 和 Compose 4，因为您不会使用它们。
+    + `ID`
+    + `Amount`
+    + `Date`
+    + `Name`
+    + `Status` - 将 `Status` 设置为 `Pending`。
+    + `Supplier Email` - 使用 `When a new email arrives` 触发器中的 `From` 动态内容。
 
-1.  删除流程中的 Condition 操作，因为您不会使用它。流程应如下图所示：
-
-1.  点击 Add an action 按钮，搜索 Dataverse，选择 Add a new row 操作。
-
-1.  在 Extract Information from invoices 操作中，将 Invoice File 设置为邮件中的 Attachment Content，确保流程从发票附件中提取信息。
-
-1.  选择之前创建的表，例如 Invoice Information 表。使用上一步操作的动态内容填充以下字段：
-
-+   ID
-
-+   Amount
-
-+   Date
-
-+   Name
-
-+   Status - 将 Status 设置为 Pending。
-
-+   Supplier Email - 使用 When a new email arrives 触发器中的 From 动态内容。
-
-1.  完成流程后，点击 Save 按钮保存流程。您可以通过向触发器指定的文件夹发送带发票的邮件来测试流程。
+1. 完成流程后，点击 `Save` 按钮保存流程。您可以通过向触发器指定的文件夹发送带发票的邮件来测试流程。
 
 > 您的作业：您刚刚构建的流程是一个良好的开端，现在需要思考如何构建一个自动化流程，使财务团队能够向供应商发送电子邮件，更新发票的当前状态。提示：流程必须在发票状态发生变化时运行。
 
 ## 在 Power Automate 中使用文本生成 AI 模型
 
-AI Builder 中的 Create Text with GPT AI 模型基于 Microsoft Azure OpenAI 服务，能够根据提示生成文本。借助此功能，您可以将 GPT（生成式预训练变换器）技术集成到应用和流程中，构建各种自动化流程和智能应用。
+`AI Builder` 中的 `Create Text with GPT` AI 模型基于 `Microsoft Azure OpenAI` 服务，能够根据提示生成文本。借助此功能，您可以将 `GPT`（生成式预训练变换器）技术集成到应用和流程中，构建各种自动化流程和智能应用。
 
-GPT 模型经过大量数据训练，能够根据提示生成接近人类语言的文本。结合工作流自动化，GPT 等 AI 模型可用于简化和自动化多种任务。
+`GPT` 模型经过大量数据训练，能够根据提示生成接近人类语言的文本。结合工作流自动化，`GPT` 等 AI 模型可用于简化和自动化多种任务。
 
 例如，您可以构建自动生成各种文本的流程，如电子邮件草稿、产品描述等。您还可以将该模型用于聊天机器人和客户服务应用，帮助客服人员高效、有效地回复客户咨询。
 
 ![](img/28fa0603d76c8a8a258131cc7c38d510.png)
 
-想了解如何在 Power Automate 中使用此 AI 模型，请学习使用 AI Builder 和 GPT 添加智能模块。
+想了解如何在 `Power Automate` 中使用此 AI 模型，请学习使用 `AI Builder` 和 `GPT` 添加智能模块。
 
 ## 干得好！继续学习
 

@@ -1,14 +1,15 @@
+
 # 基础篇 | Chat：编码阶段的 AI 即时响应
 
 > 来源：[https://agijuejin.feishu.cn/docx/QOD3dDgpEoKdkCx7SeOcqt6HnEc](https://agijuejin.feishu.cn/docx/QOD3dDgpEoKdkCx7SeOcqt6HnEc)
 
-> 🚀 Trae 下载地址：https://www.trae.ai
+> 🚀 Trae 下载地址：`https://www.trae.ai`
 
-本文开始我们将来了解 Trae 提供的基础 AI 功能，首先将给大家安利的就是 Trae 提供的 Chat 功能，Chat 功能根据所处的位置不同分为 SideChat 和 InlineChat 功能。
+本文开始我们将来了解 Trae 提供的基础 AI 功能，首先将给大家安利的就是 Trae 提供的 `Chat` 功能，`Chat` 功能根据所处的位置不同分为 `SideChat` 和 `InlineChat` 功能。
 
-相信很多同学会有疑问，这样的一个 AI 问答功能在很久以前就烂大街了，包含但不限于 ChatGPT、Kimi 等功能，那这玩意有什么价值呢？所以在介绍实际的功能前，我们先聊聊 Trae 的 AI 问答相比其余的问答功能有什么不同。
+相信很多同学会有疑问，这样的一个 AI 问答功能在很久以前就烂大街了，包含但不限于 `ChatGPT`、`Kimi` 等功能，那这玩意有什么价值呢？所以在介绍实际的功能前，我们先聊聊 Trae 的 AI 问答相比其余的问答功能有什么不同。
 
-# Trae AI 问答有什么特殊之处
+## Trae AI 问答有什么特殊之处
 
 在前文竞品对比那一章我们有聊到，AI IDE 最大的优势就是可以对整个编码环境形成掌控力，可以拿到包含但不限于仓库向量、用户行为路径、上下文信息等用于检索增强。
 
@@ -17,48 +18,44 @@
 例如我们来看下面的这个例子：
 
 +   打开某一个编辑区代码
-
-+   询问 Chat 模块，这段代码写了什么
++   询问 `Chat` 模块，这段代码写了什么
 
 ![](img/51ae1fda09b6d9450810e059003b8b3c.png)
 
-可以看到结果上，虽然我并没有指出这段代码是什么，但 Trae 会帮你自动补充想问的代码块，也就是参考区中呈现的 index.js。
+可以看到结果上，虽然我并没有指出这段代码是什么，但 Trae 会帮你自动补充想问的代码块，也就是参考区中呈现的 `index.js`。
 
 ![](img/e6c5ffeaf4cf3f2792118b52fb3803d4.png)
 
-通过这种方式，Trae 做到了真正懂开发者的问答，而不是脱离上下文有点傻乎乎的人工智能。这些特殊处理在 SideChat 和 InlineChat 模块中均有体现，下面我们就来具体聊聊它们分别提供了哪些有意思的功能。
+通过这种方式，Trae 做到了真正懂开发者的问答，而不是脱离上下文有点傻乎乎的人工智能。这些特殊处理在 `SideChat` 和 `InlineChat` 模块中均有体现，下面我们就来具体聊聊它们分别提供了哪些有意思的功能。
 
-# SideChat
+## SideChat
 
-SideChat 在 Trae 的右侧区域，我们可以通过快捷键 Command + U 或者点击 IDE 右上角区域的切换 AI 侧栏调起。
+`SideChat` 在 Trae 的右侧区域，我们可以通过快捷键 `Command + U` 或者点击 IDE 右上角区域的切换 AI 侧栏调起。
 
 ![](img/3de660d2651f62f7680f90ebcdfd80ef.png)
 
-SideChat 的问答功能在 Chat Tab 下，Builder Tab 是另一个有意思的 AI Agent 的功能，这个我们会在后续的进阶篇中学习使用。在顶部栏右侧还有三个按钮，分别是：
+`SideChat` 的问答功能在 Chat Tab 下，Builder Tab 是另一个有意思的 AI Agent 的功能，这个我们会在后续的进阶篇中学习使用。在顶部栏右侧还有三个按钮，分别是：
 
 +   新建聊天
-
 +   历史聊天
-
-+   关闭 / 收缩 SideChat
++   关闭 / 收缩 `SideChat`
 
 这个都是老生常谈的基础功能了，这里不赘述，大家自行体验即可。
 
 ![](img/90a34ee961b624866656441ce69338b2.png)
 
-SideChat 还提供了很多有意思的小细节，比如多模态的支持，通过点击输入框中的图片 Icon，我们就可以上传图片，使用图片媒体去和模型交互，例如下面的这个 case：
+`SideChat` 还提供了很多有意思的小细节，比如多模态的支持，通过点击输入框中的图片 Icon，我们就可以上传图片，使用图片媒体去和模型交互，例如下面的这个 case：
 
 ![](img/7a9b53f68ed9aaa2664b706deea4050a.png)
 
 有一些需求仅使用文字是很难描述清楚的，而通过 Trae 多模态的图片辅助，帮助问答更好地理解用户需要什么。
 
-# InlineChat
+## InlineChat
 
-InlineChat 在代码编辑器中，便于用户随时在代码开发阶段询问内容，我们可以通过两种方式调起：
+`InlineChat` 在代码编辑器中，便于用户随时在代码开发阶段询问内容，我们可以通过两种方式调起：
 
-+   **将光标放在编辑器中并使**用快捷键 Command + I
-
-+   在编辑器中选择任意代码，然后使用快捷键 Command + I 或单击浮动菜单中的 “编辑” 按钮
++   将光标放在编辑器中并使用快捷键 `Command + I`
++   在编辑器中选择任意代码，然后使用快捷键 `Command + I` 或单击浮动菜单中的 `编辑` 按钮
 
 ![](img/734cca9384733b639cbe47521544f0f9.png)
 

@@ -1,20 +1,19 @@
+
 # OpenAI 超 700 名员工联名逼宫董事会；ChatGPT 新功能“阅后即焚”丨 RTE 开发者日报 Vol.89
 
 > 来源：[https://docs.feishu.cn/docx/R0sxdcgk2o2h0AxgPAmcRhD3nFf](https://docs.feishu.cn/docx/R0sxdcgk2o2h0AxgPAmcRhD3nFf)
 
 开发者朋友们大家好：
 
-这里**是「RTE 开发者日报**」，每天和大家一起**看新**闻、聊八卦。
+这里是「RTE 开发者日报」，每天和大家一起看新闻、聊八卦。
 
-**
-
-我**们的社区编辑团**队会**整理分享 RT**E **（Real T**im**e Engagement） 领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
+我们的社区编辑团队会整理分享 RTE（Real Time Engagement）领域内「有话题的新闻」、「有态度的观点」、「有意思的数据」、「有思考的文章」、「有看点的会议」，但内容仅代表编辑的个人观点，欢迎大家留言、跟帖、讨论。
 
 本期编辑：@Asui，@CY
 
 ---
 
-### **一、有话题的新闻**
+## 一、有话题的新闻
 
 1、OpenAI 超 700 名员工联名逼宫董事会，不解散就跳槽微软
 
@@ -26,19 +25,19 @@ ChatGPT 开发公司 OpenAI 的“宫斗”大戏仍在持续上演。据美国�
 
 报道称大量 OpenAI 员工对阿尔特曼的离开感到沮丧，他们在𝕏上表达了对 OpenAI 董事会的不满，已经至少有数十名员工已经跟随阿尔特曼离开了该公司，包括一些高级研究人员。(@CSDN)
 
-**2、谷歌 CEO 皮查伊建议 An**droid 用户不要侧载应用，称非常危险
+2、谷歌 CEO 皮查伊建议 Android 用户不要侧载应用，称非常危险
 
 iOS 和 Android 的一个显著差异是，Android 支持用户从第三方渠道安装应用程序（即“侧载”）。然而，谷歌似乎并不希望用户这样做。最近，在与 Epic Store 的法律诉讼中，谷歌首席执行官桑达尔•皮查伊作证时提到了他对侧载应用程序的看法。
 
 皮查伊表示：“我们不想让你完全破坏你的手机，因为它（侧载）可能会在你的手机上安装恶意软件，并对你的安全构成严重威胁。”值得一提的是，欧盟 DMA（数字市场法案）可能会迫使苹果允许进行侧载。考虑到苹果刚刚同意明年将在 iPhone 上支持富通信服务（RCS），因此 iOS 支持侧载也不是不可能实现的。（@中关村在线）
 
-**3、ChatGPT 被曝测试新功能：学习**所有历史聊天，还能重置记忆、“阅后即焚”
+3、ChatGPT 被曝测试新功能：学习所有历史聊天，还能重置记忆、“阅后即焚”
 
 ChatGPT 可能要上新一项重大功能——记住你之前的聊天内容并不断从中学习（并非单纯保存历史记录），从而了解你的偏好和信息，用于在日后聊天派上用场。
 
 从网友曝出的截图来看，这个新功能将在“设置”中直接成为一个新的 Tab，名字叫“My ChatGPT”。如果你有一些不想让它记住的内容，只需聊完跟它嘱咐一句即可，比如“忘掉我（跟你聊的）上一个项目的信息”，ChatGPT 直接就“阅后即焚”了。当然，还有重置记忆功能，一旦选择就不可以撤销。（@量子位）
 
-**4、曝苹果首款头显 Vision Pro** 明年 3 月开卖：售价超 2.5 万元
+4、曝苹果首款头显 Vision Pro 明年 3 月开卖：售价超 2.5 万元
 
 11 月 20 日消息，爆料人 Mark Gurman 透露，苹果预计在明年 3 月份正式发售旗下第一款头显设备 Vision Pro，售价 3499 美元，约合人民币 2.5 万多元。
 
@@ -62,11 +61,11 @@ Mark Gurman 指出，Vision Pro 率先在美国上市，随后在 2024 年晚些
 
 对亚马逊免费课程感兴趣的人可以访问 AWS Educate 网站上的初始生成式人工智能培训和 CodeWhisperer 入门：
 
-https://aws.amazon.com/cn/education/awseducate/
+`https://aws.amazon.com/cn/education/awseducate/`
 
 其余的免费课程，包括学习使用亚马逊的 Transcribe 语音到文本生成器，都在 AWS Skill Builder 网站上：
 
-https://explore.skillbuilder.aws/learn/course/external/view/elearning/17090/amazon-transcribe-getting-started( @cnBeta)
+`https://explore.skillbuilder.aws/learn/course/external/view/elearning/17090/amazon-transcribe-getting-started`( @cnBeta)
 
 7、AI 大模型专利报告：中国头部科技公司展现创新实力
 
@@ -74,7 +73,7 @@ https://explore.skillbuilder.aws/learn/course/external/view/elearning/17090/amaz
 
 ---
 
-### 二、有态度的观点
+## 二、有态度的观点
 
 1、台积电创始人：美国复制台积电没可能，半导体不是花钱就能独立
 
@@ -92,9 +91,9 @@ https://explore.skillbuilder.aws/learn/course/external/view/elearning/17090/amaz
 
 ---
 
-**写在最后：**
+## 写在最后：
 
-我们欢迎更多的小伙伴参**与「RTE 开发者日报**」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
+我们欢迎更多的小伙伴参与「RTE 开发者日报」内容的共创，感兴趣的朋友请通过开发者社区或👸号留言联系，记得报暗号「共创」。
 
 对于任何反馈（包括但不限于内容上、形式上）我们不胜感激、并有小惊喜回馈，例如你希望从日报中看到哪些内容；自己推荐的信源、话题、活动等；或者列举几个你喜欢看、平时常看的内容渠道；内容排版或呈现形式上有哪些可以改进的地方等。
 

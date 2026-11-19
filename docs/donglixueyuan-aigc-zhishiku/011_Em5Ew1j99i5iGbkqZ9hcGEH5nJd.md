@@ -1,42 +1,39 @@
+
 # ✅Prompt 练习
 
 > 来源：[https://docs.feishu.cn/docx/AfnxdtHiho1pXTxjYYwcNoRhnxh](https://docs.feishu.cn/docx/AfnxdtHiho1pXTxjYYwcNoRhnxh)
 
 因为有些朋友一直问，提前说下访问官网需要🪜😒。
 
-# **1：张三的提问，****gpt****帮我改一下卷子**
+## 1：张三的提问，`gpt`帮我改一下卷子
 
-+   （这个示例是我在ppt中用的到的，并不规范哈）
+（这个示例是我在ppt中用的到的，并不规范哈）
 
 我是一个英语老师，有个学生天天写错别字，真是神烦，教务处还要求我用红笔修改以下作业，可是我根本懒得改，请帮我批改以下这个学生的英语作业。学生的英语作业是使用三个单引号括起来的部分：
 
-'''
-
+```
 I love speending time in nature.
 
 Whether it'is hiking through they mountains, walking on the beach, or simple sitting in a park, being outdoors makes me feel alive.
 
 There's simething about the fresh air, the sunlight, and the beauty of the naitural world that brings me a senses of peace and contentment
+```
 
-'''
-
-# 2：程序员小美 需要得到用红笔修改作业的代码
+## 2：程序员小美 需要得到用红笔修改作业的代码
 
 我有一篇英语文章，其中包含着错误。
 
 包含着错误的文章为：
 
-sentence = '''I love speending time in nature.   Whether it'is hiking through they mountains, walking on the beach, or simple sitting in a park, being outdoors makes me feel alive. There's simething about the fresh air, the sunlight, and the beauty of the naitural world that brings me a senses of peace and contentment.
-
-'''
+`sentence = '''I love speending time in nature.   Whether it'is hiking through they mountains, walking on the beach, or simple sitting in a park, being outdoors makes me feel alive. There's simething about the fresh air, the sunlight, and the beauty of the naitural world that brings me a senses of peace and contentment.'''`
 
 修改后正确的文章为：
 
-sentence _right=    '''I love spending time in nature. Whether it's hiking through the mountains, walking on the beach, or simply sitting in a park, being outdoors makes me feel alive. There's something about the fresh air, the sunlight, and the beauty of the natural world that brings me a sense of peace and contentment.'''
+`sentence _right=    '''I love spending time in nature. Whether it's hiking through the mountains, walking on the beach, or simply sitting in a park, being outdoors makes me feel alive. There's something about the fresh air, the sunlight, and the beauty of the natural world that brings me a sense of peace and contentment.'''`
 
 我需要在一个浏览器上展示错误的文章，文章之中错误的单词被删除线标识，并且错误的单词颜色为红色，最后在错误的单词后面写上正确的单词。
 
-请使用python实现功能并给出代码。
+请使用`python`实现功能并给出代码。
 
 gpt返回代码：
 
@@ -91,17 +88,17 @@ with open(&#x27;error_article.html&#x27;, &#x27;w&#x27;) as f:
 webbrowser.open(&#x27;error_article.html&#x27;)
 ```
 
-# **3：使用****API**
+## 3：使用API
 
-### **3.1下载****api****的地址**
+### 3.1下载`api`的地址
 
-openai官方网页：[h](https://platform.openai.com/docs/api-reference/chat/create)ttps://platform.openai.com/docs/api-reference/chat/create
+[openai官方网页](https://platform.openai.com/docs/api-reference/chat/create)
 
-### **3.2使用****api**
+### 3.2使用`api`
 
-##### **安装open ****ai**** 工具包：**
+#### 安装`openai`工具包
 
-在控制台中使用pip命令安装：
+在控制台中使用`pip`命令安装：
 
 ```
 pip install openai
@@ -113,7 +110,7 @@ pip install openai
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openai
 ```
 
-##### **写调用****gpt****  ****api**** 的代码：**
+#### 写调用`gpt` `api` 的代码
 
 简单的写下代码：
 
@@ -160,12 +157,11 @@ prompt=&quot;&quot;&quot;
 gpt(prompt)
 ```
 
-##### **写批改是个学生作业的代码**
+#### 写批改是个学生作业的代码
 
-注意  学生英语作文.txt  文件需要与写代码的.py文件在同一个目录下
+注意`学生英语作文.txt`文件需要与写代码的`.py`文件在同一个目录下
 
 ```
-
 # 引入openai的包
 import openai
 
@@ -206,7 +202,11 @@ for essay in essays:
 
     # 让程序暂停 20 秒 以免调用过于频繁导致报警
     time.sleep(20)
+```
+
 批量处理10个学生的作业并使用工具包打上红线：
+
+```
 # 引入openai的工具包
 import openai
 # 引入浏览器的工具包
@@ -267,7 +267,7 @@ for essay in essays:
     time.sleep(20)
 ```
 
-1.  **修改邮件**
+1. 修改邮件
 
 ![](img/100519332d87037f8d7d941014f6c785.png)
 
@@ -275,36 +275,42 @@ for essay in essays:
 
 ![](img/4fe2b45c296571c5674437a9734128c9.png)
 
-# **4.安装软件**
+## 4.安装软件
 
-1.  **pip**：pip 是 Python 的包管理器，用于安装和管理 Python 包。通常情况下，pip 会随着 Python 的安装一起提供。
+1. `pip`：`pip` 是 `Python` 的包管理器，用于安装和管理 `Python` 包。通常情况下，`pip` 会随着 `Python` 的安装一起提供。
 
-+   如果你已经安装了 Python，请确保 pip 已经安装。你可以在命令行中运行以下命令来检查 pip 的版本：
+   - 如果你已经安装了 `Python`，请确保 `pip` 已经安装。你可以在命令行中运行以下命令来检查 `pip` 的版本：
 
-+   pip --version
+     `pip --version`
 
-+   如果你没有安装 Python，你需要先下载和安装 Python 解释器。在 Python 官方网站上，你可以找到适用于不同操作系统的 Python 安装程序：https://www.python.org/downloads/
+   - 如果你没有安装 `Python`，你需要先下载和安装 `Python` 解释器。在 `Python` 官方网站上，你可以找到适用于不同操作系统的 `Python` 安装程序：https://www.python.org/downloads/
 
-+   安装 Python 后，pip 应该已经包含在安装中。你可以在命令行中运行 pip --version 来验证 pip 是否安装成功。
+   - 安装 `Python` 后，`pip` 应该已经包含在安装中。你可以在命令行中运行 `pip --version` 来验证 `pip` 是否安装成功。
 
-1.  **Python ****解释器**：Python 解释器用于执行和运行 Python 代码。你可以从 Python 官方网站下载适用于你的操作系统的 Python 安装程序：https://www.python.org/downloads/
+1. `Python`解释器：`Python` 解释器用于执行和运行 `Python` 代码。你可以从 `Python` 官方网站下载适用于你的操作系统的 `Python` 安装程序：https://www.python.org/downloads/
 
-+   在下载页面上，选择适合你操作系统的安装程序，并下载最新版本的 Python。
 
-+   执行下载的安装程序，并按照向导指示进行安装。
 
-+   在安装过程中，请确保选中 "Add Python to PATH"（将 Python 添加到系统路径）选项，这样你就可以在命令行中直接使用 python 命令。
+# 安装 Python
 
-+   完成安装后，你可以在命令行中运行 python --version 来验证 Python 是否成功安装。
+- 在下载页面上，选择适合你操作系统的安装程序，并下载最新版本的 Python。
 
-1.  **PyCharm 社区版**：PyCharm 是一款强大的 Python 集成开发环境（IDE）。PyCharm 社区版是免费的，适用于个人开发者和小型团队。
+- 执行下载的安装程序，并按照向导指示进行安装。
 
-+   可以从 J[etBrains 官方网站下载 PyCharm](https://www.jetbrains.com/pycharm/download/) 社区版的安装程序：https://www.jetbrains.com/pycharm/download/
+- 在安装过程中，请确保选中 `Add Python to PATH`（将 Python 添加到系统路径）选项，这样你就可以在命令行中直接使用 `python` 命令。
 
-+   在下载页面上，选择适用于你的操作系统的安装程序，并下载最新版本的 PyCharm 社区版。
+- 完成安装后，你可以在命令行中运行 `python --version` 来验证 Python 是否成功安装。
 
-+   执行下载的安装程序，并按照向导指示进行安装。
+# 安装 PyCharm 社区版
 
-+   在安装过程中，你可以选择配置一些首选项，如主题和键盘布局。
+PyCharm 是一款强大的 Python 集成开发环境（IDE）。PyCharm 社区版是免费的，适用于个人开发者和小型团队。
 
-+   完成安装后，你可以启动 PyCharm 并开始使用它来开发 Python 项目。
+- 可以从 [JetBrains 官方网站下载 PyCharm](https://www.jetbrains.com/pycharm/download/) 社区版的安装程序：https://www.jetbrains.com/pycharm/download/
+
+- 在下载页面上，选择适用于你的操作系统的安装程序，并下载最新版本的 PyCharm 社区版。
+
+- 执行下载的安装程序，并按照向导指示进行安装。
+
+- 在安装过程中，你可以选择配置一些首选项，如主题和键盘布局。
+
+- 完成安装后，你可以启动 PyCharm 并开始使用它来开发 Python 项目。

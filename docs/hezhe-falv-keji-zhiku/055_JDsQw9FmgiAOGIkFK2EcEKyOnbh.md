@@ -1,10 +1,11 @@
+
 # 不装了！这家法律 AI 公司推出 MCP，还引导客户直接使用 ChatGPT
 
-> 来源：[https://docs.feishu.cn/docx/WspZdLG5potowNx0N0WczrZenIf](https://docs.feishu.cn/docx/WspZdLG5potowNx0N0WczrZenIf)
+> 来源：https://docs.feishu.cn/docx/WspZdLG5potowNx0N0WczrZenIf
 
 ---
 
-**2025 年 10 月，智能合同平台 Juro 抛出了一则看似常规的产品新闻：正式推出 MCP（模型上**下文协议）接口，而且明确引导客户直接在 ChatGPT 中处理合同相关的问题 —— 而非打开 Juro 自家的产品界面。
+2025 年 10 月，智能合同平台 Juro 抛出了一则看似常规的产品新闻：正式推出 MCP（模型上下文协议）接口，而且明确引导客户直接在 ChatGPT 中处理合同相关的问题 —— 而非打开 Juro 自家的产品界面。
 
 ![](img/b2437a19ca88698133792f83f4a3a24d.png)
 
@@ -58,7 +59,7 @@ Juro 的 MCP 接口，正是顺应了这种“一站式需求”：既然用户�
 
 ### 事实上，法律人早已用脚投票“通用 AI”
 
-这个趋势其实早有信号，多份行业报告显示：法律从业者最常用的 AI 工具，并非各个[法律垂类工具，而是 ](https://mp.weixin.qq.com/s?__biz=MzE5MTY1MjA5OA==&mid=2247492567&idx=1&sn=610db61313a19a1bd6d91d3a10af12ba&scene=21#wechat_redirect)ChatGPT、Gemini 等通用 AI。Vals 发布的法律 AI 基准研究更是直接指出，以 ChatGPT 为代表的通用 AI 工具，在多个法律任务上已远超不少垂直工具。
+这个趋势其实早有信号，多份行业报告显示：法律从业者最常用的 AI 工具，并非各个法律垂类工具，而是 ChatGPT、Gemini 等通用 AI。Vals 发布的法律 AI 基准研究更是直接指出，以 ChatGPT 为代表的通用 AI 工具，在多个法律任务上已远超不少垂直工具。
 
 以合同场景举例，用户的一大需求，就是上传合同到 AI 工具，然后通过提问查找合同信息或执行各种任务。对于这些简单的法律任务，为什么不直接使用市场上最好的大模型处理，充分释放基础模型的潜力呢？
 

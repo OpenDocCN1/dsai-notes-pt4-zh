@@ -1,4 +1,5 @@
-# 浅谈LLAMA2核心函数generate源码
+
+# 浅谈LLAMA2核心函数`generate`源码
 
 > 来源：[https://geekbang.feishu.cn/docx/GyqgdJN4uoUr97xJRDecq0cvnyI](https://geekbang.feishu.cn/docx/GyqgdJN4uoUr97xJRDecq0cvnyI)
 
@@ -10,28 +11,25 @@
 
 > ⏰ 收录时间：2024-05-28 17:09:42
 
-> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247484200&idx=1&sn=c98da2fd5f5479f278b6eefcccb926ad&chksm=cf9dd7a9f8ea5ebf496a23b4f3c1320ba964e98c1e38baa3ddd992ba769972e28a156d0a9a09#rd)q.com/s?__biz=Mz...
+> 🔗 原文链接：https://mp.weixin.qq.com/s?__biz=Mzg4NjI0NDg0Ng==&mid=2247484200&idx=1&sn=c98da2fd5f5479f278b6eefcccb926ad&chksm=cf9dd7a9f8ea5ebf496a23b4f3c1320ba964e98c1e38baa3ddd992ba769972e28a156d0a9a09#rd
 
 ![](img/b0d18c7a7dbe559d8b65064b0c9b9888.png)
 
 关注作者👸号，获取更多AI知识
 
-在谈LLAMA2的generate源码之前，先介绍Temperature超参数及sample_top_p的原理。
+在谈LLAMA2的`generate`源码之前，先介绍`Temperature`超参数及`sample_top_p`的原理。
 
-## **Temperature **
+## Temperature
 
-Temperature 是一个超参数，可用于控制生成语言模型中生成文本的随机性和创造性。用于调整模型的softmax输出层中预测词的概率。
+`Temperature` 是一个超参数，可用于控制生成语言模型中生成文本的随机性和创造性。用于调整模型的softmax输出层中预测词的概率。
 
-**softmax函数:**
+`softmax`函数:
 
-Temperature 参数(T)添加到softmax函数:
+`Temperature`参数通常设置为 0.1 到 1.0 之间（`T=1`时形变为标准的`softmax`函数），下图分别显示了  在5:0.5和5:0.1时的图像（紫线为softmax，黑线为添加`T`参数的softmax），可以看到：
 
-**Temperatur**e参数通常设置为 0.1 到 1.0 之间（T=1时形变为标准的Softmax函数），下图分别显示了  在5:0.5和5:0.1时的图像（紫线为softmax，黑线为添加T参数的softmax），可以看到：
++ 当`T`值更大时，函数图像会变得更加平缓，预测词的概率被拉平，这意味着所有词被选择的可能性更大。这会产生更有创意和多样化的文本，因为模型更有可能生成不寻常或意想不到的词。
 
-+   当T值 **更大 **时，函数图像会变的更加的 **平缓 **，预测词的概率被拉平，这意味着所有词被选择的可能性更大。 这会产生更有创意和多样化的文本，因为模型更有可能生成不寻常或意想不到的词。
-
-+   当T值 **更小 **时，函数图像会变的更加的 **陡峭 **，预测词的概率会变尖锐，这意味着选择最有可能的词的概率更高。 这会产生更保守和可预测的文本，因为模型不太可能生成意想不到或不寻常的词。
-
++ 当`T`值更小时，函数图像会变得更加陡峭，预测词的概率会变尖锐，这意味着选择最有可能的词的概率更高。这会产生更保守和可预测的文本，因为模型不太可能生成意想不到或不寻常的词。
 
 =5:0.5
 
@@ -39,21 +37,23 @@ Temperature 参数(T)添加到softmax函数:
 
 = 5:0.1
 
-**小结 **：Temperature 参数是文本生成模型中用于控制生成文本的随机性和创造性的一个重要的超参数。
+### 小结
 
-## **sample_top_p **
+`Temperature` 参数是文本生成模型中用于控制生成文本的随机性和创造性的一个重要的超参数。
+
+## sample_top_p
 
 ![](img/c3003b53377d5bc394d60430514f3c10.png)
 
 平缓和陡峭的概率分布图-文献【2】
 
-采样意味着根据当前条件概率分布随机选择输出**词 ，使用**采样方法时文本生成本身不再是 确定性的 。对单词序列进行采样时的大问题: 模型通常会产生不连贯的乱码。在LLAMA2中，缓解这一问题的方式是通过top_p（也称：nucleus sampling）
+采样意味着根据当前条件概率分布随机选择输出词，使用采样方法时文本生成本身不再是确定性的。对单词序列进行采样时的大问题: 模型通常会产生不连贯的乱码。在LLAMA2中，缓解这一问题的方式是通过`top_p`（也称：nucleus sampling）
 
 ```
 def sample_top_p(probs, p):
     probs_sort, probs_idx = torch.sort(probs, dim=-1, descending=True)
     probs_sum = torch.cumsum(probs_sort, dim=-1)
-    mask = probs_sum - probs_sort &gt; p
+    mask = probs_sum - probs_sort > p
     probs_sort[mask] = 0.0
     # 归一化
     probs_sort.div_(probs_sort.sum(dim=-1, keepdim=True))
@@ -63,9 +63,9 @@ def sample_top_p(probs, p):
     return next_token_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
 ```
 
-sample_top_p函数的作用：每个时间步，按照字出现的概率由高到底排序，当概率之和大于top-p的时候，就不取后面的样本了。然后对取到的这些字的概率重新归一化后，进行采样。这样做的好处是，既保证了质量,又增加了适当的随机性。
+`sample_top_p`函数的作用：每个时间步，按照字出现的概率由高到底排序，当概率之和大于`top_p`的时候，就不取后面的样本了。然后对取到的这些字的概率重新归一化后，进行采样。这样做的好处是，既保证了质量，又增加了适当的随机性。
 
-## **核心函数generate() **
+## 核心函数`generate()`
 
 这一块直接在代码中进行注释：
 
@@ -78,28 +78,28 @@ def generate(
         top_p: float = 0.9,  # 用于决定采样过程中保留的 token 集合的概率阈值
         logprobs: bool = False,  # 是否返回每个 token 的对数概率
         echo: bool = False,  # 是否返回输入的提示
-) -&gt; Tuple[List[List[int]], Optional[List[List[float]]]]:
+) -> Tuple[List[List[int]], Optional[List[List[float]]]]:
     # ---------------------------初始化长度为 total_len tokens张量，并填充 pad_id----------------------------------
     params = self.model.params
     bsz = len(prompt_tokens)
-    assert bsz &lt;= params.max_batch_size, (bsz, params.max_batch_size)
+    assert bsz <= params.max_batch_size, (bsz, params.max_batch_size)
 
     min_prompt_len = min(len(t) for t in prompt_tokens)
     max_prompt_len = max(len(t) for t in prompt_tokens)
-    assert max_prompt_len &lt;= params.max_seq_len
+    assert max_prompt_len <= params.max_seq_len
     total_len = min(params.max_seq_len, max_gen_len + max_prompt_len)
 
     pad_id = self.tokenizer.pad_id
-    tokens = torch.full((bsz, total_len), pad_id, dtype=torch.long, device=&quot;cuda&quot;)
+    tokens = torch.full((bsz, total_len), pad_id, dtype=torch.long, device="cuda")
     # 将prompt_tokens中的token复制到tokens张量中。
     for k, t in enumerate(prompt_tokens):
-        tokens[k, : len(t)] = torch.tensor(t, dtype=torch.long, device=&quot;cuda&quot;)
+        tokens[k, : len(t)] = torch.tensor(t, dtype=torch.long, device="cuda")
     if logprobs:
         # 创建一个与tokens相同形状的token_logprobs张量，并用0填充
         token_logprobs = torch.zeros_like(tokens, dtype=torch.float)
 
     prev_pos = 0
-    eos_reached = torch.tensor([False] * bsz, device=&quot;cuda&quot;)
+    eos_reached = torch.tensor([False] * bsz, device="cuda")
     input_text_mask = tokens != pad_id
     # -------------------------------------------------------------
 
@@ -111,11 +111,11 @@ def generate(
             token_logprobs[:, prev_pos + 1: cur_pos + 1] = -F.cross_entropy(
                 input=logits.transpose(1, 2),
                 target=tokens[:, prev_pos + 1: cur_pos + 1],
-                reduction=&quot;none&quot;,
+                reduction="none",
                 ignore_index=pad_id,
             )
         # 根据温度参数和top_p参数对logits进行softmax和采样，得到下一个token
-        if temperature &gt; 0:
+        if temperature > 0:
             # sample_top_p函数对probs进行采样
             probs = torch.softmax(logits[:, -1] / temperature, dim=-1)
             next_token = sample_top_p(probs, top_p)
@@ -130,7 +130,7 @@ def generate(
         )
         # tokens张量更新
         tokens[:, cur_pos] = next_token
-        eos_reached |= (~input_text_mask[:, cur_pos]) &amp; (
+        eos_reached |= (~input_text_mask[:, cur_pos]) & (
                 next_token == self.tokenizer.eos_id
         )
         prev_pos = cur_pos
@@ -160,14 +160,13 @@ def generate(
         out_logprobs.append(probs)
     # 返回生成的tokens和对数概率（如果logprobs参数为真）
     return (out_tokens, out_logprobs if logprobs else None)
-
 ```
 
-## **总结 **
+## 总结
 
-本文介绍了Temperature以及sample_top_p的原理，并且阅读了LLAMA2的核心生成函数的源码。关于更多细节实现，请关注llama源码。
+本文介绍了`Temperature`以及`sample_top_p`的原理，并且阅读了LLAMA2的核心生成函数的源码。关于更多细节实现，请关注llama源码。
 
-## **参考文献 **
+## 参考文献
 
 【1】https://github.com/facebookresearch/llama/blob/main/llama/generation.py
 

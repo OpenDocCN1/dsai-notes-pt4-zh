@@ -1,3 +1,4 @@
+
 # RAG-Anything: All-in-One RAG System- HKUDS香港大学数据智能实验室
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/XO5Qd42S1oRfitxJ2EZcIpoAnjg](https://gotoaiworld.feishu.cn/docx/XO5Qd42S1oRfitxJ2EZcIpoAnjg)
@@ -8,15 +9,15 @@ https://github.com/HKUDS/RAG-Anything
 
 ## 🎉 News
 
-+    [[2025.10]🎯📢 ](http://arxiv.org/abs/2510.12323)🚀 We have released the technical report of RAG-Anything. Access it now to explore our latest research findings.
++ [[2025.10]🎯📢 ](http://arxiv.org/abs/2510.12323)🚀 We have released the technical report of RAG-Anything. Access it now to explore our latest research findings.
 
-+    [2025.08]🎯📢 🔍 RAG-Anything now features VLM-Enhanced Query mode! When documents include images, the system seamlessly integrates them into VLM for advanced multimodal analysis, combining visual and textual context for deeper insights.
++ [2025.08]🎯📢 🔍 RAG-Anything now features VLM-Enhanced Query mode! When documents include images, the system seamlessly integrates them into VLM for advanced multimodal analysis, combining visual and textual context for deeper insights.
 
-+    [2025.07]🎯📢 RAG-Anything now features a context configuration module, enabling intelligent integration of relevant contextual information to enhance multimodal content processing.
++ [2025.07]🎯📢 RAG-Anything now features a context configuration module, enabling intelligent integration of relevant contextual information to enhance multimodal content processing.
 
-+    [2025.07]🎯📢 🚀 RAG-Anything now supports multimodal query capabilities, enabling enhanced RAG with seamless processing of text, images, tables, and equations.
++ [2025.07]🎯📢 🚀 RAG-Anything now supports multimodal query capabilities, enabling enhanced RAG with seamless processing of text, images, tables, and equations.
 
-+    [2025.07]🎯📢 🎉 RAG-Anything has reached 1k🌟 stars on GitHub! Thank you for your incredible support and valuable contributions to the project.
++ [2025.07]🎯📢 🎉 RAG-Anything has reached 1k🌟 stars on GitHub! Thank you for your incredible support and valuable contributions to the project.
 
 ---
 
@@ -24,7 +25,7 @@ https://github.com/HKUDS/RAG-Anything
 
 Next-Generation Multimodal Intelligence
 
-Modern d[ocuments](https://github.com/HKUDS/LightRAG) increasingly contain diverse multimodal content—text, images, tables, equations, charts, and multimedia—that traditional text-focused RAG systems cannot effectively process. RAG-Anything addresses this challenge as a comprehensive All-in-One Multimodal Document Processing RAG system built on LightRAG.
+Modern documents increasingly contain diverse multimodal content—text, images, tables, equations, charts, and multimedia—that traditional text-focused RAG systems cannot effectively process. RAG-Anything addresses this challenge as a comprehensive All-in-One Multimodal Document Processing RAG system built on LightRAG.
 
 As a unified solution, RAG-Anything eliminates the need for multiple specialized tools. It provides seamless processing and querying across all content modalities within a single integrated framework. Unlike conventional RAG approaches that struggle with non-textual elements, our all-in-one system delivers comprehensive multimodal retrieval capabilities.
 
@@ -34,19 +35,19 @@ Users can query documents containing interleaved text, visual diagrams, structur
 
 ### 🎯 Key Features
 
-+   🔄 End-to-End Multimodal Pipeline - Complete workflow from document ingestion and parsing to intelligent multimodal query answering
++ 🔄 End-to-End Multimodal Pipeline - Complete workflow from document ingestion and parsing to intelligent multimodal query answering
 
-+   📄 Universal Document Support - Seamless processing of PDFs, Office documents, images, and diverse file formats
++ 📄 Universal Document Support - Seamless processing of PDFs, Office documents, images, and diverse file formats
 
-+   🧠 Specialized Content Analysis - Dedicated processors for images, tables, mathematical equations, and heterogeneous content types
++ 🧠 Specialized Content Analysis - Dedicated processors for images, tables, mathematical equations, and heterogeneous content types
 
-+   🔗 Multimodal Knowledge Graph - Automatic entity extraction and cross-modal relationship discovery for enhanced understanding
++ 🔗 Multimodal Knowledge Graph - Automatic entity extraction and cross-modal relationship discovery for enhanced understanding
 
-+   ⚡ Adaptive Processing Modes - Flexible MinerU-based parsing or direct multimodal content injection workflows
++ ⚡ Adaptive Processing Modes - Flexible MinerU-based parsing or direct multimodal content injection workflows
 
-+   📋 Direct Content List Insertion - Bypass document parsing by directly inserting pre-parsed content lists from external sources
++ 📋 Direct Content List Insertion - Bypass document parsing by directly inserting pre-parsed content lists from external sources
 
-+   🎯 Hybrid Intelligent Retrieval - Advanced search capabilities spanning textual and multimodal content with contextual understanding
++ 🎯 Hybrid Intelligent Retrieval - Advanced search capabilities spanning textual and multimodal content with contextual understanding
 
 ---
 
@@ -56,27 +57,7 @@ Users can query documents containing interleaved text, visual diagrams, structur
 
 RAG-Anything implements an effective multi-stage multimodal pipeline that fundamentally extends traditional RAG architectures to seamlessly handle diverse content modalities through intelligent orchestration and cross-modal understanding.
 
-📄
-
-Document Parsing
-
-→
-
-🧠
-
-Content Analysis
-
-→
-
-🔍
-
-Knowledge Graph
-
-→
-
-🎯
-
-Intelligent Retrieval
+📄 Document Parsing → 🧠 Content Analysis → 🔍 Knowledge Graph → 🎯 Intelligent Retrieval
 
 ### Document Parsing Stage
 
@@ -84,11 +65,11 @@ The system provides high-fidelity document extraction through adaptive content d
 
 Key Components:
 
-+   [⚙️ Min](https://github.com/opendatalab/MinerU)erU Integration: Leverages MinerU for high-fidelity document structure extraction and semantic preservation across complex layouts.
++ ⚙️ [MinerU](https://github.com/opendatalab/MinerU) Integration: Leverages MinerU for high-fidelity document structure extraction and semantic preservation across complex layouts.
 
-+   🧩 Adaptive Content Decomposition: Automatically segments documents into coherent text blocks, visual elements, structured tables, mathematical equations, and specialized content types while preserving contextual relationships.
++ 🧩 Adaptive Content Decomposition: Automatically segments documents into coherent text blocks, visual elements, structured tables, mathematical equations, and specialized content types while preserving contextual relationships.
 
-+   📁 Universal Format Support: Provides comprehensive handling of PDFs, Office documents (DOC/DOCX/PPT/PPTX/XLS/XLSX), images, and emerging formats through specialized parsers with format-specific optimization.
++ 📁 Universal Format Support: Provides comprehensive handling of PDFs, Office documents (DOC/DOCX/PPT/PPTX/XLS/XLSX), images, and emerging formats through specialized parsers with format-specific optimization.
 
 ### Multi-Modal Content Understanding & Processing
 
@@ -96,11 +77,11 @@ The system automatically categorizes and routes content through optimized channe
 
 Key Components:
 
-+   🎯 Autonomous Content Categorization and Routing: Automatically identify, categorize, and route different content types through optimized execution channels.
++ 🎯 Autonomous Content Categorization and Routing: Automatically identify, categorize, and route different content types through optimized execution channels.
 
-+   ⚡ Concurrent Multi-Pipeline Architecture: Implements concurrent execution of textual and multimodal content through dedicated processing pipelines. This approach maximizes throughput efficiency while preserving content integrity.
++ ⚡ Concurrent Multi-Pipeline Architecture: Implements concurrent execution of textual and multimodal content through dedicated processing pipelines. This approach maximizes throughput efficiency while preserving content integrity.
 
-+   🏗️ Document Hierarchy Extraction: Extracts and preserves original document hierarchy and inter-element relationships during content transformation.
++ 🏗️ Document Hierarchy Extraction: Extracts and preserves original document hierarchy and inter-element relationships during content transformation.
 
 ### Multimodal Analysis Engine
 
@@ -108,37 +89,25 @@ The system deploys modality-aware processing units for heterogeneous data modali
 
 Specialized Analyzers:
 
-+   🔍 Visual Content Analyzer:
++ 🔍 Visual Content Analyzer:
+  + Integrate vision model for image analysis.
+  + Generates context-aware descriptive captions based on visual semantics.
+  + Extracts spatial relationships and hierarchical structures between visual elements.
 
-+   Integrate vision model for image analysis.
++ 📊 Structured Data Interpreter:
+  + Performs systematic interpretation of tabular and structured data formats.
+  + Implements statistical pattern recognition algorithms for data trend analysis.
+  + Identifies semantic relationships and dependencies across multiple tabular datasets.
 
-+   Generates context-aware descriptive captions based on visual semantics.
++ 📐 Mathematical Expression Parser:
+  + Parses complex mathematical expressions and formulas with high accuracy.
+  + Provides native LaTeX format support for seamless integration with academic workflows.
+  + Establishes conceptual mappings between mathematical equations and domain-specific knowledge bases.
 
-+   Extracts spatial relationships and hierarchical structures between visual elements.
-
-+   📊 Structured Data Interpreter:
-
-+   Performs systematic interpretation of tabular and structured data formats.
-
-+   Implements statistical pattern recognition algorithms for data trend analysis.
-
-+   Identifies semantic relationships and dependencies across multiple tabular datasets.
-
-+   📐 Mathematical Expression Parser:
-
-+   Parses complex mathematical expressions and formulas with high accuracy.
-
-+   Provides native LaTeX format support for seamless integration with academic workflows.
-
-+   Establishes conceptual mappings between mathematical equations and domain-specific knowledge bases.
-
-+   🔧 Extensible Modality Handler:
-
-+   Provides configurable processing framework for custom and emerging content types.
-
-+   Enables dynamic integration of new modality processors through plugin architecture.
-
-+   Supports runtime configuration of processing pipelines for specialized use cases.
++ 🔧 Extensible Modality Handler:
+  + Provides configurable processing framework for custom and emerging content types.
+  + Enables dynamic integration of new modality processors through plugin architecture.
+  + Supports runtime configuration of processing pipelines for specialized use cases.
 
 ### Multimodal Knowledge Graph Index
 
@@ -146,15 +115,23 @@ The multi-modal knowledge graph construction module transforms document content 
 
 Core Functions:
 
-+   🔍 Multi-Modal Entity Extraction: Transforms significant multimodal elements into structured knowledge graph entities. The process includes semantic annotations and metadata preservation.
++ 🔍 Multi-Modal Entity Extraction: Transforms significant multimodal elements into structured knowledge graph entities. The process includes semantic annotations and metadata preservation.
 
-+   🔗 Cross-Modal Relationship Mapping: Establishes semantic connections and dependencies between textual entities and multimodal components. This is achieved through automated relationship inference algorithms.
++ 🔗 Cross-Modal Relationship Mapping: Establishes semantic connections and dependencies between textual entities and multimodal components. This is achieved through automated relationship inference algorithms.
 
-+   🏗️ Hierarchical Structure Preservation: Maintains original document organization through "belongs_to" relationship chains. These chains preserve logical content hierarchy and sectional dependencies.
++ 🏗️ Hierarchical Structure Preservation: Maintains original document organization through `belongs_to` relationship chains. These chains preserve logical content hierarchy and sectional dependencies.
 
-+   ⚖️ Weighted Relationship Scoring: Assigns quantitative relevance scores to relationship types. Scoring is based on semantic proximity and contextual significance within the document structure.
++ ⚖️ Weighted Relationship Scoring: Assigns quantitative relevance scores to relationship types. Scoring is based on semantic proximity and contextual significance within the document structure.
 
-### Modality-Aware Retrieval
+
+
+# 🚀 `RAG-Anything`: All-in-One RAG System
+
+![](img/ca4a3665c81473107304a8ca132812a5.png)
+
+![](img/bed505582593ec68f16effeaf6c007cb.png)
+
+## Modality-Aware Retrieval
 
 The hybrid retrieval system combines vector similarity search with graph traversal algorithms for comprehensive content retrieval. It implements modality-aware ranking mechanisms and maintains relational coherence between retrieved elements to ensure contextually integrated information delivery.
 
@@ -166,23 +143,17 @@ Retrieval Mechanisms:
 
 +   🔗 Relational Coherence Maintenance: Maintains semantic and structural relationships between retrieved elements. This ensures coherent information delivery and contextual integrity.
 
-# 🚀 RAG-Anything: All-in-One RAG System
-
-![](img/ca4a3665c81473107304a8ca132812a5.png)
-
-![](img/bed505582593ec68f16effeaf6c007cb.png)
-
 ---
 
 ## 🎉 新闻
 
-+    [2025.08.12]🎯📢 🔍 RAGAnything 现在支持 VLM增强查询 模式！当文档包含图片时，系统可以自动将图片与文本上下文一起直接传递给VLM进行综合多模态分析。
++   [2025.08.12]🎯📢 🔍 `RAGAnything` 现在支持 VLM增强查询 模式！当文档包含图片时，系统可以自动将图片与文本上下文一起直接传递给VLM进行综合多模态分析。
 
-+   [ [2025.](https://github.com/HKUDS/RAG-Anything/blob/main/docs/context_aware_processing.md)07.05]🎯📢 RAGAnything 新增上下文配置模块，支持为多模态内容处理添加相关上下文信息。
++   [2025.07.05](https://github.com/HKUDS/RAG-Anything/blob/main/docs/context_aware_processing.md)🎯📢 `RAGAnything` 新增上下文配置模块，支持为多模态内容处理添加相关上下文信息。
 
-+    [2025.07.04]🎯📢 RAGAnything 现在支持多模态内容查询，实现了集成文本、图像、表格和公式处理的增强检索生成功能。
++   [2025.07.04]🎯📢 `RAGAnything` 现在支持多模态内容查询，实现了集成文本、图像、表格和公式处理的增强检索生成功能。
 
-+    [2025.07.03]🎯📢 RAGAnything 在GitHub上达到了1K星标🌟！感谢您的支持和贡献。
++   [2025.07.03]🎯📢 `RAGAnything` 在GitHub上达到了1K星标🌟！感谢您的支持和贡献。
 
 ---
 
@@ -190,7 +161,7 @@ Retrieval Mechanisms:
 
 下一代多模态智能
 
-RAG-Anything是一个综合性多模态文档处理RAG系统。该系统能够无缝处理和查询包含文本、图像、表格、公式等多模态内容的复杂文档，提供完整的检索增强(RAG)生成解决方案。
+`RAG-Anything`是一个综合性多模态文档处理RAG系统。该系统能够无缝处理和查询包含文本、图像、表格、公式等多模态内容的复杂文档，提供完整的检索增强(RAG)生成解决方案。
 
 ![](img/612681959544ee3ce5f971dad1e3575e.png)
 
@@ -204,7 +175,7 @@ RAG-Anything是一个综合性多模态文档处理RAG系统。该系统能够�
 
 +   🔗 基于知识图谱索引 - 实现自动化实体提取和关系构建，建立跨模态的语义连接网络
 
-+   ⚡ 灵活的处理架构 - 支持基于MinerU的智能解析模式和直接多模态内容插入模式，满足不同应用场景需求
++   ⚡ 灵活的处理架构 - 支持基于`MinerU`的智能解析模式和直接多模态内容插入模式，满足不同应用场景需求
 
 +   📋 直接内容列表插入 - 跳过文档解析，直接插入来自外部源的预解析内容列表，支持多种数据来源整合
 
@@ -216,29 +187,9 @@ RAG-Anything是一个综合性多模态文档处理RAG系统。该系统能够�
 
 ### 核心算法
 
-RAG-Anything 采用灵活的分层架构设计，实现多阶段多模态处理流水线，将传统RAG系统扩展为支持异构内容类型的综合处理平台。
+`RAG-Anything` 采用灵活的分层架构设计，实现多阶段多模态处理流水线，将传统RAG系统扩展为支持异构内容类型的综合处理平台。
 
-📄
-
-文档解析
-
-→
-
-🧠
-
-内容分析
-
-→
-
-🔍
-
-知识图谱
-
-→
-
-🎯
-
-智能检索
+📄 文档解析 → 🧠 内容分析 → 🔍 知识图谱 → 🎯 智能检索
 
 ### 文档解析阶段
 
@@ -246,7 +197,7 @@ RAG-Anything 采用灵活的分层架构设计，实现多阶段多模态处理�
 
 核心组件：
 
-+   ⚙️ 结构化提取引擎：集成 [MinerU](https://github.com/opendatalab/MinerU) 文档解析框架，实现精确的文档结构识别与内容提取，确保多模态元素的完整性和准确性。
++   ⚙️ 结构化提取引擎：集成 [`MinerU`](https://github.com/opendatalab/MinerU) 文档解析框架，实现精确的文档结构识别与内容提取，确保多模态元素的完整性和准确性。
 
 +   🧩 自适应内容分解机制：建立智能内容分离系统，自动识别并提取文档中的文本块、图像、表格、公式等异构元素，保持元素间的语义关联关系。
 
@@ -272,35 +223,35 @@ RAG-Anything 采用灵活的分层架构设计，实现多阶段多模态处理�
 
 +   🔍 视觉内容分析器：
 
-+   集成视觉模型进行图像分析和内容识别
+    +   集成视觉模型进行图像分析和内容识别
 
-+   基于视觉语义生成上下文感知的描述性标题
+    +   基于视觉语义生成上下文感知的描述性标题
 
-+   提取视觉元素间的空间关系和层次结构
+    +   提取视觉元素间的空间关系和层次结构
 
 +   📊 结构化数据解释器：
 
-+   对表格和结构化数据格式进行系统性解释
+    +   对表格和结构化数据格式进行系统性解释
 
-+   实现数据趋势分析的统计模式识别算法
+    +   实现数据趋势分析的统计模式识别算法
 
-+   识别多个表格数据集间的语义关系和依赖性
+    +   识别多个表格数据集间的语义关系和依赖性
 
 +   📐 数学表达式解析器：
 
-+   高精度解析复杂数学表达式和公式
+    +   高精度解析复杂数学表达式和公式
 
-+   提供原生LaTeX格式支持以实现与学术工作流的无缝集成
+    +   提供原生LaTeX格式支持以实现与学术工作流的无缝集成
 
-+   建立数学方程与领域特定知识库间的概念映射
+    +   建立数学方程与领域特定知识库间的概念映射
 
 +   🔧 可扩展模态处理器：
 
-+   为自定义和新兴内容类型提供可配置的处理框架
+    +   为自定义和新兴内容类型提供可配置的处理框架
 
-+   通过插件架构实现新模态处理器的动态集成
+    +   通过插件架构实现新模态处理器的动态集成
 
-+   支持专用场景下处理流水线的运行时配置
+    +   支持专用场景下处理流水线的运行时配置
 
 ### 多模态知识图谱索引
 
@@ -340,6 +291,8 @@ RAG-Anything 采用灵活的分层架构设计，实现多阶段多模态处理�
 
 #### 选项1：从PyPI安装（推荐）
 
+```
+
 # 基础安装
 
 pip install raganything
@@ -354,39 +307,49 @@ pip install 'raganything[text]'             # 文本文件处理 (TXT, MD)
 
 pip install 'raganything[image,text]'       # 多个功能组合
 
+```
+
 #### 选项2：从源码安装
+
+```
 
 git clone https://github.com/HKUDS/RAG-Anything.git
 
 cd RAG-Anything
 
-pip install -e .# 安装可选依赖
+pip install -e .
+
+# 安装可选依赖
 
 pip install -e '.[all]'
 
+```
+
 #### 可选依赖
 
-+   [image] - 启用BMP、TIFF、GIF、WebP图像格式处理（需要Pillow）
++   `[image]` - 启用BMP、TIFF、GIF、WebP图像格式处理（需要`Pillow`）
 
-+   [text] - 启用TXT和MD文件处理（需要ReportLab）
++   `[text]` - 启用TXT和MD文件处理（需要`ReportLab`）
 
-+   [all] - 包含所有Python可选依赖
++   `[all]` - 包含所有Python可选依赖
 
 > ⚠️ Office文档处理配置要求：
 
-+   Office文档 (.doc, .docx, .ppt, .pptx, .xls, .xlsx) 需要安装 LibreOffice
++   Office文档 (.doc, .docx, .ppt, .pptx, .xls, .xlsx) 需要安装 `LibreOffice`
 
 +   从[LibreOffice官网](https://www.libreoffice.org/download/download/)下载安装
 
 +   Windows：从官网下载安装包
 
-+   macOS：brew install --cask libreoffice
++   macOS：`brew install --cask libreoffice`
 
-+   Ubuntu/Debian：sudo apt-get install libreoffice
++   Ubuntu/Debian：`sudo apt-get install libreoffice`
 
-+   CentOS/RHEL：sudo yum install libreoffice
++   CentOS/RHEL：`sudo yum install libreoffice`
 
-检查MinerU安装：
+检查`MinerU`安装：
+
+```
 
 # 验证安装
 
@@ -396,1111 +359,867 @@ mineru --version
 
 python -c "from raganything import RAGAnything; rag = RAGAnything(); print('✅ MinerU安装正常' if rag.check_parser_installation() else '❌ MinerU安装有问题')"
 
-[模型在首次使用时自动下](https://github.com/opendatalab/MinerU/blob/master/README_zh-CN.md#22-%E6%A8%A1%E5%9E%8B%E6%BA%90%E9%85%8D%E7%BD%AE)载。手动下载参考MinerU模型源配置：
+```
+
+[模型在首次使用时自动下载](https://github.com/opendatalab/MinerU/blob/master/README_zh-CN.md#22-%E6%A8%A1%E5%9E%8B%E6%BA%90%E9%85%8D%E7%BD%AE)。手动下载参考`MinerU`模型源配置：
 
 ### 使用示例
 
 #### 端到端文档处理
 
-import asynciofrom raganything import RAGAnything, RAGAnythingConfigfrom lightrag.llm.openai import openai_complete_if_cache, openai_embedfrom lightrag.utils import EmbeddingFuncasync def main():
+```
 
-# 设置 API 配置api_key = "your-api-key"base_url = "your-base-url"  # 可选# 创建 RAGAnything 配置config = RAGAnythingConfig(
+import asyncio
+from raganything import RAGAnything, RAGAnythingConfig
+from lightrag.llm.openai import openai_complete_if_cache, openai_embed
+from lightrag.utils import EmbeddingFunc
 
-working_dir="./rag_storage",
+async def main():
 
-parser="mineru",  # 选择解析器：mineru 或 doclingparse_method="auto",  # 解析方法：auto, ocr 或 txtenable_image_processing=True,
-
-enable_table_processing=True,
-
-enable_equation_processing=True,
-
+# 设置 API 配置
+api_key = "your-api-key"
+base_url = "your-base-url"  # 可选
+# 创建 RAGAnything 配置
+config = RAGAnythingConfig(
+    working_dir="./rag_storage",
+    parser="mineru",  # 选择解析器：mineru 或 docling
+    parse_method="auto",  # 解析方法：auto, ocr 或 txt
+    enable_image_processing=True,
+    enable_table_processing=True,
+    enable_equation_processing=True,
 )
 
-# 定义 LLM 模型函数def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwargs):
+# 定义 LLM 模型函数
+def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwargs):
+    return openai_complete_if_cache(
+        "gpt-4o-mini",
+        prompt,
+        system_prompt=system_prompt,
+        history_messages=history_messages,
+        api_key=api_key,
+        base_url=base_url,
+        **kwargs,
+    )
 
-return openai_complete_if_cache(
-
-"gpt-4o-mini",
-
-prompt,
-
-system_prompt=system_prompt,
-
-history_messages=history_messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-# 定义视觉模型函数用于图像处理def vision_model_func(
-
-prompt, system_prompt=None, history_messages=[], image_data=None, messages=None, **kwargs
-
+# 定义视觉模型函数用于图像处理
+def vision_model_func(
+    prompt, system_prompt=None, history_messages=[], image_data=None, messages=None, **kwargs
 ):
+    # 如果提供了messages格式（用于多模态VLM增强查询），直接使用
+    if messages:
+        return openai_complete_if_cache(
+            "gpt-4o",
+            "",
+            system_prompt=None,
+            history_messages=[],
+            messages=messages,
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        )
+    # 传统单图片格式
+    elif image_data:
+        return openai_complete_if_cache(
+            "gpt-4o",
+            "",
+            system_prompt=None,
+            history_messages=[],
+            messages=[
+                {"role": "system", "content": system_prompt}
+                if system_prompt else None,
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{image_data}"
+                            },
+                        },
+                    ],
+                }
+                if image_data else {"role": "user", "content": prompt},
+            ],
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        )
+    # 纯文本格式
+    else:
+        return llm_model_func(prompt, system_prompt, history_messages, **kwargs)
 
-# 如果提供了messages格式（用于多模态VLM增强查询），直接使用if messages:
-
-return openai_complete_if_cache(
-
-"gpt-4o",
-
-"",
-
-system_prompt=None,
-
-history_messages=[],
-
-messages=messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
+# 定义嵌入函数
+embedding_func = EmbeddingFunc(
+    embedding_dim=3072,
+    max_token_size=8192,
+    func=lambda texts: openai_embed(
+        texts,
+        model="text-embedding-3-large",
+        api_key=api_key,
+        base_url=base_url,
+    ),
 )
 
-# 传统单图片格式elif image_data:
-
-return openai_complete_if_cache(
-
-"gpt-4o",
-
-"",
-
-system_prompt=None,
-
-history_messages=[],
-
-messages=[
-
-{"role": "system", "content": system_prompt}
-
-if system_promptelse None,
-
-{
-
-"role": "user",
-
-"content": [
-
-{"type": "text", "text": prompt},
-
-{
-
-"type": "image_url",
-
-"image_url": {
-
-"url": f"data:image/jpeg;base64,{image_data}"
-
-},
-
-},
-
-],
-
-}
-
-if image_dataelse {"role": "user", "content": prompt},
-
-],
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
+# 初始化 RAGAnything
+rag = RAGAnything(
+    config=config,
+    llm_model_func=llm_model_func,
+    vision_model_func=vision_model_func,
+    embedding_func=embedding_func,
 )
 
-# 纯文本格式else:
-
-return llm_model_func(prompt, system_prompt, history_messages, **kwargs)
-
-# 定义嵌入函数embedding_func = EmbeddingFunc(
-
-embedding_dim=3072,
-
-max_token_size=8192,
-
-func=lambda texts: openai_embed(
-
-texts,
-
-model="text-embedding-3-large",
-
-api_key=api_key,
-
-base_url=base_url,
-
-),
-
+# 处理文档
+await rag.process_document_complete(
+    file_path="path/to/your/document.pdf",
+    output_dir="./output",
+    parse_method="auto"
 )
 
-# 初始化 RAGAnythingrag = RAGAnything(
-
-config=config,
-
-llm_model_func=llm_model_func,
-
-vision_model_func=vision_model_func,
-
-embedding_func=embedding_func,
-
-)
-
-# 处理文档await rag.process_document_complete(
-
-file_path="path/to/your/document.pdf",
-
-output_dir="./output",
-
-parse_method="auto"
-
-)
-
-# 查询处理后的内容# 纯文本查询 - 基本知识库搜索text_result = await rag.aquery(
-
-"文档的主要内容是什么？",
-
-mode="hybrid"
-
+# 查询处理后的内容
+# 纯文本查询 - 基本知识库搜索
+text_result = await rag.aquery(
+    "文档的主要内容是什么？",
+    mode="hybrid"
 )
 
 print("文本查询结果:", text_result)
 
-# 多模态查询 - 包含具体多模态内容的查询multimodal_result = await rag.aquery_with_multimodal(
-
-"分析这个性能数据并解释与现有文档内容的关系",
-
-multimodal_content=[{
-
-"type": "table",
-
-"table_data": """系统,准确率,F1分数                            RAGAnything,95.2%,0.94                            基准方法,87.3%,0.85""",
-
-"table_caption": "性能对比结果"
-
-}],
-
-mode="hybrid"
-
+# 多模态查询 - 包含具体多模态内容的查询
+multimodal_result = await rag.aquery_with_multimodal(
+    "分析这个性能数据并解释与现有文档内容的关系",
+    multimodal_content=[{
+        "type": "table",
+        "table_data": """系统,准确率,F1分数                            RAGAnything,95.2%,0.94                            基准方法,87.3%,0.85""",
+        "table_caption": "性能对比结果"
+    }],
+    mode="hybrid"
 )
 
 print("多模态查询结果:", multimodal_result)
+```
 
-if **name** == "__main__":
 
-asyncio.run(main())
 
-#### 直接多模态内容处理
 
-import asynciofrom lightrag import LightRAGfrom lightrag.llm.openai import openai_complete_if_cache, openai_embedfrom lightrag.utils import EmbeddingFuncfrom raganything.modalprocessors import ImageModalProcessor, TableModalProcessorasync def process_multimodal_content():
+# RAGAnything 使用指南
 
-# 设置 API 配置api_key = "your-api-key"base_url = "your-base-url"  # 可选# 初始化 LightRAGrag = LightRAG(
+```python
+if name == "__main__":
+    asyncio.run(main())
+```
 
-working_dir="./rag_storage",
+## 直接多模态内容处理
 
-llm_model_func=lambda prompt, system_prompt=None, history_messages=[], **kwargs: openai_complete_if_cache(
+```python
+import asyncio
+from lightrag import LightRAG
+from lightrag.llm.openai import openai_complete_if_cache, openai_embed
+from lightrag.utils import EmbeddingFunc
+from raganything.modalprocessors import ImageModalProcessor, TableModalProcessor
 
-"gpt-4o-mini",
 
-prompt,
+async def process_multimodal_content():
+    # 设置 API 配置
+    api_key = "your-api-key"
+    base_url = "your-base-url"  # 可选
 
-system_prompt=system_prompt,
+    # 初始化 LightRAG
+    rag = LightRAG(
+        working_dir="./rag_storage",
+        llm_model_func=lambda prompt, system_prompt=None, history_messages=[], **kwargs: openai_complete_if_cache(
+            "gpt-4o-mini",
+            prompt,
+            system_prompt=system_prompt,
+            history_messages=history_messages,
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        ),
+        embedding_func=EmbeddingFunc(
+            embedding_dim=3072,
+            max_token_size=8192,
+            func=lambda texts: openai_embed(
+                texts,
+                model="text-embedding-3-large",
+                api_key=api_key,
+                base_url=base_url,
+            ),
+        ),
+    )
 
-history_messages=history_messages,
+    await rag.initialize_storages()
 
-api_key=api_key,
+    # 处理图像
+    image_processor = ImageModalProcessor(
+        lightrag=rag,
+        modal_caption_func=lambda prompt, system_prompt=None, history_messages=[], image_data=None, **kwargs: openai_complete_if_cache(
+            "gpt-4o",
+            "",
+            system_prompt=None,
+            history_messages=[],
+            messages=[
+                {"role": "system", "content": system_prompt} if system_prompt else None,
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_data}"}},
+                    ],
+                }
+                if image_data
+                else {"role": "user", "content": prompt},
+            ],
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        )
+        if image_data
+        else openai_complete_if_cache(
+            "gpt-4o-mini",
+            prompt,
+            system_prompt=system_prompt,
+            history_messages=history_messages,
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        ),
+    )
 
-base_url=base_url,
+    image_content = {
+        "img_path": "path/to/image.jpg",
+        "image_caption": ["图1：实验结果"],
+        "image_footnote": ["数据收集于2024年"],
+    }
 
-**kwargs,
+    description, entity_info = await image_processor.process_multimodal_content(
+        modal_content=image_content,
+        content_type="image",
+        file_path="research_paper.pdf",
+        entity_name="实验结果图表",
+    )
 
-),
+    # 处理表格
+    table_processor = TableModalProcessor(
+        lightrag=rag,
+        modal_caption_func=lambda prompt, system_prompt=None, history_messages=[], **kwargs: openai_complete_if_cache(
+            "gpt-4o-mini",
+            prompt,
+            system_prompt=system_prompt,
+            history_messages=history_messages,
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        ),
+    )
 
-embedding_func=EmbeddingFunc(
+    table_content = {
+        "table_body": """        | 方法 | 准确率 | F1分数 |        |------|--------|--------|        | RAGAnything | 95.2% | 0.94 |        | 基准方法 | 87.3% | 0.85 |        """,
+        "table_caption": ["性能对比"],
+        "table_footnote": ["测试数据集结果"],
+    }
 
-embedding_dim=3072,
+    description, entity_info = await table_processor.process_multimodal_content(
+        modal_content=table_content,
+        content_type="table",
+        file_path="research_paper.pdf",
+        entity_name="性能结果表格",
+    )
 
-max_token_size=8192,
 
-func=lambda texts: openai_embed(
+if name == "__main__":
+    asyncio.run(process_multimodal_content())
+```
 
-texts,
+## 批量处理
 
-model="text-embedding-3-large",
+### 处理多个文档
 
-api_key=api_key,
-
-base_url=base_url,
-
-),
-
+```python
+await rag.process_folder_complete(
+    folder_path="./documents",
+    output_dir="./output",
+    file_extensions=[".pdf", ".docx", ".pptx"],
+    recursive=True,
+    max_workers=4
 )
+```
 
-)
+## 自定义模态处理器
 
-await rag.initialize_storages()
+```python
+from raganything.modalprocessors import GenericModalProcessor
 
-# 处理图像image_processor = ImageModalProcessor(
 
-lightrag=rag,
+class CustomModalProcessor(GenericModalProcessor):
+    async def process_multimodal_content(self, modal_content, content_type, file_path, entity_name):
+        # 你的自定义处理逻辑
+        enhanced_description = await self.analyze_custom_content(modal_content)
+        entity_info = self.create_custom_entity(enhanced_description, entity_name)
+        return await self._create_entity_and_chunk(enhanced_description, entity_info, file_path)
+```
 
-modal_caption_func=lambda prompt, system_prompt=None, history_messages=[], image_data=None, **kwargs: openai_complete_if_cache(
+## 查询选项
 
-"gpt-4o",
+`RAG-Anything` 提供三种类型的查询方法：
 
-"",
+### 纯文本查询
 
-system_prompt=None,
+使用`LightRAG`直接进行知识库搜索：
 
-history_messages=[],
+#### 文本查询的不同模式
 
-messages=[
-
-{"role": "system", "content": system_prompt} if system_prompt else None,
-
-{"role": "user", "content": [
-
-{"type": "text", "text": prompt},
-
-{"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_data}"}}
-
-]} if image_data else {"role": "user", "content": prompt}
-
-],
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-) if image_data else openai_complete_if_cache(
-
-"gpt-4o-mini",
-
-prompt,
-
-system_prompt=system_prompt,
-
-history_messages=history_messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-)
-
-image_content = {
-
-"img_path": "path/to/image.jpg",
-
-"image_caption": ["图1：实验结果"],
-
-"image_footnote": ["数据收集于2024年"]
-
-}
-
-description, entity_info = await image_processor.process_multimodal_content(
-
-modal_content=image_content,
-
-content_type="image",
-
-file_path="research_paper.pdf",
-
-entity_name="实验结果图表"
-
-)
-
-# 处理表格table_processor = TableModalProcessor(
-
-lightrag=rag,
-
-modal_caption_func=lambda prompt, system_prompt=None, history_messages=[], **kwargs: openai_complete_if_cache(
-
-"gpt-4o-mini",
-
-prompt,
-
-system_prompt=system_prompt,
-
-history_messages=history_messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-)
-
-table_content = {
-
-"table_body": """        | 方法 | 准确率 | F1分数 |        |------|--------|--------|        | RAGAnything | 95.2% | 0.94 |        | 基准方法 | 87.3% | 0.85 |        """,
-
-"table_caption": ["性能对比"],
-
-"table_footnote": ["测试数据集结果"]
-
-}
-
-description, entity_info = await table_processor.process_multimodal_content(
-
-modal_content=table_content,
-
-content_type="table",
-
-file_path="research_paper.pdf",
-
-entity_name="性能结果表格"
-
-)
-
-if **name** == "__main__":
-
-asyncio.run(process_multimodal_content())
-
-#### 批量处理
-
-# 处理多个文档await rag.process_folder_complete(
-
-folder_path="./documents",
-
-output_dir="./output",
-
-file_extensions=[".pdf", ".docx", ".pptx"],
-
-recursive=True,
-
-max_workers=4
-
-)
-
-#### 自定义模态处理器
-
-from raganything.modalprocessors import GenericModalProcessorclass CustomModalProcessor(GenericModalProcessor):
-
-async def process_multimodal_content(self, modal_content, content_type, file_path, entity_name):
-
-# 你的自定义处理逻辑enhanced_description = await self.analyze_custom_content(modal_content)
-
-entity_info = self.create_custom_entity(enhanced_description, entity_name)
-
-return await self._create_entity_and_chunk(enhanced_description, entity_info, file_path)
-
-#### 查询选项
-
-RAG-Anything 提供三种类型的查询方法：
-
-纯文本查询 - 使用LightRAG直接进行知识库搜索：
-
-# 文本查询的不同模式text_result_hybrid = await rag.aquery("你的问题", mode="hybrid")
-
+```python
+text_result_hybrid = await rag.aquery("你的问题", mode="hybrid")
 text_result_local = await rag.aquery("你的问题", mode="local")
-
 text_result_global = await rag.aquery("你的问题", mode="global")
-
 text_result_naive = await rag.aquery("你的问题", mode="naive")
+```
 
-# 同步版本sync_text_result = rag.query("你的问题", mode="hybrid")
+#### 同步版本
 
-VLM增强查询 - 使用VLM自动分析检索上下文中的图像：
+```python
+sync_text_result = rag.query("你的问题", mode="hybrid")
+```
 
-# VLM增强查询（当提供vision_model_func时自动启用）vlm_result = await rag.aquery(
+### VLM增强查询
 
-"分析文档中的图表和数据",
+使用VLM自动分析检索上下文中的图像：
 
-mode="hybrid"# vlm_enhanced=True 当vision_model_func可用时自动设置
+#### VLM增强查询（当提供`vision_model_func`时自动启用）
 
+```python
+vlm_result = await rag.aquery(
+    "分析文档中的图表和数据",
+    mode="hybrid"
+    # vlm_enhanced=True 当vision_model_func可用时自动设置
 )
+```
 
-# 手动控制VLM增强vlm_enabled = await rag.aquery(
+#### 手动控制VLM增强
 
-"这个文档中的图片显示了什么内容？",
-
-mode="hybrid",
-
-vlm_enhanced=True  # 强制启用VLM增强
-
+```python
+vlm_enabled = await rag.aquery(
+    "这个文档中的图片显示了什么内容？",
+    mode="hybrid",
+    vlm_enhanced=True  # 强制启用VLM增强
 )
 
 vlm_disabled = await rag.aquery(
+    "这个文档中的图片显示了什么内容？",
+    mode="hybrid",
+    vlm_enhanced=False  # 强制禁用VLM增强
+)
+```
 
-"这个文档中的图片显示了什么内容？",
+当文档包含图片时，VLM可以直接查看和分析图片。系统将自动：
 
-mode="hybrid",
+1. 检索包含图片路径的相关上下文
+2. 加载图片并编码为base64格式
+3. 将文本上下文和图片一起发送给VLM进行综合分析
 
-vlm_enhanced=False  # 强制禁用VLM增强
+### 多模态查询
 
+包含特定多模态内容分析的增强查询：
+
+#### 包含表格数据的查询
+
+```python
+table_result = await rag.aquery_with_multimodal(
+    "比较这些性能指标与文档内容",
+    multimodal_content=[{
+        "type": "table",
+        "table_data": """方法,准确率,速度                        LightRAG,95.2%,120ms                        传统方法,87.3%,180ms""",
+        "table_caption": "性能对比"
+    }],
+    mode="hybrid"
+)
+```
+
+#### 包含公式内容的查询
+
+```python
+equation_result = await rag.aquery_with_multimodal(
+    "解释这个公式及其与文档内容的相关性",
+    multimodal_content=[{
+        "type": "equation",
+        "latex": "P(d|q) = \\frac{P(q|d) \\cdot P(d)}{P(q)}",
+        "equation_caption": "文档相关性概率"
+    }],
+    mode="hybrid"
+)
+```
+
+## 加载已存在的LightRAG实例
+
+```python
+import asyncio
+from raganything import RAGAnything
+from lightrag import LightRAG
+from lightrag.llm.openai import openai_complete_if_cache, openai_embed
+from lightrag.utils import EmbeddingFunc
+import os
+
+
+async def load_existing_lightrag():
+    # 设置 API 配置
+    api_key = "your-api-key"
+    base_url = "your-base-url"  # 可选
+
+    # 首先，创建或加载已存在的 LightRAG 实例
+    lightrag_working_dir = "./existing_lightrag_storage"
+
+    # 检查是否存在之前的 LightRAG 实例
+    if os.path.exists(lightrag_working_dir) and os.listdir(lightrag_working_dir):
+        print("✅ 发现已存在的 LightRAG 实例，正在加载...")
+    else:
+        print("❌ 未找到已存在的 LightRAG 实例，将创建新实例")
+
+    # 使用您的配置创建/加载 LightRAG 实例
+    lightrag_instance = LightRAG(
+        working_dir=lightrag_working_dir,
+        llm_model_func=lambda prompt, system_prompt=None, history_messages=[], **kwargs: openai_complete_if_cache(
+            "gpt-4o-mini",
+            prompt,
+            system_prompt=system_prompt,
+            history_messages=history_messages,
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        ),
+        embedding_func=EmbeddingFunc(
+            embedding_dim=3072,
+            max_token_size=8192,
+            func=lambda texts: openai_embed(
+                texts,
+                model="text-embedding-3-large",
+                api_key=api_key,
+                base_url=base_url,
+            ),
+        ),
+    )
+
+    # 初始化存储（如果有现有数据，这将加载它们）
+    await lightrag_instance.initialize_storages()
+
+    await initialize_pipeline_status()
+
+    # 定义视觉模型函数用于图像处理
+    def vision_model_func(
+        prompt,
+        system_prompt=None,
+        history_messages=[],
+        image_data=None,
+        messages=None,
+        **kwargs,
+    ):
+        # 如果提供了messages格式（用于多模态VLM增强查询），直接使用
+        if messages:
+            return openai_complete_if_cache(
+                "gpt-4o",
+                "",
+                system_prompt=None,
+                history_messages=[],
+                messages=messages,
+                api_key=api_key,
+                base_url=base_url,
+                **kwargs,
+            )
+        # 传统单图片格式
+        elif image_data:
+            return openai_complete_if_cache(
+                "gpt-4o",
+                "",
+                system_prompt=None,
+                history_messages=[],
+                messages=[
+                    {"role": "system", "content": system_prompt} if system_prompt else None,
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": prompt},
+                            {
+                                "type": "image_url",
+                                "image_url": {
+                                    "url": f"data:image/jpeg;base64,{image_data}"
+                                },
+                            },
+                        ],
+                    }
+                    if image_data
+                    else {"role": "user", "content": prompt},
+                ],
+                api_key=api_key,
+                base_url=base_url,
+                **kwargs,
+            )
+        # 纯文本格式
+        else:
+            return lightrag_instance.llm_model_func(prompt, system_prompt, history_messages, **kwargs)
+
+    # 现在使用已存在的 LightRAG 实例初始化 RAGAnything
+    rag = RAGAnything(
+        lightrag=lightrag_instance,  # 传入已存在的 LightRAG 实例
+        vision_model_func=vision_model_func,
+        # 注意：working_dir、llm_model_func、embedding_func 等都从 lightrag_instance 继承
+    )
+
+    # 查询已存在的知识库
+    result = await rag.aquery(
+        "这个 LightRAG 实例中处理了哪些数据？",
+        mode="hybrid"
+    )
+
+    print("查询结果:", result)
+
+    # 向已存在的 LightRAG 实例添加新的多模态文档
+    await rag.process_document_complete(
+        file_path="path/to/new/multimodal_document.pdf",
+        output_dir="./output"
+    )
+
+
+if name == "__main__":
+    asyncio.run(load_existing_lightrag())
+```
+
+## 直接插入内容列表
+
+当您已经有预解析的内容列表（例如，来自外部解析器或之前的处理结果）时，可以直接插入到`RAGAnything`中而无需文档解析：
+
+```python
+import asyncio
+from raganything import RAGAnything, RAGAnythingConfig
+from lightrag.llm.openai import openai_complete_if_cache, openai_embed
+from lightrag.utils import EmbeddingFunc
+
+
+async def insert_content_list_example():
+```
+
+
+
+```python
+# 设置 API 配置
+api_key = "your-api-key"
+base_url = "your-base-url"  # 可选
+
+# 创建 RAGAnything 配置
+config = RAGAnythingConfig(
+    working_dir="./rag_storage",
+    enable_image_processing=True,
+    enable_table_processing=True,
+    enable_equation_processing=True,
 )
 
-# 当文档包含图片时，VLM可以直接查看和分析图片# 系统将自动：# 1. 检索包含图片路径的相关上下文# 2. 加载图片并编码为base64格式# 3. 将文本上下文和图片一起发送给VLM进行综合分析
-
-多模态查询 - 包含特定多模态内容分析的增强查询：
-
-# 包含表格数据的查询table_result = await rag.aquery_with_multimodal(
-
-"比较这些性能指标与文档内容",
-
-multimodal_content=[{
-
-"type": "table",
-
-"table_data": """方法,准确率,速度                        LightRAG,95.2%,120ms                        传统方法,87.3%,180ms""",
-
-"table_caption": "性能对比"
-
-}],
-
-mode="hybrid"
-
-)
-
-# 包含公式内容的查询equation_result = await rag.aquery_with_multimodal(
-
-"解释这个公式及其与文档内容的相关性",
-
-multimodal_content=[{
-
-"type": "equation",
-
-"latex": "P(d|q) = \\frac{P(q|d) \\cdot P(d)}{P(q)}",
-
-"equation_caption": "文档相关性概率"
-
-}],
-
-mode="hybrid"
-
-)
-
-#### 加载已存在的LightRAG实例
-
-import asynciofrom raganything import RAGAnythingfrom lightrag import LightRAGfrom lightrag.llm.openai import openai_complete_if_cache, openai_embedfrom lightrag.utils import EmbeddingFuncimport osasync def load_existing_lightrag():
-
-# 设置 API 配置api_key = "your-api-key"base_url = "your-base-url"  # 可选# 首先，创建或加载已存在的 LightRAG 实例lightrag_working_dir = "./existing_lightrag_storage"# 检查是否存在之前的 LightRAG 实例if os.path.exists(lightrag_working_dir) and os.listdir(lightrag_working_dir):
-
-print("✅ 发现已存在的 LightRAG 实例，正在加载...")
-
-else:
-
-print("❌ 未找到已存在的 LightRAG 实例，将创建新实例")
-
-# 使用您的配置创建/加载 LightRAG 实例lightrag_instance = LightRAG(
-
-working_dir=lightrag_working_dir,
-
-llm_model_func=lambda prompt, system_prompt=None, history_messages=[], **kwargs: openai_complete_if_cache(
-
-"gpt-4o-mini",
-
-prompt,
-
-system_prompt=system_prompt,
-
-history_messages=history_messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-),
-
-embedding_func=EmbeddingFunc(
-
-embedding_dim=3072,
-
-max_token_size=8192,
-
-func=lambda texts: openai_embed(
-
-texts,
-
-model="text-embedding-3-large",
-
-api_key=api_key,
-
-base_url=base_url,
-
-),
-
-)
-
-)
-
-# 初始化存储（如果有现有数据，这将加载它们）await lightrag_instance.initialize_storages()
-
-await initialize_pipeline_status()
-
-# 定义视觉模型函数用于图像处理def vision_model_func(
-
-prompt, system_prompt=None, history_messages=[], image_data=None, messages=None, **kwargs
-
-):
-
-# 如果提供了messages格式（用于多模态VLM增强查询），直接使用if messages:
-
-return openai_complete_if_cache(
-
-"gpt-4o",
-
-"",
-
-system_prompt=None,
-
-history_messages=[],
-
-messages=messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-# 传统单图片格式elif image_data:
-
-return openai_complete_if_cache(
-
-"gpt-4o",
-
-"",
-
-system_prompt=None,
-
-history_messages=[],
-
-messages=[
-
-{"role": "system", "content": system_prompt}
-
-if system_promptelse None,
-
-{
-
-"role": "user",
-
-"content": [
-
-{"type": "text", "text": prompt},
-
-{
-
-"type": "image_url",
-
-"image_url": {
-
-"url": f"data:image/jpeg;base64,{image_data}"
-
-},
-
-},
-
-],
-
-}
-
-if image_dataelse {"role": "user", "content": prompt},
-
-],
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-# 纯文本格式else:
-
-return lightrag_instance.llm_model_func(prompt, system_prompt, history_messages, **kwargs)
-
-# 现在使用已存在的 LightRAG 实例初始化 RAGAnythingrag = RAGAnything(
-
-lightrag=lightrag_instance,  # 传入已存在的 LightRAG 实例vision_model_func=vision_model_func,
-
-# 注意：working_dir、llm_model_func、embedding_func 等都从 lightrag_instance 继承
-
-)
-
-# 查询已存在的知识库result = await rag.aquery(
-
-"这个 LightRAG 实例中处理了哪些数据？",
-
-mode="hybrid"
-
-)
-
-print("查询结果:", result)
-
-# 向已存在的 LightRAG 实例添加新的多模态文档await rag.process_document_complete(
-
-file_path="path/to/new/multimodal_document.pdf",
-
-output_dir="./output"
-
-)
-
-if **name** == "__main__":
-
-asyncio.run(load_existing_lightrag())
-
-#### 直接插入内容列表
-
-当您已经有预解析的内容列表（例如，来自外部解析器或之前的处理结果）时，可以直接插入到 RAGAnything 中而无需文档解析：
-
-import asynciofrom raganything import RAGAnything, RAGAnythingConfigfrom lightrag.llm.openai import openai_complete_if_cache, openai_embedfrom lightrag.utils import EmbeddingFuncasync def insert_content_list_example():
-
-# 设置 API 配置api_key = "your-api-key"base_url = "your-base-url"  # 可选# 创建 RAGAnything 配置config = RAGAnythingConfig(
-
-working_dir="./rag_storage",
-
-enable_image_processing=True,
-
-enable_table_processing=True,
-
-enable_equation_processing=True,
-
-)
-
-# 定义模型函数def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwargs):
-
-return openai_complete_if_cache(
-
-"gpt-4o-mini",
-
-prompt,
-
-system_prompt=system_prompt,
-
-history_messages=history_messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
+# 定义模型函数
+def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwargs):
+    return openai_complete_if_cache(
+        "gpt-4o-mini",
+        prompt,
+        system_prompt=system_prompt,
+        history_messages=history_messages,
+        api_key=api_key,
+        base_url=base_url,
+        **kwargs,
+    )
 
 def vision_model_func(prompt, system_prompt=None, history_messages=[], image_data=None, messages=None, **kwargs):
-
-# 如果提供了messages格式（用于多模态VLM增强查询），直接使用if messages:
-
-return openai_complete_if_cache(
-
-"gpt-4o",
-
-"",
-
-system_prompt=None,
-
-history_messages=[],
-
-messages=messages,
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-# 传统单图片格式elif image_data:
-
-return openai_complete_if_cache(
-
-"gpt-4o",
-
-"",
-
-system_prompt=None,
-
-history_messages=[],
-
-messages=[
-
-{"role": "system", "content": system_prompt} if system_prompt else None,
-
-{
-
-"role": "user",
-
-"content": [
-
-{"type": "text", "text": prompt},
-
-{"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_data}"}}
-
-],
-
-} if image_data else {"role": "user", "content": prompt},
-
-],
-
-api_key=api_key,
-
-base_url=base_url,
-
-**kwargs,
-
-)
-
-# 纯文本格式else:
-
-return llm_model_func(prompt, system_prompt, history_messages, **kwargs)
+    # 如果提供了messages格式（用于多模态VLM增强查询），直接使用
+    if messages:
+        return openai_complete_if_cache(
+            "gpt-4o",
+            "",
+            system_prompt=None,
+            history_messages=[],
+            messages=messages,
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        )
+    # 传统单图片格式
+    elif image_data:
+        return openai_complete_if_cache(
+            "gpt-4o",
+            "",
+            system_prompt=None,
+            history_messages=[],
+            messages=[
+                {"role": "system", "content": system_prompt} if system_prompt else None,
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_data}"}}
+                    ],
+                } if image_data else {"role": "user", "content": prompt},
+            ],
+            api_key=api_key,
+            base_url=base_url,
+            **kwargs,
+        )
+    # 纯文本格式
+    else:
+        return llm_model_func(prompt, system_prompt, history_messages, **kwargs)
 
 embedding_func = EmbeddingFunc(
-
-embedding_dim=3072,
-
-max_token_size=8192,
-
-func=lambda texts: openai_embed(
-
-texts,
-
-model="text-embedding-3-large",
-
-api_key=api_key,
-
-base_url=base_url,
-
-),
-
+    embedding_dim=3072,
+    max_token_size=8192,
+    func=lambda texts: openai_embed(
+        texts,
+        model="text-embedding-3-large",
+        api_key=api_key,
+        base_url=base_url,
+    ),
 )
 
-# 初始化 RAGAnythingrag = RAGAnything(
-
-config=config,
-
-llm_model_func=llm_model_func,
-
-vision_model_func=vision_model_func,
-
-embedding_func=embedding_func,
-
+# 初始化 RAGAnything
+rag = RAGAnything(
+    config=config,
+    llm_model_func=llm_model_func,
+    vision_model_func=vision_model_func,
+    embedding_func=embedding_func,
 )
 
-# 示例：来自外部源的预解析内容列表content_list = [
-
-{
-
-"type": "text",
-
-"text": "这是我们研究论文的引言部分。",
-
-"page_idx": 0  # 此内容出现的页码
-
-},
-
-{
-
-"type": "image",
-
-"img_path": "/absolute/path/to/figure1.jpg",  # 重要：使用绝对路径"image_caption": ["图1：系统架构"],
-
-"image_footnote": ["来源：作者原创设计"],
-
-"page_idx": 1  # 此图像出现的页码
-
-},
-
-{
-
-"type": "table",
-
-"table_body": "| 方法 | 准确率 | F1分数 |\n|------|--------|--------|\n| 我们的方法 | 95.2% | 0.94 |\n| 基准方法 | 87.3% | 0.85 |",
-
-"table_caption": ["表1：性能对比"],
-
-"table_footnote": ["测试数据集结果"],
-
-"page_idx": 2  # 此表格出现的页码
-
-},
-
-{
-
-"type": "equation",
-
-"latex": "P(d|q) = \\frac{P(q|d) \\cdot P(d)}{P(q)}",
-
-"text": "文档相关性概率公式",
-
-"page_idx": 3  # 此公式出现的页码
-
-},
-
-{
-
-"type": "text",
-
-"text": "总之，我们的方法在所有指标上都表现出优越的性能。",
-
-"page_idx": 4  # 此内容出现的页码
-
-}
-
+# 示例：来自外部源的预解析内容列表
+content_list = [
+    {
+        "type": "text",
+        "text": "这是我们研究论文的引言部分。",
+        "page_idx": 0  # 此内容出现的页码
+    },
+    {
+        "type": "image",
+        "img_path": "/absolute/path/to/figure1.jpg",  # 重要：使用绝对路径
+        "image_caption": ["图1：系统架构"],
+        "image_footnote": ["来源：作者原创设计"],
+        "page_idx": 1  # 此图像出现的页码
+    },
+    {
+        "type": "table",
+        "table_body": "| 方法 | 准确率 | F1分数 |\n|------|--------|--------|\n| 我们的方法 | 95.2% | 0.94 |\n| 基准方法 | 87.3% | 0.85 |",
+        "table_caption": ["表1：性能对比"],
+        "table_footnote": ["测试数据集结果"],
+        "page_idx": 2  # 此表格出现的页码
+    },
+    {
+        "type": "equation",
+        "latex": "P(d|q) = \\frac{P(q|d) \\cdot P(d)}{P(q)}",
+        "text": "文档相关性概率公式",
+        "page_idx": 3  # 此公式出现的页码
+    },
+    {
+        "type": "text",
+        "text": "总之，我们的方法在所有指标上都表现出优越的性能。",
+        "page_idx": 4  # 此内容出现的页码
+    }
 ]
 
-# 直接插入内容列表await rag.insert_content_list(
-
-content_list=content_list,
-
-file_path="research_paper.pdf",  # 用于引用的参考文件名split_by_character=None,         # 可选的文本分割split_by_character_only=False,   # 可选的文本分割模式doc_id=None,                     # 可选的自定义文档ID（如果未提供将自动生成）display_stats=True               # 显示内容统计信息
-
+# 直接插入内容列表
+await rag.insert_content_list(
+    content_list=content_list,
+    file_path="research_paper.pdf",  # 用于引用的参考文件名
+    split_by_character=None,         # 可选的文本分割
+    split_by_character_only=False,   # 可选的文本分割模式
+    doc_id=None,                     # 可选的自定义文档ID（如果未提供将自动生成）
+    display_stats=True               # 显示内容统计信息
 )
 
-# 查询插入的内容result = await rag.aquery(
-
-"研究中提到的主要发现和性能指标是什么？",
-
-mode="hybrid"
-
+# 查询插入的内容
+result = await rag.aquery(
+    "研究中提到的主要发现和性能指标是什么？",
+    mode="hybrid"
 )
 
 print("查询结果:", result)
 
-# 您也可以使用不同的文档ID插入多个内容列表another_content_list = [
-
-{
-
-"type": "text",
-
-"text": "这是来自另一个文档的内容。",
-
-"page_idx": 0  # 此内容出现的页码
-
-},
-
-{
-
-"type": "table",
-
-"table_body": "| 特性 | 值 |\n|------|----|\n| 速度 | 快速 |\n| 准确性 | 高 |",
-
-"table_caption": ["特性对比"],
-
-"page_idx": 1  # 此表格出现的页码
-
-}
-
+# 您也可以使用不同的文档ID插入多个内容列表
+another_content_list = [
+    {
+        "type": "text",
+        "text": "这是来自另一个文档的内容。",
+        "page_idx": 0  # 此内容出现的页码
+    },
+    {
+        "type": "table",
+        "table_body": "| 特性 | 值 |\n|------|----|\n| 速度 | 快速 |\n| 准确性 | 高 |",
+        "table_caption": ["特性对比"],
+        "page_idx": 1  # 此表格出现的页码
+    }
 ]
 
 await rag.insert_content_list(
-
-content_list=another_content_list,
-
-file_path="another_document.pdf",
-
-doc_id="custom-doc-id-123"  # 自定义文档ID
-
+    content_list=another_content_list,
+    file_path="another_document.pdf",
+    doc_id="custom-doc-id-123"  # 自定义文档ID
 )
 
-if **name** == "__main__":
+if __name__ == "__main__":
+    asyncio.run(insert_content_list_example())
+```
 
-asyncio.run(insert_content_list_example())
+## 内容列表格式
 
-内容列表格式：
+`content_list` 应遵循标准格式，每个项目都是包含以下内容的字典：
 
-content_list 应遵循标准格式，每个项目都是包含以下内容的字典：
++   文本内容: `{"type": "text", "text": "内容文本", "page_idx": 0}`
++   图像内容: `{"type": "image", "img_path": "/absolute/path/to/image.jpg", "image_caption": ["标题"], "image_footnote": ["注释"], "page_idx": 1}`
++   表格内容: `{"type": "table", "table_body": "markdown表格", "table_caption": ["标题"], "table_footnote": ["注释"], "page_idx": 2}`
++   公式内容: `{"type": "equation", "latex": "LaTeX公式", "text": "描述", "page_idx": 3}`
++   通用内容: `{"type": "custom_type", "content": "任何内容", "page_idx": 4}`
 
-+   文本内容: {"type": "text", "text": "内容文本", "page_idx": 0}
+## 重要说明
 
-+   图像内容: {"type": "image", "img_path": "/absolute/path/to/image.jpg", "image_caption": ["标题"], "image_footnote": ["注释"], "page_idx": 1}
-
-+   表格内容: {"type": "table", "table_body": "markdown表格", "table_caption": ["标题"], "table_footnote": ["注释"], "page_idx": 2}
-
-+   公式内容: {"type": "equation", "latex": "LaTeX公式", "text": "描述", "page_idx": 3}
-
-+   通用内容: {"type": "custom_type", "content": "任何内容", "page_idx": 4}
-
-重要说明：
-
-+   img_path: 必须是图像文件的绝对路径（例如：/home/user/images/chart.jpg 或 C:\Users\user\images\chart.jpg）
-
-+   page_idx: 表示内容在原始文档中出现的页码（从0开始的索引）
-
++   `img_path`: 必须是图像文件的绝对路径（例如：`/home/user/images/chart.jpg` 或 `C:\Users\user\images\chart.jpg`）
++   `page_idx`: 表示内容在原始文档中出现的页码（从0开始的索引）
 +   内容顺序: 项目按照在列表中出现的顺序进行处理
+
+## 适用场景
 
 此方法在以下情况下特别有用：
 
 +   您有来自外部解析器的内容（非MinerU/Docling）
-
 +   您想要处理程序化生成的内容
-
 +   您需要将来自多个源的内容插入到单个知识库中
-
 +   您有想要重用的缓存解析结果
 
 ---
 
 ## 🛠️ 示例
 
-实际应用演示
+### 实际应用演示
 
-examples/ 目录包含完整的使用示例：
+`examples/` 目录包含完整的使用示例：
 
-+   raganything_example.py：基于MinerU的端到端文档处理
++   `raganything_example.py`：基于MinerU的端到端文档处理
++   `modalprocessors_example.py`：直接多模态内容处理
++   `office_document_test.py`：Office文档解析测试（无需API密钥）
++   `image_format_test.py`：图像格式解析测试（无需API密钥）
++   `text_format_test.py`：文本格式解析测试（无需API密钥）
 
-+   modalprocessors_example.py：直接多模态内容处理
+### 运行示例
 
-+   office_document_test.py：Office文档解析测试（无需API密钥）
+`python examples/raganything_example.py path/to/document.pdf --api-key YOUR_API_KEY --parser mineru`  # 端到端处理（包含解析器选择）
 
-+   image_format_test.py：图像格式解析测试（无需API密钥）
+`python examples/modalprocessors_example.py --api-key YOUR_API_KEY`  # 直接模态处理
 
-+   text_format_test.py：文本格式解析测试（无需API密钥）
+`python examples/office_document_test.py --file path/to/document.docx`  # Office文档解析测试（仅MinerU功能）
 
-运行示例：
+`python examples/image_format_test.py --file path/to/image.bmp`  # 图像格式解析测试（仅MinerU功能）
 
-# 端到端处理（包含解析器选择）
+`python examples/text_format_test.py --file path/to/document.md`  # 文本格式解析测试（仅MinerU功能）
 
-python examples/raganything_example.py path/to/document.pdf --api-key YOUR_API_KEY --parser mineru
+`python examples/office_document_test.py --check-libreoffice --file dummy`  # 检查LibreOffice安装
 
-# 直接模态处理
+`python examples/image_format_test.py --check-pillow --file dummy`  # 检查PIL/Pillow安装
 
-python examples/modalprocessors_example.py --api-key YOUR_API_KEY
+`python examples/text_format_test.py --check-reportlab --file dummy`  # 检查ReportLab安装
 
-# Office文档解析测试（仅MinerU功能）
-
-python examples/office_document_test.py --file path/to/document.docx
-
-# 图像格式解析测试（仅MinerU功能）
-
-python examples/image_format_test.py --file path/to/image.bmp
-
-# 文本格式解析测试（仅MinerU功能）
-
-python examples/text_format_test.py --file path/to/document.md
-
-# 检查LibreOffice安装
-
-python examples/office_document_test.py --check-libreoffice --file dummy
-
-# 检查PIL/Pillow安装
-
-python examples/image_format_test.py --check-pillow --file dummy
-
-# 检查ReportLab安装
-
-python examples/text_format_test.py --check-reportlab --file dummy
-
-> 注意：API密钥仅在完整RAG处理和LLM集成时需要。解析测试文件（office_document_test.py、image_format_test.py 和 text_format_test.py）仅测试MinerU功能，无需API密钥。
+> 注意：API密钥仅在完整RAG处理和LLM集成时需要。解析测试文件（`office_document_test.py`、`image_format_test.py` 和 `text_format_test.py`）仅测试MinerU功能，无需API密钥。
 
 ---
 
 ## 🔧 配置
 
-系统优化参数
+### 系统优化参数
 
-### 环境变量
+#### 环境变量
 
-创建 .env 文件（参考 .env.example）：
+创建 `.env` 文件（参考 `.env.example`）：
 
+```
 OPENAI_API_KEY=your_openai_api_key
-
 OPENAI_BASE_URL=your_base_url  # 可选
-
 OUTPUT_DIR=./output             # 解析文档的默认输出目录
-
 PARSER=mineru                   # 解析器选择：mineru 或 docling
-
 PARSE_METHOD=auto              # 解析方法：auto, ocr 或 txt
+```
 
-注意： 为了向后兼容，旧的环境变量名称仍然有效：
+注意：为了向后兼容，旧的环境变量名称仍然有效：
 
-+   MINERU_PARSE_METHOD 已弃用，请使用 PARSE_METHOD
++   `MINERU_PARSE_METHOD` 已弃用，请使用 `PARSE_METHOD`
 
-### 解析器配置
+#### 解析器配置
 
 RAGAnything 现在支持多种解析器，每种解析器都有其特定的优势：
 
-#### MinerU 解析器
+##### MinerU 解析器
 
 +   支持PDF、图像、Office文档等多种格式
-
 +   强大的OCR和表格提取能力
-
 +   支持GPU加速
 
-#### Docling 解析器
+##### Docling 解析器
 
 +   专门优化Office文档和HTML文件的解析
-
 +   更好的文档结构保持
-
 +   原生支持多种Office格式
 
-### MinerU配置
+#### MinerU配置
 
-# MinerU 2.0使用命令行参数而不是配置文件# 查看可用选项：
+MinerU 2.0使用命令行参数而不是配置文件。查看可用选项：
 
+```bash
 mineru --help
+```
 
-# 常用配置：
+常用配置：
 
+```bash
 mineru -p input.pdf -o output_dir -m auto    # 自动解析模式
-
 mineru -p input.pdf -o output_dir -m ocr     # OCR重点解析
-
 mineru -p input.pdf -o output_dir -b pipeline --device cuda  # GPU加速
+```
 
 你也可以通过RAGAnything参数配置解析：
 
-# 基础解析配置和解析器选择await rag.process_document_complete(
+# 基础解析配置和解析器选择
 
-file_path="document.pdf",
-
-output_dir="./output/",
-
-parse_method="auto",          # 或 "ocr", "txt"parser="mineru"               # 可选："mineru" 或 "docling"
-
+```python
+await rag.process_document_complete(
+    file_path="document.pdf",
+    output_dir="./output/",
+    parse_method="auto",          # 或 "ocr", "txt"
+    parser="mineru"               # 可选："mineru" 或 "docling"
 )
+```
 
-# 高级解析配置（包含特殊参数）await rag.process_document_complete(
+# 高级解析配置（包含特殊参数）
 
-file_path="document.pdf",
-
-output_dir="./output/",
-
-parse_method="auto",          # 解析方法："auto", "ocr", "txt"parser="mineru",              # 解析器选择："mineru" 或 "docling"# MinerU特殊参数 - 支持的所有kwargs：lang="ch",                   # 文档语言优化（如："ch", "en", "ja"）device="cuda:0",             # 推理设备："cpu", "cuda", "cuda:0", "npu", "mps"start_page=0,                # 起始页码（0为基准，适用于PDF）end_page=10,                 # 结束页码（0为基准，适用于PDF）formula=True,                # 启用公式解析table=True,                  # 启用表格解析backend="pipeline",          # 解析后端：pipeline|vlm-transformers|vlm-sglang-engine|vlm-sglang-clientsource="huggingface",        # 模型源："huggingface", "modelscope", "local"# vlm_url="http://127.0.0.1:3000" # 当backend=vlm-sglang-client时，需指定服务地址# RAGAnything标准参数display_stats=True,          # 显示内容统计信息split_by_character=None,     # 可选的文本分割字符doc_id=None                  # 可选的文档ID
-
+```python
+await rag.process_document_complete(
+    file_path="document.pdf",
+    output_dir="./output/",
+    parse_method="auto",          # 解析方法："auto", "ocr", "txt"
+    parser="mineru",              # 解析器选择："mineru" 或 "docling"
+    # MinerU特殊参数 - 支持的所有kwargs：
+    lang="ch",                   # 文档语言优化（如："ch", "en", "ja"）
+    device="cuda:0",             # 推理设备："cpu", "cuda", "cuda:0", "npu", "mps"
+    start_page=0,                # 起始页码（0为基准，适用于PDF）
+    end_page=10,                 # 结束页码（0为基准，适用于PDF）
+    formula=True,                # 启用公式解析
+    table=True,                  # 启用表格解析
+    backend="pipeline",          # 解析后端：pipeline|vlm-transformers|vlm-sglang-engine|vlm-sglang-client
+    source="huggingface",        # 模型源："huggingface", "modelscope", "local"
+    # vlm_url="http://127.0.0.1:3000" # 当backend=vlm-sglang-client时，需指定服务地址
+    # RAGAnything标准参数
+    display_stats=True,          # 显示内容统计信息
+    split_by_character=None,     # 可选的文本分割字符
+    doc_id=None                  # 可选的文档ID
 )
+```
 
-> 注意：MinerU 2.0不再使用 magic-pdf.json 配置文件。所有设置现在通过命令行参数或函数参数传递。RAG-Anything现在支持多种文档解析器 - 你可以根据需要在MinerU和Docling之间选择。
+> 注意：MinerU 2.0不再使用 `magic-pdf.json` 配置文件。所有设置现在通过命令行参数或函数参数传递。RAG-Anything现在支持多种文档解析器 - 你可以根据需要在MinerU和Docling之间选择。
 
-### 处理要求
+#### 处理要求
 
 不同内容类型需要特定的可选依赖：
 
-+   O[ffice文档 (.d](https://www.libreoffice.org/download/download/)oc, .docx, .ppt, .pptx, .xls, .xlsx): 安装并配置 LibreOffice
++   Office文档 (.doc, .docx, .ppt, .pptx, .xls, .xlsx): 安装并配置 LibreOffice
++   扩展图像格式 (.bmp, .tiff, .gif, .webp): 使用 `pip install raganything[image]` 安装
++   文本文件 (.txt, .md): 使用 `pip install raganything[text]` 安装
 
-+   扩展图像格式 (.bmp, .tiff, .gif, .webp): 使用 pip install raganything[image] 安装
-
-+   文本文件 (.txt, .md): 使用 pip install raganything[text] 安装
-
-> 📋 快速安装: 使用 pip install raganything[all] 启用所有格式支持（仅Python依赖 - LibreOffice仍需单独安装）
+> 📋 快速安装: 使用 `pip install raganything[all]` 启用所有格式支持（仅Python依赖 - LibreOffice仍需单独安装）
 
 ---
 
@@ -1509,22 +1228,18 @@ parse_method="auto",          # 解析方法："auto", "ocr", "txt"parser="miner
 ### 文档格式
 
 +   PDF - 研究论文、报告、演示文稿
-
 +   Office文档 - DOC、DOCX、PPT、PPTX、XLS、XLSX
-
 +   图像 - JPG、PNG、BMP、TIFF、GIF、WebP
-
 +   文本文件 - TXT、MD
 
 ### 多模态元素
 
-+   图像 - 照片、图表、示意图、截图
 
-+   表格 - 数据表、对比图、统计摘要
 
-+   公式 - LaTeX格式的数学公式
-
-+   通用内容 - 通过可扩展处理器支持的自定义内容类型
++ 图像 - 照片、图表、示意图、截图
++ 表格 - 数据表、对比图、统计摘要
++ 公式 - LaTeX 格式的数学公式
++ 通用内容 - 通过可扩展处理器支持的自定义内容类型
 
 格式特定依赖的安装说明请参见[配置](https://github.com/HKUDS/RAG-Anything/blob/main/README_zh.md#-%E9%85%8D%E7%BD%AE)部分。
 
@@ -1536,6 +1251,7 @@ parse_method="auto",          # 解析方法："auto", "ocr", "txt"parser="miner
 
 📖
 
+```
 @misc{guo2025raganythingallinoneragframework,
 
 title={RAG-Anything: All-in-One RAG Framework},
@@ -1553,6 +1269,7 @@ primaryClass={cs.AI},
 url={https://arxiv.org/abs/2510.12323},
 
 }
+```
 
 ---
 

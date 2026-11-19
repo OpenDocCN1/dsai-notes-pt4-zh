@@ -1,28 +1,27 @@
+
 # 从零入门NLP竞赛
 
 > 来源：[https://datawhaler.feishu.cn/docx/LC17dokycof8Zqx2NIdczdwenWe](https://datawhaler.feishu.cn/docx/LC17dokycof8Zqx2NIdczdwenWe)
 
-> **从零入门NLP竞赛 **是 Datawh**ale 202**4 年 AI 夏令营第二期的学习活动（“NLP”方向），基于讯飞开放平台“基于术语词典干预的机器翻译挑战赛”开展的实践学习——
+> 从零入门NLP竞赛是 Datawhale 2024 年 AI 夏令营第二期的学习活动（“NLP”方向），基于讯飞开放平台“基于术语词典干预的机器翻译挑战赛”开展的实践学习——
 
-+   适合想 入门并实践 深度学习、解决NLP问题、机器翻译 的学习者参与
++ 适合想 入门并实践 深度学习、解决NLP问题、机器翻译 的学习者参与
 
-+   **只要会用电脑**，就能跟着本文档内容，在** 30分钟内，****完成赛事速通体验！**
++ 只要会用电脑，就能跟着本文档内容，在 30分钟内，完成赛事速通体验！
 
-+   快来拿下你的第一个 **“****基****于**术语词典干预的机器翻译挑战赛” 分数！
-
->
++ 快来拿下你的第一个 “基于术语词典干预的机器翻译挑战赛” 分数！
 
 > 让我们一起学习进阶，动手实践、写笔记打卡，
 
-> 努力**上分**冲刺**夏令营TOP10**，获得**荣誉证书和奖学金**！
+> 努力上分冲刺夏令营TOP10，获得荣誉证书和奖学金！
 
-# 小白零基础 30 分钟速通指南
+## 小白零基础 30 分钟速通指南
 
 > 整个学习活动会带领大家进行项目制学习，由浅入深，逐渐进阶。
 
-> 当前环节可让你在 **30****分钟**** ****内****，****从一**个完全小白的选手，跑通 “基于术语词典干预的机器翻译挑战赛” ！
+> 当前环节可让你在 30 分钟内，从一个完全小白的选手，跑通 “基于术语词典干预的机器翻译挑战赛”！
 
-> 我们整个学习活动，将带你从 **跑通最简的Baseline**，到**了解竞赛通用流程**、**深入各个竞赛环节**，**精读Baseline与进阶实践**，这些一个都不会少！
+> 我们整个学习活动，将带你从 跑通最简的`Baseline`，到了解竞赛通用流程、深入各个竞赛环节、精读`Baseline`与进阶实践，这些一个都不会少！
 
 > 千里之行，始于足下，从这里，开启你的 AI 学习之旅吧！
 
@@ -30,11 +29,11 @@
 
 > —— Datawhale贡献者团队
 
-## Step1：报名赛事！(点击即可跳转)
+### Step1：报名赛事！(点击即可跳转)
 
-> 赛事链接：[https://challenge.xfyun.cn/h5/detail?type](https://challenge.xfyun.cn/h5/detail?type=machine-translation-2024&ch=dw24_z741D2)=machine-translation-2024&ch=dw24_z741D2
+> 赛事链接：[https://challenge.xfyun.cn/h5/detail?type=machine-translation-2024&ch=dw24_z741D2](https://challenge.xfyun.cn/h5/detail?type=machine-translation-2024&ch=dw24_z741D2)
 
-> **登录后直接报名即可~**
+> 登录后直接报名即可~
 
 ![](img/1128c19a968a0df100a74a81bc015a0e.png)
 
@@ -42,25 +41,25 @@
 
 ![](img/8234f50249e29490f9d4cda3d23fd2de.png)
 
-## Step2：下载代码文件
+### Step2：下载代码文件
 
 > 下载下方两个文件即可
 
-+   模型训练的代码脚本文件
++ 模型训练的代码脚本文件
 
 ![](img/4488864c57ff9d44dbdd768dfcf7c4c0.png)
 
-[task-1_terminology.ipynb](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BxCKbSIYHof4Pyxu26Tc1piUnrg)
+[`task-1_terminology.ipynb`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BxCKbSIYHof4Pyxu26Tc1piUnrg)
 
-+   训练模型所用到的数据集(赛题指定数据集)
++ 训练模型所用到的数据集(赛题指定数据集)
 
 ![](img/69fb201b45f6962c8041bc0b0de2edba.png)
 
-[dataset.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YwxnbGeIjoDDFuxnc8OcvJzOnrf)
+[`dataset.zip`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YwxnbGeIjoDDFuxnc8OcvJzOnrf)
 
-## Step3：启动魔搭GPU环境（点击即可跳转）
+### Step3：启动魔搭GPU环境（点击即可跳转）
 
-> 魔搭链接：https://modelscope.cn/my/mynotebook/preset
+> 魔搭链接：`https://modelscope.cn/my/mynotebook/preset`
 
 > 选择方式二，启动！
 
@@ -70,23 +69,23 @@
 
 ![](img/4d5c8c9b0f690e1c1c984bc1458b348c.png)
 
-+   进入环境时，可能需要登录阿里云账号，登录即可
++ 进入环境时，可能需要登录阿里云账号，登录即可
 
 ![](img/2980d583dbd62ee5262faeede6dd0aac.png)
 
-+   新用户需要先绑定阿里云账号
++ 新用户需要先绑定阿里云账号
 
 ![](img/04c1638a4f76fa022c574d67b9b11ddd.png)
 
-## Step4：运行baseline！
+### Step4：运行`baseline`！
 
-> 上传数据和代码文件，然后**一键运行**！
+> 上传数据和代码文件，然后一键运行！
 
-1.  新建终端
+1. 新建终端
 
 ![](img/835a14f20b1b977fd11f6896e5b29e3f.png)
 
-1.  新建目录
+1. 新建目录
 
 > 复制下面的命令，粘贴在终端处并回车运行
 
@@ -100,31 +99,33 @@ mkdir code
 
 ![](img/0369cd28e363bfa9b608adc6c4251f8b.png)
 
-1.  在MT/目录下上传dataset压缩包文件
+1. 在`MT/`目录下上传`dataset`压缩包文件
 
-> 双击打开 MT/ 目录，并拖入dataset压缩包文件完成上传
+> 双击打开 `MT/` 目录，并拖入`dataset`压缩包文件完成上传
 
 ![](img/1e064d9a2d1694d3afae759a980ba830.png)
 
-1.  在MT/code/目录下上传task-1代码文件
+1. 在`MT/code/`目录下上传`task-1`代码文件
 
-> 双击打开 MT/code/ 目录，并拖入task-1代码文件完成上传
+> 双击打开 `MT/code/` 目录，并拖入`task-1`代码文件完成上传
 
 ![](img/59b8533b6a89353f78918c403074247b.png)
 
 ![](img/3400949c7f406ae829547239e450fdb2.png)
 
-1.  解压数据集
+1. 解压数据集
 
 > 复制下面的命令，粘贴在终端处并回车运行
 
-> unzip dataset.zip
+```
+unzip dataset.zip
+```
 
 ![](img/0e9677c28c1431975f15dd17de7e7fa4.png)
 
 ![](img/74996889290f5e9e20076812957a3951.png)
 
-1.  打开代码文件，一键运行代码！（大概需要15分钟）
+1. 打开代码文件，一键运行代码！（大概需要15分钟）
 
 （如果时间过长，检查Step3是不是误开了CPU）
 
@@ -134,13 +135,13 @@ mkdir code
 
 ![](img/975dfd3ae920e8abbccadac0322b8c73.png)
 
-> [Task1知识点文档](https://datawhaler.feishu.cn/wiki/FVs2wAVN5iqHMqk5lW2ckfhAncb)待运行完成的过程中，可以看看   中的内容，进一步了解赛题和学习代码哟~
+> [`Task1知识点文档`](https://datawhaler.feishu.cn/wiki/FVs2wAVN5iqHMqk5lW2ckfhAncb)待运行完成的过程中，可以看看 中的内容，进一步了解赛题和学习代码哟~
 
-1.  下载 submit.txt 结果文件
+1. 下载 `submit.txt` 结果文件
 
 ![](img/7df508870f4255901ae26dedf2c74d46.png)
 
-1.  运行结束后记得关闭实例
+1. 运行结束后记得关闭实例
 
 > 在结束开发后，大家记得及时保存环境现场。
 
@@ -152,17 +153,17 @@ mkdir code
 
 ![](img/75c1c7a7a1ac5328b19048f38d802986.png)
 
-+   如果没有【关闭实例】按钮，可以回到魔搭Notebook页(点击即可跳转)进行实例关闭
++ 如果没有【关闭实例】按钮，可以回到魔搭Notebook页(点击即可跳转)进行实例关闭
 
-> 链接：https://modelscope.cn/my/mynotebook/preset
+> 链接：`https://modelscope.cn/my/mynotebook/preset`
 
 ![](img/040510532860b1d6bf4a0732450185ba.png)
 
-## Step4：提交文件，拿下第一个分数！(点击即可跳转官网进行提交)
+### Step4：提交文件，拿下第一个分数！(点击即可跳转官网进行提交)
 
-> 链接：[ht](https://challenge.xfyun.cn/topic/info?type=machine-translation-2024&option=tjjg&ch=dw24_AtTCK9)tps://challenge.xfyun.cn/topic/info?type=machine-translation-2024&option=tjjg&ch=dw24_AtTCK9
+> 链接：[https://challenge.xfyun.cn/topic/info?type=machine-translation-2024&option=tjjg&ch=dw24_AtTCK9](https://challenge.xfyun.cn/topic/info?type=machine-translation-2024&option=tjjg&ch=dw24_AtTCK9)
 
-> **提交结果文件，参与排行榜评比**
+> 提交结果文件，参与排行榜评比
 
 ![](img/617c21fa8a351c34d12591d15c931de9.png)
 
@@ -172,13 +173,13 @@ mkdir code
 
 ![](img/d937e03280767bb9101b3a77815f6216.png)
 
-> **评分大概需要 2 分钟～****评分结束后可****以在下****方看到自己****提交的评分结果哟！（预期分数在零点几左右😉~，可****以**自己调整训练数据和epochs继续上分，这里为了快速演示，只使用了部分数据进行训练）
+> 评分大概需要 2 分钟～评分结束后可以在下方看到自己提交的评分结果哟！（预期分数在零点几左右😉~，可以自己调整训练数据和`epochs`继续上分，这里为了快速演示，只使用了部分数据进行训练）
 
-# 🎉恭喜你拿下了属于自己的第一个分数！
+## 🎉恭喜你拿下了属于自己的第一个分数！
 
-## 快来给自己点赞！
+### 快来给自己点赞！
 
-## 然后填写表单，开启抽奖吧~祝你好运~
+### 然后填写表单，开启抽奖吧~祝你好运~
 
 > 请大家提交完作品后填写下面的表单哦~
 
@@ -190,45 +191,49 @@ mkdir code
 
 <https://datawhaler.feishu.cn/share/base/form/shrcnJbn2cFoIuctLprh5iVDonf?iframeFrom=docx&ccm_open=iframe>
 
-# 📅 记住下面的学习规划表！
+## 📅 记住下面的学习规划表！
 
-> **教程贡献者说：**
+> 教程贡献者说：
 
 > 这次的机器翻译赛题相较于以往的同类赛题，有以下两个特点：训练集文本更长，预测难度更大；专业化名词很多，需要充分利用提供的术语词典。
 
 > 希望经过本次学习，各位学习者都能对机器翻译有初步的了解，通过进一步的学习，打开NLP学习的大门！
 
->
-
 > 接下来我们会基于这个赛题进行更多的知识点学习，会涉及到：
 
-1.  基于seq2seq的机器翻译
+1. 基于`seq2seq`的机器翻译
 
-1.  常用 NLP 模型
+1. 常用 NLP 模型
 
-1.  Transformer 架构详解
+1. `Transformer` 架构详解
 
->
+> 学习规划表如下：
 
-> **学习规划表如下：**
+| 从零入门AI竞赛(NLP方向)-学习规划表（7天） |  |  |  |  |
 
-| ## 从零入门AI竞赛(NLP方向)**-学习规划表****（7天）** |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| #### 基于术语词典干预的机器翻译挑战赛 |  |  |  |  |
-| **Task** | **Task 描述** | **相关知识点** | **学习文件&amp;链接** | **学习安排** |
-| **Task 1** | **目标：**跑通baseline，体验NLP模型解决问题的流程，基本了解赛题要求，理解赛题场景 | 1.  机器翻译任务的发展历程 | 1.  [从零入门NLP竞赛](https://datawhaler.feishu.cn/wiki/TObSwHZdFi2y0XktauWcolpcnyf) | [**开营直播**](https://meeting.tencent.com/v2/cloud-record/share?id=a9f6ce22-61e7-43a7-ba71-dac30dc60675&amp;from=3&amp;is-single=false&amp;record_type=2) |
-| **Task 2** | **目标**：深入理解赛题，精读baseline代码，入门机器学习代码实现 | 1.  赛题深入解析：赛题背景 | 1.  [Task2知识点文档](https://datawhaler.feishu.cn/wiki/PztLwkofsi95oak2Iercw9hkn2g) | [**baseline精讲直播**](https://meeting.tencent.com/v2/cloud-record/share?id=2fcf8e58-ca7e-483e-b145-3d8097fd844a&amp;from=3&amp;is-single=false&amp;record_type=2) |
-| **Task 3** | **目标**：进阶Transformer模型完成任务，入门深度学习 | 1.  Transformer架构 | 1.  [Task3知识点文档](https://datawhaler.feishu.cn/wiki/OgQWwkYkviPfpwkE1ZmcXwcWnAh) | [**进阶分享直播**](https://meeting.tencent.com/v2/cloud-record/share?id=c0c178a6-dd3f-476c-a566-6175762346b7&amp;from=3&amp;is-single=false&amp;record_type=2) |
-| **Task 4** | **目标**：通过代码实践入门大模型处理机器翻译 |  | 1.  [Task4知识点文档](https://datawhaler.feishu.cn/wiki/L64jw94HwivDoQkptGccDMCznxc) |  |
+
+| 基于术语词典干预的机器翻译挑战赛 |  |  |  |  |
+
+| Task | Task 描述 | 相关知识点 | 学习文件&链接 | 学习安排 |
+
+| Task 1 | 目标：跑通`baseline`，体验NLP模型解决问题的流程，基本了解赛题要求，理解赛题场景 | 1. 机器翻译任务的发展历程 | 1. [从零入门NLP竞赛](https://datawhaler.feishu.cn/wiki/TObSwHZdFi2y0XktauWcolpcnyf) | [开营直播](https://meeting.tencent.com/v2/cloud-record/share?id=a9f6ce22-61e7-43a7-ba71-dac30dc60675&from=3&is-single=false&record_type=2) |
+
+| Task 2 | 目标：深入理解赛题，精读`baseline`代码，入门机器学习代码实现 | 1. 赛题深入解析：赛题背景 | 1. [Task2知识点文档](https://datawhaler.feishu.cn/wiki/PztLwkofsi95oak2Iercw9hkn2g) | [baseline精讲直播](https://meeting.tencent.com/v2/cloud-record/share?id=2fcf8e58-ca7e-483e-b145-3d8097fd844a&from=3&is-single=false&record_type=2) |
+
+| Task 3 | 目标：进阶`Transformer`模型完成任务，入门深度学习 | 1. `Transformer`架构 | 1. [Task3知识点文档](https://datawhaler.feishu.cn/wiki/OgQWwkYkviPfpwkE1ZmcXwcWnAh) | [进阶分享直播](https://meeting.tencent.com/v2/cloud-record/share?id=c0c178a6-dd3f-476c-a566-6175762346b7&from=3&is-single=false&record_type=2) |
+
+| Task 4 | 目标：通过代码实践入门大模型处理机器翻译 |  | 1. [Task4知识点文档](https://datawhaler.feishu.cn/wiki/L64jw94HwivDoQkptGccDMCznxc) |  |
+
 |  |  |  |  |  |
 
-### 祝大家上分顺利，学习愉快~ 不要害怕在群里提问和交流哟！
+> 祝大家上分顺利，学习愉快~ 不要害怕在群里提问和交流哟！
 
-> 不过建议先查看** **[ QA & 其他彩蛋](https://datawhaler.feishu.cn/wiki/FPFzwD4FWiCpBFkVh0Ucqs1Wntd)** **是否早已解决并收录你的问题~ 然后再在群里仔细描述清楚问题进行提问哟~
+> 不过建议先查看 [QA & 其他彩蛋](https://datawhaler.feishu.cn/wiki/FPFzwD4FWiCpBFkVh0Ucqs1Wntd) 是否早已解决并收录你的问题~ 然后再在群里仔细描述清楚问题进行提问哟~
 
 > QA文档可任意编辑，可随时留言提问，我们的助教会关注，遇到感兴趣的问题还可以在上面进行回答哟~
 
-# 🍰 再来一点学习加餐！
+## 🍰 再来一点学习加餐！
 
 ### 你知道刚刚发生了什么吗？
 
@@ -244,9 +249,7 @@ mkdir code
 
 > 深度思考这些问题，既能帮助我们更好地解决相关问题，更能让我们在后续遇到相关问题时，更好地完成迁移。
 
->
-
-### 本赛题是一个经典的**NLP问题**
+### 本赛题是一个经典的NLP问题
 
 > 赛事目标为——【通过术语词典构建机器翻译模型】
 
@@ -258,24 +261,22 @@ mkdir code
 
 大致可以将 NLP 任务 分为四类：
 
-1.  **序列标注**：比如中文分词，词性标注，命名实体识别，语义角色标注等都可以归入这一类问题。这类任务的共同点是句子中每个单词要求模型根据上下文都要给出一个分类类别；
+1. 序列标注：比如中文分词，词性标注，命名实体识别，语义角色标注等都可以归入这一类问题。这类任务的共同点是句子中每个单词要求模型根据上下文都要给出一个分类类别；
 
-1.  **分类任务**：比如我们常见的文本分类，情感计算等都可以归入这一类。这类任务特点是不管文章有多长，总体给出一个分类类别即可；
+1. 分类任务：比如我们常见的文本分类，情感计算等都可以归入这一类。这类任务特点是不管文章有多长，总体给出一个分类类别即可；
 
-1.  **句子关系判断**：比如问答推理，语义改写，自然语言推理等任务都是这个模式，它的特点是给定两个句子，模型判断出两个句子是否具备某种语义关系；
+1. 句子关系判断：比如问答推理，语义改写，自然语言推理等任务都是这个模式，它的特点是给定两个句子，模型判断出两个句子是否具备某种语义关系；
 
-1.  **生成式任务**：比如机器翻译，文本摘要，写诗造句，看图说话等都属于这一类。它的特点是输入文本内容后，需要自主生成另外一段文字。
+1. 生成式任务：比如机器翻译，文本摘要，写诗造句，看图说话等都属于这一类。它的特点是输入文本内容后，需要自主生成另外一段文字。
 
-> Datawhale有一个开源项目 基于transformers的自然语言处理(NLP)入门，结合了形象生动的原理讲解和多个动手实践项目，帮助初学者快速入门深度学习时代的NLP。
+> Datawhale有一个开源项目 基于`transformers`的自然语言处理(NLP)入门，结合了形象生动的原理讲解和多个动手实践项目，帮助初学者快速入门深度学习时代的NLP。
 
-> 学习这个开源项目需要有一定的python代码基础
+> 学习这个开源项目需要有一定的`python`代码基础
 
 > 大家如果学有余力，可以搭配这个项目的一些内容进行实践学习，帮助自己上分~
 
-## [Task1知识点文档](https://datawhaler.feishu.cn/wiki/FVs2wAVN5iqHMqk5lW2ckfhAncb) 内还有更多精彩内容等着你~
+## [`Task1知识点文档`](https://datawhaler.feishu.cn/wiki/FVs2wAVN5iqHMqk5lW2ckfhAncb) 内还有更多精彩内容等着你~
 
 ## 更多QA详见[ QA & 其他彩蛋](https://datawhaler.feishu.cn/wiki/FPFzwD4FWiCpBFkVh0Ucqs1Wntd)~
 
-#
-
-> 本教程主要由  、  写作贡献，经过多位助教内测和建议修改，期待你的点赞和评论～
+> 本教程主要由 、 写作贡献，经过多位助教内测和建议修改，期待你的点赞和评论～

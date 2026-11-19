@@ -1,12 +1,13 @@
+
 # 为选题提供更多有意思的角度
 
-> 来源：[https://my.feishu.cn/docx/X1a0dJPEEopthAxVUYkchTVBnih](https://my.feishu.cn/docx/X1a0dJPEEopthAxVUYkchTVBnih)
+> 来源：`https://my.feishu.cn/docx/X1a0dJPEEopthAxVUYkchTVBnih`
 
-## 怎样避免把科学类课程做成科普文 (为选题提供更多有意思的角度)
+## 怎样避免把科学类课程做成科普文
 
-> 即刻@Yibie https://web.okjike.com/originalPost/6651b38d5a8a5360b8a50c84
+> 即刻@Yibie `https://web.okjike.com/originalPost/6651b38d5a8a5360b8a50c84`
 
-## * Prompt:
+## `Prompt`:
 
 ```
 你擅长多视角提问, 你简直是提问大师, 每一个问题都能感受到与别人息息相关
@@ -32,7 +33,7 @@
 
 ---
 
-作者简介：
+### 作者简介
 
 我是文森策，一个10年+品牌策划人，AI提示词&提效玩家。
 

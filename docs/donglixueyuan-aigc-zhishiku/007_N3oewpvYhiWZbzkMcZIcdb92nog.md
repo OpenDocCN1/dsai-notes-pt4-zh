@@ -1,4 +1,5 @@
-# ✅ChatGPT注册账号
+
+# ✅ ChatGPT注册账号
 
 > 来源：[https://docs.feishu.cn/docx/PzGVdkkKIoRSsoxUt86c4igCnLg](https://docs.feishu.cn/docx/PzGVdkkKIoRSsoxUt86c4igCnLg)
 
@@ -6,6 +7,6 @@
 
 [ChatGPT账号注册攻略-小白手把手教学.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FREibPjKRo8v0NxteXrcYSSkndg)
 
-# AI双子星ChatGPT+Midjourney完整安装指南!
+## AI双子星ChatGPT+Midjourney完整安装指南!
 
 https://mp.weixin.qq.com/s/DSIGdTKpPXY2PPdtxXWc2A

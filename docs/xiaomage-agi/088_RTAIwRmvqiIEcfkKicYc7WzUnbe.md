@@ -1,40 +1,41 @@
+
 # 一分钟教你快速搭建🛰️ChatGPT机器人！
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/R1mddl0VtoxHH5xwPCScnPuQnyd](https://xmgtoagi.feishu.cn/docx/R1mddl0VtoxHH5xwPCScnPuQnyd)
 
-Github登录账号后，先Forck下仓库：https://github.com/zhayujie/chatgpt-on-wechat
+Github登录账号后，先Forck下仓库：`https://github.com/zhayujie/chatgpt-on-wechat`
 
 功能介绍：
 
-+    **多端部署：** 有多种部署方式可选择且功能完备，目前已支持个人🛰️，🛰️👸号和企业🛰️应用等部署方式
++ **多端部署：** 有多种部署方式可选择且功能完备，目前已支持个人🛰️，🛰️👸号和企业🛰️应用等部署方式
 
-+    **基础对话：** 私聊及群聊的消息智能回复，支持多轮会话上下文记忆，支持 GPT-3，GPT-3.5，GPT-4模型
++ **基础对话：** 私聊及群聊的消息智能回复，支持多轮会话上下文记忆，支持 GPT-3，GPT-3.5，GPT-4模型
 
-+    **语音识别：** 可识别语音消息，通过文字或语音回复，支持 azure, baidu, google, openai等多种语音模型
++ **语音识别：** 可识别语音消息，通过文字或语音回复，支持 azure, baidu, google, openai等多种语音模型
 
-+    **图片生成：** 支持图片生成 和 图生图（如照片修复），可选择 Dell-E, stable diffusion, replicate模型
++ **图片生成：** 支持图片生成 和 图生图（如照片修复），可选择 Dell-E, stable diffusion, replicate模型
 
-+    **丰富插件：** 支持个性化插件扩展，已实现多角色切换、文字冒险、敏感词过滤、聊天记录总结等插件
++ **丰富插件：** 支持个性化插件扩展，已实现多角色切换、文字冒险、敏感词过滤、聊天记录总结等插件
 
-+    **Tool工具：** 与操作系统和互联网交互，支持最新信息搜索、数学计算、天气和资讯查询、网页总结，基于 chatgpt-tool-hub 实现
++ **Tool工具：** 与操作系统和互联网交互，支持最新信息搜索、数学计算、天气和资讯查询、网页总结，基于 `chatgpt-tool-hub` 实现
 
 ## 1.注册Railway账号：
 
-https://railway.app?referralCode=W3r6mg
+`https://railway.app?referralCode=W3r6mg`
 
 建议GitHub直接授权登录。
 
 ## 2.部署
 
-访问：https://railway.app/template/qApznZ?referralCode=W3r6mg
+访问：`https://railway.app/template/qApznZ?referralCode=W3r6mg`
 
-点击：Deploy Now
+点击：`Deploy Now`
 
 ![](img/54914087febdb06550df3228ba8a9748.png)
 
 ## 3. 配置
 
-### 1）点击Configure
+### 1）点击`Configure`
 
 ![](img/78fea1206c20a01bb1b4fd1fc4475d7b.png)
 
@@ -52,9 +53,9 @@ https://railway.app?referralCode=W3r6mg
 
 ![](img/89aaba0351573488f3dbe421c8ac3ce3.png)
 
-### 5）部署：deploy
+### 5）部署：`deploy`
 
-点击最后的Deploy
+点击最后的`Deploy`
 
 ### 6) 部署完成：
 
@@ -70,7 +71,7 @@ https://railway.app?referralCode=W3r6mg
 
 ## 最后总结：
 
-Railway只有五美刀和500h的体验，到期后可以续费（不推荐），也可以根据README重新把项目部署到本地或云服务器上
+Railway只有五美刀和500h的体验，到期后可以续费（不推荐），也可以根据`README`重新把项目部署到本地或云服务器上
 
 ![](img/6aad1c92e0e7b03bb9769a93b9b3d76e.png)
 
@@ -84,6 +85,6 @@ Railway只有五美刀和500h的体验，到期后可以续费（不推荐），
 
 ## 致谢开源项目：
 
-https://github.com/zhayujie/chatgpt-on-wechat
+`https://github.com/zhayujie/chatgpt-on-wechat`
 
 ![](img/620ee90eee43aaef78c873c99cd0168a.png)

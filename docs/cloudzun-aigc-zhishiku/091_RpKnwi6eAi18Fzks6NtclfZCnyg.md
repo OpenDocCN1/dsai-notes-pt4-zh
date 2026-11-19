@@ -1,10 +1,11 @@
+
 # VibeCodeing
 
 > 来源：[https://zsyhjtnsa5.feishu.cn/docx/J4aMdPRJLoiHOxxNHYgc5O7un4c](https://zsyhjtnsa5.feishu.cn/docx/J4aMdPRJLoiHOxxNHYgc5O7un4c)
 
-# 水果电商平台模型
+## 水果电商平台模型
 
-初始需求
+### 初始需求
 
 ```
 我希望为将采用氛围编程（vibe coding）流程开发的应用创建一个产品需求文档（PRD）。  
@@ -34,7 +35,7 @@
 请问，为了能让 GitHub Copilot Agent 顺利创建出我设想中的原型，我应该在PRD中包含哪些部分？
 ```
 
-可能的输出
+### 可能的输出
 
 ```
 为了让 GitHub Copilot Agent顺利根据PRD创建你设想的原型应用，建议你的产品需求文档（PRD）包含以下部分和内容：
@@ -81,7 +82,7 @@
 这样，GitHub Copilot Agent可以根据你的PRD快速理解需求，自动生成结构合理、功能完整的原型应用。
 ```
 
-结合上一轮的输出，细化 PRD
+### 结合上一轮的输出，细化 PRD
 
 ```
 您建议的PRD部分看起来不错。以下信息应能帮助您构建这份PRD：
@@ -108,7 +109,7 @@
 创建一个名为 `VibeCodingPRD.md` 的 Markdown 文件，使用您建议的章节结构和我提供的输入信息。
 ```
 
-查看生成的 VibeCodingPRD.md
+### 查看生成的 `VibeCodingPRD.md`
 
 ```
 # 产品需求文档（PRD）
@@ -157,45 +158,45 @@
 3. 用户进入结算页，查看购物摘要并点击“处理订单”。
 ```
 
-要求根据 PRD 生成线框图
+### 要求根据 PRD 生成线框图
 
 ```
 您能否为我的原型应用创建低保真线框图（或基于文本的布局），以展示各个网页和导航栏（展开和折叠状态）？请使用我提供的PRD作为参考。
 将这些低保真线框图保存为文本文件，每个网页一个文件，导航栏单独保存为一个文件。
 ```
 
-要求生成原型应用
+### 要求生成原型应用
 
 ```
 我希望您能根据我的产品需求文档（PRD）和线框图信息，创建一个购物应用原型。该原型应实现以下内容：基本用例功能、简单导航、示例数据集和基础样式。
 创建完原型应用后，请在工作区中添加一个 &#x27;.github/copilot-instructions.md&#x27; 文件，并将PRD和线框图文件的内容添加到该 &#x27;copilot-instructions.md&#x27; 文件中。
 ```
 
-（可选）在聊天视图中，要调整折叠导航栏的断点，请输入以下提示：
+### （可选）在聊天视图中，要调整折叠导航栏的断点，请输入以下提示：
 
 ```
 #codebase 重构原型应用，为折叠导航栏使用一个更高的断点。将原来的300px改为600px。更新 copilot-instructions.md 文件，说明更新后的 600px 要求。
 ```
 
-（可选）如果代理实现了在屏幕变窄（从垂直切换到水平）时改变方向的导航栏，请使用以下命令更新导航栏的行为：
+### （可选）如果代理实现了在屏幕变窄（从垂直切换到水平）时改变方向的导航栏，请使用以下命令更新导航栏的行为：
 
 ```
 #codebase 重构代码，确保导航栏在所有类型和尺寸的设备上都保持在应用的左侧。导航栏应具有响应性，并在展开或折叠模式下保持其位置。
 ```
 
-加花
+### 加花
 
 ```
 #codebase 更新原型应用，在导航栏中为每个页面显示一个表情符号。确保当导航栏折叠时，表情符号在导航栏中水平居中显示。更新 copilot-instructions.md 文件，加入此项产品需求。
 ```
 
-要确定其他改进机会，请输入以下提示：
+### 要确定其他改进机会，请输入以下提示：
 
 ```
 #codebase 请查阅 `copilot-instructions.md` 文件中的产品需求和线框图。当前实现中是否缺少任何功能或需求？是否存在明显的改进用户体验的机会？
 ```
 
-可能的输出
+### 可能的输出
 
 ```
 Searched codebase for &quot;#codebase 请查阅 `copilot-instructions.md` 文件中的产品需求和线框图。当前实现中是否缺少任何功能或需求？是否存在明显的改进用户体验的机会？&quot;, 10 results
@@ -237,13 +238,13 @@ Searched codebase for &quot;#codebase 请查阅 `copilot-instructions.md` 文件
 综上，当前原型已满足PRD和线框图的主要要求，但可通过上述细节优化进一步提升用户体验和易用性。是否需要针对某一项进行具体改进？
 ```
 
-可以要求他修改某几项你觉得合适的项目
+### 可以要求他修改某几项你觉得合适的项目
 
 ```
 我觉得你的建议很好，修改前6个项目，此外修改好之后对相关文档copilot-instructions.md进行必要的更新
 ```
 
-额外的建议
+### 额外的建议
 
 ```
 #codebase 对原型应用实施以下改进：
@@ -259,7 +260,7 @@ Github Repo：https://github.com/cloudzun/online-shop-prototype
 
 Demo Site：https://online-shop-prototype-nine.vercel.app/
 
-容器化运行：
+### 容器化运行
 
 ```
 docker pull chengzh/online-shop-prototype:latest
@@ -277,5 +278,5 @@ COPY . /usr/share/nginx/html
 EXPOSE 80
 
 # 启动 nginx
-CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]
+CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off&quot;]
 ```

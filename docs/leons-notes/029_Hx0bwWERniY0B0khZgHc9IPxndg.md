@@ -1,3 +1,4 @@
+
 # Career Essentials in Generative AI by Microsoft and LinkedIn
 
 > 来源：[https://leonzhang.feishu.cn/docx/OEc3d7nM0oO4xox49ZpcygpNnBh](https://leonzhang.feishu.cn/docx/OEc3d7nM0oO4xox49ZpcygpNnBh)

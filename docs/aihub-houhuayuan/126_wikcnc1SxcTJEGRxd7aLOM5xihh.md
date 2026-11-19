@@ -1,3 +1,4 @@
+
 # 🗨交流社群
 
 > 来源：[https://seigy6zzam.feishu.cn/docx/FtRhd6fueoRoslxQC3WcyTATnAd](https://seigy6zzam.feishu.cn/docx/FtRhd6fueoRoslxQC3WcyTATnAd)
@@ -10,12 +11,8 @@
 
 暂时想到的服务：
 
-+   针对AIHub插件和后续工具使用过程中遇到所有问题的VIP支持
-
-+   提供针对领域定制提示词优化建议，提升AI返回结果的效果
-
-+   打包分享我收集到所有pdf文档，还有常用本地AI工具的打包文件，比如AI绘图，本地GPT，AI声音模仿等
-
-+   每日更新最新的AI[关于 ChatGPT 插件的启发](https://seigy6zzam.feishu.cn/wiki/wikcnjpBF1FCSFOHxE7XFe5lzNe)法，至少每月为大家分享最新深度分析，比如
-
-+   帮注册账号，比如chatgpt, bing，bard还有poe，好像其他星球竟然也把这个作为福利😶
++ 针对AIHub插件和后续工具使用过程中遇到所有问题的VIP支持
++ 提供针对领域定制提示词优化建议，提升AI返回结果的效果
++ 打包分享我收集到所有pdf文档，还有常用本地AI工具的打包文件，比如AI绘图，本地GPT，AI声音模仿等
++ 每日更新最新的AI[关于 ChatGPT 插件的启发](https://seigy6zzam.feishu.cn/wiki/wikcnjpBF1FCSFOHxE7XFe5lzNe)法，至少每月为大家分享最新深度分析，比如
++ 帮注册账号，比如chatgpt, bing，bard还有poe，好像其他星球竟然也把这个作为福利😶

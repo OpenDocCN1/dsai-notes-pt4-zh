@@ -1,30 +1,27 @@
+
 # llama-agents:构建生产多智能体AI系统的强大框架
 
 > 来源：[https://agijuejin.feishu.cn/docx/Z8Vyd8M6poPWEUxdonIc2hNRnZd](https://agijuejin.feishu.cn/docx/Z8Vyd8M6poPWEUxdonIc2hNRnZd)
 
 > 作者：lucas大叔
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/705744470)hihu.com/p/705744...
+> 原文：[https://zhuanlan.zhihu.com/p/705744470](https://zhuanlan.zhihu.com/p/705744470)
 
-近日，LlamaIndex宣布推出 alpha 版本的 llama-agents ，这是一个全新的开源框架，旨在简化构建、迭代和部署多智能体 AI 系统的过程，并将智能体转变为生产微服务。无论你是在开发复杂的问答系统、协作式 AI 助手还是分布式 AI 工作流，llama-agents 都能为你提供实现想法所需的工具和结构。
+近日，LlamaIndex宣布推出 alpha 版本的 `llama-agents` ，这是一个全新的开源框架，旨在简化构建、迭代和部署多智能体 AI 系统的过程，并将智能体转变为生产微服务。无论你是在开发复杂的问答系统、协作式 AI 助手还是分布式 AI 工作流，`llama-agents` 都能为你提供实现想法所需的工具和结构。
 
 ## llama-agents 的主要特点
 
-1.  **分布式面向服务架构： **LlamaIndex 中的每个智能体都可以是独立运行的微服务，由完全可定制的 LLM 驱动的控制平面进行协调，用于路由和分配任务。
+1. **分布式面向服务架构**：LlamaIndex 中的每个智能体都可以是独立运行的微服务，由完全可定制的 LLM 驱动的控制平面进行协调，用于路由和分配任务。
+2. 通过标准化 `API` 接口进行通信：使用中央控制平面编排器在智能体之间进行交互。使用消息队列在智能体之间传递消息。
+3. **定义代理和显式编排流程**：开发人员可以灵活地直接定义智能体之间的交互序列，或者交给“代理编排器”来决定哪些智能体与任务相关。
+4. **易于部署**：独立启动、扩展和监控每个智能体和控制平面。
+5. **可扩展性和资源管理**：使用内置的可观察性工具来监控系统和每个智能体服务的质量和性能。
 
-1.  通过标准化 API 接口进行通信： 使用中央控制平面编排器在智能体之间进行交互。使用消息队列在智能体之间传递消息。
-
-1.  **定义代理和显式编排流程： **开发人员可以灵活地直接定义智能体之间的交互序列，或者交给“代理编排器”来决定哪些智能体与任务相关。
-
-1.  **易于部署： **独立启动、扩展和监控每个智能体和控制平面。
-
-1.  **可扩展性和资源管理： **使用内置的可观察性工具来监控系统和每个智能体服务的质量和性能
-
-让我们深入了解如何开始使用 llama-agents 构建自己的多智能体系统。
+让我们深入了解如何开始使用 `llama-agents` 构建自己的多智能体系统。
 
 ## 开始使用 llama-agents
 
-首先，使用 pip 安装框架：
+首先，使用 `pip` 安装框架：
 
 ```
 pip install llama-agents
@@ -32,7 +29,7 @@ pip install llama-agents
 
 ### 基本系统设置
 
-这是一个使用 llama-agents 设置基本多智能体系统的简单示例。首先，引入依赖项并设置控制平面，其中包含由 LLM 驱动的编排器。
+这是一个使用 `llama-agents` 设置基本多智能体系统的简单示例。首先，引入依赖项并设置控制平面，其中包含由 LLM 驱动的编排器。
 
 ```
 import dotenv
@@ -49,7 +46,7 @@ from llama_index.llms.openai import OpenAI
 import logging
 
 # turn on logging so we can see the system working
-logging.getLogger(&quot;llama_agents&quot;).setLevel(logging.INFO)
+logging.getLogger("llama_agents").setLevel(logging.INFO)
 
 # Set up the message queue and control plane
 message_queue = SimpleMessageQueue()
@@ -63,9 +60,9 @@ control_plane = ControlPlaneServer(
 
 ```
 # create a tool
-def get_the_secret_fact() -&gt; str:
-    &quot;&quot;&quot;Returns the secret fact.&quot;&quot;&quot;
-    return &quot;The secret fact is: A baby llama is called a &#x27;Cria&#x27;.&quot;
+def get_the_secret_fact() -> str:
+    """Returns the secret fact."""
+    return "The secret fact is: A baby llama is called a 'Cria'."
 
 tool = FunctionTool.from_defaults(fn=get_the_secret_fact)
 
@@ -77,8 +74,8 @@ agent = worker.as_agent()
 agent_service = AgentService(
     agent=agent,
     message_queue=message_queue,
-    description=&quot;General purpose assistant&quot;,
-    service_name=&quot;assistant&quot;,
+    description="General purpose assistant",
+    service_name="assistant",
 )
 ```
 
@@ -95,7 +92,7 @@ launcher = LocalLauncher(
 )
 
 # Run a single query through the system
-result = launcher.launch_single(&quot;What&#x27;s the secret fact?&quot;)
+result = launcher.launch_single("What's the secret fact?")
 print(result)
 ```
 
@@ -119,7 +116,7 @@ from llama_index.llms.openai import OpenAI
 import logging
 
 # change logging level to enable or disable more verbose logging
-logging.getLogger(&quot;llama_agents&quot;).setLevel(logging.INFO)
+logging.getLogger("llama_agents").setLevel(logging.INFO)
 
 # create our multi-agent framework components
 message_queue = SimpleMessageQueue()
@@ -133,9 +130,9 @@ control_plane = ControlPlaneServer(
 
 ```
 # create a tool
-def get_the_secret_fact() -&gt; str:
-    &quot;&quot;&quot;Returns the secret fact.&quot;&quot;&quot;
-    return &quot;The secret fact is: A baby llama is called a &#x27;Cria&#x27;.&quot;
+def get_the_secret_fact() -> str:
+    """Returns the secret fact."""
+    return "The secret fact is: A baby llama is called a 'Cria'."
 
 tool = FunctionTool.from_defaults(fn=get_the_secret_fact)
 
@@ -152,17 +149,17 @@ agent2 = worker2.as_agent()
 agent_server_1 = AgentService(
     agent=agent1,
     message_queue=message_queue,
-    description=&quot;Useful for getting the secret fact.&quot;,
-    service_name=&quot;secret_fact_agent&quot;,
-    host=&quot;localhost&quot;,
+    description="Useful for getting the secret fact.",
+    service_name="secret_fact_agent",
+    host="localhost",
     port=8003
 )
 agent_server_2 = AgentService(
     agent=agent2,
     message_queue=message_queue,
-    description=&quot;Useful for getting random dumb facts.&quot;,
-    service_name=&quot;dumb_fact_agent&quot;,
-    host=&quot;localhost&quot;,
+    description="Useful for getting random dumb facts.",
+    service_name="dumb_fact_agent",
+    host="localhost",
     port=8004
 )
 ```
@@ -173,14 +170,14 @@ agent_server_2 = AgentService(
 from llama_agents import ServerLauncher, CallableMessageConsumer
 
 # Additional human consumer
-def handle_result(message) -&gt; None:
-    print(f&quot;Got result:&quot;, message.data)
+def handle_result(message) -> None:
+    print(f"Got result:", message.data)
 
 
-# the final result is published to a &quot;human&quot; consumer
+# the final result is published to a "human" consumer
 # so we define one to handle it!
 human_consumer = CallableMessageConsumer(
-    handler=handle_result, message_type=&quot;human&quot;
+    handler=handle_result, message_type="human"
 )
 
 # Define Launcher
@@ -210,7 +207,9 @@ llama-agents monitor --control-plane-url http://127.0.0.1:8000
 
 让我们看一个稍微复杂的例子：查询重写 RAG 系统。该系统将重写用户查询以改进检索，然后使用重写的查询在文档上做RAG。
 
-此示例演示了如何创建一个更复杂的系统，该系统将查询重写与 [RAG 相结合，以提](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/blob/main/examples/query_rewrite_rag.ipynb)高问答能力。请参阅 此notebook 查看完整代码。
+此示例演示了如何创建一个更复杂的系统，该系统将查询重写与 [RAG 相结合，以提高问答能力](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/blob/main/examples/query_rewrite_rag.ipynb)。请参阅 [此 notebook](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/blob/main/examples/query_rewrite_rag.ipynb) 查看完整代码。
+
+
 
 ```
 import dotenv
@@ -232,49 +231,49 @@ from llama_index.llms.openai import OpenAI
 import logging
 
 # change logging level to enable or disable more verbose logging
-logging.getLogger(&quot;llama_agents&quot;).setLevel(logging.INFO)
+logging.getLogger("llama_agents").setLevel(logging.INFO)
 
 # Load and index your document
-docs = [Document(text=&quot;The rabbit is a small mammal with long ears and a fluffy tail. His name is Peter.&quot;)]
+docs = [Document(text="The rabbit is a small mammal with long ears and a fluffy tail. His name is Peter.")]
 index = VectorStoreIndex.from_documents(docs)
 
 # Define a query rewrite agent
 HYDE_PROMPT_STR = (
-    &quot;Please rewrite the following query to include more detail:\n{query_str}\n&quot;
+    "Please rewrite the following query to include more detail:\n{query_str}\n"
 )
 HYDE_PROMPT_TMPL = PromptTemplate(HYDE_PROMPT_STR)
 
 def run_hyde_fn(state):
     prompt_tmpl, llm, input_str = (
-        state[&quot;prompt_tmpl&quot;],
-        state[&quot;llm&quot;],
-        state[&quot;__task__&quot;].input,
+        state["prompt_tmpl"],
+        state["llm"],
+        state["__task__"].input,
     )
     qp = QueryPipeline(chain=[prompt_tmpl, llm])
     output = qp.run(query_str=input_str)
-    state[&quot;__output__&quot;] = str(output)
+    state["__output__"] = str(output)
     return state, True
 
 hyde_agent = FnAgentWorker(
     fn=run_hyde_fn,
-    initial_state={&quot;prompt_tmpl&quot;: HYDE_PROMPT_TMPL, &quot;llm&quot;: OpenAI()}
+    initial_state={"prompt_tmpl": HYDE_PROMPT_TMPL, "llm": OpenAI()}
 ).as_agent()
 
 # Define a RAG agent
 def run_rag_fn(state):
     retriever, llm, input_str = (
-        state[&quot;retriever&quot;],
-        state[&quot;llm&quot;],
-        state[&quot;__task__&quot;].input,
+        state["retriever"],
+        state["llm"],
+        state["__task__"].input,
     )
     query_engine = RetrieverQueryEngine.from_args(retriever, llm=llm)
     response = query_engine.query(input_str)
-    state[&quot;__output__&quot;] = str(response)
+    state["__output__"] = str(response)
     return state, True
 
 rag_agent = FnAgentWorker(
     fn=run_rag_fn,
-    initial_state={&quot;retriever&quot;: index.as_retriever(), &quot;llm&quot;: OpenAI()}
+    initial_state={"retriever": index.as_retriever(), "llm": OpenAI()}
 ).as_agent()
 
 # Set up the multi-agent system
@@ -283,15 +282,15 @@ message_queue = SimpleMessageQueue()
 query_rewrite_service = AgentService(
     agent=hyde_agent,
     message_queue=message_queue,
-    description=&quot;Query rewriting service&quot;,
-    service_name=&quot;query_rewrite&quot;,
+    description="Query rewriting service",
+    service_name="query_rewrite",
 )
 
 rag_service = AgentService(
     agent=rag_agent,
     message_queue=message_queue,
-    description=&quot;RAG service&quot;,
-    service_name=&quot;rag&quot;,
+    description="RAG service",
+    service_name="rag",
 )
 
 # Create the pipeline
@@ -314,22 +313,22 @@ launcher = LocalLauncher(
 )
 
 # Run a query
-result = launcher.launch_single(&quot;Tell me about rabbits&quot;)
+result = launcher.launch_single("Tell me about rabbits")
 print(result)
 ```
 
 ## 公开roadmap
 
-这[是一个 Al](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/discussions/49)pha 版本，这意味着我们非常希望你能就功能提出反馈，以便更好地帮助你在生产中构建多智能体系统！我们创建了一个 公开路线图 ，展示了计划的发展方向。我们正在积极寻求公众反馈，了解哪些对你有用，哪些对你无用。
+这是一个 [Al](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/discussions/49)pha 版本，这意味着我们非常希望你能就功能提出反馈，以便更好地帮助你在生产中构建多智能体系统！我们创建了一个公开路线图，展示了计划的发展方向。我们正在积极寻求公众反馈，了解哪些对你有用，哪些对你无用。
 
 ## 深入学习
 
-llama-agents 为构建复杂的多智能体 A[I 系统提](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents)供了强大而灵活的框架。无[论你是](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/tree/main/examples)在为新想法设计原型还是将其扩展到生产， llama-agents 都能为你提供实现 AI 愿景所需的工具。你可以查看 repo 以了解更多信息，尤其是 示例 库。
+`llama-agents` 为构建复杂的多智能体 AI 系统[提供](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents)了强大而灵活的框架。无论[你是](https://link.zhihu.com/?target=https%3A//github.com/run-llama/llama-agents/tree/main/examples)在为新想法设计原型还是将其扩展到生产，`llama-agents` 都能为你提供实现 AI 愿景所需的工具。你可以查看 repo 以了解更多信息，尤其是示例库。
 
-很高兴看到大家用 llama-agents 构建应用。祝你编码愉快！
+很高兴看到大家用 `llama-agents` 构建应用。祝你编码愉快！
 
 ## 参考文档
 
-[Int](https://link.zhihu.com/?target=https%3A//www.llamaindex.ai/blog/introducing-llama-agents-a-powerful-framework-for-building-production-multi-agent-ai-systems)roducing llama-agents: A Powerful Framework for Building Production Multi-Agent AI Systems — LlamaIndex, Data Framework for LLM Applications
+[Introducing llama-agents: A Powerful Framework for Building Production Multi-Agent AI Systems — LlamaIndex, Data Framework for LLM Applications](https://link.zhihu.com/?target=https%3A//www.llamaindex.ai/blog/introducing-llama-agents-a-powerful-framework-for-building-production-multi-agent-ai-systems)
 
 发布于 2024-06-27 15:07 ・IP 属地江苏

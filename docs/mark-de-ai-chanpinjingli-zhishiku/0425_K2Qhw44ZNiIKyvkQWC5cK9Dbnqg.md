@@ -1,3 +1,4 @@
+
 # 多模态RAG项目实战——表格、文本
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TEzZdXjU6o7m7Gxb2fBcZyd7nxg](https://qqs7y1hozd1.feishu.cn/docx/TEzZdXjU6o7m7Gxb2fBcZyd7nxg)
@@ -8,11 +9,11 @@
 
 实用指南：
 
-+   半结构化（表格 + 文本）RAG
++ 半结构化（表格 + 文本）RAG
 
-+   多模态（文本 + 表格 + 图片）RAG
++ 多模态（文本 + 表格 + 图片）RAG
 
-+   私有化多模态（文本 + 表格 + 图片）RAG
++ 私有化多模态（文本 + 表格 + 图片）RAG
 
 ## 上下文
 
@@ -40,13 +41,13 @@ LLM至少可以通过两种方式获取新信息：
 
 深刻理解上图：
 
-+   将文档中的图片、表格和文本分割开来。
++ 将文档中的图片、表格和文本分割开来。
 
-+   分别对图片、表格和文本进行摘要总结。对于图片，我们可以使用多模态模型进行解读，形成摘要。
++ 分别对图片、表格和文本进行摘要总结。对于图片，我们可以使用多模态模型进行解读，形成摘要。
 
-+   在向量数据库中存储图片、表格和文本的摘要向量化数据，用于检索。同时在文档存储中存储原始图片、表格和文本数据。
++ 在向量数据库中存储图片、表格和文本的摘要向量化数据，用于检索。同时在文档存储中存储原始图片、表格和文本数据。
 
-+   根据用户的问题在向量化数据库中进行向量化匹配召回对应的摘要，再返回摘要对应的原始数据（图片、表格和文本）。
++ 根据用户的问题在向量化数据库中进行向量化匹配召回对应的摘要，再返回摘要对应的原始数据（图片、表格和文本）。
 
 ### 文档加载
 
@@ -64,31 +65,31 @@ Unstructured文件解析和多向量检索器的结合可以支持半结构化�
 
 深刻理解上图：
 
-+   将文档中的表格和文本分割开来。
++ 将文档中的表格和文本分割开来。
 
-+   分别对表格和文本进行摘要总结。
++ 分别对表格和文本进行摘要总结。
 
-+   在向量数据库中存储表格和文本的摘要向量化数据，用于检索。同时在文档存储中存储原始表格和文本数据。
++ 在向量数据库中存储表格和文本的摘要向量化数据，用于检索。同时在文档存储中存储原始表格和文本数据。
 
-+   根据用户的问题在向量化数据库中进行向量化匹配召回对应的摘要，再返回摘要对应的原始数据（表格和文本）传递给LLM上下文，形成回答。
++ 根据用户的问题在向量化数据库中进行向量化匹配召回对应的摘要，再返回摘要对应的原始数据（表格和文本）传递给LLM上下文，形成回答。
 
 ### 多模态数据
 
 我们可以更进一步，将图片考虑在内，这种功能随着多模态模型 LLM（如 GPT4-V）和开源模型（如 LLaVA 和 Fuyu-8b）的推出而逐渐变得可行。至少有三种方法可以处理这个问题，这些方法都利用了上述的多向量检索框架：
 
-+   选项 1：使用多模态嵌入（和[文本嵌入](https://openai.com/index/clip/?ref=blog.langchain.dev)模型text_embedding，不一样，它可以嵌入图片和文本）（例如 CLIP）将原始图片和文本一起嵌入到向量数据库中。同时在文档存储中存储对应的原始图片和文本。使用相似度搜索进行检索，获取文档存储中对应的图片。将原始图片和文本块传递给多模态 LLM 生成回答。
++ 选项 1：使用多模态嵌入（和[文本嵌入](https://openai.com/index/clip/?ref=blog.langchain.dev)模型`text_embedding`，不一样，它可以嵌入图片和文本）（例如 CLIP）将原始图片和文本一起嵌入到向量数据库中。同时在文档存储中存储对应的原始图片和文本。使用相似度搜索进行检索，获取文档存储中对应的图片。将原始图片和文本块传递给多模态 LLM 生成回答。
 
-+   选项 2：使用多模态 LLM（如 GPT4-V、LLaVA 或 Fuyu-8b）对图片生成文本摘要。使用文本嵌入模型对文本摘要进行嵌入和检索。同样，可以从文档存储中引用原始文本块或表格供 LLM 用于生成答案；在这种情况下，我们排除文档存储中的图片（例如，无法实际使用多模态 LLM 进行合成）。
++ 选项 2：使用多模态 LLM（如 GPT4-V、LLaVA 或 Fuyu-8b）对图片生成文本摘要。使用文本嵌入模型对文本摘要进行嵌入和检索。同样，可以从文档存储中引用原始文本块或表格供 LLM 用于生成答案；在这种情况下，我们排除文档存储中的图片（例如，无法实际使用多模态 LLM 进行合成）。
 
-+   理解：选项2，使用多模态模型解读图片，生成图片的摘要文本。在文档存储中只会存储原始文本（包括文本和图片摘要）和表格，并不会在文档存储中存储图片本身。
++ 理解：选项2，使用多模态模型解读图片，生成图片的摘要文本。在文档存储中只会存储原始文本（包括文本和图片摘要）和表格，并不会在文档存储中存储图片本身。
 
-+   选项 3：使用多模态 LLM（如 GPT4-V、LLaVA 或 Fuyu-8b）对图片生成文本摘要。嵌入并检索带有原始图片引用的图片摘要，类似于选项 1 中的操作。再次将原始图片和文本块传递给多模态 LLM 进行答案生成。如果不想使用多模态嵌入，这个选项是合理的选择。
++ 选项 3：使用多模态 LLM（如 GPT4-V、LLaVA 或 Fuyu-8b）对图片生成文本摘要。嵌入并检索带有原始图片引用的图片摘要，类似于选项 1 中的操作。再次将原始图片和文本块传递给多模态 LLM 进行答案生成。如果不想使用多模态嵌入，这个选项是合理的选择。
 
 选项3和1的区别在于，选项3不直接嵌入图片本身，而是嵌入图片摘要。
 
 ![](img/453019e507461ad756a86e44f5064c54.png)
 
-我们使用70亿参数的 LLaVA 模型测试了 选项2 以生成图片摘要。LLaVA 最近已添加到llama.cpp中，这使得它可以在消费类笔记本电脑（Mac M2 max，32gb，约 45 个 token/秒）上运行，并生成合理的图片摘要。例如，对于下面的图片，它捕捉到了有趣的信息：图片显示了一个装满各种炸鸡块的托盘的特写镜头。鸡块的排列方式类似于世界地图，一些鸡块放置成大陆的形状，另一些则作为国家。鸡块的排列方式创造了一种视觉上吸引人且俏皮的世界表现形式。
+我们使用70亿参数的 LLaVA 模型测试了 选项2 以生成图片摘要。LLaVA 最近已添加到`llama.cpp`中，这使得它可以在消费类笔记本电脑（Mac M2 max，32gb，约 45 个 token/秒）上运行，并生成合理的图片摘要。例如，对于下面的图片，它捕捉到了有趣的信息：图片显示了一个装满各种炸鸡块的托盘的特写镜头。鸡块的排列方式类似于世界地图，一些鸡块放置成大陆的形状，另一些则作为国家。鸡块的排列方式创造了一种视觉上吸引人且俏皮的世界表现形式。
 
 ![](img/0170a4e9051a9c518193eea06d699d35.png)
 
@@ -110,13 +111,13 @@ Unstructured文件解析和多向量检索器的结合可以支持半结构化�
 
 对于传统的 RAG（检索增强生成），半结构化数据可能具有以下两个主要挑战：
 
-+   文本拆分可能会破坏表格，导致数据在检索中被破坏。
++ 文本拆分可能会破坏表格，导致数据在检索中被破坏。
 
-+   将表格嵌入向量化可能会在语义相似性搜索中带来困难。
++ 将表格嵌入向量化可能会在语义相似性搜索中带来困难。
 
 本实用指南展示了如何在包含半结构化数据（文本 + 表格）的文档上执行 RAG：
 
-我们将使用 Unstructured 来解析文档（PDF）中的文本和表格。 我们将使用 多向量检索器（multi-vector retriever） 来存储原始表格、文本以及更适合检索的表格摘要。 我们将使用 LCEL（LangChain Execution Loop） 来实现所需的链式操作。
+我们将使用 Unstructured 来解析文档（PDF）中的文本和表格。我们将使用 多向量检索器（multi-vector retriever） 来存储原始表格、文本以及更适合检索的表格摘要。我们将使用 LCEL（LangChain Execution Loop） 来实现所需的链式操作。
 
 整体流程如下：
 
@@ -134,9 +135,9 @@ pip install langchain langchain-chroma &quot;unstructured[all-docs]&quot; pydant
 
 使用Unstructured对PDF进行分区用到如下系统库：
 
-+   Tesseract：用于光学字符识别 (OCR)。
++ Tesseract：用于光学字符识别 (OCR)。
 
-+   Poppler：用于 PDF 渲染和处理。
++ Poppler：用于 PDF 渲染和处理。
 
 在Mac终端下进行安装：
 
@@ -148,15 +149,15 @@ brew install tesseractbrew install poppler
 
 我们使用：[LLaMA2 PDF](https://personel-zhouxinle888-a66353926f9185cff28f2bd374a5c3a9dd89d5206.gitlab.io/rag/LLaMA2.pdf)进行演示。
 
-我们使用Unstructured的partition_pdf方法，它使用布局模型分割PDF文档。
+我们使用Unstructured的`partition_pdf`方法，它使用布局模型分割PDF文档。
 
 布局模型使得从PDF中提取元素，例如表格成为可能。
 
 我们还可以使用 Unstructured 的 分块处理（chunking）：
 
-+   尝试识别文档的各个部分（例如，引言等）。
++ 尝试识别文档的各个部分（例如，引言等）。
 
-+   然后，构建保持章节结构的文本块，同时遵循用户定义的分块大小。
++ 然后，构建保持章节结构的文本块，同时遵循用户定义的分块大小。
 
 ```
 path = &quot;/Users/rlm/Desktop/Papers/LLaMA2/&quot;
@@ -188,10 +189,9 @@ raw_pdf_elements = partition_pdf(
 )
 ```
 
-我们可以检查由 partition_pdf 提取的元素。CompositeElement 是聚合的分块。
+我们可以检查由 `partition_pdf` 提取的元素。`CompositeElement` 是聚合的分块。
 
 ```
-
 # Create a dictionary to store counts of each type
 category_counts = {}
 
@@ -209,7 +209,7 @@ category_counts
 
 ```
 输出：
-{&quot;&lt;class &#x27;unstructured.documents.elements.CompositeElement&#x27;&gt;&quot;: 184,
+&quot;&lt;class &#x27;unstructured.documents.elements.CompositeElement&#x27;&gt;&quot;: 184,
  &quot;&lt;class &#x27;unstructured.documents.elements.Table&#x27;&gt;&quot;: 47,
  &quot;&lt;class &#x27;unstructured.documents.elements.TableChunk&#x27;&gt;&quot;: 2}
 ```
@@ -255,61 +255,65 @@ print(len(text_elements))
 
 我这里使用的是GPT-4o-mini对文本和表格进行总结，形成摘要。
 
-首先要配置AZURE_OPENAI_API_KEY和AZURE_OPENAI_ENDPOINT
+首先要配置`AZURE_OPENAI_API_KEY`和`AZURE_OPENAI_ENDPOINT`
 
 ```
 os.environ[&quot;AZURE_OPENAI_API_KEY&quot;] = &quot;&quot;
 os.environ[&quot;AZURE_OPENAI_ENDPOINT&quot;] = &quot;&quot;
 ```
 
+
+
+# 多模态 RAG 实现
+
 ```
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
 
-prompt_text = &quot;&quot;&quot;You are an assistant tasked with summarizing tables and text. \
-        Give a concise summary of the table or text. Table or text chunk: {element} &quot;&quot;&quot;
-    prompt = ChatPromptTemplate.from_template(prompt_text)
+prompt_text = """You are an assistant tasked with summarizing tables and text. \
+        Give a concise summary of the table or text. Table or text chunk: {element} """
+prompt = ChatPromptTemplate.from_template(prompt_text)
 
-    # 修改这里使用Azure OpenAI
-    llm = AzureChatOpenAI(
-            model=&quot;gpt-4o-mini&quot;,
-            azure_deployment=&quot;gpt-4o-mini&quot;,  # or your deployment
-            model_version=&quot;2024-07-18&quot;,
-            api_version=&quot;2024-08-01-preview&quot;,
-            temperature=0,
-            max_tokens=None,
-            timeout=None,
-            max_retries=2,
-            # other params...
-        )
-    
-    summarize_chain = {&quot;element&quot;: lambda x: x} | prompt | llm | StrOutputParser()
+# 修改这里使用Azure OpenAI
+llm = AzureChatOpenAI(
+        model="gpt-4o-mini",
+        azure_deployment="gpt-4o-mini",  # or your deployment
+        model_version="2024-07-18",
+        api_version="2024-08-01-preview",
+        temperature=0,
+        max_tokens=None,
+        timeout=None,
+        max_retries=2,
+        # other params...
+    )
 
-    # 处理表格元素
-    tables = [i.text for i in table_elements]
-    table_summaries.clear()  # 清空现有内容
-    table_summaries.extend(summarize_chain.batch(tables, {&quot;max_concurrency&quot;: 5}))
-    print(&quot;表格摘要数量:&quot;, len(table_summaries))
-    print(&quot;表格摘要:&quot;, table_summaries)
+summarize_chain = {"element": lambda x: x} | prompt | llm | StrOutputParser()
 
-    # 处理文本元素
-    texts = [i.text for i in text_elements]
-    text_summaries.clear()  # 清空现有内容
-    text_summaries.extend(summarize_chain.batch(texts, {&quot;max_concurrency&quot;: 5}))
-    print(&quot;文本摘要数量:&quot;, len(text_summaries))
-    print(&quot;文本摘要:&quot;, text_summaries)
+# 处理表格元素
+tables = [i.text for i in table_elements]
+table_summaries.clear()  # 清空现有内容
+table_summaries.extend(summarize_chain.batch(tables, {"max_concurrency": 5}))
+print("表格摘要数量:", len(table_summaries))
+print("表格摘要:", table_summaries)
+
+# 处理文本元素
+texts = [i.text for i in text_elements]
+text_summaries.clear()  # 清空现有内容
+text_summaries.extend(summarize_chain.batch(texts, {"max_concurrency": 5}))
+print("文本摘要数量:", len(text_summaries))
+print("文本摘要:", text_summaries)
 ```
 
 ## 创建检索器
 
 使用多向量检索器：
 
-+   InMemoryStore 存储原始文本和表格。
++   `InMemoryStore` 存储原始文本和表格。
 
-+   vectorstore 存储嵌入文本和表格的摘要。
++   `vectorstore` 存储嵌入文本和表格的摘要。
 
-vectorstore和InMemoryStore使用id进行关联，关联向量化摘要数据和原始数据。
+`vectorstore`和`InMemoryStore`使用`id`进行关联，关联向量化摘要数据和原始数据。
 
 ```
 import uuid
@@ -321,11 +325,11 @@ from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
 
 # The vectorstore to use to index the child chunks
-vectorstore = Chroma(collection_name=&quot;summaries&quot;, embedding_function=OpenAIEmbeddings())
+vectorstore = Chroma(collection_name="summaries", embedding_function=OpenAIEmbeddings())
 
 # The storage layer for the parent documents
 store = InMemoryStore()
-id_key = &quot;doc_id&quot;
+id_key = "doc_id"
 
 # The retriever (empty to start)
 retriever = MultiVectorRetriever(
@@ -359,18 +363,18 @@ retriever.docstore.mset(list(zip(table_ids, tables)))
 from langchain_core.runnables import RunnablePassthrough
 
 # Prompt template
-template = &quot;&quot;&quot;Answer the question based only on the following context, which can include text and tables:
+template = """Answer the question based only on the following context, which can include text and tables:
 {context}
 Question: {question}
-&quot;&quot;&quot;
+"""
 prompt = ChatPromptTemplate.from_template(template)
 
 # LLM
-model = ChatOpenAI(temperature=0, model=&quot;gpt-4&quot;)
+model = ChatOpenAI(temperature=0, model="gpt-4")
 
 # RAG pipeline
 chain = (
-    {&quot;context&quot;: retriever, &quot;question&quot;: RunnablePassthrough()}
+    {"context": retriever, "question": RunnablePassthrough()}
     | prompt
     | model
     | StrOutputParser()
@@ -379,18 +383,18 @@ chain = (
 
 ```
 提问：
-chain.invoke(&quot;What is the number of training tokens for LLaMA2?&quot;)
+chain.invoke("What is the number of training tokens for LLaMA2?")
 ```
 
 ```
 结果：
-&#x27;The number of training tokens for LLaMA2 is 2.0T.&#x27;
+'The number of training tokens for LLaMA2 is 2.0T.'
 ```
 
 我们可以观察：根据用户问题，召回的是向量化数据库中的下方的表格摘要，如图：
 
 ![](img/dec5dda815700830adc4e6c89c35db14.png)
 
-然后将关联的InMemoryStore中存储的原始表格和用户的问题作为LLM的上下文，形成回答。
+然后将关联的`InMemoryStore`中存储的原始表格和用户的问题作为LLM的上下文，形成回答。
 
 [原文链接](https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_Structured_RAG.ipynb)

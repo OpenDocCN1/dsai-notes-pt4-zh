@@ -1,10 +1,11 @@
+
 # openai官方《提示词工程课》超详细中文笔记
 
 > 来源：[https://ga67w23t0nn.feishu.cn/docx/PuULdQP3wojyZYxn157cnsDXnqe](https://ga67w23t0nn.feishu.cn/docx/PuULdQP3wojyZYxn157cnsDXnqe)
 
 欢迎👏🏻 Star我们最新的用AI创建技能库的框架
 
-吴恩达携手op[enai出了官方的提示词工程课](https://zhuanlan.zhihu.com/p/623672319) @吴恩达 @openai 内含代码，示例解说和视频。
+吴恩达携手[OpenAI出了官方的提示词工程课](https://zhuanlan.zhihu.com/p/623672319) @吴恩达 @openai 内含代码，示例解说和视频。
 
 吴恩达作为AI届的泰斗，我个人非常认可他对未来的判断，可参考：吴恩达来信：LLMs的美好未来
 
@@ -15,23 +16,17 @@
 面向人群：
 
 - 稍微懂点python的小白。
-
 - 不懂python也可以通过chatGPT快速自学。
-
 - 想要拿来开箱就用的小白，劝退！
 
 这门课的内容包括
 
 1. 学习如何使用大型语言模型（LLM）快速构建新的强大应用程序。使用OpenAI API，您将能够快速构建学习创新和创造价值的能力。这些能力在以前由于成本高昂、技术含量高根本不可能。
-
 2. 这门由Isa Fulford（OpenAI）和Andrew Ng（DeepLearning.AI）教授的短期课程将描述 LLM 的工作原理，提供快速工程的最佳实践，并展示 LLM API 如何在应用程序中用于各种任务，包括：
 
 - 总结（例如，为简洁起见总结用户评论）
-
 - 推断（例如，情感分类、主题提取）
-
 - 转换文本（例如，翻译、拼写和语法更正）
-
 - 扩展（例如，自动编写电子邮件）
 
 此外，您将学习编写有效提示的两个关键原则，如何系统地设计好的提示，并学习构建自定义聊天机器人。
@@ -46,13 +41,13 @@
 
 结尾有惊喜！！可以加入交流学习群哟(＾Ｕ＾)ノ~ＹＯ
 
-# 简介 / Introduction
+## 简介 / Introduction
 
-![](img/b8a1a350dff4504ae01413f2505b4ae9.png)
+![](img/b8a1a350dff4504ae01314f2505b4ae9.png)
 
 [prompt_eng_01_intro_v5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FhmWbk2vQojPpkxx8e1cXlg2nyf)
 
-## 教学目标
+### 教学目标
 
 欢迎来到本课程，我们将为开发人员介绍 ChatGPT 提示工程。本课程由 Isa Fulford 教授和我一起授课。Isa Fulford 是 OpenAI 的技术团队成员，曾开发过受欢迎的 ChatGPT 检索插件，并且在教授人们如何在产品中使用 LLM 或 LLM 技术方面做出了很大贡献。她还参与编写了教授人们使用 Prompt 的 OpenAI cookbook。
 
@@ -60,7 +55,7 @@
 
 在本课程中，我们将与您分享一些可能性以及如何实现它们的最佳实践。
 
-## 指令LLM
+### 指令LLM
 
 在构建大型语言模型或LLM的开发过程中，通常有两种类型的LLM，即基础LLM和指令微调LLM。
 
@@ -78,7 +73,7 @@
 
 我们希望这能激发您构建新应用程序的想象力。
 
-# 提示指南 / Guidelines
+## 提示指南 / Guidelines
 
 ![](img/6ff5428cc8aa1a9ea8a9a353054f7c19.png)
 
@@ -92,13 +87,13 @@
 
 > **第二个原则：**给模型足够的时间思考。
 
-## 环境准备
+### 环境准备
 
 在我们开始之前，我们需要进行一些设置。
 
 在整个课程中，我们将使用OpenAI Python库来访问OpenAI API。
 
-如果您还没有安装此Python库，您可以使用PIP进行安装，如下所示：
+如果您还没有安装此Python库，您可以使用`PIP`进行安装，如下所示：
 
 ```
 pip install openai
@@ -113,26 +108,26 @@ import os
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())
 
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
 在本课程中，您不需要执行任何此操作。您只需运行此代码，因为我们已经在环境中设置了API密钥。我会将其复制。不要担心这是如何工作的。
 
-在整个课程中，我们将使用OpenAI的ChatGPT模型，GPT-3.5-Turbo。
+在整个课程中，我们将使用OpenAI的ChatGPT模型，`gpt-3.5-turbo`。
 
-## 帮助函数
+### 帮助函数
 
-现在，我们将定义此帮助函数，以便更轻松地使用提示并查看生成的输出。函数getCompletion接收提示并返回该提示的完成结果。
+现在，我们将定义此帮助函数，以便更轻松地使用提示并查看生成的输出。函数`getCompletion`接收提示并返回该提示的完成结果。
 
 ```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=0, # this is the degree of randomness of the model&#x27;s output
+        temperature=0, # this is the degree of randomness of the model's output
     )
-    return response.choices[0].message[&quot;content&quot;]
+    return response.choices[0].message["content"]
 ```
 
 现在让我们深入了解我们的第一个原则，即编写明确和具体的指令。您应该通过提供尽可能清晰和具体的指令来表达您想要模型执行的任务。这将引导模型朝着所需的输出方向，并减少获取无关或不正确响应的机会。
@@ -141,9 +136,9 @@ def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
 
 不要混淆清晰的提示与简短的提示，因为在许多情况下，更长的提示实际上提供了更多的清晰度和上下文，这实际上可以导致更详细和相关的输出。帮助您编写清晰和具体指令的第一个策略是使用分隔符清晰地指示输入的不同部分。
 
-## 原则一：明确具体的指令
+### 原则一：明确具体的指令
 
-### 技巧1：使用区分符
+#### 技巧1：使用区分符
 
 这段视频中，Isa向我们介绍了两个提示编写原则，以帮助我们获得所需的结果。首先，我们应该写出明确和具体的指令，以引导模型生成我们需要的输出，减少获取无关或错误响应的可能性。与此相关的一个策略是使用分隔符，明确指示输入的不同部分。这些分隔符可以是任何明确的标点符号，例如三个反引号，引号，XML标记，部分标题等，让模型清楚地知道哪些是独立的部分，以避免提示注入。
 
@@ -151,73 +146,78 @@ def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
 
 示例中，我们要求模型将由三个反引号括起来的文本总结成一个句子，以清晰地指示模型需要处理哪些文本部分。如果没有分隔符，用户可能会添加不相关的输入，导致模型输出错误的结果。因此，使用分隔符可以提高模型的准确性和稳定性。
 
-+   区分符可以是任何符号，比如```, """, < >, <tag> </tag>, :
++   区分符可以是任何符号，比如 `` ``` ``、`"""`、`< >`、`<tag> </tag>`、`:`
 
-```
-text = f&quot;&quot;&quot;
+````
+text = f"""
 You should express what you want a model to do by \ 
 providing instructions that are as clear and \ 
 specific as you can possibly make them. \ 
 This will guide the model towards the desired output, \ 
 and reduce the chances of receiving irrelevant \ 
-or incorrect responses. Don&#x27;t confuse writing a \ 
+or incorrect responses. Don't confuse writing a \ 
 clear prompt with writing a short prompt. \ 
 In many cases, longer prompts provide more clarity \ 
 and context for the model, which can lead to \ 
 more detailed and relevant outputs.
-&quot;&quot;&quot;
-prompt = f&quot;&quot;&quot;
+"""
+
+prompt = f"""
 Summarize the text delimited by triple backticks \ 
 into a single sentence.
+
 ```{text}```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 To guide a model towards the desired output and reduce the chances of irrelevant or incorrect responses, it is important to provide clear and specific instructions, which may require longer prompts for more clarity and context.
-&quot;&quot;&quot;
-```
+"""
+````
 
-### 技巧2：结构化输出
+#### 技巧2：结构化输出
 
 下一个策略是要求结构化输出。为了更容易解析模型输出，要求模型以HTML或JSON等结构化格式提供输出可能是有帮助的。在示例中，我们要求模型生成三本虚构图书的书名、作者和类型，并使用JSON格式以特定键的形式提供输出。我们可以看到，我们得到了三个格式良好的虚构图书的标题，并以JSON结构化输出的形式呈现出来。这种输出方式的好处是，我们可以在Python中将其读入字典或列表中。
 
 ```
-prompt = f&quot;&quot;&quot;
+prompt = f"""
 Generate a list of three made-up book titles along \ 
 with their authors and genres. 
 Provide them in JSON format with the following keys: 
 book_id, title, author, genre.
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 [
   {
-    &quot;book_id&quot;: 1,
-    &quot;title&quot;: &quot;The Lost City of Zorath&quot;,
-    &quot;author&quot;: &quot;Aria Blackwood&quot;,
-    &quot;genre&quot;: &quot;Fantasy&quot;
+    "book_id": 1,
+    "title": "The Lost City of Zorath",
+    "author": "Aria Blackwood",
+    "genre": "Fantasy"
   },
   {
-    &quot;book_id&quot;: 2,
-    &quot;title&quot;: &quot;The Last Survivors&quot;,
-    &quot;author&quot;: &quot;Ethan Stone&quot;,
-    &quot;genre&quot;: &quot;Science Fiction&quot;
+    "book_id": 2,
+    "title": "The Last Survivors",
+    "author": "Ethan Stone",
+    "genre": "Science Fiction"
   },
   {
-    &quot;book_id&quot;: 3,
-    &quot;title&quot;: &quot;The Secret Life of Bees&quot;,
-    &quot;author&quot;: &quot;Lila Rose&quot;,
-    &quot;genre&quot;: &quot;Romance&quot;
+    "book_id": 3,
+    "title": "The Secret Life of Bees",
+    "author": "Lila Rose",
+    "genre": "Romance"
   }
 ]
-&quot;&quot;&quot;
+"""
 ```
 
-### 技巧3：条件是否满足
+#### 技巧3：条件是否满足
 
-下一个策略是让模型检查条件是否被满足。如果任务有一些假设并不一定满足，我们可以告诉模型先检查这些假设，如果不满足，则指出并停止任务完成的尝试。你也可以考虑潜在的边界情况以及模型应该如何处理它们，以避免意外错误或结果。在这个例子中，我们给出了一段描述泡茶步骤的段落，然后我们用一个 prompt 让模型提取这些指令。如果它在文本中找不到任何指令，我们让它输出“no steps provided”。在第二个段落中，模型判断没有找到任何指令。
+下一个策略是让模型检查条件是否被满足。如果任务有一些假设并不一定满足，我们可以告诉模型先检查这些假设，如果不满足，则指出并停止任务完成的尝试。你也可以考虑潜在的边界情况以及模型应该如何处理它们，以避免意外错误或结果。在这个例子中，我们给出了一段描述泡茶步骤的段落，然后我们用一个 prompt 让模型提取这些指令。如果它在文本中找不到任何指令，我们让它输出`no steps provided`。在第二个段落中，模型判断没有找到任何指令。
+
+
+
 
 ```
 text_1 = f&quot;&quot;&quot;
@@ -329,17 +329,14 @@ print(response)
 
 首先，我们可以使用明确的步骤来完成一个任务。在这个例子中，我们给模型提供了一个包含Jack and Jill故事概述的段落，并且使用明确的步骤指示模型完成四个任务：
 
-1.  首先，用一句话来概括文本
-
-1.  其次将概述翻译成法语
-
-1.  然后列出法语概述中的每个名称
-
-1.  并且输出一个JSON对象包含"French summary"和"num names"两个key。
+1. 首先，用一句话来概括文本
+2. 其次将概述翻译成法语
+3. 然后列出法语概述中的每个名称
+4. 并且输出一个JSON对象包含"French summary"和"num names"两个key。
 
 最后我们添加了这个段落的文本。运行这个模型后，我们可以看到模型分别完成了这四个任务，并按照我们要求的格式输出了结果。
 
-```
+````
 text = f&quot;&quot;&quot;
 In a charming village, siblings Jack and Jill set out on \ 
 a quest to fetch water from a hilltop \ 
@@ -365,60 +362,95 @@ Separate your answers with line breaks.
 
 Text:
 ```{text}```
+
 &quot;&quot;&quot;
+
 response = get_completion(prompt_1)
+
 print(&quot;Completion for prompt 1:&quot;)
+
 print(response)
+
 &quot;&quot;&quot;
+
 Completion for prompt 1:
+
 Two siblings, Jack and Jill, go on a quest to fetch water from a well on a hilltop, but misfortune strikes and they both tumble down the hill, returning home slightly battered but with their adventurous spirits undimmed.
 
 Deux frères et sœurs, Jack et Jill, partent en quête d&#x27;eau d&#x27;un puits sur une colline, mais un malheur frappe et ils tombent tous les deux de la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts. 
+
 Noms: Jack, Jill.
 
 {
+
   &quot;french_summary&quot;: &quot;Deux frères et sœurs, Jack et Jill, partent en quête d&#x27;eau d&#x27;un puits sur une colline, mais un malheur frappe et ils tombent tous les deux de la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.&quot;,
+
   &quot;num_names&quot;: 2
+
 }
+
 &quot;&quot;&quot;
-```
+````
 
 现在我将向您展示另一个提示，以完成相同的任务。在这个提示中，我使用了一个我很喜欢使用的格式，来指定模型的输出结构。
 
 因为正如您在这个示例中注意到的那样，这个名称的标题是法语的，这可能不是我们想要的。如果我们要传递这个输出，可能会有一些困难和不可预测性。因此，在这个提示中，我们要求类似的内容，即开始时要求相同的步骤，然后要求模型使用以下格式：文本、摘要、翻译、名称和输出JSON。
 
-接着，我们只需输入要摘要的文本，或者只需说“text”。然后，我们开始运行代码。可以看到，这是完成的结果。模型使用了我们要求的格式。因此，有时这很好，因为它将更容易传递代码，因为它具有更加标准化的格式，可以更好地预测。
+接着，我们只需输入要摘要的文本，或者只需说“`text`”。然后，我们开始运行代码。可以看到，这是完成的结果。模型使用了我们要求的格式。因此，有时这很好，因为它将更容易传递代码，因为它具有更加标准化的格式，可以更好地预测。
 
 同时请注意，在这种情况下，我们使用了尖括号作为分隔符，而不是三个反引号。你可以选择任何对你来说有意义或对模型有意义的分隔符。
 
 ```
 prompt_2 = f&quot;&quot;&quot;
+
 Your task is to perform the following actions: 
+
 1 - Summarize the following text delimited by 
+
   &lt;&gt; with 1 sentence.
+
 2 - Translate the summary into French.
+
 3 - List each name in the French summary.
+
 4 - Output a json object that contains the 
+
   following keys: french_summary, num_names.
 
 Use the following format:
+
 Text: &lt;text to summarize&gt;
+
 Summary: &lt;summary&gt;
+
 Translation: &lt;summary translation&gt;
+
 Names: &lt;list of names in Italian summary&gt;
+
 Output JSON: &lt;json with summary and num_names&gt;
 
 Text: &lt;{text}&gt;
+
 &quot;&quot;&quot;
+
 response = get_completion(prompt_2)
+
 print(&quot;\nCompletion for prompt 2:&quot;)
+
 print(response)
+
 &quot;&quot;&quot;
+
 Completion for prompt 2:
+
 Summary: Jack and Jill go on a quest to fetch water, but misfortune strikes and they tumble down the hill, returning home slightly battered but with their adventurous spirits undimmed. 
+
 Translation: Jack et Jill partent en quête d&#x27;eau, mais un malheur frappe et ils tombent de la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.
+
 Names: Jack, Jill
+
 Output JSON: {&quot;french_summary&quot;: &quot;Jack et Jill partent en quête d&#x27;eau, mais un malheur frappe et ils tombent de la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.&quot;, &quot;num_names&quot;: 2}
+
 &quot;&quot;&quot;
 ```
 
@@ -430,35 +462,44 @@ Output JSON: {&quot;french_summary&quot;: &quot;Jack et Jill partent en quête d
 
 ```
 prompt = f&quot;&quot;&quot;
-Determine if the student&#x27;s solution is correct or not.
-
-Question:
-I&#x27;m building a solar power installation and I need \
- help working out the financials. 
-- Land costs $100 / square foot
-- I can buy solar panels for $250 / square foot
-- I negotiated a contract for maintenance that will cost \ 
-me a flat $100k per year, and an additional $10 / square \
-foot
-What is the total cost for the first year of operations 
-as a function of the number of square feet.
-
-Student&#x27;s Solution:
-Let x be the size of the installation in square feet.
-Costs:
-1. Land cost: 100x
-2. Solar panel cost: 250x
-3. Maintenance cost: 100,000 + 100x
-Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
-&quot;&quot;&quot;
-response = get_completion(prompt)
-print(response)
-&quot;&quot;&quot;
-The student&#x27;s solution is correct.
-&quot;&quot;&quot;
 ```
 
-事实上，学生的解答是错误的，因为他们计算了维护费用为100,000加100x，但实际上应该是10x，因为每平方英尺只有10美元，其中x是安装面积的大小（以平方英尺为单位）。因此，应该是360x加100,000，而不是450x。
+
+
+Determine if the student's solution is correct or not.
+
+**Question:**
+
+I'm building a solar power installation and I need help working out the financials.
+
+- Land costs $100 / square foot
+- I can buy solar panels for $250 / square foot
+- I negotiated a contract for maintenance that will cost me a flat $100k per year, and an additional $10 / square foot
+
+What is the total cost for the first year of operations as a function of the number of square feet.
+
+**Student's Solution:**
+
+Let `x` be the size of the installation in square feet.
+
+Costs:
+
+1. Land cost: `100x`
+2. Solar panel cost: `250x`
+3. Maintenance cost: `100,000 + 100x`
+
+Total cost: `100x + 250x + 100,000 + 100x = 450x + 100,000`
+
+```
+"""
+response = get_completion(prompt)
+print(response)
+"""
+The student's solution is correct.
+"""
+```
+
+事实上，学生的解答是错误的，因为他们计算了维护费用为 `100,000 + 100x`，但实际上应该是 `10x`，因为每平方英尺只有 `10` 美元，其中 `x` 是安装面积的大小（以平方英尺为单位）。因此，应该是 `360x + 100,000`，而不是 `450x`。
 
 如果我们运行这个单元格代码，模型会说学生的解答是正确的。
 
@@ -466,53 +507,67 @@ The student&#x27;s solution is correct.
 
 因此，我们可以通过指示模型先计算自己的解答，然后再将其与学生的解答进行比较来解决这个问题。我们可以通过一个更长的提示来实现这一点。我们告诉模型如下：
 
-您的任务是确定学生的解答是否正确。要解决这个问题，请执行以下步骤。
+您的任务是确定学生的解答是否正确。要解决这个问题，请执行以下步骤：
 
-1.  首先，计算出您自己的解答。
-
-1.  然后将您的解答与学生的解答进行比较，并评估学生的解答是否正确。
+1. 首先，计算出您自己的解答。
+1. 然后将您的解答与学生的解答进行比较，并评估学生的解答是否正确。
 
 在你自己解题之前，不要决定学生的解答是否正确。确保您自己解决了这个问题。
 
 因此，我们使用了相同的格式，即问题、学生解答、实际解答，以及解答是否一致（是或否）和学生的成绩（正确或错误）。因此，我们有与上面相同的问题和解答。
 
-```
-prompt = f&quot;&quot;&quot;
-Your task is to determine if the student&#x27;s solution \
+````python
+prompt = f"""
+Your task is to determine if the student's solution \
 is correct or not.
+
 To solve the problem do the following:
+
 - First, work out your own solution to the problem. 
-- Then compare your solution to the student&#x27;s solution \ 
-and evaluate if the student&#x27;s solution is correct or not. 
-Don&#x27;t decide if the student&#x27;s solution is correct until 
+
+- Then compare your solution to the student's solution \
+and evaluate if the student's solution is correct or not. 
+
+Don't decide if the student's solution is correct until 
 you have done the problem yourself.
 
 Use the following format:
+
 Question:
+
 ```
 question here
 ```
-Student&#x27;s solution:
+
+Student's solution:
+
 ```
-student&#x27;s solution here
+student's solution here
 ```
+
 Actual solution:
+
 ```
 steps to work out the solution and your solution here
 ```
-Is the student&#x27;s solution the same as actual solution \
+
+Is the student's solution the same as actual solution \
 just calculated:
+
 ```
 yes or no
 ```
+
 Student grade:
+
 ```
 correct or incorrect
 ```
 
 Question:
+
 ```
-I&#x27;m building a solar power installation and I need help \
+I'm building a solar power installation and I need help \
 working out the financials. 
 - Land costs $100 / square foot
 - I can buy solar panels for $250 / square foot
@@ -522,7 +577,9 @@ foot
 What is the total cost for the first year of operations \
 as a function of the number of square feet.
 ``` 
-Student&#x27;s solution:
+
+Student's solution:
+
 ```
 Let x be the size of the installation in square feet.
 Costs:
@@ -531,61 +588,75 @@ Costs:
 3. Maintenance cost: 100,000 + 100x
 Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
 ```
+
 Actual solution:
-&quot;&quot;&quot;
+
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
+
 Let x be the size of the installation in square feet.
 
 Costs:
+
 1. Land cost: 100x
 2. Solar panel cost: 250x
 3. Maintenance cost: 100,000 + 10x
-
 Total cost: 100x + 250x + 100,000 + 10x = 360x + 100,000
 
-Is the student&#x27;s solution the same as actual solution just calculated:
+Is the student's solution the same as actual solution just calculated:
+
 No
 
 Student grade:
+
 Incorrect
-&quot;&quot;&quot;
-```
+"""
+````
 
-那么现在，如果我们运行这个单元格......正如你看到的，这个模型实际上首先进行了自己的计算。然后，它找到了正确的答案，即360x加上100,000，而不是450x加上100,000。然后，当被要求将其与学生的解决方案进行比较时，它意识到它们不一致。因此，学生实际上是不正确的。这是一个例子，展示了学生的解决方案是正确的，但学生的解决方案实际上是错误的。这是一个例子，展示了让模型自己进行计算，并将任务分解为步骤，以便给模型更多的时间思考，可以帮助您获得更准确的响应。
+那么现在，如果我们运行这个单元格……正如你看到的，这个模型实际上首先进行了自己的计算。然后，它找到了正确的答案，即 `360x + 100,000`，而不是 `450x + 100,000`。然后，当被要求将其与学生的解决方案进行比较时，它意识到它们不一致。因此，学生实际上是不正确的。这是一个例子，展示了学生的解决方案是正确的，但学生的解决方案实际上是错误的。这是一个例子，展示了让模型自己进行计算，并将任务分解为步骤，以便给模型更多的时间思考，可以帮助您获得更准确的响应。
 
-### 局限：模型幻觉
+## 局限：模型幻觉
 
 接下来，我们将谈论一些模型的限制，因为我认为在使用大型语言模型开发应用程序时，牢记这些限制非常重要。如果模型在训练过程中接触到大量的知识，它并不是完美地记住了它看到的信息，因此它并不很好地知道它的知识边界。这意味着它可能会尝试回答关于晦涩话题的问题，并且可能会编造听起来合理但实际上不正确的内容。我们将这些编造的想法称为幻觉。
 
-我将给您展示一个例子，其中模型会产生幻觉。这是一个例子，其中模型从一个真正的牙刷公司创造了一个虚构的产品名字。因此，提示是“告诉我关于Boy的AeroGlide Ultra Slim Smart Toothbrush。”如果我们运行这个提示，模型将为我们提供一个相当逼真的虚构产品的描述。这种情况可能比较危险，因为这听起来非常真实。
+我将给您展示一个例子，其中模型会产生幻觉。这是一个例子，其中模型从一个真正的牙刷公司创造了一个虚构的产品名字。因此，提示是“告诉我关于 Boy 的 AeroGlide Ultra Slim Smart Toothbrush。”如果我们运行这个提示，模型将为我们提供一个相当逼真的虚构产品的描述。这种情况可能比较危险，因为这听起来非常真实。
 
 因此，请确保在构建自己的应用程序时使用我们在这个笔记本中介绍的一些技巧，尽量避免这种情况。这是模型已知的弱点，我们正在积极努力解决。在文本中寻找相关引用，并要求模型使用这些引用来回答问题，并且有一种追溯答案到源文档的方法，通常可以减少这些幻觉。
 
 ```
-prompt = f&quot;&quot;&quot;
+"""
+
+prompt = f"""
+
 Tell me about AeroGlide UltraSlim Smart Toothbrush by Boie
-&quot;&quot;&quot;
+
+"""
+
 response = get_completion(prompt)
+
 print(response)
-&quot;&quot;&quot;
+
+"""
+
 The AeroGlide UltraSlim Smart Toothbrush by Boie is a high-tech toothbrush that uses advanced sonic technology to provide a deep and thorough clean. It features a slim and sleek design that makes it easy to hold and maneuver, and it comes with a range of smart features that help you optimize your brushing routine.
 
 One of the key features of the AeroGlide UltraSlim Smart Toothbrush is its advanced sonic technology, which uses high-frequency vibrations to break up plaque and bacteria on your teeth and gums. This technology is highly effective at removing even the toughest stains and buildup, leaving your teeth feeling clean and fresh.
 
-In addition to its sonic technology, the AeroGlide UltraSlim Smart Toothbrush also comes with a range of smart features that help you optimize your brushing routine. These include a built-in timer that ensures you brush for the recommended two minutes, as well as a pressure sensor that alerts you if you&#x27;re brushing too hard.
+In addition to its sonic technology, the AeroGlide UltraSlim Smart Toothbrush also comes with a range of smart features that help you optimize your brushing routine. These include a built-in timer that ensures you brush for the recommended two minutes, as well as a pressure sensor that alerts you if you're brushing too hard.
 
 Overall, the AeroGlide UltraSlim Smart Toothbrush by Boie is a highly advanced and effective toothbrush that is perfect for anyone looking to take their oral hygiene to the next level. With its advanced sonic technology and smart features, it provides a deep and thorough clean that leaves your teeth feeling fresh and healthy.
-&quot;&quot;&quot;
+
+"""
 ```
 
 这就是提示指南的全部内容，接下来您将转到下一个视频，该视频将介绍迭代提示开发过程。
 
 > 关于反斜杠的说明：
-
+>
 > 在本课程中，我们使用反斜杠\来使文本适应屏幕而不插入换行符'\n'字符。
-
+>
 > GPT-3实际上不受您是否插入换行符的影响。但是在使用LLM时，您可能需要考虑您的提示中的换行符是否会影响模型的性能。
 
 # 迭代提示 / Iterative
@@ -602,33 +673,31 @@ Overall, the AeroGlide UltraSlim Smart Toothbrush by Boie is a highly advanced a
 
 如果您之前参加过我的机器学习课程，您可能会看到我使用一个图表，说在机器学习开发中，您经常有一个想法，然后实现它。编写代码，获取数据，训练模型，这就给您一个实验结果。然后您可以查看该输出，进行错误分析，找出哪些地方工作或不工作，然后甚至可以改变您要解决的问题或如何处理它的确切想法，并更改实现并运行另一个实验等，一遍又一遍地迭代，以获得有效的机器学习模型。
 
-如果您对机器学习不熟悉，并且以前没有看过这个图表，请不要担心，对于本次演示的其余部分来说，这并不重要。但是，当您编写提示以使用OOM开发应用程序时，该过程可能非常相似，您可以有一个关于您想要完成的任务的想法，然后尝试编写第一个提示，希望它清晰具体，并可能在适当的情况下给系统一些时间来思考，然后运行它并查看结果。
+如果您对机器学习不熟悉，并且以前没有看过这个图表，请不要担心，对于本次演示的其余部分来说，这并不重要。但是，当您编写提示以使用 OOM 开发应用程序时，该过程可能非常相似，您可以有一个关于您想要完成的任务的想法，然后尝试编写第一个提示，希望它清晰具体，并可能在适当的情况下给系统一些时间来思考，然后运行它并查看结果。
 
 如果第一次不能很好地工作，那么迭代过程就开始了，找出指令不够清晰或没有给算法足够的时间思考的原因，使您可以不断完善想法、完善提示等等，直到您得到适合您应用程序的提示。这也是为什么我个人没有太关注互联网上那些说30个完美提示的文章，因为我认为可能并不存在一个适用于所有情况的完美提示。更重要的是，您要有一个针对特定应用程序开发良好提示的流程。让我们一起看一个示例代码。
 
 ## 环境准备
 
-这里我们获取了Open AI API密钥，这是上一次您看到的同一辅助函数。
+这里我们获取了 Open AI API 密钥，这是上一次您看到的同一辅助函数。
 
-```
+```python
 import openai
 import os
-
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
-
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
-```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
+```python
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=0, # this is the degree of randomness of the model&#x27;s output
+        temperature=0, # this is the degree of randomness of the model's output
     )
-    return response.choices[0].message[&quot;content&quot;]
+    return response.choices[0].message["content"]
 ```
 
 ## 案例1：生成产品描述
@@ -639,55 +708,78 @@ def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
 
 我将这样说明我的任务，然后粘贴到代码中。
 
-```
-fact_sheet_chair = &quot;&quot;&quot;
+```python
+fact_sheet_chair = """
+
 OVERVIEW
+
 - Part of a beautiful family of mid-century inspired office furniture, 
+
 including filing cabinets, desks, bookcases, meeting tables, and more.
+
 - Several options of shell color and base finishes.
+
 - Available with plastic back and front upholstery (SWC-100) 
+
 or full upholstery (SWC-110) in 10 fabric and 6 leather options.
+
 - Base finish options are: stainless steel, matte black, 
+
 gloss white, or chrome.
+
 - Chair is available with or without armrests.
+"""
+```
+
+
+
+
 - Suitable for home or business settings.
 - Qualified for contract use.
 
-CONSTRUCTION
+### CONSTRUCTION
+
 - 5-wheel plastic coated aluminum base.
 - Pneumatic chair adjust for easy raise/lower action.
 
-DIMENSIONS
+### DIMENSIONS
+
 - WIDTH 53 CM | 20.87”
 - DEPTH 51 CM | 20.08”
 - HEIGHT 80 CM | 31.50”
 - SEAT HEIGHT 44 CM | 17.32”
 - SEAT DEPTH 41 CM | 16.14”
 
-OPTIONS
-- Soft or hard-floor caster options.
-- Two choices of seat foam densities: 
- medium (1.8 lb/ft3) or high (2.8 lb/ft3)
-- Armless or 8 position PU armrests 
+### OPTIONS
 
-MATERIALS
-SHELL BASE GLIDER
+- Soft or hard-floor caster options.
+- Two choices of seat foam densities:  
+  medium (1.8 lb/ft3) or high (2.8 lb/ft3)
+- Armless or 8 position PU armrests
+
+### MATERIALS
+
+#### SHELL BASE GLIDER
+
 - Cast Aluminum with modified nylon PA6/PA66 coating.
 - Shell thickness: 10 mm.
-SEAT
+
+#### SEAT
+
 - HD36 foam
 
-COUNTRY OF ORIGIN
+### COUNTRY OF ORIGIN
+
 - Italy
-&quot;&quot;&quot;
-```
+
+"""
 
 所以我的提示是：您的任务是帮助营销团队基于技术事实表为零售网站或产品创建描述，编写产品描述等。
 
 这是我向大型语言模型解释任务的第一次尝试。让我按Shift + Enter，这需要几秒钟运行，我们得到了结果。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to help a marketing team create a 
 description for a retail website of a product based 
 on a technical fact sheet.
@@ -697,10 +789,10 @@ provided in the technical specifications delimited by
 triple backticks.
 
 Technical specifications: ```{fact_sheet_chair}```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 Introducing our stunning mid-century inspired office chair, the perfect addition to any home or business setting. Part of a beautiful family of office furniture, including filing cabinets, desks, bookcases, meeting tables, and more, this chair is available in several options of shell color and base finishes to suit your style. Choose from plastic back and front upholstery (SWC-100) or full upholstery (SWC-110) in 10 fabric and 6 leather options.
 
 The chair is constructed with a 5-wheel plastic coated aluminum base and features a pneumatic chair adjust for easy raise/lower action. It is available with or without armrests and is qualified for contract use. The base finish options are stainless steel, matte black, gloss white, or chrome.
@@ -710,9 +802,8 @@ Measuring at a width of 53 cm, depth of 51 cm, and height of 80 cm, with a seat 
 The materials used in the construction of this chair are of the highest quality. The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating and has a shell thickness of 10 mm. The seat is made of HD36 foam, ensuring maximum comfort and durability.
 
 This chair is made in Italy and is the perfect combination of style and functionality. Upgrade your workspace with our mid-century inspired office chair today!
-&quot;&quot;&quot;
-
-```
+"""
+````
 
 看起来它已经很好地写了一个描述，介绍了一款令人惊叹的中世纪灵感办公椅，完美的版型等等。
 
@@ -722,8 +813,8 @@ This chair is made in Italy and is the perfect combination of style and function
 
 所以我想到了一个主意，我编写了一个提示并得到了结果。我对它不是很满意，因为它太长了，所以我会澄清我的提示，说使用最多50个单词来更好地指导所需长度，然后再次运行它。看起来这是一个更好的产品简短描述，介绍了一个中世纪灵感的办公椅，同时又时尚又实用。不错。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to help a marketing team create a 
 description for a retail website of a product based 
 on a technical fact sheet.
@@ -735,13 +826,17 @@ triple backticks.
 Use at most 50 words.
 
 Technical specifications: ```{fact_sheet_chair}```
-&quot;&quot;&quot;
+
+"""
+
 response = get_completion(prompt)
+
 print(response)
-```
+
+"""
 Introducing our mid-century inspired office chair, part of a beautiful furniture family. Available in various shell colors and base finishes, with plastic or full upholstery options in fabric or leather. Suitable for home or business use, with a 5-wheel base and pneumatic chair adjust. Made in Italy.
-```
-```
+"""
+````
 
 让我再确认一下这个长度。我将获取响应，根据空格进行分割，然后你将打印出长度。所以有52个单词。其实还不错。大型语言模型在遵循非常精确的单词计数指令方面表现还可以，但并不是特别出色。但这个结果实际上还不错。有时会输出60或65个单词，但这还算是合理范围内的。有些事情你可以这样做。让我再次运行一下。但这些都是告诉大型语言模型您想要的输出长度的不同方法。所以这是一个、两个、三个。我数了这些句子。看起来我做得不错。我也看到有些人有时会像这样做，我不知道，使用至多280个字符。由于大型语言模型解释文本的方式，使用一种称为分词器的工具，因此它们在计算字符数方面表现一般。但是，281个字符。它实际上非常接近。通常，大型语言模型无法达到这种程度。但这些都是可以尝试的不同方式，以控制输出的长度。但接着，我们只需将其切换回最多使用50个单词即可。这就是我们刚才得到的结果。
 
@@ -753,8 +848,8 @@ Introducing our mid-century inspired office chair, part of a beautiful furniture
 
 因此，让我继续修改这个提示。我要说，这个描述是为家具零售商而设计的，因此应该是技术性的，重点放在材料、产品和构造方面。好的，让我们运行它。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to help a marketing team create a 
 description for a retail website of a product based 
 on a technical fact sheet.
@@ -770,18 +865,18 @@ materials the product is constructed from.
 Use at most 50 words.
 
 Technical specifications: ```{fact_sheet_chair}```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 Introducing our mid-century inspired office chair, perfect for both home and business settings. With a range of shell colors and base finishes, including stainless steel and matte black, this chair is available with or without armrests. The 5-wheel plastic coated aluminum base and pneumatic chair adjust make it easy to move and adjust to your desired height. Made with high-quality materials, including a cast aluminum shell and HD36 foam seat, this chair is built to last.
-&quot;&quot;&quot;
-```
+"""
+````
 
 看起来不错。它说，镀铝底座和气动椅子。高质量材料。通过修改提示，您可以让它更专注于您想要的特定特征。当我看到这个时，我可能会决定，在描述的结尾处，我还想包括产品ID。因此，我可以进一步改进这个提示。为了让它给我产品ID，我可以在描述的结尾处添加这个指令，在技术规格中包括每个7个字符的产品ID。让我们运行它，看看会发生什么。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to help a marketing team create a 
 description for a retail website of a product based 
 on a technical fact sheet.
@@ -800,13 +895,19 @@ Product ID in the technical specification.
 Use at most 50 words.
 
 Technical specifications: ```{fact_sheet_chair}```
-&quot;&quot;&quot;
+
+"""
+
 response = get_completion(prompt)
+
 print(response)
-&quot;&quot;&quot;
-chair, perfect for home or business settings. With a range of shell colors and base finishes, and the option of plastic or full upholstery, this chair is both stylish and comfortable. Constructed with a 5-wheel plastic coated aluminum base and pneumatic chair adjust, it&#x27;s also practical. Available with or without armrests and suitable for contract use. Product ID: SWC-100, SWC-110.
-&quot;&quot;&quot;
-```
+
+"""
+
+chair, perfect for home or business settings. With a range of shell colors and base finishes, and the option of plastic or full upholstery, this chair is both stylish and comfortable. Constructed with a 5-wheel plastic coated aluminum base and pneumatic chair adjust, it's also practical. Available with or without armrests and suitable for contract use. Product ID: SWC-100, SWC-110.
+
+"""
+````
 
 于是它说，介绍我们的中世纪办公椅，壳颜色，讲述塑料涂层铝底座，实用，一些选项，讲述了两个产品ID。看起来不错。
 
@@ -817,7 +918,7 @@ chair, perfect for home or business settings. With a range of shell colors and b
 让我们来玩一下，我想给你展示一个更复杂的提示示例，让你感受一下ChatGPT的能力。我在这里添加了一些额外的指令。在描述之后，包括一个给出产品尺寸的表格，然后将所有内容格式化为HTML。那么让我们运行它。
 
 ```
-prompt = f&quot;&quot;&quot;
+prompt = f"""
 Your task is to help a marketing team create a 
 description for a retail website of a product based 
 on a technical fact sheet.
@@ -834,65 +935,66 @@ At the end of the description, include every 7-character
 Product ID in the technical specification.
 
 After the description, include a table that gives the 
-product&#x27;s dimensions. The table should have two columns.
+product's dimensions. The table should have two columns.
+
 In the first column include the name of the dimension. 
-In the second column include the measurements in inches only.
+```
 
-Give the table the title &#x27;Product Dimensions&#x27;.
 
-Format everything as HTML that can be used in a website. 
-Place the description in a &lt;div&gt; element.
 
-Technical specifications: ```{fact_sheet_chair}```
-&quot;&quot;&quot;
+In the second column include the measurements in inches only. Give the table the title 'Product Dimensions'. Format everything as HTML that can be used in a website. Place the description in a `<div>` element.
 
+Technical specifications: `{fact_sheet_chair}`
+
+```
+"""
 response = get_completion(prompt)
 print(response)
 ```
 
 ```
-&quot;&quot;&quot;
-&lt;div&gt;
-&lt;h2&gt;Mid-Century Inspired Office Chair&lt;/h2&gt;
-&lt;p&gt;Introducing our mid-century inspired office chair, part of a beautiful family of office furniture that includes filing cabinets, desks, bookcases, meeting tables, and more. This chair is available in several options of shell color and base finishes, allowing you to customize it to your liking. You can choose between plastic back and front upholstery or full upholstery in 10 fabric and 6 leather options. The base finish options are stainless steel, matte black, gloss white, or chrome. The chair is also available with or without armrests, making it suitable for both home and business settings. Plus, it&#x27;s qualified for contract use, ensuring its durability and longevity.&lt;/p&gt;
-&lt;p&gt;The chair&#x27;s construction features a 5-wheel plastic coated aluminum base and a pneumatic chair adjust for easy raise/lower action. You can also choose between soft or hard-floor caster options and two choices of seat foam densities: medium (1.8 lb/ft3) or high (2.8 lb/ft3). The armrests are also customizable, with the option of armless or 8 position PU armrests.&lt;/p&gt;
-&lt;p&gt;The materials used in the chair&#x27;s construction are of the highest quality. The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, with a shell thickness of 10 mm. The seat is made of HD36 foam, ensuring maximum comfort and support.&lt;/p&gt;
-&lt;p&gt;Made in Italy, this mid-century inspired office chair is the perfect addition to any office space. Order yours today!&lt;/p&gt;
-&lt;h3&gt;Product IDs:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;SWC-100&lt;/li&gt;
-&lt;li&gt;SWC-110&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+"""
+<div>
+<h2>Mid-Century Inspired Office Chair</h2>
+<p>Introducing our mid-century inspired office chair, part of a beautiful family of office furniture that includes filing cabinets, desks, bookcases, meeting tables, and more. This chair is available in several options of shell color and base finishes, allowing you to customize it to your liking. You can choose between plastic back and front upholstery or full upholstery in 10 fabric and 6 leather options. The base finish options are stainless steel, matte black, gloss white, or chrome. The chair is also available with or without armrests, making it suitable for both home and business settings. Plus, it's qualified for contract use, ensuring its durability and longevity.</p>
+<p>The chair's construction features a 5-wheel plastic coated aluminum base and a pneumatic chair adjust for easy raise/lower action. You can also choose between soft or hard-floor caster options and two choices of seat foam densities: medium (1.8 lb/ft3) or high (2.8 lb/ft3). The armrests are also customizable, with the option of armless or 8 position PU armrests.</p>
+<p>The materials used in the chair's construction are of the highest quality. The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, with a shell thickness of 10 mm. The seat is made of HD36 foam, ensuring maximum comfort and support.</p>
+<p>Made in Italy, this mid-century inspired office chair is the perfect addition to any office space. Order yours today!</p>
+<h3>Product IDs:</h3>
+<ul>
+<li>SWC-100</li>
+<li>SWC-110</li>
+</ul>
+</div>
 
-&lt;table&gt;
-  &lt;caption&gt;Product Dimensions&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Dimension&lt;/th&gt;
-    &lt;th&gt;Measurement (inches)&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Width&lt;/td&gt;
-    &lt;td&gt;20.87&quot;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Depth&lt;/td&gt;
-    &lt;td&gt;20.08&quot;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Height&lt;/td&gt;
-    &lt;td&gt;31.50&quot;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Seat Height&lt;/td&gt;
-    &lt;td&gt;17.32&quot;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Seat Depth&lt;/td&gt;
-    &lt;td&gt;16.14&quot;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&quot;&quot;&quot;
+<table>
+  <caption>Product Dimensions</caption>
+  <tr>
+    <th>Dimension</th>
+    <th>Measurement (inches)</th>
+  </tr>
+  <tr>
+    <td>Width</td>
+    <td>20.87"</td>
+  </tr>
+  <tr>
+    <td>Depth</td>
+    <td>20.08"</td>
+  </tr>
+  <tr>
+    <td>Height</td>
+    <td>31.50"</td>
+  </tr>
+  <tr>
+    <td>Seat Height</td>
+    <td>17.32"</td>
+  </tr>
+  <tr>
+    <td>Seat Depth</td>
+    <td>16.14"</td>
+  </tr>
+</table>
+"""
 ```
 
 在实践中，你最终会得到像这样的提示，这通常需要多次迭代才能完成。我不认为有人在尝试让系统处理一份事实表格时会一开始就写出这个确切的提示。因此，这实际上输出了一堆HTML代码。让我们显示HTML，看看它是否是有效的HTML，看看它是否可行。我并不确定它是否可行，但让我们看看。
@@ -915,8 +1017,7 @@ print(response)
 
 # 文本摘要 / Summarizing
 
-
-[prompt_eng_04_summarizing.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkNTbw0IHoOPLzxJsv1cYvb7nPd)
+[`prompt_eng_04_summarizing.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IkNTbw0IHoOPLzxJsv1cYvb7nPd)
 
 当今世界上有太多的文字，几乎没有人有足够的时间去阅读我们希望有时间阅读的所有内容。因此，我看到的最令人兴奋的大型语言模型的应用之一是使用它来概括文本。
 
@@ -926,7 +1027,7 @@ print(response)
 
 ## 环境准备
 
-因此，让我们从导入OpenAI、加载API密钥以及这个getCompletion辅助函数的相同的起始代码开始。
+因此，让我们从导入OpenAI、加载API密钥以及这个`getCompletion`辅助函数的相同的起始代码开始。
 
 ```
 import openai
@@ -935,19 +1036,18 @@ import os
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
 ```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;): # Andrew mentioned that the prompt/ completion paradigm is preferable for this class
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
+def get_completion(prompt, model="gpt-3.5-turbo"): # Andrew mentioned that the prompt/ completion paradigm is preferable for this class
+    messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=0, # this is the degree of randomness of the model&#x27;s output
+        temperature=0, # this is the degree of randomness of the model's output
     )
-    return response.choices[0].message[&quot;content&quot;]
-
+    return response.choices[0].message["content"]
 ```
 
 ## 字数约束
@@ -955,22 +1055,22 @@ def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;): # Andrew mentioned 
 我将使用“总结此产品评论”的示例来运行代码。我从女儿的生日上得到了这个熊猫毛绒玩具，她很喜欢，随处携带等等。如果您正在构建电子商务网站，并且有大量的评论，那么概括冗长的评论的工具可能会让您快速地浏览更多评论，以更好地了解您所有客户的想法。
 
 ```
-prod_review = &quot;&quot;&quot;
-Got this panda plush toy for my daughter&#x27;s birthday, \
-who loves it and takes it everywhere. It&#x27;s soft and \ 
-super cute, and its face has a friendly look. It&#x27;s \ 
+prod_review = """
+Got this panda plush toy for my daughter's birthday, \
+who loves it and takes it everywhere. It's soft and \ 
+super cute, and its face has a friendly look. It's \ 
 a bit small for what I paid though. I think there \ 
 might be other options that are bigger for the \ 
 same price. It arrived a day earlier than expected, \ 
 so I got to play with it myself before I gave it \ 
 to her.
-&quot;&quot;&quot;
+"""
 ```
 
 这里有一个用于生成摘要的提示。您的任务是从电商网站的产品评论中生成一个简短的摘要，在最多30个单词内概括以下评论等。因此，这是一个软软的、可爱的熊猫毛绒玩具，受到女儿的喜爱，但价格有点小，提前到货。还不错，这是一个相当好的摘要。正如您在前一个视频中所看到的，您还可以通过控制字符计数或句子数等来影响这个摘要的长度。有时，在创建摘要时，如果您对摘要有一个非常具体的目的，例如，如果您想向物流部门提供反馈，您还可以修改提示以反映这一点，以便它可以生成一个更适用于您业务中的一个特定组的摘要。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to generate a short summary of a product \
 review from an ecommerce site. 
 
@@ -978,21 +1078,26 @@ Summarize the review below, delimited by triple
 backticks, in at most 30 words. 
 
 Review: ```{prod_review}```
-&quot;&quot;&quot;
+
+"""
 
 response = get_completion(prompt)
+
 print(response)
-&quot;&quot;&quot;
+
+"""
+
 Soft and cute panda plush toy loved by daughter, but a bit small for the price. Arrived early.
-&quot;&quot;&quot;
-```
+
+"""
+````
 
 ## 专注物流
 
 例如，如果我想向物流部门提供反馈，我可以将这个提示修改为重点关注提到了哪些方面与产品的物流和交付相关。如果我运行这个提示，那么它将生成一个摘要，但不是从“软软的、可爱的熊猫毛绒玩具”开始，而是侧重于它提前了一天到货的事实，然后仍然有其他的细节。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to generate a short summary of a product \
 review from an ecommerce site to give feedback to the \
 Shipping deparmtment. 
@@ -1002,21 +1107,22 @@ backticks, in at most 30 words, and focusing on any aspects \
 that mention shipping and delivery of the product. 
 
 Review: ```{prod_review}```
-&quot;&quot;&quot;
+"""
 
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
+
 The panda plush toy arrived a day earlier than expected, but the customer felt it was a bit small for the price paid.
-&quot;&quot;&quot;
-```
+"""
+````
 
 ## 专注价格
 
 或者举个例子，如果我们不是试图向物流部门提供反馈，而是想向定价部门提供反馈，那么定价部门负责确定产品的价格。我会让它关注与价格和感知价值相关的任何方面。然后这将生成一个不同的摘要，说可能价格对其尺寸来说太高了。在我为物流部门或定价部门生成的摘要中，它更加侧重于与这些具体部门相关的信息。事实上，随时随地可以暂停视频，然后让它为负责产品客户体验的产品部门生成信息。或者为您认为可能与电商网站有关的其他内容生成信息。但在这些摘要中，即使它生成了与物流相关的信息，它也有其他的信息，您可以决定是否有帮助。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to generate a short summary of a product \
 review from an ecommerce site to give feedback to the \
 pricing deparmtment, responsible for determining the \
@@ -1027,47 +1133,57 @@ backticks, in at most 30 words, and focusing on any aspects \
 that are relevant to the price and perceived value. 
 
 Review: ```{prod_review}```
-&quot;&quot;&quot;
+
+"""
 
 response = get_completion(prompt)
+
 print(response)
-&quot;&quot;&quot;
+
+"""
+
 The panda plush toy is soft, cute, and loved by the recipient, but the price may be too high for its size.
-&quot;&quot;&quot;
-```
+
+"""
+````
 
 因此，根据您想要总结的方式，您还可以要求它提取信息，而不是总结它。
 
 下面是一个提示，表示您的任务是提取相关信息，以便向运输部门提供反馈。现在它只说产品提前了一天到达，没有其他信息，虽然在一般的摘要中也有希望的内容，但如果运输部门只想知道发生了什么，那么这些内容与其不太相关。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 Your task is to extract relevant information from \ 
 a product review from an ecommerce site to give \
 feedback to the Shipping department. 
 
 From the review below, delimited by triple quotes \
+````
+
+
+
+
+````python
 extract the information relevant to shipping and \ 
+
 delivery. Limit to 30 words. 
 
 Review: ```{prod_review}```
-&quot;&quot;&quot;
-
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 The product arrived a day earlier than expected.
-&quot;&quot;&quot;
-```
+"""
+````
 
 最后，让我与您分享一个具体的示例，说明如何在工作流程中使用它来帮助总结多个评论，以使它们更易于阅读。所以，这里有几篇评论。这有点长，但是这是第二篇关于一个站立灯的评论，它可以用于卧室。这是第三篇关于电动牙刷的评论。我的牙医推荐了它。这是关于搅拌机的评论，当他们说那个季节性销售的17件套装等等。实际上，这是很多文本。如果您想要，可以随时暂停视频并详细阅读所有这些内容。但是，如果您想要知道这些评论者写了什么，而不必停下来详细阅读所有内容，该怎么办呢？所以我将评论1设置为我们之前所看到的产品评论。并将所有这些评论放入列表中。
 
-```
-
+````python
 review_1 = prod_review 
 
 # review for a standing lamp
-review_2 = &quot;&quot;&quot;
+review_2 = """
 Needed a nice lamp for my bedroom, and this one \
 had additional storage and not too high of a price \
 point. Got it fast - arrived in 2 days. The string \
@@ -1078,30 +1194,30 @@ missing part, so I contacted their support and they \
 very quickly got me the missing piece! Seems to me \
 to be a great company that cares about their customers \
 and products. 
-&quot;&quot;&quot;
+"""
 
 # review for an electric toothbrush
-review_3 = &quot;&quot;&quot;
+review_3 = """
 My dental hygienist recommended an electric toothbrush, \
 which is why I got this. The battery life seems to be \
 pretty impressive so far. After initial charging and \
 leaving the charger plugged in for the first week to \
-condition the battery, I&#x27;ve unplugged the charger and \
+condition the battery, I've unplugged the charger and \
 been using it for twice daily brushing for the last \
 3 weeks all on the same charge. But the toothbrush head \
 is too small. I’ve seen baby toothbrushes bigger than \
 this one. I wish the head was bigger with different \
 length bristles to get between teeth better because \
 this one doesn’t.  Overall if you can get this one \
-around the $50 mark, it&#x27;s a good deal. The manufactuer&#x27;s \
+around the $50 mark, it's a good deal. The manufactuer's \
 replacements heads are pretty expensive, but you can \
-get generic ones that&#x27;re more reasonably priced. This \
-toothbrush makes me feel like I&#x27;ve been to the dentist \
+get generic ones that're more reasonably priced. This \
+toothbrush makes me feel like I've been to the dentist \
 every day. My teeth feel sparkly clean! 
-&quot;&quot;&quot;
+"""
 
 # review for a blender
-review_4 = &quot;&quot;&quot;
+review_4 = """
 So, they still had the 17 piece system on seasonal \
 sale for around $49 in the month of November, about \
 half off, but for some reason (call it price gouging) \
@@ -1132,12 +1248,12 @@ quality has gone done in these types of products, so \
 they are kind of counting on brand recognition and \
 consumer loyalty to maintain sales. Got it in about \
 two days.
-&quot;&quot;&quot;
+"""
 
 reviews = [review_1, review_2, review_3, review_4]
 
 for i in range(len(reviews)):
-    prompt = f&quot;&quot;&quot;
+    prompt = f"""
     Your task is to generate a short summary of a product \ 
     review from an ecommerce site. 
 
@@ -1145,20 +1261,25 @@ for i in range(len(reviews)):
     backticks in at most 20 words. 
 
     Review: ```{reviews[i]}```
-    &quot;&quot;&quot;
+
+    """
 
     response = get_completion(prompt)
-    print(i, response, &quot;\n&quot;)
 
-&quot;&quot;&quot;
+    print(i, response, "\n")
+````
+
+```
+"""
 0 Soft and cute panda plush toy loved by daughter, but a bit small for the price. Arrived early. 
 
 1 Affordable lamp with storage, fast shipping, and excellent customer service. Easy to assemble and missing parts were quickly replaced. 
 
 2 Good battery life, small toothbrush head, but effective cleaning. Good deal if bought around $50. 
 
-3 The product was on sale for $49 in November, but the price increased to $70-$89 in December. The base doesn&#x27;t look as good as previous editions, but the reviewer plans to be gentle with it. A special tip for making smoothies is to freeze the fruits and vegetables beforehand. The motor made a funny noise after a year, and the warranty had expired. Overall quality has decreased. 
-&quot;&quot;&quot;
+3 The product was on sale for $49 in November, but the price increased to $70-$89 in December. The base doesn't look as good as previous editions, but the reviewer plans to be gentle with it. A special tip for making smoothies is to freeze the fruits and vegetables beforehand. The motor made a funny noise after a year, and the warranty had expired. Overall quality has decreased. 
+
+"""
 ```
 
 现在，如果我在评论上实现一个for循环。这是我的提示，我要求它在最多20个单词中进行总结。然后让它获取响应并将其打印出来。让我们运行它。
@@ -1171,7 +1292,6 @@ for i in range(len(reviews)):
 
 # 文本推理 / Inferring
 
-
 [prompt_eng_05_inferring.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NdaebMTYjo2Sg7xIV53c5X35ncg)
 
 下一个视频是关于推断的。我认为这些任务是指模型将文本作为输入并执行某种分析的任务。因此，这可以是提取标签、提取名称、理解文本的情感等任务。例如，如果您想从一段文本中提取积极或消极的情感，在传统的机器学习工作流程中，您需要收集标签数据集、训练模型、确定如何在云中部署模型并进行推断。这可能非常有效，但是需要经历大量的工作流程。而对于每个任务，例如情感、提取名称等，您都需要训练和部署单独的模型。
@@ -1180,33 +1300,42 @@ for i in range(len(reviews)):
 
 ## 环境准备
 
-```
+```python
 import openai
+
 import os
 
 from dotenv import load_dotenv, find_dotenv
+
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
-```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
+```python
+def get_completion(prompt, model="gpt-3.5-turbo"):
+
+    messages = [{"role": "user", "content": prompt}]
+
     response = openai.ChatCompletion.create(
+
         model=model,
+
         messages=messages,
-        temperature=0, # this is the degree of randomness of the model&#x27;s output
+
+        temperature=0, # this is the degree of randomness of the model's output
+
     )
-    return response.choices[0].message[&quot;content&quot;]
+
+    return response.choices[0].message["content"]
 ```
 
 ## 情感分析
 
 我要使用的最重要的例子是一个台灯的评价。所以我需要一款适合卧室的好看台灯，并且带有额外的储物空间等等。
 
-```
-lamp_review = &quot;&quot;&quot;
+```python
+lamp_review = """
 Needed a nice lamp for my bedroom, and this one had \
 additional storage and not too high of a price point. \
 Got it fast.  The string to our lamp broke during the \
@@ -1216,81 +1345,93 @@ together.  I had a missing part, so I contacted their \
 support and they very quickly got me the missing piece! \
 Lumina seems to me to be a great company that cares \
 about their customers and products!!
-&quot;&quot;&quot;
+"""
 ```
 
 现在让我写一个提示来分类这个评价的情感。如果我想让系统告诉我这个评价的情感，我只需要写下“以下产品评价的情感是什么”，然后加上通常的分隔符和评价文本等等。然后运行它。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 What is the sentiment of the following product review, 
+
 which is delimited with triple backticks?
 
-Review text: &#x27;&#x27;&#x27;{lamp_review}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+Review text: '''{lamp_review}'''
+"""
 response = get_completion(prompt)
+
 print(response)
-&quot;&quot;&quot;
+
+"""
 The sentiment of the product review is positive.
-&quot;&quot;&quot;
+"""
 ```
 
 输出结果是这个产品评价的情感是积极的，这似乎相当正确。这个灯不是完美的，但是这位顾客似乎很满意。这似乎是一个关心客户和产品的好公司。我认为积极情感似乎是正确的答案。
 
 现在这个程序打印了整个句子，“这个产品评价的情感是积极的”。如果你想要一个更简洁的回答，以便更容易进行后处理，我可以添加另一个指令，让它只回答一个单词，积极或消极。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 What is the sentiment of the following product review, 
+
 which is delimited with triple backticks?
 
-Give your answer as a single word, either &quot;positive&quot; \
-or &quot;negative&quot;.
+Give your answer as a single word, either "positive" \
+"""
+```
 
-Review text: &#x27;&#x27;&#x27;{lamp_review}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+
+
+or "negative".
+
+```python
+Review text: '''{lamp_review}'''
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+```
+
+```text
 positive
-&quot;&quot;&quot;
 ```
 
 这样它就会像这样输出“积极”，这样一个文本处理程序就更容易获取这个输出并进行处理。
 
 接下来让我们看另一个提示，仍然是使用这个灯的评价。在这里，我让它识别出以下评价作者表达的情绪列表，包括不超过五个项目。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Identify a list of emotions that the writer of the \
 following review is expressing. Include no more than \
 five items in the list. Format your answer as a list of \
 lower-case words separated by commas.
 
-Review text: &#x27;&#x27;&#x27;{lamp_review}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+Review text: '''{lamp_review}'''
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+```
+
+```text
 happy, satisfied, grateful, impressed, content
-&quot;&quot;&quot;
 ```
 
 大型语言模型非常擅长从一段文本中提取特定内容。在这种情况下，我们正在表达情感。这对于了解客户对特定产品的想法可能非常有用。对于许多客户支持组织来说，了解特定用户是否非常沮丧非常重要。因此，您可能有一个不同的分类问题，例如“以下评论的作者是否表达了愤怒？”
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Is the writer of the following review expressing anger?\
 The review is delimited with triple backticks. \
 Give your answer as either yes or no.
 
-Review text: &#x27;&#x27;&#x27;{lamp_review}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+Review text: '''{lamp_review}'''
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+```
+
+```text
 No
-&quot;&quot;&quot;
 ```
 
 因为如果有人真的很生气，那么可能需要特别注意客户的评论，以便客户支持或客户成功联系客户并弄清楚情况，并为客户解决问题。
@@ -1303,65 +1444,73 @@ No
 
 在这个提示中，我要求它识别以下内容：商品购买项和制造商品的公司名称。如果您试图总结来自在线购物电子商务网站的许多评论，确定物品、制造商、确定积极和消极情绪，跟踪特定物品或特定制造商的积极或消极情绪趋势可能会对您的大量评论很有用。在这个例子中，我将要求它将响应格式化为具有项目和品牌键的JSON对象。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Identify the following items from the review text: 
+
 - Item purchased by reviewer
+
 - Company that made the item
 
 The review is delimited with triple backticks. \
 Format your response as a JSON object with \
-&quot;Item&quot; and &quot;Brand&quot; as the keys. 
-If the information isn&#x27;t present, use &quot;unknown&quot; \
+"Item" and "Brand" as the keys. 
+If the information isn't present, use "unknown" \
 as the value.
 Make your response as short as possible.
-  
-Review text: &#x27;&#x27;&#x27;{lamp_review}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+
+Review text: '''{lamp_review}'''
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+```
+
+```json
 {
-  &quot;Item&quot;: &quot;lamp&quot;,
-  &quot;Brand&quot;: &quot;Lumina&quot;
+  "Item": "lamp",
+  "Brand": "Lumina"
 }
-&quot;&quot;&quot;
 ```
 
 因此，如果我这样做，它会说项目是灯，品牌是Luminar，您可以轻松地将其加载到Python字典中，然后对此输出进行进一步处理。
 
 ## 多任务抽取
 
-在我们经历的例子中，您可以看到如何编写提示来识别情绪，确定某人是否生气，然后提取物品和品牌。提取所有这些信息的一种方法是使用3或4个提示并调用getCompletion，您可以一次一个地提取这些不同的字段，但事实证明，您实际上可以编写单个提示以同时提取所有这些信息。
+在我们经历的例子中，您可以看到如何编写提示来识别情绪，确定某人是否生气，然后提取物品和品牌。提取所有这些信息的一种方法是使用3或4个提示并调用`getCompletion`，您可以一次一个地提取这些不同的字段，但事实证明，您实际上可以编写单个提示以同时提取所有这些信息。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Identify the following items from the review text: 
+
 - Sentiment (positive or negative)
+
 - Is the reviewer expressing anger? (true or false)
+
 - Item purchased by reviewer
+
 - Company that made the item
 
 The review is delimited with triple backticks. \
 Format your response as a JSON object with \
-&quot;Sentiment&quot;, &quot;Anger&quot;, &quot;Item&quot; and &quot;Brand&quot; as the keys.
-If the information isn&#x27;t present, use &quot;unknown&quot; \
+"Sentiment", "Anger", "Item" and "Brand" as the keys.
+If the information isn't present, use "unknown" \
 as the value.
 Make your response as short as possible.
 Format the Anger value as a boolean.
 
-Review text: &#x27;&#x27;&#x27;{lamp_review}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+Review text: '''{lamp_review}'''
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+```
+
+```json
 {
-  &quot;Sentiment&quot;: &quot;positive&quot;,
-  &quot;Anger&quot;: false,
-  &quot;Item&quot;: &quot;lamp with additional storage&quot;,
-  &quot;Brand&quot;: &quot;Lumina&quot;
+  "Sentiment": "positive",
+  "Anger": false,
+  "Item": "lamp with additional storage",
+  "Brand": "Lumina"
 }
-&quot;&quot;&quot;
 ```
 
 让我们来举一个例子，比如识别精细项目，提取情感，作为评论者表达愤怒，购买商品，完全做到了。在这里，我还要告诉它将愤怒值格式化为布尔值，然后让我运行一下，这将输出一个JSON，其中情感是积极的，愤怒，并且false周围没有引号，因为我要求它将其作为布尔值输出。
@@ -1370,94 +1519,89 @@ print(response)
 
 ## 主题分类
 
-
 [prompt_eng_05_inferring.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QUhgbVnhQotNZkxbtMXcYdhxnse)
 
 我看到大型语言模型的一个很酷的应用是推断主题。给定一篇长文，你知道，这篇文章是关于什么的？有哪些话题？这是一篇虚构的关于政府工人对他们工作的机构感受的报纸文章。所以，最近政府进行了一项调查，你知道，等等，NASA的结果是一个受欢迎的部门，具有很高的满意度评分。我是NASA的粉丝，我喜欢他们所做的工作，但这是一篇虚构的文章。因此，鉴于这样的一篇文章，我们可以问它，在这个提示下，确定以下文本中正在讨论的五个主题。让我们把每个项目格式化成一个或两个单词长，将您的响应格式化为逗号分隔的列表，如果我们运行它，你知道，我们会得到这篇文章是关于政府调查的，它是关于工作满意度的，它是关于NASA的等等。总的来说，我认为它相当不错，它提取了一个主题列表。
 
-```
-story = &quot;&quot;&quot;
+```python
+story = """
 In a recent survey conducted by the government, 
 public sector employees were asked to rate their level 
 of satisfaction with the department they work at. 
 The results revealed that NASA was the most popular 
 department with a satisfaction rating of 95%.
-
 One NASA employee, John Smith, commented on the findings, 
-stating, &quot;I&#x27;m not surprised that NASA came out on top. 
-It&#x27;s a great place to work with amazing people and 
-incredible opportunities. I&#x27;m proud to be a part of 
-such an innovative organization.&quot;
-
-The results were also welcomed by NASA&#x27;s management team, 
-with Director Tom Johnson stating, &quot;We are thrilled to 
+stating, "I'm not surprised that NASA came out on top. 
+It's a great place to work with amazing people and 
+incredible opportunities. I'm proud to be a part of 
+such an innovative organization."
+The results were also welcomed by NASA's management team, 
+with Director Tom Johnson stating, "We are thrilled to 
 hear that our employees are satisfied with their work at NASA. 
 We have a talented and dedicated team who work tirelessly 
-to achieve our goals, and it&#x27;s fantastic to see that their 
-hard work is paying off.&quot;
-
+to achieve our goals, and it's fantastic to see that their 
+hard work is paying off."
 The survey also revealed that the 
 Social Security Administration had the lowest satisfaction 
 rating, with only 45% of employees indicating they were 
 satisfied with their job. The government has pledged to 
 address the concerns raised by employees in the survey and 
 work towards improving job satisfaction across all departments.
-&quot;&quot;&quot;
+"""
 ```
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Determine five topics that are being discussed in the \
 following text, which is delimited by triple backticks.
-
 Make each item one or two words long. 
-
 Format your response as a list of items separated by commas.
 
-Text sample: &#x27;&#x27;&#x27;{story}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+Text sample: '''{story}'''
+"""
 response = get_completion(prompt)
-print(response.split(sep=&#x27;,&#x27;))
-&quot;&quot;&quot;
-[&#x27;government survey&#x27;,
- &#x27; job satisfaction&#x27;,
- &#x27; NASA&#x27;,
- &#x27; Social Security Administration&#x27;,
- &#x27; employee concerns&#x27;]
-&quot;&quot;&quot;
+print(response.split(sep=','))
+```
+
+```text
+['government survey',
+ ' job satisfaction',
+ ' NASA',
+ ' Social Security Administration',
+ ' employee concerns']
 ```
 
 当然，您也可以将其拆分，以获取这篇文章讨论的五个主题的清单。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Determine whether each item in the following list of \
 topics is a topic in the text below, which
 is delimited with triple backticks.
-
 Give your answer as list with 0 or 1 for each topic.\
-
-List of topics: {&quot;, &quot;.join(topic_list)}
-
-Text sample: &#x27;&#x27;&#x27;{story}&#x27;&#x27;&#x27;
-&quot;&quot;&quot;
+List of topics: {", ".join(topic_list)}
+Text sample: '''{story}'''
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+```
+
+```text
 nasa: 1
 local government: 0
 engineering: 0
 employee satisfaction: 1
 federal government: 1
-&quot;&quot;&quot;
 ```
 
-```
-topic_dict = {i.split(&#x27;: &#x27;)[0]: int(i.split(&#x27;: &#x27;)[1]) for i in response.split(sep=&#x27;\n&#x27;)}
-if topic_dict[&#x27;nasa&#x27;] == 1:
-    print(&quot;ALERT: New NASA story!&quot;)
+```python
+topic_dict = {i.split(': ')[0]: int(i.split(': ')[1]) for i in response.split(sep='\n')}
 
+if topic_dict['nasa'] == 1:
+    print("ALERT: New NASA story!")
 ```
+
+
 
 如果你有一组文章并提取出主题，那么你也可以使用大型语言模型来帮助你索引不同的主题。假设我们是一个新闻网站，这是我们追踪的主题：NASA，当地政府，工程，员工满意度和联邦政府。假设你想弄清楚给定一篇新闻文章，其中包含哪些主题。使用以下提示：确定以下主题列表中的每个项目是否是文本下的主题。为每个主题提供0或1的答案列表。只需使用一个提示，就能够确定新闻文章涉及的主题，并可以将此信息放入字典中，以便快速处理任何文章，确定其主题，并在主题包括NASA时打印出新NASA故事的警报。值得注意的是，上述提示并不是非常健壮的。
 
@@ -1473,132 +1617,136 @@ if topic_dict[&#x27;nasa&#x27;] == 1:
 
 大型语言模型非常擅长将其输入转换为不同的格式，例如输入一段文本，将其转换或翻译为另一种语言，或帮助拼写和语法纠正，即输入可能不完全符合语法的文本，帮助您稍微修复一下，甚至可以转换格式，例如输入HTML并输出JSON。因此，我曾经写过一些应用程序，用了很多常规表达式，现在使用大型语言模型和几个提示可以更简单地实现这些应用程序。
 
-我现在几乎用Chat GPT来校对我写的所有东西，所以我很高兴现在在笔记本上向您展示更多的示例。因此，首先我们将导入OpenAI并使用在视频中一直使用的getCompletion帮助函数。
+我现在几乎用Chat GPT来校对我写的所有东西，所以我很高兴现在在笔记本上向您展示更多的示例。因此，首先我们将导入OpenAI并使用在视频中一直使用的`getCompletion`帮助函数。
 
 ## 环境准备
 
-```
+```python
 import openai
 import os
-
 from dotenv import load_dotenv, find_dotenv
+
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
-```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;, temperature=0): 
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
+```python
+def get_completion(prompt, model="gpt-3.5-turbo", temperature=0): 
+    messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
         temperature=temperature, 
     )
-    return response.choices[0].message[&quot;content&quot;]
+    return response.choices[0].message["content"]
 ```
 
 ## 翻译
 
 我们将首先做一个翻译任务。大型语言模型通常在许多来源的大量文本上进行训练，其中许多文本都是来自互联网，而这些文本又是不同的语言。因此，这使得模型具有进行翻译的能力。这些模型掌握了数百种语言，但掌握程度各不相同。接下来，我们将介绍如何使用这种能力的一些示例。
 
-让我们从一些简单的内容开始。在第一个例子中，提示是将以下英文文本翻译为西班牙文。 Hi, I would like to order a blender. 的响应是Hola，me gustaría ordenar una licuadora。在这里，我非常抱歉所有的西班牙语听众，我不会西班牙语，这一点您肯定可以看出来。
+让我们从一些简单的内容开始。在第一个例子中，提示是将以下英文文本翻译为西班牙文。`Hi, I would like to order a blender` 的响应是`Hola，me gustaría ordenar una licuadora`。在这里，我非常抱歉所有的西班牙语听众，我不会西班牙语，这一点您肯定可以看出来。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Translate the following English text to Spanish: \ 
 ```Hi, I would like to order a blender```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 Hola, me gustaría ordenar una licuadora.
-&quot;&quot;&quot;
+"""
 ```
 
-现在让我们试试另一个例子。在这个例子中，提示是告诉我这是哪种语言。然后这段文本是法语，Combien coûte la lampe d'air。模型识别出这是法语。
+现在让我们试试另一个例子。在这个例子中，提示是告诉我这是哪种语言。然后这段文本是法语，`Combien coûte le lampadaire?`。模型识别出这是法语。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Tell me which language this is: 
 ```Combien coûte le lampadaire?```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 This is French.
-&quot;&quot;&quot;
+"""
 ```
 
-模型还可以同时进行多种翻译。在这个例子中，让我们假设将以下文本翻译为法语和西班牙语。而且，让我们再加上一个英语海盗。文本是 I want to order a basketball。所以在这里，我们有法语、西班牙语和英语海盗。
+模型还可以同时进行多种翻译。在这个例子中，让我们假设将以下文本翻译为法语和西班牙语。而且，让我们再加上一个英语海盗。文本是`I want to order a basketball`。所以在这里，我们有法语、西班牙语和英语海盗。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Translate the following  text to French and Spanish
 and English pirate: \
 ```I want to order a basketball```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 French pirate: ```Je veux commander un ballon de basket```
+
 Spanish pirate: ```Quiero ordenar una pelota de baloncesto```
 English pirate: ```I want to order a basketball```
-&quot;&quot;&quot;
+"""
 ```
 
-在某些语言中，翻译可能会因说话者与听众的关系而改变。您还可以向语言模型解释这一点。因此，它将能够相应地进行翻译。在这个例子中，我们说，将以下文本翻译为西班牙语的正式和非正式形式。Would you like to order a pillow? 还要注意，这里我们使用的是。只要有一定的明确分隔就可以了。所以，这里我们有正式和非正式之分。正式场合是指当你和一个比你资历高的人说话或者在一个职业场合时，你需要使用正式语气；而非正式则是当你和朋友群体交流时使用。
+在某些语言中，翻译可能会因说话者与听众的关系而改变。您还可以向语言模型解释这一点。因此，它将能够相应地进行翻译。在这个例子中，我们说，将以下文本翻译为西班牙语的正式和非正式形式。`Would you like to order a pillow?` 还要注意，这里我们使用的是。只要有一定的明确分隔就可以了。所以，这里我们有正式和非正式之分。正式场合是指当你和一个比你资历高的人说话或者在一个职业场合时，你需要使用正式语气；而非正式则是当你和朋友群体交流时使用。
 
 我实际上不会说西班牙语，但是我父亲会说，他说这是正确的。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Translate the following text to Spanish in both the \
 formal and informal forms: 
-&#x27;Would you like to order a pillow?&#x27;
-&quot;&quot;&quot;
+'Would you like to order a pillow?'
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 Formal: ¿Le gustaría ordenar una almohada?
 Informal: ¿Te gustaría ordenar una almohada?
-&quot;&quot;&quot;
+"""
 ```
 
-## 通用翻译
+### 通用翻译
 
 接下来的例子中，我们假设我们是一个跨国电子商务公司的负责人，用户的消息将使用各种不同的语言，并且用户将使用多种语言向我们反映其 IT 问题，因此我们需要一种通用的翻译器。首先，我们将粘贴一些不同语言的用户消息列表，然后我们将循环遍历每一个用户消息。因此，在用户消息中循环遍历问题，然后我将复制这个稍微长一点的代码块。首先，我们将询问模型告诉我们问题是用什么语言书写的。然后，我们将打印出原始消息的语言和问题，并要求模型将其翻译成英文和韩文。让我们运行它。
 
-```
+```python
 user_messages = [
-  &quot;La performance du système est plus lente que d&#x27;habitude.&quot;,  # System performance is slower than normal         
-  &quot;Mi monitor tiene píxeles que no se iluminan.&quot;,              # My monitor has pixels that are not lighting
-  &quot;Il mio mouse non funziona&quot;,                                 # My mouse is not working
-  &quot;Mój klawisz Ctrl jest zepsuty&quot;,                             # My keyboard has a broken control key
-  &quot;我的屏幕在闪烁&quot;                                               # My screen is flashing
+    "La performance du système est plus lente que d'habitude.",  # System performance is slower than normal         
+    "Mi monitor tiene píxeles que no se iluminan.",              # My monitor has pixels that are not lighting
+    "Il mio mouse non funziona",                                 # My mouse is not working
+    "Mój klawisz Ctrl jest zepsuty",                             # My keyboard has a broken control key
+    "我的屏幕在闪烁"                                               # My screen is flashing
 ] 
 ```
 
-```
+```python
 for issue in user_messages:
-    prompt = f&quot;Tell me what language this is: ```{issue}```&quot;
+    prompt = f"Tell me what language this is: ```{issue}```"
     lang = get_completion(prompt)
-    print(f&quot;Original message ({lang}): {issue}&quot;)
+    print(f"Original message ({lang}): {issue}")
 
-    prompt = f&quot;&quot;&quot;
+    prompt = f"""
     Translate the following  text to English \
     and Korean: ```{issue}```
-    &quot;&quot;&quot;
+
+    """
+
     response = get_completion(prompt)
-    print(response, &quot;\n&quot;)
-   
-&quot;&quot;&quot;
-Original message (This is French.): La performance du système est plus lente que d&#x27;habitude.
+
+    print(response, "\n")
+
+"""
+Original message (This is French.): La performance du système est plus lente que d'habitude.
 English: The system performance is slower than usual.
 Korean: 시스템 성능이 평소보다 느립니다. 
 
 Original message (This is Spanish.): Mi monitor tiene píxeles que no se iluminan.
-English: My monitor has pixels that don&#x27;t light up.
+English: My monitor has pixels that don't light up.
 Korean: 내 모니터에는 불이 켜지지 않는 픽셀이 있습니다. 
 
 Original message (This is Italian.): Il mio mouse non funziona
@@ -1612,21 +1760,21 @@ Korean: 제 Ctrl 키가 고장 났어요.
 Original message (This is Chinese (Simplified).): 我的屏幕在闪烁
 English: My screen is flickering.
 Korean: 내 화면이 깜빡입니다. 
-&quot;&quot;&quot;
+"""
 ```
 
 ## 风格转换
 
 在这里，我们有一个更正式的商业信函，其中包括一份落地灯规格的建议书。接下来我们要做的事情是在不同的格式之间进行转换。
 
-```
-prompt = f&quot;&quot;&quot;
+```python
+prompt = f"""
 Translate the following from slang to a business letter: 
-&#x27;Dude, This is Joe, check out this spec on this standing lamp.&#x27;
-&quot;&quot;&quot;
+'Dude, This is Joe, check out this spec on this standing lamp.'
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
+"""
 Dear Sir/Madam,
 
 I am writing to bring to your attention a standing lamp that I believe may be of interest to you. Please find attached the specifications for your review.
@@ -1636,117 +1784,139 @@ Thank you for your time and consideration.
 Sincerely,
 
 Joe
-&quot;&quot;&quot;
+"""
 ```
 
-ChatGPT非常擅长在不同格式之间进行翻译，例如JSON到HTML、XML等各种格式。在提示中，我们将描述输入和输出格式。以下是一个示例：我们有一个包含餐厅员工姓名和电子邮件的JSON列表。在提示中，我们将要求模型将其从JSON转换为HTML表格。然后我们将得到模型的响应并打印出来，以便查看经过格式化后的HTML表格。
+ChatGPT非常擅长在不同格式之间进行翻译，例如`JSON`到`HTML`、`XML`等各种格式。在提示中，我们将描述输入和输出格式。以下是一个示例：我们有一个包含餐厅员工姓名和电子邮件的`JSON`列表。在提示中，我们将要求模型将其从`JSON`转换为`HTML`表格。然后我们将得到模型的响应并打印出来，以便查看经过格式化后的`HTML`表格。
 
-```
-data_json = { &quot;resturant employees&quot; :[ 
-    {&quot;name&quot;:&quot;Shyam&quot;, &quot;email&quot;:&quot;shyamjaiswal@gmail.com&quot;},
-    {&quot;name&quot;:&quot;Bob&quot;, &quot;email&quot;:&quot;bob32@gmail.com&quot;},
-    {&quot;name&quot;:&quot;Jai&quot;, &quot;email&quot;:&quot;jai87@gmail.com&quot;}
+```python
+data_json = { "resturant employees" :[ 
+    {"name":"Shyam", "email":"shyamjaiswal@gmail.com"},
+    {"name":"Bob", "email":"bob32@gmail.com"},
+    {"name":"Jai", "email":"jai87@gmail.com"}
 ]}
 
-prompt = f&quot;&quot;&quot;
+prompt = f"""
 Translate the following python dictionary from JSON to an HTML \
 table with column headers and title: {data_json}
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
-&quot;&quot;&quot;
-&lt;table&gt;
-  &lt;caption&gt;Restaurant Employees&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Email&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Shyam&lt;/td&gt;
-      &lt;td&gt;shyamjaiswal@gmail.com&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Bob&lt;/td&gt;
-      &lt;td&gt;bob32@gmail.com&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Jai&lt;/td&gt;
-      &lt;td&gt;jai87@gmail.com&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&quot;&quot;&quot;
+"""
+<table>
+  <caption>Restaurant Employees</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shyam</td>
+      <td>shyamjaiswal@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>bob32@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Jai</td>
+      <td>jai87@gmail.com</td>
+    </tr>
+  </tbody>
+</table>
+"""
+```
 
 ![](img/ef7da5585b8ef1687163f4049ea461b4.png)
 
-```
-## 拼写语法检查
+
+
+# 拼写语法检查
 
 接下来的转换任务是拼写检查和语法检查。这是ChatGPT的一个非常受欢迎的应用。我们建议您经常使用它，特别是在使用非母语语言时非常有用。以下是一些常见的语法和拼写问题以及如何使用语言模型来解决它们的示例。我们将列举一些句子，这些句子中存在某些语法或拼写错误。然后我们将循环遍历每个句子，请求模型进行校对和修正。然后我们会得到响应并像往常一样将其打印出来。模型能够纠正所有这些语法错误。我们可以使用之前讨论过的一些技巧来改进提示。为了改进提示，我们可以说“校对并更正以下文本。如果你没有找到任何错误，请说没有错误。”通过迭代的提示开发，您可以找到一个更可靠的提示。
 
-```
+````text
 text = [ 
-  &quot;The girl with the black and white puppies have a ball.&quot;,  # The girl has a ball.
-  &quot;Yolanda has her notebook.&quot;, # ok
-  &quot;Its going to be a long day. Does the car need it’s oil changed?&quot;,  # Homonyms
-  &quot;Their goes my freedom. There going to bring they’re suitcases.&quot;,  # Homonyms
-  &quot;Your going to need you’re notebook.&quot;,  # Homonyms
-  &quot;That medicine effects my ability to sleep. Have you heard of the butterfly affect?&quot;, # Homonyms
-  &quot;This phrase is to cherck chatGPT for speling abilitty&quot;  # spelling
+
+  "The girl with the black and white puppies have a ball.",  # The girl has a ball.
+
+  "Yolanda has her notebook.", # ok
+
+  "Its going to be a long day. Does the car need it’s oil changed?",  # Homonyms
+
+  "Their goes my freedom. There going to bring they’re suitcases.",  # Homonyms
+
+  "Your going to need you’re notebook.",  # Homonyms
+
+  "That medicine effects my ability to sleep. Have you heard of the butterfly affect?", # Homonyms
+
+  "This phrase is to cherck chatGPT for speling abilitty"  # spelling
+
 ]
+
 for t in text:
-    prompt = f&quot;&quot;&quot;Proofread and correct the following text
-    and rewrite the corrected version. If you don&#x27;t find
-    and errors, just say &quot;No errors found&quot;. Don&#x27;t use 
+
+    prompt = f"""Proofread and correct the following text
+
+    and rewrite the corrected version. If you don't find
+
+    and errors, just say "No errors found". Don't use 
+
     any punctuation around the text:
-    ```{t}```&quot;&quot;&quot;
+
+    ```{t}```"""
     response = get_completion(prompt)
     print(response)
     
- &quot;&quot;&quot;
+ """
  The girl with the black and white puppies has a ball.
 No errors found.
-It&#x27;s going to be a long day. Does the car need its oil changed?
-Their goes my freedom. There going to bring they&#x27;re suitcases.
+It's going to be a long day. Does the car need its oil changed?
+Their goes my freedom. There going to bring they're suitcases.
 
 Corrected version: 
-There goes my freedom. They&#x27;re going to bring their suitcases.
-You&#x27;re going to need your notebook.
+There goes my freedom. They're going to bring their suitcases.
+You're going to need your notebook.
 That medicine affects my ability to sleep. Have you heard of the butterfly effect?
 This phrase is to check ChatGPT for spelling ability.
- &quot;&quot;&quot;
-```
+ """
+````
 
 另一个例子是检查您在公共论坛上发布文本之前进行拼写和语法检查的示例。我们将使用一份有关填充熊猫的评论的示例，然后要求模型对评论进行校对和更正。最后，我们将得到更正后的版本。
 
-```
-text = f&quot;&quot;&quot;
+````text
+text = f"""
 Got this for my daughter for her birthday cuz she keeps taking \
 mine from my room.  Yes, adults also like pandas too.  She takes \
-it everywhere with her, and it&#x27;s super soft and cute.  One of the \
-ears is a bit lower than the other, and I don&#x27;t think that was \
-designed to be asymmetrical. It&#x27;s a bit small for what I paid for it \
+it everywhere with her, and it's super soft and cute.  One of the \
+ears is a bit lower than the other, and I don't think that was \
+designed to be asymmetrical. It's a bit small for what I paid for it \
 though. I think there might be other options that are bigger for \
 the same price.  It arrived a day earlier than expected, so I got \
 to play with it myself before I gave it to my daughter.
-&quot;&quot;&quot;
-prompt = f&quot;proofread and correct this review: ```{text}```&quot;
+"""
+prompt = f"proofread and correct this review: ```{text}```"
+
 response = get_completion(prompt)
+
 print(response)
-&quot;&quot;&quot;
-I got this for my daughter&#x27;s birthday because she keeps taking mine from my room. Yes, adults also like pandas too. She takes it everywhere with her, and it&#x27;s super soft and cute. However, one of the ears is a bit lower than the other, and I don&#x27;t think that was designed to be asymmetrical. Additionally, it&#x27;s a bit small for what I paid for it. I think there might be other options that are bigger for the same price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.
-&quot;&quot;&quot;
-```
 
-我们可以做的一件很酷的事情是找到原始评论和模型输出之间的差异。因此，我们将使用这个RedLines Python包来做这件事情。我们将获得我们评论的原始文本和模型输出之间的差异，然后将其显示出来。在这里，您可以看到原始评论和模型输出之间的差异以及已经更正的内容。
+"""
 
-```
+I got this for my daughter's birthday because she keeps taking mine from my room. Yes, adults also like pandas too. She takes it everywhere with her, and it's super soft and cute. However, one of the ears is a bit lower than the other, and I don't think that was designed to be asymmetrical. Additionally, it's a bit small for what I paid for it. I think there might be other options that are bigger for the same price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.
+
+"""
+````
+
+我们可以做的一件很酷的事情是找到原始评论和模型输出之间的差异。因此，我们将使用这个`RedLines` Python包来做这件事情。我们将获得我们评论的原始文本和模型输出之间的差异，然后将其显示出来。在这里，您可以看到原始评论和模型输出之间的差异以及已经更正的内容。
+
+```text
 from redlines import Redlines
 
 diff = Redlines(text,response)
+
 display(Markdown(diff.output_markdown))
 ```
 
@@ -1754,71 +1924,74 @@ display(Markdown(diff.output_markdown))
 
 因此，我们使用的提示是“校对并更正此评论”，但您还可以进行更明显的更改，例如改变语气等。让我们再试试其他东西。在这个提示中，我们将要求模型校对和更正同一篇评论，同时使其更有吸引力，确保它遵循APA风格，并面向高级读者。我们还将要求以markdown格式输出。因此，我们在上面使用的是来自原始评论的相同文本。让我们执行一下。在这里，我们有一篇扩展的APA风格评论《软性熊猫》。
 
-```
-prompt = f&quot;&quot;&quot;
+````text
+prompt = f"""
+
 proofread and correct this review. Make it more compelling. 
+
 Ensure it follows APA style guide and targets an advanced reader. 
+
 Output in markdown format.
+
 Text: ```{text}```
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 display(Markdown(response))
 
-&quot;&quot;&quot;
+"""
 Title: A Soft and Cute Panda Plushie for All Ages
-As an adult, I can attest that pandas are not just for kids. That&#x27;s why I got this adorable panda plushie for my daughter&#x27;s birthday, after she kept taking mine from my room. And let me tell you, it was a hit!
-The plushie is super soft and cuddly, making it the perfect companion for my daughter. She takes it everywhere with her, and it has quickly become her favorite toy. However, I did notice that one of the ears is a bit lower than the other, which I don&#x27;t think was designed to be asymmetrical. But that doesn&#x27;t take away from its cuteness.
-The only downside is that it&#x27;s a bit small for the price I paid. I think there might be other options that are bigger for the same price. But overall, I&#x27;m happy with my purchase.
+As an adult, I can attest that pandas are not just for kids. That's why I got this adorable panda plushie for my daughter's birthday, after she kept taking mine from my room. And let me tell you, it was a hit!
+The plushie is super soft and cuddly, making it the perfect companion for my daughter. She takes it everywhere with her, and it has quickly become her favorite toy. However, I did notice that one of the ears is a bit lower than the other, which I don't think was designed to be asymmetrical. But that doesn't take away from its cuteness.
+The only downside is that it's a bit small for the price I paid. I think there might be other options that are bigger for the same price. But overall, I'm happy with my purchase.
 One thing that surprised me was that it arrived a day earlier than expected. This gave me the chance to play with it myself before giving it to my daughter. And I have to say, I was impressed with the quality and attention to detail.
-In conclusion, if you&#x27;re looking for a soft and cute panda plushie for yourself or a loved one, this is definitely a great option. Just be aware that it might be a bit smaller than expected.
-&quot;&quot;&quot;
-```
-
-这就是转换视频的全部内容。接下来，我们将进行扩展，从语言模型中生成更长、更自由的响应。
+In conclusion, if you're looking for a soft and cute panda plushie for yourself or a loved one, this is definitely a great option. Just be aware that it might be a bit smaller than expected.
+"""
+````
 
 # 文本扩写 / Expanding
 
-
 [prompt_eng_07_expanding.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FW1HbARtWoBd9OxziafcQ6dKn4g)
 
-扩展是将短的文本片段，比如一组说明或一系列主题，并让大型语言模型生成更长的文本，比如关于某个主题的电子邮件或论文的任务。这样做很有用，比如如果你把大型语言模型作为头脑风暴的合作伙伴。但我也想指出，这样做有一些问题，比如如果有人用它生成大量的垃圾邮件。因此，当你使用大型语言模型的这些功能时，请负责任地使用，并以有助于人们的方式使用。在这个视频中，我们将演示如何使用语言模型根据某些信息生成个性化的电子邮件。这封电子邮件有点自称为来自 AI 机器人，这一点非常重要，如安德鲁所提到的。我们还将使用另一个模型输入参数，称为温度，这使您能够变化模型响应中的探索和多样性程度。让我们开始吧。
+扩展是将短的文本片段，比如一组说明或一系列主题，并让大型语言模型生成更长的文本，比如关于某个主题的电子邮件或论文的任务。这样做很有用，比如如果你把大型语言模型作为头脑风暴的合作伙伴。但我也想指出，这样做有一些问题，比如如果有人用它生成大量的垃圾邮件。因此，当你使用大型语言模型的这些功能时，请负责任地使用，并以有助于人们的方式使用。在这个视频中，我们将演示如何使用语言模型根据某些信息生成个性化的电子邮件。这封电子邮件有点自称为来自 AI 机器人，这一点非常重要，如安德鲁所提到的。我们还将使用另一个模型输入参数，称为`temperature`（温度），这使您能够变化模型响应中的探索和多样性程度。让我们开始吧。
 
 ## 环境准备
 
-所以在我们开始之前，我们要做一些通常的设置。所以设置OpenAI Python包，然后定义我们的帮助函数get完成。
+所以在我们开始之前，我们要做一些通常的设置。所以设置OpenAI Python包，然后定义我们的帮助函数`get_completion`。
 
-```
+```text
 import openai
 import os
 
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
-```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;,temperature=0): # Andrew mentioned that the prompt/ completion paradigm is preferable for this class
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
+```text
+def get_completion(prompt, model="gpt-3.5-turbo",temperature=0): # Andrew mentioned that the prompt/ completion paradigm is preferable for this class
+    messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=temperature, # this is the degree of randomness of the model&#x27;s output
+        temperature=temperature, # this is the degree of randomness of the model's output
     )
-    return response.choices[0].message[&quot;content&quot;]
+    return response.choices[0].message["content"]
 ```
 
 ## 自动回复邮件
 
 现在我们要为客户评论编写一个自定义的电子邮件回复，因此给定客户评论和情绪，我们将生成一个自定义的回复。现在我们将使用语言模型根据客户评论和评论的情绪为客户生成一个自定义的电子邮件。所以我们已经使用我们在推断视频中看到的那种提示提取了情绪，然后这是搅拌器的客户评论，现在我们将根据情绪定制回复。
 
+
+
 ```
-# given the sentiment from the lesson on &quot;inferring&quot;,
+# given the sentiment from the lesson on "inferring",
 # and the original customer message, customize the email
-sentiment = &quot;negative&quot;
+sentiment = "negative"
 
 # review for a blender
-review = f&quot;&quot;&quot;
+review = f"""
 So, they still had the 17 piece system on seasonal \
 sale for around $49 in the month of November, about \
 half off, but for some reason (call it price gouging) \
@@ -1849,31 +2022,40 @@ quality has gone done in these types of products, so \
 they are kind of counting on brand recognition and \
 consumer loyalty to maintain sales. Got it in about \
 two days.
-&quot;&quot;&quot;
+"""
 ```
 
 因此，这里的说明是您是一名客户服务AI助理，您的任务是发送一封关于您的客户的电子邮件回复，给定由三个反引号分隔的客户电子邮件，生成回复以感谢客户的评论。如果情绪是积极或中立的，感谢他们的评论。如果情绪是消极的，道歉并建议他们可以联系客户服务。确保使用评论中的具体细节，以简洁和专业的语气书写，并以客户代理AI身份签署电子邮件。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 You are a customer service AI assistant.
 Your task is to send an email reply to a valued customer.
 Given the customer email delimited by ```, \
+
 Generate a reply to thank the customer for their review.
+
 If the sentiment is positive or neutral, thank them for \
+
 their review.
+
 If the sentiment is negative, apologize and suggest that \
+
 they can reach out to customer service. 
+
 Make sure to use specific details from the review.
+
 Write in a concise and professional tone.
+
 Sign the email as `AI customer agent`.
+
 Customer review: ```{review}```
 Review sentiment: {sentiment}
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt)
 print(response)
 
-&quot;&quot;&quot;
+"""
 Dear Valued Customer,
 
 Thank you for taking the time to leave a review about our product. We are sorry to hear that you experienced an increase in price and that the quality of the product did not meet your expectations. We apologize for any inconvenience this may have caused you.
@@ -1885,8 +2067,8 @@ Thank you again for your review and for choosing our product. We hope to have th
 Best regards,
 
 AI customer agent
-&quot;&quot;&quot;
-```
+"""
+````
 
 当您使用语言模型生成文本时，您将向用户展示这种透明度非常重要，让用户知道他们看到的文本是由AI生成的。然后我们将输入客户评论和评论情绪。还要注意，这部分不一定重要，因为我们实际上可以使用此提示来提取评论情绪，然后在后续步骤中编写电子邮件。但为了示例，我们已经从评论中提取了情绪。因此，这里我们有对客户的回复。它解决了客户在评论中提到的细节。就像我们指示的那样，建议他们联系客户服务，因为这只是一个AI的客户服务代理。
 
@@ -1896,25 +2078,34 @@ AI customer agent
 
 一般来说，在构建想要一种可预测响应的应用程序时，我建议使用温度零。在所有这些视频中，我们一直在使用温度零，我认为如果你试图构建一个可靠和可预测的系统，你应该这样做。如果你试图以一种更有创意的方式使用模型，你可能想要一种更广泛的不同输出，你可能想要使用更高的温度。所以，现在让我们使用我们刚刚使用的提示，让我们尝试生成一封电子邮件，但让我们使用更高的温度。所以，在我们在整个视频中使用的get完成函数中，我们已经指定了一个模型，然后也是一个温度，但我们已经将它们设置为默认值。所以，现在让我们尝试改变温度。所以，我们将使用提示，然后让我们尝试温度0.7。因此，当温度为0时，每次执行相同的提示时，您应该期望相同的完成。而当温度为0.7时，您每次都会得到不同的输出。
 
-```
-prompt = f&quot;&quot;&quot;
+````
+prompt = f"""
 You are a customer service AI assistant.
 Your task is to send an email reply to a valued customer.
 Given the customer email delimited by ```, \
+
 Generate a reply to thank the customer for their review.
+
 If the sentiment is positive or neutral, thank them for \
+
 their review.
+
 If the sentiment is negative, apologize and suggest that \
+
 they can reach out to customer service. 
+
 Make sure to use specific details from the review.
+
 Write in a concise and professional tone.
+
 Sign the email as `AI customer agent`.
+
 Customer review: ```{review}```
 Review sentiment: {sentiment}
-&quot;&quot;&quot;
+"""
 response = get_completion(prompt, temperature=0.7)
 print(response)
-&quot;&quot;&quot;
+"""
 Dear valued customer,
 
 Thank you for taking the time to leave a review about our product. We are sorry to hear that you experienced an increase in price for the system you were interested in, and that you also experienced an issue with the motor after a year of use. We apologize for any inconvenience this may have caused you.
@@ -1925,15 +2116,15 @@ Thank you again for your feedback and for choosing our product.
 
 Best regards,
 AI customer agent
-&quot;&quot;&quot;
-```
+"""
+````
 
 这是我们的电子邮件，正如你所看到的，它与我们之前收到的电子邮件不同。
 
 让我们再执行一次，以表明我们将再次收到不同的电子邮件。这里我们有另一封不同的电子邮件。所以，我建议你自己玩玩温度。也许你现在可以暂停视频，在各种不同的温度下尝试这个提示，看看输出是如何变化的。总结一下，在更高的温度下，模型的输出更随机。你几乎可以认为在更高的温度下，助手更容易分心，但也许更有创造力。
 
 ```
-&quot;&quot;&quot;
+"""
 Dear Valued Customer,
 
 Thank you for taking the time to leave a review. We sincerely apologize for the inconvenience you experienced with the price increase and the quality of the product. We understand your frustration and would like to offer our deepest apologies. If there is anything we can do to assist you, please do not hesitate to reach out to our customer service team.
@@ -1943,10 +2134,10 @@ We appreciate your feedback and hope to have the opportunity to serve you better
 Kind Regards,
 
 AI customer agent
-&quot;&quot;&quot;
+"""
 ```
 
-在下一个视频中，我们将详细讨论Chat Completions Endpoint格式，以及如何使用此格式创建自定义聊天机器人。
+在下一个视频中，我们将详细讨论`Chat Completions Endpoint`格式，以及如何使用此格式创建自定义聊天机器人。
 
 # 聊天机器人 / ChatBot
 
@@ -1956,7 +2147,7 @@ AI customer agent
 
 关于大型语言模型的一个令人兴奋的事情是你可以用它来构建一个自定义聊天机器人，只需少量的努力。ChatGPT，网络界面，是你拥有对话界面的一种方式，通过大型语言模型进行对话。但很酷的事情之一是你也可以使用大型语言模型来构建你的自定义聊天机器人，也许可以扮演AI客户服务代理或餐馆AI接单员的角色。
 
-在本视频中，你将学习如何为自己做这件事。我将更详细地描述OpenAI ChatCompletions格式的组件，然后你将自己构建一个聊天机器人。让我们开始吧。
+在本视频中，你将学习如何为自己做这件事。我将更详细地描述OpenAI `ChatCompletions`格式的组件，然后你将自己构建一个聊天机器人。让我们开始吧。
 
 ## 环境准备
 
@@ -1968,53 +2159,55 @@ import openai
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-openai.api_key  = os.getenv(&#x27;OPENAI_API_KEY&#x27;)
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
-像ChatGPT这样的聊天模型实际上被训练为将一系列消息作为输入并返回模型生成的消息作为输出。因此，尽管聊天格式旨在使这样的多轮对话变得简单，但我们已经通过之前的视频看到，它对于没有任何对话的单轮任务也同样有用。所以接下来，我们将定义两个辅助函数。这是我们在所有视频中一直使用的函数，它是getWorks函数。
+像ChatGPT这样的聊天模型实际上被训练为将一系列消息作为输入并返回模型生成的消息作为输出。因此，尽管聊天格式旨在使这样的多轮对话变得简单，但我们已经通过之前的视频看到，它对于没有任何对话的单轮任务也同样有用。所以接下来，我们将定义两个辅助函数。这是我们在所有视频中一直使用的函数，它是`getWorks`函数。
 
 但是如果你看一下，我们给出了一个提示，然后在函数内部，我们实际上在做的是将这个提示放入看起来像某种用户消息中。这是因为ChatGPT模型是一个聊天模型，这意味着它被训练成将一系列消息作为输入，然后返回模型生成的消息作为输出。所以用户消息是一种输入，然后助手消息是输出。所以，在这个视频中，我们将使用一个不同的帮助函数，而不是把一个提示作为输入并得到一个完成，我们将传入一个消息列表。这些消息可以来自各种不同的角色，所以我将描述这些。
 
-```
-def get_completion(prompt, model=&quot;gpt-3.5-turbo&quot;):
-    messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}]
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        temperature=0, # this is the degree of randomness of the model&#x27;s output
-    )
-    return response.choices[0].message[&quot;content&quot;]
 
-def get_completion_from_messages(messages, model=&quot;gpt-3.5-turbo&quot;, temperature=0):
+
+```python
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=temperature, # this is the degree of randomness of the model&#x27;s output
+        temperature=0, # this is the degree of randomness of the model's output
+    )
+    return response.choices[0].message["content"]
+
+def get_completion_from_messages(messages, model="gpt-3.5-turbo", temperature=0):
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=temperature, # this is the degree of randomness of the model's output
     )
 #     print(str(response.choices[0].message))
-    return response.choices[0].message[&quot;content&quot;]
+    return response.choices[0].message["content"]
 ```
 
 所以这是一个消息列表的示例。所以，第一条消息是一个系统消息，它给出了一个整体指令，然后在这条消息之后，我们在用户和助手之间进行了某种转换。这将继续下去。如果你曾经使用过ChatGPT，网络界面，那么你的消息就是用户消息，然后ChatGPT的消息就是助手消息。所以系统消息有助于设置助手的行为和角色，它在某种程度上是对话的高级指令。所以你可以把它想象成在助手耳边窃窃私语，引导助手的反应，而用户却没有意识到系统消息。
 
 所以，作为用户，如果你曾经使用过ChatGPT，你可能不知道ChatGPT的系统消息中有什么，这就是目的。系统消息的好处是，它为开发人员提供了一种构建对话的方法，而无需将请求本身作为对话的一部分。因此，您可以引导助手，在其耳边低语并引导其响应，而无需让用户意识到。
 
-```
+```python
 messages =  [  
-{&#x27;role&#x27;:&#x27;system&#x27;, &#x27;content&#x27;:&#x27;You are an assistant that speaks like Shakespeare.&#x27;},    
-{&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:&#x27;tell me a joke&#x27;},   
-{&#x27;role&#x27;:&#x27;assistant&#x27;, &#x27;content&#x27;:&#x27;Why did the chicken cross the road&#x27;},   
-{&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:&#x27;I don\&#x27;t know&#x27;}  ]
+{'role':'system', 'content':'You are an assistant that speaks like Shakespeare.'},    
+{'role':'user', 'content':'tell me a joke'},   
+{'role':'assistant', 'content':'Why did the chicken cross the road'},   
+{'role':'user', 'content':'I don\'t know'}  ]
 ```
 
 所以，现在让我们尝试在对话中使用这些消息。因此，我们将使用我们的新助手函数从消息中获得完成。我们还使用更高的温度。所以系统消息说，你是一个说话像莎士比亚的助手。所以这是我们向助手描述它应该如何表现。然后第一个用户信息是，给我讲个笑话。接下来是，为什么鸡要过马路？最后一个用户信息是，我不知道。所以如果我们运行这个，响应是到达另一边。让我们再试一次。
 
-```
+```python
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
-&quot;&quot;&quot;
-To get to the other side, sire! &#x27;Tis a classic jest, known by many a bard.
-&quot;&quot;&quot;
+"""
+To get to the other side, sire! 'Tis a classic jest, known by many a bard.
+"""
 ```
 
 为了到达另一边，公平地说，夫人，这是一个古老的经典，永远不会失败。这是我们的莎士比亚响应。
@@ -2023,68 +2216,67 @@ To get to the other side, sire! &#x27;Tis a classic jest, known by many a bard.
 
 所以，这就是这个助手函数中发生的事情。我们只是传递消息的内容。现在让我们做另一个例子。
 
-```
+```python
 messages =  [  
-{&#x27;role&#x27;:&#x27;system&#x27;, &#x27;content&#x27;:&#x27;You are friendly chatbot.&#x27;},    
-{&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:&#x27;Hi, my name is Isa&#x27;}  ]
+{'role':'system', 'content':'You are friendly chatbot.'},    
+{'role':'user', 'content':'Hi, my name is Isa'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
-&quot;&quot;&quot;
+"""
 Hello Isa! Nice to meet you. How are you doing today?
-&quot;&quot;&quot;
+"""
 ```
 
 所以，这里我们的消息是，嗯，助手消息是，你是一个友好的聊天机器人，第一条用户消息是，嗨，我的名字是Isa。我们想，嗯，获取第一条用户消息。所以，让我们执行这个。第一条助手消息。所以，第一条消息是，你好Isa，很高兴见到你。我今天可以如何帮助你？
 
-```
+```python
 messages =  [  
-{&#x27;role&#x27;:&#x27;system&#x27;, &#x27;content&#x27;:&#x27;You are friendly chatbot.&#x27;},    
-{&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:&#x27;Yes,  can you remind me, What is my name?&#x27;}  ]
+{'role':'system', 'content':'You are friendly chatbot.'},    
+{'role':'user', 'content':'Yes,  can you remind me, What is my name?'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
-&quot;&quot;&quot;
-I&#x27;m sorry, but as a chatbot, I do not have access to information about your personal details such as your name. However, you can tell me your name and we can continue our conversation.
-&quot;&quot;&quot;
+"""
+I'm sorry, but as a chatbot, I do not have access to information about your personal details such as your name. However, you can tell me your name and we can continue our conversation.
+"""
 ```
 
 现在，让我们尝试另一个例子。所以，这里我们的消息是，嗯，系统消息，你是一个友好的聊天机器人，第一条用户消息是，是的，你能提醒我我的名字是什么吗？让我们得到响应。正如你所看到的，模型实际上并不知道我的名字。所以，与语言模型的每个对话都是一个独立的交互，这意味着你必须为模型提供所有相关的消息，以便在当前对话中提取。
 
 如果你想让模型从对话中提取，或者引用，记住对话的早期部分，你必须在模型的输入中提供早期的交流。所以，我们将此称为上下文。所以，让我们试试这个。
 
-```
+```python
 messages =  [  
-{&#x27;role&#x27;:&#x27;system&#x27;, &#x27;content&#x27;:&#x27;You are friendly chatbot.&#x27;},
-{&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:&#x27;Hi, my name is Isa&#x27;},
-{&#x27;role&#x27;:&#x27;assistant&#x27;, &#x27;content&#x27;: &quot;Hi Isa! It&#x27;s nice to meet you. \
-Is there anything I can help you with today?&quot;},
-{&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:&#x27;Yes, you can remind me, What is my name?&#x27;}  ]
+{'role':'system', 'content':'You are friendly chatbot.'},
+{'role':'user', 'content':'Hi, my name is Isa'},
+{'role':'assistant', 'content': "Hi Isa! It's nice to meet you. \
+Is there anything I can help you with today?"},
+{'role':'user', 'content':'Yes, you can remind me, What is my name?'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
-&quot;&quot;&quot;
+"""
 Of course, your name is Isa.
-&quot;&quot;&quot;
+"""
 ```
 
 所以，现在我们已经给出了模型需要的上下文，嗯，这是我在前面的消息中的名字，我们会问同样的问题，所以我们会问我的名字是什么。模型能够响应，因为它拥有它需要的所有上下文，嗯，在我们输入给它的这种消息列表中。
 
 ## 订单机器人
 
-所以现在你要构建你自己的聊天机器人。这个聊天机器人将被称为orderbot，我们将自动收集用户提示和助手响应，以构建这个orderbot。它将接受披萨店的订单，所以首先我们要定义这个帮助函数，它要做的是收集我们的用户消息，这样我们就可以避免像上面那样手动输入它们，这将从下面构建的用户交互界面收集提示，然后将其附加到一个名为上下文的列表中，然后它将每次都使用该上下文调用模型。然后模型响应也被添加到上下文中，所以模型消息被添加到上下文中，用户消息被添加到上下文中，依此类推，所以它越来越长。
+所以现在你要构建你自己的聊天机器人。这个聊天机器人将被称为`orderbot`，我们将自动收集用户提示和助手响应，以构建这个`orderbot`。它将接受披萨店的订单，所以首先我们要定义这个帮助函数，它要做的是收集我们的用户消息，这样我们就可以避免像上面那样手动输入它们，这将从下面构建的用户交互界面收集提示，然后将其附加到一个名为上下文的列表中，然后它将每次都使用该上下文调用模型。然后模型响应也被添加到上下文中，所以模型消息被添加到上下文中，用户消息被添加到上下文中，依此类推，所以它越来越长。
 
-```
+```python
 def collect_messages(_):
     prompt = inp.value_input
-    inp.value = &#x27;&#x27;
-    context.append({&#x27;role&#x27;:&#x27;user&#x27;, &#x27;content&#x27;:f&quot;{prompt}&quot;})
+    inp.value = ''
+    context.append({'role':'user', 'content':f"{prompt}"})
     response = get_completion_from_messages(context) 
-    context.append({&#x27;role&#x27;:&#x27;assistant&#x27;, &#x27;content&#x27;:f&quot;{response}&quot;})
+    context.append({'role':'assistant', 'content':f"{response}"})
     panels.append(
-        pn.Row(&#x27;User:&#x27;, pn.pane.Markdown(prompt, width=600)))
+        pn.Row('User:', pn.pane.Markdown(prompt, width=600)))
     panels.append(
-        pn.Row(&#x27;Assistant:&#x27;, pn.pane.Markdown(response, width=600, style={&#x27;background-color&#x27;: &#x27;#F6F6F6&#x27;})))
+        pn.Row('Assistant:', pn.pane.Markdown(response, width=600, style={'background-color': '#F6F6F6'})))
  
     return pn.Column(*panels)
-
 ```
 
 这样模型就有了它需要的信息来决定下一步做什么。现在我们将设置并运行这种UI来显示订单机器人，这是上下文，它包含包含菜单的系统消息，注意，每次我们调用语言模型时，我们都将使用相同的上下文，上下文随着时间的推移而积累。然后让我们执行这个。好的，我要说，嗨，我想订一个比萨饼。助理说，太好了，你想订什么比萨饼？我们有香肠、奶酪和茄子比萨饼。它们多少钱？太好了，好的，我们有价格。我想我觉得一个中等的茄子比萨饼。所以你可以想象，我们可以继续这个对话，让我们看看我们在系统消息中放了什么。
@@ -2093,19 +2285,19 @@ def collect_messages(_):
 
 所以让我们回到我们的谈话，让我们看看助理是否一直在遵循指示。
 
-```
+```python
 import panel as pn  # GUI
 pn.extension()
 
 panels = [] # collect display 
 
-context = [ {&#x27;role&#x27;:&#x27;system&#x27;, &#x27;content&#x27;:&quot;&quot;&quot;
+context = [ {'role':'system', 'content':"""
 You are OrderBot, an automated service to collect orders for a pizza restaurant. \
 You first greet the customer, then collects the order, \
-and then asks if it&#x27;s a pickup or delivery. \
+and then asks if it's a pickup or delivery. \
 You wait to collect the entire order, then summarize it and check for a final \
 time if the customer wants to add anything else. \
-If it&#x27;s a delivery, you ask for an address. \
+If it's a delivery, you ask for an address. \
 Finally you collect the payment.\
 Make sure to clarify all options, extras and sizes to uniquely \
 identify the item from the menu.\
@@ -2127,11 +2319,11 @@ Drinks: \
 coke 3.00, 2.00, 1.00 \
 sprite 3.00, 2.00, 1.00 \
 bottled water 5.00 \
-&quot;&quot;&quot;} ]  # accumulate messages
+"""}]  # accumulate messages
 
 
-inp = pn.widgets.TextInput(value=&quot;Hi&quot;, placeholder=&#x27;Enter text here…&#x27;)
-button_conversation = pn.widgets.Button(name=&quot;Chat!&quot;)
+inp = pn.widgets.TextInput(value="Hi", placeholder='Enter text here…')
+button_conversation = pn.widgets.Button(name="Chat!")
 
 interactive_conversation = pn.bind(collect_messages, button_conversation)
 
@@ -2142,9 +2334,9 @@ dashboard = pn.Column(
 )
 
 dashboard
-&quot;&quot;&quot;
+"""
 [出现一个人机交互界面]
-&quot;&quot;&quot;
+"""
 ```
 
 实际使用示例效果如下
@@ -2157,54 +2349,87 @@ dashboard
 
 所以现在我们可以要求模型创建一个JSON摘要，我们可以根据对话发送到订单系统。所以我们现在附加另一个系统消息，这是一个指令，我们说创建一个JSON的前一个食物订单的摘要，逐项列出每个项目的价格，字段应该是一个比萨饼，包括侧面，两个配料列表，三个饮料列表和四个侧面列表，最后是总价。
 
-```
+
+
+````python
 messages =  context.copy()
 messages.append(
-{&#x27;role&#x27;:&#x27;system&#x27;, &#x27;content&#x27;:&#x27;create a json summary of the previous food order. Itemize the price for each item\
- The fields should be 1) pizza, include size 2) list of toppings 3) list of drinks, include size   4) list of sides include size  5)total price &#x27;},    
+{'role':'system', 'content':'create a json summary of the previous food order. Itemize the price for each item\
+ The fields should be 1) pizza, include size 2) list of toppings 3) list of drinks, include size   4) list of sides include size  5)total price '},    
 )
- #The fields should be 1) pizza, price 2) list of toppings 3) list of drinks, include size include price  4) list of sides include size include price, 5)total price &#x27;},    
+ #The fields should be 1) pizza, price 2) list of toppings 3) list of drinks, include size include price  4) list of sides include size include price, 5)total price '},    
 
 response = get_completion_from_messages(messages, temperature=0)
 print(response)
 
-&quot;&quot;&quot;
-Sure, here&#x27;s a JSON summary of your order:
+"""
+Sure, here's a JSON summary of your order:
 
 ```
+
 {
-  &quot;pizza&quot;: {
-    &quot;type&quot;: &quot;意大利辣香肠披萨&quot;,
-    &quot;size&quot;: &quot;中号&quot;,
-    &quot;price&quot;: 12.95
+
+  "pizza": {
+
+    "type": "意大利辣香肠披萨",
+
+    "size": "中号",
+
+    "price": 12.95
+
   },
-  &quot;toppings&quot;: [
+
+  "toppings": [
+
     {
-      &quot;type&quot;: &quot;加拿大培根&quot;,
-      &quot;price&quot;: 3.50
+
+      "type": "加拿大培根",
+
+      "price": 3.50
+
     },
+
     {
-      &quot;type&quot;: &quot;蘑菇&quot;,
-      &quot;price&quot;: 1.50
+
+      "type": "蘑菇",
+
+      "price": 1.50
+
     },
+
     {
-      &quot;type&quot;: &quot;彩椒&quot;,
-      &quot;price&quot;: 1.00
+
+      "type": "彩椒",
+
+      "price": 1.00
+
     }
+
   ],
-  &quot;drinks&quot;: [
+
+  "drinks": [
+
     {
-      &quot;type&quot;: &quot;可乐&quot;,
-      &quot;size&quot;: &quot;中杯&quot;,
-      &quot;price&quot;: 3.00
+
+      "type": "可乐",
+
+      "size": "中杯",
+
+      "price": 3.00
+
     }
+
   ],
-  &quot;sides&quot;: [],
-  &quot;total_price&quot;: 18.95
+
+  "sides": [],
+
+  "total_price": 18.95
+
 }
+
 ```
-&quot;&quot;&quot;
-```
+"""
+````
 
 你也可以在这里使用用户消息，这不一定是系统消息。所以让我们执行这个。注意在这种情况下，我们使用较低的温度，因为对于这些任务，我们希望输出是相当可预测的。对于会话代理，您可能希望使用更高的温度，但是在这种情况下，我可能也会使用更低的温度，因为对于客户的助手聊天机器人，您可能希望输出也更可预测。
 
@@ -2221,16 +2446,11 @@ Sure, here&#x27;s a JSON summary of your order:
 总之，在这个简短的课程中，你已经学习了
 
 +   提示的两个关键原则。
-
-1.  写清楚具体的说明，
-
-1.  在合适的时候，给模型时间思考。
-
+    1. 写清楚具体的说明，
+    2. 在合适的时候，给模型时间思考。
 +   你还学习了迭代提示开发，以及如何拥有一个适合你的应用程序的提示过程是关键。
-
-1.  我们学习了一些对许多应用程序有用的大型语言模型的功能，特别是总结、推断、转换和扩展。
-
-1.  你还看到了如何构建一个自定义聊天机器人。
+    1. 我们学习了一些对许多应用程序有用的大型语言模型的功能，特别是总结、推断、转换和扩展。
+    2. 你还看到了如何构建一个自定义聊天机器人。
 
 这是你在一个简短的课程中学到的很多东西，我希望你喜欢阅读这些材料。我们希望你能想出一些你现在可以自己构建的应用程序的想法。请去试试这个，让我们知道你想出了什么。没有应用程序太小，从一个非常小的项目开始是很好的，也许有点实用，或者它根本没有用，只是一些有趣的东西。是的，我发现玩这些模型真的很有趣，所以去玩吧！我同意，这是一个很好的周末活动，从经验来看。
 

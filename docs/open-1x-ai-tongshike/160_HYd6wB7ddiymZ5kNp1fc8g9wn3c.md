@@ -1,3 +1,4 @@
+
 # AI产品经理银海直播分享内容
 
 > 来源：[https://datawhaler.feishu.cn/docx/NxM7do7OgoyEBzxTDqzcK6zcnNb](https://datawhaler.feishu.cn/docx/NxM7do7OgoyEBzxTDqzcK6zcnNb)
@@ -14,7 +15,7 @@ AI夏令营来到第四期～ 即将收官了！
 
 今年AI夏令营期间，扣子空间也迎来了功能的升级和更新，新增了设计、PPT、网页功能。所以我们组织了这次学习～ 和大家一起玩转AI。第四期上线AI技能篇：Datawhale和字节跳动，一起联合推出扣子空间共学。
 
-**共学活动****任务： 在**[**扣子空间**](https://www.coze.cn/s/kilDonYgjY0/)任选至少 1个AI技能树完成创作（可多选！）
+**共学活动任务：** 在[扣子空间](https://www.coze.cn/s/kilDonYgjY0/)任选至少 1个AI技能树完成创作（可多选！）
 
 +   AI时代，我的个人展现，一起点亮你的AI技能树
 
@@ -30,15 +31,15 @@ AI夏令营来到第四期～ 即将收官了！
 
 +   [扣子空间](https://www.coze.cn/s/kilDonYgjY0/)平台入口：
 
-> https://www.coze.cn/s/kilDonYgjY0/
+> `https://www.coze.cn/s/kilDonYgjY0/`
 
 +   提交你的创意：
 
-> https://datawhaler.feishu.cn/share/base/form/shrcnZ9zUyFs1WGswCEkL6yKfbg
+> `https://datawhaler.feishu.cn/share/base/form/shrcnZ9zUyFs1WGswCEkL6yKfbg`
 
 +   作品展示墙（互相点赞和学习）：
 
-> https://datawhaler.feishu.cn/wiki/OfsdwN3qMihijHkGxvTcIrmqn0o?from=from_copylink
+> `https://datawhaler.feishu.cn/wiki/OfsdwN3qMihijHkGxvTcIrmqn0o?from=from_copylink`
 
 +   **玩起来：社区分享**
 
@@ -52,7 +53,7 @@ AI夏令营来到第四期～ 即将收官了！
 
 # 扣子空间怎么玩？现场笔记
 
-## 网页：
+## 网页
 
 一键优化的按钮！优化提示词。
 
@@ -60,7 +61,7 @@ AI夏令营来到第四期～ 即将收官了！
 
 局部修改和编辑的功能。
 
-## 海报：
+## 海报
 
 文本的能力很强。
 
@@ -68,21 +69,21 @@ AI夏令营来到第四期～ 即将收官了！
 
 先生成有趣的文案 -> 输出有意思的海报。
 
-## 播客：
+## 播客
 
 文章/链接发进去看解说。
 
 语气特别自然。
 
-## PPT：
+## PPT
 
 一键生成。线上编辑。
 
-## **文本：**
+## 文本
 
 整活儿。**创意。**
 
-## **其他玩法：**
+## 其他玩法
 
 基础文字创作 -> PPT、网页、海报、播客。
 
@@ -99,10 +100,15 @@ AI夏令营来到第四期～ 即将收官了！
 # 活动奖励
 
 | **荣誉** | **完成可获得** |
+
 | --- | --- |
+
 | **结营证书** | 结营证书（电子版）的衡量标准为： |
+
 | **暑期实践证明** | 提供加盖公章的电子版文件。 |
+
 | **最受欢迎奖** | **从作品墙中评选出点赞数最多的**前20个作品，可获得Datawhale限定鼠标垫文创礼品🎁 |
+
 | **AI超级个体榜单** | 在提交的作品案例中，从以下三个维度评选出入选AI超级个体榜单的名单： |
 
 **Datawhale文创周边**

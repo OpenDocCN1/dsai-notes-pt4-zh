@@ -1,10 +1,9 @@
+
 # 离职半年，我参与的一些法律科技项目，同时也看看新的机会
 
 > 来源：[https://docs.feishu.cn/docx/B7czdQeo3oAbzjxkyPncfDIInvh](https://docs.feishu.cn/docx/B7czdQeo3oAbzjxkyPncfDIInvh)
 
----
-
-# **👋🏻 hi 大家好！**
+## 👋🏻 hi 大家好！
 
 我是吴世杰，法律修音机主理人。
 
@@ -16,11 +15,11 @@
 
 2023 年底，我退出之前的若干个创业项目，准备 gap 一段时间，闲云野鹤地在各个地方闲逛、吃喝玩乐，有的朋友看我的朋友圈，也建议我拍点 vlog，做做离职博主。
 
-**不**过，我并没有打算把自媒体当主业来做的想法 —— 至少目前没有，虽然运营「法律修音机」已经给我带来了不少收入和机会。
+不过，我并没有打算把自媒体当主业来做的想法 —— 至少目前没有，虽然运营「法律修音机」已经给我带来了不少收入和机会。
 
-**在**我看来，自媒体就是自媒体，即便它可能成为副业，也不应该着急变现，长期打造的品牌和信任，未来将会带来更大的价值。
+在我看来，自媒体就是自媒体，即便它可能成为副业，也不应该着急变现，长期打造的品牌和信任，未来将会带来更大的价值。
 
-**同**时，我认为自己还处于沉淀能力的阶段，而且自身的沉淀应该用于自己热爱的事情上 —— 很幸运我已经找到，而不是卖钱。
+同时，我认为自己还处于沉淀能力的阶段，而且自身的沉淀应该用于自己热爱的事情上 —— 很幸运我已经找到，而不是卖钱。
 
 更何况，咱也没待过大厂，没这个资格🤷‍♂️
 
@@ -36,29 +35,22 @@
 
 2024 上半年已经结束，正好借着这篇文章，和大家分享一下我这段时间参与的几个法律科技项目，同时也看看新的项目机会。
 
-# **太长不看**
+## 太长不看
 
 本文介绍的法律科技项目包括：
 
-+   法律科技社区、智库和 AI Agent
-
-+   律新社：法律科技调研报告
-
-+   法天使&植德律所：AI 共创营
-
-+   几家大厂：法律科技顾问
-
-+   几个朋友：开办律所和法律 MCN
-
-+   其他：讲课、带货、出书
++ 法律科技社区、智库和 AI Agent
++ 律新社：法律科技调研报告
++ 法天使&植德律所：AI 共创营
++ 几家大厂：法律科技顾问
++ 几个朋友：开办律所和法律 MCN
++ 其他：讲课、带货、出书
 
 关于我的个人介绍，请看：[吴世杰个人介绍](https://legalstudio.feishu.cn/wiki/V5hSwC3eViWhrjk97IJcsyoUncc?fromScene=spaceOverview)
 
 以下是上述项目的具体介绍：
 
-# 法律科技社区、智库和 AI Agent
-
----
+## 法律科技社区、智库和 AI Agent
 
 首先，打造国内最好的[【法律科技社区】](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3527497267156107272#wechat_redirect)和[【法律科技智库】](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3521007419251507205#wechat_redirect)，是我年初的既定计划，这也是这半年我花时间最多的地方。
 
@@ -66,21 +58,14 @@
 
 Legal Studio 法律科技智库，则是一个结构化的法律科技知识库，涵盖与法律科技相关的各类前沿信息和深度内容，包括：
 
-+   法律科技日报/月报/季刊/半年刊/年刊
-
-+   法律科技融资/并购动态
-
-+   法律 AI 产品动态
-
-+   法律科技年鉴
-
-+   法律科技数据库
-
-+   AI+法律最佳实践
-
-+   法律科技支持政策
-
-+   ……
++ 法律科技日报/月报/季刊/半年刊/年刊
++ 法律科技融资/并购动态
++ 法律 AI 产品动态
++ 法律科技年鉴
++ 法律科技数据库
++ AI+法律最佳实践
++ 法律科技支持政策
++ ……
 
 法律修音机平时发布的法律科技内容，其实也依托于这个在建的智库。
 
@@ -94,9 +79,7 @@ Legal Studio 法律科技智库，目前已经获得了 1W+ 访问人次，日�
 
 我对自媒体、社区、智库有明确规划，正在稳步推进中，同时也期待后续的演变。
 
-# **律新社：法律科技调研报告**
-
----
+## 律新社：法律科技调研报告
 
 2024 年初，我和国内头部的法律媒体「律新社」合作了两份法律科技调研报告，分别是《新兴法律服务业发展报告（2023）》（简称“报告”）和《新兴法律服务业精品指南（2023）》（简称“指南”）。
 
@@ -106,41 +89,32 @@ Legal Studio 法律科技智库，目前已经获得了 1W+ 访问人次，日�
 
 拓展阅读：
 
-不完全统计：过去一年，近 50 家法律科技公司获得新一轮融资
++ 不完全统计：过去一年，近 50 家法律科技公司获得新一轮融资
++ 不完全统计：过去一年，超过 100 家法律科技公司推出法律 AI 产品
++ 深度｜一年超 20 起并购：合并，正在显著改变法律科技市场格局
++ 第八届新兴法律服务业高峰论坛成功举办，一些台前幕后和现场趣事
 
-不完全统计：过去一年，超过 100 家法律科技公司推出法律 AI 产品
+## 法天使&植德律所：AI 共创营
 
-深度｜一年超 20 起并购：合并，正在显著改变法律科技市场格局
-
-第八届新兴法律服务业高峰论坛成功举办，一些台前幕后和现场趣事
-
-# **法天使&植德律所：AI 共创营**
-
----
-
-4[-6 ](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487054&idx=1&sn=abaa11ed968fb1e4d36653a5f3f0a4a3&chksm=fac534eecdb2bdf88fd7f9c3ff2565e7fb91b4a2bd2af6086b3ab68b4185750775a021d6f140&scene=21&cur_album_id=3435805156338319364&scene=21#wechat_redirect)月[，我和](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487335&idx=1&sn=c3d56c215c4d6183999e27a7cf02e9ed&scene=21&scene=21#wechat_redirect)法[天使、](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247488009&idx=1&sn=d6d5a4f3093e8e749498564ba35df8b4&chksm=fac528a9cdb2a1bfa14c869cfd0a340808f4deb9e2dbd388938f6c738867439cc557ac599dc0&token=851795587&lang=zh_CN&scene=21#wechat_redirect)植德律师事务所合作了《律所 AI 共创营 —— 让一部分法律人先 AI 起来》线下系列活动，目前已走过三期：上海站、北京站、深圳站。
+4-6 月，我和法天使、植德律师事务所合作了《律所 AI 共创营 —— 让一部分法律人先 AI 起来》线下系列活动，目前已走过三期：上海站、北京站、深圳站。
 
 可以说，这个活动是整个法律行业，甚至是国内领先的 AI GTM（go-to-market）活动，通过「以赛促用」有效地推动 AI 在法律行业应用落地，并提高特定产品的知名度。
 
 了解更多：
 
-👉#[法律科技活动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3422598826815406082#wechat_redirect)
+👉 [法律科技活动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3422598826815406082#wechat_redirect)
 
-👉#[法律 AI 创造营](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3435805156338319364#wechat_redirect)
+👉 [法律 AI 创造营](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3435805156338319364#wechat_redirect)
 
 接下来，这个活动将有所迭代，敬请期待。
 
-# **几家大厂：法律科技顾问**
-
----
+## 几家大厂：法律科技顾问
 
 4 月至今，我给几家互联网头部公司的法务部门提供「法律科技顾问」服务，主要包括法律科技相关的【研究】和【内训】支持，比如针对客户需求研究特定议题，定期推送特定领域的内容，以及定制培训等等。
 
 注：由于保密、还在服务中的缘故，暂时不方便透露这几家公司的名称。
 
-# 几个朋友：开办新型律所和法律 MCN
-
----
+## 几个朋友：开办新型律所和法律 MCN
 
 6 月，我和几位朋友准备开一家新型的律师事务所：前端拥抱新流量来获客，中端优化谈案效率，后端律师交付，并通过法律科技工具提效，用技术全面改造。
 
@@ -152,43 +126,35 @@ Legal Studio 法律科技智库，目前已经获得了 1W+ 访问人次，日�
 
 拓展阅读：在「新流量」和「AI 浪潮」之下，想开一家新型律师事务所
 
-# **其他：讲课、带货、出书**
-
----
+## 其他：讲课、带货、出书
 
 除了以上项目，这半年来我还去参加了各种活动，做做分享或 panel：
 
-+   **学术论坛**
+### 学术论坛
 
-+   [北京大学：博雅经济法学术论坛](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487840&idx=1&sn=26309bce3b4d4b0b96ef3906d5ea543b&chksm=fac52bc0cdb2a2d6445315e09ca24291dce68b264adc527356ab5264a453902cc879f1b231c5&token=851795587&lang=zh_CN&scene=21#wechat_redirect)
++ [北京大学：博雅经济法学术论坛](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487840&idx=1&sn=26309bce3b4d4b0b96ef3906d5ea543b&chksm=fac52bc0cdb2a2d6445315e09ca24291dce68b264adc527356ab5264a453902cc879f1b231c5&token=851795587&lang=zh_CN&scene=21#wechat_redirect)
 
-+   **线下活动**
+### 线下活动
 
-+   [中国法研：首届法律科技论坛](https://mp.weixin.qq.com/s?__biz=MzkyODI5NjY4NQ==&mid=2247724371&idx=1&sn=89249f8bee9ade5721195e0a86c874ed&scene=21#wechat_redirect)
++ [中国法研：首届法律科技论坛](https://mp.weixin.qq.com/s?__biz=MzkyODI5NjY4NQ==&mid=2247724371&idx=1&sn=89249f8bee9ade5721195e0a86c874ed&scene=21#wechat_redirect)
++ 律新社：第八届新兴法律服务业高峰论坛
++ 法天使：十天十城·春天之约（上海站）
 
-+   律新社：第八届新兴法律服务业高峰论坛
+### 线上直播
 
-+   法天使：十天十城·春天之约（上海站）
++ 哲响：当法律科技成为“爆点”，律师行业未来会怎样？
++ [独行有邻：法律科技直播对话](https://mp.weixin.qq.com/s?__biz=MzkyODU5NzQ2NQ==&mid=2247485230&idx=1&sn=7d743f63f1bbfc0b1788760114e5ea69&scene=21#wechat_redirect)
++ [律渐：法律科技直播对话](https://mp.weixin.qq.com/s?__biz=MzkwNzMzNzA3Ng==&mid=2247496952&idx=1&sn=d682b74b06375738f05352ae174f2175&scene=21#wechat_redirect)
 
-+   **线上直播**
+同时，基于法律修音机、法律科技社区以及法律科技智库，我其实是一个法律科技资源的连接点，经常有朋友找我对接相关需求，我私下友情帮忙对接了不少，包括推荐法律科技工具、技术、算力、培训等等。
 
-+   哲响：当法律科技成为“爆点”，律师行业未来会怎样？
-
-+   [独行有邻：法律科技直播对话](https://mp.weixin.qq.com/s?__biz=MzkyODU5NzQ2NQ==&mid=2247485230&idx=1&sn=7d743f63f1bbfc0b1788760114e5ea69&scene=21#wechat_redirect)
-
-+   [律渐：法律科技直播对话](https://mp.weixin.qq.com/s?__biz=MzkwNzMzNzA3Ng==&mid=2247496952&idx=1&sn=d682b74b06375738f05352ae174f2175&scene=21#wechat_redirect)
-
-同时，基于法律修音机[、法律科技社](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3527497267156107272#wechat_redirect)区以[及法律科技智](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTcwMTE5OQ==&action=getalbum&album_id=3521007419251507205#wechat_redirect)库，我其实是一个法律科技资源的连接点，经常有朋友找我对接相关需求，我私下友情帮忙对接了不少，包括推荐法律科技工具、技术、算力、培训等等。
-
-[对于好产品，](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247487498&idx=1&sn=73adb5b1c66747a10309c340684359b3&chksm=fac52aaacdb2a3bcf142dd9cf69a5bc198947e60a0e90e82eb54486599e215b9db43235536b1&token=851795587&lang=zh_CN&scene=21#wechat_redirect)我也会通过文章帮忙带带货，比如法天使合同库，后面还会有一些。
+对于好产品，我也会通过文章帮忙带带货，比如法天使合同库，后面还会有一些。
 
 此外，一家著名的出版社来邀请我出书了，与「AI+法律」相关，而且一下子邀了“三部曲”，下半年主要在忙这个事儿✍🏻
 
 [吴世杰对外合作清单](https://legalstudio.feishu.cn/wiki/Z7LQw3INwiPEtKkmUNKch7HDnph?from=from_copylink)后，分享一下这几年我的对外合作清单：
 
-# **阶段性总结**
-
----
+## 阶段性总结
 
 总之，我最强的能力是洞察、创造和营销。
 

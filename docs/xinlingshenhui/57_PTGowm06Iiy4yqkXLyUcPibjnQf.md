@@ -1,3 +1,4 @@
+
 # Midjourney 的漫画家
 
 > 来源：[https://my.feishu.cn/docx/AGZbdYhYLoUYycxQtIqcXdcwnQc](https://my.feishu.cn/docx/AGZbdYhYLoUYycxQtIqcXdcwnQc)
@@ -24,7 +25,7 @@
 
 ![](img/987ae266f6509fd2ed4d93db7a8e0dae.png)
 
-## 刘斯坦利“Artgerm”     Stanley 'Artgerm' Lau
+## 刘斯坦利“Artgerm” Stanley 'Artgerm' Lau
 
 插画家、设计师、概念艺术家、Imaginary Friends Studios 的联合创始人，Imaginary Friends Studios 是一家数字艺术工作室，为 Capcom、DC Comics、Square Enix 等娱乐和游戏行业巨头创作作品。
 
@@ -45,7 +46,6 @@
 ## 西蒙·比斯利Simon Bisley
 
 英国漫画家和调色师。他以《路博》漫画、《特警判官》和《蝙蝠侠》中的作品而闻名，他的影响力受到弗兰克·弗雷泽塔的影响。
-
 
 ## 马克·布鲁克斯Travis Charest
 

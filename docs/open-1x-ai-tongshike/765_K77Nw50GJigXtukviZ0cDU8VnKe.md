@@ -1,8 +1,7 @@
-# RAG之延迟交互与残差压缩：从ColBERT到ColBERTv2的演进及其应用
-
-> 来源：[https://datawhaler.feishu.cn/docx/NYxwdgWTeovJVTxMuf2cUEhZnac](https://datawhaler.feishu.cn/docx/NYxwdgWTeovJVTxMuf2cUEhZnac)
 
 # RAG之延迟交互与残差压缩：从ColBERT到ColBERTv2的演进及其应用
+
+> 来源：`https://datawhaler.feishu.cn/docx/NYxwdgWTeovJVTxMuf2cUEhZnac`
 
 ## 🎯 文章目标
 
@@ -14,13 +13,13 @@
 
 +   学习如何将残差压缩技术（特别是聚类的作用）应用于实际模型（如BGE-M3），实现高效存储与检索。
 
-> **💡 小提示
+> **💡 小提示**
 
-> **本文包含详细代码示[例，建议结合实践操作以加深理解！
+> **本文包含详细代码示例，建议结合实践操作以加深理解！**
 
-> 本次代码开源地址：https://github.co](https://github.com/li-xiu-qi/XiaokeAILabs/blob/main/datas/colbert/test_colbertv2.py)m/li-xiu-qi/Xia[okeAILabs/blob/main/datas/colbert/test_colbert](https://github.com/li-xiu-qi/XiaokeAILabs/blob/main/datas/colbert/test_colbertv2.ipynb)v2.py
+> 本次代码开源地址：`https://github.com/li-xiu-qi/XiaokeAILabs/blob/main/datas/colbert/test_colbertv2.py`
 
-> 配套Notebook学习地址：https://github.com/li-xiu-qi/XiaokeAILabs/blob/main/datas/colbert/test_colbertv2.ipynb
+> 配套Notebook学习地址：`https://github.com/li-xiu-qi/XiaokeAILabs/blob/main/datas/colbert/test_colbertv2.ipynb`
 
 ## 📄 主题
 
@@ -48,17 +47,15 @@
 
 ### 🐷 1.1 早期交互与延迟交互的对比
 
-早期交互（Early Interaction）是指在编码阶段即对查询（query）和文档（document）进行深度融合的建模方式。通常，查询和文档的词序列被拼接后输入到Transformer等模型中，通过多层自注意力机制捕捉两者间的语义依赖关系。这种方法生成的表示高度相关，适用于需要高精度的场景。然而，由于每次查询都需要与文档重新计算，计算复杂度为  （其中   和   分别为查询和文档长度），且无法预存文档表示，其效率受限。
+早期交互（Early Interaction）是指在编码阶段即对查询（`query`）和文档（`document`）进行深度融合的建模方式。通常，查询和文档的词序列被拼接后输入到`Transformer`等模型中，通过多层自注意力机制捕捉两者间的语义依赖关系。这种方法生成的表示高度相关，适用于需要高精度的场景。然而，由于每次查询都需要与文档重新计算，计算复杂度为  （其中   和   分别为查询和文档长度），且无法预存文档表示，其效率受限。
 
 延迟交互（Late Interaction）则将交互推迟到编码后的阶段。首先，查询和文档独立通过编码器生成上下文相关的向量表示，随后通过轻量级机制计算相关性。相比早期交互，延迟交互降低了在线计算成本，同时保留了词级语义的细粒度，使其在大规模检索任务中更具实用性。
 
 ### 🐰 1.2 表示模型与交互模型的典型实现
 
-表示模型（Representation Models）通过将查询和文档独立编码为固定向量表示，利用简单相似度（如余**弦相似度）评估相关性。其优**势在于文档表示可预计算并存储于索引中，查询时仅需编码查询部分，时间复杂度为  。一个典型实现是Sentence-BERT(SBERT)，基于BERT微调生成句子级别嵌入，广泛应用于语义相似性任务。然而，单一向量表示难以捕捉复杂的词间交互，限制了其精度。
+表示模型（Representation Models）通过将查询和文档独立编码为固定向量表示，利用简单相似度（如余弦相似度）评估相关性。其优势在于文档表示可预计算并存储于索引中，查询时仅需编码查询部分，时间复杂度为  。一个典型实现是`Sentence-BERT(SBERT)`，基于`BERT`微调生成句子级别嵌入，广泛应用于语义相似性任务。然而，单一向量表示难以捕捉复杂的词间交互，限制了其精度。
 
-交互模型（Interaction Models）则在编码时对查询和文档进行逐词交互，通常通过拼接输入到模型中，利用深度网络生成相关性得分。其代表性实现是BERT Cross-Encoder，将查询和文档组成单一序列（如"[CLS] query [SEP] document [SEP]"），通过BERT输出分类得分。由于自注意力机制允许全面的词间交互，其精度通常高于表示模型，但计算复杂度高（ ），且无法预存表示，限制了扩展性。
-
-延迟交互结合了两者的优点，通过独立编码和后期轻量交互实现高效与精准的平衡。
+交互模型（Interaction Models）则在编码时对查询和文档进行逐词交互，通常通过拼接输入到模型中，利用深度网络生成相关性得分。其代表性实现是`BERT Cross-Encoder`，将查询和文档组成单一序列（如`[CLS] query [SEP] document [SEP]`），通过`BERT`输出分类得分。由于自注意力机制允许全面的词间交互，其精度通常高于表示模型，但计算复杂度高（ ），且无法预存表示，限制了扩展性。
 
 延迟交互结合了两者的优点，通过独立编码和后期轻量交互实现高效与精准的平衡。
 
@@ -66,15 +63,15 @@
 
 ### 🐷 2.1 ColBERT：延迟交互的实现机制
 
-ColBERT由斯坦福大学提出，基于BERT构建，通过延迟交互机制优化文本检索。其工作流程如下：
+ColBERT由斯坦福大学提出，基于`BERT`构建，通过延迟交互机制优化文本检索。其工作流程如下：
 
-1.  **独立编码**：查询和文档分别通过BERT编码器处理，生成多向量表示   和  ，其中   和   为词数，  为向量维度。每个向量捕捉对应词的上下文信息，文档表示可离线预计算。
+1.  **独立编码**：查询和文档分别通过`BERT`编码器处理，生成多向量表示   和  ，其中   和   为词数，  为向量维度。每个向量捕捉对应词的上下文信息，文档表示可离线预计算。
 
 1.  **延迟交互（MaxSim）**：相关性通过最大相似度操作计算。对于查询的每个向量  ，计算其与文档所有向量   的最大点积，然后求和：
 
-1.  **高效检索**：文档向量存储于FAISS索引中，在线检索仅需编码查询并执行MaxSim操作，时间复杂度为  ，远低于交互模型。
+1.  **高效检索**：文档向量存储于`FAISS`索引中，在线检索仅需编码查询并执行`MaxSim`操作，时间复杂度为  ，远低于交互模型。
 
-ColBERT在精度上接近交叉编码器，也就是大家说熟知的rerank模型，同时将查询延迟从数秒降至几十毫秒，支持大规模文档检索。
+ColBERT在精度上接近交叉编码器，也就是大家说熟知的`rerank`模型，同时将查询延迟从数秒降至几十毫秒，支持大规模文档检索。
 
 ### 🐰 2.2 ColBERTv2：残差压缩的优化
 
@@ -82,7 +79,7 @@ ColBERT的多向量表示虽有效，但存储需求较高，尤其在大规模�
 
 #### 改进动机
 
-ColBERT的多向量表示为每个文档生成数百至数千个向量（依文档长度而定），每个向量通常是高维浮点数（例如，128维的float32类型）。这意味着存储一个文档的表示需要 文档长度 * 维度 * 字节数/浮点数 的空间。例如，一个1000个token的文档，使用128维float32向量，存储空间约为   字节，即0.5MB。对于包含数百万甚至数十亿文档的大规模数据集，存储压力巨大，因此需要改进。
+ColBERT的多向量表示为每个文档生成数百至数千个向量（依文档长度而定），每个向量通常是高维浮点数（例如，128维的`float32`类型）。这意味着存储一个文档的表示需要  文档长度 * 维度 * 字节数/浮点数 的空间。例如，一个1000个token的文档，使用128维`float32`向量，存储空间约为   字节，即0.5MB。对于包含数百万甚至数十亿文档的大规模数据集，存储压力巨大，因此需要改进。
 
 #### 主要改进
 
@@ -100,13 +97,13 @@ ColBERT的多向量表示为每个文档生成数百至数千个向量（依文�
 
 +   **目的**：找出向量空间中的代表性点（质心），让每个向量都能找到一个相近的"地标"，减少冗余存储。
 
-+   **方法**：对整个文档库中所有的token向量  （ ）应用k-means聚类算法，生成   个质心  。
++   **方法**：对整个文档库中所有的token向量  （ ）应用`k-means`聚类算法，生成   个质心  。
 
 +   比如，一个128维向量集合可能生成256个质心，每个质心代表一组语义相近的向量。
 
 +   **为什么需要聚类**：
 
-+   **利用相似性**：语言模型生成的向量（比如"cat"在不同上下文中的表示）通常会聚集成簇。聚类找到这些簇，用一个质心代表一群向量，避免逐个存储完整数据。
++   **利用相似性**：语言模型生成的向量（比如`"cat"`在不同上下文中的表示）通常会聚集成簇。聚类找到这些簇，用一个质心代表一群向量，避免逐个存储完整数据。
 
 +   **压缩基础**：残差是向量与质心的差值，没有质心就无法计算残差，压缩无从谈起。
 
@@ -133,8 +130,8 @@ ColBERT的多向量表示为每个文档生成数百至数千个向量（依文�
 +   确定所有残差的范围   和  。
 
 +   将每个维度   映射到整数范围（比如8位，0-255）：
- 
-这里  ，每个维度从4字节float32变成1字节uint8。
+
+这里  ，每个维度从4字节`float32`变成1字节`uint8`。
 
 +   **聚类的意义**：聚类让残差值集中在小范围内，量化误差可控。如果向量分布太散，残差范围大，8位量化会损失过多精度。
 
@@ -196,7 +193,7 @@ def residual_compress(V_all_tokens, k, b):
         assignments = kmeans_model.predict(doc_vectors)
         residuals = doc_vectors - centroids[assignments]
         all_residuals_for_range_calc.append(residuals)
-        compressed_data_per_doc.append({&#x27;assignments&#x27;: assignments, &#x27;original_shape&#x27;: doc_vectors.shape})
+        compressed_data_per_doc.append({'assignments': assignments, 'original_shape': doc_vectors.shape})
 
     # 确定全局残差范围
     all_residuals_flat = np.vstack(all_residuals_for_range_calc)
@@ -206,22 +203,22 @@ def residual_compress(V_all_tokens, k, b):
     final_compressed_docs = []
     for i, doc_data in enumerate(compressed_data_per_doc):
         doc_vectors = V[i]
-        assignments = doc_data[&#x27;assignments&#x27;]
+        assignments = doc_data['assignments']
         residuals = doc_vectors - centroids[assignments]
         quantized = np.round(
             (residuals - r_min) / (r_max - r_min) * (2**b - 1)
-        ).astype(np.uint8 if b == 8 else f&#x27;uint{b}&#x27;)
+        ).astype(np.uint8 if b == 8 else f'uint{b}')
         final_compressed_docs.append({
-            &#x27;centroids_idx&#x27;: assignments.astype(np.uint16 if k &gt; 255 else np.uint8),
-            &#x27;quantized&#x27;: quantized
+            'centroids_idx': assignments.astype(np.uint16 if k > 255 else np.uint8),
+            'quantized': quantized
         })
 
     return centroids, r_min, r_max, final_compressed_docs
 
 # 重建向量
 def reconstruct(centroids, r_min, r_max, b, compressed_doc_data):
-    centroids_idx = compressed_doc_data[&#x27;centroids_idx&#x27;]
-    quantized = compressed_doc_data[&#x27;quantized&#x27;]
+    centroids_idx = compressed_doc_data['centroids_idx']
+    quantized = compressed_doc_data['quantized']
     residuals_approx = r_min + (quantized / (2**b - 1)) * (r_max - r_min)
     reconstructed_vectors = centroids[centroids_idx] + residuals_approx
     return reconstructed_vectors
@@ -233,19 +230,20 @@ def reconstruct(centroids, r_min, r_max, b, compressed_doc_data):
 
 以下是一个完整实现示例，展示如何将ColBERTv2的残差压缩技术应用于BGE-M3生成的ColBERT向量：
 
-```
 
+
+```python
 # 作者: 筱可
 # 日期: 2025 年 3 月 30 日
-# 版权所有 (c) 2025 筱可 &amp; 筱可AI研习社. 保留所有权利.
-# Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+# 版权所有 (c) 2025 筱可 & 筱可AI研习社. 保留所有权利.
+# Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+# distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
@@ -258,47 +256,47 @@ import os
 # 初始化BGE-M3模型
 # 请确保模型路径正确，如果模型未下载，FlagEmbedding库会自动下载
 
-model_path = r&quot;C:\Users\k\Desktop\BaiduSyncdisk\baidu_sync_documents\hf_models\bge-m3&quot; # 使用你的本地路径
+model_path = r"C:\Users\k\Desktop\BaiduSyncdisk\baidu_sync_documents\hf_models\bge-m3" # 使用你的本地路径
 
-# model_path = &#x27;BAAI/bge-m3&#x27; # 直接使用Hugging Face模型ID
+# model_path = 'BAAI/bge-m3' # 直接使用Hugging Face模型ID
 try:
     model = BGEM3FlagModel(model_path, use_fp16=True) # 尝试使用FP16以节省内存和加速
 except Exception as e:
-    print(f&quot;无法加载模型 {model_path}，请检查路径或网络连接: {e}&quot;)
+    print(f"无法加载模型 {model_path}，请检查路径或网络连接: {e}")
     # 在无法加载模型时退出或采取备用措施
     exit()
 
 # 示例文档集
 documents = [
-    &quot;BGE-M3是一个多语言嵌入模型，支持多种语言的文本检索。&quot;,
-    &quot;ColBERT是一种延迟交互检索模型，通过最大相似度匹配计算相关性。&quot;,
-    &quot;BM25是一种经典的词袋模型，基于词频和逆文档频率计算相关性。&quot;,
-    &quot;向量检索在大规模信息检索任务中越来越受欢迎，替代了传统的倒排索引方法。&quot;,
-    &quot;残差压缩是一种有效的向量压缩技术，可以大幅减少存储需求。&quot;,
-    &quot;机器学习模型需要大量数据进行训练，以达到良好的泛化能力。&quot;,
-    &quot;自然语言处理是人工智能的一个重要分支，专注于计算机与人类语言的交互。&quot;,
-    &quot;深度学习利用深度神经网络学习数据的复杂模式。&quot;
+    "BGE-M3是一个多语言嵌入模型，支持多种语言的文本检索。",
+    "ColBERT是一种延迟交互检索模型，通过最大相似度匹配计算相关性。",
+    "BM25是一种经典的词袋模型，基于词频和逆文档频率计算相关性。",
+    "向量检索在大规模信息检索任务中越来越受欢迎，替代了传统的倒排索引方法。",
+    "残差压缩是一种有效的向量压缩技术，可以大幅减少存储需求。",
+    "机器学习模型需要大量数据进行训练，以达到良好的泛化能力。",
+    "自然语言处理是人工智能的一个重要分支，专注于计算机与人类语言的交互。",
+    "深度学习利用深度神经网络学习数据的复杂模式。"
 ] # 增加了文档数量以更好地模拟聚类
 
 # 生成ColBERT向量
 def generate_colbert_vectors(docs):
-    print(&quot;正在生成ColBERT向量...&quot;)
+    print("正在生成ColBERT向量...")
     all_vectors = []
     for doc in docs:
         # BGE-M3的encode方法可以直接处理列表，但这里为了清晰，逐个处理
         try:
             output = model.encode([doc], return_colbert_vecs=True, batch_size=1) # 指定batch_size=1
             # 注意：BGE-M3 返回的 colbert_vecs 可能已经是 list of list of floats，需要转np.array
-            doc_vectors_list = output[&#x27;colbert_vecs&#x27;][0] # 提取token级别向量表示 (可能是list)
+            doc_vectors_list = output['colbert_vecs'][0] # 提取token级别向量表示 (可能是list)
             doc_vectors_np = np.array(doc_vectors_list, dtype=np.float32) # 转换为numpy数组
-            if doc_vectors_np.ndim == 2 and doc_vectors_np.shape[0] &gt; 0: # 确保不是空或维度错误
+            if doc_vectors_np.ndim == 2 and doc_vectors_np.shape[0] > 0: # 确保不是空或维度错误
                  all_vectors.append(doc_vectors_np)
             else:
-                 print(f&quot;警告: 文档 &#x27;{doc[:30]}...&#x27; 生成的向量为空或格式不正确，已跳过。Shape: {doc_vectors_np.shape}&quot;)
+                 print(f"警告: 文档 '{doc[:30]}...' 生成的向量为空或格式不正确，已跳过。Shape: {doc_vectors_np.shape}")
         except Exception as e:
-            print(f&quot;处理文档 &#x27;{doc[:30]}...&#x27; 时出错: {e}&quot;)
+            print(f"处理文档 '{doc[:30]}...' 时出错: {e}")
             continue # 跳过出错的文档
-    print(f&quot;向量生成完毕，共处理 {len(all_vectors)} 个有效文档。&quot;)
+    print(f"向量生成完毕，共处理 {len(all_vectors)} 个有效文档。")
     return all_vectors
 
 # 残差压缩实现类
@@ -315,27 +313,27 @@ class ResidualCompressor:
     def fit(self, vectors_list):
         # 将所有文档的token向量合并为训练集
         # 过滤掉空向量列表
-        non_empty_vectors_list = [v for v in vectors_list if v.shape[0] &gt; 0]
+        non_empty_vectors_list = [v for v in vectors_list if v.shape[0] > 0]
         if not non_empty_vectors_list:
-             print(&quot;错误：没有有效的向量用于训练KMeans。&quot;)
+             print("错误：没有有效的向量用于训练KMeans。")
              return self
 
         try:
             all_vectors = np.vstack(non_empty_vectors_list)
             if all_vectors.shape[0] == 0:
-                print(&quot;错误：合并后的向量集为空。&quot;)
+                print("错误：合并后的向量集为空。")
                 return self
             self.dimension = all_vectors.shape[1] # 更新维度信息
-            print(f&quot;训练聚类模型，向量总数: {all_vectors.shape[0]}, 维度: {self.dimension}&quot;)
+            print(f"训练聚类模型，向量总数: {all_vectors.shape[0]}, 维度: {self.dimension}")
 
             # 自适应调整聚类中心数量，避免过拟合
             actual_n_centroids = min(self.n_centroids, all_vectors.shape[0])
-            if actual_n_centroids &lt; self.n_centroids:
-                print(f&quot;警告: 样本数({all_vectors.shape[0]})小于指定的聚类中心数({self.n_centroids})。&quot;)
-                print(f&quot;已将聚类中心数调整为: {actual_n_centroids}&quot;)
+            if actual_n_centroids < self.n_centroids:
+                print(f"警告: 样本数({all_vectors.shape[0]})小于指定的聚类中心数({self.n_centroids})。")
+                print(f"已将聚类中心数调整为: {actual_n_centroids}")
                 self.n_centroids = actual_n_centroids
             elif actual_n_centroids == 0:
-                print(&quot;错误: 没有可用的聚类中心。&quot;)
+                print("错误: 没有可用的聚类中心。")
                 return self
 
 
@@ -345,33 +343,33 @@ class ResidualCompressor:
             self.kmeans.fit(all_vectors)
 
             # 计算所有残差以确定全局范围
-            print(&quot;计算残差范围...&quot;)
+            print("计算残差范围...")
             all_residuals = []
             for doc_vectors in non_empty_vectors_list:
-                if doc_vectors.shape[0] &gt; 0:
+                if doc_vectors.shape[0] > 0:
                     centroids_idx = self.kmeans.predict(doc_vectors)
                     residuals = doc_vectors - self.kmeans.cluster_centers_[centroids_idx]
                     all_residuals.append(residuals)
 
             if not all_residuals:
-                 print(&quot;错误：无法计算残差。&quot;)
+                 print("错误：无法计算残差。")
                  return self
 
             all_residuals_np = np.vstack(all_residuals)
             self.r_min = np.min(all_residuals_np)
             self.r_max = np.max(all_residuals_np)
-            print(f&quot;残差范围确定: min={self.r_min:.4f}, max={self.r_max:.4f}&quot;)
+            print(f"残差范围确定: min={self.r_min:.4f}, max={self.r_max:.4f}")
 
         except ValueError as ve:
-             print(f&quot;KMeans训练或残差计算中发生数值错误: {ve}&quot;)
+             print(f"KMeans训练或残差计算中发生数值错误: {ve}")
              # 可能需要检查输入数据是否有NaN或无穷大值
         except Exception as e:
-             print(f&quot;拟合过程中发生未知错误: {e}&quot;)
+             print(f"拟合过程中发生未知错误: {e}")
         return self
 
     def compress(self, vectors_list):
         if self.kmeans is None or self.r_min is None or self.r_max is None:
-            print(&quot;错误: 压缩器未训练或训练不完整。请先调用 fit 方法。&quot;)
+            print("错误: 压缩器未训练或训练不完整。请先调用 fit 方法。")
             return None
 
         compressed_docs = []
@@ -379,7 +377,7 @@ class ResidualCompressor:
         total_compressed_size = 0
 
         # 确定索引和量化值的numpy类型以精确计算大小
-        index_dtype = np.uint16 if self.n_centroids &gt; 255 else np.uint8
+        index_dtype = np.uint16 if self.n_centroids > 255 else np.uint8
         quantized_dtype = np.uint8 # 假设 b=8
 
         for doc_vectors in vectors_list:
@@ -398,7 +396,7 @@ class ResidualCompressor:
              # 步骤4: 将残差量化为指定位数的整数
              # 防止除零错误
              if self.r_max == self.r_min:
-                 print(&quot;警告: 残差范围为零，无法进行量化。&quot;)
+                 print("警告: 残差范围为零，无法进行量化。")
                  # 可以选择将所有量化值设为0或中间值
                  quantized = np.zeros_like(residuals, dtype=quantized_dtype)
              else:
@@ -416,24 +414,24 @@ class ResidualCompressor:
 
              # 存储压缩结果：质心索引和量化残差
              compressed_docs.append({
-                 &#x27;centroids_idx&#x27;: centroids_idx,
-                 &#x27;quantized&#x27;: quantized
+                 'centroids_idx': centroids_idx,
+                 'quantized': quantized
              })
 
         # 输出压缩统计信息
-        if total_compressed_size &gt; 0:
+        if total_compressed_size > 0:
              compression_ratio = total_original_size / total_compressed_size
-             print(f&quot;原始向量总大小: {total_original_size / 1024:.2f} KB&quot;)
-             print(f&quot;压缩后总大小: {total_compressed_size / 1024:.2f} KB&quot;)
-             print(f&quot;压缩比: {compression_ratio:.2f}x&quot;)
+             print(f"原始向量总大小: {total_original_size / 1024:.2f} KB")
+             print(f"压缩后总大小: {total_compressed_size / 1024:.2f} KB")
+             print(f"压缩比: {compression_ratio:.2f}x")
         else:
-             print(&quot;没有可压缩的数据。&quot;)
+             print("没有可压缩的数据。")
 
         return compressed_docs
 
     def decompress(self, compressed_docs):
         if self.kmeans is None or self.r_min is None or self.r_max is None:
-            print(&quot;错误: 压缩器未训练或训练不完整。&quot;)
+            print("错误: 压缩器未训练或训练不完整。")
             return None
 
         decompressed_docs = []
@@ -443,8 +441,8 @@ class ResidualCompressor:
                 decompressed_docs.append(np.empty((0, self.dimension), dtype=np.float32))
                 continue
 
-            centroids_idx = doc_data[&#x27;centroids_idx&#x27;]
-            quantized = doc_data[&#x27;quantized&#x27;]
+            centroids_idx = doc_data['centroids_idx']
+            quantized = doc_data['quantized']
 
             # 步骤1: 反量化残差
             if self.r_max == self.r_min:
@@ -461,45 +459,45 @@ class ResidualCompressor:
 
     def save(self, path):
         if self.kmeans is None:
-            print(&quot;错误: 模型未训练，无法保存。&quot;)
+            print("错误: 模型未训练，无法保存。")
             return
-        with open(path, &#x27;wb&#x27;) as f:
+        with open(path, 'wb') as f:
             pickle.dump({
-                &#x27;kmeans_centers&#x27;: self.kmeans.cluster_centers_,
-                &#x27;r_min&#x27;: self.r_min,
-                &#x27;r_max&#x27;: self.r_max,
-                &#x27;n_centroids&#x27;: self.n_centroids,
-                &#x27;bits&#x27;: self.bits,
-                &#x27;dimension&#x27;: self.dimension # 保存维度信息
+                'kmeans_centers': self.kmeans.cluster_centers_,
+                'r_min': self.r_min,
+                'r_max': self.r_max,
+                'n_centroids': self.n_centroids,
+                'bits': self.bits,
+                'dimension': self.dimension # 保存维度信息
             }, f)
-        print(f&quot;压缩器状态已保存到 {path}&quot;)
+        print(f"压缩器状态已保存到 {path}")
 
     def load(self, path):
-        with open(path, &#x27;rb&#x27;) as f:
+        with open(path, 'rb') as f:
             data = pickle.load(f)
             # 重新构建一个KMeans对象，只设置centers，因为我们不需要再用它来predict或fit
-            self.kmeans = KMeans(n_clusters=data[&#x27;n_centroids&#x27;])
-            self.kmeans.cluster_centers_ = data[&#x27;kmeans_centers&#x27;]
+            self.kmeans = KMeans(n_clusters=data['n_centroids'])
+            self.kmeans.cluster_centers_ = data['kmeans_centers']
             # 初始化一个虚拟的 _n_threads 属性 (部分sklearn版本需要)
-            # setattr(self.kmeans, &#x27;_n_threads&#x27;, 1) # 或者根据需要设置
-            self.r_min = data[&#x27;r_min&#x27;]
-            self.r_max = data[&#x27;r_max&#x27;]
-            self.n_centroids = data[&#x27;n_centroids&#x27;]
-            self.bits = data[&#x27;bits&#x27;]
-            self.dimension = data.get(&#x27;dimension&#x27;, 1024) # 向后兼容，如果旧模型没存维度，则默认1024
-        print(f&quot;压缩器状态已从 {path} 加载&quot;)
+            # setattr(self.kmeans, '_n_threads', 1) # 或者根据需要设置
+            self.r_min = data['r_min']
+            self.r_max = data['r_max']
+            self.n_centroids = data['n_centroids']
+            self.bits = data['bits']
+            self.dimension = data.get('dimension', 1024) # 向后兼容，如果旧模型没存维度，则默认1024
+        print(f"压缩器状态已从 {path} 加载")
         return self
 
 # --- 主流程 ---
 colbert_vectors = generate_colbert_vectors(documents)
 
 if not colbert_vectors:
-    print(&quot;未能生成任何有效的ColBERT向量，程序终止。&quot;)
+    print("未能生成任何有效的ColBERT向量，程序终止。")
     exit()
 
 # 计算原始向量占用空间
-original_size = sum([doc_vecs.nbytes for doc_vecs in colbert_vectors if doc_vecs.shape[0]&gt;0])
-print(f&quot;原始未压缩向量总大小: {original_size / 1024:.2f} KB&quot;)
+original_size = sum([doc_vecs.nbytes for doc_vecs in colbert_vectors if doc_vecs.shape[0] > 0])
+print(f"原始未压缩向量总大小: {original_size / 1024:.2f} KB")
 
 # 应用残差压缩 (使用更多质心以获得更好的效果，但受限于样本数量)
 # n_centroids 设为 64 或 128 可能是个更实际的起点
@@ -516,25 +514,25 @@ if compressor.kmeans is not None:
 
         # 计算均方误差评估重建质量 (只对非空向量计算)
         mse_list = []
-        valid_indices = [i for i, v in enumerate(colbert_vectors) if v.shape[0] &gt; 0]
+        valid_indices = [i for i, v in enumerate(colbert_vectors) if v.shape[0] > 0]
         for i in valid_indices:
             orig = colbert_vectors[i]
             recon = decompressed_vectors[i]
-            if orig.shape == recon.shape and orig.shape[0] &gt; 0: # 确保形状匹配且非空
+            if orig.shape == recon.shape and orig.shape[0] > 0: # 确保形状匹配且非空
                 mse = np.mean((orig - recon) ** 2)
                 mse_list.append(mse)
             else:
-                 print(f&quot;警告: 文档 {i} 的原始和重建向量形状不匹配或为空，跳过MSE计算。&quot;)
+                 print(f"警告: 文档 {i} 的原始和重建向量形状不匹配或为空，跳过MSE计算。")
 
         if mse_list:
             avg_mse = np.mean(mse_list)
-            print(f&quot;平均重建均方误差 (MSE): {avg_mse:.6f}&quot;)
+            print(f"平均重建均方误差 (MSE): {avg_mse:.6f}")
         else:
-            print(&quot;无法计算平均重建均方误差。&quot;)
+            print("无法计算平均重建均方误差。")
 
         # 评估重建前后的相似度排序一致性 (只对有效向量操作)
         def compute_similarity(query_vec, doc_vec):
-            &quot;&quot;&quot;计算标准化后的ColBERT相似度得分 (MaxSim)&quot;&quot;&quot;
+            """计算标准化后的ColBERT相似度得分 (MaxSim)"""
             if query_vec.shape[0] == 0 or doc_vec.shape[0] == 0: return 0.0 # 处理空向量
             # 归一化每个token向量
             query_vec_norm = query_vec / (np.linalg.norm(query_vec, axis=1, keepdims=True) + 1e-8) # 加epsilon防除零
@@ -551,7 +549,7 @@ if compressor.kmeans is not None:
              query_vec_orig = colbert_vectors[query_index]
              query_vec_recon = decompressed_vectors[query_index] # 重建后的查询向量
 
-             print(&quot;\n比较查询与各文档的相似度得分 (使用原始查询向量):&quot;)
+             print("\n比较查询与各文档的相似度得分 (使用原始查询向量):")
              original_scores = []
              reconstructed_scores = []
              for i in valid_indices: # 只和有效文档比较
@@ -561,23 +559,25 @@ if compressor.kmeans is not None:
                  reconstructed_scores.append(recon_score)
 
                  rel_diff = abs(orig_score - recon_score) / (abs(orig_score) + 1e-9) * 100 # 加epsilon防除零
-                 print(f&quot;文档 {i+1} - 原始得分: {orig_score:.4f}, 重建文档得分: {recon_score:.4f}, 相对差异: {rel_diff:.2f}%&quot;)
+                 print(f"文档 {i+1} - 原始得分: {orig_score:.4f}, 重建文档得分: {recon_score:.4f}, 相对差异: {rel_diff:.2f}%")
 
              # 还可以比较使用重建查询向量的情况，但这通常不是典型用法
              # recon_query_scores = [compute_similarity(query_vec_recon, dv) for dv in decompressed_vectors]
 
              # 序列化压缩模型以便在推理阶段使用
-             compressor.save(&#x27;colbert_compressor_bge_m3.pkl&#x27;)
-             print(&quot;\n压缩模型已保存，可用于生产环境&quot;)
+             compressor.save('colbert_compressor_bge_m3.pkl')
+             print("\n压缩模型已保存，可用于生产环境")
         else:
-            print(&quot;没有有效的查询向量用于相似度评估。&quot;)
+            print("没有有效的查询向量用于相似度评估。")
     else:
-        print(&quot;压缩过程未能生成有效数据。&quot;)
+        print("压缩过程未能生成有效数据。")
 else:
-    print(&quot;压缩器训练失败，后续步骤已跳过。&quot;)
+    print("压缩器训练失败，后续步骤已跳过。")
 ```
 
-#### 执行结果分析
+
+
+## 执行结果分析
 
 ```
 向量生成完毕，共处理 8 个有效文档。
@@ -603,13 +603,13 @@ else:
 压缩模型已保存，可用于生产环境
 ```
 
-#### 关键结果解读
+## 关键结果解读
 
-1.  **压缩效率**：对于1024维的BGE-M3向量，实现约4倍压缩比（636KB降到159.16KB）。但是我自己尝试调整b还有聚类的数量，始终都是4倍压缩比，我不太清楚具体原因，感兴趣的同学可以看看如何修复这个问题，让实验结果能够达到论文提到的6-10压缩水平。
+1. 压缩效率：对于1024维的`BGE-M3`向量，实现约4倍压缩比（636KB降到159.16KB）。但是我自己尝试调整`b`还有聚类的数量，始终都是4倍压缩比，我不太清楚具体原因，感兴趣的同学可以看看如何修复这个问题，让实验结果能够达到论文提到的6-10压缩水平。
 
-1.  **重建精度**：平均MSE极小（约0），表明重建向量与原始向量几乎一致。
+1. 重建精度：平均MSE极小（约0），表明重建向量与原始向量几乎一致。
 
-1.  **检索质量**：相似度得分相对差异在0.02%以内，说明压缩对检索排序影响微乎其微,当然了，对于大规模数据的情况下，可能会出现不同的情况，具体的大家可以自己试试，很期待大家的测试反馈哦，感谢🙏。
+1. 检索质量：相似度得分相对差异在0.02%以内，说明压缩对检索排序影响微乎其微，当然了，对于大规模数据的情况下，可能会出现不同的情况，具体的大家可以自己试试，很期待大家的测试反馈哦，感谢🙏。
 
 最后呢，我们通过上面这次实验验证了残差压缩（尤其是聚类）的实用性，显著降低存储成本，同时保持检索性能。
 
@@ -623,41 +623,41 @@ else:
 
 ### 🚀 技术全景图
 
-+   **早期交互**：高精度，计算成本高，适用于小规模高精度任务。
++ 早期交互：高精度，计算成本高，适用于小规模高精度任务。
 
-+   **表示模型**：高效但语义表达有限，适合快速检索场景。
++ 表示模型：高效但语义表达有限，适合快速检索场景。
 
-+   **延迟交互**：ColBERTv2通过残差压缩兼顾效率与精度。
++ 延迟交互：`ColBERTv2`通过残差压缩兼顾效率与精度。
 
 ### 📓 学习汇总
 
-+   ColBERT通过MaxSim实现延迟交互，显著提升检索效率。
++ `ColBERT`通过`MaxSim`实现延迟交互，显著提升检索效率。
 
-+   ColBERTv2引入残差压缩（核心是k-means聚类+残差量化），存储需求降低6-10倍，性能损失仅1-2%。
++ `ColBERTv2`引入残差压缩（核心是`k-means`聚类+残差量化），存储需求降低6-10倍，性能损失仅1-2%。
 
-+   BGE-M3结合残差压缩的应用展示了技术的可行性。
++ `BGE-M3`结合残差压缩的应用展示了技术的可行性。
 
 ---
 
 ### 🔥 动手挑战
 
-1.  使用更大的文档集（如MS MARCO）测试压缩比和检索性能（Recall@k）。
+1. 使用更大的文档集（如MS MARCO）测试压缩比和检索性能（`Recall@k`）。
 
-1.  调整聚类中心数（n_centroids）和量化位数（quantization_bits），观察对压缩比和MSE的影响。
+1. 调整聚类中心数（`n_centroids`）和量化位数（`quantization_bits`），观察对压缩比和MSE的影响。
 
-1.  将压缩技术集成到你的RAG项目，评估端到端性能。
+1. 将压缩技术集成到你的RAG项目，评估端到端性能。
 
 ### ♻️ 互动问题
 
-1.  你认为ColBERTv2在哪些RAG场景下更有优势？
+1. 你认为`ColBERTv2`在哪些RAG场景下更有优势？
 
-1.  残差压缩中的量化位数b的作用是什么？
+1. 残差压缩中的量化位数`b`的作用是什么？
 
-1.  残差压缩的额外计算开销与存储节省相比是否值得？
+1. 残差压缩的额外计算开销与存储节省相比是否值得？
 
 欢迎在留言区分享你的想法，每条留言我都会认真阅读！ 你的反馈是我创作的最大动力 ❤️
 
-💗 立即行动
+### 💗 立即行动
 
 1. 点赞、收藏、关注，分享给朋友。
 
@@ -671,22 +671,22 @@ else:
 
 （往期文章）
 
-+   RAG：ColBERT原理、延迟交互机制与稠密向量的对比分析
++ RAG：`ColBERT`原理、延迟交互机制与稠密向量的对比分析
 
-+   RAG背后的数学：向量点积与余弦的秘密
++ RAG背后的数学：向量点积与余弦的秘密
 
-+   RAG系统召回率低？ BGE-M3 多语言多功能重塑文本检索
++ RAG系统召回率低？ `BGE-M3` 多语言多功能重塑文本检索
 
-+   RAG去重小助手SimHash算法：轻松解决文本相似度检测与查重难题
++ RAG去重小助手`SimHash`算法：轻松解决文本相似度检测与查重难题
 
-+   从模式匹配到语义理解：文本嵌入技术的演变与 RAG 系统优化
++ 从模式匹配到语义理解：文本嵌入技术的演变与 RAG 系统优化
 
-+   别再瞎猜了！用 RAGAS 精准定位 RAG 系统短板
++ 别再瞎猜了！用 `RAGAS` 精准定位 RAG 系统短板
 
-## 🚀参考资料
+## 🚀 参考资料
 
-+   RAG：ColBERT原理、延迟交互机制与稠密向量的对比分析
++ RAG：`ColBERT`原理、延迟交互机制与稠密向量的对比分析
 
-+   论文地址：https://arxiv.org/abs/2112.01488
++ 论文地址：https://arxiv.org/abs/2112.01488
 
-+   官方代码地址：[https://github.com/stanfor](https://github.com/stanford-futuredata/ColBERT)d-futuredata/ColBERT
++ 官方代码地址：[https://github.com/stanford-futuredata/ColBERT](https://github.com/stanford-futuredata/ColBERT)

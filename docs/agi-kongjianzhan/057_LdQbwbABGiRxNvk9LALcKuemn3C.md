@@ -1,10 +1,11 @@
+
 # 【24 年7月】SearchGPT(搜索)
 
 > 来源：[https://agispace.feishu.cn/docx/Happd3pfvojRndxy7klcjn1ln2g](https://agispace.feishu.cn/docx/Happd3pfvojRndxy7klcjn1ln2g)
 
 ![](img/19c5db101a0d4da2115716630b5c8934.png)
 
-http://chatgpt.com/search （申请地址）
+`http://chatgpt.com/search` （申请地址）
 
 ## 新的搜索方式
 

@@ -1,6 +1,7 @@
+
 # The Only Prompt That Actually Matters
 
-> 来源：[https://my.feishu.cn/docx/G8LFd3xKnogvGFxSPClcNFZdnpb](https://my.feishu.cn/docx/G8LFd3xKnogvGFxSPClcNFZdnpb)
+> 来源：`https://my.feishu.cn/docx/G8LFd3xKnogvGFxSPClcNFZdnpb`
 
 **使用场景或用例：**适合所有用户希望 AI 更主动澄清需求，使对话更具效率与精确性；特别适用于复杂请求、项目规划或模糊指令场景。
 

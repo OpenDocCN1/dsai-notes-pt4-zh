@@ -1,12 +1,12 @@
-# 03.10-北京大学联合华为发布全栈开源 DeepSeek 推理方案
-
-> 来源：[https://agijuejin.feishu.cn/docx/W4EEd3RkSoQ2foxtVWecB4rZn5f](https://agijuejin.feishu.cn/docx/W4EEd3RkSoQ2foxtVWecB4rZn5f)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 03 月 10 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/W4EEd3RkSoQ2foxtVWecB4rZn5f](https://agijuejin.feishu.cn/docx/W4EEd3RkSoQ2foxtVWecB4rZn5f)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/370670ff626e490d7d0e0188a39f34ab.png)
+
+## 03.10-北京大学联合华为发布全栈开源 DeepSeek 推理方案
 
 ## ⭐ 今日热点
 

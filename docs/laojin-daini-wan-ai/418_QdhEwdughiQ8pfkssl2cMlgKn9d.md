@@ -1,3 +1,4 @@
+
 # XXXBOT
 
 > 来源：[https://my.feishu.cn/docx/GBTYdow1MoOqbOxc7ifcsNBUnSD](https://my.feishu.cn/docx/GBTYdow1MoOqbOxc7ifcsNBUnSD)
@@ -23,7 +24,7 @@ sudo systemctl enable redis
 sudo systemctl status redis
 ```
 
-项目说明提到需要 FFmpeg 来处理语音。请运行以下命令来安装它：
+项目说明提到需要 `FFmpeg` 来处理语音。请运行以下命令来安装它：
 
 ```
 sudo yum install ffmpeg -y

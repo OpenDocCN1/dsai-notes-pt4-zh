@@ -1,3 +1,4 @@
+
 # 提出正确问题的能力，在未来比找到答案的能力更重要
 
 > 来源：[https://yunyingmenghai.feishu.cn/docx/DmrKdxJGqoaErSx68jqcHrZwnyg](https://yunyingmenghai.feishu.cn/docx/DmrKdxJGqoaErSx68jqcHrZwnyg)

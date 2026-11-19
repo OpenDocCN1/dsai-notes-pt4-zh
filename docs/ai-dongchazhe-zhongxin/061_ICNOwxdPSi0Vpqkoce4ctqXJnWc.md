@@ -1,3 +1,4 @@
+
 # 1、了解 ChatGPT
 
 > 来源：[https://bluefocus.feishu.cn/docx/KiyfdcTfyoSGpVxA1PAclw7onig](https://bluefocus.feishu.cn/docx/KiyfdcTfyoSGpVxA1PAclw7onig)
@@ -26,6 +27,6 @@ API 是 Application Programming Interface（应用程序编程接口）的缩写
 
 ## 6、如何获取 API Key
 
-申请地址（开魔法）：[https://platform.openai.](https://platform.openai.com/account/api-keys)com/account/api-keys
+申请地址（开魔法）：[https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 
 ![](img/fef739cf6a63c05e22ac9c890d59d4f5.png)

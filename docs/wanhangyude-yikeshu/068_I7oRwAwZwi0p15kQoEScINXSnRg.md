@@ -1,3 +1,4 @@
+
 # 用影刀RPA写fastmoss注册机
 
 > 来源：[https://my.feishu.cn/docx/MaSMdO50Co6PNJx70WPcxM7yn3b](https://my.feishu.cn/docx/MaSMdO50Co6PNJx70WPcxM7yn3b)
@@ -44,7 +45,7 @@
 
 ![](img/8d24df518215c476ce310f511f880f25.png)
 
-第四步我加了个try，还是做了异常处理的哈哈..（这是之前写的了..当时只学到了初级课程）
+第四步我加了个`try`，还是做了异常处理的哈哈..（这是之前写的了..当时只学到了初级课程）
 
 ![](img/5e1b6d262e3704fd3767810a99829c79.png)
 
@@ -105,5 +106,3 @@
 ## 4.3 领取会员
 
 ![](img/dd353c4391340949a23da07d5cd01c2a.png)
-
-##

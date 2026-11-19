@@ -1,3 +1,4 @@
+
 # 提示的力量：ChatGPT-4o结合20种经典思维模型，让问题解决更高效
 
 > 来源：[https://aigcreative.feishu.cn/docx/JcqwdMZQaoZnAixuQTicFi1Hnzd](https://aigcreative.feishu.cn/docx/JcqwdMZQaoZnAixuQTicFi1Hnzd)

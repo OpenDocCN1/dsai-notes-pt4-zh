@@ -1,20 +1,19 @@
+
 # 数字人做虚拟故事视频如何变现？
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/S2Gudcs4hoToVjxVlnJcyNPQnlc](https://aiyanxishe.feishu.cn/docx/S2Gudcs4hoToVjxVlnJcyNPQnlc)
-
-#
 
 拍摄传统的视频段子，我们需要专门的演员，摄影，灯光，就算最简单的人员配置也得 2-3 人，对于个人而言很难完成。但是借用 AI 数字人技术，我们是能轻松实现虚拟故事的创作。
 
 我们先来看案例展示：
 
-## **案例一：段老湿与蔡九（韭菜）**
+## 案例一：段老湿与蔡九（韭菜）
 
 段老湿利用 AI 绘画制作的两个 IP 人物，段老湿与菜九，讲述知识付费割韭菜的段子。
 
 ![](img/6e55e4dee68a194ebb43ba803a9e41e0.png)
 
-## **案例二：马四爷**
+## 案例二：马四爷
 
 马四爷的职场段子，主要追热点实践，讲述职场的段子。
 

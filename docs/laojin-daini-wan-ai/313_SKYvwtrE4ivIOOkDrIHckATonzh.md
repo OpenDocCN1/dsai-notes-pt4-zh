@@ -1,14 +1,13 @@
+
 # --v（版本）
 
 > 来源：[https://my.feishu.cn/docx/NKffdYCO1o1q4VxsfLDclEC3nwg](https://my.feishu.cn/docx/NKffdYCO1o1q4VxsfLDclEC3nwg)
 
-#### Midjourney 定期推出新的模型版本，以提高连贯性、效率、质量和风格。您可以使用 --version 或 --v 参数切换模型版本，也可以使用 /settings 命令并选择您喜欢的模型版本。不同的模型擅长生成不同类型的图像。
+Midjourney 定期推出新的模型版本，以提高连贯性、效率、质量和风格。您可以使用 `--version` 或 `--v` 参数切换模型版本，也可以使用 `/settings` 命令并选择您喜欢的模型版本。不同的模型擅长生成不同类型的图像。
 
-+   **--version**接受值 1、2、3、4、5、5.0、5.1、5.2、6 和 6.1。
-
-+   **--version**可以缩写**--v**。
-
-+   **--v 6.1**是最新的和当前的默认模型。
++ `--version` 接受值 1、2、3、4、5、5.0、5.1、5.2、6 和 6.1。
++ `--version` 可以缩写 `--v`。
++ `--v 6.1` 是最新的和当前的默认模型。
 
 ---
 
@@ -34,7 +33,7 @@ Midjourney 模型第 6 版于 2023 年 12 月 20 日发布，并于 2024 年 2 �
 
 [Niji 模型是 M](https://spellbrush.com/)idjourney 和Spellbrush合作推出的，旨在通过对动漫、动漫风格和动漫美学的深入了解，制作动漫和插画风格。它擅长拍摄动态和动作镜头以及以角色为中心的构图。
 
-要使用此模型，请将**--niji 6****参数添加到提示的末**尾，或使用命令/settings并选择🌈 Niji version 6
+要使用此模型，请将 `--niji 6` 参数添加到提示的末尾，或使用命令 `/settings` 并选择🌈 Niji version 6
 
 ![](img/63aeb52a404c7323880bfa0e161524ae.png)
 
@@ -48,13 +47,13 @@ Midjourney 模型第 6 版于 2023 年 12 月 20 日发布，并于 2024 年 2 �
 
 ### 使用版本参数
 
-使用**--version**或**--v**参数更改模型版本。例如，**--v 5.2**使用版本 5.2，或**--niji 6**使用 Niji 版本 6。
+使用 `--version` 或 `--v` 参数更改模型版本。例如，`--v 5.2` 使用版本 5.2，或 `--niji 6` 使用 Niji 版本 6。
 
 ![](img/ab250dc4a67def136eb345f791dbe3e0.png)
 
 ### 使用 Discord 设置命令
 
-**/settings**从下拉列表中输入并选择您喜欢的版本。
+`/settings` 从下拉列表中输入并选择您喜欢的版本。
 
 6️⃣ MJ Version 6.1 6️⃣ MJ Version 6 🌈 Niji Version 6
 
@@ -66,6 +65,6 @@ Midjourney 模型第 6 版于 2023 年 12 月 20 日发布，并于 2024 年 2 �
 
 ![](img/518110308840cca06427db0a43dee1bc.png)
 
-**从下拉菜单中选择您****喜欢的**版本。除非您在单个提示中使用--version或参数指定不同的值，否则您的图像将使用该版本生成。--v
+从下拉菜单中选择您喜欢的版本。除非您在单个提示中使用 `--version` 或参数指定不同的值，否则您的图像将使用该版本生成。`--v`
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

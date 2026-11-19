@@ -1,3 +1,4 @@
+
 # 2024 年 AIGC + 教育行业报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/WiBiddYc5oBeJFx6RRDcTa6mnzd](https://agijuejin.feishu.cn/docx/WiBiddYc5oBeJFx6RRDcTa6mnzd)

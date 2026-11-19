@@ -1,8 +1,9 @@
+
 # CARE 模型 Prompt
 
 > 来源：[https://my.feishu.cn/docx/NSIjdR2dQoSl8hxv9OjcK0fIn6g](https://my.feishu.cn/docx/NSIjdR2dQoSl8hxv9OjcK0fIn6g)
 
-## 自然语言形式：
+## 自然语言形式
 
 ```
 请按照 CARE 模型逐步引导我完成下列任务：
@@ -34,7 +35,7 @@ E (Examples): 您能提供什么样的具体例子或参考来帮助 AI 更好�
 非常感谢您提供的详细信息，我现在将根据您的输入开始执行任务。如果在执行过程中有任何需要调整的地方，请随时告诉我。
 ```
 
-## 伪代码形式：
+## 伪代码形式
 
 ```
 {
@@ -55,7 +56,6 @@ E (Examples): 您能提供什么样的具体例子或参考来帮助 AI 更好�
   ],
   &quot;output&quot;: &quot;生成一个详细的、可执行的任务计划，包括任务背景、目标、具体请求和参考示例，确保AI能够准确地帮助用户完成任务。&quot;
 }
-
 ```
 
 ```

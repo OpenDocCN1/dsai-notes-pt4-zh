@@ -1,3 +1,4 @@
+
 # OpenAI成长史：顶级资本与科技大佬的理想主义，冲突，抉择与权力斗争
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/FvSrd9o4zoQ50Nx2aQIca9yPnJb](https://jalicvoygc0.feishu.cn/docx/FvSrd9o4zoQ50Nx2aQIca9yPnJb)

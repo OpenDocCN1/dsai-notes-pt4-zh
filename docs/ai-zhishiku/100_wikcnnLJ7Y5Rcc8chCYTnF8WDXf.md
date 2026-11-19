@@ -1,8 +1,9 @@
+
 # 直接用 Dreamstudio
 
 > 来源：[https://my.feishu.cn/docx/D1KHdzcPaokyB2xFuiac1sR4nLb](https://my.feishu.cn/docx/D1KHdzcPaokyB2xFuiac1sR4nLb)
 
-网站：https://dreamstudio.ai/dream
+网站：`https://dreamstudio.ai/dream`
 
 界面：
 

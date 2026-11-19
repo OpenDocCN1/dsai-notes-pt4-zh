@@ -1,3 +1,4 @@
+
 # 📕爆火的治愈视频怎么做出来的？
 
 > 来源：[https://geekbang.feishu.cn/docx/HvDxd9w0bo9OBxxC5tEcEgFUnMd](https://geekbang.feishu.cn/docx/HvDxd9w0bo9OBxxC5tEcEgFUnMd)
@@ -36,7 +37,7 @@
 
 这一步比较关键了，找到一个在线抠图的工具，把窗户抠出来。
 
-在线抠图：https://ps.gaoding.com/#/
+在线抠图：`https://ps.gaoding.com/#/`
 
 ![](img/74f287a0af35c4e6ea26450c3b9914d5.png)
 

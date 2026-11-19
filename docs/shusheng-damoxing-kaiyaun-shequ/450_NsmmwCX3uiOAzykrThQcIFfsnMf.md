@@ -1,18 +1,19 @@
-# 基于华为昇腾910B，实战InternLM个人小助手认知微调
+
+# 基于华为昇腾910B，实战`InternLM`个人小助手认知微调
 
 > 来源：[https://aicarrier.feishu.cn/docx/JgDZdBvhwoJDkIxiN09cpW61ncd](https://aicarrier.feishu.cn/docx/JgDZdBvhwoJDkIxiN09cpW61ncd)
 
-本文将带领大家基于华为云 ModelArts，使用 XTuner 单卡微调一个 InternLM 个人小助手。
+本文将带领大家基于华为云 `ModelArts`，使用 `XTuner` 单卡微调一个 `InternLM` 个人小助手。
 
 开源链接：（欢迎 star）
 
-https://github.com/InternLM/InternLM
+`https://github.com/InternLM/InternLM`
 
-https://github.com/InternLM/xtuner
+`https://github.com/InternLM/xtuner`
 
-# **XTuner**** ****简介**
+## XTuner 简介
 
-X**Tune****r 是**一个高效、灵活、全能的轻量化大模型微调工具库。 常用命令如下：
+`XTuner` 是一个高效、灵活、全能的轻量化大模型微调工具库。常用命令如下：
 
 **查看帮助**
 
@@ -38,7 +39,7 @@ xtuner list-cfg
 xtuner list-cfg -p $NAME
 ```
 
-xtuner list-cfg 命令用于列出内置的所有配置文件。参数 -p 或 --pattern 表示模式匹配，后面跟着的内容将会在所有的配置文件里进行模糊匹配搜索，然后返回最有可能的内容。
+`xtuner list-cfg` 命令用于列出内置的所有配置文件。参数 `-p` 或 `--pattern` 表示模式匹配，后面跟着的内容将会在所有的配置文件里进行模糊匹配搜索，然后返回最有可能的内容。
 
 **复制配置文件**
 
@@ -46,7 +47,7 @@ xtuner list-cfg 命令用于列出内置的所有配置文件。参数 -p 或 --
 xtuner copy-cfg $CONFIG $SAVE_PATH
 ```
 
-xtuner copy-cfg 命令用于复制一个内置的配置文件。该命令需要两个参数：CONFIG 代表需要复制的配置文件名称，SAVE_PATH 代表复制的目标路径。
+`xtuner copy-cfg` 命令用于复制一个内置的配置文件。该命令需要两个参数：`CONFIG` 代表需要复制的配置文件名称，`SAVE_PATH` 代表复制的目标路径。
 
 **执行微调训练**
 
@@ -54,21 +55,21 @@ xtuner copy-cfg 命令用于复制一个内置的配置文件。该命令需要�
 xtuner train $CONFIG
 ```
 
-xtuner train 命令用于启动模型微调进程。该命令需要一个参数：CONFIG 用于指定微调配置文件。
+`xtuner train` 命令用于启动模型微调进程。该命令需要一个参数：`CONFIG` 用于指定微调配置文件。
 
-将 pth 格式的模型文件转换成 HuggingFace 格式的模型
+将 `pth` 格式的模型文件转换成 `HuggingFace` 格式的模型
 
 ```
 xtuner convert pth_to_hf $CONFIG $PATH_TO_PTH_MODEL $SAVE_PATH_TO_HF_MODEL
 ```
 
-xtuner convert pth_to_hf 命令用于进行模型格式转换。该命令需要三个参数：CONFIG 表示微调的配置文件； PATH_TO_PTH_MODEL 表示微调的模型权重文件路径，即要转换的模型权重；SAVE_PATH_TO_HF_MODEL 表示转换后的 HuggingFace 格式文件的保存路径。
+`xtuner convert pth_to_hf` 命令用于进行模型格式转换。该命令需要三个参数：`CONFIG` 表示微调的配置文件；`PATH_TO_PTH_MODEL` 表示微调的模型权重文件路径，即要转换的模型权重；`SAVE_PATH_TO_HF_MODEL` 表示转换后的 `HuggingFace` 格式文件的保存路径。
 
-# 华为云资源选择
+## 华为云资源选择
 
-模块：【华为云】-【控制台】-【AI开发平台ModelArts】-【开发空间】-【Notebook】
+模块：【华为云】-【控制台】-【AI开发平台`ModelArts`】-【开发空间】-【`Notebook`】
 
-镜像：pytorch_2.1.0-cann_8.0.rc1-py_3.9-euler_2.10.7-aarch64-snt9b
+镜像：`pytorch_2.1.0-cann_8.0.rc1-py_3.9-euler_2.10.7-aarch64-snt9b`
 
 ![](img/c0e06bfe781c172efe69749d7992d9c3.png)
 
@@ -80,9 +81,9 @@ xtuner convert pth_to_hf 命令用于进行模型格式转换。该命令需要�
 
 ![](img/59cd3b31217c1b95a499bc33999aa833.png)
 
-# 安装环境
+## 安装环境
 
-## 安装依赖
+### 安装依赖
 
 ```
 pip install einops
@@ -92,7 +93,7 @@ pip install deepspeed
 pip install loguru
 ```
 
-## 安装 XTuner
+### 安装 `XTuner`
 
 ```
 git clone -b v0.1.23 https://github.com/InternLM/xtuner
@@ -100,7 +101,7 @@ git clone -b v0.1.23 https://gitee.com/InternLM/xtuner #github 不行的话用�
 cd xtuner
 ```
 
-安装之前修改一个文件，路径：xtuner/tools/model_converters/merge.py
+安装之前修改一个文件，路径：`xtuner/tools/model_converters/merge.py`
 
 ```
 parser.add_argument(
@@ -116,18 +117,18 @@ parser.add_argument(
 pip install -e .
 ```
 
-# 模型准备
+## 模型准备
 
-## 创建目录
+### 创建目录
 
 ```
 mkdir -p /home/ma-user/work/work_dir/
 cd /home/ma-user/work/work_dir/
 ```
 
-## 下载模型
+### 下载模型
 
-使用 Huggingface-cli 方式下载，设置 hf-mirros 环境变量
+使用 `huggingface-cli` 方式下载，设置 `HF_ENDPOINT` 环境变量
 
 ```
 export HF_ENDPOINT=https://hf-mirror.com
@@ -139,9 +140,9 @@ export HF_ENDPOINT=https://hf-mirror.com
 huggingface-cli download --resume-download internlm/internlm2-chat-1_8b --local-dir /home/ma-user/work/model/internlm2-chat-1_8b
 ```
 
-## 微调前的模型对话
+### 微调前的模型对话
 
-cli_demo.py 代码
+`cli_demo.py` 代码
 
 ```
 import torch
@@ -186,9 +187,9 @@ python cli_demo.py
 
 ![](img/fe4cd9435d446f95f868755aa8a9db1b.png)
 
-## 微调
+### 微调
 
-### 准备数据文件
+#### 准备数据文件
 
 ```
 cd /home/ma-user/work/work_dir/
@@ -196,7 +197,7 @@ mkdir -p datas
 touch datas/assistant.json
 ```
 
-### 创建一个脚本准备数据（xtuner_generate_assistant.py）
+#### 创建一个脚本准备数据（`xtuner_generate_assistant.py`）
 
 创建准备数据脚本
 
@@ -233,7 +234,7 @@ with open(&#x27;datas/assistant.json&#x27;, &#x27;w&#x27;, encoding=&#x27;utf-8&
     json.dump(data, f, ensure_ascii=False, indent=4)
 ```
 
-将对应的 name 进行修改（在第 4 行的位置）
+将对应的 `name` 进行修改（在第 4 行的位置）
 
 ```
 - name = &#x27;JeffDing同志&#x27;
@@ -246,7 +247,7 @@ with open(&#x27;datas/assistant.json&#x27;, &#x27;w&#x27;, encoding=&#x27;utf-8&
 python xtuner_generate_assistant.py
 ```
 
-### 准备配置文件
+#### 准备配置文件
 
 列出支持的配置文件
 
@@ -254,13 +255,13 @@ python xtuner_generate_assistant.py
 xtuner list-cfg -p internlm2
 ```
 
-### 复制配置文件
+#### 复制配置文件
 
 ```
 xtuner copy-cfg internlm2_chat_1_8b_qlora_alpaca_e3 .
 ```
 
-### 修改配置文件
+#### 修改配置文件
 
 主要修改地方如下：
 
@@ -275,7 +276,7 @@ xtuner copy-cfg internlm2_chat_1_8b_qlora_alpaca_e3 .
 evaluation_inputs = [
 -    &#x27;请给我介绍五个上海的景点&#x27;, &#x27;Please tell me five scenic spots in Shanghai&#x27;
 +    &#x27;请介绍一下你自己&#x27;, &#x27;Please introduce yourself&#x27;]
-########################################################################                      PART 3  Dataset &amp; Dataloader                   ########################################################################
+########################################################################                      PART 3  Dataset & Dataloader                   ########################################################################
 alpaca_en = dict(type=process_hf_dataset,
 -   dataset=dict(type=load_dataset, path=alpaca_en_path),
 +   dataset=dict(type=load_dataset, path=&#x27;json&#x27;, data_files=dict(train=alpaca_en_path)),
@@ -294,7 +295,7 @@ alpaca_en = dict(type=process_hf_dataset,
 
 ```
 #######################################################################
-#                      PART 2  Model &amp; Tokenizer                      #
+#                      PART 2  Model & Tokenizer                      #
 #######################################################################
 
 - quantization_config=dict(
@@ -310,44 +311,46 @@ alpaca_en = dict(type=process_hf_dataset,
 
 需要去掉这一段的原因：使用这段会出现一个情况，量化这个操作好像不支持 NPU，会报错找不到 GPU。
 
-### 启动微调
+#### 启动微调
 
 ```
 xtuner train ./internlm2_chat_1_8b_qlora_alpaca_e3_copy.py
 ```
 
-微调启动时 NPU 的使用情况，使用 npu-smi info 命令查看
+微调启动时 NPU 的使用情况，使用 `npu-smi info` 命令查看
 
 ![](img/82c2689c7f083f154f6a82ad046256a4.png)
 
-### 模型格式转换
+#### 模型格式转换
 
 ```
 pth_file=`ls -t ./work_dirs/internlm2_chat_1_8b_qlora_alpaca_e3_copy/*.pth | head -n 1`
 xtuner convert pth_to_hf ./internlm2_chat_1_8b_qlora_alpaca_e3_copy.py ${pth_file} ./hf
 ```
 
-### 模型合并
+#### 模型合并
 
 ```
 xtuner convert merge /home/ma-user/work/model/internlm2-chat-1_8b ./hf ./merged --max-shard-size 2GB --device npu
 ```
 
-### 执行微调后的 demo
+#### 执行微调后的 demo
 
-修改 cli_demo.py 里面模型路径为 /home/ma-user/work/work_dir/merged
+修改 `cli_demo.py` 里面模型路径为 `/home/ma-user/work/work_dir/merged`
+
+
 
 ```
-- model_name_or_path = &quot;/home/ma-user/work/model/internlm2-chat-1_8b&quot;  # 模型所在的本地路径
-+ model_name_or_path = &quot;/home/ma-user/work/work_dir/merged&quot;  # 模型所在的本地路径
+- model_name_or_path = "/home/ma-user/work/model/internlm2-chat-1_8b"  # 模型所在的本地路径
++ model_name_or_path = "/home/ma-user/work/work_dir/merged"  # 模型所在的本地路径
 ```
 
-执行代码
+### 执行代码
 
 ```
 python cli_demo.ppy
 ```
 
-运行结果
+### 运行结果
 
 ![](img/7fca69391083c7d70b231c81eed37b73.png)

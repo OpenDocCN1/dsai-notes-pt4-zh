@@ -1,73 +1,70 @@
+
 # 开发者工具
 
 > 来源：[https://docs.feishu.cn/docx/ZHRIdI30boT9nOx6hsyc2pKVnMh](https://docs.feishu.cn/docx/ZHRIdI30boT9nOx6hsyc2pKVnMh)
 
-# 子页面目录
+## 子页面目录
 
-# TOOL01_Remix
-
+### TOOL01_Remix
 
 [Remix.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AaQtbYTsuoIf8wxFfLrca8yincc)
 
-# TOOL02_Infura
+### TOOL02_Infura
 
-Infura是Consensys(小狐狸钱包母公司)开发的区块链基础设施，帮助用户/开发者更好的与以太坊区块链交互。
+Infura 是 Consensys（小狐狸钱包母公司）开发的区块链基础设施，帮助用户/开发者更好的与以太坊区块链交互。
 
-## **连接应用和区块链**
+#### 连接应用和区块链
 
-在以太坊上开发的Dapp应用（链下）需要与区块链（链上）交互。早期，以太坊上的基础设施很少，开发者需要在本地部署以太坊节点来完成链下和链上的交互，非常麻烦，且耗时数日。
+在以太坊上开发的 Dapp 应用（链下）需要与区块链（链上）交互。早期，以太坊上的基础设施很少，开发者需要在本地部署以太坊节点来完成链下和链上的交互，非常麻烦，且耗时数日。
 
-Infura在链下、链上之间搭了一座桥，让两者的交互变的简单。它为用户提供对以太坊和IPFS网络的即时、可扩展的API访问。开发者在Infura官网注册后，就可以免费申请的以太坊API KEY，就可以利用Infura的节点与区块链交互。另外，小狐狸metamask钱包内置了Infura服务，方便用户访问以太坊网络。
+Infura 在链下、链上之间搭了一座桥，让两者的交互变得简单。它为用户提供对以太坊和 IPFS 网络的即时、可扩展 API 访问。开发者在 Infura 官网注册后，就可以免费申请以太坊 API KEY，就可以利用 Infura 的节点与区块链交互。另外，小狐狸 Metamask 钱包内置了 Infura 服务，方便用户访问以太坊网络。
 
-## **使用****Infura**** API Key **
+#### 使用 Infura API Key
 
-### **Javascript (****ethers.js****)**
+##### Javascript (`ethers.js`)
 
-在ether.js中，我们可以利用Infura API Key来创建JsonRpcProvider，与链上交互。
-
-```
- const { ethers } = require(&quot;ethers&quot;);
- // 填上你的Infura API Key
- const INFURA_ID = &#x27;&#x27; 
- const provider = new ethers.providers.JsonRpcProvider(https://mainnet.infura.io/v3/${INFURA_ID})
-```
-
-### **Metamask****小狐狸钱包**
-
-进入小狐狸钱包设置 **Setting** 页面，点击网络 **Network**，点击添加网络 **Add Network**。你可以利用下面的参数在小狐狸中添加Optimism Layer2链：
+在 `ethers.js` 中，我们可以利用 Infura API Key 来创建 `JsonRpcProvider`，与链上交互。
 
 ```
- 网络名称（Network Name）: Optimism
- RPC URL：填在Infura申请的optimism rpc链接
- 链ID (Chain ID): 10
- 符号 (Chain Symbol): ETH
- 区块链浏览器URL (Blockchain Explorer URL): https://optimistic.etherscan.io
+const { ethers } = require("ethers");
+// 填上你的 Infura API Key
+const INFURA_ID = ''
+const provider = new ethers.providers.JsonRpcProvider(https://mainnet.infura.io/v3/${INFURA_ID})
 ```
 
-# TOOL03_Ganache
+##### Metamask 小狐狸钱包
 
-Ganache** 是一个适用于 **“开发场景”（或开发过程中的）的 以太坊区块链网络，它使开发以太坊应用程序（的工作）更快、更容易、更安全。它包括所有流行的 RPC 功能和特性（如事件），并且可以确定性地运行以使开发变得轻而易举。
+进入小狐狸钱包设置 `Setting` 页面，点击网络 `Network`，点击添加网络 `Add Network`。你可以利用下面的参数在小狐狸中添加 Optimism Layer2 链：
 
-> 可以理解 ganache 是一个以太坊区块链“模拟器”，在开发过程中 “模拟” 生产环境、方便的获取合约调用的上下文。
+```
+网络名称（Network Name）: Optimism
+RPC URL：填在 Infura 申请的 optimism rpc 链接
+链ID (Chain ID): 10
+符号 (Chain Symbol): ETH
+区块链浏览器URL (Blockchain Explorer URL): https://optimistic.etherscan.io
+```
 
-> ⚠️ 注意：请不要在生产环境中作为区块链网络使用 如果需要请使用 geth 或 openethereum 等节点应用。
+### TOOL03_Ganache
 
-Ganache 同时有着 GUI 版本，适合于新手快速配置使用。
+`Ganache` 是一个适用于“开发场景”（或开发过程中的）的 以太坊区块链网络，它使开发以太坊应用程序的工作更快、更容易、更安全。它包括所有流行的 RPC 功能和特性（如事件），并且可以确定性地运行以使开发变得轻而易举。
 
+> 可以理解 `ganache` 是一个以太坊区块链“模拟器”，在开发过程中“模拟”生产环境、方便的获取合约调用的上下文。
+
+> ⚠️ 注意：请不要在生产环境中作为区块链网络使用。如果需要，请使用 `geth` 或 `openethereum` 等节点应用。
+
+`Ganache` 同时有 GUI 版本，适合于新手快速配置使用。
 
 [Ganache.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HQTQbFrTLoEnStxXfB9ceuLLnoc)
 
-# TOOL04_Alchemy
-
+### TOOL04_Alchemy
 
 [Alchemy.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PiQqbTblcodgKsxwGWic6bAQnmc)
 
-# TOOL05_Dune
-
+### TOOL05_Dune
 
 [Dune.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FTBMb6PHHo5WtExrjv9ccmedn5B)
 
-# TOOL06_Hardhat
+### TOOL06_Hardhat
 
 以太坊智能合约开发环境
 
@@ -75,7 +72,7 @@ Ganache 同时有着 GUI 版本，适合于新手快速配置使用。
 
 [Hardhat.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D4ZVb3XnXoNr3txxd7pcbxagnpf)
 
-## 1 Why Hardhat?
+#### 1 Why Hardhat?
 
 ![](img/fbcf663f1dc009cd40534f668a19d49f.png)
 
@@ -89,7 +86,7 @@ Ganache 同时有着 GUI 版本，适合于新手快速配置使用。
 
 ![](img/e9c38ebae8dd60aa0db5e7aeb87599fb.png)
 
-## 2 准备工作
+#### 2 准备工作
 
 ![](img/42bd9d0b6d68a83294d535a308d3ce15.png)
 
@@ -97,11 +94,11 @@ Ganache 同时有着 GUI 版本，适合于新手快速配置使用。
 
 ![](img/2653a354e35aac0d751336f34a2e461b.png)
 
-## 3 介绍
+#### 3 介绍
 
 ![](img/89e5b8aa4edce81df9b8e5fff32c7880.png)
 
-hardhat.config.ts
+`hardhat.config.ts`
 
 ![](img/91ff9fe43179b90073546dac9da12722.png)
 
@@ -111,17 +108,16 @@ hardhat.config.ts
 
 ![](img/fe693ea0dfa42de4ccdf71a43f11d399.png)
 
-Mocha测试框架
+`Mocha` 测试框架
 
-package.json
+`package.json`
 
 存着
 
-+   项目依赖
++ 项目依赖
++ 自定义脚本
 
-+   自定义脚本
-
-## 测试
+#### 测试
 
 列测试需求
 
@@ -145,7 +141,7 @@ package.json
 
 ![](img/5155d8346462d87e784e45097c27fbad.png)
 
-## 部署
+#### 部署
 
 ![](img/61420d1bb8f233ab865c879e5303fdaf.png)
 
@@ -153,21 +149,19 @@ package.json
 
 ![](img/dac1e9a2b59630381f7c12c8d65a7764.png)
 
-> task是一种自定义命令，允许开发人员使用命令行运行脚本或任务。开发人员可以使用task来创建自定义工具或流程，或执行一系列命令或操作。
+> `task` 是一种自定义命令，允许开发人员使用命令行运行脚本或任务。开发人员可以使用 `task` 来创建自定义工具或流程，或执行一系列命令或操作。
 
-**task更灵活，名字，参数**
+`task` 更灵活，名字，参数
 
-hre是**运行时，获取运行时的一些状态**
+`hre` 是运行时，获取运行时的一些状态
 
 需要导入
 
 ![](img/d4ea74798916ee720c419f05029bece7.png)
 
-+   加载运行时
-
-+   加载合约
-
-+   发行交易
++ 加载运行时
++ 加载合约
++ 发行交易
 
 ![](img/cb8570a880a0425aae54f39f089d42e3.png)
 
@@ -175,13 +169,13 @@ hre是**运行时，获取运行时的一些状态**
 
 ![](img/748ef38bdb75728b003ed3fe2742cacb.png)
 
-## 4 细节
+#### 4 细节
 
-+   hardhat+ethers，是从hardhat import而不是从ethers import：import { ethers } from "hardhat";
++ `hardhat`+`ethers`，是从 `hardhat` import 而不是从 `ethers` import：`import { ethers } from "hardhat";`
 
-+   hardhat知道我们项目的合约
++ `hardhat` 知道我们项目的合约
 
-# TOOL07_Foundry
+### TOOL07_Foundry
 
 ![](img/d98612f400002c04356a551d9a9a8c69.png)
 

@@ -1,40 +1,36 @@
+
 # 第一周｜April
 
-> 来源：[https://docs.feishu.cn/docx/NfKgd9DIcogUvRx317lchi3xnRA](https://docs.feishu.cn/docx/NfKgd9DIcogUvRx317lchi3xnRA)
+> 来源：`https://docs.feishu.cn/docx/NfKgd9DIcogUvRx317lchi3xnRA`
 
-<https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg>
+`https://legalstudio.feishu.cn/sync/Lk2tdJ9y6slPw3bGbFEcuRzvnpg`
 
 # 一、法律 AI / 传统法律科技资讯
 
-## **生成式 AI CLM 厂商 Luminan**ce 完成 4000 万美元 B 轮融资
+## 生成式 AI CLM 厂商 Luminance 完成 4000 万美元 B 轮融资
 
 近日，生成式 AI CLM 厂商 Luminance 宣布完成 4000 万美元 B 轮融资，本轮融资由 March Capital 领投，老股东 National Grid Partners、Slaughter and May 律师事务所等跟投。
 
-## **Y Combinator W24 100+ **AI 项目出炉，三家法律 AI 初创公司
+## Y Combinator W24 100+ AI 项目出炉，三家法律 AI 初创公司
 
-近日，硅谷创投风向标 Y Combinator W24 召开，260+ 初创企业在两天内**，向 15**0**0+** **投资机构和媒体展**示未**来十亿、百亿甚至千亿美金的机会**。总的来看，AI 应用>工具，垂直行业解决方案>基于工作流程提升效率的 AI 解决方案，生成式 AI 进一步向行业渗透。
+近日，硅谷创投风向标 Y Combinator W24 召开，260+ 初创企业在两天内，向 1500+ 投资机构和媒体展示未来十亿、百亿甚至千亿美金的机会。总的来看，AI 应用 > 工具，垂直行业解决方案 > 基于工作流程提升效率的 AI 解决方案，生成式 AI 进一步向行业渗透。
 
 据媒体报道，W24 的项目分为以下几类：
 
-+   Vertical AI（垂直行业解决方案）
++ Vertical AI（垂直行业解决方案）
++ Horizontal AI（基于工作流的效率提升）
++ GenAI（AIGC 内容生成）
++ DevAI（服务开发者的生成式 AI）
++ Embodied AI（具身智能）
++ AIOps（开发者工具）
 
-+   Horizontal AI（基于工作流的效率提升）
+其中，AI 相关垂直行业解决方案聚焦医疗、金融、生物、ESG、供应链和物流、法律和生产制造等行业，占比约 31%，超过去年 20% 多的比例。在 Legal 法律这一类别中，包括以下三家初创公司：
 
-+   GenAI（AIGC 内容生成）
+1. Leya：Leya 是一款专门为法律专业人士设计的 AI 助手，擅长回答复杂法律问题并优化工作流程。通过对律所内部的知识库和外部的法律法规和案例库进行整合，Leya 能提供可靠且有来源引证的答案，为客户提供更高效和高质量的法律服务。
 
-+   DevAI（服务开发者的生成式 AI）
+2. PointOne：PointOne 使用 AI 帮助律师自动化时间跟踪和账单审查，以帮助律师获得更多的收入。
 
-+   Embodied AI（具身智能）
-
-+   AIOps（开发者工具）
-
-其中，AI 相关垂直行业解决方案聚焦医疗、金融、生物、ESG、供应**链和物流、法律和**生产制造等行业，占比约 31%，超过去年 20% 多的比例。在 Legal 法律这一类别中，包括以下三家初创公司：
-
-1.  **Leya**：Leya 是一款专门为法律专业人士设计的 AI 助手，擅长回答复杂法律问题并优化工作流程。通过对律所内部的知识库和外部的法律法规和案例库进行整合，Leya 能提供可靠且有来源引证的答案，为客户提供更高效和高质量的法律服务。
-
-1.  **PointOne**：PointOne 使用 AI 帮助律师自动化时间跟踪和账单审查，以帮助律师获得更多的收入。
-
-1.  **Abel**：Abel 旨在赋予律师更高效的执业能力，通过训练 AI 阅读众多类型的法律文档并回答关键问题，使律师可以更快地分析和理解大量法律资料。
+3. Abel：Abel 旨在赋予律师更高效的执业能力，通过训练 AI 阅读众多类型的法律文档并回答关键问题，使律师可以更快地分析和理解大量法律资料。
 
 ## 美国国家州法院中心 AI 工作组发布关于法院实施 AI 技术的新指南
 
@@ -44,9 +40,9 @@
 
 4 月 4 日，生成式 AI 合同软件初创公司 Latch 宣布获得 480 万美元的新一轮融资，并更名为「Ivo」。
 
-## **Hercules AI 与大模型厂**商合作，开发法律 AI 产品和自动化工具
+## Hercules AI 与大模型厂商合作，开发法律 AI 产品和自动化工具
 
-4 月 4 日，工作流程自动化软件服务商 Hercules AI（前“Zero Systems”）与大模型 RosettaStoneLLM 合作，围绕金融、保险和法律服务等受监管部门领域，开发 AI 应用程序和工作流程自动化工具。
+4 月 4 日，工作流程自动化软件服务商 Hercules AI（前“Zero Systems”）与大模型 `RosettaStoneLLM` 合作，围绕金融、保险和法律服务等受监管部门领域，开发 AI 应用程序和工作流程自动化工具。
 
 ## 活动推荐：律新社第八届新兴法律服务业高峰论坛
 
@@ -56,15 +52,15 @@
 
 今年春天，法天使将发起一个全新年度活动 —— 企业法总春天之约。在全国范围内邀请 20 位各个行业、产业头部企业的总法律顾问（GC：General Counsel ），组成“GC 20 人”小组，用 2 天时间深度交流，撰写《GC 20 全球视野洞察报告》，继而组织更大规模的法总聚会分享，并通过各合作伙伴，多渠道发布给全社会，以为参考。
 
-## **HRtec**h 服务商 Remote 收购股权薪酬公司 Easop
+## HRtech 服务商 Remote 收购股权薪酬公司 Easop
 
 4 月 2 日，人力资源解决方案和就业工具服务商 Remote 宣布收购股权薪酬初创公司 Easop，通过整合专业知识，帮助更多公司应对全球股权薪酬的复杂性。
 
-## **法律咨询辅导公司 Volta Talent** Strategies 推出律师发展平台
+## 法律咨询辅导公司 Volta Talent Strategies 推出律师发展平台
 
 4 月 4 日，法律咨询和辅导公司 Volta Talent Strategies 宣布与法律科技设计和开发公司 Theory and Principle 合作，推出一个名为 Tandem 的律师发展平台，提供律师学习资源和辅导服务。
 
-## **Winston & Strawn 律师事**务所推出低价法律服务，与 ALSP 竞争
+## Winston & Strawn 律师事务所推出低价法律服务，与 ALSP 竞争
 
 4 月 3 日，Am Law 100 律师事务所之一的 Winston & Strawn 推出一个名为 Winston Legal Solutions 的低价法律服务包，可用于协助处理低复杂性的日常任务。
 
@@ -76,7 +72,7 @@
 
 无独有偶，Allen & Overy 和 Shearman & Sterling 两家律所上个月在合并前，也聘请了咨询公司 McKinsey & Co.（麦肯锡）和会计师事务所 KPMG（毕马威）寻求整合方面的建议。随着法律服务市场越来越成熟，律所自身和业务发展也要更多地向商业靠拢。
 
-# **二、大模型资讯**
+# 二、大模型资讯
 
 ## Around the World
 
@@ -84,27 +80,25 @@
 
 4 月 3 日，OpenAI 开始向部分用户，提供在 ChatGPT 中的 DALL·E 3 图片编辑功能。
 
-DAL**L·E 3 是 OpenAI 在 2023 年 9 月 20** 日发布的一款文生图模型，其生成的图片效果可以与 Midjourney、leonardo、ideogram 等顶级产品媲美，随后被融合到 ChatGPT 中增强其多模态能力。但有一个很大的问题是，人们无法对AI生成的内容进行精准控制，因为这些都是神经元随机生成的，即便你用最精准的提示词也无法做到。
+DALL·E 3 是 OpenAI 在 2023 年 9 月 20 日发布的一款文生图模型，其生成的图片效果可以与 Midjourney、leonardo、ideogram 等顶级产品媲美，随后被融合到 ChatGPT 中增强其多模态能力。但有一个很大的问题是，人们无法对 AI 生成的内容进行精准控制，因为这些都是神经元随机生成的，即便你用最精准的提示词也无法做到。
 
 所以，OpenAI 推出了 DALL·E 3 的可视化编辑功能，帮助用户将生成的图片达到最佳理想效果，例如，生成一片绿油油的大草原。你希望在草原的中间加上一条蜿蜒的河流，现在通过编辑功能只需要涂抹区域，然后输入“流动的河流”即可。简单来说，相当于在 DALL·E 3 中内置了一个简易的 PS 功能。
 
 > 拓展阅读：
-
-> https://mp.weixin.qq.com/s/BddoLDRgw_Iz1AFQc3hxmA
-
-> https://mp.weixin.qq.com/s/edQrHHj6rpWd9MrODdcAkg
-
-> https://mp.weixin.qq.com/s/cYP304BMmKJcMO3yG4N6-A
+>
+> `https://mp.weixin.qq.com/s/BddoLDRgw_Iz1AFQc3hxmA`
+> `https://mp.weixin.qq.com/s/edQrHHj6rpWd9MrODdcAkg`
+> `https://mp.weixin.qq.com/s/cYP304BMmKJcMO3yG4N6-A`
 
 ### 亚马逊来中国卖大模型
 
-与全球市场上势不可当相比，亚马逊的 AWS 和微软的 Azure 进入中国十多年来，长期处于被动状态。因为独特的运营方式和中国云计算公司不断发起的价格战，它们很难拿到中国本土公司的订单，主要的客户是在中国有业务的海外公司或有出海业务的中国公司。因为大模型，过去一年它们在中国云计算市场的处境发生变化。作为 OpenAI 唯一的商业化云代理商，中国客户可以通过微软 Azure 申请 “Azure OpenAI 服务”，从而调用 GPT-4 模型。
+与全球市场上势不可当相比，亚马逊的 AWS 和微软的 Azure 进入中国十多年来，长期处于被动状态。因为独特的运营方式和中国云计算公司不断发起的价格战，它们很难拿到中国本土公司的订单，主要的客户是在中国有业务的海外公司或有出海业务的中国公司。因为大模型，过去一年它们在中国云计算市场的处境发生变化。作为 OpenAI 唯一的商业化云代理商，中国客户可以通过微软 Azure 申请 `Azure OpenAI 服务`，从而调用 `GPT-4` 模型。
 
 亚马逊也在采用类似微软的策略。4 月 2 日，亚马逊云科技（AWS 在中国的名称）在北京举办生成式 AI 沟通会，重点展示了一个月前发布的 Claude 3 系列大模型。根据母公司 Anthropic 的数据，Claude 3 Opus 在十多项常用的模型能力评估数据集上，得分全超过 GPT-4。这次沟通会前一周，亚马逊宣布再向 Anthropic 投资 27.5 亿美元，完成此前的 40 亿美元投资承诺，成为 Anthropic 核心投资方和 “主要云供应商”。
 
-一位亚马逊云科技人士表示，AWS 并没有在中国境内的服务器上部署 Claude 3。和微软 Azure 一样，中国公司可以通过 AWS 全球提供的 Bedrock 服务，申请调用在其他地区部署的 Claude 3 模型，完成计算。
+一位亚马逊云科技人士表示，AWS 并没有在中国境内的服务器上部署 Claude 3。和微软 Azure 一样，中国公司可以通过 AWS 全球提供的 `Bedrock` 服务，申请调用在其他地区部署的 Claude 3 模型，完成计算。
 
-注：Bedrock 是 AWS 专门针对生成式 AI 开发的产品，允许客户调用多个不同的大模型开发应用，比如 AI21、Cohere 等公司开发的大模型和 Llama 2 等开源模型。目前 AWS 仅支持 Claude 3 的 Sonnet 和 Haiku 模型，它们的性能比 Opus 较弱，但成本更低、响应速度更快。据了解，Opus 模型近期也会在 AWS 上线。
+注：`Bedrock` 是 AWS 专门针对生成式 AI 开发的产品，允许客户调用多个不同的大模型开发应用，比如 `AI21`、`Cohere` 等公司开发的大模型和 `Llama 2` 等开源模型。目前 AWS 仅支持 Claude 3 的 `Sonnet` 和 `Haiku` 模型，它们的性能比 `Opus` 较弱，但成本更低、响应速度更快。据了解，`Opus` 模型近期也会在 AWS 上线。
 
 上述亚马逊云科技的人士说，Claude 3 系列模型发布后，他们收到了大量中国公司的合作需求。
 
@@ -114,23 +108,18 @@ DAL**L·E 3 是 OpenAI 在 2023 年 9 月 20** 日发布的一款文生图模型
 
 4 月 2 日，OpenAI 宣布无需注册可直接使用 ChatGPT！
 
-但是，在不注册情况下，用户只能使用 GPT3.5 版本，无法使用 GPT-4 等高级功能，同时只能开启一个对话，无法保留聊天记录。目前，市面上的主流生成式 AI 聊天机器人基本都需要注册使用。
+但是，在不注册情况下，用户只能使用 `GPT3.5` 版本，无法使用 `GPT-4` 等高级功能，同时只能开启一个对话，无法保留聊天记录。目前，市面上的主流生成式 AI 聊天机器人基本都需要注册使用。
 
 > 拓展阅读：
+>
+> `https://mp.weixin.qq.com/s/zpZkh-P9f_r1t7HPnfIuZg`
+> `https://mp.weixin.qq.com/s/ewY742eN7vz8Xk8d5vHZiw`
+> `https://mp.weixin.qq.com/s/rf-_zm7qjMPWolQmPAWB_A`
+> `https://mp.weixin.qq.com/s/WRieID-8mxiL1KBZUlShHA`
+> `https://mp.weixin.qq.com/s/MNFCQDiQI3l1L6bOQ9DbHQ`
+> `https://mp.weixin.qq.com/s/a97UyOR905Fx0ZQydCZdUw`
 
-> https://mp.weixin.qq.com/s/zpZkh-P9f_r1t7HPnfIuZg
-
-> https://mp.weixin.qq.com/s/ewY742eN7vz8Xk8d5vHZiw
-
-> https://mp.weixin.qq.com/s/rf-_zm7qjMPWolQmPAWB_A
-
-> https://mp.weixin.qq.com/s/WRieID-8mxiL1KBZUlShHA
-
-> https://mp.weixin.qq.com/s/MNFCQDiQI3l1L6bOQ9DbHQ
-
-> https://mp.weixin.qq.com/s/a97UyOR905Fx0ZQydCZdUw
-
-## **东八区**
+## 东八区
 
 ### 腾讯刘煜宏：腾讯混元大模型正在积极发展多模态模型及应用
 
@@ -142,29 +131,29 @@ DAL**L·E 3 是 OpenAI 在 2023 年 9 月 20** 日发布的一款文生图模型
 
 如何赚到技术风口的钱？秘诀往往就是快人一步。2016 年 8 月，瞄准智能语音爆发窗口期创业的冯海洪，在创业一年后带着自己的公司「咪鼠科技」推出了第一款智能语音鼠标 M1 ，让鼠标“能听话、会打字”；
 
-2023 年 5 月，在紧密跟踪大模型发展动态 5 年后**，冯海洪决定带领咪鼠科技全面拥抱大模型，并基于百度智**能云千帆大模型平台做出了全球首个 AI 大模型鼠标 MiMouse M4 Al。这款产品在短短几个月时间里，冲到了全网智能鼠标销量第一。
+2023 年 5 月，在紧密跟踪大模型发展动态 5 年后，冯海洪决定带领咪鼠科技全面拥抱大模型，并基于百度智能云千帆大模型平台做出了全球首个 AI 大模型鼠标 `MiMouse M4 AI`。这款产品在短短几个月时间里，冲到了全网智能鼠标销量第一。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/96r6_bxXIJYT55-QJAN86w
+> 拓展阅读：`https://mp.weixin.qq.com/s/96r6_bxXIJYT55-QJAN86w`
 
 ### 支付宝面向行业开放「AI 就医助理」解决方案
 
 4 月 2 日，支付宝发布「AI 就医助理」解决方案，利用 AI 大模型、数字人等技术，助力医疗机构为患者提供覆盖就医前、中、后的“AI 陪伴就诊”服务。今天，支付宝这一解决方案也将正式面向全国医院、医疗机构开放。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/lM7dgezd8ApWZEgNdyJ4-g
+> 拓展阅读：`https://mp.weixin.qq.com/s/lM7dgezd8ApWZEgNdyJ4-g`
 
-### 「天工SkyMusic」音乐大模型启动邀测
+### 「天工 SkyMusic」音乐大模型启动邀测
 
-4 月 2 日，昆仑万维 AI 音乐生成大模型「天工 SkyMusic」即日起面向社会开启免费邀测。
+4 月 2 日，昆仑万维 AI 音乐生成大模型「天工 `SkyMusic`」即日起面向社会开启免费邀测。
 
-本轮邀测将开放 1000 个免费名额，面向行业媒体、专家、以及感兴趣的音乐从业者开放，用户可扫描文后二维码或通过网页填写申请，收到申请表后工作人员将第一时间联络回复。「天工 SkyMusic」正式版也将在 4 月 17 日随「天工 3.0」面向全社会免费开放。「天工 SkyMusic」采用类 Sora 模型架构，能够根据用户输入的歌词生成对应风格的 80 秒 AI 人声演唱的歌曲，用户还可以指定说唱、民谣等不同音乐风格。
+本轮邀测将开放 1000 个免费名额，面向行业媒体、专家、以及感兴趣的音乐从业者开放，用户可扫描文后二维码或通过网页填写申请，收到申请表后工作人员将第一时间联络回复。「天工 `SkyMusic`」正式版也将在 4 月 17 日随「天工 3.0」面向全社会免费开放。「天工 `SkyMusic`」采用类 `Sora` 模型架构，能够根据用户输入的歌词生成对应风格的 80 秒 AI 人声演唱的歌曲，用户还可以指定说唱、民谣等不同音乐风格。
 
-> 申请网页：https://rg975ojk5z.feishu.cn/share/base/form/shrcnTcBRpGzv5Sx9xAGd5V97Md
+> 申请网页：`https://rg975ojk5z.feishu.cn/share/base/form/shrcnTcBRpGzv5Sx9xAGd5V97Md`
+>
+> 拓展阅读：`https://mp.weixin.qq.com/s/LFuZ0EIPkLrM342JB1EF_A`
 
-> 拓展阅读：https://mp.weixin.qq.com/s/LFuZ0EIPkLrM342JB1EF_A
+# 三、监管与观点
 
-# **三、监管与观点**
-
-## **AI 监管****/政策****动态**
+## AI 监管/政策动态
 
 ### 国家数据局：将开展数据标注基地试点，促进 AI 产业发展
 
@@ -172,7 +161,7 @@ DAL**L·E 3 是 OpenAI 在 2023 年 9 月 20** 日发布的一款文生图模型
 
 国家数据局方面最新透露，接下来，将开展数据标注基地试点。
 
-会上明确，探索建设国家级数据标注基地，充分发挥地方配套支撑作用，在数据标注产业的生态构建、能力提升和场景应用等方面先行先试，集聚龙头企业，促进区域人工智能产业生态发展。
+会上明确，探索建设国家级数据标注基地，充分发挥地方配套支持作用，在数据标注产业的生态构建、能力提升和场景应用等方面先行先试，集聚龙头企业，促进区域人工智能产业生态发展。
 
 另外，国家数据局将开展深化数字经济创新发展试验区、数据要素综合试验区、数据基础制度试点、数据资源开发利用试点、数据基础设施建设试点等一系列试点试验工作。
 
@@ -184,7 +173,7 @@ DAL**L·E 3 是 OpenAI 在 2023 年 9 月 20** 日发布的一款文生图模型
 
 > 来源：界面新闻
 
-## **AI 观点/资讯**
+## AI 观点/资讯
 
 ### 企业内部如何更好落地大模型？我们走访了 10+ 先行者
 
@@ -192,22 +181,20 @@ DAL**L·E 3 是 OpenAI 在 2023 年 9 月 20** 日发布的一款文生图模型
 
 Founder Park 研究中心访谈了多位第一批尝试用新技术在企业内部搭建应用的实践者。我们观察到，随着大模型技术话题的广泛破圈，相较于以往的技术升级，来自不同领域、行业的企业都更有意愿进行在内部生产环境中尝试 LLM。另一方面，应用落地的速度和质量，也与企业本身对技术的理解、技术实践能力、落地方式选择息息相关。这份总结性研究，希望为正在思考、探索 LLM 赋能生产的企业一份有价值的参考。
 
-> 拓展阅读：https://mp.weixin.qq.com/s/fiI1M0sBFoDDxalh8EfAlg
+> 拓展阅读：`https://mp.weixin.qq.com/s/fiI1M0sBFoDDxalh8EfAlg`
 
 ### 微软发《2024 年 AI 基础设施状况报告》
 
-4 月 1 日，微软发布《2024年版人工智能基础设施状况报告》，该报告讨论了使用AI促进组织和个人进步、从 AI 探索到实施、承认构建和维护 AI 基础设施的挑战、利用合作伙伴加速 AI 创新等主题。调查显示，IT 专业人员处于 AI 采用和使用的最前沿，68% 的受访者已经在其专业工作中使用，66% 的受访者已将其融入到日常生活中。
+4 月 1 日，微软发布《2024 年 AI 基础设施状况报告》，该报告讨论了使用 AI 促进组织和个人进步、从 AI 探索到实施、承认构建和维护 AI 基础设施的挑战、利用合作伙伴加速 AI 创新等主题。调查显示，IT 专业人员处于 AI 采用和使用的最前沿，68% 的受访者已经在其专业工作中使用，66% 的受访者已将其融入到日常生活中。
 
-> 报告地址：https://clouddamcdnprodep.azureedge.net/gdc/gdcBkY6mR/original
+> 报告地址：`https://clouddamcdnprodep.azureedge.net/gdc/gdcBkY6mR/original`
 
-# **四、优质文章分享**
+# 四、优质文章分享
 
 【法律 AI 交流群】每天都会分享法律 AI、法律科技相关的前沿信息，以下为群友分享的优质文章：
 
-+   2024 年第十三期法律科技周报（3.24-3.31）
-
-+   AI 观察 | AGI 都要来了，你却还没用过 Copilot？
-
-+   [宾夕法尼亚法学院最新实践：用 AI ](https://mp.weixin.qq.com/s/-ezB3mzJlQEBbTorcxRHfg)解析案件目击者陈述的信心程度｜附开源地址
++ 2024 年第十三期法律科技周报（3.24-3.31）
++ AI 观察 | AGI 都要来了，你却还没用过 Copilot？
++ [宾夕法尼亚法学院最新实践：用 AI 解析案件目击者陈述的信心程度｜附开源地址](https://mp.weixin.qq.com/s/-ezB3mzJlQEBbTorcxRHfg)
 
 > 注：与本周重要资讯相关的文章已整合到以上特定资讯下方，不在此处再次列出。

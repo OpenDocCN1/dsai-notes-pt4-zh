@@ -1,3 +1,4 @@
+
 # 我想写一个小程序，解决你的选择困难症，没想到 Trae 帮我实现了
 
 > 来源：[https://agijuejin.feishu.cn/docx/D7SmdtzqHojytHxkOM1cCgfqnzc](https://agijuejin.feishu.cn/docx/D7SmdtzqHojytHxkOM1cCgfqnzc)
@@ -12,7 +13,7 @@
 
 > 如有侵权，请联系删除。
 
-[**本文所使用的 Trae**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接： www.trae.ai
+[本文所使用的 Trae](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接：`www.trae.ai`
 
 ## 一、背景
 
@@ -92,4 +93,4 @@
 
 ### [你也可以直接](https://link.juejin.cn/?target=http%3A%2F%2Fduorouningmeng.cn%2Fhtml%2Fidea_help%2F)点击右侧直接预览： 在线预览地址
 
-### [**本文所使用的 Trae**](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接： www.trae.ai
+### [本文所使用的 Trae](https://www.trae.ai/?utm_source=juejin&utm_medium=juejin_trae&utm_campaign=AGI_article) 免费下载链接： `www.trae.ai`

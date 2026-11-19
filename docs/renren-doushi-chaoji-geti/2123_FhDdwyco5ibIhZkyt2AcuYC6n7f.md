@@ -1,11 +1,10 @@
+
 # 2023-09-14产品经理大会心得 | AI时代下，产品经理似乎成为了一个“门外汉” – 人人都是产品经理
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/QOE5dlcuEof620x7XiwcVyRMnpe](https://xuqiwei1986.feishu.cn/docx/QOE5dlcuEof620x7XiwcVyRMnpe)
-
-> 🔗 原文链接： h[ttps://www.woshipm](https://www.woshipm.com/it/5903953.html).com/it/5903953....
-
 >
-
+> 🔗 原文链接： h[ttps://www.woshipm](https://www.woshipm.com/it/5903953.html).com/it/5903953....
+>
 > 互联网发展至今，产品经理岗位也在不断变化。面临时代的变革，AI的到来，也让产品经理有了新的认知和挑战。作者结合2023年北京产品经理大会内容，看产品经理现状，一起来看看吧。
 
 ![](img/ae6196856c221daf80a8155a95521152.png)

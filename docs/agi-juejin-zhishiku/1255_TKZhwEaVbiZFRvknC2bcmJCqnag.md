@@ -1,10 +1,11 @@
+
 # LLM模型在公司场景中的应用探索
 
 > 来源：[https://agijuejin.feishu.cn/docx/CKQZdIOVuou6W9xa6mNcDiOenKd](https://agijuejin.feishu.cn/docx/CKQZdIOVuou6W9xa6mNcDiOenKd)
-
+>
 > 作者：归来仍是少年
-
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/641734707)hihu.com/p/641734...
+>
+> 原文：[https://zhuanlan.zhihu.com/p/641734707](https://zhuanlan.zhihu.com/p/641734707)
 
 ## 一、前言
 
@@ -12,7 +13,7 @@
 
 ## 二、大模型应用场景
 
-1、样本标注
+### 1、样本标注
 
 以前的样本是人工进行大量标注，有多少人工就有多少智能，现在更加简单的标注方式就是利用大模型进行辅助标注，虽然chatgpt是通用领域的大模型，但是也是具有迁移学习和少样本学习的能力。
 
@@ -36,7 +37,7 @@ LLM：
 请注意，这些实体描述并不对应一个具体的商品，而是根据你的描述提取出的相关特征和属性。你可以使用这些关键词来搜索与你需求相匹配的商品。
 ```
 
-2、文案生成
+### 2、文案生成
 
 prompt：
 
@@ -47,7 +48,7 @@ prompt：
 LLM：
 
 ```
-漫步在云南的心[脏，感受着自](https://zhida.zhihu.com/search?q=%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E4%B9%8B%E9%97%A8&amp;zhida_source=entity&amp;is_preview=1)然[的魔力和](https://zhida.zhihu.com/search?q=%E6%B0%91%E6%97%8F%E9%A3%8E%E6%83%85&amp;zhida_source=entity&amp;is_preview=1)[历史的厚](https://zhida.zhihu.com/search?q=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1&amp;zhida_source=entity&amp;is_preview=1)重。丽江，这座魅力四溢的古城，以其壮丽的自然景观、悠久的历史和独特的民俗风情，吸引着[无数旅人](https://zhida.zhihu.com/search?q=%E6%B0%B4%E6%B3%A2%E8%8D%A1%E6%BC%BE&amp;zhida_source=entity&amp;is_preview=1)[的心弦。](https://zhida.zhihu.com/search?q=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E&amp;zhida_source=entity&amp;is_preview=1)在[这片神奇](https://zhida.zhihu.com/search?q=%E7%BA%B3%E8%A5%BF%E6%96%87%E5%8C%96&amp;zhida_source=entity&amp;is_preview=1)的土地上，时光仿佛凝固，历史与现代[在绚丽的](https://zhida.zhihu.com/search?q=%E9%85%B8%E8%BE%A3%E8%B1%86%E8%8A%B1&amp;zhida_source=entity&amp;is_preview=1)[舞台上](https://zhida.zhihu.com/search?q=%E8%8A%B1%E6%9E%9C%E8%8C%B6&amp;zhida_source=entity&amp;is_preview=1)[交相辉映](https://zhida.zhihu.com/search?q=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87&amp;zhida_source=entity&amp;is_preview=1)。
+漫步在云南的心[脏，感受着自](https://zhida.zhihu.com/search?q=%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E4%B9%8B%E9%97%A8&amp;zhida_source=entity&amp;is_preview=1)然[的魔力和](https://zhida.zhihu.com/search?q=%E6%B0%91%E6%97%8F%E9%A3%8E%E6%83%85&amp;zhida_source=entity&amp;is_preview=1)[历史的厚](https://zhuanlan.zhihu.com/p/641734707)重。丽江，这座魅力四溢的古城，以其壮丽的自然景观、悠久的历史和独特的民俗风情，吸引着[无数旅人](https://zhida.zhihu.com/search?q=%E6%B0%B4%E6%B3%A2%E8%8D%A1%E6%BC%BE&amp;zhida_source=entity&amp;is_preview=1)[的心弦。](https://zhida.zhihu.com/search?q=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E&amp;zhida_source=entity&amp;is_preview=1)在[这片神奇](https://zhida.zhihu.com/search?q=%E7%BA%B3%E8%A5%BF%E6%96%87%E5%8C%96&amp;zhida_source=entity&amp;is_preview=1)的土地上，时光仿佛凝固，历史与现代[在绚丽的](https://zhida.zhihu.com/search?q=%E9%85%B8%E8%BE%A3%E8%B1%86%E8%8A%B1&amp;zhida_source=entity&amp;is_preview=1)[舞台上](https://zhida.zhihu.com/search?q=%E8%8A%B1%E6%9E%9C%E8%8C%B6&amp;zhida_source=entity&amp;is_preview=1)[交相辉映](https://zhida.zhihu.com/search?q=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87&amp;zhida_source=entity&amp;is_preview=1)。
 
 步入丽江，犹如穿越时空之门。迎面而来的是古城的石板街，古老而静谧，仿佛向游人述说着千年的故事。曲径通幽，巷弄纵横，街头巷尾散发着浓郁的纳西民族风情。在这里，你可以穿梭于青石巷道之间，感受古老文化的熏陶，品味古城的静谧与深邃。
 
@@ -64,7 +65,7 @@ LLM：
 无论是文化、自然还是美食，丽江都以其独特的魅力吸引着世界各地的旅行者。来到这里，你将与历史对话，与自然共舞，感受到生活的美好与多彩。丽江，一座瑰丽明珠，等待着你的探索与发现。让我们踏上这段奇幻之旅，畅游云南的心脏，感受丽江的神奇与美丽。
 ```
 
-3、多语言翻译
+### 3、多语言翻译
 
 prompt：
 
@@ -78,13 +79,13 @@ LLM：
 대량의 독생자의 등장은 중국의 가족 구조뿐만 아니라 몇 가지 우려되는 사회 문제도 가져왔습니다.
 ```
 
-4、构建多轮对话聊天机器人
+### 4、构建多轮对话聊天机器人
 
-可以通过类似于langchain的方法，结合自己的场景数据来回答，可以通过embedding的方法将自己语料召回一些，然后构建prompt让模型选择一个最有关的进行推荐。
+可以通过类似于`langchain`的方法，结合自己的场景数据来回答，可以通过`embedding`的方法将自己语料召回一些，然后构建prompt让模型选择一个最有关的进行推荐。
 
 ![](img/5fbc03a66d32d41821cd95f95bf633e9.png)
 
-5、文本摘要提取
+### 5、文本摘要提取
 
 prompt：
 
@@ -101,8 +102,10 @@ LLM：
 25-59岁的就业主体人群失业率为4.1%，比上月下降0.1个百分点，连续3个月下降，显示就业基本盘总体稳定且改善。
 进城务工农民工失业率持续降低，5月份外来农业户籍劳动力失业率为4.9%，比上月下降0.2个百分点，连续3个月下降，农民工就业总体向好。
 当前就业总量压力和结构性问题仍不容忽视，特别是青年人就业压力较大。
-需要加大政策支持力度，将促进高校毕业生等青年就业放在更加突出的位置，形成全社会共同支持青年就业的强大合力。6、文章续写
+需要加大政策支持力度，将促进高校毕业生等青年就业放在更加突出的位置，形成全社会共同支持青年就业的强大合力。
 ```
+
+### 6、文章续写
 
 prompt：
 

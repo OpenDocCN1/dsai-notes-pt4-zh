@@ -1,10 +1,11 @@
+
 # AI官网设计源码
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/YTwAdGDhnoQzJrx9YJIc3RfPnEc](https://xmgtoagi.feishu.cn/docx/YTwAdGDhnoQzJrx9YJIc3RfPnEc)
 
-# 一、原版
+## 一、原版
 
-大家好，我是小码哥，喜欢折腾AI的人，访问过xmgai.cn的网站都知道，首页还是比较low的，今天准备重新设计一下，在UI方面，我是不太擅长的，所以这次，还是借助AI来帮我完成官网首页的开发。先来看看我原来的官网，比较low，更多是图片效果的展示。
+大家好，我是小码哥，喜欢折腾AI的人，访问过`xmgai.cn`的网站都知道，首页还是比较low的，今天准备重新设计一下，在UI方面，我是不太擅长的，所以这次，还是借助AI来帮我完成官网首页的开发。先来看看我原来的官网，比较low，更多是图片效果的展示。
 
 ![](img/40b241794435a8d65bdb71117093e8db.png)
 
@@ -20,167 +21,165 @@
 
 ![](img/98d5307056b2082bfd685772341f6c68.png)
 
-## 1、通过媒体自适应移动端
-
-
-
-
+### 1、通过媒体自适应移动端
 
 ![](img/c510da73a400639a87dff6552c739fb0.png)
 
-## 2、源码
+### 2、源码
 
-  { src: &quot;http://aipic.xmgai.cn/faceswap/11.png&quot;, description: &quot;原图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/22.jpg&quot;, description: &quot;目标图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/33.jpg&quot;, description: &quot;成果&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/1.jpg&quot;, description: &quot;原图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/2.jpg&quot;, description: &quot;目标图&quot; },
-  { src: &quot;http://aipic.xmgai.cn/faceswap/3.jpg&quot;, description: &quot;成果&quot; }
-  { previewImg: &quot;http://aipic.xmgai.cn/model/5.png&quot;, name: &quot;国风写实&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/23.png&quot;, name: &quot;迷雾城堡&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/67.png&quot;, name: &quot;薰衣草&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/2.png&quot;, name: &quot;墨莲&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/97.png&quot;, name: &quot;桃花&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/53.png&quot;, name: &quot;怦然心动&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/6.png&quot;, name: &quot;花嫁&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/model/4.png&quot;, name: &quot;蝴蝶仙子&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/1-1.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/1-2.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/2-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/2-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-1.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-2.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-3.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/3-4.PNG&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-3.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/headpic/5-4.png&quot;, name: &quot;点击图片制作&quot; },
+```javascript
+{ src: "http://aipic.xmgai.cn/faceswap/11.png", description: "原图" },
+{ src: "http://aipic.xmgai.cn/faceswap/22.jpg", description: "目标图" },
+{ src: "http://aipic.xmgai.cn/faceswap/33.jpg", description: "成果" },
+{ src: "http://aipic.xmgai.cn/faceswap/1.jpg", description: "原图" },
+{ src: "http://aipic.xmgai.cn/faceswap/2.jpg", description: "目标图" },
+{ src: "http://aipic.xmgai.cn/faceswap/3.jpg", description: "成果" },
+{ previewImg: "http://aipic.xmgai.cn/model/5.png", name: "国风写实" },
+{ previewImg: "http://aipic.xmgai.cn/model/23.png", name: "迷雾城堡" },
+{ previewImg: "http://aipic.xmgai.cn/model/67.png", name: "薰衣草" },
+{ previewImg: "http://aipic.xmgai.cn/model/2.png", name: "墨莲" },
+{ previewImg: "http://aipic.xmgai.cn/model/97.png", name: "桃花" },
+{ previewImg: "http://aipic.xmgai.cn/model/53.png", name: "怦然心动" },
+{ previewImg: "http://aipic.xmgai.cn/model/6.png", name: "花嫁" },
+{ previewImg: "http://aipic.xmgai.cn/model/4.png", name: "蝴蝶仙子" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/1-1.PNG", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/1-2.PNG", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/2-1.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/2-2.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/3-1.PNG", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/3-2.PNG", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/3-3.PNG", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/3-4.PNG", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/5-1.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/5-2.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/5-3.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/headpic/5-4.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/1-1.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/1-2.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/1-3.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/1-4.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/2-1.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/2-2.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/2-3.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/aipic/2-4.png", name: "点击图片制作" },
+{ previewImg: "http://aipic.xmgai.cn/page/1.png", name: "AI绘画" },
+{ previewImg: "http://aipic.xmgai.cn/page/2.png", name: "AI头像制作" },
+{ previewImg: "http://aipic.xmgai.cn/page/3.png", name: "AI图生文" },
+{ previewImg: "http://aipic.xmgai.cn/page/4.png", name: "AI换脸" },
+{ previewImg: "http://aipic.xmgai.cn/page/5.png", name: "AI专属二维码" },
+```
 
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-3.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/1-4.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-1.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-2.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-3.png&quot;, name: &quot;点击图片制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/aipic/2-4.png&quot;, name: &quot;点击图片制作&quot; },
 
-  { previewImg: &quot;http://aipic.xmgai.cn/page/1.png&quot;, name: &quot;AI绘画&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/2.png&quot;, name: &quot;AI头像制作&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/3.png&quot;, name: &quot;AI图生文&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/4.png&quot;, name: &quot;AI换脸&quot; },
-  { previewImg: &quot;http://aipic.xmgai.cn/page/5.png&quot;, name: &quot;AI专属二维码&quot; },
 
 ```
-&lt;template&gt;
-  &lt;div class=&quot;container&quot;&gt;
+<template>
+  <div class="container">
 
-    &lt;el-row&gt;
-      &lt;el-col :span=&quot;24&quot; class=&quot;oneTitle&quot;&gt;
-        &lt;span&gt;小码哥AI&lt;/span&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
-    &lt;el-row :gutter=&quot;10&quot; class=&quot;image-row&quot;&gt;
-      &lt;el-col :span=&quot;12&quot; class=&quot;pc-col&quot; v-for=&quot;(item, index) in pageList&quot; :key=&quot;index&quot;&gt;
-        &lt;div class=&quot;imageCla&quot;&gt;
-          &lt;el-image
-            class=&quot;dialog-image&quot;
-            :src=&quot;item.previewImg&quot;
-            fit=&quot;cover&quot;
-            @click=&quot;handleHome(item)&quot;
-          /&gt;
-          &lt;div class=&quot;image-description&quot;&gt;{{ item.name }}&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
+    <el-row>
+      <el-col :span="24" class="oneTitle">
+        <span>小码哥AI</span>
+      </el-col>
+    </el-row>
+    <el-row :gutter="10" class="image-row">
+      <el-col :span="12" class="pc-col" v-for="(item, index) in pageList" :key="index">
+        <div class="imageCla">
+          <el-image
+            class="dialog-image"
+            :src="item.previewImg"
+            fit="cover"
+            @click="handleHome(item)"
+          />
+          <div class="image-description">{{ item.name }}</div>
+        </div>
+      </el-col>
+    </el-row>
 
-    &lt;el-row&gt;
-      &lt;el-col :span=&quot;24&quot; class=&quot;oneTitle&quot;&gt;
-        &lt;span&gt;AI头像（登录制作）&lt;/span&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
-    &lt;el-row :gutter=&quot;10&quot; class=&quot;image-row&quot;&gt;
-      &lt;el-col :span=&quot;6&quot; class=&quot;pc-col&quot; v-for=&quot;(item, index) in headPicList&quot; :key=&quot;index&quot;&gt;
-        &lt;div class=&quot;imageCla&quot;&gt;
-          &lt;el-image
-            class=&quot;dialog-image&quot;
-            :src=&quot;item.previewImg&quot;
-            fit=&quot;cover&quot;
-            @click=&quot;handleHome(item)&quot;
-          /&gt;
-          &lt;div class=&quot;image-description&quot;&gt;{{ item.name }}&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
+    <el-row>
+      <el-col :span="24" class="oneTitle">
+        <span>AI头像（登录制作）</span>
+      </el-col>
+    </el-row>
+    <el-row :gutter="10" class="image-row">
+      <el-col :span="6" class="pc-col" v-for="(item, index) in headPicList" :key="index">
+        <div class="imageCla">
+          <el-image
+            class="dialog-image"
+            :src="item.previewImg"
+            fit="cover"
+            @click="handleHome(item)"
+          />
+          <div class="image-description">{{ item.name }}</div>
+        </div>
+      </el-col>
+    </el-row>
 
-    &lt;el-row&gt;
-      &lt;el-col :span=&quot;24&quot; class=&quot;oneTitle&quot;&gt;
-        &lt;span&gt;AI绘画（登录制作）&lt;/span&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
-    &lt;el-row :gutter=&quot;10&quot; class=&quot;image-row&quot;&gt;
-      &lt;el-col :span=&quot;6&quot; class=&quot;pc-col&quot; v-for=&quot;(item, index) in aiPicList&quot; :key=&quot;index&quot;&gt;
-        &lt;div class=&quot;imageCla&quot;&gt;
-          &lt;el-image
-            class=&quot;dialog-image&quot;
-            :src=&quot;item.previewImg&quot;
-            fit=&quot;cover&quot;
-            @click=&quot;handleHome(item)&quot;
-          /&gt;
-          &lt;div class=&quot;image-description&quot;&gt;{{ item.name }}&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
+    <el-row>
+      <el-col :span="24" class="oneTitle">
+        <span>AI绘画（登录制作）</span>
+      </el-col>
+    </el-row>
+    <el-row :gutter="10" class="image-row">
+      <el-col :span="6" class="pc-col" v-for="(item, index) in aiPicList" :key="index">
+        <div class="imageCla">
+          <el-image
+            class="dialog-image"
+            :src="item.previewImg"
+            fit="cover"
+            @click="handleHome(item)"
+          />
+          <div class="image-description">{{ item.name }}</div>
+        </div>
+      </el-col>
+    </el-row>
 
-    &lt;el-row&gt;
-      &lt;el-col :span=&quot;24&quot; class=&quot;oneTitle&quot;&gt;
-        &lt;span&gt;独一无二的艺术二维码（40多种模板）&lt;/span&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
-    &lt;el-row :gutter=&quot;10&quot; class=&quot;image-row&quot;&gt;
-      &lt;el-col :span=&quot;6&quot; class=&quot;pc-col&quot; v-for=&quot;(item, index) in claasifyList&quot; :key=&quot;index&quot;&gt;
-        &lt;div class=&quot;imageCla&quot;&gt;
-          &lt;el-image
-            class=&quot;dialog-image&quot;
-            :src=&quot;item.previewImg&quot;
-            fit=&quot;cover&quot;
-            @click=&quot;handleHome(item)&quot;
-          /&gt;
-          &lt;div class=&quot;image-description&quot;&gt;{{ item.name }}&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
+    <el-row>
+      <el-col :span="24" class="oneTitle">
+        <span>独一无二的艺术二维码（40多种模板）</span>
+      </el-col>
+    </el-row>
+    <el-row :gutter="10" class="image-row">
+      <el-col :span="6" class="pc-col" v-for="(item, index) in claasifyList" :key="index">
+        <div class="imageCla">
+          <el-image
+            class="dialog-image"
+            :src="item.previewImg"
+            fit="cover"
+            @click="handleHome(item)"
+          />
+          <div class="image-description">{{ item.name }}</div>
+        </div>
+      </el-col>
+    </el-row>
     
-    &lt;el-row&gt;
-      &lt;el-col :span=&quot;24&quot; class=&quot;oneTitle&quot;&gt;
-        &lt;span&gt;AI换脸&lt;/span&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
-    &lt;el-row :gutter=&quot;10&quot; class=&quot;image-row&quot;&gt;
-      &lt;el-col :span=&quot;8&quot; v-for=&quot;(item, index) in faceImages&quot; :key=&quot;index&quot;&gt;
-        &lt;div class=&quot;imageCla&quot;&gt;
-          &lt;el-image
-            class=&quot;faceimage&quot;
-            :src=&quot;item.src&quot;
-            fit=&quot;cover&quot;
-            @click=&quot;handleHome(item)&quot;
-          /&gt;
-          &lt;div class=&quot;image-description&quot;&gt;{{ item.description }}&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/el-col&gt;
-    &lt;/el-row&gt;
+    <el-row>
+      <el-col :span="24" class="oneTitle">
+        <span>AI换脸</span>
+      </el-col>
+    </el-row>
+    <el-row :gutter="10" class="image-row">
+      <el-col :span="8" v-for="(item, index) in faceImages" :key="index">
+        <div class="imageCla">
+          <el-image
+            class="faceimage"
+            :src="item.src"
+            fit="cover"
+            @click="handleHome(item)"
+          />
+          <div class="image-description">{{ item.description }}</div>
+        </div>
+      </el-col>
+    </el-row>
 
-  &lt;/div&gt;
-&lt;/template&gt;
+  </div>
+</template>
 
-&lt;script lang=&quot;ts&quot; setup&gt;
-import { ref } from &quot;vue&quot;;
+<script lang="ts" setup>
+import { ref } from "vue";;
 const router = useRouter(); // 路由对象
 
-const handleHome = () =&gt; {
+const handleHome = () => {
   router.push({
-    path: &#x27;/login&#x27;,
+    path: '/login',
   });
 };
 
@@ -198,9 +197,9 @@ const aiPicList = ref([
 
 const pageList = ref([
 ]);
-&lt;/script&gt;
+</script>
 
-&lt;style scoped&gt;
+<style scoped>
 .container {
   width: 100%;
   margin: 0 auto;
@@ -320,14 +319,14 @@ const pageList = ref([
     max-width: 50%;
   }
 }
-&lt;/style&gt;
+</style>
 ```
 
 # 二、升级版
 
 ## 1、提示词
 
-工具使用的deepseek，网址：https://chat.deepseek.com/
+工具使用的deepseek，网址：`https://chat.deepseek.com/`
 
 ![](img/8840f2d8ca9439f0774ea7c02fa5e135.png)
 
@@ -337,10 +336,11 @@ const pageList = ref([
 
 移动端
 
-
 ![](img/b62f0c7f0686c16d5b903635e9a5e336.png)
 
 代码如下：
+
+
 
 ```
 &lt;template&gt;
@@ -548,11 +548,11 @@ onUnmounted(() =&gt; {
     cursor: pointer;
     transition: all 0.3s;
 
-    &amp;:hover {
+    &:hover {
       opacity: 0.8;
     }
 
-    &amp;.active {
+    &.active {
       .timeline-dot {
         background: #409EFF;
         box-shadow: 0 0 10px #409EFF;
@@ -607,7 +607,7 @@ onUnmounted(() =&gt; {
         cursor: pointer;
         transition: all 0.3s;
 
-        &amp;:hover {
+        &:hover {
           transform: scale(1.05);
           box-shadow: 0 0 20px rgba(64, 158, 255, 0.5);
         }

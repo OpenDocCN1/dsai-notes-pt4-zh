@@ -1,19 +1,17 @@
-#
 
 > 来源：[https://aicarrier.feishu.cn/docx/BCizdzIdyoYvWwxeGMocVQ2znmb](https://aicarrier.feishu.cn/docx/BCizdzIdyoYvWwxeGMocVQ2znmb)
 
 ## xtuner
 
-参考文档：https://xtuner.readthedocs.io/zh-cn/latest/get_started/grpo.html
+参考文档：`https://xtuner.readthedocs.io/zh-cn/latest/get_started/grpo.html`
 
 ```
-
 conda create -n xtuner_rl python=3.10 -y
 conda activate xtuner_rl
 
 git clone https://gh.llkk.cc/https://github.com/InternLM/xtuner.git
 cd xtuner
-pip install -e &#x27;.[rl]&#x27;
+pip install -e '.[rl]'
 
 pip install cyclopts
 
@@ -21,23 +19,17 @@ pip install cyclopts
 pip install lmdeploy
 
 #flash attention
-
-
 ```
 
 ```
-XTUNER_USE_LMDEPLOY=1 python xtuner/v1/train/cli/grpo.py --model-path   /root/share/new_models/qwen3/Qwen3-8B      --data-path /root/share/datasets/gsm8k/train.jsonl
+XTUNER_USE_LMDEPLOY=1 python xtuner/v1/train/cli/grpo.py --model-path /root/share/new_models/qwen3/Qwen3-8B --data-path /root/share/datasets/gsm8k/train.jsonl
 ```
 
 ```
 ssh -CNg -L 18265:127.0.0.1:8265 root@ssh.intern-ai.org.cn -p 49674
-
 ```
 
-```
-http://localhost:18265
-
-```
+`http://localhost:18265`
 
 ![](img/ca77115ae1087d731d01c826f2a90df1.png)
 
@@ -47,9 +39,8 @@ http://localhost:18265
 
 类似报错：
 
-https://github.com/sgl-project/sglang/issues/5999
-
-https://github.com/unslothai/unsloth/issues/872
+- `https://github.com/sgl-project/sglang/issues/5999`
+- `https://github.com/unslothai/unsloth/issues/872`
 
 ```
 CUDA_VISIBLE_DEVICES=0 WANDB_API_KEY=fea9cf136f5002ee3f17df55be344dc3f1f3c36d NPROC_PER_NODE=1 swift rlhf \
@@ -60,7 +51,7 @@ CUDA_VISIBLE_DEVICES=0 WANDB_API_KEY=fea9cf136f5002ee3f17df55be344dc3f1f3c36d NP
     --use_vllm true \
     --vllm_mode colocate \
     --train_type full \
-    --dataset &#x27;zouxuhong/Countdown-Tasks-3to4#50000&#x27; \
+    --dataset 'zouxuhong/Countdown-Tasks-3to4#50000' \
     --max_length 2048 \
     --max_completion_length 1024 \
     --num_train_epochs 1 \
@@ -78,7 +69,7 @@ CUDA_VISIBLE_DEVICES=0 WANDB_API_KEY=fea9cf136f5002ee3f17df55be344dc3f1f3c36d NP
     --dataloader_num_workers 4 \
     --num_generations 8 \
     --temperature 1.0 \
-    --system &#x27;You are a helpful assistant. You first thinks about the reasoning process in the mind and then provides the user with the answer.&#x27; \
+    --system 'You are a helpful assistant. You first thinks about the reasoning process in the mind and then provides the user with the answer.' \
     --log_completions true \
     --report_to wandb \
     --beta 0.001 \

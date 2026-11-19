@@ -1,8 +1,9 @@
+
 # 五、prompt提示词
 
 > 来源：[https://docs.feishu.cn/docx/J6lGdHlCfoS30gxdb66ceswnnne](https://docs.feishu.cn/docx/J6lGdHlCfoS30gxdb66ceswnnne)
 
-> 《🧠 Awesome ChatGPT Prompts》（网上很多各种身份的 prom[pt](https://github.com/f/awesome-chatgpt-prompts) 集合，都是从这个项目翻译出来的）GitHub - f/awesome-chatgpt-prompts: This repo includes ChatGPT prompt curation to use ChatGPT better
+> 《🧠 Awesome ChatGPT Prompts》（网上很多各种身份的 prom[pt](https://github.com/f/awesome-chatgpt-prompts) 集合，都是从这个项目翻译出来的）GitHub - `f/awesome-chatgpt-prompts`: This repo includes ChatGPT prompt curation to use ChatGPT better
 
 > 《让生产力加倍的 ChatGPT 快捷指令》
 

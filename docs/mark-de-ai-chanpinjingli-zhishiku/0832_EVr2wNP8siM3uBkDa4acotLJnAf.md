@@ -1,47 +1,47 @@
+
 # 词性标注
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/DWgVdeGKboL4mjxNjhOcQxl4nJc](https://qqs7y1hozd1.feishu.cn/docx/DWgVdeGKboL4mjxNjhOcQxl4nJc)
 
-## **1.概述**
+## 1. 概述
 
-词**性标注在自然语言处理中也**属于基础性的模块，为句法分析、信息抽取等工作打下基础。和分词一样，中文词性标注也存在着很多难点，比如一词多词性，未登录词处理等诸多问题。通过基于字符串匹配的字典查询算法和基于统计的词性标注算法，可以很好的解决这些问题。一般需要先将语句进行分词，然后再进行词性标注。
+词性标注在自然语言处理中也属于基础性的模块，为句法分析、信息抽取等工作打下基础。和分词一样，中文词性标注也存在着很多难点，比如一词多词性，未登录词处理等诸多问题。通过基于字符串匹配的字典查询算法和基于统计的词性标注算法，可以很好的解决这些问题。一般需要先将语句进行分词，然后再进行词性标注。
 
-## **2.词性标注难点**
+## 2. 词性标注难点
 
 词性标注中的难点主要有
 
-1.  **相对于英文，中文缺少词形**态变化，不能从词的形态来识别词性
+1. 相对于英文，中文缺少词形态变化，不能从词的形态来识别词性
 
-1.  **一词多词性很常见**。统计发现，一词多词性的概率高达22.5%。而且越常用的词，多词性现象越严重。比如“研究”既可以是名词（“基础性研究”），也可以是动词（“研究计算机科学”）。
+1. 一词多词性很常见。统计发现，一词多词性的概率高达22.5%。而且越常用的词，多词性现象越严重。比如“研究”既可以是名词（“基础性研究”），也可以是动词（“研究计算机科学”）。
 
-1.  **词性划分标准不统一**。词类划分粒度和标记符号等，目前还没有一个广泛认可的统一的标准。比如LDC标注语料中，将汉语一级词性划分为33类，而北京大学语料库则将其划分为26类。词类划分标准和标记符号的不统一，以及分词规范的含糊，都给词性标注带来了很大的困难。jieba分词采用了使用较为广泛的ICTCLAS 汉语词性标注集规范。
+1. 词性划分标准不统一。词类划分粒度和标记符号等，目前还没有一个广泛认可的统一的标准。比如LDC标注语料中，将汉语一级词性划分为33类，而北京大学语料库则将其划分为26类。词类划分标准和标记符号的不统一，以及分词规范的含糊，都给词性标注带来了很大的困难。`jieba`分词采用了使用较为广泛的`ICTCLAS` 汉语词性标注集规范。
 
-1.  **未登录词问题**。和分词一样，未登录词的词性也是一个比较大的课题。未登录词不能通过查找字典的方式获取词性，可以采用HMM隐马尔科夫模型等基于统计的算法。
+1. 未登录词问题。和分词一样，未登录词的词性也是一个比较大的课题。未登录词不能通过查找字典的方式获取词性，可以采用`HMM`隐马尔科夫模型等基于统计的算法。
 
-## **3.词性标注算法**
+## 3. 词性标注算法
 
-**和分词一样，词性标注算法也分**为**两大类，基于字**符串匹配的字典查找算法和基于统计的算法。jieba分词就综合了两种算法，对于分词后识别出来的词语，直接从字典中查找其词性。而对于未登录词，则采用HMM隐马尔科夫模型和viterbi算法来识别。
+和分词一样，词性标注算法也分为两大类，基于字符串匹配的字典查找算法和基于统计的算法。`jieba`分词就综合了两种算法，对于分词后识别出来的词语，直接从字典中查找其词性。而对于未登录词，则采用`HMM`隐马尔科夫模型和`viterbi`算法来识别。
 
 ### 3.1 基于字符串匹配的字典查找算法
 
-先对语句进行分词，然后从字典中查找每个词语的词性，对其进行标注即可。jieba词性标注中，对于识别出来的词语，就是采用了这种方法。这种方法比较简单，通俗易懂，但是不能解决一词多词性的问题，因此存在一定的误差。
+先对语句进行分词，然后从字典中查找每个词语的词性，对其进行标注即可。`jieba`词性标注中，对于识别出来的词语，就是采用了这种方法。这种方法比较简单，通俗易懂，但是不能解决一词多词性的问题，因此存在一定的误差。
 
-下图即为jieba分词中的词典的一部分词语。每一行对应一个词语，分为三部分，分别为词语名 词数 词性。因此分词完成后只需要在字典中查找该词语的词性即可对其完成标注。
+下图即为`jieba`分词中的词典的一部分词语。每一行对应一个词语，分为三部分，分别为词语名 词数 词性。因此分词完成后只需要在字典中查找该词语的词性即可对其完成标注。
 
-### **3.2 基于统计的词性标注算法**
+### 3.2 基于统计的词性标注算法
 
-和分词一样，也可以通过HMM隐马尔科夫模型来进行词性标注。观测序列即为分词后的语句，隐藏序列即为经过标注后的词性标注序列。起始概率 发射概率和转移概率和分词中的含义大同小异，可以通过大规模语料统计得到。观测序列到隐藏序列的计算可以通过viterbi算法，利用统计得到的起始概率 发射概率和转移概率来得到。得到隐藏序列后，就完成了词性标注过程。
+和分词一样，也可以通过`HMM`隐马尔科夫模型来进行词性标注。观测序列即为分词后的语句，隐藏序列即为经过标注后的词性标注序列。起始概率 发射概率和转移概率和分词中的含义大同小异，可以通过大规模语料统计得到。观测序列到隐藏序列的计算可以通过`viterbi`算法，利用统计得到的起始概率 发射概率和转移概率来得到。得到隐藏序列后，就完成了词性标注过程。
 
-## **4.jieba词性标注原理**
+## 4. jieba词性标注原理
 
-jieba在分词的同时，可以进行词性标注。利用jieba.posseg模块来进行词性标注，会给出分词后每个词的词性。词性标示兼容ICTCLAS 汉语词性标注集，可查阅网站
+`jieba`在分词的同时，可以进行词性标注。利用`jieba.posseg`模块来进行词性标注，会给出分词后每个词的词性。词性标示兼容`ICTCLAS` 汉语词性标注集，可查阅网站
 
 ```
 import jieba.posseg as pseg
-words = pseg.cut(&quot;我爱北京天安门&quot;)
+words = pseg.cut("我爱北京天安门")
 for word, flag in words:
-...    print(&#x27;%s %s&#x27; % (word, flag))
-...
+    print('%s %s' % (word, flag))
 我 r        # 代词
 爱 v        # 动词
 北京 ns        # 名词
@@ -49,17 +49,17 @@ for word, flag in words:
 
 ```
 
-下面来对pseg.cut()进行详细的分析，其主要流程为
+下面来对`pseg.cut()`进行详细的分析，其主要流程为
 
 1.  **准备工作**：check字典是否初始化好，如果没有则先初始化字典。将语句转为UTF-8或者GBK。根据正则匹配，将输入文本分隔成一个个语句。
 
-1.  遍历语句list，对每个语句进行单独分词和词性标注。
+1.  遍历语句`list`，对每个语句进行单独分词和词性标注。
 
-1.  对于未登录词，使用HMM隐马尔科夫模型处理。
+1.  对于未登录词，使用`HMM`隐马尔科夫模型处理。
 
-### **4.1 准备工作**
+### 4.1 准备工作
 
-准备工作中做的事情和jieba分词基本一致，check字典是否初始化好，如果没有则先初始化字典。将语句转为UTF-8或者GBK。根据正则匹配，将输入文本分隔成一个个语句。代码如下。
+准备工作中做的事情和`jieba`分词基本一致，check字典是否初始化好，如果没有则先初始化字典。将语句转为UTF-8或者GBK。根据正则匹配，将输入文本分隔成一个个语句。代码如下。
 
 ```
 def __cut_internal(self, sentence, HMM=True):
@@ -88,31 +88,31 @@ def __cut_internal(self, sentence, HMM=True):
                 tmp = re_skip_internal.split(blk)
                 for x in tmp:
                     if re_skip_internal.match(x):
-                        yield pair(x, &#x27;x&#x27;)
+                        yield pair(x, 'x')
                     else:
                         for xx in x:
                             if re_num.match(xx):
-                                yield pair(xx, &#x27;m&#x27;)
+                                yield pair(xx, 'm')
                             elif re_eng.match(x):
-                                yield pair(xx, &#x27;eng&#x27;)
+                                yield pair(xx, 'eng')
                             else:
-                                yield pair(xx, &#x27;x&#x27;)
+                                yield pair(xx, 'x')
 
 ```
 
 ### 4.2 遍历语句，进行分词和词性标注
 
-步骤和jieba分词基本一致，主体步骤如下，详细的每个步骤见
+步骤和`jieba`分词基本一致，主体步骤如下，详细的每个步骤见
 
-1.  得到语句的有向无环图DAG
+1. 得到语句的有向无环图DAG
 
-1.  动态规划构建Route，计算从语句末尾到语句起始，DAG中每个节点到语句结束位置的最大路径概率，以及概率最大时节点对应词语的结束位置
+1. 动态规划构建`Route`，计算从语句末尾到语句起始，DAG中每个节点到语句结束位置的最大路径概率，以及概率最大时节点对应词语的结束位置
 
-1.  遍历每个节点的Route，组装词语组合。
+1. 遍历每个节点的`Route`，组装词语组合。
 
-1.  如果词语不在字典中，也就是新词，使用HMM隐马尔科夫模型进行分割
+1. 如果词语不在字典中，也就是新词，使用`HMM`隐马尔科夫模型进行分割
 
-1.  通过yield将词语逐个返回。
+1. 通过`yield`将词语逐个返回。
 
 ```
 def __cut_DAG(self, sentence):
@@ -125,9 +125,9 @@ def __cut_DAG(self, sentence):
 
         # 遍历每个节点的Route，组装词语组合。
         x = 0
-        buf = &#x27;&#x27;
+        buf = ''
         N = len(sentence)
-        while x &amp;lt; N:
+        while x < N:
             # y表示词语的结束位置，x为词语的起始位置
             y = route[x][1] + 1
             # 从起始位置x到结束位置y，取出一个词语
@@ -140,7 +140,7 @@ def __cut_DAG(self, sentence):
                 if buf:
                     if len(buf) == 1:
                         # 单字直接从字典中取出其词性。使用pair将分词和词性一起输出。
-                        yield pair(buf, self.word_tag_tab.get(buf, &#x27;x&#x27;))
+                        yield pair(buf, self.word_tag_tab.get(buf, 'x'))
                     elif not self.tokenizer.FREQ.get(buf):
                         # 词语不在字典中，也就是新词，使用HMM隐马尔科夫模型进行分割
                         recognized = self.__cut_detail(buf)
@@ -149,9 +149,9 @@ def __cut_DAG(self, sentence):
                     else:
                         # 词语在字典中，直接查找字典并取出词性。
                         for elem in buf:
-                            yield pair(elem, self.word_tag_tab.get(elem, &#x27;x&#x27;))
-                    buf = &#x27;&#x27;
-                yield pair(l_word, self.word_tag_tab.get(l_word, &#x27;x&#x27;))
+                            yield pair(elem, self.word_tag_tab.get(elem, 'x'))
+                    buf = ''
+                yield pair(l_word, self.word_tag_tab.get(l_word, 'x'))
 
             # 该节点取词完毕，跳到下一个词语的开始位置
             x = y
@@ -159,19 +159,19 @@ def __cut_DAG(self, sentence):
         # 通过yield，逐词返回上一步切分好的词语
         if buf:
             if len(buf) == 1:
-                yield pair(buf, self.word_tag_tab.get(buf, &#x27;x&#x27;))
+                yield pair(buf, self.word_tag_tab.get(buf, 'x'))
             elif not self.tokenizer.FREQ.get(buf):
                 recognized = self.__cut_detail(buf)
                 for t in recognized:
                     yield t
             else:
                 for elem in buf:
-                    yield pair(elem, self.word_tag_tab.get(elem, &#x27;x&#x27;))
+                    yield pair(elem, self.word_tag_tab.get(elem, 'x'))
 
 
 ```
 
-其中word_tag_tab在初始化加载词典阶段构建得到，它使用词语为key，对应词性为value。代码如下
+其中`word_tag_tab`在初始化加载词典阶段构建得到，它使用词语为key，对应词性为value。代码如下
 
 ```
 def load_word_tag(self, f):
@@ -182,23 +182,23 @@ def load_word_tag(self, f):
         for lineno, line in enumerate(f, 1):
             try:
                 # 去除首尾空格符
-                line = line.strip().decode(&quot;utf-8&quot;)
+                line = line.strip().decode("utf-8")
                 if not line:
                     continue
                 # 利用空格将一行分隔为词语 词数 词性三部分
-                word, _, tag = line.split(&quot; &quot;)
+                word, _, tag = line.split(" ")
                 # 使用词语为key，词性为value，构造Dict
                 self.word_tag_tab[word] = tag
             except Exception:
                 raise ValueError(
-                    &#x27;invalid POS dictionary entry in %s at Line %s: %s&#x27; % (f_name, lineno, line))
+                    'invalid POS dictionary entry in %s at Line %s: %s' % (f_name, lineno, line))
         f.close()
 
 ```
 
 ### 4.3 未登录词，HMM隐马尔科夫模型处理
 
-和分词一样，词性标注中，也使用HMM隐马尔科夫模型来处理未登录词。通过大规模语料统计，得到起始概率 发射概率和转移概率。分别对应prob_start.py prob_emit.py和prob_trans.py三个文件，他们给出了词语在BEMS四种情况下，每种词性对应的概率。然后使用viterbi算法，利用得到的三个概率，将观测序列（分词后的语句）转化得到隐藏序列（词性标注序列）。这样就完成了未登录词的词性标注。代码如下。
+和分词一样，词性标注中，也使用`HMM`隐马尔科夫模型来处理未登录词。通过大规模语料统计，得到起始概率 发射概率和转移概率。分别对应`prob_start.py` `prob_emit.py`和`prob_trans.py`三个文件，他们给出了词语在BEMS四种情况下，每种词性对应的概率。然后使用`viterbi`算法，利用得到的三个概率，将观测序列（分词后的语句）转化得到隐藏序列（词性标注序列）。这样就完成了未登录词的词性标注。代码如下。
 
 ```
 # 通过HMM隐马尔科夫模型获取词性标注序列，解决未登录的问题
@@ -213,39 +213,43 @@ def __cut(self, sentence):
         # 遍历语句的每个汉字，如果是E或者S时，也就是词语结束或者单字词语，则分隔得到词语和词性pair
         for i, char in enumerate(sentence):
             pos = pos_list[i][0]
-            if pos == &#x27;B&#x27;:
+            if pos == 'B':
                 # B表示词语的开始
                 begin = i
-            elif pos == &#x27;E&#x27;:
+            elif pos == 'E':
                 # E表示词语的结束，此时输出词语和他的词性
                 yield pair(sentence[begin:i + 1], pos_list[i][1])
                 nexti = i + 1
-            elif pos == &#x27;S&#x27;:
+            elif pos == 'S':
                 # S表示单字词语，此时也输出词语和他的词性
                 yield pair(char, pos_list[i][1])
                 nexti = i + 1
 
         # 一般不会走到这儿，以防万一。对剩余的所有汉字一起输出一个词语和词性。
-        if nexti &amp;lt; len(sentence):
+        if nexti < len(sentence):
             yield pair(sentence[nexti:], pos_list[nexti][1])
 
 ```
 
-观测序列到隐藏序列的计算，则通过viterbi算法实现。代码如下
+观测序列到隐藏序列的计算，则通过`viterbi`算法实现。代码如下
 
-```
-# 通过viterbi算法，由观测序列，也就是语句，来得到隐藏序列，也就是BEMS标注序列和词性标注序列
-# obs为语句，states为&quot;BEMS&quot;四种状态，
-# start_p为起始概率, trans_p为转移概率, emit_p为发射概率，三者通过语料训练得到
+
+
+# 通过 viterbi 算法，由观测序列，也就是语句，来得到隐藏序列，也就是 BEMS 标注序列和词性标注序列
+
+`obs` 为语句，`states` 为 `"BEMS"` 四种状态，
+`start_p` 为起始概率，`trans_p` 为转移概率，`emit_p` 为发射概率，三者通过语料训练得到
+
+```python
 def viterbi(obs, states, start_p, trans_p, emit_p):
     V = [{}]  # 每个汉字的每个BEMS状态的最大概率。
     mem_path = [{}]   # 分词路径
 
-    # 初始化每个state，states为&quot;BEMS&quot;
+    # 初始化每个state，states为"BEMS"
     all_states = trans_p.keys()
     for y in states.get(obs[0], all_states):  # init
         V[0][y] = start_p[y] + emit_p[y].get(obs[0], MIN_FLOAT)
-        mem_path[0][y] = &#x27;&#x27;
+        mem_path[0][y] = ''
 
     # 逐字进行处理
     for t in xrange(1, len(obs)):
@@ -253,12 +257,12 @@ def viterbi(obs, states, start_p, trans_p, emit_p):
         mem_path.append({})
         #prev_states = get_top_states(V[t-1])
         prev_states = [
-            x for x in mem_path[t - 1].keys() if len(trans_p[x]) &amp;gt; 0]
+            x for x in mem_path[t - 1].keys() if len(trans_p[x]) > 0]
 
         prev_states_expect_next = set(
             (y for x in prev_states for y in trans_p[x].keys()))
         obs_states = set(
-            states.get(obs[t], all_states)) &amp;amp; prev_states_expect_next
+            states.get(obs[t], all_states)) & prev_states_expect_next
 
         if not obs_states:
             obs_states = prev_states_expect_next if prev_states_expect_next else all_states
@@ -280,14 +284,13 @@ def viterbi(obs, states, start_p, trans_p, emit_p):
 
     route = [None] * len(obs)
     i = len(obs) - 1
-    while i &amp;gt;= 0:
+    while i >= 0:
         route[i] = state
         state = mem_path[i][state]
         i -= 1
     return (prob, route)
-
 ```
 
-## **5.总结**
+## 5. 总结
 
-jieba可以在分词的同时，完成词性标注，因此标注速度可以得到保证。通过查询字典的方式获取识别词的词性，通过HMM隐马尔科夫模型来获取未登录词的词性，从而完成整个语句的词性标注。但可以看到查询字典的方式不能解决一词多词性的问题，也就是词性歧义问题。故精度上还是有所欠缺的。
+`jieba`可以在分词的同时，完成词性标注，因此标注速度可以得到保证。通过查询字典的方式获取识别词的词性，通过`HMM`隐马尔科夫模型来获取未登录词的词性，从而完成整个语句的词性标注。但可以看到查询字典的方式不能解决一词多词性的问题，也就是词性歧义问题。故精度上还是有所欠缺的。

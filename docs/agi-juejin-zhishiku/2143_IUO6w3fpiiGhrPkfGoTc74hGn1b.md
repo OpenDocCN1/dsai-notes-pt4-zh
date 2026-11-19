@@ -1,4 +1,5 @@
-# 10.9 -苹果14年来最严重产品泄漏！、字节跳动豆包智能硬件 Ola Friend 预热、马斯克Robotaxi发布在即负责人跳槽
+
+# 10.9 - 苹果14年来最严重产品泄漏！、字节跳动豆包智能硬件 Ola Friend 预热、马斯克Robotaxi发布在即负责人跳槽
 
 > 来源：[https://agijuejin.feishu.cn/docx/Ja0tdFenpo3AZTxRzvLckDOcneg](https://agijuejin.feishu.cn/docx/Ja0tdFenpo3AZTxRzvLckDOcneg)
 
@@ -48,8 +49,6 @@ MIT 两位华人学者提出新方法优化 Transformer，名为‘Addition is A
 
 文章介绍了一种名为 Prompt「复读机」（RE2）的技术，可显著提高 LLM 的推理能力。在 14 个数据集的 112 个实验中，RE2 能带来性能提升，包括算术、常识和符号推理任务等。RE2 通过让 LLM 把输入再读一遍，促进双向编码，增强理解过程。实验还探索了问题重读次数，发现重读 2 次性能提高，多了则下降。
 
-###
-
 ### 💡 AI逆向绘画火了！一键重绘梵高《星空》，来自华盛顿大学
 
 量子位 | [阅读原文](https://www.qbitai.com/2024/10/198567.html)
@@ -72,10 +71,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/800/682.htm)
 
 IT之家 | [阅读原文](https://www.ithome.com/0/800/639.htm)
 
-
 OpenAI 重点转向产品开发，研究人才外流。多位高管及核心研究人员离职，包括 CTO 米拉·穆拉蒂等。2021 年 OpenAI 招聘职位中一般研究类职位占 23%，2024 年降至 4.4%。人才流失或影响其发展，如早期 GPT 论文作者、ChatGPT 技术博客致谢者中多人已离职。OpenAI 需填补关键职位空缺，面临激烈竞争，其目标是 2029 年将年收入提升至 1000 亿美元。
-
-###
 
 ### 💡 2024诺贝尔物理学终极预测！凝聚态物理大热门，复旦教授吴咏时被提名
 

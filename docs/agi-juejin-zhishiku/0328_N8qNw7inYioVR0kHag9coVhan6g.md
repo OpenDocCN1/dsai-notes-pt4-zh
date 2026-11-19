@@ -1,3 +1,4 @@
+
 # 北大与密歇根大学联合提出 DG4D，几分钟生成四维内容
 
 > 来源：[https://agijuejin.feishu.cn/docx/M3uLdiHQ1odvVGxMb2qcd4EunUc](https://agijuejin.feishu.cn/docx/M3uLdiHQ1odvVGxMb2qcd4EunUc)
@@ -8,7 +9,7 @@
 
 > AIxiv专栏是机器之心发布学术、技术内容的栏目。过去数年，机器之心AIxiv专栏接收报道了2000多篇内容，覆盖全球各大高校与企业的顶级实验室，有效促进了学术交流与传播。如果您有优秀的工作想要分享，欢迎投稿或者联系报道。 投稿邮箱：liyazhou@jiqizhixin.com；zhaoyunfeng@jiqizhixin.com
 
-**本文作者潘亮博士目前是上海人工智能实验室的Research Scientist。此前，在2020年至2023年，他于新加坡南洋理工大学S-Lab担任Research Fellow，**指导老师为刘子纬教授。他的研究重点是计算机视觉、3D点云和虚拟人类，并在顶级会议和期刊上发表了多篇论文，谷歌学术引用超过2700次。此外，他还多次担任计算机视觉和机器学习等领域顶级会议和期刊的审稿人。
+本文作者潘亮博士目前是上海人工智能实验室的Research Scientist。此前，在2020年至2023年，他于新加坡南洋理工大学S-Lab担任Research Fellow，指导老师为刘子纬教授。他的研究重点是计算机视觉、3D点云和虚拟人类，并在顶级会议和期刊上发表了多篇论文，谷歌学术引用超过2700次。此外，他还多次担任计算机视觉和机器学习等领域顶级会议和期刊的审稿人。
 
 近期，商汤科技 - 南洋理工大学联合 AI 研究中心 S-Lab ，上海人工智能实验室，北京大学与密歇根大学联合提出 DreamGaussian4D（DG4D），通过结合空间变换的显式建模与静态 3D Gaussian Splatting（GS）技术实现高效四维内容生成。
 
@@ -19,18 +20,15 @@
 ![](img/b0f3ad44ab3d5487ad387eef53b35941.png)
 
 +   论文名称: DreamGaussian4D: Generative 4D Gaussian Splatting
-
 +   主页地址: https://jiawei-ren.github.io/projects/dreamgaussian4d/
-
 +   论文地址: https://arxiv.org/abs/2312.17142
-
 +   Demo 地址: https://huggingface.co/spaces/jiawei011/dreamgaussian4d
 
 ![](img/cbbfe6771a523f9a5b5eedda77609f23.png)
 
 图 1. DG4D 在四分半钟内可实现四维内容优化基本收敛
 
-## **问题和挑战**
+## 问题和挑战
 
 生成模型可以极大地简化多样化数字内容（如二维图像、视频和三维景物）的生产和制作，近年来取得了显著进步。四维内容是诸如游戏、影视等诸多下游任务的重要内容形式。四维生成内容也应支持导入传统图形学渲染引擎软件（比如，Blender 或者 Unreal Engine），以接入现有图形学内容生产管线（见图 2）。
 
@@ -44,11 +42,11 @@
 
 然而，所有上述现有方法 [1,3,4,6] 生成单个 4D NeRF 都需要数个小时，这极大地限制了它们的应用潜力。此外，它们都难以有效控制或选择最后生成的运动。以上不足主要来自以下几个因素：首先，前述方法的底层隐式四维表示不够高效，存在渲染速度慢和运动规律性差的问题；其次，视频 SDS 的随机性质增加了收敛难度，并在最终结果中引入了不稳定性和多种瑕疵伪影现象。
 
-## **方法介绍**
+## 方法介绍
 
 与直接优化 4D NeRF 的方法不同，DG4D 通过结合静态高斯泼溅技术和显式的空间变换建模，为四维内容生成构建了一个高效和强力的表征。此外，视频生成方法有潜力提供有价值的时空先验，增强高质量的 4D 生成。具体而言，我们提出了一个包含两个主要阶段的整体框架：1）图像到 4D GS 的生成；2）基于视频大模型的纹理图细化。
 
-1.        图像到 4D GS 的生成
+### 图像到 4D GS 的生成
 
 ![](img/37c48e283a6ada5ddca086273e54b551.png)
 
@@ -72,7 +70,7 @@
 
 图 6 零初始化动态形变场对最后生成效果的影响
 
-2.        视频到视频的纹理优化
+### 视频到视频的纹理优化
 
 ![](img/4246a265fa5de8dd0b0445d89fa0175d.png)
 
@@ -88,7 +86,7 @@
 
 图 8 基于视频到视频的纹理优化可以实现时序上纹理的稳定性和一致性
 
-## **实验结果**
+## 实验结果
 
 相比之前整体优化 4D NeRF 的方法，DG4D 显著减少了四维内容生成所需的时间。具体的用时对比可见表 1。
 
@@ -134,24 +132,24 @@ DG4D 与现存开源 SoTA 的图生成四维内容方法和视频生成四维内
 
 ![](img/de80881c69b16ddc7080e8219a42f632.png)
 
-## **结语**
+## 结语
 
 基于 4D GS，我们提出了 DreamGaussian4D（DG4D），这是一个高效的图像到 4D 生成框架。相较于现存的四维内容生成框架，DG4D 显著将优化时间从几小时缩短到几分钟。此外，我们展示了使用生成的视频进行驱动运动生成，实现了视觉可控的三维运动生成。
 
 最后，DG4D 允许进行三维网格模型提取，并支持实现时序上保持连贯一致的高质量纹理优化。我们希望 DG4D 提出的四维内容生成框架，将促进四维内容生成方向的研究工作，并有助于多样化的实际应用。
 
-> **References**
+## References
 
-> [1] Singer et al. "Text-to-4D dynamic scene generation." Proceedings of the 40th International Conference on Machine Learning. 2023.
+[1] Singer et al. "Text-to-4D dynamic scene generation." Proceedings of the 40th International Conference on Machine Learning. 2023.
 
-> [2] Cao et al. "Hexplane: A fast representation for dynamic scenes." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
+[2] Cao et al. "Hexplane: A fast representation for dynamic scenes." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
 
-> [3] Jiang et al. "Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video." The Twelfth International Conference on Learning Representations. 2023.
+[3] Jiang et al. "Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video." The Twelfth International Conference on Learning Representations. 2023.
 
-> [4] Zhao et al. "Animate124: Animating one image to 4d dynamic scene." arXiv preprint arXiv:2311.14603 (2023).
+[4] Zhao et al. "Animate124: Animating one image to 4d dynamic scene." arXiv preprint arXiv:2311.14603 (2023).
 
-> [5] Poole et al. "DreamFusion: Text-to-3D using 2D Diffusion." The Eleventh International Conference on Learning Representations. 2022.
+[5] Poole et al. "DreamFusion: Text-to-3D using 2D Diffusion." The Eleventh International Conference on Learning Representations. 2022.
 
-> [6] Bahmani, Sherwin, et al. "4d-fy: Text-to-4d generation using hybrid score distillation sampling." arXiv preprint arXiv:2311.17984 (2023).
+[6] Bahmani, Sherwin, et al. "4d-fy: Text-to-4d generation using hybrid score distillation sampling." arXiv preprint arXiv:2311.17984 (2023).
 
-> [7] Tang et al. "DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation." The Twelfth International Conference on Learning Representations. 2023.
+[7] Tang et al. "DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation." The Twelfth International Conference on Learning Representations. 2023.

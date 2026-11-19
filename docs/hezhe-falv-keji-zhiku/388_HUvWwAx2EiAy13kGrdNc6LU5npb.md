@@ -1,10 +1,9 @@
+
 # 潘扬个人介绍
 
 > 来源：[https://docs.feishu.cn/docx/E7HAdziNoo4gsaxPCT7ciDcin8d](https://docs.feishu.cn/docx/E7HAdziNoo4gsaxPCT7ciDcin8d)
 
----
-
-# 一、基本信息
+## 一、基本信息
 
 姓名：潘扬
 
@@ -20,11 +19,11 @@
 
 加入植德律师事务所之后，潘扬律师担任首席运营合伙人，聚焦律所的管理运营工作和数字化能力建设。
 
-官网链接：https://www.meritsandtree.com/index/professional/detail?id=159
+官网链接：`https://www.meritsandtree.com/index/professional/detail?id=159`
 
 ![](img/277aa215f0aa189092dda327447ab047.png)
 
-**过去经历过的故事：**
+### 过去经历过的故事
 
 ![](img/03582d26825d98224d4b59719c82d879.png)
 
@@ -34,12 +33,12 @@
 
 ![](img/bd3f7d05d3e37ceda31ba47854aeae74.png)
 
-# 二、个人👸号
+## 二、个人👸号
 
 ![](img/8149e0141d56c71cb2be2e9e5e5e40ec.png)
 
-# 三、北京植德律师事务所介绍
+## 三、北京植德律师事务所介绍
 
 ![](img/70e3fb5bd2e46d5aea8b4201853984df.png)
 
-官网链接：https://www.meritsandtree.com/index/about/about
+官网链接：`https://www.meritsandtree.com/index/about/about`

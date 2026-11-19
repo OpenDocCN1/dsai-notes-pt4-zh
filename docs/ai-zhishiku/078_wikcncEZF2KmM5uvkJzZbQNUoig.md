@@ -1,14 +1,15 @@
+
 # 技巧十七：看到别人的图，想知道它的 prompt 是啥
 
 > 来源：[https://my.feishu.cn/docx/VWdzdk9oRo8b2dxEpPmcKpFknqr](https://my.feishu.cn/docx/VWdzdk9oRo8b2dxEpPmcKpFknqr)
 
 最简单的方法，当然就是直接问。
 
-如果问不到，倒是可以借助一些工具，Midjourney 支持图片转 prompt 功能。方法很简单。第一步在输入框输入 /describe：
+如果问不到，倒是可以借助一些工具，Midjourney 支持图片转 prompt 功能。方法很简单。第一步在输入框输入 `/describe`：
 
 ![](img/380722277ce7c7b32878350dc12fbb8b.png)
 
-点击 describe 后，会弹出一个添加文件的入口，上传文件，并点击回车。
+点击 `describe` 后，会弹出一个添加文件的入口，上传文件，并点击回车。
 
 ![](img/b57bd596a93b5e759514443600f1b571.png)
 

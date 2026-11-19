@@ -1,6 +1,7 @@
+
 # 我们到底在喜欢付航什么｜生活的烦恼，用脱口秀说说
 
-> 来源：[https://docs.feishu.cn/docx/NIXidyrRhoJDFBxyv8zcKCipnvb](https://docs.feishu.cn/docx/NIXidyrRhoJDFBxyv8zcKCipnvb)
+> 来源：`https://docs.feishu.cn/docx/NIXidyrRhoJDFBxyv8zcKCipnvb`
 
 付航的演出是**震撼心灵的**。
 
@@ -18,7 +19,7 @@
 
 还有一种喜剧是，你知道他在很用力的逗你笑，说着和讲述者也无关的笑话。我不喜欢这些，有时候尽管好笑。
 
----
+## 付航的真诚与高维度喜剧
 
 我总感觉付航没有喜剧技巧，或者说他的喜剧技巧是更高维度的。
 
@@ -32,7 +33,7 @@
 
 他的文本、表演这些我都不想去分析了
 
----
+## 付航给我的能量和启发
 
 我想说说，付航给我的能量和启发？
 
@@ -50,13 +51,11 @@
 
 除了付航，我也特别喜欢阎鹤祥的最后一场，被称为 TED 喜剧版，我想这些是我们可以学习的。
 
-**生活的烦恼，用脱口秀说说**
-
----
+## 生活的烦恼，用脱口秀说说
 
 一篇好文送给大家！
 
-> [来源](https://www.xiaohongshu.com/explore/67138049000000001600ea66?app_platform=ios&app_version=8.57&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBfCmZZN0qaUMexgqcBcmdcEw_POCfo1UcXnWORPHb53M=&author_share=1&xhsshare=WeixinSession&shareRedId=ODY6OEU3ODw2NzUyOTgwNjY0OTc8SD8-&apptime=1729643796&share_id=15b62154d0fb4c279ddd7c2a5f03862e&exSource=)
+> 来源：`https://www.xiaohongshu.com/explore/67138049000000001600ea66?app_platform=ios&app_version=8.57&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBfCmZZN0qaUMexgqcBcmdcEw_POCfo1UcXnWORPHb53M=&author_share=1&xhsshare=WeixinSession&shareRedId=ODY6OEU3ODw2NzUyOTgwNjY0OTc8SD8-&apptime=1729643796&share_id=15b62154d0fb4c279ddd7c2a5f03862e&exSource=)`
 
 我不想再听脱口秀里的表演出来的观点了，也不想听粗制滥造复制网络的所谓金句，更不想听讨巧的单薄的话语。
 
@@ -76,6 +75,6 @@
 
 亲爱的人啊，夏天已经轰轰烈烈结束，谢谢你走了很远很远的路才和我相见，谢谢你始终坚持着在黑暗的舞台上，看见一盏灯打下来，黑暗的尽头会有光，夜的尽头天会亮。
 
-祝你们此行无憾，一路生花，继续勇敢而自由地说话。 从来没有什么小人物，人人都是喜剧之王，你是你自己的主角，你是你自己的冠军。
+祝你们此行无憾，一路生花，继续勇敢而自由地说话。从来没有什么小人物，人人都是喜剧之王，你是你自己的主角，你是你自己的冠军。
 
 我们会在更大的剧场再会。

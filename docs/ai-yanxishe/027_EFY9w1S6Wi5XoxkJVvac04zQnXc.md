@@ -1,3 +1,4 @@
+
 # 10分钟把一个想法变成精美PPT
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/EouOdkZQBoufsQxtFPqc7NLjnDb](https://aiyanxishe.feishu.cn/docx/EouOdkZQBoufsQxtFPqc7NLjnDb)
@@ -5,13 +6,13 @@
 ## 程序员AI破局简介
 
 > [《程序员AI破局指南》](https://t.zsxq.com/19EOflzkQ)由字节、百度、阿里等互联网大厂的AI业务相关高管共创，分享开箱即用、面向市场的AI编程知识和工具。
-
-> 指南包括六个专栏:**AI编程实战、AI编程工具、AI高效办公、A**I副业赚钱、AI提示词工程、AI私人助手
-
+>
+> 指南包括六个专栏：**AI编程实战、AI编程工具、AI高效办公、AI副业赚钱、AI提示词工程、AI私人助手**
+>
 > [程序员AI破局指南](https://t.zsxq.com/19EOflzkQ) 原价 599 元，限时特惠 199 元/年，5月1日恢复原价。
-
+>
 > 加入我们：https://t.zsxq.com/19EOflzkQ
-
+>
 > 购买后，添加群主🛰️加入 AI研习社陪伴社群，限时领取超值福利。
 
 最近我的好朋友卡尔，推出了自己的第一款小报童产品《AI 📕爆款变现》，发售短短几个小时，订阅数就有600+，也算妥妥的现象级的案例。内心一方面替好兄弟卡总开心，另外也想蹭一蹭卡总的流量，于是有了这篇文章。
@@ -24,13 +25,11 @@
 
 **本文内容包括以下几部分：**
 
-1.  **生成 PPT 大纲**
+1. **生成 PPT 大纲**
+2. **手动优化大纲**
+3. **导入AI工具生成 PPT**
 
-1.  **手动优化大纲**
-
-1.  **导入AI工具生成 PPT**
-
-# 一.生成PPT大纲
+## 一、生成PPT大纲
 
 ### 1. 通过已有内容生成PPT大纲
 
@@ -100,7 +99,7 @@ PS：这里要重点说明一下什么是markdown格式
 
 通过GPT的解释，我们大概知道，markdown是一种轻量级的标记语言，是一门所见即所得的语言，这门语言是专为排版准备的。比如我们看到网上的一个网页，为什么有的字会加粗，为什么标题的样式和普通文本的样式不一样，为什么嵌入的代码块有是一种样式，这里都可以理解成不同的内容使用了不同的markdown标签，所以看到不同部分的内容呈现的样式是不一样的。
 
-如一个内容如果我想让他做我一级标题，我可以在内容前加一个# ，如果想做二级标题，可以在内容前加两个#
+如一个内容如果我想让他做我一级标题，我可以在内容前加一个`#`，如果想做二级标题，可以在内容前加两个`#`
 
 展示出来就是下面这样：
 
@@ -110,11 +109,11 @@ PS：这里要重点说明一下什么是markdown格式
 
 目前大多数AI工具都是支持markdown格式的内容，包括思维导图，所以一般内容准备好后，需要转成markdown格式才能与AI工具进行进一步的交互，这里可以理解成：你（普通文本）说汉语，在跟一个讲英语的老外（AI相关的工具）聊天，如果想让老外听懂你说什么，需要用英语把汉语翻译一下，同样的，把一段文字发送给AI工具处理，也需要先转成AI工具能识别的markdown格式。
 
-### 2.使用AI工具生成PPT大纲
+### 2. 使用AI工具生成PPT大纲
 
 我们这里生成的PPT大纲的内容其实是用别人已经整理好的文章手动处理生成的，那如何借助AI生成一个PPT的大纲内容呢，这里介绍几个小工具。
 
-1.百度AI的PPT大纲助手
+1. 百度AI的PPT大纲助手
 
 输入网址： https://chat.baidu.com/ ，搜索PPT
 
@@ -126,15 +125,15 @@ PS：这里要重点说明一下什么是markdown格式
 
 如果对效果不满意，可以接着调整，或者一会在AI PPT工具里也是可以调整的
 
-2.三方网站：问问AI
+2. 三方网站：问问AI
 
 问问AI的应用广场也有PPT大纲生成器，大家也可以使用这个助手生成对应内容的大纲，如生成一个员工培训的大纲、一个年度总结的大纲等等。
 
-访问地址： [h](https://chat.wenwen-ai.com/user-center?code=HZSHBRULDE)ttps://chat.wenwen-ai.com/user-center?code=HZSHBRULDE
+访问地址：[https://chat.wenwen-ai.com/user-center?code=HZSHBRULDE](https://chat.wenwen-ai.com/user-center?code=HZSHBRULDE)
 
 ![](img/d2907769064c1e4fa1c174265c639ae6.png)
 
-# 二.手动优化大纲
+## 二、手动优化大纲
 
 自动生成的大纲可能不符合我们当前的需求，因为GPT都是基于互联网上的公有数据训练的，他对你的个人或公司的数据一无所知，所以也就没办法针对你的提问生成太个性化的内容。
 
@@ -150,11 +149,11 @@ PS：这里要重点说明一下什么是markdown格式
 
 这里我引用景淮兄弟的一篇文章，里面有详细的关于结构化Prompt生成PPT大纲的提示词。
 
-[https://mp.weixin.qq.com/s/Fl](https://mp.weixin.qq.com/s/FlSR8cxgnikLADGokpWUUg)SR8cxgnikLADGokpWUUg
+[https://mp.weixin.qq.com/s/FlSR8cxgnikLADGokpWUUg](https://mp.weixin.qq.com/s/FlSR8cxgnikLADGokpWUUg)
 
 篇幅原因，这块就不展开说了，对这部分内容有兴趣的朋友，可以在陪伴群里聊聊。
 
-# 三. **导入AI工具生成 PPT**
+## 三、导入AI工具生成PPT
 
 目前生成PPT的AI工具还是很多的，比如 MindShow、爱设计、AI PPT、WPS AI、gamma等等。
 
@@ -162,13 +161,13 @@ PS：这里要重点说明一下什么是markdown格式
 
 所以下文重点介绍爱设计这款PPT AI制作软件的使用步骤，其他的软件，我也就不一一展示了，大家可以登录相关软件的官网看看，体验一下，做的都很简洁，按照步骤操作就会使用。
 
-### 1.登录爱设计官网，注册登录
+### 1. 登录爱设计官网，注册登录
 
-[https://ppt.isheji.com/?code=](https://ppt.isheji.com/?code=4fbhfx1wv6&as=invite)4fbhfx1wv6&as=invite
+[https://ppt.isheji.com/?code=4fbhfx1wv6&as=invite](https://ppt.isheji.com/?code=4fbhfx1wv6&as=invite)
 
 ![](img/166f58ce1cf5786baf98867e2da2c003.png)
 
-### 2.选择当前对应的步骤
+### 2. 选择当前对应的步骤
 
 上图我们看到使用爱设计生成PPT的四个步骤
 
@@ -182,7 +181,7 @@ PS：这里要重点说明一下什么是markdown格式
 
 由于本文档前两步已经生成了符合我们要求的PPT内容，这里使用爱设计的目的只是将我们的文案转成已经排版好的带图片的PPT，所以这里我们选择步骤三：文档秒变PPT。
 
-### 3.文案转成PPT
+### 3. 文案转成PPT
 
 点击"文档秒变PPT"按钮，跳转到如下页面：
 
@@ -196,19 +195,19 @@ PS：这里要重点说明一下什么是markdown格式
 
 ![](img/1fb4f9cea7ec27e543e50db336ec8632.png)
 
-### 4.对PPT进一步优化
+### 4. 对PPT进一步优化
 
 对生成的PPT可以优化内容、替换模版、更新素材、插入文本、形状、图表、表格等等。这些基本都是PPT的常规操作了，如果顺利，制作一个PPT的时间应该可以控制在十分钟以内，效率比之前，自己一页页的涉及提升了N倍。
 
 ![](img/427006316e5bcb299d8074c4df32f2d4.png)
 
-### 5.导出PPT
+### 5. 导出PPT
 
 修改完成后，右上角有个演示和下载按钮，点击演示可以查看制作的幻灯片的效果，点击下载，可以导出刚制作的幻灯片到本地。
 
 ![](img/89ac7cfed4f618083e3d8e985b05c79f.png)
 
-### 6.最终制作的PPT截图展示
+### 6. 最终制作的PPT截图展示
 
 这里截取几页，大家看看效果，还是很赞的
 
@@ -222,7 +221,7 @@ PS：这里要重点说明一下什么是markdown格式
 
 ![](img/72ef78c4c7c4a5d51ef3c1ed799e5bd3.png)
 
-更多内容可以点击目录： [手册内容汇总](https://aiyanxishe.feishu.cn/wiki/LBXcwPv6UiZgdfkp14Xc1Wo1n3b)
+更多内容可以点击目录：[手册内容汇总](https://aiyanxishe.feishu.cn/wiki/LBXcwPv6UiZgdfkp14Xc1Wo1n3b)
 
 ✨ 如果觉得有收获，请点一点下方的“有启发” ✨
 

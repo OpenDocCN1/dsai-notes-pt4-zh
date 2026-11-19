@@ -1,8 +1,9 @@
+
 # 谷歌Genie 3炸裂发布，AI实时造梦空间来了！通用型世界模型，生成交互式环境
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/Bv56d1ulToKKuDxZNgQcOxcXnBe](https://xatc0v8uz5m.feishu.cn/docx/Bv56d1ulToKKuDxZNgQcOxcXnBe)
 
-# Genie 3：谷歌突破性通用世界模型解析
+## Genie 3：谷歌突破性通用世界模型解析
 
 > 核心摘要
 
@@ -12,7 +13,7 @@
 
 ---
 
-## 目录
+### 目录
 
 +   • [发布](https://www.md2wechat.cn/#%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B8%83%E8%83%8C%E6%99%AF)
 
@@ -24,7 +25,7 @@
 
 +   • [未来发展展望](https://www.md2wechat.cn/#%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%B1%95%E6%9C%9B)
 
-+   • [获取更多信息](https://www.md2wechat.cn/#%E8%8E%B7%E5%8F%96%E6%9B%B4%E5%A4%9A%E4%BF%A1%E6%81%AF)
++   • [获取更多信息](https://www.md2wechat.cn/#%E8%8E%B7%E5%8F%91%E5%B8%96%E6%9B%B4%E5%A4%9A%E4%BF%A1%E6%81%AF)
 
 哈喽，好久不见（粤）
 
@@ -34,7 +35,7 @@
 
 今天我们先来看看造梦空间 Genie3
 
-# Genie 3 通用型世界模型
+### Genie 3 通用型世界模型
 
 Genie 3，通用型世界模型，能够生成前所未有的多样化交互环境可以生成动态世界，它包含物理规律实时生成合理画面和场景。
 
@@ -42,7 +43,7 @@ Genie 3，通用型世界模型，能够生成前所未有的多样化交互环�
 
 [8月6日 (1).mov](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KQCjbQGwSomJ5Pxy4JCcw9GInnh)
 
-## 造梦空间
+#### 造梦空间
 
 试想一下，未来有一个空间是能够通过我们一句话，一段文字故事描述就能呈现出来，并且能够在里面行动。这是什么？
 
@@ -60,7 +61,7 @@ Genie 3，通用型世界模型，能够生成前所未有的多样化交互环�
 
 [genie_modelling_physical_properties_5_1sm8u8o.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BM7abY6ENoyyP2xywjKcsWhHnGF)
 
-## 打通虚拟现实世界
+#### 打通虚拟现实世界
 
 画面相较于genie2清晰了好多，而且是动态的生成连贯且可交互的世界。
 
@@ -80,23 +81,20 @@ Genie 3，通用型世界模型，能够生成前所未有的多样化交互环�
 
 3D游戏设定
 
-
 [genie_modelling_animation_fiction_1_cTvKl3P.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XknTbx2iqoA5x8x40KRcnDxPnxc)
 
-## 模拟真实物理规律
+#### 模拟真实物理规律
 
 ```
 Prompt: Walking on a pavement in Florida next  a two-lane road from one side and the seaon the other, during an approaching hurricane, with strong wind and waves splashing over theroad. There is a railing on the left of the agent, separating them from the sea. The road goesalong the coast, with a short bridge visible in front of the agent. Waves are splashing over therailing and onto the road one after another. Palm trees are bending in the wind. There is heavyrain, and the agent is wearing a rain coat. Real world, first-person.
 提示:在佛罗里达州的人行道上行走，一边是双向车道，另一边是海洋，正值即将来临的飓风，强风和波浪拍打着路面。代理人的左侧有一道栏杆，将他们与海洋隔开。道路沿着海岸线延伸，代理人前方可见一座短桥。波浪接连不断地拍打着栏杆，涌上路面。棕树在风中弯曲。大雨倾盆，代理人穿着雨衣。真实世界，第一人称。
 ```
 
-
 [genie_modelling_physical_properties_3_I8KO3kl.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NdnBbkb2Som22ExCOuScrQVWnQh)
 
 特殊的记忆功能
 
 genie3 出了能够设定好物理世界规律，同时能够有记忆功能，就是在空间的某处我们做了特定的标记，回头过来看我们产生标记还在，而不会被抹除。玩过3D游戏的朋友都知道，在环境里面做标记一般都是会几秒内小时的，游戏只是做了一个痕迹效果的展示，但是并不会保留。而且数据墙路过之后就会消失，重新渲染。
-
 
 [genie_environmental_consistency_1_iNVUBuv.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JLSCb8TfTozVELxuY5dcyPjVnqe)
 

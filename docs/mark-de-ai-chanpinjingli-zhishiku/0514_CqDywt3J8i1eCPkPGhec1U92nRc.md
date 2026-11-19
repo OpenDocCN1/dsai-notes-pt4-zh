@@ -1,3 +1,4 @@
+
 # 基于Agent，0-1实现用户意图识别
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/UiOxdHZOjotbfzxP5YicW5MhnIh](https://qqs7y1hozd1.feishu.cn/docx/UiOxdHZOjotbfzxP5YicW5MhnIh)
@@ -9,31 +10,20 @@
 ![](img/31fc1653c1c373c7d63b543ff75a5f03.png)
 
 > **明确应用场景：**
-
 > 确定系统的具体用途，例如订票、客户服务、产品推荐等。
 
->
-
 > **定义功能：**
-
 > 列出系统需要支持的功能，如查询、预订、支付、问题解答等。
 
 ### 1.2 设计对话流程
 
 > **绘制对话图：**
-
 > 使用状态机或决策树来表示可能的对话路径，确保覆盖所有常见的用户请求和场景。
 
->
-
 > **定义对话节点：**
-
 > 每个节点代表一个对话状态或任务，如“确认出发地”、“选择日期”、“提供票价”等。
 
->
-
 > **设定转换规则：**
-
 > 规定从一个节点到另一个节点的条件，例如用户输入特定关键词或完成某个动作后触发的状态转换。
 
 ![](img/4fda07b389ae49c8a791874c7c09192c.png)
@@ -42,7 +32,7 @@
 
 ```
 class MultiTurnDialogSystem:
-    &quot;&quot;&quot;多轮对话系统核心类&quot;&quot;&quot;
+    """多轮对话系统核心类"""
     
     def __init__(self):
         self.nlu_engine = NLUEngine()           # 自然语言理解
@@ -50,9 +40,9 @@ class MultiTurnDialogSystem:
         self.dp_engine = DialogPolicy()         # 对话策略
         self.nlg_engine = NLGEngine()           # 自然语言生成
         self.context_manager = ContextManager() # 上下文管理
-        
-    async def process_message(self, user_id: str, message: str) -&gt; Dict:
-        &quot;&quot;&quot;处理用户消息的完整流程&quot;&quot;&quot;
+    
+    async def process_message(self, user_id: str, message: str) -> Dict:
+        """处理用户消息的完整流程"""
         # 1. NLU处理
         nlu_result = await self.nlu_engine.parse(message, user_id)
         
@@ -67,17 +57,17 @@ class MultiTurnDialogSystem:
         
         # 5. 上下文更新
         self.context_manager.update_context(user_id, {
-            &#x27;user_input&#x27;: message,
-            &#x27;system_response&#x27;: response,
-            &#x27;nlu_result&#x27;: nlu_result,
-            &#x27;timestamp&#x27;: datetime.now()
+            'user_input': message,
+            'system_response': response,
+            'nlu_result': nlu_result,
+            'timestamp': datetime.now()
         })
         
         return {
-            &#x27;response&#x27;: response,
-            &#x27;action&#x27;: action,
-            &#x27;confidence&#x27;: nlu_result.get(&#x27;confidence&#x27;, 0.0),
-            &#x27;next_expected_slots&#x27;: current_state.get(&#x27;missing_slots&#x27;, [])
+            'response': response,
+            'action': action,
+            'confidence': nlu_result.get('confidence', 0.0),
+            'next_expected_slots': current_state.get('missing_slots', [])
         }
 ```
 
@@ -86,123 +76,116 @@ class MultiTurnDialogSystem:
 ### 2.1 收集训练数据
 
 > **历史对话记录：**
-
 > 获取过去客户与客服人员之间的对话记录，用作训练数据。
 
->
-
 > **公开数据集：**
-
 > 利用公开的对话数据集，特别是那些专注于您所涉及的领域（如旅行、金融等）。
 
->
-
 > **模拟对话：**
-
 > 创建一些模拟对话，以补充实际数据的不足。
 
 ### 对话状态管理架构
 
 ```
 class DialogStateTracker:
-    &quot;&quot;&quot;对话状态跟踪器&quot;&quot;&quot;
+    """对话状态跟踪器"""
     
     def __init__(self):
         self.user_states = {}  # 用户对话状态存储
         self.slot_templates = self.load_slot_templates()
-        
-    def load_slot_templates(self) -&gt; Dict:
-        &quot;&quot;&quot;加载槽位模板&quot;&quot;&quot;
+    
+    def load_slot_templates(self) -> Dict:
+        """加载槽位模板"""
         return {
-            &#x27;book_hotel&#x27;: {
-                &#x27;required&#x27;: [&#x27;location&#x27;, &#x27;check_in&#x27;, &#x27;check_out&#x27;, &#x27;room_type&#x27;],
-                &#x27;optional&#x27;: [&#x27;budget&#x27;, &#x27;hotel_chain&#x27;, &#x27;special_requests&#x27;],
-                &#x27;dependencies&#x27;: {
-                    &#x27;check_out&#x27;: [&#x27;check_in&#x27;]
+            'book_hotel': {
+                'required': ['location', 'check_in', 'check_out', 'room_type'],
+                'optional': ['budget', 'hotel_chain', 'special_requests'],
+                'dependencies': {
+                    'check_out': ['check_in']
                 }
             },
-            &#x27;book_flight&#x27;: {
-                &#x27;required&#x27;: [&#x27;departure&#x27;, &#x27;destination&#x27;, &#x27;departure_date&#x27;],
-                &#x27;optional&#x27;: [&#x27;return_date&#x27;, &#x27;airline&#x27;, &#x27;class_type&#x27;],
-                &#x27;dependencies&#x27;: {
-                    &#x27;return_date&#x27;: [&#x27;departure_date&#x27;]
+            'book_flight': {
+                'required': ['departure', 'destination', 'departure_date'],
+                'optional': ['return_date', 'airline', 'class_type'],
+                'dependencies': {
+                    'return_date': ['departure_date']
                 }
             }
         }
     
-    def update_state(self, user_id: str, nlu_result: Dict) -&gt; Dict:
-        &quot;&quot;&quot;更新对话状态&quot;&quot;&quot;
+    def update_state(self, user_id: str, nlu_result: Dict) -> Dict:
+        """更新对话状态"""
         if user_id not in self.user_states:
             self.user_states[user_id] = self.initialize_state()
         
         current_state = self.user_states[user_id]
-        intent = nlu_result[&#x27;intent&#x27;][&#x27;name&#x27;]
+        intent = nlu_result['intent']['name']
         
         # 更新当前意图
-        if intent != &#x27;unknown&#x27;:
-            current_state[&#x27;current_intent&#x27;] = intent
+        if intent != 'unknown':
+            current_state['current_intent'] = intent
         
         # 更新槽位
-        self.fill_slots(current_state, nlu_result[&#x27;entities&#x27;])
+        self.fill_slots(current_state, nlu_result['entities'])
         
         # 计算缺失槽位
-        current_state[&#x27;missing_slots&#x27;] = self.get_missing_slots(current_state)
+        current_state['missing_slots'] = self.get_missing_slots(current_state)
         
         # 更新对话历史
-        current_state[&#x27;conversation_history&#x27;].append({
-            &#x27;turn&#x27;: len(current_state[&#x27;conversation_history&#x27;]) + 1,
-            &#x27;user_input&#x27;: nlu_result[&#x27;text&#x27;],
-            &#x27;intent&#x27;: intent,
-            &#x27;filled_slots&#x27;: nlu_result[&#x27;entities&#x27;],
-            &#x27;timestamp&#x27;: datetime.now()
+        current_state['conversation_history'].append({
+            'turn': len(current_state['conversation_history']) + 1,
+            'user_input': nlu_result['text'],
+            'intent': intent,
+            'filled_slots': nlu_result['entities'],
+            'timestamp': datetime.now()
         })
         
         # 维护对话历史长度
-        if len(current_state[&#x27;conversation_history&#x27;]) &gt; 10:
-            current_state[&#x27;conversation_history&#x27;] = current_state[&#x27;conversation_history&#x27;][-10:]
+        if len(current_state['conversation_history']) > 10:
+            current_state['conversation_history'] = current_state['conversation_history'][-10:]
         
         return current_state
     
-    def initialize_state(self) -&gt; Dict:
-        &quot;&quot;&quot;初始化对话状态&quot;&quot;&quot;
+    def initialize_state(self) -> Dict:
+        """初始化对话状态"""
         return {
-            &#x27;current_intent&#x27;: None,
-            &#x27;filled_slots&#x27;: {},
-            &#x27;missing_slots&#x27;: [],
-            &#x27;conversation_history&#x27;: [],
-            &#x27;turn_count&#x27;: 0,
-            &#x27;created_at&#x27;: datetime.now(),
-            &#x27;last_updated&#x27;: datetime.now()
+            'current_intent': None,
+            'filled_slots': {},
+            'missing_slots': [],
+            'conversation_history': [],
+            'turn_count': 0,
+            'created_at': datetime.now(),
+            'last_updated': datetime.now()
         }
     
     def fill_slots(self, state: Dict, entities: List[Dict]):
-        &quot;&quot;&quot;填充槽位&quot;&quot;&quot;
+        """填充槽位"""
         for entity in entities:
-            slot_name = entity[&#x27;type&#x27;]
-            slot_value = entity[&#x27;text&#x27;]
+            slot_name = entity['type']
+            slot_value = entity['text']
             
             # 验证槽位是否属于当前意图
-            intent = state[&#x27;current_intent&#x27;]
+            intent = state['current_intent']
             if intent and intent in self.slot_templates:
-                valid_slots = (self.slot_templates[intent][&#x27;required&#x27;] + 
-                             self.slot_templates[intent][&#x27;optional&#x27;])
+                valid_slots = (self.slot_templates[intent]['required'] + 
+                             self.slot_templates[intent]['optional'])
                 if slot_name in valid_slots:
-                    state[&#x27;filled_slots&#x27;][slot_name] = slot_value
+                    state['filled_slots'][slot_name] = slot_value
     
-    def get_missing_slots(self, state: Dict) -&gt; List[str]:
-        &quot;&quot;&quot;获取缺失的必要槽位&quot;&quot;&quot;
-        intent = state[&#x27;current_intent&#x27;]
+    def get_missing_slots(self, state: Dict) -> List[str]:
+        """获取缺失的必要槽位"""
+        intent = state['current_intent']
         if not intent or intent not in self.slot_templates:
             return []
         
-        required_slots = self.slot_templates[intent][&#x27;required&#x27;]
-        filled_slots = set(state[&#x27;filled_slots&#x27;].keys())
+        required_slots = self.slot_templates[intent]['required']
+        filled_slots = set(state['filled_slots'].keys())
         
         missing_slots = []
         for slot in required_slots:
             if slot not in filled_slots:
                 # 检查依赖关系
-                dependencies = self.slot_templates[intent].get(&#x27;dependencies&#x27;, {}).get(slot, [])
+                dependencies = self.slot_templates[intent].get('dependencies', {}).get(slot, [])
                 if all(dep in filled_slots for dep in dependencies):
                     missing_slots.append(slot)
         
@@ -212,38 +195,33 @@ class DialogStateTracker:
 ### 2.2 数据标注
 
 > **意图标注：**
-
 > 为每个用户输入标记出其意图，例如“查询航班”、“预订酒店”等。
 
->
-
 > **实体标注：**
-
 > 识别并标注用户输入中的关键信息，如地点、时间、数量等。
 
->
-
 > **对话状态标注：**
-
 > 为每一轮对话标注当前的对话状态，帮助模型理解对话的进展。
 
 ![](img/18129eae56a85b9db5c831b0493dd7fa.png)
 
 ### 基于规则的策略引擎
 
+
+
 ```
 class RuleBasedDialogPolicy:
-    &quot;&quot;&quot;基于规则的对话策略&quot;&quot;&quot;
+    """基于规则的对话策略"""
     
     def __init__(self):
         self.rules = self.load_rules()
         self.action_templates = self.load_action_templates()
     
-    def select_action(self, state: Dict) -&gt; Dict:
-        &quot;&quot;&quot;选择对话动作&quot;&quot;&quot;
-        intent = state.get(&#x27;current_intent&#x27;)
-        missing_slots = state.get(&#x27;missing_slots&#x27;, [])
-        filled_slots = state.get(&#x27;filled_slots&#x27;, {})
+    def select_action(self, state: Dict) -> Dict:
+        """选择对话动作"""
+        intent = state.get('current_intent')
+        missing_slots = state.get('missing_slots', [])
+        filled_slots = state.get('filled_slots', {})
         
         # 规则匹配
         for rule in self.rules:
@@ -253,55 +231,55 @@ class RuleBasedDialogPolicy:
         # 默认策略
         return self.default_policy(state)
     
-    def match_rule(self, rule: Dict, state: Dict) -&gt; bool:
-        &quot;&quot;&quot;匹配规则条件&quot;&quot;&quot;
-        conditions = rule.get(&#x27;conditions&#x27;, {})
+    def match_rule(self, rule: Dict, state: Dict) -> bool:
+        """匹配规则条件"""
+        conditions = rule.get('conditions', {})
         
         # 检查意图匹配
-        if &#x27;intent&#x27; in conditions and state.get(&#x27;current_intent&#x27;) != conditions[&#x27;intent&#x27;]:
+        if 'intent' in conditions and state.get('current_intent') != conditions['intent']:
             return False
         
         # 检查槽位条件
-        if &#x27;required_slots&#x27; in conditions:
-            for slot in conditions[&#x27;required_slots&#x27;]:
-                if slot not in state.get(&#x27;filled_slots&#x27;, {}):
+        if 'required_slots' in conditions:
+            for slot in conditions['required_slots']:
+                if slot not in state.get('filled_slots', {}):
                     return False
         
         # 检查缺失槽位条件
-        if &#x27;missing_slots&#x27; in conditions:
-            missing = state.get(&#x27;missing_slots&#x27;, [])
-            if not all(slot in missing for slot in conditions[&#x27;missing_slots&#x27;]):
+        if 'missing_slots' in conditions:
+            missing = state.get('missing_slots', [])
+            if not all(slot in missing for slot in conditions['missing_slots']):
                 return False
         
         return True
     
-    def default_policy(self, state: Dict) -&gt; Dict:
-        &quot;&quot;&quot;默认对话策略&quot;&quot;&quot;
-        missing_slots = state.get(&#x27;missing_slots&#x27;, [])
+    def default_policy(self, state: Dict) -> Dict:
+        """默认对话策略"""
+        missing_slots = state.get('missing_slots', [])
         
         if missing_slots:
             # 询问缺失信息
             return {
-                &#x27;action_type&#x27;: &#x27;request_slot&#x27;,
-                &#x27;slot_name&#x27;: missing_slots[0],
-                &#x27;template&#x27;: f&quot;请问您的{self.get_slot_display_name(missing_slots[0])}是什么？&quot;,
-                &#x27;confidence&#x27;: 1.0
+                'action_type': 'request_slot',
+                'slot_name': missing_slots[0],
+                'template': f"请问您的{self.get_slot_display_name(missing_slots[0])}是什么？",
+                'confidence': 1.0
             }
-        elif state.get(&#x27;current_intent&#x27;):
+        elif state.get('current_intent'):
             # 执行意图
             return {
-                &#x27;action_type&#x27;: &#x27;execute_intent&#x27;,
-                &#x27;intent_name&#x27;: state[&#x27;current_intent&#x27;],
-                &#x27;slots&#x27;: state[&#x27;filled_slots&#x27;],
-                &#x27;template&#x27;: self.generate_execution_response(state),
-                &#x27;confidence&#x27;: 0.9
+                'action_type': 'execute_intent',
+                'intent_name': state['current_intent'],
+                'slots': state['filled_slots'],
+                'template': self.generate_execution_response(state),
+                'confidence': 0.9
             }
         else:
             # 请求澄清
             return {
-                &#x27;action_type&#x27;: &#x27;clarify_intent&#x27;,
-                &#x27;template&#x27;: &quot;我不太明白您的意思，能再说具体一些吗？&quot;,
-                &#x27;confidence&#x27;: 0.8
+                'action_type': 'clarify_intent',
+                'template': "我不太明白您的意思，能再说具体一些吗？",
+                'confidence': 0.8
             }
 ```
 
@@ -323,18 +301,20 @@ class RuleBasedDialogPolicy:
 
 ![](img/6afc4090562c07b1b60003de135effdd.png)
 
-### **高级NLU实现代码**
+### 高级NLU实现代码
 
-```
+
+
+```python
 import torch
 import torch.nn as nn
 from transformers import BertModel, BertTokenizer
 from typing import Dict, List, Tuple
 
 class AdvancedNLUEngine:
-    &quot;&quot;&quot;高级NLU引擎，集成意图识别、实体抽取和情感分析&quot;&quot;&quot;
+    """高级NLU引擎，集成意图识别、实体抽取和情感分析"""
     
-    def __init__(self, model_name: str = &quot;bert-base-chinese&quot;):
+    def __init__(self, model_name: str = "bert-base-chinese"):
         self.tokenizer = BertTokenizer.from_pretrained(model_name)
         self.model = JointIntentSlotModel(
             num_intents=20, 
@@ -346,7 +326,7 @@ class AdvancedNLUEngine:
         self.intent_labels = self.load_intent_labels()
         
     class JointIntentSlotModel(nn.Module):
-        &quot;&quot;&quot;联合意图识别和槽位填充模型&quot;&quot;&quot;
+        """联合意图识别和槽位填充模型"""
         
         def __init__(self, num_intents: int, num_slots: int, num_sentiments: int, model_name: str):
             super().__init__()
@@ -391,24 +371,24 @@ class AdvancedNLUEngine:
             
             return intent_logits, slot_logits, sentiment_logits
     
-    async def parse(self, text: str, user_id: str = None) -&gt; Dict:
-        &quot;&quot;&quot;解析用户输入&quot;&quot;&quot;
+    async def parse(self, text: str, user_id: str = None) -> Dict:
+        """解析用户输入"""
         # 文本预处理
         processed_text = self.preprocess_text(text)
         
         # 模型推理
         encoding = self.tokenizer(
             processed_text,
-            padding=&#x27;max_length&#x27;,
+            padding='max_length',
             truncation=True,
             max_length=128,
-            return_tensors=&#x27;pt&#x27;
+            return_tensors='pt'
         )
         
         with torch.no_grad():
             intent_logits, slot_logits, sentiment_logits = self.model(
-                encoding[&#x27;input_ids&#x27;],
-                encoding[&#x27;attention_mask&#x27;]
+                encoding['input_ids'],
+                encoding['attention_mask']
             )
         
         # 后处理
@@ -417,32 +397,32 @@ class AdvancedNLUEngine:
         sentiment_result = self.process_sentiment(sentiment_logits)
         
         return {
-            &#x27;text&#x27;: text,
-            &#x27;intent&#x27;: intent_result,
-            &#x27;entities&#x27;: slot_result,
-            &#x27;sentiment&#x27;: sentiment_result,
-            &#x27;confidence&#x27;: intent_result.get(&#x27;confidence&#x27;, 0.0),
-            &#x27;processed_text&#x27;: processed_text
+            'text': text,
+            'intent': intent_result,
+            'entities': slot_result,
+            'sentiment': sentiment_result,
+            'confidence': intent_result.get('confidence', 0.0),
+            'processed_text': processed_text
         }
     
-    def process_intent(self, intent_logits: torch.Tensor) -&gt; Dict:
-        &quot;&quot;&quot;处理意图识别结果&quot;&quot;&quot;
+    def process_intent(self, intent_logits: torch.Tensor) -> Dict:
+        """处理意图识别结果"""
         probabilities = torch.softmax(intent_logits, dim=-1)
         confidence, predicted = torch.max(probabilities, 1)
         
         return {
-            &#x27;name&#x27;: self.intent_labels[predicted.item()],
-            &#x27;confidence&#x27;: confidence.item(),
-            &#x27;probabilities&#x27;: {
+            'name': self.intent_labels[predicted.item()],
+            'confidence': confidence.item(),
+            'probabilities': {
                 label: prob.item() 
                 for label, prob in zip(self.intent_labels, probabilities[0])
             }
         }
     
-    def process_slots(self, slot_logits: torch.Tensor, encoding, original_text: str) -&gt; List[Dict]:
-        &quot;&quot;&quot;处理槽位填充结果&quot;&quot;&quot;
+    def process_slots(self, slot_logits: torch.Tensor, encoding, original_text: str) -> List[Dict]:
+        """处理槽位填充结果"""
         predicted_slots = torch.argmax(slot_logits, dim=-1)[0]
-        tokens = self.tokenizer.convert_ids_to_tokens(encoding[&#x27;input_ids&#x27;][0])
+        tokens = self.tokenizer.convert_ids_to_tokens(encoding['input_ids'][0])
         
         entities = []
         current_entity = None
@@ -450,25 +430,25 @@ class AdvancedNLUEngine:
         for i, (token, slot_id) in enumerate(zip(tokens, predicted_slots)):
             slot_label = self.slot_labels[slot_id.item()]
             
-            if slot_label.startswith(&#x27;B-&#x27;):
+            if slot_label.startswith('B-'):
                 # 开始新实体
                 if current_entity:
                     entities.append(current_entity)
                 current_entity = {
-                    &#x27;type&#x27;: slot_label[2:],
-                    &#x27;start&#x27;: i,
-                    &#x27;end&#x27;: i,
-                    &#x27;text&#x27;: self.tokenizer.decode(encoding[&#x27;input_ids&#x27;][0][i])
+                    'type': slot_label[2:],
+                    'start': i,
+                    'end': i,
+                    'text': self.tokenizer.decode(encoding['input_ids'][0][i])
                 }
-            elif slot_label.startswith(&#x27;I-&#x27;) and current_entity:
+            elif slot_label.startswith('I-') and current_entity:
                 # 继续当前实体
-                current_entity[&#x27;end&#x27;] = i
-                current_entity[&#x27;text&#x27;] += self.tokenizer.decode(encoding[&#x27;input_ids&#x27;][0][i])
+                current_entity['end'] = i
+                current_entity['text'] += self.tokenizer.decode(encoding['input_ids'][0][i])
         
         return entities
 ```
 
-### 3.2 训练模型
+## 3.2 训练模型
 
 **意图识别：**训练模型识别用户输入的意图，使用标注的数据进行监督学习。
 
@@ -478,9 +458,9 @@ class AdvancedNLUEngine:
 
 ![](img/7990e1069790984c7f4c6d854d1af755.png)
 
-### 系统配置和启动
+## 系统配置和启动
 
-```
+```python
 import asyncio
 import uvicorn
 from fastapi import FastAPI, HTTPException
@@ -498,14 +478,14 @@ class ChatResponse(BaseModel):
     missing_slots: List[str] = []
     sentiment: Dict = None
 
-app = FastAPI(title=&quot;多轮对话系统API&quot;)
+app = FastAPI(title="多轮对话系统API")
 
 # 全局系统实例
 dialog_system = MultiTurnDialogSystem()
 
-@app.post(&quot;/chat&quot;, response_model=ChatResponse)
+@app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(request: ChatRequest):
-    &quot;&quot;&quot;聊天接口&quot;&quot;&quot;
+    """聊天接口"""
     try:
         result = await dialog_system.process_message(
             user_id=request.user_id,
@@ -513,25 +493,25 @@ async def chat_endpoint(request: ChatRequest):
         )
         
         return ChatResponse(
-            response=result[&#x27;response&#x27;],
-            action=result[&#x27;action&#x27;][&#x27;action_type&#x27;],
-            confidence=result[&#x27;confidence&#x27;],
-            missing_slots=result.get(&#x27;next_expected_slots&#x27;, []),
-            sentiment=result.get(&#x27;sentiment&#x27;)
+            response=result['response'],
+            action=result['action']['action_type'],
+            confidence=result['confidence'],
+            missing_slots=result.get('next_expected_slots', []),
+            sentiment=result.get('sentiment')
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get(&quot;/dialog_state/{user_id}&quot;)
+@app.get("/dialog_state/{user_id}")
 async def get_dialog_state(user_id: str):
-    &quot;&quot;&quot;获取对话状态&quot;&quot;&quot;
+    """获取对话状态"""
     state = dialog_system.dst_engine.user_states.get(user_id)
     if not state:
-        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+        raise HTTPException(status_code=404, detail="User not found")
     return state
 
-if __name__ == &quot;__main__&quot;:
-    uvicorn.run(app, host=&quot;0.0.0.0&quot;, port=8000)
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 ```
 
 ## 对话管理
@@ -544,7 +524,7 @@ if __name__ == &quot;__main__&quot;:
 
 **槽位填充：**
 
-> 为每个对话节点定义所需的槽位（slot），并在对话过程中逐步填充这些槽位，直到满足条件为止。
+> 为每个对话节点定义所需的槽位（`slot`），并在对话过程中逐步填充这些槽位，直到满足条件为止。
 
 ![](img/29b4464662153f40384bd533d1ea615c.png)
 
@@ -562,23 +542,26 @@ if __name__ == &quot;__main__&quot;:
 
 ### 性能监控和日志
 
+
+
+
 ```
 import logging
 from prometheus_client import Counter, Histogram, generate_latest
 
 # 监控指标
-REQUEST_COUNT = Counter(&#x27;chat_requests_total&#x27;, &#x27;Total chat requests&#x27;)
-REQUEST_DURATION = Histogram(&#x27;chat_request_duration_seconds&#x27;, &#x27;Chat request duration&#x27;)
-ERROR_COUNT = Counter(&#x27;chat_errors_total&#x27;, &#x27;Total chat errors&#x27;)
+REQUEST_COUNT = Counter('chat_requests_total', 'Total chat requests')
+REQUEST_DURATION = Histogram('chat_request_duration_seconds', 'Chat request duration')
+ERROR_COUNT = Counter('chat_errors_total', 'Total chat errors')
 
 class MonitoringMiddleware:
-    &quot;&quot;&quot;监控中间件&quot;&quot;&quot;
+    """监控中间件"""
     
     def __init__(self, app):
         self.app = app
     
     async def __call__(self, scope, receive, send):
-        if scope[&#x27;type&#x27;] == &#x27;http&#x27;:
+        if scope['type'] == 'http':
             REQUEST_COUNT.inc()
             start_time = time.time()
             
@@ -594,14 +577,14 @@ class MonitoringMiddleware:
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
-    format=&#x27;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#x27;,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(&#x27;dialog_system.log&#x27;),
+        logging.FileHandler('dialog_system.log'),
         logging.StreamHandler()
     ]
 )
 
-logger = logging.getLogger(&quot;MultiTurnDialogSystem&quot;)
+logger = logging.getLogger("MultiTurnDialogSystem")
 ```
 
 ## 集成与部署
@@ -648,16 +631,16 @@ TensorFlow/PyTorch：强大的深度学习框架，用于构建和训练复杂�
 # rasa init --no-prompt
 
 # 配置NLU管道
-# 在config.yml中配置NLU管道，例如使用预训练的Transformers模型
+# 在`config.yml`中配置NLU管道，例如使用预训练的Transformers模型
 
 # 创建训练数据
-# 在data/nlu.yml中添加训练数据，包括意图和实体
+# 在`data/nlu.yml`中添加训练数据，包括意图和实体
 
 # 训练NLU模型
 # rasa train nlu
 
 # 创建对话流程
-# 在domain.yml中定义意图、实体、响应和对话流程
+# 在`domain.yml`中定义意图、实体、响应和对话流程
 
 # 训练对话模型
 # rasa train core
@@ -667,7 +650,6 @@ TensorFlow/PyTorch：强大的深度学习框架，用于构建和训练复杂�
 
 # 与Rasa对话
 # rasa shell
-
 ```
 
 ![](img/2ae91eda58550933f6c2262160d2f9b3.png)
@@ -688,7 +670,7 @@ Hugging Face Transformers：
 
 > 提供了多个预训练的情感分析模型，如distilbert-base-uncased-finetuned-sst-2-english。
 
-**spaCy：**
+spaCy：
 
 > 可以通过加载预训练的NLP模型（如en_core_web_md）并结合自定义管道来实现情感分析。
 
@@ -698,7 +680,7 @@ Google Cloud Natural Language API：提供情感分析功能，可以轻松集�
 
 Microsoft Azure Text Analytics API：另一个强大的情感分析服务，支持多种语言。
 
-**IBM Watson Natural Lan**guage Understanding：提供了丰富的情感分析和其他文本分析功能。
+**IBM Watson Natural Language Understanding：**提供了丰富的情感分析和其他文本分析功能。
 
 ![](img/f545b89ae4e078e5975f43fc43662c12.png)
 
@@ -725,7 +707,7 @@ gcloud auth application-default login
 
 创建一个自定义的Rasa组件，用于调用情感分析模型或API，并将情感信息添加到对话上下文中。
 
-**以下是一个使用Hugging F**ace Transformers的示例：
+以下是一个使用Hugging Face Transformers的示例：
 
 ```
 from typing import Any, Optional, Text, Dict
@@ -735,47 +717,45 @@ from transformers import pipeline
 
 class SentimentAnalysisComponent:
     def __init__(self):
-        self.nlp = pipeline(&quot;sentiment-analysis&quot;)
+        self.nlp = pipeline("sentiment-analysis")
 
-    def process(self, message: Text) -&gt; Dict[Text, Any]:
+    def process(self, message: Text) -> Dict[Text, Any]:
         result = self.nlp(message)[0]
         return {
-            &quot;sentiment&quot;: result[&quot;label&quot;],
-            &quot;confidence&quot;: result[&quot;score&quot;]
+            "sentiment": result["label"],
+            "confidence": result["score"]
         }
 
 # 在Rasa配置文件中注册这个组件
 # config.yml
 pipeline:
-  - name: &quot;SentimentAnalysisComponent&quot;
-    component_class: &quot;path.to.SentimentAnalysisComponent&quot;
-
+  - name: "SentimentAnalysisComponent"
+    component_class: "path.to.SentimentAnalysisComponent"
 ```
 
 ![](img/630a2a7faa75f0cf6d419104b6f64952.png)
 
 ### 更新Rasa配置文件
 
-在config.yml中添加自定义组件，并确保它位于NLU管道中的适当位置。例如：
+在`config.yml`中添加自定义组件，并确保它位于NLU管道中的适当位置。例如：
 
 ```
 language: en
 
 pipeline:
-  - name: &quot;SpacyNLP&quot;
-  - name: &quot;SpacyTokenizer&quot;
-  - name: &quot;SpacyFeaturizer&quot;
-  - name: &quot;SpacyEntityExtractor&quot;
-  - name: &quot;SentimentAnalysisComponent&quot;  # 添加情感分析组件
-  - name: &quot;DIETClassifier&quot;
-  - name: &quot;EntitySynonymMapper&quot;
-  - name: &quot;ResponseSelector&quot;
+  - name: "SpacyNLP"
+  - name: "SpacyTokenizer"
+  - name: "SpacyFeaturizer"
+  - name: "SpacyEntityExtractor"
+  - name: "SentimentAnalysisComponent"  # 添加情感分析组件
+  - name: "DIETClassifier"
+  - name: "EntitySynonymMapper"
+  - name: "ResponseSelector"
 
 policies:
-  - name: &quot;MemoizationPolicy&quot;
-  - name: &quot;TEDPolicy&quot;
-  - name: &quot;RulePolicy&quot;
-
+  - name: "MemoizationPolicy"
+  - name: "TEDPolicy"
+  - name: "RulePolicy"
 ```
 
 ### 处理情感分析结果
@@ -784,9 +764,9 @@ policies:
 
 > 例如，您可以根据用户的情感状态调整机器人的语气或提供不同的回应。
 
-#### 5.1 修改域文件（domain.yml）
+#### 5.1 修改域文件（`domain.yml`）
 
-在domain.yml中定义新的槽位（slot）来存储情感信息：
+在`domain.yml`中定义新的槽位（slot）来存储情感信息：
 
 ```
 slots:
@@ -796,22 +776,21 @@ slots:
 
 responses:
   utter_greet_positive:
-    - text: &quot;Great to hear from you! How can I assist you today?&quot;
+    - text: "Great to hear from you! How can I assist you today?"
   utter_greet_negative:
-    - text: &quot;I&#x27;m sorry to hear that. Let&#x27;s see how we can help.&quot;
-
+    - text: "I'm sorry to hear that. Let's see how we can help."
 ```
 
 ![](img/3118ef84bf6a91fd986895b4dd9ab1b6.png)
 
-#### 5.2 更新故事文件（stories.yml）
+#### 5.2 更新故事文件（`stories.yml`）
 
-在stories.yml中添加基于情感的对话路径：
+在`stories.yml`中添加基于情感的对话路径：
 
 ![](img/b5beb6651703a38f0047fcff7f37309e.png)
 
 ```
-version: &quot;2.0&quot;
+version: "2.0"
 
 stories:
 
@@ -830,12 +809,11 @@ stories:
   - slot_was_set:
       sentiment: negative
   - action: utter_greet_negative
-
 ```
 
-安全架构设计
+#### 安全架构设计
 
-#### 5.3 创建自定义动作（actions.py）
+#### 5.3 创建自定义动作（`actions.py`）
 
 创建一个自定义动作来调用情感分析组件，并根据结果更新槽位：
 
@@ -850,19 +828,18 @@ class ActionAnalyzeSentiment(Action):
     def __init__(self):
         self.sentiment_analyzer = SentimentAnalysisComponent()
 
-    def name(self) -&gt; Text:
-        return &quot;action_analyze_sentiment&quot;
+    def name(self) -> Text:
+        return "action_analyze_sentiment"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
-            domain: Dict[Text, Any]) -&gt; List[Dict[Text, Any]]:
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        user_message = tracker.latest_message.get(&#x27;text&#x27;)
+        user_message = tracker.latest_message.get('text')
         sentiment_result = self.sentiment_analyzer.process(user_message)
 
         # 设置槽位
-        return [SlotSet(&quot;sentiment&quot;, sentiment_result[&quot;sentiment&quot;])]
-
+        return [SlotSet("sentiment", sentiment_result["sentiment"])]
 ```
 
 ### 测试与优化
@@ -889,7 +866,7 @@ rasa run
 
 #### 6.3 与Rasa对话
 
-使用rasa shell与机器人进行对话，测试情感分析的效果：
+使用`rasa shell`与机器人进行对话，测试情感分析的效果：
 
 ```
 rasa shell

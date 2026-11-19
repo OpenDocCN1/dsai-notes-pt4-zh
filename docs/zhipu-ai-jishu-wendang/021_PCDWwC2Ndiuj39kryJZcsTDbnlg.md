@@ -1,16 +1,17 @@
+
 # 快速使用（推理部署）
 
 > 来源：[https://ai.feishu.cn/docx/CuJXdEqlFo3wcXxnoH5cEXtjnyb](https://ai.feishu.cn/docx/CuJXdEqlFo3wcXxnoH5cEXtjnyb)
 
 ## 更多信息
 
-这份文档旨在让开发者快速上手 体验 GLM-4-9B 模型。
+这份文档旨在让开发者快速上手体验 GLM-4-9B 模型。
 
 ## 下载模型和代码
 
 ### 下载示例代码
 
-+   从 github 下载源码
++ 从 github 下载源码
 
 ```
 git clone https://github.com/THUDM/GLM-4.git
@@ -18,7 +19,7 @@ git clone https://github.com/THUDM/GLM-4.git
 
 ### 下载模型
 
-+   若使用 Huggingface 下载模型
++ 若使用 Huggingface 下载模型
 
 ```
 git lfs install
@@ -32,7 +33,7 @@ git clone https://huggingface.co/THUDM/glm-4-9b.git
 git clone https://huggingface.co/THUDM/glm-4v-9b.git
 ```
 
-+   若使用 Modelscope 下载模型
++ 若使用 Modelscope 下载模型
 
 ```
 git lfs install
@@ -84,7 +85,7 @@ python trans_batch_demo.py
 
 ## 压力测试
 
-用户可以在自己的设备上使用本代码测试模型在 transformers后端的生成速度:
+用户可以在自己的设备上使用本代码测试模型在 `transformers` 后端的生成速度:
 
 ```
 python trans_stress_test.py

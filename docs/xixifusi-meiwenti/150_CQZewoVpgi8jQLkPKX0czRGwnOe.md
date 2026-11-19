@@ -1,3 +1,4 @@
+
 # 同时保有两种截然相反的观念还能正常行事，这才是真正的聪明人。
 
 > 来源：[https://docs.feishu.cn/docx/IQZudmT92oSdRKxK69XcfZDunLc](https://docs.feishu.cn/docx/IQZudmT92oSdRKxK69XcfZDunLc)

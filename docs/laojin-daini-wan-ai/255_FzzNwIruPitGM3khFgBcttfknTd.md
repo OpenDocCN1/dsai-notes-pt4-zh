@@ -1,3 +1,4 @@
+
 # 不会代码做出专业网站？这个AI神器圣诞免费送2个月，只剩6天！
 
 > 来源：[https://my.feishu.cn/docx/MGRVdw4RGolUNDxrVPCcPyVVnVd](https://my.feishu.cn/docx/MGRVdw4RGolUNDxrVPCcPyVVnVd)
@@ -24,7 +25,7 @@
 
 正常要花40刀，现在一分钱不用。
 
-**但只到12月31号，还剩6天。**
+但只到12月31号，还剩6天。
 
 老金今天就把这个羊毛怎么薅、有什么坑、适不适合你，一次性讲清楚。
 
@@ -38,7 +39,7 @@
 
 不是那种拖拖拽拽的模板建站工具，是真的AI写代码。
 
-React + TypeScript + Supabase，全套专业技术栈。
+`React` + `TypeScript` + `Supabase`，全套专业技术栈。
 
 写完还能一键部署上线，域名都帮你配好。
 
@@ -50,35 +51,35 @@ React + TypeScript + Supabase，全套专业技术栈。
 
 ## 2个月免费怎么薅？
 
-老金刚试了一遍，**整个流程5分钟搞定**。
+老金刚试了一遍，整个流程5分钟搞定。
 
 跟着做：
 
-**第1步**：打开 https://lovable.dev/invite/BA1950M
+**第1步**：打开 `https://lovable.dev/invite/BA1950M`
 
-**第2步**：点右上角 Sign Up，用Google账号注册最快
+**第2步**：点右上角 `Sign Up`，用Google账号注册最快
 
 **第3步**：注册完自动跳到工作台
 
-**第4步**：点左下角Upgrade to Pro
+**第4步**：点左下角 `Upgrade to Pro`
 
 ![](img/5fb6dadb0e7482004be2c0041e97c502.png)
 
-**第5步**：找到Pro的 Upgrade
+**第5步**：找到Pro的 `Upgrade`
 
 ![](img/67ae05c06917799fae282b9dcd8caa0f.png)
 
-**第6步****：输入信用卡（只是验证，不会扣**钱），左侧输入代码NEXTPLAY-LOV-25
+**第6步**：输入信用卡（只是验证，不会扣钱），左侧输入代码`NEXTPLAY-LOV-25`
 
 找个海外地址生成器，比如我找的湾湾的。
 
-https://www.meiguodizhi.com/tw-address
+`https://www.meiguodizhi.com/tw-address`
 
 ![](img/8a3ed477d3be1286a76db55052bfe381.png)
 
 **第7步**：确认，2个月Pro会员到手
 
-**老金建议**：如果你有海外银行卡（香港、美国）直接用，没有的话就老老实实开个虚拟卡。
+老金建议：如果你有海外银行卡（香港、美国）直接用，没有的话就老老实实开个虚拟卡。
 
 ---
 
@@ -86,27 +87,20 @@ https://www.meiguodizhi.com/tw-address
 
 先看免费版有多惨：
 
-+   每月只能做5个项目
++ 每月只能做5个项目
++ 不能绑自己的域名
++ 不能用数据库
++ AI生成次数有限制
 
-+   不能绑自己的域名
+Pro会员解锁后：
 
-+   不能用数据库
++ 项目数量无限
++ 自定义域名（绑上你自己的域名）
++ `Supabase`数据库（能存数据了）
++ AI生成次数无限
++ 优先客服
 
-+   AI生成次数有限制
-
-**Pro会员解锁后：**
-
-+   项目数量无限
-
-+   自定义域名（绑上你自己的域名）
-
-+   Supabase数据库（能存数据了）
-
-+   AI生成次数无限
-
-+   优先客服
-
-**老金觉得最值的是自定义域名。**
+老金觉得最值的是自定义域名。
 
 做个产品落地页，绑上 xxx.com 域名，逼格瞬间拉满。
 
@@ -118,7 +112,7 @@ https://www.meiguodizhi.com/tw-address
 
 今天早上老金亲自试了一把，做个AI工具导航站。
 
-**全程记录：**
+全程记录：
 
 1、在对话框输入：
 
@@ -126,7 +120,7 @@ https://www.meiguodizhi.com/tw-address
 
 2、等了30秒，完整代码出来了
 
-3、点Preview预览，基本框架OK
+3、点`Preview`预览，基本框架OK
 
 ![](img/3973a2669acc4d8462821b8e03464ef2.png)
 
@@ -148,21 +142,21 @@ https://www.meiguodizhi.com/tw-address
 
 ![](img/e5101b5c38c09f6ff97c710d5929dfe8.png)
 
-6、满意后点Deploy，你也可以在这添加自己的域名，我就直接使用官方的了。
+6、满意后点`Deploy`，你也可以在这添加自己的域名，我就直接使用官方的了。
 
 ![](img/a28672b74dc6bfa3de1f0fba5e412433.png)
 
-当然你也可以通过 Buy New Domain 按钮进行购买，比如这样
+当然你也可以通过 `Buy New Domain` 按钮进行购买，比如这样
 
 ![](img/419bbfda3f29efc099ed12c4ec35bbda.png)
 
 7、1分钟后网站上线
 
-https://laojin.lovable.app/
+`https://laojin.lovable.app/`
 
 ![](img/f358a6ef8d6809e4acaeb512eae9cdd7.png)
 
-**从开始到上线，总共7分钟。**
+从开始到上线，总共7分钟。
 
 以前做这种网站，找外包至少要一周，自己写代码至少要一天。
 
@@ -180,7 +174,7 @@ https://laojin.lovable.app/
 
 正确做法：说清楚要什么。
 
-> "做一个技术博客，要有文章列表、标签筛选、Markdown渲染，风格参考少数派"
+> "做一个技术博客，要有文章列表、标签筛选、`Markdown`渲染，风格参考少数派"
 
 **越具体，出来的越接近你想要的。**
 
@@ -194,7 +188,7 @@ https://laojin.lovable.app/
 
 **坑3：数据库功能有门槛**
 
-虽然集成了Supabase，但你要是完全不懂数据库，可能会卡住。
+虽然集成了`Supabase`，但你要是完全不懂数据库，可能会卡住。
 
 老金建议：先做静态网站练手，熟悉了再碰数据库。
 
@@ -226,7 +220,7 @@ https://laojin.lovable.app/
 
 如果你2个月内做了几个满意的项目，续费不亏。
 
-如果只是玩玩，**到期前记得取消订阅**。
+如果只是玩玩，到期前记得取消订阅。
 
 取消方法：头像 → 按顺序点
 
@@ -258,11 +252,11 @@ https://laojin.lovable.app/
 
 Lovable有个Templates页面，里面全是现成模板。
 
-先fork一个接近的，基于它改，比从零开始快10倍。
+先`fork`一个接近的，基于它改，比从零开始快10倍。
 
 **技巧4：导出代码**
 
-免费期做的项目，**记得把代码导出来**。
+免费期做的项目，记得把代码导出来。
 
 万一以后不续费了，至少代码还在手里，可以自己部署。
 
@@ -286,10 +280,9 @@ Lovable这波圣诞福利，老金觉得挺实在的。
 
 ---
 
-**参考来源**：
+## 参考来源：
 
-+   Lovable官网：lovable.dev
++ Lovable官网：`lovable.dev`
++ Lovable定价：`lovable.dev/pricing`
 
-+   Lovable定价：lovable.dev/pricing
-
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

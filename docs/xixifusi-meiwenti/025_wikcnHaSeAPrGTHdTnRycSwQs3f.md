@@ -1,38 +1,39 @@
+
 # 展示/图像/音乐处理
 
 > 来源：[https://docs.feishu.cn/docx/G6zOdVAIso0AYQx0rQVc3HJInqc](https://docs.feishu.cn/docx/G6zOdVAIso0AYQx0rQVc3HJInqc)
 
-# Slidev
+## Slidev
 
 > 做PPT
 
-https://github.com/slidevjs/slidev
+`https://github.com/slidevjs/slidev`
 
-# Text2Music
+## Text2Music
 
-https://mubert.com/
+`https://mubert.com/`
 
-# 去水印
+## 去水印
 
-https://github.com/zuruoke/watermark-removal
+`https://github.com/zuruoke/watermark-removal`
 
-# emoji库
+## emoji库
 
-https://github.com/twitter/twemoji
+`https://github.com/twitter/twemoji`
 
-# 手绘风流程图
+## 手绘风流程图
 
-https://github.com/excalidraw/excalidraw
+`https://github.com/excalidraw/excalidraw`
 
-# Carbon
+## Carbon
 
 精美可视化代码
 
-https://carbon.now.sh/
+`https://carbon.now.sh/`
 
-# shots.so
+## shots.so
 
-https://www.shots.so/
+`https://www.shots.so/`
 
 模具图
 
@@ -40,12 +41,12 @@ https://www.shots.so/
 
 让展示图片不那么单调
 
-# PDF
+## PDF
 
-https://tools.pdf24.org/zh/
+`https://tools.pdf24.org/zh/`
 
-# 图片压缩
+## 图片压缩
 
 20M大图无损变100K：TinyPNG（在线网站）
 
-地址：https://tinify.cn/
+地址：`https://tinify.cn/`

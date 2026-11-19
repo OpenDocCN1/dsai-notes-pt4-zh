@@ -1,8 +1,9 @@
+
 # 5 分钟，无代码，我用 Cursor 开发了一款爬虫软件
 
 > 来源：[https://agijuejin.feishu.cn/docx/FAqDdvm2woTP5NxlfOxcRno2nFb](https://agijuejin.feishu.cn/docx/FAqDdvm2woTP5NxlfOxcRno2nFb)
 
-> [ loo](https://mp.weixin.qq.com/s/NQyj-bMtU8JEkpBsMncw4w)nggg 非著名程序员｜阅读原文，如有侵权，请联系删除。
+> [loo](https://mp.weixin.qq.com/s/NQyj-bMtU8JEkpBsMncw4w)nggg 非著名程序员｜阅读原文，如有侵权，请联系删除。
 
 > 转载请联系原作者取得授权
 
@@ -16,7 +17,7 @@
 
 所以，这次咱们依旧是采用浏览器插件的形式来开发一个爬虫的小项目。
 
-### **第一步：确定爬虫网页的标签元素**
+## 第一步：确定爬虫网页的标签元素
 
 第一步，我们肯定要确定你要爬虫的网页的标签元素。
 
@@ -24,7 +25,7 @@
 
 我举个例子，我想爬虫 36 氪新闻网页中的新闻标题和摘要。那我要首先找到目标网页地址，然后点击鼠标右键，选择点击「检查」，来查看网页的标签元素。
 
-这里我的目标网页，网页地址：https://36kr.com/information/web_recommend/
+这里我的目标网页，网页地址：`https://36kr.com/information/web_recommend/`
 
 ![](img/695fb87ee638c4f3f3316eb39b701b0b.png)
 
@@ -32,11 +33,15 @@
 
 标题的：
 
+```
 <a class="article-item-title weight-bold" href="/p/3147329369578241" target="_blank" rel="noopener noreferrer " sensors_operation_list="page_flow"> 瑞幸涨价，“背刺” 返乡打工人 </a>
+```
 
 摘要的：
 
+```
 <a class="article-item-description ellipsis-2" href="/p/3147329369578241" target="_blank" rel="noopener noreferrer "> 咖啡行业的价格战，会就此结束吗？</a>
+```
 
 我们留着有用，一会给 Cursor 指令的时候，需要发给它，它就知道该如何去解析网页，帮你爬虫对应的数据了。
 
@@ -44,11 +49,11 @@
 
 接下来，我们就可以给 Cursor 发指令了。
 
-### 第二步：让 Cursor 帮我们自动化编程
+## 第二步：让 Cursor 帮我们自动化编程
 
 首先，我们在电脑上新建一个空文件夹，作为项目目录，然后打开 Cursor AI 编程工具的时候，选择你新建的文件夹目录。
 
-Cursor 打开之后，使用快捷键 command + i ，windows 电脑是 ctrl + i ，调出 composer 。
+Cursor 打开之后，使用快捷键 `command + i`，windows 电脑是 `ctrl + i`，调出 composer 。
 
 然后给它发送指令，提示词如下：
 

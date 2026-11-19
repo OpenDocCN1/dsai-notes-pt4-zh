@@ -1,3 +1,4 @@
+
 # 1.5 微调
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/LdnBdFK9Woo6IyxeuaicdQnlnQg](https://kq4b3vgg5b.feishu.cn/docx/LdnBdFK9Woo6IyxeuaicdQnlnQg)
@@ -6,6 +7,6 @@
 
 ## 本项目的主要内容包括：
 
-1.  LoRA理论与实战，LlaMA-Factory原理与实战；
+1. LoRA理论与实战，LlaMA-Factory原理与实战；
 
-1.  微调效果预览与项目全流程梳理。
+2. 微调效果预览与项目全流程梳理。

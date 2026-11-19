@@ -1,153 +1,133 @@
+
 # 什么是 Agentic Document Extraction？
 
-> 来源：[https://qianniucity.feishu.cn/docx/M6Kjdub7SoE8GTxSmrZc0yMhn2f](https://qianniucity.feishu.cn/docx/M6Kjdub7SoE8GTxSmrZc0yMhn2f)
+> 来源：`https://qianniucity.feishu.cn/docx/M6Kjdub7SoE8GTxSmrZc0yMhn2f`
 
-## 什么是Agentic Document Extraction？
+## 什么是 Agentic Document Extraction？
 
-+   发布背景：Agentic Document Extraction 是 LandingAI 在 2025 年 2 月由吴恩达（Andrew Ng）宣布推出的一项 AI 驱动的文档处理工具。它基于 LandingAI 的 VisionAgent 框架，旨在革新传统文档信息提取的方式。
++ 发布背景：Agentic Document Extraction 是 LandingAI 在 2025 年 2 月由吴恩达（Andrew Ng）宣布推出的一项 AI 驱动的文档处理工具。它基于 LandingAI 的 `VisionAgent` 框架，旨在革新传统文档信息提取的方式。
 
-+   核心目标：从各种文档（PDF、图片等）中提取结构化信息，不仅限于文字，还包括复杂的布局和视觉元素。
++ 核心目标：从各种文档（PDF、图片等）中提取结构化信息，不仅限于文字，还包括复杂的布局和视觉元素。
 
-+   发布时间：2025 年 2 月 27 日（根据吴恩达的公告时间）。
++ 发布时间：2025 年 2 月 27 日（根据吴恩达的公告时间）。
 
 ---
 
 ## 功能与特点
 
-1.  超越传统 OCR：
++ 超越传统 OCR：
 
-+   传统光学字符识别（OCR）主要提取文本，而 Agentic Document Extraction 能理解文档的整体结构，包括：
+  传统光学字符识别（OCR）主要提取文本，而 Agentic Document Extraction 能理解文档的整体结构，包括：
 
-+   表格：准确解析表格数据。
+  + 表格：准确解析表格数据。
+  + 图片和图表：提取图像中的信息，如图表的数据点。
+  + 勾选框：识别文档中的选择标记。
+  + 手写内容：处理非标准化的手写文本。
+  + 通过“Agentic”方法（智能代理），它能推理和连接文档中的各个组成部分，而不仅仅是机械读取。
 
-+   图片和图表：提取图像中的信息，如图表的数据点。
++ 结构化输出：
 
-+   勾选框：识别文档中的选择标记。
+  将提取的信息整理成层次化的结构化数据（如 JSON 或 Markdown），便于后续使用或分析。
 
-+   手写内容：处理非标准化的手写文本。
++ 视觉与语义结合：
 
-+   通过“Agentic”方法（智能代理），它能推理和连接文档中的各个组成部分，而不仅仅是机械读取。
+  利用计算机视觉识别布局，用自然语言处理（NLP）理解上下文，提供更高的准确性和洞察力。
 
-1.  结构化输出：
++ 支持多种文档类型：
 
-+   将提取的信息整理成层次化的结构化数据（如 JSON 或 Markdown），便于后续使用或分析。
+  适用于医疗表格、财务报告、法律合同、研究流程图等复杂文档。
 
-1.  视觉与语义结合：
++ 用户友好性：
 
-+   利用计算机视觉识别布局，用自然语言处理（NLP）理解上下文，提供更高的准确性和洞察力。
-
-1.  支持多种文档类型：
-
-+   适用于医疗表格、财务报告、法律合同、研究流程图等复杂文档。
-
-1.  用户友好性：
-
-+   提供网页应用（Web App）界面，用户无需编程即可上传文件并查看结果。
-
-+   支持程序化操作，通过 Python、JavaScript 或 cURL 命令与 API 交互。
+  + 提供网页应用（Web App）界面，用户无需编程即可上传文件并查看结果。
+  + 支持程序化操作，通过 Python、JavaScript 或 `cURL` 命令与 API 交互。
 
 ---
 
 ## 如何使用？
 
-1.  通过网页应用：
++ 通过网页应用：
 
-+   访问 LandingAI 提供的 Agentic Document Extraction 在线工具（具体链接可参考 landing.ai 或 va.landing.ai/demo/doc-extraction）。
-访问LandingAI 提供的Agentic Document Extraction 在线工具（具体链接可参考landing.ai 或va.landing.ai/demo/doc-extraction）。
+  访问 LandingAI 提供的 Agentic Document Extraction 在线工具（具体链接可参考 `landing.ai` 或 `va.landing.ai/demo/doc-extraction`）。
 
-+   上传文档（PDF、图片等）。
+  上传文档（PDF、图片等）。
 
-+   处理完成后，结果会显示为：
+  处理完成后，结果会显示为：
 
-+   文档预览中带有边界框标记的元素。
+  + 文档预览中带有边界框标记的元素。
+  + 右侧面板展示 JSON 或 Markdown 格式的提取数据。
+  + 提供“Chat with Document”功能，可与文档内容交互提问。
 
-+   右侧面板展示 JSON 或 Markdown 格式的提取数据。
++ 通过 API：
 
-+   提供“Chat with Document”功能，可与文档内容交互提问。
+  + 需要 `VisionAgent` API 密钥（可从 LandingAI 平台获取）。
+  + 开发者可使用以下方式发送文档：
 
-1.  通过 API：
+    + Python：编写脚本调用 API。
+    + JavaScript：通过前端集成。
+    + `cURL`：命令行操作。
 
-+   需要 VisionAgent API 密钥（可从 LandingAI 平台获取）。
+  + 示例代码可在网页应用中直接复制。
 
-+   开发者可使用以下方式发送文档：
++ 限制与升级：
 
-+   Python：编写脚本调用 API。
-
-+   JavaScript：通过前端集成。
-
-+   cURL：命令行操作。
-
-+   示例代码可在网页应用中直接复制。
-
-1.  限制与升级：
-
-+   免费版有速率限制（超过限制会返回 429 错误）。
-
-+   企业版提供更高的使用量和定制化功能，需联系 LandingAI 团队预约讨论。
+  + 免费版有速率限制（超过限制会返回 429 错误）。
+  + 企业版提供更高的使用量和定制化功能，需联系 LandingAI 团队预约讨论。
 
 ---
 
 ## 技术基础
 
-+   VisionAgent 框架：这是 LandingAI 开发的智能代理框架，支持多模态 AI（视觉 + 语言），Agentic Document Extraction 是其应用之一。
++ `VisionAgent` 框架：这是 LandingAI 开发的智能代理框架，支持多模态 AI（视觉 + 语言），Agentic Document Extraction 是其应用之一。
 
-+   AI 技术：
++ AI 技术：
 
-+   计算机视觉：识别布局和视觉元素。
-
-+   大语言模型（LLM）：理解和推理文档内容。
-
-+   与其他工具的区别：相比传统 OCR（如 Tesseract）或简单的 PDF-to-Text 工具，它更注重文档的语义和上下文理解。
+  + 计算机视觉：识别布局和视觉元素。
+  + 大语言模型（LLM）：理解和推理文档内容。
+  + 与其他工具的区别：相比传统 OCR（如 Tesseract）或简单的 PDF-to-Text 工具，它更注重文档的语义和上下文理解。
 
 ---
 
 ## 潜在应用场景
 
-1.  商业与财务：
++ 商业与财务：
 
-+   加速发票和报表的处理，提取关键数据如金额、日期等。
+  + 加速发票和报表的处理，提取关键数据如金额、日期等。
+  + 优化供应链管理，解析运输清单。
 
-+   优化供应链管理，解析运输清单。
++ 法律与合规：
 
-1.  法律与合规：
+  + 从合同中提取关键条款，匹配监管要求。
+  + 提高合规性监控效率。
 
-+   从合同中提取关键条款，匹配监管要求。
++ 医疗：
 
-+   提高合规性监控效率。
+  + 处理复杂医疗表单，提取患者信息或实验数据。
 
-1.  医疗：
++ 研究与教育：
 
-+   处理复杂医疗表单，提取患者信息或实验数据。
+  + 分析学术论文中的图表和数据，生成总结。
 
-1.  研究与教育：
++ 保险：
 
-+   分析学术论文中的图表和数据，生成总结。
-
-1.  保险：
-
-+   加速理赔处理，解析事故报告和保单文件。
-
-+   增强欺诈检测，捕捉细节。
+  + 加速理赔处理，解析事故报告和保单文件。
+  + 增强欺诈检测，捕捉细节。
 
 ---
 
 ## 优势与局限
 
-+   优势：
++ 优势：
 
-+   高精度：处理复杂布局和非结构化数据的卓越能力。
+  + 高精度：处理复杂布局和非结构化数据的卓越能力。
+  + 多功能：支持多样化的文档类型和输出格式。
+  + 可扩展：API 集成适合开发者构建自定义应用。
 
-+   多功能：支持多样化的文档类型和输出格式。
++ 局限：
 
-+   可扩展：API 集成适合开发者构建自定义应用。
-
-+   局限：
-
-+   当前免费版有使用限制，可能不适合大规模处理。
-
-+   对网络依赖较强（云端 API），可能存在延迟问题。
-
-+   对于极度模糊或损坏的文档，效果可能受限。
+  + 当前免费版有使用限制，可能不适合大规模处理。
+  + 对网络依赖较强（云端 API），可能存在延迟问题。
+  + 对于极度模糊或损坏的文档，效果可能受限。
 
 ---
 
@@ -159,11 +139,7 @@
 
 ## 在哪里获取更多信息？
 
-+   官方网站：landing.ai 或 va.landing.ai/demo/doc-extraction
-官方网站：landing.ai 或va.landing.ai/demo/doc-extraction
-
-+   支持文档：support.landing.ai（包含 API 使用指南）
-
-+   社区分享：VisionAgent Discord 社区
-
-+   演示视频：YouTube 上 LandingAI 的官方频道
++ 官方网站：`landing.ai` 或 `va.landing.ai/demo/doc-extraction`
++ 支持文档：`support.landing.ai`（包含 API 使用指南）
++ 社区分享：`VisionAgent` Discord 社区
++ 演示视频：YouTube 上 LandingAI 的官方频道

@@ -1,9 +1,7 @@
-# 10.21-全球首个「长肌腱」AI机器人量产！Nature盛赞的中国方案惊艳IROS现场
-
-> 来源：[https://agijuejin.feishu.cn/docx/UaZGdF1ZUoCN4ixpE1qciN16nzg](https://agijuejin.feishu.cn/docx/UaZGdF1ZUoCN4ixpE1qciN16nzg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 10 月 21 日)
 
+> 来源：[https://agijuegin.feishu.cn/docx/UaZGdF1ZUoCN4ixpE1qciN16nzg](https://agijuegin.feishu.cn/docx/UaZGdF1ZUoCN4ixpE1qciN16nzg)
 > [欢迎加入 AGI 掘金社群](https://applink.larkoffice.com/client/chat/chatter/add_by_link?link_token=890h8ad3-71e6-4140-af64-39dff6b2ba1f)
 
 ## ⭐ 今日热点
@@ -21,7 +19,6 @@
 ### 💡 重磅！DeepSeek再开源：视觉即压缩，100个token干翻7000个
 
 新智元 | [阅读原文](https://www.163.com/dy/article/KCBAG7710511ABV6.html?spss=dy_author)
-
 
 DeepSeek再开源DeepSeek-OCR模型，探索视觉-文本压缩边界。其编码器DeepEncoder创新架构，参数量约3.8亿，能处理高分辨率图像等。解码器用DeepSeek-3B-MoE 。在基准测试中表现出色，如100个视觉token超越GOT-OCR2.0等。还能解析多种内容、处理近100种语言，为LLM长上下文问题提供方向，推动视觉语言与大语言模型发展，且实际应用中生成数据能力强。
 

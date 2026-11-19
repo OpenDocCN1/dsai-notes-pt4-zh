@@ -1,8 +1,9 @@
+
 # 1.3实操必备
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/TW1VdzsFvo88Z7xN3F1cLBjjnqB](https://xmgtoagi.feishu.cn/docx/TW1VdzsFvo88Z7xN3F1cLBjjnqB)
 
-# 一、chatgpt
+## 一、chatgpt
 
 [ChatGPT注册、安装、订阅](https://xmgtoagi.feishu.cn/wiki/GYT3wgCqxiZu5DkeHDOcOMNRnQf)
 
@@ -10,10 +11,10 @@
 
 [ChatGPT充值plus会员](https://xmgtoagi.feishu.cn/wiki/AzVFw3REZiEPAJkFW6HcP8Gqneh)
 
-# 二、kimi
+## 二、kimi
 
-# 三、文心一言
+## 三、文心一言
 
-# 四、讯飞大模型
+## 四、讯飞大模型
 
-# 五、通义千问
+## 五、通义千问

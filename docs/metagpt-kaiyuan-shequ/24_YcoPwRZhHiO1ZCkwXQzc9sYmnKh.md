@@ -1,10 +1,11 @@
+
 # 序列化 & 断点恢复
 
 > 来源：[https://deepwisdom.feishu.cn/docx/AyNrdMwiYohdNexhotncARqKnpf](https://deepwisdom.feishu.cn/docx/AyNrdMwiYohdNexhotncARqKnpf)
 
 ## 定义
 
-断点恢复指在程序运行过程中，记录程序不同模块的产出并落盘。当程序碰到外部如Ctrl-C或内部执行异常如LLM Api网络异常导致退出等情况时。再次执行程序，能够从中断前的结果中恢复继续执行，而无需从0到1开始执行，降低开发者的时间和费用成本。
+断点恢复指在程序运行过程中，记录程序不同模块的产出并落盘。当程序碰到外部如`Ctrl-C`或内部执行异常如LLM Api网络异常导致退出等情况时。再次执行程序，能够从中断前的结果中恢复继续执行，而无需从0到1开始执行，降低开发者的时间和费用成本。
 
 ## 序列化与反序列化
 
@@ -14,11 +15,11 @@
 
 ### 可能产生中断的情况
 
-+   网络等问题，LLM-Api调用重试多次后仍失败
++ 网络等问题，LLM-Api调用重试多次后仍失败
 
-+   Action执行过程中，输出内容解析失败导致退出
++ `Action`执行过程中，输出内容解析失败导致退出
 
-+   人为的Ctrl-C对程序进行中断
++ 人为的`Ctrl-C`对程序进行中断
 
 ### 序列化存储结构
 
@@ -146,43 +147,45 @@ team.json对应内容的数据概要示例。
 
 ### 恢复时的执行顺序
 
-由于MetaGPT是异步执行框架，对于下述几种典型的中断截点和恢复顺序。
+由于`MetaGPT`是异步执行框架，对于下述几种典型的中断截点和恢复顺序。
 
-1.  角色A（1个action）-> 角色B（2个action），角色A进行action选择时出现异常退出。
+1. 角色A（1个`action`）-> 角色B（2个`action`），角色A进行`action`选择时出现异常退出。
 
-1.  角色A（1个action）-> 角色B（2个action），角色B第1个action执行正常，第2个action执行时出现异常退出。
+1. 角色A（1个`action`）-> 角色B（2个`action`），角色B第1个`action`执行正常，第2个`action`执行时出现异常退出。
 
 #### 情况1
 
-执行入口重新执行后，各模块进行反序列化。角色A未观察到属于自己处理的Message，重新执行对应的action。角色B恢复后，观察到一条之前未处理完毕的Message，则在_observe后重新执行对应的react操作，按react策略执行对应2个动作。
+执行入口重新执行后，各模块进行反序列化。角色A未观察到属于自己处理的`Message`，重新执行对应的`action`。角色B恢复后，观察到一条之前未处理完毕的`Message`，则在`_observe()`后重新执行对应的`react`操作，按`react`策略执行对应2个动作。
 
 #### 情况2
 
-执行入口重新执行后，各模块进行反序列化。角色A未观察到属于自己处理的Message，不处理。角色B恢复后，_observe到一条之前未完整处理完毕的Message，在react中，知道自己在第2个action执行失败，则直接从第2个action开始执行。
+执行入口重新执行后，各模块进行反序列化。角色A未观察到属于自己处理的`Message`，不处理。角色B恢复后，`_observe()`到一条之前未完整处理完毕的`Message`，在`react`中，知道自己在第2个`action`执行失败，则直接从第2个`action`开始执行。
 
-### 从中断前的Message开始重新执行
+### 从中断前的`Message`开始重新执行
 
-一般来说，Message是不同角色间沟通协作的桥梁，当在Message的执行过程中发生中断后，由于该Message已经被该角色存入环境（Environment）记忆（Memory）中。在进行恢复中，如果直接加载角色全部Memory，该角色的_observe将不会观察到中断时引发当时执行Message，从而不能恢复该Message的继续执行。
+一般来说，`Message`是不同角色间沟通协作的桥梁，当在`Message`的执行过程中发生中断后，由于该`Message`已经被该角色存入环境（`Environment`）记忆（`Memory`）中。在进行恢复中，如果直接加载角色全部`Memory`，该角色的`_observe()`将不会观察到中断时引发当时执行`Message`，从而不能恢复该`Message`的继续执行。
 
-因此，为了保证该Message在恢复时能够继续执行，需要在发生中断后，根据_observe到的最新信息，从角色记忆中删除对应的该条Message。
+因此，为了保证该`Message`在恢复时能够继续执行，需要在发生中断后，根据`_observe()`到的最新信息，从角色记忆中删除对应的该条`Message`。
 
-### 从中断前的Action开始重新执行
+### 从中断前的`Action`开始重新执行
 
-一般来说，Action是一个相对较小的执行模块粒度，当在Action的执行过程中发生中断后，需要知道多个Actions的执行顺序以及当前执行到哪个Action（_rc.state）。当进行恢复时，定位到中断时的Action位置并重新执行该Action。
+一般来说，`Action`是一个相对较小的执行模块粒度，当在`Action`的执行过程中发生中断后，需要知道多个`Actions`的执行顺序以及当前执行到哪个`Action`（`_rc.state`）。当进行恢复时，定位到中断时的`Action`位置并重新执行该`Action`。
 
 ## 结果
 
 ### 断点恢复入口
 
-metagpt "xxx" --recover-path "./workspace/storage/team" 默认序列化到./workspace/storage/team中。
+``metagpt "xxx" --recover-path "./workspace/storage/team"`` 默认序列化到`./workspace/storage/team`中。
 
 ### 恢复后继续执行结果
 
 这里提供了一个单测用例用于说明断点恢复执行：
 
-python3 -s tests/metagpt/serialize_deserialize/test_team.py的test_team_recover_multi_roles_save的执行case
+``python3 -s tests/metagpt/serialize_deserialize/test_team.py``的`test_team_recover_multi_roles_save`的执行`case`
 
-RoleB的ActionRaise模拟Action异常。执行到该Action时发生异常，序列化项目后退出。 重新启动后，RoleA和RoleB的ActionOK已经执行过，不继续执行。RoleB继续从ActionRaise执行，碰到异常继续退出。
+`RoleB`的`ActionRaise`模拟`Action`异常。执行到该`Action`时发生异常，序列化项目后退出。 重新启动后，`RoleA`和`RoleB`的`ActionOK`已经执行过，不继续执行。`RoleB`继续从`ActionRaise`执行，碰到异常继续退出。
+
+
 
 ```
 2023-12-19 10:26:01.380 | DEBUG    | metagpt.config:__init__:50 - Config loading done.

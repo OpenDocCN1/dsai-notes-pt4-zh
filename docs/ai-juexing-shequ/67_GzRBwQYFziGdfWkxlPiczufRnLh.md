@@ -1,20 +1,17 @@
+
 # 当Adobe遇见生成式人工智能 突破想象力的界限，创造非凡的内容
 
 > 来源：[https://diwfpqo78m.feishu.cn/docx/DOBVdjciJoN5o8xk0Ufc0ntvn7q](https://diwfpqo78m.feishu.cn/docx/DOBVdjciJoN5o8xk0Ufc0ntvn7q)
-
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/l9Ri3JN5-CMrVuSgyKZnNw)q.com/s/l9Ri3JN5...
-
+> 
+> 🔗 原文链接：[https://mp.weixin.qq.com/s/l9Ri3JN5-CMrVuSgyKZnNw](https://mp.weixin.qq.com/s/l9Ri3JN5-CMrVuSgyKZnNw)
+> 
 > ⏰ 剪存时间：2023-05-29 13:42:19 (UTC+8)
-
-> ✂️ 本文档由 [飞书剪存 ](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc)一键生成
+> 
+> ✂️ 本文档由 [飞书剪存](https://www.feishu.cn/hc/zh-CN/articles/606278856233?from=in_ccm_clip_doc) 一键生成
 
 原创 aigc686 AI最佳实践 2023-05-26 19:48 发表于 山东
 
-收录于合集
-
-#人工智能 4 个
-
-#AI最佳实践 2 个
+收录于合集：#人工智能（4 个）、#AI最佳实践（2 个）
 
 【AI最佳实践导读】
 
@@ -48,21 +45,17 @@ Generative Fill 是一种神奇的新体验，使您能够无损地添加、扩�
 
 ![](img/0b4829c504fb5946911bdf5d81f20c04.png)
 
-Generative Fill 还使您能够快速推进创意学习过程，从根本上缩短学习曲线（即使您是专业人士），并在几秒钟内实现高质量的创意结果——以前需要数小时才能创建，从而实现你花更多的时间磨练你的创造力。
-
 ## 是什么让 Photoshop 中的生成填充与众不同？
 
-+   高质量资产：它由 Adobe Firefly 提供支持，这是一个全新的创意生成 AI 模型系列，使您能够使用简单的文本输入立即生成非凡的结果。
++ 高质量资产：它由 Adobe Firefly 提供支持，这是一个全新的创意生成 AI 模型系列，使您能够使用简单的文本输入立即生成非凡的结果。
 
-+   社区参与：它在 Photoshop（测试版）应用程序中，因为我们欢迎我们的社区来塑造 Adobe 正在使用这种变革性新技术构建的工具。
++ 社区参与：它在 Photoshop（测试版）应用程序中，因为我们欢迎我们的社区来塑造 Adobe 正在使用这种变革性新技术构建的工具。
 
-+   专为商业用途安全而设计：Firefly 接受了 Adobe Stock 数以亿计的专业级许可高分辨率图像的培训，这有助于确保 Firefly 不会根据他人的作品、品牌或知识产权生成内容。因此，虽然在 Photoshop（测试版）中生成填充不用于商业用途，但您仍然可以自信地进行创作。
++ 专为商业用途安全而设计：Firefly 接受了 Adobe Stock 数以亿计的专业级许可高分辨率图像的培训，这有助于确保 Firefly 不会根据他人的作品、品牌或知识产权生成内容。因此，虽然在 Photoshop（测试版）中生成填充不用于商业用途，但您仍然可以自信地进行创作。
 
-+   设定责任标准：通过内容真实性倡议和内容来源与真实性联盟等努力，Adobe 正在支持生成 AI 和 Firefly 的问责制、责任和透明度。
++ 设定责任标准：通过内容真实性倡议和内容来源与真实性联盟等努力，Adobe 正在支持生成 AI 和 Firefly 的问责制、责任和透明度。
 
-+
-
-# 强大的用户体验案例示范：
+## 强大的用户体验案例示范：
 
 和世界其他地方一样，我现在才刚刚开始了解生成式 AI 可以做什么。我已经在 Photoshop 中使用它几个星期了，它对许多工作流程来说都是不可思议的，尤其是反射、阴影和照明，我个人认为这非常具有挑战性。
 
@@ -82,7 +75,7 @@ Generative Fill 还使您能够快速推进创意学习过程，从根本上缩�
 
 当然，我总是喜欢找点乐子，所以这次我从左边的 Adobe Stock 图片开始。所有新东西都生成了——小狗、小猫、皇冠和派对帽、翅膀、右边的额外森林。请注意外边缘的小猫如何在阳光下，而狗下方的小狗如何在它的阴影下，以及草地有时如何恰好位于小猫的前面。皇冠和帽子的角度正确，适合他们的小脑袋。所有这些都是自动生成的，我没有进行任何调整。我也很高兴光线如何通过那些惊人的生成的翅膀过滤，我个人没有手工创建的技能，所以如果没有生成人工智能，我就不可能得到这幅图像。
 
-来自 Adob e 员工的更多鼓舞人心的例子
+### 来自 Adobe 员工的更多鼓舞人心的例子
 
 以下是 Adobe 员工在测试期间如何玩转该技术的一个小例子。
 
@@ -92,7 +85,7 @@ Adobe 员工：Alejandro Chavetta。
 
 ![](img/056c03feba9545cea90ef47413377c20.png)
 
-Adobe 员工： Howard Pinsky。
+Adobe 员工：Howard Pinsky。
 
 ![](img/c7cd9c0ece31afc7d19ed2b2fc4ff988.png)
 
@@ -100,8 +93,8 @@ Adobe 员工：Barry Young
 
 ![](img/3690be04949d0a2826f5f7a8247f23d0.png)
 
-图片来自 Adobe 员工 ： Matthew Richmond。
+图片来自 Adobe 员工：Matthew Richmond。
 
 ![](img/ee783d99e0c1317e5a52b26df4d545f4.png)
 
-图片来自 Adobe 员工： Pam Clark。
+图片来自 Adobe 员工：Pam Clark。

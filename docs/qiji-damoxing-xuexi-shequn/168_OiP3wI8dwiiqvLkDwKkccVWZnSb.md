@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（6月 27日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/TeYwdn46ioXHVmxXsaScnACKnTb](https://miracleplus.feishu.cn/docx/TeYwdn46ioXHVmxXsaScnACKnTb)
 
-# 推特
+## 推特
 
 ### Anthropic AI 宣布 Build with Claude 2024 年六月竞赛
 
@@ -18,7 +19,7 @@ https://x.com/OpenAI/status/1805679342439284831
 
 ChatGPT 桌面应用现已在 macOS 上向所有用户开放
 
-现在，所有用户都可以使用 ChatGPT 桌面应用程序。通过 Option + Space 快捷键，您可以更快地访问 ChatGPT，轻松聊天、处理电子邮件、截图以及屏幕上的任何内容：https://openai.com/chatgpt/mac/
+现在，所有用户都可以使用 ChatGPT 桌面应用程序。通过 `Option + Space` 快捷键，您可以更快地访问 ChatGPT，轻松聊天、处理电子邮件、截图以及屏幕上的任何内容：https://openai.com/chatgpt/mac/
 
 ![](img/bd07ca2ca1b6c9edee629865809c4bd2.png)
 
@@ -90,7 +91,7 @@ https://x.com/AndrewYNg/status/1806008133862805840
 
 [ssstwitter.com_1719496052930.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HuImbq1xIoRExgxkpwocygrDnIg)
 
-# 资讯
+## 资讯
 
 ### 国产大模型新高度！讯飞星火4.0发布：整体超越GPT-4 Turbo，8个国际权威测试集测评第一
 
@@ -140,7 +141,7 @@ https://mp.weixin.qq.com/s/SJQiIp1W5kwWSVJaOXA9yA
 
 ![](img/6dc43dfec8436f73269bbe3f6d4f96c0.png)
 
-# 论文
+## 论文
 
 ### WARP: 关于加权平均奖励策略的好处
 
@@ -162,7 +163,7 @@ https://mp.weixin.qq.com/s/SJQiIp1W5kwWSVJaOXA9yA
 
 ![](img/d87dc2200f076d86fae3313b1bb167c1.png)
 
-### **学习通过能量扩散进行迭代推理**
+### 学习通过能量扩散进行迭代推理
 
 贡献人：
 
@@ -188,15 +189,19 @@ https://mp.weixin.qq.com/s/SJQiIp1W5kwWSVJaOXA9yA
 
 链接：http://arxiv.org/abs/2406.18294v1
 
-最近开发的一些代码大语言模型（Code LLMs）已经在存储库级别的代码数据（Repo-Code LLMs）上进行了预训练，使得这些模型能够识别存储库结构并利用跨文件信息进行代码补全。然而，在实际开发场景中，简单地将整个代码存储库连接起来往往超过了这些Repo-Code LLMs的上下文窗口限制，导致性能显著下降。本研究在六个Repo-Code LLMs上进行了广泛的初步实验和分析。结果表明，保持文件的拓扑依赖并增加代码文件内容可以提高补全准确性；剪枝所有相关文件可显著减少补全的输入长度。基于这些发现，我们提出了一种名为Hierarchical Context Pruning（HCP）的策略，用于构建具有高信息代码内容的补全提示。HCP在函数级别对代码存储库进行建模，保持代码文件之间的拓扑依赖，同时去除大量不相关的代码内容，显著减少了存储库级别代码补全的输入长度。我们在六个Repo-Code LLMs的实验中应用了HCP策略，结果表明我们提出的方法可以显著提高补全准确性，同时大幅减少输入长度。我们的代码和数据可在https://github.com/Hambaobao/HCP-Coder获取。
+
+
+# 研究进展
+
+最近开发的一些代码大语言模型（Code LLMs）已经在存储库级别的代码数据（Repo-Code LLMs）上进行了预训练，使得这些模型能够识别存储库结构并利用跨文件信息进行代码补全。然而，在实际开发场景中，简单地将整个代码存储库连接起来往往超过了这些Repo-Code LLMs的上下文窗口限制，导致性能显著下降。本研究在六个Repo-Code LLMs上进行了广泛的初步实验和分析。结果表明，保持文件的拓扑依赖并增加代码文件内容可以提高补全准确性；剪枝所有相关文件可显著减少补全的输入长度。基于这些发现，我们提出了一种名为Hierarchical Context Pruning（HCP）的策略，用于构建具有高信息代码内容的补全提示。HCP在函数级别对代码存储库进行建模，保持代码文件之间的拓扑依赖，同时去除大量不相关的代码内容，显著减少了存储库级别代码补全的输入长度。我们在六个Repo-Code LLMs的实验中应用了HCP策略，结果表明我们提出的方法可以显著提高补全准确性，同时大幅减少输入长度。我们的代码和数据可在`https://github.com/Hambaobao/HCP-Coder`获取。
 
 ![](img/38662757908e42b2046f616c68b21167.png)
 
-### **符号学习实现自我进化智能体**
+## 符号学习实现自我进化智能体
 
 贡献人：
 
-链接：http://arxiv.org/abs/2406.18532v1
+链接：`http://arxiv.org/abs/2406.18532v1`
 
 摘要：人工智能社区一直在探索通过开发“语言智能体”实现人工通用智能（AGI）的途径。这些智能体是复杂的大语言模型（LLMs）管线，涉及提示技术和工具使用方法。尽管语言智能体展示了许多现实世界任务的令人印象深刻能力，但当前研究的基本限制是它们以模型为中心，即工程为中心。我们相信从以模型为中心或以工程为中心过渡到以数据为中心，即语言智能体具有在环境中自主学习和进化的能力，这是它们可能实现AGI的关键。
 
@@ -204,41 +209,33 @@ https://mp.weixin.qq.com/s/SJQiIp1W5kwWSVJaOXA9yA
 
 ![](img/4f555b580441428b68569c81ff69a7dd.png)
 
-### APIGen: 用于生成可验证和多样化函数调用数据集的自动化流水线
+## APIGen: 用于生成可验证和多样化函数调用数据集的自动化流水线
 
 贡献人：
 
-链接：http://arxiv.org/abs/2406.18518v1
+链接：`http://arxiv.org/abs/2406.18518v1`
 
-智能体模型的进步需要多样化、可靠和高质量的数据集。本文介绍了APIGen，一个自动化数据生成管道，旨在为函数调用应用程序合成可验证的高质量数据集。我们利用APIGen搜集了21个不同类别中的3,673个可执行API，以规模化且结构化的方式生成多样化的函数调用数据集。我们的数据集中的每个数据都经过三个层次的验证：格式检查、实际函数执行和语义验证，确保其可靠性和正确性。我们展示了使用我们策划的数据集训练的模型，即使只有7B参数，也能在伯克利函数调用基准上取得最先进的性能，胜过多个GPT-4模型。此外，我们的1B模型表现出色，超越了GPT-3.5-Turbo和Claude-3 Haiku。我们发布了包含60,000个高质量条目的数据集，旨在推进函数调用智能体领域的发展。数据集可在Huggingface上获取：https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k，项目主页：https://apigen-pipeline.github.io/
+智能体模型的进步需要多样化、可靠和高质量的数据集。本文介绍了APIGen，一个自动化数据生成管道，旨在为函数调用应用程序合成可验证的高质量数据集。我们利用APIGen搜集了21个不同类别中的3,673个可执行API，以规模化且结构化的方式生成多样化的函数调用数据集。我们的数据集中的每个数据都经过三个层次的验证：格式检查、实际函数执行和语义验证，确保其可靠性和正确性。我们展示了使用我们策划的数据集训练的模型，即使只有7B参数，也能在伯克利函数调用基准上取得最先进的性能，胜过多个GPT-4模型。此外，我们的1B模型表现出色，超越了GPT-3.5-Turbo和Claude-3 Haiku。我们发布了包含60,000个高质量条目的数据集，旨在推进函数调用智能体领域的发展。数据集可在Huggingface上获取：`https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k`，项目主页：`https://apigen-pipeline.github.io/`
 
 ![](img/3847aa870fff3a08c89473d00a715bbb.png)
 
-### 使用可学习的后期交互实现高效文档排序
-
-贡献人：
-
-链接：http://arxiv.org/abs/2406.17968v1
-
-摘要：交叉编码器（CE）和双编码器（DE）模型是信息检索中用于预测查询-文档相关性的两种基础方法。最近，提出了一种新颖的可学习的后期交互模型（LITE），它能解决传统轻量级评分器无法解决的问题，并在领域内和零样本重新排序任务上表现优异。与ColBERT相比，LITE不仅具有更好的泛化能力，而且在延迟和存储上比ColBERT降低了0.25倍。
-
 # 产品
 
-### Superhuman 2.0
+## Superhuman 2.0
 
 贡献人：
 
-https://superhuman.com/
+`https://superhuman.com/`
 
 Superhuman 2.0 的这一次更新引入多人协作和 AI 技术,改变了之前电子邮件的使用方式。新版本允许用户与团队成员共享实时邮件视图,进行评论讨论,无需会议、截图或转发。这些创新功能提高了团队的工作效率和协作能力。
 
 ![](img/c55b835d3030f9af1eb7d3255881f3fc.png)
 
-### Lazy AI
+## Lazy AI
 
 贡献人：
 
-https://www.getlazy.ai/
+`https://www.getlazy.ai/`
 
 LazyAI是一个以自然语言交互为基础的软件创作平台,颠覆传统的软件开发流程,让任何人都能轻松创建和部署Web应用程序。它鼓励用户发挥创造力、逻辑思维和乐趣来"编写"软件,目标是建立一个包容性强、人人可参与的全球软件创造者社区。
 
@@ -246,225 +243,211 @@ LazyAI是一个以自然语言交互为基础的软件创作平台,颠覆传统�
 
 # HuggingFace&Github
 
-### COMFYUI LLM PARTY
+## COMFYUI LLM PARTY
 
 贡献人：
 
-https://github.com/heshengtao/comfyui_LLM_party
+`https://github.com/heshengtao/comfyui_LLM_party`
 
 Comfyui_LLM_party是一个Node库项目,帮助用户在ComfyUI中快速构建基于大语言模型(LLM)的工作流。它允许用户方便地集成各种LLM模型,并提供了丰富的功能,包括知识图谱交互、代码执行、网络查询等。该项目支持多种LLM模型,如Ollama、Tongyi Qianwen和Zhipu Qingyan等,并提供了详细的使用说明。此外,它还实现了对话系统、个性化对话、多工具调用等高级功能,为用户构建自定义LLM应用程序提供了强大的支持。
 
 ![](img/65e250f0d9d27dff2ac61d6e4ec00336.png)
 
-### Patchwork
+## Patchwork
 
 贡献人：
 
-https://github.com/patched-codes/patchwork?tab=readme-ov-file
+`https://github.com/patched-codes/patchwork?tab=readme-ov-file`
 
 PatchWork 是一个开源框架,帮助用户使用大型语言模型自动执行各种开发工作,如 PR 审查、漏洞修复、代码生成等。它包含可重用的步骤、可自定义的提示模板,以及由这些组件构建的补丁流自动化。
 
-PatchWork 可以在本地 CLI 和 IDE 中运行,也可以集成到 CI/CD 管道中。它提供了多种预定义的补丁流,并支持用户创建自定义的补丁流。安装方面,PatchWork 可通过 pip 或 Poetry 进行安装,并支持可选的依赖项组,为特定功能提供支持。
+PatchWork 可以在本地 CLI 和 IDE 中运行,也可以集成到 CI/CD 管道中。它提供了多种预定义的补丁流,并支持用户创建自定义的补丁流。安装方面,PatchWork 可通过 `pip` 或 `Poetry` 进行安装,并支持可选的依赖项组,为特定功能提供支持。
 
 ![](img/85e96757ea504c9cfea6fd9800038a8b.png)
 
 # 投融资
 
-### CData获得3.5亿美元融资，助力企业数据整合与AI模型构建
+## CData获得3.5亿美元融资，助力企业数据整合与AI模型构建
 
 贡献人：
 
-https://techcrunch.com/2024/06/26/cdata-which-helps-orgs-use-data-across-apps-and-to-build-ai-models-snaps-up-350m/
+`https://techcrunch.com/2024/06/26/cdata-which-helps-orgs-use-data-across-apps-and-to-build-ai-models-snaps-up-350m/`
 
 CData通过构建连接器，帮助企业整合不同应用和位置的数据，并利用这些数据构建AI模型。公司已筹集3.5亿美元增长资本，由Warburg Pincus和Accel领投，总估值超过8亿美元。此轮资金将用于业务和产品开发。CData拥有约7000家大型企业客户，包括医疗保健和酒店等非技术公司，通过其连接器简化了数据访问和AI工作负载的应用。
 
-公司官网：https://www.cdata.com/company/
+公司官网：`https://www.cdata.com/company/`
 
 ![](img/53d0462b77e68432ee33eea1d0dcf117.png)
 
-### Fetcherr获得9000万美元投资，推动动态定价技术
+## Fetcherr获得9000万美元投资，推动动态定价技术
 
 贡献人：
 
-https://techcrunch.com/2024/06/26/fetcherr-lands-90m-to-get-airlines-on-board-with-dynamic-pricing/
+`https://techcrunch.com/2024/06/26/fetcherr-lands-90m-to-get-airlines-on-board-with-dynamic-pricing/`
 
 Fetcherr利用AI预测航空路线需求，并为客户生成动态价格。Fetcherr在B轮融资中筹集了9000万美元，由Battery Ventures领投，使其总融资额达到1.145亿美元。此轮资金将用于开发新AI驱动的“报价引擎”和扩大员工规模。Fetcherr的客户包括WestJet、Viva Aerobus、Virgin Atlantic等航空公司，计划将动态定价技术扩展到其他市场。
 
-公司官网：https://www.fetcherr.io/
+公司官网：`https://www.fetcherr.io/`
 
 ![](img/2dd7360244447ca6adeb09409857ce24.png)
 
-### EasyTranslate新融资
+## EasyTranslate新融资
 
 贡献人：
 
-https://techcrunch.com/2024/06/26/easytranslate-thinks-augmenting-llms-with-humans-will-give-it-an-edge-over-pure-ai-translation-services/
+`https://techcrunch.com/2024/06/26/easytranslate-thinks-augmenting-llms-with-humans-will-give-it-an-edge-over-pure-ai-translation-services/`
 
 EasyTranslate通过其新平台HumanAI，将生成型AI与人类翻译相结合，降低翻译成本并提高效率。公司创始人Frederik R. Pedersen表示，通过此平台，翻译成本可降低90%，每字翻译费用仅为0.01欧元。EasyTranslate目前已筹集300万欧元资金，主要来自私募股权、债务融资、哥本哈根的天使投资者和丹麦创新基金。其客户包括Wix和Monday.com等全球企业。
 
-公司官网：https://easytranslate.com/
+公司官网：`https://easytranslate.com/`
 
 ![](img/65c4c5633519ec71c7d8055a4bbc185d.png)
 
-### Dappier融资200万美元，打造内容销售市场
+## Dappier融资200万美元，打造内容销售市场
 
 贡献人：
 
-https://techcrunch.com/2024/06/26/dappier-is-building-a-marketplace-for-publishers-to-sell-their-content-to-llm-builders/
+`https://techcrunch.com/2024/06/26/dappier-is-building-a-marketplace-for-publishers-to-sell-their-content-to-llm-builders/`
 
 Dappier正在建立一个市场，让出版商和数据所有者可以将其内容出售给大型语言模型（LLM）构建者。该初创公司获得200万美元种子轮融资，由德克萨斯州奥斯汀的Silverton Partners领投。Dappier的目标是为媒体公司和信息提供商提供新的内容货币化方式，允许他们通过RSS源连接内容并在市场上设定使用价格，从而在模型训练中获得报酬。此举为出版商提供了一种在网站广告之外的新收入来源。
 
-公司官网：https://dappier.com/
+公司官网：`https://dappier.com/`
 
 ![](img/3e6785568af208392be8e536172b620b.png)
 
-### Unbabel赢得数百万GPU训练小时，推动AI发展
+## Unbabel赢得数百万GPU训练小时，推动AI发展
 
 贡献人：
 
-https://techcrunch.com/2024/06/26/unbabel-among-first-ai-startups-to-win-millions-of-gpu-training-hours-on-eu-supercomputers/
+`https://techcrunch.com/2024/06/26/unbabel-among-first-ai-startups-to-win-millions-of-gpu-training-hours-on-eu-supercomputers/`
 
 Unbabel是首批获得欧盟超级计算机GPU训练时间的AI初创公司之一。欧盟通过“大规模AI挑战”授予四家初创公司共计100万欧元奖金和800万GPU小时，用于加速AI模型训练。Unbabel专注于将机器翻译与人类专家相结合，为企业客户提供服务。此次获奖将有助于其进一步发展，并在12个月内显著缩短模型训练时间。Unbabel此前已筹集近1亿美元资金。
 
-公司官网：https://unbabel.com/
+公司官网：`https://unbabel.com/`
 
 ![](img/3d74a822b272330f1475e7249eea5465.png)
 
-### Synthflow融资740万美元，助力中小企业无代码语音助手
+## Synthflow融资740万美元，助力中小企业无代码语音助手
 
 贡献人：
 
-https://techcrunch.com/2024/06/26/synthflow-picks-up-7-4m-for-no-code-voice-assistance-for-smes/
+`https://techcrunch.com/2024/06/26/synthflow-picks-up-7-4m-for-no-code-voice-assistance-for-smes/`
 
 Synthflow是一家总部位于柏林的初创公司，致力于为中小企业（SMEs）提供无代码语音助手平台。公司宣布获得740万美元种子轮融资，总融资额达到910万美元。此轮融资由Singular领投，Atlantic Labs及其他AI领域投资者参与。Synthflow自2023年12月推出其无代码工具以来，客户数量接近1000，月增长率达到两位数。新资金将用于研发，扩展产品功能和吸引更多中小企业客户。
 
-公司官网：https://synthflow.ai/
+公司官网：`https://synthflow.ai/`
 
 ![](img/27d8ef4cf98fcda064eb4a9cbd9cd923.png)
 
 # 学习
 
-### 如何为神经网络的输出添加约束
+## 如何为神经网络的输出添加约束
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/667124121
+`https://zhuanlan.zhihu.com/p/667124121`
 
-本文主要探讨了如何在神经网络的输出中引入约束，特别是正线性约束。作者首先指出了传统激活函数在处理复杂约束时的局限性，随后详细介绍了多种解决方法，包括自回归式、惩罚项添加、生成模型、凸优化问题求解等。其中，LinSATNet 方法被提出为一种创新的解决方案，它能够将神经网络的输出通过一层激活层的形式投影到满足约束的可行域内。该方法基于多组边缘分布的 Sinkhorn 算法，能够有效地处理正线性约束问题，并且已经在多种组合优化问题上得到了验证。
+本文主要探讨了如何在神经网络的输出中引入约束，特别是正线性约束。作者首先指出了传统激活函数在处理复杂约束时的局限性，随后详细介绍了多种解决方法，包括自回归式、惩罚项添加、生成模型、凸优化问题求解等。其中，`LinSATNet` 方法被提出为一种创新的解决方案，它能够将神经网络的输出通过一层激活层的形式投影到满足约束的可行域内。该方法基于多组边缘分布的 Sinkhorn 算法，能够有效地处理正线性约束问题，并且已经在多种组合优化问题上得到了验证。
 
-### FHQtreap，从入门到入坑
+## FHQtreap，从入门到入坑
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/657693348
+`https://zhuanlan.zhihu.com/p/657693348`
 
-FHQtreap 是一种多功能的平衡树，它通过分裂和合并操作实现了动态数据结构的维护。在节点结构上，除了保存权值、优先级和子树大小外，还需要记录左右子树的编号。FHQtreap 的核心在于它的分裂操作，可以根据权值或大小将树分为两部分，合并操作则是通过比较节点的优先级来确定合并的方式。这种结构支持高效的插入、删除和查询操作，并且能够快速求解元素的排名、前驱和后继。在维护区间操作时，FHQtreap 能够通过分裂出指定区间，并对该区间进行独立的修改和查询，实现复杂的区间翻转等功能。通过懒标记的机制，FHQtreap 可以优化区间操作的时间复杂度。
+`FHQtreap` 是一种多功能的平衡树，它通过分裂和合并操作实现了动态数据结构的维护。在节点结构上，除了保存权值、优先级和子树大小外，还需要记录左右子树的编号。`FHQtreap` 的核心在于它的分裂操作，可以根据权值或大小将树分为两部分，合并操作则是通过比较节点的优先级来确定合并的方式。这种结构支持高效的插入、删除和查询操作，并且能够快速求解元素的排名、前驱和后继。在维护区间操作时，`FHQtreap` 能够通过分裂出指定区间，并对该区间进行独立的修改和查询，实现复杂的区间翻转等功能。通过懒标记的机制，`FHQtreap` 可以优化区间操作的时间复杂度。
 
 ![](img/e795af16b21512480992ebce780db467.png)
 
-### RoboCat
+## RoboCat
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/704403694
+`https://zhuanlan.zhihu.com/p/704403694`
 
 RoboCat 是 Google DeepMind 开发的一种机器人控制大模型，它采用了类似 Gato 的自回归 Transformer 结构，拥有 1.18B 参数，旨在处理多模态序列，包括机器人的低维状态、图像状态、目标图像状态和动作。该模型通过预训练和在新任务上的微调，能够在多种任务上表现出色。为了提高图像处理的泛化能力，RoboCat 使用了预训练的 VQ-GAN 来编码图像，并且在训练中采用了 next-token prediction 作为目标，通过预测 k 步之后的图像来增强模型的预测能力。此外，文章还介绍了 hindsight goal relabeling 和 semantically-equivalent goal 的策略，以及在实际机器人部署时的 autonomous reset with policy pools 技术，这些都是为了提高模型在实际任务中的适应性和效率。实验结果显示，RoboCat 在不同的机器人、任务和物体上都有较好的表现，尤其是当微调过程中的数据被加入到预训练数据中时，模型的性能得到了进一步的提升。这一系列的技术细节体现了 RoboCat 在机器人控制领域的创新和高效。
 
 ![](img/05ec08422529350a95c5ff4f8ce44896.png)
 
-### VALSE2024年度进展中的OpenGVLab
+## VALSE2024年度进展中的OpenGVLab
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/696388794?utm_psn=1783919958482378752
+`https://zhuanlan.zhihu.com/p/696388794?utm_psn=1783919958482378752`
 
 VALSE2024年度进展报告总结了视觉多模态、视频生成、视觉基础大模型及新型高效率网络架构等方面的代表性工作。北京大学的AnimateDiff项目是全球首个开源文生视频模型，鹏城实验室的LLama Adapter则实现了双语多模态通用大模型。此外，香港大学的ImageBind-LLM和华中科技大学的Vision-RWKV等项目，均展示了大模型在视觉任务中的应用和优化。OpenGVLab参与的这些前沿工作不仅提升了模型的精度和效率，还推动了相关领域的技术进步。
 
 ![](img/cfbf40ea6d0e770c8864217ed3267a8c.png)
 
-### LLM（大语言模型）无法对数字进行准确运算的底层原因是什么？
+## LLM（大语言模型）无法对数字进行准确运算的底层原因是什么？
 
 贡献人：
 
-https://www.zhihu.com/question/654932431
+`https://www.zhihu.com/question/654932431`
 
-大型语言模型（LLM）在数值计算方面存在局限性，主要原因包括 Tokenizer 的设计、数值序列的输入顺序、数字对齐问题、长度外推能力的不足以及模型的 “幻觉率”。技术细节上，LLM 的 Tokenizer 最初未对数字进行特殊处理，导致数字被随机切分，影响计算准确性。后续改进中，每个数字被独立作为一个 Token，这有助于提高数值计算的准确性。此外，逆序输入数字能够更好地适应 LLM 的生成机制，从而提升计算效率。数字对齐问题通过位置提示或新的位置编码方法得到解决。针对长度外推能力的弱点，研究者采用了 FIRE 和 “Randomized Position Encodings” 技术，以增强模型处理长数字运算的能力。尽管如此，LLM 仍存在 “幻觉率”，即输出中的错误 Token 比例，这可能是导致计算错误的一个因素。总体来说，LLM 在数学计算方面的性能提升需要结合 Tokenizer 的优化、输入数据的预处理、位置编码的改进以及模型训练的调整。
+大型语言模型（LLM）在数值计算方面存在局限性，主要原因包括 `Tokenizer` 的设计、数值序列的输入顺序、数字对齐问题、长度外推能力的不足以及模型的 “幻觉率”。技术细节上，LLM 的 `Tokenizer` 最初未对数字进行特殊处理，导致数字被随机切分，影响计算准确性。后续改进中，每个数字被独立作为一个 Token，这有助于提高数值计算的准确性。此外，逆序输入数字能够更好地适应 LLM 的生成机制，从而提升计算效率。数字对齐问题通过位置提示或新的位置编码方法得到解决。针对长度外推能力的弱点，研究者采用了 FIRE 和 “Randomized Position Encodings” 技术，以增强模型处理长数字运算的能力。尽管如此，LLM 仍存在 “幻觉率”，即输出中的错误 Token 比例，这可能是导致计算错误的一个因素。总体来说，LLM 在数学计算方面的性能提升需要结合 `Tokenizer` 的优化、输入数据的预处理、位置编码的改进以及模型训练的调整。
 
 ![](img/ca75bb920cd2eea65b040a9214657035.png)
 
-### 贝壳找房: 为 AI 平台打造混合多云的存储加速底座
+## 贝壳找房: 为 AI 平台打造混合多云的存储加速底座
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/702979419?utm_psn=1789582397702008833
 
-贝壳找房为了提升 AI 平台的存储性能和数据处理效率，采用了混合多云的存储加速解决方案。该方案基于 JuiceFS 构建，实现了跨区域的数据访问和迁移，同时支持了百亿级别的小文件存储。在元数据引擎的选择上，为了确保数据的一致性和实时性，最终选择了 TiKV 和 OceanBase。此外，贝壳团队还自研了一套分布式缓存加速系统，通过 S3 网关和缓存组件 kos-proxy 和 kos-cache，优化了数据同步和访问性能。在实际应用中，该系统实现了每秒约 2 万条记录的写入性能，并通过镜像文件系统实现了数据的即时同步。这一系列技术创新和实践，不仅提升了贝壳 AI 基础设施的稳定性和可靠性，还为数据密集型应用场景提供了高效的存储加速解决方案
+
+`https://zhuanlan.zhihu.com/p/702979419?utm_psn=1789582397702008833`
+
+贝壳找房为了提升 `AI` 平台的存储性能和数据处理效率，采用了混合多云的存储加速解决方案。该方案基于 `JuiceFS` 构建，实现了跨区域的数据访问和迁移，同时支持了百亿级别的小文件存储。在元数据引擎的选择上，为了确保数据的一致性和实时性，最终选择了 `TiKV` 和 `OceanBase`。此外，贝壳团队还自研了一套分布式缓存加速系统，通过 `S3` 网关和缓存组件 `kos-proxy` 和 `kos-cache`，优化了数据同步和访问性能。在实际应用中，该系统实现了每秒约 2 万条记录的写入性能，并通过镜像文件系统实现了数据的即时同步。这一系列技术创新和实践，不仅提升了贝壳 `AI` 基础设施的稳定性和可靠性，还为数据密集型应用场景提供了高效的存储加速解决方案
 
 ![](img/a5998ec6ce398dd5776b7ef9c551bfe6.png)
 
-### 继续预训练 LLM ——数据筛选的思路
+## 继续预训练 `LLM` ——数据筛选的思路
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/702649793?utm_psn=1783826286990454785
+`https://zhuanlan.zhihu.com/p/702649793?utm_psn=1783826286990454785`
 
-文章主要探讨了如何通过数据筛选优化大型语言模型（LLM）的继续预训练过程。作者提出了两种数据筛选策略：Efficient Task-Similar Domain-adaptive Continual Pre-training（ETS-DACP）和 Efficient Task-Agnostic Domain-adaptive Continual Pre-training（ETA-DACP）。ETS-DACP 适用于具有具体任务相关数据的情况，通过文本嵌入模型计算相似度来筛选数据；而 ETA-DACP 用于无任务相关数据的场景，通过困惑度（PPL）和词性熵（POS-Entropy）来选择数据。实验结果表明，硬采样（hard sample）优于软采样（soft sample），且 POS-Entropy 作为筛选指标优于 PPL。此外，作者强调，即使使用 10% 的数据进行训练，也能有效缓解遗忘原有知识的问题。最后，提供了 POS-Entropy 的计算方法，即通过词性统计频率并应用熵公式计算。
+文章主要探讨了如何通过数据筛选优化大型语言模型（`LLM`）的继续预训练过程。作者提出了两种数据筛选策略：`Efficient Task-Similar Domain-adaptive Continual Pre-training`（`ETS-DACP`）和 `Efficient Task-Agnostic Domain-adaptive Continual Pre-training`（`ETA-DACP`）。`ETS-DACP` 适用于具有具体任务相关数据的情况，通过文本嵌入模型计算相似度来筛选数据；而 `ETA-DACP` 用于无任务相关数据的场景，通过困惑度（`PPL`）和词性熵（`POS-Entropy`）来选择数据。实验结果表明，`hard sample` 优于 `soft sample`，且 `POS-Entropy` 作为筛选指标优于 `PPL`。此外，作者强调，即使使用 10% 的数据进行训练，也能有效缓解遗忘原有知识的问题。最后，提供了 `POS-Entropy` 的计算方法，即通过词性统计频率并应用熵公式计算。
 
 ![](img/f160b8c779e2f47d90944309930e4a0f.png)
 
-### 2024年，强化学习的主流是什么？
+## 2024年，强化学习的主流是什么？
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/703648372?utm_psn=1789581439572008963
+`https://zhuanlan.zhihu.com/p/703648372?utm_psn=1789581439572008963`
 
-文章首先提到了强化学习在游戏 AI、RLHF（基于 Transformer 架构的强化学习微调）和机器人场景中的独特优势，特别是 PPO 算法在这些领域的应用。作者指出，强化学习的性能与并发数量和 Batch Size 有关，并认为强化学习的 scaling law 可能与并发数量有关，而不是模型参数大小。文章进一步讨论了 PPO 算法的 Batch Size 性能提升是否有天花板，以及纯 on policy 算法是否能够融入高质量数据。此外，作者也探讨了单智能体 off-policy DRL 在环境动力学未知时的研究意义，并提到了在线学习和离线学习在强化学习中的作用。最后，文章总结了强化学习在复杂任务场景中的挑战，以及对环境先验信息的需求。
+文章首先提到了强化学习在游戏 `AI`、`RLHF`（基于 `Transformer` 架构的强化学习微调）和机器人场景中的独特优势，特别是 `PPO` 算法在这些领域的应用。作者指出，强化学习的性能与并发数量和 `Batch Size` 有关，并认为强化学习的 `scaling law` 可能与并发数量有关，而不是模型参数大小。文章进一步讨论了 `PPO` 算法的 `Batch Size` 性能提升是否有天花板，以及纯 `on policy` 算法是否能够融入高质量数据。此外，作者也探讨了单智能体 `off-policy DRL` 在环境动力学未知时的研究意义，并提到了在线学习和离线学习在强化学习中的作用。最后，文章总结了强化学习在复杂任务场景中的挑战，以及对环境先验信息的需求。
 
 > 潜空间第2季 第3期启动！
 
->
-
-> 你知道Sora吗？！
-
->
+> 你知道`Sora`吗？！
 
 > 本周五晚我们将继续举行潜空间活动🙋
 
->
+> 嘉宾是尤洋-新加坡国立大学校长青年教授，曾创造`Imagenet`、`Bert`等多项训练速度世界纪录，曾任职谷歌、微软、英伟达等国际知名厂商。
 
-> 嘉宾是尤洋-新加坡国立大学校长青年教授，曾创造Imagenet、Bert等多项训练速度世界纪录，曾任职谷歌、微软、英伟达等国际知名厂商。
+> 本期主题是`OpenSora`，业界超级早提出的`VLM`加速框架，让尤洋老师从`Infra`的视角出发，看视频生成的边界与来速～
 
->
-
-> 本期主题是OpenSora，业界超级早提出的VLM加速框架，让尤洋老师从Infra的视角出发，看视频生成的边界与来速～
-
->
-
-> 本周活动主持人是奇绩创坛合伙人 Peter，活动将同时开放北京线下/上海线下/线上场次，欢迎大家报名参与。
+> 本周活动主持人是奇绩创坛合伙人 `Peter`，活动将同时开放北京线下/上海线下/线上场次，欢迎大家报名参与。
 
 > 同时潜空间系列活动对外开放，大家多多推荐身边的优质创业者来参加呀！
 
->
-
 > 之后还会有
 
-> 蔡天乐——普林斯顿“小天才” ，美杜莎推理优化论文作者，现在苹果AVP团队实习，曾任职谷歌、TogetherAI，MyShell模型核心贡献者、创业者咨询师、天使投资人。横跨系统、算法，经常帮助创业团队解决早期技术Blocker。分享主题《Large Model Inference》
-
->
+> 蔡天乐——普林斯顿“小天才”，美杜莎推理优化论文作者，现在苹果`AVP`团队实习，曾任职谷歌、`TogetherAI`，`MyShell`模型核心贡献者、创业者咨询师、天使投资人。横跨系统、算法，经常帮助创业团队解决早期技术`Blocker`。分享主题《`Large Model Inference`》
 
 > 请大家大力支持！！！🎉
 
 ![](img/882c18e22e28d1c3b6325239daae466c.png)
 
-# 声明
+## 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
-ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
+`ChatGPT`；`Angela`；`Zijia Liu`；`Alex`；`Zeqi Tan`；`Tiezhen`（`HuggingFace`）；`Naixu`；`Lizhi`；`Peter`；`Suoman`；`Jack`
 
 封面生成——右脑科技
 
@@ -472,11 +455,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【`日报知识库`】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

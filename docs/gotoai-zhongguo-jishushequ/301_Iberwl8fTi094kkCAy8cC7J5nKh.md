@@ -1,10 +1,11 @@
+
 # Free LLM and Gen AI courses
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/FZ6bd3kX6o5665xtSYGcSC3VnUf](https://gotoaiworld.feishu.cn/docx/FZ6bd3kX6o5665xtSYGcSC3VnUf)
 
 Looking for free LLM and Gen AI courses to dive into? Here are 10 online courses that focus on the practical side of building with LLMs. Our picks prioritize hands-on learning and accessibility: each course is either free or offers open access to its materials. We hope this list helps you find your next learning adventure.
 
-Think we’ve missed a great on[e? Let ](https://discord.com/invite/PyAJuUD5mB)us know! Our Discord is the best place to share your suggestions.
+Think we've missed a great one? [Let us know](https://discord.com/invite/PyAJuUD5mB)! Our Discord is the best place to share your suggestions.
 
 Disclaimer: All course information is sourced from their official websites. We simply put it together.
 
@@ -14,7 +15,7 @@ Disclaimer: All course information is sourced from their official websites. We s
 
 ### LLM evaluations for AI builders: applied course
 
-You can go through all the materials at you[r ow](https://www.evidentlyai.com/llm-evaluation-course-practice)n pace.
+You can go through all the materials at [your own pace](https://www.evidentlyai.com/llm-evaluation-course-practice).
 
 Author: Evidently AI
 
@@ -26,7 +27,7 @@ Course certificate: yes (for cohort participants).
 
 The course syllabus is available here.
 
-L[LM evalua](https://github.com/evidentlyai/evidently)tion for AI builders is a new applied LLM course created by the team that develops Evidently, an open-source evaluation and observability framework for ML and LLM systems.
+[LLM evaluation for AI builders](https://github.com/evidentlyai/evidently) is a new applied LLM course created by the team that develops Evidently, an open-source evaluation and observability framework for ML and LLM systems.
 
 This LLM course covers core LLM evaluation workflows, such as building test datasets, comparing prompts and models, and tracing LLM outputs. It is practice-oriented and consists of 10 end-to-end code tutorials, from custom LLM judges to RAG evaluations to adversarial testing.
 
@@ -38,7 +39,7 @@ The course program is designed for AI/ML engineers and everyone building real-wo
 
 ### Intro to LLM evaluations for AI product teams
 
-You can go through all the materials at you[r ow](https://www.evidentlyai.com/llm-evaluations-course)n pace.
+You can go through all the materials at [your own pace](https://www.evidentlyai.com/llm-evaluations-course).
 
 Author: Evidently AI
 
@@ -50,7 +51,7 @@ Course certificate: yes (for cohort participants).
 
 The course syllabus is available here.
 
-[LLM evaluations ](https://www.evidentlyai.com/llm-evaluations-course)for AI[ product ](https://github.com/evidentlyai/evidently)teams from Evidently is an opportunity to learn everything you need to know to get started with LLM evaluations in under 1 hour!
+[LLM evaluations for AI product teams](https://www.evidentlyai.com/llm-evaluations-course) from Evidently is an opportunity to learn everything you need to know to get started with LLM evaluations in under 1 hour!
 
 This course is a gentle introduction to LLM evaluation for AI leaders. It explores the fundamentals of LLM evaluations and observability, from evaluation methods and benchmarks to LLM guardrails and LLM judges.
 
@@ -66,7 +67,7 @@ The course is designed for AI product managers and everyone interested in graspi
 
 ### Generative AI for beginners from Microsoft
 
-You can go th[roug](https://microsoft.github.io/generative-ai-for-beginners/#/?id=%f0%9f%97%83%ef%b8%8f-lessons)h all the materials at your own pace.
+You can go [through](https://microsoft.github.io/generative-ai-for-beginners/#/?id=%f0%9f%97%83%ef%b8%8f-lessons) all the materials at your own pace.
 
 Author: Microsoft
 
@@ -82,11 +83,11 @@ Generative AI for Beginners from Microsoft focuses on the fundamentals of buildi
 
 The course consists of 21 theoretical lessons explaining GenAI concepts and practical lessons with code examples and tutorials. Each lesson includes a short video introduction to the topic, a written summary, code samples, and links to extra resources to continue your learning.
 
-> G[enerative A](https://microsoft.github.io/generative-ai-for-beginners/#/)I for Beginners materials are available in the course’s GitHub repo.
+> [Generative AI for Beginners materials](https://microsoft.github.io/generative-ai-for-beginners/#/) are available in the course's GitHub repo.
 
 ### Introduction to Generative AI from Google
 
-You can go th[roug](https://www.cloudskillsboost.google/paths/118)h all the materials at your own pace.
+You can go [through](https://www.cloudskillsboost.google/paths/118) all the materials at your own pace.
 
 Author: Google Cloud
 
@@ -108,7 +109,7 @@ The path also includes two hands-on courses on prompt design in Vertex AI and op
 
 ### LLM explainers from Andrej Karpathy
 
-While it's not technically a course, Andrej Karpathy’s LLM video explainers are fantastic. If you’re new to the field and want to understand key LLM concepts in plain English, we highly recommend checking them out.
+While it's not technically a course, Andrej Karpathy’s LLM video explainers are fantastic. If you're new to the field and want to understand key LLM concepts in plain English, we highly recommend checking them out.
 
 [Intro to LLMs](https://www.youtube.com/watch?v=zjkBMFhNj_g&list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI) explains how LLMs work, how they're trained, and their real-world applications. It also covers LLM fine-tuning and customization, as well as Generative AI failure modes like jailbreaks and prompt injection.
 
@@ -124,7 +125,7 @@ Introduction to LLM pretraining by Andrej Karpathy. Source: Deep Dive into LLMs 
 
 ### LLM course from Stanford
 
-You can go th[roug](https://stanford-cs324.github.io/winter2022/lectures/)h all the materials at your own pace.
+You can go through all the materials at your own pace.
 
 Author: Stanford University
 
@@ -134,15 +135,15 @@ Price: free.
 
 The course syllabus is available here.
 
-Stanford’s LLM course dives into how LLMs work, scale, and impact the world. It covers their architecture, capabilities, training methodologies, ethical considerations, and system-level challenges. The curriculum also includes LLM scaling laws, security concerns, and environmental impacts.
+Stanford's LLM course dives into how LLMs work, scale, and impact the world. It covers their architecture, capabilities, training methodologies, ethical considerations, and system-level challenges. The curriculum also includes LLM scaling laws, security concerns, and environmental impacts.
 
 The course also includes two projects on LLM building and evaluation, which you can implement to build practical skills.
 
-> Course lectures are availa[ble in the ](https://stanford-cs324.github.io/winter2022/lectures/)course’s GitHub repo.
+> [Course lectures are available in the course's GitHub repo.](https://stanford-cs324.github.io/winter2022/lectures/)
 
 ### LLM course by Maxime Labonne
 
-You can go th[roug](https://github.com/mlabonne/llm-course)h all the materials at your own pace.
+You can go through all the materials at [your own pace](https://github.com/mlabonne/llm-course).
 
 Author: Maxime Labonne
 
@@ -154,17 +155,21 @@ The course syllabus is available here.
 
 The [LLM course](https://github.com/mlabonne/llm-course) is a collection of educational resources for those wanting to enter the LLM field. It features two main roadmaps: LLM Scientist and LLM Engineer.
 
+
+
+# LLM Courses
+
 The LLM Scientist roadmap focuses on building LLMs. It covers LLM architecture, fine-tuning, preference alignment, model-based and human evaluation, and quantization. The track also highlights emerging trends like multimodality and interpretability.
 
 The LLM Engineer roadmap focuses on creating LLM-based applications ready for production use. It examines how to run LLMs, build vector storage, augment models, and deploy them. The topics also include advanced RAG techniques, AI agents, and LLM safety.
 
-Ther[e is also a](https://hf.co/chat/assistant/66029d2e5f4a884f7aabc9d1)n in[teracti](https://chat.openai.com/g/g-yviLuLqvI-llm-course)ve version of this course with an LLM assistant that answers questions and tests your knowledge. To chat with the assistant, you can use HuggingChat or ChatGPT.
+There is also an interactive version of this course with an LLM assistant that answers questions and tests your knowledge. To chat with the assistant, you can use [HuggingChat](https://hf.co/chat/assistant/66029d2e5f4a884f7aabc9d1) or [ChatGPT](https://chat.openai.com/g/g-yviLuLqvI-llm-course).
 
-> The LLM course roadmaps ar[e available](https://github.com/mlabonne/llm-course) in this GitHub repo.
+> The LLM course roadmaps are available [in this GitHub repo](https://github.com/mlabonne/llm-course).
 
-### LLM Twin course
+## LLM Twin course
 
-You can go through all the mater[ials](https://github.com/decodingml/llm-twin-course?tab=readme-ov-file#lessons) at your own pace.
+You can go through all the [materials](https://github.com/decodingml/llm-twin-course?tab=readme-ov-file#lessons) at your own pace.
 
 Author: Decoding ML
 
@@ -178,11 +183,11 @@ The [LLM Twin Course](https://github.com/decodingml/llm-twin-course) is a free, 
 
 The course consists of 12 lessons on engineering practices and end-to-end system implementation. It is designed for ML/AI engineers, Data Engineers, and Data Scientists. A basic understanding of Python and machine learning is a prerequisite.
 
-> T[he LLM Twin](https://github.com/decodingml/llm-twin-course) course materials are available in this GitHub repo.
+> The [LLM Twin](https://github.com/decodingml/llm-twin-course) course materials are available in this GitHub repo.
 
-### LLM University from Cohere
+## LLM University from Cohere
 
-You can go through all the [mate](https://cohere.com/llmu)rials at your own pace.
+You can go through all the [materials](https://cohere.com/llmu) at your own pace.
 
 Author: Cohere
 
@@ -196,11 +201,11 @@ Cohere’s [LLM University](https://cohere.com/llmu) is a free learning hub desi
 
 Practical modules also include step-by-step tutorials on building a RAG-based chatbot and a multi-turn AI agent. After completing this course, learners will be able to build, optimize, and deploy enterprise-grade AI applications.
 
-> C[ohere’s LLM](https://cohere.com/llmu) University materials are available on the hub website.
+> [Cohere’s LLM University](https://cohere.com/llmu) materials are available on the hub website.
 
-### Generative AI with LLMs from AWS
+## Generative AI with LLMs from AWS
 
-Au[thor](https://www.coursera.org/learn/generative-ai-with-llms#modules): DeepLearning.AI, AWS
+Author: [DeepLearning.AI, AWS](https://www.coursera.org/learn/generative-ai-with-llms#modules)
 
 Duration: 3 weeks
 
@@ -216,13 +221,13 @@ Through applied techniques and case studies, the course gives the skills to appl
 
 The course is available on Coursera and requires a subscription to earn a certificate of completion. A Coursera subscription currently costs $49 per month. However, if you only want access to the course materials, you can audit the course for free.
 
-> G[enerativ](https://www.coursera.org/learn/generative-ai-with-llms)e AI with LLMs course videos are available on Coursera.
+> [Generative AI with LLMs](https://www.coursera.org/learn/generative-ai-with-llms) course videos are available on Coursera.
 
-### Generative AI Engineering with LLMs from IBM
+## Generative AI Engineering with LLMs from IBM
 
 Author: IBM
 
-D[urat](https://www.coursera.org/specializations/generative-ai-engineering-with-llms#courses)ion: 3 months
+Duration: [3 months](https://www.coursera.org/specializations/generative-ai-engineering-with-llms#courses)
 
 Course certificate: yes (requires a Coursera subscription).
 
@@ -232,11 +237,9 @@ The course syllabus is available here.
 
 Generative AI Engineering with LLMs specialization from IBM is designed for data scientists, ML engineers, and AI developers and is made up of 7 courses that cover:
 
-+   Generative AI architectures and data preparation techniques
-
-+   How to use transformer-based LLMs and fine-tune them for specific tasks
-
-+   Fundamentals of AI agents and advanced RAG techniques
++ Generative AI architectures and data preparation techniques
++ How to use transformer-based LLMs and fine-tune them for specific tasks
++ Fundamentals of AI agents and advanced RAG techniques
 
 For the final assignment, the students are invited to build a RAG-based Q&A system.
 

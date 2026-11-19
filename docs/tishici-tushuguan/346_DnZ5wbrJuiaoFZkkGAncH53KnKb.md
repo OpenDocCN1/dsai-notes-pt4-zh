@@ -1,3 +1,4 @@
+
 # 深度研究助手 "Mira" 4.0
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/R5uddGTcpojvU0xHpjlcCuLrn7g](https://vxc3hj17dym.feishu.cn/docx/R5uddGTcpojvU0xHpjlcCuLrn7g)
@@ -12,11 +13,11 @@
 
 >
 
-> -WaytoAGI专栏作者
+> - WaytoAGI专栏作者
 
-> -MidJourney中国区核心创作者
+> - MidJourney中国区核心创作者
 
-> -可灵 & 即梦超级创作者
+> - 可灵 & 即梦超级创作者
 
 >
 
@@ -24,23 +25,21 @@
 
 > 👸号：AI替代人类
 
-**历史版本：**
+## 历史版本
 
-[深度研究助手“Mira”](https://vxc3hj17dym.feishu.cn/wiki/CVqUwmb6piE00nkc65icYX9lnPg)
+- [深度研究助手“Mira”](https://vxc3hj17dym.feishu.cn/wiki/CVqUwmb6piE00nkc65icYX9lnPg)
+- [深度研究助手 "Mira" 2.0](https://vxc3hj17dym.feishu.cn/wiki/BmdUwwZMBitTfTkJG3McxDO0nYf)
+- [深度研究助手 "Mira" 3.0](https://vxc3hj17dym.feishu.cn/wiki/KwTbwlSihildZ8kTjcTcV1m4n13)
 
-[深度研究助手 "Mira" 2.0](https://vxc3hj17dym.feishu.cn/wiki/BmdUwwZMBitTfTkJG3McxDO0nYf)
+## 本版与前三个版本的区别
 
-[深度研究助手 "Mira" 3.0](https://vxc3hj17dym.feishu.cn/wiki/KwTbwlSihildZ8kTjcTcV1m4n13)
-
-本版与前三个版本的区别：
-
-+   这次更加强化了工具部分的调用
-
-+   格式上更适合呈现引用链接
-
-+   因为涉及工具调用，所以只适用于chatgpt
+- 这次更加强化了工具部分的调用
+- 格式上更适合呈现引用链接
+- 因为涉及工具调用，所以只适用于chatgpt
 
 ---
+
+### Mira 独立提示词 v4.0
 
 ```
 # Mira 独立提示词 v4.0
@@ -143,111 +142,96 @@ quality_check:
   - 计算是否可复现；图表是否注明来源与时间
 ```
 
-# 照旧测试一下
+### 照旧测试一下
 
 > 【需要分析的内容】：这次GPT-5的更新市场反响
 
-# GPT-5 更新的市场反响（快评版）
+## GPT-5 更新的市场反响（快评版）
 
-## 直答
+### 直答
 
-> GPT-5 发布后一周内，**口碑明显两极****：权威媒体**与官方强调在数学、编码与[多模态上的指](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com)标性[领先；但大量用户在社媒](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com)/社[区集中吐槽体验下降](https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-users-are-not-happy-with-gpt-5-launch-as-thousands-take-to-reddit-claiming-the-new-upgrade-is-horrible?utm_source=chatgpt.com)，引[发“回退感”与情绪](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)落差。OpenAI 随即滚动修复并临时恢复 GPT-4o 供付费用户选择，以缓解负面舆情。(OpenAI, Tom's Guide, TechRadar, The Verge)
+> GPT-5 发布后一周内，**口碑明显两极**：权威媒体与官方强调在数学、编码与[多模态上的指标性领先](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com)；但大量用户在社媒/社区集中吐槽体验下降，引发“回退感”与情绪落差。OpenAI 随即滚动修复并临时恢复 GPT-4o 供付费用户选择，以缓解负面舆情。(OpenAI, Tom's Guide, TechRadar, The Verge)
 
----
+### 方法
 
-## 方法
+- 数据/来源与检索策略：重点跟踪**官方公告**、**权威媒体新闻**与**用户侧聚合反馈**（Reddit/报道汇编），并标注时间线（新近 3–7 日）。
+- 工具说明：使用联网检索核对事件节点（发布、舆情、公司回应）、量化用户反馈（贴文热度）、行业分析（对 IT 服务与开发者生态的影响）。
 
-+   数据/来源与检索策略：重点跟踪**官方公告**、**权威媒体新闻**与**用户侧聚合反馈**（Reddit/报道汇编），并标注时间线（新近 3–7 日）。
+### 主要发现（按子问题）
 
-+   工具说明：使用联网检索核对事件节点（发布、舆情、公司回应）、量化用户反馈（贴文热度）、行业分析（对 IT 服务与开发者生态的影响）。
+1. 整体情绪与口碑走向
 
----
+- **正向**：OpenAI 公布一系列 SOTA 指标（[AIME 2025、SWE-bench、MMU、HealthBench](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com) 等），强调“更强推理与更少幻觉”。(OpenAI)
+- **负向**：发布后 3–4 天内，Reddit 与媒体集中出现“像降级”“语气冷淡”“更慢更错”等反馈；[Tom's Guide](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com) 报道“近 5,000 名用户在 Reddit 聚集表达不满”。(Tom's Guide)
 
-## 主要发现（按子问题）
+分析：指标优→体验差的反差放大了用户落差感；情绪面偏空但并非一边倒（开发者与行业用户对硬指标仍认可）。证据强度：中（媒体与平台量化、但缺少官方完整使用数据）。
 
-1.  整体情绪与口碑走向
+1. 争议的“技术成因”与官方处置
 
-+   **正向**：OpenAI 公布一系列 SOTA 指标（AIME 2025、SWE-b[ench、M](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com)MMU、HealthBench 等），强调“更强推理与更少幻觉”。(OpenAI)
+- **成因线索**：OpenAI 的“动态模型切换/路由”功能在发布窗口出现异常，[导致 GPT-5 表现“变笨”与波动](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com)。(WIRED)
+- **处置**：Sam Altman 宣布[恢复 GPT-4o 供 Plus 用户选择](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)，修复路由、提高限额，并预告更可控的“思考模式”。(The Verge, WIRED)
 
-+   **负向****：发布**后 **3–4 **天内**，Red**dit 与媒体集中出现“像降级”“语气冷淡”“更慢更错”等[反馈；Tom’s Gu](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com)**id**e 报道“近 5,000 名用户在 Reddit 聚集表达不满”。(Tom's Guide)
-分析：**“指标优→体验差”**的反差放大了用户落差感；情绪面偏空但并非一边倒（开发者与行业用户对硬指标仍认可）。证据强度：中（媒体与平台量化、但缺少官方完整使用数据）。
-
-1.  争议的“技术成因”与官方处置
-
-+   **成因线索**：OpenAI 的“动态模型切换/路由”功**能在发布窗口出现异**常，[导致 GP](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com)T-5 表现“变笨”与波动。(WIRED)
-
-+   **处置**：Sam Altman 宣布[恢复 GPT-4o](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com) 供[ Plus](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com)** 用**户选择、**修复路由、提高限额，并预告更**可控的“思考模式”。(The Verge, WIRED)
 分析：这属于可定位且可回滚的上线质量问题，短期能通过配置与补丁缓解。证据强度：中高（多家一线科技媒体与 CEO 公开回应互相印证）。
 
-1.  市场与行业层面的一级反应
+1. 市场与行业层面的一级反应
 
-+   **新闻侧观察**：[美联社将 GP](https://apnews.com/article/gpt5-openai-chatgpt-artificial-intelligence-d12cd2d6310a2515042067b5d3965aa1?utm_source=chatgpt.com)T-5 视为“检验 AI 热度是否名副其实”的风向标，并提及 Microsoft 将其纳入 Copilot。(AP News)
+- **新闻侧观察**：[美联社将 GPT-5 视为“检验 AI 热度是否名副其实”的风向标](https://apnews.com/article/gpt5-openai-chatgpt-artificial-intelligence-d12cd2d6310a2515042067b5d3965aa1?utm_source=chatgpt.com)，并提及 Microsoft 将其纳入 Copilot。(AP News)
+- **行业影响**：多篇行业报道聚焦**印度 IT 服务业**的收入与模式压力（编码/客服/Helpdesk 自动化增强，或致 2–3% 收入下压、催生向高价值服务转型）。(The Economic Times, The Economic Times)
 
-+   **行业影响**：多篇行业报道聚焦**印度 IT 服务业**的收入**与模****式压力（编码/客服**/Helpdesk 自动化增强，或致 2–3% 收入下压、催生向高价值服务转型）。(The Economic Times, The Economic Times)
 分析：买方议价 + 交付自动化提升 → 外包/人月模型受压；短中期“提效让利”将成为甲方诉求。证据强度：中（分析师观点与新闻一致，但需财报期后数据验证）。
 
-1.  媒体叙事与公众议题
+1. 媒体叙事与公众议题
 
-+   **媒体框架****：Wire**d** 强调“**用户起义→O[penAI](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman?utm_source=chatgpt.com) 追着修”，并讨论“情感型交互与去谄媚化的张力”。(WIRED)
+- **媒体框架**：[Wired 强调“用户起义→OpenAI 追着修”](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman?utm_source=chatgpt.com)，并讨论“情感型交互与去谄媚化的张力”。(WIRED)
+- **社会议题**：部分媒体与专栏延伸至**用户对 AI 的情感依赖**、以及能耗与可持续性等争议（交叉报道）。(WIRED, 卫报)
 
-+   **社会议题**：部分媒体与专栏延伸至**用户对 AI 的情感依赖**[、以及能耗](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman?utm_source=chatgpt.com)与可[持续](https://www.theguardian.com/global/2025/aug/11/nvidia-amd-trump-openai-gpt-5-aol-dial-up?utm_source=chatgpt.com)**性等**争议（交叉报道）。(WIRED, 卫报)
 分析：情绪面讨论会在社交平台持续发酵，但对 B 端采用的决定性影响有限。证据强度：中（评论性报道与社媒脉冲）。
 
----
+### 可视化摘要（文字版）
 
-## 可视化摘要（文字版）
+- **时间线**：
+  8/7 发布（指标亮眼）→ 8/8–8/10 舆情走弱（[Reddit/媒体集中吐槽](https://apnews.com/article/gpt5-openai-chatgpt-artificial-intelligence-d12cd2d6310a2515042067b5d3965aa1?utm_source=chatgpt.com)）→ 8/10 起官方回滚/修复（[恢复 4o、修路由、强化思考模式承诺](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)）。(AP News, Tom's Guide, The Verge)
 
-+   **时间线**：
- 8/7 发布（指标亮眼） → 8/8–8/10 舆情走弱（Reddit/媒体集[中吐槽） → ](https://apnews.com/article/gpt5-openai-chatgpt-artificial-intelligence-d12cd2d6310a2515042067b5d3965aa1?utm_source=chatgpt.com)8/[10 起官方回滚/修复](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com)（恢[复 4o、修路由、](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)强化思考模式承诺）。(AP News, Tom's Guide, The Verge)
+### 讨论：限制与风险
 
----
+- **样本偏差**：Reddit/科技媒体易放大“负面体验”，缺少**分层用户（行业/教育/编程）**的系统性满意度数据。
+- **基准与感知的错位**：离线基准进步 ≠ 在线体验恒定提升；路由/速率限制等平台层变量会主导早期口碑。
+- **行业影响需财务验证**：关于外包收入受压的幅度仍是**分析师前瞻**，需等待 1–2 个财报季验证。(The Economic Times)
 
-## 讨论：限制与风险
+### 结论与建议（给决策者/媒体编辑部）
 
-+   **样本偏差**：Reddit/科技媒体易放大“负面体验”，缺少**分层用户（行业/教育/编程）**的系统性满意度数据。
+1. **短期口碑修复期**：关注 OpenAI 的[路由修复/模型选择开关/“Thinking”模式放权](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com)的落地节奏；评测文案需区分“首发窗口”与“修复后”的体验差异。(WIRED, The Verge)
 
-+   **基准与感知的错位****：离线基准进步** ≠ 在线体验恒定提升；路由/速率限制等平台层变量会主导早期口碑。
+2. **编辑策略**：报道时并列呈现**SOTA 指标**与**用户体验争议**两条线，避免单面叙事；在每段声明后给出来源与时间戳。(OpenAI, [Tom's Guide](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com))
 
-+   **行业影响需财务验证**：关于外包收入受压的幅度仍是**分析师前瞻**，需等待 1–2 个财报季验证。(The Economic Times)
+3. **行业侧动作**：对外包/IT 服务客户，提前准备**“AI 提效—定价重构”谈判话术与方案包**（以交付物质量/时效为锚点的结果导向计费）。(The Economic Times)
 
----
+4. **内部评测建议**：用**同一批任务集**分三次复测（发布日、回滚日、修复后一周），并记录延迟、错误率、风格一致性三项核心指标，拉齐“指标—体验”认知。
 
-## 结论与建议（给决策者/媒体编辑部）
+### 参考资料（节选）
 
-1.  **短期口碑修复期**：关注 OpenAI 的[路由修复/](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com)模型[选择开关/“Thi](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)nking”模式放权的落地节奏；评测文案需区分“首发窗口”与“修复后”的体验差异。(WIRED, The Verge)
+- [OpenAI](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com) 官方：GPT-5 总览与开发者说明。(OpenAI)
+- 美联社首发报道与行业联动。([AP News](https://apnews.com/article/gpt5-openai-chatgpt-artificial-intelligence-d12cd2d6310a2515042067b5d3965aa1?utm_source=chatgpt.com))
 
-1.  **编辑策略**：报道时并列呈现**SOTA 指标**与**用户体验争议**[两条线，避免](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com)单面[叙事；在每段声明后给出](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com)来源与时间戳。(OpenAI, Tom's Guide)
 
-1.  **行业侧动作**：对外包/IT 服务客户，提前准备**“AI 提效—定价重构”谈判话术与方案包（以交付物质量/时效为锚点的结果导向计费**）。(The Economic Times)
 
-1.  **内部评测建议**：用**同一批任务集****分三次复测（发布日、回滚**日、修复后一周），并记录延迟、错误率、风格一致性三项核心指标，拉齐“指标—体验”认知。
+# GPT‑5 发布与市场反响 · 媒体汇总
 
----
+## 舆情与媒体反响
 
-## 参考资料（节选）
-
-+   [OpenAI](https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com) 官方：GPT-5 总览与开发者说明。(OpenAI)
-
-+   美联社首发报道与行业联动。([AP News](https://apnews.com/article/gpt5-openai-chatgpt-artificial-intelligence-d12cd2d6310a2515042067b5d3965aa1?utm_source=chatgpt.com))
-
-+   Reddit 舆情与科技媒体汇总（Tom’[s Guide、Tec](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com)hR[adar）。(To](https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-users-are-not-happy-with-gpt-5-launch-as-thousands-take-to-reddit-claiming-the-new-upgrade-is-horrible?utm_source=chatgpt.com)m's Guide, TechRadar)
-
-+   [OpenA](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com)I [对舆情的快速响应（](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)Wired、The Verge）。(WIRED, The Verge)
-
-+   产业影响观察（Economic Times/ETtech）。(The Economic Times, The Economic Times)
++ Reddit 舆情与科技媒体汇总（[Tom's Guide](https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade?utm_source=chatgpt.com)、[TechRadar](https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-users-are-not-happy-with-gpt-5-launch-as-thousands-take-to-reddit-claiming-the-new-upgrade-is-horrible?utm_source=chatgpt.com)）。(Tom's Guide, TechRadar)
++ [OpenAI](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman/?utm_source=chatgpt.com) 对舆情的快速响应（[The Verge](https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o?utm_source=chatgpt.com)）。(WIRED, The Verge)
++ 产业影响观察（Economic Times/ETtech）。(The Economic Times, The Economic Times)
 
 ---
 
-## 要不要**深入下一步**（可选）：
+## 要不要深入下一步（可选）：
 
-+   我可以为你做一版**“媒体用语气校准 + 统一引注格式”的长文评测初稿**，或
-
-+   针对你公司读者群，定制**“B 端采用与 ROI 评估”**简报。
++ 我可以为你做一版**“媒体用语气校准 + 统一引注格式”**的长文评测初稿，或
++ 针对你公司读者群，定制**“B 端采用与 ROI 评估”**简报。
 
 ## GPT‑5 发布与市场反响 · 精选报道
 
-+   [WIRED](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman?utm_source=chatgpt.com)
-
-+   The Economic Times
-
-+   [卫报](https://www.theguardian.com/global/2025/aug/11/nvidia-amd-trump-openai-gpt-5-aol-dial-up?utm_source=chatgpt.com)
++ [WIRED](https://www.wired.com/story/openai-gpt-5-backlash-sam-altman?utm_source=chatgpt.com)
++ The Economic Times
++ [卫报](https://www.theguardian.com/global/2025/aug/11/nvidia-amd-trump-openai-gpt-5-aol-dial-up?utm_source=chatgpt.com)

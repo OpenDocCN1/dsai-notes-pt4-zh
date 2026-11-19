@@ -1,3 +1,4 @@
+
 # 推出 AI 相关的法律服务和教育资源
 
 > 来源：[https://docs.feishu.cn/docx/Sst6djhTmo8gRZxwkJYcPFdKneb](https://docs.feishu.cn/docx/Sst6djhTmo8gRZxwkJYcPFdKneb)
@@ -10,9 +11,9 @@ AI 席卷法律行业，给律师行业带来了挑战，也带来了机会。�
 
 ## Norton Rose 律师事务所：推出 AI 相关 IP 问题的全球指南
 
-随着[ A](https://www.law.com/legaltechnews/2024/04/18/what-have-we-learned-from-20-ai-copyright-lawsuits/)I 在各行各业使用的增长，与生成式 AI 相关的知识产权问题，成为了全球法律诉讼的关键。目前，以 OpenAI 为代表的大模型公司们，正在世界各地面临几起与训练大模型相关的版权和专利侵权诉讼。
+随着 [AI](https://www.law.com/legaltechnews/2024/04/18/what-have-we-learned-from-20-ai-copyright-lawsuits/) 在各行各业使用的增长，与生成式 AI 相关的知识产权问题，成为了全球法律诉讼的关键。目前，以 OpenAI 为代表的大模型公司们，正在世界各地面临几起与训练大模型相关的版权和专利侵权诉讼。
 
-2024 年 7 月，Norton Rose[ F](https://www.nortonrosefulbright.com/en-ca/knowledge/publications/acf01adf/generative-ai)ulbright 律所整理并推出一份指南，通过研究全球的法律规定，并分析侵犯版权、知识产权、信息和责任保密的规定，为客户和法律专业人士提供参考。
+2024 年 7 月，Norton Rose [Fulbright](https://www.nortonrosefulbright.com/en-ca/knowledge/publications/acf01adf/generative-ai) 律所整理并推出一份指南，通过研究全球的法律规定，并分析侵犯版权、知识产权、信息和责任保密的规定，为客户和法律专业人士提供参考。
 
 > 指南地址：https://www.nortonrosefulbright.com/en-ca/knowledge/publications/acf01adf/generative-ai
 

@@ -1,10 +1,11 @@
+
 # 上周刚刚发完Nature的论文，这周就更新DeepSeek-V3.1最终版本啦~
 
 > 来源：[https://xatc0v8uz5m.feishu.cn/docx/PXNkdm64gowbxKx16SNcH1n8ntc](https://xatc0v8uz5m.feishu.cn/docx/PXNkdm64gowbxKx16SNcH1n8ntc)
 
 哈喽，好久不见（粤）~
 
-# DeepSeek-V3.1-Terminus
+## DeepSeek-V3.1-Terminus
 
 上周刚刚发完nature的论文，这周就更新了模型。简直是妥妥国产扛把子呀~
 
@@ -18,7 +19,7 @@
 
 我知道大家不会看nature这么板书的论文的啦~后面附有思维导图，可以简单浏览下图三
 
-想要深度解读这篇Nature《DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning》论文的朋友可以看这里：https://notebooklm.google.com/notebook/b3b81d75-98de-4b63-bcae-ab2d4d26a02e
+想要深度解读这篇Nature《DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning》论文的朋友可以看这里：`https://notebooklm.google.com/notebook/b3b81d75-98de-4b63-bcae-ab2d4d26a02e`
 
 2、在Agent能力优化：进一步提升了Code Agent（代码代理）和Search Agent（搜索代理）的表现。但是提升的服务不是很明显。没有做实际的测试效果，因为我好长一段时间没有用DS，有没有和我一样的/捂脸
 
@@ -26,9 +27,9 @@
 
 不过根据不一定可靠的消息，年底会更新大动作，期待一波吧
 
-最新的官方说明文档：https://api-docs.deepseek.com/news/news250922
+最新的官方说明文档：`https://api-docs.deepseek.com/news/news250922`
 
-开源地址：https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus
+开源地址：`https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus`
 
 ![](img/1fa09d2f3dbeeb933b402b575867c002.png)
 

@@ -1,3 +1,4 @@
+
 # 如何升级Plus 账号
 
 > 来源：[https://my.feishu.cn/docx/ChhXdCDPNorgXZxPUAKc94UUnFp](https://my.feishu.cn/docx/ChhXdCDPNorgXZxPUAKc94UUnFp)
@@ -6,11 +7,11 @@
 
 如果你想得到更好的体验，那么你可以升级你的 ChatGPT 为 Plus 版本。
 
-你可以点击左下角的「upgrade to Plus 」菜单：
+你可以点击左下角的「`upgrade to Plus`」菜单：
 
 ![](img/5efdddfd698af2a0502b3c93f26d45a9.png)
 
-接着点击「upgrade plan」菜单，可以看到，ChatGPT 的订阅费用为 20 刀一个月，而且需要国外的信用卡进行支付：
+接着点击「`upgrade plan`」菜单，可以看到，ChatGPT 的订阅费用为 20 刀一个月，而且需要国外的信用卡进行支付：
 
 ![](img/fc3e38bb445ddadf46771479ac6765f9.png)
 

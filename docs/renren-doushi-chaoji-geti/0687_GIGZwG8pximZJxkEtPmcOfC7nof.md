@@ -1,8 +1,9 @@
+
 # 2025-02-05【超级标04】iOS应用 + 付费订阅
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/Uy6ydHaMOoM4WgxXDeRcYFdQn1f](https://xuqiwei1986.feishu.cn/docx/Uy6ydHaMOoM4WgxXDeRcYFdQn1f)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/Uy6ydHaMOoM4WgxXDeRcYFdQn1f`
 
-> 🔗 原文链接： h[ttps://scys.com/ar](https://scys.com/articleDetail/xq_topic/8858151525818582)ticleDetail/xq_t...
+> 🔗 原文链接：`https://scys.com/articleDetail/xq_topic/8858151525818582`
 
 004
 

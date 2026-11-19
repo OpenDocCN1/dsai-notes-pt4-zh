@@ -1,8 +1,7 @@
-# 01.06-AGI-Eval团队：AI视频生成模型年度横评，Sora大饼落地，但国产模型仍然领先！
-
-> 来源：[https://agijuejin.feishu.cn/docx/D3jxdqDJ9oS8RFxFHvEclncynzh](https://agijuejin.feishu.cn/docx/D3jxdqDJ9oS8RFxFHvEclncynzh)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 01 月 06 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/D3jxdqDJ9oS8RFxFHvEclncynzh](https://agijuejin.feishu.cn/docx/D3jxdqDJ9oS8RFxFHvEclncynzh)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

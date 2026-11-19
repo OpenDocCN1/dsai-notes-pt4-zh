@@ -1,6 +1,7 @@
+
 # 4.2 🌟Prompt 高阶框架模板
 
-> 来源：[https://my.feishu.cn/docx/Y0IqdXP8moEODTxKzSncjCD0n6d](https://my.feishu.cn/docx/Y0IqdXP8moEODTxKzSncjCD0n6d)
+> 来源：[`https://my.feishu.cn/docx/Y0IqdXP8moEODTxKzSncjCD0n6d`](https://my.feishu.cn/docx/Y0IqdXP8moEODTxKzSncjCD0n6d)
 
 ## 严谨事实核查引擎
 
@@ -35,9 +36,7 @@
 - 在具体任务的用户提示中，可进一步约束来源类型（如仅接受官方文档）、限定时效与地域、或要求通过单元测试/用例验证。
 ```
 
----
-
-作者简介：
+## 作者简介
 
 我是文森策，一个10年+品牌策划人，AI提示词&提效玩家。
 

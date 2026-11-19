@@ -1,10 +1,11 @@
+
 # 菜菜专栏-AI营销学习
 
 > 来源：[https://yunyinghui.feishu.cn/docx/NRgpdvMwaoLuB7xlViDcTIWGnde](https://yunyinghui.feishu.cn/docx/NRgpdvMwaoLuB7xlViDcTIWGnde)
 
 > **菜菜简介：**13年互联网内容营销经验，万象 AI 实验室提示词教练，三节课特邀AI营销讲师，龙哥盟ChatGPT航海教练，学员5000+，专注研究AI+营销，帮助企业和有产品的个人IP通过AI做内容引流、产品推广宣传、销售话术等，提升内容营销的效率和质量。
 
-# 营销方法论
+## 营销方法论
 
 [菜菜说内容营销01：什么是内容营销？AI为什么可以赋能内容营销？](https://balfcirt91j.feishu.cn/docx/VOhldbnIwo2f5BxdxkocRCEBnda?from=from_copylink)
 
@@ -30,7 +31,7 @@
 
 [菜菜说内容营销12：客户说1句，抵过你说100句，如何收集客户案例，促成交？](https://balfcirt91j.feishu.cn/docx/JiPedXpEIoA0PCx1cdScFAcunEh?from=from_copylink)
 
-# AI营销案例
+## AI营销案例
 
 菜菜的AI营销案例001：ChatGPT写中秋、国庆节日借势海报
 
@@ -60,7 +61,7 @@
 
 [菜菜的AI营销案例014：让ChatGPT帮你写"主](https://balfcirt91j.feishu.cn/docx/CeYydmFJ1ochnvxZLJbcCUIAnTf?from=from_copylink)动选择增强版"文案，75%的用户乖乖买单
 
-[菜菜的AI营销案例015：用ChatGPT在推广](https://balfcirt91j.feishu.cn/docx/RAjyd🐧fYovbXgxa9vPcQsYjntf)文案中加入清晰具体的细节，说服效果杠杠的
+[菜菜的AI营销案例015：用ChatGPT在推广](https://balfcirt91j.feishu.cn/docx/RAjyd🐧fYovbXgxa9vPcQsYjntf)文案中加入清晰具体的细节，说服效果杠杆的
 
 菜菜的AI营销案例016：如何用ChatGPT做数据型盘点文案
 
@@ -120,6 +121,6 @@
 
 龙哥盟chatGPT航海教练，目前专注在AI+营销内容创作上，指导和帮助个人IP、创业团队、企业高效高质地创作营销内容。
 
-**加我请说明来意****：**
+**加我请说明来意：**
 
 ![](img/977e780f41e2c7d44111ca4c83abaaee.png)

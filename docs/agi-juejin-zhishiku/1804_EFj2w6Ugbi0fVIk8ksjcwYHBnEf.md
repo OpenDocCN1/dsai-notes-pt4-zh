@@ -1,22 +1,23 @@
+
 # AI风景动态壁纸制作及变现思路分享
 
 > 来源：[https://agijuejin.feishu.cn/docx/GDITdbUIeoIGdTxmth4c7bTWnUd](https://agijuejin.feishu.cn/docx/GDITdbUIeoIGdTxmth4c7bTWnUd)
 
 > 作者：德里克文
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/689826454)hihu.com/p/689826...
+> 原文：[https://zhuanlan.zhihu.com/p/689826454](https://zhuanlan.zhihu.com/p/689826454)
 
-**一直有朋友问我AI绘画有什么赚钱变现的案例及方向，**[**下面我将整合下**](https://www.zhihu.com/search?q=%E9%A3%8E%E6%99%AF%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)我知道的信息，实操介绍下 风景动态壁纸 的教程制作，以及将相关的变现信息分享给大家。
+一直有朋友问我AI绘画有什么赚钱变现的案例及方向，[下面我将整合下](https://www.zhihu.com/search?q=%E9%A3%8E%E6%99%AF%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)我知道的信息，实操介绍下 风景动态壁纸 的教程制作，以及将相关的变现信息分享给大家。
 
 ![](img/398a5fa782b80f723b6908099f65347c.png)
 
 动态风景壁纸在短视频自媒体上有众多的受众，是一个很不错的赛道。
 
-### **一、项目简介**
+## 一、项目简介
 
-### **1.上手难度**
+### 1. 上手难度
 
-本[项目对绘画](https://www.zhihu.com/search?q=%E5%8A%A8%E6%80%81%E5%85%83%E7%B4%A0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)技能无要求，新手可利用Midjourney或Whee软件轻松生成图像，然后用Dreamina或Pixverse软件整合素材并加入 动态元素 ，即可制作出让人误以为是摄影作品的视频。
+本项目对绘画技能无要求，新手可利用Midjourney或Whee软件轻松生成图像，然后用Dreamina或Pixverse软件整合素材并加入 动态元素 ，即可制作出让人误以为是摄影作品的视频。
 
 [🎦 点击观看视频](https://vdn.vzuu.com/HD/57beb1ee-edde-11ee-98f0-42f85705ce79-v8_f2_t1_pFM6xo4h.mp4?auth_key=1724312457-0-0-9011cb5f774c2c2cf18da17d4b261a05&bu=1513c7c2&c=avc.8.0&disable_local_cache=1&expiration=1724312457&f=mp4&pu=e59e796c&v=ali&pp=ChMxNDAxNjIzODY1NzM5NTc5MzkyGGMiC2ZlZWRfY2hvaWNlMhMxMzY5MDA1NjA4NTk5OTA0MjU3PXu830Q%3D&pf=Web&pt=zhihu)
 
@@ -28,7 +29,7 @@
 
 ### 2. 案例展示
 
-[许多人可能](https://www.zhihu.com/search?q=%E8%A7%86%E9%A2%91%E8%9E%8D%E5%90%88&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)已经在网络上看到过将实景风光与 视频融合 的作品，如乡村景色、秋冬季节变换、雪地中奔跑的小狗、飘浮的云彩以及雨中温馨的场景。
+许多人可能已经在网络上看到过将实景风光与 视频融合 的作品，如乡村景色、秋冬季节变换、雪地中奔跑的小狗、飘浮的云彩以及雨中温馨的场景。
 
 [🎦 点击观看视频](https://vdn6.vzuu.com/HD/49f08748-eabb-11ee-8b01-e20985a02fae-v8_f2_t1_89ZB5HNG.mp4?pkey=AAVXegdfq1UaokX9ntqErRn6TO67RA1c21YzvsiF0E9_wvIz1FkLfJydNsTPLdJ9KQmkGra2D-UVY8so0uRpp-fL&bu=1513c7c2&c=avc.8.0&expiration=1724316057&f=mp4&pu=e59e796c&v=ks6&pp=ChMxNDAxNjIzODY1NzM5NTc5MzkyGGMiC2ZlZWRfY2hvaWNlMhMxMzY5MDA1NjA4NTk5OTA0MjU3PXu830Q%3D&pf=Web&pt=zhihu)
 
@@ -66,7 +67,7 @@
 
 ![](img/0d798d19c056305b7b4452c33af3f0b2.png)
 
-画面比例根据需求进行设置， [采样器 ](https://www.zhihu.com/search?q=%E9%87%87%E6%A0%B7%E5%99%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)选择增强光影的DPM，适当可以调高画面的细节。
+画面比例根据需求进行设置，[采样器 ](https://www.zhihu.com/search?q=%E9%87%87%E6%A0%B7%E5%99%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)选择增强光影的DPM，适当可以调高画面的细节。
 
 接下来我们将生成的壁纸下载下来，图片部分就准备好了。
 
@@ -98,7 +99,7 @@
 
 疫情过后，旅游一直是一个热门的话题。
 
-[先是淄博烧](https://www.zhihu.com/search?q=%E5%86%B0%E5%9F%8E%E5%B0%94%E6%BB%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)烤盛[宴风靡一时](https://www.zhihu.com/search?q=%E5%86%B0%E9%9B%AA%E7%8E%8B%E5%9B%BD&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)，再有天津大爷英勇一跳搅动江湖，紧接着 冰城尔滨 的 冰雪王国 梦幻出圈，一波波热潮让国人的旅行热情持续燃烧！
+[先是淄博烧](https://www.zhihu.com/search?q=%E5%86%B0%E5%9F%8E%E5%B0%94%E6%BB%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)烤盛[宴风靡一时](https://www.zhihu.com/search?q=%E5%86%B0%E9%9B%AA%E7%8E%8B%E5%9B%BD&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)，紧接着 冰城尔滨 的 冰雪王国 梦幻出圈，一波波热潮让国人的旅行热情持续燃烧！
 
 [当下，各路](https://www.zhihu.com/search?q=%E4%B8%87%E4%BA%BA%E7%A9%BA%E5%B7%B7&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)旅友正揣测着下一座即将C位出道的城市爆款，谁会是下一个 万人空巷 奔赴的目的地呢？这悬念吊足了大家的胃口！
 
@@ -122,33 +123,33 @@
 
 为了实现这一目标，可以按照以下步骤操作并寻找变现途径：
 
-+   以治愈系风景类的大V账号为标杆，运用AI工具创作一系列充满治愈力量的风景视频，借此快速积攒粉丝群体；
++ 以治愈系风景类的大V账号为标杆，运用AI工具创作一系列充满治愈力量的风景视频，借此快速积攒粉丝群体；
 
-+   以抖音为例，一旦粉丝数达到1000，即可解锁团购带货功能；
++ 以抖音为例，一旦粉丝数达到1000，即可解锁团购带货功能；
 
-+   深入多个网络平台挖掘当红景点资源，收集整合相关文案及精美图片素材；
++ 深入多个网络平台挖掘当红景点资源，收集整合相关文案及精美图片素材；
 
-+   利用AI技术对所选景点进行 [二次创作 ](https://www.zhihu.com/search?q=%E4%BA%8C%E6%AC%A1%E5%88%9B%E4%BD%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)，制作出富有感染力的治愈系景点图片和文案，搭配上合成的真人语音解说或是悠扬悦耳的背景音乐；
++ 利用AI技术对所选景点进行 [二次创作 ](https://www.zhihu.com/search?q=%E4%BA%8C%E6%AC%A1%E5%88%9B%E4%BD%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)，制作出富有感染力的治愈系景点图片和文案，搭配上合成的真人语音解说或是悠扬悦耳的背景音乐；
 
-+   将精心制作的视频发布出去，并巧妙挂载相关的景点团购链接；
++ 将精心制作的视频发布出去，并巧妙挂载相关的景点团购链接；
 
-+   随着视频热度攀升，适时引导粉丝参与团购购买，实现流量向销量的有效转化。
++ 随着视频热度攀升，适时引导粉丝参与团购购买，实现流量向销量的有效转化。
 
-### 2.其他思路
+### 2. 其他思路
 
 而除了这个变现的方案外，也还有其他更加直接的变现思路也供大家参考：
 
-**销售动态壁纸： **[手机支持](https://www.zhihu.com/search?q=%E5%B0%8F%E7%A8%8B%E5%BA%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)动态壁纸，你可以向感兴趣的用户销售；此外，通过入驻壁纸 小程序 ，用户每次下载壁纸，你可获得少量的广告收益。
+销售动态壁纸： [手机支持](https://www.zhihu.com/search?q=%E5%B0%8F%E7%A8%8B%E5%BA%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A689826454%7D)动态壁纸，你可以向感兴趣的用户销售；此外，通过入驻壁纸 小程序 ，用户每次下载壁纸，你可获得少量的广告收益。
 
 ![](img/b0674bfc079c95ece1b0e3e61a4b551c.png)
 
-**定制素材包： **根据客户的需求，使用AI技术生成个性化图像，创建专属视频素材库，每个定制视频进行售价，可以喜迎不少兴趣者。
+定制素材包： 根据客户的需求，使用AI技术生成个性化图像，创建专属视频素材库，每个定制视频进行售价，可以喜迎不少兴趣者。
 
-**教学收徒： **通过你的视频吸引学习者，引导他们加入🛰️进行教学，根据提供的课程价值设定价格。
+教学收徒： 通过你的视频吸引学习者，引导他们加入🛰️进行教学，根据提供的课程价值设定价格。
 
 ![](img/b1e7c4e24caa4525e8f0b9f5e0c536df.png)
 
-**链接带货： **根据视频风格，如治愈系视频可推荐心理学书籍，农村风格视频可推广当地特产，如蜂蜜、特色菜脯等，这类账号吸粉能力强，变现能力佳。
+链接带货： 根据视频风格，如治愈系视频可推荐心理学书籍，农村风格视频可推广当地特产，如蜂蜜、特色菜脯等，这类账号吸粉能力强，变现能力佳。
 
 ## 结语
 

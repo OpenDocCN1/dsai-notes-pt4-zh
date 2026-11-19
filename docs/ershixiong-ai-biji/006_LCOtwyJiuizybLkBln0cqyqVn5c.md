@@ -1,10 +1,11 @@
+
 # Puppeteer MCP 与 Playwright MCP：深度对比与选择指南
 
 > 来源：[https://qianniucity.feishu.cn/docx/KhaGdSIhNo0foyx9q0BceOM3n4d](https://qianniucity.feishu.cn/docx/KhaGdSIhNo0foyx9q0BceOM3n4d)
 
 ## 引言
 
-模型上下文协议（Model Context Protocol，MCP）作为一种新兴的开放标准，旨在标准化应用程序如何为大型语言模型（Large Language Models，LLMs）提供上下文信息。通过建立统一的接口，MCP 使得 LLMs 能够与各种外部工具和数据源进行安全且可控的交互。在众多利用 MCP 实现浏览器自动化功能的项目中，基于 Puppeteer 和 Playwright 的 MCP 服务器无疑是两种备受关注的方案。Puppeteer 由 Chrome 团队开发，而 Playwright 则由 Microsoft 创建，两者都是强大的 Node.js 库，用于以编程方式控制浏览器。本报告旨在对这两个 MCP 服务器进行深入的对比分析，以帮助开发者根据自身的需求做出明智的选择。报告将从实现原理、功能特性、性能表现、易用性、社区活跃度、可扩展性以及各自的优劣势等方面展开全面的探讨。
+模型上下文协议（Model Context Protocol，MCP）作为一种新兴的开放标准，旨在标准化应用程序如何为大型语言模型（Large Language Models，LLMs）提供上下文信息。通过建立统一的接口，MCP 使得 LLMs 能够与各种外部工具和数据源进行安全且可控的交互。在众多利用 MCP 实现浏览器自动化功能的项目中，基于 Puppeteer 和 Playwright 的 MCP 服务器无疑是两种备受关注的方案。Puppeteer 由 Chrome 团队开发，而 Playwright 则由 Microsoft 创建，两者都是强大的 Node.js 库，用于以编程方式控制浏览器。本报告旨在对这两个 MCP 服务器进行深入的对比分析，以帮助开发者根据自身的需求做出明确的选择。报告将从实现原理、功能特性、性能表现、易用性、社区活跃度、可扩展性以及各自的优劣势等方面展开全面的探讨。
 
 ## Puppeteer MCP 服务器分析
 
@@ -16,11 +17,11 @@ Puppeteer MCP 服务器的核心在于利用 Puppeteer 库提供的浏览器自�
 
 #### 支持的 MCP 协议特性
 
-Puppeteer MCP 服务器主要通过暴露一系列工具（Tools）来实现其功能，这些工具是 MCP 协议的核心组成部分。例如，它提供了 puppeteer_navigate 用于导航到指定的 URL，puppeteer_screenshot 用于捕获整个页面或特定元素的截图，puppeteer_click 用于点击页面上的元素，puppeteer_fill 用于填写输入框，以及 puppeteer_evaluate 用于在浏览器控制台中执行 JavaScript 代码。此外，该服务器还能够提供对诸如浏览器控制台日志和屏幕截图等资源（Resources）的访问。这些工具和资源的结合，使得 LLMs 能够执行一系列有针对性的 Web 交互操作。
+Puppeteer MCP 服务器主要通过暴露一系列工具（Tools）来实现其功能，这些工具是 MCP 协议的核心组成部分。例如，它提供了 `puppeteer_navigate` 用于导航到指定的 URL，`puppeteer_screenshot` 用于捕获整个页面或特定元素的截图，`puppeteer_click` 用于点击页面上的元素，`puppeteer_fill` 用于填写输入框，以及 `puppeteer_evaluate` 用于在浏览器控制台中执行 JavaScript 代码。此外，该服务器还能够提供对诸如浏览器控制台日志和屏幕截图等资源（Resources）的访问。这些工具和资源的结合，使得 LLMs 能够执行一系列有针对性的 Web 交互操作。
 
 #### 可用 API 及其功能
 
-Puppeteer MCP 服务器提供的 API 主要是通过上述的工具来实现的。具体来说，puppeteer_navigate 允许 LLM 指示服务器导航到特定的网页地址。puppeteer_screenshot 工具则支持捕获网页的完整截图，也可以通过 CSS 选择器指定需要截图的特定元素。对于页面元素的交互，puppeteer_click 能够模拟用户点击操作，通过 CSS 选择器定位目标元素。puppeteer_hover 提供了悬停在指定元素上的功能。对于表单操作，puppeteer_fill 可以根据 CSS 选择器定位输入框并填充内容，而 puppeteer_select 则用于选择下拉菜单中的选项。最后，puppeteer_evaluate 允许 LLM 提供 JavaScript 代码，由服务器在浏览器环境中执行，从而实现更高级的自动化任务。值得一提的是，某些 Puppeteer MCP 的实现还支持连接到已激活远程调试的 Chrome 实例，这为集成现有浏览器会话提供了可能性。
+Puppeteer MCP 服务器提供的 API 主要是通过上述的工具来实现的。具体来说，`puppeteer_navigate` 允许 LLM 指示服务器导航到特定的网页地址。`puppeteer_screenshot` 工具则支持捕获网页的完整截图，也可以通过 CSS 选择器指定需要截图的特定元素。对于页面元素的交互，`puppeteer_click` 能够模拟用户点击操作，通过 CSS 选择器定位目标元素。`puppeteer_hover` 提供了悬停在指定元素上的功能。对于表单操作，`puppeteer_fill` 可以根据 CSS 选择器定位输入框并填充内容，而 `puppeteer_select` 则用于选择下拉菜单中的选项。最后，`puppeteer_evaluate` 允许 LLM 提供 JavaScript 代码，由服务器在浏览器环境中执行，从而实现更高级的自动化任务。值得一提的是，某些 Puppeteer MCP 的实现还支持连接到已激活远程调试的 Chrome 实例，这为集成现有浏览器会话提供了可能性。
 
 #### 具体使用场景与案例
 
@@ -34,23 +35,23 @@ Puppeteer MCP 服务器在多种场景下展现出其价值。例如，它可以
 
 #### 安装与配置过程
 
-Puppeteer MCP 服务器的安装和配置过程相对直接。开发者可以选择通过 npm 全局安装（npm install -g puppeteer-mcp），或者使用 npx 直接运行（npx puppeteer-mcp）。对于需要与 Claude 集成的场景，通常需要修改 claude_desktop_config.json 文件，将 Puppeteer MCP 服务器的详细信息添加到配置文件中。此外，从源代码安装也是一种选择。对于那些希望在无头模式下运行 Chromium 的用户，还可以使用 Docker 进行部署。提供多种安装方式体现了对不同用户和部署场景的考虑。
+Puppeteer MCP 服务器的安装和配置过程相对直接。开发者可以选择通过 `npm` 全局安装（`npm install -g puppeteer-mcp`），或者使用 `npx` 直接运行（`npx puppeteer-mcp`）。对于需要与 Claude 集成的场景，通常需要修改 `claude_desktop_config.json` 文件，将 Puppeteer MCP 服务器的详细信息添加到配置文件中。此外，从源代码安装也是一种选择。对于那些希望在无头模式下运行 Chromium 的用户，还可以使用 Docker 进行部署。提供多种安装方式体现了对不同用户和部署场景的考虑。
 
 #### API 的简洁程度与开发者体验
 
-Puppeteer MCP 服务器的 API 设计倾向于直观和易于理解。其工具的命名通常具有描述性，例如 puppeteer_navigate 和 puppeteer_screenshot。工具的参数也相对简单明了，例如导航工具只需要提供目标 URL，而元素定位则主要依赖 CSS 选择器。这种设计旨在降低 LLMs 使用这些工具的难度，使得它们能够更有效地执行自动化任务。
+Puppeteer MCP 服务器的 API 设计倾向于直观和易于理解。其工具的命名通常具有描述性，例如 `puppeteer_navigate` 和 `puppeteer_screenshot`。工具的参数也相对简单明了，例如导航工具只需要提供目标 URL，而元素定位则主要依赖 CSS 选择器。这种设计旨在降低 LLMs 使用这些工具的难度，使得它们能够更有效地执行自动化任务。
 
 #### 文档与示例的完善程度
 
-目前，关于 Puppeteer MCP 的文档和示例主要散落在各种博客文章和技术文章中，例如初学者指南和使用案例介绍。一些平台如 Cursor Directory 也提供了相关的文档信息。npm 包 @modelcontextprotocol/server-puppeteer 本身也包含了一些基本的描述和工具信息。虽然存在一些文档和示例，但可能缺乏集中化和全面的官方文档。
+目前，关于 Puppeteer MCP 的文档和示例主要散落在各种博客文章和技术文章中，例如初学者指南和使用案例介绍。一些平台如 Cursor Directory 也提供了相关的文档信息。npm 包 `@modelcontextprotocol/server-puppeteer` 本身也包含了一些基本的描述和工具信息。虽然存在一些文档和示例，但可能缺乏集中化和全面的官方文档。
 
 ### 社区活跃度和维护情况
 
-根据检索到的信息，npm 包 @modelcontextprotocol/server-puppeteer 最近一次发布是在四个月前（截至信息收集时）（。同时，GitHub 上也存在一些与 Puppeteer MCP 相关的仓库，例如 merajmehrabi/puppeteer-mcp-server 和 twolven/mcp-server-puppeteer-py，它们的活跃程度可能有所不同。这表明 Puppeteer MCP 存在一定的社区活动和维护，但可能相对分散。
+根据检索到的信息，npm 包 `@modelcontextprotocol/server-puppeteer` 最近一次发布是在四个月前（截至信息收集时）。同时，GitHub 上也存在一些与 Puppeteer MCP 相关的仓库，例如 `merajmehrabi/puppeteer-mcp-server` 和 `twolven/mcp-server-puppeteer-py`，它们的活跃程度可能有所不同。这表明 Puppeteer MCP 存在一定的社区活动和维护，但可能相对分散。
 
 ### 可扩展性与定制化
 
-由于 Puppeteer 本身是开源的，这为基于其构建的 MCP 服务器提供了良好的可扩展性。开发者可以根据需要定制底层的浏览器自动化逻辑。同时，MCP 框架的设计也鼓励扩展。例如，merajmehrabi/puppeteer-mcp-server 项目就明确提到其设计受到了其他项目的启发，并探索了不同的浏览器自动化方法。这暗示了开发者可以根据具体需求添加新的工具或修改现有行为。
+由于 Puppeteer 本身是开源的，这为基于其构建的 MCP 服务器提供了良好的可扩展性。开发者可以根据需要定制底层的浏览器自动化逻辑。同时，MCP 框架的设计也鼓励扩展。例如，`merajmehrabi/puppeteer-mcp-server` 项目就明确提到其设计受到了其他项目的启发，并探索了不同的浏览器自动化方法。这暗示了开发者可以根据具体需求添加新的工具或修改现有行为。
 
 ## Playwright MCP 服务器分析
 
@@ -62,7 +63,7 @@ Playwright MCP 服务器同样旨在通过 MCP 协议将浏览器自动化能力
 
 #### 支持的 MCP 协议特性
 
-Playwright MCP 服务器提供了两种主要的工具模式：快照模式（Snapshot Mode，默认）和视觉模式（Vision Mode，使用截图）。在快照模式下，服务器利用可访问性快照提供了一系列工具，包括导航（browser_navigate）、后退/前进（browser_go_back/browser_go_forward）、点击（browser_click）、悬停（browser_hover）、拖拽（browser_drag）、输入（browser_type）、选择选项（browser_select_option）、选择文件（browser_choose_file）、按下按键（browser_press_key）、获取快照（browser_snapshot）、保存为 PDF（browser_save_as_pdf）、截图（browser_take_screenshot）、等待（browser_wait）和关闭页面（browser_close）。视觉模式则使用截图进行交互，提供的工具包括导航、后退/前进、截图（browser_screenshot）、移动鼠标（browser_move_mouse）、点击（基于坐标）、拖拽（基于坐标）、输入（基于坐标）、按下按键、选择文件、保存为 PDF、等待和关闭页面。此外，Playwright MCP 服务器还支持通过 --port 标志启用服务器发送事件（Server-Sent Events，SSE）传输。
+Playwright MCP 服务器提供了两种主要的工具模式：快照模式（Snapshot Mode，默认）和视觉模式（Vision Mode，使用截图）。在快照模式下，服务器利用可访问性快照提供了一系列工具，包括导航（`browser_navigate`）、后退/前进（`browser_go_back`/`browser_go_forward`）、点击（`browser_click`）、悬停（`browser_hover`）、拖拽（`browser_drag`）、输入（`browser_type`）、选择选项（`browser_select_option`）、选择文件（`browser_choose_file`）、按下按键（`browser_press_key`）、获取快照（`browser_snapshot`）、保存为 PDF（`browser_save_as_pdf`）、截图（`browser_take_screenshot`）、等待（`browser_wait`）和关闭页面（`browser_close`）。视觉模式则使用截图进行交互，提供的工具包括导航、后退/前进、截图（`browser_screenshot`）、移动鼠标（`browser_move_mouse`）、点击（基于坐标）、拖拽（基于坐标）、输入（基于坐标）、按下按键、选择文件、保存为 PDF、等待和关闭页面。此外，Playwright MCP 服务器还支持通过 `--port` 标志启用服务器发送事件（Server-Sent Events，SSE）传输。
 
 #### 可用 API 及其功能
 
@@ -80,23 +81,23 @@ Playwright MCP 服务器被设计为快速且轻量级，这主要归功于其�
 
 #### 安装与配置过程
 
-Playwright MCP 服务器可以通过 npm 进行安装（npm install @playwright/mcp@latest）。对于使用 VS Code 的开发者，该服务器提供了便捷的集成方式，包括专门的安装按钮和 CLI 命令。配置 MCP 客户端以使用该服务器通常只需要指定运行服务器的命令，例如 npx @playwright/mcp@latest。此外，Playwright MCP 服务器还支持多种命令行选项，用于配置浏览器选择、是否以无头模式运行以及设置监听端口等。
+Playwright MCP 服务器可以通过 `npm` 进行安装（`npm install @playwright/mcp@latest`）。对于使用 VS Code 的开发者，该服务器提供了便捷的集成方式，包括专门的安装按钮和 CLI 命令。配置 MCP 客户端以使用该服务器通常只需要指定运行服务器的命令，例如 `npx @playwright/mcp@latest`。此外，Playwright MCP 服务器还支持多种命令行选项，用于配置浏览器选择、是否以无头模式运行以及设置监听端口等。
 
 #### API 的简洁程度与开发者体验
 
-Playwright MCP 服务器的 API 设计清晰明了。其工具的命名具有良好的可读性，例如 browser_navigate 和 browser_click。在快照模式下，API 使用描述性的元素参数，例如 element 和 ref。而在视觉模式下，API 则使用基于坐标的参数，例如 x、y、startX、startY、endX 和 endY。这种根据操作模式区分参数的设计使得 API 更易于理解和使用。
+Playwright MCP 服务器的 API 设计清晰明了。其工具的命名具有良好的可读性，例如 `browser_navigate` 和 `browser_click`。在快照模式下，API 使用描述性的元素参数，例如 `element` 和 `ref`。而在视觉模式下，API 则使用基于坐标的参数，例如 `x`、`y`、`startX`、`startY`、`endX` 和 `endY`。这种根据操作模式区分参数的设计使得 API 更易于理解和使用。
 
 #### 文档与示例的完善程度
 
-Playwright MCP 服务器在其 GitHub 仓库的 README 文件中提供了全面的项目概述，包括功能介绍、安装指南、使用说明以及可用工具的详细信息。此外，README 文件还包含了项目许可证、行为准则和安全策略等相关链接。这些信息为开发者提供了良好的起点，有助于他们理解和使用该项目。
+Playwright MCP 服务器在其 GitHub 仓库的 `README` 文件中提供了全面的项目概述，包括功能介绍、安装指南、使用说明以及可用工具的详细信息。此外，`README` 文件还包含了项目许可证、行为准则和安全策略等相关链接。这些信息为开发者提供了良好的起点，有助于他们理解和使用该项目。
 
 ### 社区活跃度和维护情况
 
-microsoft/playwright-mcp 仓库在 GitHub 上拥有大量的 Star、Watchers 和 Forks，这表明社区对该项目有着浓厚的兴趣。该项目正在积极进行维护，定期发布新版本，最近一次发布是在信息收集时期的前几天。同时，该项目也有多位贡献者参与开发。这些迹象都表明 Playwright MCP 服务器是一个活跃且得到良好维护的项目，拥有强大的社区支持和持续的开发投入。
+`microsoft/playwright-mcp` 仓库在 GitHub 上拥有大量的 Star、Watchers 和 Forks，这表明社区对该项目有着浓厚的兴趣。该项目正在积极进行维护，定期发布新版本，最近一次发布是在信息收集时期的前几天。同时，该项目也有多位贡献者参与开发。这些迹象都表明 Playwright MCP 服务器是一个活跃且得到良好维护的项目，拥有强大的社区支持和持续的开发投入。
 
 ### 可扩展性与定制化
 
-Playwright 本身是一个高度可扩展的浏览器自动化库，因此基于其构建的 MCP 服务器也继承了这一特性。MCP 框架本身也支持扩展。Playwright MCP 服务器的命令行选项允许用户在一定程度上定制服务器的行为，例如选择使用的浏览器和运行模式。此外，README 文件中还演示了如何通过自定义传输机制以编程方式使用服务器。这些都表明 Playwright MCP 服务器在可扩展性和定制化方面具有一定的灵活性。
+Playwright 本身是一个高度可扩展的浏览器自动化库，因此基于其构建的 MCP 服务器也继承了这一特性。MCP 框架本身也支持扩展。Playwright MCP 服务器的命令行选项允许用户在一定程度上定制服务器的行为，例如选择使用的浏览器和运行模式。此外，`README` 文件中还演示了如何通过自定义传输机制以编程方式使用服务器。这些都表明 Playwright MCP 服务器在可扩展性和定制化方面具有一定的灵活性。
 
 ## 对比分析
 
@@ -110,7 +111,7 @@ Playwright MCP 默认的快照模式利用可访问性树，相较于 Puppeteer 
 
 ### 易用性比较
 
-Puppeteer MCP 和 Playwright MCP 都提供了相对简单的 npm 安装方式。Playwright MCP 针对 VS Code 用户的集成体验更佳，提供了更顺畅的设置过程。对于基本的使用场景，Puppeteer MCP 可能具有更简单的配置示例。Playwright MCP 的 API 由于其两种不同的模式和参数集，初学者可能需要稍作学习，但这种设计提供了更高的灵活性。总体而言，两者在易用性方面各有千秋，选择可能取决于开发者偏好的 IDE 和预期自动化场景的复杂度。
+Puppeteer MCP 和 Playwright MCP 都提供了相对简单的 `npm` 安装方式。Playwright MCP 针对 VS Code 用户的集成体验更佳，提供了更顺畅的设置过程。对于基本的使用场景，Puppeteer MCP 可能具有更简单的配置示例。Playwright MCP 的 API 由于其两种不同的模式和参数集，初学者可能需要稍作学习，但这种设计提供了更高的灵活性。总体而言，两者在易用性方面各有千秋，选择可能取决于开发者偏好的 IDE 和预期自动化场景的复杂度。
 
 ### 社区支持与项目维护对比
 
@@ -166,6 +167,8 @@ Playwright MCP 拥有 Microsoft 的强大支持，并拥有一个非常活跃的
 
 ## 结论与建议
 
-对于主要针对 Chromium 且优先考虑初始设置简易性的开发者，Puppeteer MCP 可能是一个合适的选择，尤其是在 AI 系统也基于 JavaScript 的情况下。然而，对于需要跨浏览器兼容性、多语言支持以及利用高级浏览器功能的项目，Playwright MCP 可能是更好的选择。其对可访问性的关注以及 Microsoft 的积极开发也预示着它将是一个更健壮的长期解决方案。如果性能是关键因素，并且目标网站具有良好的可访问性结构，那么 Playwright MCP 的快照模式提供了一种潜在更快且更高效的方法。已经大量投资于 Playwright 生态系统或需要跨不同浏览器进行测试的开发者会发现 Playwright MCP 是一个自然的选择。
 
-总而言之，Puppeteer MCP 和 Playwright MCP 都代表了在使 AI 代理能够与 Web 交互方面的重要进步。它们之间的选择取决于项目的具体需求，包括浏览器兼容性需求、性能考虑、开发者熟悉程度以及所需的社区支持水平。模型上下文协议与 Puppeteer 和 Playwright 等强大的浏览器自动化工具相结合，为更智能和自主的 AI 代理铺平了道路，这些代理能够在互联网上执行复杂的任务，为自动化、数据分析和用户辅助开辟了新的可能性。
+
+对于主要针对 Chromium 且优先考虑初始设置简易性的开发者，`Puppeteer MCP` 可能是一个合适的选择，尤其是在 AI 系统也基于 JavaScript 的情况下。然而，对于需要跨浏览器兼容性、多语言支持以及利用高级浏览器功能的项目，`Playwright MCP` 可能是更好的选择。其对可访问性的关注以及 Microsoft 的积极开发也预示着它将是一个更健壮的长期解决方案。如果性能是关键因素，并且目标网站具有良好的可访问性结构，那么 `Playwright MCP` 的快照模式提供了一种潜在更快且更高效的方法。已经大量投资于 `Playwright` 生态系统或需要跨不同浏览器进行测试的开发者会发现 `Playwright MCP` 是一个自然的选择。
+
+总而言之，`Puppeteer MCP` 和 `Playwright MCP` 都代表了在使 AI 代理能够与 Web 交互方面的重要进步。它们之间的选择取决于项目的具体需求，包括浏览器兼容性需求、性能考虑、开发者熟悉程度以及所需的社区支持水平。模型上下文协议与 `Puppeteer` 和 `Playwright` 等强大的浏览器自动化工具相结合，为更智能和自主的 AI 代理铺平了道路，这些代理能够在互联网上执行复杂的任务，为自动化、数据分析和用户辅助开辟了新的可能性。

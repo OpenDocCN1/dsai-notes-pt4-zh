@@ -1,3 +1,4 @@
+
 # 如何使用ChatGPT统计数据
 
 > 来源：[https://ga67w23t0nn.feishu.cn/docx/NJZ6dZ0LJo6x7sxboSxcyaHenCc](https://ga67w23t0nn.feishu.cn/docx/NJZ6dZ0LJo6x7sxboSxcyaHenCc)
@@ -16,37 +17,34 @@
 
 总共流程不超过1分钟，并且还能提出优化需求进行优化。
 
-**ChatGPT统计数据步骤：**
+## ChatGPT统计数据步骤：
 
-1.  首先，你需要准备好你想要统计的数据，比如一组数字或者一张表格。
+1. 首先，你需要准备好你想要统计的数据，比如一组数字或者一张表格。
+2. 然后，你需要输入你想要做的操作，比如求和、求平均、求最大值等等。
+3. 接着，ChatGPT会根据你的输入生成一个公式，并将其填入相应的单元格。
+4. 最后，你可以复制粘贴生成的表格到Excel或者其他软件中。
 
-1.  然后，你需要输入你想要做的操作，比如求和、求平均、求最大值等等。
-
-1.  接着，ChatGPT会根据你的输入生成一个公式，并将其填入相应的单元格。
-
-1.  最后，你可以复制粘贴生成的表格到Excel或者其他软件中。
-
-**案例1**
+## 案例1
 
 以下是一份数据源，我希望你帮我提炼关键的指标和对应的具体数值，并做成表格（数据源来源与统计网站，直接复制的)
 
 ![](img/838c7f428fac5db17496983de8f80e38.png)
 
-**生成表格：**
+### 生成表格：
 
 ![](img/054f7b126e63812e4758825ed9519703.png)
 
-**增加内容，优化表格**
+### 增加内容，优化表格
 
 ![](img/4d592c4abafaf99818f6be28a163edd6.png)
 
-**案例2**
+## 案例2
 
 [根据下列文字显](https://www.zhihu.com/search?q=Excel%E8%A1%A8%E6%A0%BC&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={:,:})示位置，将文字输入到相应的单元格中，变成Excel表格。
 
 ![](img/1dc397407373e56d2107715dc0a992c9.png)
 
-**chatgpt得出表格如下：**
+### ChatGPT得出表格如下：
 
 ![](img/244d1c37d90f82b165505e4d44bb0dcc.png)
 

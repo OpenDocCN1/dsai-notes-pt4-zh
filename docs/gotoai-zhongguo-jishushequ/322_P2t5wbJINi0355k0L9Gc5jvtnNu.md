@@ -1,8 +1,9 @@
+
 # JumpStart from ChatGPT
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/U4xcdiPwsoD8tfx62hncBPc7nfh](https://gotoaiworld.feishu.cn/docx/U4xcdiPwsoD8tfx62hncBPc7nfh)
 
-# ChatGPT | The Intelligence Age
+## ChatGPT | The Intelligence Age
 
 https://www.youtube.com/watch?v=kIhb5pEo_j0
 

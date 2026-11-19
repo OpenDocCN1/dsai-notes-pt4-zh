@@ -1,10 +1,11 @@
+
 # 2026-03-19 AGI 掘金日报 - AI 新闻推送
 
 > 来源：[https://agijuejin.feishu.cn/docx/VTrpdUD1ooy5vlx9WktcWnVtnzh](https://agijuejin.feishu.cn/docx/VTrpdUD1ooy5vlx9WktcWnVtnzh)
 
 ![](img/6f3518745404af7962400f9d30cd767c.png)
 
-### 🔥 今日热点
+## 🔥 今日热点
 
 1.  谷歌[De](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652684559&idx=2&sn=6d626628722af983906903ad4641dfd6)epMind发布AGI认知评估框架 (链接)：提出基于10大认知能力的AGI评估框架，并联合Kaggle发起20万美元悬赏，旨在构建科学、可操作的AGI评测标准以取代旧体系。
 
@@ -14,7 +15,7 @@
 
 1.  **AI 智能体重构手机交互** ([链接](https://www.ithome.com/0/930/454.htm))：Nothing CEO 裴宇认为未来手机交互将由 AI 智能体驱动，用户通过“意图”即可完成任务，传统应用将退居幕后成为被调用的资源模块。
 
-### 🚀 技术突破
+## 🚀 技术突破
 
 1.  CV[PR](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022107&idx=1&sn=fcf843bb29253f0f9c2707102cc7bd41) 2026 具身智能真机评测赛 (链接)：中山大学等机构推出ManipArena挑战赛，通过20个真机任务、分层OOD评估和绿幕环境，科学评测VLA与世界模型的泛化能力，揭示二者在精细操作与鲁棒性上的互补边界。
 
@@ -26,7 +27,7 @@
 
 1.  **亿纬锂能全固态电池下线** ([链接](https://www.ithome.com/0/930/437.htm))：龙泉三号（面向消费领域）与龙泉四号（面向动力领域）全固态电池成功下线，标志着公司技术创新的重要里程碑，将推动行业向更高安全与能量密度发展。
 
-### 🏢 企业动态
+## 🏢 企业动态
 
 1.  **小米发布三大自研模型** ([链接](https://www.ithome.com/0/930/440.htm))：小米深夜上线旗舰Agent模型MiMo-V2-Pro、全模态基座模型MiMo-V2-Omni及语音合成模型MiMo-V2-TTS，现已登陆多个平台并开放限时免费体验。
 
@@ -36,7 +37,7 @@
 
 1.  苹果[限制](https://www.ithome.com/0/930/415.htm) AI 氛围编程应用更新 (链接)：苹果以违反禁止应用执行可变功能代码的规则为由，阻止 Replit 等 AI 氛围编程应用在 App Store 更新，要求其移除或修改为苹果设备生成软件等功能。
 
-### 🛠️ 工具/教程
+## 🛠️ 工具/教程
 
 1.  **中科院开源本地PPT智能体** ([链接](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022107&idx=2&sn=e1b4981cefa7374dbd336da7573d4d1c))：中科院软件所开源第二代PPTAgent DeepPresenter，9B参数模型在评测中打平GPT-5，可在单张3090/Mac本地部署，通过沙箱环境赋予智能体“手”与“眼”以解决内容空洞与排版错乱问题。
 

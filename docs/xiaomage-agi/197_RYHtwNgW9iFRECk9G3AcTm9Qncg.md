@@ -1,3 +1,4 @@
+
 # Midjourney 制订专属AI头像
 
 > 来源：[https://xmgtoagi.feishu.cn/docx/QMXUdIs9coj68ExXcAZcZhIQnWf](https://xmgtoagi.feishu.cn/docx/QMXUdIs9coj68ExXcAZcZhIQnWf)
@@ -12,7 +13,7 @@
 
 ![](img/f8953a7223f5bcbba60f514a905c5755.png)
 
-然后输入图片生成命令 /imagine prompt:粘贴图片链接 空格 描述（描述按照自己想要的风格写就行），可以尝试多几种风格，版本选择 v4。
+然后输入图片生成命令 `/imagine` prompt:粘贴图片链接 空格 描述（描述按照自己想要的风格写就行），可以尝试多几种风格，版本选择 v4。
 
 ![](img/c0b92c08a8b65dd15b383e60cb741f28.png)
 

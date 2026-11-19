@@ -1,4 +1,5 @@
-#  学习内容 | 第六章：人工智能综合应用实践
+
+# 学习内容 | 第六章：人工智能综合应用实践
 
 > 来源：[https://datawhaler.feishu.cn/docx/SVOPdSgzxoOGN0xteOYc7hgUnrC](https://datawhaler.feishu.cn/docx/SVOPdSgzxoOGN0xteOYc7hgUnrC)
 

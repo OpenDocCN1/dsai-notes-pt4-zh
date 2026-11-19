@@ -1,10 +1,11 @@
+
 # GPT评分测试题
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/BTwtdah72ovUqkxbYpbcWHiAnfe](https://xuqiwei1986.feishu.cn/docx/BTwtdah72ovUqkxbYpbcWHiAnfe)
 
 ## 二、数学类计算，简单计算错误
 
-简单乘除法计算，388*8899=？
+简单乘除法计算，`388*8899`=？
 
 真实答案3452812
 

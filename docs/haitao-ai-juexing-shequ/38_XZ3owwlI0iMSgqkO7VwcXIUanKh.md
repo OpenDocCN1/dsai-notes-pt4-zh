@@ -1,12 +1,13 @@
+
 # Coze+剪映视频工作流生成爆款育儿故事
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/TzaSdRydYoImCQxXwo6cjouAnuc](https://zinxkclpk97.feishu.cn/docx/TzaSdRydYoImCQxXwo6cjouAnuc)
 
-自媒体育儿赛道案例
+## 自媒体育儿赛道案例
 
-工作流搭建
+## 工作流搭建
 
-+   根据主题生成文案
+### 根据主题生成文案
 
 ![](img/941ca9931706dd24d4547ed8ab07d512.png)
 
@@ -45,15 +46,15 @@
 - 字数严格控制在300字以内，确保内容精炼且富有价值。
 ```
 
-+   段落句子拆分转音频
+### 段落句子拆分转音频
 
 ![](img/9e1bc6dec78bb370cd654fbcfa32ab00.png)
 
-+   子工作流细节
+### 子工作流细节
 
 ![](img/e70bb2a101bb0aad8921c27a031a77b7.png)
 
-+   形象一致
+### 形象一致
 
 为保证配图人物一致性我们使用大模型统一人物形象提示词
 
@@ -71,10 +72,9 @@
 
 # 输出格式
 返回人物形象描述提示词。不需要做多余的解释
-
 ```
 
-+   生成封面配图
+### 生成封面配图
 
 ![](img/5e31e0e37f31f9cfa70a1603febcc2af.png)
 
@@ -102,7 +102,7 @@
 
 ![](img/a6b09e0d88ef5a6b1597fc85f0f75893.png)
 
-+   生成分镜配图
+### 生成分镜配图
 
 这里我们需要注意，批处理的是分段段落列表，也就是为每段话生成相应的配图。
 
@@ -128,7 +128,7 @@
 
 ![](img/df9a5ad7db428af8c7cf9631fb67d9e2.png)
 
-+   数据重组
+### 数据重组
 
 最后我们对上述数据素材进行重组，这里用到了代码节点，对段落数据、字幕数据、音频数据进行处理，代码部分稍微复杂，处理了段落、画面、句子的衔接。直接看代码。
 
@@ -137,12 +137,12 @@
 ```
 import json
 import random
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    imageList = params[&#x27;imageList&#x27;]
-    materialList = params[&#x27;materialList&#x27;]
-    width = params[&#x27;width&#x27;]
-    height = params[&#x27;height&#x27;]
+    imageList = params['imageList']
+    materialList = params['materialList']
+    width = params['width']
+    height = params['height']
     captions = []
     imgs = []
     audios = []
@@ -155,58 +155,55 @@ async def main(args: Args) -&gt; Output:
     in_image_start = 0
     in_image_end = 0
     for index, item in enumerate(materialList):
-        textList = item[&#x27;textList&#x27;]
-        audioList = item[&#x27;audioList&#x27;]
-        durationList = item[&#x27;durationList&#x27;]
+        textList = item['textList']
+        audioList = item['audioList']
+        durationList = item['durationList']
         image = imageList[index]
         
         #计算时长，设置插图出现的时长
-        for index2 , obj in enumerate(durationList):
-            in_image_end = int(in_image_start + int(obj[&#x27;duration&#x27;]*1000000))
+        for index2, obj in enumerate(durationList):
+            in_image_end = int(in_image_start + int(obj['duration'] * 1000000))
             captions.append({
-                &#x27;text&#x27;: textList[index2],
-                &#x27;start&#x27;: in_image_start,
-                &#x27;end&#x27;: in_image_end,
-                &quot;in_animation&quot;:&quot;渐显&quot;,&quot;out_animation&quot;:&quot;渐隐&quot;
+                'text': textList[index2],
+                'start': in_image_start,
+                'end': in_image_end,
+                "in_animation": "渐显", "out_animation": "渐隐"
             })
             audios.append({
-                &quot;audio_url&quot;: audioList[index2][&#x27;data&#x27;][&#x27;link&#x27;],
-                &quot;duration&quot;: int(obj[&#x27;duration&#x27;] * 1000000),
-                &quot;start&quot;: in_image_start,
-                &quot;end&quot;: in_image_end
+                "audio_url": audioList[index2]['data']['link'],
+                "duration": int(obj['duration'] * 1000000),
+                "start": in_image_start,
+                "end": in_image_end
             })
             in_image_start = in_image_end
         imgs.append({
-            &quot;image_url&quot;: image,
-            &quot;width&quot;: width,
-            &quot;height&quot;: height,
-            &quot;start&quot;: image_start,
-            &quot;end&quot;: in_image_start,
-            &quot;in_animation&quot;: random.choice([&quot;侧滑&quot;,&quot;向右甩入&quot;,&quot;轻微抖动&quot;,&quot;左右抖动&quot;]), 
-            # &quot;out_animation&quot;: random.choice([&quot;向左滑出&quot;,&quot;向右滑出&quot;]), 
-            &quot;in_animation_duration&quot;: 2500000,
-            # &quot;out_animation_duration&quot;: 1000000,
-            # &quot;loop_animation_duration&quot;: 1000000,
-            &quot;transition&quot;: random.choice([&quot;滑动放大&quot;,&quot;向左拉屏&quot;,&quot;立方体&quot;,&quot;圆形扫描&quot;,&quot;波光粼粼&quot;]),  
-            &quot;transition_duration&quot;: 1000000 
+            "image_url": image,
+            "width": width,
+            "height": height,
+            "start": image_start,
+            "end": in_image_start,
+            "in_animation": random.choice(["侧滑", "向右甩入", "轻微抖动", "左右抖动"]), 
+            "in_animation_duration": 2500000,
+            "transition": random.choice(["滑动放大", "向左拉屏", "立方体", "圆形扫描", "波光粼粼"]),  
+            "transition_duration": 1000000 
         })
-        imageTimes.append(in_image_end-image_start)
+        imageTimes.append(in_image_end - image_start)
         image_start = in_image_end
-        image_end  = in_image_end
+        image_end = in_image_end
 
     
     # 构建输出对象
     ret = {
-        &quot;captions&quot;: json.dumps(captions),
-        &quot;imgs&quot;: json.dumps(imgs),
-        &quot;audios&quot;: json.dumps(audios),
-        &quot;imageTimes&quot;:imageTimes
+        "captions": json.dumps(captions),
+        "imgs": json.dumps(imgs),
+        "audios": json.dumps(audios),
+        "imageTimes": imageTimes
     }
 
     return ret
 ```
 
-+   生成剪映草稿
+### 生成剪映草稿
 
 最后我们使用剪映小助手插件，将上述素材进行串联，生成剪映草稿。
 

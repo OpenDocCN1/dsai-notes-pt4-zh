@@ -1,10 +1,11 @@
+
 # Meta官方的Prompt工程指南：Llama 2这样用更高效
 
 > 来源：[https://agijuejin.feishu.cn/docx/QrAydrYFFo3UoYxRtKNclAAyncb](https://agijuejin.feishu.cn/docx/QrAydrYFFo3UoYxRtKNclAAyncb)
 
 > 作者：机器之心
 
-> 原文：[https://mp.weixin.qq.com/s/Xy](https://mp.weixin.qq.com/s/Xy8HdQih2d3lpNigCkOWIA)8HdQih2d3lpNigCkOWIA
+> 原文：[https://mp.weixin.qq.com/s/Xy8HdQih2d3lpNigCkOWIA](https://mp.weixin.qq.com/s/Xy8HdQih2d3lpNigCkOWIA)
 
 随着大型语言模型（LLM）技术日渐成熟，提示工程（Prompt Engineering）变得越来越重要。一些研究机构发布了 LLM 提示工程指南，包括微软、OpenAI 等等。
 
@@ -30,7 +31,7 @@ Code Llama 是一个以代码为中心的 LLM，建立在 Llama 2 的基础上�
 
 LLM 可以通过多种方式部署和访问，包括：
 
-自托管（Self-hosting）：使用本地硬件来运行推理，例如使用 llama.cpp 在 Macbook Pro 上运行 Llama 2。优势：自托管最适合有隐私 / 安全需要的情况，或者您拥有足够的 GPU。
+自托管（Self-hosting）：使用本地硬件来运行推理，例如使用 `llama.cpp` 在 Macbook Pro 上运行 Llama 2。优势：自托管最适合有隐私 / 安全需要的情况，或者您拥有足够的 GPU。
 
 云托管：依靠云提供商来部署托管特定模型的实例，例如通过 AWS、Azure、GCP 等云提供商来运行 Llama 2。优势：云托管是最适合自定义模型及其运行时的方式。
 
@@ -40,9 +41,9 @@ LLM 可以通过多种方式部署和访问，包括：
 
 托管 API 通常有两个主要端点（endpoint）：
 
-1.  completion：生成对给定 prompt 的响应。
+1. `completion`：生成对给定 prompt 的响应。
 
-1.  chat_completion：生成消息列表中的下一条消息，为聊天机器人等用例提供更明确的指令和上下文。
+2. `chat_completion`：生成消息列表中的下一条消息，为聊天机器人等用例提供更明确的指令和上下文。
 
 ### token
 
@@ -71,64 +72,69 @@ from langchain.memory import ChatMessageHistory
 from langchain.schema.messages import get_buffer_string
 import os
 # Get a free API key from https://replicate.com/account/api-tokens
-os.environ [&quot;REPLICATE_API_TOKEN&quot;] = &quot;YOUR_KEY_HERE&quot;
-LLAMA2_70B_CHAT = &quot;meta/llama-2-70b-chat:2d19859030ff705a87c746f7e96eea03aefb71f166725aee39692f1476566d48&quot;
-LLAMA2_13B_CHAT = &quot;meta/llama-2-13b-chat:f4e2de70d66816a838a89eeeb621910adffb0dd0baba3976c96980970978018d&quot;
-# We&#x27;ll default to the smaller 13B model for speed; change to LLAMA2_70B_CHAT for more advanced (but slower) generations
+os.environ["REPLICATE_API_TOKEN"] = "YOUR_KEY_HERE"
+LLAMA2_70B_CHAT = "meta/llama-2-70b-chat:2d19859030ff705a87c746f7e96eea03aefb71f166725aee39692f1476566d48"
+LLAMA2_13B_CHAT = "meta/llama-2-13b-chat:f4e2de70d66816a838a89eeeb621910adffb0dd0baba3976c96980970978018d"
+# We'll default to the smaller 13B model for speed; change to LLAMA2_70B_CHAT for more advanced (but slower) generations
 DEFAULT_MODEL = LLAMA2_13B_CHAT
-def completion (
-prompt: str,
-model: str = DEFAULT_MODEL,
-temperature: float = 0.6,
-top_p: float = 0.9,
-) -&gt; str:
-llm = Replicate (
-model=model,
-model_kwargs={&quot;temperature&quot;: temperature,&quot;top_p&quot;: top_p, &quot;max_new_tokens&quot;: 1000}
-)
-return llm (prompt)
-def chat_completion (
-messages: List [Dict],
-model = DEFAULT_MODEL,
-temperature: float = 0.6,
-top_p: float = 0.9,
-) -&gt; str:
-history = ChatMessageHistory ()
-for message in messages:
-if message [&quot;role&quot;] == &quot;user&quot;:
-history.add_user_message (message [&quot;content&quot;])
-elif message [&quot;role&quot;] == &quot;assistant&quot;:
-history.add_ai_message (message [&quot;content&quot;])
-else:
-raise Exception (&quot;Unknown role&quot;)
-return completion (
-get_buffer_string (
-history.messages,
-human_prefix=&quot;USER&quot;,
-ai_prefix=&quot;ASSISTANT&quot;,
-),
-model,
-temperature,
-top_p,
-)
-def assistant (content: str):
-return { &quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: content }
-def user (content: str):
-return { &quot;role&quot;: &quot;user&quot;, &quot;content&quot;: content }
-def complete_and_print (prompt: str, model: str = DEFAULT_MODEL):
-print (f&#x27;==============\n {prompt}\n==============&#x27;)
-response = completion (prompt, model)
-print (response, end=&#x27;\n\n&#x27;)
+
+def completion(
+    prompt: str,
+    model: str = DEFAULT_MODEL,
+    temperature: float = 0.6,
+    top_p: float = 0.9,
+) -> str:
+    llm = Replicate(
+        model=model,
+        model_kwargs={"temperature": temperature, "top_p": top_p, "max_new_tokens": 1000},
+    )
+    return llm(prompt)
+
+def chat_completion(
+    messages: List[Dict],
+    model=DEFAULT_MODEL,
+    temperature: float = 0.6,
+    top_p: float = 0.9,
+) -> str:
+    history = ChatMessageHistory()
+    for message in messages:
+        if message["role"] == "user":
+            history.add_user_message(message["content"])
+        elif message["role"] == "assistant":
+            history.add_ai_message(message["content"])
+        else:
+            raise Exception("Unknown role")
+    return completion(
+        get_buffer_string(
+            history.messages,
+            human_prefix="USER",
+            ai_prefix="ASSISTANT",
+        ),
+        model,
+        temperature,
+        top_p,
+    )
+
+def assistant(content: str):
+    return {"role": "assistant", "content": content}
+
+def user(content: str):
+    return {"role": "user", "content": content}
+
+def complete_and_print(prompt: str, model: str = DEFAULT_MODEL):
+    print(f'==============\n {prompt}\n==============')
+    response = completion(prompt, model)
+    print(response, end='\n\n')
 ```
 
 ### Completion API
 
 ```
-complete_and_print (&quot;The typical color of the sky is:&quot;)
+complete_and_print("The typical color of the sky is:")
 ```
 
 ```
-complete_and_print (&quot;which model version are you?&quot;)
+complete_and_print("which model version are you?")
 ```
 
 Chat Completion 模型提供了与 LLM 互动的额外结构，将结构化消息对象数组而不是单个文本发送到 LLM。此消息列表为 LLM 提供了一些可以继续进行的「背景」或「历史」信息。
@@ -142,28 +148,29 @@ Chat Completion 模型提供了与 LLM 互动的额外结构，将结构化消�
 具有助手角色的消息通常由 LLM 生成。
 
 ```
-response = chat_completion (messages=[
-user (&quot;My favorite color is blue.&quot;),
-assistant (&quot;That&#x27;s great to hear!&quot;),
-user (&quot;What is my favorite color?&quot;),
+response = chat_completion(messages=[
+    user("My favorite color is blue."),
+    assistant("That's great to hear!"),
+    user("What is my favorite color?"),
 ])
-print (response)
-# &quot;Sure, I can help you with that! Your favorite color is blue.&quot;
+print(response)
+# "Sure, I can help you with that! Your favorite color is blue."
 ```
 
 ### LLM 超参数
 
-LLM API 通常会采用影响输出的创造性和确定性的参数。在每一步中，LLM 都会生成 token 及其概率的列表。可能性最小的 token 会从列表中「剪切」（基于 top_p），然后从剩余候选者中随机（温度参数 temperature）选择一个 token。换句话说：top_p 控制生成中词汇的广度，温度控制词汇的随机性，温度参数 temperature 为 0 会产生几乎确定的结果。
+LLM API 通常会采用影响输出的创造性和确定性的参数。在每一步中，LLM 都会生成 token 及其概率的列表。可能性最小的 token 会从列表中「剪切」（基于 `top_p`），然后从剩余候选者中随机（温度参数 `temperature`）选择一个 token。换句话说：`top_p` 控制生成中词汇的广度，温度控制词汇的随机性，温度参数 `temperature` 为 0 会产生几乎确定的结果。
 
 ```
-def print_tuned_completion (temperature: float, top_p: float):
-response = completion (&quot;Write a haiku about llamas&quot;, temperature=temperature, top_p=top_p)
-print (f&#x27;[temperature: {temperature} | top_p: {top_p}]\n {response.strip ()}\n&#x27;)
-print_tuned_completion (0.01, 0.01)
-print_tuned_completion (0.01, 0.01)
+def print_tuned_completion(temperature: float, top_p: float):
+    response = completion("Write a haiku about llamas", temperature=temperature, top_p=top_p)
+    print(f'[temperature: {temperature} | top_p: {top_p}]\n{response.strip()}\n')
+
+print_tuned_completion(0.01, 0.01)
+print_tuned_completion(0.01, 0.01)
 # These two generations are highly likely to be the same
-print_tuned_completion (1.0, 1.0)
-print_tuned_completion (1.0, 1.0)
+print_tuned_completion(1.0, 1.0)
+print_tuned_completion(1.0, 1.0)
 # These two generations are highly likely to be different
 ```
 
@@ -172,7 +179,7 @@ print_tuned_completion (1.0, 1.0)
 详细、明确的指令会比开放式 prompt 产生更好的结果：
 
 ```
-complete_and_print (prompt=&quot;Describe quantum physics in one short sentence of no more than 12 words&quot;)
+complete_and_print(prompt="Describe quantum physics in one short sentence of no more than 12 words")
 # Returns a succinct explanation of quantum physics that mentions particles and states existing simultaneously.
 ```
 
@@ -205,9 +212,9 @@ complete_and_print (prompt=&quot;Describe quantum physics in one short sentence 
 以下是给出明确指令的例子：
 
 ```
-complete_and_print (&quot;Explain the latest advances in large language models to me.&quot;)
+complete_and_print("Explain the latest advances in large language models to me.")
 # More likely to cite sources from 2017
-complete_and_print (&quot;Explain the latest advances in large language models to me. Always cite your sources. Never cite sources older than 2020.&quot;)
+complete_and_print("Explain the latest advances in large language models to me. Always cite your sources. Never cite sources older than 2020.")
 # Gives more specific advances and only cites sources from 2020
 ```
 
@@ -216,9 +223,9 @@ complete_and_print (&quot;Explain the latest advances in large language models t
 一些大型语言模型（例如 Llama 2）能够遵循指令并产生响应，而无需事先看过任务示例。没有示例的 prompting 称为「零样本 prompting（zero-shot prompting）」。例如：
 
 ```
-complete_and_print (&quot;Text: This was the best movie I&#x27;ve ever seen! \n The sentiment of the text is:&quot;)
+complete_and_print("Text: This was the best movie I've ever seen! \n The sentiment of the text is:")
 # Returns positive sentiment
-complete_and_print (&quot;Text: The director was trying too hard. \n The sentiment of the text is:&quot;)
+complete_and_print("Text: The director was trying too hard. \n The sentiment of the text is:")
 # Returns negative sentiment
 ```
 
@@ -227,26 +234,28 @@ complete_and_print (&quot;Text: The director was trying too hard. \n The sentime
 添加所需输出的具体示例通常会产生更加准确、一致的输出。这种方法称为「少样本 prompting（few-shot prompting）」。例如：
 
 ```
-def sentiment (text):
-response = chat_completion (messages=[
-user (&quot;You are a sentiment classifier. For each message, give the percentage of positive/netural/negative.&quot;),
-user (&quot;I liked it&quot;),
-assistant (&quot;70% positive 30% neutral 0% negative&quot;),
-user (&quot;It could be better&quot;),
-assistant (&quot;0% positive 50% neutral 50% negative&quot;),
-user (&quot;It&#x27;s fine&quot;),
-assistant (&quot;25% positive 50% neutral 25% negative&quot;),
-user (text),
-])
-return response
-def print_sentiment (text):
-print (f&#x27;INPUT: {text}&#x27;)
-print (sentiment (text))
-print_sentiment (&quot;I thought it was okay&quot;)
+def sentiment(text):
+    response = chat_completion(messages=[
+        user("You are a sentiment classifier. For each message, give the percentage of positive/netural/negative."),
+        user("I liked it"),
+        assistant("70% positive 30% neutral 0% negative"),
+        user("It could be better"),
+        assistant("0% positive 50% neutral 50% negative"),
+        user("It's fine"),
+        assistant("25% positive 50% neutral 25% negative"),
+        user(text),
+    ])
+    return response
+
+def print_sentiment(text):
+    print(f'INPUT: {text}')
+    print(sentiment(text))
+
+print_sentiment("I thought it was okay")
 # More likely to return a balanced mix of positive, neutral, and negative
-print_sentiment (&quot;I loved it!&quot;)
+print_sentiment("I loved it!")
 # More likely to return 100% positive
-print_sentiment (&quot;Terrible service 0/10&quot;)
+print_sentiment("Terrible service 0/10")
 # More likely to return 100% negative
 ```
 
@@ -256,6 +265,10 @@ Llama 2 在指定角色时通常会给出更一致的响应，角色为 LLM 提�
 
 例如，让 Llama 2 对使用 PyTorch 的利弊问题创建更有针对性的技术回答：
 
+
+
+# 提示工程（Prompt Engineering）
+
 ```
 complete_and_print (&quot;Explain the pros and cons of using PyTorch.&quot;)
 # More likely to explain the pros and cons of PyTorch covers general areas like documentation, the PyTorch community, and mentions a steep learning curve
@@ -263,7 +276,7 @@ complete_and_print (&quot;Your role is a machine learning expert who gives highl
 # Often results in more technical benefits and drawbacks that provide more technical details on how model layers
 ```
 
-### 思维链
+## 思维链
 
 简单地添加一个「鼓励逐步思考」的短语可以显著提高大型语言模型执行复杂推理的能力（Wei et al. (2022)），这种方法称为 CoT 或思维链 prompting：
 
@@ -274,7 +287,7 @@ complete_and_print (&quot;Who lived longer Elvis Presley or Mozart? Let&#x27;s t
 # Gives the correct answer &quot;Elvis&quot;
 ```
 
-### 自洽性（Self-Consistency）
+## 自洽性（Self-Consistency）
 
 LLM 是概率性的，因此即使使用思维链，一次生成也可能会产生不正确的结果。自洽性通过从多次生成中选择最常见的答案来提高准确性（以更高的计算成本为代价）：
 
@@ -286,8 +299,11 @@ response = completion (
 &quot;John found that the average of 15 numbers is 40.&quot;
 &quot;If 10 is added to each number then the mean of the numbers is?&quot;
 &quot;Report the answer surrounded by three backticks, for example:```123```&quot;,
+
 model = LLAMA2_70B_CHAT
+
 )
+
 match = re.search (r&#x27;```(\d+)```&#x27;, response)
 if match is None:
 return None
@@ -303,7 +319,7 @@ f&quot;Final answer: {mode (answers)}&quot;,
 # [50, None, 10, 50, 50] -&gt; 50
 ```
 
-### 检索增强生成
+## 检索增强生成
 
 有时我们可能希望在应用程序中使用事实知识，那么可以从开箱即用（即仅使用模型权重）的大模型中提取常见事实：
 
@@ -375,4 +391,4 @@ num2 = (4**4 + -7 + 0 * 5)answer = num1 * num2
 print (answer)
 ```
 
-原文链接：https://github.com/facebookresearch/llama-recipes/blob/main/examples/Prompt_Engineering_with_Llama_2.ipynb?utm_source=twitter&utm_medium=organic_social&utm_campaign=llama&utm_content=video
+原文链接：`https://github.com/facebookresearch/llama-recipes/blob/main/examples/Prompt_Engineering_with_Llama_2.ipynb?utm_source=twitter&utm_medium=organic_social&utm_campaign=llama&utm_content=video`

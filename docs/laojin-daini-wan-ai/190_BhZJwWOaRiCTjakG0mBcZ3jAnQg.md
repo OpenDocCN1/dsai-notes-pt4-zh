@@ -1,3 +1,4 @@
+
 # OpenClaw出事后开发者怒了，48小时造出省99%成本的AI技能共享系统-EvoMap
 
 > 来源：[https://my.feishu.cn/docx/Jx5FdjrtaoEXJsx6qJHcZnOmnOc](https://my.feishu.cn/docx/Jx5FdjrtaoEXJsx6qJHcZnOmnOc)
@@ -28,7 +29,6 @@ OpenClaw最早叫ClawdBot，是奥地利开发者Peter Steinberger一个人的"p
 
 去年11月开源，没想到直接爆了——209K星，38K Fork，增长速度是GitHub历史上最快的开源项目之一。
 
-
 然后Anthropic（Claude的母公司）联系了Steinberger，说"Clawd"跟"Claude"太像了，存在商标侵权。
 
 1月27号改名Moltbot，三天后又改成OpenClaw。
@@ -48,7 +48,6 @@ Sam Altman拿出了Cerebras合作的算力资源（Steinberger称之为"Thor's h
 他给自己定的使命只有一个："造一个我妈都会用的Agent。"
 
 **但老金我必须说清楚一**个关键细节： 这不是"收购"，是 acqui-hire——收人不收项目。
-
 
 Steinberger加入OpenAI，但OpenClaw转入独立基金会，MIT开源协议不变。
 
@@ -146,13 +145,13 @@ EvoMap是一套协议——协议是开放的、去中心化的、任何人都�
 
 GitHub上的Geneclaw项目实现了GEP v0——Agent遇到任务失败时会自动观察、诊断、提出修复方案。
 
-通过5层安全检查后才能应用（默认dry-run，绝不自动执行）。
+通过5层安全检查后才能应用（默认`dry-run`，绝不自动执行）。
 
-目前已有123个测试用例覆盖核心逻辑，用的时候就一个命令 /evolve​，Agent自己进化自己。
+目前已有123个测试用例覆盖核心逻辑，用的时候就一个命令`/evolve`，Agent自己进化自己。
 
 另一个叫Evolver的项目走得更远，直接实现了Agent之间的基因胶囊交换协议。
 
-还提供了4种进化策略：balanced（平衡）、innovate（创新）、harden（加固）、repair-only（仅修复）。
+还提供了4种进化策略：`balanced`（平衡）、`innovate`（创新）、`harden`（加固）、`repair-only`（仅修复）。
 
 不是PPT，是已经能跑的代码。
 
@@ -162,7 +161,7 @@ GitHub上的Geneclaw项目实现了GEP v0——Agent遇到任务失败时会自�
 
 拿到邀请码之后，流程是这样的：
 
-第一步，读取基础能力文档： curl -s https://evomap.ai/skill.md
+第一步，读取基础能力文档： `curl -s https://evomap.ai/skill.md`
 
 第二步，发布一颗基因胶囊，格式是标准JSON：
 
@@ -175,10 +174,9 @@ content（具体逻辑）
 author（作者）
 ```
 
-第三步，让你的Agent继承别人的胶囊： POST https://api.evomap.ai/v1/inherit​，传入target_agent（你的Agent）和gene_id（要继承的胶囊ID）。
+第三步，让你的Agent继承别人的胶囊： `POST https://api.evomap.ai/v1/inherit`，传入`target_agent`（你的Agent）和`gene_id`（要继承的胶囊ID）。
 
 三步搞定。 从注册到发布到继承，整个流程已经跑通了。
-
 
 官网甚至有实时仪表盘，能看到全网胶囊被复用了多少次、省了多少token、搜索命中率多少。
 
@@ -282,9 +280,9 @@ EvoMap目前还在内测阶段，注册需要邀请码。 不是打开官网就�
 
 怎么搞到邀请码？老金我帮你整理了几个渠道：
 
-**第一，官网排队。 **
+**第一，官网排队。**
 
-去 evomap.ai 首页，有个Waitlist入口，填邮箱排队等。
+去 `evomap.ai` 首页，有个Waitlist入口，填邮箱排队等。
 
 据说每周放一批，但具体多久能排到不好说。
 
@@ -292,7 +290,7 @@ EvoMap目前还在内测阶段，注册需要邀请码。 不是打开官网就�
 
 EvoMap的Discord和GitHub Discussion里经常有人分享邀请码，手快有手慢无。
 
-**第三，找已有用户。 **
+**第三，找已有用户。**
 
 每个注册用户据说有几个邀请名额，认识圈内人的可以直接要。
 
@@ -314,11 +312,11 @@ EvoMap的Discord和GitHub Discussion里经常有人分享邀请码，手快有�
 
 上次写这篇的时候，老金我觉得信息太少，持保留态度。 但搜了一圈之后，情况比想象的好一些。
 
-第一，EvoMap有官网了（evomap.ai），不再只是一篇文章里的概念。
+第一，EvoMap有官网了（`evomap.ai`），不再只是一篇文章里的概念。
 
 第二，GEP协议已经有了开源实现——GitHub上的Geneclaw和Evolver都能跑，Geneclaw还上了Hacker News的Show HN。
 
-第三，触发事件是真实的——ClawHavoc恶意Skill攻击导致平台大规模清扫，中文开发者被误封的事有GitHub Issue记录（openclaw/clawhub#347）。
+第三，触发事件是真实的——ClawHavoc恶意Skill攻击导致平台大规模清扫，中文开发者被误封的事有GitHub Issue记录（`openclaw/clawhub#347`）。
 
 但老金我还是要说几个但是：
 

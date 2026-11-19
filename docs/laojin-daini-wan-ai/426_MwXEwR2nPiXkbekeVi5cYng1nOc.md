@@ -1,10 +1,11 @@
+
 # 公开课 - 如何以小白的思维利用AI，本地部署OpenClaw
 
 > 来源：[https://my.feishu.cn/docx/HJs3dY1PRoagwBx0bZwc0VgLnMi](https://my.feishu.cn/docx/HJs3dY1PRoagwBx0bZwc0VgLnMi)
 
 本次公开课重点讲解怎么使用小白的方式和AI交流，以OpenClaw本地部署为例。
 
-**核心内容：**
+## 核心内容
 
 1、怎么以未知的角度，和AI交流，让AI能达成你的目标。
 

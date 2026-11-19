@@ -1,3 +1,4 @@
+
 # Nano Banana 究极玩法+免费入口汇总
 
 > 来源：[https://my.feishu.cn/docx/NwOxd4HfzoKqK1xsZeecXMmInlg](https://my.feishu.cn/docx/NwOxd4HfzoKqK1xsZeecXMmInlg)
@@ -10,9 +11,9 @@
 
 > 📌结尾附有免费使用方法哦~
 
-# 一、美图秀秀
+## 一、美图秀秀
 
-## 美容美形
+### 美容美形
 
 ```
 让这个女生瘦一点
@@ -38,7 +39,7 @@
 
 ![](img/67a854f87a01088cf5f642423f8823d9.png)
 
-## 遮瑕上妆
+### 遮瑕上妆
 
 ```
 去掉脸上的痘痘
@@ -62,9 +63,9 @@
 
 ![](img/1a19879b6eef504aac7cd71376c80883.png)
 
-# 二、废片修复
+## 二、废片修复
 
-## 表情替换
+### 表情替换
 
 ```
 让她笑起来
@@ -82,7 +83,7 @@
 
 ![](img/6052f8ad89ebf1883120e615dc6361c4.png)
 
-## 姿势调整
+### 姿势调整
 
 ```
 给他换个显高的角度
@@ -104,7 +105,7 @@
 
 ![](img/8ce8ce80f776e82ec92e5dd63eb142dd.png)
 
-## 机位/视角变化
+### 机位/视角变化
 
 ```
 从鸟瞰视角生成这张图片
@@ -129,7 +130,7 @@
 
 ![](img/8fdf2e35ad0f38d4d4301a2575f74334.png)
 
-## 老照片修复
+### 老照片修复
 
 ```
 修复并上色这张照片
@@ -147,7 +148,7 @@
 
 ![](img/9a41d10b0b41c7f2b0471b0975d8af7f.png)
 
-# 三、超越时代
+## 三、超越时代
 
 展示不同年代的你是什么样；生成宝丽来风格的照片，并以不同年代的标志性风格呈现
 
@@ -169,9 +170,9 @@
 
 ![](img/e647195fd701c165ed7bdc01f566fb3f.png)
 
-# 四、电商迭代
+## 四、电商迭代
 
-## 虚拟试衣
+### 虚拟试衣
 
 ```
 将图一人物的裤子更换成图二的裤子，保持图一的风格
@@ -183,18 +184,18 @@
 
 ![](img/53dfffff072a50e1f6ce5e886a56c38e.png)
 
-## 杂志封面
+### 杂志封面
 
 ```
 把这张图变成VOGUE杂志封面
-把&quot;VOGUE&quot;改成&quot;QIUZHI&quot;
+把"VOGUE"改成"QIUZHI"
 ```
 
 ![](img/0e31e85d3604fe773d4b74d79e42f0bd.png)
 
 ![](img/dbbd437d0347ce14bfd1972387f29b9a.png)
 
-## 多样化产品组合
+### 多样化产品组合
 
 ```
 一位时尚模特靠在一辆复古红色敞篷车旁，场景为高级浅灰色工作室。她穿着白色上衣、浅色牛仔短裤（点缀笑脸图案和黑色链条），戴着黑框眼镜，脚踩涂鸦风格短靴。模特头戴NASA棒球帽，手中握着一根粉色棒球棒，身边放着一个米白色行李箱。最后老虎在复古红色敞篷车的驾驶位上当司机。
@@ -222,7 +223,7 @@
 
 ![](img/09787cc8364087f968906dae7ea63bec.png)
 
-# 五、家装设计
+## 五、家装设计
 
 > 每一步都可以根据你的需求灵活调整，租房买房者的必备指南~
 
@@ -264,9 +265,9 @@
 
 ![](img/da11a0264ed5ee96ef2db9bee49be90f.png)
 
-# 六、创意设计
+## 六、创意设计
 
-## 3D手办
+### 3D手办
 
 ```
 create a 1/7 scale commercialized figure of thecharacter in the illustration, in a realistic styie and environment.Place the figure on a computer desk, using a circular transparent acrylic base without any text.On the computer screen, display the ZBrush modeling process of the figure.Next to the computer screen, place a BANDAI-style toy packaging box printedwith the original artwork.     
@@ -282,7 +283,7 @@ create a 1/7 scale commercialized figure of thecharacter in the illustration, in
 
 ![](img/cc82d2ac95e8cc7f288da0f46053c130.png)
 
-## 卡通贴纸
+### 卡通贴纸
 
 ```
 将图1变成图2的白色轮廓贴纸风格，有足够的阴影，整体是平面插画风格，并且放置在一个浅灰色背景上
@@ -302,7 +303,7 @@ create a 1/7 scale commercialized figure of thecharacter in the illustration, in
 
 ![](img/2de65b366e1e8ceda918dc75b10a1b10.png)
 
-## 等距模型
+### 等距模型
 
 ```
 制作这个大楼的等距模型
@@ -316,17 +317,17 @@ create a 1/7 scale commercialized figure of thecharacter in the illustration, in
 
 ![](img/52f2a0946a6a6b6364b11bbc3ce5463a.png)
 
-## 游戏UI
+### 游戏UI
 
 ```
-A fantasy RPG game screenshot, daytime, single cute anime-style main character with big expressive eyes, pastel colorful hair, trendy streetwear, holding a cool gun, in a vibrant arcade street scene with neon lights, graffiti, arcade machines, lively city vibe, bright sky. Cinematic lighting, 3D cartoon, RPG game UI with character portrait, health and mana bars, minimap, bottom dialogue &quot;This must be the place...&quot;. Highly detailed, cyberpunk arcade style, ultra quality, playful and immersive.
+A fantasy RPG game screenshot, daytime, single cute anime-style main character with big expressive eyes, pastel colorful hair, trendy streetwear, holding a cool gun, in a vibrant arcade street scene with neon lights, graffiti, arcade machines, lively city vibe, bright sky. Cinematic lighting, 3D cartoon, RPG game UI with character portrait, health and mana bars, minimap, bottom dialogue "This must be the place...". Highly detailed, cyberpunk arcade style, ultra quality, playful and immersive.
 ```
 
 ![](img/b073cb6e1d26a6effaf4cdc7fe441568.png)
 
 ![](img/5201b2a2a6edf64d4e78a5a90d9c0b0d.png)
 
-# 七、时间理解
+## 七、时间理解
 
 ```
  generate an image of what will happen in 10min
@@ -346,9 +347,9 @@ A fantasy RPG game screenshot, daytime, single cute anime-style main character w
 
 ![](img/db06d87f70fee280a9bf589ffc8c6224.png)
 
-# 八、标注生成
+## 八、标注生成
 
-## 动作控制
+### 动作控制
 
 ```
 让这两个人以图3中的姿势激烈战斗，加入丰富的视觉背景和环境细节，强调场景中的互动与紧张氛围
@@ -362,7 +363,7 @@ A fantasy RPG game screenshot, daytime, single cute anime-style main character w
 
 ![](img/bc471bf38b63d1a99d50a340f8cca013.png)
 
-## 封面还原
+### 封面还原
 
 ```
 Create a YouTube thumbnail for this hand-drawn image using modern fonts and a real-life style.
@@ -373,16 +374,20 @@ Create a YouTube thumbnail for this hand-drawn image using modern fonts and a re
 
 ![](img/99c7a2eb3f90308bc4c653d2f892771d.png)
 
-# 九、科普作图
+## 九、科普作图
 
-## 解剖插画
+### 解剖插画
 
 ```
-Draw a bilaterally symmetrical frontal anatomical illustration of the cat, styled similarly to an infographic. The image should show the creature&#x27;s external features on both sides, with its internal anatomy partially exposed. Detailed text should flank the image, explaining the creature&#x27;s biology, abilities, behavior, habitat, and the specific functions of its anatomical structures. The overall design should be clear, informative, and in the style of a scientific illustration.
+Draw a bilaterally symmetrical frontal anatomical illustration of the cat, styled similarly to an infographic. The image should show the creature's external features on both sides, with its internal anatomy partially exposed. Detailed text should flank the image, explaining the creature's biology, abilities, behavior, habitat, and the specific functions of its anatomical structures. The overall design should be clear, informative, and in the style of a scientific illustration.
 绘制一幅猫的正面双侧对称结构解剖插图，风格类似信息图。画面需同时展现猫的两侧外部特征，并部分揭示其内部解剖结构。图像两侧配有详细文字，讲解猫的生物学特性、能力、行为、栖息地，以及各解剖结构的具体功能。整体设计要求清晰、具有科学插画风格，并富有信息性
 ```
 
 ![](img/59036a8d27adda15c515c992a2c308fa.png)
+
+
+
+# Nano Banana 使用指南
 
 ![](img/2c115d613ef44861d2cf9bd8a8b1de9e.png)
 
@@ -439,45 +444,45 @@ You are a VR experience builder. Please highlight the [object] in this image and
 
 ## 方法一：Google AI Studio
 
-> **地址：**https://aistudio.google.com/prompts/new_chat
+> **地址：**`https://aistudio.google.com/prompts/new_chat`
 
-1.  登录Google AI Studio，在右上角选择Nano Banana模型
+1. 登录Google AI Studio，在右上角选择Nano Banana模型
 
-1.  输入提示词，并可以上传图片作为参考
+1. 输入提示词，并可以上传图片作为参考
 
 ![](img/3b86c17fc6ac55b8b8ef7eadc8ae9555.png)
 
 ## 方法二：Gemini
 
-> **地址：**https://gemini.google.com/app
+> **地址：**`https://gemini.google.com/app`
 
-1.  左上角选择Gemini 2.5 Flash模型
+1. 左上角选择Gemini 2.5 Flash模型
 
-1.  工具栏中勾选Create images图片模式
+1. 工具栏中勾选`Create images`图片模式
 
-1.  输入提示词，并可上传图片作为参考
+1. 输入提示词，并可上传图片作为参考
 
 ![](img/da89d8740335324aac46989b2c93f9e8.png)
 
 ## 方法三：LMArena
 
-> **地址：**https://lmarena.ai/
+> **地址：**`https://lmarena.ai/`
 
-1.  顶部栏选择Direct Chat模式
+1. 顶部栏选择`Direct Chat`模式
 
-1.  输入框下方选择image图像生成功能
+1. 输入框下方选择image图像生成功能
 
-1.  此时会自动选择生图模型Nano Banana
+1. 此时会自动选择生图模型Nano Banana
 
 ![](img/96af64b4dfcb8a235dab2e409bf8b1a5.png)
 
 ## 方法四：Flowith
 
-> 地址：https://flowith.io/blank
+> 地址：`https://flowith.io/blank`
 
-1.  选择“图片/视频生成模式”
+1. 选择“图片/视频生成模式”
 
-1.  选择模型Gemini 2.5 Flash Image
+1. 选择模型Gemini 2.5 Flash Image
 
 Flowith每月赠送1000积分，单次生成消耗30积分，能免费生成33次
 
@@ -485,23 +490,23 @@ Flowith每月赠送1000积分，单次生成消耗30积分，能免费生成33�
 
 ## 方法五：OpenRouter
 
-> 地址：https://openrouter.ai/
+> 地址：`https://openrouter.ai/`
 
-1.  顶部选择模型Google: Gemini 2.5 Flash Image Preview (free)
+1. 顶部选择模型Google: Gemini 2.5 Flash Image Preview (free)
 
 ![](img/a85a3be6609f321b29ea3a8f48e6514f.png)
 
-1.  点击Chat，跳转到聊天框就可以使用了
+1. 点击`Chat`，跳转到聊天框就可以使用了
 
 ![](img/1dcf22dde974b1a7ff4cd8170aa438fe.png)
 
 ## 方法六：Lovart
 
-> 地址：https://www.lovart.ai/
+> 地址：`https://www.lovart.ai/`
 
-1.  在官网点击新建项目
+1. 在官网点击新建项目
 
-1.  右侧选择图像模型Nano Banana
+1. 右侧选择图像模型Nano Banana
 
 ![](img/deaba4692183d54daa62ff4c6247db57.png)
 

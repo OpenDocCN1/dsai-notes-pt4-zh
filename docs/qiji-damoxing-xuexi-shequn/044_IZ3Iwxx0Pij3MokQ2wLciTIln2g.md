@@ -1,16 +1,17 @@
+
 # 奇绩大模型日报（11月 21日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/QpVBdDUZJoK9rFxWpp3cvpH7nyg](https://miracleplus.feishu.cn/docx/QpVBdDUZJoK9rFxWpp3cvpH7nyg)
 
-# 推特
+## 推特
 
-### GPT-4o 更新：模型的创意写作能力大幅提升，处理上传文件方面也表现更佳
+### `GPT-4o` 更新：模型的创意写作能力大幅提升，处理上传文件方面也表现更佳
 
 贡献人：
 
-https://x.com/openai/status/1859296125947347164
+`https://x.com/openai/status/1859296125947347164`
 
-GPT-4o 迎来了更新 🎉
+`GPT-4o` 迎来了更新 🎉
 
 模型的创意写作能力大幅提升——写作更加自然、引人入胜，并且更加贴合需求，提升了相关性和可读性。
 
@@ -22,7 +23,7 @@ GPT-4o 迎来了更新 🎉
 
 贡献人：
 
-https://x.com/AndrewYNg/status/1859258084079882512
+`https://x.com/AndrewYNg/status/1859258084079882512`
 
 是时候玩了！通过这门全新短课程《构建 AI 驱动的游戏》，从零开始打造一个交互式游戏！该课程由 @togethercompute 和 @aidungeon 以及 @LatitudeGamesAI 联合打造，由 Together AI 的高级产品经理 @niki_birkner 和 Latitude 的首席执行官兼联合创始人 @nickwalton00 授课。
 
@@ -38,19 +39,19 @@ https://x.com/AndrewYNg/status/1859258084079882512
 
 • 利用结合故事和状态组件的游戏机制，让它们相互作用，从而改善游戏的记忆能力，并为玩家提供稳定的世界状态。
 
-• 学会为 AI 内容生成实施安全和合规措施，使用 Llama Guard 创建自定义政策。
+• 学会为 AI 内容生成实施安全和合规措施，使用 `Llama Guard` 创建自定义政策。
 
 通过这些技术，你将能够开发 AI 驱动的应用程序，从你自己的游戏开始。
 
 ![](img/cf25ae69c16ab8fba226b7d807396df2.png)
 
-[SI3sAh_rYRNj8ao3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IWNvbghrzoYfyHxkgE4cvtEGnWb)
+[`SI3sAh_rYRNj8ao3.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IWNvbghrzoYfyHxkgE4cvtEGnWb)
 
 ### 法国团队利用由10个AI代理组成的团队，撰写一本完全自主创作的书
 
 贡献人：
 
-https://x.com/venturetwins/status/1859298925930479998
+`https://x.com/venturetwins/status/1859298925930479998`
 
 有人正在利用由10个AI代理组成的团队撰写一本完全自主创作的书。
 
@@ -58,41 +59,41 @@ https://x.com/venturetwins/status/1859298925930479998
 
 [你可](https://t.co/CZukNzVPTM)以通过GitHub提交记录跟踪他们的进展，并实时观看他们的工作过程 🤯
 
-https://github.com/Lesterpaintstheworld/terminal-velocity/tree/3b9997e0cbf2120a5df5b2bf39591e81c51f659b
+`https://github.com/Lesterpaintstheworld/terminal-velocity/tree/3b9997e0cbf2120a5df5b2bf39591e81c51f659b`
 
 ![](img/8cd89d993a57f41d88823673632b975c.png)
 
-### Vercel 收购代码搜索引擎 Grep，将继续支持它作为独立工具、API，并集成Vercel平台
+### Vercel 收购代码搜索引擎 `Grep`，将继续支持它作为独立工具、API，并集成Vercel平台
 
 贡献人：
 
-https://x.com/rauchg/status/1859365672444363037
+`https://x.com/rauchg/status/1859365672444363037`
 
-我们已收购了 [http://grep.app](http://grep.app)，这是地球上最快的代码搜索引擎，覆盖了超过 50 万个 Git 仓库。
+我们已收购了 [`http://grep.app`](http://grep.app)，这是地球上最快的代码搜索引擎，覆盖了超过 50 万个 Git 仓库。
 
 我们将继续支持它作为独立工具、API，并将其搜索引擎集成到 @v0 和 @vercel 平台中。
 
 ---
 
-Vercel 已收购代码搜索引擎 Grep。
+Vercel 已收购代码搜索引擎 `Grep`。
 
 ![](img/f8579b5ceba6992a50a0908bb8cd6097.png)
 
-[iPLWz2xhA4WJ3s0l.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZoEybxZdzoQGrTxZCREcR4E5nCe)
+[`iPLWz2xhA4WJ3s0l.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZoEybxZdzoQGrTxZCREcR4E5nCe)
 
-### 最新ChatGPT-4o匿名参赛重夺Chatbot Arena第一名宝座，超越 Gemini-Exp-1114
+### 最新`ChatGPT-4o`匿名参赛重夺Chatbot Arena第一名宝座，超越 `Gemini-Exp-1114`
 
 贡献人：
 
-https://x.com/lmarena_ai/status/1859307979184689269
+`https://x.com/lmarena_ai/status/1859307979184689269`
 
 来自 Chatbot Arena 的激动人心消息❤️‍🔥
 
-过去一周，最新的 @OpenAI ChatGPT-4o（20241120）以“anonymous-chatbot”的身份匿名参赛，获得了超过 8000 次社区投票。
+过去一周，最新的 `@OpenAI` `ChatGPT-4o`（20241120）以“`anonymous-chatbot`”的身份匿名参赛，获得了超过 8000 次社区投票。
 
-结果如何？OpenAI 重新夺回了 #1 的宝座，以令人印象深刻的 1361 分超越了 Gemini-Exp-1114！
+结果如何？OpenAI 重新夺回了 #1 的宝座，以令人印象深刻的 1361 分超越了 `Gemini-Exp-1114`！
 
-最新的 GPT-4o 展现出显著的进步——我们观察到在创意写作（1365 → 1402）以及技术领域（如编程、数学）都有了飞跃。
+最新的 `GPT-4o` 展现出显著的进步——我们观察到在创意写作（1365 → 1402）以及技术领域（如编程、数学）都有了飞跃。
 
 分类排名如下：
 
@@ -108,15 +109,15 @@ https://x.com/lmarena_ai/status/1859307979184689269
 
 • 高难度：#2 → #1
 
-祝贺 @OpenAI！更详细的分析见下方👇
+祝贺 `@OpenAI`！更详细的分析见下方👇
 
 ![](img/4b25e2fad35b80e1a31f3038bbe0adac.png)
 
-# 资讯
+## 资讯
 
 ### OpenAI薪酬大曝光！奥特曼身价145亿，年薪只有55万
 
-https://mp.weixin.qq.com/s/LNiV8V8_wyH9vSFLBZWZWA
+`https://mp.weixin.qq.com/s/LNiV8V8_wyH9vSFLBZWZWA`
 
 **奥特曼年薪仅76001美元** 最新税务申报文件显示，作为OpenAI的CEO，Sam Altman 2023年仅领取了76001美元（约55万人民币）的薪酬，与2022年的73546美元相比略有增加。这一薪资水平与国内互联网行业的普通员工相当，远低于其同事及行业标准。
 
@@ -130,64 +131,69 @@ https://mp.weixin.qq.com/s/LNiV8V8_wyH9vSFLBZWZWA
 
 ![](img/5ac1e5891a0d12fcadff2d149b79b555.png)
 
-### Blackwell产能爬坡顺利，Q4收入将超预期，Scaling Law没放缓
+### `Blackwell`产能爬坡顺利，Q4收入将超预期，`Scaling Law`没放缓
 
-https://mp.weixin.qq.com/s/bsNb1fn1KbnJfrDOYJP_hw
+`https://mp.weixin.qq.com/s/bsNb1fn1KbnJfrDOYJP_hw`
 
-**1、毛利率情况：**由于Blackwell将于本季度推出，成本增加将导致毛利率缩减。芯片推出初期，毛利率将降至70%的低点，即71-72.5%。2025财年下半年将达到70%以上的中值，也就是75%附近。
+**1、毛利率情况：**由于`Blackwell`将于本季度推出，成本增加将导致毛利率缩减。芯片推出初期，毛利率将降至70%的低点，即71-72.5%。2025财年下半年将达到70%以上的中值，也就是75%附近。
 
-2、Blackwell需求情况：Blackwell计划本季开始出货，未来一年加快步伐，预计到2026财年需求将超过供应，推理需求不断增加将推动芯片需求持续增长。CEO黄仁勋称下季度Blackwell的交付量会超出公司此前预期。
+2、`Blackwell`需求情况：`Blackwell`计划本季开始出货，未来一年加快步伐，预计到2026财年需求将超过供应，推理需求不断增加将推动芯片需求持续增长。CEO黄仁勋称下季度`Blackwell`的交付量会超出公司此前预期。
 
-3、Blackwell路线图和供应限制：将继续执行在GTC上提出的路线图，即明年推出Ultra以及在26年过渡到Rubin。英伟达的执行工作进展顺利，公司有庞大的供应链网络，包括台积电和安费诺、Vertiv、SK 海力士、美光、安靠、KYEC、富士康、广达、纬颖、戴尔、惠普、超微、联想等，Blackwell产能爬坡方面的进展良好。
+3、`Blackwell`路线图和供应限制：将继续执行在GTC上提出的路线图，即明年推出`Ultra`以及在26年过渡到`Rubin`。英伟达的执行工作进展顺利，公司有庞大的供应链网络，包括台积电和安费诺、Vertiv、SK 海力士、美光、安靠、KYEC、富士康、广达、纬颖、戴尔、惠普、超微、联想等，`Blackwell`产能爬坡方面的进展良好。
 
 4、AI需求将长期增长，会增长到2030：到2030年，全球用于计算的数据中心将达到几万亿美元。第一点是，从编码到机器学习，实现数据中心的现代化。第二点是生成式人工智能，建设人工智能工厂，我们现在正在创造一种新产业，一个世界上从未有过的新的细分市场。
 
-5、Hopper需求增长将持续：Hopper的需求将持续到明年，最少是明年的前几个季度，与此同时下一季度的出货量将超过本季度。
+5、`Hopper`需求增长将持续：`Hopper`的需求将持续到明年，最少是明年的前几个季度，与此同时下一季度的出货量将超过本季度。
 
-6、Scaling Law没放缓：现在有三种训练方式，预训练会继续，这是经验定律不是什么物理定律。除此之外又有了后训练和推理scaling law。行业在预训练、后训练以及现在非常重要的推理时间方面发展。
+6、`Scaling Law`没放缓：现在有三种训练方式，预训练会继续，这是经验定律不是什么物理定律。除此之外又有了后训练和推理`Scaling Law`。行业在预训练、后训练以及现在非常重要的推理时间方面发展。
 
 ![](img/2ad8d7ec0e78f1964b1d5ed3933446e7.png)
 
 ### AI扩展法则呈现边际效益递减，迫使实验室调整策略
 
-https://techcrunch.com/2024/11/20/ai-scaling-laws-are-showing-diminishing-returns-forcing-ai-labs-to-change-course/
+`https://techcrunch.com/2024/11/20/ai-scaling-laws-are-showing-diminishing-returns-forcing-ai-labs-to-change-course/`
 
 **关键内容总结：** 近年来，AI实验室通过增加计算能力和数据量的方式（即“AI扩展法则”），大幅提高模型性能。然而，这一策略如今正显现边际效益递减的问题，导致模型性能改进速度减缓。多个业内人士，包括OpenAI和a16z的领导者，都认识到单靠增加算力和数据已无法实现飞跃性进步。
 
 **新方向：测试时计算**
 
-微软CEO和其他专家提倡“测试时计算”（test-time compute）作为替代策略。与传统的训练阶段投入更多算力不同，该方法在模型回答问题时分配额外算力和时间，让模型能“思考”更长时间。这种方式已在OpenAI的新“o1”模型中初见成效。
+微软CEO和其他专家提倡“测试时计算”（`test-time compute`）作为替代策略。与传统的训练阶段投入更多算力不同，该方法在模型回答问题时分配额外算力和时间，让模型能“思考”更长时间。这种方式已在OpenAI的新“`o1`”模型中初见成效。
 
 **行业转型与未来趋势**
 
-尽管当前的扩展法则趋于停滞，许多从业者认为通过智能化应用和改进用户体验，仍有提升模型性能的空间。同时，测试时计算的兴起可能推动AI推理专用芯片的需求爆发，例如支持高速推理的Groq和Cerebras芯片。
+尽管当前的扩展法则趋于停滞，许多从业者认为通过智能化应用和改进用户体验，仍有提升模型性能的空间。同时，测试时计算的兴起可能推动AI推理专用芯片的需求爆发，例如支持高速推理的`Groq`和`Cerebras`芯片。
 
 ![](img/421a460337f4eaf1ab5d25e426456293.png)
 
-### Elon Musk与OpenAI的复杂决裂：诉讼、xAI与AI行业权力争夺
+### Elon Musk与OpenAI的复杂决裂：诉讼、`xAI`与AI行业权力争夺
 
-https://www.theverge.com/2024/11/18/24299787/elon-musk-openai-lawsuit-sam-altman-xai-google-deepmind
+`https://www.theverge.com/2024/11/18/24299787/elon-musk-openai-lawsuit-sam-altman-xai-google-deepmind`
 
 1.  Elon Musk起诉OpenAI与微软
+
 Elon Musk最近向法院提交了一起针对OpenAI和微软的诉讼，指控二者形成反竞争的合作关系，并背离了OpenAI最初的非盈利使命。这起诉讼不仅揭示了OpenAI如何转型为微软的“闭源子公司”，也暴露了Musk与OpenAI联合创始人Sam Altman之间的权力斗争。
 
 1.  **早期合作中的裂痕**
-2016年，Altman为获取微软的计算资源，与Musk展开沟通。然而，Musk对任何让OpenAI沦为微软宣传工具的协议表示反感。随着OpenAI逐渐转型为盈利结构，Altman选择封闭其核心AI技术，理由是开放可能带来威胁，这让Musk大为不满。他最终退出董事会，并成立竞争公司xAI。
+
+2016年，Altman为获取微软的计算资源，与Musk展开沟通。然而，Musk对任何让OpenAI沦为微软宣传工具的协议表示反感。随着OpenAI逐渐转型为盈利结构，Altman选择封闭其核心AI技术，理由是开放可能带来威胁，这让Musk大为不满。他最终退出董事会，并成立竞争公司`xAI`。
 
 1.  **人才与资源之争**
+
 在OpenAI的早期，Musk与Altman都认识到吸引顶级AI研究人才的重要性，并为此制定了慷慨的薪酬政策。然而，Google DeepMind对OpenAI人才的威胁，导致双方对发展方向出现分歧。Musk曾提议接管公司以应对挑战，但遭到拒绝。
 
 1.  AGI（通用人工智能）的权力争夺
+
 OpenAI的其他联合创始人担心Musk若担任CEO可能控制AGI的发展，导致“独裁式风险”。这一分歧最终促使Musk在2018年退出，停止资金支持，但继续担任顾问。
 
 1.  **法律与行业影响**
+
 尽管Musk的诉讼被认为法律基础薄弱，但它揭示了OpenAI从创立到如今的重要历史细节。无论诉讼结果如何，这场权力争夺将影响公众对AGI及其未来发展的认知。
 
 ![](img/9973f01a3b166fc886cc578afe6f51ce.png)
 
 ### GitHub Secure Open Source Fund：支持开源生态安全的全新举措
 
-https://github.blog/news-insights/company-news/announcing-github-secure-open-source-fund/
+`https://github.blog/news-insights/company-news/announcing-github-secure-open-source-fund/`
 
 GitHub 宣布启动“安全开源基金”计划，旨在通过资金和项目支持提升开源项目的安全性和可持续性。该基金首期总额为 125 万美元，将资助 125 个项目。以下是计划的主要内容和亮点：
 
@@ -199,7 +205,7 @@ GitHub 宣布启动“安全开源基金”计划，旨在通过资金和项目�
 
 +   提供 3 周安全教育项目，内容包括1对1指导、工作坊、安全工具使用培训等。
 
-+   提供 GitHub Copilot、Copilot Autofix 等工具的免费访问和培训。
++   提供 `GitHub Copilot`、`Copilot Autofix` 等工具的免费访问和培训。
 
 1.  **计划优势**：
 
@@ -213,7 +219,7 @@ GitHub 宣布启动“安全开源基金”计划，旨在通过资金和项目�
 
 +   当前为持有效开源许可证的项目维护者。
 
-+   位于 GitHub Sponsors 支持的地区。
++   位于 `GitHub Sponsors` 支持的地区。
 
 开源安全的重要性
 
@@ -229,33 +235,35 @@ GitHub 宣布启动“安全开源基金”计划，旨在通过资金和项目�
 
 ![](img/5ae958d81e227f0b095bdef7029e393a.png)
 
-# 信号
+## 信号
 
-### Llama Guard 3-1B-INT4: Compact and Efficient Safeguard for Human-AI Conversations
+### `Llama Guard 3-1B-INT4`: Compact and Efficient Safeguard for Human-AI Conversations
 
-https://ai.meta.com/research/publications/llama-guard-3-1b-int4-compact-and-efficient-safeguard-for-human-ai-conversations/
+`https://ai.meta.com/research/publications/llama-guard-3-1b-int4-compact-and-efficient-safeguard-for-human-ai-conversations/`
 
 贡献人：
 
-本文介绍了 Llama Guard 3-1B-INT4，这是一种紧凑且高效的 Llama Guard 模型，已在 Meta Connect 2024 期间向社区开源。我们证明了 Llama Guard 3-1B-INT4 可以部署在资源受限的情况下设备，在商用 Android 移动 CPU 上实现每秒至少 30 个令牌的吞吐量以及 2.5 秒或更短的首次令牌时间。值得注意的是，我们的实验表明，Llama Guard 3-1B-INT4 的安全审核分数与其较大的对应产品 Llama Guard 3-1B 相当或更高，尽管其大小约为 7 倍 (440MB)。
+本文介绍了 `Llama Guard 3-1B-INT4`，这是一种紧凑且高效的 `Llama Guard` 模型，已在 Meta Connect 2024 期间向社区开源。我们证明了 `Llama Guard 3-1B-INT4` 可以部署在资源受限的情况下设备，在商用 Android 移动 CPU 上实现每秒至少 30 个令牌的吞吐量以及 2.5 秒或更短的首次令牌时间。值得注意的是，我们的实验表明，`Llama Guard 3-1B-INT4` 的安全审核分数与其较大的对应产品 `Llama Guard 3-1B` 相当或更高，尽管其大小约为 7 倍 (440MB)。
 
 ![](img/1d586a1d44b8ee1df4c393d5974182c3.png)
 
 ### Learning high-accuracy error decoding for quantum processors
 
-https://www.nature.com/articles/s41586-024-08148-8
+`https://www.nature.com/articles/s41586-024-08148-8`
 
 贡献人：
 
-构建大规模量子计算机需要有效的策略来纠正物理量子系统中不可避免地出现的错误。量子错误纠正码提供了一种通过将逻辑信息冗余编码到许多物理量子位来实现这一目标的方法。实现此类代码的一个关键挑战是准确解码从冗余检查中提取的有噪综合症信息，以获得正确的编码逻辑信息。在这里，我们开发了一个基于变换器的循环神经网络，该网络学习解码表面代码（领先的量子误差纠正代码）。对于距离3和距离5表面代码，我们的解码器在来自Google Sycamore量子处理器的现实世界数据上的性能优于其他最先进的解码器。在距离高达11的情况下，解码器利用软读出和泄漏信息，在具有真实噪音（包括串话和泄漏）的模拟数据上保持了优势。在对大约的合成数据进行训练后，解码器通过在有限的实验样本预算上进行训练来适应更复杂但未知的潜在错误分布。我们的工作说明了机器学习通过直接从数据中学习来超越人类设计的算法的能力，强调了机器学习作为量子计算机解码的有力竞争者。
+构建大规模量子计算机需要有效的策略来纠正物理量子系统中不可避免地出现的错误。量子错误纠正码提供了一种通过将逻辑信息冗余编码到许多物理量子位来实现这一目标的方法。实现此类代码的一个关键挑战是准确解码从冗余检查中提取的有噪综合症信息，以获得正确的编码逻辑信息。在这里，我们开发了一个基于变换器的循环神经网络，该网络学习解码表面代码（领先的量子误差纠正代码）。对于距离3和距离5表面代码，我们的解码器在来自`Google Sycamore`量子处理器的现实世界数据上的性能优于其他最先进的解码器。在距离高达11的情况下，解码器利用软读出和泄漏信息，在具有真实噪音（包括串话和泄漏）的模拟数据上保持了优势。在对大约的合成数据进行训练后，解码器通过在有限的实验样本预算上进行训练来适应更复杂但未知的潜在错误分布。我们的工作说明了机器学习通过直接从数据中学习来超越人类设计的算法的能力，强调了机器学习作为量子计算机解码的有力竞争者。
 
 ![](img/000bfe77bdd3509fd1b818775d46eb3a.png)
 
 ### What Do Learning Dynamics Reveal About Generalization in LLM Reasoning?
 
-https://arxiv.org/abs/2411.07681
+`https://arxiv.org/abs/2411.07681`
 
 贡献人：
+
+
 
 尽管现代大型语言模型 （LLMs，但它们解决问题能力背后的机制仍然难以捉摸。在这项工作中，我们旨在更好地了解 LLM塑造下游泛化。我们的分析侧重于推理任务，其问题结构使我们能够区分记忆（从训练数据中精确复制推理步骤）和性能（最终解决方案的正确性）。我们发现，模型的泛化行为可以通过我们称为预记忆训练准确性的训练指标来有效地表征：模型样本在开始从训练集中复制确切的推理步骤之前对训练查询的准确性。在数据集级别，该指标能够可靠地预测测试准确性，在各种模型（Llama3 8、Gemma2 9B）、数据集（GSM8k、MATH）和训练配置中达到 R2 大约或超过 0.9。在每个示例级别上，该指标还指示单个模型预测是否对训练查询中的扰动具有鲁棒性。通过将模型的学习行为与其泛化联系起来，预记忆训练的准确性可以指导有针对性地改进训练策略。我们以数据管理为例，并表明与 i.i.d. 数据扩展相比，优先考虑预记忆准确性较低的示例会导致数据效率提高 1.5-2 倍，并且优于其他标准数据管理技术。
 
@@ -263,33 +271,33 @@ https://arxiv.org/abs/2411.07681
 
 # 产品
 
-### Postiz
+## Postiz
 
 贡献人：
 
-https://postiz.com/
+`https://postiz.com/`
 
 Postiz 是一款开源的社交媒体调度工具，结合了多种 AI 功能，希望提供透明和道德的服务。它支持快速跨多个渠道发布内容、管理发布日历，并通过分析学习优化使用体验。适合代理机构、自主托管的隐私优先公司以及希望提升社交媒体管理效率的初创企业。
 
 ![](img/e5c0040235d26a9a7a678151c66172fe.png)
 
-### Ply
+## Ply
 
 贡献人：
 
-https://ply.io/customer-features
+`https://ply.io/customer-features`
 
 Portals by Ply 是一种强大的实时数据连接表单体验，结合了复杂逻辑和 AI，无需编码即可创建个性化的表单。它们不仅支持双向数据集成，还能根据 CRM 等来源的数据个性化询问，处理复杂数据，并嵌入迷你应用。Portals 还具有强大的事件跟踪功能，确保安全性符合严格标准。
 
 ![](img/48ea7db30c68e7b0862ef91525b8daea.png)
 
-# HuggingFace&Github
+# HuggingFace & Github
 
-### SeaGOAT
+## SeaGOAT
 
 贡献人：
 
-https://github.com/kantord/SeaGOAT
+`https://github.com/kantord/SeaGOAT`
 
 SeaGOAT 是一个基于向量嵌入的本地代码搜索引擎，允许用户以语义化方式搜索代码库，使用 ChromaDB 向量数据库和本地嵌入引擎，无需依赖第三方 API。其主要功能包括支持关键词和正则表达式搜索、语义化搜索以及本地运行服务器，兼容多种编程语言如 Python、C/C++ 和 TypeScript/JavaScript。
 
@@ -297,11 +305,11 @@ SeaGOAT 是一个基于向量嵌入的本地代码搜索引擎，允许用户以
 
 # 投融资
 
-### Converge Bio获550万美元种子轮融资，打造生物技术大模型的“一站式商店”
+## Converge Bio获550万美元种子轮融资，打造生物技术大模型的“一站式商店”
 
 贡献人：
 
-https://techcrunch.com/2024/11/20/converge-bios-everything-store-for-biotech-llms-brings-in-5-5m-seed/
+`https://techcrunch.com/2024/11/20/converge-bios-everything-store-for-biotech-llms-brings-in-5-5m-seed/`
 
 **投融资亮点：**
 
@@ -325,13 +333,13 @@ https://techcrunch.com/2024/11/20/converge-bios-everything-store-for-biotech-llm
 
 +   通过“客户信任的供应商”策略，公司希望在生物领域扩展更多使用场景，成为抗体设计、疫苗开发等多领域解决方案提供者。
 
-公司官网：https://converge-bio.com/
+公司官网：`https://converge-bio.com/`
 
 ![](img/92d0c02ad0770f4769b83c3257c9a74e.png)
 
-### Federato融资4000万美元，利用AI优化保险风险分析
+## Federato融资4000万美元，利用AI优化保险风险分析
 
-https://techcrunch.com/2024/11/20/federato-fixes-insurance-risk-analysis-with-ai-raises-40m/
+`https://techcrunch.com/2024/11/20/federato-fixes-insurance-risk-analysis-with-ai-raises-40m/`
 
 **投融资亮点：**
 
@@ -355,13 +363,13 @@ https://techcrunch.com/2024/11/20/federato-fixes-insurance-risk-analysis-with-ai
 
 +   Federato与传统SaaS服务商（如Duck Creek）的竞争表明，保险科技的市场潜力巨大，新技术将重塑行业格局。
 
-公司官网：https://www.federato.ai/
+公司官网：`https://www.federato.ai/`
 
 ![](img/ccf634635f6c3aa6b871feeb12f297fb.png)
 
-### Odoo融资5.27亿美元，估值提升至52.6亿美元
+## Odoo融资5.27亿美元，估值提升至52.6亿美元
 
-https://techcrunch.com/2024/11/20/riding-high-on-open-source-erp-odoo-raises-527m-via-secondaries-lifting-its-valuation-to-5-26b/
+`https://techcrunch.com/2024/11/20/riding-high-on-open-source-erp-odoo-raises-527m-via-secondaries-lifting-its-valuation-to-5-26b/`
 
 **投融资亮点：**
 
@@ -385,13 +393,13 @@ https://techcrunch.com/2024/11/20/riding-high-on-open-source-erp-odoo-raises-527
 
 +   尽管Odoo具备高估值与收入，但创始人Fabien Pinckaers表示目前没有计划让公司上市。
 
-公司官网：https://www.odoo.com/zh_CN
+公司官网：`https://www.odoo.com/zh_CN`
 
 ![](img/73da632c2233577487b76e346479fbb8.png)
 
-### H完成2.2亿美元融资并推出首款产品Runner H，专注“代理式”AI应用
+## H完成2.2亿美元融资并推出首款产品Runner H，专注“代理式”AI应用
 
-https://techcrunch.com/2024/11/20/h-the-ai-startup-that-raised-220m-launches-its-first-product-runner-h-for-agentic-applications/
+`https://techcrunch.com/2024/11/20/h-the-ai-startup-that-raised-220m-launches-its-first-product-runner-h-for-agentic-applications/`
 
 **投融资亮点：**
 
@@ -415,13 +423,13 @@ https://techcrunch.com/2024/11/20/h-the-ai-startup-that-raised-220m-launches-its
 
 +   **市场优势：** 通过紧凑型模型和定制化服务，H专注为企业客户提供高效且灵活的AI解决方案，目标引领“代理式”AI时代的发展。
 
-公司官网：https://www.hcompany.ai/
+公司官网：`https://www.hcompany.ai/`
 
 ![](img/90f9ce065fa4b522ce9d393a93130514.png)
 
-### New Lantern获1900万美元A轮融资，用AI优化放射科医生工作流程
+## New Lantern获1900万美元A轮融资，用AI优化放射科医生工作流程
 
-https://techcrunch.com/2024/11/20/benchmark-invests-19m-in-new-lantern-a-smarter-way-for-radiologists-to-use-ai/
+`https://techcrunch.com/2024/11/20/benchmark-invests-19m-in-new-lantern-a-smarter-way-for-radiologists-to-use-ai/`
 
 **投融资亮点：**
 
@@ -445,17 +453,17 @@ https://techcrunch.com/2024/11/20/benchmark-invests-19m-in-new-lantern-a-smarter
 
 +   **行业变革目标：** New Lantern希望通过其产品引领自PACS发明以来的最大行业升级。
 
-公司官网：https://newlantern.ai/
+公司官网：`https://newlantern.ai/`
 
 ![](img/4b2edac37bc09397dc23b227f1bd11ff.png)
 
 # 学习
 
-### 从 GPU 到 SambaNova，spatial computing 的数据流解决方案
+## 从 GPU 到 SambaNova，spatial computing 的数据流解决方案
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/2073210158
+`https://zhuanlan.zhihu.com/p/2073210158`
 
 空间计算（Spatial Computing）近年来受到广泛关注，特别是在数据流加速器（Dataflow Accelerator）的发展中展现出显著潜力。相比传统控制流（Control Flow）架构，空间计算更强调数据流的依赖关系，通过图结构优化任务调度与执行。
 
@@ -471,23 +479,23 @@ https://zhuanlan.zhihu.com/p/2073210158
 
 ![](img/dff900815ec4f3f6b8d2b29a438f0b33.png)
 
-### FlashAttention终于高性能地支持多样的attention mask！
+## FlashAttention终于高性能地支持多样的attention mask！
 
-https://zhuanlan.zhihu.com/p/7793258241
+`https://zhuanlan.zhihu.com/p/7793258241`
 
 FlashAttention（FA）在优化长序列注意力机制性能方面已有显著成果，但其仅支持有限几种mask类型（如causal mask、bidirectional mask等），限制了复杂任务的高效训练。针对这一问题，PaddlePaddle提出了FLASHMASK，通过稀疏化attention mask显著提升了性能，同时保持对loss和精度无损。
 
-FLASHMASK的核心创新在于引入了一种列式稀疏表示方法，利用4个向量（LTS, LTE, UTS, UTE）分别表示每个token在左下角与右上角区域的mask情况。相比传统的稠密mask矩阵，这种方法将访存复杂度从O(N²)降低至O(N)，极大减少了内存占用与计算量。具体来说，对于每个token，稀疏表示方法通过记录被mask掉的区间范围代替完整的二维矩阵存储。进一步优化中，FLASHMASK通过tile策略对稀疏向量进行分块，并计算每个block的稀疏特性（如LTSmin, LTSmax等），从而实现block级别的稀疏mask判断。
+FLASHMASK的核心创新在于引入了一种列式稀疏表示方法，利用4个向量（`LTS`、`LTE`、`UTS`、`UTE`）分别表示每个token在左下角与右上角区域的mask情况。相比传统的稠密mask矩阵，这种方法将访存复杂度从`O(N²)`降低至`O(N)`，极大减少了内存占用与计算量。具体来说，对于每个token，稀疏表示方法通过记录被mask掉的区间范围代替完整的二维矩阵存储。进一步优化中，FLASHMASK通过tile策略对稀疏向量进行分块，并计算每个block的稀疏特性（如`LTSmin`、`LTSmax`等），从而实现block级别的稀疏mask判断。
 
-在计算过程中，FLASHMASK设计了规则区分block类型，包括完全mask、部分mask和无mask三种情况。完全mask的block直接跳过计算，无mask的block直接进行softmax，而部分mask的block则按需应用mask。这种机制有效减少了不必要的计算，提高了整体效率。此外，FLASHMASK通过8个向量描述block级别的稀疏mask，大小为seqlen/blocksize，确保访存复杂度线性增长。
+在计算过程中，FLASHMASK设计了规则区分block类型，包括完全mask、部分mask和无mask三种情况。完全mask的block直接跳过计算，无mask的block直接进行softmax，而部分mask的block则按需应用mask。这种机制有效减少了不必要的计算，提高了整体效率。此外，FLASHMASK通过8个向量描述block级别的稀疏mask，大小为`seqlen/blocksize`，确保访存复杂度线性增长。
 
 实验结果表明，FLASHMASK在训练吞吐性能上显著优于现有方法，同时对loss收敛无影响，精度完全保留。在kernel性能测试中，FLASHMASK的表现远超PyTorch Compiler-based FlexAttention。通过稀疏化attention mask，FLASHMASK成功扩展了FA的适用范围，使其能够高效支持复杂下游任务，并优化了长上下文训练场景的性能。
 
 ![](img/b719064caa654116694a93c47b6d3697.png)
 
-### 图像数据标注指南
+## 图像数据标注指南
 
-https://zhuanlan.zhihu.com/p/7635224558
+`https://zhuanlan.zhihu.com/p/7635224558`
 
 **二维边界框标注**：边界框需涵盖目标的全部可见部分，包括遮挡和反射情况。若目标因遮挡或模糊难以辨别类别，则不标注；对象小于10像素或可见部分低于20%也不标注。此外，边界框应紧贴图像边缘，不因突出物（如天线）而超出规则范围，但实例分割需单独考虑这些情况。
 
@@ -495,9 +503,15 @@ https://zhuanlan.zhihu.com/p/7635224558
 
 **平面语义分割**：标注应紧贴感兴趣区域边界，仅标记长度和宽度超过20像素的区域。遮挡部分（如被树枝或柱子遮挡）应标注可见区域，但小型覆盖物（如薄雪、泥土）需视为整体标注。水坑始终包括在标注中，但反射不算。
 
-**车辆与行人类的特殊规则**：车辆需包括侧视镜等突出部分，吊臂例外。夜间标注以清晰度为前提，未清晰可见的部分不标注。行人则需身体部分明确可见或存在运动特征。
 
-**静态对象与特殊标注**：如自行车架，应将其中的自行车作为整体标注，避免对个体自行车的误判。标注前需统一分类标准，避免忽略标签导致问题。
+
+### 车辆与行人类的特殊规则
+
+车辆需包括侧视镜等突出部分，吊臂例外。夜间标注以清晰度为前提，未清晰可见的部分不标注。行人则需身体部分明确可见或存在运动特征。
+
+### 静态对象与特殊标注
+
+如自行车架，应将其中的自行车作为整体标注，避免对个体自行车的误判。标注前需统一分类标准，避免忽略标签导致问题。
 
 ![](img/04e30eb461f213a12e20fce2d1eab5d8.png)
 
@@ -521,35 +535,35 @@ DistilQwen2系列通过知识蒸馏技术保持性能优势的同时，极大提
 
 https://zhuanlan.zhihu.com/p/6290579087
 
-**SFT Loss**
+#### SFT Loss
 
-1.  **GPTLMLoss**：经典的语言模型损失函数，通过CrossEntropyLoss计算预测与标签之间的交叉熵损失，并通过IGNORE_INDEX实现对prompt部分的遮掩。
+1. `GPTLMLoss`：经典的语言模型损失函数，通过`CrossEntropyLoss`计算预测与标签之间的交叉熵损失，并通过`IGNORE_INDEX`实现对prompt部分的遮掩。
 
-1.  **KDLoss**：知识蒸馏损失，使用教师模型的Logits分布作为软标签，优化学生模型的输出分布。代码实现基于KL散度，并忽略教师模型熵项，以交叉熵形式进行优化，适合蒸馏场景下的效率提升。
+1. `KDLoss`：知识蒸馏损失，使用教师模型的Logits分布作为软标签，优化学生模型的输出分布。代码实现基于KL散度，并忽略教师模型熵项，以交叉熵形式进行优化，适合蒸馏场景下的效率提升。
 
-**DPO Loss**
+#### DPO Loss
 
-1.  **DPOLoss**：通过对比正例与负例的Logits差距，实现正向奖励与负向惩罚。支持两种扩展：
+1. `DPOLoss`：通过对比正例与负例的Logits差距，实现正向奖励与负向惩罚。支持两种扩展：
 
-+   IPO：增加正则化项。
++   `IPO`：增加正则化项。
 
-+   CDPO：加入标签平滑，避免模型过度自信，提升泛化能力。
++   `CDPO`：加入标签平滑，避免模型过度自信，提升泛化能力。
 
-1.  **KTOLoss**：用于非均匀采样的损失函数，不需要明确的偏好对（pair对），通过一批样本的平均KL值约束模型学习正负例。
+1. `KTOLoss`：用于非均匀采样的损失函数，不需要明确的偏好对（pair对），通过一批样本的平均KL值约束模型学习正负例。
 
-**RLHF Loss**
+#### RLHF Loss
 
-1.  **PolicyLoss**：基于PPO优化的策略损失函数，通过概率比值与优势函数，限制策略更新幅度以保证稳定性。
+1. `PolicyLoss`：基于`PPO`优化的策略损失函数，通过概率比值与优势函数，限制策略更新幅度以保证稳定性。
 
-1.  **ValueLoss**：对价值函数的平方误差进行优化，并通过clip操作防止过大的参数更新，选择最大误差路径以稳定训练。
+1. `ValueLoss`：对价值函数的平方误差进行优化，并通过`clip`操作防止过大的参数更新，选择最大误差路径以稳定训练。
 
-1.  **PairWiseLoss**：奖励模型的核心损失函数，通过LogSigmoid计算正负例之间的概率差异，支持可选的Margin项，调整训练动力。
+1. `PairWiseLoss`：奖励模型的核心损失函数，通过`LogSigmoid`计算正负例之间的概率差异，支持可选的`Margin`项，调整训练动力。
 
-**其他扩展**
+#### 其他扩展
 
-1.  **PRMLoss**：专为过程奖励模型设计的损失函数，结合特定标记符和标签分布，支持硬标签和软标签输入。特别适合多步推理场景。
+1. `PRMLoss`：专为过程奖励模型设计的损失函数，结合特定标记符和标签分布，支持硬标签和软标签输入。特别适合多步推理场景。
 
-1.  **LogExpLoss**：通过Log(1+Exp)形式替代传统的LogSigmoid，实现等价优化，简化计算复杂度。
+1. `LogExpLoss`：通过`Log(1+Exp)`形式替代传统的`LogSigmoid`，实现等价优化，简化计算复杂度。
 
 ![](img/7833c4f6fd1c42e7bb93cee1d3fbb7fa.png)
 
@@ -567,9 +581,11 @@ https://zhuanlan.zhihu.com/p/7371838810
 
 ![](img/5c8e2c4639c219923f6ddb0343b04bbe.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+### 奇绩创坛
 
-## 🚀F**24实习岗位**
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+
+## 🚀F24实习岗位
 
 ##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
@@ -577,7 +593,7 @@ https://zhuanlan.zhihu.com/p/7371838810
 
 ##### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
 ##### 行研-GenAI研究岗位-前沿学术探索
 
@@ -585,21 +601,19 @@ https://zhuanlan.zhihu.com/p/7371838810
 
 ##### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+> 点击相关岗位可查看对应岗位需求【JD】；相关岗位投递请扫描二维码
 
 ![](img/eb2ca73ef0b60475f859f72f062bde2e.png)
 
-> 欢迎**推荐/自荐**
+> 欢迎推荐/自荐
 
-> 期待在**奇绩创坛**遇见更好的你
+> 期待在奇绩创坛遇见更好的你
 
 ---
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -611,13 +625,11 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 
->
-
-> 欢迎大家多多帮我们分享,转发~~
+> 欢迎大家多多帮我们分享,转发
 
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 

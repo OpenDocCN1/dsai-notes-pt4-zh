@@ -1,84 +1,71 @@
+
 # Claude Code 综合实战：企业级最佳实践指南
 
 > 来源：[https://my.feishu.cn/docx/WfdmdkadcoBy6lxyDZucQbgWnnf](https://my.feishu.cn/docx/WfdmdkadcoBy6lxyDZucQbgWnnf)
 
-# Claude Code 综合实战：企业级最佳实践指南
-
 > **课程信息**
-
-+   **作者**：老金
-
-+   **预计学时**：2-3小时
-
-+   **难度等级**：⭐⭐⭐ 进阶
-
-+   **更新日期**：2026年3月
-
-+   **适用版本**：Claude Code v2.1+（验证于2026-03-18）
-
----
+>
+> + **作者**：老金
+> + **预计学时**：2-3小时
+> + **难度等级**：⭐⭐⭐ 进阶
+> + **更新日期**：2026年3月
+> + **适用版本**：`Claude Code` v2.1+（验证于2026-03-18）
 
 ## 📚 本课学习目标
 
 完成本课学习后，你将能够：
 
-1.  **建立团队协作规范**：标准化项目结构、CLAUDE.md规范、代码审查流程
+1. 建立团队协作规范：标准化项目结构、`CLAUDE.md`规范、代码审查流程
 
-1.  **配置CI/CD集成**：GitHub Actions配置、安全审查、自动化流水线
+1. 配置CI/CD集成：`GitHub Actions`配置、安全审查、自动化流水线
 
-1.  **实施安全与合规**：权限系统、白名单配置、审计日志、合规检查
+1. 实施安全与合规：权限系统、白名单配置、审计日志、合规检查
 
-1.  **优化性能与成本**：上下文管理、调试技巧、成本控制
-
----
+1. 优化性能与成本：上下文管理、调试技巧、成本控制
 
 ## 术语表（小白必读）
 
 | 术语 | 英文全称 | 通俗解释 |
 | --- | --- | --- |
-| **CI/CD** | Continuous Integration/Continuous Deployment | 持续集成/持续部署，自动化代码测试和发布的流程 |
-| **GitHub Actions** | - | GitHub提供的自动化工作流服务 |
-| **PR** | Pull Request | 代码合并请求，用于代码审查 |
-| **MCP** | Model Context Protocol | 模型上下文协议，扩展AI能力的接口标准 |
-| **白名单** | Whitelist/Allowlist | 明确允许执行的工具或命令列表 |
-| **审计日志** | Audit Log | 记录所有操作的日志，用于安全追踪 |
-| **Token** | - | AI处理文字的计费单位 |
-| **上下文窗口** | Context Window | AI单次对话能处理的最大信息量 |
-| **Skill** | Skill | Claude Code的可复用能力模块（通过SKILL.md定义） |
-| **Forked Context** | - | Skills的独立上下文模式，通过context: fork启用，在子代理中运行不影响主会话 |
-| **Hot Reload** | - | Skills修改后自动重新加载，无需重启Claude Code |
-
----
+| CI/CD | Continuous Integration/Continuous Deployment | 持续集成/持续部署，自动化代码测试和发布的流程 |
+| GitHub Actions | - | GitHub提供的自动化工作流服务 |
+| PR | Pull Request | 代码合并请求，用于代码审查 |
+| MCP | Model Context Protocol | 模型上下文协议，扩展AI能力的接口标准 |
+| 白名单 | Whitelist/Allowlist | 明确允许执行的工具或命令列表 |
+| 审计日志 | Audit Log | 记录所有操作的日志，用于安全追踪 |
+| Token | - | AI处理文字的计费单位 |
+| 上下文窗口 | Context Window | AI单次对话能处理的最大信息量 |
+| Skill | Skill | Claude Code的可复用能力模块（通过`SKILL.md`定义） |
+| Forked Context | - | Skills的独立上下文模式，通过`context: fork`启用，在子代理中运行不影响主会话 |
+| Hot Reload | - | Skills修改后自动重新加载，无需重启Claude Code |
 
 ## 目录
 
-1.  团队协作规范
+1. 团队协作规范
 
-1.  CI/CD集成
+1. CI/CD集成
 
-1.  安全与合规
+1. 安全与合规
 
-1.  性能优化
+1. 性能优化
 
-1.  综合练习
-
----
+1. 综合练习
 
 ## 1. 团队协作规范
 
 ### 1.1 为什么需要团队规范
 
-当Claude Code从个人工具演变为团队基础设施时，缺乏统一规范会导致严重问题：
+当`Claude Code`从个人工具演变为团队基础设施时，缺乏统一规范会导致严重问题：
 
 **典型混乱场景**：
 
-+   开发者A的CLAUDE.md有500行自定义规则，开发者B完全没有
++ 开发者A的`CLAUDE.md`有500行自定义规则，开发者B完全没有
 
-+   代码审查时AI生成的代码风格与团队标准完全不同
++ 代码审查时AI生成的代码风格与团队标准完全不同
 
-+   敏感API密钥被AI意外提交到代码仓库
++ 敏感API密钥被AI意外提交到代码仓库
 
-+   不同项目的MCP配置互相冲突导致工具失效
++ 不同项目的`MCP`配置互相冲突导致工具失效
 
 这些问题在3人以下团队可能还能容忍，但团队规模一旦超过5人，没有规范就是灾难的开始。
 
@@ -122,17 +109,17 @@ project-root/
 
 #### 1.2.2 目录职责划分
 
-**.claude/**** 目录**：Claude Code的"控制中心"
+`.claude/` 目录：Claude Code的"控制中心"
 
 | 子目录/文件 | 职责 | 入库策略 |
 | --- | --- | --- |
-| settings.json | 团队统一配置 | ✅ 必须入库 |
-| settings.local.json | 个人本地配置 | ❌ 禁止入库 |
-| commands/ | 团队共享命令 | ✅ 必须入库 |
-| hooks/ | 自动化钩子 | ✅ 必须入库 |
-| skills/ | 项目技能包 | ✅ 必须入库 |
+| `settings.json` | 团队统一配置 | ✅ 必须入库 |
+| `settings.local.json` | 个人本地配置 | ❌ 禁止入库 |
+| `commands/` | 团队共享命令 | ✅ 必须入库 |
+| `hooks/` | 自动化钩子 | ✅ 必须入库 |
+| `skills/` | 项目技能包 | ✅ 必须入库 |
 
-**doc**s/ai-context/ 目录：AI理解项目的"说明书"
+`docs/ai-context/` 目录：AI理解项目的"说明书"
 
 这个目录专门存放帮助AI理解项目的文档，不是给人看的README，而是给AI看的上下文：
 
@@ -163,55 +150,55 @@ project-root/
 
 #### 1.2.3 命名规范
 
-**命令文件命名**：{序号}-{功能域}.md
+命令文件命名：`{序号}-{功能域}.md`
 
 序号规则：
 
-+   00-09：基础设施命令（help、setup）
++ 00-09：基础设施命令（`help`、`setup`）
 
-+   10-19：开发命令（dev、build）
++ 10-19：开发命令（`dev`、`build`）
 
-+   20-29：测试命令（test、lint）
++ 20-29：测试命令（`test`、`lint`）
 
-+   30-39：部署命令（deploy、release）
++ 30-39：部署命令（`deploy`、`release`）
 
-+   40-49：数据命令（migrate、seed）
++ 40-49：数据命令（`migrate`、`seed`）
 
-+   90-99：工具命令（debug、monitor）
++ 90-99：工具命令（`debug`、`monitor`）
 
-**技能包命名**：{项目名}-{功能}
+技能包命名：`{项目名}-{功能}`
 
 示例：
 
-+   ecommerce-checkout：电商结算流程
++ `ecommerce-checkout`：电商结算流程
 
-+   cms-content-workflow：CMS内容工作流
++ `cms-content-workflow`：CMS内容工作流
 
-+   analytics-report-generator：分析报告生成器
++ `analytics-report-generator`：分析报告生成器
 
 ### 1.3 CLAUDE.md规范
 
 #### 1.3.1 CLAUDE.md层级结构
 
-Claude Code支持三层配置，优先级从低到高：
+`Claude Code`支持三层配置，优先级从低到高：
 
-1.  **全局配置** (~/.claude/CLAUDE.md)
+1. 全局配置（`~/.claude/CLAUDE.md`）
 
-+   适用于所有项目
++ 适用于所有项目
 
-+   存放个人偏好、通用规则
++ 存放个人偏好、通用规则
 
-1.  **项目配置** (项目根目录/CLAUDE.md)
+1. 项目配置（项目根目录/`CLAUDE.md`）
 
-+   团队共享，入库管理
++ 团队共享，入库管理
 
-+   存放项目特定规则、技术栈说明
++ 存放项目特定规则、技术栈说明
 
-1.  **子目录配置** (子目录/CLAUDE.md)
+1. 子目录配置（子目录/`CLAUDE.md`）
 
-+   模块级别的特殊规则
++ 模块级别的特殊规则
 
-+   例如：src/legacy/CLAUDE.md 存放遗留代码的特殊处理规则
++ 例如：`src/legacy/CLAUDE.md` 存放遗留代码的特殊处理规则
 
 #### 1.3.2 项目CLAUDE.md模板
 
@@ -227,13 +214,13 @@ Claude Code支持三层配置，优先级从低到高：
 ### 通用规则
 - 所有代码必须有类型注解
 - 函数不超过50行，类不超过300行
-- 禁止使用any类型（特殊情况需注释说明）
+- 禁止使用`any`类型（特殊情况需注释说明）
 
 ### 命名约定
-- 文件名：kebab-case（如 user-service.ts）
-- 类名：PascalCase（如 UserService）
-- 函数/变量：camelCase（如 getUserById）
-- 常量：UPPER_SNAKE_CASE（如 MAX_RETRY_COUNT）
+- 文件名：kebab-case（如 `user-service.ts`）
+- 类名：PascalCase（如 `UserService`）
+- 函数/变量：camelCase（如 `getUserById`）
+- 常量：UPPER_SNAKE_CASE（如 `MAX_RETRY_COUNT`）
 
 ### 文档要求
 - 所有公共API必须有JSDoc/TSDoc注释
@@ -243,7 +230,7 @@ Claude Code支持三层配置，优先级从低到高：
 ## 3. 安全规则
 ### 禁止行为
 - 禁止在代码中硬编码敏感信息
-- 禁止提交.env文件到仓库
+- 禁止提交`.env`文件到仓库
 - 禁止在日志中输出用户隐私数据
 
 ### 必须行为
@@ -253,7 +240,7 @@ Claude Code支持三层配置，优先级从低到高：
 
 ## 4. 测试要求
 - 新功能必须有单元测试
-- 核心逻辑测试覆盖率&gt;80%
+- 核心逻辑测试覆盖率>80%
 - 集成测试必须覆盖主要用户流程
 
 ## 5. Git规范
@@ -264,7 +251,7 @@ Claude Code支持三层配置，优先级从低到高：
 - docs/xxx：文档更新
 
 ### 提交信息
-格式：`&lt;type&gt;(&lt;scope&gt;): &lt;description&gt;`
+格式：`<type>(<scope>): <description>`
 
 类型：feat、fix、docs、style、refactor、test、chore
 
@@ -285,7 +272,7 @@ Claude Code支持三层配置，优先级从低到高：
 ## 通用安全规则
 - 永远不要在代码中包含真实的API密钥
 - 敏感操作需要二次确认
-- 不自动执行rm -rf或DROP TABLE等危险命令
+- 不自动执行`rm -rf`或`DROP TABLE`等危险命令
 
 ## 工具偏好
 - Git操作：优先使用命令行而非GUI
@@ -324,7 +311,7 @@ Claude Code支持三层配置，优先级从低到高：
 │  自动添加审查评论到PR                                        │
 │       │                                                     │
 │       ▼                                                     │
-│  人工审查员复核                                              │
+│  人工审查员复栐                                              │
 │       │                                                     │
 │       ▼                                                     │
 │  合并或请求修改                                              │
@@ -334,7 +321,7 @@ Claude Code支持三层配置，优先级从低到高：
 
 #### 1.4.2 代码审查Slash命令
 
-创建 .claude/commands/code-review.md：
+创建`.claude/commands/code-review.md`：
 
 ```
 name: code-review
@@ -394,17 +381,26 @@ description: AI代码审查命令
 
 | 检查项 | 通过条件 | 优先级 |
 | --- | --- | --- |
-| 代码风格 | 符合CLAUDE.md规范 | P0 |
-| 安全检查 | 无高危漏洞 | P0 |
-| 测试覆盖 | 新代码有测试 | P1 |
-| 文档完整 | API有注释 | P1 |
-| 性能考量 | 无明显性能问题 | P2 |
 
-### 1.5 团队协作最佳实践
 
-#### 1.5.1 配置同步策略
 
-**入库配置（团队共享）**：
+# 1. 代码规范与协作
+
+## 1.4 代码质量检查清单
+
+| 检查项 | 标准 | 优先级 |
+| --- | --- | --- |
+| 代码风格 | 符合`CLAUDE.md`规范 | `P0` |
+| 安全检查 | 无高危漏洞 | `P0` |
+| 测试覆盖 | 新代码有测试 | `P1` |
+| 文档完整 | API有注释 | `P1` |
+| 性能考量 | 无明显性能问题 | `P2` |
+
+## 1.5 团队协作最佳实践
+
+### 1.5.1 配置同步策略
+
+**入库配置（团队共享）：**
 
 ```
 # .gitignore 中不要忽略这些
@@ -417,7 +413,7 @@ description: AI代码审查命令
 !.mcp.json
 ```
 
-**不入库配置（个人本地）**：
+**不入库配置（个人本地）：**
 
 ```
 # .gitignore 中要忽略这些
@@ -427,23 +423,23 @@ description: AI代码审查命令
 .env.local
 ```
 
-#### 1.5.2 配置冲突解决
+### 1.5.2 配置冲突解决
 
 当团队配置与个人偏好冲突时，使用覆盖机制：
 
 ```
 // .claude/settings.local.json（不入库，个人偏好覆盖）
 {
-  &quot;permissions&quot;: {
-    &quot;allow&quot;: [
-      &quot;Bash(npm run dev)&quot;,
-      &quot;Bash(npm run test)&quot;
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev)",
+      "Bash(npm run test)"
     ]
   }
 }
 ```
 
-#### 1.5.3 新成员入职流程
+### 1.5.3 新成员入职流程
 
 ```
 ## Claude Code新成员入职清单
@@ -476,31 +472,31 @@ description: AI代码审查命令
 
 Claude Code可以深度集成到GitHub Actions中，实现：
 
-+   自动代码审查
++ 自动代码审查
 
-+   PR评论交互
++ PR评论交互
 
-+   安全扫描
++ 安全扫描
 
-+   文档生成
++ 文档生成
 
 #### 2.1.1 官方Action介绍
 
-Anthropic提供了官方的GitHub Action：anthropics/claude-code-action
+Anthropic提供了官方的GitHub Action：`anthropics/claude-code-action`
 
-**主要功能**：
+**主要功能**
 
-+   在PR上自动运行Claude Code审查
++ 在PR上自动运行Claude Code审查
 
-+   响应Issue评论中的指令
++ 响应Issue评论中的指令
 
-+   执行自定义命令
++ 执行自定义命令
 
 ### 2.2 GitHub Actions配置详解
 
 #### 2.2.1 基础配置
 
-创建 .github/workflows/claude-review.yml：
+创建 `.github/workflows/claude-review.yml`：
 
 ```
 name: Claude Code Review
@@ -521,9 +517,9 @@ jobs:
   claude-review:
     # 条件：PR事件 或 Issue评论中包含@claude
     if: |
-      github.event_name == &#x27;pull_request&#x27; ||
-      (github.event_name == &#x27;issue_comment&#x27; &amp;&amp;
-       contains(github.event.comment.body, &#x27;@claude&#x27;))
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'issue_comment' &&
+       contains(github.event.comment.body, '@claude'))
 
     runs-on: ubuntu-latest
 
@@ -540,7 +536,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 
           # 可选：指定模型
-          model: &quot;claude-sonnet-4-6&quot;
+          model: "claude-sonnet-4-6"
 
           # 可选：最大token数
           max_tokens: 4096
@@ -576,7 +572,7 @@ jobs:
   # ========== PR代码审查 ==========
   review:
     name: Code Review
-    if: github.event_name == &#x27;pull_request&#x27;
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
@@ -609,7 +605,7 @@ jobs:
   # ========== 安全扫描 ==========
   security-scan:
     name: Security Scan
-    if: github.event_name == &#x27;pull_request&#x27;
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
@@ -635,8 +631,8 @@ jobs:
   interactive:
     name: Interactive Commands
     if: |
-      github.event_name == &#x27;issue_comment&#x27; &amp;&amp;
-      contains(github.event.comment.body, &#x27;@claude&#x27;)
+      github.event_name == 'issue_comment' &&
+      contains(github.event.comment.body, '@claude')
     runs-on: ubuntu-latest
 
     steps:
@@ -653,7 +649,7 @@ jobs:
   # ========== 文档生成（push到main时） ==========
   docs:
     name: Generate Documentation
-    if: github.event_name == &#x27;push&#x27; &amp;&amp; github.ref == &#x27;refs/heads/main&#x27;
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
@@ -681,16 +677,16 @@ jobs:
 
 | Secret名称 | 说明 | 获取方式 |
 | --- | --- | --- |
-| ANTHROPIC_API_KEY | Anthropic API密钥 | console.anthropic.com |
-| GITHUB_TOKEN | GitHub Token | 自动提供（默认） |
+| `ANTHROPIC_API_KEY` | Anthropic API密钥 | console.anthropic.com |
+| `GITHUB_TOKEN` | GitHub Token | 自动提供（默认） |
 
-配置路径：Settings > Secrets and variables > Actions > New repository secret
+配置路径：`Settings > Secrets and variables > Actions > New repository secret`
 
-### 2.3 /security-review命令
+### 2.3 `/security-review`命令
 
 #### 2.3.1 创建安全审查命令
 
-创建 .claude/commands/security-review.md：
+创建 `.claude/commands/security-review.md`：
 
 ```
 name: security-review
@@ -768,9 +764,9 @@ name: Security Review
 on:
   pull_request:
     paths:
-      - &#x27;src/**&#x27;
-      - &#x27;package.json&#x27;
-      - &#x27;package-lock.json&#x27;
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
 
 jobs:
   security:
@@ -782,18 +778,18 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          command: &quot;/security-review&quot;
+          command: "/security-review"
 
       - name: Check for Critical Issues
         run: |
           # 解析审查结果，如有高危问题则失败
-          if grep -q &quot;Critical&quot; claude-review-output.md; then
-            echo &quot;::error::发现高危安全问题，请修复后重新提交&quot;
+          if grep -q "Critical" claude-review-output.md; then
+            echo "::error::发现高危安全问题，请修复后重新提交"
             exit 1
           fi
 ```
 
-### 2.4 /install-github-app命令
+### 2.4 `/install-github-app`命令
 
 #### 2.4.1 GitHub App安装指南
 
@@ -814,8 +810,8 @@ Claude Code可以作为GitHub App安装到组织或仓库，提供更深度的�
 ### 步骤3：配置权限
 推荐权限配置：
 - Contents: Read
-- Pull requests: Read &amp; Write
-- Issues: Read &amp; Write
+- Pull requests: Read & Write
+- Issues: Read & Write
 - Metadata: Read
 
 ### 步骤4：配置Webhook（可选）
@@ -837,7 +833,11 @@ Claude Code可以作为GitHub App安装到组织或仓库，提供更深度的�
 
 #### 2.5.1 多阶段流水线
 
-```
+
+
+# CI/CD 流水线与安全配置
+
+```yaml
 # .github/workflows/full-pipeline.yml
 name: Full CI/CD Pipeline with Claude
 
@@ -848,13 +848,12 @@ on:
     branches: [main]
 
 env:
-  NODE_VERSION: &#x27;20&#x27;
+  NODE_VERSION: '20'
   CLAUDE_MODEL: claude-sonnet-4-6
 
 jobs:
-  # ===== 阶段1：代码检查 =====
   lint:
-    name: Lint &amp; Format
+    name: Lint & Format
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -865,7 +864,6 @@ jobs:
       - run: npm run lint
       - run: npm run format:check
 
-  # ===== 阶段2：单元测试 =====
   test:
     name: Unit Tests
     runs-on: ubuntu-latest
@@ -879,10 +877,9 @@ jobs:
       - run: npm test -- --coverage
       - uses: codecov/codecov-action@v3
 
-  # ===== 阶段3：Claude代码审查（仅PR） =====
   claude-review:
     name: Claude Code Review
-    if: github.event_name == &#x27;pull_request&#x27;
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     needs: test
     steps:
@@ -893,11 +890,11 @@ jobs:
       - name: Get PR Diff
         id: diff
         run: |
-          git diff origin/main...HEAD &gt; pr_diff.txt
-          echo &quot;diff_size=$(wc -l &lt; pr_diff.txt)&quot; &gt;&gt; $GITHUB_OUTPUT
+          git diff origin/main...HEAD > pr_diff.txt
+          echo "diff_size=$(wc -l < pr_diff.txt)" >> $GITHUB_OUTPUT
 
       - name: Claude Review
-        if: steps.diff.outputs.diff_size &gt; 0
+        if: steps.diff.outputs.diff_size > 0
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -912,7 +909,6 @@ jobs:
 
             请给出具体的改进建议。
 
-  # ===== 阶段4：安全扫描 =====
   security:
     name: Security Scan
     runs-on: ubuntu-latest
@@ -928,9 +924,8 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          command: &quot;/security-review&quot;
+          command: "/security-review"
 
-  # ===== 阶段5：构建 =====
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -947,10 +942,9 @@ jobs:
           name: build-output
           path: dist/
 
-  # ===== 阶段6：部署到Staging（仅develop分支） =====
   deploy-staging:
     name: Deploy to Staging
-    if: github.ref == &#x27;refs/heads/develop&#x27;
+    if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     needs: build
     environment: staging
@@ -961,13 +955,12 @@ jobs:
           name: build-output
       - name: Deploy to Staging
         run: |
-          echo &quot;Deploying to staging...&quot;
+          echo "Deploying to staging..."
           # 部署脚本
 
-  # ===== 阶段7：部署到Production（仅main分支） =====
   deploy-production:
     name: Deploy to Production
-    if: github.ref == &#x27;refs/heads/main&#x27;
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: build
     environment: production
@@ -978,7 +971,7 @@ jobs:
           name: build-output
       - name: Deploy to Production
         run: |
-          echo &quot;Deploying to production...&quot;
+          echo "Deploying to production..."
           # 部署脚本
 
       - name: Claude Deployment Report
@@ -998,68 +991,65 @@ jobs:
 
 ### 3.1 权限系统详解
 
-Claude Code采用三级权限模型：Allow（允许）、Ask（询问）、Deny（拒绝）
+Claude Code采用三级权限模型：`Allow`（允许）、`Ask`（询问）、`Deny`（拒绝）
 
 #### 3.1.1 权限级别说明
 
-**Allow（允许）**：
+`Allow`（允许）：
 
-+   工具可以直接执行，无需确认
++ 工具可以直接执行，无需确认
 
-+   适用于低风险、频繁使用的操作
++ 适用于低风险、频繁使用的操作
 
-+   示例：读取文件、搜索代码
++ 示例：读取文件、搜索代码
 
-**Ask（询问）**：
+`Ask`（询问）：
 
-+   执行前需要用户确认
++ 执行前需要用户确认
 
-+   适用于有一定风险的操作
++ 适用于有一定风险的操作
 
-+   示例：修改文件、执行命令
++ 示例：修改文件、执行命令
 
-**Deny（拒绝）**：
+`Deny`（拒绝）：
 
-+   完全禁止执行
++ 完全禁止执行
 
-+   适用于高风险或违反政策的操作
++ 适用于高风险或违反政策的操作
 
-+   示例：访问敏感目录、执行危险命令
++ 示例：访问敏感目录、执行危险命令
 
 #### 3.1.2 权限配置文件
 
-```
+```json
 // .claude/settings.json
 {
-  &quot;permissions&quot;: {
-    // 允许的工具和命令（无需确认直接执行）
-    &quot;allow&quot;: [
-      &quot;Read&quot;,                    // 读取文件：直接允许
-      &quot;Glob&quot;,                    // 文件搜索：直接允许
-      &quot;Grep&quot;,                    // 内容搜索：直接允许
-      &quot;WebFetch&quot;,                // 网络请求：直接允许
-      &quot;WebSearch&quot;,               // 网络搜索：直接允许
-      &quot;Bash(npm test *)&quot;,        // 允许运行测试
-      &quot;Bash(git diff *)&quot;,        // 允许查看差异
-      &quot;Bash(git log *)&quot;          // 允许查看日志
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Bash(npm test )",
+      "Bash(git diff )",
+      "Bash(git log )"
     ],
-
-    // 拒绝的工具和命令（完全禁止执行）
-    &quot;deny&quot;: [
-      &quot;Bash(rm -rf /)&quot;,          // 禁止删除根目录
-      &quot;Bash(rm -rf ~)&quot;,          // 禁止删除用户目录
-      &quot;Read(./.env)&quot;,            // 禁止读取环境变量文件
-      &quot;Read(./secrets/**)&quot;,      // 禁止读取敏感目录
-      &quot;Bash(git push --force)&quot;,  // 禁止强制推送
-      &quot;Bash(git reset --hard)&quot;,  // 禁止硬重置
-      &quot;Bash(sudo *)&quot;,            // 禁止sudo命令
-      &quot;Bash(curl * | bash)&quot;     // 禁止远程脚本执行
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~)",
+      "Read(./.env)",
+      "Read(./secrets/**)",
+      "Bash(git push --force)",
+      "Bash(git reset --hard)",
+      "Bash(sudo )",
+      "Bash(curl * | bash)"
     ]
   }
 }
 ```
 
-> **说明**：permissions 采用扁平的 allow / deny 列表结构。未出现在任一列表中的工具和命令默认需要用户确认（ask）。deny 列表中的条目支持通配符匹配，可精确控制危险操作。
+说明：`permissions` 采用扁平的 `allow` / `deny` 列表结构。未出现在任一列表中的工具和命令默认需要用户确认（`ask`）。`deny` 列表中的条目支持通配符匹配，可精确控制危险操作。
 
 #### 3.1.3 运行时权限覆盖
 
@@ -1075,106 +1065,97 @@ claude config list
 # 或在REPL中使用 /permissions 查看权限详情
 ```
 
-#### 3.1.4 Sandbox沙箱配置详解
+#### 3.1.4 `Sandbox`沙箱配置详解
 
-Claude Code支持通过/sandbox命令启用OS级沙箱隔离，将AI的文件系统访问限制在安全范围内。沙箱启用后，可在settings.json中配置详细的文件系统权限：
+Claude Code支持通过`/sandbox`命令启用OS级沙箱隔离，将AI的文件系统访问限制在安全范围内。沙箱启用后，可在`settings.json`中配置详细的文件系统权限：
 
-```
+```json
 // .claude/settings.json
 {
-  &quot;sandbox&quot;: {
-    &quot;filesystem&quot;: {
-      &quot;allowWrite&quot;: [&quot;/tmp&quot;, &quot;./src&quot;],
-      &quot;allowRead&quot;: [&quot;./&quot;, &quot;/usr/lib&quot;],
-      &quot;denyRead&quot;: [&quot;.env&quot;, &quot;credentials.json&quot;]
+  "sandbox": {
+    "filesystem": {
+      "allowWrite": ["/tmp", "./src"],
+      "allowRead": ["./", "/usr/lib"],
+      "denyRead": [".env", "credentials.json"]
     }
   }
 }
 ```
 
-**权限字段说明**：
+权限字段说明：
 
 | 字段 | 作用 | 示例 |
 | --- | --- | --- |
-| allowWrite | 允许写入的路径列表 | [&quot;/tmp&quot;, &quot;./src&quot;, &quot;./tests&quot;] |
-| allowRead | 允许读取的路径列表 | [&quot;./&quot;, &quot;/usr/lib&quot;] |
-| denyRead | 明确禁止读取的路径（**优先级最高**） | [&quot;.env&quot;, &quot;credentials.json&quot;, &quot;./secrets/**&quot;] |
+| `allowWrite` | 允许写入的路径列表 | ["/tmp", "./src", "./tests"] |
+| `allowRead` | 允许读取的路径列表 | ["./", "/usr/lib"] |
+| `denyRead` | 明确禁止读取的路径（优先级最高） | [".env", "credentials.json", "./secrets/**"] |
 
-> **注意**：denyRead的优先级高于allowRead。即使allowRead中包含了项目根目录"./"，denyRead中列出的文件仍会被禁止读取。建议将所有敏感配置文件（如.env、密钥文件）加入denyRead列表。
+注意：`denyRead`的优先级高于`allowRead`。即使`allowRead`中包含了项目根目录`"./"`，`denyRead`中列出的文件仍会被禁止读取。建议将所有敏感配置文件（如`.env`、密钥文件）加入`denyRead`列表。
 
-### 3.2 allowedTools白名单
+### 3.2 `allowedTools`白名单
 
 #### 3.2.1 白名单配置
 
-```
+```json
 // .claude/settings.json
 {
-  &quot;allowedTools&quot;: [
-    // 基础工具
-    &quot;Read&quot;,
-    &quot;Glob&quot;,
-    &quot;Grep&quot;,
-
-    // 编辑工具（带路径限制）
-    &quot;Edit(src/**)&quot;,
-    &quot;Write(src/**)&quot;,
-    &quot;Write(tests/**)&quot;,
-    &quot;Write(docs/**)&quot;,
-
-    // Bash命令（带命令限制）
-    &quot;Bash(npm *)&quot;,
-    &quot;Bash(node *)&quot;,
-    &quot;Bash(git status)&quot;,
-    &quot;Bash(git diff *)&quot;,
-    &quot;Bash(git add *)&quot;,
-    &quot;Bash(git commit *)&quot;,
-    &quot;Bash(npx *)&quot;,
-
-    // 通配符权限支持
-    &quot;Bash(*-h*)&quot;,        // 允许所有-h帮助命令
-    &quot;Bash(*--help)&quot;,     // 允许所有--help命令
-
-    // MCP工具
-    &quot;mcp__context7__*&quot;,
-    &quot;mcp__exa__*&quot;
+  "allowedTools": [
+    "Read",
+    "Glob",
+    "Grep",
+    "Edit(src/**)",
+    "Write(src/**)",
+    "Write(tests/**)",
+    "Write(docs/**)",
+    "Bash(npm )",
+    "Bash(node )",
+    "Bash(git status)",
+    "Bash(git diff )",
+    "Bash(git add )",
+    "Bash(git commit )",
+    "Bash(npx )",
+    "Bash(*-h)",
+    "Bash(*--help)",
+    "mcp__context7__*",
+    "mcp__exa__*"
   ],
-
-  // 明确禁止的工具
-  &quot;disallowedTools&quot;: [
-    &quot;Bash(rm -rf *)&quot;,
-    &quot;Bash(sudo *)&quot;,
-    &quot;Bash(curl * | bash)&quot;,
-    &quot;Write(.env*)&quot;,
-    &quot;Write(**/secrets/*)&quot;
+  "disallowedTools": [
+    "Bash(rm -rf )",
+    "Bash(sudo )",
+    "Bash(curl * | bash)",
+    "Write(.env*)",
+    "Write(**/secrets/*)"
   ]
 }
 ```
 
 #### 3.2.2 白名单模式详解
 
-**精确匹配**：
+精确匹配：
 
-```
-&quot;Read&quot;  // 只允许Read工具
-```
-
-**通配符匹配**：
-
-```
-&quot;Bash(npm *)&quot;  // 允许所有npm命令
-&quot;Edit(src/**)&quot;  // 允许编辑src目录下所有文件
+```text
+"Read"  // 只允许Read工具
 ```
 
-**MCP工具匹配**：
+通配符匹配：
 
+```text
+"Bash(npm )"  // 允许所有npm命令
+"Edit(src/**)"
 ```
-&quot;mcp__context7__*&quot;  // 允许context7的所有功能
-&quot;mcp__exa__web_search_exa&quot;  // 只允许exa的搜索功能
+
+MCP工具匹配：
+
+```text
+"mcp__context7__*"  // 允许context7的所有功能
+"mcp__exa__web_search_exa"  // 只允许exa的搜索功能
 ```
 
 #### 3.2.3 分环境配置
 
 Claude Code使用三级配置层次，而非环境特定文件：
+
+
 
 ```
 // 1. 全局配置（宽松，个人开发使用）
@@ -1219,13 +1200,13 @@ Claude Code使用三级配置层次，而非环境特定文件：
 }
 ```
 
-> **注意**：不存在settings.development.json或settings.production.json等环境特定文件。通过.claude/settings.json（共享）和.claude/settings.local.json（个人）的组合实现配置差异化。
+> **注意**：不存在`settings.development.json`或`settings.production.json`等环境特定文件。通过`.claude/settings.json`（共享）和`.claude/settings.local.json`（个人）的组合实现配置差异化。
 
 ### 3.3 MCP服务器安全管理
 
 #### 3.3.1 MCP配置规范
 
-MCP服务器在.mcp.json中配置，标准字段只有command、args和env：
+MCP服务器在`.mcp.json`中配置，标准字段只有`command`、`args`和`env`：
 
 ```
 // .mcp.json — 标准MCP配置格式
@@ -1258,11 +1239,11 @@ MCP服务器在.mcp.json中配置，标准字段只有command、args和env：
 }
 ```
 
-> **注意**：MCP服务器的信任管理通过Claude Code的权限系统（settings.json的permissions）控制，而非MCP配置本身。
+> **注意**：MCP服务器的信任管理通过Claude Code的权限系统（`settings.json`的`permissions`）控制，而非MCP配置本身。
 
 #### 3.3.2 通过权限系统管理MCP安全
 
-使用settings.json的权限规则控制MCP工具的使用范围：
+使用`settings.json`的权限规则控制MCP工具的使用范围：
 
 ```
 // .claude/settings.json
@@ -1284,7 +1265,7 @@ MCP服务器在.mcp.json中配置，标准字段只有command、args和env：
 
 #### 3.3.3 MCP安全最佳实践
 
-**环境变量隔离**：
+##### 环境变量隔离
 
 ```
 {
@@ -1302,9 +1283,9 @@ MCP服务器在.mcp.json中配置，标准字段只有command、args和env：
 }
 ```
 
-**通过Hooks监控MCP调用**：
+##### 通过Hooks监控MCP调用
 
-MCP服务器本身没有内置的网络隔离或资源限制配置。但可以通过Hooks系统监控和控制MCP工具调用：
+MCP服务器本身没有内置的网络隔离或资源限制配置。但可以通过`Hooks`系统监控和控制MCP工具调用：
 
 ```
 // .claude/settings.json
@@ -1325,21 +1306,21 @@ MCP服务器本身没有内置的网络隔离或资源限制配置。但可以�
 }
 ```
 
-**安全建议**：
+##### 安全建议
 
-+   定期审查.mcp.json中配置的服务器列表
++ 定期审查`.mcp.json`中配置的服务器列表
 
-+   使用permissions.deny禁止MCP服务器中的危险操作
++ 使用`permissions.deny`禁止MCP服务器中的危险操作
 
-+   通过环境变量传递所有敏感凭证，不要硬编码
++ 通过环境变量传递所有敏感凭证，不要硬编码
 
-+   使用Hooks记录MCP工具调用日志
++ 使用`Hooks`记录MCP工具调用日志
 
 ### 3.4 审计日志
 
 #### 3.4.1 通过Hooks实现审计日志
 
-Claude Code没有内置的审计日志配置块，但可以通过Hooks系统实现操作审计：
+Claude Code没有内置的审计日志配置块，但可以通过`Hooks`系统实现操作审计：
 
 ```
 // .claude/settings.json
@@ -1369,7 +1350,7 @@ Claude Code没有内置的审计日志配置块，但可以通过Hooks系统实�
 }
 ```
 
-> **说明**：Hooks的环境变量（如$CLAUDE_TOOL_NAME、$CLAUDE_FILE_PATHS等）由Claude Code自动注入，可用于记录操作上下文。
+> **说明**：`Hooks`的环境变量（如`$CLAUDE_TOOL_NAME`、`$CLAUDE_FILE_PATHS`等）由Claude Code自动注入，可用于记录操作上下文。
 
 #### 3.4.2 审计日志格式
 
@@ -1423,6 +1404,8 @@ Claude Code没有内置的审计日志配置块，但可以通过Hooks系统实�
 
 创建审计分析脚本：
 
+
+
 ```
 #!/usr/bin/env python3
 # scripts/analyze-audit.py
@@ -1433,90 +1416,90 @@ from collections import Counter
 from datetime import datetime, timedelta
 
 def analyze_audit_logs(log_dir: str, days: int = 7):
-    &quot;&quot;&quot;分析最近N天的审计日志&quot;&quot;&quot;
+    """分析最近N天的审计日志"""
 
     log_path = Path(log_dir)
     cutoff = datetime.now() - timedelta(days=days)
 
     stats = {
-        &quot;total_events&quot;: 0,
-        &quot;tool_usage&quot;: Counter(),
-        &quot;denied_access&quot;: [],
-        &quot;errors&quot;: [],
-        &quot;users&quot;: Counter(),
-        &quot;sensitive_access&quot;: []
+        "total_events": 0,
+        "tool_usage": Counter(),
+        "denied_access": [],
+        "errors": [],
+        "users": Counter(),
+        "sensitive_access": []
     }
 
-    for log_file in log_path.glob(&quot;*.json&quot;):
+    for log_file in log_path.glob("*.json"):
         try:
-            file_date = datetime.strptime(log_file.stem, &quot;%Y-%m-%d&quot;)
-            if file_date &lt; cutoff:
+            file_date = datetime.strptime(log_file.stem, "%Y-%m-%d")
+            if file_date < cutoff:
                 continue
 
             with open(log_file) as f:
                 data = json.load(f)
 
-            for entry in data.get(&quot;entries&quot;, []):
-                stats[&quot;total_events&quot;] += 1
-                stats[&quot;tool_usage&quot;][entry.get(&quot;tool&quot;, &quot;unknown&quot;)] += 1
-                stats[&quot;users&quot;][entry.get(&quot;userId&quot;, &quot;unknown&quot;)] += 1
+            for entry in data.get("entries", []):
+                stats["total_events"] += 1
+                stats["tool_usage"][entry.get("tool", "unknown")] += 1
+                stats["users"][entry.get("userId", "unknown")] += 1
 
-                if entry.get(&quot;status&quot;) == &quot;blocked&quot;:
-                    stats[&quot;denied_access&quot;].append(entry)
+                if entry.get("status") == "blocked":
+                    stats["denied_access"].append(entry)
 
-                if entry.get(&quot;event&quot;) == &quot;error&quot;:
-                    stats[&quot;errors&quot;].append(entry)
+                if entry.get("event") == "error":
+                    stats["errors"].append(entry)
 
         except Exception as e:
-            print(f&quot;Error processing {log_file}: {e}&quot;)
+            print(f"Error processing {log_file}: {e}")
 
     return stats
 
-def generate_report(stats: dict) -&gt; str:
-    &quot;&quot;&quot;生成审计报告&quot;&quot;&quot;
+def generate_report(stats: dict) -> str:
+    """生成审计报告"""
 
     report = []
-    report.append(&quot;=&quot; * 60)
-    report.append(&quot;Claude Code 审计报告&quot;)
-    report.append(&quot;=&quot; * 60)
-    report.append(&quot;&quot;)
+    report.append("=" * 60)
+    report.append("Claude Code 审计报告")
+    report.append("=" * 60)
+    report.append("")
 
-    report.append(f&quot;总事件数：{stats[&#x27;total_events&#x27;]}&quot;)
-    report.append(&quot;&quot;)
+    report.append(f"总事件数：{stats['total_events']}")
+    report.append("")
 
-    report.append(&quot;工具使用统计：&quot;)
-    for tool, count in stats[&quot;tool_usage&quot;].most_common(10):
-        report.append(f&quot;  - {tool}: {count}次&quot;)
-    report.append(&quot;&quot;)
+    report.append("工具使用统计：")
+    for tool, count in stats["tool_usage"].most_common(10):
+        report.append(f"  - {tool}: {count}次")
+    report.append("")
 
-    report.append(&quot;用户活动统计：&quot;)
-    for user, count in stats[&quot;users&quot;].most_common(10):
-        report.append(f&quot;  - {user}: {count}次&quot;)
-    report.append(&quot;&quot;)
+    report.append("用户活动统计：")
+    for user, count in stats["users"].most_common(10):
+        report.append(f"  - {user}: {count}次")
+    report.append("")
 
-    if stats[&quot;denied_access&quot;]:
-        report.append(f&quot;权限拒绝事件：{len(stats[&#x27;denied_access&#x27;])}次&quot;)
-        for entry in stats[&quot;denied_access&quot;][:5]:
-            report.append(f&quot;  - {entry[&#x27;timestamp&#x27;]}: {entry.get(&#x27;path&#x27;, &#x27;N/A&#x27;)}&quot;)
-    report.append(&quot;&quot;)
+    if stats["denied_access"]:
+        report.append(f"权限拒绝事件：{len(stats['denied_access'])}次")
+        for entry in stats["denied_access"][:5]:
+            report.append(f"  - {entry['timestamp']}: {entry.get('path', 'N/A')}")
+    report.append("")
 
-    if stats[&quot;errors&quot;]:
-        report.append(f&quot;错误事件：{len(stats[&#x27;errors&#x27;])}次&quot;)
-        for entry in stats[&quot;errors&quot;][:5]:
-            report.append(f&quot;  - {entry[&#x27;timestamp&#x27;]}: {entry.get(&#x27;message&#x27;, &#x27;N/A&#x27;)}&quot;)
+    if stats["errors"]:
+        report.append(f"错误事件：{len(stats['errors'])}次")
+        for entry in stats["errors"][:5]:
+            report.append(f"  - {entry['timestamp']}: {entry.get('message', 'N/A')}")
 
-    return &quot;\n&quot;.join(report)
+    return "\n".join(report)
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     import sys
-    log_dir = sys.argv[1] if len(sys.argv) &gt; 1 else &quot;./logs/claude-audit/&quot;
+    log_dir = sys.argv[1] if len(sys.argv) > 1 else "./logs/claude-audit/"
     stats = analyze_audit_logs(log_dir)
     print(generate_report(stats))
 ```
 
-### 3.5 合规性检查清单
+## 3.5 合规性检查清单
 
-#### 3.5.1 数据保护合规
+### 3.5.1 数据保护合规
 
 ```
 ## GDPR/个人信息保护合规检查
@@ -1537,7 +1520,7 @@ if __name__ == &quot;__main__&quot;:
 - [ ] 定期清理过期数据
 ```
 
-#### 3.5.2 访问控制合规
+### 3.5.2 访问控制合规
 
 ```
 ## 访问控制检查清单
@@ -1568,7 +1551,7 @@ if __name__ == &quot;__main__&quot;:
 
 Claude Code使用的模型有上下文窗口限制，理解并优化上下文使用是提升性能的关键：
 
-**上下文组成**：
+上下文组成：
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -1608,7 +1591,7 @@ Claude Code使用的模型有上下文窗口限制，理解并优化上下文使
 
 #### 4.1.2 上下文优化策略
 
-**策略1：精简CLAUDE.md**
+策略1：精简`CLAUDE.md`
 
 ```
 # 优化前（冗长）
@@ -1623,10 +1606,10 @@ camelCase规范。还有，类名必须使用PascalCase...
 - 语言：TypeScript
 - 注释：JSDoc必需
 - 命名：变量camelCase，类PascalCase
-- 行数：函数&lt;50行，类&lt;300行
+- 行数：函数<50行，类<300行
 ```
 
-**策略2：使用文件引用而非内联**
+策略2：使用文件引用而非内联
 
 ```
 # 不推荐：在CLAUDE.md中内联大量内容
@@ -1638,18 +1621,18 @@ camelCase规范。还有，类名必须使用PascalCase...
 详见 `docs/api-reference.md`
 ```
 
-**策略3：分层配置**
+策略3：分层配置
 
 ```
-项目根目录/CLAUDE.md        # 核心规则（&lt;1000 tokens）
-├── src/CLAUDE.md          # 源码规则（&lt;500 tokens）
-├── tests/CLAUDE.md        # 测试规则（&lt;500 tokens）
-└── docs/CLAUDE.md         # 文档规则（&lt;300 tokens）
+项目根目录/CLAUDE.md        # 核心规则（<1000 tokens）
+├── src/CLAUDE.md          # 源码规则（<500 tokens）
+├── tests/CLAUDE.md        # 测试规则（<500 tokens）
+└── docs/CLAUDE.md         # 文档规则（<300 tokens）
 ```
 
 #### 4.1.3 对话管理
 
-**定期清理对话**：
+定期清理对话：
 
 ```
 # 当对话过长时，使用/clear清理
@@ -1662,18 +1645,18 @@ claude --new-session
 /teleport  # 在CLI和claude.ai/code之间传送会话（也可用/tp）
 ```
 
-**分解大任务**：
+分解大任务：
 
 ```
 # 不推荐：一次性大任务
-&quot;重构整个项目的所有模块，包括用户模块、订单模块、支付模块...&quot;
+"重构整个项目的所有模块，包括用户模块、订单模块、支付模块..."
 
 # 推荐：分步骤小任务
-1. &quot;先分析用户模块的当前结构&quot;
-2. &quot;基于分析结果，提出重构方案&quot;
-3. &quot;执行用户模块重构&quot;
-4. &quot;验证用户模块重构结果&quot;
-5. &quot;继续处理订单模块...&quot;
+1. "先分析用户模块的当前结构"
+2. "基于分析结果，提出重构方案"
+3. "执行用户模块重构"
+4. "验证用户模块重构结果"
+5. "继续处理订单模块..."
 ```
 
 💡 Shift+Enter换行
@@ -1684,7 +1667,7 @@ claude --new-session
 
 +   适合输入多行指令或复杂提示词
 
-### 4.2 --verbose调试
+### 4.2 `--verbose`调试
 
 #### 4.2.1 启用详细日志
 
@@ -1699,7 +1682,9 @@ claude --verbose --debug
 claude --clear-cache
 ```
 
-#### 4.2.2 verbose输出解读
+#### 4.2.2 `verbose`输出解读
+
+
 
 ```
 [DEBUG] 2025-01-15 10:30:45.123 Session started: sess_abc123
@@ -1707,11 +1692,11 @@ claude --clear-cache
 [DEBUG] 2025-01-15 10:30:45.130 CLAUDE.md tokens: 1,234
 [DEBUG] 2025-01-15 10:30:45.135 Loading .claude/settings.json
 [DEBUG] 2025-01-15 10:30:45.140 MCP servers: 3 configured
-[DEBUG] 2025-01-15 10:30:45.200 MCP server &#x27;context7&#x27; connected
-[DEBUG] 2025-01-15 10:30:45.300 MCP server &#x27;exa&#x27; connected
-[DEBUG] 2025-01-15 10:30:45.400 MCP server &#x27;task-master&#x27; connected
+[DEBUG] 2025-01-15 10:30:45.200 MCP server 'context7' connected
+[DEBUG] 2025-01-15 10:30:45.300 MCP server 'exa' connected
+[DEBUG] 2025-01-15 10:30:45.400 MCP server 'task-master' connected
 
-[INFO] User message received: &quot;帮我分析src/auth目录的代码结构&quot;
+[INFO] User message received: "帮我分析src/auth目录的代码结构"
 [DEBUG] 2025-01-15 10:30:46.000 Context size: 5,432 tokens
 [DEBUG] 2025-01-15 10:30:46.001 Available context: 194,568 tokens
 [DEBUG] 2025-01-15 10:30:46.002 Model: claude-sonnet-4-6
@@ -1741,7 +1726,7 @@ claude --clear-cache
 
 | 症状 | 可能原因 | 解决方案 |
 | --- | --- | --- |
-| 响应慢 | 上下文过大 | 清理对话，精简CLAUDE.md |
+| 响应慢 | 上下文过大 | 清理对话，精简`CLAUDE.md` |
 | 工具调用失败 | MCP服务器问题 | 检查MCP配置和网络 |
 | 频繁token超限 | 单次请求过大 | 分解任务 |
 | 成本过高 | 无效调用多 | 优化提示词，减少迭代 |
@@ -1775,12 +1760,12 @@ claude --clear-cache
 
 ```
 # 不推荐：逐个文件处理
-claude &quot;检查src/a.ts的代码质量&quot;
-claude &quot;检查src/b.ts的代码质量&quot;
-claude &quot;检查src/c.ts的代码质量&quot;
+claude "检查src/a.ts的代码质量"
+claude "检查src/b.ts的代码质量"
+claude "检查src/c.ts的代码质量"
 
 # 推荐：批量处理
-claude &quot;检查src/目录下所有.ts文件的代码质量，生成汇总报告&quot;
+claude "检查src/目录下所有.ts文件的代码质量，生成汇总报告"
 ```
 
 策略3：利用API层面的Prompt Caching
@@ -1798,7 +1783,7 @@ Prompt Caching成本节省（以Sonnet 4.6为例）：
 - 有缓存：首次 $0.01875，后续每次 $0.0015（节省90%）
 ```
 
-> **注意**：Prompt Caching在API层面自动管理，Claude Code CLI用户无需手动配置。对于使用Agent SDK构建应用的开发者，可以在API调用中利用此特性。
+> **注意**：Prompt Caching在API层面自动管理，`Claude Code CLI`用户无需手动配置。对于使用`Agent SDK`构建应用的开发者，可以在API调用中利用此特性。
 
 #### 4.3.3 成本监控
 
@@ -1814,21 +1799,21 @@ from datetime import datetime, timedelta
 
 # 价格配置（美元/百万tokens）
 PRICING = {
-    &quot;claude-sonnet-4-6&quot;: {&quot;input&quot;: 3.0, &quot;output&quot;: 15.0},
-    &quot;claude-haiku-4-5-20251001&quot;: {&quot;input&quot;: 1.0, &quot;output&quot;: 5.0},
-    &quot;claude-opus-4-6&quot;: {&quot;input&quot;: 5.0, &quot;output&quot;: 25.0}
+    "claude-sonnet-4-6": {"input": 3.0, "output": 15.0},
+    "claude-haiku-4-5-20251001": {"input": 1.0, "output": 5.0},
+    "claude-opus-4-6": {"input": 5.0, "output": 25.0}
 }
 
 def calculate_daily_cost(log_dir: str, date: str = None):
-    &quot;&quot;&quot;计算指定日期的使用成本&quot;&quot;&quot;
+    """计算指定日期的使用成本"""
 
     if date is None:
-        date = datetime.now().strftime(&quot;%Y-%m-%d&quot;)
+        date = datetime.now().strftime("%Y-%m-%d")
 
-    log_file = Path(log_dir) / f&quot;{date}.json&quot;
+    log_file = Path(log_dir) / f"{date}.json"
 
     if not log_file.exists():
-        return {&quot;date&quot;: date, &quot;total_cost&quot;: 0, &quot;details&quot;: []}
+        return {"date": date, "total_cost": 0, "details": []}
 
     with open(log_file) as f:
         data = json.load(f)
@@ -1836,52 +1821,51 @@ def calculate_daily_cost(log_dir: str, date: str = None):
     total_cost = 0
     details = []
 
-    for entry in data.get(&quot;entries&quot;, []):
-        if &quot;tokens&quot; not in entry:
+    for entry in data.get("entries", []):
+        if "tokens" not in entry:
             continue
 
-        model = entry.get(&quot;model&quot;, &quot;claude-sonnet-4-6&quot;)
-        prices = PRICING.get(model, PRICING[&quot;claude-sonnet-4-6&quot;])
+        model = entry.get("model", "claude-sonnet-4-6")
+        prices = PRICING.get(model, PRICING["claude-sonnet-4-6"])
 
-        input_tokens = entry[&quot;tokens&quot;].get(&quot;input&quot;, 0)
-        output_tokens = entry[&quot;tokens&quot;].get(&quot;output&quot;, 0)
+        input_tokens = entry["tokens"].get("input", 0)
+        output_tokens = entry["tokens"].get("output", 0)
 
-        cost = (input_tokens / 1_000_000 * prices[&quot;input&quot;]) + \
-               (output_tokens / 1_000_000 * prices[&quot;output&quot;])
+        cost = (input_tokens / 1_000_000 * prices["input"]) + \
+               (output_tokens / 1_000_000 * prices["output"])
 
         total_cost += cost
         details.append({
-            &quot;time&quot;: entry.get(&quot;timestamp&quot;),
-            &quot;model&quot;: model,
-            &quot;input_tokens&quot;: input_tokens,
-            &quot;output_tokens&quot;: output_tokens,
-            &quot;cost&quot;: cost
+            "time": entry.get("timestamp"),
+            "model": model,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "cost": cost
         })
 
     return {
-        &quot;date&quot;: date,
-        &quot;total_cost&quot;: total_cost,
-        &quot;details&quot;: details
+        "date": date,
+        "total_cost": total_cost,
+        "details": details
     }
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     import sys
-    log_dir = sys.argv[1] if len(sys.argv) &gt; 1 else &quot;./logs/claude-audit/&quot;
+    log_dir = sys.argv[1] if len(sys.argv) > 1 else "./logs/claude-audit/"
     today = calculate_daily_cost(log_dir)
-    print(f&quot;今日成本：${today[&#x27;total_cost&#x27;]:.2f}&quot;)
+    print(f"今日成本：${today['total_cost']:.2f}")
 ```
 
 #### 4.3.4 成本控制实践
 
-Claude Code本身没有内置的成本限制配置，但可以通过以下方式实现成本控制：
+`Claude Code`本身没有内置的成本限制配置，但可以通过以下方式实现成本控制：
 
 **方法1：API层面设置用量限制**
 
 在 Anthropic Console 中设置：
 
-+   每月消费上限（Spend Limits）
-
-+   用量通知阈值
++ 每月消费上限（Spend Limits）
++ 用量通知阈值
 
 方法2：使用环境变量控制模型选择
 
@@ -1906,18 +1890,18 @@ export CLAUDE_MODEL=claude-opus-4-6
 
 | 操作类型 | 预期响应时间 | 实际监控阈值 |
 | --- | --- | --- |
-| 简单问答 | &lt;2秒 | 5秒告警 |
-| 代码生成（&lt;100行） | &lt;5秒 | 10秒告警 |
-| 代码审查（&lt;500行） | &lt;10秒 | 20秒告警 |
-| 大文件分析 | &lt;30秒 | 60秒告警 |
+| 简单问答 | <2秒 | 5秒告警 |
+| 代码生成（<100行） | <5秒 | 10秒告警 |
+| 代码审查（<500行） | <10秒 | 20秒告警 |
+| 大文件分析 | <30秒 | 60秒告警 |
 
 #### 4.4.2 吞吐量基准
 
 | 指标 | 基准值 | 说明 |
 | --- | --- | --- |
-| 日均请求数 | &lt;500 | 单用户 |
-| 日均token消耗 | &lt;100K | 单用户 |
-| 并发会话 | &lt;5 | 单用户 |
+| 日均请求数 | <500 | 单用户 |
+| 日均token消耗 | <100K | 单用户 |
+| 并发会话 | <5 | 单用户 |
 
 ---
 
@@ -1925,17 +1909,14 @@ export CLAUDE_MODEL=claude-opus-4-6
 
 ### 5.1 练习1：配置企业级项目结构
 
-**目标**：为一个新的企业项目配置完整的Claude Code环境
+**目标**：为一个新的企业项目配置完整的`Claude Code`环境
 
 **要求**：
 
-1.  创建标准目录结构
-
-1.  编写项目CLAUDE.md
-
-1.  配置权限白名单
-
-1.  设置MCP服务器
+1. 创建标准目录结构
+2. 编写项目`CLAUDE.md`
+3. 配置权限白名单
+4. 设置MCP服务器
 
 **步骤提示**：
 
@@ -1956,17 +1937,14 @@ claude config list
 
 ### 5.2 练习2：配置CI/CD流水线
 
-**目标**：为GitHub仓库配置Claude Code自动审查
+**目标**：为GitHub仓库配置`Claude Code`自动审查
 
 **要求**：
 
-1.  创建GitHub Actions工作流
-
-1.  配置PR自动审查
-
-1.  配置安全扫描
-
-1.  设置评论交互
+1. 创建GitHub Actions工作流
+2. 配置PR自动审查
+3. 配置安全扫描
+4. 设置评论交互
 
 **步骤提示**：
 
@@ -1992,13 +1970,10 @@ jobs:
 
 **要求**：
 
-1.  审计当前权限配置
-
-1.  识别并修复安全风险
-
-1.  配置审计日志
-
-1.  创建安全检查清单
+1. 审计当前权限配置
+2. 识别并修复安全风险
+3. 配置审计日志
+4. 创建安全检查清单
 
 **步骤提示**：
 
@@ -2007,7 +1982,7 @@ jobs:
 cat .claude/settings.json
 
 # 2. 识别风险配置
-# 检查allowedTools是否过于宽松
+# 检查`allowedTools`是否过于宽松
 # 检查是否有敏感路径暴露
 
 # 3. 配置审计日志
@@ -2021,17 +1996,14 @@ cat .claude/settings.json
 
 ### 5.4 练习4：性能优化
 
-**目标**：优化现有项目的Claude Code使用性能
+**目标**：优化现有项目的`Claude Code`使用性能
 
 **要求**：
 
-1.  分析当前性能瓶颈
-
-1.  优化上下文使用
-
-1.  配置成本监控
-
-1.  建立性能基准
+1. 分析当前性能瓶颈
+2. 优化上下文使用
+3. 配置成本监控
+4. 建立性能基准
 
 **步骤提示**：
 
@@ -2039,9 +2011,9 @@ cat .claude/settings.json
 # 1. 启用verbose模式分析
 claude --verbose
 
-# 2. 检查CLAUDE.md大小
+# 2. 检查`CLAUDE.md`大小
 wc -c CLAUDE.md
-# 目标：&lt;5000字符
+# 目标：<5000字符
 
 # 3. 检查对话上下文
 # 关注context size日志
@@ -2054,7 +2026,7 @@ wc -c CLAUDE.md
 
 ### 5.5 综合实战：从零搭建企业级环境
 
-**场景**：你是一家创业公司的技术负责人，需要为团队（10人）搭建Claude Code企业级开发环境。
+**场景**：你是一家创业公司的技术负责人，需要为团队（10人）搭建`Claude Code`企业级开发环境。
 
 **任务清单**：
 
@@ -2064,8 +2036,8 @@ wc -c CLAUDE.md
 ### 任务1.1：标准化项目模板
 - [ ] 创建项目模板仓库
 - [ ] 包含标准目录结构
-- [ ] 包含基础CLAUDE.md
-- [ ] 包含.claude/配置目录
+- [ ] 包含基础`CLAUDE.md`
+- [ ] 包含`.claude/`配置目录
 
 ### 任务1.2：配置管理
 - [ ] 建立全局配置规范
@@ -2111,50 +2083,45 @@ wc -c CLAUDE.md
 
 **交付物**：
 
-1.  项目模板仓库
-
-1.  CI/CD配置文件
-
-1.  安全策略文档
-
-1.  监控仪表盘
-
-1.  团队培训材料
+1. 项目模板仓库
+2. CI/CD配置文件
+3. 安全策略文档
+4. 监控仪表盘
+5. 团队培训材料
 
 ---
 
 ## 总结
 
-本章介绍了Claude Code在企业环境中的最佳实践，涵盖：
+本章介绍了`Claude Code`在企业环境中的最佳实践，涵盖：
 
-1.  **团队协作规范**：标准化项目结构、CLAUDE.md规范、代码审查流程
+1. **团队协作规范**：标准化项目结构、`CLAUDE.md`规范、代码审查流程
+2. **CI/CD集成**：GitHub Actions配置、安全审查、自动化流水线
 
-1.  **CI/CD集成**：GitHub Actions配置、安全审查、自动化流水线
 
-1.  **安全与合规**：权限系统、白名单配置、审计日志、合规检查
 
-1.  **性能优化**：上下文管理、调试技巧、成本控制
+## 安全与合规
+
+权限系统、白名单配置、审计日志、合规检查
+
+## 性能优化
+
+上下文管理、调试技巧、成本控制
 
 掌握这些内容后，你将能够：
 
-+   为团队建立统一的Claude Code使用规范
-
-+   实现自动化的代码审查和安全扫描
-
-+   确保AI辅助开发的安全性和合规性
-
-+   有效控制使用成本并优化性能
+- 为团队建立统一的`Claude Code`使用规范
+- 实现自动化的代码审查和安全扫描
+- 确保AI辅助开发的安全性和合规性
+- 有效控制使用成本并优化性能
 
 ---
 
-**版本历史**：
+## 版本历史
 
-+   V1.3.0 (2026-03-18)：新增Sandbox沙箱配置详解（filesystem权限控制）、128K输出token说明、更新适用版本至v2.1+
+- V1.3.0 (2026-03-18)：新增`Sandbox`沙箱配置详解（`filesystem`权限控制）、`128K`输出`token`说明、更新适用版本至`v2.1+`
+- V1.2.0 (2026-03-18)：全面审核修正——修复`MCP`虚构配置字段（`trust/network/limits`）、移除虚构`settings.json`字段（`audit/cache/costControl/verbose`）、修正分环境配置为标准三级层次、修正`CLI`命令（`permission-mode strict→plan`）、更新定价信息
+- V1.1.0 (2026-01-19)：更新至`Claude Code` 2.1.12，新增`Skills`和`Hooks` `frontmatter`说明、通配符权限、`Shift+Enter`换行等新特性
+- V1.0.0 (2025-12-24)：初始版本，基于企业级最佳实践指南创建
 
-+   V1.2.0 (2026-03-18)：全面审核修正——修复MCP虚构配置字段（trust/network/limits）、移除虚构settings.json字段（audit/cache/costControl/verbose）、修正分环境配置为标准三级层次、修正CLI命令（permission-mode strict→plan）、更新定价信息
-
-+   V1.1.0 (2026-01-19)：更新至Claude Code 2.1.12，新增Skills和Hooks frontmatter说明、通配符权限、Shift+Enter换行等新特性
-
-+   V1.0.0 (2025-12-24)：初始版本，基于企业级最佳实践指南创建
-
-**最后更新**：2026年3月18日 | **版本**：V1.3.0
+最后更新：2026年3月18日 | 版本：V1.3.0

@@ -1,3 +1,4 @@
+
 # 超级个体
 
 > 来源：[https://docs.feishu.cn/docx/W6YMdgR9Bortzgx9E8pcNM6in2c](https://docs.feishu.cn/docx/W6YMdgR9Bortzgx9E8pcNM6in2c)
@@ -6,7 +7,7 @@
 
 利用好你的飞轮
 
-# 超级个体有什么特点？
+## 超级个体有什么特点？
 
 第一，净利润第一，而非规模第一。
 

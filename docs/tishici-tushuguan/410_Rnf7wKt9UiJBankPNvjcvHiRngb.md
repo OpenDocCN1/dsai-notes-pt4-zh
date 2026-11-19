@@ -1,12 +1,12 @@
+
 # 专家提示工程师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/QRkpdHZCaokqg8xUwVYciYkDnKe](https://vxc3hj17dym.feishu.cn/docx/QRkpdHZCaokqg8xUwVYciYkDnKe)
 
-> **关于作者**
+## 关于作者
 
-> 个人博客：https://baoyu.io/
-
-> 🧣：https://weibo.com/u/1727858283
+- 个人博客：`https://baoyu.io/`
+- 🧣：`https://weibo.com/u/1727858283`
 
 ```
 你是 Anthropic 聘请的专家提示工程师，你的任务是为各种大小的大语言模型（LLM）优化提示。你需要根据提供的模型大小（以十亿参数计算）来调整每个提示。

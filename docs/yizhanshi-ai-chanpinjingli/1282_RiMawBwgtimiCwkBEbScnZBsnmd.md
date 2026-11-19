@@ -1,3 +1,4 @@
+
 # 必应搜索中文
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/C3wJduBEVocakZxjwtCcfX7An3f](https://v11enp9ok1h.feishu.cn/docx/C3wJduBEVocakZxjwtCcfX7An3f)
@@ -10,27 +11,22 @@
 
 ## 特点
 
-+   支持中文搜索结果
-
-+   无需 API 密钥，直接爬取必应搜索结果
-
-+   提供网页内容获取功能
-
-+   轻量级，易于安装和使用
-
-+   专为中文用户优化
-
-+   支持 Claude 等 AI 工具调用
++ 支持中文搜索结果
++ 无需 API 密钥，直接爬取必应搜索结果
++ 提供网页内容获取功能
++ 轻量级，易于安装和使用
++ 专为中文用户优化
++ 支持 Claude 等 AI 工具调用
 
 ## 安装
 
-**全局安装**
+### 全局安装
 
 ```
 npm install -g bing-cn-mcp
 ```
 
-**或者直接通过 npx 运行**
+### 或者直接通过 npx 运行
 
 ```
 npx bing-cn-mcp
@@ -44,7 +40,7 @@ npx bing-cn-mcp
 bing-cn-mcp
 ```
 
-或者使用 npx：
+或者使用 `npx`：
 
 ```
 npx bing-cn-mcp
@@ -54,65 +50,63 @@ npx bing-cn-mcp
 
 在支持 MCP 的环境（如 Cursor）中，配置 MCP 服务器来使用它：
 
-1.  找到 MCP 配置文件（例如 .cursor/mcp.json）
-
-1.  添加服务器配置：
+1. 找到 MCP 配置文件（例如 `.cursor/mcp.json`）
+2. 添加服务器配置：
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;bingcn&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [
-        &quot;bing-cn-mcp&quot;
+  "mcpServers": {
+    "bingcn": {
+      "command": "npx",
+      "args": [
+        "bing-cn-mcp"
       ]
     }
   }
 }
 ```
 
-Windows用户的配置
+### Windows 用户的配置
 
 ```
 {
-  &quot;mcpServers&quot;: {
-    &quot;bingcnmcp&quot;: {
-        &quot;command&quot;: &quot;cmd&quot;,
-        &quot;args&quot;: [
-          &quot;/c&quot;,
-          &quot;npx&quot;,
-          &quot;bing-cn-mcp&quot;
+  "mcpServers": {
+    "bingcnmcp": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "bing-cn-mcp"
       ]
     }
   }
 }
 ```
 
-1.  现在你可以在 Claude 中使用 mcp__bing_search 和 mcp__fetch_webpage 工具了
+3. 现在你可以在 Claude 中使用 `mcp__bing_search` 和 `mcp__fetch_webpage` 工具了
 
 ## 支持的工具
 
-### bing_search
+### `bing_search`
 
 搜索必应并获取结果列表。
 
 **参数：**
 
-+   query: 搜索关键词
++ `query`: 搜索关键词
++ `num_results`: 返回结果数量（默认为 5）
 
-+   num_results: 返回结果数量（默认为 5）
-
-**fetch_webpage**
+### `fetch_webpage`
 
 根据搜索结果 ID 获取对应网页的内容。
 
 **参数：**
 
-+   result_id: 从 bing_search 返回的结果 ID
++ `result_id`: 从 `bing_search` 返回的结果 ID
 
 ## 自定义配置
 
-你可以通过创建 .env 文件来自定义配置，例如：
+你可以通过创建 `.env` 文件来自定义配置，例如：
 
 ```
 # 用户代理设置

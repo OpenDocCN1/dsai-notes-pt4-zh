@@ -1,3 +1,4 @@
+
 # 网页动画交互学习
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/QGrTdtJoXo9oDyxulaUcr83in4d](https://vxc3hj17dym.feishu.cn/docx/QGrTdtJoXo9oDyxulaUcr83in4d)
@@ -21,7 +22,6 @@
 - 交互应该是像玩游戏一样的
 - 适配不同浏览器
 - 交互方式：用户选择、用户拖拽、用户点击为主
-
 
 # 教学内容：
 - 生活化且通俗易懂

@@ -1,8 +1,9 @@
+
 # AI Agent项目案例➡️CRM 商机助手
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/VmgldtGQToTUy1xMIEzcJJyynCb](https://v11enp9ok1h.feishu.cn/docx/VmgldtGQToTUy1xMIEzcJJyynCb)
 
-# 🤖CRM 商机助手
+## 🤖CRM 商机助手
 
 ![](img/84f9118b251442a4b1946ab931ebb037.png)
 
@@ -14,7 +15,7 @@
 
 | 应用亮点 | 业务价值体现： |
 | --- | --- |
-| 应用demo |  |
+| 应用demo | |
 | 相关文档 | [CRM 商机助手 demo和搭建方案](https://v11enp9ok1h.feishu.cn/wiki/Le6Yw2VCNiwZEekiv7AcfgADnZx?from=from_copylink) |
 
 ![](img/8873e84e1f83d2af00d1daafc8fe75ec.png)

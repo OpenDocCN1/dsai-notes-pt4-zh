@@ -1,3 +1,4 @@
+
 # 大语言模型（LLM）微调技术笔记
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/YEdUdJdiloY6gPxUQlgck9MrnhA](https://qqs7y1hozd1.feishu.cn/docx/YEdUdJdiloY6gPxUQlgck9MrnhA)
@@ -6,17 +7,16 @@
 
 ![](img/5fbb830a39e7cc910ba4d7aa71171b7d.png)
 
-**图1：大模型进化树**(2)
+图1：大模型进化树 (2)
 
-## **0x00 大模型微调**
+## 0x00 大模型微调
 
 在预训练后，大模型可以获得解决各种任务的通用能力。然而，越来越多的研究表明，大语言模型的能力可以根据特定目标进一步调整。
 
 这就是微调技术，目前主要有两种微调大模型的方法(1)：
 
-1.  指令微调，目标是增强（或解锁）大语言模型的能力。
-
-1.  对齐微调，目标是将大语言模型的行为与人类的价值观或偏好对齐。
+1. 指令微调，目标是增强（或解锁）大语言模型的能力。
+2. 对齐微调，目标是将大语言模型的行为与人类的价值观或偏好对齐。
 
 在 OpenAI 发布的 ChatGPT 中，就主要应用了微调技术(3)，从而获得了惊艳全世界的效果。
 
@@ -24,13 +24,13 @@
 
 图2：InstuctGPT 原理
 
-## 0x10 指令微调 ( Instruction Tuning)
+## 0x10 指令微调 (Instruction Tuning)
 
-本质上，指令微调是在自然语言格式的实例集合上微调预训练后的大语言模型的方法。这种方法与有监督微调和多任务提示训练密切相关。为了进行指令微调，我们**首先需要收集或构造指令格式**的实例。然**后，我们使**用这些格式化的实例以有监督的方式微调大语言模型（例如，使用序列到序列的损失进行训练）。指令微调后，大语言模型展现出泛化到未见过任务的卓越能力 ，即使在多语言场景下也能有不错表现。
+本质上，指令微调是在自然语言格式的实例集合上微调预训练后的大语言模型的方法。这种方法与有监督微调和多任务提示训练密切相关。为了进行指令微调，我们首先需要收集或构造指令格式的实例。然后，我们使用这些格式化的实例以有监督的方式微调大语言模型（例如，使用序列到序列的损失进行训练）。指令微调后，大语言模型展现出泛化到未见过任务的卓越能力，即使在多语言场景下也能有不错表现。
 
 ### 0x11 格式化实例构造（微调数据集）
 
-通常情况下，一个指令格式化的实例包括一个任务描述（被称为指令 instruction)、一个输入输出对以及少量示例（可选）。
+通常情况下，一个指令格式化的实例包括一个任务描述（被称为指令 `instruction`）、一个输入输出对以及少量示例（可选）。
 
 数据集一般用两种方法产出：
 
@@ -38,29 +38,24 @@
 
 图3：实例格式化和两种构造指令格式实例的示意图。(1)
 
-1.  格式化已有数据集。将传统的NLP数据集格式调整后，用于指令微调。
-
-1.  为降低人工格式化成本，可以通过 ChatGPT 生成 Instruciton。典型 Prompt：“请你为这段内容生成一个合理的问题”
-
-1.  人工标注数据集。为获得更好的人类对齐效果，OpenAI 建议使用人工标注数据集。
-
-1.  为降低人工标注成本，目前很多数据集由 ChatGPT 生成，包括用户分享的 ChatGPT 对话历史（如 ShareGPT）或者使用 ChatGPT生成的数据集。
+1. 格式化已有数据集。将传统的NLP数据集格式调整后，用于指令微调。
+2. 为降低人工格式化成本，可以通过 ChatGPT 生成 Instruciton。典型 Prompt：“请你为这段内容生成一个合理的问题”
+3. 人工标注数据集。为获得更好的人类对齐效果，OpenAI 建议使用人工标注数据集。
+4. 为降低人工标注成本，目前很多数据集由 ChatGPT 生成，包括用户分享的 ChatGPT 对话历史（如 ShareGPT）或者使用 ChatGPT生成的数据集。
 
 数据集也分为通用任务的数据集以及专用数据集，前者目前有大量开源数据集可供使用，后者则针对某个具体领域，可以自行构建。此外引入多样化的数据集（包括引入 CoT思维链等）可以有效的提升模型性能。
 
 目前通用的中文微调数据集：
 
-其余中文数据集可以参见：
++ [`https://github.com/CVI-SZU/Linly/blob/main/instructions/README.md`](https://github.com/CVI-SZU/Linly/blob/main/instructions/README.md)
 
-+   [h](https://github.com/CVI-SZU/Linly/blob/main/instructions/README.md)ttps://github.com/CVI-SZU/Linly/blob/main/instructions/README.md
++ [`https://github.com/hiyouga/ChatGLM-Efficient-Tuning/blob/main/data/README.md`](https://github.com/hiyouga/ChatGLM-Efficient-Tuning/blob/main/data/README.md)
 
-+   [https://github.com/hiyouga/ChatGLM-E](https://github.com/hiyouga/ChatGLM-Efficient-Tuning/blob/main/data/README.md)fficient-Tuning/blob/main/data/README.md
+### 0x12 数据集格式示例
 
-### **0x12 数据集格式示例**
+典型的数据集格式：`{"instruction": "", "input": "", "output": ""}`，如果要微调已经经过指令微调的模型，那么微调数据集的格式应该保持不变以获得最佳效果，格式包括分隔符、代码标签等。
 
-典型的数据集格式：{"instruction": "", "input": "", "output": ""}， 如果要微调已经经过指令微调的模型，那么微调数据集的格式应该保持不变以获得最佳效果，格式包括分隔符、代码标签等。
-
-以 ChatGLM-6B 为例，其微调格式：
+以 `ChatGLM-6B` 为例，其微调格式：
 
 ```
 ---
@@ -76,8 +71,6 @@ Complete: &quot;1. 实施强制的车辆排放标准和基于激励的计划，�
 
 以 [Claude 模型](https://console.anthropic.com/docs/prompt-design)为例，其格式为：
 
----
-
 ```
 ---
 Prompt: &quot;\n\nHuman: Why is the sky blue?\n\nAssistant:&quot;
@@ -85,7 +78,7 @@ Prompt: &quot;\n\nHuman: Why is the sky blue?\n\nAssistant:&quot;
 Complete: &quot;The sky appears blue to us due to how the atmosphere interacts with sunlight. &lt;......&gt;&quot;
 ```
 
-以 [Guannaco 模型](https://guanaco-model.github.io/)为例，其格式为
+以 [Guannaco 模型](https://guanaco-model.github.io/)为例，其格式为：
 
 ```
 Prompt: &quot;&quot;&quot;Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
@@ -101,22 +94,23 @@ Prompt: &quot;&quot;&quot;Below is an instruction that describes a task, paired 
 Complete: &quot;&quot;&quot;{output}&quot;&quot;&quot;
 ```
 
-### **0x13 指令微调效果**
+### 0x13 指令微调效果
 
 指令微调可以让大模型有质的提升，主要体现在两个方面：
 
-1.  **性能改进**：最近的研究发现经过指令微调的较小模型甚至可以比未经微调的较大模型表现更好。除了模型规模外，指令微调在不同的模型架构、预训练目标和模型适应方法上都展现出持续的改进效果。在实践中，指令微调为提升现有语言模型（包括小型预训练语言模型）的能力提供了一种通用的方法 。此外，与预训练相比，指令微调成本较低，因为大语言模型所需的指令数据数量明显较少于预训练数据。
+1. **性能改进**：最近的研究发现经过指令微调的较小模型甚至可以比未经微调的较大模型表现更好。除了模型规模外，指令微调在不同的模型架构、预训练目标和模型适应方法上都展现出持续的改进效果。在实践中，指令微调为提升现有语言模型（包括小型预训练语言模型）的能力提供了一种通用的方法。此外，与预训练相比，指令微调成本较低，因为大语言模型所需的指令数据数量明显较少于预训练数据。
 
-1.  **任务泛化性**：指令微调鼓励模型理解用于任务完成的自然语言指令。它赋予大语言模型遵循人类指令执行特定任务的能力（通常被视为一种涌现能力），即使在未见过的任务上也能够执行 。大量研究已经证实了指令微调在已见和未见任务上实现卓越的性能表现。此外，指令微调还被证明对缓解大语言模型的一些弱点（如生成重复内容或在不完成特定任务的情况下补充输入）具有帮助，从而使大语言模型具有更强的解决现实世界任务的能力。此外，通过使用指令微调训练的大语言模型可以在不同语言之间泛化到相关任务。
+2. **任务泛化性**：指令微调鼓励模型理解用于任务完成的自然语言指令。它赋予大语言模型遵循人类指令执行特定任务的能力（通常被视为一种涌现能力），即使在未见过的任务上也能够执行。大量研究已经证实了指令微调在已见和未见任务上实现卓越的性能表现。此外，指令微调还被证明对缓解大语言模型的一些弱点（如生成重复内容或在不完成特定任务的情况下补充输入）具有帮助，从而使大语言模型具有更强的解决现实世界任务的能力。此外，通过使用指令微调训练的大语言模型可以在不同语言之间泛化到相关任务。
 
 ### 0x14 对话微调 (Conversation Tuning)
 
 对话微调是一种特殊的指令微调。其目的是让大语言模型在「补全」能力的基础上，解锁「对话」能力。
 
-典型的数据集格式：{"instruction": "", "input": "", "output": "", "history": [{"", ""}, {"", ""}]}
+典型的数据集格式：`{"instruction": "", "input": "", "output": "", "history": [{"", ""}, {"", ""}]}`
 
-具体的对话格式应该和模型在预训练以及微调时保持一致，以ChatGLM-6B 微调数据格式为例：
+具体的对话格式应该和模型在预训练以及微调时保持一致，以 `ChatGLM-6B` 微调数据格式为例：
 
+```
 ---
 
 Prompt: """[Round 0]
@@ -138,10 +132,9 @@ Prompt: """[Round 0]
 答："""
 
 Complete: "人工智能面临的挑战包括数据隐私、安全和道德方面的问题，以及影响就业机会的自动化等问题。"
+```
 
-Claude 模型格式：
-
----
+`Claude` 模型格式：
 
 ```
 ---
@@ -185,75 +178,73 @@ How are you now?&lt;|im_end|&gt;&quot;&quot;&quot;
 Complete: &quot;&quot;&quot;{output}&quot;&quot;&quot;
 ```
 
-### **0x15 参数高效微调 (Parameter-Ef**ficient Fine-Tuning)
+### 0x15 参数高效微调 (Parameter-Efficient Fine-Tuning)
 
 虽然指令微调相比于预训练更加高效（只需要处理微调数据集），但是全参数的指令微调依然需要消耗较多的算力。目前有多种高效参数微调方案，可以在实现和全参数微调相同性能的情况下，大幅降低微调成本。
 
-参数高效微调，也称为 PEFT，可以仅微调少量或者额外的模型参数，并固定住大部分预训练参数，从而大大降低训练成本。目前研究表明，PEFT 相比于全参数微调，在没有微调过的大语言模型上性能略差，但是在已经微调过的模型上，性能接近。
+参数高效微调，也称为 `PEFT`，可以仅微调少量或者额外的模型参数，并固定住大部分预训练参数，从而大大降低训练成本。目前研究表明，`PEFT` 相比于全参数微调，在没有微调过的大语言模型上性能略差，但是在已经微调过的模型上，性能接近。
 
-PEFT 方法可以分为三类，不同的方法对模型的不同部分进行下游任务的适配：
+`PEFT` 方法可以分为三类，不同的方法对模型的不同部分进行下游任务的适配：
 
-+   Prefix/Prompt-Tuning：在模型的输入或隐层添加 k 个额外可训练的前缀 tokens（这些前缀是连续的伪 tokens，不对应真实的 tokens），只训练这些前缀参数；
++ `Prefix/Prompt-Tuning`：在模型的输入或隐层添加 k 个额外可训练的前缀 tokens（这些前缀是连续的伪 tokens，不对应真实的 tokens），只训练这些前缀参数；
++ `Adapter-Tuning`：将较小的神经网络层或模块插入预训练模型的每一层，这些新插入的神经模块称为 adapter（适配器），下游任务微调时也只训练这些适配器参数；
++ `LoRA`(4)：通过学习小参数的低秩矩阵来近似模型权重矩阵 `W` 的参数更新，训练时只优化低秩矩阵参数。
 
-+   **Adapter-Tuning**：将较小的神经网络层或模块插入预训练模型的每一层，这些新插入的神经模块称为 adapter（适配器），下游任务微调时也只训练这些适配器参数；
-
-+   **LoRA**(4)：通过学习小参数的低秩矩阵来近似模型权重矩阵 W 的参数更新，训练时只优化低秩矩阵参数。
-
-目前针对大语言模型，评测效果最好的是 LoRa。其基本原理是在原始预训练权重旁边增加一个旁路，做一个降维再升维的操作k。训练的时候固定预训练权重，只训练降维矩阵A与升维矩阵B。而模型的输入输出维度不变，输出时将B/A与预训练权重的参数叠加。实际微调过程中，A/B 基本在MB级别，与之相比，大语言模型的权重通常在GB级别。
+目前针对大语言模型，评测效果最好的是 LoRa。其基本原理是在原始预训练权重旁边增加一个旁路，做一个降维再升维的操作 `k`。训练的时候固定预训练权重，只训练降维矩阵 `A` 与升维矩阵 `B`。而模型的输入输出维度不变，输出时将 `B/A` 与预训练权重的参数叠加。实际微调过程中，`A/B` 基本在MB级别，与之相比，大语言模型的权重通常在GB级别。
 
 ![](img/294fe05d25c8eb7876e0a922b22a8420.png)
 
-**图4：Lora 微调原理**
+图4：Lora 微调原理
 
-## **0x20 对齐微调**
+## 0x20 对齐微调
 
-大语言模型在多个自然语言处理任务上展示出了惊人 的能力。但是, 这些模型有时可能表现出意外的行为，例如制造虚假信息、追求不准确的目标，以及产生有害的、误导性的和偏见性的表达。对于 LLM, 语言建模目标通过单词预测对模型参数进行预训练，但缺乏对人类价值观或偏好的考虑。为了避免这些意外行为，研究提出了人类对齐，使大语言模型行为能够符合人类的期望。但是, 与初始的预训练和适应微调（例如指令微调）不同, 语言模型的对齐需要考虑不同的标准（例如有用性, 诚实性和无害性）。 已有研究表明对齐微调可能会在某种程度上损害大语言模型的通用能力，这在相关研究中被称为对齐税。
+大语言模型在多个自然语言处理任务上展示出了惊人的能力。但是，这些模型有时可能表现出意外的行为，例如制造虚假信息、追求不准确的目标，以及产生有害的、误导性的和偏见性的表达。对于 `LLM`，语言建模目标通过单词预测对模型参数进行预训练，但缺乏对人类价值观或偏好的考虑。为了避免这些意外行为，研究提出了人类对齐，使大语言模型行为能够符合人类的期望。但是，与初始的预训练和适应微调（例如指令微调）不同，语言模型的对齐需要考虑不同的标准（例如有用性、诚实性和无害性）。已有研究表明对齐微调可能会在某种程度上损害大语言模型的通用能力，这在相关研究中被称为对齐税。
 
-### **0x21 对齐标准**
+### 0x21 对齐标准
 
-+   有用性：简明扼要且高效的方式帮助用户解决任务或回答问题。在更高层次上，当需要进一步澄清时，大语言模型应展示出通过相关提问获取额外相关信息的能力，并表现出合适的敏感度、洞察力和审慎程度。
++ 有用性：简明扼要且高效的方式帮助用户解决任务或回答问题。在更高层次上，当需要进一步澄清时，大语言模型应展示出通过相关提问获取额外相关信息的能力，并表现出合适的敏感度、洞察力和审慎程度。
++ 诚实性：应该向用户提供准确的内容，而不会捏造信息。此外，大语言模型在输出时传达适当程度的不确定性至关重要，以避免任何形式的欺骗或信息误传。这需要模型了解其能力和知识水平（即所谓的“知道自己不知道”）。
++ 无害性：模型生成的语言不得具有冒犯性或歧视性，同时不能生成违反法律法规以及道德规范的有害信息。
 
-+   诚实性：应该向用户提供准确的内容，而不会捏造信息。此外，大语言模型在输出时传达适当程度的不确定性至关重要，以避免任何形式的欺骗或信息误传。这需要模型了解其能力和知识水平（即所谓的“知道自己不知道”）。
+### 0x22 基于人类反馈的强化学习（`RLHF`）
 
-+   无害性：模型生成的语言不得具有冒犯性或歧视性，同时不能生成违反法律法规以及道德规范的有害信息。
-
-### 0x22 基于人类反馈的强化学习（RLHF）
-
-通过 RLHF，大模型可以根据人类反馈进行强化学习，从而和人类对齐。典型步骤如下图。
+通过 `RLHF`，大模型可以根据人类反馈进行强化学习，从而和人类对齐。典型步骤如下图。
 
 ![](img/04e5ba826134134afa7d9412c0bf3040.png)
 
-**图5：基于人类反馈的强化学习**(1)
+图5：基于人类反馈的强化学习 (1)
 
 分为三个步骤：
 
-+   监督微调（可选）：为了使 LM（语言模型） 具有初步执行所需行为的能力，通常需要收集一个包含输入提示（指令）和所需输出的监督数据集，以对 LM 进行微调。这些提示和输出可以由人工标注人员针对某些特定任务编写，同时确保任务的多样性。例如，InstructGPT 要求人工标注者编写提示（例如，“Listfive ideas for how to regain enthusiasm for my career”）和一些生成式任务（如开放域问答、头脑风暴、聊天和重写）的期望输出。
++ 监督微调（可选）：为了使 `LM`（语言模型） 具有初步执行所需行为的能力，通常需要收集一个包含输入提示（指令）和所需输出的监督数据集，以对 `LM` 进行微调。这些提示和输出可以由人工标注人员针对某些特定任务编写，同时确保任务的多样性。例如，`InstructGPT` 要求人工标注者编写提示（例如，“Listfive ideas for how to regain enthusiasm for my career”）和一些生成式任务（如开放域问答、头脑风暴、聊天和重写）的期望输出。
 
-+   训练奖励模型：第二步是使用人类反馈数据训练 RM（奖励模型）。具体来说，使用 LM 使用采样提示（来自监督数据集或人工生成的提示）作为输入来生成一定数量的输出文本，然后邀请人工标注员为这些对标注偏好。标注过程可以以多种形式进行，常见的做法是对生成的候选文本进行排序标注，这样可以减少标注者之间的不一致性。然后，需要训练 RM 预测人类偏好的输出。在 InstructGPT 中，标注员将模型生成的输出从最好到最差进行排名，然后训练 RM（即 6B 参数量的 GPT-3）来预测排名。
 
-+   在实践中，目前可以使用 GPT-4 代替人类进行排序标注，从而降低人工标注成本。
 
-+   RL（强化学习） 微调：在这一步骤中，对齐（即微调）LM 被形式化为 RL 问题。在此设置中，预训练的 LM 作为策略，将提示作为输入并返回输出文本，它的动作空间是 LM 的词表，状态是当前生成的 token 序列，奖励由 RM 生成。为了避免显着偏离初始（调整前）LM，通常将惩罚项纳入奖励函数。例如，InstructGPT 使用 PPO 算法针对 RM 优化 LM。对于每个输入提示，InstructGPT 计算当前 LM 和初始 LM 生成的结果之间的 KL 散度作为惩罚。值得注意的是，第二步和最后一步可以多次迭代来更好地对齐 LLM。
+训练奖励模型：第二步是使用人类反馈数据训练 `RM`（奖励模型）。具体来说，使用 `LM` 使用采样提示（来自监督数据集或人工生成的提示）作为输入来生成一定数量的输出文本，然后邀请人工标注员为这些对标注偏好。标注过程可以以多种形式进行，常见的做法是对生成的候选文本进行排序标注，这样可以减少标注者之间的不一致性。然后，需要训练 `RM` 预测人类偏好的输出。在 InstructGPT 中，标注员将模型生成的输出从最好到最差进行排名，然后训练 `RM`（即 6B 参数量的 GPT-3）来预测排名。
 
-### **0x23 RLHF 实践**
+在实践中，目前可以使用 GPT-4 代替人类进行排序标注，从而降低人工标注成本。
+
+RL（强化学习）微调：在这一步骤中，对齐（即微调）`LM` 被形式化为 RL 问题。在此设置中，预训练的 `LM` 作为策略，将提示作为输入并返回输出文本，它的动作空间是 `LM` 的词表，状态是当前生成的 token 序列，奖励由 `RM` 生成。为了避免显著偏离初始（调整前）`LM`，通常将惩罚项纳入奖励函数。例如，InstructGPT 使用 PPO 算法针对 `RM` 优化 `LM`。对于每个输入提示，InstructGPT 计算当前 `LM` 和初始 `LM` 生成的结果之间的 KL 散度作为惩罚。值得注意的是，第二步和最后一步可以多次迭代来更好地对齐 LLM。
+
+## 0x23 RLHF 实践
 
 目前开源模型中，主要使用指令微调，应用 RLHF 的较少。已知的例子：
 
-+   ChatGLM-Efficient-Tuning: 训练奖励模型时，使用了 GPT-4 和 GPT-3.5 产生的对比数据作为监督，没有使用人工标注的对比数据。
++   `ChatGLM-Efficient-Tuning`: 训练奖励模型时，使用了 GPT-4 和 GPT-3.5 产生的对比数据作为监督，没有使用人工标注的对比数据。
 
 +   [StableVicuna](https://huggingface.co/CarperAI/stable-vicuna-13b-delta): 奖励模型基于 [OpenAssistant Conversati](https://huggingface.co/datasets/OpenAssistant/oasst1)ons Dataset (OASST1)、 Anthropic HH-RLHF、 Stanford Human Preferences Dataset 数据集训练。
 
-+   OASST1 数据集为对话提供 Rank 评分。
++   OASST1 数据集为对话提供 `Rank` 评分。
 
-+   Anthropic HH-RLHF 数据集格式：{"chosen": "xxxx", "rejected": "yyyy"}，分别代表正向和负向反馈。
++   Anthropic HH-RLHF 数据集格式：`{"chosen": "xxxx", "rejected": "yyyy"}`，分别代表正向和负向反馈。
 
-+   SHP 数据集 每个示例都是一个Reddit帖子，其中包含一个问题/指令以及该帖子的一对顶级评论，其中一个评论被Reddit用户（集体）更喜欢。SHP利用了这样一个事实：如果A评论写在B评论之后但得分却更高，则可以认为A比B更受欢迎。如果A先于B编写，则我们无法得出此结论，因为其较高的分数可能是可见性更高所致。我们选择意图反映哪个响应更有帮助而不是哪个响应更少有害作为首要标签的数据。
++   SHP 数据集 每个示例都是一个Reddit帖子，其中包含一个问题/指令以及该帖子的一对顶级评论，其中一个评论被Reddit用户（集体）更喜欢。SHP利用了这样一个事实：如果`A`评论写在`B`评论之后但得分却更高，则可以认为`A`比`B`更受欢迎。如果`A`先于`B`编写，则我们无法得出此结论，因为其较高的分数可能是可见性更高所致。我们选择意图反映哪个响应更有帮助而不是哪个响应更少有害作为首要标签的数据。
 
 +   评价：Reddit 帖子是否适合LLM，存疑
 
 可以看到 RLHF 极其依赖标注良好的数据集。
 
-## **0x30 微调实战**
+## 0x30 微调实战
 
 接下来，我们以 ChatGLM-6B 中文模型为例，通过 Lora 微调修改其自我认知，预期目标：
 
@@ -262,9 +253,9 @@ PEFT 方法可以分为三类，不同的方法对模型的不同部分进行下
 答：我叫ChatGLM-6B，是一个由呱唧于2023年独立训练和开发的人工智能助手。我的主要目标是协助用户解决问题和满足他们的需求。
 ```
 
-我们使用 ChatGLM-Efficient-Tuning 库对 ChatGLM-6B 进行 Lora 微调：
+我们使用 `ChatGLM-Efficient-Tuning` 库对 ChatGLM-6B 进行 Lora 微调：
 
-1.  下载和配置 ChatGLM-Efficient-Tuning 库
+1.  下载和配置 `ChatGLM-Efficient-Tuning` 库
 
 ```
 git clone https://github.com/hiyouga/ChatGLM-Efficient-Tuning.git
@@ -274,7 +265,7 @@ cd ChatGLM-Efficient-Tuning
 pip install -r requirements.txt
 ```
 
-1.  产生数据集：sed -i 's/[NAME]/呱唧/g' data/self_cognition.json。该数据集包含了 18 条关于模型自我认知的数据，我们的目标是修改模型自身的知识，使模型给出我们希望的答复。使用18条是通过各种方式让大模型学习，如果条数过少则训练效果很差。示例如下：
+1.  产生数据集：`sed -i 's/[NAME]/呱唧/g' data/self_cognition.json`。该数据集包含了 18 条关于模型自我认知的数据，我们的目标是修改模型自身的知识，使模型给出我们希望的答复。使用18条是通过各种方式让大模型学习，如果条数过少则训练效果很差。示例如下：
 
 ```
 [
@@ -291,7 +282,7 @@ pip install -r requirements.txt
 ]
 ```
 
-1.  运行以下命令在单个 GPU 上进行模型监督微调。我们使用 self_cognition 数据集，采用 lora 微调方法，微调后的模型保存在 cognition 文件夹中。为了保证模型微调成功，我们采用 0.001 的学习率，在数据集上训练 10 个 epoch。
+1.  运行以下命令在单个 GPU 上进行模型监督微调。我们使用 `self_cognition` 数据集，采用 `lora` 微调方法，微调后的模型保存在 `cognition` 文件夹中。为了保证模型微调成功，我们采用 0.001 的学习率，在数据集上训练 10 个 epoch。
 
 ```
 CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
@@ -311,40 +302,40 @@ CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
     --fp16
 ```
 
-1.  运行以下命令在单个 GPU 上测试模型效果，它会加载 cognition 文件夹内保存的微调模型权重，并合并进原版 ChatGLM 模型的参数权重中，同时启动流式交互窗口
+1.  运行以下命令在单个 GPU 上测试模型效果，它会加载 `cognition` 文件夹内保存的微调模型权重，并合并进原版 ChatGLM 模型的参数权重中，同时启动流式交互窗口
 
 ```
 CUDA_VISIBLE_DEVICES=0 python src/infer.py \
     --checkpoint_dir cognition
 ```
 
-## **0x40 参考资料**
+## 0x40 参考资料
 
-### **0x41 相关项目**
+### 0x41 相关项目
 
-1.  [LMFlow](https://github.com/OptimalScale/LMFlow/blob/main/readme/README_zh-hans.md) : 一个可扩展、方便和高效的工具箱，用于微调大型机器学习模型。支持所有 Decoder 模型的微调。
+1.  [`LMFlow`](https://github.com/OptimalScale/LMFlow/blob/main/readme/README_zh-hans.md) : 一个可扩展、方便和高效的工具箱，用于微调大型机器学习模型。支持所有 Decoder 模型的微调。
 
-1.  [FastChat](https://github.com/lm-sys/FastChat): FastChat is an open platform for training, serving, and evaluating large language model based chatbots.
+1.  [`FastChat`](https://github.com/lm-sys/FastChat): FastChat is an open platform for training, serving, and evaluating large language model based chatbots.
 
-1.  [PEFT](https://github.com/huggingface/peft): 参数高效微调工具库。支持 LoRA、Prefix Tuning、P-Tuning、Prompt Tuning、AdaLoRA等方法。
+1.  [`PEFT`](https://github.com/huggingface/peft): 参数高效微调工具库。支持 LoRA、Prefix Tuning、P-Tuning、Prompt Tuning、AdaLoRA等方法。
 
-1.  [LLM-Adapters](https://github.com/AGI-Edgerunners/LLM-Adapters): 对 PEFT 的扩展，支持AdpaterP、AdpaterH、Parallel 等方法。
+1.  [`LLM-Adapters`](https://github.com/AGI-Edgerunners/LLM-Adapters): 对 `PEFT` 的扩展，支持AdpaterP、AdpaterH、Parallel 等方法。
 
 1.  [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B): 清华开源中文大模型，及微调训练工具库。
 
-1.  ChatGLM-Efficient-Tuning: 对 ChatGLM-6B 进行参数高效微调。
+1.  `ChatGLM-Efficient-Tuning`: 对 ChatGLM-6B 进行参数高效微调。
 
-1.  [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo): Phoenix-inst-chat-7b 中文模型（基于BLOOMZ）及微调训练工具库。
+1.  [`LLMZoo`](https://github.com/FreedomIntelligence/LLMZoo): Phoenix-inst-chat-7b 中文模型（基于BLOOMZ）及微调训练工具库。
 
-1.  [BELLE](https://github.com/LianjiaTech/BELLE): 基于 LLaMA 的中文模型及微调训练工具库。
+1.  [`BELLE`](https://github.com/LianjiaTech/BELLE): 基于 LLaMA 的中文模型及微调训练工具库。
 
-1.  [Linly](https://github.com/CVI-SZU/Linly): 基于 LLaMA 使用中文增量预训练以及微调训练的中文模型。
+1.  [`Linly`](https://github.com/CVI-SZU/Linly): 基于 LLaMA 使用中文增量预训练以及微调训练的中文模型。
 
-1.  Chinese-LLaMA-Alpaca: 基于 LLaMA 使用中文增量预训练以及微调训练的中文模型。
+1.  `Chinese-LLaMA-Alpaca`: 基于 LLaMA 使用中文增量预训练以及微调训练的中文模型。
 
-### **0x42 参考文献**
+### 0x42 参考文献
 
-## **Footnotes**
+## Footnotes
 
 1.  Zhao, Wayne Xin, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou[, Yi](https://github.com/RUCAIBox/LLMSurvey/blob/main/assets/LLM_Survey_Chinese_0418.pdf)ng[q](https://github.com/ninehills/blog/issues/92#user-content-fnref-2-632ff8ac62f537037e0318e6dc29038c)i[an M](https://github.com/ninehills/blog/issues/92#user-content-fnref-2-2-632ff8ac62f537037e0318e6dc29038c)i[n, e](https://github.com/ninehills/blog/issues/92#user-content-fnref-2-3-632ff8ac62f537037e0318e6dc29038c)t[ al.](https://github.com/ninehills/blog/issues/92#user-content-fnref-2-4-632ff8ac62f537037e0318e6dc29038c) “A Survey of Large Language Models.” arXiv, May 7, 2023. http://arxiv.org/abs/2303.18223. 本文主要参考，同时该论文提供中文版本。 ↩ ↩(2) ↩(3) ↩(4)
 

@@ -1,8 +1,9 @@
+
 # 我是怎么用10分钟的AI编程挣钱的？
 
 > 来源：[https://my.feishu.cn/docx/KexYdWzA5olfjFxJTavcKlTDnWt](https://my.feishu.cn/docx/KexYdWzA5olfjFxJTavcKlTDnWt)
 
-### 引言
+## 引言
 
 最近Cursor更新了0.44版本，增加了YOLO模式。
 
@@ -16,7 +17,7 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 想象一下如果是我自己付出开发的项目，被别人白嫖，也会很不爽。
 
-方法老金在我自己的群里也有讲过，其实就是Git上有人开源了个修改设备码的东西。
+方法老金在我自己的群里也有讲过，其实就是`Git`上有人开源了个修改设备码的东西。
 
 据说还是用Cursor写的，真是用Cursor打败Cursor。
 
@@ -24,7 +25,7 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 ---
 
-### 正文
+## 正文
 
 言归正传，梦飞的文章相信有些小伙伴已经看过了。
 
@@ -58,49 +59,30 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 这里第1个对于AI编程软件的认知，目前老金已知的是这些工具。
 
-1. Cursor
-
-2. Bolt
-
-3. v0
-
-4. Windsurf
-
-5. Replit Agent
-
-6. Loveable
-
-7. DevinAI
-
-8. Pear AI
-
-9. Github Copilot inside Vscode
-
-10. Github Spark
-
-11. IDX by Google
-
-12. webfraw.ai
-
-13. UIzard
-
-14. Amazon Q Developer
-
-15. ChatGPT inside Mac app
-
-16. Softgen AI
-
-17. onuro.ai
-
-18. Databutton
-
-19. Wrapifai
-
-20. Tempo labs
+1. Cursor
+2. Bolt
+3. v0
+4. Windsurf
+5. Replit Agent
+6. Loveable
+7. DevinAI
+8. Pear AI
+9. Github Copilot inside Vscode
+10. Github Spark
+11. IDX by Google
+12. webfraw.ai
+13. UIzard
+14. Amazon Q Developer
+15. ChatGPT inside Mac app
+16. Softgen AI
+17. onuro.ai
+18. Databutton
+19. Wrapifai
+20. Tempo labs
 
 标红的其实老金我都亲测过，很多没发，是因为没必要，老金所有给大家介绍的，都是老金我自己觉得好用的。
 
-这里先讲一下，Bolt其实和Vo、 Replit Agent、Loveable、IDX by Google 都是一样的全栈开发工具。
+这里先讲一下，Bolt其实和Vo、Replit Agent、Loveable、IDX by Google 都是一样的全栈开发工具。
 
 但是老金用下来，Bolt最丝滑，审美程度也最好。
 
@@ -110,7 +92,7 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 ![](img/d67230078770f4b96af5829b06b60fb1.png)
 
-嗯，有个细心的小伙伴发现了，第一个文件夹就是bolt。
+嗯，有个细心的小伙伴发现了，第一个文件夹就是`bolt`。
 
 ![](img/f2a3d4dca95cf5e329b8b22e4fa59df6.png)
 
@@ -118,9 +100,9 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 项目下载到本地后，使用Windsurf/Cursor打开。
 
-关于**Windsurf的使用说明**，老金我写了很多，**文章末尾的合集**里，基本都是。
+关于Windsurf的使用说明，老金我写了很多，文章末尾的合集里，基本都是。
 
-嗯，紧接着，这第3个认知，不论老金我给多少人**上过课，都发现**一件事，我讲什么到最后都是**给人教学提示词，**大家都很难表达清楚自己的需求/逻辑/规则。
+嗯，紧接着，这第3个认知，不论老金我给多少人上过课，都发现一件事，我讲什么到最后都是给人教学提示词，大家都很难表达清楚自己的需求/逻辑/规则。
 
 比如这里有人问，不懂编程（这不说我呢么 - - ）
 
@@ -148,7 +130,7 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 [WeChat_20241227192808.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B9rQbLR1zootsixZeRBchAF9n3g)
 
-### 结语
+## 结语
 
 最后，老金还是想总结下本文的重点：
 
@@ -156,7 +138,7 @@ Cursor虽然加了设备码，但是还是可以白嫖的方法我是知道的�
 
 在本文中，老金对各类AI编程工具其实都具备了认知，其次是关于使用AI核心中的核心 - 提示词，老金我知道要如何表达。
 
-当然这里有小伙伴会说，“我看过很多AI可以教人的呀”，是，没错，老金我给你举个例子，如果你不知道1+1=2，那么你能问出来100次1+1等于多少吗？
+当然这里有小伙伴会说，“我看过很多AI可以教人的呀”，是，没错，老金我给你举个例子，如果你不知道`1+1=2`，那么你能问出来100次`1+1`等于多少吗？
 
 AI不是许愿（做梦）的工具，不是你一句话，他就能知道细节详情都什么样，就像前两天我一个同事来和我说，有时候一个单词都是模糊的概念一样，就比如“战神”，西方战神和东方战神，完全是两码事一样。
 
@@ -172,6 +154,6 @@ AI不是许愿（做梦）的工具，不是你一句话，他就能知道细节
 
 那怎么让它变得清晰呢？就是把每个细节，都尽可能的讲清楚。
 
-这就是老金在文中提到的3个词，**需求/逻辑/规则****，**再浓缩一下，可以称之为 **目标** 和 **原则****。**
+这就是老金在文中提到的3个词，需求/逻辑/规则，再浓缩一下，可以称之为 目标 和 原则。
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

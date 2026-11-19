@@ -1,12 +1,9 @@
+
 # 2023-08-25-100%本科学历，百度招募数百名数据标注员，“投喂”文心一言｜最前线
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/CzbLdL2kDoLaW2xit2bcPhGVn1d](https://xuqiwei1986.feishu.cn/docx/CzbLdL2kDoLaW2xit2bcPhGVn1d)
 
-> 🔗 原文链接： h[ttps://baijiahao.b](https://baijiahao.baidu.com/s?id=1775189384024852404&wfr=spider&for=pc)aidu.com/s?id=17...
-
->
-
-100%本科学历，百度招募数百名数据标注员，“投喂”文心一言｜最前线
+> 🔗 原文链接：https://baijiahao.baidu.com/s?id=1775189384024852404&wfr=spider&for=pc
 
 文｜林炜鑫
 
@@ -56,4 +53,9 @@
 
 大家都在搜
 
-[百度数据标注员招聘 ](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E6%8B%9B%E8%81%98&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[数据标注员要求学历吗 ](https://baidu.com/s?word=%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E8%A6%81%E6%B1%82%E5%AD%A6%E5%8E%86%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[本科生做数据标注员 ](https://baidu.com/s?word=%E6%9C%AC%E7%A7%91%E7%94%9F%E5%81%9A%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百度数据标注员好做吗 ](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E5%A5%BD%E5%81%9A%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百度数据标注师 ](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%B8%88&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)[百度数据标注员靠谱么](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E9%9D%A0%E8%B0%B1%E4%B9%88&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[百度数据标注员招聘](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E6%8B%9B%E8%81%98&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[数据标注员要求学历吗](https://baidu.com/s?word=%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E8%A6%81%E6%B1%82%E5%AD%A6%E5%8E%86%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[本科生做数据标注员](https://baidu.com/s?word=%E6%9C%AC%E7%A7%91%E7%94%9F%E5%81%9A%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[百度数据标注员好做吗](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E5%A5%BD%E5%81%9A%E5%90%97&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[百度数据标注师](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%B8%88&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)
+[百度数据标注员靠谱么](https://baidu.com/s?word=%E7%99%BE%E5%BA%A6%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E5%91%98%E9%9D%A0%E8%B0%B1%E4%B9%88&rsv_dl=feed_landingpage_rs&from=1020853i&rsf=)

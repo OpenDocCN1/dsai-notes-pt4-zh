@@ -1,8 +1,7 @@
+
 # 《AI建筑设计教程！15个万能模板，三个步骤让你成为设计师！》
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/AVTDdb96Iog7gaxU05PcFrvGnBe](https://xuqiwei1986.feishu.cn/docx/AVTDdb96Iog7gaxU05PcFrvGnBe)
-
-《AI建筑设计教程！15个万能模板，三个步骤让你成为设计师！》
 
 各位好，我是吴东子
 
@@ -36,7 +35,7 @@
 
 **严禁抄袭搬运，势必追诉到底！**
 
-# 一，什么是AI建筑设计
+## 一，什么是AI建筑设计
 
 **AI建筑设计，就是通过AI绘画工具**给原本只有黑白线条的线稿变成彩色的效果图
 
@@ -82,21 +81,19 @@
 
 ![](img/d380bdf29008fdb65839d2b55fd592a1.png)
 
-# 二，如何利用AI工具把画作变成效果图
+## 二，如何利用AI工具把画作变成效果图
 
 可以分为以下三步
 
-1.安装模型
-
-2.SD基础设置
-
-3.Controlnet设置
+1. 安装模型
+2. SD基础设置
+3. Controlnet设置
 
 那接下来我们就以这张线稿为例，看看具体的操作步骤
 
 ![](img/96afa1a03e9ea362daeebede23efe09a.png)
 
-## 1.安装模型
+### 1.安装模型
 
 想要生成比较满意的图片，我们需要安装两种必不可少的模型
 
@@ -108,7 +105,7 @@
 
 而Lora模型则是可以帮助我们更好地控制照片的特征和风格
 
-### 01.安装大模型
+#### 01.安装大模型
 
 要想生成比较满意的图片，得先有一个好用的大模型
 
@@ -124,11 +121,11 @@
 
 然后把文件夹里的模型复制到对应的文件夹
 
-> 存放位置：SD文件夹\sd-webui-aki-v4.2\sd-webui-aki-v4.2\models\Stable-diffusion
+> 存放位置：`SD文件夹\sd-webui-aki-v4.2\sd-webui-aki-v4.2\models\Stable-diffusion`
 
 ![](img/478c477ae366c1840bf796f8c7688cc1.png)
 
-### 02.安装Lora模型
+#### 02.安装Lora模型
 
 这里的操作是跟安装大模型是一样的
 
@@ -146,7 +143,7 @@
 
 这样就可以在SD里面看到我们安装的模型了
 
-## 2.SD基础设置
+### 2.SD基础设置
 
 SD的基础设置包括：
 
@@ -156,13 +153,13 @@ SD的基础设置包括：
 
 03.设置参数
 
-### 01.选大模型
+#### 01.选大模型
 
 这里直接选择我们刚刚添加好的大模型
 
 ![](img/e89617665eed537bff9dc5f11d319b5a.png)
 
-### 02.关键词
+#### 02.关键词
 
 由于我们的图片风格需要用到Lora来控制
 
@@ -194,7 +191,7 @@ SD的基础设置包括：
 
 > 例图关键词:
 
-> <Lora:(设计)现代小型建筑xs architectural-6:1>，LAOWANG,Highest quality,ultra-high definition,masterpiece, 8k quality，
+> `<Lora:(设计)现代小型建筑xs architectural-6:1>`,LAOWANG,Highest quality,ultra-high definition,masterpiece, 8k quality，
 
 > modern architecture,morden style,retro architecture, luxurious architecture, Single family villa
 
@@ -202,19 +199,19 @@ SD的基础设置包括：
 
 > (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), bad anatomy,DeepNegative, skin spots, acnes, skin blemishes,(fat:1.2),facing away, looking away,tilted head, lowres,bad anatomy,bad hands, missing fingers,extra digit, fewer digits,bad feet,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,missing arms,missing legs,extra digit, extra arms, extra leg, extra foot,teethcroppe,signature, watermark, username,blurry,cropped,jpeg artifacts,text,error,
 
-### 03.设置参数
+#### 03.设置参数
 
 迭代步数选择30
 
 采样方法：DPM++2Sa karras
 
-这个模型的推荐分辨率是在1024*768以上，所以宽度和高度我们可以适当调高一点
+这个模型的推荐分辨率是在`1024*768`以上，所以宽度和高度我们可以适当调高一点
 
 ![](img/06489ff43dfb63dd691e43fccf596cbf.png)
 
 所有参数都设置好后，第二步就完成了
 
-## 3.Controlnet设置
+### 3.Controlnet设置
 
 我们先把图片拉进Controlnet的框里
 
@@ -238,7 +235,7 @@ SD的基础设置包括：
 
 ![](img/e1407181bed5597444e4aa4610195719.png)
 
-## 4.局部重绘
+### 4.局部重绘
 
 如果是对图片生成的某一部分不满意
 
@@ -252,7 +249,7 @@ SD的基础设置包括：
 
 ![](img/d8c755a9b7776146764248ea5c1c4839.png)
 
-## 5.不同类型Lora和关键词
+### 5.不同类型Lora和关键词
 
 为了能让大家能够创作各种不同的建筑风格，在尝试了许多个Lora模型，出了许多张图片后
 
@@ -260,13 +257,13 @@ SD的基础设置包括：
 
 都已经给大家打包好放在网盘里了，直接下载就可以用
 
-### **中式庭院风**
+#### 中式庭院风
 
-Lora:<Lora:Isometric_Chinese_style_architecture_v1:1>
+Lora:`<Lora:Isometric_Chinese_style_architecture_v1:1>`
 
 > 关键词：
 
-> <Lora:Isometric_Chinese_style_architecture_v1:1>,LAOWANG,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
+> `<Lora:Isometric_Chinese_style_architecture_v1:1>`,LAOWANG,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
 
 > Chinese style, Chinese courtyard, detached villa, Chinese architecture,
 
@@ -274,13 +271,13 @@ Lora:<Lora:Isometric_Chinese_style_architecture_v1:1>
 
 ![](img/deb407108908dbf64b983217ed6751c0.png)
 
-### 未来科幻风
+#### 未来科幻风
 
-Lora：architecture <Lora:新科幻Neo Sci-Fi_v1.0:1>
+Lora：architecture `<Lora:新科幻Neo Sci-Fi_v1.0:1>`
 
 > 关键词：
 
-> architecture <Lora:新科幻Neo Sci-Fi_v1.0:1>，Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
+> architecture `<Lora:新科幻Neo Sci-Fi_v1.0:1>`,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
 
 > LAOWANG,architectural photography, science fiction style, cyberpunk style, science fiction architecture,
 
@@ -288,9 +285,9 @@ Lora：architecture <Lora:新科幻Neo Sci-Fi_v1.0:1>
 
 ![](img/6e4bcec0353a842c34698e97272bef2f.png)
 
-### 魔幻月夜风
+#### 魔幻月夜风
 
-Lora:<Lora:xsarchitectural-12NightMoonsci-fi:1>
+Lora:`<Lora:xsarchitectural-12NightMoonsci-fi:1>`
 
 触发词：
 
@@ -300,7 +297,7 @@ MOONLIGHT REFLECTION月光倒影，SACREDNESS神圣，LANDSCAPE景观，BRIGHT�
 
 > 关键词：
 
-> <Lora:xsarchitectural-12NightMoonsci-fi:1>,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)，
+> `<Lora:xsarchitectural-12NightMoonsci-fi:1>`,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)，
 
 > LAOWANG,,retro architecture, luxurious architecture, Moonlight reflection, sacred, landscape, producing many glowing minerals,space,bright,
 
@@ -308,13 +305,13 @@ MOONLIGHT REFLECTION月光倒影，SACREDNESS神圣，LANDSCAPE景观，BRIGHT�
 
 ![](img/a3bfba4c31858d72bed89a0683340958.png)
 
-### 城市鸟瞰图
+#### 城市鸟瞰图
 
-Lora:<Lora:老王MIR建筑鸟瞰表现增强_v0.6废物版:1>
+Lora:`<Lora:老王MIR建筑鸟瞰表现增强_v0.6废物版:1>`
 
 > 关键词：
 
-> <Lora:老王MIR建筑鸟瞰表现增强_v0.6废物版:0.5>, LAOWANG,(extremely detailed CG unity 8k wallpaper)
+> `<Lora:老王MIR建筑鸟瞰表现增强_v0.6废物版:0.5>`, LAOWANG,(extremely detailed CG unity 8k wallpaper)
 
 > Aerial view, urban planning, modern urban design, modern style architecture, metropolis, (extremely detailed CG unit 8k wallpaper), (masterpiece), (best quality), (super detail), (best illustration), (best shadow),
 
@@ -322,13 +319,13 @@ Lora:<Lora:老王MIR建筑鸟瞰表现增强_v0.6废物版:1>
 
 ![](img/090bf6537bc2a9bb876d8fadc0462c81.png)
 
-### 室内平面图
+#### 室内平面图
 
-Lora：<Lora:lwpm-v0.1P:1>
+Lora：`<Lora:lwpm-v0.1P:1>`
 
 触发词：Rendering floor plan
 
-> 关键词：<Lora:lwpm-v0.1P:1>,Rendering floor plan, LAOWANG, Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
+> 关键词：`<Lora:lwpm-v0.1P:1>`,Rendering floor plan, LAOWANG, Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
 
 > apartment floor plan rendering, interior design top view, white background, best details, complete furniture,
 
@@ -336,9 +333,9 @@ Lora：<Lora:lwpm-v0.1P:1>
 
 ![](img/7f9677ea137d74cdc0b0ca09160c2253.png)
 
-### 苏式园林风
+#### 苏式园林风
 
-Lora:<Lora:suzhouyuanlinV1 (1):1>
+Lora:`<Lora:suzhouyuanlinV1 (1):1>`
 
 触发词：
 
@@ -354,7 +351,7 @@ GARDEN花园
 
 > 关键词：
 
-> <Lora:suzhouyuanlinV1 (1):1>,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)，
+> `<Lora:suzhouyuanlinV1 (1):1>`,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)，
 
 > LAOWANG,retro architecture, luxurious architecture, Buildings, gardens, bridges, East Asian architecture, Suzhou gardens
 
@@ -362,39 +359,40 @@ GARDEN花园
 
 ![](img/4b636b647294e7b4c6c9d7e143b8f8a9.png)
 
-### 水彩漫画风
+#### 水彩漫画风
 
-Lora：<Lora:JZCG021-Comic building:1>
+Lora：`<Lora:JZCG021-Comic building:1>`
 
 触发词：JZCG021
 
 > 关键词：
 
-> <Lora:JZCG021-Comic building:1>,JZCG021,scenery, outdoors, motor vehicle, sky, car, tree, ground vehicle, cloud, building, multiple girls, road, window, street, walking, day, lamppost, blue sky, city, sign, crosswalk, artist name, multiple boys<Lora:XSArchi_113:1>, (masterpiece),(high quality), best quality, real,(realistic), super detailed, (full detail),(4k),8k,
+> `<Lora:JZCG021-Comic building:1>`,JZCG021,scenery, outdoors, motor vehicle, sky, car, tree, ground vehicle, cloud, building, multiple girls, road, window, street, walking, day, lamppost, blue sky, city, sign, crosswalk, artist name, multiple boys`<Lora:XSArchi_113:1>`, (masterpiece),(high quality), best quality, real,(realistic), super detailed, (full detail),(4k),8k,
 
 ![](img/0a4c6ce9094e17c7c61fa594a89012ea.png)
 
+
+
 ![](img/6b49f5f7fb2a61865d767e3c6d3c074f.png)
 
-### 线稿漫画风
+## 线稿漫画风
 
-Lora：<Lora:XSArchi_113FacadeOfMangaStyleBuilding漫画风格建筑正面:1>
+Lora：`<Lora:XSArchi_113FacadeOfMangaStyleBuilding漫画风格建筑正面:1>`
 
-> 关键词：<Lora:XSArchi_113FacadeOfMangaStyleBuilding漫画风格建筑正面:1>,Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)，
+> 关键词：`<Lora:XSArchi_113FacadeOfMangaStyleBuilding漫画风格建筑正面:1>`,Highest quality,ultra-high definition,masterpiece, 8k quality，（extremely detailed CG unity 8k wallpaper）、
 
 > LAOWANG,modern architecture, modern style,retro architecture, luxurious architecture,
 
 ![](img/774bde1149b8b52fd11574da020abbec.png)
 
-### 热带海岛风
+## 热带海岛风
 
-Lora:Delfino _ Plaza
+Lora:`Delfino _ Plaza`
 
-触发词：Delfino _ Plaza
+触发词：`Delfino _ Plaza`
 
 > 关键词：
-
-> <Lora:Delfino_Plaza:1>,Delfino_Plaza,Highest quality,ultra-high definition,masterpiece, 8k quality，
+> `<Lora:Delfino_Plaza:1>`,`Delfino_Plaza`,Highest quality,ultra-high definition,masterpiece, 8k quality，
 
 > LAOWANG,modern architecture, modern style,retro architecture, luxurious architecture, Tropical, Beach
 
@@ -408,7 +406,7 @@ Lora:Delfino _ Plaza
 
 在这里就不给大家逐一展示效果了
 
-# 三.室内设计
+# 三、室内设计
 
 如果你的家里需要装修
 
@@ -422,19 +420,19 @@ Lora:Delfino _ Plaza
 
 方法也很简单，只需要三步
 
-1.上传房间照片
+1. 上传房间照片
 
-2.选择控制类型
+2. 选择控制类型
 
-3.写关键词
+3. 写关键词
 
-## 1.上传房间照片
+## 1. 上传房间照片
 
 方法跟上面一样，只要把照片拖进方框里即可
 
 ![](img/6141b48740b0624d0539acad8cbe38e8.png)
 
-## 2.选择控制类型
+## 2. 选择控制类型
 
 这里有两种不同的选择
 
@@ -442,7 +440,7 @@ Lora:Delfino _ Plaza
 
 02.seg语义分割
 
-### 01.MLSD直线
+### 01. MLSD直线
 
 这个控制类型只会识别出房间里面的直线框架
 
@@ -452,7 +450,7 @@ Lora:Delfino _ Plaza
 
 ![](img/a70c3f1b2767a43d0363ddb53e75f869.png)
 
-### 02.seg语义分割
+### 02. seg语义分割
 
 这个控制类型则是会用颜色把房间里的所有物品原封不动地固定好
 
@@ -464,7 +462,7 @@ Lora:Delfino _ Plaza
 
 大家可以根据自己的需求自由选择
 
-## 3.关键词
+## 3. 关键词
 
 跟上面一样，在添加了Lora和触发关键词后
 
@@ -480,57 +478,55 @@ Lora:Delfino _ Plaza
 
 [吴东子的建筑设计关键词分类查询](https://ry5hwpuf7b.feishu.cn/sheets/EMsjsHPNahgSIhtmLnEcAj5dnld?from=from_copylink)
 
-#### 末日风：
+### 末日风：
 
-Lora:<Lora:末日风格室内_v1.0:1>
+Lora：`<Lora:末日风格室内_v1.0:1>`
 
-Lora触发词：Future style
+Lora触发词：`Future style`
 
 > 关键词：
-
-> <Lora:末日风格室内_v1.0:1> ，highest quality,ultra-high definition,masterpiece, 8k quality,Many details,(extremely detailed CG unity 8k wallpaper)
+> `<Lora:末日风格室内_v1.0:1>` ，highest quality,ultra-high definition,masterpiece, 8k quality,Many details,(extremely detailed CG unity 8k wallpaper)
 
 > LAOWANG, one bedroom, Reasonable layout，Future style, apocalyptic style, bedroom, bed
 
 ![](img/a9edb47831fa56186b0a306a4d3e9334.png)
 
-#### 新中式风格：
+### 新中式风格：
 
-Lora： <Lora:素雅新中式_室内设计_三绘_01:0.6>
+Lora： `<Lora:素雅新中式_室内设计_三绘_01:0.6>`
 
-Lora触发词：xzs
+Lora触发词：`xzs`
 
 > 关键词：
+> `<Lora:素雅新中式_室内设计_三绘_01:0.6>`,highest quality,ultra-high definition,masterpiece, 8k quality，Many details，（extremely detailed CG unity 8k wallpaper）
 
-> <Lora:素雅新中式_室内设计_三绘_01:0.6>,highest quality,ultra-high definition,masterpiece, 8k quality，Many details，(extremely detailed CG unity 8k wallpaper)
-
-> LAOWANG,xzs, interior design, living room, reasonable layout, Chinese style, Chinese elements, Chinese furniture, Chinese furniture
+> LAOWANG,`xzs`, interior design, living room, reasonable layout, Chinese style, Chinese elements, Chinese furniture, Chinese furniture
 
 ![](img/25893e6a2017645fa07b581ea95a642a.png)
 
-#### 赛博朋克风：
+### 赛博朋克风：
 
-Lora:<Lora:赛博朋克室内设计_V1.0 (1):1>
+Lora：`<Lora:赛博朋克室内设计_V1.0 (1):1>`
 
 Lora触发词：cyberpunk style
 
-> 关键词：<Lora:赛博朋克室内设计_V1.0 (1):1>，highest quality,ultra-high definition,masterpiece, 8k quality，Many details，(extremely detailed CG unity 8k wallpaper)
+> 关键词：`<Lora:赛博朋克室内设计_V1.0 (1):1>`，highest quality,ultra-high definition,masterpiece, 8k quality，Many details，（extremely detailed CG unity 8k wallpaper）
 
 > LAOWANG,One bedroom, Reasonable layout，cyberpunk style, futuristic style, interior design, blue and purple neon lights, dim lighting, gorgeous, detailed,
 
 ![](img/1331fd52f0454c559a8aac8e3b7c280d.png)
 
-#### 室内平面图：
+### 室内平面图：
 
-Lora:<Lora:lwpm-v0.1P:1>
+Lora：`<Lora:lwpm-v0.1P:1>`
 
-> 关键词：<Lora:lwpm-v0.1P:1>, LAOWANG, Highest quality,ultra-high definition,masterpiece, 8k quality，(extremely detailed CG unity 8k wallpaper)
+> 关键词：`<Lora:lwpm-v0.1P:1>`, LAOWANG, Highest quality,ultra-high definition,masterpiece, 8k quality，（extremely detailed CG unity 8k wallpaper）
 
 > apartment floor plan rendering, interior design top view, white background, best details, complete furniture,
 
 ![](img/1cac6b6aaf7d9da4ff2aa1ced8b25cd9.png)
 
-## 4.毛坯房
+## 4. 毛坯房
 
 因为毛胚房是没有任何家具的，所以当我们需要进行设计的时候，得先用上面的方法让毛坯房生成基本的雏形
 
@@ -552,7 +548,7 @@ Lora:<Lora:lwpm-v0.1P:1>
 
 ![](img/fda9561a01a687587f2c9f8227a04453.png)
 
-# 四，结尾
+# 四、结尾
 
 好了，以上就是我们这篇文章的全部内容，希望能够让你做出更多有趣好玩的AI建筑设计图
 
@@ -562,10 +558,10 @@ Lora:<Lora:lwpm-v0.1P:1>
 
 我是吴东子，用奶奶都能听懂的方式，分享可以落地实操的干货，我们下篇文章再见！
 
-网盘链接：https://pan.baidu.com/s/1ykkDLluXc_E9cC7_tK7Gwg?pwd=wdz6
+网盘链接：`https://pan.baidu.com/s/1ykkDLluXc_E9cC7_tK7Gwg?pwd=wdz6`
 
-提取码：wdz6
+提取码：`wdz6`
 
 室内设计关键词查询：[吴东子的建筑设计关键词分类查询](https://ry5hwpuf7b.feishu.cn/sheets/EMsjsHPNahgSIhtmLnEcAj5dnld?from=from_copylink)
 
-吴东子AI账号简介：https://ry5hwpuf7b.feishu.cn/wiki/space/7283841978071072772?ccm_open_type=lark_wiki_spaceLink
+吴东子AI账号简介：`https://ry5hwpuf7b.feishu.cn/wiki/space/7283841978071072772?ccm_open_type=lark_wiki_spaceLink`

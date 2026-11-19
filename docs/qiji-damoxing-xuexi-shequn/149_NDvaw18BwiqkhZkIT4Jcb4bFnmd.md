@@ -1,8 +1,9 @@
+
 # 奇绩大模型日报（7月 20-21日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/WcADd2He3oXOhZx43p1ctlDOnmc](https://miracleplus.feishu.cn/docx/WcADd2He3oXOhZx43p1ctlDOnmc)
 
-# 资讯
+## 资讯
 
 ### 机器人版的「斯坦福小镇」来了，专为具身智能研究打造
 
@@ -40,7 +41,7 @@ https://mp.weixin.qq.com/s/KmhKJWRqUTPrygLqAK5ulA
 
 https://mp.weixin.qq.com/s/J_e_7svrpDuxxefes-s7Xw
 
-Scaling Laws当道，但随着大模型应用的发展，基础模型不断扩大的参数也成了令开发者们头疼的问题。为了减轻训练负担，Adapter、Prompt-Tuning以及LoRA()等高效微调（Parameter Efficient Fine-Tuning, PEFT）算法越来越受到大家伙的青睐。
+Scaling Laws当道，但随着大模型应用的发展，基础模型不断扩大的参数也成了令开发者们头疼的问题。为了减轻训练负担，Adapter、Prompt-Tuning以及`LoRA()`等高效微调（Parameter Efficient Fine-Tuning, PEFT）算法越来越受到大家伙的青睐。
 
 尽管近年来高效微调领域发展迅速，涌现了多种方法，但不同PEFT方法背后的数学基础几乎没有得到深入研究此外，不同PEFT方法之间的性能差异及其原因尚未系统地探讨。这种理论深度的缺乏限制了研究者对这些方法潜在优势和局限性的理解，阻碍了它们在实际应用中的优化和创新。
 
@@ -48,7 +49,7 @@ Scaling Laws当道，但随着大模型应用的发展，基础模型不断扩�
 
 ![](img/73d03d368bdababdb344f46c81da3952.png)
 
-# 推特
+## 推特
 
 ### Elevenlabs分享新Turbo 2.5型号，增强31种语言速度
 
@@ -74,11 +75,11 @@ https://x.com/garrytan/status/1814732623073456165
 
 我目前对一个功能的工作流程基本上是：
 
-1.  深思熟虑这个功能，并且可能与Claude讨论。
+1. 深思熟虑这个功能，并且可能与Claude讨论。
 
-1.  为这个功能编写基本规范（这通常只是几句话和项目符号），并且在此过程中与Claude进行迭代。
+1. 为这个功能编写基本规范（这通常只是几句话和项目符号），并且在此过程中与Claude进行迭代。
 
-1.  确保向Claude提供所有相关的上下文，并请求实现（代码）。
+1. 确保向Claude提供所有相关的上下文，并请求实现（代码）。
 
 ![](img/8006a754d94719ca9615e33c369ae96b.png)
 
@@ -94,19 +95,13 @@ https://x.com/bindureddy/status/1814409737557160044
 
 提示策略：讨论了各种提示策略，包括但不限于：
 
-+   思维链 (Chain of Thought, CoT)
-
-+   原因链 (Chain of Cause, CoC)
-
-+   程序辅助语言模型 (Program-Aided Language models, PAL)
-
-+   思维树 (Tree of Thoughts, ToT)
-
-+   从少到多 (Least-to-Most)
-
-+   自我一致性 (Self-Consistency)
-
-+   类比推理 (Analogical Reasoning)
++ 思维链 (Chain of Thought, CoT)
++ 原因链 (Chain of Cause, CoC)
++ 程序辅助语言模型 (Program-Aided Language models, PAL)
++ 思维树 (Tree of Thoughts, ToT)
++ 从少到多 (Least-to-Most)
++ 自我一致性 (Self-Consistency)
++ 类比推理 (Analogical Reasoning)
 
 如果你了解这些提示策略并根据合适的数据集和用例适当地应用它们，你可以用大型语言模型做出令人难以置信的事情。
 
@@ -144,7 +139,7 @@ Triplex在性能上超过了少样本提示的GPT-4，同时推理成本仅为�
 
 [ssstwitter.com_1721561193133.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VNdwbkfOlo9WKTx7PN9cClWdnmf)
 
-# 产品
+## 产品
 
 ### Fastn.ai
 
@@ -176,7 +171,7 @@ Cohesive AI 是一款集成了人工智能、网络爬虫和电子邮件验证�
 
 ![](img/3f23a6f79112132c312139d2ae80e983.png)
 
-# HuggingFace&Github
+## HuggingFace&Github
 
 ### VectorDB-recipes
 
@@ -208,7 +203,7 @@ https://github.com/llm-jp/awesome-japanese-llm
 
 ![](img/003a6b316bd3e1bd451e9b39c9556eef.png)
 
-# 投融资
+## 投融资
 
 ### 银河通用获港版淡马锡新一轮投资
 
@@ -222,7 +217,7 @@ https://36kr.com/p/2868693478953344
 
 ![](img/caf7e6cfe5d26f74e1a5e285be390254.png)
 
-# 学习
+## 学习
 
 ### 学习NetDAM
 
@@ -270,25 +265,27 @@ Llama V2 算子融合技术通过合并深度学习模型中的多个算子，�
 
 https://zhuanlan.zhihu.com/p/709839358?utm_psn=1798419749002158081
 
+
+
 文章首先介绍了大型语言模型（LLM）的基本概念，以及在推理阶段参数量、计算量和通信量的重要性。作者以多头注意力（MHA）为例，详细阐述了在模型推理过程中这三个量的具体计算方法和优化策略。其中，参数量主要涉及模型权重的大小，计算量关注的是模型在推理时的浮点运算数量，通信量则是模型在分布式系统中不同节点间传输数据的大小。文章指出，优化这些量对于提高模型的效率和降低运行成本至关重要。进一步，文章探讨了如何通过减少精度、剪枝、量化和知识蒸馏等技术来减少参数量和计算量，以及通过优化数据传输和模型分片技术来降低通信量。最后，作者提出了未来可能的研究方向，包括更高效的模型架构设计和更优化的推理策略。
 
 ![](img/9ce1714065f94e8e89ebfc105b8b8fd5.png)
 
-### 一起实现一个Baby Triton
+# 一起实现一个Baby Triton
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/709844371?utm_psn=1798420094541508609
+`https://zhuanlan.zhihu.com/p/709844371?utm_psn=1798420094541508609`
 
 文章首先介绍了 Triton 的基本概念，包括它的定义、功能以及在机器学习领域的应用。接着，作者详细阐述了 Baby Triton 的设计理念，包括如何简化 Triton 的核心功能，以及如何在保持核心功能的同时，降低实现难度。文章继而深入到了 Baby Triton 的具体实现步骤，从数据预处理、模型构建到优化器的选择，每一步都进行了详细的说明和编码示例。此外，作者还讨论了如何通过调整超参数来提高模型性能，并且提供了一些实验结果来证明 Baby Triton 的有效性。最后，文章总结了整个实现过程，并对未来可能的改进方向进行了展望。
 
 ![](img/fa208c958c5ef35fb1ae788b3e8acf28.png)
 
-### MLIR应用技术分析
+# MLIR应用技术分析
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/690273836
+`https://zhuanlan.zhihu.com/p/690273836`
 
 本文详细介绍了谷歌推出的开源编译框架 MLIR，它的核心特点是多层级表达，能够在不同层级间实现转换、优化以及代码生成。MLIR 旨在为异构系统打造可复用性和可扩展性的编译器基础设施，特别适合用于领域专用架构（DSA），如现在流行的 ML 加速器。文章首先介绍了 MLIR 的基本概念和架构，包括它的核心理念、语法格式、代码生成流程以及如何通过 MLIR 实现同态加密技术的集成。接着，探讨了 MLIR 在软硬协同设计中的潜力，包括架构探索方法、基于 IR 的性能分析方法以及如何利用多面体模型进行循环优化。最后，文章分析了 CIRCT 项目如何基于 MLIR 实现 EDA 工具的统一化，以及 IREE 项目如何利用 MLIR 进行硬件加速器的编译优化。
 
@@ -297,37 +294,11 @@ https://zhuanlan.zhihu.com/p/690273836
 # 📡潜空间系列活动
 
 > 潜空间系列活动第三季启动！
-
->
-
 > 第三季第一期将在7.27上午10:00开始，嘉宾是宋佳铭。活动包括嘉宾分享、访谈Q&A、cofounder matching餐会。
-
->
-
->
-
-> 宋佳铭-Luma AI 首席科学家，斯坦福大学计算机科学博士、博士后；曾任职英伟达（DIR）小组科学家 ，创建了最早的扩散模型加速算法，该算法广泛用于最近的生成式 AI 系统，包括 DALL-E 2、Imagen、Stable Diffusion 和 ERNIE-ViLG 2.0。
-
->
-
->
-
+> 宋佳铭-Luma AI 首席科学家，斯坦福大学计算机科学博士、博士后；曾任职英伟达（DIR）小组科学家，创建了最早的扩散模型加速算法，该算法广泛用于最近的生成式 AI 系统，包括 DALL-E 2、Imagen、Stable Diffusion 和 ERNIE-ViLG 2.0。
 > 陈贝迪-卡内基梅隆大学助理教授，斯坦福大学人工智能博士后学者，前 Meta AI 研究科学家；致力于在现代硬件上设计和优化算法和模型，以加速大型机器学习系统。
-
->
-
->
-
-> 童晟邦- 纽约大学博士，伯克利人工智能实验室（BAIR）研究员， OpenAI 超对齐奖学金获得者；
-
->
-
+> 童晟邦- 纽约大学博士，伯克利人工智能实验室（BAIR）研究员，OpenAI 超对齐奖学金获得者；
 > 闫俊杰-MiniMax 创始人兼 CEO。是中国第一梯队的大模型创业者，目前 MiniMax 估值超 25 亿美元。
-
->
-
->
-
 > 本季活动同时开放北京线下、上海线下和线上场次，欢迎校友和外部创业者扫描右方二维码报名！
 
 ![](img/beba38ac5dbe88627727bd50b092dccd.png)
@@ -335,8 +306,6 @@ https://zhuanlan.zhihu.com/p/690273836
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -347,15 +316,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 如果你有大模型相关的创业想法，欢迎来找我们聊聊～🛰️：15101136166
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
-
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
-
+> 【日报知识库】这里是近期日报内容的汇总,欢迎大家查阅
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
-
-> 欢迎大家多多帮我们分享,转发~~
-
+> 欢迎大家多多帮我们分享,转发
 > 如果大家有任何的建议或者吐槽,欢迎随时找我聊天~
 
 ![](img/a71fb3d6bafe3609a5a37ead80cffe67.png)

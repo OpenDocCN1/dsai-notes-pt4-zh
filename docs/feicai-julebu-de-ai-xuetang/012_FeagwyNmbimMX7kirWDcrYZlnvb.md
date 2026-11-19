@@ -1,8 +1,9 @@
+
 # 免费 | 产品经理 | 产品需求文档撰写提示词框架
 
 > 来源：[https://feicaiclub.feishu.cn/docx/CUBwdB7iHoW4mzxxJ5HcqlsCnTb](https://feicaiclub.feishu.cn/docx/CUBwdB7iHoW4mzxxJ5HcqlsCnTb)
 
-# 提示词指令 Prompt Instruction
+## 提示词指令 Prompt Instruction
 
 > **作者：**朱晓阳
 
@@ -77,13 +78,12 @@
      开始: 执行&lt;章节&gt; 从0.1章节开始
      继续: 按PRD目录，介绍下一个章节
 
-
 执行 &lt;初始&gt;
 ```
 
 ---
 
-# 废才俱乐部（"废才"）知识产权声明
+## 废才俱乐部（"废才"）知识产权声明
 
 欢迎使用废才俱乐部知识库。本知识库提供的文档、提示词及其他内容（以下统称“内容”）旨在促进用户及粉丝之间的交流与学习。请您注意，除非得到废才或其关联公司的明确书面授权，否则您不得将这些内容用于任何商业目的。
 

@@ -1,3 +1,4 @@
+
 # 快速使用（推理部署）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/MFfsdwvD7ohBvbxnFZPcXphanFd](https://v11enp9ok1h.feishu.cn/docx/MFfsdwvD7ohBvbxnFZPcXphanFd)
@@ -6,7 +7,7 @@
 
 ## 子页面目录
 
-这份文档旨在让开发者在五分之内体验上 CharacterGLM-6B 模型
+这份文档旨在让开发者在五分之内体验上 CharacterGLM-6B 模型。
 
 ## 源码安装
 
@@ -16,19 +17,19 @@
 
 模型基础运行代码已经上传到 github 和 SwanHub 两个平台，两个平台的信息同步。开发者通过以下方式下载模型代码。
 
-+   从 github 下载源码
++ 从 github 下载源码
 
 ```
 git clone https://github.com/thu-coai/CharacterGLM-6B.git
 ```
 
-开发者可以通过以下方式下载模型文件
+开发者可以通过以下方式下载模型文件。
 
-+   [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保`git lfs`命令已安装，安装教程请参考这里。
++ [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing) 模型文件前请先确保 `git lfs` 命令已安装，安装教程请参考这里。
 
-+   模型文件已上传至 Huggingface, Modelscope ,  SwanHub  三个平台，用户可以快速安装模型。
++ 模型文件已上传至 Huggingface, Modelscope, SwanHub 三个平台，用户可以快速安装模型。
 
-+   若使用 Huggingface 下载模型
++ 若使用 Huggingface 下载模型
 
 ```
 git lfs install
@@ -37,7 +38,7 @@ git clone https://huggingface.co/LingxinAI/CharacterGLM-6b
 
 ### 安装依赖
 
-使用 pip 安装依赖：
+使用 `pip` 安装依赖：
 
 ```
 cd CharacterGLM-6B

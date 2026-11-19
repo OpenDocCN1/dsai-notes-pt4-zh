@@ -1,8 +1,9 @@
+
 # Vibe Coding共学营第一期：作品汇总&灵感涌现&反馈
 
 > 来源：[https://now.feishu.cn/docx/TIULdc8lfoik9kxwNrPcB908n6b](https://now.feishu.cn/docx/TIULdc8lfoik9kxwNrPcB908n6b)
 
-# 这一期我们收获了：
+## 这一期我们收获了：
 
 **210个同行伙伴！**
 
@@ -10,7 +11,7 @@
 
 ![](img/2aa7ec7356930577a9f4393fc6beda58.png)
 
-**大部分成员都做出了作品！ **
+**大部分成员都做出了作品！**
 
 - 证明了学习的实效性，不是纸上谈兵。
 
@@ -32,23 +33,23 @@
 
 真实腾讯问卷截图
 
-**共学最哪里最吸引你？**
+共学最哪里最吸引你？
 
 ![](img/d66932336bc3f1d1e12b1bd2847c5952.png)
 
 真实问卷反馈！重新排版了而已hhh
 
-# 灵感涌现：
+## 灵感涌现：
 
 [看看第一期Vibe Coding共学营学员都提出了哪些想法！](https://qwyofiv4bd3.feishu.cn/wiki/D0RlwX2hTiulBZkF4oQcq1hlnHb)
 
-# 作品汇总：
+## 作品汇总：
 
 [Mixlab-Vibe coding共学打卡-作品](https://qwyofiv4bd3.feishu.cn/base/IROVbyNwAaFeBusoOFYchgCfnrf?from=from_copylink)
 
 下一期Vibe coding在此报名！联络林飞（Goldenlumen）
 
-# 作品分享：
+## 作品分享：
 
 ![](img/25b180dceaa7ec85270d05e1e51f6a97.png)
 

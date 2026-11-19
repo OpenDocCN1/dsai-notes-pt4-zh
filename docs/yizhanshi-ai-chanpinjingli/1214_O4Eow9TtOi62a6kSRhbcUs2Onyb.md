@@ -1,8 +1,9 @@
+
 # 01.汽车智能座舱分级及解读
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/KplqdIPYXoM4WBx7sKUcJie1ntf](https://v11enp9ok1h.feishu.cn/docx/KplqdIPYXoM4WBx7sKUcJie1ntf)
 
-# 01.整体思路
+## 01.整体思路
 
 白皮书以技术引领和应用规范为目标，从人-机-环融合的角度对智能座舱进行定义分级。智能座舱的核心是更好的服务驾乘人员，对智能座舱各个等级所应具备服务驾乘人员的能力进行划分：明确每个级别座舱的人机交互能力、场景拓展能力、网联服务能力。
 

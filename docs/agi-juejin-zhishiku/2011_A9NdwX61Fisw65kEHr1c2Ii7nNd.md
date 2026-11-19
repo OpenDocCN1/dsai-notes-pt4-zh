@@ -1,9 +1,7 @@
-# 08.13-OpenAI 推出“ChatGPT Go”低价套餐：仅限特定地区，每月 399 印度卢比
-
-> 来源：[https://agijuejin.feishu.cn/docx/FQTjd4lF9oWFJIxYSmJcJZWpnoh](https://agijuejin.feishu.cn/docx/FQTjd4lF9oWFJIxYSmJcJZWpnoh)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 08 月 13 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/FQTjd4lF9oWFJIxYSmJcJZWpnoh](https://agijuejin.feishu.cn/docx/FQTjd4lF9oWFJIxYSmJcJZWpnoh)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ## ⭐ 今日热点
@@ -64,7 +62,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/874/747.htm)
 
 ![](img/3795bb0a6acc8c45d33fb9e5ac67179a.png)
 
-A**I在物理学领域**取得重大突破。它设计出的物理实验方案虽让顶尖科学家看不懂，但模拟有效，可使LIGO引力波探测器灵敏度提高10%到15%。此外，AI还颠覆了量子纠缠实验设计，提出新方案并被证实可行。同时，AI能从海量数据挖掘物理规律，如得出更精确的暗物质公式、重现自然对称性 。AI正从工具向强大‘合作者’进化，辅助物理学发现的新时代或已到来。
+`AI`在物理学领域取得重大突破。它设计出的物理实验方案虽让顶尖科学家看不懂，但模拟有效，可使LIGO引力波探测器灵敏度提高10%到15%。此外，AI还颠覆了量子纠缠实验设计，提出新方案并被证实可行。同时，AI能从海量数据挖掘物理规律，如得出更精确的暗物质公式、重现自然对称性 。AI正从工具向强大‘合作者’进化，辅助物理学发现的新时代或已到来。
 
 ## 💫 企业动态
 

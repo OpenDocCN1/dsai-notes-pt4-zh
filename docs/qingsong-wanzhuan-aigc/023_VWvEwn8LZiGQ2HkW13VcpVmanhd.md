@@ -1,10 +1,11 @@
+
 # 大模型部署相关的主流平台
 
 > 来源：[https://my.feishu.cn/docx/FaMudfe7eo9SVTxQCLBc71t0n8g](https://my.feishu.cn/docx/FaMudfe7eo9SVTxQCLBc71t0n8g)
 
-# 1.1  Ollama
+## 1.1 Ollama
 
-https://ollama.com/
+`https://ollama.com/`
 
 推荐指数：🌟🌟🌟🌟🌟
 
@@ -14,15 +15,15 @@ Ollama 专注于在本地运行 LLMs，允许用户直接在自己的计算机�
 
 ollama 以其简单易用和适合初学者的特点而闻名，提供了更本地化和实践性的体验。
 
-比如：[通过 Ollama 免费部署模型，再结](https://dye87dshnj.feishu.cn/docx/Qi5jdoz75oFJjtxj14scuhlqnmb#A4BEdXSo0oNSBrxvMSpcfJRJn1g)合翻译软件，打造自己的 AI 翻译工具。
+比如：[通过 Ollama 免费部署模型，再结合翻译软件，打造自己的 AI 翻译工具。](https://dye87dshnj.feishu.cn/docx/Qi5jdoz75oFJjtxj14scuhlqnmb#A4BEdXSo0oNSBrxvMSpcfJRJn1g)
 
 本地部署的开源大模型，免费，不用爬🪜，甚至电脑不用联网，就能用 AI 大模型。
 
 简单易上手，B 站上面可以搜到相关教程，对非技术型用户比较友好。
 
-# 1.2 LM Stiduo
+## 1.2 LM Stiduo
 
-https://lmstudio.ai/
+`https://lmstudio.ai/`
 
 推荐指数：🌟🌟🌟🌟🌟
 
@@ -34,9 +35,9 @@ LM Studio通常被认为比ollama更加UI友好,并提供了更多来自Hugging 
 
 比如：本地部署运行通义千问72B方法演示
 
-# 1.3  Hugging Face
+## 1.3 Hugging Face
 
-https://huggingface.co/
+`https://huggingface.co/`
 
 推荐指数：🌟🌟🌟（但对非技术型用户来说，有一定使用门槛。因此不做重点推荐。）
 
@@ -46,9 +47,9 @@ Hugging Face 是一个知名的平台，提供各种预训练的 LLMs，包括�
 
 可在线体验一些平台搭建好的开源训练模型，比如 Qwen1.5-72B-Chat
 
-# 1.4  ModelScope
+## 1.4 ModelScope
 
-https://modelscope.cn/my/overview
+`https://modelscope.cn/my/overview`
 
 推荐指数：🌟🌟🌟（但对非技术型用户来说，有一定使用门槛。因此不做重点推荐。）
 
@@ -58,4 +59,4 @@ https://modelscope.cn/my/overview
 
 魔塔社区旨在成为国内的主流 AI 模型开源社区，对标 Hugging Face，为开发者和创作者提供一个本地化的 AI 工具平台。
 
-魔搭社区通义千问：https://modelscope.cn/organization/qwen
+魔搭社区通义千问：`https://modelscope.cn/organization/qwen`

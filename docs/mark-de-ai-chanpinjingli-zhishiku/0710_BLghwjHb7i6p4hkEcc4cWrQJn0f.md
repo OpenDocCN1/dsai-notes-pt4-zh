@@ -1,3 +1,4 @@
+
 # Happy-LLM 第二章 Transformer
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/KJEzdezkeo2kMgxv0d4cH1iCnAg](https://qqs7y1hozd1.feishu.cn/docx/KJEzdezkeo2kMgxv0d4cH1iCnAg)
@@ -8,6 +9,6 @@
 
 ### 注意力机制
 
-+   前馈神经网络
++ 前馈神经网络
 
 每一层的神经元都与上下两层的每一个神经元完全连接

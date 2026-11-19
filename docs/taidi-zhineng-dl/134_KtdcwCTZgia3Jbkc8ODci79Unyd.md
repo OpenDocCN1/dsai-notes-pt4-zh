@@ -1,10 +1,11 @@
+
 # 性能加速的方法论
 
 > 来源：[https://learning.feishu.cn/docx/Gylnd5LQYozLQoxnqaRctNmAnMe](https://learning.feishu.cn/docx/Gylnd5LQYozLQoxnqaRctNmAnMe)
 
-# 经典理论
+## 经典理论
 
-## Amdahl's Law
+### Amdahl's Law
 
 维基百科 - Amdahl's law
 
@@ -12,9 +13,8 @@
 
 针对并行计算
 
-1.  不能被并行加速的部分，限制了最大加速比。the overall performance improvement gained by optimizing a single part of a system is limited by the fraction of time that the improved part is actually used
-
-1.  单模块的加速，对系统总体速度的影响，越来越小。
+1. 不能被并行加速的部分，限制了最大加速比。the overall performance improvement gained by optimizing a single part of a system is limited by the fraction of time that the improved part is actually used
+2. 单模块的加速，对系统总体速度的影响，越来越小。
 
 ![](img/f810cd4056764e83e0534c935ada55f7.png)
 
@@ -22,7 +22,7 @@
 
 ![](img/2324b2eefc6c1db5321a009ce57b781e.png)
 
-## Gustafson's law
+### Gustafson's Law
 
 维基百科 - Gustafson's law
 
@@ -38,7 +38,7 @@ Amdahl's Law 假定了问题的规模（计算量）不变，实际上，随着�
 
 ![](img/474a610f8c88d245cc8061c93828dab9.png)
 
-## Roofline Model
+### Roofline Model
 
 Roofline Model [paper](https://people.eecs.berkeley.edu/~kubitron/cs252/handouts/papers/RooflineVyNoYellow.pdf)
 
@@ -50,19 +50,14 @@ Roofline Model [paper](https://people.eecs.berkeley.edu/~kubitron/cs252/handouts
 
 估算加速效果的模型。考虑的因素，包括：
 
-1.  硬件限制
+1. 硬件限制
+2. 优化措施的效果和优先级
+3. locality
+4. bandwidth
+5. 并行模型
+6. 等
 
-1.  优化措施的效果和优先级
-
-1.  locality
-
-1.  bandwidth
-
-1.  并行模型
-
-1.  等
-
-## streetlight 方法
+### streetlight 方法
 
 A policeman sees a drunk looking under a streetlight,
 
@@ -80,7 +75,7 @@ The drunk replies:
 
 总结：只做会的，不做对的。
 
-# 摸鱼的理论基础
+## 摸鱼的理论基础
 
 根据 Gustafson's law（古斯塔夫森），优先把加速空间很大，又比较容易做的部分搞定就可以。
 

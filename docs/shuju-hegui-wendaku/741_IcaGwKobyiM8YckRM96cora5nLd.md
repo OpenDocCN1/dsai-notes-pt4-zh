@@ -1,6 +1,7 @@
+
 # 数据泄露的补救措施
 
-> 来源：[https://docs.feishu.cn/docx/TDdXdpONcotleqxrldWcvie7nef](https://docs.feishu.cn/docx/TDdXdpONcotleqxrldWcvie7nef)
+> 来源：[`https://docs.feishu.cn/docx/TDdXdpONcotleqxrldWcvie7nef`](https://docs.feishu.cn/docx/TDdXdpONcotleqxrldWcvie7nef)
 
 **-问：**假设可能发生或发生了个人信息泄漏，怎么评估可能对个人和个人造成的危害，由谁来评估。个保法还规定了要通知“个人可采取的补救措施”，都有哪些补救措施啊，能想到的只有换密码，不要点击钓鱼邮件这些常规的预防措施。
 

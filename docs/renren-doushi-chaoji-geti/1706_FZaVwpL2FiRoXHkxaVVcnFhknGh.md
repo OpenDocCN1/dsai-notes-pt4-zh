@@ -1,10 +1,11 @@
-# 2023-04-16AutoGPT 详细安装部署教程丨AI界新趋势全自动AI
+
+# 2023-04-16 AutoGPT 详细安装部署教程丨AI 界新趋势全自动 AI
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/PN0zdphMIoLFTbxja8Rcfro6nIb](https://xuqiwei1986.feishu.cn/docx/PN0zdphMIoLFTbxja8Rcfro6nIb)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/_sG7g0VeIrojL9xtX_-F0w)q.com/s/_sG7g0Ve...
+> 🔗 原文链接：https://mp.weixin.qq.com/s/_sG7g0VeIrojL9xtX_-F0w
 
-> ⏰
+## 项目简介
 
 本周 AutoGPT 爆火，AI 界出现了新趋势：全自动 AI （AutoGPT）。可能你会好奇 AutoGPT 是什么？全自动 AI 又是什么？AGI（通用人工智能）又是什么？
 
@@ -12,22 +13,21 @@
 
 可以在分析市场提出洞见、分析营销思路、创建简单的网页方面发挥用处。这是通用人工智能（即AGI）的一个具体体现。AutoGPT 该怎么用呢？
 
+## 使用方式
+
 想要使用 AutoGPT 有两种方法：最简单的方法是 AgentGPT 这样的网页上使用，稍微复杂一些的方法是在自己的 Window 或 Mac 电脑安装部署 AutoGPT、把 AutoGPT 下载安装到你自己的本地电脑。
 
 可以先在类似 AgentGPT 这样的网页上使用 AutoGPT 以便了解 AutoGPT 的运作方式，了解之后再把 AutoGPT 下载安装到自己的电脑。
 
-Python下载地址：https://www.python.org/
+## 相关资源
 
-AutoGPT体验地址：https://agentgpt.reworkd.ai/
+- Python 下载地址：`https://www.python.org/`
+- AutoGPT 体验地址：`https://agentgpt.reworkd.ai/`
+- 安装指令：`https://github.com/Significant-Gravitas/Auto-GPT`
+- OpenAI API Key：`https://platform.openai.com/account/api-keys`
+- Pinecone API Key：`https://www.pinecone.io/`
+- Git for windows：`https://git-scm.com/downloads`
 
-安装指令：https://github.com/Significant-Gravitas/Auto-GPT
-
-OpenAI API Key：https://platform.openai.com/account/api-keys
-
-Pinecone API Key：https://www.pinecone.io/
-
-Git for windows：https://git-scm.com/downloads
-
-ChatGPT成品账号——ChatGPT Plus会员——Midjourney会员获取渠道添加Wechat。vx：thyj66 问题答疑
+ChatGPT 成品账号——ChatGPT Plus 会员——Midjourney 会员获取渠道添加 Wechat。vx：thyj66 问题答疑
 
 ![](img/24831c3c50c80e7d72b97b2c35e50847.png)

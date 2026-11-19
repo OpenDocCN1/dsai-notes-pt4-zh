@@ -1,8 +1,9 @@
+
 # 山姆·奥特曼传（三）：硬币的两面
 
-> 来源：[https://agijuejin.feishu.cn/docx/Mam8dYmbpowq12xLqF2cAl2Cnnf](https://agijuejin.feishu.cn/docx/Mam8dYmbpowq12xLqF2cAl2Cnnf)
+> 来源：`[https://agijuejin.feishu.cn/docx/Mam8dYmbpowq12xLqF2cAl2Cnnf](https://agijuejin.feishu.cn/docx/Mam8dYmbpowq12xLqF2cAl2Cnnf)`
 
-<https://agijuejin.feishu.cn/sync/D0V0dgafbsOgfvbvWL1cm9rmndd>
+`https://agijuejin.feishu.cn/sync/D0V0dgafbsOgfvbvWL1cm9rmndd`
 
 真正推动人类进步的从来不是崇高理想，而是资本，所以你可以理解为资本有很多种：金钱、权力、人脉。当然，还有讲故事和两面三刀。
 
@@ -10,7 +11,7 @@
 
 ![](img/5e54cff52682ab4565fcae1c73ea70fa.png)
 
-# 一、被放逐的CEO
+## 一、被放逐的CEO
 
 在马斯克大闹OpenAI时，山姆还正沉浸在将YC的商业版图进一步扩大之上，而面对权力交接，对他来讲显得有些猝不及防。以至于在权力更迭的这段时间，山姆开始了两线作战。不过这招来了YC内部一些人的不满。他们认为 他太过分散精力、急于扩张，而且在做出公司重大决策过程中，往往优先考虑自己的利益而不是 YC 的利益。这在他的团队中树立了一些敌人。而他的导师保罗・格雷厄姆甚至从英国飞来，亲自要求他辞去 YC 的职务。格雷厄姆对他的前门徒失去了信心，但他也不想制造公开的戏剧性场面。最终，山姆被悄悄地引导离开了 YC，并开始专心经营OpenAI。
 
@@ -22,9 +23,9 @@
 
 看起来这是一种又当又立的说辞，但紧接着，山姆便将他的想法付诸于了行动。
 
-# 二、“我想要好处，但别给太多”
+## 二、“我想要好处，但别给太多”
 
-为**了**不受到投资方的掣肘，山姆做了一个大胆的尝试——他搭建了一家有盈利上限的有限合伙企业（OpenAI LP） OpenAI Nonprofit，为了保留 OpenAI 的控制权，在这家有限合伙企业当中，OpenAI Nonprofit 作为 GP（General Partner），其董事会负责整个有限合伙企业的管理和运营。LP（Limited Partner）包括投资人和员工，其回报都有设定上限，其中第一轮投资人可以获得上限为初始投资本金 100 倍的投资回报，之后进入的投资人回报上限会降低。
+为了不受到投资方的掣肘，山姆做了一个大胆的尝试——他搭建了一家有盈利上限的有限合伙企业（OpenAI LP） OpenAI Nonprofit，为了保留 OpenAI 的控制权，在这家有限合伙企业当中，OpenAI Nonprofit 作为 GP（General Partner），其董事会负责整个有限合伙企业的管理和运营。LP（Limited Partner）包括投资人和员工，其回报都有设定上限，其中第一轮投资人可以获得上限为初始投资本金 100 倍的投资回报，之后进入的投资人回报上限会降低。
 
 这样一来，OpenAI便成为了这个机构的最终控制者，并且可以向未来的金主爸爸许诺：如果 ChatGPT 研发成功，除了可以接入他们的新技术外，还可以收回本金，并得到封顶收益的回报。而当本金收回后，股权也将进一步回到 OpenAI 手中，拿到封顶收益后，所有股权将全部退还给 OpenAI，仍然保持了它的独立性。
 
@@ -38,7 +39,7 @@
 
 有意思的是，当山姆在一次采访中被问及上述的批评时， 他停顿了一下，并说：“我喜欢伊隆，我关注他说的话”。
 
-# 三、安全分歧
+## 三、安全分歧
 
 这段快速进展，对于山姆来说无疑是件好事，对于公司来说也是如此。然而，它却让一些 OpenAI 的员工感到紧张，甚至包括一些高层。在这些高层里就有达里奥・阿莫迪(Dario Amodei)，他当时担任着 OpenAI 的研究副总裁。
 
@@ -54,7 +55,7 @@
 
 不管高层的分歧如何，Anthropic 从 OpenAI 的分离的确是一件大事。这无疑给 OpenAI 蒙上了一层可疑的阴影。这些人直接用行动表明了他们不信任山姆・奥特曼会做正确的事，而不是嘴上说说，博取噱头。同时也暗示着 OpenAI 内部对于 AI 安全问题的分歧远比表面上看起来更加严重。
 
-# 四、焦虑蔓延
+## 四、焦虑蔓延
 
 时间快进到 2022 年底，OpenAI 推出了 ChatGPT。起初，这款人工智能产品只在技术圈子里小范围流行，但很快，这些圈子里的极客们就被它展现出的 “神奇魔法” 所震惊。媒体的热烈报道更是将它推向了大众视野。ChatGPT 在短短两个月内就突破了 1 亿用户，创下了史上增长速度最快的记录。作为对比，TikTok 花了 9 个月，Instagram 花了两年半才达到同样的普及度。
 
@@ -72,9 +73,9 @@ ChatGPT 的发布让 OpenAI 迅速声名鹊起，成为了家喻户晓的 AI 公
 
 “这是一种分心，因为现在正在发生各种各样的伤害，包括劳动剥削、数据盗窃、歧视性结果、代表性伤害。” 艾米莉・本德，一位专门研究计算语言学的学者说道： “我们越是关注这些非常令人兴奋的，就像动作电影那样令人兴奋的幻想场景的存在风险，就越少时间和精力用于实际处理现在正在发生的真实伤害”。
 
-# 五、阴暗之面
+## 五、阴暗之面
 
-那么，作为ChatGPT的“父亲”,山姆是否相信AI可能会毁灭人类?老实说,很难讲。多年来,他的回答一直在变化。
+那么，作为ChatGPT的“父亲",山姆是否相信AI可能会毁灭人类?老实说,很难讲。多年来,他的回答一直在变化。
 
 早在 2015 年，山姆就明确表示，他认为先进的 AI 是 “可能是人类持续存在的最大威胁”。他甚至曾用一种有趣的语气说道：“我认为 AI 可能会，最有可能会导致世界末日”。
 
@@ -94,8 +95,6 @@ ChatGPT 的发布让 OpenAI 迅速声名鹊起，成为了家喻户晓的 AI 公
 
 资料来源：
 
-1.  Greg Brockman blog ( https://blog.gregbrockman.com/)
-
-1.  https://www.britannica.com/money/OpenAI
-
-1.  人物-Sam Altman(https://blog.naaln.com/2023/06/sam-altman/)
+1. Greg Brockman blog (`https://blog.gregbrockman.com/`)
+1. `https://www.britannica.com/money/OpenAI`
+1. 人物-Sam Altman(`https://blog.naaln.com/2023/06/sam-altman/`)

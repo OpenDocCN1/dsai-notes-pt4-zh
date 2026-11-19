@@ -1,3 +1,4 @@
+
 # Seedance2.0新9种商用案例！
 
 > 来源：[https://aiwarts101.feishu.cn/docx/EiYEdvqrXo2k0xxqf2OcRvycnkd](https://aiwarts101.feishu.cn/docx/EiYEdvqrXo2k0xxqf2OcRvycnkd)
@@ -35,7 +36,6 @@
 ## 电商穿搭
 
 > 让一个女生依次换上@图1 @图2 @图3 @图4 @图5 @图6 六套服装进行卡点变装展示。每套服装需要包含半身走位和整体穿搭全身的展示。运镜要求使用不同景别流畅切换，加上符合调性的广告音
-
 
 [让一个女生在家里依次换上【@图片1】【@图片2】【@图片3】【@图片4】【@图片5】【@图片6】六套服装进行卡点变装展示。每套服装需要包含半身走位和整体穿搭全身的展示。运镜要求.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WFrNbXwfLoookpx37mZcqifdn6g)
 

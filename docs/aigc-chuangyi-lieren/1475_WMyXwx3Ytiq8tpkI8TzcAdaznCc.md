@@ -1,28 +1,25 @@
+
 # 20260210-抽奖！限量新春大礼，还有18000个红包封面+马年专属表情包~~
 
 > 来源：[https://aigcreative.feishu.cn/docx/Bpi4deZn5owTBQxFXTvc9jg4nCc](https://aigcreative.feishu.cn/docx/Bpi4deZn5owTBQxFXTvc9jg4nCc)
 
-今天没有什么干货硬货，
+今天没有什么干货硬货，主打一个开心，马上要过年了。
 
-主打一个开心，马上要过年了
-
-# **Part 1**
+## Part 1
 
 真心感谢读者们一路的陪伴！
 
-话不多说，今天抽个奖
+话不多说，今天抽个奖，直接抽奖！
 
-直接抽奖！
-
-**礼品**
+礼品
 
 WaytoAGI 社区共创日历
 
-# ✕5份
+✕5 份
 
-(识别下图右下角二维码参与抽奖）
+（识别下图右下角二维码参与抽奖）
 
-**（注意滑到页面底部）**
+（注意滑到页面底部）
 
 ![](img/f3b3a590e364fda93890f968f0c4abc0.png)
 
@@ -46,7 +43,7 @@ WaytoAGI 社区共创日历
 
 祝你好运~~
 
-# Part 2
+## Part 2
 
 🛰️红包封面
 
@@ -60,7 +57,7 @@ WaytoAGI 社区共创日历
 
 直接发
 
-# Part 3
+## Part 3
 
 过年怎么没有表情包助兴呢
 
@@ -86,14 +83,8 @@ WaytoAGI 社区共创日历
 
 ![](img/05a14b25dfdbf026778349c6864dbe34.png)
 
-最后祝大家
-
-马年大吉
-
-一马当先
-
-成为AI界的黑马
+最后祝大家马年大吉，一马当先，成为AI界的黑马。
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

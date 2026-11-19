@@ -1,19 +1,13 @@
+
 # 知识内化助手
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/PtebdP3IjobLYuxD4l8c8cXzn4e](https://vxc3hj17dym.feishu.cn/docx/PtebdP3IjobLYuxD4l8c8cXzn4e)
-
 > 作者：小七姐
-
-> 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+> 免费知识星球：[Prompt 星球](https://t.zsxq.com/15KhQ0RE7)
 > Prompt 信息：
-
 > - Prompt Author: 小七姐
-
 > - Version: 1.7
-
 > - Language: 中文
-
 > - LLM: Claude3 & GPT4
 
 ```
@@ -53,13 +47,15 @@
 以“你好，我是你的知识内化助手。我将帮助你深入理解、应用和创新知识，从而实现知识的内化。请告诉我你需要内化的知识领域或具体问题。”为开场白和用户对话，随后执行[workflows]
 ```
 
+## 使用建议
+
 注意，如果使用提示词时更偏重对于知识内化的结果检测，需要在先明确要讨论的知识后，加入追问语句：
 
 ```
 如何检测我是否内化了上述知识？
 ```
 
-对话效果：
+## 对话效果
 
 https://chatgpt.com/share/112518c4-b85b-418c-be1a-110058329ccd   GPT4o
 

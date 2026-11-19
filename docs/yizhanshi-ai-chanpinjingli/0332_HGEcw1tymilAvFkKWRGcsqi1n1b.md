@@ -1,14 +1,13 @@
+
 # 4.3 生成式预训练模型
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/OISXdmQaXoDjSWxgTXdccU1CnVR](https://v11enp9ok1h.feishu.cn/docx/OISXdmQaXoDjSWxgTXdccU1CnVR)
 
 生成式预训练模型是一类通过大规模无监督学习从文本数据中获取通用语言知识，并能够生成连贯、合理文本的深度学习模型。这类模型的核心特点是：
 
-+   生成能力：能够根据输入（提示或上下文）自动生成新的文本。
-
-+   预训练+微调范式：先在大量数据上预训练，再针对具体任务微调。
-
-+   自回归或自编码架构：通过不同的训练目标学习语言规律。
++ 生成能力：能够根据输入（提示或上下文）自动生成新的文本。
++ 预训练+微调范式：先在大量数据上预训练，再针对具体任务微调。
++ 自回归或自编码架构：通过不同的训练目标学习语言规律。
 
 ![](img/417ed47fd39138cf13138b1c8fc72e41.png)
 
@@ -20,13 +19,10 @@ GPT-1 (Generative Pre-trained Transformer) 于 2018 年由 OpenAI 发布，首�
 
 **核心特点**：
 
-+   12 层 Transformer 解码器结构
-
-+   1.17 亿参数
-
-+   使用 BooksCorpus 数据集 (约 7,000 本书)
-
-+   开创了"预训练+微调"的两阶段范式
++ 12 层 Transformer 解码器结构
++ 1.17 亿参数
++ 使用 BooksCorpus 数据集 (约 7,000 本书)
++ 开创了"预训练+微调"的两阶段范式
 
 ### 1.2 GPT-2：规模化的突破
 
@@ -34,13 +30,10 @@ GPT-1 (Generative Pre-trained Transformer) 于 2018 年由 OpenAI 发布，首�
 
 **关键升级**：
 
-+   参数规模：15 亿 (是 GPT-1 的 10 倍)
-
-+   训练数据：WebText (800 万网页，40GB 文本)
-
-+   移除了微调阶段，展示 zero-shot 学习能力
-
-+   引入更长的上下文窗口 (1024 tokens)
++ 参数规模：15 亿 (是 GPT-1 的 10 倍)
++ 训练数据：WebText (800 万网页，40GB 文本)
++ 移除了微调阶段，展示 zero-shot 学习能力
++ 引入更长的上下文窗口 (1024 tokens)
 
 ### 1.3 GPT-3：量变到质变
 
@@ -48,13 +41,10 @@ GPT-1 (Generative Pre-trained Transformer) 于 2018 年由 OpenAI 发布，首�
 
 **革命性进步**：
 
-+   模型架构：96 层 Transformer
-
-+   训练数据：Common Crawl + 精选数据集 (约 570GB)
-
-+   展示了强大的上下文学习 (in-context learning) 能力
-
-+   首次实现无需微调即可完成多种 NLP 任务
++ 模型架构：96 层 Transformer
++ 训练数据：Common Crawl + 精选数据集 (约 570GB)
++ 展示了强大的上下文学习 (in-context learning) 能力
++ 首次实现无需微调即可完成多种 NLP 任务
 
 ### 1.4 GPT-4 及后续发展
 
@@ -62,13 +52,10 @@ GPT-1 (Generative Pre-trained Transformer) 于 2018 年由 OpenAI 发布，首�
 
 **最新进展**：
 
-+   多模态处理能力 (文本+图像)
-
-+   更长的上下文记忆 (32k tokens)
-
-+   增强的推理和指令跟随能力
-
-+   商业化 API 和插件生态系统
++ 多模态处理能力 (文本+图像)
++ 更长的上下文记忆 (32k tokens)
++ 增强的推理和指令跟随能力
++ 商业化 API 和插件生态系统
 
 ---
 
@@ -79,7 +66,7 @@ GPT-1 (Generative Pre-trained Transformer) 于 2018 年由 OpenAI 发布，首�
 自回归 (Autoregressive) 语言模型通过前文预测下一个词的概率分布：
 
 ```
-P(x_t | x_&amp;lt;t) = P(x_t | x_1, x_2, ..., x_{t-1})
+P(x_t | x_<t) = P(x_t | x_1, x_2, ..., x_{t-1})
 ```
 
 ### 2.2 数学原理
@@ -87,35 +74,32 @@ P(x_t | x_&amp;lt;t) = P(x_t | x_1, x_2, ..., x_{t-1})
 给定词序列 x = (x₁, ..., xₙ)，联合概率分解为：
 
 ```
-P(x) = ∏ P(x_t | x_&amp;lt;t)
+P(x) = ∏ P(x_t | x_<t)
 ```
 
 使用最大似然估计进行训练：
 
 ```
-L(θ) = ∑ log P(x_t | x_&amp;lt;t; θ)
+L(θ) = ∑ log P(x_t | x_<t; θ)
 ```
 
 ### 2.3 Transformer 解码器架构
 
 关键组件：
 
-1.  **掩码自注意力**：防止信息泄露
+1. **掩码自注意力**：防止信息泄露
 
 ```
 PyTorch 伪代码
 attn_mask = torch.triu(torch.ones(seq_len, seq_len), diagonal=1)
 ```
 
-1.  **位置编码**：注入序列顺序信息
-
-1.  **前馈网络**：逐位置特征变换
+1. 位置编码：注入序列顺序信息
+1. 前馈网络：逐位置特征变换
 
 ## 三、文本生成技术详解
 
 ### 3.1 生成过程
-
-典型文本生成流程：
 
 ![](img/bc51ad58b41b4b80f0e753b1c89294e8.png)
 
@@ -125,15 +109,15 @@ attn_mask = torch.triu(torch.ones(seq_len, seq_len), diagonal=1)
 
 关键参数示例：
 
-## 实例
+#### 实例
 
 ```
 generation_config = {
-    &quot;max_length&quot;: 100,       # 最大生成长度
-    &quot;temperature&quot;: 0.7,      # 控制随机性 (0-1)
-    &quot;top_k&quot;: 50,             # 候选词数量
-    &quot;top_p&quot;: 0.9,            # 核采样阈值
-    &quot;repetition_penalty&quot;: 1.2  # 重复惩罚因子
+    "max_length": 100,       # 最大生成长度
+    "temperature": 0.7,      # 控制随机性 (0-1)
+    "top_k": 50,             # 候选词数量
+    "top_p": 0.9,            # 核采样阈值
+    "repetition_penalty": 1.2  # 重复惩罚因子
 }
 ```
 
@@ -141,23 +125,20 @@ generation_config = {
 
 ### 4.1 核心原则
 
-+   **明确性**：清晰表达意图
-
-+   **上下文**：提供足够背景信息
-
-+   **结构化**：使用分隔符和格式
-
-+   **示例驱动**：包含 few-shot 示例
++ **明确性**：清晰表达意图
++ **上下文**：提供足够背景信息
++ **结构化**：使用分隔符和格式
++ **示例驱动**：包含 few-shot 示例
 
 ### 4.2 实用技巧
 
-1.  **角色设定**
+1. **角色设定**
 
 ```
 你是一位资深机器学习工程师，请用通俗语言解释...
 ```
 
-1.  **步骤分解**：
+1. **步骤分解**：
 
 ```
 请按以下步骤解决问题：
@@ -166,7 +147,7 @@ generation_config = {
 3. 最后输出...
 ```
 
-1.  **格式指定**：
+1. **格式指定**：
 
 ```
 请用JSON格式输出，包含字段：summary, keywords, confidence
@@ -174,7 +155,7 @@ generation_config = {
 
 ### 4.3 典型模式
 
-+   **指令模板**：
++ **指令模板**：
 
 ```
 任务：文本分类
@@ -183,7 +164,7 @@ generation_config = {
 输出：
 ```
 
-+   思维链 (CoT)：
++ 思维链 (CoT)：
 
 ```
 请逐步推理：首先... 其次... 因此结论是...
@@ -193,26 +174,24 @@ generation_config = {
 
 ### 5.1 基础生成
 
-## 实例
+#### 实例
 
 ```
 from transformers import pipeline
 
-generator = pipeline(&#x27;text-generation&#x27;, model=&#x27;gpt2&#x27;)
-prompt = &quot;人工智能的未来发展&quot;
+generator = pipeline('text-generation', model='gpt2')
+prompt = "人工智能的未来发展"
 output = generator(prompt, max_length=100)
-print(output[0][&#x27;generated_text&#x27;])
+print(output[0]['generated_text'])
 ```
 
 ### 5.2 参数调优实验
 
 设计对比实验观察不同参数影响：
 
-1.  固定 prompt，变化 temperature (0.3 vs 0.7 vs 1.2)
-
-1.  比较 top_k=10 与 top_k=50 的结果差异
-
-1.  测试不同 max_length 对生成连贯性的影响
+1. 固定 `prompt`，变化 `temperature` (0.3 vs 0.7 vs 1.2)
+1. 比较 `top_k=10` 与 `top_k=50` 的结果差异
+1. 测试不同 `max_length` 对生成连贯性的影响
 
 ### 5.3 Prompt 优化挑战
 
@@ -222,13 +201,10 @@ print(output[0][&#x27;generated_text&#x27;])
 
 优化方向：
 
-1.  添加角色设定
-
-1.  指定文章结构
-
-1.  包含关键词要求
-
-1.  设置风格约束
+1. 添加角色设定
+1. 指定文章结构
+1. 包含关键词要求
+1. 设置风格约束
 
 ---
 

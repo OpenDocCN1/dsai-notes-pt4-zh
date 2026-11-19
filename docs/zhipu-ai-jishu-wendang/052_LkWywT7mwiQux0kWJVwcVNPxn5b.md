@@ -1,10 +1,11 @@
+
 # LongWriter继续训练
 
 > 来源：[https://ai.feishu.cn/docx/OIWKdFhTZoixoUxMEdNcmbn2nob](https://ai.feishu.cn/docx/OIWKdFhTZoixoUxMEdNcmbn2nob)
 
 如果你想继续在我们的LongWriter模型训练，可以通过下面的方式完成
 
-### SFT微调
+## SFT微调
 
 下载模型权重
 
@@ -24,9 +25,9 @@ git clone https://huggingface.co/datasets/THUDM/LongWriter-6k
 git clone https://github.com/THUDM/LongWriter
 ```
 
-#### 准备数据
+### 准备数据
 
-准备自己的sft数据，格式为gptshare的jsonl文件，命名为 general.jsonl
+准备自己的sft数据，格式为gptshare的jsonl文件，命名为`general.jsonl`
 
 示例
 
@@ -37,13 +38,13 @@ git clone https://github.com/THUDM/LongWriter
     }
 ```
 
-将datasets/THUDM/LongWriter-6k 中的文件重命名成LongWriter-6k.jsonl.复制到项目代码下的train文件夹
+将`datasets/THUDM/LongWriter-6k`中的文件重命名成`LongWriter-6k.jsonl`。复制到项目代码下的`train`文件夹
 
 ```
 cp LongWriter-6k/long.jsonl  LongWriter/train/LongWriter-6k.jsonl
 ```
 
-#### 安装环境
+### 安装环境
 
 > 记得使用虚拟环境
 
@@ -53,11 +54,11 @@ cp LongWriter-6k/long.jsonl  LongWriter/train/LongWriter-6k.jsonl
 pip install -r requirements.txt 
 ```
 
-分别安装DeepSpeed、 "flash-attn>=2.0.0" 、 transformers==4.33.0 、accelerate、wandb、tiktoken
+分别安装`DeepSpeed`、`flash-attn>=2.0.0`、`transformers==4.33.0`、`accelerate`、`wandb`、`tiktoken`
 
-#### 配置文件
+### 配置文件
 
-修改ds_config/stage3.json文件
+修改`ds_config/stage3.json`文件
 
 ```
 {
@@ -112,15 +113,15 @@ pip install -r requirements.txt
   }
 ```
 
-#### 执行预处理
+### 执行预处理
 
-修改pre_tokenize_glm4.py文件
+修改`pre_tokenize_glm4.py`文件
 
 ```
 tokenizer = AutoTokenizer.from_pretrained( 改成模型权重路径, trust_remote_code=True)
 ```
 
-执行命令，记得当前目录需要存在general.jsonl、LongWriter-6k.jsonl两个文件
+执行命令，记得当前目录需要存在`general.jsonl`、`LongWriter-6k.jsonl`两个文件
 
 ```
 python pre_tokenize_glm4.py 
@@ -132,24 +133,24 @@ python pre_tokenize_glm4.py
 python sort_and_group.py --train_file ./data/glm4/longwriter
 ```
 
-#### 开始训练
+### 开始训练
 
-glm4_longwriter.sh脚本中可以配置使用显卡，这里使用了第0个，训练模型需要80G显存
+`glm4_longwriter.sh`脚本中可以配置使用显卡，这里使用了第0个，训练模型需要80G显存
 
 ```
 deepspeed --include localhost:0 
 ```
 
-执行命令,WANDB_API_KEY从wandb.ai获取，不需要可以不填写，并且将ds_config/stage3.json文件中wandb删除
+执行命令,`WANDB_API_KEY`从wandb.ai获取，不需要可以不填写，并且将`ds_config/stage3.json`文件中wandb删除
 
 ```
 WANDB_API_KEY=key ./scripts/glm4_longwriter.sh 
 ```
 
-#### 注意事项
+### 注意事项
 
-+   修改stage3_prefetch_bucket_size为整数例如”15099494“
++   修改`stage3_prefetch_bucket_size`为整数例如`15099494`
 
-+   **环境满足要求：**t**r**a**n**sformers==4.33.0 和 flash-attn>=2.0.0。
++   环境满足要求：`transformers==4.33.0` 和 `flash-attn>=2.0.0`。
 
-+   训练 GL**M**-4**-9b 时**出**错： ⚠️ **r**eturn se**lf.mergeable_ranks[token] KeyError: '<|endoftext|>' .请确保您已将 GLM-4-9b 模型文件夹下的 tokenization_chatglm.py 和 modeling_chatglm.py 文件替换为 patch/ 下的补丁文件。
++   训练 GLM-4-9b 时出错：⚠️ `return self.mergeable_ranks[token] KeyError: '<|endoftext|>'`。请确保您已将 GLM-4-9b 模型文件夹下的`tokenization_chatglm.py`和`modeling_chatglm.py`文件替换为`patch/`下的补丁文件。

@@ -1,3 +1,4 @@
+
 # Prompt：权力考古学
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/YuUcdyx8EosmeIxfKM2c4KzYnxc](https://vxc3hj17dym.feishu.cn/docx/YuUcdyx8EosmeIxfKM2c4KzYnxc)

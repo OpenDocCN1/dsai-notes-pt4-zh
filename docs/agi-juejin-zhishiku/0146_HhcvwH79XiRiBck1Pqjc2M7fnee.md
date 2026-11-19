@@ -1,3 +1,4 @@
+
 # ChatGPT第二弹：PPO算法
 
 > 来源：[https://agijuejin.feishu.cn/docx/MirIdbdpcoLpoOxz7sOcyDSYntc](https://agijuejin.feishu.cn/docx/MirIdbdpcoLpoOxz7sOcyDSYntc)
@@ -10,17 +11,17 @@
 
 > 转载须标注出处：哈工大SCIR
 
-# 1. ChatGPT与PPO算法
+## 1. ChatGPT与PPO算法
 
 在上篇文章中我们提到，ChatGPT的训练过程主要分为三步：微调GPT-3模型、人工对微调后模型的生成结果打分以训练得到一个奖励模型、 基于微调后的GPT-3结合奖励模型采用强化学习的方法更新策略。而第三步中强化学习的方法为OpenAI于2017年提出的Proximal Policy Optimization（PPO）算法。PPO算法提出后应用场景相当广泛，包含图像识别 [1] 、机械臂控制 [2] 、电子游戏 [3] 以及今天的ChatGPT。OpenAI基于PPO算法设计的AI程序OpenAI Five甚至在2019年4月13日击败了Dota 2世界冠军战队OG [4] 。
 
 在接下来的部分中，我们会在第二章中介绍强化学习的基础知识，第三章中介绍PPO算法论文并对其中的公式进行推导。
 
-# **2. 强化学习基础**
+## 2. 强化学习基础
 
 以下内容参考OpenAI Spinning Up [5] ，其为OpenAI公开的一份关于深度强化学习的教育资源。
 
-## **2.1 基本定义**
+### 2.1 基本定义
 
 ![](img/4b32f0044bfb69ef605d6d666f15a1b6.png)
 
@@ -40,7 +41,7 @@
 
 显然，强化学习模型优化目标可以使用  表示，其中  表示智能体的开始状态。
 
-## **2.2 Model-Free vs Model-Based, Value-Based **vs Policy-Based, off-policy vs on-policy
+### 2.2 Model-Free vs Model-Based, Value-Based vs Policy-Based, off-policy vs on-policy
 
 强化学习算法种类繁多，可按图3所示类别粗略分类。
 
@@ -50,11 +51,11 @@
 
 可以看到PPO算法是无模型的强化学习算法，属于策略优化类算法，并且是on-policy的。本节中我们将对这些概念进行介绍，让大家对PPO算法有一个更好的认识。这些概念一共可分为三组，分别是：
 
-+   基于模型的强化学习（Model-based RL）、无模型的强化学习（Model-free RL）；
++ 基于模型的强化学习（Model-based RL）、无模型的强化学习（Model-free RL）；
 
-+   基于策略的强化学习（Policy-based RL）、基于值的强化学习（Value-based RL，即图中Q-leranng）；
++ 基于策略的强化学习（Policy-based RL）、基于值的强化学习（Value-based RL，即图中Q-leranng）；
 
-+   on-policy、off-policy。
++ on-policy、off-policy。
 
 ![](img/62e2c56129a7feb202d156abdf6296cb.png)
 
@@ -76,7 +77,9 @@
 
 ![](img/8b44a8e901dd5b793c0207fe8a8dfde4.png)
 
-图5 SARSA算法：on-policy [7]整体而言，on-policy是行为策略与目标策略一致，而off-policy是行为策略与目标策略不一致。除此之外还需要注意的是offline离线学习算法，该类型算法使用静态的已经获取好的数据用于学习和部署，与前面 提到的实时与环境交互获得反馈的在线强化学习模型有所不同。
+图5 SARSA算法：on-policy [7]
+
+整体而言，on-policy是行为策略与目标策略一致，而off-policy是行为策略与目标策略不一致。除此之外还需要注意的是offline离线学习算法，该类型算法使用静态的已经获取好的数据用于学习和部署，与前面 提到的实时与环境交互获得反馈的在线强化学习模型有所不同。
 
 ![](img/1e71667ddbe634a8a7e805abf248f422.png)
 
@@ -84,7 +87,7 @@
 
 行为策略与目标策略的不一致有多种情况，Q-learning 中选择 ϵ-greedy 作为行为策略目的是在数据获取过程中有一定的探索性，而在图6（b）中行为策略与目标策略的不一致在于行为策略会累积一定数据后更新目标策略，或者说目标策略的更新不会马上同步到行为策略中，此时行为策略是旧的目标策略。图（a）则是 on-policy 算法，图（c）是 offline 算法，可以看到仅有简单的数据收集-> 策略学习-> 模型部署过程。
 
-## **2.3 强化学习基础小结**
+### 2.3 强化学习基础小结
 
 在上文中，我们首先介绍了强化学习的定义与优化目标，并介绍了重要的两个值函数：状态值函数，状态动作值函数，无论是基于值或是基于策略的强化学习方法中他们均有着重要的作用。在第二节中我们首先简要介绍了基于模型的强化学习，分为预测和控制两种形式，学习控制其本质是为了寻找最优策略，而学习预测是为了对策略找到一种评价标准。在无模型的强化学习方法中，我们首先介绍了基于值的强化学习法方法，并以Q-learning和SARSA为例介绍了on-policy和off-policy。基于策略的强化学习方法的介绍，我们将通过阅读PPO论文进行。
 
@@ -92,11 +95,11 @@
 
 图7 强化学习示意图
 
-# **3. PPO论文讲解**
+## 3. PPO论文讲解
 
 ![](img/559b2fb45f73b3ad4b3f3fe465f40ce4.png)
 
-# **3.1 策略梯度定理**
+### 3.1 策略梯度定理
 
 策略梯度定理是策略梯度算法中最简单的形式，论文中给出了策略梯度算法中梯度估计的一般形式：
 
@@ -106,7 +109,7 @@
 
 下面我们从基本定义开始推导。
 
-**最简单的策略梯度定理**
+#### 最简单的策略梯度定理
 
 ![](img/f6497376be9613fa15209084f9b3a951.png)
 
@@ -114,21 +117,21 @@
 
 ![](img/839a8a004372dcdca688cf0afbbb862e.png)
 
-**悟已往之不谏，知来者之可追：仅考虑未**来的奖励（ Reward-to-Go ）
+#### 悟已往之不谏，知来者之可追：仅考虑未来的奖励（ Reward-to-Go ）
 
 ![](img/691aa33d6f04d4a8393bc0f730ec1ab7.png)
 
-在代码实现上与原来不同的仅仅只有轨迹生成后loss值的计算，loss值的计算需要(s,a)对的权重，原公式中权重均为轨迹的总收益，此处为(s,a)对之后总的奖励。
+在代码实现上与原来不同的仅仅只有轨迹生成后`loss`值的计算，`loss`值的计算需要(s,a)对的权重，原公式中权重均为轨迹的总收益，此处为(s,a)对之后总的奖励。
 
-**EGLP 引理（ Expected G**rad-Log-Prob Lemma ）
+#### EGLP 引理（ Expected Grad-Log-Prob Lemma ）
 
 ![](img/c83bdf81e31a9acc700775671a787eb5.png)
 
 ![](img/9762e5dcadffe735b53424894f768117.png)
 
-## **3.2 信赖域策略优化算法（Trust Region P**olicy Opitimization）
+### 3.2 信赖域策略优化算法（Trust Region Policy Optimization）
 
-由于上述方法中模型迭代步长过大，并且其未在策略变化后重新进行采样，因此作者将上述目标函数修正如下：
+由于上述方法中模型迭代步长过大，并且其未在策略变化后重新进行采样，因此作者将上述目标函数修改如下：
 
 ![](img/1762d94e4c8fc1f568e7a349a83fc4b8.png)
 
@@ -152,17 +155,17 @@
 
 ![](img/ff20d5bae5747a048388c019127ba1b9.png)
 
-**平均KL散度代替最大KL散度**
+#### 平均KL散度代替最大KL散度
 
 ![](img/a0f64024f5c9fc9dbc8dea993b36de3b.png)
 
-**重要性采样**
+#### 重要性采样
 
 ![](img/07674ba3a3e50268d4c36b5b0939e5f8.png)
 
 ![](img/0cada6511013f64759824bb485f0aa5b.png)
 
-## **3.3 CLIP**
+### 3.3 CLIP
 
 ![](img/f33fb450b01080d12be34c947c02ed14.png)
 
@@ -182,11 +185,11 @@
 
 图10 CLIP、CPI 效果对比
 
-## 3.4 Adaptive KL Penalty Coefficient
+### 3.4 Adaptive KL Penalty Coefficient
 
 ![](img/c61796fc42bb9d15db4b62e25bbc3d36.png)
 
-## **3.5 算法**
+### 3.5 算法
 
 ![](img/76e2d8c2ae91f271ff104942e7858163.png)
 
@@ -198,9 +201,9 @@
 
 ![](img/40aabe452911a60be7b45476d546048b.png)
 
-## **3.6 实验**
+### 3.6 实验
 
-### **3.6.1 不同目标函数的对比**
+#### 3.6.1 不同目标函数的对比
 
 ![](img/7904672f63e9efca079a6df0f28c5da5.png)
 
@@ -208,7 +211,7 @@
 
 图12 不同目标函数的效果
 
-### 3.6.2 连续空间下与其他算法的对比
+#### 3.6.2 连续空间下与其他算法的对比
 
 ![](img/e4675cea92d184798ecf8b457ddcf42d.png)
 
@@ -216,7 +219,7 @@
 
 图13 连续空间下算法效果对比
 
-### **3.6.3 连续空间下示例**
+#### 3.6.3 连续空间下示例
 
 ![](img/63506ee1f029c9abe0cadd23b8050b53.png)
 
@@ -230,7 +233,7 @@
 
 上图中为12帧静态图像，在第7帧时目标的位置发生了变化，机器人也随之朝向新的目标。
 
-### 3.6.4 雅达利(游戏)中与其他算法的对比
+#### 3.6.4 雅达利(游戏)中与其他算法的对比
 
 作者在雅达利发行的49款游戏上测试了PPO以及其他算法的效果，如下表所示：
 
@@ -238,17 +241,17 @@
 
 图16 雅达利游戏中效果
 
-# **3.7 论文总结**
+### 3.7 论文总结
 
 ![](img/e2b5e2b7a5607c8c55bc3bdbaba3d11a.png)
 
-# **4 总结与思考**
+## 4 总结与思考
 
 PPO 算法自 2017 年提出后，以其实现相对简单、效果优良的特点，在 OpenAI 强化学习相关工作中出现频率极高，在游戏、机器人控制等实际应用领域成功证明其性能，截至目前仍然是基于策略的强化学习算法中最前沿的算法，即使 OpenAI 已经解散其机器人研究组，PPO 算法却又意外的在 NLP 领域大放异彩，其与 GPT-3 的结合成功产生了让人惊艳无比的 ChatGPT，笔者不禁思考，这种 RLHF（Reinforcement Learning Human Feedback）范式下究竟是什么让 ChatGPT 如此强大，是作为 Human Feedback 的高质量语料，还是 PPO 算法中蕴含的策略，还是 GPT-3 中未充分挖掘的大模型潜力？
 
 目前高质量数据逐渐成为商业公司的专属，国内大模型的研发也落后于美国，模型提出后缺乏后续维护，没有长期坚持下去形成自己的技术路线，不注重研究的 diversity。 而国外部分顶尖研究组已经与 OpenAI 等大公司形成紧密的联系，在相关研究上有着很大的优势，ChatGPT 的出现已经对很多 NLP 研究领域造成了巨大的冲击，面对美国在大模型上的封锁，我国缺乏由商业公司主导的大模型，国内研究组只能另辟蹊径，但大模型的出现到产生 ChatGPT 一般的成果需要漫长的技术积累，若不立刻行动起来，我国与美国在大模型上的差距恐怕会越拉越大。
 
-# **参考文献**
+## 参考文献
 
 [1] Barret Zoph, Vijay Vasudevan, Jonathon Shlens, and Quoc V. Le. Learning transferable architectures for scalable image recognition. CoRR, abs/1707.07012, 2017.
 
@@ -264,6 +267,8 @@ PPO 算法自 2017 年提出后，以其实现相对简单、效果优良的特�
 
 [7] David Silver. Lectures on reinforcement learning.URL: https://www.davidsilver. uk/teaching/ , 2015.
 
+
+
 [8] Sergey Levine, Aviral Kumar, George Tucker, and Justin Fu. Offline reinforcement learn ing: Tutorial, review, and perspectives on open problems. CoRR,abs/2005.01643, 2020.
 
 [9] OpenAI. Openai implement code. Web Page, 2018. Last Accessed December 23, 2022.
@@ -274,7 +279,7 @@ PPO 算法自 2017 年提出后，以其实现相对简单、效果优良的特�
 
 [12] S. Kakade and J. Langford, Approximately Optimal Approximate Reinforcement Learning. Proceedings of the Nineteenth International Conference on Machine Learning: , 2002.
 
-# **作者简介**
+# 作者简介
 
 陈一帆, 就读于哈尔滨工业大学社会计算与信息检索研究中心，对话技术（DT）组，大四本科生，师从张伟男教授。研究方向为对话式推荐系统。
 

@@ -1,12 +1,11 @@
+
 # Sora 2 Explained for AI Beginners: How to Generate Your First Video
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/FyCUdY2QporfddxfnsicoZ4dnlQ](https://gotoaiworld.feishu.cn/docx/FyCUdY2QporfddxfnsicoZ4dnlQ)
 
-# Sora 2 Explained for AI Beginners: How to Generate Your First Video
-
 https://skywork.ai/blog/sora-2-beginner-guide-how-to-generate-your-first-ai-video/
 
-By [Andy ](https://skywork.ai/blog/author/admin/)/ October 1, 2025
+By [Andy](https://skywork.ai/blog/author/admin/) / October 1, 2025
 
 If you’ve never made an AI-generated video before, you’re in the perfect place. This guide walks you through Sora 2 in plain language, then helps you create a safe, simple first clip step by step. You don’t need special skills—just a clear prompt and a few minutes of patience.
 
@@ -18,7 +17,7 @@ Why it matters for beginners: you can turn a simple idea—like “a sunflower s
 
 ## Access and availability
 
-At the time of writing (2025), the Sora app is rolling out gradually. The iOS app starts invite-onl[**y in select regions, **](https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model/)with broader access planned. OpenAI’s Help Center explains the onboarding and eligibility flow in Getting started with the Sora app (2025). For context on the launch and rollout, see TechCrunch’s coverage of the Sora app and Sora 2 model (2025).
+At the time of writing (2025), the Sora app is rolling out gradually. The iOS app starts [invite-only in select regions](https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model/), with broader access planned. OpenAI’s Help Center explains the onboarding and eligibility flow in Getting started with the Sora app (2025). For context on the launch and rollout, see TechCrunch’s coverage of the Sora app and Sora 2 model (2025).
 
 You may also see web access available (e.g., sora.com) with deeper controls as OpenAI expands features. If you don’t have an invite yet, don’t worry—learning the basics now means you’ll be ready when access opens up.
 
@@ -27,9 +26,7 @@ You may also see web access available (e.g., sora.com) with deeper controls as O
 Sora has guardrails to prevent misuse, especially around real-person likeness and misleading content. OpenAI outlines the approach in Launching Sora responsibly (2025), and keeps policies updated in “Creating images and videos in line with our policies.” In short:
 
 +   Avoid using real people’s images or public figures unless you have explicit consent and the platform supports it.
-
 +   Prefer fictional characters or generic subjects for your first clips.
-
 +   Expect visible provenance (like watermarks or metadata) in generated outputs.
 
 Sticking to simple, fictional scenarios makes learning smoother and keeps you within policy.
@@ -43,28 +40,21 @@ OpenAI demonstrated Sora generating clips “up to about a minute” during earl
 A clear prompt is your secret weapon. Use this fill-in-the-blank pattern:
 
 +   Subject: Who or what? (e.g., “a single sunflower”)
-
 +   Setting: Where and when? (e.g., “a breezy field at sunset”)
-
 +   Action: What happens? (e.g., “swaying gently in the wind”)
-
 +   Style: Visual feel (e.g., “photorealistic” or “hand-drawn animation”)
-
 +   Camera: Framing and movement (e.g., “wide shot, slow pan left”)
-
 +   Constraints: Duration, mood, pacing, and sound (e.g., “15 seconds, calm ambience”)
 
 Three starter prompts you can copy and tweak:
 
-1.  “A red toy car driving slowly along a wooden tabletop in warm afternoon light. Cinematic style. Macro close-up, shallow depth of field, gentle camera dolly. 12 seconds, calm ambient audio.”
-
-1.  “A single sunflower swaying in a breezy field at sunset. Photorealistic style. Wide shot, slow pan left. 15 seconds, soft wind ambience.”
-
-1.  “A friendly robot waving to the camera in a cozy studio. Animation style. Medium shot, static camera. 10 seconds, cheerful synth chime.”
+1. “A red toy car driving slowly along a wooden tabletop in warm afternoon light. Cinematic style. Macro close-up, shallow depth of field, gentle camera dolly. 12 seconds, calm ambient audio.”
+2. “A single sunflower swaying in a breezy field at sunset. Photorealistic style. Wide shot, slow pan left. 15 seconds, soft wind ambience.”
+3. “A friendly robot waving to the camera in a cozy studio. Animation style. Medium shot, static camera. 10 seconds, cheerful synth chime.”
 
 ### A quick, neutral planning assist (optional)
 
-You can brainstorm prompt ideas and structure a sho[**rt storybo**](https://skywork.ai/)ard before generating. One way to do that is with Skywork AI to outline Subject, Setting, Action, and Camera beats in a few bullet points, then paste a refined prompt into Sora. Disclosure: Skywork AI is our product. Keep this step simple—use it to clarify your idea, not to overcomplicate the scene. Aim for one subject, one action, and one camera movement for your very first clip.
+You can brainstorm prompt ideas and structure a [short storyboard](https://skywork.ai/) before generating. One way to do that is with Skywork AI to outline Subject, Setting, Action, and Camera beats in a few bullet points, then paste a refined prompt into Sora. Disclosure: Skywork AI is our product. Keep this step simple—use it to clarify your idea, not to overcomplicate the scene. Aim for one subject, one action, and one camera movement for your very first clip.
 
 If you want more help planning scenes and beats, you can skim the Skywork Slides Agent guide for beginner-friendly ideas on structuring visuals and narration in a multimodal workflow.
 
@@ -72,66 +62,51 @@ If you want more help planning scenes and beats, you can skim the Skywork Slides
 
 Don’t worry if the interface looks new. Here’s a plain-English walkthrough based on OpenAI’s guidance:
 
-1.  Sign in and start a creation.
+1. Sign in and start a creation.
 
-+   App: After onboarding, look for the prominent Create/“+” button.
+   +   App: After onboarding, look for the prominent Create/“+” button.
+   +   Web (when available): Go to Sora, choose “Create,” then select Video.
+   +   For onboarding details, see OpenAI Help’s Getting started with the Sora app (2025).
 
-+   Web (when available): Go to Sora, choose “Create,” then select Video.
+2. Paste your prompt using the template.
 
-+   For onboarding details, see OpenAI Help’s Getting started with the Sora app (2025).
+   +   Keep it short and specific. Start with 10–15 seconds.
+   +   Avoid real-person likeness and sensitive topics.
 
-1.  Paste your prompt using the template.
+3. Generate and preview.
 
-+   Keep it short and specific. Start with 10–15 seconds.
+   +   The first render may take a moment. Watch the whole clip.
+   +   Note what works (lighting, motion) and what doesn’t (odd physics, camera drift).
 
-+   Avoid real-person likeness and sensitive topics.
+4. Refine.
 
-1.  Generate and preview.
+   +   If the scene feels chaotic, simplify: one subject, one action.
+   +   If the camera is random, specify it: “static tripod” or “slow pan left.”
+   +   If pacing is off, add: “calm, slow pacing.”
 
-+   The first render may take a moment. Watch the whole clip.
+5. Regenerate and compare.
 
-+   Note what works (lighting, motion) and what doesn’t (odd physics, camera drift).
+   +   Small prompt edits often produce big improvements.
+   +   Keep iterations short; don’t pile on new elements too quickly.
 
-1.  Refine.
+6. Export or share.
 
-+   If the scene feels chaotic, simplify: one subject, one action.
-
-+   If the camera is random, specify it: “static tripod” or “slow pan left.”
-
-+   If pacing is off, add: “calm, slow pacing.”
-
-1.  Regenerate and compare.
-
-+   Small prompt edits often produce big improvements.
-
-+   Keep iterations short; don’t pile on new elements too quickly.
-
-1.  Export or share.
-
-+   Use the app/web download or share options.
-
-+   Remember: respect platform policies and clearly label AI-generated content when required.
+   +   Use the app/web download or share options.
+   +   Remember: respect platform policies and clearly label AI-generated content when required.
 
 ## Common beginner mistakes (and easy fixes)
 
 +   Ambiguous description → Fix with the template. Name the subject, setting, action, style, camera, and constraints explicitly.
-
 +   Overstuffed scenes → Start simple: one character, one setting, one motion.
-
 +   Ignoring camera → Add a camera directive (“wide shot, slow pan left”) to stabilize composition.
-
 +   Policy flags → Remove real-person likeness and sensitive scenarios. See OpenAI’s responsible launch notes (2025) for context.
-
 +   Expecting perfect physics → Sora 2 is improved, but complex scenes can still drift. Ground your idea in everyday motion and iterate.
 
 ## Troubleshooting: quick, practical moves
 
 +   Slow or stuck generation → Clear browser cache/cookies and retry. OpenAI documents this in Generating videos on Sora (2025).
-
 +   “Output doesn’t match intent” → Tighten your language. Reduce to core elements and add camera/mood constraints.
-
 +   “Blocked content” → Rephrase with fictional subjects; avoid real-person likeness. Policy guardrails apply.
-
 +   “Quality swings between attempts” → Keep duration short, specify lighting and pacing, and iterate gradually.
 
 ## Practice prompts to build confidence
@@ -139,10 +114,10 @@ Don’t worry if the interface looks new. Here’s a plain-English walkthrough b
 Try these, then make one small change each time (camera, style, or mood):
 
 +   “A paper sailboat floating on a puddle after rain. Photorealistic style. Macro close-up, static camera. 10 seconds, soft water drip ambience.”
-
 +   “A cozy coffee mug steaming on a wooden desk. Cinematic style. Medium shot, slow push-in. 12 seconds, gentle lo-fi hum.”
-
 +   “A cartoon cat blinking sleepily on a windowsill. Animation style. Wide shot, static camera. 10 seconds, quiet morning birds.”
+
+
 
 ## Where to go next
 

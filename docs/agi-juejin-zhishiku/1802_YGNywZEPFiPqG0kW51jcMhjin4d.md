@@ -1,3 +1,4 @@
+
 # 10分钟完成🛰️红包封面——AI绘画制作攻略
 
 > 来源：[https://agijuejin.feishu.cn/docx/EmG9dgZNUo3dXix35NFcUlwondb](https://agijuejin.feishu.cn/docx/EmG9dgZNUo3dXix35NFcUlwondb)
@@ -10,7 +11,7 @@
 
 做好的红包封面还可以发到淘宝售卖赚钱，你想知道怎么操作吗？
 
-**只需要跟着我的文章教程就可以做到！我将详**细教学怎么无门槛制作富有个性的红包封面。
+**只需要跟着我的文章教程就可以做到！我将详细教学怎么无门槛制作富有个性的红包封面。**
 
 ![](img/9425529e4d7c904e8ec851922065f791.png)
 
@@ -58,8 +59,6 @@
 origami,摄影照片,景深,宋徽宗,祥云纹路背景,一条线稿龙头，正面，对称沟通，fire,colorful glasses,glass,炫彩光影,Macro,photography，透明玻璃材质，团圆年，年夜饭，中国龙，新年，红色，汉服，灯笼，烟花，超现实主义，流动的光，32K，高质量，宏大的场面，磅礴大气，电影感，超神秘，炫彩光影，岩彩板绘，陈家泠，赵无极,电影大片，玻璃材料,质感增强,生物发光,炫彩光影，
 ```
 
-![](img/b4766b14178351cbd6d79af6a67d2cc3.png)
-
 从众多咒语中尝试调整到自己觉得合适的图片后，下载到本地备用。
 
 如[果想要自](https://www.zhihu.com/search?q=%E7%9F%A5%E5%AD%A6%E5%A0%82&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A681295217%7D)己琢磨，做出更加优质的红包封面图像的话，我推荐小伙伴们能够花一些精力和时间，先去学习一门非常实用的体验课程——知乎 知学堂 的「AI绘画设计师实战营」，你只需要0.1元可以了解AI绘画的基础。
@@ -72,7 +71,7 @@ AI绘画实战营｜送工具教程+提示词库+变现渠道
 
 ￥0.10 立即参加
 
-**在完整上完体验课后，你将获得「Stable Diffusion软件+安装教程」、「Mi**djourney常用咒语合集」等丰富的福利资料。记得在听完课后找助教老师领取哦！
+**在完整上完体验课后，你将获得「Stable Diffusion软件+安装教程」、「Midjourney常用咒语合集」等丰富的福利资料。记得在听完课后找助教老师领取哦！**
 
 ## 三、操作指南
 

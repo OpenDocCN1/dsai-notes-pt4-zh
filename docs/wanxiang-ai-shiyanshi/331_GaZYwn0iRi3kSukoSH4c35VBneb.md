@@ -1,52 +1,53 @@
+
 # 详解文心大模型 4.5 开源系列【含测试案例】
 
-> 来源：[https://yunyinghui.feishu.cn/docx/CKAgdet4dor84DxrSQ4crktdnoV](https://yunyinghui.feishu.cn/docx/CKAgdet4dor84DxrSQ4crktdnoV)
+> 来源：`https://yunyinghui.feishu.cn/docx/CKAgdet4dor84DxrSQ4crktdnoV`
 
 ---
 
-# 文心 4.5 介绍
+## 文心 4.5 介绍
 
-## 🧠 模型介绍
+### 🧠 模型介绍
 
-**文心大模型 4.5 **是百度自主研发的新一代原生多模态基础大模型，通过多个模态联合建模实现协同优化，多模态理解能力优秀；具备更精进的语言能力，理解、生成、逻辑、记忆能力全面提升，去幻觉、逻辑推理、代码能力显著提升。其关键技术包含：FlashMask 动态注意力掩码；多模态异构专家扩展技术；时空维度表征压缩技术；基于知识点的大规模数据构建技术；基于自反馈的 Post-training 技术。
+文心大模型 4.5 是百度自主研发的新一代原生多模态基础大模型，通过多个模态联合建模实现协同优化，多模态理解能力优秀；具备更精进的语言能力，理解、生成、逻辑、记忆能力全面提升，去幻觉、逻辑推理、代码能力显著提升。其关键技术包含：`FlashMask` 动态注意力掩码；多模态异构专家扩展技术；时空维度表征压缩技术；基于知识点的大规模数据构建技术；基于自反馈的 `Post-training` 技术。
 
-6 月 30 日，百度正式开源文心大模型 4.5 系列模型，涵盖 47B、3B 激活参数的混合专家（MoE）模型，与 0.3B 参数的稠密型模型等 10 款模型，并实现预训练权重和推理代码的完全开源。目前，文心大模型 4.5 开源系列已可在飞桨星河社区、HuggingFace 等平台下载部署使用，同时开源模型 API 服务也可在百度智能云千帆大模型平台使用。
+6 月 30 日，百度正式开源文心大模型 4.5 系列模型，涵盖 47B、3B 激活参数的混合专家（`MoE`）模型，与 0.3B 参数的稠密型模型等 10 款模型，并实现预训练权重和推理代码的完全开源。目前，文心大模型 4.5 开源系列已可在飞桨星河社区、`HuggingFace` 等平台下载部署使用，同时开源模型 `API` 服务也可在百度智能云千帆大模型平台使用。
 
-## 🙋 开源模型版本
+### 🙋 开源模型版本
 
-文心 4.5 系列开源模型共 10 款，涵盖了激活参数规模分别为 47B 和 3B 的混合专家（MoE）模型（最大的模型总参数量为 424B），以及 0.3B 的稠密参数模型。
+文心 4.5 系列开源模型共 10 款，涵盖了激活参数规模分别为 47B 和 3B 的混合专家（`MoE`）模型（最大的模型总参数量为 424B），以及 0.3B 的稠密参数模型。
 
-## **✨ 技术亮点**
+### ✨ 技术亮点
 
-+   **多模态混合专家模型预训练：**
++ **多模态混合专家模型预训练：**
 
 文心 4.5 通过在文本和视觉两种模态上进行联合训练，更好地捕捉多模态信息中的细微差别，提升在文本生成、图像理解以及多模态推理等任务中的表现。为了让两种模态学习时互相提升，百度提出了一种多模态异构混合专家模型结构，结合了多维旋转位置编码，并且在损失函数计算时，增强了不同专家间的正交性，同时对不同模态间的词元进行平衡优化，达到多模态相互促进提升的目的。
 
-+   **高效训练推理框架：**
++ **高效训练推理框架：**
 
-为了支持文心 4.5 模型的高效训练，提出了异构混合并行和多层级负载均衡策略。通过节点内专家并行、显存友好的流水线调度、FP8 混合精度训练和细粒度重计算等多项技术，显著提升了预训练吞吐。推理方面，百度提出了多专家并行协同量化方法和卷积编码量化算法，实现了效果接近无损的 4-bit 量化和 2-bit 量化。此外，百度还实现了动态角色转换的预填充、解码分离部署技术，可以更充分地利用资源，提升文心 4.5 MoE 模型的推理性能。基于飞桨框架，文心 4.5 在多种硬件平台均表现出优异的推理性能。
+为了支持文心 4.5 模型的高效训练，提出了异构混合并行和多层级负载均衡策略。通过节点内专家并行、显存友好的流水线调度、`FP8` 混合精度训练和细粒度重计算等多项技术，显著提升了预训练吞吐。推理方面，百度提出了多专家并行协同量化方法和卷积编码量化算法，实现了效果接近无损的 `4-bit` 量化和 `2-bit` 量化。此外，百度还实现了动态角色转换的预填充、解码分离部署技术，可以更充分地利用资源，提升文心 4.5 `MoE` 模型的推理性能。基于飞桨框架，文心 4.5 在多种硬件平台均表现出优异的推理性能。
 
-+   **针对模态的后训练：**
++ **针对模态的后训练：**
 
-为了满足实际场景的不同要求，百度对预训练模型进行了针对模态的精调。其中，大语言模型针对通用语言理解和生成进行了优化，多模态大模型侧重于视觉语言理解，支持思考和非思考模式。每个模型采用了 SFT、DPO 或 UPO（Unified Preference Optimization，统一偏好优化技术）的多阶段后训练。
+为了满足实际场景的不同要求，百度对预训练模型进行了针对模态的精调。其中，大语言模型针对通用语言理解和生成进行了优化，多模态大模型侧重于视觉语言理解，支持思考和非思考模式。每个模型采用了 `SFT`、`DPO` 或 `UPO`（Unified Preference Optimization，统一偏好优化技术）的多阶段后训练。
 
-## **🥳 使****用入口**
+### 🥳 使用入口
 
-文心 4.**5 系列开源模型的一站式**使用指南，详情请看文心大模型技术 Blog：https://yiyan.baidu.com/blog/posts/ernie4.5
+文心 4.5 系列开源模型的一站式使用指南，详情请看文心大模型技术 Blog：`https://yiyan.baidu.com/blog/posts/ernie4.5`
 
-**模型地址：**在 HuggingFace、Gi**thub、飞桨星河**社区、魔搭社区上搜索：ERNIE-4.5。
+**模型地址：**在 `HuggingFace`、`Github`、`飞桨星河`社区、魔搭社区上搜索：`ERNIE-4.5`。
 
-HuggingFace: https://huggingface.co/baidu
+`HuggingFace`: `https://huggingface.co/baidu`
 
-Github: https://github.com/PaddlePaddle/ERNIE
+`Github`: `https://github.com/PaddlePaddle/ERNIE`
 
-飞桨星河社区：https://aistudio.baidu.com/overview
+飞桨星河社区：`https://aistudio.baidu.com/overview`
 
-# **文心 4.5 的操作手册**
+## 文心 4.5 的操作手册
 
-## **🌟初级教程：10min 快速上手！从 **0 到 1 搭建属于你的 AI 智能体
+### 🌟 初级教程：10min 快速上手！从 0 到 1 搭建属于你的 AI 智能体
 
-智能体（Agent）是模型动态指导自身流程和工具使用的系统，它们能够自主控制如何完成任务。
+智能体（`Agent`）是模型动态指导自身流程和工具使用的系统，它们能够自主控制如何完成任务。
 
 自主性：无需持续的人类干预或指导
 
@@ -66,17 +67,17 @@ Github: https://github.com/PaddlePaddle/ERNIE
 
 [从 0 到 1 搭建属于你的 AI 智能体.pptx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PIstbotPPo7ZBSx3uipcHiK7nCg)
 
-## **🧗进阶教程：使用 ERNIE-4.5-0.3B**-Paddle 从原始文本构建知识图谱
+### 🧗 进阶教程：使用 `ERNIE-4.5-0.3B-Paddle` 从原始文本构建知识图谱
 
-本教程将分享如何使用 ERNIE-4.5-0.3B-Paddle 模型从原始文本构建知识图谱。通过结合大语言模型（LLM）和检索增强生成（RAG）技术实现文本生成，帮助我们从非结构化数据中高效提取实体和关系信息。
+本教程将分享如何使用 `ERNIE-4.5-0.3B-Paddle` 模型从原始文本构建知识图谱。通过结合大语言模型（`LLM`）和检索增强生成（`RAG`）技术实现文本生成，帮助我们从非结构化数据中高效提取实体和关系信息。
 
-详情请见：[【新手入门】使用 ERNIE-4.5-0.3](https://aistudio.baidu.com/projectdetail/9345586?channelType=0&channel=0)B-Paddle 从原始文本构建知识图谱
+详情请见：[【新手入门】使用 `ERNIE-4.5-0.3B-Paddle` 从原始文本构建知识图谱](https://aistudio.baidu.com/projectdetail/9345586?channelType=0&channel=0)
 
-# 测试案例（欢迎补充）
+## 测试案例（欢迎补充）
 
-### 🤖Agent Demo 演示： 教练技术导师
+### 🤖 Agent Demo 演示：教练技术导师
 
-体验地址：https://appbuilder.baidu.com/s/ILFU81d0
+体验地址：`https://appbuilder.baidu.com/s/ILFU81d0`
 
 ### 🤖 Agent Demo 演示：从“死板机器人”到“贴心管家”
 
@@ -88,7 +89,7 @@ Github: https://github.com/PaddlePaddle/ERNIE
 
 ### 🤖 Agent Demo 演示：罗永浩的十字路口（cospaly）
 
-体验地址：https://appbuilder.baidu.com/s/q3zZ9lxG
+体验地址：`https://appbuilder.baidu.com/s/q3zZ9lxG`
 
 说明：假设，我是企业家，罗永浩在他的播客节目上采访我
 
@@ -96,13 +97,13 @@ Github: https://github.com/PaddlePaddle/ERNIE
 
 ### 🤖 Agent Demo 演示：旅游攻略小助手
 
-体验地址：https://appbuilder.baidu.com/s/u4A5i6I3
+体验地址：`https://appbuilder.baidu.com/s/u4A5i6I3`
 
 ![](img/cfe7fd582a18313204eaa43b52e5a32b.png)
 
 ### 🤖 Agent Demo 演示：奥秘牌境
 
-**体验地址：**https://appbuilder.baidu.com/s/zFQJZf8x
+**体验地址：**`https://appbuilder.baidu.com/s/zFQJZf8x`
 
 **Agent 说明：**结合玄学，每日抽取命运之牌，从扑克牌中去解读命运、用户的困境、等各种因素，也可以进行长对话，直到解答为止
 
@@ -114,13 +115,13 @@ Github: https://github.com/PaddlePaddle/ERNIE
 
 ![](img/7fe6b2da56978dc62494e8a71d2ed0a7.png)
 
-想要解决的需求与痛点 （Needs & Pain Points）
+#### 想要解决的需求与痛点（Needs & Pain Points）
 
 每日指引与反思需求： 为用户提供一个轻量级、富有仪式感的每日切入点，促进其对当天运势、心态和可能面临的挑战进行主动思考与觉察。
 
 情感共鸣与疏导需求： 用户在现实生活中（或牌局中）遭遇的挫折（“Bad Beat”）、焦虑、犹豫或兴奋，需要有一个超越简单安慰的、富有哲理的“伙伴”进行共情和引导，将负面情绪转化为成长的养分。
 
-策略思维提升需求： 对于扑克爱好者或对策略决策感兴趣的用户，提供一个将抽象策略概念（如 EV、位置、范围）转化为易于理解的“魔法咒语”的渠道，在趣味中学习与精进。
+策略思维提升需求： 对于扑克爱好者或对策略决策感兴趣的用户，提供一个将抽象策略概念（如 `EV`、位置、范围）转化为易于理解的“魔法咒语”的渠道，在趣味中学习与精进。
 
 深度对话与探索需求： 区别于一次性的问答，提供一种持续对话的体验。灵偶的回答不是终点，而是开启更深入探讨的起点，真正实现“直到解答为止”的陪伴感。
 
@@ -132,9 +133,9 @@ Github: https://github.com/PaddlePaddle/ERNIE
 
 ### 🤖 Agent Demo 演示：推理 UI 设计提示词
 
-体验地址：https://appbuilder.baidu.com/s/bQPqL4NJ
+体验地址：`https://appbuilder.baidu.com/s/bQPqL4NJ`
 
-**Agent 说明：推理 UI 设计提示词助您快速生成创意界面设计建议，提升设计效率，轻松打**造用户友好且美观的应用界面。输入生成 UI 样式+主题+图片（链接或文件）试试，
+**Agent 说明：**推理 UI 设计提示词助您快速生成创意界面设计建议，提升设计效率，轻松打造用户友好且美观的应用界面。输入生成 UI 样式+主题+图片（链接或文件）试试，
 
 **灵感来源：** 产品设计流程 线稿+需求 > UI > HTML， 在这里你可以改变为 参考的 UI+ 主要需求> HTML
 
@@ -146,15 +147,15 @@ Github: https://github.com/PaddlePaddle/ERNIE
 
 例如豆包
 
-https://www.doubao.com/thread/w78eaa3c87e808dcf
+`https://www.doubao.com/thread/w78eaa3c87e808dcf`
 
-https://www.doubao.com/share/code/d7f4d57b2a1dd634
+`https://www.doubao.com/share/code/d7f4d57b2a1dd634`
 
-🤖 Agent Demo 演示：个性化错题练习
+### 🤖 Agent Demo 演示：个性化错题练习
 
-体验地址：https://appbuilder.**baidu.com/s/FAytmRDL
+体验地址：`https://appbuilder.baidu.com/s/FAytmRDL`
 
-Agent 说明**：基于同学们的整个学期的成绩和错题情况，针对性给出学期总结，并给出个性化练习设计。
+**Agent 说明：**基于同学们的整个学期的成绩和错题情况，针对性给出学期总结，并给出个性化练习设计。
 
 **灵感来源：** 针对学生个人的个性化教学
 

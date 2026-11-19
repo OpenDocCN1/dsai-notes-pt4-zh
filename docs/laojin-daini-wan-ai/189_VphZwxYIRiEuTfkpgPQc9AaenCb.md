@@ -1,3 +1,4 @@
+
 # 为什么你跟AI说话它总是听不懂？12000星项目揭秘答案
 
 > 来源：[https://my.feishu.cn/docx/PUPvdeeAzo1yhxx9aVOcvoc4nGe](https://my.feishu.cn/docx/PUPvdeeAzo1yhxx9aVOcvoc4nGe)
@@ -16,31 +17,31 @@
 
 昨儿刷GitHub，老金我发现一个神奇的现象：
 
-一个叫context-engineering-intro的仓库，半年时间冲到了12000星。
+一个叫`context-engineering-intro`的仓库，半年时间冲到了12000星。
 
 作者是Cole Medin，生成式AI领域的老炮儿。
 
-他在README里写了一句话，直接把老金我看愣了：
+他在`README`里写了一句话，直接把老金我看愣了：
 
-**"C**ontext Engineering is 10x better than prompt engineering and 100x better than vibe coding."
+`Context Engineering is 10x better than prompt engineering and 100x better than vibe coding.`
 
-翻译：上下文工程比提示词工程强10倍，比Vibe Coding强100倍。
+翻译：上下文工程比提示词工程强10倍，比`Vibe Coding`强100倍。
 
 卧槽，这口气够大的。
 
 但MIT Technology Review都专门写了篇文章报道这个趋势。
 
-## 先科普一下：什么是Vibe Coding？
+## 先科普一下：什么是`Vibe Coding`？
 
 2025年2月，Andrej Karpathy（OpenAI联合创始人、特斯拉前AI总监）发了条推，提出了一个概念：
 
-**Vibe Coding**（氛围编程）。
+`Vibe Coding`（氛围编程）。
 
 什么意思？
 
 就是用自然语言描述需求，让AI帮你写代码。
 
-比如你跟Claude说："帮我做一个追踪每日习惯的网页应用，要有趣味性，像游戏一样。"
+比如你跟`Claude`说："帮我做一个追踪每日习惯的网页应用，要有趣味性，像游戏一样。"
 
 然后AI就帮你把代码全写出来了。
 
@@ -84,11 +85,11 @@ Cole Medin在项目里说了一句话，老金我觉得特别到位：
 
 它又不是你肚子里的蛔虫。
 
-这就是Vibe Coding的致命缺陷：说得太随意，AI只能猜。
+这就是`Vibe Coding`的致命缺陷：说得太随意，AI只能猜。
 
 ## 上下文工程是什么？
 
-Cole Medin提出的解决方案叫Context Engineering（上下文工程）。
+Cole Medin提出的解决方案叫`Context Engineering`（上下文工程）。
 
 核心理念：
 
@@ -96,7 +97,7 @@ Cole Medin提出的解决方案叫Context Engineering（上下文工程）。
 
 什么意思？
 
-**提示词工程**（Prompt Engineering）：
+**提示词工程**（`Prompt Engineering`）：
 
 1、想办法把话说得更巧妙
 
@@ -104,7 +105,7 @@ Cole Medin提出的解决方案叫Context Engineering（上下文工程）。
 
 3、"帮我写个登录功能，要安全一点"
 
-**上下文工程**（Context Engineering）：
+**上下文工程**（`Context Engineering`）：
 
 1、给AI提供完整的上下文系统
 
@@ -112,7 +113,7 @@ Cole Medin提出的解决方案叫Context Engineering（上下文工程）。
 
 3、类似给AI一部完整的剧本，角色、台词、场景、道具全都有
 
-**一句话总结**：Vibe Coding靠感觉，上下文工程靠系统。
+**一句话总结**：`Vibe Coding`靠感觉，上下文工程靠系统。
 
 ## Cole Medin的方法论：三份说明书
 
@@ -142,7 +143,7 @@ Cole Medin提出的解决方案叫Context Engineering（上下文工程）。
 
 **就这么简单**：根目录放两个md文件，建两个文件夹。5分钟搞定。
 
-### 说明书1：项目规矩本（CLAUDE.md）
+### 说明书1：项目规矩本（`CLAUDE.md`）
 
 这是一个放在项目里的文本文件，告诉AI：
 
@@ -152,7 +153,7 @@ Cole Medin提出的解决方案叫Context Engineering（上下文工程）。
 
 1、代码要简洁，一个文件不能超过300行
 
-2、变量命名用小写加下划线，比如 user_name
+2、变量命名用小写加下划线，比如 `user_name`
 
 3、每个功能都要写测试
 
@@ -162,7 +163,7 @@ AI每次干活之前都会先看这份"规矩本"，就不会乱来了。
 
 **类比**：就像新员工入职，先给一本《员工手册》，告诉他公司规矩。
 
-### 说明书2：需求详情单（INITIAL.md）
+### 说明书2：需求详情单（`INITIAL.md`）
 
 这是你告诉AI"我想要什么"的文件。
 
@@ -190,11 +191,11 @@ AI每次干活之前都会先看这份"规矩本"，就不会乱来了。
 
 **类比**：就像跟装修师傅交底，不是说"帮我装修一下"，而是给图纸、给参考照片、告诉他你的预算和特殊要求。
 
-### 说明书3：执行清单（PRP）
+### 说明书3：执行清单（`PRP`）
 
-PRP就是"产品需求提示词"。
+`PRP`就是"产品需求提示词"。
 
-**它是根据前两**份说明书，自动生成的一份详细执行计划。
+**它是根据前两份说明书，自动生成的一份详细执行计划。**
 
 包括：
 
@@ -210,7 +211,7 @@ PRP就是"产品需求提示词"。
 
 ## 为什么这玩意儿有效？
 
-老金我测试了一周，发现上下文工程确实比Vibe Coding靠谱多了。
+老金我测试了一周，发现上下文工程确实比`Vibe Coding`靠谱多了。
 
 **原因1：消除猜测**
 
@@ -226,11 +227,11 @@ AI只需要照着做就行。
 
 **原因2：自我修正**
 
-PRP里有验证环节。
+`PRP`里有验证环节。
 
 AI写完代码会自己跑测试，有问题自己修。
 
-不像Vibe Coding，写完就完了，错了还得你来改。
+不像`Vibe Coding`，写完就完了，错了还得你来改。
 
 **原因3：可复制**
 
@@ -242,7 +243,7 @@ AI写完代码会自己跑测试，有问题自己修。
 
 ### 测试场景：让AI帮我写一个数据分析功能
 
-Vibe Coding方式（随便说两句）
+`Vibe Coding`方式（随便说两句）
 
 我跟AI说："帮我做一个分析用户数据的功能"
 
@@ -264,7 +265,7 @@ Vibe Coding方式（随便说两句）
 
 2、在"需求详情单"里详细描述要做什么、有什么特殊情况
 
-3、在examples文件夹里放了几个我觉得写得好的代码文件，告诉AI"按这个风格来"
+3、在`examples`文件夹里放了几个我觉得写得好的代码文件，告诉AI"按这个风格来"
 
 4、让AI根据这些信息，自动生成一份详细的执行计划
 
@@ -296,41 +297,41 @@ Vibe Coding方式（随便说两句）
 
 就像给一个聪明人模糊的指令，不如给一个普通人详细的说明书。
 
-### 2. CLAUDE.md是基础
+### 2. `CLAUDE.md`是基础
 
-如果你还没有给项目写CLAUDE.md，赶紧写。
+如果你还没有给项目写`CLAUDE.md`，赶紧写。
 
 这个文件是上下文工程的地基。
 
-### 3. examples/文件夹很关键
+### 3. `examples/`文件夹很关键
 
 AI看示例比看文档学得快。
 
-在examples/放几个代码示例，告诉AI"按这个来"，效果比写一堆规则强。
+在`examples/`放几个代码示例，告诉AI"按这个来"，效果比写一堆规则强。
 
-### 4. 不要迷信Vibe Coding
+### 4. 不要迷信`Vibe Coding`
 
-Vibe Coding适合原型、简单脚本。
+`Vibe Coding`适合原型、简单脚本。
 
 但真正的生产级代码，需要上下文工程。
 
 **给你们的行动建议**：
 
-1、去GitHub搜context-engineering-intro，下载下来研究（这个项目12000多人收藏，质量有保证）
+1、去GitHub搜`context-engineering-intro`，下载下来研究（这个项目12000多人收藏，质量有保证）
 
-2、给你的项目写一个CLAUDE.md文件，把项目规矩写清楚
+2、给你的项目写一个`CLAUDE.md`文件，把项目规矩写清楚
 
-3、建一个examples文件夹，放上你认为写得好的代码当参考
+3、建一个`examples`文件夹，放上你认为写得好的代码当参考
 
 4、下次让AI写代码前，先问自己：我给的信息够不够详细？
 
 ## 老金说
 
-从Vibe Coding到上下文工程，老金我看到的是一个规律：
+从`Vibe Coding`到上下文工程，老金我看到的是一个规律：
 
 任何技术，从"随意玩玩"到"正经用"，都需要系统化。
 
-2025年年初，大家觉得Vibe Coding够酷了——随便说两句话，AI就把代码写出来。
+2025年年初，大家觉得`Vibe Coding`够酷了——随便说两句话，AI就把代码写出来。
 
 但用了半年发现，"随便说两句"经常翻车。
 
@@ -362,7 +363,7 @@ Vibe Coding适合原型、简单脚本。
 
 但一旦养成习惯，你会发现：AI真的能成为靠谱的搭档。
 
-老金我现在每次开新项目，第一件事就是写CLAUDE.md。
+老金我现在每次开新项目，第一件事就是写`CLAUDE.md`。
 
 不是为了显得专业，是真的省时间。
 
@@ -370,7 +371,7 @@ Vibe Coding适合原型、简单脚本。
 
 这笔账，划算。
 
-你们觉得呢？Vibe Coding和上下文工程，你更倾向哪个？
+你们觉得呢？`Vibe Coding`和上下文工程，你更倾向哪个？
 
 评论区聊聊！
 

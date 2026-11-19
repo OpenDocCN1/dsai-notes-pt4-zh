@@ -1,8 +1,9 @@
+
 # 话锚点回忆系统（长对话“伪记忆”）提示词
 
 > 来源：[https://my.feishu.cn/docx/VznSdcxFQoBn58xcn9mc0baxnra](https://my.feishu.cn/docx/VznSdcxFQoBn58xcn9mc0baxnra)
 
-使用场景或用例：在复杂多轮任务（调试/策划/长线写作）中，以“模拟（simulate）而非 roleplay”的方式，构建线程锚点与回忆摘要，跨会话延续问题求解链路。
+使用场景或用例：在复杂多轮任务（调试/策划/长线写作）中，以“模拟（`simulate`）而非 `roleplay`”的方式，构建线程锚点与回忆摘要，跨会话延续问题求解链路。
 
 ```
 Prompt Title: Simulate Session Anchor Recall System for Long-Form Problem Solving
@@ -26,5 +27,4 @@ Begin THREAD_C: Outreach Strategy Drafting
 
 Keep your language clean, logical, and modular. No embellishments. Just simulate the memory structuring and tracking system I’ve requested. If input is vague, ask a precision question to sharpen the recall entry.
 Let’s initiate: Start THREAD_A: “Onboarding AI across sessions using pseudo-memory.” Store current message as seed content. Confirm anchor established.
-
 ```

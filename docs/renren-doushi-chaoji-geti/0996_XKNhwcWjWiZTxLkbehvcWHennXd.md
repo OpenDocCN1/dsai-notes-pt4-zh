@@ -1,8 +1,9 @@
+
 # RPA+ChatGPT自动制作赚钱日/周报&个性化定制关键词推送发帖
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/LmIFdYsDko7xOCx4HPqcUkSenMg](https://xuqiwei1986.feishu.cn/docx/LmIFdYsDko7xOCx4HPqcUkSenMg)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/LmIFdYsDko7xOCx4HPqcUkSenMg`
 
-# 前言：赚钱所有与RPA相关帖子
+## 前言：赚钱所有与RPA相关帖子
 
 RPA是什么，这里就无需多言了，因为赚钱已经有非常多的相关普及贴，鱼丸还贴心除了RPA合集。
 
@@ -14,7 +15,7 @@ RPA是什么，这里就无需多言了，因为赚钱已经有非常多的相�
 
 我这里稍微整理了所有可以提供RPA功能的工具，国外的居多尤其是小众产品，这个本质上就是低代码自动化，说白了就是把英文的代码，转换成可以拖拽的功能框和中文语句。
 
-# 篇章壹：日报周报篇（龙哥盟搜索引擎）
+## 篇章壹：日报周报篇（龙哥盟搜索引擎）
 
 我做这个前后花了快十天时间，当然前期的工具测试花费时间居多，现在基本已经完全跑通自动化了。
 
@@ -28,7 +29,7 @@ RPA是什么，这里就无需多言了，因为赚钱已经有非常多的相�
 
 这其中我尝试了用Uibot（我最擅长却熟悉）和Automa（谷歌浏览器插件）
 
-结果效果并不理想，用是能用，但是Uibot耗时长达一个小时，虽然可以做到完全自动化（甚至我把ChatGPT的prompt都调试了几十遍得出最终版）;然后那个谷歌插件Automa太薄弱了，我代码弄得过多，导致插件非常卡顿，当然速度也算是比较快，就是最后还得加入人工去发给ChatGPT（因为浏览器插件不如桌面软件那样可以完全控制本地文件）
+结果效果并不理想，用是能用，但是Uibot耗时长达一个小时，虽然可以做到完全自动化（甚至我把ChatGPT的`prompt`都调试了几十遍得出最终版）；然后那个谷歌插件Automa太薄弱了，我代码弄得过多，导致插件非常卡顿，当然速度也算是比较快，就是最后还得加入人工去发给ChatGPT（因为浏览器插件不如桌面软件那样可以完全控制本地文件）
 
 仅仅是为了准确地获取每一个帖子的链接，我都花费了一整周的时间，因为知识星球和龙哥盟的网页版元素全部都做了反爬处理，我只能完全模拟人工去慢慢操作，于是RPA搞得又慢又卡（我总共弄了快两万行代码），而且还容易出错。（虽然最后文档版本的基本没问题了，但我感觉还是略有瑕疵。）
 
@@ -46,29 +47,27 @@ RPA是什么，这里就无需多言了，因为赚钱已经有非常多的相�
 
 ![](img/922d36e880165d87f429703ccb26bbbf.png)
 
-### O、极简使用教程 （UIBOT版本）
+### O、极简使用教程（UIBOT版本）
 
 此处仅公开Uibot和Automa这两个的流程压缩包和插件安装包，因为两者都可以用于非商业用途公开分享。
 
-(出于商业风险考虑，只展示影刀操作流程，暂不分享具体代码文件，关于影刀版本的成熟化解决方案，咱们可以私聊详细部署，看到的行内高手可能自己想就有方案了）
+（出于商业风险考虑，只展示影刀操作流程，暂不分享具体代码文件，关于影刀版本的成熟化解决方案，咱们可以私聊详细部署，看到的行内高手可能自己想就有方案了）
 
-###### A, 必备条件（WINDOWS系统）
+#### A、必备条件（WINDOWS系统）
 
-+   软件：Uibot（+插件），Excel/WPS，谷歌浏览器
++ 软件：Uibot（+插件），Excel/WPS，谷歌浏览器
 
-https://www.uibot.com.cn/
+`https://www.uibot.com.cn/`
 
-+   账户：Uibot, ChatGPT PLUS，🪜工具
++ 账户：Uibot, ChatGPT PLUS，🪜工具
 
-https://chat.openai.com/
+`https://chat.openai.com/`
 
-+   状态：已登录龙哥盟系统，已登录知识星球账户，已加入龙哥盟星球
++ 状态：已登录龙哥盟系统，已登录知识星球账户，已加入龙哥盟星球
 
-https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/1824528822
+`https://search01.shengcaiyoushu.com/`，`https://wx.zsxq.com/dweb2/index/group/1824528822`
 
-###### B, 使用指南
-
-+   注册账号，安装软件+插件，导入压缩包
+#### B、使用指南
 
 ![](img/35d069fb74634d4d51821ade83afa336.png)
 
@@ -80,15 +79,15 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 ![](img/25faaa584222a27d632939fb90c40280.png)
 
-[赚钱周报.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SorpbtKCaosMDixg8ADc8AFDnrd)
+`赚钱周报.zip` `https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SorpbtKCaosMDixg8ADc8AFDnrd`
 
-+   确认一下表格文件夹，点击运行即可（后面更新为文件地址，周报自动生成流程页需要新增个地址，这样就可以完全自动化，机器人自己把文件发给GPT再自动下载获取）
+确认一下表格文件夹，点击运行即可（后面更新为文件地址，周报自动生成流程页需要新增个地址，这样就可以完全自动化，机器人自己把文件发给GPT再自动下载获取）
 
 ![](img/1d7bb8fd266157712837a70b42f875cb.png)
 
 ![](img/98bb1009bc2c271981aaada87287489b.png)
 
-### 一，自动化步骤配置思路
+### 一、自动化步骤配置思路
 
 最简化是两个步骤，这是站在岸上看别人游泳时觉着的简单：不就两条腿往后蹬吗？
 
@@ -110,7 +109,7 @@ UIBOT因为缺乏影刀的相似元素循环获取，所以就导致代码比较
 
 当然也可能是我学艺不精，没徒手写自定义代码，或者说找到更高阶的用法，UIBOT我确实是花了三天部署，而影刀就只花了一天。（有效制作流程时间也就三个小时，剩下的就是调试，因为我写代码和流程总是考虑不周到，犯的很多错误就需要在测试中一点点纠正）。
 
-### 二，具体实操遇到各种问题
+### 二、具体实操遇到各种问题
 
 本来以为操作非常简单，因为逻辑就两个步骤：获取帖子信息+发给ChatGPT
 
@@ -126,29 +125,29 @@ RPA无法固定元素获取，我换了Automa浏览器自动化插件获取，�
 
 更新：所有问题已解决，只是代码比较多，最完美版本是VPS+RPA。我的方案是用腾讯云VPS，RPA机器人放在VPS里面，24H运行不用管，定制化发消息弄个单独🛰️即可。
 
-#### 甲，Uibot完成帖子信息抓取和交给CHAGPT判断整理出周报（耗时长1h+ ，全部自动化）
+#### 甲、Uibot完成帖子信息抓取和交给CHAGPT判断整理出周报（耗时长1h+ ，全部自动化）
 
-+   机器人流程压缩包（完成了A必备条件的软件插件安装，就可以直接导入这个压缩包）
++ 机器人流程压缩包（完成了A必备条件的软件插件安装，就可以直接导入这个压缩包）
 
 ![](img/8dcdda8ee94717bc9fd0fb71ce9c48e3.png)
 
-[赚钱周报.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjrGbv2W0o7jNyxhfUQctZJQnmg)
+`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NjrGbv2W0o7jNyxhfUQctZJQnmg`
 
 #### Automa浏览器插件获取帖子信息（发给CHATGPT还需要人工）
 
-https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcca
+`https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcca`
 
 ![](img/27ca1019d122800041ca49e4f3e987da.png)
 
-[自动生成赚钱周报test.automa.json](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JdRjb0xNao0rkBxeSqqchgAEnMe)
+`自动生成赚钱周报test.automa.json` `https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JdRjb0xNao0rkBxeSqqchgAEnMe`
 
 （回看后发现要重点标注一下：这里是依托于龙哥盟搜索引擎的元素获取模块，当然本身是获取不到链接和太多数据的，只是尽可能模拟人工获取帖子链接【附带知识星球个人标识链接，所以还是得有付费会员才能查看】，同时如果龙哥盟搜索引擎的网页元素发生变化，该RPA可能失灵，这是为什么那么多工具应用都需要人工维护的原因，由于网页更新不定时，该贴的代码可能无效，但思路还是一样的）
 
-### 三，注意事项（出错和调试）
+### 三、注意事项（出错和调试）
 
 以上RPA代码在具体的不同电脑环境中，可能还需要额外调试，花费时间取决于环境参数。
 
-####### 3.1 机器人层面
+#### 3.1 机器人层面
 
 流程压缩包导入后要确认表格文件夹
 
@@ -156,7 +155,7 @@ https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcc
 
 机器人第一次打开龙哥盟搜索引擎网页时，有30s左右等待时间，可以人工调整筛选条件
 
-####### 3.2 外界环境层面
+#### 3.2 外界环境层面
 
 因为RPA机器人的稳定性非常依赖运行所在电脑的环境，所以流程压缩包迁移电脑后，需要调试一下巩固稳定性
 
@@ -164,11 +163,11 @@ Uibot没有MAC版本，建议用WINDOWS系统或者腾讯云VPS
 
 没有🪜工具打不开CHATGPT，网络IP不稳定或者速度太慢会卡顿或者出错
 
-3.3 影刀机器人注意事项
+#### 3.3 影刀机器人注意事项
 
 EXCEL文件要事先绑定
 
-主题帖在sheet1，风向标在sheet2
+主题帖在`sheet1`，风向标在`sheet2`
 
 开🪜工具才能打开GPT
 
@@ -176,21 +175,21 @@ EXCEL文件要事先绑定
 
 影刀切换页面用的是搜索引擎，关闭页面用的是zsxq，所以要关闭其他相似无关标签页
 
-### 四，后续优化（待定）
+### 四、后续优化（待定）
 
-###### 4.1 目前还存在的问题是：
+#### 4.1 目前还存在的问题是：
 
 CHATGPT并不能完全准确得把文章分类，可能还需要加人工辅助判断，
 
-同时增加更多的分类下的关键词命中（放在prompt当中）
+同时增加更多的分类下的关键词命中（放在`prompt`当中）
 
 【欢迎各位圈友提出更多意见！】
 
 （一直想早点做出来成熟版，所以就用了三种工具测试，目前效果最好的是影刀，但是也耗费了很多时间，后面具体优化再看时间安排）
 
-###### 4.2 To Do List
+#### 4.2 To Do List
 
-# 篇章贰：知识星球原生网页（此方法理论上适配所有知识星球）
+## 篇章贰：知识星球原生网页（此方法理论上适配所有知识星球）
 
 我想做这个，一开始是真觉得搞这个RPA流程应该挺简单的（我大意了！）
 
@@ -214,47 +213,41 @@ CHATGPT并不能完全准确得把文章分类，可能还需要加人工辅助�
 
 ### O、极简使用教程
 
-###### A, 必备条件（WINDOWS系统）
+#### A、必备条件（WINDOWS系统）
 
-+   软件：影刀（+插件），Excel/WPS，谷歌浏览器
++ 软件：影刀（+插件），Excel/WPS，谷歌浏览器
 
-https://www.yingdao.com/client-download/
+`https://www.yingdao.com/client-download/`
 
-+   账户：影刀, ChatGPT PLUS，🪜工具
++ 账户：影刀, ChatGPT PLUS，🪜工具
 
-https://chat.openai.com/
+`https://chat.openai.com/`
 
-+   状态：已登录龙哥盟系统，已登录知识星球账户，已加入龙哥盟星球
++ 状态：已登录龙哥盟系统，已登录知识星球账户，已加入龙哥盟星球
 
-https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/1824528822
+`https://search01.shengcaiyoushu.com/`，`https://wx.zsxq.com/dweb2/index/group/1824528822`
 
-###### B, 使用指南
+#### B、使用指南
 
-+   注册账号，安装软件+插件
++ 注册账号，安装软件+插件
 
-+   按照我展示的流程来做
++ 按照我展示的流程来做
 
-+   或者购买影刀付费企业版本（据说年费好几万）使用这个发布到市场的脚本
-
-
-
-
-
-
++ 或者购买影刀付费企业版本（据说年费好几万）使用这个发布到市场的脚本
 
 ![](img/2d1e3d610f6451a59266d4c0ccbb5be1.png)
 
-### 一，自动化步骤配置思路
+### 一、自动化步骤配置思路
 
 逻辑看起来非常简单，逐一循环获取相似元素（作者，发帖时间，文章更改，关键词标签，链接）
 
 当然大部分文章都是在飞书等文档上，我们并不需要全部获取，只要概览即可
 
-然后把内容发给GPT，可以通过文件上传（GPT4），也可以复制粘贴（有TOKEN限制）
+然后把内容发给GPT，可以通过文件上传（GPT4），也可以复制粘贴（有`TOKEN`限制）
 
 其实用CLAUDE或者国产KIMI CHAT也都行
 
-### 二，具体实操遇到各种问题
+### 二、具体实操遇到各种问题
 
 事实上当帖子没有被打上标签的时候，该元素就不存在
 
@@ -262,19 +255,19 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 但是用影刀的相似循环元素，就直接略过了，会导致左右两列数据没有对齐
 
-### 三，注意事项（出错和调试）
+### 三、注意事项（出错和调试）
 
 该流程利用谷歌浏览器，所以你电脑要安装
 
-起始是绑定已有打开表格，所以不能关闭，且需要有已创建的五个Sheets
+起始是绑定已有打开表格，所以不能关闭，且需要有已创建的五个`Sheets`
 
-### 四，后续优化（待定）
+### 四、后续优化（待定）
 
 针对不同电脑可能要调整适配性
 
 看圈友实操反馈
 
-# 篇章叁：订阅关键词做个性化赚钱日报推送🛰️（包括历史精华帖和每日新增贴）
+## 篇章叁：订阅关键词做个性化赚钱日报推送🛰️（包括历史精华帖和每日新增贴）
 
 ### O、极简使用教程
 
@@ -292,33 +285,33 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 甚至RPA只是最低级的配置，当然成本也最低
 
-### 一，自动化步骤配置思路
+### 一、自动化步骤配置思路
 
-+   这里面可以单独获取某一个【标签】或者【板块】下的帖子或者只获取最新的一条帖子
++ 这里面可以单独获取某一个【标签】或者【板块】下的帖子或者只获取最新的一条帖子
 
-+   帖子信息（标题，链接，标签，正文大纲，作者）交给GPT判断筛选【给定PROMPT到你想要的输出结果】
++ 帖子信息（标题，链接，标签，正文大纲，作者）交给GPT判断筛选【给定`PROMPT`到你想要的输出结果】
 
-+   通过企微/个微/🐧/飞书发送到个人/社群
++ 通过企微/个微/🐧/飞书发送到个人/社群
 
 以上思路针对全平台都通用
 
 以上思路用代码脚本化，API对接速度更快
 
-### 二，具体实操遇到各种问题
+### 二、具体实操遇到各种问题
 
-### 三，注意事项（出错和调试）
+### 三、注意事项（出错和调试）
 
 同一个电脑调试稳定后就还好，如果切换电脑，可以要列出来需要调整的清单（增加🛰️账户）
 
 不能太过频繁刷新和循环
 
-### 四，后续优化（待定）
+### 四、后续优化（待定）
 
 如果人数过多，可能要分多个流程完成
 
-# 篇章肆：赚钱合集制作
+## 篇章肆：赚钱合集制作
 
-在[鱼丸发帖的RPA工具合集](https://wx.zsxq.com/dweb2/index/topic_detail/211825218541211)下方有圈友评论想要年入百万和年入千万的合集：
+在鱼丸发帖的RPA工具合集 `https://wx.zsxq.com/dweb2/index/topic_detail/211825218541211`下方有圈友评论想要年入百万和年入千万的合集：
 
 ![](img/d4e7a90738af39df6c8a30be4908f71f.png)
 
@@ -328,7 +321,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 ![](img/c83f9390a0d26fddf2ed42149e0063da.png)
 
-左边是[年入百万](https://search01.shengcaiyoushu.com/search?query=4e9QoaVXZKuQrSq1nZ32YJUQgzLGoQmjvELL4d9e4vJ4QmQBSPYX5RZSkGPdwsxqsWUPsgstLfovz5gmBw7eNW4kMrqKxy4ubovVvhHow1m6G1xemwcyz5BeTMpHjVnSKb5hFimxLsghfKMp6uQRqXUbfRSaT6k1UgHkQ6GuyS2DVNcAjVNWWKQGHaygzEHhcCHDs4ecUSMxDAkGRvVYZLfY3QtDmLLnthnMnrNGnaHA7RYFPyRwm6uZykHS867Xbji1SaxetEWrJSjf723UWLJXrWqC9CSJzQDEVqKK4eB8qhF6KuRUEhL3QYbBuGa6fXyj7f8NzfSe&_search=1)的帖子，RPA全部抓下来，交给GPT分类即可，粗略来看精准度还挺高的（我们甚至[可以精确](https://search01.shengcaiyoushu.com/search?query=cidNQa7aWHXK7drLbMtm4txLT2JuXN58JU74zNdy1DUqw3navmMfYyEsYV1bWZ1FmrG1NbBLZr8r1qjWy4kWyMrkCfT1wYrxpnLN6PNiy8UAijkv3R6uDMh4a9BX7Go1YAxb1zTZLaDgNt3g3uUMqiDRkAb8vtXvFP981fZpEzuMNnEt1U5MKk3DJ9sp6esxw35XUYh8mSLDkGUvPYqLLBHqKKUCV1t3XAbnYYLnM7CfeUNEwZFkWWM8qU9xN2iU1ZumPnXL8QiBztewcY5wsGJwDoWF5ZHgjQRaKnf2FXJcgv6Tm4K4GYtxyxCHwrfVxYnb3&_search=1)分类风向标和主题帖）；右边是搜索年入千万的命中的帖子，但是相关性都不高，数量也少，交给GPT后可能还需要人工花点时间筛选。
+左边是年入百万 `https://search01.shengcaiyoushu.com/search?query=4e9QoaVXZKuQrSq1nZ32YJUQgzLGoQmjvELL4d9e4vJ4QmQBSPYX5RZSkGPdwsxqsWUPsgstLfovz5gmBw7eNW4kMrqKxy4ubovVvhHow1m6G1xemwcyz5BeTMpHjVnSKb5hFimxLsghfKMp6uQRqXUbfRSaT6k1UgHkQ6GuyS2DVNcAjVNWWKQGHaygzEHhcCHDs4ecUSMxDAkGRvVYZLfY3QtDmLLnthnMnrNGnaHA7RYFPyRwm6uZykHS867Xbji1SaxetEWrJSjf723UWLJXrWqC9CSJzQDEVqKK4eB8qhF6KuRUEhL3QYbBuGa6fXyj7f8NzfSe&_search=1`的帖子，RPA全部抓下来，交给GPT分类即可，粗略来看精准度还挺高的（我们甚至可以精确 `https://search01.shengcaiyoushu.com/search?query=cidNQa7aWHXK7drLbMtm4txLT2JuXN58JU74zNdy1DUqw3navmMfYyEsYV1bWZ1FmrG1NbBLZr8r1qjWy4kWyMrkCfT1wYrxpnLN6PNiy8UAijkv3R6uDMh4a9BX7Go1YAxb1zTZLaDgNt3g3uUMqiDRkAb8vtXvFP981fZpEzuMNnEt1U5MKk3DJ9sp6esxw35XUYh8mSLDkGUvPYqLLBHqKKUCV1t3XAbnYYLnM7CfeUNEwZFkWWM8qU9xN2iU1ZumPnXL8QiBztewcY5wsGJwDoWF5ZHgjQRaKnf2FXJcgv6Tm4K4GYtxyxCHwrfVxYnb3&_search=1` 分类风向标和主题帖）；右边是搜索年入千万的命中的帖子，但是相关性都不高，数量也少，交给GPT后可能还需要人工花点时间筛选。
 
 当然你也可以更换关键词来获得更多命中帖子，比如赚一百万和赚一千万，读到这里有心的圈友可以自查一下，贴图到评论区，大家就可以看看区别。
 
@@ -338,53 +331,36 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 【同时可以交给GPT做新人QA百问百答】
 
-[RPA做赚钱合集帖子](https://fqlleg2dnfa.feishu.cn/wiki/VNvlwctvIigs🐧keylMcIdTFnbe?chunked=false)
+RPA做赚钱合集帖子 `https://fqlleg2dnfa.feishu.cn/wiki/VNvlwctvIigs🐧keylMcIdTFnbe?chunked=false`
+
+
 
 后面我可能会陆续抓一些关键词下的赚钱精华帖，自动发给自己慢慢一天看几篇，只有标题+链接，所以还是要知识星球会员查看，别想歪了哈
 
 # 篇章伍：龙哥几年前的一个小产品设想
 
 > 龙哥
-
 > 2017-05-09 12:46
-
 > #思路分享#
-
 > https://wx.zsxq.com/dweb2/index/topic_detail/15285125851282
-
-> 
-
+>
 > 如何找到一些好的操作思路？
-
-> 
-
+>
 > 主关键词：Amazon，blogging ,mobile affiliate，niche sites，Adsense，YouTube，Instagram，Whatsapp，淘宝客等
-
-> 
-
+>
 > 副关键词：Journey， follow along , income report，实战，记录等
-
-> 
-
+>
 > 搜索条件： 最近三个月，最近一年等
-
-> 
-
+>
 > 组合起来搜索就可以看到很多目前可以学习并且可操作的思路。
-
-> 
-
+>
 > 将搜索到的相关主题都看一遍，记录关键点，梳理一遍思路就可以开始操作了。
-
-> 
-
+>
 > 一遍操作一边遇到问题一边再重复上面的思路。
-
-> 
-
+>
 > 搜索挖掘能力可能是一个人需要拥有的最重要的能力之一。
 
-### O、极简使用教程
+## O、极简使用教程
 
 ![](img/871f0dd47beecf9e5631150dfd5e515f.png)
 
@@ -392,19 +368,17 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 帖子上的信息和方法都是永久存在的，做完之后交流，可以再做思维碰撞。
 
-### 一，自动化步骤配置思路
+## 一，自动化步骤配置思路
 
-### 二，具体实操遇到各
+## 二，具体实操遇到各种问题
 
-### 种问题
-
-### 三，注意事项（出错和调试）
+## 三，注意事项（出错和调试）
 
 由于这个机器人太过庞大，更换电脑肯定调试就很复杂，所以一直放在VPS就行
 
 抓取的很多内容都是无效的，ChatGPT判断没那么精准，这个要更换其他GPT测试一下
 
-### 四，后续优化（待定）
+## 四，后续优化（待定）
 
 可以更换甚至全部使用五大搜索引擎（谷歌，必应，搜狗，百度，DOGE）
 
@@ -414,7 +388,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 # 篇章陆：RPA通吃全平台-我做👸号和抖音的思路
 
-### 🦌、历史RPA机器人汇总
+## 🦌、历史RPA机器人汇总
 
 出于个人使用，我做了很多机器人，因为这个是完全可视化的汉字语言编程
 
@@ -424,7 +398,7 @@ https://search01.shengcaiyoushu.com/，https://wx.zsxq.com/dweb2/index/group/182
 
 [RPA机器人系列汇总-Uibot](https://fqlleg2dnfa.feishu.cn/wiki/H2Tzw0HOJixDhnkYk5ecvc4VnUd)
 
-### 🦌、👸号
+## 🦌、👸号
 
 具体代码可以看这篇精华帖
 
@@ -436,7 +410,7 @@ https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=18852558824
 
 ![](img/fbc8cf9c698ba04fe1580606159e11f9.png)
 
-### 🦌、抖音图片批量
+## 🦌、抖音图片批量
 
 合作的项目，反正也是用RPA跑通的流程
 
@@ -448,15 +422,15 @@ https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=18852558824
 
 简单总结一下本篇文章，介绍和实操RPA能做的事情：
 
-1.  日报周报（打标签） 帖子总结
+1. 日报周报（打标签） 帖子总结
 
-1.  关键词触发推送
+1. 关键词触发推送
 
-1.  多个星球日报周报汇总+关键词触发推送
+1. 多个星球日报周报汇总+关键词触发推送
 
-1.  全平台关键词监控
+1. 全平台关键词监控
 
-1.  全平台抓取+去重+发布（图，文）
+1. 全平台抓取+去重+发布（图，文）
 
 这里面代码和工具都不是核心，最顶层的是业务需求和逻辑设计。
 

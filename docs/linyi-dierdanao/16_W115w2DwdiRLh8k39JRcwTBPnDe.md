@@ -1,8 +1,9 @@
+
 # 如何免费申请EIN（Employer Identification Number）
 
 > 来源：[https://docs.feishu.cn/docx/XOOkdOwxuoR1RDxqN1GckrzcnEh](https://docs.feishu.cn/docx/XOOkdOwxuoR1RDxqN1GckrzcnEh)
 
-最近中[国的程序员们纷纷出海，](https://rr.do/mercury?ref=bra.live)很多人也注册了自己的美国LL[C公司。](https://rr.do/wise?ref=bra.live)但注册完美国公司以后，面临的最大一个问题就是获取EIN（Employer Identification Number）。美国每个企业都需要有属于自己的EIN，不然寸步难行。往近了说，无法开通银行账号（比如水星银行Mercury、Relay、stripe、wise）。往远了说，每年无法报税，会被IRS重罚。所以，申请EIN就成了美国公司新注册后必须进行的第一步操作。
+最近[中国的程序员们纷纷出海](https://rr.do/mercury?ref=bra.live)，很多人也注册了自己的[美国LLC公司](https://rr.do/wise?ref=bra.live)。但注册完美国公司以后，面临的最大一个问题就是获取EIN（Employer Identification Number）。美国每个企业都需要有属于自己的EIN，不然寸步难行。往近了说，无法开通银行账号（比如水星银行Mercury、Relay、stripe、wise）。往远了说，每年无法报税，会被IRS重罚。所以，申请EIN就成了美国公司新注册后必须进行的第一步操作。
 
 简单来概括，EIN就相当于企业的身份证，或者类似于中国企业的『统一社会信用代码』。但区别在于，中国的企业注册完成后自动获得编号，但美国需要自己申请。
 
@@ -26,13 +27,13 @@
 
 ![](img/47dc95fdd7ab55cdf4b06c15ea0ed7ab.png)
 
-## **填写SS-4表单**
+## 填写SS-4表单
 
 我们下载[form SS-4](https://www.irs.gov/pub/irs-pdf/fss4.pdf?ref=bra.live)，这是EIN的申请表。可以参考下面的信息填写
 
 > 千万要注意：传真号码不能错，要填前面hellofax提供的号码。不然你拿不到EIN号
 
-[如果你需要公司的注](https://rr.do/stable?ref=bra.live)册地址，可以考虑使用usestable，stripe的官方合作商。
+[如果你需要公司的注册地址](https://rr.do/stable?ref=bra.live)，可以考虑使用usestable，stripe的官方合作商。
 
 上面的表单填完后，在PDF编辑软件中，把公司的成立文件附在后面，合并成一个整体的PDF。
 
@@ -42,7 +43,7 @@
 
 ![](img/f40af5d9aeff7a749c36f7b7bb31b653.png)
 
-## **发送传真给IRS**
+## 发送传真给IRS
 
 然后，我们开始重头戏，发送传真给IRS
 
@@ -50,7 +51,7 @@
 
 OK，结束了。
 
-## **等待IRS返回EIN**
+## 等待IRS返回EIN
 
 一般情况下，我们需要等待一周左右的时间，hellofax就会提示你收到新传真。里面是IRS给你返回的SS-4文档。不一样的地方是，在文档的右上方，有一个属于你自己公司的EIN号码。
 

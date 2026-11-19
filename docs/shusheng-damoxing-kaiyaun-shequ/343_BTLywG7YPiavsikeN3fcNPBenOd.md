@@ -1,3 +1,4 @@
+
 # 知识图谱知识库（共建中）
 
 > 来源：[https://aicarrier.feishu.cn/docx/C56XdBj7RoChokxYnUCcJQNbn6e](https://aicarrier.feishu.cn/docx/C56XdBj7RoChokxYnUCcJQNbn6e)
@@ -8,20 +9,12 @@
 
 | 章节 | 小节 |
 | --- | --- |
-|  |  |
-|  |  |
-|  |  |
 | 神经网络基础 |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
 | Transformer | 注意力机制 |
 |  | Transformer结构 |
 |  | 预训练语言模型部分 |
 |  | Transformer代码实操 |
-| 大模型的前沿技术：Prompt-learning &amp; Delta Tuning | Prompt-Learning 背景与组成 |
+| 大模型的前沿技术：Prompt-learning & Delta Tuning | Prompt-Learning 背景与组成 |
 |  | Prompt-Learning 流程 |
 |  | Prompt-Learning 应用与总结 |
 |  | Delta Tuning 背景与组成 |

@@ -1,3 +1,4 @@
+
 # 影刀RPA采集抖音低粉爆款短视频，数据同步到飞书多维表格（图文+视频教程，附源码）分享
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/U2mrddSJXoECHcxNGAEcr3IqnSh](https://xuqiwei1986.feishu.cn/docx/U2mrddSJXoECHcxNGAEcr3IqnSh)
@@ -12,9 +13,8 @@
 
 基于以上的工作流程，我们就可以把能自动化的部分，尽量自动化，节省工作时间。这款工具主要可以做到：
 
-1.  自动采集抖音搜索关键词的短视频数据。把数据都上传到多维表格，方便整理；
-
-1.  在多维表格里，对采集到的视频数据做筛选分类，自动筛选出「低粉爆款」、「高赞视频」。
+1. 自动采集抖音搜索关键词的短视频数据。把数据都上传到多维表格，方便整理；
+2. 在多维表格里，对采集到的视频数据做筛选分类，自动筛选出「低粉爆款」、「高赞视频」。
 
 好了，下面进入实战环节。
 
@@ -28,7 +28,7 @@
 
 [采集抖音短视频数据.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UaWRb9jXKoCkgCxMEHncqpZRnXg)
 
-###  视频教程
+### 视频教程
 
 ![](img/383521850f2860849e185c72c9c9be6f.png)
 
@@ -42,9 +42,8 @@
 
 采集抖音短视频字段说明：
 
-1.  支持抖音网页版筛选功能，包括排序、发布时间、视频时长、搜索范围、内容形式；
-
-1.  支持的采集字段：**账**号昵称、账号粉丝数、视频链接、视频描述、视频标签、点赞数、收藏数、评论数、分享数、是否带货、发布时间、关键词。
+1. 支持抖音网页版筛选功能，包括排序、发布时间、视频时长、搜索范围、内容形式；
+2. 支持的采集字段：账号昵称、账号粉丝数、视频链接、视频描述、视频标签、点赞数、收藏数、评论数、分享数、是否带货、发布时间、关键词。
 
 关于多维表格里，短视频分类「低粉爆款」短视频的定义解释。可以根据自己的行业类目，做数值修改。非常灵活。
 
@@ -81,61 +80,67 @@ IFS([点赞数]&lt;=300,&quot;⬜️低赞视频&quot;,AND([点赞数]&gt;300,[�
 
 > 注意事项：
 
-1.  抖音网页版运行前，需要登录抖音账号。建议关闭视频详情页「自动连播」功能；
-
-1.  [为了整体体](https://wuying.aliyun.com/)验，需要在 Win 系统上运行，Mac 用户建议使用无影云电脑。
+1. 抖音网页版运行前，需要登录抖音账号。建议关闭视频详情页「自动连播」功能；
+2. 为了整体体验，需要在 Win 系统上运行，Mac 用户建议使用无影云电脑。
 
 ### 主流程指令
 
-| **业务步骤** | **指令截图** | **指令说明** | **备注** |
+| 业务步骤 | 指令截图 | 指令说明 | 备注 |
+
 | --- | --- | --- | --- |
+
 | 设置「自定义对话框」 | ![](img/6c9ad9f814ed26a5bdd3acbd17e4d653.png) | 对话框字段： | ![](img/1d228eb853b39531f069e5ec6b8547a8.png) |
-| 给【搜索关键词】赋值，方便后续写入多维表格 | ![](img/a76b94c77fc8b228bf578dfe420295be.png) | 设置全局变量：搜索关键词、短视频数据_list[。因为有 2](https://www.yingdao.com/yddoc/rpa/711630250602528768?source=%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F) 个流程，设置全局变量方便调用。学习全局变量。 |  |
+
+| 给`搜索关键词`赋值，方便后续写入多维表格 | ![](img/a76b94c77fc8b228bf578dfe420295be.png) | 设置全局变量：`搜索关键词`、`短视频数据_list`。因为有 2 个流程，设置全局变量方便调用。学习全局变量。 |  |
+
 | 建立飞书多维表格连接，并获取表格数据 | ![](img/dcce0e52f6fa221ad9355ed2d3c95769.png) | 建立飞书多维表格连接，JSON 提取已存储在多维表格中的抖音短视频，用于判断去重。 |  |
+
 | 打开抖音，搜索关键词 | ![](img/2763963bd10b2f32837e5d1f7ab7d81b.png) | 打开抖音精选页面，输入搜索关键词，键盘键Enter，出现关键词搜索结果页。 |  |
+
 | 短视频列表筛选 | ![](img/b6b5e32426b3cbe58037826b382ace73.png) | 选择搜索筛选条件，使用的魔法指令。 |  |
+
 | 开始循环获取短视频列表信息 | ![](img/8023b02c41d8cea98f3f0621b6f16bd7.png) | 循环获取短视频列表，整体逻辑： | 1.  附上搜索结果页的卡片元素 |
+
 | 循环体内，对单个视频的处理 | ![](img/8e7fcadb2a9b37eeb43463900758afe6.png) | 1.  在单个视频的循环体内，有短视频链接去重判断： |  |
-| 判断短视频数据_list 是否为空。 | ![](img/6ae7f2b00c7ab08746da040cba52cb0f.png) | 判断短视频数据_list 是否为空。考虑到去重/采集异常的情况。 |  |
-| 上传列表数据到多维表格 | ![](img/8d6745c9126b10d8881ff53bf961ded0.png) | 把短视频列表数据，上传到多维表格，是调用的 feishu_convert 函数(在完整指令小节已附上源码）。 | 1.  影刀多维表格专题教程 |
 
-1.  排序依据：综合排序、最新发布、最多点赞；
+| 判断`短视频数据_list`是否为空。 | ![](img/6ae7f2b00c7ab08746da040cba52cb0f.png) | 判断`短视频数据_list`是否为空。考虑到去重/采集异常的情况。 |  |
 
-1.  发布时间：不限、一天内、一周内、半年内；
+| 上传列表数据到多维表格 | ![](img/8d6745c9126b10d8881ff53bf961ded0.png) | 把短视频列表数据，上传到多维表格，是调用的 `feishu_convert()` 函数(在完整指令小节已附上源码）。 | 1.  影刀多维表格专题教程 |
 
-1.  视频时长：不限、1分钟以下、1-5分钟、5分钟以上；
-
-1.  搜索范围：不限、关注的人、最近看过、还未看过；
-
-1.  **内容形式：视频、图文。**内容形式去掉「不限」，只保留视频、图文选项。也就是过滤 ‘直播’ 的卡片类型。
-
-1.  采集数量满足用户要求；
-
-1.  页面到底。
-
-1.  [影刀学院课程](https://college.yingdao.com/course?textBookRecordUuid=813322908393357312)
-
-1.  [XPath 语法文档](https://www.w3cschool.cn/xpath/xpath-xpath-tutorialij9m1t5i.html)
-
-1.  直接复制/截图页面元素，直接问 AI 怎么写
-
-1.  采集数量满足用户要求
-
-1.  如果短视频链接，在多维表格已经存在，则不采集。
-
-1.  [多维表格课程](https://www.bilibili.com/video/BV1ggoKYSETy/?vd_source=0e0e90e0b47dc770f61535268a737882)
+1. 排序依据：综合排序、最新发布、最多点赞；
+2. 发布时间：不限、一天内、一周内、半年内；
+3. 视频时长：不限、1分钟以下、1-5分钟、5分钟以上；
+4. 搜索范围：不限、关注的人、最近看过、还未看过；
+5. 内容形式：视频、图文。内容形式去掉「不限」，只保留视频、图文选项。也就是过滤 ‘直播’ 的卡片类型。
+6. 采集数量满足用户要求；
+7. 页面到底。
+8. [影刀学院课程](https://college.yingdao.com/course?textBookRecordUuid=813322908393357312)
+9. [XPath 语法文档](https://www.w3cschool.cn/xpath/xpath-xpath-tutorialij9m1t5i.html)
+10. 直接复制/截图页面元素，直接问 AI 怎么写
+11. 采集数量满足用户要求
+12. 如果短视频链接，在多维表格已经存在，则不采集。
+13. [多维表格课程](https://www.bilibili.com/video/BV1ggoKYSETy/?vd_source=0e0e90e0b47dc770f61535268a737882)
 
 ### 子流程指令（获取短视频数据）
 
-| **业务步骤** | **指令截图** | **指令说明** | **备注** |
+| 业务步骤 | 指令截图 | 指令说明 | 备注 |
+
 | --- | --- | --- | --- |
+
 | 获取短视频链接 | ![](img/009ba8d74d83f2322de397a238f1d10b.png) | 提取短视频ID，和主流程的魔法指令一致。 |  |
+
 | 获取账号昵称 | ![](img/9b70216bf7556b354d06bea3e87192e5.png) | 因为获取到的昵称是「@昵称」，需要去掉 @ 符号。可以用魔法指令去除。 |  |
-| 获取发布时间 | ![](img/2d403c91d98935475d5f0b5ab054bc2a.png) | 1.  **获取视频**发布时间 - 魔法指令 - 提示词： |  |
-| 获取视频描述、标签信息 | ![](img/746bafcd770ac4b8db9dcfec44ddbe6e.png) | **提取视频**描述信息 - 魔法指令 - 提示词： |  |
-| 获取视频点赞数、评论数、收藏数、分享数 | ![](img/b21dd2eefe525cdd40c13cd70cfdb4d9.png) | **提取视频**互动数据 - 魔法指令 - 提示词： |  |
+
+| 获取发布时间 | ![](img/2d403c91d98935475d5f0b5ab054bc2a.png) | 1.  获取视频发布时间 - 魔法指令 - 提示词： |  |
+
+| 获取视频描述、标签信息 | ![](img/746bafcd770ac4b8db9dcfec44ddbe6e.png) | 提取视频描述信息 - 魔法指令 - 提示词： |  |
+
+| 获取视频点赞数、评论数、收藏数、分享数 | ![](img/b21dd2eefe525cdd40c13cd70cfdb4d9.png) | 提取视频互动数据 - 魔法指令 - 提示词： |  |
+
 | 判断是否是带货短视频 | ![](img/fa370305d583e94a53d7ee5bded93d09.png) | 如果短视频有挂车，就判断为「带货视频」，否则就是「非带货视频」 | ![](img/f449a601e1e5946bb316f14085a9a14c.png) |
+
 | 获取账号粉丝数 | ![](img/b419d8cddc628fa039681e5dfba95333.png) | 提取粉丝数-魔法指令-提示词 | ![](img/a05a540c48b3ecdc6f9f27810fff07ce.png) |
+
 | 把获取到的数据，存储到列表 | ![](img/5c38c0bee6ded541c3b6fb9e2d5083f4.png) | 获取到单个短视频数据后，把视频数据存储到列表 |  |
 
 ## 完整指令
@@ -148,99 +153,101 @@ IFS([点赞数]&lt;=300,&quot;⬜️低赞视频&quot;,AND([点赞数]&gt;300,[�
 
 ![](img/d20fca0fa52f398a1203bba681cf231a.png)
 
-### 数据上传到飞书（feishu_convert 函数）
+### 数据上传到飞书（`feishu_convert()` 函数）
 
 Reference links：
 
-+   [多维表格课程](https://www.bilibili.com/video/BV1ggoKYSETy/?vd_source=0e0e90e0b47dc770f61535268a737882)
++ [多维表格课程](https://www.bilibili.com/video/BV1ggoKYSETy/?vd_source=0e0e90e0b47dc770f61535268a737882)
 
-+   [影刀多维表格数据转换代码](https://places-jog-hla.craft.me/2oNYmHlBtJnNiR/b/4ABF0285-E93E-42D8-BA2B-B38F66079132/%E5%A4%9A%E7%BB%B4%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97)
++ [影刀多维表格数据转换代码](https://places-jog-hla.craft.me/2oNYmHlBtJnNiR/b/4ABF0285-E93E-42D8-BA2B-B38F66079132/%E5%A4%9A%E7%BB%B4%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97)
 
-```
-**import**** datet****ime ** # 导入日期时间模**块，用于处理****日期和**时间相关**的操**作**
-im**port** r**e**  #** 导入正**则表**达**式模块**，用于字符串匹配**和处理
-f**rom **op**e**npy**x**l import l**oad_workb**ook ** #** 导入op**enpy**xl**库**中的load_wor**kbook函数，用于**加载Ex**ce**l文件**
 
-def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信息):
- **  ** # 检**查输入**参数是否为**空，**如果为空则抛出异**常
- **   if not 表头 or** n**o**t 数据 or n**ot 多维表字段信息:
-**  **      **rai****se Value**Error(&quot;表头、数据**和多**维表字段信息参数**都是必**需**的&quot;****)
 
-    #** 如果数据是一维列表，将**其转**换**为二维****列表（单行数据）**
-    if not **is**instance(数据[**0]**,** (li**s**t,**** tuple))**:
-        数据** =**** [****数据**]**
+```python
+import datetime  # 导入日期时间模块，用于处理日期和时间相关的操作
+import re  # 导入正则表达式模块，用于字符串匹配和处理
+from openpyxl import load_workbook  # 导入openpyxl库中的load_workbook函数，用于加载Excel文件
 
-    # 如果**多维表字段信息是字典且包含**&quot;it****ems&quot;**键，则提取items数组
-    **if **isinstance(多**维表字段****信息****, **d**ict) and &quot;**items&quot; in 多维表**字段信息****:
-  ****  ** **   **多**维表字段信息 = 多**维表字段信息[&quot;items**&quot;]
-**
-    # 创建表头到飞书字段的**映射
-****   ** heade**r_****to_**field** =**** {**}
-   ** f**or field in 多维表字段信息:
- **   **   ** f****ie****ld_na****me**** = ****fie****ld.**g**et(**&quot;field**_n**ame&quot;, &quot;&quot;)
-  **   **   if **fi**eld_name:
-  **    ****  ****  ** ** header_to**_field[field_**name****] =** field
-**
- ** **  #** **初始化记录列表，用于**存储转换后的飞**书格式**数据**
-   **** fe**ishu_r**ec****ords**** =** **[]
-**
-**    # 遍历每一**行数据
-    for r**ow **in 数据:
-        re**cor****d_f**ields **= ****{}
-**
-    **  ****  **# 遍历每**一行****中的每**个单元格
-**  ****  ****    f****or**** i,**** ce****ll_**v**alu**e in e**nu**merate(row):**
-  **      **  **  # 如果索引超出表头**范围，跳****过该****单元**格**
-  ** **         i**f i &gt;= len(表头**):
-**                co**nti****nue
-**
-           ** hea****de****r =** 表头[i]
+def 转换列表到飞书格式(表头, 数据, 多维表字段信息):
+    # 检查输入参数是否为空，如果为空则抛出异常
+    if not 表头 or not 数据 or not 多维表字段信息:
+        raise ValueError("表头、数据和多维表字段信息参数都是必需的")
 
-    **    ****  ****  #**** 如果表****头不**在**映射中，跳过该单元格****
-   ** **        if** **hea****der **n**ot in head**er_to_field:
-**   ****   **     **  ****   ****conti****nue
+    # 如果数据是一维列表，将其转换为二维列表（单行数据）
+    if not isinstance(数据[0], (list, tuple)):
+        数据 = [数据]
 
- ****        ****  ** field = header_to_**fie****ld[h**eader]
-            fie**ld_****name =** field.get(&quot;field_**nam**e&quot;, &quot;&quot;)
+    # 如果多维表字段信息是字典且包含"items"键，则提取items数组
+    if isinstance(多维表字段信息, dict) and "items" in 多维表字段信息:
+        多维表字段信息 = 多维表字段信息["items"]
 
-   **    ****  ****  ** **# 如果没有fiel**d_name，跳过此字段
-**    ****    ** **   if not **field_name:
-  **   **  **     **    continue
+    # 创建表头到飞书字段的映射
+    header_to_field = {}
+    for field in 多维表字段信息:
+        field_name = field.get("field_name", "")
+        if field_name:
+            header_to_field[field_name] = field
 
-    **    ****    **#** 如果单元格值为空或**None，跳过此字段
-  **   ****  **     if cell_**va**lue is None or cell_va**lue ****== &quot;**&quot;:
-          **  **    continue
+    # 初始化记录列表，用于存储转换后的飞书格式数据
+    feishu_records = []
 
-        **    #**** 获取字****段类型和UI类型****
-   ****        ** field_type **= fi****el****d.g****et**(**&quot;type&quot;)
-  **          ui_**typ****e **= fie**ld**.get(&quot;ui_type&quot;)
+    # 遍历每一行数据
+    for row in 数据:
+        record_fields = {}
 
-         **   # ****处理UR****L类型
- ****  **     **  ****  if** **fie****ld_t****ype =****= **15 or** u**i**_ty****pe =**=** &quot;U****rl&quot;:
- **               if **isi**nstance(cell**_val****ue,** str):
- **  **    **   **   **  ** **    c**onve**rte**d_va**lu**e** = **{
-  **      **                &quot;text&quot;: cell_value,
-                        &quot;link&quot;: cell_value,
+        # 遍历每一行中的每个单元格
+        for i, cell_value in enumerate(row):
+            # 如果索引超出表头范围，跳过该单元格
+            if i >= len(表头):
+                continue
+
+            header = 表头[i]
+
+            # 如果表头不在映射中，跳过该单元格
+            if header not in header_to_field:
+                continue
+
+            field = header_to_field[header]
+            field_name = field.get("field_name", "")
+
+            # 如果没有field_name，跳过此字段
+            if not field_name:
+                continue
+
+            # 如果单元格值为空或None，跳过此字段
+            if cell_value is None or cell_value == "":
+                continue
+
+            # 获取字段类型和UI类型
+            field_type = field.get("type")
+            ui_type = field.get("ui_type")
+
+            # 处理URL类型
+            if field_type == 15 or ui_type == "Url":
+                if isinstance(cell_value, str):
+                    converted_value = {
+                        "text": cell_value,
+                        "link": cell_value,
                     }
                 else:
                     cell_value_str = str(cell_value)
                     converted_value = {
-                        &quot;text&quot;: cell_value_str,
-                        &quot;link&quot;: cell_value_str,
+                        "text": cell_value_str,
+                        "link": cell_value_str,
                     }
 
             # 处理附件字段
-            elif field_type == 17 or ui_type == &quot;Attachment&quot;:
+            elif field_type == 17 or ui_type == "Attachment":
                 if isinstance(cell_value, list):
                     converted_value = cell_value
                 else:
                     if not isinstance(cell_value, str):
                         cell_value = str(cell_value)
                     cleaned_value = cell_value
-                    for char in &quot;[]&#x27;\&quot;&quot;:
-                        cleaned_value = cleaned_value.replace(char, &quot;&quot;)
+                    for char in "[]'\"":
+                        cleaned_value = cleaned_value.replace(char, "")
 
-                    separators = [&quot;,&quot;, &quot;，&quot;, &quot;;&quot;, &quot;；&quot;, &quot;|&quot;, &quot;丨&quot;, &quot;\n&quot;]
+                    separators = [",", "，", ";", "；", "|", "丨", "\n"]
                     paths = [cleaned_value]
                     for sep in separators:
                         if sep in cleaned_value:
@@ -252,14 +259,14 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     if (
                         len(paths) == 1
                         and paths[0] == cleaned_value
-                        and any(char in cell_value for char in &quot;[]&#x27;\&quot;&quot;)
+                        and any(char in cell_value for char in "[]'\"")
                     ):
                         paths = [paths[0]]
 
                     converted_value = paths
 
             # 处理多选字段
-            elif field_type == 4 or ui_type == &quot;MultiSelect&quot;:
+            elif field_type == 4 or ui_type == "MultiSelect":
                 if isinstance(cell_value, list):
                     # 确保列表中的每个值都是字符串
                     converted_value = [
@@ -271,14 +278,14 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     if not isinstance(cell_value, str):
                         cell_value = str(cell_value)
 
-                    # 检查是否类似Python列表的字符串 &quot;[选项1, 选项2]&quot;
+                    # 检查是否类似Python列表的字符串 "[选项1, 选项2]"
                     # 移除可能的列表标记和引号
                     cleaned_value = cell_value
-                    for char in &quot;[]&#x27;\&quot;&quot;:
-                        cleaned_value = cleaned_value.replace(char, &quot;&quot;)
+                    for char in "[]'\"":
+                        cleaned_value = cleaned_value.replace(char, "")
 
                     # 处理可能的分隔符
-                    separators = [&quot;,&quot;, &quot;，&quot;, &quot;;&quot;, &quot;；&quot;, &quot;|&quot;, &quot;丨&quot;, &quot;\n&quot;]
+                    separators = [",", "，", ";", "；", "|", "丨", "\n"]
                     options = [cleaned_value]
                     for sep in separators:
                         if sep in cleaned_value:
@@ -293,15 +300,15 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     if (
                         len(options) == 1
                         and options[0] == cleaned_value
-                        and any(char in cell_value for char in &quot;[]&#x27;\&quot;&quot;)
+                        and any(char in cell_value for char in "[]'\"")
                     ):
-                        # 可能是形如 &quot;[选项]&quot; 的单元素列表字符串
+                        # 可能是形如 "[选项]" 的单元素列表字符串
                         options = [options[0]]
 
                     converted_value = options
 
             # 处理单选字段
-            elif field_type == 3 or ui_type == &quot;SingleSelect&quot;:
+            elif field_type == 3 or ui_type == "SingleSelect":
                 # 确保是字符串
                 if not isinstance(cell_value, str):
                     converted_value = str(cell_value)
@@ -309,12 +316,12 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     converted_value = cell_value
 
             # 处理文本类型
-            elif field_type == 1 or ui_type == &quot;Text&quot;:
+            elif field_type == 1 or ui_type == "Text":
                 # 将所有值转换为字符串
                 converted_value = str(cell_value)
 
             # 处理日期时间字段
-            elif field_type == 5 or ui_type == &quot;DateTime&quot;:
+            elif field_type == 5 or ui_type == "DateTime":
                 try:
                     # 获取datetime对象
                     dt_obj = None
@@ -329,14 +336,14 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     # 如果是字符串，尝试解析
                     elif isinstance(cell_value, str):
                         formats = [
-                            &quot;%Y/%m/%d&quot;,
-                            &quot;%Y-%m-%d&quot;,
-                            &quot;%Y/%m/%d %H:%M:%S&quot;,
-                            &quot;%Y-%m-%d %H:%M:%S&quot;,
-                            &quot;%d/%m/%Y&quot;,
-                            &quot;%d-%m-%Y&quot;,
-                            &quot;%m/%d/%Y&quot;,
-                            &quot;%m-%d-%Y&quot;,
+                            "%Y/%m/%d",
+                            "%Y-%m-%d",
+                            "%Y/%m/%d %H:%M:%S",
+                            "%Y-%m-%d %H:%M:%S",
+                            "%d/%m/%Y",
+                            "%d-%m-%Y",
+                            "%m/%d/%Y",
+                            "%m-%d-%Y",
                         ]
                         for fmt in formats:
                             try:
@@ -358,7 +365,7 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     converted_value = str(cell_value)
 
             # 处理复选框字段
-            elif field_type == 7 or ui_type == &quot;Checkbox&quot;:
+            elif field_type == 7 or ui_type == "Checkbox":
                 # 将各种值转换为布尔值
                 if isinstance(cell_value, bool):
                     converted_value = cell_value
@@ -366,9 +373,9 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     converted_value = bool(cell_value)
                 elif isinstance(cell_value, str):
                     value_lower = cell_value.lower()
-                    if value_lower in (&quot;true&quot;, &quot;yes&quot;, &quot;y&quot;, &quot;1&quot;, &quot;是&quot;, &quot;√&quot;, &quot;✓&quot;):
+                    if value_lower in ("true", "yes", "y", "1", "是", "√", "✓"):
                         converted_value = True
-                    elif value_lower in (&quot;false&quot;, &quot;no&quot;, &quot;n&quot;, &quot;0&quot;, &quot;否&quot;, &quot;×&quot;, &quot;✗&quot;):
+                    elif value_lower in ("false", "no", "n", "0", "否", "×", "✗"):
                         converted_value = False
                     else:
                         continue
@@ -376,24 +383,24 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
                     continue
 
             # 处理数字类型
-            elif field_type == 2 or ui_type == &quot;Number&quot;:
+            elif field_type == 2 or ui_type == "Number":
                 try:
                     if isinstance(cell_value, str):
-                        if &quot;%&quot; in cell_value:
-                            cleaned_value = cell_value.replace(&quot;%&quot;, &quot;&quot;).strip()
-                            cleaned_value = cleaned_value.replace(&quot;,&quot;, &quot;&quot;)
+                        if "%" in cell_value:
+                            cleaned_value = cell_value.replace("%", "").strip()
+                            cleaned_value = cleaned_value.replace(",", "")
                             converted_value = float(cleaned_value) / 100
                         else:
-                            cleaned_value = cell_value.replace(&quot;,&quot;, &quot;&quot;)
+                            cleaned_value = cell_value.replace(",", "")
                             converted_value = (
                                 float(cleaned_value)
-                                if &quot;.&quot; in cleaned_value
+                                if "." in cleaned_value
                                 else int(cleaned_value)
                             )
                     else:
                         converted_value = (
                             float(cell_value)
-                            if &quot;.&quot; in str(cell_value)
+                            if "." in str(cell_value)
                             else int(cell_value)
                         )
                 except (ValueError, TypeError):
@@ -421,30 +428,30 @@ def 转换列**表到**飞书格式**(表头**, 数据, 多**维表**字段信�
     return batched_records
 ```
 
+
+
 # ❓ 实操注意事项与答疑
 
-### 1、如果出现捕获不到元素，元素失效，应该怎么办？
+## 1、如果出现捕获不到元素，元素失效，应该怎么办？
 
 在这里案例中，捕获元素，分别用到了 XPath、捕获元素、魔法指令获取元素信息。其中：
 
-1.  XPath 最稳定。如果觉得写 XPath 有难度，建议大概过一遍 XPath 后，让 AI 帮你写；
-
-1.  捕获元素，本案例中的一些稳定元素，都是直接使用捕获元素，比如：搜索框、账号昵称。如果出现失效，建议「修复元素」，或者编辑元素检查；
-
-1.  魔法指令获取元素，也是捕获元素。
+1. XPath 最稳定。如果觉得写 XPath 有难度，建议大概过一遍 XPath 后，让 AI 帮你写；
+1. 捕获元素，本案例中的一些稳定元素，都是直接使用捕获元素，比如：搜索框、账号昵称。如果出现失效，建议「修复元素」，或者编辑元素检查；
+1. 魔法指令获取元素，也是捕获元素。
 
 ![](img/b6a592269807554cb012c3109b8850c0.png)
 
 这个案例就到这里啦，图文 + 视频教程都有。如果你写出来了，可以点赞支持下，谢谢~
 
-### 其他文章：
+## 其他文章：
 
-+   [RPA自动采集📕低粉爆款商品（手把手教程-附源码）](https://vind9redwd.feishu.cn/docx/D8f7d88yBoKXchxrWdJcDGT3nUe)
++ [RPA自动采集📕低粉爆款商品（手把手教程-附源码）](https://vind9redwd.feishu.cn/docx/D8f7d88yBoKXchxrWdJcDGT3nUe)
 
-+   [影刀RPA自动采集📕对标店铺商品（保姆级教程-附源码） ](https://vind9redwd.feishu.cn/docx/Tr5zdjgYWoKRNCxktExcXixEn1f)
++ [影刀RPA自动采集📕对标店铺商品（保姆级教程-附源码）](https://vind9redwd.feishu.cn/docx/Tr5zdjgYWoKRNCxktExcXixEn1f)
 
-+   [80%品牌方忽略的GEO盲区，如何让AI引用你的产品，以及如何监控效果？（附影刀RPA自动化解决方案）](https://vind9redwd.feishu.cn/docx/G1oWdMr3eo90OcxSPg2c93H9nHd)
++ [80%品牌方忽略的GEO盲区，如何让AI引用你的产品，以及如何监控效果？（附影刀RPA自动化解决方案）](https://vind9redwd.feishu.cn/docx/G1oWdMr3eo90OcxSPg2c93H9nHd)
 
-+   [醒醒，几十块钱，是买不到自动化工作流的](https://ai.feishu.cn/docx/DzKqdKRDno7Etkxo1zXccShqnMe)
++ [醒醒，几十块钱，是买不到自动化工作流的](https://ai.feishu.cn/docx/DzKqdKRDno7Etkxo1zXccShqnMe)
 
-+   [📕电商-自动化运营实战分享](https://ai.feishu.cn/docx/IK5tdeCWAootXvx9QBhcP2t8nFg)
++ [📕电商-自动化运营实战分享](https://ai.feishu.cn/docx/IK5tdeCWAootXvx9QBhcP2t8nFg)

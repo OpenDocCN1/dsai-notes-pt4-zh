@@ -1,18 +1,14 @@
+
 # 20250211-创新的黄金时代：谷歌CEO巴黎AI行动峰会重磅演讲
 
 > 来源：[https://aigcreative.feishu.cn/docx/WNxjdjhiIoVEsUxaRpvca7xAnhc](https://aigcreative.feishu.cn/docx/WNxjdjhiIoVEsUxaRpvca7xAnhc)
-
-> 原文：https://blog.google/technology/ai/sundar-pichai-ai-action-summit/?utm_source=tw&utm_medium=social&utm_campaign=og&utm_content=&utm_term=#whygoogleai
-
-![](img/6018cc8f0e7af23e2a91e3cb7f6019fb.png)
-
+> 原文：`https://blog.google/technology/ai/sundar-pichai-ai-action-summit/?utm_source=tw&utm_medium=social&utm_campaign=og&utm_content=&utm_term=#whygoogleai`
+> ![](img/6018cc8f0e7af23e2a91e3cb7f6019fb.png)
 > Google CEO 桑达尔·皮查伊（Sundar Pichai）在法国巴黎的 AI 行动高峰会上发表演讲，强调了人工智能（AI）作为一代人中最重要的技术，以及它在改进社会进步、科学发现和经济增长方面的巨大潜力。
-
 >
-
 > 以下是演讲全文内容：
 
-尊敬的各位领导、同仁： 今天能与大家齐聚一堂，我感到非常荣幸。
+尊敬的各位领导、同仁：今天能与大家齐聚一堂，我感到非常荣幸。
 
 马克龙总统，感谢您的盛情邀请，让我们得以汇聚如此多杰出人士共商大计。
 
@@ -54,11 +50,11 @@
 
 我们始终在开拓前沿。
 
-团队发表的生成式AI论文被引量超出全球其他企业或学术机构三倍有余。 推动该领域发展的一部分工作在于构建基础架构。这包括我们覆盖超200万英里陆地和海底光缆的全球网络。
+团队发表的生成式AI论文被引量超出全球其他企业或学术机构三倍有余。推动该领域发展的一部分工作在于构建基础架构。这包括我们覆盖超200万英里陆地和海底光缆的全球网络。
 
 我们还自主研发了第六代人工智能专用芯片——张量处理单元（TPU）。仅过去两代产品的迭代，其碳效率已提升三倍。
 
-这些基础设施孕育了如Gemini等前沿模型，其在文本、图像、视频、音频及代码等多模态信息处理、长上下文理解以及智能体能力方面取得重大突破。 我们的技术生态更使开发者、创业者、企业等各界都能运用这些尖端科技。
+这些基础设施孕育了如Gemini等前沿模型，其在文本、图像、视频、音频及代码等多模态信息处理、长上下文理解以及智能体能力方面取得重大突破。我们的技术生态更使开发者、创业者、企业等各界都能运用这些尖端科技。
 
 最终，我们致力于打造真正惠及全球用户的AI应用。目前已有七款产品的用户量突破20亿——如地图、搜索和安卓系统。所有这些产品都依托于我们的人工智能创新成果，以及最新的Gemini模型驱动。
 
@@ -106,7 +102,7 @@ Alphabet旗下公司Isomorphic Labs正基于AlphaFold推进工作。他们通过
 
 在印度和泰国，我们联合当地机构开展600万次糖尿病视网膜病变（可预防的致盲疾病）AI筛查，所有检测均对患者免费开放。
 
-除医疗领域外，AI正提升自然灾害应对能力。 我们AI驱动的洪水预警系统FloodHub现已覆盖100多国7亿人口，即使在数据匮乏地区也能提供长达7天的预警窗口。
+除医疗领域外，AI正提升自然灾害应对能力。我们AI驱动的洪水预警系统FloodHub现已覆盖100多国7亿人口，即使在数据匮乏地区也能提供长达7天的预警窗口。
 
 在27个国家，我们运用AI技术精准绘制大规模野火边界并提供实时信息。过去一年已触达3000万人，上月洛杉矶山火期间成功协助居民安全撤离。
 
@@ -132,7 +128,7 @@ Alphabet旗下公司Isomorphic Labs正基于AlphaFold推进工作。他们通过
 
 ## 06、公共政策如何扮演重要角色？
 
-公共政策在推动以下四个领域发展中将发挥重要作用。 成功的政策应具备以下特点：
+公共政策在推动以下四个领域发展中将发挥重要作用。成功的政策应具备以下特点：
 
 +   管控风险的同时不阻碍创新、进步与积极影响；
 
@@ -162,4 +158,4 @@ Alphabet旗下公司Isomorphic Labs正基于AlphaFold推进工作。他们通过
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

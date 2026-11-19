@@ -1,12 +1,13 @@
+
 # 奇绩大模型日报（4月 9日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/QfihdwYonoO6Mcxsf5VcqMuLnZb](https://miracleplus.feishu.cn/docx/QfihdwYonoO6Mcxsf5VcqMuLnZb)
 
-# 特别活动
+## 特别活动
 
 ![](img/a7805031cadc9dbf107d0ff38bb91106.png)
 
-# 推特
+## 推特
 
 ### 微软人工智能将在伦敦市中心开设一个新的人工智能中心
 
@@ -18,121 +19,121 @@ https://x.com/mustafasuleyman/status/1777341903597617506
 
 宣布在伦敦成立新的微软人工智能中心
 
-微软最近宣布成立微软人工智能,这是一个新成立的组织,旨在帮助推进我们的消费者人工智能产品和研究,包括 Copilot。在这一消息的基础上,我很高兴地宣布,微软人工智能将在伦敦市中心开设一个新的人工智能中心。微软人工智能伦敦将开展开创性的工作,以推进最先进的语言模型及其支持基础设施,并与微软的人工智能团队以及我们的合作伙伴(包括 OpenAI)密切合作,为基础模型创建世界一流的工具。
+微软最近宣布成立微软人工智能,这是一个新成立的组织,旨在帮助推进我们的消费者人工智能产品和研究,包括 `Copilot`。在这一消息的基础上,我很高兴地宣布,微软人工智能将在伦敦市中心开设一个新的人工智能中心。微软人工智能伦敦将开展开创性的工作,以推进最先进的语言模型及其支持基础设施,并与微软的人工智能团队以及我们的合作伙伴(包括 `OpenAI`)密切合作,为基础模型创建世界一流的工具。
 
-这个新的人工智能中心将由杰出的人工智能科学家和工程师乔丹·霍夫曼(Jordan Hoffmann)领导。在加入微软人工智能之前,霍夫曼曾在位于伦敦的 Inflection 和 DeepMind 担任人工智能先驱。霍夫曼将与一群才华横溢的微软人工智能团队成员在我们位于伦敦帕丁顿的办公室共事。
+这个新的人工智能中心将由杰出的人工智能科学家和工程师乔丹·霍夫曼领导。在加入微软人工智能之前,霍夫曼曾在位于伦敦的 Inflection 和 DeepMind 担任人工智能先驱。霍夫曼将与一群才华横溢的微软人工智能团队成员在我们位于伦敦帕丁顿的办公室共事。
 
 ![](img/1692712b2c97be36d9d4d43863bc72bd.png)
 
-### Stable LM 2 - 12B：多语言模型， 性能与 Mixtral 相当
+### `Stable LM 2 - 12B`：多语言模型， 性能与 `Mixtral` 相当
 
 贡献人：
 
 https://x.com/reach_vb/status/1777437448009597234
 
-Stable LM 2 - 12B ⚡
+`Stable LM 2 - 12B` ⚡
 
-\> 多语言 - 英语、西班牙语、德语、意大利语、法语、葡萄牙语和荷兰语。
+> 多语言 - 英语、西班牙语、德语、意大利语、法语、葡萄牙语和荷兰语。
 
-\> 性能与 Mixtral 相当。
+> 性能与 `Mixtral` 相当。
 
-\> 开放访问。
+> 开放访问。
 
-\> 发布了基础模型和指令调优模型。
+> 发布了基础模型和指令调优模型。
 
-\> 指令调优版本可用于工具使用和函数调用。
+> 指令调优版本可用于工具使用和函数调用。
 
-\> 非常适合 RAG(Retrieval-Augmented Generation,检索增强生成)!
+> 非常适合 `RAG(Retrieval-Augmented Generation,检索增强生成)`!
 
-\> 在 Transformers 🤗 中试用
+> 在 `Transformers` 🤗 中试用
 
 ![](img/6b5905c2558e2db62090fc5f7caacaa9.png)
 
-### Morph：完全开源的 AI 驱动的答案引擎，具有生成式用户界面
+### `Morph`：完全开源的 AI 驱动的答案引擎，具有生成式用户界面
 
 贡献人：
 
 https://x.com/miiura/status/1777350693596139546
 
-介绍 morph:一个完全开源的 AI 驱动的答案引擎,具有生成式用户界面。使用 @vercel 的 AI SDK 构建,它可以提供出色的流式结果。
+介绍 `morph`:一个完全开源的 AI 驱动的答案引擎,具有生成式用户界面。使用 `@vercel` 的 AI SDK 构建,它可以提供出色的流式结果。
 
 🧱 技术栈
 
-- 应用框架:@nextjs
+- 应用框架:`@nextjs`
 
-- 文本流/生成式 UI:@vercel AI SDK
+- 文本流/生成式 UI:`@vercel AI SDK`
 
-- 生成模型:@OpenAI
+- 生成模型:`@OpenAI`
 
-- 搜索 API:@tavilyai
+- 搜索 API:`@tavilyai`
 
-- 组件库:@shadcn/ui
+- 组件库:`@shadcn/ui`
 
-- 无头组件基元:@radix\_ui
+- 无头组件基元:`@radix_ui`
 
-- 样式:@tailwindcss
+- 样式:`@tailwindcss`
 
 ![](img/09842fe04d16888b5f8beab03c388dd8.png)
 
-[ssstwitter.com_1712620308958.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H1TVbZLwWoKAw3x2ozPcThymnZc)
+[`ssstwitter.com_1712620308958.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/H1TVbZLwWoKAw3x2ozPcThymnZc)
 
-### NanoLLaVA：您口袋里的强大的 1B 视觉语言模型
+### `NanoLLaVA`：您口袋里的强大的 `1B` 视觉语言模型
 
 贡献人：
 
 https://x.com/stablequan/status/1777375755653300413
 
-🎉 隆重介绍 nanoLLaVA:您口袋里的强大的 1B 视觉语言模型🚀💡
+🎉 隆重介绍 `nanoLLaVA`:您口袋里的强大的 `1B` 视觉语言模型🚀💡
 
-🔍 nanoLLaVA 将多模态 AI 的能力压缩到仅 5GB 的显存中,使其非常适合边缘设备。📱💻
+🔍 `nanoLLaVA` 将多模态 AI 的能力压缩到仅 `5GB` 的显存中,使其非常适合边缘设备。📱💻
 
 🌟 立即体验设备上高效、尖端的视觉理解能力!
 
 ![](img/05c037659529bd0b4805d001c086d121.png)
 
-### 语言模型为什么会在搜索方面存在困难？Kanishk Gandhi谈语言模型的数据问题
+### 语言模型为什么会在搜索方面存在困难？`Kanishk Gandhi`谈语言模型的数据问题
 
 贡献人：
 
 https://x.com/gandhikanishk/status/1777358353045622891
 
-语言模型在搜索方面存在困难,这不是架构问题,而是数据问题!它们很少看到如何搜索或回溯。我们展示了如何通过将搜索过程表示为扁平化的字符串,即搜索流(SoS),来教导大语言模型进行搜索!
+语言模型在搜索方面存在困难,这不是架构问题,而是数据问题!它们很少看到如何搜索或回溯。我们展示了如何通过将搜索过程表示为扁平化的字符串,即搜索流(`SoS`),来教导大语言模型进行搜索!
 
 ![](img/f14d23aa34305647e88e2456e0fd47c1.png)
 
-[ssstwitter.com_1712646864014.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FbHCb0nVfokjUZxuVN6cXMROnEb)
+[`ssstwitter.com_1712646864014.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FbHCb0nVfokjUZxuVN6cXMROnEb)
 
-### 哪些RAG表现最好？ARAGOG：对高级RAG技术最全面的评估调查之一分析：HyDE和LLM重新排序可以提高检索精度
+### 哪些`RAG`表现最好？`ARAGOG`：对高级`RAG`技术最全面的评估调查之一分析：`HyDE`和`LLM`重新排序可以提高检索精度
 
 贡献人：
 
 https://x.com/llama_index/status/1777441831262818403
 
-有成千上万的RAG(检索增强生成)技术和教程,但哪些表现最好呢?
+有成千上万的`RAG`(检索增强生成)技术和教程,但哪些表现最好呢?
 
-Matous Eibich的ARAGOG是对高级RAG技术最全面的评估调查之一,测试了从"经典向量数据库"到重新排序(@cohere, LLM)、MMR(最大边际相关性)以及@llama_index原生高级技术(句子窗口检索、文档摘要索引)的所有内容。
+`Matous Eibich`的`ARAGOG`是对高级`RAG`技术最全面的评估调查之一,测试了从"经典向量数据库"到重新排序(`@cohere`, `LLM`)、`MMR`(最大边际相关性)以及`@llama_index`原生高级技术(句子窗口检索、文档摘要索引)的所有内容。
 
 研究发现 💡:
 
-✅ HyDE和LLM重新排序可以提高检索精度
+✅ `HyDE`和`LLM`重新排序可以提高检索精度
 
-⚠️ MMR和多查询技术似乎没有那么有效
+⚠️ `MMR`和多查询技术似乎没有那么有效
 
-✅ 句子窗口检索、自动合并检索和文档摘要索引(都是@llama_index的原生技术)在检索精度和答案相似性方面都有很大的优势!(同时也有有趣的权衡)。
+✅ 句子窗口检索、自动合并检索和文档摘要索引(都是`@llama_index`的原生技术)在检索精度和答案相似性方面都有很大的优势!(同时也有有趣的权衡)。
 
 强烈建议您完整阅读这篇论文。查看:https://arxiv.org/pdf/2404.01037.pdf
 
 ![](img/d9d0333961c1d72f052317132bb7da0b.png)
 
-# 资讯
+## 资讯
 
-### Meta 下周发布 Llama3 两个版本！
+### Meta 下周发布 `Llama3` 两个版本！
 
 贡献人：
 
 https://mp.weixin.qq.com/s/vU7dB-NT6bfVjcxALLSW0g
 
-根据 Information，Meta 正计划在下周推出其即将发布的 Llama 3 的两个小版本，这些模型将作为今年夏天预期推出的 Llama 3 最大版本的先行者，发布这两个小型模型很可能会激发人们对即将推出的 Llama 3 的兴趣，该模型将在去年 7 月推出的 Llama 2之后约 1 年推出。
+根据 `Information`，Meta 正计划在下周推出其即将发布的 `Llama 3` 的两个小版本，这些模型将作为今年夏天预期推出的 `Llama 3` 最大版本的先行者，发布这两个小型模型很可能会激发人们对即将推出的 `Llama 3` 的兴趣，该模型将在去年 7 月推出的 `Llama 2`之后约 1 年推出。
 
 ![](img/b47919a2e65d89f37064ae5b7a79f7a6.png)
 
@@ -142,51 +143,51 @@ https://mp.weixin.qq.com/s/vU7dB-NT6bfVjcxALLSW0g
 
 https://mp.weixin.qq.com/s/KUoC7lGAy8m8A_6Uz0WkUw
 
-在国内，生成式 AI 引发的这场算力竞赛也变得愈发激烈。但除了疯狂堆卡，企业还有没**有其他更加经济、有效的方法来提升算力，尤其是在 AI 芯片**国产化进程加速的当下？对此，中科院计算所编译团队负责人、中科加禾创始人崔慧敏提到了一条鲜有人涉足的路径 —— 编译技术。编译的作用就像一位翻译，它能把高级编程语言翻译成芯片可以理解并执行的机器语言。同时编译器还要做优化，让生成的机器代码运行起来更高效。这种优化的力量有多大？崔慧敏提到，「我们能做到的是在不降低算法精度的情况下，把算力的利用效率给提上来，提供额外的 2~10 倍的性能提升。」这个数字可能超出了很多人的预料，就像崔慧敏所说，「在 AI 这样的负载里面，编译器的作用其实是被远远低估了的。」
+在国内，生成式 AI 引发的这场算力竞赛也变得愈发激烈。但除了疯狂堆卡，企业还有没有其他更加经济、有效的方法来提升算力，尤其是在 AI 芯片国产化进程加速的当下？对此，中科院计算所编译团队负责人、中科加禾创始人崔慧敏提到了一条鲜有人涉足的路径 —— 编译技术。编译的作用就像一位翻译，它能把高级编程语言翻译成芯片可以理解并执行的机器语言。同时编译器还要做优化，让生成的机器代码运行起来更高效。这种优化的力量有多大？崔慧敏提到，「我们能做到的是在不降低算法精度的情况下，把算力的利用效率给提上来，提供额外的 `2~10` 倍的性能提升。」这个数字可能超出了很多人的预料，就像崔慧敏所说，「在 AI 这样的负载里面，编译器的作用其实是被远远低估了的。」
 
 ![](img/286b7875aef528fd1e89ba0fe41b717c.png)
 
-### 纯C语言手搓GPT-2，前OpenAI、特斯拉高管新项目火了
+### 纯C语言手搓`GPT-2`，前`OpenAI`、`Autopilot`高管新项目火了
 
 贡献人：
 
 https://mp.weixin.qq.com/s/YMuq9Jo9Nibl1QFbLNxazg
 
-众所周知，大语言模型还在快速发展，应该有很多可以优化的地方。我用纯 C 语言来写，是不是能优化一大截？也许很多人开过这样的脑洞，现在有大佬实现了。今天凌晨，前特斯拉 Autopilot 负责人、OpenAI 科学家 Andrej Karpathy发布了一个仅用 1000 行代码即可在 CPU/fp32 上实现 GPT-2 训练的项目「llm.c」。GitHub 链接：https://github.com/karpathy/llm.c
+众所周知，大语言模型还在快速发展，应该有很多可以优化的地方。我用纯 C 语言来写，是不是能优化一大截？也许很多人开过这样的脑洞，现在有大佬实现了。今天凌晨，前特斯拉 `Autopilot` 负责人、`OpenAI` 科学家 Andrej Karpathy 发布了一个仅用 1000 行代码即可在 `CPU/fp32` 上实现 `GPT-2` 训练的项目「`llm.c`」。GitHub 链接：https://github.com/karpathy/llm.c
 
 消息一出，立即引发了机器学习社区的热烈讨论，项目的 Star 量不到七个小时就冲上了 2000。有网友表示，大佬从零开始用 C 语言写大模型只为好玩，我等只能膜拜。
 
 ![](img/bf90d312849f6107e9824b19b124a902.png)
 
-### Nat. Mach. Intell.|设计超高效疫苗，普林斯顿团队开发首个解码mRNA序列大模型
+### `Nat. Mach. Intell.`|设计超高效疫苗，普林斯顿团队开发首个解码`mRNA`序列大模型
 
 贡献人：
 
 https://mp.weixin.qq.com/s/OVRY-R7gROFsGd8krd6fMQ
 
-普林斯顿王梦迪团队迎来了一项具有划时代意义的突破，该团队开发了世界首个解码mRNA非翻译区域序列的大模型，用于准确预测从mRNA到蛋白质的转录功能，及设计新序列用于mRNA疫苗。该研究论文的题目是「A 5’ UTR Language Model for Decoding Untranslated Regions of mRNA and Function Predictions」，已被《Nature Machine Intelligence接收。这篇论文意味着大语言模型可以用于预测和设计mRNA疫苗，其中新设计的序列经过实验证实远高于传统疫苗的转录效率。AI和语言模型正在颠覆生物学和制药研究中的传统方法。
+普林斯顿王梦迪团队迎来了一项具有划时代意义的突破，该团队开发了世界首个解码`mRNA`非翻译区域序列的大模型，用于准确预测从`mRNA`到蛋白质的转录功能，及设计新序列用于`mRNA`疫苗。该研究论文的题目是「A 5’ UTR Language Model for Decoding Untranslated Regions of mRNA and Function Predictions」，已被《Nature Machine Intelligence》接收。这篇论文意味着大语言模型可以用于预测和设计`mRNA`疫苗，其中新设计的序列经过实验证实远高于传统疫苗的转录效率。AI和语言模型正在颠覆生物学和制药研究中的传统方法。
 
 ![](img/3d08e247880c3153c875940cd865d2db.png)
 
-### 北大开源最强aiXcoder-7B代码大模型！聚焦真实开发场景，专为企业私有部署设计
+### 北大开源最强`aiXcoder-7B`代码大模型！聚焦真实开发场景，专为企业私有部署设计
 
 贡献人：
 
 https://mp.weixin.qq.com/s/YujpEG5XyAClLoxOH3yH4Q
 
-从科技圈最新动态来看，最近**AI代码生成**概念实火。可是，小伙**伴们有没有感觉，AI刷**程序题比较亮眼，到了企业真实开**发场景中，**总感**觉欠点火候？恰**在**此时，一位低调的**资深大玩家aiXcoder出手了，放出大招：它就是全新开源的代码大模型——aiXcoder-7B Base版，一个专门适合在企业软件开发场景中部署的代码大模型。等等，一个“仅”70亿参数的代码大模型，能展现出什么样的AI编程水平？先看看在HumanEval、MBPP和MultiPL-E三大主流评测集上的表现，它平均得分居然超过340亿参数的Codellama。这个模型不仅打败了一众开源大模型、成为百亿级代码大模型中最强，还有特别的优势：一改传统的“刷题式”代码生成，它专门针对企业级软件项目，在真实开发场景下效果最好——代码生成补全能力、和跨文件能力经过测试，都是No.）。言外之意，aiXcoder-7B不玩“虚”的，可以hold得住企业真实业务场景。
+从科技圈最新动态来看，最近`AI代码生成`概念实火。可是，小伙伴们有没有感觉，`AI`刷程序题比较亮眼，到了企业真实开发场景中，总感觉欠点火候？恰在此时，一位低调的资深大玩家`aiXcoder`出手了，放出大招：它就是全新开源的代码大模型——`aiXcoder-7B Base`版，一个专门适合在企业软件开发场景中部署的代码大模型。等等，一个“仅”`70亿`参数的代码大模型，能展现出什么样的`AI`编程水平？先看看在`HumanEval`、`MBPP`和`MultiPL-E`三大主流评测集上的表现，它平均得分居然超过`340亿`参数的`Codellama`。这个模型不仅打败了一众开源大模型、成为百亿级代码大模型中最强，还有特别的优势：一改传统的“刷题式”代码生成，它专门针对企业级软件项目，在真实开发场景下效果最好——代码生成补全能力、和跨文件能力经过测试，都是`No.`。言外之意，`aiXcoder-7B`不玩“虚”的，可以hold得住企业真实业务场景。
 
 ![](img/d92c10ddcd7c84d57fda6468b179f750.png)
 
-### 联发科推出生成式 AI 服务平台“达哥”，支持“最强繁体中文大模型”MR BreeXe
+### 联发科推出生成式 AI 服务平台“达哥”，支持“最强繁体中文大模型”`MR BreeXe`
 
 贡献人：
 
 https://www.ithome.com/0/760/772.htm
 
-据联发科官方消息，在今日举行的生成式 AI 论坛期间，联**发科生成式 AI 服**务平台 MediaTek DaVinci 正式推出，亦称“联发科技达哥”，目前已有超过 40 家厂商加入其生态系统。据悉，该工具最初为集团内部生成式 AI 工具，被广泛应用于软件开发的需求分析和规格设计、人资的自动媒合、财务的报销流程、法务的专利翻译和合约诉讼等，集团渗透率达到 96%。
+据联发科官方消息，在今日举行的生成式 AI 论坛期间，联发科生成式 AI 服务平台 `MediaTek DaVinci` 正式推出，亦称“联发科技达哥”，目前已有超过 40 家厂商加入其生态系统。据悉，该工具最初为集团内部生成式 AI 工具，被广泛应用于软件开发的需求分析和规格设计、人资的自动媒合、财务的报销流程、法务的专利翻译和合约诉讼等，集团渗透率达到 96%。
 
-同时，联发创新基地还发布了该平台最新的繁体中文大型语言模型 MediaT**e**k** Research BreeXe（IT之家**下文简称 MR BreeXe）。 MR BreeXe 以 Mixtral 8x7B 模型为基础开发，继承 Mixtral 多专家模型特有的节省运算资源、提升速度优势，号称在繁体中文测试项目（TMMLU+、MT Bench TW）超越 GPT-3.5，并对台湾地区常见的地端应用进行了“特别优化”。
+同时，联发创新基地还发布了该平台最新的繁体中文大型语言模型 `MediaTek Research BreeXe`（IT之家下文简称 `MR BreeXe`）。`MR BreeXe` 以 `Mixtral 8x7B` 模型为基础开发，继承 `Mixtral` 多专家模型特有的节省运算资源、提升速度优势，号称在繁体中文测试项目（`TMMLU+`、`MT Bench TW`）超越 `GPT-3.5`，并对台湾地区常见的地端应用进行了“特别优化”。
 
 ![](img/4e2d4a55b4edc80d3d61476c150a9aea.png)
 
@@ -200,27 +201,27 @@ https://mp.weixin.qq.com/s/gGZ3V3ZsMfT8klvuCw7L4g
 
 ![](img/eeb563e743ec648498f5843789619b68.png)
 
-### CVPR 2024 | 分割一切模型SAM泛化能力差？域适应策略给解决了
+### CVPR 2024 | 分割一切模型`SAM`泛化能力差？域适应策略给解决了
 
 贡献人：
 
 https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
-大语言模型（LLMs）的成功激发了计算机视觉领域探索分割基础模型的兴趣。这些基础分割模型通常通过 Prompt Engineer 来进行 zero/few 图像分割。其中，Segment Anything Model（SAM）是最先进的图像分割基础模型。
+大语言模型（`LLMs`）的成功激发了计算机视觉领域探索分割基础模型的兴趣。这些基础分割模型通常通过 Prompt Engineer 来进行 zero/few 图像分割。其中，`Segment Anything Model`（`SAM`）是最先进的图像分割基础模型。
 
-将预训练好的 SAM 适应到下游任务主要面临三个挑战：
+将预训练好的 `SAM` 适应到下游任务主要面临三个挑战：
 
-+   **首先，传**统的无监督域自适应范式需要源数据集和目标数据集，由于隐私和计算成本较为不可行。
++   首先，传统的无监督域自适应范式需要源数据集和目标数据集，由于隐私和计算成本较为不可行。
 
-+   **其次，对于域适应，更**新所有权重通常性能更好，同时也受到了昂贵的内存成本的限制。
++   其次，对于域适应，更新所有权重通常性能更好，同时也受到了昂贵的内存成本的限制。
 
-+   最后，SAM 可以针对不同种类、不同颗粒度的提示 P**rompt，展现出多样化的**分割能力，因此当缺乏下游任务的提示信息时，无监督适应将非常具有挑战性。
++   最后，`SAM` 可以针对不同种类、不同颗粒度的提示 `Prompt`，展现出多样化的分割能力，因此当缺乏下游任务的提示信息时，无监督适应将非常具有挑战性。
 
-**为了应对上**述**挑战，港**中**深提出了一种具有**锚点正则化和低秩**微调的弱监督自训**练架构，以提高自适应的鲁棒性和计算效率。
+为了应对上述挑战，港中深提出了一种具有锚点正则化和低秩微调的弱监督自训练架构，以提高自适应的鲁棒性和计算效率。
 
 ![](img/7c2e6464f5e779379e734e170e8fb4e6.png)
 
-# 论文
+## 论文
 
 ### 密集训练，稀疏推断：重新思考混合专家语言模型的训练
 
@@ -228,37 +229,39 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 链接：http://arxiv.org/abs/2404.05567v1
 
-混合专家语言模型（MoE）可以在不牺牲性能的情况下，与密集模型相比，将计算成本降低2-4倍，使其在计算受限的场景中更加高效。然而，MoE模型通常需要2-4倍的参数才能实现与密集模型相当的性能，这会导致更大的GPU内存需求，使得MoE模型在像自回归生成这样的I/O受限场景中效率较低。在本研究中，我们提出了一种混合密集训练和稀疏推断框架用于MoE模型（DS-MoE），通过在训练期间在所有专家之间使用密集计算，然后在推理期间使用稀疏计算，实现了强大的计算和参数效率。我们的实验表明，我们的DS-MoE模型比标准稀疏MoE更具参数效率，在总参数大小和性能方面与密集模型不相上下，同时计算成本更低（激活模型参数的30-40％）。使用vLLM进行的性能测试显示，我们的DS-MoE-6B模型比类似的密集模型（如Mistral-7B）运行速度快高达1.86倍，比类似的MoE（如DeepSeekMoE-16B和Qwen1.5-MoE-A2.7B）快1.50-1.71倍。
+混合专家语言模型（`MoE`）可以在不牺牲性能的情况下，与密集模型相比，将计算成本降低`2-4`倍，使其在计算受限的场景中更加高效。然而，`MoE`模型通常需要`2-4`倍的参数才能实现与密集模型相当的性能，这会导致更大的`GPU`内存需求，使得`MoE`模型在像自回归生成这样的`I/O`受限场景中效率较低。在本研究中，我们提出了一种混合密集训练和稀疏推断框架用于`MoE`模型（`DS-MoE`），通过在训练期间在所有专家之间使用密集计算，然后在推理期间使用稀疏计算，实现了强大的计算和参数效率。我们的实验表明，我们的`DS-MoE`模型比标准稀疏`MoE`更具参数效率，在总参数大小和性能方面与密集模型不相上下，同时计算成本更低（激活模型参数的`30-40％`）。使用`vLLM`进行的性能测试显示，我们的`DS-MoE-6B`模型比类似的密集模型（如`Mistral-7B`）运行速度快高达`1.86`倍，比类似的`MoE`（如`DeepSeekMoE-16B`和`Qwen1.5-MoE-A2.7B`）快`1.50-1.71`倍。
 
 ![](img/59b04fefc7341185e7183403ed7d250a.png)
 
-### 语言模型的物理学：第3.3部分，知识容量缩放定律
+### 语言模型的物理学：第`3.3`部分，知识容量缩放定律
 
 贡献人：
 
 链接：http://arxiv.org/abs/2404.05405v1
 
-规模定律描述了语言模型的大小与其能力之间的关系。与以前评估模型能力的研究不同，我们通过估计模型存储的知识位数来评估模型的能力。我们关注作为元组表示的事实知识，例如从维基百科页面中提取的（美国，首都，华盛顿特区）。通过多个受控数据集，我们确认语言模型可以且只能每个参数存储2位知识，即使量化为int8，并且这样的知识可以灵活地用于下游应用。因此，根据我们的估计，7B模型可以存储14B位知识，超过英文维基百科和教科书的总和。
+规模定律描述了语言模型的大小与其能力之间的关系。与以前评估模型能力的研究不同，我们通过估计模型存储的知识位数来评估模型的能力。我们关注作为元组表示的事实知识，例如从维基百科页面中提取的（美国，首都，华盛顿特区）。通过多个受控数据集，我们确认语言模型可以且只能每个参数存储`2`位知识，即使量化为`int8`，并且这样的知识可以灵活地用于下游应用。因此，根据我们的估计，`7B`模型可以存储`14B`位知识，超过英文维基百科和教科书的总和。
 
-更广泛地说，我们提出12项结果，说明训练持续时间、模型架构、量化、MoE等稀疏约束和数据信噪比如何影响模型的知识存储能力。值得注意的见解包括：
+更广泛地说，我们提出`12`项结果，说明训练持续时间、模型架构、量化、`MoE`等稀疏约束和数据信噪比如何影响模型的知识存储能力。值得注意的见解包括：
 
-+   具有旋转嵌入的GPT-2架构，在知识存储方面与LLaMA/Mistral架构相匹敌甚至超越，特别是在较短的训练持续时间内。这是因为LLaMA/Mistral使用了不太稳定且难以训练的GatedMLP。
++   具有旋转嵌入的`GPT-2`架构，在知识存储方面与`LLaMA/Mistral`架构相匹敌甚至超越，特别是在较短的训练持续时间内。这是因为`LLaMA/Mistral`使用了不太稳定且难以训练的`GatedMLP`。
 
-+   在训练数据前添加域名（例如，wikipedia.org）显著增加了模型的知识容量。语言模型可以自主识别和优先考虑知识丰富的域，优化其存储能力。
++   在训练数据前添加域名（例如，`wikipedia.org`）显著增加了模型的知识容量。语言模型可以自主识别和优先考虑知识丰富的域，优化其存储能力。
 
 ![](img/bfffecd9a6f8b0497e4fb9642283c684.png)
 
-### MIMIR：领域专家个性化智能体调优的简化平台
+### `MIMIR`：领域专家个性化智能体调优的简化平台
 
 贡献人：
 
 链接：http://arxiv.org/abs/2404.04285v1
 
+
+
 最近，大型语言模型（LLMs）已经发展成具有规划、工具使用和跨多种任务执行能力的互动智能体。然而，没有特定智能体调整，像LLaMA这样的开源模型目前难以匹敌GPT-4的效率，尤其是缺乏用于微调的智能体调整数据集时。为此，我们推出了Mimir：一个简化的平台，提供可定制的管道，使用户能够大规模利用私有知识和公开、合法的数据集进行个性化智能体调整。此外，Mimir支持从相同输入生成通用的指令调整数据集。这种双重功能确保通过该平台开发的语言智能体既具有特定智能体能力，又具有一般能力。 Mimir将这些功能集成到一个连贯的端到端平台中，从上传个性化文件到一键智能体微调都得以便捷进行。
 
 ![](img/eb3d62b7c0e828acf16e0e6fdc87d311.png)
 
-### 使用合成数据进行训练有多糟糕？语言模型崩溃的统计分析
+## 使用合成数据进行训练有多糟糕？语言模型崩溃的统计分析
 
 贡献人：
 
@@ -268,7 +271,7 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 ![](img/36b1fb35e650a3146d0bfb807d199431.png)
 
-### **探索与理解DPO限制的理论视角**
+## 探索与理解DPO限制的理论视角
 
 贡献人：
 
@@ -278,7 +281,7 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 ![](img/7f1d8d91b52a86e6f3ad60dd28eb0425.png)
 
-### **SqueezeAttention: 通过分层最优**预算在LLM推理中管理KV缓存的二维方式
+## SqueezeAttention: 通过分层最优预算在LLM推理中管理KV缓存的二维方式
 
 贡献人：
 
@@ -288,7 +291,7 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 ![](img/d9b1aafc645546251f8efbe7bc179aa1.png)
 
-### **一个大规模的μ-转移的探索**
+## 一个大规模的μ-转移的探索
 
 贡献人：
 
@@ -298,7 +301,7 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 ![](img/bb1cff154b723441d09d852e2d98c866.png)
 
-### nanoLM: 通过准确损失预测跨尺度预训练LM的可负担性基准
+## nanoLM: 通过准确损失预测跨尺度预训练LM的可负担性基准
 
 贡献人：
 
@@ -308,7 +311,7 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 ![](img/0abe08ede00f912ae4c1e563877163c8.png)
 
-### Diffusion-RWKV：为扩散模型扩展RWKV类架构
+## Diffusion-RWKV：为扩散模型扩展RWKV类架构
 
 贡献人：
 
@@ -320,7 +323,7 @@ https://mp.weixin.qq.com/s/KzQTWVGPuSScy_p2J6kqIQ
 
 # 产品
 
-### UI Bakery AI App Generator
+## UI Bakery AI App Generator
 
 贡献人：
 
@@ -330,7 +333,7 @@ UI Bakery 是一个自助低代码平台，允许快速构建定制的 Web 应�
 
 ![](img/f714d94ed92557c0a26ec84221f3371d.png)
 
-### Odaptos
+## Odaptos
 
 贡献人：
 
@@ -342,7 +345,7 @@ Odaptos 提供了一种用于用户体验（UX）研究项目的人工智能工�
 
 # HuggingFace&Github
 
-### FreeAskInternet
+## FreeAskInternet
 
 贡献人：
 
@@ -350,7 +353,7 @@ https://github.com/nashsu/FreeAskInternet
 
 FreeAskInternet 是一个完全免费、私有且在本地运行的搜索聚合器和答案生成器LLM，无需 GPU。用户可以提出一个问题，系统会进行多引擎搜索，并将搜索结果组合到 ChatGPT3.5 中LLM，并根据搜索结果生成答案。
 
-### BIG-AGI
+## BIG-AGI
 
 贡献人：
 
@@ -360,7 +363,7 @@ Big-AGI 是一款面向需要功能、形式、简单性和速度的专业人士
 
 ![](img/44ce857ff53920a631478654eb18b7f2.png)
 
-### Cerule-v0.1
+## Cerule-v0.1
 
 贡献人：
 
@@ -370,7 +373,7 @@ Cerule 是一个小巧而强大的视觉流水模型，基于新发布的 Google
 
 # 投融资
 
-### Multiverse学徒制独角兽，收购Searchlight以聚焦AI
+## Multiverse学徒制独角兽，收购Searchlight以聚焦AI
 
 贡献人：
 
@@ -382,7 +385,7 @@ Multiverse，一家英国的学徒制独角兽企业，已经收购了AI招聘�
 
 ![](img/d908c026f6706ab0d73c9693ab5e9fbf.png)
 
-### Lexverify完成由Midven领投的90万英镑种子轮融资
+## Lexverify完成由Midven领投的90万英镑种子轮融资
 
 贡献人：
 
@@ -394,19 +397,19 @@ https://www.uktechnews.info/2024/03/26/lexverify-secures-900k-seed-investment-le
 
 ![](img/bab22cec1e72b5d7c5ada55bb4279c31.png)
 
-### Lockchain.ai完成460万美元种子轮融资
+## Lockchain.ai完成460万美元种子轮融资
 
 贡献人：
 
 https://www.thesaasnews.com/news/lockchain-ai-raises-4-6-million-in-seed-round
 
-Lockchain.ai，一家总部位于美国乔治亚州雅典的区块链风险管理平台，借助人工智能技术，已正式结束隐身模式，并在种子轮融资中筹集了460万美元。本轮融资由Lerer Hippeau领投，Arrington Capital、Valhalla Ventures、ARCA、RSE/Vayner、Sonic Boom Ventures、Clear Sky Capital的Alex Weiss以及Artico Search参投，White Star Capital在随后的融资周期中加入。Lockchain.ai旨在为区块链生态系统中的交易者、投资者和基金经理提供自动化风险管理解决方案。
+Lockchain.ai，一家总部位于美国乔治州雅典的区块链风险管理平台，借助人工智能技术，已正式结束隐身模式，并在种子轮融资中筹集了460万美元。本轮融资由Lerer Hippeau领投，Arrington Capital、Valhalla Ventures、ARCA、RSE/Vayner、Sonic Boom Ventures、Clear Sky Capital的Alex Weiss以及Artico Search参投，White Star Capital在随后的融资周期中加入。Lockchain.ai旨在为区块链生态系统中的交易者、投资者和基金经理提供自动化风险管理解决方案。
 
 公司官网：https://lockchain.ai/
 
 ![](img/d4236b431b44e9cb177afd4b448a3d9d.png)
 
-### 「原粒半导体」完成新一轮融资，加速大模型算力Chiplet落地
+## 「原粒半导体」完成新一轮融资，加速大模型算力Chiplet落地
 
 贡献人：
 
@@ -418,7 +421,7 @@ https://news.pedaily.cn/202404/532122.shtml
 
 ![](img/51f9c18b89bb83dd86f657a7cface6d4.png)
 
-### AI Infra供应商「星凡科技」获近亿元Pre-A轮融资
+## AI Infra供应商「星凡科技」获近亿元Pre-A轮融资
 
 贡献人：
 
@@ -432,7 +435,7 @@ https://news.pedaily.cn/202404/532158.shtml
 
 # 学习
 
-### 如何理解 natural gradient descent?
+## 如何理解 natural gradient descent?
 
 贡献人：
 
@@ -444,7 +447,7 @@ https://www.zhihu.com/question/266846405/answer/3450931951
 
 ![](img/d5fcb84bfc20237f9cdb2318eac36c0b.png)
 
-### kimi chat大模型的200万长度无损上下文可能是如何做到的？
+## kimi chat大模型的200万长度无损上下文可能是如何做到的？
 
 贡献人：
 
@@ -454,7 +457,7 @@ https://www.zhihu.com/question/649192998/answer/3445754185
 
 ![](img/fb2a9ded7aac53939aa4366db863f71a.png)
 
-### 现代GPU体系结构Cache Operators行为研究
+## 现代GPU体系结构Cache Operators行为研究
 
 贡献人：
 
@@ -464,23 +467,25 @@ https://zhuanlan.zhihu.com/p/691104610
 
 ![](img/72c7a19553ec31f14f0490ff74d21923.png)
 
-### 创业：大模型RAG系统三个月的开发心得和思考
+## 创业：大模型RAG系统三个月的开发心得和思考
 
 贡献人：
 
 https://zhuanlan.zhihu.com/p/690298565
 
+
+
 文章分享了作者在三个月内开发RAG大模型AI产品的经验。RAG（检索增强生成）通过为大语言模型（LLM）提供外部知识源信息，旨在生成更精确的回答并减少误导性信息的产生。开发中遇到的挑战包括LLM的知识更新成本、数据安全等问题。RAG技术能有效减少LLM的“幻觉”问题，提高数据安全性。文章还探讨了RAG技术与架构思考，强调了数据工程、检索生成的重要性，并分享了技术和产品开发的心得，最后讨论了编程语言选择的考虑。
 
 ![](img/346914a19060e55de92748d73f174060.png)
 
-### 一文读懂nsight system与cuda kernel的时间线分析与可视化
+### 一文读懂`nsight system`与`cuda kernel`的时间线分析与可视化
 
 贡献人：
 
-https://zhuanlan.zhihu.com/p/691307737
+`https://zhuanlan.zhihu.com/p/691307737`
 
-文章深入分析了使用nsight system进行GPU性能优化的方法，强调了其在服务器上生成程序运行报告和多平台可视化工具的功能。通过示例程序和分析，文章展示了如何使用nvtx工具标记感兴趣的时间段，对cuda kernel的执行时间线进行了详细探究。实验部分详细解释了GPU上kernel的异步执行特性、CPU与GPU之间的调用关系、以及通过时间线分析来优化程序性能的实际应用。文章突出了nsight system在分析并发执行、kernel执行时间、以及优化cuda程序中的重要作用，为GPU性能优化提供了实用的技术细节和方法。
+文章深入分析了使用`nsight system`进行GPU性能优化的方法，强调了其在服务器上生成程序运行报告和多平台可视化工具的功能。通过示例程序和分析，文章展示了如何使用`nvtx`工具标记感兴趣的时间段，对`cuda kernel`的执行时间线进行了详细探究。实验部分详细解释了GPU上`kernel`的异步执行特性、CPU与GPU之间的调用关系、以及通过时间线分析来优化程序性能的实际应用。文章突出了`nsight system`在分析并发执行、`kernel`执行时间、以及优化`cuda`程序中的重要作用，为GPU性能优化提供了实用的技术细节和方法。
 
 ![](img/8cf5c4d0aad4739a45c673750004df47.png)
 
@@ -488,9 +493,9 @@ https://zhuanlan.zhihu.com/p/691307737
 
 贡献人：
 
-https://www.zhihu.com/question/606381745/answer/3458818089?utm_psn=1760989050050514944
+`https://www.zhihu.com/question/606381745/answer/3458818089?utm_psn=1760989050050514944`
 
-本文探讨了在文本处理中批量归一化（Batch Normalization）的具体实现方法，重点在于理解其在二维数据和计算机视觉（CV）数据中的操作差异。首先，通过PyTorch代码示例，作者解释了在二维数据（如全连接层的输出）中如何应用BatchNorm1d，包括其归一化和仿射变换（缩放+平移）两个步骤。随后，文章比较了BatchNorm和LayerNorm在处理二维数据时的不同点，指出BatchNorm沿着批次维度（dim=0）操作，而LayerNorm在特征向量内部（dim=1）操作。最后，探讨了在CV数据中BatchNorm2d和LayerNorm的实现，强调了BatchNorm2d在每个通道内进行归一化的特性，以及LayerNorm如何对整个输入特征图进行归一化并应用仿射变换。整个讨论通过代码实现和手动计算的对比，清晰地展示了这些归一化技术的工作原理和它们在实际应用中的效果。
+本文探讨了在文本处理中批量归一化（Batch Normalization）的具体实现方法，重点在于理解其在二维数据和计算机视觉（CV）数据中的操作差异。首先，通过`PyTorch`代码示例，作者解释了在二维数据（如全连接层的输出）中如何应用`BatchNorm1d`，包括其归一化和仿射变换（缩放+平移）两个步骤。随后，文章比较了`BatchNorm`和`LayerNorm`在处理二维数据时的不同点，指出`BatchNorm`沿着批次维度（`dim=0`）操作，而`LayerNorm`在特征向量内部（`dim=1`）操作。最后，探讨了在CV数据中`BatchNorm2d`和`LayerNorm`的实现，强调了`BatchNorm2d`在每个通道内进行归一化的特性，以及`LayerNorm`如何对整个输入特征图进行归一化并应用仿射变换。整个讨论通过代码实现和手动计算的对比，清晰地展示了这些归一化技术的工作原理和它们在实际应用中的效果。
 
 ![](img/43a607d031798c292f88544a6b44d082.png)
 
@@ -498,17 +503,15 @@ https://www.zhihu.com/question/606381745/answer/3458818089?utm_psn=1760989050050
 
 贡献人：
 
-https://mp.weixin.qq.com/s/v2rJmmnNr1VB0hg1tt1pmg
+`https://mp.weixin.qq.com/s/v2rJmmnNr1VB0hg1tt1pmg`
 
-文章探讨了语言大模型推理的理论极限及其影响，特别是在单GPU单批次上的硬件利用率。作者Arseny Kapoulkine开发的calm实现，通过最小化依赖和简化实现，旨在达到LLM架构的最大单GPU单批次效率。文中分析了矩阵-向量乘法和注意力计算的处理过程，以及如何通过模型配置和KV缓存大小预测推理速度。此外，通过比较实际推理速度与理论最短时间，可以验证推理系统实现的质量并预测架构变化的影响。
+文章探讨了语言大模型推理的理论极限及其影响，特别是在单GPU单批次上的硬件利用率。作者Arseny Kapoulkine开发的`calm`实现，通过最小化依赖和简化实现，旨在达到LLM架构的最大单GPU单批次效率。文中分析了矩阵-向量乘法和注意力计算的处理过程，以及如何通过模型配置和`KV`缓存大小预测推理速度。此外，通过比较实际推理速度与理论最短时间，可以验证推理系统实现的质量并预测架构变化的影响。
 
 ![](img/bec392d15eb65dcbb70463e85245b2a8.png)
 
 # 声明
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
-
-##
 
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
@@ -520,7 +523,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

@@ -1,8 +1,15 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/WNeEdi0ZDoUKWnxZgy1cSEkUn7d](https://qqs7y1hozd1.feishu.cn/docx/WNeEdi0ZDoUKWnxZgy1cSEkUn7d)
 
-```
+
+
+# LangGraph Corrective RAG Agent 实现
+
+## 1. 导入依赖
+
+```python
 from langchain import hub
 from langchain.output_parsers import PydanticOutputParser
 from langchain_core.output_parsers import StrOutputParser
@@ -14,7 +21,7 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader, WebBas
 from langchain_community.tools import TavilySearchResults
 from langchain_community.vectorstores import Qdrant
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain_core.messages import HumanMessage        
+from langchain_core.messages import HumanMessage
 from langgraph.graph import END, StateGraph
 from typing import Dict, TypedDict
 from langchain_core.prompts import PromptTemplate
@@ -27,44 +34,54 @@ import tempfile
 import os
 from langchain_anthropic import ChatAnthropic
 from tenacity import retry, stop_after_attempt, wait_exponential
+```
 
+## 2. 会话状态与侧边栏初始化
 
+```python
 nest_asyncio.apply()
 
 retriever = None
 
+
 def initialize_session_state():
-    &quot;&quot;&quot;Initialize session state variables for API keys and URLs.&quot;&quot;&quot;
-    if &#x27;initialized&#x27; not in st.session_state:
+    """Initialize session state variables for API keys and URLs."""
+    if 'initialized' not in st.session_state:
         st.session_state.initialized = False
         # Initialize API keys and URLs
-        st.session_state.anthropic_api_key = &quot;&quot;
-        st.session_state.openai_api_key = &quot;&quot;
-        st.session_state.tavily_api_key = &quot;&quot;
-        st.session_state.qdrant_api_key = &quot;&quot;
-        st.session_state.qdrant_url = &quot;http://localhost:6333&quot;
-        st.session_state.doc_url = &quot;https://arxiv.org/pdf/2307.09288.pdf&quot;  
-        
+        st.session_state.anthropic_api_key = ""
+        st.session_state.openai_api_key = ""
+        st.session_state.tavily_api_key = ""
+        st.session_state.qdrant_api_key = ""
+        st.session_state.qdrant_url = "http://localhost:6333"
+        st.session_state.doc_url = "https://arxiv.org/pdf/2307.09288.pdf"
+
+
 def setup_sidebar():
-    &quot;&quot;&quot;Setup sidebar for API keys and configuration.&quot;&quot;&quot;
+    """Setup sidebar for API keys and configuration."""
     with st.sidebar:
-        st.subheader(&quot;API Configuration&quot;)
-        st.session_state.anthropic_api_key = st.text_input(&quot;Anthropic API Key&quot;, value=st.session_state.anthropic_api_key, type=&quot;password&quot;, help=&quot;Required for Claude 3 model&quot;)
-        st.session_state.openai_api_key = st.text_input(&quot;OpenAI API Key&quot;, value=st.session_state.openai_api_key, type=&quot;password&quot;)
-        st.session_state.tavily_api_key = st.text_input(&quot;Tavily API Key&quot;, value=st.session_state.tavily_api_key, type=&quot;password&quot;)
-        st.session_state.qdrant_url = st.text_input(&quot;Qdrant URL&quot;, value=st.session_state.qdrant_url)
-        st.session_state.qdrant_api_key = st.text_input(&quot;Qdrant API Key&quot;, value=st.session_state.qdrant_api_key, type=&quot;password&quot;)
-        st.session_state.doc_url = st.text_input(&quot;Document URL&quot;, value=st.session_state.doc_url)
-        
+        st.subheader("API Configuration")
+        st.session_state.anthropic_api_key = st.text_input("Anthropic API Key", value=st.session_state.anthropic_api_key, type="password", help="Required for Claude 3 model")
+        st.session_state.openai_api_key = st.text_input("OpenAI API Key", value=st.session_state.openai_api_key, type="password")
+        st.session_state.tavily_api_key = st.text_input("Tavily API Key", value=st.session_state.tavily_api_key, type="password")
+        st.session_state.qdrant_url = st.text_input("Qdrant URL", value=st.session_state.qdrant_url)
+        st.session_state.qdrant_api_key = st.text_input("Qdrant API Key", value=st.session_state.qdrant_api_key, type="password")
+        st.session_state.doc_url = st.text_input("Document URL", value=st.session_state.doc_url)
+
         if not all([st.session_state.openai_api_key, st.session_state.anthropic_api_key, st.session_state.qdrant_url]):
-            st.warning(&quot;Please provide the required API keys and URLs&quot;)
+            st.warning("Please provide the required API keys and URLs")
             st.stop()
-        
+
         st.session_state.initialized = True
+
 
 initialize_session_state()
 setup_sidebar()
+```
 
+## 3. API 密钥与嵌入模型配置
+
+```python
 # Use session state variables instead of config
 openai_api_key = st.session_state.openai_api_key
 tavily_api_key = st.session_state.tavily_api_key
@@ -72,7 +89,7 @@ anthropic_api_key = st.session_state.anthropic_api_key
 
 # Update embeddings initialization
 embeddings = OpenAIEmbeddings(
-    model=&quot;text-embedding-3-small&quot;,
+    model="text-embedding-3-small",
     api_key=st.session_state.openai_api_key
 )
 
@@ -81,112 +98,122 @@ client = QdrantClient(
     url=st.session_state.qdrant_url,
     api_key=st.session_state.qdrant_api_key
 )
+```
 
+## 4. Tavily 网络搜索工具
+
+```python
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
 def execute_tavily_search(tool, query):
-    return tool.invoke({&quot;query&quot;: query})
+    return tool.invoke({"query": query})
+
 
 def web_search(state):
-    &quot;&quot;&quot;Web search based on the re-phrased question using Tavily API.&quot;&quot;&quot;
-    print(&quot;~-web search-~&quot;)
-    state_dict = state[&quot;keys&quot;]
-    question = state_dict[&quot;question&quot;]
-    documents = state_dict[&quot;documents&quot;]
-    
+    """Web search based on the re-phrased question using Tavily API."""
+    print("~-web search-~")
+    state_dict = state["keys"]
+    question = state_dict["question"]
+    documents = state_dict["documents"]
+
     # Create progress placeholder
     progress_placeholder = st.empty()
-    progress_placeholder.info(&quot;Initiating web search...&quot;)
-    
+    progress_placeholder.info("Initiating web search...")
+
     try:
         # Validate Tavily API key
         if not st.session_state.tavily_api_key:
-            progress_placeholder.warning(&quot;Tavily API key not provided - skipping web search&quot;)
-            return {&quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: question}}
-        
-        progress_placeholder.info(&quot;Configuring search tool...&quot;)
-        
+            progress_placeholder.warning("Tavily API key not provided - skipping web search")
+            return {"keys": {"documents": documents, "question": question}}
+
+        progress_placeholder.info("Configuring search tool...")
+
         # Initialize Tavily search tool
         tool = TavilySearchResults(
             api_key=st.session_state.tavily_api_key,
             max_results=3,
-            search_depth=&quot;advanced&quot;
+            search_depth="advanced"
         )
-        
+
         # Execute search with retry logic
-        progress_placeholder.info(&quot;Executing search query...&quot;)
+        progress_placeholder.info("Executing search query...")
         try:
             search_results = execute_tavily_search(tool, question)
         except Exception as search_error:
-            progress_placeholder.error(f&quot;Search failed after retries: {str(search_error)}&quot;)
-            return {&quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: question}}
-        
+            progress_placeholder.error(f"Search failed after retries: {str(search_error)}")
+            return {"keys": {"documents": documents, "question": question}}
+
         if not search_results:
-            progress_placeholder.warning(&quot;No search results found&quot;)
-            return {&quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: question}}
-        
+            progress_placeholder.warning("No search results found")
+            return {"keys": {"documents": documents, "question": question}}
+
         # Process results
-        progress_placeholder.info(&quot;Processing search results...&quot;)
+        progress_placeholder.info("Processing search results...")
         web_results = []
         for result in search_results:
             # Extract and format relevant information
             content = (
-                f&quot;Title: {result.get(&#x27;title&#x27;, &#x27;No title&#x27;)}\n&quot;
-                f&quot;Content: {result.get(&#x27;content&#x27;, &#x27;No content&#x27;)}\n&quot;
+                f"Title: {result.get('title', 'No title')}\n"
+                f"Content: {result.get('content', 'No content')}\n"
             )
             web_results.append(content)
-        
+
         # Create document from results
         web_document = Document(
-            page_content=&quot;\n\n&quot;.join(web_results),
+            page_content="\n\n".join(web_results),
             metadata={
-                &quot;source&quot;: &quot;tavily_search&quot;,
-                &quot;query&quot;: question,
-                &quot;result_count&quot;: len(web_results)
+                "source": "tavily_search",
+                "query": question,
+                "result_count": len(web_results)
             }
         )
         documents.append(web_document)
-        
-        progress_placeholder.success(f&quot;Successfully added {len(web_results)} search results&quot;)
-        
+
+        progress_placeholder.success(f"Successfully added {len(web_results)} search results")
+
     except Exception as error:
-        error_msg = f&quot;Web search error: {str(error)}&quot;
+        error_msg = f"Web search error: {str(error)}"
         print(error_msg)
         progress_placeholder.error(error_msg)
     finally:
         progress_placeholder.empty()
-    return {&quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: question}}
+    return {"keys": {"documents": documents, "question": question}}
+```
 
+## 5. 文档加载与向量存储构建
 
-def load_documents(file_or_url: str, is_url: bool = True) -&gt; list:
+```python
+def load_documents(file_or_url: str, is_url: bool = True) -> list:
     try:
         if is_url:
             loader = WebBaseLoader(file_or_url)
             loader.requests_per_second = 1
         else:
             file_extension = os.path.splitext(file_or_url)[1].lower()
-            if file_extension == &#x27;.pdf&#x27;:
+            if file_extension == '.pdf':
                 loader = PyPDFLoader(file_or_url)
-            elif file_extension in [&#x27;.txt&#x27;, &#x27;.md&#x27;]:
+            elif file_extension in ['.txt', '.md']:
                 loader = TextLoader(file_or_url)
             else:
-                raise ValueError(f&quot;Unsupported file type: {file_extension}&quot;)
-        
+                raise ValueError(f"Unsupported file type: {file_extension}")
+
         return loader.load()
     except Exception as e:
-        st.error(f&quot;Error loading document: {str(e)}&quot;)
+        st.error(f"Error loading document: {str(e)}")
         return []
+```
 
-st.subheader(&quot;Document Input&quot;)
-input_option = st.radio(&quot;Choose input method:&quot;, [&quot;URL&quot;, &quot;File Upload&quot;])
+```python
+st.subheader("Document Input")
+input_option = st.radio("Choose input method:", ["URL", "File Upload"])
 
-docs = None  
+docs = None
 
-if input_option == &quot;URL&quot;:
-    url = st.text_input(&quot;Enter document URL:&quot;, value=st.session_state.doc_url)
+if input_option == "URL":
+    url = st.text_input("Enter document URL:", value=st.session_state.doc_url)
     if url:
         docs = load_documents(url, is_url=True)
 else:
-    uploaded_file = st.file_uploader(&quot;Upload a document&quot;, type=[&#x27;pdf&#x27;, &#x27;txt&#x27;, &#x27;md&#x27;])
+    uploaded_file = st.file_uploader("Upload a document", type=['pdf', 'txt', 'md'])
     if uploaded_file:
         # Create a temporary file to store the upload
         with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(uploaded_file.name)[1]) as tmp_file:
@@ -202,13 +229,13 @@ if docs:
     all_splits = text_splitter.split_documents(docs)
 
     client = QdrantClient(url=st.session_state.qdrant_url, api_key=st.session_state.qdrant_api_key)
-    collection_name = &quot;rag-qdrant&quot;
+    collection_name = "rag-qdrant"
 
     try:
         # Try to delete the collection if it exists
         client.delete_collection(collection_name)
     except Exception:
-        pass  
+        pass
 
     client.create_collection(
         collection_name=collection_name,
@@ -225,143 +252,156 @@ if docs:
     # Add documents to the vectorstore
     vectorstore.add_documents(all_splits)
     retriever = vectorstore.as_retriever()
+```
 
+## 6. LangGraph 状态定义与检索节点
 
+```python
 class GraphState(TypedDict):
     keys: Dict[str, any]
 
 
 def retrieve(state):
-    print(&quot;~-retrieve-~&quot;)
-    state_dict = state[&quot;keys&quot;]
-    question = state_dict[&quot;question&quot;]
-    
+    print("~-retrieve-~")
+    state_dict = state["keys"]
+    question = state_dict["question"]
+
     if retriever is None:
-        return {&quot;keys&quot;: {&quot;documents&quot;: [], &quot;question&quot;: question}}
-        
+        return {"keys": {"documents": [], "question": question}}
+
     documents = retriever.get_relevant_documents(question)
-    return {&quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: question}}
+    return {"keys": {"documents": documents, "question": question}}
+```
 
+## 7. 生成节点
 
+```python
 def generate(state):
-    &quot;&quot;&quot;Generate answer using Claude 3 model&quot;&quot;&quot;
-    print(&quot;~-generate-~&quot;)
-    state_dict = state[&quot;keys&quot;]
-    question, documents = state_dict[&quot;question&quot;], state_dict[&quot;documents&quot;]
+    """Generate answer using Claude 3 model"""
+    print("~-generate-~")
+    state_dict = state["keys"]
+    question, documents = state_dict["question"], state_dict["documents"]
     try:
-        prompt = PromptTemplate(template=&quot;&quot;&quot;Based on the following context, please answer the question.
+        prompt = PromptTemplate(template="""Based on the following context, please answer the question.
             Context: {context}
             Question: {question}
-            Answer:&quot;&quot;&quot;, input_variables=[&quot;context&quot;, &quot;question&quot;])
-        llm = ChatAnthropic(model=&quot;claude-3-5-sonnet-20241022&quot;, api_key=st.session_state.anthropic_api_key,
+            Answer:""", input_variables=["context", "question"])
+        llm = ChatAnthropic(model="claude-3-5-sonnet-20241022", api_key=st.session_state.anthropic_api_key,
                            temperature=0, max_tokens=1000)
-        context = &quot;\n\n&quot;.join(doc.page_content for doc in documents)
+        context = "\n\n".join(doc.page_content for doc in documents)
 
         # Create and run chain
         rag_chain = (
-            {&quot;context&quot;: lambda x: context, &quot;question&quot;: lambda x: question} 
-            | prompt 
-            | llm 
+            {"context": lambda x: context, "question": lambda x: question}
+            | prompt
+            | llm
             | StrOutputParser()
         )
 
         generation = rag_chain.invoke({})
 
         return {
-            &quot;keys&quot;: {
-                &quot;documents&quot;: documents,
-                &quot;question&quot;: question,
-                &quot;generation&quot;: generation
+            "keys": {
+                "documents": documents,
+                "question": question,
+                "generation": generation
             }
         }
 
     except Exception as e:
-        error_msg = f&quot;Error in generate function: {str(e)}&quot;
+        error_msg = f"Error in generate function: {str(e)}"
         print(error_msg)
         st.error(error_msg)
-        return {&quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: question, 
-                &quot;generation&quot;: &quot;Sorry, I encountered an error while generating the response.&quot;}}
+        return {"keys": {"documents": documents, "question": question,
+                "generation": "Sorry, I encountered an error while generating the response."}}
+```
 
+## 8. 文档相关性评分节点
+
+```python
 def grade_documents(state):
-    &quot;&quot;&quot;Determines whether the retrieved documents are relevant.&quot;&quot;&quot;
-    print(&quot;~-check relevance-~&quot;)
-    state_dict = state[&quot;keys&quot;]
-    question = state_dict[&quot;question&quot;]
-    documents = state_dict[&quot;documents&quot;]
+    """Determines whether the retrieved documents are relevant."""
+    print("~-check relevance-~")
+    state_dict = state["keys"]
+    question = state_dict["question"]
+    documents = state_dict["documents"]
 
-    llm = ChatAnthropic(model=&quot;claude-3-5-sonnet-20241022&quot;, api_key=st.session_state.anthropic_api_key,
+    llm = ChatAnthropic(model="claude-3-5-sonnet-20241022", api_key=st.session_state.anthropic_api_key,
                        temperature=0, max_tokens=1000)
 
-    prompt = PromptTemplate(template=&quot;&quot;&quot;You are grading the relevance of a retrieved document to a user question.
-        Return ONLY a JSON object with a &quot;score&quot; field that is either &quot;yes&quot; or &quot;no&quot;.
+    prompt = PromptTemplate(template="""You are grading the relevance of a retrieved document to a user question.
+        Return ONLY a JSON object with a "score" field that is either "yes" or "no".
         Do not include any other text or explanation.
-        
+
         Document: {context}
         Question: {question}
-        
+
         Rules:
         - Check for related keywords or semantic meaning
         - Use lenient grading to only filter clear mismatches
-        - Return exactly like this example: {{&quot;score&quot;: &quot;yes&quot;}} or {{&quot;score&quot;: &quot;no&quot;}}&quot;&quot;&quot;,
-        input_variables=[&quot;context&quot;, &quot;question&quot;])
+        - Return exactly like this example: {"score": "yes"} or {"score": "no"}""",
+        input_variables=["context", "question"])
 
     chain = (
-        prompt 
-        | llm 
+        prompt
+        | llm
         | StrOutputParser()
     )
 
     filtered_docs = []
-    search = &quot;No&quot;
-    
+    search = "No"
+
     for d in documents:
         try:
-            response = chain.invoke({&quot;question&quot;: question, &quot;context&quot;: d.page_content})
+            response = chain.invoke({"question": question, "context": d.page_content})
             import re
-            json_match = re.search(r&#x27;\{.*\}&#x27;, response)
+            json_match = re.search(r'\{.*\}', response)
             if json_match:
                 response = json_match.group()
-            
+
             import json
             score = json.loads(response)
-            
-            if score.get(&quot;score&quot;) == &quot;yes&quot;:
-                print(&quot;~-grade: document relevant-~&quot;)
+
+            if score.get("score") == "yes":
+                print("~-grade: document relevant-~")
                 filtered_docs.append(d)
             else:
-                print(&quot;~-grade: document not relevant-~&quot;)
-                search = &quot;Yes&quot;
-                
+                print("~-grade: document not relevant-~")
+                search = "Yes"
+
         except Exception as e:
-            print(f&quot;Error grading document: {str(e)}&quot;)
+            print(f"Error grading document: {str(e)}")
             # On error, keep the document to be safe
             filtered_docs.append(d)
             continue
 
-    return {&quot;keys&quot;: {&quot;documents&quot;: filtered_docs, &quot;question&quot;: question, &quot;run_web_search&quot;: search}}
+    return {"keys": {"documents": filtered_docs, "question": question, "run_web_search": search}}
+```
 
+## 9. 查询转换节点
 
+```python
 def transform_query(state):
-    &quot;&quot;&quot;Transform the query to produce a better question.&quot;&quot;&quot;
-    print(&quot;~-transform query-~&quot;)
-    state_dict = state[&quot;keys&quot;]
-    question = state_dict[&quot;question&quot;]
-    documents = state_dict[&quot;documents&quot;]
+    """Transform the query to produce a better question."""
+    print("~-transform query-~")
+    state_dict = state["keys"]
+    question = state_dict["question"]
+    documents = state_dict["documents"]
 
     # Create a prompt template
     prompt = PromptTemplate(
-        template=&quot;&quot;&quot;Generate a search-optimized version of this question by 
+        template="""Generate a search-optimized version of this question by
         analyzing its core semantic meaning and intent.
         \n ------- \n
         {question}
         \n ------- \n
-        Return only the improved question with no additional text:&quot;&quot;&quot;,
-        input_variables=[&quot;question&quot;],
+        Return only the improved question with no additional text:""",
+        input_variables=["question"],
     )
 
     # Use Claude instead of Gemini
     llm = ChatAnthropic(
-        model=&quot;claude-3-5-sonnet-20240620&quot;,
+        model="claude-3-5-sonnet-20240620",
         anthropic_api_key=st.session_state.anthropic_api_key,
         temperature=0,
         max_tokens=1000
@@ -369,91 +409,106 @@ def transform_query(state):
 
     # Prompt
     chain = prompt | llm | StrOutputParser()
-    better_question = chain.invoke({&quot;question&quot;: question})
+    better_question = chain.invoke({"question": question})
 
     return {
-        &quot;keys&quot;: {&quot;documents&quot;: documents, &quot;question&quot;: better_question}
+        "keys": {"documents": documents, "question": better_question}
     }
+```
 
+## 10. 路由决策节点
 
+```python
 def decide_to_generate(state):
-    print(&quot;~-decide to generate-~&quot;)
-    state_dict = state[&quot;keys&quot;]
-    search = state_dict[&quot;run_web_search&quot;]
+    print("~-decide to generate-~")
+    state_dict = state["keys"]
+    search = state_dict["run_web_search"]
 
-    if search == &quot;Yes&quot;:
-     
-        print(&quot;~-decision: transform query and run web search-~&quot;)
-        return &quot;transform_query&quot;
+    if search == "Yes":
+
+        print("~-decision: transform query and run web search-~")
+        return "transform_query"
     else:
-        print(&quot;~-decision: generate-~&quot;)
-        return &quot;generate&quot;
-    
-def format_document(doc: Document) -&gt; str:
-    return f&quot;&quot;&quot;
-    Source: {doc.metadata.get(&#x27;source&#x27;, &#x27;Unknown&#x27;)}
-    Title: {doc.metadata.get(&#x27;title&#x27;, &#x27;No title&#x27;)}
-    Content: {doc.page_content[:200]}...
-    &quot;&quot;&quot;
+        print("~-decision: generate-~")
+        return "generate"
+```
 
-def format_state(state: dict) -&gt; str:
+## 11. 辅助格式化函数
+
+```python
+def format_document(doc: Document) -> str:
+    return f"""
+    Source: {doc.metadata.get('source', 'Unknown')}
+    Title: {doc.metadata.get('title', 'No title')}
+    Content: {doc.page_content[:200]}...
+    """
+
+
+def format_state(state: dict) -> str:
     formatted = {}
-    
+
     for key, value in state.items():
-        if key == &quot;documents&quot;:
+        if key == "documents":
             formatted[key] = [format_document(doc) for doc in value]
         else:
             formatted[key] = value
-            
+
     return formatted
+```
 
+## 12. 工作流构建与编译
 
+```python
 workflow = StateGraph(GraphState)
 
 # Define the nodes by langgraph
-workflow.add_node(&quot;retrieve&quot;, retrieve) 
-workflow.add_node(&quot;grade_documents&quot;, grade_documents)  
-workflow.add_node(&quot;generate&quot;, generate) 
-workflow.add_node(&quot;transform_query&quot;, transform_query)  
-workflow.add_node(&quot;web_search&quot;, web_search) 
+workflow.add_node("retrieve", retrieve)
+workflow.add_node("grade_documents", grade_documents)
+workflow.add_node("generate", generate)
+workflow.add_node("transform_query", transform_query)
+workflow.add_node("web_search", web_search)
 
 # Build graph
-workflow.set_entry_point(&quot;retrieve&quot;)
-workflow.add_edge(&quot;retrieve&quot;, &quot;grade_documents&quot;)
+workflow.set_entry_point("retrieve")
+workflow.add_edge("retrieve", "grade_documents")
 workflow.add_conditional_edges(
-    &quot;grade_documents&quot;,
+    "grade_documents",
     decide_to_generate,
     {
-        &quot;transform_query&quot;: &quot;transform_query&quot;,
-        &quot;generate&quot;: &quot;generate&quot;,
+        "transform_query": "transform_query",
+        "generate": "generate",
     },
 )
-workflow.add_edge(&quot;transform_query&quot;, &quot;web_search&quot;)
-workflow.add_edge(&quot;web_search&quot;, &quot;generate&quot;)
-workflow.add_edge(&quot;generate&quot;, END)
+workflow.add_edge("transform_query", "web_search")
+workflow.add_edge("web_search", "generate")
+workflow.add_edge("generate", END)
 
 app = workflow.compile()
+```
 
-st.title(&quot;🔄 Corrective RAG Agent&quot;)
+## 13. Streamlit 前端界面
 
-st.text(&quot;A possible query: What are the experiment results and ablation studies in this research paper?&quot;)
+```python
+st.title("🔄 Corrective RAG Agent")
+
+st.text("A possible query: What are the experiment results and ablation studies in this research paper?")
 
 # User input
-user_question = st.text_input(&quot;Please enter your question:&quot;)
+user_question = st.text_input("Please enter your question:")
 
 if user_question:
     inputs = {
-        &quot;keys&quot;: {
-            &quot;question&quot;: user_question,
+        "keys": {
+            "question": user_question,
         }
     }
 
     for output in app.stream(inputs):
         for key, value in output.items():
-            with st.expander(f&quot;Step &#x27;{key}&#x27;:&quot;):
-                st.text(pprint.pformat(format_state(value[&quot;keys&quot;]), indent=2, width=80))
+            with st.expander(f"Step '{key}':"):
+                st.text(pprint.pformat(format_state(value["keys"]), indent=2, width=80))
 
-    final_generation = value[&#x27;keys&#x27;].get(&#x27;generation&#x27;, &#x27;No final generation produced.&#x27;)
-    st.subheader(&quot;Final Generation:&quot;)
+    final_generation = value['keys'].get('generation', 'No final generation produced.')
+    st.subheader("Final Generation:")
     st.write(final_generation)
 ```

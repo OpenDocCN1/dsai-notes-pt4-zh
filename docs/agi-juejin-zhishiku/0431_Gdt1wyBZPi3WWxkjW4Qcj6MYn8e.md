@@ -1,3 +1,4 @@
+
 # 有望解决一个千禧年大奖难题，这个20多年前的猜想终于得到证明
 
 > 来源：[https://agijuejin.feishu.cn/docx/M0r2d6stJosvmGxrpOkcTDOinVh](https://agijuejin.feishu.cn/docx/M0r2d6stJosvmGxrpOkcTDOinVh)
@@ -28,7 +29,7 @@
 
 2002 年时，特拉维夫大学的 Michael Krivelevich 和如今在苏黎世联邦理工学院的 Benny Sudakov 推测：一类名为 expander 图的重要图全都包含 哈密顿 回路。今年二月，与其他四位数学家一起，Sudakov 成功证明了他在 20 多年前首次提出的这一猜想。
 
-**探寻回路的旅程**
+## 探寻回路的旅程
 
 ![](img/feb3c52b8a597a75de748d130dae30cd.png)
 
@@ -56,7 +57,7 @@ Krivelevich 和 Sudakov 在他们 2002 年的论文中证明特定类型的 expa
 
 过去二十年里，Sudakov 不时回头研究这个问题，但一直都没有进展。
 
-**终得证明**
+## 终得证明
 
 2023 年 3 月时情况发生了变化，当时 Sudakov、他的学生 David Munhá Correia 以及帕绍大学的 Stefan Glock 正在改进 2002 年的结果，结果发现一类稍大一点的 expander 图必定包含 哈密顿 回路。
 
@@ -73,8 +74,7 @@ Krivelevich 和 Sudakov 在他们 2002 年的论文中证明特定类型的 expa
 ![](img/bd519ee1fd13558e44523ac6c420a015.png)
 
 +   论文标题：Spanning trees in pseudorandom graphs via sorting networks
-
-+   论文地址：https://arxiv.org/pdf/2311.03185
++   论文地址：`https://arxiv.org/pdf/2311.03185`
 
 Munhá Correia 说：「我们聚到一起，意识到将所有这些思路组合起来也许能解决这个问题。」
 
@@ -91,12 +91,11 @@ Draganić、Montgomery、Munha Correia、Pikrovskiy 和 Sudakov 认识到如果�
 ![](img/ec6c21e955a582749521929f3c9f3628.png)
 
 +   论文标题：Hamilton cycles in pseudorandom graphs
-
-+   预印本地址：https://people.math.ethz.ch/~sudakovb/hamiltonicity-spectral-gap.pdf
++   预印本地址：`https://people.math.ethz.ch/~sudakovb/hamiltonicity-spectral-gap.pdf`
 
 Sudakov 将论文草稿转发给了 Krivelevich。Krivelevich 回复说：「我曾很怀疑能在我们有生之年看见它得到证明。」
 
-**结语**
+## 结语
 
 这个新证明能解决多个与 哈密顿 回路有关的问题。举个例子，其证明某些类型的与群有关的图（凯莱图）必定具有 哈密顿 回路。
 
@@ -106,4 +105,4 @@ Sudakov 将论文草稿转发给了 Krivelevich。Krivelevich 回复说：「我
 
 未参与此项研究的 Gur 表示：其确立了「计算机科学核心的两个对象之间的根本联系。」他说，这种联系会有重要的应用。「我不知道它会以何种形式出现，只是看起来这必定会很有用。」
 
-原文链接：https://www.quantamagazine.org/in-highly-connected-networks-theres-always-a-loop-20240607/
+原文链接：`https://www.quantamagazine.org/in-highly-connected-networks-theres-always-a-loop-20240607/`

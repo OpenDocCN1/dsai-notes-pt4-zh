@@ -1,3 +1,4 @@
+
 # A Visual Guide to LLM Agents
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/DzJYdATyfoRC2ZxU68oc0cfSnOd](https://gotoaiworld.feishu.cn/docx/DzJYdATyfoRC2ZxU68oc0cfSnOd)
@@ -38,7 +39,7 @@ Through external systems, the capabilities of the LLM can be enhanced. Anthropic
 
 ![](img/7ba1bd8ec8c19ff9c87a6a6112a2a044.png)
 
-Fo**r instance**, when faced with a math question, the LLM may decide to use the appropriate tool (a calculator).
+For instance, when faced with a math question, the LLM may decide to use the appropriate tool (a calculator).
 
 ![](img/66909cbb5a5d413bec7c5988c262e495.png)
 
@@ -46,19 +47,19 @@ So is this “Augmented LLM” then an Agent? No, and maybe a bit yes…
 
 Let’s start with a d[efi](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-1-156659273)nition of Agents:(1)
 
-An **agent** **is anyt**hing that can be viewe**d as perc**eiving its environment through sensors and acting upon that environment through actuators.
+An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.
 
 — Russell & Norvig, AI: A Modern Approach (2016)
 
 Agents interact with their environment and typically consist of several important components:
 
-+   **Environments** — The world the agent interacts with
++ Environments — The world the agent interacts with
 
-+   **Sensors** — Used to observe the environment
++ Sensors — Used to observe the environment
 
-+   **Actuators** — Tools used to interact with the environment
++ Actuators — Tools used to interact with the environment
 
-+   **Effectors **— The “brain” or rules deciding how to go from observations to actions
++ Effectors — The “brain” or rules deciding how to go from observations to actions
 
 ![](img/d185d746f6a3cbf6851d68306e6478af.png)
 
@@ -68,7 +69,7 @@ We can generalize this framework a bit to make it suitable for the “Augmented 
 
 ![](img/bd5869a0c607f1d0b46b1be70ecf278d.png)
 
-Using the “Augmented” LLM, the Agent can observe t**he environment** through textual input (as LLMs are generally textual models) and perform certain actions through its use of tools (like searching the web).
+Using the “Augmented” LLM, the Agent can observe the environment through textual input (as LLMs are generally textual models) and perform certain actions through its use of tools (like searching the web).
 
 To select which actions to take, the LLM Agent has a vital component: its ability to plan. For this, LLMs need to be able to “reason” and “think” through methods like chain-of-thought.
 
@@ -90,7 +91,7 @@ Depending on the system, you can LLM Agents with varying degrees of autonomy.
 
 Depending on who you ask, a system is more “agentic” the more the LLM decides how the system can behave.
 
-In **the ne**xt** sect**ions, **we will **go through various methods of autonomous behavior through the LLM Agent’s three main components: Memory, Tools, and Planning.
+In the next sections, we will go through various methods of autonomous behavior through the LLM Agent’s three main components: Memory, Tools, and Planning.
 
 # Memory
 
@@ -150,11 +151,11 @@ This method is often referred to as Retrieval-Augmented Generation (RAG).
 
 Long-term memory can also involve retaining information from different sessions. For instance, you might want an LLM Agent to remember any research it has done in previous sessions.
 
-Different types of information can also be relate[d t](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-2-156659273)o different types of memory to be stored. In psychology, there are numerous types of memory to differentiate, but the Cognitive Architectures for Language Agents paper coupled four of them to LLM Agents.(2)
+
+
+Different types of information can also be related to different types of memory to be stored. In psychology, there are numerous types of memory to differentiate, but the Cognitive Architectures for Language Agents paper coupled four of them to LLM Agents.(2)
 
 ![](img/68f9fd01731d9a146c6cf96050e213c7.png)
-
-This differentiation helps in building agentic frameworks. Semantic memory (facts about the world) might be stored in a different database than working memory (current and recent circumstances).
 
 # Tools
 
@@ -162,9 +163,9 @@ Tools allow a given LLM to either interact with an external environment (such as
 
 ![](img/d2541d4dfa985e02fb1128af731ebdc1.png)
 
-Tools generally **have two use **cases: fetching data** to retrieve **up-to-date information and taking action like setting a meeting or ordering food.
+Tools generally have two use cases: fetching data to retrieve up-to-date information and taking action like setting a meeting or ordering food.
 
-To actually use a tool, the LLM has to generate text that fits wit**h th**e API of the given tool. We tend to expect strings that can be formatted to JSON so that it can easily be fed to a code interpreter.
+To actually use a tool, the LLM has to generate text that fits the API of the given tool. We tend to expect strings that can be formatted to JSON so that it can easily be fed to a code interpreter.
 
 ![](img/fcd7699b0c4e74c4f4f56234996d7ef1.png)
 
@@ -198,25 +199,25 @@ Tool use is a powerful technique for strengthening LLMs' capabilities and compen
 
 ![](img/257d37762d4a210c751ca4f20a6c12d2.png)
 
-Annotated and crop[ped picture of the “Tool Learn](https://arxiv.org/pdf/2405.17935)ing with Large Language Models: A Survey” paper. With an increasing focus on tool use, (Agentic) LLMs are expected to become more powerful.
+Annotated and cropped picture of the “Tool Learning with Large Language Models: A Survey” paper. With an increasing focus on tool use, (Agentic) LLMs are expected to become more powerful.
 
 Much of this research involves not only prompting LLMs for tool use but training them specifically for tool use instead.
 
-One of the first techniques to do so is called Toolf[orm](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-3-156659273)er, a model trained to decide which APIs to call and how.(3)
+One of the first techniques to do so is called Toolformer, a model trained to decide which APIs to call and how.(3)
 
-It does so by using the [ and ] tokens to indicate the start and end of calling a tool. When given a prompt, for example “What is 5 times 3?”, it starts generating tokens until it reaches the [ token.
+It does so by using the `[` and `]` tokens to indicate the start and end of calling a tool. When given a prompt, for example “What is 5 times 3?”, it starts generating tokens until it reaches the `[` token.
 
 ![](img/45ced6d91a9ff640c0f5946d65e1ca1d.png)
 
-After that, it generates tokens until it reaches the → token which indicates that the LLM stops generating tokens.
+After that, it generates tokens until it reaches the `→` token which indicates that the LLM stops generating tokens.
 
 ![](img/529a5f5f3d1b10c946edcbbb3c038abf.png)
 
-Then, the tool will** be ca**lled, and the output will be added to the tokens generated thus far.
+Then, the tool will be called, and the output will be added to the tokens generated thus far.
 
 ![](img/8825abd3628bce3c423987fb5e67cb54.png)
 
-The ] symbol indicates that the LLM can now continue generating if necessary.
+The `]` symbol indicates that the LLM can now continue generating if necessary.
 
 Toolformer creates this behavior by carefully generating a dataset with many tool uses the model can train on. For each tool, a few-shot prompt is manually created and used to sample outputs that use these tools.
 
@@ -224,7 +225,7 @@ Toolformer creates this behavior by carefully generating a dataset with many too
 
 The outputs are filtered based on correctness of the tool use, output, and loss decrease. The resulting dataset is used to train an LLM to adhere to this format of tool use.
 
-Sin[ce ](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-4-156659273)t[he ](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-5-156659273)release of Toolformer, there have been many exciting techniques such as LLMs that can use thousands of tools (ToolLLM(4)) or LLMs that can easily retrieve the most relevant tools (Gorilla(5)).
+Since the release of Toolformer, there have been many exciting techniques such as LLMs that can use thousands of tools (ToolLLM(4)) or LLMs that can easily retrieve the most relevant tools (Gorilla(5)).
 
 Either way, most current LLMs (beginning of 2025) have been trained to call tools easily through JSON generation (as we saw before).
 
@@ -232,23 +233,19 @@ Either way, most current LLMs (beginning of 2025) have been trained to call tool
 
 Tools are an important component of Agentic frameworks, allowing LLMs to interact with the world and extend their capabilities. However, enabling tool use when you have many different API becomes troublesome as any tool needs to be:
 
-+   Manually **tracked** and fed to the LLM
-
-+   Manually **described** (including its expected JSON schema)
-
-+   Manually **updated** whenever its API changes
++ Manually tracked and fed to the LLM
++ Manually described (including its expected JSON schema)
++ Manually updated whenever its API changes
 
 ![](img/a891857f683d65d63d4071fcf3717de7.png)
 
-To make tools easier to implement for any given Agentic fram[ewo](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-6-156659273)rk, Anthropic developed the Model Context Protocol (MCP).(6) MCP standardizes API access for services like weather apps and GitHub.
+To make tools easier to implement for any given Agentic framework, Anthropic developed the Model Context Protocol (MCP).(6) MCP standardizes API access for services like weather apps and GitHub.
 
 It consists of three components:
 
-+   MCP **Host** — LLM application (such as Cursor) that manages connections
-
-+   MCP **Client** — Maintains 1:1 connections with MCP servers
-
-+   MCP **Server** — Provides context, tools, and capabilities to the LLMs
++ MCP Host — LLM application (such as Cursor) that manages connections
++ MCP Client — Maintains 1:1 connections with MCP servers
++ MCP Server — Provides context, tools, and capabilities to the LLMs
 
 ![](img/d1bedfcb8fc5659c1e3ea57a74ee7ce8.png)
 
@@ -298,13 +295,15 @@ I am using the terms “reasoning” and “thinking” a bit loosely as we can 
 
 This reasoning behavior can be enabled by roughly two choices: fine-tuning the LLM or specific prompt engineering.
 
-With prompt engineering, we can create examples of the reasoning proces[s t](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-7-156659273)hat the LLM should follow. Providing examples (also called few-shot prompting(7)) is a great method for steering the LLM’s behavior.
+
+
+With prompt engineering, we can create examples of the reasoning process that the LLM should follow. Providing examples (also called few-shot prompting(7)) is a great method for steering the LLM’s behavior.
 
 ![](img/6ac7aec0e77b4af903f16dce7c901313.png)
 
-Thi[s m](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-8-156659273)ethodology of providing examples of thought processes is called Chain-of-Thought and enables more complex reasoning behavior.(8)
+This methodology of providing examples of thought processes is called Chain-of-Thought and enables more complex reasoning behavior.(8)
 
-Cha[in-](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-9-156659273)of-thought can also be enabled without any examples (zero-shot prompting) by simply stating “Let’s think step-by-step”.(9)
+Chain-of-thought can also be enabled without any examples (zero-shot prompting) by simply stating “Let’s think step-by-step”.(9)
 
 ![](img/b7305227556b9fc7d44c7c69a124c570.png)
 
@@ -314,11 +313,11 @@ A great example is DeepSeek-R1 where rewards are used to guide the usage of thin
 
 ![](img/2c35afa269eedc9c645f45e5ef551a17.png)
 
-For more information about Rea[soning LLMs,](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms) see my visual guide.
+For more information about Reasoning LLMs, see my visual guide.
 
 ![](img/5d351af11246c44773d95f87aa5d9574.png)
 
-#### A Visual Guide to Reasoning LLMs
+## A Visual Guide to Reasoning LLMs
 
 Maarten Grootendorst
 
@@ -338,17 +337,17 @@ The techniques we focused on thus far either showcase reasoning behavior or inte
 
 Chain-of-Thought, for instance, is focused purely on reasoning.
 
-One of the first techniques to combine both pro[cess](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-10-156659273)es is called ReAct (Reason and Act).(10)
+One of the first techniques to combine both processes is called ReAct (Reason and Act).(10)
 
 ![](img/4b676773b942e3d60657fa17518c6900.png)
 
 ReAct does so through careful prompt engineering. The ReAct prompt describes three steps:
 
-+   **Thought** - A reasoning step about the current situation
++ **Thought** - A reasoning step about the current situation
 
-+   **Action** - A set of actions to execute (e.g., tools)
++ **Action** - A set of actions to execute (e.g., tools)
 
-+   **Observation** - A reasoning step about the result of the action
++ **Observation** - A reasoning step about the result of the action
 
 The prompt itself is then quite straightforward.
 
@@ -366,21 +365,21 @@ As such, this framework enables LLMs to demonstrate more autonomous agentic beha
 
 Nobody, not even LLMs with ReAct, will perform every task perfectly. Failing is part of the process as long as you can reflect on that process.
 
-This[ pro](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-11-156659273)cess is missing from ReAct and is where Reflexion comes in. Reflexion is a technique that uses verbal reinforcement to help agents learn from prior failures.(11)
+This process is missing from ReAct and is where Reflexion comes in. Reflexion is a technique that uses verbal reinforcement to help agents learn from prior failures.(11)
 
 The method assumes three LLM roles:
 
-+   **Actor** — Chooses and executes actions based on state observations. We can use methods like Chain-of-Thought or ReAct.
++ **Actor** — Chooses and executes actions based on state observations. We can use methods like Chain-of-Thought or ReAct.
 
-+   **Evaluator** — Scores the outputs produced by the Actor.
++ **Evaluator** — Scores the outputs produced by the Actor.
 
-+   **Self-reflection** — Reflects on the action taken by the Actor and scores generated by the Evaluator.
++ **Self-reflection** — Reflects on the action taken by the Actor and scores generated by the Evaluator.
 
 ![](img/041aaf6092253ced0e8576a580a0caac.png)
 
 Memory modules are added to track actions (short-term) and self-reflections (long-term), helping the Agent learn from its mistakes and identify improved actions.
 
-A s[imil](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-12-156659273)ar and elegant technique is called SELF-REFINE, where actions of refining output and generating feedback are repeated.(12)
+A similar and elegant technique is called SELF-REFINE, where actions of refining output and generating feedback are repeated.(12)
 
 ![](img/00a4755328c3683a3323e06670991bad.png)
 
@@ -388,7 +387,7 @@ The same LLM is in charge of generating the initial output, the refined output, 
 
 ![](img/a5395cb469f55dea87e5683654298f07.png)
 
-[A](https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf)nnotated figure of the “SELF-REFINE: Iterative Refinement with Self-Feedback” paper.
+Annotated figure of the “SELF-REFINE: Iterative Refinement with Self-Feedback” paper.
 
 Interestingly, this self-reflective behavior, both Reflexion and SELF-REFINE, closely resembles that of reinforcement learning where a reward is given based on the quality of the output.
 
@@ -396,7 +395,7 @@ Interestingly, this self-reflective behavior, both Reflexion and SELF-REFINE, cl
 
 The single Agent we explored has several issues: too many tools may complicate selection, context becomes too complex, and the task may require specialization.
 
-**Instead, we **c**an lo**ok** towar**ds Mul**ti-Agent**s, frameworks where multiple agents (each with access to tools, memory, and planning) are interacting with each other and their environments:
+Instead, we can look towards Multi-Agents, frameworks where multiple agents (each with access to tools, memory, and planning) are interacting with each other and their environments:
 
 ![](img/7e4b63bfacb47b2742e956e8b554bf04.png)
 
@@ -408,9 +407,9 @@ Each Agent might have different types of tools available, but there might also b
 
 In practice, there are dozens of Multi-Agent architectures with two components at their core:
 
-+   Agent **Initialization** — How are individual (specialized) Agents created?
++ Agent **Initialization** — How are individual (specialized) Agents created?
 
-+   Agent **Orchestration** — How are all Agents coordinated?
++ Agent **Orchestration** — How are all Agents coordinated?
 
 ![](img/a853b5876a9538318d09998682369e73.png)
 
@@ -418,7 +417,7 @@ Let’s explore various interesting Multi-Agent frameworks and highlight how the
 
 ## Interactive Simulacra of Human Behavior
 
-Ar[g](https://arxiv.org/pdf/2304.03442)ua[bly ](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-13-156659273)one of the most influential, and frankly incredibly cool, Multi-Agent papers is called “Generative Agents: Interactive Simulacra of Human Behavior”.(13)
+Arguably one of the most influential, and frankly incredibly cool, Multi-Agent papers is called “Generative Agents: Interactive Simulacra of Human Behavior”.(13)
 
 In this paper, they created computational software agents that simulate believable human behavior, which they call Generative Agents.
 
@@ -426,7 +425,7 @@ In this paper, they created computational software agents that simulate believab
 
 The **profile** each Generative Agent is given makes them behave in unique ways and helps create more interesting and dynamic behavior.
 
-Each Agent is initialized **with t**hr**ee modul**es (me**mory, plan**ning, and reflection) very much like the core components that we have seen previously with ReAct and Reflexion.
+Each Agent is initialized with three modules (memory, planning, and reflection) very much like the core components that we have seen previously with ReAct and Reflexion.
 
 ![](img/981fc66c31706ae4ac7f1972e8486421.png)
 
@@ -436,7 +435,7 @@ For any given next step or question, memories are retrieved and scored on their 
 
 ![](img/b9f9b1f211c8577b4a4b77b7cb374f0a.png)
 
-[A](https://arxiv.org/pdf/2304.03442)nnoted figure of the Generative Agents: Interactive Simulacra of Human Behavior paper.
+Annotated figure of the Generative Agents: Interactive Simulacra of Human Behavior paper.
 
 Together, they allow for Agents to freely go about their behavior and interact with one another. As such, there is very little Agent orchestration as they do not have specific goals to work to.
 
@@ -444,7 +443,9 @@ Together, they allow for Agents to freely go about their behavior and interact w
 
 Annotated image from the interactive demo.
 
-There are too many amazing snippets of information in [this](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-14-156659273) paper, but I want to highlight their evaluation metric.(14)
+There are too many amazing snippets of information in this paper, but I want to highlight their evaluation metric.(14)
+
+
 
 Their evaluation involved the believability of the Agent’s behaviors as the main metric, with human evaluators scoring them.
 
@@ -462,7 +463,7 @@ Whate[ver ](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-a
 
 P[opul](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-17-156659273)ar framew[orks](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-18-156659273) for implem[enti](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents#footnote-19-156659273)ng these components are AutoGen(17), MetaGPT(18), and CAMEL(19). However, each framework approaches communication between each Agent a bit differently.
 
-With CAMEL, for instance, the user** first **creat**es its quest**ion and defines AI User and AI Assistant roles. The AI user role represents the human user and will guide the process.
+With CAMEL, for instance, the user first creates its question and defines AI User and AI Assistant roles. The AI user role represents the human user and will guide the process.
 
 ![](img/a8a138522e59221ad4bf72d5e5ea5470.png)
 
@@ -480,7 +481,7 @@ In the last year, and especially the last few weeks, the growth of these framewo
 
 2025 is going to be a truly exciting year as these frameworks keep maturing and developing!
 
-# **Conclusion**
+# Conclusion
 
 This concludes our journey of LLM Agents! Hopefully, this post gives a better understanding of how LLM Agents are built.
 
@@ -566,6 +567,8 @@ Hong, Sirui, et al. "Metagpt: Meta programming for multi-agent collaborative fra
 
 Li, Guohao, et al. "Camel: Communicative agents for" mind" exploration of large language model society." Advances in Neural Information Processing Systems 36 (2023): 51991-52008.
 
+
+
 要理解 LLM Agent 是什么，我们首先需要探索 LLM 的基本能力。传统上，LLM 做的仅仅是下一个 token 的预测。
 
 ![](img/fddfd91d7fd3f57ac01888290f22df43.png)
@@ -574,7 +577,7 @@ Li, Guohao, et al. "Camel: Communicative agents for" mind" exploration of large 
 
 ![](img/a316abf68f6c1c8a13648b88ad39e843.png)
 
-**然而，当我们继续"对话"时，任何 LLM **都会显示其主要缺点：即如果不依赖对话系统将整个对话历史作为上下文传入模型，那么模型就不会记得对话内容。
+然而，当我们继续"对话"时，任何 LLM 都会显示其主要缺点：即如果不依赖对话系统将整个对话历史作为上下文传入模型，那么模型就不会记得对话内容。
 
 ![](img/1934bf0b646e9c5789bcc43ece1145a2.png)
 
@@ -582,13 +585,13 @@ LLM 不擅长的任务还有很多，包括基础的数学运算，如乘法和�
 
 ![](img/c95102caaa2ff2b280d1ba054757eedb.png)
 
-这是否意味着 LLM **不太行**？
+这是否意味着 LLM 不太行？
 
 当然不是！
 
 LLM 不需要具备所有能力，因为我们可以通过外部工具、记忆和检索系统来弥补其不足。
 
-通过外部系统，LLM 的能力可以**得到增强。A**nthropic 将这称为"增强型大模型"（The Augmented LLM）。
+通过外部系统，LLM 的能力可以得到增强。Anthropic 将这称为"增强型大模型"（The Augmented LLM）。
 
 ![](img/a3c17015a0ece2a7aec8325c6e0fd8ee.png)
 
@@ -602,19 +605,16 @@ LLM 不需要具备所有能力，因为我们可以通过外部工具、记忆�
 
 让我们从Agent的定义开始：
 
-**一个 agent 是任何可以被视为通过传感器感**知环境，并通过执行器作用于该环境的实体。
+> 一个 agent 是任何可以被视为通过传感器感知环境，并通过执行器作用于该环境的实体。
 
 —— Russell & Norvig，《人工智能：一种现代方法》(2016)
 
 Agent 与环境交互，通常有几个重要组件：
 
-+   • **环境** —  Agent 交互的世界
-
-+   • **传感器** — 用于观察环境
-
-+   • **执行器** — 用于与环境交互的工具
-
-+   • **效应器** — 决定如何从观察转化为行动的"大脑"或规则
+- 环境 — Agent 交互的世界
+- 传感器 — 用于观察环境
+- 执行器 — 用于与环境交互的工具
+- 效应器 — 决定如何从观察转化为行动的"大脑"或规则
 
 这个框架适用于与各种环境交互的各类 agent，如与物理环境交互的机器人或与软件交互的 AI agent。
 
@@ -628,7 +628,7 @@ Agent 与环境交互，通常有几个重要组件：
 
 使用"增强型"LLM，Agent 可以通过文本输入观察环境（因为LLM通常是文本模型），并通过使用工具（如网络搜索）执行特定操作。
 
-**为了选择**采取哪些行动，LLM Agent 拥有一个至关重要的组件：规划能力。
+为了选择采取哪些行动，LLM Agent 拥有一个至关重要的组件：规划能力。
 
 而拥有规划能力，则意味着 LLM 需要能够通过思维链等方法进行"推理"与"思考"。
 
@@ -650,7 +650,7 @@ Agent 与环境交互，通常有几个重要组件：
 
 一个系统越自主， LLM 就越能决定系统的行为方式。
 
-**在文**章**接下**来**的内**容中，我们将通过 LLM Agent 的三个主要组件：记忆、工具和规划，讨论各种自主行为方法。
+在文章接下来的内容中，我们将通过 LLM Agent 的三个主要组件：记忆、工具和规划，讨论各种自主行为方法。
 
 ---
 
@@ -662,13 +662,13 @@ LLM 是健忘的系统，或者更准确地说，与它们交互时根本不执�
 
 ![](img/fbdcac46a5b7bd78d3f90779aa74b7d3.png)
 
-我们通常将此称为**短期记忆**，也称为工作记忆，它作为（近期）即时上下文的缓冲区。这包括 LLM Agent 最近采取的行动。
+我们通常将此称为短期记忆，也称为工作记忆，它作为（近期）即时上下文的缓冲区。这包括 LLM Agent 最近采取的行动。
 
 然而，LLM Agent 还需要跟踪可能数十个步骤，而不仅仅是最近的行动。
 
 ![](img/42ccbb1567c66ae591bf9143bc9bc73d.png)
 
-这被称为**长期记忆**，因为 LLM Agent 理论上可能需要记住数十甚至数百个步骤。
+这被称为长期记忆，因为 LLM Agent 理论上可能需要记住数十甚至数百个步骤。
 
 ![](img/10996e98df49703855e523d6d1facf69.png)
 
@@ -702,7 +702,7 @@ LLM Agent 的长期记忆包括需要长期保留的 Agent 过去的行动空间
 
 > 行动空间：指的是 Agent 过去所有的操作、决策和互动记录，而不仅仅是静态的数据或信息。
 
-**实现长期记忆的常见技术是将所有先前的**交互、行动和对话存储在外部向量数据库中。
+实现长期记忆的常见技术是将所有先前的交互、行动和对话存储在外部向量数据库中。
 
 要构建这样的数据库，首先将对话嵌入到能够捕捉其含义的数值表示中。
 
@@ -712,7 +712,7 @@ LLM Agent 的长期记忆包括需要长期保留的 Agent 过去的行动空间
 
 ![](img/59e4b1b27dfa30de7c837e83c5ece618.png)
 
-这种方法也就是**检索增强生成**（Retrieval-Augmented Generation，RAG）。
+这种方法也就是检索增强生成（Retrieval-Augmented Generation，RAG）。
 
 长期记忆还可以涉及保留来自不同会话的信息。例如，你可能希望 LLM Agent 记住它在以前会话中所做的任何研究。
 
@@ -720,29 +720,25 @@ LLM Agent 的长期记忆包括需要长期保留的 Agent 过去的行动空间
 
 ![](img/7b8e4919f4c90ffb1a12553947239047.png)
 
-1.  Working Memory（工作记忆）
+1. Working Memory（工作记忆）
 
-+   • 人类示例：购物清单。人类大脑用工作记忆来暂时存放、操作当前需要使用的信息，比如你在逛超市时，脑海里记着要买的东西。
+   - 人类示例：购物清单。人类大脑用工作记忆来暂时存放、操作当前需要使用的信息，比如你在逛超市时，脑海里记着要买的东西。
+   - 代理示例：Context（上下文）。在LLM Agent中，工作记忆可以理解为模型在一次对话或推理过程中，需要临时“装载”的上下文信息，用于实时生成回复或执行操作。
 
-+   • 代理示例：Context（上下文）。在LLM Agent中，工作记忆可以理解为模型在一次对话或推理过程中，需要临时“装载”的上下文信息，用于实时生成回复或执行操作。
+2. Procedural Memory（程序性记忆）
 
-1.  Procedural Memory（程序性记忆）
+   - 人类示例：系鞋带。人类的程序性记忆是对“如何做一件事”的技能或步骤的记忆，例如骑自行车、打字等，这些行为一旦学会，就可以相对自动地执行。
+   - 代理示例：System Prompt（系统提示）。对于LLM Agent而言，“程序性记忆”可以视作模型在执行任务时所依据的固定指令或规则。它规定了模型在面对某些输入时，需要如何去执行、遵循哪些步骤或约束。
 
-+   • 人类示例：系鞋带。人类的程序性记忆是对“如何做一件事”的技能或步骤的记忆，例如骑自行车、打字等，这些行为一旦学会，就可以相对自动地执行。
+3. Semantic Memory（语义记忆）
 
-+   • 代理示例：System Prompt（系统提示）。对于LLM Agent而言，“程序性记忆”可以视作模型在执行任务时所依据的固定指令或规则。它规定了模型在面对某些输入时，需要如何去执行、遵循哪些步骤或约束。
+   - 人类示例：狗的品种。语义记忆是关于世界的通用知识、事实和概念，不依赖个人的具体经历，比如知道“巴黎是法国的首都”。
+   - 代理示例：User Information（用户信息）。对于LLM Agent来说，语义记忆中可以包括用户的偏好、历史对话中的关键信息、外部知识库中的事实等。这些事实类信息是与特定事件无关的通用知识。
 
-1.  Semantic Memory（语义记忆）
+4. Episodic Memory（情景记忆）
 
-+   • 人类示例：狗的品种。语义记忆是关于世界的通用知识、事实和概念，不依赖个人的具体经历，比如知道“巴黎是法国的首都”。
-
-+   • 代理示例：User Information（用户信息）。对于LLM Agent来说，语义记忆中可以包括用户的偏好、历史对话中的关键信息、外部知识库中的事实等。这些事实类信息是与特定事件无关的通用知识。
-
-1.  Episodic Memory（情景记忆）
-
-+   • 人类示例：7岁生日。情景记忆是对个人经历的记忆，包含时间、地点、人物等具体情境。
-
-+   • 代理示例：Past Actions（过去行为）。在LLM Agent中，这部分对应代理在与用户或环境交互中所做出的具体操作或决策的历史记录，帮助代理回溯和利用过去的经历来影响当前或未来的决策。
+   - 人类示例：7岁生日。情景记忆是对个人经历的记忆，包含时间、地点、人物等具体情境。
+   - 代理示例：Past Actions（过去行为）。在LLM Agent中，这部分对应代理在与用户或环境交互中所做出的具体操作或决策的历史记录，帮助代理回溯和利用过去的经历来影响当前或未来的决策。
 
 这种区分有助于构建代理框架。语义记忆（关于世界的事实）可能存储在与工作记忆（当前和最近情况）不同的数据库中。
 
@@ -758,9 +754,8 @@ LLM Agent 的长期记忆包括需要长期保留的 Agent 过去的行动空间
 
 工具通常有两种用途：
 
-**获取数据，**以检索最新信息;
-
-**采取行动**，如设定会议或订购食物。
+- 获取数据，以检索最新信息;
+- 采取行动，如设定会议或订购食物。
 
 要实际使用工具，LLM 必须生成符合给定工具 API 的文本。我们通常期望生成可以格式化为 JSON 的字符串，以便它能够轻松地输到代码解释器中。
 
@@ -806,11 +801,11 @@ LLM 调用序列的中间步骤，会被反馈回 LLM 以继续处理。
 
 最早采用这种技术之一被称为 Toolformer，这是一个训练用来决定调用哪些 API 以及如何调用的模型。
 
-它通过使用[and] token来指示调用工具的开始和结束。当给定一个提示，例如"5乘以3等于多少？"，它开始生成 token 直到达到 [ token。
+它通过使用`[and]` token来指示调用工具的开始和结束。当给定一个提示，例如"5乘以3等于多少？"，它开始生成 token 直到达到 `[` `token`。
 
 ![](img/e7fe04690ba2a913f7f1aaa156e2ac46.png)
 
-之后，它继续生成 token 直到达到→，这表示 LLM 停止生成 token。
+之后，它继续生成 token 直到达到`→`，这表示 LLM 停止生成 token。
 
 ![](img/c80f79bf07dea67f716065d5f8495e52.png)
 
@@ -818,13 +813,13 @@ LLM 调用序列的中间步骤，会被反馈回 LLM 以继续处理。
 
 ![](img/e11d6a8c191a259df50a4167cad054af.png)
 
-]符号表示 LLM 现在可以在必要时继续生成。
+`]`符号表示 LLM 现在可以在必要时继续生成。
 
-**Toolformer通过生成包含大量工具使用示例的数据集来训练模型**。对于每种工具，人工创建的 few-shot 提示会引导模型生成相应的使用示例。
+Toolformer通过生成包含大量工具使用示例的数据集来训练模型。对于每种工具，人工创建的 few-shot 提示会引导模型生成相应的使用示例。
 
 ![](img/ead36bba3d577d71d61aacb41dbc6ca0.png)
 
-基于工具使用的**正确性、结果、损失减少**对输出进行过滤。最终的数据集用于训练LLM 遵循这种工具使用格式。
+基于工具使用的正确性、结果、损失减少对输出进行过滤。最终的数据集用于训练LLM 遵循这种工具使用格式。
 
 自 Toolformer 发布以来，出现了许多令人兴奋的技术，如可以使用数千种工具的 LLM（ToolLLM）或可以轻松检索最相关工具的LLM（Gorilla）。
 
@@ -836,11 +831,9 @@ LLM 调用序列的中间步骤，会被反馈回 LLM 以继续处理。
 
 然而，当存在多种不同API时，启用工具使用变得麻烦，因为任何工具都需要：
 
-+   • 手动跟踪并输入到LLM中
-
-+   • 手动描述（包括其预期的JSON schema）
-
-+   • 每当API发生变化时，手动更新
+- 手动跟踪并输入到LLM中
+- 手动描述（包括其预期的JSON schema）
+- 每当API发生变化时，手动更新
 
 ![](img/9af5c04f29d3da5243faefa520ee4787.png)
 
@@ -850,21 +843,19 @@ MCP为天气应用和 GitHub 等服务标准化了 API 访问。
 
 它由三个组件组成：
 
-+   • MCP Host（宿主） — LLM 应用程序（如 Cursor）负责管理连接;
-
-+   • MCP Client（客户端） — 维护与 MCP 服务器的 1:1 连接;
-
-+   • MCP Server（服务器） — 向 LLMs 提供上下文、工具和功能;
+- `MCP Host`（宿主） — LLM 应用程序（如 Cursor）负责管理连接;
+- `MCP Client`（客户端） — 维护与 `MCP Server` 的 1:1 连接;
+- `MCP Server`（服务器） — 向 LLMs 提供上下文、工具和功能;
 
 ![](img/6bd62433882228c2cf40bce6b351a224.png)
 
 例如，假设你希望某个 LLM 应用程序总结你的代码仓库中最新的5个提交。
 
-MCP Host（与 MCP Client一起）会首先调用 MCP Server 询问哪些工具可用。
+`MCP Host`（与 `MCP Client`一起）会首先调用 `MCP Server` 询问哪些工具可用。
 
 ![](img/ac4cf63d2b6e5e580099945b285f5c70.png)
 
-LLM 接收这些信息后，可能会选择使用某个工具。它通过 Host 向 MCP Server发送请求，然后接收结果，包括所使用的工具。
+LLM 接收这些信息后，可能会选择使用某个工具。它通过 `Host` 向 `MCP Server`发送请求，然后接收结果，包括所使用的工具。
 
 ![](img/9d0c7e45a7d1edfa2a655beae7a408ab.png)
 
@@ -872,7 +863,7 @@ LLM 接收这些信息后，可能会选择使用某个工具。它通过 Host �
 
 ![](img/fcb5bc2aec32cfc95395ee383950d901.png)
 
-这个框架通过连接到任何 LLM 应用程序都可以使用的 MCP Servers，使创建工具变得更加简单。因此，当你创建一个与 Github 交互的 MCP Server时，任何支持 MCP 的LLM 应用程序都可以使用它。
+这个框架通过连接到任何 LLM 应用程序都可以使用的 `MCP Servers`，使创建工具变得更加简单。因此，当你创建一个与 Github 交互的 `MCP Server`时，任何支持 MCP 的LLM 应用程序都可以使用它。
 
 ---
 
@@ -890,7 +881,7 @@ LLM 接收这些信息后，可能会选择使用某个工具。它通过 Host �
 
 ![](img/abf21f17b91ec17693b943790f5f3094.png)
 
-**要在LL**M代理中实现计划能力，让我们首先看看这种技术的基础，即推理能力。
+要在LLM代理中实现计划能力，让我们首先看看这种技术的基础，即推理能力。
 
 ### 推理（Reasoning）
 
@@ -912,6 +903,10 @@ LLM 接收这些信息后，可能会选择使用某个工具。它通过 Host �
 
 思维链也可以在没有任何示例（零样本提示，zero-shot prompting）的情况下实现，只需简单地说明"让我们一步步思考"。
 
+
+
+## LLM 推理与训练
+
 ![](img/4145ee0fddb55eea309134cbe6cf4221.png)
 
 在训练 LLM 时，我们可以给它提供足够数量包含思考类示例的数据集，或者 LLM 可以发现自己的思考过程，比如使用强化学习。
@@ -922,7 +917,7 @@ DeepSeek-R1是一个很好的例子，它使用奖励机制来引导思考过程
 
 [具体细节可参考这一篇文章](https://mp.weixin.qq.com/s?__biz=MzIzMDc2Njc0MQ==&mid=2247487849&idx=1&sn=115f0d39e7d47d4342110123d94bfcb1&scene=21#wechat_redirect)。
 
-### 推理与行动-Reasoning and Acting
+## 推理与行动（Reasoning and Acting）
 
 在LLM中启用推理行为很好，但这并不一定使其能够规划可执行的步骤。
 
@@ -938,11 +933,9 @@ DeepSeek-R1是一个很好的例子，它使用奖励机制来引导思考过程
 
 ReAct通过精心设计的提示工程来实现这一点。ReAct提示描述了三个步骤：
 
-+   • **思考（Thought）** - 关于当前情况的推理步骤
-
-+   • **行动（Action）** - 要执行的一系列行动（例如，使用工具）
-
-+   • **观察（Observation）** - 关于行动结果的推理步骤
++ 思考（Thought） - 关于当前情况的推理步骤
++ 行动（Action） - 要执行的一系列行动（例如，使用工具）
++ 观察（Observation） - 关于行动结果的推理步骤
 
 提示本身相当直接：
 
@@ -956,7 +949,7 @@ LLM使用这个提示（可作为系统提示使用）来引导其行为，在�
 
 因此，与那些预定义固定步骤的代理相比，这个框架使 LLMs 能够展示更加自主的代理行为。
 
-### 反思（Reflecting）
+## 反思（Reflecting）
 
 没有人，甚至采用 ReAct 的LLM，能在每个任务上都表现出色。失败在所难免，关键是从中反思，以推动成长。
 
@@ -964,11 +957,9 @@ LLM使用这个提示（可作为系统提示使用）来引导其行为，在�
 
 该方法假设三个LLM角色：
 
-+   • **执行者（Actor）** — 根据状态观察选择并执行行动。我们可以使用思维链或ReAct等方法。
-
-+   • **评估者（Evaluator）** — 对执行者产生的输出进行评分。
-
-+   • 自我反思（Self-reflection） — 反思执行者采取的行动和评估者生成的评分。
++ 执行者（Actor） — 根据状态观察选择并执行行动。我们可以使用思维链或ReAct等方法。
++ 评估者（Evaluator） — 对执行者产生的输出进行评分。
++ 自我反思（Self-reflection） — 反思执行者采取的行动和评估者生成的评分。
 
 ![](img/e30212fbca288f503d0b34465e73a347.png)
 
@@ -1002,15 +993,14 @@ LLM使用这个提示（可作为系统提示使用）来引导其行为，在�
 
 实际上，已有数十种多智能体架构，它们的核心通常包括以下两个组件：
 
-+   • 智能体初始化（Agent Initialization）—— 如何创建个体（专门的）智能体？
-
-+   • 智能体编排（Agent Orchestration）—— 如何协调所有智能体？
++ 智能体初始化（Agent Initialization）—— 如何创建个体（专门的）智能体？
++ 智能体编排（Agent Orchestration）—— 如何协调所有智能体？
 
 ![](img/78f28aa704d731942c62dc0733b4e186.png)
 
 接下来，我们将探索一些有趣的多智能体框架，并重点分析这些组件是如何实现的。
 
-### 交互式人类行为模拟
+## 交互式人类行为模拟
 
 或许最具影响力、也相当酷的多智能体论文之一，就是《生成式智能体：交互式人类行为模拟》（Generative Agents: Interactive Simulacra of Human Behavior）。
 
@@ -1024,7 +1014,7 @@ LLM使用这个提示（可作为系统提示使用）来引导其行为，在�
 
 ![](img/2c42e4165bbc4c5f9869e9c7cb99e6d1.png)
 
-**记忆模块**是这个框架中最重要的组件之一。它存储着规划与反思行为，以及到目前为止发生的所有事件。
+记忆模块是这个框架中最重要的组件之一。它存储着规划与反思行为，以及目前为止发生的所有事件。
 
 当智能体需要采取下一步行动或回答问题时，它会检索记忆，并根据记忆内容的时效性、重要性和相关性进行评分，将得分最高的记忆提供给智能体。
 
@@ -1034,7 +1024,7 @@ LLM使用这个提示（可作为系统提示使用）来引导其行为，在�
 
 ![](img/67c5e9e7116876b2f38809942a2ad756.png)
 
-**这篇论文**中有许多精彩的信息片段，但我想特别强调其评估指标。
+这篇论文中有许多精彩的信息片段，但我想特别强调其评估指标。
 
 该评估主要使用了智能体行为的可信性作为指标，由人工评估员对智能体进行评分。
 
@@ -1042,7 +1032,7 @@ LLM使用这个提示（可作为系统提示使用）来引导其行为，在�
 
 该评估展示了观察、规划与反思对于生成式智能体表现的重要性。正如之前所述，没有反思行为的规划是不完整的。
 
-### 模块化框架
+## 模块化框架
 
 无论你选择哪种框架创建多智能体系统，这些框架通常由多个要素组成，包括智能体的配置文件、对环境的感知、记忆、规划以及可用的行动。
 

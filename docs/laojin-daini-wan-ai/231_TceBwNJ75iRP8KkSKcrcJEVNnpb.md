@@ -1,3 +1,4 @@
+
 # Claude Code官方内置Worktree支持：一个参数替代5步手动操作
 
 > 来源：[https://my.feishu.cn/docx/I3W7dTbdUorDUdxYLqXco2VYnwb](https://my.feishu.cn/docx/I3W7dTbdUorDUdxYLqXco2VYnwb)
@@ -14,7 +15,7 @@ Git Worktree这东西，社区早就在用了。
 
 Claude Code正式把Git Worktree内置到CLI里了。
 
-加个 --worktree 参数，自动创建隔离目录，subagent也原生支持了。
+加个 `--worktree` 参数，自动创建隔离目录，subagent也原生支持了。
 
 这不是什么新功能发布，而是把社区半年来的手动操作变成了官方一键方案。
 
@@ -24,11 +25,11 @@ Claude Code正式把Git Worktree内置到CLI里了。
 
 先说背景，免得有人觉得这是炒冷饭。
 
-Git Worktree是git自带的功能，允许从同一个仓库创建多个工作目录。
+Git Worktree是`git`自带的功能，允许从同一个仓库创建多个工作目录。
 
-每个目录checkout不同的分支，共享同一个 .git 目录。
+每个目录 `checkout` 不同的分支，共享同一个 `.git` 目录。
 
-这个功能本身不新，git 2.5就有了。
+这个功能本身不新，`git 2.5`就有了。
 
 社区里的Claude Code老手早就发现了这个玩法：
 
@@ -38,7 +39,7 @@ incident.io团队甚至分享过他们的经验，同时跑4-5个Agent并行工�
 
 但手动搞有三个硬伤：
 
-**1、每次都要手动创建和清理**
+### 1、每次都要手动创建和清理
 
 ```
 git worktree add ../feature-a feature-a
@@ -49,7 +50,7 @@ git worktree remove ../feature-a
 
 每开一个并行任务就要敲一遍，烦。
 
-2、Claude Code不感知worktree状态
+### 2、Claude Code不感知worktree状态
 
 在worktree目录里启动Claude Code，它不知道自己在worktree里。
 
@@ -57,7 +58,7 @@ git worktree remove ../feature-a
 
 你得自己小心，别让Agent把代码提交到错误的地方。
 
-**3、subagent完全不支持**
+### 3、subagent完全不支持
 
 这是最大的痛点。
 
@@ -73,7 +74,7 @@ subagent之间互相踩文件，你手动创建的worktree对subagent没用。
 
 这次更新不是简单地"支持worktree"，而是从CLI、subagent、Desktop三个层面全面内置。
 
-**1、CLI的 ****--worktree**** 参数**
+### CLI的 `--worktree` 参数
 
 最直接的改变。
 
@@ -89,11 +90,11 @@ Claude Code会自动创建worktree、切换到新目录、在里面启动会话�
 
 用完之后的清理也不用你操心。
 
-你可以同时开5个终端，每个都加 --worktree。
+你可以同时开5个终端，每个都加 `--worktree`。
 
 5个Agent各自在独立目录工作，零冲突。
 
-2、Subagent原生Worktree支持
+### Subagent原生Worktree支持
 
 这个才是真正的重头戏，也是社区呼声最高的。
 
@@ -121,11 +122,11 @@ Claude Code会自动创建worktree、切换到新目录、在里面启动会话�
 
 完成后各自提交分支，你只需要review和merge。
 
-3、Desktop应用的Worktree模式
+### Desktop应用的Worktree模式
 
 如果你用的是Claude Code Desktop版本，操作更简单。
 
-打开Code标签页，勾选 **Worktree Mode** 就行。
+打开Code标签页，勾选 Worktree Mode 就行。
 
 开启后，每次新建会话都会自动创建独立的worktree。
 
@@ -133,7 +134,7 @@ Claude Code会自动创建worktree、切换到新目录、在里面启动会话�
 
 ## 实际怎么用（小白也能跟着做）
 
-先说一个前提：用worktree跑并行任务，你大概率需要搭配 --dangerously-skip-permissions 这个参数。
+先说一个前提：用worktree跑并行任务，你大概率需要搭配 `--dangerously-skip-permissions` 这个参数。
 
 为什么？
 
@@ -149,15 +150,15 @@ claude --worktree --dangerously-skip-permissions
 
 两个参数拆开解释：
 
-+   --worktree：自动创建独立工作目录，文件隔离
++ `--worktree`：自动创建独立工作目录，文件隔离
 
-+   --dangerously-skip-permissions：跳过权限确认，Agent全自动跑
++ `--dangerously-skip-permissions`：跳过权限确认，Agent全自动跑
 
 启动后进入对话界面，直接输入你的任务就行。
 
-**场景1：多个终端并行开发**
+### 场景1：多个终端并行开发
 
-打开终端，cd到项目根目录，开3个终端窗口，每个都执行：
+打开终端，`cd` 到项目根目录，开3个终端窗口，每个都执行：
 
 ```
 claude --worktree --dangerously-skip-permissions
@@ -165,17 +166,17 @@ claude --worktree --dangerously-skip-permissions
 
 然后分别输入不同的任务：
 
-+   终端1："实现用户登录功能，使用JWT认证"
++ 终端1："实现用户登录功能，使用JWT认证"
 
-+   终端2："修复搜索结果分页不正确的问题"
++ 终端2："修复搜索结果分页不正确的问题"
 
-+   终端3："给utils目录下的工具函数写单元测试"
++ 终端3："给 `utils` 目录下的工具函数写单元测试"
 
 三个Agent各自在独立目录里工作，互不干扰。
 
 完成后各自提交分支，你只需要review和merge。
 
-**场景2：批量代码迁移**
+### 场景2：批量代码迁移
 
 这是社区反馈最多的场景。
 
@@ -183,7 +184,7 @@ claude --worktree --dangerously-skip-permissions
 
 启动worktree会话后，告诉Agent：
 
-"把src目录下所有CommonJS的require改成ESM的import，每个模块独立处理"
+"把 `src` 目录下所有CommonJS的 `require` 改成ESM的 `import`，每个模块独立处理"
 
 Claude会自动把任务拆分给多个subagent。
 
@@ -191,7 +192,7 @@ Claude会自动把任务拆分给多个subagent。
 
 之前这种操作，subagent会互相踩文件，现在完全不会了。
 
-**场景3：清理worktree**
+### 场景3：清理worktree
 
 虽然官方内置了自动管理，但养成手动检查的习惯没坏处：
 
@@ -203,7 +204,7 @@ git worktree list
 git worktree prune
 ```
 
-**注意**：--dangerously-skip-permissions 顾名思义，跳过了所有权限检查。
+**注意**：`--dangerously-skip-permissions` 顾名思义，跳过了所有权限检查。
 
 用在自己的开发项目上没问题，别在生产环境或者不信任的代码库上用。
 
@@ -211,21 +212,21 @@ git worktree prune
 
 老金我做个对比，你就知道这次官方内置的价值在哪。
 
-**之前（社区手动方案）**：
+### 之前（社区手动方案）
 
-1、手动 git worktree add 创建目录
+1、手动 `git worktree add` 创建目录
 
-2、手动 cd 到新目录启动Claude Code
+2、手动 `cd` 到新目录启动Claude Code
 
 3、subagent不支持worktree，只能在同一目录工作
 
 4、Claude Code不感知worktree状态，部分功能异常
 
-5、用完手动 git worktree remove 清理
+5、用完手动 `git worktree remove` 清理
 
-**现在（官方内置方案）**：
+### 现在（官方内置方案）
 
-1、加个 --worktree 参数，自动创建+启动
+1、加个 `--worktree` 参数，自动创建+启动
 
 2、subagent原生支持，自动在独立目录工作
 
@@ -245,7 +246,7 @@ git worktree prune
 
 不是所有任务都需要worktree，老金我帮你理清楚。
 
-**适合用的场景**：
+### 适合用的场景
 
 1、多个独立功能并行开发（登录+搜索+支付）
 
@@ -255,7 +256,7 @@ git worktree prune
 
 4、代码审查+开发并行（一个worktree review，一个写新功能）
 
-**不需要用的场景**：
+### 不需要用的场景
 
 1、单个简单任务（改个bug、加个按钮）
 
@@ -299,13 +300,13 @@ Worktree是每个员工的独立工位（各干各的，不互相打扰）。
 
 Git Worktree + 多Agent并行，这个组合社区玩了半年了，现在终于不用手动折腾了。
 
-如果你已经在手动用worktree跑多Agent，升级到最新版直接用 --worktree 就行。
+如果你已经在手动用worktree跑多Agent，升级到最新版直接用 `--worktree` 就行。
 
 如果你还没试过多Agent并行，现在门槛降到了一个参数，可以试试。
 
 最后提醒一点：worktree用完记得检查。
 
-虽然官方内置了自动管理，但定期跑一下 git worktree list 看看状态没坏处。
+虽然官方内置了自动管理，但定期跑一下 `git worktree list` 看看状态没坏处。
 
 磁盘空间不是无限的。
 

@@ -1,46 +1,27 @@
+
 # 开源 · LongWriter：万字长文生成模型
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/VHJldtUUuoTab8x7jzPcYltRnhg](https://v11enp9ok1h.feishu.cn/docx/VHJldtUUuoTab8x7jzPcYltRnhg)
-
+> 来源：`https://v11enp9ok1h.feishu.cn/docx/VHJldtUUuoTab8x7jzPcYltRnhg`
 > 发布时间：2024 年 8 月 21 日
-
 > 开源时间：2024 年 8 月 13 日
-
->
-
-> **论文：**https://arxiv.org/abs/2408.07055
-
-> **代码：**https://github.com/THUDM/LongWriter
-
-> **模型：**
-
-+   Huggingface：https://huggingface.co/THUDM/LongWriter-glm4-9b
-
-+   魔搭：https://modelscope.cn/models/ZhipuAI/LongWriter-glm4-9b
-
-> **数据**
-
-+   Huggingface：https://huggingface.co/datasets/THUDM/LongWriter-6k
-
-+   魔搭：https://modelscope.cn/datasets/ZhipuAI/LongWriter-6k
+> 论文：`https://arxiv.org/abs/2408.07055`
+> 代码：`https://github.com/THUDM/LongWriter`
+> 模型：
+> +   Huggingface：`https://huggingface.co/THUDM/LongWriter-glm4-9b`
+> +   魔搭：`https://modelscope.cn/models/ZhipuAI/LongWriter-glm4-9b`
+> 数据
+> +   Huggingface：`https://huggingface.co/datasets/THUDM/LongWriter-6k`
+> +   魔搭：`https://modelscope.cn/datasets/ZhipuAI/LongWriter-6k`
 
 ![](img/06ed25643ebd001a184d00b91d12e2fc.png)
 
->
+随着大语言模型的发展，许多模型已经能够处理超过100k+ tokens的输入上下文。然而，这些模型在生成长文本时，普遍存在输出长度受限的问题。
 
-> 随着大语言模型的发展，许多模型已经能够处理超过100k+ tokens的输入上下文。然而，这些模型在生成长文本时，普遍存在输出长度受限的问题。
+在实际应用中，为了克服这个问题，人们普遍采用「分而治之」的方法，让模型一段一段地写。这种方法在一定程度上似乎能够解决长文本输出的问题，但往往会导致 1）消耗 tokens 量成倍甚至指数增加；2）前后内容不连贯。
 
->
+如何才能让模型拥有更强的长文本输出能力呢？我们发现，模型输出长度受限的主要原因在于，监督微调（SFT）数据集缺乏足够长的输出样例。
 
-> 在实际应用中，为了克服这个问题，人们普遍采用「分而治之」的方法，让模型一段一段地写。这种方法在一定程度上似乎能够解决长文本输出的问题，但往往会导致 1）消耗 tokens 量成倍甚至指数增加；2）前后内容不连贯。
-
->
-
-> 如何才能让模型拥有更强的长文本输出能力呢？我们发现，模型输出长度受限的主要原因在于，监督微调（SFT）数据集缺乏足够长的输出样例。
-
->
-
-> 针对这一问题，我们构建了一个 6000 多条2k-20k words 不等的长输出数据集 LongWriter-6k，并在此基础上，对 GLM-4-9B 进行 SFT 微调和 DPO 对齐。新的模型拥有了能够生成超过10,000字/词连贯文本的能力。
+针对这一问题，我们构建了一个 6000 多条2k-20k words 不等的长输出数据集 LongWriter-6k，并在此基础上，对 GLM-4-9B 进行 SFT 微调和 DPO 对齐。新的模型拥有了能够生成超过10,000字/词连贯文本的能力。
 
 ![](img/12c77a45026b604be9ca6f0bb7a3bddc.png)
 
@@ -50,7 +31,7 @@
 
 [longwriter_demo.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IEUabmh7woyntKxUebYcm9BsnPf)
 
-### 生成长度限制的根源
+## 生成长度限制的根源
 
 我们对当前最先进的长上下文模型的最大输出长度做了测试，这些测试会明确要求模型生成不同长度的内容，例如：撰写一篇关于罗马帝国历史的10000字文章。
 
@@ -70,11 +51,11 @@
 
 这一发现可以解释当前模型普遍存在的 2000 字输出限制——因为现有的 SFT 数据集很少包含超过此长度的样例；而另一方面，很多数据集都是用现有 LLM 自动构建的，因此它们也继承了源模型的输出长度限制。
 
-### 自动构建长输出数据集
+## 自动构建长输出数据集
 
-为了解决 SFT 数据集中长输出文本数据缺失的问题，我们设计了一个名为「AgentWrite」的 pipeline，通过分解长生成任务，让现有模型来生成更长的具备连贯性的输出。
+为了解决 SFT 数据集中长输出文本数据缺失的问题，我们设计了一个名为 `AgentWrite` 的 pipeline，通过分解长生成任务，让现有模型来生成更长的具备连贯性的输出。
 
-具体来说，AgentWrite
+具体来说，`AgentWrite`
 
 +   首先，会根据用户的输入生成一个详细的写作计划，包括每段内容的结构和目标字数
 
@@ -82,13 +63,13 @@
 
 ![](img/97c1febe537715b3e670277099e1adf4.png)
 
-通过这种方法，AgentWrite 能够生成超过 20,000 字的高质量文本。
+通过这种方法，`AgentWrite` 能够生成超过 20,000 字的高质量文本。
 
-### 教模型生成超长输出
+## 教模型生成超长输出
 
 有了一个利用 LLMs 自动生成的更长输出的数据集，我们不禁好奇：是否可以将这种生成超长输出的能力传授给LLMs，使它们能够在单次输出中完成长篇写作任务？
 
-我们从 GLM-4 的 SFT 数据中筛选出了 3,000 条指令（主要是中文），另外从 WildChat-1M（一个包含用户与ChatGPT/GPT-4对话记录的公开日志）中选择了3,000条指令（主要是英文），通过 AgentWrite 并利用 GPT-4o 生成了6,000条长输出的SFT数据，即 LongWriter-6k。
+我们从 GLM-4 的 SFT 数据中筛选出了 3,000 条指令（主要是中文），另外从 WildChat-1M（一个包含用户与ChatGPT/GPT-4对话记录的公开日志）中选择了3,000条指令（主要是英文），通过 `AgentWrite` 并利用 GPT-4o 生成了6,000条长输出的SFT数据，即 LongWriter-6k。
 
 在模型训练中，为了确保模型的通用能力，我们将LongWriter-6k与通用SFT数据（180k 条数据）结合，形成整个训练集。输出长度分布如下：
 
@@ -98,31 +79,31 @@
 
 微调（SFT）：我们分别针对 GLM-4-9B 和 Llama-3.1-8B 做了 SFT 微调，这两个模型都是基础模型，支持最多128k tokens的上下文窗口，非常适合用于长输出的训练。我们得到两个模型：LongWriter-9B（GLM-4-9B-LongWriter的缩写）和LongWriter-8B（Llama-3.1-8B-LongWriter的缩写）。
 
-**对齐（DPO）**：为了进一步提高模型的输出质量，并增强其在指令中遵循长度约束的能力，我们在经过 SFT 微调的LongWriter-9B模型上进行了直接偏好优化。DPO数据来自GLM-4的 DPO 数据（大约50,000条），同时包含4k条我们标注的长输出正负样本对。
+对齐（`DPO`）：为了进一步提高模型的输出质量，并增强其在指令中遵循长度约束的能力，我们在经过 SFT 微调的LongWriter-9B模型上进行了直接偏好优化。DPO数据来自GLM-4的 DPO 数据（大约50,000条），同时包含4k条我们标注的长输出正负样本对。
 
-### 结果怎么样？
+## 结果怎么样？
 
 我们在LongBench-Write上对4个专有模型和5 个开源模型进行了评测，如下表所示：
 
 ![](img/5e689da50693f21ed940707197770a89.png)
 
-其中 S_l 表示输出长度是否符合要求的得分。当输出长度符合要求时，得分为100；当输出长度超过要求的4倍或低于要求的1/3时，得分会线性下降至0。
+其中 `S_l` 表示输出长度是否符合要求的得分。当输出长度符合要求时，得分为100；当输出长度超过要求的4倍或低于要求的1/3时，得分会线性下降至0。
 
-S_q 则是从相关性、准确性、连贯性、清晰度、广度与深度以及阅读体验等六个维度，用 GPT-4o 进行的打分，并取平均，代表了生成内容的质量。
+`S_q` 则是从相关性、准确性、连贯性、清晰度、广度与深度以及阅读体验等六个维度，用 GPT-4o 进行的打分，并取平均，代表了生成内容的质量。
 
-最终得分 \overline{S} 通过 S_l 和 S_q 的平均值计算得出。
+最终得分 `\overline{S}` 通过 `S_l` 和 `S_q` 的平均值计算得出。
 
-**1**、大多数当前的模型都无法满足超过2,000字的长度要求，而LongWriter模型在此类提示下始终提供更长且更丰富的响应。
+1、大多数当前的模型都无法满足超过2,000字的长度要求，而LongWriter模型在此类提示下始终提供更长且更丰富的响应。
 
 更具体来说，在[2k, 4k)范围内当前的模型通常表现不佳，只有Claude 3.5 Sonnet得分尚可；而在[4k, 20k)范围里，几乎所有当前的模型都完全无法达到目标输出长度，甚至得分为0（意味着所有输出长度均小于要求长度的1/3）。
 
 ![](img/5a8f859ea82770dbf7a857d5cafae0d3.png)
 
-**2、DPO（直接偏好优化）有效提升了模型的输出质**量及其在长文本生成中遵循长度要求的能力。
+2、`DPO`（直接偏好优化）有效提升了模型的输出质量及其在长文本生成中遵循长度要求的能力。
 
-通过比较LongWriter-9B和LongWriter-9B-DPO的得分，我们发现DPO显著提高了 S_l（+4%）和 S_q （+3%）的得分，并且这种提升在所有范围内都保持一致。这表明在长文本生成场景中，DPO依然能够帮助提升模型的输出质量，并能更好地使模型的输出长度与要求的长度对齐。
+通过比较LongWriter-9B和LongWriter-9B-DPO的得分，我们发现DPO显著提高了 `S_l`（+4%）和 `S_q` （+3%）的得分，并且这种提升在所有范围内都保持一致。这表明在长文本生成场景中，DPO依然能够帮助提升模型的输出质量，并能更好地使模型的输出长度与要求的长度对齐。
 
-**3**、LongWriter模型的输出长度限制大概10k至20k字之间，如果想让模型拥有更长输出的能力，则需要更长输出的数据集。
+3、LongWriter模型的输出长度限制大概10k至20k字之间，如果想让模型拥有更长输出的能力，则需要更长输出的数据集。
 
 ![](img/939576fce8ccc0c843cea6b4155743ee.png)
 

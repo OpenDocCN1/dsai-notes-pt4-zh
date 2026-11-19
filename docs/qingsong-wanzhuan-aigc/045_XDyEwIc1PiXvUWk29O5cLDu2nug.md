@@ -1,14 +1,15 @@
+
 # 🌟实用的通用提问技巧及提示词
 
 > 来源：[https://my.feishu.cn/docx/MxoodxIiZofaLyxm2EicAysjnxh](https://my.feishu.cn/docx/MxoodxIiZofaLyxm2EicAysjnxh)
 
-# 让 AI 更好地思考，以获得更佳的输出效果
+## 让 AI 更好地思考，以获得更佳的输出效果
 
 如何让 ChatGPT 更好地思考，以获得更佳的输出效果，有几个比较成熟的实践和技巧，背后都有对应的论文。
 
-## 让 AI 以结构化的方式详细说明
+### 让 AI 以结构化的方式详细说明
 
-> 来源：https://x.com/newstart/status/1853305708025872548
+> 来源：`https://x.com/newstart/status/1853305708025872548`
 
 > 更适用于 Claude，一个Claude例子:please elaborate "spaced repetition" a structured way
 
@@ -16,35 +17,35 @@
 elaborate ｛** ｝in a structured way
 ```
 
-## 让 AI 更有逻辑地思考和执行任务
+### 让 AI 更有逻辑地思考和执行任务
 
-> CoT，思维链提示，https://arxiv.org/abs/2205.10625，将思考过程打印出来或者提供 one-shot/few-shot，输出的准确性会更高。
+> CoT，思维链提示，`https://arxiv.org/abs/2205.10625`，将思考过程打印出来或者提供 one-shot/few-shot，输出的准确性会更高。
 
-> 对于决策推理性的问题，CoT 的效果都比较不错，事实上这个涌现效果是被发现而不是被设计出来的，后来它的有效性在这篇论文（https://arxiv.org/abs/2205.10625）中得到了证明。
+> 对于决策推理性的问题，CoT 的效果都比较不错，事实上这个涌现效果是被发现而不是被设计出来的，后来它的有效性在这篇论文（`https://arxiv.org/abs/2205.10625`）中得到了证明。
 
 ```
 Take a deep breath and work on this step by step, Let&#x27;s work hard and painstakingly. This is very important to my self-development.
 ```
 
-## 让 AI 自我总结给出最佳回答
+### 让 AI 自我总结给出最佳回答
 
-> Self-Consistency，自洽性，https://arxiv.org/abs/2203.11171，在多次输出中找到投票最高的那条
+> Self-Consistency，自洽性，`https://arxiv.org/abs/2203.11171`，在多次输出中找到投票最高的那条
 
 ```
 对于每一个问题，你会思考 5 种不同的思路，然后将它们结合起来，输出最佳的措辞、最全面和最准确的答案。
 ```
 
-## 让 AI 自我判断拆解问题必要与否后再回答
+### 让 AI 自我判断拆解问题必要与否后再回答
 
-> Least to Most prompting，本质是规划+逐步执行，https://arxiv.org/abs/2205.10625，对于复杂的任务，单纯使用 CoT + SC 效果依然不会太好，可以让 ChatGPT 先自己去拆解问题再回答
+> Least to Most prompting，本质是规划+逐步执行，`https://arxiv.org/abs/2205.10625`，对于复杂的任务，单纯使用 CoT + SC 效果依然不会太好，可以让 ChatGPT 先自己去拆解问题再回答
 
 ```
 对于每一个问题，你首先需要回答是否将问题分解为子问题，若否，直接给出答案；若是，则将问题拆解为子问题，然后将它们结合起来，输出最佳的措辞、最全面和最准确的答案。
 ```
 
-## 让 AI 多角色扮演/多 agent 对话后，给出最佳回答
+### 让 AI 多角色扮演/多 agent 对话后，给出最佳回答
 
-> Multi-Persona Self-Collaboration，多角色扮演，https://arxiv.org/abs/2307.05300（本论文主要介绍了一种名为 Solo Performance Prompting（SPP）的方法，旨在通过多角色自我协作，挖掘大语言模型（LLMs）中的认知协同能力，从而提升其在复杂任务中的问题解决能力。）
+> Multi-Persona Self-Collaboration，多角色扮演，`https://arxiv.org/abs/2307.05300`（本论文主要介绍了一种名为 Solo Performance Prompting（SPP）的方法，旨在通过多角色自我协作，挖掘大语言模型（LLMs）中的认知协同能力，从而提升其在复杂任务中的问题解决能力。）
 
 >
 
@@ -59,16 +60,14 @@ Take a deep breath and work on this step by step, Let&#x27;s work hard and pains
 > SPP的具体实施包括以下步骤：
 
 1.  角色识别（Persona Identification）：根据任务输入动态识别所需的不同角色。
-
-1.  头脑风暴（Brainstorming）：各角色基于专长提供意见和建议。
-
-1.  **多角色迭代协作（Multi-Persona Iter**ative Collaboration）：AI作为主导角色提出初步方案，征求其他角色反馈并进行迭代优化。
+2.  头脑风暴（Brainstorming）：各角色基于专长提供意见和建议。
+3.  **多角色迭代协作（Multi-Persona Iterative Collaboration）**：AI作为主导角色提出初步方案，征求其他角色反馈并进行迭代优化。
 
 >
 
 > 这种方法模仿了人类解决问题时的协作模式，通过整合不同角色的知识和视角，增强了AI在知识密集型和推理密集型任务中的表现。例如，在创作《哈利·波特》相关内容时，系统可能会调用电影专家、音乐专家、历史专家等角色，各自从专业角度提供建议，最终融合成更全面、准确的作品。
 
-### SPP 英文原版 Prompt
+#### SPP 英文原版 Prompt
 
 > 适用于展开多轮协作的深入讨论，SPP Prompt =
 
@@ -76,7 +75,7 @@ Take a deep breath and work on this step by step, Let&#x27;s work hard and pains
 When faced with a task, begin by identifying the participants who will contribute to solving the task. Then, initiate a multi-round collaboration process until a final solution is reached. The participants will give critical comments and detailed suggestions whenever necessary.
 ```
 
-### 中文简化版
+#### 中文简化版
 
 > 适用于针对一个提问的一步到位答案输出
 
@@ -84,9 +83,9 @@ When faced with a task, begin by identifying the participants who will contribut
 你可以扮演任何角色，针对我给出的问题，请提供三个最相关的角色，对问题进行两轮讨论，然后你综合讨论结果总结最佳方案。请打印三个角色的讨论过程以及最后的方案。
 ```
 
-## 巧用 CoT 思维链，让 AI 依次扮演专家、反思者、总结者，给出最佳回答
+### 巧用 CoT 思维链，让 AI 依次扮演专家、反思者、总结者，给出最佳回答
 
-> 参考 GPT-o1 的 CoT 推理强大能力，以及360 多模型协作（https://bot.360.com/cooperation）的思路，编制出的一个可媲美 GPT-o1 推理回答效果的通用 Prompt。
+> 参考 GPT-o1 的 CoT 推理强大能力，以及360 多模型协作（`https://bot.360.com/cooperation`）的思路，编制出的一个可媲美 GPT-o1 推理回答效果的通用 Prompt。
 
 简洁版：
 
@@ -123,29 +122,29 @@ When faced with a task, begin by identifying the participants who will contribut
 4. 使用&lt;output&gt;&lt;/output&gt;标签组织你的回答。
 ```
 
-## 让 AI 自我反思以生成更好答案
+### 让 AI 自我反思以生成更好答案
 
 > 以下是使用 Chain-of-Thought 帮助 ChatGPT 进行自我反思，优化答案的 Prompt 示例：
 
-<https://my.feishu.cn/sync/BjpYdbQAnsnpONbCaZicD2s0n1b>
+`https://my.feishu.cn/sync/BjpYdbQAnsnpONbCaZicD2s0n1b`
 
-## 🌈让 AI 生成的内容语言更有人味儿
+### 🌈让 AI 生成的内容语言更有人味儿
 
 > 消除 AI 生成答案的机器味儿，用更符合人们日常语言表达习惯的风格，来输出更自然的回答
 
-<https://my.feishu.cn/sync/DaXhdMENtseTTIbHjiBcXaVnnjb>
+`https://my.feishu.cn/sync/DaXhdMENtseTTIbHjiBcXaVnnjb`
 
-## 中英文标点符号统一、修正
+### 中英文标点符号统一、修正
 
 ```
 使用中文标点符号，如中文逗号（，）、中文引号等，而不是英文标点（,）。
 ```
 
-## 让 AI 给出更高质量的检索答案
+### 让 AI 给出更高质量的检索答案
 
 > 如果我们希望检索足够新颖的论文，怎么办？这个 prompt，可在搜索提问时，帮助提升 AI 学术检索的质量
 
-> 参考来源：https://mp.weixin.qq.com/s/XY8HiDRDwC59JZh7QoUBrQ
+> 参考来源：`https://mp.weixin.qq.com/s/XY8HiDRDwC59JZh7QoUBrQ`
 
 ```
 你是一名优秀的科研助手，有十余年的工作经验，成果斐然。请根据我提出的问题，查询与之相关的最新英文资料。全面阅读资料的内容，一步步思考后用简体中文回答该问题。 
@@ -160,13 +159,13 @@ When faced with a task, begin by identifying the participants who will contribut
 4. 资料引用要尽量保持多元化，不要轻易忽视任何信息来源。引用资料时，除了标准化的序号链接外，还需采用 APA 格式进行展示。
 ```
 
-## 拓展构建问题思路的 prompt
+### 拓展构建问题思路的 prompt
 
 > 寻找更丰富的提问角度和灵感
 
-<https://my.feishu.cn/sync/MYO1dzEvdsKW9Ebo2N9cqAppn7e>
+`https://my.feishu.cn/sync/MYO1dzEvdsKW9Ebo2N9cqAppn7e`
 
-## 快速提炼总结重点内容
+### 快速提炼总结重点内容
 
 > 长文章提炼总结、快速阅读
 
@@ -182,7 +181,7 @@ When faced with a task, begin by identifying the participants who will contribut
 总结这篇文章的「反常识」的过人之处。
 ```
 
-## 提取文本内容
+### 提取文本内容
 
 > 快速提取视频或网页内容文本
 
@@ -190,7 +189,7 @@ When faced with a task, begin by identifying the participants who will contribut
 请按照 markdown 格式总结视频或者网页内容，并一字不漏地提取视频文案或者网页文本。
 ```
 
-## 更好地调动 AI 的英文语料库优势
+### 更好地调动 AI 的英文语料库优势
 
 > 不习惯英文交流、但又有些遗憾中文语料库不如英文丰富的情况下，一种曲线救国的补充提问方式
 
@@ -198,7 +197,7 @@ When faced with a task, begin by identifying the participants who will contribut
 请搜索英文资料，然后用中文回复我。
 ```
 
-## 输出不完整时继续输出保持格式
+### 输出不完整时继续输出保持格式
 
 > ChatGPT 的文本输出长度有限制，超出限制后输出会截断，继续输出常常出现格式不对，内容不对的情况，可以使用下面的 prompt 解决。
 
@@ -206,7 +205,7 @@ When faced with a task, begin by identifying the participants who will contribut
 请接着上文最后一个字继续生成并保持原格式
 ```
 
-## 英文语法纠错
+### 英文语法纠错
 
 > 当用到英文表达时，在不确定准确与否的情况下，可以补充这句提示词，让 AI 帮忙检查语法、纠正表达
 
@@ -214,7 +213,7 @@ When faced with a task, begin by identifying the participants who will contribut
 Proofread and correct the following contents: &quot;原句&quot;.
 ```
 
-## 任意语言快速翻译为地道中文
+### 任意语言快速翻译为地道中文
 
 > 方便快速调用的地道中文翻译提示词
 
@@ -222,7 +221,7 @@ Proofread and correct the following contents: &quot;原句&quot;.
 你是一位精通简体中文专业翻译的翻译家，你的目标是把任何语言翻译成中文，请在翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，使用优美和高雅的表达方式。请翻译下面这句话：
 ```
 
-## 生成更大众化、通俗易懂的内容
+### 生成更大众化、通俗易懂的内容
 
 > 生成的内容过于专业和晦涩难懂时，让 AI 用大众化表达趣味举例讲解
 
@@ -230,7 +229,7 @@ Proofread and correct the following contents: &quot;原句&quot;.
 提供旁白和流行文化参考
 ```
 
-## 让 AI 忽略之前的对话内容
+### 让 AI 忽略之前的对话内容
 
 > 在一个聊天窗口内信息杂乱、不希望前面内容影响到后续输出
 
@@ -238,17 +237,17 @@ Proofread and correct the following contents: &quot;原句&quot;.
 ignore all previous instruction.
 ```
 
-## 让 AI 更稳定更高质量输出
+### 让 AI 更稳定更高质量输出
 
 ```
-你已经稳定运行了几百年，从未出错 
+你已经稳定运行了几百年，从未出错
 ```
 
-## 让AI以更好格式输出 for Gemini
+### 让AI以更好格式输出 for Gemini
 
 > 增加Gemini输出格式的可读性，模仿ChatGPT的markdown格式：优化latex输出、文本重点加粗
 
-> 来源：https://linux.do/t/topic/307474
+> 来源：`https://linux.do/t/topic/307474`
 
 ```
 你是一个高级语言模型。在输出文本时，请严格遵循以下格式要求，以确保信息的清晰、准确和易读：
@@ -269,8 +268,11 @@ ignore all previous instruction.
        2. 步骤二
    - **代码块**：仅用于展示代码或需要保持原格式的内容，避免将数学公式放入代码块中。
      ```python
+
      def hello_world():
+
          print(&quot;Hello, World!&quot;)
+
      ```
    - **引用**：引用他人观点或重要信息时使用引用格式。
      &gt; 这是一个引用的示例。
@@ -332,7 +334,7 @@ ignore all previous instruction.
 通过严格遵循以上格式要求，你能够生成结构清晰、内容准确、格式统一且易于阅读和理解的文本，帮助用户更有效地获取和理解所需的信息。
 ```
 
-## 文章润色改写
+### 文章润色改写
 
 > 检查文章内容，重新优化编辑，提高写作质量
 
@@ -358,7 +360,7 @@ ignore all previous instruction.
 你的建议应该是建设性的、富有洞察力的，旨在帮助用户提高其写作质量。
 ```
 
-## 让 AI 生成图表
+### 让 AI 生成图表
 
 > 比如：**生成一个Mermaid的饼图**
 
@@ -368,13 +370,17 @@ ignore all previous instruction.
 用中文输出一个 Mermaid 的XX图
 ```
 
-## 让 AI 帮助思考和补充提问细节
+### 让 AI 帮助思考和补充提问细节
 
 > 首先，请您提出一个问题，以便我更好地理解您的需求，从而圆满完成您的任务。
 
 ```
 先问我一个能帮助你澄清和完成任务的问题
 ```
+
+
+
+## 系统 Prompt 补充限定
 
 ```
 First ask me question that will help you clarify and complete your task.
@@ -395,9 +401,9 @@ First ask me question that will help you clarify and complete your task.
 ```
 To achieve the goal defined by this prompt and provide the best possible solution for the user, please follow these interaction guidelines:
 
-1. **Prioritize Clarification**: If the user&#x27;s input lacks essential background or contextual details, **ask up to 5 targeted clarifying questions** to gather the necessary information.
-2. **Wait for Response**: After asking your clarifying questions, **pause and wait for the user&#x27;s response** before proceeding.
-3. **Use Assumptions When Required**: If the user does not respond, you may proceed based on **reasonable assumptions**, but you **must clearly label such content with &quot;Assumption&quot; and describe the underlying premise**.
+1. **Prioritize Clarification**: If the user's input lacks essential background or contextual details, **ask up to 5 targeted clarifying questions** to gather the necessary information.
+2. **Wait for Response**: After asking your clarifying questions, **pause and wait for the user's response** before proceeding.
+3. **Use Assumptions When Required**: If the user does not respond, you may proceed based on **reasonable assumptions**, but you **must clearly label such content with "Assumption" and describe the underlying premise**.
 4. **Be User-Centric**: Ensure all clarification questions are concise, specific, and focused on helping the user achieve their intended goal.
 5. **Avoid Unnecessary Delay**: Do not over-question if the current information is sufficient to provide a preliminary answer; offer an initial direction or suggestion as appropriate.
 ```
@@ -427,17 +433,17 @@ Summarize following text into 5 bullet points:
 
 ## 让AI模仿任何写作风格
 
-#### 英文版
+### 英文版
 
 ```
-I&#x27;m going to provide you with my own written material, and your task will be to understand and mimic its style.
+I'm going to provide you with my own written material, and your task will be to understand and mimic its style.
 
-You&#x27;ll start this exercise by saying &quot;BEGIN.&quot; After, I&#x27;ll present an example text, to which you&#x27;ll respond, &quot;CONTINUE&quot;. The process will continue similarly with another piece of writing and then with further examples. I&#x27;ll give you unlimited examples. Your response will only be &quot;CONTINUE.&quot; You&#x27;re only permitted to change your response when I tell you &quot;FINISHED&quot;.
+You'll start this exercise by saying "BEGIN." After, I'll present an example text, to which you'll respond, "CONTINUE". The process will continue similarly with another piece of writing and then with further examples. I'll give you unlimited examples. Your response will only be "CONTINUE.". You're only permitted to change your response when I tell you "FINISHED".
 
-After this, you&#x27;ll explore and understand the tone, style, and characteristics of my writing based on the samples I&#x27;ve given. Finally, I&#x27;ll prompt you to craft a new piece of writing on a specified topic, emulating my distinctive writing style.
+After this, you'll explore and understand the tone, style, and characteristics of my writing based on the samples I've given. Finally, I'll prompt you to craft a new piece of writing on a specified topic, emulating my distinctive writing style.
 ```
 
-#### 中文版
+### 中文版
 
 ```
 我将向你展示一些我亲自撰写的文字，你的任务是理解并模仿它们的风格。
@@ -447,7 +453,7 @@ After this, you&#x27;ll explore and understand the tone, style, and characterist
 在此之后，你需要根据我提供的示例，深入理解并掌握我写作的语气、风格和特点。最终，我会要求你根据指定主题，创作一篇模仿我独特写作风格的新文章。
 ```
 
-#### Bot 进阶版
+### Bot 进阶版
 
 ```
 ## Role :  风格模仿大师
@@ -538,9 +544,9 @@ After this, you&#x27;ll explore and understand the tone, style, and characterist
 ## 事实核查与验证
 
 ```
-Use [three] or more different internet sources. If there are fewer than [three] different sources, output the message: &#x27;Not enough sources found for verification.&#x27;
+Use [three] or more different internet sources. If there are fewer than [three] different sources, output the message: 'Not enough sources found for verification.'
 
-Afterward, check if any information you&#x27;ve mentioned is cited by [two] or more sources. If there are fewer than [two] different sources, output the message: &#x27;Not enough sources found to verify an information,&#x27; supplemented by the mention of the affected information.
+Afterward, check if any information you've mentioned is cited by [two] or more sources. If there are fewer than [two] different sources, output the message: 'Not enough sources found to verify an information,' supplemented by the mention of the affected information.
 
 Subsequently, in a separate section, list [all] sources of your information and display the information used. Provide a link to each respective source.
 

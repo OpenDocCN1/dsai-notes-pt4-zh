@@ -1,3 +1,4 @@
+
 # chatGPT 掉线解决方案
 
 > 来源：[https://docs.feishu.cn/docx/E5d9d6ssOowYJYxBTK6cFXq9nUh](https://docs.feishu.cn/docx/E5d9d6ssOowYJYxBTK6cFXq9nUh)
@@ -6,7 +7,7 @@
 
 https://github.com/xcanwin/KeepChatGPT
 
-# 第一部，安装插件
+## 第一步，安装插件
 
 电脑
 
@@ -29,5 +30,3 @@ https://raw.githubusercontent.com/xcanwin/KeepChatGPT/main/KeepChatGPT.user.js
 ### 第三步 打开chatGPT 如下图即成功
 
 ![](img/497772a2877da19a6087f3c45cb30202.png)
-
-###

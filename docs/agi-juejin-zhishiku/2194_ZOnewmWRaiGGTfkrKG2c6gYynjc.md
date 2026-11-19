@@ -1,8 +1,7 @@
-# 12.24-豆包视觉理解模型惊艳亮相：首次评测就排名全球第二
-
-> 来源：[https://agijuejin.feishu.cn/docx/NE4MdoB5ZoV4ItxZQI0c7GiKnmg](https://agijuejin.feishu.cn/docx/NE4MdoB5ZoV4ItxZQI0c7GiKnmg)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 24 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/NE4MdoB5ZoV4ItxZQI0c7GiKnmg](https://agijuejin.feishu.cn/docx/NE4MdoB5ZoV4ItxZQI0c7GiKnmg)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -17,8 +16,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/819/548.htm)
 ![](img/6beed5bb6ff90a00770513a7f9861ee6.png)
 
 2024 年 12 月，火山引擎 FORCE 原动力大会・冬在上海举行，发布全新豆包视觉理解模型。该模型在视觉语言模型评测中排名全球第二，在中文通用知识和文字识别方面表现突出。它具有内容识别、理解推理和细腻视觉描述等能力，为大模型加上‘眼睛’，拓展交互形式和应用场景。豆包大模型家族全面升级，通用模型 pro 已全面对齐 GPT-4o，日均 tokens 使用量增长 33 倍，与众多行业合作，覆盖终端设备约 3 亿台。
-
-## 🌟 技术突破
 
 ### 💡 OpenAI o3 AI 模型突破推理极限背后：成本飙升，没“钞能力”用不起
 

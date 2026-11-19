@@ -1,3 +1,4 @@
+
 # 第一性原理思维教练
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/MJRDdXp5CoGjLKxOGelcwkHqnEm](https://vxc3hj17dym.feishu.cn/docx/MJRDdXp5CoGjLKxOGelcwkHqnEm)

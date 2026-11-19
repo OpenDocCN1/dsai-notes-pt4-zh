@@ -1,3 +1,4 @@
+
 # TensorFlow 数据处理与管道
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/BzEod1CP4oSjK6xzj32c2zsknE7](https://v11enp9ok1h.feishu.cn/docx/BzEod1CP4oSjK6xzj32c2zsknE7)
@@ -6,11 +7,9 @@ TensorFlow 数据处理管道是机器学习工作流中的关键环节，它负
 
 与传统的直接加载数据方式相比，TensorFlow 管道提供了三大优势：
 
-1.  **性能优化**：通过并行化和预加载减少 I/O 瓶颈
-
-1.  **内存效率**：避免一次性加载全部数据到内存
-
-1.  **代码整洁**：将数据处理逻辑与模型代码解耦
+1. **性能优化**：通过并行化和预加载减少 I/O 瓶颈
+2. **内存效率**：避免一次性加载全部数据到内存
+3. **代码整洁**：将数据处理逻辑与模型代码解耦
 
 ![](img/6438df23076dffc9384310526a37b4a8.png)
 
@@ -18,9 +17,9 @@ TensorFlow 数据处理管道是机器学习工作流中的关键环节，它负
 
 ### Dataset API
 
-TensorFlow Dataset API 是构建数据管道的核心工具，它提供了多种数据源接口和转换操作：
+TensorFlow `Dataset` API 是构建数据管道的核心工具，它提供了多种数据源接口和转换操作：
 
-## 实例
+### 实例
 
 ```
 import tensorflow as tf
@@ -29,23 +28,20 @@ import tensorflow as tf
 data = tf.data.Dataset.from_tensor_slices([1, 2, 3])
 
 # 从文本文件创建
-text_data = tf.data.TextLineDataset([&quot;file1.txt&quot;, &quot;file2.txt&quot;])
+text_data = tf.data.TextLineDataset(["file1.txt", "file2.txt"])
 
 # 从TFRecord创建
-tfrecord_data = tf.data.TFRecordDataset(&quot;data.tfrecord&quot;)
+tfrecord_data = tf.data.TFRecordDataset("data.tfrecord")
 ```
 
 ### 数据预处理技术
 
 常见预处理操作包括：
 
-1.  **标准化**：(x - mean) / std
-
-1.  **归一化**：(x - min) / (max - min)
-
-1.  **独热编码**：tf.one_hot()
-
-1.  **填充/截断**：tf.keras.preprocessing.sequence.pad_sequences
+1. 标准化：`(x - mean) / std`
+2. 归一化：`(x - min) / (max - min)`
+3. 独热编码：`tf.one_hot()`
+4. 填充/截断：`tf.keras.preprocessing.sequence.pad_sequences`
 
 ## 管道构建步骤
 
@@ -53,7 +49,7 @@ tfrecord_data = tf.data.TFRecordDataset(&quot;data.tfrecord&quot;)
 
 根据数据来源选择适当的加载方式：
 
-## 实例
+### 实例
 
 ```
 # 图像数据加载示例
@@ -62,15 +58,15 @@ def load_image(path):
     img = tf.image.decode_jpeg(img, channels=3)
     return tf.image.resize(img, [256, 256])
 
-image_dataset = tf.data.Dataset.list_files(&quot;images/*.jpg&quot;)
+image_dataset = tf.data.Dataset.list_files("images/*.jpg")
 image_dataset = image_dataset.map(load_image)
 ```
 
 ### 数据预处理
 
-使用 map() 方法应用预处理函数：
+使用 `map()` 方法应用预处理函数：
 
-## 实例
+### 实例
 
 ```
 def normalize(image):
@@ -83,7 +79,7 @@ normalized_dataset = image_dataset.map(normalize)
 
 训练时常用的增强技术：
 
-## 实例
+### 实例
 
 ```
 def augment(image):
@@ -98,7 +94,7 @@ augmented_dataset = normalized_dataset.map(augment)
 
 配置批次大小和预取：
 
-## 实例
+### 实例
 
 ```
 BATCH_SIZE = 32
@@ -111,7 +107,7 @@ train_dataset = train_dataset.prefetch(tf.data.AUTOTUNE)
 ### 性能优化策略
 
 ```
-optimized_dataset = (tf.data.Dataset.list_files(&quot;data/*.png&quot;)
+optimized_dataset = (tf.data.Dataset.list_files("data/*.png")
                     .map(load_image, num_parallel_calls=tf.data.AUTOTUNE)
                     .cache()
                     .map(augment, num_parallel_calls=tf.data.AUTOTUNE)
@@ -123,11 +119,9 @@ optimized_dataset = (tf.data.Dataset.list_files(&quot;data/*.png&quot;)
 
 处理大型数据集时：
 
-+   使用 TFRecord 格式存储数据
-
-+   分片处理：dataset.shard(num_shards, index)
-
-+   流式处理：避免 cache() 大文件
++ 使用 `TFRecord` 格式存储数据
++ 分片处理：`dataset.shard(num_shards, index)`
++ 流式处理：避免 `cache()` 大文件
 
 ---
 
@@ -135,12 +129,12 @@ optimized_dataset = (tf.data.Dataset.list_files(&quot;data/*.png&quot;)
 
 完整图像分类数据处理流程：
 
-## 实例
+### 实例
 
 ```
 def build_pipeline(image_dir, batch_size=32, is_training=True):
     # 1. 加载数据
-    dataset = tf.data.Dataset.list_files(f&quot;{image_dir}/*/*.jpg&quot;)
+    dataset = tf.data.Dataset.list_files(f"{image_dir}/*/*.jpg")
     
     # 2. 解析和预处理
     def process_path(file_path):
@@ -168,21 +162,17 @@ def build_pipeline(image_dir, batch_size=32, is_training=True):
 
 ### 性能瓶颈排查
 
-1.  **CPU利用率低**
+1. **CPU利用率低**
+   + 增加 `num_parallel_calls`
+   + 使用 `interleave()` 并行化 I/O
 
-+   增加 num_parallel_calls
-
-+   使用 interleave() 并行化I/O
-
-1.  **GPU利用率低**
-
-+   增加 prefetch_buffer_size
-
-+   检查批次大小是否合适
+2. **GPU利用率低**
+   + 增加 `prefetch_buffer_size`
+   + 检查批次大小是否合适
 
 ### 数据倾斜处理
 
-## 实例
+### 实例
 
 ```
 # 类别加权采样
@@ -196,27 +186,24 @@ dataset = dataset.apply(
 
 ## 最佳实践建议
 
-**1、管道设计原则**
+### 1、管道设计原则
 
-+   将耗时操作放在早期阶段
++ 将耗时操作放在早期阶段
++ 保持预处理操作确定性
++ 为验证集禁用数据增强
 
-+   保持预处理操作确定性
+### 2、监控工具
 
-+   为验证集禁用数据增强
-
-**2、监控工具**
-
-## 实例
+### 实例
 
 ```
 tf.data.experimental.bytes_produced_stats()
 tf.data.experimental.latency_stats()
 ```
 
-**3、版本兼容**
+### 3、版本兼容
 
-+   TF 2.x 推荐使用 tf.data API
-
-+   避免混合使用 feed_dict 方式
++ `TF 2.x` 推荐使用 `tf.data` API
++ 避免混合使用 `feed_dict` 方式
 
 通过合理设计 TensorFlow 数据管道，您可以将训练速度提升 2-5 倍，同时保持代码的整洁和可维护性。

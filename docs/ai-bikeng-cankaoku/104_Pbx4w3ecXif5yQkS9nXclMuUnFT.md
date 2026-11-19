@@ -1,8 +1,9 @@
+
 # 文本转可视化网页
 
 > 来源：[https://xodnytdcaw.feishu.cn/docx/MH7JdYMMno2giLxkHw2c0ldTn2t](https://xodnytdcaw.feishu.cn/docx/MH7JdYMMno2giLxkHw2c0ldTn2t)
 
-# 基础版本
+## 基础版本
 
 ```
 我会给你一个文件，分析内容，并将其转化为美观漂亮的中文可视化网页：
@@ -59,21 +60,21 @@
 
 demo：
 
-[iPad 产品线演进历程](https://ox6wonfjz0.app.youware.com/)  （[Claude3.7Sonnet](https://monica.im/invitation?c=3P9F2BVV)）
+[iPad 产品线演进历程](https://ox6wonfjz0.app.youware.com/)  （[Claude3.7Sonnet](https://monica.im/invitation?c=3P9F2BVV）
 
-https://ph.lisa23.com/index.html
+`https://ph.lisa23.com/index.html`
 
-https://qingyuano.github.io/doc-to-website/
+`https://qingyuano.github.io/doc-to-website/`
 
 原文：
 
-https://mp.weixin.qq.com/s/Z-u_DHF2dXGAPUvdav2Pvw
+`https://mp.weixin.qq.com/s/Z-u_DHF2dXGAPUvdav2Pvw`
 
-https://x.com/op7418/status/1899383918836756634
+`https://x.com/op7418/status/1899383918836756634`
 
-# 迭代版本
+## 迭代版本
 
-## V1 增加杂志风、配色和CoT反思
+### V1 增加杂志风、配色和CoT反思
 
 ```
 你是一名专业的网页设计师和前端开发专家，同时对审美有极高的要求。
@@ -98,7 +99,6 @@ https://x.com/op7418/status/1899383918836756634
 - 配色方案应专业、和谐，适合长时间阅读
 - 排版精致，像一本精美的杂志，比如《时代周刊》等
 - 字体和配色考究，混合使用三种以内字体和配色。
-
 
 ## 技术规范
 - 使用HTML5、TailwindCSS 3.0+和必要的JavaScript
@@ -140,10 +140,9 @@ https://x.com/op7418/status/1899383918836756634
 
 待处理内容如下：
 {{content}}
-
 ```
 
-## V2
+### V2
 
 ```
 你是一名专业的网页设计师和前端开发专家，同时对审美有极高的要求。
@@ -168,8 +167,6 @@ https://x.com/op7418/status/1899383918836756634
 - 配色方案应专业、和谐，适合长时间阅读
 - 排版精致，像一本精美的杂志，比如《时代周刊》等
 - 字体和配色考究，混合使用三种以内字体和配色。
-
-
 
 ## 技术规范
 - 使用HTML5、TailwindCSS 3.0+和必要的JavaScript
@@ -210,10 +207,9 @@ https://x.com/op7418/status/1899383918836756634
 
 待处理内容如下：
 {{content}}
-
 ```
 
-## V3：指定CSS和JS，更可控
+### V3：指定CSS和JS，更可控
 
 ```
 你是一名专业的网页设计师和前端开发专家，对现代 Web 设计趋势和最佳实践有深入理解，尤其擅长创造具有极高审美价值的用户界面。你的设计作品不仅功能完备，而且在视觉上令人惊叹，能够给用户带来强烈的&quot;Aha-moment&quot;体验。
@@ -279,13 +275,13 @@ https://x.com/op7418/status/1899383918836756634
 待处理内容：{{content}}
 ```
 
-## demo
+### demo
 
-https://www.qiaomu.ai/demo/yz.html
+`https://www.qiaomu.ai/demo/yz.html`
 
-https://www.qiaomu.ai/demo/blm.html
+`https://www.qiaomu.ai/demo/blm.html`
 
-## 延伸阅读：视觉设计
+### 延伸阅读：视觉设计
 
 > Bento Grid风格
 
@@ -308,15 +304,18 @@ https://www.qiaomu.ai/demo/blm.html
 
 网页配色参考
 
-[terminal---黑客帝国：ht](https://www.designprompts.dev/terminal)tps://www.designprompts.dev/terminal
+[terminal---黑客帝国：ht](https://www.designprompts.dev/terminal)`tps://www.designprompts.dev/terminal`
 
-### 标准终端风格
+#### 标准终端风格
 
 ```
 A brutally functional retro terminal interface screen. Deep black background #0a0a0a with a very faint, subtle CRT scanline overlay. High-contrast neon green #33ff00 monospaced typography using JetBrains Mono font. The layout mimics a ZSH shell environment with command prompts, blinking block cursors, and raw system data. No rounded corners, sharp pixel edges. Subtle phosphor text glow (bloom). Cyber-industrial aesthetic, authentically retro, mainframe styling. --no matrix rain --no 3d
 ```
 
 黑客/系统监控风格 (Hacker / System Monitor)
+
+
+
 
 ```
 Cyber-industrial system monitor interface, tmux split-screen layout with rigid grid alignment. ASCII art borders and separators. Primary color is bright neon green #33ff00 on a deep black #0a0a0a background. Elements include progress bars made of characters [|||||], blinking underscore cursors, and system status codes [OK] [ERR]. Visual style is flat, 2D, purely typographical, high-contrast, and monospaced. A subtle CRT monitor texture acts as a noise overlay.
@@ -328,32 +327,32 @@ Cyber-industrial system monitor interface, tmux split-screen layout with rigid g
 
 https://bentogrids.com/
 
-### 高级UI模板
+## 高级UI模板
 
 https://saaspo.com/page-types/saas-landing-page-examples
 
-可以使用[html.to.design](https://chromewebstore.google.com/detail/htmltodesign/ldnheaepmnmbjjjahokphckbpgciiaed)插件导入到figma
+可以使用[`html.to.design`](https://chromewebstore.google.com/detail/htmltodesign/ldnheaepmnmbjjjahokphckbpgciiaed)插件导入到figma
 
-再使用Antigravity，接上MCP，这个落地页就实现了
+再使用`Antigravity`，接上MCP，这个落地页就实现了
 
 https://www.vibeui.studio/
 
 ## 电视喵标题配色方案
 
 ```
-/* 通用渐变样式 */
-.gradient-text {
-    /* 135度线性渐变：天蓝 -&gt; 紫 */
-    background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+ /* 通用渐变样式 */
+ .gradient-text {
+     /* 135度线性渐变：天蓝 > 紫 */
+     background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
 
-/* 暗黑模式适配 */
-.dark .gradient-text {
-    /* 颜色更亮：浅天蓝 -&gt; 浅紫 */
-    background: linear-gradient(135deg, #38bdf8, #a78bfa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+ /* 暗黑模式适配 */
+ .dark .gradient-text {
+     /* 颜色更亮：浅天蓝 > 浅紫 */
+     background: linear-gradient(135deg, #38bdf8, #a78bfa);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
 ```

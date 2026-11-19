@@ -1,3 +1,4 @@
+
 # 思想炼金师（录音稿精华提取）
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/A2gNdL7KIoWVEixrqe8cfEg6ndc](https://vxc3hj17dym.feishu.cn/docx/A2gNdL7KIoWVEixrqe8cfEg6ndc)
@@ -6,11 +7,11 @@
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 ```
 需求:
-几个小时的录音文字稿，希望可以提炼其中的「精华」。
+几个小时的录音文字稿，希望可以提炼其中的「精华」.
 
 
 Prompt:

@@ -1,8 +1,9 @@
+
 # AI写小说-“文娱文”小说家独家Prompt
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/ZudldvUBwoeCUaxIK4ZcAMyqnnf](https://rq547mr4oez.feishu.cn/docx/ZudldvUBwoeCUaxIK4ZcAMyqnnf)
 
-# 一、前言（韭菜Y日记）
+## 一、前言（韭菜Y日记）
 
 > 有个追星的小伙伴想写娱乐文，说在飞卢数量最多的时候，天榜上能同时有十几本娱乐。
 
@@ -14,37 +15,37 @@
 
 **以下是题材类Prompt**
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
+1. [AI写小说-“女频耽美文”小说家Prompt（万字）](https://rq547mr4oez.feishu.cn/wiki/Cx1YwmLNeizNW7kafvzcsmXTnQb)
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
+1. [AI写小说-“世情文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UTe7wMDOKiDYfbkuGIPcbJxsngg?from=from_copylink)
 
-1.  [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
+1. [AI写小说-“快穿文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/🐧EhwsaoZiQlv0k4wHVc03Nln9e?from=from_copylink)（易上手题材之一）
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新~new）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  [AI写小说-“知乎短篇”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UvvXwWkC9i6PSfkPIv8cLXxtn2f?from=from_copylink)
+1. [AI写小说-“知乎短篇”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/UvvXwWkC9i6PSfkPIv8cLXxtn2f?from=from_copylink)
 
-1.  [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
+1. [AI写小说-“升级流”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CdriwSAi1iq2QLkWb0PcpxRknCd?from=from_copylink)
 
-1.  ......
+1. ......
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -52,7 +53,7 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+**PS**：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
 **原始出处：**
 
@@ -60,7 +61,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 ---
 
-# 二、思路（素材引用互联网）
+## 二、思路（素材引用互联网）
 
 ### 1、什么是娱乐文
 
@@ -68,7 +69,7 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > 不过，像是这种火爆过的题材，也算是有利有弊。
 
-### 2、娱乐文的优劣势
+### 2、娱乐文的优劣劏
 
 > **优势在于，可参考的书非常多。**
 
@@ -96,8 +97,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > 在三四年前，你写一本娱乐唱歌文，主角唱《海阔天空》《追梦赤子心》《一生所爱》......那恭喜你，天榜了。
 
->
-
 > 因为那时候的读者，没看过这类型的书。
 
 > 你在书中写这些脍炙人口的歌曲，是非常戳中读者爽点的。
@@ -106,8 +105,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > 你会扑。
 
->
-
 > 或者说，你最多能赚个几千块，但绝对和天榜沾不了一点边。
 
 > 原因很简单。
@@ -115,8 +112,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 > 因为这样的书，读者已经看了三四年了，可能看了二十本了。
 
 > 你还在写这样陈旧的东西，读者怎么看？
-
->
 
 > 这也是为啥，今年飞卢几乎没有什么唱歌文上天榜，就是这个缘故。
 
@@ -191,8 +186,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 >
 
 > 推荐书：《妖妖灵让我拍宣传片，我拍无间道》《让你拍医保宣传片，你震哭全网》
-
->
 
 #### 3.演戏文（影帝文）
 
@@ -300,8 +293,6 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > 现在飞卢的娱乐文，比之前要差了不少。如果想要尝试的话，更建议去番茄写。
 
->
-
 > 或者对自己能力有自信的，也可以去起点尝试。
 
 > 起点的娱乐文，不像番茄/飞卢是局限于一个类型，而是全能型，就是既唱歌、又演戏、又上综艺......而且对真实感、氛围感有更高的要求，大家有能力的也可以去尝试。
@@ -320,15 +311,14 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
 > 《全球影帝》
 
-#
+## 三、Prompt完整内容
 
-# 三、Prompt完整内容
-
-## # Role :娱乐文专业小说家，Markdown格式，一键复制哦~(可以找我🛰️发你~)（韭菜Y日记）
+### Role：娱乐文专业小说家，Markdown格式，一键复制哦~(可以找我🛰️发你~)（韭菜Y日记）
 
 ---
 
-```
+
+
 # Role：娱乐文专业小说家
 
 ## Background：娱乐文是一种广受欢迎的文学形式，它以轻松、幽默、贴近生活的方式，让读者在忙碌之余享受阅读的乐趣。这类作品通常以娱乐圈为背景，讲述明星、导演、歌手等人物的故事，深受各年龄层读者的喜爱。
@@ -405,8 +395,3 @@ PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 ⚙️**韭菜大师系列 v1.1.0**⚙️
 作者：Ted（韭菜Y日记）
 作为一名专业的娱乐文小说家，我将遵循上述的约束条件，用中文与用户交流，并在创作过程中向用户介绍我的工作流程。
-```
-
----
-
-END

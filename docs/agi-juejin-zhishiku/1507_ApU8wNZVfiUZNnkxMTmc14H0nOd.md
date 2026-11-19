@@ -1,10 +1,11 @@
+
 # 打造国内人人可用的Agents，SkyAgents实测体验！
 
 > 来源：[https://agijuejin.feishu.cn/docx/WAq7dBmDmofRPQxKkqZcUvl9n0c](https://agijuejin.feishu.cn/docx/WAq7dBmDmofRPQxKkqZcUvl9n0c)
 
 > 作者：产品欧sir
 
-> 原文：https://mp.weixin.qq.com/s/qwDj8dooYi-LkVGfsJH7ow
+> 原文：`https://mp.weixin.qq.com/s/qwDj8dooYi-LkVGfsJH7ow`
 
 首先还是先给大家普及下什么是Agent，以及Agent有什么价值（我会尽量用通俗易懂的语言给大家描述下）：
 
@@ -38,11 +39,11 @@
 
 就好像是人工智能可以自我提示反馈，不断发展和适应，以尽可能最好的方式来实现你给出的目标。
 
-**以**大模型为底座的Agent目前主流的核心构成分成四个部分： 行动（action）、规划执行（planning）、记忆组件（Memory）、工具组件（Tools）。 其大概结构和逻辑如下图：
+以大模型为底座的Agent目前主流的核心构成分成四个部分：`action`、`planning`、`Memory`、`Tools`。其大概结构和逻辑如下图：
 
 ![](img/85c9fea1e70e2d11e64987303a1b5e80.png)
 
-Agent概念 从去年 斯塔福小镇开始一路被带火， 国外 在 Agent 成熟 度 在目前看来已经十分完善了，最新的统计具体可看 E2B统计的这张图：
+Agent概念从去年斯塔福小镇开始一路被带火，国外在Agent成熟度在目前看来已经十分完善了，最新的统计具体可看`E2B`统计的这张图：
 
 ![](img/47e3cd6279d3fe60796e283500507f80.png)
 
@@ -50,15 +51,15 @@ Agent概念 从去年 斯塔福小镇开始一路被带火， 国外 在 Agent �
 
 抛开这些原因不谈的话，其实还有一个更重要的原因是Agents类的产品操作门槛太高！
 
-但是，人工智能的引领者OpenAI发布了GPTs，给很多**企业带来了关于Agents创**建的灵感： 做人人可用的Agents！
+但是，人工智能的引领者OpenAI发布了`GPTs`，给很多企业带来了关于Agents创建的灵感：做人人可用的Agents！
 
 在国内打造人人可用的Agents领域里面，大模型厂商昆仑万维算是先行者了、国内Agents新领域的开创者，在去年12月底时，基于昆仑天工为大模型底座的SkyAgents开启全网测试！
 
 ![](img/d2b7ac8a469a33bb03dba291f9ce3f6e.png)
 
-# **SkyAgents实测体验**
+## SkyAgents实测体验
 
-登录SkyAgents后，可以看到界面十分简洁清爽，快速创建 Agents的入口也十分方便， Agents首页还给了不少示例模版。
+登录SkyAgents后，可以看到界面十分简洁清爽，快速创建Agents的入口也十分方便，Agents首页还给了不少示例模版。
 
 ![](img/d8ec819e5ee776b822f7f7744d8fdd94.png)
 
@@ -70,19 +71,19 @@ Agent概念 从去年 斯塔福小镇开始一路被带火， 国外 在 Agent �
 
 ![](img/c6e2714b46457aff9a5eafe94c980285.png)
 
-Agents和工具配置能力也十分方便快捷，目前 Agent s能力也即将上线！工具能力上目前内置了三种能力：HTTP调用、天工搜索、天气查询能力，其天工搜索的准确度是十分高！
+Agents和工具配置能力也十分方便快捷，目前Agent能力也即将上线！工具能力上目前内置了三种能力：`HTTP`调用、天工搜索、天气查询能力，其天工搜索的准确度是十分高！
 
 ![](img/89ff636d3cbc6d83642e9ec91bc68ecd.png)
 
-在实测中 Sky Agents对话的效应速度非常快！内容生成上也表现的很完整！
+在实测中SkyAgents对话的效应速度非常快！内容生成上也表现的很完整！
 
 ![](img/5a920241d67a7a78e6949c2dcff2526f.png)
 
-说说 昆仑万维 的 SkyAgents使用感受吧：
+说说昆仑万维的SkyAgents使用感受吧：
 
-昆仑万维的SkyAgents的核心设计理念是遵从 人人可用的Agents理念设计的！
+昆仑万维的SkyAgents的核心设计理念是遵从人人可用的Agents理念设计的！
 
-整个页面设计上营造一个真实、简洁的创造体验，让每个人都可以通过 SkyAgents， 迅速构建属于自己的Agents应用！
+整个页面设计上营造一个真实、简洁的创造体验，让每个人都可以通过SkyAgents，迅速构建属于自己的Agents应用！
 
 这是一款国内任何小白都能使用的Agents产品，建议大家玩玩！试玩入口可扫描下方二维码：
 

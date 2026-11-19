@@ -1,3 +1,4 @@
+
 # 基础知识
 
 > 来源：[https://geekbang.feishu.cn/docx/BqHkd3hJWosPAkxXn6gcyTaWncg](https://geekbang.feishu.cn/docx/BqHkd3hJWosPAkxXn6gcyTaWncg)
@@ -14,11 +15,11 @@ Stable Diffusion的源代码和模型权重已分别公开发布在GitHub和Hugg
 
 Stable Diffusion模型支持通过使用提示词来产生新的图像，描述要包含或省略的元素，以及重新绘制现有的图像，其中包含提示词中描述的新元素（该过程通常被称为“指导性图像合成”）通过使用模型的扩散去噪机制（diffusion-denoising mechanism）。此外，该模型还允许通过提示词在现有的图中进行内补绘制和外补绘制来部分更改，当与支持这种功能的用户界面使用时，其中存在许多不同的开源软件。
 
-**Stable Di**ffusion建议在 10GB以上的显存（GDDR或HBM）下运行，但是显存较少的用户可以选择以float16的精度加载权重，而不是默认的float32，以降低显存使用率。与DALL-E等模型不同，Stable Diffusion提供其源代码以及预训练的权重。用户拥有其生成的图像的权利，并可自由地将其用于商业用途。
+Stable Diffusion建议在 10GB以上的显存（GDDR或HBM）下运行，但是显存较少的用户可以选择以`float16`的精度加载权重，而不是默认的`float32`，以降低显存使用率。与DALL-E等模型不同，Stable Diffusion提供其源代码以及预训练的权重。用户拥有其生成的图像的权利，并可自由地将其用于商业用途。
 
 # 开始上手
 
-> 一般都是使用 UI 界面操作, 如果熟悉 python 的话, 可以直接使用 diffusers 进行开发
+> 一般都是使用 UI 界面操作，如果熟悉 `python` 的话，可以直接使用 `diffusers` 进行开发
 
 ## Stable Diffusion WebUI
 
@@ -28,13 +29,13 @@ Stable Diffusion WebUI 是一个基于 Web 的用户界面，用于访问和操�
 
 Stable Diffusion WebUI 的主要特点包括：
 
-+   **直观的用户界面**：用户可以通过易于使用的界面上传图像、选择生成参数，以及查看生成过程和结果。
++ 直观的用户界面：用户可以通过易于使用的界面上传图像、选择生成参数，以及查看生成过程和结果。
 
-+   **强大的生成能力**：利用 Stable Diffusion 技术，用户可以生成高质量、逼真的图像。
++ 强大的生成能力：利用 Stable Diffusion 技术，用户可以生成高质量、逼真的图像。
 
-+   **灵活的设置**：用户可以根据需要调整生成参数，以达到最佳的生成效果。
++ 灵活的设置：用户可以根据需要调整生成参数，以达到最佳的生成效果。
 
-+   **实时反馈**：在生成过程中，用户可以实时查看生成的图像，并根据需要进行调整。
++ 实时反馈：在生成过程中，用户可以实时查看生成的图像，并根据需要进行调整。
 
 Stable Diffusion WebUI 是一个强大的工具，适用于需要生成高质量图像的各种应用场景，包括艺术创作、游戏开发、广告设计等。通过提供直观的用户界面和强大的生成能力，Stable Diffusion WebUI 使得用户可以轻松地利用 Stable Diffusion 技术，创造出令人惊叹的图像作品。
 
@@ -64,11 +65,11 @@ Stable Diffusion WebUI 是一个强大的工具，适用于需要生成高质量
 
 > 官网地址: https://github.com/comfyanonymous/ComfyUI
 
-Stable Diffusion ComfyUI 是一个基于节点流程式的 Stable Diffusion AI 绘图工具 WebUI，它可以被视为集成了 Stable Diffusion 功能的 Substance Designer。通过将 Stable Diffusion 的流程拆分成节点，实现了更加精准的工作流定制和完善的可复现性。然而，节点式的工作流也提高了一部分使用门槛。ComfyUI 的内部生成流程做了优化，生成图片时的速度相较于 webui 有了 10%~25% 的提升，生成大图片的时候不会爆显存，只是图片太大时，会因为切块运算的导致图片碎裂。ComfyUI 虽然自带了 PyTorch 和 Stable Diffusion 环境，但是不包括模型，所以需要将模型放置到 ComfyUI 对应目录中。
+Stable Diffusion ComfyUI 是一个基于节点流程式的 Stable Diffusion AI 绘图工具 WebUI，它可以被视为集成了 Stable Diffusion 功能的 Substance Designer。通过将 Stable Diffusion 的流程拆分成节点，实现了更加精准的工作流定制和完善的可复现性。然而，节点式的工作流也提高了一部分使用门槛。ComfyUI 的内部生成流程做了优化，生成图片时的速度相较于 `webui` 有了 10%~25% 的提升，生成大图片的时候不会爆显存，只是图片太大时，会因为切块运算的导致图片碎裂。ComfyUI 虽然自带了 `PyTorch` 和 Stable Diffusion 环境，但是不包括模型，所以需要将模型放置到 ComfyUI 对应目录中。
 
-ComfyUI 提供了一系列插件来增强其功能，包括基于 ComfyUI 的更加定制化的 UI 界面 CushyStudio，Davemane42's Custom Node for ComfyUI，ComfyUI-Custom-Scripts，ComfyUI-extra-nodes - quality of life，ComfyUI Vextra Nodes，ControlNet Preprocessors for ComfyUI，Derfuu_ComfyUI_ModdedNodes 等。这些插件提供了图片自动分割，历史缩略图显示，锁定节点或组，lora 文件夹视图，图片自动生成关键字，添加 ComfyUI 的平板触控功能，一键自动排版等功能，以及对图片的后处理，如生成时播放音乐，在图片中添加文字，添加 Instagram 滤镜等。
+ComfyUI 提供了一系列插件来增强其功能，包括基于 ComfyUI 的更加定制化的 UI 界面 `CushyStudio`，`Davemane42's Custom Node for ComfyUI`，`ComfyUI-Custom-Scripts`，`ComfyUI-extra-nodes` - quality of life，`ComfyUI Vextra Nodes`，`ControlNet Preprocessors for ComfyUI`，`Derfuu_ComfyUI_ModdedNodes` 等。这些插件提供了图片自动分割，历史缩略图显示，锁定节点或组，`lora` 文件夹视图，图片自动生成关键字，添加 ComfyUI 的平板触控功能，一键自动排版等功能，以及对图片的后处理，如生成时播放音乐，在图片中添加文字，添加 Instagram 滤镜等。
 
-ComfyUI 的基础流程包括模型输入，图片输入，clip 跳过，clip 编码器，lora，controlnet，ksampler 节点，负责在潜空间生成图片，Vae 解码阶段，将生成的图片从潜空前转换成 RGB 色彩空间，以及保存和后处理阶段。用户可以通过点击面板右侧的工具栏中的 Queue Prompt 开始图片生成。
+ComfyUI 的基础流程包括模型输入，图片输入，`clip` 跳过，`clip` 编码器，`lora`，`ControlNet`，`ksampler` 节点，负责在潜空间生成图片，`Vae` 解码阶段，将生成的图片从潜空前转换成 RGB 色彩空间，以及保存和后处理阶段。用户可以通过点击面板右侧的工具栏中的 `Queue Prompt` 开始图片生成。
 
 相关教程和资料链接:
 

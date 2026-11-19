@@ -1,10 +1,11 @@
+
 # 3套爆款书单号视频工作流
 
-> 来源：[https://zinxkclpk97.feishu.cn/docx/ARCvd1Vy2oZJcdxI0MZc33ZFnzd](https://zinxkclpk97.feishu.cn/docx/ARCvd1Vy2oZJcdxI0MZc33ZFnzd)
+> 来源：[`https://zinxkclpk97.feishu.cn/docx/ARCvd1Vy2oZJcdxI0MZc33ZFnzd`](`https://zinxkclpk97.feishu.cn/docx/ARCvd1Vy2oZJcdxI0MZc33ZFnzd`)
 
 ![](img/069a85b883e9519a7b9f29d4f7955783.png)
 
-[翻书特效书单视频案例讲解-1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RIFqb6f0gopzAaxeZDfcH6ivnzh)
+[`翻书特效书单视频案例讲解-1.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RIFqb6f0gopzAaxeZDfcH6ivnzh`)
 
 在此之前我们已经分享了节奏卡点和打字机音效的书单号视频案例，感兴趣的小伙伴可以回顾下。
 
@@ -16,11 +17,11 @@
 
 ![](img/68ac44564d9a1b8bda1ec30ec2d65728.png)
 
-[fa17146a-b138-45d1-86c9-3f2e9b483918.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HvYPbC32WozJCzxZptMcCHaanGe)
+[`fa17146a-b138-45d1-86c9-3f2e9b483918.mp4`](`https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HvYPbC32WozJCzxZptMcCHaanGe`)
 
 想要体验的小伙伴可以直接跳到文章末尾获取体验链接。
 
-案例拆解
+## 案例拆解
 
 我们逐帧分析视频细节，其中包含了开场翻书动画、翻书音效、模糊背景、开场配音等元素，衔接部分还采用了切开的转场特效。
 
@@ -34,19 +35,16 @@
 
 之前一些视频工作流案例中，字幕拆分后再配音，导致配音出来的效果不好，听起来不连贯。在这次案例中我们也会给出解决方案，方便大家迁移学习使用。
 
-工作流设计
+## 工作流设计
 
-1.  输入标题/文案、背景音、封面图等素材信息
-
-1.  文案分段、文案转语音
-
-1.  字幕语音对齐处理、构建剪映草稿数据
-
-1.  数据重组、生成剪映草稿和视频
+1. 输入标题/文案、背景音、封面图等素材信息
+2. 文案分段、文案转语音
+3. 字幕语音对齐处理、构建剪映草稿数据
+4. 数据重组、生成剪映草稿和视频
 
 ![](img/579c357d1bf708d2288b7f4dd716cf1d.png)
 
-工作流搭建
+## 工作流搭建
 
 首先输入节点，考虑到有自定义文案和背景音的需求，开放多个参数允许用户自定义。
 
@@ -74,19 +72,19 @@
 
 ![](img/9e10e55db3d9c0daa8cd8997011b3dab.png)
 
-+   开篇开场白语音转换
+### 开篇开场白语音转换
 
 ![](img/4189ccdf0d050e127eb36d8a18cb97d2.png)
 
-+   背景音时长计算
+### 背景音时长计算
 
 ![](img/baa2b960ef350b0af1d964c77cdff7a8.png)
 
-+   顶部标题作者拼接
+### 顶部标题作者拼接
 
 ![](img/7cfe9b78ebfb1d5364a36cac13650f70.png)
 
-+   背景图生成
+### 背景图生成
 
 ![](img/588855baaaf5f48749e6bebf7cd27f25.png)
 
@@ -102,15 +100,15 @@
 
 ![](img/ad1d0cb162ab02ebfcc902fd10344b1f.png)
 
-循环节点
+### 循环节点
 
 ![](img/996b4e05308d46d58cc92c48f526fa7e.png)
 
-根据标点符号进行分句
+### 根据标点符号进行分句
 
 ![](img/5c0cb68bf8af17c70b3eddd07763b15c.png)
 
-段落文案转音频
+### 段落文案转音频
 
 ![](img/dd26e2f0d5bd6e216fa5a1ea5447b4cf.png)
 
@@ -125,49 +123,49 @@
 ```
 import json
 import random
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
 
     #固定参数
-    width = params[&#x27;width&#x27;]
-    height = params[&#x27;height&#x27;]
+    width = params['width']
+    height = params['height']
 
     #中间变量
-    captions = params[&#x27;caption_list&#x27;]
-    audios = params[&#x27;audio_list&#x27;]
+    captions = params['caption_list']
+    audios = params['audio_list']
 
     #每次循环的动态参数
-    timelines = params[&#x27;timelines&#x27;]
-    audio = params[&#x27;audio&#x27;]
-    texts = params[&#x27;texts&#x27;]
-    duration = params[&#x27;duration&#x27;]
+    timelines = params['timelines']
+    audio = params['audio']
+    texts = params['texts']
+    duration = params['duration']
     
     #中间变量
-    pre_time = params[&#x27;pre_time&#x27;]
+    pre_time = params['pre_time']
 
     # 每段配音计算
     audios.append({
-        &quot;audio_url&quot;: audio,
-        &quot;duration&quot;: int(duration * 1000000),
-        &quot;start&quot;: pre_time,
-        &quot;end&quot;: pre_time+int(duration * 1000000),
-        # &quot;audio_effect&quot;:&quot;环绕回声&quot;
+        "audio_url": audio,
+        "duration": int(duration * 1000000),
+        "start": pre_time,
+        "end": pre_time+int(duration * 1000000),
+        # "audio_effect":"环绕回声"
     })
 
     #计算时长，设置字幕的时长
     for index2 , obj in enumerate(timelines):
         captions.append({
-            &#x27;text&#x27;: texts[index2],
-            &#x27;start&#x27;: int(pre_time + obj[&#x27;start&#x27;]),
-            &#x27;end&#x27;: int(pre_time + obj[&#x27;end&#x27;]),
-            &quot;in_animation&quot;:&quot;渐显&quot;,&quot;out_animation&quot;:&quot;渐隐&quot;
+            'text': texts[index2],
+            'start': int(pre_time + obj['start']),
+            'end': int(pre_time + obj['end']),
+            "in_animation":"渐显","out_animation":"渐隐"
         })
     # 构建输出对象
     # 重置pre_time为此次处理的结束时间
     ret = {
-        &quot;captions&quot;: captions,
-        &quot;audios&quot;: audios,
-        &quot;end_time&quot;:pre_time+int(duration * 1000000)
+        "captions": captions,
+        "audios": audios,
+        "end_time":pre_time+int(duration * 1000000)
     }
 
     return ret
@@ -177,7 +175,9 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/f3f6166cdc800fb8e4517a138fb9ae76.png)
 
-组合结构-代码节点，放一个长图，参数比较多，有需要的复刻后再学习。
+### 组合结构-代码节点
+
+放一个长图，参数比较多，有需要的复刻后再学习。
 
 ![](img/40fbf703d948165a863cd035655ffb2e.png)
 
@@ -185,7 +185,7 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/c97df2d0f7919807eadc1b62783a9da2.png)
 
-案例演示
+## 案例演示
 
 这个书单视频智能体也已经发布到了Coze商店，目前可以免费体验试用。
 
@@ -195,9 +195,9 @@ async def main(args: Args) -&gt; Output:
 
 生成后将获得草稿地址和云端渲染的视频链接。
 
-+   剪映草稿地址，可以使用剪映小助手，导出到本地，进行二次编辑。
++ 剪映草稿地址，可以使用剪映小助手，导出到本地，进行二次编辑。
 
-+   云端渲染的视频链接，可以实现和本地剪映一样的视频效果，省去了剪映会员费用
++ 云端渲染的视频链接，可以实现和本地剪映一样的视频效果，省去了剪映会员费用
 
 ![](img/fc8574efaaa0e2d17b281655726c0f81.png)
 
@@ -207,8 +207,8 @@ async def main(args: Args) -&gt; Output:
 
 体验地址：
 
-https://www.coze.cn/s/CZaYY-Se91I/
+`https://www.coze.cn/s/CZaYY-Se91I/`
 
 更多视频工作流案例：
 
-https://www.coze.cn/store/project/7475749839012118555
+`https://www.coze.cn/store/project/7475749839012118555`

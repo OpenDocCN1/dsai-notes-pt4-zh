@@ -1,12 +1,13 @@
+
 # Deepseek+CherryStudio 搭建知识库
 
 > 来源：[https://vcn0zlxse9ua.feishu.cn/docx/Y9SkdvLdHopNXJxh936cP6bentb](https://vcn0zlxse9ua.feishu.cn/docx/Y9SkdvLdHopNXJxh936cP6bentb)
 
-之前分享过 Deepseek 相关本地部署的内容和 Deepseek 搭配知识库的方案，这里结合一款 UI（CherryStudio）来搭建本地部署，同时可以搭建知识库。搭配 ollama+CherryStudio 进行本地部署。
+之前分享过 Deepseek 相关本地部署的内容和 Deepseek 搭配知识库的方案，这里结合一款 UI（CherryStudio）来搭建本地部署，同时可以搭建知识库。搭配 `ollama`+CherryStudio 进行本地部署。
 
-## 安装 ollama
+## 安装 `ollama`
 
-参考前面文档 ollama 部分
+参考前面文档 `ollama` 部分
 
 [https://vcn0zlxse9ua.feishu.cn/wiki/LFWHwooVGiX](https://vcn0zlxse9ua.feishu.cn/wiki/LFWHwooVGiXFeYkKs7dcUiqincg?fromScene=spaceOverview)FeYkKs7dcUiqincg?fromScene=spaceOverview
 
@@ -109,7 +110,7 @@ ollama pull mxbai-embed-large
 
 #### 添加嵌入模型
 
-使用模型 mxbai-embed-large:latest
+使用模型 `mxbai-embed-large:latest`
 
 ![](img/fb6fa0b36401fdb194c8526cb548e50c.png)
 

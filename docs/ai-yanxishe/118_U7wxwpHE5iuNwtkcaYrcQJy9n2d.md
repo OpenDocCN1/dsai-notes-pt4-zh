@@ -1,3 +1,5 @@
+
+
 # DeepSeek实战：30分钟搭建AI采购智能体应用
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/Yt7vdkW7ToRJ5Gxh9ZocMafinCb](https://aiyanxishe.feishu.cn/docx/Yt7vdkW7ToRJ5Gxh9ZocMafinCb)
@@ -16,9 +18,9 @@
 
 体验地址：https://agentsse-jystudy2.app.codewave.163.com/expressage/applyOrder
 
-# 第一部分：**DeepSeek大模型科普**
+# 第一部分：DeepSeek大模型科普
 
-## **DeepSeek模型演进历程**
+## DeepSeek模型演进历程
 
 2023年11月：开源 DeepSeek LLM 7B 和 67B 的 Base 和 Chat 模型
 
@@ -40,11 +42,11 @@
 
 ![](img/428763c55802cc762461cf786e0600f1.png)
 
-+   核心能力及应用场景差异：V3通用型语言模型，擅长自然语言生成和多领域任务（如写作、多语言处理）；R1专注于逻辑推理领域，强化数学解题、代码生成等复杂推理能力。
++ 核心能力及应用场景差异：V3通用型语言模型，擅长自然语言生成和多领域任务（如写作、多语言处理）；R1专注于逻辑推理领域，强化数学解题、代码生成等复杂推理能力。
 
-+   技术特性差异：V3强调训练效率，能以较低GPU资源实现高性能；R1采用"强化学习优先"策略，先培养推理能力再优化语言流畅度
++ 技术特性差异：V3强调训练效率，能以较低GPU资源实现高性能；R1采用"强化学习优先"策略，先培养推理能力再优化语言流畅度
 
-+   部署使用差异：API调用时，V3对应名称deepseek-chat，R1为deepseek-reasoner
++ 部署使用差异：API调用时，V3对应名称`deepseek-chat`，R1为`deepseek-reasoner`
 
 # 第二部分：DeepSeek和CodeWave化学反应
 
@@ -54,11 +56,11 @@
 
 ## DeepSeek、Coze、CodeWave作用与关系
 
-+   CodeWave：通用应用开发平台，可以集成coze、dify、DeepSeek等开发通用AI应用
++ CodeWave：通用应用开发平台，可以集成coze、dify、DeepSeek等开发通用AI应用
 
-+   Coze、Dify：大语言应用开发平台，工作流编排，智能体应用开发，运行在公域上
++ Coze、Dify：大语言应用开发平台，工作流编排，智能体应用开发，运行在公域上
 
-+   DeepSeek、豆包：大语言模型，是底层AI能力提供者
++ DeepSeek、豆包：大语言模型，是底层AI能力提供者
 
 ![](img/e8ecc2ec9f8235b122e921a3e5bd7331.png)
 
@@ -68,15 +70,15 @@
 
 # 实操部分：0基础教你开发更智能的采购管理系统
 
-## **准备工作**
+## 准备工作
 
-+   注册CodeWave：https://sf.163.com/product/lcap?fromlcap=qzzu_COOPERATION_AIyxs
++ 注册CodeWave：https://sf.163.com/product/lcap?fromlcap=qzzu_COOPERATION_AIyxs
 
-+   创建DeepSeek Key：https://platform.deepseek.com
++ 创建DeepSeek Key：https://platform.deepseek.com
 
 ![](img/848044200c8cd94ba601733081f815b6.png)
 
-## **创建CodeWave项目**
+## 创建CodeWave项目
 
 通过模板“采购管理系统”创建项目：
 
@@ -92,11 +94,11 @@
 
 ![](img/5384aeedf9e8d54520de05adbea15532.png)
 
-第三步，点击添加，在弹框中填入DeepSeek平台获得的API_Key：
+第三步，点击添加，在弹框中填入DeepSeek平台获得的`API_Key`：
 
 ![](img/c1d5d6b0bb77cb5ef2a23e233a35b630.png)
 
-这样就导入完毕了！任意逻辑中通过调用连接器chat操作即可与DeepSeek交互。此外，开发者也可以在逻辑线上对代码进行任意编辑，包含最简单的工作流编排。
+这样就导入完毕了！任意逻辑中通过调用连接器`chat`操作即可与DeepSeek交互。此外，开发者也可以在逻辑线上对代码进行任意编辑，包含最简单的工作流编排。
 
 ![](img/71f08d8d9b71cdd268ba6c4619dcd955.png)
 
@@ -106,15 +108,15 @@
 
 所有这些操作都不需要开发者写代码，只需要写一个调用和数据的处理接收代码。也就是让智能体在自然语言输出的结果基础上，变成一个让我们的程序可以识别的结构化的JSON数据。
 
-## **知识储备**
+## 知识储备
 
 和DeepSeek交互主要通过[chat接口](https://api-docs.deepseek.com/zh-cn/api/create-chat-completion)，调用时我们发送消息并接收回复，这里补充一下所需的知识：
 
-RequestBody：请求消息
+`RequestBody`：请求消息
 
 必须的参数如下：
 
-```
+```json
 {
   &quot;messages&quot;: [
     {
@@ -134,12 +136,11 @@ RequestBody：请求消息
 }
 ```
 
-ResponseBody：响应消息
+`ResponseBody`：响应消息
 
-响应消息在choices中存放：
+响应消息在`choices`中存放：
 
-```
-
+```json
 {
   &quot;id&quot;: &quot;930c60df-bf64-41c9-a88e-3ec75f81e00e&quot;,
   &quot;choices&quot;: [
@@ -164,7 +165,7 @@ ResponseBody：响应消息
 }
 ```
 
-## **使用范例**
+## 使用范例
 
 下面我们把做一个情感专家机器人作为范例演示：
 
@@ -182,20 +183,21 @@ ResponseBody：响应消息
 
 ![](img/b856920c69de44290d2314f3651ca855.png)
 
-## **采购案例开发思路**
+## 采购案例开发思路
 
-a. 在发送信息后调用连接器中的chat方法
+a. 在发送信息后调用连接器中的`chat`方法
 
 ![](img/d36132a77318d5a016eb75ecd6689ece.png)
 
-b. 在连接器子逻辑onMessage中处理返回的流式信息
+b. 在连接器子逻辑`onMessage`中处理返回的流式信息
 
 ![](img/80da5f92ec0b5c17aa74a427decfd40c.png)
 
-c.在上述流失输出结束后onClose子逻辑中调用非流式接口进行数据转换
+c. 在上述流失输出结束后`onClose`子逻辑中调用非流式接口进行数据转换
 
 ![](img/558d8c56e7557885f38f147d34983d04.png)
 
 ![](img/d7f8054fd606a7ffa6bdcd4156bf583d.png)
 
 体验地址👉 CodeWave智能低代码开发平台_网易数帆
+

@@ -1,10 +1,11 @@
+
 # 给MCP祛魅
 
 > 来源：[https://agijuejin.feishu.cn/docx/VxgidEtTFo2groxhHA4clTZ5nzf](https://agijuejin.feishu.cn/docx/VxgidEtTFo2groxhHA4clTZ5nzf)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/qtsxTC8_LioHUuZHQo5CoA)q.com/s/qtsxTC8_...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/qtsxTC8_LioHUuZHQo5CoA)q.com/s/qtsxTC8_...
 
-原创 陈利人 待字闺中 2025年03月11日 12:10  北京
+原创 陈利人 待字闺中 2025年03月11日 12:10 北京
 
 MCP（Model Context Protocol，模型上下文协议）推出将近一年，随着Cursor等IDE工具的兴起和Claude Sonnet的编程能力的提升，逐步得到技术圈人的关注。最近，随着Manus的一圈轰炸，有人给出了Manus=Cursor+MCP的解方，这时MCP渐渐进入一般大众的视野，热度顿时提升为“神”级创新。那么，今天我们来给MCP祛魅。
 
@@ -26,37 +27,37 @@ Function call可以说是MCP的灵感的来源和基础功能，可以理解Func
 
 ![](img/bf247a0fcb0d0e914a4a425be2a1d023.png)
 
-中间的Java Gen AI Application就是一个应用，用更流行的词，是Agent（智能体），然后，它可以调用（触发）不同的Java MCP Client来完成一个用户的需求，而这时，Client会通过MCP protocol来调用和它配套的MCP Server来实际完成任务。所有的细节处理，都有MCP SDK来包装完成的。
+中间的Java Gen AI Application就是一个应用，用更流行的词，是`Agent`（智能体），然后，它可以调用（触发）不同的`MCP Client`来完成一个用户的需求，而这时，`Client`会通过`MCP protocol`来调用和它配套的`MCP Server`来实际完成任务。所有的细节处理，都有`MCP SDK`来包装完成的。
 
-再底层一点的实现，是下面这张图。 懂不懂不重要， 大概知道一层一层实现就可以了。
+再底层一点的实现，是下面这张图。懂不懂不重要，大概知道一层一层实现就可以了。
 
 ![](img/bfb0324d60a238801923023b69de7fb5.png)
 
-MCP处理的一个用户的需求（query或request）是这样的：
+MCP处理的一个用户的需求（`query`或`request`）是这样的：
 
-MCP Client从MCP Server得到所有工具（tools或function calls）的列表和描述，包括参数描述。
+`MCP Client`从`MCP Server`得到所有工具（tools或function calls）的列表和描述，包括参数描述。
 
 ![](img/615fa6d35f26a92573b78b05d7c91e53.png)
 
-MCP Client将用户的需求和工具加描述列表送给大模型（LLM）。
+`MCP Client`将用户的需求和工具加描述列表送给大模型（LLM）。
 
 大模型确定应该使用哪个工具。
 
-MCP Client通过调用MCP Server来执行大模型选择的工具，从而得到工具执行后的结果。
+`MCP Client`通过调用`MCP Server`来执行大模型选择的工具，从而得到工具执行后的结果。
 
 ![](img/99f3c023f0e38c60a848850cd2413973.png)
 
-MCP Client讲结果送给大模型来提供自然语言的描述，然后呈现给用户。
+`MCP Client`讲结果送给大模型来提供自然语言的描述，然后呈现给用户。
 
 ![](img/96def033f2ed771dec2ee0c5ea19ec47.png)
 
-在MCP Server中，是通过类似Java的文档规范来定义和说明工具的，这样，MCP SDK可以通过这种方式来自动输出工具和描述列表的。
+在`MCP Server`中，是通过类似Java的文档规范来定义和说明工具的，这样，`MCP SDK`可以通过这种方式来自动输出工具和描述列表的。
 
 ![](img/da87ef4fc2bd0aaa23aebe4f9a39afc5.png)
 
 ![](img/ffe07328500c8f093068f954e85dd07b.png)
 
-MCP的好处是用这种形式开发的产品或应用，可以通过MCP Client的方式，嵌入到别的AI应用中，它们类似于开发中的组件，或库，或微服务，水都可以尽情的调用。这些MCP应用更新，升级，对这些新开发的AI应用都是无感的，这样，更利于Agent生态的开发。
+MCP的好处是用这种形式开发的产品或应用，可以通过`MCP Client`的方式，嵌入到别的AI应用中，它们类似于开发中的组件，或库，或微服务，水都可以尽情的调用。这些MCP应用更新，升级，对这些新开发的AI应用都是无感的，这样，更利于`Agent`生态的开发。
 
 但MCP也有它的不足，还是有很多的开发量，对一般的普通用户，实际也很难上手开发。
 

@@ -1,3 +1,4 @@
+
 # 取代昂贵量子方法，南科大AI方法实现蛋白质-药物系统多尺度量子「精炼」
 
 > 来源：[https://agijuejin.feishu.cn/docx/ZXU1dvvrFo7Q6TxSZvYcIgSnnmg](https://agijuejin.feishu.cn/docx/ZXU1dvvrFo7Q6TxSZvYcIgSnnmg)
@@ -44,7 +45,7 @@ X 射线衍射是解析这些结构的强有力工具，而量子细化方法通
 
 在这项研究中，提出并利用机器学习势（MLP）来代替可靠但昂贵的 QM 方法，并首次加速多尺度 QR 过程。
 
-为了克服一些 MLP 中的元素限制，两个不同级别的 MLP 还通过外推 ONIOM 方法组合，然后作为前所未有的 ONIOM3（MLP1:MLP2:MM）和 ONIOM4（MLP1:MLP2:SE:MM）方案应用于 QR。
+为了克服一些 MLP 中的元素限制，两个不同级别的 MLP 还通过外推 ONIOM 方法组合，然后作为前所未有的 `ONIOM3（MLP1:MLP2:MM）` 和 `ONIOM4（MLP1:MLP2:SE:MM）` 方案应用于 QR。
 
 ![](img/476ca23e6b1adb3eb787dccbd6aff7c0.png)
 
@@ -64,7 +65,7 @@ X 射线衍射是解析这些结构的强有力工具，而量子细化方法通
 
 这里的概念验证研究表明，强大的 MLP 可以高精度地加速蛋白质-药物/抑制剂复合物的 QR，这应该会促进更多 QR 应用，并为分子识别、催化和药物开发提供新的原子学见解。此外，除了 X 射线晶体学之外，研究人员相信 MLP 可能有助于生物大分子的现代结构测定方法（例如 Cryo-EM、MicroED）。
 
-此外，还建立了计算基准数据集（PB20-QM、PB20-QM-8 k 和 PB20-QM-3 k）来评估由 DFT、MLP 或计算得出的 3-19 k 药物/抑制剂分子的结构可靠性。
+此外，还建立了计算基准数据集（`PB20-QM`、`PB20-QM-8k` 和 `PB20-QM-3k`）来评估由 DFT、MLP 或计算得出的 3-19 k 药物/抑制剂分子的结构可靠性。
 
 SE 方法，希望有助于未来开发更好的药物/抑制剂分子的 DFT、MLP 和/或 SE 方法。研究人员也乐观地认为，随着不同团队开发的更高水平和通用 MLP 的进步，未来各种生物系统的快速可靠的 QR 将在任何普通台式计算机上常规执行。
 

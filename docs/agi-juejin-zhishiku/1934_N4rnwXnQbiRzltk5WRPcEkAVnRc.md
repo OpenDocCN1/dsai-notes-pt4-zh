@@ -1,8 +1,7 @@
-# 04.07-Meta 新旗舰 AI 模型 Llama 4 Maverick 测试成绩遭质疑，被指针对性优化
-
-> 来源：[https://agijuejin.feishu.cn/docx/IcImdr9KEoek8YxaUONcrEgOnxc](https://agijuejin.feishu.cn/docx/IcImdr9KEoek8YxaUONcrEgOnxc)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 07 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/IcImdr9KEoek8YxaUONcrEgOnxc](https://agijuejin.feishu.cn/docx/IcImdr9KEoek8YxaUONcrEgOnxc)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -16,7 +15,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/843/391.htm)
 
 ![](img/a6a2e91c795117fa8235fbc6423cb987.png)
 
-4月7日消息，Meta上周发布的新旗舰AI模型Llama 4 Maverick在LM Arena测试中获第二名，成绩遭质疑。多位AI研究人员指出，测试版本与给开发者的版本不一致，测试版是针对对话性优化的，以适应测试环境。因LM Arena可靠性存争议，以往公司鲜少这么做。这一行为给开发者带来困扰，且具误导性，已有研究人员发现两个版本行为有差异，而Meta及相关组织暂未回应 。
+4月7日消息，Meta上周发布的新旗舰AI模型Llama 4 Maverick在LM Arena测试中获第二名，成绩遭质疑。多位AI研究人员指出，测试版本与给开发者的版本不一致，测试版是针对对话性优化的，以适应测试环境。因LM Arena可靠性存争议，以往公司鲜少这么做。这一行为给开发者带来困扰，且具误导性，已有研究人员发现两个版本行为有差异，而Meta及相关组织暂未回应。
 
 ## 🌟 技术突破
 
@@ -26,7 +25,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/843/377.htm)
 
 ![](img/4da5da7b7d7d19ace3c28590980665bf.png)
 
-Meta发布Llama 4系列，重夺开源第一。该系列基于MoE架构，有三款模型。Llama 4 Scout和Llama 4 Maverick已推出，参数分别为170亿、128位专家与170亿、16位专家，单张H100即可运行，Maverick跑分超DeepSeek-V3。未推出的Llama 4 Behemoth有2万亿参数。Llama 4具备长上下文窗口、原生多模态等特性，训练有创新，成本低，或改变大模型格局 。
+Meta发布Llama 4系列，重夺开源第一。该系列基于MoE架构，有三款模型。Llama 4 Scout和Llama 4 Maverick已推出，参数分别为170亿、128位专家与170亿、16位专家，单张H100即可运行，Maverick跑分超DeepSeek-V3。未推出的Llama 4 Behemoth有2万亿参数。Llama 4具备长上下文窗口、原生多模态等特性，训练有创新，成本低，或改变大模型格局。
 
 ### 💡 中科大华为发布生成式推荐大模型：昇腾 NPU 可部署，背后认知一同公开
 
@@ -34,7 +33,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/843/376.htm)
 
 ![](img/a65f5342fe263c1e7bb814e0f3eff70c.png)
 
-中科大与华为合作开发的生成式推荐大模型可在昇腾 NPU 部署。报告亮点：指出具备扩展定律的生成式推荐范式是趋势；对比分析不同架构模型扩展性，HSTU 和 Llama 扩展性佳；探究 HSTU 扩展性来源，发现残差连接与 RAB 结合可赋予传统模型扩展性；验证 HSTU 在复杂场景和排序任务中表现良好；还展望了推荐大模型未来研究方向 。
+中科大与华为合作开发的生成式推荐大模型可在昇腾 NPU 部署。报告亮点：指出具备扩展定律的生成式推荐范式是趋势；对比分析不同架构模型扩展性，HSTU 和 Llama 扩展性佳；探究 HSTU 扩展性来源，发现残差连接与 RAB 结合可赋予传统模型扩展性；验证 HSTU 在复杂场景和排序任务中表现良好；还展望了推荐大模型未来研究方向。
 
 ### 💡 Llama 4全网首测来袭，3台Mac狂飙2万亿！多模态惊艳代码却翻车
 
@@ -42,7 +41,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/843/376.htm)
 
 ![](img/4c75f81f6d34332ca28301ec9312b010.png)
 
-Llama 4家族突袭发布三款采用MoE架构的开源模型，开启原生多模态时代，排名跃升超DeepSeek-V3 。其为稀疏模型，与苹果芯片适配佳，Llama 4 Maverick在单台M3 Ultra上速度达50 token/秒，且苹果芯片部署成本低。实测中Llama 4多模态能力出色，但写代码表现不佳。多家平台宣布支持Llama 4 ，同时似乎预示着llama-4推理模型即将发布 。
+Llama 4家族突袭发布三款采用MoE架构的开源模型，开启原生多模态时代，排名跃升超DeepSeek-V3。其为稀疏模型，与苹果芯片适配佳，Llama 4 Maverick在单台M3 Ultra上速度达50 token/秒，且苹果芯片部署成本低。实测中Llama 4多模态能力出色，但写代码表现不佳。多家平台宣布支持Llama 4，同时似乎预示着llama-4推理模型即将发布。
 
 ## 💫 企业动态
 
@@ -60,7 +59,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/843/397.htm)
 
 ![](img/1f53bb473d4b47f5b10ea6d4355fc18d.png)
 
-2024年蔚来销量22万辆，收入增长但净亏224亿创新高。其在2022年进入扩张期，三年累计亏损超570亿，主要在研发与销售管理费用。换电站投入大，短期难盈利，却关乎竞争力。李斌称四季度必须盈利，今年推9款新车，有技术交付。他给出毛利目标，通过换电站开源节流、管理技术降本等举措来实现盈利，蔚来盈利与否关系重大 。
+2024年蔚来销量22万辆，收入增长但净亏224亿创新高。其在2022年进入扩张期，三年累计亏损超570亿，主要在研发与销售管理费用。换电站投入大，短期难盈利，却关乎竞争力。李斌称四季度必须盈利，今年推9款新车，有技术交付。他给出毛利目标，通过换电站开源节流、管理技术降本等举措来实现盈利，蔚来盈利与否关系重大。
 
 ### 💡 AI爬虫肆虐，OpenAI等大厂不讲武德！开发者打造「神级武器」宣战
 
@@ -76,4 +75,4 @@ AI 爬虫肆虐，成互联网 “蟑螂”。如 OpenAI 爬虫致 Triplegangers
 
 ![](img/6226f2a1f00c0c582e4fe68c8568094a.png)
 
-3月31日，谷歌CEO劈柴哥发出「To MCP or not to MCP」之问，4天后Gemini更新API文档，正式接入MCP ，至此多家AI巨头都支持MCP。MCP是连接AI应用与外部工具等的开放标准。网友对此看法不一，有支持认为其潜力大，如Kris将其比作1993年的HTTP；也有反对，像Han希望谷歌推更优版本。谷歌决策不易，因MCP由对手主导，存在依赖风险 。
+3月31日，谷歌CEO劈柴哥发出「To MCP or not to MCP」之问，4天后Gemini更新API文档，正式接入MCP，至此多家AI巨头都支持MCP。MCP是连接AI应用与外部工具等的开放标准。网友对此看法不一，有支持认为其潜力大，如Kris将其比作1993年的HTTP；也有反对，像Han希望谷歌推更优版本。谷歌决策不易，因MCP由对手主导，存在依赖风险。

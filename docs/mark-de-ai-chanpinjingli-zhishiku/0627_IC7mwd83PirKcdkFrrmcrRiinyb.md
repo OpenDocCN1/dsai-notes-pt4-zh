@@ -1,8 +1,7 @@
-# The New Skill in AI is Not Prompting, It's Context Engineering
+
+# The New Skill in AI is Not Prompting, It's Context Engineering / AI领域的新技能不是提示工程，而是上下文工程
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/CIXDdhrJjoObS0xXOzMcrWeZnje](https://qqs7y1hozd1.feishu.cn/docx/CIXDdhrJjoObS0xXOzMcrWeZnje)
-
-# AI领域的新技能不是提示工程，而是上下文工程
 
 上下文工程是一个在AI领域逐渐流行起来的新术语。讨论正从“提示工程”转向一个更广泛、更强大的概念：上下文工程。托比·卢特克将其描述为“为大语言模型（LLM）提供完成任务所需的所有上下文，使其能够合理地解决问题的艺术”，他说得没错。
 
@@ -22,11 +21,11 @@
 
 检索信息（RAG）：外部的、最新的知识，来自文档、数据库或 API 的相关信息，用于回答特定问题。
 
-可用工具：它可以调用的所有函数或内置工具的定义（例如，检查库存、发送电子邮件）。
+可用工具：它可以调用的所有函数或内置工具的定义（例如，`check_inventory`, `send_email`）。
 
 结构化输出：对模型响应格式的定义，例如JSON对象。
 
-重要原因：从廉价演示到神奇产品
+### 重要原因：从廉价演示到神奇产品
 
 构建真正有效的AI智能体的秘诀，与你编写的代码复杂度关系不大，而完全取决于你提供的上下文质量。
 
@@ -96,11 +95,11 @@ Long-Term Memory: Persistent knowledge base, gathered across many prior conversa
 
 Retrieved Information (RAG): External, up-to-date knowledge, relevant information from documents, databases, or APIs to answer specific questions.
 
-Available Tools: Definitions of all the functions or built-in tools it can call (e.g., check_inventory, send_email).
+Available Tools: Definitions of all the functions or built-in tools it can call (e.g., `check_inventory`, `send_email`).
 
 Structured Output: Definitions on the format of the model's response, e.g. a JSON object.
 
-Why It Matters: From Cheap Demo to Magical Product
+### Why It Matters: From Cheap Demo to Magical Product
 
 The secret to building truly effective AI agents has less to do with the complexity of the code you write, and everything to do with the quality of the context you provide.
 
@@ -120,7 +119,7 @@ Your past emails with this person (to determine the appropriate informal tone).
 
 Your contact list (to identify them as a key partner).
 
-Tools for send_invite or send_email.
+Tools for `send_invite` or `send_email`.
 
 Then you can generate a response.
 

@@ -1,12 +1,14 @@
+
+
 # 编程语言原理
 
 > 来源：[https://docs.feishu.cn/docx/X2wodKuXKojRZJxZDIWcH4sqnzd](https://docs.feishu.cn/docx/X2wodKuXKojRZJxZDIWcH4sqnzd)
 
 > RyanFcr
 
-# 0 About Class
+## 0 About Class
 
-## **0.1 考核方式**
+### 0.1 考核方式
 
 +   课堂讨论与测试 20%
 
@@ -18,9 +20,9 @@
 
 ![](img/4ce5a4c07e2e4df70cdec94edbe6f804.png)
 
-# 1 基础
+## 1 基础
 
-## 1.1  calculus
+### 1.1 calculus
 
 ![](img/ce7d13c0420c76e8c64e21abae02ae50.png)
 
@@ -34,21 +36,21 @@
 
 ![](img/578e633483a53856b3e6ff0f7fcb7c4c.png)
 
-> 应用：t作用于s，t是函数，s是参数，把s带入到t中
+> 应用：`t`作用于`s`，`t`是函数，`s`是参数，把`s`带入到`t`中
 
 项分为变量、抽象、应用。定义的定义存在递归定义
 
-对于抽象： 相当于def，x是变量，t是结果
+对于抽象： 相当于`def`，`x`是变量，`t`是结果
 
-大多是**单字母**表示
+大多是单字母表示
 
 BNF：表达编程语言的一种表达范式
 
 ![](img/c5d08663e264622b1ba80d73ec41ee3c.png)
 
-尽可能尽量延伸，直到**括号或下一个**** **
+尽可能尽量延伸，直到括号或下一个
 
-**(x+5)是一个整体**
+`(x+5)`是一个整体
 
 ![](img/4cd7ae861b6ad4483444e7cd95678c72.png)
 
@@ -56,27 +58,23 @@ BNF：表达编程语言的一种表达范式
 
 > 应用必须要括号
 
-> I 表示单位矩阵，恒等 **Eye**
-
-![](img/38b0e9851f06affa10afd2580c825e52.png)
-
-> x先作用到y，再把结果作用到z，再计算整个
+> `x`先作用到`y`，再把结果作用到`z`，再计算整个
 
 Inductive Definition
 
 ![](img/58472837e4f7bde481f2755e78629232.png)
 
-+   **Base** case
++   Base case
 
-+   **Inductive** case
++   Inductive case
 
 ![](img/3481d5953d9aca0fde282c35b4efe635.png)
 
-+   If x是一个变量，则x是一个term
++   If `x`是一个变量，则`x`是一个term
 
-+   如果x，var，M是一个term，则 (x.M)也是一个term
++   如果`x`，`var`，`M`是一个term，则 `(x.M)`也是一个term
 
-+   如果M1和M2是一个term，则把M1应用到M2这个ap也是一个term
++   如果`M1`和`M2`是一个term，则把`M1`应用到`M2`这个ap也是一个term
 
 对应之前到变量、抽象、应用
 
@@ -84,9 +82,9 @@ Inductive Definition
 
 ![](img/fb030c3592ac4a3645bc43cc752e2f17.png)
 
-+   只要进行一次运用，size+1
++   只要进行一次运用，`size`+1
 
-+   size是一个抽象的映射
++   `size`是一个抽象的映射
 
 ![](img/03792a7cf7cb006795a2070eadf784bf.png)
 
@@ -116,12 +114,6 @@ Inductive Definition
 
 +   语义等价
 
-+
-
-+
-
-+
-
 ![](img/29028f98b2a554cd0f6cd21e4c2f6630.png)
 
 在定义上代换
@@ -132,15 +124,15 @@ Inductive Definition
 
 ![](img/c40a2f241942d6e5910dd732424df7f2.png)
 
-必须要有**封闭**，相当于把t2带入到t1`里
+必须要有封闭，相当于把`t2`带入到`t1`里
 
-把t1`的x用t2代掉
+把`t1`的`x`用`t2`代掉
 
 在应用里代换
 
-> 相当于把t1`中的x用t2代掉
+> 相当于把`t1`中的`x`用`t2`代掉
 
-+   Reduction: 相当于运算，t2代入函数，封闭意味着t2不是自由变量
++   Reduction: 相当于运算，`t2`代入函数，封闭意味着`t2`不是自由变量
 
 +   相当于先introduce然后use的化简
 
@@ -164,13 +156,13 @@ Inductive Definition
 
 ![](img/6d49f1a2f9e9e002dd87949d4eb82bc7.png)
 
-> 把y带入到
+> 把`y`带入到
 
-因为两个y不是一个y，没有封闭，需要改名
+因为两个`y`不是一个`y`，没有封闭，需要改名
 
 ![](img/dd786ada2829bc9f7ac73e3aee9dcd92.png)
 
-所有函数在lambda 中是prefix并且只需要一个参数
+所有函数在`lambda` 中是prefix并且只需要一个参数
 
 但是如果想多个参数，我们需要currying
 
@@ -194,7 +186,7 @@ Inductive Definition
 
 ![](img/a5bf1aa3305c14929ffa73d71372f7b6.png)
 
-e1e2表示ap
+`e1e2`表示`ap`
 
 ![](img/9cb6c92d20be481f92dcdef68c8721d6.png)
 
@@ -204,7 +196,7 @@ e1e2表示ap
 
 ![](img/a2d415e325074893ef99cd30c69b7880.png)
 
-逻辑其实只是一个**选择**的过程
+逻辑其实只是一个选择的过程
 
 True A B = A
 
@@ -218,25 +210,21 @@ not怎么实现？
 
 ![](img/9c8680866d698bcbbfd6d4811fceb349.png)
 
+```
 TRUE := λx y.x
-
 FALSE := λx y.y
-
 AND := λp q.p q FALSE
-
 OR := λp q.p TRUE q
-
 NOT := λp.p FALSE TRUE
-
 IFTHENELSE := λp x y.p x y
-
 isZero = lambda n. n (lambda x. false) true
+```
 
 多位布尔值——>笛卡尔积
 
 ![](img/ee0ea136ef301b215952a1f5ca50ea14.png)
 
-p1和p2是投影函数，就相当于是true or false的选择函数
+`p1`和`p2`是投影函数，就相当于是true or false的选择函数
 
 ![](img/65184922a53100a78492d68955486324.png)
 
@@ -248,17 +236,17 @@ p1和p2是投影函数，就相当于是true or false的选择函数
 
 1是0的下一个
 
-n是n次s的调用，用调用次数来表示自然数
+`n`是`n`次`s`的调用，用调用次数来表示自然数
 
-s是下一个方程
+`s`是下一个方程
 
 ![](img/be1c65514e7f41e8d1e0ccb9a816c2bd.png)
 
-> succ相当于 的那个s n times变成n s
+> `succ`相当于 那个`s n times`变成`n s`
 
 ![](img/cc3f8b5daead1f08e6d580c56ab291bd.png)
 
-> 第一行应该是 s z 反了
+> 第一行应该是 `s z` 反了
 
 > 然后用
 
@@ -274,13 +262,13 @@ s是下一个方程
 
 ![](img/33d06d5a91a0869816bb5c617bb86bcc.png)
 
-## 1.2 Abstract Syntax 抽象语法
+### 1.2 Abstract Syntax 抽象语法
 
 ![](img/fe7c889593cdad3ac7846bc6ca5948ff.png)
 
 [2 ast.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnP0HSCsA5dfCVWarDC1UzWf)
 
-+   语言的语法表明各种短语（**表达式、命令、声明**等等）是如何组合起来形成程序的
++   语言的语法表明各种短语（表达式、命令、声明等等）是如何组合起来形成程序的
 
 +   表面语法关心短语如何输入和显示，以某种字母表来表达
 
@@ -288,11 +276,11 @@ s是下一个方程
 
 ![](img/b0338f55b95152b23e1020de93db2dfe.png)
 
-引入**新的标志符**
+引入新的标志符
 
-ABT是AST的扩充
+`ABT`是`AST`的扩充
 
-### 1.2.1 AST 抽象语法树
+#### 1.2.1 AST 抽象语法树
 
 ![](img/56a890bc9ecf218ffb8ccbcfdf4e8fb1.png)
 
@@ -306,11 +294,11 @@ ABT是AST的扩充
 
 ![](img/4a963150649952e361cbe668c291ba0c.png)
 
-右边有两个def，三个assignment
+右边有两个`def`，三个assignment
 
 ![](img/f5b7b0550d2b017a2f7cd1366bcfb8b5.png)
 
-while
+`while`
 
 > 是静态的，只反应结构，不表达执行
 
@@ -320,7 +308,7 @@ while
 
 ![](img/f376d0d3ce5a63e21eebf8329922c8f5.png)
 
-常用 **表达式 命令** 分
+常用 表达式 命令 分
 
 ![](img/6d6ca5eef0c9acfc2c85c5e391cc7183.png)
 
@@ -350,7 +338,7 @@ while
 
 如果每一个都是在族里面的，那么运算后的结果也在族里面
 
-把a里所有的x替换后，仍属于
+把`a`里所有的`x`替换后，仍属于
 
 ![](img/bcc0da3f7bfd9d775f1cf8dde4ea8160.png)
 
@@ -360,13 +348,13 @@ while
 
 唯一是怎么来的？
 
-+   若a = x
++   若`a` = `x`
 
-+   若a = y != x
++   若`a` = `y` != `x`
 
-+   若a = o(a1;……;an)
++   若`a` = `o(a1;……;an)`
 
-### 1.2.2 ABT 抽象绑定树
+#### 1.2.2 ABT 抽象绑定树
 
 ![](img/5fcea151d094d2c1ec5ca58c90366542.png)
 
@@ -382,7 +370,7 @@ while
 
 ![](img/ce335ae74a52250f7cf854328a4c8bfa.png)
 
-X是形参
+`X`是形参
 
 ![](img/3a249c17cd0ebf18acd8ca71599023eb.png)
 
@@ -390,15 +378,15 @@ X是形参
 
 ![](img/033e0ef12507d11ed172eb7bc2e7e8e3.png)
 
-> -等价  双向的
+> -`a-等价`  双向的
 
 ![](img/15fd30cc09b542acb92830fe5527ad4a.png)
 
 标识约定
 
-抽象绑定树总是根据 a**-等价**决定是否相同，a-等价的abt被视作相同的
+抽象绑定树总是根据 `a-等价`决定是否相同，`a-等价`的abt被视作相同的
 
-## 1.3 Inductive Definition 归纳定义
+### 1.3 Inductive Definition 归纳定义
 
 ![](img/887be530187eb3ce2dabb9b4b98d55b9.png)
 
@@ -410,15 +398,13 @@ X是形参
 
 ![](img/9646148e6c64eccafdf340eeeba7b55a.png)
 
-> nat：natural
+> `nat`：natural
 
-> Int type：int是一个类型
-
-![](img/5adf9f4edd7cafc800f54e17c67ef3fd.png)
+> `Int` type：`int`是一个类型
 
 > 一个是性质，多个是关系
 
-### 1.3.1 推理规则
+#### 1.3.1 推理规则
 
 ![](img/e5acf300dde80d44e738a29e8311cbd2.png)
 
@@ -426,7 +412,7 @@ X是形参
 
 ![](img/ba796d3ca4ff00e0f8ad03319a3feed0.png)
 
-### 1.3.2 推导
+#### 1.3.2 推导
 
 ![](img/636a483b76d5baa7531c1459990de12f.png)
 
@@ -454,9 +440,9 @@ Backward = top-down 从某个点朝base case走
 
 +   唯一性
 
-## 1.4 假言判断于一般性判断
+### 1.4 假言判断于一般性判断
 
-**Hypo**thesis 假言判断 ：一个或多个假设与一个结论之间的蕴含关系
+Hypothesis 假言判断 ：一个或多个假设与一个结论之间的蕴含关系
 
 两个蕴含概念：
 
@@ -480,9 +466,9 @@ Backward = top-down 从某个点朝base case走
 
 +   参数化：与符号重命名有关的一般性
 
-### 1.4.1 假言判断
+#### 1.4.1 假言判断
 
-#### 1.4.1.1 可导性
+##### 1.4.1.1 可导性
 
 可导性判断
 
@@ -490,7 +476,7 @@ Backward = top-down 从某个点朝base case走
 
 三个性质
 
-+   自反性：如果J成立，那么能够推出J
++   自反性：如果`J`成立，那么能够推出`J`
 
 ![](img/3bd92bc053e65003db80a1ccddfae480.png)
 
@@ -500,9 +486,12 @@ Backward = top-down 从某个点朝base case走
 
 +   传递性
 
+
+
+
 ![](img/69b483ffc0e470bccd7fcd95a4632725.png)
 
-#### 1.4.1.2 可纳性
+# 1.4.1.2 可纳性
 
 较弱的假言判断形势
 
@@ -514,21 +503,18 @@ Backward = top-down 从某个点朝base case走
 
 逆命题是错误的
 
-+   自反
++ 自反  
++ 弱化  
++ 传递性  
 
-+   弱化
+# 1.4.2 假言归纳定义
 
-+   传递性
+# 1.4.3 一般性判断
 
-### 1.4.2 假言归纳定义
++ 泛型判断  
++ 参数化判断  
 
-### 1.4.3 一般性判断
-
-+   泛型判断
-
-+   参数化判断
-
-### 1.4.4 泛型归纳定义
+# 1.4.4 泛型归纳定义
 
 泛型可导性：
 
@@ -538,34 +524,30 @@ J包含x，y；我们把y提出来，前提是x和y不交；y或大gamma可以�
 
 y中的每一个小项也是可以推出J的
 
-+   增殖
-
-+   重命名
-
-+   y`对于X，Y同类型，但是不在里面
-
-+   把Y里的小y都换成y`，对应的J里的小y也都换成y`
++ 增殖  
++ 重命名  
++ y对于X，Y同类型，但是不在里面  
++ 把`y`代换成`a`，对应的`J`里的小`y`也都换成`y`  
 
 ![](img/13838fcf24c3ff5b10069cf079cc1ed6.png)
 
-+   代换
++ 代换  
 
 ![](img/75d6d15dcb8ffd639aac524070f610f7.png)
 
-把y代换成a
+把`y`代换成`a`
 
 > 替换是降低复杂度的，换名只是形式上的替换
 
-> C++ template就是泛型，java是参数化，会把T类型变成object公共父类，类里有一个隐藏的成员变量记录类型；对于Java来说，类是对象，解释性的语言，一切都是字符串，类型可以作为变量
+> C++ `template`就是泛型，java是参数化，会把`T`类型变成`object`公共父类，类里有一个隐藏的成员变量记录类型；对于Java来说，类是对象，解释性的语言，一切都是字符串，类型可以作为变量
 
-> python（解释语言）做编译执行的难度  需要一个runtime；不能简单的一比一对应到汇编语言
+> python（解释语言）做编译执行的难度  需要一个`runtime`；不能简单的一比一对应到汇编语言
 
-+   python中的pyc扩展名文件，类似于Java的Class字节码文件，是由编译器编译得来的，供解释器使用；当我们部署程序时，不想暴露源码，可以使用pyc文件；
++ `python`中的`pyc`扩展名文件，类似于Java的`Class`字节码文件，是由编译器编译得来的，供解释器使用；当我们部署程序时，不想暴露源码，可以使用`pyc`文件；
 
 > c（编译语言）做解释的难度
 
 # 2 静态语义和动态语义
-
 
 [5 静态和动态语义.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnsvdFoymO67iz0uHtE7rgTh)
 
@@ -585,11 +567,9 @@ y中的每一个小项也是可以推出J的
 
 ![](img/4d5c604e82499df5f13c5c846f9ab073.png)
 
-+   One step reduction 一步
-
-+   Deterministic strategy
-
-+   Nondeterministic strategy
++ One step reduction 一步  
++ Deterministic strategy  
++ Nondeterministic strategy  
 
 = \displaystyle \to
 
@@ -611,7 +591,7 @@ reduction是在数学上把一个term转变成定义更小的一个term
 
 # 4 有限数据类型
 
-## 4.1  积类型
+## 4.1 积类型
 
 ![](img/64b6d4da2a32c2cd2eb934c64c24c341.png)
 
@@ -643,7 +623,7 @@ reduction是在数学上把一个term转变成定义更小的一个term
 
 ![](img/56bac3a2dc3ac18d7b448fda97aebd49.png)
 
-tail的n次相当于取第几个元素
+`tail`的n次相当于取第几个元素
 
 ![](img/ea8683d3d68eeeff357c7dbe68d7e6aa.png)
 
@@ -651,9 +631,7 @@ tail的n次相当于取第几个元素
 
 > 互模拟关系，头是一样的，去掉头之后，新的头也是一样的
 
-Even = odd   tail
-
-的意思是even可以由odd和tail结合表示，而没有解释具体怎么实现
+> `Even = odd tail`的意思是even可以由odd和tail结合表示，而没有解释具体怎么实现
 
 最后公式错了，应该是
 
@@ -681,7 +659,7 @@ Even = odd   tail
 
 ![](img/01fbf1e2a7fa5ebb8543471d49960c86.png)
 
-fold是引入，引入和消去是一对逆过程
+`fold`是引入，引入和消去是一对逆过程
 
 引入静态：判断代码是否正确
 
@@ -695,9 +673,9 @@ fold是引入，引入和消去是一对逆过程
 
 ![](img/c203096808bbe38b1f0d17fef6c17d92.png)
 
-Load, store是瓶颈，如何减少load store
+`Load`，`store`是瓶颈，如何减少load store
 
-hd，tl元运算，可以推导其他运算，但是没有其他运算符可以推导出他们
+`hd`，`tl`元运算，可以推导其他运算，但是没有其他运算符可以推导出他们
 
 # 6 多态类型的系统
 
@@ -709,27 +687,17 @@ hd，tl元运算，可以推导其他运算，但是没有其他运算符可以�
 
 ![](img/df488dc7d44ae6dd4c6898f4f7b4b56b.png)
 
-+   Static polymorphism: binding at compile-time
-
-+   Parametric polymorphism参数化多态
-
-+   polymorphism(FPL), templates, generics
-
-+   Ad-hoc
-
-+   Overload：操作符overload
-
-+   Coercion：类型转换
-
-+   Int i = 6.5
-
-+   Dynamic polymorphism: binding at run-time
-
-+   Subtyping polymorphism
-
-+   Inheritance, virtual function
-
-+   继承，虚函数
++ Static polymorphism: binding at compile-time  
++ Parametric polymorphism参数化多态  
++ polymorphism(FPL), templates, generics  
++ Ad-hoc  
++ Overload：操作符overload  
++ Coercion：类型转换  
++ `Int i = 6.5`  
++ Dynamic polymorphism: binding at run-time  
++ Subtyping polymorphism  
++ Inheritance, virtual function  
++ 继承，虚函数  
 
 ![](img/3d65a4c4982260bc0a1b3ae0621f1bc5.png)
 
@@ -737,9 +705,8 @@ hd，tl元运算，可以推导其他运算，但是没有其他运算符可以�
 
 数据类型是一个集合
 
-+   变量的值都是在集合里的
-
-+   有一些操作可以应用在这些值上
++ 变量的值都是在集合里的  
++ 有一些操作可以应用在这些值上  
 
 ![](img/6729f6b3d0bd36d083274c410f9c188d.png)
 
@@ -751,15 +718,11 @@ hd，tl元运算，可以推导其他运算，但是没有其他运算符可以�
 
 ![](img/09aec1dda4b5b9bb3a0fa10cb1cbb97f.png)
 
-+   怎么确定一个type
-
-+   什么时候绑定
-
-+   静态：编译
-
-+   显式声明
-
-+   隐式声明
++ 怎么确定一个type  
++ 什么时候绑定  
++ 静态：编译  
++ 显式声明  
++ 隐式声明  
 
 语言没有解释编译之分
 
@@ -767,29 +730,25 @@ hd，tl元运算，可以推导其他运算，但是没有其他运算符可以�
 
 编译变成编译比较难：有重型的库
 
-+   解释语言，也可以在前面之前做一遍类型检查；加速，通过了静态检查之后不需要做动态检查
-
-+   动态
-
-+   运行时
++ 解释语言，也可以在前面之前做一遍类型检查；加速，通过了静态检查之后不需要做动态检查  
++ 动态  
++ 运行时  
 
 ![](img/a6849fb2aefe7f405a579ad07d966b9b.png)
 
-+   python不是没有类型的语言，而是不需要声明的语言
++ `python`不是没有类型的语言，而是不需要声明的语言  
 
 ![](img/424b69238eeaa3ebea5ebea6d9b2be8d.png)
 
 ![](img/c1f706f07943070f352187d58e7b3e0c.png)
 
-> Coercion自动类型转换 ：（int）B——>（real）B，结果再从real变成int
+> Coercion自动类型转换 ：(`int`)B——>(`real`)B，结果再从`real`变成`int`
 
 > 工程上不太care整数和浮点
 
-+   绑定静态——》几乎都可以静态类型检查
-
-+   指针没有办法检查
-
-+   绑定动态——》动态类型检查
++ 绑定静态——》几乎都可以静态类型检查  
++ 指针没有办法检查  
++ 绑定动态——》动态类型检查  
 
 ![](img/e03755d4c65c64b3cf2520af87ac8b27.png)
 
@@ -797,33 +756,25 @@ hd，tl元运算，可以推导其他运算，但是没有其他运算符可以�
 
 ![](img/5fd8972907f7b1c017ee478498788e6b.png)
 
-+   数据、结构、用户自定义就比较麻烦
-
-+   对于结构体（下面的方式是我们设计PL需要去思考的问题）——如何表达类型相等？
-
-+   结构一样，名字不一样
-
-+   结构一样，名字一样
-
-+   结构不一样，名字一样
++ 数据、结构、用户自定义就比较麻烦  
++ 对于结构体（下面的方式是我们设计PL需要去思考的问题）——如何表达类型相等？  
++ 结构一样，名字不一样  
++ 结构一样，名字一样  
++ 结构不一样，名字一样  
 
 ![](img/c690c9bd25ca3f4ba6b61ce1ab4c4693.png)
 
-+   等价
-
-+   要不相同一个声明里
-
-+   要不声明用了相同的type
-
-+   某个类型的子集和该类型不等价
-
-+   形参和实参需要一样
++ 等价  
++ 要不相同一个声明里  
++ 要不声明用了相同的type  
++ 某个类型的子集和该类型不等价  
++ 形参和实参需要一样  
 
 ![](img/40b1103f5c34fc3cc77add6915d3b3e7.png)
 
 > 简单的通过名字，名字相同，就认为是同样类型
 
-> 保证一个名字只编译一次；c不一样，有分离的头文件；现在不依赖头文件，所以一定是保持一致，不会出现我代码和include的头文件里的东西不一样
+> 保证一个名字只编译一次；`c`不一样，有分离的头文件；现在不依赖头文件，所以一定是保持一致，不会出现我代码和include的头文件里的东西不一样
 
 ![](img/d0064343c0014e2b781108ee74393d6e.png)
 
@@ -839,7 +790,7 @@ hd，tl元运算，可以推导其他运算，但是没有其他运算符可以�
 
 ![](img/4c2d859df40cbde19bf5bfb6f5f555ac.png)
 
-boolean可以得到string——boolean蕴含string
+`boolean`可以得到`string`——`boolean`蕴含`string`
 
 ![](img/e94e237b6d657d8f7f5d015542763869.png)
 
@@ -851,19 +802,19 @@ boolean可以得到string——boolean蕴含string
 
 ![](img/1f489cc6e5e91707327d15b8f9f91cf4.png)
 
-> let声明不变类——只被赋一次值
+> `let`声明不变类——只被赋一次值
 
-> var声明可以变化的
+> `var`声明可以变化的
 
-+   我们的成长路径，思维惯性是变量就是可以变的，特别的用const
++ 我们的成长路径，思维惯性是变量就是可以变的，特别的用`const`
 
-+   而swift是反着，先let（不变），再var（变化）
++ 而swift是反着，先`let`（不变），再`var`（变化）
 
-+   我们会发现很多变量确实是**不会变化的**
++ 我们会发现很多变量确实是**不会变化的**
 
-+   设计很巧妙
++ 设计很巧妙
 
-+   一个变量被反复赋值，越有可能出现更多问题
++ 一个变量被反复赋值，越有可能出现更多问题
 
 ![](img/bf8b43116b050f1eb5cd4ee28ee7f0ae.png)
 
@@ -891,7 +842,7 @@ boolean可以得到string——boolean蕴含string
 
 ![](img/399821ec98259185bef15491a7b61717.png)
 
-x+1是一起的
+`x+1`是一起的
 
 ![](img/4dbbcc169258feeffcbbde5982692b29.png)
 
@@ -941,7 +892,7 @@ x+1是一起的
 
 ![](img/70c46f1c812cbd69e4c957ed581b3607.png)
 
-> 最后一行是fix，打错了
+> 最后一行是`fix`，打错了
 
 ![](img/e2c6f1d8601cd459a84fb67e3711ee0b.png)
 
@@ -959,11 +910,9 @@ x+1是一起的
 
 ![](img/8686588b6988bfe3e8c9563a356f6d80.png)
 
-+   3+4->7 是规约
-
-+   7-> 3+4不是规约
-
-+   5+2多步可以规约到5+2，但是不能单步到5+2
++ `3+4->7` 是规约  
++ `7-> 3+4`不是规约  
++ `5+2`多步可以规约到`5+2`，但是不能单步到`5+2`  
 
 ![](img/0c70dd120b459685e14ce2aaa9b0dffa.png)
 
@@ -977,10 +926,11 @@ x+1是一起的
 
 然而很多语言存在副作用
 
-+   a++ + ++a
+
+
++   `a++ + ++a`
 
 ![](img/8126dadbcd81642cad36519be06cb48d.png)
 
 +   没有停机条件
-
 +   最外面是常量，可以停机，不需要做内部计算

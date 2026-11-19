@@ -1,20 +1,20 @@
+
 # GPT现状终于有人讲清楚了！OpenAI大牛最新演讲爆火，还得是马斯克钦点的天才
 
-> 来源：[https://jalicvoygc0.feishu.cn/docx/B5XIdhui9o919lx0To2cmIS7nO3](https://jalicvoygc0.feishu.cn/docx/B5XIdhui9o919lx0To2cmIS7nO3)
+> 来源：https://jalicvoygc0.feishu.cn/docx/B5XIdhui9o919lx0To2cmIS7nO3
+> 引用：https://mp.weixin.qq.com/s/m707JQtGtdIdCOqW3fN8eA
 
-引用**：****https://mp.weixin.qq.com/s/m7**07JQtGtdIdCOqW3fN8eA
+作者：西风
 
-**作者：西风**
+继Windows Copilot发布后，微软Build大会热度又被一场演讲引爆。
 
-**继Win**dows Copilot发布后，微软Build大会热度又被一场演讲引爆。
-
-前特斯拉AI**总监An****drej**** Karpathy在演讲中**认为思维树（tre**e of thoughts**）与AlphaGo的蒙特卡洛树搜索（MCTS）有异曲同工之妙！
+前特斯拉AI总监Andrej Karpathy在演讲中认为思维树（Tree of Thoughts）与AlphaGo的蒙特卡洛树搜索（MCTS）有异曲同工之妙！
 
 网友高呼：这是关于如何使用大语言模型和GPT-4模型的最详尽有趣的指南！
 
 ![](img/18306ffe9fccc266ef9e05e3cceb2778.png)
 
-此外Karpathy透露，由于训练和数据的扩展，LLAMA 65B“明显比GPT-3 175B更强大”，并介绍了大模型匿名竞技场ChatBot Arena:
+此外Karpathy透露，由于训练和数据的扩展，LLAMA 65B“明显比GPT-3 175B更强大”，并介绍了大模型匿名竞技场ChatBot Arena：
 
 > Claude得分介于ChatGPT 3.5和ChatGPT 4之间。
 
@@ -28,7 +28,7 @@
 
 所以，这段备受关注的演讲，具体提到了哪些内容呢？
 
-## **如何训练****GPT****助手？**
+## 如何训练GPT助手？
 
 Karpathy这次的演讲主要分为两个部分。
 
@@ -50,7 +50,7 @@ Karpathy用了更多例子作补充：
 
 接下来进入微调阶段。
 
-使用较小的有监督数据集，通过监督学习**对这个基**础模型进行微调，就能创建一个能够回答问题的助手模型。
+使用较小的有监督数据集，通过监督学习对这个基础模型进行微调，就能创建一个能够回答问题的助手模型。
 
 ![](img/d8020ff123de19f4debaf33396c75918.png)
 
@@ -74,7 +74,7 @@ Karpathy认为目前最好的开源模型是Meta的LLaMA系列（因为OpenAI没
 
 模型训练好了，接下来就是如何有效利用这些模型解决问题了。
 
-## **如何更好地使用模型？**
+## 如何更好地使用模型？
 
 在**第二部分**，Karpathy主要讨论了提示策略、微调、快速发展的工具生态系统以及未来的扩展等问题。
 
@@ -106,7 +106,7 @@ Karpathy进一步解释了**思维链**提示的工作方式。
 
 通俗来说，System1是一个快速自动生成的过程，而System2是经过深思熟虑的部分。
 
-这在最近一篇挺火的论文“Tree of thought”（思维树）中也有被提及。
+这在最近一篇挺火的论文“Tree of Thoughts”（思维树）中也有被提及。
 
 ![](img/f6154948dbcaaa46d5f044383dbeb159.png)
 
@@ -115,7 +115,7 @@ Karpathy进一步解释了**思维链**提示的工作方式。
 Karpathy认为这种思路与AlphaGo非常相似：
 
 > AlphaGo在下围棋时，需要考虑下一枚棋子下在哪里。最初它是靠模仿人类来学习的。
-
+>
 > 但除此之外，它还进行了蒙特卡洛树搜索，可以得到具有多种可能性的策略。它可以对多种可能的下法进行评估，仅保留那些较好的策略。我认为这在某种程度上相当于AlphaGo。
 
 对此，Karpathy还提到了AutoGPT：
@@ -124,7 +124,7 @@ Karpathy认为这种思路与AlphaGo非常相似：
 
 ![](img/86ea95fb3bb351492ab461eed22f0c7b.png)
 
-其次，还有一个小妙招是检索增强生成（retrieval agumented generation）和有效提示。
+其次，还有一个小妙招是检索增强生成（retrieval augmented generation）和有效提示。
 
 窗口上下文的内容就是transformers在运行时的记忆（working memory），如果你可以将与任务相关的信息加入到上下文中，那么它的表现就会非常好，因为它可以立即访问这些信息。
 
@@ -156,17 +156,14 @@ Andrej Karpathy博士毕业后的第一份工作，是在OpenAI研究计算机�
 
 传送门：
 
-[1]https://www.youtube.com/watch?v=xO73EUwSegU（演讲视频）
-
-[2]https://arxiv.org/pdf/2305.10601.pdf（“Tree of thought”论文）
+1. https://www.youtube.com/watch?v=xO73EUwSegU（演讲视频）
+2. https://arxiv.org/pdf/2305.10601.pdf（“Tree of Thoughts”论文）
 
 参考链接：
 
-[1]https://twitter.com/altryne/status/1661236778458832896
-
-[2]https://www.reddit.com/r/MachineLearning/comments/13qrtek/n_state_of_gpt_by_andrej_karpathy_in_msbuild_2023/
-
-[3]https://www.wisdominanutshell.academy/state-of-gpt/
+1. https://twitter.com/altryne/status/1661236778458832896
+2. https://www.reddit.com/r/MachineLearning/comments/13qrtek/n_state_of_gpt_by_andrej_karpathy_in_msbuild_2023/
+3. https://www.wisdominanutshell.academy/state-of-gpt/
 
 — **完** —
 

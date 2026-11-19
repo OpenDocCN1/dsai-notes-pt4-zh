@@ -1,18 +1,12 @@
-# 04-后端系统架构-v1.0
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/WNbIdgf4No3FFpx5ueycQjwWnhh](https://kq4b3vgg5b.feishu.cn/docx/WNbIdgf4No3FFpx5ueycQjwWnhh)
 
 # 多模态 RAG 后端系统架构 v1.0
 
-> 适用场景：企业内部知识库 / 客服智能问答 / 技术文档检索 / 行业资料分析
-
+> 文档编号：04-后端系统架构-v1.0 | 版本：v1.0 | 更新日期：2026-04  
+> 来源：赋范大模型技术社区 · 多模态 RAG 项目实战课  
+> 原文链接：`https://kq4b3vgg5b.feishu.cn/docx/WNbIdgf4No3FFpx5ueycQjwWnhh`  
+>
+> 适用场景：企业内部知识库 / 客服智能问答 / 技术文档检索 / 行业资料分析  
 > 项目阶段：后端架构设计阶段（前端尚未接入）
-
-> 版本号：v1.0
-
-> 更新日期：2026-04
-
-> 来源：赋范大模型技术社区 · 多模态 RAG 项目实战课
 
 ---
 
@@ -20,13 +14,10 @@
 
 这套架构是用 Plan 模式 + Claude Code 输出的。设计时遵循以下原则：
 
-1.  **MVP 先行**：存储层用纯文件系统 JSON 验证链路，不一开始就上 PostgreSQL + Qdrant
-
-1.  **四层职责分离**：接入层不做业务逻辑，执行层不做参数校验，职责边界清晰
-
-1.  **文档驱动**：每个层的输入输出在这份文档里单独定义，多会话 AI 协作时直接引用，不重复解释
-
-1.  **状态机统一**：所有异步任务通过同一个状态机管理，不为每个接口写独立的状态逻辑
+1. **MVP 先行**：存储层用纯文件系统 JSON 验证链路，不一开始就上 PostgreSQL + Qdrant  
+1. **四层职责分离**：接入层不做业务逻辑，执行层不做参数校验，职责边界清晰  
+1. **文档驱动**：每个层的输入输出在这份文档里单独定义，多会话 AI 协作时直接引用，不重复解释  
+1. **状态机统一**：所有异步任务通过同一个状态机管理，不为每个接口写独立的状态逻辑  
 
 ---
 
@@ -73,23 +64,17 @@
 
 **接入层做**：
 
-+   路由注册（FastAPI Router）
-
-+   请求参数校验（Pydantic BaseModel）
-
-+   认证鉴权（JWT Bearer Token）
-
-+   请求日志记录
-
-+   统一错误格式转换
++ 路由注册（`FastAPI` `Router`）  
++ 请求参数校验（`Pydantic` `BaseModel`）  
++ 认证鉴权（JWT Bearer Token）  
++ 请求日志记录  
++ 统一错误格式转换  
 
 **接入层不做**：
 
-+   业务逻辑
-
-+   数据库操作
-
-+   调用外部服务
++ 业务逻辑  
++ 数据库操作  
++ 调用外部服务  
 
 ### 3.2 统一返回格式
 
@@ -104,18 +89,18 @@ class APIResponse(BaseModel):
 
 # 成功示例
 {
-    &quot;code&quot;: 0,
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;data&quot;: {...},
-    &quot;request_id&quot;: &quot;req_1714567890_abc123&quot;
+    "code": 0,
+    "message": "success",
+    "data": {...},
+    "request_id": "req_1714567890_abc123"
 }
 
 # 错误示例
 {
-    &quot;code&quot;: 4001,
-    &quot;message&quot;: &quot;文件格式不支持，仅支持 .pdf / .jpg / .png / .txt&quot;,
-    &quot;data&quot;: null,
-    &quot;request_id&quot;: &quot;req_1714567890_def456&quot;
+    "code": 4001,
+    "message": "文件格式不支持，仅支持 .pdf / .jpg / .png / .txt",
+    "data": null,
+    "request_id": "req_1714567890_def456"
 }
 ```
 
@@ -150,25 +135,23 @@ services/
 
 ### 4.2 服务间依赖规则
 
-+   服务之间不直接调用彼此的函数，通过共享存储层交换状态
-
-+   服务不直接实例化执行层组件，通过依赖注入获取
-
-+   每个服务对应一个 FastAPI Router，一对一关系
++ 服务之间不直接调用彼此的函数，通过共享存储层交换状态  
++ 服务不直接实例化执行层组件，通过依赖注入获取  
++ 每个服务对应一个 `FastAPI` `Router`，一对一关系  
 
 ### 4.3 Pipeline 调度服务状态机
 
 ```
 class TaskStatus(str, Enum):
-    PENDING = &quot;pending&quot;
-    PARSING = &quot;parsing&quot;
-    CHUNKING = &quot;chunking&quot;
-    EMBEDDING = &quot;embedding&quot;
-    KG_EXTRACTING = &quot;kg_extracting&quot;
-    INDEXING = &quot;indexing&quot;
-    COMPLETED = &quot;completed&quot;
-    FAILED = &quot;failed&quot;
-    CANCELLED = &quot;cancelled&quot;
+    PENDING = "pending"
+    PARSING = "parsing"
+    CHUNKING = "chunking"
+    EMBEDDING = "embedding"
+    KG_EXTRACTING = "kg_extracting"
+    INDEXING = "indexing"
+    COMPLETED = "completed"
+    FAILED = "failed"
+    CANCELLED = "cancelled"
 
 class Task(BaseModel):
     task_id: str
@@ -216,10 +199,10 @@ core/agent/
 
 ```
 # Pipeline 入口
-async def run_pipeline(file_path: str, file_id: str) -&gt; PipelineResult
+async def run_pipeline(file_path: str, file_id: str) -> PipelineResult
 
 # Agent 入口
-async def run_agent_qa(query: str, session_id: str) -&gt; QAResponse
+async def run_agent_qa(query: str, session_id: str) -> QAResponse
 ```
 
 ---
@@ -250,11 +233,11 @@ storage/
 
 | MVP 存储 | 生产存储 | 替换影响范围 |
 | --- | --- | --- |
-| 本地文件系统 | MinIO | file_service.py |
-| JSON 向量文件 | Qdrant | text_embedder.py + image_embedder.py |
-| networkX pickle | Neo4j | kg_extractor.py + graph_search.py |
-| JSON 元数据文件 | PostgreSQL | file_service.py + pipeline_service.py |
-| 内存状态机 | Redis | pipeline_service.py |
+| 本地文件系统 | MinIO | `file_service.py` |
+| JSON 向量文件 | Qdrant | `text_embedder.py` + `image_embedder.py` |
+| networkX pickle | Neo4j | `kg_extractor.py` + `graph_search.py` |
+| JSON 元数据文件 | PostgreSQL | `file_service.py` + `pipeline_service.py` |
+| 内存状态机 | Redis | `pipeline_service.py` |
 
 **替换原则**：存储层替换只改对应的封装文件，不影响服务层和执行层代码。
 
@@ -283,7 +266,7 @@ multimodal-rag-backend/
 │   ├── storage/                # 存储层抽象
 │   │   ├── interfaces.py       # 存储接口定义
 │   │   └── implementations/   # 具体实现（本地 / Qdrant / Neo4j）
-│   ├── models/                 # 数据模型（Pydantic）
+│   ├── models/                 # 数据模型（`Pydantic`）
 │   └── config.py               # 配置（从环境变量读取）
 ├── tests/
 │   ├── unit/
@@ -302,16 +285,16 @@ multimodal-rag-backend/
 class Settings(BaseSettings):
     # LLM
     LLM_API_KEY: str
-    LLM_BASE_URL: str = &quot;https://api.deepseek.com&quot;
-    LLM_MODEL: str = &quot;deepseek-chat&quot;
+    LLM_BASE_URL: str = "https://api.deepseek.com"
+    LLM_MODEL: str = "deepseek-chat"
 
     # Embedding
-    TEXT_EMBEDDING_MODEL: str = &quot;BAAI/bge-m3&quot;
-    IMAGE_EMBEDDING_MODEL: str = &quot;ViT-B-32&quot;
+    TEXT_EMBEDDING_MODEL: str = "BAAI/bge-m3"
+    IMAGE_EMBEDDING_MODEL: str = "ViT-B-32"
 
     # Storage（MVP 用本地路径，生产替换为服务地址）
-    STORAGE_TYPE: str = &quot;local&quot;   # local / qdrant / neo4j
-    STORAGE_BASE_PATH: str = &quot;./storage&quot;
+    STORAGE_TYPE: str = "local"   # local / qdrant / neo4j
+    STORAGE_BASE_PATH: str = "./storage"
     QDRANT_URL: Optional[str] = None
     NEO4J_URI: Optional[str] = None
 
@@ -321,5 +304,5 @@ class Settings(BaseSettings):
     CHUNK_OVERLAP: int = 64
 
     class Config:
-        env_file = &quot;.env&quot;
+        env_file = ".env"
 ```

@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（10月 14日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/ZEU0d0u4losVqrxA5ogc20amnAe](https://miracleplus.feishu.cn/docx/ZEU0d0u4losVqrxA5ogc20amnAe)
 
-# 🔉潜空间活动报名
+## 🔉潜空间活动报名
 
-#### 潜空间系列活动重磅回归！
+### 潜空间系列活动重磅回归！
 
 > 本期活动将在**10月20日** **10:00**开始，我们邀请到的嘉宾是**袁进辉**，硅基流动（SiliconFlow）创始人兼CEO，曾任微软亚洲研究院主管研究员，获得微软亚洲研究院院长特别奖。硅基流动目前专注于 AI Infra 领域，解决大模型训练与推理的效率问题，降低 AI 应用开发的门槛与成本。在本次分享中袁进辉将带来《AI Infra 创业10年得与失》的分享。
 
@@ -14,7 +15,7 @@
 
 ![](img/bcff1cd0b16d436902af634365520682.png)
 
-# 推特
+## 推特
 
 ### ClipbookLM：YouTube视频转换生成博客文章
 
@@ -92,7 +93,7 @@ https://x.com/rasbt/status/1845468766118850862?s=46&t=GRStLXDcUNuun8J5Noyw4Q
 
 ![](img/52bbfedfa18ed701c28764db34f85b49.png)
 
-# 资讯
+## 资讯
 
 ### REPA：表征对齐助力扩散模型训练的突破
 
@@ -130,7 +131,7 @@ https://techcrunch.com/2024/10/13/data-center-tech-is-exploding-but-adoption-won
 
 ![](img/a52ae6989bc7b877dab22fe4791a7e93.png)
 
-### **合成数据的潜力与风险**
+### 合成数据的潜力与风险
 
 https://techcrunch.com/2024/10/13/the-promise-and-perils-of-synthetic-data/
 
@@ -172,7 +173,7 @@ https://mp.weixin.qq.com/s/KMwTAStHWWXboAijHn7FYw
 
 ![](img/9f27301b93612c8a92e5e2d85697d6f2.png)
 
-# 信号
+## 信号
 
 ### Algorithmic Capabilities of Random Transformers
 
@@ -198,11 +199,13 @@ https://mp.weixin.qq.com/s/KMwTAStHWWXboAijHn7FYw
 
 研究节点：模型体系 -- 后训练体系 -- RL -- 奖励模型
 
+
+
 现有的偏好优化方法主要是为直接从人类反馈中学习而设计的，前提是成对样本（首选与非首选）可用。相比之下，我们提出了一种方法，可以利用未成对的首选或不首选样本，即使只有一种类型的反馈（正面或负面）可用，该方法也有效。这种灵活性使我们能够将其应用于具有不同形式的反馈和模型的场景中，包括基于人类反馈的生成语言模型，以及针对顺序决策问题的训练策略，其中学习的（价值）功能可用。我们的方法建立在 （Dayan and Hinton， 1997） 中引入的概率框架之上，该框架建议使用期望最大化 （EM） 来直接优化首选结果的概率（而不是经典的预期奖励最大化）。为了获得实用的算法，我们确定并解决了当前基于 EM 的方法中的一个关键限制：当应用于偏好优化时，它们仅最大限度地提高首选样本的可能性，而忽略了不偏好的样本。我们展示了如何扩展 EM 算法以明确地包含不喜欢的结果，从而产生一种新颖的、有理论基础的偏好优化算法，该算法提供了一种直观且多功能的方式来从正反馈和负反馈中学习。
 
 ![](img/6b320bc84e5b1504258faca6edf02bdb.png)
 
-### RL, but don't do anything I wouldn't do
+# RL, but don't do anything I wouldn't do
 
 贡献人：
 
@@ -214,7 +217,7 @@ https://mp.weixin.qq.com/s/KMwTAStHWWXboAijHn7FYw
 
 ![](img/b4267f2c31fd0f3e9102c8659e0b8109.png)
 
-### EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+# EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
 
 贡献人：
 
@@ -228,7 +231,7 @@ https://mp.weixin.qq.com/s/KMwTAStHWWXboAijHn7FYw
 
 ![](img/fbc8b956900ef622bc4782b1bbfe8fc7.png)
 
-### LLMs Are In-Context Reinforcement Learners
+# LLMs Are In-Context Reinforcement Learners
 
 贡献人：
 
@@ -240,7 +243,7 @@ https://mp.weixin.qq.com/s/KMwTAStHWWXboAijHn7FYw
 
 ![](img/10ab3c5b9ad9b2a497c14aa7ae3c2b35.png)
 
-### How to Train Long-Context Language Models (Effectively)
+# How to Train Long-Context Language Models (Effectively)
 
 贡献人：
 
@@ -254,7 +257,7 @@ https://mp.weixin.qq.com/s/KMwTAStHWWXboAijHn7FYw
 
 # 产品
 
-### DevKit
+## DevKit
 
 贡献人：
 
@@ -266,7 +269,7 @@ DevKit 是一款集成多种大语言模型和开发工具的工具包，可以�
 
 # HuggingFace&Github
 
-### TextToon
+## TextToon
 
 贡献人：
 
@@ -278,7 +281,7 @@ TextToon 是一种生成可驱动的卡通化头像的方法，通过输入短�
 
 ![](img/eae69ecd50bde8205b8517b58637357e.png)
 
-### DICE
+## DICE
 
 贡献人：
 
@@ -290,7 +293,7 @@ DICE（Discrete Inversion for Controllable Editing）是一种创新方法，可
 
 # 投融资
 
-### COVU完成1250万美元A轮融资
+## COVU完成1250万美元A轮融资
 
 https://www.insurtechinsights.com/covu-secures-12-5-million-in-series-a-funding/
 
@@ -308,7 +311,7 @@ COVU的联合创始人兼CEO Ali Safavi表示：“我们致力于为保险机�
 
 # 学习
 
-### 人工智能的发展可能会对芯片行业带来哪些变革影响？
+## 人工智能的发展可能会对芯片行业带来哪些变革影响？
 
 贡献人：
 
@@ -326,7 +329,7 @@ https://www.zhihu.com/question/827235247/answer/5090216547
 
 ![](img/f5988c59c6d409774fcc274f9fac18e5.png)
 
-### 面向异构硬件架构：软件支撑和优化技术
+## 面向异构硬件架构：软件支撑和优化技术
 
 https://zhuanlan.zhihu.com/p/992305287
 
@@ -340,125 +343,125 @@ https://zhuanlan.zhihu.com/p/992305287
 
 ![](img/f05de5b0495ca13601ca76632ea77ede.png)
 
-### Flex Attention API 应用 Notebook 代码速览
+## Flex Attention API 应用 Notebook 代码速览
 
 https://zhuanlan.zhihu.com/p/993650254
 
-FlexAttention 概述：
+`FlexAttention` 概述：
 
-+   FlexAttention 是一种允许自定义修改注意力分数的 API，集成于 PyTorch，特别适用于缩放点积注意力（SDPA）的高效实现。
++   `FlexAttention` 是一种允许自定义修改注意力分数的 API，集成于 PyTorch，特别适用于缩放点积注意力（SDPA）的高效实现。
 
-+   通过自定义 score_mod（分数修改函数）和 mask_mod（掩码函数），用户可以创建复杂的注意力机制，如因果注意力、滑动窗口注意力等。
++   通过自定义 `score_mod`（分数修改函数）和 `mask_mod`（掩码函数），用户可以创建复杂的注意力机制，如因果注意力、滑动窗口注意力等。
 
-+   FlexAttention 通过编译器自动优化执行，支持动态 kernel 生成，并能与 PyTorch 的 torch.compile 功能结合使用以提升性能。
++   `FlexAttention` 通过编译器自动优化执行，支持动态 kernel 生成，并能与 PyTorch 的 `torch.compile` 功能结合使用以提升性能。
 
 **API 用法**：
 
-+   基本调用 FlexAttention 通过提供 query、key 和 value 三个张量，并结合自定义的 score_mod 或 mask_mod 函数。
++   基本调用 `FlexAttention` 通过提供 `query`、`key` 和 `value` 三个张量，并结合自定义的 `score_mod` 或 `mask_mod` 函数。
 
-+   score_mod 修改注意力分数的值，而 mask_mod 则定义了哪些分数应被掩码。在许多情况下，掩码操作可以通过 mask_mod 提供更好的性能。
++   `score_mod` 修改注意力分数的值，而 `mask_mod` 则定义了哪些分数应被掩码。在许多情况下，掩码操作可以通过 `mask_mod` 提供更好的性能。
 
 **分数修改与掩码的区别**：
 
-+   使用 score_mod 修改注意力分数时，可以对注意力矩阵中的每个元素进行自定义操作，如缩放或修改值。
++   使用 `score_mod` 修改注意力分数时，可以对注意力矩阵中的每个元素进行自定义操作，如缩放或修改值。
 
-+   mask_mod 则是布尔类型掩码，主要控制哪些元素被计算，适合于稀疏计算的场景。
++   `mask_mod` 则是布尔类型掩码，主要控制哪些元素被计算，适合于稀疏计算的场景。
 
-+   比如，因果注意力（Causal Attention）可以通过 score_mod 将未来的 token 的注意力分数设为负无穷，而 mask_mod 可以高效地直接掩码掉这些分数。
++   比如，因果注意力（Causal Attention）可以通过 `score_mod` 将未来的 token 的注意力分数设为负无穷，而 `mask_mod` 可以高效地直接掩码掉这些分数。
 
 **实现示例**：
 
-+   示例涵盖了多种注意力机制的实现，包括因果注意力、滑动窗口注意力、前缀语言模型注意力、文档级注意力等。每个示例都展示了如何通过自定义 score_mod 和 mask_mod 控制注意力计算。
++   示例涵盖了多种注意力机制的实现，包括因果注意力、滑动窗口注意力、前缀语言模型注意力、文档级注意力等。每个示例都展示了如何通过自定义 `score_mod` 和 `mask_mod` 控制注意力计算。
 
 +   例如，滑动窗口注意力结合了因果掩码和滑动窗口机制，实现了一个固定大小窗口内的相对位置注意力计算。
 
 **优化与性能**：
 
-+   FlexAttention 支持块稀疏性（Block Sparsity），可以显著减少计算量。例如，因果注意力只需计算下三角部分，而不需要计算整个矩阵。
++   `FlexAttention` 支持块稀疏性（Block Sparsity），可以显著减少计算量。例如，因果注意力只需计算下三角部分，而不需要计算整个矩阵。
 
-+   使用 create_block_mask 函数创建块掩码，并通过 flex_attention API 调用块稀疏化的注意力机制，极大地提升了计算效率。
++   使用 `create_block_mask` 函数创建块掩码，并通过 `flex_attention` API 调用块稀疏化的注意力机制，极大地提升了计算效率。
 
-+   为了进一步提升性能，作者还讨论了如何在 PyTorch 中通过 torch.compile 和自定义的 Triton kernel 优化内核执行。
++   为了进一步提升性能，作者还讨论了如何在 PyTorch 中通过 `torch.compile` 和自定义的 Triton kernel 优化内核执行。
 
 **高级用法与扩展**：
 
-+   作者介绍了如何使用 FlexAttention 处理嵌套不规则张量（NJT）和 Flamingo 交叉注意力等高级应用场景。
++   作者介绍了如何使用 `FlexAttention` 处理嵌套不规则张量（NJT）和 Flamingo 交叉注意力等高级应用场景。
 
-+   通过嵌套张量的支持，FlexAttention 可以处理不同长度序列的批次输入，适用于需要不规则数据处理的场景。
++   通过嵌套张量的支持，`FlexAttention` 可以处理不同长度序列的批次输入，适用于需要不规则数据处理的场景。
 
-Inductor 后端的 FlexAttention 实现：
+`Inductor` 后端的 `FlexAttention` 实现：
 
-+   博客最后部分简要分析了 PyTorch 的 Inductor 编译器后端如何实现 FlexAttention，并展示了其中的核心入口代码。通过 Inductor，FlexAttention 能生成与优化 Triton kernel，以实现高效的注意力计算。
++   博客最后部分简要分析了 `PyTorch` 的 `Inductor` 编译器后端如何实现 `FlexAttention`，并展示了其中的核心入口代码。通过 `Inductor`，`FlexAttention` 能生成与优化 Triton kernel，以实现高效的注意力计算。
 
-### FlexAttetion 基于Triton打造灵活度拉满的Attention
+## FlexAttetion 基于Triton打造灵活度拉满的Attention
 
 https://zhuanlan.zhihu.com/p/994100422
 
-本文讨论了在实践中实现注意力机制的优化需求，特别是通过FlashAttention等技术提升效率。尽管优化注意力实现提高了性能和支持长上下文，但其灵活性受到限制，研究人员无法通过简单的PyTorch操作尝试新的注意力变体，通常需要编写自定义内核。这种情况被形容为一种“软件彩票”，如果新的注意力变体与现有内核不兼容，研究者将面临性能瓶颈和内存不足的问题。
+本文讨论了在实践中实现注意力机制的优化需求，特别是通过 `FlashAttention` 等技术提升效率。尽管优化注意力实现提高了性能和支持长上下文，但其灵活性受到限制，研究人员无法通过简单的 PyTorch 操作尝试新的注意力变体，通常需要编写自定义内核。这种情况被形容为一种“软件彩票”，如果新的注意力变体与现有内核不兼容，研究者将面临性能瓶颈和内存不足的问题。
 
-为解决这一问题，文章介绍了FlexAttention，这是一个新的PyTorch API，旨在提供灵活的接口，允许用户通过几行代码实现不同的注意力变体。它通过torch.compile将注意力机制转换为融合的FlashAttention内核，从而在保持高性能的同时，避免了额外的内存开销。此外，FlexAttention利用了PyTorch的自动求导机制和稀疏性优化，在标准注意力实现上取得了显著性能改进。
+为解决这一问题，文章介绍了 `FlexAttention`，这是一个新的 PyTorch API，旨在提供灵活的接口，允许用户通过几行代码实现不同的注意力变体。它通过 `torch.compile` 将注意力机制转换为融合的 `FlashAttention` 内核，从而在保持高性能的同时，避免了额外的内存开销。此外，`FlexAttention` 利用了 PyTorch 的自动求导机制和稀疏性优化，在标准注意力实现上取得了显著性能改进。
 
-FlexAttention的核心在于允许用户定义一个score_mod函数来修改注意力分数，从而支持各种注意力变体，例如相对位置编码、ALiBi偏置、滑动窗口注意力和因果掩码等。它还引入了mask_mod函数，用于处理掩码操作，并通过稀疏块掩码加速计算。文章还详细介绍了如何在不损失硬件效率的情况下，通过FlexAttention实现如文档掩码、滑动窗口注意力与因果注意力等复杂组合。
+
+
+# 大模型日报
+
+## FlexAttention 核心原理
+
+FlexAttention的核心在于允许用户定义一个`score_mod`函数来修改注意力分数，从而支持各种注意力变体，例如相对位置编辑、`ALiBi`偏置、滑动窗口注意力和因果掩码等。它还引入了`mask_mod`函数，用于处理掩码操作，并通过稀疏块掩码加速计算。文章还详细介绍了如何在不损失硬件效率的情况下，通过`FlexAttention`实现如文档掩码、滑动窗口注意力与因果注意力等复杂组合。
 
 ![](img/9317cdd4033cfb6984c413c3d1fe57ef.png)
 
-### OpenAI o1技术分析与实现推演
+## OpenAI o1 技术分析与实现推演
 
 https://zhuanlan.zhihu.com/p/997732789
 
-这篇文章探讨了OpenAI o1技术的实现及其潜在的影响，特别是通过推演，强调了AGI（通用人工智能）的逼近。作者提出，通过增强算力和改进Verifier与Generator的机制，AI可以加速科学领域的发展，甚至帮助解决复杂的数学猜想等问题。技术的核心在于模型的自我改进能力，特别是在Verifier与Generator的交互中，通过树搜索、偏序对训练等技术实现self-refine。Verifier在其中扮演着关键角色，帮助模型评估生成内容的合理性，优化模型推理过程。文章详细讨论了不同可能的技术实现方案，诸如Generator与Verifier自我博弈、Verifier的泛化能力提升以及如何通过高效的探索和采样优化生成过程。
+这篇文章探讨了OpenAI o1技术的实现及其潜在的影响，特别是通过推演，强调了AGI（通用人工智能）的逼近。作者提出，通过增强算力和改进`Verifier`与`Generator`的机制，AI可以加速科学领域的发展，甚至帮助解决复杂的数学猜想等问题。技术的核心在于模型的自我改进能力，特别是在`Verifier`与`Generator`的交互中，通过树搜索、偏序对训练等技术实现`self-refine`。`Verifier`在其中扮演着关键角色，帮助模型评估生成内容的合理性，优化模型推理过程。文章详细讨论了不同可能的技术实现方案，诸如`Generator`与`Verifier`自我博弈、`Verifier`的泛化能力提升以及如何通过高效的探索和采样优化生成过程。
 
-从具体技术细节看，作者提出通过强化学习和树搜索来增强AI的推理能力，并通过多种采样和训练方法，如Monte Carlo树搜索（MCTS）与偏序对优化，提升模型在复杂问题上的性能。尤其强调了如何在AI的推理过程中进行自我反思与纠错，推动模型逐步提升。在人类未知领域，Verifier的泛化能力和如何平衡采样中的探索与利用将成为关键问题。
+从具体技术细节看，作者提出通过强化学习和树搜索来增强AI的推理能力，并通过多种采样和训练方法，如Monte Carlo树搜索（MCTS）与偏序对优化，提升模型在复杂问题上的性能。尤其强调了如何在AI的推理过程中进行自我反思与纠错，推动模型逐步提升。在人类未知领域，`Verifier`的泛化能力和如何平衡采样中的探索与利用将成为关键问题。
 
 ![](img/9eab4708a5cff485a701f6524ec59b35.png)
 
-### 如何让计算机理解音乐？——音乐基础模型（一）
+## 如何让计算机理解音乐？——音乐基础模型（一）
 
 https://zhuanlan.zhihu.com/p/783999520
 
-1.  音频级别表示 音频级别表示侧重于通过信号处理技术，将声音从时域转换为频域，以捕捉频率、音高和动态变化等特征。常见方法包括：
+1. 音频级别表示：音频级别表示侧重于通过信号处理技术，将声音从时域转换为频域，以捕捉频率、音高和动态变化等特征。常见方法包括：
 
-+   梅尔频谱图（Mel Spectrogram）：通过快速傅里叶变换（FFT）获取频谱，再用梅尔尺度压缩频率，模拟人耳对音高的感知。
++ 梅尔频谱图（Mel Spectrogram）：通过快速傅里叶变换（FFT）获取频谱，再用梅尔尺度压缩频率，模拟人耳对音高的感知。
++ MFCC（梅尔频率倒谱系数）：提取频谱特征，尤其在人声识别和音乐分类任务中表现突出。
++ 恒Q变换（CQT）：通过对数频率尺度捕捉音高变化，适用于分析音乐中的音调和和声结构。
++ Chroma特征：提取12个音级的特征，主要用于和弦识别和调性检测。
 
-+   MFCC（梅尔频率倒谱系数）：提取频谱特征，尤其在人声识别和音乐分类任务中表现突出。
+2. 符号音乐格式：符号音乐格式用于以符号方式记录音高、节奏等音乐信息，常见格式包括：
 
-+   恒Q变换（CQT）：通过对数频率尺度捕捉音高变化，适用于分析音乐中的音调和和声结构。
++ MIDI：标准化的符号音乐格式，记录了乐曲的详细演奏信息，广泛用于音乐生成和风格转换任务。
++ MusicXML：基于XML设计，能够精确记录乐谱信息，适合音乐文档的保存和交换。
++ MEI：适用于记录多种音乐符号系统，尤其是早期音乐和手稿。
 
-+   Chroma特征：提取12个音级的特征，主要用于和弦识别和调性检测。
+3. 转化后的符号音乐表示：为了适应深度学习框架，符号音乐格式常被转化为适合模型处理的形式，如：
 
-1.  符号音乐格式 符号音乐格式用于以符号方式记录音高、节奏等音乐信息，常见格式包括：
++ 序列化符号表示：将音乐事件（音高、时长等）转化为序列，适合音乐生成任务。
++ REMI令牌化：通过改进音符持续时间的建模，使得节奏建模更加精确。
 
-+   MIDI：标准化的符号音乐格式，记录了乐曲的详细演奏信息，广泛用于音乐生成和风格转换任务。
-
-+   MusicXML：基于XML设计，能够精确记录乐谱信息，适合音乐文档的保存和交换。
-
-+   MEI：适用于记录多种音乐符号系统，尤其是早期音乐和手稿。
-
-1.  转化后的符号音乐表示 为了适应深度学习框架，符号音乐格式常被转化为适合模型处理的形式，如：
-
-+   序列化符号表示：将音乐事件（音高、时长等）转化为序列，适合音乐生成任务。
-
-+   REMI令牌化：通过改进音符持续时间的建模，使得节奏建模更加精确。
-
-1.  多模态音乐表示 音乐不仅限于音频，还可以结合文本和视觉信息形成多模态表示。歌词和视觉元素如专辑封面，能够为音乐生成和分析提供更多的背景信息，有助于生成更具风格或情感一致性的作品。
+4. 多模态音乐表示：音乐不仅限于音频，还可以结合文本和视觉信息形成多模态表示。歌词和视觉元素如专辑封面，能够为音乐生成和分析提供更多的背景信息，有助于生成更具风格或情感一致性的作品。
 
 ![](img/2c41a4468ef7b541755f5c1834c3ca86.png)
 
-### 📕搜索：生成式检索的探索与实践
+## 📕搜索：生成式检索的探索与实践
 
 https://mp.weixin.qq.com/s/yApGxCGxjWnZQu8PoO9Qeg
 
-1.  **稀疏检索**（如TF-IDF、BM25）：通过简单的文本特征匹配来实现，适用于传统的搜索任务。
+1. **稀疏检索**（如TF-IDF、BM25）：通过简单的文本特征匹配来实现，适用于传统的搜索任务。
 
-1.  **密集检索**：利用语义向量匹配机制，采用双塔模型分别对查询和文档进行编码，通过向量空间计算相似度。密集检索的优点是延迟低、计算开销小，但缺乏深度交互，无法充分捕捉查询和文档间的复杂语义关系，且在查询和文档的"一对多"情境下表现不佳。
+2. **密集检索**：利用语义向量匹配机制，采用双塔模型分别对查询和文档进行编码，通过向量空间计算相似度。密集检索的优点是延迟低、计算开销小，但缺乏深度交互，无法充分捕捉查询和文档间的复杂语义关系，且在查询和文档的"一对多"情境下表现不佳。
 
-1.  **生成式检索（GDR）**：基于记忆机制，生成笔记或文档的ID，而非在向量空间中计算相似度。其优点是能够通过记忆机制进行深度交互，避免密集检索中的"一对多"问题，并且可以利用大模型的语义理解能力。然而，生成式检索存在记忆容量有限、难以处理大规模候选文档、扩展性差等问题，尤其是在文档更新时容易出现灾难性遗忘。
+3. **生成式检索（GDR）**：基于记忆机制，生成笔记或文档的ID，而非在向量空间中计算相似度。其优点是能够通过记忆机制进行深度交互，避免密集检索中的"一对多"问题，并且可以利用大模型的语义理解能力。然而，生成式检索存在记忆容量有限、难以处理大规模候选文档、扩展性差等问题，尤其是在文档更新时容易出现灾难性遗忘。
 
-在生成式检索中，给定一个查询，系统通过编码器生成一个向量，随后解码生成相关的笔记ID。通过Beam Search解码策略逐步生成候选文档。然而，当文档规模增大时，生成式检索的性能显著下降，因为模型的记忆容量有限。
+在生成式检索中，给定一个查询，系统通过编码器生成一个向量，随后解码生成相关的笔记ID。通过`Beam Search`解码策略逐步生成候选文档。然而，当文档规模增大时，生成式检索的性能显著下降，因为模型的记忆容量有限。
 
-为了解决生成式检索的缺陷，文章提出了GDR（生成式密集检索）范式，结合了生成式检索和密集检索的优势。GDR首先利用生成式检索记住候选文档簇的高层语义ID，再通过密集检索在相关簇中进行细粒度的匹配，从而平衡了检索效果与计算效率。此外，GDR通过构建记忆友好的文档簇ID层级结构，并结合自适应负采样策略，提高了召回率和效率。
+为了解决生成式检索的缺陷，文章提出了`GDR`（生成式密集检索）范式，结合了生成式检索和密集检索的优势。`GDR`首先利用生成式检索记住候选文档簇的高层语义ID，再通过密集检索在相关簇中进行细粒度的匹配，从而平衡了检索效果与计算效率。此外，`GDR`通过构建记忆友好的文档簇ID层级结构，并结合自适应负采样策略，提高了召回率和效率。
 
-实验结果表明，GDR在大规模候选集上表现出优异的召回性能，且在文档更新后的效果下降幅度较小，具有较强的扩展性和灵活性。
+实验结果表明，`GDR`在大规模候选集上表现出优异的召回性能，且在文档更新后的效果下降幅度较小，具有较强的扩展性和灵活性。
 
 ![](img/62b6ea14728b1dfb051a9dd2485573a7.png)
 
@@ -468,9 +471,9 @@ https://mp.weixin.qq.com/s/yApGxCGxjWnZQu8PoO9Qeg
 
 ![](img/dee36f8f17cb4c2a5c740dbc9ee918eb.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+**奇绩创坛**由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀 F24 实习岗位
 
 ##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
@@ -478,7 +481,7 @@ https://mp.weixin.qq.com/s/yApGxCGxjWnZQu8PoO9Qeg
 
 ##### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
 ##### 行研-GenAI研究岗位-前沿学术探索
 
@@ -500,8 +503,6 @@ https://mp.weixin.qq.com/s/yApGxCGxjWnZQu8PoO9Qeg
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -512,7 +513,7 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
 

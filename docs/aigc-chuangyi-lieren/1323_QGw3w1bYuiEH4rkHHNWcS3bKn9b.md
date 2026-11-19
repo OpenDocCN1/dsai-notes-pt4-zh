@@ -1,3 +1,4 @@
+
 # 20241018-重磅！ChatGPT正式开放Windows版本下载，办公新神器来了！
 
 > 来源：[https://aigcreative.feishu.cn/docx/MuWZdzmOCoHTpxxv7n6ckpeanKb](https://aigcreative.feishu.cn/docx/MuWZdzmOCoHTpxxv7n6ckpeanKb)
@@ -8,7 +9,7 @@
 
 从功能上看，Windows版ChatGPT完全配得上这波期待。
 
-通过快捷键“Alt + Space”组合，一秒启动，无论是文件分析、对话搜索还是创意文本生成，它都能轻松应对。而且，和Office的无缝配合让它成为办公的新宠，这意味着处理日常办公任务时，能极大提高效率。
+通过快捷键`Alt + Space`组合，一秒启动，无论是文件分析、对话搜索还是创意文本生成，它都能轻松应对。而且，和Office的无缝配合让它成为办公的新宠，这意味着处理日常办公任务时，能极大提高效率。
 
 ![](img/e2c5db230ee1af6ad753c132c6528c4a.png)
 
@@ -22,7 +23,7 @@
 
 ## 极致便捷的启动方式，秒变效率达人
 
-还记得那些手动打开各种工具、软件的烦恼吗？现在可以说再见了。ChatGPT的Windows版可以直接通过快捷键Alt + Space召唤。
+还记得那些手动打开各种工具、软件的烦恼吗？现在可以说再见了。ChatGPT的Windows版可以直接通过快捷键`Alt + Space`召唤。
 
 ![](img/390e5126a7278145c96ef32891a7ad64.png)
 

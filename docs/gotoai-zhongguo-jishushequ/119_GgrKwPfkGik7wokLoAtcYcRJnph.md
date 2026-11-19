@@ -1,3 +1,4 @@
+
 # 06.构建文本生成应用
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/E1ZvdMzfRoQtL6xR3Fxc3kS7nVf](https://gotoaiworld.feishu.cn/docx/E1ZvdMzfRoQtL6xR3Fxc3kS7nVf)
@@ -14,37 +15,32 @@
 
 在本章中，你将：
 
-+   了解 openai 库及其核心概念。
-
-+   使用 openai 构建一个文本生成应用。
-
-+   理解如何使用提示词、温度（temperature）和令牌（tokens）等概念来构建文本生成应用。
++ 了解 `openai` 库及其核心概念。
++ 使用 `openai` 构建一个文本生成应用。
++ 理解如何使用提示词、温度（`temperature`）和令牌（`tokens`）等概念来构建文本生成应用。
 
 ## 学习目标
 
 本课结束后，你将能够：
 
-+   解释什么是文本生成应用。
-
-+   使用 openai 构建文本生成应用。
-
-+   配置应用以使用更多或更少的令牌，并调整温度参数，以获得多样化的输出。
++ 解释什么是文本生成应用。
++ 使用 `openai` 构建文本生成应用。
++ 配置应用以使用更多或更少的令牌，并调整温度参数，以获得多样化的输出。
 
 ## 什么是文本生成应用？
 
 通常，当你构建一个应用时，它会有某种界面，比如：
 
-+   基于命令的。控制台应用是典型的基于命令的应用，你输入命令，应用执行任务。例如，git 就是一个基于命令的应用。
++ 基于命令的。控制台应用是典型的基于命令的应用，你输入命令，应用执行任务。例如，`git` 就是一个基于命令的应用。
 
-+   用户界面（UI）。有些应用有图形用户界面（GUI），你可以点击按钮、输入文本、选择选项等。
++ 用户界面（UI）。有些应用有图形用户界面（GUI），你可以点击按钮、输入文本、选择选项等。
 
 ### 控制台和 UI 应用的局限性
 
 与基于命令的应用相比，你只能输入特定的命令：
 
-+   受限。你不能随意输入任何命令，只能输入应用支持的命令。
-
-+   语言特定。有些应用支持多种语言，但默认情况下应用是为特定语言构建的，即使你可以添加更多语言支持。
++ 受限。你不能随意输入任何命令，只能输入应用支持的命令。
++ 语言特定。有些应用支持多种语言，但默认情况下应用是为特定语言构建的，即使你可以添加更多语言支持。
 
 ### 文本生成应用的优势
 
@@ -56,141 +52,151 @@
 
 你可以构建很多东西，例如：
 
-+   聊天机器人。一个回答关于公司及其产品问题的聊天机器人非常合适。
-
-+   助手。大型语言模型（LLM）擅长总结文本、提取信息、生成简历等文本内容。
-
-+   代码助手。根据你使用的语言模型，可以构建帮助你写代码的助手。例如，你可以使用 GitHub Copilot 或 ChatGPT 来辅助编程。
++ 聊天机器人。一个回答关于公司及其产品问题的聊天机器人非常合适。
++ 助手。大型语言模型（LLM）擅长总结文本、提取信息、生成简历等文本内容。
++ 代码助手。根据你使用的语言模型，可以构建帮助你写代码的助手。例如，你可以使用 GitHub Copilot 或 ChatGPT 来辅助编程。
 
 ## 如何开始？
 
 你需要找到一种方式与大型语言模型（LLM）集成，通常有以下两种方法：
 
-+   使用 API。构造带有提示词的网络请求，获取生成的文本。
-
-+   使用库。库封装了 API 调用，使其更易使用。
++ 使用 API。构造带有提示词的网络请求，获取生成的文本。
++ 使用库。库封装了 API 调用，使其更易使用。
 
 ## 库/SDK
 
 有几个知名的用于操作 LLM 的库：
 
-+   openai，这个库让你轻松连接模型并发送提示词。
++ `openai`，这个库让你轻松连接模型并发送提示词。
 
 还有一些更高层次的库：
 
-+   Langchain。Langchain 很有名，支持 Python。
++ `Langchain`。`Langchain` 很有名，支持 Python。
++ `Semantic Kernel`。`Semantic Kernel` 是微软的库，支持 C#、Python 和 Java。
 
-+   Semantic Kernel。Semantic Kernel 是微软的库，支持 C#、Python 和 Java。
-
-## 使用 openai 构建第一个应用
+## 使用 `openai` 构建第一个应用
 
 让我们看看如何构建第一个应用，需要哪些库，具体步骤等。
 
-### 安装 openai
+### 安装 `openai`
 
-有很多库可以与 OpenAI 或 Azure OpenAI 交互。支持多种编程语言，如 C#、Python、JavaScript、Java 等。我们选择使用 openai Python 库，使用 pip 安装。
+有很多库可以与 OpenAI 或 Azure OpenAI 交互。支持多种编程语言，如 C#、Python、JavaScript、Java 等。我们选择使用 `openai` Python 库，使用 pip 安装。
 
-pip install openai
+`pip install openai`
 
 ### 创建资源
 
 你需要完成以下步骤：
 
-+   在 Azure 上创建账户 https://azure.microsoft.com/free/。
-
-+   [获取](https://learn.microsoft.com/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai?WT.mc_id=academic-105485-koreyst) Azure OpenAI 访问权限。访问 https://learn.microsoft.com/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai 并申请访问。
-
-+   [!NOTE] 撰写本文时，你需要申请 Azure OpenAI 的访问权限。
-
-+   安装 Python https://www.python.org/
-
-+   [创建 A](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal?WT.mc_id=academic-105485-koreyst)zure OpenAI 服务资源。参考此指南了解如何创建资源。
++ 在 Azure 上创建账户 https://azure.microsoft.com/free/。
++ [获取](https://learn.microsoft.com/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai?WT.mc_id=academic-105485-koreyst) Azure OpenAI 访问权限。访问 https://learn.microsoft.com/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai 并申请访问。
++ [!NOTE] 撰写本文时，你需要申请 Azure OpenAI 的访问权限。
++ 安装 Python https://www.python.org/
++ [创建 A](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal?WT.mc_id=academic-105485-koreyst)zure OpenAI 服务资源。参考此指南了解如何创建资源。
 
 ### 找到 API 密钥和端点
 
-此时，你需要告诉 openai 库使用哪个 API 密钥。登录 Azure OpenAI 资源的“密钥和端点”部分，复制“密钥 1”的值。
+此时，你需要告诉 `openai` 库使用哪个 API 密钥。登录 Azure OpenAI 资源的“密钥和端点”部分，复制“密钥 1”的值。
 
 ![](img/9a617ca6c8f51059d633181c9f96cfc2.png)
 
 复制好信息后，我们来配置库使用它。
 
-Note
+> 建议将 API 密钥与代码分离。可以通过环境变量实现。
 
-建议将 API 密钥与代码分离。可以通过环境变量实现。
-
-+   设置环境变量 OPENAI_API_KEY 为你的 API 密钥。 export OPENAI_API_KEY='sk-...'
++ 设置环境变量 `OPENAI_API_KEY` 为你的 API 密钥。`export OPENAI_API_KEY='sk-...'`
 
 ### 配置 Azure
 
 如果你使用 Azure OpenAI，配置方法如下：
 
-openai.api_type = 'azure'openai.api_key = os.environ["OPENAI_API_KEY"]
+`openai.api_type = 'azure'`
+`openai.api_key = os.environ["OPENAI_API_KEY"]`
 
-openai.api_version = '2023-05-15'openai.api_base = os.getenv("API_BASE")
+`openai.api_version = '2023-05-15'`
+`openai.api_base = os.getenv("API_BASE")`
 
 上面设置了：
 
-+   api_type 为 azure，告诉库使用 Azure OpenAI 而非 OpenAI。
++ `api_type` 为 `azure`，告诉库使用 Azure OpenAI 而非 OpenAI。
++ `api_key`，即你在 Azure 门户找到的 API 密钥。
++ `api_version`，你想使用的 API 版本。撰写时最新版本是 `2023-05-15`。
++ `api_base`，API 的端点地址，可在 Azure 门户中与你的 API 密钥旁找到。
 
-+   api_key，即你在 Azure 门户找到的 API 密钥。
-
-+   api_version，你想使用的 API 版本。撰写时最新版本是 2023-05-15。
-
-+   api_base，API 的端点地址，可在 Azure 门户中与你的 API 密钥旁找到。
-
-> [!NOTE] > os.getenv 是读取环境变量的函数。你可以用它读取 OPENAI_API_KEY 和 API_BASE 等环境变量。请在终端或使用类似 dotenv 的库设置这些环境变量。
+> [!NOTE] `os.getenv` 是读取环境变量的函数。你可以用它读取 `OPENAI_API_KEY` 和 `API_BASE` 等环境变量。请在终端或使用类似 `dotenv` 的库设置这些环境变量。
 
 ## 生成文本
 
-生成文本的方法是使用 Completion 类。示例如下：
+生成文本的方法是使用 `Completion` 类。示例如下：
 
-prompt = "Complete the following: Once upon a time there was a"completion = openai.Completion.create(model="davinci-002", prompt=prompt)
+```
+prompt = "Complete the following: Once upon a time there was a"
+completion = openai.Completion.create(model="davinci-002", prompt=prompt)
 
 print(completion.choices[0].text)
+```
 
-上面代码中，我们创建了一个 completion 对象，传入想用的模型和提示词，然后打印生成的文本。
+上面代码中，我们创建了一个 `completion` 对象，传入想用的模型和提示词，然后打印生成的文本。
 
 ### 聊天完成
 
-到目前为止，你看到我们用 Completion 生成文本。但还有一个更适合聊天机器人的类叫 ChatCompletion。示例如下：
+到目前为止，你看到我们用 `Completion` 生成文本。但还有一个更适合聊天机器人的类叫 `ChatCompletion`。示例如下：
 
-import openaiopenai.api_key = "sk-..."completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
+```
+import openai
+openai.api_key = "sk-..."
+completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
 
 print(completion.choices[0].message.content)
+```
 
 关于此功能将在后续章节详细介绍。
 
 ## 练习 - 你的第一个文本生成应用
 
-现在我们学会了如何设置和配置 openai，是时候构建你的第一个文本生成应用了。按以下步骤操作：
+现在我们学会了如何设置和配置 `openai`，是时候构建你的第一个文本生成应用了。按以下步骤操作：
 
-1.  创建虚拟环境并安装 openai：
+1. 创建虚拟环境并安装 `openai`：
 
-1.  python -m venv venv
-source venv/bin/activate
-pip install openai
+   ```
+   python -m venv venv
+   source venv/bin/activate
+   pip install openai
+   ```
 
-1.  [!NOTE] 如果你使用 Windows，输入 venv\Scripts\activate，而不是 source venv/bin/activate。
+2. [!NOTE] 如果你使用 Windows，输入 `venv\Scripts\activate`，而不是 `source venv/bin/activate`。
 
-1.  [!NOTE] 在 https://portal.azure.com/ 搜索 Open AI，选择 Open AI resource，然后进入 Keys and Endpoint，复制 Key 1。
+3. [!NOTE] 在 https://portal.azure.com/ 搜索 Open AI，选择 Open AI resource，然后进入 Keys and Endpoint，复制 Key 1。
 
-1.  创建一个 app.py 文件，写入以下代码：
+4. 创建一个 `app.py` 文件，写入以下代码：
 
-1.  import openaiopenai.api_key = "<replace this value with your open ai key or Azure OpenAI key>"openai.api_type = 'azure'openai.api_version = '2023-05-15'openai.api_base = "<endpoint found in Azure Portal where your API key is>"deployment_name = "<deployment name>"# add your completion codeprompt = "Complete the following: Once upon a time there was a"messages = [{"role": "user", "content": prompt}]
+   ```
+   import openai
+   openai.api_key = "<replace this value with your open ai key or Azure OpenAI key>"
+   openai.api_type = 'azure'
+   openai.api_version = '2023-05-15'
+   openai.api_base = "<endpoint found in Azure Portal where your API key is>"
+   deployment_name = "<deployment name>"
+   # add your completion code
+   prompt = "Complete the following: Once upon a time there was a"
+   messages = [{"role": "user", "content": prompt}]
 
-# make completioncompletion = openai.chat.completions.create(model=deployment_name, messages=messages)
+   # make completion
+   completion = openai.chat.completions.create(model=deployment_name, messages=messages)
 
-# print responseprint(completion.choices[0].message.content)
+   # print response
+   print(completion.choices[0].message.content)
+   ```
 
-1.  [!NOTE] 如果使用 Azure OpenAI，需要将 api_type 设置为 azure，并将 api_key 设置为你的 Azure OpenAI 密钥。
+5. [!NOTE] 如果使用 Azure OpenAI，需要将 `api_type` 设置为 `azure`，并将 `api_key` 设置为你的 Azure OpenAI 密钥。
 
-1.  你应该看到类似如下输出：
+6. 你应该看到类似如下输出：
 
-```
- very unhappy _____.
+   ```
+    very unhappy _____.
 
-Once upon a time there was a very unhappy mermaid.
-```
+   Once upon a time there was a very unhappy mermaid.
+   ```
 
 ## 不同类型的提示词，适用于不同任务
 
@@ -198,11 +204,9 @@ Once upon a time there was a very unhappy mermaid.
 
 提示词可以用于各种任务，例如：
 
-+   生成某种类型的文本。比如生成诗歌、测验题目等。
-
-+   查询信息。你可以用提示词查询信息，比如“CORS 在网页开发中是什么意思？”。
-
-+   生成代码。你可以用提示词生成代码，比如写一个用于验证邮箱的正则表达式，甚至生成一个完整的程序，如网页应用。
++ 生成某种类型的文本。比如生成诗歌、测验题目等。
++ 查询信息。你可以用提示词查询信息，比如“CORS 在网页开发中是什么意思？”。
++ 生成代码。你可以用提示词生成代码，比如写一个用于验证邮箱的正则表达式，甚至生成一个完整的程序，如网页应用。
 
 ## 更实用的案例：食谱生成器
 
@@ -278,15 +282,16 @@ Ingredients:
 
 这个结果很棒，我知道该做什么了。此时，有些改进可能会很有用：
 
-+   过滤掉我不喜欢或过敏的食材。
-
-+   生成购物清单，以防我家里没有所有食材。
++ 过滤掉我不喜欢或过敏的食材。
++ 生成购物清单，以防我家里没有所有食材。
 
 针对上述情况，我们可以添加一个额外的提示词：
 
 > “请去掉含有大蒜的菜谱，因为我过敏，并用其他食材替代。同时，请根据我家已有的鸡肉、土豆和胡萝卜，生成购物清单。”
 
 现在你会得到新的结果：
+
+
 
 ```
 1. Roasted Chicken and Vegetables:
@@ -355,17 +360,16 @@ Shopping List:
 
 这就是五个不含大蒜的菜谱，同时还有考虑你已有食材的购物清单。
 
-## 练习 - 构建食谱生成器
+# 练习 - 构建食谱生成器
 
 既然我们演示了一个场景，接下来写代码实现它。按以下步骤操作：
 
-1.  以现有的 app.py 文件为起点
+1. 以现有的 `app.py` 文件为起点
+1. 找到 `prompt` 变量，修改为以下内容：
 
-1.  找到 prompt 变量，修改为以下内容：
+   `prompt = "Show me 5 recipes for a dish with the following ingredients: chicken, potatoes, and carrots. Per recipe, list all the ingredients used"`
 
-1.  prompt = "Show me 5 recipes for a dish with the following ingredients: chicken, potatoes, and carrots. Per recipe, list all the ingredients used"
-
-1.  现在运行代码，你应该看到类似输出：
+1. 现在运行代码，你应该看到类似输出：
 
 ```
 -Chicken Stew with Potatoes and Carrots: 3 tablespoons oil, 1 onion, chopped, 2 cloves garlic, minced, 1 carrot, peeled and chopped, 1 potato, peeled and chopped, 1 bay leaf, 1 thyme sprig, 1/2 teaspoon salt, 1/4 teaspoon black pepper, 1 1/2 cups chicken broth, 1/2 cup dry white wine, 2 tablespoons chopped fresh parsley, 2 tablespoons unsalted butter, 1 1/2 pounds boneless, skinless chicken thighs, cut into 1-inch pieces
@@ -377,19 +381,22 @@ Shopping List:
 -Chicken, Potato, and Carrot Curry: 1 tablespoon vegetable oil, 1 large onion, chopped, 2 cloves garlic, minced, 1 carrot, peeled and chopped, 1 potato, peeled and chopped, 1 teaspoon ground coriander, 1 teaspoon ground cumin, 1/2 teaspoon ground turmeric, 1/2 teaspoon ground ginger, 1/4 teaspoon cayenne pepper, 2 cups chicken broth, 1/2 cup dry white wine, 1 (15-ounce) can chickpeas, drained and rinsed, 1/2 cup raisins, 1/2 cup chopped fresh cilantro
 ```
 
-1.  注意，你的 LLM 是非确定性的，每次运行程序可能得到不同结果。
+1. 注意，你的 LLM 是非确定性的，每次运行程序可能得到不同结果。
 
 很好，我们来看看如何改进。为了改进，我们希望代码更灵活，能调整食材和菜谱数量。
 
-1.  按如下方式修改代码：
+1. 按如下方式修改代码：
 
-1.  no_recipes = input("No of recipes (for example, 5): ")
+```
+no_recipes = input("No of recipes (for example, 5): ")
 
 ingredients = input("List of ingredients (for example, chicken, potatoes, and carrots): ")
 
-# interpolate the number of recipes into the prompt an ingredientsprompt = f"Show me {no_recipes} recipes for a dish with the following ingredients: {ingredients}. Per recipe, list all the ingredients used"
+# interpolate the number of recipes into the prompt and ingredients
+prompt = f"Show me {no_recipes} recipes for a dish with the following ingredients: {ingredients}. Per recipe, list all the ingredients used"
+```
 
-1.  运行测试代码可能如下：
+1. 运行测试代码可能如下：
 
 ```
 No of recipes (for example, 5): 3
@@ -400,146 +407,182 @@ List of ingredients (for example, chicken, potatoes, and carrots): milk,strawber
 -Strawberry milk: milk, strawberries, sugar, vanilla extract
 ```
 
-### 通过添加过滤和购物清单来改进
+## 通过添加过滤和购物清单来改进
 
 我们现在有了一个能生成菜谱的工作应用，且它依赖用户输入，既能调整菜谱数量，也能调整食材。
 
 为了进一步改进，我们想添加：
 
-+   过滤食材。能过滤掉不喜欢或过敏的食材。为此，我们可以修改现有提示词，在末尾添加过滤条件，如下：
+- 过滤食材。能过滤掉不喜欢或过敏的食材。为此，我们可以修改现有提示词，在末尾添加过滤条件，如下：
 
-+   filter = input("Filter (for example, vegetarian, vegan, or gluten-free): ")
+  ```
+  filter = input("Filter (for example, vegetarian, vegan, or gluten-free): ")
 
-prompt = f"Show me {no_recipes} recipes for a dish with the following ingredients: {ingredients}. Per recipe, list all the ingredients used, no {filter}"
+  prompt = f"Show me {no_recipes} recipes for a dish with the following ingredients: {ingredients}. Per recipe, list all the ingredients used, no {filter}"
+  ```
 
-+   上面，我们在提示词末尾添加了 {filter}，并从用户处获取过滤条件。
+  上面，我们在提示词末尾添加了 `filter`，并从用户处获取过滤条件。
 
-+   运行程序的示例输入可能是：
+- 运行程序的示例输入可能是：
+
+  ```
+  No of recipes (for example, 5): 3
+  List of ingredients (for example, chicken, potatoes, and carrots): onion,milk
+  Filter (for example, vegetarian, vegan, or gluten-free): no milk
+
+  1. French Onion Soup
+
+  Ingredients:
+
+  -1 large onion, sliced
+  -3 cups beef broth
+  -1 cup milk
+  -6 slices french bread
+  -1/4 cup shredded Parmesan cheese
+  -1 tablespoon butter
+  -1 teaspoon dried thyme
+  -1/4 teaspoon salt
+  -1/4 teaspoon black pepper
+
+  Instructions:
+
+  1. In a large pot, sauté onions in butter until golden brown.
+  2. Add beef broth, milk, thyme, salt, and pepper. Bring to a boil.
+  3. Reduce heat and simmer for 10 minutes.
+  4. Place french bread slices on soup bowls.
+  5. Ladle soup over bread.
+  6. Sprinkle with Parmesan cheese.
+
+  2. Onion and Potato Soup
+
+  Ingredients:
+
+  -1 large onion, chopped
+  -2 cups potatoes, diced
+  -3 cups vegetable broth
+  -1 cup milk
+  -1/4 teaspoon black pepper
+
+  Instructions:
+
+  1. In a large pot, sauté onions in butter until golden brown.
+  2. Add potatoes, vegetable broth, milk, and pepper. Bring to a boil.
+  3. Reduce heat and simmer for 10 minutes.
+  4. Serve hot.
+
+  3. Creamy Onion Soup
+
+  Ingredients:
+
+  -1 large onion, chopped
+  -3 cups vegetable broth
+  -1 cup milk
+  -1/4 teaspoon black pepper
+  -1/4 cup all-purpose flour
+  -1/2 cup shredded Parmesan cheese
+
+  Instructions:
+
+  1. In a large pot, sauté onions in butter until golden brown.
+  2. Add vegetable broth, milk, and pepper. Bring to a boil.
+  3. Reduce heat and simmer for 10 minutes.
+  4. In a small bowl, whisk together flour and Parmesan cheese until smooth.
+  5. Add to soup and simmer for an additional 5 minutes, or until soup has thickened.
+  ```
+
+- 如你所见，含有牛奶的菜谱被过滤掉了。但如果你乳糖不耐受，可能还想过滤奶酪，所以需要明确说明。
+
+- 生成购物清单。根据已有食材生成购物清单。
+
+- 对此功能，我们可以尝试用一个提示词解决，也可以拆成两个提示词。这里我们尝试后者。建议添加一个额外提示词，但为此需要将第一个提示词的结果作为上下文传给第二个提示词。
+
+- 找到代码中打印第一个提示词结果的部分，下面添加：
+
+  ```
+  old_prompt_result = completion.choices[0].message.content
+  prompt = "Produce a shopping list for the generated recipes and please don't include ingredients that I already have."
+  new_prompt = f"{old_prompt_result} {prompt}"
+  messages = [{"role": "user", "content": new_prompt}]
+
+  completion = openai.Completion.create(engine=deployment_name, messages=messages, max_tokens=1200)
+
+  # print response
+  print("Shopping list:")
+  print(completion.choices[0].message.content)
+  ```
+
+- 注意：
+
+  1. 我们通过将第一个提示词的结果添加到新提示词中，构造了一个新的提示词：
+
+     `new_prompt = f"{old_prompt_result} {prompt}"`
+
+  1. 我们发起了一个新的请求，同时也考虑了第一次提示中请求的令牌数量，这次我们将 `max_tokens` 设置为 1200。
+
+
 
 ```
-No of recipes (for example, 5): 3
-List of ingredients (for example, chicken, potatoes, and carrots): onion,milk
-Filter (for example, vegetarian, vegan, or gluten-free): no milk
-
-1. French Onion Soup
-
-Ingredients:
-
--1 large onion, sliced
--3 cups beef broth
--1 cup milk
--6 slices french bread
--1/4 cup shredded Parmesan cheese
--1 tablespoon butter
--1 teaspoon dried thyme
--1/4 teaspoon salt
--1/4 teaspoon black pepper
-
-Instructions:
-
-1. In a large pot, sauté onions in butter until golden brown.
-2. Add beef broth, milk, thyme, salt, and pepper. Bring to a boil.
-3. Reduce heat and simmer for 10 minutes.
-4. Place french bread slices on soup bowls.
-5. Ladle soup over bread.
-6. Sprinkle with Parmesan cheese.
-
-2. Onion and Potato Soup
-
-Ingredients:
-
--1 large onion, chopped
--2 cups potatoes, diced
--3 cups vegetable broth
--1 cup milk
--1/4 teaspoon black pepper
-
-Instructions:
-
-1. In a large pot, sauté onions in butter until golden brown.
-2. Add potatoes, vegetable broth, milk, and pepper. Bring to a boil.
-3. Reduce heat and simmer for 10 minutes.
-4. Serve hot.
-
-3. Creamy Onion Soup
-
-Ingredients:
-
--1 large onion, chopped
--3 cups vegetable broth
--1 cup milk
--1/4 teaspoon black pepper
--1/4 cup all-purpose flour
--1/2 cup shredded Parmesan cheese
-
-Instructions:
-
-1. In a large pot, sauté onions in butter until golden brown.
-2. Add vegetable broth, milk, and pepper. Bring to a boil.
-3. Reduce heat and simmer for 10 minutes.
-4. In a small bowl, whisk together flour and Parmesan cheese until smooth.
-5. Add to soup and simmer for an additional 5 minutes, or until soup has thickened.
+completion = openai.Completion.create(engine=deployment_name, prompt=new_prompt, max_tokens=1200)
 ```
-
-+   如你所见，含有牛奶的菜谱被过滤掉了。但如果你乳糖不耐受，可能还想过滤奶酪，所以需要明确说明。
-
-+   生成购物清单。根据已有食材生成购物清单。
-
-+   对此功能，我们可以尝试用一个提示词解决，也可以拆成两个提示词。这里我们尝试后者。建议添加一个额外提示词，但为此需要将第一个提示词的结果作为上下文传给第二个提示词。
-
-+   找到代码中打印第一个提示词结果的部分，下面添加：
-
-+   old_prompt_result = completion.choices[0].message.contentprompt = "Produce a shopping list for the generated recipes and please don't include ingredients that I already have."new_prompt = f"{old_prompt_result} {prompt}"messages = [{"role": "user", "content": new_prompt}]
-completion = openai.Completion.create(engine=deployment_name, messages=messages, max_tokens=1200)
-
-# print responseprint("Shopping list:")
-print(completion.choices[0].message.content)
-
-+   注意：
-
-1.  我们通过将第一个提示词的结果添加到新提示词中，构造了一个新的提示词：
-
-1.  new_prompt = f"{old_prompt_result} {prompt}"
-
-1.  我们发起了一个新的请求，同时也考虑了第一次提示中请求的令牌数量，这次我们将 max_tokens 设置为1200。
-
-completion = openai.Completion.create(engine=deployment_name, prompt=new_prompt, max_tokens=1200)```
 
 运行这段代码后，我们得到了以下输出：
 
-```outputNo of recipes (for example, 5): 2List of ingredients (for example, chicken, potatoes, and carrots): apple,flourFilter (for example, vegetarian, vegan, or gluten-free): sugar-Apple and flour pancakes: 1 cup flour, 1/2 tsp baking powder, 1/2 tsp baking soda, 1/4 tsp salt, 1 tbsp sugar, 1 egg, 1 cup buttermilk or sour milk, 1/4 cup melted butter, 1 Granny Smith apple, peeled and grated-Apple fritters: 1-1/2 cups flour, 1 tsp baking powder, 1/4 tsp salt, 1/4 tsp baking soda, 1/4 tsp nutmeg, 1/4 tsp cinnamon, 1/4 tsp allspice, 1/4 cup sugar, 1/4 cup vegetable shortening, 1/4 cup milk, 1 egg, 2 cups shredded, peeled applesShopping list:-Flour, baking powder, baking soda, salt, sugar, egg, buttermilk, butter, apple, nutmeg, cinnamon, allspice```
+```
+No of recipes (for example, 5): 2
+List of ingredients (for example, chicken, potatoes, and carrots): apple,flour
+Filter (for example, vegetarian, vegan, or gluten-free): sugar
+-Apple and flour pancakes: 1 cup flour, 1/2 tsp baking powder, 1/2 tsp baking soda, 1/4 tsp salt, 1 tbsp sugar, 1 egg, 1 cup buttermilk or sour milk, 1/4 cup melted butter, 1 Granny Smith apple, peeled and grated
+-Apple fritters: 1-1/2 cups flour, 1 tsp baking powder, 1/4 tsp salt, 1/4 tsp baking soda, 1/4 tsp nutmeg, 1/4 tsp cinnamon, 1/4 tsp allspice, 1/4 cup sugar, 1/4 cup vegetable shortening, 1/4 cup milk, 1 egg, 2 cups shredded, peeled apples
+Shopping list:
+-Flour, baking powder, baking soda, salt, sugar, egg, buttermilk, butter, apple, nutmeg, cinnamon, allspice
+```
 
-## 改进你的设置到目前为止，我们的代码是可用的，但还有一些调整可以进一步优化。我们应该做的一些事情包括：
+## 改进你的设置
 
-- **将密钥与代码分离**，比如 API 密钥。密钥不应该写在代码里，应该存放在安全的位置。为了将密钥与代码分离，我们可以使用环境变量，并借助像 `python-dotenv` 这样的库从文件中加载它们。代码示例如下：
+目前为止，我们的代码是可用的，但还有一些调整可以进一步优化。我们应该做的一些事情包括：
+
+- `将密钥与代码分离`，比如 API 密钥。密钥不应该写在代码里，应该存放在安全的位置。为了将密钥与代码分离，我们可以使用环境变量，并借助像 `python-dotenv` 这样的库从文件中加载它们。代码示例如下：
 
 1. 创建一个 `.env` 文件，内容如下：
 
-```bashOPENAI_API_KEY=sk-...```
+```bash
+OPENAI_API_KEY=sk-...
+```
 
 > 注意，对于 Azure，你需要设置以下环境变量：
 
-```bashOPENAI_API_TYPE=azureOPENAI_API_VERSION=2023-05-15OPENAI_API_BASE=<replace>```
+```bash
+OPENAI_API_TYPE=azure
+OPENAI_API_VERSION=2023-05-15
+OPENAI_API_BASE=<replace>
+```
 
 在代码中，你可以这样加载环境变量：
 
-```pythonfrom dotenv import load_dotenvload_dotenv()
+```python
+from dotenv import load_dotenv
+load_dotenv()
 
-openai.api_key = os.environ["OPENAI_API_KEY"]```
+openai.api_key = os.environ["OPENAI_API_KEY"]
+```
 
-- **关于令牌长度的说明**。我们需要考虑生成文本所需的令牌数量。令牌是有成本的，所以尽可能节省令牌的使用。例如，我们能否调整提示语，使得使用更少的令牌？
+- `关于令牌长度的说明`。我们需要考虑生成文本所需的令牌数量。令牌是有成本的，所以尽可能节省令牌的使用。例如，我们能否调整提示语，使得使用更少的令牌？
 
 要更改使用的令牌数，可以使用 `max_tokens` 参数。例如，如果你想使用100个令牌，可以这样写：
 
-```pythoncompletion = client.chat.completions.create(model=deployment, messages=messages, max_tokens=100)
+```python
+completion = client.chat.completions.create(model=deployment, messages=messages, max_tokens=100)
+```
 
-+   尝试调整 temperature 参数。temperature 是我们之前没提到但对程序表现很重要的参数。temperature 值越高，输出越随机；值越低，输出越可预测。你可以根据是否需要输出的多样性来决定。
+- 尝试调整 `temperature` 参数。`temperature` 是我们之前没提到但对程序表现很重要的参数。`temperature` 值越高，输出越随机；值越低，输出越可预测。你可以根据是否需要输出的多样性来决定。
 
-+   要调整 temperature，可以使用 temperature 参数。例如，如果你想设置 temperature 为0.5，可以这样写：
+- 要调整 `temperature`，可以使用 `temperature` 参数。例如，如果你想设置 `temperature` 为0.5，可以这样写：
 
-+   completion = client.chat.completions.create(model=deployment, messages=messages, temperature=0.5)
+```python
+completion = client.chat.completions.create(model=deployment, messages=messages, temperature=0.5)
+```
 
-+   注意，越接近1.0，输出越多样化。
+注意，越接近1.0，输出越多样化。
 
 ## 任务
 
@@ -547,11 +590,11 @@ openai.api_key = os.environ["OPENAI_API_KEY"]```
 
 以下是一些建议：
 
-+   调整配方生成器应用，进一步改进它。尝试不同的 temperature 值和提示语，看看能得到什么效果。
+- 调整配方生成器应用，进一步改进它。尝试不同的 `temperature` 值和提示语，看看能得到什么效果。
 
-+   制作一个“学习伙伴”应用。这个应用可以回答某个主题的问题，比如 Python，你可以设计提示语如“Python 中某个主题是什么？”，或者“给我展示某个主题的代码”等。
+- 制作一个“学习伙伴”应用。这个应用可以回答某个主题的问题，比如 Python，你可以设计提示语如“Python 中某个主题是什么？”，或者“给我展示某个主题的代码”等。
 
-+   历史机器人，让历史变得生动。让机器人扮演某个历史人物，向它提问关于其生平和时代的问题。
+- 历史机器人，让历史变得生动。让机器人扮演某个历史人物，向它提问关于其生平和时代的问题。
 
 ## 解决方案
 
@@ -560,14 +603,17 @@ openai.api_key = os.environ["OPENAI_API_KEY"]```
 下面是一个起始提示，看看你如何使用并调整它以符合你的需求。
 
 ```
-- &quot;You&#x27;re an expert on the Python language
+- "You're an expert on the Python language
 
     Suggest a beginner lesson for Python in the following format:
 
     Format:
+
     - concepts:
+
     - brief explanation of the lesson:
-    - exercise in code with solutions&quot;
+
+    - exercise in code with solutions";
 ```
 
 ### 历史机器人
@@ -575,28 +621,29 @@ openai.api_key = os.environ["OPENAI_API_KEY"]```
 以下是一些你可以使用的提示语：
 
 ```
-- &quot;You are Abe Lincoln, tell me about yourself in 3 sentences, and respond using grammar and words like Abe would have used&quot;
-- &quot;You are Abe Lincoln, respond using grammar and words like Abe would have used:
+- "You are Abe Lincoln, tell me about yourself in 3 sentences, and respond using grammar and words like Abe would have used";
 
-   Tell me about your greatest accomplishments, in 300 words&quot;
+- "You are Abe Lincoln, respond using grammar and words like Abe would have used:
+
+   Tell me about your greatest accomplishments, in 300 words";
 ```
 
 ## 知识检测
 
-temperature 参数的作用是什么？
+`temperature` 参数的作用是什么？
 
-1.  它控制输出的随机程度。
+1. 它控制输出的随机程度。
 
-1.  它控制响应的长度。
+1. 它控制响应的长度。
 
-1.  它控制使用的令牌数量。
+1. 它控制使用的令牌数量。
 
 ## 🚀 挑战
 
-在完成任务时，尝试调整 temperature，分别设置为0、0.5和1。记住，0表示最不多样，1表示最多样。哪个值最适合你的应用？
+在完成任务时，尝试调整 `temperature`，分别设置为0、0.5和1。记住，0表示最不多样，1表示最多样。哪个值最适合你的应用？
 
 ## 干得好！继续学习
 
 完成本课后，查看我们的[生成式 AI 学习合集](https://aka.ms/genai-collection?WT.mc_id=academic-105485-koreyst)，继续提升你的生成式 AI 知识！
 
-[接下来进入第](https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh/07-building-chat-applications/README.md?WT.mc_id=academic-105485-koreyst)7课，我们将学习如何构建聊天应用！
+[接下来进入第 7 课](https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh/07-building-chat-applications/README.md?WT.mc_id=academic-105485-koreyst)，我们将学习如何构建聊天应用！

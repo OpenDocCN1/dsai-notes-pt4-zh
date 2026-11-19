@@ -1,10 +1,11 @@
+
 # 用 Codex 免费打通 Figma，自动生成全套设计规范，1 分钟把UI设计稿变成网页
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/JMXIdhA1HoVLVLxixgEcaPACn7x](https://qqs7y1hozd1.feishu.cn/docx/JMXIdhA1HoVLVLxixgEcaPACn7x)
 
-#  一、安装与配置
+## 一、安装与配置
 
-### **第一步：下载Codex**
+### 第一步：下载 Codex
 
 mac下载地址：https://openai.com/zh-Hans-CN/codex/
 
@@ -19,7 +20,7 @@ windows下载地址：https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-CN&gl
 直接复制下面这段话，粘贴到 Codex 的输入框中，然后按回车发送：
 
 ```
-请利用你的本地访问权限，帮我找到 Codex 的本地配置文件（通常在 ~/.codex/config.toml），并在里面加上 Figma 官方的 MCP 服务配置。配置内容为：[mcp_servers.figma] url = &#x27;https://mcp.figma.com/mcp&#x27;。修改完成后请告诉我。
+请利用你的本地访问权限，帮我找到 Codex 的本地配置文件（通常在 ~/.codex/config.toml），并在里面加上 Figma 官方的 MCP 服务配置。配置内容为：[mcp_servers.figma] url = 'https://mcp.figma.com/mcp'。修改完成后请告诉我。
 ```
 
 Codex 会自动读取并修改它自己的配置文件，修改成功后它会回复你。
@@ -42,9 +43,9 @@ Codex 会自动读取并修改它自己的配置文件，修改成功后它会�
 
 授权完成后，你就可以直接在刚才的输入框里把 Figma 的设计稿链接丢给它了。
 
-#  二、Codex打通Figma能做什么？
+## 二、Codex打通Figma能做什么？
 
-## **案例一：一键设计稿转代码**
+### 案例一：一键设计稿转代码
 
 我找到了我几年前做的UI设计稿链接发给Codex，直接复制figma链接：
 
@@ -64,7 +65,7 @@ Codex 会自动读取并修改它自己的配置文件，修改成功后它会�
 
 ![](img/2b4b95e1b505388ad31fb29c76215751.png)
 
-## **案例二：自动提取设计规范**
+### 案例二：自动提取设计规范
 
 我找了一个设计规范的参考图发给Codex，让他根据我在figma设计的UI生成设计规范，并设计到figma中，参考图可以在花瓣随便找一张图试试，提示词如下：
 
@@ -86,7 +87,7 @@ Codex 会自动读取并修改它自己的配置文件，修改成功后它会�
 
 ![](img/cd4bc28795f7502b70501da0ef1f0a3f.png)
 
-## **案例三：读取设计规范生成UI**
+### 案例三：读取设计规范生成UI
 
 我把字节跳动的设计规范发给Codex，让他根据设计规范生成页面，看看效果怎么样。设计规范我知识库里面有，需要的直接在我知识库里面找。
 
@@ -112,9 +113,13 @@ Codex 会自动读取并修改它自己的配置文件，修改成功后它会�
 
 还有很多玩法，大家可以自行探索哦，很有意思！
 
-#  三、Codex和Claude Code连Figma Mcp有什么区别？
+## 三、Codex和Claude Code连Figma Mcp有什么区别？
 
-**1、拿到的数据完全一致**不管**你是用 Codex** 还是 Claude Code 连 Figma MCP，在Figma 的数据没有任何区别。看到的都是一样的图层结构、一样的颜色、一样的 Auto Layout 参数。2、写的代码不一样这是最核心的差异。Cl**aude Code（Cl**aude 3.5/3.7 Sonnet）：Claude 目前口碑极佳。它对 UI 还原度、CSS 细节、特别是 Tailwind 和复杂 React 组件拆分的理解，它写出来的 UI 代码成功率很高，微调少。Codex（GPT 系列模型）：它的逻辑能力极强，但在视觉 UI 风格的生成上，会比较规矩或者相对平庸一点。不过，如果你让它结合后端的复杂业务逻辑（比如“照着这个 Figma 写个页面，顺便把连接数据库的 API 一起写了”），它的全栈统筹能力非常出色。3、Codex免费额度多我感觉我用了蛮多的了，但是这里的免费额度还有55%这么多，用起来蛮爽的。
+1、拿到的数据完全一致不管你是用 Codex 还是 Claude Code 连 Figma MCP，在Figma 的数据没有任何区别。看到的都是一样的图层结构、一样的颜色、一样的 Auto Layout 参数。
+
+2、写的代码不一样这是最核心的差异。Claude Code（Claude 3.5/3.7 Sonnet）：Claude 目前口碑极佳。它对 UI 还原度、CSS 细节、特别是 Tailwind 和复杂 React 组件拆分的理解，它写出来的 UI 代码成功率很高，微调少。Codex（GPT 系列模型）：它的逻辑能力极强，但在视觉 UI 风格的生成上，会比较规矩或者相对平庸一点。不过，如果你让它结合后端的复杂业务逻辑（比如“照着这个 Figma 写个页面，顺便把连接数据库的 API 一起写了”），它的全栈统筹能力非常出色。
+
+3、Codex免费额度多我感觉我用了蛮多的了，但是这里的免费额度还有55%这么多，用起来蛮爽的。
 
 ![](img/3800fa8087540a785043969ccebc97df.png)
 

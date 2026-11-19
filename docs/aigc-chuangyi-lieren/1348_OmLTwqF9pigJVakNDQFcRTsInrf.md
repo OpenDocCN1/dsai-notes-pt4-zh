@@ -1,3 +1,4 @@
+
 # 20250515-退订即梦、可灵、Vidu、Mj，只因我有了Lovart
 
 > 来源：[https://aigcreative.feishu.cn/docx/Nj7xdkmEronPQ0xrwMtcl9f2nKd](https://aigcreative.feishu.cn/docx/Nj7xdkmEronPQ0xrwMtcl9f2nKd)
@@ -199,63 +200,51 @@ Lovart还在继续工作：
 任务完成了，Lovart还给自己做了一个总结，来夸夸自己：
 
 > I've completed the luxury perfume advertisement project for "Éclat Nocturne" as requested. Here's what I've created for you:
-
-## Storyboard Creation
-
+>
+> ## Storyboard Creation
+>
 > I've developed a comprehensive storyboard for your luxury perfume advertisement that captures the essence of nocturnal elegance. The storyboard includes:
-
-+   A detailed story narrative focusing on the elegant female model and the sculptural perfume bottle
-
-+   Character design descriptions for the sophisticated model
-
-+   Scene descriptions for the moonlit terrace, crystal room, and velvet lounge
-
-+   10 detailed shot descriptions with technical specifications
-
-## Visual Assets
-
+>
+> +   A detailed story narrative focusing on the elegant female model and the sculptural perfume bottle
+> +   Character design descriptions for the sophisticated model
+> +   Scene descriptions for the moonlit terrace, crystal room, and velvet lounge
+> +   10 detailed shot descriptions with technical specifications
+>
+> ## Visual Assets
+>
 > I've generated all the necessary visual elements:
-
-+   10 high-quality storyboard images that follow the narrative progression
-
-+   A beautifully designed HTML storyboard presentation that organizes all the shots with their descriptions in an elegant layout
-
-## Video Production
-
+>
+> +   10 high-quality storyboard images that follow the narrative progression
+> +   A beautifully designed HTML storyboard presentation that organizes all the shots with their descriptions in an elegant layout
+>
+> ## Video Production
+>
 > I've created a complete video advertisement by:
-
-1.  Converting each storyboard frame into a short video clip using the Kling Video Generator
-
-1.  Recording a sophisticated voiceover that says "Éclat Nocturne. Embrace the Night." with the perfect elegant tone
-
-1.  Combining all video clips and audio into a seamless final advertisement
-
+>
+> 1.  Converting each storyboard frame into a short video clip using the Kling Video Generator
+> 1.  Recording a sophisticated voiceover that says "Éclat Nocturne. Embrace the Night." with the perfect elegant tone
+> 1.  Combining all video clips and audio into a seamless final advertisement
+>
 > You can view the final [advertisement here: Écl](https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4)at Nocturne Luxury Perfume Advertisement
-
+>
 > And you can review the complete storyboard presentation here: Éclat Nocturne Storyboard
-
+>
 > The advertisement successfully showcases both the perfume bottle and the elegant model from your reference images, presenting them in a sophisticated narrative that emphasizes luxury, elegance, and nocturnal allure.
-
+>
 > I can see that we've successfully completed the luxury perfume advertisement project for "Éclat Nocturne" as requested by the user. Let me review what we've accomplished:
-
-1.  Created a detailed storyboard with narrative, character descriptions, and scene settings
-
-1.  Generated 10 high-quality storyboard images
-
-1.  Compiled these into an elegant HTML storyboard presentation
-
-1.  Created 10 video clips from the storyboard frames
-
-1.  Recorded a sophisticated voiceover for the tagline
-
-1.  Combined all elements into a final advertisement video
-
+>
+> 1.  Created a detailed storyboard with narrative, character descriptions, and scene settings
+> 1.  Generated 10 high-quality storyboard images
+> 1.  Compiled these into an elegant HTML storyboard presentation
+> 1.  Created 10 video clips from the storyboard frames
+> 1.  Recorded a sophisticated voiceover for the tagline
+> 1.  Combined all elements into a final advertisement video
+>
 > All requested deliverables have been completed and provided to the user:
-
-+   The final advertisement video: https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4
-
-+   The storyboard presentation: https://models-online-persist.shakker.cloud/agent_images/4da7e5c0-ef70-410e-bcab-45bdc526de51.jpeg
-
+>
+> +   The final advertisement video: https://models-online-persist.shakker.cloud/agent_images/6cd191b6-a9e7-4e1a-877d-42f2fc1611a9.mp4
+> +   The storyboard presentation: https://models-online-persist.shakker.cloud/agent_images/4da7e5c0-ef70-410e-bcab-45bdc526de51.jpeg
+>
 > Since we've successfully completed all aspects of the user's request, I'll terminate the interaction.
 
 ### 四：可视化任务链、无边界画布与强大的二次编辑工具。
@@ -276,11 +265,13 @@ Lovart的设计体验非常流畅。
 
 ![](img/5f947ef3a72ad61ee485d131ec3e2697.png)
 
+
+
 ![](img/5616e88847879130e368f0fd3c7c5436.png)
 
 同时，这意味着，设计师和AI可以在同一个画布上高效协作，进行精细化的二次修改和迭代，比如：高清修复、扩图、去除背景、去除、修复、涂抹等，让AI的创作真正融入到实际工作流中。
 
-### 五：专业级交付格式——无缝对接现有工作流。
+## 五：专业级交付格式——无缝对接现有工作流。
 
 设计的最终目的是交付和应用。
 
@@ -288,7 +279,7 @@ Lovart深刻理解这一点，它支持可分层交付，这意味着用户获�
 
 如：右侧的Adobe Illustrator对导出的SVG格式的图片进行编辑：
 
-**设计师的福音来了！**
+设计师的福音来了！
 
 ![](img/97ce6b5532af6ac5f4da5229a66f4872.png)
 
@@ -296,7 +287,7 @@ Lovart深刻理解这一点，它支持可分层交付，这意味着用户获�
 
 无论是JPG、PNG还是SVG等多种专业格式，Lovart都能提供，确保设计成果能直接投入后续的精修或生产环节。
 
-### 六：图文分层与便捷文字修改——攻克AI生图编辑难题。
+## 六：图文分层与便捷文字修改——攻克AI生图编辑难题。
 
 以往AI生成的图片，文字部分往往难以编辑，这是业界的一大痛点。
 
@@ -306,7 +297,7 @@ Lovart通过图文分层技术有效解决了这一问题。例如下面案例�
 
 ![](img/1fa3c5e5e705377dbf7d4d7e562f648b.png)
 
-> 技巧：在生成包含文字的海报等设计后，用户可以直接在对话框中指示Lovart（例如输入“generate an editable text version of this poster”），系统会自动分离图像与文字层，允许用户像在常规设计软件中一样，拖动、编辑和修改文字内容，极大提升了AI生成设计稿的实用性。
+> 技巧：在生成包含文字的海报等设计后，用户可以直接在对话框中指示Lovart（例如输入`generate an editable text version of this poster`），系统会自动分离图像与文字层，允许用户像在常规设计软件中一样，拖动、编辑和修改文字内容，极大提升了AI生成设计稿的实用性。
 
 这简直不要太方便！这是目前能看到的第一个能图文分层与文字修改的产品！
 

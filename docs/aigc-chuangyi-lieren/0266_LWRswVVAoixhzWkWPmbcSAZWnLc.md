@@ -1,14 +1,13 @@
+
 # 社交名片 | AI一键生成高颜值社交名片
 
 > 来源：[https://aigcreative.feishu.cn/docx/MSoad7oETozKxxxJM3acrx6fnCc](https://aigcreative.feishu.cn/docx/MSoad7oETozKxxxJM3acrx6fnCc)
-
 > 来源：👸号：一泽Eze
-
 > 链接：https://mp.weixin.qq.com/s/7vrhxQYdgQ_WpGK6Xi49aw
 
 ![](img/936fa2175be66f9b598f198b6aec9151.png)
 
-```
+```text
 // 作者：一泽Eze
 // 名称：个人社交名片生成器
 // 用途：收集用户的个人简介，生成美观的个人社交名片

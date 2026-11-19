@@ -1,3 +1,4 @@
+
 # 个性化推荐的告知
 
 > 来源：[https://docs.feishu.cn/docx/QtrjdIBuToKhTQxMxaDc9YitnHe](https://docs.feishu.cn/docx/QtrjdIBuToKhTQxMxaDc9YitnHe)
@@ -26,7 +27,7 @@
 
 ![](img/83685bdc11afbb47fe50f36bbacfadc5.png)
 
--答7：算法备案平台可以抄的作业不少。
+**-答7：**算法备案平台可以抄的作业不少。
 
 ![](img/b48115929ef57ee35e37cefbc32adcb8.png)
 

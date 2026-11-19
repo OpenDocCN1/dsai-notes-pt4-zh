@@ -1,3 +1,4 @@
+
 # 【技术向】一文讲透如何用SD制作出来高质量艺术二维码
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/OUYOdKSwzoHS8pxpeRNcRcdqnHh](https://xuqiwei1986.feishu.cn/docx/OUYOdKSwzoHS8pxpeRNcRcdqnHh)
@@ -46,13 +47,13 @@
 
 先说明，这个文章不太适合没有接触过SD的新手小白，学习起来难度比较大。
 
-**而且我也不想从怎么安装SD来教了，**市面上太多教程了，动手搜一搜就能找得到。
+而且我也不想从怎么安装SD来教了，市面上太多教程了，动手搜一搜就能找得到。
 
 本篇文章，主要会从五个方面来简单的把艺术二维码的前世今生都讲一遍。
 
 废话不多说，正文往下看。
 
-# 艺术二维码起源
+## 艺术二维码起源
 
 ![](img/429ddf02d7ba27efbe2bbe2c8ed571ca.png)
 
@@ -72,7 +73,7 @@
 
 自此开启了艺术二维码的新篇章。
 
-# 技术的迭代过程
+## 技术的迭代过程
 
 像上文中提到了新技术之后，各路大神也都开始研究起来了怎么生成所谓的“艺术二维码”。
 
@@ -106,7 +107,7 @@
 
 当然有，一些大佬开源了一些好用的QR模型，加上一些参数调整也能够做出相当不错的效果，比如之前我做出来的效果。
 
-# 保姆级复刻教程
+## 保姆级复刻教程
 
 以下面图为例，我会一步一步拆解这张图是怎么做出来，每个参数起到的是什么作用。
 
@@ -114,7 +115,7 @@
 
 ![](img/a44470a4d8c79cbc82dcb5f1c1f44e12.png)
 
-## 二维码参数
+### 二维码参数
 
 遇到图片二维码可以用草料二维码进行解析，得出来二维码链接之后可以进行下一步操作。
 
@@ -140,7 +141,7 @@
 
 ![](img/7f64d61861918fffe5e8217027eeb62c.png)
 
-## 二维码样式
+### 二维码样式
 
 ![](img/d3867ae2764e97d5afb10814ac46bc46.png)
 
@@ -150,25 +151,25 @@
 
 不同的二维码样式出来的效果也不同，如上图（来自安东尼大佬）
 
-## 正面提示词：
+### 正面提示词：
 
-1girl, solo ,(flower:1.3) , long skirt, dark background, long white hair , angel, backlighting, Dark background, <lora:百花酿:1>,
+`1girl, solo ,(flower:1.3) , long skirt, dark background, long white hair , angel, backlighting, Dark background, <lora:百花酿:1>,`
 
 正面提示词这块可以加上，Ribbons, feathers, birds, flowers, lace, snowflakes, waves, leaves, architecture,hair等提示词，可以让二维码融合的更好，更具有美感，一次性加上其中一种元素即可。
 
 百花酿的lora作用也是让画面中增加更多花朵元素，同理，如果有其他元素的lora也可以添加进去。
 
-##  负面提示词：
+### 负面提示词：
 
-nsfw, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, nsfw,(worst quality:1.4), (low quality:1.4), (normal quality:1.4), ng deepnegative _v175t,text,logo,watermark,signature, bad_prompt_version2-neg, badhandv4, By bad artist -neg, verybadimagenegative_v1.3,
+`nsfw, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, nsfw,(worst quality:1.4), (low quality:1.4), (normal quality:1.4), ng deepnegative _v175t,text,logo,watermark,signature, bad_prompt_version2-neg, badhandv4, By bad artist -neg, verybadimagenegative_v1.3,`
 
 负面提示词是通用负面提示词，没什么好讲的。
 
-唯一要提的是里面用到了很多Embedding嵌入型模型，bad_prompt_version2-neg, badhandv4, By bad artist -neg, verybadimagenegative_v1.3,这些全部都是，如果你没有下载这些模型，单单使用这些提示词是不起作用的。
+唯一要提的是里面用到了很多Embedding嵌入型模型，`bad_prompt_version2-neg`, `badhandv4`, `By bad artist -neg`, `verybadimagenegative_v1.3`,这些全部都是，如果你没有下载这些模型，单单使用这些提示词是不起作用的。
 
-## 尺寸
+### 尺寸
 
-Size: 880x880
+`Size: 880x880`
 
 尺寸不建议超过1024*1024，因为会额外出现很多额外的，令人意想不到的内容。
 
@@ -176,35 +177,35 @@ Size: 880x880
 
 768*768倒是个不错的选择，后期可以通过高清修复进行放大。
 
-## 模型
+### 模型
 
-Model hash: cbfba64e66, Model: 动漫插画小清新CounterfeitV30_v30,
+`Model hash: cbfba64e66, Model: 动漫插画小清新CounterfeitV30_v30`
 
 模型这块可以多尝试一下不同类型的模型，个人测试下来，动漫模型都有较不错的效果。
 
-## 控制器1
+### 控制器1
 
-ControlNet 1: "preprocessor: tile_resample, model: control_v11f1e_sd15_tile [a371b31b]
+`ControlNet 1: "preprocessor: tile_resample, model: control_v11f1e_sd15_tile [a371b31b]`
 
-第一个模型使用的是tile模型，目的是在画面生成的过程中控制生成的前一部分，以免让算法随意发挥。
+第一个模型使用的是`tile`模型，目的是在画面生成的过程中控制生成的前一部分，以免让算法随意发挥。
 
 简单的做个比喻，如果你想要一棵树木按照自己的想法生长就要在不同的成长阶段进行修剪。
 
 现在我们的目的也是一样的，我想让生成出来的图像按照我们预想的方向发展，那我们就要对其进行控制。
 
-tile模型的作用很多，可以在图像放大的过程中增加一定的细节，也可以很好的控制图像的形状。
+`tile`模型的作用很多，可以在图像放大的过程中增加一定的细节，也可以很好的控制图像的形状。
 
-在这里也可以使用Brightness模型进行控制，但是我使用下来感觉tile效果更好一些。
+在这里也可以使用`Brightness`模型进行控制，但是我使用下来感觉`tile`效果更好一些。
 
-## 控制器1权重
+### 控制器1权重
 
-weight: 0.4
+`weight: 0.4`
 
-tile模型在生图过程中起到的作用太过明显，需要把权重降低，避免对画面起到太过明显的作用。
+`tile`模型在生图过程中起到的作用太过明显，需要把权重降低，避免对画面起到太过明显的作用。
 
-## 控制器1起始时间
+### 控制器1起始时间
 
-starting/ending: (0, 0.25)
+`starting/ending: (0, 0.25)`
 
 这个就对应了小树苗的不同生长阶段，也就是生图的前1/4阶段，这块至关重要。
 
@@ -216,19 +217,19 @@ starting/ending: (0, 0.25)
 
 需要给到另一个控制器一定的发挥空间。
 
-## 控制器2
+### 控制器2
 
-ControlNet 0: "preprocessor: inpaint_global_harmonious, model: control_v1p_sd15_qrcode_monster [a6e58995]
+`ControlNet 0: "preprocessor: inpaint_global_harmonious, model: control_v1p_sd15_qrcode_monster [a6e58995]`
 
 另一个模型就相当重要了，生图的大多数时间都要用这个模型进行控制。
 
-qrcode_monster模型可以让二维码发生更加自然的变化。
+`qrcode_monster`模型可以让二维码发生更加自然的变化。
 
-## 控制器2权重
+### 控制器2权重
 
-weight: 1.6
+`weight: 1.6`
 
-与tile模型不同，使用qrcode_monster模型需要更加高的权重才能发挥出更好的效果。如下图qrcode_monster模型在不同权重下的效果展示（来自赛博迪克朗）
+与`tile`模型不同，使用`qrcode_monster`模型需要更加高的权重才能发挥出更好的效果。如下图`qrcode_monster`模型在不同权重下的效果展示（来自赛博迪克朗）
 
 ![](img/3bd5cb0d38827d16f2f3ed61dbb12975.png)
 
@@ -236,11 +237,11 @@ weight: 1.6
 
 同样的，低权重下的图片美感更强，高权重下美感更弱。
 
-## 控制器2起始时间
+### 控制器2起始时间
 
-starting/ending: (0.25, 1)
+`starting/ending: (0.25, 1)`
 
-前部分已经用其他模型进行控制了，那么后半部分就需要用qrcode_monster模型进行控制了。
+前部分已经用其他模型进行控制了，那么后半部分就需要用`qrcode_monster`模型进行控制了。
 
 如果想让算法有自由发挥的空间。
 
@@ -248,23 +249,23 @@ starting/ending: (0.25, 1)
 
 结束时间可以控制在0.8-1之间，可以提早结束控制让AI算法有一定的自由发挥空间。
 
-## 高清修复
+### 高清修复
 
-Hires upscale: 2, Hires upscaler: R-ESRGAN 4x+
+`Hires upscale: 2, Hires upscaler: R-ESRGAN 4x+`
 
 如果按照上述的参数和方法成功做出来了可以扫描的二维码。
 
-但是想要放大图像，可以启用高清修复，放大倍数默认*2，放大算法使用R-ESRGAN 4x+，重绘幅度调整到0.4，这里千万不能调的太高。
+但是想要放大图像，可以启用高清修复，放大倍数默认*2，放大算法使用`R-ESRGAN 4x+`，重绘幅度调整到0.4，这里千万不能调的太高。
 
-# 用到的模型和工具
+## 用到的模型和工具
 
 安东尼大佬的二维码工具包
 
-控制光照的controlnet模型
+控制光照的`ControlNet`模型
 
 https://huggingface.co/ioclab/ioc-controlnet/tree/main/models
 
-控制二维码亮度的controlnet模型
+控制二维码亮度的`ControlNet`模型
 
 https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster
 
@@ -276,7 +277,7 @@ https://civitai.com/models/4468/counterfeit-v30
 
 https://civitai.com/models/88207
 
-# 结语
+## 结语
 
 本篇文章自认为讲的还算清楚，把艺术二维码的制作方法还有要点都列了出来。
 

@@ -1,3 +1,4 @@
+
 # 一手实测腾讯混元大模型：重逻辑降幻觉，鹅厂自家应用已加持
 
 > 来源：[https://agijuejin.feishu.cn/docx/OLgVdDnGRo7aF4xXmAecfG9cnIg](https://agijuejin.feishu.cn/docx/OLgVdDnGRo7aF4xXmAecfG9cnIg)
@@ -14,7 +15,7 @@
 
 ![](img/cbf5a15f9ea594f02cad0c1ce2ceadfd.png)
 
-**例如，早**在谷歌云发布AI相关的会议总结产品之前，腾讯会议早就上线了基于智能录制的智能纪要、智能章节、发言人回顾等能力。
+**例如**，早在谷歌云发布AI相关的会议总结产品之前，腾讯会议早就上线了基于智能录制的智能纪要、智能章节、发言人回顾等能力。
 
 ![](img/8fc8a49bba59b5bd1ca23fe53aa4b7dc.png)
 
@@ -94,11 +95,54 @@
 
 具体代码如下：
 
-```
-css
-代码解读
-复制代码
-import randomdef create_minesweeper_board(height, width, num_mines):    board = [[&#x27;0&#x27; for _ in range(width)] for _ in range(height)]    mines = set()    while len(mines) &lt; num_mines:        row = random.randint(0, height - 1)        col = random.randint(0, width - 1)        if (row, col) not in mines:            mines.add((row, col))            board[row][col] = &#x27;X&#x27;    for row, col in mines:        for r in range(row - 1, row + 2):            for c in range(col - 1, col + 2):                if (0 &lt;= r&lt; height) and (0 &lt;= c&lt; width) and (board[r][c] != &#x27;X&#x27;):                    board[r][c] = str(int(board[r][c]) + 1)    return boarddef print_board(board):    for row in board:        print(&#x27; &#x27;.join(row))    print()def play_minesweeper(board):    while True:        print_board(board)        row = int(input(&#x27;Enter row (0-{}): &#x27;.format(len(board)))) - 1        col = int(input(&#x27;Enter column (0-{}): &#x27;.format(len(board)))) - 1        if board[row][col] == &#x27;X&#x27;:            if random.random() &lt; 0.1:                board[row][col] = str(int(board[row][col]) + 1)                print_board(board)        else:            print(&#x27;You win!&#x27;)            breakif name == &#x27;__main__&#x27;:    height = int(input(&#x27;Enter board height: &#x27;))    width = int(input(&#x27;Enter board width: &#x27;))    num_mines = int(input(&#x27;Enter number of mines: &#x27;))    board = create_minesweeper_board(height, width, num_mines)    print_board(board)    play_minesweeper(board)
+```python
+import random
+
+
+def create_minesweeper_board(height, width, num_mines):
+    board = [['0' for _ in range(width)] for _ in range(height)]
+    mines = set()
+    while len(mines) < num_mines:
+        row = random.randint(0, height - 1)
+        col = random.randint(0, width - 1)
+        if (row, col) not in mines:
+            mines.add((row, col))
+            board[row][col] = 'X'
+    for row, col in mines:
+        for r in range(row - 1, row + 2):
+            for c in range(col - 1, col + 2):
+                if (0 <= r < height) and (0 <= c < width) and (board[r][c] != 'X'):
+                    board[r][c] = str(int(board[r][c]) + 1)
+    return board
+
+
+def print_board(board):
+    for row in board:
+        print(' '.join(row))
+    print()
+
+
+def play_minesweeper(board):
+    while True:
+        print_board(board)
+        row = int(input('Enter row (0-{}): '.format(len(board)))) - 1
+        col = int(input('Enter column (0-{}): '.format(len(board)))) - 1
+        if board[row][col] == 'X':
+            if random.random() < 0.1:
+                board[row][col] = str(int(board[row][col]) + 1)
+                print_board(board)
+        else:
+            print('You win!')
+            break
+
+
+if __name__ == '__main__':
+    height = int(input('Enter board height: '))
+    width = int(input('Enter board width: '))
+    num_mines = int(input('Enter number of mines: '))
+    board = create_minesweeper_board(height, width, num_mines)
+    print_board(board)
+    play_minesweeper(board)
 ```
 
 还贴心地给出了代码解释：
@@ -125,7 +169,7 @@ import randomdef create_minesweeper_board(height, width, num_mines):    board = 
 
 **训练**上，混元和其他大模型的流程“大差不差”，也同样包括大规模自监督预训练、有监督精调、强化学习优化三个步骤。
 
-**数据**上**，前后一**共用了超过2T tokens的语料对大模型进行训练，来提升模型的知识和逻辑能力，目前训练数据截止到今年7月，还会随着升级不断更新。
+**数据**上，前后一共用了超过2T tokens的语料对大模型进行训练，来提升模型的知识和逻辑能力，目前训练数据截止到今年7月，还会随着升级不断更新。
 
 ![](img/8e2f3f84594b5e88605d874164de0b72.png)
 
@@ -137,7 +181,7 @@ import randomdef create_minesweeper_board(height, width, num_mines):    board = 
 
 但在实际应用中，这类方法存在很大局限性，因为大模型自身回答的真实性并没有增加，本质上依旧存在风险。
 
-为此腾讯自研了一种**基于探真的方法****，在预训练阶**段去优化大模型的目标函数，成功将大模型出现幻觉的比率降低了30~50%。
+为此腾讯自研了一种**基于探真的方法**，在**预训练阶段**去优化大模型的目标函数，成功将大模型出现幻觉的比率降低了30~50%。
 
 例如这是基于“写一篇作文，尝试论证关羽和秦琼谁的战斗力更强”提示词，各模型的回答对比：
 
@@ -153,7 +197,7 @@ import randomdef create_minesweeper_board(height, width, num_mines):    board = 
 
 接下来，是**长难任务**的处理。
 
-腾讯表示，团队主要针对**位置编码****进行了优**化，来提升文本处理效果和性能，再结合指令跟随能力让产生的内容更符合要求。
+腾讯表示，团队主要针对**位置编码**进行了**优化**，来提升文本处理效果和性能，再结合指令跟随能力让产生的内容更符合要求。
 
 这样无论是未来生产学术论文、还是撰写法律报告，就不用担心混元出现“基本要求都不对”这种bug了。
 
@@ -167,7 +211,7 @@ import randomdef create_minesweeper_board(height, width, num_mines):    board = 
 
 虽然也可以让大模型死记硬背中小学数学题，但要想真正让它学会“打开思路”，还需要增强上下文能力和行业知识水平。
 
-**为此，腾**讯**也基于自**研方法，让混元大模型具备了问题分解和分步推理能力。
+**为此，腾讯也基于自研方法**，让混元大模型具备了问题分解和分步推理能力。
 
 例如，用提示词“我们公司去年有员工315人，其中90后占全公司人数的1/5。今年又招进了一批90后，让90后人数占到了全公司人数的30%。所以今年招了多少90后？”询问各个大模型时，这是它们的回答：
 
@@ -191,7 +235,7 @@ import randomdef create_minesweeper_board(height, width, num_mines):    board = 
 
 ![](img/3fd67fb066078a1cc9e13a28589a81ea.png)
 
-**又比如，**开头提到的，腾讯前段时间已经内置到腾讯会议中的“开会摸鱼神器”——AI小助手。
+**又比如**，开头提到的，腾讯前段时间已经内置到腾讯会议中的“开会摸鱼神器”——AI小助手。
 
 如果听不懂同事在会上吵什么架（手动狗头），或是开会时走神了，只需要和AI小助手说出自己的疑惑，就能让它快速提取核心信息，总结会议要点：
 

@@ -1,3 +1,4 @@
+
 # Nature子刊，优于AlphaFold，全原子采样，一种预测肽结构的AI方法
 
 > 来源：[https://agijuejin.feishu.cn/docx/JplPd5c4doYA3pxd6qWckeshnId](https://agijuejin.feishu.cn/docx/JplPd5c4doYA3pxd6qWckeshnId)
@@ -10,15 +11,19 @@
 
 编辑 | 萝卜皮
 
+## 引言
+
 深度学习方法推动了生物分子结构单态预测的重大进展。然而，生物分子的功能取决于它们可以呈现的构象范围。对于肽来说尤其如此，肽是一类高度灵活的分子，参与多种生物过程，作为治疗手段备受关注。
 
-多伦多大学的 Philip M. Kim 和 Osama A**b**din 开发了 PepFlow，这是 一种可转移生成模型，它能够从输入肽的允许构象空间中直接进行全原子采样。研究人员在扩散框架中训练模型，然后使用等效流进行构象采样。
+多伦多大学的 Philip M. Kim 和 Osama Abdin 开发了 PepFlow，这是一种可转移生成模型，它能够从输入肽的允许构象空间中直接进行全原子采样。研究人员在扩散框架中训练模型，然后使用等效流进行构象采样。
 
 为了克服广义全原子建模的成本过高，他们模块化了生成过程并集成了超网络来预测序列特定的网络参数。PepFlow 可准确预测肽结构，并有效重现实验肽集合，所需运行时间仅为传统方法的一小部分。PepFlow 还可用于对满足大环化等约束的构象进行采样。
 
 「到目前为止，我们还无法模拟肽的全部构象。」这项研究的第一作者 Osama Abdin 说道，「PepFlow 利用深度学习在几分钟内捕捉到肽的精确构象。该模型有可能通过设计作为粘合剂的肽来指导药物开发。」
 
 该研究以「 Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion 」为题，于 2024 年 6 月 27 日发布在《 Nature Machine Intelligence 》。
+
+## PepFlow 方法
 
 ![](img/53b866402fffd635c89b9fbbcff3fe2b.png)
 
@@ -38,11 +43,15 @@ Philip M. Kim 和 Osama Abdin 提出了一种可用于肽构象直接全原子�
 
 PepFlow 具有强大的预测单态肽结构和短线性基序集合 (SLiM) 的能力，并且可以通过潜在空间构象搜索在诸如大环化等约束条件下对肽结构进行建模。
 
+## 能力与 AlphaFold2 对比
+
 该模型扩展了领先的 Google Deepmind AI 系统 AlphaFold 预测蛋白质结构的能力。PepFlow 可以生成给定肽的一系列构象，从而优于 AlphaFold2；当然 AlphaFold2 的设计初衷并不是解决这一问题。
 
 PepFlow 的与众不同之处在于其背后的技术创新。例如，它是一种广义模型，其灵感来自玻尔兹曼生成器，这是一种非常先进的基于物理的机器学习模型。
 
 「使用 PepFlow 建模可以深入了解肽的真实能量状况。」Abdin 说，「开发 PepFlow 花了两年半的时间，训练它只花了一个月的时间，但值得迈向下一个前沿，超越仅预测肽的一种结构的模型。」
+
+## 应用前景
 
 整体而言，准确高效地对肽构象进行采样的能力有可能改善肽对接和设计。肽对接方法通常从与目标蛋白对接的肽构象库开始。更精确的肽集合生成也许能改善这一过程。
 
@@ -51,6 +60,8 @@ PepFlow 还可用于评估不同序列在目标蛋白质 - 蛋白质界面上呈
 ![](img/d0e69b974e0956a59217f01a5b80fca4.png)
 
 图示：PepFlow 生成的集合与分子动力学模拟的比较。（来源：论文）
+
+## 局限性与改进
 
 虽然 PepFlow 在 AlphaFold2 的基础上有所改进，但它本身也有局限性，因为这只是模型的第一个版本。
 
@@ -66,6 +77,8 @@ PepFlow 有一个显著缺点，与玻尔兹曼生成器不同，PepFlow 缺乏�
 
 即使只是第一个版本，PepFlow 也是一个全面而有效的模型，具有进一步开发依赖肽结合来激活或抑制生物过程的治疗方法的潜力。
 
-> 论文链接： https://www.nature.com/articles/s42256-024-00860-4
+## 参考链接
 
-> 相关报道： https://phys.org/news/2024-06-deep-outperforms-google-ai-peptide.html
+> 论文链接： `https://www.nature.com/articles/s42256-024-00860-4`
+
+> 相关报道： `https://phys.org/news/2024-06-deep-outperforms-google-ai-peptide.html`

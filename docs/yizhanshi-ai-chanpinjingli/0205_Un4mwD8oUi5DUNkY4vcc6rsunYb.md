@@ -1,3 +1,4 @@
+
 # 评测 · AgentLM：能打的 Agent 模型来了！7B，13B，70B 全开源
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/RYf5dqKRYoWlvRxhgzyc7waAnDc](https://v11enp9ok1h.feishu.cn/docx/RYf5dqKRYoWlvRxhgzyc7waAnDc)
@@ -21,32 +22,27 @@
 希望我们的开源工作，能够帮助大模型社区，促进行业发展。
 
 +   Github：https://github.com/THUDM/AgentTuning
-
 +   Huggingface：https://huggingface.co/THUDM
-
 +   魔搭社区：https://modelscope.cn/models/ZhipuAI
-
 +   Paper：https://arxiv.org/abs/2310.12823
 
-**
-
-方法：AgentTunin**g
+## 方法：AgentTuning
 
 ![](img/1f367883c83df403280794fb0b0b4cef.png)
 
-AgentTuning 主要包括 2 个阶段。首先，我们收集并过滤得到一个多任务指令微调数据集 AgentInstrcut；然后，我们将 AgentInstruct 数据集与通用数据对模型进行混合微调。
+AgentTuning 主要包括 2 个阶段。首先，我们收集并过滤得到一个多任务指令微调数据集 AgentInstruct；然后，我们将 AgentInstruct 数据集与通用数据对模型进行混合微调。
 
 评估结果表明，AgentTuning 能让 LLM 的 Agent 能力在未见过的 Agent 任务中展现出强大的泛化，同时保持良好的通用语言能力。
 
-数据集：AgentInstruct
+## 数据集：AgentInstruct
 
 AgentInstruct 是一个经过筛选的智能体任务数据集。其包含 6 项智能体任务，从 Shell 交互到数据库操作，平均回合数从 5 到 35 不等，每条轨迹都有 ReAct 形式的 CoT 标注，帮助模型深入理解决策过程。为保证数据有效性，数据集在构造时进行了严格的筛选，仅保留了 1866 条高质量交互轨迹。最后，我们与测试集进行了数据重合度检测，防止数据泄露导致的评测误差。
 
-**实验结果**
+## 实验结果
 
 我们使用 AgentTuning 方法对 Llama-2-chat 系列模型进行了微调。微调过程中，我们将 20% 的 AgentInstruct 数据集和 80% 的通用数据进行混合训练，得到了 AgentLM-7B，AgentLM-13B，AgentLM-70B。
 
-1、**智能体能力可泛化**
+### 1、智能体能力可泛化
 
 我们在同分布任务、外分布任务和通用能力任务上对模型进行评测。
 
@@ -60,7 +56,7 @@ AgentInstruct 是一个经过筛选的智能体任务数据集。其包含 6 项
 
 同分布任务：显著提升, 比肩 GPT-4
 
-在外分布任务上，模型泛化性良好。AgnetLM-70B 的性能也接近 GPT-3.5。
+在外分布任务上，模型泛化性良好。AgentLM-70B 的性能也接近 GPT-3.5。
 
 ![](img/695633506d9c582e9aae58faacef90b7.png)
 
@@ -72,7 +68,7 @@ AgentInstruct 是一个经过筛选的智能体任务数据集。其包含 6 项
 
 通用能力：与微调前表现相当
 
-2、**初等错误显著减少**
+### 2、初等错误显著减少
 
 Llama-2-chat-70B在任务中大量出现如非法操作 / 重复 / 拒绝回答等初等错误。经过 AgentTuning 后，模型的简单错误比例大幅降低。
 
@@ -80,7 +76,7 @@ Llama-2-chat-70B在任务中大量出现如非法操作 / 重复 / 拒绝回答�
 
 这说明，模型自身具有完成智能体任务所需的能力，经过少量对齐微调即可激发这些能力。
 
-3、**通用能力对泛化至关重要**
+### 3、通用能力对泛化至关重要
 
 ![](img/bc02fde4bca5676e31f77b774a8d26c4.png)
 
@@ -88,7 +84,7 @@ Llama-2-chat-70B在任务中大量出现如非法操作 / 重复 / 拒绝回答�
 
 更多详细信息，可以参考我们论文和 Github 内容。
 
-**研究者说**
+## 研究者说
 
 问：为何开源大模型解决智能体任务和闭源模型差距这么大呢？
 

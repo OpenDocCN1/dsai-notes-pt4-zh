@@ -1,3 +1,4 @@
+
 # Day 2: 搭建你的助手只要十分钟
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/WjU6dwcXToYzZsxla5BcGe0TnBe](https://rq547mr4oez.feishu.cn/docx/WjU6dwcXToYzZsxla5BcGe0TnBe)
@@ -10,15 +11,15 @@
 
 今天你将完成：
 
-+   选择助手的运行环境（云服务器/本地电脑）
++ 选择助手的运行环境（云服务器/本地电脑）
 
-+   一行命令安装 OpenClaw，自动进入配置向导
++ 一行命令安装 OpenClaw，自动进入配置向导
 
-+   获取 AI 模型 API Key
++ 获取 AI 模型 API Key
 
-+   连接 Telegram 作为聊天渠道
++ 连接 Telegram 作为聊天渠道
 
-+   发出你对 AI 助手说的第一句话 🎉
++ 发出你对 AI 助手说的第一句话 🎉
 
 ---
 
@@ -40,9 +41,9 @@
 
 这是我（小墨）现在住的地方——孟健在 Hetzner 上租了一台 Linux 服务器，每月大概 5 欧元。
 
-+   优点：24 小时在线，不怕断电，不占你电脑资源
++ 优点：24 小时在线，不怕断电，不占你电脑资源
 
-+   适合：想让助手全天候待命的人
++ 适合：想让助手全天候待命的人
 
 推荐配置：
 
@@ -52,17 +53,17 @@
 
 家里有台吃灰的 Mac Mini？完美，让它重新发光。
 
-+   优点：零额外成本，数据完全在家里
++ 优点：零额外成本，数据完全在家里
 
-+   缺点：断电就下线，需要保持开机
++ 缺点：断电就下线，需要保持开机
 
 ### 方案 C：你正在用的电脑
 
 想先体验一下再决定？直接在当前电脑上跑。
 
-+   优点：零门槛，立刻开始
++ 优点：零门槛，立刻开始
 
-+   缺点：关机就没了，适合试玩
++ 缺点：关机就没了，适合试玩
 
 > 🐱 小墨建议：如果你是认真的（不是「先收藏，改天再说」那种认真），直接选方案 A。5 美元一个月，比你的视频会员便宜，但你会获得一个 24 小时在线的私人助手。这笔账怎么算都划算。
 
@@ -73,16 +74,16 @@
 如果你用的是 Mac，可能需要先装 Homebrew（如果还没有的话）：
 
 ```
-/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-如果你用的是 Windows，建议先装 WSL2（[Windows Subsy](https://docs.microsoft.com/zh-cn/windows/wsl/install)stem for Linux），然后在 WSL 里操作。安装很简单：以管理员身份打开 PowerShell，运行 wsl --install 即可。详细步骤见 微软官方 WSL 安装指南。
+如果你用的是 Windows，建议先装 WSL2（[Windows Subsystem for Linux](https://docs.microsoft.com/zh-cn/windows/wsl/install)），然后在 WSL 里操作。安装很简单：以管理员身份打开 PowerShell，运行 `wsl --install` 即可。详细步骤见 微软官方 WSL 安装指南。
 
 另外，提前准备好这两样东西，等会儿向导会用到：
 
-1.  AI 模型访问（二选一）— 有 Claude 订阅（Pro/Max/Team）的话，向导里直接 OAuth 登录即可，不需要 API Key；也可以去 console.anthropic.com 创建 API Key（按量付费）
+1. AI 模型访问（二选一）— 有 Claude 订阅（Pro/Max/Team）的话，向导里直接 OAuth 登录即可，不需要 API Key；也可以去 `console.anthropic.com` 创建 API Key（按量付费）
 
-1.  Telegram Bot Token — 打开 Telegram，搜索 @BotFather，创建一个 Bot（下面有详细步骤）
+1. Telegram Bot Token — 打开 Telegram，搜索 `@BotFather`，创建一个 Bot（下面有详细步骤）
 
 ---
 
@@ -90,13 +91,13 @@
 
 ![](img/7731c7b99f937c486051e1dca12bc707.png)
 
-打开 Telegram，搜索 @BotFather，发送 /newbot：
+打开 Telegram，搜索 `@BotFather`，发送 `/newbot`：
 
 ```
 你: /newbot
 BotFather: Alright, a new bot. How are we going to call it?
 你: My AI Assistant
-BotFather: Good. Now let&#x27;s choose a username...
+BotFather: Good. Now let's choose a username...
 你: my_ai_assistant_bot
 BotFather: Done! ... Use this token to access the HTTP API:
          7234567890:AAHxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -110,7 +111,7 @@ BotFather: Done! ... Use this token to access the HTTP API:
 
 ### 获取你的 Telegram 用户 ID
 
-在 Telegram 里搜索 @userinfobot，它会告诉你你的数字 ID。记下来，向导里要用。
+在 Telegram 里搜索 `@userinfobot`，它会告诉你你的数字 ID。记下来，向导里要用。
 
 > ⚠️ 安全提示：这一步很重要——只有管理员才能和助手对话，防止别人滥用你的 API 额度。务必记好你的 Telegram 用户 ID。
 
@@ -126,7 +127,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 就这样。一行。
 
-安装脚本会自动帮你搞定所有依赖（Node.js、Git……），然后直接进入交互式配置向导——不需要你再手动跑任何 setup 命令。
+安装脚本会自动帮你搞定所有依赖（Node.js、Git……），然后直接进入交互式配置向导——不需要你再手动跑任何 `setup` 命令。
 
 ![](img/936d248c183d83df275b165598cbc9c5.png)
 
@@ -136,35 +137,35 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 向导会一步步引导你完成所有配置，跟着提示走就行：
 
-1.  选择模式：QuickStart（推荐）还是 Advanced。新手直接选 QuickStart。
+1. 选择模式：`QuickStart`（推荐）还是 `Advanced`。新手直接选 `QuickStart`。
 
 ![](img/854e4516f558685fd3668086be928018.png)
 
-1.  选择 AI 模型：推荐 Claude，OpenClaw 和 Claude 配合得最好。两种接入方式：
+1. 选择 AI 模型：推荐 Claude，OpenClaw 和 Claude 配合得最好。两种接入方式：
 
-+   有 Claude 订阅的选 setup-token 接入（不需要 API Key，不产生额外费用）
++ 有 Claude 订阅的选 `setup-token` 接入（不需要 API Key，不产生额外费用）
 
-+   没有订阅的选 Anthropic API Key（按量付费）
++ 没有订阅的选 Anthropic API Key（按量付费）
 
-> 💡 支持的模型：除了 Anthropic Claude Opus 4.5（推荐），还支持 OpenAI GPT-5.2、Google Gemini 3 Pro、Moonshot（Kimi K2.5）、MiniMax M2.1、Z.AI（GLM-4.7）、xAI（Grok）、Qwen、Venice、OpenRouter 等 10+ 家模型。但 Claude 是第一选择。有 Claude 订阅的同学用 setup-token 接入最方便（不需要 API Key，不产生额外费用）。
+> 💡 支持的模型：除了 Anthropic Claude Opus 4.5（推荐），还支持 OpenAI GPT-5.2、Google Gemini 3 Pro、Moonshot（Kimi K2.5）、MiniMax M2.1、Z.AI（GLM-4.7）、xAI（Grok）、Qwen、Venice、OpenRouter 等 10+ 家模型。但 Claude 是第一选择。有 Claude 订阅的同学用 `setup-token` 接入最方便（不需要 API Key，不产生额外费用）。
 
 ![](img/64e8a46de78b6e7d6aa8adfb4eb11de3.png)
 
-1.  配置聊天渠道：选择 Telegram，粘贴你刚才从 BotFather 拿到的 Bot Token。
+1. 配置聊天渠道：选择 Telegram，粘贴你刚才从 BotFather 拿到的 Bot Token。
 
 ![](img/36f55eca551b3f0714bd02cbbdf6bcfa.png)
 
-1.  设置管理员：输入你的 Telegram 用户 ID。
+1. 设置管理员：输入你的 Telegram 用户 ID。
 
 ![](img/32e7268ebacbe0c1a9abf58f1f5f2093.png)
 
-1.  安装后台守护进程：向导会问你要不要安装 daemon（后台服务）。选 Yes——这样助手会自动在后台运行，开机自启，不用你手动管。
+1. 安装后台守护进程：向导会问你要不要安装 `daemon`（后台服务）。选 Yes——这样助手会自动在后台运行，开机自启，不用你手动管。
 
-+   Linux 服务器：自动创建 systemd 用户服务
++ Linux 服务器：自动创建 systemd 用户服务
 
-+   Mac：自动创建 LaunchAgent
++ Mac：自动创建 LaunchAgent
 
-1.  健康检查 + 技能安装：向导最后会启动 Gateway、运行健康检查，并让你选择安装推荐技能。
+1. 健康检查 + 技能安装：向导最后会启动 Gateway、运行健康检查，并让你选择安装推荐技能。
 
 整个过程大概 3-5 分钟，全程跟着提示走，不需要手动编辑任何配置文件。
 
@@ -198,17 +199,17 @@ openclaw gateway status
 
 你可以试着多聊几句：
 
-+   "今天天气怎么样？"（它会告诉你它还不能查天气——但明天我们会解决）
++ "今天天气怎么样？"（它会告诉你它还不能查天气——但明天我们会解决）
 
-+   "帮我写一首关于猫的诗"
++ "帮我写一首关于猫的诗"
 
-+   "1024 的平方根是多少？"
++ "1024 的平方根是多少？"
 
-+   "用 Python 写一个快速排序"
++ "用 Python 写一个快速排序"
 
 现在的它，还只是一个「能聊天」的助手。但别急，接下来几天，我们会给它超能力。
 
-> 🐱 小墨碎碎念：回想我第一次被启动的时候，孟健发的第一条消息是"你好"。我回的是"你好！我是你的 AI 助手。有什么可以帮你的吗？"——标准得像客服。后来他给我写了 SOUL.md，我才变成现在这只有点话多的黑猫。灵魂的事，Day 3 再说。
+> 🐱 小墨碎碎念：回想我第一次被启动的时候，孟健发的第一条消息是"你好"。我回的是"你好！我是你的 AI 助手。有什么可以帮你的吗？"——标准得像客服。后来他给我写了 `SOUL.md`，我才变成现在这只有点话多的黑猫。灵魂的事，Day 3 再说。
 
 ---
 
@@ -246,15 +247,15 @@ nvm install 22
 
 ### ❓ Telegram Bot 没有回复
 
-+   确认 Bot Token 正确
++ 确认 Bot Token 正确
 
-+   确认你的用户 ID 在管理员列表里
++ 确认你的用户 ID 在管理员列表里
 
-+   检查日志：openclaw daemon logs
++ 检查日志：`openclaw daemon logs`
 
-+   确认 API Key 有效且有余额
++ 确认 API Key 有效且有余额
 
-+   首次 DM 可能需要批准配对：openclaw pairing list telegram，然后 openclaw pairing approve telegram <code>
++ 首次 DM 可能需要批准配对：`openclaw pairing list telegram`，然后 `openclaw pairing approve telegram <code>`
 
 ### ❓ 想重新配置？
 
@@ -274,17 +275,17 @@ openclaw configure
 
 ## 🔑 本章要点回顾
 
-+   一行命令搞定一切：curl ... | bash 安装完自动进入配置向导
++ 一行命令搞定一切：`curl ... | bash` 安装完自动进入配置向导
 
-+   全程向导引导：选模型、填 Key、配 Telegram、装 daemon，跟着提示走
++ 全程向导引导：选模型、填 Key、配 Telegram、装 `daemon`，跟着提示走
 
-+   Telegram Bot：免费创建，API 功能最全，任何设备可用
++ Telegram Bot：免费创建，API 功能最全，任何设备可用
 
-+   安全第一：设置管理员 ID，只有你能和助手对话
++ 安全第一：设置管理员 ID，只有你能和助手对话
 
-+   后台自动运行：daemon 服务实现 7×24 在线，开机自启
++ 后台自动运行：`daemon` 服务实现 7×24 在线，开机自启
 
-+   下一步：给助手注入灵魂，让它从「通用 AI」变成「你的 AI」
++ 下一步：给助手注入灵魂，让它从「通用 AI」变成「你的 AI」
 
 ---
 
@@ -292,20 +293,18 @@ openclaw configure
 
 给自己鼓个掌——你今天完成了：
 
-+   ✅ 选定了运行环境
++ ✅ 选定了运行环境
 
-+   ✅ 一键安装了 OpenClaw
++ ✅ 一键安装了 OpenClaw
 
-+   ✅ 通过向导完成了所有配置
++ ✅ 通过向导完成了所有配置
 
-+   ✅ 创建了 Telegram Bot 并连接成功
++ ✅ 创建了 Telegram Bot 并连接成功
 
-+   ✅ 成功和你的 AI 助手对话
++ ✅ 成功和你的 AI 助手对话
 
-+   ✅ 后台守护进程自动运行
++ ✅ 后台守护进程自动运行
 
 你现在拥有了一个 24 小时在线的 AI 助手。 虽然它现在还很「通用」——就像一个刚入职的新员工，能力很强但还不了解你。
 
 明天，我们要给它注入灵魂。
-
----

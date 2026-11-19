@@ -1,10 +1,11 @@
+
 # Ascend NPU vLLM 部署Intern-S1-mini
 
 > 来源：[https://aicarrier.feishu.cn/docx/WBXpde6gtoZLEQxnmuwcM61QnMe](https://aicarrier.feishu.cn/docx/WBXpde6gtoZLEQxnmuwcM61QnMe)
 
-# 一、环境准备
+## 一、环境准备
 
-## 1.创建开发机
+### 1.创建开发机
 
 前往InternStudio Ascend控制台创建开发机
 
@@ -28,15 +29,15 @@ npu-smi info
 
 查看NPU 信息
 
-## 2.准备vllm环境
+### 2.准备`vllm`环境
 
-### 2-1.创建conda环境python版本选择3.11
+#### 2-1.创建`conda`环境`python`版本选择3.11
 
 ```
 conda create -n ascend python=3.11 -y
 ```
 
-### 2-2.激活conda环境并且安装 uv
+#### 2-2.激活`conda`环境并且安装 `uv`
 
 ```
 conda activate ascend
@@ -44,63 +45,63 @@ pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/si
 pip install uv
 ```
 
-### 2-3.安装vllm和vllm-ascend
+#### 2-3.安装`vllm`和`vllm-ascend`
 
 ```
 uv pip install vllm==0.11.0
 uv pip install vllm-ascend==0.11.0rc1
 ```
 
-## 3.设置昇腾相关环境变量
+### 3.设置昇腾相关环境变量
 
 ```
 source /usr/local/Ascend/ascend-toolkit/set_env.sh
-source /usr/local/Ascend/nnal/atb/set_env.sh 
+source /usr/local/Ascend/nnal/atb/set_env.sh
 ```
 
-# 二、下载模型
+## 二、下载模型
 
-## 1.安装modelscope
+### 1.安装`modelscope`
 
 ```
 uv pip install modelscope
 ```
 
-## 2.下载 [Intern-S1-mini](https://modelscope.cn/models/Shanghai_AI_Laboratory/Intern-S1-mini/summary)
+### 2.下载`Intern-S1-mini`
 
 ```
 modelscope download Shanghai_AI_Laboratory/Intern-S1-mini
 ```
 
-# 三、启动vLLM 服务
+## 三、启动`vLLM` 服务
 
 ```
 export VLLM_USE_MODELSCOPE=true
 vllm serve Shanghai_AI_Laboratory/Intern-S1-mini --trust-remote-code --enforce-eager
 ```
 
-观察启动日志，当出现如下图的日志时说明vllm服务启动成功
+观察启动日志，当出现如下图的日志时说明`vllm`服务启动成功
 
 ![](img/bcce08bc691260e68dc39a7e082948ab.png)
 
-# 四、推理测试
+## 四、推理测试
 
-                    &quot;url&quot;: &quot;https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg&quot;,
+"url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg",
 
 ```
 from openai import OpenAI
-client = OpenAI(api_key=&#x27;&#x27;, base_url=&#x27;http://0.0.0.0:8000/v1&#x27;)
+client = OpenAI(api_key='', base_url='http://0.0.0.0:8000/v1')
 model_name = client.models.list().data[0].id
 messages = [
     {
-        &quot;role&quot;: &quot;user&quot;,
-        &quot;content&quot;: [
+        "role": "user",
+        "content": [
             {
-                &quot;type&quot;: &quot;image_url&quot;,
-                &quot;image_url&quot;:{
+                "type": "image_url",
+                "image_url":{
                 }
             },
-            {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;Describe this image.&quot;},
+            {"type": "text", "text": "Describe this image."},
         ],
     }
 ]
@@ -114,13 +115,13 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-将以上代码保存成infer.py并运行：
+将以上代码保存成`infer.py`并运行：
 
 ```
 uv run infer.py
 ```
 
-你也可以用python运行
+你也可以用`python`运行
 
 ```
 python infer.py
@@ -128,7 +129,7 @@ python infer.py
 
 ![](img/29180d8a6aa18b328163bc37299102dd.png)
 
-# 五、参考文档
+## 五、参考文档
 
 vLLM-Ascend Installation
 

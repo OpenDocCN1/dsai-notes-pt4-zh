@@ -1,12 +1,13 @@
+
 # Stable Diffusion 3发布，还有什么人工智能应用方面，值得注意的信息
 
 > 来源：[https://agijuejin.feishu.cn/docx/UPBHdXtyIo9o3Uxi3otcpy6rnMg](https://agijuejin.feishu.cn/docx/UPBHdXtyIo9o3Uxi3otcpy6rnMg)
-
+>
 > 作者：德里克文
+>
+> 原文：[https://zhuanlan.zhihu.com/p/683606248](https://zhuanlan.zhihu.com/p/683606248)
 
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/683606248)hihu.com/p/683606...
-
-**Sora的发布引发的连锁效应。**
+## Sora的发布引发的连锁效应。
 
 ![](img/8cd41c1ba3246e4204fbb6d868fb5203.png)
 
@@ -94,7 +95,7 @@ Stable Diffusion 3系列的模型具有不同的参数量，范围从800万到80
 
 想要尝鲜的用户可以点击以下链接提交申请：
 
-[  ](https://link.zhihu.com/?target=https%3A//stability.ai/stablediffusion3)
+[ ](https://link.zhihu.com/?target=https%3A//stability.ai/stablediffusion3)
 
 ## 二、Stable Video相关信息
 
@@ -112,15 +113,11 @@ Stable Diffusion 3系列的模型具有不同的参数量，范围从800万到80
 
 虽然取得了明显进步，但是SVD1.1对比Sora还是有很多缺憾。主要有以下几点：
 
-1.  SVD 1.1模型生成的视频片段时长较短，通常不超过4秒。
-
-1.  模型在生成过程中可能倾向于产生静态或缓慢移动的画面，难以捕捉快速或复杂的动作序列。
-
-1.  在交互性和控制方面，SVD1.1目前还不支持通过文本指令直接控制视频内容的生成，其功能主要集中在将静态图像转换为视频。
-
-1.  而在文字内容的生成上，尤其是在需要生成清晰、准确文字信息的场景中无法生成清晰文字。
-
-1.  当视频中的人物占比较小时，SVD1.1可能无法准确生成人物的面部特征。
+1. SVD 1.1模型生成的视频片段时长较短，通常不超过4秒。
+1. 模型在生成过程中可能倾向于产生静态或缓慢移动的画面，难以捕捉快速或复杂的动作序列。
+1. 在交互性和控制方面，SVD1.1目前还不支持通过文本指令直接控制视频内容的生成，其功能主要集中在将静态图像转换为视频。
+1. 而在文字内容的生成上，尤其是在需要生成清晰、准确文字信息的场景中无法生成清晰文字。
+1. 当视频中的人物占比较小时，SVD1.1可能无法准确生成人物的面部特征。
 
 尽管如此，随着技术的不断进步，希望这些问题能尽快改进。下面让我们看看SVD的效果吧。
 
@@ -190,7 +187,7 @@ Animated scene features a close-up of a short fluffy monster kneeling beside a m
 
 说了这么多，也奉上体验地址，大家可以自己去试试：
 
-[  ](https://link.zhihu.com/?target=https%3A//www.stablevideo.com/)
+[ ](https://link.zhihu.com/?target=https%3A//www.stablevideo.com/)
 
 从前，这个模型需要用户自己上手部署，现在Stability AI已经帮忙部署好了，甚至不需要排队就可以使用。
 

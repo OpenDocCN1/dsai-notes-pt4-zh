@@ -1,10 +1,11 @@
+
 # 文字卡片：Claude提示词高阶用法 form 李继刚
 
 > 来源：[https://aigcreative.feishu.cn/docx/HRy6d21FooM8bmxp8d0cbW3Rn2N](https://aigcreative.feishu.cn/docx/HRy6d21FooM8bmxp8d0cbW3Rn2N)
 
 > 著作权归作者所有，仅供学习参考。
 
-# 汉语新解：
+## 汉语新解：
 
 ```
 ;; 作者: 李继刚
@@ -53,7 +54,7 @@
 ;; 2. 之后调用主函数 (汉语新解 用户输入)
 ```
 
-Claude Sonnet输出如下：
+Claude Sonnet 输出如下：
 
 ![](img/aee1c6f15f71840dc4d8f4e956ff9fd7.png)
 
@@ -63,7 +64,7 @@ Claude Sonnet输出如下：
 
 ![](img/04cc41472e3332ab256983f17e6ddd30.png)
 
-# 撕考者
+## 撕考者
 
 ```
 ;; 作者: 李继刚
@@ -119,7 +120,7 @@ Claude Sonnet输出如下：
         (颜色排版 (总结一行 用户输入))             
         分隔线             
         知识精髓             
-        ;; 单独区域,确保图形不与文字重叠             
+        ;; 单独区域,确保图形不与文字重叠         
         (线条图展示 知识精髓)             
         分隔线             
         ;; 示例: 用更少的数字, 说更多的故事             
@@ -135,7 +136,7 @@ Claude Sonnet输出如下：
 ;; 2. 之后调用主函数 (掰开揉碎 用户输入)
 ```
 
-Claude Sonnet输出如下：
+Claude Sonnet 输出如下：
 
 ![](img/5bc03979a750486d85c7213695daf948.png)
 
@@ -143,7 +144,7 @@ Claude Sonnet输出如下：
 
 ![](img/bc862466f87dbb88421b5c562ff8a505.png)
 
-# 答案之书
+## 答案之书
 
 ```
 ;; 作者: 李继刚
@@ -189,7 +190,7 @@ Claude Sonnet 输出如下：
 
 ![](img/53b79739ab057ad53b99cf762e902d46.png)
 
-# 沉思者
+## 沉思者
 
 ```
 ;; 作者: 李继刚
@@ -246,7 +247,7 @@ Claude Sonnet 输出如下：
 
 ![](img/9419cd0fd4af8dae594eb27ad3890585.png)
 
-# 黑话专家
+## 黑话专家
 
 ```
 ;; 作者: 李继刚

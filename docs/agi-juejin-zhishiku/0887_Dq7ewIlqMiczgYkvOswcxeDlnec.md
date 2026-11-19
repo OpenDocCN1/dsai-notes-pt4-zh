@@ -1,3 +1,4 @@
+
 # RAG流程优化（微调）的4个基本策略
 
 > 来源：[https://agijuejin.feishu.cn/docx/QBreda7HBoKYwnxUW3ocU2etnbh](https://agijuejin.feishu.cn/docx/QBreda7HBoKYwnxUW3ocU2etnbh)
@@ -8,7 +9,7 @@
 
 在本文中，我们将介绍使用私有数据优化检索增强生成(RAG)的四种策略，可以提升生成任务的质量和准确性。通过使用一些优化策略，可以有效提升检索增强生成系统的性能和输出质量，使其在实际应用中能够更好地满足需求。
 
-## **RAG简单回顾**
+## RAG简单回顾
 
 RAG主要有两个过程。第一个是“数据收集过程”，它收集来自不同来源的数据，将其转换为文本，将其分割成较小的、连贯的和语义相关的部分，并将结果存储在矢量数据库中。第二个是“推理过程”，它从用户查询开始，然后使用第一个过程的结果来识别相关的数据块，最后丰富模型的上下文以获得输出。
 
@@ -24,7 +25,7 @@ RAG主要有两个过程。第一个是“数据收集过程”，它收集来�
 
 4、提供模型的最后提示:制作有效提示以提高输出质量。
 
-## **RAG的A/B测试**
+## RAG的A/B测试
 
 A/B测试可以比较每个组件具有不同配置的两个版本，确定哪个版本的性能更好。它分别运行两个版本，并根据预定义的指标测量它们的性能。那么我们如何衡量指标呢?什么指标?为了回答这个问题，我们使用了论文“RAGAS: Automated Evaluation of Retrieval Augmented Generation”种提出了三个关键指标:
 
@@ -42,7 +43,7 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 上下文相关性和上下文召回是检索度量，分别度量从向量数据库检索正确数据块和获得所有必要信息的能力。
 
-下面开始使用LangChain来实现RAG流程，我们先安装库:
+下面开始使用`LangChain`来实现RAG流程，我们先安装库:
 
 ```
  pip install ollama==0.2.1
@@ -53,7 +54,7 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
  pip install ragas==0.1.9
 ```
 
-下面是使用LangChain的代码片段:
+下面是使用`LangChain`的代码片段:
 
 ```
  # Import necessary libraries and modules
@@ -182,6 +183,8 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 使用下面代码来评估指标:
 
+
+
 ```
 # Import necessary libraries and modules
  import pandas as pd
@@ -196,33 +199,33 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
  from langchain_community.chat_models import ChatOllama
  
  def get_questions_answers_contexts(rag_chain):
-    &quot;&quot;&quot; Read the list of questions and answers and return a
-        ragas dataset for evaluation &quot;&quot;&quot;
+    """ Read the list of questions and answers and return a
+        ragas dataset for evaluation """
     # URL of the file
-    url = &#x27;https://raw.githubusercontent.com/cgrodrigues/rag-intro/main/coldf_question_and_answer.psv&#x27;
+    url = 'https://raw.githubusercontent.com/cgrodrigues/rag-intro/main/coldf_question_and_answer.psv'
  
     # Fetch the file from the URL
     response = requests.get(url)
     data = response.text
    
     # Split the data into lines
-    lines = data.split(&#x27;\n&#x27;)
+    lines = data.split('\n')
  
     # Split each line by the pipe symbol and create tuples
     rag_dataset = []
  
     for line in lines[1:10]: # Only 10 first questions
         if line.strip(): # Ensure the line is not empty
-            question, reference_answer = line.split(&#x27;|&#x27;)
+            question, reference_answer = line.split('|')
             result = rag_chain.invoke(question)
-            generated_answer = result[&#x27;answer&#x27;]
-            contexts = result[&#x27;context&#x27;]
+            generated_answer = result['answer']
+            contexts = result['context']
  
             rag_dataset.append({
-                &quot;question&quot;: question,
-                &quot;answer&quot;: generated_answer,
-                &quot;contexts&quot;: [contexts],
-                &quot;ground_truth&quot;: reference_answer
+                "question": question,
+                "answer": generated_answer,
+                "contexts": [contexts],
+                "ground_truth": reference_answer
             })
  
            
@@ -233,8 +236,8 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
     return rag_eval_datset
  
  def get_metrics(rag_dataset):
-    &quot;&quot;&quot; For a RAG Dataset calculate the metrics faithfulness,
-        answer_relevancy, context_precision and context_recall &quot;&quot;&quot;
+    """ For a RAG Dataset calculate the metrics faithfulness,
+        answer_relevancy, context_precision and context_recall """
     # The list of metrics that we want to evaluate
     metrics = [
         faithfulness,
@@ -244,8 +247,8 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
     ]
          
     # We will use our local ollama with the LLaMA 3 model
-    langchain_llm = ChatOllama(model=&quot;llama3&quot;)
-    langchain_embeddings = DPRQuestionEncoderEmbeddings(&#x27;facebook/dpr-question_encoder-single-nq-base&#x27;)
+    langchain_llm = ChatOllama(model="llama3")
+    langchain_embeddings = DPRQuestionEncoderEmbeddings('facebook/dpr-question_encoder-single-nq-base')
  
     # Return the metrics
     results = evaluate(rag_dataset, metrics=metrics, llm=langchain_llm, embeddings=langchain_embeddings)
@@ -263,10 +266,10 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 ```
 {
-   &#x27;faithfulness&#x27;: 0.8611, 
-   &#x27;answer_relevancy&#x27;: 0.8653, 
-   &#x27;context_precision&#x27;: 0.7778, 
-   &#x27;context_recall&#x27;: 0.8889
+   'faithfulness': 0.8611, 
+   'answer_relevancy': 0.8653, 
+   'context_precision': 0.7778, 
+   'context_recall': 0.8889
 }
 ```
 
@@ -276,7 +279,7 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 下面我们开始进行改进
 
-## **分块**
+## 分块
 
 分块方法确保数据被分割成最优的检索段。对不同块大小进行实验，以在太小(缺少上下文)和太大(检索系统冗余)之间找到平衡。在基线中，我们根据每个实验对文档进行分组;这意味着实验的某些部分可能会被稀释，而不会在最终的嵌入中表现出来。解决这种情况的一种方法是使用父文档检索器。这个方法不仅检索特定的相关文档片段或段落，还检索它们的父文档。这种方法确保了相关片段周围的上下文得到保存。下面的代码用于测试这种方法:
 
@@ -289,8 +292,8 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
  
  # Create the parent document retriever
  parent_document_retriever = ParentDocumentRetriever(
-    vectorstore = Chroma(collection_name=&quot;parents&quot;,
-                          embedding_function=DPRQuestionEncoderEmbeddings(&#x27;facebook/dpr-question_encoder-single-nq-base&#x27;)),
+    vectorstore = Chroma(collection_name="parents",
+                          embedding_function=DPRQuestionEncoderEmbeddings('facebook/dpr-question_encoder-single-nq-base')),
     docstore = InMemoryStore(),
     child_splitter = RecursiveCharacterTextSplitter(chunk_size=200),
     parent_splitter = RecursiveCharacterTextSplitter(chunk_size=1500),
@@ -301,10 +304,10 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
  
  # Create a retrieval-augmented generation (RAG) chain
  rag_chain_pr = (
-    {&quot;context&quot;: parent_document_retriever | format_docs, &quot;question&quot;: RunnablePassthrough()}
-    | RunnablePassthrough.assign(context=itemgetter(&quot;context&quot;))
-    | {&quot;answer&quot;: prompt | llm | StrOutputParser(),
-        &quot;context&quot;: itemgetter(&quot;context&quot;)}
+    {"context": parent_document_retriever | format_docs, "question": RunnablePassthrough()}
+    | RunnablePassthrough.assign(context=itemgetter("context"))
+    | {"answer": prompt | llm | StrOutputParser(),
+        "context": itemgetter("context")}
  )
  
  # Get the RAG dataset
@@ -321,13 +324,13 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 这种改变降低了性能，通过指标我们可以看到，上下文召回率下降表明检索过程不正确，上下文没有完整的信息。真实性和答案相关性度量的变化源于复杂的上下文。所以我们需要尝试其他的分块和检索方法
 
-## **嵌入模型**
+## 嵌入模型
 
 嵌入模型将文本块转换为密集的向量表示。不同的模型可以在不同的主题上进行训练，选择一个正确的模型可以改进嵌入。嵌入方法的选择应考虑计算效率和嵌入质量之间的平衡。
 
-这里比较了不同的嵌入模型，如Dense Passage Retrieval ，Sentence-BERT ，或Chroma的默认模型(“all-MiniLM-L6-v2”。每个模型都有自己的长处，在特定于领域的数据上对它们进行评估有助于确定哪个模型提供了最准确的语义表示。
+这里比较了不同的嵌入模型，如`Dense Passage Retrieval`，`Sentence-BERT`，或`Chroma`的默认模型(`all-MiniLM-L6-v2`。每个模型都有自己的长处，在特定于领域的数据上对它们进行评估有助于确定哪个模型提供了最准确的语义表示。
 
-我们定义一个新类“SentenceBertEncoderEmbeddings”。这个新类实现了模型Sentence-BERT模型。这个新类将取代我们之前的嵌入，“DPRQuestionEncoderEmbeddings”，
+我们定义一个新类`SentenceBertEncoderEmbeddings`。这个新类实现了模型`Sentence-BERT`模型。这个新类将取代我们之前的嵌入，`DPRQuestionEncoderEmbeddings`，
 
 ```
 # Import necessary libraries and modules
@@ -347,9 +350,9 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
  # Define a custom embedding class using the DPRQuestionEncoder
  class SentenceBertEncoderEmbeddings(Embeddings):
     show_progress: bool = False
-    &quot;&quot;&quot;Whether to show a tqdm progress bar. Must have `tqdm` installed.&quot;&quot;&quot;
+    """Whether to show a tqdm progress bar. Must have `tqdm` installed."""
      
-    def __init__(self, model_name: str = &#x27;paraphrase-MiniLM-L6-v2&#x27;):
+    def __init__(self, model_name: str = 'paraphrase-MiniLM-L6-v2'):
         # Initialize the tokenizer and model with the specified model name
         self.model = SentenceTransformer(model_name)
          
@@ -362,11 +365,11 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
         if self.show_progress:
             try:
                 from tqdm import tqdm
-                iter_ = tqdm(texts, desc=&quot;Embeddings&quot;)
+                iter_ = tqdm(texts, desc="Embeddings")
             except ImportError:
                 logger.warning(
-                    &quot;Unable to show progress bar because tqdm could not be imported. &quot;
-                    &quot;Please install with `pip install tqdm`.&quot;
+                    "Unable to show progress bar because tqdm could not be imported. "
+                    "Please install with `pip install tqdm`."
                 )
                 iter_ = texts
         else:
@@ -392,10 +395,11 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
  
  # Create a retrieval-augmented generation (RAG) chain
  rag_chain_ce = (
-    {&quot;context&quot;: retriever | format_docs, &quot;question&quot;: RunnablePassthrough()}
-    | RunnablePassthrough.assign(context=itemgetter(&quot;context&quot;))
-    | {&quot;answer&quot;: prompt | llm | StrOutputParser(),
-        &quot;context&quot;: itemgetter(&quot;context&quot;)})
+    {"context": retriever | format_docs, "question": RunnablePassthrough()}
+    | RunnablePassthrough.assign(context=itemgetter("context"))
+    | {"answer": prompt | llm | StrOutputParser(),
+        "context": itemgetter("context")}
+ )
  
  # Get the RAG dataset
  rag_dataset = get_questions_answers_contexts(rag_chain_ce)
@@ -409,13 +413,15 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 ![](img/77e3b5297d6e615e7ce4095070d0a59c.png)
 
-可以看到性能也下降了。这是因为DPR具有比Sentence-BERT更高的检索精度，使其更适合我们的情况，其中精确的文档检索是至关重要的。当切换到Sentence-BERT时，“真实性”和“答案相关性”指标的显著下降突出了为要求高检索精度的任务选择合适的嵌入模型的重要性。同时也说明不同类型的RAG任务可能需要特定领域的嵌入模型。
+可以看到性能也下降了。这是因为`DPR`具有比`Sentence-BERT`更高的检索精度，使其更适合我们的情况，其中精确的文档检索是至关重要的。当切换到`Sentence-BERT`时，“真实性”和“答案相关性”指标的显著下降突出了为要求高检索精度的任务选择合适的嵌入模型的重要性。同时也说明不同类型的RAG任务可能需要特定领域的嵌入模型。
 
-## **向量搜索方法**
+## 向量搜索方法
 
 向量搜索方法基于相似性度量检索最相关的块。常用的方法包括欧几里得(L2)距离、余弦相似度等。改变这种搜索方法可以提高最终输出的质量。
 
 代码如下:
+
+
 
 ```
 # Import necessary libraries and modules
@@ -460,11 +466,11 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 可以看到“真实性”得到了提高，使用余弦相似度进行向量搜索增强了检索文档与查询的对齐，即使“上下文精度”降低了。总体上较高的“信度”和“上下文召回率”表明余弦相似度在这种情况下是一种更有效的向量搜索方法，支持向量搜索方法选择在优化检索性能方面的重要性。
 
-## **输入模型的最后提示**
+## 输入模型的最后提示
 
 最后的提示构造涉及到将检索到的数据集成到模型的查询中。提示符中的微小变化会显著影响结果，使其成为一个反复试验的过程。在提示中提供示例可以引导模型获得更准确和相关的输出，提示词的修改不涉及代码的改变，所以这里我们就不进行演示了
 
-## **总结**
+## 总结
 
 优化检索增强生成(RAG是一个迭代过程，它在很大程度上取决于应用程序的特定数据和上下文。我们探讨了四种关键优化方向:细化分块方法、选择和微调嵌入模型、选择有效的向量搜索方法以及制作精确的提示。这些组件中的每一个都在提高RAG系统的性能方面起着至关重要的作用。
 
@@ -472,7 +478,7 @@ A/B测试可以比较每个组件具有不同配置的两个版本，确定哪�
 
 ---
 
-**MORE**
+### MORE
 
 kaggle比赛交流和组队
 

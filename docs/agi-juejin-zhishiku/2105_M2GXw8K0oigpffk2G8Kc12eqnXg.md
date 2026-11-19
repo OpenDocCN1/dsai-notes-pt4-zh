@@ -1,3 +1,4 @@
+
 # 7.24 Llama3.1 正式发布！405B 超越闭源 GPT-4o，扎克伯格：分水岭时刻
 
 > 来源：[https://agijuejin.feishu.cn/docx/CO2ydeEV8oV8DQxpqCEcq4UJnmc](https://agijuejin.feishu.cn/docx/CO2ydeEV8oV8DQxpqCEcq4UJnmc)
@@ -89,7 +90,6 @@ Mem0 是一项创新技术，通过智能内存层让 AI 在多交互中保持�
 Iyo 公司推出的 Iyo One 耳机，被定义为一款独立的"音频计算机"。它内置了 CPU、内存、闪存等计算机组件，支持独立于手机使用，具备降噪、翻译、音频交互界面等功能。Iyo One 旨在解决智能手机无法解决的问题，如在嘈杂环境中提供清晰的听觉体验。然而，续航和价格是其面临的挑战，WiFi 版续航 16 小时，售价 599 美元，蜂窝版续航 1.5 小时，售价 699 美元。尽管如此，Iyo One 代表了 AI 硬件创新的新方向。
 
 ### 💡 AI 驱动谷歌云 Q2 营收超百亿，Waymo 获增投
-
 
 有新Newin｜[阅读原文](https://sourl.co/GHwnEH)
 

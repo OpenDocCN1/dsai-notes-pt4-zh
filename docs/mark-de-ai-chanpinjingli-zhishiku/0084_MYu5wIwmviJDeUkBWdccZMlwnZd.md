@@ -1,34 +1,35 @@
-# 预测数值型数据: 回归
+
+# 预测数值型数据：回归
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/YgzndYC14o7napx98K4cfN9TnEh](https://qqs7y1hozd1.feishu.cn/docx/YgzndYC14o7napx98K4cfN9TnEh)
 
-# 回归（Regression） 概述
+## 回归（Regression）概述
 
 我们前边提到的分类的目标变量是标称型数据，而回归则是对连续型的数据做出处理，回归的目的是预测数值型数据的目标值
 
-# **回归 场景**
+## 回归场景
 
 回归的目的是预测数值型的目标值。最直接的办法是依据输入写出一个目标值的计算公式
 
 假如你想要预测兰博基尼跑车的功率大小，可能会这样计算:
 
-HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
+`HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio`
 
 这就是所谓的 回归方程(regression equation)，其中的 0.0015 和 -0.99 称作 回归系数（regression weights），求这些回归系数的过程就是回归。一旦有了这些回归系数，再给定输入，做预测就非常容易了。具体的做法是用回归系数乘以输入值，再将结果全部加在一起，就得到了预测值。我们这里所说的，回归系数是一个向量，输入也是向量，这些运算也就是求出二者的内积
 
-说到回归，一般都是指 线性回归(linear regression)线性回归意味着可以将输入项分别乘以一些常量，再将结果加起来得到输出
+说到回归，一般都是指 线性回归(linear regression)，线性回归意味着可以将输入项分别乘以一些常量，再将结果加起来得到输出
 
 补充:
 
 线性回归假设特征和结果满足线性关系。其实线性关系的表达能力非常强大，每个特征对结果的影响强弱可以由前面的参数体现，而且每个特征变量可以首先映射到一个函数，然后再参与线性计算。这样就可以表达特征与结果之间的非线性关系
 
-# **回归 原理**
+## 回归原理
 
-## **线性回归**
+### 线性回归
 
-我们应该怎样从一大堆数据里求出回归方程呢？ 假定输入数据存放在矩阵 x 中，而回归系数存放在向量 w 中。那么对于给定的数据 X1，预测结果将会通过 Y = X1^T w 给出。现在的问题是，手里有一些 X 和对应的 y，怎样才能找到 w 呢？一个常用的方法就是找出使误差最小的 w 。这里的误差是指预测 y 值和真实 y 值之间的差值，使用该误差的简单累加将使得正差值和负差值相互抵消，所以我们采用平方误差（实际上就是我们通常所说的最小二乘法）。
+我们应该怎样从一大堆数据里求出回归方程呢？ 假定输入数据存放在矩阵 `x` 中，而回归系数存放在向量 `w` 中。那么对于给定的数据 `X1`，预测结果将会通过 `Y = X1^T w` 给出。现在的问题是，手里有一些 `X` 和对应的 `y`，怎样才能找到 `w` 呢？一个常用的方法就是找出使误差最小的 `w` 。这里的误差是指预测 `y` 值和真实 `y` 值之间的差值，使用该误差的简单累加将使得正差值和负差值相互抵消，所以我们采用平方误差（实际上就是我们通常所说的最小二乘法）。
 
-平方误差可以写做（其实我们是使用这个函数作为 loss function）:
+平方误差可以写做（其实我们是使用这个函数作为 `loss function`）：
 
 ![](img/5e9993de58221a9c89be2e9c4a126b64.png)
 
@@ -36,17 +37,17 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 
 ![](img/a222fb3be2cfb1f6aaf7f610c36f9cb6.png)
 
-。如果对 w 求导，得到
+。如果对 `w` 求导，得到
 
 ![](img/a99d11c624c0d94ea959c0350a7137dd.png)
 
-[ ](http://blog.csdn.net/nomadlx53/article/details/50849941)，令其等于零，解出 w 如下（具体求导过程为: http://blog.csdn.net/nomadlx53/article/details/50849941 ）:
+[ ](http://blog.csdn.net/nomadlx53/article/details/50849941)，令其等于零，解出 `w` 如下（具体求导过程为: `http://blog.csdn.net/nomadlx53/article/details/50849941` ）:
 
 ![](img/cc11e0c039662473f7d39697978b5939.png)
 
-### **线性回归 须知概念**
+#### 须知概念
 
-#### **矩阵求逆**
+##### 矩阵求逆
 
 因为我们在计算回归方程的回归系数时，用到的计算公式如下:
 
@@ -56,11 +57,11 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 
 判断矩阵的行列式是否为 0，若为 0 ，矩阵就不存在逆矩阵，不为 0 的话，矩阵才存在逆矩阵
 
-#### **最小二乘法**
+##### 最小二乘法
 
 最小二乘法（又称最小平方法）是一种数学优化技术。它通过最小化误差的平方和寻找数据的最佳函数匹配
 
-### **线性回归 工作原理**
+#### 工作原理
 
 ```
 读入数据，将数据特征x、特征标签y存储在矩阵x、y中
@@ -68,7 +69,7 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 使用最小二乘法求得 回归系数 w 的最佳估计
 ```
 
-### **线性回归 开发流程**
+#### 开发流程
 
 ```
 收集数据: 采用任意方法收集数据
@@ -79,7 +80,7 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 使用算法: 使用回归，可以在给定输入的时候预测出一个数值，这是对分类方法的提升，因为这样可以预测连续型数据而不仅仅是离散的类别标签
 ```
 
-### **线性回归 算法特点**
+#### 算法特点
 
 ```
 优点: 结果易于理解，计算上不复杂。
@@ -87,19 +88,24 @@ HorsePower = 0.0015 * annualSalary - 0.99 * hoursListeningToPublicRadio
 适用于数据类型: 数值型和标称型数据。
 ```
 
-### **线性回归 项目案例**
+#### 项目案例
 
-#### **完整代码：**
+##### 完整代码：
 
-```
+
+
+
+# 机器学习回归算法 Python 实现
+
+```python
 #!/usr/bin/python
 # coding:utf8
-&#x27;&#x27;&#x27;
+"""
 Created on Jan 8, 2011
 Update  on 2017-05-18
 Author: Peter Harrington/小瑶
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+"""
 from __future__ import print_function
 
 from numpy import *
@@ -107,14 +113,14 @@ import matplotlib.pylab as plt
 
 
 def loadDataSet(fileName):
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
     Returns: 
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
-    &quot;&quot;&quot;
+    """
     # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1
+    numFeat = len(open(fileName).readline().split('\t')) - 1
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -122,7 +128,7 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr = []
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
+        curLine = line.strip().split('\t')
         # i 从0到2，不包括2 
         for i in range(numFeat):
             # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
@@ -135,7 +141,7 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    """
     Description: 
         线性回归
     Args:
@@ -143,7 +149,7 @@ def standRegres(xArr, yArr):
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    """
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -153,7 +159,7 @@ def standRegres(xArr, yArr):
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
     # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -164,7 +170,7 @@ def standRegres(xArr, yArr):
 
 # 局部加权线性回归
 def lwlr(testPoint, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    """
         Description: 
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
         Args: 
@@ -180,7 +186,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    """
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -197,7 +203,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
@@ -205,7 +211,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
 
 
 def lwlrTest(testArr, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    """
         Description: 
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
         Args: 
@@ -215,7 +221,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
             k: 控制核函数的衰减速率
         Returns: 
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    """
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
@@ -228,7 +234,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
 
 
 def lwlrTestPlot(xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    """
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
         Args: 
@@ -238,7 +244,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
         Return: 
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    """
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -252,7 +258,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
 
 
 def rssError(yArr, yHatArr):
-    &#x27;&#x27;&#x27;
+    """
         Desc:
             计算分析预测误差的大小
         Args:
@@ -260,16 +266,16 @@ def rssError(yArr, yHatArr):
             yHatArr: 预测得到的估计值
         Returns:
             计算真实值和估计值得到的值的平方和作为最后的返回值
-    &#x27;&#x27;&#x27;
+    """
     return ((yArr - yHatArr)**2).sum()
 
 
 def ridgeRegres(xMat, yMat, lam=0.2):
-    &#x27;&#x27;&#x27;
+    """
         Desc: 
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
         Args: 
             xMat: 样本的特征数据，即 feature
@@ -277,21 +283,21 @@ def ridgeRegres(xMat, yMat, lam=0.2):
             lam: 引入的一个λ值，使得矩阵非奇异
         Returns: 
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    """
 
     xTx = xMat.T * xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1]) * lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T * yMat)
     return ws
 
 
 def ridgeTest(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    """
         Desc: 
             函数 ridgeTest() 用于在一组 λ 上测试结果
         Args: 
@@ -299,7 +305,7 @@ def ridgeTest(xArr, yArr):
             yArr: 样本数据的类别标签，即真实数据
         Returns: 
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    """
 
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -352,7 +358,7 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
                 wsTest[j] += eps * sign
                 yTest = xMat * wsTest
                 rssE = rssError(yMat.A, yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -361,31 +367,31 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
 
     # def scrapePage(inFile,outFile,yr,numPce,origPrc):
     #    from BeautifulSoup import BeautifulSoup
-    #    fr = open(inFile); fw=open(outFile,&#x27;a&#x27;) #a is append mode writing
+    #    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
     #    soup = BeautifulSoup(fr.read())
     #    i=1
-    #    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #    currentRow = soup.findAll('table', r="%d" % i)
     #    while(len(currentRow)!=0):
-    #        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    #        title = currentRow[0].findAll('a')[1].text
     #        lwrTitle = title.lower()
-    #        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+    #        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
     #            newFlag = 1.0
     #        else:
     #            newFlag = 0.0
-    #        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+    #        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
     #        if len(soldUnicde)==0:
-    #            print &quot;item #%d did not sell&quot; % i
+    #            print "item #%d did not sell" % i
     #        else:
-    #            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+    #            soldPrice = currentRow[0].findAll('td')[4]
     #            priceStr = soldPrice.text
-    #            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-    #            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-    #            if len(soldPrice)&gt;1:
-    #                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;) #strips out Free Shipping
-    #            print &quot;%s\t%d\t%s&quot; % (priceStr,newFlag,title)
-    #            fw.write(&quot;%d\t%d\t%d\t%f\t%s\n&quot; % (yr,numPce,newFlag,origPrc,priceStr))
+    #            priceStr = priceStr.replace('$','') #strips out $
+    #            priceStr = priceStr.replace(',','') #strips out ,
+    #            if len(soldPrice)>1:
+    #                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
+    #            print "%s\t%d\t%s" % (priceStr,newFlag,title)
+    #            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
     #        i += 1
-    #        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #        currentRow = soup.findAll('table', r="%d" % i)
     #    fw.close()
 
     # --------------------------------------------------------------
@@ -393,30 +399,29 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
     # 故改为了下边的样子，但是需要安装一个 beautifulSoup 这个第三方爬虫库，安装很简单，见下边
 
 
-&#x27;&#x27;&#x27;
 from time import sleep
 import json
 import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
-    myAPIstr = &#x27;AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY&#x27;
-    searchURL = &#x27;https://www.googleapis.com/shopping/search/v1/public/products?key=%s&amp;country=US&amp;q=lego+%d&amp;alt=json&#x27; % (myAPIstr, setNum)
+    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
-    for i in range(len(retDict[&#x27;items&#x27;])):
+    for i in range(len(retDict['items'])):
         try:
-            currItem = retDict[&#x27;items&#x27;][i]
-            if currItem[&#x27;product&#x27;][&#x27;condition&#x27;] == &#x27;new&#x27;:
+            currItem = retDict['items'][i]
+            if currItem['product']['condition'] == 'new':
                 newFlag = 1
             else: newFlag = 0
-            listOfInv = currItem[&#x27;product&#x27;][&#x27;inventories&#x27;]
+            listOfInv = currItem['product']['inventories']
             for item in listOfInv:
-                sellingPrice = item[&#x27;price&#x27;]
-                if  sellingPrice &gt; origPrc * 0.5:
-                    print (&quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice))
+                sellingPrice = item['price']
+                if  sellingPrice > origPrc * 0.5:
+                    print ("%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice))
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
-        except: print (&#x27;problem with item %d&#x27; % i)
+        except: print ('problem with item %d' % i)
 
 def setDataCollect(retX, retY):
     searchForSet(retX, retY, 8288, 2006, 800, 49.99)
@@ -436,9 +441,9 @@ def crossValidation(xArr,yArr,numVal=10):
         random.shuffle(indexList)
         for j in range(m):#create training set based on first 90% of values in indexList
                           #基于indexList中的前90%的值创建训练集
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
-gt56                trainY.append(yArr[indexList[j]])
+                trainY.append(yArr[indexList[j]])
             else:
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
@@ -460,9 +465,9 @@ gt56                trainY.append(yArr[indexList[j]])
     xMat = mat(xArr); yMat=mat(yArr).T
     meanX = mean(xMat,0); varX = var(xMat,0)
     unReg = bestWeights/varX
-    print (&quot;the best model from Ridge Regression is:\n&quot;,unReg)
-    print (&quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat))
-&#x27;&#x27;&#x27;
+    print ("the best model from Ridge Regression is:\n",unReg)
+    print ("with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat))
+
 
 # ----------------------------------------------------------------------------
 # 预测乐高玩具套装的价格 可运行版本，我们把乐高数据存储到了我们的 input 文件夹下，使用 beautifulSoup 爬去一下内容
@@ -471,7 +476,6 @@ gt56                trainY.append(yArr[indexList[j]])
 # 将下载文件解压，使用 windows 版本的 cmd 命令行，进入解压的包，输入以下两行命令即可完成安装
 # python setup.py build
 # python setup.py install 
-&#x27;&#x27;&#x27;
 from numpy import *
 from bs4 import BeautifulSoup
 
@@ -484,48 +488,48 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     i=1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    currentRow = soup.findAll('table', r="%d" % i)
     while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
         if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$','') #strips out $
+            priceStr = priceStr.replace(',','') #strips out ,
+            if len(soldPrice)>1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if  sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
 # 依次读取六种乐高套装的数据，并生成数据矩阵        
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 
 
 # 交叉验证测试岭回归
@@ -546,7 +550,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -582,14 +586,13 @@ def crossValidation(xArr,yArr,numVal=10):
     unReg = bestWeights/varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
-&#x27;&#x27;&#x27;
+    print "the best model from Ridge Regression is:\n",unReg
+    print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)
 
 
 # test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -608,7 +611,7 @@ def regression1():
 
 # test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:, 1].argsort(
@@ -620,48 +623,48 @@ def regression2():
     ax.scatter(
         [xMat[:, 1].flatten().A[0]], [mat(yArr).T.flatten().A[0]],
         s=2,
-        c=&#x27;red&#x27;)
+        c='red')
     plt.show()
 
 
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    """
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    """
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
     oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print((&quot;old yHat01 error Size is :&quot;, rssError(abY[0:99], oldyHat01.T)))
-    print((&quot;old yHat1 error Size is :&quot;, rssError(abY[0:99], oldyHat1.T)))
-    print((&quot;old yHat10 error Size is :&quot;, rssError(abY[0:99], oldyHat10.T)))
+    print(("old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)))
+    print(("old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)))
+    print(("old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)))
 
     # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print((&quot;new yHat01 error Size is :&quot;, rssError(abY[0:99], newyHat01.T)))
+    print(("new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)))
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print((&quot;new yHat1 error Size is :&quot;, rssError(abY[0:99], newyHat1.T)))
+    print(("new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)))
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print((&quot;new yHat10 error Size is :&quot;, rssError(abY[0:99], newyHat10.T)))
+    print(("new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)))
 
     # 使用简单的 线性回归 进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print((&quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)))
+    print(("standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)))
 
 
 # test for ridgeRegression
 def regression3():
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -671,7 +674,7 @@ def regression3():
 
 # test for stageWise
 def regression4():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/abalone.txt")
     stageWise(xArr, yArr, 0.01, 200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -682,7 +685,7 @@ def regression4():
     print(weights.T)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -691,7 +694,7 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     regression1()
     # regression2()
     # abaloneTest()
@@ -700,7 +703,11 @@ if __name__ == &quot;__main__&quot;:
     # regression5()
 ```
 
-#### **线性回归 项目概述**
+
+
+# 线性回归
+
+## 项目概述
 
 根据下图中的点，找出该数据的最佳拟合直线
 
@@ -716,19 +723,19 @@ x0          x1          y
 1.000000        0.738336        4.256571
 ```
 
-#### **线性回归 编写代码**
+## 编写代码
 
 ```
 def loadDataSet(fileName):                 
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
     Returns: 
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
 
-    &quot;&quot;&quot;
+    """
     # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1 
+    numFeat = len(open(fileName).readline().split('\t')) - 1 
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -736,7 +743,7 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr =[]
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
+        curLine = line.strip().split('\t')
         # i 从0到2，不包括2 
         for i in range(numFeat):
             # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
@@ -749,7 +756,7 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr,yArr):
-    &#x27;&#x27;&#x27;
+    '''
     Description: 
         线性回归
     Args:
@@ -757,7 +764,7 @@ def standRegres(xArr,yArr):
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -767,7 +774,7 @@ def standRegres(xArr,yArr):
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
     # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
     if linalg.det(xTx) == 0.0:
-        print &quot;This matrix is singular, cannot do inverse&quot; 
+        print "This matrix is singular, cannot do inverse" 
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -777,7 +784,7 @@ def standRegres(xArr,yArr):
 
 
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -791,35 +798,35 @@ def regression1():
     plt.show()
 ```
 
-#### **线性回归 拟合效果**
+## 拟合效果
 
 ![](img/1cf8bf027aed739f6cd41f35ebe3cf90.png)
 
-# **局部加权线性回归**
+# 局部加权线性回归
 
 线性回归的一个问题是有可能出现欠拟合现象，因为它求的是具有最小均方差的无偏估计。显而易见，如果模型欠拟合将不能取得最好的预测效果。所以有些方法允许在估计中引入一些偏差，从而降低预测的均方误差
 
-一个方法是局部加权线性回归（Locally Weighted Linear Regression，LWLR）。在这个算法中，我们给预测点附近的每个点赋予一定的权重，然后与 线性回归 类似，在这个子集上基于最小均方误差来进行普通的回归。我们需要最小化的目标函数大致为:
+一个方法是局部加权线性回归（Locally Weighted Linear Regression，`LWLR`）。在这个算法中，我们给预测点附近的每个点赋予一定的权重，然后与线性回归类似，在这个子集上基于最小均方误差来进行普通的回归。我们需要最小化的目标函数大致为:
 
 ![](img/a5380b6e2ce441d3325dcd33504030a7.png)
 
-目标函数中 w 为权重，不是回归系数。与 kNN 一样，这种算法每次预测均需要事先选取出对应的数据子集。该算法解出回归系数 w 的形式如下:
+目标函数中 `w` 为权重，不是回归系数。与 `kNN` 一样，这种算法每次预测均需要事先选取出对应的数据子集。该算法解出回归系数 `w` 的形式如下:
 
 ![](img/9240e67edfd27836a3efc55e7c8acfe8.png)
 
-其中 W 是一个矩阵，用来给每个数据点赋予权重。 则为回归系数。 这两个是不同的概念，请勿混用
+其中 `W` 是一个矩阵，用来给每个数据点赋予权重。 则为回归系数。 这两个是不同的概念，请勿混用
 
-LWLR 使用 “核”（与支持向量机中的核类似）来对附近的点赋予更高的权重。核的类型可以自由选择，最常用的核就是高斯核，高斯核对应的权重如下:
+`LWLR` 使用 “核”（与支持向量机中的核类似）来对附近的点赋予更高的权重。核的类型可以自由选择，最常用的核就是高斯核，高斯核对应的权重如下:
 
 ![](img/bc1c680b4220263a6402046140b3f584.png)
 
-**这**样就构建了一个只含对角元素的权重矩阵 w，并且点 x 与 x(i) 越近，w(i) 将会越大。上述公式中包含一个需要用户指定的参数 k ，它决定了对附近的点赋予多大的权重，这也是使用 LWLR 时唯一需要考虑的参数，下面的图给出了参数 k 与权重的关系
+这样就构建了一个只含对角元素的权重矩阵 `w`，并且点 `x` 与 `x(i)` 越近，`w(i)` 将会越大。上述公式中包含一个需要用户指定的参数 `k` ，它决定了对附近的点赋予多大的权重，这也是使用 `LWLR` 时唯一需要考虑的参数，下面的图给出了参数 `k` 与权重的关系
 
 ![](img/6ff901bcc1b9cad0e181bb92a4e2b960.png)
 
-上面的图是 每个点的权重图（假定我们正预测的点是 x = 0.5），最上面的图是原始数据集，第二个图显示了当 k = 0.5 时，大部分的数据都用于训练回归模型；而最下面的图显示当 k=0.01 时，仅有很少的局部点被用于训练回归模型
+上面的图是 每个点的权重图（假定我们正预测的点是 `x = 0.5`），最上面的图是原始数据集，第二个图显示了当 `k = 0.5` 时，大部分的数据都用于训练回归模型；而最下面的图显示当 `k=0.01` 时，仅有很少的局部点被用于训练回归模型
 
-## **局部加权线性回归 工作原理**
+## 工作原理
 
 ```
 读入数据，将数据特征x、特征标签y存储在矩阵x、y中
@@ -828,19 +835,21 @@ LWLR 使用 “核”（与支持向量机中的核类似）来对附近的点�
 使用最小二乘法求得 回归系数 w 的最佳估计
 ```
 
-## **局部加权线性回归 项目案例**
+## 项目案例
 
 ### 完整代码：
 
-```
+
+
+```python
 #!/usr/bin/python
 # coding:utf8
-&#x27;&#x27;&#x27;
+"""
 Created on Jan 8, 2011
 Update  on 2017-05-18
 Author: Peter Harrington/小瑶
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+"""
 from __future__ import print_function
 
 from numpy import *
@@ -848,14 +857,14 @@ import matplotlib.pylab as plt
 
 
 def loadDataSet(fileName):
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
     Returns: 
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
-    &quot;&quot;&quot;
+    """
     # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1
+    numFeat = len(open(fileName).readline().split('\t')) - 1
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -863,7 +872,7 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr = []
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
+        curLine = line.strip().split('\t')
         # i 从0到2，不包括2 
         for i in range(numFeat):
             # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
@@ -876,7 +885,7 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    '''
     Description: 
         线性回归
     Args:
@@ -884,7 +893,7 @@ def standRegres(xArr, yArr):
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -894,7 +903,7 @@ def standRegres(xArr, yArr):
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
     # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -905,7 +914,7 @@ def standRegres(xArr, yArr):
 
 # 局部加权线性回归
 def lwlr(testPoint, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
         Args: 
@@ -921,7 +930,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    '''
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -938,7 +947,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
@@ -946,17 +955,17 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
 
 
 def lwlrTest(testArr, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
         Args: 
             testArr: 测试所用的所有样本点
             xArr: 样本的特征数据，即 feature
-            yArr: 每个样本对应的类别标签，即目标变量
+            yArr: 每个样本的类别标签，即目标变量
             k: 控制核函数的衰减速率
         Returns: 
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    '''
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
@@ -969,17 +978,17 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
 
 
 def lwlrTestPlot(xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
         Args: 
             xArr: 样本的特征数据，即 feature
-            yArr: 每个样本对应的类别标签，即目标变量，实际值
+            yArr: 每个样本的类别标签，即目标变量，实际值
             k: 控制核函数的衰减速率的有关参数，这里设定的是常量值 1
         Return: 
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    '''
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -993,7 +1002,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
 
 
 def rssError(yArr, yHatArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc:
             计算分析预测误差的大小
         Args:
@@ -1001,16 +1010,16 @@ def rssError(yArr, yHatArr):
             yHatArr: 预测得到的估计值
         Returns:
             计算真实值和估计值得到的值的平方和作为最后的返回值
-    &#x27;&#x27;&#x27;
+    '''
     return ((yArr - yHatArr)**2).sum()
 
 
 def ridgeRegres(xMat, yMat, lam=0.2):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
         Args: 
             xMat: 样本的特征数据，即 feature
@@ -1018,21 +1027,21 @@ def ridgeRegres(xMat, yMat, lam=0.2):
             lam: 引入的一个λ值，使得矩阵非奇异
         Returns: 
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     xTx = xMat.T * xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1]) * lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T * yMat)
     return ws
 
 
 def ridgeTest(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             函数 ridgeTest() 用于在一组 λ 上测试结果
         Args: 
@@ -1040,7 +1049,7 @@ def ridgeTest(xArr, yArr):
             yArr: 样本数据的类别标签，即真实数据
         Returns: 
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    '''
 
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -1093,7 +1102,7 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
                 wsTest[j] += eps * sign
                 yTest = xMat * wsTest
                 rssE = rssError(yMat.A, yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -1102,31 +1111,31 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
 
     # def scrapePage(inFile,outFile,yr,numPce,origPrc):
     #    from BeautifulSoup import BeautifulSoup
-    #    fr = open(inFile); fw=open(outFile,&#x27;a&#x27;) #a is append mode writing
+    #    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
     #    soup = BeautifulSoup(fr.read())
     #    i=1
-    #    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #    currentRow = soup.findAll('table', r="%d" % i)
     #    while(len(currentRow)!=0):
-    #        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    #        title = currentRow[0].findAll('a')[1].text
     #        lwrTitle = title.lower()
-    #        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+    #        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
     #            newFlag = 1.0
     #        else:
     #            newFlag = 0.0
-    #        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+    #        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
     #        if len(soldUnicde)==0:
-    #            print &quot;item #%d did not sell&quot; % i
+    #            print "item #%d did not sell" % i
     #        else:
-    #            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+    #            soldPrice = currentRow[0].findAll('td')[4]
     #            priceStr = soldPrice.text
-    #            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-    #            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-    #            if len(soldPrice)&gt;1:
-    #                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;) #strips out Free Shipping
-    #            print &quot;%s\t%d\t%s&quot; % (priceStr,newFlag,title)
-    #            fw.write(&quot;%d\t%d\t%d\t%f\t%s\n&quot; % (yr,numPce,newFlag,origPrc,priceStr))
+    #            priceStr = priceStr.replace('$','') #strips out $
+    #            priceStr = priceStr.replace(',','') #strips out ,
+    #            if len(soldPrice)>1:
+    #                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
+    #            print "%s\t%d\t%s" % (priceStr,newFlag,title)
+    #            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
     #        i += 1
-    #        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #        currentRow = soup.findAll('table', r="%d" % i)
     #    fw.close()
 
     # --------------------------------------------------------------
@@ -1134,30 +1143,30 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
     # 故改为了下边的样子，但是需要安装一个 beautifulSoup 这个第三方爬虫库，安装很简单，见下边
 
 
-&#x27;&#x27;&#x27;
+'''
 from time import sleep
 import json
 import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
-    myAPIstr = &#x27;AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY&#x27;
-    searchURL = &#x27;https://www.googleapis.com/shopping/search/v1/public/products?key=%s&amp;country=US&amp;q=lego+%d&amp;alt=json&#x27; % (myAPIstr, setNum)
+    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
-    for i in range(len(retDict[&#x27;items&#x27;])):
+    for i in range(len(retDict['items'])):
         try:
-            currItem = retDict[&#x27;items&#x27;][i]
-            if currItem[&#x27;product&#x27;][&#x27;condition&#x27;] == &#x27;new&#x27;:
+            currItem = retDict['items'][i]
+            if currItem['product']['condition'] == 'new':
                 newFlag = 1
             else: newFlag = 0
-            listOfInv = currItem[&#x27;product&#x27;][&#x27;inventories&#x27;]
+            listOfInv = currItem['product']['inventories']
             for item in listOfInv:
-                sellingPrice = item[&#x27;price&#x27;]
-                if  sellingPrice &gt; origPrc * 0.5:
-                    print (&quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice))
+                sellingPrice = item['price']
+                if  sellingPrice > origPrc * 0.5:
+                    print ("%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice))
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
-        except: print (&#x27;problem with item %d&#x27; % i)
+        except: print ('problem with item %d' % i)
 
 def setDataCollect(retX, retY):
     searchForSet(retX, retY, 8288, 2006, 800, 49.99)
@@ -1177,9 +1186,9 @@ def crossValidation(xArr,yArr,numVal=10):
         random.shuffle(indexList)
         for j in range(m):#create training set based on first 90% of values in indexList
                           #基于indexList中的前90%的值创建训练集
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
-gt56                trainY.append(yArr[indexList[j]])
+ gt56                trainY.append(yArr[indexList[j]])
             else:
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
@@ -1201,9 +1210,9 @@ gt56                trainY.append(yArr[indexList[j]])
     xMat = mat(xArr); yMat=mat(yArr).T
     meanX = mean(xMat,0); varX = var(xMat,0)
     unReg = bestWeights/varX
-    print (&quot;the best model from Ridge Regression is:\n&quot;,unReg)
-    print (&quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat))
-&#x27;&#x27;&#x27;
+    print ("the best model from Ridge Regression is:\n",unReg)
+    print ("with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat))
+'''
 
 # ----------------------------------------------------------------------------
 # 预测乐高玩具套装的价格 可运行版本，我们把乐高数据存储到了我们的 input 文件夹下，使用 beautifulSoup 爬去一下内容
@@ -1212,7 +1221,7 @@ gt56                trainY.append(yArr[indexList[j]])
 # 将下载文件解压，使用 windows 版本的 cmd 命令行，进入解压的包，输入以下两行命令即可完成安装
 # python setup.py build
 # python setup.py install 
-&#x27;&#x27;&#x27;
+'''
 from numpy import *
 from bs4 import BeautifulSoup
 
@@ -1225,48 +1234,48 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     i=1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    currentRow = soup.findAll('table', r="%d" % i)
     while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
         if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$','') #strips out $
+            priceStr = priceStr.replace(',','') #strips out ,
+            if len(soldPrice)>1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if  sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
 # 依次读取六种乐高套装的数据，并生成数据矩阵        
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 
 
 # 交叉验证测试岭回归
@@ -1287,7 +1296,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -1323,14 +1332,14 @@ def crossValidation(xArr,yArr,numVal=10):
     unReg = bestWeights/varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
-&#x27;&#x27;&#x27;
+    print "the best model from Ridge Regression is:\n",unReg
+    print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)
+'''
 
 
 # test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -1349,7 +1358,7 @@ def regression1():
 
 # test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:, 1].argsort(
@@ -1361,48 +1370,48 @@ def regression2():
     ax.scatter(
         [xMat[:, 1].flatten().A[0]], [mat(yArr).T.flatten().A[0]],
         s=2,
-        c=&#x27;red&#x27;)
+        c='red')
     plt.show()
 
 
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    '''
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    '''
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
     oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print((&quot;old yHat01 error Size is :&quot;, rssError(abY[0:99], oldyHat01.T)))
-    print((&quot;old yHat1 error Size is :&quot;, rssError(abY[0:99], oldyHat1.T)))
-    print((&quot;old yHat10 error Size is :&quot;, rssError(abY[0:99], oldyHat10.T)))
+    print(("old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)))
+    print(("old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)))
+    print(("old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)))
 
     # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print((&quot;new yHat01 error Size is :&quot;, rssError(abY[0:99], newyHat01.T)))
+    print(("new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)))
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print((&quot;new yHat1 error Size is :&quot;, rssError(abY[0:99], newyHat1.T)))
+    print(("new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)))
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print((&quot;new yHat10 error Size is :&quot;, rssError(abY[0:99], newyHat10.T)))
+    print(("new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)))
 
     # 使用简单的 线性回归 进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print((&quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)))
+    print(("standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)))
 
 
 # test for ridgeRegression
 def regression3():
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -1412,7 +1421,7 @@ def regression3():
 
 # test for stageWise
 def regression4():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/abalone.txt")
     stageWise(xArr, yArr, 0.01, 200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -1423,7 +1432,7 @@ def regression4():
     print(weights.T)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -1432,7 +1441,7 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     regression1()
     # regression2()
     # abaloneTest()
@@ -1441,7 +1450,9 @@ if __name__ == &quot;__main__&quot;:
     # regression5()
 ```
 
-### **局部加权线性回归 项目概述**
+
+
+## 局部加权线性回归 项目概述
 
 我们仍然使用上面 线性回归 的数据集，对这些点进行一个 局部加权线性回归 的拟合
 
@@ -1456,12 +1467,12 @@ if __name__ == &quot;__main__&quot;:
 1.000000        0.738336        4.256571
 ```
 
-### **局部加权线性回归 编写代码**
+## 局部加权线性回归 编写代码
 
 ```
     # 局部加权线性回归
 def lwlr(testPoint,xArr,yArr,k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
         Args: 
@@ -1477,7 +1488,7 @@ def lwlr(testPoint,xArr,yArr,k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    '''
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -1494,14 +1505,14 @@ def lwlr(testPoint,xArr,yArr,k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print (&quot;This matrix is singular, cannot do inverse&quot;)
+        print ("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
     return testPoint * ws
 
 def lwlrTest(testArr,xArr,yArr,k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
         Args: 
@@ -1511,7 +1522,7 @@ def lwlrTest(testArr,xArr,yArr,k=1.0):
             k: 控制核函数的衰减速率
         Returns: 
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    '''
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
@@ -1523,7 +1534,7 @@ def lwlrTest(testArr,xArr,yArr,k=1.0):
     return yHat
 
 def lwlrTestPlot(xArr,yArr,k=1.0):  
-    &#x27;&#x27;&#x27;
+    '''
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
         Args: 
@@ -1533,7 +1544,7 @@ def lwlrTestPlot(xArr,yArr,k=1.0):
         Return: 
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    '''
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -1548,7 +1559,7 @@ def lwlrTestPlot(xArr,yArr,k=1.0):
 
 #test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:,1].argsort(0)           # argsort()函数是将x中的元素从小到大排列，提取其对应的index(索引)，然后输出
@@ -1556,17 +1567,17 @@ def regression2():
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ax.plot(xSort[:,1], yHat[srtInd])
-    ax.scatter(xMat[:,1].flatten().A[0], mat(yArr).T.flatten().A[0] , s=2, c=&#x27;red&#x27;)
+    ax.scatter(xMat[:,1].flatten().A[0], mat(yArr).T.flatten().A[0] , s=2, c='red')
     plt.show()
 ```
 
-### **局部加权线性回归 拟合效果**
+## 局部加权线性回归 拟合效果
 
 ![](img/aaccb97c54600707a2030a7ee47b6d0c.png)
 
-上图使用了 3 种不同平滑值绘出的局部加权线性回归的结果。上图中的平滑系数 k =1.0，中图 k = 0.01，下图 k = 0.003 。可以看到，k = 1.0 时的使所有数据等比重，其模型效果与基本的线性回归相同，k=0.01时该模型可以挖出数据的潜在规律，而 k=0.003时则考虑了太多的噪声，进而导致了过拟合现象
+上图使用了 3 种不同平滑值绘出的局部加权线性回归的结果。上图中的平滑系数 `k = 1.0`，中图 `k = 0.01`，下图 `k = 0.003` 。可以看到，`k = 1.0` 时的使所有数据等比重，其模型效果与基本的线性回归相同，`k=0.01`时该模型可以挖出数据的潜在规律，而 `k=0.003`时则考虑了太多的噪声，进而导致了过拟合现象
 
-### **局部加权线性回归 注意事项**
+## 局部加权线性回归 注意事项
 
 局部加权线性回归也存在一个问题，即增加了计算量，因为它对每个点做预测时都必须使用整个数据集
 
@@ -1574,15 +1585,21 @@ def regression2():
 
 ## 完整代码：
 
-```
+
+
+# 机器学习回归算法 Python 实现
+
+本模块基于 `Python`、`NumPy` 与 `Matplotlib` 实现了多种回归算法，并提供了基于 `BeautifulSoup` 的乐高玩具套装价格爬取与预测示例。主要内容包括数据集加载、立体回归、局部加权线性回归（`lwlr`）、误差计算、岭回归、前向逐步回归及交叉验证等。
+
+```python
 #!/usr/bin/python
 # coding:utf8
-&#x27;&#x27;&#x27;
+'''
 Created on Jan 8, 2011
 Update  on 2017-05-18
 Author: Peter Harrington/小瑶
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+'''
 from __future__ import print_function
 
 from numpy import *
@@ -1590,14 +1607,14 @@ import matplotlib.pylab as plt
 
 
 def loadDataSet(fileName):
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
     Returns: 
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
-    &quot;&quot;&quot;
+    """
     # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1
+    numFeat = len(open(fileName).readline().split('\t')) - 1
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -1605,7 +1622,7 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr = []
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
+        curLine = line.strip().split('\t')
         # i 从0到2，不包括2 
         for i in range(numFeat):
             # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
@@ -1618,7 +1635,7 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    '''
     Description: 
         线性回归
     Args:
@@ -1626,7 +1643,7 @@ def standRegres(xArr, yArr):
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -1636,7 +1653,7 @@ def standRegres(xArr, yArr):
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
     # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -1647,7 +1664,7 @@ def standRegres(xArr, yArr):
 
 # 局部加权线性回归
 def lwlr(testPoint, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
         Args: 
@@ -1663,7 +1680,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    '''
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -1680,7 +1697,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
@@ -1688,7 +1705,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
 
 
 def lwlrTest(testArr, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
         Args: 
@@ -1698,7 +1715,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
             k: 控制核函数的衰减速率
         Returns: 
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    '''
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
@@ -1711,7 +1728,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
 
 
 def lwlrTestPlot(xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
         Args: 
@@ -1721,7 +1738,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
         Return: 
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    '''
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -1735,7 +1752,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
 
 
 def rssError(yArr, yHatArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc:
             计算分析预测误差的大小
         Args:
@@ -1743,16 +1760,16 @@ def rssError(yArr, yHatArr):
             yHatArr: 预测得到的估计值
         Returns:
             计算真实值和估计值得到的值的平方和作为最后的返回值
-    &#x27;&#x27;&#x27;
+    '''
     return ((yArr - yHatArr)**2).sum()
 
 
 def ridgeRegres(xMat, yMat, lam=0.2):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
         Args: 
             xMat: 样本的特征数据，即 feature
@@ -1760,21 +1777,21 @@ def ridgeRegres(xMat, yMat, lam=0.2):
             lam: 引入的一个λ值，使得矩阵非奇异
         Returns: 
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     xTx = xMat.T * xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1]) * lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T * yMat)
     return ws
 
 
 def ridgeTest(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             函数 ridgeTest() 用于在一组 λ 上测试结果
         Args: 
@@ -1782,7 +1799,7 @@ def ridgeTest(xArr, yArr):
             yArr: 样本数据的类别标签，即真实数据
         Returns: 
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    '''
 
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -1835,7 +1852,7 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
                 wsTest[j] += eps * sign
                 yTest = xMat * wsTest
                 rssE = rssError(yMat.A, yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -1844,31 +1861,31 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
 
     # def scrapePage(inFile,outFile,yr,numPce,origPrc):
     #    from BeautifulSoup import BeautifulSoup
-    #    fr = open(inFile); fw=open(outFile,&#x27;a&#x27;) #a is append mode writing
+    #    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
     #    soup = BeautifulSoup(fr.read())
     #    i=1
-    #    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #    currentRow = soup.findAll('table', r="%d" % i)
     #    while(len(currentRow)!=0):
-    #        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    #        title = currentRow[0].findAll('a')[1].text
     #        lwrTitle = title.lower()
-    #        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+    #        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
     #            newFlag = 1.0
     #        else:
     #            newFlag = 0.0
-    #        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+    #        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
     #        if len(soldUnicde)==0:
-    #            print &quot;item #%d did not sell&quot; % i
+    #            print "item #%d did not sell" % i
     #        else:
-    #            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+    #            soldPrice = currentRow[0].findAll('td')[4]
     #            priceStr = soldPrice.text
-    #            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-    #            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-    #            if len(soldPrice)&gt;1:
-    #                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;) #strips out Free Shipping
-    #            print &quot;%s\t%d\t%s&quot; % (priceStr,newFlag,title)
-    #            fw.write(&quot;%d\t%d\t%d\t%f\t%s\n&quot; % (yr,numPce,newFlag,origPrc,priceStr))
+    #            priceStr = priceStr.replace('$','') #strips out $
+    #            priceStr = priceStr.replace(',','') #strips out ,
+    #            if len(soldPrice)>1:
+    #                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
+    #            print "%s\t%d\t%s" % (priceStr,newFlag,title)
+    #            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
     #        i += 1
-    #        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #        currentRow = soup.findAll('table', r="%d" % i)
     #    fw.close()
 
     # --------------------------------------------------------------
@@ -1876,30 +1893,29 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
     # 故改为了下边的样子，但是需要安装一个 beautifulSoup 这个第三方爬虫库，安装很简单，见下边
 
 
-&#x27;&#x27;&#x27;
 from time import sleep
 import json
 import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
-    myAPIstr = &#x27;AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY&#x27;
-    searchURL = &#x27;https://www.googleapis.com/shopping/search/v1/public/products?key=%s&amp;country=US&amp;q=lego+%d&amp;alt=json&#x27; % (myAPIstr, setNum)
+    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
-    for i in range(len(retDict[&#x27;items&#x27;])):
+    for i in range(len(retDict['items'])):
         try:
-            currItem = retDict[&#x27;items&#x27;][i]
-            if currItem[&#x27;product&#x27;][&#x27;condition&#x27;] == &#x27;new&#x27;:
+            currItem = retDict['items'][i]
+            if currItem['product']['condition'] == 'new':
                 newFlag = 1
             else: newFlag = 0
-            listOfInv = currItem[&#x27;product&#x27;][&#x27;inventories&#x27;]
+            listOfInv = currItem['product']['inventories']
             for item in listOfInv:
-                sellingPrice = item[&#x27;price&#x27;]
-                if  sellingPrice &gt; origPrc * 0.5:
-                    print (&quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice))
+                sellingPrice = item['price']
+                if  sellingPrice > origPrc * 0.5:
+                    print ("%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice))
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
-        except: print (&#x27;problem with item %d&#x27; % i)
+        except: print ('problem with item %d' % i)
 
 def setDataCollect(retX, retY):
     searchForSet(retX, retY, 8288, 2006, 800, 49.99)
@@ -1919,9 +1935,9 @@ def crossValidation(xArr,yArr,numVal=10):
         random.shuffle(indexList)
         for j in range(m):#create training set based on first 90% of values in indexList
                           #基于indexList中的前90%的值创建训练集
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
-gt56                trainY.append(yArr[indexList[j]])
+                trainY.append(yArr[indexList[j]])
             else:
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
@@ -1943,9 +1959,9 @@ gt56                trainY.append(yArr[indexList[j]])
     xMat = mat(xArr); yMat=mat(yArr).T
     meanX = mean(xMat,0); varX = var(xMat,0)
     unReg = bestWeights/varX
-    print (&quot;the best model from Ridge Regression is:\n&quot;,unReg)
-    print (&quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat))
-&#x27;&#x27;&#x27;
+    print ("the best model from Ridge Regression is:\n",unReg)
+    print ("with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat))
+
 
 # ----------------------------------------------------------------------------
 # 预测乐高玩具套装的价格 可运行版本，我们把乐高数据存储到了我们的 input 文件夹下，使用 beautifulSoup 爬去一下内容
@@ -1954,7 +1970,6 @@ gt56                trainY.append(yArr[indexList[j]])
 # 将下载文件解压，使用 windows 版本的 cmd 命令行，进入解压的包，输入以下两行命令即可完成安装
 # python setup.py build
 # python setup.py install 
-&#x27;&#x27;&#x27;
 from numpy import *
 from bs4 import BeautifulSoup
 
@@ -1967,48 +1982,48 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     i=1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    currentRow = soup.findAll('table', r="%d" % i)
     while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
         if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$','') #strips out $
+            priceStr = priceStr.replace(',','') #strips out ,
+            if len(soldPrice)>1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if  sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
 # 依次读取六种乐高套装的数据，并生成数据矩阵        
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 
 
 # 交叉验证测试岭回归
@@ -2029,7 +2044,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -2065,14 +2080,13 @@ def crossValidation(xArr,yArr,numVal=10):
     unReg = bestWeights/varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
-&#x27;&#x27;&#x27;
+    print "the best model from Ridge Regression is:\n",unReg
+    print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)
 
 
 # test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -2091,7 +2105,7 @@ def regression1():
 
 # test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:, 1].argsort(
@@ -2103,48 +2117,48 @@ def regression2():
     ax.scatter(
         [xMat[:, 1].flatten().A[0]], [mat(yArr).T.flatten().A[0]],
         s=2,
-        c=&#x27;red&#x27;)
+        c='red')
     plt.show()
 
 
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    '''
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    '''
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
     oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print((&quot;old yHat01 error Size is :&quot;, rssError(abY[0:99], oldyHat01.T)))
-    print((&quot;old yHat1 error Size is :&quot;, rssError(abY[0:99], oldyHat1.T)))
-    print((&quot;old yHat10 error Size is :&quot;, rssError(abY[0:99], oldyHat10.T)))
+    print(("old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)))
+    print(("old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)))
+    print(("old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)))
 
     # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print((&quot;new yHat01 error Size is :&quot;, rssError(abY[0:99], newyHat01.T)))
+    print(("new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)))
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print((&quot;new yHat1 error Size is :&quot;, rssError(abY[0:99], newyHat1.T)))
+    print(("new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)))
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print((&quot;new yHat10 error Size is :&quot;, rssError(abY[0:99], newyHat10.T)))
+    print(("new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)))
 
     # 使用简单的 线性回归 进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print((&quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)))
+    print(("standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)))
 
 
 # test for ridgeRegression
 def regression3():
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -2154,7 +2168,7 @@ def regression3():
 
 # test for stageWise
 def regression4():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/abalone.txt")
     stageWise(xArr, yArr, 0.01, 200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -2165,7 +2179,7 @@ def regression4():
     print(weights.T)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -2174,7 +2188,7 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     regression1()
     # regression2()
     # abaloneTest()
@@ -2183,18 +2197,20 @@ if __name__ == &quot;__main__&quot;:
     # regression5()
 ```
 
-## **项目概述**
 
-我们有一份来自 UCI 的数据集合的数据，记录了鲍鱼（一种介壳类水生动物）的年龄。鲍鱼年龄可以从鲍鱼壳的层数推算得到
 
-## **开发流程**
+# 项目概述
+
+我们有一份来自 UCI 的数据集合的数据，记录了鲍鱼（一种介壳类水生动物）的年龄。鲍鱼年龄可以从鲍鱼壳的层数推算得到。
+
+# 开发流程
 
 ```
 收集数据: 采用任意方法收集数据
 准备数据: 回归需要数值型数据，标称型数据将被转换成二值型数据
 分析数据: 绘出数据的可视化二维图将有助于对数据做出理解和分析，在采用缩减法求得新回归系数之后，可以将新拟合线绘在图上作为对比
 训练算法: 找到回归系数
-测试算法: 使用 rssError()函数 计算预测误差的大小，来分析模型的效果
+测试算法: 使用 `rssError()` 函数计算预测误差的大小，来分析模型的效果
 使用算法: 使用回归，可以在给定输入的时候预测出一个数值，这是对分类方法的提升，因为这样可以预测连续型数据而不仅仅是离散的类别标签
 ```
 
@@ -2218,65 +2234,65 @@ if __name__ == &quot;__main__&quot;:
 
 使用上面我们讲到的 局部加权线性回归 训练算法，求出回归系数
 
-> 测试算法: 使用 rssError()函数 计算预测误差的大小，来分析模型的效果
+> 测试算法: 使用 `rssError()` 函数计算预测误差的大小，来分析模型的效果
 
 ```
-def rssError(yArr,yHatArr):
-    &#x27;&#x27;&#x27;
+def rssError(yArr, yHatArr):
+    '''
     Desc:
-        返回真实值与预测值误差大小
-    Args: 
-        yArr: 样本的真实值
-        yHatArr: 样本的预测值
+        返回真实值与预测值误差大小
+    Args:
+        yArr: 样本的真实值
+        yHatArr: 样本的预测值
     Returns:
-        一个数字，代表误差
-    &#x27;&#x27;&#x27;
-   return ((yArr-yHatArr)**2).sum()
+        一个数字，代表误差
+    '''
+    return ((yArr - yHatArr) ** 2).sum()
 ```
 
 ```
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    '''
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    '''
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
-    oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)   
+    oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print &quot;old yHat01 error Size is :&quot; , rssError(abY[0:99], oldyHat01.T)
-    print &quot;old yHat1 error Size is :&quot; , rssError(abY[0:99], oldyHat1.T)
-    print &quot;old yHat10 error Size is :&quot; , rssError(abY[0:99], oldyHat10.T)
+    print "old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)
+    print "old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)
+    print "old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)
 
-    # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
+    # 打印出不同的核预测值与新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print &quot;new yHat01 error Size is :&quot; , rssError(abY[0:99], newyHat01.T)
+    print "new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print &quot;new yHat1 error Size is :&quot; , rssError(abY[0:99], newyHat1.T)
+    print "new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print &quot;new yHat10 error Size is :&quot; , rssError(abY[0:99], newyHat10.T)
+    print "new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)
 
-    # 使用简单的 线性回归 进行预测，与上面的计算进行比较
+    # 使用简单的线性回归进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print &quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)
+    print "standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)
 ```
 
 根据我们上边的测试，可以看出:
 
-简单线性回归达到了与局部加权现行回归类似的效果。这也说明了一点，必须在未知数据上比较效果才能选取到最佳模型。那么最佳的核大小是 10 吗？或许是，但如果想得到更好的效果，可以尝试用 10 个不同的样本集做 10 次测试来比较结果
+简单线性回归达到了与局部加权线性回归类似的效果。这也说明了一点，必须在未知数据上比较效果才能选取到最佳模型。那么最佳的核大小是 10 吗？或许是，但如果想得到更好的效果，可以尝试用 10 个不同的样本集做 10 次测试来比较结果。
 
 > 使用算法: 使用回归，可以在给定输入的时候预测出一个数值，这是对分类方法的提升，因为这样可以预测连续型数据而不仅仅是离散的类别标签
 
-# **缩减系数来 “理解” 数据**
+# 缩减系数来“理解”数据
 
 如果数据的特征比样本点还多应该怎么办？是否还可以使用线性回归和之前的方法来做预测？答案是否定的，即我们不能再使用前面介绍的方法。这是因为在计算
 
@@ -2286,9 +2302,9 @@ def abaloneTest():
 
 如果特征比样本点还多(n > m)，也就是说输入数据的矩阵 x 不是满秩矩阵。非满秩矩阵求逆时会出现问题
 
-为了解决这个问题，我们引入了 岭回归（ridge regression） 这种缩减方法。接着是 lasso法，最后介绍 前向逐步回归
+为了解决这个问题，我们引入了岭回归（ridge regression）这种缩减方法。接着是 lasso 法，最后介绍前向逐步回归
 
-## **岭回归**
+## 岭回归
 
 简单来说，岭回归就是在矩阵
 
@@ -2298,11 +2314,11 @@ def abaloneTest():
 
 ![](img/27197500e33d107077707fd9ee0387ee.png)
 
-求逆。其中矩阵I是一个 n * n （等于列数） 的单位矩阵， 对角线上元素全为1，其他元素全为0。而λ是一个用户定义的数值，后面会做介绍。在这种情况下，回归系数的计算公式将变成:
+求逆。其中矩阵 I 是一个 n * n（等于列数）的单位矩阵，对角线上元素全为 1，其他元素全为 0。而 λ 是一个用户定义的数值，后面会做介绍。在这种情况下，回归系数的计算公式将变成:
 
 ![](img/b1cf1ce5899938073d08e5dfb7534e72.png)
 
-岭回归最先用来处理特征数多于样本数的情况，现在也用于在估计中加入偏差，从而得到更好的估计。这里通过引入 λ 来限制了所有 w 之和，通过引入该惩罚项，能够减少不重要的参数，这个技术在统计学中也叫作 缩减(shrinkage)
+岭回归最先用来处理特征数多于样本数的情况，现在也用于在估计中加入偏差，从而得到更好的估计。这里通过引入 λ 来限制了所有 w 之和，通过引入该惩罚项，能够减少不重要的参数，这个技术在统计学中也叫作缩减(shrinkage)
 
 ![](img/6dc9db78c5b4bf91ce5b6b78c393c283.png)
 
@@ -2310,34 +2326,37 @@ def abaloneTest():
 
 这里通过预测误差最小化得到 λ: 数据获取之后，首先抽一部分数据用于测试，剩余的作为训练集用于训练参数 w。训练完毕后在测试集上测试预测性能。通过选取不同的 λ 来重复上述测试过程，最终得到一个使预测误差最小的 λ
 
-### **岭回归 原始代码**
+### 岭回归 原始代码
 
 #### 完整代码
 
-```
+
+
+# 机器学习回归算法 Python 实现
+
+```python
 #!/usr/bin/python
 # coding:utf8
-&#x27;&#x27;&#x27;
+'''
 Created on Jan 8, 2011
-Update  on 2017-05-18
+Update on 2017-05-18
 Author: Peter Harrington/小瑶
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+'''
 from __future__ import print_function
 
 from numpy import *
 import matplotlib.pylab as plt
 
-
 def loadDataSet(fileName):
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
     Returns: 
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
-    &quot;&quot;&quot;
+    """
     # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1
+    numFeat = len(open(fileName).readline().split('\t')) - 1
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -2345,7 +2364,7 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr = []
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
+        curLine = line.strip().split('\t')
         # i 从0到2，不包括2 
         for i in range(numFeat):
             # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
@@ -2358,7 +2377,7 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    """
     Description: 
         线性回归
     Args:
@@ -2366,7 +2385,7 @@ def standRegres(xArr, yArr):
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    """
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -2374,9 +2393,9 @@ def standRegres(xArr, yArr):
     # 矩阵乘法的条件是左矩阵的列数等于右矩阵的行数
     xTx = xMat.T * xMat
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
-    # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
+    # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -2387,7 +2406,7 @@ def standRegres(xArr, yArr):
 
 # 局部加权线性回归
 def lwlr(testPoint, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    """
         Description: 
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
         Args: 
@@ -2403,7 +2422,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    """
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -2420,7 +2439,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
@@ -2428,7 +2447,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
 
 
 def lwlrTest(testArr, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    """
         Description: 
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
         Args: 
@@ -2438,7 +2457,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
             k: 控制核函数的衰减速率
         Returns: 
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    """
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
@@ -2451,7 +2470,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
 
 
 def lwlrTestPlot(xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    """
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
         Args: 
@@ -2461,7 +2480,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
         Return: 
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    """
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -2475,7 +2494,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
 
 
 def rssError(yArr, yHatArr):
-    &#x27;&#x27;&#x27;
+    """
         Desc:
             计算分析预测误差的大小
         Args:
@@ -2483,16 +2502,16 @@ def rssError(yArr, yHatArr):
             yHatArr: 预测得到的估计值
         Returns:
             计算真实值和估计值得到的值的平方和作为最后的返回值
-    &#x27;&#x27;&#x27;
+    """
     return ((yArr - yHatArr)**2).sum()
 
 
 def ridgeRegres(xMat, yMat, lam=0.2):
-    &#x27;&#x27;&#x27;
+    """
         Desc: 
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
         Args: 
             xMat: 样本的特征数据，即 feature
@@ -2500,21 +2519,21 @@ def ridgeRegres(xMat, yMat, lam=0.2):
             lam: 引入的一个λ值，使得矩阵非奇异
         Returns: 
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    """
 
     xTx = xMat.T * xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1]) * lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T * yMat)
     return ws
 
 
 def ridgeTest(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    """
         Desc: 
             函数 ridgeTest() 用于在一组 λ 上测试结果
         Args: 
@@ -2522,7 +2541,7 @@ def ridgeTest(xArr, yArr):
             yArr: 样本数据的类别标签，即真实数据
         Returns: 
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    """
 
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -2575,7 +2594,7 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
                 wsTest[j] += eps * sign
                 yTest = xMat * wsTest
                 rssE = rssError(yMat.A, yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -2584,31 +2603,31 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
 
     # def scrapePage(inFile,outFile,yr,numPce,origPrc):
     #    from BeautifulSoup import BeautifulSoup
-    #    fr = open(inFile); fw=open(outFile,&#x27;a&#x27;) #a is append mode writing
+    #    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
     #    soup = BeautifulSoup(fr.read())
     #    i=1
-    #    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #    currentRow = soup.findAll('table', r="%d" % i)
     #    while(len(currentRow)!=0):
-    #        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    #        title = currentRow[0].findAll('a')[1].text
     #        lwrTitle = title.lower()
-    #        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+    #        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
     #            newFlag = 1.0
     #        else:
     #            newFlag = 0.0
-    #        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+    #        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
     #        if len(soldUnicde)==0:
-    #            print &quot;item #%d did not sell&quot; % i
+    #            print "item #%d did not sell" % i
     #        else:
-    #            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+    #            soldPrice = currentRow[0].findAll('td')[4]
     #            priceStr = soldPrice.text
-    #            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-    #            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-    #            if len(soldPrice)&gt;1:
-    #                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;) #strips out Free Shipping
-    #            print &quot;%s\t%d\t%s&quot; % (priceStr,newFlag,title)
-    #            fw.write(&quot;%d\t%d\t%d\t%f\t%s\n&quot; % (yr,numPce,newFlag,origPrc,priceStr))
+    #            priceStr = priceStr.replace('$','') #strips out $
+    #            priceStr = priceStr.replace(',','') #strips out ,
+    #            if len(soldPrice)>1:
+    #                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
+    #            print "%s\t%d\t%s" % (priceStr,newFlag,title)
+    #            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
     #        i += 1
-    #        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #        currentRow = soup.findAll('table', r="%d" % i)
     #    fw.close()
 
     # --------------------------------------------------------------
@@ -2616,30 +2635,29 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
     # 故改为了下边的样子，但是需要安装一个 beautifulSoup 这个第三方爬虫库，安装很简单，见下边
 
 
-&#x27;&#x27;&#x27;
 from time import sleep
 import json
 import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
-    myAPIstr = &#x27;AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY&#x27;
-    searchURL = &#x27;https://www.googleapis.com/shopping/search/v1/public/products?key=%s&amp;country=US&amp;q=lego+%d&amp;alt=json&#x27; % (myAPIstr, setNum)
+    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
-    for i in range(len(retDict[&#x27;items&#x27;])):
+    for i in range(len(retDict['items'])):
         try:
-            currItem = retDict[&#x27;items&#x27;][i]
-            if currItem[&#x27;product&#x27;][&#x27;condition&#x27;] == &#x27;new&#x27;:
+            currItem = retDict['items'][i]
+            if currItem['product']['condition'] == 'new':
                 newFlag = 1
             else: newFlag = 0
-            listOfInv = currItem[&#x27;product&#x27;][&#x27;inventories&#x27;]
+            listOfInv = currItem['product']['inventories']
             for item in listOfInv:
-                sellingPrice = item[&#x27;price&#x27;]
-                if  sellingPrice &gt; origPrc * 0.5:
-                    print (&quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice))
+                sellingPrice = item['price']
+                if  sellingPrice > origPrc * 0.5:
+                    print ("%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice))
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
-        except: print (&#x27;problem with item %d&#x27; % i)
+        except: print ('problem with item %d' % i)
 
 def setDataCollect(retX, retY):
     searchForSet(retX, retY, 8288, 2006, 800, 49.99)
@@ -2659,9 +2677,9 @@ def crossValidation(xArr,yArr,numVal=10):
         random.shuffle(indexList)
         for j in range(m):#create training set based on first 90% of values in indexList
                           #基于indexList中的前90%的值创建训练集
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
-gt56                trainY.append(yArr[indexList[j]])
+                trainY.append(yArr[indexList[j]])
             else:
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
@@ -2683,9 +2701,9 @@ gt56                trainY.append(yArr[indexList[j]])
     xMat = mat(xArr); yMat=mat(yArr).T
     meanX = mean(xMat,0); varX = var(xMat,0)
     unReg = bestWeights/varX
-    print (&quot;the best model from Ridge Regression is:\n&quot;,unReg)
-    print (&quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat))
-&#x27;&#x27;&#x27;
+    print ("the best model from Ridge Regression is:\n",unReg)
+    print ("with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat))
+
 
 # ----------------------------------------------------------------------------
 # 预测乐高玩具套装的价格 可运行版本，我们把乐高数据存储到了我们的 input 文件夹下，使用 beautifulSoup 爬去一下内容
@@ -2694,7 +2712,6 @@ gt56                trainY.append(yArr[indexList[j]])
 # 将下载文件解压，使用 windows 版本的 cmd 命令行，进入解压的包，输入以下两行命令即可完成安装
 # python setup.py build
 # python setup.py install 
-&#x27;&#x27;&#x27;
 from numpy import *
 from bs4 import BeautifulSoup
 
@@ -2707,48 +2724,48 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     i=1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    currentRow = soup.findAll('table', r="%d" % i)
     while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
         if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$','') #strips out $
+            priceStr = priceStr.replace(',','') #strips out ,
+            if len(soldPrice)>1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if  sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
 # 依次读取六种乐高套装的数据，并生成数据矩阵        
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 
 
 # 交叉验证测试岭回归
@@ -2769,7 +2786,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -2805,14 +2822,13 @@ def crossValidation(xArr,yArr,numVal=10):
     unReg = bestWeights/varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
-&#x27;&#x27;&#x27;
+    print "the best model from Ridge Regression is:\n",unReg
+    print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)
 
 
 # test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -2831,7 +2847,7 @@ def regression1():
 
 # test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:, 1].argsort(
@@ -2843,48 +2859,48 @@ def regression2():
     ax.scatter(
         [xMat[:, 1].flatten().A[0]], [mat(yArr).T.flatten().A[0]],
         s=2,
-        c=&#x27;red&#x27;)
+        c='red')
     plt.show()
 
 
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    """
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    """
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
     oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print((&quot;old yHat01 error Size is :&quot;, rssError(abY[0:99], oldyHat01.T)))
-    print((&quot;old yHat1 error Size is :&quot;, rssError(abY[0:99], oldyHat1.T)))
-    print((&quot;old yHat10 error Size is :&quot;, rssError(abY[0:99], oldyHat10.T)))
+    print(("old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)))
+    print(("old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)))
+    print(("old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)))
 
     # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print((&quot;new yHat01 error Size is :&quot;, rssError(abY[0:99], newyHat01.T)))
+    print(("new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)))
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print((&quot;new yHat1 error Size is :&quot;, rssError(abY[0:99], newyHat1.T)))
+    print(("new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)))
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print((&quot;new yHat10 error Size is :&quot;, rssError(abY[0:99], newyHat10.T)))
+    print(("new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)))
 
     # 使用简单的 线性回归 进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print((&quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)))
+    print(("standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)))
 
 
 # test for ridgeRegression
 def regression3():
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -2894,7 +2910,7 @@ def regression3():
 
 # test for stageWise
 def regression4():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/abalone.txt")
     stageWise(xArr, yArr, 0.01, 200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -2905,7 +2921,7 @@ def regression4():
     print(weights.T)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -2914,7 +2930,7 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     regression1()
     # regression2()
     # abaloneTest()
@@ -2923,13 +2939,15 @@ if __name__ == &quot;__main__&quot;:
     # regression5()
 ```
 
+
+
 ```
 def ridgeRegres(xMat,yMat,lam=0.2):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
         Args: 
             xMat: 样本的特征数据，即 feature
@@ -2937,21 +2955,21 @@ def ridgeRegres(xMat,yMat,lam=0.2):
             lam: 引入的一个λ值，使得矩阵非奇异
         Returns: 
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     xTx = xMat.T*xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1])*lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print (&quot;This matrix is singular, cannot do inverse&quot;)
+        print ("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T*yMat)
     return ws
 
 
 def ridgeTest(xArr,yArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             函数 ridgeTest() 用于在一组 λ 上测试结果
         Args: 
@@ -2959,7 +2977,7 @@ def ridgeTest(xArr,yArr):
             yArr: 样本数据的类别标签，即真实数据
         Returns: 
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    '''
 
     xMat = mat(xArr)
     yMat=mat(yArr).T
@@ -2986,7 +3004,7 @@ def ridgeTest(xArr,yArr):
 
 #test for ridgeRegression
 def regression3():
-    abX,abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX,abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -2994,29 +3012,29 @@ def regression3():
     plt.show()
 ```
 
-### **岭回归在鲍鱼数据集上的运行效果**
+### 岭回归在鲍鱼数据集上的运行效果
 
 ![](img/a5a761579554af0a5797f8808c4a97db.png)
 
-上图绘制出了回归系数与 log(λ) 的关系。在最左边，即 λ 最小时，可以得到所有系数的原始值（与线性回归一致）；而在右边，系数全部缩减为0；在中间部分的某值将可以取得最好的预测效果。为了定量地找到最佳参数值，还需要进行交叉验证。另外，要判断哪些变量对结果预测最具有影响力，在上图中观察它们对应的系数大小就可以了
+上图绘制出了回归系数与 `log(λ)` 的关系。在最左边，即 `λ` 最小时，可以得到所有系数的原始值（与线性回归一致）；而在右边，系数全部缩减为 0；在中间部分的某值将可以取得最好的预测效果。为了定量地找到最佳参数值，还需要进行交叉验证。另外，要判断哪些变量对结果预测最具有影响力，在上图中观察它们对应的系数大小就可以了
 
-## **套**索方法(Lasso，The Least Absolute Shrinkage and Selection Operator)
+## 套索方法(Lasso，The Least Absolute Shrinkage and Selection Operator)
 
 在增加如下约束时，普通的最小二乘法回归会得到与岭回归一样的公式:
 
 ![](img/4a7b6462f673818e69619fd4269e755e.png)
 
-上式限定了所有回归系数的平方和不能大于 λ 。使用普通的最小二乘法回归在当两个或更多的特征相关时，可能会得到一个很大的正系数和一个很大的负系数。正是因为上述限制条件的存在，使用岭回归可以避免这个问题。
+上式限定了所有回归系数的平方和不能大于 `λ` 。使用普通的最小二乘法回归在当两个或更多的特征相关时，可能会得到一个很大的正系数和一个很大的负系数。正是因为上述限制条件的存在，使用岭回归可以避免这个问题。
 
-与岭回归类似，另一个缩减方法lasso也对回归系数做了限定，对应的约束条件如下:
+与岭回归类似，另一个缩减方法 `lasso` 也对回归系数做了限定，对应的约束条件如下:
 
 ![](img/93a7debe26dd6cb040a640c5a400fe27.png)
 
-唯一的不同点在于，这个约束条件使用绝对值取代了平方和。虽然约束形式只是稍作变化，结果却大相径庭: 在 λ 足够小的时候，一些系数会因此被迫缩减到 0.这个特性可以帮助我们更好地理解数据
+唯一的不同点在于，这个约束条件使用绝对值取代了平方和。虽然约束形式只是稍作变化，结果却大相径庭: 在 `λ` 足够小的时候，一些系数会因此被迫缩减到 0。这个特性可以帮助我们更好地理解数据
 
-### **前向逐步回归**
+### 前向逐步回归
 
-前向逐步回归算法可以得到与 lasso 差不多的效果，但更加简单。它属于一种贪心算法，即每一步都尽可能减少误差。一开始，所有权重都设置为 0，然后每一步所做的决策是对某个权重增加或减少一个很小的值
+前向逐步回归算法可以得到与 `lasso` 差不多的效果，但更加简单。它属于一种贪心算法，即每一步都尽可能减少误差。一开始，所有权重都设置为 0，然后每一步所做的决策是对某个权重增加或减少一个很小的值
 
 伪代码如下:
 
@@ -3032,19 +3050,23 @@ def regression3():
         将 W 设置为新的 Wbest
 ```
 
-#### **前向逐步回归 原始代码**
+#### 前向逐步回归 原始代码
 
-**代码地址：**
+代码地址：
 
-```
+
+
+# 回归算法 Python 代码实现
+
+```python
 #!/usr/bin/python
 # coding:utf8
-&#x27;&#x27;&#x27;
+'''
 Created on Jan 8, 2011
 Update  on 2017-05-18
 Author: Peter Harrington/小瑶
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+'''
 from __future__ import print_function
 
 from numpy import *
@@ -3052,14 +3074,14 @@ import matplotlib.pylab as plt
 
 
 def loadDataSet(fileName):
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
     Returns: 
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
-    &quot;&quot;&quot;
+    """
     # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1
+    numFeat = len(open(fileName).readline().split('\t')) - 1
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -3067,7 +3089,7 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr = []
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
+        curLine = line.strip().split('\t')
         # i 从0到2，不包括2 
         for i in range(numFeat):
             # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
@@ -3080,7 +3102,7 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    '''
     Description: 
         线性回归
     Args:
@@ -3088,7 +3110,7 @@ def standRegres(xArr, yArr):
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -3098,7 +3120,7 @@ def standRegres(xArr, yArr):
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
     # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -3109,7 +3131,7 @@ def standRegres(xArr, yArr):
 
 # 局部加权线性回归
 def lwlr(testPoint, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
         Args: 
@@ -3125,7 +3147,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    '''
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -3142,7 +3164,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
@@ -3150,7 +3172,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
 
 
 def lwlrTest(testArr, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description: 
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
         Args: 
@@ -3160,7 +3182,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
             k: 控制核函数的衰减速率
         Returns: 
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    '''
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
@@ -3173,7 +3195,7 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
 
 
 def lwlrTestPlot(xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
         Args: 
@@ -3183,7 +3205,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
         Return: 
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    '''
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -3197,7 +3219,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
 
 
 def rssError(yArr, yHatArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc:
             计算分析预测误差的大小
         Args:
@@ -3205,16 +3227,16 @@ def rssError(yArr, yHatArr):
             yHatArr: 预测得到的估计值
         Returns:
             计算真实值和估计值得到的值的平方和作为最后的返回值
-    &#x27;&#x27;&#x27;
+    '''
     return ((yArr - yHatArr)**2).sum()
 
 
 def ridgeRegres(xMat, yMat, lam=0.2):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
         Args: 
             xMat: 样本的特征数据，即 feature
@@ -3222,21 +3244,21 @@ def ridgeRegres(xMat, yMat, lam=0.2):
             lam: 引入的一个λ值，使得矩阵非奇异
         Returns: 
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     xTx = xMat.T * xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1]) * lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T * yMat)
     return ws
 
 
 def ridgeTest(xArr, yArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc: 
             函数 ridgeTest() 用于在一组 λ 上测试结果
         Args: 
@@ -3244,7 +3266,7 @@ def ridgeTest(xArr, yArr):
             yArr: 样本数据的类别标签，即真实数据
         Returns: 
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    '''
 
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -3297,7 +3319,7 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
                 wsTest[j] += eps * sign
                 yTest = xMat * wsTest
                 rssE = rssError(yMat.A, yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -3306,31 +3328,31 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
 
     # def scrapePage(inFile,outFile,yr,numPce,origPrc):
     #    from BeautifulSoup import BeautifulSoup
-    #    fr = open(inFile); fw=open(outFile,&#x27;a&#x27;) #a is append mode writing
+    #    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
     #    soup = BeautifulSoup(fr.read())
     #    i=1
-    #    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #    currentRow = soup.findAll('table', r="%d" % i)
     #    while(len(currentRow)!=0):
-    #        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    #        title = currentRow[0].findAll('a')[1].text
     #        lwrTitle = title.lower()
-    #        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+    #        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
     #            newFlag = 1.0
     #        else:
     #            newFlag = 0.0
-    #        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+    #        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
     #        if len(soldUnicde)==0:
-    #            print &quot;item #%d did not sell&quot; % i
+    #            print "item #%d did not sell" % i
     #        else:
-    #            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+    #            soldPrice = currentRow[0].findAll('td')[4]
     #            priceStr = soldPrice.text
-    #            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-    #            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-    #            if len(soldPrice)&gt;1:
-    #                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;) #strips out Free Shipping
-    #            print &quot;%s\t%d\t%s&quot; % (priceStr,newFlag,title)
-    #            fw.write(&quot;%d\t%d\t%d\t%f\t%s\n&quot; % (yr,numPce,newFlag,origPrc,priceStr))
+    #            priceStr = priceStr.replace('$','') #strips out $
+    #            priceStr = priceStr.replace(',','') #strips out ,
+    #            if len(soldPrice)>1:
+    #                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
+    #            print "%s\t%d\t%s" % (priceStr,newFlag,title)
+    #            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
     #        i += 1
-    #        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #        currentRow = soup.findAll('table', r="%d" % i)
     #    fw.close()
 
     # --------------------------------------------------------------
@@ -3338,30 +3360,30 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
     # 故改为了下边的样子，但是需要安装一个 beautifulSoup 这个第三方爬虫库，安装很简单，见下边
 
 
-&#x27;&#x27;&#x27;
+'''
 from time import sleep
 import json
 import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
-    myAPIstr = &#x27;AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY&#x27;
-    searchURL = &#x27;https://www.googleapis.com/shopping/search/v1/public/products?key=%s&amp;country=US&amp;q=lego+%d&amp;alt=json&#x27; % (myAPIstr, setNum)
+    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
-    for i in range(len(retDict[&#x27;items&#x27;])):
+    for i in range(len(retDict['items'])):
         try:
-            currItem = retDict[&#x27;items&#x27;][i]
-            if currItem[&#x27;product&#x27;][&#x27;condition&#x27;] == &#x27;new&#x27;:
+            currItem = retDict['items'][i]
+            if currItem['product']['condition'] == 'new':
                 newFlag = 1
             else: newFlag = 0
-            listOfInv = currItem[&#x27;product&#x27;][&#x27;inventories&#x27;]
+            listOfInv = currItem['product']['inventories']
             for item in listOfInv:
-                sellingPrice = item[&#x27;price&#x27;]
-                if  sellingPrice &gt; origPrc * 0.5:
-                    print (&quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice))
+                sellingPrice = item['price']
+                if  sellingPrice > origPrc * 0.5:
+                    print ("%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice))
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
-        except: print (&#x27;problem with item %d&#x27; % i)
+        except: print ('problem with item %d' % i)
 
 def setDataCollect(retX, retY):
     searchForSet(retX, retY, 8288, 2006, 800, 49.99)
@@ -3381,9 +3403,9 @@ def crossValidation(xArr,yArr,numVal=10):
         random.shuffle(indexList)
         for j in range(m):#create training set based on first 90% of values in indexList
                           #基于indexList中的前90%的值创建训练集
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
-gt56                trainY.append(yArr[indexList[j]])
+                trainY.append(yArr[indexList[j]])
             else:
                 testX.append(xArr[indexList[j]])
                 testY.append(yArr[indexList[j]])
@@ -3405,9 +3427,9 @@ gt56                trainY.append(yArr[indexList[j]])
     xMat = mat(xArr); yMat=mat(yArr).T
     meanX = mean(xMat,0); varX = var(xMat,0)
     unReg = bestWeights/varX
-    print (&quot;the best model from Ridge Regression is:\n&quot;,unReg)
-    print (&quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat))
-&#x27;&#x27;&#x27;
+    print ("the best model from Ridge Regression is:\n",unReg)
+    print ("with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat))
+'''
 
 # ----------------------------------------------------------------------------
 # 预测乐高玩具套装的价格 可运行版本，我们把乐高数据存储到了我们的 input 文件夹下，使用 beautifulSoup 爬去一下内容
@@ -3416,7 +3438,7 @@ gt56                trainY.append(yArr[indexList[j]])
 # 将下载文件解压，使用 windows 版本的 cmd 命令行，进入解压的包，输入以下两行命令即可完成安装
 # python setup.py build
 # python setup.py install 
-&#x27;&#x27;&#x27;
+'''
 from numpy import *
 from bs4 import BeautifulSoup
 
@@ -3429,48 +3451,48 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     i=1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    currentRow = soup.findAll('table', r="%d" % i)
     while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
         if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$','') #strips out $
+            priceStr = priceStr.replace(',','') #strips out ,
+            if len(soldPrice)>1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if  sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
 # 依次读取六种乐高套装的数据，并生成数据矩阵        
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 
 
 # 交叉验证测试岭回归
@@ -3491,7 +3513,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m*0.9: 
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -3527,14 +3549,14 @@ def crossValidation(xArr,yArr,numVal=10):
     unReg = bestWeights/varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
-&#x27;&#x27;&#x27;
+    print "the best model from Ridge Regression is:\n",unReg
+    print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)
+'''
 
 
 # test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -3553,7 +3575,7 @@ def regression1():
 
 # test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:, 1].argsort(
@@ -3565,48 +3587,48 @@ def regression2():
     ax.scatter(
         [xMat[:, 1].flatten().A[0]], [mat(yArr).T.flatten().A[0]],
         s=2,
-        c=&#x27;red&#x27;)
+        c='red')
     plt.show()
 
 
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    '''
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    '''
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
     oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print((&quot;old yHat01 error Size is :&quot;, rssError(abY[0:99], oldyHat01.T)))
-    print((&quot;old yHat1 error Size is :&quot;, rssError(abY[0:99], oldyHat1.T)))
-    print((&quot;old yHat10 error Size is :&quot;, rssError(abY[0:99], oldyHat10.T)))
+    print(("old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)))
+    print(("old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)))
+    print(("old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)))
 
     # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print((&quot;new yHat01 error Size is :&quot;, rssError(abY[0:99], newyHat01.T)))
+    print(("new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)))
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print((&quot;new yHat1 error Size is :&quot;, rssError(abY[0:99], newyHat1.T)))
+    print(("new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)))
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print((&quot;new yHat10 error Size is :&quot;, rssError(abY[0:99], newyHat10.T)))
+    print(("new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)))
 
     # 使用简单的 线性回归 进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print((&quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)))
+    print(("standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)))
 
 
 # test for ridgeRegression
 def regression3():
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -3616,7 +3638,7 @@ def regression3():
 
 # test for stageWise
 def regression4():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/abalone.txt")
     stageWise(xArr, yArr, 0.01, 200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -3627,7 +3649,7 @@ def regression4():
     print(weights.T)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -3636,7 +3658,7 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     regression1()
     # regression2()
     # abaloneTest()
@@ -3644,6 +3666,8 @@ if __name__ == &quot;__main__&quot;:
     # regression4()
     # regression5()
 ```
+
+
 
 ```
 def stageWise(xArr,yArr,eps=0.01,numIt=100):
@@ -3663,7 +3687,7 @@ def stageWise(xArr,yArr,eps=0.01,numIt=100):
                 wsTest[j] += eps*sign
                 yTest = xMat*wsTest
                 rssE = rssError(yMat.A,yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -3673,7 +3697,7 @@ def stageWise(xArr,yArr,eps=0.01,numIt=100):
 
 #test for stageWise
 def regression4():
-    xArr,yArr=loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr,yArr=loadDataSet("data/8.Regression/abalone.txt")
     print(stageWise(xArr,yArr,0.01,200))
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -3684,19 +3708,19 @@ def regression4():
     print (weights.T)
 ```
 
-## 逐步线性回归在鲍鱼数据集上的运行效果
+# 逐步线性回归在鲍鱼数据集上的运行效果
 
 ![](img/72d4ce966a12667fb720f932069e2f70.png)
 
 逐步线性回归算法的主要优点在于它可以帮助人们理解现有的模型并作出改进。当构建了一个模型后，可以运行该算法找出重要的特征，这样就有可能及时停止对那些不重要特征的收集。最后，如果用于测试，该算法每100次迭代后就可以构建出一个模型，可以使用类似于10折交叉验证的方法比较这些模型，最终选择使误差最小的模型
 
-## **小结**
+## 小结
 
 当应用缩减方法（如逐步线性回归或岭回归）时，模型也就增加了偏差（bias），与此同时却减小了模型的方差
 
-# **权衡偏差和方差**
+# 权衡偏差和方差
 
-任何时候，一旦发现模型和测量值之间存在差异，就说出现了误差。当考虑模型中的 “噪声” 或者说误差时，必须考虑其来源。你可能会对复杂的过程进行简化，这将导致在模型和测量值之间出现 “噪声” 或误差，若无法理解数据的真实生成过程，也会导致差异的产生。另外，测量过程本身也可能产生 “噪声” 或者问题。下面我们举一个例子，我们使用 线性回归 和 局部加权线性回归 处理过一个从文件导入的二维数据
+任何时候，一旦发现模型和测量值之间存在差异，就说出现了误差。当考虑模型中的“噪声”或者说误差时，必须考虑其来源。你可能会对复杂的过程进行简化，这将导致在模型和测量值之间出现“噪声”或误差，若无法理解数据的真实生成过程，也会导致差异的产生。另外，测量过程本身也可能产生“噪声”或者问题。下面我们举一个例子，我们使用 线性回归 和 局部加权线性回归 处理过一个从文件导入的二维数据
 
 ![](img/53cb17457601e8f44e1f4d39320f2c7f.png)
 
@@ -3712,21 +3736,23 @@ def regression4():
 
 方差是可以度量的。如果从鲍鱼数据中取一个随机样本集（例如取其中 100 个数据）并用线性模型拟合，将会得到一组回归系数。同理，再取出另一组随机样本集并拟合，将会得到另一组回归系数。这些系数间的差异大小也就是模型方差的反映
 
-# **回归 项目案例**
+# 回归 项目案例
 
 ## 项目案例: 预测乐高玩具套装的价格
 
-### **完整代码：**
+### 完整代码：
 
-```
+
+
+```python
 #!/usr/bin/python
 # coding:utf8
-&#x27;&#x27;&#x27;
+'''
 Created on Jan 8, 2011
 Update  on 2017-05-18
 Author: Peter Harrington/小瑶
 GitHub: https://github.com/apachecn/AiLearning
-&#x27;&#x27;&#x27;
+'''
 from __future__ import print_function
 
 from numpy import *
@@ -3734,14 +3760,14 @@ import matplotlib.pylab as plt
 
 
 def loadDataSet(fileName):
-    &quot;&quot;&quot; 加载数据
+    """ 加载数据
         解析以tab键分隔的文件中的浮点数
-    Returns: 
+    Returns:
         dataMat :   feature 对应的数据集
         labelMat :  feature 对应的分类标签，即类别标签
-    &quot;&quot;&quot;
-    # 获取样本特征的总数，不算最后的目标变量 
-    numFeat = len(open(fileName).readline().split(&#x27;\t&#x27;)) - 1
+    """
+    # 获取样本特征的总数，不算最后的目标变量
+    numFeat = len(open(fileName).readline().split('\t')) - 1
     dataMat = []
     labelMat = []
     fr = open(fileName)
@@ -3749,10 +3775,10 @@ def loadDataSet(fileName):
         # 读取每一行
         lineArr = []
         # 删除一行中以tab分隔的数据前后的空白符号
-        curLine = line.strip().split(&#x27;\t&#x27;)
-        # i 从0到2，不包括2 
+        curLine = line.strip().split('\t')
+        # i 从0到2，不包括2
         for i in range(numFeat):
-            # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量           
+            # 将数据添加到lineArr List中，每一行数据测试数据组成一个行向量
             lineArr.append(float(curLine[i]))
             # 将测试数据的输入数据部分存储到dataMat 的List中
         dataMat.append(lineArr)
@@ -3762,15 +3788,15 @@ def loadDataSet(fileName):
 
 
 def standRegres(xArr, yArr):
-    &#x27;&#x27;&#x27;
-    Description: 
+    '''
+    Description:
         线性回归
     Args:
         xArr : 输入的样本数据，包含每个样本数据的 feature
         yArr : 对应于输入数据的类别标签，也就是每个样本对应的目标变量
     Returns:
         ws: 回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     # mat()函数将xArr，yArr转换为矩阵 mat().T 代表的是对矩阵进行转置操作
     xMat = mat(xArr)
@@ -3778,9 +3804,9 @@ def standRegres(xArr, yArr):
     # 矩阵乘法的条件是左矩阵的列数等于右矩阵的行数
     xTx = xMat.T * xMat
     # 因为要用到xTx的逆矩阵，所以事先需要确定计算得到的xTx是否可逆，条件是矩阵的行列式不为0
-    # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算                   
+    # linalg.det() 函数是用来求得矩阵的行列式的，如果矩阵的行列式为0，则这个矩阵是不可逆的，就无法进行接下来的运算
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 最小二乘法
     # http://cwiki.apachecn.org/pages/viewpage.action?pageId=5505133
@@ -3791,10 +3817,10 @@ def standRegres(xArr, yArr):
 
 # 局部加权线性回归
 def lwlr(testPoint, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
-        Description: 
+    '''
+        Description:
             局部加权线性回归，在待预测点附近的每个点赋予一定的权重，在子集上基于最小均方差来进行普通的回归。
-        Args: 
+        Args:
             testPoint: 样本点
             xArr: 样本的特征数据，即 feature
             yArr: 每个样本对应的类别标签，即目标变量
@@ -3807,13 +3833,13 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
             关于预测点的选取，在我的代码中取的是样本点。其中k是带宽参数，控制w（钟形函数）的宽窄程度，类似于高斯函数的标准差。
             算法思路: 假设预测点取样本点中的第i个样本点（共m个样本点），遍历1到m个样本点（含第i个），算出每一个样本点与预测点的距离，
             也就可以计算出每个样本贡献误差的权值，可以看出w是一个有m个元素的向量（写成对角阵形式）。
-    &#x27;&#x27;&#x27;
+    '''
     # mat() 函数是将array转换为矩阵的函数， mat().T 是转换为矩阵之后，再进行转置操作
     xMat = mat(xArr)
     yMat = mat(yArr).T
     # 获得xMat矩阵的行数
     m = shape(xMat)[0]
-    # eye()返回一个对角线元素为1，其他元素为0的二维数组，创建权重矩阵weights，该矩阵为每个样本点初始化了一个权重                   
+    # eye()返回一个对角线元素为1，其他元素为0的二维数组，创建权重矩阵weights，该矩阵为每个样本点初始化了一个权重
     weights = mat(eye((m)))
     for j in range(m):
         # testPoint 的形式是 一个行向量的形式
@@ -3824,7 +3850,7 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
     # 根据矩阵乘法计算 xTx ，其中的 weights 矩阵是样本点对应的权重矩阵
     xTx = xMat.T * (weights * xMat)
     if linalg.det(xTx) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     # 计算出回归系数的一个估计
     ws = xTx.I * (xMat.T * (weights * yMat))
@@ -3832,22 +3858,22 @@ def lwlr(testPoint, xArr, yArr, k=1.0):
 
 
 def lwlrTest(testArr, xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
-        Description: 
+    '''
+        Description:
             测试局部加权线性回归，对数据集中每个点调用 lwlr() 函数
-        Args: 
+        Args:
             testArr: 测试所用的所有样本点
             xArr: 样本的特征数据，即 feature
             yArr: 每个样本对应的类别标签，即目标变量
             k: 控制核函数的衰减速率
-        Returns: 
+        Returns:
             yHat: 预测点的估计值
-    &#x27;&#x27;&#x27;
+    '''
     # 得到样本点的总数
     m = shape(testArr)[0]
     # 构建一个全部都是 0 的 1 * m 的矩阵
     yHat = zeros(m)
-    # 循环所有的数据点，并将lwlr运用于所有的数据点 
+    # 循环所有的数据点，并将lwlr运用于所有的数据点
     for i in range(m):
         yHat[i] = lwlr(testArr[i], xArr, yArr, k)
     # 返回估计值
@@ -3855,17 +3881,17 @@ def lwlrTest(testArr, xArr, yArr, k=1.0):
 
 
 def lwlrTestPlot(xArr, yArr, k=1.0):
-    &#x27;&#x27;&#x27;
+    '''
         Description:
             首先将 X 排序，其余的都与lwlrTest相同，这样更容易绘图
-        Args: 
+        Args:
             xArr: 样本的特征数据，即 feature
             yArr: 每个样本对应的类别标签，即目标变量，实际值
             k: 控制核函数的衰减速率的有关参数，这里设定的是常量值 1
-        Return: 
+        Return:
             yHat: 样本点的估计值
             xCopy: xArr的复制
-    &#x27;&#x27;&#x27;
+    '''
     # 生成一个与目标变量数目相同的 0 向量
     yHat = zeros(shape(yArr))
     # 将 xArr 转换为 矩阵形式
@@ -3879,7 +3905,7 @@ def lwlrTestPlot(xArr, yArr, k=1.0):
 
 
 def rssError(yArr, yHatArr):
-    &#x27;&#x27;&#x27;
+    '''
         Desc:
             计算分析预测误差的大小
         Args:
@@ -3887,46 +3913,46 @@ def rssError(yArr, yHatArr):
             yHatArr: 预测得到的估计值
         Returns:
             计算真实值和估计值得到的值的平方和作为最后的返回值
-    &#x27;&#x27;&#x27;
+    '''
     return ((yArr - yHatArr)**2).sum()
 
 
 def ridgeRegres(xMat, yMat, lam=0.2):
-    &#x27;&#x27;&#x27;
-        Desc: 
+    '''
+        Desc:
             这个函数实现了给定 lambda 下的岭回归求解。
             如果数据的特征比样本点还多，就不能再使用上面介绍的的线性回归和局部线性回归了，因为计算 (xTx)^(-1)会出现错误。
-            如果特征比样本点还多（n &gt; m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
+            如果特征比样本点还多（n > m），也就是说，输入数据的矩阵x不是满秩矩阵。非满秩矩阵在求逆时会出现问题。
             为了解决这个问题，我们下边讲一下: 岭回归，这是我们要讲的第一种缩减方法。
-        Args: 
+        Args:
             xMat: 样本的特征数据，即 feature
             yMat: 每个样本对应的类别标签，即目标变量，实际值
             lam: 引入的一个λ值，使得矩阵非奇异
-        Returns: 
+        Returns:
             经过岭回归公式计算得到的回归系数
-    &#x27;&#x27;&#x27;
+    '''
 
     xTx = xMat.T * xMat
     # 岭回归就是在矩阵 xTx 上加一个 λI 从而使得矩阵非奇异，进而能对 xTx + λI 求逆
     denom = xTx + eye(shape(xMat)[1]) * lam
     # 检查行列式是否为零，即矩阵是否可逆，行列式为0的话就不可逆，不为0的话就是可逆。
     if linalg.det(denom) == 0.0:
-        print(&quot;This matrix is singular, cannot do inverse&quot;)
+        print("This matrix is singular, cannot do inverse")
         return
     ws = denom.I * (xMat.T * yMat)
     return ws
 
 
 def ridgeTest(xArr, yArr):
-    &#x27;&#x27;&#x27;
-        Desc: 
+    '''
+        Desc:
             函数 ridgeTest() 用于在一组 λ 上测试结果
-        Args: 
+        Args:
             xArr: 样本数据的特征，即 feature
             yArr: 样本数据的类别标签，即真实数据
-        Returns: 
+        Returns:
             wMat: 将所有的回归系数输出到一个矩阵并返回
-    &#x27;&#x27;&#x27;
+    '''
 
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -3945,7 +3971,7 @@ def ridgeTest(xArr, yArr):
     # 创建30 * m 的全部数据为0 的矩阵
     wMat = zeros((numTestPts, shape(xMat)[1]))
     for i in range(numTestPts):
-        # exp() 返回 e^x 
+        # exp() 返回 e^x
         ws = ridgeRegres(xMat, yMat, exp(i - 10))
         wMat[i, :] = ws.T
     return wMat
@@ -3979,7 +4005,7 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
                 wsTest[j] += eps * sign
                 yTest = xMat * wsTest
                 rssE = rssError(yMat.A, yTest.A)
-                if rssE &lt; lowestError:
+                if rssE < lowestError:
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
@@ -3988,31 +4014,31 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
 
     # def scrapePage(inFile,outFile,yr,numPce,origPrc):
     #    from BeautifulSoup import BeautifulSoup
-    #    fr = open(inFile); fw=open(outFile,&#x27;a&#x27;) #a is append mode writing
+    #    fr = open(inFile); fw=open(outFile,'a') #a is append mode writing
     #    soup = BeautifulSoup(fr.read())
     #    i=1
-    #    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #    currentRow = soup.findAll('table', r="%d" % i)
     #    while(len(currentRow)!=0):
-    #        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    #        title = currentRow[0].findAll('a')[1].text
     #        lwrTitle = title.lower()
-    #        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+    #        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
     #            newFlag = 1.0
     #        else:
     #            newFlag = 0.0
-    #        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+    #        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
     #        if len(soldUnicde)==0:
-    #            print &quot;item #%d did not sell&quot; % i
+    #            print "item #%d did not sell" % i
     #        else:
-    #            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+    #            soldPrice = currentRow[0].findAll('td')[4]
     #            priceStr = soldPrice.text
-    #            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-    #            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-    #            if len(soldPrice)&gt;1:
-    #                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;) #strips out Free Shipping
-    #            print &quot;%s\t%d\t%s&quot; % (priceStr,newFlag,title)
-    #            fw.write(&quot;%d\t%d\t%d\t%f\t%s\n&quot; % (yr,numPce,newFlag,origPrc,priceStr))
+    #            priceStr = priceStr.replace('$','') #strips out $
+    #            priceStr = priceStr.replace(',','') #strips out ,
+    #            if len(soldPrice)>1:
+    #                priceStr = priceStr.replace('Free shipping', '') #strips out Free Shipping
+    #            print "%s\t%d\t%s" % (priceStr,newFlag,title)
+    #            fw.write("%d\t%d\t%d\t%f\t%s\n" % (yr,numPce,newFlag,origPrc,priceStr))
     #        i += 1
-    #        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    #        currentRow = soup.findAll('table', r="%d" % i)
     #    fw.close()
 
     # --------------------------------------------------------------
@@ -4020,30 +4046,30 @@ def stageWise(xArr, yArr, eps=0.01, numIt=100):
     # 故改为了下边的样子，但是需要安装一个 beautifulSoup 这个第三方爬虫库，安装很简单，见下边
 
 
-&#x27;&#x27;&#x27;
+'''
 from time import sleep
 import json
 import urllib2
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
     sleep(10)
-    myAPIstr = &#x27;AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY&#x27;
-    searchURL = &#x27;https://www.googleapis.com/shopping/search/v1/public/products?key=%s&amp;country=US&amp;q=lego+%d&amp;alt=json&#x27; % (myAPIstr, setNum)
+    myAPIstr = 'AIzaSyD2cR2KFyx12hXu6PFU-wrWot3NXvko8vY'
+    searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
     pg = urllib2.urlopen(searchURL)
     retDict = json.loads(pg.read())
-    for i in range(len(retDict[&#x27;items&#x27;])):
+    for i in range(len(retDict['items'])):
         try:
-            currItem = retDict[&#x27;items&#x27;][i]
-            if currItem[&#x27;product&#x27;][&#x27;condition&#x27;] == &#x27;new&#x27;:
+            currItem = retDict['items'][i]
+            if currItem['product']['condition'] == 'new':
                 newFlag = 1
             else: newFlag = 0
-            listOfInv = currItem[&#x27;product&#x27;][&#x27;inventories&#x27;]
+            listOfInv = currItem['product']['inventories']
             for item in listOfInv:
-                sellingPrice = item[&#x27;price&#x27;]
-                if  sellingPrice &gt; origPrc * 0.5:
-                    print (&quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice))
+                sellingPrice = item['price']
+                if  sellingPrice > origPrc * 0.5:
+                    print ("%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice))
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
-        except: print (&#x27;problem with item %d&#x27; % i)
+        except: print ('problem with item %d' % i)
 
 def setDataCollect(retX, retY):
     searchForSet(retX, retY, 8288, 2006, 800, 49.99)
@@ -4054,7 +4080,7 @@ def setDataCollect(retX, retY):
     searchForSet(retX, retY, 10196, 2009, 3263, 249.99)
 
 def crossValidation(xArr,yArr,numVal=10):
-    m = len(yArr)                           
+    m = len(yArr)
     indexList = range(m)
     errorMat = zeros((numVal,30))#create error mat 30columns numVal rows创建error mat 30columns numVal 行
     for i in range(numVal):
@@ -4063,7 +4089,7 @@ def crossValidation(xArr,yArr,numVal=10):
         random.shuffle(indexList)
         for j in range(m):#create training set based on first 90% of values in indexList
                           #基于indexList中的前90%的值创建训练集
-            if j &lt; m*0.9: 
+            if j < m*0.9:
                 trainX.append(xArr[indexList[j]])
 gt56                trainY.append(yArr[indexList[j]])
             else:
@@ -4087,18 +4113,18 @@ gt56                trainY.append(yArr[indexList[j]])
     xMat = mat(xArr); yMat=mat(yArr).T
     meanX = mean(xMat,0); varX = var(xMat,0)
     unReg = bestWeights/varX
-    print (&quot;the best model from Ridge Regression is:\n&quot;,unReg)
-    print (&quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat))
-&#x27;&#x27;&#x27;
+    print ("the best model from Ridge Regression is:\n",unReg)
+    print ("with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat))
+
 
 # ----------------------------------------------------------------------------
 # 预测乐高玩具套装的价格 可运行版本，我们把乐高数据存储到了我们的 input 文件夹下，使用 beautifulSoup 爬去一下内容
 # 前提: 安装 BeautifulSoup 第三方爬虫库，步骤如下
-# 在这个页面 https://www.crummy.com/software/BeautifulSoup/bs4/download/4.4/ 下载，beautifulsoup4-4.4.1.tar.gz 
+# 在这个页面 https://www.crummy.com/software/BeautifulSoup/bs4/download/4.4/ 下载，beautifulsoup4-4.4.1.tar.gz
 # 将下载文件解压，使用 windows 版本的 cmd 命令行，进入解压的包，输入以下两行命令即可完成安装
 # python setup.py build
-# python setup.py install 
-&#x27;&#x27;&#x27;
+# python setup.py install
+'''
 from numpy import *
 from bs4 import BeautifulSoup
 
@@ -4111,48 +4137,48 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     i=1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+    currentRow = soup.findAll('table', r="%d" % i)
     while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
         if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$','') #strips out $
+            priceStr = priceStr.replace(',','') #strips out ,
+            if len(soldPrice)>1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if  sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr,numPce,newFlag,origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
-# 依次读取六种乐高套装的数据，并生成数据矩阵        
+# 依次读取六种乐高套装的数据，并生成数据矩阵
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 
 
 # 交叉验证测试岭回归
@@ -4173,7 +4199,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m*0.9:
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -4209,14 +4235,13 @@ def crossValidation(xArr,yArr,numVal=10):
     unReg = bestWeights/varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
-&#x27;&#x27;&#x27;
+    print "the best model from Ridge Regression is:\n",unReg
+    print "with constant term: ",-1*sum(multiply(meanX,unReg)) + mean(yMat)
 
 
 # test for standRegression
 def regression1():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     xMat = mat(xArr)
     yMat = mat(yArr)
     ws = standRegres(xArr, yArr)
@@ -4235,7 +4260,7 @@ def regression1():
 
 # test for LWLR
 def regression2():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/data.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/data.txt")
     yHat = lwlrTest(xArr, xArr, yArr, 0.003)
     xMat = mat(xArr)
     srtInd = xMat[:, 1].argsort(
@@ -4247,48 +4272,48 @@ def regression2():
     ax.scatter(
         [xMat[:, 1].flatten().A[0]], [mat(yArr).T.flatten().A[0]],
         s=2,
-        c=&#x27;red&#x27;)
+        c='red')
     plt.show()
 
 
 # test for abloneDataSet
 def abaloneTest():
-    &#x27;&#x27;&#x27;
+    '''
     Desc:
         预测鲍鱼的年龄
     Args:
         None
     Returns:
         None
-    &#x27;&#x27;&#x27;
+    '''
     # 加载数据
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     # 使用不同的核进行预测
     oldyHat01 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 0.1)
     oldyHat1 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 1)
     oldyHat10 = lwlrTest(abX[0:99], abX[0:99], abY[0:99], 10)
     # 打印出不同的核预测值与训练数据集上的真实值之间的误差大小
-    print((&quot;old yHat01 error Size is :&quot;, rssError(abY[0:99], oldyHat01.T)))
-    print((&quot;old yHat1 error Size is :&quot;, rssError(abY[0:99], oldyHat1.T)))
-    print((&quot;old yHat10 error Size is :&quot;, rssError(abY[0:99], oldyHat10.T)))
+    print(("old yHat01 error Size is :", rssError(abY[0:99], oldyHat01.T)))
+    print(("old yHat1 error Size is :", rssError(abY[0:99], oldyHat1.T)))
+    print(("old yHat10 error Size is :", rssError(abY[0:99], oldyHat10.T)))
 
     # 打印出 不同的核预测值 与 新数据集（测试数据集）上的真实值之间的误差大小
     newyHat01 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 0.1)
-    print((&quot;new yHat01 error Size is :&quot;, rssError(abY[0:99], newyHat01.T)))
+    print(("new yHat01 error Size is :", rssError(abY[0:99], newyHat01.T)))
     newyHat1 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 1)
-    print((&quot;new yHat1 error Size is :&quot;, rssError(abY[0:99], newyHat1.T)))
+    print(("new yHat1 error Size is :", rssError(abY[0:99], newyHat1.T)))
     newyHat10 = lwlrTest(abX[100:199], abX[0:99], abY[0:99], 10)
-    print((&quot;new yHat10 error Size is :&quot;, rssError(abY[0:99], newyHat10.T)))
+    print(("new yHat10 error Size is :", rssError(abY[0:99], newyHat10.T)))
 
     # 使用简单的 线性回归 进行预测，与上面的计算进行比较
     standWs = standRegres(abX[0:99], abY[0:99])
     standyHat = mat(abX[100:199]) * standWs
-    print((&quot;standRegress error Size is:&quot;, rssError(abY[100:199], standyHat.T.A)))
+    print(("standRegress error Size is:", rssError(abY[100:199], standyHat.T.A)))
 
 
 # test for ridgeRegression
 def regression3():
-    abX, abY = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    abX, abY = loadDataSet("data/8.Regression/abalone.txt")
     ridgeWeights = ridgeTest(abX, abY)
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -4298,7 +4323,7 @@ def regression3():
 
 # test for stageWise
 def regression4():
-    xArr, yArr = loadDataSet(&quot;data/8.Regression/abalone.txt&quot;)
+    xArr, yArr = loadDataSet("data/8.Regression/abalone.txt")
     stageWise(xArr, yArr, 0.01, 200)
     xMat = mat(xArr)
     yMat = mat(yArr).T
@@ -4309,7 +4334,7 @@ def regression4():
     print(weights.T)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -4318,7 +4343,7 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     regression1()
     # regression2()
     # abaloneTest()
@@ -4327,11 +4352,13 @@ if __name__ == &quot;__main__&quot;:
     # regression5()
 ```
 
-## **项目概述**
+
+
+## 项目概述
 
 Dangler 喜欢为乐高套装估价，我们用回归技术来帮助他建立一个预测模型
 
-## **开发流程**
+## 开发流程
 
 ```
 (1) 收集数据: 用 Google Shopping 的API收集数据。
@@ -4342,19 +4369,19 @@ Dangler 喜欢为乐高套装估价，我们用回归技术来帮助他建立一
 (6) 使用算法: 这次练习的目标就是生成数据模型。
 ```
 
-> 收集数据: 使用 Google 购物的 API
+### 收集数据: 使用 Google 购物的 API
 
-由于 Google 提供的 api 失效，我们只能自己下载咯，将数据存储在了 input 文件夹下的 setHtml 文件夹下
+由于 Google 提供的 api 失效，我们只能自己下载咯，将数据存储在了 `input` 文件夹下的 `setHtml` 文件夹下
 
-> 准备数据: 从返回的 JSON 数据中抽取价格
+### 准备数据: 从返回的 JSON 数据中抽取价格
 
 因为我们这里不是在线的，就不再是 JSON 了，我们直接解析线下的网页，得到我们想要的数据
 
-> 分析数据: 可视化并观察数据
+### 分析数据: 可视化并观察数据
 
 这里我们将解析得到的数据打印出来，然后观察数据
 
-> 训练算法: 构建不同的模型
+### 训练算法: 构建不同的模型
 
 ```
 from numpy import *
@@ -4366,67 +4393,67 @@ def scrapePage(retX, retY, inFile, yr, numPce, origPrc):
     # 打开并读取HTML文件
     fr = open(inFile)
     soup = BeautifulSoup(fr.read())
-    i=1
+    i = 1
 
     # 根据HTML页面结构进行解析
-    currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-    while(len(currentRow)!=0):
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
-        title = currentRow[0].findAll(&#x27;a&#x27;)[1].text
+    currentRow = soup.findAll('table', r="%d" % i)
+    while (len(currentRow) != 0):
+        currentRow = soup.findAll('table', r="%d" % i)
+        title = currentRow[0].findAll('a')[1].text
         lwrTitle = title.lower()
 
         # 查找是否有全新标签
-        if (lwrTitle.find(&#x27;new&#x27;) &gt; -1) or (lwrTitle.find(&#x27;nisb&#x27;) &gt; -1):
+        if (lwrTitle.find('new') > -1) or (lwrTitle.find('nisb') > -1):
             newFlag = 1.0
         else:
             newFlag = 0.0
 
         # 查找是否已经标志出售，我们只收集已出售的数据
-        soldUnicde = currentRow[0].findAll(&#x27;td&#x27;)[3].findAll(&#x27;span&#x27;)
-        if len(soldUnicde)==0:
-            print &quot;item #%d did not sell&quot; % i
+        soldUnicde = currentRow[0].findAll('td')[3].findAll('span')
+        if len(soldUnicde) == 0:
+            print "item #%d did not sell" % i
         else:
             # 解析页面获取当前价格
-            soldPrice = currentRow[0].findAll(&#x27;td&#x27;)[4]
+            soldPrice = currentRow[0].findAll('td')[4]
             priceStr = soldPrice.text
-            priceStr = priceStr.replace(&#x27;$&#x27;,&#x27;&#x27;) #strips out $
-            priceStr = priceStr.replace(&#x27;,&#x27;,&#x27;&#x27;) #strips out ,
-            if len(soldPrice)&gt;1:
-                priceStr = priceStr.replace(&#x27;Free shipping&#x27;, &#x27;&#x27;)
+            priceStr = priceStr.replace('$', '') #strips out $
+            priceStr = priceStr.replace(',', '') #strips out ,
+            if len(soldPrice) > 1:
+                priceStr = priceStr.replace('Free shipping', '')
             sellingPrice = float(priceStr)
 
             # 去掉不完整的套装价格
-            if  sellingPrice &gt; origPrc * 0.5:
-                    print &quot;%d\t%d\t%d\t%f\t%f&quot; % (yr,numPce,newFlag,origPrc, sellingPrice)
+            if sellingPrice > origPrc * 0.5:
+                    print "%d\t%d\t%d\t%f\t%f" % (yr, numPce, newFlag, origPrc, sellingPrice)
                     retX.append([yr, numPce, newFlag, origPrc])
                     retY.append(sellingPrice)
         i += 1
-        currentRow = soup.findAll(&#x27;table&#x27;, r=&quot;%d&quot; % i)
+        currentRow = soup.findAll('table', r="%d" % i)
 
 # 依次读取六种乐高套装的数据，并生成数据矩阵        
 def setDataCollect(retX, retY):
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego8288.html&#x27;, 2006, 800, 49.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10030.html&#x27;, 2002, 3096, 269.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10179.html&#x27;, 2007, 5195, 499.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10181.html&#x27;, 2007, 3428, 199.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10189.html&#x27;, 2008, 5922, 299.99)
-    scrapePage(retX, retY, &#x27;data/8.Regression/setHtml/lego10196.html&#x27;, 2009, 3263, 249.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego8288.html', 2006, 800, 49.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10030.html', 2002, 3096, 269.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10179.html', 2007, 5195, 499.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10181.html', 2007, 3428, 199.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10189.html', 2008, 5922, 299.99)
+    scrapePage(retX, retY, 'data/8.Regression/setHtml/lego10196.html', 2009, 3263, 249.99)
 ```
 
-> 测试算法: 使用交叉验证来测试不同的模型，分析哪个效果最好
+### 测试算法: 使用交叉验证来测试不同的模型，分析哪个效果最好
 
 ```
 # 交叉验证测试岭回归
-def crossValidation(xArr,yArr,numVal=10):
+def crossValidation(xArr, yArr, numVal=10):
     # 获得数据点个数，xArr和yArr具有相同长度
     m = len(yArr)
     indexList = range(m)
-    errorMat = zeros((numVal,30))
+    errorMat = zeros((numVal, 30))
 
     # 主循环 交叉验证循环
     for i in range(numVal):
         # 随机拆分数据，将数据分为训练集（90%）和测试集（10%）
-        trainX=[]; trainY=[]
+        trainX = []; trainY = []
         testX = []; testY = []
 
         # 对数据进行混洗操作
@@ -4434,7 +4461,7 @@ def crossValidation(xArr,yArr,numVal=10):
 
         # 切分训练集和测试集
         for j in range(m):
-            if j &lt; m*0.9: 
+            if j < m * 0.9:
                 trainX.append(xArr[indexList[j]])
                 trainY.append(yArr[indexList[j]])
             else:
@@ -4442,39 +4469,39 @@ def crossValidation(xArr,yArr,numVal=10):
                 testY.append(yArr[indexList[j]])
 
         # 获得回归系数矩阵
-        wMat = ridgeTest(trainX,trainY)
+        wMat = ridgeTest(trainX, trainY)
 
         # 循环遍历矩阵中的30组回归系数
         for k in range(30):
             # 读取训练集和数据集
-            matTestX = mat(testX); matTrainX=mat(trainX)
+            matTestX = mat(testX); matTrainX = mat(trainX)
             # 对数据进行标准化
-            meanTrain = mean(matTrainX,0)
-            varTrain = var(matTrainX,0)
-            matTestX = (matTestX-meanTrain)/varTrain
+            meanTrain = mean(matTrainX, 0)
+            varTrain = var(matTrainX, 0)
+            matTestX = (matTestX - meanTrain) / varTrain
 
             # 测试回归效果并存储
-            yEst = matTestX * mat(wMat[k,:]).T + mean(trainY)
+            yEst = matTestX * mat(wMat[k, :]).T + mean(trainY)
 
             # 计算误差
-            errorMat[i,k] = ((yEst.T.A-array(testY))**2).sum()
+            errorMat[i, k] = ((yEst.T.A - array(testY)) ** 2).sum()
 
     # 计算误差估计值的均值
-    meanErrors = mean(errorMat,0)
+    meanErrors = mean(errorMat, 0)
     minMean = float(min(meanErrors))
-    bestWeights = wMat[nonzero(meanErrors==minMean)]
+    bestWeights = wMat[nonzero(meanErrors == minMean)]
 
     # 不要使用标准化的数据，需要对数据进行还原来得到输出结果
-    xMat = mat(xArr); yMat=mat(yArr).T
-    meanX = mean(xMat,0); varX = var(xMat,0)
-    unReg = bestWeights/varX
+    xMat = mat(xArr); yMat = mat(yArr).T
+    meanX = mean(xMat, 0); varX = var(xMat, 0)
+    unReg = bestWeights / varX
 
     # 输出构建的模型
-    print &quot;the best model from Ridge Regression is:\n&quot;,unReg
-    print &quot;with constant term: &quot;,-1*sum(multiply(meanX,unReg)) + mean(yMat)
+    print "the best model from Ridge Regression is:\n", unReg
+    print "with constant term: ", -1 * sum(multiply(meanX, unReg)) + mean(yMat)
 
 
-# predict for lego&#x27;s price
+# predict for lego's price
 def regression5():
     lgX = []
     lgY = []
@@ -4483,9 +4510,9 @@ def regression5():
     crossValidation(lgX, lgY, 10)
 ```
 
-> 使用算法: 这次练习的目标就是生成数据模型
+### 使用算法: 这次练习的目标就是生成数据模型
 
-求解线性回归可以有很多种方式，除了上述的方法（正规方程 normal equation）解决之外，还有可以对Cost function 求导，其中最简单的方法就是梯度下降法
+求解线性回归可以有很多种方式，除了上述的方法（正规方程 normal equation）解决之外，还有可以对 Cost function 求导，其中最简单的方法就是梯度下降法
 
 那么正规方程就可以直接得出真实值。而梯度下降法只能给出近似值
 

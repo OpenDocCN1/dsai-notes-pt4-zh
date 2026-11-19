@@ -1,3 +1,4 @@
+
 # 蚂蚁国际万里汇推广
 
 > 来源：[https://huchegames.feishu.cn/docx/EbPXdb9Foo5lVdxzQGCcKRfZnWh](https://huchegames.feishu.cn/docx/EbPXdb9Foo5lVdxzQGCcKRfZnWh)
@@ -10,7 +11,7 @@
 
 > **活动参与：**
 
-1.  活动对象：活动期间通过本页面报名，且报名前尚未入账的万里汇开发者用户
+1. 活动对象：活动期间通过本页面报名，且报名前尚未入账的万里汇开发者用户
 2. 发奖条件：活动期间，在本活动页内进行报名
 
 > **活动奖品：**
@@ -21,7 +22,7 @@
 
 访问下面的链接注册：
 
-https://dub.sh/worldfirst
+`https://dub.sh/worldfirst`
 
 ![](img/faeacd518861f3ceb79e75c1a6da95ae.png)
 

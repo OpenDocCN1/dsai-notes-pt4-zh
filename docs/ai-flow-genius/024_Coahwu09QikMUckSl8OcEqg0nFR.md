@@ -1,3 +1,4 @@
+
 # 使用 Claude 2进行 MBTI 测试
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/GfkzdkeNroyNoExZdytcsPG9nEc](https://jalicvoygc0.feishu.cn/docx/GfkzdkeNroyNoExZdytcsPG9nEc)
@@ -16,11 +17,9 @@
 
 步骤：
 
-1.  [导出任何人的](https://m.okjike.com/originalPosts/64804a27b0f25cc918ee9c95?s=eyJ1IjoiNWJmMmIyMGNlZmE3ZGUwMDE3YjBjMDY1In0%3D)文本资料。比如🧣等 点击查看教程
-
-1.  将文件传输给Claude 2
-
-1.  询问MBTI
+1. [导出任何人的](https://m.okjike.com/originalPosts/64804a27b0f25cc918ee9c95?s=eyJ1IjoiNWJmMmIyMGNlZmE3ZGUwMDE3YjBjMDY1In0%3D)文本资料。比如🧣等 点击查看教程
+2. 将文件传输给Claude 2
+3. 询问MBTI
 
 ![](img/af6639d30dc4e0261d12463984e32bbf.png)
 

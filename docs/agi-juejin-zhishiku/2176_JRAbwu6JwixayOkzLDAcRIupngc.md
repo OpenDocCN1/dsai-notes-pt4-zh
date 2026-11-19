@@ -1,8 +1,7 @@
-# 12.04-刚刚，中国140家企业被拉黑！出口产品，美国技术含量必须为0
-
-> 来源：[https://agijuejin.feishu.cn/docx/Pf6xdh47uomVNcxmjUmcwAY0nqf](https://agijuejin.feishu.cn/docx/Pf6xdh47uomVNcxmjUmcwAY0nqf)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 04 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/Pf6xdh47uomVNcxmjUmcwAY0nqf](https://agijuejin.feishu.cn/docx/Pf6xdh47uomVNcxmjUmcwAY0nqf)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -25,8 +24,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/814/980.htm)
 ![](img/3e2b3a3fec817c6545b13d93f98f6904.png)
 
 2024 年 12 月 3 日，快手宣布‘可灵 AI’导演共创计划作品将于 12 月 6 日上线，联合 9 位导演共同发起，题材多元。该计划 9 月 9 日启动，作品全部由可灵 AI 生成。目前可灵 AI 服务用户超 500 万，累计生成 5100 万个视频、超 1.5 亿张图片，商业化单月流水超千万人民币。快手 CEO 程一笑表示有信心在明年实现可灵收入规模快速增长。关键词：快手、可灵 AI。
-
-###
 
 ## 🌟 技术突破
 
@@ -95,8 +92,6 @@ IT之家 | [阅读原文](https://www.ithome.com/0/815/007.htm)
 ![](img/7fcf6362276a92a4427ccbfe306a3d0a.png)
 
 2024 年 12 月 2 日，LG 在韩国首尔衿川区 LG 加山研发园区举办活动，宣布将于明年发布首款家用管家机器人‘Q9’。它能根据自然语音指令操控智能家电，如播放电影、音乐等。配备‘重力补偿装置’可稳定移动，搭载 GPT-4o 能创作故事。LG 暂未公布其正式名称和价格，预计售价数百万韩元并捆绑家电订阅服务。家用机器人市场规模预计从 2022 年的 135 亿美元扩大到 2030 年的 436 亿美元，明年三星、海信等也将发布家用机器人，市场竞争激烈。
-
-###
 
 ### 💡 中国移动发布“芯合”异构混合并行训练系统 1.0，支持多品牌万卡集群
 

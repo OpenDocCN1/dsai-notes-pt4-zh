@@ -1,18 +1,19 @@
+
 # 无损加速最高5x，EAGLE-2让RTX 3060的生成速度超过A100
 
-> 来源：[https://agijuejin.feishu.cn/docx/WBN7d8UtToGn7mxZZb7cUxDZnOb](https://agijuejin.feishu.cn/docx/WBN7d8UtToGn7mxZZb7cUxDZnOb)
+> 来源：[`https://agijuejin.feishu.cn/docx/WBN7d8UtToGn7mxZZb7cUxDZnOb`](https://agijuejin.feishu.cn/docx/WBN7d8UtToGn7mxZZb7cUxDZnOb)
 
 > 机器之心｜[阅读原文](https://www.jiqizhixin.com/articles/2024-07-17-2)
 
 > 转载请联系原作者取得授权
 
-**李**堉晖： 北京大学 智能学院硕士，受张弘扬老师和张超老师指导，研究方向为大模型加速和对齐，正在寻找25届工作机会
+李堉晖：北京大学 智能学院硕士，受张弘扬老师和张超老师指导，研究方向为大模型加速和对齐，正在寻找25届工作机会
 
-**魏芳芸：微软亚研院研究员，研究方向为具**身智能、 图像生成 和AI agents
+魏芳芸：微软亚研院研究员，研究方向为具身智能、图像生成 和AI agents
 
-张超： 北京大学 智能学院研究员，研究方向为 计算机视觉 和 机器学习
+张超：北京大学 智能学院研究员，研究方向为 计算机视觉 和 机器学习
 
-**张弘扬：滑铁卢大学计算机学院、向量研究院**助理教授，研究方向为LLM加速和AI安全
+张弘扬：滑铁卢大学计算机学院、向量研究院助理教授，研究方向为LLM加速和AI安全
 
 自回归解码已经成为了大 语言模型 （LLMs）的事实标准，大 语言模型 每次前向计算需要访问它全部的 参数 ，但只能得到一个token，导致其生成昂贵且缓慢。
 
@@ -20,11 +21,9 @@
 
 ![](img/6139dde0fae8d8cdb84d6b238d42ee4c.png)
 
-+   论文链接：https://arxiv.org/pdf/2406.16858
-
-+   项目链接：https://github.com/SafeAILab/EAGLE
-
-+   Demo链接：https://huggingface.co/spaces/yuhuili/EAGLE-2
++ 论文链接：`https://arxiv.org/pdf/2406.16858`
++ 项目链接：`https://github.com/SafeAILab/EAGLE`
++ Demo链接：`https://huggingface.co/spaces/yuhuili/EAGLE-2`
 
 EAGLE-2在多轮对话数据集MT-bench上的加速效果（上图为贪婪生成，下图为采样生成）：
 
@@ -36,13 +35,13 @@ EAGLE-2在多轮对话数据集MT-bench上的加速效果（上图为贪婪生�
 
 ![](img/82ec72c117a646d1e0e1a7a1ab137470.png)
 
-**背景**
+## 背景
 
 投机采样使用一个小的模型快速生成草稿，原始的大 语言模型 可以通过一次前向计算验证草稿的正确性，将正确的草稿作为输出，从而一次生成多个token，并确保无损。EAGLE是投机采样的一种改进。它在更有规律的特征层面而不是token层面进行自回归，同时输入采样结果（超前一个时间步的token）消除了不确定性，明显提升了草稿模型的 准确率 。
 
-到目前为止，EAGLE在第三方测试Spec-Bench（https://github.com/hemingkx/Spec-Bench/blob/main/Leaderboard.md）中排名第一。
+到目前为止，EAGLE在第三方测试Spec-Bench（`https://github.com/hemingkx/Spec-Bench/blob/main/Leaderboard.md`）中排名第一。
 
-**思路**
+## 思路
 
 EAGLE和Medusa等方法使用静态的草稿树，隐式地假设草稿token的接受率和上下文无关，下面是一个简单的例子
 
@@ -60,19 +59,19 @@ EAGLE-2的作者们在Alpaca数据集上进行了简单的测试，下图显示�
 
 ![](img/af5582729581d7bf5f5b55664ab097fb.png)
 
-**方法**
+## 方法
 
 EAGLE-2包括两个阶段，扩展和重排，扩展阶段加深加大草稿树，重排阶段修剪草稿树，丢弃部分节点（token）。
 
 为了保证无损，一个草稿token被接受的前提是它的祖先节点都被接受，所以EAGLE-2将一个节点的价值定义为它和它祖先的接受率的乘积，用置信度的乘积来近似。
 
-在扩展阶段，EAGLE-2选择草稿树最后一层价值最高的m个节点（token）进行扩展。这些token被送入草稿模型，然后将草稿模型的输出作为子节点连接到输入节点，加深加大草稿树。在重排阶段，EAGLE-2按照价值对整棵草稿树进行重排序，保留前n个节点（token）。草稿token的置信度在0-1之间，两个节点价值相同时优先保留浅层节点，因此重排后保留的草稿树一定是连通的，保证了语义上的连贯性。重排后草稿树变小，降低了原始大 语言模型 验证的计算量。为了保证计算结果的正确性，还需要调整attention mask，确保每一个token只能看到它的祖先节点，不受其他分支的影响。下面是一个简单的例子。
+在扩展阶段，EAGLE-2选择草稿树最后一层价值最高的`m`个节点（token）进行扩展。这些token被送入草稿模型，然后将草稿模型的输出作为子节点连接到输入节点，加深加大草稿树。在重排阶段，EAGLE-2按照价值对整棵草稿树进行重排序，保留前`n`个节点（token）。草稿token的置信度在0-1之间，两个节点价值相同时优先保留浅层节点，因此重排后保留的草稿树一定是连通的，保证了语义上的连贯性。重排后草稿树变小，降低了原始大 语言模型 验证的计算量。为了保证计算结果的正确性，还需要调整attention mask，确保每一个token只能看到它的祖先节点，不受其他分支的影响。下面是一个简单的例子。
 
 ![](img/4fa86881b4e27e840fed9771d22f0d30.png)
 
 扩展（Expand）阶段的黄色框表示被选中进行扩展的节点，绿色框为以这些节点为输入时草稿模型的预测。重排（Rerank）阶段的蓝色框表示被保留的节点，之后它们被展平成一维作为原始大 语言模型 的输入。EAGLE-2根据树的结构调整attention mask，比如，”a”只能看到它的祖先“It”和“is”，看不到另一个分支的“has”。EAGLE-2也同时调整位置编码，确保和标准自回归解码的一致性。
 
-**实验**
+## 实验
 
 EAGLE-2在多轮对话、代码、数学推理、指令遵循、问答、总结六项任务上分别使用MT-bench、 Humane val、GSM8K、Alpaca、CNN/DM、Natural Questions数据集进行了实验，与6种先进的投机采样方法（SpS、PLD、Medusa、Lookahead、Hydra、EAGLE）进行了比较。
 
@@ -82,6 +81,6 @@ EAGLE-2在多轮对话、代码、数学推理、指令遵循、问答、总结�
 
 表格中的Speedup为加速比，τ 为平均接受长度，也就是原始大 语言模型 每次前向计算能生成的token数。EAGLE-2每次前向计算能生成大约4-5个token，而自回归解码每次生成1个token，因此EAGLE-2明显加速了大 语言模型 的生成，加速比为2.5x-5x。加速比和接受长度在代码生成任务（ Humane val数据集）上最高，这是因为代码中存在大量确定性的模板，草稿更容易命中。在所有任务和大 语言模型 上，EAGLE-2的加速比和平均接受长度都是最高的，明显优于其他方法。
 
-**应用**
+## 应用
 
-EAGLE-2也在工业界得到应用，集成至Intel/intel-extension-for-transformers等。
+EAGLE-2也在工业界得到应用，集成至`Intel/intel-extension-for-transformers`等。

@@ -1,3 +1,4 @@
+
 # 20250817-AI圈的“隐形赢家”：当大家都在卷模型，Cohere已经悄悄把钱赚了
 
 > 来源：[https://aigcreative.feishu.cn/docx/AvEzdy1TfoMvaexd2Boc9GU7nFg](https://aigcreative.feishu.cn/docx/AvEzdy1TfoMvaexd2Boc9GU7nFg)
@@ -6,7 +7,7 @@
 
 今天这个模型升级发布了，明天那个模型各方面SOTA了......
 
-我自己也都快写麻了~~AI圈的热闹程度，堪比“春晚”！
+我自己也都快写麻了~~AI圈的热闹程度，堪比“春晚”！~~
 
 ![](img/33849bdc9a844d09b96eb8044cbaa5d9.png)
 
@@ -100,6 +101,6 @@ AI行业需要那些能做出惊艳Demo、吸引大众眼球的明星公司，�
 
 估计离成功也就不远了。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

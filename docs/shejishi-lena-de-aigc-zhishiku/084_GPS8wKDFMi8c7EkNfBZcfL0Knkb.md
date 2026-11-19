@@ -1,10 +1,11 @@
+
 # AI工具集合平台 Krea
 
 > 来源：[https://aigclena.feishu.cn/docx/RkQ4dmZkjoWjikxIymtc2SqDn8c](https://aigclena.feishu.cn/docx/RkQ4dmZkjoWjikxIymtc2SqDn8c)
 
-# FLUX.1 Krea
+## FLUX.1 Krea
 
-2025.8.1
+### 2025.8.1
 
 Black Forest Labs 与 Krea AI 联手推出了开放的文本生成图像模型 FLUX.1 Krea [开发版]模型
 
@@ -14,11 +15,11 @@ Black Forest Labs 与 Krea AI 联手推出了开放的文本生成图像模型 F
 
 [X2Twitter.com_4bzMh4I2yhSKWvZM_1536p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/StBEbOjzmo1coNxANNacHLu0neb)
 
-# Krea Enhancer
+## Krea Enhancer
+
+### 2025.5.2
 
 推出全新图像增强模型
-
-2025.5.2
 
 并集成 @topazlabs，实现最高可达 22K 分辨率的超分辨率放大，显著提升纹理细节与锐度，现已上线。
 
@@ -26,28 +27,27 @@ Black Forest Labs 与 Krea AI 联手推出了开放的文本生成图像模型 F
 
 [X2Twitter.com_DkkXhY1kT4u_Nqwl_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Xoi8bxAHGo8vPdxlJt4cDpzhnde)
 
-# 3D 功能更新
+## 3D 功能更新
+
+### 2025.4.1
 
 Krea 推出全新 3D 生成功能
 
-2025.4.1
-
 近日，生成式AI平台Krea宣布正式上线3D生成工具，用户只需输入文本描述或上传 2D 图像，即可快速生成可操作的 3D 模型，并支持实时调整视角、光照及材质效果。同时对其官网进行了全面升级。
 
-体验地址：https://www.krea.ai/3d
+体验地址：`https://www.krea.ai/3d`
 
 ![](img/378b5310f9e81f5f4e9db472a09f62cd.png)
 
 [6387910322692751744815571.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VlmLb8ctwoW8rRxiaWcc42vEn3e)
 
-# 接入谷歌Gemini2.0flash模型
+## 接入谷歌Gemini2.0flash模型
 
-2025.4.1
-
+### 2025.4.1
 
 [X2Twitter.com_yx525PreVbS-ozew_1080p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ITY8b5aquow1CpxxI1McQRoJnWh)
 
-# 新模型Wan 2.1 2月27日
+## 新模型Wan 2.1 2月27日
 
 KREA AI发布新模型Wan 2.1 0227
 
@@ -57,13 +57,13 @@ KREA AI发布新模型Wan 2.1 0227
 
 [6387635176287846223933494.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FSFjb4Fw2o4cshx3cxEccbNcnDf)
 
-# 3D功能上线
+## 3D功能上线
 
-1月15日
+### 1月15日
 
 这一全新功能可以将图片转换为3D对象，在实时工具中使用,对所有用户免费开放。
 
-体验地址：https://www.krea.ai/
+体验地址：`https://www.krea.ai/`
 
 ![](img/463d815287323c9aba421dac5fc1fade.png)
 

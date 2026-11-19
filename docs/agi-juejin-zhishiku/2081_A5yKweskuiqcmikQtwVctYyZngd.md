@@ -1,7 +1,7 @@
+
 # 7.19 OpenAI 发布 GPT-4o Mini 模型，取代 GPT-3.5 Turbo！
 
 > 来源：[https://agijuejin.feishu.cn/docx/Rnegd4iXTohF7cxJJu7cEKICnnh](https://agijuejin.feishu.cn/docx/Rnegd4iXTohF7cxJJu7cEKICnnh)
-
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ## 🌟 技术突破

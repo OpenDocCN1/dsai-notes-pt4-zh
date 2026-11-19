@@ -1,10 +1,11 @@
+
 # 支付宝MCP
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/REgJdZd4soX6ZuxhGSlc8ZWUnDc](https://v11enp9ok1h.feishu.cn/docx/REgJdZd4soX6ZuxhGSlc8ZWUnDc)
 
 ![](img/881d482a0b7629e8389fbb0206f1d95b.png)
 
-@alipay/mcp-server-alipay 是支付宝开放平台提供的 MCP Server，让你可以轻松将支付宝开放平台提供的交易创建、查询、退款等能力集成到你的 LLM 应用中，并进一步创建具备支付能力的智能工具。
+`@alipay/mcp-server-alipay` 是支付宝开放平台提供的 MCP Server，让你可以轻松将支付宝开放平台提供的交易创建、查询、退款等能力集成到你的 LLM 应用中，并进一步创建具备支付能力的智能工具。
 
 ---
 
@@ -20,40 +21,40 @@
    最终用户设备                     Agent 运行环境
 +---------------------+        +--------------------------+      +-------------------+
 |                     |  交流  |   支付宝 MCP Server +    |      |                   |
-|    小程序/WebApp    |&lt;------&gt;|   其他 MCP Server +      |&lt;----&gt;|     支付服务      |
+|    小程序/WebApp    |<------>|   其他 MCP Server +      |<---->|     支付服务      |
 |                     |  支付  |   Agent 开发工具         |      |   交易/退款/查询  |
 +---------------------+        +--------------------------+      +-------------------+
      创作服务买家                     智能工具开发者                   支付宝开放平台
       (最终用户)                         (创作者)
 ```
 
-关于本工具的更多介绍和使用指南，包括准备收款商户身[份等前置流程，请参考支](https://opendocs.alipay.com/open/0go80l)付宝开放平台上的 支付 MCP 服务文档 。
+关于本工具的更多介绍和使用指南，包括准备收款商户身份等前置流程，请参考[支付宝开放平台上的 支付 MCP 服务文档](https://opendocs.alipay.com/open/0go80l)。
 
 ## 使用和配置
 
-要使用工具的大部分支付能力，你需要先成为支付宝开放平台的收款商户，获取商户私钥。 之后，你可以直接在主流的 MCP Client 上使用支付宝 MCP Server：
+要使用工具的大部分支付能力，你需要先成为支付宝开放平台的收款商户，获取商户私钥。之后，你可以直接在主流的 MCP Client 上使用支付宝 MCP Server：
 
 ### 在 Cursor 中使用
 
-在 Cursor 项目中的 .cursor/mcp.json 加入如下配置：
+在 Cursor 项目中的 `.cursor/mcp.json` 加入如下配置：
 
-```
+```json
 {
-  &quot;mcpServers&quot;: {
-    &quot;mcp-server-alipay&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@alipay/mcp-server-alipay&quot;],
-      &quot;env&quot;: {
-        &quot;AP_APP_ID&quot;: &quot;2014...222&quot;,
-        &quot;AP_APP_KEY&quot;: &quot;MIIE...DZdM=&quot;,
-        &quot;AP_PUB_KEY&quot;: &quot;MIIB...DAQAB&quot;,
-        &quot;AP_RETURN_URL&quot;: &quot;https://success-page&quot;,
-        &quot;AP_NOTIFY_URL&quot;: &quot;https://your-own-server&quot;,
-        &quot;...其他参数&quot;: &quot;...其他值&quot;
+  "mcpServers": {
+    "mcp-server-alipay": {
+      "command": "npx",
+      "args": ["-y", "@alipay/mcp-server-alipay"],
+      "env": {
+        "AP_APP_ID": "2014...222",
+        "AP_APP_KEY": "MIIE...DZdM=",
+        "AP_PUB_KEY": "MIIB...DAQAB",
+        "AP_RETURN_URL": "https://success-page",
+        "AP_NOTIFY_URL": "https://your-own-server",
+        "...其他参数": "...其他值"
       }
     },
-    &quot;其他工具&quot;: { 
-      &quot;...&quot;: &quot;...&quot;
+    "其他工具": { 
+      "...": "..."
     }
   }
 }
@@ -61,27 +62,27 @@
 
 ### 在 Cline 中使用
 
-在你的 Cline 设置中找到 cline_mcp_settings.json 配置文件，并加入如下配置：
+在你的 Cline 设置中找到 `cline_mcp_settings.json` 配置文件，并加入如下配置：
 
-```
+```json
 {
-  &quot;mcpServers&quot;: {
-    &quot;mcp-server-alipay&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@alipay/mcp-server-alipay&quot;],
-      &quot;env&quot;: {
-        &quot;AP_APP_ID&quot;: &quot;2014...222&quot;,
-        &quot;AP_APP_KEY&quot;: &quot;MIIE...DZdM=&quot;,
-        &quot;AP_PUB_KEY&quot;: &quot;MIIB...DAQAB&quot;,
-        &quot;AP_RETURN_URL&quot;: &quot;https://success-page&quot;,
-        &quot;AP_NOTIFY_URL&quot;: &quot;https://your-own-server&quot;,
-        &quot;...其他参数&quot;: &quot;...其他值&quot;
+  "mcpServers": {
+    "mcp-server-alipay": {
+      "command": "npx",
+      "args": ["-y", "@alipay/mcp-server-alipay"],
+      "env": {
+        "AP_APP_ID": "2014...222",
+        "AP_APP_KEY": "MIIE...DZdM=",
+        "AP_PUB_KEY": "MIIB...DAQAB",
+        "AP_RETURN_URL": "https://success-page",
+        "AP_NOTIFY_URL": "https://your-own-server",
+        "...其他参数": "...其他值"
       },
-      &quot;disable&quot;: false,
-      &quot;autoApprove&quot;: []
+      "disable": false,
+      "autoApprove": []
     },
-    &quot;其他工具&quot;: { 
-      &quot;...&quot;: &quot;...&quot;
+    "其他工具": { 
+      "...": "..."
     }
   }
 }
@@ -89,7 +90,7 @@
 
 ### 在其他 MCP Client 中使用
 
-你也可以在任何其它 MCP Client 中使用，合理配置 Server 进程启动方式 npx -y @alipay/mcp-server-alipay，并按下文介绍设置环境参数即可。
+你也可以在任何其它 MCP Client 中使用，合理配置 Server 进程启动方式 `npx -y @alipay/mcp-server-alipay`，并按下文介绍设置环境参数即可。
 
 ### 所有参数
 
@@ -103,26 +104,24 @@ AP_APP_KEY=MIIE...DZdM=                 # 商户在开放平台申请的应用�
 AP_PUB_KEY=MIIB...DAQAB                 # 用于验证支付宝服务端数据签名的支付宝公钥，在开放平台获取。必需。
 AP_RETURN_URL=https://success-page      # 网页支付完成后对付款用户展示的「同步结果返回地址」。
 AP_NOTIFY_URL=https://your-own-server   # 支付完成后，用于告知开发者支付结果的「异步结果通知地址」。
-AP_ENCRYPTION_ALGO=RSA2                 # 商户在开放平台配置的参数签名方式。可选值为 &quot;RSA2&quot; 或 &quot;RSA&quot;。缺省值为 &quot;RSA2&quot;。
-AP_CURRENT_ENV=prod                     # 连接的支付宝开放平台环境。可选值为 &quot;prod&quot;（线上环境）或 &quot;sandbox&quot;（沙箱环境）。缺省值为 &quot;prod&quot;。
+AP_ENCRYPTION_ALGO=RSA2                 # 商户在开放平台配置的参数签名方式。可选值为 "RSA2" 或 "RSA"。缺省值为 "RSA2"。
+AP_CURRENT_ENV=prod                     # 连接的支付宝开放平台环境。可选值为 "prod"（线上环境）或 "sandbox"（沙箱环境）。缺省值为 "prod"。
 
 # MCP Server 配置
 
-AP_SELECT_TOOLS=all                      # 允许使用的工具。可选值为 &quot;all&quot; 或逗号分隔的工具名称列表。工具名称包括 `mobilePay`, `webPagePay`, `queryPay`, `refundPay`, `refundQuery`。缺省值为 &quot;all&quot;。
+AP_SELECT_TOOLS=all                      # 允许使用的工具。可选值为 "all" 或逗号分隔的工具名称列表。工具名称包括 mobilePay、webPagePay、queryPay、refundPay、refundQuery。缺省值为 "all"。
 AP_LOG_ENABLED=true                      # 是否在 $HOME/mcp-server-alipay.log 中记录日志。默认值为 true。
 ```
-
-##
 
 ## 使用 MCP Inspector 调试
 
 你可以使用 MCP Inspector 来调试和了解支付宝 MCP Server 的功能：
 
-1.  通过 export 设置各环境变量；
+1. 通过 `export` 设置各环境变量；
 
-1.  执行 npx -y @modelcontextprotocol/inspector npx -y @alipay/mcp-server-alipay 启动 MCP Inspector；
+2. 执行 `npx -y @modelcontextprotocol/inspector npx -y @alipay/mcp-server-alipay` 启动 MCP Inspector；
 
-1.  在 MCP Inspector WebUI 中调试即可。
+3. 在 MCP Inspector WebUI 中调试即可。
 
 ## 支持的能力
 
@@ -132,21 +131,21 @@ AP_LOG_ENABLED=true                      # 是否在 $HOME/mcp-server-alipay.log
 
 在开发过程中，为了让 LLM 能更准确地选择合适的支付方式，建议在 Prompt 中清晰说明你的产品使用场景：
 
-+   扫码支付（webPagePay）：适用于用户在电脑屏幕上看到支付界面的场景。如果您的应用或网站主要运行在桌面端（PC），你可以在 Prompt 中说明："我的应用是桌面软件/PC网站，需要在电脑上展示支付二维码"。
++ 扫码支付（`webPagePay`）：适用于用户在电脑屏幕上看到支付界面的场景。如果您的应用或网站主要运行在桌面端（PC），你可以在 Prompt 中说明："我的应用是桌面软件/PC网站，需要在电脑上展示支付二维码"。
 
-+   手机支付（mobilePay）：适用于用户在手机浏览器内发起支付的场景。如果您的应用是手机H5页面或移动端网站，你可以在 Prompt 中说明："我的页面是手机网页，需要直接在手机上唤起支付宝支付"。
++ 手机支付（`mobilePay`）：适用于用户在手机浏览器内发起支付的场景。如果您的应用是手机H5页面或移动端网站，你可以在 Prompt 中说明："我的页面是手机网页，需要直接在手机上唤起支付宝支付"。
 
 我们会在未来提供更多适合 AI 应用的支付方式，敬请期待。
 
 ## 注意事项
 
-+   支[付宝 MCP 服](https://open.alipay.com/portal/forum)务目前处于发布早期阶段，相关能力和配套设施正在持续完善中。如有问题反馈、使用体验或建议，欢迎在 支付宝开发者社区 参与讨论。
++ 支付宝 MCP 服务目前处于发布早期阶段，相关能力和配套设施正在持续完善中。如有问题反馈、使用体验或建议，欢迎在[支付宝开发者社区](https://open.alipay.com/portal/forum)参与讨论。
 
-+   部署和使用智能体服务时，请务必妥善保管自[己的商户私钥，防止泄露。如需](https://opendocs.alipay.com/support/01rav9)要，可参考 支付宝开放平台-如何修改密钥 的说明让已有密钥失效。
++ 部署和使用智能体服务时，请务必妥善保管自己的商户私钥，防止泄露。如果需要[修改密钥](https://opendocs.alipay.com/support/01rav9)，可参考支付宝开放平台-如何修改密钥的说明让已有密钥失效。
 
-+   在开发任何使用 MCP Server 的智能体服务，并提供给用户使用时，请了解必要的安全知识，防范 AI 应用特有的 Prompt 攻击、MCP Server 任意命令执行等安全风险。
++ 在开发任何使用 MCP Server 的智能体服务，并提供给用户使用时，请了解必要的安全知识，防范 AI 应用特有的 Prompt 攻击、MCP Server 任意命令执行等安全风险。
 
-+   [更多注意事项和最佳实践](https://opendocs.alipay.com/open/0go80l)，请参考支付宝开放平台上 关于支付 MCP 服务 的说明。
++ [更多注意事项和最佳实践](https://opendocs.alipay.com/open/0go80l)，请参考支付宝开放平台上 关于支付 MCP 服务 的说明。
 
 ## 使用协议
 

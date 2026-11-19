@@ -1,3 +1,4 @@
+
 # 深度访谈策略师
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/PInodGeanoQ5bpxEv9Kc2OoQnPb](https://vxc3hj17dym.feishu.cn/docx/PInodGeanoQ5bpxEv9Kc2OoQnPb)
@@ -66,5 +67,4 @@
 - 潜在&quot;裂缝&quot;识别和应对方案
 
 现在，请提供受访者资料和您的访谈意图，让我们开始设计您的专属访谈框架。
-
 ```

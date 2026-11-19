@@ -1,3 +1,4 @@
+
 # Sum4all - 总结插件
 
 > 来源：[https://my.feishu.cn/docx/LaV1dWVsQopC7TxKJR0cZle1nrG](https://my.feishu.cn/docx/LaV1dWVsQopC7TxKJR0cZle1nrG)
@@ -10,25 +11,17 @@
 
 ## LLM容易出现幻觉或无法连接的情况，重试即可
 
-### **功能特点**
+### 功能特点
 
-+   支持联网搜索
-
-+   支持多轮追问
-
-+   支持文章链接总结，且支持发送到在线笔记
-
-+   支持文件内容总结，包括pdf、docx、markdown、txt、xls、csv、html、ppt
-
-+   支持图片总结，包括png、jpeg、jpg
-
-+   支持视频、播客内容总结，包括抖音、b站、📕、YouTube等
-
-+   支持多种内容总结服务，可自由组合
-
-+   支持自定义prompt
-
-+   支持自定义搜索、追问提示词
++ 支持联网搜索
++ 支持多轮追问
++ 支持文章链接总结，且支持发送到在线笔记
++ 支持文件内容总结，包括pdf、docx、markdown、txt、xls、csv、html、ppt
++ 支持图片总结，包括png、jpeg、jpg
++ 支持视频、播客内容总结，包括抖音、b站、📕、YouTube等
++ 支持多种内容总结服务，可自由组合
++ 支持自定义`prompt`
++ 支持自定义搜索、追问提示词
 
 ![](img/3574db35ae6fcda9b75da5f177e0d5ca.png)
 
@@ -46,7 +39,7 @@
 
 ![](img/dcf6728ed948b9ccd512be9acc0b4f5a.png)
 
-### **安装**
+### 安装
 
 [使用管理员](https://github.com/zhayujie/chatgpt-on-wechat/tree/master/plugins/godcmd)口令在线安装，管理员认证方法见：管理员认证
 
@@ -54,17 +47,16 @@
 #installp https://github.com/fatwang2/sum4all.git
 ```
 
-安装成功后，根据提示使用#scanp 命令来扫描新插件
+安装成功后，根据提示使用`#scanp`命令来扫描新插件
 
 ![](img/d80ba230471e61746e223f3fcc14f9b9.png)
 
-### **申请服务（自行选择，各有优劣）**
+### 申请服务（自行选择，各有优劣）
 
-### **配置**
+### 配置
 
-+   服务器部署：复制插件目录的config.json.template文件,重命名为config.json，配置参数即可
-
-+   docker部署：参考[项目docker部署](https://github.com/zhayujie/chatgpt-on-wechat#3-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)的插件使用，config.json内增加sum4all插件的配置参数，操作见 docker插件配置
++ 服务器部署：复制插件目录的`config.json.template`文件,重命名为`config.json`，配置参数即可
++ docker部署：参考[项目docker部署](https://github.com/zhayujie/chatgpt-on-wechat#3-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)的插件使用，`config.json`内增加`sum4all`插件的配置参数，操作见 docker插件配置
 
 配置文件含义如下：
 

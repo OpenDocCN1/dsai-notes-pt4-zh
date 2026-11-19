@@ -1,3 +1,4 @@
+
 # 快速使用（推理部署）
 
 > 来源：[https://ai.feishu.cn/docx/DL2MdT8EBonlTixkYcMc3YXWn0g](https://ai.feishu.cn/docx/DL2MdT8EBonlTixkYcMc3YXWn0g)
@@ -24,7 +25,7 @@ git clone https://github.com/thu-coai/CharacterGLM-6B.git
 
 +   [下载](https://github.com/git-lfs/git-lfs?utm_source=gitlfs_site&utm_medium=installation_link&utm_campaign=gitlfs#installing)模型文件前请先确保`git lfs`命令已安装，安装教程请参考这里。
 
-+   模型文件已上传至 Huggingface, Modelscope ,  SwanHub  三个平台，用户可以快速安装模型。
++   模型文件已上传至 Huggingface, Modelscope, SwanHub 三个平台，用户可以快速安装模型。
 
 +   若使用 Huggingface 下载模型
 
@@ -35,16 +36,14 @@ git clone https://huggingface.co/LingxinAI/CharacterGLM-6b
 
 ### 安装依赖
 
-使用 pip 安装依赖：
+使用 `pip` 安装依赖：
 
 ```
 cd CharacterGLM-6B
 pip install -r requirements.txt
 ```
 
-[环境配置和检查](https://lslfd0slxc.feishu.cn/wiki/OwCDwJkKbidEL8kpfhPcTGHcnVc)果你担心你的配置不满足最低配置，你可以访问 获取更多信息。
-
-的
+[环境配置和检查](https://lslfd0slxc.feishu.cn/wiki/OwCDwJkKbidEL8kpfhPcTGHcnVc)。如果你担心你的配置不满足最低配置，你可以访问 获取更多信息。的
 
 ### 运行demo
 

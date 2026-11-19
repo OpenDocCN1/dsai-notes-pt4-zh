@@ -1,3 +1,5 @@
+
+
 # 240303 - 0226｜MWC2024，看看厂商的新产品能有多离谱！通用人工智能要来了？英伟达黄仁勋：AI 将在五年内通过任何测试；十年内出现 AGI？下一代 Gemini 能感知环境？月之暗面杨植麟专访：AI 接下来十到二十年如何改变世界；Meta 计划在 7 月推出 Llama 3，继续做开源式 AI；知名 AI 研究者深挖谷歌 Gemma：参数不止 70 亿，设计原则很独特；古尔曼称苹果正规划带摄像头的 AirPods 及智能戒指 ...
 
 > 来源：[https://leonzhang.feishu.cn/docx/OtgmdTNT2ouNwgx2EYucMzPUnqg](https://leonzhang.feishu.cn/docx/OtgmdTNT2ouNwgx2EYucMzPUnqg)
@@ -10,15 +12,11 @@ Writer: Leon ｜ Date: 2024/03/03 ｜ #AI Weekly
 Space Needle, cinematic view, Downtown Seattle on Mt. Vinicunca in Peru, double rainbow in the sky with pots of gold coins at the end of the rainbow, god rays, In the style of professional photography, A person riding a bike in first-person perspective through Downtown Seattle on Mt. Vinicunca Peru 
 ```
 
-1.  上周二三事
-
-1.  智能硬件
-
-1.  好玩推荐
-
-1.  投融资
-
-1.  学习资料
+1. 上周二三事
+1. 智能硬件
+1. 好玩推荐
+1. 投融资
+1. 学习资料
 
 ## 🎞️ 上周二三事
 
@@ -72,7 +70,7 @@ https://mp.weixin.qq.com/s/RtAZiEzjRWgqQw3yu3lvcg
 
 ⭐️ 新模型特点 Hawk 和 Griffin 在性能和训练效率上超越了 Mamba
 
-📄 模型架构 Griffin 包含残差块、MLP 块和循环块，提高了下一个 token 的预测能力
+📄 模型架构 Griffin 包含残差块、`MLP` 块和循环块，提高了下一个 `token` 的预测能力
 
 ↕️ 缩放效率 Griffin 在不同规模下的性能优于 Transformer 基线
 
@@ -92,7 +90,7 @@ Snap Video 模型效果优于 Pika，不输 Gen-2
 
 📄 Snap Video 架构特点 Snap Video 采用可扩展的时空 Transformer 架构
 
-### [Meta 计划在 7 月推出 Llama](https://www.ithome.com/0/752/824.htm) 3，继续做开源式 AI - IT 之家
+### Meta 计划在 7 月推出 Llama 3，继续做开源式 AI - IT 之家
 
 https://www.ithome.com/0/752/824.htm
 
@@ -112,7 +110,7 @@ https://mp.weixin.qq.com/s/-pB6nElzAx3vrH7vMuALzA
 
 就在几天前，开源大模型领域迎来了重磅新玩家：谷歌推出了全新的开源模型系列「Gemma」。相比 Gemini，Gemma 更加轻量，同时保持免费可用，模型权重也一并开源了，且允许商用。谷歌发布了包含两种权重规模的模型：Gemma 2B 和 Gemma 7B。尽管体量较小，但 Gemma 已经「在关键基准测试中明显超越了更大的模型」，包括 Llama-27B 和 13B，以及风头正劲的 Mistral 7B。与此同时，关于 Gemma 的技术报告也一并放出。相信大家已经对 Gemma 的相关内容进行了系统研究，本文知名机器学习与 AI 研究者 SebastianRaschka 向我们介绍了 Gemma 相比于其他 LLM 的一些独特设计原则。
 
-### [探索可穿戴设备各种可能，古尔曼称苹果正规划带摄像头的 A](https://www.ithome.com/0/751/960.htm)irPods 及智能戒指 - IT 之家
+### 探索可穿戴设备各种可能，古尔曼称苹果正规划带摄像头的 AirPods 及智能戒指 - IT 之家
 
 https://www.ithome.com/0/751/960.htm
 
@@ -140,11 +138,11 @@ https://mp.weixin.qq.com/s/4d9jDodEPNVii7iV5-qL8Q
 
 ## 🤖 智能硬件
 
-### [A](https://www.ithome.com/0/752/922.htm)I Pin 制造商 Humane 与韩国 SK Telecom 签订投资协议，首批产品预计 4 月中旬交付 - IT 之家
+### Ai Pin 制造商 Humane 与韩国 SK Telecom 签订投资协议，首批产品预计 4 月中旬交付 - IT 之家
 
 https://www.ithome.com/0/752/922.htm
 
-据悉，**SK Telecom 目前已经成为** Ai Pin 在韩国的独家电信合作伙伴，该公司宣布获得了 Humane 的 AI 技术与 CosmOS 系统授权，未来将整合 SKT 的移动网络、物联网、云端、AI 及 5G 技术协力开发 AI 应用。
+据悉，SK Telecom 目前已经成为 Ai Pin 在韩国的独家电信合作伙伴，该公司宣布获得了 Humane 的 AI 技术与 CosmOS 系统授权，未来将整合 SKT 的移动网络、物联网、云端、AI 及 5G 技术协力开发 AI 应用。
 
 据介绍，Humane 是苹果前设计师 Imran Chaudhri 及软件开发员 Bethany Bongiorno 成立的初创公司，该公司在去年 11 月推出了可穿戴人工智能设备 Ai Pin，该设备本身不具有屏幕，而是采用投影显示：其可在手掌上投射 720p 单色 UI 界面，用户可通过语音和手势进行交互。此外，Ai Pin 还带有 2 个呼吸灯，以告知用户是否有来电、短信等内容。
 
@@ -247,9 +245,11 @@ https://x.com/AndrewYNg/status/1762879627633287477?s=20
 Llama 不是一个单一模型，它是一个模型集合。在这个课程中，你将：
 
 +   学习不同 Llama2 版本之间的区别，以及何时使用每种版本。
+
  提示 Llama 聊天模型一一你还将看到 Llama 的指令标签如何工作—一以便它们可以帮助你完成日常任务，如写作或总结。
 
 +   使用高级提示，如用于分类的少量示例提示，以及用于解决逻辑问题的思路链提示。
+
  使用 Llama 集合中的专用模型完成特定任务，如 CodeLlama 帮助你编写、分析和改进代码，以及 LlamaGuard，它检查提示和模型响应中的有害内容。
 
 课程还涉及如何在你自己的电脑上本地运行 Llama 2。
@@ -266,7 +266,7 @@ LLM 推理对硬件系统提出了变态需求
 
 💾 内存带宽和互联带宽需求 LLM 推理需要巨大的内存带宽和通信带宽
 
-💻 计算密集的 prefill 阶段 prefill 阶段对算力需求巨大
+💻 计算密集的 `prefill` 阶段 `prefill` 阶段对算力需求巨大
 
 ↕️ 用户请求的 IO 能力需求 用户请求对系统的 IO 能力提出了变态要求
 
@@ -278,13 +278,13 @@ https://zhuanlan.zhihu.com/p/683359705
 
 LLM 推理对芯片和系统架构设计的基本逻辑
 
-✏️ 权重和 KV-Cache 权重部分和上下文对应的 KV-Cache 是关键
+✏️ 权重和 `KV-Cache` 权重部分和上下文对应的 `KV-Cache` 是关键
 
-💾 内存带宽成本 Token 的成本实际上就是内存带宽成本
+💾 内存带宽成本 `Token` 的成本实际上就是内存带宽成本
 
 📶 互联带宽 互联带宽是耦合性的瓶颈
 
-🔄 硬件拼接 硬件拼的就是全量放下所有权重和并发请求对于 KV 的那个内存介质的带宽成本
+🔄 硬件拼接 硬件拼的就是全量放下所有权重和并发请求对于 `KV` 的那个内存介质的带宽成本
 
 ### DeepMind CEO 最新《纽约时报》专访：AGI 将使能源变得廉价甚至免费，货币性质也将发生转变
 
@@ -298,10 +298,15 @@ DeepMind CEO Demis Hassabis 在《纽约时报》专访中谈及 AGI 的影响�
 
 👤 AI 个性化 Gemini 的个性化将是未来的发展方向，以满足不同用户需求。
 
-❗️ 公众情绪 公众对 AI 的使用感到担忧，需要具体用例来展示 AI 的益处。
+
+
+
+## ❗️ 公众情绪
+
+公众对 AI 的使用感到担忧，需要具体用例来展示 AI 的益处。
 
 ### 当"狂飙"的大模型撞上推荐系统
 
-https://mp.weixin.qq.com/s/I6x3B7lBdvKOAsWpvc-fIw
+`https://mp.weixin.qq.com/s/I6x3B7lBdvKOAsWpvc-fIw`
 
 本文探讨了大模型技术在推荐系统中的应用，指出大模型如 ChatGPT 的泛化能力和效率推荐系统带来了革命性变化。文章介绍了大模型在推荐系统中的三个主要应用方向：文本表征、Prompt 学习和结合 GPT 与传统推荐技术。同时，提出了个性化 Prompt 优化、鲁棒性提升和避免大模型偏见等未来研究方向。最后，建议使用大型基础模型，保持生成能力，并融合统计信息以提升推荐效果。

@@ -1,3 +1,4 @@
+
 # 五津：扣子一键生成“摸鱼打工猫”IP视频
 
 > 来源：[https://datawhaler.feishu.cn/docx/DfhxdAErZoMH9ixxCaPcVFqjnIh](https://datawhaler.feishu.cn/docx/DfhxdAErZoMH9ixxCaPcVFqjnIh)
@@ -10,23 +11,23 @@
 
 大家好，我是五津。
 
-之前我分享过用coze扣子生成爆**款单词视频的教程**，今天我来分享如何做一个有IP特色的账号，以及用扣子实现一键生成图片、短视频。
+之前我分享过用`coze`扣子生成爆款单词视频的教程，今天我来分享如何做一个有IP特色的账号，以及用扣子实现一键生成图片、短视频。
 
-# 一、IP“摸鱼打工猫”的由来？
+## 一、IP“摸鱼打工猫”的由来？
 
-**从社会现象来看，现在年轻人生**活压力大，“摸鱼”成为很多人减压的话题。越来越多年轻人爱养猫。
+从社会现象来看，现在年轻人生活压力大，“摸鱼”成为很多人减压的话题。越来越多年轻人爱养猫。
 
 那么是否可以将这二者结合，做一个IP账号呢？
 
 > 于是我使用大模型给我想点子，做什么样的内容能让用户产生aha moment的惊喜感。
 
-> **于是经过多轮沟通，它终于生成了令我ah**a的点子——"你摸鱼的2小时，在巴厘岛能看一场日落"、"你今天的工资可以在泰国按摩3次"。
+> 于是经过多轮沟通，它终于生成了令我aha的点子——“你摸鱼的2小时，在巴厘岛能看一场日落”、“你今天的工资可以在泰国按摩3次”。
 
-> 我觉得这种换算方法蛮新奇。
+我觉得这种换算方法蛮新奇。
 
 ![](img/164aadaf1c540b6d9309fbff08deebc6.png)
 
-## 所以我希望做这样一个IP账号：
+### 所以我希望做这样一个IP账号：
 
 +   账号主角：一只摸鱼打工猫
 
@@ -40,17 +41,17 @@
 
 ![](img/3474d54868150a6d5f83d152fb83199d.png)
 
-## 要做什么样的智能体？
+### 要做什么样的智能体？
 
 明确IP账号定位之后，下一步就是让智能体帮我生产内容。
 
 智能体要做的是：生成发📕笔记的图片、标题、话题；生成发抖音的视频、标题、话题。
 
-## 智能体的输入、输出是什么？
+### 智能体的输入、输出是什么？
 
 用户输入一个主题，或不填，自动生成主题相关的摸鱼打工猫图片、视频、标题、话题。
 
-# 二、内容拆解
+## 二、内容拆解
 
 明确智能体的输入、输出后，需要拆解整个过程需要做哪些事，我认为主要做3件事：
 
@@ -64,31 +65,31 @@
 
 ![](img/375ffa9d874ff9a0d73a7709cabc2c68.png)
 
-# 三、工作流搭建过程
+## 三、工作流搭建过程
 
 创建一个工作流。
 
-## 开始节点
+### 开始节点
 
 用户需要输入的创作主题是什么，这里我写的默认值为“摸鱼”，即当用户什么都不输入时，主题默认就是摸鱼。
 
 ![](img/da782fa87369cc7f0120cf051fe44107.png)
 
-## 【1】-【3】节点连线
+### 【1】-【3】节点连线
 
 ![](img/6848efef8d544903a0eac1dd6d105275.png)
 
-### 【1】生成5个创作主题
+#### 【1】生成5个创作主题
 
-引用开始节点的input
+引用开始节点的`input`
 
 ![](img/df51483e4afcafe56bcbec27f1d9c235.png)
 
 ![](img/9afd4f85cfff821fdb256ca7c4eefc1f.png)
 
-#### 系统提示词：
+##### 系统提示词：
 
-> 你是一个📕爆款专家，你的角色是摸鱼的打工猫，参考用户输入的主题{{input}}请你自己思考一下有哪些主题可以用来创作自黑幽默搞笑的文案，输出5条主题供用户选择，每个主题的字数控制在20个汉字以内。比如：
+> 你是一个📕爆款专家，你的角色是摸鱼的打工猫，参考用户输入的主题`{{input}}`请你自己思考一下有哪些主题可以用来创作自黑幽默搞笑的文案，输出5条主题供用户选择，每个主题的字数控制在20个汉字以内。比如：
 
 > 1、把摸鱼的时间计算在世界各地同样时间能做什么？你的输出主题是：打工猫摸鱼2小时，可以在泰国按摩3次
 
@@ -96,11 +97,11 @@
 
 > 3、同一时间在摸鱼的人做成有趣的数据，你的输出主题是：现在全国有10万打工猫在假装开会
 
-#### 用户提示词：
+##### 用户提示词：
 
-> 用户输入的主题是{{input}}
+> 用户输入的主题是`{{input}}`
 
-### 【2】问答_问用户选哪个主题
+#### 【2】问答_问用户选哪个主题
 
 上面节点【1】中生成了5个主题，哪个是用户最喜欢的主题呢？询问用户。
 
@@ -108,19 +109,19 @@
 
 ![](img/0b2a7fc71cda664667bdc8574d50af9f.png)
 
-### 【3】基于主题生成绘图提示词
+#### 【3】基于主题生成绘图提示词
 
-大模型基于用户选择的主题，输出对应的4组绘图提示词，用于后面画图，输出变量是tishci，array<string>数组形式。
+大模型基于用户选择的主题，输出对应的4组绘图提示词，用于后面画图，输出变量是`tishici`，`array<string>`数组形式。
 
-还会输出用户感兴趣的主体作为📕的标题文案，输出变量是biaoti，string形式。
+还会输出用户感兴趣的主体作为📕的标题文案，输出变量是`biaoti`，`string`形式。
 
 ![](img/b19fd6cf3f632ad2e88e383c96b5c25b.png)
 
 ![](img/268bdffdb72ad2c599b6c75bfc0002cb.png)
 
-#### 系统提示词
+##### 系统提示词
 
-> 针对问题{{zhuti}}，用户的回答是{{wenda}}，请你总结用户要创作的意图，意图要能够直接展示给用户看，能作为标题展示，所以不要有多余的分析，如经过你分析问题和回答，最终得出的意图是“打工猫摸鱼的2小时，在巴厘岛能看一场日落”
+> 针对问题`{{zhuti}}`，用户的回答是`{{wenda}}`，请你总结用户要创作的意图，意图要能够直接展示给用户看，能作为标题展示，所以不要有多余的分析，如经过你分析问题和回答，最终得出的意图是“打工猫摸鱼的2小时，在巴厘岛能看一场日落”
 
 >
 
@@ -132,31 +133,31 @@
 
 >
 
-> 将4组提示词以数组的方式输出到tishici
+> 将4组提示词以数组的方式输出到`tishici`
 
-> 将用户意图输出到biaoti
+> 将用户意图输出到`biaoti`
 
-#### 用户提示词
+##### 用户提示词
 
-> 针对问题{{zhuti}}，用户的回答是{{wenda}}
+> 针对问题`{{zhuti}}`，用户的回答是`{{wenda}}`
 
-## 【4】-【6】节点连线
+### 【4】-【6】节点连线
 
 ![](img/82c248b1e05f4fad6832eb6cf6cec638.png)
 
-### 【4】批处理
+#### 【4】批处理
 
 点击【添加节点】，选择【批处理】节点。
 
 批量生成图片、在图片上增加标题文案。
 
-+   输入：tishici选择【3】输出的tishici变量
++   输入：`tishici`选择【3】输出的`tishici`变量
 
 +   输出：等讲完【5】【6】再看。
 
 ![](img/73ad581c23e8e74d438fba0a1b80bd30.png)
 
-### 【5】批量生成图片
+#### 【5】批量生成图片
 
 点击【添加节点】，选择【图像生成】节点。
 
@@ -164,9 +165,9 @@
 
 +   比例选择3:4（📕查看体验好）
 
-+   输入选择【4】批处理的输入变量tishici
++   输入选择【4】批处理的输入变量`tishici`
 
-+   正面提示词是：{{shuru}}
++   正面提示词是：`{{shuru}}`
 
 +   负面提示词是：文字，汉字，英语，畸形
 
@@ -174,15 +175,15 @@
 
 ![](img/218f94fea1905ee2b89470d3cbe81dee.png)
 
-### 【6】在图片上增加标题文案
+#### 【6】在图片上增加标题文案
 
 点击【添加节点】，选择【画板】节点。
 
 元素设置包含2个：
 
-+   tupian，即【5】生成的图片
++   `tupian`，即【5】生成的图片
 
-+   biaoti，即【3】的输出变量biaoti
++   `biaoti`，即【3】的输出变量`biaoti`
 
 点击展开按钮，进入画板编辑页面。
 
@@ -196,13 +197,13 @@
 
 ![](img/5c2da6bbae0216839997131063d21ac5.png)
 
-### 【4】批处理
+#### 【4】批处理
 
-选择【5】、【6】的输出图片data输出，都是数组。
+选择【5】、【6】的输出图片`data`输出，都是数组。
 
 ![](img/7b1bf49e4f5b903323ed2ffbf0aa3eea.png)
 
-## 【7】-【11】节点连线
+### 【7】-【11】节点连线
 
 ![](img/fdbb88c38916438ce0aa1524c913ffbc.png)
 
@@ -210,71 +211,71 @@
 
 ![](img/fee3dca9aa491095f299462ed2e8f0eb.png)
 
-### 【7】创建草稿
+#### 【7】创建草稿
 
 创建一个剪映草稿，后面编辑图片、音频都在这个草稿里编辑。
 
 ![](img/ab57ca07e647996e349c134b427b861c.png)
 
-### 【8】设置图片展示时长
+#### 【8】设置图片展示时长
 
-【8-1】【8-2】的作用是相同的，取其中一个即可，用于【9】中被变量image_infos引用。
+【8-1】【8-2】的作用是相同的，取其中一个即可，用于【9】中被变量`image_infos`引用。
 
 作用是设置图片数组中每一个图片的展示时长，要处理成固定的数组格式，每个图片展示5s，一共4个图片，所以每个图片的展示时间分别是0-5、5-10、10-15、15-20
 
-【8-1】代码_设置图片展示时长
+##### 【8-1】代码_设置图片展示时长
 
-输入input选择批处理的输出huabantu
+输入`input`选择批处理的输出`huabantu`
 
 ![](img/024dbfd931c942f54699982fa737e2ec.png)
 
 ![](img/caefa352e808669f79a316d33655136e.png)
 
-#### 代码
+##### 代码
 
 ```
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     # 获取输入参数
     params = args.params
-    input_array = params.get(&#x27;input&#x27;, [])  # 安全获取input参数，默认为空列表
+    input_array = params.get('input', [])  # 安全获取input参数，默认为空列表
     
     # 创建输出数组模板
     output_array = [
         {
-            &quot;image_url&quot;: input_array[0] if len(input_array) &gt; 0 else &quot;&quot;,
-            &quot;width&quot;: 1080,
-            &quot;height&quot;: 1920,
-            &quot;start&quot;: 0,
-            &quot;end&quot;: 5000000,
-            &quot;transition&quot;: &quot;水墨&quot;,
-            &quot;transition_duration&quot;: 500000
+            "image_url": input_array[0] if len(input_array) > 0 else "",
+            "width": 1080,
+            "height": 1920,
+            "start": 0,
+            "end": 5000000,
+            "transition": "水墨",
+            "transition_duration": 500000
         },
         {
-            &quot;image_url&quot;: input_array[1] if len(input_array) &gt; 1 else &quot;&quot;,
-            &quot;width&quot;: 1080,
-            &quot;height&quot;: 1920,
-            &quot;start&quot;: 5000000,
-            &quot;end&quot;: 10000000,
-            &quot;transition&quot;: &quot;水墨&quot;,
-            &quot;transition_duration&quot;: 500000
+            "image_url": input_array[1] if len(input_array) > 1 else "",
+            "width": 1080,
+            "height": 1920,
+            "start": 5000000,
+            "end": 10000000,
+            "transition": "水墨",
+            "transition_duration": 500000
         },
         {
-            &quot;image_url&quot;: input_array[2] if len(input_array) &gt; 2 else &quot;&quot;,
-            &quot;width&quot;: 1080,
-            &quot;height&quot;: 1920,
-            &quot;start&quot;: 10000000,
-            &quot;end&quot;: 15000000,
-            &quot;transition&quot;: &quot;水墨&quot;,
-            &quot;transition_duration&quot;: 500000
+            "image_url": input_array[2] if len(input_array) > 2 else "",
+            "width": 1080,
+            "height": 1920,
+            "start": 10000000,
+            "end": 15000000,
+            "transition": "水墨",
+            "transition_duration": 500000
         },
         {
-            &quot;image_url&quot;: input_array[3] if len(input_array) &gt; 3 else &quot;&quot;,
-            &quot;width&quot;: 1080,
-            &quot;height&quot;: 1920,
-            &quot;start&quot;: 15000000,
-            &quot;end&quot;: 20000000,
-            &quot;transition&quot;: &quot;水墨&quot;,
-            &quot;transition_duration&quot;: 500000
+            "image_url": input_array[3] if len(input_array) > 3 else "",
+            "width": 1080,
+            "height": 1920,
+            "start": 15000000,
+            "end": 20000000,
+            "transition": "水墨",
+            "transition_duration": 500000
         }
     ]
     
@@ -283,124 +284,91 @@ async def main(args: Args) -&gt; Output:
     output_string = json.dumps(output_array, ensure_ascii=False, indent=4)
     
     ret: Output = {
-        &quot;output&quot;: output_string
+        "output": output_string
     }
     return ret
 ```
 
-【8-2】大模型_设置图片展示时长
+##### 【8-2】大模型_设置图片展示时长
 
 ![](img/ded33034215684279413dfd40b5856e4.png)
 
 ![](img/53d13ff3c23443da8de6803906ce5863.png)
 
-#### 系统提示词：
+###### 系统提示词：
 
-> 将输入数组的前4个链接，依次分别填入以下数组中变量image_url的值的位置。然后输出以下数组，其他变量不要有任何修改，不要有任何其他输出。
+> 将输入数组的前4个链接，依次分别填入以下数组中变量`image_url`的值的位置。然后输出以下数组，其他变量不要有任何修改，不要有任何其他输出。
 
-> [
+```
+[
+  {
+    "image_url": "xxx",
+    "width": 1080,
+    "height": 1920,
+    "start": 0,
+    "end": 5000000,
+    "transition": "水墨",  //对应剪映的转场动画名字   可选
+    "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
+  },
+  {
+    "image_url": "xxx",
+    "width": 1080,
+    "height": 1920,
+    "start": 5000000,
+    "end": 10000000,
+    "transition": "水墨",  //对应剪映的转场动画名字   可选
+    "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
+  },
+  {
+    "image_url": "xxx",
+    "width": 1080,
+    "height": 1920,
+    "start": 10000000,
+    "end": 15000000,
+    "transition": "水墨",  //对应剪映的转场动画名字   可选
+    "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
+  },
+  {
+    "image_url": "xxx",
+    "width": 1080,
+    "height": 1920,
+    "start": 15000000,
+    "end": 20000000,
+    "transition": "水墨",  //对应剪映的转场动画名字   可选
+    "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
+  }
+]
+```
 
-> {
+###### 用户提示词：
 
-> "image_url": "xxx",
+> 用户输入的数组是`{{input}}`
 
-> "width": 1080,
-
-> "height": 1920,
-
-> "start": 0,
-
-> "end": 5000000,
-
-> "transition": "水墨",  //对应剪映的转场动画名字   可选
-
-> "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
-
-> }
-
-> {
-
-> "image_url": "xxx",
-
-> "width": 1080,
-
-> "height": 1920,
-
-> "start": 5000000,
-
-> "end": 10000000,
-
-> "transition": "水墨",  //对应剪映的转场动画名字   可选
-
-> "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
-
-> }
-
-> {
-
-> "image_url": "xxx",
-
-> "width": 1080,
-
-> "height": 1920,
-
-> "start": 10000000,
-
-> "end": 15000000,
-
-> "transition": "水墨",  //对应剪映的转场动画名字   可选
-
-> "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
-
-> }
-
-> {
-
-> "image_url": "xxx",
-
-> "width": 1080,
-
-> "height": 1920,
-
-> "start": 15000000,
-
-> "end": 20000000,
-
-> "transition": "水墨",  //对应剪映的转场动画名字   可选
-
-> "transition_duration": 500000 //对应剪映的转场动画时长 ，范围是500000-2500000  可选
-
-> }
-
-> ]
-
-用户提示词：
-
-> 用户输入的数组是{{input}}
-
-### 【9】添加图片到草稿
+#### 【9】添加图片到草稿
 
 在剪映草稿中，在时间轴上添加图片。
 
-image_infos选择【8-1】或【8-2】，你用了哪个就选哪个。
+`image_infos`选择【8-1】或【8-2】，你用了哪个就选哪个。
 
 ![](img/6229b8c77a9762d4b67176edb5620486.png)
 
-### 【10】添加音频
+#### 【10】添加音频
 
 在剪映草稿中，添加背景音乐，音乐的地址是固定的，一共需要在视频里播放20s。你可以换一个你喜欢的音乐。
 
-按audio_infos要求的输入格式调好内容：
+按`audio_infos`要求的输入格式调好内容：
 
-[{"audio_url": "https://p3-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/169aee125cdc4872b44fe7c551b76394.mp3~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1775360083&x-signature=ijRX7BRptlifeqWLupp2D8WDzlU%3D&x-wf-file_name=2286_1744255884+-+Converted+with+FlexClip.mp3","duration":20,"start":0,"end":20000000,"audio_effect":""}]
+`[{"audio_url": "https://p3-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/169aee125cdc4872b44fe7c551b76394.mp3~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1775360083&x-signature=ijRX7BRptlifeqWLupp2D8WDzlU%3D&x-wf-file_name=2286_1744255884+-+Converted+with+FlexClip.mp3","duration":20,"start":0,"end":20000000,"audio_effect":""}]`
 
 ![](img/ce4463afa34b072c2707fdd8b3093462.png)
 
-### 【11】渲染视频
+#### 【11】渲染视频
 
-api_token需要进入速推官网进行冲值再使用，这个价格很低，一般几分钱生成一次，所以冲10元可以用很久。
+`api_token`需要进入速推官网进行冲值再使用，这个价格很低，一般几分钱生成一次，所以冲10元可以用很久。
 
-速推：https://ts.fyshark.com/#/login?user_id=7470
+
+
+速推：`https://ts.fyshark.com/#/login?user_id=7470`
 
 ![](img/52737b08b3d92131573c615876f7a1df.png)
 
@@ -408,23 +376,23 @@ api_token需要进入速推官网进行冲值再使用，这个价格很低，�
 
 将4张图片数组转成string格式，每个图片链接用换行隔开，便于结束输出时，用户更易读
 
-举例：["1","2","3"]转换成
+举例：`["1","2","3"]`转换成
 
+```
 1
-
 2
-
 3
+```
 
 ![](img/dbb4f7d00030b149397e901b706b0ff0.png)
 
 ## 结束节点
 
-+   tupian即生成的4张图片地址，选择【12】的输出output
++   `tupian`即生成的4张图片地址，选择【12】的输出`output`
 
-+   video即生成的视频，选择【11】的输出video_url
++   `video`即生成的视频，选择【11】的输出`video_url`
 
-+   biaoti即生成的标题，选择【3】的输出biaoti
++   `biaoti`即生成的标题，选择【3】的输出`biaoti`
 
 +   话题是固定的，你可以进行优化调整。
 
@@ -444,9 +412,9 @@ api_token需要进入速推官网进行冲值再使用，这个价格很低，�
 
 ![](img/24c0ca37451dd6e58e5e4bcacd12e120.png)
 
-# ！发布时注意！
+## ！发布时注意！
 
-工作流中节点【11】用的是你自己的api_token，如果别人使用你的智能体，会消耗你的money。
+工作流中节点【11】用的是你自己的`api_token`，如果别人使用你的智能体，会消耗你的money。
 
 如果你希望只有你企业里的人才能用这个智能体，你在发布页面选择“飞书”（不要选择“扣子商店”）将飞书授权到你的企业所在飞书账号，企业审核通过，其他人就可以通过飞书使用这个智能体了。
 

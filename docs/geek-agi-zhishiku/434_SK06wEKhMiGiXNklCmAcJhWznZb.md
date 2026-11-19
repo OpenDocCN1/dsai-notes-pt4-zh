@@ -1,4 +1,5 @@
-# 基于YOLOv8分割模型实现垃圾识别
+
+# 基于`YOLOv8`分割模型实现垃圾识别
 
 > 来源：[https://geekbang.feishu.cn/docx/Ez5id4dMyoqHDgxbySycLYmmnqK](https://geekbang.feishu.cn/docx/Ez5id4dMyoqHDgxbySycLYmmnqK)
 
@@ -16,17 +17,15 @@
 
 关注作者，获取更多AI知识
 
-##
+## 0. 引言
 
-### **0. 引言**
+`YOLOv8` 是 `Ultralytics` 开源的一个非常火的 AI 算法，目前支持目标检测、实例分割、姿态估计等任务。如果对 `YOLOv8` 的安装和使用还不了解的可以参考我之前写的这篇文章：
 
-YOLOv8 是 Ultralytics 开源的一个非常火的 AI 算法，目前支持目标检测、实例分割、姿态估计等任务。如果对 YOLOv8 的安装和使用还不了解的可以参考我之前写的这篇文章：
+`YOLOv8`初体验：检测、跟踪、模型部署
 
-YOLOv8初体验：检测、跟踪、模型部署
+本文将介绍如何使用 `YOLOv8` 的分割模型实现垃圾识别，其中所使用的训练数据来自TACO垃圾数据集。
 
-本文将介绍如何使用 YOLOv8 的分割模型实现垃圾识别，其中所使用的训练数据来自TACO垃圾数据集。
-
-### ** 1. 数据集介绍 **
+## 1. 数据集介绍
 
 TACO 是一个包含在不同环境下（室内、树林、道路和海滩）拍摄的垃圾图像数据集，这些图像中的垃圾对象被精细地用方框和多边形进行了标注，标注信息采用与 COCO 数据集一样的格式，总共有 60 个类别，不过有的类别标注得很少甚至没有。下图是 TACO 数据集中的一些标注示例：
 
@@ -44,21 +43,21 @@ git clone https://github.com/pedropro/TACO.git
 python3 download.py
 ```
 
-如果下载过程中被中断了，只需重新执行 download 脚本即可继续下载。
+如果下载过程中被中断了，只需重新执行 `download` 脚本即可继续下载。
 
-### ** 2. 训练模型 **
+## 2. 训练模型
 
-#### ** 2.1 转换标注格式 **
+### 2.1 转换标注格式
 
-TACO 数据集原始的标注信息被保存在一个名为 annotations.json 的文件中，在使用该数据集训练 YOLOv8 分割模型前，需要先把原始的标注信息转换为 YOLOv8 要求的格式。 YOLOv8 分割模型训练时需要的标注格式如下：
+TACO 数据集原始的标注信息被保存在一个名为 `annotations.json` 的文件中，在使用该数据集训练 `YOLOv8` 分割模型前，需要先把原始的标注信息转换为 `YOLOv8` 要求的格式。 `YOLOv8` 分割模型训练时需要的标注格式如下：
 
 ```
 &lt;id&gt; &lt;x_1&gt; &lt;y_1&gt; ... &lt;x_n&gt; &lt;y_n&gt;
 ```
 
-一个对象的标注信息放在一行，首先是该对象类别的 id （从 0 开始算），接着将多边形各点像素坐标的 x 和 y 值依次排列，其中 x 和 y 的值需要分别除以图像的宽度和高度进行归一化，一幅图像的所有标注信息放在一个与图像同名的 txt 文件中。
+一个对象的标注信息放在一行，首先是该对象类别的 `id` （从 0 开始算），接着将多边形各点像素坐标的 `x` 和 `y` 值依次排列，其中 `x` 和 `y` 的值需要分别除以图像的宽度和高度进行归一化，一幅图像的所有标注信息放在一个与图像同名的 `txt` 文件中。
 
-进行格式转换后， txt 文件中的内容类似于这样：
+进行格式转换后，`txt` 文件中的内容类似于这样：
 
 ```
 5 0.5183 0.4892 0.5480 0.4840 0.4840 0.5627 0.4840 0.5724 0.4853 0.5822 0.4879 0.5900
@@ -86,9 +85,9 @@ for annotation in annotations:
 label_writer.close()
 ```
 
-#### ** 2.2 创建配置文件 **
+### 2.2 创建配置文件
 
-首先仿照 ultralytics/cfg/datasets/coco128-seg.yaml 创建一个 TACO 数据集的配置文件 taco-seg.yaml ，文件内容如下：
+首先仿照 `ultralytics/cfg/datasets/coco128-seg.yaml` 创建一个 TACO 数据集的配置文件 `taco-seg.yaml` ，文件内容如下：
 
 ```
 path: /home/test/TACO/data  #数据集所在的目录
@@ -112,15 +111,15 @@ names:
   ...
 ```
 
-数据集的设置的方式有几种形式，我的方式是建立 images 和 labels 两个目录，分别用于存放图像和 txt 标注文件，然后把数据集按照 8:1:1 的比例划分训练集、验证集、测试集，再把三个数据集图片的绝对路径分别写入 train.txt 、 val.txt 和 test.txt 三个文件中。所以上面的 taco-seg.yaml 文件中设置的路径 path 就是 train.txt 、 val.txt 和 test.txt 这三个文件所在的目录，这三个文件中包含的是对应数据集中图片的绝对路径，类似于这样：
+数据集的设置的方式有几种形式，我的方式是建立 `images` 和 `labels` 两个目录，分别用于存放图像和 `txt` 标注文件，然后把数据集按照 8:1:1 的比例划分训练集、验证集、测试集，再把三个数据集图片的绝对路径分别写入 `train.txt` 、 `val.txt` 和 `test.txt` 三个文件中。所以上面的 `taco-seg.yaml` 文件中设置的路径 `path` 就是 `train.txt` 、 `val.txt` 和 `test.txt` 这三个文件所在的目录，这三个文件中包含的是对应数据集中图片的绝对路径，类似于这样：
 
 ```
-/home/test/TACO/data/images/batch_13/000077.jpg
-/home/test/TACO/data/images/batch_11/000032.jpg
-/home/test/TACO/data/images/batch_15/000073.jpg
+ /home/test/TACO/data/images/batch_13/000077.jpg
+ /home/test/TACO/data/images/batch_11/000032.jpg
+ /home/test/TACO/data/images/batch_15/000073.jpg
 ```
 
-配置好数据集后，还要设置模型参数。首先将 ultralytics/cfg/models/v8/yolov8-seg.yaml 文件拷贝一份，命名为 yolov8-seg-taco.yaml ，然后把文件中的类别数量 nc 从 80 改为 TACO 数据集的 60 ：
+配置好数据集后，还要设置模型参数。首先将 `ultralytics/cfg/models/v8/yolov8-seg.yaml` 文件拷贝一份，命名为 `yolov8-seg-taco.yaml` ，然后把文件中的类别数量 `nc` 从 80 改为 TACO 数据集的 60 ：
 
 ```
 ...
@@ -139,19 +138,19 @@ scales: # model compound scaling constants, i.e. &#x27;model=yolov8n-seg.yaml&#x
 
 其他有关模型结构的参数如果没有必要就不需要修改了。
 
-#### ** 2.3 训练 **
+### 2.3 训练
 
-训练 YOLOv8 可以使用命令行也可以编写 Python 代码实现，个人觉得还是使用命令行比较方便，所以本文采用命令行的方式进行训练，调用的命令如下：
+训练 `YOLOv8` 可以使用命令行也可以编写 Python 代码实现，个人觉得还是使用命令行比较方便，所以本文采用命令行的方式进行训练，调用的命令如下：
 
 ```
 yolo task=segment mode=train data=taco-seg.yaml model=yolov8n-seg-taco.yaml epochs=100 batch=16 imgsz=640 device=0 name=taco-seg
 ```
 
-这里 data 参数用于指定数据集配置文件， model 参数用于指定模型配置文件，如果不知道有哪些参数可以参考 ultralytics/cfg/default.yaml 文件，这个文件里面包含所有需要的参数。需要注意的是，我这里指定的模型配置文件名为 yolov8n-seg-taco.yaml ，但是前面我创建的文件名为 yolov8-seg-taco.yaml ，这是为什么呢？因为我这里想使用的模型是 yolov8n 。假如我想使用 yolov8x 模型，那么训练的时候设置参数 model=yolov8x-seg-taco.yaml 就可以了。
+这里 `data` 参数用于指定数据集配置文件， `model` 参数用于指定模型配置文件，如果不知道有哪些参数可以参考 `ultralytics/cfg/default.yaml` 文件，这个文件里面包含所有需要的参数。需要注意的是，我这里指定的模型配置文件名为 `yolov8n-seg-taco.yaml` ，但是前面我创建的文件名为 `yolov8-seg-taco.yaml` ，这是为什么呢？因为我这里想使用的模型是 `yolov8n` 。假如我想使用 `yolov8x` 模型，那么训练的时候设置参数 `model=yolov8x-seg-taco.yaml` 就可以了。
 
-训练的结果保存在 runs/segment/taco-seg 目录下，其中权重保存在该目录下的 weights 文件夹中。
+训练的结果保存在 `runs/segment/taco-seg` 目录下，其中权重保存在该目录下的 `weights` 文件夹中。
 
-### ** 3. 结果 **
+## 3. 结果
 
 训练完成后，我们可以调用命令测试一下模型的效果：
 

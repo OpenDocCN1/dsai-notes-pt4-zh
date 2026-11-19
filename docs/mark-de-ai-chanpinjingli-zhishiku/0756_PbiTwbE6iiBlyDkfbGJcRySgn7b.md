@@ -1,10 +1,11 @@
+
 # 从构建Agent转向Skills，打造可迁移的大模型应用新范式！
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/JfDAdz82RoU1aExAqwmctdF7nsd](https://qqs7y1hozd1.feishu.cn/docx/JfDAdz82RoU1aExAqwmctdF7nsd)
 
-Anthropic提出从构建Agent转向构建Skills的新理念。Skills是包含任务说明、工具、专业知识和素材的文件夹，简单易管理且可组合，解决了Agent领域专业度不足的问题。Skills与MCP互补，前者提供专业知识，后者连接外部世界。未来将把Skills作为软件管理，实现知识可迁移。类比而言，Skills就像应用层，让开发者能编码自己的专业和观点，是大模型应用的关键。
+## 从 Agent 到 Skills 的新范式
 
----
+Anthropic提出从构建Agent转向构建Skills的新理念。Skills是包含任务说明、工具、专业知识和素材的文件夹，简单易管理且可组合，解决了Agent领域专业度不足的问题。Skills与MCP互补，前者提供专业知识，后者连接外部世界。未来将把Skills作为软件管理，实现知识可迁移。类比而言，Skills就像应用层，让开发者能编码自己的专业和观点，是大模型应用的关键。
 
 Anthropic 分享了一些最新的insight。一个暴论：别再造 Agent 了，开始造 Skills 吧。
 
@@ -14,7 +15,7 @@ Anthropic 分享了一些最新的insight。一个暴论：别再造 Agent 了�
 
 ![](img/3d0bcd4ada93c1250c617dfb8817e08c.png)
 
-Coding Agent is All you Need， 代码Agent 就是数字世界的通用接口。
+Coding Agent is All you Need，代码Agent 就是数字世界的通用接口。
 
 ![](img/09634ceb2cc21f56a74d1b0242637c86.png)
 
@@ -30,11 +31,13 @@ Coding Agent is All you Need， 代码Agent 就是数字世界的通用接口。
 
 所以他们后来做了 Skills。
 
+## Skills 的本质与设计
+
 Skills 是什么？本质就是文件夹。
 
 ![](img/5cd617c744564a75156b8a67097ed947.png)
 
-一个 Skill = 任务说明 skill.md + 脚本工具 + 专业知识 + 素材资源。
+一个 Skill = 任务说明 `skill.md` + 脚本工具 + 专业知识 + 素材资源。
 
 这种简单是刻意的。能用 Git 管理，能丢云盘共享，能打包发团队。文件作为原语用了几十年，没必要搞复杂。
 
@@ -44,11 +47,15 @@ Skills 是什么？本质就是文件夹。
 
 发布后几周，生态已经冒出几千个 Skills，最有意思的是，非技术岗位也在做 Skills。财务、法务、招聘，都能用这套东西让 Agent 更懂自己的日常工作。
 
+## Skills 与 MCP 的关系
+
 Skills 和 MCP 是什么关系？不是替代，是互补。
 
 ![](img/ce1c1fa88a034584e5194a90f2e24236.png)
 
 MCP 负责连接外部世界，Skills 负责提供专业知识。开发者已经开始用 Skills 编排多个 MCP 工具的复杂工作流了。
+
+## 未来方向：将 Skills 作为软件管理
 
 未来方向很清晰：把 Skills 当软件来管理。测试评估、版本控制、依赖声明，这些软件工程的玩法都要搬过来。
 
@@ -63,5 +70,7 @@ MCP 负责连接外部世界，Skills 负责提供专业知识。开发者已经
 ![](img/adfb4870fc017962c435b63a9bea30f7.png)
 
 Skills 就是要打开这一层。往文件夹里放东西，就能让 Agent 更强。
+
+## 总结
 
 所以，别再造 Agent 了，开始造 Skills 吧。

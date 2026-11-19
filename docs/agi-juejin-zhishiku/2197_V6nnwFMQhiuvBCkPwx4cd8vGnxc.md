@@ -1,16 +1,14 @@
-# 12.27-国产大模型 DeepSeek-V3 开源：6710 亿参数自研 MoE，性能和 GPT-4o 不分伯仲
-
-> 来源：[https://agijuejin.feishu.cn/docx/AtuGdPtfBoRAXBxol7ZcSjBAnCh](https://agijuejin.feishu.cn/docx/AtuGdPtfBoRAXBxol7ZcSjBAnCh)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 27 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/AtuGdPtfBoRAXBxol7ZcSjBAnCh](https://agijuejin.feishu.cn/docx/AtuGdPtfBoRAXBxol7ZcSjBAnCh)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/08eb7d37c90997483374be71a49fee09.png)
 
 ## ⭐ 今日热点
 
-### 💡 国产大模型 DeepSeek-V3 开源：6710 亿参数自研 MoE，性能和 GPT-4o 不分伯仲
+### 12.27-国产大模型 DeepSeek-V3 开源：6710 亿参数自研 MoE，性能和 GPT-4o 不分伯仲
 
 IT之家 | [阅读原文](https://www.ithome.com/0/820/512.htm)
 

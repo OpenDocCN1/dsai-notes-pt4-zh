@@ -1,10 +1,11 @@
+
 # groqlabs--appgen
 
 > 来源：[https://now.feishu.cn/docx/W12ndKFkCor25nxhavVco8xFn9d](https://now.feishu.cn/docx/W12ndKFkCor25nxhavVco8xFn9d)
 
-https://appgen.groqlabs.com/
+`https://appgen.groqlabs.com/`
 
-groqlabs--appgen
+`groqlabs--appgen`
 
 快速制作 app
 

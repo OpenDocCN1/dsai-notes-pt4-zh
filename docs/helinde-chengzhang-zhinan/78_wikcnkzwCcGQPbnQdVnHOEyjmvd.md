@@ -1,141 +1,109 @@
+
 # AI资源库
 
 > 来源：[https://my.feishu.cn/docx/FrocdBEYooyBqhxTiUncB1X5nXj](https://my.feishu.cn/docx/FrocdBEYooyBqhxTiUncB1X5nXj)
 
-# Midjourney辅助网站
+## Midjourney辅助网站
 
-Midjourney 提示词生成（我用的最多的网站）：
-
+Midjourney 提示词生成（我用的最多的网站）：  
 https://promptomania.com/generic-prompt-builder/
 
-Midjourney官方文档：
-
+Midjourney官方文档：  
 https://docs.midjourney.com/docs/quick-start
 
-Midjourney官方社区展示：
-
+Midjourney官方社区展示：  
 https://www.midjourney.com/showcase/recent/
 
-Midjourney 提示词助手：
-
+Midjourney 提示词助手：  
 https://prompt.noonshot.com/
 
 艺术家风格列表大全：https://docs.google.com/spreadsheets/d/1cm6239gw1XvvDMRtazV6txa9pnejpKkM5z24wRhhFz0/htmlview#
 
-[Midjourney提](https://github.com/willwulfken)示词大全 by willwulfken：
+[Midjourney提示词大全 by willwulfken](https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference)
 
-https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference
-
-Midjourney 艺术家风格词库：
-
+Midjourney 艺术家风格词库：  
 https://lib.kalos.art/
 
-AI反推图片描述词：
-
+AI反推图片描述词：  
 https://huggingface.co/spaces/pharma/CLIP-Interrogator
 
-AI扩写描述词：
-
+AI扩写描述词：  
 https://huggingface.co/spaces/daspartho/prompt-extend
 
-根据描述词局部修改图片：
-
+根据描述词局部修改图片：  
 https://playgroundai.com/create
 
-可能是最好的Midjoureny文字教程
-
+可能是最好的Midjoureny文字教程：  
 https://learningprompt.wiki/docs/midjourney-learning-path
 
-# AI工具导航
+## AI工具导航
 
-chatGPT学习导航：
-
-https://gpt.candobear.com/
-
+chatGPT学习导航：  
+https://gpt.candobear.com/  
 https://learningprompt.wiki/docs/chatgpt-learning-path
 
-awesome-chatgpt-prompts：
-
+awesome-chatgpt-prompts：  
 https://github.com/f/awesome-chatgpt-prompts
 
-chatGPT中文调教指南：
-
+chatGPT中文调教指南：  
 https://github.com/PlexPt/awesome-chatgpt-prompts-zh
 
-openAI应用汇总指南：
-
+openAI应用汇总指南：  
 https://www.mojidoc.com/05z7y-dd5pa7hu3zfmhnbngoeztyqcnq-00b
 
-给自己的图片注入噪音：
-
+给自己的图片注入噪音：  
 https://github.com/MadryLab/photoguard
 
-AI设计师灵感助手
-
+AI设计师灵感助手：  
 https://www.aigenprompt.com/zh-CN
 
-# chatGPT工具
+## chatGPT工具
 
-AI阅读文档-chatDOC：
-
+AI阅读文档-chatDOC：  
 https://chatdoc.com/
 
-chatEXCEL：
-
+chatEXCEL：  
 https://chatexcel.com/?continueFlag=cc734774b142837d5cb04bc1df00296d
 
-chatGPT提示词优化工具（有额度限制，但优化效果明显）：
-
+chatGPT提示词优化工具（有额度限制，但优化效果明显）：  
 https://promptperfect.jinaai.cn/prompts
 
-让chatGPT运行更稳定的插件-keep chatGPT：
-
+让chatGPT运行更稳定的插件-keep chatGPT：  
 https://github.com/xcanwin/KeepChatGPT#%E5%AE%89%E8%A3%85%E6%B8%A0%E9%81%93
 
-chatGPT提示词网站
-
+chatGPT提示词网站：  
 https://learnprompting.org/docs/intro
 
-GPT分析pdf：
-
+GPT分析pdf：  
 https://www.humata.ai/
 
-chatGPT接入飞书教程：
-
+chatGPT接入飞书教程：  
 https://github.com/whatwewant/chatgpt-for-chatbot-feishu
 
-ChatGPT for Google浏览器扩展：
-
+ChatGPT for Google浏览器扩展：  
 https://chatgpt4google.com/
 
-chatGPT总结youtube视频内容：
-
+chatGPT总结youtube视频内容：  
 https://chrome.google.com/webstore/detail/youtube-summary-with-chat/nmmicjeknamkfloonkhhcjmomieiodli/related
 
-让chatGPT联网的插件：
-
+让chatGPT联网的插件：  
 https://github.com/qunash/chatgpt-advanced
 
-chatGPT问答网站：
-
+chatGPT问答网站：  
 https://poe.com/
 
-chatGPT内容检测工具
-
+chatGPT内容检测工具：  
 https://huggingface.co/spaces/Hello-SimpleAI/chatgpt-detector-qa
 
-元乘象内容导航：
-
+元乘象内容导航：  
 http://chatimg.aixiaoqingxu.com/pages/chatroom/chatroom
 
-AI帮你写代码的工具：
-
+AI帮你写代码的工具：  
 https://www.cursor.so/
 
-# 资料教程推荐
+## 资料教程推荐
 
-吴恩达chatGPT提示词工程-在线阅读：
-
+吴恩达chatGPT提示词工程-在线阅读：  
 吴恩达与openAI合作课程：用chatGPT API构建系统
 
 [分享你的 Prompt 实战案例 （比赛已结束，但欢迎继续提交）](https://bytedance.feishu.cn/sheets/C9Fas0jnah8fPjtAuHocs941nCd?sheet=qA4Cjq)
@@ -144,13 +112,13 @@ https://www.cursor.so/
 
 [AI创作的正确打开方式：雪佛兰×全屏本是×Simon的白日梦 -【品牌万事屋-案例复盘】-5.11.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hbq5b2BJjoPTcWx0Ogfc8N4Pnaf)
 
-# AIGC信息渠道推荐
+## AIGC信息渠道推荐
 
 [Simon_阿文](https://weibo.com/u/1757693565)：知名设计师，经常在🧣分享很多优质的设计、AI教程，非常推荐。
 
 ![](img/689753bc42d4f8b6d336b9c3e0f6fe5d.png)
 
-[歸藏](https://twitter.com/op7418)：一位一直在分享AIGC相关内容的产品设计师，推荐关**注****，这**是他的即刻主页。推荐关注他的👸号「歸藏的AI工具箱」，也可以订阅他每周更新的邮件「AIGC周刊」。
+[歸藏](https://twitter.com/op7418)：一位一直在分享AIGC相关内容的产品设计师，推荐关注，这是他的即刻主页。推荐关注他的👸号「歸藏的AI工具箱」，也可以订阅他每周更新的邮件「AIGC周刊」。
 
 ![](img/495a4e54b3a05d8350b011c7f1136deb.png)
 
@@ -182,7 +150,7 @@ https://weibo.com/u/1727858283
 
 ![](img/562380ea2e1ada76b598b16d2e5a3cdb.png)
 
-# AI知识库
+## AI知识库
 
 [AI自媒体（对标账号） 副本](https://jcn3sfy9dhz6.feishu.cn/wiki/VUlswrxBgirQKJkxc5BcOUvbnuU?from=from_copylink)
 

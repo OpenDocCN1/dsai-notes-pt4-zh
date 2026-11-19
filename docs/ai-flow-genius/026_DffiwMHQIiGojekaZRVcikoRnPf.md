@@ -1,3 +1,4 @@
+
 # GPT宝宝，你真应该来给我当实习生
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/YeuRd0BZbo61JkxieEwcFhElnBg](https://jalicvoygc0.feishu.cn/docx/YeuRd0BZbo61JkxieEwcFhElnBg)
@@ -34,7 +35,7 @@ step1:飞书妙计：录音音频转成文字稿。
 
 ![](img/51e8424be083975526e13933d81c464b.png)
 
-step2: GPT ：投喂文字稿，改写通顺。
+step2: GPT：投喂文字稿，改写通顺。
 
 ![](img/4deff4ede4762400a7f53ddb576a1f61.png)
 

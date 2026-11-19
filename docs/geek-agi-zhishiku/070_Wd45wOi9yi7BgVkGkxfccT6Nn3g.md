@@ -1,3 +1,4 @@
+
 # 进阶玩法（23条）
 
 > 来源：[https://geekbang.feishu.cn/docx/BO8Kd4JMOorrIzx8WK0cIZbknUc](https://geekbang.feishu.cn/docx/BO8Kd4JMOorrIzx8WK0cIZbknUc)
@@ -18,7 +19,7 @@
 | 歸藏(guizang.ai)(@op7418) | 《让你的 ClaudeCode 变成 Openclaw（龙虾），连接飞书、Discord 远程控制》 | https://x.com/op7418/status/2029563318973952221 |
 | 看不懂的SOL(@DtDt666) | 《要开始&quot;养龙虾&quot;（使OpenClaw），核心是完成部署、配置、训练三步》 | https://x.com/DtDt666/status/2030102929127133610 |
 | GitHubDaily(@GitHub_Daily) | 《GitHub 上有一份精心整理了最近爆火的 OpenClaw 技能合集》 | https://x.com/GitHub_Daily/status/2017863068064313813 |
-| siri.eth | KarenZ(@KarenZh30739159) | 《给 AI 开个外挂，Web3 玩家的 OpenClaw 装机技能合集》 | https://x.com/KarenZh30739159/status/2029127966823989406 |
+| siri.eth KarenZ(@KarenZh30739159) | 《给 AI 开个外挂，Web3 玩家的 OpenClaw 装机技能合集》 | https://x.com/KarenZh30739159/status/2029127966823989406 |
 | 一口新饭(@onenewbite) | 《为什么你的 OpenClaw 一定要安装 NotebookLM Skill》 | https://x.com/onenewbite/status/2024819940327379286 |
 | 冰河(@binghe) | 《如果你 Openclaw 安装了，但是不好用，可能你没安装下面三个 Skill 技能》 | https://x.com/binghe/status/2019699551578607659 |
 | 向阳乔木(@vista8) | 《OpenClaw（Clawdbot） + Kimi 2.5 最新手把手教程，附飞书接入指南和 700+ Skill资源》 | https://x.com/vista8/status/2017505242510926275 |

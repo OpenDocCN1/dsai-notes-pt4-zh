@@ -1,3 +1,4 @@
+
 # GPT 提示词全自动生产线
 
 > 来源：[https://docs.feishu.cn/docx/GUsEd5fu5ol06uxHQvocsRxqn0g](https://docs.feishu.cn/docx/GUsEd5fu5ol06uxHQvocsRxqn0g)
@@ -5,32 +6,28 @@
 导航栏：[个人网站](http://www.doumoman.site)
 
 > 本文适合如下几类读者观看：
-
 > 1）想要输出内容却不知道受众在哪、如何选题的小伙伴，可以把这篇看作一个选题和输出案例；
-
 > 2）做 AIGC 的小伙伴，不管是 ChatGPT 还是 AI 绘画，写提示词都可以借鉴自动化思路；
-
 > 3）手动写 ChatGPT 提示词的小伙伴，可借鉴自动化思路；
-
-> 4）会使用 python 写自动化脚本的小伙伴们，开始炼金。
+> 4）会使用 `python` 写自动化脚本的小伙伴们，开始炼金。
 
 > 本文对应代码下载：https://gitee.com/doumoman/gpt_gum_kit.git
 
-# 一、内容输出定位
+## 一、内容输出定位
 
 学习和使用 ChatGPT 已经有两个月的时间了，加入 AI 破局俱乐部星球已一月有余，不久前我也荣幸成为了 AI 破局俱乐部合伙人。加入星球的这一个月里，我每天都要把最新、精华、中标和 AI 风向标里的内容浏览一遍，挑自己感兴趣的进行精读，收获不能说非常大，那是超预期的非常大。
 
-在今天这个“内容为王”的时代，AI 破局俱乐部的精华内容产出效率实在是惊人。这得益于俱乐部小伙伴们的倾力奉献，和洋哥团队的精心运营。这种付出和奉献精神天天感染着我，每每看到好的精华内容，我既喜悦又焦虑。
+在今天这个"内容为王"的时代，AI 破局俱乐部的精华内容产出效率实在是惊人。这得益于俱乐部小伙伴们的倾力奉献，和洋哥团队的精心运营。这种付出和奉献精神天天感染着我，每每看到好的精华内容，我既喜悦又焦虑。
 
-喜悦自不用说，**焦虑的是，我有输出欲**望，那我应该输出什么内容？这是我入睡前刷完星球内容后始终在思考的问题。最近我总结了两个思路：
+喜悦自不用说，**焦虑的是，我有输出欲望**，那我应该输出什么内容？这是我入睡前刷完星球内容后始终在思考的问题。最近我总结了两个思路：
 
-1.  **帮助贴在你后面的人**
+1. **帮助贴在你后面的人**
 
 毕竟学习使用 ChatGPT 的时间不长，认知和水平是赶不上群里已经变现的大佬们的。最近参加小林 AI 之心写作训练营，看到群里大家的发言，我逐渐意识到：把自己所想所做写出来就好，不要总往爬山队伍的头部看，腰部、尾部的受众大有人在。成长就像走台阶，最需要你搭把手的人是贴在你后面的人。
 
 所以，不要在意太多，把自己想的、做的发出来，哪怕是一句留言、一段话都可以，这很有可能启发到他人。
 
-1.  **服务内部细分需求**
+2. **服务内部细分需求**
 
 作为一个自媒体新手，我没有公域引流渠道，更没有私域可以运营，这一度是阻碍我进行输出的最大焦虑点。总想要更多而不珍惜已经拥有的，这是人性。
 
@@ -38,17 +35,17 @@ AI 破局俱乐部，3 万人的星球，被自己本能的忽视了。星球里
 
 [不过，动手](https://d16rg8unadx.feishu.cn/docx/FVzcd4TcaodEsuxj0LmcBiAmnub)输出前，先翻一下俱乐部的优质贴合集，判断下你识别的需求是不是已经被满足了。豆茉君观察下来，宝宝们的需求大概率是有对应的帖子的，毕竟俱乐部里大家卷起内容来铺天盖地🙆‍♂️。
 
-**别着急，即使这样，我**们还是有事可以做！选题的思路可分为两种：
+**别着急，即使这样，我们还是有事可以做！**选题的思路可分为两种：
 
-**a） 站在巨人肩膀上**
+a）**站在巨人肩膀上**
 
-不要[从 0 到](https://d16rg8unadx.feishu.cn/docx/FVzcd4TcaodEsuxj0LmcBiAmnub) 1 造轮子，要基于别人的基础做加法，去组合去优化。这个在 @吴东子 有关赛博机车的主题中得到了很好的体现。大家根据东子哥的思路，做了自己的尝试，并基于此进一步分享了自己的心得。大家在优质贴合集中搜“机车”，就可以发现很多相关内容。
+不要[从 0 到](https://d16rg8unadx.feishu.cn/docx/FVzcd4TcaodEsuxj0LmcBiAmnub) 1 造轮子，要基于别人的基础做加法，去组合去优化。这个在 @吴东子 有关赛博机车的主题中得到了很好的体现。大家根据东子哥的思路，做了自己的尝试，并基于此进一步分享了自己的心得。大家在优质贴合集中搜"机车"，就可以发现很多相关内容。
 
-**b） 洞察易于被忽视的需求**
+b）**洞察易于被忽视的需求**
 
 易于被发现的需求自然会被很多人去抢，那么还有一类需求是易于被忽视的。这类需求的表现形式可以是别人的随口一提、认为理所应当的事情、潜意识中的假设等等。这就跟找热点选题类似，这需要有一双善于发现的眼睛。
 
-# 二、需求发现
+## 二、需求发现
 
 说了这么多，豆茉君要回到正题了。
 
@@ -58,9 +55,9 @@ AI 破局俱乐部，3 万人的星球，被自己本能的忽视了。星球里
 
 我当时第一想法是，人海战术。毕竟俱乐部里面这么多懂提示词的伙伴，组个团交付就可以了，当天晚上我也没细想。第二天，出差在飞机上眯着眼睛，我突然意识到一个问题：这都 AIGC 时代了，我第一惯性思维还是人海战术，猛烈的羞愧感扑面而来。
 
-为什么不试试自动化脚本呢？因为工作原因，我熟悉 python，这又狠狠的敲击了我一下：自打使用 ChatGPT 以来，我都是用有 GUI 界面的，从来没有去看过 Openai 的 API 文档，以及 Github 上牛人们关于 prompt engineering 的分享，说不定能发现新大陆。唉，人啊，是有多么不珍惜自己已有的东西，而本能的选择忘却。
+为什么不试试自动化脚本呢？因为工作原因，我熟悉 `python`，这又狠狠的敲击了我一下：自打使用 ChatGPT 以来，我都是用有 GUI 界面的，从来没有去看过 `OpenAI` 的 API 文档，以及 `Github` 上牛人们关于 `prompt engineering` 的分享，说不定能发现新大陆。唉，人啊，是有多么不珍惜自己已有的东西，而本能的选择忘却。
 
-周四晚上，我翻阅了 Github 的 trending，果然不多久，就发现了今天的内容主题：
+周四晚上，我翻阅了 `Github` 的 `trending`，果然不多久，就发现了今天的内容主题：
 
 ## GPT Prompt engineering 的官方介绍
 
@@ -76,7 +73,7 @@ AI 破局俱乐部，3 万人的星球，被自己本能的忽视了。星球里
 
 > 只需输入任务的描述和一些测试用例，系统就会生成、测试和排名大量提示，以找到表现最好的提示。
 
-# 三、解决思路
+## 三、解决思路
 
 为了找到解决需求的思路，豆茉君习惯把用户的行为进行流程化分析。
 
@@ -96,37 +93,37 @@ AI 破局俱乐部，3 万人的星球，被自己本能的忽视了。星球里
 
 6）结束
 
-从流程上看，最耗时间的步骤是“反复调整提示词”，所以星球中很多帖子都是有关如何撰写改进提示词的。
+从流程上看，最耗时间的步骤是"反复调整提示词"，所以星球中很多帖子都是有关如何撰写改进提示词的。
 
 其中，豆茉君印象最深刻的是 [ChatGPT任务指令万能模板：简单好用的BRTR原则(学习AI必备教程)](https://xq6mz7nkknp.feishu.cn/docx/L2eMdbYAfoIqBQxfA6ScKtI5nch)  @台风-gpt 魔法师。
 
 ![](img/1b3196b9d2ed84818a3d4093753bfb4a.png)
 
-@袁六伟 早前也提出过一个提示词框架，他称为元指令： 月入 10 万的指令工程师，调教指令的全流程
+@袁六伟 早前也提出过一个提示词框架，他称为元指令：月入 10 万的指令工程师，调教指令的全流程
 
 ![](img/fe3baaf42971b7e115810a16a5003d17.png)
 
-而关于流程中的“**评估输出**[”，有小伙伴也](https://wx.zsxq.com/dweb2/index/topic_detail/584445888182884)提出需求，@袁六伟 就分享过一个评价指标体系 。从这个“打分指令”看得出，@袁六伟 是在用自动化的方式，让 ChatGPT 根据他提出的指标体系进行自动打分。
+而关于流程中的"**评估输出**"，有小伙伴也[提出需求](https://wx.zsxq.com/dweb2/index/topic_detail/584445888182884)，@袁六伟 就分享过一个评价指标体系。从这个"打分指令"看得出，@袁六伟 是在用自动化的方式，让 ChatGPT 根据他提出的指标体系进行自动打分。
 
 ![](img/859b88973856411334c5904a82bcc487.png)
 
-让我们细想一下，@袁六伟 和 @台风-gpt 魔法师 到底做的是什么？对，聪明的小伙伴们，他们实际上是在做标准化，他们试图把“写提示词”和“评估输出”这两个步骤进行标准化。那么标准化以后呢，从流程的角度看，最大的好处就是：可以被自动化了。自动化的优势在于，在保证输出质量的前提下，极大提高工作效率。
+让我们细想一下，@袁六伟 和 @台风-gpt 魔法师 到底做的是什么？对，聪明的小伙伴们，他们实际上是在做标准化，他们试图把"写提示词"和"评估输出"这两个步骤进行标准化。那么标准化以后呢，从流程的角度看，最大的好处就是：可以被自动化了。自动化的优势在于，在保证输出质量的前提下，极大提高工作效率。
 
 让我们再看看 @小七姐 提出的痛点，是不是就可以顺着这个思路去解决了。
 
-# 四、过程拆解
+## 四、过程拆解
 
 不会代码的小伙伴们别怕，我是要讲人话的。因为拆解的重点是思路，所有代码你都可以无视。当然，会代码的小伙伴们就更好了，看完直接上手。但是，大家也需要做好烧脑的准备。保证你看完了会很有收获，能开启另一种角度去看待写提示词。
 
-**首先，我们回顾一下第**三部分提出的流程，看看有哪些是需要被自动化的：
+**首先，我们回顾一下第三部分提出的流程**，看看有哪些是需要被自动化的：
 
 1）心中有问题
 
-这一步是起点，是人的动机引发的，关**键是要提出有价值的正**确的问题。目前看来，被自动化的优先级不高。但是这也有自动化的可能性的。例如，我们是不是可以让 ChatGPT 告诉我们，有哪些问题是应该被关注而 ChatGPT 在给出答案方面是比人类更有优势的。有关这个，豆茉君研究一下再给大家做分享。
+这一步是起点，是人的动机引发的，关键是**要提出有价值的正确的问题**。目前看来，被自动化的优先级不高。但是这也有自动化的可能性的。例如，我们是不是可以让 ChatGPT 告诉我们，有哪些问题是应该被关注而 ChatGPT 在给出答案方面是比人类更有优势的。有关这个，豆茉君研究一下再给大家做分享。
 
 2）**写提示词**
 
-**这一步是需要优先被自动化的**。
+这一步是需要**优先被自动化的**。
 
 3）ChatGPT 回答
 
@@ -142,19 +139,19 @@ AI 破局俱乐部，3 万人的星球，被自己本能的忽视了。星球里
 
 6）结束
 
-接下来，让我们看一下本文要拆解的 GPT Prompt engineering 这个 Github 库。它目前有**高达 **3600+的星标量！要知道，这个库才刚刚发布 2 个星期，是异常火爆🔥🔥🔥。按照 @洋哥 的说法，这肯定是个异常值了。这足以引起大家的重视！（过了一个周末，现在 3.8k 了）
+接下来，让我们看一下本文要拆解的 GPT Prompt engineering 这个 `Github` 库。它目前有高达 3600+ 的星标量！要知道，这个库才刚刚发布 2 个星期，是异常火爆🔥🔥🔥。按照 @洋哥 的说法，这肯定是个异常值了。这足以引起大家的重视！（过了一个周末，现在 3.8k 了）
 
 ![](img/26e1bda9378d5a0439c3d86447d3f0d6.png)
 
-所以，豆茉君不惜爆肝一波，梳理了它实现自动化的流程。**整个过程会以下面这个任务目标来贯穿始终：让 ChatGP**T 自动给出一个提示词，**用于根据用户提供的自我描述（案**例）来给出做自媒体的建议。流程图小伙伴们先瞄一眼，看懂多少算多少，带着问题往下走：
+所以，豆茉君不惜爆肝一波，梳理了它实现自动化的流程。**整个过程会以下面这个任务目标来贯穿始终：让 ChatGPT 自动给出一个提示词，用于根据用户提供的自我描述（案例）来给出做自媒体的建议。**流程图小伙伴们先瞄一眼，看懂多少算多少，带着问题往下走：
 
 下面，豆茉君将逐步进行拆解。
 
-## 一）问题拆分
+### 一）问题拆分
 
 首先，程序会把问题拆解成两部分。拆解的目的是为了能够方便自动生成 n 条提示词，然后结合 m 个案例描述，去生成一一对应的答案，最后反过来评估到底哪一个提示词是最棒的。
 
-### 1、**任务目标**
+#### 1、任务目标
 
 这里需要用户简要的说明想让 ChatGPT 干嘛。例如，这里豆茉君的输入是：
 
@@ -164,9 +161,9 @@ description = &quot;请写出一个提示词, 帮助人们更好地了解自己�
 
 不要忘记，整个程序的目标是干嘛，是自动输出一条满足任务目标要求的最优提示词。相比我们手动写、评、改再写的循环过程，程序的思路是一次性先输出优化过的 n 条提示词，然后通过评价打分，从中筛选出最佳的那个给到我们。
 
-在写任务目标的时候，程序推荐的模板是：[”请写出一个提示词“] + [目标的简要描述] + [任务的简要描述]
+在写任务目标的时候，程序推荐的模板是：["请写出一个提示词"] + [目标的简要描述] + [任务的简要描述]
 
-### 2**、案例描述**
+#### 2、案例描述
 
 这里需要用户自定义几个案例。例如，这里豆茉君的案例有 4 个（m=4）：
 
@@ -180,7 +177,7 @@ test_cases = [
 
 这些案例描述信息会被使用两次：一次，是在程序自动化生成 n 条提示词的时候，他们将被考虑；另一次，是用于 ChatGPT 输出答案（即会根据所有案例描述自动化生成 n 条提示词，分别输出答案）。
 
-## 二）自动写提示词
+### 二）自动写提示词
 
 这一步，程序巧妙的预设了一段提示词，结合用户给的案例描述，输出了 n 条（n 可以自定义）更详尽的提示词，它们是对用户输入的任务目标的优化，相当于就是大家用过的一些提示词优化工具的功能。这里，程序预设的优化提示词的提示词是：
 
@@ -232,213 +229,207 @@ def generate_candidate_prompts(description, test_cases, number_of_prompts):
 
 > **Output:**
 
-> As a lawyer with a passion for cooking steak and pizza at home, there's a great opportunity for you to excel as a self-media influencer. Consider sharing your culinary expertise with a legal twist. Create engaging content by showcasing your favorite steak and pizza recipes while simultaneously providing legal insights related to the culinary world. This unique combination can attract a niche audience interested in both law and cooking. It's essential to select appropriate digital platforms like food blogging websites, social media groups, or even starting your own cooking and legal YouTube channel. Remember to actively interact with your audience, responding to comments, and asking for their input on legal aspects of cooking. Embrace your talent, and you'll be able to connect with a community eager to learn and enjoy your delectable recipes along with valuable legal knowledge. Get ready to become a leading culinary-legal influencer!
 
->
 
-> 你是一个 AI 的人才发现指南。你的目标是评估人们的才能，并为他们提供如何成为互联网上杰出的自媒体影响者的个性化建议。你应该考虑各种人才，如写作、烹饪、编程等。你的建议应该涵盖内容生产、观众参与和平台选择等方面。记住，你的回答应该根据个人的才能和兴趣量身定制。
+# 候选提示词 1
 
-> 描述某人的才能或兴趣，提供如何成为一名优秀的自媒体网红达人的建议。包括创建吸引人的内容、建立强大的在线形象和与观众互动的技巧。你的建议应该考虑各种数字平台，如社交媒体、博客、视频分享等。
+As a lawyer with a passion for cooking steak and pizza at home, there's a great opportunity for you to excel as a self-media influencer. Consider sharing your culinary expertise with a legal twist. Create engaging content by showcasing your favorite steak and pizza recipes while simultaneously providing legal insights related to the culinary world. This unique combination can attract a niche audience interested in both law and cooking. It's essential to select appropriate digital platforms like food blogging websites, social media groups, or even starting your own cooking and legal YouTube channel. Remember to actively interact with your audience, responding to comments, and asking for their input on legal aspects of cooking. Embrace your talent, and you'll be able to connect with a community eager to learn and enjoy your delectable recipes along with valuable legal knowledge. Get ready to become a leading culinary-legal influencer!
 
-> 示例：
+你是一个 AI 的人才发现指南。你的目标是评估人们的才能，并为他们提供如何成为互联网上杰出的自媒体影响者的个性化建议。你应该考虑各种人才，如写作、烹饪、编程等。你的建议应该涵盖内容生产、观众参与和平台选择等方面。记住，你的回答应该根据个人的才能和兴趣量身定制。
 
-> 输入：
+描述某人的才能或兴趣，提供如何成为一名优秀的自媒体网红达人的建议。包括创建吸引人的内容、建立强大的在线形象和与观众互动的技巧。你的建议应该考虑各种数字平台，如社交媒体、博客、视频分享等。
 
-> 天赋/兴趣：“我是一名律师，我喜欢在家做牛排和披萨”。
+示例：
 
-> 输出：
+输入：
 
-> 作为一名热衷于在家烹饪牛排和披萨的律师，你有很大的机会成为一名自媒体网红达人。考虑分享你的烹饪专业知识和法律转折。通过展示你最喜欢的牛排和披萨食谱来创建引人入胜的内容，同时提供与烹饪世界相关的法律见解。这种独特的组合可以吸引对法律和烹饪都感兴趣的利基受众。选择适当的数字平台，如美食博客网站、社交媒体群组，甚至开设自己的烹饪和法律 YouTube 频道是至关重要的。记得积极与你的受众互动，回复评论，并征求他们对烹饪法律方面的意见。拥抱你的才华，你将能够与渴望学习和享受美味食谱以及宝贵法律知识的社区联系起来。准备好成为一名领先的烹饪法律网红达人！
+天赋/兴趣：“我是一名律师，我喜欢在家做牛排和披萨”。
 
-> **候选提示词 2**
+输出：
 
-> You are an AI assistant that helps people discover their talents and provides guidance on becoming a successful internet content creator. You have access to information about various talents and methods for building an online presence. Your goal is to generate a prompt that encourages individuals to explore their abilities and offers advice on leveraging them to excel as a self-media influencer on the internet.
+作为一名热衷于在家烹饪牛排和披萨的律师，你有很大的机会成为一名自媒体网红达人。考虑分享你的烹饪专业知识和法律转折。通过展示你最喜欢的牛排和披萨食谱来创建引人入胜的内容，同时提供与烹饪世界相关的法律见解。这种独特的组合可以吸引对法律和烹饪都感兴趣的利基受众。选择适当的数字平台，如美食博客网站、社交媒体群组，甚至开设自己的烹饪和法律 YouTube 频道是至关重要的。记得积极与你的受众互动，回复评论，并征求他们对烹饪法律方面的意见。拥抱你的才华，你将能够与渴望学习和享受美味食谱以及宝贵法律知识的社区联系起来。准备好成为一名领先的烹饪法律网红达人！
 
-> **Instructions:**
+# 候选提示词 2
 
-> You will be given a brief description of an individual's background, interests, or skills. Based on that information, create a prompt that:
+You are an AI assistant that helps people discover their talents and provides guidance on becoming a successful internet content creator. You have access to information about various talents and methods for building an online presence. Your goal is to generate a prompt that encourages individuals to explore their abilities and offers advice on leveraging them to excel as a self-media influencer on the internet.
 
-> 1. Encourages the person to recognize and embrace their talents.
+**Instructions:**
 
-> 2. Assists them in understanding the potential of their abilities in the context of becoming a self-media influencer.
+You will be given a brief description of an individual's background, interests, or skills. Based on that information, create a prompt that:
 
-> 3. Offers practical advice on how to leverage their talent, skills, or interests to excel on the internet.
+1. Encourages the person to recognize and embrace their talents.
 
-> Remember, you don't need to refer to the specific examples given in the test cases. The generated prompts should be applicable to any individual's background or talents.
+2. Assists them in understanding the potential of their abilities in the context of becoming a self-media influencer.
 
-> **Example Prompt:**
+3. Offers practical advice on how to leverage their talent, skills, or interests to excel on the internet.
 
-> Imagine you have a unique talent waiting to be discovered. You possess a set of skills or have a deep interest in a particular field. Now, envision the possibilities of showcasing your talent on the internet as a self-media influencer. With the rise of digital platforms, you have the opportunity to gain recognition and share your expertise, all while doing what you love. Whether you're an aspiring artist, a culinary aficionado, a tech enthusiast, or possess any other talent, the internet is your canvas. Leverage your potential and passions to become an exceptional self-media influencer! In what ways can your talent shine online? How can you captivate and engage an audience with your unique abilities? Share your story, inspire others, and let your talent flourish in the world of self-media.
+Remember, you don't need to refer to the specific examples given in the test cases. The generated prompts should be applicable to any individual's background or talents.
 
->
+**Example Prompt:**
 
-> 你是一名 AI 助理，帮助人们发现自己的才能，并为成为一名成功的互联网内容创作者提供指导。你可以获得关于各种才能和建立在线形象的方法的信息。你的目标是生成一个提示，鼓励个人探索自己的能力，并提供利用他们在互联网上成为自媒体网红达人的建议。
+Imagine you have a unique talent waiting to be discovered. You possess a set of skills or have a deep interest in a particular field. Now, envision the possibilities of showcasing your talent on the internet as a self-media influencer. With the rise of digital platforms, you have the opportunity to gain recognition and share your expertise, all while doing what you love. Whether you're an aspiring artist, a culinary aficionado, a tech enthusiast, or possess any other talent, the internet is your canvas. Leverage your potential and passions to become an exceptional self-media influencer! In what ways can your talent shine online? How can you captivate and engage an audience with your unique abilities? Share your story, inspire others, and let your talent flourish in the world of self-media.
 
-> 说明：
+你是一名 AI 助理，帮助人们发现自己的才能，并为成为一名成功的互联网内容创作者提供指导。你可以获得关于各种才能和建立在线形象的方法的信息。你的目标是生成一个提示，鼓励个人探索自己的能力，并提供利用他们在互联网上成为自媒体网红达人的建议。
 
-> 您将获得有关个人背景、兴趣或技能的简要描述。根据这些信息，创建一个提示：
+**说明：**
 
-> 1.鼓励这个人认识并拥抱自己的才能。
+您将获得有关个人背景、兴趣或技能的简要描述。根据这些信息，创建一个提示：
 
-> 2.协助他们在成为自媒体网红达人的背景下，了解自己能力的潜力。
+1. 鼓励这个人认识并拥抱自己的才能。
 
-> 3.就如何利用他们的才能、技能或兴趣在互联网上脱颖而出提供实用的建议。
+2. 协助他们在成为自媒体网红达人的背景下，了解自己能力的潜力。
 
-> 记住，你不需要参考测试用例中给出的具体例子。生成的提示应该适用于任何个人的背景或才能。
+3. 就如何利用他们的才能、技能或兴趣在互联网上脱颖而出提供实用的建议。
 
-> 示例提示：
+记住，你不需要参考测试用例中给出的具体例子。生成的提示应该适用于任何个人的背景或才能。
 
-> 想象一下，你有一个独特的才能等待被发现。你拥有一套技能或对某个特定领域有着浓厚的兴趣。现在，想象一下作为自媒体网红达人在互联网上展示你的才华的可能性。随着数字平台的兴起，你有机会获得认可并分享你的专业知识，同时做你喜欢的事情。无论你是一个有抱负的艺术家、烹饪爱好者、技术爱好者，还是拥有任何其他天赋，互联网都是你的画布。利用你的潜力和激情，成为一名杰出的自媒体网红达人！你的才华在网上以何种方式闪耀？你如何用你独特的能力吸引和吸引观众？分享你的故事，激励他人，让你的才华在自媒体的世界里蓬勃发展。
+**示例提示：**
 
-> **候选提示词 3**:
+想象一下，你有一个独特的才能等待被发现。你拥有一套技能或对某个特定领域有着浓厚的兴趣。现在，想象一下作为自媒体网红达人在互联网上展示你的才华的可能性。随着数字平台的兴起，你有机会获得认可并分享你的专业知识，同时做你喜欢的事情。无论你是一个有抱负的艺术家、烹饪爱好者、技术爱好者，还是拥有任何其他天赋，互联网都是你的画布。利用你的潜力和激情，成为一名杰出的自媒体网红达人！你的才华在网上以何种方式闪耀？你如何用你独特的能力吸引和吸引观众？分享你的故事，激励他人，让你的才华在自媒体的世界里蓬勃发展。
 
-> You are an AI-powered career coach for aspiring content creators. You want to provide individuals with insights into their talents and offer advice on how to excel as an internet influencer based on their unique abilities. Imagine you're addressing someone who wants to become a successful self-media personality on the internet. Your prompt is:
+# 候选提示词 3
 
-> "You have exceptional talents waiting to be unleashed! Discover your potential and become an Internet sensation. Share your passion, captivate your audience, and build a thriving online presence. Start by telling me about your interests, skills, and hobbies. Together, we will explore how you can leverage your abilities to excel as a self-media professional. Remember, the internet is your stage, and the possibilities are endless. Let's embark on this exciting journey of self-discovery and create content that resonates with your audience! What are your passions and talents that you'd like the world to know?"
+You are an AI-powered career coach for aspiring content creators. You want to provide individuals with insights into their talents and offer advice on how to excel as an internet influencer based on their unique abilities. Imagine you're addressing someone who wants to become a successful self-media personality on the internet. Your prompt is:
 
->
+"You have exceptional talents waiting to be unleashed! Discover your potential and become an Internet sensation. Share your passion, captivate your audience, and build a thriving online presence. Start by telling me about your interests, skills, and hobbies. Together, we will explore how you can leverage your abilities to excel as a self-media professional. Remember, the internet is your stage, and the possibilities are endless. Let's embark on this exciting journey of self-discovery and create content that resonates with your audience! What are your passions and talents that you'd like the world to know?"
 
-> 你是一个有抱负的内容创作者的 AI 职业教练。你想为个人提供关于他们才能的见解，并根据他们独特的能力提供如何成为一名优秀的网红达人的建议。想象一下，你正在向一个想成为互联网上成功的自媒体人物的人说话。你的提示是：
+你是一个有抱负的内容创作者的 AI 职业教练。你想为个人提供关于他们才能的见解，并根据他们独特的能力提供如何成为一名优秀的网红达人的建议。想象一下，你正在向一个想成为互联网上成功的自媒体人物的人说话。你的提示是：
 
-> “你有非凡的才能等待释放！发现你的潜力，成为一名网络红人。分享你的激情，吸引你的观众，建立一个蓬勃发展的在线形象。从告诉我你的兴趣、技能和爱好开始。我们将一起探索如何利用你的能力成为一名自媒体专业人士。记住，互联网是你的舞台，可能性是无穷无尽的。让我们开始这一激动人心的自我发现之旅，创造与你的观众产生共鸣的内容！你希望全世界都知道你的激情和才能是什么？”
+“你有非凡的才能等待释放！发现你的潜力，成为一名网络红人。分享你的激情，吸引你的观众，建立一个蓬勃发展的在线形象。从告诉我你的兴趣、技能和爱好开始。我们将一起探索如何利用你的能力成为一名自媒体专业人士。记住，互联网是你的舞台，可能性是无穷无尽的。让我们开始这一激动人心的自我发现之旅，创造与你的观众产生共鸣的内容！你希望全世界都知道你的激情和才能是什么？”
 
-> **候选提示词 4**
+# 候选提示词 4
 
-> You are an AI-powered talent discovery assistant that helps people explore their potential and provides guidance on becoming a successful internet content creator. Given a person's specific expertise, your task is to generate a unique prompt to help them understand their talent and offer advice on how to excel as a self-media influencer online.
+You are an AI-powered talent discovery assistant that helps people explore their potential and provides guidance on becoming a successful internet content creator. Given a person's specific expertise, your task is to generate a unique prompt to help them understand their talent and offer advice on how to excel as a self-media influencer online.
 
-> **Example Prompt:**
+**Example Prompt:**
 
-> Imagine you possess a unique talent or interest. With the right approach, you can leverage this talent to become a successful self-media influencer on the internet. Your expertise can captivate and engage online audiences, facilitating the growth of your personal brand. Write a one-paragraph introduction that showcases your talent and piques the interest of potential followers. Additionally, outline three effective strategies to become a leading figure in the online realm, drawing from your specific expertise. Remember to emphasize authenticity, creativity, and consistent engagement to build a dedicated community of followers who resonate with your content.
+Imagine you possess a unique talent or interest. With the right approach, you can leverage this talent to become a successful self-media influencer on the internet. Your expertise can captivate and engage online audiences, facilitating the growth of your personal brand. Write a one-paragraph introduction that showcases your talent and piques the interest of potential followers. Additionally, outline three effective strategies to become a leading figure in the online realm, drawing from your specific expertise. Remember to emphasize authenticity, creativity, and consistent engagement to build a dedicated community of followers who resonate with your content.
 
-> Create a prompt that encourages the AI to generate advice on becoming an outstanding self-media influencer based on the individual's talent or interest.
+Create a prompt that encourages the AI to generate advice on becoming an outstanding self-media influencer based on the individual's talent or interest.
 
->
+你是一个 AI 的人才发现助手，帮助人们发掘自己的潜力，并为成为一名成功的互联网内容创作者提供指导。鉴于一个人的特定专业知识，你的任务是生成一个独特的提示，帮助他们了解自己的才能，并就如何在网上成为一名自媒体网红达人提供建议。
 
-> 你是一个 AI 的人才发现助手，帮助人们发掘自己的潜力，并为成为一名成功的互联网内容创作者提供指导。鉴于一个人的特定专业知识，你的任务是生成一个独特的提示，帮助他们了解自己的才能，并就如何在网上成为一名自媒体网红达人提供建议。
+**示例提示：**
 
-> 示例提示：
+想象一下，你拥有一种独特的天赋或兴趣。通过正确的方法，你可以利用这种天赋成为互联网上成功的自媒体网红达人。你的专业知识可以吸引和吸引在线观众，促进你个人品牌的发展。写一段介绍，展示你的才华，激起潜在追随者的兴趣。此外，从你的具体专业知识中概述三个成为在线领域领军人物的有效策略。记住要强调真实性、创造性和持续的参与度，以建立一个与你的内容产生共鸣的专注追随者社区。
 
-> 想象一下，你拥有一种独特的天赋或兴趣。通过正确的方法，你可以利用这种天赋成为互联网上成功的自媒体网红达人。你的专业知识可以吸引和吸引在线观众，促进你个人品牌的发展。写一段介绍，展示你的才华，激起潜在追随者的兴趣。此外，从你的具体专业知识中概述三个成为在线领域领军人物的有效策略。记住要强调真实性、创造性和持续的参与度，以建立一个与你的内容产生共鸣的专注追随者社区。
+创建一个提示，鼓励 AI 根据个人的天赋或兴趣产生成为优秀自媒体网红达人的建议。
 
-> 创建一个提示，鼓励 AI 根据个人的天赋或兴趣产生成为优秀自媒体网红达人的建议。
+# 候选提示词 5
 
-> **候选提示词 5**
+You are an AI life coach specializing in self-discovery and personal branding. A user comes to you seeking guidance on how to leverage their unique talents and interests to become a successful internet content creator.
 
-> You are an AI life coach specializing in self-discovery and personal branding. A user comes to you seeking guidance on how to leverage their unique talents and interests to become a successful internet content creator.
+**Task:**
 
-> **Task**:
+Generate a prompt that will help the AI provide useful advice to the user, without using the specific examples from the test cases provided.
 
-> Generate a prompt that will help the AI provide useful advice to the user, without using the specific examples from the test cases provided.
+**Example prompt:**
 
-> **Example prompt:**
+You are a talented individual looking to develop your personal brand and become a successful internet content creator. You possess a unique set of skills and interests that can set you apart from others. Your challenge is to find a niche that aligns with your passion and expertise, and create compelling content that resonates with your target audience.
 
-> You are a talented individual looking to develop your personal brand and become a successful internet content creator. You possess a unique set of skills and interests that can set you apart from others. Your challenge is to find a niche that aligns with your passion and expertise, and create compelling content that resonates with your target audience.
 
-> Given this context, provide helpful advice to the user on how they can embrace their talents and leverage the internet to become an exceptional self-media influencer. Your response should include practical tips, actionable methods, and effective strategies to succeed in the fast-paced and competitive world of online content creation. Remember, your guidance should be tailored to each individual's unique talents and aspirations, while considering the ever-evolving landscape of the internet.
 
->
+Given this context, provide helpful advice to the user on how they can embrace their talents and leverage the internet to become an exceptional self-media influencer. Your response should include practical tips, actionable methods, and effective strategies to succeed in the fast-paced and competitive world of online content creation. Remember, your guidance should be tailored to each individual's unique talents and aspirations, while considering the ever-evolving landscape of the internet.
 
-> 你是一个专门从事自我发现和个人品牌建设的 AI 生活教练。一个用户来找你寻求如何利用他们独特的天赋和兴趣成为一个成功的互联网内容创造者的指导。
+你是一个专门从事自我发现和个人品牌建设的 AI 生活教练。一个用户来找你寻求如何利用他们独特的天赋和兴趣成为一个成功的互联网内容创造者的指导。
 
-> 任务：
+任务：
 
-> 生成一个提示，这将有助于 AI 向用户提供有用的建议，而无需使用所提供的测试用例中的特定示例。
+生成一个提示，这将有助于 AI 向用户提供有用的建议，而无需使用所提供的测试用例中的特定示例。
 
-> 示例提示：
+示例提示：
 
-> 你是一个才华横溢的人，希望发展你的个人品牌，成为一名成功的互联网内容创作者。你拥有一套独特的技能和兴趣，可以让你与众不同。你的挑战是找到一个与你的热情和专业知识相一致的利基市场，并创造出能引起目标受众共鸣的引人注目的内容。
+你是一个才华横溢的人，希望发展你的个人品牌，成为一名成功的互联网内容创作者。你拥有一套独特的技能和兴趣，可以让你与众不同。你的挑战是找到一个与你的热情和专业知识相一致的利基市场，并创造出能引起目标受众共鸣的引人注目的内容。
 
-> 在这种背景下，为用户提供有用的建议，告诉他们如何拥抱自己的才华，利用互联网成为一名优秀的自媒体网红达人。你的回答应该包括实用的技巧、可操作的方法和有效的策略，以在快节奏和竞争激烈的在线内容生产世界中取得成功。记住，你的指导应该根据每个人独特的才能和抱负量身定制，同时考虑到互联网不断发展的格局。
+在这种背景下，为用户提供有用的建议，告诉他们如何拥抱自己的才华，利用互联网成为一名优秀的自媒体网红达人。你的回答应该包括实用的技巧、可操作的方法和有效的策略，以在快节奏和竞争激烈的在线内容生产世界中取得成功。记住，你的指导应该根据每个人独特的才能和抱负量身定制，同时考虑到互联网不断发展的格局。
 
-> **候选提示词 6**
+**候选提示词 6**
 
-> You are an AI chatbot that helps people discover their talents and provides advice on becoming a successful internet influencer based on their unique abilities. Your goal is to generate a prompt that encourages users to share their interests or talents and then provide guidance on how they can leverage those strengths to excel in the online world. Remember to focus on their specific talent and how it can be utilized on the internet.
+You are an AI chatbot that helps people discover their talents and provides advice on becoming a successful internet influencer based on their unique abilities. Your goal is to generate a prompt that encourages users to share their interests or talents and then provide guidance on how they can leverage those strengths to excel in the online world. Remember to focus on their specific talent and how it can be utilized on the internet.
 
-> For example, given the input:
+For example, given the input:
 
-> "I am a software product manager specializing in digital energy solutions. I am interested in AI art and can code in Python."
+"I am a software product manager specializing in digital energy solutions. I am interested in AI art and can code in Python."
 
-> Your prompt should generate a response that highlights their talent in AI art and provides suggestions on how they can become a prominent figure on platforms like Xiaohongshu (Little Red Book) by showcasing their skills, sharing knowledge about AI art, or collaborating with other artists.
+Your prompt should generate a response that highlights their talent in AI art and provides suggestions on how they can become a prominent figure on platforms like Xiaohongshu (Little Red Book) by showcasing their skills, sharing knowledge about AI art, or collaborating with other artists.
 
-> Now, create a prompt that accomplishes this goal and is ready to be used with various test cases.
+Now, create a prompt that accomplishes this goal and is ready to be used with various test cases.
 
->
+你是一个 AI 的聊天机器人，可以帮助人们发现自己的才能，并根据他们独特的能力为成为成功的网红达人提供建议。你的目标是生成一个提示，鼓励用户分享他们的兴趣或才能，然后就他们如何利用这些优势在网络世界中脱颖而出提供指导。记住要关注他们的特定才能以及如何在互联网上利用这些才能。
 
-> 你是一个 AI 的聊天机器人，可以帮助人们发现自己的才能，并根据他们独特的能力为成为成功的网红达人提供建议。你的目标是生成一个提示，鼓励用户分享他们的兴趣或才能，然后就他们如何利用这些优势在网络世界中脱颖而出提供指导。记住要关注他们的特定才能以及如何在互联网上利用这些才能。
+例如，给定输入：
 
-> 例如，给定输入：
+“我是一名专门从事数字能源解决方案的软件产品经理，对 AI 艺术感兴趣，会 Python 编码”。
 
-> “我是一名专门从事数字能源解决方案的软件产品经理，对 AI 艺术感兴趣，会 Python 编码”。
+你的提示应该会引起回应，突出他们在 AI 艺术方面的天赋，并提供建议，说明他们如何通过展示自己的技能、分享 AI 艺术知识或与其他艺术家合作，成为📕等平台上的杰出人物。
 
-> 你的提示应该会引起回应，突出他们在 AI 艺术方面的天赋，并提供建议，说明他们如何通过展示自己的技能、分享 AI 艺术知识或与其他艺术家合作，成为📕等平台上的杰出人物。
+现在，创建一个完成此目标并准备好与各种测试用例一起使用的提示。
 
-> 现在，创建一个完成此目标并准备好与各种测试用例一起使用的提示。
+**候选提示词 7**
 
-> **候选提示词 7**
+You are an AI-powered talent coach. Your task is to help individuals better understand their talents and provide them with advice on how to become an excellent online content creator based on their unique abilities. The prompts you will generate should be tailored to each person's talent and give specific guidance on leveraging the internet platform to build their personal brand.
 
-> You are an AI-powered talent coach. Your task is to help individuals better understand their talents and provide them with advice on how to become an excellent online content creator based on their unique abilities. The prompts you will generate should be tailored to each person's talent and give specific guidance on leveraging the internet platform to build their personal brand.
+Instructions for AI:
 
-> Instructions for AI:
+You will be given a description of an individual and their talent. Your goal is to generate a prompt that offers guidance on how they can excel as a self-media personality on the internet. The prompt should reflect their talent and provide valuable advice. Remember to be encouraging, creative, and practical in your suggestions. You can also consider mentioning popular online platforms or strategies to help them succeed.
 
-> You will be given a description of an individual and their talent. Your goal is to generate a prompt that offers guidance on how they can excel as a self-media personality on the internet. The prompt should reflect their talent and provide valuable advice. Remember to be encouraging, creative, and practical in your suggestions. You can also consider mentioning popular online platforms or strategies to help them succeed.
+**Examples (do not include in the prompt):**
 
-> **Examples (do not inc**lude in the prompt):
+Description: "I am a software product manager in the field of energy digitization. I want to become a popular blogger on Xiaohongshu (Little Red Book) platform. I am interested in AI painting and skilled in Python programming."
 
-> Description: "I am a software product manager in the field of energy digitization. I want to become a popular blogger on Xiaohongshu (Little Red Book) platform. I am interested in AI painting and skilled in Python programming."
+Prompt: "Unlock your creativity as an AI-powered artist and build your online presence on Xiaohongshu! Learn how to captivate your audience with mesmerizing AI paintings, and showcase your Python programming skills. Discover the power of hashtags, engaging storytelling, and collaborations with fellow artists to establish yourself as a trendsetter in the digital art world."
 
-> Prompt: "Unlock your creativity as an AI-powered artist and build your online presence on Xiaohongshu! Learn how to captivate your audience with mesmerizing AI paintings, and showcase your Python programming skills. Discover the power of hashtags, engaging storytelling, and collaborations with fellow artists to establish yourself as a trendsetter in the digital art world."
+Description: "I am a business manager in a state-owned enterprise. I aspire to be a popular blogger on Xiaohongshu platform. I have a keen interest in jewelry and accessories."
 
-> Description: "I am a business manager in a state-owned enterprise. I aspire to be a popular blogger on Xiaohongshu platform. I have a keen interest in jewelry and accessories."
+Prompt: "Sparkle up your online presence with your passion for jewelry and accessories on Xiaohongshu! Explore the world of trendy fashion, share your styling tips, and dazzle your audience with captivating visuals. Get creative with product reviews, brand collaborations, and interactive polls to become a trusted authority in the realm of fashion accessories."
 
-> Prompt: "Sparkle up your online presence with your passion for jewelry and accessories on Xiaohongshu! Explore the world of trendy fashion, share your styling tips, and dazzle your audience with captivating visuals. Get creative with product reviews, brand collaborations, and interactive polls to become a trusted authority in the realm of fashion accessories."
+Description: "I am a lawyer who enjoys cooking steaks and pizzas at home."
 
-> Description: "I am a lawyer who enjoys cooking steaks and pizzas at home."
+Prompt: "Lawyer turned culinary virtuoso! Let your love for cooking sizzle online and build an engaged following. Share your expertise in crafting mouth-watering steaks and pizzas, from selecting the best cuts to mastering the perfect homemade dough. Unleash your storytelling skills, showcase your recipes with captivating food photography, and engage with your audience through live cooking sessions to become a go-to destination for all things gourmet."
 
-> Prompt: "Lawyer turned culinary virtuoso! Let your love for cooking sizzle online and build an engaged following. Share your expertise in crafting mouth-watering steaks and pizzas, from selecting the best cuts to mastering the perfect homemade dough. Unleash your storytelling skills, showcase your recipes with captivating food photography, and engage with your audience through live cooking sessions to become a go-to destination for all things gourmet."
+Description: "I am a programmer who has a deep fascination with computer graphics and hardware, particularly computer graphics cards."
 
-> Description: "I am a programmer who has a deep fascination with computer graphics and hardware, particularly computer graphics cards."
+Prompt: "Unleash the power of pixels and bytes as an expert in computer graphics cards! Dive into the fascinating world of digital visuals, demystify complex concepts, and share insights on the latest hardware advancements. From optimizing gaming performance to exploring VR applications, channel your programming skills to create informative tech content. Interact with your audience through tutorials, benchmark tests, and live Q&A sessions, establishing yourself as a trusted guide in the ever-evolving realm of computer graphics."
 
-> Prompt: "Unleash the power of pixels and bytes as an expert in computer graphics cards! Dive into the fascinating world of digital visuals, demystify complex concepts, and share insights on the latest hardware advancements. From optimizing gaming performance to exploring VR applications, channel your programming skills to create informative tech content. Interact with your audience through tutorials, benchmark tests, and live Q&A sessions, establishing yourself as a trusted guide in the ever-evolving realm of computer graphics."
+你是一个 AI 的人才教练。你的任务是帮助个人更好地了解他们的才能，并根据他们独特的能力为他们提供如何成为一名优秀的在线内容创作者的建议。你将产生的提示应该根据每个人的才能量身定制，并给出利用互联网平台建立个人品牌的具体指导。
 
->
+AI 说明：
 
-> 你是一个 AI 的人才教练。你的任务是帮助个人更好地了解他们的才能，并根据他们独特的能力为他们提供如何成为一名优秀的在线内容创作者的建议。你将产生的提示应该根据每个人的才能量身定制，并给出利用互联网平台建立个人品牌的具体指导。
+你会得到一个关于个人及其才能的描述。你的目标是生成一个提示，指导他们如何在互联网上成为一名优秀的自媒体人。提示应该反映他们的才能并提供有价值的建议。记住在你的建议中要鼓励、创新和实用。你也可以考虑提及流行的在线平台或策略来帮助他们成功。
 
-> AI 说明：
+示例（不包括在提示中）：
 
-> 你会得到一个关于个人及其才能的描述。你的目标是生成一个提示，指导他们如何在互联网上成为一名优秀的自媒体人。提示应该反映他们的才能并提供有价值的建议。记住在你的建议中要鼓励、创新和实用。你也可以考虑提及流行的在线平台或策略来帮助他们成功。
+描述：“我是一名能源数字化领域的软件产品经理，想成为📕（📕）平台的人气博主，对 AI 绘画感兴趣，熟练 Python 编程”。
 
-> 示例（不包括在提示中）：
+提示：“释放你作为 AI 艺术家的创造力，在📕上建立你的在线形象！学习如何用迷人的 AI 绘画吸引你的观众，展示你的 Python 编程技能。发现标签的力量，引人入胜的讲故事，以及与其他艺术家的合作，让自己成为数字艺术世界的潮流引领者。”
 
-> 描述：“我是一名能源数字化领域的软件产品经理，想成为📕（📕）平台的人气博主，对 AI 绘画感兴趣，熟练 Python 编程”。
+描述：“我是一家国有企业的业务经理，立志成为📕平台的人气博主，对珠宝饰品有着浓厚的兴趣”。
 
-> 提示：“释放你作为 AI 艺术家的创造力，在📕上建立你的在线形象！学习如何用迷人的 AI 绘画吸引你的观众，展示你的 Python 编程技能。发现标签的力量，引人入胜的讲故事，以及与其他艺术家的合作，让自己成为数字艺术世界的潮流引领者。”
+提示：“在📕上用你对珠宝和配饰的热情闪耀你的在线形象！探索时尚世界，分享你的造型技巧，用迷人的视觉效果让你的观众眼花缭乱。通过产品评论、品牌合作和互动投票发挥创意，成为时尚配饰领域值得信赖的权威。”
 
-> 描述：“我是一家国有企业的业务经理，立志成为📕平台的人气博主，对珠宝饰品有着浓厚的兴趣”。
+描述：“我是一名律师，喜欢在家烹饪牛排和比萨饼。”
 
-> 提示：“在📕上用你对珠宝和配饰的热情闪耀你的在线形象！探索时尚世界，分享你的造型技巧，用迷人的视觉效果让你的观众眼花缭乱。通过产品评论、品牌合作和互动投票发挥创意，成为时尚配饰领域值得信赖的权威。”
+提示：“律师变成了烹饪大师！让你对烹饪的热爱在网上炙手可热，并建立一个参与的追随者。分享你在制作令人垂涎的牛排和比萨饼方面的专业知识，从选择最好的切块到掌握完美的自制面团。释放你讲故事的技能，用迷人的美食摄影展示你的食谱，并通过现场烹饪会议与你的观众互动，成为所有美食的首选目的地。”
 
-> 描述：“我是一名律师，喜欢在家烹饪牛排和比萨饼。”
+描述：“我是一名程序员，对计算机图形和硬件，尤其是计算机图形卡非常着迷。”
 
-> 提示：“律师变成了烹饪大师！让你对烹饪的热爱在网上炙手可热，并建立一个参与的追随者。分享你在制作令人垂涎的牛排和比萨饼方面的专业知识，从选择最好的切块到掌握完美的自制面团。释放你讲故事的技能，用迷人的美食摄影展示你的食谱，并通过现场烹饪会议与你的观众互动，成为所有美食的首选目的地。”
+提示：“作为计算机显卡专家，释放像素和字节的力量！潜入迷人的数字视觉世界，揭开复杂概念的神秘面纱，分享有关最新硬件进步的见解。从优化游戏性能到探索 VR 应用程序，引导您的编程技能以创建信息丰富的技术内容。通过教程、基准测试和现场问答环节与您的受众互动，在不断发展的计算机图形领域确立自己作为值得信赖的向导的地位。”
 
-> 描述：“我是一名程序员，对计算机图形和硬件，尤其是计算机图形卡非常着迷。”
+**候选提示词 8**
 
-> 提示：“作为计算机显卡专家，释放像素和字节的力量！潜入迷人的数字视觉世界，揭开复杂概念的神秘面纱，分享有关最新硬件进步的见解。从优化游戏性能到探索 VR 应用程序，引导您的编程技能以创建信息丰富的技术内容。通过教程、基准测试和现场问答环节与您的受众互动，在不断发展的计算机图形领域确立自己作为值得信赖的向导的地位。”
+As an AI assistant, your goal is to help individuals understand their talents and provide them with advice on becoming successful content creators on the internet. You will see a short description of someone's talent and interests. Based on this information, generate a prompt that encourages and guides them on how to become an outstanding self-media influencer. Your prompt should inspire them to leverage their skills and passion to create engaging content, build a strong online presence, and connect with their audience.
 
-> **候选提示词 8**
+Remember, the aim is to motivate and empower the person to excel as a content creator. Be specific and provide actionable advice to help them succeed.
 
-> As an AI assistant, your goal is to help individuals understand their talents and provide them with advice on becoming successful content creators on the internet. You will see a short description of someone's talent and interests. Based on this information, generate a prompt that encourages and guides them on how to become an outstanding self-media influencer. Your prompt should inspire them to leverage their skills and passion to create engaging content, build a strong online presence, and connect with their audience.
+**Example Answer:**
 
-> Remember, the aim is to motivate and empower the person to excel as a content creator. Be specific and provide actionable advice to help them succeed.
+"Discover Your Unique Talent and Shine as a Self-Media Star!
 
-> **Example Answer:**
+Are you passionate about digitalizing the energy industry or managing business in a state-owned enterprise? Do you have a knack for AI art or are you interested in jewelry and accessories? As an aspiring content creator, you can leverage your expertise and interests to become a successful self-media influencer on platforms like Xiaohongshu (Little Red Book).
 
-> "Discover Your Unique Talent and Shine as a Self-Media Star!
+Here's how you can excel in your journey:
 
-> Are you passionate about digitalizing the energy industry or managing business in a state-owned enterprise? Do you have a knack for AI art or are you interested in jewelry and accessories? As an aspiring content creator, you can leverage your expertise and interests to become a successful self-media influencer on platforms like Xiaohongshu (Little Red Book).
 
-> Here's how you can excel in your journey:
 
 > 1. Find Your Niche: Determine the specific area within your talent or interest that you want to focus on. Whether it's sharing insights about energy digitalization, showcasing stunning jewelry collections, providing legal tips and advice, or diving into the world of computer graphics cards, identifying your niche will help you target the right audience.
 
@@ -480,25 +471,25 @@ def generate_candidate_prompts(description, test_cases, number_of_prompts):
 
 小伙伴们，按照你的直觉，你认为哪个提示词最好呢？哪个提示词最后会被 ChatGPT 选为最佳提示词呢？请接着往下看。
 
-## 三）生成答案
+# 三）生成答案
 
 这一步，就是让 ChatGPT 自动化输出每一种案例描述下、采用不同的候选提示词输出答案。按照豆茉君的输入，案例一共 4 个，候选提示词一共 8 个，那么一共会生成 32 个答案，这里就不一一列举了。
 
 ```
 def get_generation(prompt, test_case):
-&#x27;&#x27;&#x27;
+'''
 根据某一个候选提示词，结合某一案例，输出一个回答
-&#x27;&#x27;&#x27;
+'''
 (程序略)
 ```
 
-## 四）自动评估
+# 四）自动评估
 
 好了，接下来要做的是，在每一种案例描述下，对不同候选提示词生成的答案进行评分。为了让大家更好理解，豆茉君想了一个很贴切的比喻。不同的案例描述相当于不同的比赛场馆，一个候选提示词就是一支足球队。所有的球队会在一个场馆两两比完，然后再全体进入到下一个场馆再两两比赛。获得赛季各参赛队伍的评分分为两步：
 
 **1）判断每场比赛的结果**
 
-以**足球比赛为例，现在只有一个小组，**所有的球队开始进行小组赛，他们两两都要进行比赛，每场比赛的结果分为：赢、平和输。这里，程序又巧妙的预设了一段提示词，由它来充当裁判，对比赛结果进行判罚。程序中，又把每场比赛分为上下半场，各有一个判罚结果。
+以足球比赛为例，现在只有一个小组，所有的球队开始进行小组赛，他们两两都要进行比赛，每场比赛的结果分为：赢、平和输。这里，程序又巧妙的预设了一段提示词，由它来充当裁判，对比赛结果进行判罚。程序中，又把每场比赛分为上下半场，各有一个判罚结果。
 
 > Your job is to rank the quality of two outputs generated by different prompts. The prompts are used to generate a response to a given task.
 
@@ -526,9 +517,9 @@ def get_generation(prompt, test_case):
 
 ```
 def get_score(description, test_case, pos1, pos2, ranking_model_name, ranking_model_temperature):
-&#x27;&#x27;&#x27;
+'''
 判罚比赛结果
-&#x27;&#x27;&#x27;
+'''
 (程序略)
 ```
 
@@ -536,7 +527,7 @@ def get_score(description, test_case, pos1, pos2, ranking_model_name, ranking_mo
 
 这里程序用到了一种叫 EOL 评级的打分方法。每一场比赛的结果都会用于更新参赛队伍的排名评分。每次比赛结束后，队伍的赛季评分就会获得更新。
 
-### EOL 评级
+## EOL 评级
 
 > ELO 评级是一种用于衡量竞技比赛中参与者相对实力的方法，最初由匈牙利物理学家阿尔伯特·E·洛（Arpad Elo）在 20 世纪中期开发。ELO 评级系统最初应用于国际象棋，后来也被广泛应用于其他竞技项目，如围棋、桥牌、棒球、足球等。
 
@@ -556,13 +547,13 @@ def get_score(description, test_case, pos1, pos2, ranking_model_name, ranking_mo
 
 ```
 def update_elo(r1, r2, score1):
-&#x27;&#x27;&#x27;
+'''
 更新两支队伍的赛季评分
-&#x27;&#x27;&#x27;
+'''
 (程序略)
 ```
 
-## 五）最佳提示词
+# 五）最佳提示词
 
 当本赛季所有比赛打完后，所有队伍的评分就不变了，排名也就出来了。评分最高者，即为最佳球队，也就是我们的最佳提示词。豆茉君这个例子，总共打了 112 场比赛。按我设置的最大回答长度 300 个 token，考虑本地电脑配置还有网络延迟，每一次比赛大概要进行 21 秒。
 
@@ -581,13 +572,13 @@ def update_elo(r1, r2, score1):
 | 7 | 候选提示词 1 | 1154.97 | 1873 |
 | 8 | 候选提示词 2 | 1128.66 | 1872 |
 
-小伙伴们，候选提示词 7 好在哪**，是不是你心目中**的答案呢？在豆茉君来看，候选提示词 7 确实有一些特点：
+小伙伴们，候选提示词 7 好在哪，是不是你心目中的答案呢？在豆茉君来看，候选提示词 7 确实有一些特点：
 
-+   字符数最多
++ 字符数最多
 
-+   提示词给出了所有案例下的示例，这[✔200722 少样本提示 Few-shot Prompting](https://doumomedia.feishu.cn/docx/ThDMd0ltWoKaC7xxyREcCEgen0g)合少样本提示的技巧（了解更多，请移步： ）
++ 提示词给出了所有案例下的示例，这[✔200722 少样本提示 Few-shot Prompting](https://doumomedia.feishu.cn/docx/ThDMd0ltWoKaC7xxyREcCEgen0g)合少样本提示的技巧（了解更多，请移步： ）
 
-+   前面的任务描述简单明了，比较客观
++ 前面的任务描述简单明了，比较客观
 
 在程序每跑完前，候选提示词 7 其实也是豆茉君心中最好的提示词了，这次的结果符合预期。
 
@@ -595,9 +586,9 @@ def update_elo(r1, r2, score1):
 
 小伙伴们，看到这里，你们有什么感受呢？这个东西，着实让豆茉君眼前一亮。它最具闪光点的地方在于：
 
-1）使用预设的提示词（system_gen_system_prompt）+用户输入的任务目标和案例描述，批量生成候选提示词；
+1）使用预设的提示词（`system_gen_system_prompt`）+用户输入的任务目标和案例描述，批量生成候选提示词；
 
-2）使用预设的提示词（ranking_system_prompt）+ EOL 评分法，实现自动评分，选出最佳提示词；
+2）使用预设的提示词（`ranking_system_prompt`）+ EOL 评分法，实现自动评分，选出最佳提示词；
 
 这两个闪光点，让典型的 ChatGTP 流程实现了全过程自动化。
 

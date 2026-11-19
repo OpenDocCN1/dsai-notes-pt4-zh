@@ -1,27 +1,24 @@
+
 # NO.06风格定制（炼丹）
 
 > 来源：[https://my.feishu.cn/docx/Zk6PdiZYVoJp6TxFEwpcJ7s4nTd](https://my.feishu.cn/docx/Zk6PdiZYVoJp6TxFEwpcJ7s4nTd)
 
-[🎁Vega变现指南（自媒体）](https://yw55ojhusnq.feishu.cn/wiki/ZVEdwCx4ViIFZFkGO4acJF7xnZf?from=from_copylink)习完这篇你就可以尝试变现了，变现教程见
+变现教程见 [🎁Vega变现指南（自媒体）](https://yw55ojhusnq.feishu.cn/wiki/ZVEdwCx4ViIFZFkGO4acJF7xnZf?from=from_copylink)，学完这篇你就可以尝试变现了。
 
-风格定制其实就是模型模型；炼制模型、训练lora、炼丹等说法其实是一样的；
+风格定制其实就是训练模型；炼制模型、训练lora、炼丹等说法其实是一样的。
 
-为什么叫他**炼丹**，来源是这样的：
+为什么叫它**炼丹**，来源是这样的：
 
-+   小说里炼丹原理，就是把**各种属性相生的药材**放到**炼丹炉**然后**出丹药✔**，最终结果谁也不知道；
-
-+   vega的风格定制，就是把**风格非常接近的图片**放到**AI****训练**然后**出模型✔**，最终结果同样是谁也不知道；
+- 小说里炼丹原理，就是把**各种属性相生的药材**放到**炼丹炉**然后**出丹药**✔，最终结果谁也不知道；
+- Vega的风格定制，就是把**风格非常接近的图片**放到**AI训练**然后**出模型**✔，最终结果同样是谁也不知道；
 
 相同点我标色了，大家看了就懂啦😸
 
 像风格广场的素材，就是用户训练的模型，💖然后分享出来的。（小说里的炼丹大会hhh）
 
-
-训练界面介绍
-
+## 训练界面介绍
 
 风格广场都是大家自己炼的模型
-
 
 自己训练的模型
 
@@ -37,11 +34,9 @@
 
 收藏&自己训练的模型，在工作区都能看到，也可以两个模型混合使用，最终效果还需要大家自己测试一下！
 
-![](img/9dca261092f40ebeeb2ad15664914f2a.png)
-
 风格界面
 
-![](img/2505af96f3d573373153d1baccaacef3.png)
+![](img/9dca261092f40ebeeb2ad15664914f2a.png)
 
 混合多个模型最终生成效果
 
@@ -49,11 +44,11 @@
 
 我自己练的一般起名会加小黑子，大家直接搜就行。上面这个人物模型也上传了👆
 
-完整教程🎨： [最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
+完整教程🎨：[最强Ai绘画工具Vega.Ai教程（制作中）](https://yw55ojhusnq.feishu.cn/wiki/P58pw4353irg4mkko1bcU4A6ndb)
 
 手机端体验：[Vega AI 创作平台](https://rightbrain.art/phone/other/login?inviteCode=CISRNIA4)
 
-网页端体验[：Vega AI 创作平](https://rightbrain.art?inviteCode=CISRNIA4)台
+网页端体验：[Vega AI 创作平台](https://rightbrain.art?inviteCode=CISRNIA4)
 
 > 感觉有用的话**点个免费的赞吧**，有疑问欢迎在评论区交流！
 

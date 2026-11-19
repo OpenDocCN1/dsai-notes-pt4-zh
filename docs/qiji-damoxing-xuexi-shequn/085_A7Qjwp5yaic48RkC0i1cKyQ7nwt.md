@@ -1,10 +1,11 @@
+
 # 奇绩大模型日报（10月 31日）
 
 > 来源：[https://miracleplus.feishu.cn/docx/RoHMdo32MoGsLHxnE3Hc4jFNnsc](https://miracleplus.feishu.cn/docx/RoHMdo32MoGsLHxnE3Hc4jFNnsc)
 
 # 🔉潜空间活动报名
 
-> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Le**pton AI 创始成员，曾在阿里云担任高性能 AI** 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于AI产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同AI产品形态对团队的挑战》。
+> 本期活动将在**11月9日** **10:00**开始，我们邀请到的嘉宾是**鱼哲**，Le**pton AI 创始成员，曾在阿里云担任高性能 AI 平台产品负责人，专注于 AI 在多个行业的落地及应用。Lepton AI 致力于建立高效可用的 AI 基础设施，让团队更关注于应用构建及落地。在本次分享中鱼哲将带来关于 AI 产品相关的思考，分享主题《Beyond Infra, what matters?—— 不同 AI 产品形态对团队的挑战》。
 
 > 除嘉宾分享外，每期设置了【匹配合伙人 Cofounder Matching】环节。你可以和 GenAI 时代最有活力的创业者和研究者线下面对面交流，将有机会找到志同道合、有共同创业梦想的小伙伴。
 
@@ -14,7 +15,7 @@
 
 # 资讯
 
-### AMD三季度财报发布，数据中心收入暴涨122%、游戏收入下降69%
+## AMD三季度财报发布，数据中心收入暴涨122%、游戏收入下降69%
 
 https://www.amd.com/zh-cn/newsroom/press-releases/2024-10-29-amd-reports-third-quarter-2024-financial-results.html
 
@@ -28,43 +29,43 @@ AMD 执行副总裁、首席财务官兼财务主管 Jean Hu 表示：「我们�
 
 ![](img/69a1d2b88d9f4108df4da292bbef0ea9.png)
 
-### NVIDIA 将生成式 AI 工具、仿真和感知工作流引入 ROS 开发者生态系统
+## NVIDIA 将生成式 AI 工具、仿真和感知工作流引入 ROS 开发者生态系统
 
 https://zhuanlan.zhihu.com/p/4078610464
 
-在丹麦欧登塞举行的 ROSCon 上，NVIDIA 及其合作伙伴发布了一系列更新，旨在加速 AI 驱动的机械臂和自主移动机器人的开发。主要更新包括适用于 ROS 2 的生成式 AI 工具、仿真和感知工作流，帮助开发者在 NVIDIA Jetson 边缘平台上部署生成式 AI 节点。基于生成式 AI，机器人可实现对周围环境的理解和响应，从而提升人机交互和自主决策能力。
+在丹麦欧登塞举行的 ROSCon 上，NVIDIA 及其合作伙伴发布了一系列更新，旨在加速 AI 驱动的机械臂和自主移动机器人的开发。主要更新包括适用于 `ROS 2` 的生成式 AI 工具、仿真和感知工作流，帮助开发者在 NVIDIA Jetson 边缘平台上部署生成式 AI 节点。基于生成式 AI，机器人可实现对周围环境的理解和响应，从而提升人机交互和自主决策能力。
 
-具体技术进展包括基于 ROS 2 的 ReMEmbR 系统，将大语言模型（LLM）、视觉语言模型（VLM）等技术结合，实现语义记忆和导航；WhisperTRT ROS 2 节点优化了 OpenAI Whisper 模型，增强语音识别性能。此外，NVIDIA Isaac Sim 支持虚拟环境中的机器人测试，帮助开发者验证和优化 ROS 工作流。
+具体技术进展包括基于 `ROS 2` 的 `ReMEmbR` 系统，将大语言模型（LLM）、视觉语言模型（VLM）等技术结合，实现语义记忆和导航；`WhisperTRT` `ROS 2` 节点优化了 OpenAI Whisper 模型，增强语音识别性能。此外，NVIDIA Isaac Sim 支持虚拟环境中的机器人测试，帮助开发者验证和优化 `ROS` 工作流。
 
-NVIDIA 还发布了 Isaac ROS 3.2，增强了机器人的感知和操作能力，提升了自主移动机器人的环境适应能力。同时，NVIDIA 的合作伙伴，如优傲机器人和 Miso Robotics，正在应用 Isaac 加速器库和 AI 模型来开发协作机器人应用和自动化设备，展示了 NVIDIA Isaac 在实际场景中的应用价值。
+NVIDIA 还发布了 `Isaac ROS 3.2`，增强了机器人的感知和操作能力，提升了自主移动机器人的环境适应能力。同时，NVIDIA 的合作伙伴，如优傲机器人和 Miso Robotics，正在应用 Isaac 加速器库和 AI 模型来开发协作机器人应用和自动化设备，展示了 NVIDIA Isaac 在实际场景中的应用价值。
 
 ![](img/f2dd091cf9263060b4df45d889685f0a.png)
 
-### 苹果3nm电脑芯片
+## 苹果3nm电脑芯片
 
 https://mp.weixin.qq.com/s/ElAYBuMZMg-D8RdsOBlUkw
 
-苹果在发布会上推出新款M4系列芯片，包括M4、M4 Pro和M4 Max，这是苹果最强的3nm Mac芯片。M4 Max作为顶配芯片，内置16核神经网络引擎，适配新款16英寸MacBook Pro，支持约2000亿参数的大语言模型交互，起售价27999元。
+苹果在发布会上推出新款 M4 系列芯片，包括 M4、M4 Pro 和 M4 Max，这是苹果最强的 3nm Mac 芯片。M4 Max 作为顶配芯片，内置 16 核神经网络引擎，适配新款 16 英寸 MacBook Pro，支持约 2000 亿参数的大语言模型交互，起售价 27999 元。
 
-M4 Max芯片配备16核CPU（12性能核+4能效核）和40核GPU，性能是M1 Max的2.2倍，GPU性能更是达到酷睿Ultra 7 (Series 2) 的4倍，内存带宽高达546GB/s，为AI和3D任务提供了超强计算力。此外，M4 Max还支持4台外接显示器，处理台式机级别的复杂任务更加游刃有余。
+M4 Max 芯片配备 16 核 CPU（12 性能核 + 4 能效核）和 40 核 GPU，性能是 M1 Max 的 2.2 倍，GPU 性能更是达到酷睿 Ultra 7 (Series 2) 的 4 倍，内存带宽高达 546GB/s，为 AI 和 3D 任务提供了超强计算力。此外，M4 Max 还支持 4 台外接显示器，处理台式机级别的复杂任务更加游刃有余。
 
-M4 Pro提供14核CPU和20核GPU，支持2台显示器，适合性价比需求的用户。基础款M4芯片则拥有10核CPU和10核GPU，适合日常办公。全系支持16GB起步统一内存，M4 Max支持最高128GB。新款MacBook Pro将于11月1日预购，11月8日正式发售。
+M4 Pro 提供 14 核 CPU 和 20 核 GPU，支持 2 台显示器，适合性价比需求的用户。基础款 M4 芯片则拥有 10 核 CPU 和 10 核 GPU，适合日常办公。全系支持 16GB 起步统一内存，M4 Max 支持最高 128GB。新款 MacBook Pro 将于 11 月 1 日预购，11 月 8 日正式发售。
 
 ![](img/20474f899b27b621a2700febe5db72d4.png)
 
-### o1推理将用于图像理解，现场演示2分钟开发应用
+## o1推理将用于图像理解，现场演示 2 分钟开发应用
 
 https://mp.weixin.qq.com/s/iSZFGAYFW5equXJ42OtbPg
 
-在伦敦的OpenAI开发者日活动中，OpenAI使用o1-mini在2分钟内实时演示了无人机控制，引发现场惊叹。OpenAI产品负责人Olivier Godement透露了o1新功能，包括功能调用、开发者消息、流媒体、结构化输出和图像理解。CEO奥特曼表示图像模型将迎来重要提升，暗示OpenAI在图像生成和分析方面的进展。清华校友路橙和宋飏参与的最新研究简化了生成质量堪比扩散模型的图像生成。
+在伦敦的 OpenAI 开发者日活动中，OpenAI 使用 `o1-mini` 在 2 分钟内实时演示了无人机控制，引发现场惊叹。OpenAI 产品负责人 Olivier Godement 透露了 o1 新功能，包括功能调用、开发者消息、流媒体、结构化输出和图像理解。CEO 奥特曼表示图像模型将迎来重要提升，暗示 OpenAI 在图像生成和分析方面的进展。清华校友路橙和宋飏参与的最新研究简化了生成质量堪比扩散模型的图像生成。
 
-奥特曼进一步强调推理能力对未来模型的重要性，表示Agent将成为未来AI的关键，能够执行长期任务且需要少量监督，为用户减少琐事处理。在回答对竞争对手的看法时，奥特曼称赞Cursor AI，并称对AI领域的所有贡献者怀有敬意。此外，OpenAI发布了评估语言模型新基准SimpleQA，用于测试回答简短事实性问题的能力。
+奥特曼进一步强调推理能力对未来模型的重要性，表示 Agent 将成为未来 AI 的关键，能够执行长期任务且需要少量监督，为用户减少琐事处理。在回答对竞争对手的看法时，奥特曼称赞 Cursor AI，并称对 AI 领域的所有贡献者怀有敬意。此外，OpenAI 发布了评估语言模型新基准 `SimpleQA`，用于测试回答简短事实性问题的能力。
 
 ![](img/bc91777428a9a41846692949aab509c8.png)
 
 # 推特
 
-### Github Copilot大更新！集成Claude、Anthropic，加入Copilot Edits
+## Github Copilot 大更新！集成 Claude、Anthropic，加入 Copilot Edits
 
 贡献人：
 
@@ -72,11 +73,11 @@ https://x.com/perplexity_ai/status/1851315707411337435
 
 我们很高兴与 @github 合作。通过 GitHub Copilot 集成，您将能够：
 
-•  了解最新的库更新，例如“React 的最新更新”
+• 了解最新的库更新，例如“`React` 的最新更新”
 
-•  快速找到任何问题的答案，比如“如何构建服务器端组件？”
+• 快速找到任何问题的答案，比如“如何构建服务器端组件？”
 
-•  访问易于理解的 API 集成支持，例如“我应该在哪里添加 Perplexity API 调用”
+• 访问易于理解的 API 集成支持，例如“我应该在哪里添加 Perplexity API 调用”
 
 …所有这些功能都可直接在 GitHub Copilot 开发平台中使用。
 
@@ -100,7 +101,7 @@ https://x.com/AnthropicAI/status/1851297754980761605
 
 https://x.com/perplexity_ai/status/1851315707411337435
 
-### Meta旧金山黑客松项目一览：恶意软件代理、Blender 的智能光标、为数据科学微调的 Llama 模型等
+## Meta 旧金山黑客松项目一览：恶意软件代理、Blender 的智能光标、为数据科学微调的 Llama 模型等
 
 贡献人：
 
@@ -108,7 +109,7 @@ https://x.com/AlexReibman/status/1851176077080863027
 
 自动化代码生成是生成式 AI 的最大应用场景之一。
 
-Meta 为旧金山的顶尖黑客们提供了24小时、大量奖金和海量计算资源，来探索生成式 AI 的潜力。
+Meta 为旧金山的顶尖黑客们提供了 24 小时、大量奖金和海量计算资源，来探索生成式 AI 的潜力。
 
 以下是我们在旧金山 @AIatMeta 和 @FactoryAI 的 Codegen 黑客松上看到的项目 (🧵):
 
@@ -142,7 +143,7 @@ AI 副驾驶，用于设计 3D 网格、实体和游戏对象
 
 更多在原帖中～
 
-### ChatGPT桌面端重大更新：高级语音功能现已在 macOS 和 Windows 桌面应用中上线
+## ChatGPT 桌面端重大更新：高级语音功能现已在 macOS 和 Windows 桌面应用中上线
 
 贡献人：
 
@@ -158,7 +159,7 @@ https://openai.com/chatgpt/download/
 
 [cA4Xb3IVH6oHulST.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SvuZb7BX2ohRnwxAHQhcf6uGnQd)
 
-### OpenAI实时 API 更新：现在可以使用五种全新语音构建语音转语音体验；通过提示缓存来降低价格
+## OpenAI 实时 API 更新：现在可以使用五种全新语音构建语音转语音体验；通过提示缓存来降低价格
 
 贡献人：
 
@@ -166,9 +167,9 @@ https://x.com/OpenAIDevs/status/1851668229938159853
 
 两个实时 API 更新：
 
-•  现在可以使用五种全新语音构建语音转语音体验，这些语音更加富有表现力且可调控。🤣🤫🤪
+• 现在可以使用五种全新语音构建语音转语音体验，这些语音更加富有表现力且可调控。🤣🤫🤪
 
-•  通过提示缓存来降低价格。缓存的文本输入享有 50% 的折扣，缓存的音频输入享有 80% 的折扣。📉
+• 通过提示缓存来降低价格。缓存的文本输入享有 50% 的折扣，缓存的音频输入享有 80% 的折扣。📉
 
 https://platform.openai.com/docs/guides/realtime
 
@@ -176,35 +177,37 @@ https://platform.openai.com/docs/guides/realtime
 
 [UlhGg3d4Y8aPtLnh.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VbAjbyKZUoQX1xxjtI6cxFuznR3)
 
-### Jina AI分享Meta-Prompt：让LLM能够理解阅读器、嵌入、重排序器和分类器API
+## Jina AI 分享 Meta-Prompt：让 LLM 能够理解阅读器、嵌入、重排序器和分类器 API
 
 贡献人：
 
 https://x.com/JinaAI_/status/1851651702635847729
 
+```
 curl http://docs.jina.ai
+```
 
-这是我们的 Meta-Prompt（元提示）。它让 LLM 能够理解我们的 Reader（阅读器）、Embeddings（嵌入）、Reranker（重排序器）和 Classifier（分类器）API，以便改进代码生成。使用元提示很简单，只需将提示复制到你喜欢的 LLM 界面中，比如 ChatGPT、Claude，或其他适合的工具，添加你的指令，就可以开始了。
+这是我们的 Meta-Prompt（元提示）。它让 LLM 能够理解我们的 `Reader`（阅读器）、`Embeddings`（嵌入）、`Reranker`（重排序器）和 `Classifier`（分类器）API，以便改进代码生成。使用元提示很简单，只需将提示复制到你喜欢的 LLM 界面中，比如 ChatGPT、Claude，或其他适合的工具，添加你的指令，就可以开始了。
 
-在这个例子中，我们将整个提示复制到 Anthropic Claude 中，并要求它获取 Hacker News 首页的每一句话，并使用 UMAP 和 matplotlib 可视化它们。这是一个不简单的任务，因为它结合了我们的搜索框架中的多个 API，比如 Reader 和 Embedding，而 Claude 可能不了解这些。如果直接问 Claude，它可能不会给出最佳答案。但有了元提示，Claude 就能很好地理解我们的 API，并生成更优质的代码！我们可以直接将代码复制粘贴到 Google Colab 中，经过最少的修改，代码就能运行！
+在这个例子中，我们将整个提示复制到 Anthropic Claude 中，并要求它获取 Hacker News 首页的每一句话，并使用 `UMAP` 和 `matplotlib` 可视化它们。这是一个不简单的任务，因为它结合了我们的搜索框架中的多个 API，比如 `Reader` 和 `Embedding`，而 Claude 可能不了解这些。如果直接问 Claude，它可能不会给出最佳答案。但有了元提示，Claude 就能很好地理解我们的 API，并生成更优质的代码！我们可以直接将代码复制粘贴到 Google Colab 中，经过最少的修改，代码就能运行！
 
 ![](img/973c3e21920aff441e8439a6b4a35ebd.png)
 
 [K-R7PwXKWDi8O-gP.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KeZ4becBEoWZfSxPgWXc3XaSngh)
 
-### Anthropic分享：用 Claude 3.5 Sonnet 提升 SWE-bench Verified 评分
+## Anthropic 分享：用 Claude 3.5 Sonnet 提升 SWE-bench Verified 评分
 
 贡献人：
 
 https://x.com/alexalbert__/status/1851688033550242283
 
-Claude 3.5 Sonnet 通过新代理系统在 SWE-bench Verified 上达到了 49%，超越了之前 45% 的最佳记录。SWE-bench 是一种 AI 基准，测试模型在真实软件工程任务中的表现，特别是 GitHub 问题的解决能力。Claude 的成功不仅得益于模型本身，还依赖于围绕它的“代理”系统，包括提示生成、输出解析和交互循环管理。相比其他基准，SWE-bench 受欢迎的原因在于它使用真实项目任务，尚有较大提升空间，并评估完整的代理系统而非单独的模型。
+Claude 3.5 Sonnet 通过新代理系统在 `SWE-bench Verified` 上达到了 49%，超越了之前 45% 的最佳记录。SWE-bench 是一种 AI 基准，测试模型在真实软件工程任务中的表现，特别是 GitHub 问题的解决能力。Claude 的成功不仅得益于模型本身，还依赖于围绕它的“代理”系统，包括提示生成、输出解析和交互循环管理。相比其他基准，`SWE-bench` 受欢迎的原因在于它使用真实项目任务，尚有较大提升空间，并评估完整的代理系统而非单独的模型。
 
 ![](img/a768d9d77664588b0c2ed40c559a1910.png)
 
 # 信号
 
-### Measuring short-form factuality in large language models
+## Measuring short-form factuality in large language models
 
 贡献人：
 
@@ -214,11 +217,11 @@ Claude 3.5 Sonnet 通过新代理系统在 SWE-bench Verified 上达到了 49%�
 
 信号节点：模型体系-评估体系
 
-人工智能的一个未解决的问题是如何训练能够产生事实正确响应的模型。当前的语言模型有时会产生错误的输出或没有证据支持的答案，这种问题被称为“幻觉”。产生更准确响应且幻觉更少的语言模型更值得信赖，可用于更广泛的应用。为了衡量语言模型的真实性，我们正在开源⁠一个名为 SimpleQA 的新基准。事实性是一个复杂的话题，因为它很难衡量——评估任何给定的任意主张的事实性都很有挑战性，而语言模型可以生成包含数十个事实主张的长篇补全。在 SimpleQA 中，我们将专注于简短的事实搜索查询，这缩小了基准的范围，但使衡量事实性变得更加容易。
+人工智能的一个未解决的问题是如何训练能够产生事实正确响应的模型。当前的语言模型有时会产生错误的输出或没有证据支持的答案，这种问题被称为“幻觉”。产生更准确响应且幻觉更少的语言模型更值得信赖，可用于更广泛的应用。为了衡量语言模型的真实性，我们正在开源一个名为 `SimpleQA` 的新基准。事实性是一个复杂的话题，因为它很难衡量——评估任何给定的任意主张的事实性都很有挑战性，而语言模型可以生成包含数十个事实主张的长篇补全。在 `SimpleQA` 中，我们将专注于简短的事实搜索查询，这缩小了基准的范围，但使衡量事实性变得更加容易。
 
 ![](img/d2580a60155eab618203e26f800498e1.png)
 
-### Distinguishing Ignorance from Error in LLM Hallucinations
+## Distinguishing Ignorance from Error in LLM Hallucinations
 
 贡献人：
 
@@ -234,7 +237,7 @@ Claude 3.5 Sonnet 通过新代理系统在 SWE-bench Verified 上达到了 49%�
 
 # 产品
 
-### LongTail
+## LongTail
 
 贡献人：
 
@@ -244,11 +247,13 @@ Langtail 是一个低代码平台，可以简化 AI 应用程序的测试，提�
 
 ![](img/b497daa51e38772847f883d201e00019.png)
 
-### Bolt.New
+## Bolt.New
 
 贡献人：
 
 https://bolt.new/
+
+
 
 Bolt New 是一个全栈网页应用开发平台，允许用户通过提示生成应用、实时运行、调试错误并进行部署，而无需编写代码。它提供完整的开发环境，支持 npm、Vite、Next.js 等工具，适合设计师和开发者快速原型设计和实验。Bolt New 目前免费使用，并且核心组件是开源的，用户可以在浏览器中轻松创建和管理应用。
 
@@ -256,7 +261,7 @@ Bolt New 是一个全栈网页应用开发平台，允许用户通过提示生�
 
 # HuggingFace&Github
 
-### AppFlowy
+## AppFlowy
 
 贡献人：
 
@@ -266,7 +271,7 @@ AppFlowy 是一个开源的 AI 协作工作空间，提供类似 Notion 的功�
 
 ![](img/972d90fdec179972af14bc348bd2e392.png)
 
-### FasterCache
+## FasterCache
 
 贡献人：
 
@@ -278,11 +283,11 @@ FasterCache 是一种用于加快制作视频的速度，同时保持视频的�
 
 ![](img/28bfc3827a5ad7421a419d65df5b434c.png)
 
-[teaser_video_latest_compressed.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YKKobX57eoCkIcxmeB0clnEUnLh)
+[`teaser_video_latest_compressed.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YKKobX57eoCkIcxmeB0clnEUnLh)
 
 # 投融资
 
-### Bifrost获800万美元A轮融资 加速3D数据生成平台发展
+## Bifrost获800万美元A轮融资 加速3D数据生成平台发展
 
 https://techcrunch.com/2024/10/30/bifrost-ai-raises-8m-for-its-3d-and-ai-data-generation-platform/
 
@@ -290,7 +295,7 @@ Bifrost是一家总部位于旧金山的3D数据生成平台公司，致力于�
 
 Bifrost的主要市场在美国，并逐步拓展至日本的工业领域。该公司采用年度订阅模式，当前正与一些工业伙伴进行封闭测试。其主要客户包括机器人、航空、国防等重工业领域的AI开发人员。
 
-### Regal筹集4000万美元专注AI客服聊天机器人
+## Regal筹集4000万美元专注AI客服聊天机器人
 
 https://techcrunch.com/2024/10/30/regal-claims-its-customer-service-chatbots-are-better-than-most/
 
@@ -298,13 +303,13 @@ Regal是一家专注于构建和定制客户服务聊天机器人的平台，旨
 
 近期，Regal完成了来自Emergence Capital、Founder Collective和Homebrew的4000万美元融资，累计融资达8300万美元。此轮资金将主要用于产品开发和扩大其位于纽约的100人团队。
 
-公司官网：https://www.regal.ai/regalai
+公司官网：https://www.regal.ai/regal.ai
 
 ![](img/8e492032483737c0a120077df0e1bee3.png)
 
 # 学习
 
-### 大语言模型的分词策略
+## 大语言模型的分词策略
 
 贡献人：
 
@@ -316,17 +321,17 @@ https://medium.com/@sahin.samia/decoding-tokenization-strategies-for-large-langu
 
 Tokenization 类型解析
 
-1.  词级别 (Word-Level)：每个单词作为独立 token，适合简单的应用，但处理稀有词汇表现差。
+1. 词级别 (Word-Level)：每个单词作为独立 token，适合简单的应用，但处理稀有词汇表现差。
 
-1.  子词级别 (Subword-Level)：通过子词分割（如 BPE 和 WordPiece）有效处理稀有词汇，适用于包含复杂词形变化的文本。
+2. 子词级别 (Subword-Level)：通过子词分割（如 BPE 和 WordPiece）有效处理稀有词汇，适用于包含复杂词形变化的文本。
 
-1.  字符级别 (Character-Level)：以字符为基础分割，适合形态学丰富的语言，但代价是生成较长的序列。
+3. 字符级别 (Character-Level)：以字符为基础分割，适合形态学丰富的语言，但代价是生成较长的序列。
 
-1.  Unigram Tokenization：基于词概率的单字模型，通过删除低频 token 来优化词汇库。
+4. Unigram Tokenization：基于词概率的单字模型，通过删除低频 token 来优化词汇库。
 
 ![](img/67a0d172b6ec97532bbfdea0113bd089.png)
 
-### Stream of Search: 教语言模型搜索的语言
+## Stream of Search: 教语言模型搜索的语言
 
 https://www.llmwatch.com/p/stream-of-search-teaching-language
 
@@ -336,13 +341,13 @@ https://www.llmwatch.com/p/stream-of-search-teaching-language
 
 **主要技术组件**
 
-1.  **状态和目标**：当前状态、目标状态和状态队列分别表示搜索中的起始、目标和待探索状态。
+1. 状态和目标：当前状态、目标状态和状态队列分别表示搜索中的起始、目标和待探索状态。
 
-1.  **状态扩展函数**：基于转换函数探索相邻状态。
+2. 状态扩展函数：基于转换函数探索相邻状态。
 
-1.  **搜索选择与回溯**：选择广度或深度优先的搜索顺序，并支持在已探索节点间回溯。
+3. 搜索选择与回溯：选择广度或深度优先的搜索顺序，并支持在已探索节点间回溯。
 
-1.  **启发式函数**：估算当前状态与目标状态的距离，引导搜索过程。
+4. 启发式函数：估算当前状态与目标状态的距离，引导搜索过程。
 
 通过在语言中表示这些操作，SoS 可以生成包含不同搜索策略的数据集，既包括显式表示的状态和目标，也包括隐式的启发式和剪枝策略。
 
@@ -352,7 +357,7 @@ https://www.llmwatch.com/p/stream-of-search-teaching-language
 
 ![](img/8f320518e16eef51fec4c6736bb9f400.png)
 
-### Reward / Embed Model Sever Engine 现状浅析
+## Reward / Embed Model Sever Engine 现状浅析
 
 https://zhuanlan.zhihu.com/p/4148050391
 
@@ -368,7 +373,7 @@ decode 请求通常采用 P/D（Prefill/Decode）分离架构以优化计算资�
 
 ![](img/7c492c927863d55d87c653f227f6d5fb.png)
 
-### 图解大模型训练系列：序列并行1，Megatron SP
+## 图解大模型训练系列：序列并行1，Megatron SP
 
 https://zhuanlan.zhihu.com/p/4083427292
 
@@ -380,7 +385,7 @@ Selective Activation Recomputation 在显存不足时，SP 结合选择性激活
 
 ![](img/c98d60a51a7cc12dfca78b6303907817.png)
 
-### 在中国 CPU （龙芯3A6000、3A5000、兆芯等）上运行 SPEC CPU2017
+## 在中国 CPU （龙芯3A6000、3A5000、兆芯等）上运行 SPEC CPU2017
 
 https://zhuanlan.zhihu.com/p/3943366501
 
@@ -388,51 +393,51 @@ https://zhuanlan.zhihu.com/p/3943366501
 
 龙芯 3A6000
 
-+   **架构与指令集**：龙芯 3A6000 采用 6 宽 LA664 内核，支持 SMT，具备 256 位矢量执行能力，且使用 Loongarch64 指令集。其架构旨在提高 IPC，但时钟速度较低（2.5 GHz），限制了性能表现。
++ **架构与指令集**：龙芯 3A6000 采用 6 宽 LA664 内核，支持 SMT，具备 256 位矢量执行能力，且使用 Loongarch64 指令集。其架构旨在提高 IPC，但时钟速度较低（2.5 GHz），限制了性能表现。
 
-+   **单线程表现**：在 SPEC CPU2017 的整数和浮点任务中，3A6000 的单线程性能仍低于英特尔 E-Core 和 AMD Zen 1。虽然其 IPC 较高，但缺乏足够的时钟速度。
++ **单线程表现**：在 SPEC CPU2017 的整数和浮点任务中，3A6000 的单线程性能仍低于英特尔 E-Core 和 AMD Zen 1。虽然其 IPC 较高，但缺乏足够的时钟速度。
 
-+   **分支预测**：3A6000 的分支预测精度较高，尤其在运行两个 SMT 线程时表现稳定，表明其预测器的有效设计。
++ **分支预测**：3A6000 的分支预测精度较高，尤其在运行两个 SMT 线程时表现稳定，表明其预测器的有效设计。
 
-+   SPEC CPU2017 浮点测试优势：3A6000 在特定的浮点任务中表现优于 E-Core，但在多数测试中仍然落后于同代及更老的 x86 架构 CPU。
++ SPEC CPU2017 浮点测试优势：3A6000 在特定的浮点任务中表现优于 E-Core，但在多数测试中仍然落后于同代及更老的 x86 架构 CPU。
 
 兆芯 KX-6640MA
 
-+   **架构与性能**：兆芯 KX-6640MA 采用 2 宽的 LuiJiaZui 内核架构，较低的无序处理能力使其性能局限于低功耗领域。SPEC CPU2017 测试显示其与 Arm Cortex A73 相当，但略逊于英特尔 Goldmont Plus。
++ **架构与性能**：兆芯 KX-6640MA 采用 2 宽的 LuiJiaZui 内核架构，较低的无序处理能力使其性能局限于低功耗领域。SPEC CPU2017 测试显示其与 Arm Cortex A73 相当，但略逊于英特尔 Goldmont Plus。
 
-+   SPEC CPU2017 整体表现：在整数和浮点任务中，兆芯与低功耗 CPU 性能接近，但明显低于主流桌面和服务器 CPU。
++ SPEC CPU2017 整体表现：在整数和浮点任务中，兆芯与低功耗 CPU 性能接近，但明显低于主流桌面和服务器 CPU。
 
 ![](img/ab98b24f1946f6dc8395650c9d3feaff.png)
 
-### 使用 Nvidia Triton Inference Server 扩展机器学习工作负载
+## 使用 Nvidia Triton Inference Server 扩展机器学习工作负载
 
 https://blog.qburst.com/2024/10/scaling-ml-workloads-using-nvidia-triton
 
-1.  设置和模型目录结构
+1. 设置和模型目录结构
 
-Triton需要一个模型仓库，每个模型存放在独立目录中，带有版本控制子目录。配置文件config.pbtxt允许用户指定输入/输出、批处理大小等参数。例如，对象检测模型的输入可以设定为三通道的640x640图像。
+Triton需要一个模型仓库，每个模型存放在独立目录中，带有版本控制子目录。配置文件`config.pbtxt`允许用户指定输入/输出、批处理大小等参数。例如，对象检测模型的输入可以设定为三通道的640x640图像。
 
-1.  内存优化
+2. 内存优化
 
-默认情况下，Triton加载模型仓库中的所有模型，增加内存使用。可通过--model-control-mode=explicit和--load-model参数，仅加载特定模型。此外，可通过version_policy限制模型的版本数量，从而减少不必要的内存占用。
+默认情况下，Triton加载模型仓库中的所有模型，增加内存使用。可通过`--model-control-mode=explicit`和`--load-model`参数，仅加载特定模型。此外，可通过`version_policy`限制模型的版本数量，从而减少不必要的内存占用。
 
-1.  性能优化
+3. 性能优化
 
-+   **多实例配置**：通过增加模型实例数量来提升吞吐量。可以在不同的GPU上运行多个实例，或指定每个实例所用的GPU ID，提高GPU利用率。
++ **多实例配置**：通过增加模型实例数量来提升吞吐量。可以在不同的GPU上运行多个实例，或指定每个实例所用的GPU ID，提高GPU利用率。
 
-+   **批处理和动态批处理**：增加输入和输出维度以支持批处理或动态批处理，通过组合推理请求提升吞吐量。
++ **批处理和动态批处理**：增加输入和输出维度以支持批处理或动态批处理，通过组合推理请求提升吞吐量。
 
-+   **垂直和水平扩展**：通过在单个VM上配置多GPU实现垂直扩展；设置多台Triton服务器并使用负载均衡器（如HAproxy）实现水平扩展，从而高效分配请求。
++ **垂直和水平扩展**：通过在单个VM上配置多GPU实现垂直扩展；设置多台Triton服务器并使用负载均衡器（如HAproxy）实现水平扩展，从而高效分配请求。
 
-1.  GPU/CPU加速优化
+4. GPU/CPU加速优化
 
-+   **TensorRT加速**：配置TensorRT提供更高效的GPU推理，尤其是支持FP16精度模式的模型。TensorRT可优化网络中的支持算子。
++ **TensorRT加速**：配置`TensorRT`提供更高效的GPU推理，尤其是支持`FP16`精度模式的模型。`TensorRT`可优化网络中的支持算子。
 
-+   **CUDA执行提供者**：CUDA作为TensorRT的备用选项，当算子不被TensorRT支持时，由CUDA执行。此外，还可以通过配置cudnn_conv_use_max_workspace来调优。
++ **CUDA执行提供者**：`CUDA`作为`TensorRT`的备用选项，当算子不被`TensorRT`支持时，由`CUDA`执行。此外，还可以通过配置`cudnn_conv_use_max_workspace`来调优。
 
-+   **OpenVINO加速（CPU）**：在仅使用CPU的模型中，通过OpenVINO实现加速，可在配置文件中添加openvino选项，提供CPU层面的优化。
++ **OpenVINO加速（CPU）**：在仅使用CPU的模型中，通过`OpenVINO`实现加速，可在配置文件中添加`openvino`选项，提供CPU层面的优化。
 
-### GPT 时代，精进编程思维 + 熟练 Prompt 是否是新的编程范式?
+## GPT 时代，精进编程思维 + 熟练 Prompt 是否是新的编程范式?
 
 https://www.zhihu.com/question/1918968340/answer/17065727080
 
@@ -448,25 +453,27 @@ https://www.zhihu.com/question/1918968340/answer/17065727080
 
 ![](img/893a83db37a68005f1f020a2f4f5198d.png)
 
-**奇绩创坛****由陆奇博士**于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
+奇绩创坛由陆奇博士于2019年创立，使命是在源头最大化驱动创新。奇绩研究组将研究模型理论、到投研战略分析、市场策划等不同背景的同学聚在一起，搭建GenAI时代独特的跨界人才社群。
 
-## 🚀F**24实习岗位**
+## 🚀F24实习岗位
 
-##### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
+### [行研-学术科研人才交流组实习生](https://miracleplus.feishu.cn/docx/Yn6rdf2iOoY2Rcx8yVNcUBYRnch#part-QkMcdeJmuob9uvxvV3qcLSzHn8g)
 
-##### 行研-GenAI研究岗位-战略分析（偏产品）
+### 行研-GenAI研究岗位-战略分析（偏产品）
 
-##### Web / AI 全栈开发工程师实习生
+### Web / AI 全栈开发工程师实习生
 
-## **火热开放中🚀**
+## 火热开放中🚀
 
-##### 行研-GenAI研究岗位-前沿学术探索
+### 行研-GenAI研究岗位-前沿学术探索
 
-##### 行研-GenAI研究岗位-战略分析（偏咨询）
+### 行研-GenAI研究岗位-战略分析（偏咨询）
 
-##### 创新活动产品运营 （大模型系列活动产品运营）
+### 创新活动产品运营 （大模型系列活动产品运营）
 
-> **点击**相关岗位可查看对应**岗位需求【JD】；**相关岗位投递请**扫描二维码**
+
+
+> **点击**相关岗位可查看对应**岗位需求【JD】**；**相关岗位投递请**扫描二维码
 
 ![](img/5d02d971c99e00c367165665103b8145.png)
 
@@ -480,8 +487,6 @@ https://www.zhihu.com/question/1918968340/answer/17065727080
 
 本文档仅供学习交流使用，版权归原作者所有，若涉侵权，请联系Jack Jin 15101136166
 
-##
-
 （欢迎在下方反馈您宝贵的意见！整理不易，觉得有用给AI日报小组点个赞👍吧！）
 
 ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naixu；Lizhi；Peter；Suoman；Jack
@@ -492,11 +497,9 @@ ChatGPT；Angela；Zijia Liu；Alex；Zeqi Tan；Tiezhen（HuggingFace）；Naix
 
 > 快邀请你的小伙伴们一起来读大模型日报吧！
 
-> **【日报****知识库****】**这里是近期日报内容的汇总,欢迎大家查阅
+> **【日报知识库】**这里是近期日报内容的汇总,欢迎大家查阅
 
 > [大模型日报知识库(分享版)](https://miracleplus.feishu.cn/wiki/KapVwXfkriOBiskB0B2cUHxjnTh)
-
->
 
 > 欢迎大家多多帮我们分享,转发~~
 

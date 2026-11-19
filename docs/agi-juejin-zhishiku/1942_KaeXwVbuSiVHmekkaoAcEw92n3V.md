@@ -1,9 +1,7 @@
-# 04.17-OpenAI震撼发布o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表
-
-> 来源：[https://agijuejin.feishu.cn/docx/AiSud1h63o7nVVxaPYWcDNGVnhb](https://agijuejin.feishu.cn/docx/AiSud1h63o7nVVxaPYWcDNGVnhb)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 17 日)
 
+> 来源：[https://agijuejin.feishu.cn/docx/AiSud1h63o7nVVxaPYWcDNGVnhb](https://agijuejin.feishu.cn/docx/AiSud1h63o7nVVxaPYWcDNGVnhb)
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ![](img/7a52ab967d647892616ab3032e06bac1.png)
@@ -16,7 +14,7 @@
 
 ![](img/72b82004da591351ace739c7b8320b34.png)
 
-OpenAI 发布满血版 o3 和 o4 - mini 推理模型。o3 实现「用图像思考」，刷新多项基准测试 SOTA，性能媲美 Deep Research 且速率更快，推理成本优于 o1；o4 - mini 小巧高效、性价比高。二者均能自主调用工具，还开源编程神器 Codex CLI 并启动资助计划。此外，通过强化学习验证 Scaling 路径有效，模型在多领域表现出色。
+OpenAI 发布满血版 o3 和 o4 - mini 推理模型。o3 实现「用图像思考」，刷新多项基准测试 SOTA，性能媲美 Deep Research 且速率更快，推理成本优于 o1；o4 - mini 小巧高效、性价比高。二者均能自主调用工具，还开源编程神器 `Codex CLI` 并启动资助计划。此外，通过强化学习验证 Scaling 路径有效，模型在多领域表现出色。
 
 ## 🌟 技术突破
 
@@ -118,13 +116,13 @@ IT之家 | [阅读原文](https://www.ithome.com/0/845/831.htm)
 
 4月17日消息，OpenAI部署“安全导向推理监控器”新系统，监测o3和o4 - mini，防其提供生物和化学威胁建议。因这俩模型能力提升但有新风险，o3擅长答生物威胁问题。红队花约1000小时标记“不安全”对话，测试中模型拒回应风险提示比例达98.7%，但测试有局限，仍需人工监控。此外，OpenAI还用类似监控器防GPT - 4o问题，不过有研究人员质疑其安全措施。
 
-### 💡 在终端就能跑的轻量级推理智能体，OpenAI 发布完全开源 Codex CLI 工具
+### 💡 在终端就能跑的轻量级推理智能体，OpenAI 发布完全开源 `Codex CLI` 工具
 
 IT之家 | [阅读原文](https://www.ithome.com/0/845/828.htm)
 
 ![](img/3f66208ec56d6e0d3ac208a8a5782dfa.png)
 
-4月17日，OpenAI发布轻量级终端运行编码智能体Codex CLI并在GitHub完全开源。它能最大化部分模型推理能力，即将支持GPT-4.1等。用户通过命令行获多模态推理能力，是聊天驱动开发工具。其零配置，导入密钥即可用，安全且多模态。可在多种系统使用，最少4GB内存（建议8GB）。开源链接：https://github.com/openai/codex 。
+4月17日，OpenAI发布轻量级终端运行编码智能体`Codex CLI`并在GitHub完全开源。它能最大化部分模型推理能力，即将支持GPT-4.1等。用户通过命令行获多模态推理能力，是聊天驱动开发工具。其零配置，导入密钥即可用，安全且多模态。可在多种系统使用，最少4GB内存（建议8GB）。开源链接：`https://github.com/openai/codex` 。
 
 ### 💡 🛰️首个 AI 助手上线：可与“元宝”在聊天框对话，还能添加好友
 
@@ -198,4 +196,8 @@ IT之家 | [阅读原文](https://www.ithome.com/0/845/847.htm)
 
 ![](img/86c72a8b93a8a2337cfbc6c13afb4674.png)
 
-Nature揭秘21世纪最具影响力的25篇论文，AI论文表现突出。微软团队的ResNet论文登顶，引用量10万 - 25.4万次，解决信号衰减问题，催生众多模型。谷歌Transformer架构论文排第七，是ChatGPT等核心。AI教父Geoff Hinton称AI论文有引用优势。此外，研究软件、统计软件、癌症研究、提升研究质量相关论文也在榜单前列，开源等因素助推论文引用。
+
+
+# Nature揭秘21世纪最具影响力的25篇论文
+
+Nature揭秘21世纪最具影响力的25篇论文，AI论文表现突出。微软团队的`ResNet`论文登顶，引用量10万 - 25.4万次，解决信号衰减问题，催生众多模型。谷歌`Transformer`架构论文排第七，是`ChatGPT`等核心。AI教父Geoff Hinton称AI论文有引用优势。此外，研究软件、统计软件、癌症研究、提升研究质量相关论文也在榜单前列，开源等因素助推论文引用。

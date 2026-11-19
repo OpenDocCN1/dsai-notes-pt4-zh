@@ -1,3 +1,4 @@
+
 # Trae初体验-不写一行代码开发2048小游戏
 
 > 来源：[https://agijuejin.feishu.cn/docx/YBGWdU2HEoBRPlxwnX9cAHzAnug](https://agijuejin.feishu.cn/docx/YBGWdU2HEoBRPlxwnX9cAHzAnug)
@@ -10,45 +11,45 @@
 
 Trae 是字节跳动于 2025 年 1 月 19 日推出的 AI 编程工具。
 
-> 官网：https://www.trae.ai/
+> 官网：`https://www.trae.ai/`
 
 ![](img/d0bf50c86e2c57c74a21ba131e225f11.png)
 
 ### 核心功能
 
-+   • **智能代码生成与优化**：集成Claude 3.5和GPT-4o等顶级AI模型，可根据自然语言描述快速生成高质量代码片段，能精准理解需求并提供代码补全、优化和重构建议，提升代码质量，减少手动编写工作量。还可实时分析代码性能，帮助开发者减少冗余代码、提高执行效率。
+- 智能代码生成与优化：集成Claude 3.5和GPT-4o等顶级AI模型，可根据自然语言描述快速生成高质量代码片段，能精准理解需求并提供代码补全、优化和重构建议，提升代码质量，减少手动编写工作量。还可实时分析代码性能，帮助开发者减少冗余代码、提高执行效率。
 
-+   • **AI驱动的交互模式**
+- AI驱动的交互模式
 
-+   • **Chat模式**：开发者可通过对话框输入问题或代码需求，Trae会基于AI模型生成代码建议或解答，适合解决编程中的具体问题，如调试错误、优化代码结构等。
+- Chat模式：开发者可通过对话框输入问题或代码需求，Trae会基于AI模型生成代码建议或解答，适合解决编程中的具体问题，如调试错误、优化代码结构等。
 
-+   • **Builder模式**：亮点功能，能根据用户需求直接生成完整的代码项目，如输入“生成一个图片压缩工具”的描述，它就可自动生成项目代码，并在生成过程中征求用户意见，确保代码的准确性和完整性。
+- Builder模式：亮点功能，能根据用户需求直接生成完整的代码项目，如输入“生成一个图片压缩工具”的描述，它就可自动生成项目代码，并在生成过程中征求用户意见，确保代码的准确性和完整性。
 
-+   • **原生中文支持**：从底层设计上就支持中文，界面语言全面中文化，减少了语言切换带来的不便，让开发者能更专注于代码本身，提升开发效率。
+- 原生中文支持：从底层设计上就支持中文，界面语言全面中文化，减少了语言切换带来的不便，让开发者能更专注于代码本身，提升开发效率。
 
-+   • **多模态支持**：开发者上传图像，Trae会精准理解图像内容，并结合AI功能生成相关代码，极大地简化了需求表达和代码实现的过程，适合需要视觉化输入的开发场景。
+- 多模态支持：开发者上传图像，Trae会精准理解图像内容，并结合AI功能生成相关代码，极大地简化了需求表达和代码实现的过程，适合需要视觉化输入的开发场景。
 
-+   • **便捷的项目预览与调试**：提供Webview功能，支持在IDE内直接预览Web页面，方便前端开发，开发者无需切换到浏览器即可实时查看开发效果。还支持在对话中引用代码块、文件或整个项目，实现精准交互。
+- 便捷的项目预览与调试：提供Webview功能，支持在IDE内直接预览Web页面，方便前端开发，开发者无需切换到浏览器即可实时查看开发效果。还支持在对话中引用代码块、文件或整个项目，实现精准交互。
 
 ### 应用场景
 
-+   • **Web开发**：能够通过简单的自然语言描述快速生成静态网页或动态Web应用的代码，并结合Webview功能直接在IDE内预览和调试前端页面，提高开发效率。
+- Web开发：能够通过简单的自然语言描述快速生成静态网页或动态Web应用的代码，并结合Webview功能直接在IDE内预览和调试前端页面，提高开发效率。
 
-+   • **游戏开发**：可以生成简单游戏的基础代码，并与主流游戏引擎集成，例如能生成贪吃蛇游戏的基础代码，开发者在此基础上扩展和优化即可。
+- 游戏开发：可以生成简单游戏的基础代码，并与主流游戏引擎集成，例如能生成贪吃蛇游戏的基础代码，开发者在此基础上扩展和优化即可。
 
-+   • **数据处理**：能生成数据清洗、分析和机器学习数据准备的代码，支持多种数据格式，可高效完成数据处理任务，助力开发者快速实现数据驱动的项目。
+- 数据处理：能生成数据清洗、分析和机器学习数据准备的代码，支持多种数据格式，可高效完成数据处理任务，助力开发者快速实现数据驱动的项目。
 
-+   • **API开发**：可以快速生成API请求和后端接口代码，还支持生成API文档和测试代码，帮助开发者快速开发和验证API功能。
+- API开发：可以快速生成API请求和后端接口代码，还支持生成API文档和测试代码，帮助开发者快速开发和验证API功能。
 
-+   • **工具开发**：能根据描述生成实用工具的代码，如图片压缩、文件加密等，开发者通过简单提示词就能快速实现功能，减少开发时间和精力。
+- 工具开发：能根据描述生成实用工具的代码，如图片压缩、文件加密等，开发者通过简单提示词就能快速实现功能，减少开发时间和精力。
 
-+   • **学习与教学**：不仅适用于专业开发者，也是初学者和教育工作者的得力助手，能生成各种编程语言的基础代码示例，帮助初学者理解语法和逻辑，也为教师提供了丰富的教学用代码案例，辅助教学。
+- 学习与教学：不仅适用于专业开发者，也是初学者和教育工作者的得力助手，能生成各种编程语言的基础代码示例，帮助初学者理解语法和逻辑，也为教师提供了丰富的教学用代码案例，辅助教学。
 
 ## Trae vs Cursor
 
 ## 实践案例：2048小游戏
 
-### 输入prompt指令
+### 输入`prompt`指令
 
 ![](img/1ac5d1a78e0934b0bd7a310f58de5f39.png)
 
@@ -56,22 +57,22 @@ Trae 是字节跳动于 2025 年 1 月 19 日推出的 AI 编程工具。
 
 分别有三个代码文件：
 
-**game_2048.py**
+`game_2048.py`
 
-+   import tkinter as tk
+```python
+import tkinter as tk
 import random
 import colors
 
-classGame2048:
+class Game2048:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title('2048游戏')
         self.grid_cells = []
-        self.matrix = [[0] * 4for _ in range(4)]
+        self.matrix = [[0] * 4 for _ in range(4)]
         self.score = 0
         self.init_grid()
         self.init_matrix()
-        
         # 绑定按键事件
         self.window.bind('<Left>', lambda event: self.move('left'))
         self.window.bind('<Right>', lambda event: self.move('right'))
@@ -81,7 +82,6 @@ classGame2048:
     def init_grid(self):
         background = tk.Frame(self.window, bg='#92877d', width=400, height=400)
         background.grid()
-
         for i in range(4):
             grid_row = []
             for j in range(4):
@@ -116,7 +116,7 @@ classGame2048:
         empty_cells = [(i, j) for i in range(4) for j in range(4) if self.matrix[i][j] == 0]
         if empty_cells:
             i, j = random.choice(empty_cells)
-            self.matrix[i][j] = 2if random.random() < 0.9else4
+            self.matrix[i][j] = 2 if random.random() < 0.9 else 4
 
     def update_grid_cells(self):
         for i in range(4):
@@ -133,7 +133,7 @@ classGame2048:
         self.window.update_idletasks()
 
     def stack(self):
-        new_matrix = [[0] * 4for _ in range(4)]
+        new_matrix = [[0] * 4 for _ in range(4)]
         for i in range(4):
             fill_position = 0
             for j in range(4):
@@ -145,7 +145,7 @@ classGame2048:
     def combine(self):
         for i in range(4):
             for j in range(3):
-                if self.matrix[i][j] != 0and self.matrix[i][j] == self.matrix[i][j + 1]:
+                if self.matrix[i][j] != 0 and self.matrix[i][j] == self.matrix[i][j + 1]:
                     self.matrix[i][j] *= 2
                     self.matrix[i][j + 1] = 0
                     self.score += self.matrix[i][j]
@@ -155,11 +155,11 @@ classGame2048:
         for i in range(4):
             new_matrix.append([])
             for j in range(4):
-                new_matrix[i].append(self.matrix[i][3j])
+                new_matrix[i].append(self.matrix[i][3 - j])
         self.matrix = new_matrix
 
     def transpose(self):
-        new_matrix = [[0] * 4for _ in range(4)]
+        new_matrix = [[0] * 4 for _ in range(4)]
         for i in range(4):
             for j in range(4):
                 new_matrix[i][j] = self.matrix[j][i]
@@ -190,7 +190,6 @@ classGame2048:
             self.combine()
             self.stack()
             self.reverse()
-
         self.add_new_tile()
         self.update_grid_cells()
         if self.game_over():
@@ -203,7 +202,6 @@ classGame2048:
             for j in range(4):
                 if self.matrix[i][j] == 0:
                     return False
-
         # 检查是否还能合并
         for i in range(4):
             for j in range(3):
@@ -217,45 +215,46 @@ classGame2048:
 
     def run(self):
         self.window.mainloop()
-
-**colors.py**
-
 ```
+
+`colors.py`
+
+```python
 CELL_COLORS = {
-    2: &quot;#eee4da&quot;,
-    4: &quot;#ede0c8&quot;,
-    8: &quot;#f2b179&quot;,
-    16: &quot;#f59563&quot;,
-    32: &quot;#f67c5f&quot;,
-    64: &quot;#f65e3b&quot;,
-    128: &quot;#edcf72&quot;,
-    256: &quot;#edcc61&quot;,
-    512: &quot;#edc850&quot;,
-    1024: &quot;#edc53f&quot;,
-    2048: &quot;#edc22e&quot;
+    2: "#eee4da",
+    4: "#ede0c8",
+    8: "#f2b179",
+    16: "#f59563",
+    32: "#f67c5f",
+    64: "#f65e3b",
+    128: "#edcf72",
+    256: "#edcc61",
+    512: "#edc850",
+    1024: "#edc53f",
+    2048: "#edc22e"
 }
 
 NUMBER_COLORS = {
-    2: &quot;#776e65&quot;,
-    4: &quot;#776e65&quot;,
-    8: &quot;#f9f6f2&quot;,
-    16: &quot;#f9f6f2&quot;,
-    32: &quot;#f9f6f2&quot;,
-    64: &quot;#f9f6f2&quot;,
-    128: &quot;#f9f6f2&quot;,
-    256: &quot;#f9f6f2&quot;,
-    512: &quot;#f9f6f2&quot;,
-    1024: &quot;#f9f6f2&quot;,
-    2048: &quot;#f9f6f2&quot;
+    2: "#776e65",
+    4: "#776e65",
+    8: "#f9f6f2",
+    16: "#f9f6f2",
+    32: "#f9f6f2",
+    64: "#f9f6f2",
+    128: "#f9f6f2",
+    256: "#f9f6f2",
+    512: "#f9f6f2",
+    1024: "#f9f6f2",
+    2048: "#f9f6f2"
 }
 ```
 
-main.py
+`main.py`
 
-```
+```python
 from game_2048 import Game2048
 
-if name == &quot;__main__&quot;:
+if __name__ == "__main__":
     game = Game2048()
     game.run()
 ```
@@ -275,6 +274,8 @@ if name == &quot;__main__&quot;:
 ### 运行结果
 
 ![](img/56a4bf27c482e33a5f637f42cb0e4679.png)
+
+
 
 就这样我们就开发好一款经典的2048小游戏，相比于过去这类Demo我们还得各种找源码学习，现在智能得有点吓人。
 

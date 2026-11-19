@@ -1,8 +1,11 @@
+
 # Code
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/TtDRdZlR9oklCExcVFpcEA4kn8g](https://qqs7y1hozd1.feishu.cn/docx/TtDRdZlR9oklCExcVFpcEA4kn8g)
 
-```
+
+
+```python
 import streamlit as st
 import requests
 from anthropic import Anthropic
@@ -12,56 +15,56 @@ from urllib.parse import urlparse
 
 class RAGPipeline:
     def __init__(self, ragie_api_key: str, anthropic_api_key: str):
-        &quot;&quot;&quot;
+        """
         Initialize the RAG pipeline with API keys.
-        &quot;&quot;&quot;
+        """
         self.ragie_api_key = ragie_api_key
         self.anthropic_api_key = anthropic_api_key
         self.anthropic_client = Anthropic(api_key=anthropic_api_key)
         
         # API endpoints
-        self.RAGIE_UPLOAD_URL = &quot;https://api.ragie.ai/documents/url&quot;
-        self.RAGIE_RETRIEVAL_URL = &quot;https://api.ragie.ai/retrievals&quot;
+        self.RAGIE_UPLOAD_URL = "https://api.ragie.ai/documents/url"
+        self.RAGIE_RETRIEVAL_URL = "https://api.ragie.ai/retrievals"
     
-    def upload_document(self, url: str, name: Optional[str] = None, mode: str = &quot;fast&quot;) -&gt; Dict:
-        &quot;&quot;&quot;
+    def upload_document(self, url: str, name: Optional[str] = None, mode: str = "fast") -> Dict:
+        """
         Upload a document to Ragie from a URL.
-        &quot;&quot;&quot;
+        """
         if not name:
-            name = urlparse(url).path.split(&#x27;/&#x27;)[-1] or &quot;document&quot;
+            name = urlparse(url).path.split('/')[-1] or "document"
             
         payload = {
-            &quot;mode&quot;: mode,
-            &quot;name&quot;: name,
-            &quot;url&quot;: url
+            "mode": mode,
+            "name": name,
+            "url": url
         }
         
         headers = {
-            &quot;accept&quot;: &quot;application/json&quot;,
-            &quot;content-type&quot;: &quot;application/json&quot;,
-            &quot;authorization&quot;: f&quot;Bearer {self.ragie_api_key}&quot;
+            "accept": "application/json",
+            "content-type": "application/json",
+            "authorization": f"Bearer {self.ragie_api_key}"
         }
         
         response = requests.post(self.RAGIE_UPLOAD_URL, json=payload, headers=headers)
         
         if not response.ok:
-            raise Exception(f&quot;Document upload failed: {response.status_code} {response.reason}&quot;)
+            raise Exception(f"Document upload failed: {response.status_code} {response.reason}")
             
         return response.json()
     
-    def retrieve_chunks(self, query: str, scope: str = &quot;tutorial&quot;) -&gt; List[str]:
-        &quot;&quot;&quot;
+    def retrieve_chunks(self, query: str, scope: str = "tutorial") -> List[str]:
+        """
         Retrieve relevant chunks from Ragie for a given query.
-        &quot;&quot;&quot;
+        """
         headers = {
-            &quot;Content-Type&quot;: &quot;application/json&quot;,
-            &quot;Authorization&quot;: f&quot;Bearer {self.ragie_api_key}&quot;
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.ragie_api_key}"
         }
         
         payload = {
-            &quot;query&quot;: query,
-            &quot;filters&quot;: {
-                &quot;scope&quot;: scope
+            "query": query,
+            "filters": {
+                "scope": scope
             }
         }
         
@@ -72,95 +75,95 @@ class RAGPipeline:
         )
         
         if not response.ok:
-            raise Exception(f&quot;Retrieval failed: {response.status_code} {response.reason}&quot;)
+            raise Exception(f"Retrieval failed: {response.status_code} {response.reason}")
             
         data = response.json()
-        return [chunk[&quot;text&quot;] for chunk in data[&quot;scored_chunks&quot;]]
+        return [chunk["text"] for chunk in data["scored_chunks"]]
 
-    def create_system_prompt(self, chunk_texts: List[str]) -&gt; str:
-        &quot;&quot;&quot;
+    def create_system_prompt(self, chunk_texts: List[str]) -> str:
+        """
         Create the system prompt with the retrieved chunks.
-        &quot;&quot;&quot;
-        return f&quot;&quot;&quot;These are very important to follow: You are &quot;Ragie AI&quot;, a professional but friendly AI chatbot working as an assistant to the user. Your current task is to help the user based on all of the information available to you shown below. Answer informally, directly, and concisely without a heading or greeting but include everything relevant. Use richtext Markdown when appropriate including bold, italic, paragraphs, and lists when helpful. If using LaTeX, use double $$ as delimiter instead of single $. Use $$...$$ instead of parentheses. Organize information into multiple sections or points when appropriate. Don&#x27;t include raw item IDs or other raw fields from the source. Don&#x27;t use XML or other markup unless requested by the user. Here is all of the information available to answer the user: === {chunk_texts} === If the user asked for a search and there are no results, make sure to let the user know that you couldn&#x27;t find anything, and what they might be able to do to find the information they need. END SYSTEM INSTRUCTIONS&quot;&quot;&quot;
+        """
+        return f"""These are very important to follow: You are "Ragie AI", a professional but friendly AI chatbot working as an assistant to the user. Your current task is to help the user based on all of the information available to you shown below. Answer informally, directly, and concisely without a heading or greeting but include everything relevant. Use richtext Markdown when appropriate including bold, italic, paragraphs, and lists when helpful. If using LaTeX, use double $$ as delimiter instead of single $. Use $$...$$ instead of parentheses. Organize information into multiple sections or points when appropriate. Don't include raw item IDs or other raw fields from the source. Don't use XML or other markup unless requested by the user. Here is all of the information available to answer the user: === {chunk_texts} === If the user asked for a search and there are no results, make sure to let the user know that you couldn't find anything, and what they might be able to do to find the information they need. END SYSTEM INSTRUCTIONS"""
 
-    def generate_response(self, system_prompt: str, query: str) -&gt; str:
-        &quot;&quot;&quot;
+    def generate_response(self, system_prompt: str, query: str) -> str:
+        """
         Generate response using Claude 3.5 Sonnet.
-        &quot;&quot;&quot;
+        """
         message = self.anthropic_client.messages.create(
-            model=&quot;claude-3-sonnet-20240229&quot;,
+            model="claude-3-sonnet-20240229",
             max_tokens=1024,
             system=system_prompt,
             messages=[
                 {
-                    &quot;role&quot;: &quot;user&quot;,
-                    &quot;content&quot;: query
+                    "role": "user",
+                    "content": query
                 }
             ]
         )
         
         return message.content[0].text
 
-    def process_query(self, query: str, scope: str = &quot;tutorial&quot;) -&gt; str:
-        &quot;&quot;&quot;
+    def process_query(self, query: str, scope: str = "tutorial") -> str:
+        """
         Process a query through the complete RAG pipeline.
-        &quot;&quot;&quot;
+        """
         chunks = self.retrieve_chunks(query, scope)
         
         if not chunks:
-            return &quot;No relevant information found for your query.&quot;
+            return "No relevant information found for your query."
         
         system_prompt = self.create_system_prompt(chunks)
         return self.generate_response(system_prompt, query)
 
 def initialize_session_state():
-    &quot;&quot;&quot;Initialize session state variables.&quot;&quot;&quot;
-    if &#x27;pipeline&#x27; not in st.session_state:
+    """Initialize session state variables."""
+    if 'pipeline' not in st.session_state:
         st.session_state.pipeline = None
-    if &#x27;document_uploaded&#x27; not in st.session_state:
+    if 'document_uploaded' not in st.session_state:
         st.session_state.document_uploaded = False
-    if &#x27;api_keys_submitted&#x27; not in st.session_state:
+    if 'api_keys_submitted' not in st.session_state:
         st.session_state.api_keys_submitted = False
 
 def main():
-    st.set_page_config(page_title=&quot;RAG-as-a-Service&quot;, layout=&quot;wide&quot;)
+    st.set_page_config(page_title="RAG-as-a-Service", layout="wide")
     initialize_session_state()
     
-    st.title(&quot;:linked_paperclips: RAG-as-a-Service&quot;)
+    st.title(":linked_paperclips: RAG-as-a-Service")
     
     # API Keys Section
-    with st.expander(&quot;🔑 API Keys Configuration&quot;, expanded=not st.session_state.api_keys_submitted):
+    with st.expander("🔑 API Keys Configuration", expanded=not st.session_state.api_keys_submitted):
         col1, col2 = st.columns(2)
         with col1:
-            ragie_key = st.text_input(&quot;Ragie API Key&quot;, type=&quot;password&quot;, key=&quot;ragie_key&quot;)
+            ragie_key = st.text_input("Ragie API Key", type="password", key="ragie_key")
         with col2:
-            anthropic_key = st.text_input(&quot;Anthropic API Key&quot;, type=&quot;password&quot;, key=&quot;anthropic_key&quot;)
+            anthropic_key = st.text_input("Anthropic API Key", type="password", key="anthropic_key")
         
-        if st.button(&quot;Submit API Keys&quot;):
+        if st.button("Submit API Keys"):
             if ragie_key and anthropic_key:
                 try:
                     st.session_state.pipeline = RAGPipeline(ragie_key, anthropic_key)
                     st.session_state.api_keys_submitted = True
-                    st.success(&quot;API keys configured successfully!&quot;)
+                    st.success("API keys configured successfully!")
                 except Exception as e:
-                    st.error(f&quot;Error configuring API keys: {str(e)}&quot;)
+                    st.error(f"Error configuring API keys: {str(e)}")
             else:
-                st.error(&quot;Please provide both API keys.&quot;)
+                st.error("Please provide both API keys.")
     
     # Document Upload Section
     if st.session_state.api_keys_submitted:
-        st.markdown(&quot;### 📄 Document Upload&quot;)
-        doc_url = st.text_input(&quot;Enter document URL&quot;)
-        doc_name = st.text_input(&quot;Document name (optional)&quot;)
+        st.markdown("### 📄 Document Upload")
+        doc_url = st.text_input("Enter document URL")
+        doc_name = st.text_input("Document name (optional)")
         
         col1, col2 = st.columns([1, 3])
         with col1:
-            upload_mode = st.selectbox(&quot;Upload mode&quot;, [&quot;fast&quot;, &quot;accurate&quot;])
+            upload_mode = st.selectbox("Upload mode", ["fast", "accurate"])
         
-        if st.button(&quot;Upload Document&quot;):
+        if st.button("Upload Document"):
             if doc_url:
                 try:
-                    with st.spinner(&quot;Uploading document...&quot;):
+                    with st.spinner("Uploading document..."):
                         st.session_state.pipeline.upload_document(
                             url=doc_url,
                             name=doc_name if doc_name else None,
@@ -168,29 +171,29 @@ def main():
                         )
                         time.sleep(5)  # Wait for indexing
                         st.session_state.document_uploaded = True
-                        st.success(&quot;Document uploaded and indexed successfully!&quot;)
+                        st.success("Document uploaded and indexed successfully!")
                 except Exception as e:
-                    st.error(f&quot;Error uploading document: {str(e)}&quot;)
+                    st.error(f"Error uploading document: {str(e)}")
             else:
-                st.error(&quot;Please provide a document URL.&quot;)
+                st.error("Please provide a document URL.")
     
     # Query Section
     if st.session_state.document_uploaded:
-        st.markdown(&quot;### 🔍 Query Document&quot;)
-        query = st.text_input(&quot;Enter your query&quot;)
+        st.markdown("### 🔍 Query Document")
+        query = st.text_input("Enter your query")
         
-        if st.button(&quot;Generate Response&quot;):
+        if st.button("Generate Response"):
             if query:
                 try:
-                    with st.spinner(&quot;Generating response...&quot;):
+                    with st.spinner("Generating response..."):
                         response = st.session_state.pipeline.process_query(query)
-                        st.markdown(&quot;### Response:&quot;)
+                        st.markdown("### Response:")
                         st.markdown(response)
                 except Exception as e:
-                    st.error(f&quot;Error generating response: {str(e)}&quot;)
+                    st.error(f"Error generating response: {str(e)}")
             else:
-                st.error(&quot;Please enter a query.&quot;)
+                st.error("Please enter a query.")
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     main()
 ```

@@ -1,3 +1,4 @@
+
 # 场景6：游戏
 
 > 来源：[https://bluefocus.feishu.cn/docx/BagndFOnAoEckTxbJlJcrtzbn5e](https://bluefocus.feishu.cn/docx/BagndFOnAoEckTxbJlJcrtzbn5e)
@@ -6,15 +7,15 @@
 
 按照 Midjourney 的官方文档里的说法，并不一定：
 
-> Prompts can be very simple. Single words (or even an emoji!) will produce an image. Very short prom**pts will rely heavil**y on Midjourney’s default style, so a more descriptive prompt is better for a unique look. However, super-long prompts aren’t always better. Concentrate on the main concepts you want to create.
+> Prompts can be very simple. Single words (or even an emoji!) will produce an image. Very short prompts will rely heavily on Midjourney’s default style, so a more descriptive prompt is better for a unique look. However, super-long prompts aren’t always better. Concentrate on the main concepts you want to create.
 
 但你会发现，好像中文社区分享的 prompt 都非常长，但只要各位仔细观察，或者用翻译软件查一查，你会发现很神奇的事情：
 
-1.  有一些词拼写错误。原因是某书，不支持复制黏贴，导致很多人 OCR prompt，然后识别错误，大家都在搬运 prompt ，导致错误一直传递，这也算是新时代的水印了吧。
+1. 有一些词拼写错误。原因是某书，不支持复制黏贴，导致很多人 OCR prompt，然后识别错误，大家都在搬运 prompt，导致错误一直传递，这也算是新时代的水印了吧。
 
-1.  有一些词非常重复，比如 8k、UHD、Ultra Quality，他们都在说一个事情，就是高清，加多了也不会有叠加作用。
+2. 有一些词非常重复，比如 8k、UHD、Ultra Quality，他们都在说一个事情，就是高清，加多了也不会有叠加作用。
 
-1.  很多词你根本不知道为啥需要，但好像每个人都加了。比如 8K 这些词，你有想过这个词是有必要的吗？是有用的吗？但实际上这些词官方并不推荐使用，这些词甚至对你的图会造成破坏（详见 Midjourney 官方 FAQ 一章）。
+3. 很多词你根本不知道为啥需要，但好像每个人都加了。比如 8K 这些词，你有想过这个词是有必要的吗？是有用的吗？但实际上这些词官方并不推荐使用，这些词甚至对你的图会造成破坏（详见 Midjourney 官方 FAQ 一章）。
 
 如果你看完我的教程，你会发现我讲的例子里，很多图只要很少的 prompt 就能描述清楚，生成的图片也不差。
 
@@ -24,11 +25,9 @@
 
 说到游戏，我最喜欢的风格是像素风，像素风格一般有：
 
-+   8-bit
-
-+   16-bit
-
-+   32-bit
++ 8-bit
++ 16-bit
++ 32-bit
 
 各位都可以自己试试，介绍一个我写的 prompt，最近塞尔达发布了最新作《王国之泪》，很喜欢他们的天空岛的设定，所以用 Midjourney 生成了一个 16-bit pixel art 版本：
 
@@ -76,19 +75,19 @@
 
 从这个表里可以看到，我们发现了三个问题，其中第一个黏土风格问题，跟最后一个问题有关，此时我的建议是：
 
-1.  每次仅修改一个，其余变量不变。
+1. 每次仅修改一个，其余变量不变。
 
-1.  修改完一条，效果符合预期后，再修改下一个。
+2. 修改完一条，效果符合预期后，再修改下一个。
 
-1.  我的经验优先修改主体内容，因为主体有的时候会影响其余的变量。
+3. 我的经验优先修改主体内容，因为主体有的时候会影响其余的变量。
 
-1.  如果想确定这个修改是否具有一致性，或者说是否符合要求，而不是恰巧符合，可以用相同的 prompt 再生成一次。不过因为没生成一次都要花钱，所以这个是可选项。
+4. 如果想确定这个修改是否具有一致性，或者说是否符合要求，而不是恰巧符合，可以用相同的 prompt 再生成一次。不过因为每生成一次都要花钱，所以这个是可选项。
 
 OK，按照以上原则，我们修改一下我们的 prompt，看看生成了什么，的确加了 different types of 后，光剑就多了，问题解决了：
 
 ![](img/be3961f681fafa394e7f7aee74d20faa.png)
 
-然后我们修改下 blender 3d，将其改为 clay render （黏土渲染），我改完之后发现生成的结果（左边四张），好像质感还是差了一点，于是我又试了下保留 3d blender 加 oily 的效果（中间四张），以及 clay render 加 oily 两个一起用（右边四张）。
+然后我们修改下 blender 3d，将其改为 clay render（黏土渲染），我改完之后发现生成的结果（左边四张），好像质感还是差了一点，于是我又试了下保留 3d blender 加 oily 的效果（中间四张），以及 clay render 加 oily 两个一起用（右边四张）。
 
 ![](img/deba579ab481cd06ee471c2b5f509b1c.png)
 

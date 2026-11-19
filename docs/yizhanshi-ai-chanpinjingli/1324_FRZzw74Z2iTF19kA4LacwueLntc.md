@@ -1,3 +1,4 @@
+
 # 使用Cursor创建高级动画交互3D网页前端项目
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/IuhrdJ2rzoSC3rxdTKvcXz2XnEf](https://v11enp9ok1h.feishu.cn/docx/IuhrdJ2rzoSC3rxdTKvcXz2XnEf)
@@ -8,7 +9,7 @@
 
 ![](img/838502d778f8d16aaa7abe8e9e969d14.png)
 
-接下来有两个要点，我们移动到右侧的聊天窗（Command + l快捷键打开）
+接下来有两个要点，我们移动到右侧的聊天窗（`Command + l`快捷键打开）
 
 模式切换为Agent，模型切换成Claude-3.7-sonnet，不需要thinking，就普通模式就好
 
@@ -20,7 +21,7 @@ Agent模式有一个好处，它生成代码后会自动帮你创建文件，并
 
 下一步，就是放入我们最核心的提示词：
 
-### **基础提示词**
+### 基础提示词
 
 ```
 我正在使用 GSAP + ScrollTrigger 开发一个手机官网首页页面，请你以交互设计师 + 动效设计师 + 前端开发者的视角，帮我生成一个可直接用于开发的 HTML 页面原型结构与动画代码，具体要求如下：
@@ -66,13 +67,13 @@ SVG 动画组件要求（核心重点）：
 
 输出完成之后，你会发现原本空白的文件夹已经有一份后缀是.html的文件了。到这一步，我们用Cursor帮我们写代码就算完成了。
 
-如果你不着急分享，想先本地预览一下生成的效果，可以点击左侧文件位置的拓展，我们安装一个名字叫做Live Server的插件
+如果你不着急分享，想先本地预览一下生成的效果，可以点击左侧文件位置的拓展，我们安装一个名字叫做`Live Server`的插件
 
 ![](img/79a7dcf3daddae88501269e16d8c80c7.png)
 
 ![](img/89b7e4537600f3b2dfab24e836fa2394.png)
 
-安装好之后回到文件夹页面，右键我们的html文件，然后点击第一个Open with Live Server，就会自动弹出浏览器，进行预览界面了。
+安装好之后回到文件夹页面，右键我们的html文件，然后点击第一个`Open with Live Server`，就会自动弹出浏览器，进行预览界面了。
 
 ![](img/784858fe9df879cf4e87ed306ddf515e.png)
 

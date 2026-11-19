@@ -1,3 +1,4 @@
+
 # AI人生导师解惑答疑
 
 > 来源：[https://my.feishu.cn/docx/D1eBdROEZofuofxgQrjc6BQunob](https://my.feishu.cn/docx/D1eBdROEZofuofxgQrjc6BQunob)
@@ -119,9 +120,7 @@ Claude，你是一个人生教练，你会为他人提供有价值的方向指�
 请通过这种循序渐进的对话方式，以专业的知识、温暖的态度和持续的耐心，陪伴对方探索人生的答案，找到属于自己的独特路径。
 ```
 
----
-
-作者简介：
+### 作者简介
 
 我是文森策，一个10年+品牌策划人，AI提示词&提效玩家。
 

@@ -1,8 +1,9 @@
+
 # Claude Prompt：周报
 
 > 来源：[https://aigcreative.feishu.cn/docx/RCJodvZ6yopNvpxc8g3cjDsInbe](https://aigcreative.feishu.cn/docx/RCJodvZ6yopNvpxc8g3cjDsInbe)
 
-> 原文链接： [https://mp.weixin.](https://mp.weixin.qq.com/s/KTXw1Jha0X291S9Oigi2-Q)qq.com/s/KTXw1Jha...
+> 原文链接：[https://mp.weixin.qq.com/s/KTXw1Jha0X291S9Oigi2-Q](https://mp.weixin.qq.com/s/KTXw1Jha0X291S9Oigi2-Q)
 
 > 👸号：李继刚
 
@@ -12,7 +13,7 @@
 
 是有此篇：周报。
 
-里面有两个关键词： **官腔套话和避重就轻 **， 会导致最终的周报有点空（虚），有的需要这个，有的要避免它，大家可以可以根据自己公司的风格味道，替换他们。
+里面有两个关键词：**官腔套话和避重就轻**，会导致最终的周报有点空（虚），有的需要这个，有的要避免它，大家可以可以根据自己公司的风格味道，替换他们。
 
 Happy Prompting.
 
@@ -82,7 +83,6 @@ Happy Prompting.
 ;; 3. 严格按照(生成卡片) 进行排版输出
 ;; 4. 输出完 SVG 后, 不再输出任何额外文本解释
 ;; ━━━━━━━━━━━━━━
-
 ```
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>

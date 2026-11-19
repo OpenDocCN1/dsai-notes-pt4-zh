@@ -1,8 +1,9 @@
+
 # 视频 | Sora专区
 
 > 来源：[https://aigclena.feishu.cn/docx/DaocdzPOho03quxKLqdcpXEknmc](https://aigclena.feishu.cn/docx/DaocdzPOho03quxKLqdcpXEknmc)
 
-# sora2
+## sora2
 
 OpenAI 推出 Sora 2：超越 Veo 3，内置购物与版权争议
 
@@ -16,12 +17,11 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 
 [10368000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J1fhb0e4Oo5zVexxoiIc2jUPnB4)
 
-# 网友案例
+## 网友案例
 
 ![](img/4bc6cc74cad0ae02200a3f9630f08c74.png)
 
 [SaveTwitter.Net_VSkiatSKqZT4gkfl_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ZiKqbVQoZokvJqxmL9ec48Kdndb)
-
 
 [SaveTwitter.Net_EtTmzPjtOcnfTvnC_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UXdHbTVh0ouU2Hx2GJfcrkA2nvg)
 
@@ -77,7 +77,6 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 
 [SaveTwitter.Net_mOWOCtdpWSUCJMcM_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KXh3b8vFdoJ6ibxbUwPc0mMwnOf)
 
-
 [SaveTwitter.Net_ievEZwGRipvK-AoG_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WydRb6vy8oD9uNxLBROcmd2Gn0e)
 
 ![](img/c79fe67080e5ebc1e22700f54eebb1dc.png)
@@ -87,7 +86,6 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 ![](img/f7f7f960afb5ae55feecbf189b1296ba.png)
 
 [SaveTwitter.Net_X4MaD62uGjHRquWr_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/BckVbgBS2ofIGCxJlxIcyaYcnpe)
-
 
 [SaveTwitter.Net_cldIKmgSOnx6SaGF_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GkVFbF3pTotNhHxO2qWcxdbHnDg)
 
@@ -115,7 +113,7 @@ OpenAI 推出全面升级的 Sora 2，在音频同步、物理真实感和场景
 
 [SaveTwitter.Net_e3hue1LixGB7Roas_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Uhu4byPZPohy6ExttFNcBYkFncc)
 
-# 同一句词测评
+## 同一句词测评
 
 2025.10.6
 
@@ -169,11 +167,11 @@ vidu效果：
 
 [vidu-video-2980527977101183.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HfYCb4E6voA7CBxkXY6cVt0JnJc)
 
-# 网友案例（提示词）
+## 网友案例（提示词）
 
 来源网络，侵删
 
-## 人像
+### 人像
 
 ![](img/4e1d672092337e2f5022559eae60a2e9.png)
 
@@ -187,6 +185,12 @@ vidu效果：
 
 [SaveTwitter.Net_J0lFGPxIMy3Bb9VS_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TN8QbsA2XoEb4lxltiIcda3an5e)
 
+
+
+# AI 视频提示词案例集
+
+## 奔驰广告提示词
+
 [@midisteadygo](https://x.com/midisteadygo)
 
 ![](img/85454d5e5cdd5ee6ee89aed578b596a3.png)
@@ -195,35 +199,35 @@ vidu效果：
 
 奔驰广告大片反推提示词来自 [@songguoxiansen](https://x.com/songguoxiansen)
 
-[场景一]
+### 场景一
 
 特写镜头： 一辆黑色的奔驰G级车，雨滴从标志性的格栅上滑落，背景是夜晚模糊的城市灯光。
 
-[场景二]
+### 场景二
 
 动态镜头： 车辆在湿滑的城市街道上平稳行驶，展示其优雅的车身线条和亮起的圆形LED日间行车灯。
 
-[场景三]
+### 场景三
 
 内部特写： 一位身着西装的男士手握方向盘，佩戴着手表，车内奢华的细节，包括钻石缝线的黑色真皮座椅和高清数字仪表盘。
 
-[场景四]
+### 场景四
 
 航拍/远景镜头： 车辆在壮丽的山间公路上驰骋，道路蜿蜒，景色开阔。
 
-[场景五]
+### 场景五
 
 慢动作特写： 车轮碾过浅水，激起水花，展现其强大的性能和红色刹车卡钳。
 
-[场景六]
+### 场景六
 
 追逐镜头： 车辆在日落时分的沿海公路上行驶，夕阳的金色光芒洒在车身上。
 
-[场景七]
+### 场景七
 
 人物镜头： 这位身着西装的男士展现出自信和掌控力。
 
-[最终场景]
+### 最终场景
 
 静态广角： 车辆停在悬崖边的观景台，背景是壮丽的日落海景，画面下方出现文字：“The new G-Class. Icon redefined.”
 
@@ -237,6 +241,8 @@ vidu效果：
 
 [10368000 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/A9wpbFrLzoZjECxfdl9ccL1VnEf)
 
+## Love Island 提示词
+
 Prompt:
 
 Love Island reveal scene. A young woman sits on a plush villa sofa during a tense “Movie Night” scene. She watches a large TV screen showing grainy CCTV-style footage: Real-life Ronald McDonald, dashing into a room with real-life Wendy. The audience and woman are shocked
@@ -249,6 +255,8 @@ Love Island reveal scene. A young woman sits on a plush villa sofa during a tens
 
 [2176000 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QuLab8U2ooUHQoxXBIkcnyoCnyc)
 
+## Einstein 提示词
+
 Albert Einstein 在课上讲授地球为什么是平的。真实录像。
 
 ![](img/302a0046b7f8ad968f572a6d305464ec.png)
@@ -258,6 +266,8 @@ Albert Einstein 在课上讲授地球为什么是平的。真实录像。
 ![](img/b77e6a7200cca529f9f078d940340f23.png)
 
 [SaveTwitter.Net_ncKhiR05jeyeok8N_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QBC5bP7IYoI5NGx6UjucUs0Gnxc)
+
+## 日本辣妹 DJ 提示词
 
 [@aichan20050605](https://x.com/aichan20050605)
 
@@ -270,7 +280,6 @@ DJ: 身材纤瘦如模特，银色隐形眼镜，马尾发型，美甲。紧身�
 场景: 海滩节日会场。前景有 DJ 唱盘
 
 ## 广告唱跳
-
 
 [SaveTwitter.Net_ievEZwGRipvK-AoG_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RIzXbuP6xoXt3uxFBAUcdA88nnb)
 
@@ -316,8 +325,9 @@ Make a professional ad for (your product, object, car,...)
 
 [SaveTwitter.Net_VSkiatSKqZT4gkfl_(1280p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GHc5bpJYcobBRUxTTD7ctTtUnmd)
 
-
 [2176000 (2).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HGhjbJQ4MoVDL9xr5HicQaMFnlf)
+
+## 生物学家随身摄像机
 
 生物学家的随身摄像机视角，红外黑白画面，午夜的松林里：饵料盘嗡嗡作响；一只乌鸦与驯鹿的混合生物栖息着，它的鹿角擦过松针，狼吞虎咽地吃下浆果，然后滑翔飞走。手持拍摄，雨滴打在麦克风上。
 
@@ -333,12 +343,11 @@ Make a professional ad for (your product, object, car,...)
 
 ## 动物
 
-
 [2176000 (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Zc3fbi6PQoDJeax6eFZcJW12nJf)
 
-一只猫身上的 gopro hero 运动相机。
+一只猫身上的 `gopro hero` 运动相机。
 
-第一人称视角，你是一只猫，正准备和一只大老鼠干架。真实的 gopro 录像画面。
+第一人称视角，你是一只猫，正准备和一只大老鼠干架。真实的 `gopro` 录像画面。
 
 ![](img/c3cd0ca21efefdab03188408b70b664c.png)
 
@@ -349,7 +358,6 @@ Make a professional ad for (your product, object, car,...)
 柴犬散步 ，柴犬视角
 
 ## 卡通动漫
-
 
 [SaveTwitter.Net_n6_hgCVP_ADhtrjy_(704p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Rq6gbcEhxo9ssyxwfmacUnwgnFO)
 
@@ -391,7 +399,7 @@ Make a professional ad for (your product, object, car,...)
 
 [832000.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Hv0ZbKisAozW7Jxo9cfcXZ7ZnEf)
 
-# sora2提示词
+## sora2提示词
 
 ![](img/363d7320a16c7e415265f1d1de5f4785.png)
 
@@ -403,88 +411,82 @@ Make a professional ad for (your product, object, car,...)
 
 本文一次讲清：为何 v2.0 比通用提示更“可制作”，以及如何把它接入你的工作流。
 
-1/ 核心结论
+### 1/ 核心结论
 
 v2.0 把“聊天写词”升级为“摄影师简报”：镜头级可控、风格可锚定、Remix 可复现，显著降低玄学反复与风格漂移。
 
-2/ 设计出发点（参考官方Sora最新提示词）
+### 2/ 设计出发点（参考官方Sora最新提示词）
 
 参考 OpenAI Sora 的提示构成思路，用可见结果而非形容词：主体→动作→相机→光色→节拍→负面抑制→质检门槛。
 
-3/ 角色定位
+### 3/ 角色定位
 
 「Sora 2 创意总监」= 把用户愿景翻译成可拍摄的镜头语言：给“从未看过分镜的摄影师”也能执行的简报；中文/英文镜像回复。
 
-4/ 默认与边界
+### 4/ 默认与边界
 
 [①时长：](https://x.com/berryxia_ai/status/1975882775338397945?t=556)默认 10s，推荐 2×4s 或 3×3–4s 的镜头块
 
 分辨率/比例：1920×1080（16:9），竖屏 9:16
 
-②单位统一：秒（s）③不虚构 Sora2 不具备的能力
 
-5/ 结构指南（解决玄学输出）
 
-①每镜头只保留一个主体动作 + 一种相机运动
+# sora
 
-先锚定风格语（如 neo-noir / 16mm B&W / IMAX aerial），跨镜头复用同词
+②单位统一：秒（s）
 
-②用可测节拍（步数/停顿/切点）代替“电影感/唯美”类空词
+③不虚构 Sora2 不具备的能力
 
-③对白与场景内音效独立标注
+## 5/ 结构指南（解决玄学输出）
 
-6/ 协作流
+### ①每镜头只保留一个主体动作 + 一种相机运动
+
+先锚定风格语（如 neo- noir / 16mm B&W / IMAX aerial），跨镜头复用同词
+
+### ②用可测节拍（步数/停顿/切点）代替“电影感/唯美”类空词
+
+### ③对白与场景内音效独立标注
+
+## 6/ 协作流
 
 发现阶段每轮：1 句肯定 + 1 个聚焦追问（情绪/风格/关键瞬间/相机/光线）
 
 Skip 快速通道：你说“直接成片”，即用行业默认自动出稿
 
-7/ 质检与负面设计
+## 7/ 质检与负面设计
 
-cut_points 与时间线无缺口/不重叠；剪辑误差 ≤ 0.02s
+`cut_points` 与时间线无缺口/不重叠；剪辑误差 ≤ 0.02s
 
 抑制伪影：面部/手指漂移、纹理爬行、色带、rolling-shutter、重复帧、HUD 透叠错位
 
 连续性：光向/服化道/道具位置跨镜一致
 
-8/ Remix 策略（单变量修改）
+## 8/ Remix 策略（单变量修改）
 
 只改一个变量（如“保留光线与机位，只把色板换成 teal-orange”），成功后再加复杂度；避免“一改全改”导致风格坍塌。
 
-9/ 最小可用 JSON （Copy-Go）
+## 9/ 最小可用 JSON （Copy-Go）
 
+```
 {
-
-"prompt": "Shot1: dusk alley, lone cyclist passes neon shopfront; slow dolly-in; puddle reflection ripples; Shot2: close-up of wheel droplets as neon flickers, brief pause then roll-out.",
-
-"style": "cinematic neo-noir",
-
-"camera_movement": "slow dolly-in then gentle roll-out",
-
-"lighting": "soft backlight with practical neons, wet surface speculars",
-
-"duration": 10,
-
-"aspect_ratio": "16:9",
-
-"mood": "pensive",
-
-"additional_parameters": {
-
-"motion_intensity": "medium",
-
-"color_palette": "teal-orange with magenta accents"
-
+  "prompt": "Shot1: dusk alley, lone cyclist passes neon shopfront; slow dolly-in; puddle reflection ripples; Shot2: close-up of wheel droplets as neon flickers, brief pause then roll-out.",
+  "style": "cinematic neo-noir",
+  "camera_movement": "slow dolly-in then gentle roll-out",
+  "lighting": "soft backlight with practical neons, wet surface speculars",
+  "duration": 10,
+  "aspect_ratio": "16:9",
+  "mood": "pensive",
+  "additional_parameters": {
+    "motion_intensity": "medium",
+    "color_palette": "teal-orange with magenta accents"
+  }
 }
-
-}
+```
 
 可选增强：高级分镜表 + 制作备注（镜头起止秒、镜头平台、动作节拍、光线/色板锚点、对话/场景内音），用于团队对齐与复刻。
 
-结论
+## 结论
 
 v2.0 不是“更会形容的提示词”，而是可制作的镜头规范：把创意转成相机与光线的语言，把玄学变成工艺。
 
 参考了官方 Sora 提示范式的结构与边界，目标是在真实产线上“稳、准、可复制”。
-
-# sora

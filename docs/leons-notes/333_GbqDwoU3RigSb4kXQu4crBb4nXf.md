@@ -1,3 +1,4 @@
+
 # Brian Chesky on Launching Airbnb and the Challenges of Scale
 
 > 来源：[https://leonzhang.feishu.cn/docx/Ptt8d8LKgo8PRqxMjk5cbtt9nhh](https://leonzhang.feishu.cn/docx/Ptt8d8LKgo8PRqxMjk5cbtt9nhh)

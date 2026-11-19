@@ -1,14 +1,13 @@
+
 # 2023-07-08【交通银行】刘珺：站在AI新时代拥抱金融创新
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/ZHged4rteobRDnxOHTccUbrPniR](https://xuqiwei1986.feishu.cn/docx/ZHged4rteobRDnxOHTccUbrPniR)
-
-> 🔗 原文链接： h[ttps://finance.sin](https://finance.sina.com.cn/jjxw/2023-07-08/doc-imyzystp3802285.shtml)a.com.cn/jjxw/20...
-
 >
+> 🔗 原文链接：https://finance.sina.com.cn/jjxw/2023-07-08/doc-imyzystp3802285.shtml
 
 转自：新华财经
 
-7月8日，2023世界人工智能大会——“新[一代AI•](https://finance.sina.com.cn/realstock/company/sh601328/nc.shtml)新时代金融”论坛在上海举行。 交通银行 ( 5.470 , -0.07 , -1.26% ) 行长刘珺在致辞中表示，站在AI新时代，银行作为传统金融机构正处在十字路口，银行业急切需要思考如何更好地拥抱以ChatGPT为代表的通用型人工智能。交通银行将持续加大AI及科技领域资源投入，着力加强科技与金融的融合发展。
+7月8日，2023世界人工智能大会——“新[一代AI•](https://finance.sina.com.cn/realstock/company/sh601328/nc.shtml)新时代金融”论坛在上海举行。交通银行 (5.470, -0.07, -1.26%) 行长刘珺在致辞中表示，站在AI新时代，银行作为传统金融机构正处在十字路口，银行业急切需要思考如何更好地拥抱以ChatGPT为代表的通用型人工智能。交通银行将持续加大AI及科技领域资源投入，着力加强科技与金融的融合发展。
 
 ![](img/f49bacd632af3d179b0d0974524dd5c9.png)
 

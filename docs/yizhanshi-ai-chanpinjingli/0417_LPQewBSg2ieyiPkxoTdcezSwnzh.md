@@ -1,3 +1,4 @@
+
 # TensorFlow 核心概念
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/O3JudLX2RozvMpxjM9TcCRNanbc](https://v11enp9ok1h.feishu.cn/docx/O3JudLX2RozvMpxjM9TcCRNanbc)
@@ -6,13 +7,13 @@ TensorFlow 的名字来源于其处理数据的核心结构 - 张量（Tensor）
 
 TensorFlow 是一个端到端的开源机器学习平台，它的核心优势在于：
 
-+   **灵活的计算图模型**：支持动态图和静态图两种模式
++ **灵活的计算图模型**：支持动态图和静态图两种模式
 
-+   **跨平台部署能力**：可在 CPU、GPU、TPU 和移动设备上运行
++ **跨平台部署能力**：可在 CPU、GPU、TPU 和移动设备上运行
 
-+   **丰富的生态系统**：包含 TensorFlow Lite（移动端）、TensorFlow.js（浏览器端）等子项目
++ **丰富的生态系统**：包含 `TensorFlow Lite`（移动端）、`TensorFlow.js`（浏览器端）等子项目
 
-+   **生产就绪**：提供从研究到生产的完整工具链
++ **生产就绪**：提供从研究到生产的完整工具链
 
 ---
 
@@ -20,25 +21,25 @@ TensorFlow 是一个端到端的开源机器学习平台，它的核心优势在
 
 ### 张量（Tensor）
 
-**张量是 **TensorFlow 中最基本的数据结构，可以理解为多维数组的泛化概念。
+**张量**是 TensorFlow 中最基本的数据结构，可以理解为多维数组的泛化概念。
 
 从数学角度来说，张量是一个可以用来表示在一些矢量、标量和其他张量之间的线性关系的多线性函数。
 
 **简单类比**：
 
-+   **标量（0维张量）**：一个数字，如 5
++ **标量（0维张量）**：一个数字，如 5
 
-+   **向量（1维张量）**：一列数字，如 [1, 2, 3, 4]
++ **向量（1维张量）**：一列数字，如 [1, 2, 3, 4]
 
-+   **矩阵（2维张量）**：数字的表格，如 [[1, 2], [3, 4]]
++ **矩阵（2维张量）**：数字的表格，如 [[1, 2], [3, 4]]
 
-+   **3维张量**：数字的立方体，如彩色图像（高×宽×颜色通道）
++ **3维张量**：数字的立方体，如彩色图像（高×宽×颜色通道）
 
-+   **更高维张量**：例如视频数据（时间×高×宽×颜色通道）
++ **更高维张量**：例如视频数据（时间×高×宽×颜色通道）
 
 ### 张量的关键属性
 
-## 实例
+#### 实例
 
 ```
 # 示例张量
@@ -47,31 +48,31 @@ import tensorflow as tf
 # 创建一个 2x3 的矩阵张量
 tensor = tf.constant([[1, 2, 3], [4, 5, 6]])
 
-print(f&quot;形状 (Shape): {tensor.shape}&quot;)        # (2, 3)
-print(f&quot;数据类型 (Dtype): {tensor.dtype}&quot;)    # int32
-print(f&quot;维度 (Rank): {tf.rank(tensor)}&quot;)      # 2 
-print(f&quot;设备 (Device): {tensor.device}&quot;)      # /job:localhost/replica:0/task:0/device:CPU:0
+print(f"形状 (Shape): {tensor.shape}")        # (2, 3)
+print(f"数据类型 (Dtype): {tensor.dtype}")    # int32
+print(f"维度 (Rank): {tf.rank(tensor)}")      # 2 
+print(f"设备 (Device): {tensor.device}")      # /job:localhost/replica:0/task:0/device:CPU:0
 ```
 
 **关键属性解释**：
 
-1.  **形状（Shape）**：描述每个维度的大小
+1. **形状（Shape）**：描述每个维度的大小
 
 +   (2, 3) 表示 2 行 3 列的矩阵
 
 +   (224, 224, 3) 表示 224×224 像素的 RGB 图像
 
-1.  **数据类型（Dtype）**：张量中数据的类型
+1. **数据类型（Dtype）**：张量中数据的类型
 
-+   tf.float32：32位浮点数（最常用）
++   `tf.float32`：32位浮点数（最常用）
 
-+   tf.int32：32位整数
++   `tf.int32`：32位整数
 
-+   tf.bool：布尔值
++   `tf.bool`：布尔值
 
-+   tf.string：字符串
++   `tf.string`：字符串
 
-1.  **维度/秩（Rank）**：张量的维数
+1. **维度/秩（Rank）**：张量的维数
 
 +   标量：秩为 0
 
@@ -79,11 +80,11 @@ print(f&quot;设备 (Device): {tensor.device}&quot;)      # /job:localhost/repli
 
 +   矩阵：秩为 2
 
-1.  **设备（Device）**：张量存储的设备位置
+1. **设备（Device）**：张量存储的设备位置
 
-+   CPU：/device:CPU:0
++   CPU：`/device:CPU:0`
 
-+   GPU：/device:GPU:0
++   GPU：`/device:GPU:0`
 
 ### 张量在机器学习中的意义
 
@@ -99,17 +100,17 @@ print(f&quot;设备 (Device): {tensor.device}&quot;)      # /job:localhost/repli
 
 **实际例子**：
 
-+   **图像分类**：输入张量形状 (batch_size, height, width, channels)
++   **图像分类**：输入张量形状 (`batch_size`, `height`, `width`, `channels`)
 
-+   **文本处理**：输入张量形状 (batch_size, sequence_length)
++   **文本处理**：输入张量形状 (`batch_size`, `sequence_length`)
 
-+   **时间序列**：输入张量形状 (batch_size, time_steps, features)
++   **时间序列**：输入张量形状 (`batch_size`, `time_steps`, `features`)
 
 ---
 
 ## 计算图（Computational Graph）
 
-计算图是一种用**节点**和**边**来表示数学运算的图结构：
+计算图是一种用 **节点** 和 **边** 来表示数学运算的图结构：
 
 +   **节点（Node）**：代表数学运算（加法、乘法、激活函数等）
 
@@ -131,25 +132,25 @@ w ────────────┘
 
 ### 计算图的优势
 
-1.  **自动微分**：
+1. **自动微分**：
 
 +   可以自动计算梯度，实现反向传播
 
 +   不需要手动推导复杂的梯度公式
 
-1.  **优化机会**：
+1. **优化机会**：
 
 +   编译时优化：合并运算、消除冗余
 
 +   运行时优化：内存复用、并行计算
 
-1.  **可视化调试**：
+1. **可视化调试**：
 
-+   使用 TensorBoard 可视化模型结构
++   使用 `TensorBoard` 可视化模型结构
 
 +   便于理解和调试复杂模型
 
-1.  **分布式计算**：
+1. **分布式计算**：
 
 +   可以将图的不同部分分配到不同设备
 
@@ -157,9 +158,9 @@ w ────────────┘
 
 ### 静态图 vs 动态图
 
-TensorFlow 1.x（静态图）：
+#### TensorFlow 1.x（静态图）
 
-## 实例
+##### 实例
 
 ```
 # TensorFlow 1.x 风格（仅作理解，不推荐使用）
@@ -178,9 +179,9 @@ with tf.Session() as sess:
     result = sess.run(y, feed_dict={x: input_data})
 ```
 
-TensorFlow 2.x（动态图/即时执行）：
+#### TensorFlow 2.x（动态图/即时执行）
 
-## 实例
+##### 实例
 
 ```
 # TensorFlow 2.x 风格（推荐）
@@ -195,17 +196,17 @@ y = tf.matmul(x, W) + b
 print(y)  # 立即得到结果
 ```
 
-## 会话（Session）与即时执行（Eager Execution）
+### 会话（Session）与即时执行（Eager Execution）
 
-### TensorFlow 1.x 的会话机制
+#### TensorFlow 1.x 的会话机制
 
 在 TensorFlow 1.x 中，计算图的构建和执行是分离的：
 
 **两阶段过程**：
 
-1.  **构建阶段**：定义计算图，但不执行任何计算
+1. **构建阶段**：定义计算图，但不执行任何计算
 
-1.  **执行阶段**：在会话中运行图，获得结果
+1. **执行阶段**：在会话中运行图，获得结果
 
 **会话的作用**：
 
@@ -215,7 +216,7 @@ print(y)  # 立即得到结果
 
 +   提供图执行的上下文
 
-### 3.2 TensorFlow 2.x 的即时执行
+#### 3.2 TensorFlow 2.x 的即时执行
 
 TensorFlow 2.x 默认启用即时执行，让 TensorFlow 变得更加 "Pythonic"：
 
@@ -229,7 +230,7 @@ TensorFlow 2.x 默认启用即时执行，让 TensorFlow 变得更加 "Pythonic"
 
 **对比示例**：
 
-## 实例
+##### 实例
 
 ```
 # TensorFlow 2.x - 即时执行
@@ -238,10 +239,10 @@ import tensorflow as tf
 a = tf.constant(2.0)
 b = tf.constant(3.0)
 c = a + b
-print(f&quot;结果: {c}&quot;)  # 结果: 5.0
+print(f"结果: {c}")  # 结果: 5.0
 
 # 可以直接访问值
-print(f&quot;c 的 numpy 值: {c.numpy()}&quot;)  # c 的 numpy 值: 5.0
+print(f"c 的 numpy 值: {c.numpy()}")  # c 的 numpy 值: 5.0
 ```
 
 ### 图模式 vs 即时执行模式
@@ -264,7 +265,7 @@ print(f&quot;c 的 numpy 值: {c.numpy()}&quot;)  # c 的 numpy 值: 5.0
 
 **切换到图模式**：
 
-## 实例
+##### 实例
 
 ```
 @tf.function
@@ -281,7 +282,7 @@ result = compute_function(tf.constant(2.0), tf.constant(3.0))
 
 常量是**不可变**的张量，一旦创建就不能修改：
 
-## 实例
+#### 实例
 
 ```
 # 创建常量
@@ -305,33 +306,33 @@ print(scalar_const)  # tf.Tensor(3.14, shape=(), dtype=float32)
 
 变量是**可变**的张量，通常用来存储模型参数：
 
-## 实例
+#### 实例
 
 ```
 # 创建变量
 weight = tf.Variable(tf.random.normal([2, 3]))
 bias = tf.Variable(tf.zeros([3]))
 
-print(f&quot;初始权重:\n{weight}&quot;)
+print(f"初始权重:\n{weight}")
 
 # 修改变量的值
 weight.assign(tf.ones([2, 3]))
-print(f&quot;修改后权重:\n{weight}&quot;)
+print(f"修改后权重:\n{weight}")
 
 # 部分更新
 weight[0, 0].assign(5.0)
-print(f&quot;部分更新后:\n{weight}&quot;)
+print(f"部分更新后:\n{weight}")
 ```
 
 **变量的关键特性**：
 
-1.  **状态保持**：在训练过程中保持状态
+1. **状态保持**：在训练过程中保持状态
 
-1.  **梯度跟踪**：可以计算相对于变量的梯度
+1. **梯度跟踪**：可以计算相对于变量的梯度
 
-1.  **可优化**：可以被优化算法更新
+1. **可优化**：可以被优化算法更新
 
-1.  **可保存**：可以保存到检查点文件
+1. **可保存**：可以保存到检查点文件
 
 ### 变量 vs 常量的使用场景
 
@@ -341,7 +342,7 @@ print(f&quot;部分更新后:\n{weight}&quot;)
 
 数据在计算图中从输入节点流向输出节点的过程：
 
-## 实例
+#### 实例
 
 ```
 # 简单的前向传播示例
@@ -360,14 +361,14 @@ b2 = tf.Variable(tf.zeros([1]))
 hidden = tf.nn.relu(tf.matmul(x, W1) + b1)  # 隐层
 output = tf.matmul(hidden, W2) + b2         # 输出层
 
-print(f&quot;最终输出: {output}&quot;)
+print(f"最终输出: {output}")
 ```
 
 ### 自动微分（Automatic Differentiation）
 
-TensorFlow 使用 **GradientTape** 来记录运算并自动计算梯度：
+TensorFlow 使用 `GradientTape` 来记录运算并自动计算梯度：
 
-## 实例
+#### 实例
 
 ```
 # 自动微分示例
@@ -379,20 +380,20 @@ with tf.GradientTape() as tape:
 
 # 计算 dy/dx
 gradient = tape.gradient(y, x)
-print(f&quot;当 x=3 时，dy/dx = {gradient}&quot;)  # 应该是 2x + 2 = 8
+print(f"当 x=3 时，dy/dx = {gradient}")  # 应该是 2x + 2 = 8
 ```
 
-radientTape 的工作原理：
+### radientTape 的工作原理
 
-1.  **记录运算**：tape 记录所有在其上下文中的运算
+1. **记录运算**：`tape` 记录所有在其上下文中的运算
 
-1.  **构建反向图**：创建用于梯度计算的反向计算图
+1. **构建反向图**：创建用于梯度计算的反向计算图
 
-1.  **计算梯度**：使用链式法则计算梯度
+1. **计算梯度**：使用链式法则计算梯度
 
 ### 训练循环中的概念整合
 
-## 实例
+#### 实例
 
 ```
 # 完整的训练步骤示例
@@ -400,7 +401,7 @@ import tensorflow as tf
 
 # 模型和数据
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(10, activation=&#x27;relu&#x27;),
+    tf.keras.layers.Dense(10, activation='relu'),
     tf.keras.layers.Dense(1)
 ])
 
@@ -423,7 +424,7 @@ def train_step(x, y):
 # 执行训练
 for epoch in range(10):
     loss = train_step(x_train, y_train)
-    print(f&quot;Epoch {epoch}: Loss = {loss:.4f}&quot;)
+    print(f"Epoch {epoch}: Loss = {loss:.4f}")
 ```
 
 ## 核心概念总结

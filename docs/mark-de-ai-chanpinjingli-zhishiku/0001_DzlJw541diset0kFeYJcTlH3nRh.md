@@ -1,14 +1,14 @@
+
 # 全栈产品经理知识库
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Hd1Vd5kv3oYrgsxcci0cnAFGnOf](https://qqs7y1hozd1.feishu.cn/docx/Hd1Vd5kv3oYrgsxcci0cnAFGnOf)
 
-# ✅ **转行入门必备**
+## ✅ 转行入门必备
 
-> 这个模块主要对**产品经理、互联网**建立基本的认知，同时也会以串讲、知识地图的形式进行全局科普
+> 这个模块主要对产品经理、互联网建立基本的认知，同时也会以串讲、知识地图的形式进行全局科普
+> 需要用PC浏览器打开，手机端有些文件表格无法显示
 
-> **需要用PC浏览器打开，手机****端****有些文件表格无法显示**
-
-## 需求分析及PRD撰写
+### 需求分析及PRD撰写
 
 [PRD脱敏文档「模板1」](https://qqs7y1hozd1.feishu.cn/wiki/JRVZwWll9i1dx8kHjDzcMGVJngg)
 
@@ -30,7 +30,7 @@
 
 [用 Gemini 3 做产品设计](https://qqs7y1hozd1.feishu.cn/wiki/DZxtwEomVivOWXkRRYQcnsS4nK3)
 
-## 需求分析全流程SOP
+### 需求分析全流程SOP
 
 [需求辩伪](https://qqs7y1hozd1.feishu.cn/wiki/RRfMwCLRLiGfvTkA5idc0Lh4nwb)
 
@@ -64,7 +64,7 @@
 
 [AI产品经理必备的产品信息架构图.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CiIDbgMltoFiGixQ0M6c8sKMnJb)
 
-## 数据埋点
+### 数据埋点
 
 [数据埋点方法](https://qqs7y1hozd1.feishu.cn/wiki/HR8Fws17MirjWvkBbi7cty6bnDc)
 
@@ -100,10 +100,9 @@
 
 ---
 
-# ✅ 竞品分析
+## ✅ 竞品分析
 
-> **互联网人、产品经理最常用**的基础技能，竞品分析，做好竞品分析才能抄的明白
-
+> 互联网人、产品经理最常用的基础技能，竞品分析，做好竞品分析才能抄的明白
 > 需要用PC浏览器打开，手机有些文件表格无法显示
 
 多维表格（OC1kbEF9HayAzXsxhczcBExvn3c_tbluGzI2iApbdvAt）
@@ -114,40 +113,36 @@
 
 ---
 
-# ✅ 用户调研
+## ✅ 用户调研
 
-> **知用户所想，能站在用户的角度**思考，用户说的和想要的往往是两回事，这就比较考验用户调研的基本功了
-
+> 知用户所想，能站在用户的角度思考，用户说的和想要的往往是两回事，这就比较考验用户调研的基本功了
 > 需要用PC浏览器打开，手机有些文件表格无法显示
 
 ---
 
-# ✅ 产品设计
+## ✅ 产品设计
 
-> **工具技能，大家都会，**但产品设计拼的是解决方案能不能拿结果，不是谁的流程图原型画的完善漂亮
-
+> 工具技能，大家都会，但产品设计拼的是解决方案能不能拿结果，不是谁的流程图原型画的完善漂亮
 > 需要用PC浏览器打开，手机有些文件表格无法显示
 
 多维表格（OC1kbEF9HayAzXsxhczcBExvn3c_tblyNgAmMpSONNWT）
 
 ---
 
-# ✅ **Axure原型库**
+## ✅ Axure原型库
 
-## 原型库行业概览
-
+### 原型库行业概览
 
 ![](img/bc5fd4f3b9e50844ae84d4eb53896094.png)
 
-## **购买全套原型库说明**
+### 购买全套原型库说明
 
-> 说明：整套原型库总共是600+份，包含全行业的原型库（为防止倒卖，我们设置一点点门槛，谢谢您)
+> 说明：整套原型库总共是600+份，包含全行业的原型库（为防止倒卖，我们设置一点点门槛，谢谢您）
+> 价格：29元，可解锁并下载600+份全部原型库
 
-> **价****格****：****29元**，可解锁并下载600+份全部原型库
+### 解锁并下载链接：[全行业600+份原型库](https://v11enp9ok1h.feishu.cn/wiki/Hu6FwzWwliWUn1kqfpOcw1GqnIh?from=from_copylink)
 
-## **解锁并下载链接：**[全行业600+份原型库](https://v11enp9ok1h.feishu.cn/wiki/Hu6FwzWwliWUn1kqfpOcw1GqnIh?from=from_copylink)
-
-## 600+份原型库详细列表（**可下载**）
+### 600+份原型库详细列表（可下载）
 
 ![](img/0b80db32125c24b2202546a8bb6c437d.png)
 
@@ -179,25 +174,23 @@
 
 ---
 
-# ✅ 项目管理
+## ✅ 项目管理
 
 > 工作中掉链子的除了自己，那就是其他协作部门了，管理好跟自己没汇报关系的同事进度，这就是项目管理
-
 > 需要用PC浏览器打开，手机有些文件表格无法显示
 
-# ✅ AI产品经理面经
+## ✅ AI产品经理面经
 
 多维表格（OC1kbEF9HayAzXsxhczcBExvn3c_tblAtOg0ew3OV1sj）
 
-# ✅ 简历模板
+## ✅ 简历模板
 
 > 搞清楚了招聘方眼中的优秀候选人，给自己简历润色的时候，才能不断贴近这个标准
-
 > 需要用PC浏览器打开，手机有些文件表格无法显示
 
 ---
 
-# ✅ 产品经理面试题汇总
+## ✅ 产品经理面试题汇总
 
 ![](img/2d7df6db3e49b4e50a236e1abd1ffb47.png)
 
@@ -207,12 +200,9 @@
 
 [产品经理面试分类问题及回答汇总（100个）.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XNPgb1I5qouEW5xl8gEcxUysnKb)
 
-
 [产品经理 30 天速成宝典.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EehvbSngxoED6Gx14YFclItSnsh)
 
-
 [互联网产品经理面试真题参考.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/G2BGbVzmZoCOJvxnrzyc8VgmnGb)
-
 
 [产品分析合集.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WNXgbf6fZouYJAxaOPNcgmkunNb)
 
@@ -226,10 +216,10 @@
 
 ---
 
-☎️   联 系 我 们
+## ☎️ 联系我们
 
-**课程学习：**[AI产品经理特训班-学习大纲（148课时）](https://v11enp9ok1h.feishu.cn/wiki/OgZ2wWPpHiSfhBk2aGMcissNnbc?from=from_copylink)
+课程学习：[AI产品经理特训班-学习大纲（148课时）](https://v11enp9ok1h.feishu.cn/wiki/OgZ2wWPpHiSfhBk2aGMcissNnbc?from=from_copylink)
 
-**📕：**[Alexe的AI产品进阶](https://www.xiaohongshu.com/user/profile/6563f42a000000001000b314?xhsshare=CopyLink&appuid=6563f42a000000001000b314&apptime=1732951637&share_id=193bce27e5a64838b57d1cd994010c7f)
+📕：[Alexe的AI产品进阶](https://www.xiaohongshu.com/user/profile/6563f42a000000001000b314?xhsshare=CopyLink&appuid=6563f42a000000001000b314&apptime=1732951637&share_id=193bce27e5a64838b57d1cd994010c7f)
 
 ![](img/5b027d722c8425e8fb3ebb24756f8549.png)

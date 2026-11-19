@@ -1,98 +1,84 @@
+
 # Skills配置选项
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/MpUYdTty3oXebdxpp9Tc4Xd0nCc](https://qqs7y1hozd1.feishu.cn/docx/MpUYdTty3oXebdxpp9Tc4Xd0nCc)
 
 ## SKILL.md 元数据配置
 
-Skills 的配置主要通过 SKILL.md 文件的 YAML 前置元数据来实现。本节详细介绍各种配置选项及其使用方法。
+Skills 的配置主要通过 `SKILL.md` 文件的 YAML 前置元数据来实现。本节详细介绍各种配置选项及其使用方法。
 
-## 核心元数据字段
+### 核心元数据字段
 
-### 必需字段
+#### 必需字段
 
-#### name
+##### name
 
 ```
 name: my-skill
 ```
 
-+   类型: 字符串
++ 类型: 字符串
++ 长度: 1-64字符
++ 格式: 小写字母、数字和连字符
++ 约束: 不以连字符开头/结尾，无连续连字符
++ 作用: 唯一标识符，用于引用和组织
 
-+   长度: 1-64字符
-
-+   格式: 小写字母、数字和连字符
-
-+   约束: 不以连字符开头/结尾，无连续连字符
-
-+   作用: 唯一标识符，用于引用和组织
-
-#### description
+##### description
 
 ```
 description: Extract text and tables from PDF files, fill forms, merge documents. Use when working with PDF files, forms, or document extraction.
 ```
 
-+   类型: 字符串
++ 类型: 字符串
++ 长度: 1-1024字符
++ 作用: 描述功能和使用时机，帮助 AI 发现
++ 最佳实践: 包含关键词，说明适用场景
 
-+   长度: 1-1024字符
+#### 可选字段
 
-+   作用: 描述功能和使用时机，帮助 AI 发现
-
-+   最佳实践: 包含关键词，说明适用场景
-
-### 可选字段
-
-#### license
+##### license
 
 ```
 license: Apache-2.0
 ```
 
-+   作用: 指定许可证信息
++ 作用: 指定许可证信息
++ 常见值: Apache-2.0, MIT, BSD, Proprietary
++ 建议: 使用标准许可证名称或许可证文件路径
 
-+   常见值: Apache-2.0, MIT, BSD, Proprietary
-
-+   建议: 使用标准许可证名称或许可证文件路径
-
-#### compatibility
+##### compatibility
 
 ```
 compatibility: Designed for Claude Code (or similar products)
 ```
 
-+   作用: 说明环境要求和兼容性
++ 作用: 说明环境要求和兼容性
++ 内容: 产品名称、系统要求、网络访问等
++ 长度: 最多500字符
 
-+   内容: 产品名称、系统要求、网络访问等
-
-+   长度: 最多500字符
-
-#### metadata
+##### metadata
 
 ```
 metadata:
-  author: example-org
-  version: &quot;1.0&quot;
-  tags: [&quot;pdf&quot;, &quot;text-extraction&quot;, &quot;forms&quot;]
-  homepage: &quot;https://github.com/example/my-skill&quot;
+  author: "example-org"
+  version: "1.0"
+  tags: ["pdf", "text-extraction", "forms"]
+  homepage: "https://github.com/example/my-skill"
 ```
 
-+   作用: 存储额外元数据
++ 作用: 存储额外元数据
++ 结构: 键值对，支持嵌套
++ 用途: 作者信息、版本、标签等
 
-+   结构: 键值对，支持嵌套
-
-+   用途: 作者信息、版本、标签等
-
-#### allowed-tools
+##### allowed-tools
 
 ```
 allowed-tools: Read, Grep, Bash(python:*)
 ```
 
-+   作用: 限制 Skills 可用的工具
-
-+   格式: 逗号分隔的工具名称
-
-+   实验性: 目前支持有限，可能因实现而异
++ 作用: 限制 Skills 可用的工具
++ 格式: 逗号分隔的工具名称
++ 实验性: 目前支持有限，可能因实现而异
 
 ## 配置示例
 
@@ -115,10 +101,10 @@ license: MIT
 compatibility: Requires Python 3.8+, works with Claude Code and compatible agents
 metadata:
   author: pdf-tools-team
-  version: &quot;2.1.0&quot;
-  tags: [&quot;pdf&quot;, &quot;text-extraction&quot;, &quot;forms&quot;, &quot;conversion&quot;]
-  homepage: &quot;https://github.com/pdf-tools/advanced-pdf-processor&quot;
-  repository: &quot;https://github.com/pdf-tools/advanced-pdf-processor&quot;
+  version: "2.1.0"
+  tags: ["pdf", "text-extraction", "forms", "conversion"]
+  homepage: "https://github.com/pdf-tools/advanced-pdf-processor"
+  repository: "https://github.com/pdf-tools/advanced-pdf-processor"
 allowed-tools: Read, Grep, Bash(python:*), Bash(pdftotext:*)
 ---
 ```
@@ -131,45 +117,38 @@ Skills 在加载时会自动验证配置的正确性：
 
 #### 格式验证
 
-+   YAML 语法正确性
-
-+   必需字段存在性
-
-+   字段类型正确性
++ YAML 语法正确性
++ 必需字段存在性
++ 字段类型正确性
 
 #### 约束验证
 
-+   name 格式检查
-
-+   description 长度检查
-
-+   compatibility 长度检查
++ `name` 格式检查
++ `description` 长度检查
++ `compatibility` 长度检查
 
 #### 错误处理
 
 系统会对配置进行严格的质量检查，发现问题时会详细报告：
 
-1.  必需字段检查：
+1. 必需字段检查：
 
-+   验证 name 字段是否存在且格式正确
++ 验证 `name` 字段是否存在且格式正确
++ 验证 `description` 字段是否存在且长度合适
 
-+   验证 description 字段是否存在且长度合适
+1. 格式验证：
 
-1.  格式验证：
++ 名称只能包含小写字母、数字和连字符
++ 描述长度不能超过1024个字符
++ 兼容性描述长度不能超过500个字符
 
-+   名称只能包含小写字母、数字和连字符
-
-+   描述长度不能超过1024个字符
-
-+   兼容性描述长度不能超过500个字符
-
-1.  错误收集：将所有发现的问题收集起来，一次性反馈给用户
+1. 错误收集：将所有发现的问题收集起来，一次性反馈给用户
 
 ### 验证工具
 
 #### skills-ref 工具介绍
 
-skills-ref 是 Agent Skills 规范的官方参考实现工具，由 Anthropic 提供，用于验证 Skills 的格式和配置正确性。
+`skills-ref` 是 Agent Skills 规范的官方参考实现工具，由 Anthropic 提供，用于验证 Skills 的格式和配置正确性。
 
 #### 获取和安装 skills-ref
 
@@ -189,7 +168,7 @@ source .venv/bin/activate  # Linux/macOS
 pip install -e .
 ```
 
-安装完成后，skills-ref 命令将在虚拟环境中可用。
+安装完成后，`skills-ref` 命令将在虚拟环境中可用。
 
 #### 使用 skills-ref 验证配置
 
@@ -204,7 +183,7 @@ skills-ref validate skills-dir/
 skills-ref validate my-skill/ --verbose
 
 # 验证失败时查看错误详情
-skills-ref validate my-skill/ 2&gt;&amp;1
+skills-ref validate my-skill/ 2>&1
 ```
 
 #### skills-ref 的其他功能
@@ -231,13 +210,10 @@ description: Helps with data
 
 要点:
 
-+   明确说明功能
-
-+   包含使用关键词
-
-+   说明适用场景
-
-+   保持简洁准确
++ 明确说明功能
++ 包含使用关键词
++ 说明适用场景
++ 保持简洁准确
 
 ### 命名规范
 
@@ -271,22 +247,22 @@ compatibility: Requires Python 3.8+, Node.js 16+, or compatible runtime
 ```
 metadata:
   # 基本信息
-  author: &quot;your-org&quot;
-  version: &quot;1.0.0&quot;
-  created: &quot;2024-01-01&quot;
+  author: "your-org"
+  version: "1.0.0"
+  created: "2024-01-01"
 
   # 分类和标签
-  category: &quot;data-processing&quot;
-  tags: [&quot;pdf&quot;, &quot;text&quot;, &quot;extraction&quot;, &quot;automation&quot;]
+  category: "data-processing"
+  tags: ["pdf", "text", "extraction", "automation"]
 
   # 联系方式
-  homepage: &quot;https://example.com/my-skill&quot;
-  repository: &quot;https://github.com/example/my-skill&quot;
-  issues: &quot;https://github.com/example/my-skill/issues&quot;
+  homepage: "https://example.com/my-skill"
+  repository: "https://github.com/example/my-skill"
+  issues: "https://github.com/example/my-skill/issues"
 
   # 技术信息
-  runtime: &quot;python&quot;
-  dependencies: [&quot;PyPDF2&quot;, &quot;pandas&quot;]
+  runtime: "python"
+  dependencies: ["PyPDF2", "pandas"]
 ```
 
 ## 工具权限配置
@@ -301,11 +277,9 @@ allowed-tools: ToolName, ToolName(parameters), ToolName(pattern:*)
 
 #### 工具类型
 
-+   基础工具: Read, Write, Grep, Glob
-
-+   带参数工具: Bash(command:*), RunCommand(timeout:30)
-
-+   通配符模式: Bash(python:*), Bash(node:*)
++ 基础工具: `Read`, `Write`, `Grep`, `Glob`
++ 带参数工具: `Bash(command:*)`, `RunCommand(timeout:30)`
++ 通配符模式: `Bash(python:*)`, `Bash(node:*)`
 
 #### 配置示例
 
@@ -327,11 +301,9 @@ allowed-tools: all
 
 #### 最小权限原则
 
-+   只授予必要的工具权限
-
-+   避免过度宽泛的权限
-
-+   定期审查和更新权限
++ 只授予必要的工具权限
++ 避免过度宽泛的权限
++ 定期审查和更新权限
 
 #### 风险评估
 
@@ -350,7 +322,7 @@ allowed-tools: Read, Grep, Glob
 
 ### 层级配置
 
-虽然 Skills 主要通过 SKILL.md 配置，但也支持外部配置文件的继承：
+虽然 Skills 主要通过 `SKILL.md` 配置，但也支持外部配置文件的继承：
 
 #### 项目级配置
 
@@ -360,7 +332,7 @@ skills:
   pdf-processing:
     # 覆盖默认配置
     timeout: 60
-    max_file_size: &quot;10MB&quot;
+    max_file_size: "10MB"
 ```
 
 #### 用户级配置
@@ -370,7 +342,7 @@ skills:
 skills:
   pdf-processing:
     # 用户偏好
-    output_format: &quot;markdown&quot;
+    output_format: "markdown"
     verbose: true
 ```
 
@@ -378,15 +350,15 @@ skills:
 
 配置按以下优先级合并：
 
-1.  SKILL.md 元数据（最高优先级）
+1. `SKILL.md` 元数据（最高优先级）
 
-1.  用户配置
+1. 用户配置
 
-1.  项目配置
+1. 项目配置
 
-1.  全局配置
+1. 全局配置
 
-1.  默认值（最低优先级）
+1. 默认值（最低优先级）
 
 ## 动态配置
 
@@ -420,13 +392,13 @@ metadata:
   config_conditions:
     # 大文件特殊处理
     large_files:
-      condition: &quot;file_size &gt; 10MB&quot;
+      condition: "file_size > 10MB"
       timeout: 300
-      memory_limit: &quot;2GB&quot;
+      memory_limit: "2GB"
 
     # 网络限制环境
     offline_mode:
-      condition: &quot;network_unavailable&quot;
+      condition: "network_unavailable"
       disable_network_features: true
 ```
 
@@ -463,14 +435,14 @@ claude --show-config pdf-processing
 skills-ref validate my-skill/ --verbose
 
 # 检查错误详情
-skills-ref validate my-skill/ 2&gt;&amp;1
+skills-ref validate my-skill/ 2>&1
 ```
 
 #### 权限不足
 
 现象: 工具调用被拒绝
 
-原因: allowed-tools 配置不正确
+原因: `allowed-tools` 配置不正确
 
 解决:
 
@@ -497,4 +469,4 @@ claude --debug --skill pdf-processing
 
 ## 总结
 
-Skills 的配置通过 SKILL.md 文件的元数据实现，提供了灵活而强大的定制能力。通过合理使用各种配置选项，可以根据具体需求优化 Skills 的行为，确保最佳的用户体验和功能效果。
+Skills 的配置通过 `SKILL.md` 文件的元数据实现，提供了灵活而强大的定制能力。通过合理使用各种配置选项，可以根据具体需求优化 Skills 的行为，确保最佳的用户体验和功能效果。

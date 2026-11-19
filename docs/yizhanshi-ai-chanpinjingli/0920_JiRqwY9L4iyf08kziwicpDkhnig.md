@@ -1,3 +1,4 @@
+
 # 【Coze应用】扭蛋机（原创）
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/PxgbdPhfUodBogxS0MzckluknFp](https://v11enp9ok1h.feishu.cn/docx/PxgbdPhfUodBogxS0MzckluknFp)
@@ -8,7 +9,7 @@
 
 其实很简单，我有一个需求，我想通过Coze的AI应用做一个可视化的UI出来，就开始询问AI
 
-点击链接查看和 Kimi 的对话 https://www.kimi.com/share/d20d2enhvltu88ac9100
+点击链接查看和 Kimi 的对话 `https://www.kimi.com/share/d20d2enhvltu88ac9100`
 
 ![](img/71556d19f7e5c8b9d1f3e3a8c79c23b8.png)
 
@@ -50,7 +51,7 @@
 
 这个时候，我们可以看来两个内容
 
-1.  组件
+1. 组件
 
 > 什么时候有的“自定义”？
 
@@ -58,7 +59,7 @@
 
 ![](img/c8ca18b2a6f80015af03024f40a326d0.png)
 
-1.  模板
+1. 模板
 
 这里不推荐大家看商店，先看模板，因为你可以把人家的界面复制出来，直接改就行，如果还是没有思路，就去商店看看
 
@@ -78,7 +79,7 @@
 
 新建一个工作流，名字随便
 
-点击“开始节点”，变量名称设置为“query”
+点击“开始节点”，变量名称设置为 `query`
 
 ![](img/b1ee1b62800cb8c86451cc6ccf028b2d.png)
 
@@ -112,7 +113,7 @@ tj_id-提交人的ID-Integer
 
 ![](img/fc551bd17a3547b32b4d667eb4e83fbb.png)
 
-[虚拟人物信息.xlsx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CRX4bcsdhokQ1xxsGUhcePcmnEh)
+[`虚拟人物信息.xlsx`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CRX4bcsdhokQ1xxsGUhcePcmnEh)
 
 ![](img/ae04b40b087e4eec2e46c2bdab44e4ac.png)
 
@@ -132,7 +133,7 @@ name,title,Yes/No（大小写均可）
    - 去掉末尾的“,Yes”或“,No”（大小写不敏感，可带前后空格）。
    - 用第一个逗号把剩余内容分成 name 与 title（均 trim 前后空格）。
 3. 输出纯 JSON，结构如下：
-{&quot;arr&quot;:[{&quot;name&quot;:&quot;...&quot;,&quot;title&quot;:&quot;...&quot;}, ...]}
+{"arr":[{"name":"...","title":"..."}, ...]}
 无需额外解释或文字。
 ```
 
@@ -148,16 +149,20 @@ name,title,Yes/No（大小写均可）
 
 添加代码节点，输入、输出如下图
 
-        &quot;https://p9-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/90b1a6a779c34ca08a95f403d2e2a125.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956442&amp;x-signature=j2mzagcgwSFolPTryRKrhbo3BBo%3D&amp;x-wf-file_name=%E8%93%9D%E8%89%B2.png&quot;,
-        &quot;https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/7e3e1710e06d4e49a52b38dee6c15976.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956443&amp;x-signature=IR9g00OmYQtCTiHgsoScWtSUe5E%3D&amp;x-wf-file_name=%E6%9C%AA%E6%A0%87%E9%A2%98-1.png&quot;,
-        &quot;https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/2905ee52ea334d198254a73b6efdb94e.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&amp;x-expires=1783956443&amp;x-signature=kJLsaaNp1%2BCROGzTKC0euW8R7bI%3D&amp;x-wf-file_name=%E7%B4%AB%E8%89%B2.png&quot;
+```
+        "https://p9-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/90b1a6a779c34ca08a95f403d2e2a125.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1783956442&x-signature=j2mzagcgwSFolPTryRKrhbo3BBo%3D&x-wf-file_name=%E8%93%9D%E8%89%B2.png",
+
+        "https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/7e3e1710e06d4e49a52b38dee6c15976.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1783956443&x-signature=IR9g00OmYQtCTiHgsoScWtSUe5E%3D&x-wf-file_name=%E6%9C%AA%E6%A0%E7%9B%AE-1.png",
+
+        "https://p26-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/2905ee52ea334d198254a73b6efdb94e.png~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1783956443&x-signature=kJLsaaNp1%2BCROGzTKC0euW8R7bI%3D&x-wf-file_name=%E7%B4%AB%E8%89%B2.png"
+```
 
 ```
 import random
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
-    arr = params[&#x27;input&#x27;]        # 这里本身就是列表，无需再 .get(&#x27;arr&#x27;)
+    arr = params['input']        # 这里本身就是列表，无需再 .get('arr')
 
     # 3 个候选 url（请替换成你的真实地址）
     url_pool = [
@@ -165,10 +170,10 @@ async def main(args: Args) -&gt; Output:
 
     # 为每个对象随机加一个 url
     for item in arr:
-        item[&#x27;url&#x27;] = random.choice(url_pool)
+        item['url'] = random.choice(url_pool)
 
     # 把处理后的数组再包一层对象返回（与入参结构保持一致）
-    ret: Output = {&quot;input&quot;: arr}
+    ret: Output = {"input": arr}
     return ret
 ```
 
@@ -184,4 +189,4 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/05dfda700c21ac5f4265d0eb86d18d70.png)
 
-[【Coze应用】扭蛋机（原创）.zip](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PLFhbd7CeoKg1cxvrF1crQWjnXg)
+[`【Coze应用】扭蛋机（原创）.zip`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PLFhbd7CeoKg1cxvrF1crQWjnXg)

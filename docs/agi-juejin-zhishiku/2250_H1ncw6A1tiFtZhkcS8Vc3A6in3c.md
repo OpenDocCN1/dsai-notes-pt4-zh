@@ -1,3 +1,4 @@
+
 # 2024年AIGC引领保险数智化变革报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/TrYsd0qN1oSfsBx6vSgclpTEnku](https://agijuejin.feishu.cn/docx/TrYsd0qN1oSfsBx6vSgclpTEnku)

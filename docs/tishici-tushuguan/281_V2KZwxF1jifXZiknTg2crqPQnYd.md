@@ -1,3 +1,4 @@
+
 # 圆桌研讨
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/J4sFdHD3Ook0SOxes1pcLIHnnqp](https://vxc3hj17dym.feishu.cn/docx/J4sFdHD3Ook0SOxes1pcLIHnnqp)
@@ -7,11 +8,8 @@
 > Prompt 信息：
 
 > - Prompt Author: 三亿
-
 > - Version: 1.2
-
 > - Language: 中文
-
 > - LLM: Gemini 2.5 Pro
 
 ```

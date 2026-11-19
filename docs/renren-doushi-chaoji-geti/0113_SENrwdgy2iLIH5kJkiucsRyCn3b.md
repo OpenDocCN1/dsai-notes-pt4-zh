@@ -1,3 +1,4 @@
+
 # 出海网站怎样挖掘对标网站的外链？怎样快速对上千个外链网站做初步分析？
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/PYpLdgZWToJXBJxgSyacxZ0Wnrg](https://xuqiwei1986.feishu.cn/docx/PYpLdgZWToJXBJxgSyacxZ0Wnrg)
@@ -14,7 +15,7 @@
 
 2、通过Ahrefs Backlink Checker查看对标网站的外链
 
-3、通过谷歌搜索的site命令查看对标网站的外链
+3、通过谷歌搜索的 `site` 命令查看对标网站的外链
 
 4、通过查找特定网站来查看对标网站的外链
 
@@ -32,9 +33,9 @@
 
 第五步：把顺序执行改成并行提升10倍效率
 
-# 一、出海网站怎样挖掘对标网站的外链？
+## 一、出海网站怎样挖掘对标网站的外链？
 
-哥飞老师曾经讲过：title和h1等页面关键词确保你的网页能够进入关键词搜索的待排名范围里；外链帮助你进入谷歌搜索前10位置；网站体验帮助你确定最终的名次。可见外链对于一个网站的流量和排名有多重要！然而，我们上线网站后，怎样才能找到合适的外链给网站做外链呢？答案就藏在“学会抄”这三个字中。
+哥飞老师曾经讲过：`title` 和 `h1` 等页面关键词确保你的网页能够进入关键词搜索的待排名范围里；外链帮助你进入谷歌搜索前10位置；网站体验帮助你确定最终的名次。可见外链对于一个网站的流量和排名有多重要！然而，我们上线网站后，怎样才能找到合适的外链给网站做外链呢？答案就藏在“学会抄”这三个字中。
 
 我前面发布的文章：
 
@@ -44,27 +45,27 @@
 
 今天，我们就整理几个查找对标网站外链的方法，只要你学会“抄”，外链多到根本发不完。
 
-## 1、通过Semrush查看对标网站的反向链接
+### 1、通过Semrush查看对标网站的反向链接
 
-以前段时间爆火的 nanobanana.ai 为例。点击Semrush“域名概览”页面中的“反向链接”或左侧菜单“反向链接分析”，进入“反向链接”页面：
+以前段时间爆火的 `nanobanana.ai` 为例。点击Semrush“域名概览”页面中的“反向链接”或左侧菜单“反向链接分析”，进入“反向链接”页面：
 
 ![](img/c980c501148e5a128ad3246f14009861.png)
 
-可以看到这里罗列了这个网站的外链。如果你的对标网站在Semrush中查到的外链数量很大，你可以优先查看和分析显示“最佳”的这部分带follow属性的外链：
+可以看到这里罗列了这个网站的外链。如果你的对标网站在Semrush中查到的外链数量很大，你可以优先查看和分析显示“最佳”的这部分带 `Follow` 属性的外链：
 
 ![](img/1e19c558411756a3bff0e1dc0377e582.png)
 
-除了带Follow属性的外链，NoFollow属性的外链也是我们网站外链的重要来源。但是，如果你的对标网站的外链数量太过庞大，很难一一查看，你可以先通过查看“引荐域名”来看看给你的对标网站做背书的域名究竟有哪些：
+除了带 `Follow` 属性的外链，`NoFollow` 属性的外链也是我们网站外链的重要来源。但是，如果你的对标网站的外链数量太过庞大，很难一一查看，你可以先通过查看“引荐域名”来看看给你的对标网站做背书的域名究竟有哪些：
 
 ![](img/765e645e46dc6768a0acc39a45b90f53.png)
 
 有可能数量远小于外链的数量，那么你就可以围绕这些引荐域名做深入的分析和调查。
 
-## **2、通过Ahrefs Backl**ink Checker查看对标网站的外链
+### 2、通过Ahrefs Backlink Checker查看对标网站的外链
 
 另一个常用的查看外链的工具是Ahrefs Backlink Checker
 
-> 链接：https://ahrefs.com/backlink-checker/
+> 链接：`https://ahrefs.com/backlink-checker/`
 
 只需要输入你的对标网站的链接，即可查看：
 
@@ -72,15 +73,15 @@
 
 然而，免费版本只能看到20条外链，虽然不多，但同样可以作为我们“抄”和分析的目标。如果你想查看更多对标网站的外链，需要购买付费版本，但是每月价格不低。
 
-## 3、通过谷歌搜索的site命令查看对标网站的外链
+### 3、通过谷歌搜索的 `site` 命令查看对标网站的外链
 
-在查找对标网站外链的时候，有时候我会遇到这样的情况：一些刚上没多久的网站，不管通过Semrush还是通过Ahrefs Backlink Checker查看外链，往往找不到多少数据。那么，有没有什么办法可以看到这些新上线没多久的网站最新发布的外链呢？答案就隐藏在谷歌的搜索结果中。我们可以通过谷歌搜索以及谷歌的site命令查看有哪些网站上存在对标网站的链接。同样以 nanobanana.ai 为例，如果我们在谷歌中直接搜索：
+在查找对标网站外链的时候，有时候我会遇到这样的情况：一些刚上没多久的网站，不管通过Semrush还是通过Ahrefs Backlink Checker查看外链，往往找不到多少数据。那么，有没有什么办法可以看到这些新上线没多久的网站最新发布的外链呢？答案就隐藏在谷歌的搜索结果中。我们可以通过谷歌搜索以及谷歌的 `site` 命令查看有哪些网站上存在对标网站的链接。同样以 `nanobanana.ai` 为例，如果我们在谷歌中直接搜索：
 
-> "intext:nanobanana.ai"
+> `intext:nanobanana.ai`
 
 会有怎样的结果？
 
-> 注意：这里加上双引号表示查找精准匹配的结果，“intext”表示在网页的内容中查找，与之对应的，“intitle”表示在网页的标题中查找。
+> 注意：这里加上双引号表示查找精准匹配的结果，`intext` 表示在网页的内容中查找，与之对应的，`intitle` 表示在网页的标题中查找。
 
 ![](img/cc6bdbeb0c06b8361f1cfb4850ded260.png)
 
@@ -88,19 +89,19 @@
 
 如果查找结果确实太多，你可以通过这个命令做进一步搜索：
 
-> "intext:nanobanana.ai" -site:nanobanana.ai
+> `intext:nanobanana.ai -site:nanobanana.ai`
 
-这个指令表示查找完整匹配“nanobanana.ai”这个词的结果并排查掉域名为nanobanana.ai的页面（注意“site”前面有“-”号）。这样谷歌的搜索结果就会减少一些，毕竟对标网站上面放自己的域名的页面不能算作外链。
+这个指令表示查找完整匹配“nanobanana.ai”这个词的结果并排查掉域名为 `nanobanana.ai` 的页面（注意 `site` 前面有“-”号）。这样谷歌的搜索结果就会减少一些，毕竟对标网站上面放自己的域名的页面不能算作外链。
 
 ![](img/ceed20966d1d8f3fa994c6784f4e97c2.png)
 
 这样筛选之后，你可以对筛选后的结果进行分析，从而“抄”对标网站早期发布的外链。
 
-## 4、通过查找特定网站来查看对标网站的外链
+### 4、通过查找特定网站来查看对标网站的外链
 
 你还可以通过谷歌进一步深入分析对标网站是否在某些重要渠道发布了外链。比如Reddit：
 
-> "intext:nanobanana.ai" site:reddit.com
+> `intext:nanobanana.ai site:reddit.com`
 
 你可以通过这个命令查看Reddit上有哪些页面在推广你的对标网站，然后“抄”对标网站怎样在Reddit上做推广，你甚至可以学习他的推广文案和推广思路。
 
@@ -108,11 +109,11 @@
 
 再比如Hacker News、ProductHunt和V2EX：
 
-> "intext:nanobanana.ai" site:producthunt.com
+> `intext:nanobanana.ai site:producthunt.com`
 
-> "intext:nanobanana.ai" site:producthunt.com
+> `intext:nanobanana.ai site:producthunt.com`
 
-> "intext:nanobanana.ai" site:v2ex.com
+> `intext:nanobanana.ai site:v2ex.com`
 
 查看你的对标网站是否在Hacker News、ProductHunt或V2EX这些重要渠道做推广。
 
@@ -122,15 +123,15 @@
 
 ![](img/0dae0a49c920073bf2e2c4ebcf897065.png)
 
-可以看到nanobanana.ai并没有在ProductHunt上做推广，这个需要进一步确认是否属实以及背后原因。
+可以看到 `nanobanana.ai` 并没有在ProductHunt上做推广，这个需要进一步确认是否属实以及背后原因。
 
 再比如主流的社交媒体：
 
-> "nanobanana.ai" site:youtube.com
+> `nanobanana.ai site:youtube.com`
 
-> "nanobanana.ai" site:pinterest.com
+> `nanobanana.ai site:pinterest.com`
 
-> "nanobanana.ai" site:vk.com
+> `nanobanana.ai site:vk.com`
 
 查看你的对标网站是否在在主流社交媒体做推广：
 
@@ -140,9 +141,9 @@
 
 ![](img/9101e78e623b9371249eea45aff6afca.png)
 
-可以看到Youtube、Pinterest和VK平台上都有nanobanana.ai的身影。但是，你需要注意一点，你看到的这些搜索结果中的外链不一定全部是你的对标网站自己发布的，有些也可能是他们的用户或其他博主主动发布的。
+可以看到Youtube、Pinterest和VK平台上都有 `nanobanana.ai` 的身影。但是，你需要注意一点，你看到的这些搜索结果中的外链不一定全部是你的对标网站自己发布的，有些也可能是他们的用户或其他博主主动发布的。
 
-## 5、通过查找网站框架来查看对标网站的外链
+### 5、通过查找网站框架来查看对标网站的外链
 
 如果你对海外网站有一定了解，一定会知道国外有很多网站并非自建网站，而是采用某个建站平台或网站框架搭建的，比如Shopify、WordPress、Wix等等。这些网站中不乏有一些流量很大权重不小的网站，有些甚至不惜花费重金打Facebook广告和谷歌广告。更重要的是，这些网站往往有留言板块或产品评论，那么，我们也可以尝试找到这些网站，尤其是对标网站已经留过带链接留言或评论的网站，从而给我们增加更多外链渠道。为了能更全面地挖掘这些网站的外链，我把这个问题抛给ChatGPT，ChatGPT做了很详细的回复：
 
@@ -152,7 +153,7 @@
 
 以上这些挖掘对标网站外链的方法，大家可以根据实际情况结合者使用。只要“学会抄”，出海网站的外链多到根本发不完！
 
-# 二、怎样快速对上千个外链网站做初步分析？
+## 二、怎样快速对上千个外链网站做初步分析？
 
 前面我整理了几个查找对标网站外链的方法，只要你学会“抄”，外链多到根本发不完。然而，有时我们查找出对标网站的外链数量很大，有些多到几百上千个，想要一个个分析，难度很大。那么，我们有没有什么办法可以提高分析外链的效率呢？这就是我们接下来要探讨的一个话题。
 
@@ -168,9 +169,9 @@
 
 > 让AI先对一个比较小的数据集进行处理，处理过程中AI已经编写好并验证好处理数据的Python代码，再让它学习这个已经能够完成任务的Python执行方案，重构成一个可复用的图形化数据分析工具，从而实现对更大数据集任务的处理。
 
-## 第一步：调试API并导出外链数据
+### 第一步：调试API并导出外链数据
 
-我们仍然以nanobanana.ai为例。先从semrush中导出这个网站的引荐域名，选择导出一个csv文件：
+我们仍然以 `nanobanana.ai` 为例。先从semrush中导出这个网站的引荐域名，选择导出一个 `csv` 文件：
 
 ![](img/6845195b0c99a37d7356726c8e5c6db5.png)
 
@@ -180,128 +181,140 @@
 
 API调试结果请查看下面代码文件：
 
-            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
-            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
-
 ```
-**# Google****: Gemini 2****.5 Flash L****ite
+            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
 
-## AP****I文档
-https:**//openrouter.ai/google/gemini-2.5-flash-lite
+            &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&quot;
+```
+
+
+
+# Google: Gemini 2.5 Flash Lite
+
+## API 文档
+`https://openrouter.ai/google/gemini-2.5-flash-lite`
 
 ## API Key
-sk-or-v1-990XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+`sk-or-v1-990XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
 
-## API示例代码
+## API 示例代码
+
+```
 curl https://openrouter.ai/api/v1/chat/completions \
-  -H &quot;Content-Type: application/json&quot; \
-  -H &quot;Authorization: Bearer $OPENROUTER_API_KEY&quot; \
-  -d &#x27;{
-  &quot;model&quot;: &quot;google/gemini-2.5-flash-lite&quot;,
-  &quot;messages&quot;: [
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENROUTER_API_KEY" \
+  -d '{
+  "model": "google/gemini-2.5-flash-lite",
+  "messages": [
     {
-      &quot;role&quot;: &quot;user&quot;,
-      &quot;content&quot;: [
+      "role": "user",
+      "content": [
         {
-          &quot;type&quot;: &quot;text&quot;,
-          &quot;text&quot;: &quot;What is in this image?&quot;
+          "type": "text",
+          "text": "What is in this image?"
         },
         {
-          &quot;type&quot;: &quot;image_url&quot;,
-          &quot;image_url&quot;: {
+          "type": "image_url",
+          "image_url": {
           }
         }
       ]
     }
   ]
-}&#x27;
+}'
+```
 
-## API示例输入
+## API 示例输入
+
+```
 {
-  &quot;model&quot;: &quot;google/gemini-2.5-flash-lite&quot;,
-  &quot;messages&quot;: [
+  "model": "google/gemini-2.5-flash-lite",
+  "messages": [
     {
-      &quot;role&quot;: &quot;user&quot;,
-      &quot;content&quot;: [
+      "role": "user",
+      "content": [
         {
-          &quot;type&quot;: &quot;text&quot;,
-          &quot;text&quot;: &quot;What is in this image?&quot;
+          "type": "text",
+          "text": "What is in this image?"
         },
         {
-          &quot;type&quot;: &quot;image_url&quot;,
-          &quot;image_url&quot;: {
+          "type": "image_url",
+          "image_url": {
           }
         }
       ]
     }
   ]
 }
+```
 
-## API示例输出
+## API 示例输出
+
+```
 {
-    &quot;id&quot;: &quot;gen-1762075488-9VB7Z0IFUQ1A412O9YPJ&quot;,
-    &quot;provider&quot;: &quot;Google&quot;,
-    &quot;model&quot;: &quot;google/gemini-2.5-flash-lite&quot;,
-    &quot;object&quot;: &quot;chat.completion&quot;,
-    &quot;created&quot;: 1762075488,
-    &quot;choices&quot;: [
+    "id": "gen-1762075488-9VB7Z0IFUQ1A412O9YPJ",
+    "provider": "Google",
+    "model": "google/gemini-2.5-flash-lite",
+    "object": "chat.completion",
+    "created": 1762075488,
+    "choices": [
         {
-            &quot;logprobs&quot;: null,
-            &quot;finish_reason&quot;: &quot;stop&quot;,
-            &quot;native_finish_reason&quot;: &quot;STOP&quot;,
-            &quot;index&quot;: 0,
-            &quot;message&quot;: {
-                &quot;role&quot;: &quot;assistant&quot;,
-                &quot;content&quot;: &quot;This is an image of a wooden boardwalk that runs through a grassy meadow. The meadow is very green and lush, with tall grass that reaches up to the top of the boardwalk in some places. In the distance, there are trees and a clear blue sky with some wispy clouds. The overall scene is peaceful and idyllic.&quot;,
-                &quot;refusal&quot;: null,
-                &quot;reasoning&quot;: null
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "STOP",
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "This is an image of a wooden boardwalk that runs through a grassy meadow. The meadow is very green and lush, with tall grass that reaches up to the top of the boardwalk in some places. In the distance, there are trees and a clear blue sky with some wispy clouds. The overall scene is peaceful and idyllic.",
+                "refusal": null,
+                "reasoning": null
             }
         }
     ],
-    &quot;usage&quot;: {
-        &quot;prompt_tokens&quot;: 3360,
-        &quot;completion_tokens&quot;: 65,
-        &quot;total_tokens&quot;: 3425,
-        &quot;prompt_tokens_details&quot;: {
-            &quot;cached_tokens&quot;: 0
+    "usage": {
+        "prompt_tokens": 3360,
+        "completion_tokens": 65,
+        "total_tokens": 3425,
+        "prompt_tokens_details": {
+            "cached_tokens": 0
         },
-        &quot;completion_tokens_details&quot;: {
-            &quot;reasoning_tokens&quot;: 0,
-            &quot;image_tokens&quot;: 0
+        "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0
         }
     }
 }
 ```
 
-为了确保Claude Code快速完成我们的任务，我们先缩小数据量，只使用5条记录做测试：
+为了确保 `Claude Code` 快速完成我们的任务，我们先缩小数据量，只使用5条记录做测试：
 
 ![](img/1b006f83101a5bf6502fae1768554538.png)
 
-## 第二步：引导AI“吐”出执行任务的代码
+## 第二步：引导 AI “吐” 出执行任务的代码
 
-接下来，我们给Claude code下达命令：
+接下来，我们给 `Claude code` 下达命令：
 
 ![](img/8479efdb7236171de2519803308a1883.png)
 
-让它通过我们给定API，编写一个Python程序来实现依次对引荐域名信息的查询。注意，指令中我添加了一句“请先编写一个Python文件，然后通过执行这个文件进行引荐域名的查询。”这是为了确保Claude Code编写一个它在执行过程中使用的代码，避免它直接在编辑器环境中自行完成代码编写并直接运行完成任务，而没有把代码“吐”出来给我们。很快Claude code自行编写了一个Python程序并自行运行代码，过程中，我看到他遇到错误后会重新修改代码并再次运行。最终它通过执行它编写好的Python程序完成文件中5个域名的网站信息查询：
+让它通过我们给定 API，编写一个 Python 程序来实现依次对引荐域名信息的查询。注意，指令中我添加了一句“请先编写一个 Python 文件，然后通过执行这个文件进行引荐域名的查询。”这是为了确保 `Claude code` 编写一个它在执行过程中使用的代码，避免它直接在编辑器环境中自行完成代码编写并直接运行完成任务，而没有把代码“吐”出来给我们。很快 `Claude code` 自行编写了一个 Python 程序并自行运行代码，过程中，我看到他遇到错误后会重新修改代码并再次运行。最终它通过执行它编写好的 Python 程序完成文件中 5 个域名的网站信息查询：
 
 ![](img/6232f27a0dd08dea22a760d96490e0b3.png)
 
-并保存了一个新的csv文件：
+并保存了一个新的 CSV 文件：
 
 ![](img/33199b231830904bf032cbca576feb43.png)
 
-打开可以看到程序确实完成了这5个网站的查询，更新了“网站类型”、“网站简介”、“反链方法”、“提交入口”、“是否登录”、“是否付费”这些信息，其中一个网站还找到了它的提交链接：
+打开可以看到程序确实完成了这 5 个网站的查询，更新了“网站类型”、“网站简介”、“反链方法”、“提交入口”、“是否登录”、“是否付费”这些信息，其中一个网站还找到了它的提交链接：
 
-> https://ainavtool.com/submit-tool
+> `https://ainavtool.com/submit-tool`
 
-我们回头看一下Claude code编写的程序，可以看到代码有使用API查询网站信息的逻辑，而且Claude code还按照我们的需求构造了一个Prompt：
+我们回头看一下 `Claude code` 编写的程序，可以看到代码有使用 API 查询网站信息的逻辑，而且 `Claude code` 还按照我们的需求构造了一个 Prompt：
 
 ![](img/9198627d18ca50978305718189884132.png)
 
-## 第三步：把AI“吐”出来的代码封装成工具
+## 第三步：把 AI “吐” 出来的代码封装成工具
 
-接下来，我们让Claude code给这个Python程序增加一个界面：
+接下来，我们让 `Claude code` 给这个 Python 程序增加一个界面：
 
 ![](img/6d85566a5d903db56b3615f01934cb49.png)
 
@@ -319,11 +332,11 @@ curl https://openrouter.ai/api/v1/chat/completions \
 
 测试结果正常。
 
-接下来，我们让Claude把Python代码打包成一个可以直接执行的exe文件：
+接下来，我们让 `Claude` 把 Python 代码打包成一个可以直接执行的 exe 文件：
 
 ![](img/f65f7e0601e3457c167dd8f371bef2a9.png)
 
-很快，Claude Code帮我们把代码打包成一个exe文件：
+很快，`Claude Code` 帮我们把代码打包成一个 exe 文件：
 
 ![](img/29032778d4cb07219a22632e58f7b20a.png)
 
@@ -349,11 +362,11 @@ curl https://openrouter.ai/api/v1/chat/completions \
 
 接下来，我们就试试把这个想法变成一个进一步提升10倍效率的外链分析工具。
 
-我们先在前面Claude code编写的代码上，继续完善这个工具。先让Claude Code把工具中硬编码的API Key改成在工具界面配置：
+我们先在前面 `Claude code` 编写的代码上，继续完善这个工具。先让 `Claude Code` 把工具中硬编码的 API Key 改成在工具界面配置：
 
 ![](img/fa5ce76970dd2f336ab6d12c472523da.png)
 
-很快，Claude Code修改好这个功能，在工具页面中增加了API Key配置：
+很快，`Claude Code` 修改好这个功能，在工具页面中增加了 API Key 配置：
 
 ![](img/edcc5b9cd85661c018af94b1a65954f7.png)
 
@@ -361,23 +374,23 @@ curl https://openrouter.ai/api/v1/chat/completions \
 
 ![](img/3e3cfeacfd9886a6275e6dda1d024b72.png)
 
-接下来，我们和Claude Code一起探讨一个问题，把工具原来分析引荐域名网站采用的顺序执行改成并列执行，以提高分析效率：
+接下来，我们和 `Claude Code` 一起探讨一个问题，把工具原来分析引荐域名网站采用的顺序执行改成并列执行，以提高分析效率：
 
 ![](img/ba21636f0b66d62db2e47635c72a373a.png)
 
-Claude Code做了详细的分析，然后给我们提供了几个方案：
+`Claude Code` 做了详细的分析，然后给我们提供了几个方案：
 
 ![](img/14c6ded56deeb1b574f39b2ee152d8e8.png)
 
-为了后续方便和灵活，我们选择可以灵活配置并行的数量的方案4：
+为了后续方便和灵活，我们选择可以灵活配置并行的数量的方案 4：
 
 ![](img/abb336def51753f384a21a1344342717.png)
 
-很快，Claude Code调整好了代码，然而，我运行这个Python代码时出现错误。不过没有关系，我们把错误粘贴给Claude Code即可，并且，我们让他修复好代码后自行运行，这样运行时有错误的话，它会自行重新做修复。
+很快，`Claude Code` 调整好了代码，然而，我运行这个 Python 代码时出现错误。不过没关系，我们把错误粘贴给 `Claude Code` 即可，并且，我们让他修复好代码后自行运行，这样运行时有错误的话，它会自行重新做修复。
 
 ![](img/2f68ad4f2b0fafff33eae0e7684b768d.png)
 
-Claude Code很轻松就修改好这个问题。现在，可以看到工具界面中增加了并发请求数的设置选项，支持5到20个并发：
+`Claude Code` 很轻松就修改好这个问题。现在，可以看到工具界面中增加了并发请求数的设置选项，支持5到20个并发：
 
 ![](img/5df54947b6200956526000944a12164f.png)
 
@@ -385,17 +398,17 @@ Claude Code很轻松就修改好这个问题。现在，可以看到工具界面
 
 ![](img/d5aa5a3b0b932d854f036b3fd762fe5b.png)
 
-接下来，我们让Claude把Python代码打包成一个可以直接执行的exe文件：
+接下来，我们让 `Claude` 把 Python 代码打包成一个可以直接执行的 exe 文件：
 
 ![](img/dde86f41550c866db4640f8006ace3f8.png)
 
-很快，Claude Code帮我们重新把代码打包成一个exe文件。
+很快，`Claude Code` 帮我们重新把代码打包成一个 exe 文件。
 
-接下来，我们使用这个带并发功能的外链分析工具分析更大数据量的外链网站。这次，我们导出deevid.ai这个网站的引荐域名，导出的数据表中有1374条记录：
+接下来，我们使用这个带并发功能的外链分析工具分析更大数据量的外链网站。这次，我们导出 deevid.ai 这个网站的引荐域名，导出的数据表中有1374条记录：
 
 ![](img/0436281814720f67b985f3beff0777bc.png)
 
-我们在外链分析工具中输入API Key，把并发请求数设置为10，选择刚刚导出的deevid.ai的引荐域名文件：
+我们在外链分析工具中输入 API Key，把并发请求数设置为10，选择刚刚导出的 deevid.ai 的引荐域名文件：
 
 ![](img/8b81401ba8b87cd61696d1a29360b2e7.png)
 
@@ -415,14 +428,14 @@ Claude Code很轻松就修改好这个问题。现在，可以看到工具界面
 
 通过这份文件，我们可以清晰地看到每个引荐域名究竟属于什么类型以及它们具体是什么？可以通过什么方式提交外链？部分记录还帮我们查询到提交外链的入口。
 
-我们查看一下Gemini 2.5 Flash Lite的Token消耗费用：
+我们查看一下 Gemini 2.5 Flash Lite 的 Token 消耗费用：
 
 ![](img/b9fb5867e7121cfcac880cd8619ccd51.png)
 
 结果，前一天执行分析656条记录只花了0.06美金，而后一天执行分析1374条记录只花了0.124美金，折合人民币0.88元。
 
-我仔细看了一下工具分析出来的结果数据，发现数据当中的“网站类型”、“网站简介”和“反链方法”对我们快速预判一个网站有非常直观的参考价值，而“提交入口”并非所有网站都能正确获取，这和当前使用的AI模型的不稳定表现以及我们使用的Prompt有关，而且我所使用的Gemini 2.5 Flash Lite不一定具备联网能力。然而，这篇文章只是给大家提供一个思路，而且在可预见的未来，大语言模型的能力将会越来越强，而我们这个外链分析工具的分析结果也一定会越来越准。
+我仔细看了一下工具分析出来的结果数据，发现数据当中的“网站类型”、“网站简介”和“反链方法”对我们快速预判一个网站有非常直观的参考价值，而“提交入口”并非所有网站都能正确获取，这和当前使用的 AI 模型的不稳定表现以及我们使用的 Prompt 有关，而且我所使用的 Gemini 2.5 Flash Lite 不一定具备联网能力。然而，这篇文章只是给大家提供一个思路，而且在可预见的未来，大语言模型的能力将会越来越强，而我们这个外链分析工具的分析结果也一定会越来越准。
 
-只需5分钟，不到1元，就可以帮你完成上千个外链网站的初步分析，让你的出海网站在提交外链时不再盲目。
+只需 5 分钟，不到 1 元，就可以帮你完成上千个外链网站的初步分析，让你的出海网站在提交外链时不再盲目。
 
 文末，祝大家龙哥盟！

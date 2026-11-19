@@ -1,16 +1,17 @@
+
 # 用 SAT 进行视频生成推理
 
 > 来源：[https://ai.feishu.cn/docx/Vy7IdPjJ5o9I1RxL1YJcCam5nsg](https://ai.feishu.cn/docx/Vy7IdPjJ5o9I1RxL1YJcCam5nsg)
 
-# 安装依赖
+## 安装依赖
 
 ```
 pip install -r requirements.txt
 ```
 
-# 下载模型权重
+## 下载模型权重
 
-首先，前往 SAT 镜像下载模型权重，然后到清华云盘下载模型并解压。
+首先，前往 `SAT` 镜像下载模型权重，然后到清华云盘下载模型并解压。
 
 ```
 mkdir CogVideoX-5b-sat
@@ -35,11 +36,11 @@ unzip transformer.zip
     └── 3d-vae.pt
 ```
 
-模型权重的文件比较大，推荐使用git lfs来下载，安装可参考[这里](https://github.com/git-lfs/git-lfs?tab=readme-ov-file#installing)。
+模型权重的文件比较大，推荐使用 `git lfs` 来下载，安装可参考[这里](https://github.com/git-lfs/git-lfs?tab=readme-ov-file#installing)。
 
-# 克隆 T5 模型
+## 克隆 T5 模型
 
-下一步，克隆 T5 模型，虽然不用于训练和微调，但必须使用。CogVideoX-2B 和[ CogVideoX-5](https://huggingface.co/THUDM/CogVideoX-2b.git)B [的 T5 模型相同，](https://modelscope.cn/models/ZhipuAI/CogVideoX-2b)不需要重复此步骤。您可以选择从 Huggingface 或 Modelscope 下载，并且将 text_encoder 和 tokenizer 放入t5-v1_1-xxl 目录中。
+下一步，克隆 `T5` 模型，虽然不用于训练和微调，但必须使用。`CogVideoX-2B` 和 [CogVideoX-5B](https://huggingface.co/THUDM/CogVideoX-2b.git) 的 `T5` 模型相同，不需要重复此步骤。您可以选择从 [Huggingface](https://huggingface.co/) 或 [Modelscope](https://modelscope.cn/models/ZhipuAI/CogVideoX-2b) 下载，并且将 `text_encoder` 和 `tokenizer` 放入 `t5-v1_1-xxl` 目录中。
 
 ```
 git clone https://huggingface.co/THUDM/CogVideoX-5b.git
@@ -47,7 +48,7 @@ mkdir t5-v1_1-xxl
 mv CogVideoX-5b/text_encoder/* CogVideoX-5b/tokenizer/* t5-v1_1-xxl
 ```
 
-现在，我们已经获得 safetensor 格式的 T5 文件，确保在 Finetune 中将其加载到 Deepspeed 时没有错误。t5-v1_1-xxl 目录的内容如下：
+现在，我们已经获得 `safetensor` 格式的 `T5` 文件，确保在 `Finetune` 中将其加载到 `Deepspeed` 时没有错误。`t5-v1_1-xxl` 目录的内容如下：
 
 ```
 ├── added_tokens.json
@@ -62,9 +63,11 @@ mv CogVideoX-5b/text_encoder/* CogVideoX-5b/tokenizer/* t5-v1_1-xxl
 0 directories, 8 files
 ```
 
-# 修改 YAML 文件
+## 修改 YAML 文件
 
-找到configs/cogvideox_5b.yaml文件，将model_dir和ckpt_path改成本地的绝对路径
+### 修改 `configs/cogvideox_5b.yaml`
+
+找到 `configs/cogvideox_5b.yaml` 文件，将 `model_dir` 和 `ckpt_path` 改成本地的绝对路径
 
 ```
 model:
@@ -223,15 +226,14 @@ model:
           num_steps: 50
 ```
 
-找到configs/inference.yaml文件：
+### 修改 `configs/inference.yaml`
 
-1.  把transformer换成本地的绝对路径
+找到 `configs/inference.yaml` 文件：
 
-1.  如果输入单条 prompt 把input_type改成cli，用命令行输入。如果需要多条prompt，把input_type改成txt，并修改configs/test.txt，每行为一个prompt。
-
-1.  设定bf16: True，注释掉fp16: True。
-
-1.  把output_dir设定为想要存储输出的路径
+1. 把 `transformer` 换成本地的绝对路径
+2. 如果输入单条 `prompt` 把 `input_type` 改成 `cli`，用命令行输入。如果需要多条 `prompt`，把 `input_type` 改成 `txt`，并修改 `configs/test.txt`，每行为一个 `prompt`。
+3. 设定 `bf16: True`，注释掉 `fp16: True`。
+4. 把 `output_dir` 设定为想要存储输出的路径
 
 ```
 args:
@@ -251,7 +253,7 @@ args:
   force_inference: True
 ```
 
-# 运行推理
+## 运行推理
 
 ```
 bash inference.sh

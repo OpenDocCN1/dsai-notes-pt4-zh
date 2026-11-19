@@ -1,10 +1,7 @@
-# Marketing & SEO Skills for AI AgentsAgent Skills实战指南:营销增长与SEO优化
+
+# Marketing & SEO Skills for AI Agents / Agent Skills实战指南:营销增长与SEO优化
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/WdPrdrb7tomafTxFyhMc3OWhnZf](https://gotoaiworld.feishu.cn/docx/WdPrdrb7tomafTxFyhMc3OWhnZf)
-
-# Marketing & SEO Skills for AI Agents
-
-# Agent Skills实战指南:营销增长与SEO优化
 
 https://github.com/kostja94/marketing-skills
 
@@ -16,47 +13,34 @@ https://alignify.co/skills
 
 144 specialized skills for Cursor, Claude Code, and other AI agents — SEO, content, 42 page types, channels, platforms, strategies, components, and analytics. Works with Lovable, ChatGPT, Gemini, OpenClaw, and any AI that reads markdown (Where to Use).
 
-By [kostja](https://github.com/kostja94)[ · I add new](https://github.com/kostja94/marketing-skills/blob/main/docs/skills-guide.md) sk[ills dail](https://github.com/kostja94/marketing-skills/blob/main/docs/CHANGELOG.md)y · skills-guide · CHANGELOG · zyjstc@gmail.com
+By [kostja](https://github.com/kostja94) · I add new skills daily · skills-guide · CHANGELOG · zyjstc@gmail.com
 
 ## Table of Contents
 
 +   What are Skills?
-
 +   [Use Cases](https://github.com/kostja94/marketing-skills#use-cases)
-
 +   [Installation](https://github.com/kostja94/marketing-skills#installation)
-
 +   Where to Use Skills
-
 +   Project Structure
-
 +   [Usage](https://github.com/kostja94/marketing-skills#usage)
-
 +   Project Context & Linking
-
 +   Available Skills
-
 +   How Skills Work Together
-
 +   [Tips & Rules](https://github.com/kostja94/marketing-skills#tips--rules)
-
 +   [Contributing](https://github.com/kostja94/marketing-skills#contributing)
-
 +   [Security](https://github.com/kostja94/marketing-skills#security)
-
 +   [References](https://github.com/kostja94/marketing-skills#references)
-
 +   [License](https://github.com/kostja94/marketing-skills#license)
 
 ## What are Skills?
 
 Skills are markdown files that give AI agents focused knowledge and workflows for specific tasks. Add them to your project, and your agent can handle SEO and page optimization with the right frameworks and best practices.
 
-Skills = for agents. For human-readabl[e SEO gu](https://alignify.co/)[ides and growth](https://github.com/kostja94/marketing-skills#project-context--linking) strategies, see Alignify. For best results, add Project Context.
+Skills = for agents. For human-readable SEO guides and growth strategies, see Alignify. For best results, add Project Context.
 
 ## Use Cases
 
-P[artnership](mailto:zyjstc@gmail.com): Building a vibe coding product or AI marketing agent? Contact me to integrate these skills.
+Partnership: Building a vibe coding product or AI marketing agent? Contact me to integrate these skills.
 
 ## Installation
 
@@ -64,24 +48,24 @@ Full or selective. Install all skills, or only the ones you need. Skills are ind
 
 ### CLI (Recommended)
 
+```
 # Install all
-
 npx skills add kostja94/marketing-skills
 
 # Install specific skills only
-
 npx skills add kostja94/marketing-skills --skill robots-txt title-tag meta-description pricing-page-generator
 
 # List available
-
 npx skills add kostja94/marketing-skills --list
+```
 
-CLI behavior: The skills CLI installs only skill folders (directories with SKILL.md). It does not download templates/ or docs/. Skills[ are placed in](https://github.com/kostja94/marketing-skills#clone-and-copy) a flat structure (e.g. .cursor/skills/robots-txt/, .cursor/skills/title-tag/) — the source repo's hierarchy (skills/seo/technical/, skills/pages/brand/) is flattened to match agent expectations. Need templates or full structure? Use Clone and Copy below.
+CLI behavior: The skills CLI installs only skill folders (directories with `SKILL.md`). It does not download `templates/` or `docs/`. Skills are placed in a flat structure (e.g. `.cursor/skills/robots-txt/`, `.cursor/skills/title-tag/`) — the source repo's hierarchy (`skills/seo/technical/`, `skills/pages/brand/`) is flattened to match agent expectations. Need templates or full structure? Use Clone and Copy below.
 
 ### Clone and Copy
 
 Use this when you need templates or the full repo structure (the CLI installs skills only, in flat layout).
 
+```
 git clone https://github.com/kostja94/marketing-skills.git
 
 cp -r marketing-skills/skills/* .cursor/skills/
@@ -89,24 +73,27 @@ cp -r marketing-skills/skills/* .cursor/skills/
 cp -r marketing-skills/templates .cursor/
 
 # For Claude Code: use .claude/ instead of .cursor/
+```
 
 ### Agent Skills Standard — Skill Directories
 
-Skills are loaded from these loc[ations per ](https://cursor.com/docs/context/skills)the Agent Skills specification and Cursor docs:
+Skills are loaded from these locations per the Agent Skills specification and Cursor docs:
 
-Each skill is a folder with a SKILL.md file. Platforms with native suppor[t: Cursor, C](https://github.com/kostja94/marketing-skills/blob/main/docs/where-to-use-skills.md)laude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Windsurf, Cline, Base44, Trae, OpenClaw. Full guide →
+Each skill is a folder with a `SKILL.md` file. Platforms with native support: Cursor, Claude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Windsurf, Cline, Base44, Trae, OpenClaw. Full guide →
 
 ### Git Submodule
 
+```
 git submodule add https://github.com/kostja94/marketing-skills.git .cursor/marketing-skills
 
 # Symlink or copy only the skill folders you need into .cursor/skills/
+```
 
 ## Where to Use Skills
 
 Skills are markdown — they work anywhere an AI can read text. No native skill support required.
 
-Full guide: where-to-use-skills.md — all platforms, install commands, path reference, Lovable example
+Full guide: `where-to-use-skills.md` — all platforms, install commands, path reference, Lovable example
 
 ## Project Structure
 
@@ -125,25 +112,24 @@ Ask your agent — it picks the right skill from your prompt. Examples:
 
 ## Project Context & Linking
 
-Without context, outputs stay generic. Add product-marketing-context.md so the agent delivers tailored copy and strategy. Place in .cursor/, .claude/, .lovable/, or your platform's config directory.
+Without context, outputs stay generic. Add `product-marketing-context.md` so the agent delivers tailored copy and strategy. Place in `.cursor/`, `.claude/`, `.lovable/`, or your platform's config directory.
 
 Templates:
 
-+   pro[duct-mar](https://raw.githubusercontent.com/kostja94/marketing-skills/main/templates/product-marketing-context.md)keting-context.md · download
-
-+   ski[lls-task](https://raw.githubusercontent.com/kostja94/marketing-skills/main/templates/skills-task-progress.md)-progress.md · download
++   `product-marketing-context.md` · download
++   `skills-task-progress.md` · download
 
 Start with: Product Overview, Positioning, Target Audience, Brand & Voice. Add Keywords, Competitors, Website as you have them. Update regularly — stale context degrades quality. See skills-guide §10 Customization.
 
 ## Available Skills
 
-[143 skill](https://github.com/kostja94/marketing-skills/blob/main/docs/skills-list.md)s in 9 categories. Full list · npx skills add kostja94/marketing-skills --list
+143 skills in 9 categories. Full list · `npx skills add kostja94/marketing-skills --list`
 
 ## How Skills Work Together
 
 Workflow order: Technical → On-Page → Content → Off-Page. Page skills apply SEO when optimizing specific page types. See each skill's Related Skills for the dependency map.
 
-Full dependency maps → — 5 ASCII trees: SEO Foundation | SERP & Rich Results | Pages | Growth (Channels/Platforms/Strategies) | Components & Analytics. seo-strategy orchestrates the SEO workflow.
+Full dependency maps → — 5 ASCII trees: SEO Foundation | SERP & Rich Results | Pages | Growth (Channels/Platforms/Strategies) | Components & Analytics. `seo-strategy` orchestrates the SEO workflow.
 
 ```
 ┌──────────────────────────────────────────┐
@@ -174,19 +160,19 @@ Output structure: Platform skills use full structure (Introduction → Importanc
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/kostja94/marketing-skills/blob/main/CONTRIBUTING.md)[. Rules and ](https://github.com/kostja94/marketing-skills/blob/main/docs/skills-guide.md)specs → skills-guide.
+See `CONTRIBUTING.md`. Rules and specs → skills-guide.
 
 ## Security
 
 +   Content: All skills are pure Markdown — no executable code, scripts, or binaries.
-
 +   Scope: Instructions are limited to SEO, content, and marketing workflows.
-
 +   No exfiltration: No instructions to send data externally, access env vars, or bypass safety.
 
-+   Audit: Reviewed for prompt injection patterns (hidden instructions, HTML comments, suspicious keywords).
 
-Details → [SECURITY.md](https://github.com/kostja94/marketing-skills/blob/main/docs/SECURITY.md)
+
++ Audit: Reviewed for prompt injection patterns (hidden instructions, HTML comments, suspicious keywords).
+
+Details → [`SECURITY.md`](https://github.com/kostja94/marketing-skills/blob/main/docs/SECURITY.md)
 
 ## References
 

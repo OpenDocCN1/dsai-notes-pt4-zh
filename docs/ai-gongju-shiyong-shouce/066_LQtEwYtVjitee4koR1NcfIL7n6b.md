@@ -1,3 +1,4 @@
+
 # 1、WPS AI邀请码申请
 
 > 来源：[https://my.feishu.cn/docx/ZrKNdUY3ZoHyA3xQbBacKE4gn4e](https://my.feishu.cn/docx/ZrKNdUY3ZoHyA3xQbBacKE4gn4e)
@@ -8,17 +9,13 @@ WPS AI已经成功拿到激活码开始体验了，申请方式给大家分享�
 
 ![](img/b8c59f251dfe5f866fdcb7a515ca0808.png)
 
-
 简单体验了一下对话，我对他的回复还是非常满意的！！！😻
-
-
-
 
 ![](img/28a3cd7d7af47796457e568833f3df55.png)
 
 ---
 
-### 申请方式
+## 申请方式
 
 ![](img/580caf266b856a6f089e486363ffcedf.png)
 

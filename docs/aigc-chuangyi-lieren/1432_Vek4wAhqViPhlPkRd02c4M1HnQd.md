@@ -1,3 +1,4 @@
+
 # 20250314-程序员要被AI淘汰？吴恩达怒怼：现在学编程的最佳时机！
 
 > 来源：[https://aigcreative.feishu.cn/docx/DuNodpMVIoJooRxkiuSccg3dn6f](https://aigcreative.feishu.cn/docx/DuNodpMVIoJooRxkiuSccg3dn6f)
@@ -52,7 +53,7 @@
 
 未来属于那些敢于学习、善于适应的弄潮儿！
 
-以下是推文原文：
+## 以下是推文原文：
 
 Some people today are discouraging others from learning programming on the grounds AI will automate it. This advice will be seen as some of the worst career advice ever given. I disagree with the Turing Award and Nobel prize winner who wrote, “It is far more likely that the programming occupation will become extinct [...] than that it will become all-powerful. More and more, computers will program themselves.” Statements discouraging people from learning to code are harmful!
 
@@ -70,7 +71,7 @@ When I was working on the course Generative AI for Everyone and needed to genera
 
 Similarly, scientists, analysts, marketers, recruiters, and people of a wide range of professions who understand the language of software through their knowledge of coding can tell an LLM or an AI-enabled IDE what they want much more precisely, and get much better results. As these tools are continuing to make coding easier, this is the best time yet to learn to code, to learn the language of software, and learn to make computers do exactly what you want them to do.
 
-译文：
+## 译文：
 
 今天有些人劝阻其他人学习编程，理由是AI会将其自动化。这些建议将被视为有史以来最糟糕的职业建议之一。我不同意图灵奖和诺贝尔奖得主的观点，他写道，“编程职业灭绝的可能性比它变得无所不能的可能性大得多。计算机将越来越多地自行编程。”劝阻人们学习编程的言论是有害的！
 
@@ -86,6 +87,6 @@ Similarly, scientists, analysts, marketers, recruiters, and people of a wide ran
 
 同样，科学家、分析师、营销人员、招聘人员以及通过编码知识理解软件语言的各行各业的人可以更精确地告诉法学硕士或AIIDE他们想要什么，并获得更好的结果。随着这些工具继续使编码变得更容易，这是学习编码、学习软件语言和学习让计算机做你想让它们做的事情的最佳时机。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`
 
-# 知识库动态
+## 知识库动态

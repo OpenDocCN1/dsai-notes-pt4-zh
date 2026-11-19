@@ -1,3 +1,4 @@
+
 # 1.3 RAG全栈技术
 
 > 来源：[https://kq4b3vgg5b.feishu.cn/docx/DNjxdpYK9ojeGYx9dMqcQrasnGb](https://kq4b3vgg5b.feishu.cn/docx/DNjxdpYK9ojeGYx9dMqcQrasnGb)
@@ -8,10 +9,10 @@
 
 ## 本项目的主要内容包括：
 
-1.  开&闭源基座大模型选择优劣势分析；
+1. 开&闭源基座大模型选择优劣势分析；
 
-1.  本地部署大模型的3个通用关键步骤，在线大模型API调用策略和技巧；
+1. 本地部署大模型的3个通用关键步骤，在线大模型API调用策略和技巧；
 
-1.  使用Gradio与Python实现可交互的实时对话功能；
+1. 使用Gradio与Python实现可交互的实时对话功能；
 
-1.  项目完结：具备"Chat With PDF" 的RAG 智能问答系统全功能演示。
+1. 项目完结：具备"Chat With PDF" 的RAG 智能问答系统全功能演示。

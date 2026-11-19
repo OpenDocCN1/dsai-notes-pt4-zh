@@ -1,8 +1,9 @@
+
 # 11🈷️13日
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/PC89dmGYCoIE0ZxjF4HcS4gynff](https://v11enp9ok1h.feishu.cn/docx/PC89dmGYCoIE0ZxjF4HcS4gynff)
 
-# OpenAI提议成立美国主导的全球联盟来构建 AI 基础设施
+## OpenAI提议成立美国主导的全球联盟来构建 AI 基础设施
 
 近日，OpenAI 在华盛顿的一个政策活动发布了一项新案，呼吁美国及其盟友人工智能（AI）领域加强合作，以应对中国这一领域的竞争。OpenAI 的提议旨在 “重振美国梦”，并希望通过全球协作来提升美国在人工智能领域的影响力。
 
@@ -18,7 +19,7 @@
 
 OpenAI 的这项提议不仅体现了该公司对未来人工智能发展的深刻思考，也传达出美国在全球科技竞争中希望重塑领导地位的决心。
 
-> **划重点:**
+> 划重点:
 
 > OpenAI 提出美国及盟友合作，增强人工智能领域的竞争力。
 

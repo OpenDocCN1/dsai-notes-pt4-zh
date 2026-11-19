@@ -1,10 +1,9 @@
+
 # 2023-09-14这款 AI 神器，彻底爆了！
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/K8e8dXrx0olhlNx22OfctBT4nzd](https://xuqiwei1986.feishu.cn/docx/K8e8dXrx0olhlNx22OfctBT4nzd)
 
 > 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s/DDQAJIcdtpfPwO2xQq47aA)q.com/s/DDQAJIcd...
-
->
 
 原创 Jack Cui Jack Cui
 
@@ -34,11 +33,11 @@
 
 都有哪些强大的功能，我们一起体验下吧！
 
-## ** PromptPerfect**
+## PromptPerfect
 
 先放下官网地址（PC端体验最好）：
 
-**https://promptper**fect.jinaai.cn/a/NEW
+`https://promptperfect.jinaai.cn/a/NEW`
 
 可以使用🛰️扫码登陆，非常方便，直接网页版在线使用。
 
@@ -46,7 +45,7 @@ PromptPerfect（以下简称 PP）功能非常丰富：
 
 ![](img/26b275e0ea6497541a51fe3fd193292c.png)
 
-### ** 1、提示词 **
+### 1、提示词
 
 我们重点先聊下提示词优化。
 
@@ -104,7 +103,7 @@ PP 不仅仅支持 ChatGPT 的 Prompt 优化，光文本大模型就支持 12 �
 
 ![](img/725f27f2510e0ad2abd1210265553e91.png)
 
-### ** 2、服务化 **
+### 2、服务化
 
 PP 的强大，不仅局限于 Prompt 优化。
 
@@ -120,7 +119,7 @@ PP 的强大，不仅局限于 Prompt 优化。
 
 ![](img/fc1b7127e2517c7dc324ba5b7e82ec21.png)
 
-然后就可以构建一个可用的公开 API 接口，并提供了curl，Python，JS 的代码，可以让任何人都通过 API 调用你的聊天机器人服务。
+然后就可以构建一个可用的公开 API 接口，并提供了`curl`，`Python`，`JS` 的代码，可以让任何人都通过 API 调用你的聊天机器人服务。
 
 这样包装一下，是不是可以做个 AI 聊天机器人了？
 
@@ -138,7 +137,7 @@ PP 的强大，不仅局限于 Prompt 优化。
 
 可以选择多种模型进行对比，非常 nice，一个 PP 账号就能体验各种大语言模型了。
 
-## ** 最后**
+## 最后
 
 这种让 AI 调教 AI 的工具，让 Prompt 优化更高效，非常实用的一款工具。
 
@@ -146,12 +145,12 @@ PP 的强大，不仅局限于 Prompt 优化。
 
 注册就送 20 积分，每天登录还可以产生积分：
 
-**https://promptper**fect.jinaai.cn/a/NEW
+`https://promptperfect.jinaai.cn/a/NEW`
 
-**此外还有**抽奖活动，填写**下方的问卷**即可参与，会抽取 5 名 用户送出价值 68 元 的积分兑换券，明天下午四点揭晓。
+此外还有抽奖活动，填写下方的问卷即可参与，会抽取 5 名 用户送出价值 68 元 的积分兑换券，明天下午四点揭晓。
 
-https://www.wjx.cn/vm/mBzPj9Y.aspx
+`https://www.wjx.cn/vm/mBzPj9Y.aspx`
 
-并且，凡是注册后参与问卷调研的小**伙伴，都有机会领到新用**户专享🛰️红包！ 共200份，先到先得！
+并且，凡是注册后参与问卷调研的小伙伴，都有机会领到新用户专享🛰️红包！ 共200份，先到先得！
 
 好了，今天就聊这么多吧，我是 Jack，我们下期见！

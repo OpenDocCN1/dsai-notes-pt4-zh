@@ -1,3 +1,4 @@
+
 # 中国AIGC产业全景报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/KwnNdjahbo3TTJxfAjicje1CnJf](https://agijuejin.feishu.cn/docx/KwnNdjahbo3TTJxfAjicje1CnJf)

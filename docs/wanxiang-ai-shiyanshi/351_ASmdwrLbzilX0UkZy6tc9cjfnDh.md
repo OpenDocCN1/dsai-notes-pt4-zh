@@ -1,3 +1,4 @@
+
 # 写文章找配图太麻烦，于是我给自己捏了个配图助手 Skills
 
 > 来源：[https://yunyinghui.feishu.cn/docx/TRoXd2qltoVBoqxEERxcT77LnZe](https://yunyinghui.feishu.cn/docx/TRoXd2qltoVBoqxEERxcT77LnZe)
@@ -14,21 +15,15 @@
 
 想找一个好的配图就得去各种图库里翻半天，经常会出现脑子里明明很想要一个图，但是并不知道这个图放在了哪里；用 AI 生成配图就又得去每次开一个提示词，先读取文章的内容、然后生成提示词、再用提示词生成图，这个流程每次都得依赖人工点点点，所以我一般只用在封面生成上。
 
-
 最近研究 skills，我想看看能不能封装一个 skills 来简化我写内容配图的流程，于是我开始了各种测试，最后搞出来了配图助手 skills。
 
 先给大家看看我用配图助手 skills 做的图吧：
-
-
-
-
-
 
 ![](img/2550f64ba391e8e92949cd0b95c802f0.png)
 
 这些图都是用配图助手 skills 生成的，接下来我跟大家分享一下配图助手 skills 的安装和使用流程～
 
-**1.下载安装 Skills**
+## 1. 下载安装 Skills
 
 配图助手 skills 我上传到了 github 上，大家可以选择访问链接下载，也可以让 AI 来帮忙下载，目前配图助手 skills 在 claude code 和 codex 均可出图使用。
 
@@ -44,11 +39,11 @@ Github 链接： https://github.com/yunshu0909/yunshu_skillshub
 
 ![](img/5f5e072cad39bc616ecd3529ce8179cb.png)
 
-**2.配置 API**
+## 2. 配置 API
 
 ✏️
 
-**API 不配置并不影响配图助手前几个步骤的使用，只是在生成**图片这一环节，需要改为人工手动搬运完成。
+API 不配置并不影响配图助手前几个步骤的使用，只是在生成图片这一环节，需要改为人工手动搬运完成。
 
 下载完成后先不要着急放到 skills 目录里，接下来需要配置 api key，让 AI 有完整的调用模型出图的能力。
 
@@ -60,7 +55,7 @@ Github 链接： https://github.com/yunshu0909/yunshu_skillshub
 
 大家如果想更换其它的出图模型和 API，可以把对应的 API 信息告诉模型，让模型修改配图助手里的对应信息即可。
 
-**3.把配图助手安装到 claude code** / codex 的 skills 库里
+## 3. 把配图助手安装到 claude code / codex 的 skills 库里
 
 配图助手 skills 信息配置好后并不能直接使用，还需要我们把它安装到工具的 skills 库里才能正常调用。
 
@@ -68,19 +63,19 @@ AI 安装方式：请把这个 skills 安装到你的 skills 库里 @对应的 s
 
 ![](img/ae1b9a564301cec2089da07b55bb4d6c.png)
 
-手动安装方式：把配图助手 skills 复制到对应工具的 skills 目录文件下即可，claude code 是目录文件是：。 claude/skills/，codex 是目录文件是：. codex/skills/。
+手动安装方式：把配图助手 skills 复制到对应工具的 skills 目录文件下即可，claude code 是目录文件是：`claude/skills/`，codex 是目录文件是：`.codex/skills/`。
 
 ![](img/1427b91528fcd4db7aaf779016914431.png)
 
-4.配图助手 skills 使用流程
+## 4. 配图助手 skills 使用流程
 
 配图助手 skills 会分成五步来完成配图产出的任务，它每一步环节都会和人做各种信息的确认。
 
 ![](img/a742fee051896085a88ae9edecb64a0b.png)
 
-**第一步：需求澄清**
+### 第一步：需求澄清
 
-通过 /image-assistant 指令或者说我需要配图助手，即可唤醒配图助手 skills，它会找你要文章的内容和预期的风格。
+通过 `/image-assistant` 指令或者说我需要配图助手，即可唤醒配图助手 skills，它会找你要文章的内容和预期的风格。
 
 ![](img/b0f4f469a633bf12d0bc8254e9654f4f.png)
 
@@ -88,31 +83,31 @@ AI 安装方式：请把这个 skills 安装到你的 skills 库里 @对应的 s
 
 ![](img/780b7ca852c10c27994a43dff998413b.png)
 
-**第二步：配图规划**
+### 第二步：配图规划
 
 规划阶段配图助手会给到每一张图的设计思路和文字预算以及模版建议，如果你确认没问题它会去产出文案。
 
 ![](img/4416ec02887d2f7b48ea451d87c6b920.png)
 
-**第三步：文案定稿**
+### 第三步：文案定稿
 
 配图助手会逐张确定图上写什么文字，对应的图片布局是什么样子，确认无误后它会去产出提示词。
 
 ![](img/87c709a8351085753e899f76525d2532.png)
 
-**第四步：提示词封装**
+### 第四步：提示词封装
 
 这步配图助手会为批量调用 API 做准备，生成 API 请求所需要的提示词指令。
 
 ![](img/2f98a55b3fffa96593351b117ebab246.png)
 
-**第五步：批量出图**
+### 第五步：批量出图
 
 配图助手会批量调用 API 来生成图片，然后把生成的图片保存到文件夹里。
 
 ![](img/631d37ea1adcb549f62864c53637f560.png)
 
-5.配图助手 skills 流程设计逻辑
+## 5. 配图助手 skills 流程设计逻辑
 
 那为什么不直接给它一篇文章让它框框生成图片就好了，还要做这样的流程拆分设计？
 

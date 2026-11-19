@@ -1,9 +1,8 @@
+
 # AI智能体卷爆大模型！AutoGPT等4大Agent打擂，「西部世界」谁将成为软件2.0？
 
-> 来源：[https://agijuejin.feishu.cn/docx/Koz6dE7rGoN355xlS9Oc3DodnEe](https://agijuejin.feishu.cn/docx/Koz6dE7rGoN355xlS9Oc3DodnEe)
-
+> 来源：https://agijuejin.feishu.cn/docx/Koz6dE7rGoN355xlS9Oc3DodnEe
 > 作者：新智元
-
 > 原文链接：https://mp.weixin.qq.com/s/b04F8oQfRaY2z-FjzA4pMw
 
 > **【新智元导读】**LLM之后的下一个热点是AI智能体？Karpathy直言：现在OpenAI内部对于AI Agent的论文十分追捧，或许这就是OpenAI的新方向。
@@ -20,9 +19,9 @@
 
 ![](img/4ea8a1b11e6bafd8350a30e96f4c3132.png)
 
-Karpathy曾将AutoGPT称为快速工程的下一个前沿
+Karpathy曾将`AutoGPT`称为快速工程的下一个前沿
 
-其实，早在今年三、四月，就有过一轮AI智能体的大爆发，仿佛巧合一样，在短短两周内，斯坦福西部世界小镇、BabyAGI、AutoGPT等多个智能体，就如雨后春笋一般冒出来。
+其实，早在今年三、四月，就有过一轮AI智能体的大爆发，仿佛巧合一样，在短短两周内，斯坦福西部世界小镇、`BabyAGI`、`AutoGPT`等多个智能体，就如雨后春笋一般冒出来。
 
 ![](img/a697effb109d723e5c948475b6e36bf6.png)
 
@@ -30,19 +29,19 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 说不定，一不小心自己就能卷成AI智能体赛道上的「OpenAI」！
 
-# AI智能体大爆发，让AGI雏形初显？
+## AI智能体大爆发，让AGI雏形初显？
 
 今天，就让我们回顾一下几个月前的这股AI Agent大爆发。这些智能体出现的时间，都非常接近。
 
-3月21日，Camel发布。
+3月21日，`Camel`发布。
 
 ![](img/acae3749467b5fa107c74965d6ae33c9.png)
 
-3月30日，AutoGPT发布。
+3月30日，`AutoGPT`发布。
 
 ![](img/2f258bdb493ff15317e2c460149c9ad5.png)
 
-4月3日，BabyAGI发布。
+4月3日，`BabyAGI`发布。
 
 ![](img/5876b0385ed57ef7785b96db7473fa7b.png)
 
@@ -50,7 +49,7 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 ![](img/020fdbf208187452b0b2c4aeb6e9a5a9.png)
 
-5月27日，英伟达AI智能体Voyager接入GPT-4后，直接完胜了AutoGPT。通过自主写代码，它完全独霸了《我的世界》，可以在游戏中进行全场景的终身学习，根本无需人类插手。
+5月27日，英伟达AI智能体Voyager接入GPT-4后，直接完胜了`AutoGPT`。通过自主写代码，它完全独霸了《我的世界》，可以在游戏中进行全场景的终身学习，根本无需人类插手。
 
 ![](img/5ad11c92a0d99d3683606449aa27face.png)
 
@@ -58,7 +57,7 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 这些表现优异的AI智能体，简直让人看到了AGI+智能体的雏形。
 
-# 项目1：斯坦福、谷歌「西部世界」
+## 项目1：斯坦福、谷歌「西部世界」
 
 对于前几个AI智能体，Anacondainc数据科学家、Sophia Yang博士，就曾在博客中给出过全面分析。这几个AI智能体中，最吸引眼球的，无疑就是一经推出就爆火的，斯坦福和谷歌的研究者共同创建的西部世界小镇了。
 
@@ -82,7 +81,7 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 生成式智能体的架构
 
-### **1）记忆和检索**
+### 1）记忆和检索
 
 记忆流包含每个智能体的观察列表，其中，每个观察都有自己的时间戳。
 
@@ -100,7 +99,7 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 记忆流包含大量的观察，检索过程会确定应该传递给语言模型的这些观察的子集
 
-### **2）反思**
+### 2）反思
 
 反思是一种高层次的抽象思考，可以帮助智能体进行概括和推理。
 
@@ -110,7 +109,7 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 反思树
 
-### **3）规划**
+### 3）规划
 
 规划很重要，因为行动不仅应该集中在当下，而且应该集中在更长的时间范围内，这样，行动才能够连贯和可信。规划同样存储在记忆流中。智能体可以根据规划创建行动，并根据记忆流中的其他观察结果做出反应和更新计划。
 
@@ -126,9 +125,9 @@ Karpathy曾将AutoGPT称为快速工程的下一个前沿
 
 ![](img/82efe8414c36ff230aee9d9f3f2335ee.png)
 
-# 项目2：Camel
+## 项目2：Camel
 
-Camel以「角色扮演」而闻名。
+`Camel`以「角色扮演」而闻名。
 
 ![](img/e1916f7c02b114b3ca782cbcf3b13008.png)
 
@@ -142,7 +141,7 @@ Camel以「角色扮演」而闻名。
 
 ![](img/10c3814d6631e2dbf414c301f99a14f8.png)
 
-下面这个例子，展示的就是如何利用Camel来开发一个交易机器人。
+下面这个例子，展示的就是如何利用`Camel`来开发一个交易机器人。
 
 其中，AI用户是一个股票交易员，AI助手是一个Python程序员。
 
@@ -154,23 +153,23 @@ Camel以「角色扮演」而闻名。
 
 角色扮演架构
 
-Camel的核心在于其提示工程，即初始提示。这些提示实际上是经过精心定义的，用于分配角色，防止角色反转，禁止生成有害和虚假的信息，并鼓励连贯的对话。
+`Camel`的核心在于其提示工程，即初始提示。这些提示实际上是经过精心定义的，用于分配角色，防止角色反转，禁止生成有害和虚假的信息，并鼓励连贯的对话。
 
 ![](img/af535fadb115b4a4a23d424681bbdd13.png)
 
 论文地址：https://arxiv.org/abs/2303.17760
 
-### **LangChain实现**
+### LangChain实现
 
-在LangChain的实现中，用的是Camel论文中给出的提示，并定义了三个智能体：
+在`LangChain`的实现中，用的是`Camel`论文中给出的提示，并定义了三个智能体：
 
-1）task_specify_agent（任务指定智能体）
+1）`task_specify_agent`（任务指定智能体）
 
-2）assistant_agent（助手智能体）
+2）`assistant_agent`（助手智能体）
 
-3）user_agent（用户智能体）。
+3）`user_agent`（用户智能体）。
 
-然后，使用一个while循环来循环进行助手智能体和用户智能体之间的对话：
+然后，使用一个`while`循环来循环进行助手智能体和用户智能体之间的对话：
 
 ```
 chat_turn_limit, n = 30, 0
@@ -191,15 +190,15 @@ while n &lt; chat_turn_limit:
 
 ![](img/49d337a4f0168999e5b6f51c03814fbb.png)
 
-不过，在Camel中，AI助手的执行结果只是语言模型的回答，而没有真正使用任何工具来运行Python代码。
+不过，在`Camel`中，AI助手的执行结果只是语言模型的回答，而没有真正使用任何工具来运行Python代码。
 
 ### 举个栗子
 
-利用Camel，一个人类程序员，一个人类游戏玩家，就和两个AI智能体一起，合作创建了一个游戏。
+利用`Camel`，一个人类程序员，一个人类游戏玩家，就和两个AI智能体一起，合作创建了一个游戏。
 
 ![](img/d8030fe6bf0a44358a4be12ae9c00677.png)
 
-作者用Camel创建了两个智能体，一个玩家，一个程序员。
+作者用`Camel`创建了两个智能体，一个玩家，一个程序员。
 
 给他们设定好制作一个游戏的目标后，玩家智能体就一步一步拆解制作游戏的步骤。
 
@@ -207,7 +206,7 @@ while n &lt; chat_turn_limit:
 
 像极了未来的人类和编码AI开发一个具体项目的过程。
 
-也有人使用Camel角色扮演了潜在的恶意应用程序。
+也有人使用`Camel`角色扮演了潜在的恶意应用程序。
 
 ![](img/0f7614e589ca6f29839ae435739530a3.png)
 
@@ -225,13 +224,13 @@ while n &lt; chat_turn_limit:
 
 如果这种恶意智能体真的能发挥效果，人类被「偷家」也就是一瞬间的事。这就更让我们对AI对齐问题感到警醒。
 
-# 项目3：BabyAGI
+## 项目3：BabyAGI
 
 ![](img/dd1d4e4752367bdf5eac3b2c6a77025c.png)
 
-Yohei Nakajima在3月28日发布了「任务驱动的自主智能体」（Task-driven Autonomous Agent），并在4月3日开源了BabyAGI项目。
+Yohei Nakajima在3月28日发布了「任务驱动的自主智能体」（Task-driven Autonomous Agent），并在4月3日开源了`BabyAGI`项目。
 
-BabyAGI的关键特点是只有三个智能体：任务执行智能体（Task Execution Agent）、任务创建智能体（Task Creation Agent）和任务优先级智能体（Task Prioritization Agent）。
+`BabyAGI`的关键特点是只有三个智能体：任务执行智能体（Task Execution Agent）、任务创建智能体（Task Creation Agent）和任务优先级智能体（Task Prioritization Agent）。
 
 1）任务执行智能体按顺序完成列表中的任务
 
@@ -241,7 +240,7 @@ BabyAGI的关键特点是只有三个智能体：任务执行智能体（Task Ex
 
 然后，这个简单的过程将会不断地重复。
 
-在LangChain的网络研讨会上Yohei称，他设计BabyAGI就是模拟自己的工作方式。
+在`LangChain`的网络研讨会上Yohei称，他设计`BabyAGI`就是模拟自己的工作方式。
 
 ![](img/e8d4f0d923191906dfd36ad9e28588dd.png)
 
@@ -259,23 +258,23 @@ BabyAGI的关键特点是只有三个智能体：任务执行智能体（Task Ex
 
 ![](img/a4ddfb8a6858f68a63add76b47775ab6.png)
 
-BabyAGI流程图（有趣的是，这篇研究论文是在GPT-4的辅助下完成的）
+`BabyAGI`流程图（有趣的是，这篇研究论文是在GPT-4的辅助下完成的）
 
 ### BabyAGI + LangChain
 
-在LangChain框架中，运行BabyAGI非常简单。
+在`LangChain`框架中，运行`BabyAGI`非常简单。
 
-首先，创建一个BabyAGI控制器，其中包含三个链：
+首先，创建一个`BabyAGI`控制器，其中包含三个链：
 
-1）任务创建链（TaskCreationChain）
+1）任务创建链（`TaskCreationChain`）
 
-2）任务优先级链（TaskPrioritizationChain）
+2）任务优先级链（`TaskPrioritizationChain`）
 
-3）执行链（ExecutionChain）
+3）执行链（`ExecutionChain`）
 
 然后，在一个（潜在的）无限循环中运行它们。
 
-通过Langchain，可以定义最大迭代次数，这样它就不会无限运行并消耗掉所有的OpenAI API额度。
+通过`LangChain`，可以定义最大迭代次数，这样它就不会无限运行并消耗掉所有的`OpenAI` API额度。
 
 ```
 OBJECTIVE = &quot;Write a weather report for SF today&quot;
@@ -297,31 +296,31 @@ baby_agi({&quot;objective&quot;: OBJECTIVE})
 
 ![](img/f370fba0a9618f11680c52cdf6aeb7d9.png)
 
-BabyAGI + LangChain工具 = 超能力
+`BabyAGI` + `LangChain`工具 = 超能力
 
-正如上图所示，BabyAGI只「执行」有大语言模型回复的内容。
+正如上图所示，`BabyAGI`只「执行」有大语言模型回复的内容。
 
-借助LangChain工具的强大功能，智能体可以在「执行」过程中利用各种工具，例如用谷歌在互联网上搜索信息。
+借助`LangChain`工具的强大功能，智能体可以在「执行」过程中利用各种工具，例如用谷歌在互联网上搜索信息。
 
 下面这个例子，展示的就是「执行」用谷歌来搜索旧金山当前天气的过程。
 
 ![](img/f0458eff756ed84f26cadd5dda0beb89.png)
 
-BabyAGI的应用潜力，可以说是巨大的——只需要制定一个目标，它就会自己去执行。
+`BabyAGI`的应用潜力，可以说是巨大的——只需要制定一个目标，它就会自己去执行。
 
 不过，它还是缺少一个可以和用户进行更多交互的UI。
 
-比如，在BabyAGI为用户安排邀约之前，应该先进行确认。
+比如，在`BabyAGI`为用户安排邀约之前，应该先进行确认。
 
 我们来看一些实际的使用案例吧：
 
-### **Cognosys**
+### Cognosys
 
 ![](img/ba8f40e72b4b1a0a1e0b4f6a669e57a3.png)
 
 网址：https://www.cognosys.ai/
 
-它是BabyAGI的网络版。
+它是`BabyAGI`的网络版。
 
 免费版本可以访问ChatGPT，执行最多7个智能体循环。
 
@@ -345,7 +344,7 @@ https://www.doanythingmachine.com/
 
 ![](img/f6e55a77922c269878397c65ac16ea1b.png)
 
-### **God Mod**
+### God Mod
 
 ![](img/2f45dd43c201a47feb957f9279f56906.png)
 
@@ -359,21 +358,25 @@ https://godmode.space/
 
 ![](img/612f7987673f108b6e61cff94a0985cc.png)
 
-# 项目4：AutoGPT
+## 项目4：AutoGPT
 
-AutoGPT刚出现，就被Karpathy盛赞是prompt工程的下一个前沿。短短几天就在GitHub狂揽2.7万星，火爆整个AI社区。
+`AutoGPT`刚出现，就被Karpathy盛赞是prompt工程的下一个前沿。短短几天就在GitHub狂揽2.7万星，火爆整个AI社区。
 
-它遵循类似于BabyAGI的逻辑——包括产生想法、推理、生成计划、点评、规划下一步行动和执行的过程，然后无限循环这个过程。
+它遵循类似于`BabyAGI`的逻辑——包括产生想法、推理、生成计划、点评、规划下一步行动和执行的过程，然后无限循环这个过程。
 
-在执行步骤中，AutoGPT可以完成很多命令，比如谷歌搜索、浏览网站、写入文件和执行Python文件。
+在执行步骤中，`AutoGPT`可以完成很多命令，比如谷歌搜索、浏览网站、写入文件和执行Python文件。
 
 甚至，还可以启动和删除GPT智能体（这也泰裤辣！）。
 
-在运行AutoGPT时，有两个初始的提示输入：
+在运行`AutoGPT`时，有两个初始的提示输入：
 
 1）AI的角色
 
 2）AI的目标
+
+
+
+# AI智能体文明要出现了，还卷大模型不？
 
 ![](img/f7c7ba5cca9d386516a9eb2dccd04eea.png)
 
@@ -391,15 +394,15 @@ AutoGPT最厉害的一点就是，它能在一定程度上允许人类和他进�
 
 如果它还能够与人类进行对话，让我们实时提供更好的指导和反馈的话，那就太赞了。
 
-### **编写自己的代码并执行脚本**
+## 编写自己的代码并执行脚本
 
-项目地址：https://github.com/Significant-Gravitas/Auto-GPT
+项目地址：`https://github.com/Significant-Gravitas/Auto-GPT`
 
 同样，这个项目也是由ChatGPT驱动，它会自动按照用户的要求去写代码，以及完成其他工作。
 
 ![](img/ff86dface71718865301b2cc48392422.png)
 
-### **使用AutoGPT在网上点披萨**
+## 使用AutoGPT在网上点披萨
 
 ![](img/d7d12f6e512828ee2d0e45ab8c9fab86.png)
 
@@ -408,8 +411,6 @@ AutoGPT最厉害的一点就是，它能在一定程度上允许人类和他进�
 这个项目能直接帮你完成点餐过程中那些繁琐的流程。
 
 输入地址，选择口味等步骤都不用你亲自动手，你只用在一旁看着，如果发现问题及时纠正就好了。
-
-# AI智能体文明要出现了，还卷大模型不？
 
 虽然刚刚介绍的这4个AI智能体，仍处于早期开发阶段，但它们已经展示出了令人印象深刻的成果和潜在应用。
 
@@ -437,12 +438,12 @@ Karpathy表示，在2016年左右，自己早期在OpenAI工作时，当时的�
 
 如果没有在做GPT-5，那OpenAI是不是正在暗中发力，做起了大模型智能体呢？让我们静静等待。
 
-PS：顺便一提，关于在上述智能体中大显身手的LangChain，吴恩达今日刚刚上线了新课程《LangChain：构建与数据对话的聊天机器人》。
+PS：顺便一提，关于在上述智能体中大显身手的`LangChain`，吴恩达今日刚刚上线了新课程《LangChain：构建与数据对话的聊天机器人》。
 
 ![](img/f0c4393f03c564ad845cf4a941d7bcfc.png)
 
-https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
+`https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/`
 
 参考资料：
 
-https://towardsdatascience.com/4-autonomous-ai-agents-you-need-to-know-d612a643fa92
+`https://towardsdatascience.com/4-autonomous-ai-agents-you-need-to-know-d612a643fa92`

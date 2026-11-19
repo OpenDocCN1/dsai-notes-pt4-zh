@@ -1,10 +1,11 @@
+
 # LayerDiffusion——AI绘画的新工具
 
 > 来源：[https://agijuejin.feishu.cn/docx/L9n2dtDbhosX6nx854ncYaTInyf](https://agijuejin.feishu.cn/docx/L9n2dtDbhosX6nx854ncYaTInyf)
-
+>
 > 作者：德里克文
-
-> 原文： [https://zhuanlan.z](https://zhuanlan.zhihu.com/p/684977096)hihu.com/p/684977...
+>
+> 原文：[https://zhuanlan.zhihu.com/p/684977096](https://zhuanlan.zhihu.com/p/684977096)
 
 对于使用AI绘画的设计师而言，你是否希望在AI绘画生成的图像中，能够自动区分图层，而不需要再利用Photoshop进行繁琐的P图工作？
 
@@ -12,7 +13,7 @@
 
 最新的LayerDiffusion技术带来了这一神奇的可能！
 
-他是[由来自斯坦](https://zhida.zhihu.com/search?q=%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B&zhida_source=entity&is_preview=1)福大学研究人员Lvmin Zhang（即ControlNet和Fooocus的作者张吕敏）和Maneesh Agrawala的全新技术，是基于大规模预训练的潜在 扩散模型 （如Stable Diffusion）创造的。
+他是由来自斯坦福大学研究人员Lvmin Zhang（即ControlNet和Fooocus的作者张吕敏）和Maneesh Agrawala的全新技术，是基于大规模预训练的潜在[扩散模型](https://zhida.zhihu.com/search?q=%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B&zhida_source=entity&is_preview=1)（如Stable Diffusion）创造的。
 
 题外话说一句，张吕敏实在太牛了，在AI绘画应用层面给大家带来了这么多实用的工具。
 
@@ -30,13 +31,13 @@ LayerDiffusion的重要核心在于它创新地引入了“潜在透明度”的
 
 项目地址：
 
-[  ](https://link.zhihu.com/?target=https%3A//github.com/layerdiffusion/sd-forge-layerdiffusion)
+[项目地址](https://link.zhihu.com/?target=https%3A//github.com/layerdiffusion/sd-forge-layerdiffusion)
 
 ## 内容简介
 
 对于这篇文章的整体内容，我这里也做了下一个整理和简介。
 
-作者在文章中确认这个 [代码库 ](https://zhida.zhihu.com/search?q=%E4%BB%A3%E7%A0%81%E5%BA%93&zhida_source=entity&is_preview=1)目前仍在积极开发中，因此可能在下一个月会有很多改变。
+作者在文章中确认这个[代码库](https://zhida.zhihu.com/search?q=%E4%BB%A3%E7%A0%81%E5%BA%93&zhida_source=entity&is_preview=1)目前仍在积极开发中，因此可能在下一个月会有很多改变。
 
 ![](img/d30945d7123b7054881a109adb378bff.png)
 
@@ -44,7 +45,7 @@ LayerDiffusion的重要核心在于它创新地引入了“潜在透明度”的
 
 它将生成图像并提供基本的图层功能，但透明的图像到图像功能还没有完成（预计在一周内完成）。
 
-[他们还发布](https://zhida.zhihu.com/search?q=%E6%89%A9%E6%95%A3%E8%BF%87%E7%A8%8B&zhida_source=entity&is_preview=1)了一个视频，展示了在透明 扩散过程 中潜在预览的效果。
+[他们还发布](https://zhida.zhihu.com/search?q=%E6%89%A9%E6%95%A3%E8%BF%87%E7%A8%8B&zhida_source=entity&is_preview=1)了一个视频，展示了在透明扩散过程中潜在预览的效果。
 
 接着，他们详细介绍了一系列的模型，解释了每个模型的功能和它们的应用情况。
 
@@ -88,4 +89,4 @@ LayerDiffusion技术的工作方式如同一位设计师在制作不同图层的
 
 ---
 
-我是 [德里克文 ](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3098715893%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！
+我是[德里克文](https://www.zhihu.com/search?q=%E5%BE%B7%E9%87%8C%E5%85%8B%E6%96%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3098715893%7D)，一个对AI绘画，人工智能有强烈兴趣，从业多年的室内设计师！如果对我的文章内容感兴趣，请帮忙关注点赞收藏，谢谢！

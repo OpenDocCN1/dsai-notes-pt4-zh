@@ -1,19 +1,17 @@
-# Nano Banana Pro文生图设计系统开发实战
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/Q4CldUDrTo1X76xmQodcego8nCc](https://kq4b3vgg5b.feishu.cn/docx/Q4CldUDrTo1X76xmQodcego8nCc)
 
 # Nano Banana Pro文生图设计系统开发实战
 
-欢迎大家参与本期公开课课程的学习！在本课程中，我们将深入学习如何通过 LiteLLM + OpenRouter 接入 Google 最新发布的 Gemini 3 Pro Image Preview 模型（也称为 Nano Banana Pro），并基于该模型完整实现一个具备国内网络环境应用 + 完全私有化部署的文生图设计系统。
+> 来源：`[https://kq4b3vgg5b.feishu.cn/docx/Q4CldUDrTo1X76xmQodcego8nCc](https://kq4b3vgg5b.feishu.cn/docx/Q4CldUDrTo1X76xmQodcego8nCc)`
+
+欢迎大家参与本期公开课课程的学习！在本课程中，我们将深入学习如何通过 `LiteLLM` + `OpenRouter` 接入 Google 最新发布的 `Gemini 3 Pro Image Preview` 模型（也称为 `Nano Banana Pro`），并基于该模型完整实现一个具备国内网络环境应用 + 完全私有化部署的文生图设计系统。
 
 ![](img/03a003899ca79ab8188bfe6593d093be.png)
 
-核心功能一：无需担心因网络限制无法调用 Nano Banana Pro 模型，通过 LiteLLM + OpenRouter 接入，最低一张图仅需 8 毛钱（人民币）；
+核心功能一：无需担心因网络限制无法调用 `Nano Banana Pro` 模型，通过 `LiteLLM` + `OpenRouter` 接入，最低一张图仅需 8 毛钱（人民币）；
 
 ![](img/1691aa650f861128ef7c8f021995e74c.png)
 
 核心功能二：支持不同分辨率（2k）、不同长宽高比、以及单次请求同时生成多张图片；
-
 
 核心功能三：支持自然语言描述生图、在线上传图片并基于图片生图，以及可以针对生成后的图片进行多轮修复；
 
@@ -21,49 +19,59 @@
 
 在这节课中，我们将从模型特性、接入方法、到实战应用，全方位带大家掌握这个最先进的 AI 图像生成工具。无论你是想学习 AI 绘图技术，还是想将其集成到实际项目中，这节课都会给你带来巨大的收获。
 
-# 一、Nano Banana Pro 模型介绍
+## 一、Nano Banana Pro 模型介绍
 
-谷歌在很早的3个月前就发布了Nano Banana 横空出世，当时直接颠覆了 AI 图像生成技术领域，而现在发布的 Nano Banana Pro 的正式发布，再次把 AI 生图技术推向全新的高度
+谷歌在很早的3个月前就发布了 `Nano Banana` 横空出世，当时直接颠覆了 AI 图像生成技术领域，而现在发布的 `Nano Banana Pro` 的正式发布，再次把 AI 生图技术推向全新的高度
 
 ![](img/6526963d9a4f36d744716183f41bd0f1.png)
 
-**  Nano B**anana Pro 相比前代实现了以下 9大核心技术突破：
+`Nano Banana Pro` 相比前代实现了以下 9大核心技术突破：
 
 Nano Banana Pro 九大核心技术突破
 
 | 序号 | 技术突破 | 核心能力描述 |
-| --- | --- | --- |
-| 1 | **图像生成质量大幅提升** | 整体图像质量相比前代有显著提升，细节更加丰富，色彩更加自然 |
-| 2 | **多语种文本生成能力** | 能够生成更加清晰的多语种文字，解决了传统 AI 模型在文字生成上的痛点 |
-| 3 | **原生图像推理能力** | 具备强大的图像推理能力，能够理解图像之间的逻辑关系和上下文 |
-| 4 | **真实物理世界理解** | 对真实物理世界的理解能力大幅增强，生成的图像更加符合物理规律 |
-| 5 | **专业摄影级图像控制** | 可自由切换图片色彩、光线效果、背景环境等专业摄影级别的图像细节参数 |
-| 6 | **4K 高清分辨率支持** | 最高支持 4K 分辨率 的图片生成，大幅提升图像清晰度 |
-| 7 | **任意比例调整与扩写** | 可任意调整图片比例、对图片进行扩写（画幅拓展），确保扩展前后风格高度一致 |
-| 8 | **主题一致性大幅提升** | 精准识别图像中最多十几个实体 并进行组合绘图，保持主题和风格的高度一致性 |
-| 9 | **写实感大幅提升** | 写实图像的 &quot;AI 味&quot; 大幅下降，真实感大幅提升（例如红眼树蛙照片几乎可以以假乱真） |
 
-当然，考虑到 Nano Banana Pro 的图像太过逼真，Google 还在 Gemini 中同步上线了 AI 照片识别功能，基于 SynthID 隐形水印技术来判断图片是否由 Nano Banana 生成。
+| --- | --- | --- |
+
+| 1 | **图像生成质量大幅提升** | 整体图像质量相比前代有显著提升，细节更加丰富，色彩更加自然 |
+
+| 2 | **多语种文本生成能力** | 能够生成更加清晰的多语种文字，解决了传统 AI 模型在文字生成上的痛点 |
+
+| 3 | **原生图像推理能力** | 具备强大的图像推理能力，能够理解图像之间的逻辑关系和上下文 |
+
+| 4 | **真实物理世界理解** | 对真实物理世界的理解能力大幅增强，生成的图像更加符合物理规律 |
+
+| 5 | **专业摄影级图像控制** | 可自由切换图片色彩、光线效果、背景环境等专业摄影级别的图像细节参数 |
+
+| 6 | **4K 高清分辨率支持** | 最高支持 4K 分辨率 的图片生成，大幅提升图像清晰度 |
+
+| 7 | **任意比例调整与扩写** | 可任意调整图片比例、对图片进行扩写（画幅拓展），确保扩展前后风格高度一致 |
+
+| 8 | **主题一致性大幅提升** | 精准识别图像中最多十几个实体 并进行组合绘图，保持主题和风格的高度一致性 |
+
+| 9 | **写实感大幅提升** | 写实图像的 `&quot;AI 味&quot;` 大幅下降，真实感大幅提升（例如红眼树蛙照片几乎可以以假乱真） |
+
+当然，考虑到 `Nano Banana Pro` 的图像太过逼真，`Google` 还在 `Gemini` 中同步上线了 AI 照片识别功能，基于 `SynthID` 隐形水印技术来判断图片是否由 `Nano Banana` 生成。
 
 ![](img/ac44586d62c721fde24b97485319c76d.png)
 
-除**此以外，Nano Banan**a Pro 本身也是 Gemini 模型生态的重要一员，可以与其他 Gemini 系列模型无缝协作。Nano Banana Pro 可以和 Gemini 3 搭配使用，实现更加强大的多模态能力；借助 Voe 3 视频生成模型，可以一键将静态图片转换为动态视频，真正让图片"活起来"，此外结合 Gemini 3 的 GenUI 功能，可以一键创建各类应用。
+除此以外，`Nano Banana Pro` 本身也是 `Gemini` 模型生态的重要一员，可以与其他 `Gemini` 系列模型无缝协作。`Nano Banana Pro` 可以和 `Gemini 3` 搭配使用，实现更加强大的多模态能力；借助 `Voe 3` 视频生成模型，可以一键将静态图片转换为动态视频，真正让图片"活起来"，此外结合 `Gemini 3` 的 `GenUI` 功能，可以一键创建各类应用。
 
-此外，我们还为大家准备了各场景下图像的提示词、Gemini 3和Nano Banana的零门槛接入指南、以及更加进阶的AI图文创作工作流开发教程，更深入的教程也可以欢迎联系助教老师详询：
+此外，我们还为大家准备了各场景下图像的提示词、`Gemini 3` 和 `Nano Banana` 的零门槛接入指南、以及更加进阶的 AI 图文创作工作流开发教程，更深入的教程也可以欢迎联系助教老师详询：
 
-https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq 提取码: 7cmq
+`https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq` 提取码: 7cmq
 
 ![](img/c7e6419d8c9bb00c39f682be9e932af3.png)
 
 ![](img/eccd2b194a92a030600637de03d44c75.png)
 
-# 二、Nano Banana Pro 模型使用方式
+## 二、Nano Banana Pro 模型使用方式
 
-Nano Banana Pro 模型已经全面上线，提供了多种接入方式，满足不同场景的需求。
+`Nano Banana Pro` 模型已经全面上线，提供了多种接入方式，满足不同场景的需求。
 
-+   **方式一：Gemini 主页调用**
++   **方式一：`Gemini` 主页调用**
 
-最简单直接的使用方式，无需编程基础。在Gemini主页（https://gemini.google.com/）开发者只需在工具栏选择制作图片，然后模型选择思考模型，即可调用Nano Banana Pro模型。
+最简单直接的使用方式，无需编程基础。在 `Gemini` 主页（`https://gemini.google.com/`）开发者只需在工具栏选择制作图片，然后模型选择思考模型，即可调用 `Nano Banana Pro` 模型。
 
 ```
 from IPython.display import Video
@@ -73,66 +81,66 @@ Video(&quot;https://muyu20241105.oss-cn-beijing.aliyuncs.com/images/202511271057
 
 Your browser does not support the video element.
 
-目前免费用户每天可以创建或编辑3张图片，Pro用户的额度则是100张，Ultra用户的额度是每天1000张（没错这张图片就是Nano Banana Pro生成的）。
+目前免费用户每天可以创建或编辑 3 张图片，Pro 用户的额度则是 100 张，Ultra 用户的额度是每天 1000 张（没错这张图片就是 `Nano Banana Pro` 生成的）。
 
 ![](img/d6087976956a77ff2dd04dc791f7560f.png)
 
 +   方式二：Google AI Studio
 
-此外，开发者也可以在谷歌AI Studio进行尝试，但并没有免费的额度，需要输入API-KEY才能使用。
+此外，开发者也可以在谷歌 AI Studio 进行尝试，但并没有免费的额度，需要输入 `API-KEY` 才能使用。
 
 ![](img/adb38d9bfa597dcd64ca91582dabf021.png)
 
-而与此同时Nano Banana Pro模型的API也已经全面上线，模型名称和定价如图所示:
+而与此同时 `Nano Banana Pro` 模型的 `API` 也已经全面上线，模型名称和定价如图所示:
 
 ![](img/6b0443d0030a689f08116ee69c021ad6.png)
 
 调用代码示例：
 
 ```
-    from google import genai
-    from google.genai import types
+from google import genai
+from google.genai import types
 
-    client = genai.Client()
+client = genai.Client()
 
-    response = client.models.generate_content(
-        model=&quot;gemini-3-pro-image-preview&quot;,
-        contents=&quot;Generate an infographic of the current weather in Tokyo.&quot;,
-        config=types.GenerateContentConfig(
-            tools=[{&quot;google_search&quot;: {}}],
-            image_config=types.ImageConfig(
-                aspect_ratio=&quot;16:9&quot;,
-                image_size=&quot;4K&quot;
-            )
+response = client.models.generate_content(
+    model=&quot;gemini-3-pro-image-preview&quot;,
+    contents=&quot;Generate an infographic of the current weather in Tokyo.&quot;,
+    config=types.GenerateContentConfig(
+        tools=[{&quot;google_search&quot;: {}}],
+        image_config=types.ImageConfig(
+            aspect_ratio=&quot;16:9&quot;,
+            image_size=&quot;4K&quot;
         )
     )
+)
 
-    # Extract the image from response
-    image_parts = [part for part in response.parts if part.inline_data]
+# Extract the image from response
+image_parts = [part for part in response.parts if part.inline_data]
 
-    if image_parts:
-        image = image_parts[0].as_image()
-        image.save(&#x27;weather_tokyo.png&#x27;)
-        image.show()
+if image_parts:
+    image = image_parts[0].as_image()
+    image.save(&#x27;weather_tokyo.png&#x27;)
+    image.show()
 ```
 
-当然，上述所有的使用方法，均需要🪜环境，且Google的监测会非常严，这会导致很多我们国内的开发者在上手使用时门槛会比较高。
+当然，上述所有的使用方法，均需要 🪜 环境，且 `Google` 的监测会非常严，这会导致很多我们国内的开发者在上手使用时门槛会比较高。
 
-因此，本节课我们主要做的就是借助LiteLLM + OpenRouter 接入Nano Banana Pro模型，并实现完整的调用流程，解决网络限制以及想私有化本地部署的应用两大难题。
+因此，本节课我们主要做的就是借助 `LiteLLM` + `OpenRouter` 接入 `Nano Banana Pro` 模型，并实现完整的调用流程，解决网络限制以及想私有化本地部署的应用两大难题。
 
-基于 Nana Banana Pro 模型构建的文生图设计系统已经免费开源，更深入的教程也可以欢迎联系助教老师详询：
+基于 `Nana Banana Pro` 模型构建的文生图设计系统已经免费开源，更深入的教程也可以欢迎联系助教老师详询：
 
-https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq 提取码: 7cmq
+`https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq` 提取码: 7cmq
 
 ![](img/fbb830ecf06f91c0e4845169bc658e53.png)
 
 ![](img/5f2ede11d6fc101fa9dee23a9d389629.png)
 
-# 三、技术架构与核心概念
+## 三、技术架构与核心概念
 
 ![](img/8e04b51c0757a559d185811434e68b56.png)
 
-OpenRouter 是一个 AI 模型的**统一网关服务**。它的作用类似于一个"中转站"：
+`OpenRouter` 是一个 AI 模型的**统一网关服务**。它的作用类似于一个"中转站"：
 
 ```
     你的应用 → OpenRouter → Google Gemini
@@ -140,19 +148,19 @@ OpenRouter 是一个 AI 模型的**统一网关服务**。它的作用类似于�
             ↘ OpenRouter → Anthropic Claude
 ```
 
-通过 OpenRouter，我们只需要一个 API Key，就可以访问多家模型提供商的服务，大大简化了开发流程。
+通过 `OpenRouter`，我们只需要一个 `API Key`，就可以访问多家模型提供商的服务，大大简化了开发流程。
 
-+   **为什么需要 LiteLLM？**
++   **为什么需要 `LiteLLM`？**
 
 在实际的 AI 应用开发中，经常会遇到这样的问题：不同的大语言模型提供商有着各自不同的 API 接口格式。例如：
 
-+   OpenAI 有自己的 API 格式
++   `OpenAI` 有自己的 API 格式
 
-+   Anthropic Claude 有不同的调用方式
++   `Anthropic Claude` 有不同的调用方式
 
-+   Google Gemini 又是另一套接口
++   `Google Gemini` 又是另一套接口
 
-如果我们想在项目中灵活切换不同的模型，就需要为每个模型编写不同的适配代码，这显然非常繁琐**。Lite**LLM 应运而生，它提供了一个统一的接口，让我们可以用同样的代码调用不同的模型。
+如果我们想在项目中灵活切换不同的模型，就需要为每个模型编写不同的适配代码，这显然非常繁琐。`LiteLLM` 应运而生，它提供了一个统一的接口，让我们可以用同样的代码调用不同的模型。
 
 我们的技术架构如下：
 
@@ -170,17 +178,17 @@ OpenRouter 是一个 AI 模型的**统一网关服务**。它的作用类似于�
 
 了解到这里，接下来我们就来开始动手实践，实现一个完整的文生图设计系统。
 
-# 四、Nano Banana Pro 调用环境准备
+## 四、Nano Banana Pro 调用环境准备
 
-##### Step 1：安装必要的 Python 包
+### Step 1：安装必要的 Python 包
 
-在开始调用Nano Banana 模型生成图像之前,我们需要先安装几个核心的 Python 库。主要如下：
+在开始调用 `Nano Banana` 模型生成图像之前,我们需要先安装几个核心的 `Python` 库。主要如下：
 
-+   litellm：提供统一的 LLM 调用接口
++   `litellm`：提供统一的 LLM 调用接口
 
-+   python-dotenv：用于管理环境变量（如 API Key）
++   `python-dotenv`：用于管理环境变量（如 `API Key`）
 
-+   Pillow：用于图片处理（后续生成图片时会用到）
++   `Pillow`：用于图片处理（后续生成图片时会用到）
 
 现在在当前的运行环境中执行安装命令：
 
@@ -208,13 +216,13 @@ Requires: aiohttp, click, fastuuid, httpx, importlib-metadata, jinja2, jsonschem
 Required-by: 
 ```
 
-##### Step 2：配置 OpenRouter API Key
+### Step 2：配置 `OpenRouter` `API Key`
 
-要使用 OpenRouter 服务，我们需要先获取 API Key。首先需要注册 OpenRouter 账号，访问 https://openrouter.ai/ 注册账号，首次登录需要点击右上角 "Sign Up" 注册账号。
+要使用 `OpenRouter` 服务，我们需要先获取 `API Key`。首先需要注册 `OpenRouter` 账号，访问 `https://openrouter.ai/` 注册账号，首次登录需要点击右上角 `Sign Up` 注册账号。
 
 ![](img/340f64dca15a0ea5a862ef0976a65b45.png)
 
-可以通过Google 邮箱一键登录：
+可以通过 `Google` 邮箱一键登录：
 
 ![](img/73420b6353ef04a587562229e821373b.png)
 
@@ -226,15 +234,15 @@ Required-by:
 
 ![](img/80a9549f207420cf671ae07b7638a5c2.png)
 
-绑定信用卡后，需要进行预付充值，可以根据自己的需求灵活选择充值的金额。接下来，回到 Dashboard，点击 "Keys" 菜单，创建新的 API Key 并复制：
+绑定信用卡后，需要进行预付充值，可以根据自己的需求灵活选择充值的金额。接下来，回到 `Dashboard`，点击 `Keys` 菜单，创建新的 `API Key` 并复制：
 
 ![](img/cb24bd0ed88615f4fce05813c5ba49de.png)
 
-至此，我们就可以在项目中使用 OpenRouter 的 API Key 了。
+至此，我们就可以在项目中使用 `OpenRouter` 的 `API Key` 了。
 
-##### **Step 3：配置环境变量**
+### Step 3：配置环境变量
 
-在实际的开发中，为了安全起见，我们一般不会将 API Key 直接写在代码中，而应该使用环境变量。因此在项目根目录创建一个 .env 文件，内容如下：
+在实际的开发中，为了安全起见，我们一般不会将 `API Key` 直接写在代码中，而应该使用环境变量。因此在项目根目录创建一个 `.env` 文件，内容如下：
 
 ```
     OPENROUTER_API_KEY=your-api-key-here
@@ -278,29 +286,39 @@ print(&quot;注意：这种方式仅用于测试，生产环境请使用 .env �
 注意：这种方式仅用于测试，生产环境请使用 .env 文件
 ```
 
-**Nano Banana Pro** 是 Google 基于 Gemini 3 **Pro 构建的最先进**图像生成模型，通过 Ope**nRouter 平台统一**接入。该模型支持文本输入、图像和文本输出的多模态能力，其在OpenRouter 平台上的模型名称为 openrouter/google/gemini-3-pro-image-preview。
+`Nano Banana Pro` 是 `Google` 基于 `Gemini 3 Pro` 构建的最先进图像生成模型，通过 `OpenRouter` 平台统一接入。该模型支持文本输入、图像和文本输出的多模态能力，其在 `OpenRouter` 平台上的模型名称为 `openrouter/google/gemini-3-pro-image-preview`。
 
 ![](img/8d009218af4c5bd0fca707b995ecc795.png)
 
 接下来，我们就可以开始调用这个模型了。
 
-# 五、Nano Banana Pro 实现文本对话功能
+## 五、Nano Banana Pro 实现文本对话功能
 
-**  现在**环境已经准备好了，我们开始实现第一个功能：文本对话。LiteLLM 提供了一个非常简洁的 API：completion()。这个函数的核心参数如下：
+现在环境已经准备好了，我们开始实现第一个功能：文本对话。`LiteLLM` 提供了一个非常简洁的 API：`completion()`。这个函数的核心参数如下：
 
-completion() 函数核心参数说明
+`completion()` 函数核心参数说明
 
 | 参数名 | 类型 | 描述 | 必填/可选 |
+
 | --- | --- | --- | --- |
-| model | str | 模型名称，格式为 &quot;openrouter/provider/model-name&quot; | 必填 |
-| messages | list | 对话消息列表，包含 role 和 content | 必填 |
-| temperature | float | 控制输出随机性，范围 0-1，越高越随机 | 可选 |
-| max_tokens | int | 最大输出 token 数量 | 可选 |
-| modalities | list | 指定输出模式，如 [&quot;text&quot;, &quot;image&quot;] | 可选 |
+
+| `model` | `str` | 模型名称，格式为 `&quot;openrouter/provider/model-name&quot;` | 必填 |
+
+| `messages` | `list` | 对话消息列表，包含 `role` 和 `content` | 必填 |
+
+| `temperature` | `float` | 控制输出随机性，范围 0-1，越高越随机 | 可选 |
+
+| `max_tokens` | `int` | 最大输出 token 数量 | 可选 |
+
+| `modalities` | `list` | 指定输出模式，如 `[&quot;text&quot;, &quot;image&quot;]` | 可选 |
 
 接下来我们逐步实现完整的文本对话功能。先从最简单的例子开始。
 
-```
+
+
+# 使用 LiteLLM 调用模型与生成图像
+
+```python
 import os
 from litellm import completion
 from dotenv import load_dotenv
@@ -309,16 +327,16 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 # 配置模型信息
-model_name = &quot;openrouter/google/gemini-3-pro-image-preview&quot;
-api_key = os.getenv(&quot;OPENROUTER_API_KEY&quot;)
+model_name = "openrouter/google/gemini-3-pro-image-preview"
+api_key = os.getenv("OPENROUTER_API_KEY")
 
 # 设置环境变量（LiteLLM 需要）
-os.environ[&quot;OPENROUTER_API_KEY&quot;] = api_key
+os.environ["OPENROUTER_API_KEY"] = api_key
 
-print(&quot;=&quot; * 60)
-print(&quot;第一个对话示例&quot;)
-print(f&quot;使用模型: {model_name}&quot;)
-print(&quot;=&quot; * 60)
+print("=" * 60)
+print("第一个对话示例")
+print(f"使用模型: {model_name}")
+print("=" * 60)
 ```
 
 ```
@@ -328,20 +346,20 @@ print(&quot;=&quot; * 60)
 ============================================================
 ```
 
-注意到我们使用的模型名称是 openrouter/google/gemini-3-pro-image-preview，这种命名方式让 LiteLLM 知道："我要通过 OpenRouter 调用 Google 的 gemini-3-pro-image-preview 模型"。
+注意到我们使用的模型名称是 `openrouter/google/gemini-3-pro-image-preview`，这种命名方式让 `LiteLLM` 知道："我要通过 `OpenRouter` 调用 Google 的 `gemini-3-pro-image-preview` 模型"。
 
 ![](img/b59aa7e936fc9b76c530b15c825c2c52.png)
 
-```
+```python
 # 构建消息列表
-question = &quot;你好！请介绍一下你自己。&quot;
+question = "你好！请介绍一下你自己。"
 
 messages = [
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: question}
+    {"role": "user", "content": question}
 ]
 
-print(f&quot;\n用户: {question}&quot;)
-print(&quot;-&quot; * 60)
+print(f"\n用户: {question}")
+print("-" * 60)
 
 # 调用模型
 response = completion(
@@ -354,9 +372,9 @@ response = completion(
 # 提取并显示回复
 if response and response.choices:
     answer = response.choices[0].message.content
-    print(f&quot;\nGemini: {answer}&quot;)
+    print(f"\nGemini: {answer}")
 else:
-    print(&quot;\n未收到有效回复&quot;)
+    print("\n未收到有效回复")
 ```
 
 ```
@@ -388,27 +406,25 @@ Gemini: 你好！很高兴能在这里与你交流。
 请问今天有什么我可以帮你的吗？
 ```
 
-其中**消息格式解析：**messages 是一个列表，每个元素都是一个字典，包含两个关键字段：
+其中 **消息格式解析：** `messages` 是一个列表，每个元素都是一个字典，包含两个关键字段：
 
-```
-    - `role`：表示消息的发送者，可以是：
-      - `&quot;user&quot;`：用户发送的消息
-      - `&quot;assistant&quot;`：AI 模型的回复
-      - `&quot;system&quot;`：系统提示（用于设置 AI 的行为）
+- `role`：表示消息的发送者，可以是：
+  - `"user"`：用户发送的消息
+  - `"assistant"`：AI 模型的回复
+  - `"system"`：系统提示（用于设置 AI 的行为）
 
-    - `content`：消息的具体内容
-```
+- `content`：消息的具体内容
 
-通过 response.choices[0].message.content 来获取 AI 的回复内容。
+通过 `response.choices[0].message.content` 来获取 AI 的回复内容。
 
-** 更进阶地，**在实际应用中，我们通常需要实现多轮对话，让 AI 能够记住之前的对话内容。这需要我们维护一个对话历史列表。
+**更进阶地，**在实际应用中，我们通常需要实现多轮对话，让 AI 能够记住之前的对话内容。这需要我们维护一个对话历史列表。
 
-```
+```python
 # 初始化对话历史
 conversation_history = []
 
 def chat(user_message):
-    &quot;&quot;&quot;
+    """
     发送消息并获取回复
     
     参数:
@@ -416,11 +432,11 @@ def chat(user_message):
     
     返回:
         AI 的回复内容
-    &quot;&quot;&quot;
+    """
     # 将用户消息添加到历史
     conversation_history.append({
-        &quot;role&quot;: &quot;user&quot;,
-        &quot;content&quot;: user_message
+        "role": "user",
+        "content": user_message
     })
     
     # 调用模型
@@ -436,14 +452,14 @@ def chat(user_message):
     
     # 将 AI 回复也添加到历史
     conversation_history.append({
-        &quot;role&quot;: &quot;assistant&quot;,
-        &quot;content&quot;: ai_message
+        "role": "assistant",
+        "content": ai_message
     })
     
     return ai_message
 
-print(&quot;多轮对话功能&quot;)
-print(&quot;=&quot; * 60)
+print("多轮对话功能")
+print("=" * 60)
 ```
 
 ```
@@ -453,14 +469,14 @@ print(&quot;=&quot; * 60)
 
 现在让我们测试一下多轮对话：
 
-```
+```python
 # 第一轮对话
-print(&quot;\n【第一轮对话】&quot;)
-user_msg_1 = &quot;你好，我是木羽，我正在学习 Nano Banana Pro 模型的应用方法&quot;
-print(f&quot;用户: {user_msg_1}&quot;)
+print("\n【第一轮对话】")
+user_msg_1 = "你好，我是木羽，我正在学习 Nano Banana Pro 模型的应用方法"
+print(f"用户: {user_msg_1}")
 
 ai_reply_1 = chat(user_msg_1)
-print(f&quot;AI: {ai_reply_1}&quot;)
+print(f"AI: {ai_reply_1}")
 ```
 
 ```
@@ -468,9 +484,9 @@ print(f&quot;AI: {ai_reply_1}&quot;)
 用户: 你好，我是木羽，我正在学习 Nano Banana Pro 模型的应用方法
 AI: 你好，木羽！很高兴认识你。
 
-欢迎你来和我交流。听到你正在钻研 &quot;Nano Banana Pro&quot; 模型的应用方法，这听起来是一个非常有趣且具体的项目。
+欢迎你来和我交流。听到你正在钻研 "Nano Banana Pro" 模型的应用方法，这听起来是一个非常有趣且具体的项目。
 
-为了能最有效地帮助你，我需要先和你确认一下这个模型的具体情况。因为在我目前庞大的公开知识库中，并没有一个广泛认知的、标准的通用大模型（例如 GPT-4, Claude, Llama 3 等）准确地命名为 &quot;Nano Banana Pro&quot;。
+为了能最有效地帮助你，我需要先和你确认一下这个模型的具体情况。因为在我目前庞大的公开知识库中，并没有一个广泛认知的、标准的通用大模型（例如 GPT-4, Claude, Llama 3 等）准确地命名为 "Nano Banana Pro"。
 
 这很可能意味着以下几种情况之一，了解这些对我为你提供正确的指导至关重要：
 
@@ -481,7 +497,7 @@ AI: 你好，木羽！很高兴认识你。
 它可能是某个特定行业（如生物医药、金融）或你所在组织内部开发的专有模型。
 
 **情况三：这是一个组合名称或可能的拼写差异**
-也许它涉及到 &quot;Nano&quot;（小型化/高效模型）、&quot;Banana&quot;（可能指 Banana.dev 这个 Serverless GPU 平台，或者某种架构代号）和 &quot;Pro&quot;（专业版）。
+也许它涉及到 "Nano"（小型化/高效模型）、"Banana"（可能指 Banana.dev 这个 Serverless GPU 平台，或者某种架构代号）和 "Pro"（专业版）。
 
 ---
 
@@ -497,9 +513,9 @@ AI: 你好，木羽！很高兴认识你。
 
 ### 在等待你更多信息的同时，我可以为你提供一个通用的“学习新模型应用”的框架步骤
 
-无论 &quot;Nano Banana Pro&quot; 具体是什么模型，学习应用它的路径通常都遵循以下逻辑：
+无论 "Nano Banana Pro" 具体是什么模型，学习应用它的路径通常都遵循以下逻辑：
 
-#### 第一阶段：理解与准备 (The &quot;What &amp; Why&quot;)
+#### 第一阶段：理解与准备 (The "What & Why")
 
 1.  **阅读核心文档 (README/Paper):**
     *   找到模型的官方发布页面。
@@ -507,13 +523,13 @@ AI: 你好，木羽！很高兴认识你。
 2.  **查看模型卡片 (Model Card):**
     *   如果是在 Hugging Face 上，查看 Model Card 了解它的训练数据、许可证（商用是否允许）以及所需的硬件资源（显存需求）。
 
-#### 第二阶段：环境搭建与运行 (The &quot;How&quot; - Basic)
+#### 第二阶段：环境搭建与运行 (The "How" - Basic)
 
 1.  **依赖库安装:** 查看它需要哪些 Python 库（如 `transformers`, `pytorch`, `diffusers` 等）以及特定的版本要求。
 2.  **最小可行性测试 (Hello World):**
     *   不要一开始就尝试复杂的任务。先尝试运行官方提供的最简单的推理（Inference）代码片段，确保模型能跑通，环境没问题。
 
-#### 第三阶段：应用与优化 (The &quot;How&quot; - Advanced)
+#### 第三阶段：应用与优化 (The "How" - Advanced)
 
 1.  **提示词工程 (Prompt Engineering):**
     *   针对该模型摸索最佳的指令格式。不同的模型对提示词的敏感度不同。
@@ -524,17 +540,17 @@ AI: 你好，木羽！很高兴认识你。
 
 ---
 
-**木羽，期待你提供更多关于 &quot;Nano Banana Pro&quot; 的信息，我们可以一起探索如何驾驭它！**
+**木羽，期待你提供更多关于 "Nano Banana Pro" 的信息，我们可以一起探索如何驾驭它！**
 ```
 
-```
+```python
 # 第二轮对话 - 测试 AI 是否记住了之前的内容
-print(&quot;\n【第二轮对话】&quot;)
-user_msg_2 = &quot;你还记得我叫什么名字吗？&quot;
-print(f&quot;用户: {user_msg_2}&quot;)
+print("\n【第二轮对话】")
+user_msg_2 = "你还记得我叫什么名字吗？"
+print(f"用户: {user_msg_2}")
 
 ai_reply_2 = chat(user_msg_2)
-print(f&quot;AI: {ai_reply_2}&quot;)
+print(f"AI: {ai_reply_2}")
 ```
 
 ```
@@ -545,13 +561,13 @@ AI: 当然记得啦，你是**木羽**。
 很高兴能和你继续对话！
 ```
 
-```
+```python
 # 查看完整的对话历史
-print(&quot;\n【对话历史】&quot;)
-print(&quot;=&quot; * 60)
+print("\n【对话历史】")
+print("=" * 60)
 for i, msg in enumerate(conversation_history, 1):
-    role = &quot;用户&quot; if msg[&quot;role&quot;] == &quot;user&quot; else &quot;AI&quot;
-    print(f&quot;{i}. {role}: {msg[&#x27;content&#x27;][:50]}...&quot;)
+    role = "用户" if msg["role"] == "user" else "AI"
+    print(f"{i}. {role}: {msg['content'][:50]}...")
 ```
 
 ```
@@ -560,32 +576,30 @@ for i, msg in enumerate(conversation_history, 1):
 1. 用户: 你好，我是木羽，我正在学习 Nano Banana Pro 模型的应用方法...
 2. AI: 你好，木羽！很高兴认识你。
 
-欢迎你来和我交流。听到你正在钻研 &quot;Nano Banana Pro&quot; ...
+欢迎你来和我交流。听到你正在钻研 "Nano Banana Pro" ...
 3. 用户: 你还记得我叫什么名字吗？...
 4. AI: 当然记得啦，你是**木羽**。
 
 很高兴能和你继续对话！...
 ```
 
-**  通过这个例**子，相信大家已经理解了多轮对话的核心原理。关键要点就是：
+**通过这个例子**，相信大家已经理解了多轮对话的核心原理。关键要点就是：
 
 1.  **维护对话历史**：每次对话都要保存用户消息和 AI 回复
-
-1.  **传入完整历史**：调用 API 时要传入整个 conversation_history
-
-1.  **顺序很重要**：消息必须按时间顺序排列
+2.  **传入完整历史**：调用 API 时要传入整个 `conversation_history`
+3.  **顺序很重要**：消息必须按时间顺序排列
 
 > **注意事项：**
 
-+   对话历史越长，消耗的 token 越多，成本也越高
++   对话历史越长，消耗的 `token` 越多，成本也越高
 
 +   建议定期清理过早的对话记录，只保留最近的几轮对话
 
-+   可以通过 conversation_history = conversation_history[-10:] 只保留最近 10 条消息
++   可以通过 `conversation_history = conversation_history[-10:]` 只保留最近 10 条消息
 
-# 六、Nano Banana Pro 实现文本生成图片功能
+## 六、Nano Banana Pro 实现文本生成图片功能
 
-在完成了基础的文本问答调用后，Gemini 3 Pro Image Preview 不仅能理解文本，还能根据文本描述生成图片。这就是所谓的"多模态文生图"能力。在 AI 领域，"模态"指的是信息的不同形式：
+在完成了基础的文本问答调用后，`Gemini 3 Pro Image Preview` 不仅能理解文本，还能根据文本描述生成图片。这就是所谓的"多模态文生图"能力。在 AI 领域，"模态"指的是信息的不同形式：
 
 +   **文本模态**：文字、对话
 
@@ -595,9 +609,9 @@ for i, msg in enumerate(conversation_history, 1):
 
 +   **视频模态**：动态影像
 
-而要让模型生成图片而不是文本，关键在于一个参数：modalities。当我们设置 modalities=["text", "image"] 时，就是告诉模型："请输出文本和图片"。接下来我们就一步一步实现图片生成功能。
+而要让模型生成图片而不是文本，关键在于一个参数：`modalities`。当我们设置 `modalities=["text", "image"]` 时，就是告诉模型："请输出文本和图片"。接下来我们就一步一步实现图片生成功能。
 
-```
+```python
 import base64
 from PIL import Image
 import io
@@ -605,12 +619,12 @@ from datetime import datetime
 from pathlib import Path
 
 # 创建输出目录
-output_dir = Path(&quot;generated_images&quot;)
+output_dir = Path("generated_images")
 output_dir.mkdir(exist_ok=True)
 
-print(&quot;图片生成功能初始化&quot;)
-print(f&quot;输出目录: {output_dir.absolute()}&quot;)
-print(&quot;=&quot; * 60)
+print("图片生成功能初始化")
+print(f"输出目录: {output_dir.absolute()}")
+print("=" * 60)
 ```
 
 ```
@@ -621,9 +635,15 @@ print(&quot;=&quot; * 60)
 
 现在让我们编写生成图片的核心函数：
 
+
+
+# 文本生成图片实现
+
+## 核心代码实现
+
 ```
 def generate_image(prompt, filename=None):
-    &quot;&quot;&quot;
+    """
     根据文本描述生成图片
     
     参数:
@@ -632,10 +652,10 @@ def generate_image(prompt, filename=None):
     
     返回:
         保存的图片路径
-    &quot;&quot;&quot;
-    print(f&quot;\n开始生成图片...&quot;)
-    print(f&quot;描述: {prompt}&quot;)
-    print(&quot;-&quot; * 60)
+    """
+    print(f"\n开始生成图片...")
+    print(f"描述: {prompt}")
+    print("-" * 60)
     
     try:
         # 步骤 1: 调用 API 生成图片
@@ -643,16 +663,16 @@ def generate_image(prompt, filename=None):
             model=model_name,
             messages=[
                 {
-                    &quot;role&quot;: &quot;user&quot;,
-                    &quot;content&quot;: [
+                    "role": "user",
+                    "content": [
                         {
-                            &quot;type&quot;: &quot;text&quot;,
-                            &quot;text&quot;: prompt
+                            "type": "text",
+                            "text": prompt
                         }
                     ]
                 }
             ],
-            modalities=[&quot;text&quot;, &quot;image&quot;],  # 关键：指定输出图片
+            modalities=["text", "image"],  # 关键：指定输出图片
             temperature=0.7,
         )
         
@@ -660,8 +680,8 @@ def generate_image(prompt, filename=None):
         message = response.choices[0].message
         
         # 检查是否有图片
-        if not hasattr(message, &#x27;images&#x27;) or not message.images:
-            print(&quot;未能生成图片&quot;)
+        if not hasattr(message, 'images') or not message.images:
+            print("未能生成图片")
             return None
         
         # 步骤 3: 解码图片数据
@@ -670,15 +690,15 @@ def generate_image(prompt, filename=None):
         # 处理不同格式的图片数据
         if isinstance(image_data, dict):
             # OpenRouter 返回的格式
-            url = image_data[&#x27;image_url&#x27;][&#x27;url&#x27;]
-            if url.startswith(&#x27;data:image&#x27;):
+            url = image_data['image_url']['url']
+            if url.startswith('data:image'):
                 # 提取 base64 部分
-                image_data = url.split(&#x27;,&#x27;, 1)[1]
+                image_data = url.split(',', 1)[1]
                 image_bytes = base64.b64decode(image_data)
         elif isinstance(image_data, str):
             # 直接的 base64 字符串
-            if image_data.startswith(&#x27;data:&#x27;):
-                image_data = image_data.split(&#x27;,&#x27;, 1)[1]
+            if image_data.startswith('data:'):
+                image_data = image_data.split(',', 1)[1]
             image_bytes = base64.b64decode(image_data)
         else:
             image_bytes = image_data
@@ -688,50 +708,52 @@ def generate_image(prompt, filename=None):
         
         # 生成文件名
         if not filename:
-            timestamp = datetime.now().strftime(&quot;%Y%m%d_%H%M%S&quot;)
-            prompt_preview = prompt[:20].replace(&quot; &quot;, &quot;_&quot;).replace(&quot;/&quot;, &quot;_&quot;)
-            filename = f&quot;generated_{prompt_preview}_{timestamp}.png&quot;
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            prompt_preview = prompt[:20].replace(" ", "_").replace("/", "_")
+            filename = f"generated_{prompt_preview}_{timestamp}.png"
         
         save_path = output_dir / filename
         image.save(str(save_path))
         
-        print(f&quot;\n图片生成成功！&quot;)
-        print(f&quot;保存路径: {save_path}&quot;)
-        print(f&quot;图片尺寸: {image.size}&quot;)
+        print(f"\n图片生成成功！")
+        print(f"保存路径: {save_path}")
+        print(f"图片尺寸: {image.size}")
         
         return str(save_path)
         
     except Exception as e:
-        print(f&quot;\n生成图片失败: {e}&quot;)
+        print(f"\n生成图片失败: {e}")
         import traceback
         traceback.print_exc()
         return None
 ```
 
+## 代码逻辑说明
+
 这段代码虽然有点长，但逻辑非常清晰。与文本对话相比，图片生成有两个重要区别：
 
-+   content 使用了结构化格式（列表+字典），而不是直接的字符串
++ `content` 使用了结构化格式（列表+字典），而不是直接的字符串
 
-+   添加了 modalities=["text", "image"] 参数
++ 添加了 `modalities=["text", "image"]` 参数
 
-返回的 message.images 包含了健壮性的处理逻辑，针对多种格式均做了兼容处理：
+返回的 `message.images` 包含了健壮性的处理逻辑，针对多种格式均做了兼容处理：
 
-+   字典格式：{"image_url": {"url": "data:image/png;base64,..."}}
++ 字典格式：`{"image_url": {"url": "data:image/png;base64,..."}}`
++ 字符串格式：直接的 base64 编码
++ 字节格式：原始的图片字节数据
 
-+   字符串格式：直接的 base64 编码
+最终使用 `PIL` (`Pillow`) 库来处理图片，它可以从字节数据创建 `Image` 对象，并获取图片尺寸，保存为各种格式（PNG、JPG 等）。
 
-+   字节格式：原始的图片字节数据
-
-最终使用 PIL (Pillow) 库来处理图片，它可以从字节数据创建 Image 对象，并获取图片尺寸，保存为各种格式（PNG、JPG 等）。
+## 功能测试示例
 
 现在让我们测试一下图片生成功能！我会提供几个不同风格的示例：
 
 ```
 # 示例 1: 生成自然风景
-print(&quot;\n【示例 1】生成自然风景&quot;)
-print(&quot;=&quot; * 60)
+print("\n【示例 1】生成自然风景")
+print("=" * 60)
 
-prompt_1 = &quot;宁静的海面上，夕阳西下，波光粼粼，天空被染成了橙色和粉色。&quot;
+prompt_1 = "宁静的海面上，夕阳西下，波光粼粼，天空被染成了橙色和粉色。"
 image_path_1 = generate_image(prompt_1)
 ```
 
@@ -757,10 +779,10 @@ if image_path_1:
 
 ```
 # 示例 2: 生成科技风格图片
-print(&quot;\n【示例 2】生成科技风格图片&quot;)
-print(&quot;=&quot; * 60)
+print("\n【示例 2】生成科技风格图片")
+print("=" * 60)
 
-prompt_2 = &quot;一位未来主义风格的 AI 机器人在全息电脑屏幕前工作，赛博朋克风格，霓虹灯闪烁。&quot;
+prompt_2 = "一位未来主义风格的 AI 机器人在全息电脑屏幕前工作，赛博朋克风格，霓虹灯闪烁。"
 image_path_2 = generate_image(prompt_2)
 ```
 
@@ -786,10 +808,10 @@ if image_path_2:
 
 ```
 # 示例 3: 生成架构图
-print(&quot;\n【示例 3】生成中文描述的图片&quot;)
-print(&quot;=&quot; * 60)
+print("\n【示例 3】生成中文描述的图片")
+print("=" * 60)
 
-prompt_3 = &quot;请生成一张架构图，内容基于以下描述的三者关系：LiteLLM 是整个调用链最上游的统一 LLM 代理层，是应用端访问所有模型的入口。应用程序发起的所有模型调用请求首先传入 LiteLLM，由它负责提供统一的 OpenAI 兼容接口、API Key 管理、模型切换、负载均衡、回退机制以及成本和使用量追踪等功能。LiteLLM 本身不提供模型推理能力，而是负责将请求路由到下游的平台或模型提供商。OpenRouter 位于 LiteLLM 的下游，是一个模型市场与多模型聚合网关。LiteLLM 可以将请求转发给 OpenRouter，由 OpenRouter 统一管理模型访问、计费、服务商选择、路由策略和备用模型切换。OpenRouter 内部汇集了多家模型提供商，例如 OpenAI、Google、Anthropic 等。OpenRouter 收到来自 LiteLLM 的请求后，会根据所选模型或其内部策略，将请求转交给对应的具体模型。Google Gemini 3 Pro Image Preview 模型是 OpenRouter 平台中的一个具体模型条目，模型 ID 为 google/gemini-3-pro-image-preview。这个模型承担最终的推理任务，支持多模态输入输出（文本和图像），并返回生成结果。在整个链路中，三者的角色分别是：LiteLLM 负责统一代理与调用控制，OpenRouter 负责模型聚合与路由，Google Gemini 3 Pro Image Preview 则负责最终的模型推理。整体调用流程为：应用程序 → LiteLLM → OpenRouter → Google Gemini 3 Pro Image Preview 模型。&quot;
+prompt_3 = "请生成一张架构图，内容基于以下描述的三者关系：LiteLLM 是整个调用链最上游的统一 LLM 代理层，是应用端访问所有模型的入口。应用程序发起的所有模型调用请求首先传入 LiteLLM，由它负责提供统一的 OpenAI 兼容接口、API Key 管理、模型切换、负载均衡、回退机制以及成本和使用量追踪等功能。LiteLLM 本身不提供模型推理能力，而是负责将请求路由到下游的平台或模型提供商。OpenRouter 位于 LiteLLM 的下游，是一个模型市场与多模型聚合网关。LiteLLM 可以将请求转发给 OpenRouter，由 OpenRouter 统一管理模型访问、计费、服务商选择、路由策略和备用模型切换。OpenRouter 内部汇集了多家模型提供商，例如 OpenAI、Google、Anthropic 等。OpenRouter 收到来自 LiteLLM 的请求后，会根据所选模型或其内部策略，将请求转交给对应的具体模型。Google Gemini 3 Pro Image Preview 模型是 OpenRouter 平台中的一个具体模型条目，模型 ID 为 google/gemini-3-pro-image-preview。这个模型承担最终的推理任务，支持多模态输入输出（文本和图像），并返回生成结果。在整个链路中，三者的角色分别是：LiteLLM 负责统一代理与调用控制，OpenRouter 负责模型聚合与路由，Google Gemini 3 Pro Image Preview 则负责最终的模型推理。整体调用流程为：应用程序 → LiteLLM → OpenRouter → Google Gemini 3 Pro Image Preview 模型。"
 
 image_path_3 = generate_image(prompt_3)
 ```
@@ -820,41 +842,43 @@ if image_path_3:
 
 # 七、Nano Banana Pro 实现多图片混合功能
 
+## 混合原理与应用场景
+
 在了解了文本生成图片的原理后，我们再来看一下多图片混合的实现。多图片混合就是将多张图片的元素智能地融合在一起。比如：
 
-+   将二维码放到海报上
++ 将二维码放到海报上
++ 将产品图放到不同场景中
++ 合成多个人物到同一张照片
 
-+   将产品图放到不同场景中
-
-+   合成多个人物到同一张照片
-
-Gemini 3 Pro Image（代号** Nano Banana **Pro）支持 最多 14 张图片同时混合。它会把这些参考整合 —— 角色、构图、风格、光影、背景等 —— “融合 / 混合 / 合成” 成 一张新的图像。
+`Gemini 3 Pro Image`（代号 `Nano Banana Pro`）支持 最多 14 张图片同时混合。它会把这些参考整合 —— 角色、构图、风格、光影、背景等 —— “融合 / 混合 / 合成” 成 一张新的图像。
 
 下面我们来看一下具体的实现方法。
 
-首先，我们定义一个函数，用于将图片转换为 Base64 格式：
+## Base64 编码工具函数
+
+首先，我们定义一个函数，用于将图片转换为 `Base64` 格式：
 
 ```
 import base64
 
 def encode_image_to_base64(image_path):
-    &quot;&quot;&quot;将图片转换为 base64 编码&quot;&quot;&quot;
-    with open(image_path, &quot;rb&quot;) as f:
+    """将图片转换为 base64 编码"""
+    with open(image_path, "rb") as f:
         image_data = f.read()
-        base64_str = base64.b64encode(image_data).decode(&#x27;utf-8&#x27;)
+        base64_str = base64.b64encode(image_data).decode('utf-8')
         
         # 判断图片格式
-        if image_path.lower().endswith(&#x27;.png&#x27;):
-            mime = &#x27;image/png&#x27;
-        elif image_path.lower().endswith((&#x27;.jpg&#x27;, &#x27;.jpeg&#x27;)):
-            mime = &#x27;image/jpeg&#x27;
+        if image_path.lower().endswith('.png'):
+            mime = 'image/png'
+        elif image_path.lower().endswith(('.jpg', '.jpeg')):
+            mime = 'image/jpeg'
         else:
-            mime = &#x27;image/jpeg&#x27;
+            mime = 'image/jpeg'
         
         # 返回 data URL 格式
-        return f&quot;data:{mime};base64,{base64_str}&quot;
+        return f"data:{mime};base64,{base64_str}"
 
-print(&quot;Base64 编码函数定义完成&quot;)
+print("Base64 编码函数定义完成")
 ```
 
 ```
@@ -863,15 +887,19 @@ Base64 编码函数定义完成
 
 这个函数做了三件事：
 
-1.  读取图片的二进制数据
-
-1.  使用 base64.b64encode() 编码
-
-1.  拼接成 data:image/png;base64,xxx 格式
+1. 读取图片的二进制数据
+2. 使用 `base64.b64encode()` 编码
+3. 拼接成 `data:image/png;base64,xxx` 格式
 
 现在定义我们要处理的图片路径。这里我们用这些图进行混合搭配：
 
-```
+
+
+# 图片混合与 API 调用实现
+
+## 图片路径与混合指令配置
+
+```python
 # 定义图片路径（请替换为你的实际路径）
 image_paths = [
     &quot;/home/MuyuWorkSpace/08_Gemini3_to_image/backend/test_image/1.png&quot;,  # 第1张：主图
@@ -896,9 +924,11 @@ print(f&quot;混合指令: {instruction.strip()}&quot;)
 混合指令: 根据提供的主体人物照片，根据图片服饰替换主体人物的服饰。使用提供的背景图片作为最终背景，并从背景中移除所有非主体人物。
 ```
 
+## 编码图片并构建请求内容
+
 将每张图片都转换为 Base64 格式，并构建 API 请求的内容结构：
 
-```
+```python
 # 构建内容列表
 content_parts = []
 
@@ -936,15 +966,17 @@ print(f&quot;准备完成！内容包含：{len(image_paths)} 张图片 + 1 条�
 准备完成！内容包含：6 张图片 + 1 条指令
 ```
 
-这段代码的关键是构建 content_parts 列表，它包含：
+这段代码的关键是构建 `content_parts` 列表，它包含：
 
-+   多个图片对象（每个都是 image_url 类型）
++   多个图片对象（每个都是 `image_url` 类型）
 
-+   一个文本对象（text 类型，包含我们的指令）
++   一个文本对象（`text` 类型，包含我们的指令）
+
+## 调用 Nano Banana Pro API
 
 最后，即可调用 Nano Banana Pro 的 API 进行图片混合：
 
-```
+```python
 from litellm import completion
 
 print(&quot;调用 Gemini API，请稍候...&quot;)
@@ -970,9 +1002,11 @@ print(&quot;API 调用成功！&quot;)
 API 调用成功！
 ```
 
+## 解码并保存生成图片
+
 API 返回的图片是 Base64 格式，我们需要解码并保存：
 
-```
+```python
 from PIL import Image
 import io
 import base64
@@ -1034,17 +1068,14 @@ print(f&quot;图片已保存到: {output_path}&quot;)
 
 这段代码展示了如何从 API 响应中提取图片：
 
-1.  从 response.choices[0].message.images[0] 获取图片数据
-
-1.  去掉 Base64 的前缀（如果有）
-
-1.  使用 base64.b64decode() 解码
-
-1.  用 PIL 打开并保存
+1. 从 `response.choices[0].message.images[0]` 获取图片数据
+2. 去掉 Base64 的前缀（如果有）
+3. 使用 `base64.b64decode()` 解码
+4. 用 `PIL` 打开并保存
 
 保存后，我们可以直接在 Notebook 中查看效果：
 
-```
+```python
 from IPython.display import Image as IPImage, display
 
 # 显示生成的图片
@@ -1077,9 +1108,9 @@ display(IPImage(filename=output_path))
 
 ---
 
-核心技术栈如下：
+## 核心技术栈
 
-技术栈总览
+### 技术栈总览
 
 | 分类 | 技术 | 版本 | 作用 |
 | --- | --- | --- | --- |
@@ -1145,15 +1176,15 @@ display(IPImage(filename=output_path))
     └── README.md                   # 项目文档
 ```
 
-**  从这个目录**结构可以看出，项目采用了典型的前后端分离架构。前端和后端各自独立，通过 HTTP API 进行通信。接下来，我们将逐层剖析这个架构。
+从这个目录结构可以看出，项目采用了典型的前后端分离架构。前端和后端各自独立，通过 HTTP API 进行通信。接下来，我们将逐层剖析这个架构。
 
 这个项目采用了经典的**前后端分离 + 微服务化**的架构设计。整体架构可以分为三个主要层次：
 
 1.  表现层（Presentation Layer）：React 前端应用
 
-1.  服务层（Service Layer）：FastAPI 后端服务
+2.  服务层（Service Layer）：FastAPI 后端服务
 
-1.  **AI层（AI Layer）**：Gemini 3 Pro Image 模型
+3.  **AI层（AI Layer）**：Gemini 3 Pro Image 模型
 
 下面我们用一个架构图来直观地展示这三层之间的关系：
 
@@ -1161,7 +1192,7 @@ display(IPImage(filename=output_path))
 
 从架构图可以看到，用户通过浏览器访问前端应用，前端调用后端 API，后端再通过 LiteLLM 调用 Gemini 模型，最终将生成的图片返回给用户。更深入的教程也可以欢迎联系助教老师详询：
 
-https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq 提取码: 7cmq
+<https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq> 提取码: 7cmq
 
 ![](img/117fa65eda4d05606d238b2f440aa281.png)
 
@@ -1169,104 +1200,114 @@ https://pan.baidu.com/s/12WvSF8G8vstJcKASvRJxOg?pwd=7cmq 提取码: 7cmq
 
 在开始部署之前，我们需要确保本地环境满足以下要求：
 
-环境要求
+## 环境要求
 
 | 软件 | 最低版本 | 推荐版本 | 用途 |
 | --- | --- | --- | --- |
-| Node.js | 18.0+ | 20.0+ | 前端构建和运行 |
-| npm | 8.0+ | 10.0+ | 前端包管理 |
-| Python | 3.10+ | 3.11+ | 后端运行 |
-| pip | 21.0+ | 23.0+ | Python包管理 |
+
+
+
+# 环境要求
+
+| `Node.js` | 18.0+ | 20.0+ | 前端构建和运行 |
+| --- | --- | --- | --- |
+| `npm` | 8.0+ | 10.0+ | 前端包管理 |
+| `Python` | 3.10+ | 3.11+ | 后端运行 |
+| `pip` | 21.0+ | 23.0+ | `Python` 包管理 |
+
+# 部署指南
 
 接下来，我们一步步部署后端服务。
 
-#### 步骤 1：下载项目源码并解压后，进入后端目录
+## 步骤 1：下载项目源码并解压后，进入后端目录
 
 ```
-  cd backend
+cd backend
 ```
 
-#### 步骤 2：创建虚拟环境（强烈推荐）
+## 步骤 2：创建虚拟环境（强烈推荐）
 
-使用虚拟环境可以隔离项目依赖，避免与系统Python环境冲突。
+使用虚拟环境可以隔离项目依赖，避免与系统 `Python` 环境冲突。
 
 ```
-  # 创建虚拟环境
-  python -m venv venv
+# 创建虚拟环境
+python -m venv venv
 
-  # 激活虚拟环境
-  # Linux/Mac:
-  source venv/bin/activate
+# 激活虚拟环境
+# Linux/Mac:
+source venv/bin/activate
 
-  # Windows:
-  venv\Scripts\activate
+# Windows:
+venv\Scripts\activate
 ```
 
-激活成功后，终端提示符前会出现 (venv) 标识。
+激活成功后，终端提示符前会出现 `(venv)` 标识。
 
 ![](img/1a2bffd7bb26ab8680100e59050ce1b1.png)
 
-#### **步骤 3：安装依赖**
+## 步骤 3：安装依赖
 
 ```
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ![](img/6c4418d1c934a53c0ffdc09131cff075.png)
 
-这条命令会安装所有必需的Python包，包括 fastapi、litellm、pillow 等。安装过程可能需要几分钟。
+这条命令会安装所有必需的 `Python` 包，包括 `fastapi`、`litellm`、`pillow` 等。安装过程可能需要几分钟。
 
 ---
 
-#### **步骤 4：配置 API Key**
+## 步骤 4：配置 API Key
 
-创建 .env 文件并添加 OpenRouter API Key：
+创建 `.env` 文件并添加 OpenRouter API Key：
 
 ```
-  # 创建 .env 文件
-  echo &quot;OPENROUTER_API_KEY=your-api-key-here&quot; &gt; .env
+# 创建 .env 文件
+echo "OPENROUTER_API_KEY=your-api-key-here" > .env
 ```
 
-请将 your-ap[i-key-here](https://openrouter.ai/) 替换为你在 OpenRouter 获取的实际 API Key。
+请将 [`your-api-key-here`](https://openrouter.ai/) 替换为你在 OpenRouter 获取的实际 API Key。
 
 ![](img/d5e2ffb0bdca9f7ad572942e66b352b8.png)
 
-#### **步骤 5：启动后端服务**
+## 步骤 5：启动后端服务
 
 ```
-  python run.py
+python run.py
 ```
 
 启动成功后，你会看到类似以下的输出：
 
 ![](img/4c3027be808ef875fb96a1ce9e140358.png)
 
-此时，后端服务已经在 http://localhost:8000 成功运行！可以在浏览器中访问 http://localhost:8000/docs 查看 API 文档。
+此时，后端服务已经在 `http://localhost:8000` 成功运行！可以在浏览器中访问 `http://localhost:8000/docs` 查看 API 文档。
 
 ![](img/00785821ebd17b8cecd70398e5e1bc3d.png)
+
+## 前端部署
 
 后端启动后，接下来部署前端应用。保持后端服务运行，打开一个新的终端窗口。进入前端目录并安装项目依赖：
 
 ```
-  cd frontend
-  npm install
+cd frontend
+npm install
 ```
 
 ![](img/2e3fc4c59c7a25a74b7009f22a6f9fda.png)
 
-这条命令会安装所有前端依赖包，包括 react、vite、tailwindcss 等。首次安装可能需要几分钟。
+这条命令会安装所有前端依赖包，包括 `react`、`vite`、`tailwindcss` 等。首次安装可能需要几分钟。
 
 启动开发服务器，执行如下命令：
 
 ```
-  npm run dev
+npm run dev
 ```
 
 启动成功后，你会看到类似以下的输出：
 
 ![](img/73217e3698ee678fbd0b48df8db8e272.png)
 
-此时，前端应用已经在 http://localhost:3000 成功运行！打开浏览器，访问 http://localhost:3000，你应该能看到主页，显示 6 个创意选项卡片。
+此时，前端应用已经在 `http://localhost:3000` 成功运行！打开浏览器，访问 `http://localhost:3000`，你应该能看到主页，显示 6 个创意选项卡片。
 
 ![](img/327f7089be30aa090914fe98f2789293.png)
 

@@ -1,3 +1,4 @@
+
 # 20250626-用这个提示词，打造自己的“AI生图+设计”轻量化智能体
 
 > 来源：[https://aigcreative.feishu.cn/docx/YoZZd7idno4QKvxp7okcPU7un7b](https://aigcreative.feishu.cn/docx/YoZZd7idno4QKvxp7okcPU7un7b)
@@ -10,7 +11,7 @@
 
 近期，有一个号称Lovart开源平替产品Jaaz，看起来还不错。
 
-直接上GitHub链接：https://github.com/11cafe/jaaz
+直接上GitHub链接：`https://github.com/11cafe/jaaz`
 
 ![](img/76ae456336490b0a7049adf1142306e8.png)
 
@@ -28,13 +29,10 @@ Jaaz 是一个开源的 AI 设计Agent，提供本地化、免费的设计解计
 
 ![](img/24bf48c694649a1aaa5f030ce0de7b41.png)
 
-1、设计策略：任务拆解。
-
-2、设计细节：任务进一步细化，分辨率、样式、主要视觉元素、排版等等，把一张海报的设计相关部分都给你考虑得清清楚楚。
-
-3、把设计细节汇总成了一段完整的Prompt，提示词。
-
-4、文生图大模型开始工作，出图。
+1. 设计策略：任务拆解。
+2. 设计细节：任务进一步细化，分辨率、样式、主要视觉元素、排版等等，把一张海报的设计相关部分都给你考虑得清清楚楚。
+3. 把设计细节汇总成了一段完整的Prompt，提示词。
+4. 文生图大模型开始工作，出图。
 
 最终得到一张完美的封面海报，很愉快！
 
@@ -109,7 +107,7 @@ Step 3. Call generate_image tool to generate the image based on the plan, use a 
 
 下面来看看效果：
 
-# 案例一：
+## 案例一：
 
 ![](img/1e38cc55ec68c69f84aebe569c65ca9b.png)
 
@@ -123,19 +121,19 @@ Step 3. Call generate_image tool to generate the image based on the plan, use a 
 
 ![](img/2de925ae980127db69b8b10b730cd22a.png)
 
-# 案例2：
+## 案例2：
 
 ![](img/378de1c9b3845b40e271e233d62f9c68.png)
 
 ![](img/b46ad32140634a744b54f7aa2539ffab.png)
 
-# 案例3：
+## 案例3：
 
 ![](img/785227e9c2102a6a02f41c4dde8123a5.png)
 
 ![](img/e753cf62f4f6a3bf2ea222fa7e87c4df.png)
 
-小结：
+## 小结：
 
 通过这个提示词的工作过程，我们可以得到一些启发：
 
@@ -145,4 +143,4 @@ Step 3. Call generate_image tool to generate the image based on the plan, use a 
 
 <https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
 
-# 知识库动态
+## 知识库动态

@@ -1,8 +1,9 @@
+
 # ProductIntel · 全链路产品分析官
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/TkqQdv2WOoxpKtxMIfZcxOFrnTJ](https://vxc3hj17dym.feishu.cn/docx/TkqQdv2WOoxpKtxMIfZcxOFrnTJ)
+> 来源：`https://vxc3hj17dym.feishu.cn/docx/TkqQdv2WOoxpKtxMIfZcxOFrnTJ`
 
-> **作者：字伯升** - 不喂快餐，不卷流量，只写值得被记住的内容。
+> 作者：字伯升 - 不喂快餐，不卷流量，只写值得被记住的内容。
 
 ```
 【Prompt · System 架构：ProductIntel · 全链路产品分析官】

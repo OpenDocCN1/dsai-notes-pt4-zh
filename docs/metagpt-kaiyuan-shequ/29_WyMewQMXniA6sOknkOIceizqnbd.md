@@ -1,24 +1,25 @@
+
 # 创建和使用工具
 
 > 来源：[https://deepwisdom.feishu.cn/docx/McvYdmFieoZ4dhx42NVcs70jn4e](https://deepwisdom.feishu.cn/docx/McvYdmFieoZ4dhx42NVcs70jn4e)
 
 ## 定义
 
-在 MetaGPT 中创建工具是一个直接的过程，涉及创建自己的函数或类，并将它们放在 metagpt/tools/libs 目录下。本教程提供了一个如何创建工具并在数据解释器DataInterpreter中使用它们的逐步指南。
+在 `MetaGPT` 中创建工具是一个直接的过程，涉及创建自己的函数或类，并将它们放在 `metagpt/tools/libs` 目录下。本教程提供了一个如何创建工具并在数据解释器 `DataInterpreter` 中使用它们的逐步指南。
 
 ## 创建工具的步骤
 
-1.  创建预提供的函数或类:
+1. 创建预提供的函数或类:
 
-编写专门用于与外部环境进行特定交互的函数或类，并将它们放置在metagpt/tools/libs目录中。
+编写专门用于与外部环境进行特定交互的函数或类，并将它们放置在 `metagpt/tools/libs` 目录中。
 
-1.  使用谷歌风格的文档字符串（Docstring）:
+2. 使用谷歌风格的文档字符串（Docstring）:
 
 为每个函数或类配备谷歌风格的文档字符串。这作为一个简洁而全面的参考资料，详细说明其用途、输入参数和预期输出。
 
-1.  应用@register_tool装饰器:
+3. 应用 `@register_tool` 装饰器:
 
-使用@register_tool装饰器以确保在工具注册表中准确注册。这个装饰器简化了函数或类与DataInterpreter的集成。
+使用 `@register_tool` 装饰器以确保在工具注册表中准确注册。这个装饰器简化了函数或类与 `DataInterpreter` 的集成。
 
 ## 自定义工具案例
 
@@ -26,7 +27,7 @@
 
 ### 自定义计算阶乘的工具
 
-1.  在 metagpt/tools/libs 中创建一个你自己的函数，假设它是 calculate_factorial.py，并添加装饰器 @register_tool 以将其注册为工具
+1. 在 `metagpt/tools/libs` 中创建一个你自己的函数，假设它是 `calculate_factorial.py`，并添加装饰器 `@register_tool` 以将其注册为工具
 
 ```
 # metagpt/tools/libs/calculate_factorial.py
@@ -36,15 +37,15 @@ from metagpt.tools.tool_registry import register_tool
 # 使用装饰器注册工具
 @register_tool()
 def calculate_factorial(n):
-    &quot;&quot;&quot;
+    """
     计算非负整数的阶乘
-    &quot;&quot;&quot;
-    if n &lt; 0:
-        raise ValueError(&quot;输入必须是非负整数&quot;)
+    """
+    if n < 0:
+        raise ValueError("输入必须是非负整数")
     return math.factorial(n)
 ```
 
-1.  在数据解释器DataInterpreter中使用工具
+2. 在数据解释器 `DataInterpreter` 中使用工具
 
 ```
 # main.py
@@ -53,25 +54,25 @@ from metagpt.roles.di.data_interpreter import DataInterpreter
 from metagpt.tools.libs import calculate_factorial
 
 async def main(requirement: str):
-    role = DataInterpreter(tools=[&quot;calculate_factorial&quot;]) # 集成工具
+    role = DataInterpreter(tools=["calculate_factorial"]) # 集成工具
     await role.run(requirement)
 
-if __name__ == &quot;__main__&quot;:
-    requirement = &quot;请计算 5 的阶乘&quot;
+if __name__ == "__main__":
+    requirement = "请计算 5 的阶乘"
     asyncio.run(main(requirement))
 ```
 
 注意：
 
-1.  别忘了为你的函数编写文档字符串（docstring），这将有助于 DataInterpreter 选择合适的工具并理解其工作方式。
+1. 别忘了为你的函数编写文档字符串（docstring），这将有助于 `DataInterpreter` 选择合适的工具并理解其工作方式。
 
-1.  在注册工具时，工具的名称就是函数的名称。
+2. 在注册工具时，工具的名称就是函数的名称。
 
-1.  在运行 DataInterpreter 之前，记得从 metagpt.tools.libs 导入你的 calculate_factorial 模块，以确保该工具已被注册。
+3. 在运行 `DataInterpreter` 之前，记得从 `metagpt.tools.libs` 导入你的 `calculate_factorial` 模块，以确保该工具已被注册。
 
 ### 自定义计算器工具
 
-1.  在 metagpt/tools/libs 中创建一个你自己的类，假设它是 calculator.py，并添加装饰器 @register_tool 以将其注册为工具
+1. 在 `metagpt/tools/libs` 中创建一个你自己的类，假设它是 `calculator.py`，并添加装饰器 `@register_tool` 以将其注册为工具
 
 ```
 # metagpt/tools/libs/calculator.py
@@ -79,55 +80,55 @@ import math
 from metagpt.tools.tool_registry import register_tool
 
 # 使用装饰器注册工具
-# “math”的tag用于将工具分类为数学工具，include_functions 参数用于指定要包含的函数。这有利于`DataInterpreter`选择并理解工具
-@register_tool(tags=[&quot;math&quot;], include_functions=[&quot;__init__&quot;, &quot;add&quot;, &quot;subtract&quot;, &quot;multiply&quot;, &quot;divide&quot;, &quot;factorial&quot;])
+# “math”的tag用于将工具分类为数学工具，include_functions 参数用于指定要包含的函数。这有利于 `DataInterpreter` 选择并理解工具
+@register_tool(tags=["math"], include_functions=["__init__", "add", "subtract", "multiply", "divide", "factorial"])
 class Calculator:
-   &quot;&quot;&quot;
+   """
    一个简单的计算器工具，可以执行基本的算术运算并计算阶乘。
-   &quot;&quot;&quot;
+   """
 
    @staticmethod
    def add(a, b):
-       &quot;&quot;&quot;
+       """
        计算两个数的和。
-       &quot;&quot;&quot;
+       """
        return a + b
 
    @staticmethod
    def subtract(a, b):
-       &quot;&quot;&quot;
+       """
        计算两个数的差。
-       &quot;&quot;&quot;
+       """
        return a - b
 
    @staticmethod
    def multiply(a, b):
-       &quot;&quot;&quot;
+       """
        计算两个数的乘积。
-       &quot;&quot;&quot;
+       """
        return a * b
 
    @staticmethod
    def divide(a, b):
-       &quot;&quot;&quot;
+       """
        计算两个数的商。
-       &quot;&quot;&quot;
+       """
        if b == 0:
-           return &quot;错误：除数不能为零&quot;
+           return "错误：除数不能为零"
        else:
            return a / b
 
    @staticmethod
    def factorial(n):
-       &quot;&quot;&quot;
+       """
        计算非负整数的阶乘。
-       &quot;&quot;&quot;
-       if n &lt; 0:
-           raise ValueError(&quot;输入必须是非负整数&quot;)
+       """
+       if n < 0:
+           raise ValueError("输入必须是非负整数")
        return math.factorial(n)
 ```
 
-1.  在数据解释器DataInterpreter中使用工具
+2. 在数据解释器 `DataInterpreter` 中使用工具
 
 ```
 # main.py
@@ -136,20 +137,20 @@ from metagpt.roles.di.data_interpreter import DataInterpreter
 from metagpt.tools.libs import calculator
 
 async def main(requirement: str):
-   role = DataInterpreter(tools=[&quot;calculator&quot;])   # 集成工具
+   role = DataInterpreter(tools=["calculator"])   # 集成工具
    await role.run(requirement)
 
-if __name__ == &quot;__main__&quot;:
-   requirement = &quot;请计算 3 和 11 的和，然后计算 5 的阶乘&quot;
+if __name__ == "__main__":
+   requirement = "请计算 3 和 11 的和，然后计算 5 的阶乘"
    asyncio.run(main(requirement))
 ```
 
 注意：
 
-1.  别忘了为你的类和函数编写文档字符串（docstring），这将有助于 DataInterpreter 选择合适的工具并理解其工作方式。
+1. 别忘了为你的类和函数编写文档字符串（docstring），这将有助于 `DataInterpreter` 选择合适的工具并理解其工作方式。
 
-1.  在注册工具时，工具的名称就是类的名称。
+2. 在注册工具时，工具的名称就是类的名称。
 
-1.  在运行 DataInterpreter 之前，记得从 metagpt.tools.libs 导入你的 calculator 模块，以确保该工具已被注册。
+3. 在运行 `DataInterpreter` 之前，记得从 `metagpt.tools.libs` 导入你的 `calculator` 模块，以确保该工具已被注册。
 
-通过遵循这些步骤，用户可以无缝地创建并整合MetaGPT中Tools框架内的工具，使DataInterpreter能够有效地与外部环境交互。
+通过遵循这些步骤，用户可以无缝地创建并整合 `MetaGPT` 中 `Tools` 框架内的工具，使 `DataInterpreter` 能够有效地与外部环境交互。

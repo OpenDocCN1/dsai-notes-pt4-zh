@@ -1,3 +1,4 @@
+
 # Qwen3 模型结构解析 Blog
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/PyUhdS1U4oiTbQx22wocraYknih](https://v11enp9ok1h.feishu.cn/docx/PyUhdS1U4oiTbQx22wocraYknih)
@@ -8,11 +9,11 @@
 
 ### 主干网络
 
-[大部分和Qwen2没有变化，可以参照：https://github.c](https://github.com/datawhalechina/tiny-universe/tree/main/content/Qwen-blog)om/datawhalechina/tiny-universe/tree/main/content/Qwen-blog
+[大部分和Qwen2没有变化，可以参照：https://github.com/datawhalechina/tiny-universe/tree/main/content/Qwen-blog](https://github.com/datawhalechina/tiny-universe/tree/main/content/Qwen-blog)
 
 ### 与Qwen2 对比分析
 
-Qwen3Attention相较于Qwen2Attention增加了对q和k的标准化， 在计算q、k矩阵后进行RMSNorm。有助于消除不同token之间可能存在的尺度差异，使得注意力机制更加专注于token之间的相对关系而非绝对幅值，从而提升模型的稳定性与泛化能力。相较于LayerNorm而言，该处理既保持了归一化的好处，又降低了计算成本，更适合部署于高效模型中。
+`Qwen3Attention`相较于`Qwen2Attention`增加了对`q`和`k`的标准化，在计算`q`、`k`矩阵后进行`RMSNorm`。有助于消除不同token之间可能存在的尺度差异，使得注意力机制更加专注于token之间的相对关系而非绝对幅值，从而提升模型的稳定性与泛化能力。相较于`LayerNorm`而言，该处理既保持了归一化的好处，又降低了计算成本，更适合部署于高效模型中。
 
 ```
 # Qwen2Attention
@@ -31,9 +32,9 @@ key_states = self.k_norm(self.k_proj(hidden_states).view(hidden_shape)).transpos
 
 ### MoE机制
 
-MoE（Mixture of Experts）是一种用于提高模型泛化能力的技术。它的基本思想是将模型的计算任务分解成多个独立的专家（Experts），每个专家负责处理特定的任务，然后通过一个门控机制（Gate）来选择哪些专家来处理当前的输入。在LLM中，MoE通常应用于Attention之后的MLP层。
+MoE（Mixture of Experts）是一种用于提高模型泛化能力的技术。它的基本思想是将模型的计算任务分解成多个独立的专家（Experts），每个专家负责处理特定的任务，然后通过一个门控机制（`Gate`）来选择哪些专家来处理当前的输入。在LLM中，MoE通常应用于`Attention`之后的`MLP`层。
 
-MLP层被分为若干个专家，每个专家是一个Qwen3MoeMLP实例
+`MLP`层被分为若干个专家，每个专家是一个`Qwen3MoeMLP`实例
 
 ```
 class Qwen3MoeMLP(nn.Module):
@@ -52,31 +53,31 @@ class Qwen3MoeMLP(nn.Module):
         return down_proj
 ```
 
-在MoeMLP中，每个专家都有一个gate_proj和up_proj，而不是单纯的一个线性层（和非MoE模型的MLP层一样）。
+在`MoeMLP`中，每个专家都有一个`gate_proj`和`up_proj`，而不是单纯的一个线性层（和非`MoE`模型的`MLP`层一样）。
 
-Qwen3MoeSparseMoeBlock就是用于替换原始MLP层的模块，它包含多个Qwen3MoeMLP实例，每个实例对应一个专家。
+`Qwen3MoeSparseMoeBlock`就是用于替换原始`MLP`层的模块，它包含多个`Qwen3MoeMLP`实例，每个实例对应一个专家。
 
 ```
 self.gate = nn.Linear(config.hidden_size, config.num_experts, bias=False)
-&quot;&quot;&quot;
+"""
 定义gate，用于选择哪些专家来处理当前的输入。
 gate的输出是一个形状为(batch_size, seq_len, num_experts)的张量，
 其中每个元素表示对应位置的输入应该分配给哪个专家。
-&quot;&quot;&quot;
+"""
 self.experts = nn.ModuleList(
     [Qwen3MoeMLP(config, intermediate_size=config.moe_intermediate_size) for _ in range(self.num_experts)]
 )
-&quot;&quot;&quot;
+"""
 定义experts，是一个ModuleList，包含多个Qwen3MoeMLP实例。
 每个Qwen3MoeMLP实例对应一个专家，负责处理特定的任务。
-&quot;&quot;&quot;
+"""
 ```
 
-Hidden States经过线性层后输出到Gate，Gate的输出是一个形状为(batch_size, seq_len, num_experts)的张量，其中每个元素表示对应位置的输入应该分配给哪个专家的概率。在每个专家计算完成后，将结果加权求和得到最终的输出。
+Hidden States经过线性层后输出到`Gate`，`Gate`的输出是一个形状为(`batch_size`, `seq_len`, `num_experts`)的张量，其中每个元素表示对应位置的输入应该分配给哪个专家的概率。在每个专家计算完成后，将结果加权求和得到最终的输出。
 
 ![](img/8b4a06a64e411ca7e430751fb929f63a.png)
 
-MoE计算过程代码解读：
+`MoE`计算过程代码解读：
 
 ```
 router_logits = self.gate(hidden_states)  # 计算选中的专家的logits
@@ -99,7 +100,7 @@ for expert_idx in range(self.num_experts):
 
 ![](img/b04d44e8c0ce8d572607ddac8ac99b6e.png)
 
-在 Qwen3MoeSparseMoeBlock 中，去除了 Qwen2MoeSparseMoeBlock 中的共享专家机制，简化了模型的结构。在 Qwen2 中，每次都使用一个共享的专家网络来处理输入，增加了计算的复杂性和额外的参数。而在 Qwen3 中，去除了共享专家部分，模型只依赖于通过门控机制选择的专家进行计算，从而减少了不必要的计算步骤和资源消耗。Qwen3 的计算更加高效，避免了不必要的冗余操作，可以提升整体的性能和速度。
+在`Qwen3MoeSparseMoeBlock`中，去除了`Qwen2MoeSparseMoeBlock`中的共享专家机制，简化了模型的结构。在Qwen2中，每次都使用一个共享的专家网络来处理输入，增加了计算的复杂性和额外的参数。而在Qwen3中，去除了共享专家部分，模型只依赖于通过门控机制选择的专家进行计算，从而减少了不必要的计算步骤和资源消耗。Qwen3的计算更加高效，避免了不必要的冗余操作，可以提升整体的性能和速度。
 
 代码解释：
 

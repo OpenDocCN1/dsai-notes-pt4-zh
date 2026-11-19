@@ -1,3 +1,4 @@
+
 # 【佛罗里达律协】关于 AI 的会员意见调查
 
 > 来源：[https://docs.feishu.cn/docx/Kw7LdwKtFoDkhdxUmZBcsk4ynDd](https://docs.feishu.cn/docx/Kw7LdwKtFoDkhdxUmZBcsk4ynDd)
@@ -16,12 +17,8 @@
 
 那些表示在工作中使用 AI 的律师，他们使用 AI 主要是为了：
 
-+   法律研究和分析：11%
-
-+   起草文件：5%
-
-+   案例分析：4%
-
-+   总结文件：4%
-
-+   自动客户端通信：3%
++ 法律研究和分析：11%
++ 起草文件：5%
++ 案例分析：4%
++ 总结文件：4%
++ 自动客户端通信：3%

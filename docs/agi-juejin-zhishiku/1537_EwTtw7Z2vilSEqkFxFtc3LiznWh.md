@@ -1,20 +1,21 @@
+
 # 原理与实战：利用Agent技术提升AI应用效能
 
 > 来源：[https://agijuejin.feishu.cn/docx/Zp1rdvK3OorKtpxRHU6crWzBnQc](https://agijuejin.feishu.cn/docx/Zp1rdvK3OorKtpxRHU6crWzBnQc)
 
 > 作者：CodeDan | 智见AGI
 
-> 原文：[https://mp.weixin.](https://mp.weixin.qq.com/s/n4vAapzhEa1WS5_D3LDyKw)qq.com/s/n4vAapzh...
+> 原文：[https://mp.weixin.qq.com/s/n4vAapzhEa1WS5_D3LDyKw](https://mp.weixin.qq.com/s/n4vAapzhEa1WS5_D3LDyKw)
 
 ![](img/d10d7eddf83eaae923d94ca86be8352d.png)
 
-Agent如何实现多任务自动化与优化
+## Agent如何实现多任务自动化与优化
 
-**©作者 | **CodeDan
+©作者 | CodeDan
 
-**来源 | **神州问学
+来源 | 神州问学
 
-# **Agent是什么？**
+## Agent是什么？
 
 AI目前使用上是有缺陷的，比如信息的实时性等，导致无法主动更新自己的知识，导致出现事实幻觉。而且语言大模型目前最适合的依旧是自然语言交互的处理，在与外部其他工具的交互功能暂时还不是很强大。
 
@@ -26,7 +27,7 @@ Agent代理是一种多功能的程序，它类似于一个可以与各种工具
 
 上述过程有很多地方需要大模型来思考如何进行下一步的推断，但是大模型是不会主动去推理下一步应该做什么的，这个时候需要我们进行思维上的引导，从而让大模型能够自主的进行步骤的推理。
 
-ReAct思维链：在语言模型中协同推理与行动
+## ReAct思维链：在语言模型中协同推理与行动
 
 ReAct的核心在于推理（Reason）和行动(Action)，其可以让Agent利用模型进行动态推理，并采取行动与外界环境互动。
 
@@ -56,9 +57,9 @@ ReAct的核心在于推理（Reason）和行动(Action)，其可以让Agent利�
 
 而在代码中，我们可以通过LangChain快速构建Agent，下述Agent均使用LangChain进行演示。
 
-# **常用Agent介绍**
+## 常用Agent介绍
 
-**自然语言询问数据库Agent**
+### 自然语言询问数据库Agent
 
 在数据库管理中，我们通过结构化查询语言（SQL）来完成所有操作。SQL是一种专门的语言，用于向计算机明确传达我们从数据库中提取信息或执行操作的需求。这意味着，我们不仅需要掌握这种技术，还要深入了解我们正在处理的数据。
 
@@ -68,33 +69,27 @@ ReAct的核心在于推理（Reason）和行动(Action)，其可以让Agent利�
 
 步骤一：我需要知道目前系统中都有谁
 
-步骤二：LLM解析问题，获取关键点（比如获取当前数据库的表集合以及每个表的备注信息，选中表的结构信息等）。然后生成相应的SQL查询语句（SELECT * FROM USER；）
+步骤二：LLM解析问题，获取关键点（比如获取当前数据库的表集合以及每个表的备注信息，选中表的结构信息等）。然后生成相应的SQL查询语句（`SELECT * FROM USER；`）
 
 步骤三：执行SQL。生成的SQL会被送到指定的Databases中去执行，LLM会将查询结果解析，并将数据总结与问题相应的结果
 
 步骤四：提供答案，将结果翻译成自然语言并提供出来。
 
-**项目实战**
+### 项目实战
 
 数据库种类：MySQL
 
-数据库名称：test
+数据库名称：`test`
 
-![](img/fdef491010a4b174f527652fa6415410.png)
+那么数据库Agent是如何把当前有多少用户准确"翻译"成`select count(*) AS total_users FROM tb_user`的呢？
 
-![](img/6711893c10edec0d6737ff2519ccd78d.png)
-
-![](img/59c4b75a2826c6800f5d56048b2e888e.png)
-
-那么数据库Agent是如何把当前有多少用户准确"翻译"成select count(*) AS total_users FROM tb_user的呢？
-
-这个就要归功于组成此Agent的关键组成prompt,即让LLM模型具备推理，行动能力的关键。让我们来追溯到create_sql_agent这个方法的源码里，定位到创建agent的代码中寻找一下其对应的prompt。
+这个就要归功于组成此Agent的关键组成`prompt`,即让LLM模型具备推理，行动能力的关键。让我们来追溯到`create_sql_agent`这个方法的源码里，定位到创建agent的代码中寻找一下其对应的`prompt`。
 
 ![](img/346c8d28995204f9bbd47df7678d3e80.png)
 
-备注：此提示词为agent类型为openai-tools时的数值，当创建的agent属于其他类型时，可以自行查看源码。
+备注：此提示词为agent类型为`openai-tools`时的数值，当创建的agent属于其他类型时，可以自行查看源码。
 
-Python代码执行器Agent
+### Python代码执行器Agent
 
 在使用大模型的过程中，我们往往会发现如果问题中包含统计，计算以及推算等复杂的数学计算时，大模型往往提供的答案精准度不高，甚至很离谱。
 
@@ -102,7 +97,7 @@ Python代码执行器Agent
 
 然而，它并不是为精确的数学计算和逻辑推理而设计的。并且从深层来说大模型生成答案的机制是基于概率的。它通过对每个可能的词进行评分来生成最有可能的下一个词。这种方法在处理自然语言生成任务时表现良好，但在处理精确数学计算时，可能会导致误差。模型生成的每一步都是基于概率的估计，而不是严格的数学规则。
 
-所以当需要进行精确数学计算时，我们可以将这个步骤交给python解释器，由python解释器计算完成后将结果交给LLM模型，而这种通过将ai生成的代码交给代码解释器并运行获取结果的方式被称为程序语言辅助模型（Program-Aided-Language-Models）,简称PAL。
+所以当需要进行精确数学计算时，我们可以将这个步骤交给`python`解释器，由`python`解释器计算完成后将结果交给LLM模型，而这种通过将ai生成的代码交给代码解释器并运行获取结果的方式被称为程序语言辅助模型（Program-Aided-Language-Models）,简称PAL。
 
 ![](img/27934dfa446f855e9ed784323b090e55.png)
 
@@ -116,25 +111,27 @@ Python代码执行器Agent
 
 5. 结果整合：LLM将计算结果整合到最终的回答中并转为自然语言返回用户输出
 
-**项目实战**
+### 项目实战
 
 前置环境：
 
+```
 pip install langchain_experimental
+```
 
 ![](img/0db2e72fb4ad54857b1131da3061e254.png)
 
 ![](img/b4218b572f328872d32f9c82cf65421f.png)
 
-老样子我们来看一下create_python_agent源码中agent的提示词：
+老样子我们来看一下`create_python_agent`源码中agent的提示词：
 
 ![](img/e8745daac1d9e116f7f15e9995fc3714.png)
 
-**多个Agent如何管理**
+## 多个Agent如何管理
 
 在一个AI应用系统中，通常会有多个Agent协同工作。而如何让多个Agent能够有序并且按照原有需求进行合理的编排获取最终的高准确度结果，那么Agent意图识别在多个Agent管理中起着至关重要的作用。
 
-**什么是Agent意图识别？**
+### 什么是Agent意图识别？
 
 是指让大语言模型（LLM）基于上下文信息，从一组备选项中选择合适的类别，填入相应参数并进行格式化输出的能力。其在Agent管理上主要具备以下特点：
 
@@ -150,7 +147,7 @@ pip install langchain_experimental
 
 ![](img/031ce12b87cee20b66b0f773038a4e63.png)
 
-项目实战（简化版本意图识别Agent）
+### 项目实战（简化版本意图识别Agent）
 
 ![](img/f8e1c5e7f6ac1164b365117da9012b09.png)
 
@@ -158,11 +155,11 @@ pip install langchain_experimental
 
 ![](img/cec9238d8381b625ecb9989d12f84973.png)
 
-看看最外层的prompt提示词，这个是其能够正确推理和选择相应Agent的关键（可以适当修改提示词增加意图识别的能力）：
+看看最外层的`prompt`提示词，这个是其能够正确推理和选择相应Agent的关键（可以适当修改提示词增加意图识别的能力）：
 
 ![](img/70704e52268a9f0f552100ef6ced32a1.png)
 
-# **总结**
+## 总结
 
 Agent技术通过结合LLM的自然语言处理能力和外部工具的交互能力，极大地扩展了AI应用的范围和实用性。无论是在数据库查询还是复杂计算领域，Agent都能提供更加智能和高效的解决方案。同时，多个Agent的协同工作和意图识别技术，进一步提升了AI系统的整体性能和用户体验。
 

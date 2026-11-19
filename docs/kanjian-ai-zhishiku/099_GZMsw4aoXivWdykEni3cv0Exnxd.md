@@ -1,6 +1,7 @@
+
 # 看见AI日报（20230728）
 
-> 来源：[https://jlqyxzzvbk.feishu.cn/docx/Pkz3dMLFAoDu8zxgUpXcUWNpndd](https://jlqyxzzvbk.feishu.cn/docx/Pkz3dMLFAoDu8zxgUpXcUWNpndd)
+> 来源：`https://jlqyxzzvbk.feishu.cn/docx/Pkz3dMLFAoDu8zxgUpXcUWNpndd`
 
 > 快报时间：2023/7月/28日 周五 16:00
 
@@ -8,11 +9,11 @@
 
 ![](img/7b4a4a25c4d772f52395d96bdb62c057.png)
 
-**欢迎进群交流**
+欢迎进群交流
 
-# AI资讯精选
+## AI资讯精选
 
-## 室温常压超导掀全球热度，数万人正在围观这个中国团队的复现进度
+### 室温常压超导掀全球热度，数万人正在围观这个中国团队的复现进度
 
 ![](img/5cd34c461d5ce99f3689c2247a0fac48.png)
 
@@ -24,9 +25,9 @@
 
 这种材料被命名为 LK 99，是一种铜掺杂的铅磷灰石，化学式写作
 
-更多信息请访问：https://baijiahao.baidu.com/s?id=1772559190929851201&wfr=spider&for=pc
+更多信息请访问：`https://baijiahao.baidu.com/s?id=1772559190929851201&wfr=spider&for=pc`
 
-## 北大校友论文获ICML时间检验奖，Hinton弟子一作，生成式AI受关注
+### 北大校友论文获ICML时间检验奖，Hinton弟子一作，生成式AI受关注
 
 ![](img/441bf0ac15ac21e6e4726f6e6c99af97.png)
 
@@ -34,11 +35,11 @@ ICML 2023时间检验奖出炉！
 
 今年和往年一样，也是一篇获奖论文和两篇亚军（Runners Up），均从ICML 2023的论文集中选出，“在过去10年里持续产生影响力”。
 
-**其中，获奖论文的第一作者是**Hinto**n弟**子Richard Zemel，第二作者伍昱（Ledell Wu）是北大元培校友，曾在智源和MetaAI工作过，如今是Creatify AI的联合创始人。
+其中，获奖论文的第一作者是 Hinton 弟子 Richard Zemel，第二作者伍昱（Ledell Wu）是北大元培校友，曾在智源和MetaAI工作过，如今是Creatify AI的联合创始人。
 
-更多信息请访问：https://baijiahao.baidu.com/s?id=1772644875645759883&wfr=spider&for=pc
+更多信息请访问：`https://baijiahao.baidu.com/s?id=1772644875645759883&wfr=spider&for=pc`
 
-## **美飞行员****证实外星人存在**！美国对UFO已进行10年反向工程，马斯克不否认
+### 美飞行员证实外星人存在！美国对UFO已进行10年反向工程，马斯克不否认
 
 ![](img/bcdd013b0161ff780165d298a24dd5f8.png)
 
@@ -62,11 +63,11 @@ ICML 2023时间检验奖出炉！
 
 这次听证会最主要的内容就是质询3名爆料者的爆料内容。
 
-更多信息请访问：https://finance.sina.com.cn/chanjing/gsnews/2023-07-28/doc-imzefkcy2222221.shtml
+更多信息请访问：`https://finance.sina.com.cn/chanjing/gsnews/2023-07-28/doc-imzefkcy2222221.shtml`
 
-# AI软件精选
+## AI软件精选
 
-# **BetterPrompt （****AI****绘画提示词工具）**
+### BetterPrompt（AI绘画提示词工具）
 
 Make Your Midjourney Prompt Better!
 
@@ -78,55 +79,49 @@ Easy way to be a Prompt Master, supports 100 languages.
 
 ![](img/87c7970e634926f60fdcc2024d8f4228.png)
 
-链接：https://better.avatarprompt.net/
+链接：`https://better.avatarprompt.net/`
 
-# **ELBO ****Art**** （****AI****绘画）**
+### ELBO Art（AI绘画）
 
 通过使用人工智能创作艺术来表达自己。使用我们的角色创建器创建您自己的头像
 
 ![](img/3f9d06e164a30f93007a39f622e83135.png)
 
-链接：https://art.elbo.ai/
+链接：`https://art.elbo.ai/`
 
-# **Steve.Ai（****AI****动画）**
+### Steve.Ai（AI动画）
 
 Steve.AI 是一款在线视频制作软件，可帮助任何人在几秒钟内创建视频和动画。
 
 ![](img/9e36674077f574bf927a67eef6d49ca4.png)
 
-链接：https://www.steve.ai/
+链接：`https://www.steve.ai/`
 
-**更多****AI****工具请访问：**http://ai.kcodez.com/
+**更多AI工具请访问：**`http://ai.kcodez.com/`
 
-# AI课程精选
+## AI课程精选
 
-## 免费课程（GPT）
+### 免费课程（GPT）
 
-https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279
+`https://www.bilibili.com/video/BV16M4y1b7yR/?spm_id_from=333.788&vd_source=3f7939551b27a57d8c51bdca93356279`
 
 GPT内容由浅入深，层层递进，逻辑清晰，诙谐幽默越带有夸张的授课风格，讲述GPT的各种用法，以及如何讲自身结合
 
 ![](img/b7775ab54ca553720c847f13c05cd614.png)
 
-## 付费课程（ai绘画）
+### 付费课程（ai绘画）
 
 AI绘画基础课Midjourney
 
-优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         https://v.douyin.com/ixcenrM/
+优惠购课链接：3- 4:/ 【AI绘图基础课 Midjourney】复制此条消息打开抖音，查看商品详情。【ÊÊPcFWKFONWI3E8￠￠】         `https://v.douyin.com/ixcenrM/`
 
 ![](img/4b38c19bb102291cf2cd9f14f14746f4.png)
 
-#
+欢迎进群交流
 
-![](img/7a9d6cc478cdea4a21cbafa17864d11e.png)
+## 4.会员精选
 
-![](img/4696a3a3014a1d914738061d210a6bd3.png)
-
-**欢迎进群交流**
-
-# 4.会员精选
-
-访问地址：https://nf.video/kkF8Y  下单时输入：kanAI  九五折优惠，或者直接二维码访问
+访问地址：`https://nf.video/kkF8Y` 下单时输入：kanAI 九五折优惠，或者直接二维码访问
 
 ![](img/6522ce28bd5e96d528ff550758b1d271.png)
 
@@ -136,7 +131,7 @@ AI绘画基础课Midjourney
 
 ![](img/4b29f4e8fe152b40dd5237a122c80093.png)
 
-**国内镜像****GPT****，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
+**国内镜像GPT，**支持GPT，比官方更便宜，访问更快，无需魔法，直接访问，九折购买，（购买后联系客服，返还10%购买费用）
 
 ![](img/92d3906167144825306839b44d612235.png)
 

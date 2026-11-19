@@ -1,14 +1,13 @@
+
 # 从0到1搓了个Claude Skills，实现全自动写X(推特)，拿走不谢～附教程
 
 > 来源：[https://yunyinghui.feishu.cn/docx/NPtadqCQsoJmd9x31TIcDP4xn5b](https://yunyinghui.feishu.cn/docx/NPtadqCQsoJmd9x31TIcDP4xn5b)
-
----
 
 > **原创👸号：** 袋鼠帝AI客栈
 
 > **发文时间：**2026-01-21 11:55:29
 
-大家好，我是 **最近在做X **的袋鼠帝
+大家好，我是 **最近在做X** 的袋鼠帝
 
 但是折腾了好长一段时间也没多大水花，主要原因还是我不够勤快，更新频率跟不上。
 
@@ -18,7 +17,7 @@ X上我会分享一些短平快的最新信息，还有一些感悟和理解，�
 
 ![](img/8b9ac9263093ee517527fc94b19bfc16.png)
 
-直到上周，看到很多 **X大佬晒出了马斯克发的工资 **，我直接惊了！
+直到上周，看到很多 **X大佬晒出了马斯克发的工资**，我直接惊了！
 
 卧槽，X要是做起来， 光靠自然流量一个月就能领到几百上千$！
 
@@ -30,7 +29,7 @@ X上我会分享一些短平快的最新信息，还有一些感悟和理解，�
 
 然后我观察了很多X的大佬，他们每天的更新频率非常高，可能一天能发十几条。我在评论区看了下，他们自己也说是用了AI提效。
 
-我就在想， **其**实X这一块我完全可以打造一套Claude Skills，作为的AI创作员工，帮我自动写推文（适用于起号阶段）
+我就在想，其实X这一块我完全可以打造一套Claude Skills，作为的AI创作员工，帮我自动写推文（适用于起号阶段）
 
 当然，为了账号安全和内容质量，整个流程的最后一步我保留了人工介入，也就是让Skills把内容弄到草稿箱，最终我会审核内容，然后手动发布。
 
@@ -42,31 +41,27 @@ X上我会分享一些短平快的最新信息，还有一些感悟和理解，�
 
 [0b2et4awgaabiuaows3owjuvdh6dmopqcyya.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/RdCGb7hrzoyTNZxEWXqcWKjJn8b)
 
-这篇文章我将 **分**享我自己使用Claude Skills的一些心得，以及从0到1创造一个Claude Skills的过程 ，你将了解：
+这篇文章我将分享我自己使用Claude Skills的一些心得，以及从0到1创造一个Claude Skills的过程，你将了解：
 
-1.Claude Skills到底是什么？（简析版）；
+1. Claude Skills到底是什么？（简析版）；
+2. 如何创造自己的Claude Skills（以及我踩过的坑）；
+3. 免费领取一个能自动帮自己查找信息、选题、创作，并自动保存到草稿箱的Skills：`x-skills`；
+4. skills的适用场景，以及它的优缺点；
+5. 国内环境Claude Code接入Claude模型（方案推荐）。
 
-2.如何创造自己的Claude Skills（以及我踩过的坑）；
-
-3.免费领取一个能自动帮自己查找信息、选题、创作，并自动保存到草稿箱的Skills：x-skills；
-
-4.skills的适用场景，以及它的优缺点；
-
-5.国内环境Claude Code接入Claude模型（方案推荐）。
-
-# 一、Claude Skills到底是什么？
+## 一、Claude Skills到底是什么？
 
 Claude Skills最近爆火，但可能并不是所有小伙伴都了解它。
 
 虽然很多博主都写了科普文章，这里我还是想聊聊我自己的见解。
 
-特别是 上周六受江树邀请去北京参加「AIGC开发者大会」 ，跟几位大佬同台圆桌讨论后，我对Claude Skills的理解又通透了几分。
+特别是 上周六受江树邀请去北京参加「AIGC开发者大会」，跟几位大佬同台圆桌讨论后，我对Claude Skills的理解又通透了几分。
 
 ![](img/d1cd5b9b1ea6ca7a5a2e640240fe3eec.png)
 
 ![](img/08f8a73017954972cc6d6a9ade1aad4e.png)
 
-一句话总结， **Claude Skills就是一个「专**业技能包」，它的本质其实就是上下文工程。
+一句话总结，Claude Skills就是一个「专业技能包」，它的本质其实就是上下文工程。
 
 23年、24年的时候，Prompt（提示词）很火爆。
 
@@ -86,15 +81,15 @@ Context 简单来说，就是让一个大模型或者Agent完成任务所必须�
 
 只不过Anthropic这家公司非常善于制定标准、抢占生态，它率先推出了Claude Skills。
 
-这有两个好处： **1是统一了Context的规范和**标准；2是由此带来了生态，建立起了社区。
+这有两个好处：1是统一了Context的规范和标准；2是由此带来了生态，建立起了社区。
 
-目**前每天都有新的Skill**s诞生，普通人构建一个高质量Context的门槛大大降低了，因为我们现在可以直接去网上找现成的，就像我今天 开源的x-skills 一样。
+目前每天都有新的Skills诞生，普通人构建一个高质量Context的门槛大大降低了，因为我们现在可以直接去网上找现成的，就像我今天开源的 `x-skills` 一样。
 
 我们来看一下Claude Skills的经典结构：
 
 ![](img/c5320a6e287e64847687ec7e0556681d.png)
 
-核心文件就是SKILL.md。这里面其实就包含了这个Skill的名字、描述（有什么用，什么时候该用），以及Prompt（指令）。
+核心文件就是 `SKILL.md`。这里面其实就包含了这个Skill的名字、描述（有什么用，什么时候该用），以及Prompt（指令）。
 
 ![](img/8a488dcfc0a969c18f1f98405a814172.png)
 
@@ -122,9 +117,9 @@ Skills只是把旧的思想用到了新的技术领域
 
 关于Claude Skills的概念和一些想法，我们就暂且聊到这里。
 
-# 二、如何创造自己的Claude Skills？
+## 二、如何创造自己的Claude Skills？
 
-在正式开始之前， 我先讲一个之前写Skills踩过的坑 。
+在正式开始之前，我先讲一个之前写Skills踩过的坑。
 
 去年10月份，我去杭州做了一次Claude Code的企业培训，内容就包含了Claude Skills。
 
@@ -134,29 +129,29 @@ Skills只是把旧的思想用到了新的技术领域
 
 总结下来就是，写Claude Skills尽量用Claude模型
 
-所以，这次我就是 **在Claude Code里面使用Clau**de Opus模型来写x-skills 。
+所以，这次我就是在Claude Code里面使用Claude Opus模型来写 `x-skills` 。
 
 在国内环境Claude Code使用Claude模型的方案，我放在文末了，感兴趣的朋友可以看看～
 
-这次我 **使用了Anthropic官方的一个创建Sk**ills的Skills来写Skills （哈哈哈 有点拗口）
+这次我使用了Anthropic官方的一个创建Skills的Skills来写Skills（哈哈哈 有点拗口）
 
-就是它，叫 **skill-creator **，我们可以用它来写Claude Skills。
+就是它，叫 `skill-creator`，我们可以用它来写Claude Skills。
 
 https://github.com/anthropics/skills
 
 ![](img/c3ee07e30dc1a95ca86879d4ea254d19.png)
 
-把它下载下来，放入 ~/.claude/skills 文件夹。
+把它下载下来，放入 `~/.claude/skills` 文件夹。
 
 ![](img/173051577492b4447f646b4b80f9b621.png)
 
-PS：如果是Windows系统，路径大概在：C盘/用户/你的用户名/.claude/skills。
+PS：如果是Windows系统，路径大概在：`C盘/用户/你的用户名/.claude/skills`。
 
 这样Claude Code就能识别这个Skill了。
 
 **接下来步入正题：**
 
-这**篇本来就是奔着写**Skills并开源去的，所以我直接先在我的Github建了个公共仓库，为了简单好记，我给它取名叫 x-skills
+这篇本来就是奔着写Skills并开源去的，所以我直接先在我的Github建了个公共仓库，为了简单好记，我给它取名叫 `x-skills`
 
 https://github.com/kangarooking/x-skills
 
@@ -164,16 +159,16 @@ https://github.com/kangarooking/x-skills
 
 然后把这个新仓库克隆到本地：
 
-git clone https://github.com/kangarooking/x-skills.git
+`git clone https://github.com/kangarooking/x-skills.git`
 
 以这个目录为项目根目录，进入Claude Code，切换到Opus模型。
 
 ![](img/6ae5979ecfe663dc70b34279f45e9cc4.png)
 
-切换到Plan Mode， 先跟Claude Code对话制定一个计划。
+切换到Plan Mode，先跟Claude Code对话制定一个计划。
 
 ```
-Prompt： 我最近想把X做起来，在起号阶段，并且提高X创作发布频率，我想创造一个能帮我自动收集素材，筛选选题，并创造爆款X推文，最后发布到X草稿箱的Claude Skills。我希望你能给我一些灵感和建议，我们先一起沟通，对齐需求。
+Prompt：我最近想把X做起来，在起号阶段，并且提高X创作发布频率，我想创造一个能帮我自动收集素材，筛选选题，并创造爆款X推文，最后发布到X草稿箱的Claude Skills。我希望你能给我一些灵感和建议，我们先一起沟通，对齐需求。
 ```
 
 ![](img/3c040789c8874aaa42a82c390c58152b.png)
@@ -184,38 +179,38 @@ Claude Code会提出问题，然后我们一步一步细化、对齐需求。
 
 对齐需求之后，切换回Yolo Mode（自动执行模式）。
 
-让它开干！（记得提醒Claude Code使用Anthropic官方的skill-creator）。
+让它开干！（记得提醒Claude Code使用Anthropic官方的 `skill-creator`）。
 
 ![](img/782b74a36f27cc6c07103e4b7d540225.png)
 
-大概花了10分钟左右，这个x-skills就开发完成啦！过程如下：
+大概花了10分钟左右，这个 `x-skills` 就开发完成啦！过程如下：
 
 ![](img/d493d6fac384b65383ab2714456aee4f.png)
 
 [0bc3ruaaqaaadeaj66tpcjuvbdodbcgqacaa.f10002.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OV7cbWqbzogRa8xwpfscbxnDnEg)
 
-这个x-skills包含了4个Skill：
+这个 `x-skills` 包含了4个Skill：
 
-x-collect （查找信息）
+`x-collect` （查找信息）
 
-x-filter （选题）
+`x-filter` （选题）
 
-x-create （创作）
+`x-create` （创作）
 
-x-publish （保存到草稿箱）
+`x-publish` （保存到草稿箱）
 
-整个x-skills的结构如下图：
+整个 `x-skills` 的结构如下图：
 
 ![](img/e58690ae55f79c9bee9a82d3a1a54667.png)
 
-然后，把这四个Skill放入 ~/.claude/skills。
+然后，把这四个Skill放入 `~/.claude/skills`。
 
 ![](img/0be98aa38f936327f83230345bab85ac.png)
 
-接下来看看 x-skills自动写X推文的效果：
+接下来看看 `x-skills` 自动写X推文的效果：
 
 ```
-Prompt：最近Claude Skills很火爆，我现在想写一篇关于Claude Skills的X推文，请你使用skills帮我完成。用x-collect 找相关选题（先确定今天是几号，然后找最近一周内的AI领域的热点），用x-filter筛选出一个打分最高的选题，用x-create创作推文，最后用x-publish把创作的推文保存到X的草稿箱。
+Prompt：最近Claude Skills很火爆，我现在想写一篇关于Claude Skills的X推文，请你使用skills帮我完成。用 `x-collect` 找相关选题（先确定今天是几号，然后找最近一周内的AI领域的热点），用 `x-filter` 筛选出一个打分最高的选题，用 `x-create` 创作推文，最后用 `x-publish` 把创作的推文保存到X的草稿箱。
 ```
 
 ![](img/9acd3c86eb83abeb0c3e58525df10e6c.png)
@@ -226,27 +221,27 @@ Prompt：最近Claude Skills很火爆，我现在想写一篇关于Claude Skills
 
 看来前期花大量时间对齐需求、制定计划还是非常有必要的。
 
-PS：x-publish借鉴了x-article-publisher-skill的方式，使用了Playwright MCP（我觉得目前最好用的浏览器自动化MCP）模拟人的操作来将内容保存到草稿箱。
+PS：`x-publish` 借鉴了 `x-article-publisher-skill` 的方式，使用了 `Playwright MCP`（我觉得目前最好用的浏览器自动化MCP）模拟人的操作来将内容保存到草稿箱。
 
 https://github.com/wshuyi/x-article-publisher-skill
 
 这是目前我认为最稳妥的方案，因为如果你在X上直接使用API接口自动发布，有封号风险，为了安全，还是使用这种模拟人工操作的方式比较好。
 
-我的x-skills Github地址：
+我的 `x-skills` Github地址：
 
 https://github.com/kangarooking/x-skills
 
 ![](img/ae9777ba16c0e93e236b1b0279c52274.png)
 
-欢迎使用x-skills😄（顺便在Github帮忙点个Star吧）。
+欢迎使用 `x-skills`😄（顺便在Github帮忙点个Star吧）。
 
 期待大家在评论区反馈各种问题，我会记录下来并优化。
 
 我自己日常就会用它，后续根据大家反馈不断迭代，相信会越来越好用，也希望它能帮到你。
 
-# 三、skills的适用场景，以及它的优缺点
+## 三、skills的适用场景，以及它的优缺点
 
-我认为，目前 Claude Skills还是更适合用在创造性的场景 ，比如x-skills是用来创作X推文。
+我认为，目前 Claude Skills还是更适合用在创造性的场景，比如 `x-skills` 是用来创作X推文。
 
 对于一些稳定性要求比较高，响应速度要求比较快的场景，我建议使用工作流（或者程序）+Agent节点的方案，能够保证稳定运行，每次结果的差异不大。
 
@@ -258,11 +253,11 @@ https://github.com/kangarooking/x-skills
 
 缺点：执行速度慢，稳定性没有工作流好。
 
-# 四、给国内环境Claude Code装上Claude模型
+## 四、给国内环境Claude Code装上Claude模型
 
 眼尖的朋友可能已经在视频演示里猜到我用什么方案把Claude模型接入Claude Code了。
 
-对，就是 **七牛云 **。
+对，就是 七牛云。
 
 还记得20年初，我找到了第一份程序员工作（月薪刚好1w），是一家初创的境外电商公司。
 
@@ -282,25 +277,23 @@ https://developer.qiniu.com/aitokenapi/13085/claude-code-configuration-instructi
 
 跟之前我讲过很多次的接入方式一样
 
-修改Claude Code的配置文件 ~/.claude/settings.json 。
+修改Claude Code的配置文件 `~/.claude/settings.json` 。
 
 配置文件内容如下（注意保持json格式）：
 
-![](img/efe01be899c725282d2343a87d34c60a.png)
-
-```
+```json
 { 
-&quot;env&quot;: { 
-&quot;ANTHROPIC_AUTH_TOKEN&quot;: &quot;七牛云的apikey&quot;, 
-&quot;ANTHROPIC_BASE_URL&quot;: &quot;https://api.qnaigc.com&quot; 
-},
-&quot;permissions&quot;: {
-&quot;deny&quot;: [
-&quot;Read(./.env)&quot;,
-&quot;Read(./.env.*)&quot;,
-&quot;Read(./secrets/**)&quot;
-]
-}
+  "env": { 
+    "ANTHROPIC_AUTH_TOKEN": "七牛云的apikey", 
+    "ANTHROPIC_BASE_URL": "https://api.qnaigc.com" 
+  },
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  }
 }
 ```
 
@@ -334,9 +327,9 @@ https://s.qiniu.com/nyiAZz
 
 ---
 
-# 📱交流合作
+## 📱交流合作
 
-持续关注并更新skills 的相关资讯动态，**研****究报告，商业落地，常见问题，永久免费在线查看。已建立社群聊聊 skills 发展、应**用、对接及合作，邀请嘉宾讲课，没进群的可以扫码加入，群满可加大国🛰️ ID：zhangyuguo94s（备注：skills），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
+持续关注并更新skills 的相关资讯动态，研究报告，商业落地，常见问题，永久免费在线查看。已建立社群聊聊 skills 发展、应用、对接及合作，邀请嘉宾讲课，没进群的可以扫码加入，群满可加大国🛰️ ID：zhangyuguo94s（备注：skills），已经在社群内的无需重复加入，开源知识库及社群学习全部为公开免费分享。
 
 > **特别说明：**不要申请编辑和复制文档，有需求请进群加🛰️沟通。
 

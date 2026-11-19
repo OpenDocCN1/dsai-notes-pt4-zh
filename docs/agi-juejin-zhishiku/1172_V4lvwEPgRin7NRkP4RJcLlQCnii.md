@@ -1,16 +1,17 @@
+
 # 简单训练一个 Transformer，简单用一用
 
 > 来源：[https://agijuejin.feishu.cn/docx/ZaJ4d1g7Uo4jURx524ycu7JVn3f](https://agijuejin.feishu.cn/docx/ZaJ4d1g7Uo4jURx524ycu7JVn3f)
 
 > 作者：王几行XING
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/679596407)hihu.com/p/679596...
+> 原文：[https://zhuanlan.zhihu.com/p/679596407](https://zhuanlan.zhihu.com/p/679596407)
 
 ## 案例目标
 
-+   通过训练一个 Transformer 模型，简单地实现输出和输入一模一样的序列。比如你输入[1, 2,3,4]，那么模型也输出 [1, 2, 3, 4]
++ 通过训练一个 `Transformer` 模型，简单地实现输出和输入一模一样的序列。比如你输入 `[1, 2, 3, 4]`，那么模型也输出 `[1, 2, 3, 4]`
 
-+   可见，这是一个 seq2seq 序列模型
++ 可见，这是一个 `seq2seq` 序列模型
 
 ## 第一步，环境准备
 
@@ -33,7 +34,7 @@ DEC_SEQ_LEN = 64 + 1        # 解码器处理的序列长度，这里是 65（�
 
 ## 第二步，数据准备
 
-下面利用 cycle 函数，无限地生成数据源。只要训练不停止，就永远地提供训练数据。
+下面利用 `cycle` 函数，无限地生成数据源。只要训练不停止，就永远地提供训练数据。
 
 ```
 def cycle():
@@ -63,13 +64,8 @@ src, tgt, src_mask = next(cycle())
 
 import torch
 import pandas as pd
-# Set the options to display all columns
-pd.set_option(&#x27;display.max_columns&#x27;, None)
-
-# Set the options to display all rows
-pd.set_option(&#x27;display.max_rows&#x27;, None)
-
-
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
 
 # 将张量转移到 CPU 并转换为 NumPy 数组
 numpy_array = src.cpu().numpy()
@@ -92,20 +88,19 @@ dftgt = pd.DataFrame(numpy_array)
 
 # 显示 DataFrame
 dftgt
-
-
-## target 数据是 source 数据的2次重复，并在最开头加上数字“1”
 ```
+
+`target` 数据是 `source` 数据的2次重复，并在最开头加上数字“1”
 
 ![](img/7b504497738f0a5318dc21d398bb0824.png)
 
 举例：
 
-+   source: [2,2,2]
++ `source`: `[2, 2, 2]`
 
-+   target: [1, 2, 2, 2, 2, 2, 2]
++ `target`: `[1, 2, 2, 2, 2, 2, 2]`
 
-source_mask：
+`source_mask`：
 
 ![](img/06da3255bbb7de20252aa21117b97697.png)
 
@@ -131,14 +126,14 @@ model = XTransformer(
 optim = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)  # 使用 Adam 优化器，设置学习率
 
 # 训练
-for i in tqdm.tqdm(range(NUM_BATCHES), mininterval=10., desc=&#x27;training&#x27;):  # 使用 tqdm 显示训练进度
+for i in tqdm.tqdm(range(NUM_BATCHES), mininterval=10., desc='training'):  # 使用 tqdm 显示训练进度
     model.train()  # 将模型设置为训练模式
 
     src, tgt, src_mask = next(cycle())  # 从生成器中获取一批数据
 
     loss = model(src, tgt, mask=src_mask)  # 计算损失
     loss.backward()  # 反向传播
-    print(f&#x27;{i}: {loss.item()}&#x27;)  # 打印损失值
+    print(f'{i}: {loss.item()}')  # 打印损失值
 
     optim.step()  # 更新模型参数
     optim.zero_grad()  # 清空梯度
@@ -153,9 +148,9 @@ for i in tqdm.tqdm(range(NUM_BATCHES), mininterval=10., desc=&#x27;training&#x27
         incorrects = (src != sample).abs().sum()  # 计算不正确的 token 数量
 
         # 打印输入序列、预测输出序列和不正确的数量
-        print(f&quot;input:  &quot;, src)
-        print(f&quot;predicted output:  &quot;, sample)
-        print(f&quot;incorrects: {incorrects}&quot;)
+        print(f"input:  ", src)
+        print(f"predicted output:  ", sample)
+        print(f"incorrects: {incorrects}")
 ```
 
 ## 第五步，调用模型，完成预测
@@ -176,13 +171,15 @@ generated_sequence = model.generate(src_sequence, start_tokens, ENC_SEQ_LEN, mas
 
 
 # 打印数据源
-print(&#x27;Source Sequence: &#x27;, src_sequence)
+print('Source Sequence: ', src_sequence)
 
 # 打印生成的序列
-print(&quot;Generated Sequence: &quot;, generated_sequence)
+print("Generated Sequence: ", generated_sequence)
 ```
 
 输出的结果中，包含了模型的架构，以及数据源序列，和预测结果：
+
+
 
 ```
 XTransformer(
@@ -423,17 +420,24 @@ XTransformer(
 )
 
 ## 数据源序列
+
+```
 Source Sequence:  tensor([[10,  8,  4, 15, 16,  5, 14, 14, 16, 13,  6,  7,  5,  2,  7,  8, 13, 16,
           2, 14,  8, 12, 12,  3, 10,  3,  8,  5,  8,  8, 10, 10]],
        device=&#x27;cuda:0&#x27;)
+```
 
 ## 预测结果
+
+```
 Generated Sequence:  tensor([[10,  8,  4, 15, 16,  5, 14, 14, 16, 13,  6,  7,  5,  2,  7,  8, 13, 16,
           2, 14,  8, 12, 12,  3, 10,  3,  8,  5,  8,  8, 10, 10]],
        device=&#x27;cuda:0&#x27;)
 ```
 
-下面是添加注释后的模型架构：
+
+
+# 下面是添加注释后的模型架构
 
 ```
 # XTransformer 模型的定义
@@ -600,4 +604,6 @@ XTransformer(
 )
 ```
 
-参考案例： [ht](https://link.zhihu.com/?target=https%3A//github.com/lucidrains/x-transformers/blob/main/examples/toy_tasks/enc_dec_copy.py)tps:// github.com/lucidrains/x -transformers/blob/main/examples/toy_tasks/enc_dec_copy.py
+## 参考案例
+
+`https://github.com/lucidrains/x-transformers/blob/main/examples/toy_tasks/enc_dec_copy.py`

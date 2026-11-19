@@ -1,10 +1,11 @@
+
 # 使用 LlamaIndex 构建代理式RAG(3)-创建Agent推理循环
 
 > 来源：[https://agijuejin.feishu.cn/docx/YJZEdOTLooWPSsxO2Xic4sKVnRh](https://agijuejin.feishu.cn/docx/YJZEdOTLooWPSsxO2Xic4sKVnRh)
 
 > 作者：lucas大叔
 
-> 原文：[https://zhuanlan.z](https://zhuanlan.zhihu.com/p/698803949)hihu.com/p/698803...
+> 原文：[https://zhuanlan.zhihu.com/p/698803949](https://zhuanlan.zhihu.com/p/698803949)
 
 到目前为止，我们的查询都是在单个前向传递中完成的。给定查询，调用正确的工具，并传递正确的参数，然后获取响应。但这样仍然相当有限，如果用户提出由多个步骤组成的复杂问题，或者是需要澄清的含糊问题呢？前面的方法显然都不适用。
 
@@ -20,7 +21,7 @@ from helper import get_openai_api_key
 OPENAI_API_KEY = get_openai_api_key()
 ```
 
-导入nest_asyncio模块
+导入`nest_asyncio`模块
 
 ```
 import nest_asyncio
@@ -35,7 +36,7 @@ nest_asyncio.apply()
 ```
 from utils import get_doc_tools
 
-vector_tool, summary_tool = get_doc_tools(&quot;metagpt.pdf&quot;, &quot;metagpt&quot;)
+vector_tool, summary_tool = get_doc_tools("metagpt.pdf", "metagpt")
 ```
 
 ## 配置函数调用Agent
@@ -43,14 +44,14 @@ vector_tool, summary_tool = get_doc_tools(&quot;metagpt.pdf&quot;, &quot;metagpt
 ```
 from llama_index.llms.openai import OpenAI
 
-llm = OpenAI(model=&quot;gpt-3.5-turbo&quot;, temperature=0)
+llm = OpenAI(model="gpt-3.5-turbo", temperature=0)
 ```
 
-在LLamaIndex中，agent由两个主要组件组成：AgentWorker 和 AgentRunner。AgentWorker负责执行给定agent的下一步，而AgentRunner则是任务分派器，负责在给定任务的基础上创建AgentWorker的任务编排运行，并能够将最终的响应返回给用户。
+在LLamaIndex中，agent由两个主要组件组成：`AgentWorker` 和 `AgentRunner`。`AgentWorker`负责执行给定agent的下一步，而`AgentRunner`则是任务分派器，负责在给定任务的基础上创建`AgentWorker`的任务编排运行，并能够将最终的响应返回给用户。
 
 ![](img/5661a651ab4a9ff9af454317a4816043.png)
 
-考虑到函数调用AgentWoker的主要是根据现有的对话历史、记忆和任何传递的状态以及当前用户输入，使用函数调用来决定下一步的引用或调用，调用相应的工具并决定是否返回最终响应。整体agent接口位于AgentRunner后面，这就是要用来查询agent的接口。
+考虑到函数调用`AgentWoker`的主要是根据现有的对话历史、记忆和任何传递的状态以及当前用户输入，使用函数调用来决定下一步的引用或调用，调用相应的工具并决定是否返回最终响应。整体agent接口位于`AgentRunner`后面，这就是要用来查询agent的接口。
 
 ```
 from llama_index.core.agent import FunctionCallingAgentWorker
@@ -68,8 +69,8 @@ agent = AgentRunner(agent_worker)
 
 ```
 response = agent.query(
-    &quot;Tell me about the agent roles in MetaGPT, &quot;
-    &quot;and then how they communicate with each other.&quot;
+    "Tell me about the agent roles in MetaGPT, "
+    "and then how they communicate with each other."
 )
 ```
 
@@ -77,7 +78,7 @@ response = agent.query(
 
 > === Calling Function ===
 
-> Calling function: summary_tool_metagpt with args: {"input": "agent roles in MetaGPT"}
+> Calling function: `summary_tool_metagpt` with args: {"input": "agent roles in MetaGPT"}
 
 > === Function Output ===
 
@@ -85,7 +86,7 @@ response = agent.query(
 
 > === Calling Function ===
 
-> Calling function: summary_tool_metagpt with args: {"input": "communication between agent roles in MetaGPT"}
+> Calling function: `summary_tool_metagpt` with args: {"input": "communication between agent roles in MetaGPT"}
 
 > === Function Output ===
 
@@ -98,7 +99,7 @@ response = agent.query(
 查看源节点信息
 
 ```
-print(response.source_nodes[0].get_content(metadata_mode=&quot;all&quot;))
+print(response.source_nodes[0].get_content(metadata_mode="all"))
 ```
 
 > pag[e_label: 1
@@ -114,8 +115,6 @@ print(response.source_nodes[0].get_content(metadata_mode=&quot;all&quot;))
 > creation_date: 2024-05-20
 
 > last_modified_date: 2024-04-23
-
-> 
 
 > Preprint
 
@@ -205,21 +204,18 @@ print(response.source_nodes[0].get_content(metadata_mode=&quot;all&quot;))
 
 > Inspired by such ideas, we design a promising GPT -based Meta -Programming framework called
 
-> MetaGPT that significantly benefits from SOPs. Unlike other works (Li et al., 2023; Qian et al.,
 
-> 2023), MetaGPT requires agents to generate structured outputs, such as high-quality requirements
 
+> MetaGPT that significantly benefits from SOPs. Unlike other works (Li et al., 2023; Qian et al., 2023), MetaGPT requires agents to generate structured outputs, such as high-quality requirements
 > ∗These authors contributed equally to this work.
-
 > †Chenglin Wu (alexanderwu@fuzhi.ai) is the corresponding author, affiliated with DeepWisdom.
-
 > 1
 
-调用agent查询允许以一种方式查询agent，但不会保留状态。因此，现在让我们尝试随着时间的推移维护对话历史。Agent能够在对话记忆缓存中维护聊天，记忆模块可以自定义，但默认情况下是展开的item列表，根据LLM的上下文窗口大小而形成的滚动缓存。因此，当agent决定使用工具时，它不仅使用当前聊天，还使用之前的对话历史来进行下一步或执行下一步操作。
+调用`agent`查询允许以一种方式查询`agent`，但不会保留状态。因此，现在让我们尝试随着时间的推移维护对话历史。`Agent`能够在对话记忆缓存中维护聊天，记忆模块可以自定义，但默认情况下是展开的`item`列表，根据`LLM`的上下文窗口大小而形成的滚动缓存。因此，当`agent`决定使用工具时，它不仅使用当前聊天，还使用之前的对话历史来进行下一步或执行下一步操作。
 
 ![](img/aaf53318db5d15f3b0935b09472b6131.png)
 
-因此，不使用查询，我们使用agent.chat进行问答。
+因此，不使用查询，我们使用`agent.chat`进行问答。
 
 ```
 response = agent.chat(
@@ -228,17 +224,11 @@ response = agent.chat(
 ```
 
 > Added user message to memory: Tell me about the evaluation datasets used.
-
 > === Calling Function ===
-
-> Calling function: summary_tool_metagpt with args: {"input": "evaluation datasets used in MetaGPT"}
-
+> Calling function: `summary_tool_metagpt` with args: {"input": "evaluation datasets used in MetaGPT"}
 > === Function Output ===
-
 > The evaluation datasets used in MetaGPT include HumanEval, MBPP, SoftwareDev, and humaneval-x for multilingual evaluations on code generation tasks. These datasets cover a wide range of programming tasks such as handwritten programming tasks, Python tasks, diverse software development tasks, and multilingual evaluations on code generation tasks.
-
 > === LLM Response ===
-
 > The evaluation datasets used in MetaGPT include HumanEval, MBPP, SoftwareDev, and humaneval-x. These datasets cover a wide range of programming tasks such as handwritten programming tasks, Python tasks, diverse software development tasks, and multilingual evaluations on code generation tasks.
 
 维护对话历史，我们紧接着问一个后续问题。
@@ -248,26 +238,20 @@ response = agent.chat(&quot;Tell me the results over one of the above datasets.&
 ```
 
 > Added user message to memory: Tell me the results over one of the above datasets.
-
 > === Calling Function ===
-
-> Calling function: vector_tool_metagpt with args: {"query": "results over HumanEval dataset", "page_numbers": ["7"]}
-
+> Calling function: `vector_tool_metagpt` with args: {"query": "results over HumanEval dataset", "page_numbers": ["7"]}
 > === Function Output ===
-
 > MetaGPT achieved 85.9% and 87.7% Pass rates over the HumanEval dataset.
-
 > === LLM Response ===
-
 > MetaGPT achieved 85.9% and 87.7% Pass rates over the HumanEval dataset.
 
 ## Lower-Level: 调试性和控制
 
-上面展示了high-level的agent控制，下面我们将演示如何更细粒度地控制agent。这不仅能够构建更高级的研究助手，还能很好地调试和控制它。
+上面展示了high-level的`agent`控制，下面我们将演示如何更细粒度地控制`agent`。这不仅能够构建更高级的研究助手，还能很好地调试和控制它。
 
-拥有low-level agent接口有两个主要原因。首先是调试能力。如果你是构建agent的开发人员，那你可能希望能够更透明地了解agent在幕后实际发生了什么。特别是，如果agent第一次运行时出现问题，那么你实际上可以追踪agent的执行过程，查看它失败的地方，并尝试不同的输入以查看是否可以将agent的执行修改为正确的响应。另一个原因是为了实现更丰富的用户体验，假设你想要在agent执行过程中听取人类反馈，而不仅仅是在给定任务完成后。那么，可以想象创建异步队列，在agent执行过程中随时听取人类输入。如果确实收到人类输入，可以实际上中断并修改agent的执行，而不是等待代理任务完成。
+拥有low-level `agent`接口有两个主要原因。首先是调试能力。如果你是构建`agent`的开发人员，那你可能希望能够更透明地了解`agent`在幕后实际发生了什么。特别是，如果`agent`第一次运行时出现问题，那么你实际上可以追踪`agent`的执行过程，查看它失败的地方，并尝试不同的输入以查看是否可以将`agent`的执行修改为正确的响应。另一个原因是为了实现更丰富的用户体验，假设你想要在`agent`执行过程中听取人类反馈，而不仅仅是在给定任务完成后。那么，可以想象创建异步队列，在`agent`执行过程中随时听取人类输入。如果确实收到人类输入，可以实际上中断并修改`agent`的执行，而不是等待代理任务完成。
 
-因此，我们将重新定义agent。
+因此，我们将重新定义`agent`。
 
 ```
 agent_worker = FunctionCallingAgentWorker.from_tools(
@@ -278,7 +262,7 @@ agent_worker = FunctionCallingAgentWorker.from_tools(
 agent = AgentRunner(agent_worker)
 ```
 
-首先从用户query创建任务对象，然后开始逐步进行甚至插入我们自己的步骤。
+首先从用户`query`创建任务对象，然后开始逐步进行甚至插入我们自己的步骤。
 
 ```
 task = agent.create_task(
@@ -294,16 +278,12 @@ step_output = agent.run_step(task.task_id)
 ```
 
 > Added user message to memory: Tell me about the agent roles in MetaGPT, and then how they communicate with each other.
-
 > === Calling Function ===
-
-> Calling function: summary_tool_metagpt with args: {"input": "agent roles in MetaGPT"}
-
+> Calling function: `summary_tool_metagpt` with args: {"input": "agent roles in MetaGPT"}
 > === Function Output ===
-
 > Agent roles in MetaGPT include Product Manager, Architect, Project Manager, Engineer, and QA Engineer. The Product Manager is responsible for conducting business-oriented analysis, while the Architect translates requirements into system design components. The Project Manager distributes tasks, Engineers execute code, and QA Engineers formulate test cases to ensure code quality. These roles work together in a structured workflow following Standard Operating Procedures (SOPs) to efficiently tackle complex software development tasks.
 
-调用任务ID上已完成步骤的agent，可以看到已完成了一步。
+调用任务ID上已完成步骤的`agent`，可以看到已完成了一步。
 
 ```
 completed_steps = agent.get_completed_steps(task.task_id)
@@ -322,7 +302,6 @@ upcoming_steps[0]
 ```
 
 > Num upcoming steps for task 27c6f783-f2a1-4de4-9bcc-efb2875fe2f1: 1
-
 > TaskStep(task_id='27c6f783-f2a1-4de4-9bcc-efb2875fe2f1', step_id='b3a042f4-705d-448b-926c-0d6ab7de5caa', input=None, step_state={}, next_steps={}, prev_steps={}, is_ready=True)
 
 让我们运行接下来的两个步骤，并尝试撰写用户输入。
@@ -334,13 +313,9 @@ step_output = agent.run_step(
 ```
 
 > Added user message to memory: What about how agents share information?
-
 > === Calling Function ===
-
-> Calling function: summary_tool_metagpt with args: {"input": "how agents share information in MetaGPT"}
-
+> Calling function: `summary_tool_metagpt` with args: {"input": "how agents share information in MetaGPT"}
 > === Function Output ===
-
 > Agents in MetaGPT share information through a structured communication protocol that includes a shared message pool for publishing structured messages. They can also subscribe to relevant messages based on their profiles. This approach enhances role communication efficiency by allowing agents to obtain directional information from other roles and public information from the environment. Additionally, MetaGPT implements a publish-subscribe mechanism that enables agents to exchange information effectively within the multi-agent system. The shared message pool allows all agents to exchange information transparently without the need for individual inquiries or waiting for responses. Agents also review previous feedback before each project, make necessary adjustments to their constraint prompts based on that feedback, and summarize information received during the development of previous projects for future reference. The structured workflow involves the Product Manager generating a Product Requirement Document (PRD), which is then passed on to the Architect for system design, and subsequently to the Project Manager for task allocation and execution. This structured process ensures smooth information flow between different agents in MetaGPT.
 
 执行最后一步生成答案
@@ -352,15 +327,13 @@ print(step_output.is_last)
 
 > === LLM Response ===
 
-> Agents in MetaGPT share information through a structured communication protocol that includes a shared message pool for publishing structured messages. They can also subscribe to relevant messages based on their profiles. This approach enhances role communication efficiency by allowing agents to obtain directional information from other roles and public information from the environment. Additionally, MetaGPT implements a publish-subscribe mechanism that enables agents to exchange information effectively within the multi-agent system. The shared message pool allows all agents to exchange information transparently without the need for individual inquiries or waiting for responses. Agents also review previous feedback before each project, make necessary adjustments to their constraint prompts based on that feedback, and summarize information received during the development of previous projects for future reference. The structured workflow involves the Product Manager generating a Product Requirement Document (PRD), which is then passed on to the Architect for system design, and subsequently to the Project Manager for task allocation and execution. This structured process ensures smooth information flow between different agents in MetaGPT.
 
-> True
 
-调用finalize_response转换上述内容输出格式
+Agents in MetaGPT share information through a structured communication protocol that includes a shared message pool for publishing structured messages. They can also subscribe to relevant messages based on their profiles. This approach enhances role communication efficiency by allowing agents to obtain directional information from other roles and public information from the environment. Additionally, MetaGPT implements a publish-subscribe mechanism that enables agents to exchange information effectively within the multi-agent system. The shared message pool allows all agents to exchange information transparently without the need for individual inquiries or waiting for responses. Agents also review previous feedback before each project, make necessary adjustments to their constraint prompts based on that feedback, and summarize information received during the development of previous projects for future reference. The structured workflow involves the Product Manager generating a Product Requirement Document (PRD), which is then passed on to the Architect for system design, and subsequently to the Project Manager for task allocation and execution. This structured process ensures smooth information flow between different agents in MetaGPT.
+
+调用`finalize_response`转换上述内容输出格式
 
 ```
 response = agent.finalize_response(task.task_id)
 print(str(response))
 ```
-
-> assistant: Agents in MetaGPT share information through a structured communication protocol that includes a shared message pool for publishing structured messages. They can also subscribe to relevant messages based on their profiles. This approach enhances role communication efficiency by allowing agents to obtain directional information from other roles and public information from the environment. Additionally, MetaGPT implements a publish-subscribe mechanism that enables agents to exchange information effectively within the multi-agent system. The shared message pool allows all agents to exchange information transparently without the need for individual inquiries or waiting for responses. Agents also review previous feedback before each project, make necessary adjustments to their constraint prompts based on that feedback, and summarize information received during the development of previous projects for future reference. The structured workflow involves the Product Manager generating a Product Requirement Document (PRD), which is then passed on to the Architect for system design, and subsequently to the Project Manager for task allocation and execution. This structured process ensures smooth information flow between different agents in MetaGPT.

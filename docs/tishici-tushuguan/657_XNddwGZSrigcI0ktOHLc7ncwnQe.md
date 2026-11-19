@@ -1,10 +1,11 @@
+
 # 自我反思
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Fgi2dMY7korMZwxXYrKcOe1inWh](https://vxc3hj17dym.feishu.cn/docx/Fgi2dMY7korMZwxXYrKcOe1inWh)
 
 作者：刘哲
 
-即刻主页：https://okjk.co/hRdLJa
+即刻主页：`https://okjk.co/hRdLJa`
 
 ```
 请使用迭代自批判思维链方法分析解答以下问题：

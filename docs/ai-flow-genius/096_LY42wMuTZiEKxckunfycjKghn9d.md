@@ -1,8 +1,8 @@
+
 # Midjourney一周年！从V1到V5，画出的美女有何不同？
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/JY5Jdd2wco47sfxhgIBchQZJnxd](https://jalicvoygc0.feishu.cn/docx/JY5Jdd2wco47sfxhgIBchQZJnxd)
-
-引用自新智元
+> 引用自新智元
 
 7月14日，Midjourney距离初次发布已经一周年了！就在一年前的这一天，Midjourney开始公测。而我们，也眼看着它从v1进化到了v5.2。在今天，网友们纷纷刷起了「Midjourney生日快乐」，并且纷纷刷起了同样的prompt从V1到V5.2的变化。
 
@@ -10,37 +10,35 @@
 
 ![](img/24e92aa076aa046fd87550fb15c932af.png)
 
-同样的prompt，V1到V5.2有何不同
+## 同样的prompt，V1到V5.2有何不同
 
 Youtube大V紐村遁一子输入了同样的prompt「一个女孩」，记录了从v1到v5.2的作图进化史。
 
-**v1**
+### v1
 
 ![](img/20f6970c07dc975468e0749174214915.png)
 
-**v2**
+### v2
 
 ![](img/65597875d35c4dfc8a69fd38ea01bc57.png)
 
-**v3**
+### v3
 
 ![](img/33ad3ee83bae698ff90bf31431c3240b.png)
 
-**v4**
+### v4
 
 ![](img/ba45fbc6b11ef418f5e59deb00184797.png)
 
-**v5**
+### v5
 
+### v5.1
 
-**v5.1**
-
-
-**v5.2**
+### v5.2
 
 ![](img/ca20f7c4ba53c4012c0a1217f24f69f0.png)
 
-**v1更有艺术性，v5更写实？**
+## v1更有艺术性，v5更写实？
 
 此前，网上就有了网友对同样的prompt进行了对比。
 
@@ -63,7 +61,6 @@ Youtube大V紐村遁一子输入了同样的prompt「一个女孩」，记录了
 ![](img/883b50d57c2c1547f4b174283622bd3b.png)
 
 v1时的输出，画面比例还极度不和谐，无论是猫还是飞机都画得很诡异。
-
 
 而到了v4版，飞行员猫已经变得威风凛凛，质地极为写实，但可惜的是红男爵飞机并没有被画出。
 
@@ -93,15 +90,12 @@ v2的输出比起v1，只能说稍稍有所进步。
 
 参考资料：https://twitter.com/jesselaunz/status/1679287036455559170
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容：
 
-[🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
-
-[🤔学习AI工作流](https://jalicvoygc0.feishu.cn/wiki/W15IwochvimsqvkkuCPcZuBxnqg)
-
-[🤖查找AI工具](https://jalicvoygc0.feishu.cn/wiki/Bu8GwqYu8i5LBRkyVKocUvX5n97)
-
-[📊阅读AI文章](https://jalicvoygc0.feishu.cn/wiki/SIywwqrVji2lZkkqFFpcEHZ8nNc)
+- [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
+- [🤔学习AI工作流](https://jalicvoygc0.feishu.cn/wiki/W15IwochvimsqvkkuCPcZuBxnqg)
+- [🤖查找AI工具](https://jalicvoygc0.feishu.cn/wiki/Bu8GwqYu8i5LBRkyVKocUvX5n97)
+- [📊阅读AI文章](https://jalicvoygc0.feishu.cn/wiki/SIywwqrVji2lZkkqFFpcEHZ8nNc)
 
 扫码加入AI Flow Genius社群，探讨使用AI来提升生产力的方法，成为超级个体
 

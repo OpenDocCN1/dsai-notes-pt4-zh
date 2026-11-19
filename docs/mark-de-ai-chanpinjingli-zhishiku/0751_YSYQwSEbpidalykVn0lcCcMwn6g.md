@@ -1,3 +1,4 @@
+
 # 部署、分享和管理Skills
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/Jj1RdgVfWoNIY2xGl65cgKXEnEd](https://qqs7y1hozd1.feishu.cn/docx/Jj1RdgVfWoNIY2xGl65cgKXEnEd)
@@ -14,7 +15,7 @@
 
 适用场景：个人工作流优化、实验性功能开发
 
-部署位置：~/.claude/skills/
+部署位置：`~/.claude/skills/`
 
 ```
 # 创建个人Skill目录
@@ -37,7 +38,7 @@ ls -la ~/.claude/skills/my-personal-skill/
 
 适用场景：团队协作、项目特定功能
 
-部署位置：项目根目录下的.claude/skills/
+部署位置：项目根目录下的`.claude/skills/`
 
 ```
 # 在项目中创建Skills目录
@@ -47,9 +48,9 @@ mkdir -p .claude/skills
 cp -r shared-skills/data-analyzer .claude/skills/
 
 # 添加到版本控制（可选）
-echo &quot;.claude/skills/*/temp/&quot; &gt;&gt; .gitignore
+echo ".claude/skills/*/temp/" >> .gitignore
 git add .claude/skills/
-git commit -m &quot;Add project Skills&quot;
+git commit -m "Add project Skills"
 ```
 
 优势：
@@ -115,25 +116,22 @@ my-shareable-skill/
 ## 安装方法
 
 ### 个人使用
-```bash
+
 # 复制到个人Skills目录
 cp -r data-analyzer ~/.claude/skills/
-```
 
 ### 项目使用
-```bash
+
 # 复制到项目Skills目录
 cp -r data-analyzer .claude/skills/
-```
 
 ## 使用示例
 
-```
 用户：帮我分析这个销售数据
+
 Claude：我来帮你分析这份销售数据...
 
 [Skill自动执行数据分析流程]
-```
 
 ## 配置选项
 
@@ -144,7 +142,7 @@ Claude：我来帮你分析这份销售数据...
 ## 故障排除
 
 ### Skill没有被触发
-检查SKILL.md的description字段是否包含合适的触发条件。
+检查`SKILL.md`的`description`字段是否包含合适的触发条件。
 
 ### 脚本执行失败
 确保所有依赖都已安装，并且脚本具有执行权限。
@@ -170,13 +168,13 @@ cd my-shareable-skill
 git init
 
 # 创建.gitignore
-echo &quot;temp/
+echo "temp/
 *.log
-__pycache__/&quot; &gt; .gitignore
+__pycache__/" > .gitignore
 
 # 初始提交
 git add .
-git commit -m &quot;Initial release of data analyzer skill&quot;
+git commit -m "Initial release of data analyzer skill"
 
 # 创建GitHub仓库并推送
 git remote add origin https://github.com/yourusername/claude-skill-data-analyzer.git
@@ -245,7 +243,7 @@ git push -u origin main
 # 2.0.0 - 不兼容的重大变更
 
 # 创建版本标签
-git tag -a v1.0.0 -m &quot;Release version 1.0.0&quot;
+git tag -a v1.0.0 -m "Release version 1.0.0"
 git push origin v1.0.0
 ```
 
@@ -259,20 +257,20 @@ git checkout -b feature/new-analysis-method
 # ... 开发工作 ...
 
 # 3. 更新版本号和变更日志
-echo &quot;## [1.1.0] - $(date +%Y-%m-%d)&quot; &gt;&gt; CHANGELOG.md
-echo &quot;### Added&quot; &gt;&gt; CHANGELOG.md
-echo &quot;- New analysis method for time series data&quot; &gt;&gt; CHANGELOG.md
+echo "## [1.1.0] - $(date +%Y-%m-%d)" >> CHANGELOG.md
+echo "### Added" >> CHANGELOG.md
+echo "- New analysis method for time series data" >> CHANGELOG.md
 
 # 4. 提交更改
 git add .
-git commit -m &quot;Add time series analysis feature&quot;
+git commit -m "Add time series analysis feature"
 
 # 5. 合并到主分支
 git checkout main
 git merge feature/new-analysis-method
 
 # 6. 创建发布标签
-git tag -a v1.1.0 -m &quot;Add time series analysis&quot;
+git tag -a v1.1.0 -m "Add time series analysis"
 
 # 7. 推送到远程仓库
 git push origin main
@@ -280,7 +278,7 @@ git push origin v1.1.0
 
 # 8. 在GitHub上创建Release
 # 访问仓库的Releases页面
-# 点击 &quot;Create a new release&quot;
+# 点击 "Create a new release"
 # 选择标签，选择描述变更
 ```
 
@@ -326,8 +324,8 @@ git checkout -b feature/add-data-export
 # ... 开发工作 ...
 
 # 3. 提交Pull Request
-gh pr create --title &quot;Add data export functionality&quot; \
-             --body &quot;This PR adds the ability to export analysis results to various formats.&quot;
+gh pr create --title "Add data export functionality" \
+             --body "This PR adds the ability to export analysis results to various formats."
 
 # 4. 代码审查
 # 团队成员审查代码，提出建议
@@ -397,40 +395,39 @@ python -m pytest tests/ --tb=short
 #### 功能验证
 
 ```
-# 自动化健康检查脚本
 #!/bin/bash
-echo &quot;Running Skill health check...&quot;
+echo "Running Skill health check..."
 
 # 检查Skill文件完整性
-if [ ! -f &quot;SKILL.md&quot; ]; then
-    echo &quot;ERROR: SKILL.md not found&quot;
+if [ ! -f "SKILL.md" ]; then
+    echo "ERROR: SKILL.md not found"
     exit 1
 fi
 
 # 验证YAML语法
-python -c &quot;
+python -c "
 import yaml
-with open(&#x27;SKILL.md&#x27;) as f:
+with open('SKILL.md') as f:
     content = f.read()
-if &#x27;---&#x27; in content:
-    frontmatter = content.split(&#x27;---&#x27;)[1]
+if '---' in content:
+    frontmatter = content.split('---')[1]
     yaml.safe_load(frontmatter)
-    print(&#x27;YAML syntax: OK&#x27;)
-&quot;
+    print('YAML syntax: OK')
+"
 
 # 测试脚本执行
-if [ -d &quot;scripts&quot; ]; then
+if [ -d "scripts" ]; then
     for script in scripts/*.py; do
-        python &quot;$script&quot; --help &gt; /dev/null 2&gt;&amp;1
+        python "$script" --help > /dev/null 2>&1
         if [ $? -eq 0 ]; then
-            echo &quot;Script $script: OK&quot;
+            echo "Script $script: OK"
         else
-            echo &quot;Script $script: FAILED&quot;
+            echo "Script $script: FAILED"
         fi
     done
 fi
 
-echo &quot;Health check completed.&quot;
+echo "Health check completed."
 ```
 
 #### 用户反馈处理
@@ -481,9 +478,9 @@ mkdir -p archived-skills/$(date +%Y%m)
 mv ~/.claude/skills/old-skill archived-skills/$(date +%Y%m)/
 
 # 3. 更新文档
-echo &quot;# 已归档Skills&quot; &gt; archived-skills/README.md
-echo &quot;## $(date +%Y-%m-%d): old-skill&quot; &gt;&gt; archived-skills/README.md
-echo &quot;- 原因: 功能过时，由new-skill替代&quot; &gt;&gt; archived-skills/README.md
+echo "# 已归档Skills" > archived-skills/README.md
+echo "## $(date +%Y-%m-%d): old-skill" >> archived-skills/README.md
+echo "- 原因: 功能过时，由new-skill替代" >> archived-skills/README.md
 
 # 4. 压缩存储（可选）
 tar -czf archived-skills/$(date +%Y%m)/old-skill.tar.gz archived-skills/$(date +%Y%m)/old-skill/

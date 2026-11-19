@@ -1,11 +1,8 @@
+
 # 雅雅说【个体赋能】
 
 > 来源：[https://agispace.feishu.cn/docx/RZ7fd0HjOoFB3Ix9DAncEj1Onic](https://agispace.feishu.cn/docx/RZ7fd0HjOoFB3Ix9DAncEj1Onic)
-
 > 👸号：雅雅说
-
->
-
 > 雅雅说，专注于育儿、个人成长、短视频、自媒体、AI方法研究。创业个体赋能
 
 ![](img/d71f93a38493927520a85a275ee2d313.png)

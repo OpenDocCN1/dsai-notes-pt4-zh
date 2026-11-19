@@ -1,3 +1,4 @@
+
 # 如何使用ChatGPT写周报
 
 > 来源：[https://ga67w23t0nn.feishu.cn/docx/GiUtdW8ZJoIUVQxCQKycSpQhnUi](https://ga67w23t0nn.feishu.cn/docx/GiUtdW8ZJoIUVQxCQKycSpQhnUi)
@@ -8,15 +9,11 @@ Chatgpt的出现真的是职场人的福音，就拿写周报来说，可太会�
 
 ## 如果你想用ChatGPT来写周报，你可以参考以下步骤：
 
-1.  打开ChatGPT的网站，选择一个合适的模式（如普通、专业、创意等）。
-
-1.  在输入框中输入你的周报内容，或者一些关键词和提示。
-
-1.  点击生成按钮，等待ChatGPT给出回复。
-
-1.  查看回复，如果满意，就复制到你的周报文档中；如果不满意，就修改输入或者重新生成。
-
-1.  重复以上步骤，直到完成你的周报。
+1. 打开ChatGPT的网站，选择一个合适的模式（如普通、专业、创意等）。
+2. 在输入框中输入你的周报内容，或者一些关键词和提示。
+3. 点击生成按钮，等待ChatGPT给出回复。
+4. 查看回复，如果满意，就复制到你的周报文档中；如果不满意，就修改输入或者重新生成。
+5. 重复以上步骤，直到完成你的周报。
 
 **案例1：**
 
@@ -36,7 +33,7 @@ Chatgpt的出现真的是职场人的福音，就拿写周报来说，可太会�
 
 下面是我这周的任务，帮我写一份周报
 
-小程序[数据迁移](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={:,:2816691326})任务 造正式环境数据 小程序自测与问题修复
+小程序[数据迁移](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%3A%2C%3A2816691326%7D)任务 造正式环境数据 小程序自测与问题修复
 
 **Chatgpt写作内容如下：**
 

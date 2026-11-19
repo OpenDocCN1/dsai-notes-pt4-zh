@@ -1,3 +1,4 @@
+
 # 9.13 OpenAI推出了一个新的大语言模型一 OpenAI o1
 
 > 来源：[https://agijuejin.feishu.cn/docx/PO0Xd3AOcoOR2Kxj1UMcke5vnU7](https://agijuejin.feishu.cn/docx/PO0Xd3AOcoOR2Kxj1UMcke5vnU7)
@@ -89,21 +90,3 @@ OpenAI 计划在未来两周内发布名为「草莓」的新 AI 模型，作为
 ![](img/c2f209e5adde0b7dc350752938c0b62d.png)
 
 苹果公司在2024年9月10日推出了iPhone 16，标志着其正式进入端侧AI时代。iPhone 16搭载的Apple Intelligence采用端侧大模型和云端大模型的结合，预示着移动智能生态的新纪元。尽管端侧模型短期内能力有限，但预计未来3至4年内，随着技术进步，端侧模型将实现更丰富的功能。目前，端侧与云上模型的混合使用将是长期趋势，而AI原生OS可能成为未来用户价值的新领域。
-
-###
-
-###
-
-###
-
-###
-
-###
-
-###
-
-###
-
-###
-
-###

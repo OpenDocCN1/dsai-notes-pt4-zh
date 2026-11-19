@@ -1,4 +1,5 @@
-# 配50个Claude项目手改mcp.json？这招让你永远只改1次
+
+# 配50个Claude项目手改`mcp.json`？这招让你永远只改1次
 
 > 来源：[https://my.feishu.cn/docx/AafUdSjvFoA364xFd36cJX1dnMb](https://my.feishu.cn/docx/AafUdSjvFoA364xFd36cJX1dnMb)
 
@@ -24,15 +25,15 @@
 
 以前你家的遥控器有20个（电视、空调、机顶盒、音响、窗帘、灯光...），每次看个电视要拿好几个遥控器。
 
-**MCP Router就是把这20个遥控器的功能整合到一个万能**遥控器上，所有设备都能在一个界面上管理。
+MCP Router就是把这20个遥控器的功能整合到一个万能遥控器上，所有设备都能在一个界面上管理。
 
 核心功能就4个：
 
-1、所有MCP服务器集中管理- 不管是本地服务器还是远程服务器，全在一个桌面应用里
+1、所有MCP服务器集中管理 - 不管是本地服务器还是远程服务器，全在一个桌面应用里
 
-2、一键开关- 想用哪个服务器开哪个，不用的直接关掉
+2、一键开关 - 想用哪个服务器开哪个，不用的直接关掉
 
-3、分组管理- 通过Projects（项目）和Workspaces（工作空间）把服务器分门别类
+3、分组管理 - 通过Projects（项目）和Workspaces（工作空间）把服务器分门别类
 
 4、工具级别控制 - 每个服务器下的工具都能单独开关
 
@@ -42,19 +43,19 @@
 
 上周我用Claude Code写👸号文章，配了这些MCP服务器：
 
-1、brave-search（网页搜索）
+1、`brave-search`（网页搜索）
 
-2、exa（深度搜索）
+2、`exa`（深度搜索）
 
-3、search1api（多源搜索）
+3、`search1api`（多源搜索）
 
-4、Memory Tool（记忆存储）
+4、`Memory Tool`（记忆存储）
 
-5、thinking（AI思考）
+5、`thinking`（AI思考）
 
-6、context7（技术文档）
+6、`context7`（技术文档）
 
-7、mcp-deepwiki（深度文档）
+7、`mcp-deepwiki`（深度文档）
 
 结果用着用着，AI突然卡住了。
 
@@ -62,7 +63,7 @@
 
 我当时就想关掉几个不用的服务器，但问题来了：
 
-1、要打开配置文件（.mcp.json 或类似的）
+1、要打开配置文件（`.mcp.json` 或类似的）
 
 2、找到对应的服务器配置
 
@@ -92,11 +93,11 @@
 
 这是MCP Router的核心价值。
 
-**传统方式的痛点**：
+传统方式的痛点：
 
 你用Claude Code、Cursor、Codex、Cline、Kilo……等等一系列工具，每个都要配置MCP服务器。
 
-假设你想用同样的20个MCP服务器（brave-search、exa、context7、Github、playwright、Memory Tool、thinking、serena等），就得：
+假设你想用同样的20个MCP服务器（`brave-search`、`exa`、`context7`、`Github`、`playwright`、`Memory Tool`、`thinking`、`serena`等），就得：
 
 1、在Claude Code的配置文件里写一遍
 
@@ -112,23 +113,23 @@
 
 5个工具 × 20个服务器 = 至少100次配置。
 
-改个API Key？
+改API Key？
 
 对不起，100个地方都得改。
 
-**MCP Router的解决方案**：
+MCP Router的解决方案：
 
 所有MCP服务器都配置在MCP Router里，你的Claude Code、Cursor、Codex、Cline、Kilo只需要连接到MCP Router就行。
 
 ```
 # 所有工具都用这一条命令连接MCP Router
-export MCPR_TOKEN=&quot;你的token&quot;
+export MCPR_TOKEN="你的token"
 npx -y @mcp_router/cli connect
 ```
 
 ![](img/8c3acbf7b975a780905c8f8ec46adbd0.png)
 
-**1次配置，所有工具通用**。
+1次配置，所有工具通用。
 
 改API Key？
 
@@ -146,23 +147,23 @@ npx -y @mcp_router/cli connect
 
 **项目A：技术研究**
 
-1、需要：context7、Github、mcp-deepwiki
+1、需要：`context7`、`Github`、`mcp-deepwiki`
 
-2、不需要：BrowserTools、playwright、search1api
+2、不需要：`BrowserTools`、`playwright`、`search1api`
 
 **项目B：👸号写作**
 
-1、需要：brave-search、exa、search1api、Memory Tool、thinking
+1、需要：`brave-search`、`exa`、`search1api`、`Memory Tool`、`thinking`
 
-2、不需要：Github、context7、mcp-deepwiki
+2、不需要：`Github`、`context7`、`mcp-deepwiki`
 
 **项目C：自动化测试**
 
-1、需要：BrowserTools、playwright、spec-workflow
+1、需要：`BrowserTools`、`playwright`、`spec-workflow`
 
-2、不需要：context7、mcp-deepwiki、brave-search
+2、不需要：`context7`、`mcp-deepwiki`、`brave-search`
 
-**以前的做法**：
+以前的做法：
 
 每次切换项目，手动去配置文件里开关服务器，麻烦死了。
 
@@ -186,43 +187,65 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 ![](img/a42a851ed142b42100c35f33f8372144.png)
 
+上面提到的bug是你会发现它只能匹配到未分配的项目，如果你创建了新的项目，它就无法识别到。
+
+修改内容在这，我已提交给作者。
+
+其他的不用问我，因为我不会代码，全靠AI修改安装 =。=
+
+![](img/b261caf046ed07a64937428a4d0668c9.png)
+
+原因解析：
+
+![](img/20a9b056798af6937202aad745014fdb.png)
+
+然后叫他重新打包就行，你是啥系统就说啥系统，win就标注win，mac就标注mac。
+
+打包完成后，重新安装即可。
+
+![](img/3011a6ac2b6a63dac295ee081c19412b.png)
+
+就会发现BUG搞定了，记得重启你调用MCP的工具生效。
+
+![](img/834de680fcce2c5672a8f456537d0341.png)
+
 ### 3、Workspaces（工作空间）
 
 这个功能类似浏览器的配置文件（Chrome Profiles）。
 
 ![](img/c90421bbf59d53846e34d24b200bef7c.png)
 
-**使用场景**：
+使用场景：
 
 老金我白天写代码做技术研究（工作模式），晚上写👸号文章（创作模式）。
 
-**工作模式需要的服务器**：
+工作模式需要的服务器：
 
-1、context7（查技术文档）
+1、`context7`（查技术文档）
 
-2、Github（代码协作）
+2、`Github`（代码协作）
 
-3、mcp-deepwiki（深度文档）
+3、`mcp-deepwiki`（深度文档）
 
-4、spec-workflow（工作流管理）
+4、`spec-workflow`（工作流管理）
 
-5、shrimp-task-manager（任务管理）
+5、`shrimp-task-manager`（任务管理）
 
-**创作模式需要的服务器**：
+创作模式需要的服务器：
 
-1、brave-search（网页搜索）
+1、`brave-search`（网页搜索）
 
-2、exa（深度搜索）
+2、`exa`（深度搜索）
 
-3、search1api（多源搜索）
+3、`search1api`（多源搜索）
 
-4、Memory Tool（记忆存储）
+4、`Memory Tool`（记忆存储）
 
-5、thinking（AI思考）
+5、`thinking`（AI思考）
 
-6、serena（内容辅助）
+6、`serena`（内容辅助）
 
-**用Workspaces功能**：
+用Workspaces功能：
 
 1、创建两个Workspace：技术研究、👸号创作
 
@@ -244,19 +267,19 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 每个MCP服务器下面可能有好几个工具（Tools）。
 
-比如 brave-search 服务器有：
+比如 `brave-search` 服务器有：
 
-1、brave_web_search（网页搜索）
+1、`brave_web_search`（网页搜索）
 
-2、brave_local_search（本地搜索）
+2、`brave_local_search`（本地搜索）
 
-**场景**：我在写文章只需要网页搜索，不需要本地搜索。
+场景：我在写文章只需要网页搜索，不需要本地搜索。
 
 传统方式：只能整个服务器开或关，没法精细控制。
 
-**MCP Router的方式**：
+MCP Router的方式：
 
-打开MCP Router界面，展开 brave-search 服务器，把 brave_local_search  的开关关掉。
+打开MCP Router界面，展开 `brave-search` 服务器，把 `brave_local_search` 的开关关掉。
 
 ![](img/af127442c1753c4dced857ee63198783.png)
 
@@ -268,7 +291,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 这个功能救过老金我好几次命。
 
-**场景**：AI工具突然报错说某个MCP服务器调用失败。
+场景：AI工具突然报错说某个MCP服务器调用失败。
 
 以前：完全不知道哪里出了问题，只能瞎猜。
 
@@ -290,7 +313,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 ### 使用前（传统方式）
 
-**配置MCP服务器**：
+配置MCP服务器：
 
 1、需要手动编辑5个工具的配置文件
 
@@ -298,7 +321,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 3、不知道哪个服务器在用，哪个闲置
 
-**切换项目**：
+切换项目：
 
 1、手动改配置文件
 
@@ -306,7 +329,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 3、经常配置混乱
 
-**排查问题**：
+排查问题：
 
 1、完全靠猜
 
@@ -316,7 +339,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 ### 使用后（MCP Router）
 
-**配置MCP服务器**：
+配置MCP服务器：
 
 1、在MCP Router里配一次，所有工具通用
 
@@ -324,7 +347,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 3、一眼看到每个服务器的状态
 
-**切换项目**：
+切换项目：
 
 1、用Projects功能一键切换
 
@@ -332,7 +355,7 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 3、每个项目独立管理
 
-**排查问题**：
+排查问题：
 
 1、打开Logs看完整记录
 
@@ -356,9 +379,9 @@ npx -y @mcp_router/cli connect --project 公众号写作
 
 https://github.com/mcp-router/mcp-router/releases
 
-1、Windows用户：下载 .exe 文件
+1、Windows用户：下载 `.exe` 文件
 
-2、macOS用户：下载 .dmg 文件
+2、macOS用户：下载 `.dmg` 文件
 
 双击安装，就像装普通软件一样简单。
 
@@ -370,9 +393,9 @@ https://github.com/mcp-router/mcp-router/releases
 
 ![](img/cb9ed44549991965939c4a1f3bd8d073.png)
 
-**三种添加方式**：
+三种添加方式：
 
-**方式1：从现有配置导入（推荐）**
+方式1：从现有配置导入（推荐）
 
 如果你已经在其他工具（Claude Code、Cursor等）配置过MCP服务器，可以直接导入：
 
@@ -384,23 +407,23 @@ https://github.com/mcp-router/mcp-router/releases
 
 ![](img/c3bf7de7a21e76e7300fd81ca5abb051.png)
 
-**方式2：手动添加**
+方式2：手动添加
 
 1、点击"Add Manually"
 
 2、填写服务器信息：
 
-+   名称（随便起）
++ 名称（随便起）
 
-+   类型（本地或远程）
++ 类型（本地或远程）
 
-+   命令或URL
++ 命令或URL
 
-+   环境变量（如果需要）
++ 环境变量（如果需要）
 
 ![](img/3e75bfa6e947f26920f74129afe49ff8.png)
 
-**方式3：使用JSON配置**
+方式3：使用JSON配置
 
 如果你有现成的JSON配置，直接粘贴进去。
 
@@ -460,7 +483,7 @@ Codex配置特殊，需要看之前的完整教学！敲黑板！
 
 [老金版Codex 终极填坑指南：从环境配置到 MCP Router，再到 Agent 深度调教（万字详解）](https://tffyvtlai4.feishu.cn/wiki/LblJwEbjGiqY13kj0amcMZwmnyg)
 
-**这一步很重要**：
+这一步很重要：
 
 以前你的AI工具直接连接各个MCP服务器，现在统一连接到MCP Router。
 
@@ -484,7 +507,7 @@ MCP Router充当中间人，负责把请求分发到对应的服务器。
 
 这个老金我必须强调一下。
 
-**所有数据都在本地**：
+所有数据都在本地：
 
 1、服务器配置：存在你电脑上
 
@@ -510,7 +533,7 @@ https://github.com/mcp-router/mcp-router
 
 以前我们觉得，"会配置工具"就是专业。
 
-花半天时间研究怎么写mcp.json，觉得自己很厉害。
+花半天时间研究怎么写`mcp.json`，觉得自己很厉害。
 
 但现在我明白了：
 
@@ -520,11 +543,11 @@ https://github.com/mcp-router/mcp-router
 
 Claude Code、Cursor、Codex、Cline、Kilo......工具越来越多
 
-brave-search、exa、context7、Github、playwright......服务器越来越多
+`brave-search`、`exa`、`context7`、`Github`、`playwright`......服务器越来越多
 
 配置文件、API Key、环境变量......要管理的东西越来越复杂
 
-**这个趋势不会停**。
+这个趋势不会停。
 
 未来只会有更多AI工具，更多MCP服务器，更复杂的配置。
 
@@ -546,17 +569,17 @@ brave-search、exa、context7、Github、playwright......服务器越来越多
 
 写代码做技术研究，一键切换到"工作模式"，文档、代码、工作流工具全上。
 
-**这才是AI时代应该有的工作方式**：
+这才是AI时代应该有的工作方式：
 
 工具为人服务，而不是人被工具折腾。
 
 AI正在改变我们的工作方式。
 
-但工具再多，本质不变——**人的创造力，才是最大的价值**。
+但工具再多，本质不变——人的创造力，才是最大的价值。
 
 MCP Router帮你管理工具，你去创造价值。
 
-**这才是正确的分工。**
+这才是正确的分工。
 
 就比如，我又鼓捣个新玩意了。
 

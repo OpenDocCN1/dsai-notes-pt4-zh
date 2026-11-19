@@ -1,3 +1,4 @@
+
 # 安装说明
 
 > 来源：[https://my.feishu.cn/docx/KZVAdSb0BoAtbMxGRtmcFOrOnGg](https://my.feishu.cn/docx/KZVAdSb0BoAtbMxGRtmcFOrOnGg)
@@ -26,17 +27,17 @@ CPU：不做强制性要求
 
 ### 加载模型
 
-解压后，将模型拷贝至\sd-webui-aki-v4.9\models\Stable-diffusion路径下。
+解压后，将模型拷贝至`\sd-webui-aki-v4.9\models\Stable-diffusion`路径下。
 
 ![](img/da8ee0e1a9df04f840fcfce456f81f78.png)
 
 ### 启动更新至最新版
 
-先安装启动器运行依赖-dotnet-6.0.11。
+先安装启动器运行依赖`-dotnet-6.0.11`。
 
 ![](img/e9c81667050737be5ec4501f22b297b9.png)
 
-安装完成后，进入sd-webui-aki-v4.9文件夹双击启动器。
+安装完成后，进入`sd-webui-aki-v4.9`文件夹双击启动器。
 
 ![](img/a222ca7bfb99e5cec1bd83dc2e513d12.png)
 

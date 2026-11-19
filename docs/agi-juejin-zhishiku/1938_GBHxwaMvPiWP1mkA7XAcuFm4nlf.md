@@ -1,8 +1,7 @@
-# 04.11-商汤日日新 SenseNova V6 多模态融合大模型发布
-
-> 来源：[https://agijuejin.feishu.cn/docx/QLj9dY5EiodkD5x1yp5cezySnDg](https://agijuejin.feishu.cn/docx/QLj9dY5EiodkD5x1yp5cezySnDg)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 04 月 11 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/QLj9dY5EiodkD5x1yp5cezySnDg](https://agijuejin.feishu.cn/docx/QLj9dY5EiodkD5x1yp5cezySnDg)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

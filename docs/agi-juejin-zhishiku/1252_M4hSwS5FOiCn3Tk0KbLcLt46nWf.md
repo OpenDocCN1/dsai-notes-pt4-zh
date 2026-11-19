@@ -1,24 +1,25 @@
-# Mistral NeMo：这是现在最好的开源LLM！ （经过全面测试并击败 Qwen2、DeepSeek-V2 及其他）
+
+# Mistral NeMo：这是现在最好的开源LLM！（经过全面测试并击败 Qwen2、DeepSeek-V2 及其他）
 
 > 来源：[https://agijuejin.feishu.cn/docx/JODOd63pLowoGzxTk0Uchj3znIC](https://agijuejin.feishu.cn/docx/JODOd63pLowoGzxTk0Uchj3znIC)
 
 > 作者：Aitrainee | 👸号：AI进修生
 
-> 原文： [https://mp.weixin.](https://mp.weixin.qq.com/s/0pXc5kKGajQARIZu8iPHeg)qq.com/s/0pXc5kKG...
+> 原文：[https://mp.weixin.](https://mp.weixin.qq.com/s/0pXc5kKGajQARIZu8iPHeg)qq.com/s/0pXc5kKG...
 
 > 🌟介绍 Mistral 和 Nvidia 的新型号 Mistral NeMo。这是一个 12B 参数模型，具有 128K 上下文限制，非常好。在我的测试中，它击败了 Qwen-2、DeepSeek-V2、Llama-3 等。
 
-##### 它在 **编码任务 **方面甚至更好，并且也非常擅长做文本到应用程序、文本到前端和其他事情。我将对其进行测试，看看它是否真的可以击败其他LLMs，并且我还将告诉你如何使用它。
+## 它在 **编码任务** 方面甚至更好，并且也非常擅长做文本到应用程序、文本到前端和其他事情。我将对其进行测试，看看它是否真的可以击败其他LLMs，并且我还将告诉你如何使用它。
 
 Hi，这里是Aitrainee，欢迎阅读本期新文章。
 
-两个新模型已经推出，第一个是 OpenAI** GPT-4 Mini ，**第二个是 Mistral NeMo 。不过本文不会包括GPT-4 Mini，因为在上一篇文章，其实已经讨论过了：
+两个新模型已经推出，第一个是 OpenAI **GPT-4 Mini**，第二个是 Mistral NeMo。不过本文不会包括GPT-4 Mini，因为在上一篇文章，其实已经讨论过了：
 
 [新](http://mp.weixin.qq.com/s?__biz=MzkyMzY1NTM0Mw==&mid=2247490473&idx=1&sn=a813fde4a12e0531fa3aa052d02b23a5&chksm=c1e09669f6971f7f27fc999d217d14fe31c1b21c483d024236d94b9b727ed9f710084fcacdd4&scene=21#wechat_redirect)增了四个秘密模型！OpenAI 的 GPT-Mini、Column-R & U、Eureka（全面测试）
 
-大多数人可能没有看过，有关于 [GPT4o-Mini ](http://mp.weixin.qq.com/s?__biz=MzkyMzY1NTM0Mw==&mid=2247490473&idx=1&sn=a813fde4a12e0531fa3aa052d02b23a5&chksm=c1e09669f6971f7f27fc999d217d14fe31c1b21c483d024236d94b9b727ed9f710084fcacdd4&scene=21#wechat_redirect)发布的消息在昨天已经彻底火起来了，而上面这篇文章却发布在三四天前。
+大多数人可能没有看过，有关于 [GPT4o-Mini](http://mp.weixin.qq.com/s?__biz=MzkyMzY1NTM0Mw==&mid=2247490473&idx=1&sn=a813fde4a12e0531fa3aa052d02b23a5&chksm=c1e09669f6971f7f27fc999d217d14fe31c1b21c483d024236d94b9b727ed9f710084fcacdd4&scene=21#wechat_redirect)发布的消息在昨天已经彻底火起来了，而上面这篇文章却发布在三四天前。
 
-所以大家 可能 更多关注炒作内容：只谈论模型而不做任何测试的。
+所以大家可能更多关注炒作内容：只谈论模型而不做任何测试的。
 
 无论如何，今天我要谈论的是NeMo，这是Mistral推出的新最佳模型。
 
@@ -146,7 +147,7 @@ https://www.youtube.com/watch?v=yBWj32d_Yeo
 
 参考链接：
 
-[1]https://mistral.ai/news/mistral-nemo/
+[1] https://mistral.ai/news/mistral-nemo/
 
 **知音难求，自我修炼亦艰**
 
@@ -156,7 +157,7 @@ https://www.youtube.com/watch?v=yBWj32d_Yeo
 
 ![](img/e5b7abd851f28b8e0c7ce072e6e6406f.png)
 
-**点这里 ****👇 关****注我，记得标星哦～**
+**点这里 👇 关注我，记得标星哦～**
 
 一键三连「分享」、「点赞」和「在看」
 

@@ -1,14 +1,13 @@
+
 # AI视频教程
 
-> 来源：[https://xmgtoagi.feishu.cn/docx/HjnidLgaMo43EQxEjSCc6ShSnjc](https://xmgtoagi.feishu.cn/docx/HjnidLgaMo43EQxEjSCc6ShSnjc)
-
+> 来源：`https://xmgtoagi.feishu.cn/docx/HjnidLgaMo43EQxEjSCc6ShSnjc`
 > 译者：小码哥
-
-> 原文地址：https://openai.com/research/video-generation-models-as-world-simulators
+> 原文地址：`https://openai.com/research/video-generation-models-as-world-simulators`
 
 ![](img/bd42435ba9d4755349787fc8826341de.png)
 
-[title_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V3x1bERznoi73nx6PyQcfxgVnxf)
+[`title_0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/V3x1bERznoi73nx6PyQcfxgVnxf)
 
 我们探索视频数据生成模型的大规模训练。具体来说，我们在可变持续时间、分辨率和宽高比的视频和图像上联合训练文本条件扩散模型。我们利用对视频和图像潜在代码的时空补丁进行操作的变压器架构。我们最大的模型 Sora 能够生成一分钟的高保真视频。我们的结果表明，扩展视频生成模型是构建物理世界通用模拟器的一条有前途的途径。
 
@@ -38,63 +37,63 @@ Sora是一个扩散模型(21、)(22、)(23、)(24、)(25);给定输入噪声补�
 
 ![](img/61e70321ed32207622b4479237658a77.png)
 
-这项工作中，我们发现扩散变压器也可以有效地缩放为视频模型。下面，我们展示了训练过程中具有固定种子和输入的视频样本的比较。随着训练计算的增加，样本质量显着提高。
+这项工作中，我们发现扩散变压器也可以有效地缩放为视频模型。下面，我们展示了训练过程中具有固定种子和输入的视频样本的比较。随着训练计算的增加，样本质量显著提高。
 
 ![](img/0d106b11e79eb4ac4ab05490b38f3b41.png)
 
-[scaling_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XB2JbwvCSot5sTxwcO7cL1lPnNg)
+[`scaling_0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XB2JbwvCSot5sTxwcO7cL1lPnNg)
 
 ![](img/3e330ca5f7ef2acc69c5425514fdf6e5.png)
 
-[scaling_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GxOFb2pVhoeteRx62DUczhQSn4d)
+[`scaling_1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GxOFb2pVhoeteRx62DUczhQSn4d)
 
 ![](img/99dd417176381cb391f24e8513dad58a.png)
 
-[scaling_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FQMhbBft7oinwhxrhbbcNs9rnff)
+[`scaling_2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/FQMhbBft7oinwhxrhbbcNs9rnff)
 
-# 可变的持续时间、分辨率、宽高比
+## 可变的持续时间、分辨率、宽高比
 
 过去的图像和视频生成方法通常会将视频调整大小、裁剪或修剪为标准尺寸，例如，分辨率为 256x256 的 4 秒视频。我们发现，对原始大小的数据进行训练有几个好处。
 
-采样灵活性
+### 采样灵活性
 
 Sora 可以采样宽屏 1920x1080p 视频、垂直 1080x1920 视频以及介于两者之间的所有视频。这使得 Sora 可以直接以其原生宽高比为不同设备创建内容。它还使我们能够在以全分辨率生成之前快速以较低尺寸制作原型内容 - 所有这些都使用相同的模型。
 
 ![](img/dda4068ac98fd2dfce4267c92dc93851.png)
 
-[sampling_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TSklbH5cKowpJQxe3VocO2PVnxh)
+[`sampling_0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TSklbH5cKowpJQxe3VocO2PVnxh)
 
 ![](img/5c7ac8b1e85f6189d1b364c706f14853.png)
 
-[sampling_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YYMubpzjrow3HCxjbxGcPM7yn5s)
+[`sampling_1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YYMubpzjrow3HCxjbxGcPM7yn5s)
 
 ![](img/f4079b2c93b5346d2af7d770db4e9fc5.png)
 
-[sampling_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SkJ8bYFJpod8ruxHdoxczf16nJg)
+[`sampling_2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SkJ8bYFJpod8ruxHdoxczf16nJg)
 
-# 改进的框架和构图
+## 改进的框架和构图
 
 我们根据经验发现，以原始长宽比对视频进行训练可以改善构图和取景。我们将 Sora 与将所有训练视频裁剪为正方形的模型版本进行比较，这是训练生成模型时的常见做法。在方形作物（左）上训练的模型有时会生成仅部分可见主体的视频。相比之下，Sora（右）的视频的取景效果有所改善。
 
 ![](img/29dc4d88882d33444d0214db74b330d8.png)
 
-[sampling_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LRPfbSHGEoK5SVxkbxdcgRf1n7g)
+[`sampling_3.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LRPfbSHGEoK5SVxkbxdcgRf1n7g)
 
 ![](img/28634876f7011235aa2fe67b48c2b496.png)
 
-[sampling_4.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OZUbbhSNtoN2vLxjmb8cnl9BnOe)
+[`sampling_4.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OZUbbhSNtoN2vLxjmb8cnl9BnOe)
 
-# 语言理解
+## 语言理解
 
 训练文本到视频生成系统需要大量带有相应文本字幕的视频。我们应用了 DALL·E 3 中引入的重新字幕技术30到视频。我们首先训练一个高度描述性的字幕生成器模型，然后使用它为训练集中的所有视频生成文本字幕。我们发现，对高度描述性视频字幕进行训练可以提高文本保真度以及视频的整体质量。
 
 与 DALL·E 3 类似，我们还利用 GPT 将简短的用户提示转换为较长的详细字幕，然后发送到视频模型。这使得 Sora 能够生成准确遵循用户提示的高质量视频。
 
-# 通过图像和视频进行提示
+## 通过图像和视频进行提示
 
 上面和我们的着陆页中的所有结果都显示文本到视频的示例。但 Sora 也可以通过其他输入进行提示，例如预先存在的图像或视频。此功能使 Sora 能够执行各种图像和视频编辑任务 - 创建完美的循环视频、动画静态图像、及时向前或向后扩展视频等。
 
-DALL·E 图像动画
+### DALL·E 图像动画
 
 Sora 能够生成提供图像和提示作为输入的视频。下面我们展示基于DALL·E 2生成的示例视频31和达尔·E 330图片。
 
@@ -102,7 +101,7 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 ![](img/7ed7f9680036019302a865cdc7d9e1d4.png)
 
-[prompting_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QCr4bXTLuo2YzjxRK0pcAUVGnMf)
+[`prompting_1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/QCr4bXTLuo2YzjxRK0pcAUVGnMf)
 
 一只戴着贝雷帽和黑色高领毛衣的柴犬。
 
@@ -110,7 +109,7 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 ![](img/a41b8b325ef0e6ede831a624725ca7b7.png)
 
-[prompting_3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LTrzbWgcCo5Dhlxe44mcJU2enYg)
+[`prompting_3.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LTrzbWgcCo5Dhlxe44mcJU2enYg)
 
 不同家族怪物的平面设计风格的怪物插图。该群体包括一个毛茸茸的棕色怪物、一个带有天线的光滑黑色怪物、一个有斑点的绿色怪物和一个小圆点怪物，所有怪物都在一个有趣的环境中互动。
 
@@ -118,7 +117,7 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 ![](img/e4e5889537ddc724ccf512582275181c.png)
 
-[prompting_5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ArqQbfpJhoTJO8x132pcWK0XnNe)
+[`prompting_5.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ArqQbfpJhoTJO8x132pcWK0XnNe)
 
 写有“SORA”的现实云的图像。
 
@@ -126,81 +125,83 @@ Sora 能够生成提供图像和提示作为输入的视频。下面我们展示
 
 ![](img/d1cf399c7ef870a6f7945dcb4586f54e.png)
 
-[prompting_7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VACBbONHzorXyDxnlwLc1j6vnyh)
+[`prompting_7.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VACBbONHzorXyDxnlwLc1j6vnyh)
 
 在一座华丽的历史大厅里，巨大的浪潮达到顶峰并开始崩塌。两名冲浪者抓住时机，熟练地驾驭海浪。
 
-# 连接视频
+## 连接视频
 
 我们还可以使用 Sora 在两个输入视频之间逐渐进行插值，从而在具有完全不同主题和场景构成的视频之间创建无缝过渡。在下面的示例中，中心的视频插值在左侧和右侧的相应视频之间。
 
 ![](img/27e45b4967297b8d516f31892eb79fb6.png)
 
-[d1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TlaJb9TUuo7vKqxqNURcYyo6nKb)
+[`d1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TlaJb9TUuo7vKqxqNURcYyo6nKb)
 
 ![](img/077ba4ec539eaa6410370bddb10f29d1.png)
 
-[a0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EQkiba6MRobL7oxKWnVcglYBnWr)
+[`a0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EQkiba6MRobL7oxKWnVcglYBnWr)
 
 ![](img/a722f894a19a0d7154a45299b72f9bce.png)
 
-[a1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AgAqbLSxdoYlbfxuh9McjjxSnSd)
+[`a1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/AgAqbLSxdoYlbfxuh9McjjxSnSd)
 
 ![](img/4270e9770b34d215e42f6475d4c82d18.png)
 
-[a2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XLvdbko2wot7YSxfSCYcdlPHnFf)
+[`a2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/XLvdbko2wot7YSxfSCYcdlPHnFf)
 
 ![](img/fd4d94373f5cd683861ab79f5a48c3fa.png)
 
-[b1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9UzbH52moDBPixUpBoc7y🐧nuc)
+[`b1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/J9UzbH52moDBPixUpBoc7y🐧nuc)
 
 ![](img/6d12340d1f249935b5a48371598484f9.png)
 
-[b2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PXWpb64Y3o9bI0xRpqVcY4lVnsc)
+[`b2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PXWpb64Y3o9bI0xRpqVcY4lVnsc)
 
 ![](img/668995fd510d308ba36cc96139e09af6.png)
 
-[bike_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U5NAbgNLloLg6rxWYHYcIg5AnPy)
+[`bike_1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/U5NAbgNLloLg6rxWYHYcIg5AnPy)
 
 ![](img/b6a2de159b5da4b9bccd40f419693380.png)
 
-[c0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E9qmb2CJaoaDC7xNPu2cyXdQnxg)
+[`c0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/E9qmb2CJaoaDC7xNPu2cyXdQnxg)
 
 ![](img/72db85779297fb439ee0b1542c29f7c7.png)
 
-[c1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OEAsb8Z8HoZc6HxMxQFcJIZlnmb)
+[`c1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OEAsb8Z8HoZc6HxMxQFcJIZlnmb)
 
 ![](img/8a2c75c17bd2d01db6f18fb16beb9455.png)
 
-[c2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WhsTbNL01oE1Lcx3GSBc2dqln4c)
+[`c2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/WhsTbNL01oE1Lcx3GSBc2dqln4c)
 
 ![](img/5e5a3c996fa2c6052d18650fe6744355.png)
 
-[d0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EkiTbzOaZor4qLx9qqccGS4Mnb6)
+[`d0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EkiTbzOaZor4qLx9qqccGS4Mnb6)
 
 ![](img/15193a5b78e2c0e5ace196dd6e54918b.png)
 
-[d0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JeDKbnxi5oWEY5x5LfHc8L8gnbo)
+[`d0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JeDKbnxi5oWEY5x5LfHc8L8gnbo)
 
 ![](img/b0e3cfa5910e5e32fad085d0a54b7861.png)
 
-[simulation_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ItRmb8E3qoLMqJxszs5cB9TCnuh)
+[`simulation_1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/ItRmb8E3qoLMqJxszs5cB9TCnuh)
 
 ![](img/631e8d9f5265e3263858876aede221f1.png)
 
-[simulation_0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SbAubrL88oQVwkxveECcbVEunjb)
+[`simulation_0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/SbAubrL88oQVwkxveECcbVEunjb)
 
 ![](img/8c5ad148a603aed7629f2b2d04793bfb.png)
 
-[d1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LhKQb4OnhoCCcQxv97ScMAjsnkc)
+[`d1.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LhKQb4OnhoCCcQxv97ScMAjsnkc)
 
 ![](img/4bc196ac924296578de76048a86771cd.png)
 
-[d2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DRKDbSWqXopvAyxaQFGcW1nKnKd)
+[`d2.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DRKDbSWqXopvAyxaQFGcW1nKnKd)
 
 ![](img/b8aedabf9323ed0f5e0fd11a0121796d.png)
 
-[e0.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgEhbaCJloD73Tx7W4ccrHntnNh)
+[`e0.mp4`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TgEhbaCJloD73Tx7W4ccrHntnNh)
+
+
 
 ![](img/5150e929b8bde46e0e83e0c98ab6cc69.png)
 
@@ -230,11 +231,13 @@ Sora 还能够生成图像。我们通过在时间范围为一帧的空间网格
 
 雪山村庄，拥有舒适的小屋和北极光显示屏，高细节和逼真的数码单反相机，50 毫米 f/1.2
 
-新兴的模拟功能
+## 新兴的模拟功能
 
 我们发现，视频模型在大规模训练时表现出许多有趣的新兴功能。这些功能使 Sora 能够模拟现实世界中人、动物和环境的某些方面。这些属性的出现对 3D、物体等没有任何明确的归纳偏差——它们纯粹是尺度现象。
 
-**3D 一致性。** Sora 可以生成带有动态摄像机运动的视频。随着摄像机的移动和旋转，人和场景元素在三维空间中一致移动。
+### 3D 一致性
+
+Sora 可以生成带有动态摄像机运动的视频。随着摄像机的移动和旋转，人和场景元素在三维空间中一致移动。
 
 ![](img/dbcd4402be8405dedeb196fe49ab3574.png)
 
@@ -244,7 +247,9 @@ Sora 还能够生成图像。我们通过在时间范围为一帧的空间网格
 
 [simulation_1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/VmVSb1pfmoPNisxwN1fcNwHyn9b)
 
-**远程相干性和物体持久性。**视频生成系统面临的一个重大挑战是在采样长视频时保持时间一致性。我们发现 Sora 通常（尽管并非总是）能够有效地对短期和长期依赖关系进行建模。例如，我们的模型可以保留人、动物和物体，即使它们被遮挡或离开框架。同样，它可以在单个样本中生成同一角色的多个镜头，并在整个视频中保持其外观。
+### 远程相干性和物体持久性
+
+视频生成系统面临的一个重大挑战是在采样长视频时保持时间一致性。我们发现 Sora 通常（尽管并非总是）能够有效地对短期和长期依赖关系进行建模。例如，我们的模型可以保留人、动物和物体，即使它们被遮挡或离开框架。同样，它可以在单个样本中生成同一角色的多个镜头，并在整个视频中保持其外观。
 
 ![](img/a52873ffb8111e5437f95a12b6737a64.png)
 
@@ -254,13 +259,17 @@ Sora 还能够生成图像。我们通过在时间范围为一帧的空间网格
 
 [simulation_2.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CkcubfIuNoOVV1xSNHjclAZgnMg)
 
-**与世界互动。**索拉有时可以用简单的方式模拟影响世界状况的行动。例如，画家可以在画布上留下新的笔触，并随着时间的推移而持续存在，或者一个人可以吃汉堡并留下咬痕。
+### 与世界互动
+
+索拉有时可以用简单的方式模拟影响世界状况的行动。例如，画家可以在画布上留下新的笔触，并随着时间的推移而持续存在，或者一个人可以吃汉堡并留下咬痕。
 
 ![](img/020d7c44222ea91951ee553afc236ef6.png)
 
 [simulation_5.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NKgfbTWk6oE679xBu6EcaKlhnRh)
 
-**模拟数字世界**。 Sora 还能够模拟人工过程——一个例子是视频游戏。 Sora 可以同时通过基本策略控制《我的世界》中的玩家，同时以高保真度渲染世界及其动态。这些能力可以通过用提及“我的世界”的标题提示 Sora 来零射击。
+### 模拟数字世界
+
+Sora 还能够模拟人工过程——一个例子是视频游戏。Sora 可以同时通过基本策略控制《我的世界》中的玩家，同时以高保真度渲染世界及其动态。这些能力可以通过用提及“我的世界”的标题提示 Sora 来零射击。
 
 ![](img/bf25cb1433e9915a319930fe15b24b3f.png)
 

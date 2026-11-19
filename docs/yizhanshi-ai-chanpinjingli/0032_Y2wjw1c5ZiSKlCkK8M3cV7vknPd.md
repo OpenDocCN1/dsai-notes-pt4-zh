@@ -1,3 +1,4 @@
+
 # 环境配置和检查
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/Hpy4d3mRloEIRHxlO9ZcC78Kn4g](https://v11enp9ok1h.feishu.cn/docx/Hpy4d3mRloEIRHxlO9ZcC78Kn4g)
@@ -10,38 +11,38 @@
 
 ChatGLM3-6B理论上可以在任何主流的操作系统中运行。ChatGLM开发组已经为主流操作系统做了一定的适配。
 
-但是，我们更推荐开发者在 Linux环境下运行我们的代码，以下说明也主要针对Linux系统。
+但是，我们更推荐开发者在 Linux 环境下运行我们的代码，以下说明也主要针对 Linux 系统。
 
-关于[Windows](https://github.com/THUDM/ChatGLM3/discussions/250)和[MacOS](https://github.com/THUDM/ChatGLM3/discussions/251)的问题欢迎在讨论区提出。
+关于 [Windows](https://github.com/THUDM/ChatGLM3/discussions/250) 和 [MacOS](https://github.com/THUDM/ChatGLM3/discussions/251) 的问题欢迎在讨论区提出。
 
 ## 硬件环境
 
 最低要求：
 
-为了能够流畅运行 Int4 版本的 ChatGLM3-6B，我们在这里给出了最低的配置要求：
+为了能够流畅运行 `Int4` 版本的 ChatGLM3-6B，我们在这里给出了最低的配置要求：
 
 内存：>= 8GB
 
-显存:  >= 5GB（1060 6GB,2060 6GB）
+显存：>= 5GB（1060 6GB, 2060 6GB）
 
-为了能够流畅运行 FP16 版本的，ChatGLM3-6B，我们在这里给出了最低的配置要求：
+为了能够流畅运行 `FP16` 版本的 ChatGLM3-6B，我们在这里给出了最低的配置要求：
 
 内存：>= 16GB
 
-显存:  >= 13GB（4080 16GB）
+显存：>= 13GB（4080 16GB）
 
-Ma[c开发者](https://developer.apple.com/metal/pytorch)无需关注GPU的限制。对于搭载了 Apple Silicon 或者 AMD GPU 的 Mac，可以使用 MPS 后端来在 GPU 上运行 ChatGLM3-6B。需要参考 Apple 的 官方说明 安装 PyTorch-Nightly（正确的版本号应该是2.x.x.dev2023xxxx，而不是 2.x.x）。
+[Mac开发者](https://developer.apple.com/metal/pytorch) 无需关注 GPU 的限制。对于搭载了 Apple Silicon 或者 AMD GPU 的 Mac，可以使用 `MPS` 后端来在 GPU 上运行 ChatGLM3-6B。需要参考 Apple 的官方说明 安装 `PyTorch-Nightly`（正确的版本号应该是 `2.x.x.dev2023xxxx`，而不是 `2.x.x`）。
 
-> 如果使用CPU加载，可以忽略显存的要求，但是速度非常慢
+> 如果使用 CPU 加载，可以忽略显存的要求，但是速度非常慢
 
 ## 软件环境
 
-### Python环境
+### Python 环境
 
-请开发者按照仓库中的requirements.txt来安装对应的依赖，并需要注意:
+请开发者按照仓库中的 `requirements.txt` 来安装对应的依赖，并需要注意：
 
-python 版本推荐3.10 - 3.11
+`python` 版本推荐 `3.10` - `3.11`
 
-transformers 库版本推荐为 4.36.2
+`transformers` 库版本推荐为 `4.36.2`
 
-torch 推荐使用 2.0 及以上的版本，以获得最佳的推理性能
+`torch` 推荐使用 `2.0` 及以上的版本，以获得最佳的推理性能

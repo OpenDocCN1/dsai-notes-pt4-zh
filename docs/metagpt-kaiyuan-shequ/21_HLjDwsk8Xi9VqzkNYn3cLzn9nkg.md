@@ -1,3 +1,4 @@
+
 # “记忆”使用
 
 > 来源：[https://deepwisdom.feishu.cn/docx/L0ewd7rYboUd8AxE84QcGccxnRl](https://deepwisdom.feishu.cn/docx/L0ewd7rYboUd8AxE84QcGccxnRl)
@@ -6,29 +7,28 @@
 
 完成本节，你将能够：
 
-1.  理解MetaGPT中记忆的概念
-
-1.  如何添加或检索记忆
+1. 理解`MetaGPT`中记忆的概念
+1. 如何添加或检索记忆
 
 ## 什么是记忆
 
-在MetaGPT中，Memory类是智能体的记忆的抽象。当初始化时，Role初始化一个Memory对象作为self.rc.memory属性，它将在之后的_observe中存储每个Message，以便后续的检索。简而言之，Role的记忆是一个含有Message的列表。
+在`MetaGPT`中，`Memory`类是智能体的记忆的抽象。当初始化时，`Role`初始化一个`Memory`对象作为`self.rc.memory`属性，它将在之后的`_observe`中存储每个`Message`，以便后续的检索。简而言之，`Role`的记忆是一个含有`Message`的列表。
 
 ## 检索记忆
 
-当需要获取记忆时（获取LLM输入的上下文），你可以使用self.get_memories。函数定义如下：
+当需要获取记忆时（获取LLM输入的上下文），你可以使用`self.get_memories`。函数定义如下：
 
 ```
-def get_memories(self, k=0) -&gt; list[Message]:
-    &quot;&quot;&quot;A wrapper to return the most recent k memories of this role, return all when k=0&quot;&quot;&quot;
+def get_memories(self, k=0) -> list[Message]:
+    """A wrapper to return the most recent k memories of this role, return all when k=0"""
     return self.rc.memory.get(k=k)
 ```
 
 例如，在[多智能体入门](https://deepwisdom.feishu.cn/wiki/HoFPwNWsoiANZDk3WYlcx7XOnZg)中，我们调用此函数为测试人员提供完整的历史记录。通过这种方式，如果审阅人员提供反馈，测试人员可以参考其先前版本修改测试用例。片段如下
 
 ```
-async def _act(self) -&gt; Message:
-        logger.info(f&quot;{self._setting}: ready to {self.rc.todo}&quot;)
+async def _act(self) -> Message:
+        logger.info(f"{self._setting}: ready to {self.rc.todo}")
         todo = self.rc.todo
 
         # context = self.get_memories(k=1)[0].content # use the most recent memory as context
@@ -43,6 +43,6 @@ async def _act(self) -&gt; Message:
 
 ## 添加记忆
 
-可以使用self.rc.memory.add(msg)添加记忆，，其中msg必须是Message的实例。请查看上述的代码片段以获取示例用法。
+可以使用`self.rc.memory.add(msg)`添加记忆，其中`msg`必须是`Message`的实例。请查看上述的代码片段以获取示例用法。
 
-建议在定义_act逻辑时将Message的动作输出添加到Role的记忆中。通常，Role需要记住它先前说过或做过什么，以便采取下一步的行动。
+建议在定义`_act`逻辑时将`Message`的动作输出添加到`Role`的记忆中。通常，`Role`需要记住它先前说过或做过什么，以便采取下一步的行动。

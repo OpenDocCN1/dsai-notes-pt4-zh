@@ -1,129 +1,113 @@
+
 # LLM API Gateway 网关
 
-> 来源：[https://gotoaiworld.feishu.cn/docx/EyrldHxUdotZA7xXbfncjt7lnOf](https://gotoaiworld.feishu.cn/docx/EyrldHxUdotZA7xXbfncjt7lnOf)
+> 来源：`https://gotoaiworld.feishu.cn/docx/EyrldHxUdotZA7xXbfncjt7lnOf`
 
 以下是 6 个主流的 LLM 大模型 API 网关开源解决方案，均支持统一接口、密钥管理、流量管控与监控，适配单机 / 云原生部署，可直接落地多模态模型的统一网关与显存优化管理。
 
----
+## 主流开源 LLM API 网关方案对比（核心能力一览）
 
-### 主流开源 LLM API 网关方案对比（核心能力一览）
+## 核心方案详解（落地优先级排序）
 
----
+### LiteLLM（最适合单机多模型快速落地）
 
-### 核心方案详解（落地优先级排序）
+- 项目地址：`https://github.com/BerriAI/liteLLM`
 
-#### LiteLLM（最适合单机多模型快速落地）
+- 核心能力：
 
-+   项目地址：https://github.com/BerriAI/liteLLM
+- 统一 OpenAI 接口封装 100 + 模型，支持 vLLM / SD / 视频生成等多模态；
 
-+   核心能力：
+- 代理模式支持进程级显存限制、空闲超时自动释放；
 
-+   统一 OpenAI 接口封装 100 + 模型，支持 vLLM/SD/ 视频生成等多模态；
+- 故障转移、负载均衡、缓存 / 限流，适配单机显存优化场景。
 
-+   代理模式支持进程级显存限制、空闲超时自动释放；
+- 快速部署（Docker）：
 
-+   故障转移、负载均衡、缓存 / 限流，适配单机显存优化场景。
+  ```bash
+  docker run -p 4000:4000 berriai/liteLLM:latest --model vicuna-7b-v1.5 --gpu-memory-utilization 0.4
+  ```
 
-+   快速部署（Docker）：
+- 优势：低代码接入，无缝集成 vLLM 等显存优化库，单机部署无依赖。
 
-+   bash
+### One API（企业级模型分发首选）
 
-+   运行
+- 项目地址：`https://github.com/songquanpeng/one-api`
 
-```
-docker run -p 4000:4000 berriai/liteLLM:latest --model vicuna-7b-v1.5 --gpu-memory-utilization 0.4
-```
+- 核心能力：
 
-+   优势：低代码接入，无缝集成 vLLM 等显存优化库，单机部署无依赖。
+- 统一 OpenAI 接口管理多模型，支持国内文心一言 / ChatGLM 等；
 
-#### One API（企业级模型分发首选）
+- 密钥管理、额度控制、请求统计，支持模型下线自动释放资源；
 
-+   项目地址：[https://github.com/](https://github.com/songquanpeng/one-api)songquanpeng/one-api
+- 单二进制 / Docker 部署，WebUI 可视化管理，适合团队协作。
 
-+   核心能力：
+- 适配场景：企业内多模型统一接入、二次分发，兼顾显存与权限管控。
 
-+   统一 OpenAI 接口管理多模型，支持国内文心一言 / ChatGLM 等；
+### APIPark（云原生 AI 网关，兼容多模态）
 
-+   密钥管理、额度控制、请求统计，支持模型下线自动释放资源；
+- 项目地址：`https://github.com/eolink/apipark`
 
-+   单二进制 / Docker 部署，WebUI 可视化管理，适合团队协作。
+- 核心能力：
 
-+   适配场景：企业内多模型统一接入、二次分发，兼顾显存与权限管控。
+- 云原生架构，支持 Docker / K8s 一键部署，适配单机 / 集群；
 
-#### APIPark（云原生 AI 网关，兼容多模态）
+- 多模型统一接口、流量监控、限流熔断，适配文本 / 图片 / 视频模型；
 
-+   项目地址：https://github.com/eolink/apipark
+- 资源隔离与显存限制，关闭服务自动释放显存，契合你的需求。
 
-+   核心能力：
+- 适配场景：企业 AI 中台、多模型容灾，需标准化 API 管理与监控。
 
-+   云原生架构，支持 Docker/K8s 一键部署，适配单机 / 集群；
+### Ray Serve（灵活显存调度 + 自动扩缩容）
 
-+   多模型统一接口、流量监控、限流熔断，适配文本 / 图片 / 视频模型；
+- 项目地址：`https://github.com/ray-project/ray`
 
-+   资源隔离与显存限制，关闭服务自动释放显存，契合你的需求。
+- 核心能力：
 
-+   适配场景：企业 AI 中台、多模型容灾，需标准化 API 管理与监控。
+- 单机 / 集群通用，支持多模型进程隔离与显存精细化调度；
 
-#### Ray Serve（灵活显存调度 + 自动扩缩容）
+- 空闲超时缩容至 0 释放显存，请求到来自动扩容；
 
-+   项目地址：https://github.com/ray-project/ray
+- 无缝集成 vLLM / XFormers 等优化库，适配多模态显存优化。
 
-+   核心能力：
+- 关键配置（空闲释放）：
 
-+   单机 / 集群通用，支持多模型进程隔离与显存精细化调度；
+  ```python
+  @serve.deployment(num_gpus=0.4, idle_timeout=300)  # 空闲5分钟释放
+  class LLMServer: ...
+  ```
 
-+   空闲超时缩容至 0 释放显存，请求到来自动扩容；
+### BentoML（模型版本管理 + 显存优化）
 
-+   无缝集成 vLLM/XFormers 等优化库，适配多模态显存优化。
+- 项目地址：`https://github.com/bentoml/BentoML`
 
-+   关键配置（空闲释放）：
+- 核心能力：
 
-+   python
+- 多模型打包成 Bento，进程隔离部署，限制单模型显存占比；
 
-+   运行
+- 支持自动扩缩容，无请求时缩容释放显存；
 
-```
-@serve.deployment(num_gpus=0.4, idle_timeout=300)  # 空闲5分钟释放class LLMServer: ...
-```
+- WebUI 监控显存占用，手动 / 自动释放，适配企业级管理。
 
-#### BentoML（模型版本管理 + 显存优化）
+## 选型建议（按你的场景匹配）
 
-+   项目地址：https://github.com/bentoml/BentoML
+1. 单机快速落地多模态 + 自动显存释放：优先选 LiteLLM，低代码集成 vLLM / SD，支持空闲释放，无需复杂配置。
 
-+   核心能力：
+2. 企业内模型分发 + 密钥 / 额度管理：选 One API，WebUI 可视化，适配国内模型，适合团队协作。
 
-+   多模型打包成 Bento，进程隔离部署，限制单模型显存占比；
+3. 需云原生扩展 + 多模型容灾：选 APIPark，Docker / K8s 一键部署，支持流量管控与资源隔离。
 
-+   支持自动扩缩容，无请求时缩容释放显存；
+4. 需灵活显存调度 + 自动扩缩容：选 Ray Serve，适配单机多模型显存动态分配与空闲释放。
 
-+   WebUI 监控显存占用，手动 / 自动释放，适配企业级管理。
-
----
-
-### 选型建议（按你的场景匹配）
-
-1.  **单机快速落地多**模态 + 自动显存释放：优先选LiteLLM，低代码集成 vLLM/SD，支持空闲释放，无需复杂配置。
-
-1.  **企业内模型分发** + 密钥 / 额度管理：选One API，WebUI 可视化，适配国内模型，适合团队协作。
-
-1.  **需云原生扩展 **+ 多模型容灾：选APIPark，Docker/K8s 一键部署，支持流量管控与资源隔离。
-
-1.  **需灵活显存调度 +** 自动扩缩容：选Ray Serve，适配单机多模型显存动态分配与空闲释放。
-
----
-
-### 落地关键配置（显存优化 + 自动释放）
+## 落地关键配置（显存优化 + 自动释放）
 
 无论选择哪个方案，需重点配置：
 
-1.  进程级显存限制：通过参数限制单模型显存占比（如 vLLM 的gpu_memory_utilization=0.4）；
+1. 进程级显存限制：通过参数限制单模型显存占比（如 vLLM 的 `gpu_memory_utilization=0.4`）；
 
-1.  空闲超时释放：设置idle_timeout=300（5 分钟），无请求自动释放显存；
+2. 空闲超时释放：设置 `idle_timeout=300`（5 分钟），无请求自动释放显存；
 
-1.  进程隔离：每个模型独立进程，避免显存冲突，关闭即释放。
+3. 进程隔离：每个模型独立进程，避免显存冲突，关闭即释放。
 
----
+## 总结
 
-### 总结
-
-以上方案均为开源免费，可直接替代**手动编写监控 **/ 进程管理脚本。优先推荐L**iteLLM用于单**机多模态快速落地，配合Ra**y Serve**实现更灵活的显存调度，或用One API做企业级模型分发与权限管控。
+以上方案均为开源免费，可直接替代手动编写监控 / 进程管理脚本。优先推荐 LiteLLM 用于单机多模态快速落地，配合 Ray Serve 实现更灵活的显存调度，或用 One API 做企业级模型分发与权限管控。

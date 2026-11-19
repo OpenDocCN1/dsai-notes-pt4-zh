@@ -1,18 +1,18 @@
+
 # Lora_role_5
 
-> 来源：[https://v11enp9ok1h.feishu.cn/docx/OsM9dGHVioGcPqxSVLEcATYRnLd](https://v11enp9ok1h.feishu.cn/docx/OsM9dGHVioGcPqxSVLEcATYRnLd)
+> 来源：[`https://v11enp9ok1h.feishu.cn/docx/OsM9dGHVioGcPqxSVLEcATYRnLd`](https://v11enp9ok1h.feishu.cn/docx/OsM9dGHVioGcPqxSVLEcATYRnLd)
 
-### 实验信息
+## 实验信息
 
 训练数据来源B站,UID:
 
 为了让提示词中只包含人物信息，而不会存在其它关于嘈杂环境的描述，设计了下面几个COT思维链过程
 
-caption_chunk_gpt_compare用于判断视频描述与视频内容是否符合，筛选掉一些明显不存在人物信息的数据
+`caption_chunk_gpt_compare`用于判断视频描述与视频内容是否符合，筛选掉一些明显不存在人物信息的数据
 
 ```
-
-    video_description_prompt = f&quot;&quot;&quot;视频描述：\&quot;{caption_summary_text}\&quot;
+video_description_prompt = f&quot;&quot;&quot;视频描述：\&quot;{caption_summary_text}\&quot;
 
 请执行以下任务：
 
@@ -28,16 +28,14 @@ caption_chunk_gpt_compare用于判断视频描述与视频内容是否符合，�
 Step by Step Decomposition&quot;&quot;&quot;
 ```
 
-check_gpt_compare由于caption_chunk_gpt_compare使用了Step by Step Decomposition ，我们需要将描述任务转换成分类任务，输出是或者否
+`check_gpt_compare`由于`caption_chunk_gpt_compare`使用了Step by Step Decomposition，我们需要将描述任务转换成分类任务，输出是或者否
 
 ```
 video_description_prompt = f&quot;&quot;&quot;任务描述：
 
 给定以下文本内容：
 
-
 {compare_text}
-
 
 请执行以下操作：
 
@@ -48,11 +46,10 @@ video_description_prompt = f&quot;&quot;&quot;任务描述：
 请直接输出结果，不要包含额外的解释或信息。&quot;&quot;&quot;
 ```
 
-caption_chunk_gpt_role_insert最后判断分类为是的内容，根据最佳的聚类镜头描述修改视频描述，使其带上角色信息
+`caption_chunk_gpt_role_insert`最后判断分类为是的内容，根据最佳的聚类镜头描述修改视频描述，使其带上角色信息
 
 ```
-
-    video_description_prompt = f&quot;&quot;&quot;Script Information: {features_caption}
+video_description_prompt = f&quot;&quot;&quot;Script Information: {features_caption}
 
 Video Description: &quot;{caption_summary_text}&quot;
 
@@ -68,7 +65,7 @@ If the video description does not meet the above requirements, please output: &q
 
 Please output the result directly and do not mention variable names or additional information.
 
-Do not include &#x27;\\n&#x27; and the word &#x27;video&#x27; in your response.
+Do not include &#x27;\n&#x27; and the word &#x27;video&#x27; in your response.
 
 Do not use introductory phrases such as: &quot;The video presents&quot;, &quot;The video depicts&quot;, &quot;This video showcases&quot;, &quot;The video captures&quot;, and so on.
 
@@ -81,30 +78,28 @@ Please describe the content of the video and the changes that occur, in chronolo
 Please keep the description within 100 English words.&quot;&quot;&quot;
 ```
 
-###
-
-抽取数据集46条
+### 抽取数据集46条
 
 ![](img/e1fff5a6ae7880058176de97c2728e68.png)
 
-[sft.yaml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HKQ1baX5MoK5ZWxnFMhcB5Q7npb)
+[`sft.yaml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HKQ1baX5MoK5ZWxnFMhcB5Q7npb)
 
 ![](img/e6d2b7b4bfa076e6ee01b43154eb5bfa.png)
 
-[cogvideox_2b_lora.yaml](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OztHbwpxgoAar3xPyBbcqZUUnBe)
+[`cogvideox_2b_lora.yaml`](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OztHbwpxgoAar3xPyBbcqZUUnBe)
 
-#### Huggingface Diffusers  Lora权重
+### Huggingface Diffusers Lora权重
 
-#### 结果评价
+### 结果评价
 
-对比[Lora_role_1](https://zhipu-ai.feishu.cn/wiki/NiJHwKIcnilKmrk3HJ7c9m2knM9) 121个数据集，在46条数据集上1000次训练完全无法生成有用的信息
+对比[`Lora_role_1`](https://zhipu-ai.feishu.cn/wiki/NiJHwKIcnilKmrk3HJ7c9m2knM9) 121个数据集，在46条数据集上1000次训练完全无法生成有用的信息
 
-#### 新的任务
+### 新的任务
 
-混合[Lora_role_2](https://zhipu-ai.feishu.cn/wiki/Cscyw20uXiFBF6kC14zcpCWwn7d)中251个训练样本
+混合[`Lora_role_2`](https://zhipu-ai.feishu.cn/wiki/Cscyw20uXiFBF6kC14zcpCWwn7d)中251个训练样本
 
-#### 关联任务
+### 关联任务
 
-### HF代码加载模型抽样数据
+## HF代码加载模型抽样数据
 
-多维表格（XES5bmMG7aGoZEsbUBEcsM8dnEe_tblmFiYvB9YSxL1S）
+多维表格（`XES5bmMG7aGoZEsbUBEcsM8dnEe_tblmFiYvB9YSxL1S`）

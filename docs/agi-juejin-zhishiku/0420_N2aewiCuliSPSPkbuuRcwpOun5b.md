@@ -1,3 +1,4 @@
+
 # 贾佳亚团队联手剑桥清华等共推评测新范式 一秒侦破大模型“高分低能”
 
 > 来源：[https://agijuejin.feishu.cn/docx/TPETdR2dmoEaOsxOTFLc2A4hnuB](https://agijuejin.feishu.cn/docx/TPETdR2dmoEaOsxOTFLc2A4hnuB)
@@ -10,23 +11,23 @@
 
 颠覆过往大模型评测标准，最新、最全、最权威的测评数据集MR-Ben来了！
 
-这是继今年4月发布堪称GPT-4 + DALL- E-3的王炸产品超强视觉语言模型Mini-Gemini后，港中文贾佳亚团队再次提出的极具代表性的作品。在MR-Ben的“监督”下，大模型不仅要像学生那样会答题，还要像老师那样会阅卷，真实的推理能力无所遁形。
+这是继今年4月发布堪称GPT-4 + DALL-E-3的王炸产品超强视觉语言模型Mini-Gemini后，港中文贾佳亚团队再次提出的极具代表性的作品。在MR-Ben的“监督”下，大模型不仅要像学生那样会答题，还要像老师那样会阅卷，真实的推理能力无所遁形。
 
 MR-Ben细致地评测了不少国内外一线的开源和闭源模型，如GPT4-Turbo、Cluade3.5-Sonnet、Mistral-Large、Zhipu-GLM4、Moonshot-v1、Yi-Large、Qwen2-70B、Deepseek-V2等，并进行了详尽的分析。
 
 哪些看似美丽的大模型会被“卸妆”，哪个模型地表最强？目前该工作所有代码和数据均已开源，一起来看看！
 
-Project Page: https://randolph-zeng.github.io/Mr-Ben.github.io/
+[Project Page](https://randolph-zeng.github.io/Mr-Ben.github.io/)
 
-Arxiv Page: https://arxiv.org/abs/2406.13975
+[Arxiv Page](https://arxiv.org/abs/2406.13975)
 
-Github Repo: https://github.com/dvlab-research/Mr-Ben
+[Github Repo](https://github.com/dvlab-research/Mr-Ben)
 
-#### MR-Ben秒破大模型“高分低能”
+## MR-Ben秒破大模型“高分低能”
 
 人工智能领域进入GPT时刻后，学术界和产业界共同发力，每月甚至每周都有新的模型问世。
 
-大模型层出不穷，用什么标准来衡量大模型的具体能力？目前的主流方向是使用人类的标准化考试——选择题和填空题的方式去进行大模型评测。使用这套测试方式的好处有很多, 简单来说可以分为以下几点：
+大模型层出不穷，用什么标准来衡量大模型的具体能力？目前的主流方向是使用人类的标准化考试——选择题和填空题的方式去进行大模型评测。使用这套测试方式的好处有很多，简单来说可以分为以下几点：
 
 • 标准化考试易于量化和评测，标准明确，对就是对错就是错。
 
@@ -60,23 +61,23 @@ MR-Ben基于GSM8K、MMLU、LogiQA、MHPP等大模型预训练必测数据集的�
 
 MR-Ben数据集的构建流程
 
-#### 表现最佳大模型是它？
+## 表现最佳大模型是它？
 
 接下来，让我们结合MR-Ben工作中给出的具体例子，看看为什么说逐步作答生成最终答案的方式和相关评测不靠谱。
 
 作为被评测的“阅卷”模型，GPT4-Turbo并未发现第二步所隐藏的计算错误：
 
-# E.1 数学
+### E.1 数学
 
-## 科目：高中数学
+#### 科目：高中数学
 
-## 问题：哪个最小的整数被4除余1，被3除余2，被5除余2？
+#### 问题：哪个最小的整数被4除余1，被3除余2，被5除余2？
 
-## 选项：[A] 67 [B] 43 [C] 57 [D] 37
+#### 选项：[A] 67 [B] 43 [C] 57 [D] 37
 
-## 答案：D
+#### 答案：D
 
-###采样模型：Claude2
+#### 采样模型：Claude2
 
 模型解答步骤：
 
@@ -90,9 +91,9 @@ MR-Ben数据集的构建流程
 
 - 步骤5：选项D（37）满足所有条件，是正确答案。
 
-###解答：选项D
+#### 解答：选项D
 
-###人工注解
+#### 人工注解
 
 模型解答正确性：不正确
 
@@ -102,27 +103,27 @@ MR-Ben数据集的构建流程
 
 在步骤2中，模型错误计算了43除以4的余数为1而不是3。模型假设当43除以4时余数是1，但余数应该是3。这里有一个计算错误。
 
-###修正后的首个正确步骤：步骤2
+#### 修正后的首个正确步骤：步骤2
 
 当43除以4，余数是1。当43除以3，余数是1。当43除以5，余数是3，不是2。因此，43不是正确答案。
 
-###评测模型：gpt-4-turbo
+#### 评测模型：gpt-4-turbo
 
 模型回复：
 
--步骤1：步骤检查67除以4和3的余数，发现它符合被4除余3的条件，这是一个正确的验证。
+- 步骤1：步骤检查67除以4和3的余数，发现它符合被4除余3的条件，这是一个正确的验证。
 
--步骤2：检查43除以4、3、5的余数，发现1、3、5的余数正确匹配预期，除了5的余数不符合条件。
+- 步骤2：检查43除以4、3、5的余数，发现1、3、5的余数正确匹配预期，除了5的余数不符合条件。
 
--步骤3：步骤计算57除以4和3的余数，余数分别是1和0。当57除以3时余数不符合条件。
+- 步骤3：步骤计算57除以4和3的余数，余数分别是1和0。当57除以3时余数不符合条件。
 
--步骤4：步骤检查并验证37除以4、3、5的余数，发现所有预期的余数都准确，得出37满足题目中的所有条件。
+- 步骤4：步骤检查并验证37除以4、3、5的余数，发现所有预期的余数都准确，得出37满足题目中的所有条件。
 
-###解答过程是否正确：正确
+#### 解答过程是否正确：正确
 
-###第一个出错的步骤：不适用
+#### 第一个出错的步骤：不适用
 
-###第一个出错步骤的原因：不适用
+#### 第一个出错步骤的原因：不适用
 
 可以看到，当给定问题、确定的解答过程，评测语言模型的方式就转换成了让模型对解答过程进行“阅卷”并评判正误、指出错误位置及原因。其中解答过程的正误，潜在的出错位置可以通过与标注结果进行比对来计算。而模型出错步骤和原因的评测，则可以交由GPT4，通过比较标注人员给出的错误原因解释和模型的错误原因解释，来判断模型是否正确。
 
@@ -136,7 +137,7 @@ MR-Ben数据集的构建流程
 
 其次，MR-Ben通过使用了人力精细的标注流程控制，取得了大量的高质量标注，而巧妙的流程设计又使得评测方式能够直观地量化。
 
-贾佳亚团队还针对性测试了时下最具代表性的十大大语言模型和不同版本。可以看到，闭源大语言模型里，GPT4-Turbo的表现最佳（虽然在“阅卷”时未能发现计算错误），在绝大部分的科目里，有demo（k=1）和无demo（k=0）的设置下都领先于其他模型。
+贾佳亚团队还针对性测试了时下最具代表性的十大大语言模型和不同版本。可以看到，闭源大语言模型里，GPT4-Turbo的表现最佳（虽然在“阅卷”时未能发现计算错误），在绝大部分的科目里，有demo（`k=1`）和无demo（`k=0`）的设置下都领先于其他模型。
 
 ![](img/0d4e6a3ade9ca8db30e3bce50149ecc8.png)
 
@@ -164,20 +165,20 @@ MR-Ben数据集的构建流程
 
 参考：
 
-1. Training Verifiers to Solve Math Word Problems （https://arxiv.org/abs/2110.14168）
+1. Training Verifiers to Solve Math Word Problems [https://arxiv.org/abs/2110.14168](https://arxiv.org/abs/2110.14168)
 
-2. Measuring Massive Multitask Language Understanding（ https://arxiv.org/abs/2009.03300）
+2. Measuring Massive Multitask Language Understanding [https://arxiv.org/abs/2009.03300](https://arxiv.org/abs/2009.03300)
 
-3. LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning （https://arxiv.org/abs/2007.08124）
+3. LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning [https://arxiv.org/abs/2007.08124](https://arxiv.org/abs/2007.08124)
 
-4. MHPP: Exploring the Capabilities and Limitations of Language Models Beyond Basic Code Generation（ https://arxiv.org/abs/2405.11430）
+4. MHPP: Exploring the Capabilities and Limitations of Language Models Beyond Basic Code Generation [https://arxiv.org/abs/2405.11430](https://arxiv.org/abs/2405.11430)
 
-5. Sparks of Artificial General Intelligence: Early experiments with GPT-4 （https://arxiv.org/abs/2303.12712）
+5. Sparks of Artificial General Intelligence: Early experiments with GPT-4 [https://arxiv.org/abs/2303.12712](https://arxiv.org/abs/2303.12712)
 
-6. Qwen Technical Report （https://arxiv.org/abs/2309.16609）
+6. Qwen Technical Report [https://arxiv.org/abs/2309.16609](https://arxiv.org/abs/2309.16609)
 
-7. DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model （https://arxiv.org/abs/2405.04434）
+7. DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model [https://arxiv.org/abs/2405.04434](https://arxiv.org/abs/2405.04434)
 
-8. Textbooks Are All You Need （https://arxiv.org/abs/2306.11644）
+8. Textbooks Are All You Need [https://arxiv.org/abs/2306.11644](https://arxiv.org/abs/2306.11644)
 
-9. Large Language Models Cannot Self-Correct Reasoning Yet （https://arxiv.org/abs/2310.01798）
+9. Large Language Models Cannot Self-Correct Reasoning Yet [https://arxiv.org/abs/2310.01798](https://arxiv.org/abs/2310.01798)

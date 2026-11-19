@@ -1,3 +1,4 @@
+
 # 中国AIGC应用全景报告
 
 > 来源：[https://agijuejin.feishu.cn/docx/Gb02dAkI2oUcAnxHVnrcdfLqnfc](https://agijuejin.feishu.cn/docx/Gb02dAkI2oUcAnxHVnrcdfLqnfc)

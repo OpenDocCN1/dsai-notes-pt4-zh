@@ -1,10 +1,11 @@
+
 # 1.📕图文流程
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/CT8WdSJMEobysNx2fYFck6lDn5e](https://xuqiwei1986.feishu.cn/docx/CT8WdSJMEobysNx2fYFck6lDn5e)
 
 大家好，我是新城。
 
-大家最近，在刷小红薯的时候，有没有看过这类的养生图文或者其他类型的图文呢？就**是一张图，再**配一些文字，阅读量都不低，甚至于有跑到达几十万的阅读量和几万的点赞，如下图所示：
+大家最近，在刷小红薯的时候，有没有看过这类的养生图文或者其他类型的图文呢？就是一张图，再配一些文字，阅读量都不低，甚至于有跑到达几十万的阅读量和几万的点赞，如下图所示：
 
 ![](img/7ebef2d4c2ebe8ae54493546603b54b9.png)
 
@@ -12,11 +13,11 @@
 
 ![](img/0f6497e7f24708afe5fab2e8b7e364c3.png)
 
-**养生知识图文的数据**
+### 养生知识图文的数据
 
 经过新城观察了几个账号，发现这类账号的起号周期都很短，一个新号，有的 5 天时间就能阅读量破几百上千的点赞。
 
-**并且这类养生图文制作起来也很简单，利用扣子智能体批量制作，输入好参考的链接，然**后再输入好标题就可以获取对标的账号笔记的数据，一键保持到电脑就可以直接进行发布。
+**并且这类养生图文制作起来也很简单**，利用扣子智能体批量制作，输入好参考的链接，然后再输入好标题就可以获取对标的账号笔记的数据，一键保持到电脑就可以直接进行发布。
 
 每天花个 3-5 分钟时间，就可以快速地完成一篇文章。
 
@@ -54,9 +55,9 @@
 
 ### 一、开始节点
 
-开始节点，note_url，这个就是输入我们找到的对标账号的内容，可以是养生、知识、分享等内容的小红薯链接，这个是方便提取相关的内容。
+开始节点，`note_url`，这个就是输入我们找到的对标账号的内容，可以是养生、知识、分享等内容的小红薯链接，这个是方便提取相关的内容。
 
-开始第二个节点，subject，这个就是输入我们标题的主题，例如“头发越养越多的 10 个好习惯！、原来早 1 小时睡差别这么大、别为打翻的牛奶哭泣”，就类似于这种主题。
+开始第二个节点，`subject`，这个就是输入我们标题的主题，例如“头发越养越多的 10 个好习惯！、原来早 1 小时睡差别这么大、别为打翻的牛奶哭泣”，就类似于这种主题。
 
 或者其它的主题，比如菜谱主题、教育主题、育儿主题，都可以一键生成的。
 
@@ -133,12 +134,14 @@ direction | 用户需求/养生方向（如睡眠、饮食、运动…） | 否
 note_titles | 参考笔记标题列表 | 否
 
 # 输出格式（严格遵守）
-```json
+
 {
+
   &quot;fm_title&quot;: &quot;&lt;主标题&gt;&quot;,
+
   &quot;fm_subtitle&quot;: &quot;&lt;副标题&gt;&quot;
+
 }
-```
 
 # 工作流程
 1. 确定创作依据
@@ -156,12 +159,14 @@ note_titles | 参考笔记标题列表 | 否
 
 4. 输出
 **仅返回 JSON，不附加额外说明**。
-```json
+
 {
+
   &quot;fm_title&quot;: &quot;&lt;主标题&gt;&quot;,
+
   &quot;fm_subtitle&quot;: &quot;&lt;副标题&gt;&quot;
+
 }
-```
 
 # 约束
 1. 只围绕养生领域创作；涉及医疗纠纷或违规疗法直接拒答。
@@ -174,12 +179,13 @@ direction：睡眠养生
 note_title：[&quot;早睡关键点其实在于别想&quot;]
 
 【输出示例】
-```json
 {
+
   &quot;fm_title&quot;: &quot;睡前玩手机如何不伤眼？&quot;,
+
   &quot;fm_subtitle&quot;: &quot;3 个护眼动作，告别夜间眼疲劳！&quot;
+
 }
-```
 ```
 
 然后，我们再添加用户提示词，如下图所示：
@@ -188,9 +194,9 @@ note_title：[&quot;早睡关键点其实在于别想&quot;]
 
 然后，我们再添加输出的变量，如下图所示：
 
-fm_title：标题
+`fm_title`：标题
 
-fm_subtitle：副标题
+`fm_subtitle`：副标题
 
 ![](img/118dbbe7d8991ccc7fc1ee01b27db7cf.png)
 
@@ -298,33 +304,56 @@ fm_subtitle：副标题
 
 # 📤 输出格式
 以json格式输出，仅输出如下内容，不要做任何解释。输出格式：
-```
+
 {
+
   &quot;zw_title&quot;: &quot;睡觉是新开始&quot;,
+
   &quot;zw_content1&quot;: [
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;,
+
     &quot;围绕主题的简洁副标题&quot;
+
   ],
+
   &quot;zw_content2&quot;: [
+
     &quot;30字左右的副标题1内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题2内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题3内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题4内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题5内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题6内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题7内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题8内容介绍，温柔引导和情绪共鸣&quot;,
+
     &quot;30字左右的副标题9内容介绍，温柔引导和情绪共鸣&quot;
+
   ]
+
 }
-```
 
 # ⚠️ 限制
 - **仅返回合法 JSON**，无 Markdown、空格或换行之外的多余字符
@@ -343,11 +372,11 @@ fm_subtitle：副标题
 
 然后，我们再添加输出的变量，如下图所示：
 
-zwtitle：主标题，也就是顶部那个大标题的内容
+`zwtitle`：主标题，也就是顶部那个大标题的内容
 
-zw_content1：副标题，参考主标题写出了 9 个分节的框架
+`zw_content1`：副标题，参考主标题写出了 9 个分节的框架
 
-zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
+`zw_content2`：副标题内容：介绍副标题的内容，主要是干嘛的
 
 ![](img/f36d0d35cfc354541505aca9f9d2caa1.png)
 
@@ -393,18 +422,19 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 以下是结构规范的模板，你只需替换内容即可反复使用：
 
-```
 白色背景，清新卡通封面插画风格，画面整体居中，四周留有空白边距，构图通透、简约呼吸感强。  
+
 画面中为1~2个固定风格人物（白色云朵头、粉色连体衣、黑色圆点眼睛、无嘴巴），表情通过姿态与动作体现，风格统一、造型可爱。
 
 单人版本示例：  
+
 主题居中，人物站在桌前，桌上摆放大米、皮蛋、瘦肉等食材，双手叉腰凝视食材，身体微微前倾，表现“准备粥料”的状态。
 
 双人对比版本示例：  
+
 左侧人物弓着背，坐在床上刷手机，头顶乌云，表情颓废；右侧人物坐在阳光下阅读纸质书，头顶小花，姿势挺拔。两人风格一致但姿态对比强烈，体现“坏习惯 vs 好习惯”的视觉冲突
 
 无论单人或双人，所有元素不可重叠或紧贴边缘，构图轻盈不压迫。
-```
 
 ---
 
@@ -416,13 +446,17 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 **输出图像提示词：**
 
-```
-白色背景，横向卡通插画风格，整体画面居中，四周留白，风格清爽简洁。  
-左侧人物坐在床上弓背刷手机，头顶乌云、眼神疲惫、身体蜷缩，身边有杂乱手机线缠绕，表现“手机焦虑”；  
-右侧人物坐在草地上闭眼呼吸，头顶小花、阳光照射，身边有书本、蓝莓果盘，姿态放松自然，表现“远离焦虑”。  
+
+
+# AI图文批量生成智能体搭建教程
+
+白色背景，横向卡通插画风格，整体画面居中，四周留白，风格清爽简洁。
+
+左侧人物坐在床上弓背刷手机，头顶乌云、眼神疲惫、身体蜷缩，身边有杂乱手机线缠绕，表现“手机焦虑”；
+
+右侧人物坐在草地上闭眼呼吸，头顶小花、阳光照射，身边有书本、蓝莓果盘，姿态放松自然，表现“远离焦虑”。
+
 两个角色风格一致、动作对比强烈。
-```
-```
 
 然后，我们再添加用户提示词，如下图所示：
 
@@ -458,7 +492,7 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 ![](img/43c9b7f450fe095dbefa35c178afe0c5.png)
 
-### 九、次页图
+## 九、次页图
 
 剩下三张图我们要是副标题的介绍
 
@@ -472,7 +506,7 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 ![](img/96ccf9dff1e556f0990f1de8d8a2a4f3.png)
 
-（记得把批处理设置成 3 次，避免报错的问题！)
+（记得把批处理设置成 3 次，避免报错的问题！）
 
 ![](img/4cc4effea01eb3b57b5fc15b188c3d4d.png)
 
@@ -485,19 +519,17 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 ```
 # 图像提示词工程师 - 简化版
 
-你是一位专业的图像提示词工程师，擅长将结构化说明转化为适用于 AI 图像生成的中文提示词，目标是生成一张**单个独立生活场景的卡通图解图像**。输出图像包含一个拟人化动作的小人，展示特定的行为或状态，配有中文注释，风格简洁清爽。
+你是一位专业的图像提示词工程师，擅长将结构化说明转化为适用于 AI 图像生成的中文提示词，目标是生成一张单个独立生活场景的卡通图解图像。输出图像包含一个拟人化动作的小人，展示特定的行为或状态，配有中文注释，风格简洁清爽。
 
 ---
 
 ## 📥 输入格式（由用户提供）：
-```
 标题：[标题]
-```
 
 ---
 
 ## 🎨 输出要求：
-请基于用户提供的内容，输出**一整段中文图像提示词**，满足以下规范：
+请基于用户提供的内容，输出一整段中文图像提示词，满足以下规范：
 
 * **输出语言**：中文
 * **场景结构**：500x500像素正方形构图，单个角色单个动作
@@ -511,15 +543,13 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 ---
 
 ## 🧾 图像提示词生成模板：
-```
 白色背景，画面居中排布，四周留边距，构图通透松弛。整体为卡通风格、极简线条风插画，色彩柔和。单个独立生活场景，人物形象为白色云朵头、黑色圆点眼睛、无嘴巴，穿粉色连体衣。
 
 人物：[具体动作描述，包含姿态、表情、道具、环境细节，体现场景的生活感和趣味性]
 
-脚下显示文字：&quot;[行为注释]&quot;
+脚下显示文字："[行为注释]"
 
 场景自然生动，角色动作富有表现力，视觉清晰易读。
-```
 ```
 
 在批处理里面添加一个图片生成，来生成对应的画面内容，变量填写前面的提示词生成好的内容。
@@ -538,7 +568,7 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 ![](img/320d71c49ce112f4b389181071eb79f8.png)
 
-把生成图片和选择器复制多两份，这样子可以达到补图的效果。（最后一个不需要选择器)
+把生成图片和选择器复制多两份，这样子可以达到补图的效果。（最后一个不需要选择器）
 
 ![](img/d9245cb24d577227319f8ef88a39eaae.png)
 
@@ -558,7 +588,7 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 ![](img/9a4bf8143ddda027beafaa11f3b1a87d.png)
 
-### 十、次页图
+## 十、次页图
 
 添加一个处理文案的内容，需要把数组里面的内容拆开成一个一个的，这样子才可以输入到画板里面。
 
@@ -576,25 +606,25 @@ zw_content2：副标题内容：介绍副标题的内容，主要是干嘛的
 
 代码：
 
-```
+```python
 import re
 import json
 
-async def main(args: Args) -&gt; Output:
+async def main(args: Args) -> Output:
     params = args.params
     
     # 检查输入是否为JSON格式的数组
-    if isinstance(params[&#x27;input&#x27;], dict) and &#x27;input&#x27; in params[&#x27;input&#x27;]:
-        # 处理 {&quot;input&quot;: [...]} 格式
-        input_array = params[&#x27;input&#x27;][&#x27;input&#x27;]
-    elif isinstance(params[&#x27;input&#x27;], list):
+    if isinstance(params['input'], dict) and 'input' in params['input']:
+        # 处理 {"input": [...]} 格式
+        input_array = params['input']['input']
+    elif isinstance(params['input'], list):
         # 处理直接的数组格式
-        input_array = params[&#x27;input&#x27;]
+        input_array = params['input']
     else:
         # 原有的字符串处理逻辑
         # 使用正则表达式提取键值对
-        pattern = r&#x27;&quot;(title|subtitle|sub_title\d|content\d|main_image|element_img\d+)&quot;:\s*&quot;([^&quot;]*)&quot;&#x27;
-        matches = re.findall(pattern, params[&#x27;input&#x27;])
+        pattern = r'"(title|subtitle|sub_title\d|content\d|main_image|element_img\d+)":\s*"([^"]*)"'
+        matches = re.findall(pattern, params['input'])
         
         # 构建输出字典
         extracted_values = {}
@@ -602,23 +632,23 @@ async def main(args: Args) -&gt; Output:
             extracted_values[key] = value
         
         # 处理数组内容，提取并拆分为subtitle1-9
-        array_pattern = r&#x27;&quot;zw_content1&quot;:\s*\[(.*?)\]&#x27;
-        array_match = re.search(array_pattern, params[&#x27;input&#x27;], re.DOTALL)
+        array_pattern = r'"zw_content1":\s*\[(.*?)\]'
+        array_match = re.search(array_pattern, params['input'], re.DOTALL)
         
         if array_match:
             array_content = array_match.group(1)
             # 提取数组中的每个字符串
-            item_pattern = r&#x27;&quot;([^&quot;]*)&quot;&#x27;
+            item_pattern = r'"([^"]*)"'
             items = re.findall(item_pattern, array_content)
             
             # 将数组内容拆分为subtitle1-9
             for i, item in enumerate(items, 1):
-                if i &lt;= 9:  # 限制最多9个subtitle
-                    extracted_values[f&#x27;subtitle{i}&#x27;] = item
+                if i <= 9:  # 限制最多9个subtitle
+                    extracted_values[f'subtitle{i}'] = item
         
         # 包装成输出格式
         ret: Output = {
-            &quot;extracted_values&quot;: [extracted_values]
+            "extracted_values": [extracted_values]
         }
         
         return ret
@@ -626,12 +656,12 @@ async def main(args: Args) -&gt; Output:
     # 处理数组输入，将数组内容拆分为subtitle1-9
     extracted_values = {}
     for i, item in enumerate(input_array, 1):
-        if i &lt;= 9:  # 限制最多9个subtitle
-            extracted_values[f&#x27;subtitle{i}&#x27;] = item
+        if i <= 9:  # 限制最多9个subtitle
+            extracted_values[f'subtitle{i}'] = item
     
     # 包装成输出格式
     ret: Output = {
-        &quot;extracted_values&quot;: [extracted_values]
+        "extracted_values": [extracted_values]
     }
     
     return ret
@@ -653,13 +683,13 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/0ef661543166564edcd71644b291f6cd.png)
 
-### 十一、结束
+## 十一、结束
 
 添加我们做好的图片变量就可以了
 
 ![](img/c27066f63c8836ad3d3481b74f22cec8.png)
 
-## 结尾
+### 结尾
 
 到这里，一个📕批量生成图文的智能体就已经搭建完成了。
 
@@ -681,6 +711,6 @@ async def main(args: Args) -&gt; Output:
 
 ![](img/597d97697bc2e7d382662f3cf3357eb5.png)
 
-2..确认导入就可以了
+2.确认导入就可以了
 
 ![](img/44bce4e77ca8815594ed970081c9690e.png)

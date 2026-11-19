@@ -1,20 +1,27 @@
+
 # 核心团队
 
-> 来源：[https://xcn2d971vuw4.feishu.cn/docx/KG0ldSd0ooiKWTxBWxQcTSXmn4d](https://xcn2d971vuw4.feishu.cn/docx/KG0ldSd0ooiKWTxBWxQcTSXmn4d)
+> 来源：`https://xcn2d971vuw4.feishu.cn/docx/KG0ldSd0ooiKWTxBWxQcTSXmn4d`
 
 根据公开资料整理，如有侵权，请联系删除。
+
+## 团队规模
 
 DeepSeek V3 论文 contributors 共 199 人，其中研发 150 人，数据标注 31 人，商务合规 18 人，已离职 10 人。
 
 DeepSeek R1 论文 contributors 共 195 人，其中核心贡献者 18 人，其他贡献者 177 人，已离职 6 人。
 
+## 团队背景
+
 研发团队以本土程序员为主，无海归背景，成员包括北京大学、中山大学等高校博士毕业生（如朱琪豪、代达劢等），强调基础能力与创新潜力。
 
-2024年，团队成员罗福莉因技术贡献受关注，后被小米创始人雷军高薪挖角（未完全确认
+2024 年，团队成员罗福莉因技术贡献受关注，后被小米创始人雷军高薪挖角（未完全确认
 
-郭达雅：https://guoday.github.io/
+郭达雅：`https://guoday.github.io/`
 
-罗福莉：https://scholar.google.com/citations?user=1s79Z5cAAAAJ&hl=zh-CN
+罗福莉：`https://scholar.google.com/citations?user=1s79Z5cAAAAJ&hl=zh-CN`
+
+## 核心成员
 
 郭达雅，中山大学与清华大学联合培养博士生，DeepSeek 研究员。领导项目如 DeepSeek-Coder、DeepSeekMath、DeepSeek-Prover、DeepSeek-Coder-V2 和 DeepSeek-R1。
 
@@ -34,13 +41,13 @@ DeepSeek R1 论文 contributors 共 195 人，其中核心贡献者 18 人，其
 
 吴俣，北航博士，曾就职于微软 MSRA，领导 DeepSeek 的后训练团队，负责模型优化与部署。
 
-待整理：
+## 待整理
 
-潘子铮（音） https://x.com/zizhpan
+潘子铮（音）`https://x.com/zizhpan`
 
-王培一（音）https://x.com/sybilhyz
+王培一（音）`https://x.com/sybilhyz`
 
-陈小康 DeepSeek AI 研究员，2024 年博士毕业于北京大学智能学院。代表作 VisionLLM, Context AutoEncoder (CAE), Conditional DETR 等，Google Scholar 引用量 3000+，个人主页：https://charlescxk.github.io/ https://x.com/PKUCXK
+陈小康 DeepSeek AI 研究员，2024 年博士毕业于北京大学智能学院。代表作 VisionLLM, Context AutoEncoder (CAE), Conditional DETR 等，Google Scholar 引用量 3000+，个人主页：`https://charlescxk.github.io/` `https://x.com/PKUCXK`
 
 罗福莉 - DeepSeek研究员，传闻中雷军开千万年薪挖角的对象。
 
@@ -68,6 +75,6 @@ Peiyi Wang - 北大博士生，受北京大学计算语言学教育部重点实�
 
 辛华剑 - 中山大学逻辑学专业，在DeepSeek实习期间参与了用大模型证明数学定理的DeepSeek-Prover，现在在爱丁堡大学读博士。
 
-参考资料：
+## 参考资料
 
-[h](https://www.zhihu.com/question/8423473404/answer/87854152471)ttps://www.zhihu.com/question/8423473404/answer/87854152471
+`https://www.zhihu.com/question/8423473404/answer/87854152471`

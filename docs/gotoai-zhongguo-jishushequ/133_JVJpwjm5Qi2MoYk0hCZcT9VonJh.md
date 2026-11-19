@@ -1,3 +1,4 @@
+
 # 20.使用 Mistral 模型构建
 
 > 来源：[https://gotoaiworld.feishu.cn/docx/YhPbdRX7FoQhysxkHYucveoUn7e](https://gotoaiworld.feishu.cn/docx/YhPbdRX7FoQhysxkHYucveoUn7e)
@@ -6,15 +7,13 @@
 
 本课将涵盖：
 
-+   探索不同的 Mistral 模型
-
-+   了解每个模型的使用场景和适用情况
-
-+   通过代码示例展示每个模型的独特功能
++ 探索不同的 Mistral 模型
++ 了解每个模型的使用场景和适用情况
++ 通过代码示例展示每个模型的独特功能
 
 ## Mistral 模型
 
-本课将介绍三种不同的 Mistral 模型： Mistral Large、Mistral Small 和 Mistral Nemo。
+本课将介绍三种不同的 Mistral 模型：Mistral Large、Mistral Small 和 Mistral Nemo。
 
 这[些模型均可在 Gi](https://docs.github.com/en/github-models/prototyping-with-ai-models?WT.mc_id=academic-105485-koreyst)thub Model 市场免费获取。本笔记本中的代码将使用这些模型进行演示。更多关于使用 Github Models 进行AI 模型原型设计的详细信息，请参见链接。
 
@@ -24,97 +23,130 @@ Mistral Large 2 是 Mistral 目前的旗舰模型，专为企业级应用设计�
 
 该模型是对原始 Mistral Large 的升级，提供了：
 
-+   更大的上下文窗口——128k 对比 32k
-
-+   在数学和编程任务上的更好表现——平均准确率 76.9% 对比 60.4%
-
-+   提升的多语言性能——支持语言包括：英语、法语、德语、西班牙语、意大利语、葡萄牙语、荷兰语、俄语、中文、日语、韩语、阿拉伯语和印地语
++ 更大的上下文窗口——128k 对比 32k
++ 在数学和编程任务上的更好表现——平均准确率 76.9% 对比 60.4%
++ 提升的多语言性能——支持语言包括：英语、法语、德语、西班牙语、意大利语、葡萄牙语、荷兰语、俄语、中文、日语、韩语、阿拉伯语和印地语
 
 凭借这些特性，Mistral Large 在以下方面表现出色：
 
-+   检索增强生成（RAG） —— 由于更大的上下文窗口
-
-+   函数调用 —— 该模型支持原生函数调用，允许与外部工具和 API 集成。调用可以并行执行，也可以按顺序依次执行。
-
-+   代码生成 —— 在 Python、Java、TypeScript 和 C++ 代码生成方面表现优异。
++ 检索增强生成（RAG）——由于更大的上下文窗口
++ 函数调用——该模型支持原生函数调用，允许与外部工具和 API 集成。调用可以并行执行，也可以按顺序依次执行。
++ 代码生成——在 Python、Java、TypeScript 和 C++ 代码生成方面表现优异。
 
 ### 使用 Mistral Large 2 的 RAG 示例
 
 在此示例中，我们使用 Mistral Large 2 对文本文件执行 RAG 模式。问题用韩语提出，询问作者大学前的活动。
 
-示例中使用 Cohere Embeddings Model 对文本和问题进行向量化。此示例使用 faiss Python 包作为向量存储。
+示例中使用 Cohere Embeddings Model 对文本和问题进行向量化。此示例使用 `faiss` Python 包作为向量存储。
 
 发送给 Mistral 模型的提示包含问题和与问题相似的检索片段，模型随后给出自然语言回答。
 
+```bash
 pip install faiss-cpu
+```
 
-import requestsimport numpy as npimport faissimport osfrom azure.ai.inference import ChatCompletionsClientfrom azure.ai.inference.models import SystemMessage, UserMessagefrom azure.core.credentials import AzureKeyCredentialfrom azure.ai.inference import EmbeddingsClientendpoint = "https://models.inference.ai.azure.com"model_name = "Mistral-large"token = os.environ["GITHUB_TOKEN"]
+```python
+import requests
+import numpy as np
+import faiss
+import os
+from azure.ai.inference import ChatCompletionsClient
+from azure.ai.inference.models import SystemMessage, UserMessage
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.inference import EmbeddingsClient
 
-client = ChatCompletionsClient(endpoint=endpoint,credential=AzureKeyCredential(token),
+endpoint = "https://models.inference.ai.azure.com"
+model_name = "Mistral-large"
+token = os.environ["GITHUB_TOKEN"]
 
+client = ChatCompletionsClient(
+    endpoint=endpoint,
+    credential=AzureKeyCredential(token),
 )
 
-response = requests.get('https://raw.githubusercontent.com/run-llama/llama_index/main/docs/docs/examples/data/paul_graham/paul_graham_essay.txt')
+response = requests.get(
+    'https://raw.githubusercontent.com/run-llama/llama_index/main/docs/docs/examples/data/paul_graham/paul_graham_essay.txt'
+)
 
-text = response.textchunk_size = 2048chunks = [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
+text = response.text
+chunk_size = 2048
+chunks = [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
 
 len(chunks)
 
 embed_model_name = "cohere-embed-v3-multilingual"
 
-embed_client = EmbeddingsClient(endpoint=endpoint,credential=AzureKeyCredential(token)
-
+embed_client = EmbeddingsClient(
+    endpoint=endpoint,
+    credential=AzureKeyCredential(token),
 )
 
-embed_response = embed_client.embed(input=chunks,model=embed_model_name
-
+embed_response = embed_client.embed(
+    input=chunks,
+    model=embed_model_name,
 )
 
 text_embeddings = []
 
-for item in embed_response.data:length = len(item.embedding)text_embeddings.append(item.embedding)
+for item in embed_response.data:
+    length = len(item.embedding)
+    text_embeddings.append(item.embedding)
 
 text_embeddings = np.array(text_embeddings)
 
 d = text_embeddings.shape[1]
 
 index = faiss.IndexFlatL2(d)
-
 index.add(text_embeddings)
 
-question = "저자가 대학에 오기 전에 주로 했던 두 가지 일은 무엇이었나요?？"question_embedding = embed_client.embed(input=[question],model=embed_model_name
-
+question = "저자가 대학에 오기 전에 주로 했던 두 가지 일은 무엇이었나요?？"
+question_embedding = embed_client.embed(
+    input=[question],
+    model=embed_model_name,
 )
 
 question_embeddings = np.array(question_embedding.data[0].embedding)
 
-D, I = index.search(question_embeddings.reshape(1, -1), k=2) # distance, indexretrieved_chunks = [chunks[i] for i in I.tolist()[0]]
+D, I = index.search(
+    question_embeddings.reshape(1, -1), k=2
+)  # distance, index
+retrieved_chunks = [chunks[i] for i in I.tolist()[0]]
 
-prompt = f"""Context information is below.---------------------{retrieved_chunks}---------------------Given the context information and not prior knowledge, answer the query.Query: {question}Answer:"""chat_response = client.complete(messages=[SystemMessage(content="You are a helpful assistant."),UserMessage(content=prompt),
+prompt = f"""Context information is below.
+---------------------
+{retrieved_chunks}
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: {question}
+Answer:"""
 
-],temperature=1.0,top_p=1.0,max_tokens=1000,model=model_name
-
+chat_response = client.complete(
+    messages=[
+        SystemMessage(content="You are a helpful assistant."),
+        UserMessage(content=prompt),
+    ],
+    temperature=1.0,
+    top_p=1.0,
+    max_tokens=1000,
+    model=model_name,
 )
 
 print(chat_response.choices[0].message.content)
+```
 
 ## Mistral Small
 
 Mistral Small 是 Mistral 家族中属于高级/企业类别的另一款模型。顾名思义，它是一个小型语言模型（SLM）。使用 Mistral Small 的优势包括：
 
-+   相较于 Mistral Large 和 NeMo 等大型模型，成本节约显著——价格降低约 80%
-
-+   低延迟——响应速度快于 Mistral 的大型模型
-
-+   灵活性强——可在不同环境中部署，对资源需求限制较少
++ 相较于 Mistral Large 和 NeMo 等大型模型，成本节约显著——价格降低约 80%
++ 低延迟——响应速度快于 Mistral 的大型模型
++ 灵活性强——可在不同环境中部署，对资源需求限制较少
 
 Mistral Small 非常适合：
 
-+   基于文本的任务，如摘要、情感分析和翻译
-
-+   频繁请求的应用场景，因其成本效益高
-
-+   低延迟的代码任务，如代码审查和建议
++ 基于文本的任务，如摘要、情感分析和翻译
++ 频繁请求的应用场景，因其成本效益高
++ 低延迟的代码任务，如代码审查和建议
 
 ## Mistral Small 与 Mistral Large 的对比
 
@@ -122,35 +154,60 @@ Mistral Small 非常适合：
 
 你会看到响应时间相差约 3-5 秒。同时注意相同提示下响应的长度和风格差异。
 
+```python
 import os
 
-endpoint = "https://models.inference.ai.azure.com"model_name = "Mistral-small"token = os.environ["GITHUB_TOKEN"]
+endpoint = "https://models.inference.ai.azure.com"
+model_name = "Mistral-small"
+token = os.environ["GITHUB_TOKEN"]
 
-client = ChatCompletionsClient(endpoint=endpoint,credential=AzureKeyCredential(token),
-
+client = ChatCompletionsClient(
+    endpoint=endpoint,
+    credential=AzureKeyCredential(token),
 )
 
-response = client.complete(messages=[SystemMessage(content="You are a helpful coding assistant."),UserMessage(content="Can you write a Python function to the fizz buzz test?"),
-
-],temperature=1.0,top_p=1.0,max_tokens=1000,model=model_name
-
-)
-
-print(response.choices[0].message.content)
-
-import osfrom azure.ai.inference import ChatCompletionsClientfrom azure.ai.inference.models import SystemMessage, UserMessagefrom azure.core.credentials import AzureKeyCredentialendpoint = "https://models.inference.ai.azure.com"model_name = "Mistral-large"token = os.environ["GITHUB_TOKEN"]
-
-client = ChatCompletionsClient(endpoint=endpoint,credential=AzureKeyCredential(token),
-
-)
-
-response = client.complete(messages=[SystemMessage(content="You are a helpful coding assistant."),UserMessage(content="Can you write a Python function to the fizz buzz test?"),
-
-],temperature=1.0,top_p=1.0,max_tokens=1000,model=model_name
-
+response = client.complete(
+    messages=[
+        SystemMessage(content="You are a helpful coding assistant."),
+        UserMessage(content="Can you write a Python function to the fizz buzz test?"),
+    ],
+    temperature=1.0,
+    top_p=1.0,
+    max_tokens=1000,
+    model=model_name,
 )
 
 print(response.choices[0].message.content)
+```
+
+```python
+import os
+from azure.ai.inference import ChatCompletionsClient
+from azure.ai.inference.models import SystemMessage, UserMessage
+from azure.core.credentials import AzureKeyCredential
+
+endpoint = "https://models.inference.ai.azure.com"
+model_name = "Mistral-large"
+token = os.environ["GITHUB_TOKEN"]
+
+client = ChatCompletionsClient(
+    endpoint=endpoint,
+    credential=AzureKeyCredential(token),
+)
+
+response = client.complete(
+    messages=[
+        SystemMessage(content="You are a helpful coding assistant."),
+        UserMessage(content="Can you write a Python function to the fizz buzz test?"),
+    ],
+    temperature=1.0,
+    top_p=1.0,
+    max_tokens=1000,
+    model=model_name,
+)
+
+print(response.choices[0].message.content)
+```
 
 ## Mistral NeMo
 
@@ -160,11 +217,9 @@ print(response.choices[0].message.content)
 
 NeMo 模型的其他特点包括：
 
-+   更高效的分词：该模型使用 Tekken 分词器，优于更常用的 tiktoken，支持更多语言和代码的更好表现。
-
-+   微调：基础模型支持微调，适用于需要微调的多样化应用场景。
-
-+   原生函数调用 —— 与 Mistral Large 类似，该模型经过函数调用训练，是首批支持此功能的开源模型之一。
++ 更高效的分词：该模型使用 Tekken 分词器，优于更常用的 `tiktoken`，支持更多语言和代码的更好表现。
++ 微调：基础模型支持微调，适用于需要微调的多样化应用场景。
++ 原生函数调用——与 Mistral Large 类似，该模型经过函数调用训练，是首批支持此功能的开源模型之一。
 
 ### 分词器对比
 
@@ -172,75 +227,119 @@ NeMo 模型的其他特点包括：
 
 两者使用相同的提示，但你会发现 NeMo 返回的 token 数量少于 Mistral Large。
 
+```bash
 pip install mistral-common
+```
 
-Import needed packages:from mistral_common.protocol.instruct.messages import (UserMessage,
-
+```python
+# Import needed packages:
+from mistral_common.protocol.instruct.messages import (
+    UserMessage,
 )
 
-from mistral_common.protocol.instruct.request import ChatCompletionRequestfrom mistral_common.protocol.instruct.tool_calls import (Function,Tool,
-
+from mistral_common.protocol.instruct.request import ChatCompletionRequest
+from mistral_common.protocol.instruct.tool_calls import (
+    Function,
+    Tool,
 )
 
-from mistral_common.tokens.tokenizers.mistral import MistralTokenizer# Load Mistral tokenizermodel_name = "open-mistral-nemo        "tokenizer = MistralTokenizer.from_model(model_name)
+from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
+# Load Mistral tokenizer
+model_name = "open-mistral-nemo"
+tokenizer = MistralTokenizer.from_model(model_name)
 
-# Tokenize a list of messagestokenized = tokenizer.encode_chat_completion(ChatCompletionRequest(tools=[Tool(function=Function(name="get_current_weather",description="Get the current weather",parameters={"type": "object","properties": {"location": {"type": "string","description": "The city and state, e.g. San Francisco, CA",
-
-},"format": {"type": "string","enum": ["celsius", "fahrenheit"],"description": "The temperature unit to use. Infer this from the users location.",
-
-},
-
-},"required": ["location", "format"],
-
-},
-
+# Tokenize a list of messages
+tokenized = tokenizer.encode_chat_completion(
+    ChatCompletionRequest(
+        tools=[
+            Tool(
+                function=Function(
+                    name="get_current_weather",
+                    description="Get the current weather",
+                    parameters={
+                        "type": "object",
+                        "properties": {
+                            "location": {
+                                "type": "string",
+                                "description": "The city and state, e.g. San Francisco, CA",
+                            },
+                            "format": {
+                                "type": "string",
+                                "enum": ["celsius", "fahrenheit"],
+                                "description": "The temperature unit to use. Infer this from the users location.",
+                            },
+                        },
+                        "required": ["location", "format"],
+                    },
+                )
+            )
+        ],
+        messages=[
+            UserMessage(content="What's the weather like today in Paris"),
+        ],
+        model=model_name,
+    )
 )
 
+tokens, text = tokenized.tokens, tokenized.text
+# Count the number of tokens
+print(len(tokens))
+```
+
+```python
+# Import needed packages:
+from mistral_common.protocol.instruct.messages import (
+    UserMessage,
 )
 
-],messages=[UserMessage(content="What's the weather like today in Paris"),
-
-],model=model_name,
-
+from mistral_common.protocol.instruct.request import ChatCompletionRequest
+from mistral_common.protocol.instruct.tool_calls import (
+    Function,
+    Tool,
 )
 
+from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
+# Load Mistral tokenizer
+model_name = "mistral-large-latest"
+tokenizer = MistralTokenizer.from_model(model_name)
+
+# Tokenize a list of messages
+tokenized = tokenizer.encode_chat_completion(
+    ChatCompletionRequest(
+        tools=[
+            Tool(
+                function=Function(
+                    name="get_current_weather",
+                    description="Get the current weather",
+                    parameters={
+                        "type": "object",
+                        "properties": {
+                            "location": {
+                                "type": "string",
+                                "description": "The city and state, e.g. San Francisco, CA",
+                            },
+                            "format": {
+                                "type": "string",
+                                "enum": ["celsius", "fahrenheit"],
+                                "description": "The temperature unit to use. Infer this from the users location.",
+                            },
+                        },
+                        "required": ["location", "format"],
+                    },
+                )
+            )
+        ],
+        messages=[
+            UserMessage(content="What's the weather like today in Paris"),
+        ],
+        model=model_name,
+    )
 )
 
-tokens, text = tokenized.tokens, tokenized.text# Count the number of tokensprint(len(tokens))
-
-Import needed packages:from mistral_common.protocol.instruct.messages import (UserMessage,
-
-)
-
-from mistral_common.protocol.instruct.request import ChatCompletionRequestfrom mistral_common.protocol.instruct.tool_calls import (Function,Tool,
-
-)
-
-from mistral_common.tokens.tokenizers.mistral import MistralTokenizer# Load Mistral tokenizermodel_name = "mistral-large-latest"tokenizer = MistralTokenizer.from_model(model_name)
-
-# Tokenize a list of messagestokenized = tokenizer.encode_chat_completion(ChatCompletionRequest(tools=[Tool(function=Function(name="get_current_weather",description="Get the current weather",parameters={"type": "object","properties": {"location": {"type": "string","description": "The city and state, e.g. San Francisco, CA",
-
-},"format": {"type": "string","enum": ["celsius", "fahrenheit"],"description": "The temperature unit to use. Infer this from the users location.",
-
-},
-
-},"required": ["location", "format"],
-
-},
-
-)
-
-)
-
-],messages=[UserMessage(content="What's the weather like today in Paris"),
-
-],model=model_name,
-
-)
-
-)
-
-tokens, text = tokenized.tokens, tokenized.text# Count the number of tokensprint(len(tokens))
+tokens, text = tokenized.tokens, tokenized.text
+# Count the number of tokens
+print(len(tokens))
+```
 
 ## 学习永无止境，继续前行
 

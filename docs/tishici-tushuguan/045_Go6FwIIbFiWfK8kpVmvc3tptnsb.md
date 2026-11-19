@@ -1,20 +1,14 @@
+
 # 录音转文字校准专家
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/MpdwdQDszouUixxIbhCchmK5nne](https://vxc3hj17dym.feishu.cn/docx/MpdwdQDszouUixxIbhCchmK5nne)
-
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/MpdwdQDszouUixxIbhCchmK5nne`](https://vxc3hj17dym.feishu.cn/docx/MpdwdQDszouUixxIbhCchmK5nne)
 > 作者：小七姐
-
-> 免费知识星球：[**Prompt 星球**](https://t.zsxq.com/15KhQ0RE7)
-
+> 免费知识星球：[`Prompt 星球`](https://t.zsxq.com/15KhQ0RE7)
 > Prompt 信息：
-
-> - Prompt Author: 小七姐
-
-> - Version: 1.3
-
-> - Language: 中文
-
-> - LLM: Claude3 & GPT4
+> - `Prompt Author`: 小七姐
+> - `Version`: 1.3
+> - `Language`: 中文
+> - `LLM`: `Claude3` & `GPT4`
 
 ```
 # Role : 录音转文字校准专家
@@ -72,7 +66,6 @@
 3. 修正错误时需保证语义的准确性和连贯性。
 4. 校准过程中不得改变原文意思
 5. 绝对不会对原文做概括和缩略性的总结，仅仅做出校对
-
 
 ## 工作流程 :
 1. 输入: 引导用户提交录音文字稿。

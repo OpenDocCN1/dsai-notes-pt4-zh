@@ -1,16 +1,19 @@
+
 # 国内如何通过支付宝订阅ChatGPT Plus会员？
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/UXVsdWsX8op8T2xi41vcq82qnTe](https://xuqiwei1986.feishu.cn/docx/UXVsdWsX8op8T2xi41vcq82qnTe)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/UXVsdWsX8op8T2xi41vcq82qnTe`
 
 今天就介绍一种在国内，通过支付宝就可以搞定GPT充值的方法，我已经使用近半年了
 
-（1）打开网站： [h](https://gpt.fomepay.com/#/pages/login/index?d=373039)ttps://gpt.fomepay.com/#/pages/login/index?d=373039
+## 打开网站
+
+打开网站：`https://gpt.fomepay.com/#/pages/login/index?d=373039`
 
 ![](img/807368594c0e7e65f7f2a26463fb0855.png)
 
-（2）账号注册
+## 账号注册
 
-打开之后，你可以选择用手机号，接个验证码直接登录，如果你不放心，你也可以选择用邮箱登录。建议用outlook等国外邮箱。
+打开之后，你可以选择用手机号，接个验证码直接登录，如果你不放心，你也可以选择用邮箱登录。建议用`outlook`等国外邮箱。
 
 上方如果选择用手机号登录，操作很简单，输入你的手机号，点击获取验证码，把验证码输入到上面框中，点击下方的登录或注册。
 
@@ -28,7 +31,7 @@
 
 点击邮箱登录或注册，然后输入你之前注册账户的邮箱名，密码，然后获取邮箱的验证码，之后点击立即登录。
 
-（3）开卡
+## 开卡
 
 ![](img/cda2378ffb51bbfc42363441ecf1de77.png)
 
@@ -52,7 +55,7 @@
 
 点击确认开卡后，把出现的支付宝二维码截图，然后打开自己的支付宝扫码支付即可。
 
-（4）查看卡号信息
+## 查看卡号信息
 
 ![](img/c5c087e3721d76a30833a67b480e338c.png)
 
@@ -88,17 +91,17 @@
 
 之后再点击CVC安全码查看卡的全部信息。
 
-（5）充值ChatGPT
+## 充值ChatGPT
 
-打开官网：chat.openai.com 然后点击Log in 输入自己之前注册的gpt账号。浏览器无痕模式下进行
+打开官网：`chat.openai.com` 然后点击`Log in` 输入自己之前注册的gpt账号。浏览器无痕模式下进行
 
 ![](img/77b4316557efe34d4f9a3bdcbaa47591.png)
 
-点击上方的GPT-4，上方是出现锁的状况，代表你没有开通plus会员。点击下方的Upgrade to ChatGPT Plus
+点击上方的`GPT-4`，上方是出现锁的状况，代表你没有开通plus会员。点击下方的`Upgrade to ChatGPT Plus`
 
 ![](img/1860e3dcadffbd2728bf1272914038d4.png)
 
-继续点击上方的Upgrade to Plus
+继续点击上方的`Upgrade to Plus`
 
 ![](img/a389006fa430c88e5dfbb09a1595ff91.png)
 
@@ -114,12 +117,9 @@
 
 然后把下方的框勾上，点击订阅即可。
 
-这里订阅时，注意以下几个地方。
+### 注意事项
 
-（1）使用浏览器的无痕模式去登录账号和订阅
-
-（2）填写的信息要和卡的信息一致，否则会不成功。
-
-（3）订阅失败时，不一定是卡的问题，大概率是你的IP地址有问题。
-
-（4）自己的IP地址实在订阅不成功，可以联系客服，让他们帮你订阅。
+1. 使用浏览器的无痕模式去登录账号和订阅
+2. 填写的信息要和卡的信息一致，否则会不成功。
+3. 订阅失败时，不一定是卡的问题，大概率是你的IP地址有问题。
+4. 自己的IP地址实在订阅不成功，可以联系客服，让他们帮你订阅。

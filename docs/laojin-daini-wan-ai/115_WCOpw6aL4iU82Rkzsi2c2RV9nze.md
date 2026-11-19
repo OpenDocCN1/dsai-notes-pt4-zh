@@ -1,3 +1,4 @@
+
 # Claude Sonnet4.6编程追平Opus了，价格只要1/5，老金算了笔账
 
 > 来源：[https://my.feishu.cn/docx/PnaMdLyuVoqfMMxolGhcqT7AnWb](https://my.feishu.cn/docx/PnaMdLyuVoqfMMxolGhcqT7AnWb)
@@ -36,19 +37,19 @@ OSWorld是测试AI操作电脑能力的benchmark。
 
 根据官方说明，核心改进有三条。
 
-**1、先读后写**
+### 1、先读后写
 
 之前的版本拿到需求就直接写代码。
 
 Sonnet 4.6会先完整阅读上下文，理解整个代码库再动手。
 
-**2、逻辑精简**
+### 2、逻辑精简
 
 之前AI写代码经常重复逻辑。
 
 Sonnet 4.6会主动合并重复代码，不搞冗余。
 
-**3、少吹牛多干活**
+### 3、少吹牛多干活
 
 之前的Opus 4.5经常"假装成功"。
 
@@ -76,7 +77,7 @@ Claude Opus 4.6：$15 input / $75 output。
 
 用Opus：每小时7.5美元，用Sonnet：每小时1.5美元。
 
-**一年省下来：2万美元以上。**
+一年省下来：2万美元以上。
 
 对于企业用户来说，这就是白赚的利润。
 
@@ -86,7 +87,7 @@ Anthropic官方也说了：
 
 ## 100万token上下文窗口
 
-**Sonnet 4.6还带来了**一个测试版功能—— 100万token上下文窗口 。
+Sonnet 4.6还带来了一个测试版功能—— 100万token上下文窗口。
 
 100万token能干嘛？
 
@@ -128,7 +129,7 @@ Sonnet 4.6能自己理解上下文，完成一系列操作。
 
 老金我直接说结论。
 
-日常开发任务：选Sonnet 4.6。
+### 日常开发任务：选Sonnet 4.6。
 
 1、价格便宜5倍
 
@@ -136,7 +137,7 @@ Sonnet 4.6能自己理解上下文，完成一系列操作。
 
 3、响应更快
 
-复杂推理任务：仍选Opus 4.6。
+### 复杂推理任务：仍选Opus 4.6。
 
 1、最深层的推理能力
 
@@ -152,9 +153,9 @@ Anthropic官方也承认，Opus仍然是深度推理的首选。
 
 现在Sonnet 4.6已经上线。
 
-免费用户：claude.ai默认就是Sonnet 4.6。
+免费用户：`claude.ai`默认就是Sonnet 4.6。
 
-Pro用户：claude.ai默认也是Sonnet 4.6。
+Pro用户：`claude.ai`默认也是Sonnet 4.6。
 
 开发者可以通过Claude API、Claude Code、Claude Cowork直接使用。
 
@@ -170,7 +171,7 @@ Pro用户：claude.ai默认也是Sonnet 4.6。
 
 但就目前的能力来说，这已经是Sonnet系列最强版本了。
 
-**价格不变，能力直接翻倍。**
+价格不变，能力直接翻倍。
 
 个人开发者可以省一大笔钱。
 
@@ -180,14 +181,14 @@ Pro用户：claude.ai默认也是Sonnet 4.6。
 
 ## 参考来源
 
-Anthropic官方发布：anthropic.com/news/claude-sonnet-4-6
+Anthropic官方发布：`anthropic.com/news/claude-sonnet-4-6`
 
-TechCrunch报道：techcrunch.com/2026/02/17/anthropic-releases-sonnet-4-6
+TechCrunch报道：`techcrunch.com/2026/02/17/anthropic-releases-sonnet-4-6`
 
-MacRumors评测：macrumors.com/2026/02/17/anthropic-releases-claude-sonnet-4-6
+MacRumors评测：`macrumors.com/2026/02/17/anthropic-releases-claude-sonnet-4-6`
 
-VentureBeat分析：venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost
+VentureBeat分析：`venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost`
 
-IT Pro报道：itpro.com/technology/artificial-intelligence/anthropic-promises-opus-level-reasoning-claude-sonnet-4-6-model-at-lower-cost
+IT Pro报道：`itpro.com/technology/artificial-intelligence/anthropic-promises-opus-level-reasoning-claude-sonnet-4-6-model-at-lower-cost`
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+`https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc`

@@ -1,10 +1,11 @@
+
 # 逆向思维大师卡片
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Bq7Cdu608oWtlJxbe5ZcpBsyn7g](https://vxc3hj17dym.feishu.cn/docx/Bq7Cdu608oWtlJxbe5ZcpBsyn7g)
 
 作者：景淮
 
-原文：https://mp.weixin.qq.com/s/7dXDaGRbhG-AxglmWntYPg
+原文：`https://mp.weixin.qq.com/s/7dXDaGRbhG-AxglmWntYPg`
 
 适用模型：Claude
 

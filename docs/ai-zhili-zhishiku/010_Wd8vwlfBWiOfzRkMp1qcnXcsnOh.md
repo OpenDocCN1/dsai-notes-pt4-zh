@@ -1,58 +1,46 @@
+
 # 算法备案
 
 > 来源：[https://docs.feishu.cn/docx/KBdwdoeJco9Cb8xuw8BcM1fznic](https://docs.feishu.cn/docx/KBdwdoeJco9Cb8xuw8BcM1fznic)
 
 **法律依据：**
 
-+   四部委《[互联网信息服务算法推荐管理规定](http://www.gov.cn/zhengce/zhengceku/2022-01/04/content_5666429.htm)》
+- 四部委《[互联网信息服务算法推荐管理规定](http://www.gov.cn/zhengce/zhengceku/2022-01/04/content_5666429.htm)》
+- 《互联网信息服务算法推荐管理规定》答记者问
+- 解读：【官方】《互联网信息服务算法推荐管理规定》系列专家解读
 
-+   《互联网信息服务算法推荐管理规定》答记者问
+## 算法推荐服务备案
 
-+   解读：【官方】《互联网信息服务算法推荐管理规定》系列专家解读；
-
-### **算法推荐服务备案**
-
-+   12月份发布《互联网信息服务算法推荐管理规定》，并与3月1日生效；
-
-+   2月份起开始了系统内的备案填报
-
-+   填报信息包括三部分，分别是算法主体信息、算法信息、产品及功能信息。
-
-+   具体填报流程可参见：
+- 12月份发布《互联网信息服务算法推荐管理规定》，并与3月1日生效；
+- 2月份起开始了系统内的备案填报
+- 填报信息包括三部分，分别是算法主体信息、算法信息、产品及功能信息。
+- 具体填报流程可参见：
 
 ![](img/ce35e7017705f535c3e38b54396a4f6c.png)
 
 [互联网信息服务算法备案系统使用手册.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Ty9ybu4wOoCFJPxqr0ncDV7qndg)
 
-+   8月12日，国家互联网信息办公室公布了首批备案信息，包括境内互联网信息服务算法名称及备案编号。
-
-+   参见公告：http://www.cac.gov.cn/2022-08/12/c_1661927474338504.htm
-
-+   备案平台：互联网信息服务算法备案系统（https://beian.cac.gov.cn）
-
-+   自评估文件示例：
+- 8月12日，国家互联网信息办公室公布了首批备案信息，包括境内互联网信息服务算法名称及备案编号。
+- 参见公告：http://www.cac.gov.cn/2022-08/12/c_1661927474338504.htm
+- 备案平台：互联网信息服务算法备案系统（https://beian.cac.gov.cn）
+- 自评估文件示例：
 
 ![](img/afc8db80be229ec6e8300454cfc8f4a6.png)
 
 [生成合成类自评估报告模板.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/IzNnbjcGJoePMfxCHxQcG67SnFk)
 
-+   公示清单：“国家互联网信息办公室关于发布互联网信息服务算法备案信息的公告”
+- 公示清单：“国家互联网信息办公室关于发布互联网信息服务算法备案信息的公告”
+- 解读：数据合规，《[对首批算法备案公示的梳理与思考](https://mp.weixin.qq.com/s/MZdZtLGHR9dhehTQ-_fpig)》；蔡鹏团队，《简评与关注：国家网信办发布互联网信息服务算法备案清单》；财经E法：《算法备案落地，夯实算法治理基础｜Mr.陈的E法空间》
 
-+   解读：数据合规，《[对首批算法备案公示的梳理与思考](https://mp.weixin.qq.com/s/MZdZtLGHR9dhehTQ-_fpig)》；蔡鹏团队，《简评与关注：国家网信办发布互联网信息服务算法备案清单》；财经E法：《算法备案落地，夯实算法治理基础｜Mr.陈的E法空间》
-
-### 深度合成服务备案
+## 深度合成服务备案
 
 国家互联网信息办公室关于发布深度合成服务算法备案信息的公告
 
 备案公告：http://www.cac.gov.cn/2023-06/20/c_1688910683316256.htm
 
-+
-
 ![](img/c6f4e239ac606c1a4c51d1403b821812.png)
 
 [境内深度合成服务算法备案清单（2023年6月）.docx](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/PzhHbdiGfoz9N5x69K8cZg7PnZc)
-
-+
 
 ![](img/3bc067cb5a736a6c9cdcc6cd95f3720f.png)
 
@@ -70,25 +58,21 @@
 
 **重要文献：**
 
-+   沈伟伟：
-
-+   批判了算法透明原则的实际价值。
+- 沈伟伟：批判了算法透明原则的实际价值。
 
 ![](img/d4dbc1e9e33bfd2fc22878d07262f146.png)
 
 [算法透明原则的迷思——算法规制理论的批判_沈伟伟.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HPBXbQKszo6RLBx2RUmcQIP6nge)
 
-+   阿里巴巴集团政策法规研究室刘明：
+- 阿里巴巴集团政策法规研究室刘明：
 
 ![](img/553b89ba81a795fd9ce400c90b96f862.png)
 
 [个性化推荐算法的解释路径_阿里巴巴集团政策法规研究室高级专家__刘明.pdf](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Qx25bKgBUo6xc6xqPGOcl6qhnQd)
 
-+   实务解析：植德，《《算法新规》实施后，首批算法备案名单公布：八问八答》
-
-+   送法上网，《[非正式研究：算法备案的分析统计](https://mp.weixin.qq.com/s/RDnp-lT0bQKwbByx1RlZIQ)》
-
-+   数据研究，实例统计，很有意思。
+- 实务解析：植德，《《算法新规》实施后，首批算法备案名单公布：八问八答》
+- 送法上网，《[非正式研究：算法备案的分析统计](https://mp.weixin.qq.com/s/RDnp-lT0bQKwbByx1RlZIQ)》
+- 数据研究，实例统计，很有意思。
 
 ---
 

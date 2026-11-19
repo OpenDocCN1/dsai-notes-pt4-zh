@@ -1,3 +1,4 @@
+
 # 个人社交名片生成器｜By 一泽Eze
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/BsCpdj6kMoHxm9x0rhTceAqAnnM](https://vxc3hj17dym.feishu.cn/docx/BsCpdj6kMoHxm9x0rhTceAqAnnM)
@@ -10,7 +11,7 @@
 
 > 现在看来也挺适合用于各大招聘网站使用。
 
-> 👉 如**果觉得还不错，转****发、分享会****对我有很大帮助～**
+> 👉 如果觉得还不错，转发、分享会对我有很大帮助～
 
 > 👀 也欢迎把自己尝试结果，在本文中评论出来！
 

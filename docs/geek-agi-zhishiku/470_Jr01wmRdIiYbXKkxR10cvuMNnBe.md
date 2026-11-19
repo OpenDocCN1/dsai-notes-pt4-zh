@@ -1,3 +1,4 @@
+
 # 爆火的微缩景观是怎么拍出来的？
 
 > 来源：[https://geekbang.feishu.cn/docx/Fjv3dEbrqoPxLMxSKCvcDHobny0](https://geekbang.feishu.cn/docx/Fjv3dEbrqoPxLMxSKCvcDHobny0)
@@ -44,52 +45,58 @@
 
 那像这种生动又可爱又好看的图片到底怎么画出来的，今天就给大家揭秘喽。
 
+## 核心提示词
+
 想要有这种微缩、立体的效果，有几个词起到关键的作用：
 
 1、Miniature scene微缩景观；
-
 2、tilt shift延时移轴摄影；
-
 3、clay粘土；
-
 4、felt毛毡；
 
 除了这些以外，叠加这些效果会更赞：
 
 5、excellent lighting出色的照明；
-
 6、volume landscape体积景观；
-
 7、brush rendering笔刷渲染；
-
 8、super detail超级细节；
-
 9、bird’s-eye view鸟瞰；
-
 10、panoramic view俯视。
 
 但也不是说把这所有的全放到一起效果一定会好，有些还需要加3D，C4D渲染等这种词，最终效果还是需要自己一遍一遍尝试。
 
 耐心一些，你会看到最终想要的效果。下面给大家分享几个案例吧。
 
+## 场景案例与咒语
+
 所有的微缩类图片当中，其实我还是更喜欢景点类，所以我多放了一些景点的图片和咒语：
 
 ![](img/3a0818363e32dc49754c8c2a22c5b929.png)
 
-「 咒语： A clay world miniature scene of the Sydney Opera House, panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4 」
+```
+咒语：A clay world miniature scene of the Sydney Opera House, panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4
+```
 
 ![](img/388b07dbe6de391bdf56ff3da602895e.png)
 
-「 咒语： A clay world miniature scene of Stonehenge in the UK, panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4 」
+```
+咒语：A clay world miniature scene of Stonehenge in the UK, panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4
+```
 
 ![](img/7bc92e164ccfeb3e406a56211f28d229.png)
 
-「咒语：miniature,Super cute clay world,isometric view of Roman,cute clay freeze frame animation,cute Roman Colosseum,people,tilt shift,excellent lighting,volume,landscape,brush rendering,3D,super detail --ar 3:4」
+```
+咒语：miniature,Super cute clay world,isometric view of Roman,cute clay freeze frame animation,cute Roman Colosseum,people,tilt shift,excellent lighting,volume,landscape,brush rendering,3D,super detail --ar 3:4
+```
 
 ![](img/af40161da4ed5346a14d86e7fe1e158f.png)
 
-「 咒语：A clay world miniature scene of the Eiffel Tower in France, panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4 」
+```
+咒语：A clay world miniature scene of the Eiffel Tower in France, panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4
+```
 
 ![](img/464bad31d40215f2f2c553e13d1eeb75.png)
 
-「 咒语： A clay world miniature scene of Stonehenge in the UK , panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4 」
+```
+咒语：A clay world miniature scene of Stonehenge in the UK , panoramic view, bird's-eye view, excellent lighting, super detailed, 3D rendering, C4D rendering. --ar 3:4
+```

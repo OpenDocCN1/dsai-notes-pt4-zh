@@ -1,12 +1,15 @@
+
 # 法律科技公司 Clio：2023 年律师关注的法律科技趋势
 
-> 来源：[https://docs.feishu.cn/docx/KRC1dIJ7Qo9AFVxFNtbc5LUbnYd](https://docs.feishu.cn/docx/KRC1dIJ7Qo9AFVxFNtbc5LUbnYd)
+> 来源：`https://docs.feishu.cn/docx/KRC1dIJ7Qo9AFVxFNtbc5LUbnYd`
 
 目前，法律科技可以为法律从业者提供在生产力和盈利能力方面获得显著提高的潜力，已经成为行业共识，而且这个趋势一直在持续发展。
 
 在这个趋势下，如何更好把握科技的发展方向，不论是对法律从业者还是对法律科技公司来说都至关重要。近几年来，国内外多家法律科技公司和先锋法律人们做出了自己的预测，法律修音机翻译了这些文章，并进行持续放送。
 
-[2023 年 1 月 3 日，法律科技公](https://www.clio.com/blog/legal-technology-trends/)司「[Clio」发布了《Legal Technology Trends to](https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247486030&idx=1&sn=77514acf2efab8d0fbd3dfc2049a3174&chksm=fac530eecdb2b9f8a45d1a68e4b5d406992fd465e393b4d257a013b932d857fd47cd5506fa92&token=835146292&lang=zh_CN&scene=21#wechat_redirect) Watch in 2023》—— 2023 年需要关注的法律科技趋势，这篇文章首发于 2020 年 12 月，Clio 近期对其进行了更新。Clio 公司时常迭代过往文章，此前法律修音机还分享了 Clio 首发于 2018 年的《10 Predictions for the Next 10 Years of Legal Tech》—— 未来 10 年对法律科技的 10 个预测，这篇文章最近更新于 2021 年 11 月。
+[2023 年 1 月 3 日，法律科技公司「Clio」发布了《Legal Technology Trends to Watch in 2023》](https://www.clio.com/blog/legal-technology-trends/)—— 2023 年需要关注的法律科技趋势，这篇文章首发于 2020 年 12 月，Clio 近期对其进行了更新。Clio 公司时常迭代过往文章，此前法律修音机还分享了 Clio 首发于 2018 年的《10 Predictions for the Next 10 Years of Legal Tech》—— 未来 10 年对法律科技的 10 个预测，这篇文章最近更新于 2021 年 11 月。
+
+`https://mp.weixin.qq.com/s?__biz=MzUzOTcwMTE5OQ==&mid=2247486030&idx=1&sn=77514acf2efab8d0fbd3dfc2049a3174&chksm=fac530eecdb2b9f8a45d1a68e4b5d406992fd465e393b4d257a013b932d857fd47cd5506fa92&token=835146292&lang=zh_CN&scene=21#wechat_redirect`
 
 注：「Clio」是一家主要服务律所和律师的法律科技公司，提供基于云的律所管理产品。
 
@@ -14,25 +17,25 @@
 
 ---
 
-2023 年，成为一名成功的律师需要什么？
+## 2023 年，成为一名成功的律师需要什么？
 
 当下，整个世界仍将在较长的时间内应对疫情及其对各行各业的影响。经济下行的情况下，降本增效将长期成为企业的关注重心，因此了解最新的法律科技趋势比以往任何时候都更加重要。
 
 为了发现律师需要知道且有用的法律科技趋势，我们联系了行业内顶级的技术人员、律师、法律专业人士和顾问，并问了他们这个问题：“对于律师和法律专业人士来说，2023 年最为重要的法律科技趋势是什么？”
 
-阅读他们的回答[，](https://www.clio.com/resources/success-plan/)[让](https://www.clio.com/resources/success-plan/)[你的律师事务所在 2023 ](https://www.clio.com/resources/success-plan/)年及以[后](https://www.clio.com/resources/success-plan/)[获得成](https://www.clio.com/resources/success-plan/)功。
+阅读他们的回答，[让你的律师事务所在 2023 年及以后获得成功。](https://www.clio.com/resources/success-plan/)
 
 ## 数字化迅速普及
 
 “消费者行为正在加速数字化。未来，最适合在这种新现实中蓬勃发展的企业，将是那些拥抱数字化，并在客户的搜索场景与其见面的企业。这就意味着，律师需要确保自己在潜在客户使用的搜索工具上是可以被发现和访问的。因此，确保你的信息是最新和准确的就至关重要了。”
 
-—— Ben Patterson, Strate[gic Pa](https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header)rtnerships at Google
+—— Ben Patterson, Strategic Partnerships at Google
 
 ## 更加关注客户体验
 
 “任何使客户体验变得更便捷、更顺畅和更透明的技术，都会提高律所案件的数量和质量。在消费者已经习惯 DoorDash、Uber、Shopify 和 Podium 等公司产品的便捷体验的情况下，律师事务所会跟上还是落后？”
 
-—— Joseph Jenkins, He[ad of ](https://www.podium.com/)Legal Growth, Podium
+—— Joseph Jenkins, Head of Legal Growth, Podium
 
 ## 更友好的沟通方式
 
@@ -44,61 +47,61 @@
 
 “法律专业人士应该积极采用可以将基本的行政工作自动化的技术。目前，法律行业的发展仍然被大量低效的工作所阻碍 —— 这些工作应该交给技术处理。任何改变律师一对一的服务模式，使律师能够服务更大市场的技术，都将改变游戏规则。”
 
-—— [Lori Gonza](https://raynacorp.com/)le[z, CEO of ](https://twitter.com/RayNaCorp)RayNa Corp, @RaynaCorp
+—— Lori Gonzalez, CEO of RayNa Corp, @RaynaCorp
 
 ## 法院和政府机构对数字接口的兴趣有所增加
 
 “对于经常与法院和其他政府机构联系的律师、法律专业人士和公众来说，要密切关注数字接口供应商，目前只有相当少的供应商在做这件事。新冠疫情将许多法院推向了他们原以为永远不会进入的「在线」世界，并对许多社会系统造成了挑战（例如在线失业申请）。我们真的可以发掘这个领域，更多地采用开源技术，学习更多关于政府购买决策（如数据所有权）的知识。”
 
-—— Sa[rah Glassmey](https://twitter.com/sglassmeyer)er, Legal Innovation Enthusiast, @sglassmeyer
+—— Sarah Glassmeyer, Legal Innovation Enthusiast, @sglassmeyer
 
 ## 更加关注远程工作
 
 “对于法律专业人士来说，了解技术如何让新的分散式的劳动力更加顺畅地工作非常重要。现在正是重新审视律所正在使用的工具、法律专业人士使用技术所需的培训、使远程工作的体验与在办公室时一样好或者更好的时机，许多律所已经在协作、移动、虚拟会议和远程工作方面采取了“让它发生”的态度。这样做的投资回报率将会很高，并将在未来几年使律所从中受益。”
 
-—— De[bbie Foster, ](https://twitter.com/debbiefoster)Partner, Affinity Consulting, @debbiefoster
+—— Debbie Foster, Partner, Affinity Consulting, @debbiefoster
 
-## **通过技术提供更有同理心的服务**
+## 通过技术提供更有同理心的服务
 
 “现在的消费者比以往任何时候都更加谨慎和焦虑，他们希望律师以富有同理心的方式快速回应他们的担忧。因此，为了保持竞争力，律师必须始终保持开放，随时回答客户的问题，缓解客户的焦虑，同时努力管理好自己的生活。越来越多的律所开始投资人性化的解决方案，我认为这个趋势明年将扩大。虽然律师不能 7*24 小时地工作，但网站和电话号码可以。因此，在你不能工作的时候，找一个能够随时为客户提供具有同理心服务的合作伙伴，将是决定未来几年谁会活下来和茁壮成长的关键因素。”
 
-—— [Kate](https://www.ruby.com/campaign/clio/?utm_source=partnership&utm_campaign=clio&utm_medium=blog&utm_vertical=legal) W[inker, CE](https://twitter.com/CallRuby)O at Ruby, @callruby
+—— Kate Winkler, CEO at Ruby, @callruby
 
 ## 进一步提升文件自动化
 
 “最重要的趋势将是文件自动化。目前律师已经在电子文件上采用了电子墨水签名，现在他们需要在更多场景上采用文件自动化技术。”
 
-—— [Ed Walte](http://www.fastcase.com/)rs[, CEO, Fas](https://twitter.com/EJWalters)tcase, @EJWalters
+—— Ed Walters, CEO, Fastcase, @EJWalters
 
-## **技术在全行业的渗透继续深入**
+## 技术在全行业的渗透继续深入
 
 “当世界（特别是法院）重新开放时，视频会议和远程听证会、证词、调解等新的技术应用可能会被抵制，但这只是暂时的。到今年底，我们将看到技术对法院程序和其他法律事件产生的积极影响。今年的经验教训将为分布式、异步的法律程序打开大门，而且如果做得不错，技术对司法救助的积极影响将比我们以前看到的更大，很多因经济、身体、智力甚至情感障碍而被禁止诉诸司法的消费者，未来也能获得司法保护。”
 
-—— [Jordan Cou](https://www.palacelaw.com/)ch[, Partner at ](https://twitter.com/jordanlcouch)Palace Law, @jordanlcouch
+—— Jordan Couch, Partner at Palace Law, @jordanlcouch
 
-## **通过技术提供更愉悦的体验**
+## 通过技术提供更愉悦的体验
 
 “毫无疑问，技术将变得越来越重要，但仅依靠技术并不能完全解决法律问题。律师能获得的最大收益将来自将技术与服务相结合，为客户提供更愉悦的服务体验。”
 
-—— Jo[hn Strohmeyer,](https://twitter.com/johnthelawyer) Proprietor of Strohmeyer Law PLLC, @JohnTheLawyer
+—— John Strohmeyer, Proprietor of Strohmeyer Law PLLC, @JohnTheLawyer
 
-## **适应非法律科技**
+## 适应非法律科技
 
 “我认为最大的法律科技趋势应该是让律师适应「非法律科技」。很多技术不是专门为律师设计的，并不意味着我们不能使用它。”
 
-—— [Shreya B](https://www.youtube.com/channel/UC5SP7aATvWP4OcV0GF5TktA). [Ley, La Presi](https://twitter.com/layyourroots)dente of LayRoots, @layyourroots
+—— Shreya B. Ley, President of LayRoots, @layyourroots
 
 ## 现代化的通信方法
 
 “越来越多的律所正在寻求[将律所电话系统现代化](https://www.clio.com/app-directory/dialpad-talk/)，以便分散办公的律师能够随时随地与客户、来电者以及同事相互交流。具体来说，律所正在寻找和使用[基于「云」](https://www.clio.com/compare/)的系统，这种系统具有在线语音和其他复杂功能，并可以直接集成到律所现有的管理系统中。除了这一趋势，律所还将致力于通过一个平台与客户联系，该平台允许律所里任何人使用，并于他们的绩效管理系统集成。最后，也是最重要的是，希望更多的律所认识到门户网站的好处（和便利性！），并鼓励律师在每天、每一次交流中使用。”
 
-—— [Adriana Linares, ](http://lawtechpartners.com/)Legal Technology Consultant & Trainer
+—— Adriana Linares, Legal Technology Consultant & Trainer
 
 ## 更加关注绩效跟踪和盈利能力相关的数据
 
-“过去一年里，我们收到了越来越多获取数据和构建报告的需求，以确定哪些工作正在进行，由谁完成，并高效地回答这样的问题：“这个执业领域或律师/律师助理的利润有多高？”。我认为这些需求将延续到新的一年。去年，律所意识到他们可以通过技术用更少的钱完成工作；明年，他们希望从中转化出更多利润。现在，技术不仅可以收集数据，还可以构建有意义且易于理解的报告来帮助评估工作效果，这将有助于推动技术采购决策，从而实现更高的利润。"
+“过去一年里，我们收到了越来越多获取数据和构建报告的需求，以确定哪些工作正在进行，由谁完成，并高效地回答这样的问题：“这个执业领域或律师/律师助理的利润有多高？”。我认为这些需求将延续到新的一年。去年，律所意识到他们可以通过技术用更少的钱完成工作；明年，他们希望从中转化出更多利润。现在，技术不仅可以收集数据，还可以构建有意义且易于理解的报告来帮助评估工作效果，这将有助于推动技术采购决策，从而实现更高的利润。”
 
-—— [Peggy Gru](http://www.cpn-legal.com/)enke, Founder, CPN-Legal, Helping Lawyers Manage Their Finances
+—— Peggy Gruenke, Founder, CPN-Legal, Helping Lawyers Manage Their Finances
 
 ## 专注于商业模式创新
 
@@ -108,7 +111,7 @@
 
 过去十年几乎所有的“一夜成功”，都源自对客户价值链的重新思考。他们没有简单地关注产品的按钮设计，而是重新思考了如何以良好的体验让人们得到他们想要的东西。法律行业迫切需要这种想象力。
 
-今年，从小事开始。使用我[在《Designing Your La](https://www.clio.com/resources/designing-your-law-firms-new-normal/)w [F](https://www.clio.com/resources/designing-your-law-firms-new-normal/)irm’s New Normal.》中写的头脑风暴和模型测试方法，测试一个想法，你可能会创造出一个行业需要的、提供更好服务的用户习惯。
+今年，从小事开始。使用[《Designing Your Law Firm’s New Normal.》](https://www.clio.com/resources/designing-your-law-firms-new-normal/)中写的头脑风暴和模型测试方法，测试一个想法，你可能会创造出一个行业需要的、提供更好服务的用户习惯。
 
 随着法规的变化和市场的开放，任何事情都不会像重新思考你提供的产品和特定客户需求之间的联系那样对行业产生如此大的影响。我希望今年我们都足够疯狂，可以进行这种重新思考。”
 
@@ -118,7 +121,7 @@
 
 “对于律师和法律专业人士来说，最重要的科技趋势将是网络安全。随着越来越多的工作转变为在线的或者虚拟的形式，我们将不得不在律所和客户机密信息的安全方面发挥更积极的作用。”
 
-—— [Alycia Kinch](http://kinchloelaw.com/)loe, Esq., Owner of Kinchloe Law
+—— Alycia Kinchloe, Esq., Owner of Kinchloe Law
 
 ## 视频会议，以更好地满足客户需求
 
@@ -130,10 +133,10 @@
 
 “趋势是开发一套技术工具来支持以订阅制法律服务为重点的律师事务所，并取消按小时计费的模式。”
 
-—— [Kimberly Y. B](http://www.kbennettlaw.com/)ennett, Founder at K Bennett Law
+—— Kimberly Y. Bennett, Founder at K Bennett Law
 
 ## 学习如何使用我们已经拥有的工具
 
 “最重要的趋势是学会使用我们已经有的工具。由于疫情，大多数律所的经济情况很难在一两年内好转，因此律所需要寻找用更少的钱做更多事情的方法 —— 最终律所将学会从他们已经有的工具中获得更多价值，而不是花更多的钱去买新的工具。我希望极低的成本预算可以激发人们对学习日常使用的技术的兴趣，比如案例管理系统和 Microsoft Word。”
 
-—— Ivy B. Grey, VP of Strategy and Bu[siness D](https://www.wordrake.com/)evelopment, WordRake
+—— Ivy B. Grey, VP of Strategy and Business Development, WordRake

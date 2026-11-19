@@ -1,6 +1,7 @@
+
 # 20251115-新物种！深度体验ChatGPT群聊，还有各种有趣玩法～～
 
-> 来源：[https://aigcreative.feishu.cn/docx/D7kEdXMoyopwFax69uAcrufTnxc](https://aigcreative.feishu.cn/docx/D7kEdXMoyopwFax69uAcrufTnxc)
+> 来源：`https://aigcreative.feishu.cn/docx/D7kEdXMoyopwFax69uAcrufTnxc`
 
 大家好。
 
@@ -24,7 +25,7 @@ OpenAI这波操作，不是简单地往群里塞个AI，它更像是想自己重
 
 建好后，它就在左侧可以直接找到，这是可以分享链接，邀请好友进群聊：
 
-> 比如我的这个群聊，剪辑即可进入：https://chatgpt.com/gg/v/69175baf89848194bca0f4c788ae0753?token=rlwW52KVSHImYQ7pRAtxFg
+> 比如我的这个群聊，剪辑即可进入：`https://chatgpt.com/gg/v/69175baf89848194bca0f4c788ae0753?token=rlwW52KVSHImYQ7pRAtxFg`
 
 ![](img/b011305371e8c76776ba36f1de9ffa77.png)
 
@@ -88,7 +89,7 @@ AI成了一个不知疲倦、记忆力超群的“课代表”，随时帮你补
 
 这次体验中，还有个功能点，让我印象非常深刻，甚至可以说，是让我拍手叫好的功能。
 
-作为群主，有时是真想看看群的活跃度**，于是让C**hatGPT统计一下这个群聊的成员活跃度。
+作为群主，有时是真想看看群的活跃度，于是让ChatGPT统计一下这个群聊的成员活跃度。
 
 我本以为它会拒绝，或者给个模糊的回答。
 
@@ -174,10 +175,10 @@ OpenAI的官方说法是，他们教会了ChatGPT新的社交行为，比如知�
 
 毕竟，现在AI可都“看”着呢，哈哈。
 
-欢迎加入**创意猎人ChatGPT俱乐部**群聊，链接：https://chatgpt.com/gg/v/69175baf89848194bca0f4c788ae0753?token=rlwW52KVSHImYQ7pRAtxFg
+欢迎加入**创意猎人ChatGPT俱乐部**群聊，链接：`https://chatgpt.com/gg/v/69175baf89848194bca0f4c788ae0753?token=rlwW52KVSHImYQ7pRAtxFg`
 
 > 鸣谢：群聊中与龙共弈、William、sharstudio等群友的创意提问与 idea贡献。
 
 > 说明：文中案例无商业用途，仅供交流参考。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

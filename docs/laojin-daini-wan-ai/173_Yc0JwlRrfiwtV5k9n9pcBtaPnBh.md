@@ -1,6 +1,7 @@
+
 # 拯救AI编程乱码显示！老金一招教你完全避免！Claude Code/Codex/Cursor等通用！
 
-> 来源：[https://my.feishu.cn/docx/ILyNdYN98oXhIlxQ7xxcvvLfnye](https://my.feishu.cn/docx/ILyNdYN98oXhIlxQ7xxcvvLfnye)
+> 来源：https://my.feishu.cn/docx/ILyNdYN98oXhIlxQ7xxcvvLfnye
 
 ## 每个AI编程的使用者都遇到过
 
@@ -8,11 +9,9 @@
 
 Claude Code、Codex、Cursor，一个都跑不了。
 
-老金我测试了网上的N种办法。
+老金我测试了网上的N种办法。找到了最有效直接的。
 
-找到了最有效直接的。
-
-**下载1个软件就搞定！**
+下载1个软件就搞定！
 
 问题不在AI工具，而在终端。
 
@@ -30,15 +29,15 @@ Claude Code、Codex、Cursor，一个都跑不了。
 
 **Windows用户**：
 
-+   按 Win + R，输入 powershell，回车
+- 按 `Win + R`，输入 `powershell`，回车
 
 **Mac用户**：
 
-+   按 Cmd + 空格，输入 terminal，回车
+- 按 `Cmd + 空格`，输入 `terminal`，回车
 
 在终端输入：
 
-记住，在终端里复制是 **鼠标右键，不是Ctrl+V！**
+记住，在终端里复制是鼠标右键，不是 `Ctrl+V`！
 
 ```
 $PSVersionTable.PSVersion
@@ -88,20 +87,20 @@ chcp 65001 | Out-Null
 $OutputEncoding = [System.Text.UTF8Encoding]::new()
 
 默认文件编码
-$PSDefaultParameterValues[&#x27;Out-File:Encoding&#x27;] = &#x27;utf8&#x27;
-$PSDefaultParameterValues[&#x27;Set-Content:Encoding&#x27;] = &#x27;utf8&#x27;
-$PSDefaultParameterValues[&#x27;Add-Content:Encoding&#x27;] = &#x27;utf8&#x27;
+$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+$PSDefaultParameterValues['Set-Content:Encoding'] = 'utf8'
+$PSDefaultParameterValues['Add-Content:Encoding'] = 'utf8'
 ```
 
 保存后重启PowerShell。
 
 ### 第四步：设置VS Code使用PowerShell 7
 
-按** Ctrl+Shift+**P，搜索Terminal: Select Default Profile。
+按 `Ctrl+Shift+P`，搜索 `Terminal: Select Default Profile`。
 
 ![](img/a023b2d4766951ca2aebdb09b1103b25.png)
 
-选**择PowerShel**l。
+选择 `PowerShell`。
 
 ![](img/83e91422bc758fc1e886aaaeea9a6a8e.png)
 
@@ -109,9 +108,9 @@ $PSDefaultParameterValues[&#x27;Add-Content:Encoding&#x27;] = &#x27;utf8&#x27;
 
 ```
 {
-    &quot;files.encoding&quot;: &quot;utf8&quot;,
-    &quot;files.autoGuessEncoding&quot;: true,
-    &quot;terminal.integrated.defaultProfile.windows&quot;: &quot;PowerShell&quot;
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
 ```
 
@@ -139,4 +138,4 @@ $PSDefaultParameterValues[&#x27;Add-Content:Encoding&#x27;] = &#x27;utf8&#x27;
 
 前面的说明你的控制台是GB2312编码，而CLI默认是UTF-8管道输出，此时就会出现乱码。
 
-<https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>
+https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc

@@ -1,3 +1,4 @@
+
 # 231210 - 1204｜Google 发布 Gemini；H100 最强竞品 AMD 发布新产品；微软 Copilot 再进化；全球首个开源多模态医疗基础模型；Meta 推出 AI 图像生成器｜LLM 内部可视化；VSCode 中使用端侧 Copilot，使用 DeepSeek 模型
 
 > 来源：[https://leonzhang.feishu.cn/docx/FT1KdErYSo9HZpxp32Icw507njL](https://leonzhang.feishu.cn/docx/FT1KdErYSo9HZpxp32Icw507njL)
@@ -98,9 +99,9 @@ Emu Edit 使用庞大的合成数据集进行训练，提供更精准的图像�
 
 1.  下载@Ollama_ai: https://ollama.ai
 
-1.  安装完成后，在终端运行以下命令："ollama run deepseek-coder"
+1.  安装完成后，在终端运行以下命令：`ollama run deepseek-coder`
 
-1.  在 VSCode 的 CodeGPT 设置中，选择 Ollama 作为提供者，模型选择 deepseek-coder。
+1.  在 VSCode 的 CodeGPT 设置中，选择 Ollama 作为提供者，模型选择 `deepseek-coder`。
 
 1.  完成设置！
 

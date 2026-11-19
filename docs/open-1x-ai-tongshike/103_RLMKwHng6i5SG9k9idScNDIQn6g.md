@@ -1,4 +1,5 @@
-#  学习内容 | 章二：人工智能基础
+
+# 学习内容 | 章二：人工智能基础
 
 > 来源：[https://datawhaler.feishu.cn/docx/AfwwdzWrvot8uUxrRTDcOGisnpg](https://datawhaler.feishu.cn/docx/AfwwdzWrvot8uUxrRTDcOGisnpg)
 
@@ -7,7 +8,6 @@
 ## 共建说明
 
 > 本部分内容可通过投稿进行共建！
-
 > 只要符合主题、是原创内容、无版权风险即可。有意请加入共建群了解投稿详情~
 
 ## 近期更新

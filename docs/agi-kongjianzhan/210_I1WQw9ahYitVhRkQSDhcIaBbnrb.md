@@ -1,18 +1,15 @@
+
 # （PPT）5款AI自动生成PPT的神器，做PPT再也不是难事了
 
 > 来源：[https://agispace.feishu.cn/docx/XCZBdKAhpoLwisx6M7Kc081Ln1d](https://agispace.feishu.cn/docx/XCZBdKAhpoLwisx6M7Kc081Ln1d)
-
 > 原创：AI 洞察笔记
-
-> 原文：https://mp.weixin.qq.com/s/RKfJEd7gL1JmRTOokb8Z1A
+> 原文：`https://mp.weixin.qq.com/s/RKfJEd7gL1JmRTOokb8Z1A`
 
 在这个信息爆炸的时代，PPT已成为表达思想和分享知识的重要工具，特别是马上年底了，每个公司每个业务线都需要做各种工作汇报。然而，很多人在制作PPT时，不仅耗费大量时间和精力，还常常感到灵感枯竭。幸运的是，随着人工智能AI技术的发展，现在出现了一系列AI自动生成PPT工具。这些工具能够帮助用户快速生成高质量的PPT演示文稿，从而显著提高工作效率。
 
-# **1**
+## 1. Gamma App
 
-##
-
-# **Gamma App**https://gamma.app/
+`https://gamma.app/`
 
 Gamma是一个在线网页版创建演示文稿的工具，用户可以最少的格式化和设计工作来创建和展示内容。在人工智能的支持下，Gamma允许用户仅通过输入文本和想法提示，点击按钮便可以生成设计美观和具有吸引力的幻灯片。
 
@@ -22,11 +19,9 @@ Gamma是一个在线网页版创建演示文稿的工具，用户可以最少的
 
 ![](img/0841021a4e4b1fefe14983744807bab2.png)
 
-# **2**
+## 2. ChatPPT
 
-##
-
-# **ChatPPT**https://chat-ppt.com/
+`https://chat-ppt.com/`
 
 ChatPPT是必优科技旗下面向PPT使用者提供的AI生成PPT软件，产品基于ChatGPT与韦尼克模型，面向PPT用户提供可通过自然语言指令与Chat模式进行PPT文档创作的AI创作服务。
 
@@ -38,31 +33,25 @@ Ofice插件版，即基于微软Ofice与WPS提供完整的A生成PPT的功能，
 
 ![](img/32ebcadc857132408c8e97227d543df6.png)
 
-# **3**
+## 3. 美图AI PPT
 
-##
-
-# **美图AI PPT**https://www.x-design.com/ppt/
+`https://www.x-design.com/ppt/`
 
 美图AI PPT是国内知名P图软件[美图秀秀]旗下的美图设计室]推出的免费在线AI生成PPT设计工具用户只需输入一句话，便可以轻松打造精美PPT。无论是什么类型风格的PPT，美图AI都可以帮你打造，如行业分析、工作汇报、创意设计方案、企业团建策划、部门工作总结等。
 
 ![](img/32df0c13adcfd9b5766972923886bde5.png)
 
-# **4**
+## 4. Tome
 
-##
-
-# **Tome**https://tome.app/
+`https://tome.app/`
 
 Tome是一个利用人工智能来生成引人注目的演示幻灯片的网站，通过借助OpenAl的GPT和DALL-E 2的AIGC技术，该AI PPT生成工具将文本和图像无缝结合，创造出动态的视觉故事。通过Tome Al简单直观的操作和创建过程，用户可以轻松地用任何类型的内容制作引人入胜的演示文稿。在Tome网站上注册一个账户就可以使用这一创新工具，该平台是高度可定制化的，用户能够用表格、动画、图像等功能丰富他们的演示。
 
 ![](img/a69769b340499265b8d81f8c93358e25.png)
 
-# **5**
+## 5. WPS AI
 
-##
-
-# **WPS AI**https://ai.wps.cn/
+`https://ai.wps.cn/`
 
 ![](img/7dee0421b6d849bb69cdefb9f9839128.png)
 

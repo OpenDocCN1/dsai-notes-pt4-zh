@@ -1,3 +1,4 @@
+
 # 歸藏老师的文本转可视化网页Prompt
 
 > 来源：[https://jlqyxzzvbk.feishu.cn/docx/KnUJdtxZmonXdQxwXcpcRNCPnDd](https://jlqyxzzvbk.feishu.cn/docx/KnUJdtxZmonXdQxwXcpcRNCPnDd)
@@ -83,7 +84,6 @@
 - 排版精致，像一本精美的杂志，比如《时代周刊》等
 - 字体和配色考究，混合使用三种以内字体和配色。
 
-
 ## 技术规范
 - 使用HTML5、TailwindCSS 3.0+和必要的JavaScript
 - 确保HTML中正确引入CSS样式表，可用link标签引入外部CSS文件或用style标签添加内联样式
@@ -124,7 +124,6 @@
 
 待处理内容如下：
 {{content}}
-
 ```
 
 ## V2
@@ -152,8 +151,6 @@
 - 配色方案应专业、和谐，适合长时间阅读
 - 排版精致，像一本精美的杂志，比如《时代周刊》等
 - 字体和配色考究，混合使用三种以内字体和配色。
-
-
 
 ## 技术规范
 - 使用HTML5、TailwindCSS 3.0+和必要的JavaScript
@@ -194,7 +191,6 @@
 
 待处理内容如下：
 {{content}}
-
 ```
 
 ## V3：指定CSS和JS，更可控
@@ -241,7 +237,7 @@
     *   Font Awesome: [https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css](https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css)
     *   Tailwind CSS: [https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css)
     *   非中文字体: [https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap](https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap)
-    *   `font-family: Tahoma,Arial,Roboto,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,&quot;Droid Sans Fallback&quot;,&quot;Heiti SC&quot;,&quot;Hiragino Sans GB&quot;,Simsun,sans-self;`
+    *   `font-family: Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","Hiragino Sans GB",Simsun,sans-self;`
     *   Mermaid: [https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js](https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js)
 *   实现完整的深色/浅色模式切换功能，默认跟随系统设置，并允许用户手动切换。
 *   代码结构清晰、语义化，包含适当的注释。
@@ -266,7 +262,6 @@
 ## V4：尝试换风格
 
 ```
-
 ```
 
 # Demo

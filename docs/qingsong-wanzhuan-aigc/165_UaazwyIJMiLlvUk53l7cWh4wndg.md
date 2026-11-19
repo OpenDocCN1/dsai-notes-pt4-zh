@@ -1,42 +1,41 @@
+
 # Google AI Studio 提示指南
 
 > 来源：[https://my.feishu.cn/docx/SPhjdjOakorSllxn465cSrtln7g](https://my.feishu.cn/docx/SPhjdjOakorSllxn465cSrtln7g)
 
-# Google AI Studio 快速入门
+## Google AI Studio 快速入门
 
 > 内容来源：https://ai.google.dev/gemini-api/docs/ai-studio-quickstart?hl=zh-cn
 
-Google AI Studio 是一个基于浏览器的 IDE，用于使用生成模型进行原型设计。通过[ Google AI](https://ai.google.dev/gemini-api/docs/quickstart?hl=zh-cn) Studio，您可以快速试用模型并针对不同的提示进行实验。在构建出满意的应用后，您可以将其导出到您首选的编程语言的代码中，并使用 Gemini API 编写代码。
+Google AI Studio 是一个基于浏览器的 IDE，用于使用生成模型进行原型设计。通过 [Google AI Studio](https://ai.google.dev/gemini-api/docs/quickstart?hl=zh-cn)，您可以快速试用模型并针对不同的提示进行实验。在构建出满意的应用后，您可以将其导出到您首选的编程语言的代码中，并使用 Gemini API 编写代码。
 
-## 提示和模型调参
+### 提示和模型调参
 
 Google AI Studio 为不同用例设计的提示提供了多种界面：
 
-+   **聊天提示**：使用聊天提示来打造对话体验。这种提示方法支持多次输入和[响应回合以生成输出](https://ai.google.dev/gemini-api/docs/ai-studio-quickstart?hl=zh-cn#chat_example)。如需了解详情，请参阅下面的聊天提示示例。
++ 聊天提示：使用聊天提示来打造对话体验。这种提示方法支持多次输入和响应回合以生成输出。如需了解详情，请参阅下面的聊天提示示例。
 
-+   **结构化提示**：[这种提示方法可让您通](https://ai.google.dev/gemini-api/docs/ai-studio-quickstart?hl=zh-cn#structured_example)过提供一组示例请求和回复来指导模型输出。当您需要更好地控制模型输出的结构时，请使用此方法。如需了解详情，请参阅下面的结构化提示示例。
++ 结构化提示：[这种提示方法可让您通过提供](https://ai.google.dev/gemini-api/docs/ai-studio-quickstart?hl=zh-cn#structured_example)一组示例请求和回复来指导模型输出。当您需要更好地控制模型输出的结构时，请使用此方法。如需了解详情，请参阅下面的结构化提示示例。
 
 Google AI Studio 还允许您使用一种称为“调整”的技术来更改模型的行为：
 
-+   **经调整的模型**[：使用此](https://ai.google.dev/gemini-api/docs/model-tuning?hl=zh-cn)高级技术提供更多示例，以改进模型对特定任务的响应。了解详情
++ 经调整的模型：[使用此高级技术](https://ai.google.dev/gemini-api/docs/model-tuning?hl=zh-cn)提供更多示例，以改进模型对特定任务的响应。了解详情
 
-## 聊天提示示例：构建自定义聊天应用
+### 聊天提示示例：构建自定义聊天应用
 
 如果您使用过 [Gemini](https://gemini.google.com/?hl=zh-cn) 等通用聊天机器人，就会亲身体验生成式 AI 模型在开放式对话方面的强大作用。虽然这些通用聊天机器人很有用，但它们通常需要针对特定使用场景进行定制。例如，您可能希望构建一个客户服务聊天机器人，它仅支持讨论公司产品的对话。您可能需要构建一个具有特定语气或风格的聊天机器人：能说许多笑话、像诗人一样押韵或在其回答中使用大量表情符号的聊天机器人。
 
 此示例展示了如何使用 Google AI Studio 构建一个友好的聊天机器人，它就像是居住在木星的一颗卫星（欧罗巴）上的外星人进行沟通。
 
-### 第 1 步 - 创建聊天提示
+#### 第 1 步 - 创建聊天提示
 
 如需构建聊天机器人，您需要提供用户和聊天机器人之间的互动示例，以指导模型提供您想要的响应。
 
 如需创建聊天提示，请执行以下操作：
 
-1.  打开 Google AI Studio。
-
-1.  在**创建新提示**菜单中，点击**聊天提示**。
-
-1.  **点击 e**xpand_more 展开箭头，展开系统说明部分。将以下内容粘贴到文本输入字段中：
+1. 打开 Google AI Studio。
+1. 在创建新提示菜单中，点击聊天提示。
+1. 点击 expand_more 展开箭头，展开系统说明部分。将以下内容粘贴到文本输入字段中：
 
 ```
 You are an alien that lives on Europa, one of Jupiter&#x27;s moons.
@@ -46,17 +45,15 @@ You are an alien that lives on Europa, one of Jupiter&#x27;s moons.
 
 如需测试聊天机器人的行为，请执行以下操作：
 
-1.  在标有“输入内容”的文本输入框中，输入用户可能会提出的问题或观察结果。例如：
-
-1.  用户：
+1. 在标有“输入内容”的文本输入框中，输入用户可能会提出的问题或观察结果。例如：
+1. 用户：
 
 ```
 What&#x27;s the weather like?
 ```
 
-1.  点击 spark **Run** 按钮或按 Enter 键，以获取聊天机器人的响应。 此响应可能如下所示：
-
-1.  Model：
+1. 点击 spark Run 按钮或按 Enter 键，以获取聊天机器人的响应。此响应可能如下所示：
+1. Model：
 
 ```
 As always, it is a frigid day on Europa. The icy plains stretch endlessly
@@ -66,15 +63,14 @@ the swirling gas giant above, with its Great Red Spot a prominent crimson
 eye watching over us.
 ```
 
-### 第 2 步 - 训练聊天机器人提高聊天能力
+#### 第 2 步 - 训练聊天机器人提高聊天能力
 
 您只需提供一条说明，就能构建一个基本的欧罗巴外星聊天机器人。但是，单个指令通常不足以确保模型响应的一致性和质量。如果没有更具体的说明，模型对天气相关问题的回答往往会很长，听起来像是来自教科书，而不是来自友好的外星人。
 
 通过在系统说明中添加内容来自定义聊天机器人的语气：
 
-1.  发起新的聊天提示。聊天会话开始后，系统说明便无法修改。
-
-1.  在 System Instructions 部分中，将已有的说明更改为以下内容：
+1. 发起新的聊天提示。聊天会话开始后，系统说明便无法修改。
+1. 在 System Instructions 部分中，将已有的说明更改为以下内容：
 
 ```
 You are Tim, an alien that lives on Europa, one of Jupiter&#x27;s moons.
@@ -82,9 +78,8 @@ Keep your answers under 3 paragraphs long, and use an upbeat, chipper tone
 in your answers.
 ```
 
-1.  重新输入您的问题 (What's the we**at**her like?)，然后点击 spark 运行按钮或按 Enter 键。现在，您的响应应如下所示：
-
-1.  型号：
+1. 重新输入您的问题 (What's the weather like?)，然后点击 spark 运行按钮或按 Enter 键。现在，您的响应应如下所示：
+1. 型号：
 
 ```
 Well, it&#x27;s a bit nippy today! It&#x27;s -170 degrees Celsius, but that&#x27;s pretty
@@ -97,29 +92,27 @@ If you ever come visit, make sure you pack a warm jacket!
 
 您可以使用此方法为聊天机器人增加额外的深度。提出更多问题、修改回答，并提高聊天机器人的质量。继续添加或修改说明，并测试说明如何改变聊天机器人的行为。
 
-**注意** ：模型和用户之间的每条消息都包含在提示中，因此随着对话的进行，对话提示可能会增长。最终，您可能会达到模型的词元限制（模型可以接受的文本长度上限）。
+注意：模型和用户之间的每条消息都包含在提示中，因此随着对话的进行，对话提示可能会增长。最终，您可能会达到模型的词元限制（模型可以接受的文本长度上限）。
 
-### 第 3 步 - 后续步骤
+#### 第 3 步 - 后续步骤
 
-**与其他提**示类型类似，一旦将提示的原型设计得让您满意，您就可以使用获取代码按钮开始编码，也可以保存提示，以便稍后处理并与他人分享。
+与其他提示类型类似，一旦将提示的原型设计得让您满意，您就可以使用获取代码按钮开始编码，也可以保存提示，以便稍后处理并与他人分享。
 
-## 结构化提示示例：构建商品文案生成器
+### 结构化提示示例：构建商品文案生成器
 
-借助 [Googl](https://ai.google.dev/gemini-api/docs/models/generative-models?hl=zh-cn#prompt-types)e AI Studio 中的结构化提示，您可以将指令与示例相结合，向模型显示您想要的输出类型，而不仅仅是告知模型该执行什么操作。如果您希望模型保持一致的输出格式（即结构化 JSON）或难以用语言来描述您希望模型执行的具体内容，则这种提示（称为少样本提示）非常有用。在本部分中，您将了解如何在 Google AI Studio 中创建结构化提示。
+借助 [Google AI Studio](https://ai.google.dev/gemini-api/docs/models/generative-models?hl=zh-cn#prompt-types) 中的结构化提示，您可以将指令与示例相结合，向模型显示您想要的输出类型，而不仅仅是告知模型该执行什么操作。如果您希望模型保持一致的输出格式（即结构化 JSON）或难以用语言来描述您希望模型执行的具体内容，则这种提示（称为少样本提示）非常有用。在本部分中，您将了解如何在 Google AI Studio 中创建结构化提示。
 
-**注意**[ ：您](https://ai.google.dev/examples?keywords=prompt&hl=zh-cn)可以直接在 Google AI Studio 中打开示例库中的类似示例。
+**注意**：[您可以直接](https://ai.google.dev/examples?keywords=prompt&hl=zh-cn)在 Google AI Studio 中打开示例库中的类似示例。
 
-### 第 1 步 - 创建结构化提示
+#### 第 1 步 - 创建结构化提示
 
-在此示例中，您将创建一个结构化提示，以便为产品**生成广告副本。**首先，您需要**创建两列（即 Produ**ct 输入列和 Product copy 输出列）来定义提示的结构。
+在此示例中，您将创建一个结构化提示，以便为产品生成广告副本。首先，您需要创建两列（即 Product 输入列和 Product copy 输出列）来定义提示的结构。
 
 如需创建结构化提示，请执行以下操作：
 
-1.  打开 Google AI Studio。
-
-1.  在**创建新提示**菜单中，点击**结构化提示**。
-
-1.  在标记为**适用于模型的可选色调和样式说明**的文本输入框中，粘贴以下内容：
+1. 打开 Google AI Studio。
+1. 在创建新提示菜单中，点击结构化提示。
+1. 在标记为适用于模型的可选色调和样式说明的文本输入框中，粘贴以下内容：
 
 ```
 You are a product marketer targeting a Gen Z audience. Create exciting and
@@ -127,165 +120,157 @@ fresh advertising copy for products and their simple description. Keep copy
 under a few sentences long.
 ```
 
-1.  将默认的 **Input** 标题文本 (input:) 替换为 Product:。
+1. 将默认的 Input 标题文本 (input:) 替换为 Product:。
+1. 将默认的输出标题文本 (output:) 替换为 Product copy:。
 
-1.  将默认的**输出**标题文本 (output:) 替换为 Product copy:。
+提示：在列名称末尾添加英文冒号，可让模型更轻松地解析结构。
 
-**提示** ：在列名称末尾添加英文冒号，可让模型更轻松地解析结构。
-
-### 第 2 步 - 添加示例
+#### 第 2 步 - 添加示例
 
 现在，您已为列命名，可以提供一些示例行。这些行应包含示例输入（本例中的产品名称）和示例输出（相应的产品说明）。通过为模型提供几个示例商品说明，您可以指导模型在生成自己的输出时复制类似的风格。您可以手动输入示例，也可以使用“导入数据”菜单从文件导入。
 
 如需手动输入示例，请执行以下操作：
 
-1.  在顶部的示例数据表中，选择 **Product:** 标题下方的字段，然后输入商品说明。
-
-1.  选择 **Product copy:** 标题下方的字段，然后输入此产品的营销文案。
+1. 在顶部的示例数据表中，选择 Product: 标题下方的字段，然后输入商品说明。
+1. 选择 Product copy: 标题下方的字段，然后输入此产品的营销文案。
 
 以下是此提示的输入和输出值示例：
 
 （可选）如需从文件导入示例，请执行以下操作：
 
-1.  在示例表的右上角，依次点击**操作 > 导入示例**。
+1. 在示例表的右上角，依次点击操作 > 导入示例。
+1. 在对话框中，从您的 Google 云端硬盘中选择一个 CSV 或 Google 表格文件，或者从您的计算机上传一个文件。
+1. 在“导入示例”对话框中，选择要导入的列以及要忽略的列。通过该对话框，您还可以指定在结构化提示中将哪个数据列导入到哪个表列。
 
-1.  在对话框中，从您的 Google 云端硬盘中选择一个 CSV 或 Google 表格文件，或者从您的计算机上传一个文件。
+#### 第 3 步 - 测试提示
 
-1.  在“导入示例”对话框中，选择要导入的列以及要忽略的列。通过该对话框，您还可以指定在结构化提示中将哪个数据列导入到哪个表列。
+有了向模型显示您所需要内容的示例后，请使用底部的测试提示表格中的新输入来测试提示。
 
-### 第 3 步 - 测试提示
+例如，您可以在输入列中输入类似 Vintage baseball cap 的内容，点击 spark Run 按钮或按 Enter 键，然后查看模型输出什么内容。
 
-**有了向模**型显示您所需要内容的示例后，请使用底部的测试提示表格中的新输入来测试提示。
-
-例如，您可以在输入列中输入类**似 V**intage baseball cap 的内容，点击 spark Run 按钮或按 Enter 键，然后查看模型输出什么内容。
-
-#### 查看如何将样本发送到模型
+##### 查看如何将样本发送到模型
 
 在后台，Google AI Studio 会将说明与您提供的示例相结合来构建提示。随着您添加更多样本，这些样本会添加到发送给模型的文本中。根据样本的长度，您可能会开始达到模型的词元限制。所有生成式 AI 模型都有词元限制，即它们可以接受作为输入的文本的最大长度。
 
-### 第 4 步 - 后续步骤
+#### 第 4 步 - 后续步骤
 
-**如果您对****提示感到**满意，可以点击 Save 按钮将项目保存到 Google 云端硬盘，也可以点击获取代码按钮将其导出到代码中。
+如果您对提示感到满意，可以点击 Save 按钮将项目保存到 Google 云端硬盘，也可以点击获取代码按钮将其导出到代码中。
 
-您还可以将单个小样本示例导出到 C**SV** 文件或** Goo**gle 表格中。点击操作菜单中的导出示例可导出您的示例。
+您还可以将单个小样本示例导出到 CSV 文件或 Google 表格中。点击操作菜单中的导出示例可导出您的示例。
 
-## 深入阅读
+### 深入阅读
 
-+   [如果您已准备好继](https://ai.google.dev/gemini-api/docs/quickstart?hl=zh-cn)续编写代码，请参阅 API 快速入门。
++ [如果您已准备好继续编写代码](https://ai.google.dev/gemini-api/docs/quickstart?hl=zh-cn)，请参阅 API 快速入门。
++ [如需了解如何编写更好的提示](https://ai.google.dev/gemini-api/docs/prompting-intro?hl=zh-cn)，请查看提示设计准则。
 
-+   [如需了解如何](https://ai.google.dev/gemini-api/docs/prompting-intro?hl=zh-cn)编写更好的提示，请查看提示设计准则。
-
-# **提示设计简介**
+## 提示设计简介
 
 bookmark_border
 
 提示设计是创建提示以从语言模型引出所需回复的过程。编写结构化良好的提示是确保从语言模型获得准确优质回复的重要环节。本页面介绍了一些基本概念、策略和最佳实践，可帮助您开始设计提示。
 
-## 什么是提示
+### 什么是提示
 
 提示是提交到语言模型以接收回复的自然语言请求。提示可以包含问题、说明、语境信息、样本以及模型完成或继续的部分输入。模型收到提示后，可以生成文本、嵌入、代码、图片、视频和音乐等，具体取决于所用的模型类型。
 
-### 提示内容类型
+#### 提示内容类型
 
 提示可以包含以下一种或多种内容类型：
 
-+   [输入（必需）](https://ai.google.dev/gemini-api/docs/prompting-intro?hl=zh-cn#input)
++ 输入（必需）
++ 上下文（可选）
++ 示例（可选）
 
-+   [上下文（可选）](https://ai.google.dev/gemini-api/docs/prompting-intro?hl=zh-cn#context)
-
-+   [示例（可选）](https://ai.google.dev/gemini-api/docs/prompting-intro?hl=zh-cn#examples)
-
-#### 输入
+##### 输入
 
 输入是您希望模型为其提供回复的提示中的文本，它是必需的内容类型。输入可以是模型回答的问题（问题输入）、模型执行的任务（任务输入）、模型操作的实体（实体输入），或模型完成或继续的部分输入（补全输入）。
 
-##### 问题输入
+###### 问题输入
 
 问题输入是您向提供回答的模型询问的问题。
 
-##### 任务输入
+###### 任务输入
 
 任务输入是您希望模型执行的任务。例如，您可以指示模型为您提供某个主题的想法或建议。
 
-##### 实体输入
+###### 实体输入
 
 实体输入是模型对其执行操作（例如分类或汇总）的对象。添加说明对这种类型的输入有帮助。
 
-##### 补全输入
+###### 补全输入
 
 补全输入是您希望模型补全或继续往下写的文本。
 
-#### 上下文
+##### 上下文
 
 语境可以是以下项之一：
 
-+   指定模型行为方式的说明。
-
-+   模型使用或引用来生成回复的信息。
++ 指定模型行为方式的说明。
++ 模型使用或引用来生成回复的信息。
 
 当您需要向模型提供信息时，请在提示中添加语境信息，或者将回复的边界限制为仅提示中的内容。
 
-#### 示例
+##### 示例
 
 样本是您在提示中添加的输入-输出对，以便为模型提供理想的回复样本。在提示中添加样本是自定义回复格式的有效策略。
 
-## 后续步骤
+### 后续步骤
 
-+   现在您已了解提示设计，接下来请尝试使用 Google AI Studio 编写自己的提示。
++ 现在您已了解提示设计，接下来请尝试使用 Google AI Studio 编写自己的提示。
++ [如需更深入地了解提示设计](https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=zh-cn)，请参阅提示策略主题。
++ 如需了解多模态提示，请参阅[使用媒体文件进行提示](https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn)。
 
-+   [如需更深](https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=zh-cn)入地了解提示设计，请参阅提示策略主题。
-
-+   如需了解多模态提示，请参阅[使用媒体文件进行提示](https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn)。
-
-# **使用媒体文件进行提示**
+## 使用媒体文件进行提示
 
 > 内容来源：https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn&lang=python
 
-Gemini API 支持使用文本、图片、音频和视频数据进行提示（也称为多模态提示），这意味着您可以在提示中包含这些类型的媒体[文件。对于小型文](https://ai.google.dev/api/rest/v1beta/files?hl=zh-cn)件，您可以在提供提示时直接将 Gemini 模型指向本地文件。在将较大的文件添加到提示中之前，请先使用 File API 上传较大的文件。
+Gemini API 支持使用文本、图片、音频和视频数据进行提示（也称为多模态提示），这意味着您可以在提示中包含这些类型的媒体[文件](https://ai.google.dev/api/rest/v1beta/files?hl=zh-cn)。对于小型文件，您可以在提供提示时直接将 Gemini 模型指向本地文件。在将较大的文件添加到提示中之前，请先使用 File API 上传较大的文件。
 
-Fi[le API 允许每个项目存](https://ai.google.dev/available_regions?hl=zh-cn)储最多 20 GB 的文件，每个文件的大小不超过 2 GB。文件会存储 48 小时，在这段时间内可以使用您的 API 密钥访问以生成，但无法通过 API 下载。Files API 在提供 Genmini API 的所有区域都是免费的。
+[File API](https://ai.google.dev/available_regions?hl=zh-cn) 允许每个项目存储最多 20 GB 的文件，每个文件的大小不超过 2 GB。文件会存储 48 小时，在这段时间内可以使用您的 API 密钥访问以生成，但无法通过 API 下载。Files API 在提供 Gemini API 的所有区域都是免费的。
 
-File API 会处理可用于通过 mod[el.gene](https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn&lang=python#supported_file_formats)rateContent 或 model.streamGenerateContent 生成内容的输入。如需了解有效文件格式（MIME 类型）和支持的模型，请参阅支持的文件格式。
+File API 会处理可用于通过 `model.generateContent` 或 `model.streamGenerateContent` 生成内容的输入。如需了解有效文件格式（MIME 类型）和支持的模型，请参阅支持的文件格式。
 
-本指南介绍了如何使用 File API 上传媒体文件，以及如何[将它们添](https://github.com/google-gemini/gemini-api-cookbook/tree/main/quickstarts/file-api)加到对 Gemini API 的 GenerateContent 调用中。如需了解详情，请参阅代码示例。
+本指南介绍了如何使用 File API 上传媒体文件，以及如何[将它们添加到](https://github.com/google-gemini/gemini-api-cookbook/tree/main/quickstarts/file-api)对 Gemini API 的 `GenerateContent` 调用中。如需了解详情，请参阅代码示例。
 
-## 准备工作：设置您的项目和 API 密钥
+### 准备工作：设置您的项目和 API 密钥
 
 在调用 Gemini API（或其 File API）之前，您需要设置您的项目并配置您的 API 密钥。
 
-### 安装 Python SDK 并导入软件包
+#### 安装 Python SDK 并导入软件包
 
-适用于 Gemini API 的 Python SDK 包含在 google-generativeai 软件包中。
+适用于 Gemini API 的 Python SDK 包含在 `google-generativeai` 软件包中。
 
-1.  使用 pip 安装依赖项：
+1. 使用 `pip` 安装依赖项：
 
 ```
 pip install -q -U google-generativeai
 ```
 
-1.  导入必要的软件包：
+1. 导入必要的软件包：
 
 ```
 import google.generativeai as genai
 from IPython.display import Markdown
 ```
 
-### 配置 API 密钥，保障其安全
+#### 配置 API 密钥，保障其安全
 
 您需要 API 密钥才能调用 Gemini API（及其 File API）。如果您还没有密钥，请在 Google AI Studio 中创建一个。
 
 [获取 API 密钥](https://aistudio.google.com/app/apikey?hl=zh-cn)
 
-将您的 API 密钥存储在名为 GOOGLE_API_KEY 的 Co[lab Secr](https://github.com/google-gemini/gemini-api-cookbook/blob/main/quickstarts/Authentication.ipynb)et 中。如果您不熟悉 Colab Secret，请参阅身份验证快速入门。
+
+
+将您的 API 密钥存储在名为 `GOOGLE_API_KEY` 的 Colab Secret 中。如果您不熟悉 Colab Secret，请参阅身份验证快速入门。
 
 ```
 from google.colab import userdata
-GOOGLE_API_KEY=userdata.get(&#x27;GOOGLE_API_KEY&#x27;)
+GOOGLE_API_KEY=userdata.get('GOOGLE_API_KEY')
 
 genai.configure(api_key=GOOGLE_API_KEY)
 ```
 
-**重要提示** ：Fi[le API 使用 ](https://ai.google.dev/gemini-api/docs/api-key?hl=zh-cn#security)API 密钥进行身份验证和访问。上传的文件与与该 API 密钥相关联的底层 Google Cloud 项目相关联。与使用 API 密钥的其他 Gemini API 不同，API 密钥还会授予对您使用 File API 上传的数据的访问权限，因此请格外小心保证 API 密钥的安全。详细了解如何确保您的密钥安全无虞。
+`重要提示`：`File API` 使用 API 密钥进行身份验证和访问。上传的文件与与该 API 密钥相关联的底层 Google Cloud 项目相关联。与使用 API 密钥的其他 Gemini API 不同，API 密钥还会授予对您使用 `File API` 上传的数据的访问权限，因此请格外小心保证 API 密钥的安全。详细了解如何确保您的密钥安全无虞。
 
 ## 使用图片进行提示
 
@@ -295,59 +280,56 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 请参阅[附录部分](https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn&lang=python#uploading_files_to_colab)，了解如何上传您自己的文件。
 
-1.  准备要上传的示例图片：
+1. 准备要上传的示例图片：
 
-  curl -o image.jpg https://storage.googleapis.com/generativeai-downloads/images/jetpack.jpg
+   `curl -o image.jpg https://storage.googleapis.com/generativeai-downloads/images/jetpack.jpg`
 
-```
-```
-
-1.  使用 [media.upload](https://ai.google.dev/api/rest/v1beta/media/upload?hl=zh-cn) 上传该文件，以便通过其他 API 调用访问它：
+1. 使用 [`media.upload`](https://ai.google.dev/api/rest/v1beta/media/upload?hl=zh-cn) 上传该文件，以便通过其他 API 调用访问它：
 
 ```
-sample_file = genai.upload_file(path=&quot;image.jpg&quot;,
-                            display_name=&quot;Sample drawing&quot;)
+sample_file = genai.upload_file(path="image.jpg",
+                            display_name="Sample drawing")
 
-print(f&quot;Uploaded file &#x27;{sample_file.display_name}&#x27; as: {sample_file.uri}&quot;)
+print(f"Uploaded file '{sample_file.display_name}' as: {sample_file.uri}")
 ```
 
-response 显示上传的图片使用指定的 display_name 进行存储，并且具有 uri 以在 Gemini API 调用中引用该文件。使用 response 跟踪上传的文件如何映射到 URI。
+`response` 显示上传的图片使用指定的 `display_name` 进行存储，并且具有 `uri` 以在 Gemini API 调用中引用该文件。使用 `response` 跟踪上传的文件如何映射到 URI。
 
-根据您的用例，您可以将 URI 存储在 dict 或数据库等结构中。
+根据您的用例，您可以将 `URI` 存储在 `dict` 或数据库等结构中。
 
 ### 获取图片文件的元数据
 
-[上传文件后，您可以](https://ai.google.dev/api/rest/v1beta/files/get?hl=zh-cn)通过 SDK 调用 files.get 来验证 API 是否已成功存储该文件。
+[上传文件后，您可以](https://ai.google.dev/api/rest/v1beta/files/get?hl=zh-cn)通过 SDK 调用 `files.get` 来验证 API 是否已成功存储该文件。
 
-通过此方法，您可以获取与 Google Cloud 项目（关联到您的 API 密钥）相关联的已上传文件的元数据。只有 name（推而广之，uri）是唯一的。请仅在自行管理唯一性时才使用 display_name 标识文件。
+通过此方法，您可以获取与 Google Cloud 项目（关联到您的 API 密钥）相关联的已上传文件的元数据。只有 `name`（推而广之，`uri`）是唯一的。请仅在自行管理唯一性时才使用 `display_name` 标识文件。
 
 ```
 file = genai.get_file(name=sample_file.name)
-print(f&quot;Retrieved file &#x27;{file.display_name}&#x27; as: {sample_file.uri}&quot;)
+print(f"Retrieved file '{file.display_name}' as: {sample_file.uri}")
 ```
 
 ### 使用上传的图片文件生成内容
 
-上传图片后，您可以发出在响应中引用 uri 的 GenerateContent 请求（通过上传文件或直接获取文件的元数据）。
+上传图片后，您可以发出在响应中引用 `uri` 的 `GenerateContent` 请求（通过上传文件或直接获取文件的元数据）。
 
 在此示例中，您将创建一个提示，以文本开头，后跟已上传文件的 URI 引用：
 
 ```
 The Gemini 1.5 models are versatile and work with multimodal prompts
-model = genai.GenerativeModel(model_name=&quot;models/gemini-1.5-flash&quot;)
+model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
-response = model.generate_content([&quot;Describe the image with a creative description.&quot;, sample_file])
+response = model.generate_content(["Describe the image with a creative description.", sample_file])
 
-Markdown(&quot;&gt;&quot; + response.text)
+Markdown(">" + response.text)
 ```
 
 ### 删除图片文件
 
-[系统会在 48 小时后自](https://ai.google.dev/api/rest/v1beta/files/delete?hl=zh-cn)动删除文件。您也可以通过 SDK 使用 files.delete 手动删除它们。
+[系统会在 48 小时后自](https://ai.google.dev/api/rest/v1beta/files/delete?hl=zh-cn)动删除文件。您也可以通过 SDK 使用 `files.delete` 手动删除它们。
 
 ```
 genai.delete_file(sample_file.name)
-print(f&#x27;Deleted {sample_file.display_name}.&#x27;)
+print(f'Deleted {sample_file.display_name}.')
 ```
 
 ## 在视频中提示
@@ -356,8 +338,8 @@ print(f&#x27;Deleted {sample_file.display_name}.&#x27;)
 
 ### 上传视频文件
 
-> Gemini API 直接接受视频文件格式。此示例使用短片“大雄兔”。
-
+> `Gemini API` 直接接受视频文件格式。此示例使用短片“大雄兔”。
+>
 > “Big Buck Bunny”(c) 版权所有 2008 和 Blender Foundation / www.bigbuckbunny.org，已获知识共享署名 3.0 许可。
 
 请参阅[附录部分](https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn&lang=python#uploading_files_to_colab)，了解如何上传您自己的文件。
@@ -366,61 +348,61 @@ print(f&#x27;Deleted {sample_file.display_name}.&#x27;)
 !wget https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4
 ```
 
-使用 [media.upload](https://ai.google.dev/api/rest/v1beta/media/upload?hl=zh-cn) 上传该文件，以便通过其他 API 调用访问它：
+使用 [`media.upload`](https://ai.google.dev/api/rest/v1beta/media/upload?hl=zh-cn) 上传该文件，以便通过其他 API 调用访问它：
 
 ```
-video_file_name = &quot;BigBuckBunny_320x180.mp4&quot;
+video_file_name = "BigBuckBunny_320x180.mp4"
 
-print(f&quot;Uploading file...&quot;)
+print(f"Uploading file...")
 video_file = genai.upload_file(path=video_file_name)
-print(f&quot;Completed upload: {video_file.uri}&quot;)
+print(f"Completed upload: {video_file.uri}")
 ```
 
-注意：File API 以 1 帧/秒 (FPS) 对视频进行采样。为提供最佳推断质量，此采样率可能会发生变化。
+注意：`File API` 以 1 帧/秒 (`FPS`) 对视频进行采样。为提供最佳推断质量，此采样率可能会发生变化。
 
 ### 获取视频文件的元数据
 
-通过 SDK 调用 [files.get](https://ai.google.dev/api/rest/v1beta/files/get?hl=zh-cn) 方法，验证 API 是否已成功收到文件。
+通过 SDK 调用 [`files.get`](https://ai.google.dev/api/rest/v1beta/files/get?hl=zh-cn) 方法，验证 API 是否已成功收到文件。
 
-视频文件在 File API 中具有 State 字段。视频上传后，将处于 PROCESSING 状态，直到准备好进行推理。只有 ACTIVE 文件可用于模型推断。
+视频文件在 `File API` 中具有 `State` 字段。视频上传后，将处于 `PROCESSING` 状态，直到准备好进行推理。只有 `ACTIVE` 文件可用于模型推断。
 
 ```
 import time
 
-while video_file.state.name == &quot;PROCESSING&quot;:
-    print(&#x27;.&#x27;, end=&#x27;&#x27;)
+while video_file.state.name == "PROCESSING":
+    print('.', end='')
     time.sleep(10)
     video_file = genai.get_file(video_file.name)
 
-if video_file.state.name == &quot;FAILED&quot;:
+if video_file.state.name == "FAILED":
   raise ValueError(video_file.state.name)
 ```
 
 ### 使用上传的视频文件生成内容
 
-上传视频后，您可以发出在响应中引用 uri 的 GenerateContent 请求（通过上传文件或直接获取文件的元数据）。
+上传视频后，您可以发出在响应中引用 `uri` 的 `GenerateContent` 请求（通过上传文件或直接获取文件的元数据）。
 
 ```
 Create the prompt.
-prompt = &quot;Describe this video.&quot;
+prompt = "Describe this video."
 
 The Gemini 1.5 models are versatile and work with multimodal prompts
-model = genai.GenerativeModel(model_name=&quot;models/gemini-1.5-flash&quot;)
+model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
 Make the LLM request.
-print(&quot;Making LLM inference request...&quot;)
+print("Making LLM inference request...")
 response = model.generate_content([prompt, video_file],
-                                  request_options={&quot;timeout&quot;: 600})
+                                  request_options={"timeout": 600})
 print(response.text)
 ```
 
 ### 删除视频文件
 
-[系统会在 48 小时后自](https://ai.google.dev/api/rest/v1beta/files/delete?hl=zh-cn)动删除文件。您也可以通过 SDK 使用 files.delete 手动删除它们。
+[系统会在 48 小时后自](https://ai.google.dev/api/rest/v1beta/files/delete?hl=zh-cn)动删除文件。您也可以通过 SDK 使用 `files.delete` 手动删除它们。
 
 ```
 genai.delete_file(file_response.name)
-print(f&#x27;Deleted file {file_response.uri}&#x27;)
+print(f'Deleted file {file_response.uri}')
 ```
 
 ## 支持的文件格式
@@ -429,134 +411,134 @@ Gemini 模型支持使用多种文件格式进行提示。本部分介绍了使�
 
 ### 图片格式
 
-您可以通过 Gemini 1.5 模型或 Gemini 1.0 Pro Vision 模型使用图片数据进行提示。使用图片进行提示时，需要遵循以下限制和要求：
+您可以通过 `Gemini 1.5` 模型或 `Gemini 1.0 Pro Vision` 模型使用图片数据进行提示。使用图片进行提示时，需要遵循以下限制和要求：
 
-+   图片必须采用以下任一图片数据 [MIME 类型](https://developers.google.com/drive/api/guides/ref-export-formats?hl=zh-cn)：
++ 图片必须采用以下任一图片数据 [`MIME 类型`](https://developers.google.com/drive/api/guides/ref-export-formats?hl=zh-cn)：
 
-+   PNG - image/png
++ `PNG` - `image/png`
 
-+   JPEG - image/jpeg
++ `JPEG` - `image/jpeg`
 
-+   WEBP - image/webp
++ `WEBP` - `image/webp`
 
-+   HEIC - image/heic
++ `HEIC` - `image/heic`
 
-+   HEIF - image/heif
++ `HEIF` - `image/heif`
 
-+   Gemini 1.0 Pro Vision 模型最多 16 张图片，Gemini 1.5 模型最多 3600 张图片。
++ `Gemini 1.0 Pro Vision` 模型最多 16 张图片，`Gemini 1.5` 模型最多 3600 张图片。
 
-+   图片中的像素数没有特定限制；不过，较大的图片会缩小以适应最大分辨率 3072 x 3072，同时保持其原始宽高比。
++ 图片中的像素数没有特定限制；不过，较大的图片会缩小以适应最大分辨率 `3072 x 3072`，同时保持其原始宽高比。
 
 ### 音频格式
 
-对于 Gemini 1.5 模型，您可以使用音频数据进行提示。使用音频进行提示时，需要遵循以下限制和要求：
+对于 `Gemini 1.5` 模型，您可以使用音频数据进行提示。使用音频进行提示时，需要遵循以下限制和要求：
 
-+   音频数据支持以下常见音频格式 [MIME 类型](https://developers.google.com/drive/api/guides/ref-export-formats?hl=zh-cn)：
++ 音频数据支持以下常见音频格式 [`MIME 类型`](https://developers.google.com/drive/api/guides/ref-export-formats?hl=zh-cn)：
 
-+   WAV - 音频/wav
++ `WAV` - `音频/wav`
 
-+   MP3 - 音频/mp3
++ `MP3` - `音频/mp3`
 
-+   AIFF - 音频/aiff
++ `AIFF` - `音频/aiff`
 
-+   AAC - 音频/aac
++ `AAC` - `音频/aac`
 
-+   OGG Vorbis - 音频/ogg
++ `OGG Vorbis` - `音频/ogg`
 
-+   FLAC - audio/flac
++ `FLAC` - `audio/flac`
 
-+   单个提示中支持的音频数据长度上限为 9.5 小时。
++ 单个提示中支持的音频数据长度上限为 9.5 小时。
 
-+   系统会将音频文件重新采样到 16 Kbps 的数据分辨率，并将多个声道的音频合并为一个声道。
++ 系统会将音频文件重新采样到 `16 Kbps` 的数据分辨率，并将多个声道的音频合并为一个声道。
 
-+   单个提示中的音频文件数量没有特定限制；但是，单个提示中所有音频文件的总长度不能超过 9.5 小时。
++ 单个提示中的音频文件数量没有特定限制；但是，单个提示中所有音频文件的总长度不能超过 9.5 小时。
 
 ### 视频格式
 
-您可以通过视频数据使用 Gemini 1.5 模型进行提示。
+您可以通过视频数据使用 `Gemini 1.5` 模型进行提示。
 
-+   以下常见视频格式 [MIME 类型](https://developers.google.com/drive/api/guides/ref-export-formats?hl=zh-cn)支持视频数据：
++ 以下常见视频格式 [`MIME 类型`](https://developers.google.com/drive/api/guides/ref-export-formats?hl=zh-cn)支持视频数据：
 
-+   video/mp4
++ `video/mp4`
 
-+   video/mpeg
++ `video/mpeg`
 
-+   视频/MOV
++ `视频/MOV`
 
-+   视频/avi
++ `视频/avi`
 
-+   video/x-flv
++ `video/x-flv`
 
-+   视频/mpg
++ `视频/mpg`
 
-+   视频/webm
++ `视频/webm`
 
-+   视频/WMV
++ `视频/WMV`
 
-+   视频/3GPP
++ `视频/3GPP`
 
-+   File API 服务以 1 帧/秒 (FPS) 的速度将视频采样到图像中，并且可能会发生变化以提供最佳推理质量。无论分辨率和画质如何，每张图片都需要占用 258 个词元。
++ `File API` 服务以 1 帧/秒 (`FPS`) 的速度将视频采样到图像中，并且可能会发生变化以提供最佳推理质量。无论分辨率和画质如何，每张图片都需要占用 `258` 个词元。
 
 ### 纯文本格式
 
-File API 支持上传具有以下 MIME 类型的纯文本文件：
+`File API` 支持上传具有以下 MIME 类型的纯文本文件：
 
-+   text/plain
++ `text/plain`
 
-+   text/html
++ `text/html`
 
-+   text/css
++ `text/css`
 
-+   text/javascript
++ `text/javascript`
 
-+   application/x-javascript
++ `application/x-javascript`
 
-+   文字/x-typescript
++ `文字/x-typescript`
 
-+   application/x-typescript
++ `application/x-typescript`
 
-+   文本/csv
++ `文本/csv`
 
-+   文本/Markdown
++ `文本/Markdown`
 
-+   text/x-python
++ `text/x-python`
 
-+   application/x-python-code
++ `application/x-python-code`
 
-+   application/json
++ `application/json`
 
-+   text/xml
++ `text/xml`
 
-+   应用/rtf
++ `应用/rtf`
 
-+   文本/RTF
++ `文本/RTF`
 
 对于 MIME 类型不在列表中的纯文本文件，您可以尝试手动指定上述 MIME 类型之一。
 
 ## 附录：将文件上传到 Colab
 
-此笔记本使用 File API 处理从互联网下载的文件。如果您在 Colab 中运行脚本并希望使用自己的文件，首先需要将它们上传到 Colab 实例。
+此笔记本使用 `File API` 处理从互联网下载的文件。如果您在 Colab 中运行脚本并希望使用自己的文件，首先需要将它们上传到 Colab 实例。
 
-首先，点击左侧边栏中的**文件**，然后点击**上传**按钮：
+首先，点击左侧边栏中的 `文件`，然后点击 `上传` 按钮：
 
-接下来，您需要将该文件上传到 File API。在下面的代码单元的表单中，输入所上传文件的文件名，并为该文件提供适当的显示名，然后运行该单元。
+接下来，您需要将该文件上传到 `File API`。在下面的代码单元的表单中，输入所上传文件的文件名，并为该文件提供适当的显示名，然后运行该单元。
 
 ```
-my_filename = &quot;gemini_logo.png&quot; @param {type:&quot;string&quot;}
-my_file_display_name = &quot;Gemini Logo&quot; @param {type:&quot;string&quot;}
+my_filename = "gemini_logo.png" @param {type:"string"}
+my_file_display_name = "Gemini Logo" @param {type:"string"}
 
 my_file = genai.upload_file(path=my_filename,
                             display_name=my_file_display_name)
-print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&quot;)
+print(f"Uploaded file '{my_file.display_name}' as: {my_file.uri}")
 ```
 
-# **提示设计策略**
+# 提示设计策略
 
 > 内容来源：https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=zh-cn
 
 本页面介绍在设计提示时可以采用的一些常规提示设计策略。虽然提示设计方法没有正确或错误一说，但您可以使用常见的策略来影响模型的回答。严格的测试和评估对于优化模型性能仍然至关重要。
 
-大语言模型 (LLM) 使用大量文本数据进行训练，以学习语言单元之间的模式和关系。在获得一些文本（提示）后，语言模型可以预测接下的内容，就像一个复杂的自动补全工具。因此，在设计提示时，请考虑可能影响模型预测结果的不同因素。
+大语言模型 (LLM) 使用大量文本数据进行训练，以学习语言单元之间的模式和关系。在获得一些文本（提示）后，语言模型可以预测接下来的内容，就像一个复杂的自动补全工具。因此，在设计提示时，请考虑可能影响模型预测结果的不同因素。
 
 ## 提供清晰而具体的说明
 
@@ -576,11 +558,11 @@ print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&
 
 ### 摘要
 
-+   向模型提供有关要做什么的指令。
++ 向模型提供有关要做什么的指令。
 
-+   说明应清晰而具体。
++ 说明应清晰而具体。
 
-+   指定输出的任何限制条件或格式要求。
++ 指定输出的任何限制条件或格式要求。
 
 ## 添加少样本示例
 
@@ -598,21 +580,25 @@ print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&
 
 ### 找到最佳示例数量
 
+
+
+# 提示策略
+
 您可以[改变提](https://developers.google.com/machine-learning/glossary?hl=zh-cn#overfitting)示中提供的示例数量来进行实验，以获得最想要的结果。PaLM 和 Gemini 等模型通常可以通过少量示例来学习模式，但您可能需要进行多次实验，以找到可产生所需结果的示例数量。对于 BERT 等较简单的模型，您可能需要更多示例。但是，如果您添加太多示例，模型的回答可能会与示例过拟合。
 
-### 使用示例展示模式而不是反模式
+## 使用示例展示模式而不是反模式
 
 使用示例向模型展示要遵循的模式比使用示例向模型展示要避免的反模式更有效。
 
-▔**反模式**：
+▔ 反模式：
 
-✅ **正模式**：
+✅ 正模式：
 
-### 在各个示例之间使用一致的格式
+## 在各个示例之间使用一致的格式
 
 确保少样本示例的结构和格式相同，以避免回答具有不需要的格式。在提示中添加少样本示例的主要目标之一是向模型展示回答格式。因此，必须确保在所有示例中使用一致的格式，尤其是注意 XML 标记、空格、换行符和示例分隔符。
 
-### 摘要
+## 摘要
 
 +   在提示中包含提示回答示例有助于模型学习如何回答。
 
@@ -624,7 +610,7 @@ print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&
 
 ## 添加上下文信息
 
-您可以在提示中添加指令和模型解决问题所需的信息，而不是假设模型具备所有必要信息。 这些上下文信息可帮助模型了解您要求其执行的操作的限制和详细信息。
+您可以在提示中添加指令和模型解决问题所需的信息，而不是假设模型具备所有必要信息。这些上下文信息可帮助模型了解您要求其执行的操作的限制和详细信息。
 
 以下示例要求模型提供路由器的问题排查指导：
 
@@ -632,7 +618,7 @@ print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&
 
 如需针对特定路由器自定义回答，您可以在提示中添加该路由器的问题排查指南作为上下文，供模型在回答时参考。
 
-### 摘要
+## 摘要
 
 +   在您希望模型在生成回答时使用的提示中添加信息（上下文）。
 
@@ -660,7 +646,7 @@ print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&
 
 可以看到，输出中排除了“芝士汉堡”，因为点餐中没有芝士汉堡。
 
-#### 提示模型设置其回答的格式
+### 提示模型设置其回答的格式
 
 补全策略也有助于设置回答的格式。以下示例提示模型创建论文大纲：
 
@@ -718,23 +704,23 @@ print(f&quot;Uploaded file &#x27;{my_file.display_name}&#x27; as: {my_file.uri}&
 
 ### 温度
 
-温度在生成响应期间用于采样，在应用 topP 和 topK 时会生成响应。温度可以控制词元选择的随机程度。较低的温度有利于需要更具确定性、更少开放性或创造性响应的提示，而较高的温度可以导致更具多样性或创造性的结果。温度为 0 表示确定，即始终选择概率最高的响应。
+温度在生成响应期间用于采样，在应用 `topP` 和 `topK` 时会生成响应。温度可以控制词元选择的随机程度。较低的温度有利于需要更具确定性、更少开放性或创造性响应的提示，而较高的温度可以导致更具多样性或创造性的结果。温度为 0 表示确定，即始终选择概率最高的响应。
 
 对于大多数应用场景，不妨先试着将温度设为 0.2。如果模型返回的响应过于笼统、过于简短，或者模型给出后备响应，请尝试提高温度。
 
 ### Top-K
 
-Top-K 可更改模型选择输出词元的方式。如果 top-K 设为 1，表示所选词元是模型词汇表的所有词元中概率最高的词元（也称为贪心解码）。如果 top-K 设为 3，则表示系统将从 3 个概率最高的词元（通过温度确定）中选择下一个词元。
+Top-K 可更改模型选择输出词元的方式。如果 `top-K` 设为 1，表示所选词元是模型词汇表的所有词元中概率最高的词元（也称为贪心解码）。如果 `top-K` 设为 3，则表示系统将从 3 个概率最高的词元（通过温度确定）中选择下一个词元。
 
-在每个词元选择步骤中，系统都会对概率最高的 top-K 词元进行采样。然后，系统会根据 top-P 进一步过滤词元，并使用温度采样选择最终的词元。
+在每个词元选择步骤中，系统都会对概率最高的 `top-K` 词元进行采样。然后，系统会根据 `top-P` 进一步过滤词元，并使用温度采样选择最终的词元。
 
-指定较低的值可获得随机程度较低的响应，指定较高的值可获得随机程度较高的响应。默认的 top-K 为 40。
+指定较低的值可获得随机程度较低的响应，指定较高的值可获得随机程度较高的响应。默认的 `top-K` 为 40。
 
 ### Top-P
 
-Top-P 可更改模型选择输出词元的方式。系统会按照概率从最高（见 top-K）到最低的顺序选择词元，直到所选词元的概率总和等于 top-P 的值。例如，如果词元 A、B 和 C 的概率分别为 0.3、0.2 和 0.1，并且 top-P 值为 0.5，则模型将选择 A 或 B 作为下一个词元（通过温度确定），并会排除 C，将其作为候选词元。
+Top-P 可更改模型选择输出词元的方式。系统会按照概率从最高（见 `top-K`）到最低的顺序选择词元，直到所选词元的概率总和等于 `top-P` 的值。例如，如果词元 A、B 和 C 的概率分别为 0.3、0.2 和 0.1，并且 `top-P` 值为 0.5，则模型将选择 A 或 B 作为下一个词元（通过温度确定），并会排除 C，将其作为候选词元。
 
-指定较低的值可获得随机程度较低的响应，指定较高的值可获得随机程度较高的响应。默认 top-P 为 0.95。
+指定较低的值可获得随机程度较低的响应，指定较高的值可获得随机程度较高的响应。默认 `top-P` 为 0.95。
 
 ## 提示迭代策略
 
@@ -791,7 +777,7 @@ Version 3:
 
 +   如需了解多模态提示，请参阅[使用媒体文件进行提示](https://ai.google.dev/gemini-api/docs/prompting_with_media?hl=zh-cn)。
 
-# **文件提示策略**
+# 文件提示策略
 
 > 内容来源：https://ai.google.dev/gemini-api/docs/file-prompting-strategies?hl=zh-cn
 
@@ -827,7 +813,7 @@ Gemini 人工智能 (AI) 模型系列旨在处理各种类型的输入数据，�
 
 +   如果模型没有从图片的相关部分提取信息：给出提示，说明您希望提示从图片的哪些方面提取信息。
 
-+   如果模型输出过于宽泛（未针对图片量身定制）： 在提示的开头，尝试要求模型描述图片，然后再提供任务说明，或者尝试要求模型引用图片中的内容。
++   如果模型输出过于宽泛（未针对图片量身定制）：在提示的开头，尝试要求模型描述图片，然后再提供任务说明，或者尝试要求模型引用图片中的内容。
 
 ## 提示设计基础知识
 
@@ -883,23 +869,15 @@ Gemini 人工智能 (AI) 模型系列旨在处理各种类型的输入数据，�
 
 +   同样的提示也适用于以图片形式呈现的广告素材。在以下包含兔子的示例中，明确要求模型包含图片中的各个方面可以改进输出。
 
-+
-
-+
-
 ### 排查提示的哪个部分失败
 
-+   **很难知道****提示失败**是否是因为模型一开始不理解图片，或者它是否理解图片但随后没有执行正确的推理步骤。
++   **很难知道提示失败**是否是因为模型一开始不理解图片，或者它是否理解图片但随后没有执行正确的推理步骤。
 
 +   如需区分这些原因，请要求模型描述图片中的内容。
 
 +   在以下示例中，如果在与茶搭配时，模型以似乎令人惊讶的零食（例如爆米花）作为回答，则可以先进行问题排查，以确定模型是否正确识别出图片中包含茶。
 
 +   另一种策略是要求模型说明其推理。这有助于您缩小推理失败的部分（如果有）。
-
-+
-
-+
 
 ### 对采样参数调优
 
@@ -913,23 +891,23 @@ Gemini 人工智能 (AI) 模型系列旨在处理各种类型的输入数据，�
 
 #### 温度
 
-+   温度用于在回答生成期间进行采样，这会在应用 top-P 和 top-K 时进行。温度可以控制词元选择的随机性。较低的温度有利于需要更具确定性、更少开放性或创造性回答的提示，而较高的温度可以带来更具多样性或创造性的结果。温度为 0 表示确定性，即始终选择概率最高的回答。
+温度用于在回答生成期间进行采样，这会在应用 `top-P` 和 `top-K` 时进行。温度可以控制词元选择的随机性。较低的温度有利于需要更具确定性、更少开放性或创造性回答的提示，而较高的温度可以带来更具多样性或创造性的结果。温度为 0 表示确定性，即始终选择概率最高的回答。
 
-+   对于大多数应用场景，不妨先试着将温度设为 0.4。如果您需要更具创造性的结果，请尝试提高温度。如果您观察到明显的幻觉，请尝试降低温度。
+对于大多数应用场景，不妨先试着将温度设为 0.4。如果您需要更具创造性的结果，请尝试提高温度。如果您观察到明显的幻觉，请尝试降低温度。
 
 #### Top-K
 
-+   Top-K 可更改模型选择输出词元的方式。如果 Top-K 设为 1，表示下一个所选词元是模型词汇表的所有词元中概率最高的词元（也称为贪心解码）。如果 Top-K 设为 3，则表示系统将从 3 个概率最高的词元（通过温度确定）中选择下一个词元。
+`Top-K` 可更改模型选择输出词元的方式。如果 `Top-K` 设为 1，表示下一个所选词元是模型词汇表的所有词元中概率最高的词元（也称为贪心解码）。如果 `Top-K` 设为 3，则表示系统将从 3 个概率最高的词元（通过温度确定）中选择下一个词元。
 
-+   在每个词元选择步中，系统都会对概率最高的 Top-K 词元进行采样。然后，系统会根据 Top-P 进一步过滤词元，并使用温度采样选择最终的词元。
+在每个词元选择步中，系统都会对概率最高的 `Top-K` 词元进行采样。然后，系统会根据 `Top-P` 进一步过滤词元，并使用温度采样选择最终的词元。
 
-+   指定较低的值可获得随机程度较低的回答，指定较高的值可获得随机程度较高的回答。 top-K 的默认值为 32。
+指定较低的值可获得随机程度较低的回答，指定较高的值可获得随机程度较高的回答。 `top-K` 的默认值为 32。
 
 #### Top-P
 
-+   Top-P 可更改模型选择输出词元的方式。系统会按照概率从最高（见 Top-K）到最低的顺序选择词元，直到所选词元的概率总和等于 Top-P 的值。例如，如果词元 A、B 和 C 的概率分别为 0.6、0.3 和 0.1，并且 Top-P 的值为 0.9，则模型将选择 A 或 B 作为下一个词元（通过温度确定），并会排除 C 作为候选词元。
+`Top-P` 可更改模型选择输出词元的方式。系统会按照概率从最高（见 `Top-K`）到最低的顺序选择词元，直到所选词元的概率总和等于 `Top-P` 的值。例如，如果词元 A、B 和 C 的概率分别为 0.6、0.3 和 0.1，并且 `Top-P` 的值为 0.9，则模型将选择 A 或 B 作为下一个词元（通过温度确定），并会排除 C 作为候选词元。
 
-+   指定较低的值可获得随机程度较低的回答，指定较高的值可获得随机程度较高的回答。 top-P 的默认值为 1.0。
+指定较低的值可获得随机程度较低的回答，指定较高的值可获得随机程度较高的回答。 `top-P` 的默认值为 1.0。
 
 ## 后续步骤
 

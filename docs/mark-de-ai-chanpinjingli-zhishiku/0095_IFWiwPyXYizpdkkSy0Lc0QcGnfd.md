@@ -1,3 +1,4 @@
+
 # 面试速查（cheat sheets）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/QM3vdAFFjoFYUTxjnjNcm56mnZd](https://qqs7y1hozd1.feishu.cn/docx/QM3vdAFFjoFYUTxjnjNcm56mnZd)
@@ -9,18 +10,5 @@
 ## 源文件👆👆👆
 
 ## 图片版👇👇👇
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ![](img/c0afa08ec745a163406feb55aa9de60b.png)

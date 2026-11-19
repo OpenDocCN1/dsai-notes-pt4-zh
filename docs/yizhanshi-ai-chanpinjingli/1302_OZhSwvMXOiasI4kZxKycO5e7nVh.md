@@ -1,3 +1,4 @@
+
 # 使用CrewAI构建多智能体品牌监控应用
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/D9A5dVGfBo2ZDax1CYmcBJ7Nnub](https://v11enp9ok1h.feishu.cn/docx/D9A5dVGfBo2ZDax1CYmcBJ7Nnub)
@@ -10,27 +11,27 @@
 
 ### 技术栈
 
-+   **Bright Data**：用于大规模数据抓取
++   `Bright Data`：用于大规模数据抓取
 
-+   **CrewAI**：用于智能体编排和工作流管理
++   `CrewAI`：用于智能体编排和工作流管理
 
-+   Ollama + DeepSeek R1：本地部署的大语言模型，提供AI能力
++   `Ollama` + `DeepSeek R1`：本地部署的大语言模型，提供AI能力
 
-+   **Streamlit**：用于构建交互式用户界面
++   `Streamlit`：用于构建交互式用户界面
 
 ### 系统工作流
 
-1.  使用Bright Data抓取各平台（X、Instagram、YouTube等）的品牌提及
+1.  使用`Bright Data`抓取各平台（X、Instagram、YouTube等）的品牌提及
 
-1.  调用特定平台的Crew（智能体团队）分析数据并生成洞察
+1.  调用特定平台的`Crew`（智能体团队）分析数据并生成洞察
 
 1.  合并所有洞察，生成最终品牌报告
 
 1.  数据抓取工具实现
 
-### 1.1 Bright Data抓取工具
+### 1.1 `Bright Data`抓取工具
 
-要监控品牌，我们需要从多个来源抓取数据——X、YouTube、Instagram、网站等。因此，我们首先从Bright Data的SERP API获取最近的搜索结果。
+要监控品牌，我们需要从多个来源抓取数据——X、YouTube、Instagram、网站等。因此，我们首先从`Bright Data`的`SERP API`获取最近的搜索结果。
 
 ![](img/899e1dac9a5476cb46f553259b8edf20.png)
 
@@ -39,37 +40,42 @@ from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 import requests
 
-class BrightDataWebSearchToolInput(BaseModel):&quot;&quot;&quot;BrightDataWebSearchTool的输入模式&quot;&quot;&quot;
-    title: str = Field(..., description=&quot;要搜索的主题&quot;)class BrightDataWebSearchTool(BaseTool):
-    name: str = &quot;Web Search Tool&quot;
-    description: str = &quot;用于搜索Google并获取结果的工具&quot;
+class BrightDataWebSearchToolInput(BaseModel):
+    """BrightDataWebSearchTool的输入模式"""
+    title: str = Field(..., description="要搜索的主题")
+
+class BrightDataWebSearchTool(BaseTool):
+    name: str = "Web Search Tool"
+    description: str = "用于搜索Google并获取结果的工具"
     args_schema: Type[BaseModel] = BrightDataWebSearchToolInput
 
     def _run(self, title):
-        host = &#x27;brd.supexproxy.io&#x27;
+        host = 'brd.supexproxy.io'
         port = 33335
-        username = &#x27;&lt;从BrightData.com的SERP API获取&gt;&#x27;
-        password = &#x27;&lt;从BrightData.com的SERP API获取&gt;&#x27;
+        username = '<从BrightData.com的SERP API获取>'
+        password = '<从BrightData.com的SERP API获取>'
         
-        proxies = {&#x27;http&#x27;: f&#x27;http://{username}:{password}@{host}:{port}&#x27;,&#x27;https&#x27;: f&#x27;http://{username}:{password}@{host}:{port}&#x27;}
+        proxies = {'http': f'http://{username}:{password}@{host}:{port}', 'https': f'http://{username}:{password}@{host}:{port}'}
         
-        url = f&quot;https://www.google.com/search?q={title}&amp;brd_json=1&amp;num=500&quot;
-        response = requests.get(url, proxies=proxies, verify=False)return response.json()[&#x27;organic&#x27;]
+        url = f"https://www.google.com/search?q={title}&brd_json=1&num=500"
+        response = requests.get(url, proxies=proxies, verify=False)
+        return response.json()['organic']
 ```
 
 ### 1.2 平台特定抓取函数
 
-上述输出将包含指向网页、X帖子、YouTube视频、Instagram帖子等的链接。为了抓取这些来源，我们使用Bright Data的平台特定抓取器。
+上述输出将包含指向网页、X帖子、YouTube视频、Instagram帖子等的链接。为了抓取这些来源，我们使用`Bright Data`的平台特定抓取器。
 
 ![](img/ce5ca6152be16673f500762db059c7df.png)
 
 ```
-def scrape_urls(input_urls: list[str], initial_params: dict, scraping_type: str):print(f&quot;Scraping {scraping_type} for {len(input_urls)} urls&quot;)
+def scrape_urls(input_urls: list[str], initial_params: dict, scraping_type: str):
+    print(f"Scraping {scraping_type} for {len(input_urls)} urls")
     
-    url = &quot;https://api.brightdata.com/datasets/v3/trigger&quot;
-    headers = {&quot;Authorization&quot;: f&quot;Bearer {os.getenv(&#x27;BRIGHTDATA_API_KEY&#x27;)}&quot;,&quot;Content-Type&quot;: &quot;application/json&quot;,}
+    url = "https://api.brightdata.com/datasets/v3/trigger"
+    headers = {"Authorization": f"Bearer {os.getenv('BRIGHTDATA_API_KEY')}", "Content-Type": "application/json",}
     
-    data = [{&quot;url&quot;: url} for url in input_urls]
+    data = [{"url": url} for url in input_urls]
     
     scraping_response = requests.post(
         url,
@@ -78,36 +84,37 @@ def scrape_urls(input_urls: list[str], initial_params: dict, scraping_type: str)
         json=data
     )
     
-    snapshot_id = scraping_response.json()[&#x27;snapshot_id&#x27;]
-    output_url = f&quot;https://api.brightdata.com/datasets/v3/snapshot/{snapshot_id}&quot;
+    snapshot_id = scraping_response.json()['snapshot_id']
+    output_url = f"https://api.brightdata.com/datasets/v3/snapshot/{snapshot_id}"
     output_response = requests.get(
         output_url,
         headers=headers,
-        params={&quot;format&quot;: &quot;json&quot;})return output_response.json()
+        params={"format": "json"})
+    return output_response.json()
 ```
 
-## 本地部署DeepSeek R1模型
+## 本地部署`DeepSeek R1`模型
 
 ![](img/8f8ac824e5b77ae55bd8251834f3bdce.png)
 
-我们通过Ollama在本地部署DeepSeek R1模型，为智能体提供AI能力。
+我们通过`Ollama`在本地部署`DeepSeek R1`模型，为智能体提供AI能力。
 
-### 2.1 安装DeepSeek R1
+### 2.1 安装`DeepSeek R1`模型
 
-首先，在命令行中执行以下命令拉取DeepSeek R1模型：
+首先，在命令行中执行以下命令拉取`DeepSeek R1`模型：
 
 ```
 ollama pull deepseek-r1
 ```
 
-### 2.2 在CrewAI中定义LLM
+### 2.2 在`CrewAI`中定义`LLM`
 
 ```
 from crewai import LLM
-llm = LLM(model=&quot;ollama/deepseek-r1&quot;)
+llm = LLM(model="ollama/deepseek-r1")
 ```
 
-## 智能体团队(Crew)设置
+## 智能体团队(`Crew`)设置
 
 ![](img/0038c859ecbb2c9250ffd92e0b804d44.png)
 
@@ -119,7 +126,7 @@ llm = LLM(model=&quot;ollama/deepseek-r1&quot;)
 
 ### 3.1 X平台分析智能体
 
-该智能体分析由Bright Data抓取的帖子并提取关键洞察。
+该智能体分析由`Bright Data`抓取的帖子并提取关键洞察。
 
 ![](img/16b58932348cddd87220b2afe371c8e4.png)
 
@@ -127,13 +134,13 @@ llm = LLM(model=&quot;ollama/deepseek-r1&quot;)
 from crewai import Agent, Task
 
 analysis_agent = Agent(
-    role=&quot;X Analysis Agent&quot;,
-    goal=&quot;分析X平台帖子中{brand_name}的使用情况，包括URL、浏览量、点赞数、回复、转发、标签、引用、收藏、描述、被标记用户、发帖者ID等细节&quot;,
-    backstory=&quot;你是X平台帖子分析专家，了解平台及其算法。你能够分析帖子、描述、浏览量、点赞、回复、转发、标签、引用、收藏、被标记用户，并分析帖子中品牌的使用情况。&quot;)
+    role="X Analysis Agent",
+    goal="分析X平台帖子中`{brand_name}`的使用情况，包括URL、浏览量、点赞数、回复、转发、标签、引用、收藏、描述、被标记用户、发帖者ID等细节",
+    backstory="你是X平台帖子分析专家，了解平台及其算法。你能够分析帖子、描述、浏览量、点赞、回复、转发、标签、引用、收藏、被标记用户，并分析帖子中品牌的使用情况。")
 
 analysis_task = Task(
-    description=&quot;分析X平台帖子中{brand_name}的使用情况，包括URL、浏览量、点赞数、回复、转发、标签、引用、收藏、描述、被标记用户、发帖者ID等细节。&quot;,
-    expected_output=&quot;关于X平台帖子及其{brand_name}使用情况的简洁分析。包括帖子语气、对品牌的情感倾向、是否获得互动、是否为付费合作等内容。&quot;,
+    description="分析X平台帖子中`{brand_name}`的使用情况，包括URL、浏览量、点赞数、回复、转发、标签、引用、收藏、描述、被标记用户、发帖者ID等细节。",
+    expected_output="关于X平台帖子及其`{brand_name}`使用情况的简洁分析。包括帖子语气、对品牌的情感倾向、是否获得互动、是否为付费合作等内容。",
     agent=analysis_agent
 )
 ```
@@ -146,28 +153,28 @@ analysis_task = Task(
 
 ```
 writer_agent = Agent(
-    role=&quot;Senior Report Writer Agent&quot;,
-    goal=&quot;使用X平台分析智能体获得的分析结果，撰写简洁的要点报告，说明{brand_name}在帖子中的使用方式。&quot;,
-    backstory=&quot;你是X平台帖子分析专家，了解平台及其算法。你能够使用X平台分析智能体获得的分析结果，撰写简洁的要点报告，说明{brand_name}在帖子中的使用方式。&quot;)
+    role="Senior Report Writer Agent",
+    goal="使用X平台分析智能体获得的分析结果，撰写简洁的要点报告，说明`{brand_name}`在帖子中的使用方式。",
+    backstory="你是X平台帖子分析专家，了解平台及其算法。你能够使用X平台分析智能体获得的分析结果，撰写简洁的要点报告，说明`{brand_name}`在帖子中的使用方式。")
 
 writer_task = Task(
-    description=&quot;撰写关于X平台帖子分析的简洁要点报告，以及{brand_name}在帖子中的使用方式。&quot;,
-    expected_output=&quot;关于X平台帖子分析以及{brand_name}在帖子中使用方式的清晰简洁的要点报告。对于输入数据中的每个帖子，输出应采用提供的结构化格式：&quot;,
+    description="撰写关于X平台帖子分析的简洁要点报告，以及`{brand_name}`在帖子中的使用方式。",
+    expected_output="关于X平台帖子分析以及`{brand_name}`在帖子中使用方式的清晰简洁的要点报告。对于输入数据中的每个帖子，输出应采用提供的结构化格式：",
     agent=writer_agent
 )
 ```
 
 输出格式要求：
 
-+   描述{brand_name}提及的简短标题
++   描述`{brand_name}`提及的简短标题
 
 +   帖子URL
 
-+   详细说明帖子中{brand_name}提及的要点，包括帖子语气、对品牌的情感倾向、是否获得互动、是否为付费合作等。
++   详细说明帖子中`{brand_name}`提及的要点，包括帖子语气、对品牌的情感倾向、是否获得互动、是否为付费合作等。
 
-## 创建工作流(Flow)
+## 创建工作流(`Flow`)
 
-最后，我们使用CrewAI Flows来编排工作流：
+最后，我们使用`CrewAI` `Flows`来编排工作流：
 
 1.  首先使用抓取工具启动工作流
 
@@ -181,36 +188,44 @@ writer_task = Task(
 from crewai.flow import Flow, listen, start
 from pydantic import BaseModel
 
-class BrandMonitoringFlow(Flow[BrandMonitoringState]):@start()def scrape_data(self):
+class BrandMonitoringFlow(Flow[BrandMonitoringState]):
+    @start()
+    def scrape_data(self):
         search_tool = BrightDataWebSearchTool()  # 抓取品牌提及的URL
-        self.state.search_result = search_tool(self.state.brand_name)@listen(scrape_data)def scrape_platform_data_and_analyse(self):# X平台抓取
+        self.state.search_result = search_tool(self.state.brand_name)
+
+    @listen(scrape_data)
+    def scrape_platform_data_and_analyse(self):
+        # X平台抓取
         X_posts = scrape_urls(
             self.state.search_response.x_urls, 
             X_params, 
-            &quot;X&quot;)
+            "X")
         
         X_crew = XCrew().crew()
         X_response = X_crew.kickoff(
-            inputs={&quot;X_data&quot;: X_posts, 
-                &quot;brand_name&quot;: self.state.brand_name
-            })# YouTube平台抓取
+            inputs={"X_data": X_posts, 
+                "brand_name": self.state.brand_name
+            })
+        # YouTube平台抓取
         YouTube_transcripts = scrape_urls(
             self.state.search_response.YouTube_urls, 
             YouTube_params, 
-            &quot;X&quot;)
+            "X")
         
         YouTube_crew = YouTubeCrew().crew()
         YouTube_response = YouTube_crew.kickoff(
-            inputs={&quot;X_data&quot;: YouTube_posts, 
-                &quot;brand_name&quot;: self.state.brand_name
-            })# 为所有平台重复上述过程
+            inputs={"X_data": YouTube_posts, 
+                "brand_name": self.state.brand_name
+            })
+        # 为所有平台重复上述过程
 ```
 
-## Streamlit UI与工作流启动
+## `Streamlit` UI与工作流启动
 
 ![](img/071e4efba9e2ffbf80666b7c836993ab.png)
 
-最后，我们将应用程序包装在清晰的Streamlit界面中以实现交互性并运行工作流。
+最后，我们将应用程序包装在清晰的`Streamlit`界面中以实现交互性并运行工作流。
 
 UI界面包含以下元素：
 

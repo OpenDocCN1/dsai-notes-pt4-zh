@@ -1,3 +1,4 @@
+
 # 打开云原生大门：了解Linux命名空间的奥秘和Docker容器隔离技术
 
 > 来源：[https://geekbang.feishu.cn/docx/Gxz5dhlLsohv4mx6Lxzca1yEned](https://geekbang.feishu.cn/docx/Gxz5dhlLsohv4mx6Lxzca1yEned)
@@ -16,9 +17,9 @@
 
 关注作者，获取更多相关知识
 
-# 一、根目录RootFs概述
+## 一、根目录RootFs概述
 
-rootfs 是Docker 容器在启动时内部进程可见的文件系统，即Docker容器的根目录。rootfs通常包含一个操作系统运行所需的文件系统，例如可能包含经典的类Unix操作系统中的目录系统，如/dev、/proc、/bin、/etc、/lib、/usr、/tmp及运行Docker容器所需的配置文件、工具等。
+`rootfs` 是Docker 容器在启动时内部进程可见的文件系统，即Docker容器的根目录。`rootfs`通常包含一个操作系统运行所需的文件系统，例如可能包含经典的类Unix操作系统中的目录系统，如`/dev`、`/proc`、`/bin`、`/etc`、`/lib`、`/usr`、`/tmp`及运行Docker容器所需的配置文件、工具等。
 
 就像每个进程都有自己的根目录：
 
@@ -52,9 +53,9 @@ fly@fly:/proc$ ls
 117   1328  200   220  240  260  292  354  739  870  97   ioports      pressure
 fly@fly:/proc$ cd 110
 fly@fly:/proc/110$ ls
-ls: cannot read symbolic link &#x27;cwd&#x27;: Permission denied
-ls: cannot read symbolic link &#x27;root&#x27;: Permission denied
-ls: cannot read symbolic link &#x27;exe&#x27;: Permission denied
+ls: cannot read symbolic link 'cwd': Permission denied
+ls: cannot read symbolic link 'root': Permission denied
+ls: cannot read symbolic link 'exe': Permission denied
 arch_status  comm             fdinfo     mem         oom_adj        root          stack    timerslack_ns
 attr         coredump_filter  gid_map    mountinfo   oom_score      sched         stat     uid_map
 autogroup    cpuset           io         mounts      oom_score_adj  schedstat     statm    wchan
@@ -62,32 +63,31 @@ auxv         cwd              limits     mountstats  pagemap        sessionid   
 cgroup       environ          loginuid   net         patch_state    setgroups     syscall
 clear_refs   exe              map_files  ns          personality    smaps         task
 cmdline      fd               maps       numa_maps   projid_map     smaps_rollup  timers
-fly@fly:/proc/110$ sudo ls root 
-[sudo] password for fly: 
+fly@fly:/proc/110$ sudo ls root
+[sudo] password for fly:
 bin   cdrom  etc   lib          lib64   lost+found  mnt  proc  run   snap  swap.img  tmp  var
 boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr
-
 ```
 
 进程的运行依赖于根文件系统。
 
-# 二、Linux Namespace
+## 二、Linux Namespace
 
 Namespace是 Linux 内核用来隔离内核资源的方式。Linux实现了七种不同类型的命名空间。每个命名空间的用途是将特定的全局系统资源包装在抽象中，使命名空间中的进程看起来它们具有自己的全局资源独立实例。命名空间的总体目标之一是支持容器的实现。
 
 | Namespace | 隔离内容 |
 | --- | --- |
-| Mount | 文件系统挂载点 |
-| IPC | 进程间通信资源，即系统VIPC对象和POSIX消息队列 |
-| PID | 进程ID |
-| Network | 网络设备、IP 地址、IP 路由表、/proc/net目录、端口号 |
-| UTS | 主机名与网络信息服务域名 |
-| User | 用户和用户组 |
-| Cgroup | Cgroup根目录 |
+| `Mount` | 文件系统挂载点 |
+| `IPC` | 进程间通信资源，即系统VIPC对象和POSIX消息队列 |
+| `PID` | 进程ID |
+| `Network` | 网络设备、IP 地址、IP 路由表、`/proc/net`目录、端口号 |
+| `UTS` | 主机名与网络信息服务域名 |
+| `User` | 用户和用户组 |
+| `Cgroup` | `Cgroup`根目录 |
 
-## 2.1、进程命名空间
+### 2.1、进程命名空间
 
-### 2.1.1、lsns 命令
+#### 2.1.1、`lsns` 命令
 
 列出系统命名空间。
 
@@ -98,27 +98,17 @@ Namespace是 Linux 内核用来隔离内核资源的方式。Linux实现了七�
 
 符号说明：
 
-+   NS：命名空间标识符（索引节点号）。
-
-+   TYPE：命名空间类型。
-
-+   PATH：命名空间的PATH路径。
-
-+   NPROCS：命名空间中的进程数。
-
-+   PID：命名空间中的最小PID。
-
-+   PPID：PID的父级PID。
-
-+   COMMAND：PID的命令行。
-
-+   UID：PID的UID。
-
-+   USER：PID的User。
-
-+   NETNSID：网络子系统使用的命名空间ID。
-
-+   NSFS：nsfs 文件系统挂载点（通常用于网络子系统）。
++   `NS`：命名空间标识符（索引节点号）。
++   `TYPE`：命名空间类型。
++   `PATH`：命名空间的`PATH`路径。
++   `NPROCS`：命名空间中的进程数。
++   `PID`：命名空间中的最小`PID`。
++   `PPID`：`PID`的父级`PID`。
++   `COMMAND`：`PID`的命令行。
++   `UID`：`PID`的`UID`。
++   `USER`：`PID`的`User`。
++   `NETNSID`：网络子系统使用的命名空间`ID`。
++   `NSFS`：`nsfs` 文件系统挂载点（通常用于网络子系统）。
 
 进程用到的命名空间（比如110进程的命名空间）：
 
@@ -128,18 +118,17 @@ fly@fly:/proc/110/ns$ sudo ls -al
 total 0
 dr-x--x--x 2 root root 0 Dec  6 12:54 .
 dr-xr-xr-x 9 root root 0 Dec  6 12:52 ..
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 cgroup -&gt; &#x27;cgroup:[4026531835]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 ipc -&gt; &#x27;ipc:[4026531839]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 mnt -&gt; &#x27;mnt:[4026531840]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 net -&gt; &#x27;net:[4026531992]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 pid -&gt; &#x27;pid:[4026531836]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 pid_for_children -&gt; &#x27;pid:[4026531836]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 user -&gt; &#x27;user:[4026531837]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:16 uts -&gt; &#x27;uts:[4026531838]&#x27;
-
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 cgroup -> 'cgroup:[4026531835]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 ipc -> 'ipc:[4026531839]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 mnt -> 'mnt:[4026531840]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 net -> 'net:[4026531992]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 pid -> 'pid:[4026531836]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 pid_for_children -> 'pid:[4026531836]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 user -> 'user:[4026531837]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:16 uts -> 'uts:[4026531838]'
 ```
 
-使用lsns命令就可以查询进程的命名空间，可以看到和上面的命名空间标识符是一致的。
+使用`lsns`命令就可以查询进程的命名空间，可以看到和上面的命名空间标识符是一致的。
 
 ```
 fly@fly:/proc/110/ns$ sudo lsns
@@ -164,15 +153,21 @@ fly@fly:/proc/110/ns$ sudo lsns
 4026532751 mnt         1   879 root             /lib/systemd/systemd-logind
 ```
 
-fork进程时，如果没有指定进程的命名空间，子进程将继承父进程的相关命名空间。
+`fork`进程时，如果没有指定进程的命名空间，子进程将继承父进程的相关命名空间。
 
-### 2.1.2、查看元祖进程命名空间
+#### 2.1.2、查看元祖进程命名空间
 
 （1）列出系统所有命名空间。
 
 ```
 sudo lsns --output-all
 ```
+
+
+
+## 2.1 进程命名空间
+
+### 2.1.1 查看元祖进程命名空间
 
 ```
 $ sudo lsns --output-all 
@@ -197,9 +192,9 @@ $ sudo lsns --output-all
 4026532751 mnt    /proc/879/ns/mnt       1   879    1 /lib/systemd/s   0 root   
 ```
 
-上面的结果中=命名空间所属进程ID（PID）为1，表示元祖进程的命名空间，即系统默认命名空间。进程没有特殊指定需要创建新的命名空间的情况下，命名空间将与父进程保持一致。
+上面的结果中，命名空间所属进程ID（PID）为1，表示元祖进程的命名空间，即系统默认命名空间。进程没有特殊指定需要创建新的命名空间的情况下，命名空间将与父进程保持一致。
 
-（2）通过文件查看元祖进程命名空间。
+### 2.1.2 通过文件查看元祖进程命名空间
 
 ```
 sudo ls -al /proc/1/ns/ --color
@@ -209,27 +204,25 @@ sudo ls -al /proc/1/ns/ --color
 total 0
 dr-x--x--x 2 root root 0 Dec  6 12:53 .
 dr-xr-xr-x 9 root root 0 Dec  6 12:52 ..
-lrwxrwxrwx 1 root root 0 Dec  6 13:17 cgroup -&gt; &#x27;cgroup:[4026531835]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:17 ipc -&gt; &#x27;ipc:[4026531839]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 12:53 mnt -&gt; &#x27;mnt:[4026531840]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:17 net -&gt; &#x27;net:[4026531992]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:17 pid -&gt; &#x27;pid:[4026531836]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:32 pid_for_children -&gt; &#x27;pid:[4026531836]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:17 user -&gt; &#x27;user:[4026531837]&#x27;
-lrwxrwxrwx 1 root root 0 Dec  6 13:17 uts -&gt; &#x27;uts:[4026531838]&#x27;
-
+lrwxrwxrwx 1 root root 0 Dec  6 13:17 cgroup -> 'cgroup:[4026531835]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:17 ipc -> 'ipc:[4026531839]'
+lrwxrwxrwx 1 root root 0 Dec  6 12:53 mnt -> 'mnt:[4026531840]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:17 net -> 'net:[4026531992]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:17 pid -> 'pid:[4026531836]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:32 pid_for_children -> 'pid:[4026531836]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:17 user -> 'user:[4026531837]'
+lrwxrwxrwx 1 root root 0 Dec  6 13:17 uts -> 'uts:[4026531838]'
 ```
 
-### 2.1.3、查看当前用户进程命名空间。
+### 2.1.3 查看当前用户进程命名空间
 
-（1）查看当前用户进程命名空间列表。
+#### （1）查看当前用户进程命名空间列表
 
 ```
 lsns --output-all
 ```
 
 ```
-
         NS TYPE   PATH                 NPROCS   PID PPID COMMAND                 UID USER    NETNSID NSFS
 4026531835 cgroup /proc/1385/ns/cgroup      3  1385    1 /lib/systemd/systemd - 1000 fly             
 4026531836 pid    /proc/1385/ns/pid         3  1385    1 /lib/systemd/systemd - 1000 fly             
@@ -241,11 +234,11 @@ lsns --output-all
 
 ```
 
-**注意，使用sudo是查看系统所有命名空间，不使用**sudo是查看当前用户进程命名空间列表。
+注意，使用`sudo`是查看系统所有命名空间，不使用`sudo`是查看当前用户进程命名空间列表。
 
-（2）fork一个新的进程，并且不共享父进程命名空间。
+#### （2）`fork`一个新的进程，并且不共享父进程命名空间。
 
-创建新的进程，使用-u指定新的命名空间，若没有指定-U则需要超级权限：
+创建新的进程，使用`-u`指定新的命名空间，若没有指定`-U`则需要超级权限：
 
 ```
 unshare --fork -m -u -i -n -p -U -C sleep 100
@@ -276,17 +269,17 @@ lsns --output-all
 
 ```
 
-通过NS列可以看出，新进程和元祖进程的命名空间是不一样的。
+通过`NS`列可以看出，新进程和元祖进程的命名空间是不一样的。
 
-新fork出来的进程，在指定新命名空间后，其命名空间字段的值与系统默认命名空间不一致，说明进程创建了新的命名空间。
+新`fork`出来的进程，在指定新命名空间后，其命名空间字段的值与系统默认命名空间不一致，说明进程创建了新的命名空间。
 
-## 2.2、容器进程命名空间
+## 2.2 容器进程命名空间
 
-docker容器本身就是一个进程，所以docker容器隔离机制使用的就是进程的隔离机制。
+`docker`容器本身就是一个进程，所以`docker`容器隔离机制使用的就是进程的隔离机制。
 
-### 2.2.1、查看容器进程命名空间列表
+### 2.2.1 查看容器进程命名空间列表
 
-（1） 运行容器。
+#### （1）运行容器。
 
 ```
 # 启动nginx 容器
@@ -295,7 +288,7 @@ docker run -d --name mynginx nginx
 ```
 
 ```
-Unable to find image &#x27;nginx:latest&#x27; locally
+Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
 025c56f98b67: Pull complete 
 ca9c7f45d396: Pull complete 
@@ -310,7 +303,7 @@ f022bdc00b5adca5cf97866497bc853d764e9f973d306ed73df9e577f4d6eee6
 
 ```
 
-（2）获取进程ID，即获取nginx主进程ID。
+#### （2）获取进程ID，即获取`nginx`主进程ID。
 
 ```
 docker top mynginx
@@ -324,7 +317,7 @@ systemd+            7639                7583                0                   
 
 ```
 
-使用docker ps查看其他信息：
+使用`docker ps`查看其他信息：
 
 ```
 docker ps
@@ -332,16 +325,18 @@ docker ps
 
 ```
 CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
-f022bdc00b5a   nginx     &quot;/docker-entrypoint.…&quot;   2 minutes ago   Up 2 minutes   80/tcp    mynginx
+f022bdc00b5a   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   80/tcp    mynginx
 ```
 
-（3）查看进程命名空间。
+#### （3）查看进程命名空间。
 
 ```
-sudo lsns -p &lt;pid&gt; --output-all
+sudo lsns -p <pid> --output-all
 ```
 
 示例：
+
+
 
 ```
 $ sudo lsns -p 7583 --output-all 
@@ -353,10 +348,9 @@ $ sudo lsns -p 7583 --output-all
 4026532643 ipc    /proc/7583/ns/ipc      3  7583  7553 nginx: master process nginx -g daemon off;    0 root         
 4026532644 pid    /proc/7583/ns/pid      3  7583  7553 nginx: master process nginx -g daemon off;    0 root         
 4026532646 net    /proc/7583/ns/net      3  7583  7553 nginx: master process nginx -g daemon off;    0 root       0 /run/docker/netns/e06fb2b7b9df
-
 ```
 
-nginx容器默认使用了mnt、uts、ipc、pid、net 命名空间隔离，而user与cgroup则继承系统默认命名空间。网络命名空间指定了文件系统挂载点。
+`nginx`容器默认使用了`mnt`、`uts`、`ipc`、`pid`、`net` 命名空间隔离，而`user`与`cgroup`则继承系统默认命名空间。网络命名空间指定了文件系统挂载点。
 
 查看系统所有的命名空间：
 
@@ -386,14 +380,13 @@ $ sudo lsns
 4026532749 mnt         1   960 root             /usr/sbin/ModemManager
 4026532750 mnt         1   870 root             /usr/sbin/irqbalance --foreground
 4026532751 mnt         1   879 root             /lib/systemd/systemd-logind
-
 ```
 
-发现会多出nginx容器的命名空间。
+发现会多出`nginx`容器的命名空间。
 
 ### 2.2.2、修改容器命名空间
 
-（1）-uts参数指定修改容器的uts用户命名空间。
+（1）`-uts`参数指定修改容器的`uts`用户命名空间。
 
 ```
 # 修改uts的命名空间使用主机的命名空间
@@ -408,13 +401,12 @@ UID                 PID                 PPID                C                   
 root                8454                8427                0                   14:24               ?                   00:00:00            nginx: master process nginx -g daemon off;
 systemd+            8511                8454                0                   14:24               ?                   00:00:00            nginx: worker process
 systemd+            8512                8454                0                   14:24               ?                   00:00:00            nginx: worker process
-
 ```
 
 （3）查看进程命名空间。
 
 ```
-sudo lsns -p &lt;pid&gt; --output-all
+sudo lsns -p <pid> --output-all
 ```
 
 示例：
@@ -429,14 +421,9 @@ $ sudo lsns -p 8454 --output-all
 4026532704 ipc    /proc/8454/ns/ipc      3  8454  8427 nginx: master process nginx -g daemon off;    0 root         
 4026532705 pid    /proc/8454/ns/pid      3  8454  8427 nginx: master process nginx -g daemon off;    0 root         
 4026532707 net    /proc/8454/ns/net      3  8454  8427 nginx: master process nginx -g daemon off;    0 root       1 /run/docker/netns/0722fcb79ac8
-
 ```
 
-（4）查看系统的所有命名空间，可以明显的对比开启的两个nginx容器的命名空间差异。
-
-```
-sudo lsns
-```
+（4）查看系统的所有命名空间，可以明显的对比开启的两个`nginx`容器的命名空间差异。
 
 ```
 $ sudo lsns
@@ -468,45 +455,46 @@ $ sudo lsns
 4026532749 mnt         1   960 root             /usr/sbin/ModemManager
 4026532750 mnt         1   870 root             /usr/sbin/irqbalance --foreground
 4026532751 mnt         1   879 root             /lib/systemd/systemd-logind
-
 ```
 
-### 2.2.3、容器进程命名空间的具体体现
+### 2.2.3、容器进程命名空间的具体体現
 
-（1）开启docker user命名空间配置，/etc/docker/daemon.json 文件添加以下选项：
+（1）开启`docker` `user`命名空间配置，`/etc/docker/daemon.json` 文件添加以下选项：
 
 ```
 # 默认生成
-&quot;userns-remap&quot;:&quot;default&quot;
+"userns-remap": "default"
 # 或
 # 指定已存在用户和组
-&quot;userns-remap&quot;:&quot;user:group&quot;
+"userns-remap": "user:group"
 ```
 
 示例：
 
 ```
 {
-        &quot;userns-remap&quot;:&quot;default&quot;,
-        &quot;registry-mirrors&quot;:[
-                &quot;https://hub-mirror.c.163.com&quot;,
-                &quot;https://docker.mirrors.ustc.edu.cn&quot;,
-                &quot;https://registry.docker-cn.com&quot;
+        "userns-remap": "default",
+        "registry-mirrors": [
+                "https://hub-mirror.c.163.com",
+                "https://docker.mirrors.ustc.edu.cn",
+                "https://registry.docker-cn.com"
         ]
 }
-
 ```
 
-daemon.json是docker的配置文件，一般是没有的，如果没有就自己创建并添加内容，如果有就直接修改相关内容。镜像源就是在这个文件下配置。
 
-（2）重启docker服务。
+
+# Docker 配置与命名空间详解
+
+`daemon.json` 是 Docker 的配置文件，一般是没有的，如果没有就自己创建并添加内容，如果有就直接修改相关内容。镜像源就是在这个文件下配置。
+
+## （2）重启 Docker 服务
 
 ```
 sudo systemctl restart docker.service
-
 ```
 
-重启前的docker info：
+### 重启前的 `docker info`
 
 ```
 $ docker info 
@@ -562,10 +550,9 @@ Server:
  Live Restore Enabled: false
 
 WARNING: No swap limit support
-
 ```
 
-重启后的docker onfo：
+### 重启后的 `docker onfo`
 
 ```
 $ docker info 
@@ -626,12 +613,11 @@ Server:
  Live Restore Enabled: false
 
 WARNING: No swap limit support
-
 ```
 
-可以明显的看到Docker Root Dir发生了改变；165536.165536就是某个用户的从属ID。
+可以明显的看到 `Docker Root Dir` 发生了改变；`165536.165536` 就是某个用户的从属ID。
 
-（3）宿主机上查看docker容器默认生成的用户配置。
+## （3）宿主机上查看 Docker 容器默认生成的用户配置
 
 ```
 # 用户ID
@@ -640,27 +626,27 @@ cat /etc/subuid
 cat /etc/subgid
 ```
 
-cat /etc/subuid显示：
+`cat /etc/subuid` 显示：
 
 ```
 fly:100000:65536
 dockremap:165536:65536
 ```
 
-fly的用户ID从100000开始，有65536个；dockremap的用户ID从165536开始，有65536个。
+`fly` 的用户ID从 `100000` 开始，有 `65536` 个；`dockremap` 的用户ID从 `165536` 开始，有 `65536` 个。
 
-cat /etc/subuid显示：
+`cat /etc/subuid` 显示：
 
 ```
 fly:100000:65536
 dockremap:165536:65536
 ```
 
-/etc/subuid文件：dockremap:165536:65536 表示宿主机使用dockremap用户，容器使用其从属ID，范围从0 ~ 65536，与之对应的宿主机ID范围：165536 ~ 165536+65536
+`/etc/subuid` 文件：`dockremap:165536:65536` 表示宿主机使用 `dockremap` 用户，容器使用其从属ID，范围从 `0 ~ 65536`，与之对应的宿主机ID范围：`165536 ~ 165536+65536`
 
-/etc/subgid文件：针对用户组与/etc/subuid 类似。
+`/etc/subgid` 文件：针对用户组与 `/etc/subuid` 类似。
 
-（4）User命名空间：启动新的nginx容器，查看user命名空间。
+## （4）User 命名空间：启动新的 nginx 容器，查看 user 命名空间。
 
 ```
 # 启动一个容器
@@ -668,7 +654,7 @@ docker run -d --name mynginx nginx
 # 查询进程ID
 docker top mynginx
 # 查看进程命名空间，进程拥有独立的命名空间
-sudo lsns -p &lt;pid&gt; --output-all
+sudo lsns -p <pid> --output-all
 ```
 
 ```
@@ -691,15 +677,15 @@ fly@fly:~$ sudo lsns -p 10660 --output-all
 
 ```
 
-可以看到，用户不再是root了，而是165536。
+可以看到，用户不再是 `root` 了，而是 `165536`。
 
-也可以与容器交互,查看当前用户信息，显示为root：
+也可以与容器交互,查看当前用户信息，显示为 `root`：
 
 ```
 docker exec -it mynginx bash
 ```
 
-（5）运行容器，指定私有cgroupns,指定user。
+## （5）运行容器，指定私有 cgroupns，指定 user。
 
 ```
 docker run -d --cgroupns private --user root --name mynginx1 nginx
@@ -725,24 +711,27 @@ fly@fly:~$ sudo lsns -p 11373 --output-all
 4026532770 cgroup /proc/11373/ns/cgroup      3 11373 11344 nginx: master process nginx -g daemon off; 165536 165536     
 ```
 
-（6）UTS命名空间：启动新容器，设置hostname与domain。
+## （6）UTS 命名空间：启动新容器，设置 hostname 与 domain。
 
 ```
-# 运行容器，指定hostname与域名
+# 运行容器，指定 hostname 与域名
 docker run -d --domainname abc.nick.com --hostname abcdefg --userns host --name mynginx2 nginx
 # 与容器交互，进入交互模式
 docker exec -it mynginx2 bash
-# 访问hostname 与 domainname
+# 访问 hostname 与 domainname
 hostname
 domainname
-# 通过hostname与domainname访问应用
+# 通过 hostname 与 domainname 访问应用
 curl http://abcdefg
 curl http://abcdefg.abc.nick.com
-# 通过文件查看hostname与domainname
+# 通过文件查看 hostname 与 domainname
 cat /proc/sys/kernel/hostname
 cat /proc/sys/kernel/domainname
-
 ```
+
+
+
+## UTS 命名空间
 
 ```
 fly@fly:~$ docker run -d --domainname www.fly.com --hostname abc --userns host --name mynginx2 nginx
@@ -804,32 +793,35 @@ root@abc:/# cat /proc/sys/kernel/hostname
 abc
 root@abc:/# cat /proc/sys/kernel/domainname 
 www.fly.com
-root@abc:/# 
-
 ```
 
-（7）mount、PID、Network 命名空间：启动一个工具容器。
+## （7）mount、PID、Network 命名空间
+
+### 启动工具容器
 
 ```
 # 运行工具容器
 docker run -dit --name mycurl radial/busyboxplus:curl
 # 进入交互模式
 docker exec -it mycurl sh
-
 ```
 
-mount命名空间：容器内部执行mount 与宿主机内执行mount命令对比，即可看出各自拥有不同的mounts。mounts文件位于：/proc/mounts 和 /proc/{PID}/mounts。
+### mount 命名空间
 
-mounts文件列说明：
+容器内部执行 `mount` 与宿主机内执行 `mount` 命令对比，即可看出各自拥有不同的 `mounts`。`mounts` 文件位于 `/proc/mounts` 和 `/proc/{PID}/mounts`。
+
+`mounts` 文件列说明：
 
 | 标识 | 描述 |
 | --- | --- |
-| Device | mount的设备 |
+| Device | `mount` 的设备 |
 | Mount Point | 挂载点，也就是挂载的路径 |
-| File System Type | 文件系统类型，如ext4、xfs等 |
+| File System Type | 文件系统类型，如 `ext4`、`xfs` 等 |
 | Options | 挂载选项，包括读写权限等参数 |
 
-PID命名空间：容器内部进程ID为1，宿主机内进程ID不为1。
+### PID 命名空间
+
+容器内部进程 ID 为 1，宿主机内进程 ID 不为 1。
 
 ```
 [ root@cf6976e1333f:/ ]$ ps
@@ -837,40 +829,39 @@ PID   USER     COMMAND
     1 root     /bin/sh
     9 root     sh
    18 root     ps
-
 ```
 
 ```
-$ docker top mycurl 
+$ docker top mycurl
 UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
 165536              12361               12328               0                   15:38               pts/0               00:00:00            /bin/sh
-
 ```
 
-NetWork命名空间：通过ifconfig工具，查看网络信息。容器与宿主机网络完全是两个独立的网络栈。
+### Network 命名空间
+
+通过 `ifconfig` 工具，查看网络信息。容器与宿主机网络完全是两个独立的网络栈。
 
 ```
-[ root@cf6976e1333f:/ ]$ ifconfig 
-eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:05  
+[ root@cf6976e1333f:/ ]$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:05
           inet addr:172.17.0.5  Bcast:172.17.255.255  Mask:255.255.0.0
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
           RX packets:10 errors:0 dropped:0 overruns:0 frame:0
           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:0 
+          collisions:0 txqueuelen:0
           RX bytes:796 (796.0 B)  TX bytes:0 (0.0 B)
 
-lo        Link encap:Local Loopback  
+lo        Link encap:Local Loopback
           inet addr:127.0.0.1  Mask:255.0.0.0
           UP LOOPBACK RUNNING  MTU:65536  Metric:1
           RX packets:0 errors:0 dropped:0 overruns:0 frame:0
           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
+          collisions:0 txqueuelen:1000
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
-
 ```
 
 ```
-~$ ifconfig 
+~$ ifconfig
 docker0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
         inet6 fe80::42:f4ff:fe99:44a7  prefixlen 64  scopeid 0x20&lt;link&gt;
@@ -892,16 +883,15 @@ ens33: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
 lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
-        loop  txqueuelen 1000  (Local Loopback)
+        loop  txqueuelen:1000  (Local Loopback)
         RX packets 400  bytes 38020 (38.0 KB)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 400  bytes 38020 (38.0 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
 ```
 
 # 总结
 
-docker使用的隔离机制就是进程的隔离机制。
+`docker` 使用的隔离机制就是进程的隔离机制。
 
-docker不是虚拟机，他就是一个进程，容器隔离使用的就是进程命名隔离机制。
+`docker` 不是虚拟机，他就是一个进程，容器隔离使用的就是进程命名隔离机制。

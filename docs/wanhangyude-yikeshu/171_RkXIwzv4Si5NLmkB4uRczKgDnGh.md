@@ -1,10 +1,11 @@
+
 # AIDMA模型
 
 > 来源：[https://my.feishu.cn/docx/JvPHdZHxyo6XMcxyZlccBXQunbd](https://my.feishu.cn/docx/JvPHdZHxyo6XMcxyZlccBXQunbd)
 
 > 消费者从信息接触到最后达成购买，会经历注意 → 兴趣 → 欲望 → 记忆 → 行动5个阶段。
 
-## **详细说明**
+## 详细说明
 
 AIDMA是消费者行为学领域很成熟的理论模型之一，由美国广告学家ES.刘易斯在1898年提出。
 

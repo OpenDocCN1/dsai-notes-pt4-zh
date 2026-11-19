@@ -1,16 +1,13 @@
+
 # TensorFlow 分布式训练
 
 > 来源：[https://v11enp9ok1h.feishu.cn/docx/SA6Ydps0Xo7fnHx6jhBcaVVgnFh](https://v11enp9ok1h.feishu.cn/docx/SA6Ydps0Xo7fnHx6jhBcaVVgnFh)
 
 TensorFlow 分布式训练是指利用多台机器或多个计算设备（如 GPU/TPU）协同工作，共同完成模型训练任务的技术。通过分布式训练，我们可以：
 
-1.  加速模型训练过程
-
-1.  处理超大规模数据集
-
-1.  训练参数庞大的复杂模型
-
----
+1. 加速模型训练过程
+1. 处理超大规模数据集
+1. 训练参数庞大的复杂模型
 
 ## 核心概念
 
@@ -18,7 +15,7 @@ TensorFlow 分布式训练是指利用多台机器或多个计算设备（如 GP
 
 TensorFlow 提供了多种分布式策略：
 
-## 实例
+### 实例
 
 ```
 # 常用分布式策略
@@ -32,15 +29,14 @@ strategy = tf.distribute.ParameterServerStrategy()  # 参数服务器架构
 
 ### 同步更新 vs 异步更新
 
-+   **同步更新**：所有设备完成计算后统一更新模型
-
-+   **异步更新**：设备独立计算并更新，无需等待
+- 同步更新：所有设备完成计算后统一更新模型
+- 异步更新：设备独立计算并更新，无需等待
 
 ## 实现步骤
 
 ### 设置分布式环境
 
-## 实例
+### 实例
 
 ```
 import tensorflow as tf
@@ -49,31 +45,31 @@ import tensorflow as tf
 strategy = tf.distribute.MirroredStrategy()
 
 # 查看可用设备数量
-print(f&quot;Number of devices: {strategy.num_replicas_in_sync}&quot;)
+print(f"Number of devices: {strategy.num_replicas_in_sync}")
 ```
 
 ### 在策略范围内构建模型
 
-## 实例
+### 实例
 
 ```
 with strategy.scope():
     # 在此范围内定义的所有变量将被镜像到所有设备
     model = tf.keras.Sequential([
-        tf.keras.layers.Dense(128, activation=&#x27;relu&#x27;),
+        tf.keras.layers.Dense(128, activation='relu'),
         tf.keras.layers.Dense(10)
     ])
     
     model.compile(
-        optimizer=&#x27;adam&#x27;,
+        optimizer='adam',
         loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-        metrics=[&#x27;accuracy&#x27;]
+        metrics=['accuracy']
     )
 ```
 
 ### 准备分布式数据集
 
-## 实例
+### 实例
 
 ```
 # 加载数据集
@@ -86,7 +82,7 @@ dataset = dataset.shuffle(buffer_size=10000).batch(batch_size)
 
 ### 训练模型
 
-## 实例
+### 实例
 
 ```
 # 常规训练方式
@@ -97,24 +93,24 @@ model.fit(dataset, epochs=10)
 
 ### 多机配置
 
-## 实例
+### 实例
 
 ```
 # 在每个worker节点上设置TF_CONFIG环境变量
 import json
 import os
 
-os.environ[&#x27;TF_CONFIG&#x27;] = json.dumps({
-    &#x27;cluster&#x27;: {
-        &#x27;worker&#x27;: [&quot;worker1.example.com:12345&quot;, &quot;worker2.example.com:23456&quot;]
+os.environ['TF_CONFIG'] = json.dumps({
+    'cluster': {
+        'worker': ["worker1.example.com:12345", "worker2.example.com:23456"]
     },
-    &#x27;task&#x27;: {&#x27;type&#x27;: &#x27;worker&#x27;, &#x27;index&#x27;: 0}  # 每个worker的index不同
+    'task': {'type': 'worker', 'index': 0}  # 每个worker的index不同
 })
 ```
 
 ### 自定义训练循环
 
-## 实例
+### 实例
 
 ```
 @tf.function
@@ -138,19 +134,16 @@ def distributed_train_step(dataset_inputs):
 
 ## 性能优化技巧
 
-1.  **批次大小调整**：总批次大小 = 单设备批次大小 × 设备数量
+1. **批次大小调整**：总批次大小 = 单设备批次大小 × 设备数量
+1. **数据预处理**：使用`dataset.prefetch()`和`dataset.cache()`提高数据加载效率
+1. **梯度压缩**：对于跨设备通信，考虑使用梯度压缩减少带宽需求
+1. **混合精度训练**：结合`tf.keras.mixed_precision`提高训练速度
 
-1.  **数据预处理**：使用 dataset.prefetch() 和 dataset.cache() 提高数据加载效率
-
-1.  **梯度压缩**：对于跨设备通信，考虑使用梯度压缩减少带宽需求
-
-1.  **混合精度训练**：结合 tf.keras.mixed_precision 提高训练速度
-
-## 实例
+### 实例
 
 ```
 # 混合精度示例
-policy = tf.keras.mixed_precision.Policy(&#x27;mixed_float16&#x27;)
+policy = tf.keras.mixed_precision.Policy('mixed_float16')
 tf.keras.mixed_precision.set_global_policy(policy)
 ```
 
@@ -158,48 +151,41 @@ tf.keras.mixed_precision.set_global_policy(policy)
 
 ### 内存不足
 
-+   减小单设备批次大小
+- 减小单设备批次大小
+- 使用梯度累积技术
+- 启用内存增长选项
 
-+   使用梯度累积技术
-
-+   启用内存增长选项
-
-## 实例
+### 实例
 
 ```
-gpus = tf.config.experimental.list_physical_devices(&#x27;GPU&#x27;)
+gpus = tf.config.experimental.list_physical_devices('GPU')
 for gpu in gpus:
     tf.config.experimental.set_memory_growth(gpu, True)
 ```
 
 ### 设备间通信瓶颈
 
-+   使用 NCCL 作为跨设备通信实现
+- 使用`NCCL`作为跨设备通信实现
+- 考虑减少同步频率（适当增加更新步长）
 
-+   考虑减少同步频率（适当增加更新步长）
-
-## 实例
+### 实例
 
 ```
 # 配置通信实现
-os.environ[&#x27;TF_GPU_ALLOCATOR&#x27;] = &#x27;cuda_malloc_async&#x27;
-os.environ[&#x27;TF_FORCE_GPU_ALLOW_GROWTH&#x27;] = &#x27;true&#x27;
+os.environ['TF_GPU_ALLOCATOR'] = 'cuda_malloc_async'
+os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 ```
 
 ## 实践练习
 
 ### 练习1：单机多卡训练
 
-1.  准备一个简单的CNN模型
-
-1.  使用 MirroredStrategy 在本地多GPU上训练CIFAR-10数据集
-
-1.  比较单GPU和多GPU的训练速度差异
+1. 准备一个简单的CNN模型
+1. 使用`MirroredStrategy`在本地多GPU上训练`CIFAR-10`数据集
+1. 比较单GPU和多GPU的训练速度差异
 
 ### 练习2：多机配置模拟
 
-1.  使用 MultiWorkerMirroredStrategy
-
-1.  在同一台机器上模拟多worker环境（通过不同端口）
-
-1.  观察日志了解worker间的协调过程
+1. 使用`MultiWorkerMirroredStrategy`
+1. 在同一台机器上模拟多`worker`环境（通过不同端口）
+1. 观察日志了解`worker`间的协调过程

@@ -1,18 +1,14 @@
+
 # 访谈记录信息提取
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Zp5sdxeiuoIWRjxC2w1cXSFLnsg](https://vxc3hj17dym.feishu.cn/docx/Zp5sdxeiuoIWRjxC2w1cXSFLnsg)
 
->
-
 > Prompt 信息：
-
+>
 > - Prompt Author: 三亿
-
 > - Version: 1.0
-
 > - Language: 中文
-
-> - LLM: Gemini 2.5 Flash / Gemini 2.5 Pro
+> - LLM: `Gemini 2.5 Flash` / `Gemini 2.5 Pro`
 
 ```
 基于用户输入访谈文本按以下工作流处理和输出
@@ -39,10 +35,9 @@
    - 证据汇编：汇总数据、事例（基于据钥）。
 
 输出要求：
-1.品质准绳：
+1. 品质准绳：
    - 重脱胎换骨之悟，非止皮相之全。
    - 质之极者，当效洪钟撞心
    - 质之次者，徒作秋蝉噪耳
-2.逻辑连贯，保持信息链传递完整性。
-
+2. 逻辑连贯，保持信息链传递完整性。
 ```

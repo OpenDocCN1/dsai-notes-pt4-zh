@@ -1,10 +1,11 @@
+
 # 在网页上快捷使用豆包AI功能
 
-> 来源：[https://vcn0zlxse9ua.feishu.cn/docx/DLYadxjzZoV9aJxg7sCcvozmnud](https://vcn0zlxse9ua.feishu.cn/docx/DLYadxjzZoV9aJxg7sCcvozmnud)
+> 来源：[`https://vcn0zlxse9ua.feishu.cn/docx/DLYadxjzZoV9aJxg7sCcvozmnud`](https://vcn0zlxse9ua.feishu.cn/docx/DLYadxjzZoV9aJxg7sCcvozmnud)
 
 ## 插件地址
 
-https://www.doubao.com/browser-extension/landing?from=ext&extId=dbjibobgilijgolhjdcbdebjhejelffo
+`https://www.doubao.com/browser-extension/landing?from=ext&extId=dbjibobgilijgolhjdcbdebjhejelffo`
 
 ![](img/ba05b4730fd4c72fd66df38eb268cc05.png)
 

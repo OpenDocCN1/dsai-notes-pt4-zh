@@ -1,3 +1,4 @@
+
 # 生成提示词，用于生成图片
 
 > 来源：[https://qianniucity.feishu.cn/docx/HVh8dpN7tof0OJxrzDScsKDjnWg](https://qianniucity.feishu.cn/docx/HVh8dpN7tof0OJxrzDScsKDjnWg)
@@ -6,7 +7,7 @@
 
 ## 生成图片描述 Prompt
 
-> <ref></ref> 中包含描述的内容
+>  nxj 包含描述的内容
 
 ```
 &lt;ref&gt;这是一个基于 Model Context Protocol (MCP) 的12306购票搜索服务器，提供了简单的API接口，允许大模型利用接口搜索12306火车票信息。&lt;/ref&gt; 我要基于这个内容生成一个图片，在做图片之前请帮我生成一个制作图片的 Prompt
@@ -19,6 +20,5 @@
 ```
 
 ![](img/e237b530cf43d06f2a0a8028764c10e0.png)
-
 
 ![](img/3bf0bd2cf20aadea6e9cb5014bd7cbb5.png)

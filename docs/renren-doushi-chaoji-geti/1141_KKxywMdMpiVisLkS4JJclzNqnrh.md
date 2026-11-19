@@ -1,8 +1,9 @@
+
 # 一键查询：个人全国献血记录~~~🛰️小程序【全国电子献血证】
 
 > 来源：[https://xuqiwei1986.feishu.cn/docx/W5VIdeVx9oOocbxa5Sic9l5snSc](https://xuqiwei1986.feishu.cn/docx/W5VIdeVx9oOocbxa5Sic9l5snSc)
 
-> 🔗 原文链接： h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzkzNDcyMDk1Ng==&mid=2247484270&idx=6&sn=0ca09add9580b24cef4d5c21ebc864bb&chksm=c2b9a7bdf5ce2eabef4e15543ee3075321b0e214e140172902b2f7fa6469a3580c47f6fec7bf&token=1495640073&lang=zh_CN#rd)q.com/s?__biz=Mz...
+> 🔗 原文链接：h[ttps://mp.weixin.q](https://mp.weixin.qq.com/s?__biz=MzkzNDcyMDk1Ng==&mid=2247484270&idx=6&sn=0ca09add9580b24cef4d5c21ebc864bb&chksm=c2b9a7bdf5ce2eabef4e15543ee3075321b0e214e140172902b2f7fa6469a3580c47f6fec7bf&token=1495640073&lang=zh_CN#rd)q.com/s?__biz=Mz...
 
 参与过无偿献血的爱心人士看过来！
 

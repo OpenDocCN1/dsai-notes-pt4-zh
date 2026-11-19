@@ -1,24 +1,19 @@
-# 项目1-竞品分析报告生成器
-
-> 来源：[https://kq4b3vgg5b.feishu.cn/docx/KVKZdV3LwoEdzzxD5zjc19pdnVg](https://kq4b3vgg5b.feishu.cn/docx/KVKZdV3LwoEdzzxD5zjc19pdnVg)
 
 # 项目 1：Agent Teams 竞品分析报告生成器
+
+> 来源：[https://kq4b3vgg5b.feishu.cn/docx/KVKZdV3LwoEdzzxD5zjc19pdnVg](https://kq4b3vgg5b.feishu.cn/docx/KVKZdV3LwoEdzzxD5zjc19pdnVg)
 
 > 输入一个行业关键词，30 分钟产出一份结构化竞品分析报告。
 
 > 需要：Claude Code Pro/Max 版 + Agent Teams 已开启
-
----
 
 ## Step 1：创建项目目录
 
 在终端执行：
 
 ```
-mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-research
+mkdir -p agent-teams-research/.claude/agents docs && cd agent-teams-research
 ```
-
----
 
 ## Step 2：创建项目规则
 
@@ -35,7 +30,7 @@ mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-rese
 ## 工作规则
 1. 所有调研必须基于真实的网络搜索结果，不得虚构数据
 2. 每个结论必须标注信息来源（URL 或平台名称）
-3. 数据优先：有数据用数据说话，没数据要明确标注&quot;暂无公开数据&quot;
+3. 数据优先：有数据用数据说话，没数据要明确标注"暂无公开数据"
 4. 输出格式统一使用 Markdown，方便后续编辑和分享
 
 ## 输出目录
@@ -49,8 +44,6 @@ mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-rese
 - 每个 Teammate 有独立的输出文件，不互相覆盖
 - 所有 Teammate 完成后，Lead 才进行汇总
 ```
-
----
 
 ## Step 3：创建 Teammate 1 — 市场调研员
 
@@ -86,8 +79,6 @@ mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-rese
 
 每个章节必须有数据支撑或来源引用。
 ```
-
----
 
 ## Step 4：创建 Teammate 2 — 竞品分析师
 
@@ -130,8 +121,6 @@ mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-rese
 每个结论必须标注信息来源。
 ```
 
----
-
 ## Step 5：启动 Agent Teams 调研
 
 > 把【AI 编程工具】替换成你想调研的行业。
@@ -151,26 +140,22 @@ mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-rese
 - 启动 market-researcher：负责市场调研，输出到 docs/market-research.md
 - 启动 competitor-analyst：负责竞品分析，输出到 docs/competitor-analysis.md
 
-**调研范围提示**：
+调研范围提示：
 - 市场调研重点关注：全球和中国市场的采用率、用户偏好、市场规模预测
 - 竞品重点关注：该赛道的头部 5-8 个产品
 
 请先给我看你的调研计划，等我确认后再开始执行。
 ```
 
----
-
 ## Step 6：审批计划
 
-看完 Lead 的计划后：
+看完 `Lead` 的计划后：
 
 ```
 计划通过，开始执行。
 ```
 
-> 等待 15-20 分钟，两个 Teammate 并行调研，Lead 自动汇总。
-
----
+> 等待 15-20 分钟，两个 `Teammate` 并行调研，`Lead` 自动汇总。
 
 ## Step 7：追加 SWOT 分析
 
@@ -178,22 +163,18 @@ mkdir -p agent-teams-research/.claude/agents docs &amp;&amp; cd agent-teams-rese
 基于调研结果，帮我补充一个 SWOT 分析 — 如果我要进入这个赛道，优势、劣势、机会和威胁分别是什么？追加到 docs/final-report.md 末尾。
 ```
 
----
-
 ## Step 8：生成一页纸摘要
 
 ```
-基于 docs/final-report.md，帮我生成一份&quot;一页纸摘要&quot;，写入 docs/executive-summary.md。格式要求：
+基于 docs/final-report.md，帮我生成一份"一页纸摘要"，写入 docs/executive-summary.md。格式要求：
 - 不超过 500 字
 - 包含：赛道判断（一句话）、市场规模、TOP 3 竞品、最大机会点、最大风险
 - 适合转发给老板/合伙人快速了解
 ```
 
----
-
 ## 完成！
 
-你的 docs/ 目录里现在有：
+你的 `docs/` 目录里现在有：
 
 ```
 docs/

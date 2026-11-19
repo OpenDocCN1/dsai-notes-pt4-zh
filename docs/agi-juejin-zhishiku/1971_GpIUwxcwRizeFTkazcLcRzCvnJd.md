@@ -1,8 +1,7 @@
-# 06.05-Hugging Face 称其开源机器人模型 SmolVLA 效率极高，能在苹果 MacBook 上运行
-
-> 来源：[https://agijuejin.feishu.cn/docx/🐧9zdOOhPof0WaxnUa9cBIWgnwc](https://agijuejin.feishu.cn/docx/🐧9zdOOhPof0WaxnUa9cBIWgnwc)
 
 # AGI 掘金日报 - AI 新闻推送 (2025 年 06 月 05 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/🐧9zdOOhPof0WaxnUa9cBIWgnwc](https://agijuejin.feishu.cn/docx/🐧9zdOOhPof0WaxnUa9cBIWgnwc)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
@@ -50,7 +49,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/858/292.htm)
 
 ![](img/8db3f5c30a1e7c65d3d6bbbf2b8b796b.png)
 
-Ubiquant团队研究表明，无监督的「单样本熵最小化」（One-shot EM）方法，仅需一条未标注数据和约10步优化，就能提升大模型推理性能，超越强化学习（RL）。实验显示，该方法使Qwen2.5-Math-7B在多个测试集上准确率大幅提升。EM通过优化模型预测分布增强其置信度，与RL对模型Logits分布影响相反。不过，EM存在过度自信、训练不稳定等问题，适合特定场景，未来研究方向广阔 。
+Ubiquant团队研究表明，无监督的「单样本熵最小化」（One-shot EM）方法，仅需一条未标注数据和约10步优化，就能提升大模型推理性能，超越强化学习（RL）。实验显示，该方法使Qwen2.5-Math-7B在多个测试集上准确率大幅提升。EM通过优化模型预测分布增强其置信度，与RL对模型`Logits`分布影响相反。不过，EM存在过度自信、训练不稳定等问题，适合特定场景，未来研究方向广阔 。
 
 ### 💡 昇腾+鲲鹏联手上大招！华为爆改MoE训练，吞吐再飙升20%，内存省70%
 
@@ -58,7 +57,7 @@ Ubiquant团队研究表明，无监督的「单样本熵最小化」（One-shot 
 
 ![](img/f1b46b6da67d155c2fc838b3f1df97e8.png)
 
-华为在MoE训练系统方面有新突破。针对单节点训练效率提升的挑战，通过昇腾与鲲鹏算力协同给出解决方案。三大核心算子优化使训练吞吐量提升15%，其中FlashAttention前/反向性能分别提升50%/30%等。昇腾鲲鹏协同再加速，算子下发几乎「零」等待，训练吞吐量再提4%，Selective R/S技术节省超70%激活值内存，为MoE训练提供高效方案 。
+华为在MoE训练系统方面有新突破。针对单节点训练效率提升的挑战，通过昇腾与鲲鹏算力协同给出解决方案。三大核心算子优化使训练吞吐量提升15%，其中`FlashAttention`前/反向性能分别提升50%/30%等。昇腾鲲鹏协同再加速，算子下发几乎「零」等待，训练吞吐量再提4%，Selective R/S技术节省超70%激活值内存，为MoE训练提供高效方案 。
 
 ### 💡 《堡垒之夜》引入生成式 AI 工具，仅需 20 行文本就能定制智能 NPC
 
@@ -197,5 +196,7 @@ IT之家 | [阅读原文](https://www.ithome.com/0/858/210.htm)
 IT之家 | [阅读原文](https://www.ithome.com/0/858/261.htm)
 
 ![](img/223ae2feb236cfd8792e7443f1dee65e.png)
+
+
 
 6月4日《商业内幕》报道，OpenAI CEO奥尔特曼在Snowflake Summit 2025上称，生成式AI已似“职场新人”，明年在有限场景中智能体或助人类发现新知识、解决复杂商业难题。Shopify、多邻国已在人员管理上应用AI。今年2月OpenAI推出GPT - 4.5，仅向Pro订阅用户开放，受GPU资源限制。此外还发布智能体Codex，OpenAI工程团队已开始使用，能完成多种实际操作。

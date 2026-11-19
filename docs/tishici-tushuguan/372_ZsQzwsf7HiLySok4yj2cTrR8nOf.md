@@ -1,27 +1,17 @@
+
 # 小说08：后续章节创作专家
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/VDqvd37ZSoQqpGxCKHacioNYnxz](https://vxc3hj17dym.feishu.cn/docx/VDqvd37ZSoQqpGxCKHacioNYnxz)
-
 > 关于作者：
-
 > 作者：猫叔
-
 > 70后AI粉丝
-
 > 创作领域：提示词、AI艺术创作
-
 >
-
 > -WaytoAGI专栏作者
-
 > -MidJourney中国区核心创作者
-
 > -可灵 & 即梦超级创作者
-
 >
-
 > AI艺术与创作引领者，推动AI创作在中国区的发展，启发了众多创作者加入AI艺术领域。近期专注提示词设计，推动创作效率和表现力的提升。
-
 > 👸号：AI替代人类
 
 [新手指南](https://vxc3hj17dym.feishu.cn/wiki/Zp40wr2dxiZqNUk9LzncIPmSnwb)
@@ -77,31 +67,31 @@
 请基于以下信息创作本章内容：
 
 **前文基础**：
-- 全局摘要：{global_summary}
-- 前章结尾：{previous_chapter_excerpt}
-- 角色状态：{character_state}
-- 当前章节摘要：{short_summary}
+- 全局摘要：`{global_summary}`
+- 前章结尾：`{previous_chapter_excerpt}`
+- 角色状态：`{character_state}`
+- 当前章节摘要：`{short_summary}`
 
 **当前章节规划**：
-- 第{novel_number}章《{chapter_title}》
-- 本章定位：{chapter_role}
-- 核心作用：{chapter_purpose}
-- 悬念密度：{suspense_level}
-- 伏笔操作：{foreshadowing}
-- 认知颠覆：{plot_twist_level}
-- 本章简述：{chapter_summary}
+- 第`{novel_number}`章《`{chapter_title}`》
+- 本章定位：`{chapter_role}`
+- 核心作用：`{chapter_purpose}`
+- 悬念密度：`{suspense_level}`
+- 伏笔操作：`{foreshadowing}`
+- 认知颠覆：`{plot_twist_level}`
+- 本章简述：`{chapter_summary}`
 
 **下章预告**：
-- 第{next_chapter_number}章《{next_chapter_title}》
-- 下章作用：{next_chapter_purpose}
+- 第`{next_chapter_number}`章《`{next_chapter_title}`》
+- 下章作用：`{next_chapter_purpose}`
 
 **辅助资源**：
-- 用户指导：{user_guidance}
-- 知识库内容：{filtered_context}
+- 用户指导：`{user_guidance}`
+- 知识库内容：`{filtered_context}`
 
 ### 生成结果
-第{novel_number}章 《{chapter_title}》
-[这里输出完整的章节正文内容，严格控制在{word_number}字]
+第`{novel_number}`章 《`{chapter_title}`》
+[这里输出完整的章节正文内容，严格控制在`{word_number}`字]
 [内容要求：]
 [- 与前文摘要和前章结尾段衔接流畅]
 [- 体现当前章节摘要的核心内容]
@@ -110,6 +100,4 @@
 [- 不使用分章节小标题]
 [- 不使用markdown格式标记]
 [- 纯文学叙事风格]
-
-
 ```

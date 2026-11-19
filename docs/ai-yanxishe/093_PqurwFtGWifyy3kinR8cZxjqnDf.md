@@ -1,8 +1,9 @@
+
 # Sora 内测账号申请
 
 > 来源：[https://aiyanxishe.feishu.cn/docx/PHizdMzmjoBBiJxmK5AciuRDnWd](https://aiyanxishe.feishu.cn/docx/PHizdMzmjoBBiJxmK5AciuRDnWd)
 
-> Sora大模型就像是那颗最亮的星，不仅带火了技术圈，还改变了好多行业。我们这个资料库，就[是想把全网关于S](https://xiaobot.net/p/AIGC2024?refer=fd9ed25f-2954-4de4-9e99-88e1999bf395)ora[ 核心会员群](https://zl49so8lbq.feishu.cn/wiki/WB2awt7lli6actkm7rtc3ejInmd?from=from_copylink)智慧都聚在一起，让大家能更好地搞懂它、用好它，欢迎你阅读Sora掘金手册，加入
+> Sora大模型就像是那颗最亮的星，不仅带火了技术圈，还改变了好多行业。我们这个资料库，就[想把全网关于S](https://xiaobot.net/p/AIGC2024?refer=fd9ed25f-2954-4de4-9e99-88e1999bf395)ora[ 核心会员群](https://zl49so8lbq.feishu.cn/wiki/WB2awt7lli6actkm7rtc3ejInmd?from=from_copylink)智慧都聚在一起，让大家能更好地搞懂它、用好它，欢迎你阅读Sora掘金手册，加入
 
 ![](img/a6204565efdfe99259313752cf542efc.png)
 
@@ -16,7 +17,7 @@
 
 中文：OpenAI 红队网络
 
-## **What is the OpenAI **Red Teaming Network?
+## What is the OpenAI Red Teaming Network?
 
 The term red teaming has been used to encompass a broad range of risk assessment methods for AI systems, including qualitative capability discovery, stress testing of mitigations, automated red teaming using language models, providing feedback on the scale of risk for a particular vulnerability, etc. In order to reduce confusion associated with the term “red team”, help those reading about our methods to better contextualize and understand them, and especially to avoid false assurances, we are working to adopt clearer terminology, as advised in Khlaaf, 2023, however, for simplicity and in order to use language consistent with that we used with our collaborators, we use the term “red team”.
 
@@ -30,7 +31,7 @@ Outside of red teaming campaigns commissioned by OpenAI, members will have the o
 
 ## 什么是 OpenAI 红队网络？
 
-**红队**一词已被用来涵盖人工智能系统的广泛风险评估方法，包括定性能力发现、缓解措施的压力测试、使用语言模型的自动化红队、提供特定漏洞风险规模的反馈等为了减少与“红队”一词相关的混淆，帮助那些阅读我们的方法的人更好地结合上下文并理解它们，特别是为了避免错误的保证，我们正在努力采用更清晰的术语，正如 Khlaaf, 2023 中建议的那样，然而，为了简单起见，并且为了使用与我们与合作者使用的语言一致的语言，我们使用术语“红队”。
+**红队**一词已被用来涵盖人工智能系统的广泛风险评估方法，包括定性能力发现、缓解措施的压力测试、使用语言模型的自动化红队、提供特定漏洞风险规模的反馈等。为了减少与“红队”一词相关的混淆，帮助那些阅读我们的方法的人更好地结合上下文并理解它们，特别是为了避免错误的保证，我们正在努力采用更清晰的术语，正如 Khlaaf, 2023 中建议的那样，然而，为了简单起见，并且为了使用与我们与合作者使用的语言一致的语言，我们使用术语“红队”。
 
 **红队**是我们迭代部署过程中不可或缺的一部分。在过去的几年里，我们的红队工作已经从专注于 OpenAI 的内部对抗性测试发展到与一群外部专家合作帮助开发特定领域的风险分类法并评估新系统中可能有害的功能。您可以详细了解我们之前的红队工作，包括我们过去与外部专家在 DALL·E 2 和 GPT-4 等模型上的合作。
 
@@ -40,9 +41,7 @@ OpenAI 红队网络是一个由值得信赖且经验丰富的专家组成的社�
 
 除了 OpenAI 委托的红队活动之外，成员还将有机会就一般红队实践和调查结果进行相互交流。目标是实现更加多样化和持续的输入，并使红队成为一个更加迭代的过程。该网络补充了其他协作人工智能安全机会，包括我们的研究人员访问计划和开源评估。
 
-##
-
-## **Why join the OpenAI **Red Teaming Network?
+## Why join the OpenAI Red Teaming Network?
 
 This network offers a unique opportunity to shape the development of safer AI technologies and policies, and the impact AI can have on the way we live, work, and interact. By becoming a part of this network, you will be a part of our bench of subject matter experts who can be called upon to assess our models and systems at multiple stages of their deployment.
 
@@ -54,7 +53,7 @@ This network offers a unique opportunity to shape the development of safer AI te
 
 Assessing AI systems requires an understanding of a wide variety of domains, diverse perspectives and lived experiences. We invite applications from experts from around the world and are prioritizing geographic as well as domain diversity in our selection process.
 
-## **寻求多元化的专业知识**
+## 寻求多元化的专业知识
 
 评估人工智能系统需要了解广泛的领域、不同的观点和生活经验。我们邀请来自世界各地的专家提出申请，并在我们的选择过程中优先考虑地理和领域的多样性。
 
@@ -62,43 +61,41 @@ Assessing AI systems requires an understanding of a wide variety of domains, div
 
 All members of the OpenAI Red Teaming Network will be compensated for their contributions when they participate in a red teaming project. While membership in this network won’t restrict you from publishing your research or pursuing other opportunities, you should take into consideration that any involvement in red teaming and other projects are often subject to Non-Disclosure Agreements (NDAs) or remain confidential for an indefinite period.
 
-## **报酬和保密**
+## 报酬和保密
 
-OpenAI 红队网络的所有成员在参与红队项目时都将获得贡献补偿。虽然该网络的成员资格不会限制您发表研究成果或寻求其他机会，但您应该考虑到，参与红队和其他项目通常需要遵守保密协议 (NDA) 或无限期保密。时期。
+OpenAI 红队网络的所有成员在参与红队项目时都将获得贡献补偿。虽然该网络的成员资格不会限制您发表研究成果或寻求其他机会，但您应该考虑到，参与红队和其他项目通常需要遵守保密协议 (NDA) 或无限期保密时期。
 
-##
+## How to apply？
 
-## **How to apply****？**
+申请网址：`https://openai.com/form/red-teaming-network`
 
-申请网址：https://openai.com/form/red-teaming-network
+## 如何申请？
 
-## **如何申请****？**
-
-申请网址：https://openai.com/form/red-teaming-network
-
-##
+申请网址：`https://openai.com/form/red-teaming-network`
 
 ![](img/866544bffdaf74ef6f44de86a37154b2.png)
 
 ![](img/ef20cdf75785915367422454c470534b.png)
 
-### **申请网址：**[https://openai.com/form](https://openai.com/form/red-teaming-network)/red-teaming-network
+### 申请网址
 
-### **申请步骤：**
+`https://openai.com/form/red-teaming-network`
 
-#### **填写基础信息**
+### 申请步骤
 
-请使用英文根据内容填写以下内容，名、姓、电子邮件、居住国家、组织隶属关系(如果有)、教育水平 、学位（哪个领域的）
+#### 1、填写基础信息
+
+请使用英文根据内容填写以下内容：名、姓、电子邮件、居住国家、组织隶属关系（如果有）、教育水平、学位（哪个领域的）。
 
 ![](img/efee1118fb1d9117f2c58952a88a25f2.png)
 
 #### 2、您认为自己拥有哪方面的知识领域
 
-认知科学、化学、生物学、物理、计算机科学、政治学、心理学、经济学人类学社会学、人机交互公平/偏见结盟、教育、卫生保健、法律、儿童安全网络安全、金融、错误/虚假信息、政治用途、隐私生物识别技术、语言和语言学、其他、
+认知科学、化学、生物学、物理、计算机科学、政治学、心理学、经济学、人类学、社会学、人机交互、公平/偏见结盟、教育、卫生保健、法律、儿童安全、网络安全、金融、错误/虚假信息、政治用途、隐私、生物识别技术、语言和语言学、其他。
 
 ![](img/68bf86a3c11178787ea334fa7e025361.png)
 
-#### 3、您为什么有兴趣加入 OpenAl红队网络?*
+#### 3、您为什么有兴趣加入 OpenAl红队网络?\*
 
 ![](img/b9f2723b8bf85933e48029cef88bd87f.png)
 
@@ -128,4 +125,4 @@ OpenAI 红队网络的所有成员在参与红队项目时都将获得贡献补�
 
 按照要求填写，提交等待审核即可。
 
-<https://aiyanxishe.feishu.cn/sync/OU8SdIhzwsVXVabarE5c9iSKnRh>
+`https://aiyanxishe.feishu.cn/sync/OU8SdIhzwsVXVabarE5c9iSKnRh`

@@ -1,75 +1,69 @@
-# 结合CoT思维链的workflow应用拆解（基于Dify平台）
+
+# 结合CoT思维链的`workflow`应用拆解（基于`Dify`平台）
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/BFHGd52ZgojT9bxrU2vcBVPXntb](https://qqs7y1hozd1.feishu.cn/docx/BFHGd52ZgojT9bxrU2vcBVPXntb)
 
-> 0-1搭建workflow分步推理将问题拆分出相应的解题步骤，应用效果显著（相比LLM模型直接回复不经过though过程）。
+> 0-1搭建`workflow`分步推理将问题拆分出相应的解题步骤，应用效果显著（相比`LLM`模型直接回复不经过though过程）。
 
-### 应用效果图
+## 应用效果图
 
+## `workflow`拆解
 
-### workflow拆解
+### 开始
 
+#### 入参
 
-## 开始
+#### 任务拆解（`LLM`）
 
-### 入参
-
-### 任务拆解（LLM）
-
-
-### prompt
+#### `prompt`
 
 ```
 你是一个能够进行详细、逐步思考的AI助手。收到问题后，不要直接给出答案，而是通过分步推理将问题拆分出相应的解题步骤，只需给出步骤的名称和任务描述，不要自行解答，至少要保证有 3 个步骤。
 ```
 
-1.  任务提取（参数提取器）
+##### 任务提取（参数提取器）
 
-
-##### prompt
+###### `prompt`
 
 ```
 提取内容中的步骤数组，示例如下： 
 [ 
         { 
-                &quot;name&quot;: &quot;步骤名称&quot;, 
-                &quot;content&quot;: &quot;任务描述&quot; 
+                "name": "步骤名称", 
+                "content": "任务描述" 
         }, 
         {
-                &quot;name&quot;：&quot;步骤名称&quot;, 
-                &quot;content&quot;：&quot;任务描述&quot;
+                "name": "步骤名称", 
+                "content": "任务描述"
         }, 
         ... 
 ]
 ```
 
-1.  任务迭代（迭代）
+##### 任务迭代（迭代）
 
-
-#### 4.1 任务解析（代码执行）
-
+###### 4.1 任务解析（代码执行）
 
 ```
-def main(step) -&gt; dict:
+def main(step) -> dict:
     # 清洗得到只包含步骤名称和内容的字典
-    step_name = step[&#x27;name&#x27;]
-    step_content = step[&#x27;content&#x27;]
+    step_name = step['name']
+    step_content = step['content']
     return {
-        &#x27;name&#x27;: step_name,
-        &#x27;content&#x27;: step_content
+        'name': step_name,
+        'content': step_content
     }
 ```
 
-#### 4.2 任务执行（LLM）
+###### 4.2 任务执行（`LLM`）
 
-
-##### prompt
+##### `prompt`
 
 ```
 ## 问题
-&quot;&quot;&quot;{query}&quot;&quot;&quot;
- 
- 
+""" {query} """
+
+
 ## 任务背景
 这是工作流中的一个环节，前面的工作流流程会将问题拆分出 N 个步骤。
  
@@ -88,48 +82,51 @@ def main(step) -&gt; dict:
 - {name}：【步骤解答】
 ```
 
-1.  输出结果
-
+##### 输出结果
 
 ```
-{{ step_answer | join(&quot;\n&quot;)}}
+{{ step_answer | join("\n")}}
 ```
 
-1.  归纳答案
-
+##### 归纳答案
 
 ```
 ## 原问题
-&quot;&quot;&quot;
-&quot;&quot;&quot;
- 
+"""
+"""
+
  
 ## 任务
 检查原问题，并归纳以下分析（请注意可能会出错，发现错误请进行纠正），最后给出问题最终答案，答案言简意赅即可。
 ```
 
-1.  结束
+##### 结束
 
 ![](img/387521ec49e3bfba07e6e493e3848556.png)
 
 # 根据用户问题进行意图识别和反馈
 
-**1.构建workflow流程**：利用dify创建workflow应用，主要实现从用户输入问题到最终回复问题的反馈，将该任务进行步骤分解，主要包括用户问题输入接收、用户意图识别、用户问题分类、分类知识检索、结合知识库检索结果的问题回复、回复结果合并，回复结果规范化输出等。详见下图。
+### 1. 构建`workflow`流程
+利用`dify`创建`workflow`应用，主要实现从用户输入问题到最终回复问题的反馈，将该任务进行步骤分解，主要包括用户问题输入接收、用户意图识别、用户问题分类、分类知识检索、结合知识库检索结果的问题回复、回复结果合并，回复结果规范化输出等。详见下图。
 
 ![](img/3ddb6abce34d6735715e9a09fc4cec23.png)
 
-2.将上述workflow流程发布为工具：利用dify的发布功能，将问题发布为工具，工具名称和工具调用名称最好用英文及下划线（这里的名称为swim_assistantTool），工具描述可以是中文。发布完成后，在agent的工具模块就可以查看到最新发布的工具了。
+### 2. 将上述`workflow`流程发布为工具
+利用`dify`的发布功能，将问题发布为工具，工具名称和工具调用名称最好用英文及下划线（这里的名称为`swim_assistantTool`），工具描述可以是中文。发布完成后，在`agent`的工具模块就可以查看到最新发布的工具了。
 
-3.构建用户问题对话Agent：利用dify构建Agent应用，详见下图，记得将第2步的工具引入，如果觉得回答不合适，也可以将前面构建的两个知识库也引入。
+### 3. 构建用户问题对话`Agent`
+利用`dify`构建`Agent`应用，详见下图，记得将第2步的工具引入，如果觉得回答不合适，也可以将前面构建的两个知识库也引入。
 
 ![](img/8fb35ca2ffac50b15de1df3b3dce3780.png)
 
-###### 三、应用测试效果
+### 三、应用测试效果
 
-1.直接使用workflow，优点是直接查看问题的返回结果，缺点是只能做一次回复，多次回复需要新的对话。详见下图。
+#### 1. 直接使用`workflow`
+优点是直接查看问题的返回结果，缺点是只能做一次回复，多次回复需要新的对话。详见下图。
 
 ![](img/cb492cb9d0e5e3cbab81e1d20cdb64bb.png)
 
-2.使用agent进行多轮对话，详见下图。
+#### 2. 使用`agent`进行多轮对话
+详见下图。
 
 ![](img/3f87fa967595d656dab44cab1031518e.png)

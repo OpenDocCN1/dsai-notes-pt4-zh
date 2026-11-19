@@ -1,26 +1,27 @@
+
 # AI 行业资讯 12.1
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/F4pQdP0X8o5cLrxtlqpcFNugnJs](https://qqs7y1hozd1.feishu.cn/docx/F4pQdP0X8o5cLrxtlqpcFNugnJs)
 
-# **本周亮点：**
+## 本周亮点：
 
-1.  ComfyUI官方推出了桌面客户端，优化AI图像生成体验
+1. ComfyUI官方推出了桌面客户端，优化AI图像生成体验
 
-1.  智谱Agent OpenDay展示最新进展，AutoGLM功能大幅提升
+1. 智谱Agent OpenDay展示最新进展，AutoGLM功能大幅提升
 
-1.  谷歌DeepMind发布双思维AI Agent，模拟人类快慢思维
+1. 谷歌DeepMind发布双思维AI Agent，模拟人类快慢思维
 
-1.  阿里开源AI推理模型QwQ-32B-Preview，性能超越o1模型
+1. 阿里开源AI推理模型QwQ-32B-Preview，性能超越o1模型
 
-1.  OpenAI视频生成工具Sora内测版本泄露
+1. OpenAI视频生成工具Sora内测版本泄露
 
-1.  Perplexity计划推出低于50美元的语音对话设备，进军硬件市场
+1. Perplexity计划推出低于50美元的语音对话设备，进军硬件市场
 
-1.  中国气象局联合支付宝推出「中国天气小助手」智能体
+1. 中国气象局联合支付宝推出「中国天气小助手」智能体
 
 ---
 
-# ComfyUI官方推出了桌面客户端，优化AI图像生成体验
+## ComfyUI官方推出了桌面客户端，优化AI图像生成体验
 
 ComfyUI官方推出了桌面客户端，支持Windows和Mac系统，为用户提供了一个高效、稳定且易于使用的AI图像生成环境。该客户端以其简洁直观的用户界面和一键安装的便利性，以及自动更新功能和轻量级的安装包，为用户提供了强大的AI生图创作工具。
 
@@ -32,19 +33,19 @@ ComfyUI客户端的应用场景广泛，包括图像生成与创作、室内设�
 
 下载地址如下，有兴趣的可以下载使用。
 
-ComfyUl Windows客户端下载地址:
+ComfyUI Windows客户端下载地址:
 
 ```
 https://download.comfy.org/windows/nsis/x64
 ```
 
-ComfyUl Mac客户端下载地址:
+ComfyUI Mac客户端下载地址:
 
 ```
 https://download.comfy.org/mac/dmg/arm64
 ```
 
-ComfyUl客户端 GitHub开源地址：
+ComfyUI客户端 GitHub开源地址：
 
 ```
 https://github.com/Comfy-Org/desktope
@@ -52,7 +53,7 @@ https://github.com/Comfy-Org/desktope
 
 ![](img/2e0018ea100788ff898d97f992850cac.png)
 
-# 智谱Agent OpenDay展示最新进展，AutoGLM功能大幅提升
+## 智谱Agent OpenDay展示最新进展，AutoGLM功能大幅提升
 
 11月29日，智谱科技在举办的Agent OpenDay上分享了其AI智能体Agent的最新进展。
 
@@ -66,7 +67,7 @@ https://github.com/Comfy-Org/desktope
 
 ![](img/31335b454795b0fa99baf40462d9320e.png)
 
-# 谷歌DeepMind发布双思维AI Agent，模拟人类快慢思维
+## 谷歌DeepMind发布双思维AI Agent，模拟人类快慢思维
 
 谷歌DeepMind近期宣布了一项重大技术突破，推出了双思维AI Agent——Talker-Reasoner框架。这一框架集成了System 1/2 thinking技术，模拟人类的快思维（System 1）和慢思维（System 2），使得AI Agent能够像人类一样处理复杂任务。
 
@@ -78,7 +79,7 @@ Talker-Reasoner框架包含两个独立模块：Talker和Reasoner。Talker模块
 
 ![](img/0f479b51c437e46837037fe6bf6e2c99.png)
 
-# 阿里开源AI推理模型QwQ-32B-Preview，性能超越o1模型
+## 阿里开源AI推理模型QwQ-32B-Preview，性能超越o1模型
 
 阿里巴巴推出了QwQ-32B-Preview，一款开源的AI推理模型，在数学和编程领域展现出卓越的性能。该模型包含325亿参数，能够处理长达32000个tokens的提示词，并在多个基准测试中超越了OpenAI的o1模型。
 
@@ -90,7 +91,7 @@ QwQ-32B的主要功能包括处理复杂推理任务、透明化推理流程、�
 
 ![](img/0896ffe0de40d2a4b96e9f506e7ee8ae.png)
 
-# OpenAI视频生成工具Sora内测版本泄露
+## OpenAI视频生成工具Sora内测版本泄露
 
 11月27日凌晨，OpenAI的视频生成工具Sora的内测版本遭到泄露，其原因是部分早期测试人员对OpenAI的不满。
 
@@ -100,7 +101,7 @@ QwQ-32B的主要功能包括处理复杂推理任务、透明化推理流程、�
 
 ![](img/43a8ca94d9b51b87e87b6d0c206cc2c6.png)
 
-# Perplexity计划推出低于50美元的语音对话设备，进军硬件市场
+## Perplexity计划推出低于50美元的语音对话设备，进军硬件市场
 
 AI搜索引擎初创公司Perplexity近日宣布可能拓展其业务范围，进军硬件市场。公司CEO Aravind Srinivas在X平台上透露，Perplexity正在考虑推出一款售价低于50美元的语音对话设备。
 
@@ -110,7 +111,7 @@ Perplexity的这一计划展现了AI技术从软件向硬件延伸的趋势，�
 
 ![](img/d94ebb823cc913e78728999501da1962.png)
 
-# 中国气象局联合支付宝推出「中国天气小助手」智能体
+## 中国气象局联合支付宝推出「中国天气小助手」智能体
 
 11月29日，中国气象局与支付宝合作推出了「中国天气小助手」智能体，旨在为用户提供更便捷、更精准的气象服务。这一智能体由中国气象局提供权威气象数据支持，依托蚂蚁百灵大模型和支付宝政务AI智能体解决方案的技术力量，并结合中国气象局的权威语料构建。
 

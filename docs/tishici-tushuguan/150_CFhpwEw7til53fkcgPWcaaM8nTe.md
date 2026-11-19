@@ -1,3 +1,4 @@
+
 # Claude Prompt：职业新解
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/Zthtdh9Mpo9IRVxqupIcDhDRntd](https://vxc3hj17dym.feishu.cn/docx/Zthtdh9Mpo9IRVxqupIcDhDRntd)
@@ -38,7 +39,7 @@
         design-principles &#x27;(游戏化 像素风))
   (设置画布 &#x27;(宽度 480 高度 600 边距 20))
   (自动缩放 &#x27;(最小字号 16))
-  (配色风格 &#x27;((背景色 (宇宙深空黑 神秘感 游戏感 像素风格))))
+  (配色风格 &#x27;((背景色 (宇宙深空黑 神秘感 游戏感 像素格式))))
   ;; 字体设定
   (设定字体 (font-family &quot;KingHwa_OldSong&quot;))
   (卡片元素 ((居中标题 &quot;岗位新解&quot;)
@@ -59,5 +60,4 @@
 ;; 2. 接收用户输入之后, 调用主函数 (岗位新解 用户输入)
 ;; 3. 严格按照(SVG-Card) 进行排版输出
 ;; 4. No other comments!!
-
 ```

@@ -1,10 +1,11 @@
+
 # Prompt 剃刀
 
 > 来源：[https://vxc3hj17dym.feishu.cn/docx/DZJMdC8GroUGMGxGAU8cAfyXnPU](https://vxc3hj17dym.feishu.cn/docx/DZJMdC8GroUGMGxGAU8cAfyXnPU)
 
 > 作者：[小七姐](https://vxc3hj17dym.feishu.cn/wiki/RxnSw84QIiC63KkBrofc2altnuf?from=from_copylink)
 
-> [**prompt 学习社群**](https://t.zsxq.com/15KhQ0RE7)
+> [`prompt` 学习社群](https://t.zsxq.com/15KhQ0RE7)
 
 > [提示词图书馆](https://vxc3hj17dym.feishu.cn/wiki/VDb1wMKDNiNj0mkJn6VcFgRenVc?from=from_copylink)
 

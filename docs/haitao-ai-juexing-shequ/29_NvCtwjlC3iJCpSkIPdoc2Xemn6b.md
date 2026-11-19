@@ -1,14 +1,19 @@
+
 # manus居然可以做视频！真实评价，不吹不黑（文末附replay地址）
 
 > 来源：[https://zinxkclpk97.feishu.cn/docx/SUZId5hf9oTIgwxP56TcuNXXnDc](https://zinxkclpk97.feishu.cn/docx/SUZId5hf9oTIgwxP56TcuNXXnDc)
 
 ![](img/087ded62d9209d846a3f2a5edad83be3.png)
 
+## 引言与期待
+
 manus发布后，群里也有小伙伴做了第一波体验的分享，看过之后，我对manus的期待非常高。
 
 昨天晚上，在大佬群里蹭到了manus的邀请码。太兴奋了！
 
 于是熬夜跑了几个case，这里挑选三类来介绍下。
+
+## 案例一：报告分析
 
 首先是报告分析的case，这个我理解传统的智能体也可以完成这项工作，需要具备的能力是大模型任务理解+联网信息采集+分析输出报告。
 
@@ -26,6 +31,8 @@ manus发布后，群里也有小伙伴做了第一波体验的分享，看过之
 
 [20250308234921_rec_.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CvBjbJip4oncdqx5q79cNfsHn4d)
 
+## 案例二：代码开发（俄罗斯方块）
+
 下面一个是代码开发的案例，我让其开发一款网页版的俄罗斯方块。
 
 manus也是先去拆解我们的需求，并指定任务计划，按照步骤去执行任务。
@@ -42,6 +49,8 @@ manus也是先去拆解我们的需求，并指定任务计划，按照步骤去
 
 ![](img/8ead5b13e953f4c93752433b02cc3240.png)
 
+## 案例三：火柴人动画视频
+
 最后我让manus制作了个火柴人的动画视频，表达一个主题。
 
 其实动画很简单，它也是使用python的视频制作库来绘制的动画帧，最后渲染出来mp4格式的文件给到我。
@@ -54,6 +63,8 @@ manus也是先去拆解我们的需求，并指定任务计划，按照步骤去
 
 [stick_figure_animation (1).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NBI6blfNuow94AxrSTscVS6CnSg)
 
+## AI智能体与Coze讨论
+
 以上。
 
 最近很多小伙伴在问我，普通人该如何学习AI智能体，manus出来之后coze这类的产品还有生存空间吗？
@@ -62,16 +73,15 @@ manus也是先去拆解我们的需求，并指定任务计划，按照步骤去
 
 这个话题挺有意思的，也欢迎在留言区讨论。
 
+## Replay 链接
+
 这里是replay链接：
 
-《小米su7 ultra研究报告》
+- 《小米su7 ultra研究报告》  
+  https://manus.im/share/fnnNO8exyhJjw7xbuyTdxd?replay=1
 
-https://manus.im/share/fnnNO8exyhJjw7xbuyTdxd?replay=1
+- 《俄罗斯方块游戏开发》  
+  https://manus.im/share/yYPiUS0G0aiVGDGZdBdYk8?replay=1
 
-《俄罗斯方块游戏开发》
-
-https://manus.im/share/yYPiUS0G0aiVGDGZdBdYk8?replay=1
-
-《火柴人动画》
-
-https://manus.im/share/p7TGIyGAa3GA3izeJ4FQaw?replay=1
+- 《火柴人动画》  
+  https://manus.im/share/p7TGIyGAa3GA3izeJ4FQaw?replay=1

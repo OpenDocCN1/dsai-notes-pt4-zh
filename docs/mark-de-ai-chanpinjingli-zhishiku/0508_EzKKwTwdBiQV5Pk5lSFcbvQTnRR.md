@@ -1,17 +1,18 @@
+
 # AI Agent技术0-1拆解
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/MqgadTv3gohYZOxhHRfcyuDGnbb](https://qqs7y1hozd1.feishu.cn/docx/MqgadTv3gohYZOxhHRfcyuDGnbb)
 
-<https://qqs7y1hozd1.feishu.cn/sync/WsLwdK9UMsOqdhb16EFcUL0qn4d>
+`https://qqs7y1hozd1.feishu.cn/sync/WsLwdK9UMsOqdhb16EFcUL0qn4d`
 
 ## 基础，Agent技术
 
-| [AI Agent的九种设计模式(图解+代码) ](https://qqs7y1hozd1.feishu.cn/wiki/OiwWwwuFTinoW7kpk5vcsm0Nn5e) | [Agent的九种设计模式(图解+代码)](https://acn94u5w1gi0.feishu.cn/wiki/PYI8wUxi9iDWYSkwhIVce3krnZb) |
+| [AI Agent的九种设计模式(图解+代码)](https://qqs7y1hozd1.feishu.cn/wiki/OiwWwwuFTinoW7kpk5vcsm0Nn5e) | [Agent的九种设计模式(图解+代码)](https://acn94u5w1gi0.feishu.cn/wiki/PYI8wUxi9iDWYSkwhIVce3krnZb) |
 | --- | --- |
 | [读懂Agent--19类Agent框架对比](https://acn94u5w1gi0.feishu.cn/wiki/Qfr5wLxDAidtklkcsHlcrDWInHo) | [【LLM-RAG】知识库问答 | 检索 | embedding](https://acn94u5w1gi0.feishu.cn/wiki/LiFmwCJ8Bi49xrkStLsc1rW2n7b) |
 | [图解 Agent 的9种“记忆系统”](https://qqs7y1hozd1.feishu.cn/wiki/PLDqwHE7HiZ0BwkVD1NcY9L2n3c) | [基于RAG的LLM应用全解](https://acn94u5w1gi0.feishu.cn/wiki/KZx3wmR4JiZlKckEdBEcLyulnUc) |
 | [从AI Agent到Agent工作流，搞懂智能体工作流（Agentic Workflow）](https://qqs7y1hozd1.feishu.cn/wiki/ViPJwG0C0iTA2ZkiN0ic8ZOunOf) | [大白话讲清GraphRAG：知识图谱与RAG融合](https://acn94u5w1gi0.feishu.cn/wiki/E5fRwHcqXiErLpk6Q9RcyIPPnxf) |
-| [12‑Factor Agents](https://qqs7y1hozd1.feishu.cn/wiki/Wf1CwrGnOiXlDOkyWM9cVxBknHb) | [深度解析：大模型 RAG 技术](https://acn94u5w1gi0.feishu.cn/wiki/J81Cw8QLZiUW2rkAMrVcuOv0noc) |
+| [12-Factor Agents](https://qqs7y1hozd1.feishu.cn/wiki/Wf1CwrGnOiXlDOkyWM9cVxBknHb) | [深度解析：大模型 RAG 技术](https://acn94u5w1gi0.feishu.cn/wiki/J81Cw8QLZiUW2rkAMrVcuOv0noc) |
 
 ## 进阶，Agent搭建
 

@@ -1,3 +1,4 @@
+
 # 20240711-Swift：极简界面，极致性能！AI对话新范式！
 
 > 来源：[https://aigcreative.feishu.cn/docx/RTmidjZc7obqnZxUZimcBr5snSh](https://aigcreative.feishu.cn/docx/RTmidjZc7obqnZxUZimcBr5snSh)
@@ -6,7 +7,7 @@
 
 不是Apple的Swift编程语言，也不是泰勒swift，是AI语音助手——Swift。
 
-先上链接：https://swift-ai.vercel.app/
+先上链接：`https://swift-ai.vercel.app/`
 
 它不仅快速、高效，而且完全免费。
 
@@ -32,4 +33,4 @@ Groq 的处理器提供了强大的计算能力，而 Cartesia 的语音识别�
 
 尽情地享受与AI的对话吧。
 
-<https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg>
+`https://aigcreative.feishu.cn/sync/K4Gvd9vUQsy9Oubwqaeclu0Fnbg`

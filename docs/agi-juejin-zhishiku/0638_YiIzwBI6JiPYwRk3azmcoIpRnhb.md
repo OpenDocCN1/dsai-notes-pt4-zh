@@ -1,3 +1,4 @@
+
 # Trae使用体验，未来已至？一键生成管理系统
 
 > 来源：[https://agijuejin.feishu.cn/docx/HyZ8drntxopF9JxBkz0cFQrWnCw](https://agijuejin.feishu.cn/docx/HyZ8drntxopF9JxBkz0cFQrWnCw)
@@ -40,7 +41,7 @@
 
 ![](img/1ac203a04f3356d94849496184f71d12.png)
 
-这里比较惊艳我的一点是，Trae能够有一定的debug能力，他能识别到是我的Node版本过低导致 npm run dev 失败，然后自动给出解决方案。NB!
+这里比较惊艳我的一点是，Trae能够有一定的debug能力，他能识别到是我的Node版本过低导致 `npm run dev` 失败，然后自动给出解决方案。NB!
 
 ### 3. 项目启动
 
@@ -68,7 +69,7 @@
 
 ![](img/5510fbc487b4b45881ec344d27f71967.png)
 
-然后咱也是告诉它哪有问题，这里用内置的WebView预览我还以为会帮助Trae用多模态去匹配页面的输出，但是好像没有哈。
+然后咱也是告诉它哪有问题，这里用内置的`WebView`预览我还以为会帮助Trae用多模态去匹配页面的输出，但是好像没有哈。
 
 ![](img/a56def6905ae9085e83d08174610d8d4.png)
 

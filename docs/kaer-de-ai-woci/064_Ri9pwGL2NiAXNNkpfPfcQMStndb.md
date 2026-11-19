@@ -1,14 +1,19 @@
+
 # NanoBanana 室内设计邪修大法
+
+## 资料来源
 
 > 来源：[https://aiwarts101.feishu.cn/docx/Lr8EdlBa0oSzLhx9hHacsuY9nrd](https://aiwarts101.feishu.cn/docx/Lr8EdlBa0oSzLhx9hHacsuY9nrd)
 
-因为全篇内容⽐较⻓且会实时更新，⼤家可以图⽚识别⽂字，复制下⾯的🔗到浏览器中打开查看最新
+因为全篇内容比较长且会实时更新，大家可以图片识别文字，复制下面的🔗到浏览器中打开查看最新的合集资料⬇
 
-的合集资料⬇
-
-https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
+`https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink`
 
 ![](img/490ea74c04b4c291b2bd925b2392b57a.png)
+
+## 提示语与操作示例
+
+### 户型图转等距3D渲染
 
 > Help me convert this residential floor plan into an isometric photorealistic 3D rendering of the house.
 
@@ -17,6 +22,8 @@ https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
 [操作1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/TRP8bN0FLoAYNGxiz6Xc3xIwn7c)
 
 ![](img/4be6321be395a4c10e409d4cb279683f.png)
+
+### 餐厅视角真实照片
 
 也别把继续输入这段真实视角咒语，直接就得到第一人称真实视角了
 
@@ -30,11 +37,15 @@ https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
 
 ![](img/682a87127c7961cec5eace24c184ba99.png)
 
+### 玄关视角客厅照片
+
 > Help me generate a realistic photo looking from the front door towards the living room, which must comply with the house layout in the design plan, and appropriate decorations can be added.
 
 ![](img/95d7d6dbbe4efb5cfc0f8d1be1c57aca.png)
 
 [操作3.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/UlQib6gp7obgvZxPBjSclJ0Wn1f)
+
+### 视觉角度与家具替换
 
 视觉角度随意修改，还能替换家装
 
@@ -50,10 +61,11 @@ https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
 
 ![](img/20e69b8ec86fa41da552e653b656a0c5.png)
 
+### 3D模型与拼图生成
+
 还给把3D图转成等比例的Nano Banan版拼图
 
 > convert this photo into a architecture model. Behind the model, there should be a cardboard box with an image of the architecture from the photo on it. There should also be a computer, with the content on the computer screen showing the Blender modeling process of the figurine. In front of the cardboard box, place a cardstock and put the architecture model from the photo I provided on it. I hope the PVC material can be clearly presented. It would be even better if the background is indoors
-
 
 ![](img/e8078ee062e6b94d24f83f9c64a2433c.png)
 
@@ -62,8 +74,6 @@ https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
 [操作7.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/B3Kobn2Qxo2Gdzxi8HYcMGRynib)
 
 > 转3D
-
-![](img/0822cf3e14e8824ea38e2986cdd47339.png)
 
 [操作8.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/M0mNbb21uoedmCx0gFQcZN8Hn5g)
 
@@ -77,11 +87,11 @@ https://aiwarts101.feishu.cn/wiki/Ri9pwGL2NiAXNNkpfPfcQMStndb?from=from_copylink
 
 [@ZHO_ZHO_ZHO.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/HRA2bvb6uoehvDxzMchcf5v3nYc)
 
+## 提示语汇总
+
 > 第一个提示语
 
 > Help me convert this residential floor plan into an isometric photorealistic 3D rendering of the house.
-
->
 
 > 第二个提示语
 

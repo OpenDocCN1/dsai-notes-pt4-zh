@@ -1,3 +1,4 @@
+
 # 即梦 AI 无限画布能干啥？一文为你理清思路！
 
 > 来源：[https://yunyinghui.feishu.cn/docx/CdcMdnYX5ouczZxrNUuch4NfnPb](https://yunyinghui.feishu.cn/docx/CdcMdnYX5ouczZxrNUuch4NfnPb)
@@ -8,7 +9,7 @@
 
 > **推荐理由：**这篇文章是阿真亲身实测的即梦 AI 无限画布保姆级教程，通过品牌 VI 设计、短片分镜、绘本创作等真实项目案例，一步步展示如何用智能排版、批量生图和对话式修改等功能快速落地创意。
 
-> 特别适合想动手实操的创作者直接套用文中提示词模板和工作流，把灵感快速变成品牌物料、视频脚本或插画故事，高效搞定多场景视觉产出。
+> 特别适合想动手实操的创作者直接套用文中提示词模板和工作流，把灵感快速变成品牌物料、视频脚本或插画故事，高效搞多场景视觉产出。
 
 ![](img/64e544c8a4dbebc4c996575cb4c742af.png)
 
@@ -24,7 +25,7 @@
 
 上链接，直达：
 
-https://jimeng.jianying.com/ai-tool/assets-canvas
+`https://jimeng.jianying.com/ai-tool/assets-canvas`
 
 ![](img/eac841f890745b842a9b49a2d8c08515.png)
 
@@ -40,7 +41,7 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/6a154540f4ae9f9c9ca18ab5c0627488.png)
 
-# 1. 品牌 VI 视觉参考
+## 1. 品牌 VI 视觉参考
 
 我们首先点击 VI 的【试一试】，就可以收到它的官方提示词。改动不多的手动改，改动多的，复制官方这段提示词，打开一个熟悉的 AI 对话工具，如果我们不会写提示词，可以提取官方的范例作为给到 AI 的提示词参考。
 
@@ -54,16 +55,11 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/6743b7eb1513816fdb1c1c11b8077677.png)
 
-
-
-
 ![](img/9692b039b3145bb1cfcf4af391f93afe.png)
 
 ![](img/41c61b931ed4278600f6992c4a4f35e4.png)
 
 ![](img/9cd4b68c737a4e73c0a3c637f74679ac.png)
-
-
 
 ![](img/9d9b8ffc28a5eca4aede1fd5742666c5.png)
 
@@ -96,7 +92,7 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 如果你有你的需要，但是不知道提示词怎么写，你就首先写 “我需要做 XXX 的 logo，我的要求是 XXX”，然后后面加上“提示词格式参考（比如这里放我上面提示词框里的提示词 ⬆️ ）但根据我的要求进行智能修改。” 这样就可以让 AI 参考你要参考的提示词为你输出类似的结构化提示词了。
 
-# 2. 多场景分镜
+## 2. 多场景分镜
 
 多场景分镜我们也可以延展，首先出一套多个镜头，这个过程中可以补充，然后可以基于一套中的某张图延展多个不同镜头使用，不同镜头可以让影视画面不再单调，同时，我们要通过这个镜头要体现人物情绪或者利用场景暗示故事脉络的时候非常好用。
 
@@ -115,10 +111,6 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 赛博朋克风格的短片分镜，提示词是基于官方的短片分镜提示词作为格式参考输出的，风格一致效果超好👇
 
 ![](img/70ca2fecd0d7b141de8df2e1200f5c68.png)
-
-
-
-
 
 ![](img/56f9a35cc5c1c26cf22d8935bf78dcbf.png)
 
@@ -156,7 +148,7 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 [2.1.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MP6FbwRV8oyDq0xWybCcRLQ5nuc)
 
-# 3. 治愈系插画故事绘本
+## 3. 治愈系插画故事绘本
 
 这个也可以像之前我说的那样，在主页参考官方提示词，也可以像我接下来这样，首先使用主体参考图，可以上传或复制粘贴到对话框。
 
@@ -164,18 +156,11 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 打个比方，我小侄女，就想要看一个狐狸和大象交朋友的故事。下面是我给的参考图原图👇
 
-
 ![](img/a50e2dc34c9eff30fe8ef997f2b01a90.png)
 
 它会首先生成角色形象，再创作绘本插画。
 
 ![](img/bfa3439d303f472f67060ab4d1ca1fc2.png)
-
-
-
-
-
-
 
 ![](img/25dcb999af195005d772f053a982e205.png)
 
@@ -189,7 +174,7 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/bba3c7100c9ee5868c014e554fa9c6ee.png)
 
-# 4. 系列海报
+## 4. 系列海报
 
 比如可以先生成几个备选海报再替换主体👇
 
@@ -199,12 +184,9 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 还有这个我们很熟悉了，来，图一原图，基于 1 个延展多个看看效果，也可以智能修改文案（文案水平比较一般，但是右下方细节小字都有换水果，还是挺不错的了）👇
 
-
-
-
 ![](img/bdb367d159cbf2223819b3291c2dd76e.png)
 
-# 5. 文章配图
+## 5. 文章配图
 
 比如我们写了文章，可以让即梦无限画布基于文章生成插图配图。
 
@@ -221,7 +203,7 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 确认图片提示词内容后，复制所有提示词发送到即梦无限画布对话框，就可以获得文章插图了。
 
-我还做了个简单的智能体放在豆包了，可以复制链接到网页使用，或直接豆包 APP 搜索【给文章输出配图提示词】： https://doubao.com/bot/ExSPnSxE
+我还做了个简单的智能体放在豆包了，可以复制链接到网页使用，或直接豆包 APP 搜索【给文章输出配图提示词】：`https://doubao.com/bot/ExSPnSxE`
 
 这里使用让 AI 写了个《济南的秋天》给豆包作为尝试👇
 
@@ -231,16 +213,9 @@ https://jimeng.jianying.com/ai-tool/assets-canvas
 
 ![](img/931939f9d076d34aa668003e38f34a22.png)
 
-
-
-
-
-
-
-
 ![](img/bede8619c106a051a87e5cfe3d9134a9.png)
 
-# 6. 小结
+## 6. 小结
 
 写着写着好困了，还有一些玩法没有展开哎嘿，想着写太长了大家看着也烦，所以这一篇是即梦无限画布的上期分享，也许应该大概🤔还有下期更进一步的内容，是关于灵感参考和 MV 短视频等方向的，敬请期待（✧∀✧）
 

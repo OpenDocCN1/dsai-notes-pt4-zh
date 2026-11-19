@@ -1,46 +1,45 @@
+
 # AI写小说-NineS AI仿写《河清海晏》
 
 > 来源：[https://rq547mr4oez.feishu.cn/docx/FamDd6fLJo1GooxiDmJc9QK6noc](https://rq547mr4oez.feishu.cn/docx/FamDd6fLJo1GooxiDmJc9QK6noc)
 
-# 一、前言
+## 一、前言
 
 > 各位小伙伴好~🎉🎉🎉NineS-AI与君又见😬。
-
-> 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
-
-> **经过**十月份的α测试和最近10天的内测，很多小伙伴们都拿到了好结果（如：新手短篇K30/长篇签约起点/短剧出售等等）。
-
-> 如今，通过仿写《河清海晏》演示产品的实力~~
-
 >
-
+> 缘分本就是稀薄寡断，相逢一程已是感激万分😙。
+>
+> 经过十月份的α测试和最近10天的内测，很多小伙伴们都拿到了好结果（如：新手短篇K30/长篇签约起点/短剧出售等等）。
+>
+> 如今，通过仿写《河清海晏》演示产品的实力~~
+>
 > PS:《河清海晏》被誉为新的知乎三绝之一~故事虐人又治愈，非常值得一看
 
 ---
 
 以下是题材类Prompt，无私奉献~~
 
-1.  [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
+1. [AI写小说-“玄幻文”小说家完整Prompt-v2.0](https://rq547mr4oez.feishu.cn/wiki/ZCVbw9n7fiiG4ukQNoDcRiS5nZf?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
+1. [AI写小说-“女频甜宠爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/ARo9wUNi4iOKjNkj8ZbcUPtHn0c?from=from_copylink)（韭菜Y日记）
 
-1.  [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
+1. [AI写小说-“女频狗xue虐文”完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AX6awAc3Ii0u3nk1gDrcCYr1nRh)（韭菜Y日记）
 
-1.  [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
+1. [AI写小说-“科幻文”小说家完整Prompt](https://rq547mr4oez.feishu.cn/wiki/JBycwlmDDiYBXykJlu1cHWcanrg?from=from_copylink)
 
-1.  [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
+1. [AI写小说-“都市爽文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/OFMtwYSYPiTmP6ktsh2cAKf3n1f?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
+1. [AI写小说-“种田文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/X5glwVf1DiQYWLkvlvHcCxjhnYe)
 
-1.  [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
+1. [AI写小说-“后悔文”追妻火葬场完整Prompt](https://rq547mr4oez.feishu.cn/wiki/AzmhwUYiriTyoxkXVvPcaoGKncc?from=from_copylink)
 
-1.  [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
+1. [AI写小说-“古言文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/EpVJwNJAZiNtiQkcNdTcNVA2nNc?from=from_copylink)（经典题材）
 
-1.  [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新
+1. [AI写小说-“末世文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/CrZqwEYP8iVbPpkIG1XcHGzFntc)（上新）
 
-1.  [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
+1. [AI写小说-“系统文”小说家独家Prompt](https://rq547mr4oez.feishu.cn/wiki/AgJIwYMvEikzagkHwYhcsrMMnEf?from=from_copylink)（易上手题材之二）
 
-1.  .......
+1. .......
 
 这个系列会持续做完所有题材，大家可以在粉丝群里面定制哦~。
 
@@ -48,68 +47,65 @@
 
 PS：还有哪些问题可以评论或者私信我，我有空也可以解答。
 
-**P**S：盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
+**PS：**盗用这个文章的不要乱引流破坏环境，文章是免费分享给大家。有看见各位顺手举报下。感谢～资料纯分享不易。
 
 **原始出处：**
 
 ![](img/28148ef5c7036fcf9bdd4091d859a60c.png)
 
-#
-
-# 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
-
+## 二、第二轮提前测试~结果反馈（少部分截图，还有很多）
 
 ![](img/d8215e4753120b27449b0c8fd5423ce5.png)
 
-# 三、当前状态（以作家灵感为始，破程序想象之梏。）
+## 三、当前状态（以作家灵感为始，破程序想象之梏。）
 
 > **产品理念：**
 
-1.  以作家灵感为始，破程序想象之梏。奉行长期价值主义~
+1. 以作家灵感为始，破程序想象之梏。奉行长期价值主义~
 
-1.  最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
+1. 最懂文字创作者的AI创作工具，没有之一！不写文章的研发，不是好研发。
 
-1.  **功能一览**
+1. **功能一览**
 
-+   **AI拆书：**
++ **AI拆书：**
 
-+   短篇的情节节奏，情绪上下文怎么快速理解？
++ 短篇的情节节奏，情绪上下文怎么快速理解？
 
-+   500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
++ 500万字的文本？小意思！NineS-AI帮你轻松拆解，分析风格，剖析情节和节奏，让你的创作之路不再迷茫。
 
-+   **AI创作**
++ **AI创作**
 
-+   短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
++ 短篇、长篇、短剧三大类创作类型。从故事灵感到框架设定，从大纲到细纲，再到最终的正文生成，NineS-AI为你提供全流程的创作指南。
 
-+   润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
++ 润色/扩写/续写/改写：灵感枯竭？旧作翻新？没问题！NineS-AI帮你,让你的创作灵感源源不断。
 
-+   **AI助手**
++ **AI助手**
 
-+   高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
++ 高端玩家必备，物美价廉，自定义角色，四大主流AI除了创作，其他的工作也能用到哦~
 
-1.  **我们的优势**
+1. **我们的优势**
 
-1.  质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
+1. 质量为王：仿写只是基本操作，我们的目标是打造最高质量的AI创作平台。
 
-1.  重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
+1. 重做文章G评系统：NineS-AI的创作70~85分起步，与市面上那根本无法与之相提并论（支持全网产品竞技PK哦~）
 
-1.  高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
+1. 高端定制：对于美主义者，我们还提供80~90分的“私人订制”服务，当然，时间和成本也会相应增加，具体情况具体分析。
 
-1.  **产品进度**
+1. **产品进度**
 
-1.  种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
+1. 种子测试时间（100+全职作者测试）开始时间：2024-10-14    结束时间：2024-11-15
 
-1.  内测时间（群无条件邀请测试）**开始时间：2024-11-22晚19.3**0    结束时间：2024-12-30
+1. 内测时间（群无条件邀请测试）开始时间：2024-11-22晚19.30    结束时间：2024-12-30
 
-# 四、仿写**案例~**
+## 四、仿写案例~
 
 ### 仿写三个层次：《具体见[《仿写》的三个层次直播详解](https://rq547mr4oez.feishu.cn/wiki/F9gHwbDbni1386kI3ivcC0PSnRb?from=from_copylink)》
 
-+   初级仿写：即“翻译”：中译中不可取、英译中、中译英
++ 初级仿写：即“翻译”：中译中不可取、英译中、中译英
 
-+   中级仿写：即“改写”：换元法（背景/人物/等），变成情节卡
++ 中级仿写：即“改写”：换元法（背景/人物/等），变成情节卡
 
-+   高级仿写：即“取经”：是仿情绪，节奏，通用情节卡。
++ 高级仿写：即“取经”：是仿情绪，节奏，通用情节卡。
 
 ### 拆书分析
 

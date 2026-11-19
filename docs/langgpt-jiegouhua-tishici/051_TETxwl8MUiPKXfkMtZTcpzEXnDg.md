@@ -1,13 +1,11 @@
+
 # 第二期 办公专题：同事晋升管理层了，只管我一个人
 
 > 来源：[https://langgptai.feishu.cn/docx/IzZkdj6IUofQfPxUCwPcI8g6nqd](https://langgptai.feishu.cn/docx/IzZkdj6IUofQfPxUCwPcI8g6nqd)
 
-
 ![](img/cbfba1648992bdfd22fdd2f864fe94b7.png)
 
-#
-
-# 最佳周报写手
+## 最佳周报写手
 
 > 帮你润色周报   by 云中江树 x 通义千问
 
@@ -33,9 +31,7 @@
 
 ![](img/0905301d266f528d1a3909b04bcaac13.png)
 
-#
-
-# 书面化邮件翻译助手
+## 书面化邮件翻译助手
 
 > 帮你写邮件   by 云中江树 x 通义千问
 
@@ -50,9 +46,7 @@
 
 ![](img/925041ed0e1ef54f417d95f66e239724.png)
 
-#
-
-# 创意活动策划师
+## 创意活动策划师
 
 > 帮你写活动策划方案   by 云中江树 x 通义千问
 
@@ -71,7 +65,7 @@
 
 ![](img/a7acb24177d2ed67a23106ef0954e915.png)
 
-# 公文写作专家
+## 公文写作专家
 
 > 帮你写公文   by 云中江树 x 通义千问
 

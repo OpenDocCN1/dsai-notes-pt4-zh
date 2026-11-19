@@ -1,8 +1,9 @@
+
 # 视频 | 海螺MiniMax
 
 > 来源：[https://aigclena.feishu.cn/docx/VlybdfZlWoe3XZx33kCckHV7n7d](https://aigclena.feishu.cn/docx/VlybdfZlWoe3XZx33kCckHV7n7d)
 
-# MiniMax Music 2.0
+## MiniMax Music 2.0
 
 2025.10.4
 
@@ -16,7 +17,7 @@ MiniMax Music 2.0 可在不到一分钟内生成完整 5 分钟带人声的音�
 
 [SaveTwitter.Net_2WNTwLnpF8K3olk-_(720p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/MZ41bGUbdowyW6xtVY0cxi4UnCd)
 
-# Agent
+## Agent
 
 2025.9.23
 
@@ -26,7 +27,7 @@ Hailuo AI Agent 正式推出，提供一周免费体验。这款下一代创意�
 
 [SaveTwitter.Net_0SMNwHJLRDvSOjsD_(1080p).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/Nmifbyht6ow90txpZC2cPDjnn6e)
 
-# 角色参考
+## 角色参考
 
 海螺AI发布“角色参考”功能
 
@@ -34,17 +35,15 @@ Hailuo AI Agent 正式推出，提供一周免费体验。这款下一代创意�
 
 MiniMax旗下的海螺AI（Hailuo AI）推出了其Hailuo Image的新功能——“角色参考”，该功能允许用户根据单一参考图像生成多角度和动态姿势的角色图像。新增的功能不仅强化了表情控制，还融入了电影级光影效果，显著提升了AI图像生成在创意表达和角色一致性方面的表现。
 
-
 [6388101951406059083202476.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/D9uJb8vdpoHar7xlutvcWZdmn1e)
 
-# 图生图人物一致性
+## 图生图人物一致性
 
 2025.4.24
 
-
 [48b26c2430706c0d2952423038208673.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/CBiObUxiPoXbMjxKaKxcuHT8nnc)
 
-# Speech-02语音模型
+## Speech-02语音模型
 
 MiniMax Audio发布Speech-02语音模型
 
@@ -56,7 +55,7 @@ MiniMax Audio发布Speech-02语音模型
 
 [X2Twitter.com_cgOIROGVwGmQebkJ_720p.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/JVDkbjVPWoe9H5xY04Cc84Tjnpd)
 
-# 音频 0115
+## 音频 0115
 
 ![](img/259fdd4cbb08c449de54c4af6302048c.png)
 
@@ -87,14 +86,18 @@ MiniMax隆重推出T2A-01-HD，这是一项颠覆性的文本转语音（Text-to
 +   自然表达17+种语言，呈现地域化的真实口音。
 
 +   支持的语言包括：
+
 ▶️英语（美国、英国、澳大利亚、印度）
+
 ▶️中文（普通话和粤语）
+
 ▶️日语、韩语、法语、德语、西班牙语、葡萄牙语（含巴西）、意大利语、阿拉伯语、俄语、土耳其语、荷兰语、乌克兰语、越南语和印度尼西亚语。
+
 ▶️语言库还在不断更新中！
 
 ============================================分割线2025↑ 2024↓
 
-# 网友案例
+## 网友案例
 
 0924
 
@@ -110,6 +113,6 @@ MiniMax隆重推出T2A-01-HD，这是一项颠覆性的文本转语音（Text-to
 
 ### 联系我们
 
-> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth)  [ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)[ ](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh)  [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
+> [互联网设计](https://aigclena.feishu.cn/wiki/PD10wBb5yiRVE7kTFZdcuzUBnth) [国际站/独立站](https://aigclena.feishu.cn/wiki/TmfowYzfMisIShkNU7ncEBMingh) [AI商业定制](https://aigclena.feishu.cn/wiki/BsQHwI5saiYGbOkUG2mceW15nHg)
 
 ![](img/47dedcab487efe868acceeb5cd37f99b.png)

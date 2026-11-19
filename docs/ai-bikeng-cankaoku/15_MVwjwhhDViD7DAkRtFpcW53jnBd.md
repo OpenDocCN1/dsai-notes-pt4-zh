@@ -1,10 +1,11 @@
+
 # AI 变现案例集
 
 > 来源：[https://docs.feishu.cn/docx/PqTKdVBfWomYqxxUkQFcI7qxnvc](https://docs.feishu.cn/docx/PqTKdVBfWomYqxxUkQFcI7qxnvc)
 
 导航栏 [😀 原创好文](https://yx58nd06ei.feishu.cn/wiki/LNUiwfPsnid7gPkQU5BcBMVknFg)  | [👸号精选文集](https://mp.weixin.qq.com/mp/homepage?__biz=MzkxODU1NjM5OQ==&hid=2&sn=b7783180ec241d51aecda9c7fd2518f1&scene=18) | [个人网站](http://www.doumoman.site)
 
-# 案例 1 📕 > 🛰️ > 神图君
+## 案例 1 📕 > 🛰️ > 神图君
 
 变现内容：AI 绘画
 
@@ -52,7 +53,7 @@ B. 用户注册“神图君”会员，免广告下载图片，提成 9.9 元 x7
 
 ![](img/b8109057f5f841828dced5b98eba6c72.png)
 
-# 案例 2 油管 > Gumroad
+## 案例 2 油管 > Gumroad
 
 变现内容：Notion 多维表格
 
@@ -74,7 +75,7 @@ B. 用户注册“神图君”会员，免广告下载图片，提成 9.9 元 x7
 
 ![](img/3ca995f99485cd1c41ac6647175b64d0.png)
 
-# 案例 3 CivitAI > 爱发电
+## 案例 3 CivitAI > 爱发电
 
 变现内容：C 站上的 LORA 模型创作行为
 
@@ -92,7 +93,7 @@ B. 用户注册“神图君”会员，免广告下载图片，提成 9.9 元 x7
 
 ![](img/1d64079395a34ecdbcc32269e5ed9eb3.png)
 
-# 案例 4  📕 AI 绘画+饰品日用品（ChatGPT 细聊的结果）
+## 案例 4  📕 AI 绘画+饰品日用品（ChatGPT 细聊的结果）
 
 变现内容：📕商铺中的饰品、日用品
 
@@ -118,7 +119,7 @@ B. 用户注册“神图君”会员，免广告下载图片，提成 9.9 元 x7
 
 ![](img/c2f456b298e29ecd11ce8b926e0b214d.png)
 
-# 案例 5  经典日漫角色真人版+卖印刷品/画稿
+## 案例 5  经典日漫角色真人版+卖印刷品/画稿
 
 变现内容：咸鱼中的印刷品
 

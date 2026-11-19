@@ -1,10 +1,11 @@
+
 # Docker configs
 
 > 来源：[https://learning.feishu.cn/docx/WnD0dJzW7oqeeux7w5bce91Mnyh](https://learning.feishu.cn/docx/WnD0dJzW7oqeeux7w5bce91Mnyh)
 
 https://stackoverflow.com/questions/24832972/docker-apt-get-update-fails
 
-/etc/docker/daemon.json
+`/etc/docker/daemon.json`
 
 ```
 {
@@ -13,4 +14,4 @@ https://stackoverflow.com/questions/24832972/docker-apt-get-update-fails
 }
 ```
 
-sudo systemctl restart docker
+`sudo systemctl restart docker`

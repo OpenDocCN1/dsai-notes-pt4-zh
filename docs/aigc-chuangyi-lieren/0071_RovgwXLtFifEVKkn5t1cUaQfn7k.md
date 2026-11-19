@@ -1,8 +1,7 @@
+
 # 05-创建高级的提示工程技巧
 
 > 来源：[https://aigcreative.feishu.cn/docx/RPjXdXj5uoFaa6xWMS3cAKd9nEg](https://aigcreative.feishu.cn/docx/RPjXdXj5uoFaa6xWMS3cAKd9nEg)
-
->
 
 让我们回顾一下上一章的一些知识：
 
@@ -10,27 +9,25 @@
 
 编写提示也有两个步骤，通过提供相关上下文构建提示，第二部分是优化，如何逐步改进提示。
 
-至此，我们对如何编写提示有了一些基本的了解，但还需要更深入。 在本章中，您将从尝试各种提示到理解为什么一种提示比另一种更好的方向出发。 您将学习如何按照一些适用于 LLMs 的基本技术构建提示。
+至此，我们对如何编写提示有了一些基本的了解，但还需要更深入。在本章中，您将从尝试各种提示到理解为什么一种提示比另一种更好的方向出发。您将学习如何按照一些适用于 LLMs 的基本技术构建提示。
 
 ## [本章概述](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e6%9c%ac%e7%ab%a0%e6%a6%82%e8%bf%b0)
 
 在本章中，我们将讨论以下内容：
 
-+   通过在提示中应用不同的技术来扩展您的提示工程知识。
-
-+   配置提示以改变输出。
++ 通过在提示中应用不同的技术来扩展您的提示工程知识。
++ 配置提示以改变输出。
 
 ## [学习目标](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87)
 
 完成本课程后，您将能够掌握：
 
-+   应用提示工程技术来改善提示结果。
-
-+   执行多样化或确定性的提示。
++ 应用提示工程技术来改善提示结果。
++ 执行多样化或确定性的提示。
 
 ## [提示工程](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e6%8f%90%e7%a4%ba%e5%b7%a5%e7%a8%8b)
 
-提示工程是创建将产生所需结果的提示的过程。 提示工程不仅仅是编写文本提示。提示工程不是一门工程学科，它更像是一组可以应用以获得所需结果的技术。
+提示工程是创建将产生所需结果的提示的过程。提示工程不仅仅是编写文本提示。提示工程不是一门工程学科，它更像是一组可以应用以获得所需结果的技术。
 
 ### [一个例子](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e4%b8%80%e4%b8%aa%e4%be%8b%e5%ad%90)
 
@@ -42,80 +39,70 @@
 
 让我们来分解一下。
 
-+   上下文，您指定它应该与“地理”有关。
-
-+   限制输出，您希望不超过 10 个问题。
++ 上下文，您指定它应该与“地理”有关。
++ 限制输出，您希望不超过 10 个问题。
 
 ### [简单提示的局限性](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e7%ae%80%e5%8d%95%e6%8f%90%e7%a4%ba%e7%9a%84%e5%b1%80%e9%99%90%e6%80%a7)
 
-您可能会也可能不会得到想要的结果。 你会得到你的问题，但地理是一个大话题，你可能无法得到你想要的，原因如下：
+您可能会或可能不会得到想要的结果。你会得到你的问题，但地理是一个大话题，你可能无法得到你想要的，原因如下：
 
-+   大话题，你不知道它是否会涉及国家、首都、河流等等。
-
-+   格式，如果您希望问题以某种方式格式化怎么办？
++ 大话题，你不知道它是否会涉及国家、首都、河流等等。
++ 格式，如果您希望问题以某种方式格式化怎么办？
 
 正如您所看到的，创建提示时需要考虑很多因素。
 
-到目前为止，我们已经看到了一个简单的提示示例，但生成式人工智能能够为各种角色和行业的人们提供更多帮助。 接下来让我们探讨一些基本技术。
+到目前为止，我们已经看到了一个简单的提示示例，但生成式人工智能能够为各种角色和行业的人们提供更多帮助。接下来让我们探讨一些基本技术。
 
 ### [提示技巧](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e6%8f%90%e7%a4%ba%e6%8a%80%e5%b7%a7)
 
 首先，我们需要了解提示是 LLM 的一个紧急属性，这意味着这不是模型中内置的功能，而是我们在使用模型时发现的东西。
 
-我们可以使用一些基本技巧来提示 LLM。 让我们来探索一下它们。
+我们可以使用一些基本技巧来提示 LLM。让我们来探索一下它们。
 
-+   零样本提示，这是最基本的提示形式。它是一种单次提示，要求 LLM 仅根据其训练数据做出响应。
-
-+   少样本提示，这种类型的提示通过提供一个或多个示例来引导 LLM 生成响应。
-
-+   思维链，这种类型的提示告诉 LLMs 如何将问题分解为步骤。
-
-+   生成的知识，为了提高提示的响应，您可以在提示中额外提供生成的事实或知识。
-
-+   从最少到最多，就像链式分析一样，这种技术是将问题分解为一系列步骤，然后要求按顺序执行这些步骤。
-
-+   自我完善，这种技术是修正 LLM 的输出，然后要求其改进。
-
-+   多维度提示。 您在这里想要的是确保 LLM 答案是正确的，并要求它解释答案的各个部分。 这是一种自我完善的形式。
++ 零样本提示，这是最基本的提示形式。它是一种单次提示，要求 LLM 仅根据其训练数据做出响应。
++ 少样本提示，这种类型的提示通过提供一个或多个示例来引导 LLM 生成响应。
++ 思维链，这种类型的提示告诉 LLMs 如何将问题分解为步骤。
++ 生成的知识，为了提高提示的响应，您可以在提示中额外提供生成的事实或知识。
++ 从最少到最多，就像链式分析一样，这种技术是将问题分解为一系列步骤，然后要求按顺序执行这些步骤。
++ 自我完善，这种技术是修正 LLM 的输出，然后要求其改进。
++ 多维度提示。您在这里想要的是确保 LLM 答案是正确的，并要求它解释答案的各个部分。这是一种自我完善的形式。
 
 ### [零样本提示](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e9%9b%b6%e6%a0%b7%e6%9c%ac%e6%8f%90%e7%a4%ba)
 
 这种提示风格非常简单，它只有一个提示。当你开始学习 LLM 时，可能就会用到这种方法。下面是一个例子：
 
-+   Prompt: "What is Algebra?"
-
-+   Answer: "Algebra is a branch of mathematics that studies mathematical symbols and the rules for manipulating these symbols."
++ Prompt: "What is Algebra?"
++ Answer: "Algebra is a branch of mathematics that studies mathematical symbols and the rules for manipulating these symbols."
 
 ### [少样本提示](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%b0%91%e6%a0%b7%e6%9c%ac%e6%8f%90%e7%a4%ba)
 
 这种提示方式通过在提出请求的同时提供一些示例来帮助模型。它由单个提示和附加的特定任务数据组成。下面是一个例子：
 
-+   Prompt: "以莎士比亚的风格写一首诗。下面是一些莎士比亚十四行诗的例子：十四行诗第 18 首："我要把你比作夏日吗？你更可爱，更有节制......'第 116 首十四行诗："让我不要为真正心灵的结合设置障碍。爱不是爱，当它发现改变时就会改变......'十四行诗第 132 首："我爱你的眼睛，它们怜悯我，知道你的心在折磨我，对我不屑一顾......现在，请写一首关于月亮之美的十四行诗。"
-
-+   Answer："在天空中，月亮闪烁着柔和的光芒，散发着温柔的光辉，......"
++ Prompt: "以莎士比亚的风格写一首诗。下面是一些莎士比亚十四行诗的例子：十四行诗第 18 首："我要把你比作夏日吗？你更可爱，更有节制......'第 116 首十四行诗："让我不要为真正心灵的结合设置障碍。爱不是爱，当它发现改变时就会改变......'十四行诗第 132 首："我爱你的眼睛，它们怜悯我，知道你的心在折磨我，对我不屑一顾......现在，请写一首关于月亮之美的十四行诗。"
++ Answer："在天空中，月亮闪烁着柔和的光芒，散发着温柔的光辉，......"
 
 示例为 LLM 提供了所需输出的背景、格式或风格。它们有助于模型理解具体任务，并生成更准确、更相关的回复。
 
 ### [思维链](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e6%80%9d%e7%bb%b4%e9%93%be)
 
-思想链是一项非常有趣的技术，因为它涉及到 LLMs 的分步。 这个想法是以一种让 LLMs 了解如何做某种事情的方式来指导 LLMs。 考虑下面的例子，无论有没有思想链：
+思想链是一项非常有趣的技术，因为它涉及到 LLMs 的分步。这个想法是以一种让 LLMs 了解如何做某种事情的方式来指导 LLMs。考虑下面的例子，无论有没有思想链：
 
-+   Prompt: "Alice has 5 apples, throws 3 apples, gives 2 to Bob and Bob gives one back, how many apples does Alice have?"
++ Prompt: "Alice has 5 apples, throws 3 apples, gives 2 to Bob and Bob gives one back, how many apples does Alice have?"
+
 Answer: 5
 
-LLM 给出的答案为 5，这是不正确的。 根据计算结果 (5 -3 -2 + 1 = 1)，正确答案是 1 个苹果。
+LLM 给出的答案为 5，这是不正确的。根据计算结果 (5 -3 -2 + 1 = 1)，正确答案是 1 个苹果。
 
 那么我们怎样才能教 LLM 正确地做到这一点呢？
 
-让我们尝试一下思维链。 应用思维链意味着：
+让我们尝试一下思维链。应用思维链意味着：
 
-1.  给 LLM 一个类似的例子。
+1. 给 LLM 一个类似的例子。
+2. 展示计算结果，以及如何正确计算。
+3. 提供原始提示。
 
-1.  展示计算结果，以及如何正确计算。
++ Prompt: "Lisa has 7 apples, throws 1 apple, gives 4 apples to Bart and Bart gives one back: 7 -1 = 6 6 -4 = 2 2 +1 = 3
 
-1.  提供原始提示。
-
-+   Prompt: "Lisa has 7 apples, throws 1 apple, gives 4 apples to Bart and Bart gives one back: 7 -1 = 6 6 -4 = 2 2 +1 = 3
 Alice has 5 apples, throws 3 apples, gives 2 to Bob and Bob gives one back, how many apples does Alice have?" Answer: 1
 
 请注意我们如何用另一个示例、计算和原始提示编写更长的提示，然后得出正确答案 1。
@@ -124,7 +111,7 @@ Alice has 5 apples, throws 3 apples, gives 2 to Bob and Bob gives one back, how 
 
 ### [生成的知识](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e7%94%9f%e6%88%90%e7%9a%84%e7%9f%a5%e8%af%86)
 
-很多时候，当您想要构建提示时，您希望使用自己公司的数据来实现。 您希望提示的一部分来自公司，另一部分应该是您感兴趣的实际提示。
+很多时候，当您想要构建提示时，您希望使用自己公司的数据来实现。您希望提示的一部分来自公司，另一部分应该是您感兴趣的实际提示。
 
 举个例子，如果您从事保险业务，那么您的提示可能如下所示：
 
@@ -137,7 +124,7 @@ Budget: {{budget}}
 Requirements: {{requirements}}
 ```
 
-在上面，您可以看到如何使用模板构建提示。 模板中有许多变量，用“{{variable}}”表示，这些变量将替换为公司 API 中的实际值。
+在上面，您可以看到如何使用模板构建提示。模板中有许多变量，用`{{variable}}`表示，这些变量将替换为公司 API 中的实际值。
 
 以下示例展示了变量被公司内容替换后提示的外观：
 
@@ -167,7 +154,7 @@ Given the budget and requirements, we suggest the following insurance package fr
 Total cost: $1,200 USD
 ```
 
-正如您所看到的，它还建议购买人寿保险，但事实并非如此。 此结果表明我们需要通过更改提示来优化提示，使其更清楚地了解其允许的内容。 经过一些试验和错误之后，我们得到以下提示：
+正如您所看到的，它还建议购买人寿保险，但事实并非如此。此结果表明我们需要通过更改提示来优化提示，使其更清楚地了解其允许的内容。经过一些试验和错误之后，我们得到以下提示：
 
 ```
 Insurance company: ACME Insurance
@@ -182,7 +169,7 @@ Please suggest an insurance given the following budget and requirements:
 Budget: $1000 restrict choice to types: Car, Home
 ```
 
-请注意添加 type 和 cost 以及使用关键字 restrict 如何帮助 LLM 理解我们想要的内容。
+请注意添加`type`和`cost`以及使用关键字`restrict`如何帮助 LLM 理解我们想要的内容。
 
 现在我们得到以下响应：
 
@@ -194,35 +181,28 @@ Given the budget and requirements, we suggest the Car, Cheap insurance product w
 
 ### [从少到多](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e4%bb%8e%e5%b0%91%e5%88%b0%e5%a4%9a)
 
-从最少到最多提示的想法是将一个更大的问题分解为多个子问题。 这样，您就可以帮助指导 LLMs 如何“克服”更大的问题。 数据科学就是一个很好的例子，你可以要求 LLMs 来划分问题，如下所示：
+从最少到最多提示的想法是将一个更大的问题分解为多个子问题。这样，您就可以帮助指导 LLMs 如何“克服”更大的问题。数据科学就是一个很好的例子，你可以要求 LLMs 来划分问题，如下所示：
 
 > Prompt: How to perform data science in 5 steps?
 
 你的人工智能助理会回答：
 
-1.  收集数据
-
-1.  清理数据
-
-1.  分析数据
-
-1.  绘制数据
-
-1.  展示数据
+1. 收集数据
+2. 清理数据
+3. 分析数据
+4. 绘制数据
+5. 展示数据
 
 ### [自我完善，质疑结果](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e8%87%aa%e6%88%91%e5%ae%8c%e5%96%84%ef%bc%8c%e8%b4%a8%e7%96%91%e7%bb%93%e6%9e%9c)
 
-对于生成式人工智能和 LLMs，你不能相信其输出。 你需要验证一下。 毕竟， LLMs 只是向您展示下一个最有可能说的话，而不是正确的内容。 因此，一个好主意是要求 LLMs 自我批评，这引导我们自我完善技术。
+对于生成式人工智能和 LLMs，你不能相信其输出。你需要验证一下。毕竟，LLMs 只是向您展示下一个最有可能说的话，而不是正确的内容。因此，一个好主意是要求 LLMs 自我批评，这引导我们自我完善技术。
 
 其工作原理是按照以下步骤操作：
 
-1.  要求 LLM 解决问题的初始提示
-
-1.  LLM 产生答案
-
-1.  质疑答案并要求人工智能改进
-
-1.  LLM 再次回答，这次考虑了质疑并提出了解决方案
+1. 要求 LLM 解决问题的初始提示
+2. LLM 产生答案
+3. 质疑答案并要求人工智能改进
+4. LLM 再次回答，这次考虑了质疑并提出了解决方案
 
 您可以根据需要多次重复此过程。
 
@@ -236,55 +216,55 @@ AI Answer:
 import flask
 app = Flask(__name__)
 
-@app.route(&#x27;/products&#x27;)
+@app.route('/products')
 def products():
-    return &#x27;Products&#x27;
+    return 'Products'
 
-@app.route(&#x27;/customers&#x27;)
+@app.route('/customers')
 def customers():
-    return &#x27;Customers&#x27;
+    return 'Customers'
 ```
 
 > Prompt: suggest 3 improvements of the above code
 
 AI Answer:
 
+
+
 ```
 Sure, here are three suggestions to improve the code:
 
 Import the correct module: The first line should import Flask instead of flask. The correct import statement should be from flask import Flask.
 
-Add a main function: Add a if __name__ == &#x27;__main__&#x27;: block to the end of the file to run the application when the file is executed.
+Add a main function: Add a if __name__ == '__main__': block to the end of the file to run the application when the file is executed.
 
-Use f-strings: Use f-strings to format the return statements in the route functions. For example, return &#x27;Products&#x27; can be changed to return f&#x27;This is the {request.path} page&#x27;.
+Use f-strings: Use f-strings to format the return statements in the route functions. For example, return 'Products' can be changed to return f'This is the {request.path} page'.
 
 from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route(&#x27;/products&#x27;)
+@app.route('/products')
 def products():
-    return f&#x27;This is the {request.path} page&#x27;
+    return f'This is the {request.path} page'
 
-@app.route(&#x27;/customers&#x27;)
+@app.route('/customers')
 def customers():
-    return f&#x27;This is the {request.path} page&#x27;
+    return f'This is the {request.path} page'
 
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     app.run()
 ```
 
 正如您所看到的，由于对第一个答案的批评，上述人工智能响应正在改进第一个建议的代码。
 
-### [多维度的提示](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%a4%9a%e7%bb%b4%e5%ba%a6%e7%9a%84%e6%8f%90%e7%a4%ba)
+## [多维度的提示](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%a4%9a%e7%bb%b4%e5%ba%a6%e7%9a%84%e6%8f%90%e7%a4%ba)
 
-多维度的提示是一种类似于自我完善的技术，但它更多的是要求 LLMs 解释自己。 目标是减少 LLMs 输出不一致，以确保得出正确的答案。 要遵循的工作流程是：
+多维度的提示是一种类似于自我完善的技术，但它更多的是要求 LLMs 解释自己。目标是减少 LLMs 输出不一致，以确保得出正确的答案。要遵循的工作流程是：
 
-1.  请 LLM 回答问题
-
-1.  对于答案的每一部分，请 LLM 更深入地解释。
-
-1.  如果存在不一致，则丢弃不一致的部分。
+1. 请 LLM 回答问题
+2. 对于答案的每一部分，请 LLM 更深入地解释。
+3. 如果存在不一致，则丢弃不一致的部分。
 
 重复 2 和 3，直到您完成所有部分并对答案感到满意为止。
 
@@ -298,7 +278,7 @@ if __name__ == &#x27;__main__&#x27;:
 1. Identify the communication channels
 ```
 
-它确定了 5 个步骤，但是我们可以确定这是否正确吗？ 让我们请 LLM 解释一下每一步：
+它确定了 5 个步骤，但是我们可以确定这是否正确吗？让我们请 LLM 解释一下每一步：
 
 > prompt: Explain the first step in more detail, what are the risks in detail with a pandemic?
 
@@ -317,7 +297,7 @@ The risks are the following:
 > prompt: In a Pandemic, which is the biggest risk and why?
 
 ```
-The biggest risk is loss of life because it&#x27;s the most important thing to protect.
+The biggest risk is loss of life because it's the most important thing to protect.
 ```
 
 > What are the two biggest risks in a pandemic?
@@ -326,11 +306,11 @@ The biggest risk is loss of life because it&#x27;s the most important thing to p
 The two biggest risks are loss of life and loss of business.
 ```
 
-在这一点上，LLMs 是一致的，并提到“生活”和“商业”是两大风险。 我们现在可以继续下一步并感到相当有信心。 然而，我们不应该盲目相信 LLM，我们应该始终验证输出。
+在这一点上，LLMs 是一致的，并提到“生活”和“商业”是两大风险。我们现在可以继续下一步并感到相当有信心。然而，我们不应该盲目相信 LLM，我们应该始终验证输出。
 
 ## [改变您的输出](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e6%94%b9%e5%8f%98%e6%82%a8%e7%9a%84%e8%be%93%e5%87%ba)
 
-LLM 本质上是不确定的，这意味着每次运行相同的提示时都会得到不同的结果。 例如尝试以下提示：
+LLM 本质上是不确定的，这意味着每次运行相同的提示时都会得到不同的结果。例如尝试以下提示：
 
 > "Generate code for a Python Web API"
 
@@ -343,7 +323,7 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 
 # Create a route for the API
-@app.route(&#x27;/api&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/api', methods=['GET'])
 def api():
     # Get the data from the request
     data = request.args
@@ -363,7 +343,7 @@ def process_data(data):
     return result
 
 # Run the app
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     app.run()
 ```
 
@@ -376,51 +356,51 @@ from flask import request, jsonify
 
 #create the Flask application
 app = flask.Flask(__name__)
-app.config[&quot;DEBUG&quot;] = True
+app.config["DEBUG"] = True
 
 #create a list of books
 books = [
-    {&#x27;id&#x27;: 0,
-     &#x27;title&#x27;: &#x27;A Fire Upon the Deep&#x27;,
-     &#x27;author&#x27;: &#x27;Vernor Vinge&#x27;,
-     &#x27;first_sentence&#x27;: &#x27;The coldsleep itself was dreamless.&#x27;,
-     &#x27;year_published&#x27;: &#x27;1992&#x27;},
-    {&#x27;id&#x27;: 1,
-     &#x27;title&#x27;: &#x27;The Ones Who Walk Away From Omelas&#x27;,
-     &#x27;author&#x27;: &#x27;Ursula K. Le Guin&#x27;,
-     &#x27;first_sentence&#x27;: &#x27;With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.&#x27;,
-     &#x27;published&#x27;: &#x27;1973&#x27;},
-    {&#x27;id&#x27;: 2,
-     &#x27;title&#x27;: &#x27;Dhalgren&#x27;,
-     &#x27;author&#x27;: &#x27;Samuel R. Delany&#x27;,
-     &#x27;first_sentence&#x27;: &#x27;to wound the autumnal city.&#x27;,
-     &#x27;published&#x27;: &#x27;1975&#x27;}
+    {'id': 0,
+     'title': 'A Fire Upon the Deep',
+     'author': 'Vernor Vinge',
+     'first_sentence': 'The coldsleep itself was dreamless.',
+     'year_published': '1992'},
+    {'id': 1,
+     'title': 'The Ones Who Walk Away From Omelas',
+     'author': 'Ursula K. Le Guin',
+     'first_sentence': 'With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.',
+     'published': '1973'},
+    {'id': 2,
+     'title': 'Dhalgren',
+     'author': 'Samuel R. Delany',
+     'first_sentence': 'to wound the autumnal city.',
+     'published': '1975'}
 ]
 
 #create an endpoint for the API
-@app.route(&#x27;/&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/', methods=['GET'])
 def home():
-    return &#x27;&#x27;&#x27;&lt;h1&gt;Books API&lt;/h1&gt;&lt;p&gt;A prototype API for retrieving books.&lt;/p&gt;&#x27;&#x27;&#x27;
+    return '''<h1>Books API</h1><p>A prototype API for retrieving books.</p>'''
 #create an endpoint to return all books
-@app.route(&#x27;/api/v1/resources/books/all&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/api/v1/resources/books/all', methods=['GET'])
 def api_all():
     return jsonify(books)
 #create an endpoint to return a single book
-@app.route(&#x27;/api/v1/resources/books&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/api/v1/resources/books', methods=['GET'])
 def api_id():
     #check if an ID was provided as part of the URL
     #if ID is provided, assign it to a variable
     #if no ID is provided, display an error
-    if &#x27;id&#x27; in request.args:
-        id = int(request.args[&#x27;id&#x27;])
+    if 'id' in request.args:
+        id = int(request.args['id'])
     else:
-        return &quot;Error: No id field provided. Please specify an id.&quot;
+        return "Error: No id field provided. Please specify an id."
     #create an empty list for our results
     results = []
     #loop through the data and match results that fit the requested ID
     #IDs are unique, but other fields might return many results
     for book in books:
-        if book[&#x27;id&#x27;] == id:
+        if book['id'] == id:
             results.append(book)
     #use the jsonify function from Flask to convert our list of
     #Python dictionaries to the JSON format
@@ -430,13 +410,13 @@ app.run()
 
 > 多变的输出是个问题吗？
 
-取决于你想做什么。 如果你想要一个具体的回应，那就是一个问题。 如果您可以接受诸如“生成任意 3 个地理问题”之类的不同输出，那么这不是问题。
+取决于你想做什么。如果你想要一个具体的回应，那就是一个问题。如果您可以接受诸如“生成任意 3 个地理问题”之类的不同输出，那么这不是问题。
 
 ### [利用温度来改变输出](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e5%88%a9%e7%94%a8%e6%b8%a9%e5%ba%a6%e6%9d%a5%e6%94%b9%e5%8f%98%e8%be%93%e5%87%ba)
 
-好的，所以我们决定将输出限制为更可预测，即更具确定性。 我们该怎么做呢？
+好的，所以我们决定将输出限制为更可预测，即更具确定性。我们该怎么做呢？
 
-温度是 0 到 1 之间的值，其中 0 最具确定性，1 最具变化性。 默认值为 0.7。 让我们看看在温度设置为 0.1 的情况下两次运行相同的提示会发生什么：
+温度是 0 到 1 之间的值，其中 0 最具确定性，1 最具变化性。默认值为 0.7。让我们看看在温度设置为 0.1 的情况下两次运行相同的提示会发生什么：
 
 > "Generate code for a Python Web API"
 
@@ -449,7 +429,7 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 
 #create an endpoint for the API
-@app.route(&#x27;/api/v1/endpoint&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/api/v1/endpoint', methods=['GET'])
 def api_endpoint():
     #get the request data
     data = request.get_json()
@@ -463,13 +443,13 @@ def api_endpoint():
 #function to process the data
 def process_data(data):
     #process the data
-    result = {&#x27;result&#x27;: &#x27;success&#x27;}
+    result = {'result': 'success'}
 
     #return the result
     return result
 
 #run the Flask app
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     app.run()
 ```
 
@@ -484,7 +464,7 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 
 #create a route for the API
-@app.route(&#x27;/api&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/api', methods=['GET'])
 def api_call():
     #get the data from the request
     data = request.get_json()
@@ -504,11 +484,13 @@ def process_data(data):
     return result
 
 #run the app
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     app.run()
 ```
 
-这两个输出之间只有很小的差异。 这次我们反其道而行之，将温度设置为 0.9：
+这两个输出之间只有很小的差异。这次我们反其道而行之，将温度设置为 0.9：
+
+
 
 ```
 # Import necessary libraries
@@ -519,7 +501,7 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 
 # Create a route for the API
-@app.route(&#x27;/api&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/api', methods=['GET'])
 def api_call():
     # Get the data from the request
     data = request.args
@@ -539,7 +521,7 @@ def process_data(data):
     return result
 
 # Run the app
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     app.run()
 ```
 
@@ -551,20 +533,20 @@ from flask import request, jsonify
 
 # create the Flask app
 app = flask.Flask(__name__)
-app.config[&#x27;DEBUG&#x27;] = True
+app.config['DEBUG'] = True
 
 # create some test data
 books = [
-    {&#x27;id&#x27;: 0, &#x27;title&#x27;: &#x27;A Fire Upon The Deep&#x27;, &#x27;author&#x27;: &#x27;Vernor Vinge&#x27;, &#x27;first_sentence&#x27;: &#x27;The coldsleep itself was dreamless.&#x27;, &#x27;year_published&#x27;: &#x27;1992&#x27;},
-    {&#x27;id&#x27;: 1, &#x27;title&#x27;: &#x27;The Ones Who Walk Away From Omelas&#x27;, &#x27;author&#x27;: &#x27;Ursula K. Le Guin&#x27;, &#x27;first_sentence&#x27;: &#x27;With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.&#x27;, &#x27;published&#x27;: &#x27;1973&#x27;},
-    {&#x27;id&#x27;: 2, &#x27;title&#x27;: &#x27;Dhalgren&#x27;, &#x27;author&#x27;: &#x27;Samuel R. Delany&#x27;, &#x27;first_sentence&#x27;: &#x27;to wound the autumnal city.&#x27;, &#x27;published&#x27;: &#x27;1975&#x27;}
+    {'id': 0, 'title': 'A Fire Upon The Deep', 'author': 'Vernor Vinge', 'first_sentence': 'The coldsleep itself was dreamless.', 'year_published': '1992'},
+    {'id': 1, 'title': 'The Ones Who Walk Away From Omelas', 'author': 'Ursula K. Le Guin', 'first_sentence': 'With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.', 'published': '1973'},
+    {'id': 2, 'title': 'Dhalgren', 'author': 'Samuel R. Delany', 'first_sentence': 'to wound the autumnal city.', 'published': '1975'}
 ]
 
 # create an endpoint
-@app.route(&#x27;/&#x27;, methods=[&#x27;GET&#x27;])
+@app.route('/', methods=['GET'])
 def home():
-    return &#x27;&#x27;&#x27;&lt;h1&gt;Welcome to our book API!&lt;/h1&gt;&#x27;&#x27;&#x27;
-@app.route(&#x27;/api/v1/resources/books
+    return '''<h1>Welcome to our book API!</h1>'''
+@app.route('/api/v1/resources/books
 ```
 
 正如您所看到的，结果各式各样。
@@ -580,13 +562,9 @@ def home():
 以下是一些值得考虑的良好做法：
 
 +   指定上下文。 上下文很重要，您可以指定的领域、主题等越多越好。
-
 +   限制输出。 如果您想要特定数量的项目或特定长度，请指定。
-
 +   指定内容和方式。 请记住提及您想要什么以及您想要如何实现，例如“创建一个包含路由产品和客户的 Python Web API，将其分为 3 个文件”。
-
 +   使用模板。 通常，您会希望使用公司的数据来丰富提示。 使用模板来执行此操作。 模板可以包含用实际数据替换的变量。
-
 +   拼写正确。 LLMs 可能会为您提供正确的答案，但如果您拼写正确，您会得到更好的答案。
 
 ## [作业](https://microsoft.github.io/generative-ai-for-beginners/#/05-advanced-prompts/translations/cn/README?wt.mc_id=academic-105485-koreyst&id=%e4%bd%9c%e4%b8%9a)
@@ -598,12 +576,12 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route(&#x27;/&#x27;)
+@app.route('/')
 def hello():
-    name = request.args.get(&#x27;name&#x27;, &#x27;World&#x27;)
-    return f&#x27;Hello, {name}!&#x27;
+    name = request.args.get('name', 'World')
+    return f'Hello, {name}!'
 
-if __name__ == &#x27;__main__&#x27;:
+if __name__ == '__main__':
     app.run()
 ```
 

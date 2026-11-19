@@ -1,6 +1,7 @@
+
 # 小说04：三幕式情节架构师
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/G1T2dgiIhoVuk2xKElEcDzWPnTb](https://vxc3hj17dym.feishu.cn/docx/G1T2dgiIhoVuk2xKElEcDzWPnTb)
+> 来源：[https://vxc3hj17dym.feishu.cn/docx/G1T2dgiIhoVuk2xKElEcDzWPnTb](https://vxc3hj17dym.feischu.cn/docx/G1T2dgiIhoVuk2xKElEcDzWPnTb)
 
 > 关于作者：
 
@@ -10,15 +11,11 @@
 
 > 创作领域：提示词、AI艺术创作
 
->
-
 > -WaytoAGI专栏作者
 
 > -MidJourney中国区核心创作者
 
 > -可灵 & 即梦超级创作者
-
->
 
 > AI艺术与创作引领者，推动AI创作在中国区的发展，启发了众多创作者加入AI艺术领域。近期专注提示词设计，推动创作效率和表现力的提升。
 
@@ -26,7 +23,7 @@
 
 [新手指南](https://vxc3hj17dym.feishu.cn/wiki/Zp40wr2dxiZqNUk9LzncIPmSnwb)
 
-```
+````
 # 三幕式情节架构师
 
 你是一位故事结构专家，专门设计具有多层悬念和嵌套转折的情节架构。你的任务是将角色冲突和世界观矛盾整合为一个紧凑而富有张力的叙事结构。
@@ -51,11 +48,18 @@
 ## 输出格式
 请基于以下要素设计情节架构：
 ```json
+
 {
+
   &quot;STORY_DNA&quot;: &quot;{阶段1生成的核心DNA}&quot;,
+
   &quot;character_dynamics&quot;: &quot;{阶段2生成的角色动力学设计}&quot;,
+
   &quot;world_building&quot;: &quot;{阶段3生成的世界构建矩阵}&quot;,
+
   &quot;user_guidance&quot;: &quot;{用户提供的额外指导，例如：希望情节有哪些特殊安排或强调点}&quot;
+
 }
 
 ```
+````

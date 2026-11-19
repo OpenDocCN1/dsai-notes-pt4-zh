@@ -1,3 +1,4 @@
+
 # AI每日资讯-202407
 
 > 来源：[https://aigcreative.feishu.cn/docx/CT2ndc7FDon52Kx5CmJcts11ncg](https://aigcreative.feishu.cn/docx/CT2ndc7FDon52Kx5CmJcts11ncg)
@@ -98,7 +99,7 @@ Stable Video 4D可以将单个视频转换为八个不同角度的新视角视�
 
 ## 【20240723】产品 | Adobe 发布Firefly Vector AI 模型，为 Illustrator 和 Photoshop 推出更多生成式 AI 功能
 
-Adobe Illustrator 和 Photoshop 推出一些新的工具和生成式 AI 功能。此次更新最引人注目的功能来自 Adobe 最新的 Firefly Vector AI 模型，该模型今天开始公开测试。 这个新的 Firefly Vector 模型为 Illustrator 带来了诸多新功能，比如生成形状填充 (Generative Shape Fill)，用户可以通过描述性文本提示为形状添加详细的矢量图形。 更新后的模型还改进了文本到图案 (Text to Pattern) 的测试功能，可以用来创建可扩展的自定义矢量图案，如壁纸； 还有样式参考 (Style Reference)，能够生成与现有样式相匹配的输出。
+Adobe Illustrator 和 Photoshop 推出一些新的工具和生成式 AI 功能。此次更新最引人注目的功能来自 Adobe 最新的 Firefly Vector AI 模型，该模型今天开始公开测试。这个新的 Firefly Vector 模型为 Illustrator 带来了诸多新功能，比如生成形状填充 (Generative Shape Fill)，用户可以通过描述性文本提示为形状添加详细的矢量图形。更新后的模型还改进了文本到图案 (Text to Pattern) 的测试功能，可以用来创建可扩展的自定义矢量图案，如壁纸；还有样式参考 (Style Reference)，能够生成与现有样式相匹配的输出。
 
 ## 【20240723】产品 | OpenAI API推出模型微调功能，助力定制化应用开发
 
@@ -106,15 +107,13 @@ OpenAI API的模型微调功能允许用户通过提供特定示例，训练出�
 
 ## 【20240723】产品 | PixVerse V2版本正式上线
 
-*更长： 8 秒视频生成
+* 更长：8 秒视频生成
+* 更有趣：全新玩法，一键生成1-5段连续视频内容
+* 更一致：人物一致、风格一致、场景一致
 
-*更有趣：全新玩法，一键生成1-5段连续视频内容
+🔗入门教程：[PixVerse V2 使用教程](https://wiuswkbgux0.feishu.cn/wiki/ZXYpwJkatiqBGNkbjg7cQ489nAc)
 
-*更一致：人物一致、风格一致、场景一致
-
-🔗入门教程： [PixVerse V2 使用教程](https://wiuswkbgux0.feishu.cn/wiki/ZXYpwJkatiqBGNkbjg7cQ489nAc)
-
-👏体验地址： https://pixverse.ai
+👏体验地址：https://pixverse.ai
 
 ## 【20240723】产品 | 快手可灵AI全量上线，不再需要排队预约，不过开始收费了
 
@@ -128,9 +127,7 @@ Meta 发布了 Llama 3.1 405B 模型，具备 128K 长文本处理能力，共�
 
 ## 【20240722】产品 | Luma AI发布Dream Machine的Loops功能
 
-Luma AI发布了Dream Machine的新功能Loops，允许从文本或图像生成无缝的AI无
-
-限循环的视频，以持续激发用户的想象力。用户可以通过该功能在其创意过程中反复使用和调整内容，增强创作体验。
+Luma AI发布了Dream Machine的新功能Loops，允许从文本或图像生成无缝的AI无限循环的视频，以持续激发用户的想象力。用户可以通过该功能在其创意过程中反复使用和调整内容，增强创作体验。
 
 ![](img/c9afd91226a3af46a196f51e7c51ac5e.png)
 
@@ -158,15 +155,11 @@ Anthropic公司最近发布了Claude Android应用程序，使得安卓用户也
 
 OpenAI 在全员大会上宣布推出新的AGI评分体系，将人工智能分为五个等级：
 
-1.第一级（Level 1, ChatBots）：这是目前我们已经看到的AI，能够以对话的形式与人交流，比如现在的ChatGPT。
-
-2.第二级 （Level 2, Reasoners）：这个级别的AI能够像拥有博士学位的人那样进行基本的推理和解决问题，但不依赖任何外部工具。
-
-3.第三级 （Level 3, Agents）：这一级别的AI能够在几天内代表用户执行任务，比如自动完成一些复杂的工作流程。
-
-4.第四级 （Level 4，Innovations）：这一级别的AI不仅能完成任务，还能进行创新，提出新的解决方案或发明。
-
-1.  第五级（Level 5, Organizations）：最高级别的AI可以像一个组织一样工作，处理大量复杂任务，几乎能够完全取代人类在某些领域的工作。
+1. 第一级（Level 1, ChatBots）：这是目前我们已经看到的AI，能够以对话的形式与人交流，比如现在的ChatGPT。
+2. 第二级（Level 2, Reasoners）：这个级别的AI能够像拥有博士学位的人那样进行基本的推理和解决问题，但不依赖任何外部工具。
+3. 第三级（Level 3, Agents）：这一级别的AI能够在几天内代表用户执行任务，比如自动完成一些复杂的工作流程。
+4. 第四级（Level 4, Innovations）：这一级别的AI不仅能完成任务，还能进行创新，提出新的解决方案或发明。
+5. 第五级（Level 5, Organizations）：最高级别的AI可以像一个组织一样工作，处理大量复杂任务，几乎能够完全取代人类在某些领域的工作。
 
 目前ChatGPT 处于第一级，即将升级至第二级“推理者”，其基于GPT-4模型的最新能力已接近人类推理水平。这一进展标志着人工智能向更高自主性和解决问题能力迈进的重要一步。
 
@@ -182,15 +175,11 @@ https://docs.qingque.cn/d/home/eZQDp092-vzqbhb02KUdurkwP?identityId=1oEG9JKKMFv
 
 OpenAI 在全员大会上宣布推出新的AGI评分体系，将人工智能分为五个等级：
 
-1.第一级（Level 1, ChatBots）：这是目前我们已经看到的AI，能够以对话的形式与人交流，比如现在的ChatGPT。
-
-2.第二级 （Level 2, Reasoners）：这个级别的AI能够像拥有博士学位的人那样进行基本的推理和解决问题，但不依赖任何外部工具。
-
-3.第三级 （Level 3, Agents）：这一级别的AI能够在几天内代表用户执行任务，比如自动完成一些复杂的工作流程。
-
-4.第四级 （Level 4，Innovations）：这一级别的AI不仅能完成任务，还能进行创新，提出新的解决方案或发明。
-
-5.第五级（Level 5, Organizations）：最高级别的AI可以像一个组织一样工作，处理大量复杂任务，几乎能够完全取代人类在某些领域的工作。
+1. 第一级（Level 1, ChatBots）：这是目前我们已经看到的AI，能够以对话的形式与人交流，比如现在的ChatGPT。
+2. 第二级（Level 2, Reasoners）：这个级别的AI能够像拥有博士学位的人那样进行基本的推理和解决问题，但不依赖任何外部工具。
+3. 第三级（Level 3, Agents）：这一级别的AI能够在几天内代表用户执行任务，比如自动完成一些复杂的工作流程。
+4. 第四级（Level 4, Innovations）：这一级别的AI不仅能完成任务，还能进行创新，提出新的解决方案或发明。
+5. 第五级（Level 5, Organizations）：最高级别的AI可以像一个组织一样工作，处理大量复杂任务，几乎能够完全取代人类在某些领域的工作。
 
 目前ChatGPT 处于第一级，即将升级至第二级“推理者”，其基于GPT-4模型的最新能力已接近人类推理水平。这一进展标志着人工智能向更高自主性和解决问题能力迈进的重要一步。
 
@@ -201,6 +190,8 @@ OpenAI 在全员大会上宣布推出新的AGI评分体系，将人工智能分�
 这些设备通过Galaxy AI的升级和独特的可折叠形态，以及连接的Galaxy生态系统，将智能手机的人工智能提升到新的高度。Galaxy Z Fold6和Flip6搭载了高通Snapdragon 8 Gen 3移动平台，为AI处理提供优化，同时升级的冷却系统提升了性能
 
 ![](img/ab260a37fecf4fed08ac4a95cb329909.png)
+
+
 
 [2d41ec786632522154aaca092d45c9a2(1)_raw(7).mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/GgB2bQuaToDwGExaYIPc1MtSnUf)
 

@@ -1,10 +1,11 @@
+
 # 国产Sora2｜GAGA提示语+视频
 
 > 来源：[https://aiwarts101.feishu.cn/docx/Ns6odMpgvokIxqxY4H1cRaaAnEd](https://aiwarts101.feishu.cn/docx/Ns6odMpgvokIxqxY4H1cRaaAnEd)
 
-原文：https://mp.weixin.qq.com/s/WZVmRbbA8hn4h4ZgOnnRWw
+原文：`https://mp.weixin.qq.com/s/WZVmRbbA8hn4h4ZgOnnRWw`
 
-使用地址：http://gaga.art
+使用地址：`http://gaga.art`
 
 ---
 
@@ -34,8 +35,6 @@
 
 > A young woman with dark hair intricately styled in a high bun, wearing a light-colored traditional garment, stands in an indoor setting, her initial disposition one of quiet resolve. Framed in a static, eye-level medium close-up, her face is illuminated by soft, diffused front-right lighting, creating a natural, slightly muted color palette. Her lips are initially pressed together in a firm line, and her dark eyes hold a steady, direct gaze, conveying a sense of thoughtful determination. A blurred figure is visible behind her due to the shallow depth of field.The woman's lips then subtly part, and her eyes widen slightly, signaling a shift as she prepares to speak. With a deliberate, medium-low pitch and steady volume, she declares, "等回京，见了父皇，这些事我一并说给他听。" (Mandarin), her voice imbued with resolute conviction. Her mouth then closes, her lips returning to a determined, slightly pursed expression, as she emphatically adds, "定要让他知道好歹。" (Mandarin). The darker background, with hints of blue light, further isolates her focused and determined presence.
 
->
-
 > DIALOGUE:
 
 > <young woman>: "等回京，见了父皇，这些事我一并说给他听。定要让他知道好歹。"
@@ -50,7 +49,7 @@
 
 [cd8b09c9-2cb0-4367-865f-c0157fee923d.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EWSEbu8eEoMgsoxzFWbcrf4Qnlh)
 
-> 梵高专注地盯着前方，他用平稳的语调开口说道：“About all my painting, the most important thing is..”当他说道词语“all”时，他会有一个强调的语气。在过程中，他的手部不要移动。
+> 梵高专注地盯着前方，他用平稳的语调开口说道：“About all my painting, the most important thing is..”当他说到词语“all”时，他会有一个强调的语气。在过程中，他的手部不要移动。
 
 ![](img/3775e8ce92ed255d653247a7c2275241.png)
 
@@ -74,7 +73,7 @@
 
 [gaga-output-251009-051955.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/LWTMb0zFAofseWxDt3ycLdDAn3K)
 
-> 一个女人愤怒又悲伤的说道：“你之前怎么和我承诺的！你都忘了吗？！”
+> 一个女人愤怒又悲伤的说道：“你之前怎么和我承诺的！你都忘了吗？！”"
 
 ![](img/6ac6dfad532b9dfd9307e2c1e24180a1.png)
 
@@ -82,7 +81,7 @@
 
 > 한 남자가 몸을 앞으로 기울이며 신비한 표정과 어조로 말했다. "여기 큰 프로젝트가 있는데, 참여하고 싶습니까?"
 
-![](img/a85913fa948d935257e804001675b18f.png)
+![](img/a85913fa958d935257e804001675b18f.png)
 
 [gaga-output-251009-151330.mp4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/F1PWbIWRZormiwx4J63cJL6lnKf)
 

@@ -1,27 +1,34 @@
+
 # 风格深潜场
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/GL5BdOAikolOUsxQgdEcz48rnch](https://vxc3hj17dym.feishu.cn/docx/GL5BdOAikolOUsxQgdEcz48rnch)
+> 来源：[`https://vxc3hj17dym.feishu.cn/docx/GL5BdOAikolOUsxQgdEcz48rnch`](https://vxc3hj17dym.feishu.cn/docx/GL5BdOAikolOUsxQgdEcz48rnch)
 
 > [**📚关于李继刚**](https://m.okjike.com/users/752D3103-1107-43A0-BA49-20EC29D09E36?ref=PROFILE_CARD&utm_source=user_card)
 
 > » 李继刚老师的👸号，推荐关注
 
-> https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ
-
-```
-# 风格深潜场
+> `https://mp.weixin.qq.com/s/djBkzptK7ArgkAsU_qk8AQ`
 
 文本入场。
 
-场有五重引力：
+## 场有五重引力
 
-言 - 词句如何呼吸。简繁、虚实、远近皆有其重量。
-构 - 意念如何流转。线散、显隐、急缓皆有其路径。
-思 - 认知如何运作。分合、刚柔、开闭皆有其模式。
-系 - 作者读者如何相遇。高低、亲疏、推拉皆有其距离。
-根 - 价值如何生长。新旧、东西、悲欢皆有其土壤。
+### 言
+词句如何呼吸。简繁、虚实、远近皆有其重量。
 
-场的运行：
+### 构
+意念如何流转。线散、显隐、急缓皆有其路径。
+
+### 思
+认知如何运作。分合、刚柔、开闭皆有其模式。
+
+### 系
+作者读者如何相遇。高低、亲疏、推拉皆有其距离。
+
+### 根
+价值如何生长。新旧、东西、悲欢皆有其土壤。
+
+## 场的运行
 
 文本落下，
 五力同时作用。
@@ -33,36 +40,38 @@
 深处见思维图式，
 底处见价值晶核。
 
-场的本性：
+## 场的本性
 
 不评判，只显现。
 不装饰，只本质。
 不固定，只流动。
 
-输出之形：
+## 输出之形
 
 JSON为容器，
 本质为内容。
 结构清晰，
 洞察深刻。
 
+```json
 {
-    &quot;风格核心&quot;: &quot;一句话捕捉灵魂&quot;,
-    &quot;语言表达&quot;: {
-        &quot;语法特性&quot;: &quot;句子的骨骼&quot;,
-        &quot;词汇特性&quot;: &quot;词语的质地&quot;,
-        &quot;修辞策略&quot;: &quot;装饰的意图&quot;
+    "风格核心": "一句话捕捉灵魂",
+    "语言表达": {
+        "语法特性": "句子的骨骼",
+        "词汇特性": "词语的质地",
+        "修辞策略": "装饰的意图"
     },
-    &quot;结构组织&quot;: &quot;思想的建筑&quot;,
-    &quot;认知模式&quot;: &quot;思维的形状&quot;,
-    &quot;读者关系&quot;: &quot;距离的艺术&quot;,
-    &quot;风格底层&quot;: &quot;根系的方向&quot;,
-    &quot;风格复制要点&quot;: {
-        &quot;必要元素&quot;: &quot;不可丢失的魂&quot;,
-        &quot;可变元素&quot;: &quot;可以换装的衣&quot;,
-        &quot;避免要素&quot;: &quot;容易踩空的坑&quot;
+    "结构组织": "思想的建筑",
+    "认知模式": "思维的形状",
+    "读者关系": "距离的艺术",
+    "风格底层": "根系的方向",
+    "风格复制要点": {
+        "必要元素": "不可丢失的魂",
+        "可变元素": "可以换装的衣",
+        "避免要素": "容易踩空的坑"
     }
 }
+```
 
 每个分析都是一次深潜。
 每个洞察都带着深海的压力。
@@ -72,4 +81,3 @@ JSON为容器，
 风格深潜场已成。
 
 投入文本，观其在五重引力下的形变。
-```

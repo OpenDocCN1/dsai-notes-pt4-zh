@@ -1,3 +1,4 @@
+
 # 样例驱动的渐进式引导法：利用 AI 高效设计提示词 ，生成预期内容
 
 > 来源：[https://chatmemo.feishu.cn/docx/BEaSduFtdoALcpxTwzgcx59TnQz](https://chatmemo.feishu.cn/docx/BEaSduFtdoALcpxTwzgcx59TnQz)
@@ -18,15 +19,15 @@
 
 **核心看点：**
 
-+   通过实际案例演示，如何从用户期望的 1 个样例出发，通过与 LLM 进行多轮互动，逐步生成高可用的结构化提示词
++ 通过实际案例演示，如何从用户期望的 1 个样例出发，通过与 LLM 进行多轮互动，逐步生成高可用的结构化提示词
 
-+   文末「推荐阅读」中，附有相关 OpenAI 官方指引、ICLR 论文等，以供拓展学习
++ 文末「推荐阅读」中，附有相关 OpenAI 官方指引、ICLR 论文等，以供拓展学习
 
 **适合人群：**
 
-+   初步了解结构化提示词的用户（如果还不知道什么是结构化提示词，推荐阅读：结构化提示词系统论述： 构建高性能 Prompt 之路）
++ 初步了解结构化提示词的用户（如果还不知道什么是结构化提示词，推荐阅读：结构化提示词系统论述： 构建高性能 Prompt 之路）
 
-+   在实际运用时，不知道怎么写出能够让 AI 生成符合内心预期结果的提示词的用户
++ 在实际运用时，不知道怎么写出能够让 AI 生成符合内心预期结果的提示词的用户
 
 ---
 
@@ -36,7 +37,7 @@
 
 例如，我们常见的”📕爆文生成 AI”提示词，包含了”二极管标题法进行创作”、”最省力法则和及时享受”这样精确、巧妙的提示。
 
-**高质量的** P**rompt 极度依赖用户通**过**逻辑思考**，从知识经验（KnowHow）中抽象表达出关键方法与要求。这也是大多数人明知 LLM 能完成很多任务，却无法有效利用 AI 提高效率的原因。
+高质量的Prompt极度依赖用户通过逻辑思考，从知识经验（KnowHow）中抽象表达出关键方法与要求。这也是大多数人明知 LLM 能完成很多任务，却无法有效利用 AI 提高效率的原因。
 
 阅读本文后，你只需使用 1-2 个初始样例，就能较为轻松地引导 AI 自动定制出完美的提示词。
 
@@ -54,21 +55,21 @@
 
 👉 它的核心步骤包括：
 
-1.  **构建初始样例：** 创建一个符合你期望输出的具体例子。
+1. 构建初始样例：创建一个符合你期望输出的具体例子。
 
-1.  **评估样例，尝试提炼模板：** 让 AI 分析和理解样例的结构和关键元素，并以专家视角尽可能地优化样例。
+1. 评估样例，尝试提炼模板：让 AI 分析和理解样例的结构和关键元素，并以专家视角尽可能地优化样例。
 
-1.  **固定模板，强化要求说明：** 基于对初始样例的理解，让 AI 提出一个通用模板。通过测试 Prompt，验证模板的可靠性。
+1. 固定模板，强化要求说明：基于对初始样例的理解，让 AI 提出一个通用模板。通过测试 Prompt，验证模板的可靠性。
 
-1.  **生成结构化提示词：** 将优化后的模板转化为结构化的提示词。在用户适当调整并确认后，即可投入使用。
+1. 生成结构化提示词：将优化后的模板转化为结构化的提示词。在用户适当调整并确认后，即可投入使用。
 
 在这个过程中，用户的角色主要是：
 
-1.  提供尽可能与自己预期一致的初始样例
+1. 提供尽可能与自己预期一致的初始样例
 
-1.  判断 AI 的输出质量
+1. 判断 AI 的输出质量
 
-1.  反馈改进建议，提供行动引导
+1. 反馈改进建议，提供行动引导
 
 这种方法的优势在于简化了提示词设计的过程，让非专业用户也能创建高质量的 Prompt。通过引导 AI 进行分析和优化，用户可以专注于判断输出质量和提供反馈，而不需要深入理解复杂的 Prompt 工程技巧。
 
@@ -163,8 +164,6 @@
 则在向量数据库中，可用[0, 1, 0, 3, 4.5, 1, 0, 0, 0]指代被存储的“猫”
 ```
 
----
-
 ### 评估样例，尝试提炼模板
 
 #### 与 AI 开始对话
@@ -216,7 +215,7 @@
 
 #### 多轮反馈，直至达到预期
 
-不过 AI 可能仍然会犯错，输出要求**外的内容，这是**很正常的情况。所以需要发起多轮的对话引导，使得 AI 不断修正自己的理解，直至双方达成共识。
+不过 AI 可能仍然会犯错，输出要求外的内容，这是很正常的情况。所以需要发起多轮的对话引导，使得 AI 不断修正自己的理解，直至双方达成共识。
 
 ```
 &lt;User&gt;
@@ -290,7 +289,7 @@ e.g：
 ……
 ```
 
-**虽然已经**很不错，但我依然建议你**（像你的老板、**客户一样）多问几**遍 AI，让其多次反思：仅**靠当前的模板，是否足以支持它稳定输出与上方样例预期一致的结果。
+虽然已经**很不错**，但我依然建议你（像你的老板、客户一样）多问几遍 AI，让其多次反思：仅靠当前的模板，是否足以支持它稳定输出与上方样例预期一致的结果。
 
 ```
 &lt;User&gt;
@@ -351,9 +350,9 @@ e.g：
 
 就此一套高度可用的 Prompt，就被我们打磨出来了🎉！！！
 
-👉 补**充说明：**
+👉 补充说明：
 
-1.  AI 一次性输出过长 Prompt ，输出的格式会有一定的问题
+1. AI 一次性输出过长 Prompt ，输出的格式会有一定的问题
 
 > 注：在上图中，我已经微调了 Prompt 的格式。
 
@@ -361,7 +360,7 @@ e.g：
 
 ![](img/e3e55fe0b3ebe46a66accae986c05b95.png)
 
-1.  生成提示词的这一步，同样也可以让 AI 再进行多轮反思优化
+1. 生成提示词的这一步，同样也可以让 AI 再进行多轮反思优化
 
 ```
 &lt;User&gt; 提问指令
@@ -391,7 +390,7 @@ e.g：
 
 ![](img/e260a302fb893ce1aba1ff64f8af76a4.png)
 
-**可**以看到，仅靠着 Prompt ，整个知识卡片的生成的结果，能够快速帮助我们理解一个全新的知识概念，完美符合预期，大功告成🎉～
+可以看到，仅靠着 Prompt ，整个知识卡片的生成的结果，能够快速帮助我们理解一个全新的知识概念，完美符合预期，大功告成🎉～
 
 ---
 
@@ -399,29 +398,29 @@ e.g：
 
 在上述案例中，该方法的核心要点在于，充分发挥 AI 自身的逻辑分析以及抽象总结能力，主动从用户所提供的样例表象中总结出方法论。用户只需对 AI 提供的方法论正确与否进行判断，零星、分散地提出自身的意见，便能够推动 AI 不断进行反思，总结出更为优质的内容生成方法与要求，进而为 AI 提示词爱好者提供一种门槛较低的提示词生成途径。
 
-可以说，在某些特定场景下，样例驱动的渐进式引导法，的确能够让 AI 主动理解我们的需求，且不再依赖 Prompt 工程师的知识洞察和思维素质，自动化地提炼出高可用的提示词🥳。
+可以说，在某些特定场景下，样例驱动的渐进式引导法，确实能够让 AI 主动理解我们的需求，且不再依赖 Prompt 工程师的知识洞察和思维素质，自动化地提炼出高可用的提示词🥳。
 
 ---
 
 ## 一点补充：提示词递归
 
+
+
+# 提示词递归：管理 LLM 上下文长度限制
+
 LLM 具有上下文长度限制。在长对话中，特别是使用渐进式引导法时，由于对话轮数的增加（用户输入 + AI 回复的累积），可能会触碰到长度限制。这可能导致 AI 遗忘早期的对话内容，进而影响输出质量。
 
 所以需要引入“提示词递归”的概念与方法。我们在长对话中定期总结和重新引入关键信息，确保 AI 不会遗忘重要的上下文。
 
-具体步骤如下：
+## 具体步骤
 
-1.  初始提示：开始对话时使用清晰、具体的初始提示。
+1. 初始提示：开始对话时使用清晰、具体的初始提示。
+2. 定期总结：在对话进行中，定期总结已讨论的关键点。
+3. 重新引入：将总结的信息重新引入到新的提示中。
+4. 细化和拓展：基于之前的回答，逐步细化或拓展问题。
+5. 验证和优化：确保新的提示词在不同情况下都能引导 AI 生成高质量内容。
 
-1.  定期总结：在对话进行中，定期总结已讨论的关键点。
-
-1.  重新引入：将总结的信息重新引入到新的提示中。
-
-1.  细化和拓展：基于之前的回答，逐步细化或拓展问题。
-
-1.  验证和优化：确保新的提示词在不同情况下都能引导 AI 生成高质量内容。
-
-例如：
+## 示例
 
 ```
 # 初始提示词设计
@@ -467,34 +466,30 @@ AI: &quot;&quot;&quot;
 &quot;&quot;&quot;
 ```
 
----
-
 ## 推荐阅读
 
-+   [C](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts)hain complex prompts for stronger performance - Anthropic
++ [Chain complex prompts for stronger performance](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts) - Anthropic
 
-+   Claude 官方手册中，提出“链式提示”的方法理念，推荐将复杂的任务拆解为多个步骤，一步步指引 AI 完成子任务。
++ Claude 官方手册中，提出“链式提示”的方法理念，推荐将复杂的任务拆解为多个步骤，一步步指引 AI 完成子任务。
 
-+   好处：
++ 好处：
 
-1.  **Accuracy**: Each subtask gets Claude’s full attention, reducing errors. 准确率：每个子任务都能得到 Claude 的全神贯注，减少错误。
+  1. **Accuracy**: Each subtask gets Claude’s full attention, reducing errors. 准确率：每个子任务都能得到 Claude 的全神贯注，减少错误。
+  2. **Clarity**: Simpler subtasks mean clearer instructions and outputs. 清晰性：更简单的子任务意味着更清晰的指令和输出。
+  3. **Traceability**: Easily pinpoint and fix issues in your prompt chain. 可追溯性：轻松定位和修复提示链中的问题。
 
-1.  **Clarity**: Simpler subtasks mean clearer instructions and outputs. 清晰性：更简单的子任务意味着更清晰的指令和输出。
++ [Strategy: Split complex tasks into simpler subtasks](https://platform.openai.com/docs/guides/prompt-engineering/strategy-split-complex-tasks-into-simpler-subtasks) - Open AI
 
-1.  **Traceability**: Easily pinpoint and fix issues in your prompt chain. 可追溯性：轻松定位和修复提示链中的问题。
++ ChatGPT 官方手册中，也提出“将复杂的任务分解成更简单的子任务”的理念。
 
-+   [S](https://platform.openai.com/docs/guides/prompt-engineering/strategy-split-complex-tasks-into-simpler-subtasks)trategy: Split complex tasks into simpler subtasks - Open AI
++ [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/pdf/2205.10625)
 
-+   ChatGPT 官方手册中，也提出“将复杂的任务分解成更简单的子任务”的理念。
++ 如果你恰巧想要更加深入的研究，我推荐你阅读这篇已在 ICLR 2023 上发表的论文。
 
-+   [Least-to-Most Prompting Enables Co](https://arxiv.org/pdf/2205.10625)mplex Reasoning in Large Language Models
++ 它提出了 Least-to-Most Prompting（LtM-最少到最多提示） 提示词策略。
 
-+   如果你恰巧想要更加深入的研究，我推荐你阅读这篇已在 ICLR 2023 上发表的论文。
++ LtM 同样通过将复杂问题分解成一系列更简单的子问题，然后依次解决这些子问题，从而实现对复杂任务的推理。
 
-+   它提出了 Least-to-Most Prompting（LtM-最少到最多提示） 提示词策略。
++ 在文本理解和文本生成场景中，表现出了优秀的效果。
 
-+   LtM 同样通过将复杂问题分解成一系列更简单的子问题，然后依次解决这些子问题，从而实现对复杂任务的推理。
-
-+   在文本理解和文本生成场景中，表现出了优秀的效果。
-
-<https://chatmemo.feishu.cn/sync/OXhxdlqqcsuEkObLUgsceuRinef>
+`https://chatmemo.feishu.cn/sync/OXhxdlqqcsuEkObLUgsceuRinef`

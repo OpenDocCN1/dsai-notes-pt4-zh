@@ -1,10 +1,11 @@
+
 # 往期微学习汇总
 
 > 来源：[https://datawhaler.feishu.cn/docx/DOimdEznGoJcirxh9JacWtfxn1d](https://datawhaler.feishu.cn/docx/DOimdEznGoJcirxh9JacWtfxn1d)
 
-# 分类合集
+## 分类合集
 
-## AI底层原理
+### AI底层原理
 
 | 点击开始学习 | 作者 | 点击留言 | 内容大主题 | 内容子主题 | 内容包含 | 内容来源 | 内容形式 | 建议学习时长 | 内容所属系列 | 跳转系列 | 所需基础 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,6 +47,13 @@
 | 微学习09 | AI大模型原理 + manus介绍 | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/MPncryw5Peg5prclwMOchq6Bnyf) | AI底层原理,Agent | manus,通俗比喻讲解 | 场景案例,原理讲解,思考/学习记录,AI工具使用 |  | 视频,图文,PPT | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | 微学习15 | DeepSeek讲座：AI三大主义 &amp; 通识教育 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/TzNOr7c1TemcLFctofNcXiaunWe) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习16 | 知识图谱：概念入门 | 九月 | [点击给作者留言](https://datawhaler.feishu.cn/record/AbwKrl2MueCDdIcG0MpcGXL3nlc) | AI底层原理,RAG |  |  |  | 图文 |  |  |  |  |
+
+
+
+# 微学习课程资源列表
+
+| 点击开始学习 | 作者 | 点击留言 | 内容大主题 | 内容子主题 | 内容包含 | 内容来源 | 内容形式 | 建议学习时长 | 内容所属系列 | 跳转系列 | 所需基础 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 微学习17 | DeepSeek讲座：创新性分析 &amp; 浙大先生案例 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/PM8ArAYxle0EnlcsjO2cU8yPnGx) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习30 | 机器学习：线性回归 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/GMhVrAmcHeVxZScBTSncKeohnme) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | &lt; 1 小时 | 小课程 | [superdetial-MC](https://mcnq0fm8lgsi.feishu.cn/wiki/L71DwpIcLib0fVkfCUJciMGHnbd)Ling  机器学习实战超详解析入门教程 | 无需基础 |
 | 微学习31 | 机器学习：逻辑回归 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/SBsNryORteJIbXcYkpTcOaVen9g) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | &lt; 1 小时 | 小课程 |  | 无需基础 |
@@ -58,9 +66,6 @@
 | 微学习38 | DeepSeek讲座：数字社会发展史 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/HmgjrBmmGegdeDcWYGWcgoBnn7f) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习39 | DeepSeek讲座：语言解码智能和教育 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/Ab73rJAeyeN6VHcOnaqcJO53n9e) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习42 | 大模型原理：神经网络 | 贾克斯 | [点击给作者留言](https://datawhaler.feishu.cn/record/BQjSrA4EleOE1JcG4uNc0WFMnzc) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
-
-| 点击开始学习 | 作者 | 点击留言 | 内容大主题 | 内容子主题 | 内容包含 | 内容来源 | 内容形式 | 建议学习时长 | 内容所属系列 | 跳转系列 | 所需基础 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 微学习06 | 大模型原理讲解（视频） | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/W8ZQrlZ0ueGiORcIrJmcdxxknwx) | AI底层原理 | 通俗比喻讲解 | 原理讲解 | OPEN 1+X 共建组 | 视频,PPT | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
 | 微学习10 | 原理科普：文生图/视频（视频） | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/VTg0rcaG4e1JOfclDWFcVj3Mn8g) | AI底层原理,AIGC | 文生图/生视频 | 原理讲解 | OPEN 1+X 共建组 | 视频,PPT | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
 | [深度学习介绍_王茂霖](https://datawhaler.feishu.cn/wiki/DTkTwg8NZi0WAmklAV9cteD0nRe) | 王茂霖 | [点击给作者留言](https://datawhaler.feishu.cn/record/KytCrhaB1erVwfc0R8XcgBW6nxb) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 无需基础 |
@@ -70,7 +75,7 @@
 | [1.2 推荐系统_慕灵&amp;清晖](https://datawhaler.feishu.cn/wiki/O3tywfCvyirloPkWtEsc19ygnnb) | 柯慕灵 | [点击给作者留言](https://datawhaler.feishu.cn/record/KpSwrtsDqe2hI9cjrZZcz1wbnbc) | AI底层原理 | 通俗比喻讲解 |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | [1.2 推荐系统_慕灵&amp;清晖](https://datawhaler.feishu.cn/wiki/O3tywfCvyirloPkWtEsc19ygnnb) | 清晖 | [点击给作者留言](https://datawhaler.feishu.cn/record/K0I8ra685eSrJoco189cf436nPf) | AI底层原理 | 通俗比喻讲解 |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
 | [1.2 语音识别与合成_晨旭](https://datawhaler.feishu.cn/wiki/Yimlwr4GriqOCQkheb2cAb3Ineb) | 杨晨旭 | [点击给作者留言](https://datawhaler.feishu.cn/record/R1dLrkXD7eyKHAc7tQRcoNeFn71) | AI底层原理,多模态 | 通俗比喻讲解,AIGC |  | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
-| 微学习02 |机器学习原理和损失函数详解 | 曹泽 | [点击给作者留言](https://datawhaler.feishu.cn/record/QYLCr28EkexNuYcnEQqcFrQUnj8) | AI底层原理 | 机器学习/深度学习,通俗比喻讲解 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学 |
+| 微学习02 | 机器学习原理和损失函数详解 | 曹泽 | [点击给作者留言](https://datawhaler.feishu.cn/record/QYLCr28EkexNuYcnEQqcFrQUnj8) | AI底层原理 | 机器学习/深度学习,通俗比喻讲解 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学 |
 | [微学习11｜原理：大模型](https://datawhaler.feishu.cn/wiki/KdUxwddPeilbFvkReoOcNVrJnMd) | 瀞丹 | [点击给作者留言](https://datawhaler.feishu.cn/record/MSAprAx8oevxNxcQnzRck327nCb) | AI底层原理 | 通俗比喻讲解 | 原理讲解 | OPEN 1+X 共建组 | 图文,视频,PPT | &lt; 10分钟 | 单篇内容 |  | 无需基础 |
 | [微学习16｜原理：高数现代基础](https://datawhaler.feishu.cn/wiki/C1R2wYrkSiqVGpkUeHZcC3Itn1v) | 馨怡 | [点击给作者留言](https://datawhaler.feishu.cn/record/C7qpr17m4ebifGckvCucpcC4nxg) | AI底层原理 | 机器学习/深度学习 | 思考/学习记录 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 高中数学,微积分等基础数学 |
 | 微学习06 | 原理：机器学习概述 | 马世拓 | [点击给作者留言](https://datawhaler.feishu.cn/record/VViBrnuPKe7ACscvCP4cHIACnvI) | AI底层原理 | 机器学习/深度学习 |  | OPEN 1+X 共建组 | 图文 | &lt; 10分钟 | 单篇内容 |  |  |
@@ -87,26 +92,29 @@
 | 微学习33 | 原理：智能体原理及发展史(视频) | 珞索 | [点击给作者留言](https://datawhaler.feishu.cn/record/CTTSrNy3WeWqRicCMg3c499hn2f) | AI底层原理,Agent | 通俗比喻讲解 |  | OPEN 1+X 共建组 | PPT,视频 | &lt; 10分钟 | 单篇内容 |  |  |
 | 微学习35 | 原理：机器学习优化方法 | 曹泽 | [点击给作者留言](https://datawhaler.feishu.cn/record/Sm2PrPJRger2dxc4j46ct93lnMf) | AI底层原理 | 机器学习/深度学习 |  | OPEN 1+X 共建组 | 图文 | &lt; 10分钟 | 单篇内容 |  |  |
 | [微学习02 | 原理：张量](https://datawhaler.feishu.cn/wiki/VT5ww50iLiNcPOkK8UOcJt24n5e) | 何瑞杰 | [点击给作者留言](https://datawhaler.feishu.cn/record/ZPqSrCn1zeaDjhc8jWIctJoLnOg) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &gt; 1 小时 | 单篇内容 |  | 微积分等基础数学 |
-| 微学习05 | 原理：向量与线性方程组 | 馨怡 | [点击给作者留言](https://datawhaler.feishu.cn/record/IbfFrr2BReIhqVchP7wcQ3ZXnmh) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
-| [微学习15 | 原理：聚类分析](https://datawhaler.feishu.cn/wiki/MY7iwTRcxiCoMYkf7VqcFMmGnMf) | 马世拓 | [点击给作者留言](https://datawhaler.feishu.cn/record/BnDorDDqSe1ocVc8Mv2c9sJinnX) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 微积分等基础数学 |
-| 微学习16 | 原理：降维与特征提取 | 马世拓 | [点击给作者留言](https://datawhaler.feishu.cn/record/VTUgrTNgTe4DYocnJxcc7NyanPk) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 微积分等基础数学 |
-| [微学习21 | 原理：情感分析](https://datawhaler.feishu.cn/wiki/Lx4OwYdHKiQTSqkOzXKcNBcTn8b) | 陈睿 | [点击给作者留言](https://datawhaler.feishu.cn/record/VUYqr3jR5eqfXjcKIRDc7MJTnAg) | AI底层原理 | 机器学习/深度学习,NLP | 原理讲解,思考/学习记录 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 大模型原理 |
-| 微学习22 | 原理实战：梯度下降 | 文熠 | [点击给作者留言](https://datawhaler.feishu.cn/record/FT5LrjnALe7fwScfRzGcnjGKnue) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &lt; 1 小时 | 单篇内容 |  | 无需基础 |
-| 微学习29 | 原理：机器学习正则化详解 | 曹泽 | [点击给作者留言](https://datawhaler.feishu.cn/record/AS43rhx2YeWJu8c6cOUcnVX3nxb) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | &gt; 1 小时 | 单篇内容 |  | 微积分等基础数学 |
+
+
+
+| 微学习05 | 原理：向量与线性方程组 | 馨怡 | [点击给作者留言](https://datawhaler.feishu.cn/record/IbfFrr2BReIhqVchP7wcQ3ZXnmh) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | < 30分钟 | 单篇内容 |  | 无需基础 |
+| [微学习15 | 原理：聚类分析](https://datawhaler.feishu.cn/wiki/MY7iwTRcxiCoMYkf7VqcFMmGnMf) | 马世拓 | [点击给作者留言](https://datawhaler.feishu.cn/record/BnDorDDqSe1ocVc8Mv2c9sJinnX) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | < 1 小时 | 单篇内容 |  | 微积分等基础数学 |
+| 微学习16 | 原理：降维与特征提取 | 马世拓 | [点击给作者留言](https://datawhaler.feishu.cn/record/VTUgrTNgTe4DYocnJxcc7NyanPk) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | < 1 小时 | 单篇内容 |  | 微积分等基础数学 |
+| [微学习21 | 原理：情感分析](https://datawhaler.feishu.cn/wiki/Lx4OwYdHKiQTSqkOzXKcNBcTn8b) | 陈睿 | [点击给作者留言](https://datawhaler.feishu.cn/record/VUYqr3jR5eqfXjcKIRDc7MJTnAg) | AI底层原理 | 机器学习/深度学习,NLP | 原理讲解,思考/学习记录 | OPEN 1+X 共建组 | 图文 | < 1 小时 | 单篇内容 |  | 大模型原理 |
+| 微学习22 | 原理实战：梯度下降 | 文熠 | [点击给作者留言](https://datawhaler.feishu.cn/record/FT5LrjnALe7fwScfRzGcnjGKnue) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | < 1 小时 | 单篇内容 |  | 无需基础 |
+| 微学习29 | 原理：机器学习正则化详解 | 曹泽 | [点击给作者留言](https://datawhaler.feishu.cn/record/AS43rhx2YeWJu8c6cOUcnVX3nxb) | AI底层原理 | 机器学习/深度学习 | 原理讲解 | OPEN 1+X 共建组 | 图文 | > 1 小时 | 单篇内容 |  | 微积分等基础数学 |
 | 微学习06 | 机器学习：基本术语（西瓜书笔记） | 清晖 | [点击给作者留言](https://datawhaler.feishu.cn/record/MrTyrfMQLezxOzc3Mpjc5kvonme) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
 | 微学习07 | 机器学习：模型的评估与选择（西瓜书笔记） | 清晖 | [点击给作者留言](https://datawhaler.feishu.cn/record/Gt2UrXFjYeiS30cWxTgc2zgnnMh) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
 | 微学习08 | 机器学习：超参数调参 | 曹泽 | [点击给作者留言](https://datawhaler.feishu.cn/record/Qf5DrRnPYem9i8co9npcK2nzn7f) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
-| 微学习09 | AI大模型原理 + manus介绍 | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/MPncryw5Peg5prclwMOchq6Bnyf) | AI底层原理,Agent | manus,通俗比喻讲解 | 场景案例,原理讲解,思考/学习记录,AI工具使用 |  | 视频,图文,PPT | &lt; 30分钟 | 单篇内容 |  | 无需基础 |
-| 微学习15 | DeepSeek讲座：AI三大主义 &amp; 通识教育 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/TzNOr7c1TemcLFctofNcXiaunWe) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
+| 微学习09 | AI大模型原理 + manus介绍 | 星星 | [点击给作者留言](https://datawhaler.feishu.cn/record/MPncryw5Peg5prclwMOchq6Bnyf) | AI底层原理,Agent | manus,通俗比喻讲解 | 场景案例,原理讲解,思考/学习记录,AI工具使用 |  | 视频,图文,PPT | < 30分钟 | 单篇内容 |  | 无需基础 |
+| 微学习15 | DeepSeek讲座：AI三大主义 & 通识教育 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/TzNOr7c1TemcLFctofNcXiaunWe) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习16 | 知识图谱：概念入门 | 九月 | [点击给作者留言](https://datawhaler.feishu.cn/record/AbwKrl2MueCDdIcG0MpcGXL3nlc) | AI底层原理,RAG |  |  |  | 图文 |  |  |  |  |
-| 微学习17 | DeepSeek讲座：创新性分析 &amp; 浙大先生案例 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/PM8ArAYxle0EnlcsjO2cU8yPnGx) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
-| 微学习30 | 机器学习：线性回归 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/GMhVrAmcHeVxZScBTSncKeohnme) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | &lt; 1 小时 | 小课程 | [superdetial-MC](https://mcnq0fm8lgsi.feishu.cn/wiki/L71DwpIcLib0fVkfCUJciMGHnbd)Ling  机器学习实战超详解析入门教程 | 无需基础 |
-| 微学习31 | 机器学习：逻辑回归 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/SBsNryORteJIbXcYkpTcOaVen9g) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | &lt; 1 小时 | 小课程 |  | 无需基础 |
-| 微学习32 | 机器学习：决策树 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/L1QerBNT5ey3Aoc1TCdcvb71nLL) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | &lt; 1 小时 | 小课程 |  | 无需基础 |
+| 微学习17 | DeepSeek讲座：创新性分析 & 浙大先生案例 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/PM8ArAYxle0EnlcsjO2cU8yPnGx) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
+| 微学习30 | 机器学习：线性回归 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/GMhVrAmcHeVxZScBTSncKeohnme) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | < 1 小时 | 小课程 | [superdetial-MC](https://mcnq0fm8lgsi.feishu.cn/wiki/L71DwpIcLib0fVkfCUJciMGHnbd)Ling  机器学习实战超详解析入门教程 | 无需基础 |
+| 微学习31 | 机器学习：逻辑回归 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/SBsNryORteJIbXcYkpTcOaVen9g) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | < 1 小时 | 小课程 |  | 无需基础 |
+| 微学习32 | 机器学习：决策树 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/L1QerBNT5ey3Aoc1TCdcvb71nLL) | AI底层原理 | 通俗比喻讲解 | 开发实战,原理讲解 |  | 图文 | < 1 小时 | 小课程 |  | 无需基础 |
 | 微学习33 | 机器学习：支持向量机 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/QBQBruuk1eI3UicGn8uc5FxxnVe) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
 | 微学习34 | 机器学习：K-means聚类 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/A4wurhGvce6AGmcUm58cj2WJnnx) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
 | 微学习35 | 机器学习：贝叶斯 | 枕泉 | [点击给作者留言](https://datawhaler.feishu.cn/record/HzkBroH5cefl0kcbjKjcoLM9nDe) | AI底层原理 |  |  |  | 图文 |  |  |  |  |
-| [微学习36 | DeepSeek讲](https://datawhaler.feishu.cn/wiki/EvBtwfYs9iBaDgkFN40cQ1G2nPh)座：AI智能演变 &amp; 人机协作实例和前景 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/Ajjir32PJeV27CcKK7FcEeYLnte) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
+| [微学习36 | DeepSeek讲](https://datawhaler.feishu.cn/wiki/EvBtwfYs9iBaDgkFN40cQ1G2nPh)座：AI智能演变 & 人机协作实例和前景 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/Ajjir32PJeV27CcKK7FcEeYLnte) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习37 | DeepSeek讲座：算力和成本方面的优势 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/A3nlrOAEpe7hslclHeNccgeNnCd) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习38 | DeepSeek讲座：数字社会发展史 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/HmgjrBmmGegdeDcWYGWcgoBnn7f) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
 | 微学习39 | DeepSeek讲座：语言解码智能和教育 | 合作伙伴 | [点击给作者留言](https://datawhaler.feishu.cn/record/Ab73rJAeyeN6VHcOnaqcJO53n9e) | DeepSeek,AI底层原理 |  |  | 浙江大学AI教育教学研究中心 | 视频,PPT | 约1小时 | 浙大DeepSeek公开课 | 《能应用的DeepSeek通识课》 | 大模型原理 |
@@ -114,28 +122,28 @@
 
 # 提交作业
 
-<https://datawhaler.feishu.cn/sync/Butpd5iaesmMDAbFRescds5On7c>
+[https://datawhaler.feishu.cn/sync/Butpd5iaesmMDAbFRescds5On7c](https://datawhaler.feishu.cn/sync/Butpd5iaesmMDAbFRescds5On7c)
 
-<https://datawhaler.feishu.cn/share/base/form/shrcnAlmRV97DRgKuzEp36cVwXd?iframeFrom=docx&ccm_open=iframe>
+[https://datawhaler.feishu.cn/share/base/form/shrcnAlmRV97DRgKuzEp36cVwXd?iframeFrom=docx&ccm_open=iframe](https://datawhaler.feishu.cn/share/base/form/shrcnAlmRV97DRgKuzEp36cVwXd?iframeFrom=docx&ccm_open=iframe)
 
 # 微学习概况
 
-<https://datawhaler.feishu.cn/sync/D0kGd9TLhsIUm1bwJLbcEoBrn0c>
+[https://datawhaler.feishu.cn/sync/D0kGd9TLhsIUm1bwJLbcEoBrn0c](https://datawhaler.feishu.cn/sync/D0kGd9TLhsIUm1bwJLbcEoBrn0c)
 
-> OPEN 1+X AI微学习指南：https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf
+> OPEN 1+X AI微学习指南：[https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf](https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf)
 
 （温馨提示：下面的内容可点击右下角展开全屏）
 
-<https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf?iframeFrom=docx&ccm_open=iframe>
+[https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf?iframeFrom=docx&ccm_open=iframe](https://datawhaler.feishu.cn/share/base/dashboard/shrcnJ1u9f1vXRkUSLkBYWifKqf?iframeFrom=docx&ccm_open=iframe)
 
 # QA & 许愿池
 
-<https://datawhaler.feishu.cn/share/base/form/shrcntHMQzpnleXfR6bFhnpggig?iframeFrom=docx&ccm_open=iframe>
+[https://datawhaler.feishu.cn/share/base/form/shrcntHMQzpnleXfR6bFhnpggig?iframeFrom=docx&ccm_open=iframe](https://datawhaler.feishu.cn/share/base/form/shrcntHMQzpnleXfR6bFhnpggig?iframeFrom=docx&ccm_open=iframe)
 
 # 欢迎大家创作内容、投稿参与共建！
 
-<https://datawhaler.feishu.cn/sync/XqhSdXAz0szNA4b59SLcDT3jnyf>
+[https://datawhaler.feishu.cn/sync/XqhSdXAz0szNA4b59SLcDT3jnyf](https://datawhaler.feishu.cn/sync/XqhSdXAz0szNA4b59SLcDT3jnyf)
 
 # 线下百校共学DeepSeek！
 
-<https://datawhaler.feishu.cn/sync/GhQ0dc18ssEYrkbPXQhcXUv9nLh>
+[https://datawhaler.feishu.cn/sync/GhQ0dc18ssEYrkbPXQhcXUv9nLh](https://datawhaler.feishu.cn/sync/GhQ0dc18ssEYrkbPXQhcXUv9nLh)

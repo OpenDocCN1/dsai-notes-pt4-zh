@@ -1,8 +1,9 @@
+
 # 10.15- Adobe Premiere Pro 推出多项新的生成式AI、智谱开源文生图模型 CogView3-Plus
 
 > 来源：[https://agijuejin.feishu.cn/docx/BkIBdcqJkoTCGBxnBnQcFYRcnqh](https://agijuejin.feishu.cn/docx/BkIBdcqJkoTCGBxnBnQcFYRcnqh)
 
-加入飞书群：[欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
+> 加入飞书群：[欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 
 ## ⭐ 今日热点
 

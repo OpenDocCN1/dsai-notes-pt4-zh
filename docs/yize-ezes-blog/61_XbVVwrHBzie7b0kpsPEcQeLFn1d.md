@@ -1,3 +1,4 @@
+
 # 整理专访/播客/分享等笔记｜By 一泽 Eze
 
 > 来源：[https://chatmemo.feishu.cn/docx/S7P6dr3yWoJUuLxuHxecZjZznwg](https://chatmemo.feishu.cn/docx/S7P6dr3yWoJUuLxuHxecZjZznwg)
@@ -6,7 +7,7 @@
 
 # 提示词
 
-```
+````
 // 作者：一泽Eze
 // 名称：整理专访、播客、分享的笔记
 // 版本：1.1
@@ -26,7 +27,9 @@
 ## mermaid 语法格式（应在文内合适位置，文本形式）
 内容文本
  ```mermaid
+
 &lt;mermaid语法&gt;
+
 ```
 内容文本
 
@@ -35,7 +38,7 @@
 
 ## 记录内容
 {{输入记录文本}}
-```
+````
 
 # 测试效果
 

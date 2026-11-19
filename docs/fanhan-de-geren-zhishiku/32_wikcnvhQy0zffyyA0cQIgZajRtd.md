@@ -1,26 +1,23 @@
+
 # 泛函の飞书最佳实践合集
 
 > 来源：[https://docs.feishu.cn/docx/doxcnSskNFeEBl5sBcTKbHaGkOg](https://docs.feishu.cn/docx/doxcnSskNFeEBl5sBcTKbHaGkOg)
 
 > 关于我：[泛函同学的一切 | 这是一篇阅读量破万的个人说明书](https://to7e2gkmim.feishu.cn/wiki/wikcnl2UCXsXjLBgGBnt3GDCI7g)
 
-# 一个人的项目管理 | 自用款
+## 一个人的项目管理 | 自用款
 
 ---
 
-[一个人的项目管理 | 人脉地图 | 演示版 ](https://to7e2gkmim.feishu.cn/wiki/wikcnly4nE5lI7HRHpz2aCL9TSe)
+[一个人的项目管理 | 人脉地图 | 演示版](https://to7e2gkmim.feishu.cn/wiki/wikcnly4nE5lI7HRHpz2aCL9TSe)
 
 ![](img/49054a1f24c25cca188f4779a0334948.png)
 
 ![](img/42ddbf6326dcaacbc5d6e59533e070d6.png)
 
-
-
-
-
 ![](img/74047b7aaebb7f8d064e655b7696ce46.png)
 
-# 自我管理打卡 & 智能饮食推荐 | For 营养师顾中一
+## 自我管理打卡 & 智能饮食推荐 | For 营养师顾中一
 
 ---
 
@@ -46,9 +43,9 @@
 
 ![](img/ba8f2a78c5a0a54767eec0036d2455ff.png)
 
-> **使用指南：**[顾中一同款多维表格使用指南 | up 主飞书解决方案](https://bytedance.feishu.cn/docx/doxcnTzGuJbZP8YxJvYTEei6fh2)
+> **使用指南：** [顾中一同款多维表格使用指南 | up 主飞书解决方案](https://bytedance.feishu.cn/docx/doxcnTzGuJbZP8YxJvYTEei6fh2)
 
-# 一站式软件分享资源站 | for 蓝胖子咕咕
+## 一站式软件分享资源站 | for 蓝胖子咕咕
 
 [蓝胖子咕咕 专属多维表格](https://yucb6tb6vr.feishu.cn/base/bascnA3NVZKSm1vgThGKxvVcXLe)
 
@@ -62,7 +59,7 @@
 
 ![](img/2167658c84bcc4b0effcc72ce381ad61.png)
 
-# 大学选专业深度解读信息汇总 | for 取景框看世界
+## 大学选专业深度解读信息汇总 | for 取景框看世界
 
 ---
 
@@ -76,7 +73,7 @@
 
 ![](img/9be7b5b4a261549c139a437157f297e2.png)
 
-# 多维表格智能复习模板
+## 多维表格智能复习模板
 
 ---
 
@@ -94,7 +91,7 @@
 
 ![](img/7404a85bd63c82f904873bb34713b86c.png)
 
-# 🥰 如果你感觉这些内容对你有帮助
+## 🥰 如果你感觉这些内容对你有帮助
 
 > 不妨请我喝杯咖啡吧
 

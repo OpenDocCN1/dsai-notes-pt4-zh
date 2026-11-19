@@ -1,3 +1,4 @@
+
 # 使用GPT，写📕文案
 
 > 来源：[https://jalicvoygc0.feishu.cn/docx/ZFx0dX8gPoIfe3xMTyCc🐧z9nid](https://jalicvoygc0.feishu.cn/docx/ZFx0dX8gPoIfe3xMTyCc🐧z9nid)
@@ -8,11 +9,11 @@
 
 **原则：**
 
-+   主要依赖Prompt，3.5就够用。
++ 主要依赖Prompt，3.5就够用。
 
 **工具：** [基于🛰️群的ChatBOT](https://jalicvoygc0.feishu.cn/wiki/OagnwWk9diGw0dkX2czcbKBEnVh)
 
-**AI****工作流****：**①预设角色 ②输入活动主题
+**AI工作流：**①预设角色 ②输入活动主题
 
 ```
 角色Prompt：
@@ -49,7 +50,7 @@
 
 ![](img/1bd426b32e13dbaf39510c8b3aa1bfa1.png)
 
-##### 继续浏览全站内容：
+## 继续浏览全站内容：
 
 [🎪首页](https://jalicvoygc0.feishu.cn/wiki/DdEvwxYsSidd36kAIIVcnROwnmb)
 

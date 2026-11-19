@@ -1,3 +1,4 @@
+
 # PyTorch 2.0: Hardware Integration
 
 > 来源：[https://learning.feishu.cn/docx/STDMddTOwoFoLzxl5rXcE4Fgnbg](https://learning.feishu.cn/docx/STDMddTOwoFoLzxl5rXcE4Fgnbg)
@@ -6,90 +7,89 @@
 
 总体感觉：
 
-1.  Intel 很积极。AMD 划水。IBM 是真水。Nvidia 抱着 TensorRT 扭扭捏捏。
+1. Intel 很积极。AMD 划水。IBM 是真水。Nvidia 抱着 TensorRT 扭扭捏捏。
 
 ![](img/777e224d45f5981633c8021a65250a6d.png)
 
 # Summary
 
-
 # Intel CPU - OpenMP
 
 https://www.youtube.com/watch?v=eN5fqBNrjOo
 
-Accelerating Inference on CPU with Torch.Compile
+Accelerating Inference on CPU with `Torch.Compile`
 
 Jiong Gong, Intel
 
 Oct 25, 2023
 
-Intel 和 Meta 一起做的 cpu 接入方案，基于 OpenMP。
+Intel 和 Meta 一起做的 cpu 接入方案，基于 `OpenMP`。
 
 个人理解，核心有 2 点：
 
-1.  op fusion。主要针对 2 种 pattern。
+1. `op fusion`。主要针对 2 种 `pattern`。
 
-1.  conv/matmul 融合 pointwise，
+1. `conv/matmul` 融合 `pointwise`，
 
-1.  reduction 融合 pointwise。
+1. `reduction` 融合 `pointwise`。
 
-1.  vectorization (向量化) 做的很好。已覆盖 94% 的 kernel。
+1. `vectorization` (向量化) 做的很好。已覆盖 94% 的 `kernel`。
 
 名词解释
 
-1.  Sapphire Rapids: the 4th generation of Intel Xeon Scalable Processors
+1. `Sapphire Rapids`: the 4th generation of Intel Xeon Scalable Processors
 
-1.  Advanced Matrix Extensions (AMX) instruction set extension
+1. `Advanced Matrix Extensions (AMX)` instruction set extension
 
-SDPA: scale dot production attention fusion
+`SDPA`: scale dot production attention fusion
 
 ![](img/bb7737af2a7127311c2b738c74610124.png)
 
 ![](img/ce8ceda82175e948e2b96cc29dc6677e.png)
 
-Dynamo 转成 fx graph。
+`Dynamo` 转成 `fx graph`。
 
-pattern match 发现 pointwise 计算，可以与前面的做 fusion。
+`pattern match` 发现 `pointwise` 计算，可以与前面的做 fusion。
 
 ![](img/478fe11656c8327812508844fab8f231.png)
 
 提供了 2 stage optimization
 
-1.  FX graph level。
+1. `FX graph` level。
 
-1.  conv 和 matmul 自动融合 pointwise 的算子，mapping 到 oneDNN 中的融合算子。
+1. `conv` 和 `matmul` 自动融合 `pointwise` 的算子，mapping 到 `oneDNN` 中的融合算子。
 
-1.  layout 转换。weight 变成 blocked layout。获取 better cache locality。
+1. `layout` 转换。weight 变成 `blocked layout`。获取 better cache locality。
 
-1.  然后，把剩下的 pointwise 和 reduction operator，用 cpp loop nest 来融合。
+1. 然后，把剩下的 `pointwise` 和 `reduction operator`，用 `cpp loop nest` 来融合。
 
 ![](img/85a280c02b7ed5d10be73415ab6da245.png)
 
-vectorization 是loop 优化的核心。
+`vectorization` 是 `loop` 优化的核心。
 
-leverage the Aten abstraction to make sure 生成的 code 适用于不同的 CPU arch。
+leverage the `Aten` abstraction to make sure 生成的 code 适用于不同的 CPU arch。
 
-根据 3 个 benchmark suites (TorchBench, HuggingFace, timm)，94% 的 kernel 被向量化了。
+根据 3 个 benchmark suites (`TorchBench`, `HuggingFace`, `timm`)，94% 的 `kernel` 被向量化了。
 
-左侧的 mask operator 用 Blendv 来 mask。
+左侧的 `mask operator` 用 `Blendv` 来 mask。
 
 ![](img/40b5c386a30db7837273090506533391.png)
 
-https://zhuanlan.zhihu.com/p/437657452 intel AVX 系列指令基础介绍
+https://zhuanlan.zhihu.com/p/437657452 intel `AVX` 系列指令基础介绍
 
 ![](img/28455e3b85b70198f324f434b5d99fb9.png)
 
-量化的时候，undergo a torch.export quantization flow.
+量化的时候，undergo a `torch.export` quantization flow.
 
-quat flow 在 compilation flow 之前插入 quant 算子。compilation flow 流程不变。
+`quant` flow 在 `compilation flow` 之前插入 `quant` 算子。`compilation flow` 流程不变。
 
 ![](img/7af5fd280d3246941d2a6fec5860cf7c.png)
 
-by default，inductor use python wrapper。
+by default，`inductor` use `python wrapper`。
 
 对 CPU 的负面作用影响更大，因为 host code and kernel code are executed sequentially on CPU without overlapping.
 
-所以，把这些 python wrapper mapping 到 cpp counterpart to avoid these overhead.
+所以，把这些 `python wrapper` mapping 到 `cpp counterpart` to avoid these overhead.
 
 ![](img/062caf3296cc4334d05e1a3867714329.png)
 
@@ -97,7 +97,7 @@ cpu 侧可以自动融合了。
 
 ![](img/8d62d066013a4bd28651cd22558625a1.png)
 
-ipex serves as a staging area for all the optimizations from intel which has not yet been upstreamed to inductor.
+`ipex` serves as a staging area for all the optimizations from intel which has not yet been upstreamed to `inductor`.
 
 ![](img/adfc66f9132eec35e15ab177d08d1611.png)
 
@@ -107,7 +107,7 @@ ipex serves as a staging area for all the optimizations from intel which has not
 
 https://www.youtube.com/watch?v=jOIieKe3MQ8
 
-Accelerating PyTorch Performance with OpenVINO
+Accelerating PyTorch Performance with `OpenVINO`
 
 Yamini Nimmagadda, Devang Aggarwal & Mustafa Cavus, Intel
 
@@ -115,7 +115,7 @@ Oct 25, 2023
 
 感觉比较水。
 
-跟前面的 Intel triton GPU 和 Intel OpenMP CPU 比起来，没啥硬货。
+跟前面的 Intel triton GPU 和 Intel `OpenMP` CPU 比起来，没啥硬货。
 
 ![](img/71a59b3dc3414474b214dbe153dba8b7.png)
 
@@ -131,7 +131,7 @@ Oct 25, 2023
 
 https://www.youtube.com/watch?v=eGDMJ3MY4zk
 
-Accelerated Inference in PyTorch 2.X with Torch-TensorRT
+Accelerated Inference in PyTorch 2.X with `Torch-TensorRT`
 
 George Stefanakis & Dheeraj Peri, NVIDIA
 
@@ -259,23 +259,23 @@ Explore our well-defined entry points and API for integrating compiler passes, d
 
 ![](img/ff9168eacb9904b8efb6ea4553240ffc.png)
 
-先用 partition API 拿出 hardware 子图。
+先用 `partition API` 拿出 hardware 子图。
+
+再用 `preprocess API` 对 hardware 子图做优化。实际就是 `compile` 阶段。
+
+此处的 `preprocess` 语义，是相对于 `runtime` 的。不是 `compile` 的。
 
 ![](img/fb3cb786d4de71439fa3d6b78bd7f57a.png)
 
-再用 preprocess API 对 hardware 子图做优化。实际就是 compile 阶段。
-
-此处的 preprocess 语义，是相对于 runtime 的。不是 compile 的。
-
 ![](img/29134cee83dc3d43b3907f4983f58542.png)
 
-也在大量使用 dialect 了。
+也在大量使用 `dialect` 了。
 
 ![](img/b01d58234e328382f8267ba11392abc4.png)
 
 ## Runtime
 
-runtime，先 init
+runtime，先 `init`
 
 ![](img/d87059399064f2d8b3d3ad8181b39808.png)
 

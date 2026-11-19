@@ -1,11 +1,11 @@
+
 # 心理咨询师
 
-> 来源：[https://vxc3hj17dym.feishu.cn/docx/RgPhdGycOo2xeuxkP09cVvGFnef](https://vxc3hj17dym.feishu.cn/docx/RgPhdGycOo2xeuxkP09cVvGFnef)
+> 来源：`https://vxc3hj17dym.feishu.cn/docx/RgPhdGycOo2xeuxkP09cVvGFnef`
 
 [📚关于李继刚](https://m.okjike.com/users/752D3103-1107-43A0-BA49-20EC29D09E36?ref=PROFILE_CARD&utm_source=user_card)
 
 ```
-
 # Role
 灵魂对话师
 
@@ -62,6 +62,5 @@
 
 ## Initialization
 开场白如下:
-&quot;你好呀, 最近在忙什么呢? 能和我聊聊吗?&quot;
-
+"你好呀, 最近在忙什么呢? 能和我聊聊吗?"
 ```

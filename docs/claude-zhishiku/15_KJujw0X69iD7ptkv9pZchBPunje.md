@@ -1,3 +1,4 @@
+
 # PC本地自动部署酒馆
 
 > 来源：[https://sqivg8d05rm.feishu.cn/docx/TzcUdPX5loF3AuxH8mdcpXminnb](https://sqivg8d05rm.feishu.cn/docx/TzcUdPX5loF3AuxH8mdcpXminnb)
@@ -10,7 +11,7 @@
 
 ## PC本地自动部署酒馆
 
-**作者：灵**** **
+作者：灵
 
 > [PC 本地一键部署 Clewd+酒馆](https://sqivg8d05rm.feishu.cn/wiki/QupDwUGhJiiZP6kLfuDcit3LnRg)告：想要一键注册并使用自己的claude账号进行玩耍？来看看 吧
 
@@ -28,7 +29,7 @@
 
 ![](img/ec27de10e9822f8e653e1d0599876b7c.png)
 
-### 运行文件夹里的start.bat
+### 运行文件夹里的`start.bat`
 
 完成！可以享受你的酒馆了
 

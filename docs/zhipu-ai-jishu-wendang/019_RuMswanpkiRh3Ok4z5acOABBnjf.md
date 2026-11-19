@@ -1,27 +1,25 @@
+
 # GLM-4-9B 技术文档
 
 > 来源：[https://ai.feishu.cn/docx/IZwjd0xPGoCn4mx4510caTcbn0f](https://ai.feishu.cn/docx/IZwjd0xPGoCn4mx4510caTcbn0f)
 
-+   作者：智谱团队
++ 作者：智谱团队
++ Github 官方仓库：https://github.com/THUDM/GLM-4
++ 相关B站讲解：https://www.bilibili.com/video/BV1mw4m1Y7eZ/?spm_id_from=333.337.search-card.all.click
++ 技术支持：请到 [github issue](https://github.com/THUDM/GLM-4/issues) 提问
 
-+   Github 官方仓库：https://github.com/THUDM/GLM-4
+## 模型介绍
 
-+   相关B站讲解：https://www.bilibili.com/video/BV1mw4m1Y7eZ/?spm_id_from=333.337.search-card.all.click
-
-+   技术支持：请到 [github issue](https://github.com/THUDM/GLM-4/issues) 提问
-
-# 模型介绍
-
-GLM-4-9B 是智谱 AI 推出的最新一代预训练模型 GLM-4 系列中的开源版本。 在语义、数学、推理、代码和知识等多方面的数据集测评中，GLM-4-9B 及其人类偏好对齐的版本 GLM-4-9B-Chat 均表现出超越 Llama-3-8B 的卓越性能。除了能进行多轮对话，GLM-4-9B-Chat 还具备网页浏览、代码执行、自定义工具调用（Function Call）和长文本推理（支持最大 128K 上下文）等高级功能。
+GLM-4-9B 是智谱 AI 推出的最新一代预训练模型 GLM-4 系列中的开源版本。 在语义、数学、推理、代码和知识等多方面的数据集测评中，GLM-4-9B 及其人类偏好对齐的版本 GLM-4-9B-Chat 均表现出超越 Llama-3-8B 的卓越性能。除了能进行多轮对话，GLM-4-9B-Chat 还具备网页浏览、代码执行、自定义工具调用（`Function Call`）和长文本推理（支持最大 128K 上下文）等高级功能。
 
 本代模型增加了多语言支持，支持包括日语，韩语，德语在内的26 种语言。我们还推出了支持 1M 上下文长度（约 200 万中文字符）的 GLM-4-9B-Chat-1M 模型和基于 GLM-4-9B 的多模态模型，以及在语言理解、指令遵循、长文本处理等方面性能得到全面提升的 GLM-4-Plus。GLM-4V-9B 具备 1120 * 1120 高分辨率下的中英双语多轮对话能力，在中英文综合能力、感知推理、文字识别、图表理解等多方面多模态评测中，GLM-4V-9B 表现出超越 GPT-4-turbo-2024-04-09、Gemini 1.0 Pro、Qwen-VL-Max 和 Claude 3 Opus 的卓越性能。GLM-4-Plus 使用了大量模型辅助构造高质量合成数据以提升模型性能；利用 PPO 有效有效提升模型推理（数学、代码算法题等）表现，更好反应人类偏好。
 
-# 技术报告和论文
+## 技术报告和论文
 
 > 论文地址：
-
+>
 > [ChatGLM: A Family of Large Language](https://arxiv.org/abs/2406.12793) Models from GLM-130B to GLM-4 All Tools
-
+>
 > [C](https://arxiv.org/abs/2311.03079)ogVLM: Visual Expert for Pretrained Language Models
 
 您可以引用以下论文：
@@ -50,43 +48,34 @@ GLM-4-9B 是智谱 AI 推出的最新一代预训练模型 GLM-4 系列中的开
 }
 ```
 
-# 快速阅览
+## 快速阅览
 
 我们在文档不同的位置进行了详细的介绍，您可以点击进入并查看具体的技术文档。
 
-###### [评测结果](https://zhipu-ai.feishu.cn/wiki/CZeCwAalviWXsNkxNLxc85ZBnzc)
+### [评测结果](https://zhipu-ai.feishu.cn/wiki/CZeCwAalviWXsNkxNLxc85ZBnzc)
 
-+   GLM-4 开源模型模型跑分，评测数据
++ GLM-4 开源模型模型跑分，评测数据
++ GLM-4 开源模型模型技术报告和论文
 
-+   GLM-4 开源模型模型技术报告和论文
+### [快速使用](https://zhipu-ai.feishu.cn/wiki/PCDWwC2Ndiuj39kryJZcsTDbnlg)
 
-###### [快速使用](https://zhipu-ai.feishu.cn/wiki/PCDWwC2Ndiuj39kryJZcsTDbnlg)
++ 环境配置，模型下载，基础的模型推理
++ LongWriter：10k+ 输出模型
 
-+   环境配置，模型下载，基础的模型推理
+### [进阶之](https://zhipu-ai.feishu.cn/wiki/Sehlww04xizsGDkBKrGcoD4snKc)[240904](https://zhipu-ai.feishu.cn/wiki/R1QDwhLSOivOc2kS8micaHJ4nGb)[路](https://zhipu-ai.feishu.cn/wiki/Sehlww04xizsGDkBKrGcoD4snKc)
 
-+   LongWriter：10k+ 输出模型
++ `OpenAI API` 类 模型服务构建
++ 模型微调
++ 设备加速推理
++ 模型提示词和构建
 
-###### [进阶之](https://zhipu-ai.feishu.cn/wiki/Sehlww04xizsGDkBKrGcoD4snKc)[240904](https://zhipu-ai.feishu.cn/wiki/R1QDwhLSOivOc2kS8micaHJ4nGb)[路](https://zhipu-ai.feishu.cn/wiki/Sehlww04xizsGDkBKrGcoD4snKc)
+### [常见问题](https://zhipu-ai.feishu.cn/wiki/U3nywnDpniLO6LkH31IcVnKFnTg)
 
-+   OpenAI API 类 模型服务构建
++ 使用 GLM-4-9B 开源模型遇见的常见问题。
++ 如何为项目做出贡献。
++ 项目更新计划
 
-+   模型微调
-
-+   设备加速推理
-
-+   模型提示词和构建
-
-###### [常见问题](https://zhipu-ai.feishu.cn/wiki/U3nywnDpniLO6LkH31IcVnKFnTg)
-
-+   使用 GLM-4-9B 开源模型遇见的常见问题。
-
-+   如何为项目做出贡献。
-
-+   项目更新计划
-
-###
-
-# 📚 信息汇总
+## 📚 信息汇总
 
 官方网站：https://www.zhipuai.cn/
 
@@ -96,15 +85,15 @@ API开放平台：https://bigmodel.cn/
 
 Github仓库：https://github.com/THUDM/GLM-4
 
-# 👍 GLM-4 体验：  https://bigmodel.cn/trialcenter
+### 👍 GLM-4 体验：https://bigmodel.cn/trialcenter
 
 ---
 
-# 🏠 👸号
+### 🏠 👸号
 
 ![](img/3e17caacb09c0896e548e886f4eb7a8a.png)
 
-# ❤️ 交流群
+### ❤️ 交流群
 
 ![](img/e58c8e6318e0a5a51cb6e99cde7b32ad.png)
 

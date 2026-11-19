@@ -1,6 +1,7 @@
-# gpts/coze/dify 兴趣小组
 
-> 来源：[https://aicarrier.feishu.cn/docx/YbCMd5RmLoJgoGx8Z9qciAh5n8P](https://aicarrier.feishu.cn/docx/YbCMd5RmLoJgoGx8Z9qciAh5n8P)
+# `gpts/coze/dify` 兴趣小组
+
+> 来源：[`https://aicarrier.feishu.cn/docx/YbCMd5RmLoJgoGx8Z9qciAh5n8P`](https://aicarrier.feishu.cn/docx/YbCMd5RmLoJgoGx8Z9qciAh5n8P)
 
 目标：基于浦语 API 和 Coze 制作一些有趣的应用，探索大模型的落地场景。
 

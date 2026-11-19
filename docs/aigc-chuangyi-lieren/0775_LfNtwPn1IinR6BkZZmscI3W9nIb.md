@@ -1,8 +1,9 @@
+
 # 内测：国产Sora！快手可灵AI视频大比拼！
 
 > 来源：[https://aigcreative.feishu.cn/docx/XiPjdZ2UcoDHR0xPyCCctJPPnyd](https://aigcreative.feishu.cn/docx/XiPjdZ2UcoDHR0xPyCCctJPPnyd)
 
-7.11-更新：
+## 7.11-更新：
 
 可灵AI视频官方简单提示词参考《「可灵AI」驯服指南-V1.0》：
 
@@ -30,7 +31,7 @@
 
 既然被评价为"国产Sora"，那第一波测试效果，就直接对标Sora之前的案例吧。
 
-我选取了之前大家印象比较深刻的Sora的案例，把Sora的Prompt翻译后，发给可灵，每个视频生成大概耗时三分钟，一共生成了20多个，整体效果还真不错！
+我选取了之前大家印象比较深刻的Sora的案例，把Sora的`Prompt`翻译后，发给可灵，每个视频生成大概耗时三分钟，一共生成了20多个，整体效果还真不错！
 
 ![](img/989de56a6b2ef7d58620e60aa35c827d.png)
 
@@ -42,9 +43,9 @@
 
 那这三个月后，快手可灵Kling的发布，效果看下来，在模型能力、视觉效果等方面，可谓是前进了一大步，甚至有高手尝试做广告宣传片了，效果还不错，看来大家的期待都很高！期待能商用的那一天早点到来！
 
-关于可灵Kling目前的一些局限性：
+## 关于可灵Kling目前的一些局限性：
 
-1、提示词：只能输入中文，不能输入英文，200字符。所以上面的测试得把Prompt先翻译成中文。
+1、提示词：只能输入中文，不能输入英文，200字符。所以上面的测试得把`Prompt`先翻译成中文。
 
 2、提示词合规过于敏感：你懂的。当把“主人”改为“女孩”就行了。
 
@@ -62,9 +63,9 @@
 
 这句Slogan真好。
 
-补充：
+## 补充：
 
-创[Sora生成视频合集-滚动更新](https://aigcreative.feishu.cn/wiki/AH9ZwOTcbixKchksKqvcGAgLnKf?from=from_copylink)猎人AIGC知识库收集了Sora生成的所有视频及提示词Prompt，需要参考的朋友，可复制链接到浏览器查看：
+创[Sora生成视频合集-滚动更新](https://aigcreative.feishu.cn/wiki/AH9ZwOTcbixKchksKqvcGAgLnKf?from=from_copylink)猎人AIGC知识库收集了Sora生成的所有视频及提示词`Prompt`，需要参考的朋友，可复制链接到浏览器查看：
 
 ![](img/e6d93a02ba1de8841c683f7660f1ee47.png)
 

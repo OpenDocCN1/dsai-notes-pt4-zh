@@ -1,8 +1,9 @@
+
 # QA与反馈 | 第八章：人工智能综和应用实践
 
 > 来源：[https://datawhaler.feishu.cn/docx/O1d2dz0Xfo01y5xEqU8cumHNncr](https://datawhaler.feishu.cn/docx/O1d2dz0Xfo01y5xEqU8cumHNncr)
 
-欢迎来到 **QA与反馈**** **板块！
+欢迎来到 **QA与反馈** 板块！
 
 此文档的内容完全开源，全网可编辑
 
@@ -12,7 +13,7 @@
 
 > 回答问题记得署名呀~
 
-| ## 问题 | ## 回答 |
+| 问题 | 回答 |
 | --- | --- |
 |  |  |
 |  |  |

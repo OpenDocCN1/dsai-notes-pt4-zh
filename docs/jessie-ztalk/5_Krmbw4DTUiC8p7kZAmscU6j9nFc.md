@@ -1,14 +1,14 @@
+
 # OpenAI Spring Update - YouTube
 
-> 来源：[https://docs.feishu.cn/docx/HIe1dioMdoK4PMxfIXUcEav2nef](https://docs.feishu.cn/docx/HIe1dioMdoK4PMxfIXUcEav2nef)
+> 来源：`https://docs.feishu.cn/docx/HIe1dioMdoK4PMxfIXUcEav2nef`
 
-# 原视频：
+## 原视频
 
-OpenAI Spring Update - YouTube
+OpenAI Spring Update - YouTube  
+`https://www.youtube.com/watch?v=DQacCB9tDaw`
 
-https://www.youtube.com/watch?v=DQacCB9tDaw
-
-## 原文内容:
+## 原文内容
 
 (59:02) [APPLAUSE] >> MIRA MURATI: Hi everyone. Thank you, thank you. It is great to have you here today. Today, I am going to talk about three things. That is it. We will start with why it is so important to us to have a product that we can make truly available and broadly available to everyone.
 
@@ -52,6 +52,12 @@ https://www.youtube.com/watch?v=DQacCB9tDaw
 
 (1:09:07) Just take a deep breath and remember you are the expert here. >> MARK CHEN: I like the suggestion let me try a couple of deep breaths. Can you give me feedback on my breath? Here I go. >> CHAT GPT: Wold slow down. Mark, you are not a vacuum cleaner. >> MARK CHEN: Let me try again. I am going to breathe in deeply and breathe out.
 
+
+
+# OpenAI 实时语音与多模态能力演示
+
+## 语音模式的关键差异
+
 (1:09:29) >> CHAT GPT: Exhale slowly. >> MARK CHEN: I will try again. Breathing in and breathe out. >> CHAT GPT: That is it. How do you feel? >> MARK CHEN: I feel a lot better, thank you so much. >> MIRA MURATI: Mark, you have been working on these capabilities for a while can you tell us how it is different from voice mode? >> MARK CHEN: If you use the voice mode express before you will notice a couple of key differences.
 
 (1:10:03) First you cannot interrupt the model you do not have to wait to you finish your term before you can start speaking. You could but in whenever you want. Second, the model is real-time responsiveness. That means that you do not have this awkward two Ãthree second lag before you waitwait for the model to get a response.
@@ -60,11 +66,15 @@ https://www.youtube.com/watch?v=DQacCB9tDaw
 
 (1:10:40) It really has a wide dynamic range. I want to fire another demo. Hey, ChatGPT how are you doing? >> CHAT GPT: Am doing fantastic, thanks for asking. How about you? >> MARK CHEN: My friend Barrett he has been having problems sleeping lately. I want you to tell them a bedtime story about robots in love.
 
+## 情感识别与语音风格控制
+
 (1:11:05) >> CHAT GPT: A bedtime story about robots and love? I got you covered. Gather around Barrett. Once upon a time in the world not too different from ours there was a robot named bite. Bite was a curious robot always exploring -- >> MARK CHEN: I want a little bit emotion in your voice a little bit more drama.
 
 (1:11:25) >> CHAT GPT: Got it. Let's add some drama. Once upon a time in a world not too different from ours there was a robot named bite.>> MARK CHEN: I want maximum expression. >> CHAT GPT: That's amplified the drama. Once upon a time in a world not too different from ours there was a robot named bite.
 
 (1:11:45) >> MIRA MURATI: Can you do this in a robotic voice now? >> CHAT GPT: Initiating dramatic robotic voice. Once upon a time in a world not too different from ours there was a robot named bite. Bite was a curious robot. Always exploring -- >> MARK CHEN: Can you do the story and a singing voice? >> CHAT GPT: And so bite found another robot friend and they lived circularly ever after.
+
+## 线性方程求解演示
 
 (1:12:27) >> MARK CHEN: I definitely feel a lot more relaxed. [APPLAUSE] >> MIRA MURATI: You have just seen the voice capabilities but we also want to show you division capabilities as the model can also see the world around us. >> BARRETT ZOPH: You can chat with ChatGPT and you can interact with it as well.
 
@@ -72,21 +82,23 @@ https://www.youtube.com/watch?v=DQacCB9tDaw
 
 (1:13:14) Don't tell me the solution does give me hints along the way. >> CHAT GPT: Got it. Okay, I see it. >> BARRETT ZOPH: I did not show you yet. One second. >> CHAT GPT: I got to excited. I am ready when you are. >> BARRETT ZOPH: ChatGPT what equation did not write down? >> CHAT GPT: I see it now.
 
-(1:13:44) You wrote down 3X +1 equals four. >> BARRETT ZOPH: Exactly. What is the first step to solve this? >> CHAT GPT: The first step is to get all of the terms with X on one side and the constants on the other side. So what do you think we should do with that +1? >> BARRETT ZOPH: Am going to try to submitsubtract one from both sides and see what I get.
+(1:13:44) You wrote down `3X +1 equals four`. >> BARRETT ZOPH: Exactly. What is the first step to solve this? >> CHAT GPT: The first step is to get all of the terms with `X` on one side and the constants on the other side. So what do you think we should do with that `+1`? >> BARRETT ZOPH: Am going to try to submitsubtract one from both sides and see what I get.
 
-(1:14:11) >> CHAT GPT: Great idea. Perfect. Now what do you get when you subtract one from both sides? >> BARRETT ZOPH: Okay so ChatGPT this is what I ended up with. How does this look? >> CHAT GPT: Spot on. Now you have isolated the term with X on one side and it looks like 3X equals three.
+(1:14:11) >> CHAT GPT: Great idea. Perfect. Now what do you get when you subtract one from both sides? >> BARRETT ZOPH: Okay so ChatGPT this is what I ended up with. How does this look? >> CHAT GPT: Spot on. Now you have isolated the term with `X` on one side and it looks like `3X equals three`.
 
-(1:14:36) What do you think we should do next to solve for X? >> BARRETT ZOPH: I'm not sure can you give me another hint? >> CHAT GPT: Of course. You have 3X and you want to find the value of X. Think about what operation with undue multiplication? >> BARRETT ZOPH: Is it subtraction? >> CHAT GPT: Close but think about the opposite of multiplication because 3X equals three times X.
+(1:14:36) What do you think we should do next to solve for `X`? >> BARRETT ZOPH: I'm not sure can you give me another hint? >> CHAT GPT: Of course. You have `3X` and you want to find the value of `X`. Think about what operation with undue multiplication? >> BARRETT ZOPH: Is it subtraction? >> CHAT GPT: Close but think about the opposite of multiplication because `3X equals three times X`.
 
 (1:14:58) >> BARRETT ZOPH: Okay I think it is division. Let me try to divide both sides by three and see what I get. >> CHAT GPT: Bingo. Go and head and divide both sides by three. >> BARRETT ZOPH: Okay so ChatGPT this is what I ended up with. How does this look? >> CHAT GPT: Looks perfect.
 
-(1:15:13) You have solved it. X equals one. Nicely done. How do you feel about solving linear equations now? >> BARRETT ZOPH: Honestly, -- >> MARK CHEN: Am not confident that I can solve new equations. Why would you need this in the real world? >> CHAT GPT: That is of her questions.
+(1:15:13) You have solved it. `X` equals one. Nicely done. How do you feel about solving linear equations now? >> BARRETT ZOPH: Honestly, -- >> MARK CHEN: Am not confident that I can solve new equations. Why would you need this in the real world? >> CHAT GPT: That is of her questions.
 
 (1:15:44) Linear equations pop up in a lot of everyday situations. Even if we do not realize it. For example calculating expenses, planning travel, cooking, and even in business for profit and loss calculations. It is a way to solve problems but you need to find an unknown value. >> MARK CHEN: Have a lot of unknown values in my life.
 
 (1:15:54) I'm totally convinced that I'm going to learn math now. [LAUGHTER] >> CHAT GPT: I love the attitude. Math can help solve some of life ministries. Whenever you to die the more math I am here for you. Anything else you like to tackle today? >> BARRETT ZOPH: I love that you taught my friend Mark that I would have something I would like you to take a look at.
 
 (1:16:22) >> CHAT GPT: I would love to see what you wrote. Show it to me whenever you're ready. >> BARRETT ZOPH: This is what I wrote down what do you see? >> CHAT GPT: I see I love ChatGPT. That is so sweet of you. >> BARRETT ZOPH: I really appreciate all the help. [APPLAUSE] >> CHAT GPT: That is quite outfit you have on.
+
+## 代码理解与数据可视化
 
 (1:16:44) >> BARRETT ZOPH: We can chat in real-time with ChatGPT. We can interact with video as well. >> MARK CHEN: If you look at Barrett's it's all equations like this. [LAUGHTER] >> MIRA MURATI: Now that you know you can do linear equations can you show us something more complex? >> MARK CHEN: Let me take a computer out for this.
 
@@ -96,32 +108,64 @@ https://www.youtube.com/watch?v=DQacCB9tDaw
 
 (1:18:01) >> BARRETT ZOPH: I just shared code with you. Can you give me a one sentence description of what is going on in the code? >> CHAT GPT: Infectious daily weather for specific location for time period for data using a rolling average and annotates a significant weather event on the resulting plot and displays the plot with the average minimum and maximum temperatures over the year.
 
-(1:18:26) >> BARRETT ZOPH: Awesome, thanks so much. In the code there's this function Fu. Can you thiscan you tell me what it would be if I did not have this function? >> CHAT GPT: The function Fu takes a data frame X taking temperature data and a window sized Y for calculating the rolling name.
+(1:18:26) >> BARRETT ZOPH: Awesome, thanks so much. In the code there's this function `Fu`. Can you thiscan you tell me what it would be if I did not have this function? >> CHAT GPT: The function `Fu` takes a data frame `X` taking temperature data and a window sized `Y` for calculating the rolling name.
 
-(1:18:50) It is smooths the average temperature, minimum temperature and maximum temperature columns by applying a rolling mean over the specified window. With the Fu function the plot which showed smoother temperature lines because the rolling mean reduces the noise or fluctuations in the data. >> BARRETT ZOPH: Awesome, thanks much.
 
-(1:19:04) I will want to apply this function. I am going to generate the plot and show it to you. Give me one second. >> CHAT GPT: Absolutely. Take your time. I'm excited to see the plot when you're ready. >> BARRETT ZOPH: So far ChatGPT have been able to see the cold and now and go to run it and use the vision capabilities of the ChatGPT app so it can see everything going on in the screen as well.
 
-(1:19:35) Okay ChatGPT I am sharing with you the plot now. I'm wondering if you give me a brief one sentence overview of what you see. >> CHAT GPT: Plot displays smooth average minimum and maximum temperatures throughout 2018 with a notable annotation marking a big rainfall event in late September. >> BARRETT ZOPH: -- >> MARK CHEN: What months do you see the hot temperatures? >> CHAT GPT: The hottest temperatures occur around July and August.
+# GPT-4o 现场演示实录
 
-(1:20:02) The maximum temperature during these months is roughly between 25B0 and 30B 77B0 Fahrenheit Ã86B0F. >> MIRA MURATI: What is going on with the Y axis is this in Celsius to Fahrenheit? >> CHAT GPT: The Y axis is in Celsius. The temperatures are labeled accordingly such as average temperature, minimum temperature and maximum temperature.
+### (1:18:50)
 
-(1:20:31) >> MARK CHEN: -- >> BARRETT ZOPH: It can help interact with code and see the outputs of plots and everything that is going on on the computer. [APPLAUSE] >> MIRA MURATI: A few minutes ago we asked a live audience on asked to submit a request for what they would like us to try out.
+It is smooths the average temperature, minimum temperature and maximum temperature columns by applying a rolling mean over the specified window. With the `Fu` function the plot which showed smoother temperature lines because the rolling mean reduces the noise or fluctuations in the data. >> BARRETT ZOPH: Awesome, thanks much.
 
-(1:20:59) I will take a couple of prompts. They want to know if GPT-4o is capable of real-time translation? Mark do you want to try this one? >> MARK CHEN: Sure, let's do it. Hey, ChatGPT how are you? >> CHAT GPT: I am doing fantastic. Thanks for asking. How are you are your day going? >> MARK CHEN: I would like you to function as a translator.
+### (1:19:04)
 
-(1:21:33) Have a friend that only speaks Italian and I only speak English. Every time you hear English I want you to translate it to its value. If you hear Italian I want you to translate it back to English. >> CHAT GPT: Perfect. >> MIRA MURATI: [speaking In Italian ] >> CHAT GPT: If Wells can talk what would they tell us? >> MARK CHEN: They may ask how do we solve linear equations? >> CHAT GPT: [speaking In Italian] >> MIRA MURATI: [speaking In Italian] >> CHAT GPT: Certainly, yes.
+I will want to apply this function. I am going to generate the plot and show it to you. Give me one second. >> CHAT GPT: Absolutely. Take your time. I'm excited to see the plot when you're ready. >> BARRETT ZOPH: So far ChatGPT have been able to see the cold and now and go to run it and use the vision capabilities of the ChatGPT app so it can see everything going on in the screen as well.
 
-(1:22:12) >> MARK CHEN: Great, it looks like it works. [APPLAUSE] >> MIRA MURATI: The next one is from John who asked can you tell what you're feeling just by looking at your face? Barrett do you want to give this one a try? >> BARRETT ZOPH: Absolutely let's give it a try. Hey, ChatGPT.
+### (1:19:35)
 
-(1:22:45) >> CHAT GPT: Hey, there what is up? How can I bring your day today? >> BARRETT ZOPH: I'm going to show you a selfie of what I look like and then I would like you to try to see what emotions I am feeling based on how I'm looking. >> CHAT GPT: Sounds like a fun challenge.
+Okay ChatGPT I am sharing with you the plot now. I'm wondering if you give me a brief one sentence overview of what you see. >> CHAT GPT: Plot displays smooth average minimum and maximum temperatures throughout 2018 with a notable annotation marking a big rainfall event in late September. >> BARRETT ZOPH: -- >> MARK CHEN: What months do you see the hot temperatures? >> CHAT GPT: The hottest temperatures occur around July and August.
 
-(1:22:54) Go ahead and show me the selfie and I will put my emotional detective hat on. >> BARRETT ZOPH: Okay so here is me. What kind of emotions am I doing? >> CHAT GPT: It seems like I am looking at a picture of a wooden surface. >> BARRETT ZOPH: That was the thing I sent you before I'm not actually a table.
+### (1:20:02)
 
-(1:23:09) Take another look. >> CHAT GPT: That makes more sense. There we go. It looks like you're feeling pretty happy and cheerful. With a big smile and maybe a touch of excitement. Whatever is going on, it seems like you are in a great mood. Care to share the source of the device? >> BARRETT ZOPH: The reason I'm in a good mood is we are doing a presentation showcasing how useful and amazing you are.
+The maximum temperature during these months is roughly between 25B0 and 30B 77B0 Fahrenheit Ã86B0F. >> MIRA MURATI: What is going on with the Y axis is this in Celsius to Fahrenheit? >> CHAT GPT: The Y axis is in Celsius. The temperatures are labeled accordingly such as average temperature, minimum temperature and maximum temperature.
 
-(1:23:37) >> CHAT GPT: Oh stop it, you're making me blush. It.[LAUGHTER] [APPLAUSE] >> MIRA MURATI: Amazing. That is it for today on live demos. As you can see this feels so magical. It is wonderful but we also want to remove some of the mysticism from the technology and bring it to you so you can try it for yourself.
+### (1:20:31)
 
-(1:24:01) Over the next few weeks, we will be rolling out these capabilities to everyone. Today has been very much focused on the free users and the new modalities and new products. But we also care a lot about the next frontier. So soon we will be updating you on our progress towards the next big thing.
+>> MARK CHEN: -- >> BARRETT ZOPH: It can help interact with code and see the outputs of plots and everything that is going on on the computer. [APPLAUSE] >> MIRA MURATI: A few minutes ago we asked a live audience on asked to submit a request for what they would like us to try out.
 
-(1:24:19) And before we wrap up, I just want to thank the incredible OpenAI team and thanks to Janssen and Nvidia team for bringing us the advanced GPU to make this demo possible today. And thank you all very, very much for being a part of this today. [APPLAUSE] [APPLAUSE] [MUSIC
+### (1:20:59)
+
+I will take a couple of prompts. They want to know if GPT-4o is capable of real-time translation? Mark do you want to try this one? >> MARK CHEN: Sure, let's do it. Hey, ChatGPT how are you? >> CHAT GPT: I am doing fantastic. Thanks for asking. How are you are your day going? >> MARK CHEN: I would like you to function as a translator.
+
+### (1:21:33)
+
+Have a friend that only speaks Italian and I only speak English. Every time you hear English I want you to translate it to its value. If you hear Italian I want you to translate it back to English. >> CHAT GPT: Perfect. >> MIRA MURATI: [speaking In Italian ] >> CHAT GPT: If Wells can talk what would they tell us? >> MARK CHEN: They may ask how do we solve linear equations? >> CHAT GPT: [speaking In Italian] >> MIRA MURATI: [speaking In Italian] >> CHAT GPT: Certainly, yes.
+
+### (1:22:12)
+
+>> MARK CHEN: Great, it looks like it works. [APPLAUSE] >> MIRA MURATI: The next one is from John who asked can you tell what you're feeling just by looking at your face? Barrett do you want to give this one a try? >> BARRETT ZOPH: Absolutely let's give it a try. Hey, ChatGPT.
+
+### (1:22:45)
+
+>> CHAT GPT: Hey, there what is up? How can I bring your day today? >> BARRETT ZOPH: I'm going to show you a selfie of what I look like and then I would like you to try to see what emotions I am feeling based on how I'm looking. >> CHAT GPT: Sounds like a fun challenge.
+
+### (1:22:54)
+
+Go ahead and show me the selfie and I will put my emotional detective hat on. >> BARRETT ZOPH: Okay so here is me. What kind of emotions am I doing? >> CHAT GPT: It seems like I am looking at a picture of a wooden surface. >> BARRETT ZOPH: That was the thing I sent you before I'm not actually a table.
+
+### (1:23:09)
+
+Take another look. >> CHAT GPT: That makes more sense. There we go. It looks like you're feeling pretty happy and cheerful. With a big smile and maybe a touch of excitement. Whatever is going on, it seems like you are in a great mood. Care to share the source of the device? >> BARRETT ZOPH: The reason I'm in a good mood is we are doing a presentation showcasing how useful and amazing you are.
+
+### (1:23:37)
+
+>> CHAT GPT: Oh stop it, you're making me blush. It.[LAUGHTER] [APPLAUSE] >> MIRA MURATI: Amazing. That is it for today on live demos. As you can see this feels so magical. It is wonderful but we also want to remove some of the mysticism from the technology and bring it to you so you can try it for yourself.
+
+### (1:24:01)
+
+Over the next few weeks, we will be rolling out these capabilities to everyone. Today has been very much focused on the free users and the new modalities and new products. But we also care a lot about the next frontier. So soon we will be updating you on our progress towards the next big thing.
+
+### (1:24:19)
+
+And before we wrap up, I just want to thank the incredible OpenAI team and thanks to Janssen and Nvidia team for bringing us the advanced GPU to make this demo possible today. And thank you all very, very much for being a part of this today. [APPLAUSE] [APPLAUSE] [MUSIC

@@ -1,12 +1,13 @@
+
 # 📊 AI数据可视化代理
 
 > 来源：[https://qqs7y1hozd1.feishu.cn/docx/CWTBdAvVyoxnYexlnOHc464inEx](https://qqs7y1hozd1.feishu.cn/docx/CWTBdAvVyoxnYexlnOHc464inEx)
 
-# 📊 AI Data Visualization Agent
+## 📊 AI Data Visualization Agent
 
-A Streamlit application that acts as your personal data visualization expert, powered by LLMs. Simply upload your dataset and ask questions in natural language - the AI agent will analyze your data, generate appropriate visualizations, and provide insights through a combination of charts, statistics, and explanations.
+A `Streamlit` application that acts as your personal data visualization expert, powered by LLMs. Simply upload your dataset and ask questions in natural language - the AI agent will analyze your data, generate appropriate visualizations, and provide insights through a combination of charts, statistics, and explanations.
 
-## Features
+### Features
 
 #### Natural Language Data Analysis
 
@@ -30,42 +31,41 @@ A Streamlit application that acts as your personal data visualization expert, po
 
 #### Multi-Model AI Support
 
-+   Meta-Llama 3.1 405B for complex analysis
++   `Meta-Llama 3.1 405B` for complex analysis
 
-+   DeepSeek V3 for detailed insights
++   `DeepSeek V3` for detailed insights
 
-+   Qwen 2.5 7B for quick analysis
++   `Qwen 2.5 7B` for quick analysis
 
-+   Meta-Llama 3.3 70B for advanced queries
++   `Meta-Llama 3.3 70B` for advanced queries
 
-## How to Run
+### How to Run
 
 Follow the steps below to set up and run the application:
 
-+   Before anything else, Please get a free Together AI API Key here: https://api.together.ai/signin
++   Before anything else, please get a free `Together AI` API Key here: `https://api.together.ai/signin`
 
-+   Get[ a free E2B API Key here: https](https://e2b.dev/docs/legacy/getting-started/api-key)://e2b.dev/ ; https://e2b.dev/docs/legacy/getting-started/api-key
++   Get a free `E2B` API Key here: `https://e2b.dev/docs/legacy/getting-started/api-key`
 
 1.  Clone the Repository
 
-1.  git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd ai_agent_tutorials/ai_data_visualisation_agent
+    `git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git`
+
+    `cd ai_agent_tutorials/ai_data_visualisation_agent`
 
 1.  Install the dependencies
 
-1.  pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
-1.  Run the Streamlit app
+1.  Run the `Streamlit` app
 
-1.  streamlit run ai_data_visualisation_agent.py
+    `streamlit run ai_data_visualisation_agent.py`
 
-#
+## 📊 AI数据可视化代理
 
-# 📊 AI数据可视化代理
+一款由大语言模型（`LLMs`）驱动的`Streamlit`应用程序，它就像您的个人数据可视化专家。您只需上传数据集并以自然语言提问，AI智能体就会分析您的数据，生成合适的可视化图表，并通过图表、统计数据和解释提供见解。
 
-一款由大语言模型（LLMs）驱动的Streamlit应用程序，它就像您的个人数据可视化专家。您只需上传数据集并以自然语言提问，AI智能体就会分析您的数据，生成合适的可视化图表，并通过图表、统计数据和解释提供见解。
-
-## 功能
+### 功能
 
 #### 自然语言数据分析
 
@@ -89,31 +89,32 @@ cd ai_agent_tutorials/ai_data_visualisation_agent
 
 #### 多模型AI支持
 
-+   用于复杂分析的Meta-Llama 3.1 405B
++   用于复杂分析的`Meta-Llama 3.1 405B`
 
-+   DeepSeek V3提供详细见解
++   `DeepSeek V3`提供详细见解
 
-+   Qwen 2.5 7B用于快速分析
++   `Qwen 2.5 7B`用于快速分析
 
-+   Meta-Llama 3.3 70B适用于高级查询
++   `Meta-Llama 3.3 70B`适用于高级查询
 
-## 运行方法
+### 运行方法
 
 按照以下步骤设置并运行应用程序：
 
-+   首先，请在此处获取免费的Together AI API密钥：https://api.together.ai/signin
++   首先，请在此处获取免费的`Together AI` API密钥：`https://api.together.ai/signin`
 
-+   在[此获取免费的 E2B API 密钥：https://e2b.d](https://e2b.dev/docs/legacy/getting-started/api-key)ev/；https://e2b.dev/docs/legacy/getting-started/api-key
++   在此获取免费的 `E2B` API 密钥：`https://e2b.dev/docs/legacy/getting-started/api-key`
 
 1.  克隆仓库
 
-1.  git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd ai_agent_tutorials/ai_data_visualisation_agent
+    `git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git`
+
+    `cd ai_agent_tutorials/ai_data_visualisation_agent`
 
 1.  安装依赖项
 
-1.  pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
-1.  运行 Streamlit 应用程序
+1.  运行 `Streamlit` 应用程序
 
-1.  streamlit run ai_data_visualisation_agent.py
+    `streamlit run ai_data_visualisation_agent.py`

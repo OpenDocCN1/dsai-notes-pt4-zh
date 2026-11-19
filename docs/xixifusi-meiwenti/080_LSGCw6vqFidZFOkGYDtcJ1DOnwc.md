@@ -1,6 +1,7 @@
+
 # Altman的成功之处
 
-> 来源：[https://docs.feishu.cn/docx/KkwedktfloMJiTxsSJacyltbnLf](https://docs.feishu.cn/docx/KkwedktfloMJiTxsSJacyltbnLf)
+> 来源：`https://docs.feishu.cn/docx/KkwedktfloMJiTxsSJacyltbnLf`
 
 OpenAI 总裁 Brockman 的总结是最接近的答案：
 

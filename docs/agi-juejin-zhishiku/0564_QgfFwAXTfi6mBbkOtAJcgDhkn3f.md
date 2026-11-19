@@ -1,3 +1,4 @@
+
 # 基础篇 | 补全：编码的静默辅助能力
 
 > 来源：[https://agijuejin.feishu.cn/docx/Ne4sdjfWeo4l12xCZd7c0uoonsb](https://agijuejin.feishu.cn/docx/Ne4sdjfWeo4l12xCZd7c0uoonsb)
@@ -6,9 +7,9 @@
 
 上文我们了解了 Trae AI 提供的问答功能，它利用对 IDE 的掌控力对用户的问答进行了检索增强，使得 Trae 可以根据用户的需求进行精准度更高的答复，真正成为一个懂用户的 AI。
 
-除问答功能外，Trae AI 还提供了一个非常有用的基础功能，也就是补全功能。当我们在代码编辑区写了一些逻辑后，并停留一段时间，Trae AI 会自动为已经生成的代码提供下一段提示，例如下面的case：
+除问答功能外，Trae AI 还提供了一个非常有用的基础功能，也就是补全功能。当我们在代码编辑区写了一些逻辑后，并停留一段时间，Trae AI 会自动为已经生成的代码提供下一段提示，例如下面的 case：
 
-> 我们在编辑区中写一个函数定义 function bubbleSort() {}
+> 我们在编辑区中写一个函数定义 `function bubbleSort() {}`
 
 ![](img/1eb985e431905261409f844e7c22af7c.png)
 

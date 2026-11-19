@@ -1,6 +1,7 @@
+
 # 2025上半年AI网站增长案例拆解
 
-> 来源：[https://xuqiwei1986.feishu.cn/docx/GOfRdi6fIocN8XxDghGck00Bnsh](https://xuqiwei1986.feishu.cn/docx/GOfRdi6fIocN8XxDghGck00Bnsh)
+> 来源：`https://xuqiwei1986.feishu.cn/docx/GOfRdi6fIocN8XxDghGck00Bnsh`
 
 圈友好，我是邬轼，目前在赚钱杭州SCAI实验室全职上站，做到了千刀收益，日常会看大量的网站，因为来这边后做AI站比较多，也积累了很多形形色色短期爆发的AI类网站，这篇网站我挑其中几个近半年起量的网站做分析。虽然说AI图像生成随着GPT4o，Flux Kontext等模型的发布，获得了巨大的生产力爆发。
 
@@ -10,7 +11,7 @@
 
 ## 案例一：付费广告推动SEO增长
 
-> https://vidfly.ai/
+> `https://vidfly.ai/`
 
 ### 1、冷启动
 
@@ -18,7 +19,7 @@
 
 ![](img/8eaef68434b7b4a745ce05ea8b086a2c.png)
 
-但实际上打开web archieve（https://web.archive.org），2024年的页面快照稀稀疏疏，实际打开8月份的快照并没有任何页面响应，说明在8月份域名购买之后，网站并未实时上线，下一份网页快照已经来到了2024年的12月，打开之后，发现网页的响应样式还是有问题，但已经开始返回正常网页该有的各类html内容，说明这个网站是2024年12月才上线的。
+但实际上打开web archieve（`https://web.archive.org`），2024年的页面快照稀稀疏疏，实际打开8月份的快照并没有任何页面响应，说明在8月份域名购买之后，网站并未实时上线，下一份网页快照已经来到了2024年的12月，打开之后，发现网页的响应样式还是有问题，但已经开始返回正常网页该有的各类html内容，说明这个网站是2024年12月才上线的。
 
 ![](img/105743e79ad657844b2c202e6c272d38.png)
 
@@ -74,7 +75,7 @@
 
 ![](img/20e76301fe228c4fadd136f58901baae.png)
 
-其中具体是哪个页面发挥了作用，看4月和5月的落地页承接破案了，是vidfly.ai/youtube-shorts-downloader这个页面作为流量承载页面，推动这个网站迅速实现了百万流量的突破。这的确是圈内人众所周知的大流量词，但是它的合规风险也很高，这个网站的流量增长其实也是在危险的边缘试探。
+其中具体是哪个页面发挥了作用，看4月和5月的落地页承接破案了，是`vidfly.ai/youtube-shorts-downloader`这个页面作为流量承载页面，推动这个网站迅速实现了百万流量的突破。这的确是圈内人众所周知的大流量词，但是它的合规风险也很高，这个网站的流量增长其实也是在危险的边缘试探。
 
 ![](img/b5ea04c75da69e3412d4b0b591c6e095.png)
 
@@ -92,7 +93,7 @@
 
 ## 案例二：社媒驱动增长
 
-> https://nim.video
+> `https://nim.video`
 
 ### 1、冷启动
 
@@ -160,11 +161,9 @@
 
 但是视频类型格式不一，显然不是来自于统一的运营手法，返回网站首页，可以发现这样三个不一样的创作者激励计划，分别是面向AI自媒体的教育激励计划，面向推广分成的联盟营销计划，以及面向使用者的创作激励计划。这样细颗粒度的用户激励计划区分，也促进了该网站流量的迅速增长。
 
-1.  https://about.nim.video/creative-program
-
-1.  https://about.nim.video/creative-program
-
-1.  https://about.nim.video/educators
+1.  `https://about.nim.video/creative-program`
+1.  `https://about.nim.video/creative-program`
+1.  `https://about.nim.video/educators`
 
 3月份，这个网站的访问量直接来到了130w，依旧主打社媒传播，同时品牌流量的占比100%。其中82%的社交流量来自于Youtube。
 
@@ -206,7 +205,7 @@
 
 我们可以来看下我们分享的第三个网站，6月的访问数据将近1w，虽然访问量不算大，但是看下这个破破烂烂的网站首页，我想，你不禁也会来一句“我上我也行”，的却如此，在AI如此发达的今天，实现比他更好的网站其实也没有什么难度。
 
-> https://www.fluxkontext.com/
+> `https://www.fluxkontext.com/`
 
 ![](img/99a21c2757569bfbecf7c10c6c253e76.png)
 

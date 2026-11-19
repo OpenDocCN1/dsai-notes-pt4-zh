@@ -1,3 +1,4 @@
+
 # COW初级使用教程
 
 > 来源：[https://my.feishu.cn/docx/K🐧AdLryeoiVUixMhKxcScOjnqf](https://my.feishu.cn/docx/K🐧AdLryeoiVUixMhKxcScOjnqf)
@@ -6,7 +7,7 @@
 
 本文分为 4 大模块，分别是：
 
-1、申请 LLM（语言大模型）的 API（接口）。
+1、申请 `LLM`（语言大模型）的 `API`（接口）。
 
 2、注册云服务器（就是让它挂在网络上，不开启随身设备它也能自己运行）
 
@@ -18,7 +19,7 @@
 
 **详情讲解：**
 
-## **一、申请 LLM**
+## 一、申请 LLM
 
 教程中使用的是智谱 AI。这步的意义是获取外部（🛰️）调用 AI 的接口。
 
@@ -34,25 +35,25 @@
 
 ![](img/f8630b9219da817d1eb069ac5c48aaa5.png)
 
-点击右上角，查看 Key。
+点击右上角，查看 `Key`。
 
 ![](img/14f8acdcf4619a56465165f8a374a563.png)
 
-点击这里的复制，获取 API Key。
+点击这里的复制，获取 `API Key`。
 
 ![](img/cce021819dc75fdddac0f6bfa1ac6414.png)
 
-至此，第一步完成，把获取的 API Key 放到其他任意文本软件中记录，方便后续查找。类似这样，养成好习惯，避免之后找不到了。
+至此，第一步完成，把获取的 `API Key` 放到其他任意文本软件中记录，方便后续查找。类似这样，养成好习惯，避免之后找不到了。
 
 这里我把需要记录的内容，都以#放入小本本记录 来进行标识。
 
 此处是#放入小本本记录 1 号内容 - 大模型接口秘钥。
 
-注意：任何 Key 相关的不要随意透漏给其他人，是使用的唯一标识，分享时，注意打马。
+注意：任何 `Key` 相关的不要随意透漏给其他人，是使用的唯一标识，分享时，注意打马。
 
 ![](img/7e593520dc24410fb05d97484973115d.png)
 
-## **二、申请云服务器**
+## 二、申请云服务器
 
 不论腾讯云还是阿里云，华为云等，都有免费白嫖试用的，用完一个再用其他的重新部署一遍，美滋滋～
 
@@ -102,7 +103,7 @@ sudo /etc/init.d/bt default
 
 ![](img/4e75d3ddaa0090147d0f7b00e2fdda7f.png)
 
-## **三、宝塔环境配置**
+## 三、宝塔环境配置
 
 输入这里的外网地址，和账号密码。
 
@@ -130,7 +131,7 @@ sudo /etc/init.d/bt default
 
 ![](img/cbd35a7e62ba3781cae78afd0d47bcae.png)
 
-点击确定后，列表上会有一个 APPID，这三个串码，依次对应粘贴到刚才的登录窗口里即可。
+点击确定后，列表上会有一个 `APPID`，这三个串码，依次对应粘贴到刚才的登录窗口里即可。
 
 ![](img/381210d90682834c0663775ace9d3b8b.png)
 
@@ -140,19 +141,19 @@ sudo /etc/init.d/bt default
 
 **提醒：**
 
-+   下边出现代码，复制的时候，注意复制全。
++ 下边出现代码，复制的时候，注意复制全。
 
-+   代码我已经分好步骤，每次只需要粘贴一行，然后点击一次回车。
++ 代码我已经分好步骤，每次只需要粘贴一行，然后点击一次回车。
 
-+   回车后，只有最左边显示[  ]中括号时，才是上一个命令执行完毕了。没有出现[ ]中括号对话前缀时，不要操作。
++ 回车后，只有最左边显示 `[ ]` 中括号时，才是上一个命令执行完毕了。没有出现 `[ ]` 中括号对话前缀时，不要操作。
 
-+   如果你发现 ctrl+v 粘贴不进去，试试 shift+ctrl+v 粘贴。
++ 如果你发现 `ctrl+v` 粘贴不进去，试试 `shift+ctrl+v` 粘贴。
 
 首先，点击【终端】。
 
 ![](img/ec82ed963fef871e56a47785b779df0a.png)
 
-输入以下链接，注意常规粘贴不上的话，使用 shift+ctrl+v 粘贴。
+输入以下链接，注意常规粘贴不上的话，使用 `shift+ctrl+v` 粘贴。
 
 ```
 cd /root || exit 1
@@ -161,7 +162,7 @@ cd /root || exit 1
 下方两行一次性全部粘贴进入，然后点击回车，等待下载完成。
 
 ```
-echo &quot;开始安装 Anaconda...&quot;
+echo "开始安装 Anaconda..."
 wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 ```
 
@@ -175,7 +176,7 @@ bash Anaconda3-2021.05-Linux-x86_64.sh -b -p /root/anaconda
 
 ![](img/bcc66d24e5d699a2b155c6e38606f211.png)
 
-安装界面如图所示，要等最下方的 done 输出完成后再输入。
+安装界面如图所示，要等最下方的 `done` 输出完成后再输入。
 
 ![](img/74565ada62b203a69d0f89f47abe93d6.png)
 
@@ -195,17 +196,17 @@ rm -f Anaconda3-2021.05-Linux-x86_64.sh
 
 ```
 /root/anaconda/bin/source activate AI
-echo &#x27;source /root/anaconda/bin/activate AI&#x27; &gt;&gt; ~/.bashrc
+echo 'source /root/anaconda/bin/activate AI' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-执行完成后，你会看到，最左侧出现了（AI）的字符。
+执行完成后，你会看到，最左侧出现了（`AI`）的字符。
 
 如果第一行出现了错误，不要紧，直接跳过下一步，以防万一。
 
 ![](img/b7b1c02612f440f72969d80c91db0c78.png)
 
-## 四、配置COW（Chatgpt-on-Wechat）
+## 四、配置 COW（Chatgpt-on-Wechat）
 
 继续，一行一行依次粘贴，依次回车：
 
@@ -252,7 +253,7 @@ pip3 install zhipuai
 
 ![](img/6580fefd89788589b41c103b67c997d5.png)
 
-上边的都执行完成后。现在我们到【文件】菜单中去执行，点击文件 - 找到【root】 ，进入 root 文件夹 ，找到【chatgpt-on-wechat】文件夹，并进入。
+上边的都执行完成后。现在我们到【文件】菜单中去执行，点击文件 - 找到【`root`】，进入 `root` 文件夹，找到【`chatgpt-on-wechat`】文件夹，并进入。
 
 ![](img/0a189cb19e0293416767605b5d15ba74.png)
 
@@ -260,55 +261,55 @@ pip3 install zhipuai
 
 ![](img/a3f5fa0dfc8c9ad8e38b2ecf59f48f5e.png)
 
-粘贴进入  ，点击回车。点击后，关闭此弹窗。
+粘贴进入，点击回车。点击后，关闭此弹窗。
 
 ```
 cp config-template.json config.json
 ```
 
-刷新页面。在当前目录下，找到 config.json 文件。如下图：
+刷新页面。在当前目录下，找到 `config.json` 文件。如下图：
 
 ![](img/19f7d78276fe4a8e3f7afbb080356096.png)
 
-**双击这个文件，我画红框的地方是需要修改的地**方。* 因为这个地方对格式和符号要求比较严格，如果是小白，建议你直接复制我下方的配置。
+**双击这个文件，我画红框的地方是需要修改的地方。** 因为这个地方对格式和符号要求比较严格，如果是小白，建议你直接复制我下方的配置。
 
 ![](img/271857fd243e879b817d90714eb5047b.png)
 
-+   删除上图文件里的所有代码。
++ 删除上图文件里的所有代码。
 
-+   复制下边的代码，粘贴到文件里。
++ 复制下边的代码，粘贴到文件里。
 
-+   找到第 4 行，把一开始就让你注册并保存好的智谱 API key，粘贴到双引号里。
++ 找到第 4 行，把一开始就让你注册并保存好的智谱 `API key`，粘贴到双引号里。
 
-+   这也是你唯一需要修改的地方。修改完之后，点击保存，关闭文件。
++ 这也是你唯一需要修改的地方。修改完之后，点击保存，关闭文件。
 
-+   [※ COW主目录Config说明](https://tffyvtlai4.feishu.cn/wiki/Ti7uwsKgiiW6bpk2nmQcVhQ8nnb)果有报错，可能是更新导致，请查看   是否缺少配置。
++ [※ COW主目录Config说明](https://tffyvtlai4.feishu.cn/wiki/Ti7uwsKgiiW6bpk2nmQcVhQ8nnb)果有报错，可能是更新导致，请查看 是否缺少配置。
 
 ```
 {
-  &quot;channel_type&quot;: &quot;wx&quot;,  
-  &quot;model&quot;: &quot;glm-4&quot;,  
-  &quot;zhipu_ai_api_key&quot;: &quot;把你一开始注册的智谱AI的API key，粘贴到这里&quot;,  
-  &quot;zhipu_ai_api_base&quot;: &quot;https://open.bigmodel.cn/api/paas/v4&quot;,  
-  &quot;text_to_image&quot;: &quot;dall-e-2&quot;,  &quot;voice_to_text&quot;: &quot;openai&quot;,  
-  &quot;text_to_voice&quot;: &quot;openai&quot;,  
-  &quot;proxy&quot;: &quot;&quot;,  &quot;hot_reload&quot;: false,  
-  &quot;single_chat_prefix&quot;: [&quot;&quot;],  
-  &quot;single_chat_reply_prefix&quot;: &quot;&quot;,  
-  &quot;group_chat_prefix&quot;: [&quot;@bot&quot;],  
-  &quot;group_name_white_list&quot;: [&quot;ALL_GROUP&quot;],  
-  &quot;image_create_prefix&quot;: [&quot;画&quot;],  
-  &quot;speech_recognition&quot;: true,  
-  &quot;group_speech_recognition&quot;: false,  
-  &quot;voice_reply_voice&quot;: false,  
-  &quot;conversation_max_tokens&quot;: 2500,  
-  &quot;expires_in_seconds&quot;: 3600,  
-  &quot;character_desc&quot;: &quot;你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。&quot;,  
-  &quot;temperature&quot;: 0.7,  
-  &quot;subscribe_msg&quot;: &quot;感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。&quot;,  
-  &quot;use_linkai&quot;: false,  
-  &quot;linkai_api_key&quot;: &quot;&quot;,  
-  &quot;linkai_app_code&quot;: &quot;&quot;
+  "channel_type": "wx",  
+  "model": "glm-4",  
+  "zhipu_ai_api_key": "把你一开始注册的智谱AI的API key，粘贴到这里",  
+  "zhipu_ai_api_base": "https://open.bigmodel.cn/api/paas/v4",  
+  "text_to_image": "dall-e-2",  "voice_to_text": "openai",  
+  "text_to_voice": "openai",  
+  "proxy": "",  "hot_reload": false,  
+  "single_chat_prefix": [""],  
+  "single_chat_reply_prefix": "",  
+  "group_chat_prefix": ["@bot"],  
+  "group_name_white_list": ["ALL_GROUP"],  
+  "image_create_prefix": ["画"],  
+  "speech_recognition": true,  
+  "group_speech_recognition": false,  
+  "voice_reply_voice": false,  
+  "conversation_max_tokens": 2500,  
+  "expires_in_seconds": 3600,  
+  "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",  
+  "temperature": 0.7,  
+  "subscribe_msg": "感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。",  
+  "use_linkai": false,  
+  "linkai_api_key": "",  
+  "linkai_app_code": ""
 }
 ```
 
@@ -320,19 +321,19 @@ cd plugins/godcmdcp config.json.template config.json
 
 ![](img/b017cee7695a011b9b08008a1e98b75f.png)
 
-操作完成后，退出窗口，刷新一下。进入/root/chatgpt-on-wechat/plugins/godcmd，下边是依次进入窗口的路径：
+操作完成后，退出窗口，刷新一下。进入 `/root/chatgpt-on-wechat/plugins/godcmd`，下边是依次进入窗口的路径：
 
 ![](img/d51172aee4b1880f53dceea8d3970427.png)
 
-双击 config.json，进入后，设置下你的 password 和 admin_users 可以设置为和我一样的，后边再改，点击保存后关闭。
+双击 `config.json`，进入后，设置下你的 `password` 和 `admin_users` 可以设置为和我一样的，后边再改，点击保存后关闭。
 
 ![](img/46e4e20ee4428e82790cfdc4ec133432.png)
 
-重新回到/root/chatgpt-on-wechat/这个文件路径下，点击终端，继续依次粘贴：
+重新回到 `/root/chatgpt-on-wechat/` 这个文件路径下，点击终端，继续依次粘贴：
 
 ```
 touch nohup.out
-nohup python3 app.py &amp; tail -f nohup.out
+nohup python3 app.py & tail -f nohup.out
 ```
 
 ![](img/c02faa6faf854b35eb8b2bbcbf031232.png)
@@ -345,7 +346,7 @@ nohup python3 app.py &amp; tail -f nohup.out
 
 登录成功后，找另一个人私聊或者在群中@你，就可以看到机器人的正常回复了。这个时候就是已经通了。
 
-2、如果你现在想为这个 AI 赋予什么样的提示词，在如图路径下**的 Config.josn **中修改：["character_desc": "你是 ChatGPT， 一个由 OpenAI 训练的大型语言模型， "，]。中文部分，便是设置 AI 提示词的地方你可以进行更改。
+2、如果你现在想为这个 AI 赋予什么样的提示词，在如图路径下 `Config.josn` 中修改：`["character_desc": "你是 ChatGPT， 一个由 OpenAI 训练的大型语言模型， "]`。中文部分，便是设置 AI 提示词的地方你可以进行更改。
 
 ![](img/524e05149d8193f8fcdd756b5579a3e3.png)
 
@@ -354,21 +355,21 @@ nohup python3 app.py &amp; tail -f nohup.out
 4、重启后，在“文件”的【终端】里，直接输入下方代码，重新扫码登录即可。
 
 ```
-nohup python3 app.py &amp; tail -f nohup.out
+nohup python3 app.py & tail -f nohup.out
 ```
 
 再次整理本文 #记录小本本 内容：
 
-1、LLM 的 API key
+1、`LLM` 的 `API key`
 
 2、云服务器配置
 
 3、腾讯云访问秘钥
 
-4、每次重启云服务器后，需要在 chatgpt-on-wechat 目录下执行运行 log 文件启动
+4、每次重启云服务器后，需要在 `chatgpt-on-wechat` 目录下执行运行 `log` 文件启动
 
 ```
-nohup python3 app.py &amp; tail -f nohup.out
+nohup python3 app.py & tail -f nohup.out
 ```
 
 <https://my.feishu.cn/sync/HDlcdCPBksnJpBbRk0EcW364nmc>

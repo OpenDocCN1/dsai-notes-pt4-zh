@@ -1,14 +1,13 @@
+
 # Llama3突然来袭！开源社区再次沸腾：GPT4级模型自由访问时代到来
 
 > 来源：[https://agijuejin.feishu.cn/docx/D319d33Lro7d9PxL4SZc7lgmnmg](https://agijuejin.feishu.cn/docx/D319d33Lro7d9PxL4SZc7lgmnmg)
-
-官方网页版同步推出
 
 > 克雷西 鱼羊 发自 凹非寺
 
 > 量子位 | 👸号 QbitAI
 
-**Llama 3来了！**
+## Llama 3来了！
 
 就在刚刚，Meta官网上新，官宣了Llama 3 80亿和700亿参数版本。
 
@@ -28,7 +27,7 @@ Huggingface链接一出，开源社区再次沸腾。
 
 眼尖的盲生们还第一时间发现了华点：
 
-**Meta更藏了一手4000亿参数+的Llama 3版本，不逊**于Claude 3超大杯Opus的那种！
+**Meta更藏了一手4000亿参数+的Llama 3版本，不逊于Claude 3超大杯Opus的那种！**
 
 ![](img/419d7c7bccbcf1891e5d02e8c151e335.png)
 
@@ -42,7 +41,7 @@ AI写作助手创企HyperWriteAI的CEO见此已忍不住感慨：
 
 ![](img/1957c983c5b951f1ea1cfe3f3aa8d1c5.png)
 
-# 全面取得SOTA，但8k窗口
+## 全面取得SOTA，但8k窗口
 
 更多技术细节，Meta在博客文章中给出。
 
@@ -86,7 +85,7 @@ Llama 3的数据量比Llama 2的训练数据多7倍，其中代码比Llama 2多4
 
 ![](img/0194a7e2a9cc9b75d6aff0697347c41d.png)
 
-# Llama迎来官方网页版
+## Llama迎来官方网页版
 
 目前，Llama 3两种参数量的基础和Instruct版本都已上线Hugging Face可供下载。
 
@@ -114,7 +113,7 @@ Llama 3的数据量比Llama 2的训练数据多7倍，其中代码比Llama 2多4
 
 总得来看，这个网页版本还比较初级，但也不妨期待一波后面的更新。
 
-# One More Thing
+## One More Thing
 
 一个小插曲是，其实在Meta官宣前几个小时，微软的Azure市场已经偷跑了Llama 3 8B Instruct版本的消息。
 
@@ -132,8 +131,8 @@ Llama 3的数据量比Llama 2的训练数据多7倍，其中代码比Llama 2多4
 
 参考链接：
 
-[1]ai.meta.com/blog/meta-l…
+[1] `ai.meta.com/blog/meta-l…`
 
-[2]about.fb.com/news/2024/0…
+[2] `about.fb.com/news/2024/0…`
 
-[3]huggingface.co/meta-llama/…
+[3] `huggingface.co/meta-llama/…`

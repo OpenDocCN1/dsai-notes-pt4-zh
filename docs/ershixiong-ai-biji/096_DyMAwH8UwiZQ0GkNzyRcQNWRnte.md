@@ -1,6 +1,7 @@
-# **MCP 100 个案例**
 
-> 来源：[https://qianniucity.feishu.cn/docx/JWe4d1EvvokgTzxElmBcD682nIh](https://qianniucity.feishu.cn/docx/JWe4d1EvvokgTzxElmBcD682nIh)
+# MCP 100 个案例
+
+> 来源：`https://qianniucity.feishu.cn/docx/JWe4d1EvvokgTzxElmBcD682nIh`
 
 > 「MCP 100 个案例」栏目精心收录各类 Model Context Protocol (MCP) 的实际应用案例，通过真实场景展示 MCP 的强大功能和灵活应用方式，帮助开发者和用户更好地理解和运用 MCP 技术。
 
@@ -8,13 +9,10 @@
 
 ## 本专区特别适合以下用户：
 
-1.  **技术开发者和程序员：** 尤其是对AI开发、编程技巧、MCP开发有实际需求或学习兴趣的人群。
-
-1.  **AI爱好者和从业者：** 希望深入了解AI Agent案例、Ai编程技术、图像生成等前沿AI应用和内容。
-
-1.  **追求深度学习和实践的用户：** 希望通过案例库、开发实战、深度内容等获取更专业和实用的知识。
-
-1.  **关注开源技术的人士：** 希望了解和使用精选的开源项目和工具。
+1. **技术开发者和程序员：** 尤其是对AI开发、编程技巧、MCP开发有实际需求或学习兴趣的人群。
+2. **AI爱好者和从业者：** 希望深入了解AI Agent案例、Ai编程技术、图像生成等前沿AI应用和内容。
+3. **追求深度学习和实践的用户：** 希望通过案例库、开发实战、深度内容等获取更专业和实用的知识。
+4. **关注开源技术的人士：** 希望了解和使用精选的开源项目和工具。
 
 ![](img/a93537a8f9c96f483c9e2d3262af9473.png)
 

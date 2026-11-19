@@ -1,8 +1,7 @@
-# 12.23-微软Phi-4封神，14B小模型数学击败GPT-4o！合成数据占比40%，36页技术报告出炉
-
-> 来源：[https://agijuejin.feishu.cn/docx/KkxPdr5D9oFf9Gx80Qvccn28n6c](https://agijuejin.feishu.cn/docx/KkxPdr5D9oFf9Gx80Qvccn28n6c)
 
 # AGI 掘金日报 - AI 新闻推送 (2024 年 12 月 23 日)
+
+> 来源：[https://agijuejin.feishu.cn/docx/KkxPdr5D9oFf9Gx80Qvccn28n6c](https://agijuejin.feishu.cn/docx/KkxPdr5D9oFf9Gx80Qvccn28n6c)
 
 > [欢迎加入 AGI 掘金社群](https://sourl.co/miZUyT)
 

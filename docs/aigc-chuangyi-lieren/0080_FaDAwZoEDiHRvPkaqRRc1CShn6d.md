@@ -1,3 +1,5 @@
+
+
 # 14-生成式 AI 应用程序生命周期
 
 > 来源：[https://aigcreative.feishu.cn/docx/TOW7dQ3VJoqA1MxmUdbcTh1zn3b](https://aigcreative.feishu.cn/docx/TOW7dQ3VJoqA1MxmUdbcTh1zn3b)
@@ -16,17 +18,12 @@ In this chapter, you will:
 
 在本章中，您将：
 
-+   Understand the Paradigm Shift from MLOps to LLMOps
-了解从 MLOps 到 LLMOps 的范式转变
++ Understand the Paradigm Shift from MLOps to LLMOps 了解从 MLOps 到 LLMOps 的范式转变
++ The LLM Lifecycle LLM生命周期
++ Lifecycle Tooling 生命周期工具
++ Lifecycle Metrification and Evaluation 生命周期计量和评估
 
-+   The LLM Lifecycle LLM生命周期
-
-+   Lifecycle Tooling 生命周期工具
-
-+   Lifecycle Metrification and Evaluation
-生命周期计量和评估
-
-## [Understand the Paradigm Shift ](https://microsoft.github.io/generative-ai-for-beginners/#/14-the-generative-ai-application-lifecycle/README?wt.mc_id=academic-105485-koreyst&id=understand-the-paradigm-shift-from-mlops-to-llmops)from MLOps to LLMOps 了解从 MLOps 到 LLMOps 的范式转变
+## [Understand the Paradigm Shift](https://microsoft.github.io/generative-ai-for-beginners/#/14-the-generative-ai-application-lifecycle/README?wt.mc_id=academic-105485-koreyst&id=understand-the-paradigm-shift-from-mlops-to-llmops) from MLOps to LLMOps 了解从 MLOps 到 LLMOps 的范式转变
 
 LLMs are a new tool in the Artificial Intelligence arsenal, they are incredibly powerful in analysis and generation tasks for applications, however this power has some consequences in how we streamline AI and Classic Machine Learning tasks.
 
@@ -38,22 +35,7 @@ With this, we need a new Paradigm to adapt this tool in a dynamic, with the corr
 
 ![](img/5d3cc31f0954c5e82351479f89608855.png)
 
-Notice that in LLMOps, we are more focused in the App Developers, using integrations as a key point, using "Models-as-a-Service" and thinking in the following points for metrics.
-
-请注意，在 LLMOps 中，我们更侧重于应用程序开发人员，使用集成作为关键点，使用“模型即服务”，并考虑以下几点的指标。
-
-+   Quality: Response quality
-质量：响应质量
-
-+   Harm: Responsible AI 危害：负责任的人工智能
-
-+   Honesty: Response groundness (Makes sense? It is correct?)
-诚实：回应接地气（有意义吗？这是正确的吗？
-
-+   Cost: Solution Budget 成本：解决方案预算
-
-+   Latency: Avg. time for token response
-延迟：令牌响应的平均时间
+Notice that in LLMOps, we are more focused in the App Developers, using integrations as a key point, using "Models-as-a-Service" and 延迟：令牌响应的平均时间
 
 ## The LLM Lifecycle LLM生命周期
 
@@ -85,14 +67,11 @@ This may look a bit complicated, lets focus on the three big steps first.
 
 这可能看起来有点复杂，让我们先关注三个主要步骤。
 
-1.  Ideating/Exploring: Exploration, here we can explo[re accordi](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-koreyst)ng to our business needs. Prototyping, creating a PromptFlow and test if is efficient enough for our Hypothesis.
-构思/探索：探索，在这里我们可以根据自己的业务需求进行探索。原型设计，创建 PromptFlow 并测试对于我们的假设是否足够有效。
+1. Ideating/Exploring: Exploration, here we can [explore according](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-koreyst) to our business needs. Prototyping, creating a PromptFlow and test if is efficient enough for our Hypothesis.
 
-1.  Building/Augmenting: Implementation, now, we start to evaluate for bigger datasets implement techniques, like Fine-tuning and RAG, to check the robustness of our solution. If it does not, re-implementing it, adding new steps in our flow or restructuring the data, might help. After testing our flow and our scale, if it works and check our Metrics, it is ready for the next step.
-构建/增强：实施，现在，我们开始评估更大的数据集实施技术，如微调和 RAG，以检查我们解决方案的鲁棒性。如果没有，重新实施它，在我们的流程中添加新步骤或重组数据，可能会有所帮助。在测试了我们的流程和规模之后，如果它有效并检查我们的指标，它就可以进行下一步了。
+2. Building/Augmenting: Implementation, now, we start to evaluate for bigger datasets implement techniques, like Fine-tuning and RAG, to check the robustness of our solution. If it does not, re-implementing it, adding new steps in our flow or restructuring the data, might help. After testing our flow and our scale, if it works and check our Metrics, it is ready for the next step.
 
-1.  Operationalizing: Integration, now adding Monitoring and Alerts Systems to our system, deployment and application integration to our Application.
-操作化：集成，现在将监控和警报系统添加到我们的系统中，部署和应用程序集成到我们的应用程序中。
+3. Operationalizing: Integration, now adding Monitoring and Alerts Systems to our system, deployment and application integration to our Application.
 
 Then, we have the overarching cycle of Management, focusing on security, compliance and governance.
 
@@ -108,11 +87,11 @@ Now, what tools could we use?
 
 ## Lifecycle Tooling 生命周期工具
 
-For Tooling, Microsof[t provides](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-koreyst) the Azure AI Platform and PromptFlow facilitate and make your cycle easy to implement and ready to go.
+For Tooling, Microsoft [provides](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-koreyst) the Azure AI Platform and PromptFlow facilitate and make your cycle easy to implement and ready to go.
 
 对于工具，Microsoft 提供了 Azure AI 平台和 PromptFlow，使您的周期易于实施并准备就绪。
 
-The [Azure AI ](https://ai.azure.com/?WT.mc_id=academic-105485-koreys)Platform, allows you to use AI Studio. AI Studio is a web portal that allows you to explore models, samples and tools. Managing your resources, UI development flows and SDK/CLI options for Code-First development.
+The [Azure AI](https://ai.azure.com/?WT.mc_id=academic-105485-koreys) Platform, allows you to use AI Studio. AI Studio is a web portal that allows you to explore models, samples and tools. Managing your resources, UI development flows and SDK/CLI options for Code-First development.
 
 Azure AI 平台允许您使用 AI Studio。AI Studio 是一个门户网站，可让您探索模型、样本和工具。管理资源、UI 开发流程和 SDK/CLI 选项，以实现 Code-First 开发。
 
@@ -128,24 +107,22 @@ Construct, from Proof-of-Concept(POC) until large scale applications with Prompt
 
 使用 PromptFlow 构建从概念验证 （POC） 到大规模应用程序：
 
-+   Design and Build apps from VS Code, with visual and functional tools
-使用可视化和功能性工具从 VS Code 设计和构建应用
-
-+   Test and fine-tune your apps for quality AI, with ease.
-轻松测试和微调您的应用，以获得高质量的 AI。
-
-+   Use Azure AI Studio to Integrate and Iterate with cloud, Push and Deploy for quick integration.
-使用 Azure AI Studio 与云集成和迭代，通过推送和部署实现快速集成。
++ Design and Build apps from VS Code, with visual and functional tools 使用可视化和功能性工具从 VS Code 设计和构建应用
++ Test and fine-tune your apps for quality AI, with ease. 轻松测试和微调您的应用，以获得高质量的 AI。
++ Use Azure AI Studio to Integrate and Iterate with cloud, Push and Deploy for quick integration. 使用 Azure AI Studio 与云集成和迭代，通过推送和部署实现快速集成。
 
 ![](img/7e3dacc4006f854fd152941f2af2e776.png)
 
-## [Great! Con](https://microsoft.github.io/generative-ai-for-beginners/#/14-the-generative-ai-application-lifecycle/README?wt.mc_id=academic-105485-koreyst&id=great-continue-your-learning)tinue your Learning! 伟大！继续您的学习！
+## [Great! Continue your Learning! 伟大！继续您的学习！](https://microsoft.github.io/generative-ai-for-beginners/#/14-the-generative-ai-application-lifecycle/README?wt.mc_id=academic-105485-koreyst&id=great-continue-your-learning)
 
 Amazing, now learn more how we structure an application to use the concepts with the Contoso Chat App, to check how Cloud Advocacy adds those concepts in demonstations. For more content, check our Ignite breakout session!
 
 令人惊讶的是，现在详细了解我们如何构建应用程序以使用 Contoso 聊天应用的概念，以检查 Cloud Advocacy 如何在演示中添加这些概念。如需更多内容，请查看我们的 Ignite 分组会议！
 
-Now, check Lesson 15[, to understand how Retrieval A](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst)ugmented Generation and Vector Databases impact Generative AI and to make more engaging Applications!
+
+
+
+Now, check [Lesson 15](https://microsoft.github.io/generative-ai-for-beginners/#/15-rag-and-vector-databases/README?wt.mc_id=academic-105485-koreyst), to understand how Retrieval Augmented Generation and Vector Databases impact Generative AI and to make more engaging Applications!
 
 现在，查看第 15 课，了解检索增强生成和向量数据库如何影响生成式 AI，并制作更具吸引力的应用程序！
 

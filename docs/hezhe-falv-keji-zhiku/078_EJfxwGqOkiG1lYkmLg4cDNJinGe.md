@@ -1,12 +1,13 @@
+
 # 2024 年 2 月法律科技月刊
 
 > 来源：[https://docs.feishu.cn/docx/EsQBdgKQro6yalxHAGPcFJxxntg](https://docs.feishu.cn/docx/EsQBdgKQro6yalxHAGPcFJxxntg)
 
 ---
 
-# **一、法律科技融资动态**
+# 一、法律科技融资动态
 
-## **建筑业合同软件公司 Document Cru**nch 完成 900 万美元 A 轮融资
+## 建筑业合同软件公司 Document Crunch 完成 900 万美元 A 轮融资
 
 2 月 13 日，服务于建筑行业的合同软件公司 Document Crunch 宣布完成 900 万美元 A 轮融资，以扩大其产品规模及团队。
 
@@ -18,23 +19,20 @@
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1804418/nuix-gets-debt-financing-as-legal-costs-add-up
 
-## **Slice Global 完成 700 万美元种子**轮融资，利用 AI 提供股权激励合规服务
+## Slice Global 完成 700 万美元种子轮融资，利用 AI 提供股权激励合规服务
 
 2 月 29 日，[Slice Global](http://www.sliceglobal.com) 宣布完成 700 万美元种子轮融资。该公司利用 AI 技术帮助企业合规地向世界各地的员工发行股权 —— 确保企业在国际范围内发行股权时遵守当地的法律法规，并提供简化股权激励实施流程的工具，帮助高效、准确地处理相关问题。
 
-> 拓展阅读：
-
-> https://www.mytoken.com/news/333930
-
+> 拓展阅读：https://www.mytoken.com/news/333930  
 > https://www.law360.com/pulse/legal-tech/articles/1808409/wilson-sonsini-fenwick-west-back-atty-founded-equity-tool
 
-## **Bench IQ 完成 210 万**美元预种子轮融资，用 AI 分析法官判决
+## Bench IQ 完成 210 万美元预种子轮融资，用 AI 分析法官判决
 
 2 月 29 日，[Bench IQ](http://www.benchiq.com) 宣布完成 210 万美元预种子轮融资。该公司由已停止运营的法律 AI 公司 Ross Intelligence 前高管创立，提供访问和分析大量的判决数据的能力，以帮助法律专业人员洞察法官的判决模式和倾向，从而为案件审判提供有力支持。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1808145/judge-analysis-platform-bench-iq-raises-2-1m
 
-# **二、法律 AI 产品动态**
+# 二、法律 AI 产品动态
 
 ## 中国司法大数据研究院发布“智能裁判辅助办案系统 1.0 版本”
 
@@ -54,13 +52,15 @@
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/02/15/legal-tech-rundown-new-unitedlex-and-casepoint-hires-more-legal-ai-assistants-and-more/
 
-## **司法情报平台 Darrow 推生**成式 AI 产品，用 AI 帮律师找客户
+## 司法情报平台 Darrow 推出生成式 AI 产品，用 AI 帮律师找客户
 
 2 月 7 日，法律科技公司 Darrow 正式推出其名为 PlaintiffLink 的生成式 AI 产品，以帮助律师事务所找到潜在客户并与其互动。通过这个产品，法律专业人士可以查看潜在客户的画像，对其提出建议或者审核通过。一旦审核通过，用户可以发起一个“活动”，所有线索都将通过一个双层资格认证系统，筛选出最佳潜在客户，并提供用户记录和与其“活动”有关的更新来跟踪进度。
 
-Darrow 自称是一个“司法情报平台”，为诉讼律师提供业务发[展工具，曾于 2](https://www.law.com/legaltechnews/2023/09/19/israeli-legal-tech-startup-darrow-raises-35-million-in-series-b-round/)02[3 年 9 月获得 35](https://www.law.com/legaltechnews/2024/01/30/priori-launches-features-lab-for-customers-at-different-stages-of-tech-maturity/)00 万美元 B 轮融资。除了潜在客户获取，Darrow 还提供广告支出追踪、文档收集等功能，帮助律所提高工作效率，使其专注于案件的诉讼环节。目前，Darrow 并不是市场上唯一一家为法律专业人士提供业务开发工具的公司。例如，Priori Legal 也是一个法律科技和服务平台，提供律师市场和相关的数据分析和见解。
+Darrow 自称是一个“司法情报平台”，为诉讼律师提供业务发展工具，曾于 2023 年 9 月获得 3500 万美元 B 轮融资。除了潜在客户获取，Darrow 还提供广告支出追踪、文档收集等功能，帮助律所提高工作效率，使其专注于案件的诉讼环节。目前，Darrow 并不是市场上唯一一家为法律专业人士提供业务开发工具的公司。例如，Priori Legal 也是一个法律科技和服务平台，提供律师市场和相关的数据分析和见解。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/02/07/israeli-legal-tech-startup-darrow-launches-plaintifflink-ai-powered-plaintiff-finding-service/
+> 拓展阅读：https://www.law.com/legaltechnews/2024/02/07/israeli-legal-tech-startup-darrow-launches-plaintifflink-ai-powered-plaintiff-finding-service/  
+> https://www.law.com/legaltechnews/2023/09/19/israeli-legal-tech-startup-darrow-raises-35-million-in-series-b-round/  
+> https://www.law.com/legaltechnews/2024/01/30/priori-launches-features-lab-for-customers-at-different-stages-of-tech-maturity/
 
 ## CLM 服务商 Lexion 推独立 AI 工具
 
@@ -80,15 +80,12 @@ Darrow 自称是一个“司法情报平台”，为诉讼律师提供业务发[
 
 Intapp 是一家领先的软件服务商，专门服务于专业服务行业（比如律师行业）。
 
-> 拓展阅读：
-
-> https://www.law360.com/pulse/legal-tech/articles/1805567/intapp-acquires-berlin-based-ai-co-delphai
-
+> 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1805567/intapp-acquires-berlin-based-ai-co-delphai  
 > https://www.law.com/legaltechnews/2024/02/22/intapp-announces-gen-ai-capabilities-delphai-acquisition-as-part-of-new-intelligence-applied-strategy/
 
 ## 273 Ventures 推出真正意义上的法律大模型
 
-2 月，法律科技公司 [273 Ventures](https://273ventures.com) 推出一个名为“KL3M”（Kelvin Legal La**rge Lan**guage Model）的「法律大模型」。这是一个类似于 OpenAI 的 GPT 系列一样的模型家族，KL3M 将提供四个参数的型号，目前已经发布参数最小的两个：kl3m-170m 和 kl3m-1.7b，更大参数的型号即将推出。
+2 月，法律科技公司 [273 Ventures](https://273ventures.com) 推出一个名为 `KL3M`（Kelvin Legal Large Language Model）的「法律大模型」。这是一个类似于 OpenAI 的 GPT 系列一样的模型家族，`KL3M` 将提供四个参数的型号，目前已经发布参数最小的两个：`kl3m-170m` 和 `kl3m-1.7b`，更大参数的型号即将推出。
 
 > 拓展阅读：[第一个真正意义上的法律大模型，来了！](https://e9w56z965d.feishu.cn/wiki/FuR5wijLjiNImxk2Hvxcj38xnof)
 
@@ -98,7 +95,7 @@ Intapp 是一家领先的软件服务商，专门服务于专业服务行业（�
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1806605/lexsoft-launches-openai-powered-legal-software-tool
 
-## **LegalOn 推出 Legal As**sistant，用 AI 来起草审查合同
+## LegalOn 推出 Legal Assistant，用 AI 来起草审查合同
 
 2 月 28 日，合同生命周期管理（CLM）服务商 LegalOn 宣布推出一个名为 LegalOn Assistant 的生成式 AI 助手，旨在协助法律专业人士完成合同起草和审查任务。该工具可以回答关于合同的问题，起草合同条款和修订，总结合同的部分内容或更改等。
 
@@ -108,7 +105,7 @@ Intapp 是一家领先的软件服务商，专门服务于专业服务行业（�
 
 # 三、律所 / ALSP 如何拥抱法律科技
 
-## **治理、风险和合规软件提供商 Dilig**ent 推出董事和高管（D&O）问卷工具
+## 治理、风险和合规软件提供商 Diligent 推出董事和高管（D&O）问卷工具
 
 2 月 1 日，治理、风险和合规软件提供商 Diligent 宣布推出一个董事和高管（D&O）问卷模板。据了解，这个模板是与 Latham & Watkins 律师事务所合作创建的，可以帮助组织收集向美国证券交易委员会（SEC）提交的表格 10-K 和代理声明所需的信息。该产品面向公司的董事、高管、总法律顾问和公司秘书，为他们提供每年更新的问卷、针对特定流程量身定制的问题集以及模板中可定制的格式。
 
@@ -126,7 +123,7 @@ Intapp 是一家领先的软件服务商，专门服务于专业服务行业（�
 
 > 拓展阅读：https://www.huschblackwell.com/inthenews/husch-blackwell-launches-client-driven-artificial-intelligence-practice-group
 
-## **Norton Rose Fulbr**ight 律师事务所启动 AI 实践团队
+## Norton Rose Fulbright 律师事务所启动 AI 实践团队
 
 2 月 27 日，Norton Rose Fulbright 律师事务所宣布成立一个 AI 实践团队，为客户提供与 AI 相关的法律专业服务。
 
@@ -146,23 +143,22 @@ Norton Rose Fulbright 的 AI 实践团队在 AI 领域的法律问题方面有�
 
 2 月 27 日，[BakerHostetler](https://www.bakerlaw.com) 律师事务所宣布推出一个名为 Finclar（Financial Clarity 的缩写）的遗产规划产品，以提升客户在家庭遗产管理方面的体验。具体来说，该产品将提供以下几点价值：
 
-1.  自信的决策：FinClar 提供清晰、直观的仪表板，可以将复杂的财务、税务和遗产规划信息提炼成可操作的情报。FinClar 旨在增强客户决策的信心，为客户和咨询团队在整个遗产规划和管理过程中提供所需的信息和见解，以做出明智的选择。
+1. 自信的决策：FinClar 提供清晰、直观的仪表板，可以将复杂的财务、税务和遗产规划信息提炼成可操作的情报。FinClar 旨在增强客户决策的信心，为客户和咨询团队在整个遗产规划和管理过程中提供所需的信息和见解，以做出明智的选择。
 
-1.  客户独立性：提供一种安心感，只有全面了解家庭资产负债表、清晰展示家庭遗产计划的资金流动、资产价值每日更新，才能做到这一点。通过 FinClar，客户不再必须依赖他人来及时获得信息，从而可以帮助客户保持自身的独立性。
+1. 客户独立性：提供一种安心感，只有全面了解家庭资产负债表、清晰展示家庭遗产计划的资金流动、资产价值每日更新，才能做到这一点。通过 FinClar，客户不再必须依赖他人来及时获得信息，从而可以帮助客户保持自身的独立性。
 
-1.  效率提升：告别花费数小时收集和分析数据的日子，FinClar 可以简化这个流程，让客户及其顾问专注于战略。客户也可以用 FinClar 来节省税费，从而提高效益。
+1. 效率提升：告别花费数小时收集和分析数据的日子，FinClar 可以简化这个流程，让客户及其顾问专注于战略。客户也可以用 FinClar 来节省税费，从而提高效益。
 
-1.  下一代教育：为下一代拥抱数字创新，FinClar 是让下一代成为家庭遗产良好管理者的平台，可促进遗产管理知识和纪律的无缝过渡。
+1. 下一代教育：为下一代拥抱数字创新，FinClar 是让下一代成为家庭遗产良好管理者的平台，可促进遗产管理知识和纪律的无缝过渡。
 
-> 拓展阅读：
-
-> https://www.bakerlaw.com/insights/bakerhostetler-unveils-revolutionary-estate-planning-fintech-application-in-private-wealth-law/
-
+> 拓展阅读：https://www.bakerlaw.com/insights/bakerhostetler-unveils-revolutionary-estate-planning-fintech-application-in-private-wealth-law/  
 > https://www.law360.com/pulse/legal-tech/articles/1807148/bakerhostetler-launches-tech-offering-for-estate-planning
 
 ## Clifford Chance 律师事务所推出与微软合作的 AI 战略
 
 2 月 28 日，Clifford Chance 律师事务所与微软合作，面向其近 7000 名员工推出一揽子 AI 技术，包括微软的 Copilot 平台，希望该工具可以帮助其员工完成各种任务，比如总结文件、记录会议纪要以及起草电子邮件等。去年 12 月，Clifford Chance 还在微软的 Azure OpenAI 平台上开发了一个名为 Clifford Chance Assist 的 AI 助手。
+
+
 
 > 拓展阅读：https://www.law.com/legaltechnews/2024/02/28/clifford-chance-rolls-out-microsoft-partnered-ai-strategy-across-whole-firm-397-82706/
 
@@ -176,9 +172,9 @@ Norton Rose Fulbright 的 AI 实践团队在 AI 领域的法律问题方面有�
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1806869/hanson-bridgett-joins-other-firms-in-launching-ai-task-force
 
-## **普华****永道与 Harv**ey、OpenAI 合作推出税务 AI 模型
+## 普华永道与 [Harvey](https://www.pwc.co.uk/press-room/press-releases/pwc-uk-launch-uk-tax-ai-assistant-tool.html#:~:text=PwC%20UK%2C%20alongside%20alliance%20partners,delivery%20of%20services%20to%20clients.)、OpenAI 合作推出税务 AI 模型
 
-普华永道英国公司还与联盟合作伙伴[ H](https://www.pwc.co.uk/press-room/press-releases/pwc-uk-launch-uk-tax-ai-assistant-tool.html#:~:text=PwC%20UK%2C%20alongside%20alliance%20partners,delivery%20of%20services%20to%20clients.)arvey 和 OpenAI 一起，推出一个税务 AI 模型，适用于所有 2300 名普华永道英国的税务专业人员。该产品以普华永道英国专有税务专业知识与 Harvey 和 OpenAI 开发的基础技术为基础，将作为 AI 助理生成税务内容，作为向客户提供服务的一部分。
+普华永道英国公司还与联盟合作伙伴 Harvey 和 OpenAI 一起，推出一个税务 AI 模型，适用于所有 2300 名普华永道英国的税务专业人员。该产品以普华永道英国专有税务专业知识与 Harvey 和 OpenAI 开发的基础技术为基础，将作为 AI 助理生成税务内容，作为向客户提供服务的一部分。
 
 # 四、监管部门和学界如何拥抱 AI
 
@@ -204,7 +200,7 @@ Norton Rose Fulbright 的 AI 实践团队在 AI 领域的法律问题方面有�
 
 为此，该指南规定，对于人类做出重大贡献的发明，可以寻求专利保护。该指南希望解决的关键问题是，在专利上命名的人类是否做出了足够大的贡献，以至于被命名为发明人，而不是考虑 AI 系统对发明的贡献是否足以上升到相同的发明水平。为了确保专利保护，必须至少有一名指定的人类发明人符合该要求。
 
-**同时，专利商标局提供的具体示例有助于解释如何应用该指南。这些示例表明：如果一个人通过构建提示做出了有意义的贡献，那就**足够将其确立为发明人，但仅仅识别问题并向 AI 系统提出该问题不足以将某人确立为发明人，或者仅仅保持对 AI 系统的“智力支配”，也不会使一个人成为通过该 AI 系统创造的任何发明的发明人。
+同时，专利商标局提供的具体示例有助于解释如何应用该指南。这些示例表明：如果一个人通过构建提示做出了有意义的贡献，那就足够将其确立为发明人，但仅仅识别问题并向 AI 系统提出该问题不足以将某人确立为发明人，或者仅仅保持对 AI 系统的“智力支配”，也不会使一个人成为通过该 AI 系统创造的任何发明的发明人。
 
 随着 AI 变得无处不在，包括人们以彼此的 AI 辅助发明为基础进行再创造，确定 AI 在发明过程中发挥的作用的方式将变得越来越困难。因此，美国专利商标局目前没有推出任何披露 AI 使用的要求。
 
@@ -234,7 +230,7 @@ Norton Rose Fulbright 的 AI 实践团队在 AI 领域的法律问题方面有�
 
 2 月 12 日，美国专利商标局发布了一项采购公告 —— 计划向 Accenture（埃森哲）Federal Services 公司授予价值大约 7000 万美元的合同，以采购其 AI 专利搜索功能。
 
-美国专利商标局拥有一个基于 AI 的专利端到端（Patents End-to-End，简称“PE2E”）搜索工具，用 AI 搜索现有技术，以供专利审查员评估发明的新颖性。美国专利商标局对此表示：“为实现专利自动化信息系统的现代化，美国专利商标局推出了 PE2E，这是一个基于网络的系统，为审查员提供一套统一且强大的工具用于审查过程。其中，PE2E Search 是 PE2E 的系统之一，它以现代界面设计呈现，并引入新的工具和功能，比如 AI 搜索功能。”
+美国专利商标局拥有一个基于 AI 的专利端到端（Patents End-to-End，简称“`PE2E`”）搜索工具，用 AI 搜索现有技术，以供专利审查员评估发明的新颖性。美国专利商标局对此表示：“为实现专利自动化信息系统的现代化，美国专利商标局推出了 `PE2E`，这是一个基于网络的系统，为审查员提供一套统一且强大的工具用于审查过程。其中，`PE2E Search` 是 `PE2E` 的系统之一，它以现代界面设计呈现，并引入新的工具和功能，比如 AI 搜索功能。”
 
 > 拓展阅读：https://mp.weixin.qq.com/s/zi_i1WqXEwv_o0hYH9F6rQ
 
@@ -244,7 +240,7 @@ Norton Rose Fulbright 的 AI 实践团队在 AI 领域的法律问题方面有�
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1805084/rapid-response-team-releases-ai-guidance-for-state-courts
 
-## **美国司法部任命首位 AI 官员**
+## 美国司法部任命首位 AI 官员
 
 2 月 22 日，美国司法部任命了其历史上首位专注于 AI 的官员，普林斯顿大学研究技术和法律教授乔纳森·梅耶尔（Jonathan Mayer）将担任首席科学技术顾问和首席 AI 官。梅耶尔将就新兴技术相关问题向美国司法部长和部门领导层提供建议，包括如何负责任地将 AI 融入部门的调查和刑事起诉中。
 
@@ -256,21 +252,21 @@ Norton Rose Fulbright 的 AI 实践团队在 AI 领域的法律问题方面有�
 
 > 拓展阅读：https://mp.weixin.qq.com/s/vXyw7ycCektjIFOt6ixLJw
 
-# **五、法律科技并购动态**
+# 五、法律科技并购动态
 
-## **替代性法律服务商 Harbor 收购**法律信息技术和咨询公司 Pinnacle
+## 替代性法律服务商 Harbor 收购法律信息技术和咨询公司 Pinnacle
 
 2 月 1 日，替代性法律服务商 Harbor 宣布收购法律信息技术和咨询公司 Pinnacle，扩大其在英国和欧洲的业务，并使 Harbor 能够向律师事务所和公司法律部门提供涵盖战略、法律技术、运营和情报等的全套专家服务。
 
 Pinnacle 英国的 110 多名员工和 Harbor 的 25 多名员工将合并，其美国和加拿大的员工将加入 Harbor 在这些国家的团队。所有产品都将以 Harbor 品牌运营。Pinnacle 前董事成员加入 Harbor 担任高级领导职务，负责 Harbor 在北美以外的业务和运营：Pinnacle CEO David Lumsden 担任其区域运营和整合主管；CSO Mike Bailey 担任监督服务交付和联盟的区域首席运营官；首席信息官 Kevin Smith 担任区域技术主管。
 
-**关于 Harbor**
+### 关于 Harbor
 
 Harbor 是战略、法律技术、运营和情报方面专家服务的领先服务提供商，近 800 名战略家、技术人员和专家组成的全球综合团队与其客户（领先的律师事务所、公司及其法律部门）一起提供关键的资源和宝贵的见解。
 
-Harbor 为私募股权公司 Renovus 所拥有，由 HBR Consulting、LAC Group和Wilson Allen 等公司合并而成，并于去年夏天更名为一家公司。合并后的公司包括早期的收购，比如 Aurora North、Younts Consulting 和 KP Labs。去年 10 月，该公司还收购了投资和咨询公司 Stout 的法律管理咨询业务。
+Harbor 为私募股权公司 Renovus 所拥有，由 HBR Consulting、LAC Group 和 Wilson Allen 等公司合并而成，并于去年夏天更名为一家公司。合并后的公司包括早期的收购，比如 Aurora North、Younts Consulting 和 KP Labs。去年 10 月，该公司还收购了投资和咨询公司 Stout 的法律管理咨询业务。
 
-**关于 Pinnacle**
+### 关于 Pinnacle
 
 Pinnacle 与全球领先的律师事务所合作，为复杂的业务流程、技术和数据生态系统带来清晰度和控制。Pinnacle 的团队由 130 多名专家组成，在英国、欧洲、北美和亚太地区提供咨询、托管服务和软件解决方案。
 
@@ -282,19 +278,19 @@ Pinnacle 非常重视与 Elite 和 Intapp 的合作伙伴关系，与微软的�
 
 > https://legaltechnology.com/2024/02/01/breaking-news-harbor-acquires-pinnacle/
 
-## **州**和地方政府技术公司 Avenu Insights & Analytics 收购法院与支付工具服务商 Judicial Innovations
+## 州和地方政府技术公司 Avenu Insights & Analytics 收购法院与支付工具服务商 Judicial Innovations
 
 2 月 12 日，Avenu Insights & Analytics 宣布了以上收购信息。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1796759/judicial-innovations-acquired-by-pe-backed-gov-tech-firm
 
-## **诉讼服务公司 Lexitas 收购记录检索公司 Medical** Legal Reproductions
+## 诉讼服务公司 Lexitas 收购记录检索公司 Medical Legal Reproductions
 
 2 月 13 日，Lexitas 宣布了以上收购信息。
 
 > 拓展阅读：https://www.law360.com/pulse/legal-tech/articles/1797247/lexitas-acquires-record-retrieval-co-mlr
 
-## **风险管理软件公司 Archer 收购监管**变更管理公司 Compliance.AI
+## 风险管理软件公司 Archer 收购监管变更管理公司 Compliance.AI
 
 2 月 20 日，Archer 宣布了以上信息。
 
@@ -312,7 +308,7 @@ Delphai 是 Intapp 过去一年的第二次收购，该公司于 2023 年 5 月�
 
 > https://www.law.com/legaltechnews/2024/02/22/intapp-announces-gen-ai-capabilities-delphai-acquisition-as-part-of-new-intelligence-applied-strategy/
 
-# **六、法律科技活动资讯**
+# 六、法律科技活动资讯
 
 ## 律新社《新兴法律服务业精品指南（2023）》申报启动
 
@@ -323,6 +319,8 @@ Delphai 是 Intapp 过去一年的第二次收购，该公司于 2023 年 5 月�
 # 七、市场教育/创新孵化/生态联盟
 
 ## 非洲法律科技网络 SALT 推出在线课程，以填补传统法律教育的不足
+
+
 
 [近日，南非法](https://salted.saltnetwork.co.za/pages/pre-order-page)律科技（SALT）平台通过其名为 SALTed 的教育部门推出一系列在线法律课程，以解决非洲现有的传统教育系统尚未充分覆盖的法律行业不断变化的需求。
 
@@ -336,4 +334,4 @@ SALTed 的教育方法之核心是一个在线平台，提供互动课程、讨�
 
 SALT 是南非的一个法律科技专[业人士和爱](https://www.event.law.com/legalweek-africanlegalawards)好者社区，入围 2023 年度非洲法律奖。
 
-> 拓展阅读：https://www.law.com/legaltechnews/2024/02/07/african-legal-tech-network-salt-launches-online-courses-to-fill-modern-gaps-in-legal-education-397-82012/
+> 拓展阅读：`https://www.law.com/legaltechnews/2024/02/07/african-legal-tech-network-salt-launches-online-courses-to-fill-modern-gaps-in-legal-education-397-82012/`
